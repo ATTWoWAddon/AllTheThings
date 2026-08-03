@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	inst(762, {	-- Darkheart Thicket
 		["mapID"] = 733,
 		["coord"] = { 59.0, 31.3, VALSHARAH },
@@ -256,4 +256,4 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 		},
 	}),
-}));
+})));

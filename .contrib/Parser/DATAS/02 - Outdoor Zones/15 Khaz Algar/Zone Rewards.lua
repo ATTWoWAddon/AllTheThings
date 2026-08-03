@@ -176,10 +176,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	n(WORLD_QUESTS, {
-		m(KHAZ_ALGAR, {
+	m(KHAZ_ALGAR, {
+		n(WORLD_QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			q(83280, name(HEADERS.Item,228361,{["isWeekly"]=true,})),	-- Granted additional reward from weekly caches #1
 			q(83281, name(HEADERS.Item,228361,{["isWeekly"]=true,})),	-- Granted additional reward from weekly caches #2
-		}),
+		})),
 	}),
 }));

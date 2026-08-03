@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 local MAPS = {
-	732,	-- Assault of Violet Hold (Legion)
+	732,	-- Assault on Violet Hold (Legion)
 
 	751,	-- Black Rook Hold
 	752,	-- Black Rook Hold
@@ -90,7 +90,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			ach(61115, {	-- Legion Dungeons: Might of the Legion
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
-					60846,	-- Assault of Violet Hold
+					60846,	-- Assault on Violet Hold
 					60834,	-- Black Rook Hold
 					60822,	-- Vault of the Wardens
 				}},
@@ -234,7 +234,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		n(REWARDS, {
 			i(239247),	-- Bonus Experience
 		}),
-		inst(777, {	-- Assault of Violet Hold (Legion)
+		inst(777, {	-- Assault on Violet Hold (Legion)
 			["coord"] = { 66.2, 68.3, LEGION_DALARAN },
 			["maps"] = { 732 },
 			["groups"] = {

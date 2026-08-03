@@ -1336,9 +1336,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262830),	-- Rosy Dunecloth Skirt
 				i(262865),	-- Rosy Dunecloth Vest
 				i(262588),	-- Sack Lunch
-				i(258031),	-- Vaunted Preyseeker's Knapsack
-				i(258029),	-- Vaunted Preyseeker's Plumed Helm
-				i(258027),	-- Vaunted Preyseeker's Shoulder-Spikes
 			}),
 			filter(TABARDS, {
 				i(242635),	-- Twilight's Blade - Armor - Tabard

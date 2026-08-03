@@ -204,3 +204,8 @@ i(0, 8674);					-- Internal Testing Visual Enchant
 -- PATCH 12.0.7 --
 ------------------
 i(276546, 8704);	-- Summer Sun Blossom
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+i(0, 8697);					-- Venomcoil

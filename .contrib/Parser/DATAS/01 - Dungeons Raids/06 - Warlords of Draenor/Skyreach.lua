@@ -98,7 +98,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(RANJIT, {
-					ach(9033),	-- Ready for Raiding IV
+					ach(9033, {	-- Ready for Raiding IV
+						["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_12_0_1_LAUNCH },
+					}),
 					i(258046, {	-- Chakram-Breaker Greatsword
 						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 						["ItemAppearanceModifierID"] = 0,
@@ -153,6 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(RUKHRAN, {
 					ach(9035, {	-- I Saw Solis
 						["crs"] = { 76227 },	-- Solar Flare
+						["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(258048, {	-- Beakbreaker Scimitar
 						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
@@ -192,9 +195,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(9372),	-- Heroic: Skyreach Guild Run
 					ach(9034, {	-- Magnify... Enhance
 						["crs"] = { 86919 },	-- Empowered Construct
+						["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_12_0_1_LAUNCH },
 					}),
 					ach(9036, {	-- Monomania
 						["crs"] = { 76292 },	-- Skyreach Shield Construct
+						["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_12_0_1_LAUNCH },
 					}),
 					i(258050, {	-- Arcanic of the High Sage
 						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },

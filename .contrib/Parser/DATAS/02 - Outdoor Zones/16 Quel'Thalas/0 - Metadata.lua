@@ -54,16 +54,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				2642,	-- Tomb of the Lost Priest
 			},
 		}),
-		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
-			["icon"] = 136070,
-			--["lore"] = "",
-			["timeline"] = { ADDED_12_1_0 },
-			["maps"] = {
-				2638,	-- Profaned Mausoleum
-				2637,	-- Ruuk'jar's Clutch
-				2613,	-- The Underbelly
-				2636,	-- Vault of Restless Bones
-			},
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+			m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
+				["icon"] = 136070,
+				["lore"] = "The Vaults of Atal’Utek are an ancient, venom-corrupted Amani troll prison complex on the Coiled Isle. Built by the Amani empire long ago as a massive containment facility and designed to imprison Ula'tek, a horrific and ancient serpent goddess of venom and hatred whom the trolls came to view as a catastrophic threat.",
+				["timeline"] = { ADDED_12_1_0 },
+				["maps"] = {
+					2638,	-- Profaned Mausoleum
+					2637,	-- Ruuk'jar's Clutch
+					2613,	-- The Underbelly
+					2636,	-- Vault of Restless Bones
+				},
+			}),
 		}),
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			["icon"] = 5927657,

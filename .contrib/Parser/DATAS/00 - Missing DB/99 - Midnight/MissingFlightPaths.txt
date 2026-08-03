@@ -1,6 +1,2 @@
 12.1.0.68209
-fp(3168),	-- Tokka's Landing, The Coiled Isle
 fp(3284),	-- 12.1 Ulatek - Faction Feature - Temple - Traversal - Flight Master - Eastern Entrance (HCR)
-fp(3285),	-- Amani Foothold
-fp(3286),	-- Eastern Entrance
-fp(3288),	-- Amani Foothold, Vaults of Atal'Utek

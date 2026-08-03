@@ -1194,7 +1194,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(AZJ_KAHET, {
+		m(AZJ_KAHET, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(QUESTS, {
 				q(79658),	-- [DNT] The Severed Threads Renown Unlock (spellID 448677)
 				q(83488, {	-- Rak-Ush Stagshell World Quests Unlocked (spellID 456051)
@@ -1214,6 +1214,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					["timeline"] = { ADDED_11_0_7 },
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

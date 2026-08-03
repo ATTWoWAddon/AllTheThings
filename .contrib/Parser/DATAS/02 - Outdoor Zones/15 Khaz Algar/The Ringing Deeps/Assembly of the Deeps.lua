@@ -521,29 +521,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	header(HEADERS.Faction, FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
-		n(AWAKENING_THE_MACHINE, {
-			q(84631, {	-- Wave 5
-				["name"] = "Awakening The Machine: Wave 5 Completed.",
+	m(KHAZ_ALGAR, {
+		m(THE_RINGING_DEEPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			header(HEADERS.Faction, FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
+				n(AWAKENING_THE_MACHINE, {
+					q(84631, {	-- Wave 5
+						["name"] = "Awakening The Machine: Wave 5 Completed.",
+					}),
+					q(84632, {	-- Wave 10
+						["name"] = "Awakening The Machine: Wave 10 Completed.",
+					}),
+					q(84633, {	-- Wave 15
+						["name"] = "Awakening The Machine: Wave 15 Completed.",
+					}),
+					q(84634, {	-- Wave 20
+						["name"] = "Awakening The Machine: Wave 20 Completed. Congratulations.",
+					}),
+				}),
+				n(QUESTS, {
+					q(84622),	-- Renown 4
+					q(84623),	-- Renown 4
+				}),
+				n(SNUFFLING, {
+					q(84433),	-- Show wax to Gnawbles for 79343 'Everyday I'm Snufflin'
+					-- q(84434),	-- Buy 'Waxy Bundle' from Gnawbles during 79343 'Everyday I'm Snufflin' (automated)
+					q(84543),	-- "Disturbed Dirt" in Golgrin's Reach, Isle of Dorn. The mob "Waxen Bones" spawned. Quest trigger when clicking the dirt, not when killing the mob. // Discord   // I'm clicked on Earthen Console, spawned Wandering Scuttleshell that drop Odd Glob of Wax // Discord // Another Dirt pile but hallowfall this time..
+				}),
 			}),
-			q(84632, {	-- Wave 10
-				["name"] = "Awakening The Machine: Wave 10 Completed.",
-			}),
-			q(84633, {	-- Wave 15
-				["name"] = "Awakening The Machine: Wave 15 Completed.",
-			}),
-			q(84634, {	-- Wave 20
-				["name"] = "Awakening The Machine: Wave 20 Completed. Congratulations.",
-			}),
-		}),
-		n(QUESTS, {
-			q(84622),	-- Renown 4
-			q(84623),	-- Renown 4
-		}),
-		n(SNUFFLING, {
-			q(84433),	-- Show wax to Gnawbles for 79343 'Everyday I'm Snufflin'
-			-- q(84434),	-- Buy 'Waxy Bundle' from Gnawbles during 79343 'Everyday I'm Snufflin' (automated)
-			q(84543),	-- "Disturbed Dirt" in Golgrin's Reach, Isle of Dorn. The mob "Waxen Bones" spawned. Quest trigger when clicking the dirt, not when killing the mob. // Discord   // I'm clicked on Earthen Console, spawned Wandering Scuttleshell that drop Odd Glob of Wax // Discord // Another Dirt pile but hallowfall this time..
-		}),
+		})),
 	}),
 }));

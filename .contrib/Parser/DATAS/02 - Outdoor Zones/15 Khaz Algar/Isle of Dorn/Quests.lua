@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(ISLE_OF_DORN, {
+		m(ISLE_OF_DORN, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(QUESTS, {
 				-- Dalaran intro
 				q(84698),	-- Fishing up Xalatath's Rusty Coin (Maybe should be collectible? //Braghe)
@@ -1303,6 +1303,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 				q(80539),	-- Completing The Machine Speakeasy (79546)
 			}),
-		}),
+		})),
 	}),
 }));

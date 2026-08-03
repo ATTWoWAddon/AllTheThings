@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			ach(11181, {	-- Legion Keymaster
 				["timeline"] = {
-					ADDED_7_0_3,
+					ADDED_7_0_3_LAUNCH,
 					REMOVED_8_0_1,
 					ADDED_11_2_5,
 					REMOVED_LEGION_REMIX_END,

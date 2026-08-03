@@ -4664,65 +4664,60 @@ what is the highest rank that can be bestowed on a night elf watcher? Warden
 --]]
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	["timeline"] = { ADDED_11_0_5 },
-	["groups"] = {
-		n(WOW_ANNIVERSARY_TWENTY, {
-			n(GUEST_RELATIONS, {
-				q(85564),	-- Talking to Kelsey during (85060) Pirate Foods and Superstitions.
-				q(85565),	-- Talking to Mrs. Gant during (85060) Pirate Foods and Superstitions.
-				q(85411),	-- Speaking to Bottlenose second option during (85195) Pirate Gastronomy.
-				q(85412),	-- Speaking to Bottlenose third option during (85195) Pirate Gastronomy.
-				q(85414),	-- Acquire 2 Swiftthistle for (85195) Pirate Gastronomy.
-				q(85415),	-- Acquire 2 Witchberries for (85195) Pirate Gastronomy.
-				q(85416),	-- Acquire 1 Small Flame Sac for (85195) Pirate Gastronomy.
-				q(85417),	-- Acquire 2 Aromatic Fish Oil for (85195) Pirate Gastronomy.
-				q(85418),	-- Acquire 5 Bloodfin Catfish for (85195) Pirate Gastronomy.
-				q(85419),	-- Acquire 4 Deviate Fish for (85195) Pirate Gastronomy.
-				q(85420),	-- Acquire 2 Nettlefish for (85195) Pirate Gastronomy.
-				q(85421),	-- Acquire 3 Furious Crawdads for (85195) Pirate Gastronomy.
-				q(84617, name(HEADERS.Achievement, 40873)),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
-			}),
-			q(84309),	-- Bonus chance for Reins of the Heavenly Onyx Cloud Serpent from Sha of Anger on first kill per day
-			q(84312),	-- Bonus chance for Grand Black War Mammoth from Doomwalker/Archavon on first kill per day
-			q(86398),	-- Bonus chance for Illidari Doomhawk from Doomwalker on first kill per day
-			q(85723),	-- first WB kill of day/event or maybe Doomwalker
-			q(85168),	-- fourth WB kill of day/event or maybe Kazzak
-			q(84878),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Cache lockout?)
-			q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
-			q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
-			q(84615, name(HEADERS.Spell, 455050)),	-- Blessings of the Bronze Dragonflight, triggered with turnin of 'Celebrate Good Fun' [84616]
-			-- Blackrock Depths
-			q(86278),	-- High Interrogator Gerstahn (LFR)
-			q(86289),	-- High Interrogator Gerstahn (N)
-			q(86290),	-- High Interrogator Gerstahn (H)
-			q(86279),	-- Houndmaster Grebmar (LFR)
-			q(86288),	-- Houndmaster Grebmar (N)
-			q(86291),	-- Houndmaster Grebmar (H)
-			q(86280),	-- Fineous Darkvire (LFR)
-			q(86287),	-- Fineous Darkvire (N)
-			q(86292),	-- Fineous Darkvire (H)
-			q(86281),	-- Phalanx (LFR)
-			q(86286),	-- Phalanx (N)
-			q(86293),	-- Phalanx (H)
-			q(86282),	-- Pyromancer Loregrain (LFR)
-			q(86285),	-- Pyromancer Loregrain (N)
+	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		n(GUEST_RELATIONS, {
+			q(85564),	-- Talking to Kelsey during (85060) Pirate Foods and Superstitions.
+			q(85565),	-- Talking to Mrs. Gant during (85060) Pirate Foods and Superstitions.
+			q(85411),	-- Speaking to Bottlenose second option during (85195) Pirate Gastronomy.
+			q(85412),	-- Speaking to Bottlenose third option during (85195) Pirate Gastronomy.
+			q(85414),	-- Acquire 2 Swiftthistle for (85195) Pirate Gastronomy.
+			q(85415),	-- Acquire 2 Witchberries for (85195) Pirate Gastronomy.
+			q(85416),	-- Acquire 1 Small Flame Sac for (85195) Pirate Gastronomy.
+			q(85417),	-- Acquire 2 Aromatic Fish Oil for (85195) Pirate Gastronomy.
+			q(85418),	-- Acquire 5 Bloodfin Catfish for (85195) Pirate Gastronomy.
+			q(85419),	-- Acquire 4 Deviate Fish for (85195) Pirate Gastronomy.
+			q(85420),	-- Acquire 2 Nettlefish for (85195) Pirate Gastronomy.
+			q(85421),	-- Acquire 3 Furious Crawdads for (85195) Pirate Gastronomy.
+			q(84617, name(HEADERS.Achievement, 40873)),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
 		}),
+		q(84309),	-- Bonus chance for Reins of the Heavenly Onyx Cloud Serpent from Sha of Anger on first kill per day
+		q(84312),	-- Bonus chance for Grand Black War Mammoth from Doomwalker/Archavon on first kill per day
+		q(86398),	-- Bonus chance for Illidari Doomhawk from Doomwalker on first kill per day
+		q(85723),	-- first WB kill of day/event or maybe Doomwalker
+		q(85168),	-- fourth WB kill of day/event or maybe Kazzak
+		q(84878),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Cache lockout?)
+		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
+		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
+		q(84615, name(HEADERS.Spell, 455050)),	-- Blessings of the Bronze Dragonflight, triggered with turnin of 'Celebrate Good Fun' [84616]
+		-- Blackrock Depths
+		q(86278),	-- High Interrogator Gerstahn (LFR)
+		q(86289),	-- High Interrogator Gerstahn (N)
+		q(86290),	-- High Interrogator Gerstahn (H)
+		q(86279),	-- Houndmaster Grebmar (LFR)
+		q(86288),	-- Houndmaster Grebmar (N)
+		q(86291),	-- Houndmaster Grebmar (H)
+		q(86280),	-- Fineous Darkvire (LFR)
+		q(86287),	-- Fineous Darkvire (N)
+		q(86292),	-- Fineous Darkvire (H)
+		q(86281),	-- Phalanx (LFR)
+		q(86286),	-- Phalanx (N)
+		q(86293),	-- Phalanx (H)
+		q(86282),	-- Pyromancer Loregrain (LFR)
+		q(86285),	-- Pyromancer Loregrain (N)
 		-- Warband weekly Bronze Celebration Tokens
-		n(WOW_ANNIVERSARY_TWENTY, sharedData(name(HEADERS.Currency, 3100), {
-			hqt(84629),	-- 'Meet and Greet' [84254]
-			hqt(84630),	-- 'Shopping Spree!' [84489]
-			hqt(84604),	-- 'Chromie's Codex' [82783]
-			hqt(84606),	-- 'Timely Gate Crashers' [60215]
-			hqt(84596),	-- Spreading The Lights
-			hqt(84609),	-- Forge the Pact (All Pacts)
-			hqt(84610),	-- Theater Troupe
-			hqt(86466),	-- Awakening The Machine
-			hqt(84599),	-- Sparks of War
-			hqt(84614),	-- World Boss (All)
-			hqt(84598),	-- Rollin' Down in the Deeps
-			hqt(85833),	-- Precussive Archaeology
-			hqt(84608),	-- 'An Original Path Through Time' [85947]
-		})),
-	},
+		q(84629, name(HEADERS.Currency, 3100)),	-- 'Meet and Greet' [84254]
+		q(84630, name(HEADERS.Currency, 3100)),	-- 'Shopping Spree!' [84489]
+		q(84604, name(HEADERS.Currency, 3100)),	-- 'Chromie's Codex' [82783]
+		q(84606, name(HEADERS.Currency, 3100)),	-- 'Timely Gate Crashers' [60215]
+		q(84596, name(HEADERS.Currency, 3100)),	-- Spreading The Lights
+		q(84609, name(HEADERS.Currency, 3100)),	-- Forge the Pact (All Pacts)
+		q(84610, name(HEADERS.Currency, 3100)),	-- Theater Troupe
+		q(86466, name(HEADERS.Currency, 3100)),	-- Awakening The Machine
+		q(84599, name(HEADERS.Currency, 3100)),	-- Sparks of War
+		q(84614, name(HEADERS.Currency, 3100)),	-- World Boss (All)
+		q(84598, name(HEADERS.Currency, 3100)),	-- Rollin' Down in the Deeps
+		q(85833, name(HEADERS.Currency, 3100)),	-- Precussive Archaeology
+		q(84608, name(HEADERS.Currency, 3100)),	-- 'An Original Path Through Time' [85947]
+	})),
 }));
 -- #endif

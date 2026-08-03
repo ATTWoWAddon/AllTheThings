@@ -30,6 +30,9 @@ root(ROOTS.PVP, pvp(filter(TITLES, {
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
 		}),
 		title(31),	-- Rival <Name>
+		title(539, {	-- Strategist <Name>
+			["timeline"] = { ADDED_11_0_0 },
+		}),
 		title(311, {	-- <Name> Soldier of the Alliance
 			["timeline"] = { ADDED_6_2_0, REMOVED_8_0_1_LAUNCH },
 		}),

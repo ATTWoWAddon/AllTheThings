@@ -1419,7 +1419,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(THE_RINGING_DEEPS, {
+		m(THE_RINGING_DEEPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(QUESTS, {
 				-- During questing
 				q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
@@ -1437,6 +1437,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					["coord"] = { 51.0, 47.6, THE_RINGING_DEEPS },
 				})),
 			}),
-		}),
+		})),
 	}),
 }));

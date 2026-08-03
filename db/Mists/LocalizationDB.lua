@@ -344,7 +344,6 @@ L.FOLLOWER_ID = "Follower ID"
 L.FOLLOWERS = GARRISON_FOLLOWERS
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Followers & Companions"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers."
-L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by " .. SHIFT_KEY_TEXT .. " clicking the header for this to be detected."
 L.FOR_CREATURES_CHECKBOX = "For Creatures"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures."
 L.FOR_THINGS_CHECKBOX = "For Things"
@@ -1759,7 +1758,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=26,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=7,["monthDay"]=26,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026}),
@@ -1811,7 +1809,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=4,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9494,7 +9493,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753981200,
+		release = 1753956000,
 		state = 2,
 	},
 	[5002] = {
@@ -9503,7 +9502,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755018000,
+		release = 1754992800,
 		state = 2,
 	},
 	[5003] = {
@@ -9512,7 +9511,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755795600,
+		release = 1755770400,
 		state = 2,
 	},
 	[5004] = {
@@ -9521,7 +9520,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756227600,
+		release = 1756202400,
 		state = 2,
 	},
 	[5005] = {
@@ -9530,7 +9529,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756832400,
+		release = 1756807200,
 		state = 2,
 	},
 	[5006] = {
@@ -9539,7 +9538,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757005200,
+		release = 1756980000,
 		state = 2,
 	},
 	[5007] = {
@@ -9548,7 +9547,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758042000,
+		release = 1758016800,
 		state = 2,
 	},
 	[51] = {
@@ -9573,7 +9572,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765994400,
+		release = 1765969200,
 		state = 2,
 	},
 	[53] = {
@@ -9598,7 +9597,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781629200,
+		release = 1781604000,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -10555,7 +10554,6 @@ L.FLIGHT_PATHS = "Flugpunkte"
 L.FLIGHT_PATHS_CHECKBOX = "Flugpunkte"
 L.FLIGHT_PATHS_DESC = "Flugpunkte werden entdeckt, indem Ihr mit dem Flugmeister sprecht.\n  - Crieve"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Anhänger & Gefährten"
-L.FOLLOWERS_COLLECTION_DESC = "Anhänger können Accountweit gesammelt werden, wenn Ihr diese Einstellung aktiviert.\n\nIhr müsst das Addon manuell mit " .. SHIFT_KEY_TEXT .. " Linksklick auf die Kopfzeile aktualisieren, damit dies erkannt wird."
 L.FOR_CREATURES_CHECKBOX = "Für Kreaturen"
 L.FOR_THINGS_CHECKBOX = "Für Dinge"
 L.FOR_UNSORTED_CHECKBOX = "Für Unsortiert"
@@ -21901,7 +21899,6 @@ L.FLIGHT_PATHS_DESC = "Пути Полётов засчитываются, ко�
 L.FOLLOWER = "Соратник"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Соратники и Спутники"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Включите для отслеживания соратников и чемпионов.\n\nТо есть: Соратники в Гарнизоне, Чемпионы Оплота Класса в Легионе, Спутники Битвы за Азерот, а также Спутники из Тёмных Земель."
-L.FOLLOWERS_COLLECTION_DESC = "Спутники могут быть собраны на Весь Аккаунт, если включена соответствующая опция.\n\nВы должны вручную обновить коллекцию через " .. SHIFT_KEY_TEXT .. " клик по заголовку, чтобы они засчитались."
 L.FOR_CREATURES_CHECKBOX = "Для Существ"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть Местонахождение Источников для Существ."
 L.FOR_THINGS_CHECKBOX = "Для Штучек"
@@ -28104,7 +28101,6 @@ L.FLIGHT_PATHS_DESC = "Las rutas de vuelo son detectadas cuando hablas con un ma
 L.FOLLOWER_ID = "Seguidores ID"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Seguidores y Campeones"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear seguidores y campeones.\n\nPE: Seguidores de la Ciudadela, Campeones de la Sede de clase, seguidores de la Campaña de BFA o aventureros de SL."
-L.FOLLOWERS_COLLECTION_DESC = "Se pueden recopilar seguidores en toda la cuenta si habilita esta configuración en ATT.\n\nDebes actualizar manualmente el addon con " .. SHIFT_KEY_TEXT .. " clic en el encabezado para que esto se detecte."
 L.FOR_CREATURES_CHECKBOX = "Para criaturas"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver las ubicaciones de Criaturas."
 L.FOR_THINGS_CHECKBOX = "Para cosas"
@@ -31702,7 +31698,6 @@ L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "Habilita esta opción par
 L.FLIGHT_PATH_ID = "ID de Ruta de vuelo"
 L.FOLLOWER_ID = "ID de seguidores"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear seguidores y campeones.\n\nPE: Seguidores de la Fortaleza, Campeones de la Sede de clase, seguidores de la Campaña de BFA o aventureros de SL."
-L.FOLLOWERS_COLLECTION_DESC = "Se pueden recopilar seguidores en toda la cuenta si habilita esta configuración en ATT.\n\nDebes actualizar manualmente el addon con " .. SHIFT_KEY_TEXT .. " click en el encabezado para que esto se detecte."
 L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver las ubicaciones de origen que no se han añadido del todo a la base de datos."
 L.FORCE_REFRESH_REQUIRED = "Esto puede requerir una actualización forzada (" .. SHIFT_KEY_TEXT .. " + click) para detectarlo correctamente."
 L.FUTURE_UNOBTAINABLE = "No obtenible en un futuro!"
@@ -32223,7 +32218,6 @@ L.FOLLOWER_DESC = "点击此按钮以根据缺少的内容随机选择一个追�
 L.FOLLOWER_ID = "追随者 ID"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t 追随者 & 伙伴"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "启用此选项可追踪随从。\n\n即：要塞随从，军团职业大厅随从，争霸艾泽拉斯随从，暗影国度随从。"
-L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中启用此设置，则可以在整个帐号范围内收集追随者。\n\n必须通过 " .. SHIFT_KEY_TEXT .. "点击标题手动刷新插件才能检测到这一点。"
 L.FOR_CREATURES_CHECKBOX = "对生物"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的来源位置，请启用此选项。"
 L.FOR_THINGS_CHECKBOX = "对事物"
@@ -35722,7 +35716,6 @@ L.FLIGHT_PATHS_DESC = "當你與每個大陸上的飛行管理員交談時會快
 L.FOLLOWER_ID = "追隨者 ID"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t 追隨者 & 伙伴"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤追隨者。\n\n即：要塞追隨者，軍團職業大廳追隨者，決戰艾澤拉斯追隨者，暗影之境追隨者。"
-L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中啟用此設定，則可以在整個帳號範圍內收集追隨者。\n\n必須通過 " .. SHIFT_KEY_TEXT .. "點擊標題手動刷新插件才能檢測到這一點。"
 L.FOR_CREATURES_CHECKBOX = "對生物"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的來源位置，請啟用此選項。"
 L.FOR_THINGS_CHECKBOX = "對事物"

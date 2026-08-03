@@ -164,7 +164,7 @@ do
 		if field then return _t[field]; end
 	end
 	app.CreateFollower = app.CreateClass(CLASSNAME, KEY, {
-		CACHE = CACHE,
+		CACHE = function() return CACHE end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
 		end,
@@ -182,9 +182,6 @@ do
 		end,
 		link = function(t)
 			return cache.GetCachedField(t, "link", CacheInfo);
-		end,
-		description = function(t)
-			return L.FOLLOWERS_COLLECTION_DESC;
 		end,
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collected = function(t)

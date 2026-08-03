@@ -2506,6 +2506,7 @@ i(275652, 1297220);	-- Crimson Venomfang
 i(262496, 1268919);	-- Delver's Arcane Golem
 i(276553, 1299965);	-- Emerald Skyfang
 i(276802, 1300778);	-- Indigo Coiled Horror
+i(275660, 1297408);	-- Preyhunter's Fury
 i(275658, 1297405);	-- Primeval Skyfriend
 i(275653, 1297216);	-- Sea-Dwelling Isle Serpent
 i(276804, 1300776);	-- The Writhing Brood
@@ -2527,7 +2528,6 @@ i(278576, 1305209);	-- Crested Violet Leafmimic
 i(275659, 1297407);	-- Hexflame Reaver
 i(275571, 1296986);	-- Moonlit Witchwick's Rider
 i(275570, 1296985);	-- Mossy Witchwick's Rider
-i(275660, 1297408);	-- Preyhunter's Fury
 i(276803, 1300779);	-- Ruby Writhe
 i(275572, 1296987);	-- Scarlet Witchwick's Rider
 i(275653, 1297216);	-- Sea-Dwelling Isle Serpent

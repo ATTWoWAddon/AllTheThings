@@ -1,10 +1,1 @@
-12.1.0.68209
-ill(8697),	-- Venomcoil
 
-
-
-
-Missing in IllusionDB.lua
-
-12.1.0.68209
-ill(8697),	-- Venomcoil

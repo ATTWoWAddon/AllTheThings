@@ -137,11 +137,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(BROKEN_ISLES, {
-		m(BROKEN_SHORE, {
-			n(WORLD_BOSSES, {
-				q(92540, { ["isDaily"] = true } ),	-- Kill any Broken Shore world boss
+	applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
+		["timeline"] = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END },
+		["groups"] = {
+			m(BROKEN_ISLES, {
+				n(WORLD_BOSSES, {
+					q(92540, { ["isDaily"] = true } ),	-- Kill any Broken Shore world boss
+				}),
 			}),
-		}),
-	}),
+		},
+	})),
 }));

@@ -174,8 +174,47 @@ local function presetStore()
 		["AccountWide:Conduits"] = settings:Get("AccountWide:Conduits"),
 	}
 
+	-- Filters
+	for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+		local setting = settings:GetFilter(i)
+		if setting ~= nil then
+			settingsTable[i] = setting
+		end
+	end
+
 	settings:Set("PresetRestore", settingsTable)
 end
+
+local insaneFilters = {
+	[11] = true,	-- Artifacts
+	[2]  = true,	-- Cosmetic
+	[3]  = true,	-- Cloaks
+	[10] = true,	-- Shirts
+	[9]  = true,	-- Tabards
+	[33] = true,	-- Crossbows
+	[32] = true,	-- Bows
+	[31] = true,	-- Guns
+	[36] = true,	-- Thrown
+	[57] = true,	-- Profession Equipment
+	[34] = true,	-- Fist Weapons
+	[35] = true,	-- Warglaives
+	[27] = true,	-- Wands
+	[21] = true,	-- 1H Axes
+	[22] = true,	-- 2H Axes
+	[23] = true,	-- 1H Maces
+	[24] = true,	-- 2H Maces
+	[25] = true,	-- 1H Swords
+	[26] = true,	-- 2H Swords
+	[1]  = true,	-- Held in Off-Hand
+	[8]  = true,	-- Shields
+	[4]  = true,	-- Cloth
+	[5]  = true,	-- Leather
+	[6]  = true,	-- Mail
+	[7]  = true,	-- Plate
+	[20] = true,	-- Daggers
+	[29] = true,	-- Polearms
+	[28] = true,	-- Staves
+}
 
 local modeButton = CreateFrame("Button", nil, child, "UIDropDownMenuButtonScriptTemplate")
 modeButton:SetSize(24, 24)
@@ -257,6 +296,14 @@ modeButton:SetScript("OnClick", function()
 				settings:Set("AccountWide:AzeriteEssences", settings:Get("PresetRestore")["AccountWide:AzeriteEssences"])
 				settings:Set("AccountWide:Conduits", settings:Get("PresetRestore")["AccountWide:Conduits"])
 
+				-- Filters
+				for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+					local setting = settings:Get("PresetRestore")[i]
+					if setting ~= nil then
+						settings:SetFilter(i, setting)
+					end
+				end
+
 				-- Reset our preset storage
 				settings:Set("PresetRestore", {})
 
@@ -327,6 +374,11 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("CC:SL_COV_NFA", false)
 			settings:Set("CC:SL_COV_VEN", false)
 
+			-- Filters
+			for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+				settings:SetFilter(i, insaneFilters[i] or false)
+			end
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -392,6 +444,11 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("CC:SL_COV_NEC", true)
 			settings:Set("CC:SL_COV_NFA", true)
 			settings:Set("CC:SL_COV_VEN", true)
+
+			-- Filters
+			for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+				settings:SetFilter(i, insaneFilters[i] or false)
+			end
 
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
@@ -459,6 +516,11 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("CC:SL_COV_NFA", true)
 			settings:Set("CC:SL_COV_VEN", true)
 
+			-- Filters
+			for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+				settings:SetFilter(i, insaneFilters[i] or false)
+			end
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -525,6 +587,11 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("CC:SL_COV_NFA", true)
 			settings:Set("CC:SL_COV_VEN", true)
 
+			-- Filters
+			for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+				settings:SetFilter(i, insaneFilters[i] or false)
+			end
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
@@ -554,6 +621,11 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("AccountWide:Followers", true)
 			settings:Set("AccountWide:AzeriteEssences", true)
 			settings:Set("AccountWide:Conduits", true)
+
+			-- Filters
+			for i = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+				settings:SetFilter(i, insaneFilters[i] or false)
+			end
 
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
@@ -590,6 +662,9 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("CC:SL_COV_NEC", false)
 			settings:Set("CC:SL_COV_NFA", false)
 			settings:Set("CC:SL_COV_VEN", false)
+
+			-- Filters
+			settings:ResetFilters()
 
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)

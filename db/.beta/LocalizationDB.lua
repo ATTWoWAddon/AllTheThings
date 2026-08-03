@@ -347,7 +347,6 @@ L.FOLLOWER_ID = "Follower ID"
 L.FOLLOWERS = GARRISON_FOLLOWERS
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Followers & Companions"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers."
-L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by " .. SHIFT_KEY_TEXT .. " clicking the header for this to be detected."
 L.FOR_CREATURES_CHECKBOX = "For Creatures"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures."
 L.FOR_THINGS_CHECKBOX = "For Things"
@@ -1722,7 +1721,7 @@ localize(L.HEADER_NAMES, {
 	[-739] = COVENANT_SANCTUM_TAB_RENOWN.." 2",
 	[-740] = COVENANT_SANCTUM_TAB_RENOWN.." 4",
 	[-743] = COVENANT_SANCTUM_TAB_RENOWN.." 9",
-	[-745] = "Neighborhood postal route",
+	[-745] = "Neighborhood Postal Route",
 	[-746] = "Profession Nodes",
 	[-748] = "Fanta",
 	[-750] = "Phase Conduits",
@@ -2664,7 +2663,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=26,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=7,["monthDay"]=26,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=2,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026}),
@@ -2716,7 +2714,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=4,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=4,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=11,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -10012,6 +10011,7 @@ local ObjectNames = {
 	[352926] = "Bulbous Seaweed Stalk",
 	[353019] = "Silver Strongbox",
 	[353205] = "Silver Strongbox",
+	[353210] = "Grinchin Calligraphy Set",
 	[353231] = "Bonebound Chest",
 	[353232] = "Bleakwood Chest",
 	[353233] = "Enchanted Chest",
@@ -19395,6 +19395,7 @@ local ObjectModels = {
 	[352926] = 327919,
 	[353019] = 3189120,
 	[353205] = 3189120,
+	[353210] = 3148987,
 	[353231] = 3621781,
 	[353232] = 3595030,
 	[353233] = 3522547,
@@ -26126,11 +26127,15 @@ L.QUEST_NAMES = {
 	[95137] = "MID Inscription Order: Tailoring",
 	[95138] = "MID Inscription Order: Engineering",
 	[95166] = "Pet the Pet",
+	[96966] = "Looming Mutagenitor weekly reputation obtained.",
+	[96968] = "Ss'akrithos weekly reputation obtained.",
+	[96970] = "Malformed Leviathan weekly reputation obtained.",
 	[98344] = "Farthik the Plunderer weekly reputation obtained.",
 	[98345] = "Siltmouth weekly reputation obtained.",
 	[98346] = "Kari'zah the Forgotten weekly reputation obtained.",
 	[98347] = "Lockjaw weekly reputation obtained.",
 	[98348] = "Hisstara weekly reputation obtained.",
+	[98349] = "Szarith The Fanged weekly reputation obtained.",
 	[98350] = "Garsecg weekly reputation obtained.",
 	[98351] = "Nar'zira weekly reputation obtained.",
 	[98353] = "Big Mon weekly reputation obtained.",
@@ -26396,7 +26401,6 @@ L.FLIGHT_PATHS = "Flugpunkte"
 L.FLIGHT_PATHS_CHECKBOX = "Flugpunkte"
 L.FLIGHT_PATHS_DESC = "Flugpunkte werden entdeckt, indem Ihr mit dem Flugmeister sprecht.\n  - Crieve"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Anhänger & Gefährten"
-L.FOLLOWERS_COLLECTION_DESC = "Anhänger können Accountweit gesammelt werden, wenn Ihr diese Einstellung aktiviert.\n\nIhr müsst das Addon manuell mit " .. SHIFT_KEY_TEXT .. " Linksklick auf die Kopfzeile aktualisieren, damit dies erkannt wird."
 L.FOR_CREATURES_CHECKBOX = "Für Kreaturen"
 L.FOR_THINGS_CHECKBOX = "Für Dinge"
 L.FOR_UNSORTED_CHECKBOX = "Für Unsortiert"
@@ -31609,6 +31613,7 @@ localize(ObjectNames, {
 	[352926] = "Knolliger Seetanghalm",
 	[353019] = "Silberne Schließkassette",
 	[353205] = "Silberne Schließkassette",
+	[353210] = "Grinskinnkalligraphieset",
 	[353231] = "Knochengebundene Kiste",
 	[353232] = "Kahlholzkiste",
 	[353233] = "Verzauberte Truhe",
@@ -39457,6 +39462,7 @@ localize(ObjectNames, {
 	[352926] = "Tige d’algue bulbeuse",
 	[353019] = "Coffre renforcé en argent",
 	[353205] = "Coffre renforcé en argent",
+	[353210] = "Matériel de calligraphie des Riktus",
 	[353231] = "Coffre os-lié",
 	[353232] = "Coffre du bois morne",
 	[353233] = "Coffre enchanté",
@@ -46408,6 +46414,7 @@ localize(ObjectNames, {
 	[352754] = "Forziere d'Argento",
 	[353019] = "Forziere d'Argento",
 	[353205] = "Forziere d'Argento",
+	[353210] = "Set da Calligrafo Grincioso",
 	[353231] = "Cassa Legaossa",
 	[353232] = "Cassa di Legnocupo",
 	[353233] = "Cassa Incantata",
@@ -53486,6 +53493,7 @@ localize(ObjectNames, {
 	[352926] = "Talo de Alga Bulboso",
 	[353019] = "Caixa-forte de Prata",
 	[353205] = "Caixa-forte de Prata",
+	[353210] = "Conjunto de Caligrafia Grinchina",
 	[353231] = "Baú Ósseo",
 	[353232] = "Baú de Lenhavil",
 	[353233] = "Baú Encantado",
@@ -56053,7 +56061,6 @@ L.FLIGHT_PATHS_DESC = "Пути Полётов засчитываются, ко�
 L.FOLLOWER = "Соратник"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Соратники и Спутники"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Включите для отслеживания соратников и чемпионов.\n\nТо есть: Соратники в Гарнизоне, Чемпионы Оплота Класса в Легионе, Спутники Битвы за Азерот, а также Спутники из Тёмных Земель."
-L.FOLLOWERS_COLLECTION_DESC = "Спутники могут быть собраны на Весь Аккаунт, если включена соответствующая опция.\n\nВы должны вручную обновить коллекцию через " .. SHIFT_KEY_TEXT .. " клик по заголовку, чтобы они засчитались."
 L.FOR_CREATURES_CHECKBOX = "Для Существ"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть Местонахождение Источников для Существ."
 L.FOR_THINGS_CHECKBOX = "Для Штучек"
@@ -61625,6 +61632,7 @@ localize(ObjectNames, {
 	[352926] = "Набухший побег водоросли",
 	[353019] = "Серебряный сундучок",
 	[353205] = "Серебряный сундучок",
+	[353210] = "Гринчинский каллиграфический набор",
 	[353231] = "Укрепленный костью сундук",
 	[353232] = "Сундук из мрачного дерева",
 	[353233] = "Зачарованный сундук",
@@ -68700,6 +68708,7 @@ localize(ObjectNames, {
 	[352926] = "봉긋한 해초 줄기",
 	[353019] = "은 금고",
 	[353205] = "은 금고",
+	[353210] = "그린친 붓글씨 도구",
 	[353231] = "뼈결속 상자",
 	[353232] = "귀신나무 상자",
 	[353233] = "마법에 걸린 상자",
@@ -70966,7 +70975,6 @@ L.FLIGHT_PATHS_DESC = "Las rutas de vuelo son detectadas cuando hablas con un ma
 L.FOLLOWER_ID = "Seguidores ID"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Seguidores y Campeones"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear seguidores y campeones.\n\nPE: Seguidores de la Ciudadela, Campeones de la Sede de clase, seguidores de la Campaña de BFA o aventureros de SL."
-L.FOLLOWERS_COLLECTION_DESC = "Se pueden recopilar seguidores en toda la cuenta si habilita esta configuración en ATT.\n\nDebes actualizar manualmente el addon con " .. SHIFT_KEY_TEXT .. " clic en el encabezado para que esto se detecte."
 L.FOR_CREATURES_CHECKBOX = "Para criaturas"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver las ubicaciones de Criaturas."
 L.FOR_THINGS_CHECKBOX = "Para cosas"
@@ -76652,6 +76660,7 @@ localize(ObjectNames, {
 	[352926] = "Tallo de alga bulbosa",
 	[353019] = "Caja fuerte de plata",
 	[353205] = "Caja fuerte de plata",
+	[353210] = "Kit de caligrafía Risamentón",
 	[353231] = "Cofre vinculahueso",
 	[353232] = "Cofre de leñogrís",
 	[353233] = "Cofre encantado",
@@ -79041,7 +79050,6 @@ L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "Habilita esta opción par
 L.FLIGHT_PATH_ID = "ID de Ruta de vuelo"
 L.FOLLOWER_ID = "ID de seguidores"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear seguidores y campeones.\n\nPE: Seguidores de la Fortaleza, Campeones de la Sede de clase, seguidores de la Campaña de BFA o aventureros de SL."
-L.FOLLOWERS_COLLECTION_DESC = "Se pueden recopilar seguidores en toda la cuenta si habilita esta configuración en ATT.\n\nDebes actualizar manualmente el addon con " .. SHIFT_KEY_TEXT .. " click en el encabezado para que esto se detecte."
 L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver las ubicaciones de origen que no se han añadido del todo a la base de datos."
 L.FORCE_REFRESH_REQUIRED = "Esto puede requerir una actualización forzada (" .. SHIFT_KEY_TEXT .. " + click) para detectarlo correctamente."
 L.FUTURE_UNOBTAINABLE = "No obtenible en un futuro!"
@@ -80087,7 +80095,6 @@ L.FOLLOWER_DESC = "点击此按钮以根据缺少的内容随机选择一个追�
 L.FOLLOWER_ID = "追随者 ID"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t 追随者 & 伙伴"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "启用此选项可追踪随从。\n\n即：要塞随从，军团职业大厅随从，争霸艾泽拉斯随从，暗影国度随从。"
-L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中启用此设置，则可以在整个帐号范围内收集追随者。\n\n必须通过 " .. SHIFT_KEY_TEXT .. "点击标题手动刷新插件才能检测到这一点。"
 L.FOR_CREATURES_CHECKBOX = "对生物"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的来源位置，请启用此选项。"
 L.FOR_THINGS_CHECKBOX = "对事物"
@@ -85321,6 +85328,7 @@ localize(ObjectNames, {
 	[352909] = "烁鳍之鳞",
 	[353019] = "白银保险箱",
 	[353205] = "白银保险箱",
+	[353210] = "笑颏书法套件",
 	[353231] = "骨缚宝箱",
 	[353232] = "冷木宝箱",
 	[353233] = "附魔宝箱",
@@ -87658,7 +87666,6 @@ L.FLIGHT_PATHS_DESC = "當你與每個大陸上的飛行管理員交談時會快
 L.FOLLOWER_ID = "追隨者 ID"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t 追隨者 & 伙伴"
 L.FOLLOWERS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤追隨者。\n\n即：要塞追隨者，軍團職業大廳追隨者，決戰艾澤拉斯追隨者，暗影之境追隨者。"
-L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中啟用此設定，則可以在整個帳號範圍內收集追隨者。\n\n必須通過 " .. SHIFT_KEY_TEXT .. "點擊標題手動刷新插件才能檢測到這一點。"
 L.FOR_CREATURES_CHECKBOX = "對生物"
 L.FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的來源位置，請啟用此選項。"
 L.FOR_THINGS_CHECKBOX = "對事物"

@@ -843,6 +843,36 @@ settings.ApplySettingsMetatable = function(self, container, meta)
 		RawSettings[container] = settingscontainer
 	end
 end
+local insaneFilters = {	-- Filter IDs
+	11,	-- Artifacts
+	2,	-- Cosmetic
+	3,	-- Cloaks
+	10,	-- Shirts
+	9,	-- Tabards
+	33,	-- Crossbows
+	32,	-- Bows
+	31,	-- Guns
+	36,	-- Thrown
+	57,	-- Profession Equipment
+	34,	-- Fist Weapons
+	35,	-- Warglaives
+	27,	-- Wands
+	21,	-- 1H Axes
+	22,	-- 2H Axes
+	23,	-- 1H Maces
+	24,	-- 2H Maces
+	25,	-- 1H Swords
+	26,	-- 2H Swords
+	1,	-- Held in Off-Hand
+	8,	-- Shields
+	4,	-- Cloth
+	5,	-- Leather
+	6,	-- Mail
+	7,	-- Plate
+	20,	-- Daggers
+	29,	-- Polearms
+	28,	-- Staves
+}
 settings.GetModeString = function(self)
 	local mode = L.MODE;
 	if settings:Get("Thing:Transmog") or app.MODE_DEBUG then
@@ -929,13 +959,20 @@ settings.GetModeString = function(self)
 				solo = false
 			end
 		end
+		local hasAllInsaneFilters = true
+		for _, filterID in pairs(insaneFilters) do
+			if not settings:GetFilter(filterID) then
+				hasAllInsaneFilters = false
+				break
+			end
+		end
 		if thingCount == 0 then
 			mode = L.TITLE_NONE_THINGS .. mode;
 		elseif thingCount == 1 then
 			mode = things[1] .. L.TITLE_ONLY .. mode;
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. L.TITLE_ONLY .. mode;
-		elseif insaneCount == insaneTotalCount then
+		elseif insaneCount == insaneTotalCount and hasAllInsaneFilters then
 			-- only Insane if not hiding anything!
 			if settings:NonMode() then
 				-- don't add Insane :)
@@ -1026,10 +1063,17 @@ settings.GetShortModeString = function(self)
 				solo = false
 			end
 		end
+		local hasAllInsaneFilters = true
+		for _, filterID in pairs(insaneFilters) do
+			if not settings:GetFilter(filterID) then
+				hasAllInsaneFilters = false
+				break
+			end
+		end
 		local style = ""
 		if thingCount == 0 then
 			style = "N"
-		elseif insaneCount == insaneTotalCount then
+		elseif insaneCount == insaneTotalCount and hasAllInsaneFilters then
 			-- only Insane if not hiding anything!
 			if settings:NonMode() then
 				-- don't add Insane :)

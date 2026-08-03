@@ -23,6 +23,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["isWeekly"] = true,	-- Assumption
 						["groups"] = { i(278470) },	-- Malefic Venom (QI!)
 					}),
+					q(96640, {	-- Bounty of the Cursed
+						["qg"] = 262880,	-- Er'inye
+						["coord"] = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["isWeekly"] = true,	-- Assumption
+						["groups"] = { i(275060) },	-- Forgotten Relic (QI!)
+					}),
 				}),
 				q(98388, {	-- Vaults of Atal'Utek: Certain Doom
 					["qgs"] = {
@@ -33,11 +39,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati @ Amani Foothold
 						{ 53.9, 39.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Mok'sa the Stone @ Eastern Amani Outpost
 					},
-				}),
-				q(98419, {	-- Shoulder to Shoulder
-					["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
-					["qg"] = 262798,	-- Warleader Abdumati
-					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				}),
 				q(98515, {	-- Vaults of Atal'Utek: A Toxic Tour
 					["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
@@ -54,6 +55,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Warleader Abdumati
 						{ 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },		-- Talon Commander Zela
 					},
+					["isWeekly"] = true,	-- Assumption
+				}),
+				q(98419, {	-- Shoulder to Shoulder
+					["sourceQuest"] = 98388,	-- Vaults of Atal'Utek: Certain Doom
+					["qg"] = 262798,	-- Warleader Abdumati
+					["coord"] = { 47.2, 60.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["isWeekly"] = true,	-- Assumption
 				}),
 				q(96639, {	-- Patrolling the Temple

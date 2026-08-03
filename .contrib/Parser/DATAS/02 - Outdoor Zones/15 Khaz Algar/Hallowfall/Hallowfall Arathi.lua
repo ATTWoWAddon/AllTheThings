@@ -1516,103 +1516,107 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	header(HEADERS.Faction, FACTION_HALLOWFALL_ARATHI, {
-		header(HEADERS.Quest, 76586, {	-- Spreading The Light
-			--	Rares
-			q(84052, {	-- Weekly reputation: Crazed Cabbage Smacker
-				["name"] = "Crazed Cabbage Smacker weekly reputation obtained.",
+	m(KHAZ_ALGAR, {
+		m(HALLOWFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			header(HEADERS.Faction, FACTION_HALLOWFALL_ARATHI, {
+				header(HEADERS.Quest, 76586, {	-- Spreading The Light
+					--	Rares
+					q(84052, {	-- Weekly reputation: Crazed Cabbage Smacker
+						["name"] = "Crazed Cabbage Smacker weekly reputation obtained.",
+					}),
+					q(84054, {	-- Weekly reputation: Croakit
+						["name"] = "Croakit weekly reputation obtained.",
+					}),
+					q(84053, {	-- Weekly reputation: Deathpetal
+						["name"] = "Deathpetal weekly reputation obtained.",
+					}),
+					q(84056, {	-- Weekly reputation: Duskshadow
+						["name"] = "Duskshadow weekly reputation obtained.",
+					}),
+					q(84059, {	-- Weekly reputation: Finclaw Bloodtide
+						["name"] = "Finclaw Bloodtide weekly reputation obtained.",
+					}),
+					q(84051, {	-- Weekly reputation: Moth'ethk
+						["name"] = "Moth'ethk weekly reputation obtained.",
+					}),
+					q(84060, {	-- Weekly reputation: Murkspike
+						["name"] = "Murkspike weekly reputation obtained.",
+					}),
+					q(84057, {	-- Weekly reputation: Parasidious
+						["name"] = "Parasidious weekly reputation obtained.",
+					}),
+					q(84058, {	-- Weekly reputation: Ravageant
+						["name"] = "Ravageant weekly reputation obtained.",
+					}),
+					q(84055, {	-- Weekly reputation: Toadstomper
+						["name"] = "Toadstomper weekly reputation obtained.",
+					}),
+					-- Hidden stuff in area, that require different light buffs
+					-- isDaily
+					--
+					q(81800),	-- Herb @ 65.3, 29.4
+					q(81809),	-- Herb @ 65.0, 25.8
+					q(81814),	-- Herb @ ?, ?
+					q(81821),	-- Herb @ 65.0, 26.1
+					q(81840),	-- Herb @ 62.8, 20.4
+					q(81842),	-- Herb @ 61.6, 32.6
+					q(81843),	-- Herb @ 63.5, 19.6
+					q(81844),	-- Herb @ 65.6, 28.3
+					q(83208),	-- Herb @ 66.3, 23.6
+					q(83209),	-- Herb @ 64.3, 23.9
+					q(83210),	-- Herb @ 65.0, 24.4
+					q(83211),	-- Herb @ 67.1, 23.3
+					q(83212),	-- Herb @ 67.1, 26.7
+					q(83213),	-- Herb @ 67.2, 27.4
+					q(83215),	-- Herb @ 67.4, 29.0
+					q(83216),	-- Herb @ 66.3, 25.0
+					q(83219),	-- Herb @ 64.6, 23.2
+					q(83222),	-- Herb @ 61.5, 16.5
+					q(83223),	-- Herb @ 62.1, 13.0
+					q(83226),	-- Herb @ ?, ?
+					q(83228),	-- Herb @ 62.0, 32.3
+					q(83230),	-- Herb @ 65.8, 27.7
+					q(83231),	-- Herb @ 64.9, 33.7
+					q(83232),	-- Herb @ ?, ?
+					q(83233),	-- Herb @ 62.2, 33.0
+					q(83234),	-- Herb @ 62.1, 33.6
+					q(83523),	-- Herb @ 65.4, 30.2
+					--
+					q(81846),	-- Ore @ 65.3, 16.6
+					q(81847),	-- Ore @ 66.3, 14.9
+					q(81848),	-- Ore @ 66.4, 23.4
+					q(83032),	-- Ore @ 67.1, 22.1
+					q(83033),	-- Ore @ 67.6, 23.8
+					q(83035),	-- Ore @ 68.8, 26.9
+					q(83036),	-- Ore @ 62.6, 30.3
+					q(83038),	-- Ore @ 62.8, 20.4
+					q(83039),	-- Ore @ 66.3, 17.5
+					q(83041),	-- Ore @ 65.2, 31.5 (old coords - 64.9, 27.5?)
+					q(83042),	-- Ore @ 62.2, 30.9
+					q(83044),	-- Ore @ 64.0, 30.0
+					q(83045),	-- Ore @ 65.4, 23.3
+					q(83047),	-- Ore @ 66.1, 17.0
+					-- Small Keyflames
+					q(80005, {["isWeekly"]=true,}),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
+					q(78472, {["isWeekly"]=true,}),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
+					q(79295, {["isWeekly"]=true,}),	-- Taerry Bligestone - Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
+					q(76599, {["isWeekly"]=true,}),	-- Auebry Irongear - Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
+					q(78452, {["isWeekly"]=true,}),	-- Yorvas Flintstrike - Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
+					q(79383, {["isWeekly"]=true,}),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
+					q(78466, {["isWeekly"]=true,}),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
+					q(78458, {["isWeekly"]=true,}),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
+					---
+					q(79214),	-- after harvester activation @ 61.9, 28.8, he is going to o: 433377 (Harvest Box) and highlight it
+					q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
+					-- q(79177),	-- After looting Blueprint Bundle (211968) (automated)
+					-- q(79179),	-- After looting Spider Touched Bag (211973) (automated)
+					q(79188),	-- after turning in 79173 Supply the Effort
+					-- Vendor
+					q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
+					q(83342),	-- after turn in 76394 (Shadows of Flavor), unlock ability to buy Twilight-Spiced Grouper from vendor
+					q(83343),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor
+				}),
 			}),
-			q(84054, {	-- Weekly reputation: Croakit
-				["name"] = "Croakit weekly reputation obtained.",
-			}),
-			q(84053, {	-- Weekly reputation: Deathpetal
-				["name"] = "Deathpetal weekly reputation obtained.",
-			}),
-			q(84056, {	-- Weekly reputation: Duskshadow
-				["name"] = "Duskshadow weekly reputation obtained.",
-			}),
-			q(84059, {	-- Weekly reputation: Finclaw Bloodtide
-				["name"] = "Finclaw Bloodtide weekly reputation obtained.",
-			}),
-			q(84051, {	-- Weekly reputation: Moth'ethk
-				["name"] = "Moth'ethk weekly reputation obtained.",
-			}),
-			q(84060, {	-- Weekly reputation: Murkspike
-				["name"] = "Murkspike weekly reputation obtained.",
-			}),
-			q(84057, {	-- Weekly reputation: Parasidious
-				["name"] = "Parasidious weekly reputation obtained.",
-			}),
-			q(84058, {	-- Weekly reputation: Ravageant
-				["name"] = "Ravageant weekly reputation obtained.",
-			}),
-			q(84055, {	-- Weekly reputation: Toadstomper
-				["name"] = "Toadstomper weekly reputation obtained.",
-			}),
-			-- Hidden stuff in area, that require different light buffs
-			-- isDaily
-			--
-			q(81800),	-- Herb @ 65.3, 29.4
-			q(81809),	-- Herb @ 65.0, 25.8
-			q(81814),	-- Herb @ ?, ?
-			q(81821),	-- Herb @ 65.0, 26.1
-			q(81840),	-- Herb @ 62.8, 20.4
-			q(81842),	-- Herb @ 61.6, 32.6
-			q(81843),	-- Herb @ 63.5, 19.6
-			q(81844),	-- Herb @ 65.6, 28.3
-			q(83208),	-- Herb @ 66.3, 23.6
-			q(83209),	-- Herb @ 64.3, 23.9
-			q(83210),	-- Herb @ 65.0, 24.4
-			q(83211),	-- Herb @ 67.1, 23.3
-			q(83212),	-- Herb @ 67.1, 26.7
-			q(83213),	-- Herb @ 67.2, 27.4
-			q(83215),	-- Herb @ 67.4, 29.0
-			q(83216),	-- Herb @ 66.3, 25.0
-			q(83219),	-- Herb @ 64.6, 23.2
-			q(83222),	-- Herb @ 61.5, 16.5
-			q(83223),	-- Herb @ 62.1, 13.0
-			q(83226),	-- Herb @ ?, ?
-			q(83228),	-- Herb @ 62.0, 32.3
-			q(83230),	-- Herb @ 65.8, 27.7
-			q(83231),	-- Herb @ 64.9, 33.7
-			q(83232),	-- Herb @ ?, ?
-			q(83233),	-- Herb @ 62.2, 33.0
-			q(83234),	-- Herb @ 62.1, 33.6
-			q(83523),	-- Herb @ 65.4, 30.2
-			--
-			q(81846),	-- Ore @ 65.3, 16.6
-			q(81847),	-- Ore @ 66.3, 14.9
-			q(81848),	-- Ore @ 66.4, 23.4
-			q(83032),	-- Ore @ 67.1, 22.1
-			q(83033),	-- Ore @ 67.6, 23.8
-			q(83035),	-- Ore @ 68.8, 26.9
-			q(83036),	-- Ore @ 62.6, 30.3
-			q(83038),	-- Ore @ 62.8, 20.4
-			q(83039),	-- Ore @ 66.3, 17.5
-			q(83041),	-- Ore @ 65.2, 31.5 (old coords - 64.9, 27.5?)
-			q(83042),	-- Ore @ 62.2, 30.9
-			q(83044),	-- Ore @ 64.0, 30.0
-			q(83045),	-- Ore @ 65.4, 23.3
-			q(83047),	-- Ore @ 66.1, 17.0
-			-- Small Keyflames
-			q(80005, {["isWeekly"]=true,}),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
-			q(78472, {["isWeekly"]=true,}),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
-			q(79295, {["isWeekly"]=true,}),	-- Taerry Bligestone - Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
-			q(76599, {["isWeekly"]=true,}),	-- Auebry Irongear - Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
-			q(78452, {["isWeekly"]=true,}),	-- Yorvas Flintstrike - Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
-			q(79383, {["isWeekly"]=true,}),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
-			q(78466, {["isWeekly"]=true,}),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
-			q(78458, {["isWeekly"]=true,}),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
-			---
-			q(79214),	-- after harvester activation @ 61.9, 28.8, he is going to o: 433377 (Harvest Box) and highlight it
-			q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
-			-- q(79177),	-- After looting Blueprint Bundle (211968) (automated)
-			-- q(79179),	-- After looting Spider Touched Bag (211973) (automated)
-			q(79188),	-- after turning in 79173 Supply the Effort
-			-- Vendor
-			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
-			q(83342),	-- after turn in 76394 (Shadows of Flavor), unlock ability to buy Twilight-Spiced Grouper from vendor
-			q(83343),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor
-		}),
+		})),
 	}),
 }));

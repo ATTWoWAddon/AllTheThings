@@ -43807,8 +43807,7 @@ title(652,{pvp=1,u=2})}}),
 ach(61195,{pvp=1,r=2,u=2}),
 ach(61196,{pvp=1,r=1,u=2}),
 ach(61194,{pvp=1,u=2,g={
-s(300603,255879,{b=1,f=3,lvl=90,pvp=1,u=2}),
-title(539,{collectible=false,pvp=1,u=2})}}),
+s(300603,255879,{b=1,f=3,lvl=90,pvp=1,u=2})}}),
 ach(61190,{pvp=1,u=2,g={
 s(300603,255879,{b=1,f=3,lvl=90,pvp=1,u=2})}}),
 ach(61198,{c={2,5,7,10,11,13},pvp=1,u=2}),
@@ -44481,7 +44480,8 @@ ach(62930,{pvp=1,g={
 mnt(1266211,{itemID=275302,pvp=1})}}),
 ach(62955,{providers={{"s",1266211}},pvp=1}),
 ach(62928,{pvp=1}),
-ach(62911,{pvp=1}),
+ach(62911,{pvp=1,g={
+ill(8697,{pvp=1})}}),
 ach(62924,{pvp=1,r=2,g={
 title(769,{pvp=1})}}),
 ach(62925,{pvp=1,r=1,g={
@@ -48631,6 +48631,7 @@ title(309,{awp=60200,collectible=false,pvp=1,rwp=80001,u=2}),
 title(312,{awp=60200,collectible=false,pvp=1,rwp=80001,u=2}),
 title(491,{awp=100002,collectible=false,pvp=1}),
 title(31,{collectible=false,pvp=1}),
+title(539,{awp=110000,collectible=false,pvp=1}),
 title(311,{awp=60200,collectible=false,pvp=1,rwp=80001,u=2}),
 title(314,{awp=60200,collectible=false,pvp=1,rwp=80001,u=2}),
 title(387,{awp=80100,collectible=false,pvp=1}),

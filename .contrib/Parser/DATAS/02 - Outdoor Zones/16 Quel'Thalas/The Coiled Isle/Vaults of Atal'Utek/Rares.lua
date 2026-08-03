@@ -13,11 +13,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 				n(RARES, {
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

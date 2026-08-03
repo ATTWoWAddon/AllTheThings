@@ -419,7 +419,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			["sourceQuests"] = { 39667 },	-- Where's Lyndras: Leyflame Larceny
 			["provider"] = { "n", 96444 },	-- Violet Hold Guard
 			["coord"] = { 65.2, 67.4, LEGION_DALARAN },
-			["maps"] = { 732 },	-- Assault of Violet Hold (Legion)
+			["maps"] = { 732 },	-- Assault on Violet Hold (Legion)
 			["groups"] = {
 				i(135556),	-- Violet Hold Prison Key (QI!)
 			},

@@ -40,8 +40,6 @@ root(ROOTS.PVP, pvp(n(TOURNAMENT_GEAR, {
 		i(117838),	-- Tournament Gladiator's Pendant of Meditation
 		i(117636),	-- Tournament Gladiator's Pendant of Prowess
 		i(117837),	-- Tournament Gladiator's Pendant of Prowess
-
-
 		i(117773),	-- Tournament Gladiator's Badge of Adaptation
 		i(117774),	-- Tournament Gladiator's Badge of Adaptation
 		i(117930),	-- Tournament Gladiator's Badge of Conquest

@@ -1,4 +1,2 @@
 1.14.1.41077
 faction(1041),	-- Frenzy
-12.1.0.68209
-faction(2808),	-- Prey: Season 2

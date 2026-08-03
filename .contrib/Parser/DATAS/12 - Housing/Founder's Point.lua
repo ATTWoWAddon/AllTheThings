@@ -1,6 +1,14 @@
 ---------------------------------------------
 --      H O U S I N G    M O D U L E       --
 ---------------------------------------------
+
+local i_DecorCoupons = function(itemID, couponCost)
+	return
+	i(itemID, {
+		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
+	})
+end
+
 root(ROOTS.Housing, m(FOUNDERS_POINT, {
 	["timeline"] = { ADDED_11_2_7 },
 	["groups"] = {
@@ -299,6 +307,23 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			n(255942, {	-- Jendry Clockson <Donut Vendor>
 				["groups"] = { i(260588) },	-- Jendry's Donut
 			}),
+			n(255104, {	-- Jorvan Longmoor <General Contractor>
+				["coord"] = { 54.0, 39.6, FOUNDERS_POINT },
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+					i_DecorCoupons(274668, 50),	-- Bel'ameth Meeting Room Plans (ARTROOM!)
+					i_DecorCoupons(274671, 50),	-- Bel'ameth Nestled Bedroom Plans (ARTROOM!)
+					i_DecorCoupons(274670, 50),	-- Bel'ameth Temple Room Plans (ARTROOM!)
+					i_DecorCoupons(274669, 50),	-- Bel'ameth Theater Plans (ARTROOM!)
+					i_DecorCoupons(272997, 50),	-- Stormwind Armory Plans (ARTROOM!)
+					i_DecorCoupons(274666, 50),	-- Stormwind Display Room Plans (ARTROOM!)
+					i_DecorCoupons(274665, 50),	-- Stormwind Grand Hall Plans (ARTROOM!)
+					i_DecorCoupons(274667, 50),	-- Stormwind Kitchen Plans (ARTROOM!)
+					i_DecorCoupons(276243, 75),	-- Autumnal Westfall Barn Plans (ARTROOM!)
+					i_DecorCoupons(276244, 75),	-- Springtime Westfall Barn Plans (ARTROOM!)
+					i_DecorCoupons(282340, 200),	-- Autumnal Westfall Barn Facade Plans (ARTHOUSE!)
+					i_DecorCoupons(282343, 200),	-- Springtime Westfall Barn Facade Plans (ARTHOUSE!)
+				}),
+			}),
 			n(256750, {	-- Klasa <Preowned Parts>
 				["coord"] = { 58.3, 61.7, FOUNDERS_POINT },
 			}),
@@ -307,6 +332,10 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			}),
 			n(255221, {	-- Trevor Grenner <Decor Vendor>
 				["coord"] = { 53.5, 40.9, FOUNDERS_POINT },
+			}),
+			n(267795, {	-- Perry Winkles <Pet Decor Vendor>
+				["coord"] = { 53.8, 41.7, FOUNDERS_POINT },
+				["timeline"] = { ADDED_12_1_0 },
 			}),
 			n(255203, {	-- Xiao Dan <Decor Vendor>
 				["coord"] = { 52.0, 38.2, FOUNDERS_POINT },

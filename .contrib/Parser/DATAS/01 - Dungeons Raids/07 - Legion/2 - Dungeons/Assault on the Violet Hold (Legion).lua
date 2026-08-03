@@ -2,8 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
-	inst(777, {	-- Assault of Violet Hold (Legion)
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	inst(777, {	-- Assault on Violet Hold (Legion)
+		["description"] = "The bosses are random on all difficulties except Mythic.",
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
 		["lvl"] = 105,
@@ -399,4 +400,4 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 		},
 	}),
-}));
+})));

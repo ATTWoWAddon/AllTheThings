@@ -229,7 +229,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["timeline"] = { ADDED_3_3_0, REMOVED_4_1_0 },
+						["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						["cost"] = { { "i", 32643, 1 } },	-- Darkrune
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -291,6 +291,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 						["qg"] = 23316,	-- Torkus
 						["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = { { "i", 32601, 1 } },	-- Unstable Flask of the Sorcerer
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
@@ -298,6 +299,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11061,	-- A Father's Duty
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.5, 58.1, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/1 Fel Whip
@@ -315,6 +317,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11059,	-- Guardian of the Monument
 						["qg"] = 23233,	-- Chu'a'lor
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_ORGILA, FRIENDLY },	-- Ogri'la, Friendly.
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
@@ -350,6 +353,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11026,	-- Banish the Demons
 						["qg"] = 23253,	-- Kronk
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["cost"] = { { "i", 32696, 1 } },	-- Banishing Crystal
 						["isDaily"] = true,
@@ -362,6 +366,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11026, {	-- Banish the Demons
 						["qg"] = 23253,	-- Kronk
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["cost"] = { { "i", 32696, 1 } },	-- Banishing Crystal
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -874,6 +879,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11025,	-- The Crystals
 						["qg"] = 23233,	-- Chu'a'lor
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/1 Apexis Guardian's Head
@@ -1211,9 +1217,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11009, {	-- Ogre Heaven
+					q(11009, {	-- Ogre Heaven
+						-- #if ANYCLASSIC
 						-- #if BEFORE WRATH
 						["description"] = "You can pick up this quest during phase 1, but cannot turn it in until they introduce the Ogri'la faction in a later phase.",
+						-- #endif
 						-- #endif
 						["sourceQuests"] = {
 							11000,	-- Into the Soulgrinder
@@ -1222,7 +1230,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22941,	-- Mog'dorg the Wizened
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(70, 70, 20),
-					})),
+					}),
 					q(10714, {	-- On Spirit's Wings
 						["sourceQuest"] = 10709,	-- Reunion
 						["qg"] = 21984,	-- Rexxar
@@ -1234,6 +1242,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11025,	-- The Crystals
 						["qg"] = 23316,	-- Torkus
 						["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
 					q(11036, {	-- Out of This World Produce!
@@ -1901,6 +1910,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 						["qg"] = 23233,	-- Chu'a'lor
 						["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
 					q(10720, {	-- The Smallest Creatures
@@ -2102,6 +2112,7 @@ root(ROOTS.Zones, {
 						},
 						["qg"] = 23334,	-- Sky Commander Keller
 						["coord"] = { 27.4, 52.7, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(2, {	-- 0/1 Thunderlord Clan Arrow
@@ -2245,6 +2256,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23335,	-- Skyguard Khatie
 						["coord"] = { 28.0, 51.5, BLADES_EDGE_MOUNTAINS },
 						["isDaily"] = true,
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/5 Aether Rays wrangled
@@ -2257,6 +2269,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11010,	-- Bombing Run
 						["qg"] = 23335,	-- Skyguard Khatie
 						["coord"] = { 28.0, 51.5, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/5 Aether Rays wrangled
@@ -2291,7 +2304,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["timeline"] = { ADDED_3_3_0, REMOVED_4_1_0 },
+						["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						["cost"] = { { "i", 32643, 1 } },	-- Darkrune
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -2300,7 +2313,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 19963 },	-- Doomcryer
 							}),
 							i(32602, {	-- Crystalforged Darkrune
-								["timeline"] = { ADDED_3_3_0, REMOVED_4_1_0 },
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 							}),
 						},
 					})),
@@ -2311,6 +2324,7 @@ root(ROOTS.Zones, {
 							{ 52.8, 13.0, BLADES_EDGE_MOUNTAINS },
 							{ 53.6, 16.6, BLADES_EDGE_MOUNTAINS },
 						},
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = { { "i", 32759, 1 } },	-- Accelerator Module
 						["groups"] = {
 							i(32572),	-- Apexis Crystal
@@ -2321,6 +2335,7 @@ root(ROOTS.Zones, {
 							{ 51.6, 13.6, BLADES_EDGE_MOUNTAINS },
 							{ 53.0, 13.0, BLADES_EDGE_MOUNTAINS },
 						},
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = { { "i", 32759, 1 } },	-- Accelerator Module
 						["groups"] = {
 							i(32572),	-- Apexis Crystal
@@ -2330,6 +2345,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23261, {	-- Furywing
 						["coord"] = { 66.7, 14.5, BLADES_EDGE_MOUNTAINS },
 						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
+						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
 							i(32683),	-- Jet Scale of Furywing
@@ -2362,6 +2378,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23281, {	-- Insidio
 						["coord"] = { 62.7, 7.3, BLADES_EDGE_MOUNTAINS },
 						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
+						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
 							i(32684),	-- Insidion's Ebony Scale
@@ -2385,6 +2402,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23282, {	-- Obsidia
 						["coord"] = { 34.0, 54.7, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
@@ -2393,6 +2411,7 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23061, {	-- Rivendark
 						["coord"] = { 27.2, 64.9, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 						["groups"] = {
 							i(32732),	-- Dragon Teeth
@@ -2403,13 +2422,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.85, 46.68, BLADES_EDGE_MOUNTAINS },
 						["cost"] = { { "i", 32602, 1 } },	-- Crystalforged Darkrune
 						["isDaily"] = true,
-						["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
+						["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						["groups"] = {
 							i(32941, {	-- Corruptor's Signet
-								["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 							}),
 							i(32942, {	-- Ring of the Overseer
-								["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 							}),
 						},
 					})),
@@ -2448,25 +2467,27 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(REWARDS, {
-					i(32643, {	-- Darkrune
-						["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32643, {	-- Darkrune
+						["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						["cost"] = { { "i", 33784, 5 } },	-- Darkrune Fragment
-					}),
-					i(32777, {	-- Kronk's Grab Bag
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32777, {	-- Kronk's Grab Bag
 						i(32569),	-- Apexis Shard
 						i(33784, {	-- Darkrune Fragment
-							["timeline"] = { ADDED_2_2_0, REMOVED_4_1_0 },
+							["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						}),
-					}),
-					i(32601, {	-- Unstable Flask of the Sorcerer
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32601, {	-- Unstable Flask of the Sorcerer
 						["coord"] = { 54.0, 11.0, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = { { "i", 32569, 10 } },	-- Apexis Shard
-					}),
+					})),
 				}),
 				n(VENDORS, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23245, {	-- Aether-tech Master
 						["description"] = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 						["coord"] = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = {
 							i(32759, {	-- Accelerator Module
 								["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
@@ -2575,6 +2596,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 						["coord"] = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = bubbleDownClassicRep(FACTION_ORGILA, {
 							{		-- Neutral
 								i(33934),	-- Crystal Healing Potion
@@ -2639,8 +2661,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 					})),
-					n(22266, {	-- Ogri'la Grubgiver
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22266, {	-- Ogri'la Grubgiver
 						["coord"] = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
 						["groups"] = {
 							i(32686),	-- Mingo's Fortune Giblets
@@ -2648,22 +2671,24 @@ root(ROOTS.Zones, {
 							i(29453),	-- Sporeggar Mushroom
 							i(27859),	-- Zangar Caps
 						},
-					}),
-					n(23110, {	-- Ogri'la Keg King
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23110, {	-- Ogri'la Keg King
 						["coord"] = { 27.9, 57.6, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
 						["groups"] = {
 							i(32667),	-- Bash Ale
 							i(32668),	-- Dos Ogris
 						},
-					}),
-					n(22270, {	-- Ogri'la Merchant
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22270, {	-- Ogri'la Merchant
 						["coord"] = { 27.8, 58.5, BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
 						["groups"] = {
 							i(32758),	-- Brute Cologne
 						},
-					}),
+					})),
 					n(19473, {	-- Raiza
 						["coord"] = { 53.0, 59.0, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
@@ -2729,18 +2754,22 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32663, {	-- Apexis Cleaver
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32670, 1 },	-- Depleted Two-Handed Axe
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32661, {	-- Apexis Crystal Mace
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32671, 1 },	-- Depleted Mace
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32569)),	-- Apexis Shard
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32569, {	-- Apexis Shard
+						["timeline"] = { ADDED_2_1_0 },
+					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32658, {	-- Badge of Tenacity
 						["cost"] = {
 							{ "i", 32672, 1 },	-- Depleted Badge
@@ -2748,6 +2777,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32578, {	-- Charged Crystal Focus
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32576, 1 },	-- Depleted Crystal Focus
 							{ "i", 32569, 10 },	-- Apexis Shard
@@ -2764,30 +2794,35 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32660, {	-- Crystal Forged Sword
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32674, 1 },	-- Depleted Sword
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32659, {	-- Crystal-Infused Shiv
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32673, 1 },	-- Depleted Dagger
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32656, {	-- Crystalhide Handwraps
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32675, 1 },	-- Depleted Mail Gauntlets
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32655, {	-- Crystalweave Bracers
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32676, 1 },	-- Depleted Cloth Bracers
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32665, {	-- Crystalweave Cape
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32677, 1 },	-- Depleted Cloak
 							{ "i", 32569, 50 },	-- Apexis Shard
@@ -2798,6 +2833,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31942, {	-- Deathwing Brood Cloak
 						["description"] = "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32684, 1 },	-- Insidion's Ebony Scale
 							{ "i", 32683, 1 },	-- Jet Scale of Furywing
@@ -2806,6 +2842,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32672, {	-- Depleted Badge
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22175,	-- Apexis Flayer
@@ -2827,6 +2864,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32677, {	-- Depleted Cloak
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -2848,6 +2886,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32676, {	-- Depleted Cloth Bracers
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22181,	-- Aether Ray
 							22175,	-- Apexis Flayer
@@ -2868,8 +2907,11 @@ root(ROOTS.Zones, {
 						},
 						["ignoreSource"] = true,
 					})),
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32576)),	-- Depleted Crystal Focus
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32576, {	-- Depleted Crystal Focus
+						["timeline"] = { ADDED_2_1_0 },
+					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32673, {	-- Depleted Dagger
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -2890,6 +2932,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32671, {	-- Depleted Mace
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22175,	-- Apexis Flayer
@@ -2914,6 +2957,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32675, {	-- Depleted Mail Gauntlets
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -2934,6 +2978,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32678, {	-- Depleted Ring
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22175,	-- Apexis Flayer
 							22275,	-- Apexis Guardian
@@ -2954,6 +2999,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32679, {	-- Depleted Staff
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22181,	-- Aether Ray
 							22175,	-- Apexis Flayer
@@ -2976,6 +3022,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32674, {	-- Depleted Sword
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22175,	-- Apexis Flayer
 							22275,	-- Apexis Guardian
@@ -2999,6 +3046,7 @@ root(ROOTS.Zones, {
 						["ignoreSource"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32670, {	-- Depleted Two-Handed Axe
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							19973,	-- Abyssal Flamebringer
 							22181,	-- Aether Ray
@@ -3022,6 +3070,7 @@ root(ROOTS.Zones, {
 					})),
 					-- #if BEFORE CATA
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31871, {	-- Design: Balanced Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+] (RECIPE!)
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3041,6 +3090,7 @@ root(ROOTS.Zones, {
 					-- #endif
 					-- #if AFTER CATA
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Deadly Flame Spessarite [CATA+] / Design: Wicked Flame Spessarite [TBC] (RECIPE!)
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3060,6 +3110,7 @@ root(ROOTS.Zones, {
 					-- #endif
 					-- #if BEFORE CATA
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Great Golden Draenite [TBC] / Design: Rigid Azure Moonstone [CATA+] (RECIPE!)
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3077,6 +3128,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31872, {	-- Design: Infused Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+] (RECIPE!)
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3099,6 +3151,7 @@ root(ROOTS.Zones, {
 					}),
 					-- #if AFTER CATA
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Rigid Azure Moonstone [CATA+] / Design: Great Golden Draenite [TBC] (RECIPE!)
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3115,10 +3168,15 @@ root(ROOTS.Zones, {
 							23355,	-- Zarcsin
 						},
 					})),
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31871)),	-- Design: Shifting Shadow Draenite [CATA+] / Design: Balanced Shadow Draenite [TBC] (removed from game)
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31872)),	-- Design: Shifting Shadow Draenite [CATA+] / Design: Infused Shadow Draenite [TBC] (removed from game)
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31871, {	-- Design: Shifting Shadow Draenite [CATA+] / Design: Balanced Shadow Draenite [TBC] (removed from game)
+						["timeline"] = { ADDED_2_1_0 },
+					})),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31872, {	-- Design: Shifting Shadow Draenite [CATA+] / Design: Infused Shadow Draenite [TBC] (removed from game)
+						["timeline"] = { ADDED_2_1_0 },
+					})),
 					-- #endif
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31873, {	-- Design: Veiled Flame Spessarite [TBC] / Design: Veiled Shadow Draenite [CATA+]
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3137,6 +3195,7 @@ root(ROOTS.Zones, {
 					})),
 					-- #if BEFORE CATA
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Wicked Flame Spessarite [TBC] / Design: Deadly Flame Spessarite [CATA+] (RECIPE!)
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3155,6 +3214,7 @@ root(ROOTS.Zones, {
 					})),
 					-- #endif
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32664, {	-- Dreamcrystal Band
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32678, 1 },	-- Depleted Ring
 							{ "i", 32569, 50 },	-- Apexis Shard
@@ -3193,6 +3253,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32662, {	-- Flaming Quartz Staff
+						["timeline"] = { ADDED_2_1_0 },
 						["cost"] = {
 							{ "i", 32679, 1 },	-- Depleted Staff
 							{ "i", 32569, 50 },	-- Apexis Shard

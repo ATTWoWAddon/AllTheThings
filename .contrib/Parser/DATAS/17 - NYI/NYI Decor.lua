@@ -243,9 +243,7 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
 			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 (DECOR!)
 			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
-			i(250868),	-- Crimson Crystal Column (DECOR!)
 			i(250869),	-- Crimson Crystal Core (DECOR!)
-			i(250870),	-- Crimson Crystal Fragment (DECOR!)
 			i(265544),	-- Cuddly Basil Grrgle (DECOR!)
 			i(263303),	-- Cuddly Blue Grrgle (DECOR!)
 			i(265397),	-- Cuddly Bright Grrgle (DECOR!)
@@ -305,7 +303,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(993),	-- [DNT] Open Elegant Elven Barrel - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 12PH_Opulent_Barrel01_Open.m2
 			rawdecor(1081),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_HangingBanner03.m2
 			rawdecor(1135),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Forge01.m2
-			rawdecor(1136),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Decor_DraperySet03_Small.m2
 			rawdecor(1138),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Navigation_FenceCapper01.m2
 			rawdecor(1139),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Bench01.m2
 			rawdecor(1140),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_Sarcophagus03.m2

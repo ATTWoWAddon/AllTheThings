@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(KARESH, {
+		m(KARESH, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			n(WORLD_QUESTS, {
 				q(91075),	-- Triggered after completing 'Ecological Succession' (first time)
 				q(91179, name(HEADERS.Item, 244865,{["isWeekly"]=true})),	-- Pinnacle Cache #1 of the week
@@ -194,6 +194,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(91177, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
 				q(91178, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
 			}),
-		}),
+		})),
 	}),
 }));

@@ -21,12 +21,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
 					i(281582, {	-- Atal'Utek Ivy (DECOR!)
+						["sourceQuest"] = 95558,	-- Crumbling Urn
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(279452, {	-- Forgotten Amani Mural (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
 					i(244345, {	-- Forgotten Amani Urn (DECOR!)
+						["sourceQuest"] = 95571,	-- Forgotten Treasure
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(279285, {	-- Lost Tortollan Scroll (DECOR!)
@@ -39,6 +41,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(281580, {	-- Pungent Atal-Utek Shroom (DECOR!)
+						["sourceQuest"] = 95841,	-- Stinking Vessel
 						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(280218, {	-- Tortollan Scholar Satchel (DECOR!)

@@ -73,15 +73,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(274496),	-- Ophidian Bone Whistle
 					i(274495),	-- Pulse Seeker's Oculus
 					i(274497),	-- Spirit-Rending Poison
+					i(274498),	-- Spirit Ward
 				}),
 			}),
 			n(WEAPONS, {
+				i(276057),	-- Cryptbound Scepter
 				i(276051),	-- Fangmouth Warspear
 				i(276059),	-- Headhunter's Hacker
 				i(276044),	-- Loa-Infused Battlestaff
 				i(276045),	-- Trailblazing Soulblade
 				i(276048),	-- Vipersbane Dagger
 			}),
+			--
+			i(282183, {	-- Fabled Coiled Isle Veteran's Cache (Season 2)
+				["timeline"] = { ADDED_12_1_0 },
+				--["sym"] = SYM.MIDNIGHT.THE_COILED_ISLE_ZONE_REWARDS,
+			}),
+			i(275899),	-- Venom-Soaked Satchel (Rewarded for completing the Curse Surge by killing the "boss" of the event)
 		}),
 	}),
 }));

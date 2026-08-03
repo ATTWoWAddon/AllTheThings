@@ -353,7 +353,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, {
+		m(UNDERMINE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 			n(RARES, {	-- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
 				q(85010),	-- Related to killing Darkfuse Precipitant
 				q(86298),	-- Related to killing M.A.G.N.O.
@@ -361,6 +361,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(85777),	-- Related to killing Voltstrike
 				q(85778),	-- Related to killing Scrapchewer
 			}),
-		}),
+		})),
 	}),
 }));

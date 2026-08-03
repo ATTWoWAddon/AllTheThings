@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(HALLOWFALL, {
+		m(HALLOWFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(ACHIEVEMENTS, {
 				q(79081,name(HEADERS.Achievement,20594,{isDaily=true})),	-- daily progress on 'Flamegard's Hope'
 				q(82131, name(HEADERS.NPC,215254)),	-- talking to Alyza Bowblaze and telling her to 'go away'
@@ -168,6 +168,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(83626),	-- Choosing 'Master Formation' difficulty for 'Light's Gambit Champion' (achievementID 40729)
 				q(83857),	-- on earning Light's Gambit Champion ach(40729)
 			}),
-		}),
+		})),
 	}),
 }));

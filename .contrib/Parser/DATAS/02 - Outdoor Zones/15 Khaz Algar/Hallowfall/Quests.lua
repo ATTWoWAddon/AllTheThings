@@ -1250,7 +1250,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(HALLOWFALL, {
+		m(HALLOWFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(QUESTS, {
 				-- During questing
 				q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
@@ -1286,6 +1286,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
 				q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
 			}),
-		}),
+		})),
 	}),
 }));

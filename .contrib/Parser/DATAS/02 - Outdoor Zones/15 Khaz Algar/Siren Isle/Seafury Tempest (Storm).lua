@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(SIREN_ISLE, {
+		m(SIREN_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 			n(QUESTS, {
 				-- Some interaction with gems on terrain during storm phase, reward you with Turbulent Fragment (itemID 234327)
 				q(86437),	-- after interact with Runic Fragment (npcID 234934) @ 67.1, 78.5 (spellID 1213217 - Take Fragment)
@@ -201,6 +201,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				-- after kill Gravesludge (228201) - 84872 (i(229178),	-- Earthen Scallywag's Gavel drop?, 85669 (speculated - gem looted and unlocked on vendor), 85937 (on re-kill)
 				-- after kill Nerathor (229982) - 84841 (i(229023),	-- Earthen Deckhand's Breeches drop?), 85672 (citrine?), 85938 (on re-kill)
 			}),
-		}),
+		})),
 	}),
 }));

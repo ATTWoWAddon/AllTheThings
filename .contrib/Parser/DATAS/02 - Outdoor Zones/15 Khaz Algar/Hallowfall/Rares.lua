@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(HALLOWFALL, {
+		m(HALLOWFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(RARES, {
 				q(85164, {	-- Weekly reputation: Beledar's Spawn
 					["name"] = "Beledar's Spawn weekly reputation obtained.",
@@ -213,6 +213,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					["name"] = "The Taskmaker weekly reputation obtained.",
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

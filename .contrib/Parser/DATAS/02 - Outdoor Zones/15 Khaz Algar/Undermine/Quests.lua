@@ -1649,7 +1649,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, {
+		m(UNDERMINE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 			n(QUESTS, {
 				-- During main story
 				q(85463),	-- [DNT] The Cartels of Undermine Renown Unlock (spellID 1213980)
@@ -1665,6 +1665,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(84952),	-- Steamwheedle Cartel Weekly Contract
 				q(84953),	-- Venture Co. Weekly Contract
 			}),
-		}),
+		})),
 	}),
 }));

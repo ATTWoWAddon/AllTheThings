@@ -1026,12 +1026,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			}),
 			-- Curse Surges
-			-- Exo Note: It may require a separate file. Depends on the content. From what I can see, they work in the same way as Void Assaults
 			q(96995, {	-- Turn Back the Surge
 				["qg"] = 267635,	-- Talon Commander Zela
 				["coord"] = { 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["isWeekly"] = true,	-- Assumption
+				["groups"] = { i(275911) },	-- Venom-Covered Chest
 			}),
 		}),
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			n(QUESTS, {
+				hqt(96935, { ["isWeekly"] = true }),	-- Curse Surge
+			}),
+		})),
 	}),
 }));

@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(KARESH, {
+		m(KARESH, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			n(RARES, {
 				q(90685, {	-- Weekly reputation: Ixthar the Unblinking
 					["name"] = "Ixthar the Unblinking weekly reputation obtained.",
@@ -563,6 +563,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					["name"] = "Xarran the Binder weekly reputation obtained.",
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

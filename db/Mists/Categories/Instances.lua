@@ -18360,7 +18360,7 @@ crit(63356,{achID=19436,id=1,u=33})}}),
 e(625,{npcID=27656,u=33,g={
 crit(63360,{achID=19436,id=3,u=33})}})}}))}}),
 inst(283,{awp=30002,coords={
-[125]={{66.6,67.9}}},lvl=75,mapID=168,savedInstanceID=608,u=30,g={
+[125]={{66.6,67.9}}},description="The bosses are random on all difficulties.",lvl=75,mapID=168,savedInstanceID=608,u=30,g={
 h(-12,{u=30,g={
 ach(1865,{u=30,g={
 crit(7510,{achID=2136,id=16,u=30})}})}}),
@@ -21078,7 +21078,7 @@ s(214124,72817,{b=1,f=7,lvl=85,modID=2,q=4,u=42}),
 s(214131,72824,{b=1,f=5,lvl=85,modID=2,q=4,u=42}),
 s(214130,72823,{b=1,f=5,lvl=85,modID=2,q=4,u=42})}})}})}}),
 inst(71,{awp=40003,coords={
-[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.\n\n|CFFFF0000Need to finish off a Cataclysm rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",mapID=293,savedInstanceID=670,u=40,g={
+[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,u=40,g={
 h(-45,{u=40,g={
 q(28854,{coords={
 [293]={{50,50}}},qgs={50387},u=40,g={

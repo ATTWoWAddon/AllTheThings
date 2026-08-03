@@ -390,7 +390,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["sourceQuests"] = { 40876 },	-- 'Locke, Stock and Barrel
 				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
-				["maps"] = { 732 },	-- Assault of Violet Hold (Legion)
+				["maps"] = { 732 },	-- Assault on Violet Hold (Legion)
 				["cost"] = {{ "i", 132515, 2 }},	-- 2x Failure Detection Pylon
 				["groups"] = {
 					r(198985),	-- Reaves Module: Failure Detection Mode (RECIPE!)

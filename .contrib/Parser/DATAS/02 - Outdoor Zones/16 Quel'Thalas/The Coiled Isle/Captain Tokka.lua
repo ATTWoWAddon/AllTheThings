@@ -37,6 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94803, {	-- Going for the Crown
 						i(277920),	-- Vibrant Crownfeather (QI!)
 					}),
+					q(94805),	-- The New Hoard, Poached
 					q(94806, {	-- Wriggling and Wet
 						i(277935),	-- Pungent Leech Leg (QI!)
 					}),
@@ -96,6 +97,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(275018, {	-- Recipe: Coiled Stargorger Lure (RECIPE!)
 								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
 								["cost"] = { { "c", VOIDLIGHT_MARL, 1500 } },
+							}),
+							i(275318, {	-- Schematic: Proudmoore Ship-in-a-Bottle (RECIPE!)
+								["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+								["cost"] = { { "c", ARTISAN_MOXIE.ENGINEERING, 150 } },
 							}),
 							-- Rank 4: Venom Trawler
 							i(277925, {	-- Blue Tortollan Signpost (DECOR!)
@@ -157,10 +162,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			header(HEADERS.Faction, FACTION_CAPTAIN_TOKKA, {
 				q(97537),	-- Triggered after turning in 'A Collection of Rot' (94804)
 			}),
-		}),
+		})),
 	}),
 }));

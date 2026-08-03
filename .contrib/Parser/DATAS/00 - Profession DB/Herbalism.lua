@@ -341,3 +341,13 @@ i(0, 1221172);		-- Green Thumb
 i(0, 1221180);		-- Imbued Mulch
 i(0, 1221179);		-- Magical Mulch
 i(0, 1223014);		-- Overload Infused Herb
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+i(0, 1301647);	-- Cursed Argentleaf
+i(0, 1301649);	-- Cursed Azeroot
+i(0, 1301651);	-- Cursed Mana Lily
+i(0, 1301654);	-- Cursed Sanguithorn
+i(0, 1301655);	-- Cursed Tranquility Bloom
+i(0, 1301657);	-- Overload Cursed Herb

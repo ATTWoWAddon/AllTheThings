@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 3,
@@ -84,6 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
+				["timeline"] = { ADDED_7_2_0 },
 				["groups"] = {
 					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
@@ -101,6 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
+				["timeline"] = { ADDED_7_2_0 },
 				["groups"] = {
 					i(147749),	-- Polished Felfury Helmet
 					i(147765),	-- Clasp of Burning Demise
@@ -213,6 +215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
+				["timeline"] = { ADDED_7_2_0 },
 				["groups"] = {
 					i(147740),	-- Plague-Resistant Headcover
 					i(147764),	-- Cloak of Growing Mistrust
@@ -289,6 +292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
+				["timeline"] = { ADDED_7_2_0 },
 				["groups"] = {
 					i(147731),	-- Cowl of Plumbed Depths
 					i(147752),	-- Pauldrons of the Engulfing Tide
@@ -342,9 +346,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 		},
 	}),
-}));
+})));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {

@@ -182,7 +182,7 @@ mnt(46199,{itemID=49286,lvl=10,u=2})),(function(t)if GetCVar("portal")~="CN" the
 mnt(46197,{itemID=49285,lvl=10,u=2}))}}))}}),
 de(15668,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",itemID=264396,rwp=120100,spellID=1271935}),
 de(15669,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nClick on 'Explore Homes'\n\nFlip between Alliance and Horde until you see 'Greener's Plant Nursery' advertisement\n\nClick on 'Free Sample' and authorize the Account connection.",itemID=264397,rwp=120100,spellID=1271936}),
-ach(62400,{awp=120001,description="Open Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.",g={
+ach(62400,{awp=120001,description="Open Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.\n\nNote: If any sort of Parental Controls have been set up on your account, this will not be visible in the Options menu unless they are fully removed via Battle Net support ticket.",g={
 toy(268695)}}),
 de(15148,{awp=120001,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263298,rwp=120001,spellID=1270366,u=2}),
 de(15149,{awp=120001,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263299,rwp=120001,spellID=1270367,u=2}),
@@ -199,12 +199,12 @@ de(15555,{awp=120001,description="Available from the Pinterest Craft Your World 
 de(15554,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264282,rwp=120001,spellID=1271563,u=2}),
 de(15553,{awp=120001,description="Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",itemID=264281,rwp=120001,spellID=1271562,u=2}),
 s(302459,262660,{awp=120001,description="Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",f=3,rwp=120001,u=2}),
-h(-748,{awp=120001,rwp=120007,g={
-mnt(1268809,{itemID=262438,lvl=10}),
-de(15550,{itemID=264278,spellID=1271559}),
-de(15229,{itemID=263383,spellID=1270445}),
-de(15551,{itemID=264279,spellID=1271560}),
-de(15552,{itemID=264280,spellID=1271561})}}),
+h(-748,{awp=120001,rwp=120007,u=2,g={
+mnt(1268809,{itemID=262438,lvl=10,u=2}),
+de(15550,{itemID=264278,spellID=1271559,u=2}),
+de(15229,{itemID=263383,spellID=1270445,u=2}),
+de(15551,{itemID=264279,spellID=1271560,u=2}),
+de(15552,{itemID=264280,spellID=1271561,u=2})}}),
 p(4968,{awp=120001,b=1,description="Offer valid from April 13, 2026 (12pm ET) to May 15, 2026 (12pm ET). During the offer period, complete a purchase of eligible World of Warcraft items through the Blizzard Gear Store and receive a digital code.",itemID=262881,npcID=256663,rwp=120005,spellID=1269535,u=2}),
 de(16818,{awp=120005,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between April 23rd, 3:00 p.m. & May 21st, 3:00 p.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=265394,rwp=120005,spellID=1275771,u=2}),
 toy(272339,{awp=120007,description="Break the Meta: Midnight Season 1\n\nBreak the Meta is focused on teams pushing keys as high as they can with off-meta specs and classes.\n\nComplete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher will receive an exclusive Toy to use in-game!.\n\nThe Event starts on July 14th at 8:00 AM PDT and lasts for 1 week.\nFor more details & requirements check out: raider.io/events/break-the-meta-midnight-season-1/event-info-rules",rwp=120007,u=2}),

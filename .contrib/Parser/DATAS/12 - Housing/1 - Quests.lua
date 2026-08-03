@@ -6,7 +6,7 @@ MAIL_DELIVERY_RACES = createHeader({
 	readable = "Mail Delivery Races",
 	icon = 413580,
 	text = {
-		en = "Neighborhood postal route",
+		en = "Neighborhood Postal Route",
 		de = "Postroute in der Nachbarschaft",
 		es = "Ruta postal del vecindario",
 		mx = "Ruta postal de vecindario",
@@ -110,10 +110,30 @@ root(ROOTS.Housing, {
 				},
 				["timeline"] = { ADDED_12_0_0 },
 				["groups"] = {
-					i(259115),	-- Alliance Blue Dye
-					i(259113),	-- Horde Red Dye
-					i(259114),	-- Lush Green Dye
-					i(259126),	-- Void Violet Dye
+					i(259115, {	-- Alliance Blue Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(274468, {	-- Blue Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(274470, {	-- Green Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(259113, {	-- Horde Red Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(259114, {	-- Lush Green Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(274472, {	-- Purple Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(274473, {	-- Red Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(259126, {	-- Void Violet Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
 				},
 			}),
 			hqt(95389, {	-- Looted Essence of Lumber from logging trees (Weekly)
@@ -123,7 +143,7 @@ root(ROOTS.Housing, {
 				["groups"] = { i(269010) },	-- Essence of Lumber
 			}),
 			q(98204, {	-- Cursed Keepsake
-				["description"] = "You can complete and obtain only 1 of 2 offered Decor Scenarios per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",
+				["description"] = "Decor offered by the quest is on a rotation.\nYou can complete and obtain only 1 of 2 offered Decor Scenarios per Housing Area, per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",
 				-- Exo Note: Not sure if this is the Amani Endeavor related or not. Placing here for now.
 				["qg"] = 262726,	-- Cursed Keepsake
 				["coords"] = {
@@ -134,9 +154,12 @@ root(ROOTS.Housing, {
 				["timeline"] = { ADDED_12_1_0 },
 				["groups"] = {
 					i(274481),	-- Keepsake Corruption (QI!)
-					--
-					i(267355),	-- Purified Elven Mirror (DECOR!)
+					-- Decor offered if turning quest in Founder's Point
 					i(267435),	-- Purified Kaldorei Candle (DECOR!)
+					i(268943),	-- Purified Elven Glowlamp (DECOR!)
+					-- Decor offered if turning quest in Razorwind Shores
+					i(267355),	-- Purified Elven Mirror (DECOR!)
+					i(272129),	-- Purified Tauren Pot (DECOR!)
 				},
 			}),
 		},

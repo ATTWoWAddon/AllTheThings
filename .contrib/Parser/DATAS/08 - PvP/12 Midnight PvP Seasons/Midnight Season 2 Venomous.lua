@@ -37,7 +37,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			ach(62955),	-- Venomous Gladiator's Goredrake
 			ach(62928),	-- Rival I: Midnight Season 2
-			ach(62911),	-- Rival II: Midnight Season 2
+			ach(62911, {	-- Rival II: Midnight Season 2
+				ill(8697),	-- Venomcoil
+			}),
 			-- RBG
 			ach(62924, {	-- Venomous Marshal: Midnight Season 2
 				["races"] = ALLIANCE_ONLY,
@@ -61,7 +63,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				i(275068),	-- Venomous Legend's Pennant (COSMETIC!)
 			}),
 			-- Solo
-			ach(62932),	-- Legend: Midnight Season 2
+			ach(62932, {	-- Legend: Midnight Season 2
+				i(275068),	-- Venomous Legend's Pennant (COSMETIC!)
+			}),
 			ach(62921, {	-- Battle Mender: Midnight Season 2
 				["classes"] = HEALERS,
 			}),

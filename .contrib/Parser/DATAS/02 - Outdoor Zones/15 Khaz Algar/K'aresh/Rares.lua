@@ -252,7 +252,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(KARESH, {
+		m(KARESH, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			n(RARES, {
 				q(90697, {	-- Weekly reputation: "Arcana-Monger So'zer"
 					["name"] = "Arcana-Monger So'zer weekly reputation obtained.",
@@ -294,6 +294,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					["name"] = "Xy'vox the Twisted weekly reputation obtained.",
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

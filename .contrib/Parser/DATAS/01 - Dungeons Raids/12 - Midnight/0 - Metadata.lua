@@ -11,8 +11,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		inst(1314),	-- The Dreamrift
 		inst(1307),	-- The Voidspire
 		inst(1305),	-- Sporefall
+		inst(1320),	-- The Venomous Abyss
 		n(MYTHIC_PLUS),
 		n(COMMON_DUNGEON_DROPS),
+		inst(1322),	-- Altar of Fangs
 		inst(1311),	-- Den of Nalorakk
 		inst(1300),	-- Magister's Terrace
 		inst(1315),	-- Maisara Caverns

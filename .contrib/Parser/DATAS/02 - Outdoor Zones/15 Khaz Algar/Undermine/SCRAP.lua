@@ -268,28 +268,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(UNDERMINE, {
-		n(SCRAP, {
-			n(EVENT_COMPLETION, {
-				hqt(90471, name(HEADERS.Object, 516167, {	-- Half-Empty Bag (Weekly Flag)
-					["isWeekly"] = true
-				})),
-				hqt(90472, name(HEADERS.Object, 516166, {	-- Dented Crate (Weekly Flag)
-					["isWeekly"] = true
-				})),
-				hqt(90473, name(HEADERS.Object, 500750, {	-- Uncovered Strongbox (Weekly Flag)
-					["isWeekly"] = true
-				})),
+	m(KHAZ_ALGAR, {
+		m(UNDERMINE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+			n(SCRAP, {
+				n(EVENT_COMPLETION, {
+					hqt(90471, name(HEADERS.Object, 516167, {	-- Half-Empty Bag (Weekly Flag)
+						["isWeekly"] = true
+					})),
+					hqt(90472, name(HEADERS.Object, 516166, {	-- Dented Crate (Weekly Flag)
+						["isWeekly"] = true
+					})),
+					hqt(90473, name(HEADERS.Object, 500750, {	-- Uncovered Strongbox (Weekly Flag)
+						["isWeekly"] = true
+					})),
+				}),
+				-- Location quests
+				-- Fire only once per spot (for character?)
+				-- q(87316),	-- Blackwater Marina
+				-- q(87315),	-- Emerald Hills Golf Course
+				-- q(87310),	-- Hovel Hill (North)
+				-- q(87311),	-- Hovel Hill (South)
+				-- q(87314),	-- The Heaps
+				-- q(87312),	-- The Vatworks
+				-- q(87313),	-- Venturewood
 			}),
-			-- Location quests
-			-- Fire only once per spot (for character?)
-			-- q(87316),	-- Blackwater Marina
-			-- q(87315),	-- Emerald Hills Golf Course
-			-- q(87310),	-- Hovel Hill (North)
-			-- q(87311),	-- Hovel Hill (South)
-			-- q(87314),	-- The Heaps
-			-- q(87312),	-- The Vatworks
-			-- q(87313),	-- Venturewood
-		}),
+		})),
 	}),
 }));

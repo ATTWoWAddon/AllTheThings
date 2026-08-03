@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
@@ -157,6 +157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					152729,	-- Moon Princess Liara
 					152697,	-- Ulmath
 				},
+				["timeline"] = { ADDED_8_2_0 },
 				["groups"] = bubbleDown({["modID"] = 3 }, {
 					i(170089),	-- Liara's Spire
 					i(170093),	-- Tyr'mar's Greatsword
@@ -207,6 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1528,	-- The Eternal Palace
 				},
 				["creatureID"] = 152671,	-- Wekemara
+				["timeline"] = { ADDED_8_2_0 },
 				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(168340),	-- Naga Ritualist's Mantle
 					i(168366),	-- Tidal Lurker's Greathelm
@@ -241,7 +243,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			}),
 		},
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	m(EASTERN_KINGDOMS, {

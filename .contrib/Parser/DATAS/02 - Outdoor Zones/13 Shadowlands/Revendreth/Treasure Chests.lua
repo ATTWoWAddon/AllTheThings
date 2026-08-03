@@ -511,12 +511,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(180337),	-- Sturdy Pitch Fork / 10.0.7: Rusty Hand Sickle
 				},
 			}),
+			o(353210, {	-- Grinchin Calligraphy Set
+				["coord"] = { 50.3, 49.0, REVENDRETH },
+				["groups"] = { i(180173) },	-- House Grinchin Ring
+			}),
 			o(351543, {	-- Secret Treasure
 				["description"] = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r. Clicking the chain will pull you up to the tiny alcove above the treasure. Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
 				["crs"] = { 169865 },	-- Treasure Guardian <House Grinchin>
 				["coord"] = { 50.2, 49.0, REVENDRETH },
 				["isDaily"] = true,
 				["questID"] = 60200,
+				["cost"] = { { "i", 180173, 1 } },	-- House Grinchin Ring
 				["groups"] = {
 					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards

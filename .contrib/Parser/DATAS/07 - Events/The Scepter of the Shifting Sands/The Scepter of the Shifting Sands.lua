@@ -138,11 +138,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["lvl"] = 60,
 				}),
 				q(8599, {	-- Love Song for Narain
-					["sourceQuest"] = 8597,	-- Draconic for Dummies
+					["sourceQuest"] = 8576,	-- Translating the Ledger
 					["providers"] = {
 						{ "n", 15526 },	-- Meridith the Mermaiden
 						{ "i", 21032 },	-- Meridith's Love Letter
 					},
+					-- #if BEFORE CATA
+					["description"] = "You must be on the quest 'Draconic for Dummies' for this quest to be available.",
+					-- #endif
 					["coord"] = { 59.4, 96.0, TANARIS },
 					["lvl"] = 60,
 				}),

@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(THE_RINGING_DEEPS, {
+		m(THE_RINGING_DEEPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(RARES, {
 				q(84046, {	-- Weekly reputation: Automaxor
 					["name"] = "Automaxor weekly reputation obtained.",
@@ -241,6 +241,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					["name"] = "Zilthara weekly reputation obtained.",
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

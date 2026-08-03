@@ -4,6 +4,7 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(283, {	-- The Violet Hold (Wrath)
+		["description"] = "The bosses are random on all difficulties.",
 		["mapID"] = THE_VIOLET_HOLD_WRATH,
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
 		["lvl"] = lvlsquish(75, 75, 15),

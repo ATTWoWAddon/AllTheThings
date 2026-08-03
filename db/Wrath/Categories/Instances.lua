@@ -16303,7 +16303,7 @@ crit(63356,{achID=19436,id=1,u=33})}}),
 e(625,{npcID=27656,u=33,g={
 crit(63360,{achID=19436,id=3,u=33})}})}}))}}),
 inst(283,{awp=30002,coords={
-[125]={{66.6,67.9}}},lvl=75,mapID=168,savedInstanceID=608,u=30,g={
+[125]={{66.6,67.9}}},description="The bosses are random on all difficulties.",lvl=75,mapID=168,savedInstanceID=608,u=30,g={
 h(-12,{u=30,g={
 ach(1865,{u=30})}}),
 h(-45,{u=30,g={

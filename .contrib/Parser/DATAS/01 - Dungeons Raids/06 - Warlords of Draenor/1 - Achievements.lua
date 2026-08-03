@@ -39,10 +39,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9081,	-- Expert Timing
 				9082,	-- Take Cover!
 				9023,	-- ...They All Fall Down
-				9033,	-- Ready for Raiding IV
-				9034,	-- Magnify... Enhance
-				9035,	-- I Saw Solis
-				9036,	-- Monomania
 				9024,	-- This Is Why We Can't Have Nice Things
 				9007,	-- No Ticket
 				9017,	-- Water Management
@@ -54,6 +50,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9058,	-- Leeeeeeeeeeeeeroy...?
 				9056,	-- Bridge Over Troubled Fire
 				9057,	-- Dragonmaw? More Like Dragonfall!
+				-- #if BEFORE 12.0.1
+				9033,	-- Ready for Raiding IV
+				9034,	-- Magnify... Enhance
+				9035,	-- I Saw Solis
+				9036,	-- Monomania
+				-- #endif
 			}},
 			["groups"] = {
 				i(116670),	-- Frostplains Battleboar (MOUNT!)

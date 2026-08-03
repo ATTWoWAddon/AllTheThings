@@ -17632,7 +17632,7 @@ crit(5614,{achID=495,id=5}),
 crit(5614,{achID=1658,id=16})}})}),
 d(24,{sym={{"sub","tw_instance",274}}})}}),
 inst(275,{awp=30002,coords={
-[120]={{38,14.7}}},description="|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",lore="Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.",mapID=138,maps={139},savedInstanceID=602,g={
+[120]={{38,14.7}}},lore="Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.",mapID=138,maps={139},savedInstanceID=602,g={
 h(-12,{
 ach(486,{
 crit(4049,{achID=1288,id=11})}),
@@ -18652,7 +18652,7 @@ mnt(59568,{b=1,itemID=43953,lvl=10})}}),
 crit(5617,{achID=498,id=5}),
 crit(5617,{achID=1658,id=10})}})})}}),
 inst(283,{awp=30002,coords={
-[125]={{66.6,67.9}}},mapID=168,savedInstanceID=608,g={
+[125]={{66.6,67.9}}},description="The bosses are random on all difficulties.",mapID=168,savedInstanceID=608,g={
 h(-12,{
 ach(1865,{
 crit(7510,{achID=2136,id=15})})}),
@@ -21507,7 +21507,7 @@ s(37304,72824,{b=1,f=5,lvl=32,modID=2}),
 s(37303,72823,{b=1,f=5,lvl=32,modID=2})}})}),
 d(24,{sym={{"sub","tw_instance",184}}})}}),
 inst(71,{awp=40003,coords={
-[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.\n\n|CFFFF0000Need to finish off a Cataclysm rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",mapID=293,savedInstanceID=670,g={
+[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,g={
 h(-45,{
 q(28854,{coords={
 [293]={{50,50}}},lvl=30,qgs={50387},g={
@@ -40783,7 +40783,7 @@ h(-21,{
 r(227239,{b=1,crs={91007,95676,95888,96028,96759,98208,98965,98970,99192,102387,102446,104218,114790,120793,122314,124729},itemID=141591,lvl=10,requireSkill=773,skillID=2508}),
 r(227240,{b=1,crs={102387,102446,114895,122314,124729},description="Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",itemID=141592,lvl=10,requireSkill=773,skillID=2508})}),
 inst(777,{coords={
-[627]={{66.2,68.3}}},mapID=732,savedInstanceID=1544,g={
+[627]={{66.2,68.3}}},description="The bosses are random on all difficulties except Mythic.",mapID=732,savedInstanceID=1544,g={
 d(101,{difficulties={1,2,23},g={
 h(-651,{
 e(1697,{npcID=102387,g={

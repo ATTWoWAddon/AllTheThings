@@ -152,7 +152,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
 			}),
 			ach(62400, {	-- Craft Your World
-				["description"] = "Open Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.",
+				["description"] = "Open Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.\n\nNote: If any sort of Parental Controls have been set up on your account, this will not be visible in the Options menu unless they are fully removed via Battle Net support ticket.",
 				["timeline"] = { "added 12.0.1.66017" },
 				["groups"] = { i(268695) },	-- Pin-o-Matic Camera (TOY!)
 			}),
@@ -204,7 +204,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
 			}),
 			n(FANTA, sharedDataSelf({
-				["timeline"] = { "added 12.0.1.66709", "removed 12.0.7.99999" },
+				["timeline"] = { "added 12.0.1.66709", "removed 12.0.7.68887" },
 			}, {
 				i(262438),	-- Fantastical Goblin Waveshredder (MOUNT!)
 				i(264278),	-- Sturdy Portable Ice Chest (DECOR!)

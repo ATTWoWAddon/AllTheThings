@@ -344,7 +344,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	header(HEADERS.Faction, FACTION_THE_KARESH_TRUST, {
-		q(90725),	-- Daily(?) Lockout, triggered at the completion of quests starting with 'Stealing What is Ours' (90663)
+	m(KHAZ_ALGAR, {
+		m(KARESH, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+			header(HEADERS.Faction, FACTION_THE_KARESH_TRUST, {
+				q(90725),	-- Daily(?) Lockout, triggered at the completion of quests starting with 'Stealing What is Ours' (90663)
+			}),
+		})),
 	}),
 }));

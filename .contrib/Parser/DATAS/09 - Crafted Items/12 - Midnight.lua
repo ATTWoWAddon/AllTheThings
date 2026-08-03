@@ -1090,7 +1090,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1225284, 88613),	-- Lucky Loa
 			r_withQuest(1225270, 88603),	-- Lynxfish
 			r_withQuest(1225268, 88617),	-- Null Voidfish
-			r_withQuest(1225273, 88610),	-- Ominous Octopu
+			r_withQuest(1225273, 88610),	-- Ominous Octopus
 			r_withQuest(1225277, 88609),	-- Restored Songfish
 			r_withQuest(1225269, 88604),	-- Root Crab
 			r_withQuest(1225271, 88615),	-- Shimmersiren
@@ -1180,6 +1180,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(DISCOVERY, {
 			r_withQuest(1223138, 87747),	-- Argentleaf
 			r_withQuest(1223137, 87741),	-- Azeroot
+			r_withQuest(1301647, 97233, ADDED_12_1_0),	-- Cursed Argentleaf
+			r_withQuest(1301649, 97232, ADDED_12_1_0),	-- Cursed Azeroot
+			--r_withQuest(1301651, XXXXX, ADDED_12_1_0),	-- Cursed Mana Lily
+			r_withQuest(1301654, 97231, ADDED_12_1_0),	-- Cursed Sanguithorn
+			r_withQuest(1301655, 97229, ADDED_12_1_0),	-- Cursed Tranquility Bloom
 			r_withQuest(1224882, 87749),	-- Lightfused Argentleaf
 			r_withQuest(1224885, 87743),	-- Lightfused Azeroot
 			r_withQuest(1224884, 87755),	-- Lightfused Mana Lily
@@ -1191,6 +1196,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			r_withQuest(1223151, 87736),	-- Lush Sanguithorn
 			r_withQuest(1223148, 87730),	-- Lush Tranquility Bloom
 			r_withQuest(1223139, 87753),	-- Mana Lily
+			r(1301657, {["timeline"] = {ADDED_12_1_0}}),	-- Overload Cursed Herb
 			r(1225128),	-- Overload Lightfused Herb
 			r(1225137),	-- Overload Primal Herb
 			r(1225144),	-- Overload Voidbound Herb
@@ -2047,9 +2053,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		n(DISCOVERY, {
 			r_withQuest(1225348, 88471),	-- Brilliant Silver
 			r_withQuest(1225357, 88466),	-- Brilliant Silver Seam
+			r_withQuest(1301486, 97228, ADDED_12_1_0),	-- Cursed Brilliant Silver
+			r_withQuest(1301492, 97226, ADDED_12_1_0),	-- Cursed Refulgent Copper
+			r_withQuest(1301494, 97227, ADDED_12_1_0),	-- Cursed Umbral Tin
 			r_withQuest(1225359, 88484),	-- Lightfused Brilliant Silver
 			r_withQuest(1225351, 88487),	-- Lightfused Refulgent Copper
 			r_withQuest(1225367, 88488),	-- Lightfused Umbral Tin
+			r(1301495, {["timeline"] = {ADDED_12_1_0}}),	-- Overload Cursed Deposits
 			r(1225818),	-- Overload Lightfused Deposits
 			r(1225817),	-- Overload Primal Deposits
 			r(1225820),	-- Overload Voidbound Deposits

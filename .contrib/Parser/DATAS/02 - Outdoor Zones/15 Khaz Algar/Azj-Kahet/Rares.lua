@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(AZJ_KAHET, {
+		m(AZJ_KAHET, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(RARES, {
 				q(84073, {	-- Weekly reputation: Cha'tak
 					["name"] = "Cha'tak weekly reputation obtained.",
@@ -277,6 +277,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					["name"] = "XT-Minecrusher 8700 weekly reputation obtained.",
 				}),
 			}),
-		}),
+		})),
 	}),
 }));

@@ -41,7 +41,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot)
 local Boss, BossOnly, Difficulty =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	inst(727, {	-- Maw of Souls
 		["coord"] = { 52.5, 45.3, STORMHEIM },
 		["maps"] = { 706, 707, 708 },
@@ -177,4 +177,4 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 		},
 	}),
-}));
+})));

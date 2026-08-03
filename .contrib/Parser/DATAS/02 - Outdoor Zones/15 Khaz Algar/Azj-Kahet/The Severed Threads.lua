@@ -1294,200 +1294,204 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	header(HEADERS.Faction, FACTION_THE_SEVERED_THREADS, {
-		n(SEVERED_THREADS_PACT, {
-			-- General --
-			q(81601, {	-- [DNT] General - Level 1 Unlock (spellID 443677)
-				["name"] = "The General considers you an Acquaintance.",
+	m(KHAZ_ALGAR, {
+		m(AZJ_KAHET, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			header(HEADERS.Faction, FACTION_THE_SEVERED_THREADS, {
+				n(SEVERED_THREADS_PACT, {
+					-- General --
+					q(81601, {	-- [DNT] General - Level 1 Unlock (spellID 443677)
+						["name"] = "The General considers you an Acquaintance.",
+					}),
+					q(81602, {	-- [DNT] General - Level 2 Unlock (spellID 443679)
+						["name"] = "The General considers you a Crony.",
+					}),
+					q(81626, {	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
+						["name"] = "The General considers you a Crony.",
+					}),
+					q(81603, {	-- [DNT] General - Level 3 Unlock (spellID 443680)
+						["name"] = "The General considers you an Accomplice.",
+					}),
+					q(81604, {	-- [DNT] General - Level 4 Unlock (spellID 443681)
+						["name"] = "The General considers you a Collaborator.",
+					}),
+					q(84530, {	-- [DNT] General - Level 5 Unlock (spellID 462466)
+						["name"] = "The General considers you an Accessory.",
+					}),
+					q(84531, {	-- [DNT] General - Level 6 Unlock (spellID 462468)
+						["name"] = "The General considers you an Abettor.",
+					}),
+					q(84532, {	-- [DNT] General - Level 7 Unlock (spellID 462470)
+						["name"] = "The General considers you a Conspirator.",
+					}),
+					q(84533, {	-- [DNT] General - Level 8 Unlock (spellID 462471)
+						["name"] = [[~("The General considers you a Mastermind. Congratulations, Anub'%s."):format(UnitName("player"))]],
+					}),
+					-- Vizier --
+					q(81605, {	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
+						["name"] = "The Vizier considers you an Acquaintance.",
+					}),
+					q(81606, {	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
+						["name"] = "The Vizier considers you a Crony.",
+					}),
+					q(81607, {	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
+						["name"] = "The Vizier considers you an Accomplice.",
+					}),
+					q(84534, {	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
+						["name"] = "The Vizier considers you an Accessory.",
+					}),
+					q(84535, {	-- [DNT] Vizier - Level 6 Unlock (spellID 462474)
+						["name"] = "The Vizier considers you an Abettor.",
+					}),
+					q(84536, {	-- [DNT] Vizier - Level 7 Unlock (spellID 462475)
+						["name"] = "The Vizier considers you a Conspirator.",
+					}),
+					q(84537, {	-- [DNT] Vizier - Level 8 Unlock (spellID 462476)
+						["name"] = [[~("The Vizier considers you a Mastermind. Congratulations, %s, Hand of the Vizier."):format(UnitName("player"))]],
+					}),
+					-- Weaver --
+					q(81597, {	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
+						["name"] = "The Weaver considers you an Acquaintance.",
+					}),
+					q(81598, {	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
+						["name"] = "The Weaver considers you a Crony.",
+					}),
+					q(81627, {	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
+						["name"] = "The Weaver considers you a Crony.",
+					}),
+					q(81599, {	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
+						["name"] = "The Weaver considers you an Accomplice.",
+					}),
+					q(81600, {	-- [DNT] Weaver - Level 4 Unlock (spellID 443676)
+						["name"] = "The Weaver considers you a Collaborator.",
+					}),
+					q(84538, {	-- [DNT] Weaver - Level 5 Unlock (spellID 462490)
+						["name"] = "The Weaver considers you an Accessory.",
+					}),
+					q(84539, {	-- [DNT] Weaver - Level 6 Unlock (spellID 462491)
+						["name"] = "The Weaver considers you an Abettor.",
+					}),
+					q(84540, {	-- [DNT] Weaver - Level 7 Unlock (spellID 462492)
+						["name"] = "The Weaver considers you a Conspirator.",
+					}),
+					q(84541, {	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
+						["name"] = [[~("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player"))]],
+					}),
+					-- 'City Rumors' events are available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
+					-- Using 'Rumor Map Bundle' (ItemID: 228950) triggers following 6 quests as completed and reveals 6 NPCs with "rumors" on the map
+					q(82616, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+					q(82641, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+					q(82643, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+					q(82645, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+					q(82647, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+					q(82649, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
+					-- Quest Givers or "Rumor Givers" are Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>, Ru'murh <Agent of the Weaver>
+					-- Different rumors can trigger the same HQTs as commented below. They are not triggered until you talk to the NPC that gives you the rumor
+					q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker)
+						["name"] = "You heard a rumor. Go and investigate.",
+							-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels)
+							-- Ru'murh  (n: 224192 @ 79.7, 56.8), starts questID 81500 (Wet Work: Step Into Their Parlor)
+							-- Ru'murh  (n: 224191 @ 68.6, 51.1), starts questID 81484 (Wet Work: Death of a Salesman)
+							-- Ru'murh  (n: 224193 @ 55.0, 26.6), starts questID 80573 (Dropping Eaves: Spoils of War)
+							-- Ghos'opp (n: 224187 @ 50.6, 47.1), starts questID 81482 (Testing Formulae: Gelatinous Unguent)
+							-- Ru'murh  (n: 224196 @ 77.8, 53.7), starts questID 81473 (Information Control: The Right Side of History)
+					}),
+					q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill)
+						["name"] = "You heard a rumor. Go and investigate.",
+							-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments)
+							-- Ghos'opp (n: 224178 @ 64.2, 21.2), starts questID 81495 (Requisitions: Brightblooms)
+							-- Ghos'opp (n: 224188 @ 47.9,  9.7), starts questID 81501 (Testing Formulae: Roiling Elixir)
+							-- Ru'murh  (n: 224194 @ 70.3, 31.8), starts questID 81470 (Dropping Eaves: Thieving Weave)
+							-- Ghos'opp (n: 224177 @ 52.0, 16.6), starts questID 81479 (Requisitions: Umbrashrooms)
+							-- Ru'murh  (n: 224198 @ 54.8, 34.5), starts questID 81499 (Information Control: Ascended Intrigue)
+					}),
+					q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments)
+						["name"] = "You heard a rumor. Go and investigate.",
+							-- Ghos'opp (n: 224189 @ 30.9, 23.0), starts questID 81502 (Testing Formulae: Malodorous Philter)
+							-- Eirzay   (n: 224162 @ 33.3, 49.1), starts questID 81487 (Breaking the Phalanx: Threadblades)
+							-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages)
+							-- Eirzay   (n: 224167 @ 15.6, 45.7), starts questID 81489 (Bounty: Zorikal the Patron)
+							-- Ghos'opp (n: 224184 @ 39.5, 51.4), starts questID 81505 (Sabotage: Venomancers)
+							-- Ru'murh  (n: 224195 @ 73.3, 50.9), starts questID 81471 (Dropping Eaves: Saving the Past)
+					}),
+					q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth)
+						["name"] = "You heard a rumor. Go and investigate.",
+							-- Ghos'opp (n: 224179 @ 49.2, 51.8), starts questID 81496 (Requisitions: Fangpetals)
+							-- Eirzay   (n: 224166 @ 50.4, 74.0), starts questID 81476 (Bounty: Chitinous Goliath)
+							-- Eirzay   (n: 224168 @ 49.7, 44.3), starts questID 81490 (Bounty: Balaxir the Bully)
+							-- Eirzay   (n: 224171 @ 61.3, 36.2), starts questID 81491 (Armaments: Arbalests)
+					}),
+					q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools)
+						["name"] = "You heard a rumor. Go and investigate.",
+							-- Eirzay   (n: 224176 @ 61.4, 24.1), starts questID 81494 (Relics of War: Rak-Zakaz)
+							-- Eirzay   (n: 224173 @ 36.4, 49.2), starts questID 81478 (Relics of War: The Ruptured Lake)
+							-- Ru'murh  (n: 224201 @ 77.5, 42.9), starts questID 81504 (Infiltration: Hidden Figures)
+					}),
+					q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest)
+						["name"] = "You heard a rumor. Go and investigate.",
+							-- Ghos'opp (n: 224182 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep)
+							-- Ghos'opp (n: 224180 @ 47.2, 58.8), starts questID 81498 (Wild Reagents: Twitching Gorge)
+							-- Ghos'opp (n: 224181 @ 61.1, 74.4), starts questID 81497 (Wild Reagents: Salien Gutters)
+					}),
+					q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
+					-- q(80688),	-- triggered after completing task for a 'Rumor' (re-capture and narrow down)
+					-- Weaver's Lair Profession Table
+					q(84746),	-- Blacksmithing
+					q(84747),	-- Leatherworking
+					q(84748),	-- Tailoring
+					q(84749),	-- Enchanting
+					q(84750),	-- Inscription
+					q(84751),	-- Jewelcrafting
+					q(84752),	-- Engineering
+					q(84753),	-- Alchemy
+				}),
+				n(TREASURES, {
+					-- 'Treasures: Weave Rat Caches', available when you forge a Pact with The Weaver.
+					-- There are 12 Thimble's Caches in total however, only 4 are revealed on the map.
+					-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
+					q(83778),
+					q(83779),
+					q(83780),
+					q(83781),
+					q(83782),
+					q(83783),
+					q(83784),
+					q(83785),
+					q(83786),
+					q(83787),
+					q(83788),
+					q(83789),
+					-- 'Treasures: Forgotten Memorials', available when you forge a Pact with The General.
+					-- There are 12 Forgotten Memorials in total, only 4 are revealed on the map at the time.
+					-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
+					q(83796),
+					q(83797),
+					q(83798),
+					q(83799),
+					q(83800),
+					q(83801),
+					q(83802),
+					q(83803),
+					q(83804),
+					q(83805),
+					q(83806),
+					q(83807),
+					-- 'Treasures: Kaheti Excavations', available when you forge a Pact with The Vizier.
+					-- There are 12 Kaheti Excavations in total, only 4 are revealed on the map at the time.
+					-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
+					q(83810),
+					q(83811),
+					q(83812),
+					q(83813),
+					q(83814),
+					q(83815),
+					q(83816),
+					q(83817),
+					q(83818),
+					q(83819),
+					q(83820),
+					q(83821),
+				}),
 			}),
-			q(81602, {	-- [DNT] General - Level 2 Unlock (spellID 443679)
-				["name"] = "The General considers you a Crony.",
-			}),
-			q(81626, {	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
-				["name"] = "The General considers you a Crony.",
-			}),
-			q(81603, {	-- [DNT] General - Level 3 Unlock (spellID 443680)
-				["name"] = "The General considers you an Accomplice.",
-			}),
-			q(81604, {	-- [DNT] General - Level 4 Unlock (spellID 443681)
-				["name"] = "The General considers you a Collaborator.",
-			}),
-			q(84530, {	-- [DNT] General - Level 5 Unlock (spellID 462466)
-				["name"] = "The General considers you an Accessory.",
-			}),
-			q(84531, {	-- [DNT] General - Level 6 Unlock (spellID 462468)
-				["name"] = "The General considers you an Abettor.",
-			}),
-			q(84532, {	-- [DNT] General - Level 7 Unlock (spellID 462470)
-				["name"] = "The General considers you a Conspirator.",
-			}),
-			q(84533, {	-- [DNT] General - Level 8 Unlock (spellID 462471)
-				["name"] = [[~("The General considers you a Mastermind. Congratulations, Anub'%s."):format(UnitName("player"))]],
-			}),
-			-- Vizier --
-			q(81605, {	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
-				["name"] = "The Vizier considers you an Acquaintance.",
-			}),
-			q(81606, {	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
-				["name"] = "The Vizier considers you a Crony.",
-			}),
-			q(81607, {	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
-				["name"] = "The Vizier considers you an Accomplice.",
-			}),
-			q(84534, {	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
-				["name"] = "The Vizier considers you an Accessory.",
-			}),
-			q(84535, {	-- [DNT] Vizier - Level 6 Unlock (spellID 462474)
-				["name"] = "The Vizier considers you an Abettor.",
-			}),
-			q(84536, {	-- [DNT] Vizier - Level 7 Unlock (spellID 462475)
-				["name"] = "The Vizier considers you a Conspirator.",
-			}),
-			q(84537, {	-- [DNT] Vizier - Level 8 Unlock (spellID 462476)
-				["name"] = [[~("The Vizier considers you a Mastermind. Congratulations, %s, Hand of the Vizier."):format(UnitName("player"))]],
-			}),
-			-- Weaver --
-			q(81597, {	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
-				["name"] = "The Weaver considers you an Acquaintance.",
-			}),
-			q(81598, {	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
-				["name"] = "The Weaver considers you a Crony.",
-			}),
-			q(81627, {	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
-				["name"] = "The Weaver considers you a Crony.",
-			}),
-			q(81599, {	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
-				["name"] = "The Weaver considers you an Accomplice.",
-			}),
-			q(81600, {	-- [DNT] Weaver - Level 4 Unlock (spellID 443676)
-				["name"] = "The Weaver considers you a Collaborator.",
-			}),
-			q(84538, {	-- [DNT] Weaver - Level 5 Unlock (spellID 462490)
-				["name"] = "The Weaver considers you an Accessory.",
-			}),
-			q(84539, {	-- [DNT] Weaver - Level 6 Unlock (spellID 462491)
-				["name"] = "The Weaver considers you an Abettor.",
-			}),
-			q(84540, {	-- [DNT] Weaver - Level 7 Unlock (spellID 462492)
-				["name"] = "The Weaver considers you a Conspirator.",
-			}),
-			q(84541, {	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
-				["name"] = [[~("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player"))]],
-			}),
-			-- 'City Rumors' events are available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
-			-- Using 'Rumor Map Bundle' (ItemID: 228950) triggers following 6 quests as completed and reveals 6 NPCs with "rumors" on the map
-			q(82616, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
-			q(82641, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
-			q(82643, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
-			q(82645, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
-			q(82647, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
-			q(82649, {["isDaily"]=true}),	-- Triggered when 'Rumor Map Bundle' (itemID 228950) is used
-			-- Quest Givers or "Rumor Givers" are Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>, Ru'murh <Agent of the Weaver>
-			-- Different rumors can trigger the same HQTs as commented below. They are not triggered until you talk to the NPC that gives you the rumor
-			q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker)
-				["name"] = "You heard a rumor. Go and investigate.",
-					-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels)
-					-- Ru'murh  (n: 224192 @ 79.7, 56.8), starts questID 81500 (Wet Work: Step Into Their Parlor)
-					-- Ru'murh  (n: 224191 @ 68.6, 51.1), starts questID 81484 (Wet Work: Death of a Salesman)
-					-- Ru'murh  (n: 224193 @ 55.0, 26.6), starts questID 80573 (Dropping Eaves: Spoils of War)
-					-- Ghos'opp (n: 224187 @ 50.6, 47.1), starts questID 81482 (Testing Formulae: Gelatinous Unguent)
-					-- Ru'murh  (n: 224196 @ 77.8, 53.7), starts questID 81473 (Information Control: The Right Side of History)
-			}),
-			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill)
-				["name"] = "You heard a rumor. Go and investigate.",
-					-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments)
-					-- Ghos'opp (n: 224178 @ 64.2, 21.2), starts questID 81495 (Requisitions: Brightblooms)
-					-- Ghos'opp (n: 224188 @ 47.9,  9.7), starts questID 81501 (Testing Formulae: Roiling Elixir)
-					-- Ru'murh  (n: 224194 @ 70.3, 31.8), starts questID 81470 (Dropping Eaves: Thieving Weave)
-					-- Ghos'opp (n: 224177 @ 52.0, 16.6), starts questID 81479 (Requisitions: Umbrashrooms)
-					-- Ru'murh  (n: 224198 @ 54.8, 34.5), starts questID 81499 (Information Control: Ascended Intrigue)
-			}),
-			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments)
-				["name"] = "You heard a rumor. Go and investigate.",
-					-- Ghos'opp (n: 224189 @ 30.9, 23.0), starts questID 81502 (Testing Formulae: Malodorous Philter)
-					-- Eirzay   (n: 224162 @ 33.3, 49.1), starts questID 81487 (Breaking the Phalanx: Threadblades)
-					-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages)
-					-- Eirzay   (n: 224167 @ 15.6, 45.7), starts questID 81489 (Bounty: Zorikal the Patron)
-					-- Ghos'opp (n: 224184 @ 39.5, 51.4), starts questID 81505 (Sabotage: Venomancers)
-					-- Ru'murh  (n: 224195 @ 73.3, 50.9), starts questID 81471 (Dropping Eaves: Saving the Past)
-			}),
-			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth)
-				["name"] = "You heard a rumor. Go and investigate.",
-					-- Ghos'opp (n: 224179 @ 49.2, 51.8), starts questID 81496 (Requisitions: Fangpetals)
-					-- Eirzay   (n: 224166 @ 50.4, 74.0), starts questID 81476 (Bounty: Chitinous Goliath)
-					-- Eirzay   (n: 224168 @ 49.7, 44.3), starts questID 81490 (Bounty: Balaxir the Bully)
-					-- Eirzay   (n: 224171 @ 61.3, 36.2), starts questID 81491 (Armaments: Arbalests)
-			}),
-			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools)
-				["name"] = "You heard a rumor. Go and investigate.",
-					-- Eirzay   (n: 224176 @ 61.4, 24.1), starts questID 81494 (Relics of War: Rak-Zakaz)
-					-- Eirzay   (n: 224173 @ 36.4, 49.2), starts questID 81478 (Relics of War: The Ruptured Lake)
-					-- Ru'murh  (n: 224201 @ 77.5, 42.9), starts questID 81504 (Infiltration: Hidden Figures)
-			}),
-			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest)
-				["name"] = "You heard a rumor. Go and investigate.",
-					-- Ghos'opp (n: 224182 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep)
-					-- Ghos'opp (n: 224180 @ 47.2, 58.8), starts questID 81498 (Wild Reagents: Twitching Gorge)
-					-- Ghos'opp (n: 224181 @ 61.1, 74.4), starts questID 81497 (Wild Reagents: Salien Gutters)
-			}),
-			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
-			-- q(80688),	-- triggered after completing task for a 'Rumor' (re-capture and narrow down)
-			-- Weaver's Lair Profession Table
-			q(84746),	-- Blacksmithing
-			q(84747),	-- Leatherworking
-			q(84748),	-- Tailoring
-			q(84749),	-- Enchanting
-			q(84750),	-- Inscription
-			q(84751),	-- Jewelcrafting
-			q(84752),	-- Engineering
-			q(84753),	-- Alchemy
-		}),
-		n(TREASURES, {
-			-- 'Treasures: Weave Rat Caches', available when you forge a Pact with The Weaver.
-			-- There are 12 Thimble's Caches in total however, only 4 are revealed on the map.
-			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
-			q(83778),
-			q(83779),
-			q(83780),
-			q(83781),
-			q(83782),
-			q(83783),
-			q(83784),
-			q(83785),
-			q(83786),
-			q(83787),
-			q(83788),
-			q(83789),
-			-- 'Treasures: Forgotten Memorials', available when you forge a Pact with The General.
-			-- There are 12 Forgotten Memorials in total, only 4 are revealed on the map at the time.
-			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
-			q(83796),
-			q(83797),
-			q(83798),
-			q(83799),
-			q(83800),
-			q(83801),
-			q(83802),
-			q(83803),
-			q(83804),
-			q(83805),
-			q(83806),
-			q(83807),
-			-- 'Treasures: Kaheti Excavations', available when you forge a Pact with The Vizier.
-			-- There are 12 Kaheti Excavations in total, only 4 are revealed on the map at the time.
-			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
-			q(83810),
-			q(83811),
-			q(83812),
-			q(83813),
-			q(83814),
-			q(83815),
-			q(83816),
-			q(83817),
-			q(83818),
-			q(83819),
-			q(83820),
-			q(83821),
-		}),
+		})),
 	}),
 }));

@@ -2694,7 +2694,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(KARESH, {
+		m(KARESH, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			n(QUESTS, {
 				-- During main story
 				q(84901),	-- [DNT] CH04Q05p - Triggered after completing 'Like a Knife Through Aether' (84900)
@@ -2714,6 +2714,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 
 				q(90955, name(HEADERS.Spell,1249651)),	-- Boon of the Reshii (Reshii Wraps 1st upgrade)
 			}),
-		}),
+		})),
 	}),
 }));

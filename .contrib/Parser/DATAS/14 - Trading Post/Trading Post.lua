@@ -2299,7 +2299,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235036)), -- Vigilante's Sunny Mask
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 12.0.7.68367", "removed 12.0.7.99999" } }, {	-- TODO: Timeline out correctly
+		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 12.0.7.68367", "removed 12.0.7.68887" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(273651),	-- Bilgewater X-TREME Firework Rocket (MOUNT!)
 			}),
@@ -2353,7 +2353,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(150, i(242388)),	-- Wailing Banshee's Wand
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 12.0.7.68887", "removed 12.0.7.99999" } }, {	-- TODO: Timeline in/out correctly
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 12.0.7.68887", "removed 12.1.0.99999" } }, {	-- TODO: Timeline in/out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(271603),	-- Ensemble: Midnight Outlaw
 			}),

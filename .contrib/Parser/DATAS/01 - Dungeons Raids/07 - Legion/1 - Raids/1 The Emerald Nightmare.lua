@@ -171,7 +171,7 @@ InstanceHelper.LFRQueueNPC = {
 	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	inst(768, {	-- The Emerald Nightmare
 		["coord"] = { 56.3, 36.9, VALSHARAH },
 		["maps"] = {
@@ -434,9 +434,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 		},
 	}),
-}));
+})));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	inst(768, {
 		q(44142),	-- Nythendra
 		q(44143),	-- Il'gynoth, Heart of Corruption

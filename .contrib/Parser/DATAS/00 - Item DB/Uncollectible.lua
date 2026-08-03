@@ -948,7 +948,6 @@ i(184391);	-- Hollow Phylactery Shard
 i(181550);	-- Hopebreaker's Field Injector
 i(180307);	-- Horrific Stone Visage
 i(180227);	-- Horror Novel
-i(180173);	-- House Grinchin Ring
 i(182968);	-- Humerus
 i(183822);	-- Icecrown Survival Kit
 i(180888);	-- Illegible Journal

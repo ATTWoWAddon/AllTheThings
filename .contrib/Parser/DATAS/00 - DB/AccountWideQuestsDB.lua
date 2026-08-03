@@ -784,591 +784,591 @@ local AccountWideQuestsDB = {
 	46292,
 	46293,
 	47895,
-	50098,
-	50099,
-	50100,
-	50101,
-	50102,
-	50103,
-	50104,
-	50105,
-	50106,
-	50107,
-	50108,
-	50109,
-	50140,
-	50141,
-	50142,
-	50143,
-	50144,
-	50145,
-	50146,
-	50147,
-	51994,
-	52969,
-	53121,
-	53123,
-	53124,
-	53131,
-	53206,
-	53220,
-	53739,
-	53740,
-	53741,
-	53742,
-	53743,
-	53744,
-	53745,
-	53746,
-	53747,
-	53748,
-	53749,
-	53750,
-	53751,
+	50098,	-- Steps 1-4: A New Friend
+	50099,	-- 2. /whistle at Uuna
+	50100,	-- 3. /roar at Uuna
+	50101,	-- 4. /cry at Uuna
+	50102,	-- Step 5: Bright Lights
+	50103,	-- Step 6: Wanna be Friends?
+	50104,	-- Step 7: Finding Nuu
+	50105,	-- Step 8: Shooting Stars
+	50106,	-- Step 9: Flower Crown
+	50107,	-- Step 10: Uuna Gets Kidnapped
+	50108,	-- Step 11: Spirit Healer
+	50109,	-- Step 12: A Dark Place
+	50140,	-- Step 1: Gate of the Setting Sun
+	50141,	-- Step 2: Nighthold
+	50142,	-- Step 3: Krasus Landing, Legion Dalaran
+	50143,	-- Step 4: Dragonblight
+	50144,	-- Step 5: Mount Hyjal
+	50145,	-- Step 6: Kun-Lai Summit
+	50146,	-- Step 7: Blackrock Mountain
+	50147,	-- Step 8: Temple of Karabor
+	51994,	-- Quest #51994*
+	52969,	-- Quest #52969*
+	53121,	-- Siege of Boralus
+	53123,	-- Quest #53123*
+	53124,	-- Quest #53124*
+	53131,	-- Kings' Rest
+	53206,	-- Quest #53206*
+	53220,	-- Quest #53220*
+	53739,	-- The Wolf's Den
+	53740,	-- Stonefist Watch
+	53741,	-- Windfall Cavern
+	53742,	-- Stonetusk Watch
+	53743,	-- Hillcrest Pasture
+	53744,	-- Swiftwind Post
+	53745,	-- Mudfisher Cove
+	53746,	-- Verdant Hollow
+	53747,	-- Veiled Grotto
+	53748,	-- Mugamba Overlook
+	53749,	-- Mistvine Ledge
+	53750,	-- Vulture's Nest
+	53751,	-- Grimwatt's Crash
 	53956,	-- Quest #53956*
-	54184,
-	54185,
-	54186,
-	54264,
-	54276,
-	54410,
-	56042,
-	56205,
-	56489,
-	56490,
-	56491,
-	56492,
-	56571,
-	56624,
-	56625,
-	56626,
-	56627,
-	56628,
-	56629,
-	56630,
-	56631,
-	56632,
-	56633,
-	56634,
-	56635,
-	56652,
-	56729,
-	57096,
-	57559,
-	58455,
-	58456,
-	58457,
-	58458,
-	58927,
-	59072,
-	59087,
-	59120,
-	60490,
-	60511,
+	54184,	-- Trouble in Gnomeregan
+	54185,	-- Gnomeregan's New Guardians
+	54186,	-- Pet Battle Challenge: Gnomeregan
+	54264,	-- Shattered Pet Portal
+	54276,	-- Trouble in Gnomeregan
+	54410,	-- Quest #54410*
+	56042,	-- Blingtron 7000
+	56205,	-- Just Ptrust Me On This
+	56489,	-- Restless Dead
+	56490,	-- Restless Dead
+	56491,	-- Tiny Terrors of Stratholme
+	56492,	-- Pet Battle Challenge: Stratholme
+	56571,	-- Quest #56571*
+	56624,	-- Izira Gearsworn
+	56625,	-- Bondo Bigblock
+	56626,	-- Wrenchbot
+	56627,	-- Roadtrogg
+	56628,	-- Overspark
+	56629,	-- Gazlowe
+	56630,	-- HK-8
+	56631,	-- King Mechagon
+	56632,	-- Prince Erazmin
+	56633,	-- Cork Stuttguard
+	56634,	-- Naeno Megacrash
+	56635,	-- Cogstar
+	56652,	-- Blastatron
+	56729,	-- Sapphronetta
+	57096,	-- Quest #57096*
+	57559,	-- Quest #57559*
+	58455,	-- Shadowy Showdown
+	58456,	-- Shadowy Showdown
+	58457,	-- Shadows of Blackrock
+	58458,	-- Pet Battle Challenge: Blackrock Depths
+	58927,	-- Illusion: Void Edge
+	59072,	-- Quest #59072*
+	59087,	-- That Darn Fox!
+	59120,	-- Renny the Vulpin
+	60490,	-- Quest #60490*
+	60511,	-- Quest #60511*
 	61160,	-- Gargon Training Manual
-	61225,
-	61235,
-	61236,
-	61237,
-	61238,
-	61239,
-	61241,
-	61244,
-	61245,
-	61247,
-	61249,
-	61250,
-	61251,
-	61253,
-	61254,
-	61257,
-	61258,
-	61260,
-	61261,
-	61263,
-	61264,
-	61270,
-	61271,
-	61273,
-	61274,
-	61275,
-	61277,
-	61278,
-	61279,
-	61280,
-	61281,
-	61282,
-	61283,
-	61284,
-	61285,
-	61286,
-	61287,
-	61288,
-	61289,
-	61290,
-	61291,
-	61292,
-	61293,
-	61294,
-	61295,
-	61296,
-	61297,
-	61298,
-	61299,
-	61300,
-	61727,
-	62254,
-	62255,
-	62395,
-	62396,
-	62397,
-	62398,
-	62602,
+	61225,	-- Anima Crystal Shard
+	61235,	-- Anima Crystal Shard
+	61236,	-- Anima Crystal Shard
+	61237,	-- Anima Crystal Shard
+	61238,	-- Anima Crystal Shard
+	61239,	-- Anima Crystal Shard
+	61241,	-- Anima Crystal Shard
+	61244,	-- Anima Crystal Shard
+	61245,	-- Anima Crystal Shard
+	61247,	-- Anima Crystal Shard
+	61249,	-- Anima Crystal Shard
+	61250,	-- Anima Crystal Shard
+	61251,	-- Anima Crystal Shard
+	61253,	-- Anima Crystal Shard
+	61254,	-- Anima Crystal Shard
+	61257,	-- Anima Crystal Shard
+	61258,	-- Anima Crystal Shard
+	61260,	-- Anima Crystal Shard
+	61261,	-- Anima Crystal Shard
+	61263,	-- Anima Crystal Shard
+	61264,	-- Anima Crystal Shard
+	61270,	-- Anima Crystal Shard
+	61271,	-- Anima Crystal Shard
+	61273,	-- Anima Crystal Shard
+	61274,	-- Anima Crystal Shard
+	61275,	-- Anima Crystal Shard
+	61277,	-- Anima Crystal Shard
+	61278,	-- Anima Crystal Shard
+	61279,	-- Anima Crystal Shard
+	61280,	-- Anima Crystal Shard
+	61281,	-- Anima Crystal Shard
+	61282,	-- Anima Crystal Shard
+	61283,	-- Anima Crystal Shard
+	61284,	-- Anima Crystal Shard
+	61285,	-- Anima Crystal Shard
+	61286,	-- Anima Crystal Shard
+	61287,	-- Anima Crystal Shard
+	61288,	-- Anima Crystal Shard
+	61289,	-- Anima Crystal Shard
+	61290,	-- Anima Crystal Shard
+	61291,	-- Anima Crystal Shard
+	61292,	-- Anima Crystal Shard
+	61293,	-- Anima Crystal Shard
+	61294,	-- Anima Crystal Shard
+	61295,	-- Anima Crystal Shard
+	61296,	-- Anima Crystal Shard
+	61297,	-- Anima Crystal Shard
+	61298,	-- Anima Crystal Shard
+	61299,	-- Anima Crystal Shard
+	61300,	-- Anima Crystal Shard
+	61727,	-- Illusion: Sinsedge
+	62254,	-- How to School Your Serpent
+	62255,	-- Simple Tome of Bone-Binding
+	62395,	-- Illusion: Transcendent Soul
+	62396,	-- Illusion: Unbreakable Resolve
+	62397,	-- Illusion: Wild Soul
+	62398,	-- Illusion: Sinwrath
+	62602,	-- Giant Cache of Epic Treasure
 	62655,	-- Quest #62655*
-	62708,
-	62709,
-	62710,
-	62711,
-	62745,
+	62708,	-- Quest #62708*
+	62709,	-- Quest #62709*
+	62710,	-- Quest #62710*
+	62711,	-- Quest #62711*
+	62745,	-- Quest #62745*
 	62749,	-- Quest #62749*
-	62964,
-	62965,
-	62977,
-	62978,
-	62979,
-	62980,
-	63004,
-	63435,
-	63611,
-	63641,
-	63642,
-	63643,
-	63666,
-	63667,
-	63668,
-	63684,
-	63685,
-	63686,
-	63687,
-	63688,
-	63689,
-	63690,
-	63691,
-	63692,
-	63693,
-	63694,
-	63695,
-	63696,
-	63697,
-	63698,
-	63699,
-	63700,
-	63707,
-	63893,
-	64202,
-	64262,
-	64292,
-	64339,
-	64348,
-	64628,
-	64655,
-	64764,
-	64983,
-	65298,
-	65539,
+	62964,	-- Illusion: Undying Spirit
+	62965,	-- Illusion: Hunt's Favor
+	62977,	-- Quest #62977*
+	62978,	-- Quest #62978*
+	62979,	-- Quest #62979*
+	62980,	-- Quest #62980*
+	63004,	-- Illusion: Devoted Spirit
+	63435,	-- Temple Throwdown
+	63611,	-- Runed Chest
+	63641,	-- Rune Codex Page: Forging
+	63642,	-- Rune Codex Page: Souls
+	63643,	-- Rune Codex Page: Binding
+	63666,	-- Stray Soul
+	63667,	-- Soulforger's Tools
+	63668,	-- Intact Rune Codex
+	63684,	-- Feral Shadehound
+	63685,	-- Cryptkeeper Kassir's Best Friend
+	63686,	-- Baroness Vashj's Best Friend
+	63687,	-- Lady Moonberry's Best Friend
+	63688,	-- Mikanikos's Best Friend
+	63689,	-- The Countess's Best Friend
+	63690,	-- Alexandros Mograine's Best Friend
+	63691,	-- Hunt-Captain Korayn's Best Friend
+	63692,	-- Polemarch Adrestes's Best Friend
+	63693,	-- Rendle and Cudgelface's Best Friend
+	63694,	-- Choofa's Best Friend
+	63695,	-- Droman Aliothe's Best Friend
+	63696,	-- Grandmaster Vole's Best Friend
+	63697,	-- Kleia and Pelagos's Best Friend
+	63698,	-- Plague Deviser Marileth's Best Friend
+	63699,	-- Sika's Best Friend
+	63700,	-- Stonehead's Best Friend
+	63707,	-- Soulsteel Anvil
+	63893,	-- Memories of Sunless Skies
+	64202,	-- Gotta Hand It To Ya
+	64262,	-- Quest #64262*
+	64292,	-- Maelie, The Wanderer
+	64339,	-- Research Report: All-Seeing Crystal
+	64348,	-- Research Report: Ancient Shrines
+	64628,	-- Rockin' Rollin' Racer Pack
+	64655,	-- Quest #64655*
+	64764,	-- Quest #64764*
+	64983,	-- Quest #64983*
+	65298,	-- Quest #65298*
+	65539,	-- Zereth Mortis Flying
 	65716,	-- Ensemble: Barkbinds of the Archdruid's Nightmare
-	66858,
-	66959,
-	67030,
-	67139,
-	69996,
-	70315,
-	70316,
-	70317,
-	70318,
-	70335,
-	70541,
+	66858,	-- Tour the Trading Post
+	66959,	-- Tour the Trading Post
+	67030,	-- Quest #67030*
+	67139,	-- Quest #67139*
+	69996,	-- Expedition Supply Kit
+	70315,	-- Ensemble: Renowned Expeditioner's Cloth Armor
+	70316,	-- Ensemble: Renowned Expeditioner's Leather Armor
+	70317,	-- Ensemble: Renowned Expeditioner's Mail Armor
+	70318,	-- Ensemble: Renowned Expeditioner's Plate Armor
+	70335,	-- Simple Excavation Tools
+	70541,	-- Hunting Tactics: Companion
 	70550,	-- Welcome to the Assembly
 	70609,	-- Elegant Canvas Brush
-	70647,
-	70697,
-	70702,
-	70722,
-	70732,
-	70755,
-	70756,
-	70757,
-	70758,
-	70759,
+	70647,	-- Oh Where, Oh Where Can He Be?
+	70697,	-- An Expert Opinion
+	70702,	-- Continued Waygate Exploration
+	70722,	-- What Lubbins Needs
+	70732,	-- A Practice Bout
+	70755,	-- Ensemble: Crimson Valdrakken Clothing
+	70756,	-- Ensemble: Black Valdrakken Clothing
+	70757,	-- Ensemble: Azure Valdrakken Clothing
+	70758,	-- Ensemble: Bronze Valdrakken Clothing
+	70759,	-- Ensemble: Green Valdrakken Clothing
 	70793,	-- Iskaaran Fishing Net
-	70807,
-	70808,
-	70809,
-	70810,
-	70812,
-	70813,
-	70814,
-	70815,
-	70817,
-	70818,
-	70819,
-	70820,
-	70821,
-	70822,
-	70828,
-	70831,
-	70832,
-	70833,	-- Rumors of the Jeweled Whelpings
-	70839,
-	70849,
-	70851,
-	70853,
-	70854,
-	70880,
-	70882,
-	70883,
-	70885,
-	70887,
-	70888,
-	70891,
-	70895,
-	70896,
-	70897,
-	70901,
-	70903,
-	70904,
-	70905,
-	70910,
-	70911,
-	70912,
-	70913,
-	70914,
-	70915,
-	70936,
-	70938,
-	70939,
-	70940,
-	70941,	-- [DF] Fishing Holes
-	70942,
-	70943,
-	70944,
-	70945,
-	70948,
-	70950,
-	70952,
-	70953,
-	70954,
-	70955,
-	70956,
-	70959,
-	70960,
-	70961,
-	70962,
-	70963,
-	70964,
-	70966,
-	70967,
-	70968,
-	70971,
-	70972,
-	70976,
-	70977,
-	70978,
-	71028,
-	71029,
-	71030,
-	71031,
-	71032,
-	71044,
-	71045,
-	71046,
-	71047,
-	71048,
-	71049,
-	71050,
-	71051,
-	71052,
-	71058,
-	71060,
-	71066,
-	71067,
-	71073,
-	71074,
-	71075,
-	71079,
-	71083,
-	71085,
-	71089,
-	71090,
-	71146,
-	71148,
-	71149,
-	71150,
-	71151,
-	71161,
-	71184,
-	71210,
-	71227,
-	71229,
-	71231,
-	72038,
-	72048,
-	72064,
+	70807,	-- Advanced Excavation Tools
+	70808,	-- Initial Mysteries of the Dragon Isles Drakes
+	70809,	-- Deeper Mysteries of the Dragon Isles Drakes
+	70810,	-- Broader Mysteries of the Dragon Isles Drakes
+	70812,	-- Expedition Cloaks
+	70813,	-- Digging Up Treasure
+	70814,	-- Unlocking Magical Treasures
+	70815,	-- Demolitions Access
+	70817,	-- New Dragonscale Equipment
+	70818,	-- New Dragonscale Equipment
+	70819,	-- Renowned Explorer's Armor
+	70820,	-- The Basecamp 'Pets'
+	70821,	-- Skitterfly Riding
+	70822,	-- Lost Expedition Scouts
+	70828,	-- Wayfinder's Compass
+	70831,	-- Researching in Comfort
+	70832,	-- One of Us Now
+	70833,	-- Rumors of the Jeweled Whelplings
+	70839,	-- The Search for Titan Relics
+	70849,	-- This Calls for a Specialist
+	70851,	-- Born to Be Wilder
+	70853,	-- A Friend for Lubbins
+	70854,	-- So How Did It Go?
+	70880,	-- To Cook With Finery
+	70882,	-- Renown Supplies
+	70883,	-- A Hand in Cultivation
+	70885,	-- Renown Supplies
+	70887,	-- Feeling Freedom
+	70888,	-- Rubbing Shoulders With The Best
+	70891,	-- Fitting In
+	70895,	-- Soaring in Style
+	70896,	-- Waist Not, Want Not
+	70897,	-- A Coming of Age
+	70901,	-- A Collection of Creatures
+	70903,	-- Wielding Titanic Might
+	70904,	-- Variety is the Spice of Life
+	70905,	-- Flying with Our Colors
+	70910,	-- Mysteries in Paper and Glass
+	70911,	-- Armored and Ready
+	70912,	-- The Accord's High Standards
+	70913,	-- To Bear Our Mantle
+	70914,	-- The Breadth of Dragon Weaponry
+	70915,	-- Crowning Achievement
+	70936,	-- Stolen Tuskarr Totems
+	70938,	-- Community Feasts
+	70939,	-- Cooking Utensils
+	70940,	-- Tuskarr Champion's Tales
+	70941,	-- Fishing Holes
+	70942,	-- Highland Fishing
+	70943,	-- Harpooning
+	70944,	-- Ice Fishing
+	70945,	-- Netting More
+	70948,	-- Hook, Line, and Swelter!
+	70950,	-- Skewering Even Bigger Fish
+	70952,	-- Abandoned... or Hidden Caches
+	70953,	-- Tuskarr Headwear
+	70954,	-- Mounting Curiosity
+	70955,	-- Fascinating Fliers
+	70956,	-- Of Azure Scales
+	70959,	-- Cute and Cuddly
+	70960,	-- Trader's Apparel
+	70961,	-- Shouldering the Needed Armor
+	70962,	-- A Comfy Seat
+	70963,	-- Wrist Support
+	70964,	-- Shrug it On!
+	70966,	-- Trading Made Easier
+	70967,	-- Fishy Entertainment
+	70968,	-- Of the Cloth, of the Community
+	70971,	-- Arms for Every Arm
+	70972,	-- Our Loyal, Lanky Steeds
+	70976,	-- Slacking and Sledding
+	70977,	-- Scaps Packs
+	70978,	-- Dragon Isles Champion's Tales
+	71028,	-- Hunting Tactics: Blessing of Ohn'ahra
+	71029,	-- Hunting Tactics: Companion Training
+	71030,	-- Hunting Tactics: Shikaar Mentorship
+	71031,	-- Hunting Tactics: Proof of Prowess
+	71032,	-- Hunting Tactics: Apex Hunter
+	71044,	-- Bakar Companion Color: Black
+	71045,	-- Bakar Companion Color: Brown
+	71046,	-- Bakar Companion Color: Orange
+	71047,	-- Bakar Companion Color: White
+	71048,	-- Bakar Companion Color: Golden Brown
+	71049,	-- Ohuna Companion Color: Dark
+	71050,	-- Ohuna Companion Color: Brown
+	71051,	-- Ohuna Companion Color: Red
+	71052,	-- Ohuna Companion Color: Sepia
+	71058,	-- Observing the Wind
+	71060,	-- To Adorn Your Head
+	71066,	-- A Useful Curiosity
+	71067,	-- Whistling Rocks
+	71073,	-- Mantle of Friendship
+	71074,	-- Befriending Wings and Wind
+	71075,	-- Understanding Their Grace
+	71079,	-- Getting to the Point
+	71083,	-- An Expected Unexpected Gift
+	71085,	-- Representation Matters
+	71089,	-- Get on the Horn
+	71090,	-- From the Heart, For the Heart
+	71146,	-- Continued Waygate Exploration
+	71148,	-- Continued Waygate Exploration
+	71149,	-- Continued Waygate Exploration
+	71150,	-- Continued Waygate Exploration
+	71151,	-- Continued Waygate Exploration
+	71161,	-- Waygate: Vakthros
+	71184,	-- Quest #71184*
+	71210,	-- To Dragonbane Keep!
+	71227,	-- Aerial Challenges
+	71229,	-- Call of the Plains
+	71231,	-- Call of the Hunt
+	72038,	-- Dragon Isles Supplies
+	72048,	-- Dragon Isles Supplies
+	72064,	-- Quest #72064*
 	72094,	-- How to Train a Dragonkin
-	72113,
-	72117,
-	72137,
-	72248,
-	72328,
-	72363,
-	72392,
+	72113,	-- Shapes Beyond the Veil
+	72117,	-- Cultural Exchange
+	72137,	-- Hatchling Plans
+	72248,	-- Gleaming Incarnate Thunderstone
+	72328,	-- Our Ferocious, Armored Steeds
+	72363,	-- Good at Doings, Not Understandings
+	72392,	-- Dragon Isles Supplies
 	72400,	-- Quest #72400*
-	72516,
-	72596,
-	72681,
-	72688,
-	72690,
-	72693,
-	72744,
-	72776,
-	72777,
-	72781,
-	72782,
-	72892,
-	73101,
-	73102,
-	73103,
-	73104,
-	73105,
-	73106,
-	73171,
-	73173,
+	72516,	-- Tracking Quest [DNT]
+	72596,	-- Quest #72596*
+	72681,	-- Report to the Trading Post
+	72688,	-- Renown Supplies
+	72690,	-- Renown Supplies
+	72693,	-- Renown Supplies
+	72744,	-- Quest #72744*
+	72776,	-- Quest #72776*
+	72777,	-- Quest #72777*
+	72781,	-- Quest #72781*
+	72782,	-- Quest #72782*
+	72892,	-- Quest #72892*
+	73101,	-- Gain Maiev Toy
+	73102,	-- Quest #73102*
+	73103,	-- Quest #73103*
+	73104,	-- Gain Sneed Toy
+	73105,	-- Quest #73105*
+	73106,	-- Quest #73106*
+	73171,	-- Gain New Look: Maiev
+	73173,	-- Gain Even Newer Look: Maiev
 	73174,	-- Gain New Look: Sneed
-	73175,
-	73180,
-	73182,
-	73368,
-	73369,
-	73370,
-	73371,
-	73372,
-	73373,
-	73374,
-	73375,
-	73376,
-	73377,
-	73378,
-	73379,
-	73380,
-	73381,
-	73382,
-	73383,
-	73384,
-	73386,
-	73387,
-	73388,
-	73389,
-	73390,
-	73391,
-	73392,
-	73393,
-	73410,
-	73863,
-	73864,
-	73928,
-	73936,
-	73952,
-	74286,
-	74287,
+	73175,	-- Gain Even Newer Look: Sneed
+	73180,	-- Rumble Coin Bag
+	73182,	-- Rumble Coin Bag
+	73368,	-- Gain Huntress Toy
+	73369,	-- Quest #73369*
+	73370,	-- Quest #73370*
+	73371,	-- Gain New Look: Night Elf Huntress
+	73372,	-- Gain Even Newer Look: Night Elf Huntress
+	73373,	-- Gain Tauren Toy
+	73374,	-- Quest #73374*
+	73375,	-- Quest #73375*
+	73376,	-- Gain Ghoul Toy
+	73377,	-- Quest #73377*
+	73378,	-- Quest #73378*
+	73379,	-- Gain Murloc Toy
+	73380,	-- Quest #73380*
+	73381,	-- Quest #73381*
+	73382,	-- Gain Whelp Egg Toy
+	73383,	-- Quest #73383*
+	73384,	-- Quest #73384*
+	73386,	-- Gain New Look: Stonehoof Tauren
+	73387,	-- Gain Even Newer Look: Stonehoof Tauren
+	73388,	-- Gain New Look: Undead Ghoul
+	73389,	-- Gain New Look: Murloc
+	73390,	-- Gain New Look: Whelp Egg
+	73391,	-- Gain Even Newer Look: Undead Ghoul
+	73392,	-- Gain Even Newer Look: Murloc
+	73393,	-- Gain Even Newer Look: Whelp Egg
+	73410,	-- Seething Cache
+	73863,	-- Quest #73863*
+	73864,	-- Tracking Quest
+	73928,	-- Rumble Coin Bag
+	73936,	-- Rumble Coin Bag
+	73952,	-- Rumble Foil Bag
+	74286,	-- Rumble Foil Bag
+	74287,	-- Rumble Foil Bag
 	74399,	-- Forgotten Dragon Treasure
 	74730,	-- Ensemble: Bloodtinged Cloth
 	74732,	-- Ensemble: Blooddrenched Leather
 	74733,	-- Ensemble: Bloodstained Mail
 	74734,	-- Ensemble: Bloodsoaked Plate
-	74843,
-	74844,
-	74845,
-	74848,
-	74849,
-	74850,
-	74851,
-	74852,
-	74957,	-- X-45 Daily Droprate
-	75036,
-	75037,
-	75038,
-	75039,
-	75040,
-	75041,
-	75127,
-	75241,
-	75260,
-	75444,
-	75658,
-	75720,
-	75723,
-	75724,
-	75727,
-	75730,
-	75731,
-	75742,
-	75764,	-- Current Patch - Login Video - Watched (spellID 409608)
-	75833,
-	75862,
-	75863,
-	75864,
-	75968,
-	76030,
-	76067,
-	76103,
-	76104,
-	76105,
-	76106,
-	76107,
-	76108,
-	76112,
-	76113,
-	76114,
-	76157,
-	76159,
-	76178,
-	76179,
-	76180,
-	76181,
-	76182,
-	76183,
-	76184,
-	76185,
-	76186,
-	76187,
-	76188,
-	76189,
-	76190,
-	76191,
-	76192,
-	76193,
+	74843,	-- Rumble Coin Bag
+	74844,	-- Rumble Coin Bag
+	74845,	-- Rumble Coin Bag
+	74848,	-- Rumble Foil Bag
+	74849,	-- Rumble Foil Bag
+	74850,	-- Rumble Foil Bag
+	74851,	-- Rumble Foil Bag
+	74852,	-- Rumble Foil Bag
+	74957,	-- X-45 Heartbreaker Attempt (Daily Accountwide)
+	75036,	-- Rumble Foil Bag
+	75037,	-- Rumble Foil Bag
+	75038,	-- Rumble Foil Bag
+	75039,	-- Rumble Foil Bag
+	75040,	-- Rumble Foil Bag
+	75041,	-- Rumble Foil Bag
+	75127,	-- Every Door, Everywhere, All At Once
+	75241,	-- Quest #75241*
+	75260,	-- Quest #75260*
+	75444,	-- Waygate Exploration: The Forbidden Reach
+	75658,	-- Zaralek Cavern Unlocked [Account]
+	75720,	-- Care to Barter?
+	75723,	-- Cavern Drakewatching
+	75724,	-- Like the Niffen Do
+	75727,	-- The Smelliest Tabard
+	75730,	-- Slitherdrake Watching
+	75731,	-- Scented Boots
+	75742,	-- Drake Helms
+	75764,	-- Quest #75764*
+	75833,	-- Report to the Trading Post
+	75862,	-- Quest #75862*
+	75863,	-- Quest #75863*
+	75864,	-- Quest #75864*
+	75968,	-- Obsidian Aspectral Earthstone
+	76030,	-- Airborne Winding
+	76067,	-- Signed, Sealed, Self-Delivered
+	76103,	-- Report to the Trading Post
+	76104,	-- Report to the Trading Post
+	76105,	-- Report to the Trading Post
+	76106,	-- Report to the Trading Post
+	76107,	-- Report to the Trading Post
+	76108,	-- Report to the Trading Post
+	76112,	-- Report to the Trading Post
+	76113,	-- Report to the Trading Post
+	76114,	-- Report to the Trading Post
+	76157,	-- Grotto Netherwing Drake
+	76159,	-- Report to the Trading Post
+	76178,	-- Mote of Nasz'uro
+	76179,	-- Mote of Nasz'uro
+	76180,	-- Mote of Nasz'uro
+	76181,	-- Mote of Nasz'uro
+	76182,	-- Mote of Nasz'uro
+	76183,	-- Mote of Nasz'uro
+	76184,	-- Mote of Nasz'uro
+	76185,	-- Mote of Nasz'uro
+	76186,	-- Mote of Nasz'uro
+	76187,	-- Mote of Nasz'uro
+	76188,	-- Mote of Nasz'uro
+	76189,	-- Mote of Nasz'uro
+	76190,	-- Mote of Nasz'uro
+	76191,	-- Mote of Nasz'uro
+	76192,	-- Mote of Nasz'uro
+	76193,	-- Mote of Nasz'uro
 	76248,	-- Eva Sarkhoff
-	76249,	-- Memories of Scholomance
+	76249,	-- Memory of Scholomance
 	76250,	-- Spectral Essence
-	76257,
+	76257,	-- Darkmaster's Scourgestone
 	76261,	-- Hand of Naxxramas
-	76262,	-- Talking to Archmage Angela Dosantos after defeating Hand of Naxxramas
-	76263,
-	76264,
-	76265,
-	76290,
-	76307,	-- Makeshift Grappling Hook [206473]
+	76262,	-- Archmage Angela Dosantos
+	76263,	-- The Dread Citadel - Naxxramas
+	76264,	-- The Dread Citadel - Naxxramas
+	76265,	-- The Dread Citadel - Naxxramas
+	76290,	-- Omarion's Second Handbook
+	76307,	-- Makeshift Grappling Hook
 	76377,	-- Orb of the Fel Temptress
-	76390,	-- Inconvenience Fee [Naxxramas]
-	76573,
-	76574,
-	76575,
-	76603,
-	76604,
-	76605,
-	76606,
-	76607,
-	76608,
-	76609,
-	76610,
-	76611,
-	76612,
-	76613,
-	76614,
-	76615,
-	76616,
-	76617,
-	76618,
-	76619,
-	76620,
-	76621,
-	76637,
-	76640,
-	76642,
-	76644,
-	76647,
-	76649,
-	76650,
-	76652,
-	76654,
-	76656,
-	76658,
-	76660,
-	76661,
-	76662,
-	76663,
-	76664,
-	76665,
-	76666,
-	76667,
-	76668,
-	76669,
-	76670,
-	76671,
-	76672,
-	76673,
-	76674,
-	76676,
-	76677,
-	76678,
-	76679,
-	76680,
-	76681,
-	76682,
-	76683,
-	76684,
-	76685,
-	76686,
-	76687,
-	76688,
-	76689,
-	76690,
-	76691,
-	76692,
-	76693,
-	76694,
-	76695,
-	76696,
-	76697,
-	76698,
-	76699,
-	76700,
-	76701,
-	76702,
-	76703,
-	76704,
-	76705,
-	76706,
-	76707,
-	76708,
-	76709,
-	76710,
-	76711,
-	76712,
-	76713,
-	76714,
-	76715,
+	76390,	-- Inconvenience Fee
+	76573,	-- Quest #76573*
+	76574,	-- Quest #76574*
+	76575,	-- Quest #76575*
+	76603,	-- Paracausal Fragment of Thunderfin, Humid Blade of the Tideseeker
+	76604,	-- Sulfur Hound's Leash
+	76605,	-- Pauldrons of the Fire Lord
+	76606,	-- Serrated Parasite
+	76607,	-- Consuming Claws
+	76608,	-- Heretical Gavel
+	76609,	-- Unknown Horror's Arm
+	76610,	-- Its Focused Gaze
+	76611,	-- Subjugator's Shield
+	76612,	-- Paracausal Fragment of Sulfuras
+	76613,	-- Jagged Treason
+	76614,	-- Fel-Ridden Divider
+	76615,	-- Demonic Bone-Crusher
+	76616,	-- Branded Greatmaul
+	76617,	-- Fel-Infused Polearm
+	76618,	-- Inferna Rod
+	76619,	-- Heart-Slicer
+	76620,	-- Paracausal Fragment of Azzinoth
+	76621,	-- Felstorm Dragon
+	76637,	-- Reins of the Ravenous Black Gryphon
+	76640,	-- Warmonger's Skullcap
+	76642,	-- Warmonger's Leggings
+	76644,	-- Warmonger's Robe
+	76647,	-- Warmonger's Headcover
+	76649,	-- Warmonger's Pantaloons
+	76650,	-- Warmonger's Chainmail
+	76652,	-- Warmonger's Casque
+	76654,	-- Warmonger's Legguards
+	76656,	-- Warmonger's Breastplate
+	76658,	-- Warmonger's Greathelm
+	76660,	-- Warmonger's Legplates
+	76661,	-- Warmonger's Cloth Gear Bag
+	76662,	-- Warmonger's Cloth Armor Bag
+	76663,	-- Warmonger's Cloth Equipment Bag
+	76664,	-- Warmonger's Leather Gear Bag
+	76665,	-- Warmonger's Leather Suit Bag
+	76666,	-- Warmonger's Leather Armor Bag
+	76667,	-- Warmonger's Leather Equipment Bag
+	76668,	-- Warmonger's Mail Gear Bag
+	76669,	-- Warmonger's Mail Armor Bag
+	76670,	-- Warmonger's Mail Equipment Bag
+	76671,	-- Warmonger's Plate Gear Bag
+	76672,	-- Warmonger's Plate Armor Bag
+	76673,	-- Warmonger's Plate Equipment Bag
+	76674,	-- Warmonger's Ripper
+	76676,	-- Horn of the White War Wolf
+	76677,	-- Paracausal Fragment of Doomhammer
+	76678,	-- Energetic Power Knife
+	76679,	-- Clockwork Mallet
+	76680,	-- Order-Powered Mechblade
+	76681,	-- Quest #76681*
+	76682,	-- Overclocked Hand Cannon
+	76683,	-- Quest #76683*
+	76684,	-- Steel-Lined Locking System
+	76685,	-- Perfected Juggernaut
+	76686,	-- Paracausal Fragment of Val'anyr
+	76687,	-- Reins of the Scourgebound Vanquisher
+	76688,	-- Scourge Victorious Tabard
+	76689,	-- Upraised Headstone
+	76690,	-- Cursed Blade of the Scourge
+	76691,	-- Bonegale Greataxe
+	76692,	-- Northern Ballista
+	76693,	-- Frostspire
+	76694,	-- Plague-Touched Stave
+	76695,	-- Blighted Greatbow
+	76696,	-- Paracausal Fragment of Frostmourne
+	76697,	-- Utopian Tabard
+	76698,	-- Valhalas Peacekeeper
+	76699,	-- Hand of Order
+	76700,	-- Titan Watcher's Shortblade
+	76701,	-- Valhalas Heartstriker
+	76702,	-- Titanic Hourglass
+	76703,	-- Gold-Toed Albatross
+	76704,	-- Paracausal Fragment of Seschenal
+	76705,	-- Ensemble: Decorous Garments
+	76706,	-- Ensemble: Lifegiver's Garms
+	76707,	-- Ensemble: Hauberk of Discipline
+	76708,	-- Ensemble: Valhalas Ceremonial Armor
+	76709,	-- Quest #76709*
+	76710,	-- Quest #76710*
+	76711,	-- Quest #76711*
+	76712,	-- Quest #76712*
+	76713,	-- Quest #76713*
+	76714,	-- Quest #76714*
+	76715,	-- Quest #76715*
 	76740,	-- Grimoire of the Void-Touched Fel Imp
-	76741,
-	76742,
+	76741,	-- Grimoire of the Trickster Fel Imp
+	76742,	-- Grimoire of the Fiendish Imp
 	76743,	-- Grimoire of the Darkfire Imp
 	76745,	-- Grimoire of the Netherbound Imp
-	76747,
-	77179,
+	76747,	-- Grimoire of the Felfrost Imp
+	77179,	-- Legend of the Multiverse
 	77180,	-- Grimoire of the Antoran Felhunter
 	77181,	-- Grimoire of the Voracious Felmaw
 	77182,	-- Ritual of the Voidmaw Felhunter
 	77183,	-- Grimoire of the Xorothian Felhunter
 	77213,	-- Doan's Strongbox
-	77221,
-	77236,
-	77241,
+	77221,	-- Quest #77221*
+	77236,	-- When Time Needs Mending
+	77241,	-- A Foreseeable Friendship
 	77246,	-- Quest #77246*
-	77248,
-	77249,
-	77250,
-	77253,
-	77285,
+	77248,	-- A Recognition of Skill
+	77249,	-- One of Us
+	77250,	-- Realized Potential
+	77253,	-- Quest #77253*
+	77285,	-- Quest #77285*
 	77288,	-- Loose Dirt Mound
 	77289,	-- Loose Dirt Mound
 	77290,	-- Loose Dirt Mound
@@ -1384,199 +1384,191 @@ local AccountWideQuestsDB = {
 	77300,	-- Loose Dirt Mound
 	77301,	-- Loose Dirt Mound
 	77302,	-- Loose Dirt Mound
-	77572,
-	77644,
-	77678,
-	77716,	-- Level 2 (Brann)
-	77718,	-- Level 3 (Brann)
-	77719,	-- Level 4 (Brann)
-	77720,	-- Level 5 (Brann)
-	77721,	-- Level 6 (Brann)
-	77722,	-- Level 7 (Brann)
-	77723,	-- Level 8 (Brann)
-	77724,	-- Level 9 (Brann)
-	77727,	-- Level 10 (Brann)
-	77728,	-- Level 11 (Brann)
-	77729,	-- Level 12 (Brann)
-	77730,	-- Level 13 (Brann)
-	77731,	-- Level 14 (Brann)
-	77732,	-- Level 15 (Brann)
-	77733,	-- Level 16 (Brann)
-	77734,	-- Level 17 (Brann)
-	77735,	-- Level 18 (Brann)
-	77736,	-- Level 19 (Brann)
-	77737,	-- Level 20 (Brann)
+	77572,	-- Quest #77572*
+	77644,	-- The Scarlet Key
+	77678,	-- Ambrosial Sporestone
+	77716,	-- Level 2
+	77718,	-- Level 3
+	77719,	-- Level 4
+	77720,	-- Level 5
+	77721,	-- Level 6
+	77722,	-- Level 7
+	77723,	-- Level 8
+	77724,	-- Level 9
+	77727,	-- Level 10
+	77728,	-- Level 11
+	77729,	-- Level 12
+	77730,	-- Level 13
+	77731,	-- Level 14
+	77732,	-- Level 15
+	77733,	-- Level 16
+	77734,	-- Level 17
+	77735,	-- Level 18
+	77736,	-- Level 19
+	77737,	-- Level 20
 	77775,	-- Has rolled for Coren Special Loot (Daily Accountwide)(DF Version)
-	77799,
-	77800,
-	77804,
-	77805,
-	77806,
-	77807,
-	77813,
-	77815,
-	77820,
-	77887,
-	77979,
-	78098,
-	78099,
-	78100,
-	78101,
-	78130,
+	77799,	-- Saatilu
+	77800,	-- Heraat
+	77804,	-- Eranthi
+	77805,	-- Yazdan
+	77806,	-- Zyaana
+	77807,	-- Tronaar
+	77813,	-- Lightning Strikes
+	77815,	-- The Storm Race Tour
+	77820,	-- Quest #77820*
+	77887,	-- Quest #77887*
+	77979,	-- Quest #77979*
+	78098,	-- Enigma Ward
+	78099,	-- Mimiron's Booster Part
+	78100,	-- Mimiron's Booster Part
+	78101,	-- Arcane Influence
+	78130,	-- Quest #78130*
 	78207,	-- Loose Dirt Mound
 	78208,	-- Loose Dirt Mound
-	78363,
-	78386,
-	78422,
-	78423,
-	78430,
-	78431,
-	78445,
-	78449,
-	78450,
-	78479,
-	78481,
-	78507,
-	78512,
-	78514,
-	78515,
-	78519,
-	78520,
-	78521,
-	78522,
-	78526,
+	78363,	-- The Tabard of Your Dreams
+	78386,	-- Emerald Reawakening
+	78422,	-- Emerald Blossom Dreamstone
+	78423,	-- Quest #78423*
+	78430,	-- Mean Green Infusion Machine
+	78431,	-- Green Dream Team
+	78445,	-- Quest #78445*
+	78449,	-- Quest #78449*
+	78450,	-- Quest #78450*
+	78479,	-- Feather of Friends
+	78481,	-- Mark of the Umbramane
+	78507,	-- Mark of the Evergreen Dreamsaber
+	78512,	-- Mark of the Boreal Dreamtalon
+	78514,	-- Mark of the Auroral Dreamtalon
+	78515,	-- Mark of the Thriving Dreamtalon
+	78519,	-- Mark of the Loamy Umbraclaw
+	78520,	-- Mark of the Snowy Umbraclaw
+	78521,	-- Moon-Blessed Claw
+	78522,	-- Mark of the Lush Dreamstag
+	78526,	-- Moon-Blessed Claw
 	78527,	-- Feather of the Blazing Somnowl
-	78528,
-	78595,
-	78709,
-	78710,
+	78528,	-- Mark of the Hibernating Runebear
+	78595,	-- Dream Infused
+	78709,	-- Quest #78709*
+	78710,	-- Quest #78710*
 	78842,	-- Cinder of Companionship
-	78846,
-	78847,
-	78848,
-	78849,
-	78850,
-	78851,
-	78852,
-	78853,
-	78854,
-	78855,
-	78856,
-	78857,
-	78858,
-	78859,
-	78882,
-	78883,
-	78884,
+	78846,	-- Snorr
+	78847,	-- Dreamborne Scarab
+	78848,	-- Dreamhoof
+	78849,	-- Memorie
+	78850,	-- Somnolet
+	78851,	-- Reverie
+	78852,	-- Drowsey
+	78853,	-- Snorr
+	78854,	-- Dreamborne Scarab
+	78855,	-- Dreamhoof
+	78856,	-- Memorie
+	78857,	-- Somnolet
+	78858,	-- Reverie
+	78859,	-- Drowsey
+	78882,	-- Elmer
+	78883,	-- Snoots
+	78884,	-- Snoozles
 	78885,	-- Napps
-	78886,
-	78887,
-	78888,
-	78889,
-	78904,
+	78886,	-- Dustite
+	78887,	-- Seedle
+	78888,	-- Juniper
+	78889,	-- Spruce
+	78904,	-- Quest #78904*
 	78938,	-- Champion of the Waterlords
-	79081,	-- Daily lockout for Flamegard's Hope credit
-	79104,	-- Renewed Proto-Drake Love Armor Droprate
-	79142,
-	79178,
-	79184,
-	79186,
-	79189,
-	79351,	-- Level 25 (Brann)
-	79352,	-- Level 24 (Brann)
+	79081,	-- Flamegard's Hope
+	79104,	-- Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)
+	79142,	-- Quest #79142*
+	79178,	-- Play Hearthstone!
+	79184,	-- It's Hearthstone's Anniversary!
+	79186,	-- It's Hearthstone's Anniversary!
+	79189,	-- It's Hearthstone's Anniversary!
+	79351,	-- Level 25
+	79352,	-- Level 24
 	79359,	-- Grimoire of the Ancient Observer
 	79373,	-- Grimoire of the Vile Tyrant
 	79374,	-- Grimoire of the Bloodrage Tyrant
-	79374,	-- Grimoire of the Bloodrage Tyrant
 	79375,	-- Grimoire of the Felbrute Tyrant
 	79376,	-- Grimoire of the Netherwalk Tyrant
-	79384,
-	79385,
-	79387,
-	79389,
-	79390,
-	79391,
-	79392,
-	79393,
-	79394,
-	79395,
-	79396,
-	79397,
-	79398,
-	79399,
-	79400,
-	79401,
-	79402,
-	79403,
-	79405,
-	79406,
-	79407,
-	79408,
-	79409,
-	79410,
-	79416,
-	79417,
-	79419,
-	79420,
-	79421,
-	79422,
-	79423,
-	79424,
-	79425,
-	79426,
-	79427,
-	79428,
-	79429,
-	79430,
-	79431,
+	79384,	-- Hearthstone Card: Scarlet Crusader
+	79385,	-- Hearthstone Card: Shadow Word: Ruin
+	79387,	-- Test Quest - Account Test (DNT)
+	79389,	-- Hearthstone Card: Chillwind Yeti
+	79390,	-- Hearthstone Card: Alleycat
+	79391,	-- Hearthstone Card: Grove Tender
+	79392,	-- Hearthstone Card: Abomination
+	79393,	-- Hearthstone Card: Arcane Golem
+	79394,	-- Hearthstone Card: Ancient of Lore
+	79395,	-- Hearthstone Card: Hogger
+	79396,	-- Hearthstone Card: Baron Geddon
+	79397,	-- Hearthstone Card: Blessing of Kings
+	79398,	-- Hearthstone Card: Forbidden Words
+	79399,	-- Hearthstone Card: Arcane Explosion
+	79400,	-- Hearthstone Card: Pyroblast
+	79401,	-- Hearthstone Card: Arcane Shot
+	79402,	-- Hearthstone Card: Preparation
+	79403,	-- Hearthstone Card: Jive, Insect
+	79405,	-- Hearthstone Card: Righteousness
+	79406,	-- Hearthstone Card: Charged Devilsaur
+	79407,	-- Quest #79407*
+	79408,	-- Quest #79408*
+	79409,	-- Quest #79409*
+	79410,	-- Quest #79410*
+	79416,	-- Quest #79416*
+	79417,	-- Quest #79417*
+	79419,	-- Quest #79419*
+	79420,	-- Quest #79420*
+	79421,	-- Quest #79421*
+	79422,	-- Quest #79422*
+	79423,	-- Quest #79423*
+	79424,	-- Quest #79424*
+	79425,	-- Quest #79425*
+	79426,	-- Quest #79426*
+	79427,	-- Quest #79427*
+	79428,	-- Quest #79428*
+	79429,	-- Quest #79429*
+	79430,	-- Quest #79430*
+	79431,	-- Quest #79431*
 	79439,	-- Quest #79439*
-	79441,
+	79441,	-- Sarge
 	79443,	-- Grimoire of the Blasted Observer
-	79443,	-- Grimoire of the Blasted Observer
-	79444,	-- Grimoire of the Zealous Observer
 	79444,	-- Grimoire of the Zealous Observer
 	79446,	-- Grimoire of the Mana-Gorged Observer
 	79447,	-- Grimoire of the Dire Observer
 	79449,	-- Grimoire of the Plagued Observer
-	79449,	-- Grimoire of the Plagued Observer
-	79450,	-- Grimoire of the Whispering Observer
 	79450,	-- Grimoire of the Whispering Observer
 	79455,	-- Grimoire of the Xorothian Darkglare
-	79455,	-- Grimoire of the Xorothian Darkglare
-	79456,	-- Grimoire of Eredathian Darkglare
 	79456,	-- Grimoire of the Eredathian Darkglare
 	79457,	-- Grimoire of the Abyssal Darkglare
-	79457,	-- Grimoire of the Abyssal Darkglare
 	79458,	-- Grimoire of the Riftsmolder Darkglare
-	79459,
-	79460,
-	79462,
-	79464,
-	79465,
-	79466,
-	79520,
-	79573,	-- TWW Campaign Completed
-	79582,
-	79583,
-	79622,
+	79459,	-- Quest #79459*
+	79460,	-- Hearthstone Card: Cairne Bloodhoof
+	79462,	-- [DNT] Renown Reward 001
+	79464,	-- [DNT] Renown Reward 002
+	79465,	-- [DNT] Renown Reward 003
+	79466,	-- [DNT] Renown Reward 004
+	79520,	-- Quest #79520*
+	79573,	-- Complete the Khaz Algar main story campaign
+	79582,	-- Hearthstone Card: Hand of Protection
+	79583,	-- Quest #79583*
+	79622,	-- Warband Test Quest (DNT)
 	79629,	-- Quest #79629*
 	79635,	-- Quest #79635*
 	79654,	-- Quest #79654*
 	79658,	-- Quest #79658*
-	79661,
-	79662,
-	79663,
-	79693,
-	79694,
+	79661,	-- Quest #79661*
+	79662,	-- Quest #79662*
+	79663,	-- Quest #79663*
+	79693,	-- Play Hearthstone!
+	79694,	-- Play Hearthstone!
 	79698,	-- Quest #79698*
-	79702,
+	79702,	-- Quest #79702*
 	79881,	-- Ensemble: Battlegear of the Lightning Emperor
-	79965,
-	79992,
-	79994,
-	79995,
-	79996,
-	79997,
+	79965,	-- Learn the Ropes or Walk the Plank
+	79992,	-- Quest #79992*
+	79994,	-- Quest #79994*
+	79995,	-- Quest #79995*
+	79996,	-- Quest #79996*
+	79997,	-- Quest #79997*
 	80083,	-- Black Duck Disguise
 	80084,	-- Brown Duck Disguise
 	80085,	-- Mallard Duck Disguise
@@ -2879,6 +2871,9 @@ local AccountWideQuestsDB = {
 	97111,	-- ??
 	97115,	-- First Preference Killing of the week
 	97116,	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+	97640,	-- Vaults of Atal'Utek: One Coin Too Many
+	98388,	-- Into the Vaults of Atal'Utek
+	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
 
 	-- Weird partial cases... ??
 	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)

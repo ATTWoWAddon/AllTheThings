@@ -233,6 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					cr(122313, e(1979, {	-- Zuraal the Ascended
 						ach(12004, {	-- Welcome the Void
 							["crs"] = { 126283 },	-- Urjad
+							["timeline"] = { ADDED_7_3_0, REMOVED_12_0_1_LAUNCH },
 						}),
 						i(151312),	-- Ampoule of Pure Void
 						i(151315),	-- Bracers of Dark Binding
@@ -250,6 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					cr(122316, e(1980, {	-- Saprish
 						ach(12005, {	-- Let It All Out
 							["crs"] = { 126312 },	-- Sealed Void Cache
+							["timeline"] = { ADDED_7_3_0, REMOVED_12_0_1_LAUNCH },
 						}),
 						i(151321),	-- Darkfang Scale Wristguards
 						i(151327),	-- Girdle of the Shadowguard
@@ -279,7 +281,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						i(151288),	-- Void-Resistant Seedpod
 					})),
 					cr(122314, e(1982, {	-- L'ura
-						ach(12009),	-- Darker Side
+						ach(12009, {	-- Darker Side
+							["timeline"] = { ADDED_7_3_0, REMOVED_12_0_1_LAUNCH },
+						}),
 						ach(12008),	-- Mythic: Seat of the Triumvirate
 						i(151311),	-- Band of the Triumvirate
 						i(151302),	-- Cord of Unraveling Reality

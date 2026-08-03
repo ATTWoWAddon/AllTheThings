@@ -9,6 +9,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["crs"] = { 262248 },	-- Autumn Snapling
 				["coords"] = {
 					{ 67.9, 81.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 70.6, 78.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				},
+			}),
+			i(270249, {	-- Cursed Spawn (PET!)
+				["crs"] = { 262226 },	-- Cursed Spawn
+				["coords"] = {
+					{ 44.1, 46.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),
 			i(270253, {	-- Jaundiced Slitherer (PET!)
@@ -36,12 +43,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coords"] = {
 					{ 66.1, 56.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 67.0, 58.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 72.4, 55.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),
 			i(270251, {	-- Sleek Snakebiter (PET!)
 				["crs"] = { 262244 },	-- Sleek Snakebiter
 				["coords"] = {
 					{ 60.7, 77.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 65.8, 45.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),
 		}),

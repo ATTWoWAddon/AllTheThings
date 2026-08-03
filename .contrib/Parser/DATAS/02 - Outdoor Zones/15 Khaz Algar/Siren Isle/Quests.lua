@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(SIREN_ISLE, {
+		m(SIREN_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 			n(QUESTS, {
 				-- A Choir of Citrines achievement tracking quests
 				-- q(85674),	-- Storm Sewer's Citrine
@@ -478,6 +478,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(85956, name(HEADERS.Global, "INVTYPE_TRINKET")),	-- Trinket (agi/str) slot
 				q(85957, name(HEADERS.Global, "INVTYPE_TRINKET")),	-- Trinket (agi/int/str) slot
 			}),
-		}),
+		})),
 	}),
 }));

@@ -52,8 +52,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 69.6, 82.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(271815) },	-- Luminescent Pearl
 						}),
-						q(96001, { ["name"] = "Nacretta has taken the Luminescent Pearl.", }),	-- Triggered after Nacretta spots the Luminescent Pearl
-						q(96002, { ["name"] = "Nacretta has Dropped the Key.", }),	-- Triggered after the Dropped Key spawns
+						hqt(96001, { ["name"] = "Nacretta has taken the Luminescent Pearl.", }),	-- Triggered after Nacretta spots the Luminescent Pearl
+						hqt(96002, { ["name"] = "Nacretta has Dropped the Key.", }),	-- Triggered after the Dropped Key spawns
 						o(649082, {	-- Dropped Key
 							["coord"] = { 70.6, 77.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(271881) },	-- Dropped Key
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						o(645549, {	-- Grave of Someone Forgotten
 							["coord"] = { 67.3, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-							--	["questID"] = 95956,
+							["questID"] = 95956,
 							["groups"] = {
 								i(279021),	-- Forgotten Memento (TOY!)
 								i(279049),	-- Forgotten Memento
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["questID"] = 95571,
 							["groups"] = { i(251783) },	-- Lost Idol of the Hash'ey
 						}),
-						q(95574, { ["name"] = "Lost Spirit freed.", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
+						hqt(95574, { ["name"] = "Lost Spirit freed.", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
 					},
 				}),
 				o(629421, {	-- Malfunctioning Staff
@@ -189,10 +189,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 53.1, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95841,
 				}),
-				o(645208, {	-- Sunken Diver's Chest
-					["coord"] = { 65.4, 5.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-					--["cost"] = { { "i", 271423, 1 } },	-- 1x Diver's Key
-					--["questID"] = 95907,
+				header(HEADERS.Object, 645208, {	-- Sunken Diver's Chest
+					["description"] = "You need to kill |cFFFFD700Ss'akrithos|r during 3 separate 'Mlurkrr Massacre' Curse Surges and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
+					["groups"] = {
+						i(271423, {	-- Diver's Key
+							["cost"] = { { "i", 271424, 3 } },	-- 3x Diver's Key Fragment
+						}),
+						o(645208, {	-- Sunken Diver's Chest
+							["coord"] = { 65.4, 5.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cost"] = { { "i", 271423, 1 } },	-- 1x Diver's Key
+							["questID"] = 95907,
+							["groups"] = {
+								i(279052),	-- Ancient Amani Mask (TOY!)
+								i(279053),	-- Ancient Amani Mask
+							},
+						}),
+					},
 				}),
 				o(642021, {	-- Tarnished Amani Glaive
 					["coord"] = { 55.2, 38.0, MAP.MIDNIGHT.THE_COILED_ISLE },

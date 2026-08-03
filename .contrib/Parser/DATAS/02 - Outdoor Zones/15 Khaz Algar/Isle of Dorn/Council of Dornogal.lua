@@ -350,11 +350,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	header(HEADERS.Faction, FACTION_COUNCIL_OF_DORNOGAL, {
-		header(HEADERS.Quest, 83240, {	-- Theater Troupe
-			q(86619, {	-- Theater Troupe, completes along with regular quest.
-				["timeline"] = { ADDED_11_1_0 }
+	m(KHAZ_ALGAR, {
+		m(ISLE_OF_DORN, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			header(HEADERS.Faction, FACTION_COUNCIL_OF_DORNOGAL, {
+				header(HEADERS.Quest, 83240, {	-- Theater Troupe
+					q(86619, {	-- Theater Troupe, completes along with regular quest.
+						["timeline"] = { ADDED_11_1_0 }
+					}),
+				}),
 			}),
-		}),
+		})),
 	}),
 }));
