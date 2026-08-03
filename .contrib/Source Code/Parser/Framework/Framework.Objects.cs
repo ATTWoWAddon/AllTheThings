@@ -2013,6 +2013,7 @@ end");
                     case "raceID":
                     case "conduitID":
                     case "f":
+                    case "loc":
                     case "filterForRWP":
                     case "u":
                     case "b":
