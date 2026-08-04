@@ -330,6 +330,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			-- #else
 			["description"] = "Rewarded for completing a random cata dungeon during leveling or completing a random cata timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #endif
+			["timeline"] = { ADDED_7_3_5 },
 			["groups"] = {
 				i(113725),	-- Molten Slagstone Ring
 				i(113726),	-- Burning Slagstone Ring

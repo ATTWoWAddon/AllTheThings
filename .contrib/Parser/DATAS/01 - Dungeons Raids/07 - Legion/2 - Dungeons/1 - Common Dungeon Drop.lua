@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
 		i(141591, {	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
 			["crs"] = {
@@ -60,4 +60,4 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			},
 		}),
 	}),
-}));
+})));

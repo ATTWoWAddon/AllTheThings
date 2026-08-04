@@ -125,6 +125,9 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 	}),
 	expansion(EXPANSION.CLASSIC, {
 		ach(123, {	-- Artisan Cook / Classic Cook [8.0.1]
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			["OnUpdate"] = [[function(t)
 				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -134,6 +137,9 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			-- #endif
 		}),
 		ach(122, {	-- Expert Cook
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			["OnUpdate"] = [[function(t)
 				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
@@ -142,7 +148,11 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			end]],
 			-- #endif
 		}),
-		ach(121),	-- Journeyman Cook
+		ach(121, {	-- Journeyman Cook
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
+		}),
 	}),
 	expansion(EXPANSION.TBC, {
 		applyclassicphase(TBC_PHASE_ONE, ach(124, {	-- Master Cook / Outland Cook [8.0.1+]

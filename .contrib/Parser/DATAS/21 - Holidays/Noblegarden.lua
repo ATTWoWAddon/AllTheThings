@@ -90,6 +90,7 @@ local function BrightlyColoredEgg(groups)
 		DORNOGAL,
 		-- #endif
 	}
+	egg.timeline = { ADDED_3_1_0 }
 	return egg
 end
 

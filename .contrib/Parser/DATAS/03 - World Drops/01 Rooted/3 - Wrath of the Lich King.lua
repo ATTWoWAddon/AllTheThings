@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
+root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	filter(CLOAKS, {
 		i(36411),	-- Brawler's Cape
 		i(36410),	-- Caribou Skin Cloak
@@ -1664,4 +1664,4 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			}
 		),
 	}),
-})));
+}))));

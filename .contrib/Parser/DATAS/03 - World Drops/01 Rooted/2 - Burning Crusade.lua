@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
+root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 	filter(CLOAKS, {
 		i(25043),	-- Amber Cape
 		i(25041),	-- Ambusher's Cloak
@@ -1145,7 +1145,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			-- 	Cooking reagents
 			-- 	Other reagents
 			-- _______________________________
-			
+
 			-- 	Cloth + Silk:
 			{
 				i(21877, {	-- Netherweave Cloth
@@ -1174,7 +1174,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				}),
 			},
 			-- _________________________________
-			-- 
+			--
 			-- 	Elemental reagents:
 			sharedData({	-- Air
 				["coords"] = {
@@ -1374,7 +1374,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			}),
 			{
 			-- _________________________________
-			-- 
+			--
 			-- 	Clams:
 				i(24476, {	-- Jaggal Clam
 					["coords"] = {
@@ -1390,7 +1390,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					},
 				}),
 			-- _________________________________
-			-- 
+			--
 			-- 	Cooking reagents:
 				i(27671, {	-- Buzzard Meat
 					["coords"] = {
@@ -1527,7 +1527,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					},
 				}),
 			-- _________________________________
-			-- 
+			--
 			-- 	Other reagents:
 				i(32428, {	-- Heart of Darkness
 					["description"] = "Can drop from most creatures within the given raids.",
@@ -1844,4 +1844,4 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(24301),	-- Pattern: White Remedy Cape (RECIPE!)
 		}),
 	}),
-})));
+}))));

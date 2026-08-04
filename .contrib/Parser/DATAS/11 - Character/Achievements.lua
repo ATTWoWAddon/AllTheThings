@@ -113,6 +113,9 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	ach(889, {	-- Fast and Furious
 		["spellID"] = 33391,	-- Journeyman Riding
 		["rank"] = 2,
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
 	}),
 	-- #endif
 	ach(1176, {	-- Got My Mind On My Money [100g]
@@ -147,7 +150,11 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_5_0_4 },
 		["rank"] = 200000,
 	}),
-	ach(891),	-- Giddy Up!
+	ach(891, {	-- Giddy Up!
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
+	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(890, {	-- Into the Wild Blue Yonder
 		["spellID"] = 34090,	-- Expert Riding
 		["timeline"] = { ADDED_2_0_1 },
@@ -168,7 +175,11 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2 },
 		["rank"] = 1,
 	}),
-	ach(546),	-- Safe Deposit
+	ach(546, {	-- Safe Deposit
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
+	}),
 	ach(545, {	-- Shave and a Haircut
 		["timeline"] = { ADDED_3_0_2 },
 		["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },
@@ -410,10 +421,26 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	ach(4496, {	-- It's Over Nine Thousand!
 		["timeline"] = { ADDED_3_0_2 },
 	}),
-	ach(6),	-- Level 10
-	ach(7),	-- Level 20
-	ach(8),	-- Level 30
-	ach(9),	-- Level 40
+	ach(6, {	-- Level 10
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
+	}),
+	ach(7, {	-- Level 20
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
+	}),
+	ach(8, {	-- Level 30
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
+	}),
+	ach(9, {	-- Level 40
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
+	}),
 	ach(10, {	-- Level 50 (Legacy)
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
@@ -767,6 +794,9 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	ach(522, {		-- Somebody Likes Me
 		["_noautomation"] = true,
+		-- #if NOT ANYCLASSIC
+		["timeline"] = { ADDED_3_0_2 },
+		-- #endif
 	}),
 	-- #if ANYCLASSIC
 	applyclassicphase(SOM_PHASE_ONE, ach(16433, {	-- Soul of Iron (Season of Mastery)
@@ -918,8 +948,16 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 				applyclassicphase(WRATH_PHASE_ONE, i(44178)),	-- Albino Drake (MOUNT!)
 			},
 		})),
-		ach(2142),	-- Filling Up The Barn (25 mounts)
-		ach(2141),	-- Stable Keeper (10 mounts)
+		ach(2142, {	-- Filling Up The Barn (25 mounts)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
+		}),
+		ach(2141, {	-- Stable Keeper (10 mounts)
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
+		}),
 		ach(9713, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Awake the Drakes (automated)
 			i(118676),		-- Emerald Drake (MOUNT!)
 		})),

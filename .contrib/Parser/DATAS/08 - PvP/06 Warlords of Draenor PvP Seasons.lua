@@ -9,7 +9,9 @@ root(ROOTS.PVP, {
 	-- for a total of 22 sources or a total of around
 	-- 10000 Items.
 	pvp(expansion(EXPANSION.WOD, {
-		n(SEASON_PRIMAL, {
+		n(SEASON_PRIMAL, bubbleDownSelf({
+			["timeline"] = { ADDED_6_0_3_LAUNCH },
+		}, {
 			un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(111599)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(111598)),	-- Gold Strongbox
@@ -1631,8 +1633,10 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 				}),
 			}),
-		}),
-		n(SEASON_WILD, {
+		})),
+		n(SEASON_WILD, bubbleDownSelf({
+			["timeline"] = { ADDED_6_2_0 },
+		}, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
@@ -3356,8 +3360,10 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(125722)),	-- Wild Gladiator's Plate Warboots
 				}),
 			}),
-		}),
-		n(SEASON_WARMONGERING, {
+		})),
+		n(SEASON_WARMONGERING, bubbleDownSelf({
+			["timeline"] = { ADDED_6_2_2 },
+		}, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
@@ -5099,7 +5105,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(126893)),	-- Warmongering Gladiator's Plate Shoulders
 				}),
 			}),
-		}),
+		})),
 	})),
 });
 

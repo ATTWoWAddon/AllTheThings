@@ -1,8 +1,8 @@
 -------------------------
 --     CLASSIC WOW     --
 -------------------------
-CREATED_1_0_1 = "created 1.0.1";					-- These are Beta??
-ADDED_1_0_1 = "added 1.0.1";					-- These are Beta??
+CREATED_1_0_1 = "created 1.0.1";						-- These are Beta??
+ADDED_1_0_1 = "added 1.0.1";							-- These are Beta??
 ----
 CREATED_1_1_0 = "created 1.1.0.4044";					-- World of Warcraft launch on November 7th, 2004
 ADDED_1_1_0 = "added 1.1.0.4044";						-- World of Warcraft launch on November 7th, 2004

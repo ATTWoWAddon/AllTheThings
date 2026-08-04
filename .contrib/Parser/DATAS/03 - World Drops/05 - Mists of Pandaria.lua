@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }}, {
+root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(SETS, {
 		i(82139),	-- Brewer's Cord
 		i(82140),	-- Brewer's Cowl
@@ -731,4 +731,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = 
 			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 		}),
 	}),
-})));
+}))));

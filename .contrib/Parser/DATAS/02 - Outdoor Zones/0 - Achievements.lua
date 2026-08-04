@@ -1169,6 +1169,7 @@ root(ROOTS.Zones, {
 				-- #endif
 				SHOLAZAR_BASIN,
 			},
+			["timeline"] = { ADDED_3_0_2 },
 			-- #if AFTER WRATH
 			["sym"] = {{"meta_achievement",
 				939,	-- Hills Like White Elekk
@@ -1402,6 +1403,9 @@ root(ROOTS.Zones, {
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { FACTION_KURENAI, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
 				title(48),	-- <Name> the Diplomat
 			}),
@@ -1409,6 +1413,9 @@ root(ROOTS.Zones, {
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { FACTION_THE_MAGHAR, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = HORDE_ONLY,
+			-- #if NOT ANYCLASSIC
+			["timeline"] = { ADDED_3_0_2 },
+			-- #endif
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
 				title(48),	-- <Name> the Diplomat
 			}),
@@ -1929,6 +1936,7 @@ root(ROOTS.Zones, {
 				12988,	-- Battle for Azeroth Explorer
 				-- #endif
 			}},
+			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				title(47),	-- <Name> the Explorer
 			},
