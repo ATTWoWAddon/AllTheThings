@@ -86,10 +86,10 @@ app.EquipmentFilters = {
 	[57] = true,  -- Profession Equipment
 }
 
-for i,filterID in ipairs({
+for i, filterID in ipairs({
 	21, 22, 23, 24, 25, 26, -- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
 	20, 34, 29, 28, 35,     -- Daggers, Fist Weapons, Polearms, Staves, Warglaives
-	32, 33, 31, 27,         -- Bows, Crossbows, Guns, Wands,
+	32, 33, 31, 27,         -- Bows, Crossbows, Guns, Wands
 	8, 1                    -- Shields, Off-hands
 }) do
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
