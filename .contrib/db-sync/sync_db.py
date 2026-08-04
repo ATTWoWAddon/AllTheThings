@@ -23,7 +23,7 @@ from typing import Iterable, NoReturn
 WORKFLOW = "Parser.yml"
 CANONICAL_REPOSITORY = "ATTWoWAddon/AllTheThings"
 PUBLIC_RELEASE_TAG = "db-artifacts"
-SHA_RE = re.compile(r"^[0-9a-f]{40}$")
+OBJECT_ID_RE = re.compile(r"^(?:[0-9a-f]{40}|[0-9a-f]{64})$")
 CHECKSUM_RE = re.compile(r"^([0-9a-fA-F]{64})  (.+)$")
 
 
@@ -90,11 +90,17 @@ def candidate_repositories(root: Path, requested: str | None) -> list[str]:
     return repositories
 
 
-def current_commit(root: Path) -> str:
+def current_identity(root: Path) -> tuple[str, str]:
     commit = git(root, "rev-parse", "HEAD").lower()
-    if not SHA_RE.fullmatch(commit):
+    object_format = git(root, "rev-parse", "--show-object-format").lower()
+    if not OBJECT_ID_RE.fullmatch(commit):
         raise SyncError(f"Git returned an invalid commit SHA: {commit}")
-    return commit
+    expected_length = {"sha1": 40, "sha256": 64}.get(object_format)
+    if expected_length is None or len(commit) != expected_length:
+        raise SyncError(
+            f"Git returned an inconsistent {object_format} object ID: {commit}"
+        )
+    return object_format, commit
 
 
 def db_is_dirty(root: Path) -> bool:
@@ -167,6 +173,46 @@ def find_run(root: Path, repository: str, commit: str) -> int | None:
     return int(latest["databaseId"])
 
 
+def find_bundle_run(
+    root: Path, repository: str, artifact_name: str
+) -> int | None:
+    result = run(
+        [
+            "gh",
+            "api",
+            "--method",
+            "GET",
+            f"repos/{repository}/actions/artifacts",
+            "-f",
+            f"name={artifact_name}",
+            "-f",
+            "per_page=100",
+        ],
+        root,
+        check=False,
+    )
+    if result.returncode:
+        detail = result.stderr.strip() or result.stdout.strip()
+        raise SyncError(detail or f"Unable to query artifacts in {repository}")
+
+    try:
+        artifacts = json.loads(result.stdout).get("artifacts", [])
+    except (AttributeError, json.JSONDecodeError) as error:
+        raise SyncError("GitHub CLI returned invalid artifact data") from error
+
+    candidates = [
+        item
+        for item in artifacts
+        if item.get("name") == artifact_name
+        and not item.get("expired", False)
+        and (item.get("workflow_run") or {}).get("id")
+    ]
+    if not candidates:
+        return None
+    latest = max(candidates, key=lambda item: item.get("updated_at", ""))
+    return int(latest["workflow_run"]["id"])
+
+
 def github_cli_authenticated(root: Path) -> bool:
     if shutil.which("gh") is None:
         return False
@@ -214,25 +260,33 @@ def extract_zip_safely(archive: Path, destination: Path) -> None:
 
 def download_public_release(
     repository: str,
+    object_format: str,
     commit: str,
     temporary_root: Path,
     downloaded_db: Path,
     downloaded_checksums: Path,
 ) -> bool:
-    asset_prefix = f"db-{commit}"
     base_url = (
         f"https://github.com/{repository}/releases/download/"
         f"{PUBLIC_RELEASE_TAG}"
     )
-    archive = temporary_root / f"{asset_prefix}.zip"
-    manifest = downloaded_checksums / "db.sha256"
-    if not download_public_file(f"{base_url}/{asset_prefix}.zip", archive):
-        return False
-    if not download_public_file(f"{base_url}/{asset_prefix}.sha256", manifest):
-        archive.unlink(missing_ok=True)
-        return False
-    extract_zip_safely(archive, downloaded_db)
-    return True
+    prefixes = [f"db-{object_format}-{commit}"]
+    if object_format == "sha1":
+        prefixes.append(f"db-{commit}")
+
+    for asset_prefix in prefixes:
+        archive = temporary_root / f"{asset_prefix}.zip"
+        manifest = downloaded_checksums / "db.sha256"
+        if not download_public_file(f"{base_url}/{asset_prefix}.zip", archive):
+            continue
+        if not download_public_file(
+            f"{base_url}/{asset_prefix}.sha256", manifest
+        ):
+            archive.unlink(missing_ok=True)
+            continue
+        extract_zip_safely(archive, downloaded_db)
+        return True
+    return False
 
 
 def download_artifact(
@@ -337,6 +391,7 @@ def replace_db(root: Path, downloaded_db: Path) -> None:
 
 def write_stamp(
     root: Path,
+    object_format: str,
     commit: str,
     repository: str,
     channel: str,
@@ -347,6 +402,7 @@ def write_stamp(
     path.write_text(
         json.dumps(
             {
+                "git_object_format": object_format,
                 "commit": commit,
                 "repository": repository,
                 "channel": channel,
@@ -361,7 +417,8 @@ def write_stamp(
 
 def synchronize(root: Path, repositories: Iterable[str], force: bool) -> str:
     repository_list = list(repositories)
-    commit = current_commit(root)
+    object_format, commit = current_identity(root)
+    artifact_key = f"{object_format}-{commit}"
     if already_synced(root, commit) and not force:
         return f"DB is already synchronized for {commit[:12]}."
     if db_is_dirty(root) and not force:
@@ -383,6 +440,7 @@ def synchronize(root: Path, repositories: Iterable[str], force: bool) -> str:
         for repository in repository_list:
             if download_public_release(
                 repository,
+                object_format,
                 commit,
                 temporary_root,
                 downloaded_db,
@@ -395,12 +453,50 @@ def synchronize(root: Path, repositories: Iterable[str], force: bool) -> str:
         if selected_repository is None and github_cli_authenticated(root):
             for repository in repository_list:
                 try:
-                    run_id = find_run(root, repository, commit)
+                    run_id = find_bundle_run(
+                        root, repository, f"db-bundle-{artifact_key}"
+                    )
                 except SyncError:
                     continue
                 if run_id is not None:
                     selected_repository = repository
                     channel = "actions"
+                    break
+            if selected_repository is not None and run_id is not None:
+                bundle_directory = temporary_root / "actions-bundle"
+                bundle_directory.mkdir()
+                download_artifact(
+                    root,
+                    selected_repository,
+                    run_id,
+                    f"db-bundle-{artifact_key}",
+                    bundle_directory,
+                )
+                archives = list(
+                    bundle_directory.rglob(f"db-{artifact_key}.zip")
+                )
+                manifests = list(
+                    bundle_directory.rglob(f"db-{artifact_key}.sha256")
+                )
+                if len(archives) != 1 or len(manifests) != 1:
+                    raise SyncError(
+                        f"Actions bundle for {artifact_key} is incomplete"
+                    )
+                extract_zip_safely(archives[0], downloaded_db)
+                shutil.copy2(
+                    manifests[0], downloaded_checksums / "db.sha256"
+                )
+
+        # Compatibility with artifacts produced before per-commit bundles.
+        if selected_repository is None and github_cli_authenticated(root):
+            for repository in repository_list:
+                try:
+                    run_id = find_run(root, repository, commit)
+                except SyncError:
+                    continue
+                if run_id is not None:
+                    selected_repository = repository
+                    channel = "actions-legacy"
                     break
             if selected_repository is not None and run_id is not None:
                 artifact_name = f"db-{commit}"
@@ -429,13 +525,20 @@ def synchronize(root: Path, repositories: Iterable[str], force: bool) -> str:
             downloaded_db, downloaded_checksums / "db.sha256"
         )
 
-        if current_commit(root) != commit:
+        if current_identity(root) != (object_format, commit):
             raise SyncError("HEAD changed while downloading; db was not replaced")
         if db_is_dirty(root) and not force:
             raise SyncError("Local db changed while downloading; db was not replaced")
         replace_db(root, downloaded_db)
 
-    write_stamp(root, commit, selected_repository, channel, run_id)
+    write_stamp(
+        root,
+        object_format,
+        commit,
+        selected_repository,
+        channel,
+        run_id,
+    )
     source = f"{selected_repository} {channel}"
     if run_id is not None:
         source += f" run {run_id}"

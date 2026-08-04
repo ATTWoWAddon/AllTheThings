@@ -1,22 +1,34 @@
-# Commit-matched db sync
+# Commit-matched DB sync
 
-The `Parser` workflow publishes public, short-lived release assets for every
-pushed commit:
+The `Parser` workflow publishes public release assets addressed by Git object
+format and full commit ID:
 
-- `db-<full commit SHA>.zip` contains the generated `db` files.
-- `db-<full commit SHA>.sha256` contains the file checksums.
+- `db-<object format>-<full commit ID>.zip` contains the generated `db` files.
+- `db-<object format>-<full commit ID>.sha256` contains the file checksums.
+
+For the current SHA-1 repository, the prefix is `db-sha1-`. Keeping the object
+format in the name avoids ambiguity if the repository later moves to SHA-256.
 
 `sync_db.py` downloads both assets for the current `HEAD` without requiring a
 GitHub account, verifies every file, and only then replaces the local `db`
 directory. It never commits or pushes generated files.
+
+On the default branch, every commit included in a push is built. Other branches
+build only the push tip. A maintainer can rebuild one expired commit with the
+workflow's `target_sha` manual input.
+
+Default-branch release assets are retained for 30 days. Branch-tip and manual
+rebuild assets are retained for 7 days. The authenticated Actions bundle is
+also retained for 7 days.
 
 ## Requirements
 
 - Python 3
 - Internet access to the public GitHub repository
 
-GitHub CLI is optional. When it is already authenticated, the script can use
-the matching Actions artifact as a fallback while a public release is missing.
+GitHub CLI is optional. When it is already authenticated, the script can use a
+matching Actions bundle as a fallback while a public release is missing. Normal
+syncing does not need GitHub CLI or a GitHub login.
 
 ## Manual use
 

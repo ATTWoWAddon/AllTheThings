@@ -1,216 +1,870 @@
+# Set the workflow name shown in GitHub Actions.
 name: Parser
 
 # Controls when the action will run.
 on:
   # Triggers the workflow on each push event
   push:
+    # Configure which branches trigger this event.
     branches:
+      # Add this value to the preceding workflow list.
       - '**' # Trigger on all branches, including names containing '/'
+    # Configure which pushed tags are ignored.
     tags-ignore:
+      # Add this value to the preceding workflow list.
       - '*' # Ignore all tags
   # Triggers the workflow on each pull request event
   pull_request:
+    # Configure which branches trigger this event.
+    branches:
+      # Add this value to the preceding workflow list.
+      - "**"
+    # Limit this event to changes under the listed paths.
     paths:
-      - '.contrib/Parser/**'
+      # Add this value to the preceding workflow list.
+      - ".contrib/Parser/**"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    # Declare the inputs accepted by a manual run.
+    inputs:
+      # Define the full commit object ID to rebuild.
+      target_sha:
+        # Describe this input in the manual-run form.
+        description: Full commit SHA to rebuild
+        # Require this value before starting a manual run.
+        required: true
+        # Treat this manual input as text.
+        type: string
 
+# Apply least-privilege permissions to this scope.
 permissions:
-  contents: write
+  # Allow read-only access to repository contents.
+  contents: read
 
-concurrency:
-  group: parser-db-publishing
-  cancel-in-progress: false
-
+# Declare the jobs that make up this workflow.
 jobs:
-  build:
-    runs-on: windows-latest
-
+  # Collect the exact commits that require database builds.
+  collect-commits:
+    # Select the runner required by this job.
+    runs-on: ubuntu-latest
+    # Expose values required by downstream jobs.
+    outputs:
+      # Report whether the event selected at least one commit.
+      has_commits: ${{ steps.commits.outputs.has_commits }}
+      # Provide the JSON matrix used by the per-commit build job.
+      matrix: ${{ steps.commits.outputs.matrix }}
+      # Report whether successful bundles may be published publicly.
+      publish: ${{ steps.commits.outputs.publish }}
+    # Declare the ordered steps for this job.
     steps:
-      - uses: actions/checkout@v7
+      # Give the following workflow step a descriptive name.
+      - name: Checkout repository history
+        # Use the official checkout action.
+        uses: actions/checkout@v7
+        # Configure inputs for the action used by this step.
+        with:
+          # Fetch at most 300 commits to avoid downloading the full repository history.
+          fetch-depth: 300
+          # Avoid retaining write credentials in the checkout.
+          persist-credentials: false
 
-      - parallel:
-        - name: Database Parser for Retail
-          id: Parse-Retail
-          timeout-minutes: 5
-          continue-on-error: true
-          run: |
-            cd .contrib/Parser
-            "Parser.exe" auto baseconfig=.config/retail/retail.config
-          shell: cmd
-
-        - name: Database Parser for Classic Era
-          id: Parse-ClassicEra
-          timeout-minutes: 5
-          continue-on-error: true
-          run: |
-            cd .contrib/Parser
-            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic Era.config"
-          shell: cmd
-
-        - name: Database Parser for Season of Discovery
-          id: Parse-ClassicSoD
-          timeout-minutes: 5
-          continue-on-error: true
-          run: |
-            cd .contrib/Parser
-            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic SOD.config"
-          shell: cmd
-
-        - name: Database Parser for The Burning Crusade
-          id: Parse-TBC
-          timeout-minutes: 5
-          continue-on-error: true
-          run: |
-            cd .contrib/Parser
-            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/02 - TBC.config"
-          shell: cmd
-
-        - name: Database Parser for Wrath of the Lich King
-          id: Parse-WOTLK
-          timeout-minutes: 5
-          continue-on-error: true
-          run: |
-            cd .contrib/Parser
-            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/03 - Wrath.config"
-          shell: cmd
-
-        - name: Database Parser for Cataclysm
-          id: Parse-CATA
-          timeout-minutes: 5
-          continue-on-error: true
-          run: |
-            cd .contrib/Parser
-            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/04 - Cataclysm.config"
-          shell: cmd
-
-        - name: Database Parser for Mists of Pandaria
-          id: Parse-MOP
-          timeout-minutes: 5
-          continue-on-error: true
-          run: |
-            cd .contrib/Parser
-            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/05 - Mists of Pandaria.config"
-          shell: cmd
-
-      - name: Full Success Check
-        shell: pwsh
+      # Give the following workflow step a descriptive name.
+      - name: Select commits to build
+        # Assign an identifier so later steps can read this result.
+        id: commits
+        # Run the following script with Bash.
+        shell: bash
+        # Expose explicit values to the following script.
+        env:
+          # Expose event data to the commit-selection script.
+          EVENT_NAME: ${{ github.event_name }}
+          # Expose event data to the commit-selection script.
+          EVENT_DELETED: ${{ github.event.deleted }}
+          # Expose event data to the commit-selection script.
+          EVENT_COMMITS: ${{ toJSON(github.event.commits) }}
+          # Expose the repository default branch without hard-coding its name.
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          # Expose the workflow commit object ID.
+          HEAD_SHA: ${{ github.sha }}
+          # Expose the pull request head commit object ID.
+          PR_SHA: ${{ github.event.pull_request.head.sha }}
+          # Expose the source branch name.
+          REF_NAME: ${{ github.ref_name }}
+          # Expose the manually requested commit object ID.
+          TARGET_SHA: ${{ inputs.target_sha }}
+        # Run the following documented script.
         run: |
+          # Start an inline Python program without creating a helper file.
+          python - <<'PY'
+          # Import the module required by the commit-selection script.
+          import json
+          # Import the module required by the commit-selection script.
+          import os
+          # Import the module required by the commit-selection script.
+          import re
+          # Import the module required by the commit-selection script.
+          import subprocess
+
+          # Set event for the following workflow operation.
+          event = os.environ["EVENT_NAME"]
+          # Set ref_name for the following workflow operation.
+          ref_name = os.environ.get("REF_NAME", "")
+          # Set default_branch for the following workflow operation.
+          default_branch = os.environ.get("DEFAULT_BRANCH", "")
+          # Set publish for the following workflow operation.
+          publish = event != "pull_request"
+          # Set retention_days for the following workflow operation.
+          retention_days = 7
+          # Set source_ref for the following workflow operation.
+          source_ref = ref_name
+          # Set shas for the following workflow operation.
+          shas = []
+
+          # Define a helper that validates and normalizes a commit object ID.
+          def full_commit(value):
+              # Set value for the following workflow operation.
+              value = (value or "").strip().lower()
+              # Evaluate this condition to select the correct workflow behavior.
+              if not re.fullmatch(r"(?:[0-9a-f]{40}|[0-9a-f]{64})", value):
+                  # Stop immediately with a clear, actionable error.
+                  raise SystemExit(f"Expected a full commit SHA, got: {value!r}")
+              # Ask Git to verify that the object exists and resolves to a commit.
+              subprocess.run(
+                  # Peel the supplied object ID to a commit and reject other object types.
+                  ["git", "cat-file", "-e", f"{value}^{{commit}}"],
+                  # Set check for the following workflow operation.
+                  check=True,
+              )
+              # Return the normalized result to the caller.
+              return subprocess.check_output(
+                  # Resolve the validated commit to its canonical full object ID.
+                  ["git", "rev-parse", f"{value}^{{commit}}"],
+                  # Set text for the following workflow operation.
+                  text=True,
+              # Remove Git's trailing newline and normalize the result to lowercase.
+              ).strip().lower()
+
+          # Evaluate this condition to select the correct workflow behavior.
+          if event == "workflow_dispatch":
+              # Set shas for the following workflow operation.
+              shas = [full_commit(os.environ.get("TARGET_SHA"))]
+              # Set source_ref for the following workflow operation.
+              source_ref = f"manual:{shas[0]}"
+          # Evaluate this condition to select the correct workflow behavior.
+          elif event == "pull_request":
+              # Set shas for the following workflow operation.
+              shas = [full_commit(os.environ.get("PR_SHA"))]
+              # Set source_ref for the following workflow operation.
+              source_ref = f"pull-request:{ref_name}"
+              # Set publish for the following workflow operation.
+              publish = False
+          # Evaluate this condition to select the correct workflow behavior.
+          elif event == "push" and os.environ.get("EVENT_DELETED") != "true":
+              # Set head for the following workflow operation.
+              head = full_commit(os.environ.get("HEAD_SHA"))
+              # Evaluate this condition to select the correct workflow behavior.
+              if ref_name == default_branch:
+                  # Set retention_days for the following workflow operation.
+                  retention_days = 30
+                  # Set commits for the following workflow operation.
+                  commits = json.loads(os.environ.get("EVENT_COMMITS") or "[]")
+                  # Set shas for the following workflow operation.
+                  shas = [
+                      # Validate each commit ID reported in the push payload.
+                      full_commit(item.get("id"))
+                      # Iterate over the selected collection.
+                      for item in commits
+                      # Evaluate this condition to select the correct workflow behavior.
+                      if item.get("id")
+                  ]
+                  # Evaluate this condition to select the correct workflow behavior.
+                  if head not in shas:
+                      # Ensure the push tip is included even if the payload omitted it.
+                      shas.append(head)
+              # Handle the alternative branch of the preceding condition.
+              else:
+                  # Set shas for the following workflow operation.
+                  shas = [head]
+
+          # Set shas for the following workflow operation.
+          shas = list(dict.fromkeys(shas))
+          # Evaluate this condition to select the correct workflow behavior.
+          if len(shas) > 256:
+              # Stop immediately with a clear, actionable error.
+              raise SystemExit(
+                  # Include the actual count in the matrix-limit error.
+                  f"This push contains {len(shas)} commits; GitHub's matrix limit is 256. "
+                  # Explain the supported recovery options to the maintainer.
+                  "Split the push or rebuild the remaining SHAs manually."
+              )
+
+          # Set matrix for the following workflow operation.
+          matrix = {
+              # Store each per-commit configuration under the matrix include list.
+              "include": [
+                  # Create one matrix object for the current commit.
+                  {
+                      # Select the exact commit to check out.
+                      "sha": sha,
+                      # Carry the event's publication policy into the build.
+                      "publish": publish,
+                      # Carry the event's release retention policy into the build.
+                      "retention_days": retention_days,
+                      # Record the branch, pull request, or manual source.
+                      "source_ref": source_ref,
+                  }
+                  # Iterate over the selected collection.
+                  for sha in shas
+              ]
+          }
+          # Write this value to the step output file.
+          output = os.environ["GITHUB_OUTPUT"]
+          # Append all values to the GitHub Actions step-output file.
+          with open(output, "a", encoding="utf-8") as handle:
+              # Tell downstream jobs whether the matrix contains any commits.
+              handle.write(f"has_commits={'true' if shas else 'false'}\n")
+              # Tell the publisher whether this event permits public assets.
+              handle.write(f"publish={'true' if publish and shas else 'false'}\n")
+              # Serialize the matrix on one line for safe output parsing.
+              handle.write(f"matrix={json.dumps(matrix, separators=(',', ':'))}\n")
+          # End the inline Python here-document.
+          PY
+
+  # Build the database for each selected commit.
+  build:
+    # Wait for the required upstream jobs.
+    needs: collect-commits
+    # Skip the matrix job when the event did not select any commits.
+    if: needs.collect-commits.outputs.has_commits == 'true'
+    # Select the runner required by this job.
+    runs-on: windows-latest
+    # Apply least-privilege permissions to this scope.
+    permissions:
+      # Allow read-only access to repository contents.
+      contents: read
+    # Configure matrix execution behavior.
+    strategy:
+      # Keep other matrix builds running when one commit fails.
+      fail-fast: false
+      # Limit Parser execution to two concurrent commits.
+      max-parallel: 2
+      # Expand the commit-selection JSON into one matrix job per commit.
+      matrix: ${{ fromJSON(needs.collect-commits.outputs.matrix) }}
+    # Declare the ordered steps for this job.
+    steps:
+      # Give the following workflow step a descriptive name.
+      - name: Checkout exact commit
+        # Use the official checkout action.
+        uses: actions/checkout@v7
+        # Configure inputs for the action used by this step.
+        with:
+          # Check out the exact commit selected by the matrix.
+          ref: ${{ matrix.sha }}
+          # Configure how much Git history is fetched.
+          fetch-depth: 1
+          # Avoid retaining write credentials in the checkout.
+          persist-credentials: false
+
+      # Give the following workflow step a descriptive name.
+      - name: Record commit identity
+        # Assign an identifier so later steps can read this result.
+        id: identity
+        # Run the following script with PowerShell Core.
+        shell: pwsh
+        # Run the following documented script.
+        run: |
+          # Set $oid for the following workflow operation.
+          $oid = (git rev-parse HEAD).Trim().ToLowerInvariant()
+          # Set $format for the following workflow operation.
+          $format = (git rev-parse --show-object-format).Trim().ToLowerInvariant()
+          # Set $expected for the following workflow operation.
+          $expected = '${{ matrix.sha }}'.ToLowerInvariant()
+          # Evaluate this condition to select the correct workflow behavior.
+          if ($oid -ne $expected) {
+            # Stop immediately with a clear, actionable error.
+            throw "Checked out $oid, expected $expected"
+          }
+          # Evaluate this condition to select the correct workflow behavior.
+          if (($format -eq 'sha1' -and $oid.Length -ne 40) -or
+              # Accept 64 characters only when the repository uses SHA-256.
+              ($format -eq 'sha256' -and $oid.Length -ne 64)) {
+            # Stop immediately with a clear, actionable error.
+            throw "Unexpected $format object ID: $oid"
+          }
+          # Write this value to the step output file.
+          "oid=$oid" >> $env:GITHUB_OUTPUT
+          # Write this value to the step output file.
+          "format=$format" >> $env:GITHUB_OUTPUT
+          # Write this value to the step output file.
+          "key=$format-$oid" >> $env:GITHUB_OUTPUT
+
+      # Add this value to the preceding workflow list.
+      - parallel:
+        # Give the following workflow step a descriptive name.
+        - name: Database Parser for Retail
+          # Assign an identifier so later steps can read this result.
+          id: Parse-Retail
+          # Limit how long this Parser invocation may run.
+          timeout-minutes: 5
+          # Let parallel Parser steps finish before the aggregate check.
+          continue-on-error: true
+          # Run the following documented script.
+          run: |
+            REM Change to the Parser working directory.
+            cd .contrib/Parser
+            REM Run Parser.exe with the configuration for this game version.
+            "Parser.exe" auto baseconfig=.config/retail/retail.config
+          # Run the following commands with Windows Command Prompt.
+          shell: cmd
+
+        # Give the following workflow step a descriptive name.
+        - name: Database Parser for Classic Era
+          # Assign an identifier so later steps can read this result.
+          id: Parse-ClassicEra
+          # Limit how long this Parser invocation may run.
+          timeout-minutes: 5
+          # Let parallel Parser steps finish before the aggregate check.
+          continue-on-error: true
+          # Run the following documented script.
+          run: |
+            REM Change to the Parser working directory.
+            cd .contrib/Parser
+            REM Run Parser.exe with the configuration for this game version.
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic Era.config"
+          # Run the following commands with Windows Command Prompt.
+          shell: cmd
+
+        # Give the following workflow step a descriptive name.
+        - name: Database Parser for Season of Discovery
+          # Assign an identifier so later steps can read this result.
+          id: Parse-ClassicSoD
+          # Limit how long this Parser invocation may run.
+          timeout-minutes: 5
+          # Let parallel Parser steps finish before the aggregate check.
+          continue-on-error: true
+          # Run the following documented script.
+          run: |
+            REM Change to the Parser working directory.
+            cd .contrib/Parser
+            REM Run Parser.exe with the configuration for this game version.
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/01 - Classic SOD.config"
+          # Run the following commands with Windows Command Prompt.
+          shell: cmd
+
+        # Give the following workflow step a descriptive name.
+        - name: Database Parser for The Burning Crusade
+          # Assign an identifier so later steps can read this result.
+          id: Parse-TBC
+          # Limit how long this Parser invocation may run.
+          timeout-minutes: 5
+          # Let parallel Parser steps finish before the aggregate check.
+          continue-on-error: true
+          # Run the following documented script.
+          run: |
+            REM Change to the Parser working directory.
+            cd .contrib/Parser
+            REM Run Parser.exe with the configuration for this game version.
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/02 - TBC.config"
+          # Run the following commands with Windows Command Prompt.
+          shell: cmd
+
+        # Give the following workflow step a descriptive name.
+        - name: Database Parser for Wrath of the Lich King
+          # Assign an identifier so later steps can read this result.
+          id: Parse-WOTLK
+          # Limit how long this Parser invocation may run.
+          timeout-minutes: 5
+          # Let parallel Parser steps finish before the aggregate check.
+          continue-on-error: true
+          # Run the following documented script.
+          run: |
+            REM Change to the Parser working directory.
+            cd .contrib/Parser
+            REM Run Parser.exe with the configuration for this game version.
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/03 - Wrath.config"
+          # Run the following commands with Windows Command Prompt.
+          shell: cmd
+
+        # Give the following workflow step a descriptive name.
+        - name: Database Parser for Cataclysm
+          # Assign an identifier so later steps can read this result.
+          id: Parse-CATA
+          # Limit how long this Parser invocation may run.
+          timeout-minutes: 5
+          # Let parallel Parser steps finish before the aggregate check.
+          continue-on-error: true
+          # Run the following documented script.
+          run: |
+            REM Change to the Parser working directory.
+            cd .contrib/Parser
+            REM Run Parser.exe with the configuration for this game version.
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/04 - Cataclysm.config"
+          # Run the following commands with Windows Command Prompt.
+          shell: cmd
+
+        # Give the following workflow step a descriptive name.
+        - name: Database Parser for Mists of Pandaria
+          # Assign an identifier so later steps can read this result.
+          id: Parse-MOP
+          # Limit how long this Parser invocation may run.
+          timeout-minutes: 5
+          # Let parallel Parser steps finish before the aggregate check.
+          continue-on-error: true
+          # Run the following documented script.
+          run: |
+            REM Change to the Parser working directory.
+            cd .contrib/Parser
+            REM Run Parser.exe with the configuration for this game version.
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/05 - Mists of Pandaria.config"
+          # Run the following commands with Windows Command Prompt.
+          shell: cmd
+
+      # Give the following workflow step a descriptive name.
+      - name: Full Success Check
+        # Run this check even when an earlier Parser step failed.
+        if: always()
+        # Run the following script with PowerShell Core.
+        shell: pwsh
+        # Run the following documented script.
+        run: |
+          # Set $retail for the following workflow operation.
           $retail = '${{ steps.Parse-Retail.outcome }}'
+          # Set $classicEra for the following workflow operation.
           $classicEra = '${{ steps.Parse-ClassicEra.outcome }}'
+          # Set $classicSoD for the following workflow operation.
           $classicSoD = '${{ steps.Parse-ClassicSoD.outcome }}'
+          # Set $tbc for the following workflow operation.
           $tbc = '${{ steps.Parse-TBC.outcome }}'
+          # Set $wotlk for the following workflow operation.
           $wotlk = '${{ steps.Parse-WOTLK.outcome }}'
+          # Set $cata for the following workflow operation.
           $cata = '${{ steps.Parse-CATA.outcome }}'
+          # Set $mop for the following workflow operation.
           $mop = '${{ steps.Parse-MOP.outcome }}'
 
+          # Write the current result to the workflow log.
           Write-Host "Verify all Versions Parsed Successfully..."
+          # Write the current result to the workflow log.
           Write-Host "Retail: $retail"
+          # Write the current result to the workflow log.
           Write-Host "ClassicEra: $classicEra"
+          # Write the current result to the workflow log.
           Write-Host "ClassicSoD: $classicSoD"
+          # Write the current result to the workflow log.
           Write-Host "TBC: $tbc"
+          # Write the current result to the workflow log.
           Write-Host "WOTLK: $wotlk"
+          # Write the current result to the workflow log.
           Write-Host "CATA: $cata"
+          # Write the current result to the workflow log.
           Write-Host "MOP: $mop"
 
+          # Evaluate this condition to select the correct workflow behavior.
           if (
+            # Require the Retail parser to succeed.
             $retail -eq 'success' -and
+            # Require the Classic Era parser to succeed.
             $classicEra -eq 'success' -and
+            # Require the Season of Discovery parser to succeed.
             $classicSoD -eq 'success' -and
+            # Require the Burning Crusade parser to succeed.
             $tbc -eq 'success' -and
+            # Require the Wrath parser to succeed.
             $wotlk -eq 'success' -and
+            # Require the Cataclysm parser to succeed.
             $cata -eq 'success' -and
+            # Require the Mists of Pandaria parser to succeed.
             $mop -eq 'success'
+          # Close the aggregate success condition.
           ) {
+            # Write the current result to the workflow log.
             Write-Host "✅ All Versions Parsed Successfully"
+          # Handle the case where at least one parser did not succeed.
           } else {
+            # Write the current result to the workflow log.
             Write-Host "❌ One or more Parsed Versions Errored"
+            # Return a nonzero status so the job is marked as failed.
             exit 1
           }
 
-      - name: Generate DB checksums
+      # Give the following workflow step a descriptive name.
+      - name: Package database bundle
+        # Assign an identifier so later steps can read this result.
+        id: package
+        # Run the following script with PowerShell Core.
         shell: pwsh
-        run: |
-          $dbRoot = (Resolve-Path 'db').Path
-          $manifest = Join-Path $env:RUNNER_TEMP 'db.sha256'
-
-          Get-ChildItem $dbRoot -File -Recurse |
-            Sort-Object FullName |
-            ForEach-Object {
-              $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
-              $relativePath = [System.IO.Path]::GetRelativePath($dbRoot, $_.FullName).Replace('\', '/')
-              "$hash  $relativePath"
-            } |
-            Set-Content $manifest -Encoding utf8NoBOM
-
-      - name: Publish public commit-matched DB assets
-        if: github.event_name == 'push'
-        # Keep the authenticated Actions channel available if release publishing fails.
-        continue-on-error: true
-        shell: pwsh
+        # Expose explicit values to the following script.
         env:
-          GH_TOKEN: ${{ github.token }}
+          # Expose whether this bundle may be published publicly.
+          PUBLISH: ${{ matrix.publish }}
+          # Expose the retention policy selected for this commit.
+          RETENTION_DAYS: ${{ matrix.retention_days }}
+          # Expose the source ref for release metadata.
+          SOURCE_REF: ${{ matrix.source_ref }}
+        # Run the following documented script.
         run: |
-          $releaseTag = 'db-artifacts'
-          $archive = Join-Path $env:RUNNER_TEMP "db-${{ github.sha }}.zip"
-          $publicManifest = Join-Path $env:RUNNER_TEMP "db-${{ github.sha }}.sha256"
+          # Set $key for the following workflow operation.
+          $key = '${{ steps.identity.outputs.key }}'
+          # Set $archive for the following workflow operation.
+          $archive = Join-Path $env:RUNNER_TEMP "db-$key.zip"
+          # Set $manifest for the following workflow operation.
+          $manifest = Join-Path $env:RUNNER_TEMP "db-$key.sha256"
+          # Set $metadata for the following workflow operation.
+          $metadata = Join-Path $env:RUNNER_TEMP "db-$key.json"
 
+          # Set $dbRoot for the following workflow operation.
+          $dbRoot = (Resolve-Path "db").Path
+          # Enumerate the files required by this operation.
+          Get-ChildItem $dbRoot -Recurse -File |
+            # Sort input deterministically for reproducible output.
+            Sort-Object FullName |
+            # Process each input file.
+            ForEach-Object {
+              # Set $relative for the following workflow operation.
+              $relative = $_.FullName.Substring($dbRoot.Length + 1).Replace('\', '/')
+              # Set $hash for the following workflow operation.
+              $hash = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+              # Emit a sha256sum-compatible record for this relative path.
+              "$hash  $relative"
+            # Write the complete deterministic manifest without a byte-order mark.
+            } | Set-Content -Path $manifest -Encoding utf8NoBOM
+
+          # Load the .NET ZIP implementation.
           Add-Type -AssemblyName System.IO.Compression.FileSystem
+          # Create the commit-addressed database ZIP archive.
           [System.IO.Compression.ZipFile]::CreateFromDirectory(
-            (Resolve-Path 'db').Path,
+            # Use the generated database directory as the archive root.
+            $dbRoot,
+            # Write the archive to the runner's temporary directory.
             $archive,
+            # Use optimal compression to reduce storage and download size.
             [System.IO.Compression.CompressionLevel]::Optimal,
+            # Store database contents directly instead of adding an outer db folder.
             $false
+          # Finish the ZIP creation call.
           )
-          Copy-Item (Join-Path $env:RUNNER_TEMP 'db.sha256') $publicManifest
 
-          gh release view $releaseTag --repo $env:GITHUB_REPOSITORY *> $null
+          # Set $builtAt for the following workflow operation.
+          $builtAt = (Get-Date).ToUniversalTime()
+          # Set $retentionDays for the following workflow operation.
+          $retentionDays = [int]$env:RETENTION_DAYS
+          # Build the metadata object consumed by the publisher.
+          @{
+            # Set schema for the following workflow operation.
+            schema = 1
+            # Set commit for the following workflow operation.
+            commit = '${{ steps.identity.outputs.oid }}'
+            # Set git_object_format for the following workflow operation.
+            git_object_format = '${{ steps.identity.outputs.format }}'
+            # Set key for the following workflow operation.
+            key = $key
+            # Set source_ref for the following workflow operation.
+            source_ref = $env:SOURCE_REF
+            # Set publish for the following workflow operation.
+            publish = [System.Convert]::ToBoolean($env:PUBLISH)
+            # Set built_at for the following workflow operation.
+            built_at = $builtAt.ToString('o')
+            # Set expires_at for the following workflow operation.
+            expires_at = $builtAt.AddDays($retentionDays).ToString('o')
+          # Serialize metadata as UTF-8 JSON without a byte-order mark.
+          } | ConvertTo-Json | Set-Content -Path $metadata -Encoding utf8NoBOM
+
+          # Write this value to the step output file.
+          "archive=$archive" >> $env:GITHUB_OUTPUT
+          # Write this value to the step output file.
+          "manifest=$manifest" >> $env:GITHUB_OUTPUT
+          # Write this value to the step output file.
+          "metadata=$metadata" >> $env:GITHUB_OUTPUT
+
+      # Give the following workflow step a descriptive name.
+      - name: Upload database bundle
+        # Keep the authenticated Actions channel available if release publishing fails.
+        # Use the official action to upload the database bundle.
+        uses: actions/upload-artifact@v7
+        # Configure inputs for the action used by this step.
+        with:
+          # Include the source commit so a local checkout can request the exact DB.
+          # Set a stable name for this workflow object.
+          name: db-bundle-${{ steps.identity.outputs.key }}
+          # List every file included in the database bundle.
+          path: |
+            ${{ steps.package.outputs.archive }}
+            ${{ steps.package.outputs.manifest }}
+            ${{ steps.package.outputs.metadata }}
+          # Fail instead of silently publishing an incomplete bundle.
+          if-no-files-found: error
+          # Match the Actions artifact retention period and avoid unbounded assets.
+          # Set the artifact retention period.
+          retention-days: 7
+
+  # Publish successful commit-addressed database bundles.
+  publish:
+    # Wait for the required upstream jobs.
+    needs:
+      # Add this value to the preceding workflow list.
+      - collect-commits
+      # Add this value to the preceding workflow list.
+      - build
+    # Run after all builds, including runs where only some matrix entries failed.
+    # Require successful commit selection and an event that permits publication.
+    # A successful or partially failed build may still contain valid bundles.
+    if: >-
+      always() &&
+      needs.collect-commits.result == 'success' &&
+      needs.collect-commits.outputs.publish == 'true' &&
+      (needs.build.result == 'success' || needs.build.result == 'failure')
+    # Select the runner required by this job.
+    runs-on: ubuntu-latest
+    # Apply least-privilege permissions to this scope.
+    permissions:
+      # Allow this job to download workflow artifacts.
+      actions: read
+      # Allow this job to manage release assets.
+      contents: write
+    # Serialize access to the shared database release.
+    concurrency:
+      # Use one shared publisher concurrency group.
+      group: db-release-publisher
+      # Allow the active publisher to finish safely.
+      cancel-in-progress: false
+    # Declare the ordered steps for this job.
+    steps:
+      # Give the following workflow step a descriptive name.
+      - name: Download successful bundles
+        # Use the official action to download successful database bundles.
+        uses: actions/download-artifact@v8
+        # Configure inputs for the action used by this step.
+        with:
+          # Match database bundle artifacts by their stable prefix.
+          pattern: db-bundle-*
+          # Set the path used by this action.
+          path: bundles
+
+      # Give the following workflow step a descriptive name.
+      - name: Publish immutable database assets
+        # Run the following script with PowerShell Core.
+        shell: pwsh
+        # Expose explicit values to the following script.
+        env:
+          # Provide the job-scoped token to GitHub CLI.
+          GH_TOKEN: ${{ github.token }}
+          # Expose the current owner and repository name.
+          REPOSITORY: ${{ github.repository }}
+          # Select the shared prerelease used for database assets.
+          RELEASE_TAG: db-artifacts
+        # Run the following documented script.
+        run: |
+          # Set $ErrorActionPreference for the following workflow operation.
+          $ErrorActionPreference = 'Stop'
+          # Set $tag for the following workflow operation.
+          $tag = $env:RELEASE_TAG
+          # Set $repo for the following workflow operation.
+          $repo = $env:REPOSITORY
+
+          # Check whether the shared database release already exists.
+          gh release view $tag --repo $repo *> $null
+          # Evaluate this condition to select the correct workflow behavior.
           if ($LASTEXITCODE -ne 0) {
-            gh release create $releaseTag `
-              --repo $env:GITHUB_REPOSITORY `
-              --target '${{ github.sha }}' `
-              --title 'Commit-matched DB artifacts' `
-              --prerelease `
-              --notes 'Public, commit-matched DB assets generated by the Parser workflow.'
-            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            # Create the shared prerelease at the workflow commit.
+            # Set a stable title and explanatory release notes.
+            # Mark it as a prerelease so it is not confused with an addon release.
+            gh release create $tag --repo $repo --target $env:GITHUB_SHA `
+              --title "Database Artifacts" `
+              --notes "Commit-addressed database snapshots generated by Parser." `
+              --prerelease
           }
 
-          gh release upload $releaseTag `
-            --repo $env:GITHUB_REPOSITORY `
-            $archive `
-            $publicManifest `
-            --clobber
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-
-          # Match the Actions artifact retention period and avoid unbounded assets.
-          $cutoff = (Get-Date).ToUniversalTime().AddDays(-7)
-          $release = gh api "repos/$env:GITHUB_REPOSITORY/releases/tags/$releaseTag" |
+          # Set $release for the following workflow operation.
+          $release = gh api "repos/$repo/releases/tags/$tag" |
+            # Convert the GitHub API response into PowerShell objects.
             ConvertFrom-Json
-          $pages = gh api --paginate --slurp `
-            "repos/$env:GITHUB_REPOSITORY/releases/$($release.id)/assets?per_page=100" |
+          # Fetch every release asset page with the largest supported page size.
+          $assetPages = gh api --paginate --slurp `
+            "repos/$repo/releases/$($release.id)/assets?per_page=100" |
+            # Convert the GitHub API response into PowerShell objects.
             ConvertFrom-Json
-          foreach ($page in $pages) {
+          # Set $assetsByName for the following workflow operation.
+          $assetsByName = @{}
+          # Iterate over the selected collection.
+          foreach ($page in $assetPages) {
+            # Iterate over the selected collection.
             foreach ($asset in $page) {
-              if ([DateTime]::Parse($asset.updated_at).ToUniversalTime() -lt $cutoff) {
-                gh api --method DELETE `
-                  "repos/$env:GITHUB_REPOSITORY/releases/assets/$($asset.id)"
-                if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-              }
+              # Set $assetsByName[$asset.name] for the following workflow operation.
+              $assetsByName[$asset.name] = $asset
             }
           }
 
-      - name: Upload DB artifact
-        uses: actions/upload-artifact@v7
-        with:
-          # Include the source commit so a local checkout can request the exact DB.
-          name: db-${{ github.sha }}
-          path: db/  # File path to upload
-          include-hidden-files: true
-          retention-days: 7
+          # Set $indexName for the following workflow operation.
+          $indexName = 'db-index.json'
+          # Set $indexPath for the following workflow operation.
+          $indexPath = Join-Path $env:RUNNER_TEMP $indexName
+          # Evaluate this condition to select the correct workflow behavior.
+          if ($assetsByName.ContainsKey($indexName)) {
+            # Download the latest mutable index into the runner's temporary directory.
+            gh release download $tag --repo $repo --pattern $indexName `
+              --dir $env:RUNNER_TEMP --clobber
+            # Set $index for the following workflow operation.
+            $index = Get-Content $indexPath -Raw | ConvertFrom-Json -AsHashtable
+          # Initialize a new index when the release has no existing index asset.
+          } else {
+            # Set $index for the following workflow operation.
+            $index = @{ schema = 1; entries = @{} }
+          }
+          # Evaluate this condition to select the correct workflow behavior.
+          if (-not $index.ContainsKey('entries')) {
+            # Set $index.entries for the following workflow operation.
+            $index.entries = @{}
+          }
 
-      - name: Upload DB checksum artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: db-${{ github.sha }}-checksums
-          path: ${{ runner.temp }}/db.sha256
-          retention-days: 7
+          # Set $metadataFiles for the following workflow operation.
+          $metadataFiles = @(Get-ChildItem bundles -Recurse -Filter 'db-*.json' -File)
+          # Evaluate this condition to select the correct workflow behavior.
+          if ($metadataFiles.Count -eq 0) {
+            # Stop immediately with a clear, actionable error.
+            throw 'No successful database bundles were available to publish.'
+          }
+
+          # Iterate over the selected collection.
+          foreach ($metadataFile in $metadataFiles) {
+            # Set $metadata for the following workflow operation.
+            $metadata = Get-Content $metadataFile.FullName -Raw |
+              # Convert the GitHub API response into PowerShell objects.
+              ConvertFrom-Json -AsHashtable
+            # Evaluate this condition to select the correct workflow behavior.
+            if (-not $metadata.publish) {
+              # Skip the current item and continue with the next one.
+              continue
+            }
+
+            # Set $key for the following workflow operation.
+            $key = $metadata.key
+            # Set $directory for the following workflow operation.
+            $directory = $metadataFile.DirectoryName
+            # Set $archiveName for the following workflow operation.
+            $archiveName = "db-$key.zip"
+            # Set $manifestName for the following workflow operation.
+            $manifestName = "db-$key.sha256"
+            # Set $archive for the following workflow operation.
+            $archive = Join-Path $directory $archiveName
+            # Set $manifest for the following workflow operation.
+            $manifest = Join-Path $directory $manifestName
+            # Evaluate this condition to select the correct workflow behavior.
+            if (-not (Test-Path $archive) -or -not (Test-Path $manifest)) {
+              # Stop immediately with a clear, actionable error.
+              throw "Bundle $key is incomplete."
+            }
+
+            # Set $hasArchive for the following workflow operation.
+            $hasArchive = $assetsByName.ContainsKey($archiveName)
+            # Set $hasManifest for the following workflow operation.
+            $hasManifest = $assetsByName.ContainsKey($manifestName)
+            # Evaluate this condition to select the correct workflow behavior.
+            if ($hasArchive -xor $hasManifest) {
+              # Stop immediately with a clear, actionable error.
+              throw "Release contains a partial asset pair for $key; refusing to overwrite it."
+            }
+
+            # Evaluate this condition to select the correct workflow behavior.
+            if ($hasArchive) {
+              # Set $comparisonDir for the following workflow operation.
+              $comparisonDir = Join-Path $env:RUNNER_TEMP "existing-$key"
+              # Create the temporary directory required by this operation.
+              New-Item -ItemType Directory -Path $comparisonDir -Force | Out-Null
+              # Download the published manifest into an isolated comparison directory.
+              gh release download $tag --repo $repo --pattern $manifestName `
+                --dir $comparisonDir --clobber
+              # Set $existingManifest for the following workflow operation.
+              $existingManifest = Join-Path $comparisonDir $manifestName
+              # Set $expected for the following workflow operation.
+              $expected = (Get-FileHash $manifest -Algorithm SHA256).Hash
+              # Set $actual for the following workflow operation.
+              $actual = (Get-FileHash $existingManifest -Algorithm SHA256).Hash
+              # Evaluate this condition to select the correct workflow behavior.
+              if ($expected -ne $actual) {
+                # Stop immediately with a clear, actionable error.
+                throw "Reproducibility conflict for $key: the published checksum differs."
+              }
+              # Write the current result to the workflow log.
+              Write-Host "Asset $key already exists with the same checksum; keeping it."
+            # Upload the immutable pair only when this commit has not been published.
+            } else {
+              # Upload the verified release asset.
+              gh release upload $tag $archive $manifest --repo $repo
+              # Write the current result to the workflow log.
+              Write-Host "Published $key."
+            }
+
+            # Set $expiresAt for the following workflow operation.
+            $expiresAt = [DateTimeOffset]::Parse($metadata.expires_at)
+            # Evaluate this condition to select the correct workflow behavior.
+            if ($index.entries.ContainsKey($key)) {
+              # Set $currentExpiry for the following workflow operation.
+              $currentExpiry = [DateTimeOffset]::Parse(
+                # Read the existing expiration value for this commit.
+                $index.entries[$key].expires_at
+              # Close the current expression.
+              )
+              # Evaluate this condition to select the correct workflow behavior.
+              if ($currentExpiry -gt $expiresAt) {
+                # Set $expiresAt for the following workflow operation.
+                $expiresAt = $currentExpiry
+              }
+            }
+            # Set $index.entries[$key] for the following workflow operation.
+            $index.entries[$key] = @{
+              # Set commit for the following workflow operation.
+              commit = $metadata.commit
+              # Set git_object_format for the following workflow operation.
+              git_object_format = $metadata.git_object_format
+              # Set source_ref for the following workflow operation.
+              source_ref = $metadata.source_ref
+              # Set built_at for the following workflow operation.
+              built_at = $metadata.built_at
+              # Set expires_at for the following workflow operation.
+              expires_at = $expiresAt.ToString('o')
+              # Set archive for the following workflow operation.
+              archive = $archiveName
+              # Set checksum for the following workflow operation.
+              checksum = $manifestName
+            }
+          }
+
+          # Set $now for the following workflow operation.
+          $now = (Get-Date).ToUniversalTime()
+          # Iterate over the selected collection.
+          foreach ($key in @($index.entries.Keys)) {
+            # Set $entry for the following workflow operation.
+            $entry = $index.entries[$key]
+            # Set $expiresAt for the following workflow operation.
+            $expiresAt = [DateTimeOffset]::Parse($entry.expires_at).UtcDateTime
+            # Evaluate this condition to select the correct workflow behavior.
+            if ($expiresAt -gt $now) {
+              # Skip the current item and continue with the next one.
+              continue
+            }
+            # Iterate over the selected collection.
+            foreach ($name in @($entry.archive, $entry.checksum)) {
+              # Evaluate this condition to select the correct workflow behavior.
+              if ($assetsByName.ContainsKey($name)) {
+                # Set $assetId for the following workflow operation.
+                $assetId = $assetsByName[$name].id
+                # Call the GitHub API for release asset management.
+                gh api --method DELETE "repos/$repo/releases/assets/$assetId"
+                # Remove the deleted asset from the in-memory lookup.
+                $assetsByName.Remove($name)
+              }
+            }
+            # Remove the expired commit from the public index.
+            $index.entries.Remove($key)
+            # Write the current result to the workflow log.
+            Write-Host "Removed expired assets for $key."
+          }
+
+          # Stream the updated index into the JSON serializer.
+          $index |
+            # Serialize the updated metadata as JSON.
+            ConvertTo-Json -Depth 8 |
+            # Write the generated file as UTF-8 without a BOM.
+            Set-Content -Path $indexPath -Encoding utf8NoBOM
+          # Upload the verified release asset.
+          gh release upload $tag $indexPath --repo $repo --clobber
