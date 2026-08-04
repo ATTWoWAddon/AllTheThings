@@ -41,61 +41,60 @@ local ItemFilterOnRefresh = function(self)
 	end
 end
 
-local allEquipmentFilters = {	-- Filter IDs
-	21,  -- 1H Axes
-	22,  -- 2H Axes
-	23,  -- 1H Maces
-	24,  -- 2H Maces
-	25,  -- 1H Swords
-	26,  -- 2H Swords
+app.EquipmentFilters = {
+	[21] = true,  -- 1H Axes
+	[22] = true,  -- 2H Axes
+	[23] = true,  -- 1H Maces
+	[24] = true,  -- 2H Maces
+	[25] = true,  -- 1H Swords
+	[26] = true,  -- 2H Swords
 
-	20,  -- Daggers
-	34,  -- Fist Weapons
-	29,  -- Polearms
-	28,  -- Staves
-	35,  -- Warglaives
+	[20] = true,  -- Daggers
+	[34] = true,  -- Fist Weapons
+	[29] = true,  -- Polearms
+	[28] = true,  -- Staves
+	[35] = true,  -- Warglaives
 
-	32,  -- Bows
-	33,  -- Crossbows
-	31,  -- Guns
-	27,  -- Wands
-	36,  -- Thrown
+	[32] = true,  -- Bows
+	[33] = true,  -- Crossbows
+	[31] = true,  -- Guns
+	[27] = true,  -- Wands
 
-	8,   -- Shields
-	1,   -- Held in Off-Hand
+	[8] = true,   -- Shields
+	[1] = true,   -- Held in Off-Hand
 
-	4,   -- Cloth
-	5,   -- Leather
-	6,   -- Mail
-	7,   -- Plate
+	[4] = true,   -- Cloth
+	[5] = true,   -- Leather
+	[6] = true,   -- Mail
+	[7] = true,   -- Plate
 
-	40,  -- Head
-	41,  -- Shoulder
-	42,  -- Chest
-	44,  -- Hands
-	46,  -- Legs
+	[40] = true,  -- Head
+	[41] = true,  -- Shoulder
+	[42] = true,  -- Chest
+	[44] = true,  -- Hands
+	[46] = true,  -- Legs
 
-	3,   -- Back
-	43,  -- Wrist
-	45,  -- Waist
-	47,  -- Feet
+	[3] = true,   -- Back
+	[43] = true,  -- Wrist
+	[45] = true,  -- Waist
+	[47] = true,  -- Feet
 
-	10,  -- Shirt
-	9,   -- Tabard
-	2,   -- Cosmetic
-	57,  -- Profession Equipment
+	[10] = true,  -- Shirt
+	[9] = true,   -- Tabard
+	[2] = true,   -- Cosmetic
+	[57] = true,  -- Profession Equipment
 
-	51,  -- Neck
-	52,  -- Finger
-	53,  -- Trinket
+	[51] = true,	-- Neck
+	[52] = true,	-- Finger
+	[53] = true,	-- Trinket
 
-	11,  -- Artifacts
-	54,  -- Artifact Relics
+	[11] = true,	-- Artifacts
+	[54] = true,	-- Artifact Relic
 
-	50,  -- Miscellaneous
-	55,  -- Consumable
-	113, -- Bags
-	104, -- Quest Items
+	[50] = true,	-- Miscellaneous
+	[55] = true,	-- Consumables
+	[113] = true,	-- Bag
+	[104] = true,	-- Quest Items
 }
 
 for i,filterID in ipairs({
@@ -183,8 +182,8 @@ local buttonAll = child:CreateButton(
 { text = L.ALL_BUTTON, tooltip = L.ALL_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
-		for k,v in pairs(allEquipmentFilters) do
-			settings:SetFilter(v, true)
+		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+			settings:SetFilter(filterID, true)
 		end
 		settings:UpdateMode(1)
 	end,
@@ -202,8 +201,8 @@ local buttonNone = child:CreateButton(
 { text = L.UNCHECK_ALL_BUTTON, tooltip = L.UNCHECK_ALL_BUTTON_TOOLTIP, },
 {
 	OnClick = function(self)
-		for k,v in pairs(allEquipmentFilters) do
-			settings:SetFilter(v, false)
+		for filterID in pairs(app.EquipmentFilters) do
+			settings:SetFilter(filterID, false)
 		end
 		settings:UpdateMode(1)
 	end,
