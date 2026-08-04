@@ -965,29 +965,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(JEWELCRAFTING, {
 		n(DISCOVERY, {
-			spell(305981, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Awakened Leviathan's Eye Loop
-				i(171082),	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
-			})),
-			spell(299018, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Leviathan's Eye Loop
+			spell(299018, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Ascended Leviathan's Eye Loop
 				i(168772),	-- Design: Ascended Leviathan's Eye Loop (RECIPE!)
 			})),
-			spell(289174, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Kraken's Eye Loop
-				i(166541),	-- Design: Emblazoned Kraken's Eye Loop (RECIPE!)
+			spell(305981, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Awakened Leviathan's Eye Loop
+				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
 			})),
-			spell(289105, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Kraken's Eye Loop
-				i(166540),	-- Design: Imbued Kraken's Eye Loop (RECIPE!)
-			})),
-			spell(299016, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Leviathan's Eye Loop
+			spell(299017, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Leviathan's Eye Loop
 				i(168771),	-- Design: Crushing Leviathan's Eye Loop (RECIPE!)
 			})),
-			spell(289180, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Spirited Kraken's Eye Loop
+			spell(289175, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Emblazoned Kraken's Eye Loop
+				i(166541),	-- Design: Emblazoned Kraken's Eye Loop (RECIPE!)
+			})),
+			spell(289181, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Eternal Kraken's Eye Loopp
 				i(166543),	-- Design: Eternal Kraken's Eye Loop (RECIPE!)
 			})),
-			spell(289179, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Tidal Kraken's Eye Loop
+			spell(289174, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Kraken's Eye Loop
+				i(166540),	-- Design: Imbued Kraken's Eye Loop (RECIPE!)
+			})),
+			spell(289180, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Spirited Kraken's Eye Loop
 				i(166542),	-- Design: Spirited Kraken's Eye Loop (RECIPE!)
 			})),
+			spell(305980, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Peerless Leviathan's Eye Loop
+				i(171082),	-- Design: Peerless Leviathan's Eye Loop (RECIPE!)
+			})),
 			spell(305982, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Leviathan's Eye Loop
-				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
+				i(174365),	-- Design: Unbound Leviathan's Eye Loop (RECIPE!)
 			})),
 		}),
 		header(HEADERS.Spell, 31252, {	-- Prospecting
