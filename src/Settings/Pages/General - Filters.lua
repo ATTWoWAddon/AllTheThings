@@ -82,25 +82,14 @@ app.EquipmentFilters = {
 	[10] = true,  -- Shirt
 	[9] = true,   -- Tabard
 	[2] = true,   -- Cosmetic
+
 	[57] = true,  -- Profession Equipment
-
-	[51] = true,	-- Neck
-	[52] = true,	-- Finger
-	[53] = true,	-- Trinket
-
-	[11] = true,	-- Artifacts
-	[54] = true,	-- Artifact Relic
-
-	[50] = true,	-- Miscellaneous
-	[55] = true,	-- Consumables
-	[113] = true,	-- Bag
-	[104] = true,	-- Quest Items
 }
 
 for i,filterID in ipairs({
 	21, 22, 23, 24, 25, 26, -- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
 	20, 34, 29, 28, 35,     -- Daggers, Fist Weapons, Polearms, Staves, Warglaives
-	32, 33, 31, 36, 27,     -- Bows, Crossbows, Guns, Wands, Thrown,
+	32, 33, 31, 27,         -- Bows, Crossbows, Guns, Wands,
 	8, 1                    -- Shields, Off-hands
 }) do
 	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
@@ -119,7 +108,7 @@ for i,filterID in ipairs({
 end
 
 for i, filterID in ipairs({
-	4, 5, 6, 7,		    -- Cloth, Leather, Mail, Plate
+	4, 5, 6, 7,		     -- Cloth, Leather, Mail, Plate
 	40, 41, 42, 44, 46, -- Head, Shoulder, Chest, Hands, Legs
 	3, 43, 45, 47,      -- Back, Wrist, Waist, Feet
 	10, 9, 2,           -- Shirt, Tabard, Cosmetic
@@ -131,26 +120,6 @@ for i, filterID in ipairs({
 		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 300, -6)
 	-- Spacing
 	elseif filterID == 40 or filterID == 3 or filterID == 10 or filterID == 57 then
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
-	else
-		filter:AlignBelow(last)
-	end
-	filter.filterID = filterID
-	filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
-	last = filter
-end
-
-for i, filterID in ipairs({
-	51, 52, 53,       -- Neck, Finger, Trinket
-	11, 54,           -- Artifacts, Artifact Relics
-	50, 55, 113, 104, -- Miscellaneous, Consumable, Bags, Quest Items
-}) do
-	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick)
-	-- Start
-	if filterID == 51 then
-		filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 550, -6)
-	-- Spacing
-	elseif filterID == 11 or filterID == 50 then
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
 	else
 		filter:AlignBelow(last)
