@@ -5128,7 +5128,7 @@ exploration(16781),	-- The Ring of Glory
 exploration(16782),	-- Defiant Ring
 exploration(16783),	-- Wreck of Gral's Belly
 exploration(16786),	-- Gate of the Western Fang
-exploration(16788),	-- Wreck of Sethralis's Scale
+exploration(16788),	-- Wreck of Sethraliss's Scale \\ Wreck of Sethralis's Scale
 exploration(16789),	-- The Fangs
 exploration(16790),	-- Path of Whispers
 exploration(16792),	-- Venom Rise
@@ -5156,7 +5156,7 @@ exploration(16996),	-- Crypt of The Lost Warrior
 exploration(16997),	-- Crypt of the Disgraced
 exploration(17022),	-- Cursed Depths
 exploration(17023),	-- The Seal of Wrath
-exploration(17107),	-- Demolition Dome
+exploration(17107),	-- Dummy Dome \\ Demolition Dome
 exploration(17316),	-- Vaults of Atal'Utek
 exploration(17650),	-- Amani Foothold
 exploration(17680),	-- The Soulcoil Well
@@ -5168,7 +5168,7 @@ exploration(17686),	-- Altar of the Six Winds
 exploration(17687),	-- The Vile Crypt
 exploration(17688),	-- The Venomducts
 exploration(17689),	-- Halls of the Malignant
-exploration(17701),	-- The Crucible of Venom
+exploration(17701),	-- The Coiled Altar \\ The Crucible of Venom
 exploration(17702),	-- The Tomb of Ula'tek
 exploration(17710),	-- The Carnage Pit
 exploration(17711),	-- The Altar of Fangs
@@ -5176,3 +5176,9 @@ exploration(17712),	-- Sacrificial Approach
 exploration(17713),	-- Mutation Chambers
 exploration(17714),	-- Ancient Burrow
 exploration(17715),	-- The Chamber of Virulence
+12.1.0.68412
+exploration(17718),	-- The Great Sea
+exploration(17719),	-- The Forbidding Sea
+exploration(17720),	-- The Forbidding Sea
+exploration(17729),	-- Northern Amani Bulwark \\ North Amani Outpost
+exploration(17730),	-- Eastern Amani Outpost \\ East Amani Outpost

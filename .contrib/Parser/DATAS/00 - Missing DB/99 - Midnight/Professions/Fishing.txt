@@ -1,7 +1,7 @@
 12.1.0.68209
 r(1295404),	-- Spotted Killifish
 r(1295405),	-- Toxic Tlhapi
-r(1295406),	-- Ula-tek Snakehead
+r(1295406),	-- Ula'tek Snakehead \\ Ula-tek Snakehead
 r(1295407),	-- Sulfurous Sludgefish
 r(1295408),	-- Coiled Stargorger
 r(1295409),	-- Dirty Darter
@@ -28,7 +28,7 @@ Missing in Fishing
 12.1.0.68209
 r(1295404),	-- Spotted Killifish
 r(1295405),	-- Toxic Tlhapi
-r(1295406),	-- Ula-tek Snakehead
+r(1295406),	-- Ula'tek Snakehead \\ Ula-tek Snakehead
 r(1295407),	-- Sulfurous Sludgefish
 r(1295408),	-- Coiled Stargorger
 r(1295409),	-- Dirty Darter

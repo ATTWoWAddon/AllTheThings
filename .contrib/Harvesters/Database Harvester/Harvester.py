@@ -692,11 +692,10 @@ def create_missing_files(flavor: str) -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing != Quests:
-            print('Missing File: ', thing)
-            create_missing_file(thing, flavor)
-            print('Post Process: ', thing)
-            post_process(thing, flavor)
+        print('Missing File: ', thing)
+        create_missing_file(thing, flavor)
+        print('Post Process: ', thing)
+        post_process(thing, flavor)
 
 
 """How to add latest data from a new Build"""

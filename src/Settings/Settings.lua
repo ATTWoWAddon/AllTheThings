@@ -1601,6 +1601,21 @@ settings.ToggleAccountMode = function(self)
 		app.print(L.TITLE_ACCOUNT..L.MODE.."|R "..L.DISABLED..".")
 	end
 end
+settings.ToggleFilters = function(self)
+	self:ForceRefreshFromToggle()
+	if (settings:GetFilter(4) and not (app.ClassIndex == 5 or app.ClassIndex == 8 or app.ClassIndex == 9)) -- Cloth
+	or (settings:GetFilter(5) and not (app.ClassIndex == 4 or app.ClassIndex == 10 or app.ClassIndex == 11 or app.ClassIndex == 12)) -- Leather
+	or (settings:GetFilter(6) and not (app.ClassIndex == 3 or app.ClassIndex == 7 or app.ClassIndex == 13)) -- Mail
+	or (settings:GetFilter(7) and not (app.ClassIndex == 1 or app.ClassIndex == 2 or app.ClassIndex == 6)) then -- Plate
+		settings:ResetFilters()	-- Class Defaults
+		app.print(L.FILTERS_PAGE.." "..L.CLASS_DEFAULTS_BUTTON.."|R "..L.ENABLED..".")
+	else
+		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+			settings:SetFilter(filterID, true)
+		end
+		app.print(L.FILTERS_PAGE.." "..L.ALL_BUTTON.."|R "..L.ENABLED..".")
+	end
+end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode)
 	self:UpdateMode(1)

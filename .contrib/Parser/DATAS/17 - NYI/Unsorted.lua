@@ -929,6 +929,293 @@ root(ROOTS.Unsorted, {
 			i(280273),	-- Droopy Longwick Rope
 			i(280275),	-- Hanging Longwick Rope
 
+			i(275488),	-- Preyhunter's Polished Brigandine
+			i(275489),	-- Preyhunter's Polished Greatbelt
+			i(275490),	-- Preyhunter's Polished Greatboots
+			i(275491),	-- Preyhunter's Polished Handguards
+			i(275492),	-- Preyhunter's Polished Helmet
+			i(275493),	-- Preyhunter's Polished Pauldrons
+			i(275494),	-- Preyhunter's Polished Tassets
+			i(275495),	-- Preyhunter's Polished Vambraces
+			i(275496),	-- Preyhunter's Refined Cord
+			i(275497),	-- Preyhunter's Refined Crown
+			i(275498),	-- Preyhunter's Refined Cuffs
+			i(275499),	-- Preyhunter's Refined Epaulet
+			i(275500),	-- Preyhunter's Refined Gloves
+			i(275501),	-- Preyhunter's Refined Slippers
+			i(275502),	-- Preyhunter's Refined Tights
+			i(275503),	-- Preyhunter's Refined Vestments
+			i(275504),	-- Preyhunter's Rugged Bindings
+			i(275505),	-- Preyhunter's Rugged Clasp
+			i(275506),	-- Preyhunter's Rugged Grips
+			i(275507),	-- Preyhunter's Rugged Haubergeon
+			i(275508),	-- Preyhunter's Rugged Legguards
+			i(275509),	-- Preyhunter's Rugged Plume
+			i(275510),	-- Preyhunter's Rugged Sabatons
+			i(275511),	-- Preyhunter's Rugged Shoulderguards
+			i(275512),	-- Preyhunter's Sleek Armlets
+			i(275513),	-- Preyhunter's Sleek Belt
+			i(275514),	-- Preyhunter's Sleek Boots
+			i(275515),	-- Preyhunter's Sleek Gauntlets
+			i(275516),	-- Preyhunter's Sleek Jerkin
+			i(275517),	-- Preyhunter's Sleek Mask
+			i(275518),	-- Preyhunter's Sleek Shoulderpads
+			i(275519),	-- Preyhunter's Sleek Trousers
+			i(275522),	-- Preyhunter's Refined Shawl
+			i(275523),	-- Preyhunter's Sleek Capelet
+			i(275524),	-- Preyhunter's Rugged Stole
+			i(275525),	-- Preyhunter's Polished Cloak
+			i(275532),	-- Preyhunter's Hatchet
+			i(275533),	-- Preyhunter's Kukri
+			i(275537),	-- Preyhunter's Hammer
+			i(275539),	-- Preyhunter's Ritual Blade
+			i(275541),	-- Preyhunter's Warglaive
+			i(275542),	-- Preyhunter's Longbow
+			i(275543),	-- Preyhunter's Spear
+			i(275544),	-- Preyhunter's Staff
+			i(275546),	-- Preyhunter's Falchion
+			i(275547),	-- Preyhunter's Lantern
+			i(275548),	-- Preyhunter's Tower Shield
+			i(276571),	-- Greathelm of Nalorakk's Chosen
+			i(276572),	-- Helm of Akil'zon's Chosen \\ Helm of Jan'alai's Chosen
+			i(276573),	-- Cowl of Halazzi's Chosen
+			i(276574),	-- Headdress of Jan'alai's Chosen \\ Headdress of Akil'zon's Chosen
+			i(276575),	-- Shoulderplates of Nalorakk's Chosen
+			i(276576),	-- Breastplate of Nalorakk's Chosen
+			i(276577),	-- Greatcloak of Nalorakk's Chosen
+			i(276578),	-- Wristplates of Nalorakk's Chosen
+			i(276579),	-- Handguards of Nalorakk's Chosen
+			i(276580),	-- Greatbelt of Nalorakk's Chosen
+			i(276581),	-- Wargreaves of Nalorakk's Chosen
+			i(276582),	-- Warboots of Nalorakk's Chosen
+			i(276583),	-- Pauldrons of Akil'zon's Chosen \\ Pauldrons of Jan'alai's Chosen
+			i(276584),	-- Chainmail of Akil'zon's Chosen \\ Chainmail of Jan'alai's Chosen
+			i(276585),	-- Cape of Akil'zon's Chosen \\ Cape of Jan'alai's Chosen
+			i(276586),	-- Armbands of Akil'zon's Chosen \\ Armbands of Jan'alai's Chosen
+			i(276587),	-- Gauntlets of Akil'zon's Chosen \\ Gauntlets of Jan'alai's Chosen
+			i(276588),	-- Girdle of Akil'zon's Chosen \\ Girdle of Jan'alai's Chosen
+			i(276589),	-- Leggings of Akil'zon's Chosen \\ Leggings of Jan'alai's Chosen
+			i(276590),	-- Sabatons of Akil'zon's Chosen \\ Sabatons of Jan'alai's Chosen
+			i(276591),	-- Mantle of Halazzi's Chosen
+			i(276592),	-- Tunic of Halazzi's Chosen
+			i(276593),	-- Pelt of Halazzi's Chosen
+			i(276594),	-- Wristwraps of Halazzi's Chosen
+			i(276595),	-- Gloves of Halazzi's Chosen
+			i(276596),	-- Belt of Halazzi's Chosen
+			i(276597),	-- Breeches of Halazzi's Chosen
+			i(276598),	-- Anklewraps of Halazzi's Chosen
+			i(276599),	-- Epaulets of Jan'alai's Chosen \\ Epaulets of Akil'zon's Chosen
+			i(276600),	-- Vestments of Jan'alai's Chosen \\ Vestments of Akil'zon's Chosen
+			i(276601),	-- Cloak of Jan'alai's Chosen \\ Cloak of Akil'zon's Chosen
+			i(276602),	-- Bracelets of Jan'alai's Chosen \\ Bracelets of Akil'zon's Chosen
+			i(276603),	-- Handwraps of Jan'alai's Chosen \\ Handwraps of Akil'zon's Chosen
+			i(276604),	-- Sash of Jan'alai's Chosen \\ Sash of Akil'zon's Chosen
+			i(276605),	-- Pantaloons of Jan'alai's Chosen \\ Pantaloons of Akil'zon's Chosen
+			i(276606),	-- Footwraps of Jan'alai's Chosen \\ Footwraps of Akil'zon's Chosen
+			i(276825),	-- Bulwark of Nalorakk's Chosen
+			i(276826),	-- Focus of Jan'alai's Chosen \\ Focus of Akil'zon's Chosen
+			i(276827),	-- Warstaff of Jan'alai's Chosen \\ Warstaff of Akil'zon's Chosen
+			i(276828),	-- Sword of Halazzi's Chosen
+			i(276829),	-- Mace of Akil'zon's Chosen \\ Mace of Jan'alai's Chosen
+			i(276830),	-- Dagger of Halazzi's Chosen
+			i(276831),	-- Warblade of Nalorakk's Chosen
+			i(276832),	-- Warspear of Akil'zon's Chosen \\ Warspear of Jan'alai's Chosen
+			i(276833),	-- Warbow of Akil'zon's Chosen \\ Warbow of Jan'alai's Chosen
+			i(276834),	-- Warglaive of Halazzi's Chosen
+			i(276835),	-- Axe of Akil'zon's Chosen \\ Axe of Jan'alai's Chosen
+			i(276836),	-- Wand of Jan'alai's Chosen \\ Wand of Akil'zon's Chosen
+			i(276837),	-- Waraxe of Nalorakk's Chosen
+			i(277803),	-- Venom-Cursed Spellcarver
+			i(277809),	-- Venom-Cursed Claymore
+			i(279217),	-- Venom-Cursed Dragonhawk's Shroud \\ Venom-Cursed Eagle's Shroud
+			i(279220),	-- Venom-Cursed Lynx's Mane
+			i(279222),	-- Venom-Cursed Eagle's Mantle \\ Venom-Cursed Dragonhawk's Mantle
+			i(279223),	-- Venom-Cursed Bear's Greatcloak
+			i(279576),	-- Void Vestige
+			i(244347),	-- Purified Troll Urn
+			i(245991),	-- Purified Sin'dorei Candle \\ Purified Sindorei Candle
+			i(245993),	-- Purified Floating Lantern
+			i(248101),	-- Traditional Brewfest Stein
+			i(252042),	-- Purified Troll Pitcher
+			i(253396),	-- Purified Crude Axe
+			i(253703),	-- Purified Crude Hammer
+			i(255652),	-- Purified Troll Loop
+			i(255712),	-- Purified Ancient Urn
+			i(256361),	-- Purified Troll Pendant
+			i(256684),	-- Purified Troll Amulet
+			i(258540),	-- Purified Troll Ring
+			i(263876),	-- Purified Folk Mirror
+			i(267205),	-- Purified Folk Candle
+			i(272142),	-- Purified Earthen Pot
+			i(277764),	-- Venom-Cursed Bear's Battle Bands
+			i(277765),	-- Venom-Cursed Bear's Warbelt
+			i(277766),	-- Venom-Cursed Bear's Pauldrons
+			i(277767),	-- Venom-Cursed Bear's Greaves
+			i(277768),	-- Venom-Cursed Bear's Jaws
+			i(277769),	-- Venom-Cursed Bear's Gauntlets
+			i(277770),	-- Venom-Cursed Bear's Charge
+			i(277771),	-- Venom-Cursed Bear's Chestguard
+			i(277772),	-- Venom-Cursed Eagle's Scalebands \\ Venom-Cursed Dragonhawk's Scalebands
+			i(277773),	-- Venom-Cursed Eagle's Waistguard \\ Venom-Cursed Dragonhawk's Waistguard
+			i(277774),	-- Venom-Cursed Eagle's Amice \\ Venom-Cursed Dragonhawk's Amice
+			i(277775),	-- Venom-Cursed Eagle's Legguards \\ Venom-Cursed Dragonhawk's Legguards
+			i(277776),	-- Venom-Cursed Eagle's Guise \\ Venom-Cursed Dragonhawk's Guise
+			i(277777),	-- Venom-Cursed Eagle's Grips \\ Venom-Cursed Dragonhawk's Grips
+			i(277778),	-- Venom-Cursed Eagle's Flight \\ Venom-Cursed Dragonhawk's Flight
+			i(277779),	-- Venom-Cursed Eagle's Crest \\ Venom-Cursed Dragonhawk's Crest
+			i(277780),	-- Venom-Cursed Lynx's Bracers
+			i(277781),	-- Venom-Cursed Lynx's Buckle
+			i(277782),	-- Venom-Cursed Lynx's Spaulders
+			i(277783),	-- Venom-Cursed Lynx's Breeches
+			i(277784),	-- Venom-Cursed Lynx's Gaze
+			i(277785),	-- Venom-Cursed Lynx's Claws
+			i(277786),	-- Venom-Cursed Lynx's Paws
+			i(277787),	-- Venom-Cursed Lynx's Harness
+			i(277788),	-- Venom-Cursed Dragonhawk's Wristbands \\ Venom-Cursed Eagle's Wristbands
+			i(277789),	-- Venom-Cursed Dragonhawk's Cinch \\ Venom-Cursed Eagle's Cinch
+			i(277790),	-- Venom-Cursed Dragonhawk's Wingspan \\ Venom-Cursed Eagle's Wingspan
+			i(277791),	-- Venom-Cursed Dragonhawk's Leggings \\ Venom-Cursed Eagle's Leggings
+			i(277792),	-- Venom-Cursed Dragonhawk's Plumage \\ Venom-Cursed Eagle's Plumage
+			i(277793),	-- Venom-Cursed Dragonhawk's Handwraps \\ Venom-Cursed Eagle's Handwraps
+			i(277794),	-- Venom-Cursed Dragonhawk's Talons \\ Venom-Cursed Eagle's Talons
+			i(277795),	-- Venom-Cursed Dragonhawk's Robes \\ Venom-Cursed Eagle's Robes
+			i(277798),	-- Venom-Cursed Spellfang
+			i(277799),	-- Venom-Cursed Cudgel
+			i(277800),	-- Venom-Cursed Focus
+			i(277801),	-- Venom-Cursed Boneglaive
+			i(277802),	-- Venom-Cursed Guillotine
+			i(277804),	-- Venom-Cursed Longbow
+			i(277805),	-- Venom-Cursed Dirk
+			i(277806),	-- Venom-Cursed Hidepiercer
+			i(277807),	-- Venom-Cursed Ritual Staff
+			i(277808),	-- Venom-Cursed Gladius
+			i(277810),	-- Venom-Cursed Aegis
+			i(278696),	-- Purified Dracthyr Stein
+			i(278701),	-- Purified Goblin Cup
+			i(279329),	-- Amani Forgemaster's Rack
+			i(280305),	-- Soulcoil Remnant
+			i(280333),	-- Pirate's Eyepatch
+			i(280335),	-- Brewfest Crate
+			i(280337),	-- Traditional Brewfest Banner
+			i(280339),	-- Brewfest Fence
+			i(280341),	-- Brewfest Fencepost
+			i(280343),	-- Hanging Brewfest Wreath
+			i(280377),	-- Breath of Jan'alai
+			i(280446),	-- Unnerving Bait
+			i(263709),	-- Amani Forgemaster's Workbench
+			i(274422),	-- Ossified Relic
+			i(279335),	-- Enchanted Voidwell Fish
+			i(279337),	-- Coiled Amani Hookshot
+			i(279339),	-- Proudmoore Ship-in-a-Bottle
+			i(279341),	-- Aetherlume Field Lamp
+			i(279343),	-- Piercing Amani Lapis
+			i(279346),	-- Stretched Snakeskin Rack
+			i(279348),	-- Mounted Moby
+			i(279350),	-- Rolled Bed Linens \\ Twilight's Blade Bedroll
+			i(279353),	-- Tortollan Slingsack
+			i(280102),	-- Handful of Corrosive Coins
+			i(280513),	-- Color-Curious Candle
+			i(280540),	-- Lil' Mon
+			i(280581),	-- Wintry Witchwick's Rider
+			i(280625),	-- Framed Moonbrook Quilt \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_BarnQuilt01.M2
+			i(280627),	-- Jansen Farm Floral Basket \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_FloralBasket01.M2
+			i(280629),	-- Sentinel Hill Rocking Chair \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_RockingChair01.M2
+			i(280631),	-- Demont Orchard Juicer \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_AppleJuicer01.M2
+			i(280633),	-- Westfall Harvest Lamp \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_HangingLight01.M2
+			i(280635),	-- Maxwell Stables Saddle \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_SaddleStand01.M2
+			i(280637),	-- Torquewrench Tractor \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_Tractor01.M2
+			i(280639),	-- Saldean Autumnal Woven Rug \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Rug01.M2
+			i(280642),	-- Furlbrow Farm Pumpkin Trio \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Pumpkins01.M2
+			i(280644),	-- Molsen Farm Corn Row \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Corn01.M2
+			i(280646),	-- Old Moonbrook Creeping Ivy \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Vines01.M2
+			i(280650),	-- Westfall Farmer's Shed \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Shed01.M2
+			i(280652),	-- Sentinel Hill Picnic Table \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_PicnicTable01.M2
+			i(280654),	-- Old Moonbrook Daylight Window \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Window01_Day.M2
+			i(280690),	-- Bow of the Snapper
+			i(280691),	-- Dagger of the Slithering Ritual
+			i(280692),	-- Plunderer's Pummeler
+			i(280695),	-- Skully's Skullcleaver
+			i(280698),	-- Szarith's Underbelly Slicer
+			i(280700),	-- Armbands of the Rotten Claw
+			i(280701),	-- Waistwrap of the Fanged
+			i(280709),	-- Triple Threat Pauldrons
+			i(280713),	-- Big Mon's Buckle
+			i(280715),	-- Eye of Skully
+			i(280718),	-- Unflappable Flapping Cape
+			i(280732),	-- Warbound Pack of Hero Mistcrests
+			i(280734),	-- Warbound Pack of Champion Mistcrests
+			i(280737),	-- Warbound Pack of Veteran Mistcrests
+			i(280752),	-- "Cursed Gaze of Ula'tek" Mural
+			i(280757),	-- Chiseled Amani Tablet
+			i(280762),	-- Roaring Amani Garnet
+			i(280842),	-- Shadowhunters' Hexblade
+			i(280873),	-- Protected Tortollan Scroll Case
+			i(281021),	-- Eerie Lure
+			i(281226),	-- Arsenal: Scout Team Seven Weapons
+			i(281227),	-- Soulcoiler's Rush'kah
+			i(281244),	-- Amani Scout's Quiver
+			i(281245),	-- Amani Scout's Shield
+			i(281247),	-- Amani Scout's Axe
+			i(281248),	-- Amani Scout's Bow
+			i(281249),	-- Amani Scout's Mojo
+			i(281311),	-- Amani Scout's Spear
+			i(281325),	-- Amani Scout's Quarterstaff
+			i(281326),	-- Amani Scout's Staff
+			i(274765),	-- Fleeting Alluring Nostrum
+			i(278397),	-- Ephemeral Star Ooze
+			i(279332),	-- Keen Hex Mask
+			i(280846),	-- Beguiling Memories of the Sea
+			i(281405),	-- Cache of Void-Touched Armaments: Boots
+			i(281406),	-- Cache of Void-Touched Armaments: Legs
+			i(281407),	-- Cache of Void-Touched Armaments: Belts
+			i(281408),	-- Cache of Void-Touched Armaments: Gloves
+			i(281409),	-- Cache of Void-Touched Armaments: Bracers
+			i(281410),	-- Cache of Void-Touched Armaments: Chest
+			i(281411),	-- Cache of Void-Touched Armaments: Cloak
+			i(281412),	-- Cache of Void-Touched Armaments: Shoulder
+			i(281413),	-- Cache of Void-Touched Armaments: Head
+			i(281414),	-- Cache of Void-Touched Armaments: Weapons
+			i(281415),	-- Cache of Void-Touched Armaments: Necklaces
+			i(281416),	-- Cache of Void-Touched Armaments: Rings
+			i(281417),	-- Cache of Void-Touched Armaments: Boots
+			i(281418),	-- Cache of Void-Touched Armaments: Legs
+			i(281419),	-- Cache of Void-Touched Armaments: Belts
+			i(281420),	-- Cache of Void-Touched Armaments: Gloves
+			i(281421),	-- Cache of Void-Touched Armaments: Bracers
+			i(281422),	-- Cache of Void-Touched Armaments: Chest
+			i(281423),	-- Cache of Void-Touched Armaments: Cloak
+			i(281424),	-- Cache of Void-Touched Armaments: Shoulder
+			i(281425),	-- Cache of Void-Touched Armaments: Head
+			i(281426),	-- Cache of Void-Touched Armaments: Weapons
+			i(281427),	-- Cache of Void-Touched Armaments: Necklaces
+			i(281428),	-- Cache of Void-Touched Armaments: Rings
+			i(281429),	-- Cache of Void-Touched Armaments
+			i(281566),	-- Amani Warrior's Cleaver
+			i(281567),	-- Profane Ritual Staff
+			i(281568),	-- Vul'zahn's Smuggled Spear
+			i(281569),	-- Quiver of the Drowned Marksman
+			i(281570),	-- Amani Incense Stick
+			i(281571),	-- Focus of Fangs
+			i(274677),	-- Sky Blue Riverside Room Plans
+			i(274678),	-- Verdant Riverside Room Plans
+			i(268970),	-- Majestic Eagle Statue
+			i(268972),	-- Pressed Sanguithorn
+			i(268973),	-- Bone Pen
+			i(268974),	-- Deactivated Amani Hex Ward
+			i(268975),	-- Amani War Axe
+			i(268976),	-- "Aromatic" Bottle
+			i(268977),	-- Ossein Fish Trinket
+			i(268978),	-- Torga Statue
+			i(269019),	-- Amani Construction Hammer
+			i(269020),	-- Scrimshaw Ward
+			i(269021),	-- Jan'alai Bibelot
+			i(269937),	-- Neighborhood Knick Knack
+			i(275271),	-- Recipe: Venom-Spiced Cutlets
+			i(279356),	-- Opalescent Amani Peridot
+			i(280503),	-- Ulantu's Notes
+			i(282347),	-- Old Moonbrook Nighttime Window
+
+
 			--[[ If Darkal Needs
 			n(CLASS, {
 				-- Cloak, Wrist, Waist, Shoulder, Legs, Head, Hands, Feet, Chest
@@ -1257,6 +1544,9 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(264368),	-- ??
 			}),
+			i(276245),	-- Shadow Spirehawk
+			i(282425),	-- Band of the Beast Reaper
+			i(282426),	-- Draenic Drive Chain
 		})),
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 			filter(COSMETIC, {

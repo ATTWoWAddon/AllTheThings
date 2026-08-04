@@ -1,7 +1,7 @@
 12.1.0.68209
 r(1291687),	-- Coiled Snake-Eye
-r(1296501),	-- Coiled Hookshot
-r(1296502),	-- Fine Captain's Bottle
+r(1296501),	-- Coiled Amani Hookshot \\ Coiled Hookshot
+r(1296502),	-- Proudmoore Ship-in-a-Bottle \\ Fine Captain's Bottle
 r(1296503),	-- Aetherlume Field Lamp
 r(1297585),	-- R0CKY
 r(1297647),	-- G-00
@@ -14,8 +14,8 @@ Missing in Engineering
 
 12.1.0.68209
 r(1291687),	-- Coiled Snake-Eye
-r(1296501),	-- Coiled Hookshot
-r(1296502),	-- Fine Captain's Bottle
+r(1296501),	-- Coiled Amani Hookshot \\ Coiled Hookshot
+r(1296502),	-- Proudmoore Ship-in-a-Bottle \\ Fine Captain's Bottle
 r(1296503),	-- Aetherlume Field Lamp
 r(1297585),	-- R0CKY
 r(1297647),	-- G-00

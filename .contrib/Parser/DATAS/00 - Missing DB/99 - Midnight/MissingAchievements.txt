@@ -1,3 +1,5 @@
+12.0.7.67227
+ach(62413),	-- The Curse of Ula'tek
 12.1.0.68209
 ach(62460),	-- Family Battler of Outland
 ach(62461),	-- Family Battler of Cataclysm
@@ -21,3 +23,20 @@ ach(62482),	-- Humanoid Battler of Cataclysm
 ach(62483),	-- Magic Battler of Cataclysm
 ach(62487),	-- Mechanical Battler of Cataclysm
 ach(62488),	-- Undead Battler of Cataclysm
+12.1.0.68412
+ach(63669),	-- Watch Out Behind You
+ach(63670),	-- Comforting Da Spirits
+ach(63679),	-- In Case Of Emergency
+ach(63681),	-- Heroic: Nymrissa Wavecaller
+ach(63682),	-- Mythic: Nymrissa Wavecaller
+ach(63683),	-- Nymrissa Wavecaller
+12.1.0.68569
+ach(63686),	-- Nymrissa Wavecaller Guild Run
+ach(63687),	-- Heroic: Nymrissa Wavecaller Guild Run
+ach(63688),	-- Mythic: Nymrissa Wavecaller Guild Run
+12.1.0.68914
+ach(63695),	-- Arena Exercise
+ach(63696),	-- Arena Exercise
+ach(63697),	-- Arena Exercise
+ach(63698),	-- Arena Exercise
+ach(63699),	-- World Wide Trainer

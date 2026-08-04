@@ -34832,7 +34832,7 @@ s(168882)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulc
 s(168883)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
 s(168884)/i(190618),	-- Lattice of the Distant Keeper \\ [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Armor - Leather Chest
 10.0.0.44649
-s(180653)/i(193485),	-- Protective Gloves
+s(180653)/i(193485),	-- Protective Gloves \\ Engineer's Protective Gloves
 10.0.0.45661
 s(183298)/i(198246),	-- Khaz'gorite Encased Samophlange \\ Titanicium Encased Samophlange \\ Multitool T2 [PH] \\ Multitool T2
 10.0.0.46479
@@ -34902,10 +34902,10 @@ s(304381)/i(268224),	-- Venom Warden's Greaves
 s(304382)/i(268224),	-- Venom Warden's Greaves
 s(304383)/i(268224),	-- Venom Warden's Greaves
 s(304384)/i(268224),	-- Venom Warden's Greaves
-s(304385)/i(268225),	-- Spelunker's Drenched Legguards
-s(304386)/i(268225),	-- Spelunker's Drenched Legguards
-s(304387)/i(268225),	-- Spelunker's Drenched Legguards
-s(304388)/i(268225),	-- Spelunker's Drenched Legguards
+s(304385)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
+s(304386)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
+s(304387)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
+s(304388)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
 s(304389)/i(268226),	-- Swelling Sea Spaulders
 s(304390)/i(268226),	-- Swelling Sea Spaulders
 s(304391)/i(268226),	-- Swelling Sea Spaulders
@@ -37291,18 +37291,18 @@ s(307793)/i(272005),	-- Venomous Gladiator's Tabard
 s(307794)/i(272006),	-- Venomous Gladiator's Tabard
 s(307795)/i(272007),	-- Venomous Gladiator's Prestigious Cloak
 s(307796)/i(272010),	-- Venomous Gladiator's Prestigious Cloak
-s(307859)/i(272225),	-- Galerider's Mantle
+s(307859)/i(272225),	-- Pyrewalker's Mantle \\ Galerider's Mantle
 s(307860)/i(272226),	-- Miststalker's Shroud
-s(307861)/i(272227),	-- Pyrewalker's Veil
+s(307861)/i(272227),	-- Galerider's Veil \\ Pyrewalker's Veil
 s(307862)/i(272230),	-- Pledgebearer's Pall
-s(307863)/i(272231),	-- Galerider's Doublet
-s(307864)/i(272232),	-- Galerider's Buskins
-s(307865)/i(272233),	-- Galerider's Gloves
-s(307866)/i(272234),	-- Galerider's Miter
-s(307867)/i(272235),	-- Galerider's Treads
-s(307868)/i(272236),	-- Galerider's Mantlet
-s(307869)/i(272237),	-- Galerider's Obi
-s(307870)/i(272238),	-- Galerider's Wraps
+s(307863)/i(272231),	-- Pyrewalker's Doublet \\ Galerider's Doublet
+s(307864)/i(272232),	-- Pyrewalker's Buskins \\ Galerider's Buskins
+s(307865)/i(272233),	-- Pyrewalker's Gloves \\ Galerider's Gloves
+s(307866)/i(272234),	-- Pyrewalker's Miter \\ Galerider's Miter
+s(307867)/i(272235),	-- Pyrewalker's Treads \\ Galerider's Treads
+s(307868)/i(272236),	-- Pyrewalker's Mantlet \\ Galerider's Mantlet
+s(307869)/i(272237),	-- Pyrewalker's Obi \\ Galerider's Obi
+s(307870)/i(272238),	-- Pyrewalker's Wraps \\ Galerider's Wraps
 s(307871)/i(272239),	-- Miststalker's Brigandine
 s(307872)/i(272240),	-- Miststalker's Striders
 s(307873)/i(272241),	-- Miststalker's Grips
@@ -37311,14 +37311,14 @@ s(307875)/i(272243),	-- Miststalker's Cuisses
 s(307876)/i(272244),	-- Miststalker's Spaulders
 s(307877)/i(272245),	-- Miststalker's Cinch
 s(307878)/i(272246),	-- Miststalker's Wristbands
-s(307879)/i(272247),	-- Pyrewalker's Byrnie
-s(307880)/i(272248),	-- Pyrewalker's Chausses
-s(307881)/i(272249),	-- Pyrewalker's Chain Clasps
-s(307882)/i(272250),	-- Pyrewalker's Gaze
-s(307883)/i(272251),	-- Pyrewalker's Chausses
-s(307884)/i(272252),	-- Pyrewalker's Mantle
-s(307885)/i(272253),	-- Pyrewalker's Mail Skirt
-s(307886)/i(272254),	-- Pyrewalker's Mesh Wraps
+s(307879)/i(272247),	-- Galerider's Byrnie \\ Pyrewalker's Byrnie
+s(307880)/i(272248),	-- Galerider's Chausses \\ Pyrewalker's Chausses
+s(307881)/i(272249),	-- Galerider's Chain Clasps \\ Pyrewalker's Chain Clasps
+s(307882)/i(272250),	-- Galerider's Gaze \\ Pyrewalker's Gaze
+s(307883)/i(272251),	-- Galerider's Chausses \\ Pyrewalker's Chausses
+s(307884)/i(272252),	-- Galerider's Mantle \\ Pyrewalker's Mantle
+s(307885)/i(272253),	-- Galerider's Mail Skirt \\ Pyrewalker's Mail Skirt
+s(307886)/i(272254),	-- Galerider's Mesh Wraps \\ Pyrewalker's Mesh Wraps
 s(307887)/i(272255),	-- Pledgebearer's Cuirass
 s(307888)/i(272256),	-- Pledgebearer's Sabatons
 s(307889)/i(272257),	-- Pledgebearer's Gauntlets
@@ -37328,13 +37328,13 @@ s(307892)/i(272260),	-- Pledgebearer's Pauldrons
 s(307893)/i(272261),	-- Pledgebearer's Girdle
 s(307894)/i(272262),	-- Pledgebearer's Splints
 s(307895)/i(272266),	-- Forgotten Eidolon's Dagger
-s(307896)/i(272267),	-- Uncoffined Labrys
+s(307896)/i(272267),	-- Unconfined Labrys \\ Uncoffined Labrys
 s(307897)/i(272268),	-- Mask-Etcher
 s(307898)/i(272269),	-- Soulsealer's Headstone
 s(307899)/i(272270),	-- Bonedust Pestle
 s(307900)/i(272271),	-- Spiritbound Focus
 s(307901)/i(272272),	-- Harrowed Partisan
-s(307902)/i(272273),	-- Unshrined Ceremonial Scepter
+s(307902)/i(272273),	-- Enshrined Ceremonial Scepter \\ Unshrined Ceremonial Scepter
 s(307903)/i(272274),	-- Realm Splitter
 s(307904)/i(272275),	-- Soulsinger's Horn
 s(307905)/i(272276),	-- Wailing Bulwark
@@ -37462,20 +37462,20 @@ s(309000)/i(274815),	-- Envenomed Pages
 s(309001)/i(274816),	-- Envenomed False Promise
 s(309069)/i(274914),	--
 s(309116)/i(275030),	-- Slugg's Favorite Fishing Rod
-s(309128)/i(275063),	-- [PH] Taretha Axe - Black
-s(309129)/i(275064),	-- [PH] Taretha Axe - Blue
-s(309130)/i(275065),	-- [PH] Taretha Axe - Purple
-s(309131)/i(275066),	-- [PH] Taretha Axe - White
+s(309128)/i(275063),	-- Foxton's Song of Warmth \\ [PH] Taretha Axe - Black
+s(309129)/i(275064),	-- Foxton's Song of Mercy \\ [PH] Taretha Axe - Blue
+s(309130)/i(275065),	-- Foxton's Song of Binding \\ [PH] Taretha Axe - Purple
+s(309131)/i(275066),	-- Foxton's Song of Strength \\ [PH] Taretha Axe - White
 s(309132)/i(275068),	-- Venomous Legend's Pennant
 s(309133)/i(275070),	-- Sharpened Lightwood Slasher
-s(309253)/i(275230),	-- Azure Bracelet of Friendship
-s(309254)/i(275231),	-- Obsidian Bracelet of Friendship
-s(309255)/i(275232),	-- Leafy Bracelet of Friendship
+s(309253)/i(275230),	-- Moonstone Bracelet of Friendship \\ Azure Bracelet of Friendship
+s(309254)/i(275231),	-- Souldarite Bracelet of Friendship \\ Obsidian Bracelet of Friendship
+s(309255)/i(275232),	-- Moss Agate Bracelet of Friendship \\ Leafy Bracelet of Friendship
 s(309256)/i(275233),	-- Rosy Bracelet of Friendship
 s(309257)/i(275234),	-- Violet Bracelet of Friendship
-s(309258)/i(275235),	-- Ruby Bracelet of Friendship
+s(309258)/i(275235),	-- Star Ruby Bracelet of Friendship \\ Ruby Bracelet of Friendship
 s(309259)/i(275236),	-- Silver Bracelet of Friendship
-s(309260)/i(275237),	-- Crystal Bracelet of Friendship
+s(309260)/i(275237),	-- Dragon's Eye Diamond Bracelet of Friendship \\ Crystal Bracelet of Friendship
 s(309266)/i(275392),	--
 s(309267)/i(275393),	--
 s(309268)/i(275394),	--
@@ -37556,7 +37556,7 @@ s(309366)/i(275532),	-- Preyhunter's Hatchet
 s(309367)/i(275533),	-- Preyhunter's Kukri
 s(309368)/i(275534),	-- Preyhunter's Shiv
 s(309369)/i(275535),	-- Preyhunter's Cudgel
-s(309370)/i(275536),	-- Preyseeker's Scepter
+s(309370)/i(275536),	-- Preyhunter's Scepter \\ Preyseeker's Scepter
 s(309371)/i(275537),	-- Preyhunter's Hammer
 s(309372)/i(275538),	-- Preyhunter's Scimitar
 s(309373)/i(275539),	-- Preyhunter's Ritual Blade
@@ -37576,39 +37576,39 @@ s(309514)/i(275934),	--
 s(309515)/i(275937),	-- Hex Lord's Visage
 s(309516)/i(275938),	-- Hex Lord's Gaze
 s(309523)/i(276000),	-- Stonehide Vambraces
-s(309524)/i(276001),	-- Flamebeak Armguards
+s(309524)/i(276001),	-- Skytalon Armguards \\ Flamebeak Armguards
 s(309525)/i(276002),	-- Shadowclaw Wristguards
-s(309526)/i(276003),	-- Skytalon Bracers
+s(309526)/i(276003),	-- Flamebeak Bracers \\ Skytalon Bracers
 s(309527)/i(276004),	-- Stonehide Sabatons
-s(309528)/i(276005),	-- Flamebeak Treads
+s(309528)/i(276005),	-- Skytalon Treads \\ Flamebeak Treads
 s(309529)/i(276006),	-- Shadowclaw Footpads
-s(309530)/i(276007),	-- Skytalon Sandals
+s(309530)/i(276007),	-- Flamebeak Sandals \\ Skytalon Sandals
 s(309531)/i(276008),	-- Stonehide Gauntlets
-s(309532)/i(276009),	-- Flamebeak Gloves
+s(309532)/i(276009),	-- Skytalon Gloves \\ Flamebeak Gloves
 s(309533)/i(276010),	-- Shadowclaw Handguards
-s(309534)/i(276011),	-- Skytalon Grips
+s(309534)/i(276011),	-- Flamebeak Grips \\ Skytalon Grips
 s(309535)/i(276012),	-- Stonehide Chestguard
-s(309536)/i(276013),	-- Flamebeak Hauberk
+s(309536)/i(276013),	-- Skytalon Hauberk \\ Flamebeak Hauberk
 s(309537)/i(276014),	-- Shadowclaw Jerkin
-s(309538)/i(276015),	-- Skytalon Robes
+s(309538)/i(276015),	-- Flamebeak Robes \\ Skytalon Robes
 s(309539)/i(276016),	-- Stonehide Casque
-s(309540)/i(276017),	-- Flamebeak Helmet
+s(309540)/i(276017),	-- Skytalon Helmet \\ Flamebeak Helmet
 s(309541)/i(276018),	-- Shadowclaw Headdress
-s(309542)/i(276019),	-- Skytalon Crown
+s(309542)/i(276019),	-- Flamebeak Crown \\ Skytalon Crown
 s(309543)/i(276020),	-- Stonehide Pauldrons
-s(309544)/i(276021),	-- Flamebeak Spaulders
+s(309544)/i(276021),	-- Skytalon Spaulders \\ Flamebeak Spaulders
 s(309545)/i(276022),	-- Shadowclaw Shoulderpads
-s(309546)/i(276023),	-- Skytalon Mantle
+s(309546)/i(276023),	-- Flamebeak Mantle \\ Skytalon Mantle
 s(309547)/i(276024),	-- Stonehide Greaves
-s(309548)/i(276025),	-- Flamebeak Breeches
+s(309548)/i(276025),	-- Skytalon Breeches \\ Flamebeak Breeches
 s(309549)/i(276026),	-- Shadowclaw Legguards
-s(309550)/i(276027),	-- Skytalon Leggings
+s(309550)/i(276027),	-- Flamebeak Leggings \\ Skytalon Leggings
 s(309551)/i(276028),	-- Stonehide Girdle
-s(309552)/i(276029),	-- Flamebeak Belt
+s(309552)/i(276029),	-- Skytalon Belt \\ Flamebeak Belt
 s(309553)/i(276030),	-- Shadowclaw Sash
-s(309554)/i(276031),	-- Skytalon Cord
-s(309555)/i(276038),	-- Flamebeak Cloak
-s(309556)/i(276039),	-- Skytalon Drape
+s(309554)/i(276031),	-- Flamebeak Cord \\ Skytalon Cord
+s(309555)/i(276038),	-- Skytalon Cloak \\ Flamebeak Cloak
+s(309556)/i(276039),	-- Flamebeak Drape \\ Skytalon Drape
 s(309557)/i(276040),	-- Shadowclaw Shroud
 s(309558)/i(276041),	-- Stonehide Cape
 s(309559)/i(276042),	-- Templetusk Shield
@@ -37647,30 +37647,30 @@ s(309602)/i(276178),	-- Venom Lancer's Gauntlets
 s(309631)/i(276249),	-- Cloak of the Hash'ura
 s(309632)/i(276250),	-- Tabard of the Hash'ura
 s(309633)/i(276251),	-- Shoulderguards of the Hash'ura
-s(309671)/i(276405),	-- [PH] Rainbow Axe - 1h - Blue
-s(309672)/i(276406),	-- [PH] Rainbow Axe - 1h - Green
+s(309671)/i(276405),	-- Elegant Draenite Chopper \\ [PH] Rainbow Axe - 1h - Blue
+s(309672)/i(276406),	-- Elegant Talasite Chopper \\ [PH] Rainbow Axe - 1h - Green
 s(309673)/i(276407),	-- [PH] Rainbow Axe - 1h - Purple
-s(309674)/i(276408),	-- [PH] Rainbow Axe - 1h - Red
-s(309675)/i(276409),	-- [PH] Rainbow Axe - 2h - Blue
-s(309676)/i(276410),	-- [PH] Rainbow Axe - 2h - Green
+s(309674)/i(276408),	-- Elegant Pyrestone Chopper \\ [PH] Rainbow Axe - 1h - Red
+s(309675)/i(276409),	-- Grand Draenite War Axe \\ [PH] Rainbow Axe - 2h - Blue
+s(309676)/i(276410),	-- Grand Talasite War Axe \\ [PH] Rainbow Axe - 2h - Green
 s(309677)/i(276411),	-- [PH] Rainbow Axe - 2h - Purple
-s(309678)/i(276412),	-- [PH] Rainbow Axe - 2h - Red
-s(309679)/i(276413),	-- [PH] Rainbow Mace- 1h - Blue
-s(309680)/i(276414),	-- [PH] Rainbow Mace- 1h - Green
+s(309678)/i(276412),	-- Grand Pyrestone War Axe \\ [PH] Rainbow Axe - 2h - Red
+s(309679)/i(276413),	-- Ceremonial Draenite War Maul \\ [PH] Rainbow Mace- 1h - Blue
+s(309680)/i(276414),	-- Ceremonial Talasite War Maul \\ [PH] Rainbow Mace- 1h - Green
 s(309681)/i(276415),	-- [PH] Rainbow Mace- 1h - Purple
-s(309682)/i(276416),	-- [PH] Rainbow Mace- 1h - Red
-s(309683)/i(276417),	-- [PH] Rainbow Mace- 2h - Blue
-s(309684)/i(276418),	-- [PH] Rainbow Mace- 2h - Green
+s(309682)/i(276416),	-- Ceremonial Pyrestone War Maul \\ [PH] Rainbow Mace- 1h - Red
+s(309683)/i(276417),	-- Battle-Hardened Draenite War Maul \\ [PH] Rainbow Mace- 2h - Blue
+s(309684)/i(276418),	-- Battle-Hardened Talasite War Maul \\ [PH] Rainbow Mace- 2h - Green
 s(309686)/i(276420),	-- [PH] Rainbow Mace- 2h - Purple
-s(309687)/i(276421),	-- [PH] Rainbow Mace- 2h - Red
+s(309687)/i(276421),	-- Battle-Hardened Pyrestone War Maul \\ [PH] Rainbow Mace- 2h - Red
 s(309698)/i(276531),	-- Cursebreaker's Vambraces
 s(309699)/i(276532),	-- Cursebreaker's Bracers
 s(309700)/i(276533),	-- Cursebreaker's Wristwraps
 s(309701)/i(276534),	-- Cursebreaker's Cuffs
 s(309703)/i(276571),	-- Greathelm of Nalorakk's Chosen
-s(309704)/i(276572),	-- Helm of Jan'alai's Chosen
+s(309704)/i(276572),	-- Helm of Akil'zon's Chosen \\ Helm of Jan'alai's Chosen
 s(309705)/i(276573),	-- Cowl of Halazzi's Chosen
-s(309706)/i(276574),	-- Headdress of Akil'zon's Chosen
+s(309706)/i(276574),	-- Headdress of Jan'alai's Chosen \\ Headdress of Akil'zon's Chosen
 s(309707)/i(276575),	-- Shoulderplates of Nalorakk's Chosen
 s(309708)/i(276576),	-- Breastplate of Nalorakk's Chosen
 s(309709)/i(276577),	-- Greatcloak of Nalorakk's Chosen
@@ -37679,14 +37679,14 @@ s(309711)/i(276579),	-- Handguards of Nalorakk's Chosen
 s(309712)/i(276580),	-- Greatbelt of Nalorakk's Chosen
 s(309713)/i(276581),	-- Wargreaves of Nalorakk's Chosen
 s(309714)/i(276582),	-- Warboots of Nalorakk's Chosen
-s(309715)/i(276583),	-- Pauldrons of Jan'alai's Chosen
-s(309716)/i(276584),	-- Chainmail of Jan'alai's Chosen
-s(309717)/i(276585),	-- Cape of Jan'alai's Chosen
-s(309718)/i(276586),	-- Armbands of Jan'alai's Chosen
-s(309719)/i(276587),	-- Gauntlets of Jan'alai's Chosen
-s(309720)/i(276588),	-- Girdle of Jan'alai's Chosen
-s(309721)/i(276589),	-- Leggings of Jan'alai's Chosen
-s(309722)/i(276590),	-- Sabatons of Jan'alai's Chosen
+s(309715)/i(276583),	-- Pauldrons of Akil'zon's Chosen \\ Pauldrons of Jan'alai's Chosen
+s(309716)/i(276584),	-- Chainmail of Akil'zon's Chosen \\ Chainmail of Jan'alai's Chosen
+s(309717)/i(276585),	-- Cape of Akil'zon's Chosen \\ Cape of Jan'alai's Chosen
+s(309718)/i(276586),	-- Armbands of Akil'zon's Chosen \\ Armbands of Jan'alai's Chosen
+s(309719)/i(276587),	-- Gauntlets of Akil'zon's Chosen \\ Gauntlets of Jan'alai's Chosen
+s(309720)/i(276588),	-- Girdle of Akil'zon's Chosen \\ Girdle of Jan'alai's Chosen
+s(309721)/i(276589),	-- Leggings of Akil'zon's Chosen \\ Leggings of Jan'alai's Chosen
+s(309722)/i(276590),	-- Sabatons of Akil'zon's Chosen \\ Sabatons of Jan'alai's Chosen
 s(309723)/i(276591),	-- Mantle of Halazzi's Chosen
 s(309724)/i(276592),	-- Tunic of Halazzi's Chosen
 s(309725)/i(276593),	-- Pelt of Halazzi's Chosen
@@ -37695,30 +37695,30 @@ s(309727)/i(276595),	-- Gloves of Halazzi's Chosen
 s(309728)/i(276596),	-- Belt of Halazzi's Chosen
 s(309729)/i(276597),	-- Breeches of Halazzi's Chosen
 s(309730)/i(276598),	-- Anklewraps of Halazzi's Chosen
-s(309731)/i(276599),	-- Epaulets of Akil'zon's Chosen
-s(309732)/i(276600),	-- Vestments of Akil'zon's Chosen
-s(309733)/i(276601),	-- Cloak of Akil'zon's Chosen
-s(309734)/i(276602),	-- Bracelets of Akil'zon's Chosen
-s(309735)/i(276603),	-- Handwraps of Akil'zon's Chosen
-s(309736)/i(276604),	-- Sash of Akil'zon's Chosen
-s(309737)/i(276605),	-- Pantaloons of Akil'zon's Chosen
-s(309738)/i(276606),	-- Footwraps of Akil'zon's Chosen
+s(309731)/i(276599),	-- Epaulets of Jan'alai's Chosen \\ Epaulets of Akil'zon's Chosen
+s(309732)/i(276600),	-- Vestments of Jan'alai's Chosen \\ Vestments of Akil'zon's Chosen
+s(309733)/i(276601),	-- Cloak of Jan'alai's Chosen \\ Cloak of Akil'zon's Chosen
+s(309734)/i(276602),	-- Bracelets of Jan'alai's Chosen \\ Bracelets of Akil'zon's Chosen
+s(309735)/i(276603),	-- Handwraps of Jan'alai's Chosen \\ Handwraps of Akil'zon's Chosen
+s(309736)/i(276604),	-- Sash of Jan'alai's Chosen \\ Sash of Akil'zon's Chosen
+s(309737)/i(276605),	-- Pantaloons of Jan'alai's Chosen \\ Pantaloons of Akil'zon's Chosen
+s(309738)/i(276606),	-- Footwraps of Jan'alai's Chosen \\ Footwraps of Akil'zon's Chosen
 s(309742)/i(276641),	-- Corroded Cursebreaker's Vambraces
 s(309743)/i(276642),	-- Corroded Cursebreaker's Bracers
 s(309744)/i(276643),	-- Corroded Cursebreaker's Wristwraps
 s(309745)/i(276644),	-- Corroded Cursebreaker's Cuffs
 s(309883)/i(276825),	-- Bulwark of Nalorakk's Chosen
-s(309884)/i(276826),	-- Focus of Akil'zon's Chosen
-s(309885)/i(276827),	-- Warstaff of Akil'zon's Chosen
+s(309884)/i(276826),	-- Focus of Jan'alai's Chosen \\ Focus of Akil'zon's Chosen
+s(309885)/i(276827),	-- Warstaff of Jan'alai's Chosen \\ Warstaff of Akil'zon's Chosen
 s(309886)/i(276828),	-- Sword of Halazzi's Chosen
-s(309887)/i(276829),	-- Mace of Jan'alai's Chosen
+s(309887)/i(276829),	-- Mace of Akil'zon's Chosen \\ Mace of Jan'alai's Chosen
 s(309888)/i(276830),	-- Dagger of Halazzi's Chosen
 s(309889)/i(276831),	-- Warblade of Nalorakk's Chosen
-s(309890)/i(276832),	-- Warspear of Jan'alai's Chosen
-s(309891)/i(276833),	-- Warbow of Jan'alai's Chosen
+s(309890)/i(276832),	-- Warspear of Akil'zon's Chosen \\ Warspear of Jan'alai's Chosen
+s(309891)/i(276833),	-- Warbow of Akil'zon's Chosen \\ Warbow of Jan'alai's Chosen
 s(309892)/i(276834),	-- Warglaive of Halazzi's Chosen
-s(309893)/i(276835),	-- Axe of Jan'alai's Chosen
-s(309894)/i(276836),	-- Wand of Akil'zon's Chosen
+s(309893)/i(276835),	-- Axe of Akil'zon's Chosen \\ Axe of Jan'alai's Chosen
+s(309894)/i(276836),	-- Wand of Jan'alai's Chosen \\ Wand of Akil'zon's Chosen
 s(309895)/i(276837),	-- Waraxe of Nalorakk's Chosen
 s(309901)/i(276875),	--
 s(309902)/i(276876),	--
@@ -37741,53 +37741,53 @@ s(309938)/i(277306),	-- Venomous Gladiator's Barb
 s(309939)/i(277307),	-- Venomous Gladiator's Basher
 s(309940)/i(277308),	-- Venomous Gladiator's Greataxe
 s(309941)/i(277312),	-- Venomous Gladiator's Axe
-s(309942)/i(277326),	-- Axe of Akil'zon
+s(309942)/i(277326),	-- Axe of the Amani \\ Axe of Akil'zon
 s(309943)/i(277327),	-- Mantle of Nalorakk
-s(310080)/i(277764),	--
-s(310081)/i(277765),	--
-s(310082)/i(277766),	--
-s(310083)/i(277767),	--
-s(310084)/i(277768),	--
-s(310085)/i(277769),	--
-s(310086)/i(277770),	--
-s(310087)/i(277771),	--
-s(310088)/i(277772),	--
-s(310089)/i(277773),	--
-s(310090)/i(277774),	--
-s(310091)/i(277775),	--
-s(310092)/i(277776),	--
-s(310093)/i(277777),	--
-s(310094)/i(277778),	--
-s(310095)/i(277779),	--
-s(310096)/i(277780),	--
-s(310097)/i(277781),	--
-s(310098)/i(277782),	--
-s(310099)/i(277783),	--
-s(310100)/i(277784),	--
-s(310101)/i(277785),	--
-s(310102)/i(277786),	--
-s(310103)/i(277787),	--
-s(310104)/i(277788),	--
-s(310105)/i(277789),	--
-s(310106)/i(277790),	--
-s(310107)/i(277791),	--
-s(310108)/i(277792),	--
-s(310109)/i(277793),	--
-s(310110)/i(277794),	--
-s(310111)/i(277795),	--
-s(310113)/i(277798),	--
-s(310114)/i(277799),	--
-s(310115)/i(277800),	--
-s(310116)/i(277801),	--
-s(310117)/i(277802),	--
+s(310080)/i(277764),	-- Venom-Cursed Bear's Battle Bands
+s(310081)/i(277765),	-- Venom-Cursed Bear's Warbelt
+s(310082)/i(277766),	-- Venom-Cursed Bear's Pauldrons
+s(310083)/i(277767),	-- Venom-Cursed Bear's Greaves
+s(310084)/i(277768),	-- Venom-Cursed Bear's Jaws
+s(310085)/i(277769),	-- Venom-Cursed Bear's Gauntlets
+s(310086)/i(277770),	-- Venom-Cursed Bear's Charge
+s(310087)/i(277771),	-- Venom-Cursed Bear's Chestguard
+s(310088)/i(277772),	-- Venom-Cursed Eagle's Scalebands \\ Venom-Cursed Dragonhawk's Scalebands
+s(310089)/i(277773),	-- Venom-Cursed Eagle's Waistguard \\ Venom-Cursed Dragonhawk's Waistguard
+s(310090)/i(277774),	-- Venom-Cursed Eagle's Amice \\ Venom-Cursed Dragonhawk's Amice
+s(310091)/i(277775),	-- Venom-Cursed Eagle's Legguards \\ Venom-Cursed Dragonhawk's Legguards
+s(310092)/i(277776),	-- Venom-Cursed Eagle's Guise \\ Venom-Cursed Dragonhawk's Guise
+s(310093)/i(277777),	-- Venom-Cursed Eagle's Grips \\ Venom-Cursed Dragonhawk's Grips
+s(310094)/i(277778),	-- Venom-Cursed Eagle's Flight \\ Venom-Cursed Dragonhawk's Flight
+s(310095)/i(277779),	-- Venom-Cursed Eagle's Crest \\ Venom-Cursed Dragonhawk's Crest
+s(310096)/i(277780),	-- Venom-Cursed Lynx's Bracers
+s(310097)/i(277781),	-- Venom-Cursed Lynx's Buckle
+s(310098)/i(277782),	-- Venom-Cursed Lynx's Spaulders
+s(310099)/i(277783),	-- Venom-Cursed Lynx's Breeches
+s(310100)/i(277784),	-- Venom-Cursed Lynx's Gaze
+s(310101)/i(277785),	-- Venom-Cursed Lynx's Claws
+s(310102)/i(277786),	-- Venom-Cursed Lynx's Paws
+s(310103)/i(277787),	-- Venom-Cursed Lynx's Harness
+s(310104)/i(277788),	-- Venom-Cursed Dragonhawk's Wristbands \\ Venom-Cursed Eagle's Wristbands
+s(310105)/i(277789),	-- Venom-Cursed Dragonhawk's Cinch \\ Venom-Cursed Eagle's Cinch
+s(310106)/i(277790),	-- Venom-Cursed Dragonhawk's Wingspan \\ Venom-Cursed Eagle's Wingspan
+s(310107)/i(277791),	-- Venom-Cursed Dragonhawk's Leggings \\ Venom-Cursed Eagle's Leggings
+s(310108)/i(277792),	-- Venom-Cursed Dragonhawk's Plumage \\ Venom-Cursed Eagle's Plumage
+s(310109)/i(277793),	-- Venom-Cursed Dragonhawk's Handwraps \\ Venom-Cursed Eagle's Handwraps
+s(310110)/i(277794),	-- Venom-Cursed Dragonhawk's Talons \\ Venom-Cursed Eagle's Talons
+s(310111)/i(277795),	-- Venom-Cursed Dragonhawk's Robes \\ Venom-Cursed Eagle's Robes
+s(310113)/i(277798),	-- Venom-Cursed Spellfang
+s(310114)/i(277799),	-- Venom-Cursed Cudgel
+s(310115)/i(277800),	-- Venom-Cursed Focus
+s(310116)/i(277801),	-- Venom-Cursed Boneglaive
+s(310117)/i(277802),	-- Venom-Cursed Guillotine
 s(310118)/i(277803),	-- Venom-Cursed Spellcarver
-s(310119)/i(277804),	--
-s(310120)/i(277805),	--
-s(310121)/i(277806),	--
-s(310122)/i(277807),	--
-s(310123)/i(277808),	--
+s(310119)/i(277804),	-- Venom-Cursed Longbow
+s(310120)/i(277805),	-- Venom-Cursed Dirk
+s(310121)/i(277806),	-- Venom-Cursed Hidepiercer
+s(310122)/i(277807),	-- Venom-Cursed Ritual Staff
+s(310123)/i(277808),	-- Venom-Cursed Gladius
 s(310124)/i(277809),	-- Venom-Cursed Claymore
-s(310125)/i(277810),	--
+s(310125)/i(277810),	-- Venom-Cursed Aegis
 s(310178)/i(277912),	--
 s(310179)/i(277951),	-- Venomous Aspirant's Slicer
 s(310180)/i(277970),	-- Venomous Warmonger's Warblade
@@ -37871,10 +37871,10 @@ s(310417)/i(271436),	-- Slitherscale Girdle
 s(310418)/i(271436),	-- Slitherscale Girdle
 s(310419)/i(271436),	-- Slitherscale Girdle
 s(310420)/i(271436),	-- Slitherscale Girdle
-s(310421)/i(268225),	-- Spelunker's Drenched Legguards
-s(310422)/i(268225),	-- Spelunker's Drenched Legguards
-s(310423)/i(268225),	-- Spelunker's Drenched Legguards
-s(310424)/i(268225),	-- Spelunker's Drenched Legguards
+s(310421)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
+s(310422)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
+s(310423)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
+s(310424)/i(268225),	-- Coiled Hex Legguards \\ Spelunker's Drenched Legguards
 s(310425)/i(268248),	-- Amani Summoning Shawl
 s(310426)/i(268248),	-- Amani Summoning Shawl
 s(310427)/i(268248),	-- Amani Summoning Shawl
@@ -38019,13 +38019,13 @@ s(310592)/i(271875),	-- Gaze of the Coiled Watcher
 s(310593)/i(271875),	-- Gaze of the Coiled Watcher
 s(310594)/i(271875),	-- Gaze of the Coiled Watcher
 s(310595)/i(271875),	-- Gaze of the Coiled Watcher
-s(310623)/i(278577),	-- Nightfall Assassin's Tunic
-s(310624)/i(278578),	-- Nightfall Assassin's Mask
-s(310625)/i(278579),	-- Nightfall Assassin's Spaulder
-s(310626)/i(278580),	-- Nightfall Assassin's Gloves
-s(310627)/i(278581),	-- Nightfall Assassin's Belt
-s(310628)/i(278582),	-- Nightfall Assassin's Leggings
-s(310629)/i(278583),	-- Nightfall Assassin's Boots
+s(310623)/i(278577),	-- Ravenholdt Assassin's Tunic \\ Nightfall Assassin's Tunic
+s(310624)/i(278578),	-- Ravenholdt Assassin's Mask \\ Nightfall Assassin's Mask
+s(310625)/i(278579),	-- Ravenholdt Assassin's Spaulder \\ Nightfall Assassin's Spaulder
+s(310626)/i(278580),	-- Ravenholdt Assassin's Gloves \\ Nightfall Assassin's Gloves
+s(310627)/i(278581),	-- Ravenholdt Assassin's Belt \\ Nightfall Assassin's Belt
+s(310628)/i(278582),	-- Ravenholdt Assassin's Leggings \\ Nightfall Assassin's Leggings
+s(310629)/i(278583),	-- Ravenholdt Assassin's Boots \\ Nightfall Assassin's Boots
 s(310630)/i(278584),	-- Thornshadow Assassin's Tunic
 s(310631)/i(278585),	-- Thornshadow Assassin's Mask
 s(310632)/i(278586),	-- Thornshadow Assassin's Spaulder
@@ -38074,8 +38074,8 @@ s(310707)/i(278805),	-- Withered Treant Mask
 s(310717)/i(278869),	-- Lil' Blue Perdition
 s(310718)/i(278870),	-- Lil' Green Perdition
 s(310719)/i(278871),	-- Lil' Purple Perdition
-s(310720)/i(278872),	-- Lil' Red Perdition
-s(310721)/i(278873),	-- Lil' Blue Armageddon
+s(310720)/i(278872),	-- Lil' Perdition's Play-Blade \\ Lil' Red Perdition
+s(310721)/i(278873),	-- Lil' Armegeddon's Play-Blade \\ Lil' Blue Armageddon
 s(310722)/i(278874),	-- Lil' Dark Armageddon
 s(310723)/i(278875),	-- Lil' Green Armageddon
 s(310724)/i(278876),	-- Lil' Red Armageddon
@@ -38115,80 +38115,80 @@ s(310757)/i(278909),	-- Cloak of Chumming
 s(310758)/i(278910),	-- Yl'mul's Waterlogged Wrap
 s(310759)/i(278911),	-- Shipwrecked Shroud
 s(310760)/i(278912),	-- Gral-Blessed Greatcloak
-s(310824)/i(278993),	-- Big Blue Armageddon
+s(310824)/i(278993),	-- Lil' Armegeddon's Play-More \\ Big Blue Armageddon
 s(310825)/i(278994),	-- Big Green Armageddon
 s(310826)/i(279001),	-- Big Dark Armageddon
 s(310827)/i(279002),	-- Big Red Armageddon
-s(310829)/i(279013),	-- [ph] SpiceWitch Chest - Blue
-s(310830)/i(279014),	-- [ph] SpiceWitch Feet - Blue
-s(310831)/i(279015),	-- [ph] SpiceWitch Waist - Blue
-s(310832)/i(279016),	-- [ph] SpiceWitch Gloves- Blue
-s(310833)/i(279017),	-- [ph] SpiceWitch Legs - Blue
-s(310834)/i(279018),	-- [ph] SpiceWitch Head - Blue
-s(310835)/i(279019),	-- [ph] SpiceWitch Shoulders - Blue
-s(310837)/i(279056),	-- [ph] SpiceWitch Chest - Green
-s(310838)/i(279057),	-- [ph] SpiceWitch Feet - Green
-s(310839)/i(279058),	-- [ph] SpiceWitch Waist - Green
-s(310840)/i(279059),	-- [ph] SpiceWitch Gloves- Green
-s(310841)/i(279061),	-- [ph] SpiceWitch Legs - Green
-s(310842)/i(279062),	-- [ph] SpiceWitch Head - Green
-s(310843)/i(279063),	-- [ph] SpiceWitch Shoulders - Green
-s(310844)/i(279066),	-- [ph] SpiceWitch Chest - Grey
-s(310845)/i(279070),	-- [ph] SpiceWitch Head - Blue (Hair Vis)
-s(310846)/i(279071),	-- [ph] SpiceWitch Head - Green (Hair Vis)
-s(310847)/i(279072),	-- [ph] SpiceWitch Feet - Grey
-s(310849)/i(279074),	-- [ph] SpiceWitch Waist - Grey
-s(310850)/i(279075),	-- [ph] SpiceWitch Gloves- Grey
-s(310851)/i(279076),	-- [ph] SpiceWitch Legs - Grey
-s(310852)/i(279077),	-- [ph] SpiceWitch Head - Grey
-s(310853)/i(279078),	-- [ph] SpiceWitch Head - Grey(Hair Vis)
-s(310854)/i(279079),	-- [ph] SpiceWitch Shoulders - Grey
-s(310855)/i(279081),	-- [ph] SpiceWitch Chest - Hallow
-s(310856)/i(279083),	-- [ph] SpiceWitch Feet - Hallow
-s(310857)/i(279084),	-- [ph] SpiceWitch Waist - Hallow
-s(310858)/i(279085),	-- [ph] SpiceWitch Gloves- Hallow
-s(310859)/i(279086),	-- [ph] SpiceWitch Legs - Hallow
-s(310860)/i(279087),	-- [ph] SpiceWitch Head - Hallow
-s(310861)/i(279088),	-- [ph] SpiceWitch Head - Hallow (Hair Vis)
-s(310862)/i(279089),	-- [ph] SpiceWitch Shoulders - Hallow
-s(310863)/i(279095),	-- [ph] SpiceWitch Chest - Orange
-s(310864)/i(279096),	-- [ph] SpiceWitch Feet - Orange
-s(310865)/i(279097),	-- [ph] SpiceWitch Waist - Orange
-s(310866)/i(279098),	-- [ph] SpiceWitch Gloves- Orange
-s(310867)/i(279099),	-- [ph] SpiceWitch Legs - Orange
-s(310868)/i(279101),	-- [ph] SpiceWitch Head - Orange
-s(310869)/i(279102),	-- [ph] SpiceWitch Head - Orange (Hair Vis)
-s(310870)/i(279103),	-- [ph] SpiceWitch Shoulders - Orange
-s(310871)/i(279107),	-- [ph] SpiceWitch Chest - Pink
-s(310872)/i(279108),	-- [ph] SpiceWitch Feet - Pink
-s(310873)/i(279109),	-- [ph] SpiceWitch Waist - Pink
-s(310874)/i(279110),	-- [ph] SpiceWitch Gloves- Pink
-s(310875)/i(279111),	-- [ph] SpiceWitch Legs - Pink
-s(310876)/i(279114),	-- [ph] SpiceWitch Head - Pink
-s(310877)/i(279133),	-- [ph] SpiceWitch Head - Pink (Hair Vis)
-s(310878)/i(279134),	-- [ph] SpiceWitch Shoulders - Pink
-s(310879)/i(279136),	-- [ph] SpiceWitch Shoulders 02 - Blue
-s(310880)/i(279137),	-- [ph] SpiceWitch Shoulders 02 - Green
-s(310881)/i(279138),	-- [ph] SpiceWitch Shoulders 02 - Grey
-s(310882)/i(279139),	-- [ph] SpiceWitch Shoulders 02 - Hallow
-s(310883)/i(279140),	-- [ph] SpiceWitch Shoulders 02 - Orange
-s(310884)/i(279141),	-- [ph] SpiceWitch Shoulders 02 - Pink
-s(310885)/i(279149),	-- [ph] SpiceWitch Head 02 - Blue
-s(310886)/i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
-s(310887)/i(279151),	-- [ph] SpiceWitch Head 02 - Green
-s(310888)/i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
-s(310889)/i(279156),	-- [ph] SpiceWitch Head 02 - Grey
-s(310890)/i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)
-s(310891)/i(279159),	-- [ph] SpiceWitch Head 02 - Hallow
-s(310892)/i(279161),	-- [ph] SpiceWitch Head 02 - Hallow (Hair Vis)
-s(310893)/i(279162),	-- [ph] SpiceWitch Head 02 - Orange
-s(310894)/i(279163),	-- [ph] SpiceWitch Head 02 - Orange (Hair Vis)
-s(310895)/i(279164),	-- [ph] SpiceWitch Head 02 - Pink
-s(310896)/i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
+s(310829)/i(279013),	-- Wintry Witchwick Chestpiece \\ [ph] SpiceWitch Chest - Blue
+s(310830)/i(279014),	-- Wintry Witchwick Boots \\ [ph] SpiceWitch Feet - Blue
+s(310831)/i(279015),	-- Wintry Witchwick Belt \\ [ph] SpiceWitch Waist - Blue
+s(310832)/i(279016),	-- Wintry Witchwick Gloves \\ [ph] SpiceWitch Gloves- Blue
+s(310833)/i(279017),	-- Wintry Witchwick Skirt \\ [ph] SpiceWitch Legs - Blue
+s(310834)/i(279018),	-- Wintry Witchwick Cat Hat \\ [ph] SpiceWitch Head - Blue
+s(310835)/i(279019),	-- Wintry Witchwick Shoulderpads \\ [ph] SpiceWitch Shoulders - Blue
+s(310837)/i(279056),	-- Mossy Witchwick Chestpiece \\ [ph] SpiceWitch Chest - Green
+s(310838)/i(279057),	-- Mossy Witchwick Boots \\ [ph] SpiceWitch Feet - Green
+s(310839)/i(279058),	-- Mossy Witchwick Belt \\ [ph] SpiceWitch Waist - Green
+s(310840)/i(279059),	-- Mossy Witchwick Gloves \\ [ph] SpiceWitch Gloves- Green
+s(310841)/i(279061),	-- Mossy Witchwick Skirt \\ [ph] SpiceWitch Legs - Green
+s(310842)/i(279062),	-- Mossy Witchwick Cat Hat \\ [ph] SpiceWitch Head - Green
+s(310843)/i(279063),	-- Mossy Witchwick Shoulderpads \\ [ph] SpiceWitch Shoulders - Green
+s(310844)/i(279066),	-- Moonlit Witchwick Chestpiece \\ [ph] SpiceWitch Chest - Grey
+s(310845)/i(279070),	-- Wintry Witchwick Flowing Cat Hat \\ [ph] SpiceWitch Head - Blue (Hair Vis)
+s(310846)/i(279071),	-- Mossy Witchwick Flowing Cat Hat \\ [ph] SpiceWitch Head - Green (Hair Vis)
+s(310847)/i(279072),	-- Moonlit Witchwick Boots \\ [ph] SpiceWitch Feet - Grey
+s(310849)/i(279074),	-- Moonlit Witchwick Belt \\ [ph] SpiceWitch Waist - Grey
+s(310850)/i(279075),	-- Moonlit Witchwick Gloves \\ [ph] SpiceWitch Gloves- Grey
+s(310851)/i(279076),	-- Moonlit Witchwick Skirt \\ [ph] SpiceWitch Legs - Grey
+s(310852)/i(279077),	-- Moonlit Witchwick Cat Hat \\ [ph] SpiceWitch Head - Grey
+s(310853)/i(279078),	-- Moonlit Witchwick Flowing Cat Hat \\ [ph] SpiceWitch Head - Grey(Hair Vis)
+s(310854)/i(279079),	-- Moonlit Witchwick Shoulderpads \\ [ph] SpiceWitch Shoulders - Grey
+s(310855)/i(279081),	-- Scarlet Witchwick Chestpiece \\ [ph] SpiceWitch Chest - Hallow
+s(310856)/i(279083),	-- Scarlet Witchwick Boots \\ [ph] SpiceWitch Feet - Hallow
+s(310857)/i(279084),	-- Scarlet Witchwick Belt \\ [ph] SpiceWitch Waist - Hallow
+s(310858)/i(279085),	-- Scarlet Witchwick Gloves \\ [ph] SpiceWitch Gloves- Hallow
+s(310859)/i(279086),	-- Scarlet Witchwick Skirt \\ [ph] SpiceWitch Legs - Hallow
+s(310860)/i(279087),	-- Scarlet Witchwick Cat Hat \\ [ph] SpiceWitch Head - Hallow
+s(310861)/i(279088),	-- Scarlet Witchwick Flowing Cat Hat \\ [ph] SpiceWitch Head - Hallow (Hair Vis)
+s(310862)/i(279089),	-- Scarlet Witchwick Shoulderpads \\ [ph] SpiceWitch Shoulders - Hallow
+s(310863)/i(279095),	-- Autumnal Witchwick Chestpiece \\ [ph] SpiceWitch Chest - Orange
+s(310864)/i(279096),	-- Autumnal Witchwick Boots \\ [ph] SpiceWitch Feet - Orange
+s(310865)/i(279097),	-- Autumnal Witchwick Belt \\ [ph] SpiceWitch Waist - Orange
+s(310866)/i(279098),	-- Autumnal Witchwick Gloves \\ [ph] SpiceWitch Gloves- Orange
+s(310867)/i(279099),	-- Autumnal Witchwick Skirt \\ [ph] SpiceWitch Legs - Orange
+s(310868)/i(279101),	-- Autumnal Witchwick Cat Hat \\ [ph] SpiceWitch Head - Orange
+s(310869)/i(279102),	-- Autumnal Witchwick Flowing Cat Hat \\ [ph] SpiceWitch Head - Orange (Hair Vis)
+s(310870)/i(279103),	-- Autumnal Witchwick Shoulderpads \\ [ph] SpiceWitch Shoulders - Orange
+s(310871)/i(279107),	-- Blushing Witchwick Chestpiece \\ [ph] SpiceWitch Chest - Pink
+s(310872)/i(279108),	-- Blushing Witchwick Boots \\ [ph] SpiceWitch Feet - Pink
+s(310873)/i(279109),	-- Blushing Witchwick Belt \\ [ph] SpiceWitch Waist - Pink
+s(310874)/i(279110),	-- Blushing Witchwick Gloves \\ [ph] SpiceWitch Gloves- Pink
+s(310875)/i(279111),	-- Blushing Witchwick Skirt \\ [ph] SpiceWitch Legs - Pink
+s(310876)/i(279114),	-- Blushing Witchwick Cat Hat \\ [ph] SpiceWitch Head - Pink
+s(310877)/i(279133),	-- Blushing Witchwick Flowing Cat Hat \\ [ph] SpiceWitch Head - Pink (Hair Vis)
+s(310878)/i(279134),	-- Blushing Witchwick Shoulderpads \\ [ph] SpiceWitch Shoulders - Pink
+s(310879)/i(279136),	-- Wintry Witchwick Shouldergourds \\ [ph] SpiceWitch Shoulders 02 - Blue
+s(310880)/i(279137),	-- Mossy Witchwick Shouldergourds \\ [ph] SpiceWitch Shoulders 02 - Green
+s(310881)/i(279138),	-- Moonlit Witchwick Shouldergourds \\ [ph] SpiceWitch Shoulders 02 - Grey
+s(310882)/i(279139),	-- Scarlet Witchwick Shouldergourds \\ [ph] SpiceWitch Shoulders 02 - Hallow
+s(310883)/i(279140),	-- Autumnal Witchwick Shouldergourds \\ [ph] SpiceWitch Shoulders 02 - Orange
+s(310884)/i(279141),	-- Blushing Witchwick Shouldergourds \\ [ph] SpiceWitch Shoulders 02 - Pink
+s(310885)/i(279149),	-- Wintry Witchwick Jack Hat \\ [ph] SpiceWitch Head 02 - Blue
+s(310886)/i(279150),	-- Wintry Witchwick Flowing Jack Hat \\ [ph] SpiceWitch Head 02 - Blue (Hair Vis)
+s(310887)/i(279151),	-- Mossy Witchwick Jack Hat \\ [ph] SpiceWitch Head 02 - Green
+s(310888)/i(279155),	-- Mossy Witchwick Flowing Jack Hat \\ [ph] SpiceWitch Head 02 - Green (Hair Vis)
+s(310889)/i(279156),	-- Moonlit Witchwick Jack Hat \\ [ph] SpiceWitch Head 02 - Grey
+s(310890)/i(279158),	-- Moonlit Witchwick Flowing Jack Hat \\ [ph] SpiceWitch Head 02 - Grey (Hair Vis)
+s(310891)/i(279159),	-- Scarlet Witchwick Jack Hat \\ [ph] SpiceWitch Head 02 - Hallow
+s(310892)/i(279161),	-- Scarlet Witchwick Flowing Jack Hat \\ [ph] SpiceWitch Head 02 - Hallow (Hair Vis)
+s(310893)/i(279162),	-- Autumnal Witchwick Jack Hat \\ [ph] SpiceWitch Head 02 - Orange
+s(310894)/i(279163),	-- Autumnal Witchwick Flowing Jack Hat \\ [ph] SpiceWitch Head 02 - Orange (Hair Vis)
+s(310895)/i(279164),	-- Blushing Witchwick Jack Hat \\ Blushiing Witchwick Jack Hat \\ [ph] SpiceWitch Head 02 - Pink
+s(310896)/i(279165),	-- Blushing Witchwick Flowing Jack Hat \\ Blushiing Witchwick Flowing Jack Hat \\ [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 s(311027)/i(279209),	-- Plainsrunner's Sun Tunic
-s(311029)/i(279217),	-- Venom-Cursed Eagle's Shroud
+s(311029)/i(279217),	-- Venom-Cursed Dragonhawk's Shroud \\ Venom-Cursed Eagle's Shroud
 s(311030)/i(279220),	-- Venom-Cursed Lynx's Mane
-s(311031)/i(279222),	-- Venom-Cursed Dragonhawk's Mantle
+s(311031)/i(279222),	-- Venom-Cursed Eagle's Mantle \\ Venom-Cursed Dragonhawk's Mantle
 s(311032)/i(279223),	-- Venom-Cursed Bear's Greatcloak
 s(311033)/i(279231),	-- Ancient Amani Spear
 s(311034)/i(279232),	-- Ancient Amani Longbow
@@ -38247,7 +38247,7 @@ s(311146)/i(279547),	-- Junkyard Crafter's Vest
 s(311147)/i(279548),	-- Villager's Labor Vest
 s(311148)/i(279549),	-- Witch-Hunter's Undercoat
 s(311149)/i(279551),	-- Radical's Gilded Vestment
-s(311150)/i(279579),	-- Cruel Warrior's Blade
+s(311150)/i(279579),	-- Crusader's Zweihander \\ Cruel Warrior's Blade
 s(311160)/i(279626),	--
 s(311161)/i(279627),	--
 s(311162)/i(279628),	--
@@ -38440,5 +38440,52 @@ s(311348)/i(279814),	--
 s(311349)/i(279815),	--
 s(311350)/i(279816),	--
 s(311351)/i(279817),	--
-s(311352)/i(279818),	-- Basic Iron Sabatons
-s(311353)/i(279819),	-- Basic Steel Sabatons
+s(311352)/i(279818),	-- Basic Steel Sabatons \\ Basic Iron Sabatons
+s(311353)/i(279819),	-- Basic Dark Iron Sabatons \\ Basic Steel Sabatons
+12.1.0.68301
+s(311470)/i(280333),	-- Pirate's Eyepatch
+12.1.0.68412
+s(311561)/i(280689),	-- Big Mon's Big Spear
+s(311562)/i(280690),	-- Bow of the Snapper
+s(311563)/i(280691),	-- Dagger of the Slithering Ritual
+s(311564)/i(280692),	-- Plunderer's Pummeler
+s(311565)/i(280693),	-- Staff of All-Knowing
+s(311566)/i(280694),	-- Blade of the Forgotten
+s(311567)/i(280695),	-- Skully's Skullcleaver
+s(311569)/i(280698),	-- Szarith's Underbelly Slicer
+s(311570)/i(280700),	-- Armbands of the Rotten Claw
+s(311571)/i(280701),	-- Waistwrap of the Fanged
+s(311572)/i(280702),	-- Mantle of the Riser
+s(311573)/i(280704),	-- Siltmouth's Venom Waders
+s(311574)/i(280705),	--
+s(311575)/i(280706),	-- Sss'alik's Rotting Claws
+s(311576)/i(280708),	-- Venom-Shelled Sash
+s(311577)/i(280709),	-- Triple Threat Pauldrons
+s(311578)/i(280710),	-- Garsecg's Barnacled Girdle
+s(311579)/i(280711),	-- Pitted Specter Shackles
+s(311580)/i(280712),	-- Bracers of the Sleeping Hydra
+s(311581)/i(280713),	-- Big Mon's Buckle
+s(311582)/i(280714),	-- Hull Render Hauberk
+s(311583)/i(280718),	-- Unflappable Flapping Cape
+s(311590)/i(280842),	-- Shadowhunters' Hexblade
+12.1.0.68569
+s(311741)/i(281101),	--
+s(311742)/i(281102),	--
+s(311743)/i(281104),	--
+s(311744)/i(281106),	--
+s(311802)/i(281227),	-- Soulcoiler's Rush'kah
+s(311803)/i(281244),	-- Amani Scout's Quiver
+s(311804)/i(281245),	-- Amani Scout's Shield
+s(311805)/i(281247),	-- Amani Scout's Axe
+s(311806)/i(281248),	-- Amani Scout's Bow
+s(311807)/i(281249),	-- Amani Scout's Mojo
+s(311808)/i(281311),	-- Amani Scout's Spear
+s(311809)/i(281325),	-- Amani Scout's Quarterstaff
+s(311810)/i(281326),	-- Amani Scout's Staff
+12.1.0.68675
+s(311941)/i(281566),	-- Amani Warrior's Cleaver
+s(311942)/i(281567),	-- Profane Ritual Staff
+s(311943)/i(281568),	-- Vul'zahn's Smuggled Spear
+s(311944)/i(281569),	-- Quiver of the Drowned Marksman
+s(311945)/i(281570),	-- Amani Incense Stick
+s(311946)/i(281571),	-- Focus of Fangs

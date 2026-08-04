@@ -376,6 +376,10 @@
 1285897@@@Sha-Warped Owl
 3.80.1.68181
 1291315@@@Spring Panda
+3.80.1.68768
+1301737@@@Sunflash Driftmoth
+3.80.2.68943
+435115@@@Guardian Quilen
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -574,6 +578,8 @@
 1298510@@@Reins of the Fire Drake
 1302506@@@Frostwyrm
 1302947@@@Darkshade Drake
+5.5.4.69032
+1309841@@@Tuskarr Hermit Crab
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -1894,7 +1900,6 @@
 435107@@@Forest Windsteed
 435108@@@Daystorm Windsteed
 435109@@@Feathered Windsurfer
-435115@@@Guardian Quilen
 435118@@@Marble Quilen
 435123@@@Gilded Riding Crane
 435124@@@Luxurious Riding Crane
@@ -2576,6 +2581,13 @@
 350220@@@Liquid Hot Magma Slug
 12.0.7.68182
 1292344@@@Bilgewater X-TREME Firework Rocket
+12.0.7.68453
+1279352@@@Stoneforged Sentinel
+12.0.7.68774
+1292356@@@Sunflare Driftmoth
+1299156@@@Shadow Spirehawk
+12.0.7.68887
+1293456@@@Rabbit'ath
 12.1.0.68209
 1266211@@@Venomous Gladiator's Goredrake
 1292668@@@Spirit of Tok'jara
@@ -2608,3 +2620,22 @@
 1305206@@@Crested Aqua Leafmimic
 1305207@@@Crested Verdant Leafmimic
 1305209@@@Crested Violet Leafmimic
+12.1.0.68412
+1296724@@@Autumnal Witchwick's Rider
+1296985@@@Mossy Witchwick's Rider
+1296986@@@Moonlit Witchwick's Rider
+1296987@@@Scarlet Witchwick's Rider
+1296988@@@Blushing Witchwick's Rider
+1296989@@@Carmine Witchwick's Rider
+1297224@@@Auriferous Venomfang
+1297408@@@Preyhunter's Fury
+1299961@@@Topaz Skyfang
+1300779@@@Ruby Writhe
+1301817@@@Whoofle Bramblewing
+1305204@@@Crested Ember Leafmimic
+1309340@@@Wintry Witchwick's Rider
+1309376@@@Veteran Adventurer's Loyal Companion
+12.1.0.68569
+1266703@@@Lab-Grown Stormray
+12.1.0.68824
+1297216@@@Sea-Dwelling Isle Serpent

@@ -10908,3 +10908,16 @@
 17713@@@Mutation Chambers
 17714@@@Ancient Burrow
 17715@@@The Chamber of Virulence
+12.1.0.68301
+17701@@@The Coiled Altar
+12.1.0.68412
+16788@@@Wreck of Sethraliss's Scale
+17107@@@Dummy Dome
+17718@@@The Great Sea
+17719@@@The Forbidding Sea
+17720@@@The Forbidding Sea
+17729@@@North Amani Outpost
+17730@@@East Amani Outpost
+12.1.0.68569
+17729@@@Northern Amani Bulwark
+17730@@@Eastern Amani Outpost

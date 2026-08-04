@@ -2,7 +2,7 @@
 r(1289744),	-- Concentrated Silvermoon Health Potion
 r(1289745),	-- Liquid Luster
 r(1289746),	-- Alluring Nostrum
-r(1296429),	-- Concocted Poisonous Residue
+r(1296429),	-- Ersatz Venom Splatter \\ Concocted Poisonous Residue
 r(1296430),	-- Bubbling Acid Cauldron
 r(1296431),	-- Amani Alchemist's Incense
 
@@ -15,6 +15,6 @@ Missing in Alchemy
 r(1289744),	-- Concentrated Silvermoon Health Potion
 r(1289745),	-- Liquid Luster
 r(1289746),	-- Alluring Nostrum
-r(1296429),	-- Concocted Poisonous Residue
+r(1296429),	-- Ersatz Venom Splatter \\ Concocted Poisonous Residue
 r(1296430),	-- Bubbling Acid Cauldron
 r(1296431),	-- Amani Alchemist's Incense

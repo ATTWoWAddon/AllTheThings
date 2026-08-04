@@ -547,7 +547,7 @@ r(382994),	-- Classic Milling
 r(1290560),	--
 r(1290561),	-- Vantus Rune: Tides
 r(1296504),	-- Ferocious Feline Trinket
-r(1296505),	-- Inscribed Amani Mural
+r(1296505),	-- "Cursed Gaze of Ula'tek" Mural \\ Inscribed Amani Mural
 r(1296506),	-- Chiseled Amani Tablet
 r(1296507),	-- Turquoise Amani Tapestry
 r(1296508),	-- Empty Tortollan Rack
@@ -562,7 +562,7 @@ Missing in Inscription
 r(1290560),	--
 r(1290561),	-- Vantus Rune: Tides
 r(1296504),	-- Ferocious Feline Trinket
-r(1296505),	-- Inscribed Amani Mural
+r(1296505),	-- "Cursed Gaze of Ula'tek" Mural \\ Inscribed Amani Mural
 r(1296506),	-- Chiseled Amani Tablet
 r(1296507),	-- Turquoise Amani Tapestry
 r(1296508),	-- Empty Tortollan Rack

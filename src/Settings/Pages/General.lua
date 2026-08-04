@@ -344,7 +344,7 @@ modeButton:SetScript("OnClick", function()
 
 			-- Filters
 			for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-				settings:SetFilter(i, true)
+				settings:SetFilter(filterID, true)
 			end
 
 			-- Close menu after clicking and refresh
@@ -415,7 +415,7 @@ modeButton:SetScript("OnClick", function()
 
 			-- Filters
 			for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-				settings:SetFilter(i, true)
+				settings:SetFilter(filterID, true)
 			end
 
 			-- Close menu after clicking and refresh
@@ -486,7 +486,7 @@ modeButton:SetScript("OnClick", function()
 
 			-- Filters
 			for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-				settings:SetFilter(i, true)
+				settings:SetFilter(filterID, true)
 			end
 
 			-- Close menu after clicking and refresh
@@ -557,7 +557,7 @@ modeButton:SetScript("OnClick", function()
 
 			-- Filters
 			for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-				settings:SetFilter(i, true)
+				settings:SetFilter(filterID, true)
 			end
 
 			-- Close menu after clicking and refresh
@@ -592,7 +592,7 @@ modeButton:SetScript("OnClick", function()
 
 			-- Filters
 			for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-				settings:SetFilter(i, true)
+				settings:SetFilter(filterID, true)
 			end
 
 			-- Close menu after clicking and refresh

@@ -32,9 +32,9 @@ def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
 
 
 def get_name(expansion: str, quest_id: str) -> str:
-    """This function try to get the quest name from wowhead."""
+    """This function try to get the quest name from wowhead. Currently broken"""
     name: str = ""
-    url = f"https://www.wowhead.com/{expansion}/quest={quest_id}"
+    """url = f"https://www.wowhead.com/{expansion}/quest={quest_id}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.4.600 Chrome/30.0.1599.101 Safari/537.36"
     }
@@ -46,7 +46,7 @@ def get_name(expansion: str, quest_id: str) -> str:
         for r in res1:
             name = f"{r.text}"
     else:
-        name = "--"
+        name = "--"""
     return name
 
 def get_available_expansions(patch: str) -> dict[str, str]:

@@ -1,74 +1,19 @@
-3.4.2.49311
-mount(59569),	-- Bronze Drake
+6.0.1.18179
+mount(17458),	-- Fluorescent Green Mechanostrider
 12.0.0.65560
 mount(1258573),	-- Thunderhoof Celestial
+12.0.7.68774
+mount(1299156),	-- Shadow Spirehawk
 12.1.0.68209
-mount(1266211),	-- Venomous Gladiator's Goredrake
-mount(1292668),	-- Spirit of Tok'jara
 mount(1295958),	-- Swift Spectral Eagle
-mount(1296670),	-- Vicious Lightbloom Boar
-mount(1296672),	-- Vicious Lightbloom Boar
-mount(1296724),	-- [PH] Broomstick Spice - Orange
-mount(1296985),	-- [PH] Broomstick Spice - Green
-mount(1296986),	-- [PH] Broomstick Spice - Grey
-mount(1296987),	-- [PH] Broomstick Spice - Hallow
-mount(1296988),	-- [PH] Broomstick Spice - Pink
-mount(1296989),	-- [PH] Broomstick Spice - Red
-mount(1297217),	-- Caustic Venomfang
-mount(1297220),	-- Crimson Venomfang
-mount(1297404),	-- Apophic Soul Crusher
-mount(1297405),	-- Primeval Skyfriend
-mount(1297407),	-- Hexflame Reaver
-mount(1297408),	-- Preyhunter's Courser
-mount(1298808),	-- Corroded Soul Crusher
-mount(1299963),	-- Violet-Backed Skyfang
-mount(1299965),	-- Emerald Skyfang
-mount(1300776),	-- The Writhing Brood
-mount(1300777),	-- Venomous Coiler
-mount(1300778),	-- Indigo Coiled Horror
-mount(1301070),	-- Breath of Blight
-mount(1301074),	-- Breath of Ruin
-mount(1301775),	-- Umbral Ashes
-mount(1301817),	-- [PH] Pygmy Owl
-mount(1305204),	-- Crested Burnished Leafmimic
-mount(1305206),	-- Crested Aqua Leafmimic
-mount(1305207),	-- Crested Verdant Leafmimic
-mount(1305209),	-- Crested Violet Leafmimic
+12.1.0.68412
+mount(1309340),	-- Wintry Witchwick's Rider
+mount(1309376),	-- Veteran Adventurer's Loyal Companion
 
 
 
 
 Missing in MountDB.lua
 
-12.1.0.68209
-mount(1266211),	-- Venomous Gladiator's Goredrake
-mount(1292668),	-- Spirit of Tok'jara
-mount(1295958),	-- Swift Spectral Eagle
-mount(1296670),	-- Vicious Lightbloom Boar
-mount(1296672),	-- Vicious Lightbloom Boar
-mount(1296724),	-- [PH] Broomstick Spice - Orange
-mount(1296985),	-- [PH] Broomstick Spice - Green
-mount(1296986),	-- [PH] Broomstick Spice - Grey
-mount(1296987),	-- [PH] Broomstick Spice - Hallow
-mount(1296988),	-- [PH] Broomstick Spice - Pink
-mount(1296989),	-- [PH] Broomstick Spice - Red
-mount(1297217),	-- Caustic Venomfang
-mount(1297220),	-- Crimson Venomfang
-mount(1297404),	-- Apophic Soul Crusher
-mount(1297405),	-- Primeval Skyfriend
-mount(1297407),	-- Hexflame Reaver
-mount(1297408),	-- Preyhunter's Courser
-mount(1298808),	-- Corroded Soul Crusher
-mount(1299963),	-- Violet-Backed Skyfang
-mount(1299965),	-- Emerald Skyfang
-mount(1300776),	-- The Writhing Brood
-mount(1300777),	-- Venomous Coiler
-mount(1300778),	-- Indigo Coiled Horror
-mount(1301070),	-- Breath of Blight
-mount(1301074),	-- Breath of Ruin
-mount(1301775),	-- Umbral Ashes
-mount(1301817),	-- [PH] Pygmy Owl
-mount(1305204),	-- Crested Burnished Leafmimic
-mount(1305206),	-- Crested Aqua Leafmimic
-mount(1305207),	-- Crested Verdant Leafmimic
-mount(1305209),	-- Crested Violet Leafmimic
+12.0.0.65560
+mount(1258573),	-- Thunderhoof Celestial

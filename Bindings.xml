@@ -2,6 +2,9 @@
 	<Binding name="ALLTHETHINGS_TOGGLEACCOUNTMODE" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.Settings:ToggleAccountMode();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEFILTERS" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleFilters();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.Settings:ToggleCompletionistMode();
 	</Binding>

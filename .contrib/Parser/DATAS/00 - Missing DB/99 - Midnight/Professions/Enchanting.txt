@@ -2,7 +2,7 @@
 r(1291694),	-- Enchant Weapon - Rite of the Hash'ey
 r(1296498),	-- Keen Hex Mask
 r(1296499),	-- Furious Tiki Mask
-r(1296500),	-- Enchanted Eversong Trout
+r(1296500),	-- Enchanted Voidwell Fish \\ Enchanted Eversong Trout
 
 
 
@@ -13,4 +13,4 @@ Missing in Enchanting
 r(1291694),	-- Enchant Weapon - Rite of the Hash'ey
 r(1296498),	-- Keen Hex Mask
 r(1296499),	-- Furious Tiki Mask
-r(1296500),	-- Enchanted Eversong Trout
+r(1296500),	-- Enchanted Voidwell Fish \\ Enchanted Eversong Trout

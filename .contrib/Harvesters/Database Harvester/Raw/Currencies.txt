@@ -1518,3 +1518,36 @@
 3568@@@Contained Corruption
 3569@@@Cleansing Multiplier
 3570@@@Wave Multiplier
+2.5.5.68575
+1900@@@Arena Points
+1901@@@Honor Points
+3.80.1.68318
+1@@@Currency Token Test Token 4
+2@@@Currency Token Test Token 2
+4@@@Currency Token Test Token 5
+103@@@
+104@@@
+181@@@Honor Points DEPRECATED2
+2589@@@Sidereal Essence
+2711@@@Defiler's Scourgestone
+3097@@@Emblem of Homecoming
+3311@@@Emblem of Final Stand
+3403@@@Titanic Ember
+3406@@@Titanic Fragment
+5.5.4.68317
+104@@@Honor Points DEPRECATED
+390@@@Conquest Points
+392@@@Honor Deprecated 3
+484@@@Conquest BG Meta
+3148@@@Fissure Stone Fragment
+3281@@@Obsidian Fragment
+3350@@@August Stone Fragment
+3407@@@Platinum Coins
+3414@@@August Stone Shard
+3416@@@August Stone Cluster
+12.1.0.68412
+3574@@@PMM Currency 1
+3575@@@PMM Currency 2
+12.1.0.68675
+3583@@@Housing - Going Postal - Personal Best Record - Alliance - Rt1
+3584@@@Housing - Going Postal - Personal Best Record - Alliance - Rt1

@@ -1041,3 +1041,6 @@
 789@@@Bloodsworn Mariner %s
 790@@@%s, Famed Slayer of Ula'tek
 791@@@%s, Venom's End
+12.1.0.68412
+792@@@%s, Servant of Astalor
+794@@@%s the Snake

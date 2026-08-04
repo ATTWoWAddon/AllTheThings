@@ -37,34 +37,34 @@ decor(22925),	-- Shrine of Nalorakk, Loa of War
 decor(22926),	-- Shrine of Jan'alai, Loa of Fire
 decor(22927),	-- Shrine of Akil'zon, Loa of Victory
 decor(23175),	-- Seaside Lounge Chair
-decor(23176),	-- Short Centaur Wall
-decor(23177),	-- Long Centaur Wall
-decor(23178),	-- Closed Centaur Basket
-decor(23179),	-- Open Centaur Basket
-decor(23180),	-- Centaur Table
-decor(23181),	-- Centaur Bench
-decor(23182),	-- Round Centaur Carpet
-decor(23183),	-- Wide Centaur Carpet
-decor(23184),	-- Narrow Centaur Carpet
-decor(23185),	-- Centaur Stove
-decor(23186),	-- Tapered Centaur Wall
+decor(23176),	-- Maruukai Barricade \\ Short Centaur Wall
+decor(23177),	-- Wide Maruukai Barricade \\ Long Centaur Wall
+decor(23178),	-- Maruukai Storage Basket \\ Closed Centaur Basket
+decor(23179),	-- Open Maruukai Storage Basket \\ Open Centaur Basket
+decor(23180),	-- Maruukai Wooden Table \\ Centaur Table
+decor(23181),	-- Maruukai Feast Table \\ Centaur Bench
+decor(23182),	-- Bakar's Napping Rug \\ Round Centaur Carpet
+decor(23183),	-- Ornate Khanam's Rug \\ Wide Centaur Carpet
+decor(23184),	-- Large Ornate Khanam's Rug \\ Narrow Centaur Carpet
+decor(23185),	-- Maruukai Chef's Stove \\ Centaur Stove
+decor(23186),	-- Tapered Maruukai Barricade \\ Tapered Centaur Wall
 decor(23188),	-- Shrine of Halazzi, Loa of the Hunt
-decor(23548),	-- Ball
+decor(23548),	-- Bakar's Favorite Ball \\ Ball
 decor(23549),	-- Pet Food and Water Tray
-decor(23550),	-- Cooked Leg of Meat
-decor(23551),	-- Cooked Rack of Meat
+decor(23550),	-- Bakar's Snack \\ Cooked Leg of Meat
+decor(23551),	-- Bakar's Dinner \\ Cooked Rack of Meat
 decor(23553),	-- Small Wooden Floor Tile
 decor(23554),	-- Large Wooden Floor Tile
-decor(23555),	-- Small Triangular Tile
-decor(23556),	-- Large Triangular Tile
-decor(23557),	-- Tall Round Column
-decor(23558),	-- Short Round Column
-decor(23559),	-- Short Square Column
-decor(23560),	-- Tall Square Column
+decor(23555),	-- Small Triangular Wooden Tile \\ Small Triangular Tile
+decor(23556),	-- Large Triangular Wooden Tile \\ Large Triangular Tile
+decor(23557),	-- Tall Round Wooden Column \\ Tall Round Column
+decor(23558),	-- Short Round Wooden Column \\ Short Round Column
+decor(23559),	-- Short Square Wooden Column \\ Short Square Column
+decor(23560),	-- Tall Square Wooden Column \\ Tall Square Column
 decor(23707),	-- Small Wooden Wall Tile
 decor(23708),	-- Large Wooden Wall Tile
 decor(23709),	-- Wide Wooden Staircase
-decor(23710),	-- Spiraling Wooden Stairs
+decor(23710),	-- Spiral Wooden Stairs \\ Spiraling Wooden Stairs
 decor(23868),	-- Seaside Hanging Lantern
 decor(23869),	-- Seaside Straw Umbrella
 decor(23870),	-- Seaside Painted Surfboard
@@ -99,7 +99,7 @@ decor(25131),	-- The Venomous Abyss Aureate Trophy
 decor(25132),	-- The Venomous Abyss Gleaming Trophy
 decor(25133),	-- The Venomous Abyss Argent Trophy
 decor(25274),	-- Gilded Silvermoon Compass
-decor(25279),	-- Hanging Blood Knights Shield
+decor(25279),	-- Blood Knight's Decorative Shield \\ Hanging Blood Knights Shield
 decor(25284),	-- Sturdy Silvermoon Crate
 decor(25286),	-- Sturdy Silvermoon Crate Lid
 decor(25287),	-- Adorned Sin'dorei Satchel
@@ -122,7 +122,7 @@ decor(26097),	-- Vilescar Weapon Rack
 decor(26196),	-- Rustic Fishing Rack
 decor(26197),	-- Hanging Yellowed Kelp
 decor(26198),	-- Hatchery of Hissing Eggs
-decor(26201),	-- Hanging Candles
+decor(26201),	-- Kobold's Hanging Kandles \\ Hanging Candles
 decor(26202),	-- Arathor Toy Sword
 decor(26203),	-- Twilight Brazier
 decor(26205),	-- Soulcoiler's Ritual Candle
@@ -135,32 +135,32 @@ decor(26370),	-- Empty Tortollan Display Rack
 decor(26371),	-- Sea Glass Bauble
 decor(26372),	-- Aetherlume Field Lamp
 decor(26373),	-- Tortollan Traveler's Chest
-decor(26374),	-- Lost Explorers Mailbox
+decor(26374),	-- Lost Explorers' Mailbox \\ Lost Explorers Mailbox
 decor(26377),	-- Zul'Aman Pine Tree
 decor(26378),	-- Stretched Snakeskin Rack
 decor(26379),	-- Keen Hex Mask
-decor(26381),	-- Amani Forgemaster's Glaive
+decor(26381),	-- Amani Forgemaster's Decorative Spear \\ Amani Forgemaster's Glaive
 decor(26382),	-- Amani Forgemaster's Rack
-decor(26383),	-- Coiled Hookshot
+decor(26383),	-- Coiled Amani Hookshot \\ Coiled Hookshot
 decor(26386),	-- Half-Shell Hot Pot
 decor(26387),	-- Sea Glass Lamp Post
 decor(26389),	-- Apothecary's Tortollan Display Rack
-decor(26391),	-- Concocted Poisonous Residue
-decor(26477),	-- Rock Goblet
+decor(26391),	-- Ersatz Venom Splatter \\ Concocted Poisonous Residue
+decor(26477),	-- Draenei Rock Goblet \\ Rock Goblet
 decor(26478),	-- Ancient Memories of the Sea
 decor(26481),	-- Tortollan Scholar Satchel
 decor(26482),	-- Sealeather Sack
 decor(26483),	-- Collector's Tortollan Display Rack
 decor(26484),	-- Lost Tortollan Scroll
-decor(26485),	-- Fine Captain's Bottle
+decor(26485),	-- Proudmoore Ship-in-a-Bottle \\ Fine Captain's Bottle
 decor(26487),	-- Clumped Asteroidea
 decor(26488),	-- Opalescent Amani Peridot
 decor(26489),	-- Piercing Amani Lapis
 decor(26491),	-- K'areshi Tea Cup
 decor(26492),	-- Purified Dracthyr Stein
 decor(26494),	-- Purified Goblin Cup
-decor(26495),	-- [DNT] [AUTOGEN] 12TB_TwilightsBlade_Furniture_SleepingCot01.m2
-decor(26496),	-- Enchanted Eversong Trout
+decor(26495),	-- Twilight's Blade Bedroll \\ [DNT] [AUTOGEN] 12TB_TwilightsBlade_Furniture_SleepingCot01.m2
+decor(26496),	-- Enchanted Voidwell Fish \\ Enchanted Eversong Trout
 decor(26564),	-- Mason's Tortollan Display Rack
 decor(26613),	-- Warrens Candlecooker
 decor(26614),	-- Kobold Dig-Thing
@@ -179,6 +179,53 @@ decor(26936),	-- Droopy Longwick Rope
 decor(26937),	-- Longwick Rope
 decor(26938),	-- Cozy Kobold Crate
 decor(26939),	-- Hanging Longwick Rope
-decor(27041),	-- Forgotten Amani Mural
+decor(27041),	-- "Summoning of Ula'tek" Mural \\ Forgotten Amani Mural
 decor(27042),	-- "The Hunger Awakens" Mural
 decor(27043),	-- "Rage of the Shackled" Mural
+12.1.0.68301
+decor(25666),	-- Traditional Brewfest Banner
+decor(25672),	-- Brewfest Fence
+decor(25673),	-- Brewfest Fencepost
+decor(25674),	-- Hanging Brewfest Wreath
+decor(25675),	-- Brewfest Crate
+12.1.0.68412
+decor(17800),	-- Flat Snakeskin Canopy
+decor(25139),	-- Venomous Defender's Barricade \\ [DNT] [AUTOGEN] 12SN_Snakeoid_Defense_Barricade01.m2
+decor(25765),	-- Framed Moonbrook Quilt \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_BarnQuilt01.M2
+decor(25895),	-- Jansen Farm Floral Basket \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_FloralBasket01.M2
+decor(25896),	-- Saldean Autumnal Woven Rug \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Rug01.M2
+decor(26367),	-- Protected Tortollan Scroll Case
+decor(26380),	-- Chiseled Amani Tablet
+decor(26384),	-- "Cursed Gaze of Ula'tek" Mural
+decor(26490),	-- Roaring Amani Garnet
+decor(26703),	-- Sentinel Hill Rocking Chair \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_RockingChair01.M2
+decor(26704),	-- Demont Orchard Juicer \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_AppleJuicer01.M2
+decor(26705),	-- Furlbrow Farm Pumpkin Trio \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Pumpkins01.M2
+decor(26706),	-- Molsen Farm Corn Row \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Corn01.M2
+decor(26707),	-- Old Moonbrook Creeping Ivy \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Vines01.M2
+decor(26708),	-- Westfall Farmer's Shed \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Shed01.M2
+decor(26875),	-- Westfall Harvest Lamp \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_HangingLight01.M2
+decor(26876),	-- Sentinel Hill Picnic Table \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_PicnicTable01.M2
+decor(26877),	-- Old Moonbrook Daylight Window \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Window01_Day.M2
+decor(26878),	-- Tuskarr Fire Pit
+decor(26879),	-- Tuskarr Hanging Grill
+decor(26935),	-- Seeker's First Draft
+decor(26940),	-- Maxwell Stables Saddle \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_SaddleStand01.M2
+decor(27044),	-- Beguiling Memories of the Sea
+decor(27045),	-- Torquewrench Tractor \\ [DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_Tractor01.M2
+decor(27046),	-- Tuskarr Fishing Gear Rack
+decor(27047),	-- [DNT] [AUTOGEN] 12PH_Leg_Book_Troll_03.M2
+decor(27167),	-- Color-Curious Candle
+12.1.0.68675
+decor(17295),	-- [DNT] [AUTOGEN] 12PH_Durotar_Barrel_Large01.M2
+decor(17296),	-- [DNT] [AUTOGEN] 12PH_Durotar_Keg01.M2
+decor(17798),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Canopy01.m2
+decor(18486),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Canopy04.m2
+decor(21615),	-- Venomjade Necklace
+decor(25137),	-- Venomous Thread
+decor(25138),	-- Venomous Globule
+decor(26204),	-- Corrosive Cache
+decor(26375),	-- Pungent Atal'Utek Shroom
+decor(26376),	-- Atal'Utek Ivy
+12.1.0.68914
+decor(27973),	-- Old Moonbrook Nighttime Window

@@ -877,7 +877,6 @@ i(198039),	-- Rock of Appreciation
 i(198090),	-- Jar of Excess Slime
 i(198402),	-- Maruuk Cooking Pot
 i(198409),	-- Personal Shell
-i(198428),	-- Tuskarr Dinghy
 10.0.0.44707
 i(194052),	-- Forlorn Funeral Pall
 i(198227),	-- Giggle Goggles \\ Gnoll Goggles
@@ -1357,8 +1356,11 @@ i(277954),	-- Jaktu's Cursed Blade
 i(278557),	-- Otoola's Recognition
 i(279021),	-- Forgotten Memento
 i(279052),	-- Ancient Amani Mask
-i(279054),	-- Privateer's Dolphin Idol
+i(279054),	-- Idol of Blue Water and Blue Sky \\ Privateer's Dolphin Idol
 i(279590),	-- Venomous Champion's Illustrious Banner
+12.1.0.68301
+i(280201),	-- Book of Storytime
+i(280419),	-- Cursed Badge of the Soulcoilers
 
 
 
@@ -1371,21 +1373,3 @@ i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
 i(46779),	-- of Cenarius \\ Path of Cenarius
 5.5.3.64308
 i(45047),	-- box Tiger \\ Sandbox Tiger
-12.1.0.68209
-i(268504),	-- Malfunctioning Staff
-i(274817),	-- Gold Starfish
-i(274921),	-- Pearl of Jubilation
-i(275683),	-- G-00
-i(275825),	-- Ula'tek's Sssacrificial Rain
-i(275988),	-- Corrosive Victory
-i(276189),	-- Effigy of Dundun
-i(276207),	-- Preyhunter's Masquerade
-i(276229),	-- Preyhunter's Trophy Stand
-i(276258),	-- Companion Command Crystal
-i(276925),	-- Idol of Ula'tek
-i(277954),	-- Jaktu's Cursed Blade
-i(278557),	-- Otoola's Recognition
-i(279021),	-- Forgotten Memento
-i(279052),	-- Ancient Amani Mask
-i(279054),	-- Privateer's Dolphin Idol
-i(279590),	-- Venomous Champion's Illustrious Banner

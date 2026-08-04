@@ -256,6 +256,12 @@
 263923@@@Sha-Warped Beaky
 3.80.1.68044
 266912@@@Pinky
+3.80.1.68768
+268569@@@Sunflutter Driftmoth
+3.80.2.68943
+52894@@@Lashtail Hatchling
+189655@@@Backswimmer Timbertooth
+251819@@@Fishmonger May
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -292,7 +298,6 @@
 52343@@@Landro's Lichling
 52344@@@Nightsaber Cub
 52831@@@Winterspring Cub
-52894@@@Lashtail Hatchling
 53048@@@Legs
 53225@@@Pterrordax Hatchling
 53232@@@Voodoo Figurine
@@ -2078,6 +2083,8 @@
 259429@@@Roofus
 5.5.4.67279
 267231@@@Kor'kron Iron Star
+5.5.4.69032
+272644@@@Clone
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -18908,7 +18915,6 @@
 189160@@@Black Slyvern Pup
 189209@@@Whitewhisker
 189211@@@Time-Lost Slyvern
-189655@@@Backswimmer Timbertooth
 189657@@@Dusky Timbertooth
 189660@@@Light Baby Timbertooth
 189661@@@Time-Lost Timbertooth
@@ -23035,7 +23041,6 @@
 249947@@@Crimson Pilgrim
 251804@@@Lil' Chompers
 251817@@@Slippery Saul
-251819@@@Fishmonger May
 251820@@@Fishstick Keith
 251821@@@Festive Eve
 251822@@@Bundled-up Bob
@@ -24437,6 +24442,13 @@
 268498@@@Summer Blossom Cluster
 12.0.7.67808
 263480@@@Riftblade Maella
+12.0.7.68367
+271589@@@Kill Credit [DNT]
+271591@@@Kill Credit [DNT]
+12.0.7.68774
+263995@@@Sunflicker Driftmoth
+12.0.7.68887
+264863@@@Murk'atath
 12.1.0.68209
 253504@@@Aqir Destroyer
 253505@@@N'raqi Commander
@@ -24576,3 +24588,33 @@
 271086@@@Zesty
 271106@@@Poison Dart Frog
 271163@@@Cauldron Concoction
+12.1.0.68301
+270425@@@Ula'took
+12.1.0.68412
+249182@@@12.1 Demon Hunter Champion
+259335@@@Vanessa VanCleef
+268636@@@Archmage's Familiar
+268676@@@Amewbisath
+269085@@@Slithering Presence
+271772@@@Lil' Mon
+271917@@@12.1 Priest Champion
+271920@@@Spirit of Mun'jin
+271935@@@12.1 Warrior Champion
+271936@@@12.1 Paladin Champion
+271937@@@12.1 Hunter Champion
+271944@@@12.1 Mage Champion
+271945@@@12.1 Druid Champion
+271946@@@12.1 Rogue Champion
+271948@@@12.1 Shaman Champion
+271952@@@12.1 Warlock Champion
+12.1.0.68675
+253630@@@Zul'jan
+272671@@@Khadgar
+272984@@@Shadowpine Soldier, Fighter
+12.1.0.68824
+273117@@@Zen'vi Crowbloom
+273118@@@Luma Rootwarden
+273121@@@Nara Kelpthorn
+273123@@@Vulric Bloomborne
+12.1.0.68914
+273727@@@Sound Stalker - 12.1 Raid - Temple of Ula'Tek - Boss 8 - P2 - Right

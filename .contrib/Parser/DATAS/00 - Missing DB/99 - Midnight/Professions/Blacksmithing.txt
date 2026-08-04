@@ -4,7 +4,7 @@ r(1288712),	--
 r(1291682),	-- Odious Alloy
 r(1291683),	-- Hunter's Ritual Stone
 r(1296495),	-- Amani Forgemaster's Workbench
-r(1296496),	-- Amani Forgemaster's Glaive
+r(1296496),	-- Amani Forgemaster's Decorative Spear \\ Amani Forgemaster's Glaive
 r(1296497),	-- Amani Forgemaster's Rack
 
 
@@ -18,5 +18,5 @@ r(1288712),	--
 r(1291682),	-- Odious Alloy
 r(1291683),	-- Hunter's Ritual Stone
 r(1296495),	-- Amani Forgemaster's Workbench
-r(1296496),	-- Amani Forgemaster's Glaive
+r(1296496),	-- Amani Forgemaster's Decorative Spear \\ Amani Forgemaster's Glaive
 r(1296497),	-- Amani Forgemaster's Rack

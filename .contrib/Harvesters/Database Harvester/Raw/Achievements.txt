@@ -18380,3 +18380,31 @@
 63652@@@Hall of Fame: Ula'tek
 63653@@@Pro Poison Patroller
 63656@@@Four-Course Meal
+12.1.0.68301
+63656@@@Taking a Bite out of Slime
+63662@@@Student of Hissstory
+12.1.0.68412
+63254@@@Glory of the Venomous Raider
+63529@@@Mythic: The Coiled Altar
+63550@@@The Coiled Altar (Raid Finder The Venomous Abyss)
+63564@@@The Coiled Altar (Normal The Venomous Abyss)
+63565@@@The Coiled Altar (Heroic The Venomous Abyss)
+63566@@@The Coiled Altar (Mythic The Venomous Abyss)
+63669@@@Watch Out Behind You
+63670@@@Comforting Da Spirits
+63679@@@In Case Of Emergency
+63681@@@Heroic: Nymrissa Wavecaller
+63682@@@Mythic: Nymrissa Wavecaller
+63683@@@Nymrissa Wavecaller
+12.1.0.68569
+63686@@@Nymrissa Wavecaller Guild Run
+63687@@@Heroic: Nymrissa Wavecaller Guild Run
+63688@@@Mythic: Nymrissa Wavecaller Guild Run
+12.1.0.68824
+63440@@@Venomfall Deeps clears
+12.1.0.68914
+63695@@@Arena Exercise
+63696@@@Arena Exercise
+63697@@@Arena Exercise
+63698@@@Arena Exercise
+63699@@@World Wide Trainer
