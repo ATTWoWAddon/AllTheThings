@@ -31,7 +31,7 @@ ach(762,{awp=30002,r=1,u=11,g={
 title(98,{u=30})}}),
 ach(4868,{awp=40003,u=40,g={
 crit(13600,{achID=46,id=5,u=30})}}),
-ach(941,{maps={50,107,119},u=30}),
+ach(941,{awp=30002,maps={50,107,119},u=30}),
 ach(1833,{awp=30002,g={
 crit(16952,{achID=1833,id=1,providers={{"i",58256}}}),
 crit(16945,{achID=1833,id=1,providers={{"i",58274}}}),
@@ -355,7 +355,7 @@ crit(62987,{achID=5548,coords={
 crit(62988,{achID=5548,coords={
 [241]={{56,13}}},id=13,providers={{"n",48683}}})}}),
 ach(1244,{awp=30002}),
-ach(46,{u=30,g={
+ach(46,{awp=30002,u=30,g={
 title(47,{u=30})}}),
 ach(6590,{awp=50004,pb=1,g={
 title(199,{pb=1})}})}),

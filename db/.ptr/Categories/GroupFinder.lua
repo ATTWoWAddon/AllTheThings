@@ -188,7 +188,7 @@ s(62535,113758,{b=1,f=4,u=2}),
 s(62476,113690,{b=1,f=5,u=2}),
 s(62475,113689,{b=1,f=5,u=2})}})}),
 x(4,{
-i(156689,{b=1,description="Rewarded for completing a random cata dungeon during leveling or completing a random cata timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",g={
+i(156689,{awp=70305,b=1,description="Rewarded for completing a random cata dungeon during leveling or completing a random cata timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",g={
 i(113725,{b=1,f=52}),
 i(113726,{b=1,f=52}),
 i(113727,{b=1,f=52}),

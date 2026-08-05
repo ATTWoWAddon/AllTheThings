@@ -24,7 +24,7 @@ ach(948,{awp=30002,r=2,u=11,g={
 title(98,{u=30})}}),
 ach(762,{awp=30002,r=1,u=11,g={
 title(98,{u=30})}}),
-ach(941,{maps={119,1434,1951},sym={{"meta_achievement",939,938,940}},u=30}),
+ach(941,{awp=30002,maps={119,1434,1951},sym={{"meta_achievement",939,938,940}},u=30}),
 ach(1833,{awp=30002,g={
 crit(8999,{achID=1833,id=1,providers={{"i",23164}}}),
 crit(9000,{achID=1833,id=1,providers={{"i",23176}}}),
@@ -277,7 +277,7 @@ crit(3739,{achID=1206,coords={
 crit(3759,{achID=1206,id=1,maps={1411,1413},providers={{"n",10685}}}),
 crit(3760,{achID=1206,id=1,maps={117,1424,1438,1454,1457},providers={{"n",1420}}})}}),
 ach(1244,{awp=30002}),
-ach(46,{sym={{"meta_achievement",42,43,44,45}},u=30,g={
+ach(46,{awp=30002,sym={{"meta_achievement",42,43,44,45}},u=30,g={
 title(47,{u=30})}})}),
 h(-56,{awp=30002,g={
 o(175738,{coords={

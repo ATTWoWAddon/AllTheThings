@@ -18862,7 +18862,7 @@ q(8733,{maps={220},qgs={15362},sourceQuests={8555},u=2}),
 q(8305,{coords={
 [71]={{65,50}}},minReputation={910,0},qgs={15192},sourceQuests={8303},u=2}),
 q(8599,{coords={
-[71]={{59.4,96}}},qgs={15526},qis={21032},sourceQuests={8597},u=2}),
+[71]={{59.4,96}}},qgs={15526},qis={21032},sourceQuests={8576},u=2}),
 q(8730,{crs={11583},maps={287},qgs={13020},qis={21138},sourceQuests={8555},u=2,g={
 i(21142,{crs={11583},description="You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",u=2}),
 i(21529,{b=1,f=51,lvl=25,u=2}),

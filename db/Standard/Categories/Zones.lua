@@ -495,7 +495,7 @@ crit(27977,{achID=9924,id=41,providers={{"s",181842}}}),
 crit(27978,{achID=9924,id=42,providers={{"s",181842}}}),
 crit(27869,{achID=9924,id=43,providers={{"s",181842}},r=1}),
 crit(27864,{achID=9924,id=43,providers={{"s",181842}},r=2})}}),
-ach(941,{maps={50,107,119}}),
+ach(941,{awp=30002,maps={50,107,119}}),
 ach(1833,{awp=30002,g={
 crit(4717,{achID=1833,id=157,providers={{"i",1708}}}),
 crit(4718,{achID=1833,id=160,providers={{"i",7676}}}),
@@ -797,9 +797,9 @@ toy(92738,{b=1,pb=1})}}),
 ach(13695,{awp=80200,pb=1,g={
 p(2683,{b=1,itemID=169349,npcID=154822,pb=1,spellID=301020})}}),
 ach(1182,{awp=30002}),
-ach(942,{maps={77,102,107},r=2,g={
+ach(942,{awp=30002,maps={77,102,107},r=2,g={
 title(48)}}),
-ach(943,{maps={77,102,107},r=1,g={
+ach(943,{awp=30002,maps={77,102,107},r=1,g={
 title(48)}}),
 ach(4958,{awp=40003,maps={107,121,241}}),
 ach(5794,{awp=40200}),
@@ -874,8 +874,8 @@ crit(16226,{achID=5548,coords={
 ach(1244,{awp=30002}),
 ach(41092,{awp=110100,pb=1,g={
 p(3518,{b=1,itemID=205013,npcID=204237,pb=1,spellID=407946})}}),
-ach(46,{
-title(47)}),
+ach(46,{awp=30002,g={
+title(47)}}),
 ach(13144,{awp=80001,g={
 crit(43123,{achID=12989,id=3}),
 crit(43123,{achID=40956,awp=110007,id=10})}}),

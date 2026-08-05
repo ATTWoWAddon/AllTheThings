@@ -3641,7 +3641,7 @@ i(12205,{coords={
 [70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in previously higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh."}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source."}),
 i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225}})})}),
-x(2,{
+x(2,{awp=20001,g={
 flt(3,{
 s(10068,25043,{f=3,lvl=27}),
 s(10066,25041,{f=3,lvl=27}),
@@ -4767,9 +4767,9 @@ r(34007,{itemID=28279,requireSkill=333,skillID=2493}),
 r(27948,{itemID=22542,requireSkill=333,skillID=2493}),
 r(27913,{itemID=22532,requireSkill=333,skillID=2493}),
 r(33992,{itemID=28270,requireSkill=333,skillID=2493}),
-r(27962,{awp=20001,itemID=22548,requireSkill=333,rwp=50004,u=2}),
+r(27962,{itemID=22548,requireSkill=333,rwp=50004,u=2}),
 r(27946,{itemID=22540,requireSkill=333,skillID=2493}),
-r(27947,{awp=20001,itemID=22541,requireSkill=333,rwp=50004,u=2}),
+r(27947,{itemID=22541,requireSkill=333,rwp=50004,u=2}),
 r(28004,{itemID=22557,requireSkill=333,skillID=2493}),
 r(27972,{itemID=22553,requireSkill=333,skillID=2493}),
 r(28003,{itemID=22558,requireSkill=333,skillID=2493})}),
@@ -4856,8 +4856,8 @@ r(31448,{itemID=24305,requireSkill=197,skillID=2539}),
 r(31434,{itemID=24296,requireSkill=197,skillID=2539}),
 r(31442,{itemID=24302,requireSkill=197,skillID=2539}),
 r(31449,{itemID=24306,requireSkill=197,skillID=2539}),
-r(31441,{itemID=24301,requireSkill=197,skillID=2539})})})}),
-x(3,{
+r(31441,{itemID=24301,requireSkill=197,skillID=2539})})})}}),
+x(3,{awp=30002,g={
 flt(3,{
 s(17176,36411,{f=3,lvl=28}),
 s(17175,36410,{f=3,lvl=28}),
@@ -5949,7 +5949,7 @@ i(43011,{coords={
 i(43010,{coords={
 [114]={{82.2,31.3}},
 [115]={{51.3,23.9},{57.3,12.3}},
-[120]={{27.6,46.7},{47.1,54.9},{55.9,64.2}}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422}})})}),
+[120]={{27.6,46.7},{47.1,54.9},{55.9,64.2}}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422}})})}}),
 x(4,{awp=40003,g={
 flt(3,{
 s(26936,55315,{f=3,lvl=32}),

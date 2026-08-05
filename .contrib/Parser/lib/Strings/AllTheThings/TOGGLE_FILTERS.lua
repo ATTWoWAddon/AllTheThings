@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle Filters",
 		-- TODO: de = "",
 		es = "Alternar Filtros",
-		mx = "Alternar Filtros",
+		mx = "Switch de Filtros",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

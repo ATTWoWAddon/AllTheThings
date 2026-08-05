@@ -2394,14 +2394,6 @@ i(23326,{b=1,cost={{"i",23247,5}},e=11,f=55,q=1}),
 i(23211,{b=1,cost={{"i",23247,5}},e=11,f=55,q=1}),
 i(23246,{b=1,cost={{"i",23247,5}},e=11,f=55,q=1}),
 i(34684,{b=1,cost={{"i",23247,2}},e=11,f=106,q=1})}})}})}}),
-h(-583,{e=15,g={
-o(113768,{description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438,1941,1943},g={
-s(129853,19028,{e=15,f=2,q=1,rwp=70205}),
-s(121597,6835,{e=15,f=4,filterForRWP=2,q=1,rwp=70205}),
-s(121595,6833,{e=15,f=10,filterForRWP=2,q=1}),
-i(7807,{e=15,f=55,q=1}),
-i(7808,{e=15,f=55,q=1}),
-i(7806,{e=15,f=55,q=1})}})}}),
 h(-585,{awp=20403,e=21,g={
 n(28048,{coords={
 [1434]={{26.6,76.6}}},description="When you speak with her, she gives you a Pirate Costume buff that lasts for 12 hours.",e=21})}}),

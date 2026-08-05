@@ -1260,14 +1260,6 @@ qo(4,{coords={
 [1427]={{33,73.5}}},e=11}),
 s(165276,23324,{b=1,e=11,f=4,q=1}),
 i(23247,{e=11,q=1})}})}})}}),
-h(-583,{e=15,g={
-o(113768,{description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438},g={
-s(163749,19028,{e=15,f=2,q=1,rwp=70205}),
-s(158706,6835,{e=15,f=4,filterForRWP=2,q=1,rwp=70205}),
-s(158704,6833,{e=15,f=10,filterForRWP=2,q=1}),
-i(7807,{e=15,f=55,q=1}),
-i(7808,{e=15,f=55,q=1}),
-i(7806,{e=15,f=55,q=1})}})}}),
 h(-586,{e=133889,maps={1425,1434,1444,1446,1447},g={
 i(13756,{description="Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",e=133889,f=55,lvl=35,q=1})}}),
 h(-587,{e=133899,maps={1425,1434,1444,1446,1447},g={

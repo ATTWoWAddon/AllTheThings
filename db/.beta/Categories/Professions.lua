@@ -2754,7 +2754,7 @@ ach(1999,{awp=30002,cost={{"c",402,10}},rank=10,requireSkill=185}),
 ach(2000,{awp=30002,cost={{"c",402,25}},rank=25,requireSkill=185}),
 ach(2001,{awp=30002,cost={{"c",402,50}},rank=50,requireSkill=185}),
 ach(2002,{awp=30002,cost={{"c",402,100}},rank=100,requireSkill=185})}}),
-x(1,{requireSkill=185,g={
+x(1,{awp=30002,requireSkill=185,g={
 ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
