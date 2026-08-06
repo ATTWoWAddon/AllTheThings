@@ -845,6 +845,7 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "Watch your coin purse.","|cFFFFD200Promotion:|r Diablo 3: Reaper of Souls Collector's Edition",1365,74413,149810,370211,0,114,7,6,7
 "The dark wings will cloud and consume the minds of the weak, because they are just so adorable!","|cFFFFD200Promotion:|r Warlords of Draenor Collector's Edition",1386,77137,155748,657488,2,114,7,6,7
 ,,3024,173842,340710,134389,6,16466,0,6,7
+,,3326,189655,375473,4227787,7,16466,-1,6,7
 "A flamboyant, noisy bird with a scream that can shatter concentration.",,4172,7388,10681,132916,2,34,-1,6,7
 ,,4182,7569,10718,136040,7,34,-1,6,7
 ,,4183,7568,10719,136040,7,34,-1,6,7
@@ -865,6 +866,7 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "The game's afoot. Except when it is time to nap. Afterwards though, it's game on!","|cFFFFD200Promotion|r |n",4683,232527,468201,6124234,7,16466,7,6,7
 "Crafted from sacred timber and blessed by festive winds.","|cFFFFD200Promotion|r |n",4685,232536,468247,6124702,2,66,7,6,7
 "With boundless energy and unbridled enthusiasm, the foal seeks the skies. It may not be ready, but exercise caution if you try to hold it back.","|cFFFFD200In-Game Shop|r",4862,248495,1246166,7142516,7,16466,9,6,7
+,,4897,251819,1254207,7277052,8,16466,-1,6,7
 "A rare auspicious beast in Pandaria. Well-traveled hozen call it a ""mobile luck amplifier.""","|cFFFFD200In-Game Shop|r",4902,261152,1256380,7315561,4,16466,9,34,60
 "No one knows how Lil' Coalee got his name. Was it his black heart? Was it his love for a warm fire? Was it simply that one of his parents were Big Coalee. Asking him yields no answers, only rage.","|cFFFFD200Promotion|r ",4907,254356,1261676,4891621,5,16466,9,6,7
 "Curious and inquisitive, this starry-eyed whelpling has big dreams and a wish to explore every world in the cosmos.","|cFFFFD200Promotion|r |n",4962,255820,1266325,7317259,1,16466,7,6,7
