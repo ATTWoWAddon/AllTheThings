@@ -1,48 +1,57 @@
 #!/usr/bin/env node
 /**
- * split_objectdb.mjs
+ * split_objectdb.js
  * ------------------
- * 將巨大的 Lua ObjectDB 檔案依照 object ID 範圍分割成多個檔案。
+ * Reads an ObjectDB table from a generated Lua file and writes the table entries
+ * to smaller Lua files grouped by aligned object ID ranges.
  *
- * 規則：
- * - Range 大小優先嘗試 10000，超過 700 個 object 縮小至 1000，還超過縮小至 100
- * - 最後一段不足 20 個 object 時，單獨輸出（允許例外）
- * - 輸出檔案內 object 按 ID 由小到大排序
- * - 輸出格式與原始 Lua 格式相同
- * - 檔名使用實際分割時採用的 range 區間，例如 ObjectDB_00000_09999.lua
+ * Chunk selection:
+ * - Start with the lowest unassigned object ID.
+ * - Try aligned ranges of 10,000, 1,000, and 100 IDs, in that order.
+ * - Select the first range containing no more than 700 objects.
+ * - Repeat until every parsed object has been assigned to a file.
+ * - Warn when a generated file contains fewer than 20 objects.
  *
- * 用法：
- *   node split_objectdb.mjs <input_file> [output_dir]
+ * Each output file contains objects sorted by ID inside a standard ObjectDB
+ * assignment wrapper. Its filename records the selected range boundaries, for
+ * example ObjectDB_00000_09999.lua.
  *
- * 範例：
- *   node split_objectdb.mjs ObjectDB.lua ./output/
+ * The parser expects numeric entries in the form `[ID] = { ... }` inside a
+ * `for ... in pairs({ ... })` statement. Brace matching is character-based and
+ * does not distinguish table braces from braces inside Lua strings or comments.
+ *
+ * Usage:
+ *   node split_objectdb.js <input_file> [output_dir]
+ *
+ * Example:
+ *   node split_objectdb.js ObjectDB.lua ./output/
  */
 
 import fs from "fs";
 import path from "path";
 
-// ── 可調整的參數 ──────────────────────────────────────────
-const MIN_OBJECTS = 20;                 // 每個檔案最少 object 數（末尾允許例外）
-const MAX_OBJECTS = 700;                // 每個檔案最多 object 數
-const RANGE_SIZES = [10000, 1000, 100]; // 嘗試順序：由大到小
+// ── Chunking configuration ──────────────────────────────────
+const MIN_OBJECTS = 20;                 // Emit a warning below this count.
+const MAX_OBJECTS = 700;                // Prefer chunks at or below this count.
+const RANGE_SIZES = [10000, 1000, 100]; // Candidate ranges, widest first.
 // ─────────────────────────────────────────────────────────
 
 
 /**
- * 解析 Lua ObjectDB 文字，回傳 Map<number, string>（ID → 原始 block）
- * 使用括號追蹤法精確抓取每個 entry 的完整內容。
+ * Extracts numeric ObjectDB entries from the first matching pairs({...}) table.
+ * Returns each object ID mapped to its matched `[ID] = { ... }` entry text.
  */
 function parseLuaObjectDB(text) {
   const objects = new Map();
 
   const pairsMatch = text.match(/for\s+\w+\s*,\s*\w+\s+in\s+pairs\s*\(\s*\{/);
   if (!pairsMatch) {
-    throw new Error("找不到 'for ... in pairs({' 結構，請確認輸入檔案格式。");
+    throw new Error("Could not find a 'for ... in pairs({' construct. Check the input file format.");
   }
 
   const start = pairsMatch.index + pairsMatch[0].length;
 
-  // 找到對應的結尾 } 位置
+  // Locate the end of the outer table by counting literal brace characters.
   let depth = 1;
   let outerEnd = -1;
   for (let i = start; i < text.length && depth > 0; i++) {
@@ -54,18 +63,18 @@ function parseLuaObjectDB(text) {
   }
 
   if (outerEnd === -1) {
-    throw new Error("無法找到 pairs({...}) 的結尾括號，檔案可能不完整。");
+    throw new Error("Could not find the closing brace for pairs({...}); the file may be incomplete.");
   }
 
   const inner = text.slice(start, outerEnd);
 
-  // 逐一解析 [ID] = { ... }
+  // Find top-level candidates using the numeric ObjectDB entry prefix.
   const idPattern = /\s*\[(\d+)\]\s*=\s*\{/g;
   let m;
 
   while ((m = idPattern.exec(inner)) !== null) {
     const objId = parseInt(m[1], 10);
-    const braceStart = m.index + m[0].length - 1; // 指向 '{'
+    const braceStart = m.index + m[0].length - 1; // Opening brace of the entry.
 
     let d = 1;
     let j = braceStart + 1;
@@ -75,7 +84,7 @@ function parseLuaObjectDB(text) {
       j++;
     }
 
-    // 取出 block，移除尾端多餘的逗號與空白
+    // Preserve the matched entry text, excluding a trailing separator.
     const rawBlock = inner.slice(m.index, j).trimEnd().replace(/,\s*$/, "");
     objects.set(objId, rawBlock);
 
@@ -87,8 +96,10 @@ function parseLuaObjectDB(text) {
 
 
 /**
- * 將排序後的 ID 陣列依照範圍規則分成多個 chunk。
- * 回傳 Array<{ ids: number[], usedRange: number, rangeStart: number, rangeEnd: number }>
+ * Assigns sorted IDs to aligned numeric ranges without exceeding MAX_OBJECTS
+ * whenever one of the configured range sizes can satisfy that limit.
+ *
+ * Returns Array<{ ids, usedRange, rangeStart, rangeEnd }>.
  */
 function computeChunks(sortedIds) {
   const chunks = [];
@@ -98,7 +109,7 @@ function computeChunks(sortedIds) {
     const minId = remaining[0];
     let found = false;
 
-    // 嘗試各 range 大小（由大到小）
+    // Use the widest candidate range that stays within the preferred limit.
     for (const r of RANGE_SIZES) {
       const rangeStart = Math.floor(minId / r) * r;
       const rangeEnd = rangeStart + r - 1;
@@ -114,8 +125,8 @@ function computeChunks(sortedIds) {
     }
 
     if (!found) {
-      // 理論上不會發生（range=100 時最多 100 個連續 ID，不可能超過 700）
-      // 保險起見仍保留，強制每 MAX_OBJECTS 個切一刀
+      // Defensive fallback: divide the narrowest range into MAX_OBJECTS-sized chunks.
+      // With unique integer IDs and the current settings, this branch is unreachable.
       const r = RANGE_SIZES[RANGE_SIZES.length - 1];
       const rangeStart = Math.floor(minId / r) * r;
       const rangeEnd = rangeStart + r - 1;
@@ -133,8 +144,8 @@ function computeChunks(sortedIds) {
 
 
 /**
- * 決定輸出檔名，格式：ObjectDB_XXXXX_YYYYY.lua
- * 使用實際分割時採用的 range 起點與終點。
+ * Builds an ObjectDB_<start>_<end>.lua filename from the selected range.
+ * Boundary values are padded to a minimum width of five digits.
  */
 function getOutputFilename(rangeStart, rangeEnd) {
   const pad = n => String(n).padStart(5, "0");
@@ -143,7 +154,8 @@ function getOutputFilename(rangeStart, rangeEnd) {
 
 
 /**
- * 將一組 ID 格式化成完整的 Lua 檔案字串。
+ * Sorts the selected IDs and places their stored entry blocks inside a standalone
+ * ObjectDB assignment wrapper.
  */
 function formatLuaFile(ids, objects) {
   const lines = ["local ObjectDB = ObjectDB; for objectID,objectData in pairs({"];
@@ -159,22 +171,23 @@ function formatLuaFile(ids, objects) {
 
 
 /**
- * 主流程
+ * Reads and parses the input, computes chunks, creates the output directory, and
+ * writes one Lua file per chunk while reporting progress.
  */
 function splitObjectDB(inputPath, outputDir) {
-  console.log(`讀取檔案：${inputPath}`);
+  console.log(`Reading file: ${inputPath}`);
   const text = fs.readFileSync(inputPath, "utf-8");
 
-  console.log("解析 Lua 結構中...");
+  console.log("Parsing Lua structure...");
   const objects = parseLuaObjectDB(text);
-  console.log(`共找到 ${objects.size} 個 object`);
+  console.log(`Found ${objects.size} object${objects.size === 1 ? "" : "s"}`);
 
   const sortedIds = [...objects.keys()].sort((a, b) => a - b);
-  console.log(`ID 範圍：${sortedIds[0]} ~ ${sortedIds[sortedIds.length - 1]}`);
+  console.log(`ID range: ${sortedIds[0]} ~ ${sortedIds[sortedIds.length - 1]}`);
 
-  console.log("計算分割方案...");
+  console.log("Computing split plan...");
   const chunks = computeChunks(sortedIds);
-  console.log(`將分割成 ${chunks.length} 個檔案\n`);
+  console.log(`Splitting into ${chunks.length} files\n`);
 
   fs.mkdirSync(outputDir, { recursive: true });
 
@@ -187,20 +200,23 @@ function splitObjectDB(inputPath, outputDir) {
     const content = formatLuaFile(ids, objects);
     fs.writeFileSync(outPath, content, "utf-8");
 
-    const warning = ids.length < MIN_OBJECTS ? `  ⚠️  不足 ${MIN_OBJECTS} 個（允許例外）` : "";
+    const warning = ids.length < MIN_OBJECTS
+      ? `  ⚠️  Fewer than ${MIN_OBJECTS} objects (allowed exception)`
+      : "";
     const idx = String(i + 1).padStart(3, " ");
-    console.log(`  [${idx}/${total}] ${filename}  (${ids.length} objects, range=${usedRange})${warning}`);
+    const objectLabel = `object${ids.length === 1 ? "" : "s"}`;
+    console.log(`  [${idx}/${total}] ${filename}  (${ids.length} ${objectLabel}, range=${usedRange})${warning}`);
   }
 
-  console.log(`\n✅ 完成！輸出目錄：${outputDir}`);
+  console.log(`\n✅ Done! Output directory: ${outputDir}`);
 }
 
 
 // ── Entry point ───────────────────────────────────────────
 const args = process.argv.slice(2);
 if (args.length < 1) {
-  console.error("用法：node split_objectdb.mjs <input_file> [output_dir]");
-  console.error("範例：node split_objectdb.mjs ObjectDB.lua ./output/");
+  console.error("Usage: node split_objectdb.js <input_file> [output_dir]");
+  console.error("Example: node split_objectdb.js ObjectDB.lua ./output/");
   process.exit(1);
 }
 
