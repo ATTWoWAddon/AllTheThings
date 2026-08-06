@@ -2,7 +2,7 @@
 
 ## Normalize Lua localization tables
 
-`normalize-lua-table.js` normalizes localization tables in a Lua data file. It is intended for contributors who edit `text`, `description`, or `lore` tables in the parser data.
+[`Lua/normalize.js`](Lua/normalize.js) normalizes localization tables in a Lua data file. It is intended for contributors who edit `text`, `description`, or `lore` tables in the parser data.
 
 The tool:
 
@@ -33,13 +33,13 @@ The task uses the active editor's file. Save or switch to the intended file befo
 From the repository root, run:
 
 ```sh
-node .contrib/.tools/normalize-lua-table.js "path/to/data-file.lua"
+node .contrib/.tools/Lua/normalize.js "path/to/data-file.lua"
 ```
 
 For example:
 
 ```sh
-node .contrib/.tools/normalize-lua-table.js ".contrib/Parser/DATAS/00 - DB/ObjectDB.lua"
+node .contrib/.tools/Lua/normalize.js ".contrib/Parser/DATAS/00 - DB/ObjectDB.lua"
 ```
 
 ### Example

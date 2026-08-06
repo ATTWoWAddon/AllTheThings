@@ -7,7 +7,7 @@
       "command": "node",
       // Run against the file in the active editor, rather than a fixed data file.
       // Explicit quoting keeps paths containing spaces as one shell argument.
-      "args": ["${workspaceFolder}/.contrib/.tools/normalize-lua-table.js", "\"${file}\""],
+      "args": ["${workspaceFolder}/.contrib/.tools/Lua/normalize.js", "\"${file}\""],
       "problemMatcher": [],
       "group": "none"
     }
