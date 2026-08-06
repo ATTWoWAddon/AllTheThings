@@ -2,23 +2,26 @@
 /**
  * split_objectdb.js
  * ------------------
- * Reads an ObjectDB table from a generated Lua file and writes the table entries
- * to smaller Lua files grouped by aligned object ID ranges.
+ * Splits the first ObjectDB-style pairs({...}) table in a Lua file into smaller
+ * Lua files. Only numeric entries written as `[ID] = { ... }` are collected.
+ * Duplicate IDs are stored in a Map, so the last parsed entry for an ID is kept.
  *
- * Chunk selection:
- * - Start with the lowest unassigned object ID.
- * - Try aligned ranges of 10,000, 1,000, and 100 IDs, in that order.
- * - Select the first range containing no more than 700 objects.
- * - Repeat until every parsed object has been assigned to a file.
- * - Warn when a generated file contains fewer than 20 objects.
+ * The chunking algorithm repeatedly starts at the lowest remaining ID and tests
+ * aligned ranges 10,000, 1,000, and 100 IDs wide. It selects the widest range
+ * containing at most 700 remaining objects, removes those objects, and repeats.
+ * Because each pass only considers remaining objects, a later wide range may
+ * overlap the numeric boundaries of an earlier narrow range. Each object ID is
+ * still written exactly once.
  *
- * Each output file contains objects sorted by ID inside a standard ObjectDB
- * assignment wrapper. Its filename records the selected range boundaries, for
- * example ObjectDB_00000_09999.lua.
+ * Output filenames contain the selected aligned boundaries, padded to at least
+ * five digits, for example ObjectDB_00000_09999.lua. Entries are sorted by ID and
+ * written inside a newly generated ObjectDB assignment wrapper. Files containing
+ * fewer than 20 objects produce a warning, but are still written normally.
  *
- * The parser expects numeric entries in the form `[ID] = { ... }` inside a
- * `for ... in pairs({ ... })` statement. Brace matching is character-based and
- * does not distinguish table braces from braces inside Lua strings or comments.
+ * The output directory is created when needed. Existing files with generated
+ * names are overwritten; other files already in the directory are not removed.
+ * Brace matching is character-based and does not distinguish structural braces
+ * from braces inside Lua strings or comments.
  *
  * Usage:
  *   node split_objectdb.js <input_file> [output_dir]
@@ -30,16 +33,17 @@
 import fs from "fs";
 import path from "path";
 
-// ── Chunking configuration ──────────────────────────────────
-const MIN_OBJECTS = 20;                 // Emit a warning below this count.
-const MAX_OBJECTS = 700;                // Prefer chunks at or below this count.
-const RANGE_SIZES = [10000, 1000, 100]; // Candidate ranges, widest first.
+// ── Splitting thresholds ────────────────────────────────────
+const MIN_OBJECTS = 20;                 // Warning threshold; does not affect splitting.
+const MAX_OBJECTS = 700;                // Maximum number of IDs accepted in a chunk.
+const RANGE_SIZES = [10000, 1000, 100]; // Aligned range widths, widest first.
 // ─────────────────────────────────────────────────────────
 
 
 /**
- * Extracts numeric ObjectDB entries from the first matching pairs({...}) table.
- * Returns each object ID mapped to its matched `[ID] = { ... }` entry text.
+ * Finds the first `for <key>, <value> in pairs({ ... })` construct and extracts
+ * numeric `[ID] = { ... }` entries from its table. Returns a Map from ID to the
+ * original matched entry text; a later duplicate ID replaces an earlier one.
  */
 function parseLuaObjectDB(text) {
   const objects = new Map();
@@ -51,7 +55,7 @@ function parseLuaObjectDB(text) {
 
   const start = pairsMatch.index + pairsMatch[0].length;
 
-  // Locate the end of the outer table by counting literal brace characters.
+  // Count literal braces from the opening `{` to find the outer table boundary.
   let depth = 1;
   let outerEnd = -1;
   for (let i = start; i < text.length && depth > 0; i++) {
@@ -68,13 +72,13 @@ function parseLuaObjectDB(text) {
 
   const inner = text.slice(start, outerEnd);
 
-  // Find top-level candidates using the numeric ObjectDB entry prefix.
+  // Search for the next numeric entry prefix after the previously extracted block.
   const idPattern = /\s*\[(\d+)\]\s*=\s*\{/g;
   let m;
 
   while ((m = idPattern.exec(inner)) !== null) {
     const objId = parseInt(m[1], 10);
-    const braceStart = m.index + m[0].length - 1; // Opening brace of the entry.
+    const braceStart = m.index + m[0].length - 1; // Entry table's opening `{`.
 
     let d = 1;
     let j = braceStart + 1;
@@ -84,7 +88,7 @@ function parseLuaObjectDB(text) {
       j++;
     }
 
-    // Preserve the matched entry text, excluding a trailing separator.
+    // Store the complete entry without a trailing comma or trailing whitespace.
     const rawBlock = inner.slice(m.index, j).trimEnd().replace(/,\s*$/, "");
     objects.set(objId, rawBlock);
 
@@ -96,10 +100,12 @@ function parseLuaObjectDB(text) {
 
 
 /**
- * Assigns sorted IDs to aligned numeric ranges without exceeding MAX_OBJECTS
- * whenever one of the configured range sizes can satisfy that limit.
+ * Greedily assigns sorted, unique IDs to aligned ranges. For the lowest remaining
+ * ID, chooses the widest configured range containing at most MAX_OBJECTS remaining
+ * IDs, removes that selection, and repeats until no IDs remain.
  *
- * Returns Array<{ ids, usedRange, rangeStart, rangeEnd }>.
+ * Returned ranges can overlap earlier range boundaries, but their `ids` arrays are
+ * disjoint. Returns Array<{ ids, usedRange, rangeStart, rangeEnd }>.
  */
 function computeChunks(sortedIds) {
   const chunks = [];
@@ -109,7 +115,7 @@ function computeChunks(sortedIds) {
     const minId = remaining[0];
     let found = false;
 
-    // Use the widest candidate range that stays within the preferred limit.
+    // Accept the first (widest) aligned range that satisfies the size limit.
     for (const r of RANGE_SIZES) {
       const rangeStart = Math.floor(minId / r) * r;
       const rangeEnd = rangeStart + r - 1;
@@ -125,8 +131,9 @@ function computeChunks(sortedIds) {
     }
 
     if (!found) {
-      // Defensive fallback: divide the narrowest range into MAX_OBJECTS-sized chunks.
-      // With unique integer IDs and the current settings, this branch is unreachable.
+      // Defensive fallback: split the narrowest range into fixed-size slices.
+      // This is unreachable with unique integer IDs and the current thresholds,
+      // because a 100-ID range cannot contain more than 100 IDs.
       const r = RANGE_SIZES[RANGE_SIZES.length - 1];
       const rangeStart = Math.floor(minId / r) * r;
       const rangeEnd = rangeStart + r - 1;
@@ -144,8 +151,8 @@ function computeChunks(sortedIds) {
 
 
 /**
- * Builds an ObjectDB_<start>_<end>.lua filename from the selected range.
- * Boundary values are padded to a minimum width of five digits.
+ * Builds ObjectDB_<start>_<end>.lua from the selected aligned boundaries.
+ * Values longer than five digits are not truncated.
  */
 function getOutputFilename(rangeStart, rangeEnd) {
   const pad = n => String(n).padStart(5, "0");
@@ -154,8 +161,8 @@ function getOutputFilename(rangeStart, rangeEnd) {
 
 
 /**
- * Sorts the selected IDs and places their stored entry blocks inside a standalone
- * ObjectDB assignment wrapper.
+ * Sorts a chunk's IDs, indents their stored entry text by one additional tab, and
+ * wraps them in a newly generated ObjectDB pairs assignment.
  */
 function formatLuaFile(ids, objects) {
   const lines = ["local ObjectDB = ObjectDB; for objectID,objectData in pairs({"];
@@ -171,8 +178,8 @@ function formatLuaFile(ids, objects) {
 
 
 /**
- * Reads and parses the input, computes chunks, creates the output directory, and
- * writes one Lua file per chunk while reporting progress.
+ * Runs the complete read, parse, split, format, and write workflow. Creates the
+ * output directory recursively and overwrites generated filenames when present.
  */
 function splitObjectDB(inputPath, outputDir) {
   console.log(`Reading file: ${inputPath}`);
@@ -212,7 +219,7 @@ function splitObjectDB(inputPath, outputDir) {
 }
 
 
-// ── Entry point ───────────────────────────────────────────
+// ── Command-line entry point ───────────────────────────────
 const args = process.argv.slice(2);
 if (args.length < 1) {
   console.error("Usage: node split_objectdb.js <input_file> [output_dir]");
