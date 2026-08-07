@@ -90,6 +90,11 @@ app.AddEventHandler("OnLoad", function()
 	remapping[1708] = 1703; --
 	remapping[1709] = 1703; --
 	remapping[1710] = 1703; --
+
+	-- Remap DF Timewalking => US
+    remapping[1719] = 1722; -- TW
+    remapping[1720] = 1722; -- EU
+    remapping[1721] = 1722; -- KO
 end);
 
 -- Event Cache
