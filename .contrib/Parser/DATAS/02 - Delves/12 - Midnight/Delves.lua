@@ -184,7 +184,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257380),	-- Player Experience (Uncommon)
 			i(257381),	-- Player Experience (Rare)
 			i(257379),	-- Player Experience (Epic)
-			i(268297),	-- Rattling Bag o' Gold
+			i(268297, {	-- Rattling Bag o' Gold
+				["providers"] = {
+					{"o",584512}, -- Nemesis Strongbox
+					{"o",584509}, -- Nemesis Strongbox
+					{"o",584508}, -- Nemesis Strongbox
+					{"o",584511}, -- Nemesis Strongbox
+				},
+			}),
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
 			i(262586, {	-- Primeval Arcane Remnant (QI!/QS!)
@@ -385,6 +392,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			filter(TRINKET_F, {
+				["sym"] = {{"select","itemID",
+					251788,	-- Gift of Light
+				}},
 				["groups"] = sharedData({
 					["providers"] = {
 						{"o",584514}, -- Bountiful Coffer
@@ -524,36 +534,36 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			-- Distinguishing by color may be possible for some of the 'special' objects, but would need to be determined how to do it
 			o(584514, {	-- Bountiful Coffer
 				["provider"] = { "i", 254250 },	-- Bountiful Coffer
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(623258, {	-- Pilfered Trunk
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(584517, {	-- Heavy Trunk
 				["provider"] = { "i", 257386 },	-- Heavy Trunk
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(584515, {	-- Bountiful Heavy Trunk
 				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(623259, {	-- Pilfered Trunk
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(584519, {	-- Heavy Trunk
 				["provider"] = { "i", 257386 },	-- Heavy Trunk
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(584518, {	-- Bountiful Heavy Trunk
 				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["groups"] = {
 					i(262390),	-- Sporbie (PET!)
 				},
 			}),
 			o(584504, {	-- Sanctified Spoils
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["groups"] = {
 					i(254983),	-- Assassin's Subtle Tea
 				},
@@ -561,7 +571,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			o(584503, {	-- Grand Sanctified Spoils
 				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["sym"] = {{"select","itemID",
 					264971,	-- Annihilation Rod (COSMETIC!)
 					264970,	-- Oblivion's Edge (COSMETIC!)
@@ -574,22 +584,22 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			o(584512, {	-- Nemesis Strongbox (Poor)
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(584511, {	-- Nemesis Strongbox (Uncommon)
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(584509, {	-- Nemesis Strongbox (Rare)
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
 			o(584508, {	-- Nemesis Strongbox (Epic)
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["groups"] = {
 					i(254869),	-- Chunk of Companion Experience (Epic)
 				},
 			}),
 			o(581922, {	-- Hidden Trove
-				["VerifyLoot"] = true,
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["providers"] = {
 					{"i",252415},	-- Trovehunter's Bounty
 					{"i",265714},	-- Trovehunter's Bounty (Delve UI)
@@ -716,6 +726,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{43.23, 46.23, SUNKILLER_SANCTUM},
 				{53.35, 37.61, SUNKILLER_SANCTUM},
 				-- The Darkway
+				{43.4, 49.3, THE_DARKWAY},
 				{49.61, 37.52, THE_DARKWAY},
 				{53.66, 49.89, THE_DARKWAY},
 				-- The Gulf of Memory
@@ -728,7 +739,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{46.00, 22.00, THE_SHADOW_ENCLAVE},
 				{47.94, 57.33, THE_SHADOW_ENCLAVE},
 				-- Twilight Crypts
-				{44.91, 54.72, TWILIGHT_CRYPTS},
+				{45.1, 54.8, 2504},
+				{39.1, 84.1, 2504},
 				{39.45, 84.72, TWILIGHT_CRYPTS},
 				{20.85, 62.86, TWILIGHT_CRYPTS},
 			},

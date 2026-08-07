@@ -1563,7 +1563,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	title:SetScale(1.5);
 
 	local version = subcategory:CreateHeaderLabel(app.Version);
-	version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -8, 0);
+	version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -4, 0);
 	version:SetJustifyH("RIGHT");
 
 	local separator = subcategory:CreateTexture(nil, "ARTWORK");
@@ -1584,7 +1584,10 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 		if not skipRefresh and settings.NeedsRefresh then settings:UpdateMode("FORCE"); end
 	end)
 	checkboxSkipAutoRefresh:SetATTTooltip(L.SKIP_AUTO_REFRESH_TOOLTIP);
-	checkboxSkipAutoRefresh:SetPoint("BOTTOMRIGHT", separator, "TOPRIGHT", -(checkboxSkipAutoRefresh.Text:GetWidth() * checkboxSkipAutoRefresh.Text:GetScale()), 0)
+	checkboxSkipAutoRefresh.Text:ClearAllPoints()
+	checkboxSkipAutoRefresh.Text:SetPoint("BOTTOMRIGHT", separator, "TOPRIGHT", 0, 8)
+	checkboxSkipAutoRefresh:ClearAllPoints()
+	checkboxSkipAutoRefresh:SetPoint("RIGHT", checkboxSkipAutoRefresh.Text, "LEFT", 0, 0)
 	return subcategory;
 end
 

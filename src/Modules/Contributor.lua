@@ -14,6 +14,7 @@ local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local round = app.round
 local SearchForObject = app.SearchForObject
 local GetPlayerAura = app.WOWAPI.GetPlayerAuraBySpellID
+local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant
 local DebugPrinting
 
 local api = {};
@@ -3056,6 +3057,7 @@ MobileDB.GameObject = {
 	[516836] = true,	-- Voidbane Gem
 	[516932] = true,	-- Tranquility Bloom
 	[516935] = true,	-- Azeroot
+	[516968] = true,	-- Wild Tranquility Bloom
 	[516994] = true,	-- Tazavesh Trash (q:87376)
 	[516995] = true,	-- Tazavesh Trash (q:87376)
 	[517000] = true,	-- Tazavesh Trash (q:87376)
@@ -3843,6 +3845,16 @@ local function PartitionLoots(loots)
 	loots.item = item
 	loots.currency = currency
 end
+local VerifyLootTypeChecker = setmetatable({
+	table = function(verifyLootTbl, itemID)
+		-- string-array is to check only the ItemType
+		local _, itemType = GetItemInfoInstant(itemID)
+		-- app.PrintDebug("Checking loot type",itemType,"against",app.StringifyTable(verifyLootTbl))
+		return app.contains(verifyLootTbl, itemType:lower())
+	end,
+}, { __index = function(t, key)
+	return app.ReturnTrue
+end})
 local function OnLOOT_READY()
 	api:RegisterFuncEvent("LOOT_CLOSED",OnLOOT_CLOSED)
 
@@ -3873,16 +3885,23 @@ local function OnLOOT_READY()
 	if objRef and (objRef.VerifyLoot or app.Debugging) then
 		objRef = FilledObjectsCache[objRef]
 
+		-- determine what sort of VerifyLoot we will perform for this Object
+		local verifyLoot = objRef.VerifyLoot or true
+		local verifyLootChecker = VerifyLootTypeChecker[verifyLoot and type(verifyLoot) or 1]
+
 		local searchGroups = {objRef}
 		local drop = {g=true}
 		local missingLootItems = {}
 		PartitionLoots(loots)
 		for itemID in pairs(loots.item) do
-			if #app:BuildTargettedSearchResponse(searchGroups, "itemID", itemID, drop) == 0 then
-				-- app.PrintDebug("Missing Loot Item",itemID,"from Object",id)
-				missingLootItems[itemID] = ":"
-			else
-				-- app.PrintDebug("Existing Loot Item",itemID,"from Object",id)
+			if verifyLootChecker(verifyLoot, itemID) then
+				if #app:BuildTargettedSearchResponse(searchGroups, "itemID", itemID, drop) == 0 then
+					-- app.PrintDebug("Missing Loot Item",itemID,"from Object",id)
+					missingLootItems[itemID] = ":"
+				else
+					-- app.PrintDebug("Existing Loot Item",itemID,"from Object",id)
+				end
+			-- else app.PrintDebug("Skipped loot type for",itemID)
 			end
 		end
 

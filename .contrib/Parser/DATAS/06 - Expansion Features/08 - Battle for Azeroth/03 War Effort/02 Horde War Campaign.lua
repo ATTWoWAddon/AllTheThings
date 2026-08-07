@@ -430,7 +430,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 51722 },	-- This HQT is likely the lock criterium according to Jewel
+						-- Seems to be an unknown account-wide HQT in similar BFA era which matches for players who have this quest locked, will use for this until someone reports it's wrong :D
+						["lockCriteria"] = { 1, "questID", 52969 },
 					}),
 					q(51916, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
 						["description"] = "This version of the quest is offered to the first character on your account to reach Friendly with Zandalari Empire, Talanji's Expedition, and Voldunai. Your alts will get a different quest with the same name when they reach level 120, but all characters get credit for both quests.",

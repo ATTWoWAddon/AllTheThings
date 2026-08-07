@@ -9,9 +9,46 @@ if not app.IsRetail then return; end
 local ipairs, setmetatable, tonumber, tinsert, wipe
 	= ipairs, setmetatable, tonumber, tinsert, wipe
 
+-- Local functions
+local IMPORT_TYPES = {}
+
+local function ParseCommand(self, cmd)
+	if not cmd or cmd == "" then
+		return
+	end
+
+	local typeName, input = cmd:match("^(%S+)%s+(.+)$")
+	if not typeName or not input then
+		return
+	end
+
+	local typeKey = IMPORT_TYPES[typeName:lower()]
+	if not typeKey then
+		app.print("Unknown import type: "..typeName)
+		return
+	end
+
+	self:Import(typeKey, input)
+	self:ShowResetButton()
+	self:Rebuild()
+
+	return true
+end
+
 -- Implementation
 app:CreateWindow("Import", {
+	Commands = { "attimport" },
 	RootCommands = { "import" },
+	OnCommand = function(self, args)
+		local cmd = table.concat(args, " ")
+
+		if ParseCommand(self, cmd) then
+			if not self:IsShown() then
+				self:Show()
+			end
+			return true
+		end
+	end,
 	OnInit = function(self, handlers)
 		local SearchForObject = app.SearchForObject
 
@@ -102,6 +139,10 @@ app:CreateWindow("Import", {
 			{ id = "spellID", name = SPELLS, icon = 135736 },
 			{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },
 		}
+
+		for _, info in ipairs(initialButtons) do
+			IMPORT_TYPES[info.id:lower()] = info.id
+		end
 
 		local function ImportButton(typeKey, label, icon)
 			return app.CreateRawText(label, {

@@ -182,6 +182,13 @@ ExportDB.OPAQDB = {
 	91780,	-- Ethereal Delves
 	92816,	-- A Letter for Adventure
 	93519,	-- Midnight Delves!
+
+	-- TBD more result data, seems very likely at this point from personal testing
+	-- Zul'Aman Blessing unlocks
+	-- 94909,	-- Blessings of Pestilence
+	-- 94840,	-- Blessings of The Depths
+	-- 94839,	-- Blessings of Peril
+	-- 94910,	-- Blessings of Growth
 }
 
 -- This is a set of quest which mistakenly were added as OPA quests but were later determined to be inaccurately-assigned

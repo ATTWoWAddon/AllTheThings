@@ -454,6 +454,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				--["sourceQuests"] = { ??? },	-- ??
 				["qg"] = 246231,	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
 			}),
 		}),
 		n(QUESTS, sharedData({

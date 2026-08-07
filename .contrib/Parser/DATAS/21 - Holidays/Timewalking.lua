@@ -84,8 +84,9 @@ local function TimelyGoodieBag(t)
 	return tgb
 end
 
-root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 	["modID"] = 22,	-- Timewalking
+	["timeline"] = { ADDED_6_2_2 },
 	["difficultyID"] = DIFFICULTY.DUNGEON.TIMEWALKING;
 	["groups"] = {
 		n(ACHIEVEMENTS, {
@@ -329,11 +330,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 			}),
 		}),
 	},
-}))));
+})))
 
 -- Classic Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC_DUNGEON_EVENT, {
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+	expansion(EXPANSION.CLASSIC, {["forcetimeline"] = { ADDED_11_0_5 }}),
+	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, {
 			achWithRep(957, FACTION_ZANDALAR_TRIBE),	-- Hero of the Zandalar Tribe
 		}),
@@ -974,7 +976,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -991,7 +993,8 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+	expansion(EXPANSION.TBC, {["forcetimeline"] = { ADDED_6_2_2 }}),
+	expansion(EXPANSION.TBC, {
 		n(GROUP_FINDER, {
 			i(187902, {	-- Sporebat Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -2164,7 +2167,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				},
 			}),
 		})),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -2192,7 +2195,8 @@ AddInstancesToRotation(EXPANSION.TBC, {
 
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+	expansion(EXPANSION.WRATH, {["forcetimeline"] = { ADDED_6_2_2 }}),
+	expansion(EXPANSION.WRATH, {
 		n(GROUP_FINDER, {
 			i(129928, {	-- Frigid Timewarped Prism
 				["description"] = "Drops from the last boss of any 'Wrath of the Lich King Timewalking' dungeon.",
@@ -3710,7 +3714,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				i(127474),	-- Vestige of Haldor
 			})),
 		})),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -3738,7 +3742,8 @@ AddInstancesToRotation(EXPANSION.WRATH, {
 
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
+	expansion(EXPANSION.CATA, {["forcetimeline"] = { ADDED_6_2_3 }}),
+	expansion(EXPANSION.CATA, {
 		n(GROUP_FINDER, {
 			i(185053, {	-- Kodo Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -4740,7 +4745,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				i(133201),	-- Sea Star
 			})),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -4766,7 +4771,8 @@ AddInstancesToRotation(EXPANSION.CATA, {
 
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
+	expansion(EXPANSION.MOP, {["forcetimeline"] = { ADDED_7_1_5 }}),
+	expansion(EXPANSION.MOP, {
 		n(GROUP_FINDER, {
 			i(187904, {	-- Cloud Serpent Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
@@ -5396,7 +5402,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 				}},
 			}),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -5424,7 +5430,8 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 
 -- Warlords of Draenor Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
+	expansion(EXPANSION.WOD, {["forcetimeline"] = { ADDED_8_1_5 }}),
+	expansion(EXPANSION.WOD, {
 		n(GROUP_FINDER, {
 			i(210062, {	-- Ironbound Satchel of Helpful Goods // Draenor TW Daily Reward
 				["description"] = "Rewarded for completing any 'Warlords of Draenor Timewalking' dungeon.\nAvailable once per day.",
@@ -6038,7 +6045,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 				["crs"] = { 83846 },	-- Yalnu
 			}),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -6063,7 +6070,8 @@ AddInstancesToRotation(EXPANSION.WOD, {
 
 -- Legion Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
+	expansion(EXPANSION.LEGION, {["forcetimeline"] = { ADDED_9_1_5 }}),
+	expansion(EXPANSION.LEGION, {
 		n(GROUP_FINDER, {
 			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 				["description"] = "Rewarded for completing any 'Legion Timewalking' dungeon.\nAvailable once per day.",
@@ -6792,7 +6800,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				}},
 			}),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -6812,7 +6820,8 @@ AddInstancesToRotation(EXPANSION.LEGION, {
 
 -- Battle for Azeroth Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_FOR_AZEROTH_DUNGEON_EVENT, {
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 }},{
+	expansion(EXPANSION.BFA, {["forcetimeline"] = { ADDED_11_1_7 }}),
+	expansion(EXPANSION.BFA, {
 		n(GROUP_FINDER, {
 			i(238790, {	-- Remnant of Azeroth (A)
 				["description"] = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
@@ -7478,7 +7487,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				},
 			}),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -7495,7 +7504,8 @@ AddInstancesToRotation(EXPANSION.BFA, {
 
 -- Shadowlands Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWLANDS_DUNGEON_EVENT, {
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 }},{
+	expansion(EXPANSION.SL, {["forcetimeline"] = { ADDED_11_2_7 }}),
+	expansion(EXPANSION.SL, {
 		n(GROUP_FINDER, {
 			i(253517, {	-- The Flickering Anima (QS!)
 				["description"] = "Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",
@@ -8026,7 +8036,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				}},
 			}),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -8044,7 +8054,8 @@ AddInstancesToRotation(EXPANSION.SL, {
 
 -- Dragonflight Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONFLIGHT_DUNGEON_EVENT, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 }},{
+	expansion(EXPANSION.DF, {["forcetimeline"] = { ADDED_12_0_7 }}),
+	expansion(EXPANSION.DF, {
 		n(GROUP_FINDER, {
 			i(262918, {	-- Lost Iridescent Flightstone (QS!)
 				["description"] = "Drops from the last boss of any 'Dragonflight Timewalking' dungeon.",
@@ -8549,7 +8560,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 				}},
 			}),
 		}),
-	})),
+	}),
 })));
 
 -- Only instances still in rotation should be in this list.
@@ -8572,12 +8583,12 @@ end);
 ]]--
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(78204),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+	expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
 			q(86295, { ["timeline"] = { ADDED_11_1_5 } }),	-- Disturbance Detected: Black Temple
@@ -8585,7 +8596,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(92856, { ["timeline"] = { ADDED_11_2_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways IV (spellID 1258528)
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+	expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(93509),	-- Gain Mastery of Timeways for 4 weeks during Turbulent Timeways V (spellID 1269518)
 		})),

@@ -568,7 +568,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["DisablePartySync"] = true,
-						["lockCriteria"] = { 1, "questID", 51722 },	-- This HQT is likely the lock criterium according to Jewel
+						-- Seems to be an unknown account-wide HQT in similar BFA era which matches for players who have this quest locked, will use for this until someone reports it's wrong :D
+						["lockCriteria"] = { 1, "questID", 52969 },
 					}),
 					q(51918, {	-- Uniting Kul Tiras - completed once per account
 						["sourceQuests"] = {
