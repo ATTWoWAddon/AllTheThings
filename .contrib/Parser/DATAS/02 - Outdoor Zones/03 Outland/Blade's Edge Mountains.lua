@@ -43,7 +43,7 @@ root(ROOTS.Zones, {
 			["icon"] = 236719,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_ORGILA)),	-- A Quest a Day Keeps the Ogres at Bay
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_OGRILA)),	-- A Quest a Day Keeps the Ogres at Bay
 					ach(865),	-- Explore Blade's Edge Mountains
 					ach(1193, {	-- On the Blade's Edge
 						-- CRIEVE NOTE: The storyline criteria doesn't appear to exist in Retail anymore? [TODO: Add them or fix automation?]
@@ -164,7 +164,7 @@ root(ROOTS.Zones, {
 					visit_exploration(3954,{coord={43.6,30.7,BLADES_EDGE_MOUNTAINS}}),	-- Wyrmskull Tunnel
 				}),
 				n(FACTIONS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(FACTION_ORGILA, {	-- Ogri'la
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(FACTION_OGRILA, {	-- Ogri'la
 						["OnTooltip"] = [[_.OnTooltipDB.ForOgrila]],
 					})),
 				}),
@@ -228,7 +228,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11060, {	-- A Crystalforged Darkrune
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
-						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
 						["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						["cost"] = { { "i", 32643, 1 } },	-- Darkrune
 						["isDaily"] = true,
@@ -318,7 +318,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23233,	-- Chu'a'lor
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["minReputation"] = { FACTION_ORGILA, FRIENDLY },	-- Ogri'la, Friendly.
+						["minReputation"] = { FACTION_OGRILA, FRIENDLY },	-- Ogri'la, Friendly.
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
 					q(10682, {	-- A Time for Negotiation...
@@ -354,7 +354,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23253,	-- Kronk
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
 						["cost"] = { { "i", 32696, 1 } },	-- Banishing Crystal
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -367,7 +367,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23253,	-- Kronk
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
 						["cost"] = { { "i", 32696, 1 } },	-- Banishing Crystal
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
@@ -2303,7 +2303,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11060,	-- A Crystalforged Darkrune
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
-						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
 						["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						["cost"] = { { "i", 32643, 1 } },	-- Darkrune
 						["isDaily"] = true,
@@ -2597,7 +2597,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 						["coord"] = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["groups"] = bubbleDownClassicRep(FACTION_ORGILA, {
+						["groups"] = bubbleDownClassicRep(FACTION_OGRILA, {
 							{		-- Neutral
 								i(33934),	-- Crystal Healing Potion
 								i(33935),	-- Crystal Mana Potion
@@ -2664,7 +2664,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22266, {	-- Ogri'la Grubgiver
 						["coord"] = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
+						["minReputation"] = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
 						["groups"] = {
 							i(32686),	-- Mingo's Fortune Giblets
 							i(32685),	-- Ogri'la Chicken Fingers
@@ -2675,7 +2675,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23110, {	-- Ogri'la Keg King
 						["coord"] = { 27.9, 57.6, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
+						["minReputation"] = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
 						["groups"] = {
 							i(32667),	-- Bash Ale
 							i(32668),	-- Dos Ogris
@@ -2684,7 +2684,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22270, {	-- Ogri'la Merchant
 						["coord"] = { 27.8, 58.5, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["minReputation"] = { FACTION_ORGILA, NEUTRAL },	-- Ogri'la, Neutral.
+						["minReputation"] = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
 						["groups"] = {
 							i(32758),	-- Brute Cologne
 						},
