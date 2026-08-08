@@ -43,7 +43,9 @@ root(ROOTS.Zones, {
 			["icon"] = 236719,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_OGRILA)),	-- A Quest a Day Keeps the Ogres at Bay
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_OGRILA, {	-- A Quest a Day Keeps the Ogres at Bay
+						["timeline"] = { ADDED_2_1_0 },
+					})),
 					ach(865),	-- Explore Blade's Edge Mountains
 					ach(1193, {	-- On the Blade's Edge
 						-- CRIEVE NOTE: The storyline criteria doesn't appear to exist in Retail anymore? [TODO: Add them or fix automation?]
@@ -166,6 +168,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(FACTION_OGRILA, {	-- Ogri'la
 						["OnTooltip"] = [[_.OnTooltipDB.ForOgrila]],
+						["timeline"] = { ADDED_2_1_0 },
 					})),
 				}),
 				n(FLIGHT_PATHS, {
