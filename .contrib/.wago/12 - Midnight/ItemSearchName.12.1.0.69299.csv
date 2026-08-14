@@ -100441,6 +100441,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 281569,"Quiver of the Drowned Marksman",3,-3,0,0,-1,1,0,0,0,1,32768,8192,0,65536,0,-1,-1
 281570,"Amani Incense Stick",3,-3,0,0,-1,1,0,0,0,1,32768,8192,0,65536,0,-1,-1
 281571,"Focus of Fangs",3,-3,0,0,-1,1,0,0,0,1,32768,8192,0,65536,0,-1,-1
+280457,"Shark Attack Pack",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 275999,"Flowering Mantle",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
 269786,"Azshara's Darkscale Helm",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,0,65536,0,-1,-1
 269787,"Azshara's Darkscale Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,0,65536,0,-1,-1
@@ -100472,6 +100473,8 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 272331,"Varian's Azure Dragon Pauldron",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 272332,"Varian's Azure Dragon Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 272333,"Varian's Azure Dragon Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+276625,"Puffin Pack",4,-3,0,0,-1,0,0,0,0,1,134250496,8531968,8388608,0,0,-1,-1
+279006,"Fisher's Pack",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 6121,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 20902,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 23474,"Recruit's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
@@ -101628,10 +101631,10 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91699,"Malevolent Gladiator's Leather Legguards",4,4,0,0,8,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91646,"Malevolent Gladiator's Ornamented Legplates",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91626,"Malevolent Gladiator's Scaled Legguards",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
+87033,"Netherrealm Shoulderpads",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 91514,"Malevolent Gladiator's Dragonhide Legguards",4,4,0,0,1024,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91506,"Malevolent Gladiator's Dreadplate Legguards",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91614,"Malevolent Gladiator's Copperskin Legguards",4,4,0,6,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
-87043,"Bindings of Ancient Spirits",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 91581,"Malevolent Gladiator's Chain Leggings",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91589,"Malevolent Gladiator's Silk Trousers",4,4,0,0,128,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91789,"Malevolent Gladiator's Plate Legguards",4,4,0,0,1,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101667,10 +101670,10 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91628,"Malevolent Gladiator's Scaled Shoulders",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91518,"Malevolent Gladiator's Dragonhide Spaulders",4,4,0,0,1024,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91593,"Malevolent Gladiator's Silk Amice",4,4,0,0,128,35,0,0,0,39,4096,8192,0,0,0,-1,-1
+87039,"Eye of the Ancient Spirit",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 91508,"Malevolent Gladiator's Dreadplate Shoulders",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91606,"Malevolent Gladiator's Ironskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91616,"Malevolent Gladiator's Copperskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
-87040,"Circuit of the Frail Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073766400,0,0,0,-1,-1
 91583,"Malevolent Gladiator's Chain Spaulders",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91791,"Malevolent Gladiator's Plate Shoulders",4,4,0,0,1,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91781,"Malevolent Gladiator's Felweave Amice",4,4,0,0,256,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101746,9 +101749,9 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 87035,"Sollerets of Spirit Splitting",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87034,"Fetters of Death",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87032,"Gara'kal, Fist of the Spiritbinder",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
-87033,"Netherrealm Shoulderpads",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
-87039,"Eye of the Ancient Spirit",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87037,"Sandals of the Severed Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
+87043,"Bindings of Ancient Spirits",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
+87040,"Circuit of the Frail Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073766400,0,0,0,-1,-1
 87041,"Spaulders of the Divided Mind",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87042,"Leggings of Imprisoned Will",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87038,"Shadowsummoner Spaulders",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
