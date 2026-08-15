@@ -730,6 +730,9 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		n(219055, {	-- Madam Goya [Dornogal]
 			["coord"] = { 64.8, 52.7, DORNOGAL },
 		}),
+		n(189676, {	-- Madam Goya [Valdrakken]
+			["coord"] = { 20.2, 49.1, VALDRAKKEN },
+		}),
 		n(100986, {	-- Madam Goya [Underbelly]
 			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
