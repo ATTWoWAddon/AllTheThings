@@ -6,7 +6,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			n(ACHIEVEMENTS, {
-				ach(62649),	-- A Lone Wanderer
+				ach(62649, {	-- A Lone Wanderer
+					["description"] = "During the Earth and Sky event, go to the Sky Altar and fly around the raid entrance, looking for the moving large blue orb."
+				}),
 				ach(63630, {	-- Assault the Vault
 					i(276801),	-- Venomous Coiler (MOUNT!)
 				}),
