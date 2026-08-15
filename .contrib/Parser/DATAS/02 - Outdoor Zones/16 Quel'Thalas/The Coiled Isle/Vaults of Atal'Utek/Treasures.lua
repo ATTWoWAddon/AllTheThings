@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				o(671498, {	-- Venom-Worn Coffer (learns spellID 1305107)
-					["description"] = "Will only show up once you have looted the Corroded Key, in one of 5 random locations"
+					["description"] = "Will only show up once you have looted the Corroded Key, in one of 5 random locations",
 					["cost"] = { { "i", 280004, 1 } },	-- 1x Corroded Key
 					["coords"] = {
 						{ 41.7, 53.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
@@ -90,14 +90,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(278523, {	-- Feather of Tok'jara
 							["questID"] = 97662,	-- The Winds of Tok'jara
 						}),
-					}
+					},
 				}),
 				o(671508, {	-- Jin'tal's Reliquary (learns spellID 1305071)
 					["cost"] = { { "i", 280005, 1 } },	-- 1x Dispelling Charm
 					["coord"] = { 36.26, 23.70, 2638 },
 					["groups"] = {
 						i(278517, {	-- Lost Med'jai Amulet
-							["questID"] = 97661
+							["questID"] = 97661,	-- The Protection of the Med'jai
 						}),
 					},
 				}),
