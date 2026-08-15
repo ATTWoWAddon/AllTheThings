@@ -58,16 +58,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				-- Altar of Corrosion unlocks
-				o(649651, {	-- Eye of Szarith (learns spellID 1305084)
+				o(649651, {	-- Eye of Szarith
 					["cost"] = { { "i", 280003, 1 } },	-- 1x Excising Knife
 					["coord"] = { 68.60, 15.66, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
 					["groups"] = {
-						i(278534, {	-- Eye of Szarith
-							["questID"] = 97668,	-- The Watchful Gaze of Szarith
-						}),
+						i(278534),	-- Eye of Szarith (QS!)
 					},
 				}),
-				o(671498, {	-- Venom-Worn Coffer (learns spellID 1305107)
+				o(671498, {	-- Venom-Worn Coffer
 					["description"] = "Will only show up once you have looted the Corroded Key, in one of 5 random locations",
 					["cost"] = { { "i", 280004, 1 } },	-- 1x Corroded Key
 					["coords"] = {
@@ -78,27 +76,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 42.7, 12.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					},
 					["groups"] = {
-						i(278536, {	-- Mummified Lynx's Paw
-							["questID"] = 97669,	-- The Luck of the Bound Spirit
-						}),
+						i(278536),	-- Mummified Lynx's Paw (QS!)
 					},
 				}),
-				o(671500, {	-- Feather of Tok'jara (learns spellID 1305075)
+				o(671500, {	-- Feather of Tok'jara
 					["cost"] = { { "i", 280006, 1 } },	-- 1x Spirit Loupe
 					["coord"] = { 48.50, 25.76, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					["groups"] = {
-						i(278523, {	-- Feather of Tok'jara
-							["questID"] = 97662,	-- The Winds of Tok'jara
-						}),
+						i(278523),	-- Feather of Tok'jara (QS!)
 					},
 				}),
-				o(671508, {	-- Jin'tal's Reliquary (learns spellID 1305071)
+				o(671508, {	-- Jin'tal's Reliquary
 					["cost"] = { { "i", 280005, 1 } },	-- 1x Dispelling Charm
 					["coord"] = { 36.26, 23.70, 2638 },
 					["groups"] = {
-						i(278517, {	-- Lost Med'jai Amulet
-							["questID"] = 97661,	-- The Protection of the Med'jai
-						}),
+						i(278517),	-- Lost Med'jai Amulet (QS!)
 					},
 				}),
 				-- Repeatables

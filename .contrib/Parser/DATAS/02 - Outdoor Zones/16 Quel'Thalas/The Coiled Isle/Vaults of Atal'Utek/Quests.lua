@@ -18,6 +18,40 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							-- { 53.9, 39.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },	-- Mok'sa the Stone @ Eastern Amani Outpost
 						},
 					}),
+					q(97661, {	-- The Protection of the Med'jai
+						["provider"] = { "i", 278517 },	-- Lost Med'jai Amulet (QS!)
+						["coord"] = { 36.26, 23.70, 2638 },
+						["groups"] = {
+							spell(1305071),	-- Spiritual Protection
+						}
+					}),
+					q(97662, {	-- The Winds of Tok'jara
+						["provider"] = { "i", 278523 },	-- Feather of Tok'jara (QS!)
+						["coord"] = { 48.50, 25.76, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["groups"] = {
+							spell(1305075),	-- Spectral Winds
+						},
+					}),
+					q(97668, {	-- The Watchful Gaze of Szarith
+						["provider"] = { "i", 278534 },	-- Eye of Szarith (QS!)
+						["coord"] = { 68.60, 15.66, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+						["groups"] = {
+							spell(1305084),	-- Broodmaster
+						},
+					}),
+					q(97669, {	-- The Luck of the Bound Spirit
+						["provider"] = { "i", 278536 },	-- Mummified Lynx's Paw (QS!)
+						["coords"] = {
+							{ 41.7, 53.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							{ 52.5, 53.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							{ 47.5, 38.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							{ 53.5, 18.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							{ 42.7, 12.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						},
+						["groups"] = {
+							spell(1305107),	-- Run of the Vaults
+						},
+					}),
 					q(98428, {	-- Vaults of Atal'Utek: The Altar of Corrosion
 						["sourceQuest"] = 97640,	-- Vaults of Atal'Utek: One Coin Too Many
 						["qg"] = 262880,	-- Er'inye

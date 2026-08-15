@@ -53,7 +53,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						crit(116181),	-- Siphon Venom
 						crit(116182),	-- Scavenged Weapons
-						crit(116184),	-- Breath and Bile
+						crit(116184, {	-- Breath and Bile
+							["providers"] = {
+								{ "n", 263472 },	-- Er'inye (Temple Patrol: Breath and Bile)
+							},
+						}),
 						crit(116186),	-- Congealed Venom
 						crit(116187),	-- Dragged Below
 						crit(116188, {	-- Vengeance for the Dead
