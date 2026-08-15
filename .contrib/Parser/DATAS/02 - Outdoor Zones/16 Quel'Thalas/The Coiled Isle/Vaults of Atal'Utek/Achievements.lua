@@ -80,7 +80,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				ach(63596),	-- Snake Stompin'
 				ach(62601),	-- Soft Underbelly
-				ach(63600),	-- Spike the Strike
 				ach(63599),	-- Submerge the Incursion
 				ach(63610),	-- The Honored Dead
 			}),

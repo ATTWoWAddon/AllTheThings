@@ -123,7 +123,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(REWARDS, {
 				i(273000),	-- Corrosive Soul
 				i(274374),	-- Trovehunter's Bounty
-				i(279382),	-- Venom-Cursed Fragment
+				i(279382, {	-- Venom-Cursed Fragment
+					["sym"] = {{"select","itemID",279345},{"pop"}}
+				}),
 			}),
 		}),
 	}),
