@@ -409,6 +409,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222400),	-- Weaverthread Polishing Cloth
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					i(279374),	-- Rolled Bed Linens
+					i(279375),	-- Tortollan Slingsack
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
@@ -671,6 +678,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(1279126),	-- [DNT] Thalassian Fisher's Suncover
 					r(1228998),	-- Unknown
 					r(1228999),	-- Unknown
+				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					r(1296513),	-- Traveled Murloc Plushie
 				})),
 			}),
 		}),

@@ -31,6 +31,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
 						q(93930, {	-- Courting Success
+							["timeline"] = { REMOVED_12_1_0 },
+							["groups"] = {
+								i(266432),	-- Silvermoon Suncrest
+								i(266430),	-- Silvermoon Sunguard
+								i(266429),	-- Silvermoon Sunspire
+								i(266431),	-- Silvermoon Sunveil
+							},
+						}),
+						q(97622, {	-- A Soiree to Remember
+							["timeline"] = { ADDED_12_1_0 },
 							["groups"] = {
 								i(266432),	-- Silvermoon Suncrest
 								i(266430),	-- Silvermoon Sunguard

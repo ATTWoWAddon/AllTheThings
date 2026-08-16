@@ -19,7 +19,6 @@
         Consolidation,
         UnsortedGeneration,
         DataIntegrityAnalysis,
-        ExportDebugData,
         ExportLocalizationStrings,
         ExportCategoryDB,
         ExportCustomHeaders,
@@ -30,6 +29,7 @@
         ExportAchievementData,
         ExportAddonData,
         ExportAutoSources,
+        ExportDebugData,
         ExportAutoLocale,
         FinalLogging
     }

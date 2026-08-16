@@ -33,6 +33,38 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						q(97383),	-- Spirit Corrosion
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --
+						q(96267, { -- Ancestral Gems (Day 1)
+							["qg"] = 264611,	-- Du'gal
+							["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						q(96276, { -- Dark Charms (Day 2)
+							["sourceQuest"] = 96267, -- Ancestral Gems (Day 1)
+							["qg"] = 264611,	-- Du'gal
+							["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						q(96273, { -- A Balance Paid in Blood (Day 3)
+							["sourceQuest"] = 96276, -- Dark Charms (Day 2)
+							["qg"] = 264611,	-- Du'gal
+							["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						q(96275, { -- Wading In (Day 4)
+							["sourceQuest"] = 96273, -- A Balance Paid in Blood (Day 3)
+							["qg"] = 264611,	-- Du'gal
+							["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						q(96271, { -- Cursed Existence (Day 5)
+							["sourceQuest"] = 96275, -- Wading In (Day 4)
+							["qg"] = 264611,	-- Du'gal
+							["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						q(96305, { -- The Innocent Essence (Day 6)
+							["sourceQuest"] = 96271, -- Cursed Existence (Day 5)
+							["qg"] = 264611,	-- Du'gal
+							["coord"] = { 50.6, 63.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+							["g"] = {
+								i(273838),	-- Spirit of Tok'jara (MOUNT!)
+							},
+						}),
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
@@ -259,5 +291,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 			},
 		}),
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+			n(QUESTS, {
+				q(96363),	-- Hidden Tracking for Renown 10 Mount Questline
+			}),
+		})),
 	}),
 }));

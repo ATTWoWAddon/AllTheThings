@@ -1599,3 +1599,12 @@ i(0, 1236490);		-- Magister's Grand Focus
 i(0, 1236492);		-- Oil of Dawn
 i(0, 1236487);		-- Runed Brilliant Silver Rod
 i(0, 1235731);		-- Shatter Essence
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- ITEM ---
+i(273073, 1291694);	-- Enchant Weapon - Rite of the Hash'ey
+i(275314, 1296500);	-- Enchanted Voidwell Fish
+i(275312, 1296499);	-- Furious Tiki Mask
+i(275310, 1296498);	-- Keen Hex Mask

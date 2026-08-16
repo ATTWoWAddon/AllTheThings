@@ -320,7 +320,34 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["questID"] = 98307,
 				}),
 			}),
-			-- Decrepit Caches, there's a number of them throughout the Isle and crypts however they are locked and each of them require i(275048), -- Decrepit Key to open
+			o(654986, {	-- Decrepit Cache
+				["coords"] = {
+					-- On the Main Map of The Coiled Isle
+					{ 27.3, 70.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 31.1, 84.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 44.6, 47.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 57.1, 65.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 60.0, 82.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 66.7, 31.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 67.0, 48.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 67.8, 40.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 69.3, 55.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 72.0, 43.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					-- Scattered through Crypts and Tombs
+					{ 53.8, 16.9, 2639 },	-- Crypt of the Denied
+					{ 17.3, 59.6, 2640 },	-- Blistering Terrace
+					{ 40.1, 53.6, 2641 },	-- Crypt of the Lost Warrior
+					{ 51.5, 72.3, 2641 },	-- Crypt of the Lost Warrior
+					{ 52.9, 18.9, 2641 },	-- Crypt of the Lost Warrior
+					{ 75.7, 60.6, 2641 },	-- Crypt of the Lost Warrior
+					{ 79.7, 70.9, 2641 },	-- Crypt of the Lost Warrior
+					{ 38.1, 43.6, 2642 },	-- Tomb of the Lost Priest
+					{ 61.0, 89.5, 2643 },	-- Crypt of the Lost Mason
+					{ 62.6, 52.7, 2643 },	-- Crypt of the Lost Mason
+					{ 32.2, 45.8, 2644 },	-- Crypt of the Disgraced
+				},
+				["cost"] = { { "i", 275048, 1 } },	-- 1x Decrepit Key
+			}),
 			-- Repeatables
 			o(654991, {	-- Cracked Canopic Jar
 				["description"] = "Spawns randomly around the temples.",

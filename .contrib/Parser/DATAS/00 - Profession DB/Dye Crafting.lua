@@ -88,3 +88,16 @@ i(0, 1264891);	-- Zephras Blue Dye
 --- NYI ---
 i(0, 1265093);	-- Deep Mageroyal Red Dye
 i(0, 1265092);	-- Gilnean Rose Dye
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+i(0, 1306642);	-- Black Housing Dye
+i(0, 1306796);	-- Blue Housing Dye
+i(0, 1306797);	-- Brown Housing Dye
+i(0, 1306799);	-- Green Housing Dye
+i(0, 1306801);	-- Orange Housing Dye
+i(0, 1306629);	-- Purple Housing Dye
+i(0, 1306802);	-- Red Housing Dye
+i(0, 1306803);	-- White Housing Dye
+i(0, 1306804);	-- Yellow Housing Dye

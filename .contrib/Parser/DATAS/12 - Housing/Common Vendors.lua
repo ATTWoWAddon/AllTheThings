@@ -622,12 +622,11 @@ root(ROOTS.Housing, {
 		}),
 	}),
 	n_CommonVendorItems({
-		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
 			267795,	-- Perry Winkles <Pet Decor Vendor> [Founder's Point]
 			267794,	-- Agratha <Pet Decor Vendor> [Razorwind Shores]
 		},
-		["groups"] = {
+		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
 			i(263880),	-- Cherished Pet's Rug (DECOR!)
 			i(277121),	-- Cozy Bird Nest (DECOR!)
 			i(277160),	-- Cozy Lightbloom Lilypad (DECOR!)
@@ -640,7 +639,7 @@ root(ROOTS.Housing, {
 			}),
 			i(277138),	-- Silvermoon Dragonhawk Incubator (DECOR!)
 			i(277142),	-- Westfall Pet Cage (DECOR!)
-		},
+		}),
 	}),
 	n(VENDORS, {
 		n(255654, {	-- Lorisin

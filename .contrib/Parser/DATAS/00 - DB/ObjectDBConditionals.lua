@@ -300,12 +300,15 @@ local MissingObjects = {
 	[254650] = "Bottle of Arcwine",
 	[254654] = "Bottle of Arcwine",
 	[495146] = "Semi-Deluxe Noggenfogger Elixirs",
+	[626980] = "Belanise Cluster",
+	[555823] = "Herbalist's Handbook: Eversong Medicinals",
 }
 
 for id,enName in pairs(MissingObjects) do
 	local text = ObjectDB[id].text
 	if not text or not text.en then
 		ObjectDB[id] = {
+			ignorewowhead = true,
 			text = {
 				en = enName,
 				readable = enName,

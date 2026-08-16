@@ -33,7 +33,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				filter(FINGER_F, {
 					i(276037),	-- Counter-Curse Circlet
+					i(276034),	-- Entangling Brood Ring
 					i(276036),	-- Ever-Constricting Band
+					i(276035),	-- Soulcoiler's Signet
 				}),
 				filter(LEATHER, {
 					i(276006),	-- Shadowclaw Footpads
@@ -57,6 +59,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				filter(NECK_F, {
 					i(276032),	-- Bad Juju Necklace
+					i(276033),	-- Loa Watcher's Pendant
 				}),
 				filter(PLATE, {
 					i(276016),	-- Stonehide Casque
@@ -80,9 +83,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(276057),	-- Cryptbound Scepter
 				i(276051),	-- Fangmouth Warspear
 				i(276059),	-- Headhunter's Hacker
+				i(276062),	-- Hydra Neckchopper
 				i(276044),	-- Loa-Infused Battlestaff
+				i(276058),	-- Ruinous Slitherslicer
+				i(276054),	-- Serpentvine Machete
+				i(276053),	-- Snakehunter's Warglaive
+				i(276049),	-- Snakeslayer's Claymore
+				i(276055),	-- Soulweaver's Curseblade
+				i(276047),	-- Swamp Whomper
+				i(276042),	-- Templetusk Shield
 				i(276045),	-- Trailblazing Soulblade
+				i(276050),	-- Victorious Spiritstaff
+				i(276043),	-- Vilefang Censer
 				i(276048),	-- Vipersbane Dagger
+				i(276061),	-- Witch Doctor's Bloodletter
 			}),
 			--
 			i(282183, {	-- Fabled Coiled Isle Veteran's Cache (Season 2)

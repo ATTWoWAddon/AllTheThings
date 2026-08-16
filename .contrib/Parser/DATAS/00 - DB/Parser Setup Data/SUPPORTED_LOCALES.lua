@@ -2,14 +2,14 @@
 
 SUPPORTED_LOCALES = {
 	"en",
-	"de",
 	"es",
 	"mx",
+	"de",
 	"fr",
 	"it",
-	"ko",
 	"pt",
 	"ru",
+	"ko",
 	"cn",
 	"tw",
 }

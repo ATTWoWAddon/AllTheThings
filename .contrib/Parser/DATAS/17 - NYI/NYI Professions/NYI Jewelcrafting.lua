@@ -99,6 +99,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(215146),	-- JC Gemcutting Toy
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					i(279376),	-- Opalescent Amani Peridot
+					i(279367),	-- Piercing Amani Lapis
+					i(279370),	-- Roaring Amani Garnet
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.TBC, {

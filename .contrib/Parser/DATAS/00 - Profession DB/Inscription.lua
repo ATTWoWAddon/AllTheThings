@@ -1901,3 +1901,17 @@ i(267396, 0);		-- Restful Bronze Bench
 i(258501, 0);		-- Sin'dorei Homely Shelf
 i(258497, 0);		-- Technique: Thalassian Missive of Deftness
 i(258507, 0);		-- Wild Hanging Scroll
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- ITEM ---
+i(275326, 1296506);	-- Chiseled Amani Tablet
+i(277967, 1303151);	-- Contract: Zul'jarra's Forces
+i(272196, 1290561);	-- Vantus Rune: Tides
+i(275324, 1296505);	-- "Cursed Gaze of Ula'tek" Mural
+--- NYI ---
+i(0, 1290560);		--
+i(0, 1296508);		-- Empty Tortollan Rack
+i(275322, 1296504);	-- Technique: Ferocious Feline Trinket
+i(275328, 1296507);	-- Technique: Turquoise Amani Tapestry

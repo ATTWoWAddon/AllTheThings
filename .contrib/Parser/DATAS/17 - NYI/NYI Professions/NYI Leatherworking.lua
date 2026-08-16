@@ -166,6 +166,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(219897),	-- Deepfury Hide+++
 				})),
 			}),
+			expansion(EXPANSION.MID, {
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					i(279373),	-- Mounted Moby
+					i(279372),	-- Stretched Snakeskin Rack
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {

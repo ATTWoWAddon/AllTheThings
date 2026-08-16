@@ -646,7 +646,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(96268, {	-- Marsh Mana Spores
 							["coord"] = { 63.1, 55.0, NAIGTAL },
-							["groups"] = { i(272276) },	-- Mana Spore (QI!)
+							["groups"] = { i(276276) },	-- Mana Spore (QI!)
 						}),
 						q(96272, {	-- Mashing Mushroom Mana Machines
 							["coord"] = { 29.8, 53.2, NAIGTAL },

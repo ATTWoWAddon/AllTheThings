@@ -117,8 +117,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
 					r(1265721),	-- Finesse
 					-- With SpellID attached
-					i(244818),	-- Recipe: Rootland Crab Lure
 					i(258511),	-- Recipe: Sunwell Fish Lure
+					-- Without SpellID attached
+					i(244818),	-- Recipe: Rootland Crab Lure
 				})),
 			}),
 		}),

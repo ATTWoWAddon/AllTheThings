@@ -574,8 +574,8 @@ namespace ATT
                     PurgeCoordShiftsBeyondParserVersion();
 
                     Framework.SUPPORTED_LOCALES =
-                        Framework.ParseAsDictionary<long>(lua.GetTable("SUPPORTED_LOCALES") ?? throw new InvalidDataException("Missing 'SUPPORTED_LOCALES' Global!"))
-                        .Select(kvp => kvp.Value?.ToString()).ToArray();
+                        Framework.ParseAsArray(lua.GetTable("SUPPORTED_LOCALES") ?? throw new InvalidDataException("Missing 'SUPPORTED_LOCALES' Global!"))
+                        .Select(kvp => kvp?.ToString()).ToArray();
                     Framework.Log("SUPPORTED_LOCALES", Framework.SUPPORTED_LOCALES);
 
                     Framework.FIRST_EXPANSION_PATCH =

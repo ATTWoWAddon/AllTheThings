@@ -543,27 +543,3 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
-12.1.0.68209
-r(1290560),	--
-r(1290561),	-- Vantus Rune: Tides
-r(1296504),	-- Ferocious Feline Trinket
-r(1296505),	-- "Cursed Gaze of Ula'tek" Mural \\ Inscribed Amani Mural
-r(1296506),	-- Chiseled Amani Tablet
-r(1296507),	-- Turquoise Amani Tapestry
-r(1296508),	-- Empty Tortollan Rack
-r(1303151),	-- Contract: Zul'jarra's Forces
-
-
-
-
-Missing in Inscription
-
-12.1.0.68209
-r(1290560),	--
-r(1290561),	-- Vantus Rune: Tides
-r(1296504),	-- Ferocious Feline Trinket
-r(1296505),	-- "Cursed Gaze of Ula'tek" Mural \\ Inscribed Amani Mural
-r(1296506),	-- Chiseled Amani Tablet
-r(1296507),	-- Turquoise Amani Tapestry
-r(1296508),	-- Empty Tortollan Rack
-r(1303151),	-- Contract: Zul'jarra's Forces

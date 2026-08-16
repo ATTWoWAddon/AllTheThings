@@ -36,6 +36,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["crs"] = { 262222 },	-- Poisoned Parasite
 				["coords"] = {
 					{ 58.2, 38.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 62.2, 41.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 67.9, 42.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
 			}),

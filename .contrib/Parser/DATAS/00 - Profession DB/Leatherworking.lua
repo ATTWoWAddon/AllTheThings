@@ -2755,3 +2755,13 @@ i(256648, 0);		-- Pattern: Devouring Banding
 ------------------
 --- ITEM ---
 i(272391, 1291046);	-- Rope Lynx Harness
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- ITEM ---
+i(275332, 1296509);	-- Flat Snakeskin Canopy
+i(275336, 1296511);	-- Mounted Moby
+i(275334, 1296510);	-- Stretched Snakeskin Rack
+--- UNSORTED ---
+i(273070, 1291691);	-- Adorned Fang

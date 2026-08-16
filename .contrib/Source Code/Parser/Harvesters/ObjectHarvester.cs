@@ -56,6 +56,10 @@ namespace ATT
         /// </summary>
         public const string TODO_NAME = "-- TODO";
 
+        private static bool WowheadShadowban = false;
+
+        private static int FailureCount = 0;
+
         private static List<string> _gameFlavors;
         /// <summary>
         /// The game flavors of WoWHead to try querying.
@@ -102,7 +106,7 @@ namespace ATT
         /// <summary>
         /// All of the supported locales. (excluding english)
         /// </summary>
-        private static readonly string[] SupportedLocales = { "es", "mx", "de", "fr", "it", "pt", "ru", "ko", "cn", "tw" };
+        private static readonly string[] SupportedLocales = Framework.SUPPORTED_LOCALES.Except(l => l == "en").ToArray();
 
         /// <summary>
         /// All of the objects and their fields that have been dirtied.
@@ -118,6 +122,9 @@ namespace ATT
         /// <returns></returns>
         private static string GetDocumentFromWoWHead(long objectID, string locale = "en", string flavor = null)
         {
+            // Wowhead Cloudflare CDN shadowbans your IP after about 30 requests within a minute or so
+            if (WowheadShadowban) return null;
+
             try
             {
                 // https://www.wowhead.com/classic/de/object=14845
@@ -131,6 +138,19 @@ namespace ATT
             catch (Exception e)
             {
                 Trace.WriteLine(e);
+                if (e.Message.Contains("(403)"))
+                {
+                    WowheadShadowban = true;
+                }
+                else
+                {
+                    FailureCount++;
+                    // after a lot of failures, just give up for this session
+                    if (FailureCount > 10)
+                    {
+                        WowheadShadowban = true;
+                    }
+                }
                 return string.Empty;
             }
         }
@@ -233,11 +253,6 @@ namespace ATT
                                     .Append(FormatStringForExport(localeString)).AppendLine(",");
                             }
                         }
-                        else
-                        {
-                            builder.Append(extraIndent).Append("\t\t\t-- TODO: ").Append(locale).Append(" = ")
-                                .Append(FormatStringForExport(string.Empty)).AppendLine(",");
-                        }
                     }
                     builder.Append(extraIndent).AppendLine("\t\t},");
                 }
@@ -311,6 +326,16 @@ namespace ATT
         /// <returns>Whether or not the object is dirty.</returns>
         public static bool UpdateInformationFromWoWHead(long objectID, IDictionary<string, object> objectData)
         {
+            // If the Object is flagged to skip wowhead
+            if (objectData.ContainsKey("ignorewowhead"))
+            {
+                objectData["ignorewowhead"] = null;
+                return false;
+            }
+
+            // Wowhead Cloudflare CDN shadowbans your IP after about 30 requests within a minute or so
+            if (WowheadShadowban) return false;
+
             // Don't look at "custom" objects... Yeesh. Why do these even exist?!
             if (objectID >= 9000000) return false;
 
@@ -327,7 +352,7 @@ namespace ATT
             }
             else
             {
-                objectData["text"] = textLocalizations = new Dictionary<string, object>();
+                textLocalizations = new Dictionary<string, object>();
                 dirty = true;
             }
 
@@ -410,6 +435,8 @@ namespace ATT
                 }
             }
 
+            // Only update the object data if we have obtained the en locale (Wowhead likes to shadow ban repeated url requests)
+            objectData["text"] = textLocalizations;
             // The english text, which acts as the default.
             string englishText = textLocalizations["en"].ToString();
 
@@ -418,28 +445,33 @@ namespace ATT
             {
                 if (!textLocalizations.TryGetValue(locale, out string oldValue) || oldValue.Contains(englishText))
                 {
+                    string name = oldValue;
                     string document = GetDocumentFromWoWHead(objectID, locale, gameFlavor);
                     if (!string.IsNullOrEmpty(document))
                     {
                         // Attempt to parse the non-english document.
-                        string name = ParseNameFromDocument(document);
+                        name = ParseNameFromDocument(document);
                         if (!string.IsNullOrEmpty(name))
                         {
                             // don't store the English default for other locales
                             if (name.StartsWith("[") && name.EndsWith("]"))
                             {
-                                name = TODO_NAME;
+                                name = oldValue;
                             }
 
                             Trace.Write(" text.");
                             Trace.Write(locale);
                             Trace.Write(" = ");
                             Trace.WriteLine(name);
-                            textLocalizations[locale] = name;
-                            dirtyTextFields[locale] = name;
-                            dirtyFields["text"] = dirtyTextFields;
-                            dirty = true;
                         }
+                    }
+
+                    if (name != oldValue)
+                    {
+                        textLocalizations[locale] = name;
+                        dirtyTextFields[locale] = name;
+                        dirtyFields["text"] = dirtyTextFields;
+                        dirty = true;
                     }
                 }
             }

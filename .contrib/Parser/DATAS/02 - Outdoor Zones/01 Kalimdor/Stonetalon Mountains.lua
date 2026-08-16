@@ -727,7 +727,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Warsong Stockpile Incinerated
 							["providers"] = {
-								{ "o", 40957 },	-- Warsong Stockpile
+								{ "n", 40957 },	-- Warsong Stockpile
 								{ "i", 55152 },	-- Warsong Flame Thrower
 							},
 							["coord"] = { 73.6, 50.2, STONETALON_MOUNTAINS },
@@ -2071,7 +2071,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/4 Oil Pump destroyed
 							["providers"] = {
 								{ "i", 56140 },	-- Goblin Pump Controller
-								{ "o", 41475 },	-- Oil Pump
+								{ "n", 41475 },	-- Oil Pump
 							},
 							["coord"] = { 50.6, 48.8, STONETALON_MOUNTAINS },
 						}),

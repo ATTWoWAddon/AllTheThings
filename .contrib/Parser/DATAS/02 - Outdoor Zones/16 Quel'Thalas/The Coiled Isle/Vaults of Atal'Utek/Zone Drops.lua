@@ -10,6 +10,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["cr"] = 263253,	-- Spirit of Jin'tal
 					["coord"] = { 74.9, 72.6, 2636 },	-- Vault of Restless Bones
 				}),
+				i(275048, {	-- Decrepit Key
+					["description"] = "Can be obtained from creatures with 'Corrosive' Aura after unlocking 'Slithering Secrets' trait at |cFFFFD700Altar of Corrosion|r.",
+				}),
 			}),
 		}),
 	}),

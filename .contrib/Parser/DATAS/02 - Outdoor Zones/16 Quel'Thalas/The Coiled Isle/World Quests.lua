@@ -68,8 +68,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(96066, {	-- Slithering Surveyor
 					["coord"] = { 56.9, 49.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
+				q(96625, {	-- Spectral Gladiators
+					["coord"] = { 68.4, 57.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(95529, {	-- Spearin' Sky Snakes
 					["coord"] = { 48.8, 64.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
+				q(96029, {	-- Special Assignment: Face the Swarm
+					["coord"] = { 71.2, 15.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
 				q(95918, {	-- Special Assignment: Wraith Wrath
 					["coord"] = { 44.0, 47.2, MAP.MIDNIGHT.THE_COILED_ISLE },

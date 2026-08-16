@@ -399,6 +399,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(245754),	-- Milling
 					i(245774),	-- Vantus Rune: 12.0 Raid
 				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					i(272191),	-- [PH] 12.1 Darkmoon Sigil
+					i(272192),	-- [PH] 12.1 Darkmoon Sigil
+					i(279369),	-- Chiseled Amani Tablet
+				})),
 			}),
 		}),
 		filter(RECIPES, {
@@ -568,6 +575,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(258501),	-- Technique: Sin'dorei Homely Shelf
 					i(258497),	-- Technique: Technique: Thalassian Missive of Deftness
 					i(258507),	-- Technique: Wild Hanging Scroll
+				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					r(1290560),	--
+					r(1296508),	-- Empty Tortollan Rack
+					-- With SpellID attached
+					i(275322),	-- Technique: Ferocious Feline Trinket
+					i(275328),	-- Technique: Turquoise Amani Tapestry
 				})),
 			}),
 		}),

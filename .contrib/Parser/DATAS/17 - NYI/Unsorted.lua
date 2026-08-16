@@ -9,22 +9,13 @@ root(ROOTS.Unsorted, {
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
-			i(241151),	-- Coiled Stargorger Lure
 			i(244344),	-- Griftah's Mystical Polter-Urn
-			i(245539),	-- Elegant Enchanted Vanity
-			i(246958),	-- Mastercrafted Fungal Row Planter
 			i(247776),	-- Glowing Zangarshroom Cup
 			i(248404),	-- Stack of Kafa Mugs
-			i(248963),	-- Spirit-Touched Amani Mask
 			i(249219),	-- Ouroboric Curse
 			i(249223),	-- Corrosive Bilespear
 			i(249227),	-- Dundun's Favor
 			i(249228),	-- Soul-Cracking Dreamcatcher
-			i(249923),	-- Sin'dorei Golden Welcome
-			i(251630),	-- Recipe: Amani Cornucopia
-			i(253397),	-- Revered Deepstone Table
-			i(253481),	-- Masterful Sin'dorei Gravestone
-			i(254561),	-- Ogre Champion's Prized Skull
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
@@ -47,7 +38,6 @@ root(ROOTS.Unsorted, {
 			i(265790),	-- Cache of Mistcrests
 			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
-			i(267080),	-- Amani Blueflame Chandelier
 			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(268095),	-- Fresh Poultice
 			i(268113),	-- Jan'alai's Breath
@@ -73,10 +63,7 @@ root(ROOTS.Unsorted, {
 			i(270335),	-- Mostly Smooth Seastone
 			i(270346),	-- Big Meaty Claw
 			i(270871),	-- Jan'alai's Breath
-			i(270898),	-- Snakeskin Lining
-			i(270899),	-- Snakeskin Lining
 			i(271053),	-- Cleansing Water
-			i(271130),	-- Venom Infusion
 			i(271131),	-- Test Weapon
 			i(271132),	-- Essence Trap
 			i(271133),	-- Marked Serpent Rune PH
@@ -102,90 +89,14 @@ root(ROOTS.Unsorted, {
 			i(271867),	-- Venom-Etched Sword
 			i(271868),	-- Splintering Spear
 			i(271991),	-- Venomous Equipment Chest
-			i(271996),	-- Crumpled Scroll
-			i(271997),	-- Abused Relic
-			i(271998),	-- Discarded Potion
-			i(272147),	-- Colubrine Band
-			i(272148),	-- Anguine Gyre
-			i(272149),	-- Hex Loop
-			i(272150),	-- Ouroboric Signet
-			i(272191),	-- [PH] 12.1 Darkmoon Sigil
-			i(272192),	-- [PH] 12.1 Darkmoon Sigil
-			i(272194),	-- Vantus Rune: Tides
-			i(272195),	-- Vantus Rune: Tides
-			i(272225),	-- Galerider's Mantle
-			i(272226),	-- Miststalker's Shroud
-			i(272227),	-- Pyrewalker's Veil
-			i(272228),	-- Whispering Periapt
-			i(272229),	-- Serpentine Talisman
-			i(272230),	-- Pledgebearer's Pall
-			i(272231),	-- Galerider's Doublet
-			i(272232),	-- Galerider's Buskins
-			i(272233),	-- Galerider's Gloves
-			i(272234),	-- Galerider's Miter
-			i(272235),	-- Galerider's Treads
-			i(272236),	-- Galerider's Mantlet
-			i(272237),	-- Galerider's Obi
-			i(272238),	-- Galerider's Wraps
-			i(272239),	-- Miststalker's Brigandine
-			i(272240),	-- Miststalker's Striders
-			i(272241),	-- Miststalker's Grips
-			i(272242),	-- Miststalker's Cowl
-			i(272243),	-- Miststalker's Cuisses
-			i(272244),	-- Miststalker's Spaulders
-			i(272245),	-- Miststalker's Cinch
-			i(272246),	-- Miststalker's Wristbands
-			i(272247),	-- Pyrewalker's Byrnie
-			i(272248),	-- Pyrewalker's Chausses
-			i(272249),	-- Pyrewalker's Chain Clasps
-			i(272250),	-- Pyrewalker's Gaze
-			i(272251),	-- Pyrewalker's Chausses
-			i(272252),	-- Pyrewalker's Mantle
-			i(272253),	-- Pyrewalker's Mail Skirt
-			i(272254),	-- Pyrewalker's Mesh Wraps
-			i(272255),	-- Pledgebearer's Cuirass
-			i(272256),	-- Pledgebearer's Sabatons
-			i(272257),	-- Pledgebearer's Gauntlets
-			i(272258),	-- Pledgebearer's Mask
-			i(272259),	-- Pledgebearer's Poleyns
-			i(272260),	-- Pledgebearer's Pauldrons
-			i(272261),	-- Pledgebearer's Girdle
-			i(272262),	-- Pledgebearer's Splints
-			i(272266),	-- Forgotten Eidolon's Dagger
-			i(272267),	-- Uncoffined Labrys
-			i(272268),	-- Mask-Etcher
-			i(272269),	-- Soulsealer's Headstone
-			i(272270),	-- Bonedust Pestle
-			i(272271),	-- Spiritbound Focus
-			i(272272),	-- Harrowed Partisan
-			i(272273),	-- Unshrined Ceremonial Scepter
-			i(272274),	-- Realm Splitter
-			i(272275),	-- Soulsinger's Horn
-			i(272276),	-- Wailing Bulwark
-			i(272277),	-- Spirit-Reaver
-			i(272278),	-- Recurve Wisp-Shooter
-			i(272280),	-- Exhumed Soul-Cleaver
-			i(272283),	-- Swordsman's Emanation
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
-			i(273062),	-- Coiled Snake-Eye
-			i(273063),	-- Coiled Snake-Eye
-			i(273064),	-- Schematic: Coiled Snake-Eye
-			i(273065),	-- Polished Ammolite
-			i(273066),	-- Polished Ammolite
-			i(273067),	-- Design: Polished Ammolite
-			i(273068),	-- Adorned Fang
-			i(273069),	-- Adorned Fang
-			i(273070),	-- Pattern: Adorned Fang
-			i(273071),	-- Enchant Weapon - Rite of the Hash'ey
-			i(273072),	-- Enchant Weapon - Rite of the Hash'ey
 			i(273303),	-- Ritual Gem
 			i(273311),	-- Kobold Candle Collection
 			i(273312),	-- Large Exodar Crystal
 			i(273313),	-- Stormstout Brewery Lantern
 			i(273649),	-- Stormbound Emblem of Dazar
 			i(273818),	-- [DNT] Knowledge Tome: Midnight Herbalism
-			i(273838),	-- Spirit of Tok'jara
 			i(273848),	-- Snake Scales
 			i(273881),	-- Anti-Venom Shell
 			i(274272),	-- Amani Equipment Chest
@@ -206,25 +117,11 @@ root(ROOTS.Unsorted, {
 			i(274457),	-- Emperor Crab
 			i(274458),	-- Kun-Lai Runt
 			i(274459),	-- Squirky
-			i(274464),	-- Black Housing Dye
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274469),	-- Brown Housing Dye
-			i(274471),	-- Orange Housing Dye
-			i(274474),	-- White Housing Dye
-			i(274475),	-- Yellow Housing Dye
-			i(274476),	-- Spark of Tides
 			i(274494),	-- Chiral Marrowgrafter
 			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle
-			i(274587),	-- Spotted Killifish
-			i(274588),	-- Toxic Tlhapi
-			i(274589),	-- Ula-tek Snakehead
-			i(274590),	-- Sulfurous Sludgefish
-			i(274591),	-- Coiled Stargorger
-			i(274592),	-- Dirty Darter
-			i(274593),	-- Blightswarmer
-			i(274594),	-- Polluted Puffer
 			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
 			i(274707),	-- Crystallized Venomblight Manaflux
@@ -259,9 +156,7 @@ root(ROOTS.Unsorted, {
 			i(274965),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
 			i(274991),	-- Seaside Fire Pit
-			i(275013),	-- Tokka's Multi-Ward
 			i(275030),	-- Slugg's Favorite Fishing Rod
-			i(275048),	-- Decrepit Key
 			i(275053),	-- Kobold Candle Collection
 			i(275054),	-- Wooden Toy Sword
 			i(275062),	-- Illusion: Venomcoil
@@ -277,44 +172,14 @@ root(ROOTS.Unsorted, {
 			i(275235),	-- Ruby Bracelet of Friendship
 			i(275236),	-- Silver Bracelet of Friendship
 			i(275237),	-- Crystal Bracelet of Friendship
-			i(275258),	-- Venom-Spiced Cutlets
-			i(275259),	-- Hearty Venom-Spiced Cutlets
-			i(275260),	-- Puffer Plate
-			i(275261),	-- Sweet-And-Sour Skewers
-			i(275262),	-- Hearty Puffer Plate
-			i(275263),	-- Hearty Sweet-And-Sour Skewers
-			i(275264),	-- Amani Cornucopia
-			i(275265),	-- Loa's Gathering
-			i(275266),	-- Feast of Knowledge
-			i(275267),	-- Hearty Amani Cornucopia
-			i(275268),	-- Hearty Loa's Gathering
-			i(275269),	-- Hearty Feast of Knowledge
-			i(275273),	-- Recipe: Sweet-And-Sour Skewer
 			i(275274),	-- Alchemy
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
-			i(275288),	-- Photosynthesized Scrap
-			i(275320),	-- Schematic: Aetherlume Field Lamp
-			i(275322),	-- Technique: Ferocious Feline Trinket
-			i(275324),	-- Technique: Inscribed Amani Mural
-			i(275326),	-- Technique: Chiseled Amani Tablet
-			i(275328),	-- Technique: Turquoise Amani Tapestry
-			i(275334),	-- Pattern: Stretched Snakeskin Rack
-			i(275338),	-- Pattern: Rolled Bed Linens
-			i(275526),	-- Preyhunter's Band
-			i(275527),	-- Preyhunter's Signet
-			i(275528),	-- Preyhunter's Ring
-			i(275529),	-- Preyhunter's Circle
-			i(275530),	-- Preyhunter's Clasp
-			i(275531),	-- Preyhunter's Choker
-			i(275534),	-- Preyhunter's Shiv
-			i(275535),	-- Preyhunter's Cudgel
-			i(275536),	-- Preyseeker's Scepter
-			i(275538),	-- Preyhunter's Scimitar
-			i(275540),	-- Preyhunter's Longsword
-			i(275545),	-- Preyhunter's Spire
+			i(278374),	-- Preyhunter's Fanged Bust
+			i(279574),	-- Preyhunter's Hero Chest
+			i(278378),	-- Preyhunter's Scaled Bust
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
 			i(275571),	-- [PH] Broomstick Spice - Grey
@@ -323,36 +188,14 @@ root(ROOTS.Unsorted, {
 			i(275574),	-- [PH] Broomstick Spice - Red
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
-			i(275659),	-- Hexflame Reaver
-			i(275676),	-- R0CKY-To-Go
-			i(275683),	-- G-00
-			i(275684),	-- Schematic: DU5TY, Lazy Looter
-			i(275695),	-- Design: Piercing Amani Lapis
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
-			i(275855),	-- Zul'Aman Swamp Palm Sprout
-			i(276033),	-- Loa Watcher's Pendant
-			i(276034),	-- Entangling Brood Ring
-			i(276035),	-- Soulcoiler's Signet
-			i(276042),	-- Templetusk Shield
-			i(276043),	-- Vilefang Censer
-			i(276047),	-- Swamp Whomper
-			i(276049),	-- Snakeslayer's Claymore
-			i(276050),	-- Victorious Spiritstaff
-			i(276053),	-- Snakehunter's Warglaive
-			i(276054),	-- Serpentvine Machete
-			i(276055),	-- Soulweaver's Curseblade
-			i(276058),	-- Ruinous Slitherslicer
-			i(276061),	-- Witch Doctor's Bloodletter
-			i(276062),	-- Hydra Neckchopper
 			i(276117),	-- Clouded Blood-Pearl
 			i(276124),	-- Ancient Knucklebone
 			i(276126),	-- Serpent's Feather
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276164),	-- Corroded Patagia
-			i(276166),	-- Twin-Headed Twinblade
-			i(276167),	-- Ori'kassi's Lance
 			i(276168),	-- Fang of Ss'akrithos
 			i(276169),	-- Malformed Barrier
 			i(276172),	-- Headdress of Mutagenesis
@@ -363,7 +206,6 @@ root(ROOTS.Unsorted, {
 			i(276198),	-- Shellman's 195
 			i(276205),	-- Legitimate Shipment of Swivel Guns
 			i(276206),	-- Leagally Sourced Cannon Shot
-			i(276207),	-- Preyhunter's Masquerade
 			i(276234),	-- Vibrant Venomfang
 			i(276297),	-- Rustbolt Jetpack
 			i(276312),	-- Griftah's Torch of Rotation
@@ -446,7 +288,6 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277821),	-- Ula'tek Snakehead Lure
 			i(277847),	-- Unbroken Trap Hinge
 			i(277848),	-- Untouched Crab Lure
 			i(277849),	-- Mushed Crab
@@ -461,20 +302,8 @@ root(ROOTS.Unsorted, {
 			i(277945),	-- Melancholic Offering
 			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
-			i(277968),	-- Contract: Zul'jarra's Forces
-			i(277969),	-- Contract: Zul'jarra's Forces
-			i(277975),	-- Arcanostorage Sphere
 			i(277985),	-- Mysterious Offering
-			i(277989),	-- Ghostcaller's Bell
 			i(277990),	-- Cursemail Gauntlets
-			i(277991),	-- Shrieking Tacklebox
-			i(277993),	-- Spiritsurge Incense
-			i(277996),	-- Summoning Salt
-			i(277997),	-- Malevolent Fishing Codex
-			i(277998),	-- Lump of Crystalline Malachite
-			i(277999),	-- Ritual Dagger
-			i(278000),	-- Sealed Vial of Mysterious Green Liquid
-			i(278001),	-- Forgotten Amani Fishing Rod
 			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
 			i(278048),	-- Corrosive Relic
@@ -503,21 +332,17 @@ root(ROOTS.Unsorted, {
 			i(278288),	-- Nebulous Voidcache: Sszorak
 			i(278289),	-- Nebulous Voidcache: The Twin Fangs
 			i(278290),	-- Nebulous Voidcache: The Bargained Crown
-			i(278330),	-- Schematic: R0CKY
-			i(278331),	-- Recipe: Sweet-And-Sour Skewers
-			i(278333),	-- Schematic: R0CKY-To-Go
 			i(278335),	-- Cerulean Pearl
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
+			i(278472),	-- Noxious Corrosive Coin
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(278378),	-- Preyhunter's Scaled Bust
-			i(278472),	-- Noxious Corrosive Coin
 			i(278517),	-- Lost Med'jai Amulet
 			i(278523),	-- Feather of Tok'jara
 			i(278534),	-- Eye of Szarith
 			i(278536),	-- Mummified Lynx's Paw
-			i(278572),	-- Pale Hexscale
 			i(278573),	-- Crested Burnished Leafmimic
 			i(278574),	-- Crested Aqua Leafmimic
 			i(278575),	-- Crested Verdant Leafmimic
@@ -623,7 +448,6 @@ root(ROOTS.Unsorted, {
 			i(278843),	-- Ensemble: Pyrewalker's Battlegear
 			i(278844),	-- Ensemble: Pledgebearer's Warplate
 			i(278845),	-- Arsenal: Amani Weaponry
-			i(278848),	-- Pustulent Blightswarmer
 			i(278869),	-- Lil' Blue Perdition
 			i(278870),	-- Lil' Green Perdition
 			i(278871),	-- Lil' Purple Perdition
@@ -674,21 +498,15 @@ root(ROOTS.Unsorted, {
 			i(279088),	-- [ph] SpiceWitch Head - Hallow (Hair Vis)
 			i(279089),	-- [ph] SpiceWitch Shoulders - Hallow
 			i(279090),	-- [ph] Ensemble: SpiceWitch Hallow Attire
-			i(279091),	-- Oozing Goby
-			i(279093),	-- Giggling Skull
-			i(279094),	-- Grotesque Sturgeon
 			i(279095),	-- [ph] SpiceWitch Chest - Orange
 			i(279096),	-- [ph] SpiceWitch Feet - Orange
 			i(279097),	-- [ph] SpiceWitch Waist - Orange
 			i(279098),	-- [ph] SpiceWitch Gloves- Orange
 			i(279099),	-- [ph] SpiceWitch Legs - Orange
-			i(279100),	-- Many-Eyed Flounder
 			i(279101),	-- [ph] SpiceWitch Head - Orange
 			i(279102),	-- [ph] SpiceWitch Head - Orange (Hair Vis)
 			i(279103),	-- [ph] SpiceWitch Shoulders - Orange
 			i(279104),	-- [ph] Ensemble: SpiceWitch Orange Attire
-			i(279105),	-- Twin-Headed Snipefish
-			i(279106),	-- Loathsome Anglerfish
 			i(279107),	-- [ph] SpiceWitch Chest - Pink
 			i(279108),	-- [ph] SpiceWitch Feet - Pink
 			i(279109),	-- [ph] SpiceWitch Waist - Pink
@@ -725,33 +543,15 @@ root(ROOTS.Unsorted, {
 			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
-			i(279197),	-- Slitherfang
 			i(279207),	-- Blackened Sludgefish
-			i(279209),	-- Plainsrunner's Sun Tunic
 			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
-			i(279287),	-- Corroded Pouch
-			i(279288),	-- Corroded Satchel
 			i(279290),	-- Fang Lover's
-			i(279345),	-- Corroded Satchel
 			i(279360),	-- Amani Forgemaster's Rack
-			i(279361),	-- Keen Hex Mask
-			i(279362),	-- Furious Tiki Mask
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
 			i(279365),	-- Fine Captain's Bottle
-			i(279366),	-- Aetherlume Field Lamp
-			i(279367),	-- Piercing Amani Lapis
 			i(279368),	-- Inscribed Amani Mural
-			i(279369),	-- Chiseled Amani Tablet
-			i(279370),	-- Roaring Amani Garnet
-			i(279371),	-- Flat Snakeskin Canopy
-			i(279372),	-- Stretched Snakeskin Rack
-			i(279373),	-- Mounted Moby
-			i(279374),	-- Rolled Bed Linens
-			i(279375),	-- Tortollan Slingsack
-			i(279376),	-- Opalescent Amani Peridot
-			i(279384),	-- Bonemail Gauntlet
 			i(279428),	-- Midnight Gloomcap
 			i(279429),	-- Azure Gloomcap
 			i(279430),	-- Sepia Gloomcap
@@ -781,10 +581,8 @@ root(ROOTS.Unsorted, {
 			i(279483),	-- Three-Eyed Fish
 			i(279520),	-- Fabled Veteran's Cache
 			i(279522),	-- Surplus Bag of Party Favors
-			i(279523),	-- Overflowing Abundant Satchel
 			i(279524),	-- Brewer's Purple Kilt
 			i(279526),	-- Victorious Stormarion Pinnacle Cache
-			i(279528),	-- Mag'har Laborer's Tunic
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
 			i(279531),	-- Brewer's Purple Beret
@@ -792,12 +590,6 @@ root(ROOTS.Unsorted, {
 			i(279533),	-- Brewer's Red Shoulder Cape
 			i(279534),	-- Brewer's Red Kilt
 			i(279535),	-- Brewer's Red Belt
-			i(279536),	-- Painted Raptor-Tooth Shirt
-			i(279538),	-- Spore-Pocked Lab Coat
-			i(279539),	-- Junior Artificer's Work Vest
-			i(279540),	-- Tinker's Padded Vest
-			i(279541),	-- Priestess' Moon Tunic
-			i(279542),	-- Runecloth Clergy Coat
 			i(279543),	-- Sky Shaman's Tunic
 			i(279544),	-- Witch Doctor's Undervest
 			i(279545),	-- Wild Seer's Mantle
@@ -807,7 +599,6 @@ root(ROOTS.Unsorted, {
 			i(279549),	-- Witch-Hunter's Undercoat
 			i(279550),	-- Potion of Venomous Return
 			i(279551),	-- Radical's Gilded Vestment
-			i(279574),	-- Preyhunter's Hero Chest
 			i(279579),	-- Cruel Warrior's Blade
 			i(279590),	-- Venomous Champion's Illustrious Banner
 			i(279610),	-- Bundle of Adventurer Dawncrests
@@ -828,9 +619,6 @@ root(ROOTS.Unsorted, {
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
-			i(280003),	-- Excising Knife
-			i(280004),	-- Corroded Key
-			i(280006),	-- Spirit Loupe
 			i(280007),	-- Mask Fragment
 			i(280047),	-- Feathered Bell
 			i(280089),	-- Mask Fragment
@@ -869,54 +657,6 @@ root(ROOTS.Unsorted, {
 			i(280271),	-- Longwick Rope
 			i(280273),	-- Droopy Longwick Rope
 			i(280275),	-- Hanging Longwick Rope
-
-			i(275488),	-- Preyhunter's Polished Brigandine
-			i(275489),	-- Preyhunter's Polished Greatbelt
-			i(275490),	-- Preyhunter's Polished Greatboots
-			i(275491),	-- Preyhunter's Polished Handguards
-			i(275492),	-- Preyhunter's Polished Helmet
-			i(275493),	-- Preyhunter's Polished Pauldrons
-			i(275494),	-- Preyhunter's Polished Tassets
-			i(275495),	-- Preyhunter's Polished Vambraces
-			i(275496),	-- Preyhunter's Refined Cord
-			i(275497),	-- Preyhunter's Refined Crown
-			i(275498),	-- Preyhunter's Refined Cuffs
-			i(275499),	-- Preyhunter's Refined Epaulet
-			i(275500),	-- Preyhunter's Refined Gloves
-			i(275501),	-- Preyhunter's Refined Slippers
-			i(275502),	-- Preyhunter's Refined Tights
-			i(275503),	-- Preyhunter's Refined Vestments
-			i(275504),	-- Preyhunter's Rugged Bindings
-			i(275505),	-- Preyhunter's Rugged Clasp
-			i(275506),	-- Preyhunter's Rugged Grips
-			i(275507),	-- Preyhunter's Rugged Haubergeon
-			i(275508),	-- Preyhunter's Rugged Legguards
-			i(275509),	-- Preyhunter's Rugged Plume
-			i(275510),	-- Preyhunter's Rugged Sabatons
-			i(275511),	-- Preyhunter's Rugged Shoulderguards
-			i(275512),	-- Preyhunter's Sleek Armlets
-			i(275513),	-- Preyhunter's Sleek Belt
-			i(275514),	-- Preyhunter's Sleek Boots
-			i(275515),	-- Preyhunter's Sleek Gauntlets
-			i(275516),	-- Preyhunter's Sleek Jerkin
-			i(275517),	-- Preyhunter's Sleek Mask
-			i(275518),	-- Preyhunter's Sleek Shoulderpads
-			i(275519),	-- Preyhunter's Sleek Trousers
-			i(275522),	-- Preyhunter's Refined Shawl
-			i(275523),	-- Preyhunter's Sleek Capelet
-			i(275524),	-- Preyhunter's Rugged Stole
-			i(275525),	-- Preyhunter's Polished Cloak
-			i(275532),	-- Preyhunter's Hatchet
-			i(275533),	-- Preyhunter's Kukri
-			i(275537),	-- Preyhunter's Hammer
-			i(275539),	-- Preyhunter's Ritual Blade
-			i(275541),	-- Preyhunter's Warglaive
-			i(275542),	-- Preyhunter's Longbow
-			i(275543),	-- Preyhunter's Spear
-			i(275544),	-- Preyhunter's Staff
-			i(275546),	-- Preyhunter's Falchion
-			i(275547),	-- Preyhunter's Lantern
-			i(275548),	-- Preyhunter's Tower Shield
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
 			i(252042),	-- Purified Troll Pitcher
@@ -933,63 +673,46 @@ root(ROOTS.Unsorted, {
 			i(280339),	-- Brewfest Fence
 			i(280341),	-- Brewfest Fencepost
 			i(280343),	-- Hanging Brewfest Wreath
-			i(280377),	-- Breath of Jan'alai
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
 			i(274422),	-- Ossified Relic
-			i(279335),	-- Enchanted Voidwell Fish
-			i(279337),	-- Coiled Amani Hookshot
-			i(279339),	-- Proudmoore Ship-in-a-Bottle
-			i(279341),	-- Aetherlume Field Lamp
-			i(279343),	-- Piercing Amani Lapis
-			i(279346),	-- Stretched Snakeskin Rack
-			i(279348),	-- Mounted Moby
-			i(279353),	-- Tortollan Slingsack
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
 			i(280540),	-- Lil' Mon
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280691),	-- Dagger of the Slithering Ritual
 			i(280698),	-- Szarith's Underbelly Slicer
-			i(280700),	-- Armbands of the Rotten Claw
 			i(280701),	-- Waistwrap of the Fanged
-			i(280709),	-- Triple Threat Pauldrons
-			i(280752),	-- "Cursed Gaze of Ula'tek" Mural
-			i(280757),	-- Chiseled Amani Tablet
-			i(280762),	-- Roaring Amani Garnet
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
 			i(281227),	-- Soulcoiler's Rush'kah
-			i(281244),	-- Amani Scout's Quiver
-			i(281245),	-- Amani Scout's Shield
-			i(281247),	-- Amani Scout's Axe
-			i(281248),	-- Amani Scout's Bow
-			i(281249),	-- Amani Scout's Mojo
-			i(281311),	-- Amani Scout's Spear
-			i(281325),	-- Amani Scout's Quarterstaff
-			i(281326),	-- Amani Scout's Staff
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(278397),	-- Ephemeral Star Ooze
-			i(279332),	-- Keen Hex Mask
 			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
-			i(268970),	-- Majestic Eagle Statue
-			i(268972),	-- Pressed Sanguithorn
-			i(268973),	-- Bone Pen
-			i(268974),	-- Deactivated Amani Hex Ward
-			i(268975),	-- Amani War Axe
-			i(268976),	-- "Aromatic" Bottle
-			i(268977),	-- Ossein Fish Trinket
-			i(268978),	-- Torga Statue
-			i(269019),	-- Amani Construction Hammer
-			i(269020),	-- Scrimshaw Ward
-			i(269021),	-- Jan'alai Bibelot
-			i(269937),	-- Neighborhood Knick Knack
-			i(279356),	-- Opalescent Amani Peridot
 			i(280503),	-- Ulantu's Notes
-
+			n(PROFESSIONS, {
+				prof(ENGINEERING, {
+					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
+					i(273062),	-- Coiled Snake-Eye+
+					i(273063),	-- Coiled Snake-Eye++
+				}),
+				prof(JEWELCRAFTING, {
+					i(275695),	-- Design: Piercing Amani Lapis (RECIPE!)
+					i(279343),	-- Piercing Amani Lapis (DECOR!)
+					--
+					i(273067),	-- Design: Polished Ammolite (RECIPE!)
+					i(273065),	-- Polished Ammolite+
+					i(273066),	-- Polished Ammolite++
+				}),
+				prof(LEATHERWORKING, {
+					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
+					i(273068),	-- Adorned Fang+
+					i(273069),	-- Adorned Fang++
+				}),
+			}),
 
 			--[[ If Darkal Needs
 			n(CLASS, {
@@ -1314,7 +1037,6 @@ root(ROOTS.Unsorted, {
 				i(274640),	-- Arcfluxion Hydrospore
 				i(274783),	-- Fel Embers
 				i(274798),	-- Remote Detonator
-				i(276276),	-- Mana Spore
 			}),
 			filter(TOYS, {
 				i(264368),	-- ??

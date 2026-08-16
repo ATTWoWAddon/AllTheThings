@@ -2022,3 +2022,13 @@ i(0, 1228435);		-- [DNT] 12.0 Tailoring Recipe Spell Template
 i(0, 1279126);		-- [DNT] Thalassian Fisher's Suncover
 i(0, 1228998);		-- Unknown
 i(0, 1228999);		-- Unknown
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- ITEM ---
+i(270900, 1288335);	-- Snakeskin Lining
+i(275338, 1296512);	-- Twilight's Blade Bedroll
+i(275342, 1296514);	-- Tortollan Slingsack
+--- NYI ---
+i(0, 1296513);	-- Traveled Murloc Plushie

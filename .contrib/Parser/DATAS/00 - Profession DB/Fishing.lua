@@ -204,5 +204,32 @@ i(244816, 1226157);	-- Lucky Loa Lure
 i(244815, 1226161);	-- Ominous Octopus Lure
 --- NYI ---
 i(0, 1265721);		-- Finesse
+i(244818, 0);		-- Rootland Crab Lure
 i(258511, 1226158);	-- Sunwell Fish Lure
-i(244818, 1231090);	-- Rootland Crab Lure
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- DISCOVERY ---
+i(0, 1295411);		-- Blightswarmer
+i(0, 1295408);		-- Coiled Stargorger
+i(0, 1295409);		-- Dirty Darter
+i(0, 1305973);		-- Giggling Skull
+i(0, 1305975);		-- Grotesque Sturgeon
+i(0, 1305979);		-- Loathsome Anglerfish
+i(0, 1305976);		-- Many-Eyed Flounder
+i(0, 1305972);		-- Oozing Goby
+i(0, 1295410);		-- Polluted Puffer
+i(0, 1295404);		-- Spotted Killifish
+i(0, 1295407);		-- Sulfurous Sludgefish
+i(0, 1295422);		-- Temple Fishing
+i(0, 1303630);		-- The Briny Best of 'Em
+i(0, 1295420);		-- The Coiled Isle
+i(0, 1295405);		-- Toxic Tlhapi
+i(0, 1305978);		-- Twin-Headed Snipefish
+i(0, 1295406);		-- Ula'tek Snakehead
+i(0, 1295421);		-- Venom Fishing
+--- ITEM ---
+i(275018, 1231090);	-- Coiled Stargorger Lure
+i(275012, 1295922);	-- Tokka's Multi-Ward
+i(277820, 1302819);	-- Ula'tek Snakehead Lure

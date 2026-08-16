@@ -130,15 +130,258 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(257768),	-- Time Lost Edict
 			}),
 			mapped(n(DELVE_COMPLETION, {
-				-- Currently unaware of objectIDs so treated just as reward
-				i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
-				i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
-				i(253245),	-- Cracked Keystone (QI!/QS!/CI!)
-				i(252415, {	-- Trovehunter's Bounty
-					["providers"] = {{"o",618495}}, -- Nullaeus Cache (verified)
+				n(ARMOR, {
+					filter(BACK_F, {
+						["providers"] = {
+							{"o",584514},	-- Bountiful Coffer
+							{"o",584518},	-- Bountiful Heavy Trunk
+							{"o",584503},	-- Grand Sanctified Spoils
+							{"o",584519},	-- Heavy Trunk
+							{"o",581922},	-- Hidden Trove
+							{"o",618495},	-- Nullaeus Cache
+							{"o",623259},	-- Pilfered Trunk
+						},
+						["groups"] = {
+							i(249625),	-- Elder Mossveil
+							i(249624),	-- Osseoclad Paledrape
+							i(249628),	-- Rampant Bramblecloack
+							i(249619),	-- Sprawling Mycoshroud
+						},
+					}),
+					filter(CLOTH, {
+						["providers"] = {
+							{"o",584514}, -- Bountiful Coffer
+							{"o",584518}, -- Bountiful Heavy Trunk
+							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584519}, -- Heavy Trunk
+							{"o",581922}, -- Hidden Trove
+							{"o",584511}, -- Nemesis Strongbox
+							{"o",584509}, -- Nemesis Strongbox
+							{"o",584508}, -- Nemesis Strongbox
+							{"o",584512}, -- Nemesis Strongbox
+							{"o",618495}, -- Nullaeus Cache
+							{"o",623259}, -- Pilfered Trunk
+							{"o",623258}, -- Pilfered Trunk
+						},
+						["groups"] = {
+							i(249634),	-- Sprawling Fibershells
+							i(249635),	-- Sprawling Rhizomecord
+							i(249630),	-- Sprawling Rootpads
+							i(249633),	-- Sprawling Rootstockings
+							i(249629),	-- Sprawling Rootunic
+							i(249632),	-- Sprawling Stoloncollar
+							i(249631),	-- Sprawling Tendrils
+							i(249636),	-- Sprawling Wristroots
+						},
+					}),
+					filter(FINGER_F, {
+						["providers"] = {
+							{"o",584514}, -- Bountiful Coffer
+							{"o",584518}, -- Bountiful Heavy Trunk
+							{"o",584503}, -- Grand Sanctified Spoils
+							{"o",584519}, -- Heavy Trunk
+							{"o",581922}, -- Hidden Trove
+							{"o",618495}, -- Nullaeus Cache
+							{"o",623259}, -- Pilfered Trunk
+						},
+						["groups"] = {
+							i(249623),	-- Blooming Leafcoil
+							i(249622),	-- Spiritseal Ring
+							i(249621),	-- Voodoo Band
+							i(249620),	-- Vibrant Wilderloop
+						},
+					}),
+					filter(LEATHER, {
+						["providers"] = {
+							{"o",584514}, -- Bountiful Coffer
+							{"o",584518}, -- Bountiful Heavy Trunk
+							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584519}, -- Heavy Trunk
+							{"o",581922}, -- Hidden Trove
+							{"o",584511}, -- Nemesis Strongbox
+							{"o",584509}, -- Nemesis Strongbox
+							{"o",584508}, -- Nemesis Strongbox
+							{"o",584512}, -- Nemesis Strongbox
+							{"o",618495}, -- Nullaeus Cache
+							{"o",623259}, -- Pilfered Trunk
+							{"o",623258}, -- Pilfered Trunk
+						},
+						["groups"] = {
+							i(249638),	-- Osseoclad Bonecrushers
+							i(249641),	-- Osseoclad Bonesteppers
+							i(249644),	-- Osseoclad Ivory Wrist
+							i(249637),	-- Osseoclad Marrowvest
+							i(249642),	-- Osseoclad Razorspaulders
+							i(249640),	-- Osseoclad Saberteeth
+							i(249639),	-- Osseoclad Spinegrapplers
+							i(249643),	-- Osseoclad Waistbone
+						},
+					}),
+					filter(MAIL, {
+						["providers"] = {
+							{"o",584514}, -- Bountiful Coffer
+							{"o",584518}, -- Bountiful Heavy Trunk
+							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584519}, -- Heavy Trunk
+							{"o",581922}, -- Hidden Trove
+							{"o",584511}, -- Nemesis Strongbox
+							{"o",584509}, -- Nemesis Strongbox
+							{"o",584508}, -- Nemesis Strongbox
+							{"o",584512}, -- Nemesis Strongbox
+							{"o",618495}, -- Nullaeus Cache
+							{"o",623259}, -- Pilfered Trunk
+							{"o",623258}, -- Pilfered Trunk
+						},
+						["groups"] = {
+							i(249652),	-- Elder Mossbands
+							i(249651),	-- Elder Mosscinch
+							i(249646),	-- Elder Mossclogs
+							i(249647),	-- Elder Mossfeelers
+							i(249648),	-- Elder Mosshorns
+							i(249645),	-- Elder Mossmail
+							i(249649),	-- Elder Mossvein Breeches
+							i(249650),	-- Elder Mossvein Greatleaves
+						},
+					}),
+					filter(NECK_F, {
+						["providers"] = {
+							{"o",584514}, -- Bountiful Coffer
+							{"o",584518}, -- Bountiful Heavy Trunk
+							{"o",584503}, -- Grand Sanctified Spoils
+							{"o",584519}, -- Heavy Trunk
+							{"o",581922}, -- Hidden Trove
+							{"o",618495}, -- Nullaeus Cache
+							{"o",623259}, -- Pilfered Trunk
+						},
+						["groups"] = {
+							i(249627),	-- Arboreal Vine Collar
+							i(249626),	-- Nocturnal Thorncharm
+						},
+					}),
+					filter(PLATE, {
+						["providers"] = {
+							{"o",584514}, -- Bountiful Coffer
+							{"o",584518}, -- Bountiful Heavy Trunk
+							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584519}, -- Heavy Trunk
+							{"o",581922}, -- Hidden Trove
+							{"o",584511}, -- Nemesis Strongbox
+							{"o",584509}, -- Nemesis Strongbox
+							{"o",584508}, -- Nemesis Strongbox
+							{"o",584512}, -- Nemesis Strongbox
+							{"o",618495}, -- Nullaeus Cache
+							{"o",623259}, -- Pilfered Trunk
+							{"o",623258}, -- Pilfered Trunk
+						},
+						["groups"] = {
+							i(249657),	-- Rampant Bramblegreaves
+							i(249653),	-- Rampant Brambleplate
+							i(249660),	-- Rampant Briarcuffs
+							i(249656),	-- Rampant Briarhelm
+							i(249655),	-- Rampant Creepers
+							i(249654),	-- Rampant Thistlestompers
+							i(249658),	-- Rampant Thornmantles
+							i(249659),	-- Rampant Thornstrap
+						},
+					}),
+					filter(TRINKET_F, {
+						["sym"] = {{"select","itemID",
+							251788,	-- Gift of Light
+						}},
+						["groups"] = sharedData({
+							["providers"] = {
+								{"o",584514}, -- Bountiful Coffer
+								{"o",584518}, -- Bountiful Heavy Trunk
+								{"o",584515}, -- Bountiful Heavy Trunk
+								{"o",584503}, -- Grand Sanctified Spoils
+								{"o",584519}, -- Heavy Trunk
+								{"o",581922}, -- Hidden Trove
+								{"o",584512}, -- Nemesis Strongbox
+								{"o",584509}, -- Nemesis Strongbox
+								{"o",584508}, -- Nemesis Strongbox
+								{"o",584511}, -- Nemesis Strongbox
+								{"o",618495}, -- Nullaeus Cache
+								{"o",623259}, -- Pilfered Trunk
+								{"o",623258}, -- Pilfered Trunk
+							},
+						},{
+							i(264878),	-- Astalor's Anguish Agitator
+							i(251789),	-- Consecrated Chalice
+							i(251790),	-- Desecrated Chalice
+							i(251792),	-- Glorious Crusader's Keepsake
+							i(251791),	-- Holy Retributor's Order
+							i(251787),	-- Sealed Chaos Urn
+							i(251785),	-- Void-Reaper's Libram
+						}),
+					}),
 				}),
-				-- Bonus roll
-				i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove
+				filter(MISC, {
+					i(252415, {	-- Trovehunter's Bounty
+						["providers"] = {{"o",618495}}, -- Nullaeus Cache (verified)
+					}),
+					-- Bonus roll
+					i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove
+				}),
+				filter(QUEST_ITEMS, {
+					-- Currently unaware of objectIDs so treated just as reward
+					i(254675),	-- Ancient Curio (Combat) (QI!/QS!)
+					i(254674),	-- Ancient Curio (Utility) (QI!/QS!)
+					i(253245),	-- Cracked Keystone (QI!/QS!/CI!)
+				}),
+				n(WEAPONS, {
+					["groups"] = sharedData({
+						["providers"] = {
+							{"o",584514}, -- Bountiful Coffer
+							{"o",584518}, -- Bountiful Heavy Trunk
+							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584503}, -- Grand Sanctified Spoils
+							{"o",584519}, -- Heavy Trunk
+							{"o",581922}, -- Hidden Trove
+							{"o",584512}, -- Nemesis Strongbox
+							{"o",584509}, -- Nemesis Strongbox
+							{"o",584508}, -- Nemesis Strongbox
+							{"o",584511}, -- Nemesis Strongbox
+							{"o",618495}, -- Nullaeus Cache
+							{"o",623259}, -- Pilfered Trunk
+							{"o",623258}, -- Pilfered Trunk
+						},
+					},{
+						-- Set
+						i(251884, {	-- Abyss Sabre
+							["providers"] = {
+								{"o",618495}, -- Nullaeus Cache
+								{"o",584518}, -- Bountiful Heavy Trunk
+							},
+						}),
+						i(251885, {	-- Radiant Foil
+							["providers"] = {
+								{"o",584508}, -- Nemesis Strongbox
+								{"o",584518}, -- Bountiful Heavy Trunk (verified)
+							},
+						}),
+						-- Basic
+						i(249667),	-- Barbed Rootwand
+						i(249665),	-- Blooming Seedpod
+						i(249676),	-- Bramblebarricade
+						i(249672),	-- Elderbloom Lantern
+						i(249670),	-- Elderoot Spire
+						i(249664),	-- Gnarled Thornmace
+						i(249671),	-- Gnarlroot Spinecleaver
+						i(262729),	-- Hand of the Rootkeeper
+						i(262732),	-- Heavy Bramblebolter
+						i(251935),	-- Lightgrasp Worldroot
+						i(249669),	-- Organ Piercer's Briarspear
+						i(249610),	-- Resinous Blossomblade
+						i(249661),	-- Root Sculptor's Verdaxe
+						i(260189),	-- Rootkeeper's Dancing Needle
+						i(260188),	-- Savage Briaredge
+						i(259462),	-- Thorneedle
+						i(249677),	-- Twinthorn Wildglaive
+						i(260187),	-- Underbrush Render
+						i(249662),	-- Wild Fiberknife
+						i(262731),	-- Wildthorn Razorfang
+					}),
+				}),
 			})),
 			n(FACTIONS, {
 				faction(2742),	-- Delves: Season 1

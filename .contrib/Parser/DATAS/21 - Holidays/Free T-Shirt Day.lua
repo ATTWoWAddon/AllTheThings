@@ -57,6 +57,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 				i(167082),	-- Stylish Black Shirt
 				i(167196),	-- Wound Dressing
 				i(167193),	-- Yellow Martial Shirt
+				-- 12.1
+				i(279540),	-- Tinker's Padded Vest
+				i(279209),	-- Plainsrunner's Sun Tunic
+				i(279528),	-- Mag'har Laborer's Tunic
+				i(279536),	-- Painted Raptor-Tooth Shirt
+				i(279538),	-- Spore-Pocked Lab Coat
+				i(279539),	-- Junior Artificer's Work Vest
+				i(279541),	-- Priestess' Moon Tunic
+				i(279542),	-- Runecloth Clergy Coat
 			},
 		}),
 		n(150942, {	-- Stormwind Entertainer
@@ -92,6 +101,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 				i(167082),	-- Stylish Black Shirt
 				i(167196),	-- Wound Dressing
 				i(167193),	-- Yellow Martial Shirt
+				-- 12.1
+				i(279540),	-- Tinker's Padded Vest
+				i(279209),	-- Plainsrunner's Sun Tunic
+				i(279528),	-- Mag'har Laborer's Tunic
+				i(279536),	-- Painted Raptor-Tooth Shirt
+				i(279538),	-- Spore-Pocked Lab Coat
+				i(279539),	-- Junior Artificer's Work Vest
+				i(279541),	-- Priestess' Moon Tunic
+				i(279542),	-- Runecloth Clergy Coat
 			},
 		}),
 	}),

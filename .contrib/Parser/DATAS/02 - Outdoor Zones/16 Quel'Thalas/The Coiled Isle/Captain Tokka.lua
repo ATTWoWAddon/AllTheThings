@@ -40,6 +40,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(94803, {	-- Going for the Crown
 						i(277920),	-- Vibrant Crownfeather (QI!)
 					}),
+					q(94798),	-- Ssak'mozek's Desire
 					q(94805),	-- The New Hoard, Poached
 					q(94806, {	-- Wriggling and Wet
 						i(277935),	-- Pungent Leech Leg (QI!)
@@ -54,6 +55,38 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					q(97571),	-- Dogging the Darters
 					q(97557),	-- Tailing the Tlhapi
 				})),
+				n(QUESTS, {
+					q(97464, {	-- A Dash of Poison
+						["provider"] = { "i", 278000 } -- Sealed Vial of Mysterious Green Liquid
+					}),
+					q(97457, {	-- Bonemail Gauntlet
+						["provider"] = { "i", 279384 } -- Bonemail Gauntlet
+					}),
+					q(97455, {	-- Call of the Bell
+						["provider"] = { "i", 277989 } -- Ghostcaller's Bell
+					}),
+					q(97461, {	-- Cursed Fishing 101
+						["provider"] = { "i", 277997 } -- Malevolent Fishing Codex
+					}),
+					q(97463, {	-- Just a Normal Knife
+						["provider"] = { "i", 277999 } -- Ritual Dagger
+					}),
+					q(97460, {	-- Lightly Salted
+						["provider"] = { "i", 277996 } -- Summoning Salt
+					}),
+					q(97462, {	-- Rocky Shores
+						["provider"] = { "i", 277998 } -- Lump of Crystalline Malachite
+					}),
+					q(97459, {	-- Something Smelly
+						["provider"] = { "i", 277993 } -- Spiritsurge Incense
+					}),
+					q(97458, {	-- Tackled and Boxed
+						["provider"] = { "i", 277991 } -- Shrieking Tacklebox
+					}),
+					q(97465, {	-- The Intended Way to Fish
+						["provider"] = { "i", 278001 } -- Forgotten Amani Fishing Rod
+					}),
+				}),
 				n(VENDORS, {
 					n(257598, {	-- Second Mate Sluggs
 						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },

@@ -97,6 +97,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(243442),	-- Enchant Shoulders - Voidtouched
 					i(243448),	-- Illusory Adornment - Blooming Light
 				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					i(279361),	-- Keen Hex Mask
+				})),
 			}),
 		}),
 		filter(RECIPES, {

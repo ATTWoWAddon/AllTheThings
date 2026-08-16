@@ -459,6 +459,8 @@ HeaderAssignments = {
 	["Prestige"] = -302,
 	["Prestige Rewards"] = -137,
 	["Prey"] = -671,
+	["Prey MID S1"] = -765,
+	["Prey MID S2"] = -766,
 	["Prideful Gladiator: Season 15"] = -264,
 	["Primal Gladiator: Warlords Season 1"] = -266,
 	["Primal Storms"] = -191,
@@ -744,4 +746,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -765
+NextHeaderID = -767

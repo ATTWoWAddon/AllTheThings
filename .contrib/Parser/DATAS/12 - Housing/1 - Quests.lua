@@ -157,8 +157,8 @@ root(ROOTS.Housing, {
 					-- Decor offered if turning quest in Founder's Point
 					i(245993),	-- Purified Floating Lantern (DECOR!)
 					i(255712),	-- Purified Ancient Urn (DECOR!)
-					i(263876),	-- Purified Folk Mirror (DECOR!)
 					i(267205),	-- Purified Folk Candle (DECOR!)
+					i(263876),	-- Purified Folk Mirror (DECOR!)
 					i(267435),	-- Purified Kaldorei Candle (DECOR!)
 					i(268943),	-- Purified Elven Glowlamp (DECOR!)
 					-- Decor offered if turning quest in Razorwind Shores
@@ -168,6 +168,29 @@ root(ROOTS.Housing, {
 					i(267355),	-- Purified Elven Mirror (DECOR!)
 					i(272129),	-- Purified Tauren Pot (DECOR!)
 					i(278696),	-- Purified Dracthyr Stein (DECOR!)
+				},
+			}),
+			q(98406, {	-- A Curated Gift
+				["description"] = "Unlocks when your house reaches Level 8.",
+				["qgs"] = {
+					248854,	-- The Last Architect @ Founder's Point
+					253596,	-- The Last Architect @ Razorwind Shores
+				},
+				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },
+					{ 53.7, 57.4, RAZORWIND_SHORES }
+				},
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = {
+					i(277975, {	-- Arcanostorage Sphere
+						i(245539),	-- Elegant Enchanted Vanity (DECOR!)
+						i(246958),	-- Mastercrafted Fungal Row Planter (DECOR!)
+						i(253481),	-- Masterful Sin'dorei Gravestone (DECOR!)
+						i(254561),	-- Ogre Champion's Prized Skull (DECOR!)
+						i(253397),	-- Revered Deepstone Table (DECOR!)
+						i(249923),	-- Sin'dorei Golden Welcome (DECOR!)
+					}),
 				},
 			}),
 		},

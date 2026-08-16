@@ -172,6 +172,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(244705),	-- Mini-Medical Team
 					i(244706),	-- Mini-Medical Team
 				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					i(279366),	-- Aetherlume Field Lamp
+				})),
 			}),
 		}),
 		filter(RECIPES, {

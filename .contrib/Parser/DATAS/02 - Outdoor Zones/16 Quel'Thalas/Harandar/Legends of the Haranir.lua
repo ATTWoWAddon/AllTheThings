@@ -58,6 +58,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(263037) },	-- Replica Wey'nan's Ward (DECOR!)
+						["lockCriteria"] = { 1, "achID", 61574 },	-- Legends Never Die
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.02, {	-- The Cauldron of Echoes
@@ -66,6 +67,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(263315) },	-- Bubbling Haranir Cauldron (DECOR!)
+						["lockCriteria"] = { 1, "achID", 61574 },	-- Legends Never Die
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.03, {	-- Aln'hara's Bloom
@@ -74,6 +76,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(263196) },	-- Harandar Glowvine Lantern (DECOR!)
+						["lockCriteria"] = { 1, "achID", 61574 },	-- Legends Never Die
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.04, {	-- The Echoless Flame
@@ -82,6 +85,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(264262) },	-- Haranir Whistling Arrow (DECOR!)
+						["lockCriteria"] = { 1, "achID", 61574 },	-- Legends Never Die
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.05, {	-- Russula's Outreach
@@ -90,21 +94,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
 						["groups"] = { i(262906) },	-- Harandar Anvil (DECOR!)
+						["lockCriteria"] = { 1, "achID", 61574 },	-- Legends Never Die
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.06, {	-- Root of the World
 					q(88998, {	-- Root of the World
-						["sourceQuest"] = 90740,	-- A Legend to Know
+						["sourceQuest"] = 89268,	-- Lost Legends
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(263041) },	-- Replica Root of the World (DECOR!)
+						["lockCriteria"] = { 1, "achID", 61574 },	-- Legends Never Die
 					}),
 				}),
 				header(HEADERS.AchCriteria, 61574.07, {	-- Sky's Hope
 					q(88999, {	-- Sky's Hope
-						-- not 100% sure on this but it wasn't available with 'Root of the World'
 						["sourceQuest"] = 90743,	-- Ritual Reinforcement
 						["provider"] = { "n", 238170 },	-- Zur'ashar Kassameh
 						["coord"] = { 54.2, 53.1, MAP.MIDNIGHT.HARANDAR },
+						["groups"] = { i(253443) },	-- Replica Sky's Hope (DECOR!)
+						["lockCriteria"] = { 1, "achID", 61574 },	-- Legends Never Die
 					}),
 				}),
 			}),

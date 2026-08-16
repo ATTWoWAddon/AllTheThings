@@ -468,6 +468,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- Without SpellID attached
 					i(258490),	-- Recipe: Argentleaf Tea
 				})),
+
+				-- 12.1.0
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+					r(1296257),	--
+					r(1296280),	--
+					r(1296426),	--
+					r(1296427),	--
+					-- Without SpellID attached
+					i(278331),	-- Recipe: Sweet-And-Sour Skewer
+				})),
 			}),
 		}),
 	}),

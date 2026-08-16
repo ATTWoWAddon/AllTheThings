@@ -1049,6 +1049,17 @@ iq(262742, 93805);					-- "Swift" Kit
 ------------------
 ihqt(275986, 96976);				-- Delver's Cosmetic Surprise Bag
 ihqt(275978, 96975);				-- Delver's Starter Kit
+ihqt(274500, 96459);				-- Demystifyin': Alchemy
+ihqt(274515, 96511);				-- Demystifyin': Blacksmithing
+ihqt(274511, 96512);				-- Demystifyin': Enchanting
+ihqt(274516, 96513);				-- Demystifyin': Engineering
+ihqt(274513, 96514);				-- Demystifyin': Herbalism
+ihqt(274514, 96515);				-- Demystifyin': Inscription
+ihqt(274510, 96516);				-- Demystifyin': Jewelcrafting
+ihqt(274507, 96517);				-- Demystifyin': Leatherworking
+ihqt(274509, 96518);				-- Demystifyin': Mining
+ihqt(274508, 96519);				-- Demystifyin': Skinning
+ihqt(274512, 96520);				-- Demystifyin': Tailoring
 
 ------------
 -- UNUSED --

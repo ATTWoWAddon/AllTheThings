@@ -48,7 +48,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(261142, {	-- Destra
 					["coord"] = { 52.1, 32.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95452,
-					["groups"] = { i(280712) },	-- Bracers of the Sleeping Hydra
+					["groups"] = {
+						i(280712),	-- Bracers of the Sleeping Hydra
+						i(280709),	-- Triple Threat Pauldrons
+					},
 				}),
 				n(264854, {	-- Farthik the Plunderer
 					["coord"] = { 53.8, 72.0, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -108,6 +111,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 58.1, 40.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 95447,
 					["groups"] = {
+						i(280700),	-- Armbands of the Rotten Claw
 						i(280706),	-- Sss'alik's Rotting Claws
 						i(276052),	-- Venomshot Greatbow
 					},
@@ -123,7 +127,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(255088, {	-- Looming Mutagenitor
 					["coord"] = { 26.6, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["questID"] = 93718,
-					["groups"] = { i(276046) },	-- Superclutch Smasher
+					["groups"] = {
+						i(276046),	-- Superclutch Smasher
+						i(276166),	-- Twin-Headed Twinblade
+					},
 				}),
 				n(255087, {	-- Malformed Leviathan
 					["coord"] = { 47.0, 62.2, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -147,6 +154,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				n(255927, {	-- Venom Lancer Ori'kassi
 					["coord"] = { 67.6, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 					--["questID"] = XXXXX,
+					["groups"] = {
+						i(276167),	-- Ori'kassi's Lance
+					},
 				}),
 			})),
 		}),

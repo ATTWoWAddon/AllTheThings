@@ -94,8 +94,22 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(274521, 15),	-- Amani Road Marker (DECOR!)
 					i_DecorCoupons(255649, 15),	-- Amani Water Well (DECOR!)
 					i_DecorCoupons(263317, 10),	-- Amani Wicker Crate (DECOR!)
-					i(269029, {	-- Bag of Totally Legitimate Amani Goods (DECOR!)
+					i(269029, {	-- Bag of Totally Legitimate Amani Goods
 						["cost"] = { { "i", 269994, 1 } },	-- 1x Griftah's Token of Appreciation
+						["groups"] = {
+							i(268976),	-- "Aromatic" Bottle
+							i(269019),	-- Amani Construction Hammer
+							i(268975),	-- Amani War Axe
+							i(268973),	-- Bone Pen
+							i(268974),	-- Deactivated Amani Hex Ward
+							i(269021),	-- Jan'alai Bibelot
+							i(268970),	-- Majestic Eagle Statue
+							i(269937),	-- Neighborhood Knick Knack
+							i(268977),	-- Ossein Fish Trinket
+							i(268972),	-- Pressed Sanguithorn
+							i(269020),	-- Scrimshaw Ward
+							i(268978),	-- Torga Statue
+						}
 					}),
 					i_DecorCoupons(274529, 15),	-- Forest Troll Fence (DECOR!)
 					i_DecorCoupons(274531, 10),	-- Forest Troll Fencepost (DECOR!)
@@ -405,10 +419,11 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(94453),	-- One Hundred Percent Completed
 				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
 
-				-- Unsorted
-				q(95584, {["timeline"] = { ADDED_12_1_0 }}),	-- "Aromatic Bottle" hand-in
-				q(95593, {["timeline"] = { ADDED_12_1_0 }}),	-- "Torga Statue" hand-in
-				q(95590, {["timeline"] = { ADDED_12_1_0 }}),	-- "Amani Construction Hammer" hand-in
+				-- Bag of Totally Legitimate Amani Goods
+				q(95584, {["timeline"] = { ADDED_12_1_0 }}),	-- "Aromatic" Bottle hand-in
+				q(95590, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Construction Hammer hand-in
+				q(95593, {["timeline"] = { ADDED_12_1_0 }}),	-- Torga Statue hand-in
+				q(95597, {["timeline"] = { ADDED_12_1_0 }}),	-- Jan'alai Bibelot hand-in
 			}),
 		}),
 	})),

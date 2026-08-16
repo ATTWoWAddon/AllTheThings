@@ -46710,7 +46710,8 @@ s(98405,159368,{b=1,f=6,loc=41,lvl=50}),
 s(98390,158355,{b=1,f=6,loc=42,lvl=50}),
 s(95593,159303,{b=1,f=5,loc=42,lvl=50}),
 s(95591,159301,{b=1,f=5,loc=45}),
-i(168129,{b=1})}})}}),
+i(168129,{b=1}),
+de(26208,{awp=120100,itemID=278245,spellID=1304312})}})}}),
 d(23,{difficulties={8,23},g={
 ach(12722,{
 crit(41269,{achID=12722,description="The first trinket is in the first room, on the pedestal in the center of the room."}),
@@ -65493,8 +65494,6 @@ r(1230471,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=
 inst(1322,{awp=120100,coords={
 [2509]={{47.2,68.5}}},InRetailSeason={101,104,23},maps={2588,2589,2590},g={
 d(101,{difficulties={1,2,23},g={
-h(-12,{
-ach(63679)}),
 e(2878,{npcID=259445,g={
 i(273795,{f=53,spellID=1293311}),
 s(308581,273775,{f=6,loc=43}),
@@ -65514,7 +65513,7 @@ s(308588,273783,{f=28}),
 s(308587,273782,{f=29})}}),
 e(2880,{npcID=259447,g={
 ach(62282),
-i(270900,{f=200,spellID=1288335}),
+r(1288335,{itemID=270900,requireSkill=197,skillID=2918}),
 de(25293,{itemID=279211,spellID=1306276}),
 mnt(1300776,{itemID=276804}),
 s(308589,273784,{f=32}),
@@ -65530,6 +65529,9 @@ d(104,{difficulties={2,23},g={
 e(2880,{npcID=259447,g={
 ach(62283)}})}}),
 d(23,{
+h(-12,{
+ach(63679,{
+p(5129,{description="Requires 5 Players.\n\nThe Reversal Charms and Ritual Reagent spawn in the 4 poison waterfalls in the 1st boss arena.\nThey are very hard to see, and a Reversal Charm can stack right next to the Ritual Reagent.\nIf you grab the wrong item, click off your buff and pick up the correct one.\nYou need 4 players with Reversal Charms and 1 player with the Ritual Reagent.\n\nClear the room with the Ascendant Serpent mob after the 2nd boss, but do not touch the totems.\nThe 4 Charm holders stand at the totems, and the Reagent holder stands on the mob.\nEveryone targets the serpent and waits for their Extra Action Button.\nThe Reagent holder casts first.\nAfter the Reagent cast completes, all 4 Charm holders cast theirs to finish the transformation.\nThere is no timer after the Reagent finishes, but once the first Charm holder starts their 13-second cast, the other 3 must start before it finishes.\n\nInteract with the new NPC to get your pet and Feat of Strength.",itemID=279197,npcID=270147,spellID=1306197})})}),
 e(2880,{npcID=259447,g={
 ach(62284)}})})}}),
 inst(1311,{awp=120001,coords={

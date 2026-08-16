@@ -697,6 +697,14 @@ namespace ATT
             return dict;
         }
 
+        public static object[] ParseAsArray(LuaTable table)
+        {
+            var arr = new object[table.Keys.Count];
+            int i = 0;
+            foreach (var key in table.Keys) arr[i++] = ParseObject(table[key], key);
+            return arr;
+        }
+
         static object ParseObject(object data, object key)
         {
             switch (data.GetType().ToString())

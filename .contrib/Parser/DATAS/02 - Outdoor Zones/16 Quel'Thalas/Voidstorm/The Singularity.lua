@@ -29,7 +29,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
 						q(93933, {	-- Guarded Treasures
-							i(264507),	-- Crucible of Erratic Energies
+							["timeline"] = { REMOVED_12_1_0 },
+							["groups"] = {
+								i(264507),	-- Crucible of Erratic Energies
+							},
+						}),
+						q(97621, {	-- The Singularity Anchor
+							["timeline"] = { ADDED_12_1_0 },
+							["groups"] = {
+								i(264507),	-- Crucible of Erratic Energies
+							},
 						}),
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --

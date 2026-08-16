@@ -56,6 +56,16 @@ LUNARNEWYEAR = createHeader({
 	icon = 7360957,
 	text = {
 		en = "Lunar New Year Adventure",
+		-- TODO: de = "",
+		es = "Aventura del Año Nuevo Lunar",
+		mx = "Aventura del Año Nuevo Lunar",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
 	},
 	description = {
 		en = "Lunar New Year Adventure is a China-exclusive promotional event for World of Warcraft, taking place from 5 February to 13 March 2026. The main event functioned similar to the Treasures of Azeroth event.",

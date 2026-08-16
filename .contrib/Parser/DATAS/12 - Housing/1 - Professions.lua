@@ -10,7 +10,7 @@ root(ROOTS.Housing, prof(DYE_CRAFTING, {
 		{ 53.6, 58.1, RAZORWIND_SHORES },
 	},
 	["groups"] = {
-		n(CRAFTABLES, {
+		n(CRAFTABLES, sharedData({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_1_0 } }, {
 			i(259115),	-- Alliance Blue Dye
 			i(259131),	-- Arcwine Dye
 			i(259078),	-- Basic Birch Dye
@@ -72,8 +72,19 @@ root(ROOTS.Housing, prof(DYE_CRAFTING, {
 			i(259053),	-- Warm Teak Dye
 			i(259106),	-- Zandalari Gold Dye
 			i(259129),	-- Zephras Blue Dye
-		}),
-		filter(RECIPES, {
+		})),
+		n(CRAFTABLES, sharedData({ ["timeline"] = { ADDED_12_1_0 } }, {
+			i(274464),	-- Black Housing Dye
+			i(274468),	-- Blue Housing Dye
+			i(274469),	-- Brown Housing Dye
+			i(274470),	-- Green Housing Dye
+			i(274471),	-- Orange Housing Dye
+			i(274472),	-- Purple Housing Dye
+			i(274473),	-- Red Housing Dye
+			i(274474),	-- White Housing Dye
+			i(274475),	-- Yellow Housing Dye
+		})),
+		filter(RECIPES, sharedData({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_1_0 } }, {
 			r(1264719),	-- Alliance Blue Dye
 			r(1265087),	-- Arcwine Dye
 			r(1264912),	-- Basic Birch Dye
@@ -156,6 +167,17 @@ root(ROOTS.Housing, prof(DYE_CRAFTING, {
 			r(1265104),	-- Zandalari Gold Dye
 			r(1265119),	-- Zandalari Gold Dye
 			r(1264891),	-- Zephras Blue Dye
-		}),
+		})),
+		filter(RECIPES, sharedData({ ["timeline"] = { ADDED_12_1_0 } }, {
+			r(1306642),	-- Black Housing Dye
+			r(1306796),	-- Blue Housing Dye
+			r(1306797),	-- Brown Housing Dye
+			r(1306799),	-- Green Housing Dye
+			r(1306801),	-- Orange Housing Dye
+			r(1306629),	-- Purple Housing Dye
+			r(1306802),	-- Red Housing Dye
+			r(1306803),	-- White Housing Dye
+			r(1306804),	-- Yellow Housing Dye
+		})),
 	},
 }));

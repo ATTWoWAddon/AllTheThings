@@ -1666,6 +1666,8 @@ MID_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(1265619),	-- Knowledge
 	r(1265606),	-- Multicraft
 	r(1265656),	-- Quality
+	r(1307462, {["timeline"] = { ADDED_12_1_0 }}),	-- Refine Crystalline Glass
+	r(1307466, {["timeline"] = { ADDED_12_1_0 }}),	-- Refine Duskshrouded Stone
 	r(1265698),	-- Resourcefulness
 	r(1265690),	-- Skill
 	r(1265664),	-- Sparks

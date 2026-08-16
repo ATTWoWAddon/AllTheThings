@@ -129,6 +129,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
+						i(279523, {	-- Overflowing Abundant Satchel (Season 2)
+							["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+						}),
 					},
 				}),
 				q(94834, {	-- Blessings of Abundance

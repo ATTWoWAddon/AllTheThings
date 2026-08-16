@@ -110,6 +110,7 @@ local TOKENS = {
 };
 
 -- This header represents the shared drops and achievements that can be earned in all current difficulties.
+-- #if NOT ANYCLASSIC
 local CURRENT_ALL_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.ALL_PLUS_FLEX;
 local CURRENT_NORMAL_PLUS_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC_PLUS_FLEX;
 local CURRENT_HEROIC_PLUS_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC;
@@ -139,6 +140,16 @@ FLEXIBLE_BEFORE_WOD = createHeader({
 		mx = "Esta versión de la instancia era el modo de dificultad Flexible original. El botín tenía ID de objeto únicos para cada nivel de dificultad, así como sus variantes Forjas de la guerra, de forma similar a como se hacía en SdT. Blizzard cambió su filosofía de diseño para mejor con el parche 6.0 y optó por reutilizar el identificador de un objeto y aplicar un identificador adicional en lugar de crear un identificador de objeto completamente nuevo con las mismas estadísticas base.",
 	},
 });
+-- #endif
+-- #else
+local CURRENT_ALL_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.ALL;
+local CURRENT_NORMAL_PLUS_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC;
+local CURRENT_HEROIC_PLUS_DIFFICULTIES = DIFFICULTY.LEGACY_RAID.MULTI.HEROIC;
+-- #if AFTER 6.0.2
+CURRENT_ALL_DIFFICULTIES = DIFFICULTY.RAID.MULTI.ALL;
+CURRENT_NORMAL_PLUS_DIFFICULTIES = DIFFICULTY.RAID.MULTI.NORMAL_PLUS;
+CURRENT_HEROIC_PLUS_DIFFICULTIES = DIFFICULTY.RAID.MULTI.HEROIC_PLUS;
+-- #endif
 -- #endif
 
 local function FLEX_RAID_HEADER(t)
@@ -566,6 +577,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["hqd"] = n(74010, {	-- Nadina Stargem <Raid Vendor> [H]
 						["coord"] = { 43.3, 76.0, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
+					-- #if ANYCLASSIC
+					["timeline"] = { ADDED_6_0_2 },
+					-- #endif
 					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS

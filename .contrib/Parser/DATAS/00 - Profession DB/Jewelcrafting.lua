@@ -2630,3 +2630,16 @@ i(0, 1230486);		-- Masterwork Sin'dorei Amulet
 i(0, 1230485);		-- Masterwork Sin'dorei Band
 i(0, 1230484);		-- Sanguine Garnet Prism
 i(0, 1230483);		-- Tenebrous Amethyst Prism
+
+------------------
+-- PATCH 12.1.0 --
+------------------
+--- TRAINER ---
+i(0, 1307462);	-- Refine Crystalline Glass
+i(0, 1307466);	-- Refine Duskshrouded Stone
+--- ITEM ---
+i(275693, 1297679);	-- Opalescent Amani Peridot
+i(275697, 1297681);	-- Roaring Amani Garnet
+--- UNSORTED ---
+i(275695, 1297680);	-- Piercing Amani Lapis
+i(273067, 1291690);	-- Polished Ammolite

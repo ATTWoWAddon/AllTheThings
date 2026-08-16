@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 										{ "c", VOIDLIGHT_MARL, 1500 },
 									},
 								}),
-								i(251630, {	-- Recipe: Braised Blood Hunter (RECIPE!)
+								i(251630, {	-- Recipe: Amani Cornucopia (RECIPE!)
 									["cost"] = { { "c", VOIDLIGHT_MARL, 1500 } },
 								}),
 								i(251629, {	-- Technique: Contract: The Amani Tribe (RECIPE!)
