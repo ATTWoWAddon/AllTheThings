@@ -425,6 +425,13 @@ if app.IsRetail then
 
 	DefineToggleFilter("ExpansionContent", AccountFilters,
 	function(item)
+		-- Keep non-collectible containers traversable so mixed-expansion
+		-- content can be reached. Collectible groups with children still
+		-- represent an end item and must use their own expansion metadata.
+		if item.g and not item.collectible then
+			return true
+		end
+			
 		-- Prefer the containing expansion over an item's own awp value.
 		-- Some content was added or reworked in a later expansion but still
 		-- belongs to an earlier expansion's collection data.
