@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = {
 						i(279345, {	-- Venom-Drenched Sack
 							n(ARMOR, {
-								filter(CLOAK, {
+								filter(CLOAKS, {
 									i(279223),	-- Venom-Cursed Bear's Greatcloak
 									i(279222),	-- Venom-Cursed Dragonhawk's Mantle
 									i(279217),	-- Venom-Cursed Eagle's Shroud
