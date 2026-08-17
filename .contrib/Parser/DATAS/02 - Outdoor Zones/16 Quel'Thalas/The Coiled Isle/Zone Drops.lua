@@ -15,6 +15,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(275284),	-- Slobbery Tongue
 				i(275282),	-- Smooth Loin
 				i(275289),	-- Winged Stalk
+				-- QSs
+				i(278070),	-- Handful of Esoteric Ingredients (QS!)
 			}),
 		}),
 	}),

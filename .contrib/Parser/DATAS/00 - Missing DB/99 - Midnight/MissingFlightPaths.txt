@@ -1,2 +1,0 @@
-12.1.0.68209
-fp(3284),	-- 12.1 Ulatek - Faction Feature - Temple - Traversal - Flight Master - Eastern Entrance (HCR)

@@ -418,12 +418,6 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(94452),	-- Seventy Five Percent Completed
 				q(94453),	-- One Hundred Percent Completed
 				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
-
-				-- Bag of Totally Legitimate Amani Goods
-				q(95584, {["timeline"] = { ADDED_12_1_0 }}),	-- "Aromatic" Bottle hand-in
-				q(95590, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Construction Hammer hand-in
-				q(95593, {["timeline"] = { ADDED_12_1_0 }}),	-- Torga Statue hand-in
-				q(95597, {["timeline"] = { ADDED_12_1_0 }}),	-- Jan'alai Bibelot hand-in
 			}),
 		}),
 	})),

@@ -60,16 +60,3 @@ title(738),	-- %s, the Thundering Stampede
 title(739),	-- %s, the Momentous Terror
 12.0.0.63534
 title(0),	-- Loa-speaker %s
-12.1.0.68209
-title(774),	-- Snake Eater %s
-title(781),	-- %s, Voice of the Fangs
-title(782),	-- %s, Nalorakk's Favored
-title(783),	-- Street Sovereign %s
-title(784),	-- %s, Eyes of the Vale
-title(785),	-- Voidscar Champion %s
-title(786),	-- %s, the Uncrowned Conqueror
-title(787),	-- %s, Flame of Life
-title(788),	-- %s, Wrath of Sethraliss
-title(790),	-- %s, Famed Slayer of Ula'tek
-12.1.0.68412
-title(792),	-- %s, Servant of Astalor

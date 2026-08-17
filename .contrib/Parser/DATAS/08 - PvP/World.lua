@@ -397,7 +397,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 						61232,	-- Midnight Treasures
 					}},
 					["groups"] = {
-						title(664),	-- Voidslayer %s
+						title(664),	-- Voidslayer <Name>
 					},
 				}),
 				ach(61464),	-- Spark in the Night			-- 5x

@@ -567,7 +567,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 					ach(63651, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Cutting Edge: Ula'tek
 					ach(63652, applyDataSelf({["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {	-- Hall of Fame: Ula'tek
-						title(676),	-- <Name>, Famed Slayer of Ula'tek
+						title(790),	-- <Name>, Famed Slayer of Ula'tek
 					})),
 					ach(63648),	-- Mythic: Ula'tek Guild Run
 					i(275658),	-- Primeval Skyfriend (MOUNT!)

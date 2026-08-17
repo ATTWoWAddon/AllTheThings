@@ -173,22 +173,70 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 		header(HEADERS.Achievement, SEASON_VENOMOUS_PVE, bubbleDownSelf({
 			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}, {
-			ach(62441),	-- Keystone Hero: Altar of Fangs
-			ach(62439),	-- Keystone Hero: Den of Nalorakk
-			ach(62444),	-- Keystone Hero: Kings' Rest
-			ach(62440),	-- Keystone Hero: Murder Row
-			ach(62442),	-- Keystone Hero: Ruby Life Pools (Midnight Season 2)
-			ach(62443),	-- Keystone Hero: Temple of Sethraliss
-			ach(62437),	-- Keystone Hero: The Blinding Vale
-			ach(62438),	-- Keystone Hero: Voidscar Arena
-			ach(63621),	-- Keystone Victor: Altar of Fangs
-			ach(63622),	-- Keystone Victor: Den of Nalorakk
-			ach(63626),	-- Keystone Victor: Kings' Rest
-			ach(63623),	-- Keystone Victor: Murder Row
-			ach(63627),	-- Keystone Victor: Ruby Life Pools (Midnight Season 2)
-			ach(63628),	-- Keystone Victor: Temple of Sethraliss
-			ach(63624),	-- Keystone Victor: The Blinding Vale
-			ach(63625),	-- Keystone Victor: Voidscar Arena
+			ach(62441, {	-- Keystone Hero: Altar of Fangs
+				spell(1286812),	-- Path of Venomous Evolution
+			}),
+			ach(62439, {	-- Keystone Hero: Den of Nalorakk
+				spell(1286807),	-- Path of Worthy Aspirant
+			}),
+			ach(62444, {	-- Keystone Hero: Kings' Rest
+				spell(1286831),	-- Path of the Slumbering Conqueror
+			}),
+			ach(62440, {	-- Keystone Hero: Murder Row
+				spell(1286809),	-- Path of Devious Smuggler
+			}),
+			ach(62442, {	-- Keystone Hero: Ruby Life Pools (Midnight Season 2)
+				spell(393256),	-- Path of the Clutch Defender
+			}),
+			ach(62443, {	-- Keystone Hero: Temple of Sethraliss
+				spell(1286828),	-- Path of Sacret Temple
+			}),
+			ach(62437, {	-- Keystone Hero: The Blinding Vale
+				spell(1286801),	-- Path of Blooming Verdure
+			}),
+			ach(62438, {	-- Keystone Hero: Voidscar Arena
+				spell(1286804),	-- Path of Brutal Combatant
+			}),
+			ach(63621, {	-- Keystone Victor: Altar of Fangs
+				title(781, {	-- <Name>, Voice of the Fangs
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
+			ach(63622, {	-- Keystone Victor: Den of Nalorakk
+				title(782, {	-- <Name>, Nalorakk's Favored
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
+			ach(63626, {	-- Keystone Victor: Kings' Rest
+				title(786, {	-- <Name>, the Uncrowned Conqueror
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
+			ach(63623, {	-- Keystone Victor: Murder Row
+				title(783, {	-- Street Sovereign <Name>
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
+			ach(63627, {	-- Keystone Victor: Ruby Life Pools (Midnight Season 2)
+				title(787, {	-- <Name>, Flame of Life
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
+			ach(63628, {	-- Keystone Victor: Temple of Sethraliss
+				title(788, {	-- <Name>, Wrath of Sethraliss
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
+			ach(63624, {	-- Keystone Victor: The Blinding Vale
+				title(784, {	-- <Name>, Eyes of the Vale
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
+			ach(63625, {	-- Keystone Victor: Voidscar Arena
+				title(785, {	-- Voidscar Champion <Name>
+					["collectible"] = false,	-- Only for 1 week
+				}),
+			}),
 			ach(62445),	-- Midnight Keystone Explorer: Season 2
 			ach(62446),	-- Midnight Keystone Conqueror: Season 2
 			ach(62447, {	-- Midnight Keystone Master: Season 2

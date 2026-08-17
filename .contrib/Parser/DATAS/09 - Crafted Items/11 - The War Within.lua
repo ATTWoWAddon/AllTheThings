@@ -1752,7 +1752,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				["questID"]= 92072,
 				["isWeekly"]= true,
 				["groups"] = {
-					title(647, {	-- Ba'%s
+					title(647, {	-- Ba'<Name>
 						["timeline"] = { ADDED_11_2_0 },
 						["collectible"] = false,
 					}),
@@ -1763,7 +1763,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				["questID"]= 92073,
 				["isWeekly"]= true,
 				["groups"] = {
-					title(649, {	-- Om'%s
+					title(649, {	-- Om'<Name>
 						["timeline"] = { ADDED_11_2_0 },
 						["collectible"] = false,
 					}),
@@ -1774,7 +1774,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				["questID"]= 92071,
 				["isWeekly"]= true,
 				["groups"] = {
-					title(648, {	-- Zo'%s
+					title(648, {	-- Zo'<Name>
 						["timeline"] = { ADDED_11_2_0 },
 						["collectible"] = false,
 					}),

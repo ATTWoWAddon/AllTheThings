@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(279288),	-- Corroded Satchel
 				i(280004, {	-- Corroded Key
 					["description"] = "Received as a reward for doing a Temple Strike."
-				}),	
+				}),
 				i(280003, {	-- Excising Knife
 					["description"] = "Received as a reward for doing a Temple Incursion."
 				}),

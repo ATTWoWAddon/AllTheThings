@@ -106,12 +106,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(550),	-- High Explorer <Name>
 				})),
 				ach(63433, {	-- Midnight: Journey's End (Season 2)
-					-- TITLE!
+					title(774),	-- Snake Eater <Name>
 				}),
 			}),
 			n(CURIO, {
 				--Combat
+				i(249223),	-- Corrosive Bilespear
 				--Utility
+				i(249227),	-- Dundun's Favor
+				i(249228),	-- Soul-Cracking Dreamcatcher
 				i(271130),	-- Venom Infusion
 			}),
 			mapped(n(DELVE_COMPLETION, {
@@ -172,6 +175,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272256),	-- Pledgebearer's Sabatons
 						i(272262),	-- Pledgebearer's Splints
 					}),
+					filter(TRINKET_F, {
+						-- ["groups"] = sharedData({
+						-- 	["providers"] = {
+						-- 	},
+						-- },{
+							i(274494),	-- Chiral Marrowgrafter
+						-- }),
+					}),
 				}),
 				filter(MISC, {
 					i(273000),	-- Corrosive Soul
@@ -181,6 +192,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				filter(QUEST_ITEMS, {
 					-- Currently unaware of objectIDs so treated just as reward
+					i(274965),	-- Ancient Curio (Combat) (QI!/QS!)
 					i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
 					i(277506),	-- Codex of the Soul Coilers (QS!)
 				}),

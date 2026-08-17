@@ -1217,9 +1217,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(277998),	-- Lump of Crystalline Malachite (QS!)
 			i(277997),	-- Malevolent Fishing Codex (QS!)
 			i(277999),	-- Ritual Dagger (QS!)
-			i(278000),	-- Sealed Vial of Mysterious Green Liquid (QS!)
-			i(277991),	-- Shrieking Tacklebox (QS!)
-			i(277993),	-- Spiritsurge Incense (QS!)
+			i(278000, {	-- Sealed Vial of Mysterious Green Liquid (QS!)
+				["description"] = "Can be fished in any poison water after unlocking Venom Fishing (Rank3 Captain Tokka Questline).",
+				["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+			}),
+			i(277991, {	-- Shrieking Tacklebox (QS!)
+				["description"] = "Can be fished in any poison water after unlocking Venom Fishing (Rank3 Captain Tokka Questline).",
+				["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+			}),
+			i(277993, {	-- Spiritsurge Incense (QS!)
+				["description"] = "Can be fished in any poison water after unlocking Venom Fishing (Rank3 Captain Tokka Questline).",
+				["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+			}),
 			i(277996),	-- Summoning Salt (QS!)
 		})),
 		i(238490, {	-- Ambiguous Rock

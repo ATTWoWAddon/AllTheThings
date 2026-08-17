@@ -73,6 +73,26 @@ LUNARNEWYEAR = createHeader({
 		mx = "La Aventura del Año Nuevo Lunar es un evento promocional exclusivo para China de World of Warcraft, que se llevó a cabo del 5 de febrero al 13 de marzo de 2026. El evento principal funcionó de manera similar al evento Tesoros de Azeroth.",
 	},
 });
+AZURESPAN_TREASURETROVE = createHeader({
+	readable = "Azure Span Treasure Trove",
+	icon = 7360957,
+	text = {
+		en = "Azure Span Treasure Trove",
+		-- TODO: de = "",
+		--es = "Aventura del Año Nuevo Lunar",
+		--mx = "Aventura del Año Nuevo Lunar",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+	description = {
+		en = "Azure Span Treasure Trove is a China-exclusive promotional event for World of Warcraft, taking place from Aug 14 - Sep 11 2026.",
+	},
+});
 
 root(ROOTS.Promotions, {
 	n(MIDNIGHT_SEASONAL_PROMOTIONS, {
@@ -253,6 +273,71 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
 			}),
+			n(AZURESPAN_TREASURETROVE, sharedDataSelf({
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
+				["u"] = REAL_MONEY,
+			}, {
+				["groups"] = {
+					--[[
+					Azure Span Treasure Trove (CN-exclusive promo, Aug 14 - Sep 11 2026)
+					=====================================================================
+					Chinese-region-only gacha/mystery-box promotion by Thunderfire Games/NetEase,
+					Tuskarr/Iskaara themed.
+					https://www.wowhead.com/news/azure-span-treasure-trove-chinese-exclusive-tuskaar-themed-promotion-382411
+					https://www.wowhead.com/news/chinese-exclusive-azure-span-treasure-trove-models-datamined-382436
+
+					-- Frostshell Walker (Midnight and Classic mount)
+					-- Ground-only, 100% increased swim speed. Retail version carries a Tuskarr NPC
+					-- granting 10x Tide-Oath Augment Rune per day. Classic version's NPC instead
+					-- teleports the owner to a capital city every 30 min (independent CD, works
+					-- like a second Hearthstone) -- Shrine of Seven Stars/Two Moons on MoP Classic,
+					-- Dalaran on Titan Reforged Time.
+					i(ITEMID_TODO, { -- Frostshell Walker
+					}),
+					-- Little Mei, Lover of Fish (Midnight and Classic pet)
+					i(ITEMID_TODO, { -- Little Mei, Lover of Fish
+					}),
+					-- Yaya, the Fish-Basket Beaver (Midnight and Classic pet)
+					i(ITEMID_TODO, { -- Yaya, the Fish-Basket Beaver
+					}),
+					-- Backstroke Timbertooth (Midnight and Classic pet)
+					i(ITEMID_TODO, { -- Backstroke Timbertooth
+					}),
+					-- Tuskarr Ice-Fishing Tent (Midnight and Classic toy)
+					-- Summons a tent, lasts 15 min, usable with up to 2 other players, 1hr CD.
+					i(ITEMID_TODO, { -- Tuskarr Ice-Fishing Tent
+					}),
+					-- Visage of the Cursed (Classic toy, Death Knight only)
+					-- Changes undead minion appearances on a 1 min CD: Army of the Dead -> Undead
+					-- Vrykul, Gargoyles -> Val'kyr, Ghouls -> Abominations. Multiple color variants each.
+					i(ITEMID_TODO, { -- Visage of the Cursed
+					}),
+					-- Tuskarr Boat (Midnight and Classic toy)
+					-- Sail across water and fish, similar to Anglers Fishing Raft (item 85500).
+					i(ITEMID_TODO, { -- Tuskarr Boat
+					}),
+					-- Kalu'ak Fisher's Collection (Midnight transmog, 3-piece backpack set)
+					i(ITEMID_TODO, { -- Shark Backpack
+					}),
+					i(ITEMID_TODO, { -- Walrus Fisher's Backpack (carried item, exact name TBD)
+					}),
+					i(ITEMID_TODO, { -- Penguin Backpack
+					}),
+					-- Big Kinook's Spare Long-Handled Ladle (Midnight and Classic weapon transmog)
+					i(ITEMID_TODO, { -- Big Kinook's Spare Long-Handled Ladle
+					}),
+					-- Iskaara Fishing Rack (Midnight decor)
+					i(ITEMID_TODO, { -- Iskaara Fishing Rack
+					}),
+					-- Iskaara Whale-Bone Hanging Rack (Midnight decor)
+					i(ITEMID_TODO, { -- Iskaara Whale-Bone Hanging Rack
+					}),
+					-- Iskaara Hearth (Midnight decor)
+					i(ITEMID_TODO, { -- Iskaara Hearth
+					}),
+					--]]
+				},
+			}));
 			-- Season 2
 
 			-- Season 3

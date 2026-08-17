@@ -193,6 +193,17 @@ root(ROOTS.Housing, {
 					}),
 				},
 			}),
+			q(95387, {	-- One Neighbor's Junk is Another Troll's Treasure
+				["qgs"] = {
+					260485,	-- Griftah
+				},
+				["coords"] = {
+					{ 53.1, 38.1, FOUNDERS_POINT },
+					{ 54.2, 56.0, RAZORWIND_SHORES }
+				},
+				["isRepeatable"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 		},
 	}),
 	n(QUESTS, sharedData({
@@ -283,6 +294,121 @@ root(ROOTS.Housing, {
 			q(95438),	-- Lost Animals
 		}),
 	}),
+	n(QUESTS, sharedData({	-- Repeatables
+		["isRepeatable"] = true,
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = { i(269937) },	-- Neighborhood Knick Knack
+	}, {
+		q(95584, {	-- "Aromatic" Bottle
+			["qgs"] = {
+				255222,	-- "High Tides" Ren
+				255325,	-- "High Tides" Ren
+			},
+			["coords"] = {
+				{ 62.4, 80.1, FOUNDERS_POINT },
+				{ 39.8, 72.8, RAZORWIND_SHORES },
+			},
+		}),
+		q(95590, {	-- Amani Construction Hammer
+			["qgs"] = {
+				255104,	-- Jorvan Longmoor
+				254687,	-- Rotha
+			},
+			["coords"] = {
+				{ 54.0, 39.6, FOUNDERS_POINT },
+				{ 53.6, 56.6, RAZORWIND_SHORES },
+			},
+		}),
+		q(95589, {	-- Amani Waraxe
+			["qgs"] = {
+				255519,	-- Lestia Goldenstrike
+				255520,	-- Xiz'ro
+			},
+			["coords"] = {
+				{ 54.0, 39.5, FOUNDERS_POINT },
+				{ 53.6, 56.6, RAZORWIND_SHORES },
+			},
+		}),
+		q(95585, {	-- Bone Pen
+			["qgs"] = {
+				233063,	-- Lyssabel Dawnpetal
+				233708,	-- Tocho Cloudhide
+			},
+			["coords"] = {
+				{ 53.1, 40.0, FOUNDERS_POINT },
+				{ 55.2, 57.6, RAZORWIND_SHORES },
+			},
+		}),
+		q(95587, {	-- Deactivated Amani Hex Ward
+			["qgs"] = {
+				248854,	-- The Last Architect
+				253596,	-- The Last Architect
+			},
+			["coords"] = {
+				{ 52.7, 37.5, FOUNDERS_POINT },
+				{ 53.6, 57.4, RAZORWIND_SHORES },
+			},
+		}),
+		q(95597, {	-- Jan'alai Bibelot
+			["qgs"] = {
+				261942,	-- Cory Mear
+				262021,	-- Lisabeth Rothwell
+			},
+			["coords"] = {
+				{ 38.4, 32.2, FOUNDERS_POINT },
+				{ 47.2, 62.0, RAZORWIND_SHORES },
+			},
+		}),
+		q(95576, {	-- Majestic Eagle Statue
+			["qgs"] = {
+				255213,	-- Faarden the Builder
+				255297,	-- Shon'ja
+			},
+			["coords"] = {
+				{ 52.0, 38.4, FOUNDERS_POINT },
+				{ 54.0, 59.0, RAZORWIND_SHORES },
+			},
+		}),
+		q(95592, {	-- Ossein Fish Trinket
+			["qgs"] = {
+				255644,	-- Olafus
+				240345,	-- Nahuna
+			},
+			["coords"] = {
+				{ 29.0, 46.7, FOUNDERS_POINT },
+				{ 53.6, 82.0, RAZORWIND_SHORES },
+			},
+		}),
+		q(95583, {	-- Pressed Sanguithorn
+			["qgs"] = {
+				255221,	-- Trevor Grenner
+				255301,	-- Botanist Boh'an
+			},
+			["coords"] = {
+				{ 53.4, 40.8, FOUNDERS_POINT },
+				{ 53.6, 57.6, RAZORWIND_SHORES },
+			},
+		}),
+		q(95595, {	-- Scrimshaw Ward
+			["qgs"] = {
+				256750,	-- Klasa
+				240465,	-- Lonomia
+			},
+			["coords"] = {
+				{ 58.3, 61.7, FOUNDERS_POINT },
+				{ 68.2, 75.4, RAZORWIND_SHORES },
+			},
+		}),
+		q(95593, {	-- Torga Statue
+			["qgs"] = {
+				257168,	-- Throska
+			},
+			["coords"] = {
+				{ 62.1, 82.2, FOUNDERS_POINT },
+				{ 39.0, 74.0, RAZORWIND_SHORES },
+			},
+		}),
+	})),
 	n(MAIL_DELIVERY_RACES, {	-- Founder's Point Mail Delivery
 		["timeline"] = { ADDED_12_0_1_LAUNCH },
 		["groups"] = sharedData({	-- All Founder's Point Mail Delivery quests

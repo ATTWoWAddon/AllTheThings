@@ -91,6 +91,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 253528,	-- Zul'jarra
 						["coord"] = { 57.8, 47.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
+							o(628447, {	-- Jan'alai's Breath
+								i(268113),	-- Jan'alai's Breath
+							}),
 							o(628446, {	-- Jan'alai's Cinder
 								i(267376),	-- Jan'alai's Cinder
 							}),
@@ -598,7 +601,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
 					q(96467, {	-- Thirst for Knowledge
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 265173,	-- Kul'amara the Fierce
 						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["isBreadcrumb"] = true,
@@ -706,14 +709,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
-					q(93841, {	-- Ghosts of the Arena
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+					q(93841, {	-- Ghosts of the Ring
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 258068,	-- Olawu
 						["coord"] = { 58.6, 47.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["isBreadcrumb"] = true,
 					}),
 					q(93842, {	-- Bloom and Fade
-						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["sourceQuest"] = 93841,	-- Ghosts of the Ring
 						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
 						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
 						["groups"] = {
@@ -723,7 +726,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					q(93843, {	-- Ectoplasmic Extractions
-						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["sourceQuest"] = 93841,	-- Ghosts of the Ring
 						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
 						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
 						["groups"] = { i(262904) },	-- Ectoplasm (QI!)
@@ -755,7 +758,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
 					q(94936, {	-- A Bond of Brothers
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 258717,	-- Aol'ggin
 						["coord"] = { 56.5, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -778,7 +781,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.08, {	-- The Troubles of Mlurkrr Mire
 					q(93449, {	-- Trouble in the Swamp
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 257091,	-- Ra'kamu
 						["coord"] = { 57.5, 47.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -840,7 +843,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
 					q(96089, {	-- Somethin's Not Right
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 263618,	-- Scout Oma'ema
 						["coord"] = { 57.0, 48.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -979,7 +982,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
 					q(96439, {	-- Gone Dark
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 265173,	-- Kul'amara the Fierce
 						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["isBreadcrumb"] = true,
@@ -1001,44 +1004,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["coord"] = { 41.5, 37.2, 2640 },	-- Blistering Terrace
 								["groups"] = { i(276911) },	-- Missive from Malacrass (QI!)
 							}),
-							-- Optional Objective
-							i(277525),	-- Ulantu's Belongings
-							-- Following count as Ulantu's Belongings on Quest Turn-in
-							o(653374, {	-- A Message from Kul'amara
-								["coord"] = { 57.0, 37.2, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276883) },	-- A Message From Kul'amara
-							}),
-							o(660393, {	-- Fragment of Ulantu's Log 1
-								["coord"] = { 64.9, 38.2, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276905) },	-- Beginning Fragment of Ulantu's Log
-							}),
-							o(660420, {	-- Fragment of Ulantu's Log 2
-								["coord"] = { 36.8, 18.2, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276912) },	-- Middle Fragment of Ulantu's Log
-							}),
-							o(660431, {	-- Fragment of Ulantu's Log 3
-								["coord"] = { 21.0, 21.8, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276914) },	-- End Fragment of Ulantu's Log
-							}),
 						},
 					}),
 					q(96451, {	-- A Child of Ula'tek
 						["sourceQuest"] = 96450,	-- Sideways
 						["qg"] = 265229,	-- Ulantu
-						["coord"] = { 20.1, 36.3, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (QI!)
-					}),
-					q(96458, {	-- Last Promise
-						["sourceQuest"] = 96451,	-- A Child of Ula'tek
-						["qg"] = 265278,	-- Ulantu
-						["coord"] = { 58.1, 68.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["coord"] = { 20.7, 35.7, 2640 },	-- Blistering Terrace
 					}),
 					q(96457, {	-- Nothing Must Remain
-						["sourceQuest"] = 96458,	-- Last Promise
-						["provider"] = { "o", 660985 },	-- Ulantu's Scout Pack
-						["coord"] = { 56.9, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["sourceQuest"] = 96451,	-- A Child of Ula'tek
+						["qg"] = 265278,	-- Ulantu
+						["coord"] = { 40.5, 72.2, 2640 },	-- Blistering Terrace
+						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (PQI!)
+					}),
+					q(96458, {	-- Last Promise
+						["sourceQuest"] = 96457,	-- Nothing Must Remain
+						["qg"] = 265278,	-- Ulantu
+						["coord"] = { 40.5, 72.2, 2640 },	-- Blistering Terrace
 						["groups"] = {
-							i(279064),	-- Naj'kula Flame Amulet (PQI!)
+							i(280503),	-- Ulantu's Notes (PQI!)
 							--
 							i(271609),	-- Destroyed Clutch of Ula'tek (DECOR!)
 						},
@@ -1052,6 +1036,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isWeekly"] = true,	-- Assumption
 				["groups"] = { i(275911) },	-- Venom-Covered Chest
 			}),
+			q(97026, {	-- Esoteric Ingredients
+				["provider"] = { "i", 278070 },	-- Handful of Esoteric Ingredients
+				["groups"] = {
+					i(278084),	-- Handful of Esoteric Ingredients
+				},
+			}),
+			q(97016, {	-- Mixing Mysteries
+				["sourceQuest"] = 97026,	-- Esoteric Ingredients
+				["qg"] = 254599,	-- Ofi the Sly
+				["coord"] = { 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["groups"] = {
+					i(277985),	-- Mysterious Offering
+					i(276124),	-- Ancient Knucklebone
+					i(276117),	-- Clouded Blood-Pearl
+					i(276126),	-- Serpent's Feather
+				},
+			}),
 		}),
 	}),
 }));
@@ -1061,6 +1062,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(QUESTS, {
 				hqt(96935, { ["isWeekly"] = true }),	-- Curse Surge
+				hqt(93676, { ["isWeekly"] = true }),	-- Curse Surge 2/3
+				hqt(96967, { ["isWeekly"] = true }),	-- Curse Surge 2/3
+				hqt(97160, { ["isWeekly"] = true }),	-- triggered with 'Turn Back the Surge' 96995
 			}),
 		})),
 	}),

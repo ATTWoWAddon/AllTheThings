@@ -6,6 +6,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			n(RARES, {
+				n(263015, {	-- Khu'tulak <Blade of Nek'zali>
+					["questID"] = 97769,
+					["coord"] = { 53.0, 22.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["groups"] = {
+						i(279345),	-- Venom-Drenched Sack
+					},
+				}),
 			}),
 		}),
 	}),

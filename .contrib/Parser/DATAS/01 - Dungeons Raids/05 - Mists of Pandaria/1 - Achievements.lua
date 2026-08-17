@@ -284,14 +284,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			ach(62059, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_3, REMOVED_5_5_4 } }, {	-- Mistborne (Season 2)
 			-- ToDo: Update for S2 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 2 to be a Mistborne.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
 				["groups"] = {
-					title(736),	-- %s, the Mistborne
+					title(736),	-- <Name>, the Mistborne
 				--	i(xx),	-- Reins of the Black Kor'kron Proto-Drake (MOUNT!)
 				},
 			})),
 			ach(62060, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Heir to the Mist (Season 3)
 			-- ToDo: Update for S3 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 3 to be a Heir to the Mist.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
 				["groups"] = {
-					title(737),	-- %s, Heir to the Mist
+					title(737),	-- <Name>, Heir to the Mist
 					i(248744),	-- Reins of the Celestial Riding Ox (MOUNT!)
 				},
 			})),
@@ -321,13 +321,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- SEASON 2
 			ach(61962, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_3, REMOVED_5_5_4 } }, {	-- Realm First! Challenge Conqueror: Platinum (Season 2)
 				["groups"] = {
-					title(738),	-- %s, the Thundering Stampede
+					title(738),	-- <Name>, the Thundering Stampede
 				},
 			})),
 			-- SEASON 3
 			ach(61963, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Realm First! Challenge Conqueror: Platinum (Season 3)
 				["groups"] = {
-					title(739),	-- %s, the Momentous Terror
+					title(739),	-- <Name>, the Momentous Terror
 				},
 			})),
 			-- #endif

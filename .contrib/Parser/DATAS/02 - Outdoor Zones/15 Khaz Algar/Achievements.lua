@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		}),
 		ach(61498, {	-- Ready for Midnight
 			["timeline"] = { ADDED_11_2_7 },
-			["groups"] = { title(669) },	-- %s, Azeroth's Vanguard
+			["groups"] = { title(669) },	-- <Name>, Azeroth's Vanguard
 		}),
 		ach(20597),		-- The War Within (automated)
 		ach(40231, {	-- The War Within Pathfinder

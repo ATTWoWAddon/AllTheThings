@@ -73,6 +73,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				filter(TRINKET_F, {
 					i(274493),	-- Effigy of Ula'Tek's Faithful
+					i(280091),	-- Latent Purifier
 					i(274496),	-- Ophidian Bone Whistle
 					i(274495),	-- Pulse Seeker's Oculus
 					i(274497),	-- Spirit-Rending Poison
@@ -83,6 +84,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(276057),	-- Cryptbound Scepter
 				i(276051),	-- Fangmouth Warspear
 				i(276059),	-- Headhunter's Hacker
+				i(276060),	-- Hexxer's Blastin' Rod
 				i(276062),	-- Hydra Neckchopper
 				i(276044),	-- Loa-Infused Battlestaff
 				i(276058),	-- Ruinous Slitherslicer
@@ -90,15 +92,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				i(276053),	-- Snakehunter's Warglaive
 				i(276049),	-- Snakeslayer's Claymore
 				i(276055),	-- Soulweaver's Curseblade
+				i(276046),	-- Superclutch Smasher
 				i(276047),	-- Swamp Whomper
 				i(276042),	-- Templetusk Shield
 				i(276045),	-- Trailblazing Soulblade
+				i(276052),	-- Venomshot Greatbow
 				i(276050),	-- Victorious Spiritstaff
 				i(276043),	-- Vilefang Censer
 				i(276048),	-- Vipersbane Dagger
 				i(276061),	-- Witch Doctor's Bloodletter
 			}),
 			--
+			i(271424, {	-- Diver's Key Fragment
+				["cr"] = 263081,	-- Glittering Grouper Brinetail
+				["coords"] = {
+					{ 61.2, 14.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 63.6, 13.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 65.4, 5.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 67.2, 5.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+				},
+			}),
 			i(282183, {	-- Fabled Coiled Isle Veteran's Cache (Season 2)
 				["timeline"] = { ADDED_12_1_0 },
 				--["sym"] = SYM.MIDNIGHT.THE_COILED_ISLE_ZONE_REWARDS,

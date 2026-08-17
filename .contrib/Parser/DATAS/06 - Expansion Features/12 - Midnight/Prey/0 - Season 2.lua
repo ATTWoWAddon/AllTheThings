@@ -39,7 +39,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(63611),	-- Big Prey Hunter (Season 2)
+					ach(63611, {	-- Big Prey Hunter (Season 2)
+						title(792),	-- <Name>, Servant of Astalor
+					}),
 				}),
 				n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_PREY_EVENT_COMPLETION_SEASON_TWO}),
 				n(EVENT_COMPLETION, {

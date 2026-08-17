@@ -13,9 +13,6 @@ root(ROOTS.Unsorted, {
 			i(247776),	-- Glowing Zangarshroom Cup
 			i(248404),	-- Stack of Kafa Mugs
 			i(249219),	-- Ouroboric Curse
-			i(249223),	-- Corrosive Bilespear
-			i(249227),	-- Dundun's Favor
-			i(249228),	-- Soul-Cracking Dreamcatcher
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
@@ -40,7 +37,6 @@ root(ROOTS.Unsorted, {
 			i(267045),	-- Quivering Egg
 			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(268095),	-- Fresh Poultice
-			i(268113),	-- Jan'alai's Breath
 			-- WB
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
@@ -119,7 +115,6 @@ root(ROOTS.Unsorted, {
 			i(274459),	-- Squirky
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274494),	-- Chiral Marrowgrafter
 			i(274499),	-- Toxiferous Transfusion
 			i(274579),	-- Undamaged Trap Needle
 			i(274595),	-- Pristine Polygon
@@ -153,7 +148,6 @@ root(ROOTS.Unsorted, {
 			i(274905),	-- Seaside Straw Umbrella
 			i(274907),	-- Seaside Painted Surfboard
 			i(274909),	-- Seaside Murloc Tiki Totem
-			i(274965),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
 			i(274991),	-- Seaside Fire Pit
 			i(275030),	-- Slugg's Favorite Fishing Rod
@@ -177,6 +171,11 @@ root(ROOTS.Unsorted, {
 			i(275278),	-- Alchemy
 			i(275285),	-- Malleable Root
 			i(275287),	-- Cellular Slab
+			i(276883),	-- A Message From Kul'amara
+			i(276905),	-- Beginning Fragment of Ulantu's Log
+			i(276912),	-- Middle Fragment of Ulantu's Log
+			i(276914),	-- End Fragment of Ulantu's Log
+			i(277525),	-- Ulantu's Belongings
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(279574),	-- Preyhunter's Hero Chest
 			i(278378),	-- Preyhunter's Scaled Bust
@@ -190,18 +189,9 @@ root(ROOTS.Unsorted, {
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
 			i(275825),	-- Ula'tek's Sssacrificial Rain
-			i(276117),	-- Clouded Blood-Pearl
-			i(276124),	-- Ancient Knucklebone
-			i(276126),	-- Serpent's Feather
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
 			i(276164),	-- Corroded Patagia
-			i(276168),	-- Fang of Ss'akrithos
-			i(276169),	-- Malformed Barrier
-			i(276172),	-- Headdress of Mutagenesis
-			i(276173),	-- Clutchguard Sandals
-			i(276174),	-- Leviathan's Oozing Scalemail
-			i(276178),	-- Venom Lancer's Gauntlets
 			i(276186),	-- Totally Not Stolen Powder
 			i(276198),	-- Shellman's 195
 			i(276205),	-- Legitimate Shipment of Swivel Guns
@@ -302,14 +292,11 @@ root(ROOTS.Unsorted, {
 			i(277945),	-- Melancholic Offering
 			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
-			i(277985),	-- Mysterious Offering
 			i(277990),	-- Cursemail Gauntlets
 			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
 			i(278048),	-- Corrosive Relic
 			i(278050),	-- Corrosive Bijou
-			i(278070),	-- Handful of Esoteric Ingredients
-			i(278084),	-- Handful of Esoteric Ingredients
 			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
 			i(278100),	-- Grain
@@ -322,7 +309,6 @@ root(ROOTS.Unsorted, {
 			i(278115),	-- DNT Ula'tek Pole Dummy F
 			i(278154),	-- Hooked Net Trap
 			i(278193),	-- Aqiri Mandible
-			i(278245),	-- Royal Attendant's Coffin
 			i(278276),	-- Spoils of Azta'rec
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
@@ -336,7 +322,6 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
-			i(278472),	-- Noxious Corrosive Coin
 			i(278374),	-- Preyhunter's Fanged Bust
 			i(278378),	-- Preyhunter's Scaled Bust
 			i(278517),	-- Lost Med'jai Amulet
@@ -544,7 +529,6 @@ root(ROOTS.Unsorted, {
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
 			i(279207),	-- Blackened Sludgefish
-			i(279209),	-- Plainsrunner's Sun Tunic
 			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
 			i(279290),	-- Fang Lover's
@@ -584,7 +568,6 @@ root(ROOTS.Unsorted, {
 			i(279522),	-- Surplus Bag of Party Favors
 			i(279524),	-- Brewer's Purple Kilt
 			i(279526),	-- Victorious Stormarion Pinnacle Cache
-			i(279528),	-- Mag'har Laborer's Tunic
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
 			i(279531),	-- Brewer's Purple Beret
@@ -592,12 +575,6 @@ root(ROOTS.Unsorted, {
 			i(279533),	-- Brewer's Red Shoulder Cape
 			i(279534),	-- Brewer's Red Kilt
 			i(279535),	-- Brewer's Red Belt
-			i(279536),	-- Painted Raptor-Tooth Shirt
-			i(279538),	-- Spore-Pocked Lab Coat
-			i(279539),	-- Junior Artificer's Work Vest
-			i(279540),	-- Tinker's Padded Vest
-			i(279541),	-- Priestess' Moon Tunic
-			i(279542),	-- Runecloth Clergy Coat
 			i(279543),	-- Sky Shaman's Tunic
 			i(279544),	-- Witch Doctor's Undervest
 			i(279545),	-- Wild Seer's Mantle
@@ -635,7 +612,6 @@ root(ROOTS.Unsorted, {
 			i(280118),	-- Venomous Aspirant's Medallion
 			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280178),	-- Poison Dart Frog
 			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent
 			i(280221),	-- Sealeather Sack
@@ -686,11 +662,7 @@ root(ROOTS.Unsorted, {
 			i(274422),	-- Ossified Relic
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
-			i(280540),	-- Lil' Mon
 			i(280581),	-- Wintry Witchwick's Rider
-			i(280691),	-- Dagger of the Slithering Ritual
-			i(280698),	-- Szarith's Underbelly Slicer
-			i(280701),	-- Waistwrap of the Fanged
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
@@ -700,7 +672,6 @@ root(ROOTS.Unsorted, {
 			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
-			i(280503),	-- Ulantu's Notes
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)

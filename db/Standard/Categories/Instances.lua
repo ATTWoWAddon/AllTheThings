@@ -41863,7 +41863,7 @@ s(78972,134465,{b=1,f=6,loc=47,lvl=40,modID=1}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=1}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=1}),
 s(78973,134508,{b=1,f=7,loc=44,lvl=40,modID=1}),
-i(137373,{b=1,f=53,lvl=40,modID=1,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=1,spellID=215745}),
 s(78971,134438,{b=1,f=5,loc=42,lvl=40,modID=1}),
 s(78970,137372,{b=1,f=4,loc=43,lvl=40,modID=1}),
 i(137375,{b=1,f=54,lvl=40,modID=1}),
@@ -41926,7 +41926,7 @@ s(80125,134465,{b=1,f=6,loc=47,lvl=40,modID=2}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=2}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=2}),
 s(79950,134508,{b=1,f=7,loc=44,lvl=40,modID=2}),
-i(137373,{b=1,f=53,lvl=40,modID=2,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=2,spellID=215745}),
 s(80063,134438,{b=1,f=5,loc=42,lvl=40,modID=2}),
 s(80036,137372,{b=1,f=4,loc=43,lvl=40,modID=2}),
 i(137375,{b=1,f=54,lvl=40,modID=2}),
@@ -41995,7 +41995,7 @@ s(78972,134465,{b=1,f=6,loc=47,lvl=40,modID=23}),
 s(77540,134256,{b=1,f=6,loc=46,lvl=40,modID=23}),
 s(77544,134260,{b=1,f=4,loc=40,lvl=40,modID=23}),
 s(78973,134508,{b=1,f=7,loc=44,lvl=40,modID=23}),
-i(137373,{b=1,f=53,lvl=40,modID=23,spellID=358933}),
+i(137373,{b=1,f=53,lvl=40,modID=23,spellID=215745}),
 s(78971,134438,{b=1,f=5,loc=42,lvl=40,modID=23}),
 s(78970,137372,{b=1,f=4,loc=43,lvl=40,modID=23}),
 i(137375,{b=1,f=54,lvl=40,modID=23}),
@@ -65530,8 +65530,8 @@ e(2880,{npcID=259447,g={
 ach(62283)}})}}),
 d(23,{
 h(-12,{
-ach(63679,{
-p(5129,{description="Requires 5 Players.\n\nThe Reversal Charms and Ritual Reagent spawn in the 4 poison waterfalls in the 1st boss arena.\nThey are very hard to see, and a Reversal Charm can stack right next to the Ritual Reagent.\nIf you grab the wrong item, click off your buff and pick up the correct one.\nYou need 4 players with Reversal Charms and 1 player with the Ritual Reagent.\n\nClear the room with the Ascendant Serpent mob after the 2nd boss, but do not touch the totems.\nThe 4 Charm holders stand at the totems, and the Reagent holder stands on the mob.\nEveryone targets the serpent and waits for their Extra Action Button.\nThe Reagent holder casts first.\nAfter the Reagent cast completes, all 4 Charm holders cast theirs to finish the transformation.\nThere is no timer after the Reagent finishes, but once the first Charm holder starts their 13-second cast, the other 3 must start before it finishes.\n\nInteract with the new NPC to get your pet and Feat of Strength.",itemID=279197,npcID=270147,spellID=1306197})})}),
+ach(63679,{description="Requires 5 Players.\n\nThe Reversal Charms and Ritual Reagent spawn in the 4 poison waterfalls in the 1st boss arena.\nThey are very hard to see, and a Reversal Charm can stack right next to the Ritual Reagent.\nIf you grab the wrong item, click off your buff and pick up the correct one.\nYou need 4 players with Reversal Charms and 1 player with the Ritual Reagent.\n\nClear the room with the Ascendant Serpent mob after the 2nd boss, but do not touch the totems.\nThe 4 Charm holders stand at the totems, and the Reagent holder stands on the mob.\nEveryone targets the serpent and waits for their Extra Action Button.\nThe Reagent holder casts first.\nAfter the Reagent cast completes, all 4 Charm holders cast theirs to finish the transformation.\nThere is no timer after the Reagent finishes, but once the first Charm holder starts their 13-second cast, the other 3 must start before it finishes.\n\nInteract with the new NPC to get your pet and Feat of Strength.",g={
+p(5129,{itemID=279197,npcID=270147,spellID=1306197})}})}),
 e(2880,{npcID=259447,g={
 ach(62284)}})})}}),
 inst(1311,{awp=120001,coords={

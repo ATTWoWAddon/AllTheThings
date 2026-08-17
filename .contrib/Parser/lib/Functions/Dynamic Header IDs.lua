@@ -50,6 +50,7 @@ HeaderAssignments = {
 	["Awakening The Machine"] = -408,
 	["Azerite Essences"] = -141,
 	["Azerothian Archives"] = -469,
+	["Azure Span Treasure Trove"] = -767,
 	["Back"] = -89,
 	["Balance of Power"] = -132,
 	["Bartering"] = -467,
@@ -746,4 +747,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -767
+NextHeaderID = -768

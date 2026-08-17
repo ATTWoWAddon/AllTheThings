@@ -1060,7 +1060,14 @@ ihqt(274507, 96517);				-- Demystifyin': Leatherworking
 ihqt(274509, 96518);				-- Demystifyin': Mining
 ihqt(274508, 96519);				-- Demystifyin': Skinning
 ihqt(274512, 96520);				-- Demystifyin': Tailoring
-
+is(0, 1286801);						-- Path of Blooming Verdure
+is(0, 1286804);						-- Path of Brutal Combatant
+--is(0, 393256);					-- Path of the Clutch Defender (under 10.0)
+is(0, 1286809);						-- Path of Devious Smuggler
+is(0, 1286828);						-- Path of Sacret Temple
+is(0, 1286831);						-- Path of the Slumbering Conqueror
+is(0, 1286812);						-- Path of Venomous Evolution
+is(0, 1286807);						-- Path of Worthy Aspirant
 ------------
 -- UNUSED --
 ------------

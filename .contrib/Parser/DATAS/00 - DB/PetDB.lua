@@ -4651,8 +4651,10 @@ i(275631, 5071);	-- Corrosive Writhling
 i(270249, 5029);	-- Cursed Spawn
 i(270253, 5030);	-- Jaundiced Slitherer
 i(279921, 5131);	-- Ki'clak
+i(280540, 5137);	-- Lil' Mon
 i(270252, 5032);	-- Nightfur Kapara
 i(278572, 5126);	-- Pale Hexscale
+i(280178, 5133);	-- Poison Dart Frog
 i(270214, 5028);	-- Poisoned Parasite
 i(275702, 5076);	-- Preyhunter's Prismguard
 i(275704, 5078);	-- Preyhunter's Riftbreaker
@@ -4674,10 +4676,8 @@ i(0, 5061);		-- Crabbers
 i(270211, 5027);	-- Furiostraza
 i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
-i(280540, 5137);	-- Lil' Mon
 i(270191, 5026);	-- Lil'Kruul
 i(277321, 5118);	-- Mewkahen
-i(280178, 5133);	-- Poison Dart Frog
 i(280305, 5125);	-- Soulcoil Remnant
 i(279197, 5129);	-- Slitherfang
 i(276234, 5092);	-- Vibrant Venomfang
