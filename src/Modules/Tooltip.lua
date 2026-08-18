@@ -596,6 +596,11 @@ local HookableTooltips = {
 	-- WorldQuestList
 	WQLTooltip = 1,
 	WQLAreaPOITooltipTooltip = 1,
+	-- Titan Panel
+	TitanPanelTooltip = 1,
+	-- World Quest Tracker
+	WorldQuestTrackerGameTooltipItemTooltipTooltip = 1
+
 };
 
 -- Shared Tooltip Functions
