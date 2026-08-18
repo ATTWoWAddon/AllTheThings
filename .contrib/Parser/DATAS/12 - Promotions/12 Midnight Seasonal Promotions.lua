@@ -79,8 +79,8 @@ AZURESPAN_TREASURETROVE = createHeader({
 	text = {
 		en = "Azure Span Treasure Trove",
 		-- TODO: de = "",
-		--es = "Aventura del Año Nuevo Lunar",
-		--mx = "Aventura del Año Nuevo Lunar",
+		es = "Tesoro Escondido de las Tierras Azures",
+		mx = "Tesoro escondido del Trecho Azur",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -91,6 +91,8 @@ AZURESPAN_TREASURETROVE = createHeader({
 	},
 	description = {
 		en = "Azure Span Treasure Trove is a China-exclusive promotional event for World of Warcraft, taking place from Aug 14 - Sep 11 2026.",
+		es = "Tesoro Escondido de las Tierras Azures es un evento promocional exclusivo para China de World of Warcraft, que tendrá lugar del 14 de agosto al 11 de septiembre de 2026.",
+		mx = "Tesoro escondido del Trecho Azur es un evento promocional exclusivo para China de World of Warcraft, que tendrá lugar del 14 de agosto al 11 de septiembre de 2026.",
 	},
 });
 
@@ -219,15 +221,15 @@ root(ROOTS.Promotions, {
 			}),
 			i(264283, {	-- Backboard and Hoop Playset (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Horde Board' at craftyourworldpromo.com to receive a code to the email you provided.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66709" },	-- Removed 6 April 2026 at 11:59pm (BST)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },	-- Its removal was announced for 6 April 2026 at 11:59pm (BST) but it is still active and working (last check 17/8/26)
 			}),
 			i(264282, {	-- Bluebird's Golden Cage (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Azeroth Inspiration' at craftyourworldpromo.com to receive a code to the email you provided.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66709" },	-- Removed 6 April 2026 at 11:59pm (BST)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },	-- Its removal was announced for 6 April 2026 at 11:59pm (BST) but it is still active and working (last check 17/8/26)
 			}),
 			i(264281, {	-- Preserved Gift of Gilneas (DECOR!)
 				["description"] = "Available from the Pinterest Craft Your World promotion. Enter password 'Kalimdor Collage' at craftyourworldpromo.com to receive a code to the email you provided.",
-				["timeline"] = { ADDED_12_0_1_LAUNCH, "removed 12.0.1.66709" },	-- Removed 6 April 2026 at 11:59pm (BST)
+				["timeline"] = { ADDED_12_0_1_LAUNCH },	-- Its removal was announced for 6 April 2026 at 11:59pm (BST) but it is still active and working (last check 17/8/26)
 			}),
 			i(262660, {	-- Egg Farmer's Backpack (COSMETIC!)
 				["description"] = "Available in a limited quantity from ign.com/rewards/claim-a-code-to-get-world-of-warcraft-in-game-content, you'll receive a code to redeem on Battle.net.",
