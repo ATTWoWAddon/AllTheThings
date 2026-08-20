@@ -34,9 +34,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						q(94804),	-- A Collection of Rot
 						q(94800, {	-- Crushed Crabs
 							i(277992),	-- Crab Trap Pieces (QI!)
+							i(277847),	-- Unbroken Trap Hinge (QI!)
+							i(274579),	-- Undamaged Trap Needle (QI!)
+							i(277848),	-- Untouched Crab Lure (QI!)
+							--
+							i(277849),	-- Mushed Crab
 						}),
 						q(94796, {	-- Curing Curse Resistance
 							i(278094),	-- Whole Uncursed Liver (QI!)
+							--
+							i(278095),	-- Liver Pulp
 						}),
 						q(94803, {	-- Going for the Crown
 							i(277920),	-- Vibrant Crownfeather (QI!)

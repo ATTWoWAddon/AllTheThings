@@ -2964,27 +2964,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_8_1_5 },
 					["groups"] = {
-						i(167227, {	-- Gild's Crewneck
-							["timeline"] = { ADDED_8_1_5 },
-						}),
-						i(167208, {	-- Jade's Lovely Shirt
-							["timeline"] = { ADDED_8_1_5 },
-						}),
-						i(167223, {	-- Selis' Silk Shirt
-							["timeline"] = { ADDED_8_1_5 },
-						}),
-						i(167230, {	-- Shirtsi's Cloth Shirt
-							["timeline"] = { ADDED_8_1_5 },
-						}),
-						i(167213, {	-- Shuurt's Precious
-							["timeline"] = { ADDED_8_1_5 },
-						}),
-						i(167221, {	-- Threads of Tirion
-							["timeline"] = { ADDED_8_1_5 },
-						}),
-						i(167214, {	-- Tia Shortsleeve's Short Sleeve Shirt
-							["timeline"] = { ADDED_8_1_5 },
-						}),
+						i(167227),	-- Gild's Crewneck
+						i(167208),	-- Jade's Lovely Shirt
+						i(167223),	-- Selis' Silk Shirt
+						i(167230),	-- Shirtsi's Cloth Shirt
+						i(167213),	-- Shuurt's Precious
+						i(167221),	-- Threads of Tirion
+						i(167214),	-- Tia Shortsleeve's Short Sleeve Shirt
+						i(279539, {["timeline"] = { ADDED_12_1_0 }}),	-- Junior Artificer's Work Vest
+						i(279528, {["timeline"] = { ADDED_12_1_0 }}),	-- Mag'har Laborer's Tunic
+						i(279536, {["timeline"] = { ADDED_12_1_0 }}),	-- Painted Raptor-Tooth Shirt
+						i(279209, {["timeline"] = { ADDED_12_1_0 }}),	-- Plainsrunner's Sun Tunic
+						i(279541, {["timeline"] = { ADDED_12_1_0 }}),	-- Priestess' Moon Tunic
+						i(279542, {["timeline"] = { ADDED_12_1_0 }}),	-- Runecloth Clergy Coat
+						i(279538, {["timeline"] = { ADDED_12_1_0 }}),	-- Spore-Pocked Lab Coat
+						i(279540, {["timeline"] = { ADDED_12_1_0 }}),	-- Tinker's Padded Vest
 					},
 				}),
 				n(105637, {	-- Scowling Rosa <Texts and Specialty Goods>

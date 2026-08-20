@@ -72,12 +72,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(276000),	-- Stonehide Vambraces
 				}),
 				filter(TRINKET_F, {
+					i(274494),	-- Chiral Marrowgrafter
 					i(274493),	-- Effigy of Ula'Tek's Faithful
+					i(280047),	-- Feathered Bell
 					i(280091),	-- Latent Purifier
 					i(274496),	-- Ophidian Bone Whistle
 					i(274495),	-- Pulse Seeker's Oculus
-					i(274497),	-- Spirit-Rending Poison
+					i(280123),	-- Sharp Axe Holster
 					i(274498),	-- Spirit Ward
+					i(274497),	-- Spirit-Rending Poison
+					i(274499),	-- Toxiferous Transfusion
 				}),
 			}),
 			n(WEAPONS, {

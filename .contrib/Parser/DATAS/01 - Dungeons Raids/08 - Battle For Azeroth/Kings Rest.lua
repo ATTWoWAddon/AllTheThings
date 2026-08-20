@@ -94,9 +94,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159303),	-- Vest of Reverent Adoration
 						i(159301),	-- Primal Dinomancer's Belt
 						i(168129),	-- Essence of the Troll Dynasty
-						i(278245, {	-- Royal Attendant's Coffer
-							["timeline"] = { ADDED_12_1_0 },
-						}),
+						i(278245, {	["timeline"] = { ADDED_12_1_0 } }),	-- Royal Attendant's Coffin (DECOR!)
 					},
 				}),
 			}),

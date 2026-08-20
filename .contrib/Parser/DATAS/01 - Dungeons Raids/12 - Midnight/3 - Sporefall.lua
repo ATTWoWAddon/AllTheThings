@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				--ZoneDrops({}),
 				Boss(ROTMIRE, {
-					ach(63241), -- Mythic: Rotmire
+					ach(63241),	-- Mythic: Rotmire
 					ach(63247),	-- Mythic: Rotmire Guild Run
 				}),
 			}),

@@ -437,6 +437,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(95404, {	-- Freeze Range Eggs
 							["coord"] = { 56.0, 49.6, VAL },
 						}),
+						q(95402, {	-- Ignoble Gas Collector
+							["coord"] = { 41.6, 73.5, VAL },
+						}),
 						q(96400, {	-- Lingering Corruption
 							["coord"] = { 68.6, 22.2, 2621 },	-- Forgotten Depths
 						}),

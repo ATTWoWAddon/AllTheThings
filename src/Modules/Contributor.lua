@@ -1391,6 +1391,7 @@ MobileDB.GameObject = {
 	[221747] = true,	-- Huge Yak Roast
 	[221763] = true,	-- Fire Poppy
 	[222684] = true,	-- Glinting Sand
+	[222686] = true,	-- Eerie Crystal
 	[222685] = true,	-- Crane Nest
 	[223508] = true,	-- Star Reading (q:33795)
 	[224229] = true,	-- Alliance Sword (q:33263)
@@ -1453,6 +1454,7 @@ MobileDB.GameObject = {
 	[234105] = true,	-- Arakkoa Archaeology Find
 	[234106] = true,	-- Ogre Archaeology Find
 	[234165] = true,	-- Cache of Arakkoan Treasures [Rukhran]
+	[234189] = true,	-- Improved Iron Trap
 	[235331] = true,	-- Flask of Blazegrease (q:36758)
 	[235338] = true,	-- Gladiator's Shield (q:36765)
 	[235390] = true,	-- Nagrand Arrowbloom
@@ -1481,6 +1483,7 @@ MobileDB.GameObject = {
 	[237728] = true,	-- Pillar of Creation
 	[237729] = true,	-- Pillar of Life
 	[237730] = true,	-- Pillar of Rejuvenation
+	[238761] = true,	-- Barn Work Order
 	[238979] = true,	-- Tidestone Vault Door
 	[239067] = true,	-- War Mill Work Order
 	[239452] = true,	-- Demon Ward (q:37658)
@@ -2343,6 +2346,7 @@ MobileDB.GameObject = {
 	[341808] = true,	-- Gersahl Shrub
 	[342366] = true,	-- Veil Blossom (q:59002)
 	[342375] = true,	-- Sands of Shifting Visions (q:56472)
+	[343668] = true,	-- Concentrated Royal Jelly (q:58825)
 	[344738] = true,	-- Titan Console (q:56541)
 	[344755] = true,	-- Overflowing Chalice (q:62784)
 	[345458] = true,	-- Prize Bag
@@ -2615,6 +2619,7 @@ MobileDB.GameObject = {
 	[382594] = true,	-- 'Good Students' Reward Chest [Vexamus]
 	[383574] = true,	-- Everglow Trumpets [Dragon Isle Resources]
 	[383575] = true,	-- Rebel Supply Crate
+	[383683] = true,	-- Horde Bounty
 	[383684] = true,	-- Ohuna Egg Basket (The Nohkud Offensive)
 	[383686] = true,	-- Ohuna Nest (The Nohkud Offensive)
 	[383732] = true,	-- Tuskarr Tacklebox
@@ -2798,7 +2803,9 @@ MobileDB.GameObject = {
 	[414080] = true,	-- Molten Treatise Vol. 2
 	[414082] = true,	-- Molten Treatise Vol. 4
 	[414315] = true,	-- Mycobloom
+	[414318] = true,	-- Blessing Blossom
 	[414322] = true,	-- Lush Orbinid
+	[414335] = true,	-- Irradiated Mycobloom
 	[414699] = true,	-- Darkroot Persimmon
 	[414701] = true,	-- Cold Coffee
 	[414869] = true,	-- Weapons Crate
@@ -2976,6 +2983,7 @@ MobileDB.GameObject = {
 	[499949] = true,	-- Stolen Research Crate (q:85730)
 	[500095] = true,	-- Powdered De-Pollutant
 	[500096] = true,	-- Unseemly Growth
+	[500098] = true,	-- Black Empire Cache
 	[500203] = true,	-- Resold Goods
 	[500407] = true,	-- Runed Storm Cache (Treasure)
 	[500581] = true,	-- Container of Highly Profitable Sludge
@@ -3057,6 +3065,7 @@ MobileDB.GameObject = {
 	[516836] = true,	-- Voidbane Gem
 	[516932] = true,	-- Tranquility Bloom
 	[516935] = true,	-- Azeroot
+	[516967] = true,	-- Lightforged Tranquility Bloom
 	[516968] = true,	-- Wild Tranquility Bloom
 	[516994] = true,	-- Tazavesh Trash (q:87376)
 	[516995] = true,	-- Tazavesh Trash (q:87376)
@@ -3286,6 +3295,7 @@ MobileDB.GameObject = {
 	[572475] = true,	-- Weapons Rack (q:92397)
 	[572477] = true,	-- Weapons Rack (q:92397)
 	[572766] = true,	-- Trash Heap (Delves)
+	[572785] = true,	-- Olemba Lumber
 	[572869] = true,	-- Olemba Lumber
 	[572995] = true,	-- Olemba Lumber
 	[573057] = true,	-- Ironwood Lumber
@@ -3409,6 +3419,7 @@ MobileDB.GameObject = {
 	[616917] = true,	-- Cosmic Void
 	[616918] = true,	-- Void Rift
 	[617077] = true,	-- Vilebranch Scroll (q:92951)
+	[617089] = true,	-- Grand Line Treasure
 	[617397] = true,	-- Dark Chest of Forbiden Evils (q:92320)
 	[617497] = true,	-- Out of Place Knapsack (q:92166)
 	[617500] = true,	-- Scattered Papers (q:92166)
@@ -3454,15 +3465,20 @@ MobileDB.GameObject = {
 	[630870] = true,	-- Portal to Astalor's Sanctum
 	[638873] = true,	-- Orb of Translocation
 	[639875] = true,	-- Feather of Jan'alai (q:94870)
+	[639625] = true,	-- Tortollan Scroll Case (q:95453)
 	[641533] = true,	-- Corrupted Lantern (q:92320)
+	[642203] = true,	-- Repair Supplies
 	[642704] = true,	-- Seagull Feather (q:95673)
 	[649481] = true,	-- Wood Debris (q:96111)
+	[649640] = true,	-- Soulcoiler's Cache
+	[649687] = true,	-- Soulcoiler's Cache
 	[650051] = true,	-- Faithbreaker Ger'lok's Ritual Chest [Broken Throne, Ritual Site]
 	[651112] = true,	-- Omnial Anomaly
 	[651341] = true,	-- Omnial Anomaly
 	[651342] = true,	-- Omnial Anomaly
 	[651783] = true,	-- Pulsing Void Magicule (q:96229) [Ritual Site: Naigtal]
 	[652051] = true,	-- Belo'vir's Arcane Vault (q:96231)
+	[653064] = true,	-- Ossified Relic
 	[653416] = true,	-- Cynosure of Twilight (q:96051)
 	[653485] = true,	-- Cynosure of Twilight (q:96052)
 	[654250] = true,	-- Mound of Dirt (q:96543)
@@ -3484,6 +3500,8 @@ MobileDB.GameObject = {
 	[660393] = true,	-- Cursed Sanguithorn
 	[660388] = true,	-- Cursed Tranquility Bloom
 	[660768] = true,	-- Zul'jan's Strongbox [Altar of Fangs]
+	[667734] = true,	-- Venom Fountain
+	[668269] = true,	-- Amani Skelton
 }
 
 -- Represents content which will trigger the 'not in game' contrib check, but only because it is available from a 'not in game' source (i.e. an NPC spawned from a removed Item used by a Player; an Object which spawns during a Quest which is removed but accessible if a Player still has it, etc.) Or perhaps an object/npc which is actually in the game but whose entire use has been made obsolete and is thus marked in ATT
@@ -3910,10 +3928,23 @@ local function OnLOOT_READY()
 			end
 		end
 
+		-- make sure all the missing loot is actually Sourced somewhere before reporting it
+		if next(missingLootItems) then
+			local o
+			for itemID in pairs(missingLootItems) do
+				o = SearchForObject("itemID", itemID)
+				-- don't report missing items when verifying loot, we probably don't care about sourcing them
+				if o._missing then
+					missingLootItems[itemID] = nil
+					app.PrintDebug("removed missing scanned loot",app:SearchLink(o))
+				end
+			end
+		end
+
 		-- report loot not linked to this object
 		if next(missingLootItems) then
 			reportData = reportData or BuildGenericReportData(objRef, id)
-			reportData.MissingLoot = "Lootable Object missing confirmed Loot!"
+			reportData.MissingLoot = "Lootable Object missing confirmed Sourced Loot!"
 			reportData.objectID = id
 			reportData.MissingLootItems = app.StringifyTable(missingLootItems)
 			reportData.LootCurrencies = app.StringifyTable(loots.currency)

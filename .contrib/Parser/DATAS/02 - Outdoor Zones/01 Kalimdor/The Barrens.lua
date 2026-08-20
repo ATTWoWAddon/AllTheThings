@@ -5207,6 +5207,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
+-- #IF ANYCLASSIC
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 	m(KALIMDOR, {
 		m(THE_BARRENS, {
@@ -5214,4 +5215,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 }));
+-- #endif
 -- #endif

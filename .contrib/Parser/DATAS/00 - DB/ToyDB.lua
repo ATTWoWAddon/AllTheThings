@@ -1627,5 +1627,7 @@ i(276229);	-- Preyhunter's Trophy Stand
 --- Unsorted ---
 i(279052);	-- Ancient Amani Mask
 i(276207);	-- Preyhunter's Masquerade
+i(274730);	-- Tuskarr Ice Fishing Tent
 i(275825);	-- Ula'tek's Sssacrificial Rain
+i(274967);	-- Varian's Dragon Throne
 i(279590);	-- Venomous Champion's Illustrious Banner

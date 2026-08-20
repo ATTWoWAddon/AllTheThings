@@ -3,7 +3,7 @@ local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,crit,cu,en,flt,gs,h,heir,i,ill,mnt,n,p,r,s,toy=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateEnsemble,_.CreateFilter,_.CreateGearSet,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateIllusion,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 categories.BlackMarket=
-h(-554,{SortPriority=80,symselector=23,g={
+h(-554,{SortPriority=80,symselector=25,g={
 h(-88,{awp=50004,u=9,g={
 ah(72057,{awp=80205,type="n",u=9,g={
 s(57126,105804,{b=1,f=7,loc=40,lvl=35,u=9}),
@@ -366,7 +366,7 @@ s(194006,211159,{awp=110005,f=8,u=9}),
 s(21624,44924,{b=1,f=22,lvl=32,spellID=132452,u=9})}}),
 i(93194,{awp=50100,r=2,rwp=60002,u=2}),
 i(93227,{awp=50100,b=1,lvl=35,r=1,rwp=60002,u=2}),
-i(169430,{awp=80205,b=1,skipFill=1,sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58},{"not","itemID",169430,141995,127995,110592,102137,97565}},u=9}),
+i(169430,{awp=80205,b=1,skipFill=1,sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58},{"not","itemID",169430,141995,127995,110592,102137,97565}},u=9}),
 i(141995,{awp=70003,b=1,rwp=80205,u=2}),
 i(127995,{awp=60200,b=1,rwp=70003,u=2}),
 i(110592,{awp=60002,b=1,rwp=60200,u=2}),
@@ -374,14 +374,16 @@ i(102137,{awp=50400,b=1,rwp=60002,u=2}),
 i(97565,{awp=50300,b=1,rwp=50400,u=2}),
 h(-58,{awp=50004,u=9,g={
 n(243247,{coords={
-[2393]={{51.84,48.53}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}),
+[2393]={{51.84,48.53}}},sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(219055,{coords={
-[2339]={{64.8,52.7}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}),
+[2339]={{64.8,52.7}}},sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58}},u=9}),
+n(189676,{coords={
+[2112]={{20.2,49.1}}},sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(100986,{coords={
-[628]={{71.37,17.93}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}),
+[628]={{71.37,17.93}}},sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58}},u=9}),
 n(94829,_.ResolveQuestData({aqd=
 {coords={
 [582]={{37.2,35.8}}}},hqd=
 {coords={
-[590]={{44.96,50.07}}}},skipFill=1,sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=9}))}})}})
+[590]={{44.96,50.07}}}},skipFill=1,sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58}},u=9}))}})}})
 end)

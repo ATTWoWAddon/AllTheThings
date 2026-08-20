@@ -176,3 +176,11 @@ THE_EYE_OF_SHADOW.timeline = nil;
 MATURE_BLUE_DRAGON_SINEW.timeline = nil;
 -- #endif
 -- #endif
+
+-- #IF ANYCLASSIC
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
+	n(WORLD_BOSSES, {
+		q(78650),	-- Kazzak kill
+	}),
+}));
+-- #endif

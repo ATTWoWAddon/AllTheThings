@@ -415,7 +415,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(3921),	-- [DNT] Spore Light - endeavor canceled (inside only) \\ Yellow Spore Light
 			rawdecor(4013),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Decor_Pillow01_Destroyed.m2
 			rawdecor(4014),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Furniture_BeanBag01_Destroyed.m2
-			rawdecor(4426),	-- [DNT] Stack of Kafa Mugs
 			rawdecor(4430),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue02.m2
 			rawdecor(5131),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_TikiMask03.m2
 			rawdecor(5649),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Crafting_Tool03.m2

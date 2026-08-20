@@ -79,7 +79,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						--["questID"] = XXXXX,	-- triggered ?? difficulty
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
-								["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+								["timeline"] = { ADDED_12_1_0 },
 								["groups"] = {
 									title(776),	-- <Name>, Fabled Vanquisher of Azta'rec
 								},
@@ -112,6 +113,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			n(CURIO, {
 				--Combat
 				i(249223),	-- Corrosive Bilespear
+				i(271132),	-- Essence Trap
+				i(249219),	-- Ouroboric Curse
 				--Utility
 				i(249227),	-- Dundun's Favor
 				i(249228),	-- Soul-Cracking Dreamcatcher
@@ -176,18 +179,24 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272262),	-- Pledgebearer's Splints
 					}),
 					filter(TRINKET_F, {
+						i(251792),	-- Glorious Crusader's Keepsake
+						i(251785),	-- Void-Reaper's Libram
 						-- ["groups"] = sharedData({
 						-- 	["providers"] = {
 						-- 	},
 						-- },{
-							i(274494),	-- Chiral Marrowgrafter
+
 						-- }),
+					}),
+					filter(SHIELDS, {
+						i(272276),	-- Wailing Bulwark
 					}),
 				}),
 				filter(MISC, {
 					i(273000),	-- Corrosive Soul
+					i(279290),	-- Fang Lover's (CI!)
 					i(274374, {	-- Trovehunter's Bounty
-						["providers"] = {{"o",584518}}, -- Bountiful Heavy Trunk (verified)
+						["providers"] = { { "o",584518 } }, -- Bountiful Heavy Trunk (verified)
 					}),
 				}),
 				filter(QUEST_ITEMS, {
@@ -195,6 +204,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					i(274965),	-- Ancient Curio (Combat) (QI!/QS!)
 					i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
 					i(277506),	-- Codex of the Soul Coilers (QS!)
+					i(279012),	-- Cracked Keystone (QI!/QS!/CI!)
 				}),
 				n(WEAPONS, {
 					i(272270),	-- Bonedust Pestle
@@ -239,6 +249,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["maps"] = { VENOMFALL_DEEPS },
 					["groups"] = { i(275988) },	-- Corrosive Victory (TOY!)
 				}),
+				q(96612, {	-- Ancient Curiosity: Combat
+					["provider"] = { "i", 274965 },	-- Ancient Curio (QI!/QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
 				q(96615, {	-- Ancient Curiosity: Utility
 					["provider"] = { "i", 274970 },	-- Ancient Curio (QI!/QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
@@ -247,8 +261,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
+				q(97910, {	-- Cracked Keystone
+					["provider"] = { "i", 279012 },	-- Cracked Keystone (QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
 			}),
-			--[[mapped(n(TREASURES, {
+			mapped(n(TREASURES, {
 				o(656489, {	-- Azta'rec Cache
 					["questID"] = 92887,
 					["isWeekly"] = true,
@@ -266,7 +284,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
 					},
 				}),
-			})),--]]
+			})),
 			n(VENDORS, {
 				n(242398, {	-- Naleidea Rivergleam
 					["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },

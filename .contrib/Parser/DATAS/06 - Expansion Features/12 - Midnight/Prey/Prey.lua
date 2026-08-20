@@ -17,6 +17,7 @@ local PREYSEEKER_BOX_SYM = {
 
 local TrapNPCs = {	-- probably a ton of these, it seems unique per target & difficulty
 	247053,	-- Electrified Trap
+	268072,	-- Envenomed Trap
 	247070,	-- Gloomy Trap
 	247071,	-- Shimmering Trap
 	247072,	-- Vicious Trap
@@ -42,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			ach(62383),	-- Gotta Hunt Them All
 			ach(62142),	-- I Didn't Hear No Bell
-			ach(62136),	-- I'm Good At What I Do
+			pvp(ach(62136)),	-- I'm Good At What I Do
 			ach(62137),	-- I'm Not Trapped In Here With You
 			ach(63644, {	-- Kill Me Now
 				["timeline"] = { ADDED_12_1_0 },
@@ -183,6 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
 			ach(63643, {	-- You Guys, Again?
+				["cr"] = 261796,	-- Pack Scout
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 		}),
@@ -292,6 +294,44 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["qg"] = 246231,	-- Astalor Bloodsworn
 				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96466, {	-- Prey: Anguish Island
+				["sourceQuests"] = { 96004 },	-- Prey: A Slithering Threat
+				["qg"] = 246231,	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96474, {	-- Prey: Something for Astalor
+				["sourceQuests"] = { 96466 },	-- Prey: Anguish Island
+				["qg"] = 265267, -- Sanctum Attendant Ethrandil
+				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96525, {	-- Prey: Out of Our Depth
+				["sourceQuests"] = { 96474 },	-- Prey: Something for Astalor
+				["qg"] = 265267, -- Sanctum Attendant Ethrandil
+				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96503, {	-- Prey: A Ghostly Nightmare
+				["sourceQuests"] = { 96525 },	-- Prey: Out of Our Depth
+				["qg"] = 246231,	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96532, {	-- Prey: Attending the Attendant
+				["sourceQuests"] = { 96525 },	-- Prey: Out of Our Depth
+				["qg"] = 246231,	-- Astalor Bloodsworn
+				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(96528, {	-- Prey: Anguish from Beyond
+				["sourceQuests"] = { 96532 },	-- Prey: Attending the Attendant
+				["qg"] = 265529, -- Sanctum Attendant Ethrandil
+				["coord"] = { 57.0, 33.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["isDaily"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = { i(274422) },	-- 100x Ossified Relic
 			}),
 		}),
 		n(QUESTS, sharedData({
@@ -408,10 +448,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			["maps"] = {
 				MAP.MIDNIGHT.THE_COILED_ISLE
 			},
-			["g"] = {
-				i(278572), -- Pale Hexscale (PET!)
-				i(275659), -- Hexflame Reaver (MOUNT!)
-				i(276207), -- Preyhunter's Masquerade
+			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
+			["groups"] = {
+				i(263874),	-- Emerald-Encrusted Amani Ritual Skull (DECOR!)
+				i(275659),	-- Hexflame Reaver (MOUNT!)
+				i(278154),	-- Hooked Net Trap (DECOR!)
+				i(278572),	-- Pale Hexscale (PET!)
+				i(278374),	-- Preyhunter's Fanged Bust (DECOR!)
+				i(276207),	-- Preyhunter's Masquerade (TOY!)
+				i(278378),	-- Preyhunter's Scaled Bust (DECOR!)
 			},
 		}),
 		n(REWARDS, {
@@ -744,6 +789,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93863),	-- Prey Complete - Nightmare #3
 			q(93864),	-- Prey Complete - Nightmare #4
 			q(97115),	-- First Preference Killing of the week
+
+			-- 12.1
+			-- q(98337),	-- Prey completed, Nightmare #1 / 1st per week
+			-- q(98547),	-- Prey completed, Nightmare #1 / 1st per week
+			-- q(98548),	-- Prey completed, Nightmare #2 / 2nd per week
+			-- q(98549),	-- Prey completed, Nightmare #3 / 3rd per week
+			-- I got different HQTs for my first/week and I see reports of different prey targets killed for the same reported HQT
 		})),
 		-- One-Time
 		n(QUESTS, {

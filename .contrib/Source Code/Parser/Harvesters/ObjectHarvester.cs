@@ -56,6 +56,8 @@ namespace ATT
         /// </summary>
         public const string TODO_NAME = "-- TODO";
 
+        private const string EMPTY_DOCUMENT = "EMPTY";
+
         private static bool WowheadShadowban = false;
 
         private static int FailureCount = 0;
@@ -141,17 +143,18 @@ namespace ATT
                 if (e.Message.Contains("(403)"))
                 {
                     WowheadShadowban = true;
+                    return null;
                 }
                 else
                 {
                     FailureCount++;
                     // after a lot of failures, just give up for this session
-                    if (FailureCount > 10)
+                    if (FailureCount > 20)
                     {
                         WowheadShadowban = true;
                     }
                 }
-                return string.Empty;
+                return EMPTY_DOCUMENT;
             }
         }
 
@@ -229,6 +232,10 @@ namespace ATT
                 if (objectData.TryGetValue("model", out object model))
                 {
                     builder.Append(extraIndent).Append("\t\tmodel = ").Append(model).AppendLine(",");
+                }
+                if (objectData.TryGetValue("ignorewowhead", out bool ignore))
+                {
+                    builder.Append(extraIndent).AppendLine("\t\tignorewowhead = true,");
                 }
                 if (objectData.TryGetValue("text", out object localeObj) && localeObj is Dictionary<string, object> locales)
                 {
@@ -329,7 +336,6 @@ namespace ATT
             // If the Object is flagged to skip wowhead
             if (objectData.ContainsKey("ignorewowhead"))
             {
-                objectData["ignorewowhead"] = null;
                 return false;
             }
 
@@ -377,14 +383,21 @@ namespace ATT
                 foreach (string flavor in GameFlavors)
                 {
                     englishDocument = GetDocumentFromWoWHead(objectID, "en", flavor);
-                    if (!string.IsNullOrEmpty(englishDocument))
+                    switch (englishDocument)
                     {
-                        name = ParseNameFromDocument(englishDocument);
-                        if (!string.IsNullOrEmpty(name))
-                        {
-                            gameFlavor = flavor;
+                        case EMPTY_DOCUMENT:
+                            objectData["ignorewowhead"] = true;
                             break;
-                        }
+                        case null:
+                        case "":
+                            break;
+                        default:
+                            name = ParseNameFromDocument(englishDocument);
+                            if (!string.IsNullOrEmpty(name))
+                            {
+                                gameFlavor = flavor;
+                            }
+                            break;
                     }
                 }
 
@@ -447,23 +460,31 @@ namespace ATT
                 {
                     string name = oldValue;
                     string document = GetDocumentFromWoWHead(objectID, locale, gameFlavor);
-                    if (!string.IsNullOrEmpty(document))
+                    switch (document)
                     {
-                        // Attempt to parse the non-english document.
-                        name = ParseNameFromDocument(document);
-                        if (!string.IsNullOrEmpty(name))
-                        {
-                            // don't store the English default for other locales
-                            if (name.StartsWith("[") && name.EndsWith("]"))
+                        case EMPTY_DOCUMENT:
+                            objectData["ignorewowhead"] = true;
+                            break;
+                        case null:
+                        case "":
+                            break;
+                        default:
+                            // Attempt to parse the non-english document.
+                            name = ParseNameFromDocument(document);
+                            if (!string.IsNullOrEmpty(name))
                             {
-                                name = oldValue;
-                            }
+                                // don't store the English default for other locales
+                                if (name.StartsWith("[") && name.EndsWith("]"))
+                                {
+                                    name = oldValue;
+                                }
 
-                            Trace.Write(" text.");
-                            Trace.Write(locale);
-                            Trace.Write(" = ");
-                            Trace.WriteLine(name);
-                        }
+                                Trace.Write(" text.");
+                                Trace.Write(locale);
+                                Trace.Write(" = ");
+                                Trace.WriteLine(name);
+                            }
+                            break;
                     }
 
                     if (name != oldValue)

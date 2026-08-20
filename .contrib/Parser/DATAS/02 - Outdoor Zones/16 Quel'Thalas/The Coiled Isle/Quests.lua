@@ -580,8 +580,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- Following is WoWhead data
 					q(96112, {	-- Maddening Concoction
 						["sourceQuest"] = 96111,	-- Shell of Yourself
-						--["qg"] = 258755,	-- Captain Tokka
-						--["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["qg"] = 258755,	-- Captain Tokka
+						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
 							i(274103),	-- Leathertongue's Backup Stewpot (QI!)
 							i(274090),	-- Resplendent Ectobarb (QI!)
@@ -897,6 +897,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["groups"] = {
 							i(274574),	-- A'pone's Necklace (QI!)
 							i(274575),	-- Pieces of Uha'ne's Necklace (QI!)
+							--
+							iensemble(281226),	-- Arsenal: Scout Team Seven Weapons
 						},
 					}),
 					q(96097, {	-- What the Scouts Saw
@@ -907,7 +909,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 263674,	-- Scrollmaster Ruma
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
-							iensemble(281226),	-- Arsenal: Scout Team Seven Weapons
 							i(281244),	-- Amani Scout's Quiver
 						},
 					}),
@@ -1046,12 +1047,39 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["sourceQuest"] = 97026,	-- Esoteric Ingredients
 				["qg"] = 254599,	-- Ofi the Sly
 				["coord"] = { 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["isDaily"] = true,
 				["groups"] = {
-					i(277985),	-- Mysterious Offering
+					ach(63432, {	-- Mysterious Mix Master
+						i(248962),	-- Mysterious Voodoo Mask (DECOR!)
+					}),
+					-- Ingredients
 					i(276124),	-- Ancient Knucklebone
 					i(276117),	-- Clouded Blood-Pearl
 					i(276126),	-- Serpent's Feather
+					-- Offerings
+					i(277937),	-- Balanced Offering
+					i(277946),	-- Choleric Offering
+					i(277941),	-- Eerie Offering
+					i(277940),	-- Fragile Offering
+					i(277942),	-- Odious Offering
+					i(277945),	-- Melancholic Offering
+					i(277985),	-- Mysterious Offering
+					i(277943),	-- Pestilent Offering
+					i(277944),	-- Phlegmatic Offering
+					i(277938),	-- Virulent Offering
+					i(277939),	-- Volatile Offering
 				},
+				["description"] =
+					"Balanced = 1x Ancient Knucklebone, 1x Serpent's Feather, 1x Clouded Blood-Pearl\n" ..
+					"Choleric = 3x Clouded Blood-Pearl\n" ..
+					"Eerie = 2x Ancient Knucklebone, 1x Serpent's Feather\n" ..
+					"Fragile = 2x Ancient Knucklebone, 1x Clouded Blood-Pearl\n" ..
+					"Odious = 2x Serpent's Feather, 1x Clouded Blood-Pearl\n" ..
+					"Melancholic = 3x Ancient Knucklebone\n" ..
+					"Pestilent = 1x Ancient Knucklebone, 2x Serpent's Feather\n" ..
+					"Phlegmatic = 3x Serpent's Feather\n" ..
+					"Virulent = 1x Serpent's Feather, 2x Clouded Blood-Pearl\n" ..
+					"Volatile = 1x Ancient Knucklebone, 2x Clouded Blood-Pearl",
 			}),
 		}),
 	}),

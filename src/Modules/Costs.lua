@@ -356,11 +356,11 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
 	local total = CostTotals.c[currencyID] or 0
-	-- temporary until currency costs are accurate?
-	-- local owned = CurrencyAmounts[currencyID]
-	local isCost = total > 0 -- owned
+	local owned = CurrencyAmounts[currencyID]
+	local isCost = total > owned
+	local isOwnedCost = (not isCost and total > 0) or nil
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
-	SetCostTotals(costs, isCost, refresh, currencyID)
+	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost)
 end
 local function PlayerIsMissingProviderSpell(spellID)
 	return not IsSpellKnownHelper(spellID)
@@ -708,7 +708,11 @@ app.AddEventHandler("OnLoad", function()
 			local id = reference[reference.key]
 			local currencyCount = CalculateTotalCosts(reference, id)
 			if currencyCount > 0 then
-				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = app.formatNumericWithCommas(currencyCount) }
+				local needed = app.formatNumericWithCommas(currencyCount)
+				if reference.isOwnedCost then
+					needed = app.Modules.Color.Colorize(needed, app.Colors.Time).." |T"..app.asset("known_green")..":0|t"
+				end
+				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = needed }
 			end
 		end
 	})

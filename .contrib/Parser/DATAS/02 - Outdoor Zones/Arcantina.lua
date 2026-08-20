@@ -83,6 +83,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 					i(253544),	-- Weathered History of the Warchiefs (DECOR!)
 				},
 			}),
+			q(95780, {	-- Hope for the Orhpans
+				["qg"] = 259335, -- Vanessa VanCleef
+				["coord"] = { 60.2, 50.1, ARCANTINA },
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = { i(278038) },	-- Arathor Toy Sword (DECOR!)
+			}),
 			q(95779, {	-- Moments in a Mug
 				["qg"] = 259343,	-- Chen Stormstout
 				["coord"] = { 43.2, 61.5, ARCANTINA },
@@ -225,6 +231,12 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["timeline"] = { ADDED_12_1_0 },
 				["groups"] = { i(275047) },	-- Stormstout Brewery Lantern
 			}),
+			o(655007, {	-- Wooden Toy Sword
+				["coord"] = { 74.2, 53.0, SHATTRATH_CITY },
+				["sourceQuest"] = 95780,	-- Hope for the Orhpans
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = { i(275054) },	-- Wooden Toy Sword
+			}),
 		}),
 		n(TREASURES, {	-- Highly Decorated placement Objects
 			o(572450, {	-- Ancient Zandalari Scroll
@@ -283,9 +295,16 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["cost"] = { { "i", 250878, 1 } },	-- Weathered Tome
 				["coord"] = { 62.1, 42.6, ARCANTINA },
 			}),
+			o(655006, {	-- Wooden Toy Sword
+				["questID"] = 95783,
+				["cost"] = { { "i", 275054, 1 } },	-- Wooden Toy Sword
+				["coord"] = { 56.5, 60.2, ARCANTINA },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 		}),
 		n(TREASURES, bubbleDownFiltered({
-			["isDaily"] = true
+			["isDaily"] = true,
+			["timeline"] = { REMOVED_12_1_0 },
 		},FILTERFUNC_questID,{
 			o_repeated({	-- Giant Growth Potion
 				i(6662),	-- Elixir of Giant Growth
@@ -411,6 +430,10 @@ root(ROOTS.Zones, m(ARCANTINA, {
 				["coord"] = { 42.0, 50.1, ARCANTINA },
 				["groups"] = {
 					i(253176, {	-- Ancient Zandalari Ritual Scroll (DECOR!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+					}),
+					i(278038, {	-- Arathor Toy Sword (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(253598, {	-- Banner of the Ebon Blade (DECOR!)

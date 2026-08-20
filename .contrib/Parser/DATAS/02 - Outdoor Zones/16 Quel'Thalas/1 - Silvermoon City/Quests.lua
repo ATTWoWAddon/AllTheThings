@@ -182,6 +182,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- Season 2
 			q(98234, {	-- Week 1 of 3: Gladiator's Distinction
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["groups"] = {
+					i(280097),	-- Venomous Aspirant's Insignia of Alacrity
+					i(280118),	-- Venomous Aspirant's Medallion
+				},
 			}),
 		})),
 		-- Dungeons

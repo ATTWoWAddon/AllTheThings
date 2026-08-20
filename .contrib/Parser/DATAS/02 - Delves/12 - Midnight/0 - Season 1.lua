@@ -153,6 +153,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
@@ -179,6 +180,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584503}, -- Grand Sanctified Spoils
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",618495}, -- Nullaeus Cache
@@ -196,6 +198,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
@@ -222,6 +225,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
@@ -263,6 +267,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{"o",584514}, -- Bountiful Coffer
 							{"o",584518}, -- Bountiful Heavy Trunk
 							{"o",584515}, -- Bountiful Heavy Trunk
+							{"o",584517}, -- Heavy Trunk
 							{"o",584519}, -- Heavy Trunk
 							{"o",581922}, -- Hidden Trove
 							{"o",584511}, -- Nemesis Strongbox
@@ -290,19 +295,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						}},
 						["groups"] = sharedData({
 							["providers"] = {
-								{"o",584514}, -- Bountiful Coffer
-								{"o",584518}, -- Bountiful Heavy Trunk
-								{"o",584515}, -- Bountiful Heavy Trunk
-								{"o",584503}, -- Grand Sanctified Spoils
-								{"o",584519}, -- Heavy Trunk
-								{"o",581922}, -- Hidden Trove
-								{"o",584512}, -- Nemesis Strongbox
-								{"o",584509}, -- Nemesis Strongbox
-								{"o",584508}, -- Nemesis Strongbox
-								{"o",584511}, -- Nemesis Strongbox
-								{"o",618495}, -- Nullaeus Cache
-								{"o",623259}, -- Pilfered Trunk
-								{"o",623258}, -- Pilfered Trunk
+								{ "o", 584514 }, -- Bountiful Coffer
+								{ "o", 584518 }, -- Bountiful Heavy Trunk
+								{ "o", 584515 }, -- Bountiful Heavy Trunk
+								{ "o", 584503 }, -- Grand Sanctified Spoils
+								{ "o", 584519 }, -- Heavy Trunk
+								{ "o", 581922 }, -- Hidden Trove
+								{ "o", 584512 }, -- Nemesis Strongbox
+								{ "o", 584509 }, -- Nemesis Strongbox
+								{ "o", 584508 }, -- Nemesis Strongbox
+								{ "o", 584511 }, -- Nemesis Strongbox
+								{ "o", 618495 }, -- Nullaeus Cache
+								{ "o", 623259 }, -- Pilfered Trunk
+								{ "o", 623258 }, -- Pilfered Trunk
 							},
 						},{
 							i(264878),	-- Astalor's Anguish Agitator
@@ -349,14 +354,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						-- Set
 						i(251884, {	-- Abyss Sabre
 							["providers"] = {
-								{"o",618495}, -- Nullaeus Cache
-								{"o",584518}, -- Bountiful Heavy Trunk
+								{ "o", 618495 }, -- Nullaeus Cache
+								{ "o", 584518 }, -- Bountiful Heavy Trunk
 							},
 						}),
 						i(251885, {	-- Radiant Foil
 							["providers"] = {
-								{"o",584508}, -- Nemesis Strongbox
-								{"o",584518}, -- Bountiful Heavy Trunk (verified)
+								{ "o", 584508 }, -- Nemesis Strongbox
+								{ "o", 584518 }, -- Bountiful Heavy Trunk (verified)
 							},
 						}),
 						-- Basic

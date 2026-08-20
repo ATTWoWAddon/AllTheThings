@@ -44433,8 +44433,8 @@ s(300553,255602,{b=1,bonusID=7532,c={1},f=7,loc=43,lvl=90,pvp=1,u=2}),
 s(300561,255604,{b=1,bonusID=7532,c={1},f=3,lvl=90,pvp=1,u=2})}})}}),
 n(255844,{coords={
 [2393]={{34,80.7}}},pvp=1,u=2,g={
-s(302180,260441,{b=1,bonusID=7532,cost={{"c",1792,100}},f=9,lvl=90,pvp=1,r=1,sourceAchievements={61197},u=2}),
-s(303229,264164,{b=1,bonusID=7532,cost={{"c",1792,100}},f=9,lvl=90,pvp=1,r=2,sourceAchievements={61197},u=2}),
+s(302180,260441,{b=1,bonusID=7532,f=9,lvl=90,pvp=1,r=1,sourceAchievements={61197},u=2}),
+s(303229,264164,{b=1,bonusID=7532,f=9,lvl=90,pvp=1,r=2,sourceAchievements={61197},u=2}),
 s(303890,265630,{bonusID=7532,cost={{"i",137642,10}},f=28,lvl=90,pvp=1,u=2}),
 s(303886,265625,{bonusID=7532,cost={{"i",137642,10}},f=31,lvl=90,pvp=1,u=2}),
 s(303880,265616,{bonusID=7532,cost={{"i",137642,10}},f=32,lvl=90,pvp=1,u=2}),
@@ -45001,8 +45001,8 @@ s(306243,270852,{c={3},f=26,pvp=1})}})}})}}),
 h(-295,{pvp=1,rwp=120200,g={
 n(255844,{coords={
 [2393]={{34,80.7}}},pvp=1,g={
-s(307793,272005,{bonusID=7532,cost={{"c",1792,100}},f=9,pvp=1,r=2,sourceAchievements={62931}}),
-s(307794,272006,{bonusID=7532,cost={{"c",1792,100}},f=9,pvp=1,r=1,sourceAchievements={62931}}),
+s(307793,272005,{bonusID=7532,f=9,pvp=1,r=2,sourceAchievements={62931}}),
+s(307794,272006,{bonusID=7532,f=9,pvp=1,r=1,sourceAchievements={62931}}),
 s(309941,277312,{bonusID=7532,f=21,pvp=1}),
 s(309938,277306,{bonusID=7532,f=28,pvp=1}),
 s(309939,277307,{bonusID=7532,f=23,pvp=1}),

@@ -5240,34 +5240,12 @@ i(128632,{e=14,f=106,spellID=191135}),
 i(17202,{e=14,f=106,spellID=21343}),
 i(128648,{e=14,f=106,spellID=191214})}})}})}}),
 h(-575,{awp=80105,e=393,g={
-h(-46,{e=393,g={
-n(145826,{description="This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",e=393,maps={85},r=1,g={
-s(103303,167183,{e=393,f=10}),
-s(103307,167187,{e=393,f=10}),
-s(103317,167197,{e=393,f=10}),
-s(103310,167190,{e=393,f=10}),
-s(103249,167081,{e=393,f=10}),
-s(103302,167182,{e=393,f=10}),
-s(103306,167186,{e=393,f=10}),
-s(103298,167178,{e=393,f=10}),
-s(103297,167177,{e=393,f=10}),
-s(103299,167179,{e=393,f=10}),
-s(103300,167180,{e=393,f=10}),
-s(103305,167185,{e=393,f=10}),
-s(103312,167192,{e=393,f=10}),
-i(165657,{e=393,f=106,spellID=285357,g={
-title(399,{collectible=false,e=393})}}),
-s(103301,167181,{e=393,f=10}),
-s(103309,167189,{e=393,f=10}),
-s(103311,167191,{e=393,f=10}),
-s(103314,167194,{e=393,f=10}),
-s(103315,167195,{e=393,f=10}),
-s(103304,167184,{e=393,f=10}),
-s(103308,167188,{e=393,f=10}),
-s(103250,167082,{e=393,f=10}),
-s(103316,167196,{e=393,f=10}),
-s(103313,167193,{e=393,f=10})}}),
-n(150942,{description="This NPC wanders around in Stormwind and shoots T-Shirts on the ground where you can pick them up.",e=393,maps={84},r=2,g={
+h(-55,{e=393,g={
+n(145826,{coords={
+[85]={{57.3,52.6},{69.1,33.9}}},description="This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",e=393,r=1}),
+n(150942,{coords={
+[84]={{62.6,30.7},{63.1,41.4}}},description="This NPC wanders around in Stormwind and shoots T-Shirts on the ground where you can pick them up.",e=393,r=2}),
+o(310737,{e=393,providers={{"n",145826},{"n",150942}},g={
 s(103303,167183,{e=393,f=10}),
 s(103307,167187,{e=393,f=10}),
 s(103317,167197,{e=393,f=10}),
@@ -16582,7 +16560,7 @@ ach(41038,{e=242,rwp=110007,u=2}),
 ach(41013,{e=242,questID=85661}),
 ach(40661,{coords={
 [71]={{61.7,50},{61.8,49.9},{61.9,50.1},{62.2,49.6},{62.3,49.3}}},crs={227559},e=242,providers={{"i",224157},{"n",227682}}})}}),
-inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=24,g={
+inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=26,g={
 h(-12,{e=242,g={
 ach(40999,{e=242,g={
 crit(70571,{achID=40999,e=242,id=2,providers={{"n",232243}}}),
@@ -16594,7 +16572,7 @@ h(-45,{e=242,g={
 q(82817,{coords={
 [84]={{56,18.4}},
 [85]={{52.8,82.8}}},e=242,isWeekly=1,lvl=30,qgs={234556},rwp=110007,u=2,g={
-i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
 hqt(84743,{coords={
@@ -16703,11 +16681,11 @@ s(229527,231428,{b=1,e=242,f=23,lvl=22,u=2}),
 s(229522,231422,{b=1,e=242,f=5,loc=46,lvl=22,u=2}),
 s(229538,231441,{b=1,e=242,f=5,loc=43,lvl=22,u=2}),
 n(223881,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(233209,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(224322,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 d(113,{difficulties={17,14,15},e=242,g={
 h(-63,{e=242,g={
 s(229587,231501,{e=242,f=4,loc=43,lvl=80}),
@@ -17392,7 +17370,7 @@ q(82783,{coords={
 [71]={{62.6,50}}},e=242,isWeekly=1,lvl=10,maps={2354},qgs={226368},g={
 ach(40977,{e=242,g={
 crit(70589,{achID=40976,e=242,id=8})}}),
-i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",24},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 cu(1166,{e=242})}})}}),
 h(-56,{e=242,g={
 o(455795,{coords={

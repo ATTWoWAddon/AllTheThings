@@ -14399,7 +14399,8 @@ s(81037,139765,{b=1,c={9},cost=5000000,f=4,loc=40,lvl=45}),
 s(81042,139770,{b=1,c={9},cost=5000000,f=4,loc=43,lvl=45})}})}})}}),
 cl(11,{maps={747,1468},g={
 m(760,{c={11},icon=409547,lore="Malorne's Nightmare is an Emerald Nightmare recreation of a battle on the slopes of Mount Hyjal during the War of the Ancients in which Malorne and the other Wild Gods were slain. It is located in the Rift of Aln. The Archdruid of the Dreamgrove enters this Nightmare, along with several other druids, in order to save Malorne from the Nightmare's grasp."}),
-o(253161,{c={11},description="|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots. When Grove Vine spawns it has a chance for these two pets.|r",g={
+o(253161,{c={11},coords={
+[747]={{45.6,63.5}}},description="|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots. When Grove Vine spawns it has a chance for these two pets.|r",g={
 i(139554,{b=1,c={11},f=55,spellID=220679,g={
 artifact(62,{c={11}})}}),
 p(1777,{b=1,c={11},itemID=129362,npcID=98463,spellID=193943}),
@@ -23988,7 +23989,8 @@ q(58818,{altQuests={58817,58825,58826},coords={
 [1527]={{55.6,35.3}}},description="Can appear during Aqir invasions in Uldum.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58813}}),
 q(58825,{altQuests={58817,58818,58826},coords={
 [1527]={{55.6,35.3}}},description="Can appear during Mantid invasions in the Vale of Eternal Blossoms.",DisablePartySync=1,lvl=50,qgs={161738},sourceQuests={58813},g={
-i(175022)}}),
+o(343668,{
+i(175022)})}}),
 q(58858,{coords={
 [1527]={{55.6,35.3}}},isDaily=1,lvl=50,qgs={161738},sourceQuests={58813},g={
 i(175016,{spellID=318180})}}),
@@ -39962,7 +39964,7 @@ mm(238837,{awp=110105,b=1,questID=86198}),
 mm(235695,{awp=110200,b=1,questID=82189}),
 mm(224769,{b=1,questID=82183}),
 mm(235687,{awp=110100,b=1,questID=82180}),
-mm(235692,{awp=110200,b=1,questID=82177}),
+mm(235692,{awp=110200,b=1,providers={{"i",223510}},questID=82177}),
 mm(235683,{awp=110100,b=1,questID=82173}),
 mm(225542,{b=1,questID=83308}),
 mm(224768,{b=1,questID=82171}),
@@ -41975,7 +41977,8 @@ h(-31,{u=2,g={
 faction(2764,{u=2})}})}}),
 h(-766,{awp=120100,rwp=120200,g={
 h(-12,{
-ach(63611)}),
+ach(63611,{
+title(792)})}),
 h(-29,{symselector=14,g={
 h(-88,{
 flt(3,{
@@ -42155,7 +42158,7 @@ crit(106001,{achID=62383,id=30,providers={{"n",247908}}}),
 crit(112688,{achID=62351,id=1})}),
 ach(62142,{providers={{"s",1260432}},g={
 crit(112617,{achID=62351,id=4})}}),
-ach(62136),
+ach(62136,{pvp=1}),
 ach(62137,{providers={{"n",260848}}}),
 ach(63644,{awp=120100,providers={{"n",261820}}}),
 ach(62140,{
@@ -42408,7 +42411,7 @@ crit(115706,{achID=63451,id=1,providers={{"n",268645}}}),
 crit(115707,{achID=63451,id=2,providers={{"n",268646}}})}}),
 ach(63416,{awp=120100,providers={{"n",268647}}}),
 ach(62134),
-ach(62143,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},providers={{"s",1242005}},g={
+ach(62143,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082,268072},providers={{"s",1242005}},g={
 crit(112616,{achID=62351,id=3})}}),
 ach(62138,{providers={{"n",260848}},g={
 crit(112620,{achID=62351,id=7})}}),
@@ -42416,7 +42419,7 @@ ach(63643,{awp=120100,providers={{"n",270900}}})}),
 h(-29,{symselector=15,g={
 flt(50,{
 i(269005,{f=55}),
-i(255825,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082},f=55,spellID=1259472})}),
+i(255825,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082,268072},f=55,spellID=1259472})}),
 flt(56,{
 i(251283)}),
 i(269006,{f=55}),
@@ -42454,6 +42457,18 @@ q(91277,{coords={
 [2393]={{56.7,65.4}}},isWeekly=1,lvl=90,minReputation={2764,10},qgs={246231}}),
 q(96004,{awp=120100,coords={
 [2393]={{56.7,65.4}}},qgs={246231}}),
+q(96466,{awp=120100,coords={
+[2393]={{56.7,65.4}}},qgs={246231},sourceQuests={96004}}),
+q(96474,{awp=120100,coords={
+[2512]={{58.2,48.7}}},qgs={265267},sourceQuests={96466}}),
+q(96525,{awp=120100,coords={
+[2512]={{58.2,48.7}}},qgs={265267},sourceQuests={96474}}),
+q(96503,{awp=120100,coords={
+[2393]={{56.7,65.4}}},qgs={246231},sourceQuests={96525}}),
+q(96532,{awp=120100,coords={
+[2393]={{56.7,65.4}}},qgs={246231},sourceQuests={96525}}),
+q(96528,{awp=120100,coords={
+[2512]={{57,33.3}}},qgs={265529},sourceQuests={96532}}),
 q(95023,{awp=120100,coords={
 [2393]={{56.8,65.3}}},isWeekly=1,maxReputation={2808,10},qgs={245824}}),
 q(91114,{coords={
@@ -42642,9 +42657,9 @@ q(91228,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}}),
 q(91229,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}})}),
-n(258928,{awp=120100,description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",g={
-p(5126,{awp=120001,itemID=278572,npcID=269712,spellID=1305199}),
+n(258928,{awp=120100,cost={{"i",274422,1}},description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",maps={2512},g={
 mnt(1297407,{awp=120001,itemID=275659}),
+p(5126,{awp=120001,itemID=278572,npcID=269712,spellID=1305199}),
 toy(276207,{awp=120001})}}),
 h(-47,{
 cu(3392)}),
@@ -42890,7 +42905,6 @@ crit(115763,{achID=62901,id=34,providers={{"n",267651}}}),
 crit(115764,{achID=62901,id=35,providers={{"n",267664}}}),
 crit(115268,{achID=63264,id=2})}),
 ach(62887,{
-crit(115114,{achID=62887,id=14,questID=95402}),
 crit(115267,{achID=63264,id=1})}),
 ach(63383,{
 crit(115476,{achID=62873,id=1}),
@@ -43296,7 +43310,6 @@ crit(115270,{achID=63264,id=4})}),
 ach(62881,{
 crit(115480,{achID=62873,id=5})}),
 ach(62880,{
-crit(113984,{achID=62880,id=4,questID=95402}),
 crit(115481,{achID=62873,id=6})})}),
 h(-761,{
 fp(3267,{coords={
@@ -43474,6 +43487,10 @@ q(95404,{coords={
 [2599]={{56,49.6}}},isWorldQuest=1,g={
 crit(113982,{achID=62880,id=2}),
 crit(115112,{achID=62887,id=12})}}),
+q(95402,{coords={
+[2599]={{41.6,73.5}}},isWorldQuest=1,g={
+crit(113984,{achID=62880,id=4}),
+crit(115114,{achID=62887,id=14})}}),
 q(96400,{coords={
 [2621]={{68.6,22.2}}},isWorldQuest=1,g={
 crit(113981,{achID=62880,id=1}),

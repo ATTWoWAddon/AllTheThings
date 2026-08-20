@@ -4,7 +4,6 @@
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	n(ZONE_REWARDS, {
-		-- * Means not confirmed fully
 		currency(VOIDLIGHT_MARL),
 		n(ARMOR, {
 			filter(BACK_F, {
@@ -81,28 +80,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 		}),
 		n(WEAPONS, {
-			i(256989),	-- Bladed Rootwarden's Stave*
-			i(259356),	-- Bloomweaver's Pierce*
-			i(259349),	-- Blossoming Rootwarden's Focus*
+			i(256989),	-- Bladed Rootwarden's Stave
+			i(259356),	-- Bloomweaver's Pierce
+			i(259349),	-- Blossoming Rootwarden's Focus
 			i(257016),	-- Deep Forest Hacker
-			i(257009),	-- Deep Hunter's Arc*
-			i(259355),	-- Deep Hunter's Repeater*
-			i(257010),	-- Flourishing Vinescythe*
+			i(257009),	-- Deep Hunter's Arc
+			i(259355),	-- Deep Hunter's Repeater
+			i(257010),	-- Flourishing Vinescythe
 			i(256987),	-- Ironvine Bulwark
-			i(256988),	-- Lumenbloom Lantern*
-			i(257014),	-- Lumenbloom Scepter*
-			i(256992),	-- Razorvine Cudgel*
-			i(257012),	-- Rootwarden's Spellblade*
-			i(257008),	-- Splinterthorn Spear*
-			i(257007),	-- Tanglevine Spellfocus*
+			i(256988),	-- Lumenbloom Lantern
+			i(257014),	-- Lumenbloom Scepter
+			i(256992),	-- Razorvine Cudgel
+			i(257012),	-- Rootwarden's Spellblade
+			i(257008),	-- Splinterthorn Spear
+			i(257007),	-- Tanglevine Spellfocus
 			i(257011),	-- Thornwood Slasher
-			i(259358),	-- Underbrush-Clearing Cleaver*
-			i(259352),	-- Verdant Speaker's Grasp*
+			i(259358),	-- Underbrush-Clearing Cleaver
+			i(259352),	-- Verdant Speaker's Grasp
 			i(256990),	-- Verdant Tracker's Edge
-			i(256993),	-- Verdant Tracker's Spike*
-			i(257006),	-- Vine-Rending Claymore*
-			i(257015),	-- Vinebound Shank*
-			i(259351),	-- Vinewoven Fangs*
+			i(256993),	-- Verdant Tracker's Spike
+			i(257006),	-- Vine-Rending Claymore
+			i(257015),	-- Vinebound Shank
+			i(259351),	-- Vinewoven Fangs
 			i(256991),	-- Vinewrapped Mallet
 			i(257013),	-- Viridescent Crusher
 		}),
@@ -113,6 +112,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 		i(260193, {	-- Fabled Veteran's Cache (Season 1)
 			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+		}),
+		i(279520, {	-- Fabled Veteran's Cache (Season 2)
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 			["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 		}),
 	}),

@@ -199,8 +199,6 @@ RaceIDs[ZANDALARI].faction = horde
 -- Represents the mapID used by the game to show FlightPaths at a Flight Master
 -- Missing ones will be reported in chat by ATT when 'Debugging' is set
 local FlightPathMapIDs = {};
-ExportDB._Compressed.FlightPathDB = true
-ExportDB.FlightPathDB = {FlightPathMapIDs = FlightPathMapIDs}
 for i,mapID in ipairs({
 	-- #if ANYCLASSIC
 	KALIMDOR,
@@ -307,4 +305,6 @@ for i,mapID in ipairs({
 	-- #endif
 })
 do table.insert(FlightPathMapIDs, mapID); end
+ExportDB._Compressed.FlightPathDB = true
+ExportDB.FlightPathDB = {FlightPathMapIDs = FlightPathMapIDs}
 end

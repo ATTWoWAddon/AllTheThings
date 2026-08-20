@@ -5,15 +5,6 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(STORMSONG_VALLEY, {
 		n(ZONE_DROPS, {
-			i(161344, {	-- Abyssal Fragment
-				["description"] = "These are a World Drop in any zone and can be bought from the Auction House. Once you collect 20, combine them and use them on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley.",
-				["groups"] = {
-					i(161479, {	-- Nazjatar Blood Serpent (MOUNT!)
-						["coord"] = { 73.5, 23.6, STORMSONG_VALLEY },
-						["crs"] = { 140474 },	-- Adherent of the Abyss
-					}),
-				},
-			}),
 			i(163699, {	-- Annealed Honey Amulet
 				["coord"] = { 69.2, 68.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
@@ -84,19 +75,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(159198),	-- Brineworks Vambraces
 			i(159192),	-- Brineworks Gauntlets
 			i(159193),	-- Brineworks Girdle
-		}),
-	}),
-})));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
-	m(KUL_TIRAS, {
-		m(STORMSONG_VALLEY, {
-			n(QUESTS, {
-				-- HQTs for Nazjatar Blood Serpent - TODO: Move the mount with these questIDs into the secrets?
-				q(53428),	-- Using 'Abhorrent Essence of the Abyss' (itemID 161345), 'Offer Abhorrent Essence' (spellID 277122))
-				-- q(53429),	-- Killing 'Adherent of the Abyss' (npcID 140474) / Looting Nazjatar Blood Serpent
-				q(53477),	-- Using 'Aether of the Abyss' (itemID 163929), 'Absorbing' (spellID 280636)
-			}),
 		}),
 	}),
 })));

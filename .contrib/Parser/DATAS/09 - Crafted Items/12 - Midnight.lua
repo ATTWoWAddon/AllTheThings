@@ -1119,6 +1119,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 			i(260942),	-- Bubbly Snapling (PET!)
 		}),
 		filter(COSMETIC, {
+			i(274805, { ["timeline"] = { ADDED_12_1_0 } }),	-- Envenomed Chopper (COSMETIC!)
+			i(274801, { ["timeline"] = { ADDED_12_1_0 } }),	-- Envenomed Snakefang (COSMETIC!)
 			i(266393),	-- Farstrider's Gilded Bow (COSMETIC!)
 			i(266396),	-- Farstrider's Solemn Bow (COSMETIC!)
 			i(260905),	-- Lost Blade of Spacial Descent (COSMETIC!)
@@ -1242,51 +1244,52 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(238494),	-- Another's Treasure
 		i(238371),	-- Arcane Wyrmfish
 		i(243302),	-- Aquarius Bloom
-		i(274593, {["timeline"] = { ADDED_12_1_0 }}),	-- Blightswarmer
+		i(279207, { ["timeline"] = { ADDED_12_1_0 } }),	-- Blackened Sludgefish
+		i(274593, { ["timeline"] = { ADDED_12_1_0 } }),	-- Blightswarmer
 		i(238377),	-- Blood Hunter
 		i(241147),	-- Blood Hunter Lure
 		i(243342),	-- Bloom Bauble
 		i(238369),	-- Bloomtail Minnow
-		i(274591, {["timeline"] = { ADDED_12_1_0 }}),	-- Coiled Stargorger
-		i(241151, {["timeline"] = { ADDED_12_1_0 }}),	-- Coiled Stargorger Lure
+		i(274591, { ["timeline"] = { ADDED_12_1_0 } }),	-- Coiled Stargorger
+		i(241151, { ["timeline"] = { ADDED_12_1_0 } }),	-- Coiled Stargorger Lure
 		i(238489),	-- Definitely Not a Rock
-		i(274592, {["timeline"] = { ADDED_12_1_0 }}),	-- Dirty Darter
+		i(274592, { ["timeline"] = { ADDED_12_1_0 } }),	-- Dirty Darter
 		i(262787),	-- Dredged Journal Entry
 		i(238383),	-- Eversong Trout
 		i(238375),	-- Fungalskin Pike
-		i(279093, {["timeline"] = { ADDED_12_1_0 }}),	-- Giggling Skull
+		i(279093, { ["timeline"] = { ADDED_12_1_0 } }),	-- Giggling Skull
 		i(238382),	-- Gore Guppy
-		i(279094, {["timeline"] = { ADDED_12_1_0 }}),	-- Grotesque Sturgeon
+		i(279094, { ["timeline"] = { ADDED_12_1_0 } }),	-- Grotesque Sturgeon
 		i(238381),	-- Hollow Grouper
 		i(263938),	-- Idol of Peril (QS!)
-		i(279106, {["timeline"] = { ADDED_12_1_0 }}),	-- Loathsome Anglerfish
+		i(279106, { ["timeline"] = { ADDED_12_1_0 } }),	-- Loathsome Anglerfish
 		i(238376),	-- Lucky Loa
 		i(238366),	-- Lynxfish
-		i(279100, {["timeline"] = { ADDED_12_1_0 }}),	-- Many-Eyed Flounder
+		i(279100, { ["timeline"] = { ADDED_12_1_0 } }),	-- Many-Eyed Flounder
 		i(238380),	-- Null Voidfish
 		i(238373),	-- Ominous Octopus
 		i(241149),	-- Ominous Octopus Lure
-		i(279091, {["timeline"] = { ADDED_12_1_0 }}),	-- Oozing Goby
-		i(262651, {["timeline"] = { ADDED_12_0_5 }}),	-- Pointed Spikesnail
-		i(274594, {["timeline"] = { ADDED_12_1_0 }}),	-- Polluted Puffer
-		i(278848, {["timeline"] = { ADDED_12_1_0 }}),	-- Pustulent Blightswarmer
+		i(279091, { ["timeline"] = { ADDED_12_1_0 } }),	-- Oozing Goby
+		i(262651, { ["timeline"] = { ADDED_12_0_5 } }),	-- Pointed Spikesnail
+		i(274594, { ["timeline"] = { ADDED_12_1_0 } }),	-- Polluted Puffer
+		i(278848, { ["timeline"] = { ADDED_12_1_0 } }),	-- Pustulent Blightswarmer
 		i(238372),	-- Restored Songfish
 		i(238367),	-- Root Crab
 		i(238378),	-- Shimmersiren
 		i(238370),	-- Shimmer Spinefish
 		i(238365),	-- Sin'dorei Swarmer
-		i(274587, {["timeline"] = { ADDED_12_1_0 }}),	-- Spotted Killifish
-		i(274590, {["timeline"] = { ADDED_12_1_0 }}),	-- Sulfurous Sludgefish
+		i(274587, { ["timeline"] = { ADDED_12_1_0 } }),	-- Spotted Killifish
+		i(274590, { ["timeline"] = { ADDED_12_1_0 } }),	-- Sulfurous Sludgefish
 		i(238384),	-- Sunwell Fish
 		i(238374),	-- Tender Lumifin
-		i(275013, {["timeline"] = { ADDED_12_1_0 }}),	-- Tokka's Multi-Ward
-		i(274588, {["timeline"] = { ADDED_12_1_0 }}),	-- Toxic Tlhapi
-		i(279105, {["timeline"] = { ADDED_12_1_0 }}),	-- Twin-Headed Snipefish
+		i(275013, { ["timeline"] = { ADDED_12_1_0 } }),	-- Tokka's Multi-Ward
+		i(274588, { ["timeline"] = { ADDED_12_1_0 } }),	-- Toxic Tlhapi
+		i(279105, { ["timeline"] = { ADDED_12_1_0 } }),	-- Twin-Headed Snipefish
 		i(238368),	-- Twisted Tetra
-		i(274589, {["timeline"] = { ADDED_12_1_0 }}),	-- Ula'tek Snakehead
-		i(277821, {["timeline"] = { ADDED_12_1_0 }}),	-- Ula'tek Snakehead Lure
+		i(274589, { ["timeline"] = { ADDED_12_1_0 } }),	-- Ula'tek Snakehead
+		i(277821, { ["timeline"] = { ADDED_12_1_0 } }),	-- Ula'tek Snakehead Lure
 		i(238379),	-- Warping Wise
-		i(262650, {["timeline"] = { ADDED_12_0_5 }}),	-- Writhing Wiggleworm
+		i(262650, { ["timeline"] = { ADDED_12_0_5 } }),	-- Writhing Wiggleworm
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
@@ -2469,9 +2472,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(95459, name(HEADERS.NPC, 256770)),	-- Skinning Bilemaw the Gluttonous
 			q(93638, name(HEADERS.NPC, 249844)),	-- Skinning Chironex
 			q(93633, name(HEADERS.NPC, 255348)),	-- Skinning Dame Bloodshed
+			q(97415, name(HEADERS.NPC, 261142), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Destra
 			q(88545, name(HEADERS.NPC, 245688)),	-- Skinning Gloomclaw
 			q(95517, name(HEADERS.NPC, 249849)),	-- Skinning Ha'kalawe
 			q(93632, name(HEADERS.NPC, 246633)),	-- Skinning Harried Hawkstrider
+			q(97417, name(HEADERS.NPC, 265262), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Hisstara <The Raiser>
+			q(97419, name(HEADERS.NPC, 265237), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Lockjaw <The Snapper>
 			q(88531, name(HEADERS.NPC, 245690)),	-- Skinning Lumenfin
 			q(88524, name(HEADERS.NPC, 247101)),	-- Skinning Netherscythe
 			q(93634, name(HEADERS.NPC, 242032)),	-- Skinning Oophaga
@@ -2482,8 +2488,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(95519, name(HEADERS.NPC, 248741)),	-- Skinning Rhazul
 			q(95515, name(HEADERS.NPC, 256922)),	-- Skinning Screammaxa the Matriarch
 			q(95518, name(HEADERS.NPC, 250180)),	-- Skinning Serrasa
+			q(97437, name(HEADERS.NPC, 268049), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Siltmouth
 			q(88526, name(HEADERS.NPC, 245699)),	-- Skinning Silverscale
 			q(95470, name(HEADERS.NPC, 242031)),	-- Skinning Spinefrill
+			q(97416, name(HEADERS.NPC, 261109), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Sss'alik
 			q(95446, name(HEADERS.NPC, 250876)),	-- Skinning Terrinor
 			q(93637, name(HEADERS.NPC, 242033)),	-- Skinning Tiny Vermin
 			q(93639, name(HEADERS.NPC, 238498)),	-- Skinning Territorial Voidscythe
@@ -2491,6 +2499,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(95471, name(HEADERS.NPC, 242035)),	-- Skinning The Devouring Invader
 			q(93636, name(HEADERS.NPC, 242024)),	-- Skinning The Snapping Scourge
 			q(88532, name(HEADERS.NPC, 247096)),	-- Skinning Umbrafang
+			q(98364, name(HEADERS.NPC, 255927), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Venom Lancer Ori'kassi
 		})),
 		prof(TAILORING, {
 			q(89422),	-- 0/20 Arcanoweave Expertise

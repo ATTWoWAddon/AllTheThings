@@ -296,6 +296,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
+				i(279522, {	-- Surplus Bag of Party Favors (Season 2)
+					["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
 			}),
 			n(VENDORS, {
 				n(242723, {	-- Apprentice Diell <Magister Vendor>

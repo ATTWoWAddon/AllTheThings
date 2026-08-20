@@ -31,6 +31,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				o(571345),	-- [Netherstorm]
 				o(572094),	-- [Nagrand]
 				o(572129),	-- [Shadowmoon Valley]
+				o(572785),	-- [Isle of Quel Danas]
 				o(572869),	-- [Eversong Woods/Ghostlands]
 				o(572995),	-- [Ghostlands]
 				-- Drops

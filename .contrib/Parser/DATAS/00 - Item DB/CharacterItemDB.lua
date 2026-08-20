@@ -1047,7 +1047,7 @@ iq(262742, 93805);					-- "Swift" Kit
 ------------------
 -- PATCH 12.1.0 --
 ------------------
-ihqt(275986, 96976);				-- Delver's Cosmetic Surprise Bag
+ihqt(275986);						-- Delver's Cosmetic Surprise Bag
 ihqt(275978, 96975);				-- Delver's Starter Kit
 ihqt(274500, 96459);				-- Demystifyin': Alchemy
 ihqt(274515, 96511);				-- Demystifyin': Blacksmithing

@@ -9,22 +9,16 @@ root(ROOTS.Unsorted, {
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
-			i(244344),	-- Griftah's Mystical Polter-Urn
 			i(247776),	-- Glowing Zangarshroom Cup
-			i(248404),	-- Stack of Kafa Mugs
-			i(249219),	-- Ouroboric Curse
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
-			i(260419),	-- Cursed Zandalari Coin
 			i(260420),	-- Swamp Apple
 			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
-			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
-			i(263875),	-- Griftah's Resizing Hex-Skull
 			i(264162),	-- Enchanted Snowflake
 			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
@@ -61,14 +55,11 @@ root(ROOTS.Unsorted, {
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
-			i(271132),	-- Essence Trap
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
 			i(271434),	-- Venom Rite Mantle
-			i(271435),	-- Slippers of the Hissing Cult
 			i(271436),	-- Slitherscale Girdle
-			i(271438),	-- Temple Delver's Mystic Helm
 			i(271440),	-- Greaves of the Noxious Depths
 			i(271441),	-- Crushing Coiler Coif
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
@@ -77,9 +68,6 @@ root(ROOTS.Unsorted, {
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
 			i(271693),	-- Congealed Venom
-			i(271717),	-- Cup of Kafa
-			i(271863),	-- Ophidian Bile
-			i(271864),	-- Rotten Pneuma
 			i(271865),	-- Scavenged Weapon
 			i(271866),	-- Well-Worn Hatchet
 			i(271867),	-- Venom-Etched Sword
@@ -115,9 +103,6 @@ root(ROOTS.Unsorted, {
 			i(274459),	-- Squirky
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274499),	-- Toxiferous Transfusion
-			i(274579),	-- Undamaged Trap Needle
-			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
 			i(274707),	-- Crystallized Venomblight Manaflux
 			i(274713),	-- Cache of Amani Treasures
@@ -127,10 +112,8 @@ root(ROOTS.Unsorted, {
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin
 			i(274788),	-- Seaside Depths Porthole
-			i(274801),	-- Envenomed Snakefang
 			i(274803),	-- Envenomed Trollsplitter
 			i(274804),	-- Envenomed Elfcleaver
-			i(274805),	-- Envenomed Chopper
 			i(274806),	-- Envenomed Gut-Puncher
 			i(274807),	-- Envenomed Ritualizer
 			i(274808),	-- Envenomed Umbral Claymore
@@ -152,7 +135,6 @@ root(ROOTS.Unsorted, {
 			i(274991),	-- Seaside Fire Pit
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275053),	-- Kobold Candle Collection
-			i(275054),	-- Wooden Toy Sword
 			i(275062),	-- Illusion: Venomcoil
 			i(275063),	-- [PH] Taretha Axe - Black
 			i(275064),	-- [PH] Taretha Axe - Blue
@@ -169,16 +151,12 @@ root(ROOTS.Unsorted, {
 			i(275274),	-- Alchemy
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
-			i(275285),	-- Malleable Root
-			i(275287),	-- Cellular Slab
 			i(276883),	-- A Message From Kul'amara
 			i(276905),	-- Beginning Fragment of Ulantu's Log
 			i(276912),	-- Middle Fragment of Ulantu's Log
 			i(276914),	-- End Fragment of Ulantu's Log
 			i(277525),	-- Ulantu's Belongings
-			i(278374),	-- Preyhunter's Fanged Bust
 			i(279574),	-- Preyhunter's Hero Chest
-			i(278378),	-- Preyhunter's Scaled Bust
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
 			i(275571),	-- [PH] Broomstick Spice - Grey
@@ -191,14 +169,7 @@ root(ROOTS.Unsorted, {
 			i(275825),	-- Ula'tek's Sssacrificial Rain
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
-			i(276164),	-- Corroded Patagia
-			i(276186),	-- Totally Not Stolen Powder
-			i(276198),	-- Shellman's 195
-			i(276205),	-- Legitimate Shipment of Swivel Guns
-			i(276206),	-- Leagally Sourced Cannon Shot
 			i(276234),	-- Vibrant Venomfang
-			i(276297),	-- Rustbolt Jetpack
-			i(276312),	-- Griftah's Torch of Rotation
 			i(276405),	-- [PH] Rainbow Axe - 1h - Blue
 			i(276406),	-- [PH] Rainbow Axe - 1h - Green
 			i(276407),	-- [PH] Rainbow Axe - 1h - Purple
@@ -278,26 +249,10 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277847),	-- Unbroken Trap Hinge
-			i(277848),	-- Untouched Crab Lure
-			i(277849),	-- Mushed Crab
-			i(277937),	-- Balanced Offering
-			i(277938),	-- Virulent Offering
-			i(277939),	-- Volatile Offering
-			i(277940),	-- Fragile Offering
-			i(277941),	-- Eerie Offering
-			i(277942),	-- Odious Offering
-			i(277943),	-- Pestilent Offering
-			i(277944),	-- Phlegmatic Offering
-			i(277945),	-- Melancholic Offering
-			i(277946),	-- Choleric Offering
 			i(277955),	-- Ethereal Bead Strand
 			i(277990),	-- Cursemail Gauntlets
-			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
-			i(278048),	-- Corrosive Relic
 			i(278050),	-- Corrosive Bijou
-			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
 			i(278100),	-- Grain
 			i(278106),	-- DNT Coiled Color Changer
@@ -307,9 +262,7 @@ root(ROOTS.Unsorted, {
 			i(278113),	-- DNT Ula'tek Pole Dummy D
 			i(278114),	-- DNT Ula'tek Pole Dummy E
 			i(278115),	-- DNT Ula'tek Pole Dummy F
-			i(278154),	-- Hooked Net Trap
 			i(278193),	-- Aqiri Mandible
-			i(278276),	-- Spoils of Azta'rec
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
 			i(278285),	-- Nebulous Voidcache: Soulcoiler Nek'zali
@@ -322,12 +275,6 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
-			i(278374),	-- Preyhunter's Fanged Bust
-			i(278378),	-- Preyhunter's Scaled Bust
-			i(278517),	-- Lost Med'jai Amulet
-			i(278523),	-- Feather of Tok'jara
-			i(278534),	-- Eye of Szarith
-			i(278536),	-- Mummified Lynx's Paw
 			i(278573),	-- Crested Burnished Leafmimic
 			i(278574),	-- Crested Aqua Leafmimic
 			i(278575),	-- Crested Verdant Leafmimic
@@ -441,12 +388,10 @@ root(ROOTS.Unsorted, {
 			i(278874),	-- Lil' Dark Armageddon
 			i(278875),	-- Lil' Green Armageddon
 			i(278876),	-- Lil' Red Armageddon
-			i(278982),	-- Hatchery of Hissing Eggs
 			i(278993),	-- Big Blue Armageddon
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon
 			i(279002),	-- Big Red Armageddon
-			i(279012),	-- Cracked Keystone
 			i(279013),	-- [ph] SpiceWitch Chest - Blue
 			i(279014),	-- [ph] SpiceWitch Feet - Blue
 			i(279015),	-- [ph] SpiceWitch Waist - Blue
@@ -512,12 +457,9 @@ root(ROOTS.Unsorted, {
 			i(279145),	-- Vial of Venom
 			i(279146),	-- Lopped Rattle
 			i(279147),	-- Unrecognizable bone
-			i(279148),	-- Strip of Snake Hide
 			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
 			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
-			i(279152),	-- Intact Snake Head
-			i(279154),	-- Large Leaf
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
 			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
 			i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)
@@ -528,10 +470,8 @@ root(ROOTS.Unsorted, {
 			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
-			i(279207),	-- Blackened Sludgefish
 			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
-			i(279290),	-- Fang Lover's
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
@@ -555,7 +495,6 @@ root(ROOTS.Unsorted, {
 			i(279443),	-- Aquatic Gloomcap
 			i(279444),	-- Snowy Gloomcap
 			i(279445),	-- Sunny Gloomcap
-			i(279449),	-- Hex Troll Mask Fragment
 			i(279455),	-- K'areshi Tea Cup
 			i(279458),	-- Rock Goblet
 			i(279475),	-- Mutagenitor's Feather
@@ -564,10 +503,7 @@ root(ROOTS.Unsorted, {
 			i(279478),	-- Ori'kassi's Barbed Tail
 			i(279479),	-- Leviathan's Eye
 			i(279483),	-- Three-Eyed Fish
-			i(279520),	-- Fabled Veteran's Cache
-			i(279522),	-- Surplus Bag of Party Favors
 			i(279524),	-- Brewer's Purple Kilt
-			i(279526),	-- Victorious Stormarion Pinnacle Cache
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
 			i(279531),	-- Brewer's Purple Beret
@@ -582,7 +518,6 @@ root(ROOTS.Unsorted, {
 			i(279547),	-- Junkyard Crafter's Vest
 			i(279548),	-- Villager's Labor Vest
 			i(279549),	-- Witch-Hunter's Undercoat
-			i(279550),	-- Potion of Venomous Return
 			i(279551),	-- Radical's Gilded Vestment
 			i(279579),	-- Cruel Warrior's Blade
 			i(279590),	-- Venomous Champion's Illustrious Banner
@@ -605,12 +540,8 @@ root(ROOTS.Unsorted, {
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
 			i(280007),	-- Mask Fragment
-			i(280047),	-- Feathered Bell
 			i(280089),	-- Mask Fragment
 			i(280090),	-- Mask Fragment
-			i(280097),	-- Venomous Aspirant's Insignia of Alacrity
-			i(280118),	-- Venomous Aspirant's Medallion
-			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
 			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent
@@ -643,13 +574,10 @@ root(ROOTS.Unsorted, {
 			i(280275),	-- Hanging Longwick Rope
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
-			i(252042),	-- Purified Troll Pitcher
 			i(253396),	-- Purified Crude Axe
-			i(253703),	-- Purified Crude Hammer
 			i(255652),	-- Purified Troll Loop
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
-			i(278701),	-- Purified Goblin Cup
 			i(280305),	-- Soulcoil Remnant
 			i(280333),	-- Pirate's Eyepatch
 			i(280335),	-- Brewfest Crate
@@ -659,14 +587,12 @@ root(ROOTS.Unsorted, {
 			i(280343),	-- Hanging Brewfest Wreath
 			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
-			i(274422),	-- Ossified Relic
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
-			i(281227),	-- Soulcoiler's Rush'kah
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(278397),	-- Ephemeral Star Ooze
 			i(280846),	-- Beguiling Memories of the Sea
@@ -1137,7 +1063,6 @@ root(ROOTS.Unsorted, {
 				i(272893),	-- Icy Harness
 				i(259472),	-- Lost Revantusk Possessions
 				i(267381),	-- Official G.G.R. Rehydration Container
-				i(273013),	-- Void-Permeated Hide Scrap
 				i(267380),	-- Volatile Pink Brightbursts
 				i(260892),	-- "Arcane Ranger" Kit
 				i(262757),	-- "Greater Metamorph" Enhancement
@@ -2168,7 +2093,6 @@ root(ROOTS.Unsorted, {
 				i(163773),	-- Dark Mirror
 				i(163774),	-- Blackrock Plating
 				i(163830),	-- Gale Rider
-				i(163929),	-- Aether of the Abyss
 				i(164253),	-- Steel Strongbox
 				i(164254),	-- Steel Strongbox
 				i(164263),	-- Steel Strongbox
@@ -2196,7 +2120,6 @@ root(ROOTS.Unsorted, {
 				i(161017),	-- Secott's Storm Silver Bucket
 				i(161084),	-- Recovered Stormsong Produce
 				i(161324),	-- Zeth'jir Tidespear
-				i(161345),	-- Abhorrent Essence of the Abyss
 				i(161878),	-- Tiny Coin Purse
 			}),
 			filter(MISC, {	-- Grey

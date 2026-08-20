@@ -1002,16 +1002,17 @@ i(0, 1226186);		-- Wise Tails
 --- ITEM ---
 i(263473, 1259660);	-- Flora Frenzy
 --- NYI ---
+i(251630, 0);		-- Recipe: Amani Cornucopia
 i(258490, 0);		-- Recipe: Argentleaf Tea
 
 ------------------
 -- PATCH 12.1.0 --
 ------------------
 --- TRAINER ---
+i(0, 1295534);		-- Amani Cornucopia
 i(0, 1296450);		-- Plant Protein
 i(0, 1296449);		-- Practically Pork
 --- ITEM ---
-i(251630, 1295534);	-- Amani Cornucopia
 i(275301, 1295777);	-- Feast of Knowledge
 i(275300, 1295776);	-- Loa's Gathering
 i(278332, 1296418);	-- Puffer Plate

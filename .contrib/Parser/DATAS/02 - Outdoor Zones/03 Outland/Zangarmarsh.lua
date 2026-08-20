@@ -485,7 +485,10 @@ root(ROOTS.Zones, {
 									{ "i",  24468 },	-- Burstcap Mushroom
 									{ "o", 182095 },	-- Burstcap Mushroom
 								},
-								["coord"] = { 28.5, 52.5, ZANGARMARSH },
+								["coords"] = {
+									{ 28.5, 52.5, ZANGARMARSH },
+									{ 30.8, 44.7, ZANGARMARSH },
+								},
 							}),
 						},
 					}),

@@ -1,9 +1,11 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local h,hqt,inst,m,prof,x=_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateProfession,_.CreateExpansion;
+local ah,h,hqt,inst,m,prof,x=_.CreateHeader,_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateProfession,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 x(1,{
+h(-61,{
+hqt(78650)}),
 inst(760,{isRaid=1,savedInstanceID=249,g={
 hqt(76175)}}),
 m(1414,{maps={1464},g={
@@ -44,6 +46,17 @@ hqt(12494),
 h(-582,{awp=20400,e=11,g={
 h(-45,{e=11,g={
 hqt(11976,{e=11})}})}})}),
+m(2537,{
+m(2512,{
+m(2509,{
+ah(63598,{type="a",g={
+hqt(96041,{repeatable=1}),
+hqt(96037,{repeatable=1}),
+hqt(96032,{repeatable=1}),
+hqt(96042,{repeatable=1}),
+hqt(96043,{repeatable=1}),
+hqt(96034,{repeatable=1}),
+hqt(96040,{repeatable=1})}})})})}),
 prof(171),
 h(-521,{u=3,g={
 x(1,{awp=11505,u=3,g={

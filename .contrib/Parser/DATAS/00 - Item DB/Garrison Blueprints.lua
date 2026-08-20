@@ -1,6 +1,7 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = ItemDBConditional;
 local i = function(itemID, questID)
+	if itemID < 1 then return end
 	Items[itemID] = { ["questID"] = questID, ["type"] = "characterUnlockQuestID" };
 end
 

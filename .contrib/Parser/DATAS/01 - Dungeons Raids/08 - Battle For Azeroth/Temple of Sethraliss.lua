@@ -207,6 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							}),
 							ach(12506),	-- Mythic: The Temple of Sethraliss
 							ach(13004),	-- Mythic: The Temple of Sethraliss Guild Run
+							i(278982, {	["timeline"] = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
 						},
 					}),
 				},

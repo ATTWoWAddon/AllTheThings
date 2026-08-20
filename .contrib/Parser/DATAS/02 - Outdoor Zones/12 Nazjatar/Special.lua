@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["timeline"] = { ADDED_9_2_5 },
 			["groups"] = {
 				i(187922),	-- Flipper Fish
+				i(187920),	-- Flipper Fish
 			},
 		}),
 		header(HEADERS.Achievement, 13715, {	-- From the Belly of the Jelly

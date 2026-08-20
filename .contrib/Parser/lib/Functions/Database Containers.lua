@@ -12,6 +12,50 @@ do
 -- Some containers have constant, export, description, lore, model.
 -- Refer to the invidual containers for more info.
 -- Database Container injections contain a bunch of small modifications / additions, but since we're using it everywhere, it is losing the data due to what is known as "data chomping" with how we are using it. To combat this, the tables are designed to persist their structures despite the root being freed every time a new file is loaded and processed.
+local function RecursivelyMergeData(t, c, path, options)
+    path = path or ""  -- used for error reporting
+
+    for key, tval in pairs(t) do
+		local ttype = type(tval)
+		local cval
+		-- if a table is merging in, then pull the key directly, otherwise use rawget so that auto-table metatables
+		-- don't create a table when a number is merging onto that key or we will get an erroneous type mismatch
+		if ttype == "table" then
+			cval = c[key]
+		else
+			cval = rawget(c, key)
+		end
+		-- if cval then
+		-- 	print("Merge DB table - ",path,"@",key,"exists",cval,"assign",tval)
+		-- end
+        local currentPath = path .. tostring(key)
+
+        if cval == nil then
+            -- Key does not exist in c → copy it
+            c[key] = tval
+        else
+            -- Key exists → check types
+            local ctype = type(cval)
+
+            if ttype ~= ctype then
+                error("Type mismatch at " .. currentPath ..
+                      " (exists=" .. ttype .. ", assign=" .. ctype .. ")")
+            elseif ttype == "table" then
+                -- Both are tables → recurse
+                RecursivelyMergeData(tval, cval, currentPath .. ".", options)
+            else
+                -- Both exist and are non-table values → check conflict
+                if tval ~= cval then
+					if not options or not options.IgnoreValueConflicts then
+						print("WARN: Value conflict at " .. currentPath ..
+							" (exists=" .. tostring(tval) ..
+							", assign=" .. tostring(cval) .. ")")
+					end
+                end
+            end
+        end
+    end
+end
 local dataEntryMeta = {
 	__index = function(t, key)
 		if key == "text" then
@@ -36,18 +80,18 @@ local backingTableMetaNoSubMeta = {
 	end,
 };
 GlobalDBs = {}
-CreateDatabaseContainer = function(name, noSubMeta)
+CreateDatabaseContainer = function(name, noSubMeta, options)
 	local backingTable = setmetatable({}, (noSubMeta and type(noSubMeta) == "table" and noSubMeta or backingTableMetaNoSubMeta) or backingTableMeta);
-	local db = setmetatable({}, {
+	local db = setmetatable({
+		__Options = options or {}
+	},{
 		__index = function(t, key)
 			return backingTable[key];
 		end,
 		__newindex = function(t, key, value)
 			if value and type(value) == "table" then
 				local o = backingTable[key];
-				for k,v in pairs(value) do
-					o[k] = v;
-				end
+				RecursivelyMergeData(value, o, name.."."..key..".", t.__Options)
 			else print("WARN: Ignoring DB value! Can only assign Table values",key,"=>",value)
 			end
 		end,
@@ -72,11 +116,13 @@ ItemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
 		return item;
 	end,
 });
-MountDB = CreateDatabaseContainer("MountDB");
+-- Currently, multiple ItemIDs get assigned to one MountID leading to a conflict/overwrite
+MountDB = CreateDatabaseContainer("MountDB", nil, {IgnoreValueConflicts=true});
 ObjectDB = CreateDatabaseContainer("ObjectDB");
 QuestDB = CreateDatabaseContainer("QuestDB");
 RecipeDB = CreateDatabaseContainer("RecipeDB");
-SpeciesDB = CreateDatabaseContainer("SpeciesDB");
+-- Currently, multiple ItemIDs get assigned to one SpeciesID leading to a conflict/overwrite
+SpeciesDB = CreateDatabaseContainer("SpeciesDB", nil, {IgnoreValueConflicts=true});
 SpellDB = CreateDatabaseContainer("SpellDB");
 RecipeDBConditional = RecipeDB;
 --[[

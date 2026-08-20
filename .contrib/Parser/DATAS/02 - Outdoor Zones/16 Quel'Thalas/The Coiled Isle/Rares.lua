@@ -125,48 +125,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 		})),
-		header(HEADERS.Achievement, 63390, sharedData({	["isWeekly"] = true }, {	-- Assumption, Could be daily. Curse Surge events between 30 minutes and 1 hour
-			n(255088, {	-- Looming Mutagenitor
-				["coord"] = { 26.6, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["questID"] = 93718,
-				["groups"] = {
-					i(276172),	-- Headdress of Mutagenesis
-					i(276166),	-- Twin-Headed Twinblade
-				},
-			}),
-			n(255087, {	-- Malformed Leviathan
-				["coord"] = { 47.0, 62.2, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["questID"] = 93673,
-				["groups"] = {
-					i(276174),	-- Leviathan's Oozing Scalemail
-					i(276169),	-- Malformed Barrier
-				},
-			}),
-			n(258254, {	-- Ss'akrithos <The Boundless Ophidian>
-				["coord"] = { 71.3, 31.4, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["questID"] = 93715,
-				["groups"] = {
-					i(276168),	-- Fang of Ss'akrithos
-					i(276171),	-- Ophidian Circle
-				},
-			}),
-			n(257863, {	-- Vassti, the Exalted Broodmother
-				["coord"] = { 45.2, 28.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["questID"] = 93676,
-				["groups"] = {
-					i(276175),	-- Broodmother's Embrace
-					i(276173),	-- Clutchguard Sandals
-				},
-			}),
-			n(255927, {	-- Venom Lancer Ori'kassi
-				["coord"] = { 67.6, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
-				--["questID"] = XXXXX,
-				["groups"] = {
-					i(276167),	-- Ori'kassi's Lance
-					i(276178),	-- Venom Lancer's Gauntlets
-				},
-			}),
-		})),
 	}),
 }));
 
@@ -198,29 +156,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(98347, {	-- Weekly reputation: Lockjaw
 					["name"] = "Lockjaw weekly reputation obtained.",
 				}),
-				q(96966, {	-- Weekly reputation: Looming Mutagenitor
-					["name"] = "Looming Mutagenitor weekly reputation obtained.",
-				}),
-				q(96970, {	-- Weekly reputation: Malformed Leviathan
-					["name"] = "Malformed Leviathan weekly reputation obtained.",
-				}),
 				q(98351, {	-- Weekly reputation: Nar'zira
 					["name"] = "Nar'zira weekly reputation obtained.",
 				}),
 				q(98345, {	-- Weekly reputation: Siltmouth
 					["name"] = "Siltmouth weekly reputation obtained.",
 				}),
-				q(96968, {	-- Weekly reputation: Ss'akrithos
-					["name"] = "Ss'akrithos weekly reputation obtained.",
-				}),
 				q(98354, {	-- Weekly reputation: Sss'alik
 					["name"] = "Sss'alik weekly reputation obtained.",
 				}),
 				q(98349, {	-- Weekly reputation: Szarith The Fanged
 					["name"] = "Szarith The Fanged weekly reputation obtained.",
-				}),
-				q(96967, {	-- Weekly reputation: Vassti, the Exalted Broodmother
-					["name"] = "Vassti, the Exalted Broodmother weekly reputation obtained.",
 				}),
 			}),
 		})),

@@ -105,7 +105,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			i(212174, {	-- The Warband Map to Everywhere All At Once (TOY!)
-				["timeline"] = { ADDED_11_0_0 },
+				["timeline"] = { ADDED_11_0_0, REMOVED_11_0_5 },
 			}),
 		},
 	}),

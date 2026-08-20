@@ -1737,9 +1737,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(47695, {	-- Sound the Alarm
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(54781, {	-- UNUSED
-				["races"] = ALLIANCE_ONLY,
-			}),
 			q(50350, {	-- We Need a Chemist
 				["races"] = ALLIANCE_ONLY,
 			}),

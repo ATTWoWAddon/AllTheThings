@@ -62,7 +62,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(62282),	-- Altar of Fangs
 					i(270900),	-- Pattern: Snakeskin Lining (RECIPE!)
 					i(279211),	-- Pillar of the Fanged Altar (DECOR!)
-					i(276804),	-- The Writhing Brood (MOUNT!)
 					i(273784),	-- Ancestral Amani Recurve
 					i(273776),	-- Ancient General's Obsidian Pillars
 					i(273792),	-- Band of the Amani Warlord
@@ -88,6 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				BossOnly(ZULJAN, {
 					ach(62284),	-- Mythic: Altar of Fangs
+					i(276804),	-- The Writhing Brood (MOUNT!)
 				}),
 			}),
 		},
