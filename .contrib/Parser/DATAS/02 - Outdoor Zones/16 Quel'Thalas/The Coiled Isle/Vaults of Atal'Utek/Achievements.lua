@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						crit(116180, {	-- Slay Children of Ula'tek
 							["providers"] = {
 								{ "n", 261973 },	-- Fading Spirit (Temple Patrol: Slay Children of Ula'tek)
-							}
+							},
 						}),
 						crit(116181),	-- Siphon Venom
 						crit(116182),	-- Scavenged Weapons
