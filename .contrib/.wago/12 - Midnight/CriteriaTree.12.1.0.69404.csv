@@ -93727,7 +93727,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 162560,"11.0.5 Timewalking - BRD (Update to correct Encounter Record)",0,1,8,0,0,4096
 162561,"Player defeats Dagran Thaurissan in timewalking.",162560,0,0,70729,0,0
 162562,"Select a Combat Role for Brann Bronzebeard",0,1,8,0,0,4096
-162563,,162562,1,0,67741,0,0
+162563,,162562,1,0,117515,0,0
 162564,"Account Data Element reached 10",0,0,4,0,0,4096
 162565,,162564,10,0,111020,0,0
 162568,"Now THIS is Dragon Racing! (Hidden Copy)",0,0,4,0,0,0
@@ -112075,8 +112075,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221558,"Destabilized Manifestation defeated",221557,1,0,112157,0,0
 221559,"Eggs Destroyed",0,0,4,0,0,0
 221560,,221559,100,0,111553,0,0
-221561,"Ula'tek's Spawn Defeated and Trolls Freed",221234,10000,9,0,0,0
-221562,"T2 Defeated",221561,2,0,111554,1,1
+221561,"Ula'tek's Spawn Defeated and Trolls Freed",221234,1000,9,0,0,0
+221562,"T2 Defeated",221561,1,0,111554,1,1
 221574,,220999,1,0,111563,1,1
 221575,,220999,1,0,111564,2,1
 221576,"Incense planted",0,10,5,0,0,8193
@@ -112116,7 +112116,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221679,,221678,1,0,111613,0,0
 221684,"Sniffenseekers helped",0,3,5,0,0,8193
 221685,"Cure niffen sniffenseekers of nose blindness",221684,1,0,111616,0,0
-221686,"Eggs Destroyed",0,10000,9,0,0,1
+221686,"Eggs Destroyed",0,1000,9,0,0,1
 221687,"Eggs Destroyed",221686,1,0,111617,0,1
 221688,"Vassti, the Exalted Broodmother Defeated",0,0,4,0,0,0
 221689,"Vassti, the Exalted Broodmother Defeated",221688,1,0,111618,0,0
@@ -114044,7 +114044,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224231,"Zaen Bladesorrow defeated",224229,1,0,95554,1,0
 224232,"Xathuux the Annihilator defeated",224229,1,0,95555,2,0
 224233,"Lithiel Cinderfury defeated",224229,1,0,95556,3,0
-224234,"Enemy Forces",224229,690,9,0,4,0
+224234,"Enemy Forces",224229,655,9,0,4,0
 224235,,224234,1,0,50191,0,0
 224236,,224234,7,0,50192,1,0
 224237,,224234,9999,0,48468,2,0
@@ -114519,7 +114519,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224791,,224789,0,0,113435,1,0
 224792,,224789,0,0,113436,2,0
 224793,,224789,0,0,113437,3,0
-224794,"Scouts Freed",221561,3,0,113438,2,1
+224794,"Scouts Freed",221561,2,0,113438,2,1
 224795,"Character has earned 2500 Conquest during Midnight Season 2",0,0,4,0,0,0
 224796,,224795,250000,0,113439,0,1
 224800,"Tol'zenja is planning a course of action",0,0,4,0,0,0

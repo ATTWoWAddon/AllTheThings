@@ -6331,8 +6331,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete all Battle for Azeroth Season Two dungeons at Mythic Level 15 or higher, within the time limit.","Battle for Azeroth Keystone Master: Season Two",,13449,-1,-1,13448,15272,0,0,133120,96,618859,0,0,0,0,0,0
 "Obtain the Fierce Gladiator's Storm Dragon from Legion Arena Season 5.","Fierce Gladiator's Storm Dragon",,13450,-1,-1,0,15269,1,0,145408,41,1503313,0,78322,0,0,0,0
 "Earn the rank of Elite during Battle for Azeroth Season 2.","Elite: Battle for Azeroth Season 2","Seasonal Character Title: the Elite",13451,-1,-1,0,15270,0,0,14336,374,236540,0,78325,0,0,0,0
-,"Vicious Saddle (1)",,13452,-1,1,61405,15270,0,0,1180672,100,1379171,103533,78329,0,0,0,0
-,"Vicious Saddle (1)",,13453,-1,0,61403,15270,0,0,1180672,98,1379171,103533,78331,0,0,0,0
+,"Vicious Saddle (1)",,13452,-1,1,63103,15270,0,0,1180672,99,1379171,103533,78329,0,0,0,0
+,"Vicious Saddle (1)",,13453,-1,0,63099,15270,0,0,1180672,97,1379171,103533,78331,0,0,0,0
 "Earn the rank of Elite during Battle for Azeroth Season 1.","Elite: Battle for Azeroth Season 1","Seasonal Character Title: the Elite",13465,-1,-1,0,15270,0,0,14336,373,236540,0,78400,0,0,0,0
 "Complete the Tides of Vengeance war campaign.","Tides of Vengeance",,13466,-1,0,0,15284,0,10,131072,38,2565244,0,78415,0,0,0,0
 "Complete the Tides of Vengeance war campaign.","Tides of Vengeance",,13467,-1,1,0,15284,0,10,131072,41,2565243,0,78420,0,0,0,0
@@ -13094,7 +13094,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Owner of Midnight Heroic Edition Lightwing Dragonhawk mount.","Heroic Edition: Lightwing Dragonhawk",,61401,-1,-1,0,15268,0,0,133120,93,6841375,0,218102,0,0,0,0
 "Owner of Midnight Epic Edition Voidlight Surger mount.","Epic Edition: Voidlight Surger",,61402,-1,-1,0,15268,0,0,133120,94,7135882,0,218104,0,0,0,0
 ,"Galactic Combatant",,61403,-1,0,0,15270,0,0,1179648,95,236538,257502,218116,0,0,0,0
-,"Galactic Combatant",,61405,-1,1,0,15270,0,0,1179648,99,236538,257504,218118,0,0,0,0
+,"Galactic Combatant",,61405,-1,1,0,15270,0,0,1179648,100,236538,257504,218118,0,0,0,0
 "Logged in during WoW's 21st Anniversary.","WoW's 21st Anniversary",,61406,-1,-1,0,15274,0,0,2048,79,133783,0,218134,0,0,0,0
 "Get invited to brawl at Bizmo's Brawlpub in the Deeprun Tram.","The First Rule of Brawler's Guild",,61413,-1,1,0,15567,0,10,131072,1,135975,0,218146,0,0,0,0
 "Get invited to brawl at Brawl'gar Arena in The Valley of Honor in Orgrimmar.","The First Rule of Brawler's Guild",,61414,-1,0,0,15567,0,10,131072,2,135975,0,218149,0,0,0,0
@@ -13898,7 +13898,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Obtain the Venomous Gladiator's Goredrake from Midnight Season 2.","Venomous Gladiator's Goredrake",,62955,-1,-1,0,15269,1,0,145408,60,7388253,0,227996,0,0,0,0
 "Attain a Mythic+ Rating of at least 3400 during Midnight Season 1.","Midnight Keystone Myth: Season 1","Title: The Umbral Contender & Item: Timelost Saddle",63097,-1,-1,61258,15272,0,0,133120,189,648753,0,229048,0,0,0,0
 ,"Venomous Combatant",,63099,-1,0,0,15270,0,0,1179648,96,236538,275432,228525,0,0,0,0
-,"Venomous Combatant",,63103,-1,1,0,15270,0,0,1179648,97,236538,275433,228535,0,0,0,0
+,"Venomous Combatant",,63103,-1,1,0,15270,0,0,1179648,98,236538,275433,228535,0,0,0,0
 "End Midnight Mythic+ Season 1 with a Mythic+ Rating in the top 1% of all players in your region.","Umbral Champion: Midnight Season 1","Mount: Umbral Ashes",63104,-1,-1,0,15272,0,0,14336,191,618859,277192,0,0,0,0,0
 "Complete the Prey Journey before Midnight: Season 1 ends.","Big Prey Hunter (Season 1)",,63164,-1,-1,0,81,0,0,133120,2,7493985,0,228804,0,0,0,0
 "Earn 1000 honor in the Coiled Isle while in War Mode.","Tour of Duty: The Coiled Isle","Toy: Ula'tek's Sssacrificial Rain",63167,-1,-1,0,15283,0,10,131072,21,7578705,0,228806,0,0,0,0
