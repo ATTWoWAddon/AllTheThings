@@ -24,6 +24,9 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		exploration(4690),	-- Thunder Peak
 		exploration(4644),	-- Orendil's Retreat
 	}),
+	expansion(EXPANSION.TBC, {
+			exploration(3957),	-- Sha'tari Outpost (is a beta subzone: https://warcraft.wiki.gg/wiki/Sha%27tari_Outpost )
+	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
 		expansion(EXPANSION.BFA, patch(0,1), bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {

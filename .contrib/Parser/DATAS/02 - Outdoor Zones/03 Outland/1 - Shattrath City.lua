@@ -1238,28 +1238,6 @@ root(ROOTS.Zones, {
 						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11096, {	-- Threat from Above
-						["qg"] = 23449,	-- Yuula
-						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
-						["timeline"] = { ADDED_2_1_0 },
-						["groups"] = {
-							objective(1, {	-- 0/20 Gordunni Ogre
-								["providers"] = {
-									{ "n", 22143 },	-- Gordunni Back-Breaker
-									{ "n", 22144 },	-- Gordunni Elementalist
-									{ "n", 22148 },	-- Gordunni Head-Splitter
-									{ "n", 23022 },	-- Gordunni Soulreaper
-								},
-							}),
-						}
-					})),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11098, {	-- To Skettis!
-						["sourceQuest"] = 11096,	-- Threat From Above
-						["qg"] = 23449,	-- Yuula
-						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
-						["timeline"] = { ADDED_2_1_0 },
-						["groups"] = { i(32848) },	-- Explosives Package (QI!)
-					})),
 					q(10553, {	-- Voren'thal the Seer
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["qg"] = 18166,	-- Archmage Khadgar
