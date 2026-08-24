@@ -9938,6 +9938,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Gesäuberter Nachtdrache",
 			fr = "Dragon nocturne purifié",
 			ru = "Очищенный Ночной дракон",
+			cn = "净化过的夜龙草",
 		},
 	},
 	[164882] = {
@@ -9949,6 +9950,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Gesäuberte Liedblume",
 			fr = "Fleur-de-chant purifiée",
 			ru = "Очищенный песнецвет",
+			cn = "净化过的轻歌花",
 		},
 	},
 	[164883] = {
@@ -9957,6 +9959,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Cleansed Whipper Root",
 			ru = "Очищенный кнутокорень",
+			cn = "净化过的鞭根草",
 		},
 	},
 	[164884] = {
@@ -9969,6 +9972,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Fleur-de-vent purifiée",
 			ru = "Очищенный ветроцвет",
 			ko = "정화된 바람꽃",
+			cn = "净化过的迎风花",
 		},
 	},
 	[164885] = {
@@ -13718,6 +13722,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Coffre d'Arko'niran",
 			ru = "Сундук Арко'нирана",
 			ko = "아르코니란의 궤짝",
+			cn = "阿科尼兰的箱子",
 		},
 	},
 	[176245] = {
@@ -14560,6 +14565,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Baú do Tesouro Antigo",
 			ru = "Старый сундук с сокровищами",
 			ko = "오래된 보물 궤짝",
+			cn = "旧宝藏箱",
 		},
 	},
 	[177199] = {
@@ -15459,6 +15465,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Baú do Félix",
 			ru = "Сундук Феликса",
 			ko = "펠릭스의 궤짝",
+			cn = "菲利克斯的箱子",
 		},
 	},
 	[178085] = {
@@ -15754,6 +15761,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Öffnen, um Euren Ritus durchzuführen.",
 			fr = "Ouvrir pour accomplir le rite.",
 			ru = "Открыть для проведения ритуала.",
+			cn = "打开以通过仪式。",
 		},
 	},
 	[178427] = {
@@ -15761,6 +15769,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 198754,
 		text = {
 			en = "Fountain of Elune",
+			cn = "艾露恩之泉",
 		},
 	},
 	[178444] = {
@@ -15773,6 +15782,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Autel de Sha'gri",
 			ru = "Святилище Ша'гри",
 			ko = "샤그리의 제단",
+			cn = "沙格里神殿",
 		},
 	},
 	[178464] = {
@@ -15784,6 +15794,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Truhe des dunklen Klerikers Salem",
 			fr = "Coffre du sombre clerc Salem",
 			ru = "Сундук темного священника Салема",
+			cn = "黑暗祭司萨雷姆的箱子",
 		},
 	},
 	[178504] = {
@@ -17027,6 +17038,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Mysterious Deadmines Chest",
 			ru = "Таинственный сундук с Мертвых копей",
+			cn = "神秘的死亡矿井箱子",
 		},
 	},
 	[180025] = {
@@ -17053,6 +17065,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Geheimnisvolle Schatztruhe aus den Höhlen des Wehklagens",
 			fr = "Coffre mystérieux des cavernes des Lamentations",
 			ru = "Таинственный сундук Пещер Стенаний",
+			cn = "神秘的哀嚎洞穴箱子",
 		},
 	},
 	[180056] = {
@@ -17067,6 +17080,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Toco de Árvore Misterioso",
 			ru = "Таинственный пень",
 			ko = "신비의 그루터기",
+			cn = "神秘的树桩",
 		},
 	},
 	[180087] = {
@@ -17079,6 +17093,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Bannière de l'écurie",
 			ru = "Флаг конюшни",
 			ko = "마구간 깃발",
+			cn = "兽栏军旗",
 		},
 	},
 	[180088] = {
@@ -17091,6 +17106,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Bannière de la forge",
 			ru = "Флаг кузницы",
 			ko = "대장간 깃발",
+			cn = "铁匠铺军旗",
 		},
 	},
 	[180089] = {
@@ -17103,6 +17119,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Bannière de la ferme",
 			ru = "Флаг фермы",
 			ko = "농장 깃발",
+			cn = "农场军旗",
 		},
 	},
 	[180090] = {
@@ -17115,6 +17132,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Bannière de la scierie",
 			ru = "Флаг лесопилки",
 			ko = "제재소 깃발",
+			cn = "伐木场军旗",
 		},
 	},
 	[180091] = {
@@ -17128,6 +17146,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Estandarte da Mina",
 			ru = "Флаг рудника",
 			ko = "금광 깃발",
+			cn = "矿洞军旗",
 		},
 	},
 	[180105] = {
@@ -17139,6 +17158,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Kreis der Bindung",
 			fr = "Cercle de lien",
 			ru = "Круг Уз",
+			cn = "禁锢法阵",
 		},
 	},
 	[180164] = {
@@ -17150,6 +17170,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Sonnengras",
 			fr = "Soleillette",
 			ru = "Солнечник",
+			cn = "太阳草",
 		},
 	},
 	[180165] = {
@@ -17161,6 +17182,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Lila Lotus",
 			fr = "Lotus pourpre",
 			ru = "Лиловый лотос",
+			cn = "紫莲花",
 		},
 	},
 	[180166] = {
@@ -17172,6 +17194,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Bergsilbersalbei",
 			fr = "Sauge-argent des montagnes",
 			ru = "Горный серебряный шалфей",
+			cn = "山鼠草",
 		},
 	},
 	[180167] = {
@@ -17183,6 +17206,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Goldener Sansam",
 			fr = "Sansam doré",
 			ru = "Золотой сансам",
+			cn = "黄金参",
 		},
 	},
 	[180168] = {
@@ -17194,6 +17218,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Traumblatt",
 			fr = "Feuillerêve",
 			ru = "Снолист",
+			cn = "梦叶草",
 		},
 	},
 	[180184] = {
@@ -17217,6 +17242,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Thoriumvorkommen der Hakkari",
 			fr = "Filon de thorium hakkari",
 			ru = "Ториевая жила Хаккари",
+			cn = "哈卡莱瑟银矿脉",
 		},
 	},
 	[180216] = {
@@ -17225,6 +17251,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Whipweed",
 			ru = "Хлыстень",
+			cn = "鞭根草",
 		},
 	},
 	[180228] = {
@@ -17236,6 +17263,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Verwunschener Hoodoohaufen",
 			fr = "Pile de déchets",
 			ru = "Груда зачарованных худу",
+			cn = "厄运巫毒堆",
 		},
 	},
 	[180229] = {
@@ -17308,6 +17336,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Matschstinkerköder",
 			fr = "Appât au Puant de vase",
 			ru = "Наживка на грязнотинника",
+			cn = "臭泥鱼诱饵",
 		},
 	},
 	[180358] = {
@@ -17319,6 +17348,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Gri'lek, des Eisernen Blutes",
 			fr = "Gri'lek au Sang de fer",
 			ru = "Гри'лек, с Железной Кровью",
+			cn = "格里雷克，钢铁之血",
 		},
 	},
 	[180364] = {
@@ -17330,6 +17360,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Hazza'rah, der Traumweber",
 			fr = "Hazza'rah Tisse-rêves",
 			ru = "Хазза'рах, ткач Снов",
+			cn = "哈扎拉尔，织梦者",
 		},
 	},
 	[180365] = {
@@ -17341,6 +17372,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Renataki, der Tausend Klingen",
 			fr = "Renataki des Mille lames",
 			ru = "Ренетаки из клана Тысячи Клинков",
+			cn = "雷纳塔基，千刃之王",
 		},
 	},
 	[180366] = {
@@ -17367,6 +17399,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Altar von Zanza",
 			fr = "Autel de Zanza",
 			ru = "Алтарь Занзы",
+			cn = "赞扎祭坛",
 		},
 	},
 	[180368] = {
@@ -19632,6 +19665,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Baú Cheio de Mossas",
 			ru = "Проломленный ящик",
 			ko = "찌그러진 궤짝",
+			cn = "凹陷的箱子",
 		},
 	},
 	[181239] = {
@@ -19661,6 +19695,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Veio de Cobre",
 			ru = "Медная жила",
 			ko = "구리 광맥",
+			cn = "铜矿脉",
 		},
 	},
 	[181249] = {
@@ -19675,6 +19710,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Veio de Estanho",
 			ru = "Оловянная жила",
 			ko = "주석 광맥",
+			cn = "锡矿脉",
 		},
 	},
 	[181250] = {
@@ -19689,6 +19725,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cavalete de Carne Crua",
 			ru = "Балка для подвешиванья сырого мяса",
 			ko = "날고기 선반",
+			cn = "生肉架",
 		},
 	},
 	[181251] = {
@@ -19703,6 +19740,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cavalete de Carne Defumada",
 			ru = "Коптильная рама для мяса",
 			ko = "연기나는 고기 선반",
+			cn = "熏肉架",
 		},
 	},
 	[181252] = {
@@ -19717,6 +19755,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cavalete de Peixe Fresco",
 			ru = "Рама для подвешивания свежей рыбы",
 			ko = "신선한 물고기 선반",
+			cn = "鲜鱼架",
 		},
 	},
 	[181259] = {
@@ -19930,6 +19969,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 191177,
 		text = {
 			en = "Frozen Rune",
+			cn = "冰冻符文",
 		},
 	},
 	[181288] = {
@@ -19937,6 +19977,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 200080,
 		text = {
 			en = "Midsummer Bonfire",
+			cn = "仲夏篝火",
 		},
 	},
 	[181332] = {
@@ -19944,6 +19985,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		icon = 135813,
 		text = {
 			en = "Flame of Stormwind",
+			cn = "暴风城烈焰",
 		},
 	},
 	[181333] = {
@@ -19951,6 +19993,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		icon = 135265,
 		text = {
 			en = "Flame of Ironforge",
+			cn = "铁炉堡烈焰",
 		},
 	},
 	[181334] = {
@@ -19958,6 +20001,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		icon = 135265,
 		text = {
 			en = "Flame of Darnassus",
+			cn = "达纳苏斯烈焰",
 		},
 	},
 	[181335] = {
@@ -19965,6 +20009,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		icon = 135265,
 		text = {
 			en = "Flame of the Undercity",
+			cn = "幽暗城烈焰",
 		},
 	},
 	[181336] = {
@@ -19972,6 +20017,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		icon = 135265,
 		text = {
 			en = "Flame of Orgrimmar",
+			cn = "奥格瑞玛烈焰",
 		},
 	},
 	[181337] = {
@@ -19979,6 +20025,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		icon = 135265,
 		text = {
 			en = "Flame of Thunder Bluff",
+			cn = "雷霆崖烈焰",
 		},
 	},
 	[181338] = {
@@ -19988,6 +20035,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of the Plaguelands",
 			de = "Flamme der Pestländer",
 			ru = "Пламя Чумных земель",
+			cn = "瘟疫之地烈焰",
 		},
 	},
 	[181339] = {
@@ -19998,6 +20046,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme von Silithus",
 			fr = "Flamme de Silithus",
 			ru = "Пламя Силитуса",
+			cn = "希利苏斯烈焰",
 		},
 	},
 	[181340] = {
@@ -20008,6 +20057,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme von Winterquell",
 			fr = "Flamme de Berceau-de-l'hiver",
 			ru = "Пламя Зимних Ключей",
+			cn = "冬泉谷烈焰",
 		},
 	},
 	[181341] = {
@@ -20017,6 +20067,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of Searing Gorge",
 			de = "Flamme der sengenden Schlucht",
 			ru = "Пламя Тлеющего ущелья",
+			cn = "灼热峡谷烈焰",
 		},
 	},
 	[181342] = {
@@ -20027,6 +20078,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme von Azshara",
 			fr = "Flamme d'Azshara",
 			ru = "Пламя Азшары",
+			cn = "艾萨拉烈焰",
 		},
 	},
 	[181343] = {
@@ -20037,6 +20089,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme von Un'Goro",
 			fr = "Flamme d'Un'Goro",
 			ru = "Пламя Ун'Горо",
+			cn = "安戈洛烈焰",
 		},
 	},
 	[181344] = {
@@ -20046,6 +20099,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of the Blasted Lands",
 			de = "Flamme der verwüsteten Lande",
 			ru = "Пламя Выжженных земель",
+			cn = "诅咒之地烈焰",
 		},
 	},
 	[181345] = {
@@ -20055,6 +20109,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of the Hinterlands",
 			de = "Flamme des Hinterlands",
 			ru = "Пламя Внутренних земель",
+			cn = "辛特兰烈焰",
 		},
 	},
 	[181346] = {
@@ -20065,6 +20120,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme von Düsterbruch",
 			fr = "Flamme de Hache-Tripes",
 			ru = "Пламя Забытого Города",
+			cn = "厄运之槌烈焰",
 		},
 	},
 	[181347] = {
@@ -20075,6 +20131,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme der Schwarzfelsspitze",
 			fr = "Flamme du pic Rochenoire",
 			ru = "Пламя пика Черной горы",
+			cn = "黑石塔烈焰",
 		},
 	},
 	[181348] = {
@@ -20085,6 +20142,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme von Stratholme",
 			fr = "Flamme de Stratholme",
 			ru = "Пламя Стратхольма",
+			cn = "斯坦索姆烈焰",
 		},
 	},
 	[181349] = {
@@ -20095,6 +20153,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Flamme von Scholomance",
 			fr = "Flamme de la Scholomance",
 			ru = "Пламя Некроситета",
+			cn = "通灵学院烈焰",
 		},
 	},
 	[181359] = {
@@ -20109,6 +20168,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cristal da Lua Noctiélfico",
 			ru = "Лунный кристалл ночных эльфов",
 			ko = "나이트 엘프 달의 수정",
+			cn = "暗夜精灵月亮水晶",
 		},
 	},
 	[181365] = {
@@ -20130,6 +20190,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Baú dos Quatro Cavaleiros",
 			ru = "Сундук четырех всадников",
 			ko = "4인 기사단 궤짝",
+			cn = "四骑士之箱",
 		},
 	},
 	[181369] = {
@@ -20189,6 +20250,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Ovo de Falcodrago",
 			ru = "Яйцо дракондора",
 			ko = "용매 알",
+			cn = "龙鹰的卵"
 		},
 	},
 	[181382] = {
@@ -20329,6 +20391,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of the Barrens",
 			de = "Flamme des Brachlands",
 			ru = "Пламя Степей",
+			cn = "贫瘠之地烈焰",
 		},
 	},
 	[181561] = {
@@ -20338,6 +20401,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of Ashenvale",
 			de = "Flamme des Eschentals",
 			ru = "Пламя Ясеневого леса",
+			cn = "灰谷烈焰",
 		},
 	},
 	[181562] = {
@@ -20347,6 +20411,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of Stonetalon",
 			de = "Flamme des Steinkrallengebirges",
 			ru = "Пламя Каменного Когтя",
+			cn = "石爪山烈焰",
 		},
 	},
 	[181563] = {
@@ -20356,6 +20421,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of Darkshore",
 			de = "Flamme der Dunkelküste",
 			ru = "Пламя Темных берегов",
+			cn = "黑海岸烈焰",
 		},
 	},
 	[181564] = {
@@ -20365,6 +20431,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of Silverpine",
 			de = "Flamme des Silberwalds",
 			ru = "Пламя Серебряного бора",
+			cn = "银松森林烈焰",
 		},
 	},
 	[181565] = {
@@ -20374,6 +20441,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of Westfall OLD",
 			de = "Flamme von Westfall",
 			ru = "Пламя Западного Края",
+			cn = "西部荒野烈焰",
 		},
 	},
 	[181566] = {
@@ -20383,6 +20451,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of Hillsbrad",
 			de = "Flamme des Hügellands",
 			ru = "Пламя Хилсбрада",
+			cn = "希尔斯布莱德烈焰",
 		},
 	},
 	[181567] = {
@@ -20392,6 +20461,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Flame of the Wetlands",
 			de = "Flamme des Sumpflands",
 			ru = "Пламя Болотины",
+			cn = "湿地烈焰",
 		},
 	},
 	[181568] = {
@@ -20458,6 +20528,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cristal Brilhante",
 			ru = "Сияющий кристалл",
 			ko = "빛나는 수정",
+			cn = "闪光的水晶",
 		},
 	},
 	[181575] = {
@@ -20589,6 +20660,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Reserva Especial Tocada pelo Sol",
 			ru = "\"Благословение Солнца Гранд Резерв\"",
 			ko = "햇살 깃든 특등급 포도주",
+			cn = "日光陈酿",
 		},
 	},
 	[181590] = {
@@ -20603,6 +20675,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Aperitivo de Garrataque",
 			ru = "Закуска из прыголапа",
 			ko = "갈기발 요리",
+			cn = "魔泉美味",
 		},
 	},
 	[181593] = {
@@ -20617,6 +20690,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Pé de Cardossangue",
 			ru = "Кровопийка",
 			ko = "피엉겅퀴",
+			cn = "血蓟",
 		},
 	},
 	[181594] = {
@@ -20631,6 +20705,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Frasco Lazúli",
 			ru = "Лазурный фиал",
 			ko = "하늘색 유리병",
+			cn = "碧蓝瓶",
 		},
 	},
 	[181597] = {
@@ -20699,6 +20774,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 219405,
 		text = {
 			en = "School of Red Snapper",
+			cn = "红钳鱼群",
 		},
 	},
 	[181620] = {
@@ -20710,6 +20786,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Ungeöffnete Kiste",
 			fr = "Caisse fermée",
 			ru = "Неоткрытый сундук",
+			cn = "未打开的箱子",
 		},
 	},
 	[181621] = {
@@ -20751,6 +20828,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Waffenregal",
 			fr = "Râtelier d'armes",
 			ru = "Оружейная стойка",
+			cn = "武器架",
 		},
 	},
 	[181628] = {
@@ -20762,6 +20840,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Leeres Fass",
 			fr = "Tonneau vide",
 			ru = "Пустая бочка",
+			cn = "空桶",
 		},
 	},
 	[181629] = {
@@ -20774,12 +20853,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Heiliger Kasten",
 			fr = "Petit coffre",
 			ru = "Священный ларец",
+			cn = "圣箱",
 		},
 	},
 	[181636] = {
 		readable = "Altar of Naias",
 		text = {
 			en = "Altar of Naias",
+			cn = "奈亚斯祭坛",
 		},
 	},
 	[181637] = {
@@ -49039,6 +49120,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Melão",
 			ru = "Плод дыни",
 			ko = "멜론",
+			cn = "瓜果",
 		},
 	},
 	[195445] = {
@@ -49245,6 +49327,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cavalete de Armas",
 			ru = "Оружейная стойка",
 			ko = "무기 선반",
+			cn = "武器架",
 		},
 	},
 	[195531] = {
@@ -49296,6 +49379,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Manual Roubado",
 			ru = "Украденное пособие",
 			ko = "도난당한 교본",
+			cn = "被盗的手册",
 		},
 	},
 	[195576] = {
@@ -49310,6 +49394,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Manual Roubado",
 			ru = "Украденное пособие",
 			ko = "도난당한 교본",
+			cn = "被盗的手册",
 		},
 	},
 	[195577] = {
@@ -49324,6 +49409,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Manual Roubado",
 			ru = "Украденное пособие",
 			ko = "도난당한 교본",
+			cn = "被盗的手册",
 		},
 	},
 	[195582] = {
@@ -49338,6 +49424,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Manual Roubado",
 			ru = "Украденное пособие",
 			ko = "도난당한 교본",
+			cn = "被盗的手册",
 		},
 	},
 	[195583] = {
@@ -49352,6 +49439,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Manual Roubado",
 			ru = "Украденное пособие",
 			ko = "도난당한 교본",
+			cn = "被盗的手册",
 		},
 	},
 	[195584] = {
@@ -49366,6 +49454,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Manual Roubado",
 			ru = "Украденное пособие",
 			ko = "도난당한 교본",
+			cn = "被盗的手册",
 		},
 	},
 	[195587] = {
@@ -49519,6 +49608,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			it = "Cassa dei Campioni",
 			pt = "Baú dos Campeões",
 			ru = "Ларь чемпиона",
+			cn = "勇士的宝箱",
 		},
 	},
 	[195633] = {
@@ -49577,6 +49667,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Fragmento de Tabuleta Ancestral",
 			ru = "Фрагмент древней таблички",
 			ko = "고대 서판 조각",
+			cn = "远古石板碎片",
 		},
 	},
 	[195657] = {
@@ -49591,6 +49682,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Fragmento de Tabuleta Ancestral",
 			ru = "Фрагмент древней таблички",
 			ko = "고대 서판 조각",
+			cn = "远古石板碎片",
 		},
 	},
 	[195658] = {
@@ -49605,6 +49697,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Fragmento de Tabuleta Ancestral",
 			ru = "Фрагмент древней таблички",
 			ko = "고대 서판 조각",
+			cn = "远古石板碎片",
 		},
 	},
 	[195659] = {
@@ -49619,6 +49712,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Fragmento de Tabuleta Ancestral",
 			ru = "Фрагмент древней таблички",
 			ko = "고대 서판 조각",
+			cn = "远古石板碎片",
 		},
 	},
 	[195665] = {
@@ -49628,6 +49722,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Argent Crusade Tribute Chest",
 			fr = "Coffre d'offrande de la Croisade d'argent",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195666] = {
@@ -49638,6 +49733,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Tributtruhe des Argentumkreuzzugs",
 			fr = "Coffre d'offrande de la Croisade d'argent",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195667] = {
@@ -49647,6 +49743,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Argent Crusade Tribute Chest",
 			de = "Tributtruhe des Argentumkreuzzugs",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195668] = {
@@ -49655,6 +49752,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Argent Crusade Tribute Chest",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195669] = {
@@ -49666,6 +49764,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Tributtruhe des Argentumkreuzzugs",
 			fr = "Coffre d'offrande de la Croisade d'argent",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195670] = {
@@ -49677,6 +49776,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Tributtruhe des Argentumkreuzzugs",
 			fr = "Coffre d'offrande de la Croisade d'argent",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195671] = {
@@ -49688,6 +49788,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Tributtruhe des Argentumkreuzzugs",
 			fr = "Coffre d'offrande de la Croisade d'argent",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195672] = {
@@ -49696,6 +49797,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Argent Crusade Tribute Chest",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			cn = "银色北伐军嘉奖宝箱",
 		},
 	},
 	[195674] = {
