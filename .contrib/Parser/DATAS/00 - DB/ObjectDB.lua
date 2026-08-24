@@ -51750,6 +51750,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			it = "Armeria della Cannoniera",
 			pt = "Arsenal da Belonave",
 			ru = "Оружейная боевого корабля",
+			cn = "炮舰军械库",
 		},
 	},
 	[201873] = {
@@ -51764,6 +51765,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			it = "Armeria della Cannoniera",
 			pt = "Arsenal da Belonave",
 			ru = "Оружейная боевого корабля",
+			cn = "炮舰军械库",
 		},
 	},
 	[201874] = {
@@ -52582,6 +52584,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Arsenal da Belonave",
 			ru = "Оружейная боевого корабля",
 			ko = "비행포격선 장비함",
+			cn = "炮舰军械库",
 		},
 	},
 	[202179] = {
@@ -52613,6 +52616,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Arsenal da Belonave",
 			ru = "Оружейная боевого корабля",
 			ko = "비행포격선 장비함",
+			cn = "炮舰军械库",
 		},
 	},
 	[202181] = {
