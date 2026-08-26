@@ -30,13 +30,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			i(201934, {	-- Nokhud Whittling Knife
 				["crs"] = {
-					192226, -- Ganmat the Wise
-					191843, -- Guard Bahir
-					187299, -- Nokhud Brute
-					195761, -- Nokhud Commander
-					185907, -- Sirena the Fangbreaker
-					197650, -- "Tarolekk, the Stomper"
-					192223, -- Zaphil the Defiant
+					192226,	-- Ganmat the Wise
+					191843,	-- Guard Bahir
+					187299,	-- Nokhud Brute
+					195761,	-- Nokhud Commander
+					185907,	-- Sirena the Fangbreaker
+					197650,	-- "Tarolekk, the Stomper"
+					192223,	-- Zaphil the Defiant
 				}
 			}),
 			i(201439, {	-- Renewed Dream

@@ -2648,7 +2648,7 @@ local SuperSpammyWorldQuestDrops = {
 	-- BFA
 	[1560] = true,	-- War Resources
 	-- SL
-	[1885] = true, 	-- Grateful Offering
+	[1885] = true,	-- Grateful Offering
 	-- DF
 	[2003] = true,	-- Dragon Isles Supplies
 	-- TWW

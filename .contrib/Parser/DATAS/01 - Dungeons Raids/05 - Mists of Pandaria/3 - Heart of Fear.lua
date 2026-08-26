@@ -5,9 +5,9 @@
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			CHEST = 89265,		-- Chest of the Shadowy Conquerer
-			GAUNTLETS = 89271,	-- Gauntlets of the Shadowy Conquerer
-			LEGS = 89268,		-- Leggings of the Shadowy Conquerer
+			CHEST = 89265,		-- Chest of the Shadowy Conqueror
+			GAUNTLETS = 89271,	-- Gauntlets of the Shadowy Conqueror
+			LEGS = 89268,		-- Leggings of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			CHEST = 89266,		-- Chest of the Shadowy Protector
@@ -22,9 +22,9 @@ local TOKENS = {
 	},
 	NORMAL = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			CHEST = 89237,		-- Chest of the Shadowy Conquerer
-			GAUNTLETS = 89240,	-- Gauntlets of the Shadowy Conquerer
-			LEGS = 89243,		-- Leggings of the Shadowy Conquerer
+			CHEST = 89237,		-- Chest of the Shadowy Conqueror
+			GAUNTLETS = 89240,	-- Gauntlets of the Shadowy Conqueror
+			LEGS = 89243,		-- Leggings of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			CHEST = 89238,		-- Chest of the Shadowy Protector
@@ -39,9 +39,9 @@ local TOKENS = {
 	},
 	HEROIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			CHEST = 89250,		-- Chest of the Shadowy Conquerer
-			GAUNTLETS = 89256,	-- Gauntlets of the Shadowy Conquerer
-			LEGS = 89253,		-- Leggings of the Shadowy Conquerer
+			CHEST = 89250,		-- Chest of the Shadowy Conqueror
+			GAUNTLETS = 89256,	-- Gauntlets of the Shadowy Conqueror
+			LEGS = 89253,		-- Leggings of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			CHEST = 89251,		-- Chest of the Shadowy Protector

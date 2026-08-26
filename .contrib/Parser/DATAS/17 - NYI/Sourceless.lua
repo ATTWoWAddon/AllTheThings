@@ -236,7 +236,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(161250),	-- Jambani Leggings
 				}),
 				filter(MAIL, {
-					i(161238),	-- Torcalin Bands
 					i(161146),	-- Torcalin Harness
 					i(161148),	-- Torcalin Shoulderguards
 					i(161226),	-- Torcalin Helm

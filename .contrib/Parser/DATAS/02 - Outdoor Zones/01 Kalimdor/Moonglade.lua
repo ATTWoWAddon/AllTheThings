@@ -622,13 +622,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 4.0.3
 						{
 							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
-							["coord"] = { 17.9, 33.0, WESTFALL },
-							["coord"] = { 29.6, 29.5, SILVERPINE_FOREST },
+							["coords"] = {
+								{ 17.9, 33.0, WESTFALL },
+								{ 29.6, 29.5, SILVERPINE_FOREST },
+							},
 						},
 						{
 							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
-							["coord"] = { 48.9, 11.3, DARKSHORE },
-							["coord"] = { 56.7, 8.3, THE_BARRENS },
+							["coords"] = {
+								{ 48.9, 11.3, DARKSHORE },
+								{ 56.7, 8.3, THE_BARRENS },
+							},
 						},
 						-- #endif
 					},

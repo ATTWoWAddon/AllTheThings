@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					crit(18449, {	-- Ultraxion
 						["_encounter"] = { 331, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
-					crit(18450, {	-- Warmaster Blackthorn
+					crit(18450, {	-- Warmaster Blackhorn
 						["_encounter"] = { 332, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18451, {	-- Spine of Deathwing
@@ -922,7 +922,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			-- Misc descriptions
 			n(53879, {	-- Spine of Deathwing
-				["sharedDescription"] = "For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in it's place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amangamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",
+				["sharedDescription"] = "For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in its place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amalgamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",
 				["groups"] = {
 					n(55891),	-- Ka'anu Reevs
 					n(55870),	-- Sky Captain Swayze

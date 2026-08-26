@@ -1754,7 +1754,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=9,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026}),
@@ -1806,7 +1805,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=18,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9514,7 +9514,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753984800,
+		release = 1753981200,
 		state = 2,
 	},
 	[5002] = {
@@ -9523,7 +9523,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755021600,
+		release = 1755018000,
 		state = 2,
 	},
 	[5003] = {
@@ -9532,7 +9532,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755799200,
+		release = 1755795600,
 		state = 2,
 	},
 	[5004] = {
@@ -9541,7 +9541,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756231200,
+		release = 1756227600,
 		state = 2,
 	},
 	[5005] = {
@@ -9550,7 +9550,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756836000,
+		release = 1756832400,
 		state = 2,
 	},
 	[5006] = {
@@ -9559,7 +9559,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757008800,
+		release = 1757005200,
 		state = 2,
 	},
 	[5007] = {
@@ -9568,7 +9568,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758045600,
+		release = 1758042000,
 		state = 2,
 	},
 	[51] = {
@@ -9618,7 +9618,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781632800,
+		release = 1781629200,
 		state = 2,
 	},
 } L.PHASES = phases

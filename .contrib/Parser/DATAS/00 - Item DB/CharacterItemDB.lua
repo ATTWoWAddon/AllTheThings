@@ -1047,7 +1047,7 @@ iq(262742, 93805);					-- "Swift" Kit
 ------------------
 -- PATCH 12.1.0 --
 ------------------
-ihqt(275986, 96976);				-- Delver's Cosmetic Surprise Bag
+ihqt(275986);						-- Delver's Cosmetic Surprise Bag
 ihqt(275978, 96975);				-- Delver's Starter Kit
 ihqt(274500, 96459);				-- Demystifyin': Alchemy
 ihqt(274515, 96511);				-- Demystifyin': Blacksmithing
@@ -1060,7 +1060,14 @@ ihqt(274507, 96517);				-- Demystifyin': Leatherworking
 ihqt(274509, 96518);				-- Demystifyin': Mining
 ihqt(274508, 96519);				-- Demystifyin': Skinning
 ihqt(274512, 96520);				-- Demystifyin': Tailoring
-
+is(0, 1286801);						-- Path of Blooming Verdure
+is(0, 1286804);						-- Path of Brutal Combatant
+--is(0, 393256);					-- Path of the Clutch Defender (under 10.0)
+is(0, 1286809);						-- Path of Devious Smuggler
+is(0, 1286828);						-- Path of Sacret Temple
+is(0, 1286831);						-- Path of the Slumbering Conqueror
+is(0, 1286812);						-- Path of Venomous Evolution
+is(0, 1286807);						-- Path of Worthy Aspirant
 ------------
 -- UNUSED --
 ------------

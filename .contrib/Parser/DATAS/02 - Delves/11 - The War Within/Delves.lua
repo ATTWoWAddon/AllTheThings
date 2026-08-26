@@ -153,14 +153,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 						i(212171),	-- Zekvir's Raptorial Spine
 					}),
 				})),
-				n(DELVE_COMPLETION, {	-- ToDO: check if still available in 11.1
+				n(DELVE_COMPLETION, {
 					n(TREASURES, {
-						filter(COSMETIC, {
-							i(212163),	-- Soporific Shroom Cap
-						}),
-						n(WEAPONS, {
-							i(218126),	-- Befouler's Syringe
-						}),
+						i(218126),	-- Befouler's Syringe
+						i(212163),	-- Soporific Shroom Cap (COSMETIC!)
+						i(225547),	-- Toxic Victory (TOY!)
 					}),
 				}),
 				n(EXPLORATION, {

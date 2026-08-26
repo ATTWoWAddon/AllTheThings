@@ -456,7 +456,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, i(228304, {	-- Schematic: Schematic: Fiery Core Sharpshooter Rifle (RECIPE!)
+					applyclassicphase(SOD_PHASE_FOUR, i(228304, {	-- Schematic: Fiery Core Sharpshooter Rifle (RECIPE!)
 						["timeline"] = { ADDED_1_15_3 },
 					})),
 					-- #endif
@@ -509,7 +509,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(17077),	-- Crimson Shocker
 					i(18870),	-- Helm of the Lifegiver
 					i(17109),	-- Choker of Enlightenment
-					i(19145),	-- Robe of Volatle Power
+					i(19145),	-- Robe of Volatile Power
 					i(19146),	-- Wristguards of Stability
 					i(16805),	-- Felheart Gloves (Warlock)
 					i(16863),	-- Gauntlets of Might (Warrior)

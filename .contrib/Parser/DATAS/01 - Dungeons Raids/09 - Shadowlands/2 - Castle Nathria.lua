@@ -657,7 +657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(182608),	-- Virtuous Command
 				}),
 				BossOnly(SIRE, {
-					ig(179358),	-- Remornia (QI!)
+					ig(179358),	-- Remornia (QS!)
 					ig(183395),	-- Will of Remornia (PET!)
 					i(183288),	-- Memory of a Celestial Infusion
 					i(183324),	-- Memory of a Harmonious Apparatus
@@ -827,10 +827,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
-						["provider"] = { "n", 172653 },	-- General Draven
-						["groups"] = {
-							i(182601),	-- Sludgefist's Head (QI!)
-						},
+						["qg"] = 172653,	-- General Draven
+						["qi"] = 182601,	-- Sludgefist's Head (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -901,10 +899,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
-						["provider"] = { "n", 172653 },	-- General Draven
-						["groups"] = {
-							i(182602),	-- Sludgefist's Head (QI!)
-						},
+						["qg"] = 172653,	-- General Draven
+						["qi"] = 182602,	-- Sludgefist's Head (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -960,10 +956,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
-						["provider"] = { "n", 172653 },	-- General Draven
-						["groups"] = {
-							i(182603),	-- Sludgefist's Head (QI!)
-						},
+						["qg"] = 172653,	-- General Draven
+						["qi"] = 182603,	-- Sludgefist's Head (QI!)
 					}),
 				}),
 				ZoneDrops(),

@@ -74,7 +74,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61797, {	-- My Shady Nemesis
 								i(263413),	-- Nullaeus Domaneye (COSMETIC!)
 							}),
-							i(262391),	-- Ominous Domanus (PET!)
+							i(262391),	-- Ominous Dominus (PET!)
 							hqt(95155, name(HEADERS.NPC, 252892)),	-- Nullaeus ? (first time)
 						},
 					}),
@@ -94,7 +94,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(61798, {	-- Lighting the Dark
 								title(688),	-- <Name> the Ominous
 							}),
-							i(262391),	-- Ominous Domanus (PET!)
+							i(262391),	-- Ominous Dominus (PET!)
 							hqt(95154, name(HEADERS.NPC, 252892)),	-- Nullaeus ?? (first time)
 						},
 					}),
@@ -132,15 +132,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			mapped(n(DELVE_COMPLETION, {
 				n(ARMOR, {
 					filter(BACK_F, {
-						["providers"] = {
-							{"o",584514},	-- Bountiful Coffer
-							{"o",584518},	-- Bountiful Heavy Trunk
-							{"o",584503},	-- Grand Sanctified Spoils
-							{"o",584519},	-- Heavy Trunk
-							{"o",581922},	-- Hidden Trove
-							{"o",618495},	-- Nullaeus Cache
-							{"o",623259},	-- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
 						["groups"] = {
 							i(249625),	-- Elder Mossveil
 							i(249624),	-- Osseoclad Paledrape
@@ -149,20 +141,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					filter(CLOTH, {
-						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						["groups"] = {
 							i(249634),	-- Sprawling Fibershells
 							i(249635),	-- Sprawling Rhizomecord
@@ -175,15 +154,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					filter(FINGER_F, {
-						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584503}, -- Grand Sanctified Spoils
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
 						["groups"] = {
 							i(249623),	-- Blooming Leafcoil
 							i(249622),	-- Spiritseal Ring
@@ -192,20 +163,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					filter(LEATHER, {
-						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						["groups"] = {
 							i(249638),	-- Osseoclad Bonecrushers
 							i(249641),	-- Osseoclad Bonesteppers
@@ -218,20 +176,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					filter(MAIL, {
-						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						["groups"] = {
 							i(249652),	-- Elder Mossbands
 							i(249651),	-- Elder Mosscinch
@@ -244,35 +189,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					filter(NECK_F, {
-						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584503}, -- Grand Sanctified Spoils
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
 						["groups"] = {
 							i(249627),	-- Arboreal Vine Collar
 							i(249626),	-- Nocturnal Thorncharm
 						},
 					}),
 					filter(PLATE, {
-						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						["groups"] = {
 							i(249657),	-- Rampant Bramblegreaves
 							i(249653),	-- Rampant Brambleplate
@@ -289,21 +213,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							251788,	-- Gift of Light
 						}},
 						["groups"] = sharedData({
-							["providers"] = {
-								{"o",584514}, -- Bountiful Coffer
-								{"o",584518}, -- Bountiful Heavy Trunk
-								{"o",584515}, -- Bountiful Heavy Trunk
-								{"o",584503}, -- Grand Sanctified Spoils
-								{"o",584519}, -- Heavy Trunk
-								{"o",581922}, -- Hidden Trove
-								{"o",584512}, -- Nemesis Strongbox
-								{"o",584509}, -- Nemesis Strongbox
-								{"o",584508}, -- Nemesis Strongbox
-								{"o",584511}, -- Nemesis Strongbox
-								{"o",618495}, -- Nullaeus Cache
-								{"o",623259}, -- Pilfered Trunk
-								{"o",623258}, -- Pilfered Trunk
-							},
+							["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
 						},{
 							i(264878),	-- Astalor's Anguish Agitator
 							i(251789),	-- Consecrated Chalice
@@ -317,7 +227,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				filter(MISC, {
 					i(252415, {	-- Trovehunter's Bounty
-						["providers"] = {{"o",618495}}, -- Nullaeus Cache (verified)
+						["providers"] = {{"o",618495}},	-- Nullaeus Cache (verified)
 					}),
 					-- Bonus roll
 					i(268969, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Delver's Trove
@@ -330,33 +240,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				n(WEAPONS, {
 					["groups"] = sharedData({
-						["providers"] = {
-							{"o",584514}, -- Bountiful Coffer
-							{"o",584518}, -- Bountiful Heavy Trunk
-							{"o",584515}, -- Bountiful Heavy Trunk
-							{"o",584503}, -- Grand Sanctified Spoils
-							{"o",584519}, -- Heavy Trunk
-							{"o",581922}, -- Hidden Trove
-							{"o",584512}, -- Nemesis Strongbox
-							{"o",584509}, -- Nemesis Strongbox
-							{"o",584508}, -- Nemesis Strongbox
-							{"o",584511}, -- Nemesis Strongbox
-							{"o",618495}, -- Nullaeus Cache
-							{"o",623259}, -- Pilfered Trunk
-							{"o",623258}, -- Pilfered Trunk
-						},
+						["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
 					},{
 						-- Set
 						i(251884, {	-- Abyss Sabre
 							["providers"] = {
-								{"o",618495}, -- Nullaeus Cache
-								{"o",584518}, -- Bountiful Heavy Trunk
+								{ "o", 618495 },	-- Nullaeus Cache
+								{ "o", 584518 },	-- Bountiful Heavy Trunk
 							},
 						}),
 						i(251885, {	-- Radiant Foil
 							["providers"] = {
-								{"o",584508}, -- Nemesis Strongbox
-								{"o",584518}, -- Bountiful Heavy Trunk (verified)
+								{ "o", 584508 },	-- Nemesis Strongbox
+								{ "o", 584518 },	-- Bountiful Heavy Trunk (verified)
 							},
 						}),
 						-- Basic
@@ -421,7 +317,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				q(92600, {	-- Cracked Keystone
 					["provider"] = { "i", 253245 },	-- Cracked Keystone (QI!/QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
-					["isMonthly"] = true, -- This quests resets every season (at least) and is not reliably collectible
+					["isMonthly"] = true,	-- This quests resets every season (at least) and is not reliably collectible
 				}),
 			}),
 			n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
@@ -442,7 +338,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						265367,	-- Twilight Fang (COSMETIC!)
 					}},
 					["groups"] = {
-						i(262391),	-- Ominous Domanus (PET!)
+						i(262391),	-- Ominous Dominus (PET!)
 						i(264971),	-- Annihilation Rod (COSMETIC!)
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
 					},
@@ -456,6 +352,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(253342, {	-- Beacon of Hope
 							["cost"] = { { "c", UNDERCOIN, 5000 } },
 							--["questID"] = ???,
+							["timeline"] = { REMOVED_12_1_0 },
 						}),
 						i(263178, {	-- Delver's Starter Kit (CI!)
 							--["cost"] = { { "c", UNDERCOIN, 0 } },

@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(63490),	-- Sky Strider Belt
 						i(63498),	-- Soul Breath Belt
 						i(63492),	-- Star Chaser Belt
-						i(63495),	-- Temepst Keeper Belt
+						i(63495),	-- Tempest Keeper Belt
 						i(63491),	-- Thunder Wall Belt
 						i(63493),	-- Wind Stalker Belt
 						i(63488),	-- Mistral Circle
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(69830),	-- Planetary Amulet
 						i(69834),	-- Cloudburst Cloak
 						i(69831),	-- Mistral Drape
-						i(69833),	-- Permasfrost Cape
+						i(69833),	-- Permafrost Cape
 						i(69835),	-- Planetary Drape
 						i(63506),	-- Gale Rouser Leggings
 						i(63505),	-- Lightning Well Legguards

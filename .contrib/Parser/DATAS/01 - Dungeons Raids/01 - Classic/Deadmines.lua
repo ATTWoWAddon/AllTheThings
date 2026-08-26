@@ -50,7 +50,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(44930, {	-- Deadmines: Sea'in Red
-				["description"] = "|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw. An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to questgiver to turn it in.",
+				["description"] = "|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw. An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to the questgiver to turn it in.",
 				["qg"] = 115818,	-- Captain Bramblebeard
 				["timeline"] = { ADDED_7_1_0 },
 				["classes"] = { ROGUE },

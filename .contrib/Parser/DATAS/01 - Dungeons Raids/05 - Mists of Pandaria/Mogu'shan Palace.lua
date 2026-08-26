@@ -183,7 +183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				e(698, {	-- Xin the Weaponmaster
 					["crs"] = { 61398 },	-- Xin the Weaponmaster
 					["groups"] = {
-						-- Avalable
+						-- Available
 						i(144214, {	-- Mogu'Dar, Blade of the Thousand Slaves
 							["timeline"] = { ADDED_7_1_5 },
 						}),

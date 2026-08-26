@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 							i(265328),	-- Azure Mantle of the Golden King
 							i(265325),	-- Azure Reach of the Golden King
 						}),
-						i(265316, {  	-- Cache of the Golden Challenger
+						i(265316, {	-- Cache of the Golden Challenger
 							i(265313),	-- Golden Chestplate of the Holy Warrior
 							i(265315),	-- Golden Greathelm of the Holy Warrior
 							i(265314),	-- Golden Gauntlets of the Holy Warrior

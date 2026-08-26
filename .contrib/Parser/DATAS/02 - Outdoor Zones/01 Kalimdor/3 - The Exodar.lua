@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -84,19 +84,20 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				{	-- A Donation of Silk
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
-					-- #if AFTER TBC
 					-- Blizzard did a dumb and moved the other quest from Darnassus.
-					["questID"] = 7798,		-- A Donation of Silk [DARN (TBC)]
-					-- #else
-					["questID"] = 10354,	-- A Donation of Silk [DARN (Classic)]
-					-- #endif
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["questID"] =
+						-- #if AFTER TBC
+						7798,		-- A Donation of Silk [DARN (TBC)]
+						-- #else
+						10354,	-- A Donation of Silk [DARN (Classic)]
+						-- #endif
+					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
@@ -104,13 +105,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				},
 				{	-- A Donation of Wool
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
-					-- #if AFTER TBC
 					-- Blizzard did a dumb and moved the other quest from Darnassus.
-					["questID"] = 7792,		-- A Donation of Wool [DARN (TBC)]
-					-- #else
-					["questID"] = 10352,	-- A Donation of Wool [DARN (Classic)]
-					-- #endif
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["questID"] =
+						-- #if AFTER TBC
+						7792,		-- A Donation of Wool [DARN (TBC)]
+						-- #else
+						10352,	-- A Donation of Wool [DARN (Classic)]
+						-- #endif
+					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
@@ -122,7 +124,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["maxReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 					["timeline"] = { REMOVED_4_0_3},
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -205,7 +207,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						BLOODMYST_ISLE,
 						-- #endif
 					},
-					["cost"] = { { "i", 23903, 1 } },	-- Nurguni's Supplies
+					["cost"] = { { "i", 23903, 1 } },	-- 1x Nurguni's Supplies
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 5, 1),
 				}),
@@ -254,7 +256,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 23926, 1 } },	-- Tome of Divinity
+					["cost"] = { { "i", 23926, 1 } },	-- 1x Tome of Divinity
 					["classes"] = { PALADIN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(12, 12, 10),
@@ -290,7 +292,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						BLOODMYST_ISLE,
 						-- #endif
 					},
-					["cost"] = { { "i", 23903, 1 } },	-- Nurguni's Supplies
+					["cost"] = { { "i", 23903, 1 } },	-- 1x Nurguni's Supplies
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 5, 1),
 				}),

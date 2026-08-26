@@ -320,10 +320,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 						q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event)	-- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2. so maybe just "you're in the area when the event starts," or something?  ETA: ALSO TRIGGERS WHILE ENGAGED WITH HONEY SMASHER. wtf is this quest!!!!!
 						q(57726),	-- triggers on Honey Smasher kill together with 57674 so putting it here
 						-- ( 57.1, 51.2 )	-- looting honey triggered 56170, 56414, 57702, 57703
-						q(56170),	-- \
-						q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event. appears to be repeatable
-						q(57702),	-- 	/
-						q(57703),	-- /
+						q(56170),	--	\
+						q(56414),	--	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event. appears to be repeatable
+						q(57702),	--	/
+						q(57703),	--	/
 						q(56113),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 						q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 						q(56114),	-- triggered after Honeyback Harvester event that completed round 29

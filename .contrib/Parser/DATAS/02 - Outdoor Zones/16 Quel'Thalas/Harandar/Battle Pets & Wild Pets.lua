@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(250137, {	-- Mud Potadpole (PET!)
 				["crs"] = { 249816 },	-- Mud Potadpole
 				["coords"] = {
+					{ 71.2, 29.8, MAP.MIDNIGHT.HARANDAR },
 				},
 			}),
 			i(250136, {	-- Rootling Nester (PET!)

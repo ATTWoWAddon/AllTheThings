@@ -80,11 +80,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 				q(63979, {	-- Things Best Kept Dark
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
-					["provider"] = { "n", 178908 },	-- Al'dalil
+					["qg"] = 178908,	-- Al'dalil
 					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
-					["groups"] = {
-						i(186182),	-- Cartel So Shipping Manifest (QI!)
-					},
+					["qi"] = 186182,	-- Cartel So Shipping Manifest (QI!)
 				}),
 				q(63980, {	-- Seeking Smugglers
 					["sourceQuests"] = {

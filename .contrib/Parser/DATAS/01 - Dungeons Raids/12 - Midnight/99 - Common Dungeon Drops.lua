@@ -16,9 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 	}, {
 		i(256714),	-- Design: Indecipherable Eversong Diamond (RECIPE!)
 		i(256704),	-- Design: Powerful Eversong Diamond (RECIPE!)
-		i(259372, {	-- Design: Shining Sin'dorei Hourglass (RECIPE!)
-			["description"] = "Unclear if this only drop in m+",
-		}),
+		i(259372),	-- Design: Shining Sin'dorei Hourglass (RECIPE!)
 		i(256720),	-- Design: Stoic Eversong Diamond (RECIPE!)
 		i(256708),	-- Design: Telluric Eversong Diamond (RECIPE!)
 	})),

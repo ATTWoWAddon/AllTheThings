@@ -492,7 +492,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							q(96831, {	-- Magister's Summons
 								["sourceQuest"] = 96410,	-- Seeking Knowledge: The Omnium Folio
 								["description"] = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
-								["qg"] = 265903, -- Magister's Missive
+								["qg"] = 265903,	-- Magister's Missive
 								["coords"] = {
 									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 									{ 40.2, 72.2, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -509,7 +509,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 								["qg"] = 264069,	-- Magister Umbric
 								["coord"] = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
-								["groups"] = { i(274576) },	-- Ritualized Arcana (QI!)
+								["qi"] = 274576,	-- Ritualized Arcana (QI!)
 							}),
 							------ Stay awhile and listen ------
 							hqt(97139, {	-- Stay awhile and listen: Grand Magister Rommath
@@ -527,7 +527,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 								["qg"] = 264070,	-- Grand Magister Rommath
 								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
-								["groups"] = { i(274577) },	-- Dark-Ley Coalescence (QI!)
+								["qi"] = 274577,	-- Dark-Ley Coalescence (QI!)
 							}),
 							q(96443, {	-- Seeking Knowledge Week 4 of 5: Magical Primessence
 								["sourceQuests"] = {
@@ -536,14 +536,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 								["qg"] = 264070,	-- Grand Magister Rommath
 								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								["qis"] = {
+									274583,	-- Primessence of Arcane (QI!)
+									274585,	-- Primessence of Death (QI!)
+									274580,	-- Primessence of Fel (QI!)
+									274582,	-- Primessence of Life (QI!)
+									274584,	-- Primessence of Light (QI!)
+									274581,	-- Primessence of Shadow (QI!)
+								},
 							}),
 							q(96444, {	-- Seeking Knowledge Week 5 of 5: Off-World Magic
 								["sourceQuests"] = {
 									96831,	-- Magister's Summons
 									96443,	-- Seeking Knowledge Week 4 of 5: Magical Primessence
 								},
-								["qg"] = 264096,	-- Magister Umbric
-								["coord"] = { 50.4, 10.5, 2649 },	-- The Lycaneum, Magister's Terrace
+								["qg"] = 264069,	-- Magister Umbric
+								["coord"] = { 60.5, 11.4, 2649 },	-- The Lycaneum, Magister's Terrace
+								["qis"] = {
+									274640,	-- Arcfluxion Hydrospore (QI!)
+									274620,	-- Singularian Cryocore (QI!)
+								},
 							}),
 						})),
 					}),

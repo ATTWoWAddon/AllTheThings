@@ -163,68 +163,164 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_
 				["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
 				["groups"] = {
 					-- bag
-					i(222982),	-- Earthen Satchel
+					i(222982, {	-- Earthen Satchel
+						["collectible"] = false,
+					}),
 					-- cloth
 					-- mage (a)
-					i(226800),	-- Earthen Backpack
-					i(219430),	-- Earthen Collar
-					i(219432),	-- Earthen Gloves
-					i(219431),	-- Earthen Slippers
-					i(219434),	-- Earthen Toolbelt
-					i(219433),	-- Earthen Waistcoat
+					i(226800, {	-- Earthen Backpack
+						["collectible"] = false,
+					}),
+					i(219430, {	-- Earthen Collar
+						["collectible"] = false,
+					}),
+					i(219432, {	-- Earthen Gloves
+						["collectible"] = false,
+					}),
+					i(219431, {	-- Earthen Slippers
+						["collectible"] = false,
+					}),
+					i(219434, {	-- Earthen Toolbelt
+						["collectible"] = false,
+					}),
+					i(219433, {	-- Earthen Waistcoat
+						["collectible"] = false,
+					}),
 					-- missing head and shoulder pieces but have back?
 					-- priest (a) / warlock (a)
-					i(219425),	-- Earthen Handbraces
-					i(219426),	-- Earthen Hood
-					i(219427),	-- Earthen Kilt
-					i(219424),	-- Earthen Sandals
-					i(219423),	-- Earthen Vestment
-					i(219428),	-- Earthen Waistguard
+					i(219425, {	-- Earthen Handbraces
+						["collectible"] = false,
+					}),
+					i(219426, {	-- Earthen Hood
+						["collectible"] = false,
+					}),
+					i(219427, {	-- Earthen Kilt
+						["collectible"] = false,
+					}),
+					i(219424, {	-- Earthen Sandals
+						["collectible"] = false,
+					}),
+					i(219423, {	-- Earthen Vestment
+						["collectible"] = false,
+					}),
+					i(219428, {	-- Earthen Waistguard
+						["collectible"] = false,
+					}),
 					-- missing shoulder pieces
 					-- leather
 					-- rogue (a) / monk (a)
-					i(219397),	-- Earthen Boots
-					i(219398),	-- Earthen Chain
-					i(219395),	-- Earthen Grips
-					i(219393),	-- Earthen Shoulders
-					i(219394),	-- Earthen Trousers
-					i(219396),	-- Earthen Vest
+					i(219397, {	-- Earthen Boots
+						["collectible"] = false,
+					}),
+					i(219398, {	-- Earthen Chain
+						["collectible"] = false,
+					}),
+					i(219395, {	-- Earthen Grips
+						["collectible"] = false,
+					}),
+					i(219393, {	-- Earthen Shoulders
+						["collectible"] = false,
+					}),
+					i(219394, {	-- Earthen Trousers
+						["collectible"] = false,
+					}),
+					i(219396, {	-- Earthen Vest
+						["collectible"] = false,
+					}),
 					-- mail
 					-- hunter (a)
-					i(219412),	-- Earthen Belt
-					i(219407),	-- Earthen Chestpiece
-					i(219410),	-- Earthen Coif
-					i(219411),	-- Earthen Greaves
-					i(219409),	-- Earthen Handguards
-					i(219408),	-- Earthen Striders
+					i(219412, {	-- Earthen Belt
+						["collectible"] = false,
+					}),
+					i(219407, {	-- Earthen Chestpiece
+						["collectible"] = false,
+					}),
+					i(219410, {	-- Earthen Coif
+						["collectible"] = false,
+					}),
+					i(219411, {	-- Earthen Greaves
+						["collectible"] = false,
+					}),
+					i(219409, {	-- Earthen Handguards
+						["collectible"] = false,
+					}),
+					i(219408, {	-- Earthen Striders
+						["collectible"] = false,
+					}),
 					-- hunter missing shoulder piece (bug reported)
 					-- shaman (a)
-					i(219436),	-- Earthen Chestguard
-					i(219435),	-- Earthen Cogwheel
-					i(219441),	-- Earthen Cord
-					i(219437),	-- Earthen Footguards
-					i(219438),	-- Earthen Handwraps
-					i(219440),	-- Earthen Leggings
-					i(219439),	-- Earthen Mining Hat
+					i(219436, {	-- Earthen Chestguard
+						["collectible"] = false,
+					}),
+					i(219435, {	-- Earthen Cogwheel
+						["collectible"] = false,
+					}),
+					i(219441, {	-- Earthen Cord
+						["collectible"] = false,
+					}),
+					i(219437, {	-- Earthen Footguards
+						["collectible"] = false,
+					}),
+					i(219438, {	-- Earthen Handwraps
+						["collectible"] = false,
+					}),
+					i(219440, {	-- Earthen Leggings
+						["collectible"] = false,
+					}),
+					i(219439, {	-- Earthen Mining Hat
+						["collectible"] = false,
+					}),
 					-- plate
 					-- warrior (h) / paladin (a)
-					i(219416),	-- Earthen Helm
-					i(219417),	-- Earthen Breastplate
-					i(219418),	-- Earthen Sabatons
-					i(219419),	-- Earthen Gauntlets
-					i(219420),	-- Earthen Legguards
-					i(219421),	-- Earthen Mantle
-					i(219422),	-- Earthen Girdle
+					i(219416, {	-- Earthen Helm
+						["collectible"] = false,
+					}),
+					i(219417, {	-- Earthen Breastplate
+						["collectible"] = false,
+					}),
+					i(219418, {	-- Earthen Sabatons
+						["collectible"] = false,
+					}),
+					i(219419, {	-- Earthen Gauntlets
+						["collectible"] = false,
+					}),
+					i(219420, {	-- Earthen Legguards
+						["collectible"] = false,
+					}),
+					i(219421, {	-- Earthen Mantle
+						["collectible"] = false,
+					}),
+					i(219422, {	-- Earthen Girdle
+						["collectible"] = false,
+					}),
 					-- weapons
-					i(222998),	-- Earthen Blade
-					i(223000),	-- Earthen Blunderbuss
-					i(222995),	-- Earthen Bulwark
-					i(222999),	-- Earthen Cleaver
-					i(222992),	-- Earthen Handaxe
-					i(223001),	-- Earthen Shillelagh
-					i(222993),	-- Earthen Shiv
-					i(222990),	-- Earthen Spire
-					i(222994),	-- Earthen Staff
+					i(222998, {	-- Earthen Blade
+						["collectible"] = false,
+					}),
+					i(223000, {	-- Earthen Blunderbuss
+						["collectible"] = false,
+					}),
+					i(222995, {	-- Earthen Bulwark
+						["collectible"] = false,
+					}),
+					i(222999, {	-- Earthen Cleaver
+						["collectible"] = false,
+					}),
+					i(222992, {	-- Earthen Handaxe
+						["collectible"] = false,
+					}),
+					i(223001, {	-- Earthen Shillelagh
+						["collectible"] = false,
+					}),
+					i(222993, {	-- Earthen Shiv
+						["collectible"] = false,
+					}),
+					i(222990, {	-- Earthen Spire
+						["collectible"] = false,
+					}),
+					i(222994, {	-- Earthen Staff
+						["collectible"] = false,
+					}),
 				},
 			}),
 			q(83328, {	-- The Analysis Interface (Hunter)

@@ -405,6 +405,7 @@ TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 MID_COOKING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(471005),	-- Midnight Cooking
 	r(818),		-- Cooking Fire
+	r(1295534, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Cornucopia
 	r(1226183),	-- Arcano Cutlets
 	r(1226194),	-- Argentleaf Tea
 	r(1226197),	-- Azeroot Tea

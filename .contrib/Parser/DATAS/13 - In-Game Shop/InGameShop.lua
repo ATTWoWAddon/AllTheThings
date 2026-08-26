@@ -662,6 +662,20 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_0_7 },
 		}),
 
+		------ Vibrant Petalweave Collection ------
+		iensemble(271089, {	-- Ensemble: Azure Petalweave
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		iensemble(271080, {	-- Ensemble: Blush Petalweave
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		iensemble(271071, {	-- Ensemble: Scarlet Petalweave
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		iensemble(271062, {	-- Ensemble: Sunlit Petalweave
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+
 		------ Single Pieces ------
 		-- #if AFTER 11.2.5
 		iensemble(255827, {	-- Collection: Wings of Awakening
@@ -924,6 +938,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_4_3_0 },
 		}),
 		-- #endif
+		i(274164, {	-- Hearthkeeper's Wandering Caravan (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
+		}),
 		i(239076, {	-- Herald of Sa'bak (MOUNT!)
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_1_7 },

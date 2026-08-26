@@ -1587,10 +1587,9 @@ i(248485);	-- Wormhole Generator: Quel'Thalas
 ------------------
 i(268456);	-- Animated Bench
 i(268455);	-- Enchanted Hourglass
+i(267472);	-- Gnomatic Projector
 i(272287);	-- Nap Mat
 i(272339);	-- Umbral Champion's Illustrious Banner
---- Unsorted ---
-i(267472);	-- Gnomatic Projector
 
 ------------------
 -- PATCH 12.0.7 --
@@ -1624,8 +1623,10 @@ i(268504);	-- Malfunctioning Staff
 i(278557);	-- Otoola's Recognition
 i(274921);	-- Pearl of Jubilation
 i(276229);	-- Preyhunter's Trophy Stand
+i(275825);	-- Ula'tek's Sssacrificial Rain
 --- Unsorted ---
 i(279052);	-- Ancient Amani Mask
 i(276207);	-- Preyhunter's Masquerade
-i(275825);	-- Ula'tek's Sssacrificial Rain
+i(274730);	-- Tuskarr Ice Fishing Tent
+i(274967);	-- Varian's Dragon Throne
 i(279590);	-- Venomous Champion's Illustrious Banner

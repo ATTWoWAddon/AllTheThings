@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
-							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
+							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
 							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
-							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
+							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
 							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(40561),	-- Leash of Heedless Magic
 						i(40566),	-- Unravelling Strands of Sanity
 						i(40560),	-- Leggings of the Wanton Spellcaster
-						i(40589),	-- Legplates of Soveriegnty
+						i(40589),	-- Legplates of Sovereignty
 						i(40558),	-- Arcanic Tramplers
 						i(40592),	-- Boots of Healing Energies
 						i(40549),	-- Boots of the Renewed Flight

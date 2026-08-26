@@ -151,6 +151,7 @@ local ABBREVIATIONS = {
 	["Shadowlands"] = "SL",
 	["Dragonflight"] = "DF",
 	["The War Within"] = "TWW",
+	["Midnight"] = "MID",
 	-- Dungeon & Raid
 	["Normal"] = "N",
 	["Heroic"] = "H",
@@ -159,9 +160,7 @@ local ABBREVIATIONS = {
 	["Raid Finder"] = "LFR",
 	["Looking For Raid"] = "LFR",
 	["10 Player"] = "10M",
-	["10 Player (Heroic)"] = "10M (H)",
 	["25 Player"] = "25M",
-	["25 Player (Heroic)"] = "25M (H)",
 	[BATTLEGROUNDS] = "BGs",
 	-- Random Season names where Blizzard used a word instead of number
 	["Season One"] = "Season 1",
@@ -198,6 +197,16 @@ local ABBREVIATIONS = {
 	["Mug'Zee, Heads of Security"] = "Mug'Zee",
 	["Sikran, Captain of the Sureki"] = "Sikran",
 	["Vexie and the Geargrinders"] = "Vexie & the Geargrinders",
+	-- MID
+	["The Voidspire"] = "Voidspire",
+	["The Tidebound Grotto"] = "Tidebound Grotto",
+	["Nymrissa Wavecaller"] = "Nymrissa",
+	["The Venomous Abyss"] = "Venomous Abyss",
+    ["Nek'zali the Soulcoiler"] = "Nek'zali",
+    ["Vashnik the Malignant"] = "Vashnik",
+    ["The Lost Explorers"] = "Lost Explorers",
+    ["The Twin Fangs"] = "Twin Fangs",
+    ["The Coiled Altar"] = "Coiled Altar",
 	-- Outdoor Zones
 	["One Does Not Simply Walk Into Harandar"] = "One Does Not Simply...",
 	["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
@@ -218,7 +227,10 @@ local ABBREVIATIONS = {
 	["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
 	["Forbidden Reach Racing Completionist: Gold > "] = "",
 	["Zaralek Cavern Racing Completionist: Gold > "] = "",
+	["Vaults of Atal'Utek"] = "Vaults",
+	["The Coiled Isle"] = "Coiled Isle",
 
+	["Vendors"] = "Vendor",
 	["WoW's Anniversary %> "] = "",
 	[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
 	["Emissary Quests"] = "Emissary",

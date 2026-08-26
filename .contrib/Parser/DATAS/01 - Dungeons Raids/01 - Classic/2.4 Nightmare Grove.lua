@@ -121,7 +121,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(20637),	-- Acid Inscribed Pauldrons
 							i(20635),	-- Jade Inlaid Vestments
 							i(20638),	-- Leggings of the Demented Mind
-							i(20639),	-- Strangley Glyphed Legplates
+							i(20639),	-- Strangely Glyphed Legplates
 							i(20636),	-- Hibernation Crystal
 						},
 					}),

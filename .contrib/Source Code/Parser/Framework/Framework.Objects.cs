@@ -34,6 +34,13 @@ namespace ATT
             /// </summary>
             public static Dictionary<string, string> SINGULAR_PLURAL_FIELDS_LONG;
 
+            private static HashSet<string> _PLURAL_FIELDS_LONG;
+            /// <summary>
+            /// The plural-only configured fields in case they are provided directly
+            /// </summary>
+            public static HashSet<string> PLURAL_FIELDS_LONG =>
+                _PLURAL_FIELDS_LONG ?? (_PLURAL_FIELDS_LONG = SINGULAR_PLURAL_FIELDS_LONG.Values.ToHashSet());
+
             /// <summary>
             /// A mapping of fields which should not be sorted because their order is utilized
             /// </summary>
@@ -2063,8 +2070,6 @@ end");
                     case "races_disp":
                     case "maps":
                     case "maps_disp":
-                    case "qgs":
-                    case "crs":
                     case "zone-artIDs":
                     case "zone-text-areas":
                     case "_quests":
@@ -2084,8 +2089,6 @@ end");
                     case "_objectiveItems":
                     case "_spellQuests":
                     case "_items":
-                    case "qis":
-                    case "poiIDs":
                     case "_questIDs":
                         MergeUniqueIntegerArrayData(item, field, value);
                         break;
@@ -2221,9 +2224,14 @@ end");
                             }
 
                             // Config-defined fields
-                            if (SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluarlFieldName))
+                            if (SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluralFieldName))
                             {
-                                MergeSingularFieldAsArray<long>(item, pluarlFieldName, value);
+                                MergeSingularFieldAsArray<long>(item, pluralFieldName, value);
+                                return;
+                            }
+                            if (PLURAL_FIELDS_LONG.Contains(field))
+                            {
+                                MergeUniqueIntegerArrayData(item, field, value);
                                 return;
                             }
 

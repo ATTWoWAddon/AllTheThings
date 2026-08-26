@@ -2,12 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local HUNGRY_NETHER_RAYS_GROUPS = {
-	objective(1, {	-- 0/10 Nether Ray Meal
-		["provider"] = { "i", 32834 },	-- Nether Ray Cage (Provided)
-		["cr"] = 23219,	-- Blackwind Warp Chaser
-	}),
-};
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
@@ -32,7 +26,9 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(867),	-- Explore Terokkar Forest
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, FACTION_SHATARI_SKYGUARD)),	-- Flying High Over Skettis
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, FACTION_SHATARI_SKYGUARD, {	-- Flying High Over Skettis
+						["timeline"] = { ADDED_2_1_0 },
+					})),
 					ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
 						["requireSkill"] = FISHING,
@@ -172,7 +168,6 @@ root(ROOTS.Zones, {
 					visit_exploration(3893,{coord={39.8,62.9,TEROKKAR_FOREST}}),	-- Ring of Observance
 					visit_exploration(3791,{coord={43.4,65.6,TEROKKAR_FOREST}}),	-- Sethekk Halls
 					visit_exploration(3958,{coord={30.6,75.4,TEROKKAR_FOREST}}),	-- Sha'tari Base Camp
-					exploration(3957),	-- Sha'tari Outpost
 					visit_exploration(3789,{coord={39.6,71.1,TEROKKAR_FOREST}}),	-- Shadow Labyrinth
 					visit_exploration(3888,{coord={31.7,53.2,TEROKKAR_FOREST}}),	-- Shadow Tomb
 					exploration(3703),	-- Shattrath City
@@ -202,6 +197,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(FACTION_SHATARI_SKYGUARD, {	-- Sha'tari Skyguard
 						["icon"] = 132191,
+						["timeline"] = { ADDED_2_1_0 },
 						["OnTooltip"] = [[_.OnTooltipDB.ForSkyguard]],
 					})),
 				}),
@@ -230,7 +226,7 @@ root(ROOTS.Zones, {
 							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
-					q(11665, { 	-- Crocolisks in the City
+					q(11665, {	-- Crocolisks in the City
 						["qg"] = 25580,	-- Old Man Barlo
 						["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 						["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY },
@@ -286,6 +282,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11029,	-- A Shabby Disguise
 						["qg"] = 23306,	-- Hazzik
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Darkscreecher Akkarai slain
 								["provider"] = { "n", 23161 },	-- Darkscreecher Akkarai
@@ -309,6 +306,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11056,	-- Hazzik's Bargain
 						["qg"] = 23306,	-- Hazzik
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
+						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Adversarial Bloodlines
 								["provider"] = { "i", 32742 },	-- Adversarial Bloodlines
@@ -326,14 +324,17 @@ root(ROOTS.Zones, {
 						["qg"] = 23038,	-- Sky Commander Adaris
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["maps"] = { SHATTRATH_CITY },
+						["timeline"] = { ADDED_2_1_0 },
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11028, {	-- Countdown to Doom
 						["sourceQuest"] = 11024,	-- An Ally in Lower City
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
+						["timeline"] = { ADDED_2_1_0 },
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11085, {	-- Escape from Skettis
 						["qg"] = 23383,	-- Skyguard Prisoner
+						["timeline"] = { ADDED_2_1_0 },
 						["coords"] = {
 							{ 61.0, 75.6, TEROKKAR_FOREST },
 							{ 68.4, 74.0, TEROKKAR_FOREST },
@@ -345,6 +346,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11008, {	-- Fires Over Skettis
 						["sourceQuest"] = 11098,	-- To Skettis!
 						["qg"] = 23048,	-- Sky Sergeant Doryn
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
 						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["isDaily"] = true,
@@ -363,6 +365,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11056, {	-- Hazzik's Bargain
 						["sourceQuest"] = 11028,	-- Countdown to Doom
 						["qg"] = 23306,	-- Hazzik
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 						["groups"] = {
 							objective(1, {	-- 0/1 Hazzik's Package
@@ -373,17 +376,28 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11093, {	-- Hungry Nether Rays
 						["qg"] = 23415,	-- Skyguard Handler Deesak
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
-						["groups"] = HUNGRY_NETHER_RAYS_GROUPS,
+						["groups"] = {
+							objective(1, {	-- 0/10 Nether Ray Meal
+								["provider"] = { "i", 32834 },	-- Nether Ray Cage (Provided)
+								["crs"] = {
+									23219,	-- Blackwind Warp Chaser
+									23439,	-- Hungry Nether Ray
+								},
+							}),
+						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11021, {	-- Ishaal's Almanac
 						["provider"] = { "i", 32523 },	-- Ishaal's Almanac
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 69.2, 78.2, TEROKKAR_FOREST },
 						["cr"] = 23066,	-- Talonpriest Ishaal
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11006, {	-- More Shadow Dust
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["cost"] = { { "i", 32388, 6 } },	-- Shadow Dust
@@ -395,6 +409,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11005, {	-- Secrets of the Talonpriests
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["qg"] = 23038,	-- Sky Commander Adaris
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["groups"] = {
 							objective(1, {	-- 0/1 Talonpriest Ishaal slain
@@ -411,6 +426,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11074, {	-- Tokens of the Descendants
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["qg"] = 23306,	-- Hazzik
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["cost"] = {
@@ -427,6 +443,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11073, {	-- Terokk's Downfall
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["qg"] = 23038,	-- Sky Commander Adaris
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["cr"] = 21838,	-- Terokk
 						["groups"] = {
@@ -445,6 +462,7 @@ root(ROOTS.Zones, {
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11004, {	-- World of Shadows
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["cost"] = { { "i", 32388, 6 } },	-- Shadow Dust
 						["groups"] = {
@@ -1272,6 +1290,21 @@ root(ROOTS.Zones, {
 							i(25971),	-- Stout Oak Longbow
 						},
 					}),
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11096, {	-- Threat from Above
+						["qg"] = 23449,	-- Yuula
+						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
+						["timeline"] = { ADDED_2_1_0 },
+						["groups"] = {
+							objective(1, {	-- 0/20 Gordunni Ogre
+								["providers"] = {
+									{ "n", 22143 },	-- Gordunni Back-Breaker
+									{ "n", 22144 },	-- Gordunni Elementalist
+									{ "n", 22148 },	-- Gordunni Head-Splitter
+									{ "n", 23022 },	-- Gordunni Soulreaper
+								},
+							}),
+						}
+					})),
 					q(10016, {	-- Timber Worg Tails
 						["qg"] = 18387,	-- Bertelm
 						["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
@@ -1288,6 +1321,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11098, {	-- To Skettis!
+						["sourceQuest"] = 11096,	-- Threat From Above
+						["qg"] = 23449,	-- Yuula
+						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
+						["timeline"] = { ADDED_2_1_0 },
+						["qi"] = 32848,	-- Explosives Package (QI!)
+					})),
 					q(10035, {	-- Torgos! (A)
 						["sourceQuest"] = 10033,	-- WANTED: Bonelashers Dead!
 						["qg"] = 18704,	-- Taela Everstride
@@ -1737,6 +1777,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, n(23367, {	-- Grella <Skyguard Quartermaster>
 						["coord"] = { 64.3, 66.2, TEROKKAR_FOREST },
+						["timeline"] = { ADDED_2_1_0 },
 						["groups"] = bubbleDownClassicRep(FACTION_SHATARI_SKYGUARD, {
 							{		-- Neutral
 							}, {	-- Friendly
@@ -1926,6 +1967,7 @@ root(ROOTS.Zones, {
 					})),
 					UNHOLY_ENCHANT,
 					i(32388, {	-- Shadow Dust
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							21911,	-- Skettis Soulcaller
 							21650,	-- Skettis Talonite
@@ -1938,6 +1980,7 @@ root(ROOTS.Zones, {
 					}),
 					i(32620, {	-- Time-Lost Scroll
 						["cost"] = { { "i", 32446, 1 } },	-- Elixir of Shadows
+						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
 							23066,	-- Talonpriest Ishaal
 							23068,	-- Talonpriest Zellek
@@ -1951,12 +1994,6 @@ root(ROOTS.Zones, {
 		})),
 	})),
 });
-
--- Now add the elixirs as to not mark them incorrectly.
-appendGroups({
-	i(28103),	-- Adept's Elixir
-	i(22831),	-- Elixir of Major Agility
-}, HUNGRY_NETHER_RAYS_GROUPS);
 
 -- Remove the phase flag.
 UNHOLY_ENCHANT.u = nil;

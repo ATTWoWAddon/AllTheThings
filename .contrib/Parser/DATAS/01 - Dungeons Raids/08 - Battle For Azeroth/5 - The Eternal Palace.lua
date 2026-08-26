@@ -307,7 +307,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			})),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				CommonBossDrops({
-					i(169329),	-- Eternal Ornament (QI!)
 					i(168625),	-- Vantus Rune Technique: The Eternal Palace [Rank 1] (RECIPE!)
 					i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
 					i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)

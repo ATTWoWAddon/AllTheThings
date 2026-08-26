@@ -860,14 +860,14 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				i(15200),	-- Senior Sergeant's Insignia (30)
 
 				-- Trinkets
-				i(18853, { ["classes"] = { DRUID }   }),	-- Insignia of the Horde
-				i(18846, { ["classes"] = { HUNTER }  }),	-- Insignia of the Horde
-				i(18850, { ["classes"] = { MAGE } 	 }),	-- Insignia of the Horde
-				i(18851, { ["classes"] = { PRIEST }  }),	-- Insignia of the Horde
-				i(18849, { ["classes"] = { ROGUE }   }),	-- Insignia of the Horde
-				i(18845, { ["classes"] = { SHAMAN }	 }),	-- Insignia of the Horde
-				i(18852, { ["classes"] = { WARLOCK } }),	-- Insignia of the Horde
-				i(18834, { ["classes"] = { WARRIOR } }),	-- Insignia of the Horde
+				i(18853, { ["classes"] = { DRUID }	}),	-- Insignia of the Horde
+				i(18846, { ["classes"] = { HUNTER }	}),	-- Insignia of the Horde
+				i(18850, { ["classes"] = { MAGE }	}),	-- Insignia of the Horde
+				i(18851, { ["classes"] = { PRIEST }	}),	-- Insignia of the Horde
+				i(18849, { ["classes"] = { ROGUE }	}),	-- Insignia of the Horde
+				i(18845, { ["classes"] = { SHAMAN }	}),	-- Insignia of the Horde
+				i(18852, { ["classes"] = { WARLOCK }	}),	-- Insignia of the Horde
+				i(18834, { ["classes"] = { WARRIOR }	}),	-- Insignia of the Horde
 				-- #ELSE
 				n(WEAPONS, {
 					moh(5, i(18831)),	-- High Warlord's Battle Axe
@@ -1060,14 +1060,14 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				i(15200),	-- Senior Sergeant's Insignia (30)
 
 				-- Trinkets
-				i(18853, { ["classes"] = { DRUID }   }),	-- Insignia of the Horde
-				i(18846, { ["classes"] = { HUNTER }  }),	-- Insignia of the Horde
-				i(18850, { ["classes"] = { MAGE } 	 }),	-- Insignia of the Horde
-				i(18851, { ["classes"] = { PRIEST }  }),	-- Insignia of the Horde
-				i(18849, { ["classes"] = { ROGUE }   }),	-- Insignia of the Horde
-				i(18845, { ["classes"] = { SHAMAN }	 }),	-- Insignia of the Horde
-				i(18852, { ["classes"] = { WARLOCK } }),	-- Insignia of the Horde
-				i(18834, { ["classes"] = { WARRIOR } }),	-- Insignia of the Horde
+				i(18853, { ["classes"] = { DRUID }	}),	-- Insignia of the Horde
+				i(18846, { ["classes"] = { HUNTER }	}),	-- Insignia of the Horde
+				i(18850, { ["classes"] = { MAGE }	}),	-- Insignia of the Horde
+				i(18851, { ["classes"] = { PRIEST }	}),	-- Insignia of the Horde
+				i(18849, { ["classes"] = { ROGUE }	}),	-- Insignia of the Horde
+				i(18845, { ["classes"] = { SHAMAN }	}),	-- Insignia of the Horde
+				i(18852, { ["classes"] = { WARLOCK }	}),	-- Insignia of the Horde
+				i(18834, { ["classes"] = { WARRIOR }	}),	-- Insignia of the Horde
 				-- #ENDIF
 			},
 		})),

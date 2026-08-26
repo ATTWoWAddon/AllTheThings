@@ -137,7 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(20637),	-- Acid Inscribed Pauldrons
 							i(20635),	-- Jade Inlaid Vestments
 							i(20638),	-- Leggings of the Demented Mind
-							i(20639),	-- Strangley Glyphed Legplates
+							i(20639),	-- Strangely Glyphed Legplates
 							i(20636),	-- Hibernation Crystal
 						},
 					}),
@@ -175,4 +175,12 @@ MATURE_BLUE_DRAGON_SINEW.u = nil;
 THE_EYE_OF_SHADOW.timeline = nil;
 MATURE_BLUE_DRAGON_SINEW.timeline = nil;
 -- #endif
+-- #endif
+
+-- #IF ANYCLASSIC
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
+	n(WORLD_BOSSES, {
+		q(78650),	-- Kazzak kill
+	}),
+}));
 -- #endif

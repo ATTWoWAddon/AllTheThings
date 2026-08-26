@@ -1216,9 +1216,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				["name"] = "Red Dragon Whelp",
 				["displayID"] = 107464,
 			}),
-			pet(3364, {	-- Striped Snakebiter (PET!)
-				["displayID"] = 107830,
-			}),
 			pet(3257, {	-- Test Beetle (PET!)
 				["displayID"] = 100375,
 			}),

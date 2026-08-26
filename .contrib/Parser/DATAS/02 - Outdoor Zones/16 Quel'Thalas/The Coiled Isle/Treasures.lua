@@ -9,14 +9,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				header(HEADERS.Object, 619906, {	-- Abandoned Amani Privateer's Cache
 					["description"] = "1. Fish out a 'Grisly Morsel' from 'Grisly Cod Pool'.\n2. Feed the 'Hungry Dolphin' to gain it as your companion.\n3. Dive down and swim around the bay area until the Dolphin helps you find both pieces of the key. DO NOT RESURFACE!\n4. Combine both halves of the key.\n5. Loot the treasure.",
 					["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },	-- General area where everything related to the treasure happens
-					["crs"] = {
-						258076,	-- Hungry Dolphin
-						258255,	-- Helpful Dolphin
-					},
+					["cr"] = 258255,	-- Helpful Dolphin
 					["groups"] = {
 						o(619768, {	-- Grisly Cod Pool
 							["coord"] = { 73.4, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(265525) },	-- Grisly Morsel
+						}),
+						n(258076, {	-- Hungry Dolphin
+							["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["cost"] = { { "i", 265525, 1 } },	-- 1x Grisly Morsel
 						}),
 						o(619921, {	-- Waterlogged Crate
 							["coord"] = { 73.1, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -59,9 +60,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 							["groups"] = { i(271815) },	-- Luminescent Pearl
 						}),
-						hqt(96001, { ["name"] = "Nacretta has taken the Luminescent Pearl.", }),	-- Triggered after Nacretta spots the Luminescent Pearl
-						hqt(96002, { ["name"] = "Nacretta has Dropped the Key.", }),	-- Triggered after the Dropped Key spawns
+						hqt(96001, {	-- Triggered after Nacretta spots the Luminescent Pearl
+							["name"] = "Nacretta has taken the Luminescent Pearl",
+							["cost"] = { { "i", 271815, 1 } },	-- 1x Luminescent Pearl
+						}),
+						hqt(96002, {	-- Triggered after the Dropped Key spawns
+							["name"] = "Nacretta has Dropped the Key",
+							["sourceQuest"] = 96001,	-- Nacretta has taken the Luminescent Pearl
+						}),
 						o(649082, {	-- Dropped Key
+							["sourceQuest"] = 96002,	-- Nacretta has Dropped the Key
 							["coord"] = { 70.6, 77.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(271881) },	-- Dropped Key
 						}),
@@ -152,14 +160,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["coord"] = { 70.2, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["groups"] = { i(269935) },	-- Forgotten Trinket
 						}),
-						hqt(95574, { ["name"] = "Lost Spirit freed.", }),	-- Triggered when Forgotten Trinket is given to the Lost Spirit
+						hqt(95574, { -- Triggered when Forgotten Trinket is given to the Lost Spirit
+							["name"] = "Lost Spirit freed.",
+							["cost"] = { { "i", 269935, 1 } },	-- 1x Forgotten Trinket
+						}),
 						o(642205, {	-- Forgotten Treasure
 							["questID"] = 95571,
 							["groups"] = {
 								i(244345),	-- Forgotten Amani Urn (DECOR!)
-								-- Exo Note: I think trinket reward is based on Class
-								i(274493),	-- Effigy of Ula'tek's Faithful
-								i(251783),	-- Lost Idol of the Hash'ey
 							},
 						}),
 					},
@@ -210,7 +218,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(281580) },	-- Pungent Atal'Utek Shroom (DECOR!)
 				}),
 				header(HEADERS.Object, 645208, {	-- Sunken Diver's Chest
-					["description"] = "You need to kill |cFFFFD700Ss'akrithos|r during 3 separate 'Mlurkrr Massacre' Curse Surges and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
+					["description"] = "You need to kill |cFFFFD700Glittering Grouper Brinetail|r and obtain 3 |cFFFFFFFFDiver's Key Fragments|r. Combining them gives you a |cFFFFFFFFDiver's Key|r.",
 					["groups"] = {
 						i(271423, {	-- Diver's Key
 							["cost"] = { { "i", 271424, 3 } },	-- 3x Diver's Key Fragment
@@ -352,11 +360,61 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			o(654991, {	-- Cracked Canopic Jar
 				["description"] = "Spawns randomly around the temples.",
 			}),
+			o_repeated({	-- Ossified Relic
+				["description"] = "Spawns randomly around the whole area once opted in to the Curse of the Isle or on a Prey.",
+				["sourceQuests"] = { 96474 },	-- Prey: Something for Astalor
+				["groups"] = {
+					-- Drops
+					i(274422),	-- Ossified Relic
+					-- Objects
+					o(653064),	-- Ossified Relic
+					o(652482),	-- Ossified Relic
+					o(673863),	-- Ossified Relic
+				},
+			}),
 			o(656044, {	-- Singing Shell
 				["description"] = "Spawns randomly around coastal regions.",
 			}),
 			o(656039, {	-- Venom-Clotted Bauble
 				["description"] = "Spawns randomly around the poisoned areas.",
+			}),
+			o(656046, {	-- Unfortunate Scout's Satchel
+				["minReputation"] = { FACTION_ZULJARRAS_FORCES, 9 },
+				["coords"] = {
+					{ 21.5, 64.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 26.3, 54.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 27.4, 59.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 33.4, 84.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 42.5, 24.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 44.7, 25.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 45.6, 50.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 46.0, 46.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 46.3, 61.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 49.2, 38.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 49.4, 69.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 50.0, 56.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 54.8, 42.1, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 57.8, 79.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 58.4, 83.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 62.6, 38.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 62.9, 82.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 64.1, 40.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 64.5, 48.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 64.8, 43.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 65.7, 75.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 66.0, 55.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 66.3, 29.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 66.3, 68.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 66.3, 68.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 66.9, 35.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 68.5, 81.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 69.7, 57.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+                    { 70.1, 77.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				},
+				["description"] = "Spawns randomly edges and ledges around the area after reaching Renown 9.",
+				["groups"] = {
+					i(280178),	-- Poison Dart Frog (PET!)
+				},
 			}),
 		}),
 	}),

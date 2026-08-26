@@ -630,7 +630,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
 					["modelScale"] = 3,
 					["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
-						8029,	-- Plans: Wicked Mithril Bade
+						8029,	-- Plans: Wicked Mithril Blade
 					}},
 				}),
 				o(123329, {	-- Baelog's Chest
@@ -640,7 +640,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				}),
 				o(125477, {	-- Conspicuous Urn
-					["description"] = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",
+					["description"] = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",
 					["groups"] = {
 						i(7671),	-- Shattered Necklace Topaz
 					},

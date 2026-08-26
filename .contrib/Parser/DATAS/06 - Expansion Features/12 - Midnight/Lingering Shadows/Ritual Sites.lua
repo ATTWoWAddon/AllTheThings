@@ -293,8 +293,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					header(HEADERS.Achievement, 63182, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Advanced Ritual Site Studies
 						q(96728, {	-- Ritual Site Studies: Week 1 of 3
 							["qgs"] = {
-								257416, -- Lady Darkglen
-								267813, -- Image of Lady Darkglen
+								257416,	-- Lady Darkglen
+								267813,	-- Image of Lady Darkglen
 							},
 							["coords"] = {
 								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
@@ -305,8 +305,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(96729, {	-- Ritual Site Studies: Week 2 of 3
 							["sourceQuest"] = 96728,	-- Ritual Site Studies: Week 1 of 3
 							["qgs"] = {
-								257416, -- Lady Darkglen
-								267813, -- Image of Lady Darkglen
+								257416,	-- Lady Darkglen
+								267813,	-- Image of Lady Darkglen
 							},
 							["coords"] = {
 								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
@@ -317,8 +317,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(96730, {	-- Ritual Site Studies: Week 3 of 3
 							["sourceQuest"] = 96729,	-- Ritual Site Studies: Week 2 of 3
 							["qgs"] = {
-								257416, -- Lady Darkglen
-								267813, -- Image of Lady Darkglen
+								257416,	-- Lady Darkglen
+								267813,	-- Image of Lady Darkglen
 							},
 							["coords"] = {
 								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
@@ -329,8 +329,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(96731, {	-- Advanced Ritual Site Studies: Week 4 of 6
 							["sourceQuest"] = 96730,	-- Ritual Site Studies: Week 3 of 3
 							["qgs"] = {
-								257416, -- Lady Darkglen
-								267813, -- Image of Lady Darkglen
+								257416,	-- Lady Darkglen
+								267813,	-- Image of Lady Darkglen
 							},
 							["coords"] = {
 								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
@@ -341,8 +341,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(96732, {	-- Advanced Ritual Site Studies: Week 5 of 6
 							["sourceQuest"] = 96731,	-- Advanced Ritual Site Studies: Week 4 of 6
 							["qgs"] = {
-								257416, -- Lady Darkglen
-								267813, -- Image of Lady Darkglen
+								257416,	-- Lady Darkglen
+								267813,	-- Image of Lady Darkglen
 							},
 							["coords"] = {
 								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },
@@ -353,8 +353,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(96733, {	-- Advanced Ritual Site Studies: Week 6 of 6
 							["sourceQuest"] = 96732,	-- Advanced Ritual Site Studies: Week 5 of 6
 							["qgs"] = {
-								257416, -- Lady Darkglen
-								267813, -- Image of Lady Darkglen
+								257416,	-- Lady Darkglen
+								267813,	-- Image of Lady Darkglen
 							},
 							["coords"] = {
 								{ 29.5, 77.9, MAP.MIDNIGHT.ZULAMAN },

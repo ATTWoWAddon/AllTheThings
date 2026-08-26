@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(31461),	-- A'dal's Gift
 						i(31464),	-- Naaru Belt of Precision
 						i(31462),	-- Shattrath's Champion Belt
-						i(31465),	-- Sha'tari Achorite's Cloak
+						i(31465),	-- Sha'tari Anchorite's Cloak
 						i(31460),	-- Sha'tari Vindicator's Waistguard
 					},
 				}),

@@ -10,8 +10,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			n(QUESTS, {
 				q(44486, {	-- Fel-Ravaged Tome
 					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
+					["qi"] = 141360,	-- Fel-Ravaged Tome (QI!)
 					["groups"] = {
-						i(141360),	-- Fel-Ravaged Tome (QI!)
 						crit(33146, {	-- Fel-Ravaged Tome
 							["achievementID"] = 11240,	-- Harbinger
 						}),

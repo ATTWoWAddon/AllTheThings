@@ -4,11 +4,12 @@
 
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(AZSHARA, {
-		-- #if BEFORE CATA
-		["lore"] = "A shattered stretch of coastline on Kalimdor's northeast, Azshara was once the greatest night elf metropolis. The city fell millennia ago in the War of the Ancients, but a few ragged buildings perch on the cliffs overlooking similar ruins among the coral. The Horde has established a small outpost, Grim Ulang, in the area, but naga are a constant danger.",
-		-- #else
-		["lore"] = "Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",
-		-- #endif
+		["lore"] =
+			-- #if AFTER CATA
+			"Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",
+			-- #else
+			"A shattered stretch of coastline on Kalimdor's northeast, Azshara was once the greatest night elf metropolis. The city fell millennia ago in the War of the Ancients, but a few ragged buildings perch on the cliffs overlooking similar ruins among the coral. The Horde has established a small outpost, Grim Ulang, in the area, but naga are a constant danger.",
+			-- #endif
 		["icon"] = 236714,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -2462,30 +2463,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(6651, {	-- Gatekeeper Rageroar
-					-- #if BEFORE 4.0.3
+					-- #if BEFORE CATA
 					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
-					["coord"] = { 38.4, 32.6, AZSHARA },
-					-- #elseif AFTER 4.1.0
-					-- The reputation penalty of killing this mob got removed with patch 4.1.0.
-					["coord"] = { 33.0, 32.6, AZSHARA },
-					-- #else
-					["description"] = "Killing him will reduce your Timbermaw reputation. (DON'T DO IT!)",
-					["coord"] = { 33.0, 32.6, AZSHARA },
 					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 33.0, 32.6, AZSHARA },
+						-- #else
+						{ 38.4, 32.6, AZSHARA },
+						-- #endif
+					},
 				}),
 				n(6650, {	-- General Fangferror
 					-- #if AFTER CATA
+					["description"] = "Spawns at the coordinates 62.7, 75.6. Usually respawns in 30 to 60 minutes after last killed.",
+					-- #endif
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 59.4, 77.6, AZSHARA },
 						{ 60.6, 77.6, AZSHARA },
 						{ 62.6, 76.8, AZSHARA },
 						{ 63.2, 79.2, AZSHARA },
 						{ 63.6, 81.4, AZSHARA },
+						-- #else
+						{ 41.6, 51.8, AZSHARA },
+						-- #endif
 					},
-					["description"] = "Spawns at the coordinates 62.7, 75.6. Usually respawns in 30 to 60 minutes after last killed.",
-					-- #else
-					["coord"] = { 41.6, 51.8, AZSHARA },
-					-- #endif
 					["groups"] = {
 						i(17054, {	-- Joonho's Mercy
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023

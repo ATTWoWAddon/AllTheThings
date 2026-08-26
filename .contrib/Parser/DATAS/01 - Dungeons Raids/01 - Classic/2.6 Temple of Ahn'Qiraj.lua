@@ -1070,10 +1070,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8802, {	-- The Savior of Kalimdor
 					["sourceQuest"] = 8801,	-- C'Thun's Legacy
-					["providers"] = {
-						{ "n", 15379 },	-- Caelestrasz (QG!)
-						{ "i", 21221 },	-- Eye of C'Thun (QI!)
-					},
+					["qg"] = 15379,	-- Caelestrasz
+					["qs"] = 21221,	-- Eye of C'Thun (QS!)
 					["groups"] = {
 						i(21712),	-- Amulet of the Fallen God
 						i(21710),	-- Cloak of the Fallen God

@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(144134, {	-- Grenadier's Belt
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144100, {	-- Saboteur's Stablizing Bracers
+						i(144100, {	-- Saboteur's Stabilizing Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 						i(144135, {	-- Pulled Grenade Pin
@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(80934, {	-- Pendant of Precise Timing
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80921, {	-- Saboteur's Stablizing Bracers
+						i(80921, {	-- Saboteur's Stabilizing Bracers
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -223,7 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(144134, {	-- Grenadier's Belt
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144100, {	-- Saboteur's Stablizing Bracers
+						i(144100, {	-- Saboteur's Stabilizing Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 						i(144135, {	-- Pulled Grenade Pin

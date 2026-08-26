@@ -744,6 +744,10 @@ local function cacheCreatureID(group, creatureID)
 		CacheField(group, "creatureID", creatureID);
 	end
 end
+local function cacheQuestStarterItem(group, qsItemID)
+	CacheField(group, "itemIDAsCost", qsItemID);
+	CacheField(group, "qItemID", qsItemID);
+end
 fieldConverters.creatureID = cacheCreatureID;
 fieldConverters.npcID = cacheCreatureID;
 fieldConverters.crs = function(group, value)
@@ -754,6 +758,11 @@ end
 fieldConverters.qgs = function(group, value)
 	for i=1,#value do
 		cacheCreatureID(group, value[i]);
+	end
+end
+fieldConverters.qss = function(group, value)
+	for i=1,#value do
+		cacheQuestStarterItem(group, value[i])
 	end
 end
 
@@ -784,17 +793,14 @@ local providerTypeConverters = {
 	["c"] = function(group, providerID)
 		CacheField(group, "currencyIDAsCost", providerID);
 	end,
-	["i"] = function(group, providerID, index)
-		CacheField(group, "itemIDAsCost", providerID);
-		CacheField(group, "qItemID", providerID);
-	end,
+	["i"] = cacheQuestStarterItem,
 };
-local function cacheProvider(group, provider, index)
-	providerTypeConverters[provider[1]](group, provider[2], index);
+local function cacheProvider(group, provider)
+	providerTypeConverters[provider[1]](group, provider[2]);
 end
 fieldConverters.providers = function(group, value)
 	for i=1,#value do
-		cacheProvider(group, value[i], i);
+		cacheProvider(group, value[i]);
 	end
 end
 

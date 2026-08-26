@@ -12,10 +12,10 @@ root(ROOTS.Zones, {
 						i(258219, {	-- Driftwood Barrel
 							["timeline"] = { ADDED_12_0_0 },
 						}),
-						i(258221, { 	-- Driftwood Junk Pile (DECOR!)
+						i(258221, {	-- Driftwood Junk Pile (DECOR!)
 							["timeline"] = { ADDED_12_0_0 },
 						}),
-						i(258223, { 	-- Murloc's Wind Chimes (DECOR!)
+						i(258223, {	-- Murloc's Wind Chimes (DECOR!)
 							["timeline"] = { ADDED_12_0_0 },
 						}),
 					},

@@ -162,7 +162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["creatureID"] = 17796,
 					["groups"] = {
 						i(27791),	-- Serpentcrest Life-Staff
-						i(27794),	-- Recoiless Rocket Ripper X-54
+						i(27794),	-- Recoilless Rocket Ripper X-54
 						i(27790),	-- Mask of Penance
 						i(27792),	-- Steam-Hinge Chain of Valor
 						-- #if AFTER 7.3.5

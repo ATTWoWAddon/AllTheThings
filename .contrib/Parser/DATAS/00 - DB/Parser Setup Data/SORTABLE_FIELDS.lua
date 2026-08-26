@@ -15,6 +15,7 @@ SORTABLE_FIELDS = {
 		"maps",
 		"maps_disp",
 		"qgs",
+		"qss",
 		"qis",
 		"crs",
 	},

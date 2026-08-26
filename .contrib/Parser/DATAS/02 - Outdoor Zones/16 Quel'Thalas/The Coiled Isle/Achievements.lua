@@ -5,22 +5,11 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
 		n(ACHIEVEMENTS, {
-			ach(63633, {	-- A Stack of Snacks
-				["coord"] = { 69.3, 52.3, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["cr"] = 256872,	-- Ki'clak <The Snip Shapper>
-				["groups"] = { i(279921) },	-- Ki'clak (PET!)
-			}),
 			ach(63358, {	-- Coiled to Strike
 				i(263873),	-- Amani Forge (DECOR!)
 			}),
-			ach(63381, {	-- Cursebreaker
-				title(777),	-- <Name> the Cursebreaker
-			}),
 			ach(63640),	-- Explore the Coiled Isle
 			ach(63382),	-- It's Definitely Something
-			ach(63432, {	-- Mysterious Mix Master
-				i(248962),	-- Mysterious Voodoo Mask (DECOR!)
-			}),
 			skyriding(ach(63428, {	-- Skyriding Glyphs: Blistering Terrace
 				["coord"] = { 42.9, 30.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 			})),
@@ -78,11 +67,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}},
 			})),
 			ach(62297),	-- The Curse of Ula'tek
-			pvp(ach(63167)),	-- Tour of Duty: The Coiled Isle
+			pvp(ach(63167, {	-- Tour of Duty: The Coiled Isle
+				i(275825),	-- Ula'tek's Sssacrificial Rain (TOY!)
+			})),
 			ach(63359, {	-- Treasures of the Coiled Isle
 				i(275656),	-- Auriferous Venomfang (MOUNT!)
 			}),
-			ach(63390),	-- Turn the Surge
 			ach(63639),	-- Ula'tek Uncoiled
 		}),
 	}),

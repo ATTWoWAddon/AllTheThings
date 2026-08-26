@@ -47,10 +47,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				ach(62773, {	-- Abyss Anglers: Jeju's New Rival
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						62772, -- Abyss Anglers: Now That's Anglin'
-						62762, -- Abyss Anglers: Top of the Class
-						62271, -- Abyss Anglers: Trench Berserker
-						62763, -- Abyss Anglers: Vintage Collector
+						62772,	-- Abyss Anglers: Now That's Anglin'
+						62762,	-- Abyss Anglers: Top of the Class
+						62271,	-- Abyss Anglers: Trench Berserker
+						62763,	-- Abyss Anglers: Vintage Collector
 					}},
 				}),
 				ach(62778),	-- Abyss Anglers: Luck of the Loa

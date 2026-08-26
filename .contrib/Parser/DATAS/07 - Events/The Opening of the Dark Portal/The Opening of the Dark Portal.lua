@@ -9,7 +9,7 @@ THE_OPENING_OF_THE_DARK_PORTAL = createHeader({
 		en = "The Opening of the Dark Portal",
 		de = "Die Öffnung des Dunklen Portals",
 		es = "La apertura del Portal Oscuro",
-		-- TODO: mx = "",
+		mx = "La apertura del Portal Oscuro",
 		fr = "L'ouverture de la Porte des ténèbres",
 		it = "L'apertura del Portale Oscuro",
 		ko = "어둠의 문 열기",
@@ -20,6 +20,8 @@ THE_OPENING_OF_THE_DARK_PORTAL = createHeader({
 	},
 	description = {
 		en = "The Opening of the Dark Portal was a one-time event that happened between Prepatch and the launch of TBC and subsequentially removed after. The tabard is the only tabard in the game with the Flex emote built into it and is highly covetted by collectors. Highlord Kruul would spawn randomly outside of the major cities and max level zones of the time.",
+		es = "La Apertura del Portal Oscuro fue un evento único que tuvo lugar entre el pre-parche y el lanzamiento de TBC, y posteriormente fue eliminado. El tabardo es el único del juego con el gesto cachas incorporado y es muy codiciado por los coleccionistas. El Alto Señor Kruul aparecía aleatoriamente fuera de las principales ciudades y zonas de nivel máximo de la época.",
+		mx = "La Apertura del Portal Oscuro fue un evento único que tuvo lugar entre el pre-parche y el lanzamiento de TBC, y posteriormente fue eliminado. El tabardo es el único del juego con el gesto cachas incorporado y es muy codiciado por los coleccionistas. El Alto Señor Kruul aparecía aleatoriamente fuera de las principales ciudades y zonas de nivel máximo de la época.",
 		cn = "黑暗之门开启是一次仅发生在《魔兽世界》燃烧的远征（TBC）前夕补丁与正式上线之间的一次性事件，之后便移除了。游戏中，这件公会徽章是唯一内置 “伸展（Flex）” 动作的徽章，深受收藏者觊觎。当时，大领主克鲁尔会随机出现在主要城市外以及满级区域",
 	},
 });

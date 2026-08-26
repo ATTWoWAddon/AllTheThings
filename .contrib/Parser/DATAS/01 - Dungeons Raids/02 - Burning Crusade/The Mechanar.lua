@@ -28,22 +28,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29659, {	-- Lost Treasure
-					-- #if BEFORE MOP
-					["description"] = "Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",
-					["isBounty"] = true,
-					-- #else
-					-- #if AFTER MOP
-					["description"] = "Automatically provided after killing either Gatewatcher. If autocomplete doesn't work, you can turn in at A'dal in Shattrath City.",
-					-- #else
-					["description"] = "Automatically provided after killing either Gatewatcher. This appears to be bugged.",
-					-- #endif
-					-- #endif
+					["description"] =
+						-- #if AFTER MOP
+						"Automatically provided after killing either Gatewatcher. If autocomplete doesn't work, you can turn in at A'dal in Shattrath City.",
+						-- #else
+						"Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",
+						-- #endif
 					["qg"] = 18481,	-- A'dal
 					["timeline"] = {
 						ADDED_4_3_0,
 						REMOVED_4_3_0,
 						ADDED_5_0_4,
 					},
+					-- #if BEFORE MOP
+					["isBounty"] = true,
+					-- #endif
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Blinding Fury

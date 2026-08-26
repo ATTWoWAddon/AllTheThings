@@ -341,7 +341,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
-							objective(1, {	-- 	Apexis Vibrations attained
+							objective(1, {	--	Apexis Vibrations attained
 								["provider"] = { "o", 185890 },	-- Apexis Relic
 							}),
 						},
@@ -410,6 +410,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11023, {	-- Bomb Them Again!
 						["sourceQuest"] = 11010,	-- Bombing Run
 						["qg"] = 23120,	-- Sky Sergeant Vanderlip
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -430,6 +431,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23120,	-- Sky Sergeant Vanderlip
 						["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
 						["classes"] = { DRUID },
+						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/15 Fel Cannonball Stacks destroyed
@@ -443,6 +445,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11010, {	-- Bombing Run (all others)
 						["sourceQuest"] = 11062,	-- The Skyguard Outpost
 						["qg"] = 23120,	-- Sky Sergeant Vanderlip
+						["timeline"] = { ADDED_2_1_0 },
 						["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
 						["classes"] = exclude(DRUID, ALL_CLASSES),
 						["lvl"] = lvlsquish(70, 70, 20),
@@ -1904,7 +1907,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_2_1_0 },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
-							objective(1, {	-- 	Apexis Vibrations attained
+							objective(1, {	--	Apexis Vibrations attained
 								["provider"] = { "o", 185890 },	-- Apexis Relic
 							}),
 						},

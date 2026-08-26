@@ -1579,7 +1579,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095, {	-- Blood Boil (PET!)
 								["timeline"] = { ADDED_7_1_0 },
@@ -1654,7 +1654,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51868),	-- Flesh-Carving Scalpel
 							i(51869),	-- The Facelifter
@@ -1710,7 +1710,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								crit(13011),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51846),	-- Bloodsipper
 							i(51838),	-- Lana'thel's Bloody Nail
@@ -1759,7 +1759,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4580),	-- All You Can Eat (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51815),	-- Bleak Coldarra Carver
 							i(51819),	-- Splintershard
@@ -1787,7 +1787,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { ADDED_7_1_0 },
@@ -1925,7 +1925,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095, {	-- Blood Boil (PET!)
 								["timeline"] = { ADDED_7_1_0 },
@@ -1963,7 +1963,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50060),	-- Faceplate of the Forgotten
 							i(50061),	-- Holiday's Grace
 							i(50059),	-- Horrific Flesh Epaulets
-							i(50038),	-- Carapce of Forgotten Kings
+							i(50038),	-- Carapace of Forgotten Kings
 							i(50037),	-- Fleshrending Gauntlets
 							i(50064),	-- Unclean Surgical Gloves
 							i(50036),	-- Belt of Broken Bones
@@ -2006,7 +2006,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(50179),	-- Last Word
 							i(50068),	-- Rigormortis
@@ -2058,7 +2058,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								crit(13013),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(50178),	-- Bloodfall
 							i(50181),	-- Divine Light
@@ -2108,7 +2108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(50423),	-- Sundial of Eternal Dusk
 							i(50421),	-- Sindragosa's Cruel Claw
@@ -2126,7 +2126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								title(140),	-- the Kingslayer
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { ADDED_7_1_0 },
@@ -2265,8 +2265,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
+							i(52029),	-- Protector's Mark of Sanctification (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142095, {	-- Blood Boil (PET!)
@@ -2349,8 +2349,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
+							i(52029),	-- Protector's Mark of Sanctification (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(50708),	-- Last Word
@@ -2404,8 +2404,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
+							i(52029),	-- Protector's Mark of Sanctification (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(50727),	-- Bloodfall
@@ -2457,8 +2457,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
+							i(52029),	-- Protector's Mark of Sanctification (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(50635),	-- Sundial of Eternal Dusk
@@ -2486,8 +2486,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50818),	-- Invincible (MOUNT!)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
-							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52026),	-- Protector's Mark of Sanctification (Normal)
+							i(52029),	-- Protector's Mark of Sanctification (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142099, {	-- Wicked Soul (PET!)

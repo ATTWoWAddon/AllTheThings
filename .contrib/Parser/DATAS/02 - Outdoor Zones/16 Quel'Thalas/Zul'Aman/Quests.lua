@@ -1578,7 +1578,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 92952,	-- Mission to Maisara
 						["qgs"] = {
 							253805,	-- Enchanted Amani Mask
-							259125, -- Enchanted Amani Mask (mobileNPC)
+							259125,	-- Enchanted Amani Mask (mobileNPC)
 						},
 						["coord"] = { 44.5, 36.7, MAP.MIDNIGHT.ZULAMAN },
 					}),

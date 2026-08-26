@@ -28,7 +28,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					q(89293, {	-- Special Assignment: Overshadowed
 						["coord"] = { 56.3, 27.3, KARESH },
 						["groups"] = {
-							i(244842),	-- Fabled Veteran's Cache
+							i(244842, {	-- Fabled Veteran's Cache
+								["sym"] = {	-- [K'aresh Zone Rewards content]
+									{"select","mapID",KARESH},{"pop"},
+									{"where","headerID",ZONE_REWARDS},{"pop"},
+									{"where","headerID",ARMOR},{"finalize"},
+
+									{"select","mapID",KARESH},{"pop"},
+									{"where","headerID",ZONE_REWARDS},{"pop"},
+									{"where","headerID",WEAPONS},
+								},
+							}),
 						},
 					}),
 				}),

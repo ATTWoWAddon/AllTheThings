@@ -5,8 +5,8 @@
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 89274,		-- Helm of the Shadowy Conquerer
-			SHOULDERS = 89277,	-- Shoulders of the Shadowy Conquerer
+			HELM = 89274,		-- Helm of the Shadowy Conqueror
+			SHOULDERS = 89277,	-- Shoulders of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			HELM = 89275,		-- Helm of the Shadowy Protector
@@ -19,8 +19,8 @@ local TOKENS = {
 	},
 	NORMAL = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 89235,		-- Helm of the Shadowy Conquerer
-			SHOULDERS = 89246,	-- Shoulders of the Shadowy Conquerer
+			HELM = 89235,		-- Helm of the Shadowy Conqueror
+			SHOULDERS = 89246,	-- Shoulders of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			HELM = 89236,		-- Helm of the Shadowy Protector
@@ -33,8 +33,8 @@ local TOKENS = {
 	},
 	HEROIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 89259,		-- Helm of the Shadowy Conquerer
-			SHOULDERS = 89262,	-- Shoulders of the Shadowy Conquerer
+			HELM = 89259,		-- Helm of the Shadowy Conqueror
+			SHOULDERS = 89262,	-- Shoulders of the Shadowy Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			HELM = 89260,		-- Helm of the Shadowy Protector
@@ -713,7 +713,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(86330),	-- Sandals of the Blackest Night
 							i(89883),	-- Shoulderpads of Twisted Fate
 							i(86329),	-- Sollerets of Instability
-							i(86339),	-- Sorceror's Belt of Final Winter
+							i(86339),	-- Sorcerer's Belt of Final Winter
 							i(86327),	-- Spirits of the Sun
 							i(86341),	-- Stalker's Cord of Eternal Autumn
 							i(86323),	-- Stuff of Nightmares
@@ -742,7 +742,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(86384),	-- Protector's Girdle of Endless Spring
 							i(86343),	-- Ranger's Chain of Unending Summer
 							i(86334),	-- Robes of the Unknown Fear
-							i(86339),	-- Sorceror's Belt of Final Winter
+							i(86339),	-- Sorcerer's Belt of Final Winter
 							i(86391),	-- Spiritsever
 							i(86341),	-- Stalker's Cord of Eternal Autumn
 							i(86331),	-- Taoren, the Soul Burner
@@ -839,7 +839,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(87162),	-- Sandals of the Blackest Night
 							i(89947),	-- Shoulderpads of Twisted Fate
 							i(87165),	-- Sollerets of Instability
-							i(87179),	-- Sorceror's Belt of Final Winter
+							i(87179),	-- Sorcerer's Belt of Final Winter
 							i(87163),	-- Spirits of the Sun
 							i(87180),	-- Stalker's Cord of Eternal Autumn
 							i(87160),	-- Stuff of Nightmares
@@ -869,7 +869,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							i(87185),	-- Protector's Girdle of Endless Spring
 							i(87182),	-- Ranger's Chain of Unending Summer
 							i(87169),	-- Robes of the Unknown Fear
-							i(87179),	-- Sorceror's Belt of Final Winter
+							i(87179),	-- Sorcerer's Belt of Final Winter
 							i(87166),	-- Spiritsever
 							i(87180),	-- Stalker's Cord of Eternal Autumn
 							i(87168),	-- Taoren, the Soul Burner

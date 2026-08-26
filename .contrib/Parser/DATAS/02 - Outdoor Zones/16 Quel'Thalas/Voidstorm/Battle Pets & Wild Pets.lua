@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(251005, {	-- Riftblade Familiar (PET!)
 				["crs"] = { 250680 },	-- Riftblade Familiar
 				["coords"] = {
+					{ 59.7, 71.9, MAP.MIDNIGHT.VOIDSTORM },
 					{ 64.8, 74.2, MAP.MIDNIGHT.VOIDSTORM },
 				},
 			}),

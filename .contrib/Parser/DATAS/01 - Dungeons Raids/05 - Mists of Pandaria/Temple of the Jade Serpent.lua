@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(143971, {	-- Serpentstrike Shoulderpads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144094, {	-- Cape of Entaglement
+						i(144094, {	-- Cape of Entanglement
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 						i(143988, {	-- Flameheart Sandals
@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(80867, {	-- Serpentstrike Shoulderpads
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80866, {	-- Cape of Entaglement
+						i(80866, {	-- Cape of Entanglement
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -313,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(143971, {	-- Serpentstrike Shoulderpads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144094, {	-- Cape of Entaglement
+						i(144094, {	-- Cape of Entanglement
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 						i(143988, {	-- Flameheart Sandals

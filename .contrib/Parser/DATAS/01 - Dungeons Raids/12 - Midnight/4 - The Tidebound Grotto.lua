@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1317, {	-- The Tidebound Grotto
 		["coord"] = { 59.5, 66.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 		["maps"] = {
-			2632, -- The Tidebound Grotto
+			2632,	-- The Tidebound Grotto
 		},
 		["isRaid"] = true,
 		["timeline"] = { ADDED_12_1_0 },
@@ -105,7 +105,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1317, {	-- The Tidebound Grotto
 		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
-			q(97771), -- Triggered after defeating Nymrissa Wavecaller (world tier)
+			q(97771),	-- Triggered after defeating Nymrissa Wavecaller (world tier)
 		},
 	}),
 }))

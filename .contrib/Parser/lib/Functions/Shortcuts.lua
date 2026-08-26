@@ -1746,6 +1746,18 @@ patch = function(major, minor, build)
 	return major + (minor / RevShift) + (build / 100000)
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
+dailyReward = function(questID, t)								-- A daily group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards)
+	local t = n(DAILY, t)
+	t.questID = questID
+	t.isDaily = true
+	return t
+end
+weeklyReward = function(questID, t)								-- A weekly group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards)
+	local t = n(WEEKLY, t)
+	t.questID = questID
+	t.isWeekly = true
+	return t
+end
 
 -- Region Specific Filters
 regionExclusive = function(region, t)
@@ -2534,7 +2546,7 @@ createHeader = function(data)
 						year = year + 1;
 					end
 				end
-			
+
 			else
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
 				return;

@@ -15,16 +15,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				q(53128, {	-- The Lord Admiral's Lament
 					["provider"] = { "o", 296479 },	-- Lord Admiral's Footlocker
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(163336),	-- Illegible Correspondence (QI!)
-					},
+					["qi"] = 163336,	-- Illegible Correspondence (QI!)
 				}),
 				q(53127, {	-- The Lord Admiral's Lament
 					["provider"] = { "o", 296479 },	-- Lord Admiral's Footlocker
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(163336),	-- Illegible Correspondence (QI!)
-					},
+					["qi"] = 163336,	-- Illegible Correspondence (QI!)
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({

@@ -6,11 +6,11 @@ local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105861,	-- Essence of the Cursed Conqueror
-			HELM = 99672,		-- Helm of the Cursed Conquerer
-			SHOULDERS = 99669,	-- Shoulders of the Cursed Conquerer
-			CHEST = 99678,		-- Chest of the Cursed Conquerer
-			GAUNTLETS = 99681,	-- Gauntlets of the Cursed Conquerer
-			LEGS = 99675,		-- Leggings of the Cursed Conquerer
+			HELM = 99672,		-- Helm of the Cursed Conqueror
+			SHOULDERS = 99669,	-- Shoulders of the Cursed Conqueror
+			CHEST = 99678,		-- Chest of the Cursed Conqueror
+			GAUNTLETS = 99681,	-- Gauntlets of the Cursed Conqueror
+			LEGS = 99675,		-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105860,	-- Essence of the Cursed Protector
@@ -32,11 +32,11 @@ local TOKENS = {
 	NORMAL = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105864,	-- Essence of the Cursed Conqueror
-			HELM = 99749,		-- Helm of the Cursed Conquerer
-			SHOULDERS = 99755,	-- Shoulders of the Cursed Conquerer
-			CHEST = 99743,		-- Chest of the Cursed Conquerer
-			GAUNTLETS = 99746,	-- Gauntlets of the Cursed Conquerer
-			LEGS = 99752,		-- Leggings of the Cursed Conquerer
+			HELM = 99749,		-- Helm of the Cursed Conqueror
+			SHOULDERS = 99755,	-- Shoulders of the Cursed Conqueror
+			CHEST = 99743,		-- Chest of the Cursed Conqueror
+			GAUNTLETS = 99746,	-- Gauntlets of the Cursed Conqueror
+			LEGS = 99752,		-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105863,	-- Essence of the Cursed Protector
@@ -58,11 +58,11 @@ local TOKENS = {
 	HEROIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105858,	-- Essence of the Cursed Conqueror
-			HELM = 99689,		-- Helm of the Cursed Conquerer
-			SHOULDERS = 99690,	-- Shoulders of the Cursed Conquerer
-			CHEST = 99686,		-- Chest of the Cursed Conquerer
-			GAUNTLETS = 99687,	-- Gauntlets of the Cursed Conquerer
-			LEGS = 99688,		-- Leggings of the Cursed Conquerer
+			HELM = 99689,		-- Helm of the Cursed Conqueror
+			SHOULDERS = 99690,	-- Shoulders of the Cursed Conqueror
+			CHEST = 99686,		-- Chest of the Cursed Conqueror
+			GAUNTLETS = 99687,	-- Gauntlets of the Cursed Conqueror
+			LEGS = 99688,		-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105857,	-- Essence of the Cursed Protector
@@ -84,11 +84,11 @@ local TOKENS = {
 	MYTHIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
 			ESSENCE = 105867,	-- Essence of the Cursed Conqueror
-			HELM = 99724,		-- Helm of the Cursed Conquerer
-			SHOULDERS = 99718,	-- Shoulders of the Cursed Conquerer
-			CHEST = 99715,		-- Chest of the Cursed Conquerer
-			GAUNTLETS = 99721,	-- Gauntlets of the Cursed Conquerer
-			LEGS = 99712,		-- Leggings of the Cursed Conquerer
+			HELM = 99724,		-- Helm of the Cursed Conqueror
+			SHOULDERS = 99718,	-- Shoulders of the Cursed Conqueror
+			CHEST = 99715,		-- Chest of the Cursed Conqueror
+			GAUNTLETS = 99721,	-- Gauntlets of the Cursed Conqueror
+			LEGS = 99712,		-- Leggings of the Cursed Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			ESSENCE = 105866,	-- Essence of the Cursed Protector
@@ -187,27 +187,27 @@ local TWISTED_TREASURES_OF_THE_VALE = i(104275, {	-- Twisted Treasures of the Va
 });
 local COALESCED_TURMOIL = i(105714, {	-- Coalesced Turmoil
 	-- #if AFTER 8.0.1
-	["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid. If you are 101+ then you will need to seek out each item based on their original sources. This change occured in Patch 8.0.1",
+	["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid. If you are 101+ then you will need to seek out each item based on their original sources. This change occurred in Patch 8.0.1",
 	-- #endif
 	["timeline"] = { ADDED_5_4_0, REMOVED_8_0_1 },
 	["crs"] = {
 		72249,	-- Galakras
 		71466,	-- Iron Juggernaut
 		71859,	-- Earthbreaker Haromm [Kor'kron Dark Shaman]
-		71858,	-- Wavebindeer Kardris [Kor'kron Dark Shaman]
+		71858,	-- Wavebinder Kardris [Kor'kron Dark Shaman]
 		71515,	-- General Nazgrim
 		71454,	-- Malkorok
-		71889,	-- Spoils of Pandari
+		71889,	-- Spoils of Pandaria
 		71529,	-- Thok the Bloodthirsty
 		71504,	-- Siegecrafter Blackfuse
 		71153,	-- Hisek the Swarmkeeper [Paragons of the Klaxxi]
 		71160,	-- Iyyokuk the Lucid [Paragons of the Klaxxi]
 		71154,	-- Ka'roz the Locust [Paragons of the Klaxxi]
-		71156,	-- Kaz'tik thee Manipulator [Paragons of the Klaxxi]
+		71156,	-- Kaz'tik the Manipulator [Paragons of the Klaxxi]
 		71161,	-- Kil'ruk the Wind-Reaver [Paragons of the Klaxxi]
 		71155,	-- Korven the Prime [Paragons of the Klaxxi]
 		71158,	-- Rik'kal the Dissector [Paragons of the Klaxxi]
-		71152,	-- Skeer the Bloodseaker [Paragons of the Klaxxi]
+		71152,	-- Skeer the Bloodseeker [Paragons of the Klaxxi]
 		71157,	-- Xaril the Poisoned Mind
 		71865,	-- Garrosh Hellscream
 	},
@@ -553,19 +553,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 
 						-- Tokens
-						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99672)),	-- Helm of the Cursed Conquerer
+						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99672)),	-- Helm of the Cursed Conqueror
 						tokencost(TOKENS.RAIDFINDER.PROTECTOR.ESSENCE, i(99673)),	-- Helm of the Cursed Protector
 						tokencost(TOKENS.RAIDFINDER.VANQUISHER.ESSENCE, i(99671)),	-- Helm of the Cursed Vanquisher
-						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99669)),	-- Shoulders of the Cursed Conquerer
+						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99669)),	-- Shoulders of the Cursed Conqueror
 						tokencost(TOKENS.RAIDFINDER.PROTECTOR.ESSENCE, i(99670)),	-- Shoulders of the Cursed Protector
 						tokencost(TOKENS.RAIDFINDER.VANQUISHER.ESSENCE, i(99668)),	-- Shoulders of the Cursed Vanquisher
-						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99678)),	-- Chest of the Cursed Conquerer
+						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99678)),	-- Chest of the Cursed Conqueror
 						tokencost(TOKENS.RAIDFINDER.PROTECTOR.ESSENCE, i(99679)),	-- Chest of the Cursed Protector
 						tokencost(TOKENS.RAIDFINDER.VANQUISHER.ESSENCE, i(99677)),	-- Chest of the Cursed Vanquisher
-						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99681)),	-- Gauntlets of the Cursed Conquerer
+						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99681)),	-- Gauntlets of the Cursed Conqueror
 						tokencost(TOKENS.RAIDFINDER.PROTECTOR.ESSENCE, i(99667)),	-- Gauntlets of the Cursed Protector
 						tokencost(TOKENS.RAIDFINDER.VANQUISHER.ESSENCE, i(99680)),	-- Gauntlets of the Cursed Vanquisher
-						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99675)),	-- Leggings of the Cursed Conquerer
+						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99675)),	-- Leggings of the Cursed Conqueror
 						tokencost(TOKENS.RAIDFINDER.PROTECTOR.ESSENCE, i(99676)),	-- Leggings of the Cursed Protector
 						tokencost(TOKENS.RAIDFINDER.VANQUISHER.ESSENCE, i(99674)),	-- Leggings of the Cursed Vanquisher
 					},
@@ -751,19 +751,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 
 						-- Tokens
-						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99749)),	-- Helm of the Cursed Conquerer
+						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99749)),	-- Helm of the Cursed Conqueror
 						tokencost(TOKENS.NORMAL.PROTECTOR.ESSENCE, i(99750)),	-- Helm of the Cursed Protector
 						tokencost(TOKENS.NORMAL.VANQUISHER.ESSENCE, i(99748)),	-- Helm of the Cursed Vanquisher
-						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99755)),	-- Shoulders of the Cursed Conquerer
+						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99755)),	-- Shoulders of the Cursed Conqueror
 						tokencost(TOKENS.NORMAL.PROTECTOR.ESSENCE, i(99756)),	-- Shoulders of the Cursed Protector
 						tokencost(TOKENS.NORMAL.VANQUISHER.ESSENCE, i(99754)),	-- Shoulders of the Cursed Vanquisher
-						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99743)),	-- Chest of the Cursed Conquerer
+						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99743)),	-- Chest of the Cursed Conqueror
 						tokencost(TOKENS.NORMAL.PROTECTOR.ESSENCE, i(99744)),	-- Chest of the Cursed Protector
 						tokencost(TOKENS.NORMAL.VANQUISHER.ESSENCE, i(99742)),	-- Chest of the Cursed Vanquisher
-						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99746)),	-- Gauntlets of the Cursed Conquerer
+						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99746)),	-- Gauntlets of the Cursed Conqueror
 						tokencost(TOKENS.NORMAL.PROTECTOR.ESSENCE, i(99747)),	-- Gauntlets of the Cursed Protector
 						tokencost(TOKENS.NORMAL.VANQUISHER.ESSENCE, i(99745)),	-- Gauntlets of the Cursed Vanquisher
-						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99752)),	-- Leggings of the Cursed Conquerer
+						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99752)),	-- Leggings of the Cursed Conqueror
 						tokencost(TOKENS.NORMAL.PROTECTOR.ESSENCE, i(99753)),	-- Leggings of the Cursed Protector
 						tokencost(TOKENS.NORMAL.VANQUISHER.ESSENCE, i(99751)),	-- Leggings of the Cursed Vanquisher
 					},
@@ -946,19 +946,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 
 						-- Tokens
-						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99689)),	-- Helm of the Cursed Conquerer
+						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99689)),	-- Helm of the Cursed Conqueror
 						tokencost(TOKENS.HEROIC.PROTECTOR.ESSENCE, i(99694)),	-- Helm of the Cursed Protector
 						tokencost(TOKENS.HEROIC.VANQUISHER.ESSENCE, i(99683)),	-- Helm of the Cursed Vanquisher
-						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99690)),	-- Shoulders of the Cursed Conquerer
+						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99690)),	-- Shoulders of the Cursed Conqueror
 						tokencost(TOKENS.HEROIC.PROTECTOR.ESSENCE, i(99695)),	-- Shoulders of the Cursed Protector
 						tokencost(TOKENS.HEROIC.VANQUISHER.ESSENCE, i(99685)),	-- Shoulders of the Cursed Vanquisher
 						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99686)),	-- Chest of the Cursed Conqueror
 						tokencost(TOKENS.HEROIC.PROTECTOR.ESSENCE, i(99691)),	-- Chest of the Cursed Protector
 						tokencost(TOKENS.HEROIC.VANQUISHER.ESSENCE, i(99696)),	-- Chest of the Cursed Vanquisher
-						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99687)),	-- Gauntlets of the Cursed Conquerer
+						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99687)),	-- Gauntlets of the Cursed Conqueror
 						tokencost(TOKENS.HEROIC.PROTECTOR.ESSENCE, i(99692)),	-- Gauntlets of the Cursed Protector
 						tokencost(TOKENS.HEROIC.VANQUISHER.ESSENCE, i(99682)),	-- Gauntlets of the Cursed Vanquisher
-						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99688)),	-- Leggings of the Cursed Conquerer
+						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99688)),	-- Leggings of the Cursed Conqueror
 						tokencost(TOKENS.HEROIC.PROTECTOR.ESSENCE, i(99693)),	-- Leggings of the Cursed Protector
 						tokencost(TOKENS.HEROIC.VANQUISHER.ESSENCE, i(99684)),	-- Leggings of the Cursed Vanquisher
 					},
@@ -1141,19 +1141,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 
 						-- Tokens
-						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99724)),	-- Helm of the Cursed Conquerer
+						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99724)),	-- Helm of the Cursed Conqueror
 						tokencost(TOKENS.MYTHIC.PROTECTOR.ESSENCE, i(99725)),	-- Helm of the Cursed Protector
 						tokencost(TOKENS.MYTHIC.VANQUISHER.ESSENCE, i(99723)),	-- Helm of the Cursed Vanquisher
 						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99718)),	-- Shoulders of the Cursed Conqueror
 						tokencost(TOKENS.MYTHIC.PROTECTOR.ESSENCE, i(99719)),	-- Shoulders of the Cursed Protector
 						tokencost(TOKENS.MYTHIC.VANQUISHER.ESSENCE, i(99717)),	-- Shoulders of the Cursed Vanquisher
-						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99715)),	-- Chest of the Cursed Conquerer
+						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99715)),	-- Chest of the Cursed Conqueror
 						tokencost(TOKENS.MYTHIC.PROTECTOR.ESSENCE, i(99716)),	-- Chest of the Cursed Protector
 						tokencost(TOKENS.MYTHIC.VANQUISHER.ESSENCE, i(99714)),	-- Chest of the Cursed Vanquisher
-						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99721)),	-- Gauntlets of the Cursed Conquerer
+						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99721)),	-- Gauntlets of the Cursed Conqueror
 						tokencost(TOKENS.MYTHIC.PROTECTOR.ESSENCE, i(99722)),	-- Gauntlets of the Cursed Protector
 						tokencost(TOKENS.MYTHIC.VANQUISHER.ESSENCE, i(99720)),	-- Gauntlets of the Cursed Vanquisher
-						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99712)),	-- Leggings of the Cursed Conquerer
+						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99712)),	-- Leggings of the Cursed Conqueror
 						tokencost(TOKENS.MYTHIC.PROTECTOR.ESSENCE, i(99713)),	-- Leggings of the Cursed Protector
 						tokencost(TOKENS.MYTHIC.VANQUISHER.ESSENCE, i(99726)),	-- Leggings of the Cursed Vanquisher
 					},

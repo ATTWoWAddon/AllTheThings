@@ -37,11 +37,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						201380,	-- Nokhud Hunter's Bow
 						201385,	-- Nokhud Centaur Warstaff
 						201383,	-- Nokhud Stalker's Spear
+						201442,	-- Primal Revenant's Frostblade
+						201443,	-- Primal Revenant's Icewall
 					},
-				},
-				["groups"] = {
-					i(201442),	-- Primal Revenant's Frostblade
-					i(201443),	-- Primal Revenant's Icewall
 				},
 			}),
 			o(376581, {	-- Clan Chest

@@ -5,11 +5,11 @@
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 95880,		-- Helm of the Crackling Conquerer
-			SHOULDERS = 95956,	-- Shoulders of the Crackling Conquerer
-			CHEST = 95823,		-- Chest of the Crackling Conquerer
-			GAUNTLETS = 95856,	-- Gauntlets of the Crackling Conquerer
-			LEGS = 95888,		-- Leggings of the Crackling Conquerer
+			HELM = 95880,		-- Helm of the Crackling Conqueror
+			SHOULDERS = 95956,	-- Shoulders of the Crackling Conqueror
+			CHEST = 95823,		-- Chest of the Crackling Conqueror
+			GAUNTLETS = 95856,	-- Gauntlets of the Crackling Conqueror
+			LEGS = 95888,		-- Leggings of the Crackling Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			HELM = 95881,		-- Helm of the Crackling Protector
@@ -28,11 +28,11 @@ local TOKENS = {
 	},
 	NORMAL = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 95577,		-- Helm of the Crackling Conquerer
-			SHOULDERS = 95578,	-- Shoulders of the Crackling Conquerer
-			CHEST = 95574,		-- Chest of the Crackling Conquerer
-			GAUNTLETS = 95575,	-- Gauntlets of the Crackling Conquerer
-			LEGS = 95576,		-- Leggings of the Crackling Conquerer
+			HELM = 95577,		-- Helm of the Crackling Conqueror
+			SHOULDERS = 95578,	-- Shoulders of the Crackling Conqueror
+			CHEST = 95574,		-- Chest of the Crackling Conqueror
+			GAUNTLETS = 95575,	-- Gauntlets of the Crackling Conqueror
+			LEGS = 95576,		-- Leggings of the Crackling Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			HELM = 95582,		-- Helm of the Crackling Protector
@@ -51,11 +51,11 @@ local TOKENS = {
 	},
 	HEROIC = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
-			HELM = 96624,		-- Helm of the Crackling Conquerer
-			SHOULDERS = 96700,	-- Shoulders of the Crackling Conquerer
-			CHEST = 96567,		-- Chest of the Crackling Conquerer
-			GAUNTLETS = 96600,	-- Gauntlets of the Crackling Conquerer
-			LEGS = 96632,		-- Leggings of the Crackling Conquerer
+			HELM = 96624,		-- Helm of the Crackling Conqueror
+			SHOULDERS = 96700,	-- Shoulders of the Crackling Conqueror
+			CHEST = 96567,		-- Chest of the Crackling Conqueror
+			GAUNTLETS = 96600,	-- Gauntlets of the Crackling Conqueror
+			LEGS = 96632,		-- Leggings of the Crackling Conqueror
 		},
 		PROTECTOR = {	-- Warrior, Hunter, Shaman, Monk
 			HELM = 96625,		-- Helm of the Crackling Protector
@@ -780,7 +780,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = { 68036 },	-- Durumu the Forgotten
 						["groups"] = {
 							header(HEADERS.Item, 212750, {	-- Grimoire of the Ancient Observer
-								["description"] = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumus Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
+								["description"] = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumu's Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
 								["cost"] = {{"i",211949,1}},	-- Durumu's Glass Pupil
 								["timeline"] = { ADDED_10_2_5 },
 								["groups"] = {
@@ -820,7 +820,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(817, {	-- Iron Qon
 						["crs"] = {
 							68081,	-- Dam'ren <The Frozen Sage>
-							68078,	-- Iron Qon <Mastern of Quilen>
+							68078,	-- Iron Qon <Master of Quilen>
 							68080,	-- Quet'zal <The Stormcaller>
 							68079,	-- Ro'shak <The Molten Flare>
 						},
@@ -1164,7 +1164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						e(817, {	-- Iron Qon
 							["crs"] = {
 								68081,	-- Dam'ren <The Frozen Sage>
-								68078,	-- Iron Qon <Mastern of Quilen>
+								68078,	-- Iron Qon <Master of Quilen>
 								68080,	-- Quet'zal <The Stormcaller>
 								68079,	-- Ro'shak <The Molten Flare>
 							},
@@ -1492,7 +1492,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				e(817, {	-- Iron Qon
 					["crs"] = {
 						68081,	-- Dam'ren <The Frozen Sage>
-						68078,	-- Iron Qon <Mastern of Quilen>
+						68078,	-- Iron Qon <Master of Quilen>
 						68080,	-- Quet'zal <The Stormcaller>
 						68079,	-- Ro'shak <The Molten Flare>
 					},
@@ -2013,7 +2013,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(817, {	-- Iron Qon
 						["crs"] = {
 							68081,	-- Dam'ren <The Frozen Sage>
-							68078,	-- Iron Qon <Mastern of Quilen>
+							68078,	-- Iron Qon <Master of Quilen>
 							68080,	-- Quet'zal <The Stormcaller>
 							68079,	-- Ro'shak <The Molten Flare>
 						},
@@ -2619,7 +2619,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(817, {	-- Iron Qon
 						["crs"] = {
 							68081,	-- Dam'ren <The Frozen Sage>
-							68078,	-- Iron Qon <Mastern of Quilen>
+							68078,	-- Iron Qon <Master of Quilen>
 							68080,	-- Quet'zal <The Stormcaller>
 							68079,	-- Ro'shak <The Molten Flare>
 						},
@@ -2827,10 +2827,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 		q(32745),	-- Horridon Dead - triggers on the first kill of the week
 		q(32746),	-- Zandalari Council Dead - triggers on the first kill of the week
 		q(32747),	-- Tortos Dead - triggers on the first kill of the week
-		q(32748),	-- Maegaera Dead - triggers on the first kill of the week
+		q(32748),	-- Megaera Dead - triggers on the first kill of the week
 		q(32749),	-- Ji'kun Dead - triggers on the first kill of the week
 		q(32750),	-- Durumu Dead - triggers on the first kill of the week
-		q(32751),	-- Primordious Dead - triggers on the first kill of the week
+		q(32751),	-- Primordius Dead - triggers on the first kill of the week
 		q(32752),	-- Dark Animus Dead - triggers on the first kill of the week
 		q(32754),	-- Iron Qon Dead - triggers on the first kill of the week
 		q(32755),	-- Empyreal Queens Dead - triggers on the first kill of the week

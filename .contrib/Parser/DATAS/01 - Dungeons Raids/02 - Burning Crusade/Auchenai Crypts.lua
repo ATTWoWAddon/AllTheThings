@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					}),
 					currency(1704, {	-- Spirit Shard
 						["timeline"] = { ADDED_8_0_1 },
-						["description"] =	-- From 9.1.5 (specific patch uncomfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
+						["description"] =	-- From 9.1.5 (specific patch unconfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
 							-- #if AFTER 9.1.5
 							"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
 							-- #else
@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27878),	-- Auchenai Death Shroud
 							i(27877),	-- Draenic Wildstaff
 							i(28268),	-- Natural Mender's Wraps
-							i(27937),	-- Sky Breakeer
+							i(27937),	-- Sky Breaker
 							i(27797),	-- Wastewalker Shoulderpads
 							i(27876),	-- Will of the Fallen Exarch
 						},

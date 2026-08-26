@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["qg"] = 114310,	-- Archmage Khadgar
 					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 					["lvl"] = 110,
-					["groups"] = { i(142213) },	-- Empowered Arcane Ward (QI!)
+					["qi"] = 142213,	-- Empowered Arcane Ward (QI!)
 				}),
 				q(44556, {	-- Return to Karazhan
 					["qg"] = 90417,	-- Archmage Khadgar
@@ -93,10 +93,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				q(44803, {	-- Return to Karazhan: Master of the House
 					["provider"] = { "i", 142246 },	-- Broken Pocket Watch
-					["groups"] = {
-						i(142248),	-- Exquisitely Stinky Cheese (QI!)
-						i(142249),	-- Falanaar Fine Vintage (QI!)
-						i(142275),	-- Master's Bell (QI!)
+					["qis"] = {
+						142248,	-- Exquisitely Stinky Cheese (QI!)
+						142249,	-- Falanaar Fine Vintage (QI!)
+						142275,	-- Master's Bell (QI!)
 					},
 				}),
 				q(45293, {	-- Return to Karazhan: New Shoes
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["qg"] = 114310,	-- Archmage Khadgar
 					["coord"] = { 46.9, 75.2, DEADWIND_PASS },
 					["lvl"] = 110,
-					["groups"] = { i(142208) },	-- Essence of Wyrmtongue (QI!)
+					["qi"] = 142208,	-- Essence of Wyrmtongue (QI!)
 				}),
 				q(44686, {	-- Thought Collection
 					["sourceQuests"] = {

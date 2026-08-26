@@ -129,7 +129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(96310, {	-- Disrupting the Order
 							["sourceQuest"] = 96053,	-- Surveying the Frozen Wastes
-							["qg"] = 263482, -- Riftblade Maella
+							["qg"] = 263482,	-- Riftblade Maella
 							["coord"] = { 59.5, 22.0, VAL },
 						}),
 						q(96338, {	-- Port of Entry
@@ -142,58 +142,58 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(96496, {	-- The Road Not Taken Twice
 							["sourceQuest"] = 96053,	-- Surveying the Frozen Wastes
-							["qg"] = 263482, -- Riftblade Maella
+							["qg"] = 263482,	-- Riftblade Maella
 							["coord"] = { 59.5, 22.0, VAL },
 						}),
 						hqt(97294, {	-- Stay awhile and listen: Riftblade Maella
 							["sourceQuest"] = 96473,	-- Imperator Pertinax
 							["name"] = "Stay awhile and listen: Riftblade Maella",
-							["qg"] = 263482, -- Riftblade Maella
+							["qg"] = 263482,	-- Riftblade Maella
 							["coord"] = { 59.5, 22.0, VAL },
 						}),
 						q(96382, {	-- A New Approach
-							["qg"] = 264879, -- Decimus
+							["qg"] = 264879,	-- Decimus
 							["coord"] = { 59.8, 22.2, VAL },
 							["groups"] = { i(275667) },	-- Veilcaster (QI!)
 						}),
 						q(96497, {	-- Spatial Reasoning
-							["qg"] = 263482, -- Riftblade Maella
+							["qg"] = 263482,	-- Riftblade Maella
 							["coord"] = { 59.5, 22.0, VAL },
 						}),
 						q(96475, {	-- Captivating Science
 							["sourceQuest"] = 96497,	-- Spatial Reasoning
-							["qg"] = 265334, -- Leona Darkstrider
+							["qg"] = 265334,	-- Leona Darkstrider
 							["coord"] = { 63.7, 65.2, 2618 },	-- Void Acropolis
 						}),
 						q(96389, {	-- A Place to Negotiate
 							["sourceQuest"] = 96475,	-- Captivating Science
-							["qg"] = 265334, -- Leona Darkstrider
+							["qg"] = 265334,	-- Leona Darkstrider
 							["coord"] = { 63.7, 65.2, 2618 },	-- Void Acropolis
 						}),
 						q(97077, {	-- A Shot at the Dark
 							["sourceQuest"] = 96389,	-- A Place to Negotiate
-							["qg"] = 267877, -- Leona Darkstrider
+							["qg"] = 267877,	-- Leona Darkstrider
 							["coord"] = { 61.2, 70.0, VAL },
 						}),
 						q(97034, {	-- Vanquish the Warmonger
-							["qg"] = 264879, -- Decimus
+							["qg"] = 264879,	-- Decimus
 							["coord"] = { 59.8, 22.2, VAL },
 							["groups"] = { i(277116) },	-- Warmonger's Voidplate (QI!)
 						}),
 						q(97035, {	-- Depose the Deranged
 							["sourceQuest"] = 97034,	-- Vanquish the Warmonger
-							["qg"] = 264941, -- Impotus
+							["qg"] = 264941,	-- Impotus
 							["coord"] = { 62.3, 21.8, VAL },
 						}),
 						q(97036, {	-- Umbral Title Bout
 							["sourceQuest"] = 97035,	-- Depose the Deranged
-							["qg"] = 267578, -- Impotus
+							["qg"] = 267578,	-- Impotus
 							["coord"] = { 62.3, 21.8, VAL },
 						}),
 						-- Repeatable
 						q(96716, {	-- Showdown on Val (Low Level)
 							["qgs"] = {
-								263479, -- Riftblade Maella
+								263479,	-- Riftblade Maella
 								263482,	-- Riftblade Maella
 							},
 							["coords"] = {
@@ -207,7 +207,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(96713, {	-- Showdown on Val
 							["sourceQuest"] = 96051,	-- Through the Cold Rift
 							["qgs"] = {
-								263479, -- Riftblade Maella
+								263479,	-- Riftblade Maella
 								263482,	-- Riftblade Maella
 							},
 							["coords"] = {
@@ -222,7 +222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(96714, {	-- Showdown on Val (Heroic)
 							["sourceQuest"] = 96051,	-- Through the Cold Rift
 							["qgs"] = {
-								263479, -- Riftblade Maella
+								263479,	-- Riftblade Maella
 								263482,	-- Riftblade Maella
 							},
 							["coords"] = {
@@ -436,6 +436,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						q(95404, {	-- Freeze Range Eggs
 							["coord"] = { 56.0, 49.6, VAL },
+						}),
+						q(95402, {	-- Ignoble Gas Collector
+							["coord"] = { 41.6, 73.5, VAL },
 						}),
 						q(96400, {	-- Lingering Corruption
 							["coord"] = { 68.6, 22.2, 2621 },	-- Forgotten Depths

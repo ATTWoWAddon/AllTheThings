@@ -7456,7 +7456,7 @@ hqt(93569)})}}),
 m(2393,{maps={2443},g={
 h(-45,{
 hqt(93067),
-hqt(93275,{an="i:232875",isWeekly=1}),
+hqt(93275,{an="i:232875",awp=120001,isWeekly=1,rwp=120100}),
 hqt(93789),
 hqt(94419,{awp=120001,rwp=120100}),
 hqt(94410),
@@ -7745,7 +7745,8 @@ hqt(93639,{an="n:238498",isDaily=1}),
 hqt(93635,{an="n:245691",isDaily=1}),
 hqt(95471,{an="n:242035",isDaily=1}),
 hqt(93636,{an="n:242024",isDaily=1}),
-hqt(88532,{an="n:247096",isDaily=1})}),
+hqt(88532,{an="n:247096",isDaily=1}),
+hqt(97419,{an="n:265237",isDaily=1})}),
 prof(197,{
 hqt(89422),
 hqt(89423),
@@ -7764,6 +7765,17 @@ hqt(95040)})}}),
 h(-579,{awp=120000,e=9,g={
 h(-45,{e=9,g={
 hqt(95067,{e=9,isDaily=1})}})}})}),
+m(2537,{lvl=80,g={
+m(2512,{lvl=90,g={
+m(2509,{
+ah(63598,{type="a",g={
+hqt(96041,{repeatable=1}),
+hqt(96037,{repeatable=1}),
+hqt(96032,{repeatable=1}),
+hqt(96042,{repeatable=1}),
+hqt(96043,{repeatable=1}),
+hqt(96034,{repeatable=1}),
+hqt(96040,{repeatable=1})}})})}})}}),
 prof(171,{awp=70003,g={
 x(7,{
 hqt(42083)})}}),

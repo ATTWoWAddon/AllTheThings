@@ -49,21 +49,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.THOUSAND_BOAT_BASH, n(THOUSAND_BOAT_BASH_
 		}),
 		q(45810, {	-- The Gnomes Stole Our Bombs!
 			["races"] = HORDE_ONLY,
-			["groups"] = {
-				i(143952),	-- Celebratory Shrapnel Mine (QI!)
-				i(143951),	-- Crate of Giant Fireworks (QI!)
-				i(143950),	-- The Kablamminator (QI!)
-				i(144073),	-- Ship Mast
+			["qis"] = {
+				143952,	-- Celebratory Shrapnel Mine (QI!)
+				143951,	-- Crate of Giant Fireworks (QI!)
+				143950,	-- The Kablamminator (QI!)
 			},
+			["groups"] = { i(144073) },	-- Ship Mast
 		}),
 		q(45811, {	-- The Goblins Stole Our Bombs!
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
-				i(144033),	-- Enormous Crate of Tiny Bombs (QI!)
-				i(144034),	-- Nagrand Cherry-Bomb (QI!)
-				i(144032),	-- Party Dynamite (QI!)
-				i(144073),	-- Ship Mast
+			["qis"] = {
+				144033,	-- Enormous Crate of Tiny Bombs (QI!)
+				144034,	-- Nagrand Cherry-Bomb (QI!)
+				144032,	-- Party Dynamite (QI!)
 			},
+			["groups"] = { i(144073) },	-- Ship Mast
 		}),
 	})),
 }))));

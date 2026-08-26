@@ -36,46 +36,20 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					12279,	-- Mechanical Brawler
 					12285,	-- Undead Brawler
 				}},
-				["groups"] = {
-					i(156666),	-- Master Trainer's Tabard
-				},
+				["groups"] = { i(156666) },	-- Master Trainer's Tabard
 			})),
-			ach(12280, {	-- Aquatic Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12281, {	-- Beast Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12284, {	-- Critter Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12287, {	-- Dragonkin Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12282, {	-- Elemental Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12286, {	-- Flying Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12289, {	-- Humanoid Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12283, {	-- Magic Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12279, {	-- Mechanical Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(12285, {	-- Undead Brawler
-				["timeline"] = { ADDED_7_3_5 },
-			}),
-			ach(8297, {	-- Merciless Pet Brawler (10)
-				["timeline"] = { ADDED_5_3_0 },
-			}),
-			ach(8298, {	-- Vengeful Pet Brawler (50)
-				["timeline"] = { ADDED_5_3_0 },
-			}),
+			ach(12280, { ["timeline"] = { ADDED_7_3_5 } }),	-- Aquatic Brawler
+			ach(12281, { ["timeline"] = { ADDED_7_3_5 } }),	-- Beast Brawler
+			ach(12284, { ["timeline"] = { ADDED_7_3_5 } }),	-- Critter Brawler
+			ach(12287, { ["timeline"] = { ADDED_7_3_5 } }),	-- Dragonkin Brawler
+			ach(12282, { ["timeline"] = { ADDED_7_3_5 } }),	-- Elemental Brawler
+			ach(12286, { ["timeline"] = { ADDED_7_3_5 } }),	-- Flying Brawler
+			ach(12289, { ["timeline"] = { ADDED_7_3_5 } }),	-- Humanoid Brawler
+			ach(12283, { ["timeline"] = { ADDED_7_3_5 } }),	-- Magic Brawler
+			ach(12279, { ["timeline"] = { ADDED_7_3_5 } }),	-- Mechanical Brawler
+			ach(12285, { ["timeline"] = { ADDED_7_3_5 } }),	-- Undead Brawler
+			ach(8297, { ["timeline"] = { ADDED_5_3_0 } }),	-- Merciless Pet Brawler (10)
+			ach(8298, { ["timeline"] = { ADDED_5_3_0 } }),-- Vengeful Pet Brawler (50)
 			ach(8300, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {	-- Brutal Pet Brawler (250)
 				i(94191),	-- Stunted Direhorn (PET!)
 			})),
@@ -160,9 +134,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			crit(23595),	-- Winterspring Cub
 			crit(23600),	-- Xu-Fu, Cub of Xuen
 		})),
-		ach(8080, {	-- Fabled Pandaren Tamer
-			["timeline"] = { ADDED_5_2_0 },
-		}),
+		ach(8080, { ["timeline"] = { ADDED_5_2_0 } }),	-- Fabled Pandaren Tamer
 		ach(6608, {	-- Family Reunion
 			crit(19750),	-- Humanoid
 			crit(19751),	-- Dragonkin
@@ -183,14 +155,11 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		ach(6462),	-- Master Pet Battler (250)
 		ach(6591),	-- Grand Master Pet Battler (1000)
 		ach(6592),	-- Legendary Pet Battler (5000)
-		ach(9070, {	-- Overstuffed
-			["timeline"] = { ADDED_6_0_3_LAUNCH },
-		}),
-		ach(7936, {	-- Pandaren Spirit Tamer
-			["timeline"] = { ADDED_5_1_0 },
-		}),
+		ach(9070, { ["timeline"] = { ADDED_6_0_3_LAUNCH } }),	-- Overstuffed
+		ach(9463, { ["timeline"] = { ADDED_6_0_3_LAUNCH } }),	-- Draenic Pet Battler
+		ach(7936, { ["timeline"] = { ADDED_5_1_0 } }),	-- Pandaren Spirit Tamer
 		ach(12927, {	-- Polished Pet Charmer
-			["cost"] = {{"i", POLISHED_PET_CHARM, 500}},
+			["cost"] = { { "i", POLISHED_PET_CHARM, 500 } },
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
 		}),
 		ach(6578),	-- Pro Pet Group (15)
@@ -205,7 +174,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		ach(6580),	-- Rookie Pet Crew (30)
 		ach(6583),	-- Rookie Pet Mob (75)
 		ach(9712, {	-- Shiny Pet Charmer
-			["cost"] = {{"i", 116415, 500 }},	-- 500x Shiny Pet Charms
+			["cost"] = { { "i", 116415, 500 } },	-- 500x Shiny Pet Charms
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_2_5 },
 		}),
 		ach(6851, {	-- Take 'Em All On!

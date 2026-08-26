@@ -67,19 +67,21 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				["coord"] = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["groups"] = {
 					n(262455, {	-- Azta'rec ?
-						--["questID"] = XXXXX,	-- triggers on ? and ?? difficulties
+						["questID"] = 92888,
 						--["isDaily"] = true,
 						["groups"] = {
 							ach(63326, {	-- My Venomous Nemesis
 								i(276163),	-- Apophic Patagia (COSMETIC!)
 							}),
+							i(262391, {timeline={ADDED_12_1_0}}),	-- Ominous Dominus
 						},
 					}),
 					n(265500, {	-- Azta'rec ??
-						--["questID"] = XXXXX,	-- triggered ?? difficulty
+						["questID"] = 97913,
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
-								["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+								["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },	-- 1 Week Later unobtainable
 								["groups"] = {
 									title(776),	-- <Name>, Fabled Vanquisher of Azta'rec
 								},
@@ -106,99 +108,147 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(550),	-- High Explorer <Name>
 				})),
 				ach(63433, {	-- Midnight: Journey's End (Season 2)
-					-- TITLE!
+					title(774),	-- Snake Eater <Name>
 				}),
 			}),
 			n(CURIO, {
 				--Combat
+				i(249223),	-- Corrosive Bilespear
+				i(271132),	-- Essence Trap
+				i(249219),	-- Ouroboric Curse
 				--Utility
+				i(249227),	-- Dundun's Favor
+				i(249228),	-- Soul-Cracking Dreamcatcher
 				i(271130),	-- Venom Infusion
 			}),
 			mapped(n(DELVE_COMPLETION, {
 				n(ARMOR, {
 					filter(BACK_F, {
-						i(272227),	-- Galerider's Veil
-						i(272226),	-- Miststalker's Shroud
-						i(272230),	-- Pledgebearer's Pall
-						i(272225),	-- Pyrewalker's Mantle
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272227),	-- Galerider's Veil
+							i(272226),	-- Miststalker's Shroud
+							i(272230),	-- Pledgebearer's Pall
+							i(272225),	-- Pyrewalker's Mantle
+						},
 					}),
 					filter(CLOTH, {
-						i(272232),	-- Pyrewalker's Buskins
-						i(272231),	-- Pyrewalker's Doublet
-						i(272233),	-- Pyrewalker's Gloves
-						i(272236),	-- Pyrewalker's Mantlet
-						i(272234),	-- Pyrewalker's Miter
-						i(272237),	-- Pyrewalker's Obi
-						i(272235),	-- Pyrewalker's Treads
-						i(272238),	-- Pyrewalker's Wraps
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272232),	-- Pyrewalker's Buskins
+							i(272231),	-- Pyrewalker's Doublet
+							i(272233),	-- Pyrewalker's Gloves
+							i(272236),	-- Pyrewalker's Mantlet
+							i(272234),	-- Pyrewalker's Miter
+							i(272237),	-- Pyrewalker's Obi
+							i(272235),	-- Pyrewalker's Treads
+							i(272238),	-- Pyrewalker's Wraps
+						},
 					}),
 					filter(FINGER_F, {
-						i(272148),	-- Anguine Gyre
-						i(272147),	-- Colubrine Band
-						i(272149),	-- Hex Loop
-						i(272150),	-- Ouroboric Signet
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272148),	-- Anguine Gyre
+							i(272147),	-- Colubrine Band
+							i(272149),	-- Hex Loop
+							i(272150),	-- Ouroboric Signet
+						},
 					}),
 					filter(LEATHER, {
-						i(272239),	-- Miststalker's Brigandine
-						i(272245),	-- Miststalker's Cinch
-						i(272242),	-- Miststalker's Cowl
-						i(272243),	-- Miststalker's Cuisses
-						i(272241),	-- Miststalker's Grips
-						i(272244),	-- Miststalker's Spaulders
-						i(272240),	-- Miststalker's Striders
-						i(272246),	-- Miststalker's Wristbands
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272239),	-- Miststalker's Brigandine
+							i(272245),	-- Miststalker's Cinch
+							i(272242),	-- Miststalker's Cowl
+							i(272243),	-- Miststalker's Cuisses
+							i(272241),	-- Miststalker's Grips
+							i(272244),	-- Miststalker's Spaulders
+							i(272240),	-- Miststalker's Striders
+							i(272246),	-- Miststalker's Wristbands
+						},
 					}),
 					filter(MAIL, {
-						i(272247),	-- Galerider's Byrnie
-						i(272249),	-- Galerider's Chain Clasps
-						i(272248),	-- Galerider's Chausses
-						i(272251),	-- Galerider's Chausses
-						i(272250),	-- Galerider's Gaze
-						i(272253),	-- Galerider's Mail Skirt
-						i(272252),	-- Galerider's Mantle
-						i(272254),	-- Galerider's Mesh Wraps
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272247),	-- Galerider's Byrnie
+							i(272249),	-- Galerider's Chain Clasps
+							i(272248),	-- Galerider's Chausses
+							i(272251),	-- Galerider's Chausses
+							i(272250),	-- Galerider's Gaze
+							i(272253),	-- Galerider's Mail Skirt
+							i(272252),	-- Galerider's Mantle
+							i(272254),	-- Galerider's Mesh Wraps
+						},
 					}),
 					filter(NECK_F, {
-						i(272229),	-- Serpentine Talisman
-						i(272228),	-- Whispering Periapt
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272229),	-- Serpentine Talisman
+							i(272228),	-- Whispering Periapt
+						},
 					}),
 					filter(PLATE, {
-						i(272255),	-- Pledgebearer's Cuirass
-						i(272257),	-- Pledgebearer's Gauntlets
-						i(272261),	-- Pledgebearer's Girdle
-						i(272258),	-- Pledgebearer's Mask
-						i(272260),	-- Pledgebearer's Pauldrons
-						i(272259),	-- Pledgebearer's Poleyns
-						i(272256),	-- Pledgebearer's Sabatons
-						i(272262),	-- Pledgebearer's Splints
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272255),	-- Pledgebearer's Cuirass
+							i(272257),	-- Pledgebearer's Gauntlets
+							i(272261),	-- Pledgebearer's Girdle
+							i(272258),	-- Pledgebearer's Mask
+							i(272260),	-- Pledgebearer's Pauldrons
+							i(272259),	-- Pledgebearer's Poleyns
+							i(272256),	-- Pledgebearer's Sabatons
+							i(272262),	-- Pledgebearer's Splints
+						},
+					}),
+					filter(TRINKET_F, {
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(274494),	-- Chiral Marrowgrafter
+							i(274493),	-- Effigy of Ula'Tek's Faithful
+							i(251786),	-- Ever-Collapsing Void Fissure
+							i(251792),	-- Glorious Crusader's Keepsake
+							i(251785),	-- Void-Reaper's Libram
+						},
+					}),
+					filter(SHIELDS, {
+						["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
+						["groups"] = {
+							i(272276),	-- Wailing Bulwark
+						},
 					}),
 				}),
 				filter(MISC, {
-					i(273000),	-- Corrosive Soul
+					i(279290),	-- Fang Lover's (CI!)
 					i(274374, {	-- Trovehunter's Bounty
-						["providers"] = {{"o",584518}}, -- Bountiful Heavy Trunk (verified)
+						["providers"] = { { "o",584518 } },	-- Bountiful Heavy Trunk (verified)
 					}),
 				}),
 				filter(QUEST_ITEMS, {
 					-- Currently unaware of objectIDs so treated just as reward
+					i(274965),	-- Ancient Curio (Combat) (QI!/QS!)
 					i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
 					i(277506),	-- Codex of the Soul Coilers (QS!)
+					i(279012),	-- Cracked Keystone (QI!/QS!/CI!)
 				}),
 				n(WEAPONS, {
-					i(272270),	-- Bonedust Pestle
-					i(272280),	-- Exhumed Soul-Cleaver
-					i(272266),	-- Forgotten Eidolon's Dagger
-					i(272272),	-- Harrowed Partisan
-					i(272268),	-- Mask-Etcher
-					i(272274),	-- Realm Splitter
-					i(272278),	-- Recurve Wisp-Shooter
-					i(272269),	-- Soulsealer's Headstone
-					i(272275),	-- Soulsinger's Horn
-					i(272271),	-- Spiritbound Focus
-					i(272277),	-- Spirit-Reaver
-					i(272283),	-- Swordsman's Emanation
-					i(272267),	-- Uncoffined Labrys
-					i(272273),	-- Unshrined Ceremonial Scepter
+					["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
+					["groups"] = {
+						i(272270),	-- Bonedust Pestle
+						i(272280),	-- Exhumed Soul-Cleaver
+						i(272266),	-- Forgotten Eidolon's Dagger
+						i(272272),	-- Harrowed Partisan
+						i(272268),	-- Mask-Etcher
+						i(251885),	-- Radiant Foil
+						i(272274),	-- Realm Splitter
+						i(272278),	-- Recurve Wisp-Shooter
+						i(272269),	-- Soulsealer's Headstone
+						i(272275),	-- Soulsinger's Horn
+						i(272271),	-- Spiritbound Focus
+						i(272277),	-- Spirit-Reaver
+						i(272283),	-- Swordsman's Emanation
+						i(272267),	-- Uncoffined Labrys
+						i(272273),	-- Unshrined Ceremonial Scepter
+					},
 				}),
 			})),
 			n(FACTIONS, {
@@ -227,6 +277,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["maps"] = { VENOMFALL_DEEPS },
 					["groups"] = { i(275988) },	-- Corrosive Victory (TOY!)
 				}),
+				q(96612, {	-- Ancient Curiosity: Combat
+					["provider"] = { "i", 274965 },	-- Ancient Curio (QI!/QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
 				q(96615, {	-- Ancient Curiosity: Utility
 					["provider"] = { "i", 274970 },	-- Ancient Curio (QI!/QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
@@ -234,13 +288,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				q(97616, {	-- Corrosive Gifts: Corrosive Power
 					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
 					["maps"] = ALL_REGULAR_DELVES_MID,
+					["groups"] = { i(273000) },	-- Corrosive Soul
+				}),
+				q(97910, {	-- Cracked Keystone
+					["provider"] = { "i", 279012 },	-- Cracked Keystone (QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
 			}),
-			--[[mapped(n(TREASURES, {
+			mapped(n(TREASURES, {
 				o(656489, {	-- Azta'rec Cache
 					["questID"] = 92887,
 					["isWeekly"] = true,
-					["cost"] = { { "i", 253342, 1 } },	-- Beacon of Hope
+					["cost"] = { { "i", 275910, 1 } },	-- Scalebound Herald's Flute
 					["sym"] = {{"select","itemID",
 					--	264971,	-- Annihilation Rod (COSMETIC!)
 					--	264970,	-- Oblivion's Edge (COSMETIC!)
@@ -249,12 +308,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						265367,	-- Twilight Fang (COSMETIC!)
 					}},
 					["groups"] = {
-						i(262391),	-- Ominous Domanus (PET!)
+						i(262391),	-- Ominous Dominus (PET!)
 						i(264971),	-- Annihilation Rod (COSMETIC!)
 						i(264970),	-- Oblivion's Edge (COSMETIC!)
 					},
 				}),
-			})),--]]
+			})),
 			n(VENDORS, {
 				n(242398, {	-- Naleidea Rivergleam
 					["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -269,12 +328,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 	}),
 }))
 
---[[root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, {
-		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = {
-			n(DELVES_MID_S2, {
-			}),
-		},
+		n(DELVES_MID_S2, {
+			["timeline"] = { ADDED_12_1_0 },
+			["groups"] = {
+				q(95039),	-- triggered when buying Delver's Cosmetic Surprise Bag [275986]
+				q(98787),	-- triggered with completion of Slithering Spoils [97321]
+				--q(97041),	-- Azta'rec crests??
+			},
+		}),
 	}),
-}))--]]
+}))

@@ -1077,11 +1077,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32670, {	-- Learn to Ride
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Tauren upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Tauren upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Tauren upon reaching level 10.",
+						-- #else
+						"This quest is available to Tauren upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { TAUREN },
@@ -1407,11 +1408,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 32.8, 36.0, MULGORE },
 						-- #endif
 					},
-					-- #if AFTER CATA
-					["races"] = { TAUREN },
-					-- #else
-					["races"] = HORDE_ONLY,
-					-- #endif
+					["races"] =
+						-- #if AFTER CATA
+						TAUREN,
+						-- #else
+						HORDE_ONLY,
+						-- #endif
 					["lvl"] = lvlsquish(3, 3, 1),
 				}),
 				q(14440, {	-- Rites of the Earthmother (3/3)

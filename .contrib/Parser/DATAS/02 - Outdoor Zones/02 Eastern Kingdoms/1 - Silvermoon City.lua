@@ -132,6 +132,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(60, 60, 1),
 				}),
+				-- #if ANYCLASSIC
+				q(64319, {	-- A Study in Power
+					["sourceQuest"] = 9678,	-- The First Trial
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+				}),
+				-- #else
 				q(9681, {	-- A Study in Power
 					["sourceQuest"] = 9678,	-- The First Trial
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
@@ -141,6 +150,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(12, 12, 1),
 				}),
+				-- #endif
 				q(9721, {	-- A Summons from Lord Solanar
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
@@ -186,6 +196,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
+				-- #if ANYCLASSIC
+				q(63866, {	-- Claiming the Light
+					["sourceQuest"] = 64319,	-- A Study in Power
+					["qg"] = 17718,	-- Magister Astalor Bloodsworn
+					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["groups"] = {
+						objective(1, {	-- 0/1 Filled Shimmering Vessel
+							["providers"] = {
+								{ "i",  24156 },	-- Filled Shimmering Vessel
+								{ "i", 185956 },	-- Shimmering Vessel
+							},
+							["coord"] = { 92.1, 36.2, SILVERMOON_CITY },
+							["cr"] = 17544,	-- M'uru
+						}),
+					},
+				}),
+				-- #else
 				q(9684, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Claiming the Light
 					["sourceQuest"] = 9681,	-- A Study in Power
 					["qg"] = 17718,	-- Magister Astalor Bloodsworn
@@ -204,6 +233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				})),
+				-- #endif
 				q(9621, {	-- Envoy to the Horde [Blood Elf Only]
 					["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
 					["providers"] = {
@@ -261,7 +291,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9685, {	-- Redeeming the Dead
-					["sourceQuest"] = 9684,	-- Claiming the Light
+					["sourceQuests"] = {
+						-- #if ANYCLASSIC
+						63866,	-- Claiming the Light
+						-- #else
+						9684,	-- Claiming the Light
+						-- #endif
+					},
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },

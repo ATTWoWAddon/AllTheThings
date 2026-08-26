@@ -91,6 +91,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 253528,	-- Zul'jarra
 						["coord"] = { 57.8, 47.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
+							o(628447, {	-- Jan'alai's Breath
+								i(268113),	-- Jan'alai's Breath
+							}),
 							o(628446, {	-- Jan'alai's Cinder
 								i(267376),	-- Jan'alai's Cinder
 							}),
@@ -204,7 +207,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 92930,	-- Written by the Victors
 						["qg"] = 253827,	-- Lady Liadrin
 						["coord"] = { 57.5, 49.1, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(267269) },	-- Fire-Blessed Poultice (QI!)
+						["qi"] = 267269,	-- Fire-Blessed Poultice (QI!)
 					}),
 					------ Stay awhile and listen ------
 					--hqt(??, {	-- Stay awhile and listen: Liadrin and Zul'Jarra
@@ -247,9 +250,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qg"] = 253829,	-- Dak'zor
 						["coord"] = { 67.5, 62.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["qi"] = 260314,	-- Ancient Amani Weapon (QI!)
 						["groups"] = {
-							i(260314),	-- Ancient Amani Weapon (QI!)
-							--
 							i(279236),	-- Ancient Amani Athame
 							i(279238),	-- Ancient Amani Battleaxe
 							i(279234),	-- Ancient Amani Dagger
@@ -277,7 +279,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 93064,	-- Awe of She
 						["qg"] = 254020,	-- Summoner Jawae
 						["coord"] = { 69.3, 64.1, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(260587) },	-- Ritual Dagger (PQI!)
+						["qi"] = 260587,	-- Ritual Dagger (PQI!)
 					}),
 					q(92936, {	-- The Summoning of Ula'tek
 						["sourceQuests"] = {
@@ -313,7 +315,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 92937,	-- Awakened Evil
 						["qg"] = 253827,	-- Lady Liadrin
 						["coord"] = { 57.5, 49.1, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {	-- Rewards items that drop inside the dungeon (Still left in unsorted until they are sourced inside the dungeon)
+						["groups"] = {
 							i(273787),	-- Aged Interwoven Scaleplate
 							i(273789),	-- Chestguard of Corroded Scales
 							i(273785),	-- Primordial Robe of Rites
@@ -355,7 +357,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 62297.06, {	-- The Call of the Void
 					q(95973, {	-- Echoes of the Darkwell
-						--["sourceQuest"] = 93420,	-- Lor'themar's Judgement	-- Exo Note: Available from the get-go on PTR, this may change when Patch goes live. 93420 should be a proper sourceQuest as the story continuation fits nicely.
+						--["sourceQuest"] = 93420,	-- Lor'themar's Judgement
 						["qg"] = 235787,	-- Lor'themar Theron
 						["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					}),
@@ -363,23 +365,24 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 95973,	-- Echoes of the Darkwell
 						["qg"] = 258019,	-- Magister Umbric
 						["coord"] = { 46.2, 47.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+						["maps"] = { MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 					}),
 					q(94520, {	-- Resurgence in Deatholme
 						["sourceQuest"] = 94519,	-- What Hope in the Light?
 						["qg"] = 262269,	-- Magister Umbric
 						["coord"] = { 52.3, 48.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+						["maps"] = { MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
 					q(94521, {	-- The Direct Method
 						["sourceQuest"] = 94520,	-- Resurgence in Deatholme
 						["qg"] = 258022,	-- Arator
 						["coord"] = { 43.8, 82.4, MAP.MIDNIGHT.EVERSONG_WOODS },
-						["groups"] = {
-							i(266893, {	-- Twilight Clues (QI!)
-								-- Following items count as "Clues" when looted
-								i(270266),	-- Fragmented Void (QI!)
-								i(266894),	-- Twilight Journal (QI!)
-								i(266896),	-- Twilight Letter (QI!)
-							}),
+						["qis"] = {
+							270266,	-- Fragmented Void (QI!)
+							266893,	-- Twilight Clues (QI!)
+							266894,	-- Twilight Journal (QI!)
+							266896,	-- Twilight Letter (QI!)
+							270267,	-- Twilight Missive (QI!)
 						},
 					}),
 					q(94522, {	-- They Always Write It Down
@@ -420,7 +423,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							94522,	-- They Always Write It Down
 							94523,	-- My Poor Beautiful Self
 						},
-						["qg"] = 258024, -- Pathetic Voidling
+						["qg"] = 258024,	-- Pathetic Voidling
 						["coord"] = { 43.0, 85.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					}),
 					q(94526, {	-- Verifiably Untrustworthy
@@ -494,8 +497,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 93387,	-- Dealing with Pests
 						["qg"] = 263327,	-- Ofi the Sly (mobileNPC)
 						["coord"] = { 61.1, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the camp
+						["qi"] = 268584,	-- Undamaged Serpent Scale (QI!)
 						["groups"] = {
-							i(268584),	-- Undamaged Serpent Scale (QI!)
 							o(631027, {	-- Bowl of Innards
 								["coord"] = { 64.1, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 								["groups"] = { i(258168) },	-- Pile of Fish Guts (QI!)
@@ -518,13 +521,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qg"] = 260226,	-- Ofi the Sly (mobileNPC)
 						["coord"] = { 60.4, 33.1, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the Alchemist Table, Cauldron and Workstation
-						["groups"] = { i(268959) },	-- Pungent Concoction (QI!)
+						["qi"] = 268959,	-- Pungent Concoction (QI!)
 					}),
 					q(93391, {	-- Make it Stinky
 						["sourceQuest"] = 93390,	-- Acceptable Apprentice
 						["qg"] = 260226,	-- Ofi the Sly (mobileNPC)
 						["coord"] = { 60.4, 33.1, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the Alchemist Table, Cauldron and Workstation
-						["groups"] = { i(268950) },	-- Murloc Deterrent (PQI!)
+						["qi"] = 268950,	-- Murloc Deterrent (PQI!)
 					}),
 					q(93392, {	-- Recovering Memories
 						["sourceQuest"] = 93391,	-- Make it Stinky
@@ -546,13 +549,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 63641.02, {	-- Tokka's Crew
-					q(96110, {	-- Proof is in the Ooze
+					q(96110, {	-- Venom Fishing: Proof is in the Ooze
 						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(274076) },	-- Venom-Cursed Killifish (QI!)
+						["qi"] = 274076,	-- Venom-Cursed Killifish (QI!)
 					}),
-					q(98343, {	-- My Second-Best
+					q(98343, {	-- Venom Fishing: My Second-Best
 						["sourceQuest"] = 96110,	-- Proof is in the Ooze
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -562,43 +565,55 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 257598,	-- Second Mate Sluggs
 						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
-					q(96111, {	-- Shell of Yourself
+					q(96111, {	-- Venom Fishing: Shell of Yourself
 						["sourceQuest"] = 98414,	-- A Request from the Captain
 						["qg"] = 258755,	-- Captain Tokka
 						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["qi"] = 274083,	-- Birdie's Bombardment Pack (QI!)
 						["groups"] = {
-							i(274083),	-- Birdie's Bombardment Pack (QI!)
 							o(649481, {	-- Wood Debris
 								i(274033),	-- Wood Debris (QI!)
 							}),
 						},
 					}),
-					-- Chain not finished. Need to figure out the prerequisites. Since the faction related to these is Fishing related and quests unlock Venom/Temple Fishing, maybe increase fishing?
-					-- Following is WoWhead data
-					q(96112, {	-- Maddening Concoction
-						["sourceQuest"] = 96111,	-- Shell of Yourself
-						--["qg"] = 258755,	-- Captain Tokka
-						--["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(274103),	-- Leathertongue's Backup Stewpot (QI!)
-							i(274090),	-- Resplendent Ectobarb (QI!)
-							i(274089),	-- Souplrgr's Fine Breadcrumbs (QI!)
-							i(274091),	-- Tough Crab Meat (QI!)
+					q(98415, {	-- A Favor to the Captain
+						["qg"] = 257598,	-- Second Mate Sluggs
+						["coord"] = { 51.6, 49.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+						["isBreadcrumb"] = true,
+					}),
+					q(96112, {	-- Venom Fishing: Maddening Concoction
+						["sourceQuests"] = {
+							98415,-- A Favor to the Captain
+							96111,	-- Shell of Yourself
+						},
+						["qg"] = 258755,	-- Captain Tokka
+						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 3 },
+						["qis"] = {
+							274103,	-- Leathertongue's Backup Stewpot (QI!)
+							274090,	-- Resplendent Ectobarb (QI!)
+							274089,	-- Souplrgr's Fine Breadcrumbs (QI!)
+							274091,	-- Tough Crab Meat (QI!)
 						},
 					}),
-					q(96113, {	-- Maximum Potency
+					q(96113, {	-- Venom Fishing: Maximum Potency
 						["sourceQuest"] = 96112,	-- Maddening Concoction
-						--["qg"] = 258755,	-- Captain Tokka
-						--["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(274281),	-- Black-Venom Grouper (QI!)
-							i(274282),	-- Venom-Charged Dubloon (QI!)
+						["qg"] = 258755,	-- Captain Tokka
+						["coord"] = { 57.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
+						["qis"] = {
+							274281,	-- Black-Venom Grouper (QI!)
+							274282,	-- Venom-Charged Dubloon (QI!)
 						},
+					}),
+					q(98416, {	-- A Plea from the Captain
+						["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 					}),
 				}),
 				header(HEADERS.AchCriteria, 63641.03, {	-- Ancient Anthropology
 					q(96467, {	-- Thirst for Knowledge
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 265173,	-- Kul'amara the Fierce
 						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["isBreadcrumb"] = true,
@@ -640,7 +655,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 92920,	-- Down with the Skies
 						["qg"] = 257298,	-- Loa Speaker Yl'mul
 						["coord"] = { 59.1, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(264704) },	-- Sea Creature Meat (QI!)
+						["qi"] = 264704,	-- Sea Creature Meat (QI!)
 					}),
 					q(94036, {	-- One Final Prisoner
 						["sourceQuest"] = 92920,	-- Down with the Skies
@@ -706,14 +721,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 63641.06, {	-- Don't be Afrayed
-					q(93841, {	-- Ghosts of the Arena
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+					q(93841, {	-- Ghosts of the Ring
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 258068,	-- Olawu
 						["coord"] = { 58.6, 47.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["isBreadcrumb"] = true,
 					}),
 					q(93842, {	-- Bloom and Fade
-						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["sourceQuest"] = 93841,	-- Ghosts of the Ring
 						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
 						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
 						["groups"] = {
@@ -723,10 +738,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 					}),
 					q(93843, {	-- Ectoplasmic Extractions
-						["sourceQuest"] = 93841,	-- Ghosts of the Arena
+						["sourceQuest"] = 93841,	-- Ghosts of the Ring
 						["qg"] = 256674,	-- Ja'bonu (mobileNPC)
 						["coord"] = { 66.0, 53.3, MAP.MIDNIGHT.THE_COILED_ISLE },	-- Moves around the area
-						["groups"] = { i(262904) },	-- Ectoplasm (QI!)
+						["qi"] = 262904,	-- Ectoplasm (QI!)
 					}),
 					q(93849, {	-- Ectoplasmic Emporium
 						["sourceQuests"] = {
@@ -735,10 +750,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						["qg"] = 256874,	-- Ja'bonu
 						["coord"] = { 69.4, 53.4, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(265715),	-- Bouquet of Blooms (PQI!)
-							i(265931),	-- Collected Ectoplasm (PQI!)
-							i(263341),	-- Spectral Brew (QI!)
+						["qis"] = {
+							265715,	-- Bouquet of Blooms (PQI!)
+							265931,	-- Collected Ectoplasm (PQI!)
+							263341,	-- Spectral Brew (QI!)
 						},
 					}),
 					q(93851, {	-- Communing with Ghosts
@@ -755,7 +770,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.07, {	-- A Band of Brothers
 					q(94936, {	-- A Bond of Brothers
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 258717,	-- Aol'ggin
 						["coord"] = { 56.5, 43.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -778,7 +793,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.08, {	-- The Troubles of Mlurkrr Mire
 					q(93449, {	-- Trouble in the Swamp
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 257091,	-- Ra'kamu
 						["coord"] = { 57.5, 47.4, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -840,7 +855,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.09, {	-- Somethin' Bad Inside
 					q(96089, {	-- Somethin's Not Right
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 263618,	-- Scout Oma'ema
 						["coord"] = { 57.0, 48.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					}),
@@ -848,22 +863,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 96089,	-- Somethin's Not Right
 						["qg"] = 253837,	-- Apothecary Dezi
 						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(274297),	-- Dezi's Potion Bottle (PQI!)
-							i(274296),	-- Virulent Ula'tek Venom (QI!)
+						["qis"] = {
+							274297,	-- Dezi's Potion Bottle (PQI!)
+							274296,	-- Virulent Ula'tek Venom (QI!)
 						},
 					}),
 					q(96091, {	-- Get the Balance Right
 						["sourceQuest"] = 96090,	-- Venemetic
 						["qg"] = 253837,	-- Apothecary Dezi
 						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(276135) },	-- Dezi's Emetic (QI!)
+						["qi"] = 276135,	-- Dezi's Emetic (QI!)
 					}),
 					q(96092, {	-- That Fool, Ruma
 						["sourceQuest"] = 96091,	-- Get the Balance Right
 						["qg"] = 253837,	-- Apothecary Dezi
 						["coord"] = { 57.2, 48.4, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(274462) },	-- Sobering Elixir (PQI!)
+						["qi"] = 274462,	-- Sobering Elixir (PQI!)
 					}),
 					q(96093, {	-- It's a Satchel, Not a Bag
 						["sourceQuest"] = 96092,	-- That Fool, Ruma
@@ -885,16 +900,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 96094,	-- To the Forum
 						["qg"] = 263674,	-- Scrollmaster Ruma
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(274492) },	-- Infectious Wildlife Sample (QI!)
+						["qi"] = 274492,	-- Infectious Wildlife Sample (QI!)
 					}),
 					q(96096, {	-- Scout Team Seven
 						["sourceQuest"] = 96094,	-- To the Forum
 						["qg"] = 263675,	-- Scout Oma'ema
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(274574),	-- A'pone's Necklace (QI!)
-							i(274575),	-- Pieces of Uha'ne's Necklace (QI!)
+						["qis"] = {
+							274574,	-- A'pone's Necklace (QI!)
+							274575,	-- Pieces of Uha'ne's Necklace (QI!)
 						},
+						["groups"] = { iensemble(281226) },	-- Arsenal: Scout Team Seven Weapons
 					}),
 					q(96097, {	-- What the Scouts Saw
 						["sourceQuests"] = {
@@ -904,7 +920,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["qg"] = 263674,	-- Scrollmaster Ruma
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["groups"] = {
-							iensemble(281226),	-- Arsenal: Scout Team Seven Weapons
 							i(281244),	-- Amani Scout's Quiver
 						},
 					}),
@@ -912,20 +927,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 96097,	-- What the Scouts Saw
 						["qg"] = 263675,	-- Scout Oma'ema
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(274682),	-- Tetla'ketl's Conjuring Crest (QI!)
-							i(274685),	-- Tsssaani's Scales of Summoning (QI!)
+						["qis"] = {
+							274682,	-- Tetla'ketl's Conjuring Crest (QI!)
+							274685,	-- Tsssaani's Scales of Summoning (QI!)
 						},
 					}),
 					q(96099, {	-- La'una's Fate
 						["sourceQuest"] = 96098,	-- The Final Reagents
 						["qg"] = 263674,	-- Scrollmaster Ruma
 						["coord"] = { 23.8, 64.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(274705),	-- Ruma's Infestation Eradicator (PQI!)
-							--
-							i(280218),	-- Tortollan Scholar Satchel (DECOR!)
-						},
+						["qi"] = 274705,	-- Ruma's Infestation Eradicator (PQI!)
+						["groups"] = { i(280218) },	-- Tortollan Scholar Satchel (DECOR!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 63641.10, {	-- Living Legend
@@ -953,8 +965,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sourceQuest"] = 96541,	-- Strong Mind
 						["qg"] = 265660,	-- Kehiah
 						["coord"] = { 45.6, 48.3, MAP.MIDNIGHT.ZULAMAN },
+						["qi"] = 279995,	-- Critter Meat (QI!)
 						["groups"] = {
-							i(279995),	-- Critter Meat (QI!)
 							o(654250, {	-- Mound of Dirt
 								i(279994),	-- Withered Root (QI!)
 							}),
@@ -979,7 +991,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				header(HEADERS.AchCriteria, 63641.11, {	-- The Monster's Mother
 					q(96439, {	-- Gone Dark
-						--["sourceQuest"] = 92924,	-- What Lies Beyond the Fog
+						["sourceQuest"] = 93024,	-- Come With Me
 						["qg"] = 265173,	-- Kul'amara the Fierce
 						["coord"] = { 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 						["isBreadcrumb"] = true,
@@ -1001,47 +1013,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								["coord"] = { 41.5, 37.2, 2640 },	-- Blistering Terrace
 								["groups"] = { i(276911) },	-- Missive from Malacrass (QI!)
 							}),
-							-- Optional Objective
-							i(277525),	-- Ulantu's Belongings
-							-- Following count as Ulantu's Belongings on Quest Turn-in
-							o(653374, {	-- A Message from Kul'amara
-								["coord"] = { 57.0, 37.2, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276883) },	-- A Message From Kul'amara
-							}),
-							o(660393, {	-- Fragment of Ulantu's Log 1
-								["coord"] = { 64.9, 38.2, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276905) },	-- Beginning Fragment of Ulantu's Log
-							}),
-							o(660420, {	-- Fragment of Ulantu's Log 2
-								["coord"] = { 36.8, 18.2, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276912) },	-- Middle Fragment of Ulantu's Log
-							}),
-							o(660431, {	-- Fragment of Ulantu's Log 3
-								["coord"] = { 21.0, 21.8, 2640 },	-- Blistering Terrace
-								["groups"] = { i(276914) },	-- End Fragment of Ulantu's Log
-							}),
 						},
 					}),
 					q(96451, {	-- A Child of Ula'tek
 						["sourceQuest"] = 96450,	-- Sideways
 						["qg"] = 265229,	-- Ulantu
-						["coord"] = { 20.1, 36.3, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = { i(279064) },	-- Naj'kula Flame Amulet (QI!)
-					}),
-					q(96458, {	-- Last Promise
-						["sourceQuest"] = 96451,	-- A Child of Ula'tek
-						["qg"] = 265278,	-- Ulantu
-						["coord"] = { 58.1, 68.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+						["coord"] = { 20.7, 35.7, 2640 },	-- Blistering Terrace
 					}),
 					q(96457, {	-- Nothing Must Remain
-						["sourceQuest"] = 96458,	-- Last Promise
-						["provider"] = { "o", 660985 },	-- Ulantu's Scout Pack
-						["coord"] = { 56.9, 68.0, MAP.MIDNIGHT.THE_COILED_ISLE },
-						["groups"] = {
-							i(279064),	-- Naj'kula Flame Amulet (PQI!)
-							--
-							i(271609),	-- Destroyed Clutch of Ula'tek (DECOR!)
-						},
+						["sourceQuest"] = 96451,	-- A Child of Ula'tek
+						["qg"] = 265278,	-- Ulantu
+						["coord"] = { 40.5, 72.2, 2640 },	-- Blistering Terrace
+						["qi"] = 279064,	-- Naj'kula Flame Amulet (PQI!)
+					}),
+					q(96458, {	-- Last Promise
+						["sourceQuest"] = 96457,	-- Nothing Must Remain
+						["qg"] = 265278,	-- Ulantu
+						["coord"] = { 40.5, 72.2, 2640 },	-- Blistering Terrace
+						["qi"] = 280503,	-- Ulantu's Notes (PQI!)
+						["groups"] = { i(271609) },	-- Destroyed Clutch of Ula'tek (DECOR!)
 					}),
 				}),
 			}),
@@ -1050,7 +1040,121 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["qg"] = 267635,	-- Talon Commander Zela
 				["coord"] = { 58.7, 45.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				["isWeekly"] = true,	-- Assumption
-				["groups"] = { i(275911) },	-- Venom-Covered Chest
+				["groups"] = {
+					i(275911, {	-- Venom-Covered Chest
+						i(273000),	-- Corrosive Soul
+					}),
+				},
+			}),
+			q(97026, {	-- Esoteric Ingredients
+				["qs"] = 278070,	-- Handful of Esoteric Ingredients (QS!)
+				["groups"] = { i(278084) },	-- Handful of Esoteric Ingredients
+			}),
+			q(95355, {	-- The Messenger
+				["qss"] = {
+					268953,	-- Familiar Amani Headdress (QS!)
+					268951,	-- Familiar Threshadon Tooth Necklace (QS!)
+				},
+				["maps"] = { MAP.MIDNIGHT.ZULAMAN },
+				["qis"] = {
+					268964,	-- Familiar Amani Headdress (QI!)
+					268965,	-- Familiar Threshadon Tooth Necklace (QI!)
+					268929,	-- Hastily Written Note (QI!)
+					268952,	-- Hastily Written Note (QI!)
+					268968,	-- Hastily Written Note (QI!)
+				},
+			}),
+			q(97016, {	-- Mixing Mysteries
+				["sourceQuest"] = 97026,	-- Esoteric Ingredients
+				["qgs"] = {
+					254599,	-- Ofi the Sly
+					263327,	-- Ofi the Sly
+				},
+				["coords"] = {
+					{ 57.4, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 61.0, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+				},
+				["isRepeatable"] = true,
+				["groups"] = {
+					ach(63432, {	-- Mysterious Mix Master
+						i(248962),	-- Mysterious Voodoo Mask (DECOR!)
+					}),
+					-- Ingredients
+					i(276124),	-- Ancient Knucklebone
+					i(276117),	-- Clouded Blood-Pearl
+					i(276126),	-- Serpent's Feather
+					-- Offerings
+					i(277937, {	-- Balanced Offering
+						["cost"] = {
+							{ "i", 276124, 1 },	-- Ancient Knucklebone
+							{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+							{ "i", 276126, 1 },	-- Serpent's Feather
+						},
+						["groups"] = {
+							i(280189, {	-- Cauldron Concoction (PET!)
+								["description"] = "If you get this pet from any other offering, please let us know",
+							}),
+						},
+					}),
+					i(277946, {	-- Choleric Offering
+						["cost"] = {
+							{ "i", 276117, 3 },	-- Clouded Blood-Pearl
+						},
+					}),
+					i(277941, {	-- Eerie Offering
+						["cost"] = {
+							{ "i", 276124, 2 },	-- Ancient Knucklebone
+							{ "i", 276126, 1 },	-- Serpent's Feather
+						},
+					}),
+					i(277940, {	-- Fragile Offering
+						["cost"] = {
+							{ "i", 276124, 2 },	-- Ancient Knucklebone
+							{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+						},
+					}),
+					i(277942, {	-- Odious Offering
+						["cost"] = {
+							{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+							{ "i", 276126, 2 },	-- Serpent's Feather
+						},
+					}),
+					i(277945, {	-- Melancholic Offering
+						["cost"] = {
+							{ "i", 276124, 3 },	-- Ancient Knucklebone
+						},
+					}),
+					i(277943, {	-- Pestilent Offering
+						["cost"] = {
+							{ "i", 276124, 1 },	-- Ancient Knucklebone
+							{ "i", 276126, 2 },	-- Serpent's Feather
+						},
+					}),
+					i(277944, {	-- Phlegmatic Offering
+						["cost"] = {
+							{ "i", 276126, 3 },	-- Serpent's Feather
+						},
+					}),
+					i(277938, {	-- Virulent Offering
+						["cost"] = {
+							{ "i", 276117, 2 },	-- Clouded Blood-Pearl
+							{ "i", 276126, 1 },	-- Serpent's Feather
+						},
+					}),
+					i(277939, {	-- Volatile Offering
+						["cost"] = {
+							{ "i", 276124, 1 },	-- Ancient Knucklebone
+							{ "i", 276117, 2 },	-- Clouded Blood-Pearl
+						},
+					}),
+					i(277985, {	-- Mysterious Offering
+						-- ["cost"] = {
+						-- 	{ "i", 276124, 1 },	-- Ancient Knucklebone
+						-- 	{ "i", 276117, 1 },	-- Clouded Blood-Pearl
+						-- 	{ "i", 276126, 1 },	-- Serpent's Feather
+						-- },
+					}),
+				},
 			}),
 		}),
 	}),
@@ -1061,6 +1165,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			n(QUESTS, {
 				hqt(96935, { ["isWeekly"] = true }),	-- Curse Surge
+				hqt(93676, { ["isWeekly"] = true }),	-- Curse Surge 2/3
+				hqt(96967, { ["isWeekly"] = true }),	-- Curse Surge 2/3
+				hqt(97160, { ["isWeekly"] = true }),	-- triggered with 'Turn Back the Surge' 96995
 			}),
 		})),
 	}),

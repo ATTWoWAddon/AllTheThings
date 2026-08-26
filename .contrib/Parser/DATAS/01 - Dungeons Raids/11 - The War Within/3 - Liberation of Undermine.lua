@@ -299,7 +299,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						["_encounter"] = { RIK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
-				ach(41226, {	-- Maniacle Machinist
+				ach(41226, {	-- Maniacal Machinist
 					crit(71699, {	-- Stix Bunkjunker
 						["_encounter"] = { STIX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
@@ -697,7 +697,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					Boss(CARNAGE),
 					Boss(RIK),
 				}),
-				header(HEADERS.LFGDungeon, 2781, {	-- Maniacle Machinist
+				header(HEADERS.LFGDungeon, 2781, {	-- Maniacal Machinist
 					Boss(STIX),
 					Boss(LOCKENSTOCK, {
 						i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 0}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]

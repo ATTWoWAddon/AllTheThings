@@ -350,11 +350,7 @@ namespace ATT
                     case "displayID":
                     case "sourceText":
                     case "creatureID":
-                    case "cr":
-                    case "crs":
                     case "npcID":
-                    case "qg":
-                    case "qgs":
                     case "modelRotation":
                     case "modelScale":
                     case "model":
@@ -623,9 +619,14 @@ namespace ATT
                             return;
                         }
                         // Config-defined fields
-                        if (Objects.SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluarlFieldName))
+                        if (Objects.SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluralFieldName))
                         {
-                            Objects.MergeSingularFieldAsArray<long>(item, pluarlFieldName, value);
+                            Objects.MergeSingularFieldAsArray<long>(item, pluralFieldName, value);
+                            return;
+                        }
+                        if (Objects.PLURAL_FIELDS_LONG.Contains(field))
+                        {
+                            Objects.MergeUniqueIntegerArrayData(item, field, value);
                             return;
                         }
                         break;

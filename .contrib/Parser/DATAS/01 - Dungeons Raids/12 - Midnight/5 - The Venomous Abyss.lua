@@ -13,22 +13,19 @@ local ULATEK = 2895;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
-	[NEKZALI] = { 253547 },	-- Nek'zali the Soulcoiler
-	--[[
+	[NEKZALI] = { 259927 },	-- Nek'zali the Soulcoiler
 	[ENTOMBED] = {
-		1,
-		1,
+		258557,	-- Breath of Ula'tek
+		258558,	-- Blood of Ula'tek
 	},
-	[VASHNIK] = { 1 },
 	[EXPLORERS] = {
-		1,
-		1,
-		1,
-		1,
+		261835,	-- First Mate Nama
+		261843,	-- Scrollsage Iku
+		261848,	-- Trader Gebbo
 	},
-	[SSZORAK] = {
-		1,
-	},
+	[SSZORAK] = { 257347 },
+	--[[
+	[VASHNIK] = { 1 },
 	[TWIN_FANGS] = { 1 },
 	[COILED_ALTAR] = { 1 },
 	[ULATEK] = { 1 },
@@ -242,6 +239,9 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
+	i(271440),	-- Greaves of the Noxious Depths
+	i(271435),	-- Slippers of the Hissing Cult
+	i(271438),	-- Temple Delver's Mystic Helm
 };
 
 ------ Boss Functions ------
@@ -261,12 +261,24 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+InstanceHelper.BossObjects = {
+	[EXPLORERS] = { 673637 },
+	[TWIN_FANGS] = { 673657 },
+	[ULATEK] = { 673428 },
+}
+
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1320, {	-- The Venomous Abyss
 		["coord"] = { 47.2, 22.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-		--["maps"] = {
-		--},
+		["maps"] = {
+			2606,	-- The Soulcoil Well
+			2607,	-- The Pit of Fangs
+			2608,	-- The Vile Crypt
+			2609,	-- Crypt of the Soulcoilers
+			2610,	-- The Coiled Altar
+		},
 		["isRaid"] = true,
+		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(63530, {	-- The Venomous Abyss: Essence of Ula'tek
@@ -383,12 +395,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				n(QUESTS, {
 				}),
 				BossOnly(NEKZALI, {
+					i(280305),	-- Soulcoil Remnant (PET!)
 					i(279115),	-- Soulcoiler's Ritual Candle (DECOR!)
+					i(281227),	-- Soulcoiler's Rush'kah (COSMETIC!)
 				}),
 				BossOnly(ENTOMBED, {
 					i(264716),	-- Hexed Tomb Brazier (DECOR!) [NYI??]
 				}),
-				BossOnly(VASHNIK),
+				BossOnly(VASHNIK, {
+					i(272361),	-- Venomous Pyre (DECOR!)
+				}),
 				BossOnly(EXPLORERS, {
 					i(279118),	-- Lost Explorers Mailbox (DECOR!)
 				}),
@@ -396,12 +412,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(244343),	-- Vessel of the Howling Ossuary (DECOR!) [Check]
 				}),
 				BossOnly(TWIN_FANGS, {
+					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 					i(279122),	-- Venom-Fanged Font (DECOR)
 				}),
 				BossOnly(COILED_ALTAR, {
 					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
-					i(275937),	-- Hex Lord's Visage (COSMETIC!)
 					i(275938),	-- Hex Lord's Gaze (COSMETIC!)
+					i(279449, {	-- Hex Troll Mask Fragment
+						i(275937),	-- Hex Lord's Visage (COSMETIC!)
+					}),
 				}),
 				BossOnly(ULATEK, {
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
@@ -415,23 +434,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 				}),
-				header(HEADERS.LFGDungeon, 3317, {	-- The Essence of Ula'tek
+				header(HEADERS.LFGDungeon, 3316, {	-- The Soulcoilers
 					Boss(NEKZALI),
+					Boss(TWIN_FANGS),
+				}),
+				-- TODO: verify when available, changed from PTR
+				header(HEADERS.LFGDungeon, 3317, {	-- The Essence of Venom
 					Boss(ENTOMBED),
 					Boss(VASHNIK),
 				}),
-				header(HEADERS.LFGDungeon, 3319, {	-- Beasts of Ula'tek
+				header(HEADERS.LFGDungeon, 3318, {	-- The Serpent Warren
 					Boss(EXPLORERS),
 					Boss(SSZORAK),
-					Boss(TWIN_FANGS),
 				}),
-				header(HEADERS.LFGDungeon, 3320, {	-- The Heart of Ula'tek
+				header(HEADERS.LFGDungeon, 3319, {	-- The Heart of Ula'tek
 					Boss(COILED_ALTAR),
 					Boss(ULATEK, {
 						i(270909, {	-- Slumbering Coil Curio
-							["sym"] = {
-								{"sub", "instance_tier",1320,DIFFICULTY.RAID.LFR},
-								},
+							["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
 					}),
@@ -475,6 +495,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				n(QUESTS, {
+					q(98226, {	-- The Venomous Abyss: Deception Unmasked [N]
+						["qg"] = 262667,	-- Zul'jarra
+						["qi"] = 280007,	-- Mask Fragment (QI!)
+					}),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI),
@@ -486,9 +510,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {
-							{"sub", "instance_tier",1320,DIFFICULTY.RAID.NORMAL},
-						},
+						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
@@ -513,6 +535,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				n(QUESTS, {
+					q(98228, {	-- The Venomous Abyss: Deception Unmasked [H]
+						["qg"] = 262667,	-- Zul'jarra
+						["qi"] = 280089,	-- Mask Fragment (QI!)
+					}),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI),
@@ -524,9 +550,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {
-							{"sub", "instance_tier",1320,DIFFICULTY.RAID.HEROIC},
-						},
+						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.HEROIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
@@ -538,6 +562,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 				}),
 				n(QUESTS, {
+					q(98229, {	-- The Venomous Abyss: Deception Unmasked [M]
+						["qg"] = 262667,	-- Zul'jarra
+						["qi"] = 280090,	-- Mask Fragment (QI!)
+					}),
 				}),
 				ZoneDrops({}),
 				Boss(NEKZALI, {
@@ -567,22 +595,42 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					}),
 					ach(63651, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Cutting Edge: Ula'tek
 					ach(63652, applyDataSelf({["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {	-- Hall of Fame: Ula'tek
-						title(676),	-- <Name>, Famed Slayer of Ula'tek
+						title(790),	-- <Name>, Famed Slayer of Ula'tek
 					})),
 					ach(63648),	-- Mythic: Ula'tek Guild Run
 					i(275658),	-- Primeval Skyfriend (MOUNT!)
 					i(279129, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- The Venomous Abyss Gleaming Trophy (DECOR!)
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {
-							{"sub", "instance_tier",1320,DIFFICULTY.RAID.MYTHIC},
-						},
+						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.MYTHIC}},
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
 			}),
 		},
 	}),
-})));
+}))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-}));
+	inst(1320, {	-- The Venomous Abyss
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			-- LFR
+			hqt(98080, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			-- N
+			hqt(98083, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
+			hqt(98079, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98091, name(HEADERS.NPC, 266538)),	-- Shriekcoil
+			hqt(98075, name(HEADERS.NPC, 261503)),	-- Frightmaw
+			hqt(98087, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
+			hqt(98097, name(HEADERS.Encounter, COILED_ALTAR)),	-- Coiled Altar
+			hqt(97980, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
+			-- H
+			hqt(98082, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
+			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
+			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil
+			hqt(98074, name(HEADERS.NPC, 261503)),	-- Frightmaw
+			hqt(98086, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
+			-- M
+		},
+	}),
+}))

@@ -1335,7 +1335,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["DisablePartySync"] = true,
 						["groups"] = {
-							i(175022),	-- Concentrated Royal Jelly (QI!)
+							o(343668, {	-- Concentrated Royal Jelly
+								["groups"] = { i(175022) },	-- Concentrated Royal Jelly (QI!)
+							}),
 						},
 					}),
 					q(58858, {	-- More Fetid Filets

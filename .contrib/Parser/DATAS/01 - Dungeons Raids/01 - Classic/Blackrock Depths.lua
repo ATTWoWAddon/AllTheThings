@@ -28,7 +28,7 @@ REPUTATION_FROM_DARKIRON = 50;
 -- #if ANYCLASSIC
 -- #if AFTER CATA
 -- Reputation in Cata Classic
--- CRIEVE NOTE: Not sure if it is indended, but the reputation gained from these skyrocketed in Cataclysm Classic. It might be unintentional.
+-- CRIEVE NOTE: Not sure if it is intended, but the reputation gained from these skyrocketed in Cataclysm Classic. It might be unintentional.
 REPUTATION_FROM_CORES = 2200;
 REPUTATION_FROM_LEATHER = 1540;
 REPUTATION_FROM_DARKIRON = 300;
@@ -1127,8 +1127,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
+					["qi"] = 64312,	-- Totem of Freedom (QI!)
 					["groups"] = {
-						i(64312),	-- Totem of Freedom (QI!)
 						i(65643, {	-- Mask of the Speaker
 							["timeline"] = { ADDED_4_0_3 },
 						}),

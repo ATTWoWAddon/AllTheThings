@@ -95,7 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159424),	-- Desert Guardian's Breastplate
 						i(159257),	-- Robes of the Reborn Serpent
 						i(159337),	-- Grips of Electrified Defense
-						i(158368),	-- Fangs of Intertwined Essence
+						i(158368),	-- Sethraliss' Defiled Relic
 						i(168131),	-- Essence of the Sands
 					},
 				}),
@@ -161,7 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159424),	-- Desert Guardian's Breastplate
 						i(159257),	-- Robes of the Reborn Serpent
 						i(159337),	-- Grips of Electrified Defense
-						i(158368),	-- Fangs of Intertwined Essence
+						i(158368),	-- Sethraliss' Defiled Relic
 						i(168131),	-- Essence of the Sands
 					},
 				}),
@@ -207,6 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							}),
 							ach(12506),	-- Mythic: The Temple of Sethraliss
 							ach(13004),	-- Mythic: The Temple of Sethraliss Guild Run
+							i(278982, {	["timeline"] = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
 						},
 					}),
 				},

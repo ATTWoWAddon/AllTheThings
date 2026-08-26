@@ -171,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29234, {	-- Delegation
 						["description"] =
 							-- #IF ANYCLASSIC
-							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal. You can do this by completing the Delgation Tracker quest or by having someone else that has previously opened their own portal open the portal for you.\n\nNOTE: You will be locked out of doing the same for others should you choose to go this route.",
+							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal. You can do this by completing the Delegation Tracker quest or by having someone else that has previously opened their own portal open the portal for you.\n\nNOTE: You will be locked out of doing the same for others should you choose to go this route.",
 							-- #ELSE
 							-- In Retail it is required to complete and open the Portal yourself (or someone else also on Delegation who gathers the components themselves)
 							-- but that is a very niche scenario that likely no one would actually perform on purpose so doesn't merit being in the description

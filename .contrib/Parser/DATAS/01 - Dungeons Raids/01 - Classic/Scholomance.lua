@@ -210,20 +210,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 		q(5531, {	-- Betina Bigglezink
 			["sourceQuest"] = 5522,	-- Leonid Barthalomew
-			["providers"] = {
-				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
-				{ "i", 13761 },	-- Frozen Eggs
-			},
+			["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 			["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
+			["qi"] = 13761,	-- Frozen Eggs (QI!)
 		}),
 		q(76257, {	-- Darkmaster's Scourgestone
-			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QI!)
+			["qs"] = 206373,	-- Darkmaster's Scourgestone (QS!)
 			["timeline"] = { ADDED_10_1_5 },
-			["groups"] = {
-				i(12844),	-- Argent Dawn Valor Token
-			},
+			["groups"] = { i(12844) },	-- Argent Dawn Valor Token
 		}),
 		q(4771, {	-- Dawn's Gambit
 			-- #if BEFORE 4.0.3
@@ -1973,7 +1969,7 @@ end
 -- #if AFTER 10.1.5
 table.insert(SCHOLOMANCE_GROUPS, header(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
 	["sourceQuest"] = 76249,	-- Memory of Scholomance
-	["description"] = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spetral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candylit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
+	["description"] = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spectral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candlelit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",
 	["mapID"] = 306,
 	["maps"] = { 307, 308, 309 },
 	["modID"] = 1,

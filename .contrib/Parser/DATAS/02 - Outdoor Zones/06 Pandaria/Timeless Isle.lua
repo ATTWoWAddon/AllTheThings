@@ -1466,10 +1466,10 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 23.5, 27.9, TIMELESS_ISLE },
 							{ 30.7, 31.3, TIMELESS_ISLE },
-							{ 21.8, 31.4, TIMELESS_ISLE }, -- (x2)
-							{ 22.4, 35.4, TIMELESS_ISLE }, -- (x4)
+							{ 21.8, 31.4, TIMELESS_ISLE },	-- (x2)
+							{ 22.4, 35.4, TIMELESS_ISLE },	-- (x4)
 							{ 20.6, 47.6, TIMELESS_ISLE },
-							{ 18.0, 54.3, TIMELESS_ISLE }, -- (x2)
+							{ 18.0, 54.3, TIMELESS_ISLE },	-- (x2)
 							{ 16.2, 60.6, TIMELESS_ISLE },
 							{ 18.4, 57.9, TIMELESS_ISLE },
 							{ 18.4, 62.5, TIMELESS_ISLE },
@@ -1492,7 +1492,7 @@ root(ROOTS.Zones, {
 							{ 65.8, 78.4, TIMELESS_ISLE },
 							{ 69.1, 74.9, TIMELESS_ISLE },
 							{ 69.9, 71.1, TIMELESS_ISLE },
-							{ 70.6, 65.0, TIMELESS_ISLE }, -- (x2)
+							{ 70.6, 65.0, TIMELESS_ISLE },	-- (x2)
 						},
 						["provider"] = { "n", 72766 },	-- Ancient Spineclaw
 						["groups"] = {

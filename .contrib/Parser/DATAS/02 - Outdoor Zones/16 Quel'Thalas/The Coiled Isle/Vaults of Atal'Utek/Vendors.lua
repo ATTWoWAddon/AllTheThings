@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = {
 						i(281223, {	-- Satchel of Corrosive Coins
 							["cost"] = { { "i", 273000, 1 } },	-- 1x Corrosive Soul
+							["groups"] = { currency(CORROSIVE_COIN) },
 						}),
 					},
 				}),

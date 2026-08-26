@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["maps"] = {
 			SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 			805,				-- Scarlet Monastery: Pathway to the Chapel
-			SCARLET_MONASTERY_CRUSADERS_CHAPEL,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
+			SCARLET_MONASTERY_CRUSADERS_CHAPEL,	-- Scarlet Monastery: Crusader's Chapel (Last two bosses)
 			SCARLET_MONASTERY_GRAVEYARD,	-- Scarlet Monastery: Graveyard
 			SCARLET_MONASTERY_LIBRARY,	-- Scarlet Monastery: Library
 			SCARLET_MONASTERY_ARMORY,	-- Scarlet Monastery: Armory
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["groups"] = {
 			-- #if AFTER 10.1.7
 			header(HEADERS.Spell, 419654, {	-- Scarlet Monastery of Old
-				["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastary, Armory, Library.",
+				["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastery, Armory, Library.",
 				["groups"] = {
 				-- #endif
 					n(SCARLET_MONASTERY_GRAVEYARD_HEADER, {

@@ -73,8 +73,8 @@ local PetIDSpeciesIDHelper = setmetatable({}, {
 });
 
 local PerCharacterSpecies = {
-	[280] = true, 	-- Guild Page [A]
-	[281] = true, 	-- Guild Page [H]
+	[280] = true,	-- Guild Page [A]
+	[281] = true,	-- Guild Page [H]
 	[282] = true,	-- Guild Herald [A]
 	[283] = true,	-- Guild Herald [H]
 	-- ...etc

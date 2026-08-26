@@ -358,12 +358,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
 						["provider"] = { "i", 206163 },	-- Temporal Gossamer
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_7 },
-						["groups"] = {
-							i(204808),	-- Empowered Temporal Gossamer
-							i(206165),	-- Major Resonating Vestigial (QI!)
-							i(206166),	-- Strong Resonating Vestigial (QI!)
-							i(206164),	-- Weak Resonating Vestigial (QI!)
+						["qis"] = {
+							206165,	-- Major Resonating Vestigial (QI!)
+							206166,	-- Strong Resonating Vestigial (QI!)
+							206164,	-- Weak Resonating Vestigial (QI!)
 						},
+						["groups"] = { i(204808) },	-- Empowered Temporal Gossamer
 					}),
 					q(74924, {	-- Nasz'uro, the Unbound Legacy
 						["sourceQuests"] = { 74923 },	-- It Takes a Village to Make an Artifact

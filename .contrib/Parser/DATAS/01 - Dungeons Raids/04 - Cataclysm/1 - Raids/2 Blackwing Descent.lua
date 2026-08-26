@@ -292,7 +292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						ach(5109),	-- Heroic: Atramedes
 						i(65058),	-- Themios the Darkbringer
 						i(65052),	-- Kingdom's Heart
-						i(65066),	-- Helm of the Blind See
+						i(65066),	-- Helm of the Blind Seer
 						i(65059),	-- Ironstar Amulet
 						i(65054),	-- Mantle of Roaring Flames
 						i(65062),	-- Battleplate of Ancient Kings

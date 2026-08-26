@@ -724,11 +724,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							37030,	-- Sigil of the Black Hand (Heroic)
 							37031,	-- Sigil of the Black Hand (Mythic)
 						},
-						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
-						["groups"] = {
-							i(118382),	-- Ember of the Mountain (QI!)
-							i(118383),	-- Heart of Stone (QI!)
-							i(118384),	-- Sliver of Iron (QI!)
+						["qgs"] = 87225,	-- Goraluk Anvilcrack
+						["qis"] = {
+							118382,	-- Ember of the Mountain (QI!)
+							118383,	-- Heart of Stone (QI!)
+							118384,	-- Sliver of Iron (QI!)
 						},
 					}),
 					q(37553, {	-- Essence of the Iron Conqueror
@@ -911,11 +911,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					q(37030, {	-- Sigil of the Black Hand (Heroic)
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 37031 },	-- Sigil of the Black Hand (Mythic)
-						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
-						["groups"] = {
-							i(118387),	-- Ember of the Mountain (QI!)
-							i(118386),	-- Heart of Stone (QI!)
-							i(118385),	-- Sliver of Iron (QI!)
+						["qg"] = 87225,	-- Goraluk Anvilcrack
+						["qis"] = {
+							118387,	-- Ember of the Mountain (QI!)
+							118386,	-- Heart of Stone (QI!)
+							118385,	-- Sliver of Iron (QI!)
 						},
 					}),
 					q(37557, {	-- Essence of the Iron Conqueror
@@ -1102,11 +1102,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
-						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
-						["groups"] = {
-							i(118390),	-- Ember of the Mountain (QI!)
-							i(118389),	-- Heart of Stone (QI!)
-							i(118388),	-- Sliver of Iron (QI!)
+						["qg"] = 87225,	-- Goraluk Anvilcrack
+						["qis"] = {
+							118390,	-- Ember of the Mountain (QI!)
+							118389,	-- Heart of Stone (QI!)
+							118388,	-- Sliver of Iron (QI!)
 						},
 					}),
 					q(37560, {	-- Essence of the Iron Conqueror

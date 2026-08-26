@@ -2639,7 +2639,7 @@ i(0, 1307462);	-- Refine Crystalline Glass
 i(0, 1307466);	-- Refine Duskshrouded Stone
 --- ITEM ---
 i(275693, 1297679);	-- Opalescent Amani Peridot
+i(275695, 1297680);	-- Piercing Amani Lapis
 i(275697, 1297681);	-- Roaring Amani Garnet
 --- UNSORTED ---
-i(275695, 1297680);	-- Piercing Amani Lapis
 i(273067, 1291690);	-- Polished Ammolite

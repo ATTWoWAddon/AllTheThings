@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lockCriteria"] = {1,"questID",32008},	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					["DisablePartySync"] = true,
 				}),
-				q(31812, {	-- Zunta, The Pet Tramer
+				q(31812, {	-- Zunta, The Pet Tamer
 					["sourceQuests"] = { 32009, 31882, 31883, 31884, 31885 },	-- Varzok (all breadcrumbs)
 					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						["timeline"] = { ADDED_2_3_0 },
 						-- #if AFTER TWW
-						["collectible"] = false, 	-- remove when Blizzard fix fish collection
+						["collectible"] = false,	-- remove when Blizzard fix fish collection
 						-- #endif
 					}),
 				}),
@@ -654,7 +654,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -662,7 +662,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -670,7 +670,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -678,7 +678,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -686,7 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -710,7 +710,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 26.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.1
-					["cost"] = { { "i", 15997, 200 } },	-- Thorium Shells
+					["cost"] = { { "i", 15997, 200 } },	-- 200x Thorium Shells
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -759,9 +759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { CREATED_9_0_2, ADDED_10_0_2 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
-					["groups"] = {
-						i(183188),	-- Chromie's Scroll (H) (QI!)
-					},
+					["qi"] = 183188,	-- Chromie's Scroll (H) (QI!)
 				}),
 				warchiefscommand(q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 					["qg"] = 45244,	-- Farseer Krogar
@@ -805,7 +803,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
 					["maxReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -816,7 +814,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
 					["maxReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -862,21 +860,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { BLOODELF },
 				}),
 				q(2751, {	-- Barbaric Battlements
-					-- #if BEFORE 4.0.3
-					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
-					["coord"] = { 79.4, 22.4, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["description"] = "Becomes available at Classic Blacksmithing skill level 140 when character level requirement is met.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #else
-					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #endif
+					["description"] =
+						-- #if AFTER CATA
+						"Becomes available at Classic Blacksmithing skill level 140 when character level requirement is met.",
+						-- #else
+						"Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
+						-- #endif
 					["qg"] = 7790,	-- Orokk Omosh
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 76.2, 37.4, ORGRIMMAR },
+						-- #else
+						{ 79.4, 22.4, ORGRIMMAR },
+						-- #endif
+					},
 					["cost"] = {
-						{ "i", 2868, 2 },	-- Patterned Bronze Bracers
-						{ "i", 7957, 2 },	-- Bronze Greatsword
-						{ "i", 5635, 2 },	-- Sharp Claw
+						{ "i", 2868, 2 },	-- 2x Patterned Bronze Bracers
+						{ "i", 7957, 2 },	-- 2x Bronze Greatsword
+						{ "i", 5635, 2 },	-- 2x Sharp Claw
 					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 140,
@@ -884,13 +885,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7979, {	-- Plans: Barbaric Iron Breastplate (RECIPE!)
-						-- #if BEFORE 6.0.2
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #elseif AFTER 9.2.5
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-						-- #else
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #endif
+							["description"] =
+								-- #if AFTER 9.2.5
+								"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+								-- #elseif BEFORE 6.0.2
+								"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+								-- #else
+								"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+								-- #endif
 						}),
 					},
 				}),
@@ -1120,8 +1122,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "toyID", 122674 },	-- S.E.L.F.I.E. Camera MkII
+					["qi"] = 155832,	-- Pristine Crystal Shard (QI!)
 					["groups"] = {
-						i(155832),	-- Pristine Crystal Shard (QI!)
 						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
 							["timeline"] = { ADDED_6_1_0 },
 							["groups"] = {
@@ -1399,29 +1401,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(191682, {	-- Explosive Pie (QI!)
-							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
-						}),
-					},
+					["qi"] = 191682,	-- Explosive Pie (QI!)
 				}),
 				q(2754, {	-- Horns of Frenzy
-					-- #if BEFORE 4.0.3
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
-					["coord"] = { 79.4, 22.4, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #else
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #endif
+					["description"] =
+						-- #if AFTER CATA
+						"This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
+						-- #else
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
+						-- #endif
 					["sourceQuest"] = 2753,	-- Trampled Under Foot
 					["qg"] = 7790,	-- Orokk Omosh
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 76.2, 37.4, ORGRIMMAR },
+						-- #else
+						{ 79.4, 22.4, ORGRIMMAR },
+						-- #endif
+					},
 					["cost"] = {
-						{ "i", 3851, 2 },	-- Solid Iron Maul
-						{ "i", 3482, 2 },	-- Silvered Bronze Boots
-						{ "i", 3483, 2 },	-- Silvered Bronze Gauntlets
+						{ "i", 3851, 2 },	-- 2x Solid Iron Maul
+						{ "i", 3482, 2 },	-- 2x Silvered Bronze Boots
+						{ "i", 3483, 2 },	-- 2x Silvered Bronze Gauntlets
 					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 140,
@@ -1429,42 +1430,47 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7980, {	-- Plans: Barbaric Iron Helm (RECIPE!)
-						-- #if BEFORE 6.0.2
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #elseif AFTER 9.2.5
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-						-- #else
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #endif
+							["description"] =
+								-- #if AFTER 9.2.5
+								"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+								-- #elseif BEFORE 6.0.2
+								"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+								-- #else
+								"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+								-- #endif
 						}),
 					},
 				}),
 				q(2755, {	-- Joys of Omosh
-					-- #if BEFORE 4.0.3
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-					["coord"] = { 79.4, 22.4, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #else
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #endif
+					["description"] =
+						-- #if AFTER CATA
+						"This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
+						-- #else
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+						-- #endif
 					["sourceQuest"] = 2754,	-- Horns of Frenzy
 					["qg"] = 7790,	-- Orokk Omosh
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 76.2, 37.4, ORGRIMMAR },
+						-- #else
+						{ 79.4, 22.4, ORGRIMMAR },
+						-- #endif
+					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 140,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7982, {	-- Plans: Barbaric Iron Gloves (RECIPE!)
-						-- #if BEFORE 6.0.2
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #elseif AFTER 9.2.5
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-						-- #else
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #endif
+							["description"] =
+								-- #if AFTER 9.2.5
+								"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+								-- #elseif BEFORE 6.0.2
+								"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+								-- #else
+								"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+								-- #endif
 						}),
 					},
 				}),
@@ -1486,11 +1492,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32673, {	-- Learn To Ride (Goblin)
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Goblins upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Goblins upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Goblins upon reaching level 10.",
+						-- #else
+						"This quest is available to Goblins upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { GOBLIN },
@@ -1506,11 +1513,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32669, {	-- Learn To Ride (Orc)
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Orcs upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Orcs upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Orcs upon reaching level 10.",
+						-- #else
+						"This quest is available to Orcs upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { ORC },
@@ -1526,11 +1534,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32667, {	-- Learn To Ride (Pandaren)
 					-- #if BEFORE 10.1.5
-					-- #if AFTER SL
-					["description"] = "This quest is available to Pandaren upon reaching level 10.",
-					-- #else
-					["description"] = "This quest is available to Pandaren upon reaching level 20.",
-					-- #endif
+					["description"] =
+						-- #if AFTER SL
+						"This quest is available to Pandaren upon reaching level 10.",
+						-- #else
+						"This quest is available to Pandaren upon reaching level 20.",
+						-- #endif
 					-- #endif
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { PANDAREN_HORDE },
@@ -1570,7 +1579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 16926,	-- Vivica Starshot
 					["coord"] = { 34.5, 70.8, ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
-					["cost"] = { { "i", 4406, 1 } },	-- Standard Scope
+					["cost"] = { { "i", 4406, 1 } },	-- 1x Standard Scope
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "toyID", 122674 },	-- S.E.L.F.I.E. Camera MkII
 					["groups"] = {
@@ -1678,21 +1687,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
 				q(2752, {	-- On Iron Pauldrons
-					-- #if BEFORE 4.0.3
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-					["coord"] = { 79.4, 22.4, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #else
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #endif
+					["description"] =
+						-- #if AFTER CATA
+						"This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
+						-- #else
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+						-- #endif
 					["sourceQuest"] = 2751,	-- Barbaric Battlements
 					["qg"] = 7790,	-- Orokk Omosh
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 76.2, 37.4, ORGRIMMAR },
+						-- #else
+						{ 79.4, 22.4, ORGRIMMAR },
+						-- #endif
+					},
 					["cost"] = {
-						{ "i", 7958, 4 },	-- Bronze Battle Axe
-						{ "i", 7956, 4 },	-- Bronze Warhammer
+						{ "i", 7958, 4 },	-- 4x Bronze Battle Axe
+						{ "i", 7956, 4 },	-- 4x Bronze Warhammer
 					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 140,
@@ -1700,13 +1712,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(32, 32, 15),
 					["groups"] = {
 						i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
-						-- #if BEFORE 6.0.2
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #elseif AFTER 9.2.5
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-						-- #else
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #endif
+						["description"] =
+							-- #if AFTER 9.2.5
+							"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+							-- #elseif BEFORE 6.0.2
+							"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							-- #else
+							"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							-- #endif
 						}),
 					},
 				}),
@@ -1926,7 +1939,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Summoned Incubus slain
 							["provider"] = { "n", 185335 },	-- Summoned Incubus
-							["cost"] = { { "i", 190187, 1 } },	-- Withered Scarf
+							["cost"] = { { "i", 190187, 1 } },	-- 1x Withered Scarf
 						}),
 						-- #if BEFORE 4.0.3
 						recipe(713),	-- Summon Incubus
@@ -1949,7 +1962,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Summoned Succubus slain
 							["provider"] = { "n", 5677 },	-- Summoned Succubus
-							["cost"] = { { "i", 6626, 1 } },	-- Dogran's Pendant
+							["cost"] = { { "i", 6626, 1 } },	-- 1x Dogran's Pendant
 						}),
 						-- #if BEFORE 4.0.3
 						recipe(712),	-- Summon Succubus
@@ -1971,7 +1984,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Summoned Voidwalker slain
 							["provider"] = { "n", 5676 },	-- Summoned Voidwalker
-							["cost"] = { { "i", 7464, 1 } },	-- Glyphs of Summoning
+							["cost"] = { { "i", 7464, 1 } },	-- 1x Glyphs of Summoning
 						}),
 						-- #if BEFORE 4.0.3
 						recipe(697),	-- Summon Voidwalker
@@ -2030,8 +2043,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 80.6, 23.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
-						{ "i", 7963, 4 },	-- Steel Breastplate
-						{ "i", 7922, 4 },	-- Steel Plate Helm
+						{ "i", 7963, 4 },	-- 4x Steel Breastplate
+						{ "i", 7922, 4 },	-- 4x Steel Plate Helm
 					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
@@ -2108,18 +2121,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1013,	-- The Stockade (Scenario)
 					},
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(160251),	-- Blightcaller's Easy Death (QI!)
-					},
+					["qi"] = 160251,	-- Blightcaller's Easy Death (QI!)
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
-					-- #if BEFORE 4.0.3
-					["coord"] = { 57.4, 53.6, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["coord"] = { 32.2, 69.4, ORGRIMMAR },
-					-- #else
-					["coord"] = { 32.2, 69.4, ORGRIMMAR },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 32.2, 69.4, ORGRIMMAR },
+						-- #else
+						{ 57.4, 53.6, ORGRIMMAR },
+						-- #endif
+					},
 					["qg"] = 3399,	-- Zamja
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
@@ -2192,22 +2203,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2753, {	-- Trampled Under Foot
-					-- #if BEFORE 4.0.3
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-					["coord"] = { 79.4, 22.4, ORGRIMMAR },
-					-- #elseif AFTER 8.0.1
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #else
-					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
-					["coord"] = { 76.2, 37.4, ORGRIMMAR },
-					-- #endif
+					["description"] =
+						-- #if AFTER CATA
+						"This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",
+						-- #else
+						"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
+						-- #endif
 					["sourceQuest"] = 2752,	-- On Iron Pauldrons
 					["qg"] = 7790,	-- Orokk Omosh
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 76.2, 37.4, ORGRIMMAR },
+						-- #else
+						{ 79.4, 22.4, ORGRIMMAR },
+						-- #endif
+					},
 					["cost"] = {
-						{ "i", 3836, 4 },	-- Green Iron Helm
-						{ "i", 3835, 4 },	-- Green Iron Bracers
-						{ "i", 3842, 2 },	-- Green Iron Leggings
+						{ "i", 3836, 4 },	-- 4x Green Iron Helm
+						{ "i", 3835, 4 },	-- 4x Green Iron Bracers
+						{ "i", 3842, 2 },	-- 2x Green Iron Leggings
 					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 140,
@@ -2215,13 +2229,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
-						-- #if BEFORE 6.0.2
-						["description"] = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #elseif AFTER 9.2.5
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-						-- #else
-						["description"] = "This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
-						-- #endif
+						["description"] =
+							-- #if AFTER 9.2.5
+							"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+							-- #elseif BEFORE 6.0.2
+							"This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							-- #else
+							"This recipe can be sold on the Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+							-- #endif
 						}),
 					},
 				}),
@@ -2260,7 +2275,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #elseif AFTER 9.0.3
 					["groups"] = {
 						n(14720, {	-- High Overlord Saurfang
-							["description"] = "Saurfang will not give you any quests after turning in 'Warchied's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
+							["description"] = "Saurfang will not give you any quests after turning in 'Warchief's Command: Twilight Highlands!'. You can get the proper beginning of the Twilight Highland intro questline from Eitrigg in the same room, with the quest 'Machines of War'.\n\nThe same applies for the quest 'Saurfang Will be Pleased', where the continuation yet again is obtained from Eitrigg with the quest 'Traitor's Bait'.",
 						}),
 					},
 					-- #endif
@@ -2345,7 +2360,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
-					["cost"] = { { "i", 12351, 1 } },	-- Arctic Wolf
+					["cost"] = { { "i", 12351, 1 } },	-- 1x Arctic Wolf
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
@@ -2362,7 +2377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_1_4_0 },
-					["cost"] = { { "i", 12330, 1 } },	-- Red Wolf (MOUNT!)
+					["cost"] = { { "i", 12330, 1 } },	-- 1x Red Wolf (MOUNT!)
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
@@ -2507,7 +2522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(166805, {	-- Blood-Soaked Invitation (QI!)
+						i(166805, {	-- Blood-Soaked Invitation (QS!)
 							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
@@ -2756,7 +2771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(83080, {	-- Huojin Tabard
 							["timeline"] = { ADDED_5_0_4 },
 						}),
-						i(92070, {	-- Houjin Satchel
+						i(92070, {	-- Huojin Satchel
 							["minReputation"] = { FACTION_HUOJIN_PANDAREN, REVERED },	-- Huojin Pandaren, Revered.
 							["timeline"] = { ADDED_5_1_0 },
 						}),
@@ -3460,11 +3475,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8122, {	-- Kizzak Sparks
 					["coord"] = { 57.8, 56.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					-- #if BEFORE 10.1
-					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
-					-- #else
-					["description"] = "This NPC is only available on July 4th.",
-					-- #endif
+					["description"] =
+						-- #if AFTER 10.1
+						"This NPC is only available on July 4th.",
+						-- #else
+						"This NPC is only available on July 4th (US) or September 30th (EU).",
+						-- #endif
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler

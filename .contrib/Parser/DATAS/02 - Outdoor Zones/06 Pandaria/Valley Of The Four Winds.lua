@@ -38,11 +38,11 @@ root(ROOTS.Zones, {
 					}),
 					pet(710, {	-- Marsh Fiddler (PET!)
 						["description"] = "Can be found all over The Heartland.",
-						["coord"] = { 41.6, 45.2, VALLEY_OF_THE_FOUR_WINDS }, -- The Heartland
+						["coord"] = { 41.6, 45.2, VALLEY_OF_THE_FOUR_WINDS },	-- The Heartland
 					}),
 					pet(677, {	-- Shy Bandicoon (PET!)
 						["description"] = "Can be found through Paoquan Hollow and the foothills south of Singing Marshes, but will never appear as secondary pets!",
-						["coord"] = { 17.8, 42.8, VALLEY_OF_THE_FOUR_WINDS }, -- Paoquan Hollow
+						["coord"] = { 17.8, 42.8, VALLEY_OF_THE_FOUR_WINDS },	-- Paoquan Hollow
 					}),
 					pet(713, {	-- Softshell Snapling (PET!)
 						["description"] = "Can be found by bodies of water.",
@@ -632,7 +632,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30073,	-- The Emperor
 						["qg"] = 56133,	-- Chen Stormstout
 					}),
-					q(29944, { 	-- Leaders Among Breeders
+					q(29944, {	-- Leaders Among Breeders
 						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
 						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },

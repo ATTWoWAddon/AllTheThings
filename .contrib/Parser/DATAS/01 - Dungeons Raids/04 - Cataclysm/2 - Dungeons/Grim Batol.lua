@@ -73,7 +73,7 @@ local MixedNormalAndHeroicLootTable = {
 };
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	applyclassicphase(CATA_PHASE_ONE, inst(71, {	-- Grim Batol
-		["lore"] = "Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",
+		["lore"] = "Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alexstrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",
 		["mapID"] = 293,
 		["coord"] = { 19.2, 54.2, TWILIGHT_HIGHLANDS },
 		["groups"] = {
@@ -198,8 +198,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["groups"] = {
 						ach(5297),	-- Umbrage for Umbriss
 						i(56442),	-- Cursed Skardyn Vest
-						i(56441),	-- Modgug's Blade
-						i(56440),	-- Skardyn's Graceace
+						i(56441),	-- Modgud's Blade
+						i(56440),	-- Skardyn's Grace
 						i(56444),	-- Umbriss Band
 						i(56443),	-- Wildhammer Riding Helm
 					},
@@ -275,7 +275,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				},
 			})),
 			-- #endif
-			-- History: Grim Batol was rolled in as a m+ dungeon in TWW S1, and the Heroic difficulty did not return to it's pre-TWW state until Septembre 2025.
+			-- History: Grim Batol was rolled in as a m+ dungeon in TWW S1, and the Heroic difficulty did not return to it's pre-TWW state until September 2025.
 		},
 	})),
 })));

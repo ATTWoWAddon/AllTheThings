@@ -447,7 +447,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			["timeline"] = { ADDED_11_2_7 },
 		},{
 			ach(61429, {	-- Brawl Star
-				["groups"] = { title(666) },	-- Brawl Star %s
+				["groups"] = { title(666) },	-- Brawl Star <Name>
 			}),
 			ach(61421),	-- A Prime Ordeal
 			ach(61422),	-- Audience Participation

@@ -274,6 +274,18 @@ local function DoCollectibleCheckForItemRef(ref, itemID, itemUnbound)
 			end
 		end
 	end
+	local refqss = ref.qss
+	if refqss and type(refqss) == "table" then
+		local c
+		for i=1,#refqss do
+			c = refqss[i]
+			if c == itemID then
+				-- add the total item cost amount from this ref to our tracker
+				CostTotals.AddItem(itemID, c, ref)
+				break
+			end
+		end
+	end
 end
 local function DoCollectibleCheckForCurrRef(ref, currencyID)
 	-- Depth = 0
@@ -356,11 +368,11 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
 	local total = CostTotals.c[currencyID] or 0
-	-- temporary until currency costs are accurate?
-	-- local owned = CurrencyAmounts[currencyID]
-	local isCost = total > 0 -- owned
+	local owned = CurrencyAmounts[currencyID]
+	local isCost = total > owned
+	local isOwnedCost = (not isCost and total > 0) or nil
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
-	SetCostTotals(costs, isCost, refresh, currencyID)
+	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost)
 end
 local function PlayerIsMissingProviderSpell(spellID)
 	return not IsSpellKnownHelper(spellID)
@@ -708,7 +720,11 @@ app.AddEventHandler("OnLoad", function()
 			local id = reference[reference.key]
 			local currencyCount = CalculateTotalCosts(reference, id)
 			if currencyCount > 0 then
-				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = app.formatNumericWithCommas(currencyCount) }
+				local needed = app.formatNumericWithCommas(currencyCount)
+				if reference.isOwnedCost then
+					needed = app.Modules.Color.Colorize(needed, app.Colors.Time).." |T"..app.asset("known_green")..":0|t"
+				end
+				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = needed }
 			end
 		end
 	})
@@ -988,7 +1004,8 @@ local function BuildCost(group)
 	local cost = group.cost;
 	cost = cost and type(cost) == "table" and cost;
 	local providers = group.providers;
-	if not cost and not providers then return; end
+	local qss = group.qss
+	if not cost and not providers and not qss then return end
 
 	-- Pop out the cost objects into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST, {
@@ -1033,6 +1050,17 @@ local function BuildCost(group)
 			end
 			if costItem then
 				app.NestObject(costGroup, costItem);
+			end
+		end
+	end
+	if qss then
+		local costItem, c
+		for i=1,#qss do
+			c = qss[i]
+			-- print("Cost",c[1],c[2],c[3]);
+			costItem = app.CreateCostItem(SearchForObject("itemID", c, "field") or app.CreateItem(c), 1)
+			if costItem then
+				app.NestObject(costGroup, costItem)
 			end
 		end
 	end

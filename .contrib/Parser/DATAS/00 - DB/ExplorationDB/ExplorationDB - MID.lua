@@ -8,8 +8,8 @@ if true then
     return
 end
 -- #ENDIF
-ExportDB._Compressed.ExplorationAreaPositionDB_SavedVars = true
-ExportDB.ExplorationAreaPositionDB_SavedVars = {
+-- Copy in from SavedVars when harvested
+local db = {
 	[7172] = {
 	[550] = {
 	{
@@ -34274,20 +34274,21 @@ ExportDB.ExplorationAreaPositionDB_SavedVars = {
 	},
 }
 
-local db = ExportDB.ExplorationAreaPositionDB_SavedVars
 local newDB = {}
 
 for areaID, maps in pairs(db) do
-	newDB[areaID] = {}
+	local areaCoords = {}
+	newDB[areaID] = areaCoords
 
 	for mapID, coordsList in pairs(maps) do
 		for _, coords in ipairs(coordsList) do
 			local x = tonumber(string.format("%.4f", coords[1]))
 			local y = tonumber(string.format("%.4f", coords[2]))
 
-			table.insert(newDB[areaID], {x, y, mapID})
+			areaCoords[#areaCoords + 1] = {x, y, mapID}
 		end
 	end
 end
 
-ExportDB.ExplorationAreaPositionDB = newDB
+ExportDB.ExplorationAreaPositionDB = db
+ExportDB._Compressed.ExplorationAreaPositionDB = true

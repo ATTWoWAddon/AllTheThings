@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9267, {	-- Mending Old Wounds
 					["qg"] = 16418,	-- Mupsi Shacklefridd
 					["coord"] = { 61.22, 37.86, THE_BARRENS },
-					["lockCriteria"] = { 1, "factionID", 470.4 },   	-- Ratchet, Neutral
+					["lockCriteria"] = { 1, "factionID", 470.4 },	-- Ratchet, Neutral
 					["cost"] = {
 						{ "i", 2589, 40 },	-- Linen Cloth
 						{ "i", 3371, 4 },	-- Empty Vial
@@ -4182,11 +4182,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2035, {	-- Sword of the Night Sky
-							-- #if BEFORE 4.0.3
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							-- #else
-							["description"] = "The mob dropping this item is friendly to the alliance.",
-							-- #endif
+							["description"] =
+								-- #if AFTER CATA
+								"The mob dropping this item is friendly to the Alliance.",
+								-- #else
+								"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+								-- #endif
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
@@ -4252,10 +4253,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["groups"] = {
-						i(5111, { 	-- Rathorian's Cape
+						i(5111, {	-- Rathorian's Cape
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
-						i(5112, { 	-- Ritual Blade
+						i(5112, {	-- Ritual Blade
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
@@ -5077,11 +5078,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5107, {	-- Deckhand's Shirt
-					-- #if AFTER 4.0.3
-					["description"] = "Incredibly rare drop from Fray Island.",
-					-- #else
-					["description"] = "While technically this shirt does still drop in retail, the drop rate is reduced from fairly common to 1 in 12k with the Cataclysm. For the purposes of collecting, get it now and stock up on extras!",
-					-- #endif
+					["description"] =
+						-- #if AFTER CATA
+						"Incredibly rare drop from Fray Island.",
+						-- #else
+						"While technically this shirt does still drop in retail, the drop rate is reduced from fairly common to 1 in 12k with the Cataclysm. For the purposes of collecting, get it now and stock up on extras!",
+						-- #endif
 					["timeline"] = { REMOVED_4_0_3 },	-- Likely Removed	-- 13th May 2025	-- Goldenshacal
 														-- If somebody gets it, we can remove the timeline & set a note here since people are asking every couple months
 					["crs"] = {
@@ -5207,6 +5209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
+-- #IF ANYCLASSIC
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 	m(KALIMDOR, {
 		m(THE_BARRENS, {
@@ -5214,4 +5217,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 }));
+-- #endif
 -- #endif

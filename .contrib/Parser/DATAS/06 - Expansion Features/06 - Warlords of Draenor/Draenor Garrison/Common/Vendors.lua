@@ -535,94 +535,47 @@ root(ROOTS.ExpansionFeatures,
 						i(111988),	-- The Tannery, Level 2
 						i(111986),	-- Trading Post, Level 2
 						i(116185),	-- War Mill, Level 2
-						-- TODO: this is weird...
-						ach(9406, {		-- Working More Orders (250)
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = {
-								i(111930),	-- Alchemy Lab, Level 3
-								i(111973),	-- Enchanter's Study, Level 3
-								i(109257),	-- Engineering Works, Level 3
-								i(111975),	-- Gem Boutique, Level 3
-								i(111979),	-- Scribe's Quarters, Level 3
-								i(111993),	-- Tailoring Emporium, Level 3
-								i(111991),	-- The Forge, Level 3
-								i(111989),	-- The Tannery, Level 3
-							},
-						}),
-						ach(9565, {	-- Master Trapper (125)
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111969) },	-- Barn, Level 3
-						}),
-						ach(9523, {	-- Patrolling Draenor
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111971) },	-- Barracks, Level 3
-						}),
-						ach(9462, {	-- Draenor Angler
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["sym"] = {{"meta_achievement",
-								9461,		-- Sea Scorpion Angler
-								9460,		-- Jawless Skulker Angler
-								9459,		-- Fat Sleeper Angler
-								9458,		-- Blind Lake Sturgeon Angler
-								9457,		-- Blackwater Whiptail Angler
-								9456,		-- Abyssal Gulper Eel Angler
-								9455,		-- Fire Ammonite
-							}},
-							["groups"] = { i(111928) },		-- Fishing Shack, Level 3 [Blueprints]
-						}),
-						ach(9453, {	-- Draenic Stone Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(116249) },	-- Frostwall Mines, Level 3
-						}),
-						ach(9703, {	-- Stay Awhile and Listen
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(116432) },	-- Frostwall Tavern, Level 3
-						}),
-						ach(9495, {	-- The Bone Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111981) },	-- Gladiator's Sanctum, Level 3
-						}),
-						ach(9527, {	-- Terrific Technology
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(116201) },	-- Goblin Workshop, Level 3
-						}),
-						ach(9454, {	-- Draenic Seed Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111997) },	-- Herb Garden, Level 3
-						}),
-						ach(9429, {	-- Upgrading the Mill
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(109255) },	-- Lumber Mill, Level 3
-						}),
-						ach(9463, {	-- Draenic Pet Battler
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111999) },	-- Menagerie, Level 3
-						}),
-						ach(9468, {	-- Salvaging Pays Off
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111977) },	-- Salvage Yard, Level 3
-						}),
-						ach(9497, {	-- Finding Your Waystones
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(116197) },	-- Spirit Lodge, Level 3
-						}),
-						ach(9526, {	-- Master of Mounts
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(112003) },	-- Stables, Level 3
-						}),
-						ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111983) },	-- Storehouse, Level 3
-						}),
-						h(ach(9477, {	-- Savage Friends
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["_noautomation"] = true,
-							["groups"] = { i(111987) },	-- Trading Post, Level 3
-						})),
-						ach(9129, {	-- Filling the Ranks
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(116186) },	-- War Mill, Level 3
-						}),
+						-- Working More Orders (250)
+						i(111930, {sourceAchievement=9406}),	-- Alchemy Lab, Level 3
+						i(111973, {sourceAchievement=9406}),	-- Enchanter's Study, Level 3
+						i(109257, {sourceAchievement=9406}),	-- Engineering Works, Level 3
+						i(111975, {sourceAchievement=9406}),	-- Gem Boutique, Level 3
+						i(111979, {sourceAchievement=9406}),	-- Scribe's Quarters, Level 3
+						i(111993, {sourceAchievement=9406}),	-- Tailoring Emporium, Level 3
+						i(111991, {sourceAchievement=9406}),	-- The Forge, Level 3
+						i(111989, {sourceAchievement=9406}),	-- The Tannery, Level 3
+						-- Master Trapper (125)
+						i(111969,{sourceAchievement=9565}),	-- Barn, Level 3
+						-- Patrolling Draenor
+						i(111971,{sourceAchievement=9523}),	-- Barracks, Level 3
+						-- Draenor Angler
+						i(111928,{sourceAchievement=9462}),	-- Fishing Shack, Level 3
+						-- Draenic Stone Collector
+						i(116249,{sourceAchievement=9453}),	-- Frostwall Mines, Level 3
+						-- Stay Awhile and Listen
+						i(116432,{sourceAchievement=9703}),	-- Frostwall Tavern, Level 3
+						-- The Bone Collector
+						i(111981,{sourceAchievement=9495}),	-- Gladiator's Sanctum, Level 3
+						-- Terrific Technology
+						i(116201,{sourceAchievement=9527}),	-- Goblin Workshop, Level 3
+						-- Draenic Seed Collector
+						i(111997,{sourceAchievement=9454}),	-- Herb Garden, Level 3
+						-- Upgrading the Mill
+						i(109255,{sourceAchievement=9429}),	-- Lumber Mill, Level 3
+						-- Draenic Pet Battler
+						i(111999,{sourceAchievement=9463}),	-- Menagerie, Level 3
+						-- Salvaging Pays Off
+						i(111977,{sourceAchievement=9468}),	-- Salvage Yard, Level 3
+						-- Finding Your Waystones
+						i(116197,{sourceAchievement=9497}),	-- Spirit Lodge, Level 3
+						-- Master of Mounts
+						i(112003,{sourceAchievement=9526}),	-- Stables, Level 3
+						-- Got My Mind On My Draenor Money (10,000)
+						i(111983,{sourceAchievement=9487}),	-- Storehouse, Level 3
+						-- Savage Friends [A] / [H]
+						i(111987,{sourceAchievements={9477,9478}}),	-- Trading Post, Level 3
+						-- Filling the Ranks
+						i(116186,{sourceAchievement=9129}),	-- War Mill, Level 3
 					},
 				}),
 				n(91404, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Samantha Scarlet <Herb Trader>
@@ -934,94 +887,47 @@ root(ROOTS.ExpansionFeatures,
 						i(111990),	-- The Forge, Level 2
 						i(111988),	-- The Tannery, Level 2
 						i(111986),	-- Trading Post, Level 2
-						-- TODO: this is weird...
-						ach(9406, {		-- Working More Orders (250)
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = {
-								i(111930),	-- Alchemy Lab, Level 3
-								i(111973),	-- Enchanter's Study, Level 3
-								i(109257),	-- Engineering Works, Level 3
-								i(111975),	-- Gem Boutique, Level 3
-								i(111979),	-- Scribe's Quarters, Level 3
-								i(111993),	-- Tailoring Emporium, Level 3
-								i(111991),	-- The Forge, Level 3
-								i(111989),	-- The Tannery, Level 3
-							},
-						}),
-						ach(9565, {	-- Master Trapper (125)
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111969) },	-- Barn, Level 3
-						}),
-						ach(9523, {	-- Patrolling Draenor
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111971) },	-- Barracks, Level 3
-						}),
-						ach(9129, {	-- Filling the Ranks
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111967) },	-- Dwarven Bunker, Level 3
-						}),
-						ach(9462, {	-- Draenor Angler
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["sym"] = {{"meta_achievement",
-								9461,		-- Sea Scorpion Angler
-								9460,		-- Jawless Skulker Angler
-								9459,		-- Fat Sleeper Angler
-								9458,		-- Blind Lake Sturgeon Angler
-								9457,		-- Blackwater Whiptail Angler
-								9456,		-- Abyssal Gulper Eel Angler
-								9455,		-- Fire Ammonite
-							}},
-							["groups"] = { i(111928) },		-- Fishing Shack, Level 3 [Blueprints]
-						}),
-						ach(9495, {	-- The Bone Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111981) },	-- Gladiator's Sanctum, Level 3
-						}),
-						ach(9527, {	-- Terrific Technology
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111985) },	-- Gnomish Gearworks, Level 3
-						}),
-						ach(9454, {	-- Draenic Seed Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111997) },	-- Herb Garden, Level 3
-						}),
-						ach(9429, {	-- Upgrading the Mill
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(109255) },	-- Lumber Mill, Level 3
-						}),
-						ach(9453, {	-- Draenic Stone Collector
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111996) },	-- Lunarfall Excavation, Level 3
-						}),
-						ach(9703, {	-- Stay Awhile and Listen
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(109065) },	-- Lunarfall Inn, Level 3
-						}),
-						ach(9497, {	-- Finding Your Waystones
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(109063) },	-- Mage Tower, Level 3
-						}),
-						ach(9463, {	-- Draenic Pet Battler
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111999) },	-- Menagerie, Level 3
-						}),
-						ach(9468, {	-- Salvaging Pays Off
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111977) },	-- Salvage Yard, Level 3
-						}),
-						ach(9526, {	-- Master of Mounts
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(112003) },	-- Stables, Level 3
-						}),
-						ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111983) },	-- Storehouse, Level 3
-						}),
-						a(ach(9478, {	-- Savage Friends
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["_noautomation"] = true,
-							["groups"] = { i(111987) },	-- Trading Post, Level 3
-						})),
+						-- Working More Orders (250)
+						i(111930, {sourceAchievement=9406}),	-- Alchemy Lab, Level 3
+						i(111973, {sourceAchievement=9406}),	-- Enchanter's Study, Level 3
+						i(109257, {sourceAchievement=9406}),	-- Engineering Works, Level 3
+						i(111975, {sourceAchievement=9406}),	-- Gem Boutique, Level 3
+						i(111979, {sourceAchievement=9406}),	-- Scribe's Quarters, Level 3
+						i(111993, {sourceAchievement=9406}),	-- Tailoring Emporium, Level 3
+						i(111991, {sourceAchievement=9406}),	-- The Forge, Level 3
+						i(111989, {sourceAchievement=9406}),	-- The Tannery, Level 3
+						-- Master Trapper (125)
+						i(111969,{sourceAchievement=9565}),	-- Barn, Level 3
+						-- Patrolling Draenor
+						i(111971,{sourceAchievement=9523}),	-- Barracks, Level 3
+						-- Draenor Angler
+						i(111928,{sourceAchievement=9462}),	-- Fishing Shack, Level 3
+						-- Draenic Stone Collector
+						i(116249,{sourceAchievement=9453}),	-- Frostwall Mines, Level 3
+						-- Stay Awhile and Listen
+						i(116432,{sourceAchievement=9703}),	-- Frostwall Tavern, Level 3
+						-- The Bone Collector
+						i(111981,{sourceAchievement=9495}),	-- Gladiator's Sanctum, Level 3
+						-- Terrific Technology
+						i(116201,{sourceAchievement=9527}),	-- Goblin Workshop, Level 3
+						-- Draenic Seed Collector
+						i(111997,{sourceAchievement=9454}),	-- Herb Garden, Level 3
+						-- Upgrading the Mill
+						i(109255,{sourceAchievement=9429}),	-- Lumber Mill, Level 3
+						-- Draenic Pet Battler
+						i(111999,{sourceAchievement=9463}),	-- Menagerie, Level 3
+						-- Salvaging Pays Off
+						i(111977,{sourceAchievement=9468}),	-- Salvage Yard, Level 3
+						-- Finding Your Waystones
+						i(116197,{sourceAchievement=9497}),	-- Spirit Lodge, Level 3
+						-- Master of Mounts
+						i(112003,{sourceAchievement=9526}),	-- Stables, Level 3
+						-- Got My Mind On My Draenor Money (10,000)
+						i(111983,{sourceAchievement=9487}),	-- Storehouse, Level 3
+						-- Savage Friends [A] / [H]
+						i(111987,{sourceAchievements={9477,9478}}),	-- Trading Post, Level 3
+						-- Filling the Ranks
+						i(116186,{sourceAchievement=9129}),	-- War Mill, Level 3
 					},
 				}),
 				n(76872, {	-- Supplymaster Eri <General Goods & Repairs>

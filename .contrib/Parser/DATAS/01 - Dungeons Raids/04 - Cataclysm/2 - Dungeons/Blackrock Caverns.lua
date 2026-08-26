@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["qg"] = 49476,	-- Pip Quickwit
 					["groups"] = {
 						i(66886),	-- Acid-Eaten Vest
-						i(66885),	-- Diamond-Studden Helm
+						i(66885),	-- Diamond-Studded Helm
 						i(66884),	-- Raz's Breastplate
 					},
 				}),
@@ -164,8 +164,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55276),	-- Kibble
 					},
 				}),
-				e(109, {	-- Ascendent Lord Obsidius
-					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+				e(109, {	-- Ascendant Lord Obsidius
+					["crs"] = { 39705 },	-- Ascendant Lord Obsidius
 					["groups"] = {
 						-- #if BEFORE 7.3.5
 						ach(4833),	-- Blackrock Caverns
@@ -232,8 +232,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56307),	-- Kibble
 					},
 				}),
-				e(109, {	-- Ascendent Lord Obsidius
-					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+				e(109, {	-- Ascendant Lord Obsidius
+					["crs"] = { 39705 },	-- Ascendant Lord Obsidius
 					["groups"] = {
 						ach(5284),	-- Ascendant Descending
 						ach(5060),	-- Heroic: Blackrock Caverns
@@ -306,8 +306,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56307),	-- Kibble
 					},
 				}),
-				e(109, {	-- Ascendent Lord Obsidius
-					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+				e(109, {	-- Ascendant Lord Obsidius
+					["crs"] = { 39705 },	-- Ascendant Lord Obsidius
 					["groups"] = {
 						ach(4833),	-- Blackrock Caverns
 						i(56317),	-- Amber Messenger
@@ -341,8 +341,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						ach(5283),	-- Too Hot to Handle
 					},
 				}),
-				e(109, {	-- Ascendent Lord Obsidius
-					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+				e(109, {	-- Ascendant Lord Obsidius
+					["crs"] = { 39705 },	-- Ascendant Lord Obsidius
 					["groups"] = {
 						ach(5284),	-- Ascendant Descending
 						ach(5060),	-- Heroic: Blackrock Caverns
@@ -355,8 +355,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
 				["groups"] = {
-					e(109, {	-- Ascendent Lord Obsidius
-						["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+					e(109, {	-- Ascendant Lord Obsidius
+						["crs"] = { 39705 },	-- Ascendant Lord Obsidius
 						["groups"] = {
 							ach(41139),	-- Protocol Inferno: Blackrock Caverns
 						},

@@ -1021,14 +1021,14 @@ local i = function(itemID, speciesID, altSpeciesID)
 		local spellID = CompanionPetSpeciesIDToSpellID[speciesID];
 		if spellID then item.spellID = spellID; end
 		if altSpeciesID then item.altSpeciesID = altSpeciesID; end
+		SpeciesDB[speciesID] = item
 	elseif item.speciesID then
 		item.speciesID = nil;
 	end
-	SpeciesDB[speciesID] = Items[itemID]
 	return item;
 end
 local n = function(creatureID, speciesID)
-	if creatureID < 1 then return end
+	if creatureID < 1 or speciesID < 1 then return end
 	local pet = { ["speciesID"] = speciesID, ["npcID"] = creatureID, ["ignoreBonus"] = true };
 	Pets[creatureID] = pet;
 	SpeciesDB[speciesID] = Pets[creatureID]
@@ -4579,7 +4579,7 @@ i(266076, 4881);	-- Nether Siphoner
 i(262392, 4961);	-- Nibblesworth
 i(240840, 4803);	-- Niblet
 i(264892, 4981);	-- Nova
-i(262391, 4958);	-- Ominous Domanus
+i(262391, 4958);	-- Ominous Dominus
 i(250145, 4884);	-- Pangolil
 i(258903, 4927);	-- Percival
 i(260730, 4948);	-- Perturbed Sporebat
@@ -4646,19 +4646,26 @@ i(266912, 5080);	-- Pinky
 -- PATCH 12.1.0 --
 ------------------
 i(270248, 5035);	-- Autumn Snapling
+i(280189, 5134);	-- Cauldron Concoction
 i(270254, 5031);	-- Caustic Writhling
 i(275631, 5071);	-- Corrosive Writhling
 i(270249, 5029);	-- Cursed Spawn
+i(270211, 5027);	-- Furiostraza
 i(270253, 5030);	-- Jaundiced Slitherer
 i(279921, 5131);	-- Ki'clak
+i(280540, 5137);	-- Lil' Mon
+i(270191, 5026);	-- Lil'Kruul
 i(270252, 5032);	-- Nightfur Kapara
 i(278572, 5126);	-- Pale Hexscale
+i(280178, 5133);	-- Poison Dart Frog
 i(270214, 5028);	-- Poisoned Parasite
 i(275702, 5076);	-- Preyhunter's Prismguard
 i(275704, 5078);	-- Preyhunter's Riftbreaker
 i(270251, 5033);	-- Sleek Snakebiter
 i(276248, 5093);	-- Snek'zali
+i(280305, 5125);	-- Soulcoil Remnant
 i(270250, 5034);	-- Steady Croakfrog
+i(279483, 3526);	-- Three-Eyed Fish
 i(279387, 5130);	-- Ul'ava'took
 i(275020, 5070);	-- Venom Elemental
 i(275632, 5072);	-- Volatile Venomfang
@@ -4667,17 +4674,17 @@ i(280138, 5132);	-- Zesty
 --- UNSORTED ---
 i(277322, 5119);	-- Amewbis
 i(275703, 5077);	-- ArcaneGolem2 Pet - Red
+i(278231, 5124);	-- Aquatic Clockwork Quacker
 i(277318, 5116);	-- Catsramas
 i(277319, 5117);	-- Cat'Thuzad
-i(280189, 5134);	-- Cauldron Concoction
+i(278230, 5123);	-- Classic Clockwork Quacker
 i(0, 5061);		-- Crabbers
-i(270211, 5027);	-- Furiostraza
+i(274925, 5067);	-- Delta
+i(251038, 4893);	-- Emerrrgl
+i(282417, 5164);	-- J'imothy
 i(277282, 5115);	-- Kirin Tor Cat
 i(277270, 5114);	-- Kirin Tor Kitty
-i(280540, 5137);	-- Lil' Mon
-i(270191, 5026);	-- Lil'Kruul
 i(277321, 5118);	-- Mewkahen
-i(280178, 5133);	-- Poison Dart Frog
-i(280305, 5125);	-- Soulcoil Remnant
+i(278688, 5127);	-- Skipper
 i(279197, 5129);	-- Slitherfang
 i(276234, 5092);	-- Vibrant Venomfang

@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98035,	-- To failure.
 					}),
 					o(668598, {	-- Funerary Inscription
-						["coord"] = { 46.4, 24.0, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["coord"] = { 47.3, 28.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["questID"] = 98036,	-- To a father.
 					}),
 					o(668599, {	-- Funerary Inscription
@@ -53,13 +53,44 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["questID"] = 98039,	-- To a stranger.
 					}),
 					o(668602, {	-- Funerary Inscription
-						["coord"] = { 56.1, 28.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						["coord"] = { 56.5, 23.0, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						["questID"] = 98040,	-- To a shield-bearer.
 					}),
+				}),
+				-- Altar of Corrosion unlocks
+				o(649651, {	-- Eye of Szarith
+					["coord"] = { 68.60, 15.66, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+					["cost"] = { { "i", 280003, 1 } },	-- 1x Excising Knife
+					["groups"] = { i(278534) },	-- Eye of Szarith (QS!/QI!)
+				}),
+				o(671500, {	-- Feather of Tok'jara
+					["coord"] = { 48.50, 25.76, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					["cost"] = { { "i", 280006, 1 } },	-- 1x Spirit Loupe
+					["groups"] = { i(278523) },	-- Feather of Tok'jara (QS!/QI!)
+				}),
+				o(671508, {	-- Jin'tal's Reliquary
+					["coord"] = { 36.26, 23.70, 2638 },	-- Profaned Mausoleum
+					["cost"] = { { "i", 280005, 1 } },	-- 1x Dispelling Charm
+					["groups"] = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
+				}),
+				o(671498, {	-- Venom-Worn Coffer
+					["description"] = "Will only show up once you have looted the Corroded Key, in one of 5 random locations",
+					["coords"] = {
+						{ 41.7, 53.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 52.5, 53.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 47.5, 38.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 53.5, 18.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						{ 42.7, 12.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+					},
+					["cost"] = { { "i", 280004, 1 } },	-- 1x Corroded Key
+					["groups"] = { i(278536) },	-- Mummified Lynx's Paw (QS!/QI!)
 				}),
 				-- Repeatables
 				o(649640, {	-- Soulcoiler's Cache
 					["description"] = "Can be found randomly throughout the Vaults.",
+					["groups"] = {
+						i(279550),	-- Potion of Venomous Return
+					},
 				}),
 				o(649687, {	-- Soulcoiler's Trove
 					["description"] = "Can be found randomly throughout the Vaults.",

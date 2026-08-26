@@ -231,6 +231,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				o(253161, {	-- Grove Vine
 					["classes"] = { DRUID },
 					["description"] = "|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots. When Grove Vine spawns it has a chance for these two pets.|r",
+					["coord"] = { 45.6, 63.5, THE_DREAMGROVE },
 					["groups"] = {
 						i(139554, {	-- Acorn of the Endless
 							artifact(62),	-- Restoration Druid Hidden Artifact Appearance

@@ -270,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
-							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Ungoro Crater.",
+							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
 							["coord"] = { 34.5, 41.1, UNGORO_CRATER },
 							["crs"] = {
 								14527,	-- Simone the Inconspicuous
@@ -335,7 +335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if NOT SEASON_OF_DISCOVERY
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
-							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Ungoro Crater.",
+							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",
 							["coord"] = { 34.5, 41.1, UNGORO_CRATER },
 							["crs"] = {
 								14527,	-- Simone the Inconspicuous
@@ -440,7 +440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 						{
 							["itemID"] = 18489,	-- Unfired Ancient Blade
-							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
+							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
 						},
 						i(228679),	-- Quel'Serrar
 					},
@@ -471,7 +471,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 						{
 							["itemID"] = 18489,	-- Unfired Ancient Blade
-							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
+							["description"] = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
 						},
 						-- #endif
 						i(18348),	-- Quel'Serrar

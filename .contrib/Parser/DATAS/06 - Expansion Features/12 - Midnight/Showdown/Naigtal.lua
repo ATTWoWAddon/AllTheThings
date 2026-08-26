@@ -238,24 +238,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["coord"] = { 74.2, 73.5, NAIGTAL },
 						}),
 						q(96573, {	-- Soul Lattice Revealed
-							["qg"] = 265558, -- Veraan
+							["qg"] = 265558,	-- Veraan
 							["coord"] = { 48.1, 81.5, NAIGTAL },
 							["groups"] = { i(275699) },	-- Veraan's Soul Lattice Report (QI!)
 						}),
 						q(96574, {	-- Cryptside Rendezvous
 							["sourceQuest"] = 96573,	-- Soul Lattice Revealed
-							["qg"] = 265950, -- Commander Tala'saan
+							["qg"] = 265950,	-- Commander Tala'saan
 							["coord"] = { 47.5, 82.0, NAIGTAL },
 						}),
 						q(96576, {	-- Mementos of the Dead
 							["sourceQuest"] = 96574,	-- Cryptside Rendezvous
-							["qg"] = 266829, -- Allari the Souleater
+							["qg"] = 266829,	-- Allari the Souleater
 							["coord"] = { 75.5, 44.7, 2646 },	-- Vilaldoun
 							["groups"] = { i(276255) },	-- Forgotten Memorial Tribute (QI!)
 						}),
 						q(96575, {	-- Cages of the Soul
 							["sourceQuest"] = 96574,	-- Cryptside Rendezvous
-							["qg"] = 266541, -- Archmage Y'mera
+							["qg"] = 266541,	-- Archmage Y'mera
 							["coord"] = { 75.3, 43.8, 2646 },	-- Vilaldoun
 						}),
 						q(97031, {	-- Vilaldoun VValediction
@@ -271,18 +271,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								96575,	-- Cages of the Soul
 								96576,	-- Mementos of the Dead
 							},
-							["qg"] = 266540, -- Commander Tala'saan
+							["qg"] = 266540,	-- Commander Tala'saan
 							["coord"] = { 36.7, 73.1, 2646 },	-- Vilaldoun
 							["groups"] = { i(276342) },	-- Fragmented Soul Lattice (QI!)
 						}),
 						q(96578, {	-- Cryptic Departure
 							["sourceQuest"] = 96577,	-- The Soul Architect
-							["qg"] = 266540, -- Commander Tala'saan
+							["qg"] = 266540,	-- Commander Tala'saan
 							["coord"] = { 36.7, 73.1, 2646 },	-- Vilaldoun
 						}),
 						q(97037, {	-- Stargrim Revelations
 							["sourceQuest"] = 96578,	-- Cryptic Departure
-							["qg"] = 265950, -- Commander Tala'saan
+							["qg"] = 265950,	-- Commander Tala'saan
 							["coord"] = { 47.5, 82.1, NAIGTAL },
 						}),
 						-- Repeatable
@@ -534,7 +534,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							},
 							["description"] = "Feed the Sleepy Mandrake 5 different Redcap Mushrooms from Naigtal to wake it up and become your pet.",
 							["coord"] = { 68.2, 51.6, NAIGTAL },
-							["groups"] = { i(262768) }, 	-- Sleepy Mandrake (PET!)
+							["groups"] = { i(262768) },	-- Sleepy Mandrake (PET!)
 						}),
 						hqt(97091, {	-- Feed the Sleepy Mandrake a Highland Redcap
 							["name"] = "Feed the Sleepy Mandrake a Highland Redcap",

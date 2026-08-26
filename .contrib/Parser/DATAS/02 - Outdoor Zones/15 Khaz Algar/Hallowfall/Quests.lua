@@ -1010,7 +1010,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				q(83247, {	-- Suspicious Minds
-					["sourceQuests"] = { 78658 },	-- 	-- The Hallowed Path,  For Morale is not the source quest, you can do 83247 before 83283
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path,  For Morale is not the source quest, you can do 83247 before 83283
 					["provider"] = { "n", 225879 },	-- Derill Fayn
 					["coord"] = { 68.1, 44.2, HALLOWFALL },
 					["groups"] = {

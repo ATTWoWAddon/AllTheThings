@@ -498,7 +498,7 @@ root(ROOTS.Zones, {
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
 						["timeline"] = { ADDED_5_3_0 },
 						["groups"] = {
-							i(98546), 	-- Bulging Heroic Cache of Treasures
+							i(98546),	-- Bulging Heroic Cache of Treasures
 						},
 					}),
 					-- Wouter NOTE: it's been confirmed by Blizzard that Into the Vale quests will NOT be added to MoP Classic (not deemed important enough to fix)
@@ -780,11 +780,11 @@ root(ROOTS.Zones, {
 							i(102543),	-- Aged Mogu'shan Cheese
 							i(102542),	-- Ancient Pandaren Spices
 							i(101768),	-- Recipe: Farmer's Delight (RECIPE!)
-							i(101770), 	-- Recipe: Fluffy Silkfeather Omelet (RECIPE!)
-							i(101767), 	-- Recipe: Mango Ice (RECIPE!)
-							i(101765), 	-- Recipe: Seasoned Pomfruit Slices (RECIPE!)
-							i(101766), 	-- Recipe: Spiced Blossom Soup (RECIPE!)
-							i(101769), 	-- Recipe: Stuffed Lushrooms (RECIPE!)
+							i(101770),	-- Recipe: Fluffy Silkfeather Omelet (RECIPE!)
+							i(101767),	-- Recipe: Mango Ice (RECIPE!)
+							i(101765),	-- Recipe: Seasoned Pomfruit Slices (RECIPE!)
+							i(101766),	-- Recipe: Spiced Blossom Soup (RECIPE!)
+							i(101769),	-- Recipe: Stuffed Lushrooms (RECIPE!)
 							i(103624),	-- Treasures of the Vale
 							--applyclassicphase(MOP_PHASE_ONE, i(76061, { ["timeline"] = { ADDED_5_0_4 } })),	-- Spirit of Harmony // These are world drops
 						})),

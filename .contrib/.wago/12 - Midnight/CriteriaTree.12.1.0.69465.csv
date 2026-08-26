@@ -50372,7 +50372,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 66551,"Merektha defeated",66549,1,0,39861,1,0
 66552,"Galvazzt defeated",66549,1,0,39862,2,0
 66553,"Avatar of Sethraliss defeated",66549,1,0,39863,3,0
-66554,"Enemy Forces",66549,649,9,0,4,0
+66554,"Enemy Forces",66549,689,9,0,4,0
 66562,,66554,25,0,116944,5,0
 66563,,66554,7,0,116939,0,0
 66567,"8.0 Dungeon - Temple of Sethraliss - Challenge (More Trash)",0,0,4,0,0,0
@@ -93727,7 +93727,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 162560,"11.0.5 Timewalking - BRD (Update to correct Encounter Record)",0,1,8,0,0,4096
 162561,"Player defeats Dagran Thaurissan in timewalking.",162560,0,0,70729,0,0
 162562,"Select a Combat Role for Brann Bronzebeard",0,1,8,0,0,4096
-162563,,162562,1,0,67741,0,0
+162563,,162562,1,0,117515,0,0
 162564,"Account Data Element reached 10",0,0,4,0,0,4096
 162565,,162564,10,0,111020,0,0
 162568,"Now THIS is Dragon Racing! (Hidden Copy)",0,0,4,0,0,0
@@ -111955,7 +111955,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221232,"12.0 Upgrade System - Tutorial - Silvermoon - Upgrade Veteran (KNF)",0,0,4,0,0,4096
 221233,,221232,0,0,111383,0,0
 221234,"Invaders Defeated",0,0,4,0,0,1
-221236,"Slithering Siegelancers defeated",221561,1,0,111385,0,1
+221236,"Slithering Siegelancers defeated",221561,2,0,111385,0,1
 221242,"Flanking Ethereals defeated",221014,1000,9,0,0,0
 221243,"Venom Lancer Ori'kassi defeated",0,0,4,0,0,0
 221244,"Venom Lancer Ori'kassi Defeated",221243,1,0,111387,0,0
@@ -112075,7 +112075,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221558,"Destabilized Manifestation defeated",221557,1,0,112157,0,0
 221559,"Eggs Destroyed",0,0,4,0,0,0
 221560,,221559,100,0,111553,0,0
-221561,"Ula'tek's Spawn Defeated and Trolls Freed",221234,10000,9,0,0,0
+221561,"Ula'tek's Spawn Defeated and Trolls Freed",221234,1000,9,0,0,0
 221562,"T2 Defeated",221561,2,0,111554,1,1
 221574,,220999,1,0,111563,1,1
 221575,,220999,1,0,111564,2,1
@@ -112116,7 +112116,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221679,,221678,1,0,111613,0,0
 221684,"Sniffenseekers helped",0,3,5,0,0,8193
 221685,"Cure niffen sniffenseekers of nose blindness",221684,1,0,111616,0,0
-221686,"Eggs Destroyed",0,10000,9,0,0,1
+221686,"Eggs Destroyed",0,1000,9,0,0,1
 221687,"Eggs Destroyed",221686,1,0,111617,0,1
 221688,"Vassti, the Exalted Broodmother Defeated",0,0,4,0,0,0
 221689,"Vassti, the Exalted Broodmother Defeated",221688,1,0,111618,0,0
@@ -114044,7 +114044,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224231,"Zaen Bladesorrow defeated",224229,1,0,95554,1,0
 224232,"Xathuux the Annihilator defeated",224229,1,0,95555,2,0
 224233,"Lithiel Cinderfury defeated",224229,1,0,95556,3,0
-224234,"Enemy Forces",224229,690,9,0,4,0
+224234,"Enemy Forces",224229,655,9,0,4,0
 224235,,224234,1,0,50191,0,0
 224236,,224234,7,0,50192,1,0
 224237,,224234,9999,0,48468,2,0
@@ -114345,43 +114345,43 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224584,"Achievement - 12.1 - Defeat Outland trainers+bosses with Aquatic lvl 25",0,0,4,0,0,0
 224588,"Nicki Tinytech",224584,1,0,113289,0,0
 224589,Narrok,224584,1,0,113288,1,0
-224590,"Gorma Asaan",224584,1,0,113290,2,0
+224590,"Bloodknight Antari",224584,1,0,113290,2,0
 224591,"Morulu The Elder",224584,1,0,113291,3,0
 224592,Ras'an,224584,1,0,113292,4,0
 224593,"Achievement - 12.1 - Defeat Outland trainers+bosses with Beast lvl 25",0,0,4,0,0,0
 224594,"Nicki Tinytech",224593,1,0,113293,0,0
 224595,Narrok,224593,1,0,113294,1,0
-224596,"Gorma Asaan",224593,1,0,113295,2,0
+224596,"Bloodknight Antari",224593,1,0,113295,2,0
 224597,"Morulu The Elder",224593,1,0,113296,3,0
 224598,Ras'an,224593,1,0,113297,4,0
 224599,"Achievement - 12.1 - Defeat Outland trainers+bosses with Critter lvl 25",0,0,4,0,0,0
 224600,"Nicki Tinytech",224599,1,0,113298,0,0
 224601,Narrok,224599,1,0,113299,1,0
-224602,"Gorma Asaan",224599,1,0,113300,2,0
+224602,"Bloodknight Antari",224599,1,0,113300,2,0
 224603,"Morulu The Elder",224599,1,0,113301,3,0
 224604,Ras'an,224599,1,0,113302,4,0
 224605,"Achievement - 12.1 - Defeat Outland trainers+bosses with Dragonkin lvl 25",0,0,4,0,0,0
 224606,"Nicki Tinytech",224605,1,0,113303,0,0
 224607,Narrok,224605,1,0,113304,1,0
-224608,"Gorma Asaan",224605,1,0,113305,2,0
+224608,"Bloodknight Antari",224605,1,0,113305,2,0
 224609,"Morulu The Elder",224605,1,0,113306,3,0
 224610,Ras'an,224605,1,0,113307,4,0
 224611,"Achievement - 12.1 - Defeat Outland trainers+bosses with Elemental lvl 25",0,0,4,0,0,0
 224612,"Nicki Tinytech",224611,1,0,113308,0,0
 224613,Narrok,224611,1,0,113309,1,0
-224614,"Gorma Asaan",224611,1,0,113310,2,0
+224614,"Bloodknight Antari",224611,1,0,113310,2,0
 224615,"Morulu The Elder",224611,1,0,113311,3,0
 224616,Ras'an,224611,1,0,113312,4,0
 224617,"Achievement - 12.1 - Defeat Outland trainers+bosses with Flying lvl 25",0,0,4,0,0,0
 224618,"Nicki Tinytech",224617,1,0,113313,0,0
 224619,Narrok,224617,1,0,113314,1,0
-224620,"Gorma Asaan",224617,1,0,113315,2,0
+224620,"Bloodknight Antari",224617,1,0,113315,2,0
 224621,"Morulu The Elder",224617,1,0,113316,3,0
 224622,Ras'an,224617,1,0,113317,4,0
 224623,"Achievement - 12.1 - Defeat Outland trainers+bosses with Humanoid lvl 25",0,0,4,0,0,0
 224624,"Nicki Tinytech",224623,1,0,113318,0,0
 224625,Narrok,224623,1,0,113319,1,0
-224626,"Gorma Asaan",224623,1,0,113320,2,0
+224626,"Bloodknight Antari",224623,1,0,113320,2,0
 224627,"Morulu The Elder",224623,1,0,113321,3,0
 224628,Ras'an,224623,1,0,113322,4,0
 224629,"Neighborhood Knick Knacks traded to Griftah",0,0,4,0,0,0
@@ -114389,19 +114389,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224631,"Achievement - 12.1 - Defeat Outland trainers+bosses with Magic lvl 25",0,0,4,0,0,0
 224632,"Nicki Tinytech",224631,1,0,113324,0,0
 224633,Narrok,224631,1,0,113325,1,0
-224634,"Gorma Asaan",224631,1,0,113326,2,0
+224634,"Bloodknight Antari",224631,1,0,113326,2,0
 224635,"Morulu The Elder",224631,1,0,113327,3,0
 224636,Ras'an,224631,1,0,113328,4,0
 224637,"Achievement - 12.1 - Defeat Outland trainers+bosses with Mechanical lvl 25",0,0,4,0,0,0
 224638,"Nicki Tinytech",224637,1,0,113329,0,0
 224639,Narrok,224637,1,0,113330,1,0
-224640,"Gorma Asaan",224637,1,0,113331,2,0
+224640,"Bloodknight Antari",224637,1,0,113331,2,0
 224641,"Morulu The Elder",224637,1,0,113332,3,0
 224642,Ras'an,224637,1,0,113333,4,0
 224643,"Achievement - 12.1 - Defeat Outland trainers+bosses with Undead lvl 25",0,0,4,0,0,0
 224644,"Nicki Tinytech",224643,1,0,113334,0,0
 224645,Narrok,224643,1,0,113335,1,0
-224646,"Gorma Asaan",224643,1,0,113336,2,0
+224646,"Bloodknight Antari",224643,1,0,113336,2,0
 224647,"Morulu The Elder",224643,1,0,113337,3,0
 224648,Ras'an,224643,1,0,113338,4,0
 224651,"Achievement - 12.1 - Defeat Cataclysm trainers+bosses with Aquatic lvl 25",0,0,4,0,0,0
@@ -114471,7 +114471,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224724,"Crushfoot defeated",224723,0,0,114190,0,32
 224725,"12.1 Delves - Ulatek02 - V01 - Boss slain",0,0,4,0,0,0
 224726,"Drakta slain",224725,1,0,60399,0,32
-224844,"Players Tagged",0,0,4,0,0,8193
 224727,"12.0.7 Raid - Fungarian - LFR",0,0,4,0,0,0
 224728,"Rotmire defeated",224727,1,0,113406,0,0
 224740,"12.0.5 Void Assaults - Eversong - Cluster 01 - Scenario 05 - Step 01 Completion (JTL)",0,0,4,0,0,0
@@ -114546,6 +114545,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224841,,224840,1,0,113461,0,1
 224842,"Decor Duels Completed",0,10,5,0,0,8193
 224843,,224842,1,0,113461,0,1
+224844,"Players Tagged",0,0,4,0,0,8193
 224845,,224844,1,0,113462,0,0
 224846,"Players Tagged",0,10,5,0,0,8193
 224847,,224846,1,0,113462,0,1
@@ -114628,7 +114628,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224954,,224953,0,0,113514,0,0
 224961,"Corrupted Wildlife slain",222968,3,0,112986,1,32
 224962,Deliveries,224125,21,4,0,1,0
-225379,"Key acquired",225378,0,0,106442,0,32
 224963,"In Slayer's Rise, kill an enemy at the Path of Predation before they dismount.",0,0,4,0,0,0
 224964,"In Slayer's Rise, kill an enemy at the Path of Predation before they dismount.",224963,1,0,113522,0,2
 224965,"Kill the enemy faction's ultradon summoned at The Husk or Sparring Grounds.",0,1,8,0,0,0
@@ -114857,6 +114856,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225372,"Enter Murder Row with the Epic Edition decor in house chest",0,0,4,0,0,0
 225373,,225372,0,0,113698,0,0
 225377,"Complete the Harandar Campaign",225376,0,0,103889,0,16
+225379,"Key acquired",225378,0,0,106442,0,32
 225380,"Challenging Sites",0,0,4,0,0,0
 225381,Tendrils,225380,0,0,113700,0,0
 225382,"Tainted Corpses",225380,0,0,113701,1,0
@@ -115104,6 +115104,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225785,,225779,1,0,113918,5,0
 225786,"Recover Coalesced Leyflux",0,100,5,0,0,4096
 225787,,225786,1,0,113919,0,0
+225887,,225817,1,0,108292,69,2
 225788,"12.1 Delves - Fungarians03 - V04 - Rewards Cutoff (Hufton)",0,0,4,0,0,0
 225791,,225788,2,0,114572,0,0
 225793,,216383,2,0,113920,5,0
@@ -115197,7 +115198,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225884,,225817,1,0,108289,66,2
 225885,,225817,1,0,108290,67,2
 225886,,225817,1,0,108291,68,2
-225887,,225817,1,0,108292,69,2
 225888,,225817,1,0,108293,70,2
 225889,,225817,1,0,108294,71,2
 225890,,225817,1,0,108295,72,2
@@ -117048,7 +117048,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 227939,,227936,2100,0,114049,2,2
 227940,,227936,2100,0,114050,3,2
 227941,,227936,2100,0,114051,4,2
-229391,"Turtles rescued",225269,3,0,115027,0,0
 227942,"Win 50 Games as a Gladiator in Midnight Season 2 in 3v3",0,0,4,0,0,0
 227943,,227942,50,0,114227,0,1
 227944,"Elite Midnight 2",0,1,8,0,0,2
@@ -117203,7 +117202,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229101,"Achievement - Glory of the Venomous Raider",0,0,4,0,0,0
 229102,"Donate to taverns in Midnight zones.",0,0,4,0,0,0
 229103,"Eversong Woods, Silvermoon",229102,1,0,114942,0,0
-229392,Powder,225269,0,0,115028,1,0
+229391,"Turtles rescued",225269,3,0,115027,0,0
 229104,"Eversong Woods, Tranquillien",229102,1,0,114943,1,0
 229105,"Eversong Woods, Arcantina",229102,1,0,114944,2,0
 229106,"Harandar, Har'athir",229102,1,0,114945,3,0
@@ -117346,6 +117345,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229381,"Dead End",229365,0,0,115024,15,0
 229389,"12.1 Delves - HexTrolls01 - V04 - Chests + Loot (Hufton)",0,0,4,0,0,0
 229390,"Chests opened",229389,2,0,115026,1,0
+229392,Powder,225269,0,0,115028,1,0
 229393,"Cannon Shot",225269,0,0,115029,2,0
 229394,"Swivel guns",225269,0,0,115030,3,0
 229395,"Shellman's 195",225269,0,0,115031,4,0
@@ -117588,7 +117588,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229694,"Forgotten Mask",229674,0,0,115314,19,16
 229695,"Vul'zahn's Smuggled Treasure",229674,0,0,115293,20,16
 229696,"Zul'jan's Stash",229674,0,0,115297,21,16
-230470,"Corrosive Bilespear",230467,1,8,0,1,8192
 229703,"12.1 Delves - Ulatek01 - Just Hearts Done",0,0,4,0,0,0
 229704,,229703,6,0,115150,0,0
 229761,"12.1 Delves - Ethereals01 - V04 - Intro NPC (Hufton)",0,0,4,0,0,0
@@ -117693,8 +117692,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229941,"Darkpine Lumber harvested",229940,60,0,115470,0,1
 229944,"12.0 - Tortollan - Archeology - (POC)",0,5,4,0,0,0
 229945,"Archeology Finds recovered",229944,5,0,115472,0,1
-229949,"12.1 Ulatek - Achievement - Curse Surge - Cursebreaker - Kill 300 Bosses (ERW)",0,0,4,0,0,1
-229950,,229949,300,0,115475,0,1
+229949,"12.1 Ulatek - Achievement - Curse Surge - Cursebreaker - Kill 150 Bosses (ERW)",0,0,4,0,0,1
+229950,,229949,150,0,115475,0,1
 229951,,229649,0,0,115476,0,32
 229952,,229649,0,0,115478,1,32
 229953,,229649,0,0,115477,2,32
@@ -117905,6 +117904,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230467,"12.1 Season 2 Curios",220221,0,4,0,1,8194
 230468,"Ouroboric Curse",230467,1,8,0,0,8192
 230469,,230468,0,0,115826,0,0
+230470,"Corrosive Bilespear",230467,1,8,0,1,8192
 230471,,230470,0,0,115827,0,0
 230472,"Essence Trap",230467,1,8,0,2,8192
 230473,,230472,0,0,115828,0,0
@@ -118453,6 +118453,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231482,"Talents Unlocked",231481,20,0,116536,0,1
 231483,,231372,1,0,116537,8,32
 231484,,231372,1,0,116538,9,32
+231775,,231771,0,0,116717,3,0
 231485,"12.1 Achievement - Do Activities in The Coiled Isle (LQM)",0,0,4,0,0,0
 231486,,231485,0,0,116539,0,32
 231487,,231485,0,0,116541,1,32
@@ -118534,6 +118535,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231571,,231570,1,0,116604,0,2
 231572,"Arenas or Battlegrounds won with PvP trinkets equipped",0,2,5,0,0,4096
 231573,,231572,2,0,116615,0,2
+231776,,231771,0,0,116718,4,0
 231574,"Achievement - Cutting Edge: Ula'tek",0,0,4,0,0,0
 231575,,231574,1,0,116605,0,2
 231576,"Achievement - Hall of Fame: Ula'tek",0,0,4,0,0,0
@@ -118618,8 +118620,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231772,,231771,0,0,116714,0,0
 231773,,231771,0,0,116715,1,0
 231774,,231771,0,0,116716,2,0
-231775,,231771,0,0,116717,3,0
-231776,,231771,0,0,116718,4,0
 231777,,231771,0,0,116719,5,0
 231778,,231771,0,0,116720,6,0
 231779,,231771,0,0,116721,7,0
@@ -118772,9 +118772,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232342,"To the Skybridge",232337,0,0,116972,4,0
 232343,"It Just Had to Be...",232337,0,0,116973,5,0
 232344,"Drumming Up the Troops",232337,0,0,116974,6,0
-232345,"Those Who Can't Fight",232337,0,0,116975,7,0
-232346,"Down With the Skies",232337,0,0,116976,8,0
-232347,"What Lies Beyond the Fog",232337,0,0,116977,9,0
+232346,"Down With the Skies",232337,0,0,116976,7,0
+232347,"What Lies Beyond the Fog",232337,0,0,116977,8,0
 232349,,232348,0,0,116978,0,0
 232350,"Ancient Foe defeated",0,1,5,0,0,8193
 232351,,232350,0,0,116979,0,0
@@ -118789,7 +118788,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232452,"Kill Elites",225794,1,0,116987,6,0
 232477,"Dungeons Completed in Midnight",212208,0,0,116995,8,0
 232492,,227151,1,0,117000,2,0
-232506,"Venomborne Ophiomancer defeated",232505,0,0,60399,0,32
+232506,"Replicating Venomborne defeated",232505,0,0,60399,0,32
 232593,"Win in Training Grounds",232592,10,0,117046,0,1
 232594,"Win 25 matches in Training Grounds",0,0,4,0,0,1
 232595,"Win in Training Grounds",232594,25,0,117046,0,1
@@ -118824,6 +118823,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232753,,66460,30,0,117124,32,0
 233528,,207767,0,0,115824,1,0
 233529,,206696,0,0,115825,1,0
+233621,"Reach rank 20 with Zul'jarra's Forces",0,0,4,0,0,0
+233622,,233621,20,0,117503,0,1
+233689,"12.1 Z1 - Delves - Season 2 Tutorial - 02 - Vehicle Quest - Slithering Spoils 3/6 (DTM)",0,0,4,0,0,4096
+233690,,233689,0,0,117541,0,0
+233753,,66554,5,0,42224,21,0
 207626,"12.0 Max Campaign - Ch 5 - Battle of the Bridge - Army Assembly - Signal Attack (KCO)",0,0,4,0,0,0
 207627,"Unnamed Branch",207626,0,4,0,0,0
 207628,"Speak to Arator",207627,0,0,103514,0,0
@@ -118865,7 +118869,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212388,"12.0 Max Campaign - Ch 5 - Battle of the Bridge - Ethereal Towers - Signal Vereesa (KCO)",0,0,4,0,0,0
 212389,"Unnamed Branch",212388,0,4,0,0,0
 212390,"Signal Vereesa with your flare",212389,1,0,106406,0,0
-19670,,0,0,4,0,0,0
 218339,"12.0 Max Campaign - Ch 5 - Battle of the Bridge - Shining Span - Group 1 Defeated (KCO)",0,0,4,0,0,0
 218340,"Unnamed Branch",218339,0,4,0,0,0
 218341,"Group 1 eliminated",218340,1,0,109613,0,0
@@ -118955,6 +118958,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19460,,0,0,4,0,0,0
 19492,,0,0,4,0,0,0
 19667,,0,0,4,0,0,0
+19670,,0,0,4,0,0,0
 19673,,0,0,4,0,0,0
 19676,,0,0,4,0,0,0
 19679,,0,0,4,0,0,0
@@ -119370,7 +119374,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 57388,"Advisor Vandros defeated",0,0,4,0,0,4096
 57390,"Advisor Vandros defeated",0,0,4,0,0,4096
 57392,"Advisor Vandros defeated",0,0,4,0,0,4096
-80107,"Summon Bumbles",0,0,4,0,0,4096
 57394,"Advisor Vandros defeated",0,0,4,0,0,4096
 57396,"Advisor Vandros defeated",0,0,4,0,0,4096
 71655,"Shadowy Figure Confronted",0,0,4,0,0,0
@@ -119508,6 +119511,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85342,"Complete 4 World Quests (Alliance War Campaign) on Zandalar",0,4,5,0,0,4096
 68942,"Complete 4 World Quests (Horde War Campaign) on Kul Tiras",0,4,5,0,0,4096
 66775,"""The Shadow War"" mission completed",0,0,4,0,0,4096
+89483,"Complete the dungeon",0,0,4,0,0,2
 66857,"8.0 Jaina Line - Thros - Scenario - Step 02 Complete - TSH",0,0,4,0,0,0
 69280,"8.0 Islands - Win AND PvP mode",0,0,4,0,0,2
 69282,"8.0 Islands - Win AND PvP mode",0,0,4,0,0,2
@@ -119578,7 +119582,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89012,"Complete the dungeon",0,0,4,0,0,2
 89032,"Complete the dungeon",0,0,4,0,0,2
 89088,"Complete the dungeon",0,0,4,0,0,2
-89483,"Complete the dungeon",0,0,4,0,0,2
 89487,"Complete the dungeon",0,0,4,0,0,2
 89491,"Complete the dungeon",0,0,4,0,0,2
 89495,"Complete the dungeon",0,0,4,0,0,2
@@ -119732,6 +119735,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 80101,"Summon Bumbles",0,0,4,0,0,4096
 80103,"Summon Bumbles",0,0,4,0,0,4096
 80105,"Summon Bumbles",0,0,4,0,0,4096
+80107,"Summon Bumbles",0,0,4,0,0,4096
 80109,"Summon Bumbles",0,0,4,0,0,4096
 80111,"Summon Bumbles",0,0,4,0,0,4096
 80113,"Summon Bumbles",0,0,4,0,0,4096
@@ -120013,6 +120017,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89094,"Sanctum Upgrade started",0,1,8,0,0,4096
 89103,"Sanctum Upgrade started",0,1,8,0,0,4096
 89132,"Sanctum Upgrade started",0,1,8,0,0,4096
+136102,"Hunt progress",0,100,9,0,0,0
 89179,"Sanctum Upgrade started",0,1,8,0,0,4096
 89110,"Conduit applied to Pelagos",0,0,4,0,0,4096
 89108,"Conduits added to Forge of Bonds",0,0,4,0,0,4096
@@ -120089,7 +120094,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 136096,"Hunt progress",0,100,9,0,0,0
 136098,"Hunt progress",0,100,9,0,0,0
 136100,"Hunt progress",0,100,9,0,0,0
-136102,"Hunt progress",0,100,9,0,0,0
 136104,"Hunt progress",0,100,9,0,0,0
 136108,"Hunt progress",0,100,9,0,0,0
 136112,"Hunt progress",0,100,9,0,0,0
@@ -120167,7 +120171,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 156581,"Honor earned in Rated Arenas",0,1500,5,0,0,4096
 218568,"Honor earned in Rated Arenas",0,1500,5,0,0,4096
 140440,"10.0 Raid - Max Level - 01 - Kill Raid Boss (MPK)",0,1,5,0,0,4096
-148719,"PvP Pet Battles",0,0,4,0,0,1
 210385,"10.0.5 Trading Post - Tutorial Quest - A - Tenders Collected",0,1,5,0,0,4096
 231431,"10.0 Professions - Inscription - Complete Crafting Orders Weekly",0,2,5,0,0,4096
 140930,"10.0 Valdrakken - Open Orientation - Valdrakken Quest Done (LAS)",0,0,4,0,0,4096
@@ -120229,6 +120232,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 146504,"PvP Pet Battles",0,0,4,0,0,1
 148003,"PvP Pet Battles",0,0,4,0,0,1
 148558,"PvP Pet Battles",0,0,4,0,0,1
+148719,"PvP Pet Battles",0,0,4,0,0,1
 154235,"PvP Pet Battles",0,0,4,0,0,1
 163972,"Uncommon Pet Captured",0,0,4,0,0,1
 206805,"Uncommon Pet Captured",0,0,4,0,0,1

@@ -30,10 +30,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 						q(93932, {	-- Legendary Prosperity
-							i(263268),	-- Hara'ti Defender's Belt
-							i(263267),	-- Hara'ti Defender's Cord
-							i(263269),	-- Hara'ti Defender's Greatbelt
-							i(263265),	-- Hara'ti Defender's Sash
+							["timeline"] = { REMOVED_12_1_0 },
+							["groups"] = {
+								i(263268),	-- Hara'ti Defender's Belt
+								i(263267),	-- Hara'ti Defender's Cord
+								i(263269),	-- Hara'ti Defender's Greatbelt
+								i(263265),	-- Hara'ti Defender's Sash
+							},
+						}),
+						q(97624, {	-- Legendary Prosperity
+							["timeline"] = { ADDED_12_1_0 },
+							["groups"] = {
+								i(263268),	-- Hara'ti Defender's Belt
+								i(263267),	-- Hara'ti Defender's Cord
+								i(263269),	-- Hara'ti Defender's Greatbelt
+								i(263265),	-- Hara'ti Defender's Sash
+							},
 						}),
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --

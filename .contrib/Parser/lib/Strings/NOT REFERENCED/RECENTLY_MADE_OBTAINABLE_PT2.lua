@@ -8,7 +8,7 @@ createLocalizationString({
 		-- TODO: de = "",
 		es = "Cuanta más información, mejor. Gracias!",
 		mx = "Cuanta más información, mejor. Gracias!",
-		fr = "\"|cFFFF0000La meilleure source d’information ! Merci",
+		fr = "La meilleure source d’information ! Merci",
 		-- TODO: it = "",
 		-- TODO: pt = "",
 		ru = "Чем больше информации, тем лучше. Спасибо!",

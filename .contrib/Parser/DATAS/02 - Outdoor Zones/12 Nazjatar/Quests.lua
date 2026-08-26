@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(170530),	-- Honorbound Artificer's Guise	\
-				i(170529),	-- Honorbound Artificer's Amice	 > when i completed the alliance version of the quest on my priest, it also awarded these.
+				i(170529),	-- Honorbound Artificer's Amice	> when i completed the alliance version of the quest on my priest, it also awarded these.
 				i(170516),	-- Honorbound Artificer's Robes	/
 				i(170536),	-- Honorbound Centurion's Greathelm
 				i(170535),	-- Honorbound Centurion's Shoulderplates
@@ -2161,31 +2161,31 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(56348, {	-- The Eternal Palace: We Can Make It Stronger... (A)
 			["sourceQuest"] = 56347,	-- An Abyssal Opportunity
-			["provider"] = { "n", 154257 },	-- Instructor Ulooaka
+			["qg"] = 154257,	-- Instructor Ulooaka
 			["coord"] = { 37.9, 52.9, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = { i(169329) },	-- Eternal Ornament (QI!)
+			["qi"] = 169329,	-- Eternal Ornament (QI!)
 		}),
 		q(56352, {	-- The Eternal Palace: We Can Make It Stronger... (H)
 			["sourceQuest"] = 56353,	-- An Abyssal Opportunity
-			["provider"] = { "n", 154408 },	-- Rolm
+			["qg"] = 154408,	-- Rolm
 			["coord"] = { 49.3, 61.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["groups"] = { i(169329) },	-- Eternal Ornament (QI!)
+			["qi"] = 169329,	-- Eternal Ornament (QI!)
 		}),
 		q(56349, {	-- The Eternal Palace: Pushing the Limits (A)
 			["sourceQuest"] = 56348,	-- The Eternal Palace: We Can Make It Stronger... (A)
-			["provider"] = { "n", 154257 },	-- Instructor Ulooaka
+			["qg"] = 154257,	-- Instructor Ulooaka
 			["coord"] = { 37.9, 52.9, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = { i(169329) },	-- Eternal Ornament (QI!)
+			["qi"] = 169329,	-- Eternal Ornament (QI!)
 		}),
 		q(56351, {	-- The Eternal Palace: Pushing the Limits (H)
 			["sourceQuest"] = 56352,	-- The Eternal Palace: We Can Make It Stronger... (H)
-			["provider"] = { "n", 154408 },	-- Rolm
+			["qg"] = 154408,	-- Rolm
 			["coord"] = { 49.3, 61.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["groups"] = { i(169329) },	-- Eternal Ornament (QI!)
+			["qi"] = 169329,	-- Eternal Ornament (QI!)
 		}),
 		q(56311, {	-- The Ever Drowning (A)
 			["sourceQuest"] = 56309,	-- City of Drowned Friends

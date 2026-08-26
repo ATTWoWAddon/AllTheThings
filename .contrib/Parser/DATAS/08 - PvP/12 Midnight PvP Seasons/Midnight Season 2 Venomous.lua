@@ -652,14 +652,16 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>
 				["coord"] = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-					honor(100, i(272005, {	-- Venomous Gladiator's Tabard
+					i(272005, {	-- Venomous Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
 						["races"] = ALLIANCE_ONLY,
 						["sourceAchievement"] = 62931,	-- Elite: Midnight Season 2
-					})),
-					honor(100, i(272006, {	-- Venomous Gladiator's Tabard
+					}),
+					i(272006, {	-- Venomous Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
 						["races"] = HORDE_ONLY,
 						["sourceAchievement"] = 62931,	-- Elite: Midnight Season 2
-					})),
+					}),
 					-- moh(
 					i(277312),	-- Venomous Gladiator's Axe
 					i(277306),	-- Venomous Gladiator's Barb

@@ -965,11 +965,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5421, {	-- Fish in a Bucket
 					-- #if BEFORE CATA
-					-- #if AFTER CLASSIC
-					["description"] = "You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.",
-					-- #else
-					["description"] = "You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
-					-- #endif
+					["description"] =
+						-- #if AFTER CLASSIC
+						"You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.",
+						-- #else
+						"You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
+						-- #endif
 					["cost"] = { { "i", 13545, 5 } },	-- Shellfish
 					["repeatable"] = true,
 					-- #endif

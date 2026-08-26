@@ -2857,7 +2857,12 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(79132, {	-- The Northrend Cup Begins
-					["provider"] = { "n", 214031 },	-- Racing Enthusiast
+					["qgs"] = {
+						214031,	-- -- Racing Enthusiast
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						-- #endif
+					},
 					["coord"] = { 61.8, 75.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2872,7 +2877,12 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 				q(79130, {	-- The Northrend Cup Circuit
 					["sourceQuests"] = { 79131, 79132, 79133 },	-- The Outland Cup Begins
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
+					["qgs"] = {
+						206737,	-- Lord Andestrasz
+						-- #if AFTER 10.1.7
+						214111,	-- Lord Andestrasz
+						-- #endif
+					},
 					["coord"] = { 26.9, 47.4, VALDRAKKEN },
 					["repeatable"] = true,
 				}),

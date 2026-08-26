@@ -265,6 +265,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(9503),	-- Draenor Fisherman
+			ach(9462),	-- Draenor Angler
 			ach(9456),	-- Abyssal Gulper Eel Angler
 			ach(9457),	-- Blackwater Whiptail Angler
 			ach(9458),	-- Blind Lake Sturgeon Angler

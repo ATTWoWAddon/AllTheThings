@@ -779,14 +779,16 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>
 				["coord"] = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
-					honor(100, i(260441, {	-- Galactic Gladiator's Tabard
+					i(260441, {	-- Galactic Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
 						["races"] = HORDE_ONLY,
 						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
-					})),
-					honor(100, i(264164, {	-- Galactic Gladiator's Tabard
+					}),
+					i(264164, {	-- Galactic Gladiator's Tabard
+						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
 						["races"] = ALLIANCE_ONLY,
 						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
-					})),
+					}),
 					moh(10, i(265630)),	-- Galactic Gladiator's Battlestaff
 					moh(10, i(265625)),	-- Galactic Gladiator's Blaster
 					moh(10, i(265616)),	-- Galactic Gladiator's Bow
@@ -812,7 +814,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				["description"] = "Rewarded within the first few wins in queued PvP Content.",
 			}),
-			i(271341, { 	-- Galactic Voidsliver
+			i(271341, {	-- Galactic Voidsliver
 				["timeline"] = { ADDED_12_0_5, REMOVED_12_0_7 },
 				["groups"] = { i(271342) },	-- Galactic Void Matrix
 			}),

@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},{
 				q(90962, {	-- Stormarion Assault
 					["groups"] = {
-						i(260940, {	-- Victorious Stormarion Pinnacle Cache (Season 1)
+						i(269704, {	-- Victorious Stormarion Cache (Leveling)
 							["timeline"] = { ADDED_12_0_1_SEASONSTART },
 							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
@@ -50,8 +50,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
 							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
-						i(269704, {	-- Victorious Stormarion Cache (Leveling)
-							["timeline"] = { ADDED_12_0_1_SEASONSTART },
+						i(260940, {	-- Victorious Stormarion Pinnacle Cache (Season 1)
+							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+						}),
+						i(279526, {	-- Victorious Stormarion Pinnacle Cache (Season 2)
+							["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 					},
@@ -69,7 +73,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(QUESTS, {
 				q(92365, {	-- Creating Defenses
 					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
-					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					["coords"] = {
+						{ 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+						{ 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					},
 					["groups"] = {
 						o(571718, {	-- Selune's Stormarion Cores
 							["coord"] = { 25.8, 68.7, MAP.MIDNIGHT.VOIDSTORM },
@@ -82,15 +89,15 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(95175, {	-- Anchoring the Defense
 					["sourceQuests"] = { 92365 },	-- Creating Defenses
 					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
-					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(86810, {	-- Harvesting the Void
 					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
 					["isWeekly"] = true,
-					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(91700, {	-- Darkness Unmade
-					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
+					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
 					["isWeekly"] = true,
 					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				}),
@@ -98,25 +105,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--["sourceQuests"] = { 86810 },	-- Harvesting the Void (TODO: ???)
 					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
 					["isWeekly"] = true,
-					["coord"] = { 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					["coords"] = {
+						{ 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+						{ 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+					},
 					["groups"] = {
 						i(251284),	-- Anomaly Inverter (QI!)
 					},
 				}),
 				q(91928, {	-- What's For Lunch?
-					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
+					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
 					["coord"] = { 26.4, 67.9, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = { i(248826) },	-- Trigore Flank (QI!)
-					["_drop"] = { "races" },	-- Blizzard bug - bad API data, marked as alliance only
+					["_drop"] = { "races", "r" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 				q(91929, {	-- What's For Lunch?
-					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
+					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
 					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = { i(248905) },	-- Void Malgrease (QI!)
-					["_drop"] = { "races" },	-- Blizzard bug - bad API data, marked as alliance only
+					["_drop"] = { "races", "r" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 				q(54781, {	-- What's For Lunch?
-					["qg"] = 244749, 	-- Xy'dax <Shadowtrade Imports>
+					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
 					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						o(567209, {

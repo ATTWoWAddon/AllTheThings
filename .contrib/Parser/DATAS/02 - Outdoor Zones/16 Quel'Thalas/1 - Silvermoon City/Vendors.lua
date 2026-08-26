@@ -406,6 +406,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(274731),	-- Prized Orb of Azeroth (DECOR!)
 				},
 			}),
+			n(245180, {	-- Sleyin <Weapon Merchant>
+				["coord"] = { 55.0, 49.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["groups"] = {
+					i(15906, { ["timeline"] = { ADDED_12_1_0 } }),	-- Left-Handed Brass Knuckles
+					i(15909, { ["timeline"] = { ADDED_12_1_0 } }),	-- Left-Handed Blades
+					i(15907, { ["timeline"] = { ADDED_12_1_0 } }),	-- Left-Handed Claw
+				},
+			}),
 			n(239676, {	-- Vaskarn
 				["coord"] = { 48.6, 62.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {

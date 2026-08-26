@@ -1506,7 +1506,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 			o(525902, {	-- Wooden Weaving Sword
 				["coord"] = { 69.8, 51.0, MAP.MIDNIGHT.HARANDAR },
-				["questID"] = 89081, --or 62655???,
+				["questID"] = 89081,	--or 62655???,
 				["groups"] = {
 					i(238615),	-- Wooden Weaving Sword
 				},

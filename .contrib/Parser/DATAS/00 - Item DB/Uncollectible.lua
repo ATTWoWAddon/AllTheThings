@@ -2885,6 +2885,7 @@ i(272892);	-- Shattered Gem
 i(272110);	-- Singed Propaganda Leaflet
 i(272051);	-- Sticky Propaganda Scroll
 i(272115);	-- Smashed Shield Emitter
+i(273013);	-- Void-Permeated Hide Scrap
 i(272116);	-- Water-Logged Transaction Scroll
 
 ------------------
@@ -2910,11 +2911,17 @@ i(276359);	-- Twisted Domanaar Armament
 ------------------
 i(280182);	-- Coiled Curry
 i(274951);	-- Corroded Scale
+i(278397);	-- Ephemeral Star Ooze
 i(279157);	-- Frayed Nomad's Cord
 i(280183);	-- Harrier Hotcakes
+i(279152);	-- Intact Snake Head
+i(279154);	-- Large Leaf
 i(279153);	-- Large Trophy
 i(279160);	-- Mud-Caked Footwraps
 i(274954);	-- Pristine Fang
 i(274953);	-- Serpentine Iris
+i(276645);	-- Soggy Shipping Manifest
 i(273288);	-- Sou'jin Soup
+i(278276);	-- Spoils of Azta'rec
+i(279148);	-- Strip of Snake Hide
 i(280184);	-- Sweetsaw Surprise

@@ -2141,7 +2141,6 @@ i(185690),	-- Reservoir Key
 i(185691),	-- Auchenai Key
 i(185692),	-- Warpforged Key
 i(185693),	-- Key of Time
-i(185956),	-- Shimmering Vessel
 2.5.1.38225
 i(186440),	-- Sealed Package
 i(186451),	-- Sealed Package

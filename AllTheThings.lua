@@ -1149,6 +1149,20 @@ local function BuildSourceParent(group)
 						end
 					end
 				end
+				-- Things tagged with qss should show the quest starters as a Source
+				if thing.qss then
+					for _,id in ipairs(thing.qss) do
+						-- app.PrintDebug("Root Provider",type,id);
+						local pRef = SearchForObject("itemID", id, "field");
+						if pRef then
+							pRef = CreateObject(pRef, true);
+							parents[#parents + 1] = pRef
+						else
+							pRef = app.CreateNPC(id);
+							parents[#parents + 1] = pRef
+						end
+					end
+				end
 				-- Things which are a Item output of one or more Crafting Recipes should show those Recipes as a Source
 				if thing.itemID then
 					local recipes = GetCraftingOutputRecipes(thing)

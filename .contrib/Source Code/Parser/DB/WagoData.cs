@@ -1322,7 +1322,7 @@ namespace ATT.DB
                     if (!string.IsNullOrWhiteSpace(value))
                     {
                         var localizedData = result.GetOrAdd(property.Name, Framework.NewConcurrentDictionary_string_object);
-                        localizedData.TryAdd(locale, value.Trim());
+                        localizedData.TryAdd(locale, value.Trim().Replace("[DNT] ", ""));
                     }
                 }
             }

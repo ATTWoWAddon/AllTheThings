@@ -95,6 +95,8 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 				8671,	-- You'll Get Caught Up In The... Frostfire!
 			}},
 		})),
+		a(ach(9478, {["timeline"] = { ADDED_6_0_2 }})),	-- Savage Friends [A]
+		h(ach(9477, {["timeline"] = { ADDED_6_0_2 }})),	-- Savage Friends [H]
 		petbattle(ach(9724, {	-- Taming Draenor
 			["timeline"] = { ADDED_6_0_2 },
 			["groups"] = {

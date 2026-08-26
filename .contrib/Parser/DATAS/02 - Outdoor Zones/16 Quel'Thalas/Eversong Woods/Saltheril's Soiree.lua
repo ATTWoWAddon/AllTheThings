@@ -140,8 +140,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				}),
 				q(91983, {	-- Lovely Plumage
-					i(249439),	-- Bright Feather (QI!)
-					i(249440),	-- Bright Feather (QI!)
+					o(568241, {	-- Bright Feather
+						["coord"] = { 56.7, 35.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+						["groups"] = {
+							i(249439),	-- Bright Feather (QI!)
+							i(249440),	-- Bright Feather (QI!)
+						},
+					}),
 				}),
 				q(91987, {	-- Potted Lashers
 					i(249418),	-- Lightblooming Bulb (QI!)
@@ -294,6 +299,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				i(263465, {	-- Surplus Bag of Party Favors (Season 1)
 					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+				}),
+				i(279522, {	-- Surplus Bag of Party Favors (Season 2)
+					["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
 					["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 				}),
 			}),

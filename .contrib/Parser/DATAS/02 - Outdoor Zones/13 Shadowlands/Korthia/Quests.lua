@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							i(185079),	-- Radiant Court Slippers
 							i(185080),	-- Radiant Court Vestments
 							i(185074),	-- Radiant Court Wraps
-							-- Venthyr	-- Redeemed Inquisitor's 	-- Korthia Dailies?
+							-- Venthyr	-- Redeemed Inquisitor's	-- Korthia Dailies?
 							i(185115),	-- Redeemed Inquisitor's Drape
 							i(185109),	-- Redeemed Inquisitor's Handwraps
 							i(185110),	-- Redeemed Inquisitor's Hood

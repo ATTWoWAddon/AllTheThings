@@ -950,7 +950,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800), 	-- Outcast's Cache
+							i(31800),	-- Outcast's Cache
 						},
 					}),
 					q(10415, {	-- More Firewing Signets
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800), 	-- Outcast's Cache
+							i(31800),	-- Outcast's Cache
 						},
 					}),
 					q(10037, {	-- Rather Be Fishin'
@@ -1225,12 +1225,12 @@ root(ROOTS.Zones, {
 							}),
 						},
 					})),
-					q(10917, { 	-- The Outcast's Plight
+					q(10917, {	-- The Outcast's Plight
 						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["groups"] = {
-							i(31800), 	-- Outcast's Cache
+							i(31800),	-- Outcast's Cache
 						},
 					}),
 					q(10883, {	-- The Tempest Key
@@ -1238,15 +1238,6 @@ root(ROOTS.Zones, {
 						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11096, {	-- Threat from Above
-						["qg"] = 23449,	-- Yuula
-						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
-					})),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11098, {	-- To Skettis!
-						["sourceQuest"] = 11096,	-- Threat From Above
-						["qg"] = 23449,	-- Yuula
-						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
-					})),
 					q(10553, {	-- Voren'thal the Seer
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["qg"] = 18166,	-- Archmage Khadgar
@@ -1590,7 +1581,7 @@ root(ROOTS.Zones, {
 						i(33871),	-- Recipe: Stormchops (RECIPE!)
 						i(33855),	-- Tarnished Silver Ring
 					}),
-					container(31800, { 	-- Outcasts Cache
+					container(31800, {	-- Outcasts Cache
 						i(28495),	-- Windwalker's Sash
 						i(28496),	-- Talonite's Belt
 						i(28497),	-- Dreadhawk's Girdle

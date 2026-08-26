@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60501, {	-- Redemption for the Redeemer
 				["description"] = "Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",
-				["provider"] = { "i", 179358 },	-- Remornia
+				["qs"] = 179358,	-- Remornia (QS!)
 			}),
 			q(58725, {	-- Sinkeeper
 				["sourceQuests"] = { 58717 },	-- Bell of Remembrance

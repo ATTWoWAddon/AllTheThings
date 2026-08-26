@@ -372,7 +372,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					e(587, {	-- Anub'arak
 						["creatureID"] = 29120,	-- Anub'arak
 						["groups"] = {
-							i(39419),	-- Nerubian Conquerer
+							i(39419),	-- Nerubian Conqueror
 							i(43994),	-- Belabored Legplates
 							i(39425),	-- Cloak of the Dying
 						},

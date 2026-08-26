@@ -1534,7 +1534,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 						["groups"] = {
-							objective(1, {	-- 0/1 	The Warmaul Champion Defeated
+							objective(1, {	-- 0/1	The Warmaul Champion Defeated
 								["provider"] = { "n", 18402 },	-- Warmaul Champion
 							}),
 						},

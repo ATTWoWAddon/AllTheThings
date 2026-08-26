@@ -5,42 +5,29 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
-			i(158368),	-- Sethraliss' Defiled Relic
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
-			i(244344),	-- Griftah's Mystical Polter-Urn
 			i(247776),	-- Glowing Zangarshroom Cup
-			i(248404),	-- Stack of Kafa Mugs
-			i(249219),	-- Ouroboric Curse
-			i(249223),	-- Corrosive Bilespear
-			i(249227),	-- Dundun's Favor
-			i(249228),	-- Soul-Cracking Dreamcatcher
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
-			i(260419),	-- Cursed Zandalari Coin
-			i(260420),	-- Swamp Apple
 			i(260425),	-- Morsel of Crab Meat
 			i(260426),	-- Bloodied Whetstone
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
-			i(263874),	-- Emerald-Encrusted Amani Ritual Skull
-			i(263875),	-- Griftah's Resizing Hex-Skull
 			i(264162),	-- Enchanted Snowflake
 			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
 			i(265402),	-- Fistful of Gnat Wings
 			i(265620),	-- Rehydrated Zandalari Peppers
-			i(265622),	-- Knotted Swamp Stick
 			i(265626),	-- Shattered Teapot
 			i(265790),	-- Cache of Mistcrests
 			i(266327),	-- Pristine Spinal Barb
 			i(267045),	-- Quivering Egg
 			i(267233),	-- Dehydrated Troll Eye Necklace
 			i(268095),	-- Fresh Poultice
-			i(268113),	-- Jan'alai's Breath
 			-- WB
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
@@ -48,46 +35,24 @@ root(ROOTS.Unsorted, {
 			i(268823),	-- Scroll of Seeking
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock
-			i(268929),	-- Hastily Written Note
-			i(268951),	-- Familiar Threshadon Tooth Necklace
-			i(268952),	-- Hastily Written Note
-			i(268953),	-- Familiar Amani Headdress
-			i(268964),	-- Familiar Amani Headdress
-			i(268965),	-- Familiar Threshadon Tooth Necklace
-			i(268968),	-- Hastily Written Note
 			i(269720),	-- Corrosive Hekte
-			i(270191),	-- Lil'Kruul's Hilt
-			i(270211),	-- Furiostraza's Filter
-			i(270267),	-- Twilight Missive
 			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
 			i(270346),	-- Big Meaty Claw
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
-			i(271132),	-- Essence Trap
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
 			i(271434),	-- Venom Rite Mantle
-			i(271435),	-- Slippers of the Hissing Cult
 			i(271436),	-- Slitherscale Girdle
-			i(271438),	-- Temple Delver's Mystic Helm
-			i(271440),	-- Greaves of the Noxious Depths
 			i(271441),	-- Crushing Coiler Coif
 			i(271444),	-- Pauldrons of the Forgotten Sacrifice
 			i(271445),	-- Fanged Brute's Greatbelt
 			i(271638),	-- Bound Serpent's Jade Eye
 			i(271680),	-- Sinseared Repeater
 			i(271681),	-- Perennial Frostbound Charm
-			i(271693),	-- Congealed Venom
-			i(271717),	-- Cup of Kafa
-			i(271863),	-- Ophidian Bile
-			i(271864),	-- Rotten Pneuma
-			i(271865),	-- Scavenged Weapon
-			i(271866),	-- Well-Worn Hatchet
-			i(271867),	-- Venom-Etched Sword
-			i(271868),	-- Splintering Spear
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
@@ -95,7 +60,6 @@ root(ROOTS.Unsorted, {
 			i(273311),	-- Kobold Candle Collection
 			i(273312),	-- Large Exodar Crystal
 			i(273313),	-- Stormstout Brewery Lantern
-			i(273649),	-- Stormbound Emblem of Dazar
 			i(273818),	-- [DNT] Knowledge Tome: Midnight Herbalism
 			i(273848),	-- Snake Scales
 			i(273881),	-- Anti-Venom Shell
@@ -119,12 +83,7 @@ root(ROOTS.Unsorted, {
 			i(274459),	-- Squirky
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
-			i(274494),	-- Chiral Marrowgrafter
-			i(274499),	-- Toxiferous Transfusion
-			i(274579),	-- Undamaged Trap Needle
-			i(274595),	-- Pristine Polygon
 			i(274680),	-- Loa-Blessed Orb
-			i(274707),	-- Crystallized Venomblight Manaflux
 			i(274713),	-- Cache of Amani Treasures
 			i(274763),	-- Fleeting Liquid Luster
 			i(274764),	-- Fleeting Liquid Luster
@@ -132,20 +91,6 @@ root(ROOTS.Unsorted, {
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin
 			i(274788),	-- Seaside Depths Porthole
-			i(274801),	-- Envenomed Snakefang
-			i(274803),	-- Envenomed Trollsplitter
-			i(274804),	-- Envenomed Elfcleaver
-			i(274805),	-- Envenomed Chopper
-			i(274806),	-- Envenomed Gut-Puncher
-			i(274807),	-- Envenomed Ritualizer
-			i(274808),	-- Envenomed Umbral Claymore
-			i(274809),	-- Envenomed Soul Collector
-			i(274810),	-- Envenomed Spring's Frenzy
-			i(274811),	-- Envenomed Sacrificial Dagger
-			i(274812),	-- Envenomed Hunter's Spear
-			i(274813),	-- Envenomed Hammer
-			i(274815),	-- Envenomed Pages
-			i(274816),	-- Envenomed False Promise
 			i(274897),	-- Seaside Charcoal Grill
 			i(274899),	-- Seaside Tiki Market Stand
 			i(274901),	-- Seaside Cushioned Chair
@@ -153,33 +98,25 @@ root(ROOTS.Unsorted, {
 			i(274905),	-- Seaside Straw Umbrella
 			i(274907),	-- Seaside Painted Surfboard
 			i(274909),	-- Seaside Murloc Tiki Totem
-			i(274965),	-- Ancient Curio
 			i(274988),	-- Seaside Tiki Gazebo
 			i(274991),	-- Seaside Fire Pit
 			i(275030),	-- Slugg's Favorite Fishing Rod
 			i(275053),	-- Kobold Candle Collection
-			i(275054),	-- Wooden Toy Sword
 			i(275062),	-- Illusion: Venomcoil
-			i(275063),	-- [PH] Taretha Axe - Black
 			i(275064),	-- [PH] Taretha Axe - Blue
 			i(275065),	-- [PH] Taretha Axe - Purple
-			i(275066),	-- [PH] Taretha Axe - White
-			i(275230),	-- Azure Bracelet of Friendship
-			i(275231),	-- Obsidian Bracelet of Friendship
-			i(275232),	-- Leafy Bracelet of Friendship
 			i(275233),	-- Rosy Bracelet of Friendship
 			i(275234),	-- Violet Bracelet of Friendship
-			i(275235),	-- Ruby Bracelet of Friendship
 			i(275236),	-- Silver Bracelet of Friendship
-			i(275237),	-- Crystal Bracelet of Friendship
 			i(275274),	-- Alchemy
 			i(275276),	-- Alchemy
 			i(275278),	-- Alchemy
-			i(275285),	-- Malleable Root
-			i(275287),	-- Cellular Slab
-			i(278374),	-- Preyhunter's Fanged Bust
+			i(276883),	-- A Message From Kul'amara
+			i(276905),	-- Beginning Fragment of Ulantu's Log
+			i(276912),	-- Middle Fragment of Ulantu's Log
+			i(276914),	-- End Fragment of Ulantu's Log
+			i(277525),	-- Ulantu's Belongings
 			i(279574),	-- Preyhunter's Hero Chest
-			i(278378),	-- Preyhunter's Scaled Bust
 			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
 			i(275571),	-- [PH] Broomstick Spice - Grey
@@ -189,42 +126,13 @@ root(ROOTS.Unsorted, {
 			i(275634),	-- Artisan's Consortium Flyer
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
-			i(275825),	-- Ula'tek's Sssacrificial Rain
-			i(276117),	-- Clouded Blood-Pearl
-			i(276124),	-- Ancient Knucklebone
-			i(276126),	-- Serpent's Feather
 			i(276138),	-- Any Ingredient [DNT
 			i(276142),	-- Corrosive Palimpsest
-			i(276164),	-- Corroded Patagia
-			i(276168),	-- Fang of Ss'akrithos
-			i(276169),	-- Malformed Barrier
-			i(276172),	-- Headdress of Mutagenesis
-			i(276173),	-- Clutchguard Sandals
-			i(276174),	-- Leviathan's Oozing Scalemail
-			i(276178),	-- Venom Lancer's Gauntlets
-			i(276186),	-- Totally Not Stolen Powder
-			i(276198),	-- Shellman's 195
-			i(276205),	-- Legitimate Shipment of Swivel Guns
-			i(276206),	-- Leagally Sourced Cannon Shot
 			i(276234),	-- Vibrant Venomfang
-			i(276297),	-- Rustbolt Jetpack
-			i(276312),	-- Griftah's Torch of Rotation
-			i(276405),	-- [PH] Rainbow Axe - 1h - Blue
-			i(276406),	-- [PH] Rainbow Axe - 1h - Green
 			i(276407),	-- [PH] Rainbow Axe - 1h - Purple
-			i(276408),	-- [PH] Rainbow Axe - 1h - Red
-			i(276409),	-- [PH] Rainbow Axe - 2h - Blue
-			i(276410),	-- [PH] Rainbow Axe - 2h - Green
 			i(276411),	-- [PH] Rainbow Axe - 2h - Purple
-			i(276412),	-- [PH] Rainbow Axe - 2h - Red
-			i(276413),	-- [PH] Rainbow Mace- 1h - Blue
-			i(276414),	-- [PH] Rainbow Mace- 1h - Green
 			i(276415),	-- [PH] Rainbow Mace- 1h - Purple
-			i(276416),	-- [PH] Rainbow Mace- 1h - Red
-			i(276417),	-- [PH] Rainbow Mace- 2h - Blue
-			i(276418),	-- [PH] Rainbow Mace- 2h - Green
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
-			i(276421),	-- [PH] Rainbow Mace- 2h - Red
 			i(276547),	-- Afflicted Soul
 			i(276548),	-- Tormented Soul
 			i(276550),	-- Wind Serpent - White
@@ -244,7 +152,6 @@ root(ROOTS.Unsorted, {
 			i(276626),	-- Long Centaur Wall
 			i(276628),	-- Scroll of Deep Breath
 			i(276629),	-- Scroll of the Sailfish
-			i(276645),	-- Soggy Shipping Manifest
 			i(276650),	-- Short Centaur Wall
 			i(276652),	-- Tapered Centaur Wall
 			i(276654),	-- Ball
@@ -288,29 +195,9 @@ root(ROOTS.Unsorted, {
 			i(277482),	-- Ouroboric Cycle
 			i(277527),	-- Hex Candle
 			i(277530),	-- Balm of Flies
-			i(277847),	-- Unbroken Trap Hinge
-			i(277848),	-- Untouched Crab Lure
-			i(277849),	-- Mushed Crab
-			i(277937),	-- Balanced Offering
-			i(277938),	-- Virulent Offering
-			i(277939),	-- Volatile Offering
-			i(277940),	-- Fragile Offering
-			i(277941),	-- Eerie Offering
-			i(277942),	-- Odious Offering
-			i(277943),	-- Pestilent Offering
-			i(277944),	-- Phlegmatic Offering
-			i(277945),	-- Melancholic Offering
-			i(277946),	-- Choleric Offering
-			i(277955),	-- Ethereal Bead Strand
-			i(277985),	-- Mysterious Offering
 			i(277990),	-- Cursemail Gauntlets
-			i(278038),	-- Arathor Toy Sword
 			i(278044),	-- Hanging Candles
-			i(278048),	-- Corrosive Relic
 			i(278050),	-- Corrosive Bijou
-			i(278070),	-- Handful of Esoteric Ingredients
-			i(278084),	-- Handful of Esoteric Ingredients
-			i(278095),	-- Liver Pulp
 			i(278099),	-- Malt
 			i(278100),	-- Grain
 			i(278106),	-- DNT Coiled Color Changer
@@ -320,10 +207,6 @@ root(ROOTS.Unsorted, {
 			i(278113),	-- DNT Ula'tek Pole Dummy D
 			i(278114),	-- DNT Ula'tek Pole Dummy E
 			i(278115),	-- DNT Ula'tek Pole Dummy F
-			i(278154),	-- Hooked Net Trap
-			i(278193),	-- Aqiri Mandible
-			i(278245),	-- Royal Attendant's Coffin
-			i(278276),	-- Spoils of Azta'rec
 			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
 			i(278284),	-- Nebulous Voidcache: Ula'tek
 			i(278285),	-- Nebulous Voidcache: Soulcoiler Nek'zali
@@ -336,16 +219,6 @@ root(ROOTS.Unsorted, {
 			i(278337),	-- Amber Pearl
 			i(278339),	-- Cursebound Pearl
 			i(278340),	-- Blighted Pearl
-			i(278472),	-- Noxious Corrosive Coin
-			i(278374),	-- Preyhunter's Fanged Bust
-			i(278378),	-- Preyhunter's Scaled Bust
-			i(278517),	-- Lost Med'jai Amulet
-			i(278523),	-- Feather of Tok'jara
-			i(278534),	-- Eye of Szarith
-			i(278536),	-- Mummified Lynx's Paw
-			i(278573),	-- Crested Burnished Leafmimic
-			i(278574),	-- Crested Aqua Leafmimic
-			i(278575),	-- Crested Verdant Leafmimic
 			i(278576),	-- Crested Violet Leafmimic
 			i(278577),	-- Nightfall Assassin's Tunic
 			i(278578),	-- Nightfall Assassin's Mask
@@ -456,12 +329,10 @@ root(ROOTS.Unsorted, {
 			i(278874),	-- Lil' Dark Armageddon
 			i(278875),	-- Lil' Green Armageddon
 			i(278876),	-- Lil' Red Armageddon
-			i(278982),	-- Hatchery of Hissing Eggs
 			i(278993),	-- Big Blue Armageddon
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon
 			i(279002),	-- Big Red Armageddon
-			i(279012),	-- Cracked Keystone
 			i(279013),	-- [ph] SpiceWitch Chest - Blue
 			i(279014),	-- [ph] SpiceWitch Feet - Blue
 			i(279015),	-- [ph] SpiceWitch Waist - Blue
@@ -527,12 +398,9 @@ root(ROOTS.Unsorted, {
 			i(279145),	-- Vial of Venom
 			i(279146),	-- Lopped Rattle
 			i(279147),	-- Unrecognizable bone
-			i(279148),	-- Strip of Snake Hide
 			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
 			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
-			i(279152),	-- Intact Snake Head
-			i(279154),	-- Large Leaf
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
 			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
 			i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)
@@ -543,10 +411,7 @@ root(ROOTS.Unsorted, {
 			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
 			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
-			i(279207),	-- Blackened Sludgefish
-			i(279210),	-- Explosive Tlhapi
 			i(279284),	-- Nebulous Voidcache: Delver's Trove
-			i(279290),	-- Fang Lover's
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
 			i(279364),	-- Coiled Hookshot
@@ -559,7 +424,6 @@ root(ROOTS.Unsorted, {
 			i(279432),	-- Cloudy Gloomcap
 			i(279433),	-- Deep Gloomcap
 			i(279434),	-- Camo Gloomcap
-			i(279435),	-- Brick Gloomcap
 			i(279436),	-- Lively Gloomcap
 			i(279437),	-- Faded Gloomcap
 			i(279438),	-- Carrot Gloomcap
@@ -567,22 +431,11 @@ root(ROOTS.Unsorted, {
 			i(279440),	-- Plum Gloomcap
 			i(279441),	-- Crimson Gloomcap
 			i(279442),	-- Violet Gloomcap
-			i(279443),	-- Aquatic Gloomcap
 			i(279444),	-- Snowy Gloomcap
 			i(279445),	-- Sunny Gloomcap
-			i(279449),	-- Hex Troll Mask Fragment
 			i(279455),	-- K'areshi Tea Cup
 			i(279458),	-- Rock Goblet
-			i(279475),	-- Mutagenitor's Feather
-			i(279476),	-- Vassti's Claw
-			i(279477),	-- Ss'akrithos's Forked Tongue
-			i(279478),	-- Ori'kassi's Barbed Tail
-			i(279479),	-- Leviathan's Eye
-			i(279483),	-- Three-Eyed Fish
-			i(279520),	-- Fabled Veteran's Cache
-			i(279522),	-- Surplus Bag of Party Favors
 			i(279524),	-- Brewer's Purple Kilt
-			i(279526),	-- Victorious Stormarion Pinnacle Cache
 			i(279529),	-- Brewer's Purple Shoulder Cape
 			i(279530),	-- Brewer's Purple Belt
 			i(279531),	-- Brewer's Purple Beret
@@ -597,7 +450,6 @@ root(ROOTS.Unsorted, {
 			i(279547),	-- Junkyard Crafter's Vest
 			i(279548),	-- Villager's Labor Vest
 			i(279549),	-- Witch-Hunter's Undercoat
-			i(279550),	-- Potion of Venomous Return
 			i(279551),	-- Radical's Gilded Vestment
 			i(279579),	-- Cruel Warrior's Blade
 			i(279590),	-- Venomous Champion's Illustrious Banner
@@ -619,16 +471,7 @@ root(ROOTS.Unsorted, {
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
-			i(280007),	-- Mask Fragment
-			i(280047),	-- Feathered Bell
-			i(280089),	-- Mask Fragment
-			i(280090),	-- Mask Fragment
-			i(280097),	-- Venomous Aspirant's Insignia of Alacrity
-			i(280118),	-- Venomous Aspirant's Medallion
-			i(280123),	-- Sharp Axe Holster
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280178),	-- Poison Dart Frog
-			i(280189),	-- Cauldron Concoction
 			i(280215),	-- Tortollan Tarp Tent
 			i(280221),	-- Sealeather Sack
 			i(280223),	-- Collector's Tortollan Display Rack
@@ -659,40 +502,27 @@ root(ROOTS.Unsorted, {
 			i(280275),	-- Hanging Longwick Rope
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
-			i(252042),	-- Purified Troll Pitcher
 			i(253396),	-- Purified Crude Axe
-			i(253703),	-- Purified Crude Hammer
 			i(255652),	-- Purified Troll Loop
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
-			i(278701),	-- Purified Goblin Cup
-			i(280305),	-- Soulcoil Remnant
 			i(280333),	-- Pirate's Eyepatch
 			i(280335),	-- Brewfest Crate
 			i(280337),	-- Traditional Brewfest Banner
 			i(280339),	-- Brewfest Fence
 			i(280341),	-- Brewfest Fencepost
 			i(280343),	-- Hanging Brewfest Wreath
-			i(280446),	-- Unnerving Bait
 			i(263709),	-- Amani Forgemaster's Workbench
-			i(274422),	-- Ossified Relic
 			i(280102),	-- Handful of Corrosive Coins
 			i(280513),	-- Color-Curious Candle
-			i(280540),	-- Lil' Mon
 			i(280581),	-- Wintry Witchwick's Rider
-			i(280691),	-- Dagger of the Slithering Ritual
-			i(280698),	-- Szarith's Underbelly Slicer
-			i(280701),	-- Waistwrap of the Fanged
 			i(280842),	-- Shadowhunters' Hexblade
 			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
-			i(281227),	-- Soulcoiler's Rush'kah
 			i(274765),	-- Fleeting Alluring Nostrum
-			i(278397),	-- Ephemeral Star Ooze
 			i(280846),	-- Beguiling Memories of the Sea
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
-			i(280503),	-- Ulantu's Notes
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
@@ -700,15 +530,11 @@ root(ROOTS.Unsorted, {
 					i(273063),	-- Coiled Snake-Eye++
 				}),
 				prof(JEWELCRAFTING, {
-					i(275695),	-- Design: Piercing Amani Lapis (RECIPE!)
-					i(279343),	-- Piercing Amani Lapis (DECOR!)
-					--
 					i(273067),	-- Design: Polished Ammolite (RECIPE!)
 					i(273065),	-- Polished Ammolite+
 					i(273066),	-- Polished Ammolite++
 				}),
 				prof(LEATHERWORKING, {
-					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 					i(273068),	-- Adorned Fang+
 					i(273069),	-- Adorned Fang++
 				}),
@@ -876,42 +702,6 @@ root(ROOTS.Unsorted, {
 				i(269753),	-- Artisan Katana
 				i(269754),	-- Offhand Artisan Nunchuck
 				i(269755),	-- Large Artisan Katana
-				i(271054),	-- Sunlit Petalweave Crown
-				i(271055),	-- Sunlit Petalweave Mantle
-				i(271056),	-- Sunlit Petalweave Halter
-				i(271057),	-- Sunlit Petalweave Belt
-				i(271058),	-- Sunlit Petalweave Skirt
-				i(271059),	-- Sunlit Petalweave Boots
-				i(271060),	-- Sunlit Petalweave Gloves
-				i(271061),	-- Sunlit Petalweave Cloak
-				i(271062),	-- Ensemble: Sunlit Petalweave
-				i(271063),	-- Scarlet Petalweave Crown
-				i(271064),	-- Scarlet Petalweave Mantle
-				i(271065),	-- Scarlet Petalweave Halter
-				i(271066),	-- Scarlet Petalweave Belt
-				i(271067),	-- Scarlet Petalweave Skirt
-				i(271068),	-- Scarlet Petalweave Boots
-				i(271069),	-- Scarlet Petalweave Gloves
-				i(271070),	-- Scarlet Petalweave Cloak
-				i(271071),	-- Ensemble: Scarlet Petalweave
-				i(271072),	-- Blush Petalweave Crown
-				i(271073),	-- Blush Petalweave Mantle
-				i(271074),	-- Blush Petalweave Halter
-				i(271075),	-- Blush Petalweave Belt
-				i(271076),	-- Blush Petalweave Skirt
-				i(271077),	-- Blush Petalweave Boots
-				i(271078),	-- Blush Petalweave Gloves
-				i(271079),	-- Blush Petalweave Cloak
-				i(271080),	-- Ensemble: Blush Petalweave
-				i(271081),	-- Azure Petalweave Crown
-				i(271082),	-- Azure Petalweave Mantle
-				i(271083),	-- Azure Petalweave Halter
-				i(271084),	-- Azure Petalweave Belt
-				i(271085),	-- Azure Petalweave Skirt
-				i(271086),	-- Azure Petalweave Boots
-				i(271087),	-- Azure Petalweave Gloves
-				i(271088),	-- Azure Petalweave Cloak
-				i(271089),	-- Ensemble: Azure Petalweave
 				i(271568),	-- Bloodwatch Outlaw's Headgear
 				i(271569),	-- Bloodwatch Outlaw's Tunic
 				i(271570),	-- Bloodwatch Outlaw's Buckle
@@ -947,7 +737,6 @@ root(ROOTS.Unsorted, {
 				i(274053),	-- Bandit's Grassy Highboot
 				i(274055),	-- Bandit's Deep Highboot
 				i(274056),	-- Bandit's Camo Highboot
-				i(274057),	-- Bandit's Brick Highboot
 				i(274058),	-- Bandit's Lively Highboot
 				i(274059),	-- Bandit's Faded Highboot
 				i(274060),	-- Bandit's Carrot Highboot
@@ -955,7 +744,6 @@ root(ROOTS.Unsorted, {
 				i(274062),	-- Bandit's Plum Highboot
 				i(274063),	-- Bandit's Crimson Highboot
 				i(274064),	-- Bandit's Violet Highboot
-				i(274065),	-- Bandit's Aquatic Highboot
 				i(274067),	-- Bandit's Sunny Highboot
 				i(274073),	-- Lively Extravaganza Rocketstaff
 				i(274074),	-- Suntouched Extravaganza Rocketstaff
@@ -973,14 +761,12 @@ root(ROOTS.Unsorted, {
 				i(274623),	-- Gunslinger's Grassy Lid
 				i(274625),	-- Gunslinger's Deep Lid
 				i(274626),	-- Gunslinger's Camo Lid
-				i(274627),	-- Gunslinger's Brick Lid
 				i(274628),	-- Gunslinger's Lively Lid
 				i(274629),	-- Gunslinger's Faded Lid
 				i(274631),	-- Gunslinger's Rosy Lid
 				i(274632),	-- Gunslinger's Plum Lid
 				i(274633),	-- Gunslinger's Crimson Lid
 				i(274634),	-- Gunslinger's Violet Lid
-				i(274635),	-- Gunslinger's Aquatic Lid
 				i(274637),	-- Gunslinger's Sunny Lid
 				i(274715),	-- Duskwatch Outlaw's Hand Cannon
 				i(275999),	-- Flowering Mantle
@@ -1025,16 +811,8 @@ root(ROOTS.Unsorted, {
 				mount(1294677),	-- [PH] Horse with Hat
 			}),
 			filter(QUEST_ITEMS, {
-				i(274580),	-- Primessence of Fel
 				i(274913),	-- Brazier Pieces
 				i(274924),	-- Spore-Infused Lungs
-				i(274581),	-- Primessence of Shadow
-				i(274582),	-- Primessence of Life
-				i(274583),	-- Primessence of Arcane
-				i(274584),	-- Primessence of Light
-				i(274585),	-- Primessence of Death
-				i(274620),	-- Singularian Cryocore
-				i(274640),	-- Arcfluxion Hydrospore
 				i(274783),	-- Fel Embers
 				i(274798),	-- Remote Detonator
 			}),
@@ -1047,9 +825,7 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
 			filter(COSMETIC, {
 				n(ARMOR, {
-					i(270295),	-- Crown of Aquatic Springflowers
 					i(270280),	-- Crown of Azure Springflowers
-					i(270287),	-- Crown of Brick Springflowers
 					i(270286),	-- Crown of Camo Springflowers
 					i(270290),	-- Crown of Carrot Springflowers
 					i(270293),	-- Crown of Crimson Springflowers
@@ -1158,7 +934,6 @@ root(ROOTS.Unsorted, {
 				i(272893),	-- Icy Harness
 				i(259472),	-- Lost Revantusk Possessions
 				i(267381),	-- Official G.G.R. Rehydration Container
-				i(273013),	-- Void-Permeated Hide Scrap
 				i(267380),	-- Volatile Pink Brightbursts
 				i(260892),	-- "Arcane Ranger" Kit
 				i(262757),	-- "Greater Metamorph" Enhancement
@@ -1176,9 +951,6 @@ root(ROOTS.Unsorted, {
 				i(259473),	-- Charred Amani Trinket
 				i(259474),	-- Lost Amani Toy
 				i(259475),	-- Misplaced Loa Statue
-			}),
-			filter(TOYS, {
-				i(267472),	-- Gnomatic Projector (TOY!)
 			}),
 			i(274427),	-- Sha Loot Box
 		})),
@@ -2189,7 +1961,6 @@ root(ROOTS.Unsorted, {
 				i(163773),	-- Dark Mirror
 				i(163774),	-- Blackrock Plating
 				i(163830),	-- Gale Rider
-				i(163929),	-- Aether of the Abyss
 				i(164253),	-- Steel Strongbox
 				i(164254),	-- Steel Strongbox
 				i(164263),	-- Steel Strongbox
@@ -2217,7 +1988,6 @@ root(ROOTS.Unsorted, {
 				i(161017),	-- Secott's Storm Silver Bucket
 				i(161084),	-- Recovered Stormsong Produce
 				i(161324),	-- Zeth'jir Tidespear
-				i(161345),	-- Abhorrent Essence of the Abyss
 				i(161878),	-- Tiny Coin Purse
 			}),
 			filter(MISC, {	-- Grey

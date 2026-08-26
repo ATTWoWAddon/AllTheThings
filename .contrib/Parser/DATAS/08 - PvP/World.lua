@@ -67,24 +67,26 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 			}),
 			n(QUESTS, {
-				q(58274, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+				q(58274, {	-- Servant of N'Zoth
 					["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_12_1_0 },
 					["groups"] = {
 						title(414),	-- <Name>, Servant of N'Zoth
 						i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 						i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 					},
-				})),
-				q(58273, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
+				}),
+				q(58273, {	-- Servant of N'Zoth
 					["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_12_1_0 },
 					["groups"] = {
 						title(414),	-- <Name>, Servant of N'Zoth
 						i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 						i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 					},
-				})),
+				}),
 				q(52786, bubbleDownSelf({	-- The Alliance Slayer
 					["timeline"] = { REMOVED_10_0_2 },
 					["races"] = HORDE_ONLY,
@@ -357,7 +359,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					["coords"] = {
 						{ 44.6, 85.3, 2213 },	-- Azj-Kahet (City of Threads)
 						{ 38.5, 35.0, HALLOWFALL },
-						{ 66.7, 48.8, THE_RINGING_DEEPS }, -- (pre-11.1 shift)
+						{ 66.7, 48.8, THE_RINGING_DEEPS },	-- (pre-11.1 shift)
 						{ 62.3, 20.3, ISLE_OF_DORN },
 					},
 					["crs"] = { 233446 },	-- Generic Bunny [Pre-Spawn Vignette]
@@ -397,7 +399,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 						61232,	-- Midnight Treasures
 					}},
 					["groups"] = {
-						title(664),	-- Voidslayer %s
+						title(664),	-- Voidslayer <Name>
 					},
 				}),
 				ach(61464),	-- Spark in the Night			-- 5x

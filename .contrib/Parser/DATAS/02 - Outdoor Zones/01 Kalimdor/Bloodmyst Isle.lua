@@ -333,11 +333,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9760,	-- Vindicator's Rest
 					["qg"] = 17986,	-- Vindicator Corin
 					["coord"] = { 30.7, 46.8, BLOODMYST_ISLE },
-					-- #if BEFORE CATA
-					["races"] = { DRAENEI },
-					-- #else
-					["races"] = ALLIANCE_ONLY,
-					-- #endif
+					["races"] =
+						-- #if AFTER CATA
+						ALLIANCE_ONLY,
+						-- #else
+						DRAENEI,
+						-- #endif
 					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Sunhawk Agent slain
@@ -527,11 +528,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["qg"] = 17982,	-- Demolitionist Legoso
 					["coord"] = { 30.8, 46.6, BLOODMYST_ISLE },
-					-- #if BEFORE CATA
-					["races"] = { DRAENEI },
-					-- #else
-					["races"] = ALLIANCE_ONLY,
-					-- #endif
+					["races"] =
+						-- #if AFTER CATA
+						ALLIANCE_ONLY,
+						-- #else
+						DRAENEI,
+						-- #endif
 					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						objective(1, {	-- Vector Coil Destroyed and Sironas Slain
@@ -1245,11 +1247,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9756,	-- What We Don't Know...
 					["qg"] = 17658,	-- Exarch Admetius
 					["coord"] = { 52.6, 53.2, BLOODMYST_ISLE },
-					-- #if BEFORE CATA
-					["races"] = { DRAENEI },
-					-- #else
-					["races"] = ALLIANCE_ONLY,
-					-- #endif
+					["races"] =
+						-- #if AFTER CATA
+						ALLIANCE_ONLY,
+						-- #else
+						DRAENEI,
+						-- #endif
 					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9646, {	-- WANTED: Deathclaw
@@ -1277,11 +1280,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9753,	-- What We Know...
 					["qg"] = 17658,	-- Exarch Admetius
 					["coord"] = { 52.6, 53.2, BLOODMYST_ISLE },
-					-- #if BEFORE CATA
-					["races"] = { DRAENEI },
-					-- #else
-					["races"] = ALLIANCE_ONLY,
-					-- #endif
+					["races"] =
+						-- #if AFTER CATA
+						ALLIANCE_ONLY,
+						-- #else
+						DRAENEI,
+						-- #endif
 					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9753, {	-- What We Know...
@@ -1290,11 +1294,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["qg"] = 17844,	-- Vindicator Aesom
 					["coord"] = { 55.5, 55.4, BLOODMYST_ISLE },
-					-- #if BEFORE CATA
-					["races"] = { DRAENEI },
-					-- #else
-					["races"] = ALLIANCE_ONLY,
-					-- #endif
+					["races"] =
+						-- #if AFTER CATA
+						ALLIANCE_ONLY,
+						-- #else
+						DRAENEI,
+						-- #endif
 					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9649, {	-- Ysera's Tears

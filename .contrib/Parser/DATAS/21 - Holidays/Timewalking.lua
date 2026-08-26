@@ -7392,7 +7392,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["sym"] = {{"select", "modItemID",
 					modItemId(158373,1),	-- Resonating Crystal Scimitar
 					modItemId(159337,1),	-- Grips of Electrified Defense
-					modItemId(158368,1),	-- Fangs of Intertwined Essence
+					modItemId(158368,1),	-- Sethraliss' Defiled Relic
 					modItemId(168131,1),	-- Essence of the Sands
 				}},
 				["groups"] = {
@@ -7513,7 +7513,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 		}),
 		n(QUESTS, {
 			q(92647, {	-- A Shadowed Journey Through Time
-				["qg"] = 252687, -- Collector Ta'steld
+				["qg"] = 252687,	-- Collector Ta'steld
 				["coord"] = { 56.0, 63.9, ORIBOS },
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
@@ -8531,7 +8531,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 					193629,	-- Cloak of Lost Devotion
 					193632,	-- Fear Striker Tz'onna
 					193631,	-- Horizon Splitter,
-					212685, -- Tome of Unstable Power
+					212685,	-- Tome of Unstable Power
 					193630,	-- Twenty-Two-League Striders
 				}},
 			}),
@@ -8556,7 +8556,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 					193642,	-- Mantle of Yearned Freedom
 					193646,	-- Refraction's Edge
 					193643,	-- Stasis Freed Leggings
-					212684, -- Umbrelskul's Fractured Heart
+					212684,	-- Umbrelskul's Fractured Heart
 				}},
 			}),
 		}),

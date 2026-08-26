@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["maxReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -347,14 +347,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(768, {	-- Gathering Leather
-					-- #if BEFORE 8.0.1
-					["description"] = "This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
-					-- #else
-					["description"] = "This quest becomes available at Classic Skinning skill level 1 when the character level requirement is met.",
-					-- #endif
+					["description"] =
+						-- #if AFTER 8.0.1
+						"This quest becomes available at Classic Skinning skill level 1 when the character level requirement is met.",
+						-- #else
+						"This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
+						-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
-					["cost"] = { { "i", 2318, 12 } },	-- Light Leather
+					["cost"] = { { "i", 2318, 12 } },	-- 12x Light Leather
 					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
@@ -394,11 +395,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(769, {	-- Kodo Hide Bag
-					-- #if BEFORE 8.0.1
-					["description"] = "This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
-					-- #else
-					["description"] = "This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
-					-- #endif
+					["description"] =
+						-- #if AFTER 8.0.1
+						"This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
+						-- #else
+						"This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
+						-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
@@ -406,11 +408,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 5,
 					["groups"] = {
 						i(5083, {	-- Pattern: Kodo Hide Bag (RECIPE!)
-							-- #if BEFORE 9.2.5
-							["description"] = "This recipe is not soulbound and can be mailed to Horde alts.",
-							-- #else
-							["description"] = "This recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-							-- #endif
+							["description"] =
+								-- #if AFTER 9.2.5
+								"This recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
+								-- #else
+								"This recipe is not soulbound and can be mailed to Horde alts.",
+								-- #endif
 						}),
 					},
 				}),
@@ -438,7 +441,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9087,	-- Bashana Runetotem
 					["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
+					["cost"] = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
@@ -450,7 +453,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9087,	-- Bashana Runetotem
 					["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
+					["cost"] = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 47,
@@ -519,10 +522,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["cost"] = {
-						{ "i", 5178, 1 },	-- Air Totem
-						{ "i", 5175, 1 },	-- Earth Totem
-						{ "i", 5176, 1 },	-- Fire Totem
-						{ "i", 5177, 1 },	-- Water Totem
+						{ "i", 5178, 1 },	-- 1x Air Totem
+						{ "i", 5175, 1 },	-- 1x Earth Totem
+						{ "i", 5176, 1 },	-- 1x Fire Totem
+						{ "i", 5177, 1 },	-- 1x Water Totem
 					},
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
@@ -646,8 +649,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 403105 },	-- Windfury Cone
 							},
 							["cost"] = {
-								{ "i", 206176, 1 },	-- Mortar and Pestle
-								{ "i", 206170, 8 },	-- Windfury Cone
+								{ "i", 206176, 1 },	-- 1x Mortar and Pestle
+								{ "i", 206170, 8 },	-- 8x Windfury Cone
 							},
 							["coord"] = { 53.48, 9.37, MULGORE },
 						}),
@@ -668,7 +671,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 206345 },	-- Fish Chunks
 								{ "i", 206344 },	-- Knife Set
 							},
-							["cost"] = { { "i", 6291, 1 } },	-- Raw Brilliant Smallfish
+							["cost"] = { { "i", 6291, 1 } },	-- 1x Raw Brilliant Smallfish
 							["coord"] = { 53.48, 9.37, THUNDER_BLUFF },
 						}),
 						recipe(674, {	-- Dual Wield
@@ -764,7 +767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Filled Etched Phial
 							["provider"] = { "i", 5868 },	-- Filled Etched Phial
 							["coord"] = { 60.0, 72.0, ASHENVALE },
-							["cost"] = { { "i", 5867, 1 } },	-- Etched Phial
+							["cost"] = { { "i", 5867, 1 } },	-- 1x Etched Phial
 						}),
 						-- #if BEFORE 4.0.3
 						i(5867, {	-- Etched Phial
@@ -793,7 +796,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 5869, 1 } },	-- Cloven Hoof
+					["cost"] = { { "i", 5869, 1 } },	-- 1x Cloven Hoof
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -846,7 +849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
-					["cost"] = { { "i", 11018, 20 } },	-- Un'Goro Soil
+					["cost"] = { { "i", 11018, 20 } },	-- 20x Un'Goro Soil
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -968,7 +971,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						853,	-- Hatchet
 						12249,	-- Merciless Axe
 						1196,	-- Tabar
-						37, 	-- Worn Axe
+						37,	-- Worn Axe
 					}},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
@@ -1233,10 +1236,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 39.0, 64.4, THUNDER_BLUFF },	-- Wayfarer's Rest
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "select","itemID",
-						4498, 	-- Brown Leather Satchel
-						4497, 	-- Heavy Brown Bag
-						4499, 	-- Huge Brown Sack
-						4496, 	-- Small Brown Pouch
+						4498,	-- Brown Leather Satchel
+						4497,	-- Heavy Brown Bag
+						4499,	-- Huge Brown Sack
+						4496,	-- Small Brown Pouch
 					}},
 				}),
 				n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
@@ -1476,9 +1479,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.1, 34.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{ "select","itemID",
-						4498, 	-- Brown Leather Satchel
-						4497, 	-- Heavy Brown Bag
-						4496, 	-- Small Brown Pouch
+						4498,	-- Brown Leather Satchel
+						4497,	-- Heavy Brown Bag
+						4496,	-- Small Brown Pouch
 					}},
 				}),
 				n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>

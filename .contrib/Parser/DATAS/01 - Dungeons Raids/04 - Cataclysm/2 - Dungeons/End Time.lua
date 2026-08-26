@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["crs"] = {
 						54431,	-- Echo of Baine
 						54445,	-- Echo of Jaina
-						54123,	-- Echo of Sylvannas
+						54123,	-- Echo of Sylvanas
 						54544,	-- Echo of Tyrande
 					},
 					["groups"] = {

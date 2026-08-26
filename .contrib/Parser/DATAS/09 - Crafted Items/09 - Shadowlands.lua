@@ -687,7 +687,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			r(338984, {	-- Umbrahide Pauldrons [Rank 4] (RECIPE!)
 				["provider"] = { "s", 332054 },	-- Umbrahide Pauldrons [Rank 3]
 			}),
-			r(332014, { 	-- Umbrahide Treads [Rank 2] (RECIPE!)
+			r(332014, {	-- Umbrahide Treads [Rank 2] (RECIPE!)
 				["provider"] = { "s", 309198 },	-- Umbrahide Treads [Rank 1]
 			}),
 			r(332049, {	-- Umbrahide Treads [Rank 3] (RECIPE!)
@@ -830,85 +830,85 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
-			r(332037, { 	-- Grim-Veiled Belt [Rank 2]
+			r(332037, {	-- Grim-Veiled Belt [Rank 2]
 				["provider"] = { "s", 310885 },	-- Grim-Veiled Belt [Rank 1]
 			}),
-			r(332072, { 	-- Grim-Veiled Belt [Rank 3]
+			r(332072, {	-- Grim-Veiled Belt [Rank 3]
 				["provider"] = { "s", 332037 },	-- Grim-Veiled Belt [Rank 2]
 			}),
-			r(339003, { 	-- Grim-Veiled Belt [Rank 4]
+			r(339003, {	-- Grim-Veiled Belt [Rank 4]
 				["provider"] = { "s", 332072 },	-- Grim-Veiled Belt [Rank 3]
 			}),
-			r(332038, { 	-- Grim-Veiled Bracers [Rank 2]
+			r(332038, {	-- Grim-Veiled Bracers [Rank 2]
 				["provider"] = { "s", 310886 },	-- Grim-Veiled Bracers [Rank 1]
 			}),
-			r(332073, { 	-- Grim-Veiled Bracers [Rank 3]
+			r(332073, {	-- Grim-Veiled Bracers [Rank 3]
 				["provider"] = { "s", 332038 },	-- Grim-Veiled Bracers [Rank 2]
 			}),
-			r(339004, { 	-- Grim-Veiled Bracers [Rank 4]
+			r(339004, {	-- Grim-Veiled Bracers [Rank 4]
 				["provider"] = { "s", 332073 },	-- Grim-Veiled Bracers [Rank 3]
 			}),
-			r(332032, { 	-- Grim-Veiled Cape [Rank 2]
+			r(332032, {	-- Grim-Veiled Cape [Rank 2]
 				["provider"] = { "s", 310880 },	-- Grim-Veiled Cape [Rank 1]
 			}),
-			r(332067, { 	-- Grim-Veiled Cape [Rank 3]
+			r(332067, {	-- Grim-Veiled Cape [Rank 3]
 				["provider"] = { "s", 332032 },	-- Grim-Veiled Cape [Rank 2]
 			}),
-			r(338995, { 	-- Grim-Veiled Cape [Rank 4]
+			r(338995, {	-- Grim-Veiled Cape [Rank 4]
 				["provider"] = { "s", 332067 },	-- Grim-Veiled Cape [Rank 3]
 			}),
-			r(332034, { 	-- Grim-Veiled Hood [Rank 2]
+			r(332034, {	-- Grim-Veiled Hood [Rank 2]
 				["provider"] = { "s", 310882 },	-- Grim-Veiled Hood [Rank 1]
 			}),
-			r(332069, { 	-- Grim-Veiled Hood [Rank 3]
+			r(332069, {	-- Grim-Veiled Hood [Rank 3]
 				["provider"] = { "s", 332034 },	-- Grim-Veiled Hood [Rank 2]
 			}),
-			r(339000, { 	-- Grim-Veiled Hood [Rank 4]
+			r(339000, {	-- Grim-Veiled Hood [Rank 4]
 				["provider"] = { "s", 332069 },	-- Grim-Veiled Hood [Rank 3]
 			}),
-			r(332033, { 	-- Grim-Veiled Mittens [Rank 2]
+			r(332033, {	-- Grim-Veiled Mittens [Rank 2]
 				["provider"] = { "s", 310881 },	-- Grim-Veiled Mittens [Rank 1]
 			}),
-			r(332068, { 	-- Grim-Veiled Mittens [Rank 3]
+			r(332068, {	-- Grim-Veiled Mittens [Rank 3]
 				["provider"] = { "s", 332033 },	-- Grim-Veiled Mittens [Rank 2]
 			}),
-			r(338998, { 	-- Grim-Veiled Mittens [Rank 4]
+			r(338998, {	-- Grim-Veiled Mittens [Rank 4]
 				["provider"] = { "s", 332068 },	-- Grim-Veiled Mittens [Rank 3]
 			}),
-			r(332035, { 	-- Grim-Veiled Pants [Rank 2]
+			r(332035, {	-- Grim-Veiled Pants [Rank 2]
 				["provider"] = { "s", 310883 },	-- Grim-Veiled Pants [Rank 1]
 			}),
-			r(332070, { 	-- Grim-Veiled Pants [Rank 3]
+			r(332070, {	-- Grim-Veiled Pants [Rank 3]
 				["provider"] = { "s", 332035 },	-- Grim-Veiled Pants [Rank 2]
 			}),
-			r(339001, { 	-- Grim-Veiled Pants [Rank 4]
+			r(339001, {	-- Grim-Veiled Pants [Rank 4]
 				["provider"] = { "s", 332070 },	-- Grim-Veiled Pants [Rank 3]
 			}),
-			r(332031, { 	-- Grim-Veiled Robe [Rank 2]
+			r(332031, {	-- Grim-Veiled Robe [Rank 2]
 				["provider"] = { "s", 310879 },	-- Grim-Veiled Robe [Rank 1]
 			}),
-			r(332066, { 	-- Grim-Veiled Robe [Rank 3]
+			r(332066, {	-- Grim-Veiled Robe [Rank 3]
 				["provider"] = { "s", 332031 },	-- Grim-Veiled Robe [Rank 2]
 			}),
-			r(338996, { 	-- Grim-Veiled Robe [Rank 4]
+			r(338996, {	-- Grim-Veiled Robe [Rank 4]
 				["provider"] = { "s", 332066 },	-- Grim-Veiled Robe [Rank 3]
 			}),
-			r(332030, { 	-- Grim-Veiled Sandals [Rank 2]
+			r(332030, {	-- Grim-Veiled Sandals [Rank 2]
 				["provider"] = { "s", 310878 },	-- Grim-Veiled Sandals [Rank 1]
 			}),
-			r(332065, { 	-- Grim-Veiled Sandals [Rank 3]
+			r(332065, {	-- Grim-Veiled Sandals [Rank 3]
 				["provider"] = { "s", 332030 },	-- Grim-Veiled Sandals [Rank 2]
 			}),
-			r(338997, { 	-- Grim-Veiled Sandals [Rank 4]
+			r(338997, {	-- Grim-Veiled Sandals [Rank 4]
 				["provider"] = { "s", 332065 },	-- Grim-Veiled Sandals [Rank 3]
 			}),
-			r(332036, { 	-- Grim-Veiled Spaulders [Rank 2]
+			r(332036, {	-- Grim-Veiled Spaulders [Rank 2]
 				["provider"] = { "s", 310884 },	-- Grim-Veiled Spaulders [Rank 1]
 			}),
-			r(332071, { 	-- Grim-Veiled Spaulders [Rank 3]
+			r(332071, {	-- Grim-Veiled Spaulders [Rank 3]
 				["provider"] = { "s", 332036 },	-- Grim-Veiled Spaulders [Rank 2]
 			}),
-			r(339002, { 	-- Grim-Veiled Spaulders [Rank 4]
+			r(339002, {	-- Grim-Veiled Spaulders [Rank 4]
 				["provider"] = { "s", 332071 },	-- Grim-Veiled Spaulders [Rank 3]
 			}),
 		}),

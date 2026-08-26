@@ -174,6 +174,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			q(94837, {	-- Midnight Training: Week 2 of 3
 				["sourceQuests"] = { 94836 },	-- Late Night Training: Week 1 of 3
 				["timeline"] = { ADDED_12_0_1, REMOVED_12_1_0 },
+				["groups"] = { i(267491) },	-- Novice Combatant's Cloak
 			}),
 			q(94838, {	-- Final Training: Week 3 of 3
 				["sourceQuests"] = { 94837 },	-- Midnight: Week 2 of 3
@@ -182,6 +183,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- Season 2
 			q(98234, {	-- Week 1 of 3: Gladiator's Distinction
 				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["groups"] = {
+					i(280097),	-- Venomous Aspirant's Insignia of Alacrity
+					i(280118),	-- Venomous Aspirant's Medallion
+				},
+			}),
+			q(98295, {	-- Week 1 of 3: Crowd Control
+				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+				["groups"] = { i(267491) },	-- Novice Combatant's Cloak
 			}),
 		})),
 		-- Dungeons
@@ -243,7 +252,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		})),
 		n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
 			campsite(155, {	-- Silvermoon City (CAMPSITE!)
-				["cost"] = { { "i", 279575, 4 } },	-- 4x Silvermoon Citizen's Emblem
+				["cost"] = { { "i", 279575, 1 } },	-- 1x Silvermoon Citizen's Emblem
 			}),
 			campsite(158, {	-- Silvermoon in Void (CAMPSITE!)
 				["cost"] = { { "i", 279576, 4 } },	-- 4x Void Vestige
@@ -258,12 +267,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				q(93067),	-- "Stay a while and listen" objectID 551501 (In Memoriam) @ 35.2, 70.3
 				q(93275, name(HEADERS.Item,232875,{["isWeekly"]=true,["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}})),	-- Weekly lockout for Spark of Radiance
-				--q(96446, name(HEADERS.Item,274476,{["isWeekly"]=true,["timeline"]={ADDED_12_1_0}})),	-- Weekly lockout for Spark of Tides
+				q(96447, name(HEADERS.Item,274476,{["isWeekly"]=true,["timeline"]={ADDED_12_1_0}})),	-- Weekly lockout for Spark of Tides
 				q(93789),	-- Apex Cache (season 1) was opened / bonus roll for something?
 				q(94419, {["timeline"]={ADDED_12_0_1_SEASONSTART,REMOVED_12_1_0}}),	-- player receive 10x Veteran Dawncrest during questID 94418 (Crest Transmutation)
 				q(94410),	-- After turning in Unity Against the Void? Spark lockout?
 				q(93742, name(HEADERS.Currency, 3378, {["timeline"] = { ADDED_12_0_1_SEASONSTART }})),	-- Looted Dawnlight Manaflux after Midnight Season 1: Catalyst Unbound
-				q(96662),	-- Accepting 96649 to do crest downgrade
+				q(96662, {["timeline"] = { ADDED_12_1_0 }}),	-- Accepting 96649 to do crest downgrade
 			}),
 		}),
 	}),

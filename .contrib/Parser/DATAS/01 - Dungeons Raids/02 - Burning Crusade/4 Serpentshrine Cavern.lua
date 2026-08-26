@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(30107),	-- Vestments of the Sea-Witch
 					i(30112),	-- Glorious Gauntlets of Crestfall
 					i(30106),	-- Belt of One-Hundred Deaths
-					i(30104),	-- Cobta-Lash Boots
+					i(30104),	-- Cobra-Lash Boots
 					i(30110),	-- Coral Band of the Revived
 					i(30109),	-- Ring of Endless Coils
 					i(30621),	-- Prism of Inner Calm

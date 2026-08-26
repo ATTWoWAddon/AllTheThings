@@ -19,13 +19,18 @@ CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache
 		-- TODO: tw = "",
 	},
 	description = {
-		-- #if AFTER 10.0.7
-		en = "Requires Archaeology to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
-		cn = "需要考古学来激活。激活全部 4 件神器以召唤出首领。如果你想要的首领没有出现，请勿击杀已出现的首领。相反，离开该区域并等待 30 分钟。一旦你返回，有时会有新的首领等着你",
-		-- #else
-		en = "Requires Archaeology (225+) to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
-		cn = "需要考古学技能（225+）来激活。激活全部 4 件神器以召唤出首领。若你期望的首领未出现，不要击杀已出现的首领。而是离开该区域，等待 30 分钟。再次进入后，有时会有新首领等着你",
-		-- #endif
+		en =
+			-- #if AFTER 10.0.7
+			"Requires Archaeology to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+			-- #else
+			"Requires Archaeology (225+) to activate. Activate all 4 of the artifacts to spawn the boss. If the boss you want doesn't spawn, do NOT kill the one that did. Instead, zone out and wait for 30 minutes. Once you zone back, there will sometimes be a new boss waiting for you.",
+			-- #endif
+		cn =
+			-- #if AFTER 10.0.7
+			"需要考古学来激活。激活全部 4 件神器以召唤出首领。如果你想要的首领没有出现，请勿击杀已出现的首领。相反，离开该区域并等待 30 分钟。一旦你返回，有时会有新的首领等着你",
+			-- #else
+			"需要考古学技能（225+）来激活。激活全部 4 件神器以召唤出首领。若你期望的首领未出现，不要击杀已出现的首领。而是离开该区域，等待 30 分钟。再次进入后，有时会有新首领等着你",
+			-- #endif
 	},
 });
 
@@ -57,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				header(HEADERS.Achievement, 17366, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Relics of a Fallen Empire
-					["description"] = "To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lays a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in it's place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the southfacing building entrances. Above the transmogifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",
+					["description"] = "To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lies a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in its place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the south-facing building entrances. Above the transmogrifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",
 					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(17367, {	-- Deadliest Cache
@@ -74,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							}),
 						}),
 						header(HEADERS.Item, 203757, {	-- Brazier of Madness
-							["description"] = "To get started farming Gurubashi Tributes for recipes:\n\n1. Go to the site of the boss Cache of Madness.\n\n2. By the eastern wall is an altar. Here hangs Tablet of Madness, which teaches Alchemists with 300 skill points in classic alchemy how to create Gurubashi Mojo Madness.\n\n3. On the left side of the altar is an interactable brazier, which gives you the toy Brazier of Madness.\n\n4. The four main bosses Venoxis, Mandokir, Kilnara and Zanzil have piles of skull near them. Use the toy Blazier of Madness near one of these piles, and consume a Gurubashi Mojo Madness. This will transform you to a troll for one hour, and make you able to interact with the different piles of skulls to offer bijous for Gurubashi Tributes. The transformation will make you friendly to the mobs in the dungeon, so this should be done after killng the bosses.\n\n5. The different piles requires different bijous, and rewards 1-2 recipes and/or 3-7 coins. For more information see the header for Gurubashi Tribute.",
+							["description"] = "To get started farming Gurubashi Tributes for recipes:\n\n1. Go to the site of the boss Cache of Madness.\n\n2. By the eastern wall is an altar. Here hangs Tablet of Madness, which teaches Alchemists with 300 skill points in classic alchemy how to create Gurubashi Mojo Madness.\n\n3. On the left side of the altar is an interactable brazier, which gives you the toy Brazier of Madness.\n\n4. The four main bosses Venoxis, Mandokir, Kilnara and Zanzil have piles of skull near them. Use the toy Brazier of Madness near one of these piles, and consume a Gurubashi Mojo Madness. This will transform you to a troll for one hour, and make you able to interact with the different piles of skulls to offer bijous for Gurubashi Tributes. The transformation will make you friendly to the mobs in the dungeon, so this should be done after killing the bosses.\n\n5. The different piles requires different bijous, and rewards 1-2 recipes and/or 3-7 coins. For more information see the header for Gurubashi Tribute.",
 							["cost"] = {
 								{ "i", BLUE_HAKKARI_BIJOU, 1 },
 								{ "i", BRONZE_HAKKARI_BIJOU, 1 },
@@ -112,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 										i(203845),	-- Ancient Pattern: Junglefury Gauntlets (RECIPE!)
 										i(203846),	-- Ancient Pattern: Junglefury Leggings (RECIPE!)
 										i(203851),	-- Ancient Pattern: Ritualistic Legwarmers (RECIPE!)
-										i(203835),	-- Ancient Plans: Fiery Bengeance (RECIPE!)
+										i(203835),	-- Ancient Plans: Fiery Vengeance (RECIPE!)
 										i(203825),	-- Ancient Plans: Gurubashi Carver (RECIPE!)
 										i(203828),	-- Ancient Plans: Gurubashi Grinder (RECIPE!)
 										i(203824),	-- Ancient Plans: Gurubashi Headplate (RECIPE!)
@@ -231,7 +236,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							})),
 							prof(SKINNING, {
 								i(19767, {	-- Primal Bat Leather
-									["description"] = "Ancient Bats can be found on the following locations in Zul'Gurub:\n* Pack of 2 by crossroads between the first two bridges.\n* Pack of 2 behind a three just north down the path from the mentioned crossroad.\n* Pack of 3 between a wall and a hut on the eastern side of the second bridge.\n* Pack of 3 in the southwestern corner of Mandokir's Domain.\n* Pack of 2 in the northeastern corner of Mandokir's Domain.",
+									["description"] = "Ancient Bats can be found on the following locations in Zul'Gurub:\n* Pack of 2 by crossroads between the first two bridges.\n* Pack of 2 behind a tree just north down the path from the mentioned crossroad.\n* Pack of 3 between a wall and a hut on the eastern side of the second bridge.\n* Pack of 3 in the southwestern corner of Mandokir's Domain.\n* Pack of 2 in the northeastern corner of Mandokir's Domain.",
 									["cr"] = 202341,	-- Ancient Bat
 								}),
 								i(19768, {	-- Primal Tiger Leather
@@ -766,7 +771,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						n(DROPS, {
 							["crs"] = {
 								52258,	-- Gri'lek
-								52271,	-- Hazzarah
+								52271,	-- Hazza'rah
 								52269,	-- Renataki
 								52286,	-- Wushoolay
 							},

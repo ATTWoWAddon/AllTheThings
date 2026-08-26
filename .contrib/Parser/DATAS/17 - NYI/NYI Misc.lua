@@ -984,7 +984,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(188796),	-- Cypher Test Item
 			i(191022),	-- Eternal Curio
 			i(190823),	-- Firim's Mysterious Cache
-			i(187920),	-- Flipper Fish
 			i(188951),	-- Key
 			i(188949),	-- Mysterious Object
 			i(188950),	-- Mysterious Object

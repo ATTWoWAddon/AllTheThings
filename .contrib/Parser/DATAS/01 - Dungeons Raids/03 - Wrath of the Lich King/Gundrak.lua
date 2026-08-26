@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
-						i(43167),	-- Ranger's Beelt of the Fallen Empire
+						i(43167),	-- Ranger's Belt of the Fallen Empire
 						i(43168),	-- Clasp of the Fallen Demi-God
 					},
 				}),
@@ -196,7 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
-						i(43167),	-- Ranger's Beelt of the Fallen Empire
+						i(43167),	-- Ranger's Belt of the Fallen Empire
 						i(43168),	-- Clasp of the Fallen Demi-God
 					},
 				}),

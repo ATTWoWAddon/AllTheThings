@@ -227,7 +227,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["coord"] = { 37.0, 46.2, SURAMAR },
 				}),
-				q(40009, { 	-- Arcane Thirst
+				q(40009, {	-- Arcane Thirst
 					["sourceQuest"] = 40123,	-- The Nightborne Pact
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["coord"] = { 35.3, 47.3, SURAMAR },
@@ -310,7 +310,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 99093 },	-- Thaedris Feathersong
 					["coord"] = { 49.1, 43.8, SURAMAR },
 				}),
-				q(42837, { 	-- Balance to Spare
+				q(42837, {	-- Balance to Spare
 					["sourceQuest"] = 42835,	-- The Old Fashioned Way
 					["provider"] = { "n", 108872 },	-- Margaux
 					["coord"] = { 60.6, 56.5, SURAMAR },
@@ -802,7 +802,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 30.8, 59.1, SURAMAR },
 					["groups"] = { i(133743) },	-- Fresh Fel-Flesh (QI!)
 				}),
-				q(42722, { 	-- Friends in Cages
+				q(42722, {	-- Friends in Cages
 					["sourceQuest"] = 40745,	-- Shift Change
 					["provider"] = { "n", 108063 },	-- Korine
 					["coord"] = { 44.2, 73.0, SURAMAR },
@@ -1278,7 +1278,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 107302 },	-- Pearlhunter Phin
 					["coord"] = { 15.8, 54.8, SURAMAR },
 				}),
-				q(41143, { 	-- Mglrgrs Of Our Grmlgrlr
+				q(41143, {	-- Mglrgrs Of Our Grmlgrlr
 					["sourceQuest"] = 42728,	-- A Mlrglrmg For Grlmrgl
 					["provider"] = { "n", 108389 },	-- Mrgrlilgrl
 					["coord"] = { 15.1, 51.7, SURAMAR },
@@ -2344,7 +2344,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 20.9, 52.2, SURAMAR },
 					["groups"] = { i(136271) },	-- Spellstone of Kel'danath (QI!)
 				}),
-				q(41197, { 	-- You've Got to Be Kitten Me Right Meow
+				q(41197, {	-- You've Got to Be Kitten Me Right Meow
 					["sourceQuest"] = 41453,	-- Homeward Bounding
 					["provider"] = { "n", 103570 },	-- Mardranel Forestheart
 					["coord"] = { 21.4, 30.6, SURAMAR },

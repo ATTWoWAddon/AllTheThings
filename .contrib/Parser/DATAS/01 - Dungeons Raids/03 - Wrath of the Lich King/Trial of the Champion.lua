@@ -374,7 +374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					i(47181),	-- Belt of the Churning Blaze
 					i(47174),	-- Binding of the Tranquil Glade
 					i(47173),	-- Bindings of the Wicked
-					i(47176),	-- Breastplate of the Imperial Jouse
+					i(47176),	-- Breastplate of the Imperial Joust
 					i(47178),	-- Carapace of Grim Visions
 					i(47244),	-- Chestguard of the Ravenous Fiend
 					i(47493),	-- Edge of Ruin

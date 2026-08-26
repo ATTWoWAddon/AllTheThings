@@ -1611,7 +1611,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				--["sourceQuests"] = { ??? },	-- ???
 				["provider"] = { "n", 243907 },	-- Decimus
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
-				["timeline"] = { REMOVED_12_1_0 },
 				["groups"] = {
 					--spell(1276894),	-- Transmute Elemental Voidcore
 					--spell(1277384),	-- The Voidforge
@@ -1625,7 +1624,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					248583,	-- Decimus
 				},
 				["coord"] = { 51.2, 68.4, MAP.MIDNIGHT.VOIDSTORM },
-				["timeline"] = { REMOVED_12_1_0 },
 				["repeatable"] = true,
 				["groups"] = {
 					--spell(1276894),	-- Transmute Elemental Voidcore

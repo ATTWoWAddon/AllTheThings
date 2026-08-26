@@ -151,6 +151,7 @@ ConversionMethods.provider = function(provider, reference)
 	end
 	return UNKNOWN;
 end;
+ConversionMethods.qs = ConversionMethods.itemNameAndIcon
 settings.InformationTypeConversionMethods = ConversionMethods;
 
 -- Class Template for creating an Information Type instance.
@@ -1127,7 +1128,25 @@ local InformationTypes = {
 					limit = limit - 1
 					if limit <= 0 then
 						tinsert(tooltipInfo, {
-							right =  LFG_LIST_AND_MORE:format(#reference.providers - t.limit),
+							right =  LFG_LIST_AND_MORE:format(#providers - limit),
+						});
+						break
+					end
+				end
+				return
+			end
+			local qss = reference.qss
+			if qss then
+				local limit = t.limit
+				for i,qs in ipairs(qss) do
+					tinsert(tooltipInfo, {
+						left = (i == 1 and L.PROVIDERS),
+						right = ConversionMethods.qs(qs, reference),
+					});
+					limit = limit - 1
+					if limit <= 0 then
+						tinsert(tooltipInfo, {
+							right =  LFG_LIST_AND_MORE:format(#qss - limit),
 						});
 						break
 					end

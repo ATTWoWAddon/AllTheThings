@@ -192,10 +192,10 @@ root(ROOTS.Zones, {
 							12676,	-- Sabotage
 						},
 						["qg"] = 28518,	-- Stefan Vadu
-						["coords"] = {
-							{ 28.4, 44.9, ZULDRAK },
-							{ 14.0, 73.8, ZULDRAK },
-							{ 27.6, 53.8, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qis"] = {
+							40425,	-- Drakuru's Skull (QI!)
+							39664,	-- Scepter of Domination (PQI!)
 						},
 						["groups"] = {
 							i(39655),	-- Betrayer's Choker
@@ -270,7 +270,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12633,	-- Darkness Calling
 						["altQuests"] = { 12637 },	-- Near Miss
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.8, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qi"] = 38678,	-- Unliving Choker (QI!)
 					}),
 					q(12606, {	-- Cocooned!
 						["sourceQuest"] = 12598,	-- Throwing Down
@@ -368,14 +369,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12690,	-- Fuel for the Fire
 						["qg"] = 28503,	-- Overlord Drakuru
 						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["qi"] = 39319,	-- Scepter of Domination (PQI!)
 					}),
 					q(12648, {	-- Dressing Down
 						["sourceQuest"] = 12629,	-- You Can Run, But You Can't Hide
 						["altQuests"] = { 12649 },	-- Suit Up!
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.8, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qi"] = 38699,	-- Ensorcelled Choker (PQI!)
 					}),
-					q(13556, {	-- Eggs for Dubra'Jin	-- aa
+					q(13556, {	-- Eggs for Dubra'Jin
 						["qg"] = 33025,	-- Ha'wana
 						["coord"] = { 69.9, 20.9, ZULDRAK },
 					}),
@@ -390,6 +393,7 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 12713 },	-- Betrayal
 						["qg"] = 28589,	-- Gristlegut
 						["coord"] = { 19.8, 75.4, ZULDRAK },
+						["qi"] = 38701,	-- Bowels and Brains Bowl (PQI!)
 						["groups"] = {
 							i(39812),	-- Soiled Trousers
 							i(39876),	-- Aged Abomination Tripe
@@ -412,6 +416,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12677,	-- Hazardous Materials
 						["qg"] = 28503,	-- Overlord Drakuru
 						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["qi"] = 39238,	-- Scepter of Command
 					}),
 					q(12527, {	-- Gluttonous Lurkers
 						["sourceQuest"] = 12510,	-- Precious Elemental Fluids
@@ -426,11 +431,8 @@ root(ROOTS.Zones, {
 					q(12677, {	-- Hazardous Materials
 						["sourceQuest"] = 12669,	-- So Far, So Bad
 						["qg"] = 28518,	-- Stefan Vadu
-						["coords"] = {
-							{ 28.4, 44.9, ZULDRAK },
-							{ 14.0, 73.8, ZULDRAK },
-							{ 27.6, 53.8, ZULDRAK },
-						},
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qi"] = 39159,	-- Harvested Blight Crystal (QI!)
 					}),
 					q(12674, {	-- Hell Hath a Fury
 						["sourceQuest"] = 12668,	-- Foundation for Revenge
@@ -480,7 +482,8 @@ root(ROOTS.Zones, {
 							12649,	-- Suit Up!
 						},
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.7, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qi"] = 41390,	-- Stefan's Horn (PQI!)
 						["groups"] = {
 							i(39809),	-- Sandals of Spying
 							i(39869),	-- Double-Agent's Wristwraps
@@ -494,6 +497,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12661,	-- Infiltrating Voltarus
 						["qg"] = 28503,	-- Overlord Drakuru
 						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["qi"] = 39157,	-- Scepter of Suggestion (PQI!)
 					}),
 					q(13099, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
@@ -508,7 +512,7 @@ root(ROOTS.Zones, {
 					q(12630, {	-- Kickin' Nass and Takin' Manes
 						["sourceQuest"] = 12884,	-- The Ebon Watch
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.8, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
 					}),
 					q(12557, {	-- Lab Work
 						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
@@ -576,7 +580,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12631,	-- An Invitation, of Sorts...
 						["altQuests"] = { 12638 },	-- Close Call
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.8, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
 					}),
 					q(12505, {	-- New Orders for Sergeant Stackhammer
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
@@ -697,11 +701,8 @@ root(ROOTS.Zones, {
 					q(12676, {	-- Sabotage
 						["sourceQuest"] = 12677,	-- Hazardous Materials
 						["qg"] = 28518,	-- Stefan Vadu
-						["coords"] = {
-							{ 28.4, 44.9, ZULDRAK },
-							{ 14.0, 73.8, ZULDRAK },
-							{ 27.6, 53.8, ZULDRAK },
-						},
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qi"] = 39165,	-- Explosive Charges (PQI!)
 						["groups"] = {
 							i(39811),	-- Badge of the Infiltrator
 							i(39873),	-- Skins of Subterfuge
@@ -736,7 +737,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12638,	-- Close Call
 						["altQuests"] = { 12629 },	-- You Can Run, But You Can't Hide (Available if you DO NOT complete "Cleansing Drak'Tharon")
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.7, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
 					}),
 					q(12799, {	-- Siphoning the Spirits	-- aa
 						["qg"] = 28045,	-- Captain Arnath
@@ -750,13 +751,10 @@ root(ROOTS.Zones, {
 					q(12793, {	-- Smoke on the Horizon	-- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
 					}),
 					q(12669, {	-- So Far, So Bad
-						["coords"] = {
-							{ 28.4, 44.9, ZULDRAK },
-							{ 14.0, 73.8, ZULDRAK },
-							{ 27.6, 53.8, ZULDRAK },
-						},
-						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12661,	-- Infiltrating Voltarus
+						["qg"] = 28518,	-- Stefan Vadu
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qi"] = 39154,	-- Diluting Additive (PQI!)
 						["groups"] = {
 							i(39810),	-- Cords of Duplicity
 							i(39871),	-- Subtle Boots of the Infiltrator
@@ -828,7 +826,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12643,	-- Silver Lining
 						["altQuests"] = { 12648 },	-- Dressing Down
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.7, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
 					}),
 					q(13549, {	-- Tails Up
 						["sourceQuest"] = 12635,	-- Relics of the Snow Leopard Goddess
@@ -1181,7 +1179,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12637,	-- Near Miss
 						["altQuests"] = { 12643 },	-- Silver Lining
 						["qg"] = 28518,	-- Stefan Vadu
-						["coord"] = { 14.0, 73.8, ZULDRAK },
+						["coord"] = { 14.1, 73.8, ZULDRAK },
+						["qis"] = {
+							38687,	-- Gooey Ghoul Drool (QI!)
+							38686,	-- Putrid Abomination Guts (QI!)
+						},
 					}),
 					q(12685, {	-- You Reap What You Sow
 						["sourceQuest"] = 12684,	-- Blood of a Dead God
@@ -1200,6 +1202,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12669,	-- So Far, So Bad
 						["qg"] = 28503,	-- Overlord Drakuru
 						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["qi"] = 39206,	-- Scepter of Empowerment (PQI!)
 					}),
 					q(39208, {	-- Zul'Drak
 						["timeline"] = { ADDED_6_2_0, REMOVED_7_3_5 },	-- old quest from the adventure guide. Pretty sure this was removed (CRIEVE NOTE: Not sure what patch it was removed.)
@@ -1281,6 +1284,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(38551),	-- Drakkari Offerings
 					i(48116, {	-- Gundrak Hatchling (PET!)
 						["coords"] = {
 							{ 72.6, 27.8, ZULDRAK },

@@ -98,7 +98,7 @@ root(ROOTS.WorldEvents, {
 				},
 				["groups"] = {
 					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
-					i(18676), 	-- Sash of the Windreaver
+					i(18676),	-- Sash of the Windreaver
 					i(18677),	-- Zephyr Cloak
 				},
 			}),

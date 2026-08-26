@@ -395,15 +395,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance [N]
-						["provider"] = { "n", 160177 },	-- Wrathion
+						["qg"] = 160177,	-- Wrathion
 						["lockCriteria"] = { 1,
 							"questID", 58374,	-- Ny'alotha: MOTHER's Guidance [H]
 							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
 						},
-						["groups"] = {
-							i(174910),	-- Dragon Heart (QI!)
-							i(174913),	-- Prophetic Eye (QI!)
-							i(174063),	-- Titan Core (QI!)
+						["qis"] = {
+							174910,	-- Dragon Heart (QI!)
+							174913,	-- Prophetic Eye (QI!)
+							174063,	-- Titan Core (QI!)
 						},
 					}),
 				}),
@@ -434,14 +434,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance [H]
-						["provider"] = { "n", 160177 },	-- Wrathion
+						["qg"] = 160177,	-- Wrathion
 						["lockCriteria"] = { 1,
 							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
 						},
-						["groups"] = {
-							i(174909),	-- Dragon Heart (QI!)
-							i(174911),	-- Prophetic Eye (QI!)
-							i(174064),	-- Titan Core (QI!)
+						["qis"] = {
+							174909,	-- Dragon Heart (QI!)
+							174911,	-- Prophetic Eye (QI!)
+							174064,	-- Titan Core (QI!)
 						},
 					}),
 				}),
@@ -462,11 +462,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(58375, {	-- Ny'alotha: MOTHER's Guidance [M]
-						["provider"] = { "n", 160177 },	-- Wrathion
-						["groups"] = {
-							i(174908),	-- Dragon Heart (QI!)
-							i(174912),	-- Prophetic Eye (QI!)
-							i(174065),	-- Titan Core (QI!)
+						["qg"] = 160177,	-- Wrathion
+						["qis"] = {
+							174908,	-- Dragon Heart (QI!)
+							174912,	-- Prophetic Eye (QI!)
+							174065,	-- Titan Core (QI!)
 						},
 					}),
 				}),

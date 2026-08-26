@@ -97,15 +97,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(11122, {	-- Carrot on a Stick
 							-- #if BEFORE WRATH
-							-- #if AFTER TBC
-							["description"] = "Once you have a Riding Crop, you may safely vendor this item as the two effects do not stack. Until then, use it to make mounted travel more efficient.",
-							-- #else
-							["description"] = "Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (which you do a lot in Classic!)",
-							-- #endif
+							["description"] =
+								-- #if AFTER TBC
+								"Once you have a Riding Crop, you may safely vendor this item as the two effects do not stack. Until then, use it to make mounted travel more efficient.",
+								-- #else
+								"Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (Which you do a lot in Classic!)",
+								-- #endif
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(9653, {	-- Speedy Racer Googles
+						i(9653, {	-- Speedy Racer Goggles
 							["timeline"] = { REMOVED_1_9_3 },
 						}),
 					},

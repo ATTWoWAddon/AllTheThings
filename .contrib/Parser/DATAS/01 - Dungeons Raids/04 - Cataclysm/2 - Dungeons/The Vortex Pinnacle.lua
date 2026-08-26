@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 					i(55855, {	-- Darksky Treads
 						["crs"] = {
-							45915,	-- Armored Mistal
+							45915,	-- Armored Mistral
 							45917,	-- Cloud Prince
 							45922,	-- Empyrean Assassin
 							45928,	-- Executor of the Caliph

@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(58876, {	-- Lost Flight
-							["provider"] = { "i", 174863 },	-- Spawn of Vexiona
+							["qs"] = 174863,	-- Spawn of Vexiona (QS!)
 							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_2_LAUNCH },
 							["groups"] = { i(174862) },	-- Uncorrupted Voidwing (MOUNT!)
 						}),

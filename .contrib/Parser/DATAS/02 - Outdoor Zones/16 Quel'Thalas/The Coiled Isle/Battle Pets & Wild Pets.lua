@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["coords"] = {
 					{ 44.1, 46.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 46.2, 48.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 53.6, 20.2, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				},
 			}),
 			i(270253, {	-- Jaundiced Slitherer (PET!)
@@ -43,6 +44,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(270250, {	-- Steady Croakfrog (PET!)
 				["crs"] = { 262243 },	-- Steady Croakfrog
 				["coords"] = {
+					{ 65.3, 42.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+					{ 65.9, 32.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 66.1, 56.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 67.0, 58.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 72.4, 55.1, MAP.MIDNIGHT.THE_COILED_ISLE },

@@ -201,7 +201,7 @@ namespace ATT
             AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignLocFilterID);
 
             AddHandlerAction(ParseStage.Incorporation, data => data.ContainsKey("speciesID"), Incorporate_Species);
-            AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_unsorted"), Incorporate_Spell);
+            AddHandlerAction(ParseStage.Incorporation, data => HasSpell(data) && !data.ContainsKey("_nyi"), Incorporate_Spell);
             AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate__questIDs);
             AddHandlerAction(ParseStage.Incorporation, Handler.AlwaysHandle, Incorporate_Parallel);
             // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated

@@ -3,7 +3,7 @@ local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
 local crit,flt,gs,h,i,mnt,n,p,r,s,toy=_.CreateAchievementCriteria,_.CreateFilter,_.CreateGearSet,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 categories.BlackMarket=
-h(-554,{SortPriority=80,symselector=23,g={
+h(-554,{SortPriority=80,symselector=25,g={
 h(-88,{awp=50004,u=3,g={
 s(272086,86993,{description="Only available on the BMAH for a limited time!",f=4,loc=43,lvl=90,q=4,rwp=60002,u=3}),
 s(272087,86994,{description="Only available on the BMAH for a limited time!",f=4,loc=43,lvl=90,q=4,rwp=60002,u=3}),
@@ -217,9 +217,9 @@ s(274090,90176,{b=1,f=31,lvl=90,q=4,u=3}),
 s(175458,44924,{b=1,f=22,lvl=85,q=4,u=3})}}),
 i(93194,{awp=50100,b=1,lvl=90,q=3,r=2,rwp=60002,u=51}),
 i(93227,{awp=50100,b=1,lvl=90,q=3,r=1,rwp=60002,u=51}),
-i(102137,{awp=50400,b=1,q=4,rwp=60002,skipFill=1,sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58},{"not","itemID",102137,97565}},u=3}),
+i(102137,{awp=50400,b=1,q=4,rwp=60002,skipFill=1,sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58},{"not","itemID",102137,97565}},u=3}),
 i(97565,{awp=50300,b=1,q=4,rwp=50400,u=2}),
 h(-58,{awp=50004,u=3,g={
 n(62943,{coords={
-[433]={{63.8,75.8}}},sym={{"select","symselector",23},{"pop"},{"exclude","headerID",-58}},u=3})}})}})
+[433]={{63.8,75.8}}},sym={{"select","symselector",25},{"pop"},{"exclude","headerID",-58}},u=3})}})}})
 end)

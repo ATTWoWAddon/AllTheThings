@@ -605,7 +605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
 						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
-						["provider"] = { "i", 139619 },	-- Ymiron's Broken Blade
+						["qs"] = 139619,	-- Ymiron's Broken Blade (QS!)
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 						["groups"] = { follower(712) },	-- King Ymiron
 					}),

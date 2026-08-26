@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						29281,	-- Svala Sorrowgrave useless form
 					},
 					["groups"] = {
-						i(37037),	-- Ritualistic Arthame
+						i(37037),	-- Ritualistic Athame
 						i(37038),	-- Brazier Igniter
 						-- #if AFTER 7.3.5
 						i(37368),	-- Silent Spectator Shoulderpads (7.3.5 - Used to be only Heroic Mode)
@@ -212,7 +212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37377),	-- Netherbreath Spellblade (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
 						i(37053),	-- Amulet of Deflected Blows
-						i(37055),	-- Silken Amice of the Ymijar
+						i(37055),	-- Silken Amice of the Ymirjar
 						i(37057),	-- Dark Rider's Tunic
 						-- #if AFTER 7.3.5
 						i(37379),	-- Skadi's Iron Belt (7.3.5 - Used to be only Heroic Mode)
@@ -279,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["groups"] = {
 							ach(2043),	-- The Incredible Hulk
 							-- #if AFTER 7.3.5
-							i(37037),	-- Ritualistic Arthame (7.3.5 - Used to be only Normal Mode)
+							i(37037),	-- Ritualistic Athame (7.3.5 - Used to be only Normal Mode)
 							i(37038),	-- Brazier Igniter (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(37368),	-- Silent Spectator Shoulderpads
@@ -319,7 +319,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37377),	-- Netherbreath Spellblade
 							-- #if AFTER 7.3.5
 							i(37053),	-- Amulet of Deflected Blows (7.3.5 - Used to be only Normal Mode)
-							i(37055),	-- Silken Amice of the Ymijar (7.3.5 - Used to be only Normal Mode)
+							i(37055),	-- Silken Amice of the Ymirjar (7.3.5 - Used to be only Normal Mode)
 							i(37057),	-- Dark Rider's Tunic (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(37379),	-- Skadi's Iron Belt

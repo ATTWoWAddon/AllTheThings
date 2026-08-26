@@ -20,9 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				q(51287, {	-- Tol Dagor: Sealed Supplies
 					["isWorldQuest"] = true,
 					["lvl"] = 50,
-					["groups"] = {
-						i(159831),	-- Sealed Kul Tiran Crate (QI!)
-					},
+					["qi"] = 159831,	-- Sealed Kul Tiran Crate (QI!)
 				}),
 				q(51297, {	-- Tol Dagor: Shorefront Property
 					["isWorldQuest"] = true,
@@ -31,9 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				q(51296, {	-- Tol Dagor: The Overseer's Pride
 					["isWorldQuest"] = true,
 					["lvl"] = 50,
-					["groups"] = {
-						i(159834),	-- The Pride of Kul Tiras (QI!)
-					},
+					["qi"] = 159834,	-- The Pride of Kul Tiras (QI!)
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {

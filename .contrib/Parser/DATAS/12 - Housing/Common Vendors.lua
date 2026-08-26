@@ -8,6 +8,7 @@
 	-- These can be listed back to back and will merge together in parser
 
 	n_CommonVendorItems({
+		["timeline"] = { TIMELINE_CONST },
 		["crs"] = {
 			NPCID,	-- VendorName [Location]
 			NPCID,	-- VendorName [Location]
@@ -543,11 +544,12 @@ root(ROOTS.Housing, {
 		},
 	}),
 	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
 			257297,	-- "Fen" Rucket <Artisanal Room "Planner"> [Founder's Point]
 			254687,	-- Rotha <General Contractor> [Razorwind Shores]
 		},
-		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+		["groups"] = {
 			i_DecorCoupons(274673, 50),	-- Orgrimmar Council Room Plans (ARTROOM!)
 			i_DecorCoupons(274676, 50),	-- Orgrimmar Display Room Plans (ARTROOM!)
 			i_DecorCoupons(274675, 50),	-- Orgrimmar Stone Pit Room Plans (ARTROOM!)
@@ -556,14 +558,15 @@ root(ROOTS.Housing, {
 			i_DecorCoupons(274661, 50),	-- Silvermoon Display Room Plans (ARTROOM!)
 			i_DecorCoupons(274664, 50),	-- Silvermoon Lofty Study Plans (ARTROOM!)
 			i_DecorCoupons(274662, 50),	-- Silvermoon Small Study Plans (ARTROOM!)
-		}),
+		},
 	}),
 	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
 			255104,	-- Jorvan Longmoor <General Contractor> [Founder's Point]
 			257295,	-- "Fen" Rucket <Alliance Housing "Planner"> [Razorwind Shores]
 		},
-		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+		["groups"] = {
 			i_DecorCoupons(274668, 50),	-- Bel'ameth Meeting Room Plans (ARTROOM!)
 			i_DecorCoupons(274671, 50),	-- Bel'ameth Nestled Bedroom Plans (ARTROOM!)
 			i_DecorCoupons(274670, 50),	-- Bel'ameth Temple Room Plans (ARTROOM!)
@@ -576,14 +579,15 @@ root(ROOTS.Housing, {
 			i_DecorCoupons(276244, 75),	-- Springtime Westfall Barn Plans (ARTROOM!)
 			i_DecorCoupons(282340, 200),	-- Autumnal Westfall Barn Facade Plans (ARTHOUSE!)
 			i_DecorCoupons(282343, 200),	-- Springtime Westfall Barn Facade Plans (ARTHOUSE!)
-		}),
+		},
 	}),
 	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
 			257321,	-- Fel'orei Moonstrider <Westfall Decor Vendor> [Founder's Point]
 			257303,	-- "Den" Nightshade <Westfall Decor Procurement Specialist> [Razorwind Shores]
 		},
-		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+		["groups"] = {
 			i_DecorCoupons(280631, 20),	-- Demont Orchard Juicer (DECOR!)
 			i_DecorCoupons(280625, 10),	-- Framed Moonbrook Quilt (DECOR!)
 			i_DecorCoupons(280642, 10),	-- Furlbrow Farm Pumpkin Trio (DECOR!)
@@ -599,14 +603,15 @@ root(ROOTS.Housing, {
 			i_DecorCoupons(280637, 30),	-- Torquewrench Tractor (DECOR!)
 			i_DecorCoupons(280650, 30),	-- Westfall Farmer's Shed (DECOR!)
 			i_DecorCoupons(280633, 10),	-- Westfall Harvest Lamp (DECOR!)
-		}),
+		},
 	}),
 	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
 			257332,	-- Devin Slatesmith <Decor Vendor> [Founder's Point]
 			257257,	-- Merki <Decor Vendor> [Razorwind Shores]
 		},
-		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+		["groups"] = {
 			i(280148),	-- Large Triangular Wooden Tile (DECOR!)
 			i(280144),	-- Large Wooden Floor Tile (DECOR!)
 			i(280160),	-- Large Wooden Wall Tile (DECOR!)
@@ -619,14 +624,15 @@ root(ROOTS.Housing, {
 			i(280150),	-- Tall Round Wooden Column (DECOR!)
 			i(280156),	-- Tall Square Wooden Column (DECOR!)
 			i(280162),	-- Wide Wooden Staircase (DECOR!)
-		}),
+		},
 	}),
 	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
 		["crs"] = {
 			267795,	-- Perry Winkles <Pet Decor Vendor> [Founder's Point]
 			267794,	-- Agratha <Pet Decor Vendor> [Razorwind Shores]
 		},
-		["groups"] = bubbleDown({ ["timeline"] = { ADDED_12_1_0 } }, {
+		["groups"] = {
 			i(263880),	-- Cherished Pet's Rug (DECOR!)
 			i(277121),	-- Cozy Bird Nest (DECOR!)
 			i(277160),	-- Cozy Lightbloom Lilypad (DECOR!)
@@ -639,7 +645,26 @@ root(ROOTS.Housing, {
 			}),
 			i(277138),	-- Silvermoon Dragonhawk Incubator (DECOR!)
 			i(277142),	-- Westfall Pet Cage (DECOR!)
-		}),
+		},
+	}),
+	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
+		["crs"] = {
+			263258,	-- Cousin Shortkaf <Kafa Trader> [Founder's Point]
+		},
+		["groups"] = {
+			i(271717),	-- Cup of Kafa
+			i(248404),	-- Stack of Kafa Mugs (DECOR!)
+		},
+	}),
+	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
+		["crs"] = {
+			267856,	-- J-3T 3000 [Founder's Point]
+		},
+		["groups"] = {
+			i(276297),	-- Rustbolt Jetpack
+		},
 	}),
 	n(VENDORS, {
 		n(255654, {	-- Lorisin

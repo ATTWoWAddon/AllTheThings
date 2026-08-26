@@ -174,7 +174,7 @@ pvprank(11,{pvp=1,u=2}),
 pvprank(12,{pvp=1,u=2}),
 pvprank(13,{pvp=1,u=2}),
 pvprank(14,{pvp=1,u=2})}}),
-h(-210,{awp=10400,pvp=1,r=2,symselector=21,g={
+h(-210,{awp=10400,pvp=1,r=2,symselector=23,g={
 h(-101,{pvp=1,g={
 s(129729,18825,{b=1,f=8,lvl=60,pvp=1,q=4,r=2}),
 s(129771,18867,{b=1,f=24,lvl=60,pvp=1,q=4,r=2}),
@@ -338,7 +338,7 @@ i(18862,{b=1,c={5},f=53,pvp=1,q=3}),
 i(18857,{b=1,c={4},f=53,pvp=1,q=3}),
 i(18858,{b=1,c={9},f=53,pvp=1,q=3}),
 i(18854,{b=1,c={1},f=53,pvp=1,q=3})}}),
-h(-211,{awp=11101,pvp=1,r=1,symselector=22,g={
+h(-211,{awp=11101,pvp=1,r=1,symselector=24,g={
 h(-101,{pvp=1,g={
 s(129735,18831,{b=1,f=22,lvl=60,pvp=1,q=4,r=1}),
 s(133860,23464,{b=1,f=23,lvl=60,pvp=1,q=4,r=1}),

@@ -661,32 +661,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									{ "i", 260250, 1 },	-- Mysterious Purple Fluid
 								},
 							}),
-						 },
+						},
 					}),
 					o(613392, {	-- Impenetrably Sealed Gourd
 						["description"] = "Obtain mysterious fluids from other objects in same cave, then mix red and purple for Fizzing Fluid.",
 						["coord"] = { 26.7, 67.6, MAP.MIDNIGHT.HARANDAR },
 						["questID"] = 93508,
 						["cost"] = { { "i", 260266, 1 } },	-- 1x Fizzing Fluid
-						["groups"] = {
-							i(260730),	-- Perturbed Sporebat (PET!)
-						},
+						["groups"] = { i(260730) },	-- Perturbed Sporebat (PET!)
 					}),
 				}),
 				o(573307, {	-- Kemet's Simmering Cauldron
 					["coord"] = { 55.6, 39.4, MAP.MIDNIGHT.HARANDAR },
 					["questID"] = 92436,
-					["groups"] = {
-						i(258903),	-- Percival (PET!)
-					},
+					["groups"] = { i(258903) },	-- Percival (PET!)
 				}),
 				o(614483, {	-- Peculiar Cauldron
 					["coord"] = { 40.6, 28.0, MAP.MIDNIGHT.HARANDAR },
 					["questID"] = 93587,
 					["cost"] = { { "i", 260531, 150 } },	-- 150x Crystalized Resin Fragment
-					["groups"] = {
-						i(252017),	-- Ruddy Sporeglider (MOUNT!)
-					},
+					["groups"] = { i(252017) },	-- Ruddy Sporeglider (MOUNT!)
 				}),
 				o(573095, {	-- Reliquary's Lost Paintbrush
 					["coord"] = { 62.9, 51.2, MAP.MIDNIGHT.HARANDAR },
@@ -699,9 +693,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				o(573050, {	-- Sporelord's Fight Prize
 					["coord"] = { 73.6, 65.3, MAP.MIDNIGHT.HARANDAR },
 					["questID"] = 92427,
-					["groups"] = {
-						i(263289),	-- Sporelord's Authority (COSMETIC!)
-					},
+					["groups"] = { i(263289) },	-- Sporelord's Authority (COSMETIC!)
 				}),
 				o(615963, {	-- Sporespawned Cache
 					["description"] = "Interact with Fungal Mallet in Fungara Village then hit the gong",
@@ -709,9 +701,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						{ 41.3, 67.9, MAP.MIDNIGHT.HARANDAR },
 						{ 46.7, 67.8, MAP.MIDNIGHT.HARANDAR },
 					},
-					["groups"] = {
-						i(256423),	-- Untainted Grove Crawler (MOUNT!)
-					},
+					["groups"] = { i(256423) },	-- Untainted Grove Crawler (MOUNT!)
 				}),
 			}),
 			o(616052, {	-- Flame-Hardened Sap of Teldrassil

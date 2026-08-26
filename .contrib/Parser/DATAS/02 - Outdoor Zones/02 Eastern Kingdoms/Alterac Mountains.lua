@@ -440,13 +440,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(8249, {	-- Junkboxes Needed
-					-- #if AFTER 4.3.0
-					["qg"] = 7323,	-- Winstone Wolfe <The Wolf>
-					["coord"] = { 71.4, 45.0, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
-					["coord"] = { 84.4, 80.3, ALTERAC_MOUNTAINS },
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER 4.3.0
+						7323,	-- Winstone Wolfe <The Wolf>
+						-- #else
+						6707,	-- Fahrad <Grand Master Rogue>
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER 4.3.0
+						{ 71.4, 45.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 84.4, 80.3, ALTERAC_MOUNTAINS },
+						-- #endif
+					},
 					["maxReputation"] = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
 					["cost"] = { { "i", 16885, 5 } },	-- Heavy Junkbox
 					["repeatable"] = true,

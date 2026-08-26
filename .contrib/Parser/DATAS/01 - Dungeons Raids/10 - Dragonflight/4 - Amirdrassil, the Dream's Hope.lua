@@ -405,7 +405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				}, {
 					q(77093, {	-- The Shadowflame Axe
-						["provider"] = { "i", 207729 },	-- Fyr'alath the Dreamrender
+						["qs"] = 207729,	-- Fyr'alath the Dreamrender (QS!)
 					}),
 					q(77191, {	-- Handling It
 						["sourceQuests"] = { 77093 },	-- The Shadowflame Axe
@@ -416,9 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							{ "i", 208592, 1 },	-- 1x Rune of Shadowbinding
 							{ "i", 208578, 1 },	-- 1x Concentrated Sophic Vellum
 						},
-						["groups"] = {
-							i(208781),	-- Symbiotic Glowspore Grip (QI!)
-						},
+						["qi"] = 208781,	-- Symbiotic Glowspore Grip (QI!)
 					}),
 					q(77833, {	-- Handling It: Concentrated Sophic Vellum
 						["sourceQuests"] = { 77191 },	-- Handling It
@@ -439,30 +437,30 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 77833 },	-- Handling It: Concentrated Sophic Vellum
 						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
 						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-						["groups"] = {
-							i(210002),	-- Ashen Dowsing Rod (QI!)
-							i(210001),	-- Prototype Order Vellum (QI!)
-							i(208581),	-- Radiant Fleck of Ash (QI!)
+						["qis"] = {
+							210002,	-- Ashen Dowsing Rod (QI!)
+							210001,	-- Prototype Order Vellum (QI!)
+							208581,	-- Radiant Fleck of Ash (QI!)
 						},
 					}),
 					q(78003, {	-- Handling It: Taut Tethercoil
 						["sourceQuests"] = { 77835 },	-- Handling It: Rune of Shadowbinding
 						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
 						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
-						["groups"] = {
-							i(209352),	-- Prototype Binding Rune (QI!)
-							i(208595),	-- Taut Tethercoil (QI!)
-							i(209996),	-- Tethercoil Rune (QI!)
+						["qis"] = {
+							209352,	-- Prototype Binding Rune (QI!)
+							208595,	-- Taut Tethercoil (QI!)
+							209996,	-- Tethercoil Rune (QI!)
 						},
 					}),
 					q(77886, {	-- Handling It: Shadowed Dreamleaf
 						["sourceQuests"] = { 77791 },	-- Handling It: Symbiotic Glowspore Grip
 						["provider"] = { "n", 194842 },	-- Erden
 						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-						["groups"] = {
-							i(210009),	-- Prototype Dreamleaf Grip (QI!)
-							i(208593),	-- Shadowed Dreamleaf (QI!)
-							i(210199),	-- Tattered Dreamleaf (QI!)
+						["qis"] = {
+							210009,	-- Prototype Dreamleaf Grip (QI!)
+							208593,	-- Shadowed Dreamleaf (QI!)
+							210199,	-- Tattered Dreamleaf (QI!)
 						},
 					}),
 					q(77838, {	-- Tattered Dreamleaf
@@ -473,14 +471,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							77791,	-- Handling It: Symbiotic Glowspore Grip
 						},
 						["sourceQuestNumRequired"] = 1,
+						["qs"] = 211927,	-- Tattered Dreamleaf (QS!)
 						["provider"] = { "i", 210199 },	-- Tattered Dreamleaf
 						["classes"] = IGNORED_VALUE,	-- prevent bubbleDown... this was given to my Hunter
-						["groups"] = {
-							i(211927),	-- Tattered Dreamleaf
-							i(208587),	-- Budding Restoration Mote (QI!)
-							i(208588),	-- Burgeoning Restoration Mote (QI!)
-							i(208846),	-- Restored Dreamleaf (QI!)
-							i(208576),	-- Thriving Restoration Mote (QI!)
+						["qis"] = {
+							208587,	-- Budding Restoration Mote (QI!)
+							208588,	-- Burgeoning Restoration Mote (QI!)
+							208846,	-- Restored Dreamleaf (QI!)
+							208576,	-- Thriving Restoration Mote (QI!)
 						},
 					}),
 					q(78156, {	-- Handling It: Radiant Vellum
@@ -552,10 +550,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 78156 },	-- Handling It: Radiant Vellum
 						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
 						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
+						["qis"] = {
+							210222,	-- Resolved Element (QI!)
+							210048,	-- Shalasar's Sophic Vellum (QI!)
+							210240,	-- Stabilized Element (QI!)
+						},
 						["groups"] = {
-							i(210222),	-- Resolved Element (QI!)
-							i(210048),	-- Shalasar's Sophic Vellum (QI!)
-							i(210240),	-- Stabilized Element (QI!)
 							i(211398, {	-- Attuned Sophic Vellum (QI!)
 								i(208578),	-- Concentrated Sophic Vellum (QI!)
 							}),
@@ -565,8 +565,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 78153 },	-- Handling It: Prototype Rune
 						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
 						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
+						["qi"] = 209999,	-- Lydiara's Rune of Shadowbinding (QI!)
 						["groups"] = {
-							i(209999),	-- Lydiara's Rune of Shadowbinding (QI!)
 							i(211397, {	-- Attuned Rune of Shadowbinding (QI!)
 								i(208592),	-- Rune of Shadowbinding (QI!)
 							}),
@@ -582,20 +582,20 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							{ "i", 204460, 100 },	-- Zaralek Glowspores
 						},
 						["isDaily"] = true,
-						["groups"] = {
-							i(210918),	-- Adaptive Cooling Salve (QI!)
-						},
+						["qi"] = 210918,	-- Adaptive Cooling Salve (QI!)
 					}),
 					q(78160, {	-- To the Test: Symbiotic Glowspore Grip
 						["sourceQuests"] = { 78159 },	-- Handling It: Glowspore Grip
 						["provider"] = { "n", 194842 },	-- Erden
 						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						["qis"] = {
+							210207,	-- Empowered Restorative Symbiote (QI!)
+							210012,	-- Erden's Symbiotic Glowspore Grip (QI!)
+						},
 						["groups"] = {
 							i(211396, {	-- Attuned Glowspore Grip (QI!)
 								i(208577),	-- Symbiotic Glowspore Grip (QI!)
 							}),
-							i(210207),	-- Empowered Restorative Symbiote (QI!)
-							i(210012),	-- Erden's Symbiotic Glowspore Grip (QI!)
 						},
 					}),
 					q(77192, {	-- An Axe Tempered
@@ -1450,17 +1450,17 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(78355,{	-- Essence of a Broken Dream
-						["provider"] = { "i", 210430 },	-- Twisted Dreaming Essence (QI!)
+						["qs"] = 210430,	-- Twisted Dreaming Essence (QS!)
 					}),
 					q(78421, {	-- The Power of Dreams
-						["sourceQuest"] = 78355,	-- Essence of a Broken Dream (QI!)
+						["sourceQuest"] = 78355,	-- Essence of a Broken Dream
 						["provider"] = { "n", 210039 },	-- Merithra
-						["groups"] = {
-							i(210470),	-- Echoed Ephemera (QI!)
-							i(210472),	-- Igira's Cruel Nightmare (QI!)
-							i(210473),	-- Larodar's Fiery Reverie (QI!)
-							i(210475),	-- Smolderon's Delusions of Grandeur (QI!)
-							i(210474),	-- Tindral's Fowl Fantasia (QI!)
+						["qis"] = {
+							210470,	-- Echoed Ephemera (QI!)
+							210472,	-- Igira's Cruel Nightmare (QI!)
+							210473,	-- Larodar's Fiery Reverie (QI!)
+							210475,	-- Smolderon's Delusions of Grandeur (QI!)
+							210474,	-- Tindral's Fowl Fantasia (QI!)
 						},
 					}),
 					q(78429, {	-- The Power of Dreams, Awoken
@@ -1534,9 +1534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (MM!)
 					i(207728, {	-- Fyr'alath the Dreamrender
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["groups"] = {
-							i(207729),	-- Fyr'alath the Dreamrender (QI!)
-						},
+						["groups"] = { i(207729) },	-- Fyr'alath the Dreamrender (QS!)
 					}),
 				}),
 			}),
@@ -1612,10 +1610,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(78600, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (N)
-						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
-						["groups"] = {
-							i(210791),	-- Fragment of Emberscar (QI!)
-						},
+						["qg"] = 210016,	-- Tyrande Whisperwind
+						["qi"] = 210791,	-- Fragment of Emberscar (QI!)
 					}),
 				}),
 				ZoneDrops({
@@ -1638,10 +1634,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
 					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_TWW_LAUNCH } }, {	-- A Glowing Memento
-						["provider"] = { "i", 211375 },	-- Everglowing Ember
-						["groups"] = {
-							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
-						},
+						["qs"] = 211375,	-- Everglowing Ember (QS!)
+						["groups"] = { i(210537) },	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
 					})),
 				}),
 				BossOnly(GNARLROOT),
@@ -1665,10 +1659,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(78601, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (H)
-						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
-						["groups"] = {
-							i(210792),	-- Fragment of Emberscar (QI!)
-						},
+						["qg"] = 210016,	-- Tyrande Whisperwind
+						["qi"] = 210792,	-- Fragment of Emberscar (QI!)
 					}),
 				}),
 				ZoneDrops({
@@ -1696,10 +1688,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(78602, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (M)
-						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
-						["groups"] = {
-							i(210793),	-- Fragment of Emberscar (QI!)
-						},
+						["qg"] = 210016,	-- Tyrande Whisperwind
+						["qi"] = 210793,	-- Fragment of Emberscar (QI!)
 					}),
 				}),
 				ZoneDrops({

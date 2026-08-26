@@ -951,10 +951,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown [N]
-						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["groups"] = {
-							i(190967),	-- Mourne Fragment (QI!)
-						},
+						["qg"] = 184601,	-- Highlord Bolvar Fordragon
+						["qi"] = 190967,	-- Mourne Fragment (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -1004,10 +1002,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown [H]
-						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["groups"] = {
-							i(190966),	-- Mourne Fragment (QI!)
-						},
+						["qg"] = 184601,	-- Highlord Bolvar Fordragon
+						["qi"] = 190966,	-- Mourne Fragment (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -1030,7 +1026,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							184601,	-- Highlord Bolvar Fordragon
 							188683,	-- Knight of the Ebon Blade
 						},	--
-						["groups"] = { i(190959) },	-- Mourne Fragment (QI!)
+						["qi"] = 190959,	-- Mourne Fragment (QI!)
 					}),
 				}),
 				ZoneDrops(),

@@ -6331,8 +6331,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete all Battle for Azeroth Season Two dungeons at Mythic Level 15 or higher, within the time limit.","Battle for Azeroth Keystone Master: Season Two",,13449,-1,-1,13448,15272,0,0,133120,96,618859,0,0,0,0,0,0
 "Obtain the Fierce Gladiator's Storm Dragon from Legion Arena Season 5.","Fierce Gladiator's Storm Dragon",,13450,-1,-1,0,15269,1,0,145408,41,1503313,0,78322,0,0,0,0
 "Earn the rank of Elite during Battle for Azeroth Season 2.","Elite: Battle for Azeroth Season 2","Seasonal Character Title: the Elite",13451,-1,-1,0,15270,0,0,14336,374,236540,0,78325,0,0,0,0
-,"Vicious Saddle (1)",,13452,-1,1,61405,15270,0,0,1180672,100,1379171,103533,78329,0,0,0,0
-,"Vicious Saddle (1)",,13453,-1,0,61403,15270,0,0,1180672,98,1379171,103533,78331,0,0,0,0
+,"Vicious Saddle (1)",,13452,-1,1,63103,15270,0,0,1180672,99,1379171,103533,78329,0,0,0,0
+,"Vicious Saddle (1)",,13453,-1,0,63099,15270,0,0,1180672,97,1379171,103533,78331,0,0,0,0
 "Earn the rank of Elite during Battle for Azeroth Season 1.","Elite: Battle for Azeroth Season 1","Seasonal Character Title: the Elite",13465,-1,-1,0,15270,0,0,14336,373,236540,0,78400,0,0,0,0
 "Complete the Tides of Vengeance war campaign.","Tides of Vengeance",,13466,-1,0,0,15284,0,10,131072,38,2565244,0,78415,0,0,0,0
 "Complete the Tides of Vengeance war campaign.","Tides of Vengeance",,13467,-1,1,0,15284,0,10,131072,41,2565243,0,78420,0,0,0,0
@@ -12929,7 +12929,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete each of the following Legion Dungeons on any difficulty with a Timerunner.","Legion Dungeons: Might of the Legion","+1 Infinite Knowledge",61115,-1,-1,0,15604,0,0,134144,236,1536896,0,216133,0,0,0,0
 "Complete the Withered Army Training scenario in Heroic World Tier with a score of 200 or higher.","Building a Heroic Army","Bronze Cache",61174,-1,-1,0,15604,0,0,134144,98,1525726,0,216215,0,0,0,0
 "End Midnight Season 1 in the top 0.1% of the Rated Battleground Blitz ladder (requires 50 games won in Midnight Season 1).","Galactic Marshal: Midnight Season 1","Character Title: Galactic Marshal",61177,-1,1,0,15270,0,0,14336,310,236540,0,0,0,0,0,0
-"End Midnight Season 1 in the top 0.1% of the Rated Battleground Blitz ladder (requires 50 games won in Midnight Season 1).","Galactic Warlord: Midnight Season 1","Character Title: Galactic Marshal",61178,-1,0,0,15270,0,0,14336,312,236540,0,0,0,0,0,0
+"End Midnight Season 1 in the top 0.1% of the Rated Battleground Blitz ladder (requires 50 games won in Midnight Season 1).","Galactic Warlord: Midnight Season 1","Character Title: Galactic Warlord",61178,-1,0,0,15270,0,0,14336,312,236540,0,0,0,0,0,0
 "End Midnight Season 1 in the top 0.1% of the Solo Shuffle ladder (requires 50 games won in Midnight Season 1).","Galactic Legend: Midnight Season 1","Character Title: Galactic Legend",61179,-1,-1,0,15270,0,0,14336,302,236540,0,0,0,0,0,0
 "End Midnight Season 1 in the top 0.1% of the 3v3 arena ladder (requires 150 games won in Midnight Season 1.","Galactic Gladiator: Midnight Season 1","Character Title: Galactic Gladiator",61180,-1,-1,0,15270,0,0,14336,296,236540,0,0,0,0,0,0
 "Earn the rank of Combatant I during Midnight Season 1.","Combatant I: Midnight Season 1","Seasonal Character Title: Combatant",61181,-1,-1,0,15270,0,0,2048,539,236543,0,216161,0,0,0,0
@@ -12946,8 +12946,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "End Midnight Season 1 in the top 0.5% of the rated battleground ladder (requires 50 games won in Midnight Season 1).","Hero of the Horde: Galactic",,61196,-1,0,0,15270,0,0,14336,486,236629,0,0,0,0,0,0
 "Earn the rank of Elite during Midnight Season 1.","Elite: Midnight Season 1","Seasonal Character Title: the Elite",61197,-1,-1,0,15270,0,0,2048,553,236543,0,216203,0,0,0,0
 "Win 50 Solo Shuffle rounds as a Healer at or above Rival I during Midnight Season 1.","Battle Mender: Midnight Season 1","Reward: Seasonal Character Title",61198,-1,-1,0,15270,0,0,133120,7,236249,0,216242,0,0,0,0
-"Win 100 Solo Shuffle rounds as a Healer at or above Rival I during Midnight.","Solo Shuffle Medic: Midnight","Reward: Nightfall Legend's Pennant",61199,-1,-1,0,15270,0,0,133120,10,135915,0,216244,0,0,0,0
-"Win 50 Battleground Blitz matches as a Healer at or above Rival I during Midnight","Battleground Blitz Medic: Midnight","Reward: Nightfall Strategist's Pennant",61200,-1,-1,0,15270,0,0,133120,12,135915,0,216246,0,0,0,0
+"Win 100 Solo Shuffle rounds as a Healer at or above Rival I during Midnight.","Solo Shuffle Medic: Midnight","Reward: Nightfall Legend's Pennant",61199,-1,-1,0,15270,0,0,145408,10,135915,0,216244,0,0,0,0
+"Win 50 Battleground Blitz matches as a Healer at or above Rival I during Midnight","Battleground Blitz Medic: Midnight","Reward: Nightfall Strategist's Pennant",61200,-1,-1,0,15270,0,0,145408,12,135915,0,216246,0,0,0,0
 "Move into your first house in Azeroth.","Welcome Home",,61211,-1,-1,0,15606,0,10,131072,1,4217585,0,216255,0,0,0,0
 "Defeat Degentrius in Magisters' Terrace.","Magisters' Terrace",,61212,2811,-1,0,15541,0,10,0,8,7439625,0,216260,0,0,0,0
 "Defeat Degentrius in Magisters' Terrace on Heroic difficulty or higher.","Heroic: Magisters' Terrace",,61213,2811,-1,61212,15541,0,10,0,9,7439625,0,216262,0,0,0,0
@@ -13010,37 +13010,37 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Lithiel Cinderfury kills (Normal Murder Row)",,61273,2813,-1,0,15542,0,0,1,10,7266213,0,216692,0,0,0,0
 ,"Lithiel Cinderfury kills (Heroic Murder Row)",,61274,2813,-1,0,15542,0,0,1,11,7266213,0,216694,0,0,0,0
 ,"Lithiel Cinderfury kills (Mythic Murder Row)",,61275,2813,-1,0,15542,0,0,1,12,7266213,0,216696,0,0,0,0
-,"Imperator Averzian (Raid Finder Voidspire)",,61276,2912,-1,0,15542,0,0,1,25,0,0,216698,0,0,0,0
-,"Imperator Averzian (Normal Voidspire)",,61277,2912,-1,0,15542,0,0,1,26,0,0,216700,0,0,0,0
-,"Imperator Averzian (Heroic Voidspire)",,61278,2912,-1,0,15542,0,0,1,27,0,0,216702,0,0,0,0
-,"Imperator Averzian (Mythic Voidspire)",,61279,2912,-1,0,15542,0,0,1,28,0,0,216704,0,0,0,0
-,"Vorasius (Raid Finder Voidspire)",,61280,2912,-1,0,15542,0,0,1,29,0,0,216706,0,0,0,0
-,"Vorasius (Normal Voidspire)",,61281,2912,-1,0,15542,0,0,1,30,0,0,216708,0,0,0,0
-,"Vorasius (Heroic Voidspire)",,61282,2912,-1,0,15542,0,0,1,31,0,0,216710,0,0,0,0
-,"Vorasius (Mythic Voidspire)",,61283,2912,-1,0,15542,0,0,1,32,0,0,216712,0,0,0,0
-,"Fallen-King Salhadaar (Raid Finder Voidspire)",,61284,2912,-1,0,15542,0,0,1,33,0,0,216714,0,0,0,0
-,"Fallen-King Salhadaar (Normal Voidspire)",,61285,2912,-1,0,15542,0,0,1,34,0,0,216716,0,0,0,0
-,"Fallen-King Salhadaar (Heroic Voidspire)",,61286,2912,-1,0,15542,0,0,1,35,0,0,216718,0,0,0,0
-,"Fallen-King Salhadaar (Mythic Voidspire)",,61287,2912,-1,0,15542,0,0,1,36,0,0,216720,0,0,0,0
-,"Vaelgor & Ezzorak (Raid Finder Voidspire)",,61288,2912,-1,0,15542,0,0,1,37,0,0,216722,0,0,0,0
-,"Vaelgor & Ezzorak (Normal Voidspire)",,61289,2912,-1,0,15542,0,0,1,38,0,0,216724,0,0,0,0
-,"Vaelgor & Ezzorak (Heroic Voidspire)",,61290,2912,-1,0,15542,0,0,1,39,0,0,216726,0,0,0,0
-,"Vaelgor & Ezzorak (Mythic Voidspire)",,61291,2912,-1,0,15542,0,0,1,40,0,0,216728,0,0,0,0
-,"Lightblinded Vanguard (Raid Finder Voidspire)",,61292,2912,-1,0,15542,0,0,1,41,0,0,216730,0,0,0,0
-,"Lightblinded Vanguard (Normal Voidspire)",,61293,2912,-1,0,15542,0,0,1,42,0,0,216732,0,0,0,0
-,"Lightblinded Vanguard (Heroic Voidspire)",,61294,2912,-1,0,15542,0,0,1,43,0,0,216734,0,0,0,0
-,"Lightblinded Vanguard (Mythic Voidspire)",,61295,2912,-1,0,15542,0,0,1,44,0,0,216736,0,0,0,0
-,"Crown of the Cosmos (Raid Finder Voidspire)",,61296,2912,-1,0,15542,0,0,1,45,0,0,216738,0,0,0,0
-,"Crown of the Cosmos (Normal Voidspire)",,61297,2912,-1,0,15542,0,0,1,46,0,0,216740,0,0,0,0
-,"Crown of the Cosmos (Heroic Voidspire)",,61298,2912,-1,0,15542,0,0,1,47,0,0,216742,0,0,0,0
-,"Crown of the Cosmos (Mythic Voidspire)",,61299,2912,-1,0,15542,0,0,1,48,0,0,216744,0,0,0,0
-,"Belo'ren, Child of Al'ar (Raid Finder March on Quel'Danas)",,61300,2913,-1,0,15542,0,0,1,57,0,0,216746,0,0,0,0
-,"Belo'ren, Child of Al'ar (Normal March on Quel'Danas)",,61301,2913,-1,0,15542,0,0,1,58,0,0,216748,0,0,0,0
-,"Belo'ren, Child of Al'ar (Heroic March on Quel'Danas)",,61302,2913,-1,0,15542,0,0,1,59,0,0,216750,0,0,0,0
-,"Belo'ren, Child of Al'ar (Mythic March on Quel'Danas)",,61303,2913,-1,0,15542,0,0,1,60,0,0,216752,0,0,0,0
-,"Midnight Falls (Raid Finder March on Quel'Danas)",,61304,2913,-1,0,15542,0,0,1,62,0,0,216754,0,0,0,0
-,"Midnight Falls (Normal March on Quel'Danas)",,61305,2913,-1,0,15542,0,0,1,64,0,0,216756,0,0,0,0
-,"Midnight Falls (Heroic March on Quel'Danas)",,61306,2913,-1,0,15542,0,0,1,65,0,0,216758,0,0,0,0
+,"Imperator Averzian (Raid Finder Voidspire)",,61276,2912,-1,0,15542,0,0,1,28,0,0,216698,0,0,0,0
+,"Imperator Averzian (Normal Voidspire)",,61277,2912,-1,0,15542,0,0,1,29,0,0,216700,0,0,0,0
+,"Imperator Averzian (Heroic Voidspire)",,61278,2912,-1,0,15542,0,0,1,30,0,0,216702,0,0,0,0
+,"Imperator Averzian (Mythic Voidspire)",,61279,2912,-1,0,15542,0,0,1,31,0,0,216704,0,0,0,0
+,"Vorasius (Raid Finder Voidspire)",,61280,2912,-1,0,15542,0,0,1,32,0,0,216706,0,0,0,0
+,"Vorasius (Normal Voidspire)",,61281,2912,-1,0,15542,0,0,1,33,0,0,216708,0,0,0,0
+,"Vorasius (Heroic Voidspire)",,61282,2912,-1,0,15542,0,0,1,34,0,0,216710,0,0,0,0
+,"Vorasius (Mythic Voidspire)",,61283,2912,-1,0,15542,0,0,1,35,0,0,216712,0,0,0,0
+,"Fallen-King Salhadaar (Raid Finder Voidspire)",,61284,2912,-1,0,15542,0,0,1,36,0,0,216714,0,0,0,0
+,"Fallen-King Salhadaar (Normal Voidspire)",,61285,2912,-1,0,15542,0,0,1,37,0,0,216716,0,0,0,0
+,"Fallen-King Salhadaar (Heroic Voidspire)",,61286,2912,-1,0,15542,0,0,1,38,0,0,216718,0,0,0,0
+,"Fallen-King Salhadaar (Mythic Voidspire)",,61287,2912,-1,0,15542,0,0,1,39,0,0,216720,0,0,0,0
+,"Vaelgor & Ezzorak (Raid Finder Voidspire)",,61288,2912,-1,0,15542,0,0,1,40,0,0,216722,0,0,0,0
+,"Vaelgor & Ezzorak (Normal Voidspire)",,61289,2912,-1,0,15542,0,0,1,41,0,0,216724,0,0,0,0
+,"Vaelgor & Ezzorak (Heroic Voidspire)",,61290,2912,-1,0,15542,0,0,1,42,0,0,216726,0,0,0,0
+,"Vaelgor & Ezzorak (Mythic Voidspire)",,61291,2912,-1,0,15542,0,0,1,43,0,0,216728,0,0,0,0
+,"Lightblinded Vanguard (Raid Finder Voidspire)",,61292,2912,-1,0,15542,0,0,1,44,0,0,216730,0,0,0,0
+,"Lightblinded Vanguard (Normal Voidspire)",,61293,2912,-1,0,15542,0,0,1,45,0,0,216732,0,0,0,0
+,"Lightblinded Vanguard (Heroic Voidspire)",,61294,2912,-1,0,15542,0,0,1,46,0,0,216734,0,0,0,0
+,"Lightblinded Vanguard (Mythic Voidspire)",,61295,2912,-1,0,15542,0,0,1,47,0,0,216736,0,0,0,0
+,"Crown of the Cosmos (Raid Finder Voidspire)",,61296,2912,-1,0,15542,0,0,1,48,0,0,216738,0,0,0,0
+,"Crown of the Cosmos (Normal Voidspire)",,61297,2912,-1,0,15542,0,0,1,49,0,0,216740,0,0,0,0
+,"Crown of the Cosmos (Heroic Voidspire)",,61298,2912,-1,0,15542,0,0,1,50,0,0,216742,0,0,0,0
+,"Crown of the Cosmos (Mythic Voidspire)",,61299,2912,-1,0,15542,0,0,1,51,0,0,216744,0,0,0,0
+,"Belo'ren, Child of Al'ar (Raid Finder March on Quel'Danas)",,61300,2913,-1,0,15542,0,0,1,60,0,0,216746,0,0,0,0
+,"Belo'ren, Child of Al'ar (Normal March on Quel'Danas)",,61301,2913,-1,0,15542,0,0,1,61,0,0,216748,0,0,0,0
+,"Belo'ren, Child of Al'ar (Heroic March on Quel'Danas)",,61302,2913,-1,0,15542,0,0,1,62,0,0,216750,0,0,0,0
+,"Belo'ren, Child of Al'ar (Mythic March on Quel'Danas)",,61303,2913,-1,0,15542,0,0,1,63,0,0,216752,0,0,0,0
+,"Midnight Falls (Raid Finder March on Quel'Danas)",,61304,2913,-1,0,15542,0,0,1,64,0,0,216754,0,0,0,0
+,"Midnight Falls (Normal March on Quel'Danas)",,61305,2913,-1,0,15542,0,0,1,65,0,0,216756,0,0,0,0
+,"Midnight Falls (Heroic March on Quel'Danas)",,61306,2913,-1,0,15542,0,0,1,66,0,0,216758,0,0,0,0
 ,"Midnight Falls (Mythic March on Quel'Danas)",,61307,2913,-1,0,15542,0,0,1,67,0,0,216760,0,0,0,0
 "Collect 1 unique decor of uncommon quality or higher.","Score a Decor",,61308,-1,-1,0,15606,0,10,131072,5,134928,0,216790,0,0,0,0
 "Collect 50 unique decor of uncommon quality or higher.","Amateur Antiquarian",,61309,-1,-1,61308,15606,0,10,131072,6,463484,0,216792,0,0,0,0
@@ -13094,7 +13094,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Owner of Midnight Heroic Edition Lightwing Dragonhawk mount.","Heroic Edition: Lightwing Dragonhawk",,61401,-1,-1,0,15268,0,0,133120,93,6841375,0,218102,0,0,0,0
 "Owner of Midnight Epic Edition Voidlight Surger mount.","Epic Edition: Voidlight Surger",,61402,-1,-1,0,15268,0,0,133120,94,7135882,0,218104,0,0,0,0
 ,"Galactic Combatant",,61403,-1,0,0,15270,0,0,1179648,95,236538,257502,218116,0,0,0,0
-,"Galactic Combatant",,61405,-1,1,0,15270,0,0,1179648,99,236538,257504,218118,0,0,0,0
+,"Galactic Combatant",,61405,-1,1,0,15270,0,0,1179648,100,236538,257504,218118,0,0,0,0
 "Logged in during WoW's 21st Anniversary.","WoW's 21st Anniversary",,61406,-1,-1,0,15274,0,0,2048,79,133783,0,218134,0,0,0,0
 "Get invited to brawl at Bizmo's Brawlpub in the Deeprun Tram.","The First Rule of Brawler's Guild",,61413,-1,1,0,15567,0,10,131072,1,135975,0,218146,0,0,0,0
 "Get invited to brawl at Brawl'gar Arena in The Valley of Honor in Orgrimmar.","The First Rule of Brawler's Guild",,61414,-1,0,0,15567,0,10,131072,2,135975,0,218149,0,0,0,0
@@ -13132,10 +13132,10 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Sparks of War quest in Midnight 20 times.","Spark in the Night",,61465,-1,-1,61464,15283,0,10,131072,3,132147,0,218754,0,0,0,0
 "Defeat 15 Challenge Card exclusive bosses.","The Best There Is",,61466,-1,-1,0,15567,0,10,131072,3,1036482,0,218765,0,0,0,0
 "Complete the Elves of Quel'Thalas Lorewalking Campaign.","Lorewalking: The Elves of Quel'Thalas","Decor Reward: Tome of Silvermoon Intrigue",61467,-1,-1,0,15552,0,5,132096,6,236439,0,218825,0,0,0,0
-,"Chimaerus, the Undreamt God (Raid Finder Dreamrift)",,61474,2939,-1,0,15542,0,0,1,49,0,0,218846,0,0,0,0
-,"Chimaerus, the Undreamt God (Normal Dreamrift)",,61475,2939,-1,0,15542,0,0,1,54,0,0,218848,0,0,0,0
-,"Chimaerus, the Undreamt God (Heroic Dreamrift)",,61476,2939,-1,0,15542,0,0,1,55,0,0,218850,0,0,0,0
-,"Chimaerus, the Undreamt God (Mythic Dreamrift)",,61477,2939,-1,0,15542,0,0,1,56,0,0,218852,0,0,0,0
+,"Chimaerus, the Undreamt God (Raid Finder Dreamrift)",,61474,2939,-1,0,15542,0,0,1,52,0,0,218846,0,0,0,0
+,"Chimaerus, the Undreamt God (Normal Dreamrift)",,61475,2939,-1,0,15542,0,0,1,57,0,0,218848,0,0,0,0
+,"Chimaerus, the Undreamt God (Heroic Dreamrift)",,61476,2939,-1,0,15542,0,0,1,58,0,0,218850,0,0,0,0
+,"Chimaerus, the Undreamt God (Mythic Dreamrift)",,61477,2939,-1,0,15542,0,0,1,59,0,0,218852,0,0,0,0
 "Defeat Chimaerus, the Undreamt God in The Dreamrift on any difficulty.","Chimaerus, the Undreamt God",,61487,2939,-1,0,15566,0,10,131072,7,7448202,0,218874,0,0,0,0
 "Defeat Chimaerus, the Undreamt God in The Dreamrift on Heroic difficulty.","Heroic: Chimaerus, the Undreamt God",,61488,2939,-1,61487,15566,0,10,131072,8,7448202,0,218876,0,0,0,0
 "Defeat Chimaerus, the Undreamt God in The Dreamrift on Mythic difficulty.","Mythic: Chimaerus, the Undreamt God","Title: Dream-Eater",61489,2939,-1,61488,15566,0,10,131072,9,7448202,0,218878,0,0,0,0
@@ -13575,9 +13575,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Zul'jan in Altar of Fangs.","Altar of Fangs",,62282,2993,-1,0,15541,0,10,0,37,7956175,0,223159,0,0,0,0
 "Defeat Zul'jan in Altar of Fangs on Heroic difficulty or higher.","Heroic: Altar of Fangs",,62283,2993,-1,0,15541,0,10,0,38,7956175,0,223161,0,0,0,0
 "Defeat Zul'jan in Altar of Fangs on Mythic or Mythic Keystone difficulty.","Mythic: Altar of Fangs",,62284,2993,-1,0,15541,0,10,0,39,7956175,0,223163,0,0,0,0
-,"Zul'jan kills (Normal Altar of Fangs)",,62285,2993,-1,0,15542,0,0,1,61,7956175,0,223165,0,0,0,0
-,"Zul'jan kills (Heroic Altar of Fangs)",,62286,2993,-1,0,15542,0,0,1,63,7956175,0,223167,0,0,0,0
-,"Zul'jan kills (Mythic Altar of Fangs)",,62287,2993,-1,0,15542,0,0,1,66,7956175,0,223169,0,0,0,0
+,"Zul'jan kills (Normal Altar of Fangs)",,62285,2993,-1,0,15542,0,0,1,25,7956175,0,223165,0,0,0,0
+,"Zul'jan kills (Heroic Altar of Fangs)",,62286,2993,-1,0,15542,0,0,1,26,7956175,0,223167,0,0,0,0
+,"Zul'jan kills (Mythic Altar of Fangs)",,62287,2993,-1,0,15542,0,0,1,27,7956175,0,223169,0,0,0,0
 "Place telescopes on the tallest peaks in Eversong Woods.","Eversong Woods: The Highest Peaks","Decor Reward: ""Eversong Lantern"" Painting",62288,-1,-1,0,15553,0,5,132096,69,134442,0,223171,0,0,0,0
 "Place telescopes on the tallest peaks in Zul'Aman.","Zul'Aman: The Highest Peaks","Decor Reward: Amani Spearhunter's Spit",62289,-1,-1,0,15553,0,5,132096,70,134442,0,223177,0,0,0,0
 "Place telescopes on the tallest peaks in Harandar.","Harandar: The Highest Peaks","Decor Reward: Fungarian Vine Fence",62290,-1,-1,0,15553,0,5,132096,71,134442,0,223183,0,0,0,0
@@ -13860,7 +13860,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Dissipate 5 Storms in Naigtal.","Climate Strange: Naigtal",,62904,-1,-1,0,15610,0,5,131072,29,627487,0,227644,0,0,0,0
 "Defeat Imperator Pertinax and Nexus-Captain Leth'ir.","Pain of Command",,62905,-1,-1,0,15610,0,5,196608,30,1325312,0,227656,0,0,0,0
 "Defeat Imperator Pertinax and Nexus-Captain Leth'ir in Heroic World Tier.","Heroic: Pain of Command",,62909,-1,-1,0,15610,0,5,196608,47,1307173,0,227659,0,0,0,0
-"Earn the rank of Rival II during Midnight Season 2.","Rival II: Midnight Season 2","Weapon Illusion: Venomous",62911,-1,-1,0,15270,0,0,2048,550,236543,275062,227665,0,0,0,0
+"Earn the rank of Rival II during Midnight Season 2.","Rival II: Midnight Season 2","Weapon Illusion: Venomous",62911,-1,-1,0,15270,0,0,14336,550,236543,275062,227665,0,0,0,0
 ,"Adventurer Mistcrests earned",,62912,-1,-1,0,130,0,0,1,71,136243,0,227745,0,0,0,0
 ,"Veteran Mistcrests earned",,62913,-1,-1,0,130,0,0,1,72,136243,0,227747,0,0,0,0
 ,"Champion Mistcrests earned",,62914,-1,-1,0,130,0,0,1,73,136243,0,227749,0,0,0,0
@@ -13868,19 +13868,19 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Myth Mistcrests earned",,62916,-1,-1,0,130,0,0,1,75,136243,0,227754,0,0,0,0
 "Dissipate 5 Storms in Val in Heroic World Tier.","Heroic Climate Strange: Val",,62917,-1,-1,0,15610,0,5,131072,45,429385,0,227822,0,0,0,0
 "Dissipate 5 Storms in Naigtal in Heroic World Tier.","Heroic Climate Strange: Naigtal",,62919,-1,-1,0,15610,0,5,131072,46,775461,0,227826,0,0,0,0
-"Win 50 Solo Shuffle rounds as a Healer at or above Rival I during Midnight Season 2.","Battle Mender: Midnight Season 2","Reward: Seasonal Character Title",62921,-1,-1,0,15270,0,0,133120,8,236249,0,227888,0,0,0,0
+"Win 50 Solo Shuffle rounds as a Healer at or above Rival I during Midnight Season 2.","Battle Mender: Midnight Season 2","Reward: Seasonal Character Title",62921,-1,-1,0,15270,0,0,145408,8,236249,0,227888,0,0,0,0
 "End Midnight Season 2 in the top 0.1% of the 3v3 arena ladder (requires 150 games won in Midnight Season 2.","Venomous Gladiator: Midnight Season 2","Character Title: Venomous Gladiator",62922,-1,-1,0,15270,0,0,14336,297,236540,0,0,0,0,0,0
 "End Midnight Season 2 in the top 0.1% or top 8 of the Solo Shuffle ladder (requires 50 games won in Midnight Season 2).","Venomous Legend: Midnight Season 2","Character Title: Venomous Legend",62923,-1,-1,0,15270,0,0,14336,303,236540,0,0,0,0,0,0
 "End Midnight Season 2 in the top 0.1% of the Rated Battleground Blitz ladder (requires 50 games won in Midnight Season 2).","Venomous Marshal: Midnight Season 2","Character Title: Venomous Marshal",62924,-1,1,0,15270,0,0,14336,311,236540,0,0,0,0,0,0
 "End Midnight Season 2 in the top 0.1% or top 8 of the Rated Battleground Blitz ladder (requires 50 games won in Midnight Season 2).","Venomous Warlord: Midnight Season 2","Character Title: Venomous Warlord",62925,-1,0,0,15270,0,0,14336,313,236540,0,0,0,0,0,0
-"Earn the rank of Combatant I during Midnight Season 2.","Combatant I: Midnight Season 2","Seasonal Character Title: Combatant",62926,-1,-1,0,15270,0,0,2048,540,236543,0,227918,0,0,0,0
-"Earn the rank of Challenger I during Midnight Season 2.","Challenger I: Midnight Season 2","Seasonal Character Title: Challenger",62927,-1,-1,0,15270,0,0,2048,544,236543,0,227924,0,0,0,0
-"Earn the rank of Rival I during Midnight Season 2.","Rival I: Midnight Season 2","Seasonal Character Title: Rival",62928,-1,-1,0,15270,0,0,2048,548,236543,0,227930,0,0,0,0
-"Earn the rank of Duelist during Midnight Season 2.","Duelist: Midnight Season 2","Seasonal Character Title: Duelist",62929,-1,-1,0,15270,0,0,2048,552,236543,0,227936,0,0,0,0
+"Earn the rank of Combatant I during Midnight Season 2.","Combatant I: Midnight Season 2","Seasonal Character Title: Combatant",62926,-1,-1,0,15270,0,0,14336,540,236543,0,227918,0,0,0,0
+"Earn the rank of Challenger I during Midnight Season 2.","Challenger I: Midnight Season 2","Seasonal Character Title: Challenger",62927,-1,-1,0,15270,0,0,14336,544,236543,0,227924,0,0,0,0
+"Earn the rank of Rival I during Midnight Season 2.","Rival I: Midnight Season 2","Seasonal Character Title: Rival",62928,-1,-1,0,15270,0,0,14336,548,236543,0,227930,0,0,0,0
+"Earn the rank of Duelist during Midnight Season 2.","Duelist: Midnight Season 2","Seasonal Character Title: Duelist",62929,-1,-1,0,15270,0,0,14336,552,236543,0,227936,0,0,0,0
 ,"Sszorak (Normal The Venomous Abyss)",,63558,3004,-1,0,15542,0,0,1,85,0,0,230941,0,0,0,0
-"Win 50 3v3 games while at Elite rank during Midnight Season 2.","Gladiator: Midnight Season 2","Seasonal Character Title: Gladiator",62930,-1,-1,0,15270,0,0,2048,556,236543,275302,227942,0,0,0,0
-"Earn the rank of Elite during Midnight Season 2.","Elite: Midnight Season 2","Seasonal Character Title: the Elite",62931,-1,-1,0,15270,0,0,2048,554,236543,0,227944,0,0,0,0
-"Win 100 Rated Solo Shuffle rounds while at Elite rank during Midnight Season 2.","Legend: Midnight Season 2","Reward: Pennant & Seasonal Character Title",62932,-1,-1,0,15270,0,0,2048,560,236543,0,227950,0,0,0,0
+"Win 50 3v3 games while at Elite rank during Midnight Season 2.","Gladiator: Midnight Season 2","Seasonal Character Title: Gladiator",62930,-1,-1,0,15270,0,0,14336,556,236543,275302,227942,0,0,0,0
+"Earn the rank of Elite during Midnight Season 2.","Elite: Midnight Season 2","Seasonal Character Title: the Elite",62931,-1,-1,0,15270,0,0,14336,554,236543,0,227944,0,0,0,0
+"Win 100 Rated Solo Shuffle rounds while at Elite rank during Midnight Season 2.","Legend: Midnight Season 2","Reward: Pennant & Seasonal Character Title",62932,-1,-1,0,15270,0,0,14336,560,236543,0,227950,0,0,0,0
 "Complete a Tier 6 Ritual Site.","Ritual Sites 612: Practical Ritual Work",,62940,-1,-1,62454,15608,0,15,131072,9,442737,0,0,0,0,0,0
 "Disrupt both the Broken Throne and Daggerspine Point Ritual Sites on Tier 6 with all 8 challenges active. 
 
@@ -13890,25 +13890,25 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Unlock Very Bouncy Mushrooms.","Showdown Unlock: Bouncy Mushrooms",,62944,-1,-1,0,15610,0,0,1245188,25,4554456,0,227976,0,0,0,0
 "Unlock the Grappling Hook.","Showdown Unlock: Grapple Skiffs",,62945,-1,-1,0,15610,0,0,1245188,26,4554456,0,227978,0,0,0,0
 "Unlock Naigtal Spores.","Showdown Unlock: Naigtal Spores",,62949,-1,-1,0,15610,0,0,1245188,27,4554456,0,227980,0,0,0,0
-"Win 25 Rated Battleground Blitz matches while at Elite rank during Midnight Season 2.","Strategist: Midnight Season 2","Reward: Pennant & Seasonal Character Title",62950,-1,-1,0,15270,0,0,2048,558,236543,0,227982,0,0,0,0
-"Earn the rank of Combatant II during Midnight Season 2.","Combatant II: Midnight Season 2",,62951,-1,-1,0,15270,0,0,2048,542,236543,0,227984,0,0,0,0
-"Earn the rank of Challenger II during Midnight Season 2.","Challenger II: Midnight Season 2",,62952,-1,-1,0,15270,0,0,2048,546,236543,0,227990,0,0,0,0
+"Win 25 Rated Battleground Blitz matches while at Elite rank during Midnight Season 2.","Strategist: Midnight Season 2","Reward: Pennant & Seasonal Character Title",62950,-1,-1,0,15270,0,0,14336,558,236543,0,227982,0,0,0,0
+"Earn the rank of Combatant II during Midnight Season 2.","Combatant II: Midnight Season 2",,62951,-1,-1,0,15270,0,0,14336,542,236543,0,227984,0,0,0,0
+"Earn the rank of Challenger II during Midnight Season 2.","Challenger II: Midnight Season 2",,62952,-1,-1,0,15270,0,0,14336,546,236543,0,227990,0,0,0,0
 "End Midnight Season 2 in the top 0.5% of the rated battleground ladder (requires 50 games won in Midnight Season 2).","Hero of the Alliance: Venomous",,62953,-1,1,0,15270,0,0,14336,485,236593,0,0,0,0,0,0
 "End Midnight Season 2 in the top 0.5% of the rated battleground ladder (requires 50 games won in Midnight Season 2).","Hero of the Horde: Venomous",,62954,-1,0,0,15270,0,0,14336,487,236629,0,0,0,0,0,0
 "Obtain the Venomous Gladiator's Goredrake from Midnight Season 2.","Venomous Gladiator's Goredrake",,62955,-1,-1,0,15269,1,0,145408,60,7388253,0,227996,0,0,0,0
 "Attain a Mythic+ Rating of at least 3400 during Midnight Season 1.","Midnight Keystone Myth: Season 1","Title: The Umbral Contender & Item: Timelost Saddle",63097,-1,-1,61258,15272,0,0,133120,189,648753,0,229048,0,0,0,0
 ,"Venomous Combatant",,63099,-1,0,0,15270,0,0,1179648,96,236538,275432,228525,0,0,0,0
-,"Venomous Combatant",,63103,-1,1,0,15270,0,0,1179648,97,236538,275433,228535,0,0,0,0
+,"Venomous Combatant",,63103,-1,1,0,15270,0,0,1179648,98,236538,275433,228535,0,0,0,0
 "End Midnight Mythic+ Season 1 with a Mythic+ Rating in the top 1% of all players in your region.","Umbral Champion: Midnight Season 1","Mount: Umbral Ashes",63104,-1,-1,0,15272,0,0,14336,191,618859,277192,0,0,0,0,0
 "Complete the Prey Journey before Midnight: Season 1 ends.","Big Prey Hunter (Season 1)",,63164,-1,-1,0,81,0,0,133120,2,7493985,0,228804,0,0,0,0
 "Earn 1000 honor in the Coiled Isle while in War Mode.","Tour of Duty: The Coiled Isle","Toy: Ula'tek's Sssacrificial Rain",63167,-1,-1,0,15283,0,10,131072,21,7578705,0,228806,0,0,0,0
 "Find and open all Sturdy Chests hidden in Gnarldor Isle.","Gnarldor Isle Discoveries",,63170,-1,-1,0,15571,0,5,131200,38,4203076,0,228815,0,0,0,0
 "Find and open all Sturdy Chests hidden in The Ring of Glory.","The Ring of Glory Discoveries",,63171,-1,-1,0,15571,0,5,131200,39,4203076,0,228820,0,0,0,0
 "Complete the following advanced studies for Lady Darkglen.","Advanced Ritual Site Studies",,63182,-1,-1,0,15608,0,10,0,51,458721,0,228853,0,0,0,0
-,"Rotmire (Raid Finder Sporefall)",,63233,1592,-1,0,15542,0,0,1,50,0,0,229007,0,0,0,0
-,"Rotmire (Normal Sporefall)",,63234,1592,-1,0,15542,0,0,1,51,0,0,229013,0,0,0,0
-,"Rotmire (Heroic Sporefall)",,63235,1592,-1,0,15542,0,0,1,52,0,0,229011,0,0,0,0
-,"Rotmire (Mythic Sporefall)",,63236,1592,-1,0,15542,0,0,1,53,0,0,229019,0,0,0,0
+,"Rotmire (Raid Finder Sporefall)",,63233,1592,-1,0,15542,0,0,1,53,0,0,229007,0,0,0,0
+,"Rotmire (Normal Sporefall)",,63234,1592,-1,0,15542,0,0,1,54,0,0,229013,0,0,0,0
+,"Rotmire (Heroic Sporefall)",,63235,1592,-1,0,15542,0,0,1,55,0,0,229011,0,0,0,0
+,"Rotmire (Mythic Sporefall)",,63236,1592,-1,0,15542,0,0,1,56,0,0,229019,0,0,0,0
 "Defeat Rotmire in Sporefall on any difficulty.",Rotmire,,63237,1592,-1,0,15566,0,10,131072,31,7852823,0,229023,0,0,0,0
 "Defeat Rotmire in Sporefall on Heroic difficulty.","Heroic: Rotmire",,63240,1592,-1,0,15566,0,10,131072,32,7852823,0,229025,0,0,0,0
 "Defeat Rotmire in Sporefall on Mythic difficulty.","Mythic: Rotmire",,63241,1592,-1,0,15566,0,10,131072,33,7852823,0,229027,0,0,0,0
@@ -13930,7 +13930,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maximus for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
 "Defeat all of the rare creatures found on the Coiled Isle.","Coiled to Strike","Decor Reward: Amani Forge",63358,-1,-1,0,15553,0,10,132096,18,132211,0,229657,0,0,0,0
 "Discover the hidden treasures across the Coiled Isle.","Treasures of the Coiled Isle","Mount: Auriferous Venomfang",63359,-1,-1,0,15553,0,10,131072,26,7956752,275656,229674,0,0,0,0
-"Defeat 300 Curse Surges on the Coiled Isle.",Cursebreaker,"Title: The Cursebreaker",63381,-1,-1,0,15553,0,10,131072,42,5764919,0,229949,0,0,0,0
+"Defeat 150 Curse Surges on the Coiled Isle.",Cursebreaker,"Title: The Cursebreaker",63381,-1,-1,0,15553,0,10,131072,42,5764919,0,229949,0,0,0,0
 "Become a mother on the Coiled Isle.","It's Definitely Something",,63382,-1,-1,0,15553,0,5,131072,43,136182,0,229813,0,0,0,0
 "Complete the introduction quest lines for Naigtal and Val.","Into the Stars",,63383,-1,-1,0,15610,0,5,0,32,2065615,0,229858,0,0,0,0
 "Complete the following quests on Val and Naigtal.","Prepared for a Showdown",,63384,-1,-1,0,15610,0,5,0,33,132594,0,229865,0,0,0,0
@@ -14081,3 +14081,4 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Win 100 matches of Training Grounds Arena.","Arena Exercise",,63697,-1,-1,63696,15575,0,5,131072,9,236655,0,232596,0,0,0,0
 "Win 250 matches of Training Grounds Arena.","Arena Exercise",,63698,-1,-1,63697,15575,0,5,131072,10,236655,0,232598,0,0,0,0
 "Win Training Grounds Arena in 4 different arenas.","World Wide Trainer",,63699,-1,-1,0,15575,0,5,131072,11,132181,0,232600,0,0,0,0
+"Reach rank 20 with Zul'jarra's Forces.","Zul'jarra's Forces Champion",,63838,-1,-1,0,15600,0,10,131072,8,7903180,0,233621,0,0,0,0

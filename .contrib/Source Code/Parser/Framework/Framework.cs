@@ -2046,27 +2046,36 @@ namespace ATT
                     }
                     sublocale[key] = englishValue;
 
-                    // Clean up inherited values. (mx inherits from es and tw inherits from cn
-                    if (localeData.TryGetValue("mx", out string mxValue) && localeData.TryGetValue("es", out string esValue) && mxValue == esValue)
-                    {
-                        localeData.Remove("mx");
-                    }
-                    if (localeData.TryGetValue("tw", out string twValue) && localeData.TryGetValue("cn", out string cnValue) && twValue == cnValue)
-                    {
-                        localeData.Remove("tw");
-                    }
                     foreach (var locale in localeData)
                     {
                         if (locale.Key == "en") continue;
 
                         string localizedValue = locale.Value.ToString();
-                        if (!localizedValue.Contains(englishValue))
+                        if (localizedValue != englishValue)
                         {
                             if (!localizationData.TryGetValue(locale.Key, out sublocale))
                             {
                                 localizationData[locale.Key] = sublocale = new Dictionary<T, string>();
                             }
-                            sublocale[key] = localizedValue;
+                            // Clean up inherited values. (mx inherits from es and tw inherits from cn so don't include in the export data
+                            switch (locale.Key)
+                            {
+                                case "mx":
+                                    if (!localeData.TryGetValue("es", out string esValue) || localizedValue != esValue)
+                                    {
+                                        sublocale[key] = localizedValue;
+                                    }
+                                    break;
+                                case "tw":
+                                    if (!localeData.TryGetValue("cn", out string cnValue) || localizedValue != cnValue)
+                                    {
+                                        sublocale[key] = localizedValue;
+                                    }
+                                    break;
+                                default:
+                                    sublocale[key] = localizedValue;
+                                    break;
+                            }
                         }
                     }
                 }
@@ -2738,7 +2747,11 @@ namespace ATT
                     var keys = OBJECTS_WITH_REFERENCES.Keys.ToList();
                     keys.Sort();
                     int localeCount = SUPPORTED_LOCALES.Count();
-                    int retryLocaleThreshold = Config["DoRetryObjectDBMissingThreshold"] ?? localeCount;
+                    int retryLocaleThreshold = Config["DoRetryObjectDBMissingThreshold"];
+                    if (retryLocaleThreshold == 0)
+                    {
+                        retryLocaleThreshold = 999;
+                    }
                     retryLocaleThreshold = localeCount - retryLocaleThreshold;
                     bool objectIsOk = false;
                     foreach (var key in keys)
@@ -2751,7 +2764,7 @@ namespace ATT
                             if (objectData.TryGetValue("text", out var textObj) && textObj is Dictionary<string, object> textLocales)
                             {
                                 if (textLocales.TryGetValue("en", out string enText)
-                                && (IsExportStringRawAPI(enText) || IsExportStringVerbatim(enText)))
+                                    && (IsExportStringRawAPI(enText) || IsExportStringVerbatim(enText)))
                                 {
                                     objectIsOk = true;
                                     // clear out other locale keys since 'en' default is automatic for all locales
@@ -2760,7 +2773,7 @@ namespace ATT
                                         textLocales.Remove(locale);
                                     }
                                 }
-                                else if (!string.IsNullOrWhiteSpace(enText) && (retryLocaleThreshold <= 0 || textLocales.Count > retryLocaleThreshold))
+                                else if (!string.IsNullOrWhiteSpace(enText) && (retryLocaleThreshold <= 0 || textLocales.Count >= retryLocaleThreshold))
                                 {
                                     objectIsOk = true;
                                 }
@@ -3462,7 +3475,8 @@ namespace ATT
                                 localeBuilder.AppendLine("for key,value in pairs({");
                                 foreach (var key in keys)
                                 {
-                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name)
+                                        && (!localizationForTextByKey.TryGetValue(key, out string enName) || name != enName))
                                     {
                                         ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                     }

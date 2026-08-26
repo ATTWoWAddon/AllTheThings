@@ -402,6 +402,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		}),
 		ach(62872, {	-- Midnight Season 2: Serpent Scion
 			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+			["groups"] = { i(274707) },	-- Crystallized Venomblight Manaflux
 		}),
 		ach(63473, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 }, }, {	-- Sssensational!
 			i(279997),	-- Insidious Venomstone (CI!)

@@ -13,22 +13,24 @@ FOULSPORE_CAVERN = createHeader({
 	readable = "Foulspore Cavern",
 	icon = 134116,
 	text = {
-		-- #if AFTER 7.3.0
-		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..]] .. WOWAPI_GetSpellName(251097) .. [[..")"]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_DESOLACE22.." (Orange Path)"]],
-		-- #endif
+		en =
+			-- #if AFTER 7.3.0
+			[[~DUNGEON_FLOOR_DESOLACE22.." ("..]] .. WOWAPI_GetSpellName(251097) .. [[..")"]],
+			-- #else
+			[[~DUNGEON_FLOOR_DESOLACE22.." (Orange Path)"]],
+			-- #endif
 	},
 });
 WICKED_GROTTO = createHeader({
 	readable = "The Wicked Grotto",
 	icon = 134075,
 	text = {
-		-- #if AFTER 7.3.0
-		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..]] .. WOWAPI_GetSpellName(251095) .. [[..")"]],
-		-- #else
-		en = [[~DUNGEON_FLOOR_DESOLACE21.." (Purple Path)"]],
-		-- #endif
+		en =
+			-- #if AFTER 7.3.0
+			[[~DUNGEON_FLOOR_DESOLACE21.." ("..]] .. WOWAPI_GetSpellName(251095) .. [[..")"]],
+			-- #else
+			[[~DUNGEON_FLOOR_DESOLACE21.." (Purple Path)"]],
+			-- #endif
 	},
 });
 

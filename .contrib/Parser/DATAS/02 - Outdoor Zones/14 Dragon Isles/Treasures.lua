@@ -19,10 +19,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				{ 49.7, 63.9, THE_AZURE_SPAN },
 				{ 51.3, 60.8, THE_AZURE_SPAN },
 			},
-			["sym"] = {{"select","itemID",
-				201442,	-- Primal Revenant's Frostblade
-				201443,	-- Primal Revenant's Icewall
-			}},
+			["groups"] = {
+				i(201442),	-- Primal Revenant's Frostblade
+				i(201443),	-- Primal Revenant's Icewall
+			},
 		}),
 		-- Appears to be a rare spawn of a Magic Bound Chest, not reliable to farm/list
 		-- o(377540, {	-- Ice Bound Chest
