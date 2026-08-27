@@ -398,10 +398,11 @@ WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 });
 
 root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
+	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_6 } }, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
 		["groups"] = {
 			n(QUESTS, {
+				-- #if NOT ANYCLASSIC
 				q(8547, {	-- Welcome! (Blood Elf)
 					["provider"] = { "i", 20938 },	-- Falconwing Square [Wrath+] / Sunstrider Isle Gift Voucher
 					["timeline"] = { ADDED_2_0_1 },
@@ -459,7 +460,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					["races"] = { UNDEAD },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
 				}),
-				-- #if ANYCLASSIC
+				-- #else
 				q(91888, {	-- A Special Delivery
 					["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 },
 					["description"] = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
@@ -492,13 +493,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					},
 					["groups"] = {
 						ach(662, {	-- Collector's Edition: Mini-Diablo
-							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 						ach(663, {	-- Collector's Edition: Panda
-							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 						ach(664, {	-- Collector's Edition: Zergling
-							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+							["timeline"] = { ADDED_3_0_2 },
 						}),
 						i(13584, {	-- Mini Diablo (PET!)
 							["timeline"] = { ADDED_1_11_1 },
@@ -513,6 +514,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				}),
 				-- #endif
 			}),
+			-- #if NOT ANYCLASSIC
 			n(REWARDS, {
 				["description"] = "Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",
 				["sourceQuests"] = {
@@ -532,13 +534,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				},
 				["groups"] = {
 					ach(662, {	-- Collector's Edition: Mini-Diablo
-						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(663, {	-- Collector's Edition: Panda
-						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(664, {	-- Collector's Edition: Zergling
-						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(13584, {	-- Mini Diablo (PET!)
 						["timeline"] = { ADDED_1_11_1 },
@@ -551,15 +553,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					}),
 				},
 			}),
+			-- #endif
 		},
 	})),
-
 	-- #if NOT ANYCLASSIC
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, {
+	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["groups"] = {
 			ach(665, {	-- Collector's Edition: Netherwhelp
-				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(25535),	-- Netherwhelp (PET!)
 			euONLY(i(30360, {	-- Lurky (PET!)
@@ -569,7 +571,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 	-- #else
 	q(63865, {	-- A Special Thank
-		["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 },
+		["timeline"] = { ADDED_2_5_1, REMOVED_3_4_0 },
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 		["coords"] = {
