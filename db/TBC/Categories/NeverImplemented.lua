@@ -189,7 +189,9 @@ exp(4929),
 exp(1231,{
 crit(1439,{achID=852,id=1})}),
 exp(4690),
-exp(4644)})}),
+exp(4644)}),
+x(2,{
+exp(3957)})}),
 h(-31,{
 x(1,{
 h(-232,{
@@ -246,6 +248,7 @@ faction(551),
 faction(550),
 faction(40),
 faction(62),
+faction(1041),
 faction(31),
 faction(65),
 faction(575),
