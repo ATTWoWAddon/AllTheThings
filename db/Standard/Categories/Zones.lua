@@ -5716,7 +5716,7 @@ n(8363,{awp=20005,coords={
 [88]={{40.6,64}}},r=1,g={
 r(26897,{isLimited=1,itemID=21948,requireSkill=755,skillID=2524})}}),
 n(3022,{coords={
-[88]={{49.6,49.8}}},sym={{"select","itemID",2527,2535}}}),
+[88]={{49.6,49.8}}},r=1,sym={{"select","itemID",2527,2535}}}),
 n(3023,{coords={
 [88]={{51.8,54.6}}},r=1,sym={{"select","itemID",6526,6523,6525,6524}}}),
 n(3092,{coords={
@@ -27502,7 +27502,7 @@ s(5049,13896,{f=2,loc=42}),
 s(5051,13898,{f=2,loc=42}),
 s(5050,13897,{f=2,loc=42})}}),
 n(4570,{coords={
-[90]={{69.8,27.4}}},sym={{"select","itemID",2527,2535}}}),
+[90]={{69.8,27.4}}},r=1,sym={{"select","itemID",2527,2535}}}),
 n(4554,{coords={
 [90]={{69.7,44.8}}},description="Walks around the Trade Quarter, upper level.",r=1,g={
 i(4607,{f=55,lvl=11,spellID=1127}),
@@ -67959,7 +67959,7 @@ q(49558,{awp=70305,coords={
 [103]={{55.5,47.9}},
 [125]={{25.9,43.1},{37.8,63.8},{47.8,41.2}}},isBreadcrumb=1,lvl=15,nextQuests={30079},providers={{"o",206111},{"o",206294},{"o",207320},{"o",207321},{"o",207322},{"o",208316}},r=2}),
 q(30376,{coords={
-[418]={{41.6,46.3}}},isBreadcrumb=1,lvl=15,nextQuests={30622},qgs={59719},sourceQuests={29990,30117,30174,30273}}),
+[418]={{41.6,46.3}}},description="This quest is reportedly bugged and is not always offered. However, turning in either version of 'Warn Stoneplow' also completes this quest.",isBreadcrumb=1,lvl=15,nextQuests={30622},qgs={59719},sourceQuests={29990,30117,30174,30273}}),
 q(30348,{coords={
 [418]={{70.7,28.4}}},lvl=15,qgs={58745},r=2,sourceQuests={30347,30349,30351},g={
 crit(19357,{achID=6535,id=2,r=2}),
@@ -71987,7 +71987,7 @@ n(66291,{coords={
 q(31152,{coords={
 [371]={{30.8,34}}},lvl=10,qgs={63217},r=1,sourceQuests={31134}}),
 q(29755,{coords={
-[371]={{43.8,12.4}}},lvl=10,providers={{"o",214903}},sourceQuests={29754},g={
+[371]={{43.8,12.4}}},description="If you greatly overlevel MoP content, you might need to use the toy Soft Foam Sword or Whole-Body Shrinka.",lvl=10,providers={{"o",214903}},sourceQuests={29754},g={
 s(40600,80695,{b=1,f=4,loc=41}),
 s(40601,80696,{b=1,f=5,loc=41}),
 s(40602,80697,{b=1,f=6,loc=41}),
@@ -72022,7 +72022,7 @@ o(215133,{coords={
 o(215134,{coords={
 [371]={{43.5,87.5}}}})}}),
 q(31978,{coords={
-[371]={{31.9,13.2}}},lvl=10,qgs={66662},r=1,sourceQuests={31769},g={
+[371]={{31.9,13.2}}},description="This Horde quest is now completable as Alliance, be ware it requires visiting the hostile Honeydew Village.",lvl=10,qgs={66662},sourceQuests={31769},g={
 o(215695,{coords={
 [371]={{32.2,13.3}}}})}}),
 q(31772,{coords={
@@ -72591,7 +72591,8 @@ crit(21055,{achID=7439,id=8}),
 crit(65473,{achID=19993,awp=100207,e=437,id=4,rwp=110002,u=2})}}),
 n(66937,{coords={
 [371]={{59.6,96}}},g={
-i(90167,{b=1,spellID=131582})}}),
+i(90167,{b=1,spellID=131582}),
+i(90174,{f=55})}}),
 n(66932,{coords={
 [371]={{59.3,36.4}}},g={
 i(90166,{b=1,spellID=131582})}}),
@@ -72828,6 +72829,7 @@ s(41234,81619,{b=1,f=4,loc=47,lvl=32}),
 s(41225,81610,{b=1,f=4,loc=46,lvl=32}),
 s(41280,81680,{b=1,f=23,lvl=32})}})}),
 h(-63,{
+i(82392,{crs={54557,59084},f=55,spellID=114060}),
 i(89682,{b=1,coords={
 [371]={{27.6,59.6}}},crs={58895},lvl=10,spellID=130678}),
 s(45237,87522,{f=5,loc=43,lvl=30}),
@@ -76728,7 +76730,7 @@ q(29874,{coords={
 q(29875,{coords={
 [376]={{84,21.1}}},isBreadcrumb=1,lvl=15,qgs={56110},r=1}),
 q(29873,{coords={
-[376]={{84,21.1}}},isBreadcrumb=1,lvl=15,nextQuests={30079},qgs={56110}}),
+[376]={{84,21.1}}},description="This quest is not obtainable while having Hero's Call:-/Warchief's Command: Karasang Wilds! in the quest log. However, it can be picked up after completing said quest.",isBreadcrumb=1,lvl=15,nextQuests={30079},qgs={56110}}),
 q(30074,{lvl=15,qgs={56133},sourceQuests={30073}}),
 q(29944,{coords={
 [376]={{68.9,43.2}}},lvl=15,qgs={56133},sourceQuests={29919},g={
@@ -76944,7 +76946,7 @@ q(30627,{coords={
 [376]={{17.9,55.7}}},lvl=15,qgs={59856},sourceQuests={30626},g={
 ach(7502)}}),
 q(30086,{coords={
-[376]={{84,21.2}}},isBreadcrumb=1,lvl=15,qgs={56110}}),
+[376]={{84,21.2}}},isBreadcrumb=1,lvl=15,qgs={56110},sourceQuests={29877,29908}}),
 q(30622,{coords={
 [376]={{19.5,56.9}}},lvl=15,qgs={56720},sourceQuests={29990,30117,30241,30273,30360,30376}}),
 q(29946,{coords={
@@ -76961,7 +76963,7 @@ q(30185,{coords={
 [376]={{16.1,82.6}}},lvl=15,qgs={58422},sourceQuests={30182,30184,32038},g={
 i(79059)}}),
 q(29990,{coords={
-[376]={{18.1,31}}},lvl=15,qgs={56111},sourceQuests={29989},g={
+[376]={{18.1,31}}},description="This quest ends your adventure in this zone for now, and you are required to complete the Karasang Wilds storyline in order to unlock the last part of the story.",lvl=15,qgs={56111},sourceQuests={29989},g={
 crit(18827,{achID=6301,id=5}),
 crit(67237,{achID=19884,awp=100207,e=437,id=6,rwp=110002,u=2})}}),
 q(29984,{coords={
@@ -164521,7 +164523,11 @@ m(2537,{awp=120000,icon=7488399,lore="Quel'Thalas is a forested area in northern
 m(2393,{awp=120001,icon=135761,isRaid=1,lore="Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",maps={2443},g={
 flt(101,{
 p(4912,{b=1,coords={
-[2393]={{28.7,75.6},{29,81.4},{31.8,81.2},{32.4,75.4}}},crs={254885},itemID=258660,npcID=254885,spellID=1263739})}),
+[2393]={{28.7,75.6},{29,81.4},{31.8,81.2},{32.4,75.4}}},crs={254885},itemID=258660,npcID=254885,spellID=1263739}),
+n(273760,{awp=120100,coords={
+[2393]={{28.8,46.7},{51.3,53.8},{58.3,41.9}}},description="Interact with to remove stacks of Barrier Integrity while dodging arcane swirls, after 100 removed stacks, interact with to get the pet. Despawns and reappears elsewhere after a minute, multiple people can participate.",g={
+n(273762,{
+p(5164,{itemID=282417,npcID=273775,spellID=1313813})})}})}),
 h(-30,{
 exp(16634,{collectible=false,coords={
 [2393]={{57.1,63.4}}}}),

@@ -275,6 +275,14 @@ n(160372,{description="Can be found in Moroes' room, on the right side of the lo
 i(173777,{b=1,spellID=312275})}}),
 o(9999921,{description="After you have all the meats collected, head back to the audience area of the Opera Hall. To orient yourself in the room, you want to have your back to the stage.\n\nYou will be placing each meat relative to two very tiny piles of kibble on the left side of the room (again, while faced away from the stage). You will probably need to zoom in to see them. Each tile on the floor represents a box in a 12-by-12 grid.\n\n|cff413f43 00|r = Empty cell\n|cff4db62c 00|r = Pile of Kibble\n|cffeea016 00|r = Fishy Bits\n|cffeee116 00|r = Juicy Drumstick\n|cff16ceee 00|r = Meaty Morsel\n|cffce16ee 00|r = Marbled Steak\n|cff9e5ced 00|r = Slathered Rib\n\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00|r|cffeee116 00|r|cff413f43 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00|r|cff9e5ced 00|r|cff413f43 00|r|cffeea016 00|r|cff413f43 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00|r|cff16ceee 00|r|cff413f43 00 00 00 00 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00|r|cffeea016 00|r|cff413f43 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00|r|cffeee116 00|r|cff413f43 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n\nIf you have placed all the meats properly, Jenafur will spawn as soon as you finish. You can use |cFFFFFFFF/tar Jenafur|r to find her in the room, and then all you have to do is walk over and pet her for her to be added to your collection.\n"}),
 p(2795,{npcID=159783})}})}}),
+ah(161479,{awp=80001,type="i",g={
+i(161344,{description="These are a World Drop in any zone and can be bought from the Auction House. Once you collect 20, combine them.",maps={862,863,864,895,896,942},spellID=275121}),
+i(161345,{b=1,coords={
+[942]={{73.5,23.6}}},cost={{"i",161344,20}},description="Use this on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley. The cave entrance is behind a waterfall.",lvl=50,questID=53428,spellID=277122}),
+n(140474,{coords={
+[942]={{73.5,23.6}}},cost={{"i",161345,1}},g={
+mnt(275623,{b=1,itemID=161479,lvl=45,questID=53429}),
+i(163929,{b=1,questID=53477,spellID=280636})}})}}),
 ah(279213,{awp=80001,description="You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.",displayID=86805,modelScale=0.8,type="s",g={
 h(-47,{maps={896},g={
 p(2411,{b=1,cost={{"i",163796,1},{"i",163790,1},{"i",163791,1},{"i",163789,1}},itemID=163497,npcID=143189,spellID=279213})}}),

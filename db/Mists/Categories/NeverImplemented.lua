@@ -2746,7 +2746,9 @@ exp(4690,{
 crit(14096,{achID=845,awp=30002,id=5}),
 crit(14096,{achID=4827,awp=40003,id=7})}),
 exp(4644,{awp=30002,g={
-crit(14094,{achID=845,id=3})}})})}),
+crit(14094,{achID=845,id=3})}})}),
+x(2,{
+exp(3957)})}),
 h(-31,{
 x(1,{
 h(-232,{
@@ -2803,6 +2805,7 @@ faction(551),
 faction(550),
 faction(40),
 faction(62),
+faction(1041),
 faction(31),
 faction(65),
 faction(575),

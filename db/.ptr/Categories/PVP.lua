@@ -45890,11 +45890,13 @@ crit(25790,{achID=9105,id=3,providers={{"s",173446}},pvp=1}),
 crit(25791,{achID=9105,id=4,providers={{"s",173445}},pvp=1})}})}}),
 h(-31,{pvp=1,g={
 ah(1681,{pvp=1,r=1,type="fa",g={
-faction(1681,{pvp=1}),
+faction(1681,{pvp=1,g={
+crit(25342,{achID=9477,id=5,r=1})}}),
 ach(9473,{pvp=1,g={
 title(285,{pvp=1,u=2})}})}}),
 ah(1682,{pvp=1,r=2,type="fa",g={
-faction(1682,{pvp=1}),
+faction(1682,{pvp=1,g={
+crit(25341,{achID=9478,id=5,r=2})}}),
 ach(9474,{pvp=1,g={
 title(286,{pvp=1,u=2})}})}})}}),
 h(-45,{pvp=1,g={
@@ -47649,7 +47651,16 @@ ach(61954,{pvp=1}),
 ach(61955,{pvp=1}),
 ach(61956,{pvp=1}),
 ach(62108,{pvp=1}),
-ach(62109,{pvp=1})}}),
+ach(62109,{pvp=1}),
+ach(63695,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63696,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63697,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63698,{awp=120100,providers={{"s",1313428}},pvp=1}),
+ach(63699,{awp=120100,pvp=1,g={
+crit(117047,{achID=63699,id=1,providers={{"s",1313432}},pvp=1}),
+crit(117048,{achID=63699,id=2,providers={{"s",1313432}},pvp=1}),
+crit(117049,{achID=63699,id=3,providers={{"s",1313432}},pvp=1}),
+crit(117051,{achID=63699,id=4,providers={{"s",1313432}},pvp=1})}})}}),
 m(93,{icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
 h(-12,{pvp=1,g={
 ach(1169,{pvp=1,g={
@@ -49082,16 +49093,16 @@ h(-487,{pvp=1,g={
 i(163825,{b=1,pvp=1}),
 i(170539,{awp=80200,b=1,pvp=1})}}),
 h(-45,{pvp=1,g={
-q(58274,{awp=80300,description="Granted upon killing 10 Horde players without dying after you became an Assassin.",lvl=80,pvp=1,r=2,rwp=90001,u=2,g={
-title(414,{pvp=1,u=2}),
-toy(173951,{b=1,pvp=1,u=2}),
-i(174020,{pvp=1,spellID=313172,u=2}),
-crit(47765,{achID=14191,id=1,pvp=1,u=2})}}),
-q(58273,{awp=80300,description="Granted upon killing 10 Alliance players without dying after you became an Assassin.",lvl=80,pvp=1,r=1,rwp=90001,u=2,g={
-title(414,{pvp=1,u=2}),
-toy(173951,{b=1,pvp=1,u=2}),
-i(174020,{pvp=1,spellID=313172,u=2}),
-crit(47766,{achID=14191,id=1,pvp=1,u=2})}}),
+q(58274,{awp=120100,description="Granted upon killing 10 Horde players without dying after you became an Assassin.",lvl=80,pvp=1,r=2,g={
+title(414,{pvp=1}),
+toy(173951,{b=1,pvp=1}),
+i(174020,{pvp=1,spellID=313172}),
+crit(47765,{achID=14191,id=1,pvp=1,rwp=90001,u=2})}}),
+q(58273,{awp=120100,description="Granted upon killing 10 Alliance players without dying after you became an Assassin.",lvl=80,pvp=1,r=1,g={
+title(414,{pvp=1}),
+toy(173951,{b=1,pvp=1}),
+i(174020,{pvp=1,spellID=313172}),
+crit(47766,{achID=14191,id=1,pvp=1,rwp=90001,u=2})}}),
 q(52786,{lvl=10,pvp=1,r=1,rwp=100002,u=2,g={
 title(376,{pvp=1,r=1,u=2}),
 crit(40938,{achID=12568,awp=80001,id=1,pvp=1,r=1})}}),

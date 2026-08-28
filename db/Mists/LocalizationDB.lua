@@ -1754,7 +1754,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=16,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026}),
@@ -1806,7 +1805,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=7,["monthDay"]=25,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -5813,7 +5813,7 @@ local ObjectNames = {
 	[307307] = "Broken Barrel",
 	[307330] = "Captain's Footlocker",
 	[375544] = "Wooden Figurine",
-	[100000000] = "Archaeologist's Cart",
+	[100000000] = "Sentinax Portal",
 	[100000001] = "Unlit Torch",
 } _.ObjectNames = ObjectNames
 local ObjectIcons = {
@@ -9313,7 +9313,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 3 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20507,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[1901] = {
@@ -9321,7 +9321,7 @@ local phases = {
 		description = "|cFFAAFFAAThis became available with the Netherwing Faction during TBC Classic.|r",
 		lore = "|cFFFFAAAAIf the Netherwing Faction is available on your server, simply turn this on.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20507,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[1902] = {
@@ -9514,7 +9514,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753981200,
+		release = 1753984800,
 		state = 2,
 	},
 	[5002] = {
@@ -9523,7 +9523,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755018000,
+		release = 1755021600,
 		state = 2,
 	},
 	[5003] = {
@@ -9532,7 +9532,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755795600,
+		release = 1755799200,
 		state = 2,
 	},
 	[5004] = {
@@ -9541,7 +9541,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756227600,
+		release = 1756231200,
 		state = 2,
 	},
 	[5005] = {
@@ -9550,7 +9550,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756832400,
+		release = 1756836000,
 		state = 2,
 	},
 	[5006] = {
@@ -9559,7 +9559,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757005200,
+		release = 1757008800,
 		state = 2,
 	},
 	[5007] = {
@@ -9568,7 +9568,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758042000,
+		release = 1758045600,
 		state = 2,
 	},
 	[51] = {
@@ -9618,7 +9618,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781629200,
+		release = 1781632800,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -10631,6 +10631,7 @@ L.MAIN_LIST_REQUIRES_REFRESH = "[Öffne die Hauptliste um den Fortschritt zu akt
 L.MAIN_ONLY = "Nur Hauptcharakter"
 L.MAXIMUM_STANDING_WITH_FACTION = "Erfordert einen niedrigeren Ruf als %s bei %s."
 L.MIN_MAX_STANDING_WITH_FACTION = "Erfordert einen Ruf zwischen %s und %s bei %s."
+L.MINI_LIST = "Mini Liste"
 L.MINIMAP_BUTTON_CHECKBOX = "Zeig den Minimap Knopf"
 L.MINIMAP_LABEL = "Minimap Knopf"
 L.MINIMAP_SLIDER = "Minimap Knopf Größe"
@@ -13701,6 +13702,7 @@ L.MAIN_LIST_SLIDER_LABEL = "Échelle de la liste principale"
 L.MARKS_OF_HONOR_DESC = "Les Marques d’honneur doivent être affichées dans une fenêtre contextuelle pour afficher tout le contenu 'normal'.\n(Tapez '/att' dans le chat puis faites " .. SHIFT_KEY_TEXT .. " + clic pour pour afficher l’objet)\n\n|cFFfe040fAprès l’achat et l’utilisation d’un ensemble, une nouvelle connexion et une actualisation forcée d’ATT (dans cet ordre)\npeuvent être nécessaires pour enregistrer correctement tous les objets.|r"
 L.MAXIMUM_STANDING_WITH_FACTION = "Il faut avoir obtenu une note inférieure à %s avec %s."
 L.MIN_MAX_STANDING_WITH_FACTION = "Il faut avoir obtenu une note entre %s et %s avec %s."
+L.MINI_LIST = "Mini Liste"
 L.MINI_LIST_DESC = "Cette liste contient les informations pertinentes pour la zone actuelle, qui ne peuvent être trouvées dans la base de données d’ATT."
 L.MINI_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle des mini-listes.\n\nDéfaut : 1"
 L.MINI_LIST_SLIDER_LABEL = "Échelle de la mini-liste"
@@ -13760,6 +13762,7 @@ L.PROFILE_INITIALIZE_TOOLTIP = "Cela permettra à vos variables sauvegardées po
 L.PROFILE_NEW_TOOLTIP = "Créer un nouveau profil qui sera utilisé par le personnage actuel."
 L.PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n" .. SHIFT_KEY_TEXT .. " + clic pour accéder au profil sélectionné"
 L.PROFILES_PAGE = "Profils"
+L.PROGRESS = "Progression"
 L.PROVIDERS = "Fournisseur(s)"
 L.QUEST_DESC = "Cliquez sur ce bouton pour sélectionner une quête aléatoire basé sur ce qu’il vous manque."
 L.QUEST_GIVER = "Donneur de quête"
@@ -13771,7 +13774,7 @@ L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Activer cette option pour inclure spécifiqu
 L.RACE_LOCKED = "Race bloquée"
 L.RAID_DESC = "Cliquez sur ce bouton pour sélectionner un raid aléatoire basé sur ce qu’il vous manque."
 L.RAID_DIFF = "Difficulté du raid"
-L.RECENTLY_MADE_OBTAINABLE_PT2 = [[|cFFFF0000"|cFFFF0000La meilleure source d’information ! Merci|r]]
+L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000La meilleure source d’information ! Merci|r"
 L.RECIPES_CHECKBOX = "Recettes"
 L.REFRESHING_COLLECTION = "Mise à jour de la collection ..."
 L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s"
@@ -14901,6 +14904,26 @@ localize(ObjectNames, {
 	[182355] = "Armes de Kil'sorrau",
 	[182392] = "Panneau d'affichage de Garadar",
 	[182393] = "Panneau d'affichage de Telaar",
+	[182484] = "Prison des Cogneguerre",
+	[182486] = "Prison des Cogneguerre",
+	[182487] = "Prison des Cogneguerre",
+	[182488] = "Prison des Cogneguerre",
+	[182489] = "Prison des Cogneguerre",
+	[182490] = "Prison des Cogneguerre",
+	[182491] = "Prison des Cogneguerre",
+	[182492] = "Prison des Cogneguerre",
+	[182493] = "Prison des Cogneguerre",
+	[182494] = "Prison des Cogneguerre",
+	[182495] = "Prison des Cogneguerre",
+	[182496] = "Prison des Cogneguerre",
+	[182497] = "Prison des Cogneguerre",
+	[182498] = "Prison des Cogneguerre",
+	[182499] = "Prison des Cogneguerre",
+	[182500] = "Prison des Cogneguerre",
+	[182501] = "Prison des Cogneguerre",
+	[182502] = "Prison des Cogneguerre",
+	[182503] = "Prison des Cogneguerre",
+	[182504] = "Prison des Cogneguerre",
 	[182520] = "Caisse de fournitures de Telaar",
 	[182532] = "Glyphes du monument de Nazzivus",
 	[182541] = "Cône d'olemba",
@@ -16650,6 +16673,7 @@ L.EXPANSION_FILTER_LABEL = "Filtra per Espansione"
 L.EXPANSION_FILTER_TOOLTIP = "Attiva/disattiva la visibilità del contenuto di %s"
 L.EXPANSION_FILTERS_PAGE = "Filtri Espansione"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Seguaci & Avventurieri"
+L.ILLUSION = "Illusione"
 L.ILLUSION_ID = "ID dell’Illusione"
 L.ILLUSIONS_CHECKBOX = "Illusioni d'Incantamento"
 L.NEW_VERSION_FLAVORS = {"perché AllTheThings ha fame."}
@@ -16726,25 +16750,52 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[32] = "Cassa Sprofondata",
+	[33] = "Cassa Chiusa",
 	[34] = "Vecchio Fiasco",
 	[35] = "Scrigno del Capitano",
 	[36] = "Barile Spezzato",
 	[47] = "Ricercato!",
+	[52] = "La Caduta di Gurubashi",
+	[54] = "La Tomba dell'Imperatore",
 	[55] = "Corpo Smangiucchiato",
 	[56] = "Cadavere di Rolf",
 	[57] = "Tavoletta Mistica degli Scalporosso",
+	[58] = "Gri'lek il Nomade",
 	[60] = "Ricercato: Gath'ilzogg",
 	[61] = "Tomba Rovinata",
 	[68] = "Manifesto dei Ricercati",
+	[76] = "Giara Vuota",
+	[119] = "Cassa di Abercrombie",
 	[256] = "Ricercato!",
 	[257] = "Barile Sospetto",
 	[259] = "Barile Mezzo Sepolto",
 	[261] = "Cassa Danneggiata",
+	[263] = "Rifornimenti di Kurzen",
+	[264] = "Rifornimenti di Kurzen",
 	[269] = "Barile Custodito di Birra del Tuono",
+	[271] = "Casse della Lega dei Minatori",
+	[272] = "Cassa della Carne di MacGrann",
+	[276] = "Cestino di Erbaluce",
+	[290] = "Guardaroba di Ciglioarcuato",
+	[321] = "Lacrima di Tilloa",
+	[324] = "Vena Piccola di Torio",
+	[331] = "Terreno Smosso",
+	[333] = "Reliquia Antica",
+	[334] = "Reliquia Antica",
+	[375] = "Zucca di Tirisfal",
+	[759] = "Sorgente Sacra",
+	[1166] = "Cassa di Alexston",
 	[1557] = "Tavolo da Pranzo di Lillith",
+	[1560] = "Forziere del Magazzino",
 	[1561] = "Cassa Sigillata",
+	[1562] = "Forziere del Maresciallo Haggard",
 	[1586] = "Cassa di Candele",
 	[1609] = "Catapulta delle Fauci di Drago",
+	[1617] = "Fogliargenta",
+	[1618] = "Sbocciapace",
+	[1619] = "Bulboterro",
+	[1620] = "Magareale",
+	[1621] = "Grandespina",
 	[1627] = "Cassa di Dalaran",
 	[1673] = "Vilpigna",
 	[1740] = "Documenti della Lega dei Tagliagole",
@@ -18046,6 +18097,7 @@ localize(ObjectNames, {
 	[204015] = "Corriere di Rivoluna",
 	[204016] = "Diario Segreto",
 	[204017] = "Propaganda Misteriosa",
+	[204042] = "Detonatore",
 	[204050] = "Progetti dell'Ira del Mare",
 	[204087] = "Bottino dei Mosh'ogg",
 	[204091] = "Samoflago a Induzione",
@@ -18787,6 +18839,7 @@ localize(ObjectNames, {
 	[218428] = "Mokkan del Concilio e del Re",
 	[218429] = "Mokkan delle Ombre dei Loa",
 	[218430] = "Mokkan del Profeta Oscuro Zul",
+	[218431] = "Mokkan di Lei Shen",
 	[218432] = "Mokkan della Montagna Sacra",
 	[218433] = "Mokkan del Prezzo dell'Unità",
 	[218434] = "Mokkan del Problema dei Pandaren",
@@ -19021,6 +19074,7 @@ L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s, o Comple
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s o Exterminador|r"
 L.PLAYER_TITLE_THE_HUGGLER = "|cffF58CBA%s o Abraçador|r"
 L.PLEASE_REPORT_MESSAGE = "Por favor reporte isso no Discord do ATT em #classic-errors! Obrigado!"
+L.PROGRESS = "Progresso"
 L.RACE_LOCKED = "Travado por raça"
 L.RECIPES_CHECKBOX = "Receitas"
 L.REPORT_TIP = "\n(" .. CTRL_KEY_TEXT .. "+C para copiar o texto completo do report para sua área de transferência)"
@@ -21057,6 +21111,7 @@ localize(ObjectNames, {
 	[208545] = "Montículo de Cinzas",
 	[208549] = "Pilha Vodu",
 	[208550] = "Pilha Vodu",
+	[208551] = "Luciferna",
 	[208576] = "Meteorito de Obsídio",
 	[208587] = "Meteorito de Obsídio",
 	[208588] = "Cajado de Druida da Chama",
@@ -23413,6 +23468,26 @@ localize(ObjectNames, {
 	[182355] = "Оружие Вечной Скорби",
 	[182392] = "Гарадарская доска объявлений",
 	[182393] = "Телаарская доска объявлений",
+	[182484] = "Тюрьма Боевого Молота",
+	[182486] = "Тюрьма Боевого Молота",
+	[182487] = "Тюрьма Боевого Молота",
+	[182488] = "Тюрьма Боевого Молота",
+	[182489] = "Тюрьма Боевого Молота",
+	[182490] = "Тюрьма Боевого Молота",
+	[182491] = "Тюрьма Боевого Молота",
+	[182492] = "Тюрьма Боевого Молота",
+	[182493] = "Тюрьма Боевого Молота",
+	[182494] = "Тюрьма Боевого Молота",
+	[182495] = "Тюрьма Боевого Молота",
+	[182496] = "Тюрьма Боевого Молота",
+	[182497] = "Тюрьма Боевого Молота",
+	[182498] = "Тюрьма Боевого Молота",
+	[182499] = "Тюрьма Боевого Молота",
+	[182500] = "Тюрьма Боевого Молота",
+	[182501] = "Тюрьма Боевого Молота",
+	[182502] = "Тюрьма Боевого Молота",
+	[182503] = "Тюрьма Боевого Молота",
+	[182504] = "Тюрьма Боевого Молота",
 	[182520] = "Телаарский ящик с припасами",
 	[182532] = "Иероглифы монумента Наззивуса",
 	[182541] = "Шишка олембы",
@@ -28004,6 +28079,7 @@ L.CONFIRM_DELETE = "\n \n¿Estás seguro de que quieres eliminar esto?"
 L.CONTAINS = "Contiene:"
 L.CONTAINS_SLIDER_TOOLTIP = "Usa esto para personalizar el número de cosas resumidas a mostrar en la ventana emergente.\n\nPor defecto: 25"
 L.COORDINATES = "Coordenadas"
+L.COST = "Coste"
 L.COST_DESC = "Esto contiene el desglose visual de lo que se requiere para obtener o comprar esta cosa."
 L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeDivisa|r"
 L.COST_TOTAL = "Coste total"
@@ -28189,6 +28265,7 @@ L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] fueron añadidos a tu colección."
 L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] fueron añadidos a tu colección. No encontrado en la base de datos. Por favor reportarlo al Discord de ATT!"
 L.ITEM_ID_REMOVED = "%s (%d) fue eliminado de tu colección."
 L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] fueron eliminados de tu colección."
+L.ITEM_LEVEL = "iLvl (Nivel promedio de objetos)"
 L.ITEM_STRING = "Cadena de texto de objetos"
 L.KEYBINDINGS_TEXT = "Puedes definir atajos de teclado para ATT en las opciones del juego."
 L.KNOWN_BY = "Conocido por %s"
@@ -28204,6 +28281,7 @@ L.LIMITED_QUANTITY = "Tiene una cantidad limitada puede que no esté presente si
 L.LINKED_ACCOUNT_TOOLTIP = "La cuenta de este personaje se sincronizará automáticamente cuando entres al mundo. Para un juego óptimo, deberías añadir a la lista de permitidos un personaje banco y probablemente no tu personaje principal para no afectar a la jugabilidad con tu personaje mientras se sincronizan los datos de cuentas."
 L.LINKED_ACCOUNTS = "Cuentas conectadas"
 L.LINKED_ACCOUNTS_TOOLTIP = "Muestra todas las cuentas conectadas que hayas definido hasta ahora."
+L.LIST = "Mini Lista"
 L.LOCATIONS_SLIDER_TOOLTIP = "Usa esto para personalizar el numero de ubicaciones de fuentes a mostrar en la ventana emergente.\n\nNOTA: También mostrará \"X\" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5"
 L.LOCK_CRITERIA_FACTION_FORMAT = "%s con %s (Actual: %s)"
 L.LOCK_CRITERIA_FACTION_LABEL = "Reputación con facción"
@@ -28235,6 +28313,7 @@ L.MAXIMUM_STANDING_WITH_FACTION = "Requiere un nivel menor de %s con %s."
 L.MERCH_BUTTON_LABEL = "Mercancía"
 L.MERCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\n¡Aquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!"
 L.MIN_MAX_STANDING_WITH_FACTION = "Requiere un nivel entre %s y %s con %s."
+L.MINI_LIST = "Mini Lista"
 L.MINI_LIST_DESC = "Esta lista contiene información relevante sobre la zona actual en la que estás, que no puede encontrarse en la base de datos de ATT"
 L.MINI_LIST_SCALE_TOOLTIP = "Usa esto para personalizar la escala de todas las Mini Listas.\n\nPor defecto: 1"
 L.MINI_LIST_SLIDER_LABEL = "Escala Mini Listas"
@@ -28848,6 +28927,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-365] = "Stratholme está dividida en dos lados.\n\nEste lado se conoce comúnmente como el lado \"Vivo\" o \"Escarlata\", que ha sido tomado por la Cruzada Escarlata.",
 	[-366] = "Stratholme está dividida en dos lados.\n\nEste lado se conoce comúnmente como el lado de los 'Muertos' o del 'Azote', que el Azote ha tomado.",
 	[-474] = "La Inestabilidad elemental fue un evento mundial que anunció el Cataclismo. El evento culminó con el ataque de los elementales a Ventormenta, Orgrimmar, Forjaz y Cima del Trueno. Los jugadores que derrotaran a estos elementales y liberaran a los ciudadanos atrapados en toda su ciudad obtenían acceso a dos encuentros especiales con jefes.",
+	[-482] = "La Apertura del Portal Oscuro fue un evento único que tuvo lugar entre el pre-parche y el lanzamiento de TBC, y posteriormente fue eliminado. El tabardo es el único del juego con el gesto cachas incorporado y es muy codiciado por los coleccionistas. El Alto Señor Kruul aparecía aleatoriamente fuera de las principales ciudades y zonas de nivel máximo de la época.",
 	[-483] = "Además de que todos los jugadores de un reino trabajaran para completar el Esfuerzo de Guerra, un jugador tenía que crear el El cetro del Mar de Dunas, una tarea muy difícil que solo podía ser resuelta por la mejor hermandad de un servidor cuando se añadió la cadena de misiones. Una vez finalizado el esfuerzo de guerra y llegados los ejércitos de la Alianza y la Horda a Silithus, el El cetro del Mar de Dunas podía usarse en el Gong del Escarabajo. Al hacerlo, se abría Ahn'Qiraj. El primer jugador en golpear el Gong del Escarabajo en cada servidor era recompensado con el título de Señor del Escarabajo (en Burning Crusade, ¡el título no estará disponible en Classic!) y la montura Cristal resonador negro Qiraji. Cualquiera que lo siguiera en las siguientes 10 horas también era recompensado con el título.\n\nAunque todavía es posible completar la cadena de misiones del El cetro del Mar de Dunas después de que se hayan abierto las puertas en tu servidor, hacerlo no otorgará ni el Cristal resonador negro Qiraji ni el título de Señor del Escarabajo.",
 	[-530] = "Estas recompensas estaban disponibles para todos aquellos que compraron una Edición de Coleccionista de Diablo III.",
 	[-531] = "Estas recompensas estaban disponibles para todos aquellos que compraron una Edición de Coleccionista de la expansion Reaper of Souls para Diablo III.",
@@ -29795,6 +29875,26 @@ localize(ObjectNames, {
 	[182355] = "Armamento de Mata'penas",
 	[182392] = "Tablón de anuncios de Garadar",
 	[182393] = "Tablón de anuncios de Telaar",
+	[182484] = "Prisión de Mazo de Guerra",
+	[182486] = "Prisión de Mazo de Guerra",
+	[182487] = "Prisión de Mazo de Guerra",
+	[182488] = "Prisión de Mazo de Guerra",
+	[182489] = "Prisión de Mazo de Guerra",
+	[182490] = "Prisión de Mazo de Guerra",
+	[182491] = "Prisión de Mazo de Guerra",
+	[182492] = "Prisión de Mazo de Guerra",
+	[182493] = "Prisión de Mazo de Guerra",
+	[182494] = "Prisión de Mazo de Guerra",
+	[182495] = "Prisión de Mazo de Guerra",
+	[182496] = "Prisión de Mazo de Guerra",
+	[182497] = "Prisión de Mazo de Guerra",
+	[182498] = "Prisión de Mazo de Guerra",
+	[182499] = "Prisión de Mazo de Guerra",
+	[182500] = "Prisión de Mazo de Guerra",
+	[182501] = "Prisión de Mazo de Guerra",
+	[182502] = "Prisión de Mazo de Guerra",
+	[182503] = "Prisión de Mazo de Guerra",
+	[182504] = "Prisión de Mazo de Guerra",
 	[182520] = "Cajón de suministros de Telaar",
 	[182532] = "Glifos del monumento de Nazzivus",
 	[182541] = "Cono de olemba",
@@ -31484,7 +31584,7 @@ for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "Fogata de l
 for key,value in pairs({
 	[1] = "Nunca implementado [NYI]",
 	[2] = "Eliminado del juego",
-	[3] = "Saldo de Battle.net",
+	[3] = "Dinero Real",
 	[4] = "PvP Elite/Gladiador",
 	[5] = "No aprendible",
 	[7] = "Puesto comercial",
@@ -31511,6 +31611,7 @@ for key,value in pairs({
 	[2103] = "Armería",
 	[2104] = "Yunque",
 	[2105] = "Puerto",
+	[2106] = "Monumento",
 	[2107] = "Laboratorio de alquimia",
 	[30] = "Fase 1",
 	[31] = "Fase 2",
@@ -31606,14 +31707,14 @@ for key,value in pairs({
 	[1602] = "|cFFFFAAAASi el evento JcJ de mundo está disponible, simplemente actívelo.|r",
 	[1603] = "|cFFFFAAAASi la Era Clásica ha comenzado, simplemente active esto.|r",
 	[1604] = "|cFFFFAAAASi la Temporada de Maestría está activa en tu servidor, simplemente actíva esto.|r",
-	[17] = "|cFFFFAAAAIncluía Karazhan, Guarida de Magtheridon y la Guarida de Gruul.|r",
-	[18] = "|cFFFFAAAAIncluía Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.|r",
+	[17] = "|cFFFFAAAAIncluye Karazhan, Guarida de Magtheridon y la Guarida de Gruul.|r",
+	[18] = "|cFFFFAAAAIncluye Caverna Santuario Serpiente, El castillo de la tempestad: El ojo, y la forma de vuelo rápido del druida.|r",
 	[1801] = "|cFFFFAAAASi la facción Ogri'la está disponible en tu servidor, simplemente activa esta opción.|r",
 	[1802] = "|cFFFFAAAASi la facción Guardia del cielo está disponible en tu servidor, simplemente activa esta opción.|r",
 	[19] = "|cFFFFAAAAIncluye la Cima del Hyjal y el Templo Oscuro, además de la gran mayoría del contenido de maximo nivel diario/de facción del juego.|r",
 	[1901] = "|cFFFFAAAASi la facción Ala abisal está disponible en tu servidor, simplemente activa esta opción.|r",
 	[1902] = "|cFFFFAAAADebido a la exclusividad de las Gujas de Guerra y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los sudorosos, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el conflicto entre hermandades.\n\nEste filtro se activará por defecto después del pre-parche de Wrath.\n\nSi ya tienes la prioridad de Gujas, simplemente actívala.|r",
-	[20] = "|cFFFFAAAAIncluía Zul'Aman.|r",
+	[20] = "|cFFFFAAAAIncluye Zul'Aman.|r",
 	[21] = "|cFFFFAAAAIncluye la Meseta del fuente del Sol y contenido diario de la Isla de Quel'Danas.|r",
 	[2101] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el Santuario y ha comenzado a trabajar en la Armería y el Portal en tu servidor, simplemente activa esta opción.|r",
 	[2102] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el Portal en tu servidor, simplemente activa esta opción.|r",
@@ -31622,22 +31723,22 @@ for key,value in pairs({
 	[2105] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el puerto en tu servidor, simplemente activa esta opción.|r",
 	[2106] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el monumento en tu servidor, simplemente activa esta opción.|r",
 	[2107] = "|cFFFFAAAASi la Ofensiva Sol Devastado ya ha desbloqueado el laboratorio de alquimia en tu servidor, simplemente activa esta opción.|r",
-	[30] = "|cFFFFAAAAIncluía Naxxramas, Sagrario obsidiana, y El ojo de la eternidad.|r",
-	[31] = "|cFFFFAAAAIncluía Ulduar.|r",
+	[30] = "|cFFFFAAAAIncluye Naxxramas, Sagrario obsidiana, y El ojo de la eternidad.|r",
+	[31] = "|cFFFFAAAAIncluye Ulduar.|r",
 	[3101] = "|cFFFFAAAADebido a la exclusividad del Martillo y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi ya tienes la prioridad del Martillo, simplemente actívala.|r",
-	[32] = "|cFFFFAAAAIncluía la Prueba del cruzado|r",
-	[33] = "|cFFFFAAAAIncluía La ciudadela corona de hielo|r",
+	[32] = "|cFFFFAAAAIncluye la Prueba del cruzado|r",
+	[33] = "|cFFFFAAAAIncluye La ciudadela corona de hielo|r",
 	[3301] = "|cFFFFAAAADebido a la exclusividad de Agonía de Sombras y a que la prioridad no siempre se otorga a los coleccionistas en lugar de a los que sudan, Crieve decidió que era apropiado por ahora proporcionar un filtro para reducir el drama de hermandad.\n\nEste filtro se activará por defecto después del pre-parche de Cataclysm.\n\nSi de hecho tienes la prioridad de Agonía de Sombras, simplemente actívala.|r",
-	[3302] = "|cFFFFAAAAIncluía El sagrario rubí.|r",
-	[40] = "|cFFFFAAAAIncluía Bastión del Crepúsculo, Trono de los Cuatro Vientos y Descenso de Alanegra.|r",
-	[4001] = "|cFFFFAAAAIncluía las mazmorras heroicas Zul'Aman y Zul'Gurub.|r",
-	[4002] = "|cFFFFAAAAIncluía las diarias del Frente de magma.|r",
-	[41] = "|cFFFFAAAAIncluía Las tierras de fuego|r",
-	[42] = "|cFFFFAAAAIncluía El alma del dragón|r",
+	[3302] = "|cFFFFAAAAIncluye El sagrario rubí.|r",
+	[40] = "|cFFFFAAAAIncluye Bastión del Crepúsculo, Trono de los Cuatro Vientos y Descenso de Alanegra.|r",
+	[4001] = "|cFFFFAAAAIncluye las mazmorras heroicas Zul'Aman y Zul'Gurub.|r",
+	[4002] = "|cFFFFAAAAIncluye las diarias del Frente de magma.|r",
+	[41] = "|cFFFFAAAAIncluye Las tierras de fuego|r",
+	[42] = "|cFFFFAAAAIncluye El alma del dragón|r",
 	[50] = "|cFFFFAAAAIncluido la gesta de la Caída de Theramore de nivel 85 y el sistema de talentos actualizado.|r",
-	[52] = "|cFFFFAAAAIncluía el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.|r",
+	[52] = "|cFFFFAAAAIncluye el Trono del Trueno, la Isla de los Gigantes y la Isla del Trueno.|r",
 	[53] = "|cFFFFAAAAIncluia gestas heroicas, Campo de batalla: Gesta Los Baldíos, Cañón del Céfiro y la arena La cima del Tigre.|r",
-	[54] = "|cFFFFAAAAIncluía Asedio de Orgrimmar y la Isla intemporal.|r",
+	[54] = "|cFFFFAAAAIncluye Asedio de Orgrimmar y la Isla intemporal.|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
@@ -31690,6 +31791,7 @@ L.COLORS_ICONS = "Iconos y Colores"
 L.COMMANDS_PART_2 = "|cffFFFFFFComo ejemplo, usar |cff00FF98/att achievement:9547|r te mostrará algo increíble.|r"
 L.COMPLETIONIST_MODE = "+Origenes"
 L.CONDUIT_ID = "ID de conducto"
+L.COST = "Costo"
 L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeMoneda|r"
 L.COST_TOTAL = "Costo total"
 L.CREATURE_ID = "ID de Criatura"
@@ -31930,6 +32032,13 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-723] = "Aumentan los informes de invasiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
 	[-736] = "Esta sección está para promociones del mundo real que introdujeron contenido extremadamente raro en el juego antes de que algunos de ellos aparecieran en la tienda del juego.",
 })
+localize(ObjectNames, {
+	[76] = "Un tarro vacío",
+	[290] = "Guardarropa de Cejade",
+	[1560] = "Cofre de almacenamiento",
+	[1562] = "Cofre del mariscal Haggard",
+	[185890] = "Reliquia de ápices",
+})
 for key,value in pairs({
 	[2] = "Removido del juego",
 	[7] = "Puesto de venta",
@@ -31941,7 +32050,7 @@ for key,value in pairs({
 })
 do phases[key].description = value; end
 for key,value in pairs({
-	[4001] = "|cFFFFAAAAIncluía los calabozos heroicos Zul'Aman y Zul'Gurub.|r",
+	[4001] = "|cFFFFAAAAIncluye los calabozos heroicos Zul'Aman y Zul'Gurub.|r",
 })
 do phases[key].lore = value; end
 end
@@ -33075,6 +33184,7 @@ localize(ObjectNames, {
 	[269] = "被看守着的酒桶",
 	[270] = "无人守卫的雷酒桶",
 	[271] = "矿工联盟的储物箱",
+	[272] = "马克格拉恩的储肉柜",
 	[276] = "微光草篮",
 	[287] = "书呆子赫罗德的档案",
 	[288] = "书呆子赫罗德的保险箱",
@@ -35314,7 +35424,7 @@ localize(ObjectNames, {
 	[307277] = "旧酒壶",
 	[307307] = "破损的桶",
 	[307330] = "船长的手提箱",
-	[100000000] = "考古学家的车",
+	[100000000] = "森提纳克斯号传送门",
 	[100000001] = "未点燃的火把",
 })
 for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "联盟篝火" end
@@ -36309,6 +36419,40 @@ localize(L.HEADER_LORE, {
 localize(ObjectNames, {
 	[31] = "老舊獅子雕像",
 	[32] = "沉沒的箱子",
+	[47] = "懸賞！",
+	[55] = "被吃掉一半的屍體",
+	[56] = "羅爾夫的屍體",
+	[57] = "血頂知識石板",
+	[58] = "漫遊者格里雷克",
+	[60] = "懸賞:加塞爾佐格",
+	[61] = "破舊的墳墓",
+	[119] = "亞伯克隆比的木箱",
+	[256] = "懸賞！",
+	[257] = "可疑的桶子",
+	[261] = "破損的木箱",
+	[263] = "庫爾森補給品",
+	[264] = "庫爾森補給品",
+	[269] = "被看守著的雷霆麥芽酒桶",
+	[271] = "礦工聯盟的木箱",
+	[272] = "馬克格拉恩的儲肉櫃",
+	[276] = "微光草籃",
+	[290] = "法布隆的櫃子",
+	[321] = "蒂羅亞之淚",
+	[324] = "瑟銀礦脈",
+	[331] = "鬆軟的土壤",
+	[333] = "古代聖物",
+	[334] = "古代聖物",
+	[375] = "提里斯法南瓜",
+	[759] = "聖泉",
+	[1166] = "艾力克斯頓的箱子",
+	[1557] = "莉莉絲的餐桌",
+	[1560] = "儲藏箱",
+	[1561] = "密封的木箱",
+	[1562] = "哈迦德的箱子",
+	[1586] = "蠟燭木箱",
+	[1609] = "龍喉投石車",
+	[1617] = "銀葉草",
+	[1618] = "寧神花",
 	[21581] = "第二次獸人戰爭的結局",
 	[21582] = "跨越黑暗之門",
 	[21583] = "卡多雷和永恆之井",
@@ -36353,6 +36497,7 @@ localize(ObjectNames, {
 	[179697] = "競技場寶箱",
 	[180456] = "次級風石",
 	[180461] = "風石",
+	[185890] = "頂尖聖物",
 	[195074] = "麥利薩爾被偷走的袋子",
 	[201609] = "一桶塞拉摩淡啤酒",
 	[201610] = "一桶風暴戰錘烈酒",

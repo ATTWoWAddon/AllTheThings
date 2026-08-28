@@ -813,7 +813,7 @@ s(7449,18715,{b=1,c={3},description="Go back to Felwood after having completed a
 q(7508,{c={1,2},maps={234},qgs={14368},qis={18513},rwp=30300,sourceQuests={7507},u=2}),
 q(7509,{c={1,2},cost={{"i",18488,1}},crs={10184},maps={234},qgs={14368},qis={18492},rwp=30300,sourceQuests={7508},u=2,g={
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},spellID=22906,u=2}),
-i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",u=2}),
+i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",u=2}),
 s(7284,18348,{b=1,c={1,2},f=25,lvl=25,spellID=265255,u=2})}}),
 q(7497,{coords={
 [84]={{67,85}}},learnedAt=300,lvl=30,qgs={14394},r=2,requireSkill=165,sourceQuests={7496,24428},g={
@@ -2082,7 +2082,7 @@ i(21200,{b=1,f=52,lvl=25})}}),
 q(8756,{altQuests={8751,8761},coords={
 [75]={{41.6,49.8}}},lvl=30,minReputation={910,42000},qgs={15192},qis={21203},sourceQuests={8755},g={
 i(21205,{b=1,f=52,lvl=25})}}),
-q(8802,{lvl=30,qgs={15379},qis={21221},sourceQuests={8801},g={
+q(8802,{lvl=30,qgs={15379},qss={21221},sourceQuests={8801},g={
 i(21712,{b=1,f=51,lvl=25}),
 s(8607,21710,{b=1,f=3,lvl=25}),
 i(21709,{b=1,f=52,lvl=25})}})}),
@@ -3074,8 +3074,7 @@ q(28401,{awp=40003,c={7},coords={
 s(33096,65640,{b=1,f=6,loc=40,r=2}),
 s(33078,65622,{b=1,f=6,loc=40,r=2})}}),
 q(28465,{awp=40003,c={7},coords={
-[85]={{73.6,43.3}}},lvl=20,qgs={168628},r=1,sourceQuests={28301},g={
-i(64312,{spellID=90292}),
+[85]={{73.6,43.3}}},lvl=20,qgs={168628},qis={64312},r=1,sourceQuests={28301},g={
 s(33099,65643,{b=1,f=6,loc=40,r=1}),
 s(33086,65630,{b=1,f=6,loc=40,r=1})}}),
 q(28399,{awp=40003,c={9},coords={
@@ -3553,7 +3552,7 @@ q(168,{coords={
 [84]={{70.2,40.8}}},qgs={656},qis={1894},r=2,rwp=40003,u=2,g={
 s(554,2036,{b=1,f=5,loc=44,u=2}),
 s(555,2037,{b=1,f=6,loc=47,u=2})}}),
-q(44930,{awp=70100,c={4},description="|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw. An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to questgiver to turn it in.",lvl=10,qgs={115818},qis={142349},g={
+q(44930,{awp=70100,c={4},description="|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw. An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to the questgiver to turn it in.",lvl=10,qgs={115818},qis={142349},g={
 en(142273,{b=1,c={4},lvl=13,questID=42778,spellID=229863,sym={{"select","sourceID",3951,3955,3954,3953,3952}},tmogSetID=167})}}),
 q(27848,{awp=40003,crs={47626},lvl=7,qgs={46889},r=1,sourceQuests={27847},sqreq=0}),
 q(27847,{awp=40003,crs={43778},lvl=7,qgs={46902},r=1,sourceQuests={27844},sqreq=0}),
@@ -3976,7 +3975,7 @@ h(-356,{coords={
 h(-63,{
 i(18250,{awp=100105,b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351}})}),
 h(-45,{
-q(77194,{awp=100105,cost={{"i",18250,1}},description="This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel whitout lowering your reputation with the Bloodsail Buccaneers.",qgs={14338},repeatable=1,g={
+q(77194,{awp=100105,cost={{"i",18250,1}},description="This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel without lowering your reputation with the Bloodsail Buccaneers.",qgs={14338},repeatable=1,g={
 i(208028,{b=1,g={
 i(208031,{b=1,f=113}),
 r(22926,{itemID=18517,requireSkill=165,skillID=2532}),
@@ -4139,7 +4138,7 @@ crit(70566,{achID=40998,awp=110005,e=242,id=3}),
 crit(70566,{achID=41000,awp=110005,e=242,id=3})}}),
 d(24,{sym={{"sub","tw_instance",230}}})}})}}),
 inst(231,{coords={
-[30]={{30.1,74.6}}},description="Horde players can access Gnomeregan from the teleporter in Grom'gol Base Camp, Northen Stranglethorn.",mapID=226,maps={227,228,229},savedInstanceID=90,g={
+[30]={{30.1,74.6}}},description="Horde players can access Gnomeregan from the teleporter in Grom'gol Base Camp, Northern Stranglethorn.",mapID=226,maps={227,228,229},savedInstanceID=90,g={
 h(-63,{
 s(3325,9510,{crs={6228,6235,7079,7800},f=6,loc=47,lvl=11}),
 s(185348,5108,{crs={6212},f=5,loc=42,lvl=12}),
@@ -5375,7 +5374,7 @@ ach(6910,{u=2,g={
 cs(131231,{u=2})}})}})}}),
 inst(316,{coords={
 [19]={{69.2,24.9}}},maps={302,303,304,305,435,436,805},savedInstanceID=1004,g={
-ah(419654,{awp=100107,description="Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastary, Armory, Library.",type="s",g={
+ah(419654,{awp=100107,description="Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End, or bought from the Auction House.\n\nInteract with the keychain at the top of the stairs to get The Scarlet Key buff, which opens up all four old wings. This unlock is account-wide.\n\nFrom left to right: Graveyard, Monastery, Armory, Library.",type="s",g={
 h(-361,{
 h(-45,{
 q(26972,{awp=40003,crs={3983,4543},qgs={44728},r=2,rwp=50004,sourceQuests={26982},u=2,g={
@@ -5671,7 +5670,7 @@ ach(6913,{u=2,g={
 cs(131229,{u=2})}})}})}}),
 inst(246,{coords={
 [22]={{69.07,72.96}}},mapID=476,maps={477,478,479},savedInstanceID=1007,g={
-ah(18368,{description="With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spetral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candylit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",mapID=306,maps={307,308,309},sourceQuests={76249},type="a",g={
+ah(18368,{description="With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve\n\nHere is how to get started:\n\n1. Obtain 'Krastinov's Bag of Horrors' from the rare spawn Doctor Theolen Krastinov in Scholomance, Heroic difficulty. This step can be skipped if you are accompanied by someone who already have the toy.\n\n2. Defeat Darkmaster Gandling in Headmaster's Retreat and enter the upper level centre room.\n\n3. Find a pile of bones on the ground in the southeastern part of the room, and use the toy 'Krastinov's Bag of Horrors'.\n\n4. Eva Sarkhoff should now have spawned, but you cannot interact with her before you remove the toy visage/buff named 'Surgical Alterations'.\n\n5. Accept Eva Sarkhoof's quest and her Inert Spectral Essence. Loot Eva's Femur from the pile of bones.\n\n6. Walk back upstairs to The Viewing Room. There is two bookcases in the southwestern corner of the room. Eva's Journal can be found on a middle shelf on the backside of the left bookcase.\n\n7. Obtain the reagents 3x Dark Runes and 5x Essence of Undeath and use the Inert Spectral Essence. Equip the crafted trinket 'Spectral Essence'.\n\n8. Obtain candles from doing objectives around Caer Darrow (outside Scholomance):\n8.1 Loot 'The Deed to Andorhal' from inside Andorhal Townhall at 43.35, 69.3., and give it to Magistrate Marduke at 70.5, 74.0.\n8.2 Loot 'Bucket of Fountain Water' from the candlelit fountain at 68.9, 78.8., and give it to Joseph Dirte at 68.0, 74.8.\n8.3 Loot 'Trampled Doll' from the meatwagon in Darrowshire at 35.7, 83.5. (Eastern Plaguelands!), return to Caer Darrow and give it to Sammy at 69.15, 78.7.\n8.4 Loot 'The Road Ahead' from a wall inside old Corin's Crossing tavern  at 55.0, 64.0. (Eastern Plaguelands!), return to Caer Darrow and give it to Artist Renfray at 65.8, 75.4.\n8.5 Loot 'Undelivered Shipment of Smokes' from a wagon behind the fountain at King's Square in Stratholme, return to Caer Darrow and give it to Rory at 63.4, 75.5.\n\n9. Use Eva's Journal to begin the ritual at 69.7, 71.7., inside Caer Darrow keep/open world Scholomance.",mapID=306,maps={307,308,309},sourceQuests={76249},type="a",g={
 h(-12,{awp=100105,g={
 ach(18368,{maps={22,23,317},sourceQuests={76249}}),
 ach(18558),
@@ -5715,7 +5714,7 @@ o(176486,{u=2}),
 o(176487,{u=2})}}),
 q(5531,{coords={
 [23]={{81.73,57.83}}},qgs={11036},qis={13761},rwp=40003,sourceQuests={5522},u=2}),
-q(76257,{providers={{"i",206373}},g={
+q(76257,{qss={206373},g={
 i(12844,{b=2,factionID=529,repeatable=1,spellID=17047})}}),
 q(4771,{coords={
 [23]={{81.5,59.7}}},crs={10432},qgs={11035},qis={12368},rwp=40003,sourceQuests={5531},u=2,g={
@@ -7179,7 +7178,7 @@ h(-56,{
 o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
 o(123329,{
 i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",rwp=40100,spellID=9594,u=2})}),
-o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",g={
+o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",g={
 i(7671)}}),
 o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
 i(7669)}}),
@@ -7756,7 +7755,7 @@ s(12567,28587,{b=1,f=22,lvl=27}),
 s(12568,28588,{b=1,f=27,lvl=27}),
 s(12566,28586,{b=1,f=4,loc=40,lvl=27}),
 s(12565,28585,{b=1,f=4,loc=47,lvl=27,spellID=39937})}})}}),
-n(17225,{description="Nightbane is summoned by interacting with the object Blackened Urn, found 2/3rd through the Master's Terrace (from a clockwise direction).",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},g={
+n(17225,{description="Once you have completed the quest chain, you can summon him on the Master's Terrace by clicking on the Urn on the ground.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},g={
 s(12579,28604,{b=1,f=28,lvl=27}),
 s(12584,28611,{b=1,f=8,lvl=27}),
 s(12581,28606,{b=1,f=8,lvl=27}),
@@ -8198,7 +8197,7 @@ inst(750,{awp=20001,coords={
 h(-12,{
 ach(959,{maps={75},minReputation={990,42000}})}),
 h(-31,{
-faction(990,{maps={75}})}),
+faction(990,{description="Reputation is obtained from killing mobs in Mount Hyjal raid.\n\nProtip: Remain in the Alliance base when it becomes abandoned as an addtional wave of mobs will spawn. Addtional waves of mobs can be triggered by moving past the boundry of the base. This also applies for the Horde base.",maps={75}})}),
 ah(2575,{type="s",g={
 o(185557,{awp=20100,maps={329},requireSkill=186,g={
 i(23440,{awp=20001}),
@@ -9332,7 +9331,7 @@ ach(884,{providers={{"i",35513}}}),
 mnt(46628,{b=1,itemID=35513,lvl=10})}})}),
 d(24,{sym={{"sub","tw_instance",249}}})}}),
 inst(250,{awp=20001,coords={
-[108]={{39.63,57.67}}},lore="Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",mapID=272,savedInstanceID=557,g={
+[108]={{39.63,57.67}}},lore="Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spontaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",mapID=272,savedInstanceID=557,g={
 h(-45,{
 q(29583,{awp=40300,coords={
 [108]={{57.6,53.6}}},isBreadcrumb=1,lvl=15,qgs={21400},r=2}),
@@ -10922,7 +10921,7 @@ q(9719,{coords={
 i(28109,{b=1,f=53,spellID=33746}),
 i(28108,{b=1,f=53,spellID=33759})}})}),
 h(-63,{
-i(24246,{description="Drops commmonly from all Underbog mobs, and can be turned in to the NPCs named T'shu for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. T'shu can be found just inside the Underbog dungeon.",providers={{"o",183385}}})}),
+i(24246,{description="Drops commonly from all Underbog mobs, and can be turned in to the NPCs named T'shu for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. T'shu can be found just inside the Underbog dungeon.",providers={{"o",183385}}})}),
 d(1,{
 e(576,{npcID=17770,g={
 s(12036,27747,{b=1,f=34,lvl=27,modID=1}),
@@ -12715,7 +12714,7 @@ cq(38065,{awp=60100,b=1,itemID=122197,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollIt
 crit(27712,{achID=10015,id=2,r=2}),
 crit(27712,{achID=10016,id=2,r=1})}})}})})}}),
 ah(18372,{awp=100105,description="With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",type="a",g={
-ah(206473,{description="1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sweing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",type="i",g={
+ah(206473,{description="1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sewing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",type="i",g={
 prof(356,{
 i(206471,{b=1,description="Chance to be fished from any slime in Naxxramas.",requireSkill=356,sourceQuests={76263,76264,76265},spellID=413666,sqreq=1})}),
 e(1602,{npcID=15953,g={
@@ -12725,7 +12724,7 @@ o(403722,{description="Located in the second room of the Construct Quarter, by a
 i(206470,{b=1,spellID=413666})}})}),
 h(-55,{
 cq(76307,{b=1,cost={{"i",206472,1},{"i",206470,1},{"i",206471,1}},itemID=206473,sourceQuests={76263,76264,76265},spellID=413668,sqreq=1})})}}),
-ah(413989,{description="1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northen ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmah on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",type="s",g={
+ah(413989,{description="1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northern ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmash on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",type="s",g={
 n(206572,{sourceQuests={76390},g={
 i(206573,{b=1,cost={{"i",206576,3}},description="Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",f=55,spellID=413881,g={
 i(206609)}}),
@@ -12801,7 +12800,7 @@ q(77244,{cost={{"i",206375,5}},qgs={206572},repeatable=1,sourceQuests={76390},g=
 i(206576,{b=2})}}),
 q(77245,{cost={{"i",206374,50}},qgs={206572},repeatable=1,sourceQuests={76390},g={
 i(206576,{b=2})}})})}}),
-ah(413594,{description="1. Enter the Military Quarter and walk straigh into the end wall of the second room. On your right side is a cage containing Omarion's Second Handbook. Loot it and accept the quest.\n\n2. Get back to the central ring and use the portal to Eastern Plaguelands, and turn in the quest in Light's Hope Chapel. This will reward you with the ability to collect the missing recipes and buy then from Master Craftsman Omarion on an account-wide basis.\n\n3. Now, you still need to collect the lost pages and return them to Omarion. There are 16 double-pages to collect, and the respective pages have descriptions giving information about where to find them. The pages are somewhat in order:\n\nArachnid Quarter:\nPages 3 and 4 -> Pages 5 and 6 ->\nPages 1 and 2 -> Pages 7 and 8.\n\nConstruct Quarter:\nPages 9 and 10 = Pages 11 and 12 =\nPages 13 and 14 -> Pages 15 and 16.\n\nPlague Quarter:\nPages 17 and 18 -> Pages 19 and 20 ->\nPages 21 and 22 -> Pages 23 and 24\n\nMilitary Quarter:\nPages 29 and 30 -> Pages 31 and 32 ->\nPages 25 and 26 -> Pages 27 and 28\n\n4. Return to Master Craftsman Omarion with the lost pages and all his recipes will become available on an account-wide basis.",type="s",g={
+ah(413594,{description="1. Enter the Military Quarter and walk straight into the end wall of the second room. On your right side is a cage containing Omarion's Second Handbook. Loot it and accept the quest.\n\n2. Get back to the central ring and use the portal to Eastern Plaguelands, and turn in the quest in Light's Hope Chapel. This will reward you with the ability to collect the missing recipes and buy them from Master Craftsman Omarion on an account-wide basis.\n\n3. Now, you still need to collect the lost pages and return them to Omarion. There are 16 double-pages to collect, and the respective pages have descriptions giving information about where to find them. The pages are somewhat in order:\n\nArachnid Quarter:\nPages 3 and 4 -> Pages 5 and 6 ->\nPages 1 and 2 -> Pages 7 and 8.\n\nConstruct Quarter:\nPages 9 and 10 = Pages 11 and 12 =\nPages 13 and 14 -> Pages 15 and 16.\n\nPlague Quarter:\nPages 17 and 18 -> Pages 19 and 20 ->\nPages 21 and 22 -> Pages 23 and 24\n\nMilitary Quarter:\nPages 29 and 30 -> Pages 31 and 32 ->\nPages 25 and 26 -> Pages 27 and 28\n\n4. Return to Master Craftsman Omarion with the lost pages and all his recipes will become available on an account-wide basis.",type="s",g={
 o(403702,{description="Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",sourceQuests={76290},g={
 i(206450,{b=1,questID=76291,type="ihqt",g={
 crit(60649,{achID=18616,id=1})}})}}),
@@ -21308,7 +21307,7 @@ s(39849,78472,{b=1,f=21,lvl=32,spellID=109873}),
 s(39852,78475,{b=1,f=20,lvl=32,spellID=109855}),
 s(39856,78479,{b=1,f=25,lvl=32,spellID=109832}),
 s(39848,78471,{b=1,f=32,lvl=32,spellID=109859})}})}}),
-n(53879,{sharedDescription="For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in it's place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amangamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",g={
+n(53879,{sharedDescription="For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in its place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amalgamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",g={
 n(55891),
 n(55870)}})}}),
 inst(66,{awp=40003,coords={
@@ -21490,7 +21489,7 @@ s(37304,72824,{b=1,f=5,loc=42,lvl=32,modID=2}),
 s(37303,72823,{b=1,f=5,loc=40,lvl=32,modID=2})}})}),
 d(24,{sym={{"sub","tw_instance",184}}})}}),
 inst(71,{awp=40003,coords={
-[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,g={
+[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alexstrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,g={
 h(-45,{
 q(28854,{coords={
 [293]={{50,50}}},lvl=30,qgs={50387},g={
@@ -22323,13 +22322,13 @@ s(35486,69574,{b=1,f=5,loc=41,lvl=32,modID=2})}})})}}),
 inst(76,{awp=40100,coords={
 [50]={{72,32.9}}},mapID=337,savedInstanceID=859,g={
 d(2,{
-ah(17366,{awp=100007,description="To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lays a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in it's place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the southfacing building entrances. Above the transmogifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",type="a",g={
+ah(17366,{awp=100007,description="To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lies a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in its place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the south-facing building entrances. Above the transmogrifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",type="a",g={
 h(-12,{
 ach(17367,{
 crit(58126,{achID=17367,providers={{"i",203743}}}),
 crit(58125,{achID=17367,providers={{"i",203742}}})}),
 ach(17366,{sourceQuests={74576}})}),
-ah(203757,{cost={{"i",203773,1},{"i",203772,1},{"i",203771,1},{"i",203770,1},{"i",203769,1},{"i",203768,1},{"i",203767,1},{"i",203766,1},{"i",203765,1}},description="To get started farming Gurubashi Tributes for recipes:\n\n1. Go to the site of the boss Cache of Madness.\n\n2. By the eastern wall is an altar. Here hangs Tablet of Madness, which teaches Alchemists with 300 skill points in classic alchemy how to create Gurubashi Mojo Madness.\n\n3. On the left side of the altar is an interactable brazier, which gives you the toy Brazier of Madness.\n\n4. The four main bosses Venoxis, Mandokir, Kilnara and Zanzil have piles of skull near them. Use the toy Blazier of Madness near one of these piles, and consume a Gurubashi Mojo Madness. This will transform you to a troll for one hour, and make you able to interact with the different piles of skulls to offer bijous for Gurubashi Tributes. The transformation will make you friendly to the mobs in the dungeon, so this should be done after killng the bosses.\n\n5. The different piles requires different bijous, and rewards 1-2 recipes and/or 3-7 coins. For more information see the header for Gurubashi Tribute.",type="i",g={
+ah(203757,{cost={{"i",203773,1},{"i",203772,1},{"i",203771,1},{"i",203770,1},{"i",203769,1},{"i",203768,1},{"i",203767,1},{"i",203766,1},{"i",203765,1}},description="To get started farming Gurubashi Tributes for recipes:\n\n1. Go to the site of the boss Cache of Madness.\n\n2. By the eastern wall is an altar. Here hangs Tablet of Madness, which teaches Alchemists with 300 skill points in classic alchemy how to create Gurubashi Mojo Madness.\n\n3. On the left side of the altar is an interactable brazier, which gives you the toy Brazier of Madness.\n\n4. The four main bosses Venoxis, Mandokir, Kilnara and Zanzil have piles of skull near them. Use the toy Brazier of Madness near one of these piles, and consume a Gurubashi Mojo Madness. This will transform you to a troll for one hour, and make you able to interact with the different piles of skulls to offer bijous for Gurubashi Tributes. The transformation will make you friendly to the mobs in the dungeon, so this should be done after killing the bosses.\n\n5. The different piles requires different bijous, and rewards 1-2 recipes and/or 3-7 coins. For more information see the header for Gurubashi Tribute.",type="i",g={
 i(203959,{b=1,description="Venoxis' available offerings: 2x Silver Bijou / 3x Green Bijou / 3x Gold Bijou. Coords: 51.5, 55.8 Behind the Boss\n\nMandokir's available offerings: 2x Bronze Bijou / 3x Red Bijou / 3x Gold Bijou. Coords: 60.8, 80.9 Right side of Boss\n\nKilnara's available offerings: 2x Orange Bijou / 3x Yellow Bijou / 3x Gold Bijou. Coords: 47.5, 22.1 Behind Boss at the wall\n\nZanzil's available offerings: 2x Purple Bijou / 3x Blue Bijou / 3x Gold Bijou. Coords: 30.4, 19.9 North side of the Boss room, at the left wall.",modID=2,g={
 r(402139,{itemID=203838,requireSkill=333,skillID=2494}),
 r(402150,{itemID=203847,requireSkill=165,skillID=2532}),
@@ -22413,7 +22412,7 @@ cs(28271,{c={8},itemID=22739,lvl=25})}}),
 i(19703),
 i(19698)}),
 prof(393,{
-i(19767,{crs={202341},description="Ancient Bats can be found on the following locations in Zul'Gurub:\n* Pack of 2 by crossroads between the first two bridges.\n* Pack of 2 behind a three just north down the path from the mentioned crossroad.\n* Pack of 3 between a wall and a hut on the eastern side of the second bridge.\n* Pack of 3 in the southwestern corner of Mandokir's Domain.\n* Pack of 2 in the northeastern corner of Mandokir's Domain."}),
+i(19767,{crs={202341},description="Ancient Bats can be found on the following locations in Zul'Gurub:\n* Pack of 2 by crossroads between the first two bridges.\n* Pack of 2 behind a tree just north down the path from the mentioned crossroad.\n* Pack of 3 between a wall and a hut on the eastern side of the second bridge.\n* Pack of 3 in the southwestern corner of Mandokir's Domain.\n* Pack of 2 in the northeastern corner of Mandokir's Domain."}),
 i(19768,{crs={202339},description="Ancient Tigers can be found on the following locations in Zul'Gurub:\n* Pack of 2 west of the stairs by Mortaxx.\n* Pack of 2 east of the stairs by Mortaxx.\n* Pack of 3 east of the inn.\n* Pack of 3 northwest of the inn.\n* Pack of 3 outside of the eastern outer wall of Temple of Bethekk."})})}),
 h(-45,{
 q(74696,{cost={{"i",19703,1},{"i",19702,1},{"i",19701,1}},qgs={143138},repeatable=1,g={
@@ -25678,7 +25677,7 @@ e(828,{npcID=69712,g={
 p(1202,{b=1,itemID=94835,npcID=70144,spellID=139148}),
 crit(22987,{achID=8070,id=3})}}),
 e(818,{npcID=68036,g={
-ah(212750,{awp=100205,cost={{"i",211949,1}},description="1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumus Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",type="i",g={
+ah(212750,{awp=100205,cost={{"i",211949,1}},description="1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumu's Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",type="i",g={
 o(420873,{awp=50200,g={
 cq(79359,{awp=100205,b=1,c={9},itemID=212750,lvl=11,spellID=432954})}})}}),
 i(211949,{awp=100205,b=1,c={9},f=55,spellID=430921}),
@@ -28096,7 +28095,7 @@ s(56638,105146,{b=1,f=22,lvl=35,spellID=147057,u=2})}})}})}}),
 d(17,{awp=60002,coords={
 [390]={{83,30.6}}},crs={80633},g={
 h(-19,{
-i(105714,{awp=50400,b=1,crs={71152,71153,71154,71155,71156,71157,71158,71160,71161,71454,71466,71504,71515,71529,71858,71859,71865,71889,72249},description="Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid. If you are 101+ then you will need to seek out each item based on their original sources. This change occured in Patch 8.0.1",modID=4,rwp=80001,u=2}),
+i(105714,{awp=50400,b=1,crs={71152,71153,71154,71155,71156,71157,71158,71160,71161,71454,71466,71504,71515,71529,71858,71859,71865,71889,72249},description="Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid. If you are 101+ then you will need to seek out each item based on their original sources. This change occurred in Patch 8.0.1",modID=4,rwp=80001,u=2}),
 i(104275,{awp=50400,b=1,description="This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Siege of Orgrimmar.",modID=4,rwp=80001,sym={{"select","itemID",44984,34535,10360,8491,54436,8485,10394,46398,8496,8486,10392,10822,48114,44970,44973,67282,44974,44982,29960,64403,43698,29953,8492,48116,48118,45002,44980,48120,8487,35504,44721,48124,48126,8495,45606,69992,8490,8488,44965,8499,69991,44971,8489}},u=2,g={
 s(57146,105824,{b=1,f=3,lvl=35,modID=4,u=2}),
 s(57138,105816,{b=1,f=3,lvl=35,modID=4,u=2}),
@@ -32482,10 +32481,7 @@ crit(27742,{achID=10015,id=6,r=2}),
 crit(27742,{achID=10016,id=6,r=1})}})}})}}),
 d(14,{
 h(-45,{
-q(37029,{altQuests={37030,37031},description="The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",lvl=40,qgs={87225},g={
-i(118382),
-i(118383),
-i(118384)}}),
+q(37029,{altQuests={37030,37031},description="The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",lvl=40,qgs={87225},qis={118382,118383,118384}}),
 q(37553,{c={2,5,9},lvl=40,providers={{"i",120277}},r=2,repeatable=1,g={
 i(120215,{b=2,c={2,5,9},lvl=40,spellID=178216,sym={{"select","itemID",115568,115586,115563},{"where","modID",3}}}),
 i(120216,{b=2,c={2,5,9},lvl=40,spellID=178220,sym={{"select","itemID",115565,115589,115561},{"where","modID",3}}}),
@@ -32767,10 +32763,7 @@ i(119316,{b=2,c={4,6,8,11},lvl=40,r=1}),
 crit(27634,{achID=9838})}})}),
 d(15,{
 h(-45,{
-q(37030,{altQuests={37031},description="The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=40,qgs={87225},g={
-i(118387),
-i(118386),
-i(118385)}}),
+q(37030,{altQuests={37031},description="The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=40,qgs={87225},qis={118385,118386,118387}}),
 q(37557,{c={2,5,9},lvl=40,providers={{"i",120280}},r=2,repeatable=1,g={
 i(120230,{b=2,c={2,5,9},lvl=40,spellID=178224,sym={{"select","itemID",115568,115586,115563},{"where","modID",5}}}),
 i(120231,{b=2,c={2,5,9},lvl=40,spellID=178223,sym={{"select","itemID",115565,115589,115561},{"where","modID",5}}}),
@@ -33043,10 +33036,7 @@ i(120282,{b=2,c={4,6,8,11},lvl=40,r=2}),
 i(120208,{b=2,c={4,6,8,11},lvl=40,r=1})}})}),
 d(16,{
 h(-45,{
-q(37031,{description="The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",lvl=40,qgs={87225},g={
-i(118390),
-i(118389),
-i(118388)}}),
+q(37031,{description="The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",lvl=40,qgs={87225},qis={118388,118389,118390}}),
 q(37560,{c={2,5,9},lvl=40,providers={{"i",120283}},r=2,repeatable=1,g={
 i(120245,{b=2,c={2,5,9},lvl=40,spellID=178226,sym={{"select","itemID",115568,115586,115563},{"where","modID",6}}}),
 i(120246,{b=2,c={2,5,9},lvl=40,spellID=178230,sym={{"select","itemID",115565,115589,115561},{"where","modID",6}}}),
@@ -33628,10 +33618,8 @@ ach(9680,{rwp=70003,u=2}),
 i(127785,{b=1,lvl=40,spellID=187958,u=2})}})}}),
 d(14,{
 h(-45,{
-q(39502,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39504,"questID",39505},lvl=40,qgs={95659},sourceQuests={39499},g={
-i(128419)}}),
-q(39499,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39500,"questID",39501},lvl=40,qgs={95659},g={
-i(128416)}})}),
+q(39502,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39504,"questID",39505},lvl=40,qgs={95659},qis={128419},sourceQuests={39499}}),
+q(39499,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39500,"questID",39501},lvl=40,qgs={95659},qis={128416}})}),
 h(-63,{
 s(69671,124182,{f=4,loc=45,lvl=40,modID=3}),
 s(69984,124323,{f=7,loc=47,lvl=40,modID=3}),
@@ -33948,10 +33936,8 @@ q(40962,{coords={
 [80]={{36.4,41.6}}},lvl=40,qgs={102432},rwp=70003,sourceQuests={40904},u=2,g={
 mnt(189999,{b=1,itemID=128422,u=2})}}),
 q(40904,{lvl=40,maps={80},providers={{"i",133762}},rwp=70003,u=2}),
-q(39504,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39505},lvl=40,qgs={95659},sourceQuests={39500},g={
-i(128420)}}),
-q(39500,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39501},lvl=40,qgs={95659},g={
-i(128417)}})}),
+q(39504,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39505},lvl=40,qgs={95659},qis={128420},sourceQuests={39500}}),
+q(39500,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",DisablePartySync=1,lc={1,"questID",39501},lvl=40,qgs={95659},qis={128417}})}),
 h(-63,{
 s(69672,124182,{f=4,loc=45,lvl=40,modID=5}),
 s(69986,124323,{f=7,loc=47,lvl=40,modID=5}),
@@ -34266,10 +34252,8 @@ i(124514,{b=1,c={11},f=53,lvl=40,modID=5,spellID=184876}),
 i(124516,{b=1,c={8},f=53,lvl=40,modID=5,spellID=184903})}})}),
 d(16,{
 h(-45,{
-q(39505,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",lvl=40,qgs={95659},sourceQuests={39501},g={
-i(128421)}}),
-q(39501,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",lvl=40,qgs={95659},g={
-i(128418)}})}),
+q(39505,{description="Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",lvl=40,qgs={95659},qis={128421},sourceQuests={39501}}),
+q(39501,{description="Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",lvl=40,qgs={95659},qis={128418}})}),
 h(-63,{
 s(69673,124182,{f=4,loc=45,lvl=40,modID=6}),
 s(69987,124323,{f=7,loc=47,lvl=40,modID=6}),
@@ -36482,8 +36466,7 @@ s(82042,140996,{b=1,f=5,loc=44,lvl=45,modID=3}),
 i(141696,{b=1,f=51,lvl=45,modID=3}),
 s(82939,141695,{f=7,loc=44,lvl=45,modID=3})}),
 h(-45,{
-q(44283,{altQuests={44284,44285},description="Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={106482},g={
-i(141303)}})}),
+q(44283,{altQuests={44284,44285},description="Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={106482},qis={141303}})}),
 e(1703,{npcID=102672,g={
 s(80492,139191,{b=1,f=4,loc=41,lvl=45,modID=3}),
 s(80513,139212,{b=1,f=6,loc=45,lvl=45,modID=3}),
@@ -36609,8 +36592,7 @@ s(82043,140996,{b=1,f=5,loc=44,lvl=45,modID=5}),
 i(141696,{b=1,f=51,lvl=45,modID=5}),
 s(82940,141695,{f=7,loc=44,lvl=45,modID=5})}),
 h(-45,{
-q(44284,{altQuests={44285},description="Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={106482},g={
-i(141304)}})}),
+q(44284,{altQuests={44285},description="Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={106482},qis={141304}})}),
 e(1703,{npcID=102672,g={
 s(81128,139191,{b=1,f=4,loc=41,lvl=45,modID=5}),
 s(81240,139212,{b=1,f=6,loc=45,lvl=45,modID=5}),
@@ -36734,8 +36716,7 @@ s(82044,140996,{b=1,f=5,loc=44,lvl=45,modID=6}),
 i(141696,{b=1,f=51,lvl=45,modID=6}),
 s(82941,141695,{f=7,loc=44,lvl=45,modID=6})}),
 h(-45,{
-q(44285,{description="Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",lvl=45,qgs={106482},g={
-i(141305)}})}),
+q(44285,{description="Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",lvl=45,qgs={106482},qis={141305}})}),
 e(1703,{npcID=102672,g={
 ach(10821),
 s(81129,139191,{b=1,f=4,loc=41,lvl=45,modID=6}),
@@ -36873,44 +36854,7 @@ gach(11403)}),
 h(-45,{
 q(44868,{lvl=45,qgs={114263},sourceQuests={44729},g={
 i(142534,{b=1,f=55})}}),
-q(45088,{lvl=45,qgs={114263},g={
-i(142487),
-en(143506,{b=1,c={5,8,9},lvl=45,questID=45208,spellID=231638,tmogSetID=171,g={
-s(83993,143362,{f=4,loc=43,lvl={45}}),
-s(294642,247567,{b=1,f=4,loc=45,lvl={45}}),
-s(83977,143346,{f=4,loc=40,lvl={45}}),
-s(84000,143369,{f=3,lvl={45}}),
-s(83974,143343,{f=4,loc=44,lvl={45}}),
-s(294658,247571,{b=1,f=4,loc=43,lvl={45}}),
-s(296275,249684,{b=1,f=4,loc=40,lvl={45}}),
-s(294650,247569,{b=1,f=4,loc=46,lvl={45}}),
-s(83987,143356,{f=4,loc=41,lvl={45}}),
-s(296279,249685,{b=1,f=4,loc=41,lvl={45}}),
-s(294710,247584,{b=1,f=4,loc=44,lvl={45}}),
-s(83981,143350,{f=4,loc=46,lvl={45}}),
-s(83984,143353,{f=4,loc=42,lvl={45}}),
-s(294638,247566,{b=1,f=4,loc=42,lvl={45}}),
-s(83969,143338,{f=4,loc=47,lvl={45}}),
-s(83990,143359,{f=4,loc=45,lvl={45}}),
-s(294654,247570,{b=1,f=4,loc=47,lvl={45}})}}),
-en(143510,{b=1,c={4,10,11,12},lvl=45,questID=45226,spellID=231674,tmogSetID=175,g={
-s(83971,143340,{f=5,loc=47,lvl={45}}),
-s(294714,247585,{b=1,f=5,loc=44,lvl={45}}),
-s(83972,143341,{f=5,loc=44,lvl={45}}),
-s(294722,247587,{b=1,f=5,loc=42,lvl={45}}),
-s(83979,143348,{f=5,loc=40,lvl={45}}),
-s(83983,143352,{f=5,loc=46,lvl={45}}),
-s(294666,247573,{b=1,f=5,loc=47,lvl={45}}),
-s(296271,249683,{b=1,f=5,loc=41,lvl={45}}),
-s(83985,143354,{f=5,loc=41,lvl={45}}),
-s(294674,247575,{b=1,f=5,loc=43,lvl={45}}),
-s(294662,247572,{b=1,f=5,loc=45,lvl={45}}),
-s(83992,143361,{f=5,loc=45,lvl={45}}),
-s(294670,247574,{b=1,f=5,loc=46,lvl={45}}),
-s(296267,249682,{b=1,f=5,loc=40,lvl={45}}),
-s(83967,143336,{f=5,loc=42,lvl={45}}),
-s(83997,143366,{f=3,lvl={45}}),
-s(83996,143365,{f=5,loc=43,lvl={45}})}}),
+q(45088,{lvl=45,qgs={114263},qis={142487},g={
 en(143514,{b=1,c={3,7,13},lvl=45,questID=45230,spellID=231678,tmogSetID=179,g={
 s(294678,247576,{b=1,f=6,loc=45,lvl={45}}),
 s(83995,143364,{f=6,loc=43,lvl={45}}),
@@ -36947,46 +36891,46 @@ s(83968,143337,{f=7,loc=47,lvl={45}}),
 s(83976,143345,{f=7,loc=40,lvl={45}}),
 s(83989,143358,{f=7,loc=45,lvl={45}}),
 s(294646,247568,{b=1,f=3,lvl={45}}),
-s(83994,143363,{f=7,loc=43,lvl={45}})}})}})}),
+s(83994,143363,{f=7,loc=43,lvl={45}})}}),
+en(143510,{b=1,c={4,10,11,12},lvl=45,questID=45226,spellID=231674,tmogSetID=175,g={
+s(83971,143340,{f=5,loc=47,lvl={45}}),
+s(294714,247585,{b=1,f=5,loc=44,lvl={45}}),
+s(83972,143341,{f=5,loc=44,lvl={45}}),
+s(294722,247587,{b=1,f=5,loc=42,lvl={45}}),
+s(83979,143348,{f=5,loc=40,lvl={45}}),
+s(83983,143352,{f=5,loc=46,lvl={45}}),
+s(294666,247573,{b=1,f=5,loc=47,lvl={45}}),
+s(296271,249683,{b=1,f=5,loc=41,lvl={45}}),
+s(83985,143354,{f=5,loc=41,lvl={45}}),
+s(294674,247575,{b=1,f=5,loc=43,lvl={45}}),
+s(294662,247572,{b=1,f=5,loc=45,lvl={45}}),
+s(83992,143361,{f=5,loc=45,lvl={45}}),
+s(294670,247574,{b=1,f=5,loc=46,lvl={45}}),
+s(296267,249682,{b=1,f=5,loc=40,lvl={45}}),
+s(83967,143336,{f=5,loc=42,lvl={45}}),
+s(83997,143366,{f=3,lvl={45}}),
+s(83996,143365,{f=5,loc=43,lvl={45}})}}),
+en(143506,{b=1,c={5,8,9},lvl=45,questID=45208,spellID=231638,tmogSetID=171,g={
+s(83993,143362,{f=4,loc=43,lvl={45}}),
+s(294642,247567,{b=1,f=4,loc=45,lvl={45}}),
+s(83977,143346,{f=4,loc=40,lvl={45}}),
+s(84000,143369,{f=3,lvl={45}}),
+s(83974,143343,{f=4,loc=44,lvl={45}}),
+s(294658,247571,{b=1,f=4,loc=43,lvl={45}}),
+s(296275,249684,{b=1,f=4,loc=40,lvl={45}}),
+s(294650,247569,{b=1,f=4,loc=46,lvl={45}}),
+s(83987,143356,{f=4,loc=41,lvl={45}}),
+s(296279,249685,{b=1,f=4,loc=41,lvl={45}}),
+s(294710,247584,{b=1,f=4,loc=44,lvl={45}}),
+s(83981,143350,{f=4,loc=46,lvl={45}}),
+s(83984,143353,{f=4,loc=42,lvl={45}}),
+s(294638,247566,{b=1,f=4,loc=42,lvl={45}}),
+s(83969,143338,{f=4,loc=47,lvl={45}}),
+s(83990,143359,{f=4,loc=45,lvl={45}}),
+s(294654,247570,{b=1,f=4,loc=47,lvl={45}})}})}})}),
 d(109,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={114263,114323,114344,114537},g={
-en(143509,{b=1,c={5,8,9},lvl=45,questID=45225,spellID=231673,tmogSetID=174,g={
-s(84132,143362,{f=4,loc=43,lvl={45},modID=4}),
-s(294645,247567,{b=1,f=4,loc=45,lvl={45},modID=4}),
-s(84117,143346,{f=4,loc=40,lvl={45},modID=4}),
-s(84135,143369,{f=3,lvl={45},modID=4}),
-s(84114,143343,{f=4,loc=44,lvl={45},modID=4}),
-s(294661,247571,{b=1,f=4,loc=43,lvl={45},modID=4}),
-s(296278,249684,{b=1,f=4,loc=40,lvl={45},modID=4}),
-s(294653,247569,{b=1,f=4,loc=46,lvl={45},modID=4}),
-s(84126,143356,{f=4,loc=41,lvl={45},modID=4}),
-s(296282,249685,{b=1,f=4,loc=41,lvl={45},modID=4}),
-s(294713,247584,{b=1,f=4,loc=44,lvl={45},modID=4}),
-s(84120,143350,{f=4,loc=46,lvl={45},modID=4}),
-s(84123,143353,{f=4,loc=42,lvl={45},modID=4}),
-s(294641,247566,{b=1,f=4,loc=42,lvl={45},modID=4}),
-s(84111,143338,{f=4,loc=47,lvl={45},modID=4}),
-s(84129,143359,{f=4,loc=45,lvl={45},modID=4}),
-s(294657,247570,{b=1,f=4,loc=47,lvl={45},modID=4})}}),
-en(143513,{b=1,c={4,10,11,12},lvl=45,questID=45229,spellID=231677,tmogSetID=178,g={
-s(84195,143340,{f=5,loc=47,lvl={45},modID=4}),
-s(294717,247585,{b=1,f=5,loc=44,lvl={45},modID=4}),
-s(84198,143341,{f=5,loc=44,lvl={45},modID=4}),
-s(294725,247587,{b=1,f=5,loc=42,lvl={45},modID=4}),
-s(84201,143348,{f=5,loc=40,lvl={45},modID=4}),
-s(84204,143352,{f=5,loc=46,lvl={45},modID=4}),
-s(294669,247573,{b=1,f=5,loc=47,lvl={45},modID=4}),
-s(296274,249683,{b=1,f=5,loc=41,lvl={45},modID=4}),
-s(84207,143354,{f=5,loc=41,lvl={45},modID=4}),
-s(294677,247575,{b=1,f=5,loc=43,lvl={45},modID=4}),
-s(294665,247572,{b=1,f=5,loc=45,lvl={45},modID=4}),
-s(84210,143361,{f=5,loc=45,lvl={45},modID=4}),
-s(294673,247574,{b=1,f=5,loc=46,lvl={45},modID=4}),
-s(296270,249682,{b=1,f=5,loc=40,lvl={45},modID=4}),
-s(84192,143336,{f=5,loc=42,lvl={45},modID=4}),
-s(84222,143366,{f=3,lvl={45},modID=4}),
-s(84213,143365,{f=5,loc=43,lvl={45},modID=4})}}),
 en(143517,{b=1,c={3,7,13},lvl=45,questID=45233,spellID=231681,tmogSetID=182,g={
 s(294681,247576,{b=1,f=6,loc=45,lvl={45},modID=4}),
 s(84159,143364,{f=6,loc=43,lvl={45},modID=4}),
@@ -37023,7 +36967,43 @@ s(84168,143337,{f=7,loc=47,lvl={45},modID=4}),
 s(84174,143345,{f=7,loc=40,lvl={45},modID=4}),
 s(84183,143358,{f=7,loc=45,lvl={45},modID=4}),
 s(294649,247568,{b=1,f=3,lvl={45},modID=4}),
-s(84186,143363,{f=7,loc=43,lvl={45},modID=4})}})}}),
+s(84186,143363,{f=7,loc=43,lvl={45},modID=4})}}),
+en(143513,{b=1,c={4,10,11,12},lvl=45,questID=45229,spellID=231677,tmogSetID=178,g={
+s(84195,143340,{f=5,loc=47,lvl={45},modID=4}),
+s(294717,247585,{b=1,f=5,loc=44,lvl={45},modID=4}),
+s(84198,143341,{f=5,loc=44,lvl={45},modID=4}),
+s(294725,247587,{b=1,f=5,loc=42,lvl={45},modID=4}),
+s(84201,143348,{f=5,loc=40,lvl={45},modID=4}),
+s(84204,143352,{f=5,loc=46,lvl={45},modID=4}),
+s(294669,247573,{b=1,f=5,loc=47,lvl={45},modID=4}),
+s(296274,249683,{b=1,f=5,loc=41,lvl={45},modID=4}),
+s(84207,143354,{f=5,loc=41,lvl={45},modID=4}),
+s(294677,247575,{b=1,f=5,loc=43,lvl={45},modID=4}),
+s(294665,247572,{b=1,f=5,loc=45,lvl={45},modID=4}),
+s(84210,143361,{f=5,loc=45,lvl={45},modID=4}),
+s(294673,247574,{b=1,f=5,loc=46,lvl={45},modID=4}),
+s(296270,249682,{b=1,f=5,loc=40,lvl={45},modID=4}),
+s(84192,143336,{f=5,loc=42,lvl={45},modID=4}),
+s(84222,143366,{f=3,lvl={45},modID=4}),
+s(84213,143365,{f=5,loc=43,lvl={45},modID=4})}}),
+en(143509,{b=1,c={5,8,9},lvl=45,questID=45225,spellID=231673,tmogSetID=174,g={
+s(84132,143362,{f=4,loc=43,lvl={45},modID=4}),
+s(294645,247567,{b=1,f=4,loc=45,lvl={45},modID=4}),
+s(84117,143346,{f=4,loc=40,lvl={45},modID=4}),
+s(84135,143369,{f=3,lvl={45},modID=4}),
+s(84114,143343,{f=4,loc=44,lvl={45},modID=4}),
+s(294661,247571,{b=1,f=4,loc=43,lvl={45},modID=4}),
+s(296278,249684,{b=1,f=4,loc=40,lvl={45},modID=4}),
+s(294653,247569,{b=1,f=4,loc=46,lvl={45},modID=4}),
+s(84126,143356,{f=4,loc=41,lvl={45},modID=4}),
+s(296282,249685,{b=1,f=4,loc=41,lvl={45},modID=4}),
+s(294713,247584,{b=1,f=4,loc=44,lvl={45},modID=4}),
+s(84120,143350,{f=4,loc=46,lvl={45},modID=4}),
+s(84123,143353,{f=4,loc=42,lvl={45},modID=4}),
+s(294641,247566,{b=1,f=4,loc=42,lvl={45},modID=4}),
+s(84111,143338,{f=4,loc=47,lvl={45},modID=4}),
+s(84129,143359,{f=4,loc=45,lvl={45},modID=4}),
+s(294657,247570,{b=1,f=4,loc=47,lvl={45},modID=4})}})}}),
 e(1819,{npcID=114263,g={
 r(229177,{b=1,itemID=142110,lvl=10,requireSkill=773,skillID=2508}),
 r(229180,{b=1,itemID=142104,lvl=10,requireSkill=773,skillID=2508}),
@@ -37741,8 +37721,7 @@ s(84560,144404,{f=4,loc=45,lvl=45,modID=3}),
 s(84568,144406,{f=6,loc=45,lvl=45,modID=3}),
 s(84564,144405,{f=5,loc=45,lvl=45,modID=3})}),
 h(-45,{
-q(45381,{altQuests={45382,45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={110791},g={
-i(143656),
+q(45381,{altQuests={45382,45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={110791},qis={143656},g={
 i(141324,{b=1,f=51,lvl=45})}})}),
 e(1706,{npcID=102263,g={
 i(140789,{b=1,f=53,lvl=45,modID=3,spellID=225033}),
@@ -37978,8 +37957,7 @@ s(84561,144404,{f=4,loc=45,lvl=45,modID=5}),
 s(84569,144406,{f=6,loc=45,lvl=45,modID=5}),
 s(84565,144405,{f=5,loc=45,lvl=45,modID=5})}),
 h(-45,{
-q(45382,{altQuests={45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={110791},g={
-i(143657),
+q(45382,{altQuests={45383},description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={110791},qis={143657},g={
 i(141325,{b=1,f=51,lvl=45})}})}),
 e(1706,{npcID=102263,g={
 i(140789,{b=1,f=53,lvl=45,modID=5,spellID=225033}),
@@ -38212,8 +38190,7 @@ s(84562,144404,{f=4,loc=45,lvl=45,modID=6}),
 s(84570,144406,{f=6,loc=45,lvl=45,modID=6}),
 s(84566,144405,{f=5,loc=45,lvl=45,modID=6})}),
 h(-45,{
-q(45383,{description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",lvl=45,qgs={110791},g={
-i(143658),
+q(45383,{description="Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",lvl=45,qgs={110791},qis={143658},g={
 i(141326,{b=1,f=51,lvl=45})}})}),
 e(1706,{npcID=102263,g={
 ach(10840),
@@ -38766,8 +38743,7 @@ ach(11770,{crs={121193},g={
 crit(36544,{achID=11763,id=8})}})}})}}),
 d(14,{
 h(-45,{
-q(47725,{altQuests={47726,47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={119723},g={
-i(151248)}})}),
+q(47725,{altQuests={47726,47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={119723},qis={151248}})}),
 h(-63,{
 s(86596,147422,{f=4,loc=47,lvl=45,modID=3}),
 s(86616,147425,{f=5,loc=45,lvl=45,modID=3}),
@@ -38991,8 +38967,7 @@ e(1898,{npcID=117269,g={
 ach(11874,{rwp=70300,u=2})}})}}),
 d(15,{
 h(-45,{
-q(47726,{altQuests={47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={119723},g={
-i(151249)}})}),
+q(47726,{altQuests={47727},description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={119723},qis={151249}})}),
 h(-63,{
 s(86597,147422,{f=4,loc=47,lvl=45,modID=5}),
 s(86617,147425,{f=5,loc=45,lvl=45,modID=5}),
@@ -39213,8 +39188,7 @@ s(86713,147048,{b=1,f=6,loc=44,lvl=45,modID=5}),
 s(86529,147347,{b=1,f=5,loc=45,lvl=45,modID=5})}})}),
 d(16,{
 h(-45,{
-q(47727,{description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",lvl=45,qgs={119723},g={
-i(151250)}})}),
+q(47727,{description="Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",lvl=45,qgs={119723},qis={151250}})}),
 h(-63,{
 s(86598,147422,{f=4,loc=47,lvl=45,modID=6}),
 s(86618,147425,{f=5,loc=45,lvl=45,modID=6}),
@@ -39467,8 +39441,7 @@ gach(12112)}),
 h(-45,{
 q(48954,{awp=110205,lvl=45,providers={{"i",152900}},rwp=110207,u=2,g={
 mnt(253639,{b=1,itemID=152901,u=2})}}),
-q(49077,{lvl=45,qgs={129429},g={
-i(153555)}})}),
+q(49077,{lvl=45,qgs={129429},qis={153555}})}),
 d(109,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={121975,122104,122135,122333,122366,122367,122369,122450,122467,122468,122469,122477,122500,122578,124158,124445,124828},g={
@@ -39828,10 +39801,8 @@ s(89987,152087,{f=5,loc=43,lvl=45,modID=3}),
 s(89995,152089,{f=6,loc=43,lvl=45,modID=3}),
 s(90003,152091,{f=7,loc=43,lvl=45,modID=3})}),
 h(-45,{
-q(49032,{altQuests={49075,49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125512},g={
-i(152902)}}),
-q(49133,{altQuests={49134,49135},description="Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125682},sourceQuests={49032},g={
-i(152908)}})}),
+q(49032,{altQuests={49075,49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125512},qis={152902}}),
+q(49133,{altQuests={49134,49135},description="Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",lvl=45,qgs={125682},qis={152908},sourceQuests={49032}})}),
 e(1992,{npcID=122450,g={
 s(89882,152002,{b=1,f=6,loc=46,lvl=45,modID=3}),
 s(89822,151987,{b=1,f=5,loc=46,lvl=45,modID=3}),
@@ -40093,10 +40064,8 @@ s(89988,152087,{f=5,loc=43,lvl=45,modID=5}),
 s(89996,152089,{f=6,loc=43,lvl=45,modID=5}),
 s(90004,152091,{f=7,loc=43,lvl=45,modID=5})}),
 h(-45,{
-q(49075,{altQuests={49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125512},g={
-i(152906)}}),
-q(49134,{altQuests={49135},description="Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125682},sourceQuests={49075},g={
-i(152909)}})}),
+q(49075,{altQuests={49076},description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125512},qis={152906}}),
+q(49134,{altQuests={49135},description="Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",lvl=45,qgs={125682},qis={152909},sourceQuests={49075}})}),
 e(1992,{npcID=122450,g={
 s(89883,152002,{b=1,f=6,loc=46,lvl=45,modID=5}),
 s(89823,151987,{b=1,f=5,loc=46,lvl=45,modID=5}),
@@ -40354,10 +40323,8 @@ s(89989,152087,{f=5,loc=43,lvl=45,modID=6}),
 s(89997,152089,{f=6,loc=43,lvl=45,modID=6}),
 s(90005,152091,{f=7,loc=43,lvl=45,modID=6})}),
 h(-45,{
-q(49076,{description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",lvl=45,qgs={125512},g={
-i(152907)}}),
-q(49135,{description="Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",lvl=45,qgs={125682},sourceQuests={49076},g={
-i(152910)}})}),
+q(49076,{description="Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",lvl=45,qgs={125512},qis={152907}}),
+q(49135,{description="Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",lvl=45,qgs={125682},qis={152910},sourceQuests={49076}})}),
 e(1992,{npcID=122450,g={
 ach(11992),
 s(89884,152002,{b=1,f=6,loc=46,lvl=45,modID=6}),
@@ -41795,11 +41762,10 @@ r(209645,{b=1,itemID=137726,lvl=10,requireSkill=202,skillID=2500}),
 prof(773,{
 r(225543,{b=1,description="Drops from Naga in any Broken Isles zone. Recommended to farm the Naga before the first Boss in the Eye of Azshara Dungeon.",itemID=141051,lvl=10,requireSkill=773,skillID=2508})})}),
 h(-45,{
-q(42213,{lvl=10,modelScale=3,qgs={106780},sourceQuests={38286},g={
-i(137206),
-s(81639,140622,{b=1,f=7,loc=45}),
-s(81640,140623,{b=1,f=6,loc=45}),
+q(42213,{lvl=10,modelScale=3,qgs={106780},qis={137206},sourceQuests={38286},g={
 s(81641,140624,{b=1,f=5,loc=45}),
+s(81640,140623,{b=1,f=6,loc=45}),
+s(81639,140622,{b=1,f=7,loc=45}),
 s(81642,140625,{b=1,f=4,loc=45}),
 crit(31589,{achID=10461,id=1}),
 crit(31589,{achID=10877,id=2}),
@@ -42439,12 +42405,11 @@ crit(32888,{achID=10996,description="After first boss Rokmora, before entering a
 de(11315,{awp=110207,itemID=256913,spellID=1260911}),
 crit(32126,{achID=11163,id=6})}})}),
 h(-45,{
-q(42454,{lvl=10,providers={{"o",250548}},sourceQuests={39781},g={
-i(137649),
-s(82069,141007,{b=1,f=4,loc=44}),
-s(82070,141008,{b=1,f=5,loc=44}),
-s(82071,141009,{b=1,f=6,loc=44}),
+q(42454,{lvl=10,providers={{"o",250548}},qis={137649},sourceQuests={39781},g={
 s(82072,141010,{b=1,f=7,loc=44}),
+s(82071,141009,{b=1,f=6,loc=44}),
+s(82070,141008,{b=1,f=5,loc=44}),
+s(82069,141007,{b=1,f=4,loc=44}),
 crit(31590,{achID=10461,id=1}),
 crit(31590,{achID=10877,id=4}),
 crit(106028,{achID=42593,awp=110205,e=447,id=4,rwp=110207,u=2})}})}),
@@ -42673,8 +42638,7 @@ i(142450,{b=1,f=55})}}),
 q(45296,{description="You must complete the full quest chain before the quest item will drop from the boss.",lvl=45,providers={{"i",143556}},sourceQuests={45295},g={
 i(142469,{b=1,f=52,lvl=45,spellID=231054})}}),
 q(44685,{coords={
-[42]={{47,75.2}}},lvl=45,qgs={114310},sourceQuests={44557,44683,44684},g={
-i(142213,{spellID=229170}),
+[42]={{47,75.2}}},lvl=45,qgs={114310},qis={142213},sourceQuests={44557,44683,44684},g={
 i(142451,{b=1,f=55})}}),
 q(44556,{coords={
 [627]={{28.8,48.6}}},qgs={90417},rwp=70300,u=2}),
@@ -42688,17 +42652,13 @@ i(142468,{b=1,f=52,lvl=45})}}),
 q(44735,{coords={
 [42]={{47.3,75}}},lvl=45,qgs={114310},sourceQuests={44733},g={
 i(142454,{b=1,f=55})}}),
-q(44803,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",142246}},g={
-i(142248),
-i(142249),
-i(142275)}}),
+q(44803,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",142246}},qis={142248,142249,142275}}),
 q(45293,{lvl=45,qgs={18255},sourceQuests={45292}}),
 q(45292,{coords={
 [42]={{47.3,75}}},lvl=45,qgs={18255},sourceQuests={45291},g={
 i(142461,{b=1,f=52,lvl=45})}}),
 q(44733,{coords={
-[42]={{46.9,75.2}}},lvl=45,qgs={114310},sourceQuests={44764},g={
-i(142208,{spellID=229332})}}),
+[42]={{46.9,75.2}}},lvl=45,qgs={114310},qis={142208},sourceQuests={44764}}),
 q(44686,{coords={
 [42]={{46.9,75.3}}},lvl=45,qgs={114631},sourceQuests={44557,44683,44684}})}),
 h(-19,{crs={113971,114247,114252,114261,114262,114284,114312,114328,114329,114330,114350,114522,114790},g={
@@ -42976,35 +42936,31 @@ h(-56,{
 o(277384,{repeatable=1,g={
 s(90989,152854,{b=1,f=1,lvl=40})}})}),
 h(-45,{
-q(48230,{crs={121670,121672,122056,122316,122403,122404,122413,122421,122423,124171,126152,127791,127796,127797},description="You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",lvl=45,maps={882},providers={{"i",152204}},sourceQuests={47654}}),
+q(48230,{crs={121670,121672,122056,122316,122403,122404,122413,122421,122423,124171,126152,127791,127796,127797},description="You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",lvl=45,maps={882},qss={152204},sourceQuests={47654}}),
 q(48864,{coords={
 [831]={{51.7,74.4}},
 [882]={{62.6,39.4}},
-[883]={{51.5,69}}},lvl=45,qgs={123668},sourceQuests={48230},g={
-i(152205)}}),
+[883]={{51.5,69}}},lvl=45,qgs={123668},qis={152205},sourceQuests={48230}}),
 q(48271,{coords={
-[830]={{56.9,68.6}}},lvl=45,qgs={125246},sourceQuests={48864},g={
-i(152201),
+[830]={{56.9,68.6}}},lvl=45,qgs={125246},qis={152201},sourceQuests={48864},g={
 i(152938,{b=1,f=55})}}),
 q(48261,{coords={
-[830]={{56.9,68.6}}},lvl=45,qgs={125246},sourceQuests={48864},g={
-i(152200),
+[830]={{56.9,68.6}}},lvl=45,qgs={125246},qis={152200},sourceQuests={48864},g={
 i(152937,{b=1,f=55})}}),
 q(48803,{coords={
 [830]={{56.9,68.6}}},lvl=45,qgs={125246},sourceQuests={48261,48271}}),
 q(48231,{coords={
-[830]={{56.9,68.6}}},lvl=45,qgs={125246},sourceQuests={48803},g={
-en(152241,{b=1,c={5,8,9,13},lvl=45,questID=48569,spellID=251451,sym={{"select","sourceID",89388,89387,89327,89326,89335,89334,89333,89332,89337,89336,89331,89330,89339,89338,89329,89328}},tmogSetID=1471,g={
-s(89486,151635,{b=1,f=3,lvl={40}})}}),
+[830]={{56.9,68.6}}},lvl=45,qgs={125246},qis={152203},sourceQuests={48803},g={
+o(272918,{
+i(152202)}),
 en(152242,{b=1,c={4,10,11,12},lvl=45,questID=48568,spellID=251449,sym={{"select","sourceID",89386,89385,89354,89353,89342,89341,89348,89347,89344,89343,89350,89349,89346,89345,89352,89351}},tmogSetID=1470,g={
 s(89340,151306,{b=1,f=3,lvl={40}})}}),
+en(152241,{b=1,c={5,8,9,13},lvl=45,questID=48569,spellID=251451,sym={{"select","sourceID",89388,89387,89327,89326,89335,89334,89333,89332,89337,89336,89331,89330,89339,89338,89329,89328}},tmogSetID=1471,g={
+s(89486,151635,{b=1,f=3,lvl={40}})}}),
 en(152243,{b=1,c={3,7,13},lvl=45,questID=48567,spellID=251453,sym={{"select","sourceID",89364,89363,89362,89361,89366,89365,89368,89367,89390,89389,89356,89355,89358,89357,89360,89359}},tmogSetID=1469,g={
 s(89485,151634,{b=1,f=3,lvl={40}})}}),
 en(152244,{b=1,c={1,2,6,13},lvl=45,questID=48566,spellID=251454,sym={{"select","sourceID",89382,89381,89378,89377,89374,89373,89370,89369,89392,89391,89376,89375,89372,89371,89380,89379}},tmogSetID=1468,g={
 s(89325,151298,{b=1,f=3,lvl={40}})}}),
-i(152203),
-o(272918,{
-i(152202)}),
 i(152939,{b=1,f=55})}})}),
 h(-62,{
 q(48959,{isWorldQuest=1}),
@@ -43305,8 +43261,7 @@ i(146678,{requireSkill=197,spellID=239181})}})})}}),
 inst(707,{awp=70003,coords={
 [630]={{48,82.1}}},maps={710,711,712},savedInstanceID=1493,g={
 h(-45,{
-q(44486,{lvl=45,providers={{"o",258979}},g={
-i(141360,{b=4}),
+q(44486,{lvl=45,providers={{"o",258979}},qis={141360},g={
 crit(33146,{achID=11240,id=2})}})}),
 h(-62,{
 q(42924,{isWorldQuest=1,g={
@@ -44985,7 +44940,6 @@ d(109,{coords={
 [1161]={{74,13.4}},
 [1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={150653,150859,151881,152128,152236,152364,152852,152853,152910},g={
-i(169329,{b=1}),
 r(298625,{b=1,itemID=168625,requireSkill=773,skillID=2507}),
 r(298647,{b=1,itemID=168626,requireSkill=773,skillID=2507}),
 r(298648,{b=1,itemID=168627,requireSkill=773,skillID=2507})}}),
@@ -45839,10 +45793,7 @@ crit(47194,{achID=14146,id=12})}),
 i(175062,{b=1,spellID=307026})}})}}),
 d(14,{
 h(-45,{
-q(58373,{lc={1,"questID",58374,"questID",58375},lvl=50,qgs={160177},g={
-i(174910),
-i(174913),
-i(174063)}})}),
+q(58373,{lc={1,"questID",58374,"questID",58375},lvl=50,qgs={160177},qis={174063,174910,174913}})}),
 h(-63,{
 s(108801,175005,{f=6,loc=45,lvl=50,modID=3}),
 s(108809,175007,{f=5,loc=47,lvl=50,modID=3}),
@@ -45973,10 +45924,7 @@ ach(14068,{rwp=90001,u=2}),
 i(174863,{b=1,rwp=90001,u=2})}})}}),
 d(15,{
 h(-45,{
-q(58374,{lc={1,"questID",58375},lvl=50,qgs={160177},g={
-i(174909),
-i(174911),
-i(174064)}})}),
+q(58374,{lc={1,"questID",58375},lvl=50,qgs={160177},qis={174064,174909,174911}})}),
 h(-63,{
 s(108802,175005,{f=6,loc=45,lvl=50,modID=5}),
 s(108811,175007,{f=5,loc=47,lvl=50,modID=5}),
@@ -46103,10 +46051,7 @@ i(174533,{b=1,f=52,lvl=50,modID=5}),
 s(108062,174118,{b=1,f=4,loc=40,lvl=50,modID=5})}})}),
 d(16,{
 h(-45,{
-q(58375,{lvl=50,qgs={160177},g={
-i(174908),
-i(174912),
-i(174065)}})}),
+q(58375,{lvl=50,qgs={160177},qis={174065,174908,174912}})}),
 h(-63,{
 s(108803,175005,{f=6,loc=45,lvl=50,modID=6}),
 s(108812,175007,{f=5,loc=47,lvl=50,modID=6}),
@@ -47146,10 +47091,8 @@ inst(1023,{awp=80001,coords={
 [895]={{88.2,50.9}},
 [1161]={{72.2,15.5}}},maps={1162},savedInstanceID=1822,g={
 h(-45,{
-q(53128,{lvl=50,providers={{"o",296479}},r=2,g={
-i(163336)}}),
-q(53127,{lvl=50,providers={{"o",296479}},r=1,g={
-i(163336)}})}),
+q(53128,{lvl=50,providers={{"o",296479}},qis={163336},r=2}),
+q(53127,{lvl=50,providers={{"o",296479}},qis={163336},r=1})}),
 h(-62,{
 q(52761,{isWorldQuest=1,r=2}),
 q(52771,{isWorldQuest=1,r=2}),
@@ -47648,11 +47591,9 @@ i(159625,{b=1,f=53,modID=23,spellID=268828})}})}})}}),
 inst(1002,{awp=80001,coords={
 [1169]={{38.8,70.1}}},maps={974,975,976,977,978,979,980},savedInstanceID=1771,g={
 h(-62,{
-q(51287,{isWorldQuest=1,g={
-i(159831)}}),
+q(51287,{isWorldQuest=1,qis={159831}}),
 q(51297,{isWorldQuest=1}),
-q(51296,{isWorldQuest=1,g={
-i(159834)}})}),
+q(51296,{isWorldQuest=1,qis={159834}})}),
 d(1,{
 e(2097,{npcID=127479,g={
 s(95443,159656,{b=1,f=29,modID=1}),
@@ -48551,8 +48492,7 @@ ach(14610,{
 crit(49673,{achID=14355,id=10})})}})}}),
 d(14,{
 h(-45,{
-q(62054,{lvl=60,qgs={172653},g={
-i(182601)}})}),
+q(62054,{lvl=60,qgs={172653},qis={182601}})}),
 h(-63,{
 s(114530,183017,{f=4,loc=43,lvl=60,modID=3}),
 i(183035,{f=52,lvl=60,modID=3}),
@@ -48695,8 +48635,7 @@ i(182169,{b=1,lvl=50}),
 crit(53533,{achID=15664,awp=90205,rwp=100002,u=2})}})}}),
 d(15,{
 h(-45,{
-q(62055,{lvl=60,qgs={172653},g={
-i(182602)}})}),
+q(62055,{lvl=60,qgs={172653},qis={182602}})}),
 h(-63,{
 s(115118,183017,{f=4,loc=43,lvl=60,modID=5}),
 i(183035,{f=52,lvl=60,modID=5}),
@@ -48826,8 +48765,7 @@ s(115120,183020,{b=1,f=4,loc=41,lvl=60,modID=5}),
 crit(48979,{achID=14717})}})}),
 d(16,{
 h(-45,{
-q(62056,{lvl=60,qgs={172653},g={
-i(182603)}})}),
+q(62056,{lvl=60,qgs={172653},qis={182603}})}),
 h(-63,{
 s(115137,183017,{f=4,loc=43,lvl=60,modID=6}),
 i(183035,{f=52,lvl=60,modID=6}),
@@ -49350,8 +49288,7 @@ crit(52373,{achID=15130,id=10})}),
 s(145985,186414,{b=1,c={3},f=32,lvl=60,spellID=353511})}})}}),
 d(14,{
 h(-45,{
-q(64597,{lvl=60,qgs={178592},g={
-i(187529)}})}),
+q(64597,{lvl=60,qgs={178592},qis={187529}})}),
 h(-63,{
 s(145928,186371,{f=7,loc=43,lvl=60,modID=3}),
 s(145892,186362,{f=5,loc=43,lvl=60,modID=3}),
@@ -49520,8 +49457,7 @@ i(182177,{b=1,lvl=50}),
 crit(53567,{achID=15668,awp=90205,rwp=100002,u=2})}})}}),
 d(15,{
 h(-45,{
-q(64598,{lvl=60,qgs={178592},g={
-i(187530)}})}),
+q(64598,{lvl=60,qgs={178592},qis={187530}})}),
 h(-63,{
 s(145930,186371,{f=7,loc=43,lvl=60,modID=5}),
 s(145894,186362,{f=5,loc=43,lvl=60,modID=5}),
@@ -49678,8 +49614,7 @@ s(145782,186334,{b=1,f=5,loc=42,lvl=60,modID=5}),
 crit(52353,{achID=15127})}})}),
 d(16,{
 h(-45,{
-q(64599,{lvl=60,qgs={178592},g={
-i(187531)}})}),
+q(64599,{lvl=60,qgs={178592},qis={187531}})}),
 h(-63,{
 s(145931,186371,{f=7,loc=43,lvl=60,modID=6}),
 s(145895,186362,{f=5,loc=43,lvl=60,modID=6}),
@@ -50608,8 +50543,7 @@ ach(15494,{
 crit(53256,{achID=15491,id=10})})}})}}),
 d(14,{
 h(-45,{
-q(65764,{lvl=60,qgs={184601},g={
-i(190967)}})}),
+q(65764,{lvl=60,qgs={184601},qis={190967}})}),
 h(-63,{
 s(168905,190629,{f=6,loc=47,lvl=60,modID=3}),
 s(168909,190630,{f=4,loc=41,lvl=60,modID=3}),
@@ -50854,8 +50788,7 @@ i(189982,{b=1,lvl=50}),
 crit(53600,{achID=15682,awp=90205,rwp=100002,u=2})}})}}),
 d(15,{
 h(-45,{
-q(65763,{lvl=60,qgs={184601},g={
-i(190966)}})}),
+q(65763,{lvl=60,qgs={184601},qis={190966}})}),
 h(-63,{
 s(168907,190629,{f=6,loc=47,lvl=60,modID=5}),
 s(168911,190630,{f=4,loc=41,lvl=60,modID=5}),
@@ -51080,8 +51013,7 @@ s(168046,189861,{b=1,f=29,lvl=60,modID=5}),
 crit(53202,{achID=15478})}})}),
 d(16,{
 h(-45,{
-q(65762,{lvl=60,qgs={184601,188683},g={
-i(190959)}})}),
+q(65762,{lvl=60,qgs={184601,188683},qis={190959}})}),
 h(-63,{
 s(168908,190629,{f=6,loc=47,lvl=60,modID=6}),
 s(168912,190630,{f=4,loc=41,lvl=60,modID=6}),
@@ -51699,9 +51631,7 @@ inst(1183,{awp=90002,coords={
 [1536]={{59.3,64.8}}},maps={1674,1697},savedInstanceID=2289,g={
 h(-45,{
 q(59520,{coords={
-[1536]={{59.4,72.9}}},lvl=10,qgs={165052},sourceQuests={59223},g={
-i(176057),
-i(183724),
+[1536]={{59.4,72.9}}},lvl=10,qgs={165052},qis={176057,183724},sourceQuests={59223},g={
 s(109176,175533,{b=1,f=4,loc=41,lvl=48}),
 s(109175,175532,{b=1,f=7,loc=41,lvl=48}),
 s(109174,175531,{b=1,f=5,loc=41,lvl=48}),
@@ -51988,8 +51918,7 @@ q(63976,{coords={
 q(63977,{coords={
 [1672]={{57.1,31.1}}},lvl=60,qgs={178908},sourceQuests={63976}}),
 q(63979,{coords={
-[1672]={{57.1,31.1}}},lvl=60,qgs={178908},sourceQuests={63976},g={
-i(186182)}}),
+[1672]={{57.1,31.1}}},lvl=60,qgs={178908},qis={186182},sourceQuests={63976}}),
 q(63980,{coords={
 [1672]={{57.1,31.1}}},lvl=60,qgs={178908},sourceQuests={63977,63979}}),
 q(63982,{coords={
@@ -53644,11 +53573,8 @@ q(74923,{c={13},coords={
 [2112]={{60.8,39.2}}},cost={{"i",204832,1},{"i",204856,1},{"i",204854,1}},lvl=10,qgs={187669},races={52,70},sourceQuests={74913},g={
 i(204274,{b=1,c={13},lvl=70,races={52,70},spellID=409218,g={
 i(206163,{b=1,c={13},races={52,70}})}})}}),
-q(76158,{c={13},lvl=70,providers={{"i",206163}},races={52,70},rwp=100207,sourceQuests={74913},u=2,g={
-i(204808,{b=1,c={13},lvl=70,races={52,70},spellID=412350,u=2}),
-i(206165,{c={13},races={52,70},u=2}),
-i(206166,{c={13},races={52,70},u=2}),
-i(206164,{c={13},races={52,70},u=2})}}),
+q(76158,{c={13},lvl=70,providers={{"i",206163}},qis={206164,206165,206166},races={52,70},rwp=100207,sourceQuests={74913},u=2,g={
+i(204808,{b=1,c={13},lvl=70,races={52,70},spellID=412350,u=2})}}),
 q(74924,{c={13},coords={
 [2112]={{60.8,39.2}}},lvl=10,maps={2176},qgs={187669},races={52,70},sourceQuests={74923},g={
 s(185459,204177,{b=1,c={13},f=34,lvl=70,races={52,70},spellID=405061}),
@@ -54902,10 +54828,9 @@ inst(1207,{awp=100200,coords={
 [2200]={{27.3,30.9}}},isRaid=1,maps={2232,2233,2234,2235,2236,2237,2238,2240,2244},savedInstanceID=2549,g={
 ah(206448,{type="i",g={
 h(-45,{
-q(77093,{c={1,2,6},lvl=10,providers={{"i",207729}}}),
+q(77093,{c={1,2,6},lvl=10,qss={207729}}),
 q(77191,{c={1,2,6},coords={
-[2025]={{61.6,31.2}}},cost={{"i",208578,1},{"i",208592,1},{"i",208577,1}},lvl=10,qgs={206107},sourceQuests={77093},g={
-i(208781,{b=1,c={1,2,6}})}}),
+[2025]={{61.6,31.2}}},cost={{"i",208578,1},{"i",208592,1},{"i",208577,1}},lvl=10,qgs={206107},qis={208781},sourceQuests={77093}}),
 q(77833,{c={1,2,6},coords={
 [2025]={{61.6,31.2}}},lvl=70,qgs={209601},sourceQuests={77191}}),
 q(77835,{c={1,2,6},coords={
@@ -54913,26 +54838,16 @@ q(77835,{c={1,2,6},coords={
 q(77791,{c={1,2,6},coords={
 [2025]={{61.6,31.2}}},lvl=70,qgs={209601},sourceQuests={77191}}),
 q(78155,{c={1,2,6},coords={
-[2023]={{62.4,18.6}}},lvl=70,qgs={194837},sourceQuests={77833},g={
-i(210002,{c={1,2,6},lvl=70,spellID=424039}),
-i(210001,{b=1,c={1,2,6}}),
-i(208581,{b=1,c={1,2,6}})}}),
+[2023]={{62.4,18.6}}},lvl=70,qgs={194837},qis={208581,210001,210002},sourceQuests={77833},g={
+i(210001,{b=1})}}),
 q(78003,{c={1,2,6},coords={
-[2024]={{40.2,64.4}}},lvl=70,qgs={194840},sourceQuests={77835},g={
-i(209352,{b=1,c={1,2,6}}),
-i(208595,{c={1,2,6}}),
-i(209996,{b=1,c={1,2,6},lvl=70,spellID=424845})}}),
+[2024]={{40.2,64.4}}},lvl=70,qgs={194840},qis={208595,209352,209996},sourceQuests={77835},g={
+i(209352,{b=1})}}),
 q(77886,{c={1,2,6},coords={
-[2023]={{82.4,50.6}}},lvl=70,qgs={194842},sourceQuests={77791},g={
-i(210009,{b=1,c={1,2,6}}),
-i(208593,{c={1,2,6}}),
-i(210199,{b=1,c={1,2,6},spellID=423947})}}),
-q(77838,{description="Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",lvl=70,providers={{"i",210199}},sourceQuests={77791,77833,77835},sqreq=1,g={
-i(211927,{b=1,c={1,2,6}}),
-i(208587,{c={1,2,6}}),
-i(208588,{c={1,2,6}}),
-i(208846,{b=1,c={1,2,6},lvl=70,spellID=425023}),
-i(208576,{c={1,2,6}})}}),
+[2023]={{82.4,50.6}}},lvl=70,qgs={194842},qis={208593,210009,210199},sourceQuests={77791},g={
+i(210009,{b=1})}}),
+q(77838,{description="Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",lvl=70,providers={{"i",210199}},qis={208576,208587,208588,208846},qss={211927},sourceQuests={77791,77833,77835},sqreq=1,g={
+i(208846,{b=1,lvl=70,spellID=425023})}}),
 q(78156,{c={1,2,6},coords={
 [2023]={{62.4,18.6}}},lvl=70,qgs={194837},sourceQuests={78155},g={
 i(210003,{b=1,c={1,2,6},cost={{"i",200113,200},{"i",210001,1},{"i",190324,50},{"i",190321,150},{"i",190316,100}}}),
@@ -54949,26 +54864,20 @@ i(209351,{b=1,c={1,2,6},cost={{"i",204460,400},{"i",210009,1},{"i",205413,3},{"i
 i(210010,{b=1,c={1,2,6},spellID=422326,g={
 r(422330,{c={1,2,6},learnedAt=100,requireSkill=165,skillID=2830,u=5})}})}}),
 q(78002,{c={1,2,6},coords={
-[2023]={{62.4,18.6}}},lvl=70,qgs={194837},sourceQuests={78156},g={
-i(210222,{c={1,2,6}}),
-i(210048,{b=1,c={1,2,6},spellID=424385}),
-i(210240,{b=1,c={1,2,6},spellID=425248}),
+[2023]={{62.4,18.6}}},lvl=70,qgs={194837},qis={210048,210222,210240},sourceQuests={78156},g={
 i(211398,{b=1,c={1,2,6},spellID=429137,g={
 i(208578,{b=1,c={1,2,6}})}})}}),
 q(78154,{c={1,2,6},coords={
-[2024]={{40.2,64.4}}},lvl=70,qgs={194840},sourceQuests={78153},g={
-i(209999,{b=1,c={1,2,6},spellID=423972}),
+[2024]={{40.2,64.4}}},lvl=70,qgs={194840},qis={209999},sourceQuests={78153},g={
 i(211397,{b=1,c={1,2,6},spellID=429136,g={
 i(208592,{b=1,c={1,2,6}})}})}}),
 q(78655,{c={1,2,6},coords={
-[2023]={{82.4,50.6}}},cost={{"i",204460,100},{"i",208212,1},{"i",190329,5}},isDaily=1,lvl=70,qgs={194842},sourceQuests={78159},g={
-i(210918,{b=1,c={1,2,6},spellID=427434})}}),
+[2023]={{82.4,50.6}}},cost={{"i",204460,100},{"i",208212,1},{"i",190329,5}},isDaily=1,lvl=70,qgs={194842},qis={210918},sourceQuests={78159},g={
+i(210918,{b=1,spellID=427434})}}),
 q(78160,{c={1,2,6},coords={
-[2023]={{82.4,50.6}}},lvl=70,qgs={194842},sourceQuests={78159},g={
+[2023]={{82.4,50.6}}},lvl=70,qgs={194842},qis={210012,210207},sourceQuests={78159},g={
 i(211396,{b=1,c={1,2,6},spellID=429135,g={
-i(208577,{c={1,2,6}})}}),
-i(210207,{c={1,2,6}}),
-i(210012,{b=1,c={1,2,6},spellID=424024})}}),
+i(208577,{c={1,2,6}})}})}}),
 q(77192,{c={1,2,6},coords={
 [2025]={{61.6,31.2}}},lvl=10,qgs={206107},sourceQuests={77191}}),
 q(77193,{c={1,2,6},coords={
@@ -55273,13 +55182,8 @@ d(109,{difficulties={17,14,15,16},g={
 h(-19,{crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},g={
 i(210780,{b=1,spellID=427075})}}),
 h(-45,{
-q(78355,{lvl=10,providers={{"i",210430}}}),
-q(78421,{lvl=10,qgs={210039},sourceQuests={78355},g={
-i(210470),
-i(210472),
-i(210473),
-i(210475),
-i(210474)}}),
+q(78355,{lvl=10,qss={210430}}),
+q(78421,{lvl=10,qgs={210039},qis={210470,210472,210473,210474,210475},sourceQuests={78355}}),
 q(78429,{lvl=10,qgs={210039},sourceQuests={78421},g={
 i(210498,{b=1,spellID=425996,g={
 i(210494,{b=1,lvl=70,spellID=426327})}}),
@@ -55610,8 +55514,7 @@ d(14,{
 h(-19,{crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},g={
 cu(2707,{rwp=100206,u=2})}}),
 h(-45,{
-q(78600,{lvl=70,qgs={210016},g={
-i(210791)}})}),
+q(78600,{lvl=70,qgs={210016},qis={210791}})}),
 h(-63,{
 i(208442,{f=52,lvl=70,modID=3}),
 s(189737,208427,{f=7,loc=47,lvl=70,modID=3}),
@@ -55826,7 +55729,7 @@ s(188670,207115,{b=1,f=4,loc=44,lvl=70,modID=3}),
 s(188890,207788,{b=1,f=23,lvl=70,modID=3,spellID=424320})}})}),
 d(112,{difficulties={15,16},g={
 h(-45,{
-q(78876,{lvl=10,providers={{"i",211375}},rwp=110002,u=2,g={
+q(78876,{lvl=10,qss={211375},rwp=110002,u=2,g={
 mm(210537,{b=1,questID=78453,u=2})}})}),
 e(2564,{npcID=209333,g={
 crit(63104,{achID=19333}),
@@ -55861,8 +55764,7 @@ d(15,{
 h(-19,{crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},g={
 cu(2708,{rwp=100206,u=2})}}),
 h(-45,{
-q(78601,{lvl=70,qgs={210016},g={
-i(210792)}})}),
+q(78601,{lvl=70,qgs={210016},qis={210792}})}),
 h(-63,{
 i(208442,{f=52,lvl=70,modID=5}),
 s(193306,208427,{f=7,loc=47,lvl=70,modID=5}),
@@ -56079,8 +55981,7 @@ d(16,{
 h(-19,{crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},g={
 cu(2709,{rwp=100206,u=2})}}),
 h(-45,{
-q(78602,{lvl=70,qgs={210016},g={
-i(210793)}})}),
+q(78602,{lvl=70,qgs={210016},qis={210793}})}),
 h(-63,{
 i(208442,{f=52,lvl=70,modID=6}),
 s(193307,208427,{f=7,loc=47,lvl=70,modID=6}),
@@ -64111,7 +64012,7 @@ ach(61253,{collectible=false})}})}),
 h(-21,{
 r(1230473,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256714,requireSkill=755,skillID=2914}),
 r(1230470,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256704,requireSkill=755,skillID=2914}),
-r(1246894,{crs={231636,231865,237415,241546,246404,247676,248015,248605},description="Unclear if this only drop in m+",itemID=259372,requireSkill=755,skillID=2914}),
+r(1246894,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=259372,requireSkill=755,skillID=2914}),
 r(1230472,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256720,requireSkill=755,skillID=2914}),
 r(1230471,{crs={231636,231865,237415,241546,246404,247676,248015,248605},itemID=256708,requireSkill=755,skillID=2914})}),
 inst(1311,{coords={

@@ -82189,7 +82189,7 @@ for i,objectID in ipairs(HORDE_BONFIRES) do ObjectNames[objectID] = "Fogata de l
 for key,value in pairs({
 	[1] = "Nunca implementado [NYI]",
 	[2] = "Eliminado del juego",
-	[3] = "Saldo de Battle.net",
+	[3] = "Dinero Real",
 	[4] = "PvP Elite/Gladiador",
 	[5] = "No aprendible",
 	[6] = "Requiere objetos para una invocación",

@@ -821,7 +821,7 @@ i(18513,{b=1,q=4})}}),
 q(7636,{awp=10001,c={3},coords={
 [1448]={{47,24.48}}},description="You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",lvl=60,maps={1428,1449,1451,1452},providers={{"i",18708}},qgs={14524},rwp=40003,sourceQuests={7633},g={
 qo(1,{coords={
-[1449]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Ungoro Crater.",providers={{"i",18952}}}),
+[1449]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",providers={{"i",18952}}}),
 qo(2,{coords={
 [1428]={{25.3,65.9}}},crs={14529,14534},description="Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",providers={{"i",18953}}}),
 qo(3,{coords={
@@ -835,7 +835,7 @@ q(7508,{c={1,2},lvl=60,maps={234},providers={{"i",18513}},qgs={14368},rwp=30300,
 q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},rwp=30300,sourceQuests={7508},g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}}}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},q=4}),
-i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4}),
+i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4}),
 s(163483,18348,{b=1,c={1,2},f=25,lvl=60,q=4})}}),
 q(7497,{awp=10001,coords={
 [1453]={{67,85}}},learnedAt=300,lvl=60,qgs={14394},r=2,requireSkill=165,sourceQuests={7496},g={
@@ -2005,7 +2005,7 @@ q(8756,{altQuests={8751,8761},coords={
 [1446]={{65,50}}},lvl=60,minReputation={910,42000},qgs={15192},sourceQuests={8755},u=15,g={
 qo(1,{providers={{"i",21203}},u=15}),
 i(21205,{b=1,f=52,lvl=60,minReputation={910,42000},q=4,u=15})}}),
-q(8802,{providers={{"i",21221}},qgs={15379},sourceQuests={8801},u=15,g={
+q(8802,{qgs={15379},qss={21221},sourceQuests={8801},u=15,g={
 i(21712,{b=1,f=51,lvl=60,q=4,u=15}),
 s(164745,21710,{b=1,f=3,lvl=60,q=4,u=15}),
 i(21709,{b=1,f=52,lvl=60,q=4,u=15})}})}}),
@@ -2196,7 +2196,7 @@ s(164669,21582,{b=1,f=4,loc=45,lvl=60,q=4,u=15}),
 i(21596,{b=1,f=52,lvl=60,q=4,u=15}),
 i(21579,{b=1,f=53,lvl=60,q=4,u=15})}})}}),
 inst(754,{awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,sourceQuests={9121},u=16,["zone-text-areaID"]=3456,g={
-ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",u=16,g={
+ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Buff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",u=16,g={
 ach(425,{c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},u=16}),
 q(9251,{c={5,8,9,11},lvl=60,maps={320},qgs={15192},sourceQuests={9250},u=16,g={
 qo(1,{providers={{"i",22733}},u=16}),
@@ -2216,7 +2216,7 @@ crit(747,{achID=425,id=1,u=16})}}),
 q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,providers={{"i",22727}},u=16})}}),
 h(-12,{u=16,g={
 ach(15637,{awp=11403,rwp=11500,u=2}),
-s(169660,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
+s(169660,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
 h(-45,{u=16,g={
 cl(1,{u=16,g={
 q(9037,{coords={
@@ -4705,7 +4705,7 @@ qo(2,{description="Can be found right next to Alexi Barov.",providers={{"i",1344
 qo(3,{description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}},rwp=50004}),
 qo(4,{description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}},rwp=50004})}}),
 q(5531,{coords={
-[1423]={{81.73,57.83}}},lvl=57,providers={{"i",13761}},qgs={11036},rwp=40003,sourceQuests={5522}}),
+[1423]={{81.73,57.83}}},lvl=57,qgs={11036},qis={13761},rwp=40003,sourceQuests={5522}}),
 q(4771,{coords={
 [1423]={{81.5,59.7}}},description="After completing this quest, you can return to Betina to have her give you another Gambit.",lvl=57,qgs={11035},rwp=40003,sourceQuests={5531},g={
 qo(1,{awp=10300,providers={{"n",10432}},rwp=50004}),
@@ -5819,7 +5819,7 @@ h(-56,{
 o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
 o(123329,{
 i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",q=1,rwp=40100})}),
-o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",g={
+o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",g={
 i(7671,{q=1})}}),
 o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
 i(7669,{q=1})}}),
@@ -5988,7 +5988,7 @@ i(9533,{b=1,f=52,q=3})}}),
 q(2770,{coords={
 [1441]={{78,77}}},lvl=40,qgs={4453},rwp=40003,sourceQuests={2769},g={
 qo(1,{providers={{"i",8707}}}),
-i(11122,{b=1,description="Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (which you do a lot in Classic!)",f=53,q=2}),
+i(11122,{b=1,description="Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (Which you do a lot in Classic!)",f=53,q=2}),
 s(159458,9653,{b=1,f=4,loc=40,q=2,rwp=10903,u=2})}}),
 q(2991,{coords={
 [1419]={{67,19.4}}},lvl=40,qgs={8022},r=2,rwp=40003,sourceQuests={2990},g={

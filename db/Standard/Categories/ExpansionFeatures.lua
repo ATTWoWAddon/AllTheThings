@@ -5461,7 +5461,8 @@ q(31534,{coords={
 q(31315,{coords={
 [377]={{31.5,53.3}}},lvl=15,providers={{"o",213767}},qis={86421},sourceQuests={31314},g={
 ach(7296)}}),
-q(31312,{crs={59639},description="Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",lvl=15,minReputation={1272,42000},providers={{"i",86404}}}),
+q(31312,{coords={
+[376]={{43.4,29.1}}},crs={59639},description="Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",lvl=15,minReputation={1272,42000},providers={{"i",86404}}}),
 q(31372,{coords={
 [390]={{87,60.8}}},isBreadcrumb=1,lvl=15,qgs={64036},r=2,u=2}),
 q(31374,{coords={

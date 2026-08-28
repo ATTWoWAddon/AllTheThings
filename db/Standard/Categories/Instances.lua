@@ -8197,7 +8197,7 @@ inst(750,{awp=20001,coords={
 h(-12,{
 ach(959,{maps={75},minReputation={990,42000}})}),
 h(-31,{
-faction(990,{maps={75}})}),
+faction(990,{description="Reputation is obtained from killing mobs in Mount Hyjal raid.\n\nProtip: Remain in the Alliance base when it becomes abandoned as an addtional wave of mobs will spawn. Addtional waves of mobs can be triggered by moving past the boundry of the base. This also applies for the Horde base.",maps={75}})}),
 ah(2575,{type="s",g={
 o(185557,{awp=20100,maps={329},requireSkill=186,g={
 i(23440,{awp=20001}),

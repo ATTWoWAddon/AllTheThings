@@ -860,7 +860,7 @@ i(18513,{b=1,q=4,u=2})}}),
 q(7636,{awp=10001,c={3},coords={
 [77]={{47,24.48}}},description="You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",lvl=60,maps={36,78,81,83},providers={{"i",18708}},qgs={14524},rwp=40003,sourceQuests={7633},u=2,g={
 qo(1,{coords={
-[78]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Ungoro Crater.",providers={{"i",18952}},u=2}),
+[78]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",providers={{"i",18952}},u=2}),
 qo(2,{coords={
 [36]={{25.3,65.9}}},crs={14529,14534},description="Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",providers={{"i",18953}},u=2}),
 qo(3,{coords={
@@ -874,7 +874,7 @@ q(7508,{c={1,2},lvl=60,maps={234},providers={{"i",18513}},qgs={14368},rwp=30300,
 q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},rwp=30300,sourceQuests={7508},u=2,g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}},u=2}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},q=1,u=2}),
-i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,u=2}),
+i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,u=2}),
 s(201131,18348,{b=1,c={1,2},f=25,lvl=60,q=4,u=2})}}),
 q(7497,{coords={
 [84]={{67,85}}},learnedAt=300,lvl=60,qgs={14394},r=2,requireSkill=165,sourceQuests={7496,24428},g={
@@ -2150,7 +2150,7 @@ q(8756,{altQuests={8751,8761},coords={
 [75]={{41.6,49.8}}},lvl=60,minReputation={910,42000},qgs={15192},sourceQuests={8755},u=15,g={
 qo(1,{providers={{"i",21203}},u=15}),
 i(21205,{b=1,f=52,lvl=60,minReputation={910,42000},q=4,u=15})}}),
-q(8802,{providers={{"i",21221}},qgs={15379},sourceQuests={8801},u=15,g={
+q(8802,{qgs={15379},qss={21221},sourceQuests={8801},u=15,g={
 i(21712,{b=1,f=51,lvl=60,q=4,u=15}),
 s(132121,21710,{b=1,f=3,lvl=60,q=4,u=15}),
 i(21709,{b=1,f=52,lvl=60,q=4,u=15})}})}}),
@@ -2366,7 +2366,7 @@ s(133031,22632,{b=1,f=28,lvl=60,q=5,u=2})}}),
 q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,providers={{"i",22727}},u=2})}}),
 h(-12,{u=2,g={
 ach(15637,{awp=11403,rwp=11500,u=2}),
-s(218316,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
+s(218316,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
 h(-45,{u=2,g={
 cl(1,{u=2,g={
 q(9037,{coords={
@@ -3159,8 +3159,7 @@ q(28401,{awp=40003,c={7},coords={
 s(209936,65640,{b=1,f=6,loc=40,q=3}),
 s(209918,65622,{b=1,f=6,loc=40,q=3})}}),
 q(28465,{awp=40003,c={7},coords={
-[85]={{39,47.4}}},qgs={72939},r=1,sourceQuests={28301},g={
-i(64312,{q=1}),
+[85]={{39,47.4}}},qgs={72939},qis={64312},r=1,sourceQuests={28301},g={
 s(209939,65643,{b=1,f=6,loc=40,q=3}),
 s(209926,65630,{b=1,f=6,loc=40,q=3})}}),
 q(28399,{awp=40003,c={9},coords={
@@ -4710,7 +4709,7 @@ s(129328,18380,{b=1,f=7,loc=46,lvl=40,q=3,u=1101}),
 s(129326,18378,{b=1,f=6,loc=46,lvl=40,q=3,u=1101}),
 i(18395,{b=1,f=52,lvl=40,q=3,u=1101})}})}})}}),
 inst(231,{coords={
-[30]={{30.1,74.6}}},description="Horde players can access Gnomeregan from the teleporter in Grom'gol Base Camp, Northen Stranglethorn.",lvl=19,mapID=226,maps={227,228,229},savedInstanceID=90,g={
+[30]={{30.1,74.6}}},description="Horde players can access Gnomeregan from the teleporter in Grom'gol Base Camp, Northern Stranglethorn.",lvl=19,mapID=226,maps={227,228,229},savedInstanceID=90,g={
 h(-63,{
 s(122938,9510,{crs={6228,6235,7079,7800},f=6,loc=47,lvl=24,q=3}),
 s(193798,5108,{crs={6212},f=5,loc=42,lvl=27,q=1}),
@@ -5877,7 +5876,7 @@ qo(3,{awp=100105,description="Can be found in the very back of the first room hi
 qo(4,{awp=100105,description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}},u=2}),
 i(65923,{b=1,f=53,modID=1,q=3,u=2})}}),
 q(5531,{coords={
-[23]={{81.73,57.83}}},lvl=57,providers={{"i",13761}},qgs={11036},rwp=40003,sourceQuests={5522},u=2}),
+[23]={{81.73,57.83}}},lvl=57,qgs={11036},qis={13761},rwp=40003,sourceQuests={5522},u=2}),
 q(4771,{coords={
 [23]={{81.5,59.7}}},lvl=57,qgs={11035},rwp=40003,sourceQuests={5531},u=2,g={
 qo(1,{awp=100105,providers={{"n",10432}},rwp=50004,u=2}),
@@ -7472,7 +7471,7 @@ h(-56,{
 o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
 o(123329,{
 i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",q=3,rwp=40100,u=2})}),
-o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",g={
+o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",g={
 i(7671,{q=1})}}),
 o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
 i(7669,{q=1})}}),
@@ -8057,7 +8056,7 @@ s(138933,28587,{b=1,f=22,lvl=70,q=4,u=17}),
 s(138934,28588,{b=1,f=27,lvl=70,q=4,u=17}),
 s(138932,28586,{b=1,f=4,loc=40,lvl=70,q=4,u=17}),
 s(138931,28585,{b=1,f=4,loc=47,lvl=70,q=4,u=17})}})}}),
-n(17225,{description="Once you have completed the quest chain, you can summon him on the Terrace by clicking on the Urn on the ground.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},sourceQuests={9644},u=17,g={
+n(17225,{description="Once you have completed the quest chain, you can summon him on the Master's Terrace by clicking on the Urn on the ground.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},sourceQuests={9644},u=17,g={
 s(138950,28604,{b=1,f=28,lvl=70,q=4,u=17}),
 s(138957,28611,{b=1,f=8,lvl=70,q=4,u=17}),
 s(138952,28606,{b=1,f=8,lvl=70,q=4,u=17}),
@@ -8497,7 +8496,7 @@ inst(750,{awp=20001,coords={
 h(-12,{u=19,g={
 ach(959,{maps={75},minReputation={990,42000},u=19})}}),
 h(-31,{u=19,g={
-faction(990,{maps={75},u=19})}}),
+faction(990,{description="Reputation is obtained from killing mobs in Mount Hyjal raid.\n\nProtip: Remain in the Alliance base when it becomes abandoned as an addtional wave of mobs will spawn. Addtional waves of mobs can be triggered by moving past the boundry of the base. This also applies for the Horde base.",maps={75},u=19})}}),
 ah(2575,{type="s",u=19,g={
 o(185557,{awp=20100,learnedAt=375,maps={329},requireSkill=186,u=19,g={
 i(23440,{awp=20001,q=3,u=19}),
@@ -9644,7 +9643,7 @@ s(144563,34613,{b=1,f=5,loc=41,lvl=70,modID=2,q=4,u=21}),
 mnt(46628,{b=1,itemID=35513,lvl=40,q=4,u=21}),
 s(144564,34614,{b=1,f=6,loc=42,lvl=70,modID=2,q=4,u=21})}})}})}}),
 inst(250,{awp=20001,coords={
-[108]={{39.63,57.67}}},lore="Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",lvl=61,mapID=272,savedInstanceID=557,u=17,g={
+[108]={{39.63,57.67}}},lore="Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spontaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",lvl=61,mapID=272,savedInstanceID=557,u=17,g={
 h(-45,{u=17,g={
 q(29583,{awp=40300,coords={
 [108]={{57.6,53.6}}},isBreadcrumb=1,lvl=64,qgs={21400},r=2,u=17}),
@@ -11129,7 +11128,7 @@ qo(1,{crs={17882},providers={{"i",24248}},u=17}),
 i(28109,{b=1,f=53,q=3,u=17}),
 i(28108,{b=1,f=53,q=3,u=17})}})}}),
 h(-63,{u=17,g={
-i(24246,{description="Drops commmonly from all Underbog mobs, and can be turned in to the NPCs named T'shu for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. T'shu can be found just inside the Underbog dungeon.",providers={{"o",183385}},q=1,u=17})}}),
+i(24246,{description="Drops commonly from all Underbog mobs, and can be turned in to the NPCs named T'shu for Sporeggar reputation. Each turn in requires 5 Sanguine Hibiscus. T'shu can be found just inside the Underbog dungeon.",providers={{"o",183385}},q=1,u=17})}}),
 d(1,{u=17,g={
 e(576,{npcID=17770,u=17,g={
 s(134826,24451,{b=1,f=6,loc=43,lvl=63,modID=1,q=3,u=17}),
@@ -20075,7 +20074,7 @@ q(29194,{coords={
 [114]={{34.5,25.3}}},maps={370},qgs={52835},sourceQuests={29193},u=41}),
 q(29225,{maps={198,370},qgs={53567},sourceQuests={29194},u=41}),
 q(29234,{coords={
-[198]={{62.1,23.1}}},description="Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal. You can do this by completing the Delgation Tracker quest or by having someone else that has previously opened their own portal open the portal for you.\n\nNOTE: You will be locked out of doing the same for others should you choose to go this route.",providers={{"o",209098}},qgs={52995},sourceQuests={29225},u=41,g={
+[198]={{62.1,23.1}}},description="Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal. You can do this by completing the Delegation Tracker quest or by having someone else that has previously opened their own portal open the portal for you.\n\nNOTE: You will be locked out of doing the same for others should you choose to go this route.",providers={{"o",209098}},qgs={52995},sourceQuests={29225},u=41,g={
 qo(1,{providers={{"i",69646}},u=41})}}),
 o(209098,{cost={{"i",71008,1},{"i",71016,1},{"i",71015,1},{"i",71017,1}},description="Completing this quest means that you personally unlocked the Circle of Thorns Portal and can open the portal for others in the future instead of taking the lazy route and having someone else open the portal for you.",lc={1,"questID",29234},questID=29432,u=41}),
 q(29239,{coords={
@@ -20912,7 +20911,7 @@ s(216388,78472,{b=1,f=21,lvl=85,q=4,u=42}),
 s(216391,78475,{b=1,f=20,lvl=85,q=4,u=42}),
 s(216395,78479,{b=1,f=25,lvl=85,q=4,u=42}),
 s(216387,78471,{b=1,f=32,lvl=85,q=4,u=42})}})}}),
-n(53879,{sharedDescription="For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in it's place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amangamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",u=42,g={
+n(53879,{sharedDescription="For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in its place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amalgamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",u=42,g={
 n(55891,{u=42}),
 n(55870,{u=42})}})}}),
 inst(66,{awp=40003,coords={
@@ -21087,7 +21086,7 @@ s(214124,72817,{b=1,f=7,loc=46,lvl=85,modID=2,q=4,u=42}),
 s(214131,72824,{b=1,f=5,loc=42,lvl=85,modID=2,q=4,u=42}),
 s(214130,72823,{b=1,f=5,loc=40,lvl=85,modID=2,q=4,u=42})}})}})}}),
 inst(71,{awp=40003,coords={
-[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,u=40,g={
+[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alexstrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,u=40,g={
 h(-45,{u=40,g={
 q(28854,{coords={
 [293]={{50,50}}},qgs={50387},u=40,g={
@@ -22118,7 +22117,8 @@ ach(62055,{awp=50502,description="Players must complete |cFFE50D12EACH:|r dungeo
 title(255,{u=2}),
 mnt(1247598,{b=1,itemID=248742,lvl=90,q=4,u=2})}}),
 ach(62059,{awp=50503,rwp=50504,u=2,g={
-title(736,{u=2})}}),
+title(736,{u=2}),
+mnt(1298510,{b=1,itemID=275928,lvl=90,q=4,u=2})}}),
 ach(62060,{awp=50504,rwp=50505,u=50,g={
 title(737,{u=50}),
 mnt(1247597,{b=1,itemID=248744,lvl=90,q=4,u=50})}}),

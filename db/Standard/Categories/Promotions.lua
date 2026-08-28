@@ -296,7 +296,7 @@ de(25936,{awp=120007,description="Received after buying the Blizzcon 2026 World 
 mnt(1293456,{awp=120007,description="Received after buying the Blizzcon 2026 World of Warcraft Bundle.",itemID=274260,rwp=120100,u=3})}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
-h(-45,{rwp=20001,u=2,g={
+h(-45,{rwp=40006,u=2,g={
 q(8547,{awp=20001,maps={94},providers={{"i",20938}},races={10},u=3}),
 q(12781,{awp=30002,c={6},lvl=8,maps={23},providers={{"i",39713}},u=3}),
 q(9278,{awp=20001,c={11},maps={97},providers={{"i",22888}},r=2,u=3}),
@@ -306,21 +306,21 @@ q(5842,{maps={57},providers={{"i",14648}},races={4},u=2}),
 q(5843,{maps={1},providers={{"i",14649}},races={2,8},u=2}),
 q(5844,{maps={7},providers={{"i",14650}},races={6},u=2}),
 q(5847,{maps={18},providers={{"i",14651}},races={5},u=2})}}),
-h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=20001,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
-ach(662,{awp=30002,providers={{"i",13584}},rwp=30002,u=2}),
-ach(663,{awp=30002,providers={{"i",13583}},rwp=30002,u=2}),
-ach(664,{awp=30002,providers={{"i",13582}},rwp=30002,u=2}),
+h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=40006,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
+ach(662,{awp=30002,providers={{"i",13584}},u=3}),
+ach(663,{awp=30002,providers={{"i",13583}},u=3}),
+ach(664,{awp=30002,providers={{"i",13582}},u=3}),
 p(93,{awp=11101,itemID=13584,npcID=11326,spellID=17708,u=3,g={
-crit(34630,{achID=662,awp=30002,id=3,rwp=30002,u=2})}}),
+crit(34630,{achID=662,awp=30002,id=3,u=3})}}),
 p(92,{awp=11101,itemID=13583,npcID=11325,spellID=17707,u=3,g={
-crit(34631,{achID=663,awp=30002,id=3,rwp=30002,u=2})}}),
+crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
 p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
-crit(34632,{achID=664,awp=30002,id=3,rwp=30002,u=2})}})}})}}),
+crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
 x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
-ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
-p(131,{awp=20001,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
-crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
-p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
+ach(665,{awp=30002,providers={{"i",25535}},u=3}),
+p(131,{awp=20003,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
+crit(34633,{achID=665,awp=30002,id=3,u=3})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
+p(111,{awp=20003,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=120007,u=2,g={
 mnt(346136,{b=1,itemID=248090,lvl=10,u=2})}}),
 h(-694,{awp=110205,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={
@@ -349,7 +349,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -373,7 +373,7 @@ ach(10320,{providers={{"i",128425}},rwp=70305,u=2}),
 ach(10321,{rwp=70305,u=2}),
 mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
 p(1691,{itemID=128426,npcID=95841,rwp=70305,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,rwp=100107,u=2})}})}}),
+crit(28787,{achID=10321,id=1,u=2})}})}}),
 x(8,{awp=70305,description="These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(12230,{providers={{"i",153540}},r=1,rwp=80307,u=2}),
 ach(12229,{providers={{"i",153539}},r=2,rwp=80307,u=2}),
@@ -381,7 +381,7 @@ ach(12232,{rwp=80307,u=2}),
 mnt(255696,{b=1,itemID=153540,lvl=10,r=1,rwp=80307,u=2}),
 mnt(255695,{b=1,itemID=153539,lvl=10,r=2,rwp=80307,u=2}),
 p(2143,{itemID=153541,npcID=129049,rwp=80307,spellID=255702,u=2,g={
-crit(38154,{achID=12232,id=1,rwp=100107,u=2})}})}}),
+crit(38154,{achID=12232,id=1,u=2})}})}}),
 x(9,{awp=80307,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",rwp=90205,u=2,g={
 ach(14283,{providers={{"s",307932}},u=2}),

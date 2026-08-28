@@ -1719,7 +1719,7 @@ i(18513,{b=1,q=4})}}),
 q(84546,{awp=11503,c={3},coords={
 [1448]={{47,24.48}}},description="You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",lvl=60,maps={1428,1449,1451,1452},providers={{"i",18708}},qgs={14524},sourceQuests={7633},g={
 qo(1,{awp=10001,coords={
-[1449]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Ungoro Crater.",providers={{"i",18952}},rwp=40003}),
+[1449]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",providers={{"i",18952}},rwp=40003}),
 qo(2,{awp=10001,coords={
 [1428]={{25.3,65.9}}},crs={14529,14534},description="Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",providers={{"i",18953}},rwp=40003}),
 qo(3,{awp=10001,coords={
@@ -1739,7 +1739,7 @@ q(7508,{c={1,2},lvl=60,maps={234},providers={{"i",18513}},qgs={14368},rwp=11503,
 q(84557,{awp=11503,c={1,2,4},lvl=60,maps={234},qgs={14368},sourceQuests={84556},u=1608,g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}},u=1608}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},q=4,u=1608}),
-i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,u=1608}),
+i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4,u=1608}),
 s(224720,228679,{b=1,c={1,2,4},f=25,lvl=60,q=4,u=1608})}}),
 q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},rwp=11503,sourceQuests={7508},u=2,g={
 s(163483,18348,{b=1,c={1,2},f=25,lvl=60,q=4})}}),
@@ -4281,7 +4281,7 @@ q(8756,{altQuests={8751,8761},coords={
 [1446]={{65,50}}},lvl=60,minReputation={910,42000},qgs={15192},rwp=11505,sourceQuests={8755},u=2,g={
 qo(1,{providers={{"i",21203}},u=2}),
 i(21205,{b=1,f=52,lvl=60,minReputation={910,42000},q=4,u=2})}}),
-q(8802,{providers={{"i",21221}},qgs={15379},rwp=11505,sourceQuests={8801},u=2,g={
+q(8802,{qgs={15379},qss={21221},rwp=11505,sourceQuests={8801},u=2,g={
 i(21712,{b=1,f=51,lvl=60,q=4,u=2}),
 s(164745,21710,{b=1,f=3,lvl=60,q=4,u=2}),
 i(21709,{b=1,f=52,lvl=60,q=4,u=2})}})}}),
@@ -4942,7 +4942,7 @@ s(249342,235013,{b=1,c={8},f=25,lvl=60,q=4,u=1610}),
 s(249343,235014,{b=1,f=23,lvl=60,q=4,u=1610}),
 s(266765,235282,{b=1,f=27,lvl=60,q=4,u=1610})}})}})}})}}),
 inst(754,{awp=11100,description="[TBC] \nNAXX is the raid that opened in SoD Phase 7. \nThe Loot and Quest information is still unclear. It will be added after the wowhead guide is updated.",isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,sourceQuests={9121},u=1611,["zone-text-areaID"]=3456,g={
-ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",u=1611,g={
+ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Buff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",u=1611,g={
 ach(425,{c={5,8,9,11},providers={{"i",236398},{"i",236399},{"i",236400},{"i",236401}},u=1611,g={
 crit(749,{achID=425,id=1,questID=9257,u=1}),
 crit(748,{achID=425,id=1,questID=9270,u=1}),
@@ -4963,7 +4963,7 @@ q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splint
 d(9,{rwp=11506,u=2,g={
 h(-12,{awp=11403,u=2,g={
 ach(15637,{rwp=11500,u=2}),
-s(169660,191481,{b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
+s(169660,191481,{b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
 h(-45,{u=2,g={
 cl(1,{u=2,g={
 q(9037,{coords={
@@ -8653,7 +8653,7 @@ n(216666,{description="Located outside the instance near the teleporter.",u=1606
 i(213736,{b=1,q=2,u=1606}),
 i(9277,{q=1,u=1606}),
 s(159364,9444,{f=8,lvl=21,q=1,rwp=40003,u=1606})}}),
-n(217280,{description="The Grubbis fight starts with a short gauntlet style fight, a mix of Troggs will spawn in small waves followed by Poison Clouds, you should kite the the Troggs into the Poison Clouds. This causes the Poison Clouds to explode and kill the Troggs and then despawn.\n\nAfter a few waves, Grubbis spawns alongside his basilisk pet - Chomper, because of his pet this fight easier to manage with two tanks, but not required with disciplined damage dealers who focus Grubbis himself - this makes threat more manageable. Additionally, everyone with an interrupt must be paying close attention to Chomper's casts, to kick the Petrify cast - otherwise the only tank will lose threat of both bosses.\n\nOnce he spawns, the waves of Troggs and Poison Clouds continue to spawn, these can be managed through the same means as during the gauntlet by kiting the creatures into the clouds. It is possible to ignore the clouds for uptime and cleave or ignore the adds while focusing the boss but it is not recommended for the average raid.",u=1606,g={
+n(217280,{description="The Grubbis fight starts with a short gauntlet style fight, a mix of Troggs will spawn in small waves followed by Poison Clouds, you should kite the Troggs into the Poison Clouds. This causes the Poison Clouds to explode and kill the Troggs and then despawn.\n\nAfter a few waves, Grubbis spawns alongside his basilisk pet - Chomper, because of his pet this fight easier to manage with two tanks, but not required with disciplined damage dealers who focus Grubbis himself - this makes threat more manageable. Additionally, everyone with an interrupt must be paying close attention to Chomper's casts, to kick the Petrify cast - otherwise the only tank will lose threat of both bosses.\n\nOnce he spawns, the waves of Troggs and Poison Clouds continue to spawn, these can be managed through the same means as during the gauntlet by kiting the creatures into the clouds. It is possible to ignore the clouds for uptime and cleave or ignore the adds while focusing the boss but it is not recommended for the average raid.",u=1606,g={
 s(195328,213542,{b=1,f=1,lvl=40,q=3,u=1606}),
 s(195289,213351,{b=1,f=8,lvl=40,q=3,u=1606}),
 s(195273,213327,{b=1,f=7,loc=45,lvl=40,q=3,u=1606}),
@@ -9444,7 +9444,7 @@ qo(2,{description="Can be found right next to Alexi Barov.",providers={{"i",1344
 qo(3,{description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}},rwp=50004}),
 qo(4,{description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}},rwp=50004})}}),
 q(5531,{coords={
-[1423]={{81.73,57.83}}},lvl=57,providers={{"i",13761}},qgs={11036},rwp=40003,sourceQuests={5522}}),
+[1423]={{81.73,57.83}}},lvl=57,qgs={11036},qis={13761},rwp=40003,sourceQuests={5522}}),
 q(4771,{coords={
 [1423]={{81.5,59.7}}},description="After completing this quest, you can return to Betina to have her give you another Gambit.",lvl=57,qgs={11035},rwp=40003,sourceQuests={5531},g={
 qo(1,{awp=10300,providers={{"n",10432}},rwp=50004}),
@@ -11001,7 +11001,7 @@ h(-56,{
 o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
 o(123329,{
 i(7740,{description="Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",q=1,rwp=40100})}),
-o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",g={
+o(125477,{description="In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",g={
 i(7671,{q=1})}}),
 o(113757,{description="WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",g={
 i(7669,{q=1})}}),
@@ -11182,7 +11182,7 @@ i(9533,{b=1,f=52,q=3})}}),
 q(2770,{coords={
 [1441]={{78,77}}},lvl=40,qgs={4453},rwp=40003,sourceQuests={2769},g={
 qo(1,{providers={{"i",8707}}}),
-i(11122,{b=1,description="Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (which you do a lot in Classic!)",f=53,q=2,sourceQuests={2770}}),
+i(11122,{b=1,description="Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (Which you do a lot in Classic!)",f=53,q=2,sourceQuests={2770}}),
 s(159458,9653,{b=1,f=4,loc=40,q=2,rwp=10903,u=2})}}),
 q(2991,{coords={
 [1419]={{67,19.4}}},lvl=40,qgs={8022},r=2,rwp=40003,sourceQuests={2990},g={

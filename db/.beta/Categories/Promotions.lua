@@ -168,7 +168,7 @@ de(9281,{itemID=253297,spellID=1255998,u=2})),(function(t)if GetCVar("portal")~=
 de(9271,{itemID=253255,spellID=1255905,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 toy(258840,{u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 s(298858,253402,{f=29,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(254735,{f=100,spellID=1258573,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(1258573,{itemID=254735,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 toy(258136,{u=2}))}})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(269743,{b=1,spellID=1286271,u=2,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(251542,{f=55,spellID=1252638,u=2})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
@@ -279,7 +279,7 @@ p(3579,{awp=100107,description="Received after buying the Blizzcon 2023 Collecti
 ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2})}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
-h(-45,{rwp=20001,u=2,g={
+h(-45,{rwp=40006,u=2,g={
 q(8547,{awp=20001,maps={94},providers={{"i",20938}},races={10},u=3}),
 q(12781,{awp=30002,c={6},lvl=8,maps={23},providers={{"i",39713}},u=3}),
 q(9278,{awp=20001,c={11},maps={97},providers={{"i",22888}},r=2,u=3}),
@@ -289,21 +289,21 @@ q(5842,{maps={57},providers={{"i",14648}},races={4},u=2}),
 q(5843,{maps={1},providers={{"i",14649}},races={2,8},u=2}),
 q(5844,{maps={7},providers={{"i",14650}},races={6},u=2}),
 q(5847,{maps={18},providers={{"i",14651}},races={5},u=2})}}),
-h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=20001,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
-ach(662,{awp=30002,providers={{"i",13584}},rwp=30002,u=2}),
-ach(663,{awp=30002,providers={{"i",13583}},rwp=30002,u=2}),
-ach(664,{awp=30002,providers={{"i",13582}},rwp=30002,u=2}),
+h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=40006,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
+ach(662,{awp=30002,providers={{"i",13584}},u=3}),
+ach(663,{awp=30002,providers={{"i",13583}},u=3}),
+ach(664,{awp=30002,providers={{"i",13582}},u=3}),
 p(93,{awp=11101,itemID=13584,npcID=11326,spellID=17708,u=3,g={
-crit(34630,{achID=662,awp=30002,id=3,rwp=30002,u=2})}}),
+crit(34630,{achID=662,awp=30002,id=3,u=3})}}),
 p(92,{awp=11101,itemID=13583,npcID=11325,spellID=17707,u=3,g={
-crit(34631,{achID=663,awp=30002,id=3,rwp=30002,u=2})}}),
+crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
 p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
-crit(34632,{achID=664,awp=30002,id=3,rwp=30002,u=2})}})}})}}),
+crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
 x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
-ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
-p(131,{awp=20001,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
-crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
-p(111,{awp=20001,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
+ach(665,{awp=30002,providers={{"i",25535}},u=3}),
+p(131,{awp=20003,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
+crit(34633,{achID=665,awp=30002,id=3,u=3})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
+p(111,{awp=20003,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=120007,u=3,g={
 mnt(346136,{b=1,itemID=248090,lvl=10,u=3})}}),
 h(-694,{awp=110205,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={

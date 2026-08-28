@@ -1442,7 +1442,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=10,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=17,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=24,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=31,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=7,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=14,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=21,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=28,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
@@ -1468,7 +1467,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=28,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=5,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=12,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=19,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=26,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=2,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=9,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=16,["weekday"]=2,["year"]=2027},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=9,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=16,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=23,["weekday"]=2,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=30,["weekday"]=2,["year"]=2027},{["remappedID"]=374})
 })
 -- Filter Database Module
 _.FilterConstants = {
@@ -1744,7 +1744,7 @@ local ObjectNames = {
 	[68] = "Wanted Poster",
 	[76] = "An Empty Jar",
 	[119] = "Abercrombie's Crate",
-	[256] = "WANTED",
+	[256] = "Wanted!",
 	[257] = "Suspicious Barrel",
 	[259] = "Half-buried Barrel",
 	[261] = "Damaged Crate",
@@ -2328,7 +2328,7 @@ local ObjectNames = {
 	[176249] = "Scourge Data",
 	[176317] = "The Argent Hold",
 	[176325] = "Blacksmithing Plans",
-	[176344] = "Document Chest",
+	[176344] = "Document Chest #1",
 	[176356] = "Sacred Highborne Writings",
 	[176361] = "Scourge Cauldron",
 	[176392] = "Scourge Cauldron",
@@ -2526,8 +2526,8 @@ local ObjectNames = {
 	[181672] = "Wickerman Effigy",
 	[181686] = "Warsong Lumber Pile",
 	[181687] = "Lumber Pile",
-	[190483] = "Document Chest",
-	[190484] = "Document Chest",
+	[190483] = "Document Chest #2",
+	[190484] = "Document Chest #3",
 	[201579] = "Keystone Shard",
 	[207724] = "Shipwreck Debris",
 	[253069] = "Blacker Lotus",
@@ -2692,7 +2692,7 @@ local ObjectNames = {
 	[495505] = "Favored Riches",
 	[495577] = "Chromatic Stash",
 	[495578] = "Chromatic Supplies",
-	[100000000] = "Archaeologist's Cart",
+	[100000000] = "Sentinax Portal",
 	[100000001] = "Unlit Torch",
 } _.ObjectNames = ObjectNames
 local ObjectIcons = {
@@ -3032,7 +3032,7 @@ local ObjectModels = {
 	[68] = 199421,
 	[76] = 199180,
 	[119] = 190543,
-	[256] = 199424,
+	[256] = 199421,
 	[257] = 198280,
 	[259] = 199563,
 	[261] = 198168,
@@ -11862,6 +11862,7 @@ L.MAIN_LIST_REQUIRES_REFRESH = "[Öffne die Hauptliste um den Fortschritt zu akt
 L.MAIN_ONLY = "Nur Hauptcharakter"
 L.MAXIMUM_STANDING_WITH_FACTION = "Erfordert einen niedrigeren Ruf als %s bei %s."
 L.MIN_MAX_STANDING_WITH_FACTION = "Erfordert einen Ruf zwischen %s und %s bei %s."
+L.MINI_LIST = "Mini Liste"
 L.MINIMAP_BUTTON_CHECKBOX = "Zeig den Minimap Knopf"
 L.MINIMAP_LABEL = "Minimap Knopf"
 L.MINIMAP_SLIDER = "Minimap Knopf Größe"
@@ -12707,7 +12708,7 @@ localize(ObjectNames, {
 	[176249] = "Geißeldaten",
 	[176317] = "Der Argentumtresor",
 	[176325] = "Schmiedekunstpläne",
-	[176344] = "Dokumententruhe",
+	[176344] = "Dokumententruhe #1",
 	[176356] = "Hochheilige Schriften der Hochgeborenen",
 	[176361] = "Geißelkessel",
 	[176392] = "Geißelkessel",
@@ -12898,8 +12899,8 @@ localize(ObjectNames, {
 	[181672] = "Weidenmann",
 	[181686] = "Holzstapel",
 	[181687] = "Holzstapel",
-	[190483] = "Dokumententruhe",
-	[190484] = "Dokumententruhe",
+	[190483] = "Dokumententruhe #2",
+	[190484] = "Dokumententruhe #3",
 	[201579] = "Schlüsselsteinscherbe",
 	[207724] = "Schiffswracktrümmer",
 	[253069] = "Schwärzerer Lotus",
@@ -14512,6 +14513,7 @@ L.MAIN_LIST_SLIDER_LABEL = "Échelle de la liste principale"
 L.MARKS_OF_HONOR_DESC = "Les Marques d’honneur doivent être affichées dans une fenêtre contextuelle pour afficher tout le contenu 'normal'.\n(Tapez '/att' dans le chat puis faites " .. SHIFT_KEY_TEXT .. " + clic pour pour afficher l’objet)\n\n|cFFfe040fAprès l’achat et l’utilisation d’un ensemble, une nouvelle connexion et une actualisation forcée d’ATT (dans cet ordre)\npeuvent être nécessaires pour enregistrer correctement tous les objets.|r"
 L.MAXIMUM_STANDING_WITH_FACTION = "Il faut avoir obtenu une note inférieure à %s avec %s."
 L.MIN_MAX_STANDING_WITH_FACTION = "Il faut avoir obtenu une note entre %s et %s avec %s."
+L.MINI_LIST = "Mini Liste"
 L.MINI_LIST_DESC = "Cette liste contient les informations pertinentes pour la zone actuelle, qui ne peuvent être trouvées dans la base de données d’ATT."
 L.MINI_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle des mini-listes.\n\nDéfaut : 1"
 L.MINI_LIST_SLIDER_LABEL = "Échelle de la mini-liste"
@@ -14571,6 +14573,7 @@ L.PROFILE_INITIALIZE_TOOLTIP = "Cela permettra à vos variables sauvegardées po
 L.PROFILE_NEW_TOOLTIP = "Créer un nouveau profil qui sera utilisé par le personnage actuel."
 L.PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n" .. SHIFT_KEY_TEXT .. " + clic pour accéder au profil sélectionné"
 L.PROFILES_PAGE = "Profils"
+L.PROGRESS = "Progression"
 L.PROVIDERS = "Fournisseur(s)"
 L.QUEST_DESC = "Cliquez sur ce bouton pour sélectionner une quête aléatoire basé sur ce qu’il vous manque."
 L.QUEST_GIVER = "Donneur de quête"
@@ -14582,7 +14585,7 @@ L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Activer cette option pour inclure spécifiqu
 L.RACE_LOCKED = "Race bloquée"
 L.RAID_DESC = "Cliquez sur ce bouton pour sélectionner un raid aléatoire basé sur ce qu’il vous manque."
 L.RAID_DIFF = "Difficulté du raid"
-L.RECENTLY_MADE_OBTAINABLE_PT2 = [[|cFFFF0000"|cFFFF0000La meilleure source d’information ! Merci|r]]
+L.RECENTLY_MADE_OBTAINABLE_PT2 = "|cFFFF0000La meilleure source d’information ! Merci|r"
 L.RECIPES_CHECKBOX = "Recettes"
 L.REFRESHING_COLLECTION = "Mise à jour de la collection ..."
 L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s"
@@ -14771,7 +14774,7 @@ localize(ObjectNames, {
 	[68] = "Avis de recherche",
 	[76] = "Une jarre vide",
 	[119] = "Caisse d'Abercrombie",
-	[256] = "AVIS DE RECHERCHE",
+	[256] = "Avis de recherche !",
 	[257] = "Tonneau suspect",
 	[259] = "Tonneau à moitié enseveli",
 	[261] = "Caisse endommagée",
@@ -15349,7 +15352,7 @@ localize(ObjectNames, {
 	[176249] = "Donnée du Fléau",
 	[176317] = "Le Coffre d'argent",
 	[176325] = "Plans de forgeron",
-	[176344] = "Coffre de documents",
+	[176344] = "Coffre de documents n°1",
 	[176356] = "Textes sacrés des Bien-nés",
 	[176361] = "Chaudron du Fléau",
 	[176392] = "Chaudron du Fléau",
@@ -15539,8 +15542,8 @@ localize(ObjectNames, {
 	[181672] = "Effigie de l'homme d'osier",
 	[181686] = "Tas de bois",
 	[181687] = "Tas de bois",
-	[190483] = "Coffre de documents",
-	[190484] = "Coffre de documents",
+	[190483] = "Coffre de documents n°2",
+	[190484] = "Coffre de documents n°3",
 	[201579] = "Éclat de la pierre de voûte",
 	[207724] = "Débris d’épave",
 	[253069] = "Lotus encore plus noir",
@@ -15570,6 +15573,7 @@ localize(ObjectNames, {
 	[405633] = "Cantine mâcheroc",
 	[405879] = "Manuel de la Société des apothicaires",
 	[405946] = "Coffre poussiéreux",
+	[406006] = "Idole",
 	[406736] = "Planque perdue",
 	[406918] = "Sac de messager",
 	[407117] = "Nid de gueule d’acier abandonné",
@@ -17047,6 +17051,7 @@ L.EXPANSION_FILTER_LABEL = "Filtra per Espansione"
 L.EXPANSION_FILTER_TOOLTIP = "Attiva/disattiva la visibilità del contenuto di %s"
 L.EXPANSION_FILTERS_PAGE = "Filtri Espansione"
 L.FOLLOWERS_CHECKBOX = "|T" .. _.asset("Expansion_WOD") .. ":0|t Seguaci & Avventurieri"
+L.ILLUSION = "Illusione"
 L.ILLUSION_ID = "ID dell’Illusione"
 L.ILLUSIONS_CHECKBOX = "Illusioni d'Incantamento"
 L.NEW_VERSION_FLAVORS = {"perché AllTheThings ha fame."}
@@ -17119,25 +17124,52 @@ localize(L.HEADER_DESCRIPTIONS, {
 localize(ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[32] = "Cassa Sprofondata",
+	[33] = "Cassa Chiusa",
 	[34] = "Vecchio Fiasco",
 	[35] = "Scrigno del Capitano",
 	[36] = "Barile Spezzato",
 	[47] = "Ricercato!",
+	[52] = "La Caduta di Gurubashi",
+	[54] = "La Tomba dell'Imperatore",
 	[55] = "Corpo Smangiucchiato",
 	[56] = "Cadavere di Rolf",
 	[57] = "Tavoletta Mistica degli Scalporosso",
+	[58] = "Gri'lek il Nomade",
 	[60] = "Ricercato: Gath'ilzogg",
 	[61] = "Tomba Rovinata",
 	[68] = "Manifesto dei Ricercati",
-	[256] = "RICERCATO",
+	[76] = "Giara Vuota",
+	[119] = "Cassa di Abercrombie",
+	[256] = "Ricercato!",
 	[257] = "Barile Sospetto",
 	[259] = "Barile Mezzo Sepolto",
 	[261] = "Cassa Danneggiata",
+	[263] = "Rifornimenti di Kurzen",
+	[264] = "Rifornimenti di Kurzen",
 	[269] = "Barile Custodito di Birra del Tuono",
+	[271] = "Casse della Lega dei Minatori",
+	[272] = "Cassa della Carne di MacGrann",
+	[276] = "Cestino di Erbaluce",
+	[290] = "Guardaroba di Ciglioarcuato",
+	[321] = "Lacrima di Tilloa",
+	[324] = "Vena Piccola di Torio",
+	[331] = "Terreno Smosso",
+	[333] = "Reliquia Antica",
+	[334] = "Reliquia Antica",
+	[375] = "Zucca di Tirisfal",
+	[759] = "Sorgente Sacra",
+	[1166] = "Cassa di Alexston",
 	[1557] = "Tavolo da Pranzo di Lillith",
+	[1560] = "Forziere del Magazzino",
 	[1561] = "Cassa Sigillata",
+	[1562] = "Forziere del Maresciallo Haggard",
 	[1586] = "Cassa di Candele",
 	[1609] = "Catapulta delle Fauci di Drago",
+	[1617] = "Fogliargenta",
+	[1618] = "Sbocciapace",
+	[1619] = "Bulboterro",
+	[1620] = "Magareale",
+	[1621] = "Grandespina",
 	[1627] = "Cassa di Dalaran",
 	[1673] = "Vilpigna",
 	[1740] = "Documenti della Lega dei Tagliagole",
@@ -17604,6 +17636,7 @@ L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s, o Comple
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s o Exterminador|r"
 L.PLAYER_TITLE_THE_HUGGLER = "|cffF58CBA%s o Abraçador|r"
 L.PLEASE_REPORT_MESSAGE = "Por favor reporte isso no Discord do ATT em #classic-errors! Obrigado!"
+L.PROGRESS = "Progresso"
 L.RACE_LOCKED = "Travado por raça"
 L.RECIPES_CHECKBOX = "Receitas"
 L.REPORT_TIP = "\n(" .. CTRL_KEY_TEXT .. "+C para copiar o texto completo do report para sua área de transferência)"
@@ -17717,7 +17750,7 @@ localize(ObjectNames, {
 	[68] = "Pôster de Procura-se",
 	[76] = "Jarra Vazia",
 	[119] = "Caixote do Abercrombie",
-	[256] = "PROCURA-SE",
+	[256] = "Procura-se!",
 	[257] = "Barril Suspeito",
 	[259] = "Barril Semienterrado",
 	[261] = "Caixote Danificado",
@@ -18244,7 +18277,7 @@ localize(ObjectNames, {
 	[176245] = "Arquivo Escarlate",
 	[176249] = "Dados do Flagelo",
 	[176325] = "Instruções de Ferraria",
-	[176344] = "Baú de Documentos",
+	[176344] = "Baú de Documentos nº 1",
 	[176361] = "Caldeirão do Flagelo",
 	[176392] = "Caldeirão do Flagelo",
 	[176393] = "Caldeirão do Flagelo",
@@ -18388,8 +18421,8 @@ localize(ObjectNames, {
 	[181672] = "Efígie do Homem de Palha",
 	[181686] = "Pilha de Tábuas dos Brado Guerreiro",
 	[181687] = "Pilha de Madeira",
-	[190483] = "Baú de Documentos",
-	[190484] = "Baú de Documentos",
+	[190483] = "Baú de Documentos nº 2",
+	[190484] = "Baú de Documentos nº 3",
 	[201579] = "Fragmento do Monolito",
 	[207724] = "Destroços do Naufrágio",
 	[253069] = "Lótus Mais Preto",
@@ -20558,7 +20591,7 @@ localize(ObjectNames, {
 	[68] = [[Плакат "Разыскивается"]],
 	[76] = "Пустой кувшин",
 	[119] = "Ящик Аберкромби",
-	[256] = "РАЗЫСКИВАЕТСЯ",
+	[256] = "Разыскивается!",
 	[257] = "Подозрительная бочка",
 	[259] = "Полузакопанная бочка",
 	[261] = "Поврежденный ящик",
@@ -21137,7 +21170,7 @@ localize(ObjectNames, {
 	[176249] = "Сведения о Плети",
 	[176317] = "Серебряный Оплот",
 	[176325] = "Чертежи кузнечного дела",
-	[176344] = "Ящик с документами",
+	[176344] = "Ящик с документами #1",
 	[176356] = "Священные письмена высокорожденных",
 	[176361] = "Котел Плети",
 	[176392] = "Котел Плети",
@@ -21330,8 +21363,8 @@ localize(ObjectNames, {
 	[181672] = "Фигурка Плетеного человека",
 	[181686] = "Штабель пиломатериалов",
 	[181687] = "Штабель пиломатериалов",
-	[190483] = "Ящик с документами",
-	[190484] = "Ящик с документами",
+	[190483] = "Ящик с документами #2",
+	[190484] = "Ящик с документами #3",
 	[201579] = "Осколок краеугольного камня",
 	[207724] = "Обломки кораблекрушения",
 	[253069] = "Чернейший лотос",
@@ -23540,7 +23573,7 @@ localize(ObjectNames, {
 	[176245] = "붉은십자군 기록",
 	[176249] = "스컬지 자료",
 	[176325] = "대장기술 도면",
-	[176344] = "문서함",
+	[176344] = "문서함 #1",
 	[176361] = "스컬지 가마솥",
 	[176392] = "스컬지 가마솥",
 	[176393] = "스컬지 가마솥",
@@ -23699,8 +23732,8 @@ localize(ObjectNames, {
 	[181672] = "밀짚인형",
 	[181686] = "전쟁노래 목재 더미",
 	[181687] = "목재 더미",
-	[190483] = "문서함",
-	[190484] = "문서함",
+	[190483] = "문서함 #2",
+	[190484] = "문서함 #3",
 	[201579] = "쐐기돌 조각",
 	[207724] = "난파선 파편",
 	[253069] = "더 검은 연꽃",
@@ -25378,6 +25411,7 @@ L.CONFIRM_DELETE = "\n \n¿Estás seguro de que quieres eliminar esto?"
 L.CONTAINS = "Contiene:"
 L.CONTAINS_SLIDER_TOOLTIP = "Usa esto para personalizar el número de cosas resumidas a mostrar en la ventana emergente.\n\nPor defecto: 25"
 L.COORDINATES = "Coordenadas"
+L.COST = "Coste"
 L.COST_DESC = "Esto contiene el desglose visual de lo que se requiere para obtener o comprar esta cosa."
 L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeDivisa|r"
 L.COST_TOTAL = "Coste total"
@@ -25563,6 +25597,7 @@ L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] fueron añadidos a tu colección."
 L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] fueron añadidos a tu colección. No encontrado en la base de datos. Por favor reportarlo al Discord de ATT!"
 L.ITEM_ID_REMOVED = "%s (%d) fue eliminado de tu colección."
 L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] fueron eliminados de tu colección."
+L.ITEM_LEVEL = "iLvl (Nivel promedio de objetos)"
 L.ITEM_STRING = "Cadena de texto de objetos"
 L.KEYBINDINGS_TEXT = "Puedes definir atajos de teclado para ATT en las opciones del juego."
 L.KNOWN_BY = "Conocido por %s"
@@ -25578,6 +25613,7 @@ L.LIMITED_QUANTITY = "Tiene una cantidad limitada puede que no esté presente si
 L.LINKED_ACCOUNT_TOOLTIP = "La cuenta de este personaje se sincronizará automáticamente cuando entres al mundo. Para un juego óptimo, deberías añadir a la lista de permitidos un personaje banco y probablemente no tu personaje principal para no afectar a la jugabilidad con tu personaje mientras se sincronizan los datos de cuentas."
 L.LINKED_ACCOUNTS = "Cuentas conectadas"
 L.LINKED_ACCOUNTS_TOOLTIP = "Muestra todas las cuentas conectadas que hayas definido hasta ahora."
+L.LIST = "Mini Lista"
 L.LOCATIONS_SLIDER_TOOLTIP = "Usa esto para personalizar el numero de ubicaciones de fuentes a mostrar en la ventana emergente.\n\nNOTA: También mostrará \"X\" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5"
 L.LOCK_CRITERIA_FACTION_FORMAT = "%s con %s (Actual: %s)"
 L.LOCK_CRITERIA_FACTION_LABEL = "Reputación con facción"
@@ -25609,6 +25645,7 @@ L.MAXIMUM_STANDING_WITH_FACTION = "Requiere un nivel menor de %s con %s."
 L.MERCH_BUTTON_LABEL = "Mercancía"
 L.MERCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\n¡Aquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!"
 L.MIN_MAX_STANDING_WITH_FACTION = "Requiere un nivel entre %s y %s con %s."
+L.MINI_LIST = "Mini Lista"
 L.MINI_LIST_DESC = "Esta lista contiene información relevante sobre la zona actual en la que estás, que no puede encontrarse en la base de datos de ATT"
 L.MINI_LIST_SCALE_TOOLTIP = "Usa esto para personalizar la escala de todas las Mini Listas.\n\nPor defecto: 1"
 L.MINI_LIST_SLIDER_LABEL = "Escala Mini Listas"
@@ -26143,7 +26180,7 @@ localize(ObjectNames, {
 	[68] = "Cartel de Se busca",
 	[76] = "Una jarra vacía",
 	[119] = "Cajón de Abercrombie",
-	[256] = "SE BUSCA",
+	[256] = "¡Se busca!",
 	[257] = "Barrica sospechosa",
 	[259] = "Barrica semienterrada",
 	[261] = "Cajón dañado",
@@ -26721,7 +26758,7 @@ localize(ObjectNames, {
 	[176249] = "Información sobre la Plaga",
 	[176317] = "Bastión Argenta",
 	[176325] = "Diseños de herrería",
-	[176344] = "Cofre de documentos",
+	[176344] = "Cofre de documentos n.º 1",
 	[176356] = "Sagradas escrituras de los Altonato",
 	[176361] = "Caldera de la Plaga",
 	[176392] = "Caldera de la Plaga",
@@ -26909,8 +26946,8 @@ localize(ObjectNames, {
 	[181672] = "Efigie del Hombre de Mimbre",
 	[181686] = "Montón de madera",
 	[181687] = "Montón de madera",
-	[190483] = "Cofre de documentos",
-	[190484] = "Cofre de documentos",
+	[190483] = "Cofre de documentos n.º 2",
+	[190484] = "Cofre de documentos n.º 3",
 	[201579] = "Fragmento de piedra angular",
 	[207724] = "Restos de naufragio",
 	[253069] = "Loto renegrido",
@@ -27016,7 +27053,7 @@ localize(ObjectNames, {
 for key,value in pairs({
 	[1] = "Nunca implementado [NYI]",
 	[2] = "Eliminado del juego",
-	[3] = "Saldo de Battle.net",
+	[3] = "Dinero Real",
 	[4] = "PvP Elite/Gladiador",
 	[5] = "No aprendible",
 	[7] = "Puesto comercial",
@@ -27052,14 +27089,14 @@ do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAAFomentar el uso de dinero real en cualquier versión del juego está ampliamente mal visto. Participa en este contenido bajo tu propia responsabilidad.|r",
 	[11] = "|cFFFFAAAAIncluidos Núcleo de magma y La guarida de Onyxia.|r",
-	[1605] = "|cFFFFAAAAIncluía la banda Cavernas de Brazanegra, el JvJ del mundo de Vallefresno y tenía un límite de nivel de 25.|r",
-	[1606] = "|cFFFFAAAAIncluía la banda Gnomeregan, el JvJ del mundo de Vega de tuercespina, y aumento el limite de nivel a 40.|r",
-	[1607] = "|cFFFFAAAAIncluía la banda Templo sumergido y aumento el limite de nivel a 50.|r",
-	[1608] = "|cFFFFAAAAIncluía Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados Tormentosos, Escara Impía, y aumento el limite de nivel a 60.|r",
-	[1609] = "|cFFFFAAAAIncluía Guarida de Alanegra, Zul'Gurub, y la nueva banda Vega de Cristal.|r",
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla|r",
-	[1611] = "|cFFFFAAAAIncluía Naxxramas, y la nueva mazmorra Las Criptas de Karazhan|r",
-	[1612] = "|cFFFFAAAAIncluía Classic+?|r",
+	[1605] = "|cFFFFAAAAIncluye la banda Cavernas de Brazanegra, el JvJ del mundo de Vallefresno y tenía un límite de nivel de 25.|r",
+	[1606] = "|cFFFFAAAAIncluye la banda Gnomeregan, el JvJ del mundo de Vega de tuercespina, y aumento el limite de nivel a 40.|r",
+	[1607] = "|cFFFFAAAAIncluye la banda Templo sumergido y aumento el limite de nivel a 50.|r",
+	[1608] = "|cFFFFAAAAIncluye Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados Tormentosos, Escara Impía, y aumento el limite de nivel a 60.|r",
+	[1609] = "|cFFFFAAAAIncluye Guarida de Alanegra, Zul'Gurub, y la nueva banda Vega de Cristal.|r",
+	[1610] = "|cFFFFAAAAIncluye Ahn'Qiraj, y la nueva banda Arboleda de la Pesadilla|r",
+	[1611] = "|cFFFFAAAAIncluye Naxxramas, y la nueva mazmorra Las Criptas de Karazhan|r",
+	[1612] = "|cFFFFAAAAIncluye Classic+?|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -28406,6 +28443,7 @@ L.COLORS_ICONS = "Iconos y Colores"
 L.COMMANDS_PART_2 = "|cffFFFFFFComo ejemplo, usar |cff00FF98/att achievement:9547|r te mostrará algo increíble.|r"
 L.COMPLETIONIST_MODE = "+Origenes"
 L.CONDUIT_ID = "ID de conducto"
+L.COST = "Costo"
 L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeMoneda|r"
 L.COST_TOTAL = "Costo total"
 L.CREATURE_ID = "ID de Criatura"
@@ -28644,6 +28682,12 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-723] = "Aumentan los informes de invasiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
 	[-736] = "Esta sección está para promociones del mundo real que introdujeron contenido extremadamente raro en el juego antes de que algunos de ellos aparecieran en la tienda del juego.",
 })
+localize(ObjectNames, {
+	[76] = "Un tarro vacío",
+	[290] = "Guardarropa de Cejade",
+	[1560] = "Cofre de almacenamiento",
+	[1562] = "Cofre del mariscal Haggard",
+})
 for key,value in pairs({
 	[2] = "Removido del juego",
 	[7] = "Puesto de venta",
@@ -28654,14 +28698,21 @@ for key,value in pairs({
 	[2] = "|cFFFF0000Esto ha sido removido del juego.|r",
 	[7] = "|cFFAAFFAAEste artículo está disponible en el puesto de venta|r",
 	[1605] = "|cFFAAFFAAEsto no estuvo disponible hasta la Fase 1 de la Temporada de Descubrimiento.|r",
+	[1606] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 2 de Temporada de descubrimiento.|r",
+	[1607] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de Temporada de descubrimiento.|r",
+	[1608] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 4 de Temporada de descubrimiento.|r",
+	[1609] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 5 de Temporada de descubrimiento.|r",
+	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de Temporada de descubrimiento.|r",
+	[1611] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 7 de Temporada de descubrimiento.|r",
+	[1612] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 8 de Temporada de descubrimiento.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
-	[1606] = "|cFFFFAAAAIncluía la banda Gnomeregan, el JvJ del mundo de Vega de Tuercespina, y aumento el limite de nivel a 40.|r",
-	[1608] = "|cFFFFAAAAIncluía Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados de la Tormenta, Escara Impía, y aumento el limite de nivel a 60.|r",
-	[1609] = "|cFFFFAAAAIncluía Guarida de Alanegra, Zul'Gurub, y la nueva banda La Vega de Cristal.|r",
-	[1610] = "|cFFFFAAAAIncluía Ahn'Qiraj, y la nueva banda Arboleda de la Pesadillas|r",
-	[1611] = "|cFFFFAAAAIncluía Naxxramas, y el nuevo calabozo Las Criptas de Karazhan|r",
+	[1606] = "|cFFFFAAAAIncluye la banda Gnomeregan, el JvJ del mundo de Vega de Tuercespina, y aumento el limite de nivel a 40.|r",
+	[1608] = "|cFFFFAAAAIncluye Núcleo de magma, La guarida de Onyxia, Barranco del Demonio, Acantilados de la Tormenta, Escara Impía, y aumento el limite de nivel a 60.|r",
+	[1609] = "|cFFFFAAAAIncluye Guarida de Alanegra, Zul'Gurub, y la nueva banda La Vega de Cristal.|r",
+	[1610] = "|cFFFFAAAAIncluye Ahn'Qiraj, y la nueva banda Arboleda de la Pesadillas|r",
+	[1611] = "|cFFFFAAAAIncluye Naxxramas, y el nuevo calabozo Las Criptas de Karazhan|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -30663,6 +30714,7 @@ localize(ObjectNames, {
 	[269] = "被看守着的酒桶",
 	[270] = "无人守卫的雷酒桶",
 	[271] = "矿工联盟的储物箱",
+	[272] = "马克格拉恩的储肉柜",
 	[276] = "微光草篮",
 	[287] = "书呆子赫罗德的档案",
 	[288] = "书呆子赫罗德的保险箱",
@@ -31161,7 +31213,7 @@ localize(ObjectNames, {
 	[176245] = "血色十字军档案",
 	[176249] = "天灾军团档案",
 	[176325] = "锻造设计图",
-	[176344] = "文件箱",
+	[176344] = "文件箱 #1",
 	[176361] = "瘟疫之锅",
 	[176392] = "天灾之锅",
 	[176393] = "瘟疫之锅",
@@ -31296,8 +31348,8 @@ localize(ObjectNames, {
 	[181672] = "稻草人",
 	[181686] = "木材堆",
 	[181687] = "木材堆",
-	[190483] = "文件箱",
-	[190484] = "文件箱",
+	[190483] = "文件箱 #2",
+	[190484] = "文件箱 #3",
 	[201579] = "钥石碎片",
 	[207724] = "船只残骸",
 	[386691] = "图书馆书籍",
@@ -31359,7 +31411,7 @@ localize(ObjectNames, {
 	[457101] = "《荣耀决斗仪式》",
 	[457102] = "《元素奥义傻瓜入门第III卷：奥术》",
 	[462233] = "闪光的熔火岩块",
-	[100000000] = "考古学家的车",
+	[100000000] = "森提纳克斯号传送门",
 	[100000001] = "未点燃的火把",
 })
 for key,value in pairs({
@@ -33563,6 +33615,40 @@ localize(L.HEADER_LORE, {
 localize(ObjectNames, {
 	[31] = "老舊獅子雕像",
 	[32] = "沉沒的箱子",
+	[47] = "懸賞！",
+	[55] = "被吃掉一半的屍體",
+	[56] = "羅爾夫的屍體",
+	[57] = "血頂知識石板",
+	[58] = "漫遊者格里雷克",
+	[60] = "懸賞:加塞爾佐格",
+	[61] = "破舊的墳墓",
+	[119] = "亞伯克隆比的木箱",
+	[256] = "懸賞！",
+	[257] = "可疑的桶子",
+	[261] = "破損的木箱",
+	[263] = "庫爾森補給品",
+	[264] = "庫爾森補給品",
+	[269] = "被看守著的雷霆麥芽酒桶",
+	[271] = "礦工聯盟的木箱",
+	[272] = "馬克格拉恩的儲肉櫃",
+	[276] = "微光草籃",
+	[290] = "法布隆的櫃子",
+	[321] = "蒂羅亞之淚",
+	[324] = "瑟銀礦脈",
+	[331] = "鬆軟的土壤",
+	[333] = "古代聖物",
+	[334] = "古代聖物",
+	[375] = "提里斯法南瓜",
+	[759] = "聖泉",
+	[1166] = "艾力克斯頓的箱子",
+	[1557] = "莉莉絲的餐桌",
+	[1560] = "儲藏箱",
+	[1561] = "密封的木箱",
+	[1562] = "哈迦德的箱子",
+	[1586] = "蠟燭木箱",
+	[1609] = "龍喉投石車",
+	[1617] = "銀葉草",
+	[1618] = "寧神花",
 	[103815] = "安伯米爾保險箱",
 	[105176] = "風險投資公司保險箱",
 	[105570] = "聯盟保險箱",
