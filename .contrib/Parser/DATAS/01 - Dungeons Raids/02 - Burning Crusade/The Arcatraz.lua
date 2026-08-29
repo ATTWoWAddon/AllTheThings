@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(254, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Arcatraz
+	inst(254, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3846,	-- The Arcatraz

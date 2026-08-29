@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(250, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Mana Tombs
+	inst(250, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- Mana Tombs
 		["lore"] = "Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spontaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",
 		-- #if BEFORE MOP
 		["zone-text-names"] = { [[~DUNGEON_FLOOR_MANATOMBS1]] },	-- Mana Tombs

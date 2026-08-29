@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 		ach(11747, {["timeline"] = {ADDED_7_2_0}}),	-- Merely a Set (Serpentshrine Cavern and The Eye)
 		ach(1287, {		-- Outland Dungeon Hero
 			-- Meta Achievement

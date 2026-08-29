@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(260, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Slave Pens
+	inst(260, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3717,	-- The Slave Pens

@@ -2494,7 +2494,7 @@ root(ROOTS.Zones, {
 						["description"] = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 						["coord"] = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["groups"] = {
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_2_1_0 } }, {
 							i(32759, {	-- Accelerator Module
 								["cost"] = { { "i", 32569, 35 } },	-- Apexis Shard
 							}),
@@ -2552,7 +2552,7 @@ root(ROOTS.Zones, {
 									i(31567),	-- Skystalker's Gloves
 								},
 							}),
-						},
+						}),
 					})),
 					n(19499, {	-- Cahill <Weaponsmith>
 						["coord"] = { 37.6, 63.8, BLADES_EDGE_MOUNTAINS },
@@ -2603,7 +2603,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 						["coord"] = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
-						["groups"] = bubbleDownClassicRep(FACTION_OGRILA, {
+						["groups"] = bubbleDownClassicRep(FACTION_OGRILA, bubbleDown({ ["timeline"] = { ADDED_2_1_0 } }, {
 							{		-- Neutral
 								i(33934),	-- Crystal Healing Potion
 								i(33935),	-- Crystal Mana Potion
@@ -2665,35 +2665,35 @@ root(ROOTS.Zones, {
 									},
 								}),
 							},
-						}),
+						})),
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22266, {	-- Ogri'la Grubgiver
 						["coord"] = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
-						["groups"] = {
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_2_1_0 } }, {
 							i(32686),	-- Mingo's Fortune Giblets
 							i(32685),	-- Ogri'la Chicken Fingers
 							i(29453),	-- Sporeggar Mushroom
 							i(27859),	-- Zangar Caps
-						},
+						}),
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23110, {	-- Ogri'la Keg King
 						["coord"] = { 27.9, 57.6, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
-						["groups"] = {
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_2_1_0 } }, {
 							i(32667),	-- Bash Ale
 							i(32668),	-- Dos Ogris
-						},
+						}),
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22270, {	-- Ogri'la Merchant
 						["coord"] = { 27.8, 58.5, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { ADDED_2_1_0 },
 						["minReputation"] = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
-						["groups"] = {
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_2_1_0 } }, {
 							i(32758),	-- Brute Cologne
-						},
+						}),
 					})),
 					n(19473, {	-- Raiza
 						["coord"] = { 53.0, 59.0, BLADES_EDGE_MOUNTAINS },

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(255, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Black Morass
+	inst(255, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Black Morass
 		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2366,	-- The Black Morass

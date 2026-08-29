@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(252, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Sethekk Halls
+	inst(252, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- Sethekk Halls
 		["lore"] = "Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3791,	-- Sethekk Halls

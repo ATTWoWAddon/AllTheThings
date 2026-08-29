@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(256, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Blood Furnace
+	inst(256, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Blood Furnace
 		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3713,	-- The Blood Furnace
