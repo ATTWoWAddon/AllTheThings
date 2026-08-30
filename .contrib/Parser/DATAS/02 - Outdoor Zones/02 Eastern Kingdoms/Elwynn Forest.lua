@@ -1785,6 +1785,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if BEFORE 3.3.0
 							["groups"] = {
 								objective(1, {	-- 0/1 Powers of the Void
+									["provider"] = { "o", 83763 },	-- Stolen Books
 									["provider"] = { "i", 6785 },	-- Powers of the Void (QI!)
 									["coord"] = { 56.7, 44.0, ELWYNN_FOREST },
 								}),

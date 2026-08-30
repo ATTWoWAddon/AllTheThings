@@ -6395,6 +6395,22 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "软泥覆盖的金矿脉",
 		},
 	},
+	[83763] = {
+		readable = "Stolen Books",
+		text = {
+			en = "Stolen Books",
+			es = "Libros robados",
+			mx = "Libros robados",
+			de = "Gestohlene Bücher",
+			fr = "Livres dérobés",
+			it = "Stolen Books",
+			pt = "Livros Roubados",
+			ru = "Краденые книги",
+			ko = "도난당한 책",
+			cn = "被偷走的书",
+			tw = "被偷走的書",
+		},
+	},
 	[85562] = {
 		readable = "Ironband's Strongbox",
 		model = 196976,
