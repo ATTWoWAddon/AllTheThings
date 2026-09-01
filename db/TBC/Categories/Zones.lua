@@ -2636,7 +2636,7 @@ r(19052,{crs={6201},itemID=15728,learnedAt=265,q=2,requireSkill=165,rwp=40003}),
 r(17571,{awp=11101,coords={
 [1447]={{53.6,23.8},{56.6,23.6}}},crs={6201},itemID=13491,learnedAt=280,q=2,requireSkill=171,rwp=40003}),
 r(19794,{crs={6195},itemID=16045,learnedAt=270,q=2,requireSkill=202,rwp=40003})})}}),
-m(1943,{awp=20001,lore="Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",maps={98,99},u=17,g={
+m(1943,{awp=20003,lore="Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",maps={98,99},u=17,g={
 m(468,{icon=135756,lore="Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",u=17,["zone-text-areas"]={3526,3560,3527,3559,3529,3530,3528,3561},g={
 h(-45,{u=17,g={
 q(9798,{cost={{"i",23003,1}},lvl=2,providers={{"i",24414}},r=2,u=17}),
@@ -3009,7 +3009,7 @@ i(23850,{b=1,coords={
 i(23676,{crs={17200,17201},description="Only drops from stags on Azuremyst Isle.",q=1,u=17}),
 i(23759,{b=1,coords={
 [1943]={{25.6,70.2},{28.4,78},{31.8,77.6},{36.6,78.4},{39.8,78.4}}},crs={17193,17194,17195},lvl=6,q=1,r=2,u=17})}})}}),
-m(1950,{awp=20001,lore="Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",lvl=10,u=17,g={
+m(1950,{awp=20003,lore="Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",lvl=10,u=17,g={
 h(-12,{u=17,g={
 ach(861,{u=17,g={
 crit(1601,{achID=43,id=1})}})}}),
@@ -3426,8 +3426,8 @@ m(75,{coords={
 [1446]={{65.9,49.4}}},icon=134156,lore="Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",maps={74},["zone-text-areaID"]=1941,g={
 h(-31,{awp=20001,g={
 faction(989,{icon=134156,maps={273,274},u=17,g={
-crit(4765,{achID=763,id=1,r=1,u=17}),
-crit(4765,{achID=764,id=1,r=2,u=17})}})}}),
+crit(4765,{achID=763,awp=20003,id=1,r=1,u=17}),
+crit(4765,{achID=764,awp=20003,id=1,r=2,u=17})}})}}),
 h(-45,{
 q(10277,{awp=20003,coords={
 [1446]={{58.4,54.2}}},lvl=66,qgs={20130},sourceQuests={10279},u=17}),
@@ -9804,7 +9804,7 @@ r(17577,{crs={7437},itemID=13497,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 r(17575,{awp=11101,coords={
 [1452]={{61.8,68.6},{64.2,69}}},crs={7428},itemID=13495,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 r(19830,{coords={
-[1452]={{23.4,35.4},{25.4,35.4}}},crs={7437},itemID=16054,learnedAt=300,q=2,requireSkill=202,rwp=40003}),
+[1452]={{59.6,49}}},crs={7437},itemID=16054,learnedAt=300,q=2,requireSkill=202,rwp=40003}),
 i(12432,{crs={7443,7444,7445,7446},providers={{"i",12384}},q=1,rwp=40003}),
 i(18665,{c={5},crs={7461,7463},f=53,lvl=60,q=4,rwp=40003}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},q=1,rwp=40003}),
@@ -10209,7 +10209,7 @@ r(196,{c={1,2,3,7}}),
 r(198,{c={1,2,4,5,7,11}}),
 r(197,{c={1,2,3,7}}),
 r(199,{c={1,2,7,11}})}})}})}}),
-m(1954,{awp=20001,isRaid=1,lore="Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",u=17,g={
+m(1954,{awp=20003,isRaid=1,lore="Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",u=17,g={
 h(-31,{u=17,g={
 faction(911,{OnTooltip=_.OnTooltipDB.RuneclothTurnIns,r=1,u=17})}}),
 h(-44,{u=17,g={
@@ -10364,9 +10364,9 @@ qo(2,{coords={
 [1954]={{80.4,51}}},cost=1500000,crs={16683},providers={{"i",24285}},u=17})}}),
 q(9737,{c={2},coords={
 [1954]={{92,38.8}}},lvl=60,maps={317},qgs={25223},races={10},rwp=40003,sourceQuests={9736},u=17,g={
-qo(1,{awp=20001,crs={17910,17911,17912,17913,17914},providers={{"i",24287}},u=17}),
-s(135903,25549,{awp=20001,b=1,f=9,q=1,u=17}),
-mnt(34767,{awp=20001,c={2},races={10},u=17}),
+qo(1,{awp=20003,crs={17910,17911,17912,17913,17914},providers={{"i",24287}},u=17}),
+s(135903,25549,{awp=20003,b=1,f=9,q=1,u=17}),
+mnt(34767,{awp=20003,c={2},races={10},u=17}),
 crit(8907,{achID=2358,id=1})}})}}),
 h(-58,{u=17,g={
 n(16631,{coords={
@@ -10473,7 +10473,7 @@ r(201,{c={1,2,3,4,8,9}}),
 r(200,{c={1,2,3}}),
 r(2567,{c={1,3,4}}),
 r(202,{c={1,2,3}})}})}})}}),
-m(1453,{isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",g={
+m(1453,{isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",["zone-text-areas"]={1519,2918},g={
 h(-30,{
 exp(5150,{collectible=false}),
 exp(6292,{collectible=false}),
@@ -14807,7 +14807,7 @@ q(3105,{c={9},coords={
 q(1598,{altQuests={1599},c={9},coords={
 [1429]={{49.9,42.6}}},qgs={459},r=2,rwp=30300,g={
 qo(1,{coords={
-[1429]={{56.7,44}}},providers={{"i",6785}}}),
+[1429]={{56.7,44}}},providers={{"i",6785},{"o",83763}}}),
 r(688)}}),
 q(33,{coords={
 [1429]={{48.9,40.1}}},qgs={196},r=2,rwp=40003,sourceQuests={5261},g={
@@ -15082,7 +15082,7 @@ s(117185,1195,{awp=100107,coords={
 i(1399,{crs={476},f=55,q=1,rwp=40003}),
 s(116995,781,{awp=100107,coords={
 [1429]={{23.8,91.6},{26.6,89.6},{27.6,95.4},{28,86.8}}},crs={97,478},f=23,lvl=4,q=1,rwp=40003})})}}),
-m(1941,{awp=20001,lore="Eversong Woods is the starter zone for the Blood Elf race. It is a golden forest with typical high elf buildings. In the center of the map is a blighted strip known as the Dead Scar, a remnant from Arthas' battle against the High Elves. Quests involve learning about the blood elves' rich history, decadent lifestyle, and their struggles to keep the Dead Scar from growing.",u=17,g={
+m(1941,{awp=20003,lore="Eversong Woods is the starter zone for the Blood Elf race. It is a golden forest with typical high elf buildings. In the center of the map is a blighted strip known as the Dead Scar, a remnant from Arthas' battle against the High Elves. Quests involve learning about the blood elves' rich history, decadent lifestyle, and their struggles to keep the Dead Scar from growing.",u=17,g={
 m(467,{icon=135761,lore="Sunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving.",u=17,["zone-text-areas"]={3431},g={
 h(-45,{u=17,g={
 q(8336,{awp=11201,coords={
@@ -15136,7 +15136,7 @@ qo(3,{coords={
 i(20474,{b=1,f=113,q=1,u=17}),
 s(131487,20996,{b=1,f=5,loc=45,q=1,u=17}),
 s(131486,20995,{b=1,f=4,loc=44,q=1,u=17})}}),
-q(8338,{providers={{"i",20483}},races={10},u=17}),
+q(8338,{qss={20483},races={10},u=17}),
 q(8345,{awp=11201,coords={
 [1941]={{38.8,19.4}}},lvl=2,qgs={15295},races={10},rwp=60002,u=17,g={
 qo(1,{coords={
@@ -15263,7 +15263,7 @@ crit(1510,{achID=859,id=1,u=17})}}),
 exp(3475,{u=17,g={
 crit(1532,{achID=859,id=1,u=17})}})}}),
 h(-32,{u=17,g={
-fp(82,{coords={
+fp(82,{awp=20001,coords={
 [1941]={{54.4,50.8}}},crs={16192},r=1,u=17})}}),
 prof(182,{u=17,g={
 o(181166,{awp=20005,description="This node can be gathered by any herbalist, but is expected to become restricted to Blood-Elf only in a future expansion. Please let us know in the ATT Discord if this already have happened in given iterations of Classic.",u=17,g={
@@ -15596,7 +15596,7 @@ r(201,{c={1,2,3,4,8,9}}),
 r(200,{c={1,2,3}}),
 r(2567,{c={1,3,4}}),
 r(202,{c={1,2,3}})}})}})}}),
-m(1942,{awp=20001,lore="Ghostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.",lvl=10,maps={96},u=17,g={
+m(1942,{awp=20003,lore="Ghostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.",lvl=10,maps={96},u=17,g={
 h(-12,{u=17,g={
 ach(858,{u=17,g={
 crit(1551,{achID=42,id=1})}})}}),
@@ -16354,7 +16354,7 @@ s(118664,3336,{awp=100107,coords={
 [1424]={{57.2,84.2},{59.6,89.4}}},crs={2368,2370},f=20,lvl=24,q=2,rwp=40003}),
 r(13620,{crs={2374,2375,2376,2377,14276},itemID=11152,learnedAt=145,q=2,requireSkill=333}),
 s(118755,3429,{crs={2427,2428},f=5,loc=45,lvl=19,q=2,rwp=40003}),
-s(118457,3053,{awp=80001,crs={2344,14275},f=6,loc=42,lvl=23,q=2,rwp=40003}),
+s(118457,3053,{awp=80001,crs={2344},f=6,loc=42,lvl=23,q=2,rwp=40003}),
 s(119858,4724,{awp=100107,coords={
 [1424]={{71.2,74.2},{72,81}}},crs={2345},f=5,loc=40,lvl=25,q=2,rwp=40003}),
 s(119857,4723,{awp=100107,coords={
@@ -20801,7 +20801,7 @@ s(121127,6315,{awp=100107,coords={
 p(58,{crs={1042,1044,1069},itemID=8499,petTypeID=2,q=1,spellID=10697}),
 s(116977,756,{awp=100107,coords={
 [1437]={{48,18.6},{61.2,25.4}}},crs={1053},f=22,lvl=24,q=2,rwp=40003})})}})}}),
-m(1945,{awp=20001,lore="Outland is the shattered floating remnants of the destroyed world of Draenor, the homeworld of the orcs and refuge of the draenei. After the sundering of Draenor, Outland was thrown partially towards the Twisting Nether, and is now in a constant state of degradation. It became the domain of the pitlord Magtheridon, who was eventually deposed and replaced by Illidan Stormrage until his death at the Black Temple.",u=17,["zone-text-continent"]=1,g={
+m(1945,{awp=20003,lore="Outland is the shattered floating remnants of the destroyed world of Draenor, the homeworld of the orcs and refuge of the draenei. After the sundering of Draenor, Outland was thrown partially towards the Twisting Nether, and is now in a constant state of degradation. It became the domain of the pitlord Magtheridon, who was eventually deposed and replaced by Illidan Stormrage until his death at the Black Temple.",u=17,["zone-text-continent"]=1,g={
 h(-12,{u=17,g={
 ach(1262,{r=2,u=17}),
 ach(1274,{r=1,rwp=50004,u=17}),
@@ -20907,7 +20907,7 @@ qo(1,{coords={
 i(35232,{b=1,f=55,q=1,u=2101})}}),
 q(10554,{coords={
 [1955]={{54.7,44.3}}},minReputation={932,0},qgs={18166},sourceQuests={10551},u=17}),
-q(10169,{awp=20003,coords={
+q(10169,{coords={
 [1955]={{47,83.5}}},qgs={19485},rwp=20400,u=2}),
 q(11514,{coords={
 [1955]={{49.8,42.6}}},isDaily=1,lvl=70,maps={1949},maxReputation={1077,42000},qgs={24932},sourceQuests={11534},u=2102,g={
@@ -21115,7 +21115,7 @@ r(29568,{isLimited=1,itemID=23591,learnedAt=330,q=1,requireSkill=164,u=17}),
 r(29569,{isLimited=1,itemID=23592,learnedAt=330,q=1,requireSkill=164,u=17}),
 r(29566,{isLimited=1,itemID=23590,learnedAt=325,q=1,requireSkill=164,u=17}),
 r(29571,{isLimited=1,itemID=23593,learnedAt=335,q=1,requireSkill=164,u=17}),
-r(32656,{isLimited=1,itemID=25846,learnedAt=350,q=1,requireSkill=164,rwp=50004,u=17})}}),
+r(32656,{awp=20001,isLimited=1,itemID=25846,learnedAt=350,q=1,requireSkill=164,rwp=50004,u=17})}}),
 n(33630,{coords={
 [1955]={{38.6,71.8}}},u=17}),
 n(19043,{coords={
@@ -21150,7 +21150,7 @@ r(31082,{b=1,itemID=24182,learnedAt=370,minReputation={935,21000},q=3,requireSki
 s(145097,35359,{b=1,c={11},f=5,loc=41,lvl=70,minReputation={935,21000},q=3,u=18}),
 s(145072,35330,{b=1,c={9},f=4,loc=46,lvl=70,minReputation={935,21000},q=3,u=18}),
 s(145087,35345,{b=1,c={8},f=4,loc=44,lvl=70,minReputation={935,21000},q=3,u=18}),
-r(27926,{b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333,u=17}),
+r(27926,{awp=20001,b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333,u=17}),
 r(34010,{b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333,u=17}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},q=2,rwp=50004,u=17}),
 r(17632,{b=1,itemID=13517,learnedAt=300,minReputation={935,21000},q=1,requireSkill=171,u=17}),
@@ -22010,7 +22010,7 @@ n(19663,{coords={
 [1955]={{63.6,70}}},minReputation={1011,0},u=17,g={
 r(34009,{isLimited=1,itemID=28282,learnedAt=325,q=1,requireSkill=333,u=17}),
 r(28022,{isLimited=1,itemID=22565,learnedAt=335,q=1,requireSkill=333,u=17}),
-r(32667,{itemID=25849,learnedAt=375,q=1,requireSkill=333,rwp=50004,u=17}),
+r(32667,{awp=20001,itemID=25849,learnedAt=375,q=1,requireSkill=333,rwp=50004,u=17}),
 r(28016,{isLimited=1,itemID=22562,learnedAt=310,q=1,requireSkill=333,u=17}),
 r(28019,{isLimited=1,itemID=22563,learnedAt=340,q=1,requireSkill=333,u=17})}}),
 n(25195,{coords={
@@ -22037,7 +22037,7 @@ s(145149,35412,{b=1,c={2},f=7,loc=42,lvl=70,minReputation={1011,9000},q=3,u=18})
 s(145095,35357,{b=1,c={11},f=5,loc=40,lvl=70,minReputation={1011,9000},q=3,u=18}),
 s(145073,35331,{b=1,c={9},f=4,loc=41,lvl=70,minReputation={1011,9000},q=3,u=18}),
 s(145086,35344,{b=1,c={8},f=4,loc=40,lvl=70,minReputation={1011,9000},q=3,u=18}),
-r(27927,{b=1,itemID=22538,learnedAt=375,minReputation={1011,9000},q=1,requireSkill=333,rwp=60002,u=19}),
+r(27927,{awp=20001,b=1,itemID=22538,learnedAt=375,minReputation={1011,9000},q=1,requireSkill=333,rwp=60002,u=19}),
 i(29199,{b=1,lvl=70,minReputation={1011,9000},q=2,rwp=50004,u=17}),
 s(145099,35361,{b=1,c={11},f=5,loc=44,lvl=70,minReputation={1011,9000},q=3,u=18}),
 s(145077,35335,{b=1,c={5},f=4,loc=44,lvl=70,minReputation={1011,9000},q=3,u=18}),
@@ -22500,7 +22500,7 @@ q(11061,{awp=20100,coords={
 [1949]={{28.4,57.6}}},cost={{"i",32601,1}},lvl=70,qgs={23316},sourceQuests={11030},u=1801}),
 q(11079,{awp=20100,coords={
 [1949]={{28.5,58.1}}},lvl=70,qgs={23300},sourceQuests={11061},u=1801,g={
-qo(1,{awp=20001,crs={22281,23353,23354,23355},providers={{"i",32733}},u=1801})}}),
+qo(1,{awp=20003,crs={22281,23353,23354,23355},providers={{"i",32733}},u=1801})}}),
 q(11091,{awp=20100,coords={
 [1949]={{28.8,57.4}}},lvl=70,minReputation={1038,3000},qgs={23233},sourceQuests={11059},u=1801}),
 q(10682,{coords={
@@ -22508,17 +22508,17 @@ q(10682,{coords={
 qo(1,{crs={21981},u=17})}}),
 q(11058,{awp=20100,coords={
 [1949]={{28.8,57.4}}},lvl=70,qgs={23233},sourceQuests={11025},u=1801,g={
-qo(1,{awp=20001,providers={{"o",185890}},u=1801})}}),
+qo(1,{awp=20003,providers={{"o",185890}},u=1801})}}),
 q(11119,{coords={
 [1949]={{60.8,69.1}}},lvl=70,qgs={23334},sourceQuests={11010},u=1801}),
 q(11051,{awp=20100,coords={
 [1949]={{28.8,57.8}}},cost={{"i",32696,1}},isDaily=1,lvl=70,minReputation={1038,9000},qgs={23253},sourceQuests={11026},u=1801,g={
-i(32569,{awp=20001,b=1,q=1,u=1801}),
-i(32777,{awp=20001,b=1,q=1,u=1801})}}),
+i(32569,{awp=20003,b=1,q=1,u=1801}),
+i(32777,{awp=20003,b=1,q=1,u=1801})}}),
 q(11026,{awp=20100,coords={
 [1949]={{28.8,57.8}}},cost={{"i",32696,1}},lvl=70,minReputation={1038,9000},qgs={23253},u=1801,g={
-i(32569,{awp=20001,b=1,q=1,u=1801}),
-i(32777,{awp=20001,b=1,q=1,u=1801})}}),
+i(32569,{awp=20003,b=1,q=1,u=1801}),
+i(32777,{awp=20003,b=1,q=1,u=1801})}}),
 q(10783,{coords={
 [1949]={{51.8,58.3}}},lvl=65,qgs={21984},r=1,sourceQuests={10714},u=17}),
 q(10749,{coords={
@@ -22529,13 +22529,13 @@ q(10545,{coords={
 [1949]={{45,72.2}}},lvl=65,qgs={21349},r=1,sourceQuests={10542},u=17}),
 q(11023,{awp=20100,coords={
 [1949]={{27.6,52.9}}},isDaily=1,lvl=70,qgs={23120},sourceQuests={11010},u=1802,g={
-qo(1,{awp=20001,providers={{"i",32456},{"o",185861}},u=1802})}}),
+qo(1,{awp=20003,providers={{"i",32456},{"o",185861}},u=1802})}}),
 q(11102,{awp=20100,c={11},coords={
 [1949]={{27.6,52.9}}},lvl=70,qgs={23120},sourceQuests={11062},u=1802,g={
-qo(1,{awp=20001,providers={{"i",32456},{"o",185861}},u=1802})}}),
+qo(1,{awp=20003,providers={{"i",32456},{"o",185861}},u=1802})}}),
 q(11010,{awp=20100,c={1,2,3,4,5,7,8,9},coords={
 [1949]={{27.6,52.9}}},lvl=70,qgs={23120},sourceQuests={11062},u=1802,g={
-qo(1,{awp=20001,providers={{"i",32456},{"o",185861}},u=1802})}}),
+qo(1,{awp=20003,providers={{"i",32456},{"o",185861}},u=1802})}}),
 q(10567,{coords={
 [1949]={{62.2,39.1}}},lvl=66,qgs={21782},u=17,g={
 qo(1,{crs={21767},providers={{"i",30706}},u=17})}}),
@@ -22659,7 +22659,7 @@ q(10995,{coords={
 qo(1,{providers={{"i",32379},{"n",20216},{"o",185567}},u=17})}}),
 q(11059,{awp=20100,coords={
 [1949]={{28.8,57.4}}},lvl=70,qgs={23233},sourceQuests={11025},u=1801,g={
-qo(1,{awp=20001,crs={22275},providers={{"i",32697}},u=1801})}}),
+qo(1,{awp=20003,crs={22275},providers={{"i",32697}},u=1801})}}),
 q(10904,{coords={
 [1949]={{63.5,35.5}}},description="Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",lvl=65,qgs={22423},sourceQuests={10910},u=17,g={
 qo(1,{crs={19978,19979,21516,21519},providers={{"i",31757}},u=17})}}),
@@ -22917,7 +22917,7 @@ q(10991,{c={11},coords={
 qo(1,{crs={22994},providers={{"i",32357}},u=18})}}),
 q(10992,{c={11},coords={
 [1949]={{61.5,38.3}}},cost={{"i",32356,1},{"i",32657,1}},lvl=70,maps={1952},qgs={22924},rwp=40001,sourceQuests={10991},u=18,g={
-qo(1,{awp=20001,providers={{"n",21033}},u=18}),
+qo(1,{awp=20003,providers={{"n",21033}},u=18}),
 i(32481,{b=1,f=53,q=3,u=18})}}),
 q(10912,{coords={
 [1949]={{63.5,35.5}}},description="Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",lvl=65,qgs={22423},sourceQuests={10911},u=17,g={
@@ -22934,7 +22934,7 @@ q(9795,{coords={
 [1946]={{30.6,50.8}}},isBreadcrumb=1,lvl=64,nextQuests={10486},qgs={18013},r=1,u=17}),
 q(11080,{awp=20100,coords={
 [1949]={{28.8,57.4}}},isDaily=1,lvl=70,qgs={23233},sourceQuests={11058},u=1801,g={
-qo(1,{awp=20001,providers={{"o",185890}},u=1801})}}),
+qo(1,{awp=20003,providers={{"o",185890}},u=1801})}}),
 q(11062,{awp=20100,coords={
 [1949]={{28.4,57.6}}},lvl=70,qgs={23233},sourceQuests={11030},u=1802}),
 q(10720,{coords={
@@ -22985,10 +22985,10 @@ qo(3,{providers={{"i",30432},{"o",184726}},u=17}),
 qo(4,{providers={{"i",30434},{"o",184728}},u=17})}}),
 q(11078,{awp=20100,coords={
 [1949]={{27.4,52.7}}},lvl=70,qgs={23334},sourceQuests={11010,11065},u=1802,g={
-qo(2,{awp=20001,providers={{"i",30433},{"o",184727}},u=1802}),
-qo(3,{awp=20001,providers={{"i",30432},{"o",184726}},u=1802}),
-qo(4,{awp=20001,providers={{"i",30434},{"o",184728}},u=1802}),
-qo(1,{awp=20001,providers={{"i",32732}},u=1802})}}),
+qo(2,{awp=20003,providers={{"i",30433},{"o",184727}},u=1802}),
+qo(3,{awp=20003,providers={{"i",30432},{"o",184726}},u=1802}),
+qo(4,{awp=20003,providers={{"i",30434},{"o",184728}},u=1802}),
+qo(1,{awp=20003,providers={{"i",32732}},u=1802})}}),
 q(10674,{coords={
 [1949]={{60.5,69}}},lvl=65,qgs={21691},r=2,sourceQuests={10657},u=17,g={
 qo(1,{providers={{"i",30852}},u=17})}}),
@@ -23029,10 +23029,10 @@ q(10614,{coords={
 [1949]={{51.8,58.3}}},lvl=65,qgs={21984},r=1,sourceQuests={10718},u=17}),
 q(11066,{awp=20100,coords={
 [1949]={{28,51.5}}},isDaily=1,lvl=70,qgs={23335},sourceQuests={11065},u=1802,g={
-qo(1,{awp=20001,crs={22181},providers={{"i",32698}},u=1802})}}),
+qo(1,{awp=20003,crs={22181},providers={{"i",32698}},u=1802})}}),
 q(11065,{awp=20100,coords={
 [1949]={{28,51.5}}},lvl=70,qgs={23335},sourceQuests={11010},u=1802,g={
-qo(1,{awp=20001,crs={22181},providers={{"i",32698}},u=1802})}}),
+qo(1,{awp=20003,crs={22181},providers={{"i",32698}},u=1802})}}),
 q(10894,{coords={
 [1949]={{62,39.5}}},lvl=65,qgs={22007},sourceQuests={10719},u=17}),
 q(10821,{coords={
@@ -23044,20 +23044,20 @@ i(31790,{b=1,f=51,q=2,u=17}),
 i(31791,{b=1,f=52,q=2,u=17})}}),
 q(11027,{awp=20100,coords={
 [1949]={{28.4,58}}},cost={{"i",32643,1}},isDaily=1,lvl=70,minReputation={1038,9000},qgs={23300},rwp=40100,sourceQuests={11060},u=1801,g={
-qo(1,{awp=20001,providers={{"n",19963}},u=1801}),
+qo(1,{awp=20003,providers={{"n",19963}},u=1801}),
 i(32602,{b=1,f=55,q=1,u=1801})}})}}),
 h(-46,{u=17,g={
 n(23391,{awp=20100,coords={
 [1949]={{52.8,13},{53.6,16.6}}},cost={{"i",32759,1}},u=1801,g={
-i(32572,{awp=20001,b=1,q=3,u=1801})}}),
+i(32572,{awp=20003,b=1,q=3,u=1801})}}),
 n(23390,{awp=20100,coords={
 [1949]={{51.6,13.6},{53,13}}},cost={{"i",32759,1}},u=1801,g={
-i(32572,{awp=20001,b=1,q=3,u=1801}),
-i(32773,{awp=20001,q=2,u=1801})}}),
+i(32572,{awp=20003,b=1,q=3,u=1801}),
+i(32773,{awp=20003,q=2,u=1801})}}),
 n(23261,{awp=20100,coords={
 [1949]={{66.7,14.5}}},cost={{"i",32569,35}},u=1801,g={
-i(32732,{awp=20001,q=1,u=1801}),
-i(32683,{awp=20001,b=1,q=3,u=1801})}}),
+i(32732,{awp=20003,q=1,u=1801}),
+i(32683,{awp=20003,b=1,q=3,u=1801})}}),
 n(18692,{coords={
 [1949]={{28,66.2},{28.6,67.8},{29.2,63.6},{29.4,70},{29.6,49.8},{29.8,48},{29.8,70.8},{30,45.4},{30,65},{30.4,51.4},{30.8,68.2},{31,69},{31.8,55.6},{32.6,53.4}}},u=17,g={
 s(141501,31155,{f=7,loc=42,lvl=68,q=3,u=17}),
@@ -23066,8 +23066,8 @@ s(141504,31158,{f=4,loc=42,lvl=68,q=3,u=17}),
 s(141503,31157,{f=5,loc=42,lvl=68,q=3,u=17})}}),
 n(23281,{awp=20100,coords={
 [1949]={{62.7,7.3}}},cost={{"i",32569,35}},u=1801,g={
-i(32732,{awp=20001,q=1,u=1801}),
-i(32684,{awp=20001,b=1,q=3,u=1801})}}),
+i(32732,{awp=20003,q=1,u=1801}),
+i(32684,{awp=20003,b=1,q=3,u=1801})}}),
 n(18690,{coords={
 [1949]={{60.4,24.8},{63.4,51.6},{68,67},{68.4,69.4},{68.8,46.6},{72,29.8}}},u=17,g={
 s(141505,31159,{f=7,loc=41,lvl=68,q=3,u=17}),
@@ -23076,12 +23076,12 @@ s(141506,31160,{f=6,loc=41,lvl=68,q=3,u=17}),
 s(141508,31162,{f=4,loc=41,lvl=68,q=3,u=17})}}),
 n(23282,{awp=20100,coords={
 [1949]={{34,54.7}}},cost={{"i",32569,35}},u=1801,g={
-i(32732,{awp=20001,q=1,u=1801}),
-i(32682,{awp=20001,b=1,q=3,u=1801})}}),
+i(32732,{awp=20003,q=1,u=1801}),
+i(32682,{awp=20003,b=1,q=3,u=1801})}}),
 n(23061,{awp=20100,coords={
 [1949]={{27.2,64.9}}},cost={{"i",32569,35}},u=1801,g={
-i(32732,{awp=20001,q=1,u=1801}),
-i(32681,{awp=20001,b=1,q=3,u=1801})}}),
+i(32732,{awp=20003,q=1,u=1801}),
+i(32681,{awp=20003,b=1,q=3,u=1801})}}),
 n(23230,{awp=20100,coords={
 [1949]={{31.85,46.68}}},cost={{"i",32602,1}},isDaily=1,rwp=40100,u=1801,g={
 i(32941,{b=1,f=52,lvl=70,q=4,u=1801}),
@@ -23686,10 +23686,10 @@ r(29361,{awp=20005,learnedAt=375,requireSkill=186,u=17})}})}}),
 prof(393,{u=17,g={
 n(18777,{coords={
 [1944]={{54.6,63.2}}},r=2,u=17,g={
-r(32678,{learnedAt=275,rank=5,requireSkill=393,rwp=80001,u=17})}}),
+r(32678,{awp=20001,learnedAt=275,rank=5,requireSkill=393,rwp=80001,u=17})}}),
 n(18755,{coords={
 [1944]={{56.2,38.6}}},r=1,u=17,g={
-r(32678,{learnedAt=275,rank=5,requireSkill=393,rwp=80001,u=17})}})}}),
+r(32678,{awp=20001,learnedAt=275,rank=5,requireSkill=393,rwp=80001,u=17})}})}}),
 prof(197,{u=17,g={
 n(18772,{coords={
 [1944]={{54.6,63.6}}},r=2,u=17,g={
@@ -24692,7 +24692,7 @@ i(28467,{q=1,u=17}),
 i(28470,{q=1,u=17})}}),
 n(16583,{coords={
 [1944]={{53.2,38.2}}},r=1,u=17,g={
-r(32657,{itemID=25847,learnedAt=375,q=1,requireSkill=164,rwp=50004,u=17}),
+r(32657,{awp=20001,itemID=25847,learnedAt=375,q=1,requireSkill=164,rwp=50004,u=17}),
 r(29728,{isLimited=1,itemID=23638,learnedAt=340,q=1,requireSkill=164,u=17})}}),
 n(16826,{coords={
 [1944]={{54.2,63.6}}},r=2,u=17,g={
@@ -24724,7 +24724,7 @@ r(28953,{awp=20005,itemID=23153,learnedAt=305,q=2,requireSkill=755,rwp=30002,u=1
 r(28903,{awp=20005,b=1,itemID=23130,learnedAt=300,q=1,requireSkill=755,rwp=30002,u=17})}}),
 n(19004,{coords={
 [1944]={{24.4,38.8}}},r=2,u=17,g={
-r(32665,{itemID=25848,learnedAt=350,q=1,requireSkill=333,rwp=50004,u=17})}}),
+r(32665,{awp=20001,itemID=25848,learnedAt=350,q=1,requireSkill=333,rwp=50004,u=17})}}),
 n(18266,{coords={
 [1944]={{56.4,62.8}}},pvp=1,r=2,u=17,g={
 i(27833,{b=1,cost={{"i",24579,15}},f=52,lvl=60,pvp=1,q=3,u=17}),
@@ -26209,7 +26209,7 @@ p(145,{itemID=29958,petTypeID=2,q=1,spellID=36031,u=17}),
 p(137,{itemID=29364,petTypeID=5,q=1,spellID=35239,u=17}),
 p(44,{itemID=8490,petTypeID=8,q=1,spellID=10677,u=17}),
 p(78,{itemID=10392,petTypeID=8,q=1,spellID=10717,u=17}),
-p(136,{itemID=29363,petTypeID=6,q=1,spellID=35156,u=17}),
+p(136,{awp=20001,itemID=29363,petTypeID=6,q=1,spellID=35156,u=17}),
 p(51,{itemID=8495,petTypeID=3,q=1,spellID=10684,u=17}),
 p(139,{itemID=29902,petTypeID=3,q=1,spellID=35909,u=17}),
 p(55,{itemID=10393,petTypeID=5,q=1,spellID=10688,u=17})}}),
@@ -26275,7 +26275,7 @@ i(31928,{b=1,f=52,lvl=70,q=3,u=17}),
 i(31925,{b=1,f=52,lvl=70,q=3,u=17}),
 i(31927,{b=1,f=52,lvl=70,q=3,u=17})}}),
 r(27906,{b=1,crs={22822,23008},itemID=22530,learnedAt=320,q=2,requireSkill=333,u=17}),
-r(34006,{b=1,crs={18870},itemID=28277,learnedAt=350,q=3,requireSkill=333,rwp=50004,u=17}),
+r(34006,{awp=20001,b=1,crs={18870},itemID=28277,learnedAt=350,q=3,requireSkill=333,rwp=50004,u=17}),
 r(27968,{b=1,crs={20136},itemID=22551,learnedAt=340,q=2,requireSkill=333,u=17}),
 r(26763,{b=1,crs={18872},itemID=21919,learnedAt=375,q=3,requireSkill=197,u=17}),
 r(26755,{b=1,crs={20134},itemID=21911,learnedAt=375,q=3,requireSkill=197,u=17}),
@@ -27085,14 +27085,14 @@ r(29603,{isLimited=1,itemID=23594,learnedAt=335,q=1,requireSkill=164,u=17}),
 r(29605,{isLimited=1,itemID=23595,learnedAt=335,q=1,requireSkill=164,u=17})}}),
 n(19373,{coords={
 [1948]={{36.8,55}}},r=2,u=17,g={
-r(32657,{itemID=25847,learnedAt=375,q=1,requireSkill=164,rwp=50004,u=17}),
+r(32657,{awp=20001,itemID=25847,learnedAt=375,q=1,requireSkill=164,rwp=50004,u=17}),
 r(29728,{isLimited=1,itemID=23638,learnedAt=340,q=1,requireSkill=164,u=17})}})}}),
 h(-63,{u=17,g={
 i(30426,{b=1,crs={19762,19765,19767,19768,19788,19789,20684,20795},q=1,u=17}),
 r(44794,{awp=20300,crs={19768},itemID=34221,learnedAt=365,q=3,requireSkill=755,rwp=20302,u=2}),
 r(44794,{awp=20302,b=1,crs={19768},itemID=34689,learnedAt=365,q=3,requireSkill=755,u=17}),
 r(31053,{b=1,crs={19826},itemID=24158,learnedAt=350,q=3,requireSkill=755,u=17}),
-r(34005,{b=1,crs={19796},itemID=28276,learnedAt=350,q=3,requireSkill=333,rwp=50004,u=17}),
+r(34005,{awp=20001,b=1,crs={19796},itemID=28276,learnedAt=350,q=3,requireSkill=333,rwp=50004,u=17}),
 i(30756,{b=1,coords={
 [1948]={{23,35.6}}},crs={21499},lvl=67,q=1,r=2,u=17}),
 i(30579,{b=1,coords={
@@ -27223,14 +27223,14 @@ qo(1,{providers={{"i",34868}},u=17}),
 i(34863,{b=1,q=1,u=17})}}),
 q(11885,{awp=20100,coords={
 [1952]={{64.2,66.9}}},qgs={23306},sourceQuests={11029},u=1802,g={
-qo(1,{awp=20001,providers={{"n",23161}},u=1802}),
-qo(2,{awp=20001,providers={{"n",23165}},u=1802}),
-qo(3,{awp=20001,providers={{"n",23163}},u=1802}),
-qo(4,{awp=20001,providers={{"n",23162},{"n",23204}},u=1802}),
-i(32720,{awp=20001,q=1,u=1802})}}),
+qo(1,{awp=20003,providers={{"n",23161}},u=1802}),
+qo(2,{awp=20003,providers={{"n",23165}},u=1802}),
+qo(3,{awp=20003,providers={{"n",23163}},u=1802}),
+qo(4,{awp=20003,providers={{"n",23162},{"n",23204}},u=1802}),
+i(32720,{awp=20003,q=1,u=1802})}}),
 q(11029,{awp=20100,coords={
 [1952]={{64.2,66.9}}},qgs={23306},sourceQuests={11056},u=1802,g={
-qo(1,{awp=20001,coords={
+qo(1,{awp=20003,coords={
 [1952]={{67,79.6}}},cost={{"i",32741,1},{"g",30000}},crs={23363},providers={{"i",32742}},u=1802})}}),
 q(11024,{awp=20100,coords={
 [1952]={{64.1,66.9}}},maps={1955},qgs={23038},sourceQuests={11021},u=1802}),
@@ -27240,37 +27240,37 @@ q(11085,{awp=20100,coords={
 [1952]={{61,75.6},{68.4,74},{75,86.2}}},isDaily=1,maxReputation={1031,42000},qgs={23383},u=1802}),
 q(11008,{awp=20100,coords={
 [1952]={{64.5,66.7}}},isDaily=1,maxReputation={1031,42000},qgs={23048},sourceQuests={11098},u=1802,g={
-qo(1,{awp=20001,providers={{"i",32406},{"o",185549}},u=1802})}}),
+qo(1,{awp=20003,providers={{"i",32406},{"o",185549}},u=1802})}}),
 q(11056,{awp=20100,coords={
 [1952]={{64.2,66.9}}},qgs={23306},sourceQuests={11028},u=1802,g={
-qo(1,{awp=20001,coords={
+qo(1,{awp=20003,coords={
 [1952]={{74.8,80.1}}},providers={{"i",32687}},u=1802})}}),
 q(11093,{awp=20100,coords={
 [1952]={{63.6,65.8}}},qgs={23415},u=1802,g={
-qo(1,{awp=20001,crs={23219,23439},providers={{"i",32834}},u=1802})}}),
+qo(1,{awp=20003,crs={23219,23439},providers={{"i",32834}},u=1802})}}),
 q(11021,{awp=20100,coords={
 [1952]={{69.2,78.2}}},crs={23066},providers={{"i",32523}},u=1802}),
 q(11006,{awp=20100,coords={
 [1952]={{64.1,66.9}}},cost={{"i",32388,6}},maxReputation={1031,42000},qgs={23042},repeatable=1,sourceQuests={11004},u=1802,g={
-i(32446,{awp=20001,b=1,q=1,u=1802})}}),
+i(32446,{awp=20003,b=1,q=1,u=1802})}}),
 q(11005,{awp=20100,coords={
 [1952]={{64.1,66.9}}},qgs={23038},sourceQuests={11004},u=1802,g={
-qo(1,{awp=20001,providers={{"n",23066}},u=1802}),
-qo(2,{awp=20001,providers={{"n",23067}},u=1802}),
-qo(3,{awp=20001,providers={{"n",23068}},u=1802})}}),
+qo(1,{awp=20003,providers={{"n",23066}},u=1802}),
+qo(2,{awp=20003,providers={{"n",23067}},u=1802}),
+qo(3,{awp=20003,providers={{"n",23068}},u=1802})}}),
 q(11074,{awp=20100,coords={
 [1952]={{64.2,66.9}}},cost={{"i",32718,1},{"i",32717,1},{"i",32716,1},{"i",32715,1}},maxReputation={1031,42000},qgs={23306},repeatable=1,sourceQuests={11885},u=1802,g={
-i(32720,{awp=20001,q=1,u=1802})}}),
+i(32720,{awp=20003,q=1,u=1802})}}),
 q(11073,{awp=20100,coords={
 [1952]={{64.1,66.9}}},crs={21838},qgs={23038},sourceQuests={11885},u=1802,g={
-qo(1,{awp=20001,providers={{"n",21838}},u=1802}),
-s(143175,32831,{awp=20001,b=1,f=27,q=3,u=1802}),
+qo(1,{awp=20003,providers={{"n",21838}},u=1802}),
+s(143175,32831,{awp=20003,b=1,f=27,q=3,u=1802}),
 i(32832,{b=1,f=36,q=3,rwp=50004,u=1802}),
-s(143174,32830,{awp=20001,b=1,f=28,q=3,u=1802}),
-s(143173,32829,{awp=20001,b=1,f=29,q=3,u=1802})}}),
+s(143174,32830,{awp=20003,b=1,f=28,q=3,u=1802}),
+s(143173,32829,{awp=20003,b=1,f=29,q=3,u=1802})}}),
 q(11004,{awp=20100,coords={
 [1952]={{64.1,66.9}}},cost={{"i",32388,6}},qgs={23042},u=1802,g={
-i(32446,{awp=20001,b=1,q=1,u=1802})}}),
+i(32446,{awp=20003,b=1,q=1,u=1802})}}),
 q(10914,{coords={
 [1952]={{31,76.1}}},qgs={22446},sourceQuests={10913},u=17,g={
 qo(1,{providers={{"n",21284}},u=17}),
@@ -27554,7 +27554,7 @@ s(136319,25972,{b=1,f=31,q=2,u=17}),
 s(136318,25971,{b=1,f=32,q=2,u=17})}}),
 q(11096,{awp=20100,coords={
 [1955]={{64,42}}},qgs={23449},u=1802,g={
-qo(1,{awp=20001,providers={{"n",22143},{"n",22144},{"n",22148},{"n",23022}},u=1802})}}),
+qo(1,{awp=20003,providers={{"n",22143},{"n",22144},{"n",22148},{"n",23022}},u=1802})}}),
 q(10016,{coords={
 [1952]={{58.2,54.8}}},qgs={18387},r=2,u=17,g={
 qo(1,{crs={18476,18477,18670,18706},providers={{"i",25807}},u=17})}}),
@@ -27767,7 +27767,7 @@ i(27857,{f=55,lvl=55,q=1,u=17}),
 i(29448,{f=55,lvl=65,q=1,u=17})}}),
 n(18960,{coords={
 [1952]={{48.8,46}}},r=1,u=17,g={
-r(32665,{itemID=25848,learnedAt=350,q=1,requireSkill=333,rwp=50004,u=17}),
+r(32665,{awp=20001,itemID=25848,learnedAt=350,q=1,requireSkill=333,rwp=50004,u=17}),
 r(33295,{itemID=27699,learnedAt=325,q=1,requireSkill=185,u=17}),
 r(33296,{itemID=27700,learnedAt=350,q=1,requireSkill=185,u=17})}}),
 n(19772,{coords={

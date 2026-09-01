@@ -1594,7 +1594,7 @@ inst(743,{awp=10900,coords={
 [327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,savedInstanceID=509,u=15,["zone-text-areaID"]=3429,g={
 h(-31,{u=15,g={
 faction(609,{icon=132136,maps={1451},u=15,g={
-crit(2045,{achID=953,awp=20001,id=1,u=17})}})}}),
+crit(2045,{achID=953,awp=20003,id=1,u=17})}})}}),
 h(-45,{u=15,g={
 cl(11,{u=15,g={
 q(8700,{c={11},coords={

@@ -44,7 +44,7 @@ end]];
 
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
+		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 			["lore"] = "Zangarmarsh is a leveling zone intended to be completed after Hellfire Peninsula. It is a surreal swamp, with neon giant mushrooms and hostile naga. The Cenarion Circle is investigating why wildlife has been dying, discovering that Lady Vashj is draining Coilfang Reservoir for her nefarious purposes. Players can also gain reputation with Sporeggar, a group of sporelings at war with ogres. Alliance players also further learn about lost ones--Draenei heavily corrupted by shadow magic--and begin gaining reputation with the Kurenai.",
 			["icon"] = 236855,
 			["groups"] = {

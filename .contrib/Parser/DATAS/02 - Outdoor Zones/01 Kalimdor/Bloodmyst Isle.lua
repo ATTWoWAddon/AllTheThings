@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(BLOODMYST_ISLE, {
 		["lore"] = "Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",
 		["icon"] = 236721,
-		["timeline"] = { ADDED_2_0_1 },
+		["timeline"] = { ADDED_2_0_3 },
 		["lvl"] = 10,
 		["groups"] = {
 			n(ACHIEVEMENTS, {

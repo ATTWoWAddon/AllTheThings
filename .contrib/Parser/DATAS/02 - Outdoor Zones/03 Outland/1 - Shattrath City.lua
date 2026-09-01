@@ -601,7 +601,7 @@ local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
 
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
+		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 			["lore"] = "Shattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.",
 			["icon"] = 135760,
 			["isRaid"] = true,
