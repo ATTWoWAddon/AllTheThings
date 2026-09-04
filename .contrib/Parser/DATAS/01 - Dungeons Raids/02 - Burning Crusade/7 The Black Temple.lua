@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
 		["maps"] = {
 			THE_BLACK_TEMPLE,
-			339,	-- Karabor Sewers
+			340,	-- Karabor Sewers
 			341,	-- Sanctuary of Shadows
 			342,	-- Halls of Anguish
 			343,	-- Gorefiend's Vigil

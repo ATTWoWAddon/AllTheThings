@@ -7087,7 +7087,7 @@ s(141250,30904,{b=1,f=7,loc=42,lvl=70,q=4,u=19}),
 s(141258,30912,{b=1,f=4,loc=46,lvl=70,q=4,u=19}),
 s(141249,30903,{b=1,f=7,loc=46,lvl=70,q=4,u=19})}})}}),
 inst(751,{awp=20100,coords={
-[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=70,mapID=340,maps={339,341,342,343,344,345,346,759},savedInstanceID=564,sourceQuests={10985},u=19,g={
+[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=70,mapID=339,maps={340,341,342,343,344,345,346,759},savedInstanceID=564,sourceQuests={10985},u=19,g={
 h(-12,{u=19,g={
 ach(958,{minReputation={1012,42000},u=19})}}),
 h(-31,{u=19,g={
@@ -7101,12 +7101,12 @@ i(32649,{awp=20100,b=1,f=51,q=4,u=19})}}),
 q(10949,{coords={
 [1955]={{54.3,44.3}}},lvl=70,qgs={18481},sourceQuests={10948},u=19}),
 q(10957,{coords={
-[340]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10958},u=19,g={
+[339]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10958},u=19,g={
 qo(1,{providers={{"n",22841}},u=19})}}),
 q(10958,{coords={
 [1948]={{65.2,44}}},lvl=70,qgs={18528},sourceQuests={10985},u=19}),
 q(10959,{coords={
-[340]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10957},u=19,g={
+[339]={{62,50.2}}},lvl=70,qgs={23158},sourceQuests={10957},u=19,g={
 qo(1,{providers={{"n",22917}},u=19}),
 i(32757,{b=1,f=51,q=4,u=19})}}),
 q(10948,{coords={

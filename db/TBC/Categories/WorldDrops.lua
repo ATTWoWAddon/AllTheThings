@@ -4639,7 +4639,7 @@ i(27677,{coords={
 [1949]={{40.2,18.4},{64.5,33},{72.4,20.2}},
 [1952]={{39.3,9.7},{44.6,34.3},{62.4,49},{68.7,30.5}}},crs={18461,18463,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854},q=1,u=17}),
 i(27678,{crs={17132,17133,18205,19183},description="Clefthoofs can be found all over Nagrand.",maps={1951},q=1,u=17}),
-i(32428,{awp=20100,description="Can drop from most creatures within the given raids.",maps={329,340},q=3,u=17}),
+i(32428,{awp=20100,description="Can drop from most creatures within the given raids.",maps={329,339},q=3,u=17}),
 i(24476,{coords={
 [1948]={{46.2,29.1},{53.1,25.5}}},description="Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",maps={1946},q=1,u=17,g={
 i(24477,{q=1,u=17}),
@@ -4716,7 +4716,7 @@ i(27681,{coords={
 [1953]={{56.4,60},{66.3,61.8}}},crs={18464,18465,18884,23219},q=1,u=17})}}),
 flt(200,{u=17,g={
 cl(11,{u=17,g={
-r(26991,{c={11},itemID=22146,lvl=70,maps={246,256,258,260,261,262,263,265,266,267,269,272,273,274,329,330,331,332,333,334,335,340,347,348,350},q=3,rank=3,u=17})}}),
+r(26991,{c={11},itemID=22146,lvl=70,maps={246,256,258,260,261,262,263,265,266,267,269,272,273,274,329,330,331,332,333,334,335,339,347,348,350},q=3,rank=3,u=17})}}),
 cl(8,{u=17,g={
 r(27127,{c={8},itemID=22153,lvl=70,q=3,rank=2,u=17}),
 r(33717,{c={8},description="Learn both of these tomes and then visit your trainer for the table.",itemID=31501,lvl=70,q=3,rank=8,u=17}),
