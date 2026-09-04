@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,campsite,cq,cu,de,exp,flt,fp,h,i,m,n,prof,q,r,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateCurrencyClass,_.CreateDecor,_.CreateExploration,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateTitle;
+local ach,ah,campsite,cq,cu,de,exp,flt,fp,h,i,m,n,o,prof,q,r,title=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateCurrencyClass,_.CreateDecor,_.CreateExploration,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateTitle;
 categories.Housing=
 h(-682,{SortPriority=45,g={
 h(-12,{awp=110207,maps={2351,2352},g={
@@ -590,7 +590,10 @@ n(255654,{coords={
 i(262562),
 i(262563),
 i(262564),
-i(262565)}})}}),
+i(262565)}}),
+n(257168,{coords={
+[2351]={{39,74}},
+[2352]={{62,82.2}}}})}}),
 h(-714,{awp=120000,g={
 h(-47,{
 cu(3363)}),
@@ -627,9 +630,9 @@ i(257893),
 i(257894),
 i(257903)}}),
 q(92402,{coords={
-[2352]={{52.1,38.1}}},isWeekly=1,lvl=25,qgs={254536},g={
-i(251273),
-i(251492)}}),
+[2352]={{52.1,38.1}}},isWeekly=1,lvl=25,qgs={254536},qis={251492},g={
+o(572561,{
+i(251273)})}}),
 q(92443,{coords={
 [2351]={{54.2,56.1}},
 [2352]={{52.9,37.6}}},isWeekly=1,lvl=25,qgs={254255}}),

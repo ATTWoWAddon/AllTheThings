@@ -189,7 +189,7 @@ L.COMPLETED_DAILY = "Can be completed daily"
 L.COMPLETED_MONTHLY = "Can be completed monthly"
 L.COMPLETED_MULTIPLE = "Can be repeated multiple times"
 L.COMPLETED_SOURCES_CHECKBOX = "For Completed"
-L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him."
+L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Completed Things."
 L.COMPLETED_WEEKLY = "Can be completed weekly"
 L.COMPLETED_YEARLY = "Can be completed yearly"
 L.COMPLETIONIST_MODE = "+Sources"
@@ -553,6 +553,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n" .. SHIFT_KEY_TEXT .. " Click to Search the Auction House|r"
 L.OWNED_BY = "Owned by %s"
 L.OWNED_PETS = "Owned Pets"
+L.PATCH = "Patch: "
+L.PATCH_EDIT_BOX = "Please enter a new patch"
+L.PATCH_TOOLTIP = "Press this button to change the patch.\n\nChanging this value will filter to items that get added during the given patch or range."
 L.PATREON_BUTTON_LABEL = "Patreon"
 L.PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!"
 L.PERCENTAGES_CHECKBOX = "Show Percentage Completion"
@@ -1398,6 +1401,19 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
+	[-760] = "Lunar New Year Adventure",
+	[-767] = "Azure Span Treasure Trove",
+	[-771] = "Top-Tier",
+	[-772] = "First-Tier",
+	[-773] = "Second-Tier",
+	[-774] = "Third-Tier",
+	[-775] = "Titanforged Promotions",
+	[-776] = "Crimson Tide Treasure Trove",
+	[-777] = "Lucky Bamboo Tiles",
+	[-778] = "Quicksand Secret Treasure Vault",
+	[-781] = "CN WoW's 21st Anniversary",
+	[-782] = "CN Promotions (Classic)",
+	[-784] = "20th Anniversary Bundle Classic",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1455,6 +1471,15 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
 	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+	[-760] = "Lunar New Year Adventure is a China-exclusive promotional event for World of Warcraft, taking place from 5 February to 13 March 2026. The main event functioned similar to the Treasures of Azeroth event.",
+	[-767] = "Azure Span Treasure Trove is a China-exclusive promotional campaign for World of Warcraft, available through 14 August to 11 September 2026 (as part of the 21st Anniversary celebration), where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards.",
+	[-775] = "System.Collections.Generic.List`1[System.Object]",
+	[-776] = "Crimson Tide Treasure is a China-exclusive promotional campaign for World of Warcraft, available through 23 April to 23 May 2026, where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards.",
+	[-777] = "Lucky Bamboo Tiles is a China-exclusive promotional campaign for World of Warcraft, available through 18 June to 8 July 2026, where players use 'Fortune Points' to flip tiles which provide rewards.",
+	[-778] = "Quicksand Secret Treasure Vault is a China-exclusive promotional event for World of Warcraft, first launched on 18 November 2025 along with the Titan Reforged servers and lasting to 31 December 2025. Players were able to complete tasks to obtain 'Sands of Time' that can be traded in for one of the rewards.\n\nThis campaign came back with the Lunar New Year Adventure event, running from 5 February to 13 March 2026. It came back once again as part of the 21st Anniversary celebration, running from 13 August to 11 September 2026.",
+	[-781] = "Exclusive to China, celebrating the 21st Anniversary starting 6 August 2026,",
+	[-782] = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
+	[-784] = "The 2025 bundle was available from 16 July to 15 October 2025",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1703,6 +1728,19 @@ localize(L.HEADER_ICONS, {
 	[-734] = _.asset("category_event"),
 	[-735] = _.asset("category_expansionfeatures"),
 	[-736] = _.asset("category_promo"),
+	[-760] = 7360957,
+	[-767] = 7360957,
+	[-771] = 4672182,
+	[-772] = 133785,
+	[-773] = 237282,
+	[-774] = 237283,
+	[-775] = _.asset("expansion_mn"),
+	[-776] = 7360957,
+	[-777] = 7360957,
+	[-778] = 7360957,
+	[-781] = 133783,
+	[-782] = _.asset("expansion_wotlk"),
+	[-784] = 133783,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1754,7 +1792,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=23,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=8,["monthDay"]=30,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=6,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026}),
@@ -1806,7 +1843,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=1,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=8,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=15,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=22,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=29,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=29,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9514,7 +9552,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753956000,
+		release = 1753984800,
 		state = 2,
 	},
 	[5002] = {
@@ -9523,7 +9561,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1754992800,
+		release = 1755021600,
 		state = 2,
 	},
 	[5003] = {
@@ -9532,7 +9570,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755770400,
+		release = 1755799200,
 		state = 2,
 	},
 	[5004] = {
@@ -9541,7 +9579,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756202400,
+		release = 1756231200,
 		state = 2,
 	},
 	[5005] = {
@@ -9550,7 +9588,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756807200,
+		release = 1756836000,
 		state = 2,
 	},
 	[5006] = {
@@ -9559,7 +9597,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756980000,
+		release = 1757008800,
 		state = 2,
 	},
 	[5007] = {
@@ -9568,7 +9606,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758016800,
+		release = 1758045600,
 		state = 2,
 	},
 	[51] = {
@@ -9593,7 +9631,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765969200,
+		release = 1765994400,
 		state = 2,
 	},
 	[53] = {
@@ -9618,7 +9656,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781604000,
+		release = 1781632800,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -28383,6 +28421,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic izquierdo para Expandir/Contraer\nCli
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic izquierdo para Expandir/Contraer\nClic derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + clic para buscar en la Casa de Subastas|r"
 L.OWNED_BY = "Poseído por %s"
 L.OWNED_PETS = "Mascotas poseídas"
+L.PATCH = "Parche: "
+L.PATCH_EDIT_BOX = "Por favor, introduzca un nuevo parche"
+L.PATCH_TOOLTIP = "Pulse este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se agregaron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERCENTAGES_CHECKBOX = "Muestra el porcentaje de completado"
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado."
@@ -28906,6 +28947,8 @@ localize(L.HEADER_NAMES, {
 	[-691] = "Tesoros de Azeroth",
 	[-694] = "Mejora de la edición del aniversario de Burning Crusade Classic™",
 	[-723] = "Incursiones elementales",
+	[-760] = "Aventura del Año Nuevo Lunar",
+	[-767] = "Tesoro Escondido de las Tierras Azures",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
@@ -28944,6 +28987,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-723] = "Aumentan los informes de incursiones elementales en diferentes partes de Kalimdor. Cada pocos días, una nueva oleada de elementales se abre paso a la fuerza en las regiones de Silithus, el Cráter de Un'Goro, Azshara y Cuna del Invierno, aparentemente con el único propósito de ver hasta dónde pueden penetrar en estos territorios antes de ser repelidos por las fuerzas de la Horda o la Alianza. Investiga estas regiones y ayuda a tus aliados a contrarrestar estas misteriosas invasiones.",
 	[-735] = "Esta sección está destinada a sistemas introducidos durante una expansión que involucre varias zonas.\nSi una función de expansión es exclusiva de una sola zona, se puede encontrar dentro de esa zona en ATT; de lo contrario, para reducir la duplicación y el tamaño excesivo de la base de datos, se puede encontrar a continuación.",
 	[-736] = "Esta sección está destinada a promociones del mundo real que introdujeron contenido extremadamente raro en el juego antes de que algunos de ellos aparecieran en la tienda del juego.",
+	[-760] = "La Aventura del Año Nuevo Lunar es un evento promocional exclusivo para China de World of Warcraft, que se llevó a cabo del 5 de febrero al 13 de marzo de 2026. El evento principal funcionó de manera similar al evento Tesoros de Azeroth.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "Uno de estos dragones aparecerá aleatoriamente en las coordenadas asociadas en todo Azeroth.",
@@ -31897,6 +31941,8 @@ L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser 
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para actualizar las Colecciones\n" .. CTRL_KEY_TEXT .. " + click para Expandir/Contraer recursivamente\n" .. SHIFT_KEY_TEXT .. " + click derecho para ordenar grupos o listas emergentes\n" .. ALT_KEY_TEXT .. " + click derecho para marcar puntos de referencia|r"
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para buscar en la Casa de Subastas|r"
 L.OWNED_PETS = "Mascotas obtenidas"
+L.PATCH_EDIT_BOX = "Por favor, escriba un nuevo parche"
+L.PATCH_TOOLTIP = "Click a este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se añadieron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERSONAL_LOOT_DESC = "Cada jugador tiene una probabilidad independiente de despojar un objeto útil para su clase ...\n\n ... O inútil como los anillos.\n\nHaz click dos veces para crear un grupo automáticamente si estás sólo."
 L.PET_DESC = "Haz click en este botón para seleccionar una mascota aleatoria basado en lo que te falta."
@@ -32013,6 +32059,7 @@ localize(L.HEADER_NAMES, {
 	[-656] = "Gremio de luchadores",
 	[-694] = "Mejoras de Burning Crusade Classic™ Edición Aniversario",
 	[-723] = "Invasiones elementales",
+	[-767] = "Tesoro escondido del Trecho Azur",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-44] = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
@@ -33753,6 +33800,7 @@ localize(ObjectNames, {
 	[177805] = "破碎的人类残骸",
 	[177904] = "通缉：贝瑟莱斯",
 	[177964] = "深渊之石",
+	[178084] = "菲利克斯的箱子",
 	[178087] = "塔兹利尔的镐",
 	[178104] = "共鸣水晶",
 	[178105] = "共鸣水晶",
@@ -33785,7 +33833,16 @@ localize(ObjectNames, {
 	[179913] = "作战公告！",
 	[179914] = "白骨堆",
 	[179922] = "腐化之血",
+	[180024] = "神秘的死亡矿井箱子",
 	[180025] = "神秘的东谷干草堆",
+	[180055] = "神秘的哀嚎洞穴箱子",
+	[180056] = "神秘的树桩",
+	[180164] = "太阳草",
+	[180165] = "紫莲花",
+	[180166] = "山鼠草",
+	[180167] = "黄金参",
+	[180168] = "梦叶草",
+	[180215] = "哈卡莱瑟银矿脉",
 	[180229] = "厄运巫毒堆",
 	[180327] = "疯狂之缘的火盆",
 	[180366] = "破碎的工具箱",
@@ -33848,7 +33905,13 @@ localize(ObjectNames, {
 	[181147] = "通缉布告",
 	[181150] = "布满灰尘的日记",
 	[181153] = "通缉布告：邪恶的克尔加什",
+	[181238] = "凹陷的箱子",
 	[181239] = "破旧的箱子",
+	[181248] = "铜矿脉",
+	[181249] = "锡矿脉",
+	[181250] = "生肉架",
+	[181251] = "熏肉架",
+	[181252] = "鲜鱼架",
 	[181270] = "魔草",
 	[181271] = "梦露花",
 	[181275] = "邪雾草",
@@ -33859,6 +33922,8 @@ localize(ObjectNames, {
 	[181280] = "噩梦藤",
 	[181281] = "法力蓟",
 	[181283] = "发射器备用零件",
+	[181287] = "冰冻符文",
+	[181366] = "四骑士之箱",
 	[181372] = "地狱火刺叶",
 	[181385] = "掠食者的卵",
 	[181433] = "辐射能量水晶",
@@ -33873,6 +33938,12 @@ localize(ObjectNames, {
 	[181582] = "卡利鸟巢",
 	[181597] = "水晶尘土堆",
 	[181598] = "水晶尘喷孔",
+	[181616] = "红钳鱼群",
+	[181620] = "未打开的箱子",
+	[181627] = "武器架",
+	[181628] = "空桶",
+	[181629] = "圣箱",
+	[181636] = "奈亚斯祭坛",
 	[181637] = "沙纳尔圣物",
 	[181638] = "通缉布告",
 	[181643] = "羽须的遗骸",
@@ -34380,6 +34451,7 @@ localize(ObjectNames, {
 	[195433] = "上古石板碎片",
 	[195435] = "武器柜",
 	[195438] = "艾露恩之杯",
+	[195440] = "瓜果",
 	[195445] = "上古漩涡符石",
 	[195447] = "铁矿堆",
 	[195448] = "铁锭",
@@ -34389,11 +34461,13 @@ localize(ObjectNames, {
 	[195517] = "艾露恩的侍女像",
 	[195531] = "恶魔之箱",
 	[195535] = "漂白的徽记堆",
+	[195584] = "被盗的手册",
 	[195587] = "生命盛怒百里香",
 	[195600] = "燃烧之石",
 	[195601] = "元素116",
 	[195623] = "地精迫击炮弹",
 	[195642] = "纳迦能量石",
+	[195665] = "银色北伐军嘉奖宝箱",
 	[195674] = "芦蓟草",
 	[195676] = "秘密实验室通话器",
 	[195686] = "卡啡植株",
@@ -34434,6 +34508,7 @@ localize(ObjectNames, {
 	[201775] = "链球",
 	[201792] = "北卫军攻城弩车",
 	[201794] = "奎尔德拉",
+	[201873] = "炮舰军械库",
 	[201877] = "战痕旗杆",
 	[201924] = "抛光的野猪神像",
 	[201939] = "旧箱子",
@@ -34452,6 +34527,7 @@ localize(ObjectNames, {
 	[202158] = "被弃的补给品",
 	[202159] = "被弃的补给品",
 	[202160] = "被弃的补给品",
+	[202180] = "炮舰军械库",
 	[202187] = "血瓣花观察控制杆",
 	[202195] = "翼手龙观察控制杆",
 	[202196] = "猩猩观察控制杆",

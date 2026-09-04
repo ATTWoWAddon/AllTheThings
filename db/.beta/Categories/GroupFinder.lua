@@ -11,7 +11,7 @@ title(137)}}),
 ach(4478,{rank=100,g={
 p(250,{b=1,itemID=49912,npcID=37865,spellID=70613})}})}),
 x(1,{
-i(156683,{awp=70305,b=1,description="Rewarded for completing a random classic dungeon.",g={
+i(156683,{awp=70305,b=1,description="Rewarded for completing a random 'Classic' dungeon.",g={
 s(25687,51982,{b=1,f=6,loc=47}),
 s(84227,143580,{b=1,f=6,loc=45}),
 s(84228,143581,{b=1,f=6,loc=44}),
@@ -85,7 +85,7 @@ s(25676,51971,{b=1,f=4,loc=45,u=2}),
 s(25690,51985,{b=1,f=7,loc=45,u=2}),
 s(25664,51959,{b=1,f=5,loc=45,u=2})}})}),
 x(2,{
-i(156682,{awp=70305,b=1,description="Rewarded for completing a random bc dungeon during leveling or completing a random bc timewalking dungeon.",g={
+i(156682,{awp=70305,b=1,description="Rewarded for completing a random 'The Burning Crusade' dungeon during leveling or respective Timewalking event.",g={
 s(25687,51982,{b=1,f=6,loc=47}),
 s(25680,51975,{b=1,f=6,loc=41}),
 s(25686,51981,{b=1,f=6,loc=43}),
@@ -128,7 +128,7 @@ s(25674,51969,{b=1,f=4,loc=41,u=2}),
 s(25688,51983,{b=1,f=7,loc=41,u=2}),
 s(25666,51961,{b=1,f=5,loc=41,u=2})}})}),
 x(3,{
-i(156688,{awp=70305,b=1,description="Rewarded for completing a random wotlk dungeon during leveling or completing a random wotlk timewalking dungeon.",g={
+i(156688,{awp=70305,b=1,description="Rewarded for completing a random 'Wrath of the Lich King' dungeon during leveling or respective Timewalking event.",g={
 i(113687,{b=1,f=51}),
 i(113688,{b=1,f=51}),
 i(113686,{b=1,f=51}),
@@ -151,7 +151,7 @@ s(60861,112351,{b=1,f=5,loc=40}),
 s(62475,113689,{b=1,f=5,loc=44}),
 s(60875,112365,{b=1,f=5,loc=45}),
 s(60870,112360,{b=1,f=5,loc=46})}}),
-i(114634,{awp=60002,b=1,description="Rewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.",rwp=70305,u=2,g={
+i(114634,{awp=60002,b=1,description="Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",rwp=70305,u=2,g={
 s(60871,112361,{b=1,f=7,loc=45,u=2}),
 s(60872,112362,{b=1,f=7,loc=45,u=2}),
 s(60856,112346,{b=1,f=7,loc=40,u=2}),
@@ -173,7 +173,7 @@ s(60876,112366,{b=1,f=5,loc=45,u=2}),
 s(60861,112351,{b=1,f=5,loc=40,u=2}),
 s(60870,112360,{b=1,f=5,loc=46,u=2}),
 s(60869,112359,{b=1,f=5,loc=46,u=2})}}),
-i(114641,{awp=60002,b=1,description="Rewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.",rwp=70305,u=2,g={
+i(114641,{awp=60002,b=1,description="Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",rwp=70305,u=2,g={
 i(113687,{b=1,f=51,u=2}),
 i(113686,{b=1,f=51,u=2}),
 i(113688,{b=1,f=51,u=2}),
@@ -188,7 +188,7 @@ s(62535,113758,{b=1,f=4,loc=44,u=2}),
 s(62476,113690,{b=1,f=5,loc=44,u=2}),
 s(62475,113689,{b=1,f=5,loc=44,u=2})}})}),
 x(4,{
-i(156689,{awp=70305,b=1,description="Rewarded for completing a random cata dungeon during leveling or completing a random cata timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",g={
+i(156689,{awp=70305,b=1,description="Rewarded for completing a random 'Cataclysm' dungeon during leveling or respective Timewalking event.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",g={
 i(113725,{b=1,f=52}),
 i(113726,{b=1,f=52}),
 i(113727,{b=1,f=52}),
@@ -226,7 +226,7 @@ s(62493,113707,{b=1,f=7,loc=46}),
 s(62558,113781,{b=1,f=7,isBounty=1,loc=47,rwp=70305,u=2}),
 s(62488,113702,{b=1,f=7,isBounty=1,loc=43,rwp=70305,u=2}),
 s(62505,113719,{b=1,f=7,loc=44})}}),
-i(114648,{b=1,description="Rewarded for completing a random Cataclysm dungeon in the level 80-84 range.",u=2,g={
+i(114648,{b=1,description="Rewarded for completing a random 'Cataclysm' dungeon in the level 80-84 range.",u=2,g={
 s(62537,113760,{b=1,f=4,loc=43}),
 s(62536,113759,{b=1,f=4,loc=40}),
 s(62563,113786,{b=1,f=4,loc=47}),
@@ -248,7 +248,7 @@ s(62482,113696,{b=1,f=7,loc=40}),
 s(62481,113695,{b=1,f=7,loc=40}),
 s(62558,113781,{b=1,f=7,loc=47}),
 s(62488,113702,{b=1,f=7,loc=43})}}),
-i(114655,{b=1,description="Rewarded for completing a random Cataclysm dungeon in the level 84-85 range.",u=2,g={
+i(114655,{b=1,description="Rewarded for completing a random 'Cataclysm' dungeon in the level 84-85 range.",u=2,g={
 s(62540,113763,{b=1,f=4,loc=44}),
 s(62538,113761,{b=1,f=4,loc=46}),
 s(62539,113762,{b=1,f=4,loc=42}),
@@ -265,7 +265,7 @@ s(62500,113714,{b=1,f=7,loc=42}),
 s(62506,113720,{b=1,f=7,loc=44}),
 s(62494,113708,{b=1,f=7,loc=46})}})}),
 x(5,{
-i(156698,{awp=70305,b=1,description="Rewarded for completing a random mop dungeon during leveling or completing a random mop timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",g={
+i(156698,{awp=70305,b=1,description="Rewarded for completing a random 'Mists of Pandaria' dungeon during leveling or respective Timewalking event.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",g={
 i(113757,{b=1,f=52}),
 s(62565,113788,{b=1,f=4,loc=45}),
 s(62541,113764,{b=1,f=4,loc=40}),
@@ -304,7 +304,7 @@ i(113735,{b=1,f=51}),
 i(113755,{b=1,f=52}),
 i(113734,{b=1,f=51}),
 i(113756,{b=1,f=52})}}),
-i(114662,{awp=60002,b=1,description="Rewarded for completing a random Mists of Pandaria dungeon in the level 85-89 range.",rwp=70305,u=2,g={
+i(114662,{awp=60002,b=1,description="Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",rwp=70305,u=2,g={
 s(62565,113788,{b=1,f=4,loc=45,u=2}),
 s(62541,113764,{b=1,f=4,loc=40,u=2}),
 s(62564,113787,{b=1,f=4,loc=47,u=2}),
@@ -327,7 +327,7 @@ s(62562,113785,{b=1,f=7,loc=45,u=2}),
 s(62512,113729,{b=1,f=7,loc=40,u=2}),
 s(62511,113728,{b=1,f=7,loc=40,u=2}),
 s(62560,113783,{b=1,f=7,loc=47,u=2})}}),
-i(114669,{awp=60002,b=1,description="Rewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.",rwp=70305,u=2,g={
+i(114669,{awp=60002,b=1,description="Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",rwp=70305,u=2,g={
 i(113757,{b=1,f=52,u=2}),
 s(62543,113766,{b=1,f=4,loc=44,u=2}),
 s(62544,113767,{b=1,f=4,loc=41,u=2}),

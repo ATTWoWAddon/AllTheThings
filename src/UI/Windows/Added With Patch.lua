@@ -136,9 +136,9 @@ app:CreateWindow("Added With Patch", {
 	OnInit = function(self, handlers)
 		local options = {
 			app.CreateRawText(RETRIEVING_DATA, {	-- Patch
-				prefix = "Patch: ",
+				prefix = L.PATCH,
 				icon = 134941,
-				description = "Press this button to change the patch.\n\nChanging this value will filter to items that get added during the given patch or range.",
+				description = L.PATCH_TOOLTIP,
 				visible = true,
 				priority = 6,
 				OnClick = function(row, button)
@@ -153,7 +153,7 @@ app:CreateWindow("Added With Patch", {
 							str = "0-" .. GetPatchString(MaxPatch);
 						end
 					end
-					app:ShowPopupDialogWithEditBox("Please enter a new patch", str or app.GameBuildVersion, function(cmd)
+					app:ShowPopupDialogWithEditBox(L.PATCH_EDIT_BOX, str or app.GameBuildVersion, function(cmd)
 						ParseCommand(self, cmd);
 					end);
 					return true;

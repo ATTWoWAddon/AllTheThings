@@ -189,7 +189,7 @@ L.COMPLETED_DAILY = "Can be completed daily"
 L.COMPLETED_MONTHLY = "Can be completed monthly"
 L.COMPLETED_MULTIPLE = "Can be repeated multiple times"
 L.COMPLETED_SOURCES_CHECKBOX = "For Completed"
-L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him."
+L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Completed Things."
 L.COMPLETED_WEEKLY = "Can be completed weekly"
 L.COMPLETED_YEARLY = "Can be completed yearly"
 L.COMPLETIONIST_MODE = "+Sources"
@@ -553,6 +553,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n" .. SHIFT_KEY_TEXT .. " Click to Search the Auction House|r"
 L.OWNED_BY = "Owned by %s"
 L.OWNED_PETS = "Owned Pets"
+L.PATCH = "Patch: "
+L.PATCH_EDIT_BOX = "Please enter a new patch"
+L.PATCH_TOOLTIP = "Press this button to change the patch.\n\nChanging this value will filter to items that get added during the given patch or range."
 L.PATREON_BUTTON_LABEL = "Patreon"
 L.PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!"
 L.PERCENTAGES_CHECKBOX = "Show Percentage Completion"
@@ -1266,6 +1269,7 @@ localize(L.HEADER_NAMES, {
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-736] = BATTLE_PET_SOURCE_8,
+	[-782] = "CN Promotions (Classic)",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1303,6 +1307,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
 	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+	[-782] = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1486,6 +1491,7 @@ localize(L.HEADER_ICONS, {
 	[-734] = _.asset("category_event"),
 	[-735] = _.asset("category_expansionfeatures"),
 	[-736] = _.asset("category_promo"),
+	[-782] = _.asset("expansion_wotlk"),
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -16975,6 +16981,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic izquierdo para Expandir/Contraer\nCli
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic izquierdo para Expandir/Contraer\nClic derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + clic para buscar en la Casa de Subastas|r"
 L.OWNED_BY = "Poseído por %s"
 L.OWNED_PETS = "Mascotas poseídas"
+L.PATCH = "Parche: "
+L.PATCH_EDIT_BOX = "Por favor, introduzca un nuevo parche"
+L.PATCH_TOOLTIP = "Pulse este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se agregaron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERCENTAGES_CHECKBOX = "Muestra el porcentaje de completado"
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado."
@@ -19188,6 +19197,8 @@ L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser 
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para actualizar las Colecciones\n" .. CTRL_KEY_TEXT .. " + click para Expandir/Contraer recursivamente\n" .. SHIFT_KEY_TEXT .. " + click derecho para ordenar grupos o listas emergentes\n" .. ALT_KEY_TEXT .. " + click derecho para marcar puntos de referencia|r"
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para buscar en la Casa de Subastas|r"
 L.OWNED_PETS = "Mascotas obtenidas"
+L.PATCH_EDIT_BOX = "Por favor, escriba un nuevo parche"
+L.PATCH_TOOLTIP = "Click a este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se añadieron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERSONAL_LOOT_DESC = "Cada jugador tiene una probabilidad independiente de despojar un objeto útil para su clase ...\n\n ... O inútil como los anillos.\n\nHaz click dos veces para crear un grupo automáticamente si estás sólo."
 L.PET_DESC = "Haz click en este botón para seleccionar una mascota aleatoria basado en lo que te falta."
@@ -20947,6 +20958,7 @@ localize(ObjectNames, {
 	[177805] = "破碎的人类残骸",
 	[177904] = "通缉：贝瑟莱斯",
 	[177964] = "深渊之石",
+	[178084] = "菲利克斯的箱子",
 	[178087] = "塔兹利尔的镐",
 	[178104] = "共鸣水晶",
 	[178144] = "巨魔的箱子",
@@ -20984,7 +20996,16 @@ localize(ObjectNames, {
 	[179913] = "作战公告！",
 	[179914] = "白骨堆",
 	[179922] = "腐化之血",
+	[180024] = "神秘的死亡矿井箱子",
 	[180025] = "神秘的东谷干草堆",
+	[180055] = "神秘的哀嚎洞穴箱子",
+	[180056] = "神秘的树桩",
+	[180164] = "太阳草",
+	[180165] = "紫莲花",
+	[180166] = "山鼠草",
+	[180167] = "黄金参",
+	[180168] = "梦叶草",
+	[180215] = "哈卡莱瑟银矿脉",
 	[180229] = "厄运巫毒堆",
 	[180248] = "可口鱼",
 	[180327] = "疯狂之缘的火盆",
@@ -21050,7 +21071,13 @@ localize(ObjectNames, {
 	[181147] = "通缉布告",
 	[181150] = "布满灰尘的日记",
 	[181153] = "通缉布告：邪恶的克尔加什",
+	[181238] = "凹陷的箱子",
 	[181239] = "破旧的箱子",
+	[181248] = "铜矿脉",
+	[181249] = "锡矿脉",
+	[181250] = "生肉架",
+	[181251] = "熏肉架",
+	[181252] = "鲜鱼架",
 	[181270] = "魔草",
 	[181271] = "梦露花",
 	[181275] = "邪雾草",
@@ -21061,6 +21088,8 @@ localize(ObjectNames, {
 	[181280] = "噩梦藤",
 	[181281] = "法力蓟",
 	[181283] = "发射器备用零件",
+	[181287] = "冰冻符文",
+	[181366] = "四骑士之箱",
 	[181372] = "地狱火刺叶",
 	[181385] = "掠食者的卵",
 	[181433] = "辐射能量水晶",
@@ -21075,6 +21104,12 @@ localize(ObjectNames, {
 	[181582] = "卡利鸟巢",
 	[181597] = "水晶尘土堆",
 	[181598] = "水晶尘喷孔",
+	[181616] = "红钳鱼群",
+	[181620] = "未打开的箱子",
+	[181627] = "武器架",
+	[181628] = "空桶",
+	[181629] = "圣箱",
+	[181636] = "奈亚斯祭坛",
 	[181637] = "沙纳尔圣物",
 	[181638] = "通缉布告",
 	[181643] = "羽须的遗骸",
@@ -21528,14 +21563,17 @@ localize(ObjectNames, {
 	[195274] = "被偷走的陆行鸟腿",
 	[195308] = "神秘的雪堆",
 	[195344] = "被丢弃的灵魂水晶",
+	[195665] = "银色北伐军嘉奖宝箱",
 	[201367] = "迷雾之心",
 	[201579] = "钥石碎片",
 	[201592] = "注能萨隆邪铁锭",
 	[201794] = "奎尔德拉",
+	[201873] = "炮舰军械库",
 	[202080] = "达尔特的卵",
 	[202081] = "塔克的卵",
 	[202082] = "暴掠龙女王的卵",
 	[202083] = "刺喉雌龙的卵",
+	[202180] = "炮舰军械库",
 	[202947] = "古龙水中和剂",
 	[202948] = "香水中和剂",
 	[207724] = "船只残骸",

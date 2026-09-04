@@ -16,8 +16,7 @@ q(65285,{altQuests={65284},coords={
 toy(33219,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022.",q=3,u=3})}}),
 q(65562,{altQuests={65561},coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
-s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=60,q=4,u=2})),
+s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}}),
 q(96254,{altQuests={96253},awp=20505,coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,u=2,g={
 i(273162,{u=2,g={
@@ -107,5 +106,7 @@ toy(32542,{awp=20100,b=1,q=3,u=2}),
 toy(34499,{awp=20300,b=1,q=3,u=2}),
 i(23714,{awp=20203,b=1,f=53,q=4,u=2}),
 toy(32566,{awp=20100,b=1,q=3,u=2}),
-toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2})}})}})}})
+toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2})}})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+h(-782,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=60,q=4,u=2}))}))}})
 end)

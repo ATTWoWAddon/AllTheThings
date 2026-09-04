@@ -8265,7 +8265,7 @@ r(17577,{crs={7437},itemID=13497,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 r(17575,{awp=11101,coords={
 [1452]={{61.8,68.6},{64.2,69}}},crs={7428},itemID=13495,learnedAt=290,q=2,requireSkill=171,rwp=40003}),
 r(19830,{coords={
-[1452]={{23.4,35.4},{25.4,35.4}}},crs={7437},itemID=16054,learnedAt=300,q=2,requireSkill=202,rwp=40003}),
+[1452]={{59.6,49}}},crs={7437},itemID=16054,learnedAt=300,q=2,requireSkill=202,rwp=40003}),
 i(12432,{crs={7443,7444,7445,7446},providers={{"i",12384}},q=1,rwp=40003}),
 i(18665,{c={5},crs={7461,7463},f=53,lvl=60,q=4,rwp=40003}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},q=1,rwp=40003}),
@@ -8739,7 +8739,7 @@ r(196,{c={1,2,3,7}}),
 r(198,{c={1,2,4,5,7,11}}),
 r(197,{c={1,2,3,7},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end}),
 r(199,{c={1,2,7,11},OnUpdate=function(t)if _.ClassIndex==7 then	rawset(t,'collectible',nil)if not _.IsSpellKnownHelper(16269)then	rawset(t,'collectible',false)end	end	end})}})}})}}),
-m(1453,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",g={
+m(1453,{icon=255130,isRaid=1,lore="Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",["zone-text-areas"]={1519,2918},g={
 h(-30,{
 exp(5150,{collectible=false}),
 exp(6292,{collectible=false}),
@@ -12817,7 +12817,7 @@ q(3105,{c={9},coords={
 q(1598,{altQuests={1599},c={9},coords={
 [1429]={{49.9,42.6}}},qgs={459},r=2,rwp=30300,g={
 qo(1,{coords={
-[1429]={{56.7,44}}},providers={{"i",6785}}}),
+[1429]={{56.7,44}}},providers={{"i",6785},{"o",83763}}}),
 r(688)}}),
 q(33,{coords={
 [1429]={{48.9,40.1}}},qgs={196},r=2,rwp=40003,sourceQuests={5261},g={
@@ -13462,7 +13462,7 @@ s(157256,3336,{awp=100107,coords={
 [1424]={{57.2,84.2},{59.6,89.4}}},crs={2368,2370},f=20,lvl=24,q=2,rwp=40003}),
 r(13620,{crs={2374,2375,2376,2377,14276},itemID=11152,learnedAt=145,q=2,requireSkill=333}),
 s(157301,3429,{crs={2427,2428},f=5,loc=45,lvl=19,q=2,rwp=40003}),
-s(157114,3053,{awp=80001,crs={2344,14275},f=6,loc=42,lvl=23,q=2,rwp=40003}),
+s(157114,3053,{awp=80001,crs={2344},f=6,loc=42,lvl=23,q=2,rwp=40003}),
 s(157879,4724,{awp=100107,coords={
 [1424]={{71.2,74.2},{72,81}}},crs={2345},f=5,loc=40,lvl=25,q=2,rwp=40003}),
 s(157878,4723,{awp=100107,coords={

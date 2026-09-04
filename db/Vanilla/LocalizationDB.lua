@@ -190,7 +190,7 @@ L.COMPLETED_DAILY = "Can be completed daily"
 L.COMPLETED_MONTHLY = "Can be completed monthly"
 L.COMPLETED_MULTIPLE = "Can be repeated multiple times"
 L.COMPLETED_SOURCES_CHECKBOX = "For Completed"
-L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him."
+L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Completed Things."
 L.COMPLETED_WEEKLY = "Can be completed weekly"
 L.COMPLETED_YEARLY = "Can be completed yearly"
 L.COMPLETIONIST_MODE = "+Sources"
@@ -554,6 +554,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n" .. SHIFT_KEY_TEXT .. " Click to Search the Auction House|r"
 L.OWNED_BY = "Owned by %s"
 L.OWNED_PETS = "Owned Pets"
+L.PATCH = "Patch: "
+L.PATCH_EDIT_BOX = "Please enter a new patch"
+L.PATCH_TOOLTIP = "Press this button to change the patch.\n\nChanging this value will filter to items that get added during the given patch or range."
 L.PATREON_BUTTON_LABEL = "Patreon"
 L.PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!"
 L.PERCENTAGES_CHECKBOX = "Show Percentage Completion"
@@ -1139,6 +1142,7 @@ localize(L.HEADER_NAMES, {
 	[-732] = BUG_CATEGORY2,
 	[-734] = BATTLE_PET_SOURCE_7,
 	[-736] = BATTLE_PET_SOURCE_8,
+	[-782] = "CN Promotions (Classic)",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1167,6 +1171,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 	[-723] = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
+	[-782] = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1289,6 +1294,7 @@ localize(L.HEADER_ICONS, {
 	[-732] = _.asset("category_zones"),
 	[-734] = _.asset("category_event"),
 	[-736] = _.asset("category_promo"),
+	[-782] = _.asset("expansion_wotlk"),
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -1355,7 +1361,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=3,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=13,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=7,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=17,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=4,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=14,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=2,["weekday"]=6,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=12,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
@@ -1365,7 +1370,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=5,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=5,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=15,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=2,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=12,["weekday"]=2,["year"]=2027},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=17,["weekday"]=2,["year"]=2027},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=17,["weekday"]=2,["year"]=2027},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=4,["weekday"]=6,["year"]=2027},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=14,["weekday"]=2,["year"]=2027},{["remappedID"]=375})
 })
 -- Filter Database Module
 _.FilterConstants = {
@@ -1906,6 +1912,7 @@ local ObjectNames = {
 	[68865] = "Snufflenose Command Sticks",
 	[73940] = "Ooze Covered Silver Vein",
 	[73941] = "Ooze Covered Gold Vein",
+	[83763] = "Stolen Books",
 	[85562] = "Ironband's Strongbox",
 	[85563] = "Dead-tooth's Strongbox",
 	[86492] = "Crate of Elunite",
@@ -11988,6 +11995,7 @@ localize(ObjectNames, {
 	[68865] = "Schnüffelnasenleitstecken",
 	[73940] = "Brühschlammbedecktes Silbervorkommen",
 	[73941] = "Schlammbedecktes Goldvorkommen",
+	[83763] = "Gestohlene Bücher",
 	[85562] = "Eisenbands Geldkassette",
 	[85563] = "Stumpfzahns Geldkassette",
 	[86492] = "Kiste mit Elunit",
@@ -14457,6 +14465,7 @@ localize(ObjectNames, {
 	[68865] = "Bâtons de commandement de Sniffetarin",
 	[73940] = "Filon d'argent couvert de limon",
 	[73941] = "Filon d'or couvert de limon",
+	[83763] = "Livres dérobés",
 	[85562] = "Coffre de Baguefer",
 	[85563] = "Coffre de Dent-Morte",
 	[86492] = "Caisse d'élunite",
@@ -17224,6 +17233,7 @@ localize(ObjectNames, {
 	[68865] = "Bastões de Comando do Fungafuça",
 	[73940] = "Veio de Prata Coberto de Gosma",
 	[73941] = "Veio de Ouro Coberto de Gosma",
+	[83763] = "Livros Roubados",
 	[85562] = "Cofre de Bandaferro",
 	[85563] = "Caixa-forte do Dente-podre",
 	[86492] = "Cratera de Elunita",
@@ -19985,6 +19995,7 @@ localize(ObjectNames, {
 	[68865] = "Палочка-погонялочка для шмыгуносов",
 	[73940] = "Покрытая слизью серебряная жила",
 	[73941] = "Покрытая слизью золотая жила",
+	[83763] = "Краденые книги",
 	[85562] = "Сейф Сталекрута",
 	[85563] = "Сейф Мертвозуба",
 	[86492] = "Ящик с элунитом",
@@ -22285,6 +22296,7 @@ localize(ObjectNames, {
 	[68865] = "땅다람쥐 지휘봉",
 	[73940] = "진흙으로 덮인 은 광맥",
 	[73941] = "진흙으로 덮인 금 광맥",
+	[83763] = "도난당한 책",
 	[85562] = "아이언밴드의 금고",
 	[85563] = "썩은니의 금고",
 	[86492] = "엘루니트 상자",
@@ -24593,6 +24605,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic izquierdo para Expandir/Contraer\nCli
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic izquierdo para Expandir/Contraer\nClic derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + clic para buscar en la Casa de Subastas|r"
 L.OWNED_BY = "Poseído por %s"
 L.OWNED_PETS = "Mascotas poseídas"
+L.PATCH = "Parche: "
+L.PATCH_EDIT_BOX = "Por favor, introduzca un nuevo parche"
+L.PATCH_TOOLTIP = "Pulse este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se agregaron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERCENTAGES_CHECKBOX = "Muestra el porcentaje de completado"
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado."
@@ -25284,6 +25299,7 @@ localize(ObjectNames, {
 	[68865] = "Varas de mando de husmeador",
 	[73940] = "Filón de plata cubierto de moco",
 	[73941] = "Filón de oro cubierto de moco",
+	[83763] = "Libros robados",
 	[85562] = "Caja fuerte de Vetaferro",
 	[85563] = "Caja fuerte de Dentomuerto",
 	[86492] = "Cajón de Elunite",
@@ -27304,6 +27320,8 @@ L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser 
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para actualizar las Colecciones\n" .. CTRL_KEY_TEXT .. " + click para Expandir/Contraer recursivamente\n" .. SHIFT_KEY_TEXT .. " + click derecho para ordenar grupos o listas emergentes\n" .. ALT_KEY_TEXT .. " + click derecho para marcar puntos de referencia|r"
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para buscar en la Casa de Subastas|r"
 L.OWNED_PETS = "Mascotas obtenidas"
+L.PATCH_EDIT_BOX = "Por favor, escriba un nuevo parche"
+L.PATCH_TOOLTIP = "Click a este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se añadieron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERSONAL_LOOT_DESC = "Cada jugador tiene una probabilidad independiente de despojar un objeto útil para su clase ...\n\n ... O inútil como los anillos.\n\nHaz click dos veces para crear un grupo automáticamente si estás sólo."
 L.PET_DESC = "Haz click en este botón para seleccionar una mascota aleatoria basado en lo que te falta."
@@ -29650,6 +29668,7 @@ localize(ObjectNames, {
 	[61936] = "燃油控制阀",
 	[68865] = "地鼠指挥棒",
 	[73941] = "软泥覆盖的金矿脉",
+	[83763] = "被偷走的书",
 	[85562] = "铁环的保险箱",
 	[85563] = "蛀牙杰克的箱子",
 	[86492] = "月神矿石",
@@ -29946,6 +29965,7 @@ localize(ObjectNames, {
 	[177805] = "破碎的人类残骸",
 	[177904] = "通缉：贝瑟莱斯",
 	[177964] = "深渊之石",
+	[178084] = "菲利克斯的箱子",
 	[178087] = "塔兹利尔的镐",
 	[178104] = "共鸣水晶",
 	[178144] = "巨魔的箱子",
@@ -29983,7 +30003,16 @@ localize(ObjectNames, {
 	[179913] = "作战公告！",
 	[179914] = "白骨堆",
 	[179922] = "腐化之血",
+	[180024] = "神秘的死亡矿井箱子",
 	[180025] = "神秘的东谷干草堆",
+	[180055] = "神秘的哀嚎洞穴箱子",
+	[180056] = "神秘的树桩",
+	[180164] = "太阳草",
+	[180165] = "紫莲花",
+	[180166] = "山鼠草",
+	[180167] = "黄金参",
+	[180168] = "梦叶草",
+	[180215] = "哈卡莱瑟银矿脉",
 	[180229] = "厄运巫毒堆",
 	[180248] = "可口鱼",
 	[180327] = "疯狂之缘的火盆",
@@ -30036,6 +30065,8 @@ localize(ObjectNames, {
 	[181074] = "竞技场的泥土",
 	[181085] = "斯坦索姆物资箱",
 	[181098] = "火山灰",
+	[181287] = "冰冻符文",
+	[181366] = "四骑士之箱",
 	[181597] = "水晶尘土堆",
 	[181598] = "水晶尘喷孔",
 	[181672] = "稻草人",
@@ -32278,6 +32309,7 @@ localize(ObjectNames, {
 	[1609] = "龍喉投石車",
 	[1617] = "銀葉草",
 	[1618] = "寧神花",
+	[83763] = "被偷走的書",
 	[103815] = "安伯米爾保險箱",
 	[105176] = "風險投資公司保險箱",
 	[105570] = "聯盟保險箱",

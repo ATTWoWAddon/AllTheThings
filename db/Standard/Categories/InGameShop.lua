@@ -725,11 +725,11 @@ i(122284,{awp=60102,b=1,u=3}),
 i(122270,{awp=60102,b=1,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(235378,{awp=40003,b=1,description="Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",spellID=1216746,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(459784,{itemID=227362,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(35223,{b=1,f=55,spellID=46168,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(46779,{b=1,f=55,spellID=65745,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(42777,{itemID=49284,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 mnt(42776,{itemID=49283,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(46199,{itemID=49286,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(46197,{itemID=49285,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(45047,{b=1,f=55,spellID=62857,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(35223,{b=1,f=55,spellID=46168,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(46779,{b=1,f=55,spellID=65745,u=3}))}}))}})
+mnt(46197,{itemID=49285,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(46199,{itemID=49286,lvl=10,u=3}))}}))}})
 end)

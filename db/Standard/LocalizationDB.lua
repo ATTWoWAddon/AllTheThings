@@ -556,6 +556,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n" .. SHIFT_KEY_TEXT .. " Click to Search the Auction House|r"
 L.OWNED_BY = "Owned by %s"
 L.OWNED_PETS = "Owned Pets"
+L.PATCH = "Patch: "
+L.PATCH_EDIT_BOX = "Please enter a new patch"
+L.PATCH_TOOLTIP = "Press this button to change the patch.\n\nChanging this value will filter to items that get added during the given patch or range."
 L.PATREON_BUTTON_LABEL = "Patreon"
 L.PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!"
 L.PERCENTAGES_CHECKBOX = "Show Percentage Completion"
@@ -1767,6 +1770,8 @@ localize(L.HEADER_NAMES, {
 	[-783] = "20th Anniversary Bundle",
 	[-784] = "20th Anniversary Bundle Classic",
 	[-785] = "21st Anniversary Bundle",
+	[-787] = "Maruukai Endeavor",
+	[-788] = "Tortollan Endeavor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2541,6 +2546,8 @@ localize(L.HEADER_ICONS, {
 	[-783] = 133783,
 	[-784] = 133783,
 	[-785] = 133783,
+	[-787] = 4578413,
+	[-788] = 2065576,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -13021,6 +13028,7 @@ local ObjectNames = {
 	[572428] = "Lost Amani Bolt",
 	[572446] = "Scarred Spear",
 	[572448] = "Ebon Banner",
+	[572449] = "Corrupted Lantern",
 	[572450] = "Ancient Zandalari Scroll",
 	[572451] = "Evergreen Vine",
 	[572453] = "Pylon Fragment",
@@ -13030,6 +13038,7 @@ local ObjectNames = {
 	[572457] = "Dried Roses",
 	[572458] = "Clefthoof Hide",
 	[572498] = "Lost Amani Trinket",
+	[572561] = "Crystal",
 	[572785] = "Olemba Lumber",
 	[572806] = "Fragment of Revelation",
 	[572819] = "Void-Shielded Tomb",
@@ -13469,6 +13478,8 @@ local ObjectNames = {
 	[656489] = "Azta'rec Cache",
 	[656678] = "Possessed Vase",
 	[657746] = "Pepe",
+	[658087] = "Abundantly Bountiful Heavy Trunk",
+	[658088] = "Abundantly Bountiful Heavy Trunk",
 	[658789] = "Dust-Covered Hologem",
 	[658799] = "Enchanted Hilt",
 	[658801] = "Specimen Container",
@@ -22499,6 +22510,7 @@ local ObjectModels = {
 	[572428] = 6195762,
 	[572446] = 943686,
 	[572448] = 194802,
+	[572449] = 1383910,
 	[572450] = 774267,
 	[572451] = 651497,
 	[572453] = 1327768,
@@ -22508,6 +22520,7 @@ local ObjectModels = {
 	[572457] = 305201,
 	[572458] = 902697,
 	[572498] = 6866518,
+	[572561] = 5408471,
 	[572785] = 6922313,
 	[572806] = 6796710,
 	[572819] = 5916219,
@@ -22927,6 +22940,8 @@ local ObjectModels = {
 	[656489] = 7277177,
 	[656678] = 6706182,
 	[657746] = 7959391,
+	[658087] = 5128194,
+	[658088] = 5128194,
 	[658789] = 5479266,
 	[658799] = 6887151,
 	[658801] = 5916193,
@@ -35153,6 +35168,7 @@ localize(ObjectNames, {
 	[572428] = "Verlorener Amanibolzen",
 	[572446] = "Verschrammter Speer",
 	[572448] = "Schwarzbanner",
+	[572449] = "Verderbte Laterne",
 	[572450] = "Uralte Zandalarischriftrolle",
 	[572451] = "Immergrüne Ranke",
 	[572453] = "Pylonfragment",
@@ -35162,6 +35178,7 @@ localize(ObjectNames, {
 	[572457] = "Getrocknete Rosen",
 	[572458] = "Grollhufbalg",
 	[572498] = "Verlorenes Amanischmuckstück",
+	[572561] = "Kristall",
 	[572785] = "Olembaholz",
 	[572806] = "Fragment der Offenbarung",
 	[572819] = "Leerengeschütztes Grab",
@@ -35470,6 +35487,8 @@ localize(ObjectNames, {
 	[655006] = "Hölzernes Spielzeugschwert",
 	[656046] = "Tasche des unglückseligen Spähers",
 	[656489] = "Vorrat von Azta'rec",
+	[658087] = "Großzügige schwere Überflusstruhe",
+	[658088] = "Großzügige schwere Überflusstruhe",
 	[658789] = "Staubbedeckter Holostein",
 	[658799] = "Verzauberter Griff",
 	[660427] = "Lokagos Hauptbuch",
@@ -43695,6 +43714,7 @@ localize(ObjectNames, {
 	[572428] = "Trait amani perdu",
 	[572446] = "Lance griffée",
 	[572448] = "Bannière d’ébène",
+	[572449] = "Lanterne corrompue",
 	[572450] = "Parchemin zandalari antique",
 	[572451] = "Vigne sempervirente",
 	[572453] = "Fragment de pylône",
@@ -43704,6 +43724,7 @@ localize(ObjectNames, {
 	[572457] = "Roses séchées",
 	[572458] = "Peau de sabot-fourchu",
 	[572498] = "Bijou amani perdu",
+	[572561] = "Cristal",
 	[572785] = "Bois d’olemba",
 	[572806] = "Fragment de révélation",
 	[572819] = "Tombeau protégé par le Vide",
@@ -44010,6 +44031,8 @@ localize(ObjectNames, {
 	[656046] = "Sacoche d’éclaireur malchanceux",
 	[656489] = "Cache d’Azta’rec",
 	[657746] = "Pépé",
+	[658087] = "Malle lourde extrêmement abondante",
+	[658088] = "Malle lourde extrêmement abondante",
 	[658789] = "Hologemme couverte de poussière",
 	[658799] = "Garde enchantée",
 	[660427] = "Registre de Lokago",
@@ -51189,6 +51212,7 @@ localize(ObjectNames, {
 	[572428] = "Dardo degli Amani Perduto",
 	[572446] = "Lancia Sfregiata",
 	[572448] = "Stendardo d'Ebano",
+	[572449] = "Lanterna Corrotta",
 	[572450] = "Antica Pergamena degli Zandalari",
 	[572451] = "Viticcio Sempreverde",
 	[572453] = "Frammento di Pilone",
@@ -51196,6 +51220,7 @@ localize(ObjectNames, {
 	[572455] = "Ancora Pesante",
 	[572456] = "Arazzo Sabbioso",
 	[572498] = "Monile degli Amani Perduto",
+	[572561] = "Cristallo",
 	[572785] = "Legname di Olemba",
 	[572806] = "Frammento della Rivelazione",
 	[572819] = "Tomba Protetta dal Vuoto",
@@ -59104,6 +59129,7 @@ localize(ObjectNames, {
 	[572428] = "Seta Amani Perdida",
 	[572446] = "Lança Marcada",
 	[572448] = "Estandarte de Ébano",
+	[572449] = "Lanterna Corrompida",
 	[572450] = "Pergaminho Zandalari Ancestral",
 	[572451] = "Trepadeira Sempre-verde",
 	[572454] = "Tomo Surrado",
@@ -59111,6 +59137,7 @@ localize(ObjectNames, {
 	[572456] = "Tapeçaria Arenosa",
 	[572457] = "Rosas Secas",
 	[572498] = "Berloque Amani Perdido",
+	[572561] = "Cristal",
 	[572806] = "Fragmento da Revelação",
 	[572819] = "Tumba com Escudo Caótico",
 	[572869] = "Lenha de Olemba",
@@ -59379,6 +59406,8 @@ localize(ObjectNames, {
 	[654986] = "Baú Decrépito",
 	[656046] = "Algibeira do Batedor Desafortunado",
 	[656489] = "Depósito de Azta'rec",
+	[658087] = "Baú Pesado de Abundância Redobrada",
+	[658088] = "Baú Pesado de Abundância Redobrada",
 	[658789] = "Hologema Empoeirada",
 	[658799] = "Punho Encantado",
 	[660427] = "Livro-caixa de Lokago",
@@ -68050,6 +68079,7 @@ localize(ObjectNames, {
 	[572428] = "Забытая аманийская стрела",
 	[572446] = "Иссеченное копье",
 	[572448] = "Черное знамя",
+	[572449] = "Оскверненный светильник",
 	[572450] = "Древний зандаларский свиток",
 	[572451] = "Вечнозеленая лоза",
 	[572453] = "Фрагмент пилона",
@@ -68059,6 +68089,7 @@ localize(ObjectNames, {
 	[572457] = "Засушенные розы",
 	[572458] = "Шкура копытня",
 	[572498] = "Забытая аманийская безделушка",
+	[572561] = "Кристалл",
 	[572785] = "Олембовая древесина",
 	[572806] = "Фрагмент откровения",
 	[572819] = "Гробница под щитом Бездны",
@@ -68341,6 +68372,8 @@ localize(ObjectNames, {
 	[656046] = "Сумка неудачливого разведчика",
 	[656489] = "Тайник Азта'река",
 	[657746] = "Пепе",
+	[658087] = "Богатый тяжелый ларь изобилия",
+	[658088] = "Богатый тяжелый ларь изобилия",
 	[658789] = "Запыленный голографит",
 	[658799] = "Зачарованный эфес",
 	[660427] = "Учетная книга Локаго",
@@ -75463,6 +75496,7 @@ localize(ObjectNames, {
 	[572428] = "잃어버린 아마니 화살",
 	[572446] = "흉터투성이 창",
 	[572448] = "칠흑 깃발",
+	[572449] = "타락한 등불",
 	[572450] = "고대 잔달라 두루마리",
 	[572451] = "사철나무 덩굴",
 	[572453] = "수정탑 파편",
@@ -75690,6 +75724,8 @@ localize(ObjectNames, {
 	[652477] = "수호 금고",
 	[652482] = "골화 성물",
 	[653064] = "골화 성물",
+	[658087] = "넘칠 듯이 풍요로운 육중한 보관함",
+	[658088] = "넘칠 듯이 풍요로운 육중한 보관함",
 	[658789] = "먼지로 뒤덮인 투영석",
 	[658799] = "마력 깃든 칼자루",
 	[671498] = "맹독에 닳은 궤짝",
@@ -76182,6 +76218,9 @@ L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic izquierdo para Expandir/Contraer\nCli
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic izquierdo para Expandir/Contraer\nClic derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + clic para buscar en la Casa de Subastas|r"
 L.OWNED_BY = "Poseído por %s"
 L.OWNED_PETS = "Mascotas poseídas"
+L.PATCH = "Parche: "
+L.PATCH_EDIT_BOX = "Por favor, introduzca un nuevo parche"
+L.PATCH_TOOLTIP = "Pulse este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se agregaron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERCENTAGES_CHECKBOX = "Muestra el porcentaje de completado"
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado."
@@ -84374,6 +84413,7 @@ localize(ObjectNames, {
 	[572428] = "Saeta Amani perdida",
 	[572446] = "Lanza cicatrícea",
 	[572448] = "Estandarte ébano",
+	[572449] = "Farol corrupto",
 	[572450] = "Pergamino Zandalari antiguo",
 	[572451] = "Parra de siempreverde",
 	[572453] = "Fragmento de pilón",
@@ -84383,6 +84423,7 @@ localize(ObjectNames, {
 	[572457] = "Rosas secas",
 	[572458] = "Pellejo de uñagrieta",
 	[572498] = "Abalorio Amani perdido",
+	[572561] = "Cristal",
 	[572785] = "Madera de olemba",
 	[572806] = "Fragmento de revelación",
 	[572819] = "Tumba blindada contra el Vacío",
@@ -84665,6 +84706,8 @@ localize(ObjectNames, {
 	[654986] = "Alijo viejo",
 	[655006] = "Espada de juguete de madera",
 	[656489] = "Alijo de Azta'rec",
+	[658087] = "Baúl pesado abundantemente pródigo",
+	[658088] = "Baúl pesado abundantemente pródigo",
 	[658789] = "Hologema cubierta de polvo",
 	[658799] = "Empuñadura encantada",
 	[660427] = "Libro de contabilidad de Lokago",
@@ -84900,6 +84943,8 @@ L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser 
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para actualizar las Colecciones\n" .. CTRL_KEY_TEXT .. " + click para Expandir/Contraer recursivamente\n" .. SHIFT_KEY_TEXT .. " + click derecho para ordenar grupos o listas emergentes\n" .. ALT_KEY_TEXT .. " + click derecho para marcar puntos de referencia|r"
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n" .. SHIFT_KEY_TEXT .. " + click para buscar en la Casa de Subastas|r"
 L.OWNED_PETS = "Mascotas obtenidas"
+L.PATCH_EDIT_BOX = "Por favor, escriba un nuevo parche"
+L.PATCH_TOOLTIP = "Click a este botón para cambiar el parche.\n\nCambiar este valor filtrará los elementos que se añadieron durante el parche o rango especificado."
 L.PATREON_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!"
 L.PERSONAL_LOOT_DESC = "Cada jugador tiene una probabilidad independiente de despojar un objeto útil para su clase ...\n\n ... O inútil como los anillos.\n\nHaz click dos veces para crear un grupo automáticamente si estás sólo."
 L.PET_DESC = "Haz click en este botón para seleccionar una mascota aleatoria basado en lo que te falta."
@@ -93908,6 +93953,7 @@ localize(ObjectNames, {
 	[572254] = "铁木木料",
 	[572428] = "失落的阿曼尼弩箭",
 	[572446] = "战痕长矛",
+	[572449] = "腐化的灯笼",
 	[572450] = "古代赞达拉卷轴",
 	[572451] = "常青藤蔓",
 	[572453] = "晶塔碎片",
@@ -93917,6 +93963,7 @@ localize(ObjectNames, {
 	[572457] = "风干玫瑰",
 	[572458] = "裂蹄牛的皮",
 	[572498] = "失落的阿曼尼饰品",
+	[572561] = "水晶",
 	[572806] = "揭示碎片",
 	[572819] = "虚空庇护之墓",
 	[572869] = "奥雷巴木料",
@@ -94146,6 +94193,8 @@ localize(ObjectNames, {
 	[653064] = "骨化圣物",
 	[654986] = "破旧的宝箱",
 	[657746] = "佩佩",
+	[658087] = "丰饶的丰裕沉重箱子",
+	[658088] = "丰饶的丰裕沉重箱子",
 	[658789] = "布满灰尘的全息宝石",
 	[658799] = "附魔剑柄",
 	[671498] = "毒蚀宝匣",
@@ -96138,6 +96187,7 @@ localize(ObjectNames, {
 	[572428] = "遺失的阿曼尼箭頭",
 	[572446] = "傷痕之矛",
 	[572448] = "黯黑旌旗",
+	[572449] = "腐化燈籠",
 	[572450] = "遠古贊達拉卷軸",
 	[572451] = "長青藤蔓",
 	[572454] = "破舊的秘典",
@@ -96381,6 +96431,8 @@ localize(ObjectNames, {
 	[652477] = "受保護帶鎖箱",
 	[653064] = "骨化聖物",
 	[657746] = "皮皮",
+	[658087] = "豐足豐碩沉重的箱子",
+	[658088] = "豐足豐碩沉重的箱子",
 	[658789] = "灰塵覆蓋的全像寶石",
 	[658799] = "附魔劍柄",
 	[671498] = "毒蝕寶庫",

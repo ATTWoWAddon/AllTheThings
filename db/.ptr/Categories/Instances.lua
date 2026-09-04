@@ -7895,7 +7895,7 @@ s(12746,28810,{b=1,f=6,loc=47,lvl=27}),
 i(28830,{b=1,f=53,lvl=27,spellID=34774}),
 i(28823,{b=1,f=53,lvl=27,spellID=37705}),
 i(31750)}})}}),
-inst(747,{awp=20001,coords={
+inst(747,{awp=20003,coords={
 [100]={{47.51,52.08}}},isLockoutShared=1,isRaid=1,lore="After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",mapID=331,savedInstanceID=544,g={
 h(-45,{
 q(11002,{lvl=30,maps={100},providers={{"i",32385}},r=2,g={
@@ -7910,13 +7910,13 @@ i(28790,{b=1,f=52}),
 i(28791,{b=1,f=52})}}),
 q(10888,{coords={
 [111]={{54.2,44.4}}},crs={17257},lvl=30,qgs={18481},rwp=30002,sourceQuests={10884,10885,10886},u=2,g={
-i(31746,{awp=20001,b=1,f=52}),
+i(31746,{awp=20003,b=1,f=52}),
 i(31704,{rwp=20300,u=2}),
 ach(432,{sourceQuests={10888},u=2}),
 title(36,{u=2})}}),
 q(13430,{altQuests={10888},awp=30002,coords={
 [111]={{54.2,44.4}}},crs={17257},lvl=30,qgs={18481},sourceQuests={10884,10885,10886},g={
-i(31746,{awp=20001,b=1,f=52})}})}),
+i(31746,{awp=20003,b=1,f=52})}})}),
 e(1566,{npcID=17257,g={
 ach(693,{awp=30002,g={
 crit(4017,{achID=1286,id=4})}}),
@@ -7940,19 +7940,19 @@ s(12725,28779,{b=1,f=7,loc=45,lvl=27}),
 s(12724,28778,{b=1,f=6,loc=45,lvl=27}),
 i(28789,{b=1,f=53,lvl=27,spellID=34749}),
 i(34846,{awp=20400,g={
-i(32227,{awp=20001}),
-i(32228,{awp=20001}),
-i(32229,{awp=20001}),
-i(32231,{awp=20001}),
-i(32230,{awp=20001}),
-i(32249,{awp=20001}),
-i(23440,{awp=20001}),
-i(23436,{awp=20001}),
-i(23441,{awp=20001}),
-i(23439,{awp=20001}),
-i(23438,{awp=20001}),
-i(23437,{awp=20001})}})}})}}),
-inst(748,{awp=20001,coords={
+i(32227,{awp=20003}),
+i(32228,{awp=20003}),
+i(32229,{awp=20003}),
+i(32231,{awp=20003}),
+i(32230,{awp=20003}),
+i(32249,{awp=20003}),
+i(23440,{awp=20003}),
+i(23436,{awp=20003}),
+i(23441,{awp=20003}),
+i(23439,{awp=20003}),
+i(23438,{awp=20003}),
+i(23437,{awp=20003})}})}})}}),
+inst(748,{awp=20003,coords={
 [102]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",mapID=332,savedInstanceID=548,g={
 h(-45,{
 q(10944,{coords={

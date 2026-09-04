@@ -44478,7 +44478,7 @@ mnt(1266211,{itemID=275302,pvp=1})}}),
 ach(62955,{providers={{"s",1266211}},pvp=1}),
 ach(62928,{pvp=1}),
 ach(62911,{pvp=1,g={
-ill(8697,{pvp=1})}}),
+ill(8697,{itemID=275062,pvp=1})}}),
 ach(62924,{pvp=1,r=2,g={
 title(769,{pvp=1})}}),
 ach(62925,{pvp=1,r=1,g={

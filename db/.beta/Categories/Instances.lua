@@ -1658,7 +1658,7 @@ inst(743,{awp=10900,coords={
 [327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",mapID=247,savedInstanceID=509,g={
 h(-31,{
 faction(609,{icon=132136,maps={81},g={
-crit(2045,{achID=953,awp=20001,id=2})}})}),
+crit(2045,{achID=953,awp=20003,id=2})}})}),
 h(-45,{
 cl(11,{
 q(8700,{c={11},coords={
@@ -7486,7 +7486,7 @@ s(89451,151455,{awp=70300,b=1,f=3,lvl=19}),
 s(3301,9469,{b=1,f=6,loc=42,lvl=19})}}),
 d(24,{sym={{"sub","tw_instance",241}}})}})}),
 x(2,{
-h(-12,{awp=20001,g={
+h(-12,{awp=20003,g={
 ach(11747,{awp=70200,g={
 crit(36408,{achID=11761,id=29})}}),
 ach(1287,{awp=30002}),
@@ -7495,10 +7495,10 @@ ach(1286,{awp=30002}),
 ach(11746,{awp=70200,g={
 crit(36407,{achID=11761,id=28})}}),
 ach(8293,{awp=50300,g={
-p(1236,{awp=20001,b=1,itemID=97558,npcID=71023,spellID=141450})}}),
+p(1236,{awp=20003,b=1,itemID=97558,npcID=71023,spellID=141450})}}),
 ach(9824,{awp=60100,g={
-p(1635,{awp=20001,b=1,itemID=122116,npcID=90215,spellID=179841})}})}}),
-h(-61,{awp=20001,isRaid=1,g={
+p(1635,{awp=20003,b=1,itemID=122116,npcID=90215,spellID=179841})}})}}),
+h(-61,{awp=20003,isRaid=1,g={
 n(18728,{coords={
 [100]={{63.2,16}}},isRaid=1,lore="Originally known just as Lord Kazzak, but after he found an artifact to reopen the Dark Portal and travelled through it, he was promoted. He now commands the Legion war effort in Outland in the name of his master, Kil'jaeden. Lord Kazzak's replacement on Azeroth after the re-opening of the Dark Portal is Highlord Kruul, one of Kazzak's minions.",modelScale=3.8,g={
 s(13877,30732,{f=28,lvl=27}),
@@ -7523,7 +7523,7 @@ s(13874,30729,{f=3,lvl=27}),
 s(13875,30730,{f=5,loc=42,lvl=27}),
 s(13871,30725,{f=4,loc=44,lvl=27}),
 s(13872,30727,{f=4,loc=46,lvl=27})}})}}),
-inst(745,{awp=20001,coords={
+inst(745,{awp=20003,coords={
 [42]={{46.87,74.69}}},description="The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",isLockoutShared=1,isRaid=1,lore="Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",maps={350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366},savedInstanceID=532,g={
 h(-12,{
 ach(960,{minReputation={967,42000}})}),
@@ -7653,7 +7653,7 @@ n(17518,{description="This vendor is located in the Guardian's Library.",g={
 r(32867,{b=1,itemID=25903,requireSkill=755,skillID=2523}),
 r(32866,{b=1,itemID=25902,requireSkill=755,skillID=2523}),
 i(22535,{description="This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",f=50}),
-r(27920,{requireSkill=333,rwp=60002,u=2})}})}),
+r(27920,{awp=20001,requireSkill=333,rwp=60002,u=2})}})}),
 h(-63,{
 r(27954,{b=1,crs={16472},itemID=22545,requireSkill=333,skillID=2493}),
 r(26780,{b=1,crs={16406},itemID=21903,requireSkill=197,skillID=2539}),
@@ -7863,7 +7863,7 @@ s(12713,28766,{b=1,f=3,lvl=27}),
 s(12712,28765,{b=1,f=3,lvl=27}),
 i(28763,{b=1,f=52,lvl=27}),
 i(28757,{b=1,f=52,lvl=27})}})}}),
-inst(746,{awp=20001,coords={
+inst(746,{awp=20003,coords={
 [105]={{69.31,23.67}}},isLockoutShared=1,isRaid=1,lore="When the infamous Dragon Aspect, Deathwing, discovered the Dark Portal and Draenor, he felt sure that few of Draenor's denizens would dare challenge the black dragonflight, so he scattered clutches of his eggs throughout the world.\n\nDeathwing made a serious miscalculation when he chose to leave his eggs under meager guardianship in Blade's Edge Mountains. The guardian dragons were torn from the sky by the gronn living in Blade's Edge, and the leader of the gronn, Gruul, impaled the wyrms he fought on the stone spires of the mountains.\n\nToday Gruul the Dragonkiller is worshipped as a deity by the ogres of Blade's Edge Mountains. His powerful sons ravage both the spires of their home and the plains of Nagrand. Gruul's unparalleled strength and experience in battle would pose a serious threat if he ever chose to attack Horde or Alliance forces in Outland.",mapID=330,savedInstanceID=565,g={
 e(1564,{npcID=18831,g={
 i(29763,{b=2,c={2,4,7},lvl=27,spellID=238156}),
@@ -7895,7 +7895,7 @@ s(12746,28810,{b=1,f=6,loc=47,lvl=27}),
 i(28830,{b=1,f=53,lvl=27,spellID=34774}),
 i(28823,{b=1,f=53,lvl=27,spellID=37705}),
 i(31750)}})}}),
-inst(747,{awp=20001,coords={
+inst(747,{awp=20003,coords={
 [100]={{47.51,52.08}}},isLockoutShared=1,isRaid=1,lore="After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",mapID=331,savedInstanceID=544,g={
 h(-45,{
 q(11002,{lvl=30,maps={100},providers={{"i",32385}},r=2,g={
@@ -7910,13 +7910,13 @@ i(28790,{b=1,f=52}),
 i(28791,{b=1,f=52})}}),
 q(10888,{coords={
 [111]={{54.2,44.4}}},crs={17257},lvl=30,qgs={18481},rwp=30002,sourceQuests={10884,10885,10886},u=2,g={
-i(31746,{awp=20001,b=1,f=52}),
+i(31746,{awp=20003,b=1,f=52}),
 i(31704,{rwp=20300,u=2}),
 ach(432,{sourceQuests={10888},u=2}),
 title(36,{u=2})}}),
 q(13430,{altQuests={10888},awp=30002,coords={
 [111]={{54.2,44.4}}},crs={17257},lvl=30,qgs={18481},sourceQuests={10884,10885,10886},g={
-i(31746,{awp=20001,b=1,f=52})}})}),
+i(31746,{awp=20003,b=1,f=52})}})}),
 e(1566,{npcID=17257,g={
 ach(693,{awp=30002,g={
 crit(4017,{achID=1286,id=4})}}),
@@ -7940,19 +7940,19 @@ s(12725,28779,{b=1,f=7,loc=45,lvl=27}),
 s(12724,28778,{b=1,f=6,loc=45,lvl=27}),
 i(28789,{b=1,f=53,lvl=27,spellID=34749}),
 i(34846,{awp=20400,g={
-i(32227,{awp=20001}),
-i(32228,{awp=20001}),
-i(32229,{awp=20001}),
-i(32231,{awp=20001}),
-i(32230,{awp=20001}),
-i(32249,{awp=20001}),
-i(23440,{awp=20001}),
-i(23436,{awp=20001}),
-i(23441,{awp=20001}),
-i(23439,{awp=20001}),
-i(23438,{awp=20001}),
-i(23437,{awp=20001})}})}})}}),
-inst(748,{awp=20001,coords={
+i(32227,{awp=20003}),
+i(32228,{awp=20003}),
+i(32229,{awp=20003}),
+i(32231,{awp=20003}),
+i(32230,{awp=20003}),
+i(32249,{awp=20003}),
+i(23440,{awp=20003}),
+i(23436,{awp=20003}),
+i(23441,{awp=20003}),
+i(23439,{awp=20003}),
+i(23438,{awp=20003}),
+i(23437,{awp=20003})}})}})}}),
+inst(748,{awp=20003,coords={
 [102]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",mapID=332,savedInstanceID=548,g={
 h(-45,{
 q(10944,{coords={
@@ -8076,7 +8076,7 @@ i(30621,{b=1,f=53,lvl=27,spellID=38326}),
 i(32895,{b=1,lvl=27,rwp=40003,spellID=42801,u=2,g={
 i(32897)}}),
 i(29906,{f=55})}})}}),
-inst(749,{awp=20001,coords={
+inst(749,{awp=20003,coords={
 [109]={{73.73,63.71}}},isLockoutShared=1,isRaid=1,lore="With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",mapID=334,savedInstanceID=550,g={
 h(-45,{
 q(11007,{lvl=30,providers={{"i",32405}},g={
@@ -8191,7 +8191,7 @@ s(13694,30311,{collectible=false,crs={21272},f=25,lvl=27,u=5}),
 i(32896,{b=1,lvl=27,rwp=40003,spellID=42801,u=2,g={
 i(32897)}}),
 i(29905,{f=55})}})}}),
-inst(750,{awp=20001,coords={
+inst(750,{awp=20003,coords={
 [71]={{64.7,49.9}},
 [75]={{36,16.1}}},isLockoutShared=1,isRaid=1,lore="The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",mapID=329,savedInstanceID=534,g={
 h(-12,{
@@ -8200,12 +8200,12 @@ h(-31,{
 faction(990,{description="Reputation is obtained from killing mobs in Mount Hyjal raid.\n\nProtip: Remain in the Alliance base when it becomes abandoned as an addtional wave of mobs will spawn. Addtional waves of mobs can be triggered by moving past the boundry of the base. This also applies for the Horde base.",maps={75}})}),
 ah(2575,{type="s",g={
 o(185557,{awp=20100,maps={329},requireSkill=186,g={
-i(23440,{awp=20001}),
-i(23436,{awp=20001}),
-i(23441,{awp=20001}),
-i(23439,{awp=20001}),
-i(23438,{awp=20001}),
-i(23437,{awp=20001}),
+i(23440,{awp=20003}),
+i(23436,{awp=20003}),
+i(23441,{awp=20003}),
+i(23439,{awp=20003}),
+i(23438,{awp=20003}),
+i(23437,{awp=20003}),
 i(32227),
 i(32228),
 i(32229),
@@ -9017,7 +9017,7 @@ s(15892,34341,{b=1,f=7,loc=44,lvl=27}),
 s(15895,34344,{b=1,f=4,loc=44,lvl=27}),
 s(15893,34342,{b=1,f=4,loc=44,lvl=27}),
 s(15894,34343,{b=1,f=6,loc=44,lvl=27})}})}}),
-inst(247,{awp=20001,coords={
+inst(247,{awp=20003,coords={
 [108]={{34.34,65.61}}},lore="Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",maps={256,257},savedInstanceID=558,g={
 h(-45,{
 q(10167,{coords={
@@ -9033,10 +9033,10 @@ q(29595,{awp=40300,coords={
 q(29591,{awp=40300,crs={18521,18524,18702},lvl=15,qgs={54698}}),
 q(29590,{awp=40300,crs={18371},lvl=15,qgs={54725}}),
 q(29596,{awp=40300,crs={18373},lvl=15,qgs={54725},sourceQuests={29595},g={
-s(13088,29341,{awp=20001,b=1,f=4,loc=42}),
-s(13087,29340,{awp=20001,b=1,f=5,loc=42}),
-s(13086,29339,{awp=20001,b=1,f=6,loc=42}),
-s(13085,29337,{awp=20001,b=1,f=7,loc=42})}}),
+s(13088,29341,{awp=20003,b=1,f=4,loc=42}),
+s(13087,29340,{awp=20003,b=1,f=5,loc=42}),
+s(13086,29339,{awp=20003,b=1,f=6,loc=42}),
+s(13085,29337,{awp=20003,b=1,f=7,loc=42})}}),
 q(10168,{coords={
 [257]={{73.8,57}}},crs={18688,19480},lvl=15,maps={107},qgs={19412},qis={28283},r=1,sourceQuests={10167}})}),
 d(102,{difficulties={1,2},g={
@@ -9095,7 +9095,7 @@ s(12365,28268,{b=1,f=5,loc=44,lvl=27,modID=2}),
 s(12163,27937,{b=1,f=23,lvl=27,modID=2}),
 s(12072,27797,{b=1,f=5,loc=41,lvl=27,modID=2}),
 s(12121,27876,{b=1,f=23,lvl=27,modID=2})}})}})})}}),
-inst(248,{awp=20001,coords={
+inst(248,{awp=20003,coords={
 [100]={{47.65,53.57}}},lore="Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",mapID=347,savedInstanceID=543,g={
 h(-45,{
 q(9587,{maps={100},providers={{"i",23890}},r=2,rwp=40300,u=2}),
@@ -9113,15 +9113,15 @@ q(29543,{awp=40300,coords={
 q(29542,{awp=40300,coords={
 [100]={{58,41.2}}},lvl=10,qgs={19256},r=1}),
 q(29528,{awp=40300,lvl=10,qgs={54603},qis={23881,23901},r=2,g={
-s(10563,25715,{awp=20001,b=1,f=7,loc=41}),
-s(10566,25718,{awp=20001,b=1,f=4,loc=41}),
-s(10564,25716,{awp=20001,b=1,f=6,loc=44}),
-s(10565,25717,{awp=20001,b=1,f=5,loc=47})}}),
+s(10563,25715,{awp=20003,b=1,f=7,loc=41}),
+s(10566,25718,{awp=20003,b=1,f=4,loc=41}),
+s(10564,25716,{awp=20003,b=1,f=6,loc=44}),
+s(10565,25717,{awp=20003,b=1,f=5,loc=47})}}),
 q(29527,{awp=40300,lvl=10,qgs={54606},qis={23881,23901},r=1,g={
-s(10563,25715,{awp=20001,b=1,f=7,loc=41}),
-s(10566,25718,{awp=20001,b=1,f=4,loc=41}),
-s(10564,25716,{awp=20001,b=1,f=6,loc=44}),
-s(10565,25717,{awp=20001,b=1,f=5,loc=47})}}),
+s(10563,25715,{awp=20003,b=1,f=7,loc=41}),
+s(10566,25718,{awp=20003,b=1,f=4,loc=41}),
+s(10564,25716,{awp=20003,b=1,f=6,loc=44}),
+s(10565,25717,{awp=20003,b=1,f=5,loc=47})}}),
 q(9575,{coords={
 [100]={{56.7,66.3}}},qgs={17557},qis={23881,23886,23901},r=2,rwp=40300,sourceQuests={10142},u=2,g={
 s(10564,25716,{b=1,f=6,loc=44}),
@@ -9330,7 +9330,7 @@ gach(5082,{awp=40003}),
 ach(884,{providers={{"i",35513}}}),
 mnt(46628,{b=1,itemID=35513,lvl=10})}})}),
 d(24,{sym={{"sub","tw_instance",249}}})}}),
-inst(250,{awp=20001,coords={
+inst(250,{awp=20003,coords={
 [108]={{39.63,57.67}}},lore="Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spontaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",mapID=272,savedInstanceID=557,g={
 h(-45,{
 q(29583,{awp=40300,coords={
@@ -9496,15 +9496,15 @@ i(28490),
 i(33835),
 r(28572,{b=1,itemID=22921,requireSkill=171,skillID=2484})}})}),
 d(24,{sym={{"sub","tw_instance",250}}})}}),
-inst(251,{awp=20001,coords={
+inst(251,{awp=20003,coords={
 [75]={{26.8,36.8}}},description="This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",lore="Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",mapID=274,savedInstanceID=560,g={
 h(-45,{
 q(10284,{qgs={17876},rwp=40300,sourceQuests={10283},u=2}),
 q(29599,{awp=40300,lvl=15,qgs={17876},sourceQuests={29598},g={
-s(13075,29317,{awp=20001,b=1,f=4,loc=44}),
-s(13076,29318,{awp=20001,b=1,f=5,loc=47}),
-s(13077,29319,{awp=20001,b=1,f=6,loc=45}),
-s(13074,29316,{awp=20001,b=1,f=7,loc=41})}}),
+s(13075,29317,{awp=20003,b=1,f=4,loc=44}),
+s(13076,29318,{awp=20003,b=1,f=5,loc=47}),
+s(13077,29319,{awp=20003,b=1,f=6,loc=45}),
+s(13074,29316,{awp=20003,b=1,f=7,loc=41})}}),
 q(12513,{coords={
 [71]={{50.8,27.5}}},lvl=15,qgs={28126},qis={38329},races={1,3,7,32,34,37},g={
 s(18356,38276,{f=2,loc=40})}}),
@@ -9660,7 +9660,7 @@ i(28223,{b=1,f=53,lvl=27,modID=2,spellID=34000}),
 r(31078,{b=1,itemID=24173,requireSkill=755,skillID=2523}),
 i(23572),
 i(33847)}})})}}),
-inst(252,{awp=20001,coords={
+inst(252,{awp=20003,coords={
 [108]={{44.93,65.61}}},lore="Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",maps={258,259},savedInstanceID=556,g={
 h(-45,{
 q(10097,{coords={
@@ -9670,10 +9670,10 @@ i(29334,{b=1,f=51}),
 i(29335,{b=1,f=51}),
 i(29333,{b=1,f=51})}}),
 q(29605,{awp=40300,crs={18956},lvl=15,qgs={54840},sourceQuests={10180},g={
-i(29336,{awp=20001,b=1,f=51}),
-i(29334,{awp=20001,b=1,f=51}),
-i(29335,{awp=20001,b=1,f=51}),
-i(29333,{awp=20001,b=1,f=51})}}),
+i(29336,{awp=20003,b=1,f=51}),
+i(29334,{awp=20003,b=1,f=51}),
+i(29335,{awp=20003,b=1,f=51}),
+i(29333,{awp=20003,b=1,f=51})}}),
 q(10180,{coords={
 [111]={{58,15.2}}},isBreadcrumb=1,lvl=15,nextQuests={10097,10098,29605},qgs={19045}}),
 q(11011,{c={11},coords={
@@ -9683,14 +9683,14 @@ q(29607,{awp=40300,crs={19428},description="Dealer Vijaad appears upon defeating
 q(10098,{coords={
 [108]={{44.1,65}}},cost={{"i",32888,1}},qgs={18933},qis={27632,27633,27634},rwp=40300,sourceQuests={10180},u=2}),
 q(29606,{awp=40300,lvl=15,qgs={54840},qis={27632,27633},g={
-s(13083,29330,{awp=20001,b=1,f=1}),
-s(13084,29332,{awp=20001,b=1,f=5,loc=40}),
-s(13082,29329,{awp=20001,b=1,f=29})}}),
+s(13083,29330,{awp=20003,b=1,f=1}),
+s(13084,29332,{awp=20003,b=1,f=5,loc=40}),
+s(13082,29329,{awp=20003,b=1,f=29})}}),
 q(11001,{c={11},coords={
 [102]={{80.2,65.2}}},crs={23035},qgs={22832},qis={32449},rwp=40001,sourceQuests={10994},u=2,g={
 ach(2359,{c={11},sourceQuests={11001},u=2}),
 i(32387,{b=1,u=2}),
-i(32462,{awp=20001,g={
+i(32462,{awp=20003,g={
 i(32454,{b=1}),
 i(32449,{b=1,spellID=40098})}})}})}),
 h(-19,{
@@ -9772,7 +9772,7 @@ i(23572),
 i(27632),
 i(33834),
 i(27991,{b=1,description="You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",rwp=40003,u=2})}})})}}),
-inst(253,{awp=20001,coords={
+inst(253,{awp=20003,coords={
 [108]={{39.63,73.55}}},lore="Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",mapID=260,savedInstanceID=555,g={
 h(-45,{
 q(29645,{awp=40300,crs={18731,18794},lvl=20,qgs={54890}}),
@@ -9785,10 +9785,10 @@ s(12301,28178,{b=1,f=5,loc=47}),
 s(12300,28177,{b=1,f=6,loc=47}),
 s(12299,28176,{b=1,f=7,loc=47})}}),
 q(29644,{awp=40300,crs={18708},lvl=20,providers={{"o",182947}},sourceQuests={29643},g={
-s(12302,28179,{awp=20001,b=1,f=4,loc=47}),
-s(12301,28178,{awp=20001,b=1,f=5,loc=47}),
-s(12300,28177,{awp=20001,b=1,f=6,loc=47}),
-s(12299,28176,{awp=20001,b=1,f=7,loc=47})}}),
+s(12302,28179,{awp=20003,b=1,f=4,loc=47}),
+s(12301,28178,{awp=20003,b=1,f=5,loc=47}),
+s(12300,28177,{awp=20003,b=1,f=6,loc=47}),
+s(12299,28176,{awp=20003,b=1,f=7,loc=47})}}),
 q(10649,{coords={
 [107]={{27.3,43}}},lvl=25,qgs={18417},qis={30808},sourceQuests={10646}}),
 q(10094,{qgs={19542},rwp=40300,sourceQuests={10177},u=2}),
@@ -9797,16 +9797,16 @@ q(29643,{awp=40300,coords={
 q(10666,{coords={
 [108]={{77.4,38.6}}},lvl=25,qgs={21465},qis={30827},sourceQuests={10664}}),
 q(10091,{qgs={18891},qis={27480},rwp=40300,sourceQuests={10178},u=2,g={
-s(12297,28174,{awp=20001,b=1,f=4,loc=43}),
-s(12294,28171,{awp=20001,b=1,f=5,loc=43}),
-s(12293,28170,{awp=20001,b=1,f=6,loc=43}),
-s(12291,28167,{awp=20001,b=1,f=7,loc=43}),
+s(12297,28174,{awp=20003,b=1,f=4,loc=43}),
+s(12294,28171,{awp=20003,b=1,f=5,loc=43}),
+s(12293,28170,{awp=20003,b=1,f=6,loc=43}),
+s(12291,28167,{awp=20003,b=1,f=7,loc=43}),
 o(182940)}}),
 q(29641,{awp=40300,lvl=20,qgs={18891},qis={27480},sourceQuests={29640},g={
-s(12297,28174,{awp=20001,b=1,f=4,loc=43}),
-s(12294,28171,{awp=20001,b=1,f=5,loc=43}),
-s(12293,28170,{awp=20001,b=1,f=6,loc=43}),
-s(12291,28167,{awp=20001,b=1,f=7,loc=43}),
+s(12297,28174,{awp=20003,b=1,f=4,loc=43}),
+s(12294,28171,{awp=20003,b=1,f=5,loc=43}),
+s(12293,28170,{awp=20003,b=1,f=6,loc=43}),
+s(12291,28167,{awp=20003,b=1,f=7,loc=43}),
 o(182940)}}),
 q(10885,{coords={
 [111]={{54,44.8}}},lvl=30,maps={263},qgs={18481},qis={31721,31722},sourceQuests={10883}}),
@@ -9920,7 +9920,7 @@ r(31452,{b=1,itemID=24309,requireSkill=197,skillID=2539}),
 i(23572),
 i(33840),
 i(31722)}})})}}),
-inst(254,{awp=20001,coords={
+inst(254,{awp=20003,coords={
 [109]={{74.42,57.72}}},lore="The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",maps={269,270,271},savedInstanceID=552,g={
 h(-45,{
 q(10706,{lvl=25,qgs={21962},sourceQuests={10705}}),
@@ -9939,9 +9939,9 @@ s(14401,31462,{b=1,f=6,loc=45}),
 s(14403,31465,{b=1,f=3}),
 s(14399,31460,{b=1,f=7,loc=45})}}),
 q(29681,{awp=40300,crs={20912},lvl=25,qgs={18481},sourceQuests={29675},g={
-i(31749,{awp=20001,b=1,f=51}),
-i(31747,{awp=20001,b=1,f=51}),
-i(31748,{awp=20001,b=1,f=51})}}),
+i(31749,{awp=20003,b=1,f=51}),
+i(31747,{awp=20003,b=1,f=51}),
+i(31748,{awp=20003,b=1,f=51})}}),
 q(10705,{coords={
 [104]={{58.1,48.1}}},lvl=25,qgs={21700},sourceQuests={10628}}),
 q(10886,{coords={
@@ -10042,7 +10042,7 @@ i(28407,{b=1,f=52,lvl=27,modID=2}),
 i(28418,{b=1,f=53,lvl=27,modID=2,spellID=34320}),
 i(23572),
 i(33861)}})})}}),
-inst(255,{awp=20001,coords={
+inst(255,{awp=20003,coords={
 [75]={{37.2,83.3}}},lore="The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",mapID=273,savedInstanceID=269,g={
 h(-45,{
 q(10298,{qgs={20201},rwp=40300,sourceQuests={10297},u=2}),
@@ -10137,7 +10137,7 @@ s(12098,27839,{b=1,f=7,loc=46,lvl=27,modID=2}),
 i(28190,{b=1,f=53,lvl=27,modID=2,spellID=60061}),
 i(23572),
 i(33858)}})})}}),
-inst(256,{awp=20001,coords={
+inst(256,{awp=20003,coords={
 [100]={{46.06,51.74}}},lore="The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",mapID=261,savedInstanceID=542,g={
 h(-45,{
 q(9607,{coords={
@@ -10145,29 +10145,29 @@ q(9607,{coords={
 q(9608,{coords={
 [100]={{54.9,36}}},qgs={17558},r=1,rwp=40300,sourceQuests={9572},u=2}),
 q(29539,{awp=40300,lvl=10,qgs={54629},r=2,g={
-i(25714,{awp=20001,b=1,f=51}),
-i(25713,{awp=20001,b=1,f=52}),
-s(10562,25712,{awp=20001,b=1,f=3})}}),
+i(25714,{awp=20003,b=1,f=51}),
+i(25713,{awp=20003,b=1,f=52}),
+s(10562,25712,{awp=20003,b=1,f=3})}}),
 q(29536,{awp=40300,lvl=10,qgs={54636},r=1,g={
-i(25714,{awp=20001,b=1,f=51}),
-i(25713,{awp=20001,b=1,f=52}),
-s(10562,25712,{awp=20001,b=1,f=3})}}),
+i(25714,{awp=20003,b=1,f=51}),
+i(25713,{awp=20003,b=1,f=52}),
+s(10562,25712,{awp=20003,b=1,f=3})}}),
 q(29538,{awp=40300,lvl=10,qgs={54629},qis={23894,73200},r=2}),
 q(29535,{awp=40300,lvl=10,qgs={54636},qis={23894,73200},r=1}),
 q(29537,{awp=40300,crs={17377},lvl=10,qgs={54636},r=1,g={
-s(10558,25701,{awp=20001,b=1,f=7,loc=42}),
-s(10561,25711,{awp=20001,b=1,f=4,loc=46}),
-s(10560,25710,{awp=20001,b=1,f=5,loc=40}),
-s(10559,25702,{awp=20001,b=1,f=6,loc=46})}}),
+s(10558,25701,{awp=20003,b=1,f=7,loc=42}),
+s(10561,25711,{awp=20003,b=1,f=4,loc=46}),
+s(10560,25710,{awp=20003,b=1,f=5,loc=40}),
+s(10559,25702,{awp=20003,b=1,f=6,loc=46})}}),
 q(9589,{coords={
 [100]={{56.4,66.7}}},qgs={17479},qis={23894},r=2,rwp=40300,sourceQuests={9587},u=2}),
 q(9590,{coords={
 [100]={{54.9,36}}},qgs={17558},qis={23894},r=1,rwp=40300,sourceQuests={9588},u=2}),
 q(29540,{awp=40300,crs={17377},lvl=10,qgs={54629},r=2,g={
-s(10558,25701,{awp=20001,b=1,f=7,loc=42}),
-s(10561,25711,{awp=20001,b=1,f=4,loc=46}),
-s(10560,25710,{awp=20001,b=1,f=5,loc=40}),
-s(10559,25702,{awp=20001,b=1,f=6,loc=46})}})}),
+s(10558,25701,{awp=20003,b=1,f=7,loc=42}),
+s(10561,25711,{awp=20003,b=1,f=4,loc=46}),
+s(10560,25710,{awp=20003,b=1,f=5,loc=40}),
+s(10559,25702,{awp=20003,b=1,f=6,loc=46})}})}),
 h(-63,{
 i(23894)}),
 d(1,{
@@ -10270,7 +10270,7 @@ i(28121,{b=1,f=53,lvl=27,modID=2,spellID=34106}),
 i(23572),
 i(33814)}})}),
 d(24,{sym={{"sub","tw_instance",256}}})}}),
-inst(257,{awp=20001,coords={
+inst(257,{awp=20003,coords={
 [109]={{71.74,54.95}}},lore="Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",mapID=266,savedInstanceID=553,g={
 h(-45,{
 q(29669,{awp=40300,crs={17977},lvl=20,sourceQuests={29667}}),
@@ -10391,7 +10391,7 @@ i(23572),
 i(31085),
 i(33859)}})}),
 d(24,{sym={{"sub","tw_instance",257}}})}}),
-inst(258,{awp=20001,coords={
+inst(258,{awp=20003,coords={
 [109]={{70.61,69.75}}},lore="Among the satellites of Tempest Keep, the Mechanar has been chosen by Kael'thas to be a factory to create large amounts of power. Mechano-Lord Capacitus appears to be the one creating it using the naaru-technology found in Tempest Keep, and the power is stored in manacells which piles up into walls and heaps inside the satellite. The large amount of manacells are smuggled by ethereals to the Sunwell where Kael'thas plans to use them to power up the summoning of Kil'jaeden.",maps={267,268},savedInstanceID=554,g={
 h(-45,{
 q(10665,{coords={
@@ -10486,7 +10486,7 @@ r(26784,{b=1,itemID=21907,requireSkill=197,skillID=2539}),
 i(23572),
 i(31086),
 i(33860)}})})}}),
-inst(259,{awp=20001,coords={
+inst(259,{awp=20003,coords={
 [100]={{47.66,51.98}}},lore="For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",mapID=246,savedInstanceID=540,g={
 h(-45,{
 q(29655,{awp=40300,lvl=20,qgs={54931},qis={72597},r=1}),
@@ -10499,11 +10499,11 @@ q(10763,{coords={
 q(10754,{crs={22037},lvl=20,maps={104},providers={{"i",31239}},r=2,rwp=40003,u=2}),
 q(10755,{crs={22037},lvl=20,maps={104},providers={{"i",31241}},r=1,rwp=40003,u=2}),
 q(29650,{awp=40300,lvl=20,qgs={54931},qis={23726},r=1,g={
-s(10585,25790,{awp=20001,b=1,f=5,loc=41}),
-s(10583,25788,{awp=20001,b=1,f=7,loc=44}),
-s(10586,25791,{awp=20001,b=1,f=5,loc=44}),
-s(10584,25789,{awp=20001,b=1,f=6,loc=45}),
-s(10587,25792,{awp=20001,b=1,f=4,loc=47})}}),
+s(10585,25790,{awp=20003,b=1,f=5,loc=41}),
+s(10583,25788,{awp=20003,b=1,f=7,loc=44}),
+s(10586,25791,{awp=20003,b=1,f=5,loc=44}),
+s(10584,25789,{awp=20003,b=1,f=6,loc=45}),
+s(10587,25792,{awp=20003,b=1,f=4,loc=47})}}),
 q(9494,{coords={
 [100]={{53.9,65.7}}},qgs={16829},r=2,rwp=40300,u=2}),
 q(10762,{coords={
@@ -10518,11 +10518,11 @@ q(10758,{coords={
 [100]={{53.1,38.2}}},crs={18733},lvl=20,qgs={16583},qis={31251},r=1,rwp=40003,sourceQuests={10757},u=2,g={
 i(28395,{b=1,u=2})}}),
 q(29649,{awp=40300,lvl=20,qgs={54933},qis={23726},r=2,g={
-s(10585,25790,{awp=20001,b=1,f=5,loc=41}),
-s(10583,25788,{awp=20001,b=1,f=7,loc=44}),
-s(10586,25791,{awp=20001,b=1,f=5,loc=44}),
-s(10584,25789,{awp=20001,b=1,f=6,loc=45}),
-s(10587,25792,{awp=20001,b=1,f=4,loc=47})}}),
+s(10585,25790,{awp=20003,b=1,f=5,loc=41}),
+s(10583,25788,{awp=20003,b=1,f=7,loc=44}),
+s(10586,25791,{awp=20003,b=1,f=5,loc=44}),
+s(10584,25789,{awp=20003,b=1,f=6,loc=45}),
+s(10587,25792,{awp=20003,b=1,f=4,loc=47})}}),
 q(9524,{description="This quest can only be completed on Heroic Difficulty.",qgs={17288},r=2,rwp=40300,u=2}),
 q(9525,{description="This quest can only be completed on Heroic Difficulty.",qgs={17294},r=1,rwp=40300,u=2}),
 q(29656,{awp=40300,lvl=20,qgs={54933},qis={72597},r=2}),
@@ -10538,19 +10538,19 @@ q(10670,{coords={
 q(9495,{coords={
 [100]={{55,36}}},qgs={3230},r=1,rwp=40300,u=2}),
 q(29653,{awp=40300,lvl=20,qgs={54931},qis={23723},r=1,g={
-s(10597,25808,{awp=20001,b=1,f=27}),
-i(25809,{awp=20001,b=1,f=51}),
-s(10598,25810,{awp=20001,b=1,f=3}),
-i(25811,{awp=20001,b=1,f=52})}}),
+s(10597,25808,{awp=20003,b=1,f=27}),
+i(25809,{awp=20003,b=1,f=51}),
+s(10598,25810,{awp=20003,b=1,f=3}),
+i(25811,{awp=20003,b=1,f=52})}}),
 q(10884,{coords={
 [111]={{54,44.8}}},lvl=30,qgs={18481},qis={31716},sourceQuests={10883}}),
 q(9492,{coords={
 [100]={{56.6,66.7}}},qgs={16819},r=2,rwp=40300,u=2}),
 q(29654,{awp=40300,lvl=20,qgs={54933},qis={23723},r=2,g={
-s(10596,25806,{awp=20001,b=1,f=27}),
-i(25803,{awp=20001,b=1,f=51}),
-s(10595,25805,{awp=20001,b=1,f=3}),
-i(25804,{awp=20001,b=1,f=52})}})}),
+s(10596,25806,{awp=20003,b=1,f=27}),
+i(25803,{awp=20003,b=1,f=51}),
+s(10595,25805,{awp=20003,b=1,f=3}),
+i(25804,{awp=20003,b=1,f=52})}})}),
 h(-63,{
 r(27971,{b=1,crs={17465},itemID=22554,requireSkill=333,skillID=2493})}),
 d(1,{
@@ -10644,7 +10644,7 @@ s(12077,27802,{b=1,f=6,loc=41,lvl=27,modID=2})}}),
 n(17301,{
 i(31716)})}),
 d(24,{sym={{"sub","tw_instance",259}}})}}),
-inst(260,{awp=20001,coords={
+inst(260,{awp=20003,coords={
 [102]={{48.95,35.84}}},lore="The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",mapID=265,savedInstanceID=547,g={
 h(-45,{
 q(29564,{awp=40300,crs={17941},lvl=10,qgs={54668}}),
@@ -10665,9 +10665,9 @@ n(17893,{coords={
 q(10901,{lvl=30,maps={330,350},qgs={22421},qis={31750,31751},rwp=30002,sourceQuests={10900},u=2}),
 q(13431,{altQuests={10901},awp=30002,lvl=30,maps={330,350},qgs={22421},qis={31750,31751},sourceQuests={10900}}),
 q(29565,{awp=40300,lvl=10,qgs={54667},qis={72118,72119},g={
-i(25541,{awp=20001,b=1,f=52}),
-s(12226,28029,{awp=20001,b=1,f=4,loc=43}),
-s(10444,25540,{awp=20001,b=1,f=3})}}),
+i(25541,{awp=20003,b=1,f=52}),
+s(12226,28029,{awp=20003,b=1,f=4,loc=43}),
+s(10444,25540,{awp=20003,b=1,f=3})}}),
 q(10900,{lvl=10,qgs={22421}})}),
 h(-63,{
 i(24368)}),
@@ -10780,7 +10780,7 @@ i(27683,{b=1,f=53,lvl=27,modID=2,spellID=33297}),
 i(23572),
 i(33821),
 i(72119,{awp=40300})}})})}}),
-inst(261,{awp=20001,coords={
+inst(261,{awp=20003,coords={
 [102]={{50.35,33.39}}},lore="The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",maps={263,264},savedInstanceID=545,g={
 h(-45,{
 q(29613,{awp=40300,crs={17798},lvl=20,qgs={54848}}),
@@ -10895,7 +10895,7 @@ r(31456,{b=1,itemID=24313,requireSkill=197,skillID=2539}),
 i(23572),
 i(31721),
 i(33827)}})})}}),
-inst(262,{awp=20001,coords={
+inst(262,{awp=20003,coords={
 [102]={{54.24,34.45}}},lore="Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",mapID=262,savedInstanceID=546,g={
 h(-45,{
 q(29568,{awp=40300,crs={17770},lvl=10,qgs={54678}}),
@@ -10909,13 +10909,13 @@ q(29571,{awp=40300,coords={
 [107]={{60.6,22.4}}},lvl=10,qgs={18074}}),
 q(9717,{coords={
 [102]={{19.4,49.8}}},qgs={17857},qis={24247},rwp=40300,u=2,g={
-i(28111,{awp=20001,b=1,spellID=33770}),
+i(28111,{awp=20003,b=1,spellID=33770}),
 o(182054,{coords={
 [262]={{71.5,86.9}}}})}}),
 q(29570,{awp=40300,crs={17885,17894},lvl=10,qgs={54675},sourceQuests={29571}}),
 q(29567,{awp=40300,crs={17882},lvl=10,qgs={54674},qis={24248},g={
-i(28109,{awp=20001,b=1,f=53,spellID=33746}),
-i(28108,{awp=20001,b=1,f=53,spellID=33759})}}),
+i(28109,{awp=20003,b=1,f=53,spellID=33746}),
+i(28108,{awp=20003,b=1,f=53,spellID=33759})}}),
 q(9719,{coords={
 [102]={{19.6,49.8}}},crs={17882},qgs={17866},qis={24248},rwp=40300,u=2,g={
 i(28109,{b=1,f=53,spellID=33746}),
@@ -64158,7 +64158,8 @@ s(298126,251124,{b=1,f=5,loc=44,lvl=78}),
 s(298128,251126,{b=1,f=7,loc=40,lvl=78}),
 i(250243,{b=1,f=53,lvl=78,spellID=1250587}),
 s(298125,251123,{b=1,f=28,lvl=78}),
-s(298129,251127,{b=1,f=4,loc=43,lvl=78})}}),
+s(298129,251127,{b=1,f=4,loc=43,lvl=78}),
+s(307630,271680,{f=31})}}),
 e(2680,{npcID=234649,g={
 ach(62388,{
 toy(263975,{b=1})}),

@@ -169559,7 +169559,9 @@ o(671498,{coords={
 i(278536)}}),
 o(649640,{description="Can be found randomly throughout the Vaults.",g={
 i(279550,{f=55,spellID=1307435})}}),
-o(649687,{description="Can be found randomly throughout the Vaults."})}),
+o(649687,{description="Can be found randomly throughout the Vaults."}),
+o(653456,{
+i(274437,{f=55,spellID=1294093})})}),
 h(-58,{
 n(262880,{coords={
 [2509]={{51.2,62.8}}},g={
@@ -170831,6 +170833,8 @@ q(94572,{coords={
 q(95253,{coords={
 [2512]={{61.3,65.4}}},isWorldQuest=1,g={
 i(268628,{spellID=1282990})}}),
+q(94876,{coords={
+[2512]={{31,75}}},isWorldQuest=1,qis={266327}}),
 q(95990,{coords={
 [2512]={{38.7,47.4}}},isWorldQuest=1}),
 q(96066,{coords={

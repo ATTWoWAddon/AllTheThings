@@ -35,5 +35,7 @@ s(165302,23705,{b=1,f=9,q=4,u=1}),
 s(165303,23709,{b=1,f=9,q=1,u=1})}}),
 flt(102,{u=1,g={
 i(23716,{awp=20203,b=1,f=53,q=1,u=1}),
-i(23714,{awp=20203,b=1,f=53,q=1,u=1})}})}})}})
+i(23714,{awp=20203,b=1,f=53,q=1,u=1})}})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+h(-782,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+mnt(42777,{description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,u=2}))}))}})
 end)

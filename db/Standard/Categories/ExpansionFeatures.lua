@@ -42593,7 +42593,7 @@ q(92181,{coords={
 q(92182,{coords={
 [2393]={{56.7,65.4}}},lvl=90,qgs={246231},sourceQuests={92181}}),
 q(94446,{coords={
-[2393]={{56.7,65.4}}},isWeekly=1,lvl=90,qgs={246231},sourceQuests={92182},g={
+[2393]={{56.7,65.4}}},isWeekly=1,lvl=90,qgs={246231},sourceQuests={92182},sqreq=0,g={
 i(253342,{f=55,lvl=90,rwp=120100,spellID=1271402,u=2}),
 i(275910,{awp=120100,f=55,spellID=1298210})}}),
 q(91277,{coords={
