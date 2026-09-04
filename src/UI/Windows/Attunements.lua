@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local tinsert = tinsert;
@@ -226,9 +227,9 @@ app:CreateWindow("Attunements", {
 			end
 			attunement.OnUpdate = OnUpdateForAttunement;
 		end
-		local attunementsHeader = app.CreateRawText("Attunements", {
+		local attunementsHeader = app.CreateRawText(L.ATTUNEMENTS, {
 			icon = 135817,
-			description = "This window shows you your current character's attunement progress.",
+			description = L.ATTUNEMENTS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
