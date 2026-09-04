@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Implementation
 local HiddenWindowSuffixes = {
@@ -15,12 +16,12 @@ app:CreateWindow("All-Hidden", {
 	Commands = { "atthidden" },
 	RootCommands = { "hidden" },
 	--ChatCommand = "all-hidden",
-	HelpText = "Provides a single command to open all Hidden content in a single window",
+	HelpText = L.HELP_TEXT,
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText(app.Modules.Color.Colorize("All-Hidden", app.Colors.ChatLinkError), {
+		self:SetData(app.CreateRawText(app.Modules.Color.Colorize(L.ALL_HIDDEN, app.Colors.ChatLinkError), {
 			icon = 132284,
-			title = "All-Hidden`" .. app.Version,
-			description = "All Hidden ATT Content",
+			title = L.ALL_HIDDEN .. app.Version,
+			description = L.HELP_TEXT_TOOLTIP,
 			font = "GameFontNormalLarge",
 			visible = true,
 			expanded = true,

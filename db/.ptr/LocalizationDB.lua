@@ -62,6 +62,7 @@ L.AH_SEARCH_NO_ITEMS_FOUND = "No cached items found in search. Expand the group 
 L.ALIVE = "Alive"
 L.ALL_BUTTON = ALL
 L.ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once."
+L.ALL_HIDDEN = "All-Hidden"
 L.ALL_RECIPES = "All Recipes"
 L.ALL_THE_APPEARANCES_DESC = "All appearances that you need are displayed here."
 L.ALL_THE_BATTLEPETS_DESC = "All pets that you have not collected yet are displayed here."
@@ -378,6 +379,8 @@ L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unl
 L.HEIRLOOMS_UPGRADES_CHECKBOX = "+Upgrades"
 L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle."
 L.HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve"
+L.HELP_TEXT = "Provides a single command to open all Hidden content in a single window"
+L.HELP_TEXT_TOOLTIP = "All Hidden ATT Content"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes"
 L.HIDDEN_CURRENCY_TRIGGERS = "Hidden Currency Triggers"
@@ -1775,6 +1778,7 @@ localize(L.HEADER_NAMES, {
 	[-785] = "21st Anniversary Bundle",
 	[-787] = "Maruukai Endeavor",
 	[-788] = "Tortollan Endeavor",
+	[-789] = "Kobold Endeavor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2553,6 +2557,7 @@ localize(L.HEADER_ICONS, {
 	[-785] = 133783,
 	[-787] = 4578413,
 	[-788] = 2065576,
+	[-789] = 2061718,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -75682,6 +75687,7 @@ L.AH_SEARCH_BOE_ONLY = "Solo se buscaran objetos ligados al equipar con esta bú
 L.AH_SEARCH_NO_ITEMS_FOUND = "No se encontraron objetos en caché en la búsqueda. Expande el grupo, visualiza los objetos para guardar los nombres en caché e inténtalo de nuevo. Solo se encontrarán objetos ligados al equipar con esta búsqueda."
 L.ALIVE = "Vivo"
 L.ALL_BUTTON_TOOLTIP = "Haz clic en este botón para activar todas las opciones a la vez."
+L.ALL_HIDDEN = "Todo lo oculto"
 L.ALL_THE_APPEARANCES_DESC = "Todas las apariencias que te faltan se muestran aquí."
 L.ALL_THE_BATTLEPETS_DESC = "Todas las mascotas que aún no has coleccionado se muestran aquí."
 L.ALL_THE_ILLUSIONS_DESC = "Ilusiones, juguetes, y otros objetos que pueden ser usados para conseguir objetos coleccionables se muestran aquí."
@@ -75944,6 +75950,8 @@ L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear si has desbloq
 L.HEIRLOOMS_UPGRADES_CHECKBOX = "+Mejoras"
 L.HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear específicamente la colección de cada mejora individual de Reliquias.\n\nTodos sabemos que a Blizzard le encanta drenar tu oro y tu alma, así que lleva la cuenta con este interruptor."
 L.HEIRLOOMS_UPGRADES_DESC = "Esto indica si has mejorado o no la reliquia a un cierto nivel.\n\nD.E.P. Oro.\n - Crieve"
+L.HELP_TEXT = "Proporciona un único comando para abrir todo el contenido oculto en una sola ventana"
+L.HELP_TEXT_TOOLTIP = "Todo el contenido oculto de ATT"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS = "Disparador de logros ocultos"
 L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "Estos son logros que se han determinado manualmente para que se activen según criterios específicos y que el juego utiliza principalmente de forma interna con fines de seguimiento."
 L.HIDDEN_CURRENCY_TRIGGERS = "Desencadenantes ocultos de monedas"
