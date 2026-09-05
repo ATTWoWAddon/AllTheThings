@@ -15,7 +15,7 @@ CURRENT_SEASON = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-			cn = "当前赛季",
+		cn = "当前赛季",
 		-- TODO: tw = "",
 	},
 });
