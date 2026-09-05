@@ -3538,6 +3538,7 @@ MobileDB.GameObject = {
 	[660388] = true,	-- Cursed Tranquility Bloom
 	[660393] = true,	-- Fragment of Ulantu's Log
 	[660768] = true,	-- Zul'jan's Strongbox [Altar of Fangs]
+	[661548] = true,	-- Shimmering Vase (q:94802)
 	[667734] = true,	-- Venom Fountain
 	[668269] = true,	-- Amani Skelton
 	[673863] = true,	-- Ossified Relic

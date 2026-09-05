@@ -1295,11 +1295,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(25419, {	-- Lady La-La's Medallion
 							["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
-							["provider"] = { "i", 55186 },	-- Lady La-La's Necklace
-							["crs"] = { 41017 },	-- Gilblin Collector
+							["sourceQuest"] = 25459,	-- Ophidophobia
+							["qs"] = 55186,	-- Lady La-La's Necklace (QS!)
+							["cr"] = 41017,	-- Gilblin Collector
+							["qis"] = {
+								55187,	-- Lady La-La's Medallion
+								55188,	-- Medallion Fragment
+							},
 							["groups"] = {
-								i(59784),	-- Dreamfrond Skirt
 								i(59783),	-- Damselfish Shoulderguards
+								i(59784),	-- Dreamfrond Skirt
 								i(59782),	-- Prismatic Periwinkle Band
 							},
 						}),

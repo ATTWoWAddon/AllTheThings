@@ -47,7 +47,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							i(278095),	-- Liver Pulp
 						}),
 						q(94802, {	-- Death from the Dead
-							i(277955),	-- Ethereal Bead Strand (QI!)
+							o(661548, {	-- Shimmering Vase
+								i(277955),	-- Ethereal Bead Strand (QI!)
+							}),
 						}),
 						q(94803, {	-- Going for the Crown
 							i(277920),	-- Vibrant Crownfeather (QI!)
