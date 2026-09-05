@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			n(QUESTS, {	-- Daily Quests
 				q(30613, {	-- Armored Carp
 					["qg"] = 60135,	-- Trawler Yotimo
-					["coord"] = { 70.9, 39.0, KRASARANG_WILDS },
+					["coord"] = { 67.6, 42.5, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -48,13 +48,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30588, {	-- Fishing for a Bruising
 					["qg"] = 59586,	-- Angler Shen
-					["coord"] = { 70.8, 40.1, KRASARANG_WILDS },
+					["coord"] = { 67.6, 43.5, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 				}),
 				q(30658, {	-- Huff & Puff
 					["qg"] = 60135,	-- Trawler Yotimo
-					["coord"] = { 70.9, 39.0, KRASARANG_WILDS },
+					["coord"] = { 67.6, 42.5, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30678, {	-- Like Bombing Fish In A Barrel
 					["qg"] = 60136,	-- Fiznix
-					["coord"] = { 70.8, 41.3, KRASARANG_WILDS },
+					["coord"] = { 67.5, 44.6, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -89,7 +89,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30763, {	-- Piranha!
 					["qg"] = 60675,	-- Fo Fook
-					["coord"] = { 70.5, 37.5, KRASARANG_WILDS },
+					["coord"] = { 67.2, 41.1, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -98,7 +98,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30698, {	-- Scavenger Hunt
 					["qg"] = 60136,	-- Fiznix
-					["coord"] = { 70.8, 41.3, KRASARANG_WILDS },
+					["coord"] = { 67.5, 44.6, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -117,7 +117,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30700, {	-- Snapclaw
 					["qg"] = 59586,	-- Angler Shen
-					["coord"] = { 70.8, 40.2, KRASARANG_WILDS },
+					["coord"] = { 67.6, 43.5, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -126,7 +126,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30701, {	-- Viseclaw Soup
 					["qg"] = 60675,	-- Fo Fook
-					["coord"] = { 70.5, 37.5, KRASARANG_WILDS },
+					["coord"] = { 67.2, 41.1, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -135,7 +135,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30585, {	-- What Lurks Below
 					["qg"] = 60673,	-- Elder Fisherman Rassan
-					["coord"] = { 71.7, 38.7, KRASARANG_WILDS },
+					["coord"] = { 78.3, 42.1, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30598, {	-- Who Knew Fish Liked Eggs?
 					["qg"] = 60673,	-- Elder Fisherman Rassan
-					["coord"] = { 71.6, 38.6, KRASARANG_WILDS },
+					["coord"] = { 78.3, 42.1, KRASARANG_WILDS },
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["groups"] = {
