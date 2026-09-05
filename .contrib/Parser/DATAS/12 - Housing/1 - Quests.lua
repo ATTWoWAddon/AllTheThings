@@ -167,6 +167,7 @@ root(ROOTS.Housing, {
 					i(245991),	-- Purified Sin'dorei Candle (DECOR!)
 					i(272129),	-- Purified Tauren Pot (DECOR!)
 					i(256684),	-- Purified Troll Amulet (DECOR!)
+					i(255652),	-- Purified Troll Loop (DECOR!)
 					i(256361),	-- Purified Troll Pendant (DECOR!)
 					i(252042),	-- Purified Troll Pitcher (DECOR!)
 				},

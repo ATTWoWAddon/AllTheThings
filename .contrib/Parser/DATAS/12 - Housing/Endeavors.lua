@@ -630,7 +630,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 55.4, 75.1, FOUNDERS_POINT },
 				}),
 				n(266713, {	-- Secret Souvenir (40)
-					["coord"] = { 68.1, 81.3, FOUNDERS_POINT },
+					["coord"] = { 62.1, 81.3, FOUNDERS_POINT },
 				}),
 				n(266714, {	-- Secret Souvenir (41)
 					["coord"] = { 75.2, 83.5, FOUNDERS_POINT },

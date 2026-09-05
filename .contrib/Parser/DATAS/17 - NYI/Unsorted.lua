@@ -414,7 +414,6 @@ root(ROOTS.Unsorted, {
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
 			i(253396),	-- Purified Crude Axe
-			i(255652),	-- Purified Troll Loop
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
 			i(280333),	-- Pirate's Eyepatch
