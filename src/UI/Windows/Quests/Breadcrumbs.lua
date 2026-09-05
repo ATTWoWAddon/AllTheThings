@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local ipairs, tinsert
@@ -10,9 +11,9 @@ app:CreateWindow("Breadcrumbs", {
 	AllowCompleteSound = true,
 	Commands = { "attbreadcrumbs" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Breadcrumbs", {
+		self:SetData(app.CreateRawText(L.BREADCRUMBS, {
 			icon = 133968,
-			description = "This window shows you all of the breadcrumbs tracked by ATT. Go get 'em!",
+			description = L.BREADCRUMBS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,

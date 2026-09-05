@@ -42567,9 +42567,9 @@ q(25883,{coords={
 o(203300)}}),
 q(25467,{crs={40276,40282},lvl=30,providers={{"i",54345}},qis={54344},g={
 s(29958,59798,{b=1,f=22})}}),
-q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",lvl=30,providers={{"i",55186}},g={
-s(29947,59784,{b=1,f=4,loc=46}),
+q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",lvl=30,qis={55187,55188},qss={55186},sourceQuests={25459},g={
 s(29946,59783,{b=1,f=6,loc=41}),
+s(29947,59784,{b=1,f=4,loc=46}),
 i(59782,{b=1,f=52})}}),
 q(25358,{coords={
 [201]={{57.3,29.2}}},lvl=30,qgs={40983},qis={52973},sourceQuests={25602},g={
@@ -108970,7 +108970,7 @@ i(168248,{b=1,spellID=292440}),
 s(105558,170467,{b=1,f=25,lvl=50}),
 crit(45156,{achID=13470,id=29})}}),
 n(151296,{coords={
-[1462]={{57,39.8}}},description="This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",isDaily=1,questID=55515,g={
+[1462]={{57,39.8}}},crs={151159},description="This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",isDaily=1,questID=55515,g={
 i(168492,{b=1,spellID=292440}),
 crit(45129,{achID=13470,id=12})}}),
 n(152764,{coords={

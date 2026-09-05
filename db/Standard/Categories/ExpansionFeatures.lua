@@ -42801,7 +42801,7 @@ q(91228,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}}),
 q(91229,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}})}),
-n(258928,{awp=120100,cost={{"i",274422,1}},description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",maps={2512},g={
+n(258928,{awp=120100,cost={{"i",274422,1}},crs={265151},description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",maps={2512},g={
 de(15284,{awp=120001,itemID=263874,spellID=1270748}),
 mnt(1297407,{awp=120001,itemID=275659}),
 de(25337,{awp=120001,itemID=278154,spellID=1303663}),
