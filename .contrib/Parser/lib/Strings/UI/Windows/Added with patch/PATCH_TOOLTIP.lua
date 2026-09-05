@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "按下此按钮以更改补丁。\n\n更改此值将筛选在指定补丁或范围内添加的物品。",
 		-- TODO: tw = "",
 	},
 })

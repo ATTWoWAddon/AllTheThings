@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "在账户模式下启用所有过滤器，在非账户模式下使用职业默认设置。禁用以应用自定义过滤器。",
 		-- TODO: tw = "",
 	},
 })
