@@ -13512,7 +13512,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Damage Dealer.","Midnight Dungeon Damage Dealer",,62193,-1,-1,0,15541,0,10,131072,2,7009181,0,222353,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Healer.","Midnight Dungeon Healer",,62194,-1,-1,0,15541,0,10,131072,3,7431122,0,222362,0,0,0,0
 "Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Tank.","Midnight Dungeon Tank",,62195,-1,-1,0,15541,0,10,131072,4,7392266,0,222371,0,0,0,0
-"Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Tank, Healer, and Damage Dealer.","Midnight Dungeoneer","Reward: Finery Funds",62196,-1,-1,0,15541,0,30,132096,1,7259236,0,222380,0,0,0,0
+"Defeat every Dungeon in Midnight on Mythic or Mythic Keystone difficulty as a Tank, Healer, and Damage Dealer.","Midnight Dungeoneer","Reward: Finery Funds",62196,-1,-1,0,15541,0,30,132096,1,7259236,264882,222380,0,0,0,0
 "Find and join Chu'ke the possessed doll in Zul'Aman.","Put a Pin in It",,62199,-1,-1,0,15553,0,5,131072,65,5206188,0,222398,0,0,0,0
 "Collect all of the lost gnome's writings in Zul'Aman.","Gnome Alone",,62200,-1,-1,0,15553,0,5,131072,66,133740,0,222400,0,0,0,0
 "/kiss all of the ""princess"" frogs in Zul'Aman.","The Frog and the Princesses",,62201,-1,-1,0,15553,0,5,131072,67,2399262,0,222402,0,0,0,0
