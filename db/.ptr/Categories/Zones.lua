@@ -42628,9 +42628,9 @@ q(25883,{coords={
 o(203300)}}),
 q(25467,{crs={40276,40282},lvl=30,providers={{"i",54345}},qis={54344},g={
 s(29958,59798,{b=1,f=22})}}),
-q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",lvl=30,providers={{"i",55186}},g={
-s(29947,59784,{b=1,f=4,loc=46}),
+q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",lvl=30,qis={55187,55188},qss={55186},sourceQuests={25459},g={
 s(29946,59783,{b=1,f=6,loc=41}),
+s(29947,59784,{b=1,f=4,loc=46}),
 i(59782,{b=1,f=52})}}),
 q(25358,{coords={
 [201]={{57.3,29.2}}},lvl=30,qgs={40983},qis={52973},sourceQuests={25602},g={
@@ -109115,7 +109115,7 @@ i(168248,{b=1,spellID=292440}),
 s(105558,170467,{b=1,f=25,lvl=50}),
 crit(45156,{achID=13470,id=29})}}),
 n(151296,{coords={
-[1462]={{57,39.8}}},description="This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",isDaily=1,questID=55515,g={
+[1462]={{57,39.8}}},crs={151159},description="This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",isDaily=1,questID=55515,g={
 i(168492,{b=1,spellID=292440}),
 crit(45129,{achID=13470,id=12})}}),
 n(152764,{coords={
@@ -169743,7 +169743,8 @@ i(278094),
 i(278095)}}),
 q(94802,{coords={
 [2512]={{51.6,49.8}}},isDaily=1,qgs={257598},g={
-i(277955)}}),
+o(661548,{
+i(277955)})}}),
 q(94803,{coords={
 [2512]={{51.6,49.8}}},isDaily=1,qgs={257598},g={
 i(277920)}}),
@@ -169892,6 +169893,8 @@ q(96360,{coords={
 [2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(96361,{coords={
 [2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
+q(96349,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(97672,{coords={
 [2512]={{58.8,45}}},minReputation={2772,12},qgs={268228}}),
 q(97384,{coords={
@@ -170015,7 +170018,7 @@ s(309600,276174,{f=6,loc=42}),
 s(309597,276169,{f=8}),
 crit(111353,{achID=63390,id=5})}}),
 n(258254,{coords={
-[2512]={{71.3,31.4}}},isDaily=1,questID=93715,g={
+[2512]={{71.3,31.4}}},crs={258250},isDaily=1,questID=93715,g={
 s(309596,276168,{f=1}),
 i(276171,{f=52}),
 crit(115370,{achID=63390,id=3})}}),
@@ -170480,7 +170483,17 @@ q(95355,{maps={2437},qis={268929,268952,268964,268965,268968},qss={268951,268953
 q(97016,{coords={
 [2512]={{57.4,48.7},{61,32.6}}},qgs={254599,263327},repeatable=1,sourceQuests={97026},g={
 ach(63432,{
-de(5130,{itemID=248962,spellID=1248177})}),
+de(5130,{itemID=248962,spellID=1248177}),
+crit(115810,{achID=63432,id=1,providers={{"i",277946}}}),
+crit(115811,{achID=63432,id=2,providers={{"i",277938}}}),
+crit(115812,{achID=63432,id=3,providers={{"i",277939}}}),
+crit(115815,{achID=63432,id=4,providers={{"i",277944}}}),
+crit(115814,{achID=63432,id=5,providers={{"i",277942}}}),
+crit(115816,{achID=63432,id=6,providers={{"i",277943}}}),
+crit(115819,{achID=63432,id=7,providers={{"i",277945}}}),
+crit(115817,{achID=63432,id=8,providers={{"i",277940}}}),
+crit(115818,{achID=63432,id=9,providers={{"i",277941}}}),
+crit(115813,{achID=63432,id=10,providers={{"i",277937}}})}),
 i(276124),
 i(276117),
 i(276126),
@@ -170569,12 +170582,13 @@ o(619768,{coords={
 [2512]={{73.4,66.1}}},g={
 i(265525,{spellID=1275652})}}),
 n(258076,{coords={
-[2512]={{72.5,67}}},cost={{"i",265525,1}}}),
+[2512]={{72.5,67}}},cost={{"i",265525,1}},g={
+n(258255)}}),
 o(619921,{coords={
-[2512]={{73.1,67}}},g={
+[2512]={{73.1,67}}},providers={{"n",258255}},g={
 i(265610,{spellID=1276358})}}),
 o(619908,{coords={
-[2512]={{72.4,68.4}}},g={
+[2512]={{72.4,68.4}}},providers={{"n",258255}},g={
 i(265603,{spellID=1276358})}}),
 i(265602,{cost={{"i",265603,1},{"i",265610,1}}}),
 o(619906,{coords={

@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Breadcrumbs",
 		de = "Brotkrümelquests",
-		es = "Cadena",
+		es = "Misiones de exploración opcionales",
 		mx = "Misiones de exploración optativas",
 		-- TODO: fr = "",
 		-- TODO: it = "",

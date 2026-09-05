@@ -42318,9 +42318,9 @@ qo(1,{providers={{"o",203300}}})}}),
 q(25467,{crs={40276},providers={{"i",54345}},g={
 qo(1,{crs={40282},providers={{"i",54344}}}),
 s(206798,59798,{b=1,f=22,q=2})}}),
-q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",providers={{"i",55186}},g={
-s(206787,59784,{b=1,f=4,loc=46,q=3}),
+q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",qis={55187,55188},qss={55186},sourceQuests={25459},g={
 s(206786,59783,{b=1,f=6,loc=41,q=3}),
+s(206787,59784,{b=1,f=4,loc=46,q=3}),
 i(59782,{b=1,f=52,q=3})}}),
 q(25358,{coords={
 [201]={{57.3,29.2}}},qgs={40983},sourceQuests={25602},g={
