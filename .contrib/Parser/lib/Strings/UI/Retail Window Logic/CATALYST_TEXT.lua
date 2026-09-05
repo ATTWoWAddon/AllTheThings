@@ -8,5 +8,6 @@ createLocalizationString({
 		en = "Catalyst",
 		es = "Catalizador",
 		mx = "Catalizador",
+		cn = "催化剂",
 	},
 })

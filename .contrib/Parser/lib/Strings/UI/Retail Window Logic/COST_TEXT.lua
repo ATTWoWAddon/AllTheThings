@@ -8,5 +8,6 @@ createLocalizationString({
 		en = [[~BONUS_ROLL_REWARD_CURRENCY]],
 		es = "Divisa",
 		mx = "Moneda",
+		cn = "货币",
 	},
 })

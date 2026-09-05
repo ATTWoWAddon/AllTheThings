@@ -130,6 +130,7 @@ CORRAL = createHeader({
 	readable = "Corral",
 	text = {
 		en = "Corral",
+		cn = "兽栏",
 	},
 });
 
