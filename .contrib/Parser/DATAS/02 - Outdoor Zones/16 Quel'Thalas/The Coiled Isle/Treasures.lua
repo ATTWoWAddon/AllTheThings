@@ -18,13 +18,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						n(258076, {	-- Hungry Dolphin
 							["coord"] = { 72.5, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 							["cost"] = { { "i", 265525, 1 } },	-- 1x Grisly Morsel
+							["groups"] = {
+								n(258255),	-- Helpful Dolphin
+							},
 						}),
 						o(619921, {	-- Waterlogged Crate
 							["coord"] = { 73.1, 67.0, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["provider"] = { "n", 258255 },	-- Helpful Dolphin
 							["groups"] = { i(265610) },	-- Privateer's Loop Half of Key
 						}),
 						o(619908, {	-- Broken Urn
 							["coord"] = { 72.4, 68.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["provider"] = { "n", 258255 },	-- Helpful Dolphin
 							["groups"] = { i(265603) },	-- Privateer's Teeth Half of Key
 						}),
 						i(265602, {	-- Amani Privateer's Key

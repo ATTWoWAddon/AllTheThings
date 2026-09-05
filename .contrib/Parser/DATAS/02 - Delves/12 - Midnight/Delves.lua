@@ -193,6 +193,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					{ "o", 584508 },	-- Nemesis Strongbox
 					{ "o", 584511 },	-- Nemesis Strongbox
 					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
 				},
 			}),
 			i(265714),	-- Trovehunter's Bounty
@@ -1340,7 +1341,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	n(DELVES, bubbleDownFiltered({ ["timeline"] = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_questID,{
 		n(BOUNTIFUL, sharedData({
 			["isDaily"] = true,
 		}, {
@@ -1362,16 +1363,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		q(93935, {isWeekly=true}),	-- 1st weekly bonus Hero item from Bountiful chest
 		q(93936, {isWeekly=true}),	-- 2nd weekly bonus Hero item from Bountiful chest
 		q(93937, {isWeekly=true}),	-- 3rd weekly bonus Hero item from Bountiful chest
-		-- 12.1
-		-- q(98501),	-- 1st Bountiful of the week @ T11
 	})),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+	n(DELVES, bubbleDownFiltered({ ["timeline"] = { ADDED_12_1_0 } },FILTERFUNC_questID,{
 		n(BOUNTIFUL, sharedData({
 			["isDaily"] = true,
 		}, {
+			q(95715, name(HEADERS.Map, GNARLDOR_ISLE)),	-- Gnarldor Isle
 			q(97064, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
 			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),

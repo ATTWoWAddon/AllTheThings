@@ -38,7 +38,6 @@ root(ROOTS.Unsorted, {
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
-			i(271444),	-- Pauldrons of the Forgotten Sacrifice
 			i(271681),	-- Perennial Frostbound Charm
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar

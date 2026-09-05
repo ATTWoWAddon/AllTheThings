@@ -52,6 +52,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				n(258254, {	-- Ss'akrithos <The Boundless Ophidian>
 					["coord"] = { 71.3, 31.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["crs"] = { 258250 },	-- vignette
 					["questID"] = 93715,
 					["groups"] = {
 						i(276168),	-- Fang of Ss'akrithos

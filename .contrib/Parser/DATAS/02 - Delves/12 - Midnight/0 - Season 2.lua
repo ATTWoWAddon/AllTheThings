@@ -226,7 +226,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					i(279290),	-- Fang Lover's (CI!)
 					i(276548),	-- Tormented Soul
 					i(274374, {	-- Trovehunter's Bounty
-						["providers"] = { { "o",584518 } },	-- Bountiful Heavy Trunk (verified)
+						["providers"] = {
+							{ "o",584518 },	-- Bountiful Heavy Trunk (verified)
+							{ "o",656489 },	-- Azta'rec Cache (verified)
+						},
 					}),
 				}),
 				filter(QUEST_ITEMS, {

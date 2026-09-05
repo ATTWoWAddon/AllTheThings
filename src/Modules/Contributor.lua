@@ -349,6 +349,7 @@ local MapPrecisionOverrides = {
 	[2636] = 7,	-- Vault of Restless Bones
 	[2639] = 7,	-- Crypt of the Denied, The Coiled Isle
 	[2640] = 7,	-- Blistering Terrace, The Coiled Isle
+	[2641] = 7,	-- Crypt of the Lost Warrior
 	[2644] = 7,	-- Crypt of the Disgraced, The Coiled Isle
 	[2646] = 2,	-- Vilaldoun
 	[2649] = 2,	-- The Lycaneum
