@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	i(232875, {["timeline"] = { REMOVED_12_1_0 }}),	-- Spark of Radiance
 	i(274476, {["timeline"] = { ADDED_12_1_0 }}),	-- Spark of Tides
 	n(DECOR, {

@@ -9,38 +9,30 @@ WARBAND = createHeader({
 	},
 });
 
-root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(ACHIEVEMENTS, {
-		-- TWW
+root(ROOTS.Character, n(WARBAND, {
+	-- TWW
+	n(ACHIEVEMENTS, timelineSelf({["timeline"] = { ADDED_11_0_2 }},{
 		ach(19470),	-- One Warband Mentor: The War Within
 		ach(19460),	-- Two Warband Mentors: The War Within
 		ach(19475),	-- Three Warband Mentors: The War Within
 		ach(19476),	-- Four Warband Mentors: The War Within
 		ach(19477),	-- Five Warband Mentors: The War Within
-		-- MID
-		ach(42328, {	-- One Warband Mentor: Midnight
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
-		}),
-		ach(42329, {	-- Two Warband Mentors: Midnight
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
-		}),
-		ach(42330, {	-- Three Warband Mentors: Midnight
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
-		}),
-		ach(42331, {	-- Four Warband Mentors: Midnight
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
-		}),
-		ach(42332, {	-- Five Warband Mentors: Midnight
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
-		}),
 		ach(40142, {	-- Learning to Share
 			["timeline"] = { CREATED_11_0_0, ADDED_11_1_0 },
 		}),
 		ach(40145, {	-- So Much Sharing
 			["timeline"] = { CREATED_11_0_0, ADDED_11_1_0 },
 		}),
-	}),
-	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+	})),
+	-- MID
+	n(ACHIEVEMENTS, timelineSelf({["timeline"] = { ADDED_12_0_1_LAUNCH }},{
+		ach(42328),	-- One Warband Mentor: Midnight
+		ach(42329),	-- Two Warband Mentors: Midnight
+		ach(42330),	-- Three Warband Mentors: Midnight
+		ach(42331),	-- Four Warband Mentors: Midnight
+		ach(42332),	-- Five Warband Mentors: Midnight
+	})),
+	n(QUESTS, timelineSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		q(83492, {	-- Warbanding Together
 			["groups"] = {
 				i(228623),	-- Blue's Request (QS!/QI!)
@@ -76,7 +68,7 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 			},
 		}),
 	})),
-	n(CAMPSITES, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+	n(CAMPSITES, timelineSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 		campsite(1, {	-- Adventurer's Rest (CS!)
 			["description"] = "Granted to all warbands as default.",
 		}),
@@ -87,4 +79,4 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 			["description"] = "Granted to all warbands.",
 		}),
 	})),
-})));
+}))

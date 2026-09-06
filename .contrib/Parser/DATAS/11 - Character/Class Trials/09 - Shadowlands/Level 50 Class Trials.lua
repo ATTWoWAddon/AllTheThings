@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.SL, bubbleDown({["timeline"] = { ADDED_9_0_1, REMOVED_10_0_0 } }, {
+	expansion(EXPANSION.SL, {
 		header(HEADERS.Achievement, 14782, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
@@ -10,6 +10,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: [As of November 11th, 2021 48 Trials became 50 Trials with a mix of ids from 48 Trials and 50 (SL Char Boost)]
 			["description"] = "These are gained by creating a Level 50 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 50,
+			["timeline"] = { ADDED_9_0_1, REMOVED_10_0_0 },
 			["groups"] = {
 				i(185940),	-- Pristine Survival Kit
 				cl(DEATHKNIGHT, {
@@ -372,5 +373,5 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 			},
 		}),
-	})),
-}));
+	}),
+}))

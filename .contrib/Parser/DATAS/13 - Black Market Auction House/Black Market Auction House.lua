@@ -39,7 +39,7 @@ BLACK_MARKET_AUCTION_HOUSE = createHeader({
 	},
 });
 assignRootCategoryHeader(80, ROOTS.BlackMarket, BLACK_MARKET_AUCTION_HOUSE, {symselector=SymSelector.BMAH});
-root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLACK_MARKET }, {
+root(ROOTS.BlackMarket, bubbleDown({["u"] = BLACK_MARKET }, timelineSelf({["timeline"] = { ADDED_5_0_4 }},{
 	n(ARMOR, {
 		header(HEADERS.NPC, 72057, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }, }, {	-- Ordos
 			-- Head
@@ -749,4 +749,4 @@ root(ROOTS.BlackMarket, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLA
 		}),
 		-- #endif
 	})),
-}));
+})));

@@ -1838,6 +1838,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
 			["timeline"] = { REMOVED_11_1_0 },
 			["maps"] = ALL_REGULAR_DELVES_TWW,
+			["_drop"] = { "g" },	-- pointless API data
 			["groups"] = {
 				-- I don't think this is the curio everyone gets from this quest... is it RNG or only this one
 				-- that wowhead claims?
@@ -1852,6 +1853,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			["provider"] = { "i", 228581 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
 			["timeline"] = { REMOVED_11_1_0 },
 			["maps"] = ALL_REGULAR_DELVES_TWW,
+			["_drop"] = { "g" },	-- pointless API data
 			["groups"] = {
 				i(228582),	-- Streamlined Relic
 				-- i(225901, {	-- Streamlined Relic [Rank 1] (only tracking Rank 4 curios)

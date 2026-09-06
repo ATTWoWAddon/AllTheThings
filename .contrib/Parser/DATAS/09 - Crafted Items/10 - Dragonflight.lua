@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
 	i(198046),	-- Concentrated Primal Infusion
