@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "该物品是随补丁 %s 移除的",
+		cn = "该项目是随补丁 %s 移除的",
 		tw = "該物品是隨更新 %s 移除的",
 	},
 })
