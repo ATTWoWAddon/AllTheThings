@@ -103541,7 +103541,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 210975,,210933,1,0,105496,41,0
 210976,,210933,1,0,105497,42,0
 210977,,210933,1,0,105498,43,0
-210978,"Defeat 20 Undercrawlers in The Ringing Deeps - (JKM)",0,20,4,0,0,0
+210978,"Defeat Undercrawlers in The Ringing Deeps - (JKM)",0,20,4,0,0,0
 210979,"Undercrawlers defeated",210978,20,0,116996,0,1
 210980,"Deepflayers slain",0,20,4,0,0,0
 210986,"Deepflayers slain",210980,20,0,116997,0,1
@@ -103917,7 +103917,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 211399,"Void Zealot Devinda",211379,1,0,105733,6,16
 211400,"Corla, Herald of Twilight",211379,1,0,105730,3,16
 211401,"Commander Ix'vaarha",211379,1,0,105739,11,16
-211653,Phaser,224476,1,0,105900,0,16
 211403,"Sharfadi, Bulwark of the Night",211379,1,0,105742,14,16
 211404,,209184,5,0,105746,3,0
 211405,,209184,5,0,105747,4,0
@@ -103996,9 +103995,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 211488,"Moldrus slain",211486,1,0,105806,1,32
 211489,"Level fourth character to 90.",0,2,4,0,0,0
 211490,,211489,90,0,105789,0,2
-211654,"Quad Glider",224478,1,0,105901,0,16
 211491,"Level fifth character to 90.",0,2,4,0,0,0
 211492,,211491,90,0,105790,0,2
+211655,Canister,224480,1,0,105902,0,16
 211493,"Level to 90 on 1 character.",0,1,5,0,0,0
 211494,,211493,1,0,105807,0,0
 211495,"Level to 90 on 2 characters.",0,2,5,0,0,0
@@ -104155,7 +104154,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 211650,"Collect the following cosmetic unlocks for the Delver's Mana-Skimmer.",0,0,4,0,0,0
 211651,"Energy Thrusters",224472,1,0,111435,0,16
 211652,Void,224474,1,0,105899,0,16
-211655,Canister,224480,1,0,105902,0,16
+211653,Phaser,224476,1,0,105900,0,16
+211654,"Quad Glider",224478,1,0,105901,0,16
 211656,"Find and open all Sturdy Chests hidden in Archival Assault.",0,4,7,0,0,1
 211657,,211656,1,0,109146,0,2
 211658,,211656,1,0,105903,1,2
@@ -104381,7 +104381,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 211881,"Argussian Reach",211880,42000,0,106064,0,0
 211882,"12.0 Delves - Fungarians03 - V01 - Speak to Arena Master (HCR)",0,0,4,0,0,0
 211883,"Speak to Boletus",211882,1,0,106065,0,32
-212088,,212087,5,0,106207,0,0
 211884,"12.0 Delves - Fungarians03 - V01 - Put on disguise (HCR)",0,0,4,0,0,0
 211885,"Put on disguise",211884,1,0,106066,0,32
 211886,"11.2.5 Remix - Legion - Journey - Dungeon - Eye of Azshara",0,0,4,0,0,0
@@ -104527,6 +104526,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212085,"Attend the Silvermoon Court and complete the Fortify the Runestones quest",212082,1,0,106205,2,0
 212086,"Attend the Silvermoon Court and complete the Fortify the Runestones quest",212082,1,0,106206,3,0
 212087,"Alchemy Research - 5 Healing Potions",0,0,4,0,0,0
+212088,,212087,5,0,106207,0,0
 212089,"Weekly Silvermoon Court quests completed",0,1,8,0,0,0
 212090,"Weekly Saltheril's Soiree favors completed",212089,5,0,106208,0,1
 212091,"Silvermoon Court public objectives completed",0,3,5,0,0,8193
@@ -104837,6 +104837,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212444,"Obtain 100 skill points in Midnight Inscription",0,0,4,0,0,0
 212445,,212444,100,0,106434,0,2
 212446,"Obtain 300 skill points in the ""Midnight"" category of fishing.",0,0,4,0,0,0
+212522,,77602,10,0,106469,142,2
 212447,"Obtain 300 skill points in the ""Midnight"" category of fishing.",212446,300,0,106435,0,2
 212448,"12.0 Delves - TwilightsBlade02 - V01 - Step 1: Intro NPC (Hufton)",0,0,4,0,0,0
 212449,"Dulgor Legstuck spoken to",212448,0,0,105376,0,32
@@ -104912,7 +104913,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212519,,77602,20,0,106467,139,2
 212520,,77602,42000,0,106466,140,2
 212521,,77602,39000,0,106465,141,2
-212522,,77602,10,0,106469,142,2
 212523,,77602,20,0,106468,143,2
 212524,"12.0 Dungeon - Maisara Caverns (Normal)",0,0,4,0,0,0
 212525,"Muro'jin and Nekraxx defeated",212524,1,0,106472,0,0
@@ -105094,6 +105094,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212702,"Lothraxion defeated",212699,1,0,106481,2,0
 212703,"Journey's End (Season 3)",0,0,4,0,0,0
 212704,,212703,0,0,106482,0,0
+212957,Ragemaw,212936,0,0,106172,20,0
 212705,"TWW Season 3 Resilient Keystone 26",0,0,4,0,0,0
 212706,Eco'Dome,212705,1,0,106483,0,0
 212707,"Ara-Kara, City of Echoes",212705,1,0,106484,1,0
@@ -105167,7 +105168,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212775,,212774,0,0,106526,0,0
 212776,"Pressed the Small Red Button 10 times and lived to tell the tale.",0,0,4,0,0,0
 212777,,212776,1,0,106527,0,0
-212955,"Chief Bitterbrine",212936,0,0,106170,18,0
 212778,"12.0 Delves - Ethereals02 - V01 - Speak to NPC (HCR)",0,0,4,0,0,0
 212779,"Speak to Lysikas",212778,1,0,106528,0,32
 212780,"11.2 Raid - Manaforge - Soulbinder - Achievenment - Haku",0,0,4,0,0,0
@@ -105245,8 +105245,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212952,"Marius & Tehd versus a Fel Lord",212936,0,0,106167,15,0
 212953,"Marius & Tehd versus a Doomlord",212936,0,0,106168,16,0
 212954,"Marius & Tehd versus Felbats",212936,0,0,106169,17,0
+212955,"Chief Bitterbrine",212936,0,0,106170,18,0
 212956,Brawlgoth,212936,0,0,106171,19,0
-212957,Ragemaw,212936,0,0,106172,20,0
 212958,"Treacherous Stallions",212936,0,0,106173,21,0
 212959,"Arcanist Shal'iman",212936,0,0,106174,22,0
 212960,Vorthax,212936,0,0,106175,23,0
@@ -105850,7 +105850,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 213561,,213560,1,0,106069,0,2
 213562,"Defeat Odyn - Halls of Valor (Heroic+) (Legion Remix)",0,0,4,0,0,0
 213563,,213562,1,0,107125,0,2
-213902,"Fyrakk's End",213901,0,0,107363,0,32
 213564,"Defeat Odyn - Halls of Valor (Mythic+) (Legion Remix)",0,0,4,0,0,0
 213565,,213564,1,0,107115,0,2
 213566,"Achievement - Black Rook Hold Complete (Legion Remix)",0,1,8,0,0,0
@@ -106150,6 +106149,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 213899,"Defying Gravity",0,0,4,0,0,0
 213900,"All players hit by Reverse Gravity.",213899,1,0,107362,0,0
 213901,"11.2.7 ADH - Raid - Story Mode - (STM) - Fyrakk's End (STM)",0,0,4,0,0,0
+213902,"Fyrakk's End",213901,0,0,107363,0,32
 213903,"11.27 ADH - Raid Story - Dream - LFR Wing 4",0,0,4,0,0,0
 213904,"Fyrakk the Blazing defeated",213903,1,0,63103,0,0
 213905,"Beat stuff up",212305,5,0,107364,3,0
@@ -107529,7 +107529,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 215371,"12.0.5 Void Assaults - Eversong - Major Attack - Scenario 01 - Step 01 Completion (JTL)",0,1,8,0,0,0
 215372,"(Optional) Defense constructed",215371,1,0,108799,0,32
 215373,"12.0.5 Void Assaults - Eversong - Major Attack - Scenario 01 - Step 04 Completion (JTL)",0,0,4,0,0,0
-215374,"Void Fissures closed",215373,15,0,109244,0,32
+215374,"Void Fissures closed",215373,12,0,109244,0,32
 215375,"12.0.5 Void Assaults - Eversong - Major Attack - Scenario 01 - Final Step Completion (JTL)",0,1,8,0,0,0
 215376,"Unshackled Ultradon slain",215375,1,0,108800,0,0
 215377,"12.0.5 Void Assaults - Zul'aman - Major Attack 01 - Step 01 Completion (JTL)",0,1,8,0,0,0
@@ -109035,7 +109035,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 217037,"Lightbloom slain",217033,1,0,62794,3,1
 217038,"Lightbloom slain",217033,2,0,62701,4,1
 217039,"12.0.5 Void Assaults - Eversong - Major Attack - Scenario 01 - Step 03 Completion (JTL)",0,1000,4,0,0,0
-217040,,222969,2,0,109258,1,0
+217040,,222969,3,0,109258,1,0
 217041,"Weekly Quests Completed",0,6,4,0,0,0
 217042,"Weekly Quests Completed",217041,4,0,109247,0,1
 217043,,212208,0,0,109248,7,0
@@ -109061,7 +109061,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 217064,"Daily Quests completed",217063,6,0,109256,0,1
 217065,"12.0 Delves - Atal'Aman - Spiritpaw Cubs rescued",0,0,4,0,0,0
 217066,"Spiritpaw Cubs rescued",217065,7,0,109257,0,0
-217067,,222969,1,0,109259,0,2
+217067,,222969,2,0,109259,0,2
 217068,"King Mechagon defeated",0,6,4,0,0,0
 217069,"King Mechagon defeated",217068,1,0,109260,0,1
 217070,"HK-8 Aerial Oppression Unit defeated",0,6,4,0,0,0
@@ -113869,8 +113869,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223869,"12.1 Delves - UlaTekLab - Section 2 - Scenario A - ADT",0,0,4,0,0,0
 223870,"Section 2 - Scenario A",223869,1,0,112887,0,0
 223871,"12.1 Delves - UlaTekLab - Intermission Step - ADT",0,1,4,0,0,0
-223872,"Continue or Finish Run",223891,1,0,112888,0,0
+223872,"Path chosen",223891,1,0,112888,0,0
 223873,"Do Thing",223891,1,0,112889,1,2
+223874,"Disrupt Aqir!",0,100,4,0,0,32
+223875,,223876,18,0,112892,2,0
+223876,"Stop Aqir forces",223874,400,9,0,0,0
+223877,,223876,9,0,112891,1,0
 223881,,37080,1,0,26446,1,2
 223882,,210294,0,0,52191,1,2
 223883,"Run completed",222404,0,0,112895,1,0
@@ -113879,11 +113883,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223886,,223884,1,0,112897,1,2
 223887,"[DNT] Complete a quest while you have a house of level 6+",0,0,4,0,0,0
 223888,,223887,1,0,112898,0,0
-223889,"Loot Treasure",223871,0,4,0,0,0
-223890,"Loot Treasure",223889,0,0,112899,0,0
-223891,Continue/Finish,223871,1,8,0,1,0
+223889,"(Optional) Speak to Kinduru",223871,0,4,0,0,0
+223890,"Speak to Kinduru",223889,0,0,117017,0,0
+223891,"Path chosen",223871,1,8,0,1,0
 223892,"Player has completed This Old Hearth (last quest of housing tutorial)",0,0,4,0,0,0
 223893,,223892,1,0,112900,0,0
+223894,"Kill the aqir swarms",223876,5,0,112903,0,0
+223895,,223876,38,0,112904,3,0
 223930,"Complete World Quests, Dungeons, and Delves in Midnight zones",0,10,5,0,0,4097
 223931,,223930,0,0,112942,1,0
 223932,,223930,0,0,112943,2,0
@@ -113928,14 +113934,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223983,"Corrupted Wildlife slain",222967,3,0,112986,1,32
 223987,"All the Things She Said",0,0,4,0,0,0
 223988,"Return 12 Memories of Alleria.",223987,1,0,112989,0,0
+224259,"Murder Row",224251,1,0,113080,7,0
 223989,"12.1 Delves - UlaTekLab - Section 2 - Scenario B - ADT",0,0,4,0,0,0
 223990,"Section 2 - Scenario B",223989,1,0,112887,0,0
 223991,"12.1 Delves - UlaTekLab - Section 3 - Scenario A - ADT",0,0,4,0,0,0
 223992,"Section 3 - Scenario A",223991,1,0,112887,0,0
 223993,"12.1 Delves - UlaTekLab - Section 3 - Scenario B - ADT",0,0,4,0,0,0
 223994,"Section 3 - Scenario B",223993,1,0,112887,0,0
-223995,"12.1 Delves - UlaTekLab - Section 4 - Scenario B - ADT",0,0,4,0,0,0
-223996,"Section 4 - Scenario B",223995,1,0,112887,0,0
+223995,"12.1.5 Labyrinth - Chamber 3a - Scenario B - Step 01 - TSH",0,0,4,0,0,0
+223996,"Corrupted Reliquaries broken",223995,9,0,113807,0,0
 223997,"12.1 Delves - UlaTekLab - Section 4 - Scenario A - ADT",0,0,4,0,0,0
 223998,"Section 4 - Scenario A",223997,1,0,112887,0,0
 224007,"[DNT] Complete a quest while you have a house of level 5+",0,0,4,0,0,0
@@ -113949,6 +113956,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224031,,224030,0,0,113006,0,0
 224038,"JZB Test 2",0,1,4,0,0,8193
 224039,,224038,0,0,113006,0,0
+224040,"12.1.5 - Aqir Invasion - Bonus Event - Boss Kill - (STM) - Aqir monstrosity slain (STM)",0,0,4,0,0,0
+224041,"Aqir monstrosity slain",224040,1,0,113013,0,32
 224042,"11.0 Delves - POI Controller - Groups 1 and 4 defeated (DTM)",0,0,4,0,0,2
 224043,,224042,0,0,68242,0,0
 224044,,224042,0,0,68245,1,0
@@ -113988,6 +113997,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224083,,224082,0,0,113030,0,0
 224084,"Remix mixed up",0,1,8,0,0,8193
 224085,,224084,0,0,113031,0,0
+224096,"Hold out against incoming Aqir",0,100,4,0,0,32
+224097,"Stop Aqir forces",224096,300,9,0,0,0
+224098,"Aid Defenders!",224097,3,0,112903,0,1
+224099,,224097,9,0,112891,1,0
+224100,,224097,18,0,112892,2,0
+224101,,224097,25,0,112904,3,0
+224118,,224097,6,0,112920,4,0
 224123,"Tol'zenja the Spirit Caller prepare the site",0,1,4,0,0,0
 224124,"Wait for Tol'zenja the Spirit Caller to prepare the site",224123,1,0,113041,0,0
 224125,"Sacrificial Offerings delivered",0,1,8,0,0,0
@@ -114006,6 +114022,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224145,,224144,1,0,113052,0,1
 224146,"Orbs collected with Shrine of Sky",224143,15000,9,0,1,0
 224147,,224146,1,0,113051,0,2048
+224150,"Destroy aqir and their nesting grounds",0,100,4,0,0,32
+224151,"Stop Aqir forces",224150,400,9,0,0,0
+224152,,224151,5,0,112903,0,0
+224153,,224151,9,0,112891,1,0
+224154,,224151,18,0,112892,2,0
+224155,,224151,38,0,112904,3,0
+224172,,224151,6,0,112920,4,0
 224186,"12.0 Dungeon - Lightbloom (Challenge)",0,0,4,0,0,0
 224187,"Lightblossom Trinity Defeated",224186,1,0,103988,0,0
 224188,"Ikuzz the Light Hunter Defeated",224186,1,0,103989,1,0
@@ -114016,6 +114039,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224193,,224191,69,0,50192,1,0
 224194,,224191,9999,0,48468,2,0
 224195,,224191,7,0,113059,8,0
+224197,"Aqir monstrosity slain",224196,1,0,113013,0,32
 224200,"Slay foes at the Shrine of Shackles",224017,100,9,0,0,0
 224201,,224200,1,0,113002,0,0
 224203,"Slay foes at the Shrine of Venom",224017,100,9,0,1,0
@@ -114067,7 +114091,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224256,"The Blinding Vale",224251,1,0,113077,4,0
 224257,"Voidscar Arena",224251,1,0,113078,5,0
 224258,"Den of Nalorakk",224251,1,0,113079,6,0
-224259,"Murder Row",224251,1,0,113080,7,0
 224260,"Midnight Season 2 Resilient Keystone 13",0,0,4,0,0,0
 224261,"Altar of Fangs",224260,1,0,113081,0,0
 224262,"Ruby Life Pools",224260,1,0,113082,1,0
@@ -114264,6 +114287,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224455,"Rating Requirement",224454,3000,0,113240,0,2
 224460,"Deliver the Staves of each Shrine",0,0,4,0,0,0
 224465,"Gather flames to cleanse sarcophagi",224899,4,0,113248,0,0
+224466,"12.1.5 - Aqir Campaign - Silvermoon Scenario - (STM) - Defeat Incoming Aqir! (STM)",0,0,4,0,0,0
 224472,"Energy Thrusters",211650,1,8,0,0,0
 224473,,224472,0,0,113252,1,0
 224474,Void,211650,1,8,0,1,0
@@ -114277,6 +114301,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224482,"Staff of Shackles claimed and placed at Cache",224460,1,0,113258,0,0
 224483,"Staff of Venom claimed and placed at Cache",224460,1,0,113257,1,0
 224484,"Staff of Serpents claimed and placed at Cache",224460,1,0,113262,2,0
+224492,"Civilians rescued",224466,7,0,113263,0,32
+224493,"Front gates reached",0,0,4,0,0,0
+224495,"Arrive at the front gates of Silvermoon",224493,1,0,113513,0,0
+224496,"12.1.5 - Aqir Campaign - Silvermoon Scenario - (STM) - Lor'themar's Stand (STM)",0,0,4,0,0,0
+224497,"General Vixthek slain",224496,0,0,113264,0,32
+224498,"12.1.5 - Aqir Campaign - Silvermoon Scenario - (STM) - A Brief Pause (STM)",0,0,4,0,0,0
+224499,"Speak with Lor'themar",224498,0,0,113265,0,32
 224500,"Supply Wagon departs",0,0,4,0,0,0
 224501,"Wait for the supply wagon to depart",224500,1,0,113266,0,0
 224502,"Cache of the Three - End Timer",0,0,4,0,0,0
@@ -114522,6 +114553,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224794,"Scouts Freed",221561,3,0,113438,2,1
 224795,"Character has earned 2500 Conquest during Midnight Season 2",0,0,4,0,0,0
 224796,,224795,250000,0,113439,0,1
+224797,"12.1.5 - Aqir Invasion - Public Scenario 04 - Whack a Mole- (STM)",0,1,8,0,0,0
+224798,"Stomp away incoming aqir with Lava-Enchanted Boots",224797,100,9,0,0,0
+224799,"Stomp away incoming aqir with Lava-Enchanted Boots",224798,1,0,113440,0,1
 224800,"Tol'zenja is planning a course of action",0,0,4,0,0,0
 224801,"Wait for Tol'zenja to plan a course of action",224800,1,0,113441,0,0
 224802,"Void Machines Destroyed",222281,2,0,112271,0,33
@@ -114529,12 +114563,33 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224804,"Purge Void Energy from Gnarldin",222283,4,0,113442,0,33
 224805,"Purge Void Energy from Gnarldin",222283,2,0,113443,1,33
 224806,,223707,3,0,112855,1,0
+224807,"(Optional) Recover Lava-Enchanted Boots",224797,0,0,113444,1,0
 224808,"Complete the Daily Quest ""Suspicious Scare-Gull""",0,0,4,0,0,0
 224809,"Complete the Daily Quest ""Suspicious Scare-Gull""",224808,1,0,113445,0,1
 224810,"Complete the Daily Quest ""My Stuffs Better Than Your Stuff""",0,0,4,0,0,0
 224811,"Complete the Daily Quest ""My Stuffs Better Than Your Stuff""",224810,1,0,113446,0,1
 224812,"Achievement: 100 Field Accolades",0,0,4,0,0,0
 224813,,224812,100,0,113447,0,1
+224814,"12.1.5 - Aqir Invasion - Public Scenario 05 - Skyriding - (STM)",0,0,4,0,0,0
+224815,"Aqir aerial forces repelled",224814,75,9,0,0,0
+224816,"Aqir aerial forces repelled",224815,1,0,113448,0,0
+224817,"Complete all 3 candy quests from one of the 3 zones accessible from neighborhoods.",0,1,8,0,0,0
+224818,"Candies of Drustvar",224817,0,4,0,0,0
+224819,"Bewitched Berry Bites",224818,1,0,113451,0,0
+224820,"Hexed Honeycombs",224818,1,0,113450,1,0
+224821,"Witchbane Truffles",224818,1,0,113449,2,0
+224822,"Candies of Duskwood",224817,0,4,0,1,0
+224823,"Blighted Core Caramels",224822,1,0,113454,0,0
+224824,"Howling Honey Drops",224822,1,0,113453,1,0
+224825,"Twisted Vine Licorice",224822,1,0,113452,2,0
+224826,"Candies of Felwood",224817,0,4,0,2,0
+224827,"Blighted Bloom Bites",224826,1,0,113456,0,0
+224828,"Felroot Crunch",224826,1,0,113455,1,0
+224829,"Rotleaf Wafers",224826,1,0,113457,2,0
+224830,"Collect and deposit 10 ghosts in any neighborhood.",0,0,4,0,0,0
+224831,,224830,10,0,113458,0,1
+224832,"Use a power up 3 times in the tree defence activity.",0,3,8,0,0,8193
+224833,,224832,1,0,113459,0,0
 224834,"Wait for the pyres to be ignited",0,0,4,0,0,0
 224835,"Wait for the pyres to be ignited",224834,1,0,113460,0,0
 224836,"12.1 Delve - UlatekBoss - Tox'Atal - Defeat Boss",0,0,4,0,0,0
@@ -114560,6 +114615,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224857,,224856,0,0,113465,0,0
 224861,"Slay World Boss",0,0,4,0,0,0
 224862,"Congealed Malice slain",224861,1,0,113469,0,0
+224863,"12.1.5 - Aqir Invasion - Public Scenario 06 - Gear Up - (STM)",0,1,8,0,0,0
+224864,"Defenders supported",224863,100,9,0,0,0
+224865,"Defenders supported",224864,3,0,113470,0,1
+224867,"12.1.5 - Aqir Invasion - Public Scenario 06 - Gear Up - (STM) - Aqir Monstrosity slain (STM)",0,0,4,0,0,0
+224868,"Aqir Monstrosity slain",224867,0,0,113472,0,32
+224869,"(Optional) Get equipment to hand out",224863,0,0,113444,1,0
 224871,,224870,1,0,113473,0,0
 224872,,224870,1,0,113474,1,0
 224873,,224870,1,0,113475,2,0
@@ -114583,6 +114644,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224899,"Gather flames to cleanse sarcophagi",224426,10000,9,0,1,0
 224900,"Slay undead and burn their souls",224898,7,0,113488,1,0
 224901,"Slay undead and burn their souls",224898,12,0,113489,2,0
+224902,"12.1.5 Labyrinth - Chamber 3b - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
+224903,"Collect Stolen Artifacts",224902,10,0,113537,0,0
 224904,,222428,1,0,112062,1,48
 224905,,222428,1,0,112063,2,48
 224906,,222428,1,0,112065,3,48
@@ -114608,6 +114671,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224926,"Eggs destroyed",224925,1,0,113493,0,0
 224927,"Home-Grown Wax contributed",0,0,4,0,0,0
 224928,"Home-Grown Wax contributed",224927,50,0,113494,0,1
+224933,"12.1.5 - Aqir Campaign - Silvermoon Scenario - (STM) - Qinthix the Corpse Tearer slain (STM)",0,0,4,0,0,0
+224934,"Qinthix the Corpse Tearer slain",224933,0,0,113497,0,32
 224935,"Void Assault Completed in Eversong",0,1,8,0,0,0
 224936,,224935,1,0,113510,0,0
 224939,"Void Assault Completed in Zul'aman",0,1,8,0,0,0
@@ -114647,6 +114712,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224983,,224974,1,0,113535,8,16
 224984,"Give a treat to Fei Fei",0,0,4,0,0,4096
 224985,,224984,0,0,113536,0,0
+224986,"12.1.5 Labyrinth - Chamber 3b - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+224987,"Kill Sha'Kuro",224986,1,0,113490,0,0
 224989,"World Quests completed",224988,5,0,113538,0,1
 224990,"Cursed Surge bosses slain",0,0,4,0,0,0
 224991,"Cursed Surge bosses slain",224990,5,0,113539,0,1
@@ -114665,8 +114732,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225008,"Nymrissa Wavecaller defeated",225007,1,0,113548,0,1
 225009,"Nymrissa Wavecaller defeated Mythic",0,1,8,0,0,0
 225010,"Nymrissa Wavecaller defeated",225009,1,0,113549,0,1
-225011,"Zul'jan defeated",0,1,8,0,0,8192
-225012,"Jul'jan defeated",225011,1,0,113550,0,1
+225011,"Zul'jan defeated",0,1,8,0,0,0
+225012,"Zul'jan defeated",225011,1,0,113550,0,1
 225013,"Venom-Crazed creatures defeated",0,1,8,0,0,0
 225014,"Venom-Crazed creatures defeated",225013,100,0,113551,0,1
 225015,"Void Strikes completed",0,5,5,0,0,8193
@@ -114731,7 +114798,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225089,"Win Rated PvP matches while at 1000 rating or higher",225088,2400,0,113588,0,1
 225090,"Kills in Hostile Activity",0,250,5,0,0,0
 225091,,225090,250,0,113589,0,0
+225136,"12.1.5 - Labyrinth Event- Generic Activity 2 (CTR)",0,0,4,0,0,1
+225137,"Lost Souls Dispersed",225138,1,0,113600,0,1
+225138,"Lost Souls Dispersed",225136,7,9,0,0,32
 225139,"Regroup and prepare for the next battle.",224890,1,0,113601,0,0
+225151,,223876,5000,0,113602,4,0
+225152,,224097,5000,0,113602,5,0
+225153,,224151,5000,0,113602,5,0
 225174,"Achievement: 500 Field Accolades",0,0,4,0,0,0
 225175,,225174,500,0,113447,0,1
 225176,"Achievement - Traces in the Dark",0,0,4,0,0,0
@@ -114779,6 +114852,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225229,"Western Chamber cleared",225222,10000,9,0,2,0
 225230,,225229,2,0,113635,1,0
 225231,,225229,8,0,113634,0,0
+225232,"12.1.5 Labyrinth - Generic - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+225233,"Repel the Vilebranch",225232,100,9,0,0,32
+225234,,225233,20,0,113636,0,0
+225235,,225233,8,0,113637,1,0
+225236,,225233,4,0,113639,2,0
+225237,,225233,2,0,113638,3,0
 225238,"Select a Combat Role for Valeera Sanguinar",0,1,8,0,0,12290
 225239,,225238,0,0,113640,0,0
 225240,,225238,0,0,113641,1,0
@@ -114810,6 +114889,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225288,"[DNT] Research Sites: Collection - Hawkstrider Pet",0,1,8,0,0,0
 225289,"[DNT] Research Sites: Collection - Hawkstrider Pet",225288,0,0,113656,0,2
 225290,Chick,225288,0,0,113657,1,2
+225291,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C",0,1,8,0,0,0
+225292,"Vile Wraith Sha'Kuro Slain",225291,1,0,117411,0,0
 225293,"Deliver one of each of the following offerings to the Summoning Ritual event in the Vaults of Atal'Utek.",0,0,4,0,0,0
 225294,"Petrified Egg",225293,1,0,113658,0,0
 225295,"Venomous Ooze",225293,1,0,113659,1,0
@@ -114823,9 +114904,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225313,"[DNT] Research Sites: Collection - Lynx Pet",0,1,8,0,0,0
 225314,"[DNT] Research Sites: Collection - Lynx Pet",225313,0,0,113668,0,2
 225315,Chick,225313,0,0,113669,1,2
+225318,"Head Ritualist Ja'an Slain",225136,1,0,113672,1,32
+225319,"Head Ritualist Zol'go Slain",225136,1,0,113671,2,32
 225323,"Bone Pile Investigated",225263,6,0,113679,0,0
 225325,"[DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season)",0,0,4,0,0,0
 225326,,225325,1,0,113678,0,0
+225327,"12.1.5 - Labyrinth Event- Kill Named NPC - 3D - Scenario C",0,0,4,0,0,0
+225328,"Head Ritualist Malakk Slain",225327,1,0,113680,0,0
 225329,"Dance while defending each of the Shrines in the Cache of Three event in the Vaults of Atal'Utek.",0,0,4,0,0,0
 225330,"Many Faces Stone",225329,1,0,113681,0,0
 225331,"Stone of Shackles",225329,1,0,113682,1,0
@@ -114899,6 +114984,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225425,"Defeat Hal'Hadar forces",223422,1,0,113755,1,32
 225426,"Defeat Hal'Hadar forces",223422,2,0,113756,3,32
 225427,"Defeat Hal'Hadar forces",223422,3,0,113757,2,32
+225428,"12.1.5 Labyrinth - Chamber 2a - Scenario B - Step 01 - TSH",0,0,4,0,0,1
+225429,"Disrupt the Vilebranch",225428,100,9,0,0,32
+225430,,225429,20,0,113636,0,0
+225431,,225429,8,0,113637,1,0
+225432,,225429,4,0,113639,2,0
+225433,,225429,2,0,113638,3,0
+225434,"12.1.5 Labyrinth - Chamber 2a - Scenario B - Step 02 - TSH",0,0,4,0,0,0
+225435,"Souls Returned",225434,12,0,113759,0,0
 225480,"Walked a Pup",0,2,4,0,0,0
 225481,"Steps traveled",225480,500,0,113761,0,1
 225482,"Achievement - Cosmic Slayer",0,15,5,0,0,1
@@ -114923,6 +115016,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225507,,225189,1,0,113778,1,0
 225508,,225189,1,0,113779,2,0
 225509,,225189,1,0,113780,3,0
+225510,"12.1.5 Labyrinth - Chamber 2a - Scenario B - Step 03 - TSH",0,0,4,0,0,0
+225511,"Revenant Defeated",225510,1,0,113781,0,0
 225512,"Ground Orbs Complete",0,0,4,0,0,0
 225513,"Ground Orbs",225512,25000,9,0,0,0
 225514,,225513,1,0,113052,0,0
@@ -114950,12 +115045,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225537,,225535,8,0,113634,1,0
 225539,,225538,3,0,113788,0,0
 225540,"Dominating Siphoids knocked out of the air",219258,1,0,109959,0,32
+225543,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 1",0,0,4,0,0,0
+225544,"Investigate the ritual circle.",225543,1,0,113789,0,0
+225547,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 2",0,0,4,0,0,0
+225548,"Withering Souls defeated",225547,4,0,113790,0,0
 225549,"Battlegrounds won",0,2,5,0,0,4096
 225550,,225549,2,0,113791,0,2
 225551,,223930,0,0,113792,16,0
 225553,,225552,2,0,113793,0,2
 225555,,225554,2,0,113794,0,2
 225557,,225556,2,0,113795,0,2
+225558,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 3",0,0,4,0,0,0
+225559,"Relics returned to their owner's altar",225558,3,0,113798,0,1
+225560,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 4",0,0,4,0,0,0
+225561,"Vilebranch Necromancer defeated",225560,1,0,113799,0,0
 225562,"Workshop Begun",0,0,4,0,0,3
 225563,"Workshop Ready!",225562,1,0,113800,0,3
 225568,"New Criteria Tree",0,100,9,0,0,4096
@@ -114964,8 +115067,21 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225571,,225570,1,0,106207,0,0
 225572,"Alchemy Research - 5 Potion Salvages (SUM)",0,5,7,0,0,0
 225573,,225572,5,0,106243,0,0
+225574,"12.1.5 Labyrinth - Chamber 3a - Scenario B - Step 03 - TSH",0,0,4,0,0,0
+225575,"Survive the Undead",225574,60,9,0,0,1
+225576,,225575,1,0,113808,0,0
+225577,"12.1.5 Labyrinth - Chamber 3a - Scenario B - Step 04 - TSH",0,0,4,0,0,0
+225578,"Sha'Kuro slain",225577,1,0,113809,0,0
 225579,"12.0 Prey - Nightmare Hunt + Cat Scratch (KNF)",0,0,4,0,0,0
 225580,,225579,0,0,113810,0,0
+225585,"12.1.5 Labyrinth - Chamber 3a - Scenario B - Step 02 - TSH",0,0,4,0,0,0
+225586,"Sha'Kuro confronted",225585,1,0,113814,0,0
+225588,"12.1.5 Labyrinth - Chamber 2b - Scenario A - Step 01 - TSH",0,0,4,0,0,1
+225589,"Repel the Vilebranch",225588,100,9,0,0,32
+225590,,225589,10,0,113636,0,0
+225591,,225589,6,0,113637,1,0
+225592,,225589,4,0,113639,2,0
+225593,,225589,2,0,113638,3,0
 225594,"12.1 Delves - TwilightsBlade01 - V04 - Fake Boss (Hufton)",0,0,4,0,0,0
 225595,"Ula'tek Supreme Summoner slain",225594,1,0,113815,0,32
 225598,"Animals rescued",225283,8,0,114226,0,0
@@ -115056,6 +115172,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225723,"Daggerspine attack force defeated",222963,1,0,113879,4,1
 225724,"Daggerspine attack force defeated",222963,1,0,113880,5,1
 225726,"Depth Grease upgrade acquired",222426,3,0,113836,1,0
+225829,,225817,1,0,108234,11,2
 225728,"Depthdiver's Used Tank upgrade acquired",222430,2,0,113837,8,0
 225729,"Fathom-Tested Tank upgrade acquired",222432,3,0,113837,6,0
 225730,"Finnow Chum upgrade acquired",222418,2,0,113839,1,0
@@ -115104,7 +115221,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225785,,225779,1,0,113918,5,0
 225786,"Recover Coalesced Leyflux",0,100,5,0,0,4096
 225787,,225786,1,0,113919,0,0
-225887,,225817,1,0,108292,69,2
 225788,"12.1 Delves - Fungarians03 - V04 - Rewards Cutoff (Hufton)",0,0,4,0,0,0
 225791,,225788,2,0,114572,0,0
 225793,,216383,2,0,113920,5,0
@@ -115140,7 +115256,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225826,,225817,1,0,108231,8,2
 225827,,225817,1,0,108232,9,2
 225828,,225817,1,0,108233,10,2
-225829,,225817,1,0,108234,11,2
 225830,,225817,1,0,108235,12,2
 225831,,225817,1,0,108236,13,2
 225832,,225817,1,0,108237,14,2
@@ -115198,6 +115313,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225884,,225817,1,0,108289,66,2
 225885,,225817,1,0,108290,67,2
 225886,,225817,1,0,108291,68,2
+225887,,225817,1,0,108292,69,2
 225888,,225817,1,0,108293,70,2
 225889,,225817,1,0,108294,71,2
 225890,,225817,1,0,108295,72,2
@@ -117113,6 +117229,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 228513,,228512,1,0,114563,0,32
 228514,"Achievement - Keystone Myth: Midnight Dungeons Season 1",0,0,4,0,0,0
 228515,"Rating Requirement",228514,3400,0,109029,0,2
+228516,"Looters Defeated | Items Recovered",0,0,4,0,0,0
+228517,"Hoarding Looters Defeated",228516,10,0,114564,0,0
+228518,"Kazrak's Grain Sack Recovered",231274,1,0,114565,4,0
+228519,"Old Hekra's Honeypot Recovered",231274,1,0,114566,0,0
+228520,"Zan'ji's Wheel of Cheese Recovered",231274,1,0,114567,3,0
+228521,"Rujak's Very Large Onion Recovered",231274,1,0,114568,1,0
+228522,"Jindara's Favorite Mushroom Recovered",231274,1,0,114569,2,0
 228523,"12.0.7 Raid - Kill Raid Boss (KCO)",0,1,4,0,0,4096
 228524,"Rotmire slain",228523,1,0,114570,0,0
 228525,"Earn Rated Participation Currency in Midnight Season 2 - Mount (H)",0,0,4,0,0,0
@@ -117135,6 +117258,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 228542,Taiwan,228538,1,0,114576,3,2
 228543,China,228538,1,0,114577,4,2
 228544,,228537,1,1,109031,1,2
+228788,"12.1.5 Labyrinth - Chamber 3c - Scenario B - Step 01 - TSH",0,0,4,0,0,0
+228789,"Challenge started",228788,1,0,114745,0,0
+228790,"12.1.5 Labyrinth - Chamber 3b - Scenario B - Step 02 - TSH",0,0,4,0,0,0
+228791,"Room looted",228790,1,0,114746,0,0
 228804,"Big Prey Hunter",0,0,4,0,0,0
 228805,,228804,10,0,114751,0,0
 228806,"Earn 1000 honor in the Coiled Isle while in War Mode.",0,0,4,0,0,0
@@ -117155,8 +117282,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 228822,,228820,1,0,114799,1,2
 228823,,228820,1,0,114800,2,2
 228824,"The Ring of Glory",221058,1,0,114801,11,0
+228845,"Investigate the Ancient Harvest Bundle",0,0,4,0,0,0
+228846,"Investigate the Ancient Harvest Bundle",228845,0,0,114814,0,0
+228847,"12.1.5 Labyrinth - Chamber 4 - Kill Final Boss (BAK)",0,0,4,0,0,0
+228848,"Kindo'Jan defeated",228847,1,0,114815,0,0
 228849,"12.0.7 Showdowns - Val - Ch2 Q02 - (Optional) Cast Infuse With Void",0,0,4,0,0,4096
 228850,,228849,1,0,114816,0,0
+228851,"Defeat the Looter Excavator",0,0,4,0,0,0
+228852,"Defeat the Looter Excavator",228851,1,0,117225,0,0
 228853,"Advanced Ritual Site Studies",0,0,4,0,0,0
 228854,"Week 1: Reinforcements",228853,1,0,114818,0,0
 228855,"Week 2: Malevolent Boons",228853,1,0,114819,1,0
@@ -117169,6 +117302,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 228862,,228860,1,0,114825,1,0
 228863,,228860,1,0,114826,2,0
 228864,,228812,3,0,113859,1,1
+229003,"Run through and collect as much as you can before time runs out",0,0,4,0,0,0
+229004,"Run through and collect as much as you can before time runs out",229003,1,0,114903,0,0
 229007,"Statistic - 12.0.7 Raid - Fungarian - Giant - LFR",0,0,4,0,0,0
 229008,,229007,0,0,114905,0,2
 229009,"Statistic - 12.0.7 Raid - Fungarian - Giant - Normal",0,0,4,0,0,0
@@ -117196,13 +117331,29 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229044,,5612,1,0,114920,6,2
 229045,"Ahune Kill Quest",5612,1,0,114921,7,2
 229046,"Ahune Kill Quest",5612,1,0,114922,8,2
+229059,"Chamber 2b - Scenario B - Loot the Ancient Hargest Bundle",0,0,4,0,0,0
+229060,"Loot the Ancient Harvest Bundle",229059,0,0,114814,0,0
+229061,"Chamber 2b - Scenario B - Dundun - Step 02 Complete",0,0,4,0,0,0
+229062,"Hoarding Looters Defeated",229061,5,0,114564,0,0
+229063,"Kazrak's Grain Sack Recovered",229061,1,0,114565,1,0
+229064,"Old Hekra's Honeypot Recovered",229061,1,0,114566,2,0
+229065,"Zan'ji's Wheel of Cheese Recovered",229061,1,0,114567,3,0
+229066,"Rujak's Very Large Onion Recovered",229061,1,0,114568,4,0
+229067,"Jindara's Favorite Mushroom Recovered",229061,1,0,114569,5,0
+229068,"Chamber 2b - Scenario B - Defeat the Looter Excavator",0,0,4,0,0,0
+229069,"Defeat the Looter Excavator",229068,1,0,114817,0,0
+229070,"Chamber 2b - Scenario B - Run through and collect as much as you can before time runs out",0,0,4,0,0,0
+229071,"Run through and collect as much as you can before time runs out",229070,1,0,114903,0,0
+229072,"12.1.5 Labyrinth - Chamber 3d - Scenario B - Step 01 - TSH",0,0,4,0,0,0
+229073,"Challenge started",229072,1,0,114745,0,0
+229074,"12.1.5 Labyrinth - Chamber 3d - Scenario B - Step 02 - TSH",0,0,4,0,0,0
+229075,"Room looted",229074,1,0,114746,0,0
 229086,"Defeat the Entombed Sentinels after each Sentinel uses Vitriolic Stasis to restore more than half its total health in The Venomous Abyss on Normal difficulty or higher.",0,0,4,0,0,0
 229087,"Breath of Ula'tek healed",229086,1,0,114938,0,0
 229088,,145187,0,0,112836,1,1
 229101,"Achievement - Glory of the Venomous Raider",0,0,4,0,0,0
 229102,"Donate to taverns in Midnight zones.",0,0,4,0,0,0
 229103,"Eversong Woods, Silvermoon",229102,1,0,114942,0,0
-229391,"Turtles rescued",225269,3,0,115027,0,0
 229104,"Eversong Woods, Tranquillien",229102,1,0,114943,1,0
 229105,"Eversong Woods, Arcantina",229102,1,0,114944,2,0
 229106,"Harandar, Har'athir",229102,1,0,114945,3,0
@@ -117345,6 +117496,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229381,"Dead End",229365,0,0,115024,15,0
 229389,"12.1 Delves - HexTrolls01 - V04 - Chests + Loot (Hufton)",0,0,4,0,0,0
 229390,"Chests opened",229389,2,0,115026,1,0
+229391,"Turtles rescued",225269,3,0,115027,0,0
 229392,Powder,225269,0,0,115028,1,0
 229393,"Cannon Shot",225269,0,0,115029,2,0
 229394,"Swivel guns",225269,0,0,115030,3,0
@@ -117590,6 +117742,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229696,"Zul'jan's Stash",229674,0,0,115297,21,16
 229703,"12.1 Delves - Ulatek01 - Just Hearts Done",0,0,4,0,0,0
 229704,,229703,6,0,115150,0,0
+229705,"12.1.5 Labyrinth - Chamber 2b - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+229706,"Masks Cleansed",229705,3,0,115379,0,0
+229711,"Incense lit",0,0,4,0,0,0
+229712,"Incense lit",229711,1,0,115317,0,0
+229713,"Burden carried",0,1,8,0,0,0
+229719,"Trial gates cleared",232478,5,0,115318,1,0
 229761,"12.1 Delves - Ethereals01 - V04 - Intro NPC (Hufton)",0,0,4,0,0,0
 229762,"Wounded ethereal spoken to",229761,0,0,105376,0,0
 229763,"Warbringer Thal'kuur",229606,1,0,115343,18,0
@@ -117788,6 +117946,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230186,,230185,1,0,115678,0,0
 230187,"12.1 Delves - Ethereals02 - V04 - Boss (Hufton)",0,0,4,0,0,0
 230188,"Disciple of Vashnik defeated",230187,0,0,60399,0,0
+230200,"12.1.5 Labyrinth - Chamber 2c - Scenario B - Looter Bar Fill - TSH",0,0,4,0,0,1
+230201,"Clear Out the Looters",230200,100,9,0,0,32
+230202,,230201,20,0,113636,0,0
+230203,,230201,8,0,113637,1,0
+230204,,230201,4,0,113639,2,0
+230205,,230201,2,0,113638,3,0
 230210,"EVERGREEN Delves - POI Controller - Deactivate Blob 01",0,0,4,0,0,0
 230211,,230210,1,0,115690,0,0
 230212,"EVERGREEN Delves - POI Controller - Deactivate Blob 02",0,0,4,0,0,0
@@ -117800,6 +117964,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230219,,230218,1,0,115694,0,0
 230220,"EVERGREEN Delves - POI Controller - Deactivate Blob 06",0,0,4,0,0,0
 230221,,230220,1,0,115695,0,0
+230224,"Find all the Loa Figurines",0,0,4,0,0,4113
+230225,"Figurine 1",230224,1,0,115697,0,0
+230226,"Figurine 2",230224,1,0,115698,1,0
+230227,"Figurine 3",230224,1,0,115699,2,0
+230228,"Figurine 4",230224,1,0,115700,3,0
+230229,"Figurine 5",230224,1,0,115701,4,0
 230234,"Headball found",225275,8,0,114224,0,0
 230235,"12.1 Prey - Kill Targets",0,0,4,0,0,0
 230236,"Janoa the Fang",230235,0,0,115704,0,0
@@ -117819,16 +117989,38 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230275,"The Forum, the Coiled Isles",229975,0,0,115766,1,16
 230278,"The Wreck of Sethralis's Scales, the Coiled Isles",229975,0,0,115768,2,16
 230296,"Southern Island, the Coiled Isles",229975,0,0,115769,3,16
+230297,"12.1.5 Labyrinth - Chamber 1a - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230298,"Masks Cleansed",230297,3,0,115379,0,0
+230299,"12.1.5 Labyrinth - Chamber 2a - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230300,"Masks Cleansed",230299,3,0,115379,0,0
 230301,"Gate of the Eastern Fang, the Coiled Isles",229975,0,0,115770,4,16
 230302,"Tokka's Landing, the Coiled Isles",229975,0,0,115771,5,16
 230305,"The Whispering Marsh, the Coiled Isles",229975,0,0,115772,6,16
 230306,"The Wreck of Paku's Talon, the Coiled Isles",229975,0,0,115773,7,16
 230307,"The Serpent's Tail, the Coiled Isles",229975,0,0,115774,8,16
 230308,"Blistering Terrace, the Coiled Isles",229975,0,0,115775,9,16
+230322,"12.1.5 Labyrinth - Chamber 2c - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230323,"Masks Cleansed",230322,3,0,115379,0,0
 230324,"Gate of the Serpent's Eye, the Coiled Isles",229975,0,0,115776,10,16
+230326,"12.1.5 Labyrinth - Chamber 3a - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230327,"Masks Cleansed",230326,3,0,115379,0,0
+230328,"12.1.5 Labyrinth - Chamber 3b - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230329,"Masks Cleansed",230328,3,0,115379,0,0
+230330,"12.1.5 Labyrinth - Chamber 3c - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230331,"Masks Cleansed",230330,3,0,115379,0,0
+230332,"12.1.5 Labyrinth - Chamber 3d - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230333,"Masks Cleansed",230332,3,0,115379,0,0
+230334,"12.1.5 Labyrinth - Chamber 3e - Generic Scenario 7 (BAK)",0,0,4,0,0,0
+230335,"Masks Cleansed",230334,3,0,115379,0,0
 230336,"Complete a Prey WQ",0,3,5,0,0,4097
 230337,,230336,3,0,115778,0,0
 230339,,230338,2,0,115779,0,2048
+230340,"Voices investigated",0,0,4,0,0,0
+230341,"Voices investigated",230340,1,0,115780,0,0
+230342,"Found light 2c",0,0,4,0,0,0
+230343,"Found light",230342,1,0,115781,0,0
+230344,"Flames of Jan'alai lit",0,1,4,0,0,0
+230348,"Flames of Jan'alai lit",230344,4,0,115783,0,0
 230349,"The Call of the Void",223231,1,0,115785,5,16
 230350,"12.1 Delves - Seasonal Intro Questing - Delver's Starter Kit purchased from Naleidea",0,0,4,0,0,4096
 230351,,230350,1,0,115786,0,2
@@ -117837,6 +118029,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230354,,66104,0,0,115788,1,0
 230355,,66112,0,0,115789,1,2
 230356,,66114,0,0,115790,1,2
+230357,"Nesh'ikar defeated",0,0,4,0,0,0
+230358,"Nesh'ikar defeated",230357,1,0,115791,0,0
 230367,,229560,5,0,115796,2,1
 230368,,229567,5,0,115797,2,1
 230369,,229546,5,0,115798,2,1
@@ -118106,6 +118300,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230833,"Shrieking Tacklebox",230825,1,0,116092,7,0
 230834,"Spiritsurge Incense",230825,1,0,116093,8,0
 230835,"Summoning Salt",230825,1,0,116094,9,0
+230836,"Defeat Hexbound Defenders",0,0,4,0,0,0
+230837,"Defeat Hexbound Defenders",230836,6,0,116095,0,0
+230838,"12.1.5 - Kithix - Campaign - Achievement (AOC)",0,0,4,0,0,0
+230839,"Sins of the Past",230838,1,0,116096,0,16
+230840,"To the Faithful",230838,1,0,116097,1,16
+230844,"Rage Spectors defeated",0,0,4,0,0,0
+230845,"Rage Spectors defeated",230844,6,0,116102,0,0
+230846,"Defeat the King of Souls",0,0,4,0,0,0
+230847,"Defeat the King of Souls.",230846,1,0,116103,0,0
 230848,"Academic Antitoxin",220588,0,0,116104,3,16
 230849,"Basilisk Blitz",220576,0,0,116105,3,16
 230850,"Caustic Crush",220600,0,0,116106,3,16
@@ -118263,6 +118466,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231186,"Congealed Malice",231185,1,0,116325,0,0
 231187,Khu'tulak,231185,1,0,116326,1,0
 231188,Susarikk,231185,1,0,116327,2,0
+231195,"Hands dusted with tarsap",232478,1,0,116331,0,0
 231200,"Secret Souvenirs Found in Founder's Point",0,0,4,0,0,0
 231201,"Secret Souvenir 1",231200,0,0,116392,0,0
 231202,"Secret Souvenir 2",231200,0,0,116334,1,0
@@ -118332,6 +118536,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231266,,231264,2,0,62701,1,1
 231267,,231264,14,0,62704,2,1
 231268,,231264,30,0,62705,3,1
+231274,"Recover Stolen Goods",228516,5,9,0,1,17
 231279,"PvP Season 42 - Set Collection",0,0,4,0,0,2
 231280,"Collect any armor set from Midnight Season 2 (PvP Season 42).",231279,1,0,116405,0,2
 231281,"Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.",0,0,4,0,0,0
@@ -118368,6 +118573,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231348,,217047,0,0,116441,1,0
 231349,,211526,0,0,116442,1,0
 231350,,66460,7,0,116443,17,0
+231351,"Stop Ritual - Pass or Fall",0,1,8,0,0,0
+231352,"Stop Ritual",231351,0,4,0,0,0
+231353,"Stop the Ritual",231352,1,0,116444,0,0
+231355,"Ritual Successful",231351,0,4,0,1,0
+231356,"Ritual Successful",231355,1,0,116446,0,8194
 231357,"12.1 Ulatek - Achievement - Fishing - Fish all the Coiled Isle Fish",0,0,4,0,0,0
 231358,"Spotted Killifish",231357,1,0,116447,0,0
 231359,"Dirty Darter",231357,1,0,116448,1,0
@@ -118427,6 +118637,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231414,"Ula'tek Snakehead",231395,5,0,116496,7,0
 231415,"12.1 Ulatek - Achievement - World Quest - Ki'clak Snack Attack (ERW)(SRO)",0,0,4,0,0,1
 231416,"Snacks Fed",231415,5,0,116497,0,1
+231417,"Defeat Spirit of Retribution",0,0,4,0,0,0
+231418,"Defeat Spirit of Retribution",231417,1,0,116498,0,0
 231419,"Talk to Tokka With The Coiled Huntress Equipped",0,0,4,0,0,0
 231420,,231419,1,0,116499,0,0
 231421,"12.1 Ulatek - Fishing - Tokka's Meta",0,0,4,0,0,0
@@ -118434,6 +118646,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231423,,231421,0,0,116501,1,32
 231424,,231421,0,0,116502,2,32
 231425,,231421,0,0,116503,3,32
+231429,"Defeat Bone-Flayer Riv'iki",0,0,4,0,0,0
+231430,"Defeat Bone-Flayer Riv'iki",231429,1,0,116505,0,0
 231432,,231431,2,0,116508,0,2048
 231433,"12.1 Delves - DevouringHost01 - V04 - Shamans, Slime (Hufton)",0,0,4,0,0,0
 231434,"Shaman Slimecallers slain",231433,4,0,116514,0,32
@@ -118446,14 +118660,27 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231453,"Ula'tek defeated",231451,1,0,116523,1,0
 231462,"Flying Debris",227463,1,0,116528,24,0
 231463,"Flying Debris",227398,1,0,116529,11,0
+231464,"12.1.5 Labyrinth - Chamber 3b - Scenario D - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+231465,"Repel the Vilebranch",231464,100,9,0,0,32
+231466,,231465,20,0,113636,0,0
+231467,,231465,8,0,113637,1,0
+231468,,231465,4,0,113639,2,0
+231469,,231465,2,0,113638,3,0
+231470,"12.1.5 Labyrinth - Chamber 3b - Scenario E - Looter Bar Fill - TSH",0,0,4,0,0,1
+231471,"Looters cleared",231470,100,9,0,0,32
+231472,,231471,20,0,113636,0,0
+231473,,231471,8,0,113637,1,0
+231474,,231471,4,0,113639,2,0
+231475,,231471,2,0,113638,3,0
 231476,,222732,1,0,116532,8,0
 231477,,222732,0,0,116533,9,0
 231478,,219450,1,0,116534,9,0
+231479,"Ritual items fixed",0,0,4,0,0,0
+231480,"Ritual items fixed",231479,3,0,116869,0,0
 231481,"12.1 Ulatek - Achievement - Temple - Finish Talent Tree (ERW)",0,0,4,0,0,1
 231482,"Talents Unlocked",231481,20,0,116536,0,1
 231483,,231372,1,0,116537,8,32
 231484,,231372,1,0,116538,9,32
-231775,,231771,0,0,116717,3,0
 231485,"12.1 Achievement - Do Activities in The Coiled Isle (LQM)",0,0,4,0,0,0
 231486,,231485,0,0,116539,0,32
 231487,,231485,0,0,116541,1,32
@@ -118496,13 +118723,16 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231525,"12.0 Delves - TwilightsBlade03 - V4 - Boss Slain",0,0,4,0,0,0
 231526,"Replicating Venomborne slain",231525,0,0,60399,0,0
 231527,"12.0 Delves - TwilightsBlade03 - V4 - Eggs Popped and Pylons Cleaned",0,0,4,0,0,0
-231528,"Venom Clogged Ley Line cleansed",231527,7,0,116570,0,0
+231528,"Venom-Clogged Ley Line cleansed",231527,7,0,116570,0,0
 231529,"Pulsating Clutch destroyed",231527,45,0,116571,1,0
 231530,"Enter the Cursed Keepsake scenario",0,1,8,0,0,4096
 231534,,231533,1,0,116574,0,0
 231535,,231533,1,0,116575,1,0
 231536,,231533,1,0,116576,2,0
 231537,,231533,1,0,116577,3,0
+231538,"Ritual completed",0,1,8,0,0,0
+231539,"Ritual completed",231538,1,0,116578,0,0
+231540,"(Hidden) Shaman takes enough damage to lose concentration",231538,1,0,116579,1,2
 231541,,229101,0,0,116580,0,32
 231542,,229101,0,0,116581,1,32
 231543,,229101,0,0,116582,2,32
@@ -118535,7 +118765,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231571,,231570,1,0,116604,0,2
 231572,"Arenas or Battlegrounds won with PvP trinkets equipped",0,2,5,0,0,4096
 231573,,231572,2,0,116615,0,2
-231776,,231771,0,0,116718,4,0
 231574,"Achievement - Cutting Edge: Ula'tek",0,0,4,0,0,0
 231575,,231574,1,0,116605,0,2
 231576,"Achievement - Hall of Fame: Ula'tek",0,0,4,0,0,0
@@ -118563,6 +118792,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231614,,231608,0,0,116623,5,0
 231615,,231608,0,0,116624,6,0
 231616,,231608,0,0,116625,7,0
+231617,"Enraged Ancestral Shaman slain",0,0,4,0,0,0
+231618,"Enraged Ancestral Shaman slain",231617,1,0,116626,0,0
+231619,"Enraged Death Steward slain",0,0,4,0,0,0
+231620,"Enraged Death Steward slain",231619,1,0,116627,0,0
 231621,"Defeat the Twin Fangs after feeding Ithraz the following items in order during Ravenous Feast on Normal difficulty or higher.",0,0,4,0,0,0
 231622,"Crunchy Appetizer fed",231621,1,0,116628,0,0
 231623,"Sumptuous Soup fed",231621,1,0,116629,1,0
@@ -118590,12 +118823,30 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231663,,220000,0,0,116656,9,0
 231664,"Cursed Curios - Old Gods",0,60,4,0,0,2
 231665,Survive,231664,1,0,115490,0,2
+231673,"12.1.5 - Aqir Invasions - Achievement - Feat of Strength - Max Rep",0,0,4,0,0,0
+231674,,231673,5000,0,116663,0,0
 231676,"Arenas won with PvP trinkets equipped",0,2,5,0,0,4096
 231677,,231676,2,0,116665,0,2
 231685,"Arenas or Battlegrounds won",0,2,5,0,0,4096
 231686,,231685,2,0,116683,0,2
+231687,"Umbral Wardbreakers slain",0,0,4,0,0,0
+231688,"Umbral Wardbreakers slain",231687,4,0,116673,0,0
+231689,"12.1.5 - Aqir Invasions - Achievement - Feat of Strength - Complete All Scenarios",0,0,4,0,0,0
+231690,"Disrupt Aqir",231689,1,0,116674,0,0
+231691,"Aid Defenders!",231689,1,0,116675,1,0
+231692,"Aqir Nesting Grounds",231689,1,0,116676,2,0
+231693,"Whack the Aqir",231689,1,0,116677,3,0
+231694,"Aerial Assault",231689,1,0,116678,4,0
+231695,"Reinforce Defenses",231689,1,0,116679,5,0
+231696,"12.1.5 - Aqir Invasion - Achievement - Feat of Strength",0,2,4,0,0,0
+231697,,231696,1,0,116680,0,32
+231698,,231696,1,0,116681,1,32
 231701,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144
 231702,,231701,5,0,116682,0,0
+231703,"Flames re-lit",0,0,4,0,0,0
+231704,"Flames re-lit",231703,4,0,116684,0,0
+231705,"The Prisoner vanquished",0,0,4,0,0,0
+231706,"The Prisoner vanquished",231705,1,0,116685,0,0
 231711,"Arenas won after using crowd control",0,2,5,0,0,4096
 231712,,231711,2,0,116691,0,2
 231713,"Cast a crowd control spell",0,0,4,0,0,4096
@@ -118620,6 +118871,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231772,,231771,0,0,116714,0,0
 231773,,231771,0,0,116715,1,0
 231774,,231771,0,0,116716,2,0
+231775,,231771,0,0,116717,3,0
+231776,,231771,0,0,116718,4,0
 231777,,231771,0,0,116719,5,0
 231778,,231771,0,0,116720,6,0
 231779,,231771,0,0,116721,7,0
@@ -118672,6 +118925,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231883,,231882,1,0,116809,0,0
 231884,,221217,0,0,116810,4,0
 231885,,221217,0,0,116811,5,0
+231886,"12.1.5 Labyrinth - Chamber 1a - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+231887,"Cursed Energy Returned",231886,5,0,116812,0,0
+231890,"12.1.5 Labyrinth - Chamber 3e - Scenario D - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+231891,"Repel the Vilebranch",231890,100,9,0,0,32
+231892,,231891,20,0,113636,0,0
+231893,,231891,8,0,113637,1,0
+231894,,231891,4,0,113639,2,0
+231895,,231891,2,0,113638,3,0
 231912,"12.1 Raid - Ulatek - Honoring Da Spirits - Achievement - JRN",0,0,4,0,0,0
 231913,"Farmer Su'mekaya comforted",231912,1,0,116823,1,0
 231914,"Talon-Sworn Ra'ven comforted",231912,1,0,116824,0,0
@@ -118687,8 +118948,83 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231943,"Flying Debris",227463,1,0,116835,25,0
 231948,"Reversed the ritual performed on Slitherfang in the Altar of Fangs.",0,1,8,0,0,0
 231949,,231948,1,0,116838,0,2
+231954,"12.1.5 Labyrinth - Chamber 1a - Scenario F - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+231955,"Vilebranch repelled",231954,100,9,0,0,32
+231956,,231955,10,0,113636,0,0
+231957,,231955,6,0,113637,1,0
+231958,,231955,4,0,113639,2,0
+231959,,231955,2,0,113638,3,0
 231960,"Equip PvP trinkets",0,2,4,0,0,4096
 231961,,231960,1,0,116843,0,2
+231962,"12.1.5 Labyrinth - Chamber 2a - Scenario C - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+231963,"Vilebranch repelled",231962,100,9,0,0,32
+231964,,231963,10,0,113636,0,0
+231965,,231963,6,0,113637,1,0
+231966,,231963,4,0,113639,2,0
+231967,,231963,2,0,113638,3,0
+231968,"12.1.5 Labyrinth - Chamber 3a - Scenario D - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+231969,"Vilebranch repelled",231968,100,9,0,0,32
+231970,,231969,10,0,113636,0,0
+231971,,231969,6,0,113637,1,0
+231972,,231969,4,0,113639,2,0
+231973,,231969,2,0,113638,3,0
+231982,"12.1.5 Labyrinth - Chamber 3c - Scenario C - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+231983,"Vilebranch repelled",231982,100,9,0,0,32
+231984,,231983,10,0,113636,0,0
+231985,,231983,6,0,113637,1,0
+231986,,231983,4,0,113639,2,0
+231987,,231983,2,0,113638,3,0
+231988,"12.1.5 Labyrinth - Chamber 3d - Scenario E - Vilebranch Bar Fill - TSH",0,0,4,0,0,1
+231989,"Vilebranch repelled",231988,100,9,0,0,32
+231990,,231989,10,0,113636,0,0
+231991,,231989,6,0,113637,1,0
+231992,,231989,4,0,113639,2,0
+231993,,231989,2,0,113638,3,0
+231996,"12.1.5 Labyrinth - Chamber 1a - Scenario G - Looter Bar Fill - TSH",0,0,4,0,0,1
+231997,"Looters cleared",231996,100,9,0,0,32
+231998,,231997,20,0,113636,0,0
+231999,,231997,8,0,113637,1,0
+232000,,231997,4,0,113639,2,0
+232001,,231997,2,0,113638,3,0
+232002,"12.1.5 Labyrinth - Chamber 2a - Scenario D - Looter Bar Fill - TSH",0,0,4,0,0,1
+232003,"Looters cleared",232002,100,9,0,0,32
+232004,,232003,20,0,113636,0,0
+232005,,232003,8,0,113637,1,0
+232006,,232003,4,0,113639,2,0
+232007,,232003,2,0,113638,3,0
+232008,"12.1.5 Labyrinth - Chamber 3a - Scenario E - Looter Bar Fill - TSH",0,0,4,0,0,1
+232009,"Looters cleared",232008,100,9,0,0,32
+232010,,232009,20,0,113636,0,0
+232011,,232009,8,0,113637,1,0
+232012,,232009,4,0,113639,2,0
+232013,,232009,2,0,113638,3,0
+232014,"12.1.5 Labyrinth - Chamber 3c - Scenario D - Looter Bar Fill - TSH",0,0,4,0,0,1
+232015,"Looters cleared",232014,100,9,0,0,32
+232016,,232015,20,0,113636,0,0
+232017,,232015,8,0,113637,1,0
+232018,,232015,4,0,113639,2,0
+232019,,232015,2,0,113638,3,0
+232020,"12.1.5 Labyrinth - Chamber 3d - Scenario F - Looter Bar Fill - TSH",0,0,4,0,0,1
+232021,"Looters cleared",232020,100,9,0,0,32
+232022,,232021,20,0,113636,0,0
+232023,,232021,8,0,113637,1,0
+232024,,232021,4,0,113639,2,0
+232025,,232021,2,0,113638,3,0
+232026,"12.1.5 - Aqir Invasions - Achievement - Feat of Strength - Complete 10 Invasions",0,0,4,0,0,1
+232027,"Complete 10 Aqir Invasions",232026,10,0,116852,0,1
+232028,"12.1.5 Labyrinth - Chamber 3e - Scenario E - Looter Bar Fill - TSH",0,0,4,0,0,1
+232029,"Looters cleared",232028,100,9,0,0,32
+232030,,232029,20,0,113636,0,0
+232031,,232029,8,0,113637,1,0
+232032,,232029,4,0,113639,2,0
+232033,,232029,2,0,113638,3,0
+232034,,231696,1,0,116853,2,32
+232035,"12.1.5 Labyrinth - Chamber 2b - Scenario D - Looter Bar Fill - TSH",0,0,4,0,0,1
+232036,"Looters cleared",232035,100,9,0,0,32
+232037,,232036,20,0,113636,0,0
+232038,,232036,8,0,113637,1,0
+232039,,232036,4,0,113639,2,0
+232040,,232036,2,0,113638,3,0
 232042,,231685,2,0,116856,1,2
 232043,,231572,2,0,116855,1,0
 232044,,231724,2,0,116857,1,0
@@ -118696,8 +119032,28 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232050,,222704,0,0,116859,9,0
 232051,,222704,0,0,116860,10,0
 232052,,222704,0,0,116861,11,0
+232059,"12.1.5 Labyrinth - Chamber 2a - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232060,"Cursed Energy Returned",232059,5,0,116812,0,0
+232063,"12.1.5 Labyrinth - Chamber 2b - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232064,"Cursed Energy Returned",232063,5,0,116812,0,0
+232065,"12.1.5 Labyrinth - Chamber 2c - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232066,"Cursed Energy Returned",232065,5,0,116812,0,0
+232067,"12.1.5 Labyrinth - Chamber 3a - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232068,"Cursed Energy Returned",232067,5,0,116812,0,0
+232069,"12.1.5 Labyrinth - Chamber 3b - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232070,"Cursed Energy Returned",232069,5,0,116812,0,0
+232071,"12.1.5 Labyrinth - Chamber 3c - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232072,"Cursed Energy Returned",232071,5,0,116812,0,0
+232073,"12.1.5 Labyrinth - Chamber 3d - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232074,"Cursed Energy Returned",232073,5,0,116812,0,0
+232075,"12.1.5 Labyrinth - Chamber 3e - Generic Scenario 10 (BAK)",0,0,4,0,0,0
+232076,"Cursed Energy Returned",232075,5,0,116812,0,0
 232081,"Heroic: Nymrissa Wavecaller",0,0,4,0,0,0
 232082,,232081,1,0,116426,0,2
+232083,"Warlord Kaz'kara spoken with",0,0,4,0,0,0
+232084,"Warlord Kaz'kara spoken with",232083,1,0,116870,0,0
+232085,"Find and Tame Daakajin",0,0,4,0,0,0
+232086,"Find and Tame Daakajin",232085,1,0,116871,0,0
 232087,"Mythic: Nymrissa Wavecaller",0,0,4,0,0,0
 232088,,232087,1,0,116427,0,2
 232089,"Nymrissa Wavecaller",0,0,4,0,0,0
@@ -118722,25 +119078,91 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232154,"Logged in during BlizzCon 2026",0,0,4,0,0,8192
 232155,"Logged in during WoW's 21st Anniversary.",232154,1,0,116918,0,2
 232166,,224234,6,0,116924,9,0
+232167,"Daakajin Tamed",0,0,4,0,0,0
+232168,"Daakajin Tamed",232167,1,0,116871,0,0
 232169,"Foes slain while in a party",0,30,5,0,0,4096
 232170,,232169,1,0,116925,0,0
+232171,"Warlord Kaz'kara spoken with 1A - H",0,0,4,0,0,0
+232172,"Warlord Kaz'kara spoken with",232171,1,0,116870,0,0
+232173,"Daakajin Tamed 1A - H",0,0,4,0,0,0
+232174,"Daakajin Tamed",232173,1,0,116871,0,0
 232175,,222732,1,0,116926,10,0
+232176,"Warlord Kaz'kara spoken with 2A - F",0,0,4,0,0,0
+232177,"Warlord Kaz'kara spoken with",232176,1,0,116870,0,0
+232178,"Daakajin Tamed 2A - F",0,0,4,0,0,0
+232179,"Daakajin Tamed",232178,1,0,116871,0,0
 232183,,232182,0,0,116928,0,0
 232185,,232184,0,0,116928,0,0
+232186,"Warlord Kaz'kara spoken with 2B - F",0,0,4,0,0,0
+232187,"Warlord Kaz'kara spoken with",232186,1,0,116870,0,0
+232188,"Daakajin Tamed 2B - F",0,0,4,0,0,0
+232189,"Daakajin Tamed",232188,1,0,116871,0,0
+232190,"Warlord Kaz'kara spoken with 2C - F",0,0,4,0,0,0
+232191,"Warlord Kaz'kara spoken with",232190,1,0,116870,0,0
+232192,"Daakajin Tamed 2C - F",0,0,4,0,0,0
+232193,"Daakajin Tamed",232192,1,0,116871,0,0
+232194,"Warlord Kaz'kara spoken with 3A - G",0,0,4,0,0,0
+232195,"Warlord Kaz'kara spoken with",232194,1,0,116870,0,0
+232196,"Daakajin Tamed 3A - G",0,0,4,0,0,0
+232197,"Daakajin Tamed",232196,1,0,116871,0,0
+232198,"Warlord Kaz'kara spoken with 3B - H",0,0,4,0,0,0
+232199,"Warlord Kaz'kara spoken with",232198,1,0,116870,0,0
+232200,"Daakajin Tamed 3B - H",0,0,4,0,0,0
+232201,"Daakajin Tamed",232200,1,0,116871,0,0
 232202,"Guild Achievement - Nymrissa Wavecaller",0,0,4,0,0,0
 232203,,232202,1,0,116929,0,2
 232204,"Guild Achievement - Nymrissa Wavecaller (Heroic)",0,0,4,0,0,0
 232205,,232204,1,0,116931,0,2
 232206,"Guild Achievement - Nymrissa Wavecaller (Mythic)",0,0,4,0,0,0
 232207,,232206,1,0,116930,0,2
-232208,"Amubushing Scouts defeated",0,2,5,0,0,8193
+232208,"Ambushing Scouts defeated",0,2,5,0,0,8193
 232209,,232208,0,0,116933,0,0
-232210,"Amubushing Scouts defeated",0,10,5,0,0,8193
+232210,"Ambushing Scouts defeated",0,10,5,0,0,8193
 232211,,232210,0,0,116933,0,0
-232216,"Amubushing Scouts defeated",0,20,5,0,0,8193
+232212,"Warlord Kaz'kara spoken with 3D - H",0,0,4,0,0,0
+232213,"Warlord Kaz'kara spoken with",232212,1,0,116870,0,0
+232214,"Daakajin Tamed 3D - H",0,0,4,0,0,0
+232215,"Daakajin Tamed",232214,1,0,116871,0,0
+232216,"Ambushing Scouts defeated",0,20,5,0,0,8193
 232217,,232216,0,0,116933,0,0
+232218,"Warlord Kaz'kara spoken with 3E - G",0,0,4,0,0,0
+232219,"Warlord Kaz'kara spoken with",232218,1,0,116870,0,0
+232220,"Daakajin Tamed 3E - G",0,0,4,0,0,0
+232221,"Daakajin Tamed",232220,1,0,116871,0,0
 232222,"Lair Boss defeated",0,1,5,0,0,8193
 232223,,232222,0,0,116934,0,0
+232235,"Defeat Hexbound Defenders 1a-I",0,0,4,0,0,0
+232236,"Defeat Hexbound Defenders",232235,6,0,116095,0,0
+232237,"Defeat the King of Souls 1a-I",0,0,4,0,0,0
+232238,"Defeat the King of Souls.",232237,1,0,116103,0,0
+232239,"Defeat Hexbound Defenders 2a-G",0,0,4,0,0,0
+232240,"Defeat Hexbound Defenders",232239,6,0,116095,0,0
+232241,"Defeat the King of Souls 2a-G",0,0,4,0,0,0
+232242,"Defeat the King of Souls.",232241,1,0,116103,0,0
+232243,"Defeat Hexbound Defenders 2b-G",0,0,4,0,0,0
+232244,"Defeat Hexbound Defenders",232243,6,0,116095,0,0
+232245,"Defeat the King of Souls 2b-G",0,0,4,0,0,0
+232246,"Defeat the King of Souls.",232245,1,0,116103,0,0
+232247,"Defeat Hexbound Defenders 2c-G",0,0,4,0,0,0
+232248,"Defeat Hexbound Defenders",232247,6,0,116095,0,0
+232249,"Defeat the King of Souls 2c-G",0,0,4,0,0,0
+232250,"Defeat the King of Souls.",232249,1,0,116103,0,0
+232251,"Defeat Hexbound Defenders 3b-I",0,0,4,0,0,0
+232252,"Defeat Hexbound Defenders",232251,6,0,116095,0,0
+232253,"Defeat the King of Souls 3b-I",0,0,4,0,0,0
+232254,"Defeat the King of Souls.",232253,1,0,116103,0,0
+232255,"Defeat Hexbound Defenders 3c-G",0,0,4,0,0,0
+232256,"Defeat Hexbound Defenders",232255,6,0,116095,0,0
+232257,"Defeat the King of Souls 3c-G",0,0,4,0,0,0
+232258,"Defeat the King of Souls.",232257,1,0,116103,0,0
+232259,"Defeat Hexbound Defenders 3d-I",0,0,4,0,0,0
+232260,"Defeat Hexbound Defenders",232259,6,0,116095,0,0
+232261,"Defeat the King of Souls 3d-I",0,0,4,0,0,0
+232262,"Defeat the King of Souls.",232261,1,0,116103,0,0
+232263,"Defeat Hexbound Defenders 3e-H",0,0,4,0,0,0
+232264,"Defeat Hexbound Defenders",232263,6,0,116095,0,0
+232265,"Defeat the King of Souls 3e-H",0,0,4,0,0,0
+232266,"Defeat the King of Souls.",232265,1,0,116103,0,0
 232275,,66554,7,0,116947,8,0
 232276,,66554,16,0,116948,9,0
 232277,,66554,7,0,116949,10,0
@@ -118754,12 +119176,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232285,,66554,5,0,116957,18,0
 232286,,66554,25,0,116958,19,0
 232287,,66554,5,0,116959,20,0
+232298,"Burden carried",0,0,4,0,0,0
+232303,"Burden carried",232298,1,0,115319,0,0
+232308,"Burden carried",232304,1,0,115320,0,0
+232312,"Burden carried",232309,1,0,115321,1,0
+232316,"Burden carried",232315,1,0,115322,0,0
+232318,"Deliver the burden",232317,1,0,115323,0,0
 232319,"Weapon Rack used",0,1,5,0,0,8193
 232320,,232319,0,0,116962,0,0
 232321,"12.1 Upgrade System - Tutorial - Silvermoon - Q02 - Adventurer Upgrades 2 (RRN)",0,0,4,0,0,4096
 232322,,232321,2,0,116963,0,0
 232323,"Ki'clak fed",0,1,5,0,0,8193
 232324,,232323,0,0,116964,0,0
+232330,"Burden delivered",232478,1,0,115323,2,0
 232331,QA,228538,1,0,116965,5,2
 232332,Dev,228538,1,0,116966,6,2
 232335,"12.1 Raid - Ulatek - Zul'jan - Achievement - MSN",0,0,4,0,0,0
@@ -118779,16 +119208,129 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232351,,232350,0,0,116979,0,0
 232352,"Ancient Foes defeated",0,5,5,0,0,8193
 232353,,232352,0,0,116979,0,0
-232354,"Cursed Surge defeated",0,1,5,0,0,8193
+232354,"Curse Surge defeated",0,1,5,0,0,8193
 232355,,232354,0,0,116980,0,0
-232356,"Cursed Surges defeated",0,5,5,0,0,8193
+232356,"Curse Surges defeated",0,5,5,0,0,8193
 232357,,232356,0,0,116980,0,0
+232359,"Achievement - Keystone Myth: Midnight Dungeons Season 2",0,0,4,0,0,0
+232360,"Rating Requirement",232359,3400,0,116981,0,2
+232361,,232359,0,1,116984,1,0
+232363,,232362,1,0,116983,0,0
+232364,"12.1.5 Labyrinth - Chamber 1a - Scenario J - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232365,"Spirits quelled",232364,100,9,0,0,32
+232366,,232365,20,0,113636,0,0
+232367,,232365,8,0,113637,1,0
+232368,,232365,4,0,113639,2,0
+232369,,232365,2,0,113638,3,0
+232370,"12.1.5 Labyrinth - Chamber 2a - Scenario H - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232371,"Spirits quelled",232370,100,9,0,0,32
+232372,,232371,20,0,113636,0,0
+232373,,232371,8,0,113637,1,0
+232374,,232371,4,0,113639,2,0
+232375,,232371,2,0,113638,3,0
+232376,"12.1.5 Labyrinth - Chamber 2b - Scenario H - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232377,"Spirits quelled",232376,100,9,0,0,32
+232378,,232377,20,0,113636,0,0
+232379,,232377,8,0,113637,1,0
+232380,,232377,4,0,113639,2,0
+232381,,232377,2,0,113638,3,0
+232382,"12.1.5 Labyrinth - Chamber 2c - Scenario H - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232383,"Spirits quelled",232382,100,9,0,0,32
+232384,,232383,20,0,113636,0,0
+232385,,232383,8,0,113637,1,0
+232386,,232383,4,0,113639,2,0
+232387,,232383,2,0,113638,3,0
+232388,"12.1.5 Labyrinth - Chamber 3a - Scenario H - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232389,"Spirits quelled",232388,100,9,0,0,32
+232390,,232389,20,0,113636,0,0
+232391,,232389,8,0,113637,1,0
+232392,,232389,4,0,113639,2,0
+232393,,232389,2,0,113638,3,0
+232394,"12.1.5 Labyrinth - Chamber 3b - Scenario J - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232395,"Spirits quelled",232394,100,9,0,0,32
+232396,,232395,20,0,113636,0,0
+232397,,232395,8,0,113637,1,0
+232398,,232395,4,0,113639,2,0
+232399,,232395,2,0,113638,3,0
+232400,"12.1.5 Labyrinth - Chamber 3c - Scenario H - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232401,"Spirits quelled",232400,100,9,0,0,32
+232402,,232401,20,0,113636,0,0
+232403,,232401,8,0,113637,1,0
+232404,,232401,4,0,113639,2,0
+232405,,232401,2,0,113638,3,0
+232406,"12.1.5 Labyrinth - Chamber 3d - Scenario  J - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232407,"Spirits quelled",232406,100,9,0,0,32
+232408,,232407,20,0,113636,0,0
+232409,,232407,8,0,113637,1,0
+232410,,232407,4,0,113639,2,0
+232411,,232407,2,0,113638,3,0
+232412,"12.1.5 Labyrinth - Chamber 3e - Scenario  I - Spirit Bar Fill - TSH",0,0,4,0,0,1
+232413,"Spirits quelled",232412,100,9,0,0,32
+232414,,232413,20,0,113636,0,0
+232415,,232413,8,0,113637,1,0
+232416,,232413,4,0,113639,2,0
+232417,,232413,2,0,113638,3,0
+232418,"12.1.5 Labyrinth - Chamber 1a - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232419,"Collect Stolen Artifacts",232418,10,0,113537,0,0
+232420,"12.1.5 Labyrinth - Chamber 1a - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232421,"Kill Drill Sergeant",232420,1,0,114817,0,0
+232422,"12.1.5 Labyrinth - Chamber 2a - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232423,"Collect Stolen Artifacts",232422,10,0,113537,0,0
+232424,"12.1.5 Labyrinth - Chamber 2a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232425,"Kill Sha'Kuro",232424,1,0,113490,0,0
+232426,"12.1.5 Labyrinth - Chamber 2b - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232427,"Collect Stolen Artifacts",232426,10,0,113537,0,0
+232428,"12.1.5 Labyrinth - Chamber 2b - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232429,"Kill Drill Sergeant",232428,1,0,114817,0,0
+232430,"12.1.5 Labyrinth - Chamber 2c - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232431,"Collect Stolen Artifacts",232430,10,0,113537,0,0
+232432,"12.1.5 Labyrinth - Chamber 2c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232433,"Treasure Hunter Taltrois slain",232432,1,0,117461,0,0
+232434,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232435,"Collect Stolen Artifacts",232434,10,0,113537,0,0
+232436,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232437,"Kill the Sullied Revenant",232436,1,0,117044,0,0
+232438,"12.1.5 Labyrinth - Chamber 3c - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232439,"Collect Stolen Artifacts",232438,10,0,113537,0,0
+232440,"12.1.5 Labyrinth - Chamber 3c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232441,"Kill Drill Sergeant",232440,1,0,114817,0,0
+232442,"12.1.5 Labyrinth - Chamber 3d - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232443,"Collect Stolen Artifacts",232442,10,0,113537,0,0
+232444,"12.1.5 Labyrinth - Chamber 3d - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232445,"Treasure Hunter Taltrois slain",232444,1,0,117461,0,0
+232446,"12.1.5 Labyrinth - Chamber 3e - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232447,"Collect Stolen Artifacts",232446,10,0,113537,0,0
+232448,"12.1.5 Labyrinth - Chamber 3e - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
+232449,"Kill Jun'ala",232448,1,0,113799,0,0
 232450,,58604,1,0,116985,73,0
 232451,,58604,1,0,116986,74,0
 232452,"Kill Elites",225794,1,0,116987,6,0
+232471,Kith'ix,0,0,4,0,0,0
+232472,Kith'ix,232471,1,0,116992,0,2
+232473,"Kith'ix (Heroic)",0,0,4,0,0,0
+232474,Kith'ix,232473,1,0,116993,0,2
+232475,"Kith'ix (Mythic)",0,0,4,0,0,0
+232476,Kith'ix,232475,1,0,116994,0,2
 232477,"Dungeons Completed in Midnight",212208,0,0,116995,8,0
+232478,"Burden carried",229713,0,4,0,1,2
+232479,"Burden carried",229713,1,8,0,0,8194
+232480,"Unnamed Branch 2",232479,0,4,0,0,8194
+232481,"Hands dusted with tarsap",232480,1,0,116331,0,0
+232482,"Burden delivered",232480,1,0,115323,1,0
+232483,"Trial gates cleared",232479,5,0,115318,1,0
+232484,"Gained Turkey Triumph",0,0,4,0,0,1
+232485,,232484,1,0,116999,0,2
 232492,,227151,1,0,117000,2,0
 232506,"Replicating Venomborne defeated",232505,0,0,60399,0,32
+232519,"Anniversary Events performed",0,1,4,0,0,1
+232520,"Scarab Gong rang",232519,1,0,70307,0,1
+232521,"Replica weapon used",232519,1,0,70396,1,0
+232522,"Slid on ice",232519,1,0,70386,2,0
+232523,"Ride balloon",232519,1,0,70397,3,0
+232553,"Vessel found",0,0,4,0,0,0
+232554,"Vessel found",232553,1,0,117035,0,0
+232555,"True vessle found",0,0,4,0,0,0
+232556,"True vessle found",232555,1,0,117036,0,0
 232593,"Win in Training Grounds",232592,10,0,117046,0,1
 232594,"Win 25 matches in Training Grounds",0,0,4,0,0,1
 232595,"Win in Training Grounds",232594,25,0,117046,0,1
@@ -118819,15 +119361,412 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232622,,232607,0,0,117067,14,0
 232623,,232607,0,0,117068,15,0
 232656,,219113,1,0,117078,1,0
+232661,"[DND] Earn Achievement ""A Frightening Friend""",0,0,4,0,0,0
+232662,,232661,0,0,117081,0,0
+232685,"12.1.5 Labyrinth - Chamber 1a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232686,"Grukk slain",232685,1,0,117464,0,0
+232687,"12.1.5 Labyrinth - Chamber 2a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232688,"Kill the Undead Trollbunal",232687,1,0,117099,0,0
+232689,"12.1.5 Labyrinth - Chamber 2b - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232690,"Grukk slain",232689,1,0,117464,0,0
+232691,"12.1.5 Labyrinth - Chamber 2c - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232692,"Grukk slain",232691,1,0,117464,0,0
+232693,"12.1.5 Labyrinth - Chamber 3a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232694,"Grukk slain",232693,1,0,117464,0,0
+232695,"12.1.5 Labyrinth - Chamber 3b - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232696,"Kill the Undead Trollbunal",232695,1,0,117099,0,0
+232697,"12.1.5 Labyrinth - Chamber 3c - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232698,"Kill the Undead Trollbunal",232697,1,0,117099,0,0
+232699,"12.1.5 Labyrinth - Chamber 3d - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232700,"Grukk slain",232699,1,0,117464,0,0
+232701,"12.1.5 Labyrinth - Chamber 3e - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
+232702,"Kill the Undead Trollbunal",232701,1,0,117099,0,0
 232752,,224224,35,0,115538,21,0
 232753,,66460,30,0,117124,32,0
+232894,"Flames of Jan'alai lit 1a",0,1,4,0,0,0
+232895,"Flames of Jan'alai lit",232894,4,0,115783,0,0
+232896,"Rage Spectors defeated 1a",0,0,4,0,0,0
+232897,"Rage Spectors defeated",232896,6,0,116102,0,0
+232898,"Found light 1a",0,0,4,0,0,0
+232899,"Found light",232898,1,0,115781,0,0
+232900,"Voices investigated 1a",0,0,4,0,0,0
+232901,"Voices investigated",232900,1,0,115780,0,0
+232909,"12.1.5 Labyrinth - Chamber 4 - Approach Heart (BAK)",0,0,4,0,0,0
+232910,"Heart of the Labyrinth approached",232909,1,0,117149,0,0
+232911,"12.1.5 Labyrinth - Chamber 4 - Kill Den'Zara (BAK)",0,0,4,0,0,0
+232912,"Den'Zara slain",232911,1,0,117150,0,0
+232921,"Logged in during WoW's 22nd Anniversary.",0,0,4,0,0,0
+232922,"Logged in during WoW's 22nd Anniversary.",232921,1,0,117155,0,2
+232923,"Voices investigated 2a",0,0,4,0,0,0
+232924,"Voices investigated",232923,1,0,115780,0,0
+232925,"Found light 2a",0,0,4,0,0,0
+232926,"Found light",232925,1,0,115781,0,0
+232927,"Flames of Jan'alai lit 2a",0,1,4,0,0,0
+232928,"Flames of Jan'alai lit",232927,4,0,115783,0,0
+232929,"Rage Spectors defeated 2a",0,0,4,0,0,0
+232930,"Rage Spectors defeated",232929,6,0,116102,0,0
+232931,"Defeat Kindo'Jan in the Labyrinth on Tier 11 without any other players in your party,  before the end of Midnight Season 2.",0,0,4,0,0,0
+232932,,232931,1,0,117156,0,2
+232935,"12.1.5 Labyrinth - Chamber 1a - Scenario F - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232936,"Sullied Revenant Slain",232935,1,0,117896,0,0
+232937,"Ritual items fixed 3a",0,0,4,0,0,0
+232938,"Ritual items fixed",232937,3,0,116869,0,0
+232939,"Ritual completed 3a",0,1,8,0,0,0
+232940,"Ritual completed",232939,1,0,116578,0,0
+232941,"(Hidden) Shaman takes enough damage to lose concentration",232939,1,0,116579,1,2
+232942,"Enraged Death Steward slain 3a",0,0,4,0,0,0
+232943,"Enraged Death Steward slain",232942,1,0,116627,0,0
+232944,"12.1.5 Labyrinth - Chamber 2a - Scenario C - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232945,"Sullied Revenant Slain",232944,1,0,117896,0,0
+232946,"Enraged Ancestral Shaman slain 3a",0,0,4,0,0,0
+232947,"Enraged Ancestral Shaman slain",232946,1,0,116626,0,0
+232948,"12.1.5 Labyrinth - Chamber 2b - Scenario A - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232949,"Sullied Revenant Slain",232948,1,0,117896,0,0
+232950,"12.1.5 Labyrinth - Chamber 2c - Scenario A - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232951,"Sullied Revenant Slain",232950,1,0,117896,0,0
+232952,"12.1.5 Labyrinth - Chamber 3a - Scenario D - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232953,"Sullied Revenant Slain",232952,1,0,117896,0,0
+232954,"12.1.5 Labyrinth - Chamber 3b - Scenario D - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232955,"Sullied Revenant Slain",232954,1,0,117896,0,0
+232956,"12.1.5 Labyrinth - Chamber 3c - Scenario C - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232957,"Sullied Revenant Slain",232956,1,0,117896,0,0
+232958,"12.1.5 Labyrinth - Chamber 3d - Scenario E - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232959,"Sullied Revenant Slain",232958,1,0,117896,0,0
+232960,"12.1.5 Labyrinth - Chamber 3e - Scenario D - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
+232961,"Sullied Revenant Slain",232960,1,0,117896,0,0
+232962,"Ritual items fixed 3b",0,0,4,0,0,0
+232963,"Ritual items fixed",232962,3,0,116869,0,0
+232964,"Ritual completed 3b",0,1,8,0,0,0
+232965,"Ritual completed",232964,1,0,116578,0,0
+232966,"(Hidden) Shaman takes enough damage to lose concentration",232964,1,0,116579,1,2
+232967,"Enraged Death Steward slain 3b",0,0,4,0,0,0
+232968,"Enraged Death Steward slain",232967,1,0,116627,0,0
+232969,"Enraged Ancestral Shaman slain 3b",0,0,4,0,0,0
+232970,"Enraged Ancestral Shaman slain",232969,1,0,116626,0,0
+232973,"Investigate the Ancient Harvest Bundle 2b",0,0,4,0,0,0
+232974,"Investigate the Ancient Harvest Bundle",232973,0,0,114814,0,0
+232975,"Looters Defeated | Items Recovered 2b",0,0,4,0,0,0
+232976,"Hoarding Looters Defeated",232975,10,0,114564,0,0
+232977,"Recover Stolen Goods",232975,5,9,0,1,17
+232978,"Old Hekra's Honeypot Recovered",232977,1,0,114566,0,0
+232979,"Rujak's Very Large Onion Recovered",232977,1,0,114568,1,0
+232980,"Jindara's Favorite Mushroom Recovered",232977,1,0,114569,2,0
+232981,"Zan'ji's Wheel of Cheese Recovered",232977,1,0,114567,3,0
+232982,"Kazrak's Grain Sack Recovered",232977,1,0,114565,4,0
+232983,"Defeat the Looter Excavator2b",0,0,4,0,0,0
+232984,"Defeat the Looter Excavator",232983,1,0,117225,0,0
+232985,"Run through and collect as much as you can before time runs out 2b",0,0,4,0,0,0
+232986,"Run through and collect as much as you can before time runs out",232985,1,0,114903,0,0
+232998,"Defeat Kindo'jan within his Labyrinth.",0,0,4,0,0,0
+232999,,232998,0,0,117162,0,2
+233000,"Player Has Opened all Ancient Chests in Kindo'jan's Labyrinth.",0,38,8,0,0,1
+233001,,233000,1,0,117163,0,2
+233002,,233000,1,0,117164,1,2
+233003,,233000,1,0,117165,2,2
+233004,,233000,1,0,117166,3,2
+233005,,233000,1,0,117167,4,2
+233006,,233000,1,0,117168,5,2
+233007,,233000,1,0,117169,6,2
+233008,,233000,1,0,117170,7,2
+233009,,233000,1,0,117171,8,2
+233010,,233000,1,0,117172,9,2
+233011,,233000,1,0,117173,10,2
+233012,,233000,1,0,117174,11,2
+233013,,233000,1,0,117175,12,2
+233014,,233000,1,0,117176,13,2
+233015,,233000,1,0,117177,14,2
+233016,,233000,1,0,117178,15,2
+233017,,233000,1,0,117179,16,2
+233018,,233000,1,0,117180,17,2
+233019,,233000,1,0,117181,18,2
+233020,,233000,1,0,117182,19,2
+233021,,233000,1,0,117183,20,2
+233022,,233000,1,0,117184,21,2
+233023,,233000,1,0,117185,22,2
+233024,,233000,1,0,117186,23,2
+233025,,233000,1,0,117187,24,2
+233026,,233000,1,0,117188,25,2
+233027,,233000,1,0,117189,26,2
+233028,,233000,1,0,117190,27,2
+233029,,233000,1,0,117191,28,2
+233030,,233000,1,0,117192,29,2
+233031,,233000,1,0,117193,30,2
+233032,,233000,1,0,117194,31,2
+233033,,233000,1,0,117195,32,2
+233034,,233000,1,0,117196,33,2
+233035,,233000,1,0,117197,34,2
+233036,,233000,1,0,117198,35,2
+233037,,233000,1,0,117199,36,2
+233038,,233000,1,0,117200,37,2
+233039,"12.1.5 Labyrinth - Chamber 1a - Scenario G - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233040,"Drill Sergeant slain",233039,1,0,117895,0,0
+233045,"12.1.5 Labyrinth - Chamber 2b - Scenario D - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233046,"Drill Sergeant slain",233045,1,0,117895,0,0
+233047,"12.1.5 Labyrinth - Chamber 2a - Scenario D - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233048,"Drill Sergeant slain",233047,1,0,117895,0,0
+233049,"Open the locked door hidden within Kindo'jan's Labyrinth.",0,1,8,0,0,0
+233050,,233049,1,0,117202,0,2
+233051,,233049,1,0,117203,1,2
+233052,,233049,1,0,117204,2,2
+233053,,233049,1,0,117205,3,2
+233054,,233049,1,0,117206,4,2
+233055,"Open 20 locked doors hidden within Kindo'jan's Labyrinth.",0,20,8,0,0,1
+233056,,233055,1,0,117203,0,2
+233057,,233055,1,0,117204,1,2
+233058,,233055,1,0,117202,2,2
+233059,,233055,1,0,117205,3,2
+233060,,233055,1,0,117206,4,2
+233061,"12.1.5 Labyrinth - Chamber 2c - Scenario B - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233062,"Drill Sergeant slain",233061,1,0,117895,0,0
+233063,"12.1.5 Labyrinth - Chamber 3a - Scenario E - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233064,"Drill Sergeant slain",233063,1,0,117895,0,0
+233065,"12.1.5 Labyrinth - Chamber 3b - Scenario E - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233066,"Drill Sergeant slain",233065,1,0,117895,0,0
+233067,"12.1.5 Labyrinth - Chamber 3c - Scenario D - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233068,"Drill Sergeant slain",233067,1,0,117895,0,0
+233069,"12.1.5 Labyrinth - Chamber 3d - Scenario F - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233070,"Drill Sergeant slain",233069,1,0,117895,0,0
+233071,"12.1.5 Labyrinth - Chamber 3e - Scenario E - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233072,"Drill Sergeant slain",233071,1,0,117895,0,0
+233073,"Gather all 3 Elemental Hexmasks while within Kindo'jan's Labyrinth.",0,1,8,0,0,0
+233074,,233073,0,0,117207,0,2
+233075,,233073,0,0,117208,1,2
+233076,,233073,0,0,117209,2,2
+233077,"Complete 9 Chambers within a single run of Kindo'jan's Labyrinth.",0,0,4,0,0,0
+233078,,233077,0,0,117210,0,2
+233079,"Complete 9 Chambers within a single run of Kindo'jan's Labyrinth on Tier 11.",0,0,4,0,0,0
+233080,,233079,0,0,117211,0,2
+233081,"Complete a total of 100 Chambers within Kindo'jan's Labyrinth.",0,100,8,0,0,1
+233082,,233081,1,0,117212,0,0
+233083,"Loot 10 Mislaid Oddities within Kindo'jan's Labyrinth.",0,10,4,0,0,0
+233084,,233083,10,0,117213,0,0
+233090,"Loot 50 Mislaid Oddities within Kindo'jan's Labyrinth.",0,50,4,0,0,0
+233091,,233090,50,0,117213,0,0
+233092,"Enter Kindo'jan's Labyrinth for the first time.",0,0,4,0,0,0
+233093,,233092,0,0,117215,0,2
+233094,"Total Kindo'jan's Labyrinth Chambers completed",0,0,4,0,0,0
+233095,,233094,0,0,117212,0,0
+233096,"Total Kindo'jan Kills",0,0,4,0,0,0
+233097,,233096,0,0,117162,0,0
+233098,"12.1.5 Labyrinth - Chamber 1a - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233099,"Undead Trollbunal slain",233098,1,0,117235,0,0
+233100,"12.1.5 Labyrinth - Chamber 2a - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233101,"Undead Trollbunal slain",233100,1,0,117235,0,0
+233102,"12.1.5 Labyrinth - Chamber 2b - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233103,"Undead Trollbunal slain",233102,1,0,117235,0,0
+233104,"12.1.5 Labyrinth - Chamber 2c - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233105,"Undead Trollbunal slain",233104,1,0,117235,0,0
+233106,"12.1.5 Labyrinth - Chamber 3a - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233107,"Undead Trollbunal slain",233106,1,0,117235,0,0
+233108,"12.1.5 Labyrinth - Chamber 3b - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233109,"Undead Trollbunal slain",233108,1,0,117235,0,0
+233110,"12.1.5 Labyrinth - Chamber 3c - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233111,"Undead Trollbunal slain",233110,1,0,117235,0,0
+233112,"12.1.5 Labyrinth - Chamber 3d - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233113,"Undead Trollbunal slain",233112,1,0,117235,0,0
+233114,"12.1.5 Labyrinth - Chamber 3e - Scenario I - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
+233115,"Undead Trollbunal slain",233114,1,0,117235,0,0
+233135,"Venom Tornado",230454,1,8,0,6,8192
+233136,,233135,4,0,117226,0,0
+233137,"Dusty Totem",230454,1,8,0,7,8192
+233138,,233137,4,0,117227,0,0
+233139,"Venom Tornado",230467,1,8,0,6,8192
+233140,,233139,0,0,117226,0,0
+233141,"Dusty Totem",230467,1,8,0,7,8192
+233142,,233141,0,0,117227,0,0
+233147,"Investigate the Ancient Harvest Bundle 3b",0,0,4,0,0,0
+233148,"Investigate the Ancient Harvest Bundle",233147,0,0,114814,0,0
+233149,"Looters Defeated | Items Recovered 3b",0,0,4,0,0,0
+233150,"Hoarding Looters Defeated",233149,10,0,114564,0,0
+233151,"Recover Stolen Goods",233149,5,9,0,1,17
+233152,"Old Hekra's Honeypot Recovered",233151,1,0,114566,0,0
+233153,"Rujak's Very Large Onion Recovered",233151,1,0,114568,1,0
+233154,"Jindara's Favorite Mushroom Recovered",233151,1,0,114569,2,0
+233155,"Zan'ji's Wheel of Cheese Recovered",233151,1,0,114567,3,0
+233156,"Kazrak's Grain Sack Recovered",233151,1,0,114565,4,0
+233157,"Defeat the Looter Excavator3b",0,0,4,0,0,0
+233158,"Defeat the Looter Excavator",233157,1,0,117225,0,0
+233159,"Run through and collect as much as you can before time runs out 3b",0,0,4,0,0,0
+233160,"Run through and collect as much as you can before time runs out",233159,1,0,114903,0,0
+233317,"12.1.5 - Kithix Campaign - On the Quest, The Aqir Swarm - (STM)",0,0,4,0,0,4096
+233318,,233317,1,0,117329,0,0
+233423,"12.1.5 Labyrinth - Chamber 4 - Speak to Kinduru (BAK)",0,0,4,0,0,0
+233424,"Kinduru spoken to",233423,1,0,117410,0,0
+233425,"12.1.5 - Labyrinth Event- Generic Activity 2 (CTR) - 3c",0,0,4,0,0,1
+233426,"Lost Souls Dispersed",233425,7,9,0,0,32
+233427,"Lost Souls Dispersed",233426,1,0,113600,0,1
+233428,"Head Ritualist Ja'an Slain",233425,1,0,113672,1,32
+233429,"Head Ritualist Zol'go Slain",233425,1,0,113671,2,32
+233430,"12.1.5 - Labyrinth Event - Generic Scenario 2 - Kill Named NPC - 3c",0,0,4,0,0,0
+233431,"Head Ritualist Malakk Slain",233430,1,0,113680,0,0
+233432,"12.1.5 - Labyrinth Event - Generic Scenario 2 -  Kill Boss - 3c",0,1,8,0,0,0
+233433,"Vile Wraith Sha'Kuro Slain",233432,1,0,117411,0,0
+233460,,233432,1,0,113490,1,2
+233461,,225291,1,0,113490,1,2
+233467,"Kindo'Jan defeated",233466,1,0,114815,0,0
+233469,"Kinduru spoken to",233468,1,0,117410,0,0
+233470,"12.1.5 - Labyrinth Event- Generic Activity 2 (CTR) - 3a",0,0,4,0,0,1
+233471,"Lost Souls Dispersed",233470,7,9,0,0,32
+233472,"Lost Souls Dispersed",233471,1,0,113600,0,1
+233473,"Head Ritualist Ja'an Slain",233470,1,0,113672,1,32
+233474,"Head Ritualist Zol'go Slain",233470,1,0,113671,2,32
+233475,"12.1.5 - Labyrinth Event- Kill Named NPC - 3D - Scenario C - 3a",0,0,4,0,0,0
+233476,"Head Ritualist Malakk Slain",233475,1,0,113680,0,0
+233477,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C -3a",0,1,8,0,0,0
+233478,"Vile Wraith Sha'Kuro Slain",233477,1,0,117411,0,0
+233479,,233477,1,0,113490,1,2
+233492,"Obtain a Sporebearer Fungal Strider",0,1,4,0,0,0
+233493,,233492,0,0,117426,0,2
+233519,,233000,1,0,117437,38,2
+233520,,233000,1,0,117436,39,2
+233521,,233000,1,0,117438,40,2
+233522,,233000,1,0,117439,41,2
+233523,,233000,1,0,117440,42,2
 233528,,207767,0,0,115824,1,0
 233529,,206696,0,0,115825,1,0
 233621,"Reach rank 20 with Zul'jarra's Forces",0,0,4,0,0,0
 233622,,233621,20,0,117503,0,1
+233637,"12.1.5 Kithix - Campaign - Ch 1 - Player IN Kith'ix Raid (AOC)",0,0,4,0,0,4096
+233638,,233637,0,0,117516,0,0
+233662,"12.1.5 Raid - Kithix - LFR",0,0,4,0,0,0
+233663,"Kith'ix defeated",233662,1,0,117530,0,0
+233666,"Statistic - 12.1.5 Raid - Kithix - LFR",0,0,4,0,0,0
+233667,,233666,0,0,117531,0,2
+233668,"Statistic - 12.1.5 Raid - Kithix - Normal",0,0,4,0,0,0
+233669,,233668,0,0,117532,0,2
+233670,"Statistic - 12.1.5 Raid - Kithix - Heroic",0,0,4,0,0,0
+233671,,233670,0,0,117533,0,2
+233672,"Statistic - 12.1.5 Raid - Kithix - Mythic",0,0,4,0,0,0
+233673,,233672,0,0,116994,0,2
 233689,"12.1 Z1 - Delves - Season 2 Tutorial - 02 - Vehicle Quest - Slithering Spoils 3/6 (DTM)",0,0,4,0,0,4096
 233690,,233689,0,0,117541,0,0
+233700,"The Labyrinth of Kindo'jan: Tier 4",0,0,4,0,0,0
+233701,,233700,0,0,117549,0,0
+233702,"The Labyrinth of Kindo'jan: Tier 5",0,0,4,0,0,0
+233703,,233702,0,0,117550,0,0
+233704,"The Labyrinth of Kindo'jan: Tier 6",0,0,4,0,0,0
+233705,,233704,0,0,117551,0,0
+233706,"The Labyrinth of Kindo'jan: Tier 7",0,0,4,0,0,0
+233707,,233706,0,0,117552,0,0
+233708,"The Labyrinth of Kindo'jan: Tier 8",0,0,4,0,0,0
+233709,,233708,0,0,117553,0,0
+233710,"The Labyrinth of Kindo'jan: Tier 9",0,0,4,0,0,0
+233711,,233710,0,0,117554,0,0
+233712,"The Labyrinth of Kindo'jan: Tier 10",0,0,4,0,0,0
+233713,,233712,0,0,117555,0,0
+233714,"The Labyrinth of Kindo'jan: Tier 11",0,0,4,0,0,0
+233715,,233714,0,0,117556,0,0
+233716,"The Labyrinth of Kindo'jan: Tier 1",0,0,4,0,0,0
+233717,,233716,0,0,117557,0,0
+233718,"The Labyrinth of Kindo'jan: Tier 3",0,0,4,0,0,0
+233719,,233718,0,0,117559,0,0
+233720,"The Labyrinth of Kindo'jan: Tier 2",0,0,4,0,0,0
+233721,,233720,0,0,117558,0,0
 233753,,66554,5,0,42224,21,0
+234219,"Aqir Invasion defeated",0,1,5,0,0,8193
+234220,,234219,1,0,117796,0,0
+234221,"Aqir Invasions defeated",0,5,5,0,0,8193
+234222,,234221,1,0,117796,0,0
+234223,"Aqir Invasions defeated",0,10,5,0,0,8193
+234224,,234223,1,0,117796,0,0
+234225,"Aqir Invasions defeated",0,20,5,0,0,8193
+234226,,234225,1,0,117796,0,0
+234227,"Use the /rude emote on a boss",0,1,8,0,0,8193
+234228,,234227,1,0,117797,0,1
+234229,"Use the /thank emote",0,1,8,0,0,8193
+234230,,234229,1,0,117798,0,1
+234245,,222732,1,0,117807,11,0
+234246,"Aqir Research Enclave reputation earned",0,1500,5,0,0,8193
+234247,,234246,1,0,117807,0,0
+234254,"Trading Post - Complete 12.1.5 Kithix Campaign",0,0,4,0,0,1
+234255,"The Aqir Swarm",234254,0,0,117811,0,0
+234256,"All Along the Watchtowers",234254,0,0,117812,1,0
+234257,"Double-Edged Swords",234254,0,0,117813,2,0
+234258,"The Slumbering Swarm",234254,0,0,117814,3,0
+234259,"Rendering Aid",234254,0,0,117815,4,0
+234260,"Rendering Aid",234254,0,0,117816,5,0
+234261,"The Long Way Around",234254,0,0,117817,6,0
+234262,"An Offering for Halazzi",234254,0,0,117818,7,0
+234263,"Tenuous Alliances",234254,0,0,117819,8,0
+234264,"The Ties That Bind",234254,0,0,117820,9,0
+234265,"Breaking the Blade",234254,0,0,117821,10,0
+234266,"Back to Back",234254,0,0,117822,11,0
+234267,"The Unheard Voice",234254,0,0,117823,12,0
+234268,"In the Mouth of Madness",234254,0,0,117824,13,0
+234269,"In the Belly of the Beast",234254,0,0,117826,14,0
+234270,"Whatever It Takes",234254,0,0,117825,15,0
+234273,"Trading Post - Complete 12.1.5 Labyrinth - Intro Campaign",0,0,4,0,0,1
+234274,"The Labyrinth",234273,0,0,117828,0,0
+234275,"Dangers Untold and Hardships Unnumbered",234273,0,0,117829,1,0
+234276,"You Remind Me of the Bird",234273,0,0,117830,2,0
+234277,"The Way Forward...",234273,0,0,117831,3,0
+234278,"...Is Sometimes the Way Back",234273,0,0,117832,4,0
+234279,"Locked door opened.",0,1,8,0,0,8193
+234280,,234279,1,0,117838,0,2
+234281,,234279,1,0,117839,1,2
+234282,,234279,1,0,117840,2,2
+234283,,234279,1,0,117841,3,2
+234284,,234279,1,0,117842,4,2
+234285,"Mislaid Oddities looted.",0,1,5,0,0,8193
+234286,,234285,0,0,117836,0,0
+234287,"Chambers completed.",0,3,5,0,0,8193
+234288,,234287,0,0,117837,0,0
+234289,"Chambers completed.",0,10,5,0,0,8193
+234290,,234289,0,0,117837,0,0
+234291,"Chambers completed.",0,20,5,0,0,8193
+234292,,234291,0,0,117837,0,0
+234293,"Collect Candy Bucket Treats in Midnight Zones",0,5,5,0,0,8193
+234294,,234293,1,0,117843,0,1
+234295,"Drustvar Choc-O-Drops collected",0,15,5,0,0,8193
+234296,,234295,0,0,117844,0,1
+234297,,234295,0,0,117845,1,0
+234298,"Drustvar Choc-O-Drops collected",0,30,5,0,0,8193
+234299,,234298,0,0,117844,0,1
+234300,,234298,0,0,117845,1,0
+234301,"Duskwood Caramel collected",0,15,5,0,0,8193
+234302,,234301,0,0,117846,0,1
+234303,,234301,0,0,117847,1,0
+234304,"Duskwood Caramel collected",0,30,5,0,0,8193
+234305,,234304,0,0,117846,0,1
+234306,,234304,0,0,117847,1,0
+234307,"Felwood Fudge Bites collected",0,15,5,0,0,8193
+234308,,234307,0,0,117848,0,1
+234309,,234307,0,0,117849,1,0
+234310,"Felwood Fudge Bites collected",0,30,5,0,0,8193
+234311,,234310,0,0,117848,0,1
+234312,,234310,0,0,117849,1,0
+234313,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234314,,234313,0,0,117859,0,0
+234324,"Find and purge The Cave Towers of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234325,,234324,0,0,117863,0,0
+234326,"Find and purge Nalorakk's Den of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234327,,234326,0,0,117862,0,0
+234328,"Find and purge Jan'ali's Refuge of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234329,,234328,0,0,117861,0,0
+234330,"Find and purge Halazzi's Lair of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234331,,234330,0,0,117860,0,0
+234333,,234332,0,0,117864,0,0
+234335,,234334,0,0,117865,0,0
+234337,,234336,0,0,117866,0,0
+234339,,234338,0,0,117867,0,0
+234341,,234340,0,0,117868,0,0
+234342,"Defeat Kindo'jan within his Labyrinth on Tier 8 or above.",0,0,4,0,0,4096
+234343,,234342,0,0,117869,0,2
+234380,,234379,1,0,117888,0,2
+234551,"Defeat Kindo'Jan in his Labyrinth on Tier 11 after completing all 9 chambers without any other players in your party during Midnight Season 2.",0,0,4,0,0,0
+234552,,234551,1,0,117909,0,2
+234555,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 01 - TSH",0,0,4,0,0,0
+234556,"Undead defeated",234555,12,0,117911,0,0
+234557,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 02 - TSH",0,0,4,0,0,0
+234558,"Clues investigated",234557,4,0,117912,0,0
+234559,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 03 - TSH",0,0,4,0,0,0
+234560,"Examine the Effigy",234559,1,0,117913,0,0
+234561,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 04 - TSH",0,0,4,0,0,0
+234562,"Jun'ala slain",234561,1,0,113799,0,0
+234563,"Ride a Delivery Broom",0,0,4,0,0,4096
+234564,,234563,1,0,117915,0,0
+234587,"Equip Ghost Gear",0,0,4,0,0,12288
+234588,,234587,1,0,117928,0,0
 207626,"12.0 Max Campaign - Ch 5 - Battle of the Bridge - Army Assembly - Signal Attack (KCO)",0,0,4,0,0,0
 207627,"Unnamed Branch",207626,0,4,0,0,0
 207628,"Speak to Arator",207627,0,0,103514,0,0
@@ -119511,7 +120450,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85342,"Complete 4 World Quests (Alliance War Campaign) on Zandalar",0,4,5,0,0,4096
 68942,"Complete 4 World Quests (Horde War Campaign) on Kul Tiras",0,4,5,0,0,4096
 66775,"""The Shadow War"" mission completed",0,0,4,0,0,4096
-89483,"Complete the dungeon",0,0,4,0,0,2
 66857,"8.0 Jaina Line - Thros - Scenario - Step 02 Complete - TSH",0,0,4,0,0,0
 69280,"8.0 Islands - Win AND PvP mode",0,0,4,0,0,2
 69282,"8.0 Islands - Win AND PvP mode",0,0,4,0,0,2
@@ -119582,6 +120520,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89012,"Complete the dungeon",0,0,4,0,0,2
 89032,"Complete the dungeon",0,0,4,0,0,2
 89088,"Complete the dungeon",0,0,4,0,0,2
+89483,"Complete the dungeon",0,0,4,0,0,2
 89487,"Complete the dungeon",0,0,4,0,0,2
 89491,"Complete the dungeon",0,0,4,0,0,2
 89495,"Complete the dungeon",0,0,4,0,0,2
@@ -119978,6 +120917,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85443,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85446,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85449,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
+90949,"Tormentor defeated",0,0,4,0,0,0
 85455,"Complete the Destroy the Dominant World Quest or the Sanguine Depths Dungeon.",0,1,8,0,0,4096
 85458,"Complete the Destroy the Dominant World Quest or the Sanguine Depths Dungeon.",0,1,8,0,0,4096
 85461,"Complete the Destroy the Dominant World Quest or the Sanguine Depths Dungeon.",0,1,8,0,0,4096
@@ -120017,7 +120957,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89094,"Sanctum Upgrade started",0,1,8,0,0,4096
 89103,"Sanctum Upgrade started",0,1,8,0,0,4096
 89132,"Sanctum Upgrade started",0,1,8,0,0,4096
-136102,"Hunt progress",0,100,9,0,0,0
 89179,"Sanctum Upgrade started",0,1,8,0,0,4096
 89110,"Conduit applied to Pelagos",0,0,4,0,0,4096
 89108,"Conduits added to Forge of Bonds",0,0,4,0,0,4096
@@ -120049,7 +120988,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 90941,"Jailer's forces defeated",0,300,9,0,0,1
 90945,"Jailer's forces defeated",0,300,9,0,0,1
 90951,"Jailer's forces defeated",0,300,9,0,0,1
-90949,"Tormentor defeated",0,0,4,0,0,0
 90953,"Tormentor defeated",0,0,4,0,0,0
 90955,"Tormentor defeated",0,0,4,0,0,0
 92576,"Get Archivist's Key",0,1,5,0,0,6144
@@ -120094,6 +121032,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 136096,"Hunt progress",0,100,9,0,0,0
 136098,"Hunt progress",0,100,9,0,0,0
 136100,"Hunt progress",0,100,9,0,0,0
+136102,"Hunt progress",0,100,9,0,0,0
 136104,"Hunt progress",0,100,9,0,0,0
 136108,"Hunt progress",0,100,9,0,0,0
 136112,"Hunt progress",0,100,9,0,0,0
@@ -120325,6 +121264,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 152037,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152039,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152041,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
+225552,"Battlegrounds won",0,2,5,0,0,4096
 152043,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152045,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152047,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
@@ -120390,6 +121330,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 163395,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
 169774,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
 206223,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
+209898,"Equip a Utility Curio to your companion",0,1,8,0,0,4096
 163232,"Earn a 2600 personal rating in the 2v2 bracket of the arena in Season 38 (TWW 1)",0,0,4,0,0,0
 220407,"Complete the delves listed below on any difficulty.",0,0,4,0,0,0
 169781,"11.0 War Within - Legion - Bonus Event Weekend - Timewalking (Burning Crusade)",0,5,5,0,0,4096
@@ -120455,7 +121396,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 209773,"Add a Combat Curio to your collection",0,1,8,0,0,4096
 209873,"Add a Utility Curio to your collection",0,1,8,0,0,4096
 209802,"Equip a Combat Curio to your companion",0,1,8,0,0,4096
-209898,"Equip a Utility Curio to your companion",0,1,8,0,0,4096
 205760,"11.2 - FF - Devourer Attack - 3 - Phase 1 (SMART)",0,0,4,0,0,4096
 206003,"Achievement - Undermine - Wing 4",0,0,4,0,0,0
 206254,"11.1 Undermine - S&H - Weekly Cartel Chosen (KNF)",0,1,8,0,0,4096
@@ -120523,6 +121463,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 210883,"Treasure goblins killed",0,1,4,0,0,1
 210885,"Treasure goblins killed",0,1,4,0,0,1
 211355,"[DNT] Kill demons",0,100,5,0,0,4097
+223521,"Run Slayer's Rise",0,0,4,0,0,4096
 211470,"Defeat Nexus-King Salhadaar inside Manaforge Omega on Normal difficulty or higher.",0,0,4,0,0,4096
 211480,"Defeat Nexus-King Salhadaar inside Manaforge Omega on Normal difficulty or higher.",0,0,4,0,0,4096
 211449,"[DNT] Boss killed",0,0,4,0,0,4096
@@ -120594,7 +121535,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224753,"Scarred Spear acquired",0,0,4,0,0,4096
 220418,"Master's Perch Duel",0,1,8,0,0,4096
 222672,"Lumber harvested",0,100,4,0,0,0
-223521,"Run Slayer's Rise",0,0,4,0,0,4096
 225411,"12.0.5 Event - Prop Hunt - Tutorial 06a - Vendor",0,1,8,0,0,4112
 230700,"12.0 Midnight - Seasonal - Z1 - Silvermoon Court (MPK)",0,1,8,0,0,4096
 229817,"12.0 Midnight - Seasonal - Z4 - Stormarion Assault (MPK)",0,1,8,0,0,4096
@@ -120649,6 +121589,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223821,"30888: 12.0 - Housing - Weekly Quest - Rotational - Buy from Endeavor Vendor - (POC)",0,1,5,0,0,6144
 223860,"30888: 12.0 - Housing - Weekly Quest - Rotational - Buy from Endeavor Vendor - (POC)",0,1,5,0,0,6144
 223862,"30888: 12.0 - Housing - Weekly Quest - Rotational - Buy from Endeavor Vendor - (POC)",0,1,5,0,0,6144
+224196,"12.1.5 - Aqir Invasion - Bonus Event - Boss Kill - (STM) - Aqir monstrosity slain (STM)",0,0,4,0,0,0
 224562,"Family Battler of Outland",0,0,4,0,0,0
 225191,"Slay World Boss",0,0,4,0,0,0
 225193,"Slay World Boss",0,0,4,0,0,0
@@ -120658,7 +121599,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225538,"Complete 3 World Quests in the Coiled Isle",0,3,5,0,0,4096
 225807,"Complete 3 World Quests in the Coiled Isle",0,3,5,0,0,4096
 225809,"Complete 3 World Quests in the Coiled Isle",0,3,5,0,0,4096
-225552,"Battlegrounds won",0,2,5,0,0,4096
 225554,"Battlegrounds won",0,2,5,0,0,4096
 225556,"Battlegrounds won",0,2,5,0,0,4096
 231550,"Battlegrounds won",0,2,5,0,0,4096
@@ -120670,6 +121610,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230649,"12.1 Delves - Curio - Tutorial - Add a Combat Curio to your collection",0,1,8,0,0,4096
 230666,"12.1 Delves - Curio - Tutorial - Equip a Combat Curio to your companion",0,1,8,0,0,4096
 229048,"Achievement - Keystone Myth: Midnight Dungeons Season 1",0,0,4,0,0,0
+233466,"12.1.5 Labyrinth - Chamber 4 - Kill Final Boss (BAK)",0,0,4,0,0,0
 229013,"Statistic - 12.0.7 Raid - Fungarian - Giant - Normal",0,0,4,0,0,0
 229577,"12.0.7 Showdowns - Bonus Wrapper - WQs/Events - Val - Normal",0,5,5,0,0,12288
 229599,"12.0.7 Showdowns - Bonus Wrapper - WQs/Events - Naigtal - Normal",0,5,5,0,0,12288
@@ -120687,3 +121628,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232111,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144
 232113,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144
 232115,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144
+232304,"Burden carried",0,0,4,0,0,0
+232309,"Burden carried",0,0,4,0,0,0
+232315,"Burden carried",0,0,4,0,0,0
+232317,"Burden carried",0,0,4,0,0,0
+232362,"Achievement - Keystone Myth: Midnight Dungeons Season 2",0,0,4,0,0,0
+234379,"Defeat Kindo'Jan in the Labyrinth on Tier 11 without any other players in your party,  before the end of Midnight Season 2.",0,0,4,0,0,0
+233468,"12.1.5 Labyrinth - Chamber 4 - Speak to Kinduru (BAK)",0,0,4,0,0,0
+234332,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234334,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234336,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234338,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
+234340,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096

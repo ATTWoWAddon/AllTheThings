@@ -125,9 +125,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Discover the White Tuxedo Shirt and Black Tuxedo Pants by opening Brightly Colored Eggs during the Noblegarden celebration.","Sunday's Finest",,248,-1,-1,0,159,0,10,0,5,135012,0,8291,0,0,0,0
 "Discover an Elegant Dress by opening Brightly Colored Eggs during the Noblegarden celebration.","Dressed for the Occasion",,249,-1,-1,0,159,0,10,0,6,132645,0,4669,0,0,0,0
 "Earn 50 honorable kills as a Little Helper from the Winter Wondervolt machine.","With a Little Helper from My Friends",,252,-1,-1,0,156,0,10,131200,3,236703,0,4724,0,0,0,0
-"Killed the Headless Horseman prior to the 2023 holiday refresh.","Bring Me The Head of... Oh Wait",,255,-1,-1,0,15274,0,0,2048,81,134015,0,1673,0,0,0,0
+"Killed the Headless Horseman prior to the 2023 holiday refresh.","Bring Me The Head of... Oh Wait",,255,-1,-1,0,15274,0,0,2048,82,134015,0,1673,0,0,0,0
 "Throw a snowball at Baine Bloodhoof during the Feast of Winter Veil.",Scrooge,,259,-1,0,0,156,1,10,0,4,132387,0,20082,0,0,0,0
-"Created 12 Lovely Charm Bracelets.",Charming,,260,-1,-1,0,15274,0,0,133120,84,133334,0,2103,0,0,0,0
+"Created 12 Lovely Charm Bracelets.",Charming,,260,-1,-1,0,15274,0,0,133120,85,133334,0,2103,0,0,0,0
 "Slay Ahune in the Slave Pens.","Ice the Frost Lord",,263,-1,-1,0,161,1,10,0,1,135861,0,5612,0,0,0,0
 "Dance at the ribbon pole for 60 seconds while wearing completed Midsummer set.","Burning Hot Pole Dance",,271,-1,-1,0,161,0,10,0,2,236216,0,7608,0,0,0,0
 "Juggle 40 torches in 15 seconds in Dalaran.","Torch Juggler",,272,-1,-1,0,161,0,10,0,49,135433,0,2097,0,0,0,0
@@ -781,7 +781,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Fires Over Skettis quest in under 2 minutes 15 seconds while not in a group.","Bombs Away",,1275,-1,-1,0,14862,0,10,0,22,133715,0,7347,0,0,0,0
 "Complete the Bomb Them Again! quest in under 2 minutes 15 seconds while not in a group.","Blade's Edge Bomberman",,1276,-1,-1,0,14862,0,10,0,23,133712,0,7620,0,0,0,0
 "Complete the Defending Wyrmrest Temple quest in under 3 minutes while not in a group.","Rapid Defense",,1277,-1,-1,0,14863,0,10,0,31,134155,0,4756,0,0,0,0
-"Prior to the 2024 holiday refresh, you got completely smashed, put on your best perfume, threw a handful of rose petals on Sraaz, and then kissed him. You always regretted it.","Flirt With Disaster",,1279,-1,1,0,15274,0,0,2048,83,135447,0,4331,0,0,0,0
+"Prior to the 2024 holiday refresh, you got completely smashed, put on your best perfume, threw a handful of rose petals on Sraaz, and then kissed him. You always regretted it.","Flirt With Disaster",,1279,-1,1,0,15274,0,0,2048,84,135447,0,4331,0,0,0,0
 "Prior to the 2024 holiday refresh, you got completely smashed, put on your best perfume, threw a handful of rose petals on Jeremiah Payson, and then kissed him. You always regretted it.","Flirt With Disaster",,1280,-1,0,0,15274,0,0,2048,26,135447,0,8284,0,0,0,0
 "Shoot off 10 Red Rocket Clusters in 25 seconds or less.","The Rocket's Red Glare",,1281,-1,-1,0,160,0,10,0,7,134273,0,6275,0,0,0,0
 "Complete the Bomb Them Again! quest while mounted on a flying reindeer during the Feast of Winter Veil.",Fa-la-la-la-Ogri'la,,1282,-1,-1,0,156,1,10,0,6,236710,0,14432,0,0,0,0
@@ -4619,7 +4619,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain 300 mounts (usable by a single character).","Lord of the Reins","Mount: Heavenly Azure Cloud Serpent",10355,-1,0,9599,15248,0,10,131072,26,656171,87776,45764,0,0,0,0
 "Obtain 300 mounts (usable by a single character).","Lord of the Reins","Mount: Heavenly Azure Cloud Serpent",10356,-1,1,9598,15248,0,10,131072,17,656171,87776,45766,0,0,0,0
 ,"Vicious Saddle (8)",,13527,-1,0,13526,15270,0,0,1180672,28,1379171,103533,79591,0,0,0,0
-"Find Pepe wearing his spooky scarecrow costume.","A Frightening Friend",,10365,-1,-1,0,158,0,10,131072,32,1044996,0,45812,0,0,0,0
+"Find Pepe wearing his spooky scarecrow costume.","A Frightening Friend","Decor Reward: Scarecrow Pepe",10365,-1,-1,0,158,0,10,131072,33,1044996,0,45812,0,0,0,0
 "Added for playercondition issues.","<DND> Account Has Curious Wolvar Pup",,10366,-1,-1,0,163,0,0,1179652,8,136243,0,45835,0,0,0,0
 "Added for playercondition issues.","<DND> Account Has Oracle Hatchling",,10367,-1,-1,0,163,0,0,1179652,9,136243,0,45837,0,0,0,0
 ,"<DND> Player has learned Blige Pump",,10372,-1,-1,0,15303,0,0,1048576,162,136243,0,45880,0,0,0,0
@@ -5434,7 +5434,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"BS Unlock <DND>",,12015,-1,-1,0,15252,0,0,1179648,62,136243,0,60748,0,0,0,0
 "Collect any class armor set from Antorus, the Burning Throne.","Argussy Up",,12020,-1,-1,0,15259,0,10,131072,39,1711341,0,60845,0,0,0,0
 "Collect any class armor set from Legion PvP Season 5, 6, or 7.","Claws Out",,12021,-1,-1,0,15259,0,10,131072,82,1605807,0,60847,0,0,0,0
-"Defeat each of the following Legion Generals by completing each of the Greater Invasion Point scenarios.","Invasion Obliteration",,12026,-1,-1,0,15257,0,10,131072,28,1394890,0,61020,0,0,0,0
+"Defeat each of the following Legion Generals by completing each of the Greater Invasion Point scenarios.","Invasion Obliteration","Decor Reward: Ceremonial Lightforged Standard",12026,-1,-1,0,15257,0,10,132096,28,1394890,0,61020,0,0,0,0
 "Slay each of the demonic commanders that can control the Invasion Points.","Envision Invasion Eradication",,12028,-1,-1,0,15257,0,10,131072,27,1378284,0,61027,0,0,0,0
 "Defeat Kin'garoth with 9 Diabolic Bombs active in Antorus, the Burning Throne on Normal difficulty or higher.","The World Revolves Around Me",,12030,1712,-1,0,15255,0,10,0,101,1392544,0,61045,0,0,0,0
 "Win 100 Arena (3v3) or 40 Rated Battlegrounds in Legion Season 5.","Fierce Combatant","Mount Reward: Vicious Saddle",12031,-1,0,0,15270,0,0,6144,513,463449,103533,61050,0,0,0,0
@@ -5485,7 +5485,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat the corrupted pets of Argus with all Undead pets.","Unstoppable Undead",,12099,-1,-1,0,15119,0,5,131072,78,237441,0,61760,0,0,0,0
 "Complete the following achievements.","Family Fighter","Pet: Felclaw Marsuul",12100,-1,-1,0,15119,0,10,135168,79,1045097,153040,61779,0,0,0,0
 "Slay 100 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","We Came Here For Two Reasons",,12101,-1,-1,0,15257,0,10,131072,33,1305152,0,61790,0,0,0,0
-"Slay 500 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","To Kill Demons...",,12102,-1,-1,12101,15257,0,10,131072,34,1305152,0,61792,0,0,0,0
+"Slay 500 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","To Kill Demons...","Decor Reward: Shielded Lightforged Pylon",12102,-1,-1,12101,15257,0,10,132096,34,1305152,0,61792,0,0,0,0
 "Slay 2000 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","...And Chew Mana Buns","Mount: Bleakhoof Ruinstrider",12103,-1,-1,12102,15257,0,10,131072,35,1305152,153041,61794,0,0,0,0
 "Slay 5000 non-trivial demons in Krokuun, Eredath, and the Antoran Wastes.","And We're All Out of Mana Buns","Title: Demonslayer",12104,-1,-1,12103,15257,0,10,131072,36,1305152,0,61796,0,0,0,0
 "Reach Prestige Level 20.","Double Decade of Dominance",,12108,-1,-1,11694,15279,0,0,2048,97,1713480,0,61865,0,0,0,0
@@ -5690,12 +5690,12 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat the Unbound Abomination in Underrot.",Underrot,,12500,1841,-1,0,15285,0,10,0,15,2011151,0,66091,0,0,0,0
 "Defeat the Unbound Abomination in Underrot on Heroic difficulty or higher.","Heroic: Underrot",,12501,1841,-1,12500,15285,0,10,0,16,2011151,0,66093,0,0,0,0
 "Defeat the Unbound Abomination in Underrot on Mythic difficulty.","Mythic: Underrot",,12502,1841,-1,12501,15285,0,10,0,17,2011151,0,66095,0,0,0,0
-"Activate both of the eyes to exit the Bazaar in the Temple of Sethraliss within 10 seconds on Mythic difficulty.","Snake Eyes",,12503,-1,-1,0,15272,0,0,2048,270,531776,0,66104,0,0,0,0
+"Activate both of the eyes to exit the Bazaar in the Temple of Sethraliss within 10 seconds on Mythic difficulty.","Snake Eyes",,12503,-1,-1,0,15272,0,0,2048,272,531776,0,66104,0,0,0,0
 "Restore the Avatar of Sethraliss in the Temple of Sethraliss.","The Temple of Sethraliss",,12504,1877,-1,0,15285,0,10,0,18,2011143,0,66106,0,0,0,0
 "Restore the Avatar of Sethraliss in the Temple of Sethraliss on Heroic difficulty or higher.","Heroic: The Temple of Sethraliss",,12505,1877,-1,12504,15285,0,10,0,19,2011143,0,66108,0,0,0,0
 "Restore the Avatar of Sethraliss in the Temple of Sethraliss on Mythic difficulty.","Mythic: The Temple of Sethraliss",,12506,1877,-1,12505,15285,0,10,0,20,2011143,0,66110,0,0,0,0
-"Force the Solid Egg to hatch during the Merektha encounter, defeat the Solid Snake, and become the Snake Eater in the Temple of Sethraliss on Mythic difficulty.","Snake Eater",,12507,-1,-1,0,15272,0,0,2048,271,135461,0,66112,0,0,0,0
-"Restore the Avatar of Sethraliss with the Prince active in the Temple of Sethraliss on Mythic difficulty.","Good Night, Sweet Prince",,12508,-1,-1,0,15272,0,0,2048,272,237579,0,66114,0,0,0,0
+"Force the Solid Egg to hatch during the Merektha encounter, defeat the Solid Snake, and become the Snake Eater in the Temple of Sethraliss on Mythic difficulty.","Snake Eater",,12507,-1,-1,0,15272,0,0,2048,273,135461,0,66112,0,0,0,0
+"Restore the Avatar of Sethraliss with the Prince active in the Temple of Sethraliss on Mythic difficulty.","Good Night, Sweet Prince",,12508,-1,-1,0,15272,0,0,2048,274,237579,0,66114,0,0,0,0
 "Complete the war campaign in Zandalar and Kul Tiras.","Ready for War","Decor Reward: Lordaeron Rectangular Rug",12509,-1,0,0,15284,0,10,132096,37,462674,0,66123,0,0,0,0
 "Complete the war campaign in Kul Tiras and Zandalar.","Ready for War",,12510,-1,1,0,15284,0,10,131072,40,462673,0,66125,0,0,0,0
 "Earn the allegiance of the Dark Iron dwarves and welcome them into the Alliance.","Allied Races: Dark Iron Dwarf","Reward: Dark Iron Dwarf Race Unlocked",12515,-1,-1,0,201,0,10,131072,32,1851464,0,66155,0,0,0,0
@@ -6744,7 +6744,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Kill 250 Rare creatures in Uldum or Vale of Eternal Blossoms during an Assault.","Rare to Well Done",,14160,-1,-1,0,15298,0,10,196736,10,651597,0,83571,0,0,0,0
 "Complete every unique Consuming Maw objective in Uldum and Vale of Eternal Blossoms during the Black Empire Assaults.","All Consuming",,14161,-1,-1,0,15284,0,5,131072,88,236305,0,83584,0,0,0,0
 "Obtain all 5 Faceless Masks.","Horrific Masquerade",,14162,-1,-1,0,15426,0,10,131072,16,1354189,0,83596,0,0,0,0
-"Complete the Ardenweald storylines listed below.","Awaken, Ardenweald",,14164,-1,-1,0,15422,0,10,131072,24,3108022,0,83602,0,0,0,0
+"Complete the Ardenweald storylines listed below.","Awaken, Ardenweald","Decor Reward: Restored Night Fae Sigil",14164,-1,-1,0,15422,0,10,131072,24,3108022,283262,83602,0,0,0,0
 "Complete all objectives in any Horrific Vision with any Faceless Mask active.","Masked Soliloquy",,14165,-1,-1,0,15426,0,5,0,17,446125,0,83613,0,0,0,0
 "Complete all objectives in any Horrific Vision with any 2 Faceless Masks active.","Masked Duet",,14166,-1,-1,14165,15426,0,5,0,18,367033,0,83615,0,0,0,0
 "Complete all objectives in any Horrific Vision with any 3 Faceless Masks active.","Masked Trio",,14167,-1,-1,14166,15426,0,5,0,19,446126,0,83617,0,0,0,0
@@ -6846,7 +6846,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete 15 of the following special encounters in Maldraxxus.","Adventurer of Maldraxxus",,14308,-1,-1,0,15436,0,10,131072,16,3159976,0,85725,0,0,0,0
 "Complete 15 of the following special encounters in Ardenweald.","Adventurer of Ardenweald",,14309,-1,-1,0,15436,0,10,131072,18,3636851,0,85726,0,0,0,0
 "Complete 15 of the following special encounters in Revendreth.","Adventurer of Revendreth",,14310,-1,-1,0,15436,0,10,131072,20,3565724,0,85727,0,0,0,0
-"Discover the hidden treasures of Bastion.","Treasures of Bastion",,14311,-1,-1,0,15436,0,10,131072,22,1542852,0,85728,0,0,0,0
+"Discover the hidden treasures of Bastion.","Treasures of Bastion",,14311,-1,-1,0,15436,0,10,131072,22,1542852,284546,85728,0,0,0,0
 "Discover the hidden treasures of Maldraxxus.","Treasures of Maldraxxus",,14312,-1,-1,0,15436,0,10,131072,23,1542851,0,85729,0,0,0,0
 "Discover the hidden treasures of Ardenweald.","Treasures of Ardenweald",,14313,-1,-1,0,15436,0,10,131072,24,1542860,0,85730,0,0,0,0
 "Discover the hidden treasures of Revendreth.","Treasures of Revendreth",,14314,-1,-1,0,15436,0,10,131072,25,1542846,0,85731,0,0,0,0
@@ -8211,7 +8211,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the optional Azure Span storylines listed below.","Sojourner of Azure Span",,16428,-1,-1,0,15455,0,10,131072,24,4672495,0,138494,0,0,0,0
 "End Dragonflight Mythic+ Season 1 with a Mythic+ Rating in the top 0.1% of all players in your region.","Thundering Hero: Dragonflight Season 1","Title: Thundering Hero",16429,-1,-1,0,15272,0,0,14336,5,618859,0,138513,0,0,0,0
 "Defeat Treemouth after every player has been consumed at least once in Brackenhide Hollow on Mythic difficulty.","All Bark, All Bite",,16430,2520,-1,0,15467,0,10,0,31,132103,0,138861,0,0,0,0
-"Defeat each of the elemental lords during the Dragonflight pre-launch events.","Against the Elements",,16431,-1,-1,0,15274,0,0,133120,80,132845,0,138528,0,0,0,0
+"Defeat each of the elemental lords during the Dragonflight pre-launch events.","Against the Elements",,16431,-1,-1,0,15274,0,0,133120,81,132845,0,138528,0,0,0,0
 "Defeat Forgemaster Gorek without being struck by Forgestorm, Forgefire, Blazing Eruptions, another player's Blazing Aegis, or the final slam of Heated Swings in Neltharus on Mythic difficulty.","Ready for Raiding VIII",,16432,2519,-1,0,15467,0,10,0,37,136186,0,139357,0,0,0,0
 "Defeat Vexamus without players absorbing any Arcane Orbs in Algeth'ar Academy on Mythic Difficulty.","See Me After Class",,16434,2526,-1,0,15467,0,10,0,26,1033906,0,138620,0,0,0,0
 "Defeat Chargath, Bane of Scales while burning less than 15 books in Neltharus on Mythic difficulty.","Knowledge is... Preserved?",,16438,2519,-1,0,15467,0,10,0,36,4549131,0,138535,0,0,0,0
@@ -10072,8 +10072,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Get Silver ranked time for the Emerald Dream Emerald Amble Reverse Challenge.","Emerald Amble Reverse Challenge: Silver",,19075,-1,-1,19074,15462,0,0,1048576,1342,1002575,0,0,0,0,0,0
 "Get Gold ranked time for the Emerald Dream Emerald Amble Reverse Challenge.","Emerald Amble Reverse Challenge: Gold",,19076,-1,-1,19075,15462,0,0,1048576,1343,1002573,0,0,0,0,0,0
 "Proud owner of the 2023 Vintage Winter Veil gift, Junior Timekeeper's Racing Belt.","Catch Me If You Can!",,19077,-1,-1,0,15274,0,0,133120,37,133202,0,150037,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways event.","Master of the Turbulent Timeways","Mount: Sandy Shalewing",19079,-1,-1,0,15274,0,0,133120,89,4630413,205208,150048,0,0,0,0
-"Participated in empowering the Arcane Forge in Valdrakken during the Secrets of Azeroth event.","Arcane Influence",,19080,-1,-1,0,15274,0,0,133120,82,1723986,0,150210,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways event.","Master of the Turbulent Timeways","Mount: Sandy Shalewing",19079,-1,-1,0,15274,0,0,133120,90,4630413,205208,150048,0,0,0,0
+"Participated in empowering the Arcane Forge in Valdrakken during the Secrets of Azeroth event.","Arcane Influence",,19080,-1,-1,0,15274,0,0,133120,83,1723986,0,150210,0,0,0,0
 "Complete Throne of the Tides at Mythic Level 20 or higher, within the time limit.","Keystone Hero: Throne of the Tides","Max Level Unlock: Teleport to Throne of the Tides",19082,643,-1,0,15272,0,0,395264,9,409600,0,150227,0,0,0,0
 "Complete The Everbloom at Mythic Level 20 or higher, within the time limit.","Keystone Hero: The Everbloom","Max Level Unlock: Teleport to The Everbloom",19083,1279,-1,0,15272,0,0,395264,14,1052644,0,150229,0,0,0,0
 "Complete Black Rook Hold at Mythic Level 20 or higher, within the time limit.","Keystone Hero: Black Rook Hold","Max Level Unlock: Teleport to Black Rook Hold",19084,1501,-1,0,15272,0,0,395264,17,1417423,0,150231,0,0,0,0
@@ -10904,7 +10904,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"<Hidden> Achievement Title - Plunderlord - 10.2.6 Void Zone",,20507,-1,-1,0,81,0,0,3276804,27,136243,0,157442,0,0,0,0
 "Win a game of Plunderstorm.","Plunder Wonder",,20508,-1,-1,0,15274,1,0,133120,5,5689350,0,157401,0,0,0,0
 "Collect 1,000,000 Plunder.",Plunderkind,,20509,-1,-1,0,15274,1,0,133120,6,4203076,0,157403,0,0,0,0
-"Proud owner of the 2024 Vintage Winter Veil gift, Box of Puntables.","What Could It Be?",,20510,-1,-1,0,15274,0,0,133120,87,133202,0,157405,0,0,0,0
+"Proud owner of the 2024 Vintage Winter Veil gift, Box of Puntables.","What Could It Be?",,20510,-1,-1,0,15274,0,0,133120,88,133202,0,157405,0,0,0,0
 "Punt 30 creatures that appear out of the Box of Puntables toy.","Gotta Punt em' All",,20511,-1,-1,0,156,0,10,133120,2,132219,0,157409,0,0,0,0
 ,"<Hidden> 10.2.6 Void Zone - Glamrok <DNT>",,20513,-1,-1,0,81,0,0,3276804,57,4696085,0,157434,0,0,0,0
 ,"<Hidden> 10.2.6 Void Zone - Pepe <DNT>",,20514,-1,-1,0,81,0,0,3276804,58,4696085,0,157436,0,0,0,0
@@ -11046,7 +11046,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Suramar storylines listed below.","Good Suramaritan (char specific hidden copy)",,40017,-1,-1,0,15252,0,0,1048576,26,1409002,0,160947,0,0,0,0
 "Defeat 8 of the following monstrous creatures on the Broken Isles.","Unleashed Monstrosities",,40018,-1,-1,0,15255,0,0,1048576,2,461145,0,160959,0,0,0,0
 "Complete the Suramar storylines listed below.","Insurrection (char specific hidden copy)",,40019,-1,-1,0,15252,0,0,1048576,41,1525722,0,160974,0,0,0,0
-"Earn Revered status with the Armies of Legionfall.","Legionfall Commander (char specific hidden copy)",,40020,-1,-1,0,15258,0,0,1048576,6,1585421,0,160984,0,0,0,0
+"Earn Revered status with the Armies of Legionfall.","Legionfall Commander (char specific hidden copy)",,40020,-1,-1,0,15258,0,0,1179648,6,1585421,0,160984,0,0,0,0
 "Complete the Zuldazar storylines listed below.","The Throne of Zuldazar (char specific hidden copy)",,40021,-1,0,0,15284,0,0,1048576,18,803814,0,160986,0,0,0,0
 "Complete the Nazmir storylines listed below.","The Dark Heart of Nazmir (char specific hidden copy)",,40022,-1,0,0,15284,0,0,1048576,21,2032229,0,160996,0,0,0,0
 "Defeat the following bosses in the depths of Antorus, the Burning Throne.","Seat of the Pantheon (char specific hidden copy)",,40023,1712,-1,0,15255,0,0,1048576,82,1711335,0,161005,0,0,0,0
@@ -11332,21 +11332,21 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat The Darkness in Darkflame Cleft on Heroic difficulty or higher.","Heroic: Darkflame Cleft",,40428,2651,-1,40427,15524,0,10,0,15,5899329,0,163245,0,0,0,0
 "Defeat The Darkness in Darkflame Cleft on Mythic or Mythic Keystone difficulty.","Mythic: Darkflame Cleft",,40429,2651,-1,40428,15524,0,10,0,16,5899329,0,163247,0,0,0,0
 "Visit each Flight Master in Khaz Algar to discover their flight points for your Warband.","Khaz Algar Flight Master","Reward: 25% Increased Flight Path travel speed in Khaz Algar",40430,-1,-1,0,15521,0,10,131072,58,5551884,0,163249,0,0,0,0
-"Defeat Zekvir in his lair on Tier ?? before the release of the next season of delves.","Hunting the Hunter","Title: Ascension Breaker",40431,-1,-1,0,15531,0,0,14336,13,5725617,0,163282,0,0,0,0
-"Defeat Zekvir in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: Zekvir","Reward: Delver's Dirigible Schematic (Void)",40433,-1,-1,0,15531,0,0,14336,18,5764867,0,163286,0,0,0,0
+"Defeat Zekvir in his lair on Tier ?? before the release of the next season of delves.","Hunting the Hunter","Title: Ascension Breaker",40431,-1,-1,0,15531,0,0,14336,14,5725617,0,163282,0,0,0,0
+"Defeat Zekvir in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: Zekvir","Reward: Delver's Dirigible Schematic (Void)",40433,-1,-1,0,15531,0,0,14336,19,5764867,0,163286,0,0,0,0
 "Discover the hidden treasures across the Isle of Dorn.","Treasures of the Isle of Dorn",,40434,-1,-1,0,15521,0,5,131072,43,1518646,0,163290,0,0,0,0
 "Complete 10 of the following special encounters across the Isle of Dorn.","Adventurer of the Isle of Dorn",,40435,-1,-1,0,15521,0,5,131072,50,5770811,0,163303,0,0,0,0
 "Complete a delve.","You're Getting a Delve!",,40436,-1,-1,0,15522,0,5,0,1,441139,0,163364,0,0,0,0
 "Complete the War Within delves listed below.","Delver of the Depths",,40437,-1,-1,0,15523,0,10,143360,64,1786405,0,163440,0,0,0,0
 "Complete the War Within delve achievements listed below.","Glory of the War Within Delver","Mount: Ivory Goliathus",40438,-1,-1,0,15523,0,25,143360,68,6025441,224415,163437,0,0,0,0
 "Successfully complete a Fungarian delve without being hit by Explosive Spores on Tier 8 or higher.",Sporesweeper,,40445,-1,-1,0,15523,0,10,0,43,5789328,0,164004,0,0,0,0
-"Successfully complete a Kobold delve without exhausting an Enchanted Candle or Air Totem on Tier 8 or higher.","I TAKE Candle!",,40446,-1,-1,0,15531,0,0,2048,56,2061718,0,164005,0,0,0,0
+"Successfully complete a Kobold delve without exhausting an Enchanted Candle or Air Totem on Tier 8 or higher.","I TAKE Candle!",,40446,-1,-1,0,15531,0,0,2048,60,2061718,0,164005,0,0,0,0
 "Complete the War Within delves listed below on Tier 4 or higher with lives remaining.","Delver of the Depths II",,40447,-1,-1,40437,15523,0,10,143360,65,1786405,0,163454,0,0,0,0
 "Complete the War Within delves listed below on Tier 8 or higher with lives remaining.","Delver of the Depths III",,40448,-1,-1,40447,15523,0,25,143360,66,1786405,0,163467,0,0,0,0
 "Complete the War Within delves listed below on Tier 11 with lives remaining.","Delver of the Depths IV",,40449,-1,-1,40448,15523,0,25,131072,67,1786405,0,163480,0,0,0,0
 "Raise a companion to level 20.","Buddy System II",,40450,-1,-1,40455,15522,0,10,131072,9,236563,0,163495,0,0,0,0
 "Raise a companion to level 30.","Buddy System III",,40451,-1,-1,40450,15522,0,10,131072,10,236564,0,163497,0,0,0,0
-"Successfully complete a Kobyss delve without ever losing your breath on Tier 8 or higher.","Just Keep Swimming",,40452,-1,-1,0,15531,0,0,2048,57,136148,0,164006,0,0,0,0
+"Successfully complete a Kobyss delve without ever losing your breath on Tier 8 or higher.","Just Keep Swimming",,40452,-1,-1,0,15531,0,0,2048,61,136148,0,164006,0,0,0,0
 "Successfully complete a Nerubian delve without spawning ambushers from Nerubian Webs or taking damage from Nerubian Eggs on Tier 8 or higher.","Spider Senses",,40453,-1,-1,0,15523,0,10,0,44,135737,0,164009,0,0,0,0
 "Successfully complete an Order of Night delve without being targeted by Artillery fire on Tier 8 or higher.",Daystormer,,40454,-1,-1,0,15523,0,10,0,45,2011125,0,164010,0,0,0,0
 "Raise a companion to level 10.","Buddy System",,40455,-1,-1,0,15522,0,10,131072,8,236562,0,163513,0,0,0,0
@@ -11391,13 +11391,13 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete The Ringing Deeps world quest ""Reaching for Resources"" while leaping to 25 handholds or less.","Hanging Tight",,40507,-1,-1,0,15506,0,5,0,39,236316,0,164007,0,0,0,0
 "Complete a Tier 2 delve.","War Within Delves: Tier 2","Unlock: Tier 3 delves in The War Within",40512,-1,-1,40631,15523,0,10,131072,3,6025441,0,166446,0,0,0,0
 "Complete a Tier 3 delve.","War Within Delves: Tier 3",,40514,-1,-1,40512,15523,0,10,131072,4,6025441,0,164035,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 4 (Season 1)",,40515,-1,-1,0,15531,0,0,133120,32,6025441,0,164037,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in The War Within",40516,-1,-1,40515,15531,0,0,133120,33,6025441,0,164039,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in The War Within",40517,-1,-1,40516,15531,0,0,133120,34,6025441,0,164041,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in The War Within",40518,-1,-1,40517,15531,0,0,133120,35,6025441,0,164043,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in The War Within",40519,-1,-1,40518,15531,0,0,133120,36,6025441,0,164045,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in The War Within",40520,-1,-1,40519,15531,0,0,133120,37,6025441,0,164047,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in The War Within",40521,-1,-1,40520,15531,0,0,133120,38,6025441,0,164049,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 4 (Season 1)",,40515,-1,-1,0,15531,0,0,133120,36,6025441,0,164037,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in The War Within",40516,-1,-1,40515,15531,0,0,133120,37,6025441,0,164039,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in The War Within",40517,-1,-1,40516,15531,0,0,133120,38,6025441,0,164041,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in The War Within",40518,-1,-1,40517,15531,0,0,133120,39,6025441,0,164043,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in The War Within",40519,-1,-1,40518,15531,0,0,133120,40,6025441,0,164045,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in The War Within",40520,-1,-1,40519,15531,0,0,133120,41,6025441,0,164047,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in The War Within",40521,-1,-1,40520,15531,0,0,133120,42,6025441,0,164049,0,0,0,0
 "Obtain all curios that are available for Brann Bronzebeard.","On Brand",,40523,-1,-1,0,15523,0,10,131072,20,973911,0,164139,0,0,0,0
 "Complete 5 Delver's Call quests in the War Within.","Good Deed Delver",,40524,-1,-1,0,15506,0,5,131200,48,237554,0,166268,0,0,0,0
 "Complete each story variant of Fungal Folly.","Fungal Folly Stories",,40525,-1,-1,0,15523,0,5,131072,28,5789324,0,164059,0,0,0,0
@@ -11545,7 +11545,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete one of the achievements or feats of strength listed below:","Web-Wrapped in the Finest Silks","Reward: Luminous Nerubian Catalyst Stone",40723,-1,-1,0,15259,0,10,131072,53,5857267,0,166425,0,0,0,0
 "Discover the hidden treasures across The Ringing Deeps.","Treasures of The Ringing Deeps",,40724,-1,-1,0,15521,0,5,131072,44,1542858,0,166437,0,0,0,0
 "Reach level 80 and complete the Khaz Algar main story campaign on your Warband.","War Within Delves: Endgame","Unlock: Tier 4 delves in The War Within",40725,-1,-1,40514,15523,0,10,131072,5,6025441,0,164017,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 11 (Season 1)","Title: High Explorer",40726,-1,-1,40521,15531,0,0,133120,39,6025441,0,166448,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 11 (Season 1)","Title: High Explorer",40726,-1,-1,40521,15531,0,0,133120,43,6025441,0,166448,0,0,0,0
 "Ride the High Hollows Skittershaw for a full lap around the district.","Skittershaw Spin",,40727,-1,-1,0,15506,0,5,0,40,879828,0,166453,0,0,0,0
 "Collect any armor set from The War Within PvP Season 1.","Forged Finery",,40728,-1,-1,0,15259,0,10,131072,93,5771687,0,166455,0,0,0,0
 "Win a game of Light's Gambit on Hard Difficulty.","Light's Gambit Champion",,40729,-1,-1,0,15506,0,10,0,38,135986,0,166458,0,0,0,0
@@ -11603,7 +11603,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the following storylines listed below.","Fate of the Kirin Tor","Title: Witness of the Kirin Tor",40791,-1,-1,0,15506,0,10,0,34,236693,0,166838,0,0,0,0
 "Win 100 Solo Shuffle rounds as a Healer at or above Rival I during The War Within.","Solo Shuffle Medic: The War Within","Reward: Unbound Legend's Pennant",40792,-1,-1,0,15270,0,0,133120,9,135915,0,166852,0,0,0,0
 "Win 50 Battleground Blitz matches as a Healer at or above Rival I during The War Within.","Battleground Blitz Medic: The War Within","Reward: Unbound Strategist's Pennant",40795,-1,-1,0,15270,0,0,133120,11,135915,0,166854,0,0,0,0
-"Defeat each of the remembered bosses during The War Within pre-launch events.","This Takes Me Back",,40796,-1,-1,0,15274,0,0,133120,85,2967110,0,166864,0,0,0,0
+"Defeat each of the remembered bosses during The War Within pre-launch events.","This Takes Me Back",,40796,-1,-1,0,15274,0,0,133120,86,2967110,0,166864,0,0,0,0
 "Complete the optional Ringing Deeps storylines listed below.","Sojourner of The Ringing Deeps",,40799,-1,-1,0,15506,0,10,131072,23,5891367,0,166895,0,0,0,0
 ,"Warband Tutorial Complete - Teach Warband Bank Summon (DNT)",,40800,-1,-1,0,92,0,0,1310720,138,136243,0,166929,0,0,0,0
 "Find and open all Sturdy Chests hidden in Fungal Folly.","Fungal Folly Discoveries",,40803,-1,-1,0,15523,0,5,131200,47,4203076,0,167486,0,0,0,0
@@ -11774,7 +11774,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Win 50 3v3 games while at Elite rank during The War Within Season 3.","Gladiator: The War Within Season 3","Reward: Gladiator Mount, Customization, Seasonal Character Title",41049,-1,-1,0,15270,0,0,14336,35,236542,232617,169614,0,0,0,0
 "Collect each of the Citrine gems on the Siren Isle.","A Choir of Citrines",,41050,-1,-1,0,15521,0,10,131072,18,6215541,0,169648,0,0,0,0
 "Complete the Lingering Shadows storyline.","Lingering Shadows","Appearance: Root Defender's Spear and Root Defender's Shield",41052,-1,-1,0,15506,0,10,131072,5,5976943,0,169684,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways II event.","Master of the Turbulent Timeways II","Mount: Timely Buzzbee",41056,-1,-1,0,15274,0,0,133120,90,2026009,232624,169686,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways II event.","Master of the Turbulent Timeways II","Mount: Timely Buzzbee",41056,-1,-1,0,15274,0,0,133120,91,2026009,232624,169686,0,0,0,0
 "Complete the Breakneck Bolt.","Breakneck Bolt: Bronze",,41057,-1,-1,0,15462,0,0,1048576,1799,1002572,0,0,0,0,0,0
 "Get Silver ranked time for the Breakneck Bolt.","Breakneck Bolt: Silver",,41058,-1,-1,41057,15462,0,0,1048576,1800,1002575,0,0,0,0,0,0
 "Get Gold ranked time for the Breakneck Bolt.","Breakneck Bolt: Gold",,41059,-1,-1,41058,15462,0,0,1048576,1801,1002573,0,0,0,0,0,0
@@ -11870,14 +11870,14 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Aid the Assembly of the Deeps by completing the achievements below.","Rage Aside the Machine",,41187,-1,-1,0,15521,0,20,131072,10,5770812,0,170240,0,0,0,0
 "Aid the Hallowfall Arathi by completing the achievements below.","Crystal Chronicled",,41188,-1,-1,0,15521,0,20,131072,11,5770810,0,170248,0,0,0,0
 "Experience life in Azj-Kahet by completing the achievements below.","Azj the World Turns",,41189,-1,-1,0,15521,0,20,131072,12,5770809,0,170377,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in The War Within",41191,-1,-1,0,15531,0,0,133120,40,6025441,0,170263,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in The War Within",41192,-1,-1,41191,15531,0,0,133120,43,6025441,0,170265,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 7 (Season 2)","Unlock: Tier 7 delves in The War Within",41193,-1,-1,41198,15531,0,0,133120,47,6025441,0,170269,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in The War Within",41194,-1,-1,41193,15531,0,0,133120,49,6025441,0,170271,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in The War Within",41195,-1,-1,41194,15531,0,0,133120,51,6025441,0,170273,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in The War Within",41196,-1,-1,41195,15531,0,0,133120,53,6025441,0,170275,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 11 (Season 2)","Title: High Explorer",41197,-1,-1,41196,15531,0,0,133120,55,6025441,0,170277,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in The War Within",41198,-1,-1,41192,15531,0,0,133120,45,6025441,0,170267,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in The War Within",41191,-1,-1,0,15531,0,0,133120,44,6025441,0,170263,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in The War Within",41192,-1,-1,41191,15531,0,0,133120,47,6025441,0,170265,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 7 (Season 2)","Unlock: Tier 7 delves in The War Within",41193,-1,-1,41198,15531,0,0,133120,51,6025441,0,170269,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in The War Within",41194,-1,-1,41193,15531,0,0,133120,53,6025441,0,170271,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in The War Within",41195,-1,-1,41194,15531,0,0,133120,55,6025441,0,170273,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in The War Within",41196,-1,-1,41195,15531,0,0,133120,57,6025441,0,170275,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 11 (Season 2)","Title: High Explorer",41197,-1,-1,41196,15531,0,0,133120,59,6025441,0,170277,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in The War Within",41198,-1,-1,41192,15531,0,0,133120,49,6025441,0,170267,0,0,0,0
 "Complete the quest ""Grand, Gutsy Solutions.""","Grand, Gutsy Solutions","Pet: Slim",41200,-1,-1,0,15521,0,0,1245184,115,2027953,222980,170300,0,0,0,0
 "End Xal'atath's schemes (for now) by completing the achievements below.","You Xal Not Pass","Mount Reward: Shadow of Doubt",41201,-1,-1,0,15521,0,40,131072,19,4913234,223313,170302,0,0,0,0
 "Experience Zandalari culture by completing the achievements listed below.","Hot Tropic",,41202,-1,-1,0,15298,0,20,131072,2,2065640,0,170508,0,0,0,0
@@ -11888,7 +11888,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Drustvar achievements listed below.","When the Drust Settles",,41207,-1,-1,0,15298,0,20,131072,7,2125380,0,170498,0,0,0,0
 "Defeat Vexie and the Geargrinders after crashing a bike into the following objects in the Liberation of Undermine on Normal difficulty or higher.","Hold My Gear!",,41208,2769,-1,0,15526,0,10,0,23,1408996,0,170367,0,0,0,0
 "Complete 4 of the Battle for Azeroth appearance achievements listed below.","Dressed to Kill: Battle for Azeroth",,41209,-1,-1,0,15259,0,20,131072,44,456568,0,170386,0,0,0,0
-"Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin","Reward: Delver's Gob-Trotter Schematic: Gold",41210,-1,-1,0,15531,0,0,14336,19,6100921,0,170618,0,0,0,0
+"Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin","Reward: Delver's Gob-Trotter Schematic: Gold",41210,-1,-1,0,15531,0,0,14336,20,6100921,0,170618,0,0,0,0
 "Defeat Mug'Zee, Heads of Security while all players are dyed the same color in Liberation of Undermine on Normal difficulty or higher.","A Good Day to Dye Hard","Toy: Pipeline Rerouter",41211,2769,-1,0,15526,0,10,0,32,1035053,236769,205764,0,0,0,0
 "Donate to Bar Tab Barrels at taverns in Khaz Algar.","A Round on the House in Khaz Algar",,41212,-1,-1,0,162,0,10,131072,12,5846565,0,205766,0,0,0,0
 "Complete the following achievements.","Family Battler of Khaz Algar (copy)","Pet: Fuzzy",41213,-1,-1,0,15119,0,0,1179648,168,5755548,222970,205777,0,0,0,0
@@ -12036,9 +12036,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Season 2 - Defeated Underpin",,41365,-1,-1,0,15534,0,0,1179648,23,136243,0,206423,0,0,0,0
 "Earn 1000 honor in Undermine while in War Mode.","Tour of Duty: Undermine",,41522,-1,-1,0,15283,0,10,131072,31,5770809,0,206427,0,0,0,0
 "Collect an armor set from the Liberation of Undermine.","Can You Please Spell ""Gobanna?""",,41525,-1,-1,0,15259,0,10,131072,54,6392630,0,206447,0,0,0,0
-"Defeat The Underpin in his lair on Tier ?? before the release of the next season of delves.","Breaking the Bank","Title: The Real Deal",41529,-1,-1,0,15531,0,0,14336,14,6124649,0,206449,0,0,0,0
+"Defeat The Underpin in his lair on Tier ?? before the release of the next season of delves.","Breaking the Bank","Title: The Real Deal",41529,-1,-1,0,15531,0,0,14336,15,6124649,0,206449,0,0,0,0
 "Defeat The Underpin in his lair before the release of the next season of delves.","My New Nemesis","Reward: Golden-Gob Propulsion Rig",41530,-1,-1,0,15531,0,0,14336,9,5393730,0,206451,0,0,0,0
-"Ask Brann to change his hat ten times after recovering it from the Underpin during the War Within Season 2.","The Hataclysm",,41531,-1,-1,0,15531,0,0,133120,31,5221397,0,206454,0,0,0,0
+"Ask Brann to change his hat ten times after recovering it from the Underpin during the War Within Season 2.","The Hataclysm",,41531,-1,-1,0,15531,0,0,133120,35,5221397,0,206454,0,0,0,0
 "Obtain the Delver's Gob-Trotter.","I've Got a Flying Machine?",,41532,-1,-1,0,15523,0,10,131072,23,5917277,0,206461,0,0,0,0
 "Attain a Mythic+ Rating of at least 2000 during The War Within Season Two.","The War Within Keystone Master: Season Two","Mount: Crimson Shreddertank",41533,-1,-1,40950,15272,0,0,133120,138,618859,235549,168581,0,0,0,0
 "Raise a companion to level 70.","Buddy System VII",,41537,-1,-1,40461,15522,0,10,131072,14,236568,0,206696,0,0,0,0
@@ -12154,7 +12154,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Gain new High Scores each week!","Dastardly Duos Weekly High Score",,41706,-1,-1,0,15545,0,50,131072,1,6740278,0,207477,0,0,0,0
 "Those bosses are inhuman. Really! Collect their gears to prove it.","Dastardly Devices",,41707,-1,-1,0,15545,0,10,131072,7,6740278,0,207484,0,0,0,0
 "Make friends with all 5 Grabbable Rats in Undermine.","You're My Friend Now",,41708,-1,-1,0,15521,0,5,131072,9,6351952,0,207587,0,0,0,0
-"Complete the Delver's Journey before The War Within: Season 2 ends.","The War Within: Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,27,6025441,0,207593,0,0,0,0
+"Complete the Delver's Journey before The War Within: Season 2 ends.","The War Within: Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,31,6025441,0,207593,0,0,0,0
 "Obtain the Faceless Mask of the Nemesis in a Revisited Vision.","Faceless Mask of the Nemesis",,41710,-1,-1,0,15546,0,0,1179648,14,136243,0,207597,0,0,0,0
 "Defeat Sprocketmonger Lockenstock without being struck by Blazing Beam, Rocket Barrage, Mega Magnetize, Jumbo Void Beam, or Void Barrage in Liberation of Undermine on Normal difficulty or higher.","Conveyor Slayer",,41711,2769,-1,0,15526,0,10,0,26,132996,0,207600,0,0,0,0
 "Collect the following cosmetic unlocks for the Delver's Gob-Trotter.","From Trash to Treasure",,41714,-1,-1,41532,15523,0,10,131072,26,132241,0,207651,0,0,0,0
@@ -12203,7 +12203,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Player has collected 17 Ethereal Strand",,41774,-1,-1,0,15301,0,0,1179648,25,136243,0,208099,0,0,0,0
 ,"Player has collected 18 Ethereal Strand",,41775,-1,-1,0,15301,0,0,1179648,26,136243,0,208101,0,0,0,0
 "Win the two challenge mode races in the Oasis","Brokers Don't Care How You Win",,41778,-1,-1,0,15506,0,5,131072,58,1100022,0,208136,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways III event.","Master of the Turbulent Timeways III","Mount: Chrono Corsair",41779,-1,-1,0,15274,0,0,133120,91,525134,238739,208163,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways III event.","Master of the Turbulent Timeways III","Mount: Chrono Corsair",41779,-1,-1,0,15274,0,0,133120,92,525134,238739,208163,0,0,0,0
 ,"Midnight Skinning 25 (DNT)",,41783,-1,-1,0,15498,0,0,9437188,14,136243,0,208186,0,0,0,0
 ,"Midnight Skinning 50 (DNT)",,41784,-1,-1,0,15498,0,0,9437188,15,136243,0,208188,0,0,0,0
 ,"Midnight Skinning 60 (DNT)",,41785,-1,-1,0,15498,0,0,9437188,16,136243,0,208190,0,0,0,0
@@ -12313,7 +12313,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Total Goblin Zappers Killed",,41992,-1,-1,0,15550,0,0,1,7,6740278,0,209368,0,0,0,0
 ,"Total Pyro Machines Destroyed",,41993,-1,-1,0,15550,0,0,1,8,6740278,0,209370,0,0,0,0
 ,"Total Tombstones",,41994,-1,-1,0,15550,0,0,1,9,6740278,0,209372,0,0,0,0
-"Your Dastardly Duos group created enough tombstones for two graveyards!","Boot Hill",,41995,-1,-1,0,15274,0,0,133120,88,6740278,0,209374,0,0,0,0
+"Your Dastardly Duos group created enough tombstones for two graveyards!","Boot Hill",,41995,-1,-1,0,15274,0,0,133120,89,6740278,0,209374,0,0,0,0
 "Complete the Nightfall Scenario.","I'm Doing My Part",,41996,-1,-1,0,15521,0,10,131072,131,236379,0,209405,0,0,0,0
 "Reach Renown rank 10 with Flame's Radiance.","Owner of a Radiant Heart",,41997,-1,-1,0,15530,0,10,131072,18,5764903,0,209407,0,0,0,0
 "Complete 10 Incursion quests in Hallowfall or Azj-Kahet.","Turning the Venom Tide",,41998,-1,-1,0,15521,0,10,131072,134,5764925,0,209409,0,0,0,0
@@ -12346,7 +12346,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Win 50 Solo Shuffle rounds as a Healer at or above Rival I during The War Within Season 3.","Battle Mender: The War Within Season 3","Reward: Seasonal Character Title",42044,-1,-1,0,15270,0,0,133120,6,236249,0,209626,0,0,0,0
 "Complete the Midnight storyline.",Midnight,,42045,-1,-1,0,15547,0,10,131072,9,7490911,0,209651,0,0,0,0
 "Aid the people of the Broken Isles by completing the achievements below.","Broken Memories",,42114,-1,-1,0,15257,0,40,131072,1,1408999,0,218484,0,0,0,0
-"Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin (copy)","Reward: Delver's Gob-Trotter Schematic: Gold",42116,-1,-1,0,15531,0,0,1179652,23,6100921,0,209721,0,0,0,0
+"Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin (copy)","Reward: Delver's Gob-Trotter Schematic: Gold",42116,-1,-1,0,15531,0,0,1179652,26,6100921,0,209721,0,0,0,0
 "Complete the following max level questlines.","The War of Light and Shadow",,42117,-1,-1,0,15547,0,10,131072,10,135980,0,209723,0,0,0,0
 "Defeat the Plexus Sentinel after saving all mice from atomization in Manaforge Omega on Normal difficuty or higher.","Of Mice and Manaforges",,42118,2810,-1,0,15526,0,10,0,76,5502861,0,209730,0,0,0,0
 ,"Vicious Saddle (42)",,42123,-1,1,41698,15270,0,0,1179648,142,1379171,103533,209733,0,0,0,0
@@ -12364,7 +12364,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete all Mythic+ dungeons within the time limit at keystone level 13 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 13","Keystones will no longer deplete below level 13 during the War Within Season 3.",42150,-1,-1,0,15272,0,0,2048,169,648754,0,210135,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 14 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 14","Keystones will no longer deplete below level 14 during the War Within Season 3.",42151,-1,-1,0,15272,0,0,2048,170,648754,0,210144,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 15 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 15","Keystones will no longer deplete below level 15 during the War Within Season 3.",42152,-1,-1,0,15272,0,0,2048,172,648754,0,210153,0,0,0,0
-"Proud owner of the 2025 Vintage Winter Veil gift, Jubilant Snowman Costume.","Snowball Fight!",,42192,-1,-1,0,15274,0,0,133120,86,133202,0,210430,0,0,0,0
+"Proud owner of the 2025 Vintage Winter Veil gift, Jubilant Snowman Costume.","Snowball Fight!",,42192,-1,-1,0,15274,0,0,133120,87,133202,0,210430,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 16 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 16","Keystones will no longer deplete below level 16 during the War Within Season 3.",42153,-1,-1,0,15272,0,0,2048,173,648754,0,210162,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 17 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 17","Keystones will no longer deplete below level 17 during the War Within Season 3.",42154,-1,-1,0,15272,0,0,2048,174,648754,0,210171,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 18 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 18","Keystones will no longer deplete below level 18 during the War Within Season 3.",42155,-1,-1,0,15272,0,0,2048,175,648754,0,210180,0,0,0,0
@@ -12388,20 +12388,20 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Ethereals Lorewalking Campaign.","Lorewalking: Ethereal Wisdom","Decor Reward: Scroll of K'aresh's Fall",42187,-1,-1,0,15552,0,5,132096,4,1711337,0,210375,0,0,0,0
 "Complete the Xal'atath Lorewalking Campaign.","Lorewalking: Blade's Bane","Decor Reward: Tome of the Survivor",42188,-1,-1,0,15552,0,5,132096,1,1131285,0,210377,0,0,0,0
 "Complete the Lich King Lorewalking Campaign.","Lorewalking: The Lich King","Decor Reward: Tale of the Penultimate Lich King",42189,-1,-1,0,15552,0,5,132096,3,343637,0,210379,0,0,0,0
-"Defeat Nexus-Princess Ky'veza in her lair on Tier ?? without any other players in your party, before the release of the Midnight Pre-Patch.","Let Me Solo Her: Nexus-Princess Ky'veza","Reward: Delver's Mana-Skimmer Schematic: Hyperdrive",42190,-1,-1,0,15531,0,0,14336,20,6361900,0,210387,0,0,0,0
+"Defeat Nexus-Princess Ky'veza in her lair on Tier ?? without any other players in your party, before the release of the Midnight Pre-Patch.","Let Me Solo Her: Nexus-Princess Ky'veza","Reward: Delver's Mana-Skimmer Schematic: Hyperdrive",42190,-1,-1,0,15531,0,0,14336,21,6361900,0,210387,0,0,0,0
 "Buy six bank tabs.","Safer Deposit",,42191,-1,-1,0,92,0,10,0,140,4203076,0,210425,0,0,0,0
 "Defeat Nexus-Princess Ky'veza in her lair before the release of the next season of delves.","My Stab-Happy Nemesis","Reward: Hal'hadar's Phasebound Visor",42193,-1,-1,0,15531,0,0,14336,10,6218232,0,210434,0,0,0,0
-"Defeat Nexus-Princess Ky'veza in her lair on Tier ?? before the release of the next season of delves.","Pruning the Princess","Title: Contract Killer",42194,-1,-1,0,15531,0,0,14336,15,5779388,0,210437,0,0,0,0
+"Defeat Nexus-Princess Ky'veza in her lair on Tier ?? before the release of the next season of delves.","Pruning the Princess","Title: Contract Killer",42194,-1,-1,0,15531,0,0,14336,16,5779388,0,210437,0,0,0,0
 ,"[HIDDEN] Renown 15 with Manaforge Vandals / Teach Raid Teleport Spell",,42195,-1,-1,0,15526,0,0,1310720,52,136243,0,210452,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 4 (Season 3)","Unlock: Tier 5 delves in The War Within",42196,-1,-1,0,15531,0,0,133120,41,6025441,0,210478,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 5 (Season 3)","Unlock: Tier 6 delves in The War Within",42197,-1,-1,42196,15531,0,0,133120,42,6025441,0,210492,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 6 (Season 3)","Unlock: Tier 7 delves in The War Within",42198,-1,-1,42197,15531,0,0,133120,44,6025441,0,210490,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 7 (Season 3)","Unlock: Tier 7 delves in The War Within",42199,-1,-1,42198,15531,0,0,133120,46,6025441,0,210488,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 8 (Season 3)","Unlock: Tier 9 delves in The War Within",42200,-1,-1,42199,15531,0,0,133120,48,6025441,0,210486,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 9 (Season 3)","Unlock: Tier 10 delves in The War Within",42201,-1,-1,42200,15531,0,0,133120,50,6025441,0,210484,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 10 (Season 3)","Unlock: Tier 11 delves in The War Within",42202,-1,-1,42201,15531,0,0,133120,52,6025441,0,210482,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 11 (Season 3)","Title: High Explorer",42203,-1,-1,42202,15531,0,0,133120,54,6025441,0,210480,0,0,0,0
-"Purchase enough Titan Discs to unlock all of the skills in the Overcharged Titan Console.","Titan Console Overcharged","Mount: OC91 Chariot",42212,-1,-1,0,15531,0,0,133120,58,2000853,246237,210543,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 4 (Season 3)","Unlock: Tier 5 delves in The War Within",42196,-1,-1,0,15531,0,0,133120,45,6025441,0,210478,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 5 (Season 3)","Unlock: Tier 6 delves in The War Within",42197,-1,-1,42196,15531,0,0,133120,46,6025441,0,210492,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 6 (Season 3)","Unlock: Tier 7 delves in The War Within",42198,-1,-1,42197,15531,0,0,133120,48,6025441,0,210490,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 7 (Season 3)","Unlock: Tier 7 delves in The War Within",42199,-1,-1,42198,15531,0,0,133120,50,6025441,0,210488,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 8 (Season 3)","Unlock: Tier 9 delves in The War Within",42200,-1,-1,42199,15531,0,0,133120,52,6025441,0,210486,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 9 (Season 3)","Unlock: Tier 10 delves in The War Within",42201,-1,-1,42200,15531,0,0,133120,54,6025441,0,210484,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 10 (Season 3)","Unlock: Tier 11 delves in The War Within",42202,-1,-1,42201,15531,0,0,133120,56,6025441,0,210482,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 11 (Season 3)","Title: High Explorer",42203,-1,-1,42202,15531,0,0,133120,58,6025441,0,210480,0,0,0,0
+"Purchase enough Titan Discs to unlock all of the skills in the Overcharged Titan Console.","Titan Console Overcharged","Mount: OC91 Chariot",42212,-1,-1,0,15531,0,0,133120,62,2000853,246237,210543,0,0,0,0
 ,"Console Overcharged Purchase 1",,42213,-1,-1,0,15523,0,0,1179648,70,136243,0,0,0,0,0,0
 ,"Console Overcharged Purchase 2",,42214,-1,-1,0,15523,0,0,1179648,71,136243,0,0,0,0,0,0
 ,"Console Overcharged Purchase 3",,42215,-1,-1,0,15523,0,0,1179648,72,136243,0,0,0,0,0,0
@@ -12449,7 +12449,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Locate and unlock a hidden appearance for your artifact as a Warlock.","Hidden Potential of the Netherlord","Decor Reward: Replica Felblood Altar",42297,-1,-1,0,15304,0,5,132096,67,236348,0,211318,0,0,0,0
 "Locate and unlock a hidden appearance for your artifact as a Warrior.","Hidden Potential of the Battlelord","Decor Reward: Replica Forge of Odyn",42298,-1,-1,0,15304,0,5,132096,68,236348,0,211322,0,0,0,0
 "Complete the Visions of a Shadowed Sun storyline.","Visions of a Shadowed Sun",,42299,-1,-1,0,15506,0,10,131072,62,1712310,0,211359,0,0,0,0
-"Defeat each of the bosses being summoned by the Twilight's Blade in the Twilight Highlands during the Midnight pre-launch events.","Two Minutes to Midnight","Title: Thorn of Twilight and Mount: Light-Forged Mechsuit",42300,-1,-1,0,15274,0,0,198656,94,7195171,246594,211379,0,0,0,0
+"Defeat each of the bosses being summoned by the Twilight's Blade in the Twilight Highlands during the Midnight pre-launch events.","Two Minutes to Midnight","Title: Thorn of Twilight and Mount: Light-Forged Mechsuit",42300,-1,-1,0,15274,0,0,198656,95,7195171,246594,211379,0,0,0,0
 "Reach level 80 with a Timerunner in Legion: Remix.",Timerunner,"Title: Timerunner",42301,-1,-1,0,15604,0,0,2048,5,4622478,0,211451,0,0,0,0
 "Earn your first Artifact Weapon with a Timerunner","Artifact, Remixed","Minor Bronze Cache",42312,-1,-1,0,15604,0,0,134144,10,236395,0,211764,0,0,0,0
 "Complete the introductory experience of Legion Remix and begin your journey as a Timerunner.","Remixing Time","+1 Infinite Knowledge",42313,-1,-1,0,15604,0,0,134144,1,4622478,0,211828,0,0,0,0
@@ -12660,13 +12660,13 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain 100 skill points in Midnight Engineering.","Engineering at Midnight","Decor Reward: Midnight Engineer's Shop Sign",42798,-1,-1,0,169,1,10,136192,41,4624728,0,212480,0,0,0,0
 "Get killed by Ky'veza in a delve.","Let Her Solo Me",,42799,-1,-1,0,15531,0,0,133120,3,6694635,0,212482,0,0,0,0
 "Collect any armor set from The War Within PvP Season 3.","Astral Attire",,42800,-1,-1,0,15259,0,10,131072,95,6784665,0,212491,0,0,0,0
-"Complete the Delver's Journey before The War Within: Season 3 ends.","The War Within: Journey's End (Season 3)",,42801,-1,-1,0,15531,0,0,133120,28,6025441,0,212703,0,0,0,0
+"Complete the Delver's Journey before The War Within: Season 3 ends.","The War Within: Journey's End (Season 3)",,42801,-1,-1,0,15531,0,0,133120,32,6025441,0,212703,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 26 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 26","Keystones will no longer deplete below level 26 during the War Within Season 3.",42802,-1,-1,0,15272,0,0,2048,183,648754,0,212705,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 27 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 27","Keystones will no longer deplete below level 27 during the War Within Season 3.",42803,-1,-1,0,15272,0,0,2048,184,648754,0,212714,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 28 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 28","Keystones will no longer deplete below level 28 during the War Within Season 3.",42804,-1,-1,0,15272,0,0,2048,185,648754,0,212723,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 29 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 29","Keystones will no longer deplete below level 29 during the War Within Season 3.",42805,-1,-1,0,15272,0,0,2048,186,648754,0,212732,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 30 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 30","Keystones will no longer deplete below level 30 during the War Within Season 3.",42806,-1,-1,0,15272,0,0,2048,187,648754,0,212741,0,0,0,0
-"Logged in during the end of Legion: Remix.","Cloudy With a Chance of Infernals",,42807,-1,-1,0,15274,0,0,134144,96,1367345,0,212756,0,0,0,0
+"Logged in during the end of Legion: Remix.","Cloudy With a Chance of Infernals",,42807,-1,-1,0,15274,0,0,134144,97,1367345,0,212756,0,0,0,0
 ,"Midnight Inscription 25 (DNT)",,42808,-1,-1,0,15493,0,0,9437188,6,136243,0,212758,0,0,0,0
 ,"Midnight Inscription 50 (DNT)",,42809,-1,-1,0,15493,0,0,9437188,7,136243,0,212768,0,0,0,0
 ,"Midnight Inscription 60 (DNT)",,42810,-1,-1,0,15493,0,0,9437188,8,136243,0,212770,0,0,0,0
@@ -12752,7 +12752,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Pressed the Small Red Button 10 times and lived to tell the tale.","Pushing My Buttons",,60888,-1,-1,0,15492,0,10,33554432,8,6383525,0,212776,0,0,0,0
 "Experience the mysteries of K'aresh by completing the achievements below.","Unraveled and Persevering",,60889,-1,-1,0,15521,0,20,393216,14,6921878,0,213815,0,0,0,0
 "Discover the following lore objects in K'aresh.","Secrets of the K'areshi",,60890,-1,-1,0,15521,0,10,131072,4,1723993,0,213822,0,0,0,0
-"Complete storylines involving Valeera Sanguinar listed below.","The Crimson Rogue",,60891,-1,-1,0,15547,0,10,0,26,236439,0,213866,0,0,0,0
+"Complete storylines involving Valeera Sanguinar listed below.","The Crimson Rogue",,60891,-1,-1,0,15547,0,10,0,27,236439,0,213866,0,0,0,0
 ,"<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 2 [DNT]",,60915,-1,-1,0,81,0,0,3276804,11,136243,0,213955,0,0,0,0
 ,"<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 3 [DNT]",,60916,-1,-1,0,81,0,0,3276804,12,136243,0,213957,0,0,0,0
 ,"<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 4 [DNT]",,60917,-1,-1,0,81,0,0,3276804,13,136243,0,213959,0,0,0,0
@@ -13060,9 +13060,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Honor the flames of Midnight.","Flame Warden of Midnight",,61336,-1,1,0,161,0,10,131072,16,135265,0,216911,0,0,0,0
 "Complete the Legion Remix campaign.","To Fel and Back","Appearance: Sargerei Commander's Felscorned Regalia",61337,-1,-1,42313,15604,0,0,134144,12,5199633,0,216944,0,0,0,0
 ,"Bronze gained across Warband",,61338,-1,-1,0,15562,0,0,133121,4,4638724,0,216993,0,0,0,0
-"Discovered the limitations of infinite power. How did you even manage to do that?","Putting the Finite in Infinite",,61339,-1,-1,0,15274,0,0,2048,93,1391675,0,216995,0,0,0,0
+"Discovered the limitations of infinite power. How did you even manage to do that?","Putting the Finite in Infinite",,61339,-1,-1,0,15274,0,0,2048,94,1391675,0,216995,0,0,0,0
 "Raise a companion to level 90.","Buddy System IX",,61342,-1,-1,41723,15522,0,10,131072,16,614740,0,217047,0,0,0,0
-"Remove credit and rewards for exploiting Hard Mode Delve Boss","Hotfix 99733 Tracking",,61343,-1,-1,0,15531,0,0,1048580,26,136243,0,0,0,0,0,0
+"Remove credit and rewards for exploiting Hard Mode Delve Boss","Hotfix 99733 Tracking",,61343,-1,-1,0,15531,0,0,1048580,30,136243,0,0,0,0,0,0
 "Discover all of the lore objects found within the Legends of the Haranir relic stories.","Chronicler of the Haranir","Reward: Title: ""Chronicler of the Haranir""",61344,-1,-1,0,15553,0,10,131072,21,3717417,0,217517,0,0,0,0
 "Defeat Crown of the Cosmos after slaying a Fleshy Monstrosity and returning all of its meat to The Emptiness in The Voidspire on Normal difficulty or higher.","We Will, In Fact, See It Again",,61346,2912,-1,0,15566,0,10,0,27,801291,0,217552,0,0,0,0
 ,"<Hidden> Base 12.0 Tender [DNT]","[DNT] 500 Tender Rewarded for Base",61347,-1,-1,0,81,0,0,3276804,49,4696085,0,217599,0,0,0,0
@@ -13090,7 +13090,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat one of the following Prey targets on Hard difficulty. Completing this achievement will also grant the Normal achievement of the same rank.","Prey: Hard Mode I",,61389,-1,-1,0,15605,0,10,131072,5,3565724,0,217786,0,0,0,0
 "Defeat 15 of the following Prey targets on Nightmare difficulty. Completing this achievement will also grant the Hard and Normal achievements of the same rank.","Prey: Nightmare Mode II",,61391,-1,-1,61392,15605,0,10,131072,9,3565724,0,217817,0,0,0,0
 "Defeat one of the following Prey targets on Nightmare difficulty. Completing this achievement will also grant the Hard and Normal achievements of the same rank.","Prey: Nightmare Mode I",,61392,-1,-1,0,15605,0,10,131072,8,3565724,0,217848,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways IV event.","Master of the Turbulent Timeways IV","Item: Ta'readon's Mount Voucher",61394,-1,-1,0,15274,0,0,134144,92,5199633,0,217879,0,0,0,0
+"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways IV event.","Master of the Turbulent Timeways IV","Item: Ta'readon's Mount Voucher",61394,-1,-1,0,15274,0,0,134144,93,5199633,0,217879,0,0,0,0
 "Owner of Midnight Heroic Edition Lightwing Dragonhawk mount.","Heroic Edition: Lightwing Dragonhawk",,61401,-1,-1,0,15268,0,0,133120,93,6841375,0,218102,0,0,0,0
 "Owner of Midnight Epic Edition Voidlight Surger mount.","Epic Edition: Voidlight Surger",,61402,-1,-1,0,15268,0,0,133120,94,7135882,0,218104,0,0,0,0
 ,"Galactic Combatant",,61403,-1,0,0,15270,0,0,1179648,95,236538,257502,218116,0,0,0,0
@@ -13107,7 +13107,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Can't stop, won't stop. Win a brawl with blazing speed.","Hot Footed",,61425,-1,-1,0,15567,0,10,131072,10,135788,0,0,0,0,0,0
 "Win a brawl without a weapon equipped.","Bare Knuckle Brawl",,61426,-1,-1,0,15567,0,10,131072,11,999951,0,0,0,0,0,0
 "Complete all Brawler's Guild Challenge Broker Gambits.","Brawl Star","Title: Brawl Star",61429,-1,-1,0,15567,0,20,135168,12,135906,0,218198,0,0,0,0
-"Win the Twilight's Blade Strategem game in the Twilight Ascension basecamp.","Crunching for Cultists",,61430,-1,-1,0,15274,0,0,2048,95,4549135,0,218209,0,0,0,0
+"Win the Twilight's Blade Strategem game in the Twilight Ascension basecamp.","Crunching for Cultists",,61430,-1,-1,0,15274,0,0,2048,96,4549135,0,218209,0,0,0,0
 "Raise one primary profession within the Midnight category to maximum skill.","Thalassian Profession Master",,61438,-1,-1,0,169,1,10,5120,26,134327,0,218273,0,0,0,0
 "Raise two primary professions within the Midnight category to maximum skill.","Thalassian Artisan",,61439,-1,-1,61438,169,2,10,131072,27,132281,0,218285,0,0,0,0
 "Raise five primary professions within the Midnight category to maximum skill.","Thalassian Polymath","Reward: Finery Funds",61440,-1,-1,61439,169,5,30,136192,28,3622200,0,218297,0,0,0,0
@@ -13348,19 +13348,19 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Midnight delve completed the most",,61791,-1,-1,0,15572,0,0,1,28,136243,0,220691,0,0,0,0
 "Successfully tag opposing players as a Spellbreaker in Decor Duel.","T-A-G that spells ""Gotcha!""",,61792,-1,-1,0,15574,0,10,131072,1,1392559,0,220724,0,0,0,0
 "Successfully tag opposing players as a Nullifier in Decor Duel.","Deployed to the Void",,61793,-1,-1,0,15574,0,10,131072,2,1392559,0,220954,0,0,0,0
-"Complete the Delver's Journey before Midnight: Season 1 ends.","Midnight: Journey's End (Season 1)",,61796,-1,-1,0,15531,0,0,133120,29,6025441,0,220728,0,0,0,0
+"Complete the Delver's Journey before Midnight: Season 1 ends.","Midnight: Journey's End (Season 1)",,61796,-1,-1,0,15531,0,0,133120,33,6025441,0,220728,0,0,0,0
 "Defeat Nullaeus in his lair before the release of the next season of delves.","My Shady Nemesis","Reward: Nullaeus Domaneye",61797,-1,-1,0,15531,0,0,14336,11,7383546,0,220730,0,0,0,0
-"Defeat Nullaeus in his lair on Tier ?? before the release of the next season of delves.","Lighting the Dark","Title: the Ominous",61798,-1,-1,0,15531,0,0,14336,16,5041293,0,220733,0,0,0,0
-"Defeat Nullaeus in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: Nullaeus","Reward: Arcanovoid Construct",61799,-1,-1,0,15531,0,0,14336,21,7452103,0,220735,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 4 (Season 1)","Unlock: Tier 5 delves in Midnight Season 1",61800,-1,-1,0,15531,0,0,133120,59,6025441,0,220737,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in Midnight Season 1",61801,-1,-1,61800,15531,0,0,133120,68,6025441,0,220751,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in Midnight Season 1",61802,-1,-1,61801,15531,0,0,133120,69,6025441,0,220739,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in Midnight Season 1",61803,-1,-1,61802,15531,0,0,133120,70,6025441,0,220741,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in Midnight Season 1",61804,-1,-1,61803,15531,0,0,133120,71,6025441,0,220743,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in Midnight Season 1",61805,-1,-1,61804,15531,0,0,133120,72,6025441,0,220745,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in Midnight Season 1",61806,-1,-1,61805,15531,0,0,133120,73,6025441,0,220747,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 11 (Season 1)","Title: High Explorer",61807,-1,-1,61806,15531,0,0,133120,74,6025441,0,220749,0,0,0,0
-"Be one of the first 4000 players in your region to defeat Nullaeus in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Fabled Let Me Solo Him: Nullaeus","Title: Fabled Vanquisher of Nullaeus",61808,-1,-1,0,15531,0,0,145408,24,1398085,0,220753,0,0,0,0
+"Defeat Nullaeus in his lair on Tier ?? before the release of the next season of delves.","Lighting the Dark","Title: the Ominous",61798,-1,-1,0,15531,0,0,14336,17,5041293,0,220733,0,0,0,0
+"Defeat Nullaeus in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: Nullaeus","Reward: Arcanovoid Construct",61799,-1,-1,0,15531,0,0,14336,22,7452103,0,220735,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 4 (Season 1)","Unlock: Tier 5 delves in Midnight Season 1",61800,-1,-1,0,15531,0,0,133120,63,6025441,0,220737,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in Midnight Season 1",61801,-1,-1,61800,15531,0,0,133120,72,6025441,0,220751,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in Midnight Season 1",61802,-1,-1,61801,15531,0,0,133120,73,6025441,0,220739,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in Midnight Season 1",61803,-1,-1,61802,15531,0,0,133120,74,6025441,0,220741,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in Midnight Season 1",61804,-1,-1,61803,15531,0,0,133120,75,6025441,0,220743,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in Midnight Season 1",61805,-1,-1,61804,15531,0,0,133120,76,6025441,0,220745,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in Midnight Season 1",61806,-1,-1,61805,15531,0,0,133120,77,6025441,0,220747,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 11 (Season 1)","Title: High Explorer",61807,-1,-1,61806,15531,0,0,133120,78,6025441,0,220749,0,0,0,0
+"Be one of the first 4000 players in your region to defeat Nullaeus in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Fabled Let Me Solo Him: Nullaeus","Title: Fabled Vanquisher of Nullaeus",61808,-1,-1,0,15531,0,0,145408,27,1398085,0,220753,0,0,0,0
 "Outgrow the use of Adventurer Dawncrests during Midnight Season 1.","Adventurer of the Dawn","Character Unlock: Trade Adventurer for Veteran Dawncrests",61809,-1,-1,0,81,0,0,2048,213,7639518,0,220755,0,0,0,0
 "Complete a Tier 1 delve.","Midnight Delves: Tier 1","Unlock: Tier 2 delves in Midnight",61832,-1,-1,0,15571,0,10,131072,2,6025441,0,220765,0,0,0,0
 "Complete a Tier 2 delve.","Midnight Delves: Tier 2","Unlock: Tier 3 delves in Midnight",61835,-1,-1,61832,15571,0,10,131072,3,6025441,0,220767,0,0,0,0
@@ -13451,7 +13451,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat all of the rare creatures found in Zul'Aman.","Tallest Tree in the Forest","Decor Reward: Colossal Amani Stone Visage",62122,-1,-1,0,15553,0,10,132096,16,463283,0,222024,0,0,0,0
 "Discover the hidden treasures across Zul'Aman.","Treasures of Zul'Aman","Toy: Pango Plating",62125,-1,-1,0,15553,0,5,131072,24,1519429,268717,222041,0,0,0,0
 "Discover the hidden treasures across Voidstorm","Treasures of Voidstorm","Toy: Interdimensional Parcel Signal",62126,-1,-1,0,15553,0,5,131072,23,7137586,264695,222052,0,0,0,0
-"Defeat all of the rare creatures found in Voidstorm.","The Ultimate Predator","Decor Reward: Opened Domanaar Storage Crate",62130,-1,-1,0,15553,0,10,132096,15,7448210,0,222082,0,0,0,0
+"Defeat all of the rare creatures found in Voidstorm.","The Ultimate Predator","Decor Reward: Open Domanaar Storage Crate",62130,-1,-1,0,15553,0,10,132096,15,7448210,0,222082,0,0,0,0
 "Evade the Hungering Presence's grasp in Voidstorm for at least 60 seconds.","Thrill of the Chase",,62133,-1,-1,0,15553,0,5,131072,51,4622488,0,222101,0,0,0,0
 "Complete 5 Prey Hunts in War Mode.","The Deadliest of Prey",,62134,-1,-1,0,15605,0,5,131072,12,1450139,0,222107,0,0,0,0
 "Complete a Nightmare Hunt while in War Mode.","Now It's A Party",,62135,-1,-1,0,15605,0,5,131072,13,132295,0,222108,0,0,0,0
@@ -13587,7 +13587,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Champion Dawncrests earned",,62294,-1,-1,0,15176,0,0,1,43,136243,0,223205,0,0,0,0
 ,"Hero Dawncrests earned",,62295,-1,-1,0,15176,0,0,1,44,136243,0,223207,0,0,0,0
 ,"Myth Dawncrests earned",,62296,-1,-1,0,15176,0,0,1,45,136243,0,223209,0,0,0,0
-"Complete the following storylines in Zul'aman and the Coiled Isle.","The Curse of Ula'tek",,62297,-1,-1,0,15547,0,10,131072,24,7578560,0,223231,0,0,0,0
+"Complete the following storylines in Zul'aman and the Coiled Isle.","The Curse of Ula'tek",,62297,-1,-1,0,15547,0,10,131072,25,7578560,0,223231,0,0,0,0
 "Complete an Abundance event having earned points in every score catagory.","Abundance: Loa of all Trades",,62324,-1,-1,0,15553,0,5,131072,81,6712973,0,223262,0,0,0,0
 "Trigger the Treasure Dundun Bonus in each Abundance location.","Abundance: Treasures Aplenty",,62325,-1,-1,0,15553,0,5,131072,90,1604165,0,223264,0,0,0,0
 "Trigger the Golden Glow Bonus in each Abundance location.","Abundance: Golden Opportunities",,62326,-1,-1,0,15553,0,5,131072,91,236261,0,223269,0,0,0,0
@@ -13628,7 +13628,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat all of the following Prey targets on any difficulty.","Gotta Hunt Them All",,62383,-1,-1,0,15605,0,10,131072,11,3565724,0,223523,0,0,0,0
 "Fully unlock the Research Console in Voidstorm.","Staring Into The Void","Mount: Lab-Grown Stormray",62385,-1,-1,0,15547,0,10,0,2,4914666,260697,224708,0,0,0,0
 "Rally your forces against Xal'atath by completing the achievements below.","Light Up the Night","Mount: Brilliant Petalwing",62386,-1,-1,0,15553,0,40,131072,61,7636523,252011,223795,0,0,0,0
-"Log in during the events heralding the launch of Midnight.","It's Nearly Midnight","Decor Reward: Miniature Replica Dark Portal",62387,-1,-1,0,15274,0,0,10617856,97,7476681,0,223807,0,0,0,0
+"Log in during the events heralding the launch of Midnight.","It's Nearly Midnight","Decor Reward: Miniature Replica Dark Portal",62387,-1,-1,0,15274,0,0,10617856,98,7476681,0,223807,0,0,0,0
 "Earn a Five Star Review for your services at the Illicit Rain.","Illicit Rain: Five Stars","Toy: Feeling Fielder Mk. 7",62388,-1,-1,0,15272,0,0,133120,195,3750310,263975,223810,0,0,0,0
 "Proud owner of a Pin-o-Matic Camera.","Craft Your World",,62400,-1,-1,0,15268,0,0,133120,109,7704166,268695,0,0,0,0,0
 "Complete a Prey Hunt in Nightmare Mode while suffering from Lord Viscera's Cat Scratch.","'Tis But A Scratch",,62403,-1,-1,0,15605,0,5,0,2,132140,0,225579,0,0,0,0
@@ -13639,26 +13639,26 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Outgrow the use of Hero Mistcrests during Midnight Season 2.","Hero of the Mist","Character Unlock: Trade Hero for Myth Mistcrests",62414,-1,-1,62412,81,0,0,2048,224,7734059,0,224069,0,0,0,0
 ,"[DNT] Trading Post - Jan26 - Make Good",,62415,-1,-1,0,92,0,0,3276800,142,136243,0,224082,0,0,0,0
 "Obtain an average item level of 331 during Midnight Season 2.","Myth of the Mist",,62416,-1,-1,62414,81,0,0,2048,228,7734061,0,224073,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 12 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 12","Keystones will no longer deplete below level 12 during Midnight Season 2.",62417,-1,-1,0,15272,0,0,2048,251,648754,0,224251,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 13 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 13","Keystones will no longer deplete below level 13 during Midnight Season 2.",62418,-1,-1,0,15272,0,0,2048,252,648754,0,224260,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 14 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 14","Keystones will no longer deplete below level 14 during Midnight Season 2.",62419,-1,-1,0,15272,0,0,2048,253,648754,0,224269,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 15 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 15","Keystones will no longer deplete below level 15 during Midnight Season 2.",62420,-1,-1,0,15272,0,0,2048,254,648754,0,224278,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 16 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 16","Keystones will no longer deplete below level 16 during Midnight Season 2.",62421,-1,-1,0,15272,0,0,2048,255,648754,0,224287,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 17 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 17","Keystones will no longer deplete below level 17 during Midnight Season 2.",62422,-1,-1,0,15272,0,0,2048,256,648754,0,224297,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 18 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 18","Keystones will no longer deplete below level 18 during Midnight Season 2.",62423,-1,-1,0,15272,0,0,2048,257,648754,0,224306,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 19 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 19","Keystones will no longer deplete below level 19 during Midnight Season 2.",62424,-1,-1,0,15272,0,0,2048,258,648754,0,224315,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 20 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 20","Keystones will no longer deplete below level 20 during Midnight Season 2.",62425,-1,-1,0,15272,0,0,2048,259,648754,0,224324,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 21 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 21","Keystones will no longer deplete below level 21 during Midnight Season 2.",62426,-1,-1,0,15272,0,0,2048,260,648754,0,224333,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 22 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 22","Keystones will no longer deplete below level 22 during Midnight Season 2.",62427,-1,-1,0,15272,0,0,2048,261,648754,0,224342,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 23 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 23","Keystones will no longer deplete below level 23 during Midnight Season 2.",62428,-1,-1,0,15272,0,0,2048,262,648754,0,224351,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 24 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 24","Keystones will no longer deplete below level 24 during Midnight Season 2.",62429,-1,-1,0,15272,0,0,2048,263,648754,0,224360,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 25 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 25","Keystones will no longer deplete below level 25 during Midnight Season 2.",62430,-1,-1,0,15272,0,0,2048,264,648754,0,224369,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 26 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 26","Keystones will no longer deplete below level 26 during Midnight Season 2.",62431,-1,-1,0,15272,0,0,2048,265,648754,0,224378,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 27 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 27","Keystones will no longer deplete below level 27 during Midnight Season 2.",62432,-1,-1,0,15272,0,0,2048,266,648754,0,224387,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 28 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 28","Keystones will no longer deplete below level 28 during Midnight Season 2.",62433,-1,-1,0,15272,0,0,2048,267,648754,0,224396,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 29 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 29","Keystones will no longer deplete below level 29 during Midnight Season 2.",62434,-1,-1,0,15272,0,0,2048,268,648754,0,224405,0,0,0,0
-"Complete all Mythic+ dungeons within the time limit at keystone level 30 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 30","Keystones will no longer deplete below level 30 during Midnight Season 2.",62435,-1,-1,0,15272,0,0,2048,269,648754,0,224414,0,0,0,0
-"End Midnight Mythic+ Season 2 with a Mythic+ Rating in the top 0.1% of all players in your region.","Venomous Hero: Midnight Season 2","Title: The Venomous Hero",62436,-1,-1,0,15272,0,0,14336,250,618859,0,224423,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 12 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 12","Keystones will no longer deplete below level 12 during Midnight Season 2.",62417,-1,-1,0,15272,0,0,2048,253,648754,0,224251,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 13 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 13","Keystones will no longer deplete below level 13 during Midnight Season 2.",62418,-1,-1,0,15272,0,0,2048,254,648754,0,224260,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 14 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 14","Keystones will no longer deplete below level 14 during Midnight Season 2.",62419,-1,-1,0,15272,0,0,2048,255,648754,0,224269,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 15 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 15","Keystones will no longer deplete below level 15 during Midnight Season 2.",62420,-1,-1,0,15272,0,0,2048,256,648754,0,224278,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 16 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 16","Keystones will no longer deplete below level 16 during Midnight Season 2.",62421,-1,-1,0,15272,0,0,2048,257,648754,0,224287,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 17 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 17","Keystones will no longer deplete below level 17 during Midnight Season 2.",62422,-1,-1,0,15272,0,0,2048,258,648754,0,224297,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 18 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 18","Keystones will no longer deplete below level 18 during Midnight Season 2.",62423,-1,-1,0,15272,0,0,2048,259,648754,0,224306,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 19 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 19","Keystones will no longer deplete below level 19 during Midnight Season 2.",62424,-1,-1,0,15272,0,0,2048,260,648754,0,224315,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 20 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 20","Keystones will no longer deplete below level 20 during Midnight Season 2.",62425,-1,-1,0,15272,0,0,2048,261,648754,0,224324,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 21 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 21","Keystones will no longer deplete below level 21 during Midnight Season 2.",62426,-1,-1,0,15272,0,0,2048,262,648754,0,224333,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 22 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 22","Keystones will no longer deplete below level 22 during Midnight Season 2.",62427,-1,-1,0,15272,0,0,2048,263,648754,0,224342,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 23 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 23","Keystones will no longer deplete below level 23 during Midnight Season 2.",62428,-1,-1,0,15272,0,0,2048,264,648754,0,224351,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 24 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 24","Keystones will no longer deplete below level 24 during Midnight Season 2.",62429,-1,-1,0,15272,0,0,2048,265,648754,0,224360,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 25 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 25","Keystones will no longer deplete below level 25 during Midnight Season 2.",62430,-1,-1,0,15272,0,0,2048,266,648754,0,224369,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 26 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 26","Keystones will no longer deplete below level 26 during Midnight Season 2.",62431,-1,-1,0,15272,0,0,2048,267,648754,0,224378,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 27 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 27","Keystones will no longer deplete below level 27 during Midnight Season 2.",62432,-1,-1,0,15272,0,0,2048,268,648754,0,224387,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 28 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 28","Keystones will no longer deplete below level 28 during Midnight Season 2.",62433,-1,-1,0,15272,0,0,2048,269,648754,0,224396,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 29 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 29","Keystones will no longer deplete below level 29 during Midnight Season 2.",62434,-1,-1,0,15272,0,0,2048,270,648754,0,224405,0,0,0,0
+"Complete all Mythic+ dungeons within the time limit at keystone level 30 during Midnight Season 2.","Midnight Season 2: Resilient Keystone 30","Keystones will no longer deplete below level 30 during Midnight Season 2.",62435,-1,-1,0,15272,0,0,2048,271,648754,0,224414,0,0,0,0
+"End Midnight Mythic+ Season 2 with a Mythic+ Rating in the top 0.1% of all players in your region.","Venomous Hero: Midnight Season 2","Title: The Venomous Hero",62436,-1,-1,0,15272,0,0,14336,252,618859,0,224423,0,0,0,0
 "Complete The Blinding Vale at Mythic Level 10 or higher, within the time limit.","Keystone Hero: The Blinding Vale","Max Level Unlock: Teleport to The Blinding Vale",62437,2859,-1,0,15272,0,0,264192,65,7354408,0,224428,0,0,0,0
 "Complete Voidscar Arena at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Voidscar Arena","Max Level Unlock: Teleport to Voidscar Arena",62438,2923,-1,0,15272,0,0,264192,66,7439626,0,224430,0,0,0,0
 "Complete Den of Nalorakk at Mythic Level 10 or higher, within the time limit.","Keystone Hero: Den of Nalorakk","Max Level Unlock: Teleport to Den of Nalorakk",62439,2825,-1,0,15272,0,0,264192,67,7266214,0,224432,0,0,0,0
@@ -13707,6 +13707,9 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Earn 2500 Conquest on this character during Midnight Season 2.","Venomous Weapons of Conquest","Item Reward: Venomous Gladiator's Weapon Token (x2)",62497,-1,-1,0,15270,0,0,33554432,537,1594747,0,224795,0,0,0,0
 "Complete a Void Strike or Incursion in Eversong.","Void Assault: Eversong",,62498,-1,-1,0,15610,0,5,131072,2,236762,0,224935,0,0,0,0
 "Complete a Void Strike or Incursion in Zul'Aman.","Void Assault: Zul'Aman",,62499,-1,-1,0,15610,0,5,131072,6,7488399,0,224939,0,0,0,0
+"Complete all 3 candy quests from one of the 3 zones accessible from neighborhoods.","Sweet Tooth",,62500,-1,-1,0,158,0,10,0,32,236546,0,224817,0,0,0,0
+"Collect and deposit 10 ghosts in any neighborhood.","I Ain't Afraid of no Ghost",,62501,-1,-1,0,158,0,10,0,34,236548,0,224830,0,0,0,0
+"Use a power up 3 times in the tree defence activity.","Master of Merry Mayhem",,62502,-1,-1,0,156,0,10,0,23,132387,0,224832,0,0,0,0
 "Catch a Mythic creature during an Abyss Anglers dive.","Abyss Anglers: Pressurized Eyeglass","Reward: Unlock Pressurized Eyeglass for purchase from Depthdiver Jeju",62506,-1,-1,0,15553,0,5,131072,112,4631357,0,224921,0,0,0,0
 "Complete 5 Void Strikes in Eversong.","Void Smasher: Eversong",,62507,-1,-1,62498,15610,0,5,196608,3,236762,0,224941,0,0,0,0
 "Complete 25 Void Strikes in Eversong.","Void Eradicator: Eversong",,62508,-1,-1,62507,15610,0,10,196608,4,236762,0,224943,0,0,0,0
@@ -13716,6 +13719,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete 50 Void Strikes in Zul'Aman.","Void Bane: Zul'Aman",,62512,-1,-1,62511,15610,0,10,196608,9,7488399,0,224951,0,0,0,0
 "Earn 100 Field Accolades from Ritual Sites or Void Assaults.","Outstanding in the Field",,62513,-1,-1,0,15610,0,10,131072,10,2459456,0,224812,0,0,0,0
 "Win Slayer's Rise while controlling Shenzar Refinery, Bastion of Might, Gates of Might, Bastion of Valor, and Gates of Valor.","Slayer's Rise Dominance",,62514,-1,-1,0,15609,0,10,131072,3,7488401,0,224953,0,0,0,0
+"Defeat Rotmire in Sporefall on Heroic difficulty.","Heroic: Rotmire",,63240,1592,-1,0,15566,0,10,131072,35,7852823,0,229025,0,0,0,0
 "In Slayer's Rise, kill an enemy at the Path of Predation before they dismount.","The Voided Gazelle",,62516,-1,-1,0,15609,0,10,131072,4,236361,0,224963,0,0,0,0
 "Kill the enemy faction's ultradon summoned at The Husk or Sparring Grounds.","Rise of the Ultradon Slayer",,62517,-1,-1,0,15609,0,10,131072,5,7448210,0,224965,0,0,0,0
 "Defeat 100 creatures in Void Strikes afflicted with Apex Corruption.","Cosmic Exterminator","Reward: Unlock Cappy for purchase",62518,-1,-1,0,15610,0,10,196608,12,7501330,0,224968,0,0,0,0
@@ -13782,7 +13786,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Dance while defending each of the stones in the Cache of Three event within the Vaults of Atal'Utek.","Dance While Everyone Watches",,62604,-1,-1,0,15553,0,10,0,34,132566,0,225329,0,0,0,0
 ,"[DNT] Research Sites: Collection - Snapdragon Pet - Tracking",,62605,-1,-1,0,15608,0,0,1179648,60,136243,0,225342,0,0,0,0
 "Complete the quest The Omnium Reawakens.","The Sunstrider Omnium",,62606,-1,-1,0,15610,0,10,131072,48,632353,0,225744,0,0,0,0
-,"Sszorak (Heroic The Venomous Abyss)",,63559,3004,-1,0,15542,0,0,1,86,0,0,230943,0,0,0,0
 "Complete the quest Seeking Knowledge: Ritualized Arcana.","Ritualized Arcana",,62607,-1,-1,0,15610,0,0,1179648,50,7439232,0,225746,0,0,0,0
 "Complete the quest Seeking Knowledge: Leyline Assaults.","Leyline Assaults",,62608,-1,-1,0,15610,0,0,1179648,51,7439213,0,225748,0,0,0,0
 "Complete the quest Seeking Knowledge: Magical Primessence.","Magical Primessence",,62609,-1,-1,0,15610,0,0,1179648,52,2011125,0,225750,0,0,0,0
@@ -13842,16 +13845,15 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete 8 different World Quests in Naigtal.","Showdown Success: Naigtal","Pet Reward: Required to unlock Silento for purchase",62882,-1,-1,0,15610,0,5,196608,22,451162,0,227398,0,0,0,0
 "Defeat 6 rare creatures found in Naigtal.","Showdown Slugger: Naigtal","Transmog Reward: Required to unlock Lightforged Armaments for purchase",62883,-1,-1,0,15610,0,5,196608,24,4554456,0,227399,0,0,0,0
 "Complete 15 World Quests in Val or Naigtal on Heroic World Tier.","Heroic: Worlds Ahead",,62887,-1,-1,0,15610,0,5,196608,38,7658128,0,227463,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in Midnight Season 2",62889,-1,-1,0,15531,0,0,133120,60,6025441,0,227445,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in Midnight Season 2",62890,-1,-1,62889,15531,0,0,133120,61,6025441,0,227447,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in Midnight Season 2",62891,-1,-1,62890,15531,0,0,133120,62,6025441,0,227449,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 7 (Season 2)","Unlock: Tier 8 delves in Midnight Season 2",62892,-1,-1,62891,15531,0,0,133120,63,6025441,0,227451,0,0,0,0
-"Defeat Rotmire in Sporefall on Normal difficulty or higher while in a guild group.","Rotmire Guild Run",,63242,1592,-1,0,15570,0,10,61440,10,7852823,0,229029,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in Midnight Season 2",62893,-1,-1,62892,15531,0,0,133120,64,6025441,0,227453,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in Midnight Season 2",62894,-1,-1,62893,15531,0,0,133120,65,6025441,0,227455,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in Midnight Season 2",62895,-1,-1,62894,15531,0,0,133120,66,6025441,0,227457,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in Midnight Season 2",62889,-1,-1,0,15531,0,0,133120,64,6025441,0,227445,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in Midnight Season 2",62890,-1,-1,62889,15531,0,0,133120,65,6025441,0,227447,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in Midnight Season 2",62891,-1,-1,62890,15531,0,0,133120,66,6025441,0,227449,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 7 (Season 2)","Unlock: Tier 8 delves in Midnight Season 2",62892,-1,-1,62891,15531,0,0,133120,67,6025441,0,227451,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in Midnight Season 2",62893,-1,-1,62892,15531,0,0,133120,68,6025441,0,227453,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in Midnight Season 2",62894,-1,-1,62893,15531,0,0,133120,69,6025441,0,227455,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in Midnight Season 2",62895,-1,-1,62894,15531,0,0,133120,70,6025441,0,227457,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Power Creep",,62896,-1,-1,0,15610,0,0,1245188,40,841379,0,227515,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 11 (Season 2)","Title: High Explorer",62897,-1,-1,62895,15531,0,0,133120,67,6025441,0,227459,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 11 (Season 2)","Title: High Explorer",62897,-1,-1,62895,15531,0,0,133120,71,6025441,0,227459,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Cradle of Power",,62898,-1,-1,0,15610,0,0,1245188,41,841380,0,227527,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Absolute Power",,62899,-1,-1,0,15610,0,0,1245188,42,841381,0,227536,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Power Beyond Measure",,62900,-1,-1,0,15610,0,0,1245188,43,841382,0,227545,0,0,0,0
@@ -13877,7 +13879,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Earn the rank of Challenger I during Midnight Season 2.","Challenger I: Midnight Season 2","Seasonal Character Title: Challenger",62927,-1,-1,0,15270,0,0,14336,544,236543,0,227924,0,0,0,0
 "Earn the rank of Rival I during Midnight Season 2.","Rival I: Midnight Season 2","Seasonal Character Title: Rival",62928,-1,-1,0,15270,0,0,14336,548,236543,0,227930,0,0,0,0
 "Earn the rank of Duelist during Midnight Season 2.","Duelist: Midnight Season 2","Seasonal Character Title: Duelist",62929,-1,-1,0,15270,0,0,14336,552,236543,0,227936,0,0,0,0
-,"Sszorak (Normal The Venomous Abyss)",,63558,3004,-1,0,15542,0,0,1,85,0,0,230941,0,0,0,0
 "Win 50 3v3 games while at Elite rank during Midnight Season 2.","Gladiator: Midnight Season 2","Seasonal Character Title: Gladiator",62930,-1,-1,0,15270,0,0,14336,556,236543,275302,227942,0,0,0,0
 "Earn the rank of Elite during Midnight Season 2.","Elite: Midnight Season 2","Seasonal Character Title: the Elite",62931,-1,-1,0,15270,0,0,14336,554,236543,0,227944,0,0,0,0
 "Win 100 Rated Solo Shuffle rounds while at Elite rank during Midnight Season 2.","Legend: Midnight Season 2","Reward: Pennant & Seasonal Character Title",62932,-1,-1,0,15270,0,0,14336,560,236543,0,227950,0,0,0,0
@@ -13910,11 +13911,11 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 ,"Rotmire (Heroic Sporefall)",,63235,1592,-1,0,15542,0,0,1,55,0,0,229011,0,0,0,0
 ,"Rotmire (Mythic Sporefall)",,63236,1592,-1,0,15542,0,0,1,56,0,0,229019,0,0,0,0
 "Defeat Rotmire in Sporefall on any difficulty.",Rotmire,,63237,1592,-1,0,15566,0,10,131072,31,7852823,0,229023,0,0,0,0
-"Defeat Rotmire in Sporefall on Heroic difficulty.","Heroic: Rotmire",,63240,1592,-1,0,15566,0,10,131072,32,7852823,0,229025,0,0,0,0
-"Defeat Rotmire in Sporefall on Mythic difficulty.","Mythic: Rotmire",,63241,1592,-1,0,15566,0,10,131072,33,7852823,0,229027,0,0,0,0
+"Defeat Rotmire in Sporefall on Mythic difficulty.","Mythic: Rotmire",,63241,1592,-1,0,15566,0,10,131072,36,7852823,0,229027,0,0,0,0
+"Defeat Rotmire in Sporefall on Normal difficulty or higher while in a guild group.","Rotmire Guild Run",,63242,1592,-1,0,15570,0,10,61440,10,7852823,0,229029,0,0,0,0
 "Defeat Rotmire in Sporefall on Heroic difficulty while in a guild group.","Heroic: Rotmire Guild Run",,63246,1592,-1,0,15570,0,10,61440,11,7852823,0,229033,0,0,0,0
 "Defeat Rotmire in Sporefall on Mythic difficulty while in a guild group.","Mythic: Rotmire Guild Run",,63247,1592,-1,0,15570,0,10,61440,12,7852823,0,229035,0,0,0,0
-"Defeat the Entombed Sentinels after each Sentinel uses Vitriolic Stasis to restore more than half its total health in The Venomous Abyss on Normal difficulty or higher.","Is Venom Stasis A Joke To You?",,63250,3004,-1,0,15566,0,10,0,49,6866618,0,229086,0,0,0,0
+"Defeat the Entombed Sentinels after each Sentinel uses Vitriolic Stasis to restore more than half its total health in The Venomous Abyss on Normal difficulty or higher.","Is Venom Stasis A Joke To You?",,63250,3004,-1,0,15566,0,10,0,53,6866618,0,229086,0,0,0,0
 "Donate to Bar Tab Barrels at taverns and inns in Midnight zones.","A Round on the House in Midnight",,63253,-1,-1,0,162,0,10,131072,14,132622,0,229102,0,0,0,0
 "Complete the raid achievements listed below.","Glory of the Venomous Raider","Mount: Crimson Venomfang",63254,-1,-1,0,168,0,25,143360,69,8039569,275652,229101,0,0,0,0
 ,"[DNT]Midnight Keystone Myth: Season 1 Personal Achievement",,63263,-1,-1,0,15272,0,0,9437188,236,136243,0,228514,0,0,0,0
@@ -13922,9 +13923,9 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat a world boss in Naigtal or Val.","Heroic Tendencies","Unlocks Heroic World Tier for Naigtal and Val",63323,-1,-1,0,15610,0,0,1179652,36,236497,0,229215,0,0,0,0
 "Earn 5 Motes of Omnial Inquiry to use in the Omnium Folio.","Omnium Folio Studies","Decor Reward: Sunstrider Omnium Simulacrum",63325,-1,-1,0,15610,0,10,132096,49,7549225,0,229349,0,0,0,0
 "Defeat Azta'rec in his lair during Midnight Season 2.","My Venomous Nemesis","Reward: Apophic Patagia",63326,-1,-1,0,15531,0,0,14336,12,7876113,0,229398,0,0,0,0
-"Defeat Azta'rec in his lair on Tier ?? during Midnight Season 2.","Purging the Poison","Title: the Poisonous",63332,-1,-1,0,15531,0,0,14336,17,136070,0,229401,0,0,0,0
-"Defeat Azta'rec in his lair on Tier ?? without any other players in your party during Midnight Season 2.","Let Me Solo Him: Azta'rec","Reward: Apophic Soul Crusher",63333,-1,-1,0,15531,0,0,14336,22,7939993,0,229403,0,0,0,0
-"Defeat Azta'rec in his lair on Tier ?? without any other players in your party, within the first week of Midnight Season 2.","Fabled Let Me Solo Him: Azta'rec","Title: Fabled Vanquisher of Azta'rec",63334,-1,-1,0,15531,0,0,145408,25,1398085,0,229405,0,0,0,0
+"Defeat Azta'rec in his lair on Tier ?? during Midnight Season 2.","Purging the Poison","Title: the Poisonous",63332,-1,-1,0,15531,0,0,14336,18,136070,0,229401,0,0,0,0
+"Defeat Azta'rec in his lair on Tier ?? without any other players in your party during Midnight Season 2.","Let Me Solo Him: Azta'rec","Reward: Apophic Soul Crusher",63333,-1,-1,0,15531,0,0,14336,23,7939993,0,229403,0,0,0,0
+"Defeat Azta'rec in his lair on Tier ?? without any other players in your party, within the first week of Midnight Season 2.","Fabled Let Me Solo Him: Azta'rec","Title: Fabled Vanquisher of Azta'rec",63334,-1,-1,0,15531,0,0,145408,28,1398085,0,229405,0,0,0,0
 "Score a goal with the Kickable Practice Ball in Silvermoon while wearing a Tabard of Participation.",Goal!,"Decor Reward: Prized Orb of Azeroth, Framed Horde Pride and Framed Alliance Pride",63343,-1,-1,0,15268,0,0,132096,120,660531,0,229492,0,0,0,0
 "Defeat 15 rare creatures found in Val or Naigtal on Heroic World Tier.","Heroic Slugger",,63348,-1,-1,0,15610,0,5,131072,39,4554456,0,229606,0,0,0,0
 "Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maximus for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
@@ -13937,14 +13938,14 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete the following quest lines on Naigtal.","A Hal'hadar Walks into a Swamp",,63385,-1,-1,0,15610,0,10,0,34,1711338,0,229872,0,0,0,0
 "Complete the following quest lines on Val.","Frosty Domanaar Politics",,63386,-1,-1,0,15610,0,10,0,35,6994479,0,229883,0,0,0,0
 "Defeat each of the Curse Surges on the Coiled Isles.","Turn the Surge",,63390,-1,-1,0,15553,0,10,131072,41,5764921,0,229799,0,0,0,0
-"Defeat Sszorak while jumping through each ring that appears in The Venomous Abyss on Normal difficulty or higher.","Jumping Through Hoops",,63391,3004,-1,0,15566,0,10,0,52,1392558,0,229963,0,0,0,0
+"Defeat Sszorak while jumping through each ring that appears in The Venomous Abyss on Normal difficulty or higher.","Jumping Through Hoops",,63391,3004,-1,0,15566,0,10,0,55,1392558,0,229963,0,0,0,0
 "Collect the Skyriding Glyph at the Fangs in the Coiled Isles.","Skyriding Glyphs: The Fangs",,63394,-1,-1,0,15462,0,0,1179648,1827,5926319,0,0,0,0,0,0
 "Discover the following Skyriding Glyphs in the Coiled Isles:","The Coiled Isles Glyph Hunter",,63395,-1,-1,0,15462,0,10,131072,1836,5926319,0,229975,0,0,0,0
-"Defeat Vashnik after killing the Solidified Snake Venom in The Venomous Abyss on Normal difficulty or higher.","Kept You Waiting Huh?",,63397,3004,-1,0,15566,0,10,0,51,133693,0,229980,0,0,0,0
+"Defeat Vashnik after killing the Solidified Snake Venom in The Venomous Abyss on Normal difficulty or higher.","Kept You Waiting Huh?",,63397,3004,-1,0,15566,0,10,0,52,133693,0,229980,0,0,0,0
 "Visit the Candy Buckets in the Midnight zones.","Tricks and Treats of Midnight",,63400,-1,-1,0,158,0,10,131072,31,5222578,0,230071,0,0,0,0
 "Defeat all of the following Prey targets from the Coiled Isle.","Prey: Coiled Nightmares",,63415,-1,-1,0,15605,0,5,131072,53,132211,0,230235,0,0,0,0
 "Complete a Prey Hunt in the Coiled Isle.","That's a Wrap",,63416,-1,-1,0,15605,0,5,131072,54,2399272,0,230240,0,0,0,0
-"Defeat Nek'zali, the Soulcoiler after returning Kupamanduka to the Soulcoil Well in The Venomous Abyss on Normal difficulty or higher.","Well, Well, Little Sky",,63418,3004,-1,0,15566,0,10,0,48,804967,0,230261,0,0,0,0
+"Defeat Nek'zali, the Soulcoiler after returning Kupamanduka to the Soulcoil Well in The Venomous Abyss on Normal difficulty or higher.","Well, Well, Little Sky",,63418,3004,-1,0,15566,0,10,0,51,804967,0,230261,0,0,0,0
 "Collect the Skyriding Glyph at the Forum in the Coiled Isles.","Skyriding Glyphs: The Forum",,63420,-1,-1,0,15462,0,0,1179648,1874,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Forum in the Coiled Isles.","Skyriding Glyphs: The Wreck of Sethralis's Scales",,63421,-1,-1,0,15462,0,0,1179648,1875,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Southern Island in the Coiled Isles.","Skyriding Glyphs: Southern Island",,63422,-1,-1,0,15462,0,0,1179648,1876,5926319,0,0,0,0,0,0
@@ -13956,7 +13957,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Collect the Skyriding Glyph at the Blistering Terrace in the Coiled Isles.","Skyriding Glyphs: Blistering Terrace",,63428,-1,-1,0,15462,0,0,1179648,1882,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Gate of the Serpent's Eye in the Coiled Isles.","Skyriding Glyphs: Gate of the Serpent's Eye",,63430,-1,-1,0,15462,0,0,1179648,1883,5926319,0,0,0,0,0,0
 "Collect all of the following types of offerings from Ofi's Cauldron.","Mysterious Mix Master","Decor Reward: Mysterious Voodoo Mask",63432,-1,-1,0,15553,0,5,132096,44,133778,0,230409,0,0,0,0
-"Complete the Delver's Journey before Midnight: Season 2 ends.","Midnight: Journey's End (Season 2)",,63433,-1,-1,0,15531,0,0,133120,30,6025441,0,230426,0,0,0,0
+"Complete the Delver's Journey before Midnight: Season 2 ends.","Midnight: Journey's End (Season 2)",,63433,-1,-1,0,15531,0,0,133120,34,6025441,0,230426,0,0,0,0
 "Raise delve companion Valeera to level 70.","Buddy System VII: Valeera",,63434,-1,-1,40461,15571,0,10,131072,51,236568,0,230430,0,0,0,0
 "Raise delve companion Valeera to level 80.","Buddy System VIII: Valeera",,63435,-1,-1,41537,15571,0,10,131072,52,236569,0,230428,0,0,0,0
 "Complete each story variant of The Ring of Glory.","The Ring of Glory Stories",,63436,-1,-1,0,15571,0,5,131072,34,6999168,0,230515,0,0,0,0
@@ -13972,22 +13973,23 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Loot 100 Ossified Relics.","Let Sleeping Skulls Lie",,63457,-1,-1,0,15605,0,5,131072,60,8097232,0,230711,0,0,0,0
 "Collect the appearances of a class set from Midnight Season 2.","Fang Fatale",,63472,-1,-1,0,15259,0,10,131072,60,8039569,0,230749,0,0,0,0
 "Complete one of the achievements or feats of strength listed below:",Sssensational!,"Reward: Insidious Venomstone",63473,-1,-1,0,15259,0,10,131072,61,7966624,0,230751,0,0,0,0
-"Defeat Ula'tek in the Venomous Abyss on Mythic difficulty.","Mythic: Ula'tek","Title: Venom's End",63476,3004,-1,0,15566,0,10,131072,47,7966624,0,230755,0,0,0,0
+"Defeat Ula'tek in the Venomous Abyss on Mythic difficulty.","Mythic: Ula'tek","Title: Venom's End",63476,3004,-1,0,15566,0,10,131072,50,7966624,0,230755,0,0,0,0
 "Reach 2500 Midnight Anglin' Score in the Fishing Journal.","The Briny Best","Title: Briny",63510,-1,-1,0,171,0,10,393216,100,236575,0,230757,0,0,0,0
 "Fish up all 10 artifacts from Tokka's departed crewmates on the Coiled Isle.","Treasures of the Damned",,63512,-1,-1,0,171,0,10,131072,101,1542849,0,230825,0,0,0,0
-"Defeat the following bosses on Heroic difficulty.","Heroic: The Venomous Abyss",,63520,3004,-1,63521,15566,0,10,131072,38,8039569,0,230855,0,0,0,0
-"Defeat the following bosses on any difficulty.","The Venomous Abyss",,63521,3004,-1,0,15566,0,10,131072,37,8039569,0,230864,0,0,0,0
-"Defeat the following bosses on Mythic difficulty.","Mythic: The Venomous Abyss",,63522,3004,-1,63520,15566,0,10,131072,39,8039569,0,230873,0,0,0,0
-"Defeat Nek'zali the Soulcoiler in The Venomous Abyss on Mythic difficulty.","Mythic: Nek'zali the Soulcoiler",,63523,3004,-1,0,15566,0,10,0,40,7966621,0,230882,0,0,0,0
-"Defeat the Entombed Sentinels in The Venomous Abyss on Mythic difficulty.","Mythic: Entombed Sentinels",,63524,3004,-1,0,15566,0,10,0,41,7966620,0,230884,0,0,0,0
-"Defeat The Lost Explorers in The Venomous Abyss on Mythic difficulty.","Mythic: The Lost Explorers",,63525,3004,-1,0,15566,0,10,0,42,7966622,0,230886,0,0,0,0
-"Defeat Vashnik the Malignant in The Venomous Abyss on Mythic difficulty.","Mythic: Vashnik the Malignant",,63526,3004,-1,0,15566,0,10,0,43,7966618,0,230888,0,0,0,0
-"Defeat Sszorak in The Venomous Abyss on Mythic difficulty.","Mythic: Sszorak",,63527,3004,-1,0,15566,0,10,0,44,7966619,0,230890,0,0,0,0
-"Defeat The Twin Fangs in The Venomous Abyss on Mythic difficulty.","Mythic: The Twin Fangs",,63528,3004,-1,0,15566,0,10,0,45,7966623,0,230892,0,0,0,0
-"Defeat The Coiled Altar in The Venomous Abyss on Mythic difficulty.","Mythic: The Coiled Altar",,63529,3004,-1,0,15566,0,10,0,46,7966625,0,230894,0,0,0,0
-"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Essence of Ula'tek",,63530,3004,-1,0,15566,0,10,131072,34,7956740,0,230896,0,0,0,0
-"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Beasts of Ula'tek",,63531,3004,-1,0,15566,0,10,131072,35,7956734,0,230900,0,0,0,0
-"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Ula'tek",,63532,3004,-1,0,15566,0,10,131072,36,7966624,0,230904,0,0,0,0
+"Complete the Promise of Tomorrow storyline.","The Promise of Tomorrow","Title: Light's Faithful",63519,-1,-1,0,15547,0,10,131072,24,237550,0,230838,0,0,0,0
+"Defeat the following bosses on Heroic difficulty.","Heroic: The Venomous Abyss",,63520,3004,-1,63521,15566,0,10,131072,41,8039569,0,230855,0,0,0,0
+"Defeat the following bosses on any difficulty.","The Venomous Abyss",,63521,3004,-1,0,15566,0,10,131072,40,8039569,0,230864,0,0,0,0
+"Defeat the following bosses on Mythic difficulty.","Mythic: The Venomous Abyss",,63522,3004,-1,63520,15566,0,10,131072,42,8039569,0,230873,0,0,0,0
+"Defeat Nek'zali the Soulcoiler in The Venomous Abyss on Mythic difficulty.","Mythic: Nek'zali the Soulcoiler",,63523,3004,-1,0,15566,0,10,0,43,7966621,0,230882,0,0,0,0
+"Defeat the Entombed Sentinels in The Venomous Abyss on Mythic difficulty.","Mythic: Entombed Sentinels",,63524,3004,-1,0,15566,0,10,0,44,7966620,0,230884,0,0,0,0
+"Defeat The Lost Explorers in The Venomous Abyss on Mythic difficulty.","Mythic: The Lost Explorers",,63525,3004,-1,0,15566,0,10,0,45,7966622,0,230886,0,0,0,0
+"Defeat Vashnik the Malignant in The Venomous Abyss on Mythic difficulty.","Mythic: Vashnik the Malignant",,63526,3004,-1,0,15566,0,10,0,46,7966618,0,230888,0,0,0,0
+"Defeat Sszorak in The Venomous Abyss on Mythic difficulty.","Mythic: Sszorak",,63527,3004,-1,0,15566,0,10,0,47,7966619,0,230890,0,0,0,0
+"Defeat The Twin Fangs in The Venomous Abyss on Mythic difficulty.","Mythic: The Twin Fangs",,63528,3004,-1,0,15566,0,10,0,48,7966623,0,230892,0,0,0,0
+"Defeat The Coiled Altar in The Venomous Abyss on Mythic difficulty.","Mythic: The Coiled Altar",,63529,3004,-1,0,15566,0,10,0,49,7966625,0,230894,0,0,0,0
+"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Essence of Ula'tek",,63530,3004,-1,0,15566,0,10,131072,37,7956740,0,230896,0,0,0,0
+"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Beasts of Ula'tek",,63531,3004,-1,0,15566,0,10,131072,38,7956734,0,230900,0,0,0,0
+"Defeat the following bosses within The Venomous Abyss.","The Venomous Abyss: Ula'tek",,63532,3004,-1,0,15566,0,10,131072,39,7966624,0,230904,0,0,0,0
 ,"Nek'zali the Soulcoiler (Raid Finder The Venomous Abyss)",,63533,3004,-1,0,15542,0,0,1,68,0,0,230907,0,0,0,0
 ,"Nek'zali the Soulcoiler (Normal The Venomous Abyss)",,63534,3004,-1,0,15542,0,0,1,69,0,0,230909,0,0,0,0
 ,"Nek'zali the Soulcoiler (Heroic The Venomous Abyss)",,63535,3004,-1,0,15542,0,0,1,70,0,0,230911,0,0,0,0
@@ -14008,6 +14010,8 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 ,"Vashnik the Malignant (Normal The Venomous Abyss)",,63555,3004,-1,0,15542,0,0,1,81,0,0,230933,0,0,0,0
 ,"Vashnik the Malignant (Heroic The Venomous Abyss)",,63556,3004,-1,0,15542,0,0,1,82,0,0,230935,0,0,0,0
 ,"Vashnik the Malignant (Mythic The Venomous Abyss)",,63557,3004,-1,0,15542,0,0,1,83,0,0,230937,0,0,0,0
+,"Sszorak (Normal The Venomous Abyss)",,63558,3004,-1,0,15542,0,0,1,85,0,0,230941,0,0,0,0
+,"Sszorak (Heroic The Venomous Abyss)",,63559,3004,-1,0,15542,0,0,1,86,0,0,230943,0,0,0,0
 ,"Sszorak (Mythic The Venomous Abyss)",,63560,3004,-1,0,15542,0,0,1,87,0,0,230945,0,0,0,0
 ,"The Twin Fangs (Normal The Venomous Abyss)",,63561,3004,-1,0,15542,0,0,1,89,0,0,230949,0,0,0,0
 ,"The Twin Fangs (Heroic The Venomous Abyss)",,63562,3004,-1,0,15542,0,0,1,90,0,0,230951,0,0,0,0
@@ -14026,7 +14030,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "During the Vacation Season endeavor, find every Secret Souvenir in your Founder's Point neighborhood.","Souvenir Seeker, Founder's Point",,63605,2736,-1,0,15606,0,10,131072,3,8033179,0,231200,0,0,0,0
 "Complete the Souvenir Seeker achievements for both Razorwind Shores and Founder's Point.","Superlative Souvenir Seeker",,63606,-1,-1,0,15606,0,10,133120,4,1719412,0,231261,0,0,0,0
 "Collect any armor set from Midnight PvP Season 2.","Venomous Vestments",,63608,-1,-1,0,15259,0,10,131072,97,7871829,0,231279,0,0,0,0
-"Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.","No Egg Scramble","Companion Pet: Ula'took",63609,3004,-1,0,15566,0,10,0,55,236999,279387,231281,0,0,0,0
+"Defeat Ula'tek before the Greasy Hatchling breaks in The Venomous Abyss on Normal difficulty or higher.","No Egg Scramble","Companion Pet: Ula'took",63609,3004,-1,0,15566,0,10,0,58,236999,279387,231281,0,0,0,0
 "Discover the Funerary Inscriptions throughout the Vaults of Atal'Utek","The Honored Dead",,63610,-1,-1,0,15553,0,5,131072,37,7253129,0,231283,0,0,0,0
 "Complete the Preyhunter's Journey before Midnight: Season 2 ends.","Big Prey Hunter (Season 2)",,63611,-1,-1,0,81,0,0,133120,3,7493985,0,231296,0,0,0,0
 ,"Nymrissa Wavecaller (World The Tidebound Grotto)",,63613,2987,-1,0,15542,0,0,1,100,0,0,231302,0,0,0,0
@@ -14047,7 +14051,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Prove your mastery over the inhospitable Vaults of Atal'Utek by completing the achievements below.","Assault the Vault","Mount: Venomous Coiler",63630,-1,-1,0,15553,0,10,131072,28,136070,276801,231372,0,0,0,0
 "Reach ""Bloodsworn Crew"" with Captain Tokka.","Captain Tokka's Crew",,63631,-1,-1,0,15600,0,10,131072,7,2065576,0,231390,0,0,0,0
 "Earn ""Trophy"" rank with the following fish:","Toxic Trophies",,63632,-1,-1,0,171,0,10,131072,103,7816874,0,231395,0,0,0,0
-"Feed Ki'clak 5 snacks via completing the world quest ""Ki'clak Snack Attack"" in the Coiled Isle.","A Stack of Snacks","Pet: Ki'clak",63633,-1,-1,0,15547,0,5,131072,25,8032875,0,231415,0,0,0,0
+"Feed Ki'clak 5 snacks via completing the world quest ""Ki'clak Snack Attack"" in the Coiled Isle.","A Stack of Snacks","Pet: Ki'clak",63633,-1,-1,0,15547,0,5,131072,26,8032875,0,231415,0,0,0,0
 "Speak with Captain Tokka while The Coiled Huntress is equipped.","Where Did You Get That?",,63634,-1,-1,0,171,0,5,131072,104,7949493,0,231419,0,0,0,0
 "Prove your seaworthiness to Captain Tokka by completing the achievements below.","Tokka's Terrible Trials","Title: Bloodsworn Mariner",63635,-1,-1,0,171,0,10,131072,105,7816872,0,231421,0,0,0,0
 "Unlock every talent point at the Altar of Corrosion within the Vaults of Atal'Utek.","Fully Corroded","Title: The Snake",63636,-1,-1,0,15553,0,10,0,38,348565,0,231481,0,0,0,0
@@ -14057,7 +14061,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Survive 100 Toxic Snare barrages on Hard or Nightmare Mode.","Sashay Away",,63642,-1,-1,0,15605,0,5,131072,57,1305155,0,231513,0,0,0,0
 "Kill 150 Pack Scouts on Hard or Nightmare Mode.","You Guys, Again?",,63643,-1,-1,0,15605,0,5,131072,59,643249,0,231515,0,0,0,0
 "Kill 200 Venom-Bloated Python while in Hard or Nightmare Mode.","Kill Me Now",,63644,-1,-1,0,15605,0,5,131072,58,132211,0,231517,0,0,0,0
-"Defeat The Lost Explorers including Hoji in The Venomous Abyss on Normal difficulty or higher.","Accidental Inclusion",,63645,3004,-1,0,15566,0,10,0,50,7966622,0,231546,0,0,0,0
+"Defeat The Lost Explorers including Hoji in The Venomous Abyss on Normal difficulty or higher.","Accidental Inclusion",,63645,3004,-1,0,15566,0,10,0,54,7966622,0,231546,0,0,0,0
 "Defeat the following bosses in The Venomous Abyss on Normal difficulty or higher while in a guild group.","The Venomous Abyss Guild Run",,63646,3004,-1,0,15570,0,10,61440,13,8039569,0,231548,0,0,0,0
 "Defeat the following bosses in The Venomous Abyss on Heroic difficulty or higher while in a guild group.","Heroic: The Venomous Abyss Guild Run",,63647,3004,-1,0,15570,0,10,61440,14,8039569,0,231559,0,0,0,0
 "Defeat Ula'tek in The Venomous Abyss on Mythic difficulty while in a guild group.","Mythic: Ula'tek Guild Run",,63648,3004,-1,0,15570,0,10,61440,15,7966624,0,231568,0,0,0,0
@@ -14065,20 +14069,63 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat Ula'tek in The Venomous Abyss on Mythic difficulty, during Midnight Season 2.","Cutting Edge: Ula'tek",,63651,3004,-1,63650,15271,0,0,6144,102,7966624,0,231574,0,0,0,0
 "Among the first two hundred guilds worldwide to defeat Ula'tek on Mythic difficulty.","Hall of Fame: Ula'tek","Title: Famed Slayer of Ula'tek",63652,3004,-1,0,15093,0,0,4258304,55,7966624,0,231576,0,0,0,0
 "Complete 250 patrols within the Vaults of Atal'Utek.","Pro Poison Patroller","Mount: Emerald Skyfang",63653,-1,-1,0,15553,0,10,131072,40,7474744,276553,231595,0,0,0,0
-"Defeat the Twin Fangs after feeding Ithraz the following slimes in order during Ravenous Feast in The Venomous Abyss on Normal difficulty or higher.","Taking a Bite out of Slime",,63656,3004,-1,0,15566,0,10,0,53,3459153,0,231621,0,0,0,0
+"Defeat the Twin Fangs after feeding Ithraz the following slimes in order during Ravenous Feast in The Venomous Abyss on Normal difficulty or higher.","Taking a Bite out of Slime",,63656,3004,-1,0,15566,0,10,0,56,3459153,0,231621,0,0,0,0
+"Reach Exalted status with the Aqir Research Enclave.","Aqir Research Associate",,63657,-1,-1,0,15274,0,0,2228224,100,463478,0,231673,0,0,0,0
+"Complete each of the 6 Aqir Invasion scenarios at least once.","No Hives Left Standing",,63658,-1,-1,0,15274,0,0,2228224,102,133575,0,231689,0,0,0,0
+"Complete the following Aqir Invasion activities:","Bane of the Swarm","Title: Bane of the Swarm",63659,-1,-1,0,15274,0,0,131072,104,441140,0,231696,0,0,0,0
 "Discover all of the lore objects found on the Coiled Isle.","Student of Hissstory","Reward: Cursed Badge of the Soulcoilers",63662,-1,-1,0,15553,0,10,131072,27,8032876,280419,231730,0,0,0,0
-"Defeat The Coiled Altar while all players are afflicted by Unnerving Fixation in The Venomous Abyss on Normal difficulty or higher.","Watch Out Behind You",,63669,3004,-1,0,15566,0,10,0,54,841382,0,232335,0,0,0,0
-"Experience an Ancestral Vision and comfort the trapped spirits scattered within in The Venomous Abyss on Normal difficulty or higher.","Comforting Da Spirits",,63670,3004,-1,0,15566,0,10,0,56,7874491,0,231912,0,0,0,0
-"Reversed the ritual performed on Slitherfang in the Altar of Fangs.","In Case Of Emergency",,63679,-1,-1,0,15274,0,0,2048,98,7746469,0,231948,0,0,0,0
-"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty.","Heroic: Nymrissa Wavecaller",,63681,2987,-1,0,15566,0,10,0,58,3012069,0,232081,0,0,0,0
-"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Mythic difficulty.","Mythic: Nymrissa Wavecaller",,63682,2987,-1,0,15566,0,10,0,59,3012069,0,232087,0,0,0,0
-"Defeat Nymrissa Wavecaller in The Tidebound Grotto on any difficulty.","Nymrissa Wavecaller",,63683,2987,-1,0,15566,0,10,0,57,3012069,0,232089,0,0,0,0
+"Defeat The Coiled Altar while all players are afflicted by Unnerving Fixation in The Venomous Abyss on Normal difficulty or higher.","Watch Out Behind You",,63669,3004,-1,0,15566,0,10,0,57,841382,0,232335,0,0,0,0
+"Experience an Ancestral Vision and comfort the trapped spirits scattered within The Venomous Abyss on Normal difficulty or higher.","Comforting De Spirits",,63670,3004,-1,0,15566,0,10,0,59,7874491,0,231912,0,0,0,0
+"Reversed the ritual performed on Slitherfang in the Altar of Fangs.","In Case Of Emergency",,63679,-1,-1,0,15274,0,0,2048,99,7746469,0,231948,0,0,0,0
+"Complete 10 Aqir Invasions.","Driving Back the Swarm",,63680,-1,-1,0,15274,0,0,131072,103,458250,0,232026,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty.","Heroic: Nymrissa Wavecaller",,63681,2987,-1,0,15566,0,10,0,61,3012069,0,232081,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on Mythic difficulty.","Mythic: Nymrissa Wavecaller",,63682,2987,-1,0,15566,0,10,0,62,3012069,0,232087,0,0,0,0
+"Defeat Nymrissa Wavecaller in The Tidebound Grotto on any difficulty.","Nymrissa Wavecaller",,63683,2987,-1,0,15566,0,10,0,60,3012069,0,232089,0,0,0,0
 "Defeat Nymrissa Wavecaller in The Tidebound Grotto on Normal difficulty or higher while in a guild group.","Nymrissa Wavecaller Guild Run",,63686,2987,-1,0,15570,0,10,28672,16,3012069,0,232202,0,0,0,0
 "Defeat Nymrissa Wavecaller in The Tidebound Grotto on Heroic difficulty while in a guild group.","Heroic: Nymrissa Wavecaller Guild Run",,63687,2987,-1,0,15570,0,10,28672,17,3012069,0,232204,0,0,0,0
 "Defeat Nymrissa Wavecaller in The Tidebound Grotto on Mythic difficulty while in a guild group.","Mythic: Nymrissa Wavecaller Guild Run",,63688,2987,-1,0,15570,0,10,28672,18,3012069,0,232206,0,0,0,0
+,"[DNT]Midnight Keystone Myth: Season 2 Personal Achievement",,63689,-1,-1,0,15272,0,0,9437188,251,136243,0,232359,0,0,0,0
+"Attain a Mythic+ Rating of at least [PH] during Midnight Season 2.","Midnight Keystone Myth: Season 2","Title: The Venomous Contender & Item: Timelost Saddle",63690,-1,-1,62449,15272,0,0,395264,250,648753,0,232362,0,0,0,0
+"Defeat Kith'ix in The Unbinding of Kith'ix on any difficulty.",Kith'ix,,63692,3095,-1,0,15566,0,10,131072,32,8214194,0,232471,0,0,0,0
+"Defeat Kith'ix in The Unbinding of Kith'ix on Heroic difficulty.","Heroic: Kith'ix",,63693,3095,-1,63692,15566,0,10,131072,33,8214194,0,232473,0,0,0,0
+"Defeat Kith'ix in The Unbinding of Kith'ix on Mythic difficulty.","Mythic: Kith'ix",,63694,3095,-1,63693,15566,0,10,131072,34,8214194,0,232475,0,0,0,0
 "Win 10 matches of Training Grounds Arena.","Arena Exercise",,63695,-1,-1,0,15575,0,5,131072,7,236655,0,232592,0,0,0,0
 "Win 25 matches of Training Grounds Arena.","Arena Exercise",,63696,-1,-1,63695,15575,0,5,131072,8,236655,0,232594,0,0,0,0
 "Win 100 matches of Training Grounds Arena.","Arena Exercise",,63697,-1,-1,63696,15575,0,5,131072,9,236655,0,232596,0,0,0,0
 "Win 250 matches of Training Grounds Arena.","Arena Exercise",,63698,-1,-1,63697,15575,0,5,131072,10,236655,0,232598,0,0,0,0
 "Win Training Grounds Arena in 4 different arenas.","World Wide Trainer",,63699,-1,-1,0,15575,0,5,131072,11,132181,0,232600,0,0,0,0
+"used to award pepe decor","[DNT] Hallow's End Pepe Decor",,63700,-1,-1,0,158,0,0,1180672,35,136243,0,232661,0,0,0,0
+"Logged in during WoW's 22nd Anniversary.","WoW's 22nd Anniversary",,63714,-1,-1,0,15274,0,0,2048,80,133783,0,232921,0,0,0,0
+"Defeat Kindo'Jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","Let Me Solo Him: Kindo'Jan","Reward: Loa-Blessed Wayfarer",63715,-1,-1,0,15531,0,0,14336,24,8269989,0,232931,0,0,0,0
+"Defeat Kindo'jan within his Labyrinth.","The First Hash'ey","Title: Loa-Blessed",63716,-1,-1,0,15531,0,0,14336,13,3601564,0,232998,0,0,0,0
+"Find and open all Ancient Chests hidden in Kindo'jan's Labyrinth.","Kindo'jan's Labyrinth Discoveries","Title: Treasure Hound",63717,-1,-1,0,15522,0,10,131200,40,4203076,0,233000,0,0,0,0
+"Open the locked door hidden within Kindo'jan's Labyrinth.","Lock and Key",,63718,-1,-1,0,15522,0,5,131072,33,134241,0,233049,0,0,0,0
+"Open the locked door hidden within Kindo'jan's Labyrinth 20 times.","Lock and Key Master","Title: Lockpickin'",63719,-1,-1,63718,15522,0,5,131200,34,134241,0,233055,0,0,0,0
+"Gather all 3 Elemental Hexmasks while within Kindo'jan's Labyrinth.","Happy Hexmask Collector",,63720,-1,-1,0,15522,0,5,131072,35,135462,0,233073,0,0,0,0
+"Complete 9 Chambers within a single run of Kindo'jan's Labyrinth.","The Labyrinth of Kindo'jan",,63721,-1,-1,0,15522,0,5,131072,36,5212672,0,233077,0,0,0,0
+"Complete 9 Chambers within a single run of Kindo'jan's Labyrinth on Tier 11.","Who's Labyrinth?","Title: Maze Runner",63722,-1,-1,0,15522,0,10,0,37,1786405,0,233079,0,0,0,0
+"Complete a total of 100 Chambers within Kindo'jan's Labyrinth.","My Labyrinth",,63723,-1,-1,0,15522,0,10,131200,38,237388,0,233081,0,0,0,0
+"Enter Kindo'jan's Labyrinth for the first time.","Knock Knock",,63724,-1,-1,0,15522,0,5,131072,39,6025441,0,233092,0,0,0,0
+"Loot 10 Mislaid Oddities within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,41,7298691,0,233083,0,0,0,0
+"Loot 50 Mislaid Oddities within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,42,7298691,0,233090,0,0,0,0
+,"Total Kindo'jan's Labyrinth Chambers completed",,63730,-1,-1,0,15533,0,0,1,18,136243,0,233094,0,0,0,0
+,"Total Kindo'jan Kills",,63731,-1,-1,0,15533,0,0,1,19,136243,0,233096,0,0,0,0
+"Owner of the Sporebearer Fungal Strider mount, sold in Harandar during Midnight.","Fungal Not Frugal",,63830,-1,-1,0,15269,0,0,133120,73,8262534,0,233492,0,0,0,0
 "Reach rank 20 with Zul'jarra's Forces.","Zul'jarra's Forces Champion",,63838,-1,-1,0,15600,0,10,131072,8,7903180,0,233621,0,0,0,0
+,"Kith'ix (Raid Finder The Unbinding of Kith'ix)",,63839,3095,-1,0,15542,0,0,1,104,0,0,233666,0,0,0,0
+,"Kith'ix (Normal The Unbinding of Kith'ix)",,63840,3095,-1,0,15542,0,0,1,105,0,0,233668,0,0,0,0
+,"Kith'ix (Heroic The Unbinding of Kith'ix)",,63841,3095,-1,0,15542,0,0,1,106,0,0,233670,0,0,0,0
+,"Kith'ix (Mythic The Unbinding of Kith'ix)",,63842,3095,-1,0,15542,0,0,1,107,0,0,233672,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 4.","The Labyrinth of Kindo'jan: Tier 4","Unlock: Tier 5 delves in Midnight Season 2",63846,-1,-1,0,15531,0,0,1181696,82,6025441,0,233700,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 5.","The Labyrinth of Kindo'jan: Tier 5","Unlock: Tier 6 delves in Midnight Season 2",63847,-1,-1,0,15531,0,0,1181696,83,6025441,0,233702,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 6.","The Labyrinth of Kindo'jan: Tier 6","Unlock: Tier 7 delves in Midnight Season 2",63848,-1,-1,0,15531,0,0,1181696,84,6025441,0,233704,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 7.","The Labyrinth of Kindo'jan: Tier 7","Unlock: Tier 8 delves in Midnight Season 2",63849,-1,-1,0,15531,0,0,1181696,85,6025441,0,233706,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 8.","The Labyrinth of Kindo'jan: Tier 8","Unlock: Tier 9 delves in Midnight Season 2",63850,-1,-1,0,15531,0,0,1181696,86,6025441,0,233708,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 9.","The Labyrinth of Kindo'jan: Tier 9","Unlock: Tier 9 delves in Midnight Season 2",63851,-1,-1,0,15531,0,0,1181696,87,6025441,0,233710,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 10.","The Labyrinth of Kindo'jan: Tier 10","Unlock: Tier 10 delves in Midnight Season 2",63852,-1,-1,0,15531,0,0,1181696,88,6025441,0,233712,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 11.","The Labyrinth of Kindo'jan: Tier 11","Unlock: Tier 11 delves in Midnight Season 2",63853,-1,-1,0,15531,0,0,1181696,89,6025441,0,233714,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 1.","The Labyrinth of Kindo'jan: Tier 1","Unlock: Tier 2 delves in Midnight Season 2",63863,-1,-1,0,15531,0,0,1181696,79,6025441,0,233716,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 2.","The Labyrinth of Kindo'jan: Tier 2","Unlock: Tier 3 delves in Midnight Season 2",63864,-1,-1,0,15531,0,0,1181696,80,6025441,0,233720,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 3.","The Labyrinth of Kindo'jan: Tier 3","Unlock: Tier 4 delves in Midnight Season 2",63865,-1,-1,0,15531,0,0,1181696,81,6025441,0,233718,0,0,0,0
+"Defeat Kindo'jan in his Labyrinth on Tier 11 without any other players in your party, before the first reset following his introduction.","Fabled Let Me Solo Him: Kindo'jan","Title: Fabled Vanquisher of Kindo'jan",64039,-1,-1,0,15531,0,0,145408,29,1398085,0,234379,0,0,0,0
+"Defeat Kindo'jan in his Labyrinth without loosing any lives on Tier 11 after completing all 9 chambers without any other players in your party during Midnight Season 2.","The Labyrinth of Kindo'jan: One-Champion Army","Title: Lone Raider",64118,-1,-1,0,15531,0,0,145408,25,8393517,0,234551,0,0,0,0

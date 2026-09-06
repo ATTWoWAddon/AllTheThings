@@ -1,11 +1,11 @@
 Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,Flags,Type,ModelType,ModelFileDataID,ThumbnailFileDataID,WeightCost,ItemID,InitialScale,FirstTimeAcquisitionXP,OrderIndex,Field_12_0_0_63534_015,StartingQuantity,UiModelSceneID
-"[DNT] Orgrimmar Interior Wall - DO NOT USE",0,0,0,12,0,192,1,2,5796227,6650913,3,245399,1,0,1148,0,0,0
-"[DNT] Partition Pillar (WMO) - DO NOT USE",0,0,0,13,0,192,1,2,5805000,0,3,245420,1,0,1,0,0,0
-"[DNT] Partition Doorway (WMO) - DO NOT USE",0,0,0,60,0,192,1,2,5395908,0,3,245419,1,0,2,0,0,0
+"[DNT] Orgrimmar Interior Wall - DO NOT USE",0,0,0,12,0,192,1,2,5796227,6650913,100,245399,1,0,1148,0,0,0
+"[DNT] Partition Pillar (WMO) - DO NOT USE",0,0,0,13,0,192,1,0,5805000,0,100,245420,1,0,1,0,0,0
+"[DNT] Partition Doorway (WMO) - DO NOT USE",0,0,0,60,0,192,1,0,5395908,0,100,245419,1,0,2,0,0,0
 "Ornate Stonework Fireplace",0,0,0,80,527886,3,1,1,6033663,7415905,5,235994,1,0,3,1,1,0
 "Tusked Fireplace",0,0,0,81,527890,3,1,1,6033664,7415913,5,245398,1,0,4,1,1,0
-"[DNT] Plain Interior Narrow Wall - DO NOT USE",0,0,0,83,0,192,1,2,5562146,6650913,3,245391,1,0,5,0,0,0
-"[DNT] Plain Interior Wall - DO NOT USE",0,0,0,84,0,192,1,2,5562147,6650913,3,245389,1,0,6,0,0,0
+"[DNT] Plain Interior Narrow Wall - DO NOT USE",0,0,0,83,0,192,1,2,5562146,6650913,100,245391,1,0,5,0,0,0
+"[DNT] Plain Interior Wall - DO NOT USE",0,0,0,84,0,192,1,2,5562147,6650913,100,245389,1,0,6,0,0,0
 "[DNT] Sturdy Wooden Interior Pillar - DO NOT USE",0,0,0,85,0,192,1,2,5562148,6650913,3,245387,1,0,7,0,0,0
 "[DNT] Stormwind Interior Pillar - DO NOT USE",0,0,0,87,0,192,1,2,6006178,6650913,3,245361,1,0,8,0,0,0
 "[DNT] Stormwind Interior Doorway - DO NOT USE",0,0,0,88,0,192,1,2,6006179,6650913,3,245363,1,0,9,0,0,0
@@ -13,7 +13,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "[DNT] Stormwind Interior Narrow Wall - DO NOT USE",0,0,0,90,0,192,1,2,6006181,6650913,3,245364,1,0,11,0,0,0
 "{DNT] Plain Interior Doorway - DO NOT USE",0,0,0,91,0,192,1,2,6010350,6650913,3,245390,1,0,12,0,0,0
 "Rolled Scroll",0,0,0,126,0,3,1,1,936441,7415897,1,245275,1,10,13,2,0,0
-"[DNT] Green Book of Runes - DO NOT USE",0,0,0,129,175730,192,1,1,200913,7266403,1,245506,1,0,14,0,0,0
+"[DNT] Green Book of Runes - DO NOT USE",0,0,0,129,175730,192,1,1,200913,7266403,100,245506,1,0,14,0,0,0
 "Sturdy Wooden Bookcase",0,0,0,373,0,3,1,1,6008928,7415909,3,245375,1,0,15,1,0,0
 "Sturdy Wooden Shelf",0,0,0,374,0,3,1,1,6008929,7415895,1,245384,1,0,16,1,0,0
 "Three-Candle Wrought Iron Chandelier",0,0,0,377,527892,259,3,1,6008933,7415893,1,235675,1,0,17,1,0,0
@@ -46,7 +46,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Covered Wooden Table",0,0,0,496,0,3,1,1,6373543,7416017,3,245372,1,0,44,1,1,0
 "Sturdy Wooden Table",0,0,0,497,0,3,1,1,6373544,7416021,3,245374,1,0,45,1,0,0
 "Circular Woolen Rug",0,0,0,498,0,3,4,1,6375820,7416025,3,235633,1,0,46,1,1,0
-"[DNT] Chair for Testing Decor Limits - do not use",0,0,0,508,0,192,1,1,6372825,7413231,2490,245350,1,0,47,0,0,0
+"[DNT] Chair for Testing Decor Limits - do not use",0,0,0,508,0,192,1,1,6372825,7413231,100,245350,1,0,47,0,0,0
 "Studded Wooden Chair",0,0,0,518,180046,128,1,1,198115,7266394,3,245507,1,0,48,0,0,0
 "Orcish Wooden Bench",0,0,0,519,320997,131,1,1,850838,7416029,3,245430,1,10,49,0,0,1452
 "Gift of Gilneas",0,0,0,520,0,3,1,1,6383338,7416033,1,245369,1,0,50,1,0,0
@@ -69,16 +69,16 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Reaching Violet Bellflowers",0,0,0,584,0,3,1,1,4684657,7416049,1,245299,1,0,67,1,0,0
 "Arched Violet Bellflowers",0,0,0,586,0,3,1,1,4684658,7416053,1,245300,1,0,68,1,0,0
 "Algari Lettuce Plant",0,0,0,592,0,131,1,1,4684695,7416057,1,245301,1,0,69,1,0,0
-"[DNT] 12PH_Opulent_INE01_Partition_Pillar.wmo - DO NOT USE - unfinished",0,0,0,669,0,131,1,2,6694413,0,100,253418,1,0,913,0,0,0
-"[DNT] 12PH_Opulent_INE01_Partition_W_L.wmo  - DO NOT USE - unfinished",0,0,0,670,0,131,1,2,6694415,0,100,253419,1,0,826,0,0,0
-"[DNT] 12PH_Opulent_INE01_Partition_W_S.wmo - DO NOT USE - unfinished",0,0,0,671,0,131,1,2,6694416,0,100,253421,1,0,877,0,0,0
-"[DNT] 12PH_Opulent_INE01_Partition_W_L_Arch.wmo - DO NOT USE - unfinished",0,0,0,672,0,131,1,2,6694414,0,100,253423,1,0,878,0,0,0
+"[DNT] 12PH_Opulent_INE01_Partition_Pillar.wmo - DO NOT USE - unfinished",0,0,0,669,0,192,1,2,6694413,0,100,253418,1,0,913,0,0,0
+"[DNT] 12PH_Opulent_INE01_Partition_W_L.wmo  - DO NOT USE - unfinished",0,0,0,670,0,192,1,2,6694415,0,100,253419,1,0,826,0,0,0
+"[DNT] 12PH_Opulent_INE01_Partition_W_S.wmo - DO NOT USE - unfinished",0,0,0,671,0,192,1,2,6694416,0,100,253421,1,0,877,0,0,0
+"[DNT] 12PH_Opulent_INE01_Partition_W_L_Arch.wmo - DO NOT USE - unfinished",0,0,0,672,0,192,1,2,6694414,0,100,253423,1,0,878,0,0,0
 "Moon-Blessed Storage Crate",0,0,0,673,0,3,1,1,1096755,7416061,1,238857,1,10,70,2,0,0
 "Ancient Elven Highback Chair",0,0,0,674,554701,3,1,1,1096835,7416065,1,245449,1,10,71,2,0,0
 "Cenarion Privacy Screen",0,0,0,675,0,3,1,1,1108747,7416069,3,238859,1,10,72,3,0,0
 "Deluxe Val'sharah Bed",0,0,0,676,0,3,1,1,1108751,7416073,3,238860,1,10,73,2,0,0
 "Cenarion Rectangular Rug",0,0,0,677,0,3,4,1,1108813,7416077,5,238861,1,10,74,2,0,0
-"[DNT] Cenarion Round Rug - do not use - new asset",0,0,0,678,0,192,4,1,1115314,7416081,3,238862,2,0,75,0,0,0
+"[DNT] Cenarion Round Rug - do not use - new asset",0,0,0,678,0,192,4,1,1115314,7416081,100,238862,2,0,75,0,0,0
 "Kaldorei Desk",0,0,0,679,0,3,1,1,1240416,7416085,3,238863,1,10,76,2,0,0
 "Silvermoon Wooden Chair",0,0,0,714,554684,3,1,1,4235683,7416089,1,245284,1,10,77,2,0,0
 "Small Silvermoon Bookcase",0,0,0,715,0,131,1,1,4239013,7416093,1,245279,1,10,78,0,0,0
@@ -92,7 +92,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Large Dangling Cobweb",0,0,0,724,0,3,3,1,6709925,7416125,1,245403,1,0,86,1,0,0
 "Pillar Cobweb",0,0,0,725,0,3,1,1,6709926,7416131,1,245404,1,0,87,1,0,0
 "Wrought Iron Chandelier",0,0,0,726,527893,3,3,1,6712076,7416133,1,239075,1,0,88,1,2,0
-"[DNT] Chair - do not use",0,0,0,744,0,192,1,1,6372825,7413231,3,245351,1,0,89,0,0,0
+"[DNT] Chair - do not use",0,0,0,744,0,192,1,1,6372825,7413231,100,245351,1,0,89,0,0,0
 "Hungry Human's Platter",0,0,0,749,0,3,1,1,960868,7416137,1,245428,1,10,90,2,0,1318
 "Tirisgarde Book Tempest",0,0,0,750,0,3,1,1,964976,7416141,3,245429,1,10,91,3,0,0
 "Wooden Mug",0,0,0,751,0,3,1,1,1002891,7416147,1,239162,1,10,92,2,0,0
@@ -119,7 +119,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Creeping Corner Ivy",0,0,0,772,0,3,1,1,6717275,7416229,1,245327,1,0,113,1,0,0
 "Small Boxwood Bush",0,0,0,773,0,3,1,1,6254055,7416233,1,245328,1,0,114,1,0,0
 "Cozy Four-Pipe Bed",0,0,0,825,0,3,1,1,5793099,7416237,5,245306,1,10,115,2,0,0
-"[DNT] Relaxing Goblin Beach Chair with Cup Gripper - DO NOT USE - new asset",0,0,0,826,554706,192,1,1,5793100,7416241,3,245304,1,0,116,0,0,0
+"[DNT] Relaxing Goblin Beach Chair with Cup Gripper - DO NOT USE - new asset",0,0,0,826,554706,192,1,1,5793100,7416241,100,245304,1,0,116,0,0,0
 "Rocket-Unpowered Rocket",0,0,0,827,0,3,1,1,5900860,7416245,3,245303,1,10,117,2,0,0
 "Well-Lit Incontinental Loveseat",0,0,0,828,0,3,1,1,5929345,7467860,3,239213,1,10,118,2,0,0
 "Well-Lit Incontinental Couch",0,0,0,829,0,3,1,1,5929346,7427579,3,239214,1,10,119,2,0,1452
@@ -130,7 +130,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "[DNT] 12PH_Opulent_IBE01_Partition_W_L.wmo - DO NOT USE - duplicate",0,0,0,848,0,192,1,2,6694335,0,100,253425,1,0,843,0,0,0
 "Brill Coffin",0,0,0,854,0,3,1,1,189415,7416273,3,245502,1,10,124,2,0,0
 "Gilnean Cauldron",0,0,0,855,566043,35,1,1,304249,7416277,1,245517,1,10,125,2,0,0
-"[DNT] Gilnean Problem Solver - Do Not Use - Updated Asset Available",0,0,0,856,0,192,1,1,304637,7416283,1,245519,1,0,126,0,0,0
+"[DNT] Gilnean Problem Solver - Do Not Use - Updated Asset Available",0,0,0,856,0,192,1,1,304637,7416283,100,245519,1,0,126,0,0,0
 "Gilnean Celebration Keg",0,0,0,857,0,3,1,1,304638,7416285,1,245520,1,10,127,3,0,0
 "Worgen's Chicken Coop",0,0,0,858,0,3,1,1,305584,7416289,3,245518,1,10,128,2,0,0
 "Gilnean Bench",0,0,0,859,618818,3,1,1,7508748,7416293,3,245516,1,10,129,2,0,1452
@@ -366,11 +366,11 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Vessel of the Howling Ossuary",0,0,0,1426,0,3,1,1,6870560,7417199,5,244343,1,10,852,3,0,0
 "Griftah's Mystical Polter-Urn",0,0,0,1427,0,3,1,1,6870561,7417203,1,244344,1,10,937,2,0,0
 "Forgotten Amani Urn",0,0,0,1428,0,3,1,1,6870562,7417205,1,244345,1,10,921,2,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn01_Destroyed01.m2",0,0,0,1429,0,131,1,1,6870563,7417209,0,244346,1,0,922,0,0,0
+"Broken Amani Ritual Urn",0,0,0,1429,0,3,1,1,6870563,7417209,1,244346,1,10,922,2,0,0
 "Purified Troll Urn",0,0,0,1430,0,3,1,1,6904849,7417213,3,244347,1,10,900,2,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn05.m2",0,0,0,1431,0,131,1,1,6904850,7417219,0,244348,1,0,939,0,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn04_Destroyed01.m2",0,0,0,1432,0,131,1,1,6904852,7417225,0,244349,1,0,901,0,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn02_Destroyed01.m2",0,0,0,1433,0,131,1,1,6904854,7417221,0,244350,1,0,811,0,0,0
+"Cracked Amani Funerary Urn",0,0,0,1431,0,3,1,1,6904850,7417219,1,244348,1,10,939,2,0,0
+"Ruined Amani Ritual Urn",0,0,0,1432,0,3,1,1,6904852,7417225,1,244349,1,10,901,2,0,0
+"Shattered Amani Ritual Urn",0,0,0,1433,0,3,1,1,6904854,7417221,1,244350,1,10,811,2,0,0
 "Sturdy Wall Rack",0,0,0,1434,0,3,2,1,6390438,7468046,3,244530,1,0,292,1,0,0
 "Sturdy Fireplace",0,0,0,1435,547193,3,1,1,6390441,7417223,5,244531,1,0,293,1,1,0
 "Rugged Stool",0,0,0,1436,554707,3,1,1,6379059,7417233,1,244532,1,0,294,1,0,0
@@ -432,7 +432,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Checkered Charming Seat Cushion",0,0,0,1702,0,3,1,1,6435011,7421909,1,245268,1,0,336,1,0,0
 "Thunder Totem Kiln",0,0,0,1703,0,3,1,1,6892736,7421913,5,245270,0.69999998808,10,337,2,0,0
 "Old Salt's Fireplace",0,0,0,1704,0,3,1,1,6905476,7421917,5,245271,1,10,338,2,0,0
-"[DNT] Schmancy Goblin String Lights - DO NOT USE",0,0,0,1717,0,192,0,0,0,7011617,1,245349,1,0,339,0,0,0
+"[DNT] Schmancy Goblin String Lights - DO NOT USE",0,0,0,1717,0,192,0,0,0,7011617,100,245349,1,0,339,0,0,0
 "[DNT] Schmancy Goblin String Lights - DO NOT USE",0,0,0,1718,0,192,0,0,0,7011617,1,132822,1,0,340,0,0,0
 "Orgrimmar Chair",0,0,0,1723,547907,3,1,1,6379057,7421925,1,245532,1,0,343,1,2,0
 "Rugged Brazier",0,0,0,1724,0,3,1,1,6379087,7421929,1,245533,1,0,344,1,0,0
@@ -449,7 +449,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Trueshot Lodge Fireplace",0,0,0,1740,0,3,1,1,6905474,7421973,5,245549,1,10,350,2,0,0
 "Runed Dreamweaver Moonstone",0,0,0,1741,0,3,1,1,7515605,7521260,3,245550,1,10,351,2,0,0
 "Worker's Wooden Desk",0,0,0,1742,0,3,1,1,6390433,7421981,3,245551,1,0,352,1,0,0
-"[DNT] Cornerstone 02 - DO NOT USE",0,0,0,1743,0,192,1,1,6935311,7421985,3,245552,1,0,353,0,0,0
+"[DNT] Cornerstone 02 - DO NOT USE",0,0,0,1743,0,192,1,1,6935311,7421985,100,245552,1,0,353,0,0,0
 "Orgrimmar Tusked Bed",0,0,0,1744,0,3,1,1,6379056,7421991,5,245555,1,0,354,1,1,0
 "Iron-Reinforced Standing Mirror",0,0,0,1745,0,3,1,1,6390439,7421995,3,245556,1,0,355,1,0,0
 "Shaded Suramar Window",0,0,0,1746,0,3,2,1,6924249,7421997,3,245557,1,10,356,2,0,0
@@ -457,7 +457,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Octagonal Ochre Window",0,0,0,1748,0,3,2,1,6924251,7422005,3,245559,1,10,358,2,0,0
 "Meadery Ochre Window",0,0,0,1749,0,3,2,1,6924252,7422009,3,245560,1,10,359,2,0,0
 "Ornate Ochre Window",0,0,0,1750,0,3,2,1,6924253,7422013,3,245561,1,10,360,2,0,0
-"[DNT] Cornerstone 01 - DO NOT USE",0,0,0,1751,0,192,1,1,6935310,7422017,3,245562,1,0,361,0,0,0
+"[DNT] Cornerstone 01 - DO NOT USE",0,0,0,1751,0,192,1,1,6935310,7422017,100,245562,1,0,361,0,0,0
 "Bel'ameth Interior Wall",0,0,0,1770,0,3,1,2,6892458,7135465,3,245575,1,0,362,1,10,0
 "Bel'ameth Round Interior Pillar",0,0,0,1771,0,3,1,2,6892456,7135463,3,245576,1,0,363,1,10,0
 "Bel'ameth Interior Doorway",0,0,0,1772,0,3,1,2,6892457,7135464,3,245578,1,0,364,1,3,0
@@ -482,7 +482,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Gilnean Rocking Chair",0,0,0,1832,549183,3,1,1,322635,7422077,1,245623,1,10,383,2,0,0
 "Waning Wood Fence",0,0,0,1833,0,3,1,1,464019,7422081,1,245624,1,10,384,2,0,0
 "Bel'ameth Bench",0,0,0,1834,549184,3,1,1,4690348,7422085,3,245625,1,10,385,2,0,1452
-"[DNT] Ornamental Kaldorei Glaive - DO NOT USE - new asset coming",90,0,0,1835,0,192,1,1,4756262,7422089,1,245626,1,0,386,3,0,0
+"[DNT] Ornamental Kaldorei Glaive - DO NOT USE - new asset coming",90,0,0,1835,0,192,1,1,4756262,7422089,100,245626,1,0,386,3,0,0
 "Elven Temple Brazier",0,0,0,1836,0,3,1,1,6938369,7422093,1,245627,1,10,387,2,0,0
 "Silvermoon Interior Doorway",0,0,0,1844,0,3,1,2,6892372,7135442,3,245649,1,0,388,1,3,0
 "Filigree Moon Lamp",0,0,0,1861,0,3,1,1,1114215,7422097,1,245655,1,10,389,2,0,0
@@ -512,7 +512,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Floating Azure Lantern",0,0,0,1901,0,3,1,1,6005281,7422193,1,245985,1,10,822,2,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging01.m2",0,0,0,1902,0,130,1,1,6005282,7116684,0,245986,1,0,871,0,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging02.m2",0,0,0,1903,0,130,1,1,6005283,7116685,0,245987,1,0,926,0,0,0
-"[DNT] 12BE_BloodElf_Lighting_LanternFloating01_Off.m2 - DO NOT USE - no off lights",0,0,0,1904,0,131,1,1,6023438,7422205,100,245988,1,0,927,0,0,0
+"[DNT] 12BE_BloodElf_Lighting_LanternFloating01_Off.m2 - DO NOT USE - no off lights",0,0,0,1904,0,128,1,1,6023438,7422205,100,245988,1,0,927,0,0,0
 "[DNT] [AUTOGEN] 11WE_WildElves_Navigation_RootPortal01.m2",0,0,0,1905,0,131,1,1,6930892,7422209,100,245989,1,0,928,0,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Chandelier02.m2",0,0,0,1906,0,131,3,1,6985811,7422213,0,245990,1,0,872,0,0,0
 "Purified Sin'dorei Candle",0,0,0,1907,0,3,1,1,6985812,7422217,1,245991,1,10,823,2,0,0
@@ -521,24 +521,24 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Orange Suramar Seat Cushion",0,0,0,1919,0,3,1,1,1390430,7422229,1,246001,1,10,411,2,0,0
 "Red Suramar Seat Cushion",0,0,0,1920,0,3,1,1,1390431,7422233,1,246002,1,10,412,2,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging03.m2",0,0,0,1926,0,130,1,1,6005284,7116686,0,246007,1,0,930,0,0,0
-"[DNT] 12BE_BloodElf_Lighting_LanternHanging01_Off.m2 - DO NOT USE - no off lights",0,0,0,1927,0,130,1,1,6023439,7116687,100,246008,1,0,874,0,0,0
-"[DNT] 12BE_BloodElf_Lighting_LanternHanging02_Off.m2 - DO NOT USE - no off lights",0,0,0,1928,0,130,1,1,6023440,7116688,100,246009,1,0,948,0,0,0
-"[DNT] 12BE_BloodElf_Lighting_LanternHanging03_Off.m2 - DO NOT USE - no off lights",0,0,0,1929,0,130,1,1,6023441,7116689,100,246010,1,0,875,0,0,0
+"[DNT] 12BE_BloodElf_Lighting_LanternHanging01_Off.m2 - DO NOT USE - no off lights",0,0,0,1927,0,128,1,1,6023439,7116687,100,246008,1,0,874,0,0,0
+"[DNT] 12BE_BloodElf_Lighting_LanternHanging02_Off.m2 - DO NOT USE - no off lights",0,0,0,1928,0,128,1,1,6023440,7116688,100,246009,1,0,948,0,0,0
+"[DNT] 12BE_BloodElf_Lighting_LanternHanging03_Off.m2 - DO NOT USE - no off lights",0,0,0,1929,0,128,1,1,6023441,7116689,100,246010,1,0,875,0,0,0
 "[DNT] Silvermoon Small Platform - WMO - DO NOT USE",0,0,0,1938,0,192,1,2,6892407,7135448,3,246014,1,0,413,0,0,0
 "[DNT] Silvermoon Large Platform - WMO - DO NOT USE",0,0,0,1943,0,192,1,2,6892408,7135447,5,246017,1,0,414,0,5,0
 "[DNT] Silvermoon Round Platform - WMO - DO NOT USE",0,0,0,1944,0,192,1,2,6892410,7135446,5,246018,1,0,415,0,4,0
 "[DNT] Silvermoon Beam Platform - WMO - DO NOT USE",0,0,0,1948,0,192,1,2,6892409,7135445,1,246019,1,0,416,0,5,0
 "[DNT] Silvermoon Angled Platform - WMO - DO NOT USE",0,0,0,1950,0,192,1,2,6892411,7135449,5,246020,1,0,417,0,0,0
-"[DNT] Bel'ameth Beam Platform - WMO - DO NOT USE",0,0,0,1952,0,192,1,2,6892494,7135467,1,246021,1,0,418,0,5,0
-"[DNT] Bel'ameth Round Platform - WMO - DO NOT USE",0,0,0,1953,0,192,1,2,6892495,7135468,5,246022,1,0,419,0,4,0
-"[DNT] Bel'ameth Large Platform - WMO - DO NOT USE",0,0,0,1954,0,192,1,2,6892493,7135469,5,246023,1,0,420,0,5,0
-"[DNT] Bel'ameth Small Platform - WMO - DO NOT USE",0,0,0,1955,0,192,1,2,6892492,7135470,3,246024,1,0,421,0,0,0
-"[DNT] Bel'ameth Angled Platform - WMO - DO NOT USE",0,0,0,1956,0,192,1,2,6892496,7135471,5,246025,1,0,422,0,0,0
-"[DNT] Orgrimmar Beam Platform - WMO - DO NOT USE",0,0,0,1957,0,192,1,2,6921725,7135489,1,246026,1,0,423,0,5,0
-"[DNT] Orgrimmar Round Platform - WMO - DO NOT USE",0,0,0,1958,0,192,1,2,6921726,7135490,5,246027,1,0,424,0,4,0
-"[DNT] Orgrimmar Large Platform - WMO - DO NOT USE",0,0,0,1959,0,192,1,2,6921727,7135491,5,246028,1,0,425,0,5,0
-"[DNT] Orgrimmar Small Platform - WMO - DO NOT USE",0,0,0,1960,0,192,1,2,6921728,7135492,3,246029,1,0,426,0,0,0
-"[DNT] Orgrimmar Angled Platform - WMO - DO NOT USE",0,0,0,1961,0,192,1,2,6921729,7135493,5,246030,1,0,427,0,0,0
+"[DNT] Bel'ameth Beam Platform - WMO - DO NOT USE",0,0,0,1952,0,192,1,2,6892494,7135467,100,246021,1,0,418,0,5,0
+"[DNT] Bel'ameth Round Platform - WMO - DO NOT USE",0,0,0,1953,0,192,1,2,6892495,7135468,100,246022,1,0,419,0,4,0
+"[DNT] Bel'ameth Large Platform - WMO - DO NOT USE",0,0,0,1954,0,192,1,2,6892493,7135469,100,246023,1,0,420,0,5,0
+"[DNT] Bel'ameth Small Platform - WMO - DO NOT USE",0,0,0,1955,0,192,1,2,6892492,7135470,100,246024,1,0,421,0,0,0
+"[DNT] Bel'ameth Angled Platform - WMO - DO NOT USE",0,0,0,1956,0,192,1,2,6892496,7135471,100,246025,1,0,422,0,0,0
+"[DNT] Orgrimmar Beam Platform - WMO - DO NOT USE",0,0,0,1957,0,192,1,2,6921725,7135489,100,246026,1,0,423,0,5,0
+"[DNT] Orgrimmar Round Platform - WMO - DO NOT USE",0,0,0,1958,0,192,1,2,6921726,7135490,100,246027,1,0,424,0,4,0
+"[DNT] Orgrimmar Large Platform - WMO - DO NOT USE",0,0,0,1959,0,192,1,2,6921727,7135491,100,246028,1,0,425,0,5,0
+"[DNT] Orgrimmar Small Platform - WMO - DO NOT USE",0,0,0,1960,0,192,1,2,6921728,7135492,100,246029,1,0,426,0,0,0
+"[DNT] Orgrimmar Angled Platform - WMO - DO NOT USE",0,0,0,1961,0,192,1,2,6921729,7135493,100,246030,1,0,427,0,0,0
 "[DNT] Stormwind Beam Platform - WMO - DO NOT USE",0,0,0,1962,0,192,1,2,6904656,7135454,1,246031,1,0,428,0,5,0
 "[DNT] Stormwind Round Platform - WMO - DO NOT USE",0,0,0,1963,0,192,1,2,6904657,7135455,5,246032,1,0,429,0,4,0
 "[DNT] Stormwind Large Platform - WMO - DO NOT USE",0,0,0,1964,0,192,1,2,6904658,7135456,5,246033,1,0,430,0,5,0
@@ -549,7 +549,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Stitched Leather Rug",0,0,0,1979,0,3,4,1,6389812,7422261,5,246038,1,0,435,1,1,0
 "Schmancy Goblin String Lights",0,0,0,1984,0,3,3,1,6914980,7422265,1,246066,1,10,436,2,0,0
 "Bel'ameth Wooden Table",0,0,0,1987,0,3,1,1,4690346,7422269,3,246089,1,10,437,2,0,0
-"[DNT] Amirdrassil Stool - DO NOT USE - new asset",0,0,0,1988,553743,192,1,1,4690350,7422273,1,246090,1,0,438,2,0,0
+"[DNT] Amirdrassil Stool - DO NOT USE - new asset",0,0,0,1988,553743,192,1,1,4690350,7422273,100,246090,1,0,438,2,0,0
 "Bel'ameth Crafter's Tent",0,0,0,1989,0,3,1,1,4871267,7422277,5,246091,0.80000001192,10,439,2,0,0
 "Small Bel'ameth Tent",0,0,0,1990,0,3,1,1,4196083,7422281,5,246100,1,10,440,2,0,0
 "Small Wooden Stool",0,0,0,1991,553787,3,1,1,6390428,7422285,1,246101,1,0,441,1,0,0
@@ -563,7 +563,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Open Carved Wooden Crate",0,0,0,1999,0,3,1,1,6712066,7422317,1,246109,1,0,449,1,0,0
 "Filigree Moon Sconce",0,0,0,2000,0,3,2,1,6980565,7422321,1,246110,1,10,450,2,0,0
 "Shadowforge Sconce",0,0,0,2001,0,3,2,1,6995868,7422325,1,246111,1,10,451,2,0,0
-"[DNT] Ornate Ironforge Bench - DO NOT USE - new asset coming",0,0,0,2018,553833,192,1,1,197272,7422329,3,246124,1,0,452,0,0,0
+"[DNT] Ornate Ironforge Bench - DO NOT USE - new asset coming",0,0,0,2018,553833,192,1,1,197272,7422329,100,246124,1,0,452,0,0,0
 "[DNT] Pyrewood Glass Bottle - DO NOT USE - duplicate",0,0,0,2019,0,192,1,1,304698,0,100,246125,1,0,912,0,0,0
 "Sprouting Lamppost",0,0,0,2086,0,3,1,1,1108749,7422337,3,246216,1,10,453,2,0,0
 "Short Orgrimmar Bench",0,0,0,2087,572726,3,1,1,6379060,7422341,3,246217,1,0,454,1,0,1452
@@ -697,9 +697,9 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Elegant Pillow Roll",0,0,0,2474,0,3,1,1,6435034,7422845,1,246711,1,0,990,1,0,0
 "Grummle Bedroll",0,0,0,2495,0,3,1,1,579122,7422849,1,246741,1,10,555,2,0,0
 "Tall Sturdy Wooden Chair",0,0,0,2496,556467,3,1,1,6390427,7422853,3,246742,1,0,556,1,0,0
-"[DNT] 12BE_BloodElf_Lighting_LanternHanging01_Off_blue.m2 - DO NOT USE - no off lights",0,0,0,2498,0,131,1,1,7079621,7082838,100,246773,1,0,995,0,0,0
-"[DNT] 12BE_BloodElf_Lighting_LanternHanging02_Off_blue.m2 - DO NOT USE - no off lights",0,0,0,2499,0,131,1,1,7079622,7082841,100,246774,1,0,910,0,0,0
-"[DNT] 12BE_BloodElf_Lighting_LanternHanging03_Off_blue.m2 - DO NOT USE - no off lights",0,0,0,2500,0,131,1,1,7079623,7082842,100,246775,1,0,987,0,0,0
+"[DNT] 12BE_BloodElf_Lighting_LanternHanging01_Off_blue.m2 - DO NOT USE - no off lights",0,0,0,2498,0,128,1,1,7079621,7082838,100,246773,1,0,995,0,0,0
+"[DNT] 12BE_BloodElf_Lighting_LanternHanging02_Off_blue.m2 - DO NOT USE - no off lights",0,0,0,2499,0,128,1,1,7079622,7082841,100,246774,1,0,910,0,0,0
+"[DNT] 12BE_BloodElf_Lighting_LanternHanging03_Off_blue.m2 - DO NOT USE - no off lights",0,0,0,2500,0,128,1,1,7079623,7082842,100,246775,1,0,987,0,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging03_blue.m2",0,0,0,2501,0,131,1,1,7079624,7422869,0,246776,1,0,804,0,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging02_blue.m2",0,0,0,2502,0,131,1,1,7079625,7082849,0,246777,1,0,988,0,0,0
 "Hanging Mana Brazier",0,0,0,2503,0,3,3,1,7079626,7422877,3,246779,1,10,989,2,0,0
@@ -735,7 +735,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Farmer's Water Trough",0,0,0,2536,0,3,1,1,6794407,7422998,5,246870,0.69999998808,0,584,1,0,1452
 "Hay-Filled Sturdy Feeding Trough",0,0,0,2537,0,3,1,1,6794408,7423002,5,246871,0.69999998808,0,585,1,0,1452
 "Carved Stone Bench",0,0,0,2538,565056,3,1,1,6794416,7423006,3,246872,1,0,586,1,0,1452
-"[DNT] Plush Cushioned Chair - DO NOT USE - new asset coming",0,0,0,2539,557580,192,1,1,6794417,7096646,3,246873,1,0,587,0,0,0
+"[DNT] Plush Cushioned Chair - DO NOT USE - new asset coming",0,0,0,2539,557580,192,1,1,6794417,7096646,100,246873,1,0,587,0,0,0
 "Sturdy Brazier",0,0,0,2540,0,3,1,1,6794419,7423010,3,246874,1,0,588,1,0,0
 "Founder's Point Street Light",0,0,0,2541,0,3,1,1,6794422,7423016,5,246875,1,0,589,1,0,0
 "Founder's Point Lamppost",0,0,0,2542,0,3,1,1,6794423,7423018,5,246876,1,0,590,1,0,0
@@ -755,7 +755,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "[DNT] [AUTOGEN] 12FN_Fungarian_Defense_Barricade01_Destroyed.m2",0,0,0,2586,0,131,1,1,6225698,7109524,0,246957,1,0,902,0,0,0
 "Mastercrafted Fungal Row Planter",0,0,0,2587,0,3,1,1,6225703,7423070,3,246958,1,10,903,2,0,0
 "Sealed Fungal Jar",0,0,0,2588,0,3,1,1,6225716,7423074,1,246959,1,10,857,2,0,0
-"Opened Fungal Jar",0,0,0,2589,0,131,1,1,6225717,7109529,1,246960,1,10,858,2,0,0
+"Open Fungal Jar",0,0,0,2589,0,131,1,1,6225717,7109529,1,246960,1,10,858,2,0,0
 "Elegant Seat Cushion",0,0,0,2590,0,3,1,1,6435035,7423082,1,246961,1,0,904,1,0,0
 "Mushan Dumpling Stack",0,0,0,2591,0,3,1,1,643880,7423086,1,247220,1,10,601,2,0,0
 "Small Orgrimmar Chair",0,0,0,2592,565852,3,1,1,6379089,7423090,1,247221,1,0,602,1,0,0
@@ -798,16 +798,16 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Jade Temple Dragon Fountain",0,0,0,3876,0,3,1,1,530128,7423238,5,247736,0.69999998808,10,755,2,0,0
 "Stormstout Brew Keg",0,0,0,3877,0,3,1,1,531170,7423242,1,247737,1,10,756,2,0,0
 "Pandaren Meander Rug",0,0,0,3878,0,3,4,1,575033,7423247,5,247738,1,10,679,2,0,0
-"[DNT] Kun-Lai Lacquered Rickshaw - do not use - new asset",0,0,0,3879,0,192,1,1,577102,7423251,5,247739,1,0,680,2,0,0
+"[DNT] Kun-Lai Lacquered Rickshaw - do not use - new asset",0,0,0,3879,0,192,1,1,577102,7423251,100,247739,1,0,680,2,0,0
 "Kotmogu Pedestal",0,0,0,3880,0,3,1,1,603539,7423255,1,247740,1,10,644,2,0,0
 "Kotmogu Orb of Power",0,0,0,3881,0,3,1,1,604187,7423259,1,247741,1,10,645,2,0,0
 "Timeless Dumpling Cart",0,0,0,3882,0,131,1,1,898242,7423263,3,247742,1,10,681,0,0,0
-"[DNT] Hanging Paper Lanterns - do not use - duplicate",0,0,0,3883,0,192,1,1,904238,7423267,100,247743,1,10,682,2,0,0
+"[DNT] Hanging Paper Lanterns - do not use - duplicate",0,0,0,3883,0,192,1,1,904238,7423267,100,247743,1,0,682,2,0,0
 "Alliance Dueling Flag",0,0,0,3884,0,3,1,1,2353834,7423271,3,247744,1,10,757,2,0,0
 "Horde Dueling Flag",0,0,0,3885,0,3,1,1,2353835,7423275,3,247745,1,10,758,2,0,0
 "Silverwing Sentinels Flag",0,0,0,3886,0,3,1,1,2490318,7423279,3,247746,1,10,683,2,0,0
 "Warsong Outriders Flag",0,0,0,3887,0,3,1,1,2490319,7423283,3,247747,1,10,759,2,0,0
-"[DNT] Kyrian Spirit Healer - DO NOT USE - NPC tech not ready yet",0,0,0,3888,0,192,1,1,3730968,7423287,5,247748,1,0,760,0,0,0
+"[DNT] Kyrian Spirit Healer - DO NOT USE - NPC tech not ready yet",0,0,0,3888,0,192,1,1,3730968,7423287,100,247748,1,0,760,0,0,0
 "Earthcrawl Mine Cart",0,0,0,3889,0,131,1,1,4901298,7423291,5,247749,1,10,684,0,0,0
 "Deephaul Crystal",0,0,0,3890,0,3,1,1,5770750,7423295,3,247750,1,10,654,2,0,0
 "Deactivated K'areshi Warp Cannon",0,0,0,3891,0,3,1,1,6009484,7423299,5,247751,0.60000002384,10,761,3,0,0
@@ -896,7 +896,7 @@ Name_lang,InitialRotation_0,InitialRotation_1,InitialRotation_2,ID,GameObjectID,
 "Literature of the Red Dragonflight",0,0,0,4176,0,3,1,1,4317325,7423607,1,248120,1,10,667,2,0,0
 "Draconic Circular Rug",0,0,0,4177,0,3,4,1,4497614,7423611,5,248121,0.69999998808,10,721,2,0,0
 "Non-Fatal One-Armed Bandit",0,0,0,4178,0,131,1,1,5933735,7423615,5,248122,1,10,691,0,0,0
-"[DNT] DuelingFlag_HousingProp.m2 - DO NOT USE - tester asset",0,0,0,4179,0,192,1,1,7134776,7423619,3,248123,1,0,692,0,0,0
+"[DNT] DuelingFlag_HousingProp.m2 - DO NOT USE - tester asset",0,0,0,4179,0,192,1,1,7134776,7423619,100,248123,1,0,692,0,0,0
 "The Great Hoard",0,0,0,4180,0,3,1,1,7134811,7423623,5,248124,1,10,624,4,0,0
 "Portal to Damnation",0,0,0,4181,0,3,1,1,7134869,7423627,5,248125,1,10,722,4,0,0
 "Razorwind Storage Table",0,0,0,4386,0,3,1,1,7080290,7423631,3,248246,1,0,693,1,0,0
@@ -978,9 +978,9 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Stormwind Weapon Rack",0,0,0,4819,0,3,1,1,4618938,7423927,1,248801,1,10,744,2,0,0
 "Elwynn Grass Patch",0,0,0,4822,0,3,1,1,6225391,7423931,1,248802,1,0,634,1,2,1452
 "Elwynn Grass Spread",0,0,0,4823,0,3,1,1,6225392,7423935,1,248803,0.60000002384,0,635,1,0,1452
-"[DNT] Rugged Brazier - DO NOT USE - neighborhood use only",0,0,0,4829,0,192,1,1,6391286,7423939,5,248804,1,0,636,0,0,0
+"[DNT] Rugged Brazier - DO NOT USE - neighborhood use only",0,0,0,4829,0,192,1,1,6391286,7423939,100,248804,1,0,636,0,0,0
 "[DNT] Standing Rugged Brazier - DO NOT USE - neighborhood use only",0,0,0,4831,0,192,1,1,6391287,7423943,5,248805,1,0,670,0,0,0
-"[DNT] Rugged Fire Pit - DO NOT USE - neighborhood use only",0,0,0,4833,0,192,1,1,6391288,7423947,5,248806,1,0,671,0,0,0
+"[DNT] Rugged Fire Pit - DO NOT USE - neighborhood use only",0,0,0,4833,0,192,1,1,6391288,7423947,100,248806,1,0,671,0,0,0
 "Nesingwary Mounted Shoveltusk Head",0,0,0,4839,0,3,2,1,6924247,7423951,3,248807,1,10,745,3,0,0
 "Nesingwary Mounted Elk Head",0,0,0,4841,0,3,2,1,6924248,7423955,3,248808,1,10,746,3,0,0
 "Void-Corrupted Rotunda",0,0,0,4843,0,259,1,1,7011541,7423959,5,248809,1,0,637,3,0,0
@@ -993,15 +993,15 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Hooded Iron Lantern",0,0,0,5115,0,3,1,1,960094,7423987,1,248938,1,10,790,2,0,0
 "Stormwind Lamppost",0,0,0,5116,0,3,1,1,960215,7423991,3,248939,1,10,791,2,0,0
 "Replica Felblood Altar",0,0,0,5117,567313,3,1,1,1277582,7423995,3,248940,1,10,734,3,0,1452
-"[DNT] Dreadscar Battle Planning Map - do not use - new asset",0,0,0,5118,0,192,1,1,1308068,7423999,3,248941,1,0,735,3,0,0
+"[DNT] Dreadscar Battle Planning Map - do not use - new asset",0,0,0,5118,0,192,1,1,1308068,7423999,100,248941,1,0,735,3,0,0
 "Five Dawns Planning Table",0,0,0,5119,0,3,1,1,1323662,7424005,3,248942,1,10,748,3,0,0
 "Black Harvest Banner",0,0,0,5120,0,3,1,1,1394859,7424007,3,248943,1,10,608,2,0,0
 "Monastery Gong",0,0,0,5126,0,3,1,1,6877675,7424011,5,248958,1,10,1099,3,0,0
 "Dreadscar Bookcase",0,0,0,5127,0,3,1,1,6877677,7424015,3,248959,1,10,1100,2,0,0
 "Dreadscar Dais",0,0,0,5128,0,3,4,1,6877678,7424019,5,248960,1,10,1121,3,0,0
 "Furious Tiki Mask",0,0,0,5129,0,3,2,1,6163852,7164291,1,279362,1,10,1126,2,0,0
-"Mysterious Voodoo Mask",0,0,0,5130,0,3,2,1,6163853,7164447,1,248962,1,10,1127,2,0,0
-"Spirit-Touched Amani Mask",0,0,0,5131,0,3,2,1,6163854,7164450,1,248963,1,10,1128,3,0,0
+"Mysterious Voodoo Mask",0,0,0,5130,0,3,2,1,6163853,7424023,1,248962,1,10,1127,2,0,0
+"Spirit-Touched Amani Mask",0,0,0,5131,0,3,2,1,6163854,7424027,1,248963,1,10,1128,3,0,0
 "Cosmic Void Table",0,0,0,5132,0,3,1,1,6885568,7183612,5,248964,1,10,1133,2,0,0
 "Resplendent Highborne Statue",0,0,0,5133,0,3,1,1,7152563,7424035,5,248965,1,10,1129,2,0,0
 "Tauren Hanging Brazier",0,0,0,5136,0,3,2,1,7194087,7424039,5,248985,1,10,1115,2,0,0
@@ -1188,6 +1188,7 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Food_Meat01.m2",0,0,0,8876,0,131,1,1,6051299,7292124,1,251913,1,0,1292,0,0,0
 "Sumptuous Berry Pie",0,0,0,8877,0,3,1,1,6051300,7424731,1,251914,1,10,1293,2,0,0
 "[DNT] Elegant Silvermoon Dessert Tray - DO NOT USE - duplicate",0,0,0,8878,0,192,1,1,6051301,7292127,100,251915,1,0,1294,0,0,0
+"Brennadam Coop",0,0,0,9044,0,3,1,1,1709395,7424891,5,252395,1,10,1331,2,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Food_Cheese01.m2",0,0,0,8879,0,131,1,1,6051302,7292128,1,251916,1,0,1295,0,0,0
 "Fungarian Banner",0,0,0,8889,0,3,1,1,6225689,7424743,1,251967,1,10,1298,2,0,0
 "[DNT] [AUTOGEN] 12FN_Fungarian_Decor_Banner02.m2",0,0,0,8890,0,131,1,1,6225690,7287188,1,251968,1,0,1560,0,0,0
@@ -1216,8 +1217,8 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Sealed Sack of Roasted Kafa",0,0,0,8988,0,3,1,1,1305115,7424831,1,252040,1,10,1319,2,0,0
 "Dalaran Espresso Machine",0,0,0,8989,0,3,1,1,1305133,7424835,3,252041,1,10,1320,3,0,0
 "Purified Troll Pitcher",0,0,0,8990,0,3,1,1,6212457,7424839,1,252042,1,10,1321,2,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug01.m2",0,0,0,8991,0,131,1,1,6212458,7300555,1,252043,1,0,1561,0,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug02.m2",0,0,0,8992,0,131,1,1,6212459,7300557,1,252044,1,0,1322,0,0,0
+"Amani Horn Beaker",0,0,0,8991,0,3,1,1,6212458,7424843,1,252043,1,10,1561,2,0,0
+"Amani Horn Cup",0,0,0,8992,0,3,1,1,6212459,7424847,1,252044,1,10,1322,2,0,0
 "Fungal Pergola",0,0,0,8993,0,3,1,1,6225718,7424851,5,252045,1,10,1323,2,0,0
 "Admiralty's Upholstered Chair",0,0,0,9035,574892,3,1,1,1602427,7424855,1,252386,1,10,1324,2,0,0
 "Boralus Fence",0,0,0,9036,0,3,1,1,1602432,7424859,1,252387,1,10,1539,2,0,0
@@ -1228,7 +1229,6 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Admiral's Chandelier",0,0,0,9041,0,3,3,1,1602483,7424879,3,252392,1,10,1328,2,0,0
 "Hull'n'Home Dresser",0,0,0,9042,0,3,1,1,1602484,7424883,5,252393,1,10,1329,2,0,0
 "Bowhull Bookcase",0,0,0,9043,0,3,1,1,1602487,7424887,5,252394,1,10,1330,2,0,0
-"Brennadam Coop",0,0,0,9044,0,3,1,1,1709395,7424891,5,252395,1,10,1331,2,0,0
 "Admiralty's Copper Lantern",0,0,0,9045,0,3,1,1,1711709,7424895,1,252396,1,10,1332,2,0,0
 "Brennadam Grinder",0,0,0,9046,0,3,1,1,1733921,7424899,3,252397,1,10,1333,2,0,0
 "Stormsong Water Pump",0,0,0,9047,0,3,1,1,1800789,7424903,1,252398,1,10,1334,2,0,0
@@ -1303,7 +1303,7 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "[DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight02_Unlit.m2",0,0,0,9257,0,131,1,1,7303863,7323141,1,253183,1,0,1400,0,0,0
 "[DNT] [AUTOGEN] 12FN_Fungarian_Special_TargetDummy01.m2",0,0,0,9258,576591,131,1,1,7318985,7323284,1,253184,1,0,1401,0,0,0
 "Reliquary Tent",0,0,0,9261,0,131,1,1,4239008,7425187,3,253240,1,10,1402,0,0,0
-"[DNT] Horde Warlord's Throne - DO NOT USE - new asset here",0,0,0,9262,576761,192,1,1,4505550,7425191,1,253241,1,0,1403,0,0,0
+"[DNT] Horde Warlord's Throne - DO NOT USE - new asset here",0,0,0,9262,576761,192,1,1,4505550,7425191,100,253241,1,0,1403,0,0,0
 "Horde Warlord's Throne",0,0,0,9263,576762,3,1,1,6905426,7425195,5,253242,1,10,1404,2,0,0
 "Bel'ameth Front Door",0,0,0,9264,576763,162,1,1,7302331,7425199,5,253243,1,0,1405,0,1,0
 "Lunar Celebrant's Aquarium",0,0,0,9265,0,1283,1,1,7319685,7425203,5,253244,1,0,1406,2,0,0
@@ -1386,7 +1386,7 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Sandy Vulpera Banner",0,0,0,9624,0,3,1,1,1674723,7425503,3,253700,1,10,1484,2,0,0
 "[DNT] [AUTOGEN] 12FN_Fungarian_Crafting_WeaponRack01.m2",0,0,0,9625,0,131,1,1,6225687,7345254,1,253701,1,0,1485,0,0,0
 "[DNT] [AUTOGEN] 12FN_Fungarian_Crafting_WeaponRack01_Empty.m2",0,0,0,9626,0,131,1,1,6225688,7345173,1,253702,1,0,1486,0,0,0
-"Purified Crude Hammer",0,0,0,9627,0,3,1,1,6654736,7345550,1,253703,1,10,1487,2,0,0
+"Purified Crude Hammer",0,0,0,9627,0,3,1,1,6654736,7425515,1,253703,1,10,1487,2,0,0
 "Fresh Canvas",0,0,0,9628,0,3,1,1,6929058,7425519,1,253704,1,10,1488,2,0,0
 """The Light Blooms"" Unframed Painting",0,0,0,9629,0,3,2,1,7241246,7340489,1,253705,1,10,1489,3,0,0
 "Open Sturdy Wooden Crate",0,0,0,9630,0,3,1,1,7338178,7425527,1,253707,1,0,1490,1,0,0
@@ -1467,7 +1467,7 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Silvermoon Fencepost",0,0,0,10947,0,131,1,1,6005286,7416527,1,256043,1,10,1598,2,0,0
 "Sin'dorei Sleeper",0,0,0,10950,0,3,1,1,6050850,7416805,5,256049,1,10,1599,2,0,0
 "Razorwind Shores Front Door",0,0,0,10952,587318,34,1,1,7302332,7425799,3,256050,1,0,1600,1,1,0
-"[DNT] Legion's Fel Brazier - DO NOT USE - new asset in place",0,0,0,10961,0,192,1,1,1125321,7425803,1,256071,1,0,1601,0,0,0
+"[DNT] Legion's Fel Brazier - DO NOT USE - new asset in place",0,0,0,10961,0,192,1,1,1125321,7425803,100,256071,1,0,1601,0,0,0
 "Draconic Sconce",0,0,0,10962,0,3,2,1,4075131,7425815,1,256168,1,10,1602,2,0,0
 "Valdrakken Oven",0,0,0,10963,0,3,1,1,4195090,7425813,5,256169,1,10,1603,2,0,0
 "Draconic Scribe's Basin",0,0,0,10964,0,3,1,1,4216958,7425811,5,256170,0.80000001192,10,1604,3,0,1452
@@ -1486,7 +1486,7 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Purified Troll Pendant",0,0,0,11140,0,3,1,1,6654720,7425859,1,256361,1,10,1617,2,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Decor_RopeKnot01.m2",0,0,0,11141,0,131,1,1,6693150,7425863,1,256362,1,0,1618,0,0,0
 "Shadowforge Stone Chair",0,0,0,11160,587755,3,1,1,7385422,7425867,3,256425,1,10,1619,2,0,0
-"[DNT] Kharanos Stone Bed - DO NOT USE - new asset present",0,0,0,11161,0,192,1,1,197266,7425871,1,256426,1,0,1620,0,0,0
+"[DNT] Kharanos Stone Bed - DO NOT USE - new asset present",0,0,0,11161,0,192,1,1,197266,7425871,100,256426,1,0,1620,0,0,0
 "Wingrest Signal Brazier",0,0,0,11162,0,3,1,1,3883456,7425875,5,256427,1,10,1621,2,0,0
 "Valdrakken Hanging Lamp",0,0,0,11163,0,3,3,1,3883458,7425881,5,256428,1,10,1622,2,0,0
 "Valdrakken Lamppost",0,0,0,11164,0,3,1,1,3952854,7425883,5,256429,1,10,1623,2,0,0
@@ -1558,7 +1558,7 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Large Brazier of Elune",0,0,0,11454,0,3,1,1,4690349,7426142,1,257352,1,10,1691,2,0,0
 "Drained Dark Heart of Galakrond",0,0,0,11455,0,3,2,1,5160932,7426146,1,257353,1,10,1692,4,0,0
 "Scroll of K'aresh's Fall",0,0,0,11456,0,3,2,1,5916218,7426150,1,257354,1,10,1693,3,0,0
-"Tome of the Survivor",0,0,0,11457,0,3,1,1,5916220,7426154,1,257355,1,10,1694,3,0,1580
+"Tome of the Survivor",0,0,0,11457,678049,35,1,1,5916220,7426154,1,257355,1,10,1694,3,0,1580
 "Slate Cobblestone Pair",0,0,0,11461,0,3,4,1,7291386,7426158,1,257359,1,0,1695,1,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Structure_Awning01.m2",0,0,0,11468,0,131,2,1,6654769,7412787,1,257363,1,0,1696,0,0,0
 "Silvermoon Energy Focus",0,0,0,11470,0,3,1,1,7338839,7426166,5,257367,1,10,1697,2,0,0
@@ -1744,6 +1744,7 @@ Gloomrose,0,0,0,4465,0,3,1,1,6717236,7423783,1,248639,0.5,0,696,1,0,0
 "Arakkoan Alchemy Tools",0,0,0,12203,0,3,1,1,968980,7445480,3,258743,1,10,1948,2,0,0
 "Skyreach Circular Table",0,0,0,12204,0,3,1,1,971695,7445500,5,258744,1,10,1949,2,0,0
 "High Arakkoan Library Shelf",0,0,0,12205,0,3,1,1,7277023,7445508,3,258745,1,10,1950,2,0,0
+"Silvermoon Curtains",0,0,0,14624,0,3,2,1,6209625,7483246,5,262599,1,10,2146,2,0,0
 "High Arakkoan Alchemist's Shelf",0,0,0,12206,0,3,1,1,7277024,7445512,3,258746,1,10,1951,2,0,0
 "High Arakkoan Shelf",0,0,0,12207,0,3,1,1,7277025,7445504,3,258747,1,10,1952,2,0,0
 """Rising Glory of Rukhmar"" Statue",0,0,0,12208,0,3,1,1,7277026,7445516,5,258748,1,10,1953,2,0,0
@@ -1862,8 +1863,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Homely Sin'dorei Shelf",0,0,0,14620,0,3,1,1,6050872,7483242,5,262594,1,10,2142,2,0,0
 "Homely Wall Shelves",0,0,0,14621,0,3,2,1,6050877,7483243,3,262595,1,10,2143,2,0,0
 "Gilded Eversong Book",0,0,0,14622,0,3,1,1,6074149,7483244,1,262597,1,10,2144,2,0,1452
-"Opened Sin'dorei Scroll",0,0,0,14623,0,3,1,1,6103388,7483245,1,262598,1,10,2145,2,0,1318
-"Silvermoon Curtains",0,0,0,14624,0,3,2,1,6209625,7483246,5,262599,1,10,2146,2,0,0
+"Open Sin'dorei Scroll",0,0,0,14623,0,3,1,1,6103388,7483245,1,262598,1,10,2145,2,0,1318
 "Stitched Haranir Rug",0,0,0,14625,0,3,4,1,6310375,7483247,5,262600,1,10,2147,2,0,0
 "Wild Hanging Scroll",0,0,0,14626,0,3,2,1,6326918,7483248,5,262601,1,10,2148,2,0,0
 "Ren'dorei Warp Orb",0,0,0,14627,0,3,1,1,6404236,7479504,5,262602,1,10,2149,2,0,0
@@ -1900,7 +1900,6 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Tazaveshi Hookah",0,0,0,14800,0,3,1,1,6323399,7490402,1,262907,1,10,2180,3,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy01.m2",0,0,0,14801,0,131,1,1,6654756,7455159,5,262910,1,0,2181,0,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy03.m2",0,0,0,14802,0,131,1,1,6683996,7434613,5,262912,1,0,2182,0,0,0
-"Cuddly Red Grrgle",0,0,0,15152,0,1027,1,1,7493974,7495882,1,263302,1,0,2263,2,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy06.m2",0,0,0,14803,0,131,1,1,6780548,7465232,3,262923,1,0,2183,0,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy08.m2",0,0,0,14804,0,131,1,1,6780550,7448834,3,262929,1,0,2184,0,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Ritual_Effigy10.m2",0,0,0,14805,0,131,1,1,6780552,7434620,3,262930,1,0,2185,0,0,0
@@ -1924,7 +1923,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Replica Wey'nan's Ward",0,0,0,14823,0,3,3,1,4732015,7491964,1,263037,1,10,2203,2,0,0
 "Haranir Reclined Bed",0,0,0,14824,0,3,1,1,4899957,7492012,5,263038,1,10,2204,2,0,0
 "Harandar Flowering Lamp",0,0,0,14825,0,3,1,1,4905308,7491976,5,263039,1,10,2205,2,0,0
-"[DNT] 11WE_WildElves_Lighting_Campfire01_off.m2 - DO NOT USE - no off lights",0,0,0,14826,0,131,1,1,6215622,7491980,100,263040,1,0,2206,0,0,0
+"[DNT] 11WE_WildElves_Lighting_Campfire01_off.m2 - DO NOT USE - no off lights",0,0,0,14826,0,128,1,1,6215622,7491980,100,263040,1,0,2206,0,0,0
 "Replica Root of the World",0,0,0,14827,0,3,2,1,6252867,7491968,5,263041,1,10,2207,2,0,0
 "Rootlight Lamppost",0,0,0,14828,0,3,1,1,6252874,7491988,3,263042,1,10,2208,2,0,0
 "Consortium Energy Barrel",0,0,0,14829,0,3,1,1,192556,7487144,1,263043,1,10,2209,2,0,0
@@ -1980,6 +1979,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Cuddly Horde Red Grrgle",0,0,0,15149,0,1027,1,1,7493568,7496708,1,263299,1,0,2260,2,0,0
 "Cuddly Purple Grrgle",0,0,0,15150,0,1027,1,1,7493569,7495886,1,263300,1,0,2261,2,0,0
 "Cuddly Green Grrgle",0,0,0,15151,0,1027,1,1,7493973,7496712,1,263301,1,0,2262,2,0,0
+"Cuddly Red Grrgle",0,0,0,15152,0,1027,1,1,7493974,7495882,1,263302,1,0,2263,2,0,0
 "Cuddly Blue Grrgle",0,0,0,15153,0,1027,1,1,7493975,7497413,1,263303,1,0,2264,2,0,0
 "[DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack11.M2",0,0,0,15154,0,131,1,1,7495888,7497472,1,263304,1,0,2265,0,0,0
 "Bubbling Haranir Cauldron",0,0,0,15155,0,3,1,1,5163359,7495872,3,263315,1,10,2266,2,0,1452
@@ -1988,7 +1988,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Simple Amani Basket",0,0,0,15158,0,3,1,1,6075565,7497493,1,263318,1,10,2269,2,0,0
 "[DNT] [AUTOGEN] 12TR_Amani_Storage_Basket02.m2",0,0,0,15159,0,131,1,1,6075566,7497494,1,263319,1,0,2270,0,0,0
 "Rope-Bound Amani Basket",0,0,0,15160,0,3,1,1,6075567,7497495,1,263320,1,10,2271,2,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Storage_Basket05.m2",0,0,0,15161,0,131,1,1,6075569,7497496,0,263321,1,0,2272,0,0,0
+"Frayed Amani Offering Basket",0,0,0,15161,0,3,1,1,6075569,7497496,1,263321,1,10,2272,2,0,0
 "[DNT] [AUTOGEN] 11WE_WildElves_Cooking_Ladle01.m2",0,0,0,15162,0,131,1,1,6326885,7495876,0,263322,1,0,2273,0,0,0
 "[DNT] [AUTOGEN] 12BE_BloodElf_Structure_Statue03.M2",0,0,0,15163,0,131,1,1,6684014,7492144,5,263323,1,0,2274,0,0,0
 "Corked Bottle of Liquid Mystery",0,0,0,15229,0,1283,1,1,7483958,7498738,1,263383,1,0,2275,2,0,0
@@ -2074,7 +2074,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Galactic Void-Scarred Barricade",0,0,0,15488,0,3,1,1,6210879,7506459,5,264253,1,10,2363,2,0,0
 "Three-Tier Zul'Aman Shelf",0,0,0,15489,0,3,1,1,6212413,7507186,3,264254,1,10,2364,2,0,0
 "Amani Trophy Frame",0,0,0,15490,0,3,2,1,6212416,7507282,3,264255,1,10,2365,2,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Decor_AnimalTrophy02.m2",0,0,0,15491,0,131,2,1,6212417,7507283,0,264256,1,0,2366,0,0,0
+"Wall-Mounted Amani Animal Trophy",0,0,0,15491,0,3,2,1,6212417,7507283,1,264256,1,10,2366,2,0,0
 "Zul'Aman Armament Rest",0,0,0,15492,0,3,1,1,6212430,7507174,3,264257,1,10,2367,2,0,0
 "Blossoming Forge",0,0,0,15493,0,3,1,1,6225683,7506626,5,264258,1,10,2368,2,0,0
 "On'ohia's Call",0,0,0,15494,0,3,2,1,6252866,7507180,5,264259,1,10,2369,3,0,0
@@ -2129,24 +2129,24 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Zapmaster Viewer 3000",0,0,0,15654,0,1283,2,1,7464615,7513215,5,264384,1,0,2424,2,0,0
 "Naturally Elegant Doormat",0,0,0,15668,0,1283,4,1,7476057,7513315,1,264396,1,0,2425,2,0,0
 "Simply Adorned Vase and Flowers",0,0,0,15669,0,1283,1,1,7476058,7513321,1,264397,1,0,2426,2,0,0
-"[DNT] 12PH_Leg_Worgen_Bench_02.M2",0,0,0,15740,618818,192,1,1,7508748,7514893,3,264476,1,0,2427,0,0,0
+"[DNT] 12PH_Leg_Worgen_Bench_02.M2",0,0,0,15740,618818,192,1,1,7508748,7514893,100,264476,1,0,2427,0,0,0
 "Thunder Totem Mailbox",0,0,0,15741,629253,3,1,1,1253823,7509648,3,264477,1,0,2428,2,0,0
-"[DNT] 12PH_Leg_7NE_Nightelf_Chair03.M2",0,0,0,15742,618819,195,1,1,7508794,7514889,1,264478,1,0,2429,0,0,0
+"[DNT] 12PH_Leg_7NE_Nightelf_Chair03.M2",0,0,0,15742,618819,192,1,1,7508794,7514889,100,264478,1,0,2429,0,0,0
 "Skyweave Amani Tapestry",0,0,0,15743,0,3,2,1,6212406,7514932,3,264479,1,10,2430,2,0,0
 "Greenvine Amani Tapestry",0,0,0,15744,0,3,2,1,6212407,7514968,3,264480,1,10,2431,2,0,0
 "Earthhide Amani Tapestry",0,0,0,15745,0,3,2,1,6212408,7514982,3,264481,1,10,2432,2,0,0
 "Void Elf Torch",0,0,0,15746,0,3,1,1,6701004,7514911,5,264482,1,10,2433,2,0,0
 "Cosmic Void Campfire",0,0,0,15747,0,3,1,1,6701007,7514909,1,264483,1,10,2434,2,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry04.m2",0,0,0,15748,0,131,1,1,6797442,7514988,0,264484,1,0,2435,0,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry05.m2",0,0,0,15749,0,131,1,1,6797443,7514994,0,264485,1,0,2436,0,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry06.m2",0,0,0,15750,0,131,1,1,6797444,7515002,0,264486,1,0,2437,0,0,0
+"Blue Amani Tapestry",0,0,0,15748,0,3,2,1,6797442,7514988,3,264484,1,10,2435,2,0,0
+"Green Amani Tapestry",0,0,0,15749,0,3,2,1,6797443,7514994,3,264485,1,10,2436,2,0,0
+"Brown Amani Tapestry",0,0,0,15750,0,3,2,1,6797444,7515002,3,264486,1,10,2437,2,0,0
 "[DNT] [AUTOGEN] 12VDL_Arid_Tendril_Top_B01.m2",0,0,0,15751,0,131,1,1,6031409,7514996,5,264487,1,0,2438,0,0,0
 "[DNT] [AUTOGEN] 12VDL_Main_Plant_JellyPod_B02.m2",0,0,0,15752,0,131,1,1,6044186,7515008,5,264488,1,0,2439,0,0,0
 "[DNT] [AUTOGEN] 12VDL_Arid_Plant_GlowShrub_A03.m2",0,0,0,15753,0,131,1,1,6047142,7514984,5,264489,1,0,2440,0,0,0
 "[DNT] [AUTOGEN] 12VDL_Arid_Plant_VoidFingers_B01.m2",0,0,0,15754,0,131,1,1,6158666,7515004,3,264490,1,0,2441,0,0,0
 "Voidbound Holding Cell",0,0,0,15755,621996,3,1,1,6210896,7514972,5,264491,1,10,2442,3,0,0
 "Chaotic Void Maw",0,0,0,15756,621915,35,1,1,7960828,7514976,5,264492,0.5,10,2443,3,0,0
-"Opened Domanaar Storage Crate",0,0,0,15757,0,3,1,1,6391989,7514922,3,264493,1,10,2444,2,0,0
+"Open Domanaar Storage Crate",0,0,0,15757,0,3,1,1,6391989,7514922,3,264493,1,10,2444,2,0,0
 "Banded Domanaar Storage Crate",0,0,0,15758,0,3,1,1,6391990,7514966,3,264494,1,10,2445,3,0,0
 "[DNT] [AUTOGEN] 12XP_Generic_BearTotem_Ice01.m2",0,0,0,15759,0,131,1,1,7002201,7514918,5,264495,1,0,2446,0,0,0
 "[DNT] [AUTOGEN] 12XP_Generic_ElementalFloatingRocks01.m2",0,0,0,15760,0,131,1,1,7132477,7514924,3,264496,1,0,2447,0,0,0
@@ -2191,12 +2191,12 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Joybuzz's Joyful Wall of Trains",0,0,0,16088,0,3,2,1,244205,7428098,5,264711,1,10,2486,2,0,1452
 "Gilnean Spare Saddle",0,0,0,16089,0,3,1,1,306120,7518977,1,264712,1,10,2487,2,0,0
 "Heart of the Forest Banner",0,0,0,16090,0,3,1,1,3564033,7518978,3,264713,0.5,10,2488,2,0,0
-"[DNT] 12PH_Leg_PA_innBench_01.M2",0,0,0,16091,619053,195,1,1,7508792,7518991,3,264714,1,0,2489,0,0,0
+"[DNT] 12PH_Leg_PA_innBench_01.M2",0,0,0,16091,619053,192,1,1,7508792,7518991,100,264714,1,0,2489,0,0,0
 "Zul'Aman Flame Cradle",0,0,0,16092,0,3,3,1,6075575,7519028,3,264715,1,10,2490,2,0,0
 "Hexed Tomb Brazier",0,0,0,16093,0,3,1,1,6153828,7517840,5,264716,1,10,2491,3,0,1580
 "Amani Warding Hex",0,0,0,16094,0,3,1,1,6195760,7517836,5,264717,1,10,2492,2,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Navigation_Canoe01.m2",0,0,0,16095,0,131,1,1,6195764,7517846,5,264718,1,0,2493,0,0,0
-"[DNT] [AUTOGEN] 12TR_Amani_Navigation_Oar01.m2",0,0,0,16096,0,131,1,1,6195765,7517850,3,264719,1,0,2494,0,0,0
+"Amani Fishing Canoe",0,0,0,16095,0,3,1,1,6195764,7517846,5,264718,1,10,2493,2,0,0
+"Worn Amani Oar",0,0,0,16096,0,3,1,1,6195765,7517850,3,264719,1,10,2494,2,0,0
 "Void Elf Bedroll",0,0,0,16097,0,131,1,1,6701002,7517857,1,264720,1,10,2495,2,0,0
 "Auspicious Curio Display",0,0,0,16098,0,1283,1,1,7509678,7519052,5,264721,1,0,2496,2,0,0
 "Auspicious Inkmaster's Desk",0,0,0,16099,0,1283,1,1,7509679,7519057,3,264722,1,0,2497,2,0,0
@@ -2205,7 +2205,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Auspicious Imperial Lion",0,0,0,16102,0,1283,1,1,7509686,7519069,5,264725,1,0,2500,2,0,0
 "Arakkoan Alchemist's Concoction",0,0,0,16219,0,3,1,1,191825,7428269,1,264899,1,10,2520,2,0,0
 "Arakkoan Alchemist's Bottle",0,0,0,16220,0,3,1,1,191826,7433538,1,264900,1,10,2521,2,0,0
-"[DNT] 12PH_Leg_7NE_Druid_StoneRune01.M2",0,0,0,16221,0,192,1,1,7515605,7521260,5,264901,1,0,2522,0,0,0
+"[DNT] 12PH_Leg_7NE_Druid_StoneRune01.M2",0,0,0,16221,0,192,1,1,7515605,7521260,100,264901,1,0,2522,0,0,0
 "Decorated Underground Table",0,0,0,16227,0,3,1,1,4689406,7521648,3,264915,1,10,2527,2,0,0
 "Loamm Bartering Stall",0,0,0,16228,619182,3,1,1,4689410,7521649,5,264916,1,10,2528,3,0,0
 "Ceramic Loamm Bowl",0,0,0,16229,0,3,1,1,4884000,7521650,1,264917,1,10,2529,2,0,0
@@ -2222,7 +2222,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Zul'Aman Brazier Post",0,0,0,16316,0,3,1,1,6163862,7524456,5,265033,0.80000001192,10,2542,3,0,0
 "[DNT] [AUTOGEN] 12DU_MaisaraHills_Ritual_EncounterAltar01.M2",0,0,0,16317,0,131,1,1,7506777,7524464,0,265034,1,0,2543,0,0,0
 "Farstriders' Pride Statue",0,0,0,16691,0,3,1,1,6684020,7525986,5,265106,0.60000002384,10,2548,2,0,0
-"Draenei Holo-Junction",0,0,0,16754,0,131,4,1,192430,7426031,1,265331,1,10,2549,0,0,0
+"Draenei Holo-Junction",0,0,0,16754,0,3,4,1,192430,7426031,1,265331,1,10,2549,2,0,0
 "[DNT] [AUTOGEN] 12PH_Folk_WaterWell01.M2",0,0,0,16755,0,131,1,1,7516799,7527580,3,265332,1,0,2550,0,0,0
 "Fortified Amani Awning",0,0,0,16808,0,3,2,1,6153836,7531417,5,265386,1,10,2551,3,0,0
 "Cuddly Tomato Grrgle",0,0,0,16811,0,1027,1,1,7525410,7531421,1,265387,1,0,2552,2,0,0
@@ -2312,7 +2312,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "[DNT] [AUTOGEN] 12PH_Opulent_Barrel02_Open.M2",0,0,0,17752,0,131,1,1,7552411,7552621,1,266073,1,0,2659,0,0,0
 "[DNT] [AUTOGEN] 12PH_Opulent_Bench_Long01.M2",0,0,0,17753,0,131,1,1,7552487,7552631,3,266074,1,0,2660,0,0,0
 "[DNT] [AUTOGEN] 12FN_Fungarian_Lighting_LampPost01.m2",0,0,0,17785,0,131,1,1,6851757,7553255,0,266126,1,0,2661,0,0,0
-"[DNT] - Anim doesn't play - Self-Pouring 590 Quel'Lithien Red",0,0,0,17786,621688,64,1,1,7553064,7553275,1,266127,1,0,2662,0,0,0
+"[DNT] - Anim doesn't play - Self-Pouring 590 Quel'Lithien Red",0,0,0,17786,621688,192,1,1,7553064,7553275,100,266127,1,0,2662,0,0,0
 "Gilded Silvermoon Gazebo",0,0,0,17787,0,131,1,1,6435832,7553335,5,266130,1,0,2663,1,0,0
 "Lush Garden Hedge",0,0,0,17792,0,259,1,1,7297701,7553504,3,266162,1,0,2665,2,0,0
 "Lush Garden Fungal Planter",0,0,0,17793,0,259,1,1,7297703,7553505,3,266163,1,0,2666,2,0,0
@@ -2364,7 +2364,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Lush Garden Stable",0,0,0,18794,0,259,1,1,7297700,7570040,5,267203,1,0,2733,2,0,0
 "[DNT] [AUTOGEN] 12PH_Folk_Candelabra01.m2",0,0,0,18795,625764,131,1,1,7345174,7570034,3,267204,1,0,2734,0,0,0
 "Purified Folk Candle",0,0,0,18796,625765,3,1,1,7345175,7570036,1,267205,1,10,2735,2,0,0
-"[DNT] [AUTOGEN] 12PH_Opulent_Chair_Dining_Small01.M2",0,0,0,18797,625766,131,1,1,7554165,7570771,3,267206,1,0,2736,0,0,0
+"[DNT] [AUTOGEN] 12PH_Opulent_Chair_Dining_Small01.M2",0,0,0,18797,688004,163,1,1,7554165,7570771,3,267206,1,0,2736,0,0,0
 "Amani Territorial Totem",0,0,0,18798,0,3,1,1,6195758,7570816,5,267207,1,10,2737,3,0,0
 "[DNT] [AUTOGEN] 12FN_Fungarian_Crafting_Anvil01.m2",0,0,0,18799,0,131,1,1,6225681,7570732,3,267208,1,0,2738,0,0,0
 "Open Void Elf Bedroll",0,0,0,18800,0,3,1,1,6701003,7570820,3,267209,1,10,2739,2,0,0
@@ -2511,9 +2511,9 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_Blueberry_A01.m2",0,0,0,20731,0,131,1,1,6043925,7681946,1,269391,1,0,2948,0,0,0
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_Blueberry_B01.m2",0,0,0,20732,0,131,1,1,6043926,7681948,3,269392,1,0,2949,0,0,0
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushBirch_A01.m2",0,0,0,20733,0,131,1,1,6043928,7681954,5,269393,1,0,2950,0,0,0
-"Void Elf Scribe's Desk",0,0,0,22143,0,3,1,1,7761091,7814988,3,273159,1,10,3413,2,0,0
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushBirch_B01.m2",0,0,0,20734,0,131,1,1,6043929,7681956,5,269394,1,0,2951,0,0,0
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushLeafy_B01.m2",0,0,0,20735,0,131,1,1,6043930,7688423,3,269395,1,0,2952,0,0,0
+"Small Wooden Floor Tile",0,0,0,23553,0,3,1,1,7834745,7845191,1,280142,1.79999995232,0,3027,1,0,1580
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushWillow_A01.m2",0,0,0,20736,0,131,1,1,6043932,7688427,5,269396,1,0,2953,0,0,0
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushWillow_A02.m2",0,0,0,20737,0,131,1,1,6043933,7688431,5,269397,1,0,2954,0,0,0
 "[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushWillow_B01.m2",0,0,0,20738,0,131,1,1,6043934,7688437,5,269398,1,0,2955,0,0,0
@@ -2637,9 +2637,9 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "[DNT] [AUTOGEN] 12PH_Opulent_Chandelier02.M2",0,0,0,21600,644840,131,3,1,7554194,7735656,3,271160,1,0,3209,0,0,0
 "[DNT] [AUTOGEN] 12PH_BloodElf_Decor_Chair_Porchswing01.M2",0,0,0,21601,0,131,1,1,7736336,7741517,5,271161,1,0,3210,0,0,0
 "Sin'dorei Garden Swing",0,0,0,21602,649986,3,1,1,7736337,7741523,5,271162,1,10,3211,2,0,0
-"Venomjade Necklace",0,0,0,21615,0,3,1,1,7277161,7746463,1,271175,1,10,3301,2,0,0
+"Venomjade Necklace",0,0,0,21615,0,3,1,1,7277161,7746463,1,271175,1,10,3301,2,0,1452
 "Feathered Ula'tek Talisman",0,0,0,21616,0,3,1,1,7277162,7746467,1,271176,1,10,3017,2,0,1452
-"Opened Serpentine Reliquary",0,0,0,21617,0,3,1,1,7277164,7746473,1,271177,1,10,3226,2,0,1452
+"Open Serpentine Reliquary",0,0,0,21617,0,3,1,1,7277164,7746473,1,271177,1,10,3226,2,0,1452
 "Clutch of Ula'tek",0,0,0,21653,0,3,1,1,7277182,7758345,1,271358,1,10,3012,2,0,0
 "Egg of Ula'tek",0,0,0,21720,0,3,1,1,7277175,7759650,1,271604,1,10,3011,2,0,0
 "Destroyed Clutch of Ula'tek",0,0,0,21725,0,3,1,1,7277186,7759656,3,271609,1,10,3013,2,0,0
@@ -2693,6 +2693,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Small Decorative Dornogal Opal",0,0,0,22009,0,3,1,1,5281476,7810322,1,272444,0.34999999404,10,3392,2,0,0
 "Decorative Dornogal Opal",0,0,0,22010,0,3,1,1,5281479,7810323,3,272445,0.80000001192,10,3393,2,0,0
 "Large Decorative Dornogal Opal",0,0,0,22011,0,3,1,1,5281480,7810324,5,272446,0.60000002384,10,3394,2,0,0
+"Void Elf Scribe's Desk",0,0,0,22143,0,3,1,1,7761091,7814988,3,273159,1,10,3413,2,0,0
 "Seaside Tiki Frondtree",0,0,0,22144,0,387,1,1,7789431,7814995,3,274784,1,0,3437,2,0,0
 "Preyhunter's Scaled Effigy",0,0,0,22145,0,3,1,1,7808626,7815004,3,278369,1,10,3601,2,0,0
 "Preyhunter's Fanged Effigy",0,0,0,22146,0,3,1,1,7808627,7815009,3,278372,1,10,3602,2,0,0
@@ -2704,6 +2705,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Void Inkwell",0,0,0,22388,0,3,1,1,7761093,7817528,1,273147,1,10,3411,2,0,0
 "Seaside Tiki Market Stand",0,0,0,22397,0,387,1,1,7789428,7819551,5,274899,1,0,3442,2,0,0
 "Seaside Charcoal Grill",0,0,0,22398,650814,419,1,1,7789439,7819565,3,274897,1,0,3441,2,0,1580
+"""Gnoma Lisa"" Painting",0,0,0,22399,0,3,2,1,1470706,7819575,1,284264,1,10,3784,2,0,0
 "Condensed Anima Orb",0,0,0,22775,0,1283,1,1,7804771,7808285,1,273640,1,0,3416,2,0,0
 "Seaside Cushioned Chair",0,0,0,22895,651418,387,1,1,7831531,7833786,3,274901,1,0,3443,2,0,1580
 "Amani Decorative Plinth",0,0,0,22916,0,3,1,1,6155553,7834178,5,274518,0.60000002384,10,3421,2,0,1452
@@ -2734,7 +2736,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Pet Food and Water Tray",0,0,0,23549,0,3,1,1,969746,7845181,1,276677,1,10,3504,2,0,1452
 "Bakar's Snack",0,0,0,23550,0,3,1,1,4288081,7845182,1,276673,1,10,3502,2,0,1452
 "Bakar's Dinner",0,0,0,23551,0,3,1,1,4288082,7845183,1,276675,1,10,3503,2,0,0
-"Small Wooden Floor Tile",0,0,0,23553,0,3,1,1,7834745,7845191,1,280142,1.79999995232,0,3027,1,0,1580
+"Tusked Amani Canoe",0,0,0,23552,0,3,1,1,7815515,7845186,5,284362,1,10,3790,2,0,1452
 "Large Wooden Floor Tile",0,0,0,23554,0,3,1,1,7834746,7845195,3,280144,1.79999995232,0,3028,1,0,1452
 "Small Triangular Wooden Tile",0,0,0,23555,0,3,1,1,7834747,7845199,1,280146,1.79999995232,0,3029,1,0,1580
 "Large Triangular Wooden Tile",0,0,0,23556,0,3,1,1,7834748,7845202,3,280148,1.79999995232,0,3030,1,0,1452
@@ -2779,6 +2781,7 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Cozy Bird Nest",0,0,0,25121,0,2051,1,1,5199469,7930677,5,277121,0.15000000596,0,3518,1,0,1452
 "Loyal Companion's Plinth",0,0,0,25122,0,2051,1,1,6023432,7930705,5,277163,1,0,3525,1,0,1452
 "Griftah's Torch of Rotation",0,0,0,25128,0,3,1,1,7914427,7934911,3,276312,1,10,3472,2,0,0
+"Corroded Amani Sconce",0,0,0,25129,0,3,2,1,7914429,7934918,1,284359,1,10,3789,2,0,0
 "The Venomous Abyss Aureate Trophy",0,0,0,25131,0,1795,1,1,7930280,7937248,1,279125,1,10,2801,4,0,0
 "The Venomous Abyss Gleaming Trophy",0,0,0,25132,0,1795,1,1,7930281,7937255,1,279129,1,10,2803,4,0,0
 "The Venomous Abyss Argent Trophy",0,0,0,25133,0,1795,1,1,7930282,7937260,1,279127,1,10,2802,4,0,0
@@ -2800,9 +2803,21 @@ Riftstone,0,0,0,14557,0,3,1,1,6700987,7478622,1,262354,1,10,2109,2,0,0
 "Traditional Tortollan Tent",0,0,0,25297,0,3,1,1,1659545,7940357,5,277921,1,10,3585,2,0,0
 "Aged Tortollan Scroll Case",0,0,0,25299,0,3,1,1,1661562,7940349,3,277923,1,10,3586,2,0,0
 "Blue Tortollan Signpost",0,0,0,25300,0,3,1,1,1661570,7940353,3,277925,1,10,3587,2,0,0
+"Nourished Clutch of Brood Eggs",0,0,0,25301,0,3,1,1,3022827,7940060,3,275865,1,10,3457,2,0,0
+"Nourished Brood Egg Cluster",0,0,0,25302,0,3,1,1,3022828,7940329,3,275867,1,10,3458,2,0,0
+"Nourished Brood Eggs",0,0,0,25303,0,3,1,1,3022829,7940339,1,275869,1,10,3459,2,0,0
+"Dormant Clutch of Brood Eggs",0,0,0,25304,0,3,1,1,3026076,7940064,3,275871,1,10,3460,2,0,0
+"Dormant Brood Egg",0,0,0,25305,0,3,1,1,3026077,7940341,1,275873,1,10,3461,2,0,0
+"Dormant Brood Egg Cluster",0,0,0,25306,0,3,1,1,3028253,7940333,3,275879,1,10,3462,2,0,0
 "Sunstrider Omnium Simulacrum",0,0,0,25307,0,3,1,1,7940395,7940511,5,276083,1,10,3466,3,0,0
+"Symbol of Halazzi, Loa of the Hunt",0,0,0,25308,0,3,2,1,6935592,7940024,3,279067,0.40000000596,10,2583,2,0,0
+"Small Shadowmoon Shadebrush",0,0,0,25323,0,3,1,1,798115,7949043,5,283220,0.34999999404,10,3693,2,0,0
+"Overgrown Valuun Shrub",0,0,0,25324,0,3,1,1,894399,7949047,5,283222,0.40000000596,10,3694,2,0,0
+"Verdant Mire Scale-Leaf",0,0,0,25325,0,3,1,1,897834,7949052,5,283224,0.40000000596,10,3695,2,0,0
+"Everbloom Forest Floor",0,0,0,25326,0,3,4,1,1033500,7949054,3,284194,1,0,3776,2,0,0
 "Yellowed Kelp Pile",0,0,0,25336,0,3,4,1,328308,7940367,3,277927,1,10,3588,2,0,0
 "Hooked Net Trap",0,0,0,25337,0,3,1,1,2025842,7940363,3,278154,1,10,3599,2,0,0
+"Kith'ix's Seal",0,0,0,25474,0,3,1,1,7949197,7956313,5,281213,1,10,3277,3,0,0
 Pepe,0,0,0,25546,657741,35,1,1,7959391,7959956,1,276230,1,10,3471,2,0,0
 "Luminant Defender's Golden Barricade",0,0,0,25564,0,3,1,1,7115733,7961011,5,276321,1,10,3475,2,0,0
 "Luminant Soldier's War Banner",0,0,0,25565,0,3,1,1,7115754,7961005,5,276318,1,10,3474,2,0,0
@@ -2820,6 +2835,22 @@ Pepe,0,0,0,25546,657741,35,1,1,7959391,7959956,1,276230,1,10,3471,2,0,0
 "Jansen Farm Floral Basket",0,0,0,25895,0,3,2,1,7967693,7976264,1,280627,1,10,3235,2,0,0
 "Saldean Autumnal Woven Rug",0,0,0,25896,0,3,4,1,7967696,7976262,3,280639,1.35000002384,10,3241,2,0,0
 "Perch of the Dawnfire Phoenix",0,0,0,25936,0,1027,1,1,7958104,8014767,3,276873,1,0,3516,3,0,0
+"Simple Hallow's End Candle",0,0,0,26009,0,3,1,1,199809,8017264,1,282051,1,10,3607,2,0,0
+"Candlelit Smiling Jack-o'-Lantern",90,0,0,26010,0,3,1,1,201088,8017265,3,282081,1,10,3615,2,0,1632
+"Candlelit Shrieking Jack-o'-Lantern",0,0,0,26011,0,3,1,1,201089,8017266,3,282192,1,10,3652,2,0,1632
+"Candlelit Ogre Jack-o'-Lantern",0,0,0,26012,0,3,1,1,201090,8017270,3,282194,1,10,3653,2,0,1632
+"Scarecrow Pepe",0,0,0,26013,693873,1827,1,1,1246563,8017272,1,282287,1,10,3668,2,0,0
+"Apple Bobbing Bucket",0,0,0,26015,0,3,1,1,5019423,8017274,3,282190,1,10,3651,2,0,1318
+"Filled Candy Bucket",0,0,0,26016,0,35,1,1,5019424,8017275,3,282196,1,10,3654,2,0,1632
+"Spidery Witch Hat",0,0,0,26017,0,3,1,1,5019429,8017276,1,282184,0.30000001192,10,3650,2,0,0
+"Eternally Powered Glowskull",0,0,0,26018,0,3,3,1,5019430,8017277,1,282090,1,10,3618,2,0,0
+"Spooky Scarecrow",0,0,0,26019,0,3,1,1,5019441,8017278,3,282077,1,10,3614,2,0,0
+"Buckled Witch Hat",0,0,0,26020,0,3,1,1,5358953,8017281,3,282086,1,10,3617,2,0,0
+"Enchanted Hallow's End Candle",0,0,0,26050,0,3,1,1,8015704,8018865,1,282072,1,10,3612,2,0,0
+"Unlit Smiling Jack-o'-Lantern",90,0,0,26051,0,3,1,1,8015706,8018853,3,282083,1,10,3616,2,0,1632
+"Unlit Shrieking Jack-o'-Lantern",0,0,0,26052,0,3,1,1,8015707,8018857,3,282198,1,10,3655,2,0,1632
+"Unlit Ogre Jack-o'-Lantern",0,0,0,26053,0,3,1,1,8015708,8018861,3,282200,1,10,3656,2,0,1632
+"Horrific Head of the Horseman",0,0,0,26054,0,3,1,1,8018068,8018871,1,282289,1,10,3669,2,0,0
 "Vilescar Weapon Rack",0,0,0,26097,0,3,1,1,7277196,8025999,5,277280,1,10,3529,2,0,0
 "Rustic Fishing Rack",0,0,0,26196,0,3,1,1,575405,8030597,5,277929,1,10,3589,2,0,0
 "Hanging Yellowed Kelp",0,0,0,26197,0,3,2,1,1316187,8030600,3,277931,1,10,3590,2,0,0
@@ -2850,13 +2881,14 @@ Pepe,0,0,0,25546,657741,35,1,1,7959391,7959956,1,276230,1,10,3471,2,0,0
 "Amani Forgemaster's Rack",0,0,0,26382,0,3,1,1,6212431,8033230,5,279329,1,10,2906,2,0,0
 "Coiled Amani Hookshot",0,0,0,26383,0,3,1,1,6715093,8033238,1,279337,1,10,2997,2,0,0
 """Cursed Gaze of Ula'tek"" Mural",0,0,0,26384,0,3,2,1,7498518,8033212,5,280752,0.20000000298,10,3254,2,0,0
+"Amani Hex Candle",0,0,0,26385,0,3,1,1,7515871,8033320,1,284355,1,10,3787,2,0,0
 "Half-Shell Hot Pot",0,0,0,26386,0,3,1,1,1661558,8033332,3,280238,1,10,3049,2,0,1580
 "Sea Glass Lamp Post",0,0,0,26387,0,3,1,1,1661568,8033691,3,280232,1,10,3046,2,0,0
 "Apothecary's Tortollan Display Rack",0,0,0,26389,0,3,1,1,1663982,8033703,5,280227,1,10,3044,2,0,0
 "Ersatz Venom Splatter",0,0,0,26391,0,3,4,1,7880108,8033194,5,279359,1,10,2905,2,0,0
 "Draenei Rock Goblet",0,0,0,26477,0,3,1,1,192399,8036054,1,279458,1,10,3008,2,0,0
-"Droopy Longwick Rope",0,0,0,26936,0,3,1,1,5345653,8119324,3,280273,1,10,3147,2,0,0
 "Ancient Memories of the Sea",0,0,0,26478,0,3,1,1,307788,8033697,5,280236,1,10,3048,2,0,0
+"Beloved Murloc Plushie",0,0,0,26479,0,3,1,1,969758,8033244,1,284238,1,10,3779,2,0,0
 "Tortollan Scholar Satchel",0,0,0,26481,0,3,1,1,1661561,8036059,1,280218,1,10,3040,2,0,0
 "Sealeather Sack",0,0,0,26482,0,3,1,1,1662185,8036060,3,280221,1,10,3041,2,0,0
 "Collector's Tortollan Display Rack",0,0,0,26483,0,3,1,1,1663984,8036061,5,280223,1,10,3042,2,0,0
@@ -2885,6 +2917,9 @@ Pepe,0,0,0,25546,657741,35,1,1,7959391,7959956,1,276230,1,10,3471,2,0,0
 "Molsen Farm Corn Row",0,0,0,26706,0,3,1,1,7967700,8106817,3,280644,1,10,3243,2,0,0
 "Old Moonbrook Creeping Ivy",0,0,0,26707,0,3,2,1,7967701,8106822,1,280646,1,10,3244,2,0,0
 "Westfall Farmer's Shed",0,0,0,26708,0,3,1,1,7967702,8106831,5,280650,1,10,3245,2,0,0
+"Beloved Ottuk Plushie",0,0,0,26709,0,3,1,1,5350798,8106965,1,284240,1,10,3780,2,0,0
+"Beloved Ottuuuuuuk Plushie",0,0,0,26710,0,3,1,1,5350799,8106970,1,284242,1,10,3781,2,0,0
+"Beloved Plush Doll",0,0,0,26711,0,3,1,1,8096059,8106972,1,284246,1,10,3783,2,0,0
 "Large Warrens Candle",0,0,0,26785,0,3,1,1,5169943,8116382,1,280259,1,10,3107,2,0,0
 "Large Threedium Warrens Candle",0,0,0,26786,0,3,1,1,5169946,8116383,5,280261,0.5,10,3138,2,0,0
 "Candle Cage",0,0,0,26787,0,3,1,1,5169950,8116384,3,280263,1,10,3139,2,0,0
@@ -2896,7 +2931,18 @@ Pepe,0,0,0,25546,657741,35,1,1,7959391,7959956,1,276230,1,10,3471,2,0,0
 "Old Moonbrook Daylight Window",0,0,0,26877,0,3,2,1,8035585,8117480,1,280654,1,10,3247,2,0,0
 "Tuskarr Fire Pit",0,0,0,26878,0,1283,1,1,8117126,8117492,5,280523,1,0,3188,2,0,1452
 "Tuskarr Hanging Grill",0,0,0,26879,0,1283,3,1,8117127,8117498,3,280525,1,0,3224,2,0,0
+"Looming Heartsbane Effigy",0,0,0,26880,0,3,1,1,1675557,8033234,5,282213,1,10,3663,2,0,1528
+"Elaborate Heartsbane Ritual Markings",0,0,0,26881,0,3,1,1,1675684,8033385,5,282202,1,10,3657,2,0,1318
+"Heartsbane Ritual Markings",0,0,0,26882,0,3,1,1,1675689,8033353,3,282092,1,10,3619,2,0,1318
+"Heartsbane Stone Circle",0,0,0,26883,0,3,1,1,1681368,8033367,3,282206,1,10,3659,2,0,1318
+"Heartsbane Banner",0,0,0,26884,0,3,1,1,1695273,8033379,5,282208,1,10,3660,2,0,0
+"Ominous Heartsbane Shrine",0,0,0,26885,0,3,1,1,1697823,8033346,5,282204,1,10,3658,2,0,0
+"Ominous Heartsbane Banner",0,0,0,26886,0,3,1,1,1698655,8033350,3,282095,1,10,3620,2,0,0
+"Elaborate Heartsbane Doom Catcher",0,0,0,26887,0,3,3,1,1711578,8033373,1,282098,1,10,3621,2,0,0
+"Heartsbane Doom Catcher",0,0,0,26888,0,3,3,1,1711590,8033375,1,282100,1,10,3622,2,0,0
+"Heartsbane Candle",0,0,0,26889,0,3,1,1,1892549,8033363,1,282075,1,10,3613,2,0,0
 "Seeker's First Draft",0,0,0,26935,0,131,1,1,1957201,8119323,1,280884,1,10,3271,2,0,0
+"Droopy Longwick Rope",0,0,0,26936,0,3,1,1,5345653,8119324,3,280273,1,10,3147,2,0,0
 "Longwick Rope",0,0,0,26937,0,3,3,1,5345654,8119325,3,280271,1,10,3146,2,0,0
 "Cozy Kobold Crate",0,0,0,26938,0,3,1,1,5348713,8119326,1,280269,1,10,3145,2,0,0
 "Hanging Longwick Rope",0,0,0,26939,0,3,1,1,5350460,8119327,3,280275,1,10,3148,2,0,0
@@ -2909,4 +2955,197 @@ Pepe,0,0,0,25546,657741,35,1,1,7959391,7959956,1,276230,1,10,3471,2,0,0
 "Tuskarr Fishing Gear Rack",0,0,0,27046,0,1283,1,1,8117128,8123884,5,280527,1,0,3225,2,0,0
 "[DNT] [AUTOGEN] 12PH_Leg_Book_Troll_03.M2",0,0,0,27047,0,192,1,1,8123480,8123918,0,280569,1,0,3233,0,0,0
 "Color-Curious Candle",0,0,0,27167,670659,3,1,1,8118955,8131295,3,280513,1,10,3185,3,0,0
+"Aqir Hunter's Trophy",0,0,0,27216,0,3,2,1,8123341,8126777,3,280050,1,10,3020,2,0,0
+"""Pride of Stormwind"" Statue",0,0,0,27217,0,3,1,1,189908,8140904,5,284223,0.5,10,3778,2,0,0
+"Lillistrasza's Lucky Duck Plushie",0,0,0,27220,0,3,1,1,4551444,8140913,1,284244,1,10,3782,2,0,0
+"Caravan Smith's Anvil",0,0,0,27255,0,3,1,1,893038,8147556,3,283365,1,10,3751,2,0,1580
+"Ancient Amani Mural",0,0,0,27458,0,3,2,1,7498516,8154479,5,284357,1,10,3788,2,0,0
+"Mature Star Lily",0,0,0,27606,0,3,1,1,893968,8162868,3,283226,1,10,3696,2,0,0
+"Shielded Lightforged Pylon",0,0,0,27608,0,3,1,1,1573324,8162885,5,281682,1,10,3326,3,0,0
+"Nomad's Round Cushion",0,0,0,27609,0,3,1,1,1591070,8162886,1,283299,1,10,3727,2,0,1452
+"Ornate Vulpera Caravan",0,0,0,27610,0,3,1,1,1674721,8162888,5,283343,1,10,3749,2,0,0
+"Nathrian Reaching Briar",0,0,0,27612,0,3,1,1,2529715,8147992,1,282661,0.5,10,3673,2,0,0
+"Large Nathrian Bladebush",0,0,0,27613,0,3,1,1,2564960,8162891,5,282695,0.40000000596,10,3690,2,0,0
+"Starseed Sapling",0,0,0,27614,0,3,1,1,3486891,8162892,3,283339,1,10,3747,2,0,0
+"Kyrian Waymarker Plaque",0,0,0,27617,0,3,2,1,7967425,8162898,1,284460,1,10,3792,2,0,0
+"Embaari Beech Tree",0,0,0,27683,0,3,1,1,877186,8169072,5,283228,0.5,10,3697,2,0,0
+"Sinfall Dining Table",0,0,0,27684,0,3,1,1,3051536,8168807,5,284568,1,10,3846,2,0,0
+"Hanging Lightforged Standard",0,0,0,27824,0,3,2,1,1608204,8174554,3,282111,0.5,10,3623,3,0,0
 "Old Moonbrook Nighttime Window",0,0,0,27973,0,3,2,1,8035586,8117511,1,282347,1,10,3671,2,0,0
+"Vulpera War Banner",0,0,0,27982,0,3,1,1,3154166,8186775,5,283269,1,10,3712,2,0,0
+"Lightforged Holo-Tower",0,0,0,28106,0,3,1,1,1607336,8186779,3,282113,0.15000000596,10,3624,2,0,0
+"Lightforged Holo-Barricade",0,0,0,28107,0,3,1,1,1607345,8186787,3,282115,0.15000000596,10,3625,2,0,0
+"Lightforged Holo-Parapet",0,0,0,28108,0,3,1,1,1607367,8189465,3,282117,0.15000000596,10,3626,2,0,0
+"Lightforged Holo-Shield",0,0,0,28109,0,3,1,1,1607368,8186783,3,282119,0.15000000596,10,3627,2,0,0
+"Mysterious Imported Piranha",0,0,0,28110,0,3,1,1,3674847,8148002,1,284216,1,10,3777,2,0,0
+"Obsidian Lava Pool",0,0,0,28111,0,3,1,1,3920792,8147996,5,284579,0.89999997616,10,3848,3,0,1452
+"Pale Shadowmoon Willow",0,0,0,28317,0,3,1,1,797885,8179533,5,283230,0.69999998808,10,3698,2,0,0
+"Huddled Nightmarsh Blossom",0,0,0,28318,0,3,1,1,894516,8179526,5,283232,1,10,3699,2,0,0
+"Curved Karabor Hedge",0,0,0,28319,0,3,1,1,897156,8179516,5,283234,0.69999998808,10,3700,2,0,1580
+"Elaborate Karabor Hedge",0,0,0,28320,0,3,1,1,897158,8179506,5,283236,0.69999998808,10,3701,2,0,1580
+"Karabor Hedge",0,0,0,28321,0,3,1,1,897160,8179512,5,283238,0.69999998808,10,3702,2,0,1580
+"Shadow Lily Bloom",0,0,0,28322,0,3,1,1,900281,8179522,1,283240,1,10,3703,2,0,1554
+"Gloomshade Glowpod",0,0,0,28323,0,3,1,1,902336,8179497,3,283242,0.5,10,3704,2,0,0
+"Karabor Beech Tree",0,0,0,28324,0,3,1,1,903764,8179518,5,283244,0.5,10,3705,2,0,0
+"Verdant Shadowmoon Willow",0,0,0,28325,0,3,1,1,925255,8179539,5,283246,0.75,10,3706,2,0,0
+"Nagrand Clover Cluster",0,0,0,28326,0,3,1,1,940783,8179856,1,284106,1,10,3761,2,0,1452
+"Nagrand Wild Wheat",0,0,0,28327,0,3,1,1,940795,8179878,1,284108,1,10,3762,2,0,0
+"Young Sentinel Tree",0,0,0,28328,0,3,1,1,948111,8179846,5,284110,1,10,3763,2,0,0
+"Highmaul Sentinel Tree",0,0,0,28329,0,3,1,1,948113,8179842,5,284112,1,10,3764,2,0,0
+"Wandering Sentinel Tree",0,0,0,28330,0,3,1,1,948121,8179840,5,284114,0.5,10,3765,2,0,0
+"Mature Spiritwood Oak",0,0,0,28331,0,3,1,1,968135,8179834,5,284116,0.25,10,3766,2,0,0
+"Spiritwood Oak Stump",0,0,0,28332,0,3,1,1,969775,8179874,3,284118,0.60000002384,10,3767,2,0,1580
+"Sentinel Tree Root",0,0,0,28333,0,3,1,1,969875,8179862,3,284120,0.5,10,3768,2,0,0
+"Stonecrag Sentinel Tree",0,0,0,28334,0,3,1,1,969881,8179884,5,284122,0.40000000596,10,3769,2,0,0
+"Kalandrios Lily",0,0,0,28335,0,3,1,1,970236,8179872,3,284124,0.75,10,3770,2,0,1580
+"Aborius Pod Plant",0,0,0,28336,0,3,1,1,970239,8179866,1,284126,1,10,3771,2,0,0
+"Gordawg Mossy Rock",0,0,0,28337,0,3,1,1,971014,8179890,5,284128,1,10,3772,2,0,0
+"Nagrand Heart Ivy",0,0,0,28338,0,3,1,1,971433,8179854,3,284130,0.25,10,3773,2,0,0
+"Small Darkhaven Window",0,0,0,28341,0,3,2,1,3257685,8148032,3,284570,1,10,3847,2,0,0
+"Nathrian Window",0,0,0,28343,0,3,2,1,3257686,8179910,3,284562,1,10,3843,2,0,0
+"Maldraxxi Shielding Lattice",0,0,0,28344,0,3,1,1,3307174,8179969,5,284500,1,10,3812,2,0,0
+"Endmire Anima Blossom",0,0,0,28353,0,3,1,1,3076363,8179696,3,282689,1,10,3687,2,0,0
+"Ceremonial Kyrian Standard",0,0,0,28354,0,3,1,1,3566528,8179937,5,284548,1,10,3836,2,0,0
+"Ossified Maldraxxi Spike",0,0,0,28367,0,3,1,1,3222232,8179959,5,284494,1,10,3809,2,0,0
+"Decorative Lightforged Holo-Screen",0,0,0,28427,0,3,1,1,1607322,8204509,3,282024,0.15000000596,10,3395,2,0,0
+"Gilded Stonework Altar",0,0,0,28428,0,3,1,1,1608202,8174668,5,282122,1,10,3628,3,0,0
+"Gleaming Lightforge",0,0,0,28429,674070,3,1,1,1608421,8179476,3,282124,1,10,3629,2,0,0
+"Hanging Argunite Lamp",0,0,0,28430,0,3,3,1,1608443,8179470,3,282126,1,10,3630,2,0,0
+"Argunite Sconce",0,0,0,28431,0,3,2,1,1608447,8179480,3,282128,0.5,10,3631,2,0,0
+"Standing Argunite Lamp",0,0,0,28432,0,3,1,1,1608754,8179418,1,282130,1,10,3632,2,0,0
+"Eredath Artisan's Workbench",0,0,0,28433,0,3,1,1,1616728,8179446,5,282132,1,10,3633,2,0,0
+"Argunite Crystal Storage",0,0,0,28434,0,3,1,1,1616776,8179436,5,282134,1,10,3634,2,0,0
+"Raw Argunite Supply",0,0,0,28435,0,3,1,1,1616777,8179424,1,282136,1,10,3635,2,0,0
+"Carved Argunite Supply",0,0,0,28436,0,3,1,1,1616778,8179428,1,282138,1,10,3636,2,0,0
+"Shimmering Lightforged Canister",0,0,0,28437,0,3,1,1,1616779,8179432,3,282140,0.75,10,3637,2,0,0
+"Gleaming Lightforged Grindstone",0,0,0,28438,0,3,1,1,1616780,8179420,1,282142,0.5,10,3638,2,0,0
+"Lightforged Recall Beacon",0,0,0,28439,675782,35,1,1,1660051,7950435,5,282144,1,10,3639,3,0,1452
+"Lightforged Control Console",0,0,0,28440,675766,3,1,1,1684201,8179454,5,282146,1,10,3640,2,0,1452
+"Replica Crown of the Triumvirate",0,0,0,28441,0,3,1,1,1686555,8179464,5,282148,1,10,3641,3,0,0
+"Golden Argunite Crystal",0,0,0,28442,0,3,1,1,1687823,8179468,5,282150,1,10,3642,2,0,0
+"Celadon Argunite Crystal",0,0,0,28443,0,3,1,1,1687829,8179486,5,282152,1,10,3643,2,0,0
+"Amethyst Argunite Crystal",0,0,0,28444,0,3,1,1,1687835,8179488,5,282154,1,10,3644,2,0,0
+"Reinforced Empyrium Tile",15,-15,0,28445,0,3,1,1,1687905,8179448,3,282156,0.30000001192,10,3645,2,0,0
+"Decorative Lightweave Bolt",0,0,0,28446,0,3,1,1,1695047,8179460,1,282158,1,10,3646,2,0,1452
+"Solar Mana-Ring",0,0,0,28447,0,131,1,1,1697425,8179458,1,282160,1,10,3647,0,0,0
+"Ceremonial Lightforged Standard",0,0,0,28448,0,3,1,1,1861600,8168811,5,282162,0.85000002384,10,3648,3,0,0
+"Skysong Sentinel Tree",0,0,0,28450,0,3,1,1,948119,8179850,5,284132,0.30000001192,10,3774,2,0,0
+"Withered Crimson Oak",0,0,0,28456,0,3,1,1,1616781,8179806,5,284478,0.20000000298,10,3801,2,0,0
+"Closed Vulpera Scroll",0,0,0,28457,0,3,1,1,1624534,8174666,1,283321,1,10,3738,2,0,0
+"Drustvar Leaf Clump",0,0,0,28458,0,3,1,1,1630453,8179830,1,284490,1,10,3807,2,0,1580
+"Wooden Vulpera Caravan",0,0,0,28463,0,3,1,1,1674720,8174572,5,283277,1,10,3716,2,0,0
+"Damaged Nomad's Makeshift Barricade",0,0,0,28464,0,3,1,1,1674724,8174653,5,283279,1,10,3717,2,0,0
+"Fortified Nomad's Makeshift Barricade",0,0,0,28465,0,3,1,1,1674725,8174651,5,283305,1,10,3730,2,0,0
+"Nomad's Wooden Lamppost",0,0,0,28466,0,3,1,1,1674742,8174584,3,283323,1,10,3739,2,0,0
+"Nomad's Warped Water Gourd",0,0,0,28467,0,3,1,1,1674743,8174578,1,283287,1,10,3721,2,0,0
+"Nomad's Worn Water Gourd",0,0,0,28468,0,3,1,1,1674744,8148384,1,283325,1,10,3740,2,0,0
+"Nomad's Water Gourd",0,0,0,28469,0,3,1,1,1674745,8148348,1,283327,1,10,3741,2,0,0
+"Nomad's Wooden Table",0,0,0,28470,0,3,1,1,1674746,8174645,3,283329,1,10,3742,2,0,0
+"Nomad's Steel Lantern",0,0,0,28471,0,3,1,1,1674747,8174580,1,283289,1,10,3722,2,0,0
+"Nomad's Campfire Grill",0,0,0,28472,674108,35,1,1,1674748,8174641,3,283291,1,10,3723,2,0,1580
+"Nomad's Mortar and Pestle",0,0,0,28473,0,3,1,1,1674794,8174593,1,283307,1,10,3731,2,0,0
+"Nomad's Covered Serving Bowl",0,0,0,28474,0,3,1,1,1674795,8174597,1,283309,1,10,3732,2,0,0
+"Nomad's Serving Bowl",0,0,0,28475,0,3,1,1,1674796,8174601,1,283311,1,10,3733,2,0,1580
+"Nomad's Stone Pitcher",0,0,0,28476,0,3,1,1,1674797,8174605,1,283313,1,10,3734,2,0,0
+"Nomad's Stone Urn",0,0,0,28477,0,3,1,1,1674798,8174609,1,283331,1,10,3743,2,0,1580
+"Nomad's Refreshment Set",0,0,0,28478,0,3,1,1,1674799,8174613,1,283333,1,10,3744,2,0,0
+"Nomad's Bowl Set",0,0,0,28479,0,3,1,1,1674800,8174619,1,283315,1,10,3735,2,0,0
+"Nomad's Serving Sundries",0,0,0,28480,0,3,1,1,1674801,8174621,1,283293,1,10,3724,2,0,1580
+"Reinforced Nomad's Makeshift Barricade",0,0,0,28481,0,3,1,1,1675015,8174657,5,283317,1,10,3736,2,0,0
+"Blue Vulpera Cushion",0,0,0,28482,674109,3,1,1,1675208,8174629,1,283335,1,10,3745,2,0,1580
+"Black Vulpera Cushion",0,0,0,28483,674110,3,1,1,1675209,8174633,1,283337,1,10,3746,2,0,1580
+"Long Red Vulpera Cushion",0,0,0,28484,674111,3,1,1,1675210,8174637,1,283295,1,10,3725,2,0,1580
+"Withered Barrow-weed",0,0,0,28485,0,3,1,1,1693617,8179790,3,284470,0.5,10,3797,2,0,0
+"Scarlet Drustvar Thornwood",0,0,0,28486,0,3,1,1,1699071,8179818,5,284484,1,10,3804,2,0,0
+"Lush Drustvar Witchfern",0,0,0,28487,0,3,1,1,1720389,8179802,5,284476,1,10,3800,2,0,0
+"Scarlet Drustvar Oak",0,0,0,28488,0,3,1,1,1723796,8179814,5,284482,0.30000001192,10,3803,2,0,0
+"Drustvar Glowcap Cluster",0,0,0,28489,0,3,1,1,1728706,8179782,1,284466,1,10,3795,2,0,0
+"Twisted Crimson Root",0,0,0,28490,0,3,1,1,1728708,8179780,5,284464,1,10,3794,2,0,0
+"Short Crimson Oak Stump",0,0,0,28491,0,3,1,1,1780106,8179786,5,284468,1,10,3796,2,0,1580
+"Short Drustvar Oak Stump",0,0,0,28492,0,3,1,1,1780604,8179822,5,284486,1,10,3805,2,0,1580
+"Drustvar Shelfcap",0,0,0,28493,0,3,2,1,1794799,8179796,1,284472,2,10,3798,2,0,1452
+"Snowbound Highroad Pine",0,0,0,28494,0,3,1,1,1795057,8179800,5,284474,1,10,3799,2,0,0
+"Boralus Swill Bottle",0,0,0,28495,0,3,1,1,1852964,8148336,1,284384,1,10,3791,2,0,0
+"Drustvar Leaf Patch",0,0,0,28497,0,3,1,1,1858291,8179826,1,284488,1,10,3806,2,0,1580
+"Vacant Buzzard Roost",0,0,0,28498,0,3,1,1,1859160,8174625,5,283319,1,10,3737,2,0,0
+"Arching Crimson Ivy",0,0,0,28499,0,3,1,1,1863166,8179774,5,284462,1,10,3793,2,0,0
+"Vulpera Postbox",0,0,0,28508,674112,3,1,1,2012204,8174591,5,283297,1,10,3726,2,0,0
+"Nathrian Sinstain Oak",0,0,0,28509,0,3,1,1,2490914,8179674,5,282677,0.69999998808,10,3681,2,0,0
+"Nathrian Forked Briar",0,0,0,28510,0,3,1,1,2529716,8148012,5,282663,0.25,10,3674,2,0,0
+"Large Nathrian Briar Root",0,0,0,28511,0,3,1,1,2529727,8148000,3,282665,0.10000000149,10,3675,2,0,0
+"Small Nathrian Briar Root",0,0,0,28512,0,3,1,1,2529729,8148026,1,282667,0.07500000298,10,3676,2,0,0
+"Nathrian Leafy Briar",0,0,0,28513,0,3,1,1,2563803,8179658,3,282669,0.34999999404,10,3677,2,0,0
+"Nathrian Sinstain Bush",0,0,0,28514,0,3,1,1,2565491,8179676,3,282679,0.69999998808,10,3682,2,0,0
+"Nathrian Sinstain Ivy Cluster",0,0,0,28515,0,3,1,1,2565498,8179688,3,282685,0.69999998808,10,3685,2,0,0
+"Windswept Elysian Grass",0,0,0,28516,0,3,1,1,2575497,8179648,1,284534,1,10,3829,2,0,1580
+"Nathrian Fungal Rotcap",0,0,0,28517,0,3,1,1,2576856,8179702,1,282691,0.40000000596,10,3688,2,0,0
+"Lonely Banewood Pine",0,0,0,28518,0,3,1,1,2615788,8179666,5,282673,1,10,3679,2,0,0
+"Verdant Elysian Crownblossom",0,0,0,28519,0,3,1,1,2736104,8179604,5,284512,0.75,10,3818,2,0,0
+"Sparse Elysian Pondweed",0,0,0,28520,0,3,1,1,2736110,8179608,1,284514,1,10,3819,2,0,0
+"Windswept Elysian Willow",0,0,0,28521,0,3,1,1,2835147,8179636,5,284528,0.5,10,3826,2,0,0
+"Elysian Skyfrond",0,0,0,28522,0,3,1,1,2845730,8179654,3,284536,1,10,3830,2,0,0
+"Lush Elysian Lily",0,0,0,28523,0,3,1,1,2921865,8179634,1,284526,0.30000001192,10,3825,2,0,0
+"Nathrian Rubyroot Growth",0,0,0,28524,0,3,1,1,2932047,8179711,1,282697,0.69999998808,10,3691,2,0,0
+"Brightburned Nathrian Clawbush",0,0,0,28525,0,3,1,1,2958037,8179680,5,282681,1,10,3683,2,0,0
+"Windswept Elysian Skyplume",0,0,0,28526,0,3,1,1,2962132,8179612,5,284516,0.30000001192,10,3820,2,0,0
+"Lush Elysian Lotus",0,0,0,28527,0,3,1,1,2966063,8179596,5,284508,0.30000001192,10,3816,2,0,1580
+"Windswept Elysian Shrub",0,0,0,28528,0,3,1,1,2976098,8179616,5,284518,1,10,3821,2,0,0
+"Elysian Bulbflower",0,0,0,28529,0,3,1,1,2976102,8179628,3,284524,1,10,3824,2,0,0
+"Brightburned Nathrian Root",0,0,0,28530,0,3,1,1,2976104,8179684,3,282683,0.34999999404,10,3684,2,0,1452
+"Sinner's Gibbet",0,0,0,28531,0,3,2,1,2981871,8179906,5,284558,1,10,3841,2,0,0
+"Revendreth Sinner's Prison",0,0,0,28532,0,3,1,1,2981872,8179902,5,284560,1,10,3842,2,0,0
+"Nathrian Thicket Hedge",0,0,0,28533,0,3,1,1,2991609,8179660,5,282671,0.5,10,3678,2,0,1452
+"Venthyr Fence",0,0,0,28534,0,3,1,1,2991927,8179916,5,284564,1,10,3844,2,0,0
+"Venthyr Fencepost",0,0,0,28535,0,3,1,1,2991928,8179918,5,284566,1,10,3845,2,0,0
+"Kyrian Waymarker",0,0,0,28536,0,3,1,1,3006764,8179951,5,284544,1,10,3834,2,0,0
+"Dormant Wildseed",0,0,0,28537,0,3,1,1,3024728,8179737,5,283341,0.20000000298,10,3748,2,0,0
+"Leaning Wildgrove Tree",0,0,0,28538,0,3,1,1,3025782,8179770,5,283376,1,10,3753,2,0,0
+"Hanging Wildseed",0,0,0,28539,0,3,3,1,3033637,8179741,5,283345,1,10,3750,2,0,0
+"Fae Anima Wall Lantern",0,0,0,28540,0,3,2,1,3036098,8180009,3,282714,0.75,10,3692,2,0,0
+"Fae Moonbough Table",0,0,0,28541,0,3,1,1,3036113,8180013,3,283273,1,10,3714,2,0,0
+"Anima-Infused Dreamcatcher",0,0,0,28542,674054,3,3,1,3036126,8179985,1,281670,1,10,3322,2,0,0
+"Fae Moonbough Gate",0,0,0,28543,0,3,1,1,3036150,8179989,5,283370,0.75,10,3752,3,0,0
+"Open Bonewood Barrel",0,0,0,28544,0,3,1,1,3036559,8179953,5,284492,1,10,3808,2,0,1580
+"Highback Bonewood Chair",0,0,0,28545,674114,3,1,1,3036566,8179961,3,284496,1,10,3810,2,0,0
+"Suspended Lich Scroll",0,0,0,28546,0,3,1,1,3036652,8179981,3,284506,1,10,3815,3,0,0
+"Fae Lantern Blossom",0,0,0,28547,0,3,1,1,3038709,8179715,3,283265,1,10,3710,2,0,0
+"Maldraxxi Horned Beast Skull",0,0,0,28548,0,3,1,1,3040074,8179973,5,284502,1,10,3813,2,0,0
+"Levitating Lich Library",0,0,0,28549,0,3,1,1,3040291,8179977,5,284504,1,10,3814,2,0,0
+"Lush Wildgrove Fern",0,0,0,28550,0,3,1,1,3045006,8179754,5,283285,0.5,10,3720,2,0,0
+"Hanging Wildgrove Ivy",0,0,0,28551,0,3,2,1,3045013,8179758,5,283379,1,10,3754,2,0,0
+"Pale Nathrian Rose",0,0,0,28552,0,3,1,1,3045415,8179704,1,282693,0.25,10,3689,2,0,0
+"Radiant Elysian Water Lily",0,0,0,28553,0,3,1,1,3046665,8179644,3,284532,1,10,3828,2,0,0
+"Winged Elysian Spiralbloom",0,0,0,28554,0,3,1,1,3051188,8179640,3,284530,1,10,3827,2,0,0
+"Celestial Grovebush",0,0,0,28555,0,3,1,1,3053180,8179719,3,283267,1,10,3711,2,0,1452
+"Lush Celestial Moonbough",0,0,0,28556,0,3,1,1,3053186,8179723,5,283381,0.75,10,3755,2,0,0
+"Leaning Celestial Orchid",0,0,0,28557,0,3,1,1,3053190,8179727,3,283383,1,10,3756,2,0,0
+"Endmire Sinsticker Bush",0,0,0,28558,0,3,1,1,3057974,8179692,3,282687,1,10,3686,2,0,0
+"Maldraxxi Anima Crystal",0,0,0,28559,0,3,1,1,3058263,8179965,5,284498,1,10,3811,2,0,0
+"Hanging Elysian Skyvy",0,0,0,28560,0,3,2,1,3059912,8179622,3,284520,1,10,3822,2,0,0
+"Lush Elysian Bellflower Bush",0,0,0,28561,0,3,1,1,3059918,8179624,5,284522,1,10,3823,2,0,1452
+"Fae Animashroom Circle",0,0,0,28562,0,3,1,1,3067212,8179747,5,283385,1,10,3757,2,0,1452
+"Spherical Nathrian Topiary",0,0,0,28563,0,3,1,1,3067304,8179670,5,282675,1,10,3680,2,0,0
+"Narrow Kyrian Drapes",0,0,0,28564,0,3,3,1,3113679,8179929,5,284540,0.5,10,3832,2,0,0
+"Small Shimmering Moonvine",0,0,0,28565,0,3,3,1,3113681,8179762,1,283275,1,10,3715,2,0,0
+"Venthyr Alchemy Rack",0,0,0,28566,674116,3,1,1,3154975,8180023,3,284552,1,10,3838,2,0,0
+"Wildgrove Leaf Pile",0,0,0,28567,0,3,1,1,3158899,8179766,5,283281,1,10,3718,2,0,1452
+"Confessor's Anima Jar",0,0,0,28568,0,3,1,1,3187916,8179894,3,284554,1,10,3839,2,0,0
+"Runic Kyrian Reliquary",0,0,0,28569,0,3,1,1,3189119,8179945,5,284546,1,10,3835,3,0,0
+"Fae Moonbough Cocoon",0,0,0,28570,0,3,3,1,3204231,8179997,5,283283,1,10,3719,2,0,0
+"Kyrian Steward Effigy",0,0,0,28571,0,3,1,1,3220602,8179935,3,284542,2,10,3833,2,0,0
+"Restored Night Fae Sigil",0,0,0,28572,0,3,2,1,3229538,8180001,3,283262,1,10,3709,3,0,0
+"Elysian Heart-Lotus",0,0,0,28573,0,3,1,1,3230280,8179602,5,284510,0.30000001192,10,3817,2,0,1452
+"Anima-Powered Anvil",0,0,0,28574,0,3,1,1,3429594,8179993,3,283260,1,10,3708,2,0,1452
+"Fae Moonbough Scroll",0,0,0,28575,0,3,2,1,3448138,8180005,1,283301,1,10,3728,2,0,0
+"Sinfall Arched Bookcase",0,0,0,28576,0,3,1,1,3529582,8179898,5,284556,1,10,3840,2,0,0
+"Fae Animashroom",0,0,0,28577,0,3,1,1,3543723,8179743,3,282327,0.75,10,3670,2,0,1580
+"Ornate Kyrian Glass Platform",0,0,0,28578,0,3,4,1,3755695,8179941,5,284550,0.1400000006,10,3837,2,0,0
+"Anima-Powered Kyrian Oven",0,0,0,28579,674118,35,1,1,3862269,8179925,5,284538,1,10,3831,2,0,0
+"Lunarfall Beech Tree",0,0,0,28629,0,3,1,1,877196,8179499,5,283248,0.5,10,3707,2,0,0
+"Eredath Worktable",0,0,0,28632,0,3,1,1,1616725,8179440,5,282164,1,10,3649,2,0,0
+"Nomad's Steel Forge",0,0,0,28633,674268,3,1,1,2013143,8148386,3,283303,1,10,3729,2,0,1580
+"Blooming Celestial Dreamleaf",0,0,0,28634,0,3,1,1,3095233,8179735,3,283271,0.75,10,3713,2,0,0
+"Incineratus Grass Patch",0,0,0,28693,0,3,1,1,1036822,8179886,1,284134,0.64999997616,10,3775,2,0,1452
+"Tall Crimson Oak",0,0,0,28694,0,3,1,1,1622532,8179810,5,284480,0.15000000596,10,3802,2,0,0
+"Amani Open Fire Grill",0,0,0,29117,675666,35,1,1,6125170,8218935,3,284353,1,10,3786,2,0,1580
+"Ritual Embaari Arch",0,0,0,30255,0,3,1,1,8344060,8345355,5,285179,1,10,3901,2,0,0

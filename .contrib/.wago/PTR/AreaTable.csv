@@ -9752,7 +9752,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16574,NexusPointWingAlpha,"Corespark Engineway",2915,16573,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,140,0,0,0,0
 16575,NexusPointWingBravo,"Core Defense Nullward",2915,16573,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,140,0,0,0,0
 16576,NexusPointWingCharlie,"The Nexus Core",2915,16573,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,140,0,0,0,0
-16578,12SilvermoonMainSanctumScenario,"Sanctum of Light",2907,16311,0,83,0,2987,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073743936,128,0,0,0,0
+16578,12SilvermoonMainSanctumScenario,"Sanctum of Light",2907,16311,0,83,0,2987,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,128,0,0,0,0
 16579,WarbandScreenKaresh,K'aresh,2738,0,0,84,0,2950,0,0,0,0,0,0,0,15,-1,0,0,0,0,0,128,0,0,0,0
 16581,AbundantVoidburrow,"Abundant Voidburrow",2771,15458,0,0,0,2991,2708,0,0,0,0,0,0,15,-1,0,0,0,3084,1140871232,8320,0,0,0,0
 16582,EncroachingBloom,"Encroaching Bloom",2694,15355,13161,0,0,3110,2708,3331,0,0,0,0,0,15,-1,25,25,0,0,1073758272,8192,0,0,0,0
@@ -9885,7 +9885,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16875,DreamriftDenOfTheUndreamt,"Den of the Undreamt",2939,16531,0,0,0,0,0,3264,0,0,0,0,0,15,-1,0,0,0,0,1342177280,140,0,0,0,0
 16897,DiversArch,"Diver's Arch",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16900,Val,Val,3047,0,0,67,0,3519,0,3538,0,0,0,0,0,13,-1,0,0,0,3321,67108928,128,0,0,0,0
-16913,121UlaTekLabyrinth,"12.1 Ula'Tek Labyrinth",3043,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,64,128,0,0,0,0
+16913,121UlaTekLabyrinth,"The Labyrinth of Kindo'Jan",3043,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,4096,128,0,0,0,0
 16915,UlatekTempleRaid,"The Venomous Abyss",3004,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,7359,268435456,136,0,0,0,0
 16920,ValVoidCastleInterior,"Void Acropolis",3047,16900,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073741888,8320,0,0,0,0
 16921,UmbralBaseVal,"Umbral Base Camp",3047,16900,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073743936,8320,0,0,0,0
@@ -9897,8 +9897,39 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16939,RitualSite,"Ritual Site",3074,0,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,4096,128,0,0,0,0
 16940,DaggerspinePoint,"Daggerspine Point",3074,16939,0,200,11,3429,3285,3523,0,0,0,0,0,13,-1,0,0,0,3321,1073741824,128,0,0,0,0
 16943,ShowdownNaigtal,Naigtal,3075,0,0,67,0,3516,675,3543,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,67108928,128,0,0,0,0
+16944,1215SilvermoonScenario,"Silvermoon City",3071,0,0,96,0,2987,0,3237,0,1682,0,6,0,15,-1,0,0,0,6413,6400,128,0,0,0,0
 16945,RitualSite,"Ritual Site",3076,0,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,0,128,0,0,0,0
 16946,Lightbloom,Lightbloom,3076,16945,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073741888,128,0,0,0,0
+16947,12EversongGreatSeaScenario,"The Great Sea",3071,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,2112,128,0,0,0,0
+16948,12SilvermoonEasternKingdomsScenario,"Silvermoon City",3071,0,0,96,0,3555,0,3237,0,1682,0,6,0,13,-1,0,0,0,6413,4136,4224,0,0,0,0
+16949,12EversongWoodsEasternKingdomsScenario,"Eversong Woods",3071,0,0,96,0,3132,675,3284,0,0,0,0,0,15,-1,0,0,0,3085,16448,128,0,0,0,0
+16950,12SilvermoonBloodQuarterScenario,"Court of Blood",3071,16948,0,0,0,0,0,3321,0,0,0,4,0,13,-1,0,0,0,0,1080033376,128,0,0,0,0
+16951,12SilvermoonSunCourtScenario,"Court of the Sun",3071,16948,0,0,0,0,0,3321,0,0,0,4,0,13,-1,0,0,0,0,1080033376,128,0,0,0,0
+16952,12SilvermoonFalconwingSquareScenario,"Falconwing Square",3071,16948,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16953,12SilvermoonDawningLaneScenario,"Dawning Lane",3071,16948,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16954,12SilvermoonRoyalExchangeScenario,"The Royal Exchange",3071,16948,0,0,0,0,0,3321,0,0,0,4,0,13,-1,0,0,0,0,1088421952,128,0,0,0,0
+16955,12SilvermoonSheperdGateScenario,"The Shepherd's Gate",3071,16948,0,96,0,3004,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16956,12SilvermoonMurderRowScenario,"Murder Row",3071,16948,0,96,0,2999,0,3244,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16957,12SilvermoonWalkOfEldersScenario,"Walk of Elders",3071,16948,0,0,0,0,0,3321,0,0,0,4,0,13,-1,0,0,0,0,1088421952,128,0,0,0,0
+16958,12SilvermoonShiningSpanScenario,"The Shining Span",3071,16948,0,96,0,3003,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16959,12SilvermoonHarborScenario,"Silvermoon Harbor",3071,16948,0,86,0,3003,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16960,12SilvermoonSunwingRookeryScenario,"Sunwing Rookery",3071,16948,0,84,0,2992,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16961,12SilvermoonGardensofRemembranceScenario,"Gardens of Remembrance",3071,16948,0,96,0,3004,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16962,12SilvermoonThalassianUniversityScenario,"Thalassian University",3071,16948,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16963,12SilvermoonLithielsLandingScenario,"Lithiel's Landing",3071,16948,0,96,0,3004,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16964,12SilvermoonAugursTerraceScenario,"Augurs' Terrace",3071,16948,0,96,0,3004,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16965,12SilvermoonVoidElfGazeboScenario,"Duskglow Gloriette",3071,16948,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,128,0,0,0,0
+16966,12SilvermoonBazaarScenario,"The Bazaar",3071,16948,0,83,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,0,1073741888,8320,0,0,0,0
+16967,12EversongNorthSanctumScenario,"North Sanctum",3071,16949,0,0,0,0,0,3256,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16968,12EversongSunsailAnchorageScenario,"Sunsail Anchorage",3071,16949,0,96,0,3146,675,3256,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16969,12EversongWestSanctumScenario,"West Sanctum",3071,16949,0,0,0,0,0,3256,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16970,12EversongPathOfDawnScenario,"Path of Dawn",3071,16949,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16971,12EversongDeadScarScenario,"Tranquil Repose",3071,16949,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16972,12EversongStillwhisperScenario,"Stillwhisper Pond",3071,16949,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16973,12EversongFarstriderHoldScenario,"Farstrider Hold",3071,16949,0,0,0,0,0,3280,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16974,12EversongBrightwingEstateScenario,"Brightwing Estate",3071,16949,0,96,0,3151,675,0,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16975,12EversongSunstriderIsleScenario,"Sunstrider Isle",3071,16949,0,96,0,3004,0,3505,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
+16976,12EversongThuronsLiveryScenario,"Thuron's Livery",3071,16949,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8320,0,0,0,0
 16977,SideMicro1,"Ruuk'Jar's Clutch",2916,16535,0,75,0,3527,3400,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16978,VaultofRestlessBones,"Vault of Restless Bones",2916,16535,0,75,0,3527,3400,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16979,SideMicro3,"Profaned Mausoleum",2916,16535,0,75,0,3527,3400,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
@@ -9915,7 +9946,17 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16997,121CryptoftheDisgraced,"Crypt of the Disgraced",0,16365,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,5381,1073741824,128,0,0,0,0
 17022,UnderlevelCaves,"Cursed Depths",2916,16535,0,75,0,3527,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 17023,TheSealofWrath,"The Seal of Wrath",2916,16535,0,75,0,3527,3400,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
+17025,121UlaTekLabyrinth1aEntrance,"Chamber of Rites",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17026,121UlaTekLabyrinth2aReliquary,"The Reliquary",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17027,121UlaTekLabyrinth2bCentralChamber,"Central Chamber",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17028,121UlaTekLabyrinth2cCatacombs,"The Catacombs",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17029,121UlaTekLabyrinth3aLynxLoa,"Halazzi's Lair",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17030,121UlaTekLabyrinth3bDragonhawkLoa,"Jan'alai's Refuge",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17031,121UlaTekLabyrinth3cRoyalChamber,"Akil'zon's Roost",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17032,121UlaTekLabyrinth3dBearLoa,"Nalorakk's Den",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
+17033,121UlaTekLabyrinth3eCaveTowers,"The Cave Towers",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
 17047,ValCollapsedPassage,"The Collapsed Passage",3047,16900,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073741888,8320,0,0,0,0
+17059,KithixRaid,"The Unbinding of Kith'ix",3095,0,0,75,0,3558,0,3302,0,0,0,0,0.60000002384,0,-1,0,0,0,7306,268451840,136,0,0,0,0
 17060,ValVoidCastleExterior,"Void Acropolis",3047,16900,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073741888,8320,0,0,0,0
 17062,ValForgottenDepths,"The Forgotten Depths",3047,16900,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073741888,8320,0,0,0,0
 17067,12TheLycaneum,"The Lycaneum",0,16215,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741824,128,0,0,0,0
@@ -9933,6 +9974,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17104,UmbralBaseNaigtal,"Umbral Base Camp",3075,16943,0,0,0,0,0,0,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140852800,128,0,0,0,0
 17107,DummyDome,"Dummy Dome",3105,0,0,0,0,2926,0,3129,0,0,0,0,0,0,-1,0,0,0,7359,268441600,128,0,0,0,0
 17195,sleepersgrotto,"Sleeper's Grotto",3075,16943,0,0,0,0,0,0,0,0,0,0,0.15000000596,0,-1,0,0,0,3321,1140850688,128,0,0,0,0
+17197,121UlaTekLabyrinth4aFinalBoss,"The Speaker's Chamber",3043,16913,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,1073741888,128,0,0,0,0
 17198,NaigtalManaforge,"Manaforge: Arcvein",3075,16943,0,0,0,0,0,3544,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140850752,128,0,0,0,0
 17199,NaigtalDraeneiCryptShore,"Shoals of Rememberance",3075,16943,0,0,0,0,0,0,0,0,0,0,0.15000000596,13,-1,0,0,0,3321,1140850752,128,0,0,0,0
 17217,12EversongDawnstarSpireHidden,"Hidden Spire",0,15968,0,0,0,0,0,3256,0,0,0,0,0,15,-1,0,0,0,3085,1073745984,8320,0,0,0,0
@@ -9963,6 +10005,8 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 17720,121ZulAmanTheForbiddingSea,"The Forbidding Sea",0,15947,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3086,1073741888,128,0,0,0,0
 17729,NorthAmaniBulwarkHub,"Northern Amani Bulwark",2916,16535,0,75,0,3527,0,3635,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
 17730,EastAmaniOutpostHub,"Eastern Amani Outpost",2916,16535,0,75,0,3527,0,3635,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073807424,128,0,0,0,0
+17778,KithixPrison,"Kith'ix' Prison",3095,17059,0,0,0,0,0,0,0,0,0,0,0.60000002384,15,-1,0,0,0,0,1342177280,136,0,0,0,0
+17798,UlatekTomb,"The Tomb of Ula'tek",3095,17059,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1342177280,136,0,0,0,0
 16310,NewQuelDanas12CampaignFinaleScenario,"Isle of Quel'Danas",2907,0,0,96,0,3009,675,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0
 16311,SilvermoonEasternKingdoms12CampaignFinaleScenario,"Silvermoon City",2907,0,0,96,0,3249,0,3404,0,0,0,0,0,15,-1,0,0,0,3320,4096,128,0,0,0,0
 16312,EversongWoodsEasternKingdoms12CampaignFinaleScenario,"Eversong Woods",2907,0,0,96,0,3250,0,0,0,0,0,0,0,15,-1,0,0,0,3320,4160,128,0,0,0,0
