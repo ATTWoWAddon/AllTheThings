@@ -101,6 +101,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					crit(37455, {	-- Pit Lord Vilemus
 						["_npcs"] = { 124719 },	-- Pit Lord Vilemus
 					}),
+					i(282162, { ["timeline"] = { ADDED_12_1_5 } }),	-- Ceremonial Lightforged Standard (DECOR!)
 				}),
 			}),
 			e(2010, {	-- Matron Folnuna

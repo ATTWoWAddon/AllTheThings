@@ -40609,6 +40609,7 @@ crit(37452,{achID=12026,id=3,providers={{"n",124514}}}),
 crit(37453,{achID=12026,id=4,providers={{"n",124592}}}),
 crit(37454,{achID=12026,id=5,providers={{"n",124625}}}),
 crit(37455,{achID=12026,id=6,providers={{"n",124719}}}),
+de(28448,{awp=120105,itemID=282162,spellID=1313089}),
 crit(37702,{achID=12083,id=7})})}),
 e(2010,{crs={124514,127528},isRaid=1,isWeekly=1,maps={830,831,832,883,884,885,886,887,929},modelScale=0.65,poiIDs={5381},questID=49169,g={
 cq(76745,{awp=100105,b=1,c={9},itemID=207296,lvl=11,spellID=416366}),

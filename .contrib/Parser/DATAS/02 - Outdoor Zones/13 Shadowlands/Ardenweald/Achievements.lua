@@ -123,6 +123,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			ach(14164, {	-- Awaken, Ardenweald
 				["sym"] = {{ "achievement_criteria" }},
+				["groups"] = { i(283262, { ["timeline"] = { ADDED_12_1_5 } }) },	-- Restored Night Fae Sigil (DECOR!)
 			}),
 			ach(14304),	-- Explore Ardenweald
 			ach(14788, {	-- Fractured Faerie Tales

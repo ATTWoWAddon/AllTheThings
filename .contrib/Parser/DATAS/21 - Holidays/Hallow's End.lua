@@ -589,6 +589,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 70.7, 90.2, FROSTWALL },	-- Pepe Location (Horde)
 			},
 			["timeline"] = { ADDED_6_2_2 },
+			["groups"] = { i(282287, { ["timeline"] = { ADDED_12_1_5 } }) },	-- Scarecrow Pepe (DECOR!)
 		}),
 		ach(284, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- A Mask For All Occasions
 			crit(2260, {	-- Blood Elf Female Mask
@@ -4395,8 +4396,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		o(244568, {	-- Spooky Pepe
 			["description"] = "You need a Tier 3 garrison for this.",
 			["coords"] = {
-				{ 70.71, 90.21, FROSTWALL },	-- Pepe Location [Horde]
-				{ 40.12, 70.06, LUNARFALL },	-- Pepe Location [Alliance]
+				{ 70.7, 90.2, FROSTWALL },	-- Pepe Location [Horde]
+				{ 40.1, 70.1, LUNARFALL },	-- Pepe Location [Alliance]
 			},
 			["timeline"] = { ADDED_6_2_2 },
 			["groups"] = {

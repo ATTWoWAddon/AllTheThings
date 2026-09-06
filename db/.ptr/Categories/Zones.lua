@@ -102916,7 +102916,8 @@ ach(12083,{
 title(366)}),
 ach(12074,{
 crit(37694,{achID=12083,id=5})}),
-ach(12102),
+ach(12102,{
+de(27608,{awp=120105,itemID=281682,spellID=1312254})}),
 ach(12101),
 ach(12066,{
 crit(37690,{achID=12083,id=1})})}),
@@ -123290,6 +123291,7 @@ crit(49969,{achID=14774,id=16,providers={{"i",178227}}})}}),
 ach(14353,{coords={
 [1565]={{41.5,44.8}}},crs={171743},description="You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day."}),
 ach(14164,{
+de(28572,{awp=120105,itemID=283262,spellID=1314607}),
 crit(48210,{achID=14280,id=5})}),
 ach(14304,{
 crit(48588,{achID=14825,id=3}),
@@ -164532,16 +164534,16 @@ ach(63657,{minReputation={2838,20}})}),
 h(-58,{
 n(266188,{coords={
 [2393]={{39.3,80.3}}},g={
-p(5068,{cost={{"c",3316,1000}},itemID=274927,minReputation={2838,2}}),
-i(275873,{cost={{"c",3316,250}},minReputation={2838,2}}),
-i(275869,{cost={{"c",3316,250}},minReputation={2838,2}}),
-p(5066,{cost={{"c",3316,1000}},itemID=274923,minReputation={2838,3}}),
-i(275879,{cost={{"c",3316,250}},minReputation={2838,3}}),
-i(275867,{cost={{"c",3316,250}},minReputation={2838,3}}),
-p(5100,{cost={{"c",3316,2000}},itemID=276927,minReputation={2838,4}}),
-i(275871,{cost={{"c",3316,500}},minReputation={2838,4}}),
-i(275865,{cost={{"c",3316,500}},minReputation={2838,4}}),
-i(280050,{cost={{"c",3316,1000}},minReputation={2838,5}}),
+p(5068,{cost={{"c",3316,1000}},itemID=274927,minReputation={2838,2},npcID=265755,spellID=1295663}),
+de(25305,{cost={{"c",3316,250}},itemID=275873,minReputation={2838,2},spellID=1298042}),
+de(25303,{cost={{"c",3316,250}},itemID=275869,minReputation={2838,2},spellID=1298038}),
+p(5066,{cost={{"c",3316,1000}},itemID=274923,minReputation={2838,3},npcID=265740,spellID=1295644}),
+de(25306,{cost={{"c",3316,250}},itemID=275879,minReputation={2838,3},spellID=1298048}),
+de(25302,{cost={{"c",3316,250}},itemID=275867,minReputation={2838,3},spellID=1298036}),
+p(5100,{cost={{"c",3316,2000}},itemID=276927,minReputation={2838,4},npcID=268483,spellID=1301393}),
+de(25304,{cost={{"c",3316,500}},itemID=275871,minReputation={2838,4},spellID=1298040}),
+de(25301,{cost={{"c",3316,500}},itemID=275865,minReputation={2838,4},spellID=1298034}),
+de(27216,{cost={{"c",3316,1000}},itemID=280050,minReputation={2838,5},spellID=1307620}),
 mnt(1301331,{cost={{"c",3316,2500}},itemID=276926,minReputation={2838,5}}),
 toy(275039,{cost={{"c",3316,2500}},minReputation={2838,5}})}})})}}),
 flt(101,{

@@ -1069,7 +1069,9 @@ root(ROOTS.Zones, {
 				ach(12074, {	-- Shoot First, Loot Later
 					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(12102),	-- To Kill Demons...
+				ach(12102, {	-- To Kill Demons...
+					i(281682, { ["timeline"] = { ADDED_12_1_5 } }),	-- Shielded Lightforged Pylon (DECOR!)
+				}),
 				ach(12101),	-- We Came Here For Two Reasons
 				ach(12066, {	-- You Are Now Prepared!
 					crit(37477, {	-- The Assault Begins
