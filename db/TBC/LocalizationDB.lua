@@ -1155,6 +1155,7 @@ localize(L.HEADER_NAMES, {
 	[-482] = "The Opening of the Dark Portal",
 	[-483] = "The Scepter of the Shifting Sands",
 	[-484] = "Scourge Invasion",
+	[-512] = ACCOUNT_QUEST_LABEL,
 	[-520] = "BlizzCon",
 	[-521] = "Collector's Edition",
 	[-524] = "TBC Classic Deluxe Edition",
