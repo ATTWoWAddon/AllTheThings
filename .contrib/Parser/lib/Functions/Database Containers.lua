@@ -48,8 +48,8 @@ local function RecursivelyMergeData(t, c, path, options)
                 if tval ~= cval then
 					if not options or not options.IgnoreValueConflicts then
 						print("WARN: Value conflict at " .. currentPath ..
-							" (exists=" .. tostring(tval) ..
-							", assign=" .. tostring(cval) .. ")")
+							" (exists=" .. tostring(cval) ..
+							", assign=" .. tostring(tval) .. ")")
 					end
                 end
             end
