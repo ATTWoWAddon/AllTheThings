@@ -401,7 +401,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(3910),	-- Sturdy Zangarshelf
 			rawdecor(3911),	-- Orange Zangarmarsh Tree
 			rawdecor(3912),	-- Glowing Zangarshroom Bowl
-			rawdecor(3913),	-- Glowing Zangarshroom Cup
 			rawdecor(3914),	-- Blue Zangarmarsh Tree
 			rawdecor(3915),	-- Green Zangarmarsh Tree
 			rawdecor(3916),	-- Purple Zangarmarsh Tree

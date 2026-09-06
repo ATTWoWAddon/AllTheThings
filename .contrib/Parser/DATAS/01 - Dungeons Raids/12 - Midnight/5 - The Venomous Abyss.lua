@@ -247,6 +247,7 @@ local ZoneDropLoot = {
 	i(271441),	-- Crushing Coiler Coif
 	i(271445),	-- Fanged Brute's Greatbelt
 	i(271440),	-- Greaves of the Noxious Depths
+	i(271444),	-- Pauldrons of the Forgotten Sacrifice
 	i(271435),	-- Slippers of the Hissing Cult
 	i(271436),	-- Slitherscale Girdle
 	i(271438),	-- Temple Delver's Mystic Helm

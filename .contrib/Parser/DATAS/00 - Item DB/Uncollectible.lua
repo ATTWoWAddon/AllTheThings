@@ -2917,6 +2917,7 @@ i(276359);	-- Twisted Domanaar Armament
 ------------------
 -- PATCH 12.1.0 --
 ------------------
+i(276611);	-- Clam Stuffed Crab
 i(280182);	-- Coiled Curry
 i(274951);	-- Corroded Scale
 i(278397);	-- Ephemeral Star Ooze

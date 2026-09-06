@@ -1089,7 +1089,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["isRepeatable"] = true,
 				["groups"] = {
 					ach(63432, {	-- Mysterious Mix Master
-						i(248962),	-- Mysterious Voodoo Mask (DECOR!)
+						["_doautomation"] = true,
+						["groups"] = {
+							i(248962),	-- Mysterious Voodoo Mask (DECOR!)
+						},
 					}),
 					-- Ingredients
 					i(276124),	-- Ancient Knucklebone

@@ -2641,5 +2641,6 @@ p(70,{itemID=10394,npcID=14421,q=1,races={6},spellID=10709}),
 p(142,{itemID=29953,npcID=21055,q=1,races={10},spellID=36027}),
 p(792,{itemID=88148,npcID=65314,q=1,races={26},spellID=127816}),
 p(629,{npcID=63097,races={9}}),
-p(55,{itemID=10393,npcID=7395,q=1,races={5},spellID=10688})}})}})}})}})
+p(55,{itemID=10393,npcID=7395,q=1,races={5},spellID=10688})}})}})}}),
+h(-512)}})
 end)

@@ -20342,7 +20342,7 @@ q(10359,{coords={
 q(9723,{c={2},coords={
 [1954]={{92,38.8}}},cost={{"i",20520,5},{"i",12360,6},{"i",8838,10},{"i",14047,40},{"g",1500000}},lvl=60,providers={{"i",24277}},qgs={25223},races={10},rwp=40003,sourceQuests={9722},u=2}),
 q(64319,{c={2},coords={
-[1954]={{89.3,35.2}}},qgs={17717},races={10},sourceQuests={9678},u=17}),
+[1954]={{89.3,35.2}}},qgs={17717},races={10},rwp=40003,sourceQuests={9678},u=2}),
 q(9721,{c={2},coords={
 [1954]={{89.3,35.2}}},lvl=60,qgs={17717},races={10},rwp=40003,u=2}),
 q(10363,{coords={
@@ -20350,9 +20350,9 @@ q(10363,{coords={
 q(9627,{coords={
 [1454]={{48.2,70.6}}},lvl=15,qgs={39605},races={10},sourceQuests={9626},u=17}),
 q(63866,{c={2},coords={
-[1954]={{89.3,35.2}}},qgs={17718},races={10},sourceQuests={64319},u=17,g={
+[1954]={{89.3,35.2}}},qgs={17718},races={10},rwp=40003,sourceQuests={64319},u=2,g={
 qo(1,{coords={
-[1954]={{92.1,36.2}}},crs={17544},providers={{"i",24156},{"i",185956}},u=17})}}),
+[1954]={{92.1,36.2}}},crs={17544},providers={{"i",24156},{"i",185956}},u=2})}}),
 q(9621,{coords={
 [1954]={{54,20.4}}},lvl=15,maps={1458},providers={{"i",23929}},qgs={16802},races={10},sourceQuests={9328},u=17}),
 q(9812,{coords={
@@ -39582,9 +39582,9 @@ qo(1,{providers={{"o",203300}}})}}),
 q(25467,{crs={40276},providers={{"i",54345}},g={
 qo(1,{crs={40282},providers={{"i",54344}}}),
 s(206798,59798,{b=1,f=22,q=2})}}),
-q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",providers={{"i",55186}},g={
-s(206787,59784,{b=1,f=4,loc=46,q=3}),
+q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",qis={55187,55188},qss={55186},sourceQuests={25459},g={
 s(206786,59783,{b=1,f=6,loc=41,q=3}),
+s(206787,59784,{b=1,f=4,loc=46,q=3}),
 i(59782,{b=1,f=52,q=3})}}),
 q(25358,{coords={
 [201]={{57.3,29.2}}},qgs={40983},sourceQuests={25602},g={
@@ -62024,7 +62024,7 @@ s(202832,52934,{b=1,f=3,q=2}),
 s(202811,52910,{b=1,f=5,loc=42,q=2}),
 i(131831)}}),
 q(25243,{coords={
-[174]={{43.6,25.3}}},description="This quest is a character gender-specific quest only available for male/\nbody type 1 characters. Female/body type 2 characters will in this place get\nthe quest 'What Kind of Name is Candy, Anyway?'.\n\nThe quest rewards are also rewarded from the female/body type 2 version of\nthis quest named 'The Fastest Way to His Heart', which is given in place of\nthe male/body type 1 quest 'What Kind of Name is Chip, Anyway?'.",qgs={38387},sourceQuests={25213},g={
+[174]={{43.6,25.3}}},description="This quest is only available for male/\nbody type 1 characters. Cross-completes with 'The Fastest Way to His Heart' after relogging.",qgs={38387},sourceQuests={25213},g={
 s(202821,52920,{b=1,f=5,loc=44,q=2}),
 s(202835,52937,{b=1,f=3,q=2,races={9}}),
 s(202867,52969,{b=1,f=20,q=2})}}),
@@ -62049,7 +62049,7 @@ s(202829,52931,{b=1,f=6,loc=47,q=1}),
 s(202846,52948,{b=1,f=5,loc=46,q=1}),
 s(202803,52902,{b=1,f=4,loc=43,q=1})}}),
 q(25202,{coords={
-[174]={{54,17}}},description="This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place get\nthe quest 'What Kind of Name is Chip, Anyway?'.\n\nThe quest rewards are also rewarded from the male/body type 1 version of\nthis quest named 'She Loves Me, She Loves Me NOT!', which is given in place of\nthe female/body type 2 quest 'What Kind of Name is Candy, Anyway?'.",qgs={38647},sourceQuests={25200,25201},g={
+[174]={{54,17}}},description="This quest is only available for female/\nbody type 2 characters. Cross-completes with 'She Loves Me, She Loves Me NOT!' after relogging.",qgs={38647},sourceQuests={25200,25201},g={
 s(202821,52920,{b=1,f=5,loc=44,q=2}),
 s(202835,52937,{b=1,f=3,q=2,races={9}}),
 s(202863,52965,{b=1,f=20,q=2})}}),
@@ -62133,13 +62133,13 @@ s(202827,52929,{b=1,f=6,loc=42,q=1}),
 s(202800,52899,{b=1,f=4,loc=46,q=1}),
 s(202843,52945,{b=1,f=5,loc=47,q=1})}}),
 q(25244,{coords={
-[174]={{43.6,25.3}}},description="This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place\nget the quest 'She Loves Me, She Loves Me NOT!'.\n\nThe quest rewards have shared apperances with the rewards from the male/\nbody type 1 version of this quest named 'What Kind of Name is Chip, Anyway?',\nbut the latter are different items and can might only be obtained by doing these\ntwo gender-specific quests seperately on different characters if logging out from\nthe game does not work.",qgs={38387},sourceQuests={25213},g={
+[174]={{43.6,25.3}}},description="This quest is only available for female/\nbody type 2 characters. Cross-completes with 'What Kind of Name is Chip, Anyway?' after relogging.",qgs={38387},sourceQuests={25213},g={
 s(202870,52972,{b=1,f=4,loc=44,q=2}),
 s(202868,52970,{b=1,f=5,loc=45,q=2}),
 i(131846),
 s(202839,52941,{b=1,f=22,q=2})}}),
 q(25203,{coords={
-[174]={{54.1,17.2}}},description="This quest is a character gender-specific quest only available for male/\nbody type 1 characters.\nFemale/body type 2 characters will in this place\nget the quest 'The Fastest Way to His Heart'.\n\nThe quest rewards have shared apperances with the rewards from the female/\nbody type 2 version of this quest named 'What Kind of Name is Candy, Anyway?',\nbut the latter are different items and can might only be obtained by doing these\ntwo gender-specific quests seperately on different characters if logging out from\nthe game does not work.",qgs={38441},sourceQuests={25200,25201},g={
+[174]={{54.1,17.2}}},description="This quest is only available for male/\nbody type 1 characters. Cross-completes with 'What Kind of Name is Candy, Anyway?' after relogging.",qgs={38441},sourceQuests={25200,25201},g={
 i(131844),
 s(202822,52921,{b=1,f=4,loc=44,q=2}),
 s(202864,52966,{b=1,f=5,loc=45,q=2}),

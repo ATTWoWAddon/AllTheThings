@@ -587,10 +587,7 @@ UpdateCostGroup = function(c)
 	end
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
 end
-local function OnSearchResultUpdate(group)
-	UpdateCostGroup(group)
-end
-app.AddEventHandler("OnSearchResultUpdate", OnSearchResultUpdate)
+app.AddEventHandler("OnSearchResultUpdate", UpdateCostGroup)
 
 local CACChain = {}
 -- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'

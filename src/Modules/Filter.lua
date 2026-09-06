@@ -659,7 +659,7 @@ app.RecursiveFilter = RecursiveFilter;
 local function CacheSettingsData()
 	SettingsUnobtainable = app.Settings:GetRawSettings("Unobtainable");
 	wipe(SettingsFilterIDs)
-	local rawFilters = app.Settings:GetRawFilters();
+	local rawFilters = app.Settings:GetRawSettings("Filters");
 	for k,v in next, rawFilters do
 		-- app.PrintDebug("f:user",k,v)
 		SettingsFilterIDs[k] = v;

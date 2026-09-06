@@ -358,6 +358,7 @@ HeaderAssignments = {
 	["Kalimdor Cup"] = -570,
 	["Kalu'ak Fishing Derby"] = -578,
 	["K'areshi Endeavor"] = -715,
+	["Kobold Endeavor"] = -789,
 	["Krasarang Wilds Campaign"] = -657,
 	["Kukuru's Cache"] = -390,
 	["Kyrian"] = -159,
@@ -768,4 +769,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -789
+NextHeaderID = -790

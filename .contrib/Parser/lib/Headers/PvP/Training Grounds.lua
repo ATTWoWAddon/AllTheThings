@@ -3,5 +3,6 @@ TRAINING_GROUNDS = createHeader({
 	icon = 136106,
 	text = {
 		en = "Training Grounds",
+		cn = "训练场",
 	},
 });

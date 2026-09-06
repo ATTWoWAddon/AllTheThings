@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	i(232875, {["timeline"] = { REMOVED_12_1_0 }}),	-- Spark of Radiance
 	i(274476, {["timeline"] = { ADDED_12_1_0 }}),	-- Spark of Tides
 	n(DECOR, {
@@ -2488,6 +2488,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(95471, name(HEADERS.NPC, 242035)),	-- Skinning The Devouring Invader
 			q(93636, name(HEADERS.NPC, 242024)),	-- Skinning The Snapping Scourge
 			q(88532, name(HEADERS.NPC, 247096)),	-- Skinning Umbrafang
+			q(98367, name(HEADERS.NPC, 257863), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Vassti, the Exalted Broodmother
 			q(98364, name(HEADERS.NPC, 255927), { ["timeline"] = ADDED_12_1_0 }),	-- Skinning Venom Lancer Ori'kassi / (triggered from Malformed Leviathan for me)
 		})),
 		prof(TAILORING, {

@@ -552,6 +552,9 @@ settings.Initialize = function(self)
 	-- Remove obsolete Settings keys
 	settings:Set("ExpansionFilter:Enabled", nil)
 
+	-- Update Filters when initializing
+	app.HandleEvent("Settings.UpdateFilters")
+
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
 	-- app.PrintDebug("settings.Initialize:Done")
@@ -796,22 +799,21 @@ settings.GetDefaultFilter = function(self, filterID)
 	return FilterSettingsBase.__index[filterID]
 end
 local RawFilters
-local function SetRawFilters(changedSetting)
-	if changedSetting and changedSetting ~= "Profile:StoreFilters" then return end
-	if settings:Get("Profile:StoreFilters") then
-		RawFilters = RawSettings.Filters
-	else
-		RawFilters = AllTheThingsSettingsPerCharacter.Filters
-	end
+local function SetRawFilters()
+	RawFilters = RawSettings.Filters
 end
 -- TODO: maybe later we can use OnSettingChanged to trigger UpdateMode when needed by the setting
 -- instead of having UpdateMode tacked into a thousand individual checkboxes and buttons
 -- app.AddEventHandler("OnSettingChanged", SetRawFilters);
-app.AddEventHandler("OnSettingsNeedsRefresh", SetRawFilters);
-app.AddEventHandler("OnLoad", SetRawFilters)
-settings.ResetFilters = function(self)
+-- app.AddEventHandler("OnSettingsNeedsRefresh", SetRawFilters);
+app.AddEventHandler("Settings.OnApplyProfile", SetRawFilters)
+settings.ResetFilters = function(self, expected)
 	wipe(RawFilters)
-	settings:UpdateMode(1)
+	if expected and type(expected) == "table" then
+		for k,v in next,expected do
+			RawFilters[k] = v
+		end
+	end
 end
 settings.GetFilter = function(self, filterID)
 	return RawFilters[filterID];
@@ -825,9 +827,6 @@ end
 settings.SetFilter = function(self, filterID, value)
 	RawFilters[filterID] = value;
 	settings:UpdateMode(1);
-end
-settings.GetRawFilters = function(self)
-	return RawFilters;
 end
 settings.GetRawSettings = function(self, name)
 	return RawSettings[name];
@@ -930,10 +929,21 @@ settings.GetModeString = function(self)
 			end
 		end
 		local hasAllInsaneFilters = true
-		for filterID in pairs(app.EquipmentFilters) do
-			if not settings:GetFilter(filterID) then
-				hasAllInsaneFilters = false
-				break
+		if not settings:Get("Profile:DefaultFilters") then
+			if settings:Get("AccountMode") then
+				for filterID, v in pairs(app.EquipmentFilters) do
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
+			else
+				for filterID in pairs(app.Presets[app.Class]) do
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
 			end
 		end
 		if thingCount == 0 then
@@ -1034,10 +1044,21 @@ settings.GetShortModeString = function(self)
 			end
 		end
 		local hasAllInsaneFilters = true
-		for filterID in pairs(app.EquipmentFilters) do
-			if not settings:GetFilter(filterID) then
-				hasAllInsaneFilters = false
-				break
+		if not settings:Get("Profile:DefaultFilters") then
+			if settings:Get("AccountMode") then
+				for filterID, v in pairs(app.EquipmentFilters) do
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
+			else
+				for filterID in pairs(app.Presets[app.Class]) do
+					if not settings:GetFilter(filterID) then
+						hasAllInsaneFilters = false
+						break
+					end
+				end
 			end
 		end
 		local style = ""
@@ -1593,6 +1614,7 @@ end
 
 settings.SetAccountMode = function(self, accountMode)
 	self:Set("AccountMode", accountMode);
+	app.HandleEvent("Settings.UpdateFilters")
 	self:UpdateMode(1);
 end
 settings.ToggleAccountMode = function(self)
@@ -1606,17 +1628,12 @@ settings.ToggleAccountMode = function(self)
 end
 settings.ToggleFilters = function(self)
 	self:ForceRefreshFromToggle()
-	if (settings:GetFilter(4) and not (app.ClassIndex == 5 or app.ClassIndex == 8 or app.ClassIndex == 9)) -- Cloth
-	or (settings:GetFilter(5) and not (app.ClassIndex == 4 or app.ClassIndex == 10 or app.ClassIndex == 11 or app.ClassIndex == 12)) -- Leather
-	or (settings:GetFilter(6) and not (app.ClassIndex == 3 or app.ClassIndex == 7 or app.ClassIndex == 13)) -- Mail
-	or (settings:GetFilter(7) and not (app.ClassIndex == 1 or app.ClassIndex == 2 or app.ClassIndex == 6)) then -- Plate
-		settings:ResetFilters()	-- Class Defaults
-		app.print(L.FILTERS_PAGE.." "..L.CLASS_DEFAULTS_BUTTON.."|R "..L.ENABLED..".")
+	if settings:Get("Profile:DefaultFilters") then
+		settings:Set("Profile:DefaultFilters", false)
+		app.print(L.FILTERS_DEFAULT .. " " .. L.FILTERS_PAGE .. " " .. L.DISABLED)
 	else
-		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-			settings:SetFilter(filterID, true)
-		end
-		app.print(L.FILTERS_PAGE.." "..L.ALL_BUTTON.."|R "..L.ENABLED..".")
+		settings:Set("Profile:DefaultFilters", true)
+		app.print(L.FILTERS_DEFAULT .. " " .. L.FILTERS_PAGE .. " " .. L.ENABLED)
 	end
 end
 settings.ActivateNextProfile = function(self)
@@ -1666,6 +1683,7 @@ settings.ToggleCompletionistMode = function(self)
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
+	app.HandleEvent("Settings.UpdateFilters")
 	if debugMode then
 		-- cache the current settings to re-apply after
 		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"))

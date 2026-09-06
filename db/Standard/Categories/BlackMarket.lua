@@ -225,7 +225,7 @@ flt(104,{awp=50004,u=9,g={
 i(50379,{lvl=25,r=2,u=9}),
 i(50380,{lvl=25,r=1,u=9}),
 i(110678,{awp=60002,b=1,description="Contains 250-500 Darkmoon Faire Tickets",u=9,g={
-cu(515,{awp=50004,u=9})}})}}),
+cu(515,{u=9})}})}}),
 flt(200,{awp=50004,u=9,g={
 r(124638,{itemID=86238,requireSkill=165,skillID=2528,u=9}),
 r(124643,{itemID=86272,requireSkill=165,skillID=2528,u=9}),

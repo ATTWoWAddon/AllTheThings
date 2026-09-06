@@ -451,6 +451,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			["maps"] = {
 				MAP.MIDNIGHT.THE_COILED_ISLE
 			},
+			["crs"] = { 265151 },	-- Haunted Brazier
 			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
 			["groups"] = {
 				i(263874),	-- Emerald-Encrusted Amani Ritual Skull (DECOR!)
@@ -810,6 +811,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 			q(91414),	-- Flags and unflags after accepting and completing Random Prey contracts
 			q(91415),	-- After choosing a Preference Killing
+			q(98456, name(HEADERS.Item, 274422)),	-- Appears to be looting a specific Ossified relic object @ 58.4, 48.9 on Coiled Isle
 		}),
 	}),
 }));

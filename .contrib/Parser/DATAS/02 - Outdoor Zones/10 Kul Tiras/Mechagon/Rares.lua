@@ -286,6 +286,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["description"] = "This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active. Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",
 				["questID"] = 55515,
 				["coord"] = { 57.0, 39.8, MECHAGON },
+				["crs"] = { 151159 },	-- OOX-Fleetfoot/MG
 				["isDaily"] = true,
 				["groups"] = {
 					i(168492),	-- Blueprint: Emergency Rocket Chicken

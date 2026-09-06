@@ -4914,7 +4914,7 @@ cu(3055,{requireSkill=356})}}),
 i(225768,{f=55,requireSkill=356,spellID=456068})}})}}),
 x(12,{awp=120001,requireSkill=356,g={
 h(-12,{requireSkill=356,g={
-ach(42797,{providers={{"i",254875},{"i",262649},{"i",262787}},requireSkill=356,g={
+ach(42797,{cost={{"i",254875,3},{"i",262787,30},{"i",262649,30}},requireSkill=356,g={
 de(15407,{itemID=264002,requireSkill=356,spellID=1271033})}})}}),
 flt(200,{requireSkill=356,g={
 r(1226159,{b=1,itemID=244791,requireSkill=356,skillID=2911}),

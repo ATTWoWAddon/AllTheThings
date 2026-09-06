@@ -2,6 +2,7 @@
 DATAGROUP.MID.DELVES.ARMOR_PROVIDERS = {
 	{ "o", 658087 },	-- Abundantly Bountiful Heavy Trunk
 	{ "o", 658088 },	-- Abundantly Bountiful Heavy Trunk
+	{ "o", 656489 },	-- Azta'rec Cache
 	{ "o", 584514 },	-- Bountiful Coffer
 	{ "o", 584518 },	-- Bountiful Heavy Trunk
 	{ "o", 584515 },	-- Bountiful Heavy Trunk

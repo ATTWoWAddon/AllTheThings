@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(41805, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- Arator's Journey
-			ach(62188, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- More Than Just Their Roots (automated)	-- TODO idk where else to put this
+			ach(62188, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- More Than Just Their Roots (Automated)
 			ach(62386, {	-- Light Up the Night
 				i(252011),	-- Brilliant Petalwing (MOUNT)
 			}),
@@ -54,27 +54,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(42117),	-- The War of Light and Shadow
 		}),
-		n(SPECIAL, {	-- TODO idk where else to put this without making new 'special.lua' files in 2 zones to source one npc each
+		header(HEADERS.Achievement, 62188, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- More Than Just Their Roots
+			-- This allows achCriteria to link NPCs and plot coordinates directly from the Achievement
 			n(245103, {	-- Chonon
 				["coord"] = { 58.4, 30.0, MOUNT_HYJAL },
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			n(245107, {	-- Fuunid
 				["coord"] = { 34.2, 52.6, AMIRDRASSIL },
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			n(251936, {	-- Kawayn
 				["coord"] = { 50.8, 42.6, GRIZZLY_HILLS },
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			n(245105, {	-- Or'jan
 				["coord"] = { 33.2, 66.8, DARKSHORE },
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
 			n(245106, {	-- Zhakir
 				["coord"] = { 46.6, 35.6, VALSHARAH },
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-		}),
+		})),
 	},
 }));

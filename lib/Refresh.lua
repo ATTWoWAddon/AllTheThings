@@ -117,6 +117,37 @@ OneTimeFixFunctions.PreATT5_0_14AWQuests = function(currentCharacter, accountWid
 
 	app.print("One-Time cleanup of old-format account-wide quest completion cache performed!")
 end
+-- ref. 1 represents account-wide completion, so all old data needs to be wiped initially to allow proper re-caching
+OneTimeFixFunctions.ConvertAccountModeFiltersForProfiles = function(currentCharacter, accountWideData)
+	app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter, accountWideData)
+
+		local profiles = AllTheThingsProfiles.Profiles
+		if not profiles then return end
+
+		local profileFilters, filters
+
+		for key,profile in pairs(profiles) do
+			filters = profile.Filters
+			if profile.AccountMode then
+				profileFilters = {}
+				app.CloneDictionary(filters or app.EmptyTable, profileFilters)
+				profile.General["Profile:Filters"] = profileFilters
+				profile.General["Profile:DefaultFilters"] = true
+			else
+				-- User has never assigned any Filter manually, they are in "Default" Filtering
+				if not filters or not next(filters) then
+					profile.General["Profile:DefaultFilters"] = true
+				else
+					profile.General["Profile:DefaultFilters"] = false
+					profileFilters = {}
+					app.CloneDictionary(filters, profileFilters)
+					profile.General["Profile:Filters"] = profileFilters
+				end
+			end
+		end
+		app.print("One-Time conversion of Profile Filter sets performed!")
+	end)
+end
 local function OneTimeFixes(currentCharacter, accountWideData)
 	if not accountWideData.OneTimeFixes then accountWideData.OneTimeFixes = {} end
 	local appliedFixes = accountWideData.OneTimeFixes

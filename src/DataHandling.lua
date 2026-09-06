@@ -645,10 +645,6 @@ local function UpdateSearchResults(searchResults, updateFunc)
 		result = searchResults[i]
 		hashes[result.hash] = true
 		found[#found + 1] = result
-		if updateFunc == DirectGroupUpdate then
-			-- Make sure any update events are handled for this Thing if it actually needs an Update
-			HandleEvent("OnSearchResultUpdate", result)
-		end
 	end
 
 	-- loop through visible ATT windows and collect matching groups
@@ -667,7 +663,12 @@ local function UpdateSearchResults(searchResults, updateFunc)
 	for i=1,#found do
 		updateFunc(found[i])
 	end
+
+	-- Make sure any update events are handled for this Thing in popouts if it actually needs an Update
 	if updateFunc == DirectGroupUpdate then
+		for i=1,#found do
+			HandleEvent("OnSearchResultUpdate", found[i])
+		end
 		-- TODO: use event
 		app.WipeSearchCache()
 	end
@@ -677,7 +678,21 @@ end
 local function UpdateRawID(field, id, updateFunc)
 	-- app.PrintDebug("UpdateRawID",field,id)
 	if field and id then
-		UpdateSearchResults(app.SearchForFieldInAllCaches(field, id), updateFunc)
+		local searchRefs = app.SearchForFieldInAllCaches(field, id)
+		if #searchRefs == 0 then return end
+
+		local searchObjs = {}
+		-- only updates against actual objs for that field/id are needed, hooked refs via provider or crs etc. are not needed
+		local ref
+		for i=1,#searchRefs do
+			ref = searchRefs[i]
+			if ref[field] == id then
+				searchObjs[#searchObjs + 1] = ref
+			-- 	app.PrintDebug("include",app:SearchLink(ref))
+			-- else app.PrintDebug("exclude",app:SearchLink(ref))
+			end
+		end
+		UpdateSearchResults(searchObjs, updateFunc)
 	end
 end
 app.UpdateRawID = UpdateRawID
@@ -685,7 +700,26 @@ app.UpdateRawID = UpdateRawID
 local function UpdateRawIDs(field, ids, updateFunc)
 	-- app.PrintDebug("UpdateRawIDs",field,ids and #ids)
 	if field and ids and #ids > 0 then
-		UpdateSearchResults(app.SearchForManyInAllCaches(field, ids), updateFunc)
+		local searchRefs = app.SearchForManyInAllCaches(field, ids)
+		if #searchRefs == 0 then return end
+
+		local idHash = {}
+		-- simple lookup of the ids
+		for i=1,#ids do
+			idHash[ids[i]] = true
+		end
+		local searchObjs = {}
+		-- only updates against actual objs for that field/id are needed, hooked refs via provider or crs etc. are not needed
+		local ref
+		for i=1,#searchRefs do
+			ref = searchRefs[i]
+			if idHash[ref[field]] then
+				searchObjs[#searchObjs + 1] = ref
+			-- 	app.PrintDebug("include",app:SearchLink(ref))
+			-- else app.PrintDebug("exclude",app:SearchLink(ref))
+			end
+		end
+		UpdateSearchResults(searchObjs, updateFunc)
 	end
 end
 app.UpdateRawIDs = UpdateRawIDs

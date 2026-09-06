@@ -25,7 +25,7 @@ i(211499, 429857);	-- Trainee's Outrider Wolf
 i(211498, 429856);	-- Trainee's Sentinel Nightsaber
 
 -- Phase 2
-i(216570, 436329);	-- Reins of the Golden Sabercat
+i(216570, 436329);	-- Golden Sabercat
 i(216492, 436288);	-- Whistle of the Mottled Blood Raptor
 
 -- Phase 4
@@ -115,6 +115,7 @@ i(248744, 1247597);	-- Celestial Riding Ox
 i(248743, 1247596);	-- Celestial Riding Serpent
 i(248742, 1247598);	-- Celestial Riding Tiger
 i(0, 1257674);		-- Embertuft Groveglider
+i(275928, 1298510);	-- Fire Drake
 i(277652, 1302506);	-- Juvenile Frostwyrm
 i(0, 1257516);		-- Lana'thel's Sanguine Cascade
 i(0, 1224647);		-- Meeksi Brewrobber
@@ -124,7 +125,6 @@ i(0, 1224596);		-- Meeksi Teapuff
 i(0, 1224646);		-- Meeksi Wanderpaw
 i(0, 1257676);		-- Petalbranch Groveglider
 i(0, 1229670);		-- Prophet's Great Crow
-i(275928, 1298510);	-- Reins of the Fire Drake
 i(262344, 1267077);	-- Scarlet Lady
 i(267300, 1280068);	-- Scorching Courage
 i(258883, 1249659);	-- Sha-scarred Drake
@@ -2002,10 +2002,10 @@ i(223587, 449465);	-- [PH] Silver Armored Fel Bat Gladiator Mount
 i(223277, 448682);	-- [PH] SpiderUndergroundMount (Green)
 i(0, 405623);		-- Armadillo Roller
 i(220786, 0);		-- Delver's Dirigible
+i(223570, 449416);	-- Ebonhide Ramolith
 i(207104, 0);		-- Morsel Sniffer Reins
 i(219012, 0);		-- Placeholder Delve Exclusive Mount
 i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
-i(223570, 449416);	-- Reins of the Ebonhide Ramolith
 
 ------------------
 -- PATCH 11.0.2 --

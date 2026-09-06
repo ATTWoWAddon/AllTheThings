@@ -7,7 +7,7 @@ local function ClassicCost(cost)
 	return cost
 	-- #ENDIF
 end
-root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, timelineSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 	i(180055, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past I
 	i(180057, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past II
 	i(180058, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past III

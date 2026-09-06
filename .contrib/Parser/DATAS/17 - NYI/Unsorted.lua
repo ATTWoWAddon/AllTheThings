@@ -8,7 +8,6 @@ root(ROOTS.Unsorted, {
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
-			i(247776),	-- Glowing Zangarshroom Cup
 			i(255702),	-- [PH] Snake Corpse
 			i(260238),	-- Pus-filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
@@ -28,12 +27,10 @@ root(ROOTS.Unsorted, {
 			-- WB
 			i(268281),	-- Ula'guts
 			i(268519),	-- Heirloom Blossom Nectar
-			i(268585),	-- Pup Treat
 			i(268823),	-- Scroll of Seeking
 			i(268826),	-- Ballast Stone
 			i(268871),	-- Specifically Sized Rock
 			i(269720),	-- Corrosive Hekte
-			i(270274),	-- Home-Grown Wax
 			i(270335),	-- Mostly Smooth Seastone
 			i(270871),	-- Jan'alai's Breath
 			i(271053),	-- Cleansing Water
@@ -41,7 +38,6 @@ root(ROOTS.Unsorted, {
 			i(271133),	-- Marked Serpent Rune PH
 			i(271135),	-- Amorphous Totem PH
 			i(271155),	-- Test Weapon 2
-			i(271444),	-- Pauldrons of the Forgotten Sacrifice
 			i(271681),	-- Perennial Frostbound Charm
 			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
@@ -117,23 +113,8 @@ root(ROOTS.Unsorted, {
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
 			i(276550),	-- Wind Serpent - White
 			i(276552),	-- Wind Serpent - Pink
-			i(276611),	-- Clam Stuffed Crab
-			i(276612),	-- The Shell-Shocker
-			i(276613),	-- Sparkling LaKoi
-			i(276615),	-- Half-shell Highball
-			i(276616),	-- Pineapple Sundown
-			i(276617),	-- Fancy Oar
-			i(276618),	-- Weathered Stone Tablet
-			i(276619),	-- Mysterious Corked Bottle
-			i(276620),	-- Patinaed Bottle
-			i(276621),	-- Antique Shield
 			i(276622),	-- De-cryption Amulet
 			i(276624),	-- Overflowing Hash'ura Trove
-			i(276628),	-- Scroll of Deep Breath
-			i(276629),	-- Scroll of the Sailfish
-			i(276747),	-- Scroll of the Salty Souvenir: East
-			i(276748),	-- Scroll of the Salty Souvenir: West
-			i(276749),	-- Scroll of the Salty Souvenir: South
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(277157),	-- Barnacle-Encrusted Chest
 			i(277192),	-- Umbral Ashes
@@ -429,38 +410,9 @@ root(ROOTS.Unsorted, {
 			i(279818),	-- Basic Iron Sabatons
 			i(279819),	-- Basic Steel Sabatons
 			i(280131),	-- Nebulous Voidcache: Prey
-			i(280215),	-- Tortollan Tarp Tent
-			i(280221),	-- Sealeather Sack
-			i(280223),	-- Collector's Tortollan Display Rack
-			i(280225),	-- Mason's Tortollan Display Rack
-			i(280227),	-- Apothecary's Tortollan Display Rack
-			i(280230),	-- Empty Tortollan Display Rack
-			i(280232),	-- Sea Glass Lamp Post
-			i(280234),	-- Sea Glass Bauble
-			i(280236),	-- Ancient Memories of the Sea
-			i(280238),	-- Half-Shell Hot Pot
-			i(280240),	-- Compact Cookfire
-			i(280242),	-- Tortollan Traveler's Chest
-			i(280244),	-- Tortollan Traveler's Tincture
-			i(280246),	-- Warrens Candlecooker
-			i(280249),	-- Kobold Dig-Thing
-			i(280251),	-- Kobold Sit-Thing
-			i(280253),	-- Highlighting High Light
-			i(280255),	-- Small Warrens Candle
-			i(280257),	-- Medium Warrens Candle
-			i(280259),	-- Large Warrens Candle
-			i(280261),	-- Large Threedium Warrens Candle
-			i(280263),	-- Candle Cage
-			i(280265),	-- Hot Kobold Treasure
-			i(280267),	-- Bold Kobold Kabin
-			i(280269),	-- Cozy Kobold Crate
-			i(280271),	-- Longwick Rope
-			i(280273),	-- Droopy Longwick Rope
-			i(280275),	-- Hanging Longwick Rope
 			i(244347),	-- Purified Troll Urn
 			i(248101),	-- Traditional Brewfest Stein
 			i(253396),	-- Purified Crude Axe
-			i(255652),	-- Purified Troll Loop
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
 			i(280333),	-- Pirate's Eyepatch
@@ -470,10 +422,8 @@ root(ROOTS.Unsorted, {
 			i(280341),	-- Brewfest Fencepost
 			i(280343),	-- Hanging Brewfest Wreath
 			i(280102),	-- Handful of Corrosive Coins
-			i(280513),	-- Color-Curious Candle
 			i(280581),	-- Wintry Witchwick's Rider
 			i(280842),	-- Shadowhunters' Hexblade
-			i(280873),	-- Protected Tortollan Scroll Case
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(274677),	-- Sky Blue Riverside Room Plans

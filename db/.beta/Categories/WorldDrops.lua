@@ -4656,7 +4656,7 @@ i(27677,{coords={
 [105]={{40.2,18.4},{64.5,33},{72.4,20.2}},
 [108]={{39.3,9.7},{44.6,34.3},{62.4,49},{68.7,30.5}}},crs={18461,18463,19706,19729,19730,20279,20280,20283,20924,20925,20987,21816,21854}}),
 i(27678,{crs={17132,17133,18205,19183},description="Clefthoofs can be found all over Nagrand.",maps={107}}),
-i(32428,{awp=20100,description="Can drop from most creatures within the given raids.",maps={329,340}}),
+i(32428,{awp=20100,description="Can drop from most creatures within the given raids.",maps={329,339}}),
 i(24476,{coords={
 [104]={{46.2,29.1},{53.1,25.5}}},description="Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",maps={102},spellID=58160,g={
 i(24477),

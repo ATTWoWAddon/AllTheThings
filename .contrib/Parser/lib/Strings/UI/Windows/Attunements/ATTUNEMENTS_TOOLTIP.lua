@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "此窗口显示您当前角色的开门任务进度。",
 		-- TODO: tw = "",
 	},
 })

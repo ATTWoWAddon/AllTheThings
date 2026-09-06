@@ -36,7 +36,7 @@ local function dragonsoul(t)
 	return applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, t);
 end
 
-root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, timelineSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
 	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III

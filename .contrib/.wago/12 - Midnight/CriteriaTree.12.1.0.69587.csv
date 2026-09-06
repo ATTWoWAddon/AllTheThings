@@ -50372,7 +50372,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 66551,"Merektha defeated",66549,1,0,39861,1,0
 66552,"Galvazzt defeated",66549,1,0,39862,2,0
 66553,"Avatar of Sethraliss defeated",66549,1,0,39863,3,0
-66554,"Enemy Forces",66549,689,9,0,4,0
+66554,"Enemy Forces",66549,687,9,0,4,0
 66562,,66554,25,0,116944,5,0
 66563,,66554,7,0,116939,0,0
 66567,"8.0 Dungeon - Temple of Sethraliss - Challenge (More Trash)",0,0,4,0,0,0
@@ -76429,7 +76429,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 138487,"Melidrussa Chillworn defeated",138486,1,0,54032,0,0
 138488,"Kokia Blazehoof defeated",138486,1,0,54033,1,0
 138489,"Kyrakka and Erkhart Stormvein defeated",138486,1,0,54034,2,0
-138490,"Enemy Forces",138486,553,9,0,3,0
+138490,"Enemy Forces",138486,551,9,0,3,0
 138491,,138490,6,0,50191,0,0
 138492,,138490,53,0,50192,1,0
 138493,,138490,9999,0,48468,2,0
@@ -114011,7 +114011,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224188,"Ikuzz the Light Hunter Defeated",224186,1,0,103989,1,0
 224189,"Lightwarden Ruia Defeated",224186,1,0,103990,2,0
 224190,"Ziekket Defeated",224186,1,0,103991,3,0
-224191,"Enemy Forces",224186,655,9,0,4,0
+224191,"Enemy Forces",224186,686,9,0,4,0
 224192,,224191,1,0,50191,0,0
 224193,,224191,69,0,50192,1,0
 224194,,224191,9999,0,48468,2,0
@@ -116552,7 +116552,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 227245,,224191,7,0,113976,12,0
 227246,,224191,25,0,113977,13,0
 227247,,224191,22,0,113978,14,0
-227248,,224191,30,0,113979,15,0
+227248,,224191,60,0,113979,15,0
 227249,"Collect 1 Glowing Moths in Harandar",0,1,8,0,0,1
 227250,,227249,1,0,108223,0,2
 227251,,227249,1,0,108224,1,2

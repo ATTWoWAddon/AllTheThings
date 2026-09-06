@@ -349,7 +349,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25243, {	-- She Loves Me, She Loves Me NOT! [Male Version]
-						["description"] = "This quest is a character gender-specific quest only available for male/\nbody type 1 characters. Female/body type 2 characters will in this place get\nthe quest 'What Kind of Name is Candy, Anyway?'.\n\nThe quest rewards are also rewarded from the female/body type 2 version of\nthis quest named 'The Fastest Way to His Heart', which is given in place of\nthe male/body type 1 quest 'What Kind of Name is Chip, Anyway?'.",
+						["description"] =
+							-- #if AFTER 11.2.0
+							"This quest is only available when choosing Candy during 'It's All in the Image'. Cross-completes with 'The Fastest Way to His Heart' after relogging.",
+							-- #else
+							"This quest is only available for male/\nbody type 1 characters. Cross-completes with 'The Fastest Way to His Heart' after relogging.",
+							-- #endif
 						["sourceQuest"] = 25213,	-- The Slave Pits
 						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 43.6, 25.3, THE_LOST_ISLES },
@@ -412,8 +417,13 @@ root(ROOTS.Zones, {
 							i(52902),	-- Salvaged Bracers
 						},
 					}),
-					q(25202, {	-- The Fastest Way to His Heart [Female Version]
-						["description"] = "This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place get\nthe quest 'What Kind of Name is Chip, Anyway?'.\n\nThe quest rewards are also rewarded from the male/body type 1 version of\nthis quest named 'She Loves Me, She Loves Me NOT!', which is given in place of\nthe female/body type 2 quest 'What Kind of Name is Candy, Anyway?'.",
+					q(25202, {	-- The Fastest Way to His Heart
+						["description"] =
+							-- #if AFTER 11.2.0
+							"This quest is only available when choosing Chip during 'It's All in the Image'. Cross-completes with 'She Loves Me, She Loves Me NOT!' after relogging.",
+							-- #else
+							"This quest is only available for female/\nbody type 2 characters. Cross-completes with 'She Loves Me, She Loves Me NOT!' after relogging.",
+							-- #endif
 						["sourceQuests"] = {
 							25200,	-- Shredder Shutdown
 							25201,	-- The Ultimate Footbomb Uniform
@@ -607,12 +617,12 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(25244, {	-- What Kind of Name is Candy, Anyway? [Female Version]
+					q(25244, {	-- What Kind of Name is Candy, Anyway?
 						["description"] =
-							-- #if AFTER 10.2.5
-							"This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place\nget the quest 'She Loves Me, She Loves Me NOT!'.\n\nThe quest rewards have shared apperances with the rewards from the male/\nbody type 1 version of this quest named 'What Kind of Name is Chip, Anyway?',\nwhich too will be collected after logging out from the game.",
+							-- #if AFTER 11.2.0
+							"This quest is only available when choosing Chip during 'It's All in the Image'. Cross-completes with 'What Kind of Name is Chip, Anyway?' after relogging.",
 							-- #else
-							"This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place\nget the quest 'She Loves Me, She Loves Me NOT!'.\n\nThe quest rewards have shared apperances with the rewards from the male/\nbody type 1 version of this quest named 'What Kind of Name is Chip, Anyway?',\nbut the latter are different items and can might only be obtained by doing these\ntwo gender-specific quests seperately on different characters if logging out from\nthe game does not work.",
+							"This quest is only available for female/\nbody type 2 characters. Cross-completes with 'What Kind of Name is Chip, Anyway?' after relogging.",
 							-- #endif
 						["sourceQuest"] = 25213,	-- The Slave Pits
 						["qg"] = 38387,	-- Sassy Hardwrench
@@ -624,12 +634,12 @@ root(ROOTS.Zones, {
 							i(52941),	-- Jealousy's Edge
 						},
 					}),
-					q(25203, {	-- What Kind of Name is Chip, Anyway? [Male Version]
+					q(25203, {	-- What Kind of Name is Chip, Anyway?
 						["description"] =
-							-- #if AFTER 10.2.5
-							"This quest is a character gender-specific quest only available for male/\nbody type 1 characters. Female/body type 2 characters will in this place\nget the quest 'The Fastest Way to His Heart'.\n\nThe quest rewards have shared apperances with the rewards from the female/\nbody type 2 version of this quest named 'What Kind of Name is Candy, Anyway?',\nwhich too will be collected after logging out from the game.",
+							-- #if AFTER 11.2.0
+							"This quest is only available when choosing Candy during 'It's All in the Image'. Cross-completes with 'What Kind of Name is Candy, Anyway?' after relogging.",
 							-- #else
-							"This quest is a character gender-specific quest only available for male/\nbody type 1 characters.\nFemale/body type 2 characters will in this place\nget the quest 'The Fastest Way to His Heart'.\n\nThe quest rewards have shared apperances with the rewards from the female/\nbody type 2 version of this quest named 'What Kind of Name is Candy, Anyway?',\nbut the latter are different items and can might only be obtained by doing these\ntwo gender-specific quests seperately on different characters if logging out from\nthe game does not work.",
+							"This quest is only available for male/\nbody type 1 characters. Cross-completes with 'What Kind of Name is Candy, Anyway?' after relogging.",
 							-- #endif
 						["sourceQuests"] = {
 							25200,	-- Shredder Shutdown
