@@ -12,8 +12,8 @@ local issecretvalue = app.WOWAPI.issecretvalue;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, math_sqrt, GameTooltip
-	= ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, math.sqrt, GameTooltip
+local ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, math_sqrt, GameTooltip, table_concat
+	= ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, math.sqrt, GameTooltip, table.concat
 
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
@@ -628,8 +628,8 @@ local function FindCommandEnd(txt, i, l)
 	return true, j;
 end
 local function StripColorAndTextureData(txt)
-	local str, l, c = "", txt:len()
-	local i = 1;
+	local parts, n, l = {}, 0, txt:len()
+	local i, c = 1;
 	while i < l do
 		c = txt:sub(i,i);
 		if c == "|" then
@@ -637,14 +637,16 @@ local function StripColorAndTextureData(txt)
 			if foundCommand and j then
 				i = j;
 			else
-				str = str .. "\\" .. c;
+				n = n + 1;
+				parts[n] = "\\" .. c;
 			end
 		else
-			str = str .. c;
+			n = n + 1;
+			parts[n] = c;
 		end
 		i = i + 1;
 	end;
-	return str;
+	return table_concat(parts, "");
 end
 --[[
 app.StripColorAndTextureData = function()
@@ -759,7 +761,7 @@ end);
 -- when needing to re-render a tooltip for an existing Group
 -- but otherwise, Search cache would only need to be cleared when changing something that affects Search
 -- outcome, and Tooltip cache cleared when changing Tooltip-related settings
-local TooltipInfoCache = setmetatable({}, { __mode = "kv", __index = function(t,group)
+local TooltipInfoCache = setmetatable({}, { __mode = "k", __index = function(t,group)
 	-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
 	if group == "ToDebugString" then return end
 
