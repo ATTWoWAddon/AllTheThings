@@ -319,15 +319,22 @@ local function PrintQuestInfoViaCallback(questID, new)
 end
 local DirtyQuests = {}
 local IsQuestFlaggedCompletedForObject;
+-- Repeatable Quests which this character has turned in.
+-- The game unflags a repeatable Quest the instant it is turned in, so IsQuestFlaggedCompleted can
+-- never report one as completed. QUEST_TURNED_IN is the only record that it ever happened, and
+-- without it a Breadcrumb whose nextQuests are all repeatable can never be detected as locked.
+local RepeatableQuestsTurnedIn = {}
 local CACHE = "Quests"
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	if not currentCharacter.PriorQuests then currentCharacter.PriorQuests = {} end
+	if not currentCharacter.RepeatableQuests then currentCharacter.RepeatableQuests = {} end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {} end
 
 	ATTCharacterData = characterData;
 	OneTimeQuests = accountWideData.OneTimeQuests
+	RepeatableQuestsTurnedIn = currentCharacter.RepeatableQuests
 	local userignored = accountWideData.IGNORE_QUEST_PRINT
 	-- add user ignored to the list if any, don't save our hardcoded quests for everyone...
 	if userignored then
@@ -484,6 +491,11 @@ local CompletedQuests = setmetatable({}, {
 });
 local function IsQuestFlaggedCompleted(questID)
 	return questID and CompletedQuests[questID];
+end
+-- Whether this character has turned the Quest in, including repeatable Quests which the game
+-- unflags immediately afterwards and which IsQuestFlaggedCompleted therefore never reports.
+local function IsQuestTurnedIn(questID)
+	return questID and (CompletedQuests[questID] or RepeatableQuestsTurnedIn[questID]) or false;
 end
 local IsPartySyncActive = false;
 IsQuestFlaggedCompletedForObject = function(t)
@@ -1209,6 +1221,8 @@ local criteriaFuncs = {
 	questID = function(questID)
 		-- saved on this character to this quest
 		if IsQuestSaved(questID) then return true end
+		-- or turned in on this character as a repeatable quest, which the game does not keep flagged
+		if RepeatableQuestsTurnedIn[questID] then return true end
 		-- questID is saved in OneTimeQuests to another character
 		-- local otq = OneTimeQuests[questID]
 		if OneTimeQuests[questID] then return true end
@@ -1389,7 +1403,7 @@ local function LockedAsBreadcrumb(t)
 		if nextQuests then
 			local nq
 			for _,nqID in ipairs(nextQuests) do
-				if IsQuestFlaggedCompleted(nqID) then
+				if IsQuestTurnedIn(nqID) then
 					-- app.PrintDebug("Locked Breadcrumb from",nqID,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
 					LockedBreadcrumbCache[questID] = true
 					if AWQuestLockers.questID(nqID) then
@@ -2215,6 +2229,16 @@ end)
 app.AddEventRegistration("QUEST_TURNED_IN", function(questID)
 	if not questID then return end
 	LastQuestTurnedIn = questID;
+	-- A repeatable Quest is unflagged again before anything can query it, so this event is the only
+	-- chance to record the turn-in. Only remember the ones which a Breadcrumb is waiting on.
+	if not RepeatableQuestsTurnedIn[questID] and #SearchForField("nextQuests", questID) > 0 then
+		local ref = Search("questID", questID, "field")
+		if ref and rawget(ref, "repeatable") then
+			-- app.PrintDebug("Repeatable Quest turned in",questID)
+			RepeatableQuestsTurnedIn[questID] = 1
+			softRefresh()
+		end
+	end
 	if not MostRecentQuestTurnIns then
 		MostRecentQuestTurnIns = {questID}
 		app.MostRecentQuestTurnIns = MostRecentQuestTurnIns
