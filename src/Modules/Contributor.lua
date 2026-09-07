@@ -538,6 +538,7 @@ MobileDB.Creature = {
 	 [67153] = true,	-- Zin'Jun
 	 [67976] = true,	-- Tinkmaster Overspark
 	 [68072] = true,	-- Kor'kron Bodyguard
+	 [68166] = true,	-- Sully "The Pickle" McLeary
 	 [72940] = true,	-- Frostwolf Champion
 	 [75968] = true,	-- Iron Shredder Prototype
 	 [77167] = true,	-- Dark Iron Golem
