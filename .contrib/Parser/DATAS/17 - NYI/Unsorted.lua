@@ -411,12 +411,10 @@ root(ROOTS.Unsorted, {
 			i(279819),	-- Basic Steel Sabatons
 			i(280131),	-- Nebulous Voidcache: Prey
 			i(244347),	-- Purified Troll Urn
-			i(248101),	-- Traditional Brewfest Stein
 			i(253396),	-- Purified Crude Axe
 			i(258540),	-- Purified Troll Ring
 			i(272142),	-- Purified Earthen Pot
 			i(280333),	-- Pirate's Eyepatch
-			i(280335),	-- Brewfest Crate
 			i(280337),	-- Traditional Brewfest Banner
 			i(280339),	-- Brewfest Fence
 			i(280341),	-- Brewfest Fencepost

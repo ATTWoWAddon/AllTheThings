@@ -649,6 +649,17 @@ root(ROOTS.Housing, {
 			i(277142),	-- Westfall Pet Cage (DECOR!)
 		},
 	}),
+	n_CommonVendorItems({
+		["timeline"] = { ADDED_12_1_0 },
+		["crs"] = {
+			271604,	-- Holly Twinklebright <Holiday Decor Vendor> [Founder's Point]
+			271366,	-- Jolli Maxiboom <Holiday Decor Vendor> [Razorwind Shores]
+		},
+		["groups"] = {
+			i(280335),	-- Brewfest Crate (DECOR!)
+			i(248101),	-- Traditional Brewfest Stein (DECOR!)
+		},
+	}),
 	n(VENDORS, {
 		n(263258, {	-- Cousin Shortkaf <Kafa Trader>
 			["coords"] =  {

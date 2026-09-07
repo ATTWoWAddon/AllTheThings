@@ -304,6 +304,9 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 			n(255298, {	-- Jehzar Starfall <Decor Vendor>
 				["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
 			}),
+			n(271366, {	-- Jolli Maxiboom <Holiday Decor Vendor>
+				["coord"] = { 52.4, 54.3, RAZORWIND_SHORES },
+			}),
 			n(255299, {	-- Lefton Farrer <Decor Vendor>
 				["coord"] = { 53.5, 58.5, RAZORWIND_SHORES },
 			}),

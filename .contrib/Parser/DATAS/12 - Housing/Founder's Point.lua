@@ -303,6 +303,9 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			n(257321, {	-- Fel'orei Moonstrider <Westfall Decor Vendor>
 				["coord"] = { 52.0, 38.5, FOUNDERS_POINT },
 			}),
+			n(255216, {	-- Holly Twinklebright <Holiday Decor Vendor>
+				["coord"] = { 54.4, 32.8, FOUNDERS_POINT },
+			}),
 			n(255942, {	-- Jendry Clockson <Donut Vendor>
 				["groups"] = { i(260588) },	-- Jendry's Donut
 			}),

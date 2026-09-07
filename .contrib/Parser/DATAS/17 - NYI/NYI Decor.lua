@@ -116,7 +116,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(3889),	-- Earthcrawl Mine Cart (DECOR!)
 			rawdecor(3901),	-- Enigmatic Purple Crystal (DECOR!)
 			rawdecor(4048),	-- Pandaren Target Dummy (DECOR!)
-			rawdecor(4157),	-- Traditional Brewfest Stein (DECOR!)
 			rawdecor(4158),	-- Venthyr's Target Dummy (DECOR!)
 			rawdecor(4171),	-- Valdrakken Bookcase \\ [DNT] Valdrakken Bookcase - DO NOT USE - newer asset in place (DECOR!)
 			rawdecor(4178),	-- Non-Fatal One-Armed Bandit (DECOR!)
