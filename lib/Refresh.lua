@@ -117,7 +117,7 @@ OneTimeFixFunctions.PreATT5_0_14AWQuests = function(currentCharacter, accountWid
 
 	app.print("One-Time cleanup of old-format account-wide quest completion cache performed!")
 end
--- ref. 1 represents account-wide completion, so all old data needs to be wiped initially to allow proper re-caching
+-- ref. convert profile filter data to properly setup Default toggle
 OneTimeFixFunctions.ConvertAccountModeFiltersForProfiles = function(currentCharacter, accountWideData)
 	app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter, accountWideData)
 
@@ -128,20 +128,27 @@ OneTimeFixFunctions.ConvertAccountModeFiltersForProfiles = function(currentChara
 
 		for key,profile in pairs(profiles) do
 			filters = profile.Filters
-			if profile.AccountMode then
-				profileFilters = {}
-				app.CloneDictionary(filters or app.EmptyTable, profileFilters)
-				profile.General["Profile:Filters"] = profileFilters
-				profile.General["Profile:DefaultFilters"] = true
-			else
-				-- User has never assigned any Filter manually, they are in "Default" Filtering
-				if not filters or not next(filters) then
-					profile.General["Profile:DefaultFilters"] = true
-				else
-					profile.General["Profile:DefaultFilters"] = false
+			-- if there's no General section in the Profile then skip
+			if profile.General then
+				if profile.General.AccountMode then
 					profileFilters = {}
-					app.CloneDictionary(filters, profileFilters)
+					app.CloneDictionary(filters or app.EmptyTable, profileFilters)
 					profile.General["Profile:Filters"] = profileFilters
+					profile.General["Profile:DefaultFilters"] = true
+					-- make sure all Equipment filters are assigned in the Account mode Default profile
+					for k in pairs(app.EquipmentFilters) do
+						filters[k] = true
+					end
+				else
+					-- User has never assigned any Filter manually, they are in "Default" Filtering
+					if not filters or not next(filters) then
+						profile.General["Profile:DefaultFilters"] = true
+					else
+						profile.General["Profile:DefaultFilters"] = false
+						profileFilters = {}
+						app.CloneDictionary(filters, profileFilters)
+						profile.General["Profile:Filters"] = profileFilters
+					end
 				end
 			end
 		end
