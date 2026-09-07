@@ -504,6 +504,12 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				}),
 			}),
 			header(HEADERS.Achievement, 63605, {	-- Souvenir Seeker, Founder's Point
+				["sharedDescription"] = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
+			}),
+			header(HEADERS.Achievement, 63441, {	-- Souvenir Seeker, Razorwind Shores
+				["sharedDescription"] = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
+			}),
+			header(HEADERS.Achievement, 63605, {	-- Souvenir Seeker, Founder's Point
 				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
 				n(266674, {	-- Secret Souvenir (1)
 					["coord"] = { 52.7, 38.7, FOUNDERS_POINT },
@@ -787,7 +793,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["coord"] = { 42.7, 69.9, RAZORWIND_SHORES },
 				}),
 				n(266635, {	-- Secret Souvenir (23)
-					["coord"] = { 48.8, 66.0, RAZORWIND_SHORES },
+					["coord"] = { 44.8, 66.1, RAZORWIND_SHORES },
 				}),
 				n(266636, {	-- Secret Souvenir (24)
 					["coord"] = { 46.7, 75.3, RAZORWIND_SHORES },
@@ -891,7 +897,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["maps"] = { RAZORWIND_SHORES },
 				}),
 				n(266666, {	-- Secret Souvenir (54)
-					["coord"] = { 62.6, 47.9, RAZORWIND_SHORES },
+					["description"] = "On a turtle who may waddle around a bit...",
+					["coords"] = { 67.8, 55.5, RAZORWIND_SHORES },
 				}),
 				n(266667, {	-- Secret Souvenir (55)
 					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",
