@@ -798,7 +798,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(69809, {	-- Forgemaster Deng
-						["provider"] = {"i",94233},	-- Incantation of Deng
+						["cost"] = { { "i", 94233, 1 } },	-- 1x Incantation of Deng
 					}),
 					n(69999, {	-- God-Hulk Ramuk
 						["isWeekly"] = true,
@@ -819,7 +819,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(69800, {	-- Haqin of the Hundred Spears
-						["provider"] = {"i",94130},	-- Incantation of Haqin
+						["cost"] = { { "i", 94130, 1 } },	-- 1x Incantation of Haqin
 					}),
 					n(50358, {	-- Haywire Sunreaver Construct
 						["isWeekly"] = true,
@@ -909,11 +909,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(69961, {	-- Sparkmancer Vu
-						["provider"] = {"i",95350},	-- Incantation of Vu
+						["cost"] = { { "i", 95350, 1 } },	-- 1x Incantation of Vu
 					}),
 				}),
 				n(RARES, sharedData({
-					["cost"] = { { "i", 94221, 3} },	-- Shan'ze Ritual Stone
+					["cost"] = { { "i", 94221, 3 } },	-- 3x Shan'ze Ritual Stone
 				},{
 					n(69767, {	-- Ancient Mogu Guardian
 						["coord"] = { 53.13, 47.07, ISLE_OF_THUNDER },

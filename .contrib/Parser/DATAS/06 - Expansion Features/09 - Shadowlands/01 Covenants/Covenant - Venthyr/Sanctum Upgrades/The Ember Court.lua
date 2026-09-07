@@ -657,12 +657,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(QUESTS, sharedData({["isWeekly"] = true},{
 							q(61524, {	-- The Ember Court
-								["groups"] = {
-									i(179958),	-- Ember Court Guest List (QI!)
-								},
+								["qi"] = 179958,	-- Ember Court Guest List (QI!)
 							}),
 							q(62628, {	-- Vole's Voucher
-								["provider"] = {"i",181761},	-- The Grandmaster's Voucher
+								["qs"] = 181761,	-- The Grandmaster's Voucher (QS!)
 							}),
 						})),
 						-- Repeatable Event quests within Ember Court
@@ -843,7 +841,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["crs"] = { 171848 },	-- Grandmaster Vole
 									["coord"] = { 47.5, 41.2, 1644 },	-- Ember Court
 									["groups"] = appendGroups(VOLE_GROUP, {
-										i(181761),	-- The Grandmaster's Voucher
+										i(181761),	-- The Grandmaster's Voucher (QS!)
 										i(181765),	-- Marcel Mullby's Marker
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(181767),	-- Small Coin Purse

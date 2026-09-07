@@ -369,8 +369,9 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				},
 			}),
 			n(REWARDS, {
-				-- Exo Note: Dunno where these come from but there are a ton of Wax Sculptors throughtout the Neighborhood, asking for these in order to Sculpt Wax Blanks
-				i(270274),	-- Home-Grown Wax
+				o(270274, {	-- Waxy Lump
+					i(270274),	-- Home-Grown Wax
+				}),
 			}),
 		})),
 		n(MARUUKAI_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {

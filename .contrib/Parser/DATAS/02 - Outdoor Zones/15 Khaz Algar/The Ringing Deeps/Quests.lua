@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			header(HEADERS.Item, 221765, {	-- Stonevault Mechsuit
 				q(84020, {	-- A Mech in Need
-					["provider"] = { "i", 226683 },	-- Malfunctioning Mechsuit
+					["qs"] = 226683,	-- Malfunctioning Mechsuit (QS!)
 					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
 				}),
 				q(84021, {	-- Machine Without Cogs

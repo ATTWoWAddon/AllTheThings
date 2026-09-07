@@ -65,25 +65,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 		ach(14763, {	-- Crypt Couture
 			i(183693),	-- Plague Doctor's Mask (CI!)
 			crit(49929, {	-- Ashen Ink
-				["provider"] = {"i",183690},
+				["provider"] = { "i",183690 },
 			}),
 			crit(49930, {	-- Jagged Bonesaw
-				["provider"] = {"i",183692},
+				["provider"] = { "i", 183692 },
 			}),
 			crit(49931, {	-- Discarded Grimoire
-				["provider"] = {"i",183394},
+				["provider"] = { "i", 183394 },
 			}),
 			crit(49932, {	-- Sorcerer's Blade
-				["provider"] = {"i",183397},
+				["provider"] = { "i", 183397 },
 			}),
 			crit(49933, {	-- Mucosal Pigment
-				["provider"] = {"i",183691},
+				["provider"] = { "i", 183691 },
 			}),
 			crit(49934, {	-- Amethystine Dye
-				["provider"] = {"i",183401},
+				["provider"] = { "i", 183401 },
 			}),
 			crit(49935, {	-- Ritualist's Mantle
-				["provider"] = {"i",183399},
+				["provider"] = { "i", 183399 },
 			}),
 		}),
 		ach(14315, {	-- Shadowlands Diplomat

@@ -60,7 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
-					i(169764),	-- Worldvein Intelligence Reports
+					i(169764),	-- Worldvein Intelligence Reports (QS!)
 					mi(2158, {	-- Investigating the Rumors
 						["questID"] = 56528,	-- procs when completing Investigating the Rumors on Alliance
 						["sourceQuest"] = 56533,	-- Worldvein Rumors
@@ -90,7 +90,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(56533, {	-- Worldvein Rumors
-				["provider"] = {"i",169764},	-- Worldvein Intelligence Reports
+				["qs"] = 169764,	-- Worldvein Intelligence Reports 9QS!
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53435, {	-- Azerite for the Horde
@@ -132,7 +132,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(56534, {	-- Worldvein Rumors
-				["provider"] = {"i",169765},	-- Worldvein Intelligence Reports
+				["qs"] = 169765,	-- Worldvein Intelligence Reports (QS!)
 				["races"] = HORDE_ONLY,
 			}),
 		}),

@@ -568,12 +568,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49806, {	-- Hidden Dealings
 				["sourceQuests"] = { 49804 },	-- Sharp Thinking
-				["provider"] = {"i",156517},	-- Hastily Drawn Map
+				["qs"] = 156517,	-- Hastily Drawn Map (QS!)
 				["races"] = ALLIANCE_ONLY,
-				["crs"] = {
-					129575,	-- Corlain Refugee
-					129641,	-- Corlain Refugee
-				},
 			}),
 			q(50177, {	-- Hold the Barricade!
 				["sourceQuests"] = {
@@ -1502,16 +1498,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50965, {	-- Those Who Remain
 				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-				["provider"] = {"i",160027},	-- Ashenwood Relic
+				["qs"] = 160027,	-- Ashenwood Relic (QS!)
 				["races"] = ALLIANCE_ONLY,
-				["crs"] = {
-					135902,	-- Bloodbough Fungalmancer
-					135901,	-- Bloodbough Funggarian
-				},
-				-- May only drop while on A Farmer's Fate / Lost in the Woods as that was the point I picked it up; needs confirmation.
-				["groups"] = {
-					i(159350),	-- Ashenwood Relic (QI!)
-				},
+				["qi"] = 159350,	-- Ashenwood Relic (QI!)
 			}),
 			q(51445, {	-- Thros, the Blighted Lands
 				["sourceQuests"] = { 52488 },	-- Runic Resistance

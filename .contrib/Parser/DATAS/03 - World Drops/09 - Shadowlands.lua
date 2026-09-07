@@ -5,7 +5,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADD
 	filter(MISC, {
 		i(158932, {	-- Secretest Fish
 			["description"] = "Can be found in any Shadowlands zone when wearing the googles.",
-			["provider"] = {"i", 167698},	-- Secret Fish Goggles
+			["provider"] = { "i", 167698 },	-- Secret Fish Goggles
 			["maps"] = {
 				ARDENWEALD,
 				BASTION,

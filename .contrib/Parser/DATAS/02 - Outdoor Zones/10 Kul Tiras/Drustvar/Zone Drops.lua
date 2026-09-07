@@ -5,6 +5,13 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(DRUSTVAR, {
 		n(ZONE_DROPS, {
+			i(160027, {	-- Ashenwood Relic (QS!)
+				["coord"] = { 26.0, 41.0, DRUSTVAR },
+				["crs"] = {
+					135902,	-- Bloodbough Fungalmancer
+					135901,	-- Bloodbough Funggarian
+				},
+			}),
 			i(158918, {	-- Bilgewater Patented Flamethrower (QS!)
 				["coord"] = { 38.4, 36.6, DRUSTVAR },
 				["cr"] = 135541,	-- Bilgewater Incinerator
@@ -28,6 +35,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					138244,	-- Briarwood Bulwark
 					133118,	-- Gnarled Hulk
 					137133,	-- Wicker Golem
+				},
+			}),
+			i(156517, {	-- Hastily Drawn Map (QS!)
+				["coord"] = { 39.2, 50.4, DRUSTVAR },
+				["crs"] = {
+					129575,	-- Corlain Refugee
+					129641,	-- Corlain Refugee
 				},
 			}),
 			i(159748, {	-- Rune-Etched Bone (QS!)

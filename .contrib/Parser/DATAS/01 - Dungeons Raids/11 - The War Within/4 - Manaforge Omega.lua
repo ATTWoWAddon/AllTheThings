@@ -684,7 +684,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(QUESTS, {
 					q(91140, {	-- A Piece of the Past
-						["provider"] = { "i", 245743 },	-- A Curious Crystalline Fragment (QS!)
+						["qs"] = 245743,	-- A Curious Crystalline Fragment (QS!)
 						["classes"] = { PRIEST },
 					}),
 					q(91138, {	-- I am the Creator and Destroyer
@@ -809,7 +809,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
 					q(91413, {	-- A Twilight Oath's End
-						["provider"] = { "i", 246446 },	-- Mark of the Twilight Oath
+						["qs"] = 246446,	-- Mark of the Twilight Oath (QS!)
 						["groups"] = { i(246445) },	-- Royal Voidwing (MOUNT!)
 					}),
 				}),

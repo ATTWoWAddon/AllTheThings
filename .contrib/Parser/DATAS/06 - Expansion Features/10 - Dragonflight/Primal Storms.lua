@@ -492,12 +492,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(71242, {	-- Supporting the Storm Researchers
-					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
+					["qs"] = 200675,	-- Elemental Overflow Cluster (QS!)
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(70753, {	-- Dissipating the Air Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["provider"] = {"i",199749},	-- Primal Air Core
+					["qs"] = 199749,	-- Primal Air Core (QS!)
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
 					["groups"] = {
@@ -506,7 +506,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(70754, {	-- Extinguishing the Fire Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["provider"] = {"i",199750},	-- Primal Fire Core
+					["qs"] = 199750,	-- Primal Fire Core (QS!)
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
 					["groups"] = {
@@ -515,7 +515,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(70723, {	-- Shattering the Earth Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["provider"] = {"i",199691},	-- Primal Earth Core
+					["qs"] = 199691,	-- Primal Earth Core (QS!)
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
 					["groups"] = {
@@ -524,7 +524,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(70752, {	-- Vaporizing the Water Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["provider"] = {"i",199748},	-- Primal Water Core
+					["qs"] = 199748,	-- Primal Water Core (QS!)
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
 					["groups"] = {
@@ -551,7 +551,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(200260),	-- Echo of the Depths (PET!)
 						i(200263),	-- Echo of the Heights (PET!)
 						i(200255),	-- Echo of the Inferno (PET!)
-						i(200675),	-- Elemental Overflow Cluster
+						i(200675),	-- Elemental Overflow Cluster (QS!)
 
 						-- Enchanting knowledge drops (one-time)
 						i(201356),	-- Glimmer of Fire
@@ -559,10 +559,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(201358),	-- Glimmer of Air
 						i(201359),	-- Glimmer of Earth
 
-						i(199749),	-- Primal Air Core
-						i(199691),	-- Primal Earth Core
-						i(199750),	-- Primal Fire Core
-						i(199748),	-- Primal Water Core
+						i(199749),	-- Primal Air Core (QS!)
+						i(199691),	-- Primal Earth Core (QS!)
+						i(199750),	-- Primal Fire Core (QS!)
+						i(199748),	-- Primal Water Core (QS!)
 						currency(2118),	-- Elemental Overflow
 				},
 			}),

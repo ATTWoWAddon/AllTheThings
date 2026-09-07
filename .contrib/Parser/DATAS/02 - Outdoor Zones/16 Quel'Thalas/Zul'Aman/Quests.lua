@@ -1715,10 +1715,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			--
 			q(94839, {	-- Blessings of Peril
-				["provider"] = { "i", 263938 },	-- Idol of Peril (QS!)
+				["qs"] = 263938,	-- Idol of Peril (QS!)
 			}),
 			q(94910, {	-- Blessings of Growth
-				["provider"] = { "i", 266440 },	-- Idol of Growth (QS!)
+				["qs"] = 266440,	-- Idol of Growth (QS!)
 			}),
 		}),
 	}),

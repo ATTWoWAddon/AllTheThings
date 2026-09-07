@@ -866,7 +866,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 							o(441795, {	-- Hallowfall Sparkfly
 								["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 								["coord"] = { 66.8, 25.3, HALLOWFALL },
-								["provider"] = {"i", 218107},	-- Sparkbug Jar
+								["provider"] = { "i", 218107 },	-- Sparkbug Jar
 								["groups"] = { i(220771) },	-- Hallowed Glowfly (PET!)
 							}),
 							o(451993, {	-- Nerubian Device

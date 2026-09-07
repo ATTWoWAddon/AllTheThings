@@ -2025,7 +2025,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 					}),
 				}),
 				n(206014, {	-- Eva Sarkhoff
-					["provider"] = {"i",88566},	-- Krastinov's Bag of Horrors
+					["provider"] = { "i", 88566 },	-- Krastinov's Bag of Horrors
 					["questID"] = 76248,
 					["groups"] = {
 						i(206365),	-- Inert Spectral Essence

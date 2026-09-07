@@ -8,7 +8,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
 				------ Prologue ------
 				q(74381, {	-- Hidden Legacies
-					["maps"] = { VALDRAKKEN },
+					["qg"] = 201398,	-- Kurazidaia <Healing Wings Envoy>
+					["coord"] = { 61.0, 26.6, VALDRAKKEN },
 				}),
 				q(73076, {	-- Return to the Reach
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies

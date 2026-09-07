@@ -295,10 +295,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(207463, {	-- Bartender Blob
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
 					["coord"] = { 52.1, 81.4, THALDRASZUS },
-					["provider"] = {"i",208449},	-- Melly's Metronographer+++ (QI!)
+					["qi"] = 208449,	-- Melly's Metronographer+++ (QI!)
 					["groups"] = {
 						i(208448, {	-- Infinitea
-							["description"] = "Timer start right after you buy it"
+							["description"] = "Timer starts right after you buy it."
 						}),
 					},
 				}),

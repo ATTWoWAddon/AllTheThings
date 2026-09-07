@@ -2251,7 +2251,6 @@ root(ROOTS.Unsorted, {
 				i(156476),	-- Dock Whistle
 				i(156485),	-- Bottle of Mojo
 				i(156513),	-- Crude Hatchet
-				i(156517),	-- Hastily Drawn Map
 				i(156529),	-- Blood Orb
 				i(156530),	-- Grapeshot Grenade
 				i(156536),	-- Meaty Offering
@@ -2338,7 +2337,6 @@ root(ROOTS.Unsorted, {
 				i(159780),	-- Burning Torch
 				i(159832),	-- Gulch Beetle
 				i(159943),	-- Inconspicuous Seaforium Bomb
-				i(160027),	-- Ashenwood Relic
 				i(160037),	-- Sethrak Weapon
 				i(160038),	-- Owlseye Lens
 				i(160040),	-- Highly Explosive Telescoping Fluid

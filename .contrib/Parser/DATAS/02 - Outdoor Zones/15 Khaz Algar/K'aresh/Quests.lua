@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 					q(86456, {	-- An Elegy for a Silent World
 						["sourceQuests"] = { 85037 },	-- That's a Wrap
-						["provider"] = { "i", 234273 },	-- A Dimmed Crystal
+						["qs"] = 234273,	-- A Dimmed Crystal (QS!)
 					}),
 					------ Stay awhile and listen ------
 					hqt(90753, {	-- Stay awhile and listen: Alleria Windrunner

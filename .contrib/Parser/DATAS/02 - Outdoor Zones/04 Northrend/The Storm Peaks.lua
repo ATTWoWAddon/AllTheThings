@@ -1139,7 +1139,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12888, {	-- SCRAP-E
 						["qg"] = 29724,	-- Library Guardian
-						["provider"] = {"i",41267},	-- SCRAP-E Access Card
+						["qs"] = 41267,	-- SCRAP-E Access Card (QS!)
 						["coord"] = { 39.2, 42.0, THE_STORM_PEAKS },	-- general area
 						["requireSkill"] = ENGINEERING,
 					}),
