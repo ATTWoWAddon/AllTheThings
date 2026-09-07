@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["groups"] = { i(260420) },	-- Swamp Apple
 				}),
 				q(94967, {	-- Ki'clak Snack Attack
-					--["sourceQuest"] = 93906,	-- Untethering the Two
+					["sourceQuest"] = 93906,	-- Untethering the Two
 					["coord"] = { 69.6, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["groups"] = {
 						i(267085),	-- Swirling Ectoplasm
