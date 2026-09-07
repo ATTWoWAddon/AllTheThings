@@ -71,6 +71,19 @@ keycount = function(t)
 	end
 	return c
 end
+-- Concats all the key/value pairs in the table into a string
+StringifyTable = function(tbl, sep)
+	if tbl then
+		local tostring = tostring
+		sep = sep or ""
+		local tblvals = {};
+		for k,v in pairs(tbl) do
+			tblvals[#tblvals + 1] = k..":"..tostring(tbl[k])
+		end
+		return table.concat(tblvals, sep)
+	end
+	return "";
+end
 -- Ensures that 't' has a 'groups' field containing the array/'g' data of the table
 togroups = function(t)
 	if isarray(t) then
@@ -194,11 +207,11 @@ end
 -- This is sort of a workaround for replacing bubbleDownSelf a billion times with static field and groups
 applyDataSelf = function(data, t)
 	if not data then
-		error("applyDataSelf: No Data")
+		error("applyDataSelf: No Data",StringifyTable(t,","))
 		return t
 	end
 	if not t then
-		error("applyDataSelf: No Source 't'")
+		error("applyDataSelf: No Source 't'",StringifyTable(t,","))
 		return t
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
@@ -281,10 +294,10 @@ end
 -- Applies a copy of the provided data into the tables of the provided array/group
 sharedData = function(data, t)
 	if not data then
-		error("sharedData: No Shared Data")
+		error("sharedData: No Shared Data",StringifyTable(t,","))
 	end
 	if not t or (#t == 0 and not t.g and not t.groups) then
-		error("sharedData: No Source 't'")
+		error("sharedData: No Source 't'",StringifyTable(t,","))
 	end
 	if t then
 		for _,group in ipairs(t) do
@@ -301,11 +314,11 @@ end
 -- Performs sharedData logic but also applies the data to the top-level table
 sharedDataSelf = function(data, t)
 	if not data then
-		error("sharedDataSelf: No Shared Data")
+		error("sharedDataSelf: No Shared Data",StringifyTable(t,","))
 		return t
 	end
 	if not t then
-		error("sharedDataSelf: No Source 't'")
+		error("sharedDataSelf: No Source 't'",StringifyTable(t,","))
 		return t
 	end
 	-- if this is an array, convert to .groups container first to prevent merge confusion
@@ -321,15 +334,15 @@ end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array
 bubbleDown = function(data, t)
 	if not data then
-		error("bubbleDown: No Bubble Data")
+		error("bubbleDown: No Bubble Data",StringifyTable(t,","))
 		return t
 	end
 	if not t then
-		error("bubbleDown: No Source 't'")
+		error("bubbleDown: No Source 't'",StringifyTable(t,","))
 		return t
 	end
 	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
-	-- if data.timeline then
+	-- if data.timeline and keycount(data) == 1 then
 	-- 	local timelineSelfReturn = timelineSelf(data, t, true)
 	-- 	if timelineSelfReturn then return timelineSelfReturn end
 	-- end
@@ -399,34 +412,26 @@ end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
 	if not data then
-		error("bubbleDownSelf: No Bubble Data")
+		error("bubbleDownSelf: No Bubble Data",StringifyTable(t,","))
 		return t
 	end
 	if not t then
-		error("bubbleDownSelf: No Source 't'")
+		error("bubbleDownSelf: No Source 't'",StringifyTable(t,","))
 		return t
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
-	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
-	-- if data.timeline then
-	-- 	local timelineSelfReturn = timelineSelf(data, t, true)
-	-- 	if timelineSelfReturn then
-	-- 		applyData(data, t)
-	-- 		return timelineSelfReturn
-	-- 	end
-	-- end
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
 -- Performs only the logic of applying the provided data against the merging object, this is intended as a quick replacement for those bubbleDown(Self) uses of only 'timeline' data
 timelineSelf = function(data, t, auto)
 	if not data then
-		error("timelineSelf: No Data")
+		error("timelineSelf: No Data",StringifyTable(t,","))
 		return t
 	end
 	if not t then
-		error("timelineSelf: No Source 't'")
+		error("timelineSelf: No Source 't'",StringifyTable(t,","))
 		return t
 	end
 	local datacount = keycount(data)
@@ -435,7 +440,7 @@ timelineSelf = function(data, t, auto)
 		-- if we automatically call this function, then don't ERROR just return empty so the caller can handle it
 		if auto then return end
 
-		error("timelineSelf is only intended to replace 'timeline' bubbleDowns, ensure no other data is being bubbled! "..datacount..":"..(withtimeline and "TIMELINE" or ""))
+		error("timelineSelf is only intended to replace 'timeline' bubbleDowns, ensure no other data is being bubbled! ",StringifyTable(t,","))
 		return t
 	end
 	-- typically bubbleDownSelf is on expansion objects, and we want to avoid forcing timeline on these
@@ -445,10 +450,10 @@ end
 -- Applies the timeline event (epoch) to all sub-groups of the provided table/array
 bubbleDownTimelineEvent = function(epoch, t)
 	if not epoch then
-		error("bubbleDownTimelineEvent: No Epoch")
+		error("bubbleDownTimelineEvent: No Epoch",StringifyTable(t,","))
 	end
 	if not t then
-		error("bubbleDownTimelineEvent: No Source 't'")
+		error("bubbleDownTimelineEvent: No Source 't'",StringifyTable(t,","))
 	end
 	if t then
 		if t.g or t.groups then
