@@ -1,7 +1,7 @@
 local AllowedNilGlobals = {
 	CurrentSubFileName = 1,
 }
-_G = setmetatable(_G, { __index = function(t,key) if not AllowedNilGlobals[key] then print("ERROR: NON-EXISTENT-GLOBAL:",key) end end})
+_G = setmetatable(_G, { __index = function(t,key) if not AllowedNilGlobals[key] then error("NON-EXISTENT-GLOBAL:",key) end end})
 AllTheThings = {};
 _ = AllTheThings;
 

@@ -63,6 +63,14 @@ end
 isarray = function(t)
 	return t and type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
+keycount = function(t)
+	if not t or type(t) ~= "table" then return end
+	local c = 0
+	for _ in pairs(t) do
+		c = c + 1
+	end
+	return c
+end
 -- Ensures that 't' has a 'groups' field containing the array/'g' data of the table
 togroups = function(t)
 	if isarray(t) then
@@ -186,11 +194,11 @@ end
 -- This is sort of a workaround for replacing bubbleDownSelf a billion times with static field and groups
 applyDataSelf = function(data, t)
 	if not data then
-		print("ERROR: applyDataSelf: No Data")
+		error("applyDataSelf: No Data")
 		return t
 	end
 	if not t then
-		print("ERROR: applyDataSelf: No Source 't'")
+		error("applyDataSelf: No Source 't'")
 		return t
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
@@ -273,10 +281,10 @@ end
 -- Applies a copy of the provided data into the tables of the provided array/group
 sharedData = function(data, t)
 	if not data then
-		print("ERROR: sharedData: No Shared Data")
+		error("sharedData: No Shared Data")
 	end
 	if not t or (#t == 0 and not t.g and not t.groups) then
-		print("ERROR: sharedData: No Source 't'")
+		error("sharedData: No Source 't'")
 	end
 	if t then
 		for _,group in ipairs(t) do
@@ -293,11 +301,11 @@ end
 -- Performs sharedData logic but also applies the data to the top-level table
 sharedDataSelf = function(data, t)
 	if not data then
-		print("ERROR: sharedDataSelf: No Shared Data")
+		error("sharedDataSelf: No Shared Data")
 		return t
 	end
 	if not t then
-		print("ERROR: sharedDataSelf: No Source 't'")
+		error("sharedDataSelf: No Source 't'")
 		return t
 	end
 	-- if this is an array, convert to .groups container first to prevent merge confusion
@@ -313,11 +321,11 @@ end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array
 bubbleDown = function(data, t)
 	if not data then
-		print("ERROR: bubbleDown: No Bubble Data")
+		error("bubbleDown: No Bubble Data")
 		return t
 	end
 	if not t then
-		print("ERROR: bubbleDown: No Source 't'")
+		error("bubbleDown: No Source 't'")
 		return t
 	end
 	-- override to use 'timelineSelf' if the only data provided is a 'timeline' value
@@ -391,11 +399,11 @@ end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
 	if not data then
-		print("ERROR: bubbleDownSelf: No Bubble Data")
+		error("bubbleDownSelf: No Bubble Data")
 		return t
 	end
 	if not t then
-		print("ERROR: bubbleDownSelf: No Source 't'")
+		error("bubbleDownSelf: No Source 't'")
 		return t
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
@@ -414,23 +422,20 @@ end
 -- Performs only the logic of applying the provided data against the merging object, this is intended as a quick replacement for those bubbleDown(Self) uses of only 'timeline' data
 timelineSelf = function(data, t, auto)
 	if not data then
-		print("ERROR: timelineSelf: No Data")
+		error("timelineSelf: No Data")
 		return t
 	end
 	if not t then
-		print("ERROR: timelineSelf: No Source 't'")
+		error("timelineSelf: No Source 't'")
 		return t
 	end
-	local datacount = 0
+	local datacount = keycount(data)
 	local withtimeline = data.timeline and true or nil
-	for k, v in pairs(data) do
-		datacount = datacount + 1
-	end
 	if datacount > 1 or not withtimeline then
 		-- if we automatically call this function, then don't ERROR just return empty so the caller can handle it
 		if auto then return end
 
-		print("ERROR: timelineSelf is only intended to replace 'timeline' bubbleDowns, ensure no other data is being bubbled!")
+		error("timelineSelf is only intended to replace 'timeline' bubbleDowns, ensure no other data is being bubbled! "..datacount..":"..(withtimeline and "TIMELINE" or ""))
 		return t
 	end
 	-- typically bubbleDownSelf is on expansion objects, and we want to avoid forcing timeline on these
@@ -440,10 +445,10 @@ end
 -- Applies the timeline event (epoch) to all sub-groups of the provided table/array
 bubbleDownTimelineEvent = function(epoch, t)
 	if not epoch then
-		print("ERROR: bubbleDownTimelineEvent: No Epoch")
+		error("bubbleDownTimelineEvent: No Epoch")
 	end
 	if not t then
-		print("ERROR: bubbleDownTimelineEvent: No Source 't'")
+		error("bubbleDownTimelineEvent: No Source 't'")
 	end
 	if t then
 		if t.g or t.groups then
