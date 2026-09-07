@@ -862,7 +862,9 @@ de(25122,{awp=120100,crs={267794,267795},itemID=277163,spellID=1301730}),
 i(276246,{awp=120100,cost={{"c",3363,10}},crs={267794,267795},spellID=1299046,g={
 de(25546,{itemID=276230,spellID=1299046})}}),
 de(25105,{awp=120100,crs={267794,267795},itemID=277138,spellID=1301691}),
-de(25101,{awp=120100,crs={267794,267795},itemID=277142,spellID=1301698})}}),
+de(25101,{awp=120100,crs={267794,267795},itemID=277142,spellID=1301698}),
+de(25675,{awp=120100,crs={271366,271604},itemID=280335,spellID=1308292}),
+de(4157,{awp=120100,crs={271366,271604},itemID=248101,spellID=1246265})}}),
 h(-58,{
 n(263258,{awp=120100,coords={
 [2351]={{55.2,61.9}},
@@ -1157,7 +1159,7 @@ ach(63441,{coords={
 [2351]={{54.6,57.7}}},crs={272031},description="There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",g={
 crit(116394,{achID=63606,id=1})}}),
 ach(63606,{maps={2351,2352}})}),
-ah(63605,{type="a",g={
+ah(63605,{sharedDescription="Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",type="a",g={
 n(266674,{coords={
 [2352]={{52.7,38.7}}},g={
 crit(116392,{achID=63605,id=1})}}),
@@ -1336,7 +1338,7 @@ crit(116390,{achID=63605,id=59})}}),
 n(266734,{coords={
 [2352]={{55.8,85.1}}},cost={{"i",276749,1}},description="Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",g={
 crit(116391,{achID=63605,id=60})}})}}),
-ah(63441,{type="a",g={
+ah(63441,{sharedDescription="Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",type="a",g={
 n(266613,{coords={
 [2351]={{54.2,56.9}}},g={
 crit(115868,{achID=63441,id=1})}}),
@@ -1404,7 +1406,7 @@ n(266634,{coords={
 [2351]={{42.7,69.9}}},g={
 crit(115891,{achID=63441,id=22})}}),
 n(266635,{coords={
-[2351]={{48.8,66}}},g={
+[2351]={{44.8,66.1}}},g={
 crit(115892,{achID=63441,id=23})}}),
 n(266636,{coords={
 [2351]={{46.7,75.3}}},g={
@@ -1496,7 +1498,7 @@ crit(115923,{achID=63441,id=52})}}),
 n(266665,{crs={256645},description="This Souvenir can be found in the back of Communal Cart.",maps={2351},g={
 crit(115924,{achID=63441,id=53})}}),
 n(266666,{coords={
-[2351]={{62.6,47.9}}},g={
+[2351]={{67.8,55.5}}},description="On a turtle who may waddle around a bit...",g={
 crit(115925,{achID=63441,id=54})}}),
 n(266667,{coords={
 [2351]={{52.6,73.1}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",g={
@@ -1773,7 +1775,7 @@ n(255230,{coords={
 n(255218,{coords={
 [2352]={{52.2,37.8}}}}),
 n(255216,{coords={
-[2352]={{52.2,37.8}}}}),
+[2352]={{52.2,37.8},{54.4,32.8}}}}),
 n(255213,{coords={
 [2352]={{52,38.4}}}}),
 n(257321,{coords={
@@ -2000,6 +2002,8 @@ n(255278,{coords={
 [2351]={{54.1,59.1}}}}),
 n(255298,{coords={
 [2351]={{53.5,58.5}}}}),
+n(271366,{coords={
+[2351]={{52.4,54.3}}}}),
 n(255299,{coords={
 [2351]={{53.5,58.5}}}}),
 n(240465,{coords={

@@ -169862,7 +169862,7 @@ o(651085,{minReputation={2772,10},type="AsSubGenericObject"})}})}}),
 q(96276,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96267}}),
 q(96273,{coords={
-[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96276,96305}}),
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96276}}),
 q(96275,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96273}}),
 q(96271,{coords={
@@ -169870,11 +169870,15 @@ q(96271,{coords={
 q(96305,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96271},g={
 mnt(1292668,{itemID=273838,minReputation={2772,10}})}}),
+q(96349,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
+q(96352,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
+q(96354,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(96360,{coords={
 [2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(96361,{coords={
-[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
-q(96349,{coords={
 [2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(97672,{coords={
 [2512]={{58.8,45}}},minReputation={2772,12},qgs={268228}}),
@@ -170829,7 +170833,7 @@ q(93670,{coords={
 [2512]={{66,38}}},isWorldQuest=1,g={
 i(260420)}}),
 q(94967,{coords={
-[2512]={{69.6,56.5}}},isWorldQuest=1,g={
+[2512]={{69.6,56.5}}},isWorldQuest=1,sourceQuests={93906},g={
 i(267085),
 ach(63633,{coords={
 [2512]={{69.3,52.3}}},crs={256872},g={

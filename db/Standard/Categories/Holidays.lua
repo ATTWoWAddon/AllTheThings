@@ -7072,8 +7072,8 @@ i(49215,{awp=40001,b=1,e=16,f=55,spellID=97115}),
 i(49216,{awp=40001,b=1,e=16,f=55,spellID=97116})}}),
 h(-56,{awp=60202,e=16,g={
 o(244568,{coords={
-[582]={{40.12,70.06}},
-[590]={{70.71,90.21}}},description="You need a Tier 3 garrison for this.",e=16,g={
+[582]={{40.1,70.1}},
+[590]={{70.7,90.2}}},description="You need a Tier 3 garrison for this.",e=16,g={
 cq(39865,{b=1,e=16,itemID=128874,spellID=192472}),
 ach(10365,{e=16})}})}}),
 h(-58,{e=16,g={
