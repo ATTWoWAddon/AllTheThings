@@ -3139,11 +3139,15 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				q(79133, {	-- The Northrend Cup Begins
 					["qgs"] = {
 						213769,	-- Racing Enthusiast
+						214103,	-- Racing Enthusiast
 						-- #if AFTER MID
 						220307,	-- Holiday Enthusiast
 						-- #endif
 					},
-					["coords"] = { 52.8, 79.5, ORGRIMMAR },
+					["coords"] = {
+						{ 52.8, 79.5, ORGRIMMAR },
+						{ 29.8, 56.5, ORIBOS },
+					},
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
