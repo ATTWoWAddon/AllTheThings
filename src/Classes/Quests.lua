@@ -542,7 +542,8 @@ local CollectibleAsQuest = function(t)
 					or
 					t.itemID
 				)
-				and C_QuestLog_IsOnQuest(questID))
+				and C_QuestLog_IsOnQuest(questID)	-- sometimes this causes repeatable quests with a cost to show as 'collected' in chat
+			)
 		)
 	)
 end

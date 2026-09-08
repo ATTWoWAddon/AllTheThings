@@ -166,20 +166,13 @@ local function BuildGearSetInformationForGroup(group)
 				end
 			end
 			-- add the group showing the related Set information for this popout
-			if not group.g then group.g = { app.CreateGearSet(setID, {
-				OnUpdate = app.AlwaysShowUpdate,
+			app.NestObject(group, app.CreateGearSet(setID, {
+				OnSetVisibility = app.ReturnTrue,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				sourceIgnored = true,
 				skipFull = true,
 				SortPriority = -2.1,
-				g = g }) }
-			else tinsert(group.g, app.CreateGearSet(setID, {
-				OnUpdate = app.AlwaysShowUpdate,
-				OnClick = app.UI.OnClick.IgnoreRightClick,
-				sourceIgnored = true,
-				skipFull = true,
-				SortPriority = -2.1,
-				g = g })) end
+				g = g }))
 		end
 	end
 end

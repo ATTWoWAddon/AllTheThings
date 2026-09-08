@@ -1313,8 +1313,7 @@ local function BuildSourceInformationForPopout(group)
 		});
 	end
 	-- add the group showing the Appearance information for this popout
-	if group.g then tinsert(group.g, appearanceGroup)
-	else group.g = { appearanceGroup } end
+	app.NestObject(group, appearanceGroup)
 end
 app.AddEventHandler("OnNewPopoutGroup", BuildSourceInformationForPopout)
 

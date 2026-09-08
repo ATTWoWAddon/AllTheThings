@@ -223,7 +223,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				filter(MISC, {
 					i(276547),	-- Afflicted Soul
-					i(279290),	-- Fang Lover's (CI!)
+					i(279290, {	-- Fang Lover's (CI!)
+						["providers"] = {
+							{ "o",584518 },	-- Bountiful Heavy Trunk (verified)
+						},
+					}),
 					i(276548),	-- Tormented Soul
 					i(274374, {	-- Trovehunter's Bounty
 						["providers"] = {

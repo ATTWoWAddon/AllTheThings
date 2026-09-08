@@ -301,6 +301,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			-- Distinguishing by color may be possible for some of the 'special' objects, but would need to be determined how to do it
 			o(584514, {	-- Bountiful Coffer
 				["provider"] = { "i", 254250 },	-- Bountiful Coffer
+				["cost"] = {{"c",RESTORED_COFFER_KEY,1}},	-- 1x Restored Coffer Key
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 				["groups"] = {
 					i(273000),	-- Corrosive Soul
@@ -317,6 +318,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
+			o(658087, {	-- Abundantly Bountiful Heavy Trunk
+				-- ["provider"] = { "n", DUNDUN_NPC },	-- Dundun
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_1_0 },
+			}),
 			o(623259, {	-- Pilfered Trunk
 				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
 			}),
@@ -330,6 +336,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				["groups"] = {
 					i(262390),	-- Sporbie (PET!)
 				},
+			}),
+			o(658088, {	-- Abundantly Bountiful Heavy Trunk
+				-- ["provider"] = { "n", DUNDUN_NPC },	-- Dundun
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_1_0 },
 			}),
 			o(584504, {	-- Sanctified Spoils
 				["provider"] = { "n", 256593 },	-- Sanctified Banner
@@ -380,6 +391,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			o(506498, {	-- Gilded Stash
 				["timeline"] = { ADDED_12_0_1_SEASONSTART },
+			}),
+			o(658855, {	-- Abundant Spoils
+				["timeline"] = { ADDED_12_1_0 },
+				-- contains a user-chosen option based on Dundun dialog (Decor/Marl/Undercoin/XP) so no reason to list specifically
 			}),
 		}),
 	})),
