@@ -19171,7 +19171,8 @@ i(23012,{b=1,u=2}),
 i(23013,{b=1,u=2}),
 i(23016,{b=1,u=2})}})}}),
 h(-106,{awp=110105,e=450,g={
-i(235054,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,g={
+ach(64140,{awp=120100,e=450,rwp=120100,u=2}),
+i(235054,{b=1,description="Players below level 90 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,g={
 h(-88,{e=450,g={
 h(-89,{e=450,g={
 s(284490,235974,{b=1,e=450,f=3,lvl=70}),
@@ -19257,7 +19258,7 @@ s(284456,235940,{b=1,e=450,f=25,lvl=70}),
 s(284447,235931,{b=1,e=450,f=25,lvl=70}),
 s(284445,235929,{b=1,e=450,f=23,lvl=70}),
 s(284444,235928,{b=1,e=450,f=22,lvl=70})}})}}),
-i(236944,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}}),
-i(235911,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}}),
-i(235052,{b=1,description="Players below level 80 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}})}})}})
+i(236944,{b=1,description="Players below level 90 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}}),
+i(235911,{b=1,description="Players below level 90 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}}),
+i(235052,{b=1,description="Players below level 90 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,sym={{"select","itemID",235054},{"pop"}}})}})}})
 end)

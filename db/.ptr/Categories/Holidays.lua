@@ -4345,7 +4345,8 @@ q(79131,{coords={
 q(79132,{coords={
 [84]={{61.8,75.1}}},e=431,isBreadcrumb=1,lvl=30,nextQuests={79130},qgs={214031,220307},r=2,repeatable=1,sr=1}),
 q(79133,{coords={
-[85]={{52.8,79.5}}},e=431,isBreadcrumb=1,lvl=30,nextQuests={79130},qgs={213769,220307},r=1,repeatable=1,sr=1}),
+[85]={{52.8,79.5}},
+[1670]={{29.8,56.5}}},e=431,isBreadcrumb=1,lvl=30,nextQuests={79130},qgs={213769,214103,220307},r=1,repeatable=1,sr=1}),
 q(79130,{coords={
 [84]={{60,66.3}},
 [2112]={{26.9,47.4}}},e=431,lvl=30,qgs={206737,214111},repeatable=1,sourceQuests={79131,79132,79133},sr=1}),

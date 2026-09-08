@@ -242,8 +242,10 @@ q(98204,{awp=120100,coords={
 [2351]={{53.7,57.4}},
 [2352]={{52.7,37.6}}},description="Decor offered by the quest is on a rotation and is different per character on your account.\nYou can complete and obtain only 1 of 2 offered Decor Scenarios per Housing Area, per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",isWeekly=1,maps={0},qgs={262726},qis={274481},g={
 de(10896,{itemID=255712,spellID=1259323}),
+de(9289,{itemID=253396,spellID=1256290}),
 de(9627,{itemID=253703,spellID=1257073}),
 de(26492,{itemID=278696,spellID=1305431}),
+de(21886,{itemID=272142,spellID=1290297}),
 de(18880,{itemID=267355,spellID=1280260}),
 de(20332,{itemID=268943,spellID=1284117}),
 de(1909,{itemID=245993,spellID=1240278}),
@@ -256,7 +258,9 @@ de(21873,{itemID=272129,spellID=1290284}),
 de(11285,{itemID=256684,spellID=1260664}),
 de(10862,{itemID=255652,spellID=1259167}),
 de(11140,{itemID=256361,spellID=1260280}),
-de(8990,{itemID=252042,spellID=1254107})}}),
+de(8990,{itemID=252042,spellID=1254107}),
+de(12145,{itemID=258540,spellID=1263457}),
+de(1430,{itemID=244347,spellID=1237028})}}),
 q(98406,{awp=120100,coords={
 [2351]={{53.7,57.4}},
 [2352]={{52.7,37.5}}},description="Unlocks when your house reaches Level 8.",isWeekly=1,qgs={248854,253596},g={
@@ -1069,7 +1073,8 @@ de(26621,{cost={{"c",3363,15}},itemID=280257,spellID=1307990}),
 de(26618,{cost={{"c",3363,10}},itemID=280255,spellID=1307988}),
 de(26613,{cost={{"c",3363,30}},itemID=280246,spellID=1307980})}}),
 h(-47,{
-i(270274)})}}),
+o(270274,{
+i(270274)})})}}),
 h(-787,{awp=120100,g={
 n(265551,{coords={
 [2351]={{54.3,56.1}},
@@ -1319,7 +1324,7 @@ crit(116383,{achID=63605,id=52})}}),
 n(266726,{crs={242053},description="This Souvenir can be found in the back of Kirt's Public Carriage.",maps={2352},g={
 crit(116384,{achID=63605,id=53})}}),
 n(266727,{coords={
-[2352]={{60.3,52.5}}},g={
+[2352]={{60.3,52.5}}},description="On a turtle who may waddle around a bit...",g={
 crit(116385,{achID=63605,id=54})}}),
 n(266728,{coords={
 [2352]={{36.8,46.8}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geysir will spit out the Souvenir... Eventually...",g={

@@ -2660,7 +2660,7 @@ flt(8,{providers={{"o",581922},{"o",584503},{"o",584508},{"o",584509},{"o",58451
 s(307905,272276,{f=8})}})}),
 flt(50,{
 i(276547,{f=55,spellID=1306913}),
-i(279290,{questID=98043,spellID=1306485}),
+i(279290,{providers={{"o",584518}},questID=98043,spellID=1306485}),
 i(276548,{f=55,spellID=1306916}),
 i(274374,{f=55,providers={{"o",584518},{"o",656489}},questID=86371,spellID=1293799})}),
 flt(104,{
@@ -2786,7 +2786,7 @@ i(257382,{f=55,spellID=1261503}),
 i(257380,{f=55,spellID=1261502}),
 i(257381,{f=55,spellID=1261502}),
 i(257379,{f=55,spellID=1261502}),
-i(268297,{b=1,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584515},{"o",584518}},spellID=1282128}),
+i(268297,{b=1,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584515},{"o",584517},{"o",584518},{"o",584519}},spellID=1282128}),
 i(265714,{lvl=90}),
 i(262586,{b=1,providers={{"o",584515},{"o",584517},{"o",623258}}}),
 cu(2803,{rwp=130000})}),
@@ -2838,15 +2838,17 @@ de(15064,{itemID=263233,spellID=1270134}),
 de(5131,{awp=120100,itemID=248963,spellID=1248178}),
 de(24889,{awp=120100,itemID=275855,spellID=1298014})}}),
 h(-56,{
-o(584514,{providers={{"i",254250}},VerifyLoot={"armor","weapon","miscellaneous"},g={
+o(584514,{cost={{"c",3028,1}},providers={{"i",254250}},VerifyLoot={"armor","weapon","miscellaneous"},g={
 i(273000)}}),
 o(623258,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584517,{providers={{"i",257386}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584515,{providers={{"i",257387}},VerifyLoot={"armor","weapon","miscellaneous"}}),
+o(658087,{awp=120100,VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(623259,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584519,{providers={{"i",257386}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584518,{providers={{"i",257387}},VerifyLoot={"armor","weapon","miscellaneous"},g={
 p(4953,{b=1,itemID=262390,npcID=256264,spellID=1268686})}}),
+o(658088,{awp=120100,VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584504,{providers={{"n",256593}},rwp=120100,u=2,VerifyLoot={"armor","weapon","miscellaneous"},g={
 i(254983,{b=1,f=55,spellID=1258939,u=2})}}),
 o(584503,{description="Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",providers={{"n",256593}},rwp=120100,sym={{"select","itemID",264971,264970}},u=2,VerifyLoot={"armor","weapon","miscellaneous"},g={
@@ -2861,7 +2863,8 @@ o(584508,{VerifyLoot={"armor","weapon","miscellaneous"},g={
 i(254869,{b=1,f=55,spellID=1258805}),
 s(303844,265366,{f=21})}}),
 o(581922,{providers={{"i",252415},{"i",265714}},VerifyLoot={"armor","weapon","miscellaneous"}}),
-o(506498)})}}),
+o(506498),
+o(658855,{awp=120100})})}}),
 h(-31,{awp=120001,g={
 faction(2744)}}),
 h(-35,{awp=120001,g={

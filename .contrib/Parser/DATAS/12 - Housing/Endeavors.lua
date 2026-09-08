@@ -688,6 +688,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["maps"] = { FOUNDERS_POINT },
 				}),
 				n(266727, {	-- Secret Souvenir (54)
+					["description"] = "On a turtle who may waddle around a bit...",
 					["coord"] = { 60.3, 52.5, FOUNDERS_POINT },
 				}),
 				n(266728, {	-- Secret Souvenir (55)

@@ -63320,7 +63320,7 @@ q(12827,{coords={
 q(12937,{coords={
 [120]={{31.4,38}}},lvl=25,qgs={29801},sourceQuests={12930}}),
 q(12888,{coords={
-[120]={{39.2,42}}},lvl=25,qgs={29724},qis={41267},requireSkill=202}),
+[120]={{39.2,42}}},lvl=25,qgs={29724},qss={41267},requireSkill=202}),
 q(13064,{coords={
 [120]={{33.4,58}}},lvl=25,qgs={29445},sourceQuests={12886},g={
 crit(39072,{achID=38})}}),
@@ -67458,7 +67458,7 @@ n(70001,{coords={
 [505]={{42.9,36.3}}},isWeekly=1,g={
 crit(22827,{achID=8103,id=8}),
 crit(65634,{achID=20000,awp=100207,e=437,id=4,rwp=110002,u=2})}}),
-n(69809,{providers={{"i",94233}},g={
+n(69809,{cost={{"i",94233,1}},g={
 crit(22837,{achID=8110,id=2})}}),
 n(69999,{coords={
 [504]={{61.4,49.5}}},isWeekly=1,g={
@@ -67468,7 +67468,7 @@ n(69998,{coords={
 [504]={{53.7,53.1}}},isWeekly=1,g={
 crit(22824,{achID=8103,id=5}),
 crit(65633,{achID=20000,awp=100207,e=437,id=3,rwp=110002,u=2})}}),
-n(69800,{providers={{"i",94130}},g={
+n(69800,{cost={{"i",94130,1}},g={
 crit(22836,{achID=8110,id=1})}}),
 n(50358,{coords={
 [504]={{48.4,86.4},{50.2,90.8}}},isWeekly=1,g={
@@ -67505,7 +67505,7 @@ i(95566,{b=1,spellID=140271}),
 i(94158,{b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",sym={{"select","itemID",87218},{"groupfill"}}}),
 i(94159,{b=1,description="Can contain all sorts of herbs, ore, and cloth."}),
 crit(65631,{achID=20000,awp=100207,e=437,id=1,rwp=110002,u=2})}}),
-n(69961,{providers={{"i",95350}},g={
+n(69961,{cost={{"i",95350,1}},g={
 crit(22838,{achID=8110,id=3})}}),
 n(69767,{coords={
 [504]={{53.13,47.07}}},cost={{"i",94221,3}},crs={70197},g={
@@ -106876,7 +106876,7 @@ q(50585,{coords={
 q(50456,{coords={
 [896]={{31.2,22.7}}},lvl=20,qgs={131640},r=2,sourceQuests={50446},g={
 i(157845,{spellID=263343})}}),
-q(49806,{crs={129575,129641},lvl=20,providers={{"i",156517}},r=2,sourceQuests={49804}}),
+q(49806,{lvl=20,qss={156517},r=2,sourceQuests={49804}}),
 q(50177,{coords={
 [896]={{25.7,70.2}}},lvl=20,qgs={131879},r=2,sourceQuests={50001,50251},g={
 s(96207,160202,{b=1,f=5,loc=43,r=2}),
@@ -107232,8 +107232,7 @@ q(47978,{coords={
 [896]={{55.6,35.73}}},lvl=20,providers={{"o",278669}},r=2,sourceQuests={47968}}),
 q(48109,{coords={
 [896]={{69.7,43.1}}},lvl=20,qgs={125385},r=2,sourceQuests={48283}}),
-q(50965,{crs={135901,135902},lvl=20,providers={{"i",160027}},r=2,sourceQuests={48622},g={
-i(159350)}}),
+q(50965,{lvl=20,qis={159350},qss={160027},r=2,sourceQuests={48622}}),
 q(51445,{coords={
 [896]={{27.5,58.8}}},lvl=50,maps={1045},qgs={141785},r=2,sourceQuests={52488},g={
 ach(12997,{r=2,g={
@@ -107926,12 +107925,16 @@ crit(42372,{achID=13144,id=102})}}),
 q(54711,{isWorldQuest=1,lvl=50,r=1}),
 q(54488,{isWorldQuest=1,lvl=50,r=2})}),
 h(-63,{
+i(160027,{b=1,coords={
+[896]={{26,41}}},crs={135901,135902}}),
 i(158918,{b=1,coords={
 [896]={{38.4,36.6}}},crs={135541}}),
 n(137468,{coords={
 [896]={{24.2,30.4},{25.8,19.8},{26.6,29.2},{30,22.6},{30.2,29}}},description="Coords represent relative bounds of the area.",g={
 i(163710,{b=1,spellID=263315})}}),
 i(168126,{b=1,crs={133118,137133,138244},requireSkill=333}),
+i(156517,{b=1,coords={
+[896]={{39.2,50.4}}},crs={129575,129641},f=55}),
 i(159748,{b=1,coords={
 [896]={{44.8,32.6}}},crs={136490},f=55}),
 mnt(260174,{crs={131519,131530,131534,133736,133889,133892,137134,141642},itemID=163574,lvl=10}),
@@ -119374,30 +119377,30 @@ i(169623,{b=1,coords={
 i(169646,{b=1,coords={
 [1355]={{34.7,27.4}}},crs={154910},lvl=45,pb=1,r=1})}}),
 h(-45,{pb=1,g={
-q(56454,{lvl=50,pb=1,providers={{"i",169632}},r=2}),
-q(56466,{lvl=50,pb=1,providers={{"i",169637}},r=1}),
-q(56450,{lvl=50,pb=1,providers={{"i",169628}},r=2}),
-q(56462,{lvl=50,pb=1,providers={{"i",169641}},r=1}),
-q(56455,{lvl=50,pb=1,providers={{"i",169633}},r=2}),
-q(56467,{lvl=50,pb=1,providers={{"i",169636}},r=1}),
-q(56447,{lvl=50,pb=1,providers={{"i",169625}},r=2}),
-q(56459,{lvl=50,pb=1,providers={{"i",169644}},r=1}),
-q(56446,{lvl=50,pb=1,providers={{"i",169624}},r=2}),
-q(56457,{lvl=50,pb=1,providers={{"i",169645}},r=1}),
-q(56448,{lvl=50,pb=1,providers={{"i",169626}},r=2}),
-q(56460,{lvl=50,pb=1,providers={{"i",169643}},r=1}),
-q(56451,{lvl=50,pb=1,providers={{"i",169629}},r=2}),
-q(56463,{lvl=50,pb=1,providers={{"i",169640}},r=1}),
-q(56456,{lvl=50,pb=1,providers={{"i",169634}},r=2}),
-q(56458,{lvl=50,pb=1,providers={{"i",169635}},r=1}),
-q(56453,{lvl=50,pb=1,providers={{"i",169631}},r=2}),
-q(56465,{lvl=50,pb=1,providers={{"i",169638}},r=1}),
-q(56449,{lvl=50,pb=1,providers={{"i",169627}},r=2}),
-q(56461,{lvl=50,pb=1,providers={{"i",169642}},r=1}),
-q(56452,{lvl=50,pb=1,providers={{"i",169630}},r=2}),
-q(56464,{lvl=50,pb=1,providers={{"i",169639}},r=1}),
-q(56444,{lvl=50,pb=1,providers={{"i",169623}},r=2}),
-q(56445,{lvl=50,pb=1,providers={{"i",169646}},r=1})}})}}),
+q(56454,{lvl=50,pb=1,qss={169632},r=2}),
+q(56466,{lvl=50,pb=1,qss={169637},r=1}),
+q(56450,{lvl=50,pb=1,qss={169628},r=2}),
+q(56462,{lvl=50,pb=1,qss={169641},r=1}),
+q(56455,{lvl=50,pb=1,qss={169633},r=2}),
+q(56467,{lvl=50,pb=1,qss={169636},r=1}),
+q(56447,{lvl=50,pb=1,qss={169625},r=2}),
+q(56459,{lvl=50,pb=1,qss={169644},r=1}),
+q(56446,{lvl=50,pb=1,qss={169624},r=2}),
+q(56457,{lvl=50,pb=1,qss={169645},r=1}),
+q(56448,{lvl=50,pb=1,qss={169626},r=2}),
+q(56460,{lvl=50,pb=1,qss={169643},r=1}),
+q(56451,{lvl=50,pb=1,qss={169629},r=2}),
+q(56463,{lvl=50,pb=1,qss={169640},r=1}),
+q(56456,{lvl=50,pb=1,qss={169634},r=2}),
+q(56458,{lvl=50,pb=1,qss={169635},r=1}),
+q(56453,{lvl=50,pb=1,qss={169631},r=2}),
+q(56465,{lvl=50,pb=1,qss={169638},r=1}),
+q(56449,{lvl=50,pb=1,qss={169627},r=2}),
+q(56461,{lvl=50,pb=1,qss={169642},r=1}),
+q(56452,{lvl=50,pb=1,qss={169630},r=2}),
+q(56464,{lvl=50,pb=1,qss={169639},r=1}),
+q(56444,{lvl=50,pb=1,qss={169623},r=2}),
+q(56445,{lvl=50,pb=1,qss={169646},r=1})}})}}),
 h(-28,{
 q(53982,{minReputation={2373,42000},qgs={154002},r=1,repeatable=1,g={
 i(169940,{b=1,minReputation={2373,42000},r=1,g={
@@ -139892,8 +139895,8 @@ n(201664,{coords={
 toy(206993,{b=1})}})}),
 h(-58,{
 n(207463,{coords={
-[2025]={{52.1,81.4}}},providers={{"i",208449}},sourceQuests={75986},g={
-i(208448,{b=1,description="Timer start right after you buy it",f=55,spellID=419543})}}),
+[2025]={{52.1,81.4}}},qis={208449},sourceQuests={75986},g={
+i(208448,{b=1,description="Timer starts right after you buy it.",f=55,spellID=419543})}}),
 n(209220,{coords={
 [2025]={{52.2,80.8}}},sourceQuests={76258,76356},g={
 r(16993,{b=1,cost={{"c",2003,250},{"i",12360,5},{"i",12655,5}},itemID=12837,requireSkill=164,skillID=2477}),
@@ -143760,7 +143763,8 @@ h(-55,{
 mnt(374157,{b=1,cost={{"i",204352,50}},itemID=192785,lvl=10})})}),
 h(-45,{
 ah(17739,{type="a",g={
-q(74381,{lvl=70,maps={2112}}),
+q(74381,{coords={
+[2112]={{61,26.6}}},lvl=70,qgs={201398}}),
 q(73076,{coords={
 [2112]={{60.8,26.4}}},lvl=70,qgs={201398},sourceQuests={74381},g={
 i(203646,{b=2,lvl=70,spellID=400684})}}),
@@ -157585,7 +157589,7 @@ q(86820,{coords={
 de(14359,{awp=110207,itemID=260582,spellID=1266582}),
 i(231769,{b=1}),
 i(236954,{b=1})}}),
-q(86456,{lvl=80,providers={{"i",234273}},sourceQuests={85037}}),
+q(86456,{lvl=80,qss={234273},sourceQuests={85037}}),
 hqt(90753,{coords={
 [2371]={{75.4,33.7}}},description="Dialogue becomes available after you accept 'An Elegy for a Silent World' (86456).",qgs={243653},sourceQuests={86456}}),
 q(86457,{coords={
@@ -161097,7 +161101,7 @@ q(81713,{coords={
 crit(69494,{achID=40799,id=14})}})}}),
 ah(221765,{type="i",g={
 q(84020,{coords={
-[2214]={{42.8,32.4}}},providers={{"i",226683}}}),
+[2214]={{42.8,32.4}}},qss={226683}}),
 q(84021,{coords={
 [2214]={{42.8,32.4}}},cost={{"i",219301,1}},qgs={213875},sourceQuests={84020}}),
 q(84023,{coords={
@@ -169343,7 +169347,7 @@ p(5031,{coords={
 [2509]={{38.1,30.7}}},crs={262247},itemID=270254,npcID=262247,spellID=1287592,g={
 crit(113421,{achID=62492,id=7})}})}),
 h(-29,{
-i(279345,{f=55,providers={{"n",263014},{"n",263015},{"n",263016}},g={
+i(279345,{b=1,f=55,providers={{"n",263014},{"n",263015},{"n",263016}},g={
 h(-88,{
 h(-89,{
 s(311029,279217,{f=3}),
@@ -169883,7 +169887,7 @@ o(651085,{minReputation={2772,10},type="AsSubGenericObject"})}})}}),
 q(96276,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96267}}),
 q(96273,{coords={
-[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96276,96305}}),
+[2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96276}}),
 q(96275,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96273}}),
 q(96271,{coords={
@@ -169891,11 +169895,15 @@ q(96271,{coords={
 q(96305,{coords={
 [2509]={{50.6,63.8}}},minReputation={2772,10},qgs={264611,268228},sourceQuests={96271},g={
 mnt(1292668,{itemID=273838,minReputation={2772,10}})}}),
+q(96349,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
+q(96352,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
+q(96354,{coords={
+[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(96360,{coords={
 [2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(96361,{coords={
-[2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
-q(96349,{coords={
 [2509]={{50.6,63.8}}},isDaily=1,minReputation={2772,10},qgs={264611,268228},sourceQuests={96305}}),
 q(97672,{coords={
 [2512]={{58.8,45}}},minReputation={2772,12},qgs={268228}}),
@@ -170850,7 +170858,7 @@ q(93670,{coords={
 [2512]={{66,38}}},isWorldQuest=1,g={
 i(260420)}}),
 q(94967,{coords={
-[2512]={{69.6,56.5}}},isWorldQuest=1,g={
+[2512]={{69.6,56.5}}},isWorldQuest=1,sourceQuests={93906},g={
 i(267085),
 ach(63633,{coords={
 [2512]={{69.3,52.3}}},crs={256872},g={
@@ -173351,8 +173359,8 @@ q(94883,{coords={
 p(5041,{itemID=271185,npcID=262985,spellID=1288774})}})}}),
 q(93792,{coords={
 [2437]={{43.1,69.2}}},lvl=83,qgs={256510},sourceQuests={91062}}),
-q(94839,{lvl=83,providers={{"i",263938}}}),
-q(94910,{lvl=83,providers={{"i",266440}}})}),
+q(94839,{lvl=83,qss={263938}}),
+q(94910,{lvl=83,qss={266440}})}),
 h(-46,{
 h(-19,{crs={242023,242024,242025,242026,242027,242028,242031,242032,242033,242034,242035,245691,245692,245975,247976},g={
 mnt(1261316,{b=1,itemID=257152,lvl=10}),

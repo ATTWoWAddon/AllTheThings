@@ -155,8 +155,10 @@ root(ROOTS.Housing, {
 				["qi"] = 274481,	-- Keepsake Corruption (QI!)
 				["groups"] = {
 					i(255712),	-- Purified Ancient Urn (DECOR!)
-					i(253703),	-- Purified Crude Hammer
+					i(253396),	-- Purified Crude Axe (DECOR!)
+					i(253703),	-- Purified Crude Hammer (DECOR!)
 					i(278696),	-- Purified Dracthyr Stein (DECOR!)
+					i(272142),	-- Purified Earthen Pot (DECOR!)
 					i(267355),	-- Purified Elven Mirror (DECOR!)
 					i(268943),	-- Purified Elven Glowlamp (DECOR!)
 					i(245993),	-- Purified Floating Lantern (DECOR!)
@@ -170,6 +172,8 @@ root(ROOTS.Housing, {
 					i(255652),	-- Purified Troll Loop (DECOR!)
 					i(256361),	-- Purified Troll Pendant (DECOR!)
 					i(252042),	-- Purified Troll Pitcher (DECOR!)
+					i(258540),	-- Purified Troll Ring (DECOR!)
+					i(244347),	-- Purified Troll Urn (DECOR!)
 				},
 			}),
 			q(98406, {	-- A Curated Gift
