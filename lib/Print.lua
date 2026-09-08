@@ -68,6 +68,7 @@ end
 local SkipTableFields = {
 	parent = 1,
 	sourceParent = 1,
+	symParent = 1,
 	__merge = 1,
 	window = 1,
 }
@@ -76,17 +77,17 @@ app.PrintTable = function(t,depth)
 	if not app.Debugging then return; end
 	if t == nil then print("nil"); return; end
 	local secret = issecretvalue(t) and "<secret>" or ""
-	if type(t) ~= "table" then print(type(t),secret,t); return; end
 	depth = depth or 0;
-	if depth == 0 then app._PrintTable = {}; end
 	local p = "";
 	for i=1,depth,1 do
 		p = p .. "-";
 	end
+	if type(t) ~= "table" then print(p,type(t),secret,t); return; end
 	if issecretvalue(t) then
 		print(p,secret,tostring(t))
 		return
 	end
+	if depth == 0 then app._PrintTable = {}; end
 	-- dont accidentally recursively print the same table
 	if not app._PrintTable[t] then
 		app._PrintTable[t] = true;
