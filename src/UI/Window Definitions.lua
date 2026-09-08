@@ -1905,7 +1905,6 @@ local FieldDefaults = {
 			-- app.PrintDebug("Window:SetData",self.Suffix,data.text)
 			data.window = self;
 			self.data = data;
-			self.missingData = nil
 		end
 	end,
 	ExpandData = function(self, expanded)
@@ -2008,13 +2007,6 @@ local FieldDefaults = {
 						data.back = 1;
 						rowData[#rowData + 1] = data;
 					end
-					if self.missingData then
-						-- an update on the same settings which moves the window to completion can play the sound
-						if visible and self.AllowCompleteSound and self._SettingsRefresh == app._SettingsRefresh then
-							app.Audio:PlayCompleteSound();
-						end
-						self.missingData = nil;
-					end
 					-- only add this info row if there is actually nothing visible in the list
 					-- always a header row
 					-- print("any data",#self.Container,#rowData,#data)
@@ -2025,12 +2017,9 @@ local FieldDefaults = {
 							description = L.NO_ENTRIES_DESC,
 						});
 					end
-				else
-					self._SettingsRefresh = app._SettingsRefresh
-					self.missingData = true;
 				end
 			else
-				self.missingData = nil;
+				self.PlayCompleteSound = true
 			end
 
 			-- app.PrintDebugPrior("Update:Done")
@@ -2185,6 +2174,21 @@ local FieldDefaults = {
 		self:RegisterRefreshCallback(...);
 	end,
 };
+local function CheckOpenWindowsForCompletion()
+	for suffix,window in pairs(app.Windows) do
+		-- app.PrintDebug("check window complete",suffix,window:IsVisible(),window.AllowCompleteSound,window.PlayCompleteSound,window.data.total,app.IsComplete(window.data))
+		if not window.PlayCompleteSound and window:IsVisible() and window.data.total > 0 and app.IsComplete(window.data) then
+			if window.AllowCompleteSound then
+				app.Audio:PlayCompleteSound()
+			end
+			window.PlayCompleteSound = true
+		end
+	end
+end
+-- When something is collected, fire a delayed check against open windows to see if any are freshly-100%
+app.AddEventHandler("OnThingCollected", function()
+	app.CallbackHandlers.DelayedCallback(CheckOpenWindowsForCompletion, 2)
+end)
 local DefaultEventHandlers = {
 	["Settings.OnSet"] = function(self,container,setting,value)
 		if container ~= "Tooltips" then return end
