@@ -799,6 +799,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(98548, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 2nd per week
 			q(98549, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 3rd per week
 			q(98550, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 4th per week
+			--q(98507),	-- prey completion, nightmare, 1st of week, eversong woods
 		})),
 		-- One-Time
 		n(QUESTS, {

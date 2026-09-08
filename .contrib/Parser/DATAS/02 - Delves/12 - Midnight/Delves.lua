@@ -1372,7 +1372,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			["isDaily"] = true,
 		}, {
 			q(95715, name(HEADERS.Map, GNARLDOR_ISLE)),	-- Gnarldor Isle
-			q(97064, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
+			q(97064, name(HEADERS.Object, 658087, {isWeekly=true})),	-- Abundantly Bountiful Heavy Trunk spwaned
 			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),
 	})),
