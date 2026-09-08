@@ -256,7 +256,6 @@ local function CacheInfo(t, field)
 			t.modID = nil;
 		end
 		local rawbonuses = rawget(t, "bonuses")
-		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if rawbonuses then
 			local bonusesString = #rawbonuses..":"..app.TableConcat(rawbonuses, nil, nil, ":")
 			itemLink = ("item:%d:::::::::::%s:%s:"):format(itemLink, modID or "", bonusesString)
@@ -270,6 +269,7 @@ local function CacheInfo(t, field)
 		else
 			itemLink = ("item:%d"):format(itemLink);
 		end
+		-- app.PrintDebug("default_link",itemLink)
 		-- save this link so it doesn't need to be built again
 		t.rawlink = itemLink
 		t.modItemID = nil

@@ -8,3 +8,6 @@ end
 
 -- DF
 i(204255);	-- Cracked Titan Gem
+
+-- MID
+i(279345)	-- Venom-Drenched Sack
