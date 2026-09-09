@@ -1561,7 +1561,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						["sourceAchievements"] = { 426 },	-- Warglaives of Azzinoth
 						["groups"] = {
 							i(150372, {	-- Arsenal: The Warglaives of Azzinoth
-								i(151137),	-- Warglaive of Azzinoth
+								["_doautomation"] = false,
+								["groups"] = {
+									i(151137),	-- Warglaive of Azzinoth
+								},
 							}),
 						},
 					}),
