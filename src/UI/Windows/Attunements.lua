@@ -177,7 +177,7 @@ app:CreateWindow("Attunements", {
 					icon = 236402,
 					isRaid = true,
 				}),
-				app.CreateMap(340, {	-- Black Temple
+				app.CreateMap(339, {	-- Black Temple
 					attunementQuestID = 10985,	-- A Distraction for Akama
 					icon = 236415,
 					isRaid = true,
