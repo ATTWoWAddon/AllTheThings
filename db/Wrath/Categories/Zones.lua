@@ -40016,7 +40016,7 @@ q(12827,{coords={
 q(12937,{coords={
 [120]={{31.4,38}}},qgs={29801},sourceQuests={12930},u=30}),
 q(12888,{coords={
-[120]={{39.2,42}}},providers={{"i",41267}},qgs={29724},requireSkill=202,u=30}),
+[120]={{39.2,42}}},qgs={29724},qss={41267},requireSkill=202,u=30}),
 q(13064,{coords={
 [120]={{33.4,58}}},qgs={29445},sourceQuests={12886},u=30}),
 q(12868,{coords={

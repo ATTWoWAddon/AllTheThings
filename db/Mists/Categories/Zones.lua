@@ -62883,7 +62883,7 @@ q(12827,{coords={
 q(12937,{coords={
 [120]={{31.4,38}}},qgs={29801},sourceQuests={12930},u=30}),
 q(12888,{coords={
-[120]={{39.2,42}}},providers={{"i",41267}},qgs={29724},requireSkill=202,u=30}),
+[120]={{39.2,42}}},qgs={29724},qss={41267},requireSkill=202,u=30}),
 q(13064,{coords={
 [120]={{33.4,58}}},qgs={29445},sourceQuests={12886},u=30}),
 q(12868,{coords={
@@ -66806,7 +66806,7 @@ n(70001,{coords={
 [504]={{48,25.5}},
 [505]={{42.9,36.3}}},isWeekly=1,u=52,g={
 crit(22827,{achID=8103,id=8,u=52})}}),
-n(69809,{providers={{"i",94233}},u=52,g={
+n(69809,{cost={{"i",94233,1}},u=52,g={
 crit(22837,{achID=8110,id=2,u=52})}}),
 n(69999,{coords={
 [504]={{61.4,49.5}}},isWeekly=1,u=52,g={
@@ -66814,7 +66814,7 @@ crit(22825,{achID=8103,id=6,u=52})}}),
 n(69998,{coords={
 [504]={{53.7,53.1}}},isWeekly=1,u=52,g={
 crit(22824,{achID=8103,id=5,u=52})}}),
-n(69800,{providers={{"i",94130}},u=52,g={
+n(69800,{cost={{"i",94130,1}},u=52,g={
 crit(22836,{achID=8110,id=1,u=52})}}),
 n(50358,{coords={
 [504]={{48.4,86.4},{50.2,90.8}}},isWeekly=1,u=52,g={
@@ -66844,7 +66844,7 @@ n(70530,{coords={
 i(95566,{b=1,q=3,u=52}),
 i(94158,{b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",q=3,sym={{"select","itemID",87218},{"groupfill"}},u=52}),
 i(94159,{b=1,description="Can contain all sorts of herbs, ore, and cloth.",q=2,u=52})}}),
-n(69961,{providers={{"i",95350}},u=52,g={
+n(69961,{cost={{"i",95350,1}},u=52,g={
 crit(22838,{achID=8110,id=3,u=52})}}),
 n(69767,{coords={
 [504]={{53.13,47.07}}},cost={{"i",94221,3}},crs={70197},u=52,g={

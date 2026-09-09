@@ -2635,7 +2635,7 @@ i(257382,{f=55,spellID=1261503}),
 i(257380,{f=55,spellID=1261502}),
 i(257381,{f=55,spellID=1261502}),
 i(257379,{f=55,spellID=1261502}),
-i(268297,{b=1,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584515},{"o",584518}},spellID=1282128}),
+i(268297,{b=1,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584515},{"o",584517},{"o",584518},{"o",584519}},spellID=1282128}),
 i(265714,{lvl=90}),
 i(262586,{b=1,providers={{"o",584515},{"o",584517},{"o",623258}}}),
 cu(2803,{rwp=130000})}),
@@ -2683,7 +2683,7 @@ de(14822,{itemID=263036,spellID=1269698}),
 de(14828,{itemID=263042,spellID=1269704}),
 de(15064,{itemID=263233,spellID=1270134})}}),
 h(-56,{
-o(584514,{providers={{"i",254250}},VerifyLoot={"armor","weapon","miscellaneous"},g={
+o(584514,{cost={{"c",3028,1}},providers={{"i",254250}},VerifyLoot={"armor","weapon","miscellaneous"},g={
 i(273000)}}),
 o(623258,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584517,{providers={{"i",257386}},VerifyLoot={"armor","weapon","miscellaneous"}}),
