@@ -988,13 +988,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				-- Cosmetics
-				i(224459, {	-- Tusks of Mannoroth
-					["cost"] = {
-						{ "c", BRONZE, 38500 },
-						{ "i", BONES_OF_MANNOROTH, 20 }
-					},
-					["timeline"] = { "removed 10.2.7.55142" },
-				}),
 				iensemble(227550, {	-- Tusks of Mannoroth
 					["cost"] = {
 						{ "c", BRONZE, 38500 },
