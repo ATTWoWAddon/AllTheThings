@@ -205,9 +205,7 @@ namespace ATT
 
             var builder = new StringBuilder();
             var keys = db.Keys.ToList();
-            Trace.Write("Found ");
-            Trace.Write(keys.Count());
-            Trace.WriteLine("Dirty objects. Exporting now...");
+            Framework.LogDebug($"Found {keys.Count} Dirty objects. Exporting now...");
             keys.Sort();
             builder.AppendLine("{");
             foreach (var key in keys)

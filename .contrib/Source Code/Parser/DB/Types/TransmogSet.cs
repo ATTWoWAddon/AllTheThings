@@ -6,14 +6,16 @@ namespace ATT.DB.Types
     /// https://wago.tools/db2/TransmogSet
     /// </summary>
     [DataModule]
-    public class TransmogSet : IDBType
+    public class TransmogSet : IDBType, IWagoQuestID, IWagoTransmogSetID
     {
         [ExportableData("setID")]
         public long ID { get; set; }
+        public long TransmogSetID => ID;
         [Localize]
         public string Name_lang { get; set; }
         public long ClassMask { get; set; }
         public long TrackingQuestID { get; set; }
+        public long QuestID => TrackingQuestID;
         public long Flags { get; set; }
         public long TransmogSetGroupID { get; set; }
         public long ItemNameDescriptionID { get; set; }

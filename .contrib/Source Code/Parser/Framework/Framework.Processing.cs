@@ -2128,6 +2128,12 @@ namespace ATT
                         break;
                 }
             }
+
+            // Warn about Encounters which have 'qgs'
+            if (data.TryGetValue("qgs", out List<object> qgs))
+            {
+                LogWarn($"Encounters should not have 'qgs' (quest givers) assigned! {ToJSON(qgs)}", data);
+            }
         }
 
         private static void Validate_Criteria(IDictionary<string, object> data, IDictionary<string, object> parent)
@@ -2343,7 +2349,6 @@ namespace ATT
             if (!data.TryGetValue("achID", out long achID) ||
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
-
 
             // Guild Achievements are not collectible
             if (data.TryGetValue("isGuild", out bool isGuild) && isGuild)
@@ -3340,6 +3345,19 @@ namespace ATT
 
             // Ensembles will be handled specially for now and must incorporate their Spell information ahead of the typical parallel sequence
             Incorporate_Spell(data);
+
+            // If we've applied a questID to this ensemble item, but there's no tmogSetID, do alternate check on the tmogSetID's
+            // TrackingQuestID to see if it matches the questID on the ensemble, and then note that we will use that instead
+            if (data.TryGetValue("questID", out long questID) && !data.ContainsKey("tmogSetID"))
+            {
+                var firsttmogSetAssociated = WagoData.EnumerateForQuestID<TransmogSet>(questID).FirstOrDefault();
+                if (firsttmogSetAssociated != null)
+                {
+                    long questtmogSetID = firsttmogSetAssociated.ID;
+                    data["tmogSetID"] = questtmogSetID;
+                    LogDebug($"INFO: Assigned TransmogSet tmogSetID={questtmogSetID} associated to questID={questID}", data);
+                }
+            }
 
             if (data.TryGetValue("tmogSetID", out long tmogSetID) && WagoData.TryGetValue(tmogSetID, out TransmogSet tmogSet))
             {
@@ -4479,13 +4497,30 @@ namespace ATT
                 }
             }
 
-            // Titles under Guild Achievements (Hall of Fame) are not 'really' collectible since they are tied to the Guild
-            if (data.TryGetValue("titleID", out long titleID)
-                && data.TryGetValue("__parent", out IDictionary<string, object> parent)
-                && parent.TryGetValue("isGuild", out bool isGuild) && isGuild)
+            // Comparisons to parent data
+            if (data.TryGetValue("__parent", out Data parent))
             {
-                data["collectible"] = false;
-                LogDebug($"INFO: HoF Guild Achievement Title marked uncollectible: achID={titleID}", data);
+                // Titles under Guild Achievements (Hall of Fame) are not 'really' collectible since they are tied to the Guild
+                if (data.TryGetValue("titleID", out long titleID)
+                    && parent.TryGetValue("isGuild", out bool isGuild) && isGuild)
+                {
+                    data["collectible"] = false;
+                    LogDebug($"INFO: HoF Guild Achievement Title marked uncollectible: titleID={titleID}", data);
+                }
+            }
+
+            // Check if any basic Item groups actually can map to an EnsembleItem instead
+            if (data.TryGetValue("itemID", out itemID)
+                && !data.ContainsAnyKey("type", "_doautomation", "_unsorted", "_nyi"))
+            {
+                var clonedItem = new Dictionary<string, object>(data);
+                clonedItem["type"] = "ensembleID";
+                var keys = clonedItem.Keys.ToArray();
+                Incorporate_Ensemble(clonedItem);
+                if (clonedItem.ContainsKey("tmogSetID"))
+                {
+                    LogWarn($"Basic ItemID={itemID} includes data which represents an Ensemble. Use iensemble() instead for automated generation or add '_doautomation=false' to ignore it.", clonedItem);
+                }
             }
         }
 

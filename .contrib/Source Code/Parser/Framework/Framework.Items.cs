@@ -1081,7 +1081,19 @@ namespace ATT
 
                     // Additonally, as of 11.2 we now have Ensembles which contain multiple Sources for the same ItemID, so we need
                     // to try and determine the proper modID to generate accurate in-game tooltips for these ensemble-based items
-                    data["modID"] = appearanceData.ExpectedModID;
+                    var modID = appearanceData.ExpectedModID;
+                    if (modID != 0)
+                    {
+                        data["modID"] = modID;
+                    }
+                    else
+                    {
+                        var bonusID = appearanceData.ExpectedBonusID;
+                        if (bonusID != 0)
+                        {
+                            data["bonusID"] = bonusID;
+                        }
+                    }
 
                     if (itemModifiedAppearances.Count == 1)
                     {
