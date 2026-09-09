@@ -34,6 +34,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					--title(XXX),	-- <Name>, Light's Faithful
 				}),
 			}),
+			n(EVENT_COMPLETION, {
+				i(277283),	-- Aqir Research Satchel
+			}),
 			header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
 				["lore"] = "Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",
 				["icon"] = 463478,

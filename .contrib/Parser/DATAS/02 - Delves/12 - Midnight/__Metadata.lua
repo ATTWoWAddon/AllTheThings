@@ -1,3 +1,7 @@
+---------------------------------------------------
+--          D E L V E S      M O D U L E         --
+---------------------------------------------------
+
 -- Common Delve Provider Sets
 DATAGROUP.MID.DELVES.ARMOR_PROVIDERS = {
 	{ "o", 658087 },	-- Abundantly Bountiful Heavy Trunk

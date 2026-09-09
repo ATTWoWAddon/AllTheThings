@@ -1,20 +1,7 @@
---DELVES_MID_S2 = createHeader({
---	readable = "Delves MID S2",
---	icon = 1604168,
---	text = {
---		en = "Delves MID S2",
---		-- TODO: de = "",
---		es = "Profundidades MID T2",
---		mx = "Abismos MID T2",
---		-- TODO: fr = "",
---		-- TODO: it = "",
---		-- TODO: ko = "",
---		-- TODO: pt = "",
---		ru = "Вылазки MID 2 сезон",
---		cn = "至暗之夜地下堡第二季",
---		tw = "至暗之夜探究第二季",
---	},
---});
+---------------------------------------------------
+--          D E L V E S      M O D U L E         --
+---------------------------------------------------
+
 --DELVES_MID_S3 = createHeader({
 --	readable = "Delves MID S3",
 --	icon = 1604168,

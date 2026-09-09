@@ -40781,6 +40781,8 @@ crit(116681,{achID=63659,id=2})}),
 ach(63519,{
 crit(116096,{achID=63519,id=1,questID=95211}),
 crit(116097,{achID=63519,id=2,questID=95813})})}),
+h(-29,{
+i(277283,{f=55})}),
 ah(2838,{icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",g={
 faction(2838),
 h(-12,{

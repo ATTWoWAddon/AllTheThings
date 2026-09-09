@@ -2943,6 +2943,10 @@ local AccountWideQuestsDB = {
 	98406,	-- A Curated Gift
 	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
 	98515,	-- Vaults of Atal'Utek: A Toxic Tour
+	98740,	-- Unlock Auction House [Sporebearer Fungal Strider]
+	98741,	-- Sporebearer Fungal Strider
+	98742,	-- (Related to Sporebearer Fungal Strider)
+	98743,	-- Unlock Transmogrifier [Sporebearer Fungal Strider]
 	98787,	-- Quest #98787*
 	98848,	-- Delver's Cosmetic Surprise Bag
 

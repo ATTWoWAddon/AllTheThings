@@ -4270,5 +4270,21 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(62286),	-- Zul'jan kills (Heroic Altar of Fangs)
 			ach(62287),	-- Zul'jan kills (Mythic Altar of Fangs)
 		})),
+
+		-- 12.1.5
+		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
+			-- 12.1.5.69594
+			-- Delves
+			ach(63730),	-- Total Kindo'jan's Labyrinth Chambers completed
+			ach(63731),	-- Total Kindo'jan Kills
+			-- Misc
+			ach(63689),	-- [DNT]Midnight Keystone Myth: Season 2 Personal Achievement
+			ach(63700),	-- [DNT] Hallow's End Pepe Decor
+			-- Raids
+			ach(63839),	-- Kith'ix (Raid Finder The Unbinding of Kith'ix)
+			ach(63840),	-- Kith'ix (Normal The Unbinding of Kith'ix)
+			ach(63841),	-- Kith'ix (Heroic The Unbinding of Kith'ix)
+			ach(63842),	-- Kith'ix (Mythic The Unbinding of Kith'ix)
+		})),
 	}),
 });
