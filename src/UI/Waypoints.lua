@@ -16,6 +16,49 @@ local WaypointRunner = app.CreateRunner("waypoint");
 WaypointRunner.SetPerFrameDefault(5)
 local __TomTomWaypointCache = setmetatable({}, app.MetaTable.AutoTableOfTablesOfTables);
 local __TomTomWaypointCount, __PlottedGroup;
+-- Determine the best (closest) waypoint compared to player location
+local function PlotBestWaypoint()
+    local pmap, px, py = app.GetPlayerPosition()
+
+    local bestMap, bestX, bestY
+    local bestDist = 999999
+
+	-- app.PrintDebug("check best coord for player loc",pmap,px,py)
+    for mapID, c in pairs(__TomTomWaypointCache) do
+        for x, d in pairs(c) do
+            for y, datas in pairs(d) do
+                local dist
+                if mapID == pmap then
+                    -- Same map → direct Euclidean distance
+                    dist = (px - x/10)^2 + (py - y/10)^2
+					-- app.PrintDebug("on map dist",dist,"for",px,x/10,py,y/10)
+                else
+                    -- Different map → treat as "far but valid"
+                    dist = 999999 - 1
+					-- app.PrintDebug("other map dist",dist)
+                end
+
+                if dist < bestDist then
+                    bestDist = dist
+                    bestMap = mapID
+                    bestX = x/10
+                    bestY = y/10
+					-- app.PrintDebug("new best coord @ dist",bestDist,bestMap,bestX,bestY)
+                end
+            end
+        end
+    end
+
+    if bestMap then
+        C_SuperTrack.SetSuperTrackedUserWaypoint(false)
+        C_Map.ClearUserWaypoint()
+        local mapPoint = UiMapPoint.CreateFromCoordinates(bestMap, bestX / 100, bestY / 100)
+		-- app.PrintDebug("plotting waypoint in map",bestMap)
+		-- app.PrintTable(mapPoint)
+        C_Map.SetUserWaypoint(mapPoint)
+        C_SuperTrack.SetSuperTrackedUserWaypoint(true)
+    end
+end
 local function PlotCachedCoords()
 	if TomTom then
 		-- app.PrintDebug("WP:TomTom:Plot",__PlottedGroup.text,__TomTomWaypointCount)
@@ -94,23 +137,7 @@ local function PlotCachedCoords()
 	elseif C_SuperTrack then
 		-- app.PrintDebug("WP:C_SuperTrack:Plot",__PlottedGroup.text,__TomTomWaypointCount)
 		if C_SuperTrack.SetSuperTrackedUserWaypoint and C_Map.SetUserWaypoint then
-			-- try to track the first available waypoint in the cache
-			for mapID,c in pairs(__TomTomWaypointCache) do
-				for x,d in pairs(c) do
-					for y,datas in pairs(d) do
-						C_SuperTrack.SetSuperTrackedUserWaypoint(false);
-						C_Map.ClearUserWaypoint();
-						local mapPoint = UiMapPoint.CreateFromCoordinates(mapID or C_Map.GetBestMapForUnit("player") or 1, x/1000, y/1000);
-						-- app.PrintDebug("WP:SuperTrack")
-						-- app.PrintTable(mapPoint)
-						C_Map.SetUserWaypoint(mapPoint);
-						C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-						break;
-					end
-					break;
-				end
-				break;
-			end
+			PlotBestWaypoint()
 		end
 		-- or navigate by active quest
 		if __PlottedGroup.questID and C_QuestLog_IsOnQuest(__PlottedGroup.questID) then
