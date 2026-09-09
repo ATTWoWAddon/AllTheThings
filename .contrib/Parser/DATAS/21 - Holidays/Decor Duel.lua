@@ -127,121 +127,74 @@ root(ROOTS.Holidays,
 				}),
 			}),
 			n(VENDORS, {
+				-- #if before 12.1
 				n(264056, {	-- Disguised Decor Duel Vendor <Illusionary Coin Trader>
 					["coord"] = { 31.6, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["timeline"] = { ADDED_12_0_5 },
-					["_forcetimeline"] = true,
 					["groups"] = {
 						i(272445, {	-- Decorative Dornogal Opal (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,200},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,10},
-								-- #ENDIF
 							},
 						}),
 						i(272442, {	-- Empty Wooden Toolbox (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,300},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,20},
-								-- #ENDIF
 							},
 						}),
 						i(272446, {	-- Large Decorative Dornogal Opal (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,200},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,10},
-								-- #ENDIF
 							},
 						}),
 						i(269636, {	-- Sin'dorei Cookpot Lid (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,250},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,15},
-								-- #ENDIF
 							},
 						}),
 						i(269613, {	-- Sin'dorei Covered Cookpot (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,350},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,30},
-								-- #ENDIF
 							},
 						}),
 						i(269641, {	-- Sin'dorei Display Case (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,400},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,50},
-								-- #ENDIF
 							},
 						}),
 						i(271162, {	-- Sin'dorei Garden Swing (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,750},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,120},
-								-- #ENDIF
 							},
 						}),
 						i(269614, {	-- Sin'dorei Open Cookpot (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,250},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,15},
-								-- #ENDIF
 							},
 						}),
 						i(268457, {	-- Sin'dorei Tiffin-Style Lamp (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,400},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,50},
-								-- #ENDIF
 							},
 						}),
 						i(272444, {	-- Small Decorative Dornogal Opal (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,200},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,10},
-								-- #ENDIF
 							},
 						}),
 						i(272441, {	-- Small Lumber Pile (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,200},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,10},
-								-- #ENDIF
 							},
 						}),
 						i(272443, {	-- Suramar Arcfruit Bowl (DECOR!)
 							["cost"] = {
-								-- #IF AFTER 12.1
-								{"c",VOIDLIGHT_MARL,300},
-								-- #ELSE
 								{"c",ILLUSIONARY_COIN,20},
-								-- #ENDIF
 							},
 						}),
 					},
 				}),
+				-- #endif
 				n(256084, {	-- Gamesmaster Fleurian <Illusionary Coin Trader>
 					["coord"] = { 31.6, 76.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["groups"] = {
