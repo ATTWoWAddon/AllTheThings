@@ -151,14 +151,6 @@ root(ROOTS.Unsorted, {
 			i(278113),	-- DNT Ula'tek Pole Dummy D
 			i(278114),	-- DNT Ula'tek Pole Dummy E
 			i(278115),	-- DNT Ula'tek Pole Dummy F
-			i(278283),	-- Nebulous Voidcache: Entombed Sentinels
-			i(278284),	-- Nebulous Voidcache: Ula'tek
-			i(278285),	-- Nebulous Voidcache: Soulcoiler Nek'zali
-			i(278286),	-- Nebulous Voidcache: Tortollan Explorers
-			i(278287),	-- Nebulous Voidcache: Vashnik
-			i(278288),	-- Nebulous Voidcache: Sszorak
-			i(278289),	-- Nebulous Voidcache: The Twin Fangs
-			i(278290),	-- Nebulous Voidcache: The Bargained Crown
 			i(278335),	-- Cerulean Pearl
 			i(278576),	-- Crested Violet Leafmimic
 			i(278577),	-- Nightfall Assassin's Tunic

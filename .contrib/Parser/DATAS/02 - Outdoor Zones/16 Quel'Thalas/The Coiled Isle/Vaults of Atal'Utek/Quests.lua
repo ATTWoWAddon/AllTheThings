@@ -168,7 +168,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						q(95953, {	-- Temple Patrol: Congealed Venom
 							["qg"] = 263333,	-- Er'inye
 							["coord"] = { 44.1, 30.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-							["groups"] = { i(271693) },	-- Congealed Venom (QO!)
+							["groups"] = {
+								o(645579, {	-- Congealed Bile
+									i(271693),	-- Congealed Venom (QI!)
+								}),
+							},
 						}),
 						q(96017, {	-- Temple Patrol: Dragged Below
 							["qg"] = 263411,	-- Desperate Warrior
@@ -197,6 +201,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								271868,	-- Splintering Spear (QI!)
 								271867,	-- Venom-Etched Sword (QI!)
 								271866,	-- Well-Worn Hatchet (QI!)
+							},
+							["groups"] = {
+								o(649016, {	-- Venom-Etched Sword
+									i(271867),	-- Venom-Etched Sword (QI!)
+								}),
 							},
 						}),
 						q(95614, {	-- Temple Patrol: Siphon Venom

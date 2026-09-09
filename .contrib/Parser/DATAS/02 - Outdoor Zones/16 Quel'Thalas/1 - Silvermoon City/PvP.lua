@@ -208,6 +208,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(QUESTS, {
 				q(93645),	-- looted Spectral Battle Chest, first time of day/week/in zone
+				q(97028, { ["timeline"] = { ADDED_12_1_0 } }),	-- looted Spectral Battle Chest
 			}),
 		}),
 	}),

@@ -145,7 +145,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(236950),	-- Mote of Primal Energy
 		i(236952),	-- Mote of Pure Void
 		i(236951),	-- Mote of Wild Magic
-		i(251285),	-- Petrified Root (TODO: probably delves only)
+		i(251285),	-- Petrified Root
 		i(275288, { ["timeline"] = { ADDED_12_1_0 } }),	-- Photosynthesized Scrap
 		i(242640),	-- Plant Protein
 		i(242639),	-- Practically Pork

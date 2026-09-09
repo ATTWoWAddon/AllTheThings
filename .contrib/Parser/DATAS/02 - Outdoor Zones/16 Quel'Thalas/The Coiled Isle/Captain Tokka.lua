@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),
 								i(278391, {	-- Eerie Bauble
-									["description"] = "Throw at a pool of fish to summor an eldritch fishy questgiver",
+									["description"] = "Throw at a pool of fish to convert it to an Abyssal Swirl.",
 									["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 									["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 								}),

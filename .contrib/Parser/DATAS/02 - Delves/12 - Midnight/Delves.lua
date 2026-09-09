@@ -1331,7 +1331,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					},
 				}),
 				q(94909, {	-- Blessings of Pestilence (TODO: unsure if it exist only here)
-					["provider"] = { "i", 266438 },	-- Idol of Pestilence
+					["qs"] = 266438,	-- Idol of Pestilence (QS!)
 				}),
 			}),
 			n(TREASURES, {
@@ -1349,9 +1349,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				}),
 			}),
 			n(REWARDS, {
-				filter(MISC, {
-					i(266438),	-- Idol of Pestilence (QS!/QI!)
-				}),
+				i(266438),	-- Idol of Pestilence (QS!)
 			}),
 		},
 	}),

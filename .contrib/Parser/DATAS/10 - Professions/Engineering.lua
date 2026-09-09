@@ -1188,7 +1188,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					title(744),	-- Thalassian Engineer <Name>
 				},
 			}),
-			ach(60888),	-- Pushing My Buttons
+			ach(60888, {	-- Pushing My Buttons
+				["cost"] = { { "i", 248138, 1 } },	-- 1x Curious Red Button
+				["cr"] = 245615,	-- Small Red Button
+			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.ENGINEERING, 1 }}

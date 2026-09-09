@@ -405,23 +405,29 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				n(QUESTS, {
 				}),
 				BossOnly(NEKZALI, {
+					i(278285, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Soulcoiler Nek'zali
 					i(280305),	-- Soulcoil Remnant (PET!)
 					i(279115),	-- Soulcoiler's Ritual Candle (DECOR!)
 					i(281227),	-- Soulcoiler's Rush'kah (COSMETIC!)
 				}),
 				BossOnly(ENTOMBED, {
+					i(278283, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Entombed Sentinels
 					i(264716),	-- Hexed Tomb Brazier (DECOR!) [NYI??]
 				}),
 				BossOnly(VASHNIK, {
+					i(278287, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Vashnik
 					i(272361),	-- Venomous Pyre (DECOR!)
 				}),
 				BossOnly(EXPLORERS, {
 					i(279118),	-- Lost Explorers Mailbox (DECOR!)
+					i(278286, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Tortollan Explorers
 				}),
 				BossOnly(SSZORAK, {
+					i(278288, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Sszorak
 					i(244343),	-- Vessel of the Howling Ossuary (DECOR!) [Check]
 				}),
 				BossOnly(TWIN_FANGS, {
+					i(278289, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: The Twin Fangs
 					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 					i(279122),	-- Venom-Fanged Font (DECOR)
 				}),
@@ -431,10 +437,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(279449, {	-- Hex Troll Mask Fragment
 						i(275937),	-- Hex Lord's Visage (COSMETIC!)
 					}),
+					i(278290, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: The Coiled Alter
 				}),
 				BossOnly(ULATEK, {
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
 					i(278340),	-- Blighted Pearl (CI!)
+					i(278284, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Ula'tek
 					i(279127, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Argent Trophy (DECOR!)
 				}),
 			}),
@@ -627,6 +635,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			-- LFR
 			hqt(98080, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98092, name(HEADERS.NPC, 266538)),	-- Shriekcoil
+			hqt(98088, name(HEADERS.Encounter, COILED_ALTAR)),	-- Coiled Altar
 			-- N
 			hqt(98083, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98079, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
