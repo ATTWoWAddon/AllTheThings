@@ -2,8 +2,26 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
-	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
+AQIR_INVASIONS = createHeader({
+	readable = "Aqir Invasions",
+	icon = 463478,
+	text = {
+		en = "Aqir Invasions",
+		--de = "Aqir Invasions",
+		--es = "Aqir Invasions",
+		--mx = "Aqir Invasions",
+		--fr = "Aqir Invasions",
+		--it = "Aqir Invasions",
+		--ko = "Aqir Invasions",
+		--pt = "Aqir Invasions",
+		--ru = "Aqir Invasions",
+		--cn = "Aqir Invasions",
+		--tw = "Aqir Invasions",
+	},
+});
+
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
+	n(AQIR_INVASIONS, {
 		header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
 			["lore"] = "Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",
 			["icon"] = 463478,
