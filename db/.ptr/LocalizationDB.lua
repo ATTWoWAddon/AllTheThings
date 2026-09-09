@@ -1783,6 +1783,7 @@ localize(L.HEADER_NAMES, {
 	[-787] = "Maruukai Endeavor",
 	[-788] = "Tortollan Endeavor",
 	[-789] = "Kobold Endeavor",
+	[-790] = "Aqir Invasions",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2562,6 +2563,7 @@ localize(L.HEADER_ICONS, {
 	[-787] = 4578413,
 	[-788] = 2065576,
 	[-789] = 2061718,
+	[-790] = 463478,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

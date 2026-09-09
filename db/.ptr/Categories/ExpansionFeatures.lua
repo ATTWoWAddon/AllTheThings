@@ -40987,6 +40987,26 @@ ach(62872,{awp=120100,rwp=120200,g={
 i(274707,{awp=120001})}}),
 ach(63473,{awp=120100,g={
 i(279997,{f=55,questID=98217,spellID=1307442})}})}}),
+h(-790,{awp=120105,g={
+ah(2838,{icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",g={
+faction(2838),
+h(-12,{
+ach(63657,{minReputation={2838,20}})}),
+h(-58,{
+n(266188,{coords={
+[2393]={{39.3,80.3}}},g={
+p(5068,{cost={{"c",3316,1000}},itemID=274927,minReputation={2838,2},npcID=265755,spellID=1295663}),
+de(25305,{cost={{"c",3316,250}},itemID=275873,minReputation={2838,2},spellID=1298042}),
+de(25303,{cost={{"c",3316,250}},itemID=275869,minReputation={2838,2},spellID=1298038}),
+p(5066,{cost={{"c",3316,1000}},itemID=274923,minReputation={2838,3},npcID=265740,spellID=1295644}),
+de(25306,{cost={{"c",3316,250}},itemID=275879,minReputation={2838,3},spellID=1298048}),
+de(25302,{cost={{"c",3316,250}},itemID=275867,minReputation={2838,3},spellID=1298036}),
+p(5100,{cost={{"c",3316,2000}},itemID=276927,minReputation={2838,4},npcID=268483,spellID=1301393}),
+de(25304,{cost={{"c",3316,500}},itemID=275871,minReputation={2838,4},spellID=1298040}),
+de(25301,{cost={{"c",3316,500}},itemID=275865,minReputation={2838,4},spellID=1298034}),
+de(27216,{cost={{"c",3316,1000}},itemID=280050,minReputation={2838,5},spellID=1307620}),
+mnt(1301331,{cost={{"c",3316,2500}},itemID=276926,minReputation={2838,5}}),
+toy(275039,{cost={{"c",3316,2500}},minReputation={2838,5}})}})})}})}}),
 h(-758,{awp=120005,g={
 h(-742,{
 faction(2792),

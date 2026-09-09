@@ -164531,25 +164531,6 @@ i(244883,{awp=110200,b=1,f=55,lvl=80,sym={{"select","itemID",235639},{"pop"}}}),
 cu(2815)})}}),
 m(2537,{awp=120000,icon=7488399,lore="Quel'Thalas is a forested area in northern Lordaeron. It is ruled by the blood elves, descendants of the kingdom's Highborne founders, and is known as the Land of Eternal Spring. Its capital is Silvermoon City.",lvl=80,g={
 m(2393,{awp=120001,icon=135761,isRaid=1,lore="Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",maps={2443},g={
-ah(2838,{awp=120105,icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",g={
-faction(2838),
-h(-12,{
-ach(63657,{minReputation={2838,20}})}),
-h(-58,{
-n(266188,{coords={
-[2393]={{39.3,80.3}}},g={
-p(5068,{cost={{"c",3316,1000}},itemID=274927,minReputation={2838,2},npcID=265755,spellID=1295663}),
-de(25305,{cost={{"c",3316,250}},itemID=275873,minReputation={2838,2},spellID=1298042}),
-de(25303,{cost={{"c",3316,250}},itemID=275869,minReputation={2838,2},spellID=1298038}),
-p(5066,{cost={{"c",3316,1000}},itemID=274923,minReputation={2838,3},npcID=265740,spellID=1295644}),
-de(25306,{cost={{"c",3316,250}},itemID=275879,minReputation={2838,3},spellID=1298048}),
-de(25302,{cost={{"c",3316,250}},itemID=275867,minReputation={2838,3},spellID=1298036}),
-p(5100,{cost={{"c",3316,2000}},itemID=276927,minReputation={2838,4},npcID=268483,spellID=1301393}),
-de(25304,{cost={{"c",3316,500}},itemID=275871,minReputation={2838,4},spellID=1298040}),
-de(25301,{cost={{"c",3316,500}},itemID=275865,minReputation={2838,4},spellID=1298034}),
-de(27216,{cost={{"c",3316,1000}},itemID=280050,minReputation={2838,5},spellID=1307620}),
-mnt(1301331,{cost={{"c",3316,2500}},itemID=276926,minReputation={2838,5}}),
-toy(275039,{cost={{"c",3316,2500}},minReputation={2838,5}})}})})}}),
 flt(101,{
 p(4912,{b=1,coords={
 [2393]={{28.7,75.6},{29,81.4},{31.8,81.2},{32.4,75.4}}},crs={254885},itemID=258660,npcID=254885,spellID=1263739}),

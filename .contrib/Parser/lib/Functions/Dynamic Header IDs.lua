@@ -25,6 +25,7 @@ HeaderAssignments = {
 	["Anima Conductor"] = -152,
 	["Apprentice"] = -614,
 	["April"] = -327,
+	["Aqir Invasions"] = -790,
 	["Arcane Sanctum"] = -124,
 	["Archaeology: Arakkoa"] = -491,
 	["Archaeology: Demonic"] = -492,
@@ -769,4 +770,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -790
+NextHeaderID = -791
