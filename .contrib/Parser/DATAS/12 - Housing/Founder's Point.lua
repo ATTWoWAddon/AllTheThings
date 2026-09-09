@@ -277,7 +277,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 				["groups"] = { i(246255) },	-- Bel'ameth Large Platform (DECOR!)
 			}),
 		}));
-		-- TODO: Instead of duplicate rewards on vendors + source quest, maybe we can link them via crs and rely on Filler? need to test...
 		n(VENDORS, {
 			n(257297, {	-- "Fen" Rucket <Artisanal Room "Planner">
 				["coord"] = { 63.6, 79.6, FOUNDERS_POINT },
@@ -296,6 +295,9 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			}),
 			n(255216, {	-- Balen Starfinder <Decor Vendor>
 				["coord"] = { 52.2, 37.8, FOUNDERS_POINT },
+			}),
+			n(257321, {	-- Devin Slatesmith <Decor Vendor>
+				["coord"] = { 52.0, 38.6, FOUNDERS_POINT },
 			}),
 			n(255213, {	-- Faarden the Builder <Decor Vendor>
 				["coord"] = { 52.0, 38.4, FOUNDERS_POINT },
@@ -317,6 +319,9 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			}),
 			n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 				["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
+			}),
+			n(257257, {	-- Merki <Decor Vendor>
+				["coord"] = { 54.0, 58.8, RAZORWIND_SHORES },
 			}),
 			n(267795, {	-- Perry Winkles <Pet Decor Vendor>
 				["coord"] = { 53.8, 41.7, FOUNDERS_POINT },
