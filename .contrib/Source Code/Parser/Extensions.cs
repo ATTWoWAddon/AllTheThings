@@ -594,6 +594,8 @@ namespace ATT
 
         public static bool IsDecimal(this Type myType) => DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
 
+        public static bool IsBoundedBy(this long val, long min, long max) => val >= min && val <= max;
+
         /// <summary>
         /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
         /// NOTE: Not well-optimized for long sequences

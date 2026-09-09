@@ -54,8 +54,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				15984,	-- Elite: Dragonflight Season 1
 			}},
 			["groups"] = {
-				i(202047, {	-- Gleaming Incarnate Thunderstone (CI!)
-					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894 }, {
+				iensemble(202047, {	-- Gleaming Incarnate Thunderstone (CI!)
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200410),	-- Jaws of the Haunted Frostbrood
@@ -372,7 +372,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(200426),	-- Casque of the Walking Mountain
 							i(200428),	-- Peaks of the Walking Mountain
 						}),
-					})),
+					})),--]]
 				}),
 			},
 		}),
@@ -395,8 +395,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17831,	-- Elite: Dragonflight Season 2
 			}},
 			["groups"] = {
-				i(205878, {	-- Obsidian Aspectral Earthstone (CI!)
-					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				iensemble(205878, {	-- Obsidian Aspectral Earthstone (CI!)
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -713,7 +713,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(202441),	-- Pauldrons of the Onyx Crucible
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
-					})),
+					})),--]]
 				}),
 			},
 		})),
@@ -736,8 +736,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19090,	-- Elite: Dragonflight Season 3
 			}},
 			["groups"] = {
-				i(210468, {	-- Emerald Blossom Dreamstone (CI!)
-					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				iensemble(210468, {	-- Emerald Blossom Dreamstone (CI!)
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
 							i(207198),	-- Skewers of the Risen Nightmare
@@ -1042,7 +1042,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(207185),	-- Molten Vanguard's Plackart
 							i(207180),	-- Molten Vanguard's Shouldervents
 						}),
-					})),
+					})),--]]
 				}),
 			},
 		})),
@@ -1102,8 +1102,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				18867,	-- Through the Ashes and Flames
 			}},
 			["groups"] = {
-				i(208551, {	-- Ambrosial Sporestone (CI!)
-					filter(CLOTH, {
+				iensemble(208551, {	-- Ambrosial Sporestone (CI!)
+					--[[filter(CLOTH, {
 						i(207927,{["bonusID"] = 6894,}),	-- Crown of the Infinite Lord
 						i(204786,{["bonusID"] = 6895,}),	-- Suffused Cowl
 						i(205061,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Cowl
@@ -1153,7 +1153,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(207624,{["bonusID"] = 6897,}),	-- Anomalous Pauldrons
 						i(204950,{["bonusID"] = 6898,}),	-- Starless Mantle
 						i(204610,{["bonusID"] = 8107,}),	-- Bestowed Pauldrons
-					}),
+					}),--]]
 				}),
 			},
 		})),

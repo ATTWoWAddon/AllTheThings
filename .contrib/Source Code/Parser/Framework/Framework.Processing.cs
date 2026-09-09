@@ -1438,6 +1438,33 @@ namespace ATT
                 // add the class headers to the raw sources
                 rawSources.AddRange(classHeaders);
             }
+            // otherwise if this ensemble contains multiple Armor types, then split into Type groups
+            else if (rawSources.Select(d => d.TryGetValue("f", out long f) ? f : 0)
+                .Where(f => f.IsBoundedBy((long)Objects.Filters.Cloth, (long)Objects.Filters.Plate)).Distinct().Count() > 1)
+            {
+                List<IDictionary<string, object>> armorHeaders = new List<IDictionary<string, object>>();
+                foreach (var armorGroup in rawSources.GroupBy(d => d.TryGetValue("f", out long f) ? f : 0))
+                {
+                    if (armorGroup.Key == 0)
+                    {
+                        // no armor header for items with no filter
+                        continue;
+                    }
+
+                    IDictionary<string, object> filterHeader = new Dictionary<string, object>
+                    {
+                        ["f"] = armorGroup.Key,
+                        ["g"] = new List<object>(armorGroup),
+                    };
+                    armorHeaders.Add(filterHeader);
+
+                    // remove the raw sources that are now nested under the class headers
+                    rawSources.RemoveAll(d => armorGroup.Contains(d));
+                }
+
+                // add the class headers to the raw sources
+                rawSources.AddRange(armorHeaders);
+            }
             Objects.Merge(data, "g", rawSources);
 
             // when Blizzard references a questID and tmogSetID which conflict from the same SpellID on an Item, we end up with one Item potentially granting 2 TransmogSets
