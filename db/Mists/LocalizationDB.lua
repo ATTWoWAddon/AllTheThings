@@ -9642,7 +9642,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765994400,
+		release = 1765998000,
 		state = 2,
 	},
 	[53] = {

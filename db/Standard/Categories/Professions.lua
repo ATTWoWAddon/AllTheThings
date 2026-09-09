@@ -4421,7 +4421,7 @@ ach(62234,{requireSkill=202,g={
 crit(112327,{achID=62242,id=2})}}),
 ach(62242,{requireSkill=202,g={
 title(744,{requireSkill=202})}}),
-ach(60888,{questID=91820,requireSkill=202})}}),
+ach(60888,{cost={{"i",248138,1}},crs={245615},questID=91820,requireSkill=202})}}),
 h(-746,{requireSkill=202,g={
 pn(106788,{cost={{"c",3153,1}},requireSkill=202}),
 pn(106789,{cost={{"c",3153,1}},requireSkill=202}),

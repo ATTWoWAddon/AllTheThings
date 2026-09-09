@@ -1048,8 +1048,8 @@ namespace ATT
                                 return aBonus.CompareTo(bBonus);
                             }
 
-                            // BonusID goes first
-                            return -1;
+                            // BonusID goes last
+                            return 1;
                         }
 
                         // If a contains a modID, then try to get it.
@@ -1062,8 +1062,8 @@ namespace ATT
                                 return aMod.CompareTo(bMod);
                             }
 
-                            // ModID goes first
-                            return -1;
+                            // ModID goes last
+                            return 1;
                         }
 
                         // If a contains a cost, then try to get it.

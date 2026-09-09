@@ -1404,6 +1404,40 @@ namespace ATT
                 CaptureDebugDBData(source);
             }
             SortByName(rawSources);
+
+            // If this ensemble comprises multiple classes, then let's split the items into class headers to make readability better
+            if (rawSources.Select(d => d.TryGetValue("c", out object c)
+                && c is List<object> classList
+                && classList.Count > 0
+                    ? classList.FirstOrDefault()
+                    : null)
+                .Distinct().Count() > 1)
+            {
+                List<IDictionary<string, object>> classHeaders = new List<IDictionary<string, object>>();
+                foreach (var classGroup in rawSources.GroupBy(d => d.TryGetValue("c", out object c)
+                                                    && c is List<object> classList
+                                                    && classList.Count > 0 ? classList.FirstOrDefault() : null))
+                {
+                    if (classGroup.Key == null)
+                    {
+                        // no class header for items with no class restriction
+                        continue;
+                    }
+
+                    IDictionary<string, object> classHeader = new Dictionary<string, object>
+                    {
+                        ["classID"] = classGroup.Key,
+                        ["g"] = new List<object>(classGroup),
+                    };
+                    classHeaders.Add(classHeader);
+
+                    // remove the raw sources that are now nested under the class headers
+                    rawSources.RemoveAll(d => classGroup.Contains(d));
+                }
+
+                // add the class headers to the raw sources
+                rawSources.AddRange(classHeaders);
+            }
             Objects.Merge(data, "g", rawSources);
 
             // when Blizzard references a questID and tmogSetID which conflict from the same SpellID on an Item, we end up with one Item potentially granting 2 TransmogSets

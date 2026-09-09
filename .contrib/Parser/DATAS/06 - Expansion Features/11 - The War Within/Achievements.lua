@@ -24,8 +24,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			},
 		})),
 		ach(41665, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {	-- Dressed to the Mines (automated)
-			i(236852, {	-- Gallagio Highroller's Boomstone (CI!)
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+			iensemble(236852, {	-- Gallagio Highroller's Boomstone (CI!)
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229251),	-- Cauldron Champion's Screamplate
 						i(229253),	-- Cauldron Champion's Crown
@@ -366,7 +366,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(229233),	-- Enforcer's Backalley Shoulderplates
 						i(229235),	-- Enforcer's Backalley Faceshield
 					}),
-				})),
+				})),--]]
 			}),
 		})),
 		ach(40107, {	-- Harbinger of the Weatherd
@@ -449,8 +449,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			i(240175),	-- Crystallized Ethereal Voidsplinter
 		})),
 		ach(42325, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
-			i(246737, {	-- K'areshi Voidstone (CI!)
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+			iensemble(246737, {	-- K'areshi Voidstone (CI!)
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237626),	-- Hollow Senintel's Perches
 						i(237628),	-- Hollow Sentinel's Stonemask
@@ -803,12 +803,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237608),	-- Living Weapon's Ramparts
 						i(237610),	-- Living Weapon's Faceshield
 					}),
-				})),
+				})),--]]
 			}),
 		})),
 		ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
-			i(226224, {	-- Luminous Nerubian Catalyst Stone (CI!)
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+			iensemble(226224, {	-- Luminous Nerubian Catalyst Stone (CI!)
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211999),	-- Exhumed Centurion's Baltea
 						i(212000),	-- Exhumed Centurion's Spikes
@@ -1155,7 +1155,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(211982),	-- Warsculptor's Horned Spaulders
 						i(211984),	-- Warsculptor's Barbute
 					}),
-				})),
+				})),--]]
 			}),
 		}),
 		ach(41201, bubbleDownSelf({	-- You Xal Not Pass

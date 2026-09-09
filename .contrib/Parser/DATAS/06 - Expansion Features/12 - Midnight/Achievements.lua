@@ -30,8 +30,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			i(260173),	-- Crystallized Dawnlight Manaflux
 		})),
 		ach(61858, {	-- Light of the Party (automated)
-			i(265071, {	-- Gleaming Sunmote (CI!)
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+			iensemble(265071, {	-- Gleaming Sunmote (CI!)
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249967),	-- Relentless Rider's Chain
 						i(249970),	-- Relentless Rider's Crown
@@ -378,7 +378,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						i(255594),	-- Galactic Gladiator's Plate Helm
 						i(255599),	-- Galactic Gladiator's Plate Pauldrons
 					}),
-				})),
+				})),--]]
 			}),
 		}),
 		-- Season 2
@@ -405,7 +405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			["groups"] = { i(274707) },	-- Crystallized Venomblight Manaflux
 		}),
 		ach(63473, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 }, }, {	-- Sssensational!
-			i(279997),	-- Insidious Venomstone (CI!)
+			iensemble(279997),	-- Insidious Venomstone (CI!)
 		})),
 	}),
 })));
