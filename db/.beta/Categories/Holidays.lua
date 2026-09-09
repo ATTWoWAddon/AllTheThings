@@ -4216,7 +4216,8 @@ q(79131,{coords={
 q(79132,{coords={
 [84]={{61.8,75.1}}},e=431,isBreadcrumb=1,lvl=30,nextQuests={79130},qgs={214031,220307},r=2,repeatable=1,sr=1}),
 q(79133,{coords={
-[85]={{52.8,79.5}}},e=431,isBreadcrumb=1,lvl=30,nextQuests={79130},qgs={213769,220307},r=1,repeatable=1,sr=1}),
+[85]={{52.8,79.5}},
+[1670]={{29.8,56.5}}},e=431,isBreadcrumb=1,lvl=30,nextQuests={79130},qgs={213769,214103,220307},r=1,repeatable=1,sr=1}),
 q(79130,{coords={
 [84]={{60,66.3}},
 [2112]={{26.9,47.4}}},e=431,lvl=30,qgs={206737,214111},repeatable=1,sourceQuests={79131,79132,79133},sr=1}),
@@ -6863,7 +6864,7 @@ h(-47,{e=16,g={
 i(34077,{awp=20001,b=1,e=16,f=55,spellID=44245,g={
 i(36877,{e=16,f=55}),
 i(34068,{e=16,f=55,spellID=44212})}}),
-i(37586,{awp=20403,b=1,e=16,sym={{"select","achievementID",972},{"finalize"},{"selectparent"},{"pop"},{"exclude","itemID",37586,20393,34077,20390,20389,20388,69187,69188,69189,69190,69192,69193,69194,69195,20413},{"select","itemID",33292,33154}}}),
+i(37586,{awp=20403,b=1,e=16,spellID=1313454,sym={{"select","achievementID",972},{"finalize"},{"selectparent"},{"pop"},{"exclude","itemID",37586,20393,34077,20390,20389,20388,69187,69188,69189,69190,69192,69193,69194,69195,20413},{"select","itemID",33292,33154}}}),
 i(20393,{b=1,e=16,rwp=40200,u=2}),
 i(20390,{b=1,e=16,f=55,rwp=40001,spellID=24707,u=2}),
 i(20389,{b=1,e=16,f=55,rwp=40001,spellID=24707,u=2}),
@@ -6926,8 +6927,8 @@ i(49215,{awp=40001,b=1,e=16,f=55,spellID=97115}),
 i(49216,{awp=40001,b=1,e=16,f=55,spellID=97116})}}),
 h(-56,{awp=60202,e=16,g={
 o(244568,{coords={
-[582]={{40.12,70.06}},
-[590]={{70.71,90.21}}},description="You need a Tier 3 garrison for this.",e=16,g={
+[582]={{40.1,70.1}},
+[590]={{70.7,90.2}}},description="You need a Tier 3 garrison for this.",e=16,g={
 cq(39865,{b=1,e=16,itemID=128874,spellID=192472}),
 ach(10365,{e=16})}})}}),
 h(-58,{e=16,g={

@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Implementation
 app:CreateWindow("Quests", {
@@ -7,7 +8,7 @@ app:CreateWindow("Quests", {
 	Commands = { "attquests" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.QUESTS, {
-			description = "This window shows you all of the quests (based on filters) that you can complete. Go get 'em!\n\nNOTE: This window will not include quest items used to complete quests, but will show all of the associated quest rewards.",
+			description = L.QUEST_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
