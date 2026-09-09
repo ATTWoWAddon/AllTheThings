@@ -313,6 +313,9 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 			n(240465, {	-- Lonomia <Cursed Goods>
 				["coord"] = { 68.3, 75.5, RAZORWIND_SHORES },
 			}),
+			n(257257, {	-- Merki <Decor Vendor>
+				["coord"] = { 54.0, 58.8, RAZORWIND_SHORES },
+			}),
 			n(254687, {	-- Rotha <General Contractor>
 				["coord"] = { 53.5, 56.6, RAZORWIND_SHORES },
 			}),

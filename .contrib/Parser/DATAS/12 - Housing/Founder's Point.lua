@@ -320,9 +320,6 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 			n(255519, {	-- Lestia Goldenstrike <Lumberjack>
 				["coord"] = { 51.9, 38.7, FOUNDERS_POINT },
 			}),
-			n(257257, {	-- Merki <Decor Vendor>
-				["coord"] = { 54.0, 58.8, RAZORWIND_SHORES },
-			}),
 			n(267795, {	-- Perry Winkles <Pet Decor Vendor>
 				["coord"] = { 53.8, 41.7, FOUNDERS_POINT },
 				["timeline"] = { ADDED_12_1_0 },
