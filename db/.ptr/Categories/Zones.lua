@@ -164530,7 +164530,7 @@ i(245280,{awp=110200,b=1,f=55,lvl=80,sym={{"select","itemID",228361},{"pop"}}}),
 i(244883,{awp=110200,b=1,f=55,lvl=80,sym={{"select","itemID",235639},{"pop"}}}),
 cu(2815)})}}),
 m(2537,{awp=120000,icon=7488399,lore="Quel'Thalas is a forested area in northern Lordaeron. It is ruled by the blood elves, descendants of the kingdom's Highborne founders, and is known as the Land of Eternal Spring. Its capital is Silvermoon City.",lvl=80,g={
-m(2393,{awp=120001,icon=135761,isRaid=1,lore="Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",maps={2443},g={
+m(2393,{awp=120001,icon=135761,isRaid=1,lore="Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",maps={2443,2605},g={
 flt(101,{
 p(4912,{b=1,coords={
 [2393]={{28.7,75.6},{29,81.4},{31.8,81.2},{32.4,75.4}}},crs={254885},itemID=258660,npcID=254885,spellID=1263739}),
@@ -166837,7 +166837,7 @@ i(249497)})}}),
 q(91983,{coords={
 [2395]={{42.9,46.4}}},isDaily=1,isWeekly=1,lvl=80,maxReputation={2713,6},qgs={240836},g={
 o(568241,{coords={
-[2395]={{56.7,35.2}}},g={
+[2395]={{56.7,35.2},{56.8,35.8}}},g={
 i(249439),
 i(249440)}})}}),
 q(91987,{coords={
@@ -169463,7 +169463,8 @@ q(95985,{coords={
 crit(116190,{achID=63598,id=11})}}),
 q(95953,{coords={
 [2509]={{44.1,30.1}}},qgs={263333},repeatable=1,g={
-i(271693),
+o(645579,{
+i(271693)}),
 crit(116186,{achID=63598,id=7})}}),
 q(96017,{coords={
 [2509]={{41,39.7},{45,10.8},{54.3,42.5}}},crs={263412},qgs={263411},repeatable=1,g={
@@ -169473,6 +169474,8 @@ q(95987,{coords={
 crit(116193,{achID=63598,id=12})}}),
 q(95906,{coords={
 [2509]={{42.7,31.7},{56.5,32.1}}},qgs={263507},qis={271865,271866,271867,271868},repeatable=1,g={
+o(649016,{
+i(271867)}),
 crit(116182,{achID=63598,id=5})}}),
 q(95614,{coords={
 [2509]={{40.2,17.3},{46.1,35.3}}},qgs={262061},repeatable=1,g={
@@ -169822,7 +169825,7 @@ r(1289746,{cost={{"c",3256,150}},itemID=271891,minReputation={2773,3},requireSki
 r(1231090,{cost={{"c",3316,1500}},itemID=275018,minReputation={2773,3},requireSkill=356,skillID=2911}),
 r(1296502,{cost={{"c",3259,150}},itemID=275318,minReputation={2773,3},requireSkill=202,skillID=2910}),
 de(25300,{cost={{"c",3316,250}},itemID=277925,minReputation={2773,4},spellID=1302903}),
-i(278391,{cost={{"c",3316,250}},description="Throw at a pool of fish to summor an eldritch fishy questgiver",minReputation={2773,4},spellID=1304752}),
+i(278391,{cost={{"c",3316,250}},description="Throw at a pool of fish to convert it to an Abyssal Swirl.",minReputation={2773,4},spellID=1304752}),
 r(1295777,{cost={{"c",3316,1500}},itemID=275301,minReputation={2773,4},requireSkill=185,skillID=2908}),
 r(1295922,{cost={{"c",3316,1500}},itemID=275012,minReputation={2773,4},requireSkill=356,skillID=2911}),
 de(26196,{cost={{"c",3316,500}},itemID=277929,minReputation={2773,4},spellID=1302907}),
@@ -169889,7 +169892,9 @@ q(96361,{coords={
 q(97672,{coords={
 [2512]={{58.8,45}}},minReputation={2772,12},qgs={268228}}),
 q(97384,{coords={
-[2512]={{58.8,45}}},minReputation={2772,14},qgs={268228},qis={278050}})}),
+[2512]={{58.8,45}}},minReputation={2772,14},qgs={268228},qis={278050}}),
+q(97673,{coords={
+[2512]={{58.8,45}}},minReputation={2772,18},qgs={268228}})}),
 h(-58,{
 n(268228,{coords={
 [2512]={{58.8,45}}},g={
@@ -173586,7 +173591,7 @@ i(252003)}}),
 q(91800,{coords={
 [2437]={{25.8,65.2}}},isWorldQuest=1,g={
 o(612932,{coords={
-[2437]={{23.3,60.4},{23.5,61.3},{23.9,62.4},{24.2,64},{24.7,61.7},{24.7,62.5},{25,63.2},{25,64.5},{25.1,64.6},{25.2,61.5},{25.8,63.7},{26.2,62.4},{26.3,62.8}}},type="AsGenericObjectContainer",g={
+[2437]={{23.3,60.4},{23.5,61.3},{23.9,62.4},{23.9,62.7},{24.2,64},{24.7,61.7},{24.7,62.5},{25,63.2},{25,64.5},{25.1,64.6},{25.2,61.5},{25.8,63.7},{26.2,62.4},{26.3,62.8}}},type="AsGenericObjectContainer",g={
 i(258321),
 o(612932,{type="AsSubGenericObject"}),
 o(612930,{type="AsSubGenericObject"})}})}}),

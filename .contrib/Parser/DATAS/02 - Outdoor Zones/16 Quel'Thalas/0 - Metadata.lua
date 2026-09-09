@@ -13,6 +13,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			["isRaid"] = true,
 			["timeline"] = { ADDED_12_0_1_LAUNCH },
 			["maps"] = {
+				-- #if AFTER 12.1.5
+				2605,	-- Silvermoon City, Falconwing Square (Aqir Invasion scenario)
+				-- #endif
 				2443,	-- Silvermoon City, The Bazaar (The Battle of the Bridge scenario)
 			},
 		}),

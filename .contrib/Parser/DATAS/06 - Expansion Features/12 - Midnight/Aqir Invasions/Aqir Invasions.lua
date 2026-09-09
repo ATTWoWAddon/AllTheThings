@@ -109,6 +109,118 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 				},
 			}),
+			n(QUESTS, {
+				header(HEADERS.Achievement, 63519, {	-- The Promise of Tomorrow
+					header(HEADERS.AchCriteria, 63519.01, {	-- Sins of the Past
+						-- Exo Note: Ach 63519 currently has only 2 criteria but the campaign has 3 chapters. If things are as they look like, Ach should have 3 criteria with first of them named "What Slept Below", and "Sins of the Past" being second. Probably bugged with an update incoming in the next patch?
+						q(95533, {	-- The Aqir Swarm
+							["qg"] = 235787,	-- Lor'themar Theron
+							["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["groups"] = { i(280050) },	-- Aqir Hunter's Trophy (DECOR!)
+						}),
+						q(95187, {	-- All Along the Watchtowers
+							["sourceQuest"] = 95533,	-- The Aqir Swarm
+							["qg"] = 235787,	-- Lor'themar Theron
+							["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+						}),
+						q(95190, {	-- Double-Edged Swords
+							["sourceQuest"] = 95187,	-- All Along the Watchtowers
+							["qg"] = 260155,	-- Lady Liadrin
+							["coord"] = { 60.3, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+						}),
+						q(95192, {	-- Rendering Aid
+							["sourceQuest"] = 95187,	-- All Along the Watchtowers
+							["qg"] = 260155,	-- Lady Liadrin
+							["coord"] = { 60.3, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+						}),
+						q(95191, {	-- The Slumbering Swarm
+							["sourceQuest"] = 95187,	-- All Along the Watchtowers
+							["qg"] = 260160,	-- Lor'themar Theron
+							["coord"] = { 60.3, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+						}),
+						q(95193, {	-- The Amani Impasse
+							["sourceQuests"] = {
+								95190,	-- Double-Edged Swords
+								95192,	-- Rendering Aid
+								95191,	-- The Slumbering Swarm
+							},
+							["qg"] = 260160,	-- Lor'themar Theron
+							["coord"] = { 62.5, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+							["groups"] = {
+								i(280036),	-- Veilshroud Gauntlets
+								i(280033),	-- Veilshroud Grips
+								i(280035),	-- Veilshroud Vambraces
+								i(277894),	-- Veilshroud Wraps
+							},
+						}),
+						q(95197, {	-- The Long Way Around
+							["sourceQuest"] = 95193,	-- The Amani Impasse
+							["qg"] = 260155,	-- Lady Liadrin
+							["coord"] = { 62.4, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+						}),
+						q(95199, {	-- Tenuous Alliances
+							["sourceQuest"] = 95197,	-- The Long Way Around
+							["qg"] = 261975,	-- Lady Liadrin
+							["coord"] = { 36.9, 17.9, MAP.MIDNIGHT.ZULAMAN },
+						}),
+						q(95200, {	-- An Offering for Halazzi
+							["sourceQuest"] = 95197,	-- The Long Way Around
+							["qg"] = 260164,	-- Zul'jarra
+							["coord"] = { 36.9, 17.9, MAP.MIDNIGHT.ZULAMAN },
+							["qi"] = 269991,	-- Fresh Beast Heart (QI!)
+							["groups"] = { i(279067) },	-- Symbol of Halazzi, Loa of the Hunt (DECOR!)
+						}),
+						q(95203, {	-- The Ties That Bind
+							["sourceQuests"] = {
+								95199,	-- Tenuous Alliances
+								95200,	-- An Offering for Halazzi
+							},
+							["qg"] = 260155,	-- Lady Liadrin
+							["coord"] = { 35.8, 17.6, MAP.MIDNIGHT.ZULAMAN },
+							["groups"] = { i(264718) },	-- Amani Fishing Canoe (DECOR!)
+						}),
+						q(95208, {	-- Back to Back
+							["sourceQuest"] = 95203,	-- The Ties That Bind
+							["qg"] = 260155,	-- Lady Liadrin
+							["coord"] = { 24.7, 58.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+						}),
+						q(95206, {	-- Breaking the Blade
+							["sourceQuest"] = 95203,	-- The Ties That Bind
+							["qg"] = 261088,	-- Halduron Brightwing
+							["coord"] = { 24.8, 58.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+						}),
+						q(95209, {	-- The Unheard Voice
+							["sourceQuests"] = {
+								95208,	-- Back to Back
+								95206,	-- Breaking the Blade
+							},
+							["qg"] = 261088,	-- Halduron Brightwing
+							["coord"] = { 28.9, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+							["qi"] = 270342,	-- Interlocked Twilight Runes (QI!)
+							["groups"] = {
+								i(277881),	-- Fetid Reliquary Greaves
+								i(280038),	-- Fetid Reliquary Sabatons
+								i(280040),	-- Fetid Reliquary Slippers
+								i(280039),	-- Fetid Reliquary Treads
+							},
+						}),
+						q(95210, {	-- In the Mouth of Madness
+							["sourceQuest"] = 95209,	-- The Unheard Voice
+							["qg"] = 260155,	-- Lady Liadrin
+							["coord"] = { 32.5, 64.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+						}),
+						q(96707, {	-- In the Belly of the Beast
+							["sourceQuest"] = 95210,	-- In the Mouth of Madness
+							["qg"] = 265961,	-- Lady Liadrin
+							["coord"] = { 55.8, 30.0, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+						}),
+						-- Exo Note: Quest chain ends here. Quest log shows that this quest completes the 1/3 Campaign Chapters. None of the friendly NPCs despawn and no new quest is offered. It's incomplete, probably because next quest leads into the Raid (I think).
+						-- Entrance to "The Unbinding of Kith'ix" is in The Underbelly at 73.3, 8.6
+					}),
+					--header(HEADERS.AchCriteria, 63519.02, {	-- To the Faithful
+					--}),
+				}),
+			}),
 		},
 	}),
 }));
