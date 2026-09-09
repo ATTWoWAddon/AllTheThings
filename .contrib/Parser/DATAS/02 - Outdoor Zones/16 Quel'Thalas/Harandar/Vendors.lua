@@ -128,6 +128,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
+			n(274363, {	-- Showena <Mounts and More>
+				["coord"] = { 61.8, 67.7, 2576 },	-- The Den, Harandar
+				["timeline"] = { ADDED_12_1_5 },	-- No "Timeline Out" to avoid the "This has been removed" message showing on the vendor herself when items get timelined out
+				["groups"] = {
+					filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { REMOVED_13_0_0 } }, {	-- TODO: Timeline out correctly
+						i(282414, {	-- Sporebearer Fungal Strider (MOUNT!)
+							["cost"] = 50000000000,	-- 5,000,000g
+							["groups"] = { ach(63830) },	-- Fungal Not Frugal
+						}),
+					})),
+					-- Exo Note: AH and Transmog Module CAN be bought even after 13.0.0 Launches however, I is no point in adding the REMOVED timeline only on the mount if only those that bought the mount can buy and use the Modules
+					filter(MISC, bubbleDownSelf({ ["timeline"] = { REMOVED_13_0_0 } }, {	-- TODO: Timeline out correctly
+						i(284186, {	-- Unlock Auction House (CI!)
+							["cost"] = 15000000000,	-- 1,500,000g
+						}),
+						i(284191, {	-- Unlock Transmogrifier (CI!)
+							["cost"] = 5000000000,	-- 500,000g
+						}),
+					})),
+				},
+			}),
 		}),
 	}),
 }));

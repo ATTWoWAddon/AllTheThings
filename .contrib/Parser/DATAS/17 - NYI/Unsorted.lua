@@ -21,7 +21,6 @@ root(ROOTS.Unsorted, {
 			i(265402),	-- Fistful of Gnat Wings
 			i(265620),	-- Rehydrated Zandalari Peppers
 			i(265626),	-- Shattered Teapot
-			i(265790),	-- Cache of Mistcrests
 			i(267045),	-- Quivering Egg
 			i(268095),	-- Fresh Poultice
 			-- WB

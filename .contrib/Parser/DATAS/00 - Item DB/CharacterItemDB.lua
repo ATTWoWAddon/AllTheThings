@@ -1074,6 +1074,12 @@ is(0, 1286812);						-- Path of Venomous Evolution
 is(0, 1286807);						-- Path of Worthy Aspirant
 ihqt(278336, 97588);				-- Sinful Pearl
 
+------------------
+-- PATCH 12.1.5 --
+------------------
+iq(284186, 98740);				-- Unlock Auction House [Sporebearer Fungal Strider]
+iq(284191, 98743);				-- Unlock Transmogrifier [Sporebearer Fungal Strider]
+
 ------------
 -- UNUSED --
 ------------
