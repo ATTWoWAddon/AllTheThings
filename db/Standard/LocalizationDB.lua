@@ -2749,7 +2749,7 @@ _.Modules.Events.SetEventInformation(1225, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=15,["weekday"]=2,["year"]=2021},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=6,["weekday"]=2,["year"]=2021})
 })
 _.Modules.Events.SetEventInformation(1181, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2020},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2020})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=12,["weekday"]=7,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
 })
 _.Modules.Events.SetEventInformation(808, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=5,["weekday"]=3,["year"]=2019},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=3,["year"]=2020})
