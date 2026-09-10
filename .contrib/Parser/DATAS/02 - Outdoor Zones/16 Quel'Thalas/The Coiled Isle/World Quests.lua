@@ -16,6 +16,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 64.7, 60.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["qi"] = 265622,	-- Knotted Swamp Stick
 				}),
+				q(94571, {	-- Ashes of History
+					["coord"] = { 67.1, 63.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+					["qi"] = 265399,	-- Ritually-Charred Bones (QI!)
+				}),
 				q(93672, {	-- Blade to Rest
 					["coord"] = { 45.7, 12.8, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),

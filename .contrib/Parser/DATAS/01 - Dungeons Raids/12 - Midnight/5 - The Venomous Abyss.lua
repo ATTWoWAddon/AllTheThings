@@ -633,8 +633,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
 			-- LFR
+			hqt(98084, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98080, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98092, name(HEADERS.NPC, 266538)),	-- Shriekcoil
+			hqt(98076, name(HEADERS.NPC, 261503)),	-- Frightmaw
 			hqt(98088, name(HEADERS.Encounter, COILED_ALTAR)),	-- Coiled Altar
 			-- N
 			hqt(98083, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest

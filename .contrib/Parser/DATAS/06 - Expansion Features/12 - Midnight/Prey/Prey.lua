@@ -446,13 +446,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		})),
 		n(258928, { -- Ral'kala <Terror of the Isle>
 			["description"] = "Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",
-			-- https://www.wowhead.com/npc=258928/ralkala#comments
-			["timeline"] = { ADDED_12_1_0 },
-			["maps"] = {
-				MAP.MIDNIGHT.THE_COILED_ISLE
+			["coords"] = {
+				{ 29.5, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+				{ 52.9, 42.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				{ 68.4, 45.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 			},
+			["questID"] = 98551,
 			["crs"] = { 265151 },	-- Haunted Brazier
 			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
+			["timeline"] = { ADDED_12_1_0 },
 			["groups"] = {
 				i(263874),	-- Emerald-Encrusted Amani Ritual Skull (DECOR!)
 				i(275659),	-- Hexflame Reaver (MOUNT!)

@@ -2926,6 +2926,7 @@ local AccountWideQuestsDB = {
 	97980,	-- Ula'tek
 	97983,	-- Ula'tek
 	98097,	-- The Coiled Altar
+	98217,	-- Insidious Venomstone
 	98337,	-- Quest #98337*
 	98344,	-- Farthik the Plunderer weekly reputation obtained.
 	98345,	-- Siltmouth weekly reputation obtained.

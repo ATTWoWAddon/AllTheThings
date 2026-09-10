@@ -2444,6 +2444,36 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(90722),	-- 15/20 Synthesis Synergy
 			--q(TODO),	-- 20/20 Synthesis Synergy
 		}),
+		prof(FISHING, {
+			-- Many 12.1 HQTs which flag and unflag for no discernable reason
+			q(97495, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97496, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			--97497
+			q(97498, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97499, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97500, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97501, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			--97502
+			q(97503, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97504, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97505, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97506, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97507, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97508, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97509, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97510, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97511, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97512, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97513, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			--97514
+			q(97515, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97516, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97517, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97518, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			--q(98507),	-- ??
+			--q(98508),	-- ??
+			--q(98509),	-- ??
+		}),
 		prof(MINING, {
 			q(87670),	-- 40/40 Over-LODED
 		}),

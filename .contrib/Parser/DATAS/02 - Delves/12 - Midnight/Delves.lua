@@ -233,6 +233,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{ "o", 623258 },	-- Pilfered Trunk
 				{ "o", 584518 },	-- Bountiful Heavy Trunk
 				{ "o", 584515 },	-- Bountiful Heavy Trunk
+				{ "o", 584517 },	-- Heavy Trunk
 				{ "o", 584519 },	-- Heavy Trunk
 				{ "o", 584512 },	-- Nemesis Strongbox
 				{ "o", 584511 },	-- Nemesis Strongbox
@@ -1374,6 +1375,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			["isDaily"] = true,
 		}, {
 			q(95715, name(HEADERS.Map, GNARLDOR_ISLE)),	-- Gnarldor Isle
+			q(95716, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
 			q(97064, name(HEADERS.Object, 658087, {isWeekly=true})),	-- Abundantly Bountiful Heavy Trunk spwaned
 			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),

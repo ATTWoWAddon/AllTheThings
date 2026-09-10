@@ -16,7 +16,6 @@ root(ROOTS.Unsorted, {
 			i(263185),	-- Rotted Plank
 			i(263192),	-- Unattainable Artifact of Desire
 			i(264162),	-- Enchanted Snowflake
-			i(265399),	-- Ritually-Charred Bones
 			i(265400),	-- Calcified Turtle Heart
 			i(265402),	-- Fistful of Gnat Wings
 			i(265620),	-- Rehydrated Zandalari Peppers
