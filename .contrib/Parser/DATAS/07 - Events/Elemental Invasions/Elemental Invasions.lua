@@ -40,9 +40,7 @@ root(ROOTS.WorldEvents, {
 					14454,	-- The Windreaver
 				},
 				["timeline"] = { ADDED_1_6_0, REMOVED_4_0_3 },
-				["groups"] = {
-					i(19268),	-- Ace of Elementals
-				},
+				["groups"] = { i(19268) },	-- Ace of Elementals
 			})),
 			-- #endif
 			n(14464, {	-- Avalanchion

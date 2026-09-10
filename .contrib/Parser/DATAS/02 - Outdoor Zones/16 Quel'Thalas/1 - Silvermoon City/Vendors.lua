@@ -145,70 +145,46 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					}),
 				},
 			}),
-			-- #if after 12.1
+			-- #if AFTER 12.1.0
 			n(264056, {	-- Disguised Decor Duel Vendor <Illusionary Coin Trader>
 				["coord"] = { 31.6, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["timeline"] = { ADDED_12_0_5 },
 				["groups"] = {
 					i(272445, {	-- Decorative Dornogal Opal (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,200},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 200 } },
 					}),
 					i(272442, {	-- Empty Wooden Toolbox (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,300},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 300 } },
 					}),
 					i(272446, {	-- Large Decorative Dornogal Opal (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,200},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 200 } },
 					}),
 					i(269636, {	-- Sin'dorei Cookpot Lid (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,250},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(269613, {	-- Sin'dorei Covered Cookpot (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,350},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 350 } },
 					}),
 					i(269641, {	-- Sin'dorei Display Case (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,400},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 400 } },
 					}),
 					i(271162, {	-- Sin'dorei Garden Swing (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,750},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
 					}),
 					i(269614, {	-- Sin'dorei Open Cookpot (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,250},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(268457, {	-- Sin'dorei Tiffin-Style Lamp (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,400},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 400 } },
 					}),
 					i(272444, {	-- Small Decorative Dornogal Opal (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,200},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 200 } },
 					}),
 					i(272441, {	-- Small Lumber Pile (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,200},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 200 } },
 					}),
 					i(272443, {	-- Suramar Arcfruit Bowl (DECOR!)
-						["cost"] = {
-							{"c",VOIDLIGHT_MARL,300},
-						},
+						["cost"] = { { "c", VOIDLIGHT_MARL, 300 } },
 					}),
 				},
 			}),

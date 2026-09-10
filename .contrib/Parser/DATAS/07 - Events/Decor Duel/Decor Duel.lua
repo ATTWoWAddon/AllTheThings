@@ -35,8 +35,7 @@ DECOR_DUEL = createHeader({
 
 local ILLUSIONARY_COIN = 3393;
 
-root(ROOTS.Holidays,
-	--applyevent(EVENTS.DECOR_DUEL,	-- DO NOT TOUCH! (for now) It is placed among 'World Events' in-game under Achievements but there is no EventID on Wago. Maybe move to World Events?	-- Exo
+root(ROOTS.WorldEvents,
 	n(DECOR_DUEL, {
 		["maps"] = { MAP.MIDNIGHT.SILVERMOON_CITY },	-- Silvermoon City
 		["cr"] = 257125,	-- Fieldweaver Amolenne <Match Coordinator>
@@ -127,70 +126,46 @@ root(ROOTS.Holidays,
 				}),
 			}),
 			n(VENDORS, {
-				-- #if before 12.1
+				-- #if BEFORE 12.1.0
 				n(264056, {	-- Disguised Decor Duel Vendor <Illusionary Coin Trader>
 					["coord"] = { 31.6, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["timeline"] = { ADDED_12_0_5 },
 					["groups"] = {
 						i(272445, {	-- Decorative Dornogal Opal (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,10},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(272442, {	-- Empty Wooden Toolbox (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,20},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
 						i(272446, {	-- Large Decorative Dornogal Opal (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,10},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(269636, {	-- Sin'dorei Cookpot Lid (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,15},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
 						}),
 						i(269613, {	-- Sin'dorei Covered Cookpot (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,30},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 30 } },
 						}),
 						i(269641, {	-- Sin'dorei Display Case (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,50},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
 						}),
 						i(271162, {	-- Sin'dorei Garden Swing (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,120},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 120 } },
 						}),
 						i(269614, {	-- Sin'dorei Open Cookpot (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,15},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
 						}),
 						i(268457, {	-- Sin'dorei Tiffin-Style Lamp (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,50},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
 						}),
 						i(272444, {	-- Small Decorative Dornogal Opal (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,10},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(272441, {	-- Small Lumber Pile (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,10},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
 						}),
 						i(272443, {	-- Suramar Arcfruit Bowl (DECOR!)
-							["cost"] = {
-								{"c",ILLUSIONARY_COIN,20},
-							},
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
 						}),
 					},
 				}),
