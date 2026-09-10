@@ -134,7 +134,46 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(19417, {		-- Brawlroom Blitzer
 		["timeline"] = { ADDED_10_2_0 },
 	}),
-	applyclassicphase(PHASE_TWO, ach(727)),	-- Call in the Cavalry (automated)
+	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry (automated)
+		-- Each criteria is automated from the War Mount it is earned by, but the restrictions that
+		-- Item carries are not, so every mount in the achievement counts against every character.
+		["groups"] = {
+			-- The original War Mounts need the matching riding skill, which is why the Items
+			-- themselves are race restricted. 2.0.1 replaced them with unrestricted versions.
+			-- #if BEFORE 2.0.1
+			crit(6213, {	-- Black Battlestrider (18243)
+				["races"] = { DWARF, GNOME },
+			}),
+			crit(6214, {	-- Black War Kodo (18247)
+				["races"] = HORDE_ONLY,
+			}),
+			crit(6215, {	-- Black War Ram (18244)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(6216, {	-- Black War Steed (18241)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(6217, {	-- Black War Wolf (18245)
+				["races"] = HORDE_ONLY,
+			}),
+			crit(6219, {	-- Black War Tiger (18242)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(6220, {	-- Black War Raptor (18246)
+				["races"] = { ORC, UNDEAD, TROLL },
+			}),
+			crit(6222, {	-- Red Skeletal Warhorse (18248)
+				["races"] = { ORC, UNDEAD, TROLL },
+			}),
+			-- #endif
+			crit(6221, {	-- Swift Warstrider (34129)
+				["timeline"] = { ADDED_2_3_0 },
+			}),
+			crit(6218, {	-- Black War Elekk (35906)
+				["timeline"] = { ADDED_2_4_0 },
+			}),
+		},
+	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)
 		["timeline"] = { ADDED_3_0_2 },
 		["races"] = ALLIANCE_ONLY,
