@@ -305,7 +305,7 @@ OVERWATCH_ORIGINS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这些奖励是提供给购买了守望先锋：起源典藏版的玩家的。",
-		tw = "這些獎勵是提供給購買了守望先鋒：啟元版的玩家的。",
+		tw = "這些獎勵是提供給購買了鬥陣特攻：啟元版的玩家的。",
 	},
 });
 STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
