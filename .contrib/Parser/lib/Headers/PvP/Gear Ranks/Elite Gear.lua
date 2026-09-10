@@ -1,6 +1,7 @@
 PVP_ELITE = createHeader({
 	readable = "Elite Gear",
 	icon = 311232,
+	constant = "PVP_ELITE",
 	text = {
 		en = "Elite Gear",
 		de = "Elite Rüstung",
