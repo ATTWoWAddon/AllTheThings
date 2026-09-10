@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static ATT.Export;
+using Data = System.Collections.Generic.IDictionary<string, object>;
 
 namespace ATT
 {
@@ -2396,7 +2397,8 @@ end");
             /// </summary>
             /// <param name="container">The container to merge into.</param>
             /// <param name="data">The data to merge into the container.</param>
-            public static void Merge(List<object> container, IDictionary<string, object> data2)
+            public static void Merge<T>(List<T> container, IDictionary<string, object> data2)
+                where T : class
             {
                 // clean up unique quests being treated as one quest for purposes that are irrelevant to Retail
                 if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd))
@@ -2462,18 +2464,16 @@ end");
                 }
 
                 // Find the Object Dictionary that matches the data.
-                IDictionary<string, object> entry = FindMatchingData(container, data2);
-
                 // If no object matched the data, then we need to create a new entry.
-                if (entry == null)
+                if (!(FindMatchingData(container, data2) is T entry))
                 {
                     // Create a new object with a proper format and add it to the container.
-                    entry = new Dictionary<string, object>();
+                    entry = new Dictionary<string, object>() as T;
                     container.Add(entry);
                 }
 
                 // Merge the entry with the data.
-                Merge(entry, data2);
+                Merge(entry as Data, data2);
             }
 
             /// <summary>
@@ -2502,7 +2502,7 @@ end");
             /// <summary>
             /// Attempts to find a matching 'data' object in the container based on the data that needs to merge
             /// </summary>
-            public static IDictionary<string, object> FindMatchingData(IEnumerable<object> container, IDictionary<string, object> data2)
+            public static IDictionary<string, object> FindMatchingData<T>(IEnumerable<T> container, IDictionary<string, object> data2)
             {
                 // if the data is explicitly defined as not to merge
                 if (data2.TryGetValue("nomerge", out bool nomerge) && nomerge)
@@ -2589,15 +2589,30 @@ end");
             /// </summary>
             /// <param name="container">The container to merge into.</param>
             /// <param name="list">The list of data to merge into the container.</param>
-            public static void Merge(List<object> container, IEnumerable<object> list)
+            public static void Merge<T, O>(List<T> container, IEnumerable<O> list)
+                where T : class
             {
                 foreach (var data in list)
                 {
-                    if (data is IDictionary<string, object> sDict) Merge(container, sDict);
+                    if (data is Data sDict) Merge(container, sDict);
                     else
                     {
-                        LogError($"MERGE CONFUSION: {Environment.NewLine}{ToJSON(data)}");
+                        LogError($"MERGE CONFUSION:", data);
                     }
+                }
+            }
+
+            /// <summary>
+            /// Merge the list of data into the container.
+            /// NOTE: This is a NON-Standard list of data.
+            /// </summary>
+            /// <param name="container">The container to merge into.</param>
+            /// <param name="list">The list of data to merge into the container.</param>
+            public static void Merge(List<Data> container, IEnumerable<Data> list)
+            {
+                foreach (var data in list)
+                {
+                    Merge(container, data);
                 }
             }
 

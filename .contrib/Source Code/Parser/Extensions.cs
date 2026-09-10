@@ -422,7 +422,7 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains the specified key/value pair
         /// </summary>
-        public static IDictionary<string, object> FindObject<T>(this IEnumerable<object> list, string key, T value)
+        public static IDictionary<string, object> FindObject<T,TData>(this IEnumerable<TData> list, string key, T value)
         {
             if (list == null) return null;
 
@@ -446,7 +446,7 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains both specified key/value pairs
         /// </summary>
-        public static IDictionary<string, object> FindObject<T1, T2>(this IEnumerable<object> list, string key1, T1 value1, string key2, T2 value2)
+        public static IDictionary<string, object> FindObject<T1, T2, TData>(this IEnumerable<TData> list, string key1, T1 value1, string key2, T2 value2)
         {
             if (list == null) return null;
 

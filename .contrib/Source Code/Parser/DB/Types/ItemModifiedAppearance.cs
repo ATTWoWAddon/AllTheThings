@@ -55,9 +55,20 @@ namespace ATT.DB.Types
             {
                 switch (ItemAppearanceModifierID)
                 {
-                    // None
+                    // ModID values ignore bonusID
+                    // L
+                    case 4:
+                    // N
                     case 0:
+                    // H
+                    case 1:
+                    // M
+                    case 3:
+                    // Glad Set
+                    case 159:
                         return 0;
+
+
                     // LFR Set
                     case 153:
                         return 6894;
@@ -209,5 +220,42 @@ namespace ATT.DB.Types
             (_flags & TransmogSourceTypeFlags.HiddenUntilCollected) == TransmogSourceTypeFlags.HiddenUntilCollected;
         public bool IsCantCollect() =>
             (_flags & TransmogSourceTypeFlags.CantCollect) == TransmogSourceTypeFlags.CantCollect;
+
+        /// <summary>
+        /// Given a modID or bonusID, returns a Data object which identifies the expected organization for that ID
+        /// </summary>
+        public static IDictionary<string, object> GetOrganizingHeaderData(long id)
+        {
+            switch (id)
+            {
+                // LFR Set
+                case 4:
+                case 153:
+                    return new Dictionary<string, object> { { "difficultyID", 17 } };
+                // N Set
+                case 0:
+                case 154:
+                    return new Dictionary<string, object> { { "difficultyID", 14 } };
+                // H Set
+                case 1:
+                case 155:
+                    return new Dictionary<string, object> { { "difficultyID", 15 } };
+                // M Set
+                case 3:
+                case 156:
+                    return new Dictionary<string, object> { { "difficultyID", 16 } };
+                // Glad Set
+                case 157:
+                case 159:
+                    return new Dictionary<string, object> { { "headerID", Framework.CustomHeaderIDsByKey["Gladiator Gear"] } };
+                // Elite Set
+                case 158:
+                case 160:
+                    return new Dictionary<string, object> { { "headerID", Framework.CustomHeaderIDsByKey["Elite Gear"] } };
+
+                default:
+                    return null;
+            }
+        }
     }
 }

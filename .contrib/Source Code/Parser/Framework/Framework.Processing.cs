@@ -1405,65 +1405,26 @@ namespace ATT
             }
             SortByName(rawSources);
 
-            // If this ensemble comprises multiple classes, then let's split the items into class headers to make readability better
-            if (rawSources.Select(d => d.TryGetValue("c", out object c)
-                && c is List<object> classList
-                && classList.Count > 0
-                    ? classList.FirstOrDefault()
-                    : null)
-                .Distinct().Count() > 1)
+            // If this ensemble contains sources which correlate to header groupings & classes, then split those into their own header groups for better readability
+            if (CanOrganizeData_ByAppearanceModDifficulty(rawSources) && CanOrganizeData_ByClass(rawSources))
             {
-                List<IDictionary<string, object>> classHeaders = new List<IDictionary<string, object>>();
-                foreach (var classGroup in rawSources.GroupBy(d => d.TryGetValue("c", out object c)
-                                                    && c is List<object> classList
-                                                    && classList.Count > 0 ? classList.FirstOrDefault() : null))
+                OrganizeData_ByAppearanceModDifficulty(rawSources);
+
+                // Within each header group, if there are multiple classes, then split those into class headers for better readability
+                foreach (var headerGroup in rawSources.Select(d => d.TryGetValue("g", out List<object> headerGroups) ? headerGroups : null).Where(d => d != null))
                 {
-                    if (classGroup.Key == null)
-                    {
-                        // no class header for items with no class restriction
-                        continue;
-                    }
-
-                    IDictionary<string, object> classHeader = new Dictionary<string, object>
-                    {
-                        ["classID"] = classGroup.Key,
-                        ["g"] = new List<object>(classGroup),
-                    };
-                    classHeaders.Add(classHeader);
-
-                    // remove the raw sources that are now nested under the class headers
-                    rawSources.RemoveAll(d => classGroup.Contains(d));
+                    OrganizeData_ByClass(headerGroup);
                 }
-
-                // add the class headers to the raw sources
-                rawSources.AddRange(classHeaders);
+            }
+            // If this ensemble comprises multiple classes, then let's split the items into class headers to make readability better
+            else if (CanOrganizeData_ByClass(rawSources))
+            {
+                OrganizeData_ByClass(rawSources);
             }
             // otherwise if this ensemble contains multiple Armor types, then split into Type groups
-            else if (rawSources.Select(d => d.TryGetValue("f", out long f) ? f : 0)
-                .Where(f => f.IsBoundedBy((long)Objects.Filters.Cloth, (long)Objects.Filters.Plate)).Distinct().Count() > 1)
+            else if (CanOrganizeData_ByFilter(rawSources))
             {
-                List<IDictionary<string, object>> armorHeaders = new List<IDictionary<string, object>>();
-                foreach (var armorGroup in rawSources.GroupBy(d => d.TryGetValue("f", out long f) ? f : 0))
-                {
-                    if (armorGroup.Key == 0)
-                    {
-                        // no armor header for items with no filter
-                        continue;
-                    }
-
-                    IDictionary<string, object> filterHeader = new Dictionary<string, object>
-                    {
-                        ["f"] = armorGroup.Key,
-                        ["g"] = new List<object>(armorGroup),
-                    };
-                    armorHeaders.Add(filterHeader);
-
-                    // remove the raw sources that are now nested under the class headers
-                    rawSources.RemoveAll(d => armorGroup.Contains(d));
-                }
-
-                // add the class headers to the raw sources
-                rawSources.AddRange(armorHeaders);
+                OrganizeData_ByFilter(rawSources);
             }
             Objects.Merge(data, "g", rawSources);
 
@@ -1501,6 +1462,107 @@ namespace ATT
 
             // Capture the Ensemble for Debug output
             CaptureDebugDBData(data);
+        }
+
+        private static bool CanOrganizeData_ByAppearanceModDifficulty(List<Data> rawSources) =>
+            rawSources.Select(d => WagoData.TryGetItemModifiedAppearanceAssociations(d.TryGetValue("sourceID", out long sourceID) ? sourceID : 0, out List<ItemModifiedAppearance> itemAppearances)
+                && itemAppearances.Count > 0
+                && (itemAppearances.FirstOrDefault()?.ExpectedBonusID ?? 0) != 0
+                    ? itemAppearances.FirstOrDefault().ItemAppearanceModifierID
+                    : 0).Any(h => h != 0);
+
+        private static void OrganizeData_ByAppearanceModDifficulty(List<Data> rawSources)
+        {
+            List<Data> headers = new List<Data>();
+            foreach (var armorGroup in rawSources.GroupBy(d => WagoData.TryGetItemModifiedAppearanceAssociations(d.TryGetValue("sourceID", out long sourceID) ? sourceID : 0, out List<ItemModifiedAppearance> itemAppearances)
+                && itemAppearances.Count > 0
+                && (itemAppearances.FirstOrDefault()?.ExpectedBonusID ?? 0) != 0
+                    ? itemAppearances.FirstOrDefault().ItemAppearanceModifierID
+                    : 0))
+            {
+                Data filterHeader = ItemModifiedAppearance.GetOrganizingHeaderData(armorGroup.Key);
+                if (filterHeader == null)
+                {
+                    // no header for items with no data grouping
+                    continue;
+                }
+
+                Objects.Merge(filterHeader, "g", armorGroup);
+                headers.Add(filterHeader);
+
+                // remove the raw sources that are now nested under the header
+                rawSources.RemoveAll(d => armorGroup.Contains(d));
+            }
+
+            // add the headers to the raw sources
+            Objects.Merge(rawSources, headers);
+        }
+
+        private static bool CanOrganizeData_ByFilter(List<Data> rawSources) =>
+            rawSources.Select(d => d.TryGetValue("f", out long f) ? f : 0)
+                .Where(f => f.IsBoundedBy((long)Objects.Filters.Cloth, (long)Objects.Filters.Plate)).Distinct().Count() > 1;
+
+        private static void OrganizeData_ByFilter(List<Data> rawSources)
+        {
+            List<Data> headers = new List<Data>();
+            foreach (var armorGroup in rawSources.GroupBy(d => d.TryGetValue("f", out long f) ? f : 0))
+            {
+                if (armorGroup.Key == 0)
+                {
+                    // no armor header for items with no filter
+                    continue;
+                }
+
+                Data filterHeader = new Dictionary<string, object>
+                {
+                    ["f"] = armorGroup.Key,
+                    ["g"] = new List<object>(armorGroup),
+                };
+                headers.Add(filterHeader);
+
+                // remove the raw sources that are now nested under the class headers
+                rawSources.RemoveAll(d => armorGroup.Contains(d));
+            }
+
+            // add the class headers to the raw sources
+            Objects.Merge(rawSources, headers);
+        }
+
+        private static bool CanOrganizeData_ByClass(List<Data> rawSources) =>
+            rawSources.Select(d => d.TryGetValue("c", out object c)
+                && c is List<object> classList
+                && classList.Count > 0
+                    ? classList.FirstOrDefault()
+                    : null)
+                .Distinct().Count() > 1;
+
+        private static void OrganizeData_ByClass<T>(List<T> rawSources)
+            where T : class
+        {
+            List<Data> headers = new List<Data>();
+            foreach (var classGroup in rawSources.GroupBy(o => o is Data d && d.TryGetValue("c", out object c)
+                                                && c is List<object> classList
+                                                && classList.Count > 0 ? classList.FirstOrDefault() : null))
+            {
+                if (classGroup.Key == null)
+                {
+                    // no class header for items with no class restriction
+                    continue;
+                }
+
+                Data classHeader = new Dictionary<string, object>
+                {
+                    ["classID"] = classGroup.Key,
+                    ["g"] = classGroup.ToList(),
+                };
+                headers.Add(classHeader);
+
+                // remove the raw sources that are now nested under the class headers
+                rawSources.RemoveAll(d => classGroup.Contains(d));
+            }
+
+            // add the class headers to the raw sources
+            Objects.Merge(rawSources, headers);
         }
 
         private static void Incorporate_Parallel(IDictionary<string, object> data)
