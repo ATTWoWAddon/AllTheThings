@@ -52,16 +52,71 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					--title(XXX),	-- Maze Runner <Name>
 				}),
 			}),
-			--n(CURIO, {
-			--}),
-			--n(FACTIONS, {
-			--}),
+			n(FACTIONS, {
+				faction(2836),	-- Kindo'Jan's Labyrinth
+			}),
+			n(FLIGHT_PATHS, {
+				fp(3300, {	-- Chamber of Rites
+					["coord"] = { 44.4, 72.1, LABYRINTH_KINDOJAN },
+					--["cr"] = XXXXXX,	-- Kinduru <Herald of de Loa>
+				}),
+				fp(3301, {	-- Entrance to The Reliquary
+					["coord"] = { 35.6, 67.4, LABYRINTH_KINDOJAN },
+				}),
+				fp(3304, {	-- The Reliquary
+					["coord"] = { 28.5, 67.4, LABYRINTH_KINDOJAN },
+					--["cr"] = XXXXXX,	-- Kinduru <Herald of de Loa>
+				}),
+				fp(3305, {	-- Entrance to Halazzi's Lair
+					["coord"] = { 26.0, 55.9, LABYRINTH_KINDOJAN },
+				}),
+				fp(3306, {	-- Halazzi's Lair
+					["coord"] = { 20.2, 46.8, LABYRINTH_KINDOJAN },
+					--["cr"] = XXXXXX,	-- Kinduru <Herald of de Loa>
+				}),
+				fp(3307, {	-- Entrance to The Central Chamber
+					["coord"] = { 33.0, 54.9, LABYRINTH_KINDOJAN },
+				}),
+			}),
 			--n(QUESTS, {
 			--}),
-			--n(TREASURES, {
-			--}),
+			n(TREASURES, {
+				o(676585, {	-- Ancient Chest
+					["coord"] = { 36.9, 72.5, LABYRINTH_KINDOJAN },
+					["questID"] = 98602,
+				}),
+				o(676624, {	-- Ancient Chest
+					["coord"] = { 21.7, 71.3, LABYRINTH_KINDOJAN },
+					["questID"] = 98607,
+					["groups"] = {
+						i(263517),	-- Ancient Text (JUNK!)
+					},
+				}),
+				o(676625, {	-- Ancient Chest
+					["coord"] = { 29.9, 77.4, LABYRINTH_KINDOJAN },
+					["questID"] = 98608,
+				}),
+				o(676628, {	-- Ancient Chest
+					["coord"] = { 13.9, 37.8, LABYRINTH_KINDOJAN },
+					["questID"] = 98611,
+				}),
+				o(676629, {	-- Ancient Chest
+					["coord"] = { 26.5, 43.0, LABYRINTH_KINDOJAN },
+					["questID"] = 98612,
+				}),
+				o(676747, {	-- Mislaid Treasure
+					["description"] = "Spawns randomly throughout the Labyrinth.",
+				}),
+			}),
 			--n(VENDORS, {
 			--}),
+			n(ZONE_REWARDS, {
+				-- From Ancient Chests AND Mislaid Treasures, drop chance random
+				i(252044),	-- Amani Horn Cup (DECOR!)
+				i(264484),	-- Blue Amani Tapestry (DECOR!)
+				i(263321),	-- Frayed Amani Offering Basket (DECOR!)
+				i(264256),	-- Wall-Mounted Amani Animal Trophy (DECOR!)
+			}),
 		},
 	}),
 }))
