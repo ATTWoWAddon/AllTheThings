@@ -1,6 +1,7 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
+if app.GameBuildVersion <= 40000 then
 
 -- Global locals
 local tinsert = tinsert;
@@ -102,6 +103,7 @@ app:CreateWindow("Attunements", {
 				icon = 254649,
 				isRaid = true,
 			}),
+			-- #if BEFORE WRATH
 			app.CreateMap(162, {	-- Naxxramas
 				icon = 135441,
 				GetAttunementRequirement = function(t)
@@ -126,6 +128,7 @@ app:CreateWindow("Attunements", {
 				end,
 				isRaid = true,
 			}),
+			-- #endif
 		};
 		if app.GameBuildVersion > 20501 then
 			local tbcAttunements = {
@@ -252,3 +255,4 @@ app:CreateWindow("Attunements", {
 		end
 	end,
 });
+end
