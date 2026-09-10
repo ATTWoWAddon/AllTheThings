@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "此窗口会根据筛选条件，显示所有你能够完成的任务。快去完成它们吧！\n\n注意：本窗口不会包含用于完成任务的任务物品，但会显示全部对应的任务奖励。",
 		-- TODO: tw = "",
 	},
 })

@@ -110,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									-- ko = "",
 									-- pt = "",
 									-- ru = "",
-									-- cn = "",
+									cn = "湿漉漉的巢穴",
 									-- tw = "",
 								},
 							}), {

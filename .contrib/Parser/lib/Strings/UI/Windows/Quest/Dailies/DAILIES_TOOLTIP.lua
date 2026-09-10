@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "你可以在 ATT 数据库中搜索所有日常任务。列出的全部任务状态均为「未完成」，尽管 ATT 有时会显示它们已完成。如果 ATT 里某条日常任务标记为「已完成」，仅代表你在对应声望（若存在）已达到崇拜。",
 		-- TODO: tw = "",
 	},
 })
