@@ -1374,8 +1374,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			-- #endif
 		["cost"] = {
 			{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
-			{ "i", 22057, 1 },	-- Brazier of Invocation
 		},
+		["provider"] = { "i", 22057 },	-- Brazier of Invocation
 		-- #if AFTER 10.1.5
 		-- This init function unmarks the removed from game flag for folks with the brazier.
 		["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,

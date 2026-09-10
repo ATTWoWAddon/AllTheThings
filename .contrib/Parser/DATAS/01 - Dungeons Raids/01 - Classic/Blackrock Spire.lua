@@ -288,7 +288,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Doomrigger's Clasp
 						["providers"] = {
 							{ "i",  12352 },	-- Doomrigger's Clasp
-							{ "o", 175382 },	-- Doomrigger's Coffer
+						},
+					}),
+					o(175382, {	-- Doomrigger's Coffer
+						-- #if BEFORE 4.0.3
+						["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
+						-- #endif
+						["groups"] = {
+							i(12352),	-- Doomrigger's Clasp
 						},
 					}),
 				},
@@ -851,7 +858,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Darkstone Tablet
 						["providers"] = {
 							{ "i",  12358 },	-- Darkstone Tablet
-							{ "o", 175385 },	-- Darkstone Tablet
 						},
 					}),
 					i(15860, {	-- Blinkstrike Armguards
@@ -859,6 +865,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(15861, {	-- Swiftfoot Treads
 						["timeline"] = { REMOVED_4_0_3 },
+					}),
+					o(175385, {	-- Darkstone Tablet
+						-- #if BEFORE 4.0.3
+						["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
+						-- #endif
+						["groups"] = {
+							i(12358),	-- Darkstone Tablet
+						},
 					}),
 				},
 			}),
@@ -1849,8 +1863,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 				["cost"] = {
 					{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
-					{ "i", 22057, 1 },	-- Brazier of Invocation
 				},
+				["provider"] = { "i", 22057 },	-- Brazier of Invocation
 				-- #if AFTER 4.0.3
 				-- This init function unmarks the removed from game flag for folks with the brazier.
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
@@ -2272,7 +2286,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			-- #if BEFORE 3.0.8
 			["cost"] = { { "i", 12344, 1 } },	-- Seal of Ascension
 			-- #endif
-			["timeline"] = { REMOVED_6_0_2 },
 			["groups"] = {
 				-- #if AFTER WRATH
 				n(ACHIEVEMENTS, {
@@ -2293,6 +2306,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #endif
 				n(ZONE_DROPS, {
 					i(12607, {	-- Brilliant Chromatic Scale
+						["timeline"] = { REMOVED_6_0_2 },
 						["crs"] = {
 							10447,	-- Chromatic Dragonspawn
 							10814,	-- Chromatic Elite Guard
@@ -2398,18 +2412,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							-- #endif
 						})),
 					},
-				}),
-				i(12358, {	-- Darkstone Tablet
-					-- #if BEFORE 4.0.3
-					["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
-					-- #endif
-					["provider"] = { "o", 175385 },	-- Darkstone Tablet
-				}),
-				i(12352, {	-- Doomrigger's Clasp
-					-- #if BEFORE 4.0.3
-					["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
-					-- #endif
-					["provider"] = { "o", 175382 },	-- Doomrigger's Coffer
 				}),
 				i(13371, {	-- Father Flame
 					-- #if BEFORE 6.0.2
@@ -2939,9 +2941,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
-						{ "i", 22057, 1 },	-- Brazier of Invocation
 					},
 					-- #endif
+					["provider"] = { "i", 22057 },	-- Brazier of Invocation
 					-- #if AFTER 4.0.3
 					-- This init function unmarks the removed from game flag for folks with the brazier.
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,

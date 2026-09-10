@@ -3909,6 +3909,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
+				n(16014, {	-- Mux Manascrambler
+					["coord"] = { 52.4, 28.3, TANARIS },
+					--[[ TODO: add a sourceQuest conditional visibility trigger
+					["groups"] = {
+						i(22115, {	-- Extra-Dimensional Ghost Revealer
+							["sourceQuests"] = {
+								8978,	-- Return to Mokvar
+								8977,	-- Return to Deliana
+							},
+							["sourceQuestNumRequired"] = 1,
+						}),
+					},--]]
+				}),
 				n(43418, {	-- Sprinkle Noggenfogger <Noggenfogger Elixir>
 					["coord"] = { 52.4, 27.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },

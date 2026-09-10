@@ -1382,8 +1382,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 						["cost"] = {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
-							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
+						["provider"] = { "i", 22057 },	-- Brazier of Invocation
 						-- #if AFTER 10.1.5
 						-- This init function unmarks the removed from game flag for folks with the brazier.
 						["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,

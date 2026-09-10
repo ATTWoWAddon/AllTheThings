@@ -1494,8 +1494,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
-							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
+						["provider"] = { "i", 22057 },	-- Brazier of Invocation
 						-- #if AFTER 4.0.3
 						-- This init function unmarks the removed from game flag for folks with the brazier.
 						["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,

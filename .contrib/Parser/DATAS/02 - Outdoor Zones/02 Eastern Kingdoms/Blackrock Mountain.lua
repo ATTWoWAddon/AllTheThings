@@ -77,6 +77,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_8_0_1 },
 				}),
+				n(16033, {	-- Bodley
+					["coord"] = { 63.1, 44.4, BLACKROCK_MOUNTAIN },
+					["provider"] = { "i", 22115 },	-- Extra-Dimensional Ghost Revealer
+					--[[ TODO: add a sourceQuest conditional visibility trigger for groups
+					["groups"] = {
+						i(22057, {	-- Brazier of Invocation
+							["sourceQuests"] = {
+								8996,	-- Return to Bodley
+							},
+						}),
+					},
+					--]]
+				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
