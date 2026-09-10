@@ -3641,7 +3641,7 @@ i(12205,{coords={
 [70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in previously higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh."}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source."}),
 i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225}})})}),
-x(2,{awp=20001,g={
+x(2,{awp=20003,g={
 flt(3,{
 s(10068,25043,{f=3,lvl=27}),
 s(10066,25041,{f=3,lvl=27}),
@@ -4767,9 +4767,9 @@ r(34007,{itemID=28279,requireSkill=333,skillID=2493}),
 r(27948,{itemID=22542,requireSkill=333,skillID=2493}),
 r(27913,{itemID=22532,requireSkill=333,skillID=2493}),
 r(33992,{itemID=28270,requireSkill=333,skillID=2493}),
-r(27962,{itemID=22548,requireSkill=333,rwp=50004,u=2}),
+r(27962,{awp=20001,itemID=22548,requireSkill=333,rwp=50004,u=2}),
 r(27946,{itemID=22540,requireSkill=333,skillID=2493}),
-r(27947,{itemID=22541,requireSkill=333,rwp=50004,u=2}),
+r(27947,{awp=20001,itemID=22541,requireSkill=333,rwp=50004,u=2}),
 r(28004,{itemID=22557,requireSkill=333,skillID=2493}),
 r(27972,{itemID=22553,requireSkill=333,skillID=2493}),
 r(28003,{itemID=22558,requireSkill=333,skillID=2493})}),

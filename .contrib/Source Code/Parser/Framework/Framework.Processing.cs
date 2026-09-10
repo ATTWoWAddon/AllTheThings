@@ -294,7 +294,7 @@ namespace ATT
                 Objects.AllContainers["Unsorted"] = unsorted = new List<object>();
             }
             var expansionLists = new Dictionary<int, TierList>();
-            int maxExpansionID = 11;// LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
+            int maxExpansionID = 12;// LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
             for (int expansionID = 1; expansionID <= maxExpansionID; ++expansionID)
             {
                 // ensure the expansion group exists
@@ -331,7 +331,8 @@ namespace ATT
                         else if (itemID < 174366) expansion = expansionLists[8];   // Battle For Azeroth
                         else if (itemID < 190311) expansion = expansionLists[9];   // Shadowlands
                         else if (itemID < 226145) expansion = expansionLists[10];   // Dragonflight
-                        else expansion = expansionLists[11];   // The War Within
+                        else if (itemID < 270000) expansion = expansionLists[11];   // The War Within
+                        else expansion = expansionLists[12];   // Midnight
                     }
                     // sort by level into expansion if not an item
                     else if (level.HasValue)
@@ -346,7 +347,8 @@ namespace ATT
                         else if (level <= 50) expansion = expansionLists[8];   // Battle For Azeroth
                         else if (level <= 60) expansion = expansionLists[9];   // Shadowlands
                         else if (level <= 70) expansion = expansionLists[10];   // Dragonflight
-                        else expansion = expansionLists[11];   // The War Within
+                        else if (level <= 80) expansion = expansionLists[11];   // The War Within
+                        else expansion = expansionLists[12];   // Midnight
                     }
                     // default expansion assignment
                     else expansion = expansionLists[1];

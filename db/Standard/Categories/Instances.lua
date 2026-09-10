@@ -3950,7 +3950,7 @@ s(7263,18313,{b=1,f=6,loc=40,lvl=15}),
 s(7256,18306,{b=1,f=4,loc=44,lvl=15}),
 i(18315,{b=1,f=52,lvl=15})}}),
 n(11491,{description="Talk to him for him to break down the door."}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16097,{cost={{"i",22057,1},{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",qis={21984,22046},rwp=40003,u=2,g={
+n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",providers={{"i",22057}},qis={21984,22046},rwp=40003,u=2,g={
 s(8784,22315,{b=1,f=23,lvl=23,u=6}),
 s(8783,22314,{b=1,f=29,lvl=23,u=6}),
 s(8778,22304,{b=1,c={5,8,9},f=4,loc=44,lvl=23,u=6}),
@@ -4373,7 +4373,8 @@ s(6485,15860,{b=1,f=7,loc=43,u=2}),
 s(6486,15861,{b=1,f=5,loc=47,u=2})}}),
 q(4764,{coords={
 [36]={{84.8,69}}},qgs={9565},qis={12352},r=2,rwp=40003,sourceQuests={4766},u=2,g={
-o(175382)}}),
+o(175382,{u=2,g={
+i(12352,{u=2})}})}}),
 q(6502,{coords={
 [83]={{54.55,51.2}}},qgs={10929},qis={16663},r=2,rwp=30002,sourceQuests={6501},u=2,g={
 i(16309,{b=1,f=51,lvl=21,u=2})}}),
@@ -4464,7 +4465,8 @@ q(4768,{coords={
 [15]={{3,47.6}}},qgs={9078},qis={12358},r=1,rwp=40003,sourceQuests={4769},u=2,g={
 s(6485,15860,{b=1,f=7,loc=43,u=2}),
 s(6486,15861,{b=1,f=5,loc=47,u=2}),
-o(175385)}}),
+o(175385,{u=2,g={
+i(12358,{u=2})}})}}),
 q(5127,{coords={
 [83]={{63.8,73.8}}},cost={{"i",12848,1}},crs={10899},learnedAt=275,qgs={10918},qis={12806,12847},requireSkill=164,rwp=40003,sourceQuests={5126},u=2,g={
 r(16667,{itemID=12696,requireSkill=164,skillID=2477,u=2}),
@@ -4598,7 +4600,7 @@ i(13177,{b=1,f=51,lvl=23}),
 s(4784,13179,{b=1,f=6,loc=43,lvl=23}),
 s(6807,16676,{f=6,loc=44,lvl=23,rwp=40003,u=2}),
 s(8748,22231,{b=1,f=4,loc=47,lvl=23})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16080,{cost={{"i",22057,1},{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",qis={21984,22046},rwp=40003,u=2,g={
+n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",providers={{"i",22057}},qis={21984,22046},rwp=40003,u=2,g={
 s(8788,22322,{b=1,f=23,lvl=23,u=6}),
 s(8787,22319,{b=1,f=1,lvl=23,u=6}),
 s(8789,22325,{b=1,f=5,loc=45,lvl=23,u=6}),
@@ -4670,16 +4672,16 @@ s(6810,16679,{b=1,f=6,loc=41,lvl=23,rwp=40003,u=2}),
 i(13143,{b=1,f=52,lvl=23,spellID=17252}),
 i(13164,{b=1,f=53,lvl=23,rwp=40003,spellID=17275,u=2}),
 i(22321,{b=1,f=53,lvl=23,spellID=27656})}}),
-h(-354,{rwp=60002,u=2,g={
-h(-12,{awp=30002,u=2,g={
-ach(2188,{providers={{"n",10161},{"o",175124}},u=2,g={
+h(-354,{
+h(-12,{awp=30002,g={
+ach(2188,{providers={{"n",10161},{"o",175124}},rwp=60002,u=2,g={
 title(110,{style=2})}})}}),
-h(-63,{u=2,g={
-i(12607,{crs={10442,10447,10814},u=2}),
-r(20030,{crs={10317},itemID=16247,requireSkill=333,skillID=2494,u=2}),
+h(-63,{
+i(12607,{crs={10442,10447,10814},rwp=60002,u=2}),
+r(20030,{crs={10317},itemID=16247,requireSkill=333,rwp=60002,skillID=2494,u=2}),
 i(24102,{c={4},crs={10318},f=200,lvl=25,rwp=40001,u=2}),
-r(19100,{awp=50004,crs={10318},itemID=15774,requireSkill=165,skillID=2532,u=2})}}),
-n(9816,{u=2,g={
+r(19100,{awp=50004,crs={10318},itemID=15774,requireSkill=165,rwp=60002,skillID=2532,u=2})}),
+n(9816,{rwp=60002,u=2,g={
 i(21988,{rwp=40003,u=2}),
 i(17322,{rwp=30008,u=2}),
 i(12929,{b=1,f=51,lvl=23,u=2}),
@@ -4688,21 +4690,19 @@ s(4587,12927,{b=1,f=5,loc=41,lvl=23,u=2}),
 s(6803,16672,{f=6,loc=44,lvl=23,rwp=40003,u=2}),
 i(12926,{b=1,f=52,lvl=23,u=2}),
 i(23320,{c={7},f=200,lvl=25,rwp=40001,u=2})}}),
-i(12358,{providers={{"o",175385}},u=2}),
-i(12352,{providers={{"o",175382}},u=2}),
-s(4853,13371,{b=1,f=1,providers={{"o",175245}},u=2}),
-n(10264,{u=2,g={
+s(4853,13371,{b=1,f=1,providers={{"o",175245}},rwp=60002,u=2}),
+n(10264,{rwp=60002,u=2,g={
 r(23081,{itemID=18657,requireSkill=202,skillID=2506,u=2}),
 s(6826,16695,{b=1,f=4,loc=41,lvl=23,rwp=40003,u=2}),
 s(4476,12603,{b=1,f=5,loc=42,lvl=23,u=2}),
 s(4481,12609,{b=1,f=4,loc=42,lvl=23,u=2}),
 s(4479,12606,{b=1,f=5,loc=45,lvl=23,u=2}),
 s(4470,12589,{b=1,f=4,loc=45,lvl=23,u=2})}}),
-n(10509,{description="This is a Rare Creature and, as such, is not always present.",u=2,g={
+n(10509,{description="This is a Rare Creature and, as such, is not always present.",rwp=60002,u=2,g={
 s(4478,12605,{b=1,f=27,lvl=23,u=2}),
 s(4477,12604,{b=1,f=4,loc=40,lvl=23,u=2}),
 i(12930,{b=1,f=53,lvl=23,u=2})}}),
-n(10899,{u=2,g={
+n(10899,{rwp=60002,u=2,g={
 i(18779,{rwp=40001,u=2}),
 i(12848,{b=1,providers={{"o",175970}},rwp=40003,spellID=17048,u=2}),
 r(16990,{itemID=12834,requireSkill=164,skillID=2477,u=2}),
@@ -4712,7 +4712,7 @@ s(7224,18048,{b=1,f=23,lvl=23,u=2}),
 s(4890,13502,{b=1,f=7,loc=45,lvl=23,u=2}),
 s(4889,13498,{b=1,f=7,loc=46,lvl=23,u=2}),
 s(7223,18047,{b=1,f=6,loc=47,lvl=23,u=2})}}),
-n(10339,{u=2,g={
+n(10339,{rwp=60002,u=2,g={
 r(17638,{itemID=13522,requireSkill=171,rwp=50004,u=2}),
 i(12871,{b=1,u=2}),
 s(4605,12953,{b=1,f=6,loc=40,lvl=23,u=2}),
@@ -4720,7 +4720,7 @@ s(8746,22225,{b=1,f=4,loc=40,lvl=23,u=2}),
 s(4604,12952,{b=1,f=7,loc=40,lvl=23,u=2}),
 s(4607,12960,{b=1,f=5,loc=40,lvl=23,u=2}),
 s(6800,16669,{b=1,f=6,loc=41,lvl=23,rwp=40003,u=2})}}),
-n(10429,{u=2,g={
+n(10429,{rwp=60002,u=2,g={
 i(12630,{rwp=40003,u=2}),
 s(4466,12583,{b=1,f=29,lvl=23,spellID=265416,u=2}),
 s(4596,12940,{b=1,f=25,lvl=23,u=2}),
@@ -4735,7 +4735,7 @@ s(4592,12935,{b=1,f=7,loc=46,lvl=23,u=2}),
 s(7228,18102,{b=1,f=4,loc=47,lvl=23,u=2}),
 s(8755,22247,{b=1,f=4,loc=47,lvl=23,u=2}),
 i(18103,{b=1,f=52,lvl=23,u=2})}}),
-n(10430,{u=2,g={
+n(10430,{rwp=60002,u=2,g={
 i(24101,{c={11},f=200,lvl=25,rwp=40001,u=2}),
 s(4511,12709,{b=1,f=20,lvl=23,spellID=398413,u=2}),
 s(4616,12969,{b=1,f=24,lvl=23,spellID=265408,u=2}),
@@ -4749,7 +4749,7 @@ s(4611,12964,{b=1,f=6,loc=46,lvl=23,u=2}),
 s(8781,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=23,rwp=40003,u=2}),
 prof(393,{u=2,g={
 i(12731,{u=2})}})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16042,{u=2,g={
+n(16042,{providers={{"i",22057}},rwp=60002,u=2,g={
 s(8796,22336,{b=1,f=8,lvl=23,u=6}),
 s(8795,22335,{b=1,f=28,lvl=23,u=6}),
 s(8776,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=24,u=6}),
@@ -4758,7 +4758,7 @@ s(8797,22337,{b=1,f=3,lvl=23,u=6}),
 s(8800,22343,{b=1,f=6,loc=44,lvl=23,u=6}),
 s(8799,22342,{b=1,f=4,loc=46,lvl=23,u=6}),
 i(22339,{b=1,f=52,lvl=23,u=6})}})),
-n(10363,{u=2,g={
+n(10363,{rwp=60002,u=2,g={
 ach(1307,{u=2}),
 i(16663,{rwp=40003,u=2}),
 r(19054,{b=1,itemID=15730,requireSkill=165,skillID=2532,u=2}),
@@ -4780,7 +4780,7 @@ s(6837,16706,{b=1,f=5,loc=42,lvl=24,rwp=40003,u=2}),
 s(8761,22269,{b=1,f=3,lvl=23,u=2}),
 s(4766,13142,{b=1,f=7,loc=45,lvl=23,u=2}),
 i(13098,{b=1,f=52,lvl=23,u=2}),
-i(22268,{b=1,f=53,lvl=23,spellID=27675,u=2})}})}})}}),
+i(22268,{b=1,f=53,lvl=23,spellID=27675,u=2})}})})}}),
 inst(232,{coords={
 [66]={{35.7,55.5}}},mapID=280,maps={67,68,281},savedInstanceID=349,["zone-text-areaID"]=2100,g={
 h(-45,{
@@ -5903,7 +5903,7 @@ s(5348,14340,{b=1,f=4,loc=42,lvl=17,modID=1}),
 s(5437,14502,{b=1,f=5,loc=45,lvl=17,modID=1}),
 s(5439,14522,{b=1,f=6,loc=46,lvl=17,modID=1}),
 s(7436,18694,{b=1,f=6,loc=47,lvl=17,modID=1})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16118,{awp=100105,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",g={
+n(16118,{awp=100105,cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",providers={{"i",22057}},g={
 s(8793,22332,{b=1,f=25,lvl=17,modID=1}),
 s(8794,22333,{b=1,f=24,lvl=17,modID=1}),
 s(8777,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=24,modID=1,rwp=40003,u=2}),
@@ -6703,7 +6703,7 @@ s(7453,18720,{b=1,f=4,loc=41,lvl=18}),
 s(4847,13358,{b=1,f=5,loc=41,lvl=18}),
 s(4852,13369,{b=1,f=4,loc=47,lvl=18}),
 s(6856,16725,{b=1,f=7,loc=47,lvl=23,rwp=40003,u=2})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-o(181083,{awp=100105,cost={{"i",22057,1},{"i",22051,1}},crs={16101,16102},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",qis={21984,22046},g={
+o(181083,{awp=100105,cost={{"i",22051,1}},crs={16101,16102},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",providers={{"i",22057}},qis={21984,22046},g={
 s(8791,22329,{b=1,f=1,lvl=24}),
 i(22327,{b=1,f=51,lvl=24}),
 s(8775,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=24}),

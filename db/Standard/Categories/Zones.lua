@@ -18784,6 +18784,8 @@ r(23489,{learnedAt=285,requireSkill=20219,skillID=2506})}}),
 n(5411,{coords={
 [71]={{51.2,30.2}}},g={
 r(3503,{isLimited=1,itemID=6047,requireSkill=164,skillID=2477})}}),
+n(16014,{coords={
+[71]={{52.4,28.3}}}}),
 n(43418,{awp=40003,coords={
 [71]={{52.4,27.8}}},crs={98844},g={
 i(8529,{b=1,f=55,spellID=16589})}}),
@@ -28738,9 +28740,11 @@ n(8924,{coords={
 [35]={{37.8,61.3},{47.6,62}}},g={
 i(19259,{spellID=23678}),
 s(4194,11603,{f=34,lvl=22})}})}),
-h(-55,{awp=80001,g={
-hqt(53656,{coords={
-[35]={{66.1,96.6}}},providers={{"i",163213},{"n",143129}},r=1,sourceQuests={53655}})}})}}),
+h(-55,{
+hqt(53656,{awp=80001,coords={
+[35]={{66.1,96.6}}},providers={{"i",163213},{"n",143129}},r=1,sourceQuests={53655}}),
+n(16033,{coords={
+[33]={{63.1,44.4}}},providers={{"i",22115}}})})}}),
 m(17,{crs={88206},icon=236720,lore="The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",petBattleLvl=16,lvl=15,g={
 h(-12,{
 ach(4909,{awp=40003,g={
@@ -165880,6 +165884,20 @@ n(250982,{coords={
 de(1236,{cost={{"c",2815,3000}},itemID=245330,spellID=1238430}),
 de(714,{cost={{"c",2815,3000}},itemID=245284,spellID=1238378}),
 de(1227,{cost={{"c",2815,5000}},itemID=251997,spellID=1253829})}}),
+n(264056,{awp=120005,coords={
+[2393]={{31.6,76.7}}},g={
+de(22010,{cost={{"c",3316,200}},itemID=272445,spellID=1291118}),
+de(22007,{cost={{"c",3316,300}},itemID=272442,spellID=1291115}),
+de(22011,{cost={{"c",3316,200}},itemID=272446,spellID=1291119}),
+de(21101,{cost={{"c",3316,250}},itemID=269636,spellID=1285875}),
+de(21079,{cost={{"c",3316,350}},itemID=269613,spellID=1285829}),
+de(21106,{cost={{"c",3316,400}},itemID=269641,spellID=1285933}),
+de(21602,{cost={{"c",3316,750}},itemID=271162,spellID=1288729}),
+de(21080,{cost={{"c",3316,250}},itemID=269614,spellID=1285830}),
+de(19763,{cost={{"c",3316,400}},itemID=268457,spellID=1282449}),
+de(22009,{cost={{"c",3316,200}},itemID=272444,spellID=1291117}),
+de(22006,{cost={{"c",3316,200}},itemID=272441,spellID=1291114}),
+de(22008,{cost={{"c",3316,300}},itemID=272443,spellID=1291116})}}),
 n(257939,{coords={
 [2393]={{41.8,66.9}}},g={
 flt(4,{
@@ -170954,6 +170972,8 @@ q(95662,{coords={
 [2512]={{58,48.8}}},isWorldQuest=1}),
 q(93671,{coords={
 [2512]={{64.7,60.6}}},isWorldQuest=1,qis={265622}}),
+q(94571,{coords={
+[2512]={{67.1,63.4}}},isWorldQuest=1,qis={265399}}),
 q(93672,{coords={
 [2512]={{45.7,12.8}}},isWorldQuest=1}),
 q(94612,{coords={
