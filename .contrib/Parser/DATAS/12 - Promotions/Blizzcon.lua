@@ -240,14 +240,17 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	-- 2 Hours: 200x Trader's Tender
 	i(263303, {	-- Cuddly Blue Grrgle (DECOR!)
 		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 4 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.5.00000" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["u"] = IGNORED_VALUE,
 	}),
 	i(263449, {	-- Fluffy Comfy Flying Quilt (MOUNT!)
 		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.5.00000" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["u"] = IGNORED_VALUE,
 	}),
 	i(279590, {	-- Venomous Champion's Illustrious Banner (TOY!)
 		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
-		["timeline"] = { ADDED_12_1_0, "removed 12.1.5.00000" },
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["u"] = IGNORED_VALUE,
 	}),
 })));
