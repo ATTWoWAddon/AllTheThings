@@ -3987,7 +3987,7 @@ local function OnLOOT_READY()
 			for itemID in pairs(missingLootItems) do
 				o = SearchForObject("itemID", itemID)
 				-- don't report missing items when verifying loot, we probably don't care about sourcing them
-				if o._missing then
+				if o and o._missing then
 					missingLootItems[itemID] = nil
 					app.PrintDebug("removed missing scanned loot",app:SearchLink(o))
 				end
