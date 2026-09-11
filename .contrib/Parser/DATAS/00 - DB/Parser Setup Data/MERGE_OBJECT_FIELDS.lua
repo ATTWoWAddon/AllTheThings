@@ -24,10 +24,14 @@ MERGE_OBJECT_FIELDS = {
 -- but dictates the allowed fields from any given Object which may be merged into matching
 -- Objects elsewhere
 MERGE_FROM_OBJECT_FIELDS = {
+	artifactID = { "races" },
 	speciesID = { "pb" },
 	instanceID = { "isRaid" },
 	mapID = { "maps" },
 	questID = { "sourceQuests", "isBreadcrumb", "nextQuests" },
+	itemID = { "collectible","c","customCollect","isWeekly","isYearly","isDaily","r","type","sourceQuests","sourceAchievements",},
+	sourceID = { "requireSkill","races" },
+	spellID = { "requireSkill", },
 	-- #IF ANYCLASSIC
 	-- Still some Recipes defining requireSkill directly on objects rather than using ProfessionDB
 	recipeID = { "requireSkill" },

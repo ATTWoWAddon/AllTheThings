@@ -167,6 +167,26 @@ namespace ATT
                 return GetNull(itemID);
             }
 
+            private static HashSet<string> _mergeFromObjectFields;
+            private static HashSet<string> MergeFromObjectFields
+            {
+                get
+                {
+                    if (_mergeFromObjectFields != null) return _mergeFromObjectFields;
+
+                    if (Objects.MERGE_FROM_OBJECT_FIELDS.TryGetValue("itemID", out var itemObjectMergeFields))
+                    {
+                        _mergeFromObjectFields = new HashSet<string>(itemObjectMergeFields);
+                    }
+                    else
+                    {
+                        _mergeFromObjectFields = new HashSet<string>();
+                    }
+
+                    return _mergeFromObjectFields;
+                }
+            }
+
             #endregion
 
             #region Export
@@ -317,7 +337,7 @@ namespace ATT
             /// <param name="item">The item dictionary to merge into.</param>
             /// <param name="field">The name of the field being merged.</param>
             /// <param name="value">The value of the merged field.</param>
-            public static void Merge(IDictionary<string, object> item, string field, object value)
+            private static void Merge(IDictionary<string, object> item, string field, object value)
             {
                 if (value is string v && v == IgnoredValue)
                     return;
@@ -697,7 +717,14 @@ namespace ATT
                     if (item != null)
                     {
                         // don't merge _drop fields into a data which defines those fields to be dropped
-                        foreach (var pair in data.WithoutDrops(item)) Merge(item, pair.Key, pair.Value);
+                        foreach (var pair in data.WithoutDrops(item))
+                        {
+                            // don't merge fields which are not defined in the MergeFromObjectFields list
+                            if (MergeFromObjectFields.Contains(pair.Key))
+                            {
+                                Merge(item, pair.Key, pair.Value);
+                            }
+                        }
                     }
                     else if (data["itemID"].TryConvert(out long itemID) && itemID > 0)
                     {
