@@ -2319,6 +2319,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18754),	-- Fel Hardened Bracers
 						},
 					}),
+					n(16032, {	-- Falrin Treeshaper <House of Shen'dralar>
+						["description"] = "Found in the Dire Maul Library.",
+						["groups"] = {
+							n(SPECIAL, {
+								["description"] = "Available if a specific Quest (9015) has been completed.",
+								["sourceQuest"] = 9015,	-- The Challenge
+								["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+								["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
+								["groups"] = {
+									i(21986),	-- Banner of Provocation
+								},
+							}),
+						},
+					}),
 					e(410, {	-- Prince Tortheldrin
 						["creatureID"] = 11486,
 						["groups"] = {

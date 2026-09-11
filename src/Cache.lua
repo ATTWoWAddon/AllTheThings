@@ -664,6 +664,14 @@ end
 fieldConverters.sourceID = function(group, value)
 	CacheField(group, "sourceID", value);
 end
+-- fieldConverters.c_s = function(group, sourceIDs)
+-- 	local __subcache = {parent=group}
+-- 	group.__subcache = __subcache
+-- 	for i=1,#sourceIDs do
+-- 		CacheField(__subcache, "sourceID", sourceIDs[i])
+-- 	end
+-- 	group.c_s = nil
+-- end
 
 -- Now that we have the runners and post scripts, we can declare the CacheFields method.
 --local GetTimePreciseSec = GetTimePreciseSec;
@@ -976,6 +984,32 @@ end
 do	-- PvP Rank Key Cache
 fieldConverters.pvprankID = function(group, value)
 	CacheField(group, "pvprankID", value);
+end
+end
+
+do	-- Async Runner keys
+local Runner = app.FunctionRunner
+app.AddEventHandler("OnInit", function() Runner.Run() end)
+local function CheckGroupSourceQuestsForUnlock(group)
+	local sqs = group.sourceQuests
+	if not sqs then return end	-- this should be verified by parser
+
+	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
+	local req = group.sqreq or #sqs
+	for i=1,#sqs do
+		if IsQuestFlaggedCompleted(sqs[i]) then
+			req = req - 1
+		end
+	end
+	if req <= 0 then
+		app.AssignFieldValue(group, "u", nil)
+		app.DirectGroupUpdate(group)
+	end
+end
+-- Removes the unobtainable marker from a group if the character has completed the necessary sourceQuests linked to the group
+fieldConverters.u_sqs = function(group, value)
+	Runner.Queue(CheckGroupSourceQuestsForUnlock, group)
+	group.u_sqs = nil
 end
 end
 --[[

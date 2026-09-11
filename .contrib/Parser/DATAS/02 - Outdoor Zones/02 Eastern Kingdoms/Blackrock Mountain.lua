@@ -80,15 +80,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(16033, {	-- Bodley
 					["coord"] = { 63.1, 44.4, BLACKROCK_MOUNTAIN },
 					["provider"] = { "i", 22115 },	-- Extra-Dimensional Ghost Revealer
-					--[[ TODO: add a sourceQuest conditional visibility trigger for groups
 					["groups"] = {
-						i(22057, {	-- Brazier of Invocation
-							["sourceQuests"] = {
-								8996,	-- Return to Bodley
+						n(SPECIAL, {
+							["description"] = "Available if a specific Quest (8996) has been completed.",
+							["sourceQuest"] = 8996,	-- Return to Bodley
+							["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+							["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
+							["groups"] = {
+								i(22057),	-- Brazier of Invocation
 							},
 						}),
 					},
-					--]]
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
