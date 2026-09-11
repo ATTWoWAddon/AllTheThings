@@ -1492,13 +1492,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {	-- Isalien
 						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
+						-- #if BEFORE 6.0.2
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 						},
+						-- #endif
 						["provider"] = { "i", 22057 },	-- Brazier of Invocation
 						-- #if AFTER 4.0.3
-						-- This init function unmarks the removed from game flag for folks with the brazier.
-						["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
+						["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
+						["sourceQuest"] = 8996,	-- Return to Bodley
+						["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
 						-- #endif
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {

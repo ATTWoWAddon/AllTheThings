@@ -2809,14 +2809,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16059, {	-- Theldren
-					["provider"] = { "o", 181074 },	-- Arena Spoils
-					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",
-					["cost"] = { { "i", 21986, 1 } },	-- Banner of Provocation
+					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: The Arena.",
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER 4.0.3
-					-- This init function unmarks the removed from game flag for folks with the brazier.
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
+					["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
+					["sourceQuest"] = 9015,	-- The Challenge
+					["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
 					-- #endif
+					["providers"] = {
+						{ "i", 21986 },	-- Banner of Provocation
+						{ "o", 181074 },	-- Arena Spoils
+					},
 					["groups"] = {
 						i(22047),	-- Top Piece of Lord Valthalak's Amulet
 						-- #if SEASON_OF_DISCOVERY

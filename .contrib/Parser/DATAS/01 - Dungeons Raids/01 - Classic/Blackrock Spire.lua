@@ -1866,11 +1866,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
 				},
 				-- #endif
-				["provider"] = { "i", 22057 },	-- Brazier of Invocation
+
 				-- #if AFTER 4.0.3
-				-- This init function unmarks the removed from game flag for folks with the brazier.
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
+				["sourceQuest"] = 8996,	-- Return to Bodley
+				["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
 				-- #endif
+
+				["provider"] = { "i", 22057 },	-- Brazier of Invocation
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
@@ -2945,12 +2948,31 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
 					},
 					-- #endif
-					["provider"] = { "i", 22057 },	-- Brazier of Invocation
-					-- #if AFTER 4.0.3
-					-- This init function unmarks the removed from game flag for folks with the brazier.
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
+
+					-- #if AFTER 11.0.0
+					["sourceQuest"] = 8996,	-- Return to Bodley
+					["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
+					-- #elseif AFTER 4.0.3
+						-- #if BEFORE 6.0.2
+						["u_providers"] = true,	-- remove the u flag if providers are available
+						-- #endif
 					-- #endif
-					["timeline"] = { REMOVED_6_0_2 },
+
+					["OnInit"] =
+						-- #if AFTER 11.0.0
+						FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
+						-- #elseif AFTER 4.0.3
+							-- #if BEFORE 6.0.2
+							FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
+							-- #else
+							nil,
+							-- #endif
+						-- #else
+						nil,
+						-- #endif
+
+					["provider"] = { "i", 22057 },	-- Brazier of Invocation
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(22336),	-- Draconian Aegis of the Legion
 						-- #if SEASON_OF_DISCOVERY

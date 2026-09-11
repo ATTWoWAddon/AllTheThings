@@ -47,26 +47,8 @@ end
 
 FUNCTION_TEMPLATES = {
 	OnInit = {
-		-- function unmarks the removed from game flag for folks with the brazier.
-		-- TODO: this seems to fail on login of a character... likely the Item APIs are not fully working yet prior to the character existing in the world
-		BrazierAccess = [[function(t)
-			if ]] .. WOWAPI_GetItemCount(22057) .. [[ > 0 then
-				t.u = nil;
-				for i,o in ipairs(t.g) do
-					if o.u and o.u == ]] .. CONDITIONALLY_AVAILABLE .. [[ then
-						o.u = nil;
-					end
-				end
-			else
-				t.u = ]] .. CONDITIONALLY_AVAILABLE .. [[;
-				for i,o in ipairs(t.g) do
-					if not o.u then
-						o.u = ]] .. CONDITIONALLY_AVAILABLE .. [[;
-					end
-				end
-			end
-			return t;
-		end]],
+		-- function applies the CONDITIONALLY_AVAILABLE phase to the group and nested content
+		ConditionallyAvailable = [[function(t) _.AssignFieldValue(t, "u", ]] .. CONDITIONALLY_AVAILABLE .. [[) return t end]],
 		GenerateShouldExcludeFromTooltipForBuffs = function(...)
 			local buffs = {...};
 			local OnInitName = "ShouldExcludeFromTooltipForBuffs_"..table.concat(buffs, "_")

@@ -1377,11 +1377,31 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 		},
 		-- #endif
-		["provider"] = { "i", 22057 },	-- Brazier of Invocation
+
 		-- #if AFTER 10.1.5
-		-- This init function unmarks the removed from game flag for folks with the brazier.
-		["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
+		["sourceQuest"] = 8996,	-- Return to Bodley
+		["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
+		-- #elseif AFTER 4.0.3
+			-- #if BEFORE 5.0.4
+			["u_providers"] = true,	-- remove the u flag if providers are available
+			-- #endif
 		-- #endif
+
+		["OnInit"] =
+			-- #if AFTER 10.1.5
+			FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
+			-- #elseif AFTER 4.0.3
+				-- #if BEFORE 5.0.4
+				FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
+				-- #else
+				nil,
+				-- #endif
+			-- #else
+			nil,
+			-- #endif
+
+		["provider"] = { "i", 22057 },	-- Brazier of Invocation
+		["timeline"] = { REMOVED_4_0_3 },
 		["groups"] = {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228026, {	-- Blade of Blackwood
