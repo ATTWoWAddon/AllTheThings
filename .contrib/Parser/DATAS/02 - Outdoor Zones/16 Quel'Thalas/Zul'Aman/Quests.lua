@@ -1663,7 +1663,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					-- ko = "",
 					-- pt = "",
 					-- ru = "",
-					-- cn = "",
+					cn = "往日火冲",
 					-- tw = "",
 				},
 			}), {

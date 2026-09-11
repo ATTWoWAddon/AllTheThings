@@ -15,7 +15,7 @@ AQIR_INVASIONS = createHeader({
 		--ko = "Aqir Invasions",
 		--pt = "Aqir Invasions",
 		--ru = "Aqir Invasions",
-		--cn = "Aqir Invasions",
+		cn = "亚基入侵",
 		--tw = "Aqir Invasions",
 	},
 });
