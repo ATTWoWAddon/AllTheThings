@@ -39,7 +39,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							--ko = "Portal Bridges",
 							--pt = "Portal Bridges",
 							--ru = "Portal Bridges",
-							--cn = "Portal Bridges",
+							cn = "传送门桥梁",
 							--tw = "Portal Bridges",
 						},
 						description = {
@@ -52,7 +52,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							-- TODO: ko = "",
 							-- TODO: pt = "",
 							-- TODO: ru = "",
-							-- TODO: cn = "",
+							cn = "传送门桥梁是一种传送装置，可让你在瓦尔各地瞬间移动。",
 							-- TODO: tw = "",
 						},
 					}), {
