@@ -2808,35 +2808,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11623),	-- Spritecaster Cape
 					},
 				}),
-				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16059, {	-- Theldren
-					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: The Arena.",
-					["timeline"] = { REMOVED_4_0_3 },
-					-- #if AFTER 4.0.3
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
-					["sourceQuest"] = 9015,	-- The Challenge
-					["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
-					-- #endif
-					["providers"] = {
-						{ "i", 21986 },	-- Banner of Provocation
-						{ "o", 181074 },	-- Arena Spoils
-					},
-					["groups"] = {
-						i(22047),	-- Top Piece of Lord Valthalak's Amulet
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(228700, {	-- Ironweave Mantle
-							["timeline"] = { ADDED_1_15_3 },
-						})),
-						-- #endif
-						i(22305, {	-- Ironweave Mantle
-							-- #if SEASON_OF_DISCOVERY
-							["timeline"] = { REMOVED_1_15_3 },
-							-- #endif
-						}),
-						i(22317),	-- Lefty's Brass Knuckle
-						i(22318),	-- Malgen's Long Bow
-						i(22330),	-- Shroud of Arcane Mastery
-					},
-				})),
 				e(372, {	-- Ring of Law
 					["description"] = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
 					["creatureID"] = 10096,	-- High Justice Grimstone
@@ -2973,6 +2944,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #endif
 							}),
 						}),
+						applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16059, {	-- Theldren
+							["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",
+							["timeline"] = { REMOVED_4_0_3 },
+							-- #if AFTER 4.0.3
+							["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
+							["sourceQuest"] = 9015,	-- The Challenge
+							["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
+							-- #endif
+							["providers"] = {
+								{ "i", 21986 },	-- Banner of Provocation
+								{ "o", 181074 },	-- Arena Spoils
+							},
+							["groups"] = {
+								i(22047),	-- Top Piece of Lord Valthalak's Amulet
+								-- #if SEASON_OF_DISCOVERY
+								applyclassicphase(SOD_PHASE_FOUR, i(228700, {	-- Ironweave Mantle
+									["timeline"] = { ADDED_1_15_3 },
+								})),
+								-- #endif
+								i(22305, {	-- Ironweave Mantle
+									-- #if SEASON_OF_DISCOVERY
+									["timeline"] = { REMOVED_1_15_3 },
+									-- #endif
+								}),
+								i(22317),	-- Lefty's Brass Knuckle
+								i(22318),	-- Malgen's Long Bow
+								i(22330),	-- Shroud of Arcane Mastery
+							},
+						})),
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
