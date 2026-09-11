@@ -280,12 +280,34 @@ local function CreateRunner(name)
 	-- Provides a utility which will process a given number of functions each frame in a Queue
 	local Runner = {
 		-- Adds a function to be run with any necessary parameters
+		-- Can be called with no parameters to simply begin the Runner's queue
 		Run = function(func, ...)
+			if func then
+				if type(func) ~= "function" then
+					error("Must be a 'function' type!")
+				end
+				FunctionQueue[QueueIndex] = func;
+				-- app.PrintDebug("FR.Run."..name,QueueIndex,...)
+				local arrs = select("#", ...);
+				if arrs == 1 then
+					ParameterSingleQueue[QueueIndex] = ...;
+				elseif arrs > 1 then
+					ParameterBucketQueue[QueueIndex] = { ... };
+				end
+				QueueIndex = QueueIndex + 1;
+			end
+			-- Only push the coroutine onto the Stack once until it is completed
+			if Pushed then return; end
+			Pushed = true;
+			Push(nil, Name, StackRun);
+		end,
+		-- Adds a function with any necessary parameters but does not Run it yet
+		Queue = function(func, ...)
 			if type(func) ~= "function" then
 				error("Must be a 'function' type!")
 			end
 			FunctionQueue[QueueIndex] = func;
-			-- app.PrintDebug("FR.Add."..name,QueueIndex,...)
+			-- app.PrintDebug("FR.Queue."..name,QueueIndex,...)
 			local arrs = select("#", ...);
 			if arrs == 1 then
 				ParameterSingleQueue[QueueIndex] = ...;
@@ -293,10 +315,6 @@ local function CreateRunner(name)
 				ParameterBucketQueue[QueueIndex] = { ... };
 			end
 			QueueIndex = QueueIndex + 1;
-			-- Only push the coroutine onto the Stack once until it is completed
-			if Pushed then return; end
-			Pushed = true;
-			Push(nil, Name, StackRun);
 		end,
 		-- Set a function to be run once the queue is empty. This function takes no parameters.
 		OnEnd = function(func)
