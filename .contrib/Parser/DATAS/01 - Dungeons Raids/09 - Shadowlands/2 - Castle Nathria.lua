@@ -10,7 +10,7 @@ LEECHING_VAULTS_HEADER = createHeader({
 	},
 	description = {
 		en = "The first LFR wing, featuring Huntsman Altimor, Hungering Destroyer, and Lady Inerva Darkvein.",
-		cn = "随机团队副本第一区，以猎手阿尔迪莫、饥饿的毁灭者和伊涅瓦·暗脉女勋爵为特色 BOSS",
+		cn = "随机团队副本第一区，以猎手阿尔迪莫、饥饿的毁灭者和伊涅瓦·暗脉女勋爵为特色首领。",
 	},
 });
 RELIQUARY_OF_OPULENCE_HEADER = createHeader({
@@ -21,7 +21,7 @@ RELIQUARY_OF_OPULENCE_HEADER = createHeader({
 	},
 	description = {
 		en = "The second LFR wing, featuring Artificer Xy'mox, Sun King's Salvation, and The Council of Blood.",
-		cn = "随机团队副本第二区，以圣物匠赛·墨克斯、太阳之王的救赎和猩红议会为特色 BOSS",
+		cn = "随机团队副本第二区，以圣物匠赛·墨克斯、太阳之王的救赎和猩红议会为特色首领。",
 	},
 });
 BLOOD_FROM_STONE_HEADER = createHeader({
@@ -32,7 +32,7 @@ BLOOD_FROM_STONE_HEADER = createHeader({
 	},
 	description = {
 		en = "The third LFR wing, featuring Shriekwing, Sludgefist, and Stone Legion Generals.",
-		cn = "随机团队副本第三区，其中的首领包括啸翼、泥拳以及顽石军团干将",
+		cn = "随机团队副本第三区，其中的首领包括啸翼、泥拳以及顽石军团干将。",
 	},
 });
 AUDIENCE_WITH_ARROGANCE_HEADER = createHeader({
@@ -44,7 +44,7 @@ AUDIENCE_WITH_ARROGANCE_HEADER = createHeader({
 	},
 	description = {
 		en = "The fourth LFR wing, featuring Sire Denathrius.",
-		cn = "以德纳修斯大帝为特色的随机团队副本第四区",
+		cn = "以德纳修斯大帝为特色的随机团队副本第四区。",
 	},
 });
 

@@ -11,7 +11,7 @@ P7xx = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "补丁 7.x.x",
+		cn = "补丁7.x.x",
 		-- TODO: tw = "",
 	},
 });

@@ -22,7 +22,7 @@ MIDNIGHT_SEASONAL_PROMOTIONS = createHeader({
 		en = "These promotions happened during the time Midnight was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
 		es = "Estas promociones tuvieron lugar durante el tiempo en que Midnight era la expansión más reciente.\n\nSe enumeran en el orden en que aparecieron por primera vez.",
 		mx = "Estas promociones sucedieron durante el tiempo en que Midnight era la expansión más reciente.\n\nSe listan en el orden en que aparecieron por primera vez.",
-		cn = "这些促销活动均发生在《至暗之夜（Midnight）》作为最新资料片的时期。以下按活动首次出现的时间顺序列出",
+		cn = "这些促销活动均发生在《至暗之夜》作为最新资料片的时期。以下按活动首次出现的时间顺序列出。",
 	},
 });
 RAZER = createHeader({
@@ -36,7 +36,7 @@ RAZER = createHeader({
 		en = "Razer x World of Warcraft Mount Giveaway. Starts on January 21 2025 at 10:00AM PST and ends on January 31, 2026 at 11:59PM PST. No purchase necessary.",
 		es = "Sorteo de montura Razer x World of Warcraft. Comienza el 21 de enero de 2025 a las 10:00 a. m. PST y finaliza el 31 de enero de 2026 a las 11:59 p. m. PST. No es necesario realizar ninguna compra.",
 		mx = "Sorteo de montura Razer x World of Warcraft. Comienza el 21 de enero de 2025 a las 10:00 a. m. PST y finaliza el 31 de enero de 2026 a las 11:59 p. m. PST. No es necesario comprar nada.",
-		cn = "雷蛇 ×《魔兽世界》坐骑抽奖活动,活动时间：2025 年 1 月 21 日太平洋时间上午 10:00 至 2026 年 1 月 31 日太平洋时间晚上 11:59,无需购买即可参与",
+		cn = "雷蛇 ×《魔兽世界》坐骑抽奖活动，活动时间：2025年1月21日太平洋时间上午10:00至2026年1月31日太平洋时间晚上11:59，无需购买即可参与。",
 	},
 });
 FANTA = createHeader({

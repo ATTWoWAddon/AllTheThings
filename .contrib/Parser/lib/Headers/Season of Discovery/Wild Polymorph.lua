@@ -24,7 +24,7 @@ WILD_POLYMORPH = createHeader({	-- Wild Polymorph
 		ko = "야생 변이에 걸린 동물에게 변이를 시전하여 그들을 다시 견습생으로 되돌리세요. 각자가 당신에게 메모를 줄 것입니다. 노트 6개를 모아 룬을 배워보세요.",
 		pt = "Lance Polymorph em criaturas afetadas por Wild Polymorph para transformá-las novamente em aprendizes. Cada um lhe dará uma nota. Colete 6 notas para aprender a runa.",
 		ru = "Примените «Превращение» к существам, пораженным «Диким превращением», чтобы снова превратить их в учеников. Каждый даст вам записку. Соберите 6 нот, чтобы выучить руну.",
-		cn = "对受到野生变形术影响的小动物施放变形术，将它们变回学徒。每个人都会给你一张纸条。收集 6 个笔记来学习符文。",
+		cn = "对受到野生变形术影响的小动物施放变形术，将它们变回学徒。每个人都会给你一张纸条。收集6个笔记来学习符文。",
 		-- TODO: tw = "",
 	},
 });

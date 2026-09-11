@@ -12,7 +12,7 @@ LOWER_BLACKROCK_SPIRE = createHeader({
 		en = "Also known as 'Lower' Blackrock Spire.",
 		es = "También conocida como 'Cumbre de Roca inferior'.",
 		mx = "También conocida como 'Cumbre de Roca inferior'.",
-		cn = "又称黑石塔下层",
+		cn = "又称黑石塔下层。",
 	},
 });
 UPPER_BLACKROCK_SPIRE = createHeader({

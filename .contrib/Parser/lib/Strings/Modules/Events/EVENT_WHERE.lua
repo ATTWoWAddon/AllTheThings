@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		ru = "Когда:",
 		-- TODO: ko = "",
-		cn = "地点:",
+		cn = "地点：",
 		tw = "地點:",
 	},
 })
