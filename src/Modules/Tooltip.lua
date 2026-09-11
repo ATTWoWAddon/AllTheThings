@@ -562,6 +562,29 @@ for i,guid in ipairs({
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
+-- Brazier of Invocation AskMe GUIDs
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
+	local leftSide = _G[SafeGetName(self) .. "TextLeft1"];
+	if leftSide then
+		leftSide:SetText(L.PLAYER_TOOLTIP_INVOCATOR:format(leftSide:GetText() or name));
+	end
+	local rightSide = _G[SafeGetName(self) .. "TextRight2"];
+	leftSide = _G[SafeGetName(self) .. "TextLeft2"];
+	if leftSide and rightSide and not ElvUI then
+		leftSide:SetText(L.TITLE);
+		leftSide:Show();
+		rightSide:SetText(L.PLAYER_TOOLTIP_INVOCATOR);
+		rightSide:Show();
+	else
+		self:AddDoubleLine(L.TITLE, L.PLAYER_TOOLTIP_INVOCATOR);
+	end
+end
+for i,guid in ipairs({
+	"Player-3675-0801D13E",	-- Sagarol-MoonGuard
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
 -- We need to whitelist the actual in-game tooltips that ATT is allowed to hook
 -- because all kinds of addons create their own tooltips and use them to do weird stuff behind the scenes
 -- and there's no reason for ATT to care when it's not even visible to a player
