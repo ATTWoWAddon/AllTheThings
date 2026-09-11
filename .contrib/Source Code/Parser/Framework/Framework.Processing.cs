@@ -192,6 +192,7 @@ namespace ATT
                 AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("objectiveID"), Validate_objectiveID);
             }
 
+            AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("objectID"), Validate_objectID);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("questID"), Validate_Quest);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("sym"), Validate_sym);
             AddHandlerAction(ParseStage.Validation, data => data.ContainsKey("factionID"), Validate_Faction);
@@ -2466,6 +2467,18 @@ namespace ATT
 
                 // track that this data had an inherited field
                 inheritedFields.Add(inheritedField);
+            }
+        }
+
+        private static void Validate_objectID(Data data)
+        {
+            if (!data.TryGetValue("objectID", out long objectID))
+                return;
+
+            // Warn about Objects which have 'qgs'
+            if (data.TryGetValue("qgs", out List<object> qgs))
+            {
+                LogWarn($"Objects should not have 'qgs' (quest givers) assigned! Use 'crs' or 'providers' {ToJSON(qgs)}", data);
             }
         }
 
@@ -4879,6 +4892,13 @@ namespace ATT
             // Return early if no timeline exists on the Thing
             if (!data.TryGetValue("timeline", out object timelineRef) || !(timelineRef is Timeline timeline))
                 return true;
+
+            // Empty timeline
+            if (timeline.EntryCount == 0)
+            {
+                LogError($"Timeline is empty. Either omit completely or assign valid data", data);
+                return false;
+            }
 
             // Warn if the first entry is a 'removing' change (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
             if (CurrentParseStage == ParseStage.Validation && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
