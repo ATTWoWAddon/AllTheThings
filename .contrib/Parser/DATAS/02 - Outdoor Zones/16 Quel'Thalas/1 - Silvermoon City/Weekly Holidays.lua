@@ -58,6 +58,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						i(250117, {	-- Cache of Quel'Thalas Treasures (H)
 							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 						}),
+						i(274713, {	-- Cache of Amani Treasures (H)
+							["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+						}),
 					},
 				}),
 			}),

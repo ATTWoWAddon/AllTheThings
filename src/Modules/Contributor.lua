@@ -1109,6 +1109,7 @@ MobileDB.GameObject = {
 	[195674] = true,	-- Aloe Thistle (q:14305)
 	[195686] = true,	-- Kawphi Plant (q:14131)
 	[195692] = true,	-- Cenarion Supply Crate (q:14316)
+	[195709] = true,	-- Champion's Cache [Trial of the Champion]
 	[196395] = true,	-- Defiled Relic (q:14333)
 	[197172] = true,	-- Smoke Bombs (q:42504)
 	[199329] = true,	-- Highborne Tablet (q:14486)
