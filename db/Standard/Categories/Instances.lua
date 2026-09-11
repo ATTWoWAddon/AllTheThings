@@ -1608,7 +1608,7 @@ s(8053,20260,{b=1,f=6,loc=46,lvl=25,u=2}),
 s(7850,19897,{b=1,f=4,loc=47,lvl=25,u=2}),
 i(19898,{b=1,f=52,lvl=25,u=2})}}),
 o(180366,{description="Fishermen with 300 skill can interact with this to receive the quest item.",requireSkill=356,u=2,g={
-i(19973,{u=2})}}),
+i(19973,{requireSkill=356,u=2})}}),
 n(15114,{cost={{"i",19975,5},{"i",19974,1}},description="You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",sourceQuests={8227},u=2,g={
 ach(560,{awp=30002,rwp=40100,u=2}),
 s(7873,19944,{b=1,f=28,lvl=25,u=2}),
@@ -3354,13 +3354,7 @@ e(371,{npcID=9319,g={
 s(4205,11628,{b=1,f=32,lvl=20,spellID=248218}),
 s(4206,11629,{b=1,f=31,lvl=20,spellID=248218}),
 s(4204,11627,{b=1,f=6,loc=47,lvl=20}),
-s(4200,11623,{b=1,f=3,lvl=20})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16059,{cost={{"i",21986,1}},description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",providers={{"o",181074}},rwp=40003,u=2,g={
-i(22047,{spellID=27739,u=6}),
-s(8779,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=23,u=6}),
-s(8785,22317,{b=1,f=34,lvl=22,u=6}),
-s(8786,22318,{b=1,f=32,lvl=22,u=6}),
-s(8792,22330,{b=1,f=3,lvl=22,u=6})}})),
+s(4200,11623,{b=1,f=3,lvl=20})}}),
 e(372,{description="Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",npcID=10096,g={
 n(9031,{
 s(4216,11677,{b=1,f=3,lvl=20}),
@@ -3392,7 +3386,13 @@ n(9030,{
 s(4214,11665,{b=1,f=5,loc=44,lvl=20}),
 s(4213,11662,{b=1,f=4,loc=45,lvl=20}),
 s(4226,11728,{b=1,f=6,loc=46,lvl=20}),
-i(11824,{b=1,f=52,lvl=20})})}}),
+i(11824,{b=1,f=52,lvl=20})}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=2,u_sqs=1,g={
+i(22047,{spellID=27739,u=6}),
+s(8779,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=23,u=6}),
+s(8785,22317,{b=1,f=34,lvl=22,u=6}),
+s(8786,22318,{b=1,f=32,lvl=22,u=6}),
+s(8792,22330,{b=1,f=3,lvl=22,u=6})}}))}}),
 e(377,{npcID=9016,g={
 s(4253,11803,{b=1,f=24,lvl=20,spellID=248168}),
 s(4254,11805,{b=1,f=23,lvl=20}),
@@ -3949,8 +3949,8 @@ s(7266,18319,{b=1,f=5,loc=40,lvl=15}),
 s(7263,18313,{b=1,f=6,loc=40,lvl=15}),
 s(7256,18306,{b=1,f=4,loc=44,lvl=15}),
 i(18315,{b=1,f=52,lvl=15})}}),
-n(11491,{description="Talk to him for him to break down the door."}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",providers={{"i",22057}},qis={21984,22046},rwp=40003,u=2,g={
+n(11491,{description="Talk to him for him to break down the door."}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+n(16097,{description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
 s(8784,22315,{b=1,f=23,lvl=23,u=6}),
 s(8783,22314,{b=1,f=29,lvl=23,u=6}),
 s(8778,22304,{b=1,c={5,8,9},f=4,loc=44,lvl=23,u=6}),
@@ -4007,20 +4007,23 @@ i(18288,{f=55,spellID=11009}),
 i(18287,{f=55,spellID=11008})}})}}),
 e(413,{description="Avoid him. His chest is empty.",npcID=14321}),
 e(414,{npcID=14323}),
-o(179501,{rwp=40003,sourceQuests={5525},u=2,g={
-i(18240,{b=1,u=2}),
-r(22866,{itemID=18414,requireSkill=197,skillID=2540,u=2}),
-r(22926,{itemID=18517,requireSkill=165,skillID=2532,u=2}),
-r(22870,{b=1,itemID=18418,requireSkill=197,skillID=2540,u=2}),
-r(22867,{b=1,itemID=18415,requireSkill=197,skillID=2540,u=2}),
-r(22921,{itemID=18514,requireSkill=165,skillID=2532,u=2}),
-r(22927,{itemID=18518,requireSkill=165,skillID=2532,u=2}),
-r(22868,{b=1,itemID=18416,requireSkill=197,skillID=2540,u=2}),
-r(22922,{itemID=18515,requireSkill=165,skillID=2532,u=2}),
-r(22869,{b=1,itemID=18417,requireSkill=197,skillID=2540,u=2}),
-r(22928,{itemID=18519,requireSkill=165,skillID=2532,u=2}),
-r(22923,{itemID=18516,requireSkill=165,skillID=2532,u=2})}}),
-o(179499,{description="Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",qgs={14351},g={
+n(14338,{awp=100105,g={
+r(22813,{awp=10200,learnedAt=285,requireSkill=197,skillID=2540,sourceQuests={27119}}),
+r(22815,{awp=10200,learnedAt=285,requireSkill=165,skillID=2532,sourceQuests={27119}})}}),
+o(179501,{sourceQuests={5525},g={
+i(18240,{b=1}),
+r(22866,{itemID=18414,requireSkill=197,skillID=2540}),
+r(22926,{itemID=18517,requireSkill=165,skillID=2532}),
+r(22870,{b=1,itemID=18418,requireSkill=197,skillID=2540}),
+r(22867,{b=1,itemID=18415,requireSkill=197,skillID=2540}),
+r(22921,{itemID=18514,requireSkill=165,skillID=2532}),
+r(22927,{itemID=18518,requireSkill=165,skillID=2532}),
+r(22868,{b=1,itemID=18416,requireSkill=197,skillID=2540}),
+r(22922,{itemID=18515,requireSkill=165,skillID=2532}),
+r(22869,{b=1,itemID=18417,requireSkill=197,skillID=2540}),
+r(22928,{itemID=18519,requireSkill=165,skillID=2532}),
+r(22923,{itemID=18516,requireSkill=165,skillID=2532})}}),
+o(179499,{description="Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",g={
 i(18240,{b=1})}}),
 e(415,{description="Use the Gordok Ogre Suit to skip him for the Tribute Run. (Talk to him)",npcID=14325,g={
 s(7378,18502,{b=1,f=29,lvl=19}),
@@ -4045,10 +4048,7 @@ s(7389,18521,{b=1,f=7,loc=47,lvl=19}),
 i(18522,{b=1,f=52,lvl=19}),
 i(19258,{spellID=23678}),
 crit(18535,{achID=644,id=4})}}),
-n(14338,{awp=100105,g={
-r(22813,{learnedAt=285,requireSkill=197,skillID=2540,sourceQuests={27119}}),
-r(22815,{learnedAt=285,requireSkill=165,skillID=2532,sourceQuests={27119}})}}),
-o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,qgs={14353},g={
+o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,providers={{"n",14353}},g={
 r(23079,{itemID=18655,requireSkill=202,skillID=2506}),
 s(7377,18499,{b=1,f=8,lvl=19}),
 s(7361,18479,{b=1,f=6,loc=40,lvl=19}),
@@ -4122,6 +4122,9 @@ s(7477,18757,{b=1,f=4,loc=41,lvl=24,u=6}),
 s(7475,18755,{b=1,f=31,lvl=24,u=6}),
 s(7476,18756,{b=1,f=8,lvl=24,u=6}),
 s(7474,18754,{b=1,f=7,loc=43,lvl=24,u=6})}}),
+n(16032,{description="Found in the Dire Maul Library.",g={
+h(-55,{awp=11101,description="Available if a specific Quest (9015) has been completed.",rwp=40003,sourceQuests={9015},u=2,u_sqs=1,g={
+i(21986,{awp=10200,b=1,spellID=27517})}})}}),
 e(410,{npcID=11486,g={
 i(18336,{description="In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",providers={{"o",179545}}}),
 s(7313,18392,{b=1,f=20,lvl=17}),
@@ -4397,7 +4400,7 @@ o(175606)}}),
 q(5124,{coords={
 [83]={{61,38.8}}},cost={{"i",7910,4},{"i",7078,2},{"i",12655,6},{"i",12812,1}},qgs={10637},requireSkill=164,rwp=40003,sourceQuests={5103},u=2,g={
 r(16655,{itemID=12699,requireSkill=164,skillID=2477,u=2}),
-s(4499,12631,{f=7,loc=44,lvl=22,spellID=7721,u=2})}}),
+s(4499,12631,{f=7,loc=44,lvl=22,requireSkill=164,spellID=7721,u=2})}}),
 q(4974,{coords={
 [85]={{32,37.8}}},qgs={4949},qis={12630},r=1,rwp=40003,sourceQuests={4941},u=2,g={
 i(13965,{b=1,f=53,u=2}),
@@ -4417,7 +4420,7 @@ s(33304,65934,{b=1,f=28,u=2}),
 s(33347,65982,{b=1,f=26,u=2}),
 s(33327,65958,{b=1,f=20,u=2})}}),
 q(5103,{description="At the bottom floor of Lower Blackrock Spire near the lava.",providers={{"o",176090}},requireSkill=164,rwp=40003,u=2,g={
-i(12812,{b=1,providers={{"o",176089}},u=2})}}),
+i(12812,{b=1,providers={{"o",176089}},requireSkill=164,u=2})}}),
 q(4729,{coords={
 [36]={{65.8,22}}},cost={{"i",12262,1}},crs={10221},qgs={10260},qis={12263},rwp=40003,u=2,g={
 p(89,{b=1,itemID=12264,npcID=10259,spellID=15999,u=2})}}),
@@ -4470,8 +4473,8 @@ i(12358,{u=2})}})}}),
 q(5127,{coords={
 [83]={{63.8,73.8}}},cost={{"i",12848,1}},crs={10899},learnedAt=275,qgs={10918},qis={12806,12847},requireSkill=164,rwp=40003,sourceQuests={5126},u=2,g={
 r(16667,{itemID=12696,requireSkill=164,skillID=2477,u=2}),
-i(9224,{f=55,lvl=17,spellID=11406,u=2}),
-i(12849,{b=1,u=2})}}),
+i(9224,{f=55,lvl=17,requireSkill=164,spellID=11406,u=2}),
+i(12849,{b=1,requireSkill=164,u=2})}}),
 q(27444,{awp=40003,crs={10429},qgs={10299},rwp=60002,sourceQuests={27469,27470,27471},u=2}),
 q(4788,{coords={
 [71]={{66.8,24}}},qgs={10460},qis={12740,12741},rwp=40003,sourceQuests={5065},u=2,g={
@@ -4599,8 +4602,8 @@ s(4783,13175,{awp=100107,b=1,f=32,lvl=23}),
 i(13177,{b=1,f=51,lvl=23}),
 s(4784,13179,{b=1,f=6,loc=43,lvl=23}),
 s(6807,16676,{f=6,loc=44,lvl=23,rwp=40003,u=2}),
-s(8748,22231,{b=1,f=4,loc=47,lvl=23})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",providers={{"i",22057}},qis={21984,22046},rwp=40003,u=2,g={
+s(8748,22231,{b=1,f=4,loc=47,lvl=23})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+n(16080,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
 s(8788,22322,{b=1,f=23,lvl=23,u=6}),
 s(8787,22319,{b=1,f=1,lvl=23,u=6}),
 s(8789,22325,{b=1,f=5,loc=45,lvl=23,u=6}),
@@ -4748,8 +4751,8 @@ s(4612,12965,{b=1,f=4,loc=46,lvl=23,u=2}),
 s(4611,12964,{b=1,f=6,loc=46,lvl=23,u=2}),
 s(8781,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=23,rwp=40003,u=2}),
 prof(393,{u=2,g={
-i(12731,{u=2})}})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16042,{providers={{"i",22057}},rwp=60002,u=2,g={
+i(12731,{u=2})}})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+n(16042,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
 s(8796,22336,{b=1,f=8,lvl=23,u=6}),
 s(8795,22335,{b=1,f=28,lvl=23,u=6}),
 s(8776,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=24,u=6}),
@@ -5902,13 +5905,13 @@ s(7435,18693,{b=1,f=4,loc=44,lvl=17,modID=1}),
 s(5348,14340,{b=1,f=4,loc=42,lvl=17,modID=1}),
 s(5437,14502,{b=1,f=5,loc=45,lvl=17,modID=1}),
 s(5439,14522,{b=1,f=6,loc=46,lvl=17,modID=1}),
-s(7436,18694,{b=1,f=6,loc=47,lvl=17,modID=1})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-n(16118,{awp=100105,cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",providers={{"i",22057}},g={
-s(8793,22332,{b=1,f=25,lvl=17,modID=1}),
-s(8794,22333,{b=1,f=24,lvl=17,modID=1}),
-s(8777,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=24,modID=1,rwp=40003,u=2}),
-i(22326,{b=1,f=52,lvl=17,modID=1}),
-i(22331,{b=1,f=52,lvl=17,modID=1})}})),
+s(7436,18694,{b=1,f=6,loc=47,lvl=17,modID=1})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+n(16118,{description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+s(8793,22332,{awp=100105,b=1,f=25,lvl=17,modID=1,u=6}),
+s(8794,22333,{awp=100105,b=1,f=24,lvl=17,modID=1,u=6}),
+s(8777,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=24,modID=1,u=2}),
+i(22326,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6}),
+i(22331,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6})}})),
 h(-19,{awp=100105,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",g={
 s(7427,18680,{b=1,f=32,lvl=17,modID=1}),
 s(7430,18683,{b=1,f=23,lvl=17,modID=1}),
@@ -6702,13 +6705,13 @@ i(12103,{b=1,f=51,lvl=18}),
 s(7453,18720,{b=1,f=4,loc=41,lvl=18}),
 s(4847,13358,{b=1,f=5,loc=41,lvl=18}),
 s(4852,13369,{b=1,f=4,loc=47,lvl=18}),
-s(6856,16725,{b=1,f=7,loc=47,lvl=23,rwp=40003,u=2})}}),(function(t)if C_Item.GetItemCount(22057,true)>0 then	t.u=nil for i,o in ipairs(t.g)do	if o.u and o.u==6 then	o.u=nil end	end	else	t.u=6 for i,o in ipairs(t.g)do	if not o.u then	o.u=6 end	end	end	return t end)(
-o(181083,{awp=100105,cost={{"i",22051,1}},crs={16101,16102},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",providers={{"i",22057}},qis={21984,22046},g={
-s(8791,22329,{b=1,f=1,lvl=24}),
-i(22327,{b=1,f=51,lvl=24}),
-s(8775,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=24}),
-s(8790,22328,{b=1,f=7,loc=46,lvl=24}),
-i(22334,{b=1,f=52,lvl=17})}})),
+s(6856,16725,{b=1,f=7,loc=47,lvl=23,rwp=40003,u=2})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+n(16102,{awp=11101,crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Balnazzar's room.",providers={{"i",22057},{"o",181083}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+s(8791,22329,{b=1,f=1,lvl=24,u=2}),
+i(22327,{b=1,f=51,lvl=24,u=2}),
+s(8775,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=24,u=2}),
+s(8790,22328,{b=1,f=7,loc=46,lvl=24,u=2}),
+i(22334,{b=1,f=52,lvl=17,u=2})}})),
 n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",rwp=30002,u=2,g={
 s(8942,22736,{b=1,collectible=false,f=25,spellID=28347,u=2})}}),
 d(24,{sym={{"sub","tw_instance",236}}})}}),
@@ -43257,7 +43260,7 @@ s(79000,137413,{b=1,f=4,loc=45,lvl=40,modID=23}),
 s(79006,137417,{b=1,f=7,loc=47,lvl=40,modID=23}),
 i(137421,{b=1,f=54,lvl=40,modID=23}),
 i(137420,{b=1,f=54,lvl=40,modID=23}),
-i(146678,{requireSkill=197,spellID=239181})}})})}}),
+i(146678,{spellID=239181})}})})}}),
 inst(707,{awp=70003,coords={
 [630]={{48,82.1}}},maps={710,711,712},savedInstanceID=1493,g={
 h(-45,{
@@ -53566,7 +53569,7 @@ crit(64953,{achID=19566,awp=100206,rwp=110002,u=2})}})})}}),
 inst(1208,{awp=100100,coords={
 [2133]={{48.6,10.2}}},isRaid=1,maps={2166,2167,2168,2169,2170,2211},savedInstanceID=2569,g={
 ah(204177,{type="i",g={
-i(204274,{b=1,c={13},description="You need to find an Evoker who is doing this quest.",lvl=70,races={52,70},spellID=409218,g={
+i(204274,{b=1,c={13},description="You need to find an Evoker who is doing this quest.",lvl=70,spellID=409218,g={
 r(407161,{learnedAt=100,requireSkill=755,skillID=2829,u=5}),
 r(407170,{learnedAt=100,requireSkill=202,skillID=2827,u=5}),
 r(409224,{learnedAt=100,requireSkill=164,skillID=2822,u=5})}}),

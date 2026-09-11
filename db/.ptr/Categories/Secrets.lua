@@ -425,17 +425,17 @@ hqt(72676,{coords={
 [2022]={{19.6,36.5}}},description="Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off."}),
 o(385001,{coords={
 [2022]={{20,40}}},description="Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",sourceQuests={72676},g={
-i(202061,{requireSkill=356,sourceQuests={72676},spellID=396616})}}),
+i(202061,{sourceQuests={72676},spellID=396616})}}),
 i(202061,{cost={{"i",202072,100}},description="Time to go fishing! You'll need to fill up the barrel with various fish from around The Dragon Isles.",requireSkill=356,sourceQuests={72676},spellID=396616,g={
 i(202072,{b=1,coords={
-[2024]={{12.4,50}}},description="You'll need 100 of these fish. They can be found in open waters in the Azure Span. After using them with the barrel, you'll receive a Half-Filled Fish Barrel."})}}),
+[2024]={{12.4,50}}},description="You'll need 100 of these fish. They can be found in open waters in the Azure Span. After using them with the barrel, you'll receive a Half-Filled Fish Barrel.",requireSkill=356})}}),
 i(202066,{cost={{"i",202073,25}},description="Now that your barrel is half full, the fishing gets harder. You're looking for lava fish now.",requireSkill=356,sourceQuests={72676},spellID=396699,g={
 i(202073,{b=1,coords={
-[2022]={{35.8,64.6}}},description="You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish."})}}),
+[2022]={{35.8,64.6}}},description="You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish.",requireSkill=356})}}),
 hqt(72808,{cost={{"i",202074,1}},description="Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",requireSkill=356,sourceQuests={72676},g={
 i(202074,{b=1,coords={
-[2025]={{56,44.5}}},description="Just one! But it'll take a while. Having good Perception on your Profession gear may help."}),
-i(202068,{spellID=396698})}}),
+[2025]={{56,44.5}}},description="Just one! But it'll take a while. Having good Perception on your Profession gear may help.",requireSkill=356}),
+i(202068,{requireSkill=356,spellID=396698})}}),
 i(202069,{coords={
 [2022]={{20,40}}},description="Head back to where you originally picked up the empty barrel, and place the Overflowing Fish Barrel on the ground.",spellID=396703}),
 hqt(72738,{coords={

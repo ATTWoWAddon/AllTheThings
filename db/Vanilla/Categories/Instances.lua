@@ -1512,7 +1512,7 @@ s(164261,20260,{b=1,f=6,loc=46,lvl=60,q=3,u=14}),
 s(164055,19897,{b=1,f=4,loc=47,lvl=60,q=4,u=14}),
 i(19898,{b=1,f=52,lvl=60,q=3,u=14})}}),
 o(180366,{description="Fishermen with 300 skill can interact with this to receive the quest item.",requireSkill=356,u=14,g={
-i(19973,{q=1,u=14})}}),
+i(19973,{q=1,requireSkill=356,u=14})}}),
 n(15114,{cost={{"i",19975,5},{"i",19974,1}},description="You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",sourceQuests={8227},u=14,g={
 s(164078,19944,{b=1,f=28,lvl=60,q=4,u=14}),
 s(164080,19946,{b=1,f=29,lvl=60,q=3,u=14}),
@@ -3077,12 +3077,6 @@ s(160292,11628,{b=1,f=32,lvl=48,q=3}),
 s(160293,11629,{b=1,f=31,lvl=48,q=3}),
 s(160291,11627,{b=1,f=6,loc=47,lvl=48,q=3}),
 s(160287,11623,{b=1,f=3,lvl=47,q=3})}}),
-n(16059,{cost={{"i",21986,1}},description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",providers={{"o",181074}},rwp=40003,u=15,g={
-i(22047,{q=1,u=15}),
-s(164893,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=56,q=3,u=15}),
-s(164899,22317,{b=1,f=34,lvl=56,q=3,u=15}),
-s(164900,22318,{b=1,f=32,lvl=56,q=3,u=15}),
-s(164906,22330,{b=1,f=3,lvl=56,q=3,u=15})}}),
 e(372,{description="Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",npcID=10096,g={
 n(9031,{
 s(160303,11677,{b=1,f=3,lvl=50,q=3}),
@@ -3114,7 +3108,13 @@ n(9030,{
 s(160301,11665,{b=1,f=5,loc=44,lvl=49,q=3}),
 s(160300,11662,{b=1,f=4,loc=45,lvl=49,q=3}),
 s(160313,11728,{b=1,f=6,loc=46,lvl=52,q=3}),
-i(11824,{b=1,f=52,lvl=49,q=3})})}}),
+i(11824,{b=1,f=52,lvl=49,q=3})}),
+n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,u=15,g={
+i(22047,{q=1,u=15}),
+s(164893,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=56,q=3,u=15}),
+s(164899,22317,{b=1,f=34,lvl=56,q=3,u=15}),
+s(164900,22318,{b=1,f=32,lvl=56,q=3,u=15}),
+s(164906,22330,{b=1,f=3,lvl=56,q=3,u=15})}})}}),
 e(377,{npcID=9016,g={
 s(160340,11803,{b=1,f=24,lvl=51,q=3}),
 s(160341,11805,{b=1,f=23,lvl=51,q=3}),
@@ -3292,7 +3292,9 @@ s(162623,15860,{b=1,f=7,loc=43,q=2}),
 s(162624,15861,{b=1,f=5,loc=47,q=2})}}),
 q(4764,{coords={
 [1428]={{84.8,69}}},lvl=57,qgs={9565},r=2,rwp=40003,sourceQuests={4766},g={
-qo(1,{providers={{"i",12352},{"o",175382}}})}}),
+qo(1,{providers={{"i",12352}}}),
+o(175382,{description="Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",g={
+i(12352,{q=1})}})}}),
 q(6502,{coords={
 [1452]={{54.55,51.2}}},lvl=50,qgs={10929},r=2,rwp=30002,sourceQuests={6501},g={
 qo(1,{providers={{"i",16663}}}),
@@ -3318,7 +3320,7 @@ p(90,{b=1,itemID=12529,petTypeID=8,q=1,spellID=16450})}}),
 q(5124,{coords={
 [1452]={{61,38.8}}},cost={{"i",7910,4},{"i",7078,2},{"i",12655,6},{"i",12812,1}},lvl=55,qgs={10637},requireSkill=9788,rwp=40003,sourceQuests={5103},g={
 r(16655,{b=1,itemID=12699,learnedAt=290,q=3,requireSkill=9788}),
-s(160593,12631,{f=7,loc=44,lvl=53,q=3})}}),
+s(160593,12631,{f=7,loc=44,lvl=53,q=3,requireSkill=9788})}}),
 q(4974,{coords={
 [1454]={{32,37.8}}},lvl=55,qgs={4949},r=1,rwp=40003,sourceQuests={4941},g={
 qo(1,{providers={{"i",12630}}}),
@@ -3333,7 +3335,7 @@ i(13965,{b=1,f=53,q=3}),
 i(13968,{b=1,c={5,7,8,9,11},f=53,q=3}),
 i(13966,{b=1,f=53,q=3})}}),
 q(5103,{description="At the bottom floor of Lower Blackrock Spire near the lava.",lvl=55,providers={{"o",176090}},requireSkill=9788,rwp=40003,g={
-i(12812,{b=1,providers={{"o",176089}},q=3})}}),
+i(12812,{b=1,providers={{"o",176089}},q=3,requireSkill=9788})}}),
 q(4729,{coords={
 [1428]={{65.8,22}}},lvl=55,qgs={10260},rwp=40003,g={
 qo(1,{cost={{"i",12262,1}},crs={10221},description="Can be pulled outside of the room without engaging the boss.",providers={{"i",12263}}}),
@@ -3387,16 +3389,18 @@ q(6567,{coords={
 [1454]={{32,37.8}}},lvl=55,maps={1443},qgs={4949},r=1,rwp=40003,sourceQuests={6566}}),
 q(4768,{coords={
 [1418]={{3,47.6}}},lvl=57,qgs={9078},r=1,rwp=40003,sourceQuests={4769},g={
-qo(1,{providers={{"i",12358},{"o",175385}}}),
+qo(1,{providers={{"i",12358}}}),
 s(162623,15860,{b=1,f=7,loc=43,q=2}),
-s(162624,15861,{b=1,f=5,loc=47,q=2})}}),
+s(162624,15861,{b=1,f=5,loc=47,q=2}),
+o(175385,{description="This is the white tablet leaning up against the wall in the Whelp Room.",g={
+i(12358,{q=1})}})}}),
 q(5127,{coords={
 [1452]={{63.8,73.8}}},learnedAt=275,lvl=55,qgs={10918},requireSkill=9788,rwp=40003,sourceQuests={5126},g={
-qo(1,{cost={{"i",12848,1}},crs={10899},providers={{"i",12847}}}),
-qo(2,{providers={{"i",12806}}}),
+qo(1,{cost={{"i",12848,1}},crs={10899},providers={{"i",12847}},requireSkill=9788}),
+qo(2,{providers={{"i",12806}},requireSkill=9788}),
 r(16667,{b=1,itemID=12696,learnedAt=285,q=3,requireSkill=9788}),
-i(9224,{f=55,lvl=40,q=1}),
-i(12849,{b=1,q=2})}}),
+i(9224,{f=55,lvl=40,q=1,requireSkill=9788}),
+i(12849,{b=1,q=2,requireSkill=9788})}}),
 q(4788,{coords={
 [1446]={{66.8,24}}},lvl=40,qgs={10460},rwp=40003,sourceQuests={5065},g={
 qo(1,{providers={{"i",12740},{"o",175949}}}),
@@ -3534,7 +3538,7 @@ s(160883,13179,{b=1,f=6,loc=43,lvl=55,q=3}),
 s(162991,16676,{f=6,loc=44,lvl=54,q=3,rwp=40003}),
 s(164862,22231,{b=1,f=4,loc=47,lvl=56,q=3}),
 i(13173,{awp=11101,b=1,f=36,lvl=55,q=3,rwp=20001})}}),
-n(16080,{cost={{"i",22057,1},{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=40003,u=15,g={
+n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},rwp=40003,u=15,g={
 qo(2,{providers={{"i",21984}},questID=8966,u=15}),
 qo(2,{providers={{"i",22046}},questID=8989,u=15}),
 s(164902,22322,{b=1,f=23,lvl=56,q=3,u=15}),
@@ -3597,13 +3601,13 @@ s(162994,16679,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003}),
 i(13143,{b=1,f=52,lvl=56,q=4}),
 i(13164,{b=1,f=53,lvl=56,q=3,rwp=40003}),
 i(22321,{b=1,f=53,lvl=56,q=3,u=15})}})}),
-h(-354,{cost={{"i",12344,1}},rwp=60002,g={
+h(-354,{cost={{"i",12344,1}},g={
 h(-63,{
-i(12607,{crs={10442,10447,10814},q=3}),
-r(20030,{crs={10317},itemID=16247,learnedAt=295,q=2,requireSkill=333}),
+i(12607,{crs={10442,10447,10814},q=3,rwp=60002}),
+r(20030,{crs={10317},itemID=16247,learnedAt=295,q=2,requireSkill=333,rwp=60002}),
 r(31016,{c={4},crs={10318},itemID=24102,lvl=60,q=3,rank=9,rwp=40001,u=16}),
 s(160918,13260,{f=6,loc=47,lvl=56,q=3})}),
-n(9816,{
+n(9816,{rwp=60002,g={
 i(21988,{q=1,rwp=40003,u=15}),
 i(17322,{q=1,rwp=30008}),
 i(12929,{b=1,f=51,lvl=56,q=3}),
@@ -3611,22 +3615,20 @@ s(160682,12905,{b=1,f=3,lvl=56,q=3}),
 s(160683,12927,{b=1,f=5,loc=41,lvl=56,q=3}),
 s(162987,16672,{f=6,loc=44,lvl=54,q=3,rwp=40003}),
 i(12926,{b=1,f=52,lvl=56,q=3}),
-r(29228,{c={7},itemID=23320,lvl=60,q=3,rank=6,rwp=40001,u=16})}),
-i(12358,{description="This is the white tablet leaning up against the wall in the Whelp Room.",providers={{"o",175385}},q=1}),
-i(12352,{description="Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",providers={{"o",175382}},q=1}),
-s(160954,13371,{b=1,description="Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",f=1,providers={{"o",175245}},q=2}),
-n(10264,{description="This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",g={
+r(29228,{c={7},itemID=23320,lvl=60,q=3,rank=6,rwp=40001,u=16})}}),
+s(160954,13371,{b=1,description="Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",f=1,providers={{"o",175245}},q=2,rwp=60002}),
+n(10264,{description="This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",rwp=60002,g={
 r(23081,{itemID=18657,learnedAt=290,q=2,requireSkill=202}),
 s(163010,16695,{b=1,f=4,loc=41,lvl=55,q=3,rwp=40003}),
 s(160570,12603,{b=1,f=5,loc=42,lvl=56,q=3}),
 s(160575,12609,{b=1,f=4,loc=42,lvl=56,q=3}),
 s(160573,12606,{b=1,f=5,loc=45,lvl=56,q=3}),
 s(160564,12589,{b=1,f=4,loc=45,lvl=56,q=3})}}),
-n(10509,{description="This is a Rare Creature and, as such, is not always present.",g={
+n(10509,{description="This is a Rare Creature and, as such, is not always present.",rwp=60002,g={
 s(160572,12605,{b=1,f=27,lvl=51,q=3}),
 s(160571,12604,{b=1,f=4,loc=40,lvl=55,q=3}),
 i(12930,{b=1,f=53,lvl=55,q=3})}}),
-n(10899,{
+n(10899,{rwp=60002,g={
 i(18779,{lvl=50,q=3,rwp=40001}),
 i(12848,{b=1,description="Found on the rack behind Anvilcrack in Upper Blackrock Spire.",providers={{"o",175970}},q=1,rwp=40003}),
 r(16990,{itemID=12834,learnedAt=300,q=3,requireSkill=17039}),
@@ -3635,16 +3637,16 @@ r(16993,{itemID=12837,learnedAt=300,q=3,requireSkill=17040}),
 s(163423,18048,{b=1,f=23,lvl=55,q=3}),
 s(160992,13502,{b=1,f=7,loc=45,lvl=58,q=3}),
 s(160991,13498,{b=1,f=7,loc=46,lvl=55,q=3}),
-s(163422,18047,{b=1,f=6,loc=47,lvl=57,q=3})}),
-n(10339,{
+s(163422,18047,{b=1,f=6,loc=47,lvl=57,q=3})}}),
+n(10339,{rwp=60002,g={
 r(17638,{itemID=13522,learnedAt=300,q=2,requireSkill=171,rwp=50004}),
 i(12871,{b=1,q=4}),
 s(160702,12953,{b=1,f=6,loc=40,lvl=55,q=3}),
 s(164860,22225,{b=1,f=4,loc=40,lvl=55,q=3,u=15}),
 s(160701,12952,{b=1,f=7,loc=40,lvl=55,q=3}),
 s(160704,12960,{b=1,f=5,loc=40,lvl=55,q=3}),
-s(162984,16669,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003})}),
-n(10429,{
+s(162984,16669,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003})}}),
+n(10429,{rwp=60002,g={
 i(12630,{q=1,rwp=40003}),
 s(160560,12583,{b=1,f=29,lvl=58,q=3}),
 s(160692,12940,{b=1,f=25,lvl=58,q=3}),
@@ -3658,8 +3660,8 @@ s(163428,18104,{b=1,f=6,loc=45,lvl=58,q=3}),
 s(160688,12935,{b=1,f=7,loc=46,lvl=58,q=3}),
 s(163427,18102,{b=1,f=4,loc=47,lvl=58,q=3}),
 s(164869,22247,{b=1,f=4,loc=47,lvl=58,q=3,u=15}),
-i(18103,{b=1,f=52,lvl=58,q=3})}),
-n(10430,{
+i(18103,{b=1,f=52,lvl=58,q=3})}}),
+n(10430,{rwp=60002,g={
 r(31018,{c={11},itemID=24101,lvl=60,q=3,rank=5,rwp=40001,u=16}),
 s(160606,12709,{b=1,f=20,lvl=58,q=3}),
 s(160713,12969,{b=1,f=24,lvl=58,q=3}),
@@ -3673,8 +3675,8 @@ s(160708,12964,{b=1,f=6,loc=46,lvl=58,q=3}),
 s(164895,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=56,q=3,rwp=40003,u=15}),
 i(19227,{q=3,u=13}),
 prof(393,{cost={{"i",19901,1},{"i",12709,1}},description="You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Pip's Skinner.",g={
-i(12731,{q=4})}})}),
-n(16042,{cost={{"i",22057,1},{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",u=15,g={
+i(12731,{q=4})}})}}),
+n(16042,{cost={{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,u=15,g={
 s(164910,22336,{b=1,f=8,lvl=58,q=3,u=15}),
 s(164909,22335,{b=1,f=28,lvl=58,q=3,u=15}),
 s(164890,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=58,q=3,u=15}),
@@ -3683,7 +3685,7 @@ s(164911,22337,{b=1,f=3,lvl=58,q=3,u=15}),
 s(164914,22343,{b=1,f=6,loc=44,lvl=58,q=3,u=15}),
 s(164913,22342,{b=1,f=4,loc=46,lvl=58,q=3,u=15}),
 i(22339,{b=1,f=52,lvl=58,q=3,u=15})}}),
-n(10363,{
+n(10363,{rwp=60002,g={
 ach(1307),
 i(16663,{q=1,rwp=40003}),
 r(19054,{b=1,itemID=15730,learnedAt=300,q=3,requireSkill=10656}),
@@ -3705,7 +3707,7 @@ s(163021,16706,{b=1,f=5,loc=42,lvl=58,q=3,rwp=40003}),
 s(164875,22269,{b=1,f=3,lvl=58,q=3,u=15}),
 s(160864,13142,{b=1,f=7,loc=45,lvl=58,q=3}),
 i(13098,{b=1,f=52,lvl=58,q=3}),
-i(22268,{b=1,f=53,lvl=58,q=3,u=15})})}})}}),
+i(22268,{b=1,f=53,lvl=58,q=3,u=15})}})}})}}),
 inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,maps={240},savedInstanceID=429,u=1101,["zone-text-areas"]={2557,2577,3217},g={
 h(-12,{u=1101,g={
 ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003,u=1101}),
@@ -3873,7 +3875,7 @@ s(163465,18319,{b=1,f=6,filterForRWP=5,loc=40,lvl=53,q=3,u=1101}),
 s(163462,18313,{b=1,f=7,filterForRWP=6,loc=40,lvl=53,q=3,u=1101}),
 s(163455,18306,{b=1,f=4,loc=44,lvl=53,q=2,u=1101})}}),
 n(11491,{description="Talk to him for him to break down the door.",u=1101}),
-n(16097,{cost={{"i",22057,1},{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",rwp=40003,u=15,g={
+n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},rwp=40003,u=15,g={
 qo(2,{awp=10200,providers={{"i",21984}},questID=8967,u=15}),
 qo(2,{awp=10200,providers={{"i",22046}},questID=8990,u=15}),
 s(164898,22315,{awp=10200,b=1,f=23,lvl=56,q=3,u=15}),
@@ -3930,7 +3932,7 @@ s(163574,18496,{b=1,f=3,lvl=55,q=3,u=1101}),
 s(163571,18493,{b=1,f=7,loc=41,lvl=55,q=3,u=1101}),
 s(163572,18494,{b=1,f=6,loc=41,lvl=55,q=3,u=1101}),
 s(163575,18497,{b=1,f=4,loc=43,lvl=55,q=3,u=1101})}}),
-o(179501,{cost={{"i",18250,1}},rwp=40003,sourceQuests={5525},u=1101,g={
+o(179501,{cost={{"i",18250,1}},sourceQuests={5525},u=1101,g={
 i(18240,{b=1,q=2,u=1101}),
 r(22866,{itemID=18414,learnedAt=300,q=4,requireSkill=197,u=1101}),
 r(22926,{itemID=18517,learnedAt=300,q=4,requireSkill=10656,u=1101}),
@@ -3943,7 +3945,7 @@ r(22922,{b=1,itemID=18515,learnedAt=300,q=3,requireSkill=165,u=1101}),
 r(22869,{b=1,itemID=18417,learnedAt=300,q=3,requireSkill=197,u=1101}),
 r(22928,{itemID=18519,learnedAt=300,q=4,requireSkill=10658,u=1101}),
 r(22923,{b=1,itemID=18516,learnedAt=300,q=3,requireSkill=165,u=1101})}}),
-o(179499,{description="Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",qgs={14351},u=1101,g={
+o(179499,{description="Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",u=1101,g={
 i(18240,{b=1,q=2,u=1101})}}),
 e(415,{cost={{"i",18258,1},{"i",18268,1}},description="In order to get to this boss, you must use the Inner Door Key or have an engineer open the door using a Seaforium Charge.\n\nUse the Gordok Ogre Suit to skip him. (talk to him)",npcID=14325,u=1101,g={
 s(163578,18502,{b=1,f=29,lvl=57,q=3,u=1101}),
@@ -3967,7 +3969,7 @@ i(18522,{b=1,f=52,lvl=58,q=3,u=1101}),
 i(19258,{q=3,u=13}),
 i(18780,{lvl=50,q=3,rwp=40003,u=1101}),
 crit(547,{achID=644,id=1,u=1101})}}),
-o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,qgs={14353},u=1101,g={
+o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,providers={{"n",14353}},u=1101,g={
 r(23079,{itemID=18655,learnedAt=275,q=2,requireSkill=202,u=1101}),
 s(163577,18499,{b=1,f=8,lvl=57,q=3,u=1101}),
 s(163561,18479,{b=1,f=6,loc=40,lvl=55,q=2,u=1101}),
@@ -4040,6 +4042,9 @@ s(163679,18757,{b=1,f=4,loc=41,lvl=57,q=3,u=1101}),
 s(163677,18755,{b=1,f=31,lvl=57,q=3,u=1101}),
 s(163678,18756,{b=1,f=8,lvl=57,q=3,u=1101}),
 s(163676,18754,{b=1,f=7,loc=43,lvl=57,q=3,u=1101})}}),
+n(16032,{description="Found in the Dire Maul Library.",u=1101,g={
+h(-55,{awp=11101,description="Available if a specific Quest (9015) has been completed.",rwp=40003,sourceQuests={9015},u=1101,u_sqs=1,g={
+i(21986,{awp=10200,b=1,q=1,u=1101})}})}}),
 e(410,{npcID=11486,u=1101,g={
 i(18336,{description="In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",providers={{"o",179545}},q=1,u=1101}),
 s(163512,18392,{b=1,f=20,lvl=57,q=3,u=1101}),
@@ -4898,12 +4903,12 @@ s(161467,14340,{b=1,f=4,loc=42,lvl=57,q=3}),
 s(161556,14502,{b=1,f=5,loc=45,lvl=57,q=3}),
 s(161558,14522,{b=1,f=6,loc=46,lvl=57,q=3}),
 s(163636,18694,{b=1,f=6,loc=47,lvl=57,q=3})}}),
-n(16118,{awp=10300,cost={{"i",22057,1},{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",rwp=50004,u=15,g={
-s(164907,22332,{b=1,f=25,lvl=57,q=3,u=15}),
-s(164908,22333,{b=1,f=24,lvl=57,q=3,u=15}),
-s(164891,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=57,q=3,rwp=40003,u=15}),
-i(22326,{b=1,f=52,lvl=58,q=3,u=15}),
-i(22331,{b=1,f=52,lvl=57,q=3,u=15})}}),
+n(16118,{cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,u=15,g={
+s(164907,22332,{awp=10300,b=1,f=25,lvl=57,q=3,rwp=50004,u=15}),
+s(164908,22333,{awp=10300,b=1,f=24,lvl=57,q=3,rwp=50004,u=15}),
+s(164891,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=57,q=3,u=15}),
+i(22326,{awp=10300,b=1,f=52,lvl=58,q=3,rwp=50004,u=15}),
+i(22331,{awp=10300,b=1,f=52,lvl=57,q=3,rwp=50004,u=15})}}),
 h(-19,{awp=10300,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
 s(163627,18680,{b=1,f=32,lvl=56,q=3}),
 s(163630,18683,{b=1,f=23,lvl=56,q=3}),
@@ -5229,12 +5234,12 @@ s(163653,18720,{b=1,f=4,loc=41,lvl=58,q=3}),
 s(160948,13358,{b=1,f=5,loc=41,lvl=58,q=3}),
 s(160953,13369,{b=1,f=4,loc=47,lvl=58,q=3}),
 s(163040,16725,{b=1,f=7,loc=47,lvl=54,q=3,rwp=40003})}}),
-o(181083,{awp=100105,cost={{"i",22057,1},{"i",22051,1}},crs={16101,16102},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",rwp=40003,u=15,g={
+n(16102,{awp=11101,cost={{"i",22051,1}},crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",providers={{"i",22057},{"o",181083}},rwp=40003,u=15,g={
 qo(2,{providers={{"i",21984}},questID=8968,u=15}),
 qo(2,{providers={{"i",22046}},questID=8991,u=15}),
 s(164905,22329,{b=1,f=1,lvl=58,q=3,u=15}),
 i(22327,{b=1,f=51,lvl=58,q=3,u=15}),
-s(164889,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=58,q=3,rwp=40001,u=15}),
+s(164889,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=58,q=3,u=15}),
 s(164904,22328,{b=1,f=7,loc=46,lvl=58,q=3,u=15}),
 i(22334,{b=1,f=52,lvl=57,q=3,u=15})}}),
 n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",rwp=30002,u=16,g={

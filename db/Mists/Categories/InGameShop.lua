@@ -1,12 +1,9 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,crit,flt,h,i,mnt,p,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateToy;
+local crit,flt,h,i,mnt,p,s,toy=_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateItemSource,_.CreateToy;
 categories.InGameShop=
 h(-213,{SortPriority=85,g={
-h(-12,{awp=80300,u=3,g={
-ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
-ach(6848,{providers={{"i",85871}},rwp=50407,u=2})}}),
 flt(101,{u=3,g={
 p(1363,{b=1,itemID=106240,npcID=74402,q=3,spellID=149787,u=1}),
 p(1248,{b=1,itemID=98550,npcID=71488,q=3,spellID=142880,u=1}),

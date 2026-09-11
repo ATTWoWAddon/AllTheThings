@@ -594,6 +594,7 @@ L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s the Compl
 L.PLAYER_TITLE_THE_CONTRIBUTOR = "|cffa335ee%s|r"
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s the Exterminator|r"
 L.PLAYER_TITLE_THE_HUGGLER = "|cffF58CBA%s the Huggler|r"
+L.PLAYER_TOOLTIP_INVOCATOR = "|c" .. _.DefaultColors.White .. "Ask me to summon removed bosses!|r"
 L.PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #classic-errors! Thanks!"
 L.POPOUT = "Popout List"
 L.PRECISION_SLIDER = "Precision Level"
@@ -1143,6 +1144,7 @@ _.HeaderConstants = {
 	PROFESSIONS = -44,
 	PROMOTIONS = -736,
 	PVP = -303,
+	PVP_ELITE = -295,
 	PVP_GLADIATOR = -296,
 	QUESTS = -45,
 	RARES = -46,
@@ -1298,8 +1300,8 @@ localize(L.HEADER_NAMES, {
 	[-353] = DUNGEON_FLOOR_BLACKROCKSPIRE3,
 	[-354] = DUNGEON_FLOOR_UPPERBLACKROCKSPIRE1,
 	[-355] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.EAST ..")",
-	[-356] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.NORTH ..")",
-	[-357] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.WEST ..")",
+	[-356] = DUNGEON_FLOOR_DIREMAUL1.." (" .. L.NORTH ..")",
+	[-357] = DUNGEON_FLOOR_DIREMAUL2.." (" .. L.WEST ..")",
 	[-358] = C_Spell.GetSpellName(21127),
 	[-359] = DUNGEON_FLOOR_DESOLACE22.." (Orange Path)",
 	[-360] = DUNGEON_FLOOR_DESOLACE21.." (Purple Path)",
@@ -1866,6 +1868,9 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(1181, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=12,["weekday"]=7,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
 })
 _.Modules.Events.SetEventInformation(444, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
@@ -9563,7 +9568,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753984800,
+		release = 1753956000,
 		state = 2,
 	},
 	[5002] = {
@@ -9572,7 +9577,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755021600,
+		release = 1754992800,
 		state = 2,
 	},
 	[5003] = {
@@ -9581,7 +9586,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755799200,
+		release = 1755770400,
 		state = 2,
 	},
 	[5004] = {
@@ -9590,7 +9595,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756231200,
+		release = 1756202400,
 		state = 2,
 	},
 	[5005] = {
@@ -9599,7 +9604,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756836000,
+		release = 1756807200,
 		state = 2,
 	},
 	[5006] = {
@@ -9608,7 +9613,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757008800,
+		release = 1756980000,
 		state = 2,
 	},
 	[5007] = {
@@ -9617,7 +9622,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758045600,
+		release = 1758016800,
 		state = 2,
 	},
 	[51] = {
@@ -9642,7 +9647,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765998000,
+		release = 1765969200,
 		state = 2,
 	},
 	[53] = {
@@ -9667,7 +9672,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781632800,
+		release = 1781604000,
 		state = 2,
 	},
 } L.PHASES = phases

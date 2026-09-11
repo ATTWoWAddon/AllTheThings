@@ -1439,8 +1439,8 @@ i(5810,{crs={2384,2385,2406,2407},q=1}),
 s(158655,6720,{b=1,f=5,loc=40,q=2})}}),
 q(768,{coords={
 [1456]={{44,44.6}}},cost={{"i",2318,12}},description="This quest becomes available at Skinning skill level 1 when the character level requirement is met.",lvl=4,qgs={3050},r=1,requireSkill=393,g={
-s(158270,5936,{b=1,f=5,loc=45,q=1}),
-s(157990,4962,{b=1,f=5,loc=44,q=1})}}),
+s(158270,5936,{b=1,f=5,loc=45,q=1,requireSkill=393}),
+s(157990,4962,{b=1,f=5,loc=44,q=1,requireSkill=393})}}),
 q(769,{coords={
 [1456]={{44,44.6}}},description="This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",lvl=5,qgs={3050},r=1,requireSkill=165,g={
 r(5244,{description="This recipe is not soulbound and can be mailed to Horde alts.",itemID=5083,learnedAt=40,q=2,requireSkill=165})}}),
@@ -2418,11 +2418,11 @@ s(162308,15402,{b=1,f=6,loc=44,q=1})}}),
 q(2178,{coords={
 [1439]={{37.7,40.7}}},cost={{"i",5469,5}},lvl=9,qgs={3702},r=2,requireSkill=185,rwp=40003,g={
 r(6416,{itemID=5486,learnedAt=50,q=1,requireSkill=185}),
-i(5477,{f=55,lvl=5,q=1})}}),
+i(5477,{f=55,lvl=5,q=1,requireSkill=185})}}),
 q(1580,{coords={
 [1439]={{37,44}}},lvl=10,qgs={3666},r=2,requireSkill=356,rwp=40003,sourceQuests={1579},g={
 qo(1,{coords={
-[1439]={{41.5,73.4},{52,28.9}}},providers={{"i",6718}}}),
+[1439]={{41.5,73.4},{52,28.9}}},providers={{"i",6718}},requireSkill=356}),
 i(6811,{f=55,q=1,requireSkill=356})}}),
 q(994,{altQuests={995},coords={
 [1439]={{45,85.4}}},description="This quest becomes unavailable if you complete Escape Through Stealth",lvl=10,qgs={3692},r=2,rwp=40003,sourceQuests={993},g={
@@ -2442,7 +2442,7 @@ s(162311,15405,{b=1,f=5,loc=44,q=2}),
 s(162312,15406,{b=1,f=6,loc=47,q=2})}}),
 q(1579,{coords={
 [1439]={{37,44}}},description="Requires fishing skill level 30",lvl=10,qgs={3666},r=2,requireSkill=356,rwp=40003,g={
-qo(1,{providers={{"i",6717}}})}}),
+qo(1,{providers={{"i",6717}},requireSkill=356})}}),
 q(6123,{c={11},coords={
 [1439]={{37.6,40.6}}},cost={{"i",2449,5}},lvl=14,qgs={3702},r=2,rwp=40003,sourceQuests={6122},g={
 qo(2,{providers={{"i",15851},{"o",177750}}})}}),
@@ -2602,7 +2602,7 @@ n(2184,{coords={
 [1439]={{43,61.2}}}}),
 n(210451,{coords={
 [1439]={{55.6,36.6}}},u=1605,g={
-i(208741,{b=1,c={1},f=55,q=2,r=2,u=1605,g={
+i(208741,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403489,{u=1605})}}),
 i(209028,{b=1,c={8},q=2,u=1605})}}),
 n(7016,{awp=100107,coords={
@@ -3705,13 +3705,13 @@ qo(1,{crs={4396,4397,4398,4399,4400},providers={{"i",5883}}})}}),
 q(6607,{coords={
 [1445]={{58.6,60}}},learnedAt=225,lvl=35,maps={1434,1435,1443,1444},qgs={12919},requireSkill=356,sourceQuests={6608,6609},g={
 qo(1,{coords={
-[1444]={{63.5,53.6}}},providers={{"i",16967}}}),
+[1444]={{63.5,53.6}}},providers={{"i",16967}},requireSkill=356}),
 qo(2,{coords={
-[1435]={{94.1,39.7}}},providers={{"i",16970}}}),
+[1435]={{94.1,39.7}}},providers={{"i",16970}},requireSkill=356}),
 qo(3,{coords={
-[1443]={{26,80.1},{36.2,32.9}}},providers={{"i",16968}}}),
+[1443]={{26,80.1},{36.2,32.9}}},providers={{"i",16968}},requireSkill=356}),
 qo(4,{coords={
-[1434]={{26.3,67.8}}},providers={{"i",16969}}}),
+[1434]={{26.3,67.8}}},providers={{"i",16969}},requireSkill=356}),
 r(18248,{learnedAt=200,rank=4,requireSkill=356,rwp=30100})}}),
 q(1166,{coords={
 [1445]={{36.2,31.4}}},lvl=38,qgs={4500},r=1,rwp=40003,g={
@@ -3823,7 +3823,7 @@ q(1282,{altQuests={1302},coords={
 [1445]={{66,46}}},lvl=30,qgs={4921},r=2,rwp=40003}),
 q(6624,{coords={
 [1445]={{67.7,48.9}}},description="Needs a minimum of 225 skill in First Aid.",lvl=35,qgs={12939},r=2,requireSkill=129,sourceQuests={6625},g={
-qo(1,{crs={12936,12937,12938},providers={{"i",16991}}}),
+qo(1,{crs={12936,12937,12938},providers={{"i",16991}},requireSkill=129}),
 r(10846,{learnedAt=200,rank=4,requireSkill=129,rwp=30100})}})}),
 h(-46,{
 n(4339,{coords={
@@ -4165,28 +4165,28 @@ qo(1,{coords={
 [1448]={{38.2,50.4}}},providers={{"n",9518}}})}}),
 q(5886,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11174,1}},learnedAt=225,lvl=48,qgs={9528},r=2,requireSkill=333,rwp=40003,sourceQuests={4101},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=333})}}),
 q(4107,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11174,1}},learnedAt=225,lvl=48,qgs={9528},r=2,repeatable=1,requireSkill=333,rwp=40003,sourceQuests={5886},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=333})}}),
 q(5891,{coords={
 [1448]={{46.8,83}}},cost={{"i",11174,1}},learnedAt=225,lvl=48,qgs={9529},r=1,requireSkill=333,rwp=40003,sourceQuests={4102},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=333})}}),
 q(4112,{coords={
 [1448]={{46.8,83}}},cost={{"i",11174,1}},learnedAt=225,lvl=48,qgs={9529},r=1,repeatable=1,requireSkill=333,rwp=40003,sourceQuests={4112},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=333})}}),
 q(5884,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11514,4}},learnedAt=225,lvl=48,qgs={9528},r=2,requireSkill=182,rwp=40003,sourceQuests={4101},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=182})}}),
 q(4105,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11514,4}},learnedAt=225,lvl=48,qgs={9528},r=2,repeatable=1,requireSkill=182,rwp=40003,sourceQuests={5884},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=182})}}),
 q(5889,{coords={
 [1448]={{46.8,83}}},cost={{"i",11514,4}},learnedAt=225,lvl=48,qgs={9529},r=1,requireSkill=182,rwp=40003,sourceQuests={4102},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=182})}}),
 q(4110,{coords={
 [1448]={{46.8,83}}},cost={{"i",11514,4}},learnedAt=225,lvl=48,qgs={9529},r=1,repeatable=1,requireSkill=182,rwp=40003,sourceQuests={5889},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=182})}}),
 q(5882,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11515,6}},lvl=48,qgs={9528},r=2,rwp=40003,sourceQuests={4101},g={
 i(11516,{b=1,q=1})}}),
@@ -4201,28 +4201,28 @@ q(4108,{coords={
 i(11516,{b=1,q=1})}}),
 q(5883,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11513,4}},learnedAt=225,lvl=48,qgs={9528},r=2,requireSkill=186,rwp=40003,sourceQuests={4101},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=186})}}),
 q(4104,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11513,4}},learnedAt=225,lvl=48,qgs={9528},r=2,repeatable=1,requireSkill=186,rwp=40003,sourceQuests={5883},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=186})}}),
 q(5888,{coords={
 [1448]={{46.8,83}}},cost={{"i",11513,4}},learnedAt=225,lvl=48,qgs={9529},r=1,requireSkill=186,rwp=40003,sourceQuests={4102},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=186})}}),
 q(4109,{coords={
 [1448]={{46.8,83}}},cost={{"i",11513,4}},learnedAt=225,lvl=48,qgs={9529},r=1,repeatable=1,requireSkill=186,rwp=40003,sourceQuests={5888},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=186})}}),
 q(5885,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11512,5}},learnedAt=225,lvl=48,qgs={9528},r=2,requireSkill=393,rwp=40003,sourceQuests={4101},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=393})}}),
 q(4106,{coords={
 [1448]={{54.2,86.7}}},cost={{"i",11512,5}},learnedAt=225,lvl=48,qgs={9528},r=2,repeatable=1,requireSkill=393,rwp=40003,sourceQuests={5885},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=393})}}),
 q(5890,{coords={
 [1448]={{46.8,83}}},cost={{"i",11512,5}},learnedAt=225,lvl=48,qgs={9529},r=1,requireSkill=393,rwp=40003,sourceQuests={4102},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=393})}}),
 q(4111,{coords={
 [1448]={{46.8,83}}},cost={{"i",11512,5}},learnedAt=225,lvl=48,qgs={9529},r=1,repeatable=1,requireSkill=393,rwp=40003,sourceQuests={5890},g={
-i(11516,{b=1,q=1})}}),
+i(11516,{b=1,q=1,requireSkill=393})}}),
 q(5158,{coords={
 [1448]={{51.2,82.2}}},lvl=48,maps={1413},providers={{"i",12907}},qgs={10922},rwp=40003,sourceQuests={5157}}),
 q(4084,{coords={
@@ -5499,16 +5499,16 @@ s(164430,20701,{b=1,f=6,loc=46,q=3,u=1609}),
 s(164439,20712,{b=1,f=6,loc=44,q=3,u=1609})}}),
 q(8780,{cost={{"i",4265,8},{"i",15564,8}},lvl=60,providers={{"i",21263}},r=2,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(20805,{b=1,q=1,r=2,u=1610})}}),
+i(20805,{b=1,q=1,u=1610})}}),
 q(8787,{cost={{"i",4265,8},{"i",15564,8}},lvl=60,providers={{"i",21264}},r=1,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21386,{b=1,q=1,r=1,u=1610})}}),
+i(21386,{b=1,q=1,u=1610})}}),
 q(8781,{cost={{"i",3853,2}},lvl=60,providers={{"i",21260}},r=2,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(20805,{b=1,q=1,r=2,u=1610})}}),
+i(20805,{b=1,q=1,u=1610})}}),
 q(8786,{cost={{"i",3855,3}},lvl=60,providers={{"i",21261}},r=1,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21386,{b=1,q=1,r=1,u=1610})}}),
+i(21386,{b=1,q=1,u=1610})}}),
 q(8331,{coords={
 [1451]={{48.7,37.9}}},isBreadcrumb=1,lvl=54,minReputation={609,3000},nextQuests={8332},qgs={15270},rwp=40003}),
 q(8737,{lvl=60,providers={{"i",21245}},repeatable=1,rwp=40003,u=1610,g={
@@ -5517,16 +5517,16 @@ i(20801,{b=1,q=2,u=1610}),
 i(21133,{b=1,q=1,u=1610})}}),
 q(8496,{cost={{"i",6451,30},{"i",8545,30},{"i",14530,30}},lvl=60,providers={{"i",20806}},r=2,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(20805,{b=1,q=1,r=2,u=1610})}}),
+i(20805,{b=1,q=1,u=1610})}}),
 q(8810,{cost={{"i",6451,30},{"i",8545,30},{"i",14530,30}},lvl=60,providers={{"i",21385}},r=1,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21386,{b=1,q=1,r=1,u=1610})}}),
+i(21386,{b=1,q=1,u=1610})}}),
 q(8540,{cost={{"i",7936,3}},lvl=60,providers={{"i",20939}},r=2,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21132,{b=1,q=1,r=2,u=1610})}}),
+i(21132,{b=1,q=1,u=1610})}}),
 q(8805,{cost={{"i",7936,3}},lvl=60,providers={{"i",21379}},r=1,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21266,{b=1,q=1,r=1,u=1610})}}),
+i(21266,{b=1,q=1,u=1610})}}),
 q(8349,{coords={
 [1451]={{52,38.2}}},isBreadcrumb=1,lvl=54,minReputation={609,3000},nextQuests={8348},qgs={15282},rwp=40003,sourceQuests={8332},u=1609}),
 q(8351,{coords={
@@ -5563,13 +5563,13 @@ q(8307,{coords={
 [1451]={{51.8,39}}},learnedAt=285,lvl=54,qgs={15174},requireSkill=185,u=1609}),
 q(8497,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=60,providers={{"i",20807}},r=2,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21132,{b=1,q=1,r=2,u=1610})}}),
+i(21132,{b=1,q=1,u=1610})}}),
 q(8804,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=55,providers={{"i",21378}},r=1,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21266,{b=1,q=1,r=1,u=1610})}}),
+i(21266,{b=1,q=1,u=1610})}}),
 q(8856,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=60,providers={{"i",20807}},repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(20805,{b=1,q=1,r=2,u=1610})}}),
+i(20805,{b=1,q=1,u=1610})}}),
 q(8332,{coords={
 [1451]={{52,38.2}}},cost={{"i",20513,3},{"i",14344,1}},lvl=54,minReputation={609,3000},qgs={15282},rwp=40003,sourceQuests={8331},g={
 i(20422,{f=51,q=1})}}),
@@ -5581,17 +5581,17 @@ q(8319,{coords={
 [1451]={{48.6,37.8}}},cost={{"i",20404,10}},lvl=57,maxReputation={609,42000},qgs={15306},repeatable=1,sourceQuests={8318},u=1609}),
 q(8783,{cost={{"i",12810,2},{"i",12655,2}},lvl=60,providers={{"i",21265}},r=2,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21132,{b=1,q=1,r=2,u=1610})}}),
+i(21132,{b=1,q=1,u=1610})}}),
 q(8809,{cost={{"i",12810,2},{"i",12655,2}},lvl=60,providers={{"i",21381}},r=1,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21266,{b=1,q=1,r=1,u=1610})}}),
+i(21266,{b=1,q=1,u=1610})}}),
 q(8507,{coords={
 [1451]={{50,36.4}}},lvl=60,qgs={15540},r=2,repeatable=1,rwp=40003,u=1610,g={
 q(8508,{coords={
 [1451]={{33.2,52.1}}},qgs={15440},r=2,repeatable=1,u=1610,g={
 qo(1,{providers={{"i",20810},{"i",21143},{"i",23024}},questID=8507,u=1610})}}),
 i(20808,{b=1,q=1,u=1610}),
-i(21132,{b=1,q=1,r=2,u=1610}),
+i(21132,{b=1,q=1,u=1610}),
 i(20809,{b=1,q=1,u=1610})}}),
 q(8731,{coords={
 [1451]={{50,36.4}}},lvl=60,qgs={15540},r=1,repeatable=1,rwp=40003,u=1610,g={
@@ -5599,7 +5599,7 @@ q(8732,{coords={
 [1451]={{52.2,68.4}}},lvl=54,qgs={15612},r=1,repeatable=1,u=1610,g={
 qo(1,{providers={{"i",20810},{"i",21143},{"i",23024}},questID=8731,u=1610})}}),
 i(20808,{b=1,q=1,u=1610}),
-i(21266,{b=1,q=1,r=1,u=1610}),
+i(21266,{b=1,q=1,u=1610}),
 i(20809,{b=1,q=1,u=1610})}}),
 q(8309,{coords={
 [1451]={{41.2,88.4}}},lvl=58,providers={{"i",20453}},qgs={15170},sourceQuests={8304},u=1609,g={
@@ -5613,10 +5613,10 @@ q(8343,{coords={
 [1451]={{48.6,37.9}}},isBreadcrumb=1,lvl=54,minReputation={609,21000},nextQuests={8341},qgs={15270},rwp=40003,u=1609}),
 q(8541,{cost={{"i",3486,10},{"i",7966,10},{"i",12644,10}},lvl=60,providers={{"i",20940}},repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21132,{b=1,q=1,r=2,u=1610})}}),
+i(21132,{b=1,q=1,u=1610})}}),
 q(8806,{cost={{"i",3486,10},{"i",7966,10},{"i",12644,10}},lvl=60,providers={{"i",21380}},repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21266,{b=1,q=1,r=1,u=1610})}}),
+i(21266,{b=1,q=1,u=1610})}}),
 q(1126,{coords={
 [1451]={{81.8,18.8}}},lvl=54,qgs={13220},rwp=40003,sourceQuests={1125},g={
 qo(1,{coords={
@@ -5686,10 +5686,10 @@ i(13446,{f=55,lvl=45,q=1,u=1611}),
 i(13444,{f=55,lvl=49,q=1,u=1611})}}),
 q(8779,{cost={{"i",11178,1},{"i",14344,1},{"i",12364,1}},lvl=60,providers={{"i",21259}},repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(20805,{b=1,q=1,r=2,u=1610})}}),
+i(20805,{b=1,q=1,u=1610})}}),
 q(8807,{cost={{"i",11178,1},{"i",14344,1},{"i",12364,1}},lvl=60,providers={{"i",21382}},repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21386,{b=1,q=1,r=1,u=1610})}}),
+i(21386,{b=1,q=1,u=1610})}}),
 q(8318,{coords={
 [1451]={{48.6,37.8}}},cost={{"i",20404,10}},lvl=57,qgs={15306},u=1609}),
 q(8280,{coords={
@@ -5770,10 +5770,10 @@ qo(4,{providers={{"n",15208}},u=1610}),
 i(21508,{b=1,q=2,u=1610})}}),
 q(8778,{cost={{"i",8956,6},{"i",9061,5},{"i",15992,10}},lvl=60,providers={{"i",21257}},r=2,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(20805,{b=1,q=1,r=2,u=1610})}}),
+i(20805,{b=1,q=1,u=1610})}}),
 q(8785,{cost={{"i",12804,6},{"i",8956,8},{"i",8152,6}},lvl=60,providers={{"i",21258}},r=1,repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21386,{b=1,q=1,r=1,u=1610})}}),
+i(21386,{b=1,q=1,u=1610})}}),
 q(86674,{coords={
 [1451]={{52.1,39.1}}},lvl=60,maps={247,337},qgs={16091},u=1610,g={
 qo(1,{providers={{"i",22216}},u=1610}),
@@ -5823,10 +5823,10 @@ q(6844,{coords={
 [1451]={{81.8,18.8}}},lvl=54,maps={1450},providers={{"i",17346}},qgs={13220},rwp=40003,sourceQuests={1126}}),
 q(8782,{cost={{"i",14342,1},{"i",14227,1},{"i",14048,2}},lvl=60,providers={{"i",21262}},repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21132,{b=1,q=1,r=2,u=1610})}}),
+i(21132,{b=1,q=1,u=1610})}}),
 q(8808,{cost={{"i",14342,1},{"i",14227,1},{"i",14048,2}},lvl=60,providers={{"i",21384}},repeatable=1,rwp=40003,u=1610,g={
 i(20800,{b=1,q=2,u=1610}),
-i(21266,{b=1,q=1,r=1,u=1610})}}),
+i(21266,{b=1,q=1,u=1610})}}),
 q(8314,{coords={
 [1451]={{41.2,88.4}}},lvl=58,providers={{"i",20463}},qgs={15170},sourceQuests={8309,8310},u=1609}),
 q(8572,{coords={
@@ -6534,7 +6534,7 @@ q(4509,{coords={
 [1446]={{50.8,27}}},lvl=50,maps={1454},providers={{"i",11844}},qgs={5594},r=1,rwp=40003,sourceQuests={4507}}),
 q(6610,{altQuests={13825},coords={
 [1446]={{52.6,28.1}}},cost={{"i",8932,20},{"i",7974,10},{"i",12207,12}},learnedAt=225,lvl=35,qgs={8125},requireSkill=185,sourceQuests={6611,6612},g={
-i(16971,{f=55,lvl=40,q=1}),
+i(16971,{f=55,lvl=40,q=1,requireSkill=185}),
 r(18260,{learnedAt=200,rank=4,requireSkill=185,rwp=30100})}}),
 q(2882,{coords={
 [1446]={{55.4,92.2}}},cost={{"i",9252,1},{"i",9253,1},{"i",9251,1},{"i",9275,1}},lvl=40,providers={{"i",9254},{"o",142189}},repeatable=1,rwp=40003,g={
@@ -6601,7 +6601,7 @@ q(3914,{coords={
 [1446]={{53.9,29}}},lvl=47,maps={1449},providers={{"i",11162},{"o",148504}},rwp=40003,sourceQuests={3913}}),
 q(3644,{coords={
 [1446]={{54.4,27.2}}},cost=20000,learnedAt=200,lvl=30,qgs={8126},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
-i(10791,{b=1,q=1})}}),
+i(10791,{b=1,q=1,requireSkill=202})}}),
 q(1691,{coords={
 [1446]={{52.5,28.5}}},lvl=40,qgs={7407},rwp=40003,sourceQuests={1690},g={
 qo(1,{providers={{"n",5615}}}),
@@ -6682,7 +6682,7 @@ q(81682,{awp=11502,c={1},coords={
 [1446]={{51.6,27.6}}},lvl=45,maps={1447},qgs={220984},u=1607}),
 q(3638,{altQuests={3640,3642},coords={
 [1446]={{54.4,27.2}}},learnedAt=200,lvl=30,qgs={8126},requireSkill=202,rwp=30002,sourceQuests={3526,3629,3633,4181},g={
-qo(1,{cost={{"i",10792,1}},providers={{"i",11270}}})}}),
+qo(1,{cost={{"i",10792,1}},providers={{"i",11270}},requireSkill=202})}}),
 q(10,{coords={
 [1446]={{50.2,27.5}}},lvl=39,qgs={7724},rwp=40003,sourceQuests={82},g={
 qo(1,{coords={
@@ -6810,6 +6810,10 @@ r(3503,{isLimited=1,itemID=6047,learnedAt=190,q=1,requireSkill=164,rwp=11501,u=2
 n(7564,{coords={
 [1446]={{51.8,28.6}}},g={
 i(8529,{b=1,f=55,lvl=35,q=1})}}),
+n(16014,{awp=11101,coords={
+[1446]={{52.4,28.3}}},g={
+h(-55,{description="Available if a specific Quest (8977/8978) has been completed.",rwp=40003,sourceQuests={8977,8978},sqreq=1,u_sqs=1,g={
+i(22115,{b=1,q=1})}})}}),
 n(6568,{coords={
 [1446]={{51,27.3}}},g={
 r(439085,{awp=11501,isLimited=1,itemID=217244,learnedAt=220,q=1,requireSkill=197,u=1606}),
@@ -7218,7 +7222,7 @@ i(206970,{b=1,c={11},f=55,q=2,u=1605,g={
 r(410033,{u=1605})}})}}),
 o(407734,{coords={
 [1438]={{45,61.4}}},rwp=20001,u=1605,g={
-i(205940,{b=1,c={5},f=55,q=2,r=1,u=1605,g={
+i(205940,{b=1,c={5},f=55,q=2,u=1605,g={
 r(425216,{u=1605})}}),
 i(204809,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403476,{u=1605})}}),
@@ -7349,10 +7353,10 @@ o(123330,{coords={
 [1413]={{65,45.4}}},requireSkill=633}),
 o(129127,{coords={
 [1413]={{54.7,5.6}}},cost={{"i",8072,1}},learnedAt=70,requireSkill=633,rwp=40003,g={
-i(8073,{q=1})}}),
+i(8073,{q=1,requireSkill=633})}}),
 o(123462,{coords={
 [1413]={{65,45.4}}},learnedAt=25,requireSkill=633,rwp=40003,g={
-i(7968,{cost={{"i",7970,1}},crs={7168},description="When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",q=1})}}),
+i(7968,{cost={{"i",7970,1}},crs={7168},description="When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",q=1,requireSkill=633})}}),
 o(105176,{coords={
 [1413]={{61.8,3.9}}},requireSkill=633})}}),
 ah(921,{c={4},type="s",g={
@@ -7531,8 +7535,8 @@ q(1716,{c={9},coords={
 [1453]={{25.4,78.4}}},isBreadcrumb=1,lvl=20,nextQuests={1738},qgs={6122},races={1,7},rwp=40003,sourceQuests={1717}}),
 q(862,{coords={
 [1413]={{55.31,31.79}}},cost={{"i",5051,8}},lvl=15,qgs={3443},r=1,requireSkill=185,rwp=40003,g={
-s(160209,10919,{b=1,f=4,loc=44,q=2}),
-i(5478,{f=55,lvl=10,q=1}),
+s(160209,10919,{b=1,f=4,loc=44,q=2,requireSkill=185}),
+i(5478,{f=55,lvl=10,q=1,requireSkill=185}),
 r(6417,{itemID=5487,learnedAt=90,q=1,requireSkill=185})}}),
 q(871,{coords={
 [1413]={{51.5,30.86}}},lvl=9,qgs={3429},r=1,sourceQuests={854},g={
@@ -7672,7 +7676,7 @@ q(6365,{coords={
 [1413]={{52.62,29.84}}},lvl=10,providers={{"i",16306}},qgs={3489},races={2,8}}),
 q(3646,{coords={
 [1413]={{62.6,36.2}}},cost=20000,learnedAt=200,lvl=30,qgs={8738},repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3639},g={
-i(10791,{b=1,q=1})}}),
+i(10791,{b=1,q=1,requireSkill=202})}}),
 q(9267,{coords={
 [1413]={{61.22,37.86}}},cost={{"i",3371,4},{"i",2589,40}},lc={1,"factionID",470.4},lvl=10,qgs={16418},repeatable=1}),
 q(896,{coords={
@@ -7764,8 +7768,8 @@ q(5045,{coords={
 [1413]={{44.55,59.26}}},cost={{"i",5075,4}},lvl=14,qgs={3430},r=1,repeatable=1,rwp=40003,sourceQuests={5052}}),
 q(866,{coords={
 [1413]={{62.4,37.6}}},description="To access this quest, you must have at least 40 skill in Herbalism.",lvl=9,qgs={3446},requireSkill=182,g={
-qo(1,{providers={{"i",5056}}}),
-s(158141,5341,{b=1,f=5,loc=42,q=2})}}),
+qo(1,{providers={{"i",5056}},requireSkill=182}),
+s(158141,5341,{b=1,f=5,loc=42,q=2,requireSkill=182})}}),
 q(78680,{c={9},coords={
 [1413]={{49.2,57.2}}},description="Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",lvl=20,maps={1433,1439},qgs={6247},rwp=20001,sourceQuests={1740},u=1605,g={
 qo(1,{coords={
@@ -8097,7 +8101,7 @@ n(5828,{coords={
 [1413]={{62,33.6}}}}),
 n(209607,{coords={
 [1413]={{62.6,56.2}}},providers={{"i",208739},{"o",407291}},r=1,u=1605,g={
-i(208741,{b=1,c={1},f=55,q=2,r=2,u=1605,g={
+i(208741,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403489,{u=1605})}})}}),
 n(5848,{coords={
 [1413]={{49.4,84.4}}},r=1}),
@@ -8166,7 +8170,7 @@ o(3642,{coords={
 [1413]={{43,23.5},{44.3,37.7},{52.8,41.8}}},cost={{"i",5020,1}},description="Contains random low level greens.",providers={{"o",152608},{"o",152618}},g={
 i(208689,{b=1,c={11},f=54,lvl=20,q=2,u=1605,g={
 r(410023,{u=1605})}}),
-i(208754,{b=1,c={8},q=2,r=1,u=1605}),
+i(208754,{b=1,c={8},q=2,u=1605}),
 i(206382,{b=1,c={7},f=54,lvl=20,q=2,u=1605,g={
 r(410097,{u=1605})}})}})}),
 h(-58,{
@@ -8968,7 +8972,7 @@ q(4804,{coords={
 i(12457,{b=1,q=1})}}),
 q(5307,{altQuests={5306,84496},coords={
 [1452]={{61.2,37.2}}},learnedAt=250,lvl=50,maps={317},qgs={11193},requireSkill=9787,rwp=40003,g={
-qo(1,{crs={11121},providers={{"i",13350}}}),
+qo(1,{crs={11121},providers={{"i",13350}},requireSkill=9787}),
 r(16978,{itemID=12825,learnedAt=280,q=2,requireSkill=17039})}}),
 q(6030,{coords={
 [1452]={{61.2,38.8}}},lvl=50,maps={1423},providers={{"i",15790}},qgs={10431},rwp=40003}),
@@ -9046,7 +9050,7 @@ q(5601,{altQuests={5142},coords={
 [1452]={{61.2,39}}},lvl=50,qgs={11629},rwp=40003}),
 q(5306,{altQuests={5307,84496},coords={
 [1452]={{61.2,37}}},description="Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",learnedAt=250,lvl=50,maps={250},qgs={11192},requireSkill=9787,rwp=40003,g={
-qo(1,{crs={9236},providers={{"i",13352}}}),
+qo(1,{crs={9236},providers={{"i",13352}},requireSkill=9787}),
 r(16970,{itemID=12821,learnedAt=275,q=3,requireSkill=17041})}}),
 q(5250,{coords={
 [1438]={{55.4,92.2}}},isBreadcrumb=1,lvl=53,nextQuests={5244},qgs={7907},r=2,rwp=40003}),
@@ -9055,11 +9059,11 @@ q(4842,{coords={
 s(162591,15789,{b=1,f=3,q=2})}}),
 q(84496,{altQuests={5306,5307},awp=11503,coords={
 [1452]={{61.2,37.2}}},description="Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",learnedAt=250,lvl=50,maps={317},qgs={11191},requireSkill=9787,u=1608,g={
-qo(1,{crs={11120},providers={{"i",13351}},u=1608}),
+qo(1,{crs={11120},providers={{"i",13351}},requireSkill=9787,u=1608}),
 r(461733,{itemID=228311,learnedAt=305,q=2,requireSkill=17040,u=1608})}}),
 q(5305,{altQuests={5306,5307},coords={
 [1452]={{61.2,37.2}}},description="Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",learnedAt=250,lvl=50,maps={317},qgs={11191},requireSkill=9787,rwp=11503,u=2,g={
-qo(1,{crs={11120},providers={{"i",13351}},u=2}),
+qo(1,{crs={11120},providers={{"i",13351}},requireSkill=9787,u=2}),
 r(16973,{itemID=12824,learnedAt=280,q=2,requireSkill=17040,u=2})}}),
 q(5253,{coords={
 [1452]={{52,30.2}}},lvl=53,maps={1457},providers={{"i",13347}},qgs={11079},r=2,rwp=40003,sourceQuests={5252},g={
@@ -9446,7 +9450,7 @@ s(158931,7507,{b=1,c={8},f=1,q=2}),
 s(159408,9514,{b=1,c={8},f=28,q=2})}}),
 q(3647,{coords={
 [1455]={{69.8,50.2}}},cost=20000,learnedAt=200,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3641},g={
-i(10790,{b=1,q=1})}}),
+i(10790,{b=1,q=1,requireSkill=202})}}),
 q(3448,{coords={
 [1455]={{77.2,11.8}}},lvl=45,qgs={2916},r=2,rwp=40003}),
 q(6392,{coords={
@@ -9459,7 +9463,7 @@ q(683,{coords={
 [1455]={{63.5,67.2}}},lvl=25,providers={{"i",4514}},qgs={2695},r=2,rwp=40003,sourceQuests={637}}),
 q(3641,{altQuests={3639,3643},coords={
 [1455]={{69.8,50.2}}},cost={{"i",10559,6},{"i",4407,1},{"i",4392,2}},learnedAt=200,lvl=30,qgs={7944},r=2,requireSkill=202,rwp=30002,sourceQuests={3640},g={
-i(10790,{b=1,q=1})}}),
+i(10790,{b=1,q=1,requireSkill=202})}}),
 q(2238,{c={4},coords={
 [1455]={{51.6,14.8}}},lvl=10,qgs={5165},r=2,rwp=40003,sourceQuests={2218}}),
 q(2041,{coords={
@@ -9469,7 +9473,7 @@ q(1578,{coords={
 r(3321,{itemID=3609,learnedAt=35,q=2,requireSkill=164})}}),
 q(3640,{altQuests={3638,3642},coords={
 [1455]={{69.8,50.2}}},learnedAt=200,lvl=30,qgs={7944},r=2,requireSkill=202,rwp=30002,sourceQuests={3630},g={
-qo(1,{cost={{"i",10793,1}},providers={{"i",11283}}})}}),
+qo(1,{cost={{"i",10793,1}},providers={{"i",11283}},requireSkill=202})}}),
 q(1715,{altQuests={1685},c={9},coords={
 [1455]={{47.6,9.6}}},isBreadcrumb=1,lvl=10,nextQuests={1688},qgs={6120},races={1,7},rwp=40003}),
 q(2997,{c={2},coords={
@@ -11566,7 +11570,7 @@ fp(16,{coords={
 [1417]={{45.8,46.2}}},crs={2835},r=2})}),
 prof(186,{awp=11101,g={
 o(2653,{learnedAt=75,requireSkill=186,rwp=40003,g={
-i(4278,{q=1})}})}}),
+i(4278,{q=1,requireSkill=186})}})}}),
 ah(921,{c={4},type="s",g={
 i(17124,{b=1,crs={2586,2587,2588,2589,2590,2591},q=1})}}),
 h(-44,{
@@ -11814,7 +11818,7 @@ qo(1,{coords={
 [1417]={{19.8,66.4}}},crs={2570},providers={{"i",4527}}})}}),
 q(6622,{coords={
 [1417]={{68.5,37.8}}},description="Needs a minimum of 225 skill in First Aid.",lvl=35,qgs={12920},r=1,requireSkill=129,sourceQuests={6623},g={
-qo(1,{crs={12923,12924,12925},providers={{"i",16991}}}),
+qo(1,{crs={12923,12924,12925},providers={{"i",16991}},requireSkill=129}),
 r(10846,{learnedAt=200,rank=4,requireSkill=129,rwp=30100})}}),
 q(645,{coords={
 [1417]={{73.8,33.8}}},lvl=32,providers={{"i",4467},{"o",2703}},qgs={2703},r=1,rwp=40003,sourceQuests={644}}),
@@ -12021,9 +12025,9 @@ qo(2,{crs={2727,2728,2729,2730},providers={{"i",7846}}}),
 qo(3,{crs={92,2735,2736,2745,2752,2791,2919,8278},providers={{"i",7848}}})}}),
 q(2203,{coords={
 [1418]={{2.6,46}}},learnedAt=210,lvl=40,qgs={6868},r=1,requireSkill=171,rwp=40003,sourceQuests={2202},g={
-qo(1,{cost={{"i",7866,1}},crs={2726},providers={{"i",7867}}}),
-i(7870,{q=1,g={
-i(7866,{b=1,q=1})}}),
+qo(1,{cost={{"i",7866,1}},crs={2726},providers={{"i",7867}},requireSkill=171}),
+i(7870,{q=1,requireSkill=171,g={
+i(7866,{b=1,q=1,requireSkill=171})}}),
 r(11452,{learnedAt=215,requireSkill=171})}}),
 q(703,{coords={
 [1418]={{42.39,52.93}}},cost={{"i",3404,4}},lvl=33,qgs={2817},rwp=40003,g={
@@ -12252,6 +12256,11 @@ n(8924,{coords={
 [35]={{37.8,61.3},{47.6,62}}},g={
 i(19259,{q=3,u=1609}),
 s(160281,11603,{f=34,lvl=46,q=3})}})}),
+h(-55,{awp=11101,g={
+n(16033,{coords={
+[33]={{63.1,44.4}}},providers={{"i",22115}},g={
+h(-55,{description="Available if a specific Quest (8996) has been completed.",rwp=40003,sourceQuests={8996},u_sqs=1,g={
+i(22057,{b=1,q=1})}})}})}}),
 h(-56,{awp=11503,g={
 i(226694,{b=1,c={1,2,4,7,9,11},description="1. Head to the South end of Searing Gorge and enter Blackrock Mountain.\n2. As you enter the main chamber, head left down the circular pathway.\n3. When you come to the meeting stone for Lower Blackrock Spire, turn left and head up the hallway.\n4. Watch out for level 54-ish creatures and take the first right in to a small room.\n5. You will see two copies of the book laying on the floor.\n*One is next to a pair of creatures. Another is in a small nook where you may safely loot the book without pulling aggro.",f=55,providers={{"o",457099}},q=2,u=1608,g={
 r(459313,{c={1,2,4,7,9,11},u=1608})}})}})}}),
@@ -12842,9 +12851,9 @@ s(156706,2218,{b=1,f=20,q=2}),
 s(156198,1009,{b=1,f=23,q=2})}}),
 q(384,{coords={
 [1426]={{46.8,52.4}}},cost={{"i",2886,6},{"i",2894,1}},lvl=5,qgs={1267},r=2,requireSkill=185,g={
-qo(1,{crs={1125,1126,1127,1689,208638},providers={{"i",2886}}}),
-qo(2,{crs={1247},providers={{"i",2894}}}),
-i(2888,{f=55,q=1}),
+qo(1,{crs={1125,1126,1127,1689,208638},providers={{"i",2886}},requireSkill=185}),
+qo(2,{crs={1247},providers={{"i",2894}},requireSkill=185}),
+i(2888,{f=55,q=1,requireSkill=185}),
 r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185})}}),
 q(310,{coords={
 [1426]={{30.2,45.6}}},lvl=2,providers={{"i",2548}},qgs={1375},r=2,rwp=40003,g={
@@ -13133,7 +13142,7 @@ s(156733,2257,{awp=100107,coords={
 s(156624,2112,{awp=100107,coords={
 [1426]={{81.6,49},{88.6,51.4}}},crs={1689},f=5,loc=42,lvl=4,q=1,rwp=40003}),
 i(205940,{b=1,c={5},coords={
-[1426]={{26,41.8}}},crs={1211},f=55,q=2,r=1,u=1605,g={
+[1426]={{26,41.8}}},crs={1211},f=55,q=2,u=1605,g={
 r(425216,{u=1605})}}),
 i(205945,{b=1,c={5},coords={
 [1426]={{78.6,62}}},crs={6124},description="This can drop from any of the Rare Creatures in the zone.",f=55,q=2,u=1605,g={
@@ -14657,7 +14666,7 @@ s(156221,1195,{awp=100107,coords={
 [1429]={{38,87},{40,83.8},{41.6,78.8}}},crs={475},f=24,lvl=3,q=1,rwp=40003}),
 i(1399,{crs={476},f=55,q=1,rwp=40003}),
 i(205940,{b=1,c={5},coords={
-[1429]={{41.6,78.8}}},crs={327},f=55,q=2,r=1,u=1605,g={
+[1429]={{41.6,78.8}}},crs={327},f=55,q=2,u=1605,g={
 r(425216,{u=1605})}}),
 i(205945,{b=1,c={5},coords={
 [1429]={{41.6,79.2},{63.6,55.4}}},crs={40},description="This can drop from any of the Rare Creatures in the zone.",f=55,q=2,u=1605,g={
@@ -14913,11 +14922,11 @@ q(1067,{coords={
 q(555,{coords={
 [1424]={{51.8,58.7}}},cost={{"i",3713,1},{"i",3712,10}},lvl=28,qgs={2430},r=2,requireSkill=185,rwp=40003,g={
 r(3400,{itemID=3737,learnedAt=175,q=1,requireSkill=185}),
-i(3729,{f=55,lvl=25,q=1})}}),
+i(3729,{f=55,lvl=25,q=1,requireSkill=185})}}),
 q(7321,{coords={
 [1424]={{62.3,19.05}}},cost={{"i",3713,1},{"i",3712,10}},lvl=28,qgs={2393},r=1,requireSkill=185,rwp=40003,g={
 r(3400,{itemID=3737,learnedAt=175,q=1,requireSkill=185}),
-i(3729,{f=55,lvl=25,q=1})}}),
+i(3729,{f=55,lvl=25,q=1,requireSkill=185})}}),
 q(538,{coords={
 [1453]={{74.2,7.5}}},qgs={1440},r=2,rwp=40003,sourceQuests={337}}),
 q(546,{coords={
@@ -15158,9 +15167,9 @@ qo(2,{crs={2727,2728,2729,2730},providers={{"i",7846}}}),
 qo(3,{crs={92,2735,2736,2745,2752,2791,2919,8278},providers={{"i",7848}}})}}),
 q(2501,{coords={
 [1432]={{37.07,49.38}}},lvl=40,maps={1418},qgs={1470},r=2,requireSkill=171,rwp=40003,sourceQuests={17},g={
-qo(1,{cost={{"i",7866,1}},crs={2726},providers={{"i",7867}}}),
-i(7870,{q=1,g={
-i(7866,{b=1,q=1})}}),
+qo(1,{cost={{"i",7866,1}},crs={2726},providers={{"i",7867}},requireSkill=171}),
+i(7870,{q=1,requireSkill=171,g={
+i(7866,{b=1,q=1,requireSkill=171})}}),
 r(11452,{learnedAt=215,requireSkill=171})}}),
 q(2038,{coords={
 [1432]={{63.6,47.8}}},lvl=12,qgs={6577},r=2,rwp=40003,sourceQuests={2039},g={
@@ -15326,7 +15335,7 @@ i(205905,{b=1,c={5},coords={
 r(425215,{u=1605})}}),
 o(407983,{coords={
 [1432]={{54.2,27}}},rwp=20001,u=1605,g={
-i(208754,{b=1,c={8},q=2,r=1,u=1605})}}),
+i(208754,{b=1,c={8},q=2,u=1605})}}),
 i(205932,{b=1,c={5},coords={
 [1432]={{71.8,27.6}}},description="/kneel at the statue for the rune.",f=55,providers={{"n",209908}},q=2,rwp=20001,u=1605,g={
 r(402849,{u=1605})}}),
@@ -15345,7 +15354,7 @@ i(209850,{b=1,coords={
 [1432]={{77.5,14.1}}},providers={{"o",409731}},q=1,u=1605}),
 o(407850,{coords={
 [1432]={{36.8,91.4}}},rwp=20001,u=1605,g={
-i(208851,{b=1,c={2},f=54,lvl=8,q=2,r=2,u=1605,g={
+i(208851,{b=1,c={2},f=54,lvl=8,q=2,u=1605,g={
 r(410001,{u=1605})}})}})}),
 h(-58,{
 n(1214,{coords={
@@ -15477,7 +15486,7 @@ fp(5,{coords={
 prof(633,{c={4},g={
 o(121264,{coords={
 [1433]={{52,44.9}}},learnedAt=25,requireSkill=633,rwp=40003,g={
-i(7871,{q=1})}}),
+i(7871,{q=1,requireSkill=633})}}),
 o(178244,{coords={
 [1433]={{51.9,45}}},requireSkill=633})}}),
 h(-44,{
@@ -15965,8 +15974,8 @@ s(160141,10743,{b=1,f=6,loc=40,q=2}),
 s(160142,10744,{b=1,f=21,q=2})}}),
 q(3379,{coords={
 [1427]={{41,75}}},lvl=40,qgs={8439},requireSkill=197,rwp=40003,g={
-qo(1,{providers={{"n",8442}}}),
-s(160050,10461,{b=1,f=4,loc=43,q=2})}}),
+qo(1,{providers={{"n",8442}},requireSkill=197}),
+s(160050,10461,{b=1,f=4,loc=43,q=2,requireSkill=197})}}),
 q(3462,{coords={
 [1427]={{39.1,39}}},lvl=40,qgs={8479},rwp=40003,sourceQuests={3454}}),
 q(7728,{coords={
@@ -15997,13 +16006,13 @@ q(3454,{coords={
 q(3385,{coords={
 [1427]={{41,75}}},lvl=40,qgs={8439},requireSkill=197,rwp=40003,sourceQuests={3379},g={
 qo(1,{coords={
-[1427]={{35.8,52.6}}},providers={{"n",8444}}}),
+[1427]={{35.8,52.6}}},providers={{"n",8444}},requireSkill=197}),
 qo(2,{coords={
-[1427]={{35.8,52.6}}},providers={{"n",8447}}}),
+[1427]={{35.8,52.6}}},providers={{"n",8447}},requireSkill=197}),
 qo(3,{coords={
-[1427]={{35.8,52.6}}},crs={8444},providers={{"i",10467}}}),
-i(10479,{b=1,q=2}),
-s(160051,10462,{b=1,f=4,loc=45,q=2})}}),
+[1427]={{35.8,52.6}}},crs={8444},providers={{"i",10467}},requireSkill=197}),
+i(10479,{b=1,q=2,requireSkill=197}),
+s(160051,10462,{b=1,f=4,loc=45,q=2,requireSkill=197})}}),
 q(3402,{coords={
 [1427]={{41,75}}},lvl=40,qgs={8439},requireSkill=197,rwp=40003,sourceQuests={3385},g={
 r(12086,{itemID=10463,learnedAt=245,q=2,requireSkill=197})}}),
@@ -16095,7 +16104,7 @@ fp(10,{coords={
 prof(633,{c={4},g={
 o(103815,{coords={
 [1421]={{63.7,65.2}}},requireSkill=633,rwp=40003,g={
-i(309)}})}}),
+i(309,{requireSkill=633})}})}}),
 h(-45,{
 q(530,{coords={
 [1458]={{62,43}}},lvl=10,qgs={2050},r=1,rwp=40003,sourceQuests={441},g={
@@ -16241,7 +16250,7 @@ q(1359,{coords={
 h(-46,{
 n(1920,{coords={
 [1421]={{63.4,65.2}}},r=1,rwp=40003,g={
-p(42,{awp=11101,description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",itemID=8491,petTypeID=8,q=1,r=1,spellID=10675}),
+p(42,{awp=11101,description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",itemID=8491,petTypeID=8,q=1,spellID=10675}),
 s(157771,4437,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=28,lvl=15,q=2}),
 s(157770,4436,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=4,loc=45,lvl=16,q=2})}}),
 n(211875,{c={7},coords={
@@ -16257,7 +16266,7 @@ n(12433,{coords={
 [1421]={{35.6,9},{37.2,15.6}}}}),
 n(211146,{coords={
 [1421]={{34.8,7.8}}},providers={{"n",210802}},r=1,u=1605,g={
-i(208741,{b=1,c={1},f=55,q=2,r=2,u=1605,g={
+i(208741,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403489,{u=1605})}})}}),
 n(12432,{coords={
 [1421]={{51.6,63.8},{54.6,52},{56.2,62.4}}},rwp=40003}),
@@ -16585,7 +16594,7 @@ s(157668,4109,{b=1,f=5,loc=47,q=2})}}),
 q(2765,{coords={
 [1434]={{50.6,20.4}}},lvl=40,qgs={7802},requireSkill=164,rwp=40003,sourceQuests={2761,2762,2763},g={
 i(8703,{b=1,f=53,q=2,requireSkill=164,g={
-s(159282,8708,{b=1,collectible=false,f=23,lvl=40,q=4})}})}}),
+s(159282,8708,{b=1,collectible=false,f=23,lvl=40,q=4,requireSkill=164})}})}}),
 q(8554,{altQuests={618},coords={
 [1434]={{26.7,73.6}}},lvl=35,qgs={2594},rwp=40003,sourceQuests={8553},g={
 q(619,{cost={{"i",4595,5},{"i",4457,10}},description="This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",providers={{"o",2289}},repeatable=1,g={
@@ -16644,7 +16653,7 @@ qo(1,{crs={818},providers={{"i",3616}}}),
 s(157681,4125,{b=1,f=1,q=2})}}),
 q(3645,{coords={
 [1434]={{28.2,76.2}}},cost=20000,learnedAt=200,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},g={
-i(10790,{b=1,q=1})}}),
+i(10790,{b=1,q=1,requireSkill=202})}}),
 q(594,{lvl=45,providers={{"i",4098}},rwp=40003}),
 q(630,{coords={
 [1434]={{38.4,80.6}}},lvl=42,qgs={2634},rwp=40003,sourceQuests={594},g={
@@ -16723,7 +16732,7 @@ q(83934,{awp=11503,coords={
 qo(1,{providers={{"i",226404}},u=1608})}}),
 q(3643,{altQuests={3639,3641},coords={
 [1434]={{28.2,76.2}}},cost={{"i",10559,6},{"i",4407,1},{"i",4392,2}},learnedAt=200,lvl=30,qgs={7406},r=1,requireSkill=202,rwp=30002,sourceQuests={3642},g={
-i(10790,{b=1,q=1})}}),
+i(10790,{b=1,q=1,requireSkill=202})}}),
 q(605,{coords={
 [1434]={{27.12,77.22}}},lvl=30,qgs={2498},rwp=40003,g={
 qo(1,{crs={688,689,690,1550,1551},providers={{"i",3918}}})}}),
@@ -16844,7 +16853,7 @@ q(2760,{coords={
 q(8552,{altQuests={620},lvl=35,providers={{"i",3985}},rwp=40003}),
 q(3642,{altQuests={3638,3640},coords={
 [1434]={{28.2,76.2}}},learnedAt=200,lvl=30,qgs={7406},r=1,requireSkill=202,rwp=30002,sourceQuests={3635,3637},g={
-qo(1,{providers={{"i",10794},{"i",11282}}})}}),
+qo(1,{providers={{"i",10794},{"i",11282}},requireSkill=202})}}),
 q(203,{coords={
 [1434]={{38,3.3}}},lvl=30,qgs={733},r=2,rwp=40003,g={
 qo(1,{providers={{"n",937}}})}}),
@@ -18261,7 +18270,7 @@ i(203748,{b=1,c={8},f=200,q=2,u=1605,g={
 r(401759,{u=1605})}})}}),
 n(208196,{c={1,5,8},coords={
 [1420]={{27.2,46.4}}},u=1605,g={
-i(205940,{b=1,c={5},f=55,q=2,r=1,u=1605,g={
+i(205940,{b=1,c={5},f=55,q=2,u=1605,g={
 r(425216,{u=1605})}}),
 i(204809,{b=1,c={1},f=55,q=2,u=1605,g={
 r(403476,{u=1605})}}),
@@ -18840,7 +18849,7 @@ fp(4,{coords={
 prof(633,{c={4},g={
 o(123214,{coords={
 [1436]={{70.5,74}}},learnedAt=70,requireSkill=633,rwp=40003,g={
-i(7908,{q=1})}})}}),
+i(7908,{q=1,requireSkill=633})}})}}),
 ah(921,{c={4},type="s",g={
 i(7923,{coords={
 [1436]={{68.6,72.2}}},crs={7051},description="Can also be killed for the key, though hits hard for lower level rogues.",q=1,rwp=40003}),
@@ -19140,7 +19149,7 @@ i(209057,{b=1,c={8,9},cost={{"i",209056,1}},f=55,q=1,u=1605}),
 s(156129,821,{crs={123},f=5,loc=42,lvl=8,q=2}),
 s(156287,1391,{crs={453},f=28,lvl=13,q=2}),
 i(208741,{b=1,c={1},coords={
-[1436]={{34.4,84.6}}},crs={391},description="This Rune can drop from any of the Rare creatures in the zone.",f=55,q=2,r=2,rwp=20001,u=1605,g={
+[1436]={{34.4,84.6}}},crs={391},description="This Rune can drop from any of the Rare creatures in the zone.",f=55,q=2,rwp=20001,u=1605,g={
 r(403489,{u=1605})}}),
 s(156132,832,{awp=100107,coords={
 [1436]={{37.6,75},{51.6,75.2}}},crs={121},f=6,loc=45,lvl=10,q=2,rwp=40003}),
@@ -19152,7 +19161,7 @@ i(209045,{b=1,c={1,9},coords={
 i(209056,{b=1,c={8,9},coords={
 [1436]={{39.2,52},{45.8,36},{47.6,67.6},{50,22.6},{54.4,25.6},{54.6,34.6},{59,18.2},{63.6,60.2}}},crs={36,114,115,480},q=1,u=1605}),
 i(208754,{b=1,c={8},coords={
-[1436]={{53,78.8}}},crs={450},q=2,r=1,rwp=20001,u=1605}),
+[1436]={{53,78.8}}},crs={450},q=2,rwp=20001,u=1605}),
 s(156524,1933,{coords={
 [1436]={{42.6,71.6},{44.6,69.4}}},crs={619},f=28,lvl=10,q=2,rwp=40003}),
 s(156772,2327,{awp=100107,coords={

@@ -87,8 +87,8 @@ mnt(54753,{b=1,itemID=43962,lvl=40,q=4,u=3}),
 mnt(74918,{itemID=54068,lvl=40,q=4,u=3}),
 mnt(46199,{itemID=49286,lvl=20,q=4,u=3})}}),
 flt(104,{awp=50004,u=3,g={
-i(50379,{lvl=80,q=4,r=2,u=3}),
-i(50380,{lvl=80,q=4,r=1,u=3})}}),
+i(50379,{lvl=80,q=4,u=3}),
+i(50380,{lvl=80,q=4,u=3})}}),
 flt(200,{awp=50004,u=3,g={
 r(124638,{itemID=86238,learnedAt=600,q=4,requireSkill=165,u=3}),
 r(124643,{itemID=86272,learnedAt=600,q=4,requireSkill=165,u=3}),

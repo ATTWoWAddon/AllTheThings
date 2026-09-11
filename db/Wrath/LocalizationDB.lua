@@ -594,6 +594,7 @@ L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s the Compl
 L.PLAYER_TITLE_THE_CONTRIBUTOR = "|cffa335ee%s|r"
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s the Exterminator|r"
 L.PLAYER_TITLE_THE_HUGGLER = "|cffF58CBA%s the Huggler|r"
+L.PLAYER_TOOLTIP_INVOCATOR = "|c" .. _.DefaultColors.White .. "Ask me to summon removed bosses!|r"
 L.PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #classic-errors! Thanks!"
 L.POPOUT = "Popout List"
 L.PRECISION_SLIDER = "Precision Level"
@@ -1077,6 +1078,7 @@ _.HeaderConstants = {
 	PROFESSIONS = -44,
 	PROMOTIONS = -736,
 	PVP = -303,
+	PVP_ELITE = -295,
 	PVP_GLADIATOR = -296,
 	QUESTS = -45,
 	RARES = -46,
@@ -1207,8 +1209,8 @@ localize(L.HEADER_NAMES, {
 	[-353] = DUNGEON_FLOOR_BLACKROCKSPIRE3,
 	[-354] = DUNGEON_FLOOR_UPPERBLACKROCKSPIRE1,
 	[-355] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.EAST ..")",
-	[-356] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.NORTH ..")",
-	[-357] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.WEST ..")",
+	[-356] = DUNGEON_FLOOR_DIREMAUL1.." (" .. L.NORTH ..")",
+	[-357] = DUNGEON_FLOOR_DIREMAUL2.." (" .. L.WEST ..")",
 	[-358] = GetSpellInfo(21127),
 	[-359] = DUNGEON_FLOOR_DESOLACE22.." (Orange Path)",
 	[-360] = DUNGEON_FLOOR_DESOLACE21.." (Purple Path)",
@@ -1560,6 +1562,9 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027})
+})
+_.Modules.Events.SetEventInformation(1181, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=12,["weekday"]=7,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
 })
 _.Modules.Events.SetEventInformation(444, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})

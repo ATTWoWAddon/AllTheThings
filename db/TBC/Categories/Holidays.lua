@@ -821,10 +821,10 @@ q(7061,{coords={
 [1454]={{38.6,36.2}}},e=14,isYearly=1,lvl=10,providers={{"i",17735}},qgs={13417},r=1,sourceQuests={6964}}),
 q(8763,{coords={
 [1455]={{33.4,67}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13433},r=2,requireSkill=185,rwp=40300,sourceQuests={8762},g={
-i(21213,{e=14,f=106,lvl=30,q=2})}}),
+i(21213,{e=14,f=106,lvl=30,q=2,requireSkill=185})}}),
 q(8799,{coords={
 [1454]={{53.2,66.6}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13418},r=1,requireSkill=185,rwp=40300,sourceQuests={8746},g={
-i(21213,{e=14,f=106,lvl=30,q=2})}}),
+i(21213,{e=14,f=106,lvl=30,q=2,requireSkill=185})}}),
 q(7062,{coords={
 [1455]={{30.2,59.8}}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
 i(17735,{e=14,q=1})}}),
@@ -2410,14 +2410,14 @@ q(8194,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19807,5}},e=6,qgs={15078},repeatable=1,requireSkill=356}),
 q(8229,{coords={
 [1454]={{53.25,70.65}}},e=6,lvl=35,qgs={15116},r=1,repeatable=1,requireSkill=356,g={
-i(19978,{e=6,q=1})}}),
+i(19978,{e=6,q=1,requireSkill=356})}}),
 q(8228,{coords={
 [1453]={{54.8,63.1}}},e=6,lvl=35,qgs={15119},r=2,repeatable=1,requireSkill=356,g={
-i(19978,{e=6,q=1})}}),
+i(19978,{e=6,q=1,requireSkill=356})}}),
 q(8193,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(130584,19970,{b=1,e=6,f=57,learnedAt=300,q=3,requireSkill=356}),
-i(19979,{b=1,e=6,f=53,q=3}),
+i(19979,{b=1,e=6,f=53,q=3,requireSkill=356}),
 crit(406,{achID=306,e=6,id=1})}}),
 q(8225,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={

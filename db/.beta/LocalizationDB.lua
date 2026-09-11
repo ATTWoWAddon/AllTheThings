@@ -597,6 +597,7 @@ L.PLAYER_TITLE_THE_COMPLETIONIST = "|c" .. _.DefaultColors.Raid .. "%s the Compl
 L.PLAYER_TITLE_THE_CONTRIBUTOR = "|cffa335ee%s|r"
 L.PLAYER_TITLE_THE_EXTERMINATOR = "|cffa335ee%s the Exterminator|r"
 L.PLAYER_TITLE_THE_HUGGLER = "|cffF58CBA%s the Huggler|r"
+L.PLAYER_TOOLTIP_INVOCATOR = "|c" .. _.DefaultColors.White .. "Ask me to summon removed bosses!|r"
 L.PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #retail-errors! Thanks!"
 L.POPOUT = "Popout List"
 L.PRECISION_SLIDER = "Precision Level"
@@ -1081,6 +1082,7 @@ _.HeaderConstants = {
 	PROMOTIONS = -736,
 	PVP = -303,
 	PVP_COMBATANT = -294,
+	PVP_ELITE = -295,
 	PVP_GLADIATOR = -296,
 	PVP_WARMODE = -297,
 	QUESTS = -45,
@@ -1432,8 +1434,8 @@ localize(L.HEADER_NAMES, {
 	[-352] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,
 	[-354] = DUNGEON_FLOOR_UPPERBLACKROCKSPIRE1,
 	[-355] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.EAST ..")",
-	[-356] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.NORTH ..")",
-	[-357] = DUNGEON_FLOOR_DIREMAUL5.." (" .. L.WEST ..")",
+	[-356] = DUNGEON_FLOOR_DIREMAUL1.." (" .. L.NORTH ..")",
+	[-357] = DUNGEON_FLOOR_DIREMAUL2.." (" .. L.WEST ..")",
 	[-358] = C_Spell.GetSpellName(21127),
 	[-359] = DUNGEON_FLOOR_DESOLACE22.." ("..C_Spell.GetSpellName(251097)..")",
 	[-360] = DUNGEON_FLOOR_DESOLACE21.." ("..C_Spell.GetSpellName(251095)..")",
@@ -2695,7 +2697,7 @@ _.Modules.Events.SetEventInformation(1225, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=15,["weekday"]=2,["year"]=2021},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=6,["weekday"]=2,["year"]=2021})
 })
 _.Modules.Events.SetEventInformation(1181, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=1,["year"]=2020},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=22,["weekday"]=1,["year"]=2020})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=12,["weekday"]=7,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
 })
 _.Modules.Events.SetEventInformation(808, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=5,["weekday"]=3,["year"]=2019},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=3,["year"]=2020})
@@ -96183,7 +96185,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-530] = "這些獎勵是提供給購買了暗黑破壞神III典藏版的玩家的。",
 	[-531] = "這些獎勵是提供給購買了暗黑破壞神III：奪魂之鐮典藏版的玩家的。",
 	[-532] = "這些獎勵是提供給購買了暗黑破壞神IV基礎版的玩家的。",
-	[-533] = "這些獎勵是提供給購買了守望先鋒：啟元版的玩家的。",
+	[-533] = "這些獎勵是提供給購買了鬥陣特攻：啟元版的玩家的。",
 	[-534] = "這些獎勵是提供給購買了星海爭霸II：自由之翼典藏版的玩家的。",
 	[-535] = "這些獎勵是提供給購買了星海爭霸II：蟲族之心典藏版的玩家的。",
 	[-536] = "這些獎勵是提供給購買了星海爭霸II：虛空之遺典藏版的玩家的。",

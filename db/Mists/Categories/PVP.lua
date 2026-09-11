@@ -10090,10 +10090,10 @@ ach(5268,{pvp=1}),
 ach(5322,{pvp=1}),
 ach(5327,{pvp=1}),
 ach(5328,{pvp=1,g={
-mnt(100332,{b=1,itemID=70909,lvl=40,pvp=1,q=4,r=2}),
+mnt(100332,{b=1,itemID=70909,lvl=40,pvp=1,q=4}),
 title(152,{pvp=1})}}),
 ach(5823,{awp=40200,pvp=1,g={
-mnt(100332,{b=1,itemID=70909,lvl=40,pvp=1,q=4,r=2})}}),
+mnt(100332,{b=1,itemID=70909,lvl=40,pvp=1,q=4})}}),
 ach(5329,{pvp=1,g={
 title(145,{pvp=1})}})}}),
 h(-211,{pvp=1,r=1,g={
@@ -10131,10 +10131,10 @@ ach(5269,{pvp=1}),
 ach(5323,{pvp=1}),
 ach(5324,{pvp=1}),
 ach(5325,{pvp=1,g={
-mnt(100333,{b=1,itemID=70910,lvl=40,pvp=1,q=4,r=1}),
+mnt(100333,{b=1,itemID=70910,lvl=40,pvp=1,q=4}),
 title(153,{pvp=1})}}),
 ach(5824,{awp=40200,pvp=1,g={
-mnt(100333,{b=1,itemID=70910,lvl=40,pvp=1,q=4,r=1})}}),
+mnt(100333,{b=1,itemID=70910,lvl=40,pvp=1,q=4})}}),
 ach(5326,{pvp=1,g={
 title(217,{pvp=1})}})}})}}),
 h(-47,{pvp=1,g={

@@ -1075,9 +1075,9 @@ ach(1255,{awp=30002,e=14,maps={1455},providers={{"i",17202},{"n",2784}},r=2}),
 ach(259,{awp=30002,e=14,maps={1456},providers={{"i",17202},{"n",3057}},r=1}),
 ach(279,{awp=30002,e=14,maps={1454,1455},sourceQuests={6984,7045}}),
 ach(1688,{awp=30002,e=14,requireSkill=185,g={
-crit(6247,{achID=1688,e=14,id=1,providers={{"i",17197},{"i",17200}}}),
-crit(6249,{achID=1688,e=14,id=1,providers={{"i",34411},{"i",34413}}}),
-crit(6248,{achID=1688,e=14,id=1,providers={{"i",17198},{"i",17201}}})}}),
+crit(6247,{achID=1688,e=14,id=1,providers={{"i",17197},{"i",17200}},requireSkill=185}),
+crit(6249,{achID=1688,e=14,id=1,providers={{"i",34411},{"i",34413}},requireSkill=185}),
+crit(6248,{achID=1688,e=14,id=1,providers={{"i",17198},{"i",17201}},requireSkill=185})}}),
 ach(252,{awp=30002,e=14,providers={{"o",180796}},pvp=1}),
 ach(1705,{awp=20300,e=14,providers={{"i",34425}}}),
 ach(1706,{e=14,providers={{"i",37710}},rwp=30300,u=2,g={
@@ -1206,10 +1206,10 @@ q(7061,{coords={
 [1454]={{38.6,36.2}}},e=14,isYearly=1,lvl=10,providers={{"i",17735}},qgs={13417},r=1,sourceQuests={6964}}),
 q(8763,{coords={
 [1455]={{33.4,67}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13433},r=2,requireSkill=185,rwp=40300,sourceQuests={8762},g={
-i(21213,{e=14,f=106,lvl=20,q=2})}}),
+i(21213,{e=14,f=106,lvl=20,q=2,requireSkill=185})}}),
 q(8799,{coords={
 [1454]={{53.2,66.6}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13418},r=1,requireSkill=185,rwp=40300,sourceQuests={8746},g={
-i(21213,{e=14,f=106,lvl=20,q=2})}}),
+i(21213,{e=14,f=106,lvl=20,q=2,requireSkill=185})}}),
 q(7062,{coords={
 [1455]={{30.2,59.8}}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
 i(17735,{e=14,q=1})}}),
@@ -4066,14 +4066,14 @@ q(8194,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19807,5}},e=6,qgs={15078},repeatable=1,requireSkill=356}),
 q(8229,{coords={
 [1454]={{53.25,70.65}}},e=6,lvl=35,qgs={15116},r=1,repeatable=1,requireSkill=356,g={
-i(19978,{e=6,q=1})}}),
+i(19978,{e=6,q=1,requireSkill=356})}}),
 q(8228,{coords={
 [1453]={{54.8,63.1}}},e=6,lvl=35,qgs={15119},r=2,repeatable=1,requireSkill=356,g={
-i(19978,{e=6,q=1})}}),
+i(19978,{e=6,q=1,requireSkill=356})}}),
 q(8193,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(130584,19970,{b=1,e=6,f=57,learnedAt=300,q=3,requireSkill=356}),
-i(19979,{b=1,e=6,f=53,q=3}),
+i(19979,{b=1,e=6,f=53,q=3,requireSkill=356}),
 crit(406,{achID=306,awp=30002,e=161,id=1,u=30})}}),
 q(8225,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
