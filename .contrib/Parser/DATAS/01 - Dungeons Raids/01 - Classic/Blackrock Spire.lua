@@ -1860,10 +1860,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16080, {	-- Mor Grayhoof
-				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
+				-- #if BEFORE 6.0.2
 				["cost"] = {
 					{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
 				},
+				-- #endif
 				["provider"] = { "i", 22057 },	-- Brazier of Invocation
 				-- #if AFTER 4.0.3
 				-- This init function unmarks the removed from game flag for folks with the brazier.
@@ -2937,8 +2939,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					},
 				}),
 				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16042, {	-- Lord Valthalak
+					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
 					-- #if BEFORE 6.0.2
-					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
 					},

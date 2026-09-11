@@ -1491,7 +1491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["description"] = "Talk to him for him to break down the door.",
 					}),
 					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {	-- Isalien
-						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.",
+						["description"] = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
 						["cost"] = {
 							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 						},

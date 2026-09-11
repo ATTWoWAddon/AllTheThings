@@ -1377,12 +1377,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #if BEFORE 10.1.5
 							"This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",
 							-- #else
-							"This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+							"This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Balnazzar's room.",
 							-- #endif
 						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
+						-- #if BEFORE 6.0.2
 						["cost"] = {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 						},
+						-- #endif
 						["provider"] = { "i", 22057 },	-- Brazier of Invocation
 						-- #if AFTER 10.1.5
 						-- This init function unmarks the removed from game flag for folks with the brazier.

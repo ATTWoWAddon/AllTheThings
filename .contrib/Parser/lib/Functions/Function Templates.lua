@@ -48,6 +48,7 @@ end
 FUNCTION_TEMPLATES = {
 	OnInit = {
 		-- function unmarks the removed from game flag for folks with the brazier.
+		-- TODO: this seems to fail on login of a character... likely the Item APIs are not fully working yet prior to the character existing in the world
 		BrazierAccess = [[function(t)
 			if ]] .. WOWAPI_GetItemCount(22057) .. [[ > 0 then
 				t.u = nil;

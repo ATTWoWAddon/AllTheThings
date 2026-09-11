@@ -2489,7 +2489,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 							traderstender(850, iensemble(229059)),	-- Arsenal: Crests of the Kingdom
 							traderstender(700, iensemble(208943)),	-- Arsenal: Cosmic Weapons Cache
 							traderstender(600, iensemble(190164)),	-- Arsenal: Blades of Elune
-							traderstender(800, i(190797)),	-- Ensemble: Bones of the Bloodhunter
+							traderstender(800, iensemble(190797)),	-- Ensemble: Bones of the Bloodhunter
 							traderstender(750, iensemble(190504)),	-- Ensemble: Darkmoon Harlequin's Bells
 							traderstender(750, iensemble(212220)),	-- Ensemble: Love Witch's Attire
 							traderstender(850, iensemble(223486)),	-- Ensemble: Purple Snugglefin Murloc Romper

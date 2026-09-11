@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 local SCHOLOMANCE_GROUPS = {};
-local KORMOK_LEGACY_DESCRIPTION = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.";
+local KORMOK_LEGACY_DESCRIPTION = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.";
 local ignoreTimeline = function(item)	-- Items applied with this were never actually removed.
 	item.timeline = IGNORED_VALUE;
 	return item;
@@ -1363,7 +1363,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 		}),
 		i(18694),	-- Shadowy Mail Greaves
 	}),
-	applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16118, {	-- Kormok
+	applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16118, {	-- Kormok
 		["description"] =
 			-- #if AFTER 10.1.5
 			KORMOK_LEGACY_DESCRIPTION,
@@ -1372,9 +1372,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			-- #else
 			"This boss was summoned using the Brazier of Beckoning in Ras Frostwhisper's room, which is currently inaccessible.",
 			-- #endif
+		-- #if BEFORE 6.0.2
 		["cost"] = {
 			{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 		},
+		-- #endif
 		["provider"] = { "i", 22057 },	-- Brazier of Invocation
 		-- #if AFTER 10.1.5
 		-- This init function unmarks the removed from game flag for folks with the brazier.

@@ -586,7 +586,6 @@ ihqt(199065, 70534);				-- Sorrowful Letter
 ihqt(199068, 70537);				-- Time-Lost Memo
 -- Various --
 iq(198083, 69996);					-- Expedition Supply Kit
-ihqt(202047, 72248);				-- Gleaming Incarnate Thunderstone
 iq(201791, 72094, HUNTER);			-- How to Train a Dragonkin
 iq(195453, 67718);					-- Ludo's Stash Map
 is(0, 390631, HUNTER);				-- Ottuk Taming
@@ -630,7 +629,6 @@ ihqt(205350, 75751);				-- Niffen Notebook of Leatherworking Knowledge
 ihqt(205356, 75758);				-- Niffen Notebook of Mining Knowledge
 ihqt(205357, 75760);				-- Niffen Notebook of Skinning Knowledge
 ihqt(205355, 75757);				-- Niffen Notebook of Tailoring Knowledge
-ihqt(205878, 75968);				-- Obsidian Aspectral Earthstone
 is(0, 410074);						-- Path of Festering Rot
 is(0, 410071);						-- Path of the Freebooter
 is(0, 410078);						-- Path of the Earth-Warder
@@ -694,7 +692,6 @@ iq(139313, nil, WARLOCK);			-- Grimoire of the Terrorguard
 ------------------
 -- PATCH 10.1.7 --
 ------------------
-ihqt(208551, 77678);				-- Ambrosial Sporestone
 
 ------------------
 -- PATCH 10.2.0 --
@@ -722,7 +719,6 @@ iq(210728, 78521, DRUID);			-- Moon-Blessed Claw
 iq(210727, 78518, DRUID);			-- Pollenfused Bristlebruin Fur Sample
 iq(210753, 78516, DRUID);			-- Scale of the Prismatic Whiskerfish
 iq(211314, 78842, HUNTER);			-- Cinder of Companionship
-ihqt(210468, 78422);				-- Emerald Blossom Dreamstone
 is(0, 424153);						-- Path of Ancient Horrors
 is(0, 424167);						-- Path of Heart's Bane
 is(0, 424187);						-- Path of the Golden Tomb
@@ -843,7 +839,6 @@ ihqt(224645, 83058);				-- Jewel-Etched Alchemy Notes
 ihqt(224647, 83059);				-- Jewel-Etched Blacksmithing Notes
 ihqt(224652, 83060);				-- Jewel-Etched Enchanting Notes
 ihqt(224648, 83061);				-- Jewel-Etched Tailoring Notes
-ihqt(226224, 83826);				-- Luminous Nerubian Catalyst Stone
 ihqt(224653, 83063);				-- Machine-Learned Engineering Notes
 ihqt(224654, 83064);				-- Machine-Learned Inscription Notes
 ihqt(224651, 83062);				-- Machine-Learned Mining Notes
@@ -898,7 +893,7 @@ iq(230262, 85222);				-- Bronze Celebration Titles: Pandaria Enthusiast
 iq(229827, 85014);				-- Bronze Celebration Titles: Plaguelands Survivor
 iq(230267, 85227);				-- Bronze Celebration Titles: Shadowlands Enthusiast
 iq(230265, 85225);				-- Bronze Celebration Titles: Zandalar Enthusiast
-ihqt(226241, 83824);				-- Shredded Green Hills of Stranglethorn
+ihqt(226241, 83824);			-- Shredded Green Hills of Stranglethorn
 
 ------------------
 -- PATCH 11.0.7 --
@@ -921,7 +916,6 @@ ihqt(235261, 86597);				-- Blackwater's Trove (Exalted)
 iq(235037, 86630);					-- Crumpled Schematic: Wormhole Generator: Undermine
 ihqt(233281, 86329);				-- Delver's Cosmetic Surprise Bag
 ihqt(233276, 86328);				-- Delver's Starter Kit
-ihqt(236852, 87353);				-- Gallagio Highroller's Boomstone
 ihqt(235608, 86878);				-- Nightfall Sanctum Campsite
 is(0, 467553);						-- Path of the Azerite Refinery [A]
 is(0, 467555);						-- Path of the Azerite Refinery [H]
@@ -984,7 +978,6 @@ ihqt(235858, 87260);				-- Ethereal Tome of Leatherworking Knowledge
 ihqt(235857, 87259);				-- Ethereal Tome of Mining Knowledge
 ihqt(235856, 87258);				-- Ethereal Tome of Skinning Knowledge
 ihqt(235855, 87257);				-- Ethereal Tome of Tailoring Knowledge
-ihqt(246737, 91521);				-- K'areshi Voidstone
 is(0, 1239155);						-- Path of the All-Devouring
 is(0, 1237215);						-- Path of the Eco-Dome
 
@@ -1012,7 +1005,6 @@ ihqt(250445, 92186);				-- Echo of Abundance: Enchanting
 ihqt(250443, 92174);				-- Echo of Abundance: Herbalism
 ihqt(250444, 92187);				-- Echo of Abundance: Mining
 ihqt(250360, 92188);				-- Echo of Abundance: Skinning
-ihqt(265071, 94482);				-- Gleaming Sunmote
 is(0, 1254559);						-- Path of Cavernous Depths
 is(0, 1254563);						-- Path of the Fractured Core
 is(0, 1254572);						-- Path of Devoted Magistry

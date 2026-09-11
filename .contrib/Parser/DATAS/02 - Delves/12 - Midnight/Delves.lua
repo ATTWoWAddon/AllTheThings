@@ -489,7 +489,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			},
 			["coord"] = { 52.7, 77.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 			["groups"] = {
-				i(263575, {	-- Budget Friendly (CI!)
+				i(262966, {	-- Budget Friendly (CI!)
 					["timeline"] = { REMOVED_12_1_0 },	-- The cosmetic remains, but the item was removed and its HQT can no longer be completed
 				}),
 			},
