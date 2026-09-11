@@ -1424,7 +1424,7 @@ namespace ATT
                 OrganizeData_ByClass(rawSources);
             }
             // otherwise if this ensemble contains multiple Armor types, then split into Type groups
-            else if (CanOrganizeData_ByFilter(rawSources))
+            else if (CanOrganizeData_ByFilter(rawSources, Objects.Filters.Cloth, Objects.Filters.Plate))
             {
                 OrganizeData_ByFilter(rawSources);
             }
@@ -1500,9 +1500,9 @@ namespace ATT
             Objects.Merge(rawSources, headers);
         }
 
-        private static bool CanOrganizeData_ByFilter(List<Data> rawSources) =>
+        private static bool CanOrganizeData_ByFilter(List<Data> rawSources, Objects.Filters minFilter, Objects.Filters maxFilter) =>
             rawSources.Select(d => d.TryGetValue("f", out long f) ? f : 0)
-                .Where(f => f.IsBoundedBy((long)Objects.Filters.Cloth, (long)Objects.Filters.Plate)).Distinct().Count() > 1;
+                .Where(f => f.IsBoundedBy((long)minFilter, (long)maxFilter)).Distinct().Count() > 1;
 
         private static void OrganizeData_ByFilter(List<Data> rawSources)
         {

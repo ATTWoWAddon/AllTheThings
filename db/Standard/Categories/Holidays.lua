@@ -17584,10 +17584,10 @@ o(469327,{coords={
 i(229383,{b=1,e=242,spellID=464958})}}),
 o(469332,{coords={
 [1565]={{42.3,46.8}}},description="Under the Winter Queen's throne platform.",e=242,g={
-i(229384,{b=1,e=242,spellID=420213})}}),
+i(229384,{b=1,e=242,spellID=465090})}}),
 o(469335,{coords={
 [1565]={{43.3,46.4}}},description="Next to some drums to the right of the south venue entrance.",e=242,g={
-i(229386,{b=1,e=242,spellID=420213})}}),
+i(229386,{b=1,e=242,spellID=465092})}}),
 crit(70456,{achID=40871,e=242,id=9})}})}}),
 ah(40979,{e=242,type="a",g={
 ach(40873,{e=242,g={

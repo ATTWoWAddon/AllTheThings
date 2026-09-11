@@ -1427,7 +1427,7 @@ n(50307,{awp=40003,coords={
 [89]={{37.1,47.4}}},r=2,g={
 de(1829,{cost=4500000,itemID=245620,minReputation={1134,0},spellID=1239433}),
 de(858,{cost=1500000,itemID=245518,minReputation={1134,0},spellID=1238667}),
-s(32491,64882,{b=1,f=9,minReputation={1134,3000},r=2,spellID=57818}),
+s(32491,64882,{b=1,f=9,minReputation={1134,3000},r=2,spellID=93816}),
 de(1796,{awp=110207,cost=3000000,itemID=245605,minReputation={1134,9000},spellID=1239343}),
 de(1794,{awp=110207,cost=3500000,itemID=245603,minReputation={1134,21000},spellID=1239340}),
 i(67532,{b=1,f=113,minReputation={1134,21000}}),
@@ -1446,7 +1446,7 @@ n(4171,{coords={
 [89]={{61.6,63.8}}},r=2,sym={{"select","itemID",2520,1198,851,922,2024,2528,2207,2209,923,2526,2208,2534,2027}}}),
 n(50305,{awp=40003,coords={
 [89]={{36.17,48.49}}},r=2,g={
-s(22000,45579,{awp=30100,b=1,f=9,r=2,spellID=57818}),
+s(22000,45579,{awp=30100,b=1,f=9,r=2,spellID=93806}),
 s(32495,64887,{b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
 s(32496,64888,{b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
 s(32494,64886,{b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
@@ -3470,14 +3470,14 @@ s(116829,186090,{f=2,loc=40}),
 s(146480,187010,{f=2,loc=40})}}),
 n(50477,{awp=40003,coords={
 [85]={{49.9,58.1}}},r=1,g={
-s(22003,45582,{awp=30100,b=1,f=9,r=1,spellID=57818}),
+s(22003,45582,{awp=30100,b=1,f=9,r=1,spellID=93827}),
 s(32519,64912,{b=1,f=3,lvl=15,minReputation={530,42000},r=1}),
 s(32518,64911,{b=1,f=3,lvl=15,minReputation={530,42000},r=1}),
 s(32520,64913,{b=1,f=3,lvl=15,minReputation={530,42000},r=1}),
 i(67536,{b=1,f=113,minReputation={530,21000}})}}),
 n(69333,{awp=50200,coords={
 [85]={{68.6,40.2}}},r=1,g={
-s(42327,83080,{awp=50004,b=1,f=9,r=1,spellID=57818}),
+s(42327,83080,{awp=50004,b=1,f=9,r=1,spellID=126436}),
 i(92070,{awp=50100,b=1,f=113,minReputation={1352,21000}})}}),
 n(24520,{awp=20300,coords={
 [85]={{38.8,69.8}}},r=1,u=2}),
@@ -3505,7 +3505,7 @@ n(12795,{coords={
 [85]={{38.2,72.6}}},r=1,sym={{"select","symselector",4},{"pop"},{"exclude","headerID",-101}}}),
 n(50323,{awp=40003,coords={
 [85]={{50,58.6}}},r=1,g={
-s(32492,64884,{b=1,f=9,r=1,spellID=57818}),
+s(32492,64884,{b=1,f=9,r=1,spellID=93830}),
 s(32513,64906,{b=1,f=3,lvl=15,minReputation={1133,42000},r=1}),
 s(32512,64905,{b=1,f=3,lvl=15,minReputation={1133,42000},r=1}),
 s(32514,64907,{b=1,f=3,lvl=15,minReputation={1133,42000},r=1}),
@@ -5029,7 +5029,7 @@ r(28327,{awp=20300,b=1,isLimited=1,itemID=22729,requireSkill=202,skillID=2506})}
 n(50488,{awp=40003,coords={
 [85]={{50.4,58.4}}},r=1,g={
 de(9242,{awp=110207,itemID=253168,minReputation={76,3000},sourceQuests={92572},spellID=1255720}),
-s(22002,45581,{awp=30100,b=1,f=9,minReputation={76,3000},r=1,spellID=57818}),
+s(22002,45581,{awp=30100,b=1,f=9,minReputation={76,3000},r=1,spellID=93825}),
 i(67533,{b=1,f=113,minReputation={76,21000}}),
 s(32516,64909,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
 s(32517,64910,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
@@ -5378,7 +5378,7 @@ n(16766,{coords={
 [103]={{53.8,67.2}}},r=2,sym={{"sub","common_vendor",5193}}}),
 n(50306,{awp=40003,coords={
 [103]={{54.8,36.8}}},r=2,g={
-s(22001,45580,{awp=30100,b=1,f=9,r=2,spellID=57818}),
+s(22001,45580,{awp=30100,b=1,f=9,r=2,spellID=93811}),
 s(32497,64889,{b=1,f=3,lvl=15,minReputation={930,42000},r=2}),
 s(32498,64890,{b=1,f=3,lvl=15,minReputation={930,42000},r=2}),
 s(32499,64891,{b=1,f=3,lvl=15,minReputation={930,42000},r=2}),
@@ -5598,7 +5598,7 @@ n(50483,{awp=40003,coords={
 [88]={{47.05,50.23}}},r=1,g={
 i(167860,{awp=80200,b=1,minReputation={81,0},races={6},spellID=294378}),
 de(1281,{awp=110207,itemID=243335,minReputation={81,0},spellID=1235454}),
-s(22005,45584,{awp=30100,b=1,f=9,minReputation={81,0},r=1,spellID=57818}),
+s(22005,45584,{awp=30100,b=1,f=9,minReputation={81,0},r=1,spellID=94463}),
 i(67534,{b=1,f=113,minReputation={81,21000}}),
 s(32524,64917,{b=1,f=3,lvl=15,minReputation={81,42000},r=1}),
 s(32525,64918,{b=1,f=3,lvl=15,minReputation={81,42000},r=1}),
@@ -13526,7 +13526,7 @@ n(50058,{coords={
 h(-58,{
 n(50314,{coords={
 [198]={{62.7,23.8}}},g={
-s(33278,65906,{b=1,f=9,minReputation={1158,3000},spellID=57818}),
+s(33278,65906,{b=1,f=9,minReputation={1158,3000},spellID=93341}),
 i(62376,{b=1,f=51,lvl=31,minReputation={1158,9000}}),
 s(31336,62377,{b=1,f=3,lvl=31,minReputation={1158,9000}}),
 s(31335,62374,{b=1,f=5,loc=42,lvl=31,minReputation={1158,9000}}),
@@ -21031,7 +21031,7 @@ n(50410,{description="Fake Camel!"})}),
 h(-58,{
 n(48617,{coords={
 [249]={{54,33.2}}},g={
-s(33276,65904,{b=1,f=9,minReputation={1173,3000},spellID=57818}),
+s(33276,65904,{b=1,f=9,minReputation={1173,3000},spellID=93337}),
 s(31366,62437,{b=1,f=3,lvl=31,minReputation={1173,9000}}),
 s(31368,62439,{b=1,f=6,loc=45,lvl=31,minReputation={1173,9000}}),
 s(31367,62438,{b=1,f=7,loc=47,lvl=31,minReputation={1173,9000}}),
@@ -22546,7 +22546,7 @@ n(50309,{awp=40003,coords={
 [87]={{55.8,47.8}}},r=2,g={
 de(2334,{awp=110207,cost=1500000,itemID=246491,minReputation={47,3000},spellID=1242339}),
 de(2333,{awp=110207,cost=2500000,itemID=246490,minReputation={47,3000},spellID=1242338}),
-s(21998,45577,{awp=30100,b=1,f=9,minReputation={47,3000},r=2,spellID=57818}),
+s(21998,45577,{awp=30100,b=1,f=9,minReputation={47,3000},r=2,spellID=93805}),
 de(8982,{awp=110207,cost=4500000,itemID=252010,minReputation={47,9000},spellID=1253922}),
 de(2243,{awp=110207,cost=6000000,itemID=246426,minReputation={47,9000},spellID=1242110}),
 i(67528,{b=1,f=113,minReputation={47,21000}}),
@@ -22726,7 +22726,7 @@ n(5156,{coords={
 [87]={{38.8,5.6}}},r=2,sym={{"select","itemID",2617,2615,2613,2612,2614,2616,2618}}}),
 n(50308,{awp=40003,coords={
 [87]={{55.8,47.8}}},r=2,g={
-s(21999,45578,{awp=30100,b=1,f=9,r=2,spellID=57818}),
+s(21999,45578,{awp=30100,b=1,f=9,r=2,spellID=93821}),
 s(32504,64896,{b=1,f=3,lvl=15,minReputation={54,42000},r=2}),
 s(32503,64895,{b=1,f=3,lvl=15,minReputation={54,42000},r=2}),
 s(32505,64897,{b=1,f=3,lvl=15,minReputation={54,42000},r=2}),
@@ -25201,7 +25201,7 @@ h(-58,{
 n(69334,{awp=50200,coords={
 [84]={{68,17}}},r=2,g={
 i(92071,{awp=50100,b=1,f=113,minReputation={1353,21000}}),
-s(42326,83079,{awp=50004,b=1,f=9,r=2,spellID=57818})}}),
+s(42326,83079,{awp=50004,b=1,f=9,r=2,spellID=126434})}}),
 n(1294,{awp=100005,coords={
 [84]={{62.2,67.6}}},r=2,g={
 s(117,847,{f=6,loc=42,lvl=6}),
@@ -25350,7 +25350,7 @@ de(4487,{awp=110207,cost=5000000,itemID=248662,minReputation={72,3000},spellID=1
 de(4815,{awp=110207,cost=2550000,itemID=248798,minReputation={72,3000},spellID=1247784}),
 de(4447,{awp=110207,cost=3800000,itemID=248621,minReputation={72,3000},spellID=1247327}),
 de(11274,{awp=110207,cost=10000000,itemID=256673,minReputation={72,3000},spellID=1260651}),
-s(21996,45574,{awp=30100,b=1,f=9,minReputation={72,3000},r=2,spellID=57818}),
+s(21996,45574,{awp=30100,b=1,f=9,minReputation={72,3000},r=2,spellID=93795}),
 de(4819,{awp=110207,cost=1000000,itemID=248801,minReputation={72,3000},spellID=1247787}),
 de(4405,{awp=110207,cost=3800000,customCollect={"NPE"},itemID=248336,minReputation={72,3000},spellID=1246973}),
 de(4444,{awp=110207,cost=2550000,itemID=248618,minReputation={72,3000},spellID=1247324}),
@@ -26583,7 +26583,7 @@ n(28347,{awp=30002,coords={
 s(18484,38579,{b=1,f=1,isLimited=1,lvl=10,spellID=51414})}}),
 n(50305,{awp=80001,coords={
 [84]={{56.6,13.2}}},r=2,rwp=100205,u=2,g={
-s(22000,45579,{awp=30100,b=1,f=9,r=2,spellID=57818}),
+s(22000,45579,{awp=30100,b=1,f=9,r=2,spellID=93806}),
 s(32495,64887,{awp=40003,b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
 s(32496,64888,{awp=40003,b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
 s(32494,64886,{awp=40003,b=1,f=3,lvl=15,minReputation={69,42000},r=2}),
@@ -27312,7 +27312,7 @@ n(50304,{awp=40003,coords={
 [90]={{63.6,48.8}}},r=1,g={
 de(923,{awp=110207,itemID=245504,minReputation={68,0},spellID=1238653}),
 de(924,{awp=110207,itemID=245505,minReputation={68,0},spellID=1238654}),
-s(22004,45583,{awp=30100,b=1,f=9,minReputation={68,0},r=1,spellID=57818}),
+s(22004,45583,{awp=30100,b=1,f=9,minReputation={68,0},r=1,spellID=94462}),
 i(67529,{b=1,f=113,minReputation={68,21000}}),
 s(32528,64921,{awp=40001,b=1,f=3,lvl=15,minReputation={68,42000},r=1}),
 s(32529,64922,{awp=40001,b=1,f=3,lvl=15,minReputation={68,42000},r=1}),
@@ -33720,7 +33720,7 @@ n(16262,{coords={
 r(33276,{itemID=27685,requireSkill=185,skillID=2548})}}),
 n(50484,{awp=40003,coords={
 [94]={{54.2,50.8}}},r=1,g={
-s(22006,45585,{awp=30100,b=1,f=9,r=1,spellID=57818}),
+s(22006,45585,{awp=30100,b=1,f=9,r=1,spellID=93828}),
 s(32522,64915,{b=1,f=3,lvl=15,minReputation={911,42000},r=1}),
 s(32523,64916,{b=1,f=3,lvl=15,minReputation={911,42000},r=1}),
 s(32521,64914,{b=1,f=3,lvl=15,minReputation={911,42000},r=1}),
@@ -42221,7 +42221,7 @@ n(50382,{coords={
 n(49386,{coords={
 [241]={{48.6,30.6}}},r=2,g={
 de(2242,{awp=110207,cost=4000000,itemID=246425,minReputation={1174,3000},spellID=1242109}),
-s(33280,65908,{b=1,f=9,minReputation={1174,3000},r=2,spellID=57818}),
+s(33280,65908,{b=1,f=9,minReputation={1174,3000},r=2,spellID=93368}),
 de(1998,{awp=110207,cost=20000000,itemID=246108,minReputation={1174,9000},spellID=1240795}),
 s(31356,62423,{b=1,f=6,loc=40,lvl=31,minReputation={1174,9000},r=2}),
 s(31359,62426,{b=1,f=5,loc=41,lvl=31,minReputation={1174,9000},r=2}),
@@ -42239,7 +42239,7 @@ s(31363,62431,{b=1,f=5,loc=45,lvl=32,minReputation={1174,42000},r=2}),
 s(31364,62432,{b=1,f=7,loc=47,lvl=32,minReputation={1174,42000},r=2})}}),
 n(49387,{coords={
 [241]={{53.8,42}}},r=1,g={
-s(33281,65909,{b=1,f=9,minReputation={1172,3000},r=1,spellID=57818}),
+s(33281,65909,{b=1,f=9,minReputation={1172,3000},r=1,spellID=94158}),
 s(31349,62407,{b=1,f=6,loc=40,lvl=31,minReputation={1172,9000},r=1}),
 s(31346,62404,{b=1,f=5,loc=41,lvl=31,minReputation={1172,9000},r=1}),
 s(31348,62406,{b=1,f=4,loc=44,lvl=31,minReputation={1172,9000},r=1}),
@@ -43160,7 +43160,7 @@ i(187916)}})}),
 h(-58,{
 n(50324,{coords={
 [205]={{49.1,42.1}}},g={
-s(33277,65905,{b=1,f=9,minReputation={1135,3000},spellID=57818}),
+s(33277,65905,{b=1,f=9,minReputation={1135,3000},spellID=93339}),
 s(31324,62356,{b=1,f=4,loc=40,lvl=31,minReputation={1135,9000}}),
 i(62354,{b=1,f=51,lvl=31,minReputation={1135,9000}}),
 s(31322,62353,{b=1,f=6,loc=41,lvl=31,minReputation={1135,9000}}),
@@ -51031,14 +51031,14 @@ q(11046,{coords={
 q(10528,{crs={21309},lvl=25,qgs={21292},qis={30442},sourceQuests={10527}}),
 q(10776,{coords={
 [104]={{52.4,68.4}}},crs={19823},description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=25,qgs={22059},qis={31279,31310},r=2,sourceQuests={10775},g={
-s(14278,31279,{collectible=false,f=9,spellID=132375}),
+s(14278,31279,{collectible=false,f=9,spellID=132372}),
 i(31075,{b=1,f=52}),
 i(31078,{b=1,f=52}),
 i(31077,{b=1,f=52}),
 i(31076,{b=1,f=52}),
 crit(38694,{achID=1195,id=1,r=2})}}),
 q(10769,{crs={19823},description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=25,qgs={21998},qis={31108,31279},r=1,sourceQuests={10768},g={
-s(14278,31279,{collectible=false,f=9,spellID=132375}),
+s(14278,31279,{collectible=false,f=9,spellID=132372}),
 i(31075,{b=1,f=52}),
 i(31078,{b=1,f=52}),
 i(31077,{b=1,f=52}),
@@ -55156,7 +55156,7 @@ s(24732,50469,{b=1,f=3,lvl=30}),
 s(24972,50992,{b=1,f=6,loc=45,lvl=30})}}),
 n(32287,{coords={
 [125]={{25.2,47.8}}},g={
-s(20874,43157,{b=1,f=9,minReputation={1090,3000},spellID=57818}),
+s(20874,43157,{b=1,f=9,minReputation={1090,3000},spellID=57821}),
 i(44141,{b=1,f=55,lvl=30,minReputation={1090,9000},rwp=50004,u=2}),
 s(21363,44170,{b=1,f=5,loc=40,lvl=29,minReputation={1090,9000}}),
 s(21360,44166,{b=1,f=20,lvl=29,minReputation={1090,9000}}),
@@ -59498,7 +59498,7 @@ i(44978)}})}),
 h(-58,{
 n(32533,{coords={
 [115]={{59.8,53}}},g={
-s(20873,43156,{b=1,f=9,minReputation={1091,3000},spellID=57818}),
+s(20873,43156,{b=1,f=9,minReputation={1091,3000},spellID=57822}),
 i(44140,{b=1,f=55,lvl=30,minReputation={1091,9000},rwp=50004,u=2}),
 s(21384,44197,{b=1,f=7,loc=43,lvl=29,minReputation={1091,9000}}),
 s(21375,44188,{b=1,f=3,lvl=29,minReputation={1091,9000}}),
@@ -59540,7 +59540,7 @@ r(50970,{b=1,itemID=44509,minReputation={1073,21000},requireSkill=165,skillID=25
 s(21320,44052,{b=1,f=23,lvl=29,minReputation={1073,21000}}),
 s(21319,44051,{b=1,f=20,lvl=29,minReputation={1073,21000}}),
 s(21321,44053,{b=1,f=29,lvl=29,minReputation={1073,21000}}),
-s(21318,44050,{b=1,f=57,minReputation={1073,42000},requireSkill=356,spellID=59731}),
+s(21318,44050,{b=1,f=57,minReputation={1073,42000},requireSkill=356,spellID=11789}),
 p(198,{b=1,itemID=44723,minReputation={1073,42000},npcID=32595,spellID=61357})}})}),
 h(-63,{
 s(17933,37659,{coords={
@@ -62285,7 +62285,7 @@ h(-58,{
 n(32538,{coords={
 [118]={{43.4,20.6}}},g={
 r(53877,{b=1,itemID=41562,minReputation={1098,3000},requireSkill=755,skillID=2522}),
-s(20872,43155,{b=1,f=9,minReputation={1098,3000},spellID=57818}),
+s(20872,43155,{b=1,f=9,minReputation={1098,3000},spellID=57820}),
 i(44138,{b=1,f=55,lvl=30,minReputation={1098,9000},rwp=50004,u=2}),
 s(21409,44242,{b=1,f=3,lvl=29,minReputation={1098,9000}}),
 r(60647,{itemID=44512,minReputation={1098,9000},requireSkill=165,rwp=40001,u=2}),
@@ -62312,7 +62312,7 @@ s(19219,40006,{f=25,lvl=27}),
 i(40007,{f=36,lvl=27,rwp=50004,u=2})}}),
 n(30431,{coords={
 [118]={{87.6,75.6}}},g={
-s(20871,43154,{b=1,f=9,minReputation={1106,3000},spellID=57818}),
+s(20871,43154,{b=1,f=9,minReputation={1106,3000},spellID=57819}),
 i(44139,{b=1,f=55,lvl=30,minReputation={1106,9000},rwp=50004,u=2}),
 s(21396,44216,{b=1,f=3,lvl=29,minReputation={1106,9000}}),
 s(21407,44240,{b=1,f=7,loc=46,lvl=29,minReputation={1106,9000}}),
@@ -65254,7 +65254,7 @@ s(34270,67238,{f=7,loc=43,lvl=31})}})}),
 h(-58,{
 n(45408,{coords={
 [207]={{56.8,13.2}}},g={
-s(33279,65907,{b=1,f=9,minReputation={1171,3000},spellID=57818}),
+s(33279,65907,{b=1,f=9,minReputation={1171,3000},spellID=93347}),
 i(62342,{b=1,f=55,lvl=32,minReputation={1171,9000},spellID=86898}),
 i(62344,{b=1,f=55,lvl=32,minReputation={1171,9000},spellID=86900}),
 i(62347,{b=1,f=55,lvl=32,minReputation={1171,9000},spellID=86909}),
@@ -88159,7 +88159,7 @@ s(67059,119392,{b=1,f=21,lvl=35})}})}),
 h(-56,{
 o(235313,{coords={
 [542]={{40.6,55}}},questID=36458,g={
-s(65594,116913,{b=1,f=57,lvl=10,spellID=394872}),
+s(65594,116913,{b=1,f=57,lvl=10,spellID=95521}),
 crit(26966,{achID=9728,id=139})}}),
 o(235365,{coords={
 [542]={{36.2,54.4}}},description="The key is on a stone behind a skeleton in front of the closed mine, south of the garrison. (37.7, 56.3)",questID=36462,g={
@@ -92056,14 +92056,14 @@ i(132452,{b=1,f=52,lvl=40,spellID=208051}),
 i(144249,{b=1,c={1,2,6,10,11,12},f=53,lvl=40,spellID=235169}),
 i(144259,{b=1,f=53,lvl=40,spellID=235991})}}),
 i(147301,{b=2,c={5},cost={{"c",1533,1000}},f=55,lvl=40,g={
-s(84495,144244,{b=1,c={5},f=4,loc=40,lvl=40,spellID=281457}),
+s(84495,144244,{b=1,c={5},f=4,loc=40,lvl=40,spellID=233978}),
 s(89646,151787,{b=1,c={5},f=4,loc=40,lvl=40,spellID=248295}),
 s(78706,133971,{b=1,c={5},f=4,loc=40,lvl=40,spellID=224999}),
 s(89645,151786,{b=1,c={5},f=4,loc=41,lvl=40,spellID=248037}),
 s(78709,132437,{b=1,c={5},f=4,loc=41,lvl=40,spellID=236523}),
 s(78815,137109,{b=1,c={5},f=3,lvl=40,spellID=211317}),
 s(84577,144438,{b=1,c={5},f=3,lvl=40,spellID=236545}),
-s(76438,132861,{b=1,c={5},f=4,loc=42,lvl=40,spellID=281456}),
+s(76438,132861,{b=1,c={5},f=4,loc=42,lvl=40,spellID=214633}),
 s(89671,151814,{b=1,c={5},f=4,loc=42,lvl=40,spellID=248296}),
 s(78717,132409,{b=1,c={5},f=4,loc=43,lvl=40,spellID=215209}),
 s(78716,132450,{b=1,c={5},f=4,loc=43,lvl=40,spellID=210632}),
@@ -92086,8 +92086,8 @@ i(132449,{b=1,c={5},f=52,lvl=40,spellID=234689})}}),
 i(147297,{b=2,c={3},cost={{"c",1533,1000}},f=55,lvl=40,g={
 s(78749,137064,{b=1,c={3},f=6,loc=40,lvl=40,spellID=208884}),
 s(84516,144326,{b=1,c={3},f=6,loc=41,lvl=40,spellID=235721}),
-s(89660,151803,{b=1,c={3},f=3,lvl=40,spellID=281297}),
-s(89664,151807,{b=1,c={3},f=3,lvl=40,spellID=280737}),
+s(89660,151803,{b=1,c={3},f=3,lvl=40,spellID=248087}),
+s(89664,151807,{b=1,c={3},f=3,lvl=40,spellID=248089}),
 s(84528,144361,{b=1,c={3},f=6,loc=42,lvl=40,spellID=236447}),
 s(89662,151805,{b=1,c={3},f=6,loc=42,lvl=40,spellID=248084}),
 s(78786,137101,{b=1,c={3},f=6,loc=43,lvl=40,spellID=206332}),
@@ -92103,8 +92103,8 @@ s(78737,137033,{b=1,c={3},f=6,loc=47,lvl=40,spellID=206889}),
 i(132452,{b=1,f=52,lvl=40,spellID=208051}),
 i(144259,{b=1,f=53,lvl=40,spellID=235991}),
 i(132444,{b=1,f=51,lvl=40,spellID=207428}),
-i(137043,{b=1,c={3},f=52,lvl=40,spellID=281262}),
-i(137055,{b=1,c={3},f=52,lvl=40,spellID=280737}),
+i(137043,{b=1,c={3},f=52,lvl=40,spellID=225155}),
+i(137055,{b=1,c={3},f=52,lvl=40,spellID=224550}),
 i(137382,{b=1,c={3},f=52,lvl=40,spellID=212329}),
 i(151641,{b=1,c={3},f=52,lvl=40,spellID=247529})}}),
 i(147295,{b=2,c={12},cost={{"c",1533,1000}},f=55,lvl=40,g={
@@ -92124,7 +92124,7 @@ s(80337,138949,{b=1,c={12},f=5,loc=47,lvl=40,spellID=210970}),
 s(78726,137022,{b=1,c={12},f=5,loc=47,lvl=40,spellID=209002}),
 i(137038,{b=1,c={12},f=52,lvl=40,spellID=208827}),
 i(138854,{b=1,c={12},f=52,lvl=40,spellID=217496}),
-i(151639,{b=1,c={12},f=52,lvl=40,spellID=247786}),
+i(151639,{b=1,c={12},f=52,lvl=40,spellID=247520}),
 i(132452,{b=1,f=52,lvl=40,spellID=208051}),
 i(144249,{b=1,c={1,2,6,10,11,12},f=53,lvl=40,spellID=235169}),
 i(144259,{b=1,f=53,lvl=40,spellID=235991})}}),
@@ -92154,7 +92154,7 @@ i(151647,{b=1,c={7},f=52,lvl=40,spellID=247598}),
 i(144258,{b=1,c={2,5,7,10,11,13},f=53,lvl=40,spellID=235966})}}),
 i(147299,{b=2,c={10},cost={{"c",1533,1000}},f=55,lvl=40,g={
 s(78748,137063,{b=1,c={10},f=5,loc=40,lvl=40,spellID=208878}),
-s(89668,151811,{b=1,c={10},f=5,loc=40,lvl=40,spellID=281452}),
+s(89668,151811,{b=1,c={10},f=5,loc=40,lvl=40,spellID=248101}),
 s(89647,151788,{b=1,c={10},f=5,loc=41,lvl=40,spellID=248044}),
 s(78758,137073,{b=1,c={10},f=5,loc=41,lvl=40,spellID=212123}),
 s(78723,137019,{b=1,c={10},f=3,lvl=40,spellID=208842}),
@@ -92167,7 +92167,7 @@ s(78714,133976,{b=1,c={4,10,11,12},f=5,loc=45,lvl=40,spellID=207692}),
 s(78764,137079,{b=1,c={10},f=5,loc=45,lvl=40,spellID=208837}),
 s(80336,138879,{b=1,c={10},f=5,loc=45,lvl=40,spellID=217634}),
 s(78753,137068,{b=1,c={10},f=5,loc=46,lvl=40,spellID=216506}),
-s(78732,137028,{b=1,c={10},f=5,loc=47,lvl=40,spellID=281521}),
+s(78732,137028,{b=1,c={10},f=5,loc=47,lvl=40,spellID=217153}),
 s(78731,137027,{b=1,c={10},f=5,loc=47,lvl=40,spellID=224489}),
 s(78733,137029,{b=1,c={10},f=5,loc=47,lvl=40,spellID=208045}),
 i(132452,{b=1,f=52,lvl=40,spellID=208051}),
@@ -92180,12 +92180,12 @@ i(137220,{b=1,c={10},f=52,lvl=40,spellID=212132}),
 i(151643,{b=1,c={10},f=52,lvl=40,spellID=247558}),
 i(144258,{b=1,c={2,5,7,10,11,13},f=53,lvl=40,spellID=235966}),
 s(78720,137016,{b=1,c={10},f=5,loc=42,lvl=40,spellID=212935}),
-s(84521,144340,{b=1,c={10},f=5,loc=42,lvl=40,spellID=281301}),
+s(84521,144340,{b=1,c={10},f=5,loc=42,lvl=40,spellID=235719}),
 s(84493,144239,{b=1,c={10},f=5,loc=42,lvl=40,spellID=235053})}}),
 i(147302,{b=2,c={4},cost={{"c",1533,1000}},f=55,lvl=40,g={
-s(89672,151815,{b=1,c={4},f=5,loc=40,lvl=40,spellID=281492}),
+s(89672,151815,{b=1,c={4},f=5,loc=40,lvl=40,spellID=248106}),
 s(84491,144236,{b=1,c={4},f=5,loc=41,lvl=40,spellID=235022}),
-s(89673,151817,{b=1,c={4},f=3,lvl=40,spellID=281493}),
+s(89673,151817,{b=1,c={4},f=3,lvl=40,spellID=248107}),
 s(78725,137021,{b=1,c={4},f=3,lvl=40,spellID=208692}),
 s(78785,137100,{b=1,c={4},f=5,loc=43,lvl=40,spellID=208892}),
 s(78784,137099,{b=1,c={4},f=5,loc=43,lvl=40,spellID=209420}),
@@ -92201,14 +92201,14 @@ i(132452,{b=1,f=52,lvl=40,spellID=208051}),
 i(144259,{b=1,f=53,lvl=40,spellID=235991}),
 i(132444,{b=1,f=51,lvl=40,spellID=207428}),
 i(137049,{b=1,c={4},f=52,lvl=40,spellID=209041}),
-i(150936,{b=1,c={4},f=52,lvl=40,spellID=247509})}}),
+i(150936,{b=1,c={4},f=52,lvl=40,spellID=245011})}}),
 i(147300,{b=2,c={2},cost={{"c",1533,1000}},f=55,lvl=40,g={
 s(78750,137065,{b=1,c={2},f=7,loc=40,lvl=40,spellID=211557}),
 s(84504,144275,{b=1,c={2},f=7,loc=40,lvl=40,spellID=234653}),
 s(89641,151782,{b=1,c={2},f=7,loc=40,lvl=40,spellID=281613}),
 s(84527,144358,{b=1,c={2},f=7,loc=41,lvl=40,spellID=236106}),
 s(78761,137076,{b=1,c={2},f=7,loc=41,lvl=40,spellID=210992}),
-s(89669,151812,{b=1,c={2},f=7,loc=41,lvl=40,spellID=281291}),
+s(89669,151812,{b=1,c={2},f=7,loc=41,lvl=40,spellID=248102}),
 s(84502,144273,{b=1,c={2},f=3,lvl=40,spellID=234848}),
 s(78724,137020,{b=1,c={2},f=3,lvl=40,spellID=207633}),
 s(78721,137017,{b=1,c={2},f=7,loc=42,lvl=40,spellID=207628}),
@@ -92246,7 +92246,7 @@ s(84494,144242,{b=1,c={11},f=5,loc=44,lvl=40,spellID=235039}),
 s(78714,133976,{b=1,c={4,10,11,12},f=5,loc=45,lvl=40,spellID=207692}),
 s(78763,137078,{b=1,c={11},f=5,loc=45,lvl=40,spellID=207271}),
 s(78752,137067,{b=1,c={11},f=5,loc=46,lvl=40,spellID=208342}),
-s(84524,144354,{b=1,c={11},f=5,loc=46,lvl=40,spellID=280737}),
+s(84524,144354,{b=1,c={11},f=5,loc=46,lvl=40,spellID=212875}),
 s(78728,137024,{b=1,c={11},f=5,loc=47,lvl=40,spellID=208209}),
 s(78730,137026,{b=1,c={11},f=5,loc=47,lvl=40,spellID=208191}),
 s(78727,137023,{b=1,c={11},f=5,loc=47,lvl=40,spellID=208283}),
@@ -92258,16 +92258,16 @@ i(137039,{b=1,c={11},f=52,lvl=40,spellID=208199}),
 i(137040,{b=1,c={11},f=52,lvl=40,spellID=207523}),
 i(137041,{b=1,c={11},f=52,lvl=40,spellID=208228}),
 i(137042,{b=1,c={11},f=52,lvl=40,spellID=207932}),
-i(151636,{b=1,c={11},f=52,lvl=40,spellID=247508}),
+i(151636,{b=1,c={11},f=52,lvl=40,spellID=247503}),
 i(144258,{b=1,c={2,5,7,10,11,13},f=53,lvl=40,spellID=235966}),
 s(89659,151802,{b=1,c={11},f=3,lvl=40,spellID=248083})}}),
 i(147304,{b=2,c={9},cost={{"c",1533,1000}},f=55,lvl=40,g={
 s(76274,132394,{b=1,c={9},f=4,loc=40,lvl=40,spellID=205797}),
-s(84541,144385,{b=1,c={9},f=4,loc=40,lvl=40,spellID=281495}),
-s(84534,144369,{b=1,c={9},f=4,loc=41,lvl=40,spellID=281496}),
+s(84541,144385,{b=1,c={9},f=4,loc=40,lvl=40,spellID=236199}),
+s(84534,144369,{b=1,c={9},f=4,loc=41,lvl=40,spellID=236174}),
 s(76273,132393,{b=1,c={9},f=4,loc=41,lvl=40,spellID=205721}),
 s(76267,132375,{b=1,c={9},f=3,lvl=40,spellID=212172}),
-s(84529,144364,{b=1,c={9},f=3,lvl=40,spellID=281494}),
+s(84529,144364,{b=1,c={9},f=3,lvl=40,spellID=236114}),
 s(89677,151821,{b=1,c={9},f=4,loc=42,lvl=40,spellID=248113}),
 s(76276,132407,{b=1,c={9},f=4,loc=43,lvl=40,spellID=213014}),
 s(76270,132379,{b=1,c={9},f=4,loc=43,lvl=40,spellID=208868}),
@@ -92297,7 +92297,7 @@ s(76275,132406,{b=1,c={8},f=4,loc=43,lvl=40,spellID=209450}),
 s(76281,132413,{b=1,c={8},f=4,loc=43,lvl=40,spellID=208080}),
 s(76279,132411,{b=1,c={8},f=4,loc=44,lvl=40,spellID=208146}),
 s(84525,144355,{b=1,c={8},f=4,loc=44,lvl=40,spellID=235940}),
-s(76304,132442,{b=1,c={8},f=4,loc=45,lvl=40,spellID=281263}),
+s(76304,132442,{b=1,c={8},f=4,loc=45,lvl=40,spellID=209311}),
 s(76311,132454,{b=1,c={8},f=4,loc=45,lvl=40,spellID=208099}),
 s(78710,133970,{b=1,c={8},f=4,loc=45,lvl=40,spellID=206397}),
 s(76308,132451,{b=1,c={8},f=4,loc=46,lvl=40,spellID=209280}),
@@ -103505,7 +103505,7 @@ de(8189,{awp=110207,cost=6400000,itemID=251480,minReputation={2170,0},spellID=12
 r(252106,{b=1,itemID=152658,lvl=10,minReputation={2170,3000},requireSkill=333,skillID=2487}),
 r(247861,{b=1,itemID=152725,lvl=10,minReputation={2170,3000},requireSkill=773,skillID=2508}),
 toy(153039,{b=1,minReputation={2170,9000}}),
-s(90828,153290,{b=1,f=57,lvl=10,minReputation={2170,9000},spellID=394872}),
+s(90828,153290,{b=1,f=57,lvl=10,minReputation={2170,9000},spellID=95521}),
 p(2116,{b=1,itemID=153027,minReputation={2170,9000},npcID=128119,spellID=254197}),
 i(153197,{b=1,f=55,minReputation={2170,21000},spellID=254584}),
 cq(49006,{b=1,itemID=152964,lvl=45,minReputation={2170,21000},spellID=253938}),
@@ -104422,7 +104422,7 @@ q(49015,{coords={
 [886]={{32.9,59}},
 [887]={{33.4,59.2}}},lvl=45,qgs={120533,126307,126950,128722,128949},sourceQuests={49014},g={
 i(152984,{b=1,f=55}),
-i(152626,{b=1,f=52,lvl=40,spellID=280740})}}),
+i(152626,{b=1,f=52,lvl=40,spellID=251977})}}),
 q(47967,{coords={
 [830]={{64.4,62.6}}},lvl=45,qgs={126160},sourceQuests={48460}}),
 q(48455,{coords={
@@ -109204,7 +109204,7 @@ i(167793,{b=1}),
 crit(45137,{achID=13470,id=20})}}),
 n(151569,{coords={
 [1462]={{35.3,43}}},crs={151558},description="Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw. Summoning requires a |cffa335eeHundred-Fathom Lure|r.",isDaily=1,questID=55514,g={
-s(104673,168804,{b=1,f=57,requireSkill=356,spellID=224781}),
+s(104673,168804,{b=1,f=57,requireSkill=356,spellID=299087}),
 i(167836,{b=1,spellID=292440}),
 crit(45128,{achID=13470,id=11})}}),
 n(155060,{coords={
@@ -123701,7 +123701,7 @@ q(60338,{coords={
 [1670]={{38.8,69.9}}},lvl=10,qgs={159478},sourceQuests={61715}}),
 q(60763,{coords={
 [1565]={{68.2,18.3}}},lvl=10,qgs={168341},sourceQuests={60338},g={
-i(178747,{spellID=328942})}}),
+i(178747,{spellID=328939})}}),
 q(60341,{coords={
 [1565]={{65,19.5}}},lvl=10,qgs={157788},sourceQuests={60763}}),
 q(60778,{coords={
@@ -151077,7 +151077,7 @@ i(219296,{b=1,cost={{"i",237502,3}},f=53,lvl=68,spellID=443380,u=2}),
 i(219295,{b=1,cost={{"i",237502,3}},f=53,lvl=68,spellID=443378,u=2}),
 i(232542,{b=1,cost={{"i",237502,3}},f=53,lvl=80,spellID=1220488,u=2}),
 i(232545,{b=1,cost={{"i",237502,3}},f=53,lvl=80,spellID=1219103,u=2}),
-i(232541,{b=1,cost={{"i",237502,3}},f=53,lvl=80,spellID=1218714,u=2}),
+i(232541,{b=1,cost={{"i",237502,3}},f=53,lvl=80,spellID=1218712,u=2}),
 i(232543,{b=1,cost={{"i",237502,3}},f=53,lvl=80,spellID=1219102,u=2})}}),
 n(248341,{awp=110200,coords={
 [2339]={{48.1,45.4}}},g={
@@ -153576,7 +153576,7 @@ de(763,{awp=110207,cost={{"c",2815,1200}},itemID=245293,minReputation={2688,8},s
 mm(238837,{b=1,cost={{"c",2815,3250}},minReputation={2688,8},questID=86198}),
 mm(238839,{b=1,cost={{"c",2815,2600}},minReputation={2688,8},questID=86199}),
 mnt(1226421,{b=1,cost={{"c",2815,8125}},itemID=238829,lvl=10,minReputation={2688,9}}),
-i(237433,{b=1,cost={{"c",2815,3900}},f=51,lvl=80,minReputation={2688,10},spellID=1223952})}})})}}),
+i(237433,{b=1,cost={{"c",2815,3900}},f=51,lvl=80,minReputation={2688,10},spellID=1224775})}})})}}),
 h(-32,{
 fp(2922,{coords={
 [2215]={{67.5,44.6}}},crs={217639},g={
@@ -154607,7 +154607,7 @@ s(285276,237427,{b=1,f=7,loc=45,lvl=80}),
 s(285277,237428,{b=1,f=7,loc=43,lvl=80})}),
 flt(53,{
 i(225647,{b=1,f=53,lvl=70,spellID=455432}),
-i(238391,{b=1,f=53,lvl=80,spellID=1223952}),
+i(238391,{b=1,f=53,lvl=80,spellID=1224902}),
 i(237494,{b=1,f=53,lvl=80,spellID=1226749})})}}),
 h(-29,{coords={
 [2215]={{25.2,55.6}}},crs={234440,240968,240969},description="The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",sym={{"select","itemID",237471,237474,237473,237495,237435,237436,237437,237438,237439,237440,237441,237442,237443,237444,237445,237446,237447,237448,237449,237450,237451,237452,237453,237454,237455,237456,237457,237458,237459,237460,237461,237462,237463,237464,237465,237466,237467,237468,237469,237470,237775,237776,237777,237778,237779,237780,237781,237782,237783,237784,237785,237786,237787,237788,237789,237790,237472,225693}}})}),
@@ -154696,7 +154696,7 @@ s(285276,237427,{b=1,cost={{"i",238920,1}},f=7,loc=45,lvl=80}),
 s(285277,237428,{b=1,cost={{"i",238920,1}},f=7,loc=43,lvl=80})}),
 flt(53,{
 i(225647,{b=1,cost={{"i",238920,1}},f=53,lvl=70,spellID=455432}),
-i(238391,{b=1,cost={{"i",238920,1}},f=53,lvl=80,spellID=1223952}),
+i(238391,{b=1,cost={{"i",238920,1}},f=53,lvl=80,spellID=1224902}),
 i(237494,{b=1,cost={{"i",238920,1}},f=53,lvl=80,spellID=1226749})}),
 h(-101,{
 s(287050,237795,{b=1,cost={{"i",238920,1}},f=23,lvl=80}),
@@ -169992,7 +169992,7 @@ s(308966,274796,{cost={{"c",3546,500}},f=26,minReputation={2773,5}}),
 s(308999,274814,{cost={{"c",3546,1000}},f=29,minReputation={2773,5}}),
 s(308987,274802,{cost={{"c",3546,500}},f=23,minReputation={2773,5}}),
 mnt(1297216,{cost={{"c",3546,2500}},itemID=275653,minReputation={2773,5}}),
-s(292442,244790,{cost={{"c",3316,6000}},f=57,minReputation={2773,5},requireSkill=356,spellID=395369}),
+s(292442,244790,{cost={{"c",3316,6000}},f=57,minReputation={2773,5},requireSkill=356,spellID=1305166}),
 de(25297,{cost={{"c",3316,500}},itemID=277921,minReputation={2773,5},spellID=1302899})}})})}}),
 ah(2772,{icon=7903180,type="fa",g={
 faction(2772),

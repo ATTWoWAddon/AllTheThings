@@ -60,9 +60,20 @@ namespace ATT.DB.Types
                     }
                 }
 
-                _effects.Sort((a,b) =>
+                _effects.Sort((a, b) =>
                 {
-                    return a.SpellIDPriority - b.SpellIDPriority;
+                    // sort by the item effect priority first if it's different
+                    int priorityCompare = a.SpellIDPriority - b.SpellIDPriority;
+                    if (priorityCompare != 0) return priorityCompare;
+
+                    // when priority is the same, sort by how many Items share that spellID to try to get the least-used spellID to associate
+                    WagoData.TryGetSpellAssociations<ItemEffect>(a.SpellID, out var aItemSpellEffects);
+                    WagoData.TryGetSpellAssociations<ItemEffect>(b.SpellID, out var bItemSpellEffects);
+                    priorityCompare = aItemSpellEffects.Count - bItemSpellEffects.Count;
+                    if (priorityCompare != 0) return priorityCompare;
+
+                    // finally resolve by raw SpellID
+                    return (int)a.SpellID - (int)b.SpellID;
                 });
                 return _effects;
             }
