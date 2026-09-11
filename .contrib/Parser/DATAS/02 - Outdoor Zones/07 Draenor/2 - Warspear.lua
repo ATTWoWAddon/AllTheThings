@@ -2069,7 +2069,7 @@ root(ROOTS.Zones, {
 									moh(5, i(115068)),	-- Primal Combatant's Touch of Defeat (H)
 								}),
 								cl(DEATHKNIGHT, {
-									moh(12, i(138614)),	-- Ensemble: Primal Combatant's Dreadplate Armor (H)
+									moh(12, iensemble(138614)),	-- Ensemble: Primal Combatant's Dreadplate Armor (H)
 									moh(3, i(119839)),	-- Primal Combatant's Dreadplate Chestpiece (H)
 									moh(2, i(119840)),	-- Primal Combatant's Dreadplate Gauntlets (H)
 									moh(3, i(119841)),	-- Primal Combatant's Dreadplate Helm (H)
@@ -2077,7 +2077,7 @@ root(ROOTS.Zones, {
 									moh(2, i(119843)),	-- Primal Combatant's Dreadplate Shoulders (H)
 								}),
 								cl(DRUID, {
-									moh(12, i(138618)),	-- Ensemble: Primal Combatant's Dragonhide Armor (H)
+									moh(12, iensemble(138618)),	-- Ensemble: Primal Combatant's Dragonhide Armor (H)
 									moh(2, i(119844)),	-- Primal Combatant's Dragonhide Gloves (H)
 									moh(3, i(119845)),	-- Primal Combatant's Dragonhide Helm (H)
 									moh(3, i(119846)),	-- Primal Combatant's Dragonhide Legguards (H)
@@ -2085,7 +2085,7 @@ root(ROOTS.Zones, {
 									moh(2, i(119848)),	-- Primal Combatant's Dragonhide Spaulders (H)
 								}),
 								cl(HUNTER, {
-									moh(12, i(138580)),	-- Ensemble: Primal Combatant's Chain Armor (H)
+									moh(12, iensemble(138580)),	-- Ensemble: Primal Combatant's Chain Armor (H)
 									moh(3, i(119849)),	-- Primal Combatant's Chain Armor (H)
 									moh(2, i(119850)),	-- Primal Combatant's Chain Gauntlets (H)
 									moh(3, i(119851)),	-- Primal Combatant's Chain Helm (H)
@@ -2101,7 +2101,7 @@ root(ROOTS.Zones, {
 									moh(3, i(119875)),	-- Primal Combatant's Silk Trousers (H)
 								}),
 								cl(MONK, {
-									moh(12, i(138620)),	-- Ensemble: Primal Combatant's Ironskin Armor (H)
+									moh(12, iensemble(138620)),	-- Ensemble: Primal Combatant's Ironskin Armor (H)
 									moh(2, i(119884)),	-- Primal Combatant's Ironskin Gloves (H)
 									moh(3, i(119885)),	-- Primal Combatant's Ironskin Helm (H)
 									moh(3, i(119886)),	-- Primal Combatant's Ironskin Legguards (H)
@@ -2109,7 +2109,7 @@ root(ROOTS.Zones, {
 									moh(3, i(119888)),	-- Primal Combatant's Ironskin Tunic (H)
 								}),
 								cl(PALADIN, {
-									moh(12, i(138616)),	-- Ensemble: Primal Combatant's Scaled Armor (H)
+									moh(12, iensemble(138616)),	-- Ensemble: Primal Combatant's Scaled Armor (H)
 									moh(3, i(119889)),	-- Primal Combatant's Scaled Chestpiece (H)
 									moh(2, i(119890)),	-- Primal Combatant's Scaled Gauntlets (H)
 									moh(3, i(119891)),	-- Primal Combatant's Scaled Helm (H)
@@ -2117,7 +2117,7 @@ root(ROOTS.Zones, {
 									moh(2, i(119893)),	-- Primal Combatant's Scaled Shoulders (H)
 								}),
 								cl(PRIEST, {
-									moh(12, i(138584)),	-- Ensemble: Primal Combatant's Satin Armor (H)
+									moh(12, iensemble(138584)),	-- Ensemble: Primal Combatant's Satin Armor (H)
 									moh(2, i(119900)),	-- Primal Combatant's Satin Gloves (H)
 									moh(3, i(119901)),	-- Primal Combatant's Satin Hood (H)
 									moh(3, i(119902)),	-- Primal Combatant's Satin Leggings (H)
@@ -2125,7 +2125,7 @@ root(ROOTS.Zones, {
 									moh(3, i(119903)),	-- Primal Combatant's Satin Robe (H)
 								}),
 								cl(ROGUE, {
-									moh(12, i(138622)),	-- Ensemble: Primal Combatant's Leather Armor (H)
+									moh(12, iensemble(138622)),	-- Ensemble: Primal Combatant's Leather Armor (H)
 									moh(2, i(119906)),	-- Primal Combatant's Leather Gloves (H)
 									moh(3, i(119907)),	-- Primal Combatant's Leather Helm (H)
 									moh(3, i(119908)),	-- Primal Combatant's Leather Legguards (H)
@@ -2133,7 +2133,7 @@ root(ROOTS.Zones, {
 									moh(3, i(119905)),	-- Primal Combatant's Leather Tunic (H)
 								}),
 								cl(SHAMAN, {
-									moh(12, i(138578)),	-- Ensemble: Primal Combatant's Ringmail Armor (H)
+									moh(12, iensemble(138578)),	-- Ensemble: Primal Combatant's Ringmail Armor (H)
 									moh(3, i(119910)),	-- Primal Combatant's Ringmail Armor (H)
 									moh(2, i(119911)),	-- Primal Combatant's Ringmail Gauntlets (H)
 									moh(3, i(119912)),	-- Primal Combatant's Ringmail Helm (H)
@@ -2141,7 +2141,7 @@ root(ROOTS.Zones, {
 									moh(2, i(119915)),	-- Primal Combatant's Ringmail Spaulders (H)
 								}),
 								cl(WARLOCK, {
-									moh(12, i(138586)),	-- Ensemble: Primal Combatant's Felweave Armor (H)
+									moh(12, iensemble(138586)),	-- Ensemble: Primal Combatant's Felweave Armor (H)
 									moh(2, i(119942)),	-- Primal Combatant's Felweave Amice (H)
 									moh(3, i(119939)),	-- Primal Combatant's Felweave Cowl (H)
 									moh(2, i(119938)),	-- Primal Combatant's Felweave Handguards (H)
@@ -2149,7 +2149,7 @@ root(ROOTS.Zones, {
 									moh(3, i(119940)),	-- Primal Combatant's Felweave Trousers (H)
 								}),
 								cl(WARRIOR, {
-									moh(12, i(138612)),	-- Ensemble: Primal Combatant's Plate Armor (H)
+									moh(12, iensemble(138612)),	-- Ensemble: Primal Combatant's Plate Armor (H)
 									moh(3, i(119943)),	-- Primal Combatant's Plate Chestpiece (H)
 									moh(2, i(119944)),	-- Primal Combatant's Plate Gauntlets (H)
 									moh(3, i(119945)),	-- Primal Combatant's Plate Helm (H)

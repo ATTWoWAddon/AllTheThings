@@ -2780,7 +2780,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 						traderstender(150, i(213106)),	-- Gladiator's Battered Greatsword
 						traderstender(150, i(213107)),	-- Gladiator's Ragged Greatsword
 						traderstender(250, i(226428)),	-- Harvester's Claw
-						traderstender(400, i(208412)),	-- High Scholar's Arcana
+						traderstender(400, iensemble(208412)),	-- High Scholar's Arcana
 						traderstender(100, i(190144)),	-- Irontide Raider's Bicorne
 						traderstender(150, i(213065)),	-- Lavish Floral Edge
 						traderstender(150, i(213068)),	-- Lavish Floral Stalk
@@ -2805,7 +2805,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 						traderstender(60, i(190670)),	-- Sanguine Bouquet
 						traderstender(125, i(229815)),	-- Sky Witch's Airy Stave
 						traderstender(100, i(229816)),	-- Sky Witch's Airy Wand
-						traderstender(400, i(210078)),	-- Sky-Captain's Formal Attire
+						traderstender(400, iensemble(210078)),	-- Sky-Captain's Formal Attire
 						traderstender(100, i(212708)),	-- Spring Reveler's Dandelion Attire
 						traderstender(35, i(212709)),	-- Spring Reveler's Dandelion Belt
 						traderstender(35, i(212710)),	-- Spring Reveler's Dandelion Boots
