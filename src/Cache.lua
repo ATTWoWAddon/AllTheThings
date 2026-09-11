@@ -1006,10 +1006,42 @@ local function CheckGroupSourceQuestsForUnlock(group)
 		app.DirectGroupUpdate(group)
 	end
 end
+local ProviderTypeUnlocks = {
+	i = function(id)
+		return (app.WOWAPI.GetItemCount(id, true, nil, true, true) or 0) > 0
+	end,
+	n = app.EmptyFunction,
+	o = app.EmptyFunction,
+	s = function(id)
+		return app.WOWAPI.IsSpellKnown(id)
+	end,
+}
+local function CheckGroupProvidersForUnlock(group)
+	local ps = group.providers
+	if not ps then return end	-- this should be verified by parser
+
+	local p
+	local req = #ps
+	for i=1,#ps do
+		p = ps[i]
+		if ProviderTypeUnlocks[p[1]](p[2]) then
+			req = req - 1
+		end
+	end
+	if req <= 0 then
+		app.AssignFieldValue(group, "u", nil)
+		app.DirectGroupUpdate(group)
+	end
+end
 -- Removes the unobtainable marker from a group if the character has completed the necessary sourceQuests linked to the group
 fieldConverters.u_sqs = function(group, value)
 	Runner.Queue(CheckGroupSourceQuestsForUnlock, group)
 	group.u_sqs = nil
+end
+-- Removes the unobtainable marker from a group if the character has available all the providers linked to the group
+fieldConverters.u_providers = function(group, value)
+	Runner.Queue(CheckGroupProvidersForUnlock, group)
+	group.u_providers = nil
 end
 end
 --[[
