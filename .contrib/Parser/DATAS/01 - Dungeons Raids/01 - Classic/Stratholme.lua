@@ -1368,10 +1368,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
-					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, o(181083, {	-- Sothos and Jarien's Heirlooms
+					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16102, {	-- Sothos
 						["crs"] = {
 							16101,	-- Jarien
-							16102,	-- Sothos
 						},
 						["description"] =
 							-- #if AFTER 10.1.5
@@ -1391,7 +1390,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
 						-- #endif
 
-						["provider"] = { "i", 22057 },	-- Brazier of Invocation
+						["providers"] = {
+							{ "i", 22057 },	-- Brazier of Invocation
+							{ "o", 181083 },	-- Sothos and Jarien's Heirlooms
+						},
 						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
