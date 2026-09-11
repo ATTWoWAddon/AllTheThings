@@ -181,7 +181,7 @@ local RetailMapDataStyleMetatable = {
 				groupmapID = group.mapID
 				groupmaps = group.maps
 				-- Instance/Map/Class/Header(of current map) groups are allowed as root of minilist
-				if (group.instanceID or (groupmapID and (group.key == "mapID" or (group.key == "headerID" and groupmapID == mapID))) or group.key == "classID")
+				if (group.instanceID or (groupmapID and (group.key == "mapID" or (group.headerID and groupmapID == mapID))) or group.key == "classID")
 					-- and actually match this minilist...
 					-- only if this group mapID matches the minilist mapID directly or by maps
 					and (groupmapID == mapID or (groupmaps and contains(groupmaps, mapID))) then
