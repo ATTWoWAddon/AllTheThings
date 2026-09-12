@@ -104,6 +104,15 @@ DIFFICULTY.DUNGEON.SEASONAL = {
 	TWWS2_MYTHTRACK = GetOrCreateMultiDifficulty({
 		DIFFICULTY.DUNGEON.KEYSTONE
 	}),
+	MIDS2_CHAMPIONTRACK = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.KEYSTONE
+	}),
+	MIDS2_HEROTRACK = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.KEYSTONE
+	}),
+	MIDS2_MYTHTRACK = GetOrCreateMultiDifficulty({
+		DIFFICULTY.DUNGEON.KEYSTONE
+	}),
 }
 
 -- Raid Multi-Difficulties
@@ -229,4 +238,7 @@ DifficultyDB = {
 	[DIFFICULTY.DUNGEON.SEASONAL.TWWS2_CHAMPIONTRACK] = { icon = 311236, modID = 16, simplify = true },
 	[DIFFICULTY.DUNGEON.SEASONAL.TWWS2_HEROTRACK] = { icon = 311235, modID = 35, simplify = true },
 	[DIFFICULTY.DUNGEON.SEASONAL.TWWS2_MYTHTRACK] = { icon = 311237, modID = 162, simplify = true },
+	[DIFFICULTY.DUNGEON.SEASONAL.MIDS2_CHAMPIONTRACK] = { icon = 311236, modID = 33, simplify = true },
+	[DIFFICULTY.DUNGEON.SEASONAL.MIDS2_HEROTRACK] = { icon = 311235, modID = 35, simplify = true },
+	[DIFFICULTY.DUNGEON.SEASONAL.MIDS2_MYTHTRACK] = { icon = 311237, modID = 14, simplify = true },
 };

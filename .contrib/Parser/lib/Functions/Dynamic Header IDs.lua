@@ -682,6 +682,9 @@ HeaderAssignments = {
 	["Unommon"] = -227,
 	["Unrated"] = -306,
 	["Upgrade"] = -57,
+	["Upgrade: Champion"] = -791,
+	["Upgrade: Hero"] = -792,
+	["Upgrade: Myth"] = -793,
 	["Upper Blackrock Spire"] = -114,
 	["Uuna's World Tour"] = -508,
 	["Valdrakken Accord"] = -196,
@@ -770,4 +773,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -791
+NextHeaderID = -794

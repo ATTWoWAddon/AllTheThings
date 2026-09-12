@@ -11650,6 +11650,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[175369] = {
 		readable = "Elders' Square Service Entrance",
+		ignorewowhead = true,
 		text = {
 			en = "Elders' Square Service Entrance",
 			es = "Entrada de servicio de la Plaza de los Ancestros",
@@ -11935,6 +11936,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[175621] = {
 		readable = "Urok's Tribute Pile",
 		model = 200638,
+		ignorewowhead = true,
 		text = {
 			en = "Urok's Tribute Pile",
 			es = "Pila de tributo a Urok",
@@ -18824,11 +18826,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 202508,
 		text = {
 			en = "The Scarab Gong",
+			es = "El gong del Escarabajo",
+			mx = "El gong del Escarabajo",
 			de = "Der Skarabäusgong",
 			fr = "Le gong du Scarabée",
+			it = "Gong dello Scarabeo",
+			pt = "O Gongo do Escaravelho",
 			ru = "Гонг Скарабея",
 			ko = "스카라베 징",
 			cn = "甲虫之锣",
+			tw = "甲蟲之鑼",
 		},
 	},
 	[180743] = {
@@ -25686,11 +25693,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 192349,
 		text = {
 			en = "Portal Kruul",
+			es = "Portal Kruul",
+			mx = "Portal Kruul",
+			de = "Portal Kruul",
 			fr = "Portail Kruul",
 			it = "Portale Kruul",
+			pt = "Portal Kruul",
 			ru = "Портал Круул",
 			ko = "크룰 차원문",
 			cn = "科卢尔传送门",
+			tw = "卡魯歐傳送門",
 		},
 	},
 	[184290] = {
@@ -25698,11 +25710,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 192349,
 		text = {
 			en = "Portal Xilus",
+			es = "Portal Xilus",
+			mx = "Portal Xilus",
+			de = "Portal Xilus",
 			fr = "Portail Xilus",
 			it = "Portale Xilus",
+			pt = "Portal Xilus",
 			ru = "Портал Зилус",
 			ko = "자일러스 차원문",
 			cn = "希鲁斯传送门",
+			tw = "塞勒斯傳送門",
 		},
 	},
 	[184300] = {
@@ -25821,11 +25838,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 192349,
 		text = {
 			en = "Portal Grimh",
+			es = "Portal Grimh",
+			mx = "Portal Grimh",
+			de = "Portal Grimh",
 			fr = "Portail Grimh",
 			it = "Portale Grimh",
+			pt = "Portal Grimh",
 			ru = "Портал Грим",
 			ko = "그림 차원문",
 			cn = "格雷姆传送门",
+			tw = "格瑞之門",
 		},
 	},
 	[184415] = {
@@ -25833,8 +25855,12 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 192349,
 		text = {
 			en = "Portal Kaalez",
+			es = "Portal Kaalez",
+			mx = "Portal Kaalez",
+			de = "Portal Kaalez",
 			fr = "Portail Kaalez",
 			it = "Portale Kaalez",
+			pt = "Portal Kaalez",
 			ru = "Портал Каалез",
 			ko = "칼레즈 차원문",
 			cn = "凯勒兹传送门",
@@ -42131,11 +42157,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 199732,
 		text = {
 			en = "Papaya",
+			es = "Papaya",
+			de = "Papaya",
 			fr = "Papaye",
 			it = "Papaia",
 			pt = "Mamão",
 			ru = "Папайя",
 			ko = "파파야",
+			cn = "木瓜",
 		},
 	},
 	[190624] = {
