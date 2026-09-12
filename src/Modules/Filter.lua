@@ -425,14 +425,21 @@ if app.IsRetail then
 
 	DefineToggleFilter("ExpansionContent", AccountFilters,
 	function(item)
-		-- Check if item has awp (added with patch) field
+		if item.g and not item.collectible then
+			return true
+		end
+
+		-- Prefer the containing expansion over an item's own awp value.
+		local expansionID = GetRelativeValue(item, "expansionID")
+		if expansionID then
+			return ExpansionFilters[math_floor(expansionID)]
+		end
+
 		local awp = GetRelativeValue(item, "awp")
 		if awp then
 			-- awp field uses patch format like 10205 for patch 1.2.5
 			-- Extract expansion ID from patch value (e.g., 10205 -> 1)
-			local expansionID = math_floor(awp / 10000)
-			-- Direct lookup: if ExpansionFilters[expansionID] is false, filter it out
-			return ExpansionFilters[expansionID]
+			return ExpansionFilters[math_floor(awp / 10000)]
 		end
 
 		return true
