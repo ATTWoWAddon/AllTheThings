@@ -937,6 +937,7 @@ root(ROOTS.ExpansionFeatures,
 								q(54006, {	-- A New Hope (A)
 									["sourceQuest"] = 54871,	-- We Are Coming
 									["provider"] = { "n", 149418 },	-- Maiev Shadowsong
+									["coord"] = { 47.5, 34.3, DARKSHORE },
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
 										i(166525),	-- Nightwreathed Egg

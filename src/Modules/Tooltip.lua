@@ -565,9 +565,6 @@ end
 -- Brazier of Invocation AskMe GUIDs
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[SafeGetName(self) .. "TextLeft1"];
-	if leftSide then
-		leftSide:SetText(L.PLAYER_TOOLTIP_INVOCATOR:format(leftSide:GetText() or name));
-	end
 	local rightSide = _G[SafeGetName(self) .. "TextRight2"];
 	leftSide = _G[SafeGetName(self) .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then

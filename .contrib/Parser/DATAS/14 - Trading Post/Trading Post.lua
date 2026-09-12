@@ -1340,7 +1340,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(250, i(235291)),	-- Blood Monarch's Sword
 				traderstender(200, i(235295)),	-- Blood Monarch's Wand
 				traderstender(370, iensemble(235228)),	-- Ensemble: Ornaments of the Blood Monarch
+				-- #if AFTER 12.0.5
+				traderstender(100, i(230169, {	-- Ensemble: Prowler's Deep Headgear
+					["_doautomation"] = false,	-- TODO: Ensemble has been broken for months in wago data, find missing questID and nest here or find out why this one ensemble broke
+					["groups"] = {
+						i(230059),	-- Prowler's Deep Cowl
+						i(230079),	-- Prowler's Deep Mask
+					},
+				})),
+				-- #else
 				traderstender(100, iensemble(230169)),	-- Ensemble: Prowler's Deep Headgear
+				-- #endif
 				traderstender(750, iensemble(212222)),	-- Ensemble: Twilight Witch's Attire
 				traderstender(40, i(233101)),	-- Long Deep War Skirt
 				traderstender(50, i(233140)),	-- Long Deep War Skirt and Leg Wraps

@@ -2925,6 +2925,8 @@ local AccountWideQuestsDB = {
 	97978,	-- Prismatic Potential
 	97980,	-- Ula'tek
 	97983,	-- Ula'tek
+	98014,	-- Ensemble: Venom-Cursed Dragonhawk's Rainment
+	98022,	-- Ensemble: Venom-Cursed Bear's Guard
 	98097,	-- The Coiled Altar
 	98217,	-- Insidious Venomstone
 	98337,	-- Quest #98337*

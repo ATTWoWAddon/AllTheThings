@@ -488,10 +488,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 		-- 11.0.5
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
-			n(ARMOR, {
-				i(230059),	-- Prowler's Deep Cowl
-				i(230079),	-- Prowler's Deep Mask
-			}),
 			n(SETS, {
 				------ Prowler's Aquatic Set ------
 				i(230050),	-- Prowler's Aquatic Shoulder Cape
