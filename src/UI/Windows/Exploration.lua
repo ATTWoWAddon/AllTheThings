@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Implementation
 app:CreateWindow("Exploration", {
@@ -7,7 +8,7 @@ app:CreateWindow("Exploration", {
 	Commands = { "attexploration" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.EXPLORATION, {
-			description = "This window shows you all of the exploration locations that you can complete. You may need to Shift+Left Click any header in ATT and also relog for these to be detected perfectly.",
+			description = L.EXPLORATION_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
@@ -16,7 +17,7 @@ app:CreateWindow("Exploration", {
 				if g and #g > 0 then
 					tinsert(g, 1, app.CreateRawText("Harvest Exploration", {	-- Harvest Exploration
 						icon = 132331,
-						description = "Click here to attempt to harvest and collect all exploration credit.\n\nNOTE: This will likely take a while, but may correct some exploration issues you may be having.",
+						description = L.EXPLORATION_HARVEST_DESC,
 						OnClick = function(row, button)
 							app.HarvestExploration();
 							return true;

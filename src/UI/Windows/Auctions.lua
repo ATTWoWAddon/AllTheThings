@@ -371,7 +371,7 @@ app:CreateWindow("Auctions", {
 		self:SetMovable(false);
 		self:SetData(app.CreateRawText("Auction Module", {
 			icon = 133784,
-			description = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
+			description = L.AUCTIONS_TOOLTIP,
 			SortType = "name",
 			visible = true,
 			expanded = true,
@@ -449,7 +449,7 @@ app:CreateWindow("Auctions", {
 					return t.info[key];
 				end}),
 				app.CreateRawText("Clear Auction Data", {
-					description = "Click this button to clear all of the cached auction data.",
+					description = L.AUCTIONS_CLEAR_CACHE_DESC,
 					SortPriority = 1.1,
 					icon = 132089,
 					OnClick = function(row, button)
@@ -466,7 +466,7 @@ app:CreateWindow("Auctions", {
 				}),
 				app.CreateRawText("Toggle Debug Mode", {
 					icon = 134932,
-					description = "Click this button to toggle debug mode to show everything regardless of filters!",
+					description = L.AUCTIONS_DEBUG_MODE_DESC,
 					SortPriority = 1.2,
 					OnClick = function()
 						app.Settings:ToggleDebugMode();
@@ -486,7 +486,7 @@ app:CreateWindow("Auctions", {
 				}),
 				app.CreateRawText("Toggle Account Mode", {
 					icon = 133733,
-					description = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
+					description = L.ACCOUNT_MODE_TOOLTIP,
 					SortPriority = 1.3,
 					OnClick = function()
 						app.Settings:ToggleAccountMode();
@@ -509,7 +509,7 @@ app:CreateWindow("Auctions", {
 				}),
 				app.CreateRawText("Toggle Faction Mode", {
 					icon = 134932,
-					description = "Click this button to toggle faction mode to show everything for your faction!",
+					description = L.AUCTIONS_FACTION_MODE_DESC,
 					SortPriority = 1.4,
 					OnClick = function()
 						app.Settings:ToggleFactionMode();
@@ -532,7 +532,7 @@ app:CreateWindow("Auctions", {
 				}),
 				app.CreateRawText("Maximum Price", {
 					icon = 133784,
-					description = "Press this button to change the maximum price of auctions displayed.\n\nChanging this value will filter out items that exceed this amount.",
+					description = L.AUCTIONS_MAX_PRICE_DESC,
 					visible = true,
 					SortPriority = 1.5,
 					OnClick = function(row, button)
@@ -549,69 +549,69 @@ app:CreateWindow("Auctions", {
 				app.CreateRawText(L.ACHIEVEMENT, {	-- Achievements
 					Metas = { "Achievement", "AchievementCriteria" },
 					icon = app.asset("Category_Achievements"),
-					description = "All items that could be used for an achievement.",
+					description = L.AUCTIONS_ITEMS_FOR_ACHIEVEMENTS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Appearances", {	-- Appearances
 					Metas = { "ItemWithAppearance", "ItemAsTransmog", "SimpleItemAsTransmog" },
 					icon = 135349,
-					description = "All items that could be learned for transmog are listed here.",
+					description = L.AUCTIONS_APPEARANCES_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateFilter(101, {	-- Battle Pets
 					Metas = { "BattlePetWithItem", "Species" },
-					description = "All battle pets that you have not collected yet are displayed here.",
+					description = L.AUCTIONS_BATTLE_PETS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateRawText(CHARACTER, {	-- Character
 					icon = app.asset("Category_ItemSets"),
 					Metas = { "CharacterUnlockQuestItem", "CharacterUnlockSpellItem" },
-					description = "All spells or quests than can be learned by your character are displayed here.",
+					description = L.AUCTIONS_SPELLS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateRawText(L.FACTIONS, {	-- Factions
 					Metas = { "ItemWithFaction" },
 					icon = app.asset("Category_Factions"),
-					description = "All items that can be used to increase reputation for a faction that you have not collected yet are displayed here.",
+					description = L.AUCTIONS_REPUTATION_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateFilter(100, {	-- Mounts
 					Metas = { "MountWithItem" },
-					description = "All mounts that you have not collected yet are displayed here.",
+					description = L.ALL_THE_MOUNTS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Materials", {	-- Materials
 					Metas = { "Material" },
 					icon = 132856,
-					description = "All items that can be used to craft an item using a profession on your account.",
+					description = L.ALL_THE_REAGENTS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Miscellaneous", {	-- Miscellaneous
 					Metas = { "Item", "SimpleItem" },
 					icon = 132595,
-					description = "All items that could be used for some non-transmog related purpose such as for an achievement are displayed here.",
+					description = L.AUCTIONS_OTHER_ITEMS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateCustomHeader(app.HeaderConstants.QUESTS, {	-- Quest
 					Metas = { "ItemAsHQT" },
-					description = "All items that trigger a non-character unlock quest.",
+					description = L.AUCTIONS_QUEST_ITEMS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateFilter(200, {	-- Recipes
 					Metas = { "RecipeWithItem" },
-					description = "All recipes that you have not collected yet are displayed here.",
+					description = L.ALL_THE_RECIPES_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Toys", {	-- Toys
 					Metas = { "Toy", "ToyEventually" },
 					icon = 133015,
-					description = "All items that are classified as Toys either by ATT for the future or by the game presently.",
+					description = L.AUCTIONS_TOYS_DESC,
 					SortPriority = 2,
 				}),
 				app.CreateRawText("Legacy", {	-- Legacy
 					Metas = { "legacyID" },
 					icon = 135331,
-					description = "All items that were removed from game that you could probably still collect for a... nominal fee.\n\nAlso if you have found something here, feel free to post about it on the ATT Discord's #classic-general channel! I'm sure some folks might want to find these.",
+					description = L.AUCTIONS_REMOVED_ITEMS_DESC,
 					SortPriority = 100000,
 					OnUpdate = function(data)
 						local rawSettings = app.Settings:GetRawSettings("Unobtainable");
@@ -714,7 +714,7 @@ app:CreateWindow("Auctions", {
 								subdata = app.CreateRawText(key, {
 									text = key,
 									Metas = { key },
-									description = "Container for '" .. key .. "' object types.",
+									description = L.AUCTIONS_CONTAINER_DESC:format(key),
 									SortPriority = 2,
 									g = {},
 								});
@@ -743,14 +743,14 @@ app:CreateWindow("Auctions", {
 		if rawget(app.HeaderConstants, "MOUNT_MODS") then
 			tinsert(self.data.options, app.CreateCustomHeader(app.HeaderConstants.MOUNT_MODS, {	-- Mount Mods
 				Metas = { "MountMod" },
-				description = "All mount mods that you have not collected yet are displayed here.",
+				description = L.AUCTIONS_MOUNT_MODS_DESC,
 				SortPriority = 2,
 			}));
 		end
 		if app.GameBuildVersion >= 70000 then
 			tinsert(self.data.options, app.CreateFilter(103, {	-- Illusions
 				Metas = { "IllusionWithItem" },
-				description = "All illusions that you have not collected yet are displayed here.",
+				description = L.AUCTIONS_ILLUSIONS_DESC,
 				SortPriority = 2,
 			}));
 		end
@@ -758,7 +758,7 @@ app:CreateWindow("Auctions", {
 			tinsert(self.data.options, app.CreateRawText(L.DECOR, {	-- Decor
 				Metas = { "Decor" },
 				icon = app.asset("Category_Housing"),
-				description = "All decor that you have not collected yet are displayed here.",
+				description = L.AUCTIONS_DECOR_DESC,
 				SortPriority = 2,
 			}));
 		end

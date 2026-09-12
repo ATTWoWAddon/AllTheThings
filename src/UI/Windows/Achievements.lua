@@ -147,7 +147,7 @@ app:CreateWindow("Achievements", {
 			achievements = {},
 			categories = {},
 			CheckForMissingButton = app.CreateRawText("Check for Missing Achievements", {
-				description = "Click this button to check for missing achievements.\n\nWARNING: This is going to be REALLY SLOW!!",
+				description = L.ACHIEVEMENTS_MISSING_DESC,
 				icon = 132089,
 				OnClick = function(row, button)
 					-- Only run this once per session.

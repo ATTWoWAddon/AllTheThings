@@ -2235,13 +2235,13 @@ app:CreateWindow("Account Management", {
 			app.CreateToggle("debugOutput", {
 				name = "Show Debug Output",
 				icon = 236206,
-				description = "ONLY toggle this when needing to enable spammy Debug output for troubleshooting purposes.",
+				description = L.ACCOUNT_MANAGEMENT_DEBUG_OUTPUT_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClickHandler = OnDebugOutputToggled,
 			}),
 			app.CreateRawText("Add Linked Character", {
 				icon = app.asset("Button_Add"),
-				description = "Click here to link a character to your account.\n\nOnce Linked, click on the Linked Character in the list below to initiate a sync with that character.\n\nNOTE: Your character must be on the same faction (and server when not using Battle.net sync) as your current character to sync.",
+				description = L.ACCOUNT_MANAGEMENT_ADD_LINKED_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
 					app:ShowPopupDialogWithEditBox("Please type the name of the character to link to. You can use Name or Name-Realm as the format. This is case-sensitive!", "", function(cmd)
@@ -2260,7 +2260,7 @@ app:CreateWindow("Account Management", {
 			}),
 			app.CreateRawText("Merge Transferred Character Data", {
 				icon = 132996,
-				description = "Click here to initiate a process to merge old data from your current character's old server. This will merge most of the larger cached tables. (Spells, Quests, Flight Paths, Exploration, etc)",
+				description = L.ACCOUNT_MANAGEMENT_MERGE_CHARACTER_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
 					MergeTransferredCharacterData(row);
@@ -2269,7 +2269,7 @@ app:CreateWindow("Account Management", {
 			}),
 			app.CreateRawText("Recalculate Account Wide Data", {
 				icon = 132996,
-				description = "Click here to force ATT to recalculate its account wide statistical data. This happens automatically after a sync or refresh, but if there's ever a situation where ATT sees that a different character has done a thing, but your current character hasn't and isn't giving you partial credit, you can click this to manually initiate that recalculation.",
+				description = L.ACCOUNT_MANAGEMENT_RECALCULATE_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
 					RecalculateAccountWideData(true);
@@ -2278,7 +2278,7 @@ app:CreateWindow("Account Management", {
 			}),
 			app.CreateRawText("Sync All Characters", {
 				icon = app.asset("Button_Sync"),
-				description = "Click here to sync all of your characters.\n\nAlt+Click to toggle automatically syncing characters with your other accounts.\n\nYou must initially have the character stored on this account by Linking a Character and manually initiating a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be able to send whispers to other Linked characters (when not using Battle.net sync) to sync properly.",
+				description = L.ACCOUNT_MANAGEMENT_SYNC_ALL_DESC,
 				OnUpdate = function(t)
 					t.saved = self.Settings.AutoSync;
 					return app.AlwaysShowUpdate(t);
@@ -2296,7 +2296,7 @@ app:CreateWindow("Account Management", {
 			}),
 			app.CreateRawText("Enable Battle.net", {
 				icon = 526421,
-				description = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
+				description = L.ACCOUNT_MANAGEMENT_BATTLE_NET_DESC,
 				OnUpdate = BNGetInfo and function(t)
 					t.saved = EnableBattleNet;
 					return app.AlwaysShowUpdate(t);
@@ -2310,7 +2310,7 @@ app:CreateWindow("Account Management", {
 			}),
 			app.CreateRawText("Characters", {
 				icon = 526421,
-				description = "This shows all of the characters on your account.",
+				description = L.SYNC_CHARACTERS_TOOLTIP,
 				expanded = true,
 				characters = {},
 				g = {},
@@ -2354,7 +2354,7 @@ app:CreateWindow("Account Management", {
 			}),
 			app.CreateRawText("Linked Characters", {	-- Linked Characters
 				icon = 526421,
-				description = "This shows all of the linked characters you have defined so far.\n\nClick on a Linked Character in the list below to initiate a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be able to send whispers to other Linked characters (when not using Battle.net sync) to sync properly.",
+				description = L.ACCOUNT_MANAGEMENT_LINKED_CHARACTERS_DESC,
 				expanded = true,
 				g = {},
 				OnUpdate = function(data)
@@ -2401,7 +2401,7 @@ app:CreateWindow("Account Management", {
 			}),
 			app.CreateRawText("Pending Sync Queue", {	-- Pending Sync Queue
 				icon = 236681,
-				description = "This shows the contents of the sync queue.",
+				description = L.ACCOUNT_MANAGEMENT_SYNC_QUEUE_DESC,
 				expanded = true,
 				g = {},
 				OnUpdate = function(data)
@@ -2629,7 +2629,7 @@ app:CreateWindow("Character Unique Data", {
 		-- Initialize the window data object
 		self:SetData(app.CreateRawText("Character Unique Data", {
 			icon = 134400,
-			description = "Unique Data for this character only. Do not remove this character if you don't want to lose these things.",
+			description = L.CHARACTER_UNIQUE_DATA_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

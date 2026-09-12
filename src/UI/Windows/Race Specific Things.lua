@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local containsValue = app.containsValue;
 local tinsert = tinsert;
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
@@ -10,7 +11,7 @@ app:CreateWindow("Race Specific Things", {
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateRawText("Race Specific Things", {
 			icon = app.asset("WindowIcon_RWP"),
-			description = "This window shows you all of the race specific things for all races.",
+			description = L.RACE_SPECIFIC_THINGS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,

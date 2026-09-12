@@ -1,4 +1,5 @@
 local app = select(2, ...);
+local L = app.L;
 local tostring = tostring;
 
 -- App locals
@@ -17,7 +18,7 @@ local function OnTooltipForDeathTracker(t, tooltipInfo)
 	tooltipInfo[#tooltipInfo + 1] = { summaryText = t.summaryText };
 	if #c > 0 then
 		tooltipInfo[#tooltipInfo + 1] = { left = " " };
-		tooltipInfo[#tooltipInfo + 1] = { left = "Deaths Per Character:" };
+		tooltipInfo[#tooltipInfo + 1] = { left = L.DEATHS_PER_CHARACTER };
 		app.Sort(c, function(a, b)
 			return a.Deaths > b.Deaths;
 		end);
@@ -36,7 +37,7 @@ local fields = {
 		return 1;
 	end,
 	name = function(t)
-		return "Total Deaths";
+		return L.TOTAL_DEATHS;
 	end,
 	icon = function(t)
 		return app.asset("Category_Deaths");
@@ -57,11 +58,11 @@ local fields = {
 };
 if app.GameBuildVersion <= 40000 and C_GameRules and C_GameRules.IsHardcoreActive() then
 	fields.description = function(t)
-		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Try Again!'\n";
+		return L.DEATH_TRACKER_HARDCORE_DESC;
 	end;
 else
 	fields.description = function(t)
-		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
+		return L.DEATH_TRACKER_DESC;
 	end;
 end
 app.CreateDeathClass = app.CreateClass("DeathTracker", "deathCert", fields);

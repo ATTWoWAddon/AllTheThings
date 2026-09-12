@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local ipairs, tinsert, pairs, tostring
@@ -24,7 +25,7 @@ app:CreateWindow("Maps", {
 		end
 		self:SetData(app.CreateRawText("Maps", {
 			icon = app.asset("Category_Zones"),
-			description = "This window helps debug when we're missing map IDs in the addon.",
+			description = L.MAPS_TOOLTIP,
 			back = 1,
 			indent = 0,
 			visible = true,
