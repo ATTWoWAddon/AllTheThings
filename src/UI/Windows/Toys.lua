@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Private Variables
 local Flat;
@@ -39,7 +40,7 @@ app:CreateWindow("Toys", {
 		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "toyID", "No toys found.", "Toy", "ToyEventually");
 		self:SetData(app.CreateRawText(TOY_BOX, {
 			icon = app.asset("Category_ToyBox"),
-			description = "This list shows you all of the toys that you can collect.",
+			description = L.TOYS_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Private Variables
 local Flat;
@@ -38,7 +39,7 @@ app:CreateWindow("Factions", {
 	OnInit = function(self, handlers)
 		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "factionID", "No factions found.", "Faction", "FactionAsFriend", "FactionWithRenown");
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.FACTIONS, {
-			description = "This list shows you all of the factions that you can collect.",
+			description = L.FACTIONS_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

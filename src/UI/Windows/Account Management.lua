@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
@@ -2430,7 +2431,7 @@ app:CreateWindow("Account Management", {
 		};
 		self:SetData(app.CreateRawText("Account Management", {
 			icon = app.asset("WindowIcon_AccountManagement"),
-			description = "This list shows you all of the functionality related to managing your account data.",
+			description = L.ACCOUNT_MANAGEMENT_WINDOW_TOOLTIP,
 			visible = true,
 			expanded = true,
 			indent = 0,

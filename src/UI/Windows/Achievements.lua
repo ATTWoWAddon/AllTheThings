@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local contains = app.contains
 
 -- Global locals
@@ -137,7 +138,7 @@ app:CreateWindow("Achievements", {
 	Commands = { "attachievements", "attach" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
-			description = "This list shows you all of the achievements that you can collect.",
+			description = L.ACHIEVEMENTS_TOOLTIP,
 			IgnoreBuildRequests = true,
 			visible = true,
 			expanded = true,

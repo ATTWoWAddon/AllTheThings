@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 if app.GameBuildVersion < 30000 then return; end	-- Heirlooms were added with Wrath.
 
 -- Private Variables
@@ -41,7 +42,7 @@ app:CreateWindow("Heirlooms", {
 			"heirloomID", "No heirlooms found.", "Heirloom", "HeirloomWithFaction", "HeirloomAndAppearance");
 		self:SetData(app.CreateRawText(HEIRLOOMS, {
 			icon = app.asset("Weapon_Type_Heirloom"),
-			description = "This list shows you all of the heirlooms that you can collect.",
+			description = L.HEIRLOOMS_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

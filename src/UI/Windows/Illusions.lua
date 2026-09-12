@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 if C_TransmogCollection and C_TransmogCollection.GetIllusions and app.GameBuildVersion >= 60000 then
 
 -- Private Variables
@@ -39,7 +40,7 @@ app:CreateWindow("Illusions", {
 	OnInit = function(self, handlers)
 		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "illusionID", "No illusions found.", "Illusion", "IllusionWithItem");
 		self:SetData(app.CreateFilter(103, {	-- Illusions
-			description = "This list shows you all of the illusions that you can collect.",
+			description = L.ILLUSIONS_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},
