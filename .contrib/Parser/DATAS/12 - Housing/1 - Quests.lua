@@ -290,7 +290,12 @@ root(ROOTS.Housing, {
 				}),
 				-- Maybe do this better somehow. Technically this item should be a 'cost' on a symlink group attached to the respective Housing Lumberjack NPCs in both neighborhoods...  then could have proper coords on the NPC and cost indicator
 				i(269010, {	-- Essence of Lumber
-					["description"] = "Converts to 20 of any other Lumber type.",
+					["description"] =
+						-- #if AFTER 12.1
+						"Converts to 20 of any other Lumber type.\nWith the vendor re-design in 12.1, purchases of lumber using this item no longer grant progress towards the respective 'Lumberjack' achievement.",
+						-- #else
+						"Converts to 20 of any other Lumber type.",
+						-- #endif
 					["sym"] = {{"select","itemID",
 						245586,	-- Ironwood Lumber
 						242691,	-- Olemba Lumber
