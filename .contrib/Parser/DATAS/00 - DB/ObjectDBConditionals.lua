@@ -92,6 +92,7 @@ ObjectDB[206293] = {
 		pt = "Terminal A. I. D.A.",
 		ru = "Терминал АИДА",
 		ko = "인공지능 단말기",
+		cn = "A. I. D.A.终端",
 	},
 };
 -- #endif

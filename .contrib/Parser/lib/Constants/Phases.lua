@@ -555,6 +555,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Classic",
 		-- #endif
+		cn = "经典旧世",
 	},
 };
 PHASE_ONE = createClassicPhase({
@@ -1180,6 +1181,7 @@ CurrentClassicExpansion = {
 	text = {
 		en = "Season of Discovery",
 		mx = "Temporada de descubrimiento",
+		cn = "探索赛季",
 	},
 };
 local function createClassicPhaseForSOD(data)
@@ -1513,6 +1515,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "The Burning Crusade",
 		-- #endif
+		cn = "燃烧的远征",
 	},
 };
 TBC_PHASE_ONE = createClassicPhase({
@@ -2281,6 +2284,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Wrath of the Lich King",
 		-- #endif
+		cn = "巫妖王之怒",
 	},
 };
 WRATH_PHASE_ONE = createClassicPhase({
@@ -2689,6 +2693,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Cataclysm",
 		-- #endif
+		cn = "大地的裂变",
 	},
 };
 CATA_PHASE_ONE = createClassicPhase({
@@ -2913,6 +2918,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Mists of Pandaria",
 		-- #endif
+		cn = "熊猫人之谜",
 	},
 };
 MOP_PHASE_ONE = createClassicPhase({
@@ -3431,6 +3437,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Warlords of Draenor",
 		-- #endif
+		cn = "德拉诺之王",
 	},
 };
 WOD_PHASE_ONE = 60;
@@ -3447,6 +3454,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Legion",
 		-- #endif
+		cn = "军团再临",
 	},
 };
 LEGION_PHASE_ONE = 70;
@@ -3463,6 +3471,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Battle for Azeroth",
 		-- #endif
+		cn = "争霸艾泽拉斯",
 	},
 };
 BFA_PHASE_ONE = 80;
@@ -3479,6 +3488,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Shadowlands",
 		-- #endif
+		cn = "暗影国度",
 	},
 };
 SL_PHASE_ONE = 90;
@@ -3495,6 +3505,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "Dragonflight",
 		-- #endif
+		cn = "巨龙时代",
 	},
 };
 DF_PHASE_ONE = 100;
@@ -3511,6 +3522,7 @@ CurrentClassicExpansion = {
 		-- #else
 		en = "The War Within",
 		-- #endif
+		cn = "地心之战",
 	},
 };
 TWW_PHASE_ONE = 110;

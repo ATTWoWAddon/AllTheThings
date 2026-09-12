@@ -20,6 +20,7 @@ DISCORD_PROMOTION = createHeader({
 	},
 	description = {
 		en = "Discord Quest promotions.",
+		cn = "Discord 任务促销活动。",
 	},
 });
 

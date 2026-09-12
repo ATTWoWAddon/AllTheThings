@@ -7,6 +7,7 @@ AMAZON_PRIME_GAMING = createHeader({
 	icon = 136101,
 	text = {
 		en = "Amazon Prime Gaming",
+		cn = "亚马逊 Prime Gaming",
 	},
 	description = {
 		en = "Amazon Prime Gaming offers in-game content for World of Warcraft Retail. Depending on your country, Amazon Prime (which includes Gaming) costs between 4-16 $/€ per month with the occasional monthly free trial available.\n\nCreate a Twitch account & connect it with your Prime Account. Next connect your B.Net Account with your Twitch Account. Lastly claim your monthly reward under 'gaming.amazon.com/loot/wow'.\n\nAmazon Prime also comes with a free Twitch subscription which you can use to support AllTheThings.\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",

@@ -20,6 +20,7 @@ APPRENTICE = createHeader({
 	},
 	description = {
 		en = "Only 1 of 3 Apprentices can be chosen to challenge.",
+		cn = "3名学徒中只有1名可被选中挑战。",
 	},
 });
 OPERA_OF_MALEDICTION = createHeader({
@@ -39,6 +40,7 @@ OPERA_OF_MALEDICTION = createHeader({
 	},
 	description = {
 		en = "1 of 3 Operas will be randomly selected every day.",
+		cn = "每天会随机选取3场歌剧中的1场。",
 	},
 });
 

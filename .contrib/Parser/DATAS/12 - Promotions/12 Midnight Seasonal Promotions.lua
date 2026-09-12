@@ -44,11 +44,13 @@ FANTA = createHeader({
 	icon = 4672182,
 	text = {
 		en = "Fanta",
+		cn = "芬达",
 	},
 	description = {
 		en = "Go to https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, play a short game and get 1 reward per week. Sweepstakes starts on April 1, 2026 and ends at 11:59 pm ET on July 30, 2026 or once all rewards have been claimed, whichever occurs first. 2392 of each reward available per week. Resets at 12:00 am ET weekly. No purchase necessary.",
 		es = "Visita https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, juega un mini juego y consigue 1 premio por semana. El sorteo comienza el 1 de abril de 2026 y finaliza a las 23:59 (hora del este) del 30 de julio de 2026 o cuando se hayan reclamado todos los premios, lo que ocurra primero. Hay 2392 premios de cada tipo disponibles por semana. Se reinicia semanalmente a las 00:00 (ET). No es necesario realizar ninguna compra.",
 		mx = "Visita https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, juega un minijuego y consigue 1 premio por semana. El sorteo empieza el 1 de abril de 2026 y acaba a las 23:59 (hora del este) del 30 de julio de 2026 o cuando se hayan reclamado todos los premios, lo que ocurra primero. Hay 2392 premios de cada tipo disponibles por semana. Se reinicia semanalmente a las 00:00 (ET). No es necesario realizar ninguna compra.",
+		cn = "前往 https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it，玩一个小游戏，每周可获得1份奖励。抽奖活动自2026年4月1日开始，至2026年7月30日美国东部时间晚上11:59结束，或直至所有奖励被领取完毕，以先到者为准。每周每种奖励提供2392份。每周在美国东部时间凌晨12:00重置。无需购买。",
 	},
 });
 

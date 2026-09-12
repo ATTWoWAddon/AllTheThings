@@ -20,6 +20,7 @@ local ATALAI_DEFENDERS = createHeader({
 	},
 	description = {
 		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
+		cn = "你必须击杀大厅周围的全部6名小首领，才能解锁通往预言者迦玛兰的道路。",
 	},
 });
 
@@ -889,6 +890,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 							description = {
 								en = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
+								cn = "你需要被梦魇融合体施加负面效果才能触发此任务。（不要与它交战，直接跑开即可）",
 							},
 						}), {
 							["qg"] = 222198,	-- Nightmare Amalgamation

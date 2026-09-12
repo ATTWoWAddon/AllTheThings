@@ -8,6 +8,7 @@ CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
 	icon = 132738,
 	text = {
 		en = "Crieve's Never Implemented List",
+		cn = "Crieve 的未实装清单",
 	},
 	description = {
 		en = "If the following are sorted somewhere, please delete them from this list. Thanks.",

@@ -21,6 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 		},
 		lore = {
 			en = "Empowered by the Zandalari's offer the Gurubashi launched on all-out attack to claim Stranglethorn Vale for themselves. In Northern Stranglethorn Bambala, Fort Livingston, Nesingwary's Expedition, Grom'gol Base Camp, and the Rebel Camp came under attack by serpents sent by High Priest Venoxis. High Priestess Kilnara sent panthers to attack the Rebel Camp and Grom'gol while the panther Mauti attacked the hunters at Nesingwary's Expedition. Both Grom'gol and the Rebel Camp later came under attack by Gurubashi trolls led by Bloodlord Mandokir. After heroes of the Horde and Alliance beat back the Gurubashi attack, they were sent to the Cape of Stranglethorn which faced its own troubles.",
+			cn = "在赞达拉的许诺下实力大增的古拉巴什发动了全面进攻，企图将荆棘谷据为己有。在北荆棘谷，班巴拉、利文斯顿要塞、奈辛瓦里远征队、格罗姆高营地和反抗军营地都遭到了高阶祭司温诺希斯派出的蛇类袭击。高阶祭司基尔娜拉派出黑豹袭击反抗军营地和格罗姆高，而黑豹毛提则袭击了奈辛瓦里远征队的猎人。随后，格罗姆高和反抗军营地又遭到了血领主曼多基尔率领的古拉巴什巨魔的攻击。在部落与联盟的英雄击退了古拉巴什的进攻后，他们被派往同样麻烦缠身的荆棘谷海角。",
 		},
 	}), bubbleDownSelf({ ["timeline"] = { ADDED_4_1_0 } }, {
 		["maps"] = { NORTHERN_STRANGLETHORN, THE_CAPE_OF_STRANGLETHORN },

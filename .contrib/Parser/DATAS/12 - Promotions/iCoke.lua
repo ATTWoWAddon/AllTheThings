@@ -24,6 +24,7 @@ ICOKE_PROMOTION = createHeader({
 	},
 	description = {
 		en = "These were only available through the 2006 iCoke Promotion (China Only)",
+		cn = "这些仅可通过2006年的 iCoke 促销活动获得（仅限中国）。",
 	},
 });
 

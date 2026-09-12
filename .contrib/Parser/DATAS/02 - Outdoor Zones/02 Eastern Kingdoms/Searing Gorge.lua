@@ -53,6 +53,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				description = {
 					en = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
+					cn = "该事件从午夜起每2小时发生一次，持续60分钟。事件激活期间，灼热峡谷将为瑟银兄弟会提供日常任务。以往提升瑟银兄弟会的声望相当耗费时间，因此这个日常任务枢纽的加入非常受欢迎。\n事件激活时，会刷新新的 NPC，灼热峡谷的外围区域也会发生一些环境变化。",
 				},
 			}),
 			bubbleDownSelf({ ["timeline"] = { ADDED_1_15_3 } }, {

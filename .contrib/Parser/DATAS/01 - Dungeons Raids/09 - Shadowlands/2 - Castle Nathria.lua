@@ -7,6 +7,7 @@ LEECHING_VAULTS_HEADER = createHeader({
 	icon = 3614361,
 	text = {
 		en = "Leeching Vaults",
+		cn = "汲心宝库",
 	},
 	description = {
 		en = "The first LFR wing, featuring Huntsman Altimor, Hungering Destroyer, and Lady Inerva Darkvein.",
@@ -18,6 +19,7 @@ RELIQUARY_OF_OPULENCE_HEADER = createHeader({
 	icon = 3614361,
 	text = {
 		en = "Reliquary of Opulence",
+		cn = "丰饶圣物所",
 	},
 	description = {
 		en = "The second LFR wing, featuring Artificer Xy'mox, Sun King's Salvation, and The Council of Blood.",
@@ -29,6 +31,7 @@ BLOOD_FROM_STONE_HEADER = createHeader({
 	icon = 3614361,
 	text = {
 		en = "Blood from Stone",
+		cn = "石中殷红",
 	},
 	description = {
 		en = "The third LFR wing, featuring Shriekwing, Sludgefist, and Stone Legion Generals.",

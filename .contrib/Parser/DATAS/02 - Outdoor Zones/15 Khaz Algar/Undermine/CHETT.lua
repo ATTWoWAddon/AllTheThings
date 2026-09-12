@@ -16,7 +16,6 @@ CHETT = createHeader({
 		ko = "안.녕.거.기.",
 		pt = "C.H.A.T.A.",
 		ru = "КРОТ",
-		cn = "C.H.E.T.T.",
 		tw = "C.H.E.T.T.",
 	},
 });

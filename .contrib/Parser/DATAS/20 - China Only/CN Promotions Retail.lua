@@ -12,9 +12,11 @@ CN_PROMOTIONS_RETAIL = createHeader({
 		-- TODO: it = "",
 		-- TODO: ko = "",
 		-- TODO: pt = "",
+		cn = "中国促销（正式服）",
 	},
 	description = {
 		en = "These promotions are limited to the Chinese Realms.",
+		cn = "这些促销活动仅限于中国服务器。",
 	},
 });
 root(ROOTS.Promotions, {

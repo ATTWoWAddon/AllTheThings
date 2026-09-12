@@ -108,6 +108,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
 				},
 				description = {
 					en = "Congrats on making it this far! Now it's time to take your favorite li'l ghost on a world tour.",
+					cn = "恭喜你走到这一步！现在，是时候带你最喜欢的小幽灵去环游世界了。",
 				},
 			}), {
 				hqt(50140, {	-- Step 1: Gate of the Setting Sun
