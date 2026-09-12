@@ -445,7 +445,7 @@ end
 -- Implementation
 app:CreateWindow("MiniList", {
 	AllowCompleteSound = true,
-	SettingsName = "Mini List",
+	SettingsName = L.MINI_LIST,
 	-- IsTopLevel = true,
 	-- Preload = true,
 	-- Debugging = true,

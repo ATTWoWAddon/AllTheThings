@@ -1,12 +1,13 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local ipairs, pairs
 	= ipairs, pairs
 
 -- Implementation
 app:CreateWindow("Prime", {
 	AllowCompleteSound = true,
-	SettingsName = "Main List",
+	SettingsName = L.MAIN_LIST,
 	Preload = true,
 	IsTopLevel = true,
 	Defaults = {
