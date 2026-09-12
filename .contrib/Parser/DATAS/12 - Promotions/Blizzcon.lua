@@ -252,4 +252,9 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
 		["u"] = IGNORED_VALUE,
 	}),
+	ach(63685, {	-- BlizzCon 2026
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+		["u"] = IGNORED_VALUE,
+		["groups"] = { i(281107) },	-- BlizzCon Doormat (DECOR!)
+	}),
 })));
