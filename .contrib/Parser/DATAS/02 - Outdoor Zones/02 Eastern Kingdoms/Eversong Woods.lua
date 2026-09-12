@@ -1084,7 +1084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				fp(82, {	-- Silvermoon City [Horde]
 					["cr"] = 16192,	-- Skymistress Gloaming <Dragonhawk Master>
 					["coord"] = { 54.4, 50.8, EVERSONG_WOODS },
-					["timeline"] = { ADDED_2_0_1 },
+					["timeline"] = { ADDED_2_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

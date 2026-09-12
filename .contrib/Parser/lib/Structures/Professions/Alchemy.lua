@@ -106,14 +106,14 @@ EXPERT_ARTISAN_ALCHEMY = {
 		r(7181),	-- Greater Healing Potion
 		r(11448),	-- Greater Mana Potion
 		r(3448),	-- Lesser Invisibility Potion
-		r(17556, {["timeline"] = {ADDED_2_0_1}}),	-- Major Healing Potion
+		r(17556, {["timeline"] = {ADDED_2_0_3}}),	-- Major Healing Potion
 		r(3452),	-- Mana Potion
 		r(17552, {["timeline"] = {ADDED_4_0_3}}),	-- Mighty Rage Potion
 		r(11451),	-- Oil of Immolation
-		r(17572, {["timeline"] = {ADDED_2_0_1}}),	-- Purification Potion
+		r(17572, {["timeline"] = {ADDED_2_0_3}}),	-- Purification Potion
 		r(3449, {["timeline"] = {ADDED_4_1_0}}),	-- Shadow Oil
 		r(11457),	-- Superior Healing Potion
-		r(17553, {["timeline"] = {ADDED_2_0_1}}),	-- Superior Mana Potion
+		r(17553, {["timeline"] = {ADDED_2_0_3}}),	-- Superior Mana Potion
 	}),
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1262829),	-- Apothecary's Worktable

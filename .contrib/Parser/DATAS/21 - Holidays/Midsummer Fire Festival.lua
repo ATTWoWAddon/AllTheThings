@@ -763,7 +763,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #endif
 			applyclassicphase(TBC_PHASE_ONE, bubbleDown({	-- TBC Rewards (Original Timeline)
 				["timeline"] = {
-					ADDED_2_0_1,
+					ADDED_2_0_3,
 					-- #if CLASSIC_ANNIVERSARY
 					REMOVED_2_5_5,
 					-- #else
@@ -1591,7 +1591,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11935, {	-- Stealing Silvermoon's Flame
 			["provider"] = { "i", 35568 },	-- Flame of Silvermoon (Provided)
 			["coord"] = { 69.7, 42.7, SILVERMOON_CITY },
-			["timeline"] = { ADDED_2_0_1 },
+			["timeline"] = { ADDED_2_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
@@ -1614,7 +1614,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11933, {	-- Stealing the Exodar's Flame
 			["provider"] = { "i", 35569 },	-- Flame of the Exodar (Provided)
 			["coord"] = { 40.8, 26.3, THE_EXODAR },
-			["timeline"] = { ADDED_2_0_1 },
+			["timeline"] = { ADDED_2_0_3 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,

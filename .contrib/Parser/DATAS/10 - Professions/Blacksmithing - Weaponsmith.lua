@@ -57,7 +57,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34542,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -66,7 +66,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36261,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -75,7 +75,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34543,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -84,7 +84,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34544,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -94,7 +94,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36135,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 							ADDED_7_1_5,
 						},
@@ -104,7 +104,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36134,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 							ADDED_7_1_5,
 						},
@@ -115,7 +115,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34541,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -124,7 +124,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36260,
 						["requireSkill"] = 17041,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -214,7 +214,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34548,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -223,7 +223,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34546,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -232,7 +232,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36262,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -241,7 +241,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34545,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -251,7 +251,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36137,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 							ADDED_7_1_5,
 						},
@@ -261,7 +261,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36136,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 							ADDED_7_1_5,
 						},
@@ -272,7 +272,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36263,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -281,7 +281,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34547,
 						["requireSkill"] = 17040,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -352,7 +352,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36258,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -361,7 +361,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34537,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -370,7 +370,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34535,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -379,7 +379,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34538,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -388,7 +388,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 34540,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -397,7 +397,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36259,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 						},
 					}),
@@ -417,7 +417,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36131,
 						["requireSkill"] = 17039,
 						["timeline"] = {
-							ADDED_2_0_1,
+							ADDED_2_0_3,
 							REMOVED_4_0_1,
 							ADDED_7_1_5,
 						},

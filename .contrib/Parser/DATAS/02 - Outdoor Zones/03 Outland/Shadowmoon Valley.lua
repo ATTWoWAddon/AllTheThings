@@ -2567,7 +2567,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
+								["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -2600,7 +2600,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 19826 },	-- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)
-						["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						["cr"] = 19796,	-- Eclipsion Archmage
 					}),
 					i(30756, {	-- Illidari Bane-Shard (A)

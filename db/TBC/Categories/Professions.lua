@@ -9,7 +9,7 @@ x(1,{
 ach(732),
 ach(731),
 ach(116)}),
-x(2,{awp=20001,g={
+x(2,{awp=20003,g={
 ach(733,{u=17})}})}),
 prof(171,{
 x(1,{requireSkill=171}),
@@ -184,7 +184,7 @@ cat(224,{requireSkill=164,g={
 r(36122,{learnedAt=260,requireSkill=9788,u=17}),
 r(36124,{learnedAt=260,requireSkill=9788,u=17})}})}}),
 prof(9787,{description="These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",rwp=40001,sourceQuests={5284,5302},g={
-prof(17041,{awp=20001,description="These items can only be crafted by Master Axesmith specialized Weaponsmiths.",sourceQuests={5306},g={
+prof(17041,{awp=20003,description="These items can only be crafted by Master Axesmith specialized Weaponsmiths.",sourceQuests={5306},g={
 r(34542,{learnedAt=375,requireSkill=17041,u=17}),
 r(36261,{learnedAt=375,requireSkill=17041,u=17}),
 r(34543,{learnedAt=350,requireSkill=17041,u=17}),
@@ -193,7 +193,7 @@ r(36135,{learnedAt=330,requireSkill=17041,u=17}),
 r(36134,{learnedAt=330,requireSkill=17041,u=17}),
 r(34541,{learnedAt=350,requireSkill=17041,u=17}),
 r(36260,{learnedAt=375,requireSkill=17041,u=17})}}),
-prof(17040,{awp=20001,description="These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",sourceQuests={5305},g={
+prof(17040,{awp=20003,description="These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",sourceQuests={5305},g={
 r(34548,{learnedAt=375,requireSkill=17040,u=17}),
 r(34546,{learnedAt=375,requireSkill=17040,u=17}),
 r(36262,{learnedAt=375,requireSkill=17040,u=17}),
@@ -203,14 +203,14 @@ r(36136,{learnedAt=330,requireSkill=17040,u=17}),
 r(36263,{learnedAt=375,requireSkill=17040,u=17}),
 r(34547,{learnedAt=350,requireSkill=17040,u=17})}}),
 prof(17039,{description="These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",sourceQuests={5307},g={
-r(36258,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
-r(34537,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
-r(34535,{awp=20001,learnedAt=350,requireSkill=17039,u=17}),
-r(34538,{awp=20001,learnedAt=350,requireSkill=17039,u=17}),
-r(34540,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
-r(36259,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
+r(36258,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
+r(34537,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
+r(34535,{awp=20003,learnedAt=350,requireSkill=17039,u=17}),
+r(34538,{awp=20003,learnedAt=350,requireSkill=17039,u=17}),
+r(34540,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
+r(36259,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
 r(36133,{awp=20100,learnedAt=330,requireSkill=17039,u=17}),
-r(36131,{awp=20001,learnedAt=330,requireSkill=17039,u=17})}}),
+r(36131,{awp=20003,learnedAt=330,requireSkill=17039,u=17})}}),
 cat(227,{description="These can be crafted by any Weaponsmith.",requireSkill=164,g={
 r(36125,{awp=70105,learnedAt=260,requireSkill=9787,u=1}),
 r(36128,{learnedAt=260,requireSkill=9787,u=17}),
@@ -230,7 +230,7 @@ x(1,{requireSkill=185,g={
 ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
-x(2,{awp=20001,requireSkill=185,g={
+x(2,{awp=20003,requireSkill=185,g={
 ach(124,{requireSkill=185,u=17})}})}),
 prof(333),
 prof(202,{
@@ -601,7 +601,7 @@ prof(186,{
 x(1,{requireSkill=186})}),
 prof(40,{c={4},rwp=30002,g={
 cat(2,{
-r(26786,{awp=20001,lvl=68,u=17}),
+r(26786,{awp=20003,lvl=68,u=17}),
 r(3420,{lvl=20}),
 r(3421,{lvl=50}),
 r(2835,{lvl=30}),
@@ -609,15 +609,15 @@ r(2837,{lvl=38}),
 r(11357,{lvl=46}),
 r(11358,{lvl=54}),
 r(25347,{lvl=60,u=15}),
-r(26969,{awp=20001,lvl=62,u=17}),
-r(27282,{awp=20001,lvl=70,u=17}),
+r(26969,{awp=20003,lvl=62,u=17}),
+r(27282,{awp=20003,lvl=70,u=17}),
 r(8681),
 r(8687,{lvl=28}),
 r(8691,{lvl=36}),
 r(11341,{lvl=44}),
 r(11342,{lvl=52}),
 r(11343,{lvl=60}),
-r(26892,{awp=20001,lvl=68,u=17}),
+r(26892,{awp=20003,lvl=68,u=17}),
 r(5763,{lvl=24}),
 r(8694,{lvl=38}),
 r(11400,{lvl=52}),
@@ -625,7 +625,7 @@ r(13220,{lvl=32}),
 r(13228,{lvl=40}),
 r(13229,{lvl=48}),
 r(13230,{lvl=56}),
-r(27283,{awp=20001,lvl=64,u=17})})}}),
+r(27283,{awp=20003,lvl=64,u=17})})}}),
 prof(393),
 prof(197,{awp=20005,g={
 x(2,{requireSkill=197,u=17,g={

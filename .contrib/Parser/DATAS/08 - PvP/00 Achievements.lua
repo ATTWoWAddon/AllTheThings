@@ -28,7 +28,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	})),
 	applyclassicphase(TBC_PHASE_ONE, ach(230, {	-- Battlemaster (Alliance)
-		-- #if AFTER 2.0.1
+		-- #if AFTER 2.0.3
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			1167,	-- Master of Alterac Valley
@@ -39,7 +39,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 		["timeline"] = {
 			-- #if ANYCLASSIC
-			ADDED_2_0_1,
+			ADDED_2_0_3,
 			-- #else
 			ADDED_3_0_2,
 			-- #endif
@@ -56,7 +56,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	})),
 	applyclassicphase(TBC_PHASE_ONE, ach(1175, {	-- Battlemaster (Horde)
-		-- #if AFTER 2.0.1
+		-- #if AFTER 2.0.3
 		-- Meta Achievement
 		["sym"] = {{"meta_achievement",
 			-- #if AFTER 4.3.0
@@ -73,7 +73,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #endif
 		["timeline"] = {
 			-- #if ANYCLASSIC
-			ADDED_2_0_1,
+			ADDED_2_0_3,
 			-- #else
 			ADDED_3_0_2,
 			-- #endif

@@ -1993,7 +1993,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			applyclassicphase(TBC_PHASE_FOUR, i(185850)),	-- Greater Drums of Restoration
 			applyclassicphase(TBC_PHASE_FOUR, i(185851)),	-- Greater Drums of Speed
 			applyclassicphase(TBC_PHASE_FOUR, i(185852, {	-- Greater Drums of War
-				["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 			})),
 			-- #endif
 			i(34330, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit

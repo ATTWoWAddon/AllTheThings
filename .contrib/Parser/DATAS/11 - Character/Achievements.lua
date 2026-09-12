@@ -157,7 +157,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(890, {	-- Into the Wild Blue Yonder
 		["spellID"] = 34090,	-- Expert Riding
-		["timeline"] = { ADDED_2_0_1 },
+		["timeline"] = { ADDED_2_0_3 },
 		["rank"] = 3,
 	})),
 	ach(19459, {["timeline"] = { ADDED_11_0_2 }}),	-- Level 80
@@ -291,7 +291,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	applyclassicphase(TBC_PHASE_ONE, ach(519, {		-- 25 Exalted Reputations
 		["timeline"] = {
 			-- #if ANYCLASSIC
-			ADDED_2_0_1,
+			ADDED_2_0_3,
 			-- #else
 			ADDED_3_0_2,
 			-- #endif
@@ -301,7 +301,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	applyclassicphase(TBC_PHASE_ONE, ach(518, {		-- 30 Exalted Reputations
 		["timeline"] = {
 			-- #if ANYCLASSIC
-			ADDED_2_0_1,
+			ADDED_2_0_3,
 			-- #else
 			ADDED_3_0_2,
 			-- #endif
@@ -311,7 +311,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	applyclassicphase(TBC_PHASE_TWO, ach(1014, {	-- 35 Exalted Reputations
 		["timeline"] = {
 			-- #if ANYCLASSIC
-			ADDED_2_0_1,
+			ADDED_2_0_3,
 			-- #else
 			ADDED_3_0_2,
 			-- #endif
@@ -321,7 +321,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	applyclassicphase(TBC_PHASE_FIVE, ach(1015, {	-- 40 Exalted Reputations
 		["timeline"] = {
 			-- #if ANYCLASSIC
-			ADDED_2_0_1,
+			ADDED_2_0_3,
 			-- #else
 			ADDED_3_0_2,
 			-- #endif
@@ -458,7 +458,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		},
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(12, {	-- Level 70 (Legacy)
-		["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 },
+		["timeline"] = { ADDED_2_0_3, REMOVED_9_0_1 },
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(13, {	-- Level 80 (Legacy)
 		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
@@ -838,7 +838,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(892, {	-- The Right Stuff
 		["spellID"] = 34091,	-- Artisan Riding
-		["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 },
+		["timeline"] = { ADDED_2_0_3, REMOVED_9_0_1 },
 		["rank"] = 4,
 	})),
 	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 }, }, {
@@ -943,7 +943,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			},
 		})),
 		applyclassicphase(TBC_PHASE_ONE, ach(2143, {	-- Leading the Cavalry (50 mounts)
-			["timeline"] = { ADDED_2_0_1 },
+			["timeline"] = { ADDED_2_0_3 },
 			["groups"] = {
 				applyclassicphase(WRATH_PHASE_ONE, i(44178)),	-- Albino Drake (MOUNT!)
 			},

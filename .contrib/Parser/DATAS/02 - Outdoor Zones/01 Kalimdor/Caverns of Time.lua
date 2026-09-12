@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FACTIONS, {
 				applyclassicphase(TBC_PHASE_ONE, faction(FACTION_KEEPERS_OF_TIME, {	-- Keepers of Time
 					["icon"] = 134156,
-					["timeline"] = { ADDED_2_0_1 },
+					["timeline"] = { ADDED_2_0_3 },
 					["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS, CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS },
 				})),
 			}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_2_2_0 },
 							}),
 							i(22536, {	-- Formula: Enchant Ring - Spellpower (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, REMOVED_6_0_3 },
+								["timeline"] = { ADDED_2_0_3, REMOVED_6_0_3 },
 							}),
 							i(29198, {	-- Glyph of Frost Warding
 								["timeline"] = { REMOVED_5_0_4 },

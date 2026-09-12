@@ -148,7 +148,7 @@ profession(BLACKSMITHING, {
 							-- #if SEASON_OF_DISCOVERY
 							ADDED_1_15_3,
 							-- #else
-							CREATED_1_12_1, ADDED_2_0_1,
+							CREATED_1_12_1, ADDED_2_0_3,
 							-- #endif
 						},
 					},

@@ -64,7 +64,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 		applyclassicphase(TBC_PHASE_ONE, ach(733, {	-- Professional Master / Professional Outland Master [BFA]
 			["timeline"] = {
 				-- #if ANYCLASSIC
-				ADDED_2_0_1,
+				ADDED_2_0_3,
 				-- #else
 				ADDED_3_0_2,
 				-- #endif

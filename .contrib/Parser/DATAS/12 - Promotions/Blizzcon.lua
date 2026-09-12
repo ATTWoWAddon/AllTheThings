@@ -6,7 +6,7 @@ BLIZZCON = createHeader({
 	readable = "BlizzCon",
 	icon = [[~_.asset("Promotion_Blizzcon")]],
 	eventID = 1181,
-		eventSchedule = {
+	eventSchedule = {
 		0,	--
 		2026, 09, 12,	-- 12/09/2026
 		2026, 09, 13,	-- 13/09/2026

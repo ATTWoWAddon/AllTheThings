@@ -3530,7 +3530,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
+								["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -3571,7 +3571,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
+								["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -3660,7 +3660,7 @@ root(ROOTS.Zones, {
 
 -- Add in the items that aren't locked by phase.
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 	m(OUTLAND, {
 		m(HELLFIRE_PENINSULA, {
 			n(QUESTS, {

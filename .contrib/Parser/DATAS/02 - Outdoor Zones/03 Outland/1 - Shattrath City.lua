@@ -582,7 +582,7 @@ local MADAME_RUBY_GROUPS = {
 		["isLimited"] = true,
 	}),
 	i(25849, {	-- Formula: Runed Eternium Rod (RECIPE!)
-		["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
+		["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 	}),
 	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
 		["isLimited"] = true,
@@ -1610,7 +1610,7 @@ root(ROOTS.Zones, {
 								["isLimited"] = true,
 							}),
 							i(25846, {	-- Plans: Adamantite Rod (RECIPE!)
-								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
+								["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 								["isLimited"] = true,
 							}),
 						},
@@ -1685,7 +1685,7 @@ root(ROOTS.Zones, {
 									["u"] = UNLEARNABLE,
 									["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 									-- #ENDIF
-									["timeline"] = { ADDED_2_0_1 },
+									["timeline"] = { ADDED_2_0_3 },
 								}),
 								i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
 								i(29191, {	-- Glyph of Power
@@ -2331,7 +2331,7 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35357)),	-- Dragonhide Helm
 								applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
 								applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
-								applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
+								applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={ADDED_2_0_3,REMOVED_6_0_2}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
 								i(29199, {	-- Glyph of Shadow Warding
 									["timeline"] = { REMOVED_5_0_4 },
 								}),
