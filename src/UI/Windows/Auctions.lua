@@ -381,10 +381,10 @@ app:CreateWindow("Auctions", {
 			metas = { },
 			options = {
 				setmetatable({
-					clickText = "Click to run a Full Scan",
-					clickDescription = "Click this button to perform a full scan of the auction house. This information will appear within this window and clear out the existing data.",
-					scanningText = "Full Scan on Cooldown",
-					scanningDescription = "Please wait while we wait for the server to respond.",
+					clickText = L.AUCTIONS_SCAN_CLICK_TEXT,
+					clickDescription = L.AUCTIONS_SCAN_CLICK_DESC,
+					scanningText = L.AUCTIONS_SCAN_COOLDOWN_TEXT,
+					scanningDescription = L.AUCTIONS_SCAN_COOLDOWN_DESC,
 					SortPriority = 1,
 					icon = 132089,
 					OnClick = function(row, button)
@@ -448,7 +448,7 @@ app:CreateWindow("Auctions", {
 					end
 					return t.info[key];
 				end}),
-				app.CreateRawText("Clear Auction Data", {
+				app.CreateRawText(L.AUCTIONS_CLEAR_DATA, {
 					description = L.AUCTIONS_CLEAR_CACHE_DESC,
 					SortPriority = 1.1,
 					icon = 132089,
@@ -464,7 +464,7 @@ app:CreateWindow("Auctions", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Toggle Debug Mode", {
+				app.CreateRawText(L.TOGGLE_DEBUG_MODE, {
 					icon = 134932,
 					description = L.AUCTIONS_DEBUG_MODE_DESC,
 					SortPriority = 1.2,
@@ -484,7 +484,7 @@ app:CreateWindow("Auctions", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Toggle Account Mode", {
+				app.CreateRawText(L.TOGGLE_ACCOUNT_MODE, {
 					icon = 133733,
 					description = L.ACCOUNT_MODE_TOOLTIP,
 					SortPriority = 1.3,
@@ -507,7 +507,7 @@ app:CreateWindow("Auctions", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Toggle Faction Mode", {
+				app.CreateRawText(L.TOGGLE_FACTION_MODE, {
 					icon = 134932,
 					description = L.AUCTIONS_FACTION_MODE_DESC,
 					SortPriority = 1.4,
@@ -530,7 +530,7 @@ app:CreateWindow("Auctions", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Maximum Price", {
+				app.CreateRawText(L.AUCTIONS_MAXIMUM_PRICE, {
 					icon = 133784,
 					description = L.AUCTIONS_MAX_PRICE_DESC,
 					visible = true,
@@ -542,7 +542,7 @@ app:CreateWindow("Auctions", {
 						return true;
 					end,
 					OnUpdate = function(data)
-						data.summaryText = MaximumPrice == GoldCap and "NO LIMIT" or GetCoinTextureString(MaximumPrice);
+						data.summaryText = MaximumPrice == GoldCap and L.AUCTIONS_NO_LIMIT or GetCoinTextureString(MaximumPrice);
 						return app.AlwaysShowUpdate(data);
 					end,
 				}),
@@ -552,7 +552,7 @@ app:CreateWindow("Auctions", {
 					description = L.AUCTIONS_ITEMS_FOR_ACHIEVEMENTS_DESC,
 					SortPriority = 2,
 				}),
-				app.CreateRawText("Appearances", {	-- Appearances
+				app.CreateRawText(L.APPEARANCES, {	-- Appearances
 					Metas = { "ItemWithAppearance", "ItemAsTransmog", "SimpleItemAsTransmog" },
 					icon = 135349,
 					description = L.AUCTIONS_APPEARANCES_DESC,
@@ -580,13 +580,13 @@ app:CreateWindow("Auctions", {
 					description = L.ALL_THE_MOUNTS_DESC,
 					SortPriority = 2,
 				}),
-				app.CreateRawText("Materials", {	-- Materials
+				app.CreateRawText(L.AUCTIONS_MATERIALS, {	-- Materials
 					Metas = { "Material" },
 					icon = 132856,
 					description = L.ALL_THE_REAGENTS_DESC,
 					SortPriority = 2,
 				}),
-				app.CreateRawText("Miscellaneous", {	-- Miscellaneous
+				app.CreateRawText(L.AUCTIONS_MISCELLANEOUS, {	-- Miscellaneous
 					Metas = { "Item", "SimpleItem" },
 					icon = 132595,
 					description = L.AUCTIONS_OTHER_ITEMS_DESC,
@@ -602,13 +602,13 @@ app:CreateWindow("Auctions", {
 					description = L.ALL_THE_RECIPES_DESC,
 					SortPriority = 2,
 				}),
-				app.CreateRawText("Toys", {	-- Toys
+				app.CreateRawText(L.TOYS, {	-- Toys
 					Metas = { "Toy", "ToyEventually" },
 					icon = 133015,
 					description = L.AUCTIONS_TOYS_DESC,
 					SortPriority = 2,
 				}),
-				app.CreateRawText("Legacy", {	-- Legacy
+				app.CreateRawText(L.AUCTIONS_LEGACY, {	-- Legacy
 					Metas = { "legacyID" },
 					icon = 135331,
 					description = L.AUCTIONS_REMOVED_ITEMS_DESC,
@@ -619,7 +619,7 @@ app:CreateWindow("Auctions", {
 						rawSettings[2] = true;
 					end,
 				}),
-				app.CreateRawText("Legacy Cleaner", {	-- Legacy Cleaner
+				app.CreateRawText(L.AUCTIONS_LEGACY_CLEANER, {	-- Legacy Cleaner
 					icon = 135331,
 					SortPriority = 100001,
 					OnUpdate = function(data)
@@ -728,7 +728,7 @@ app:CreateWindow("Auctions", {
 							app.Sort(subdatag, SortByPrice)
 						end
 					else
-						tinsert(g, app.CreateRawText("No auctions cached. Waiting on Auction data.", {
+						tinsert(g, app.CreateRawText(L.AUCTIONS_NO_DATA, {
 							SortPriority = 99999,
 						}));
 					end

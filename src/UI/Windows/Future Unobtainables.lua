@@ -121,7 +121,7 @@ app:CreateWindow("Future Unobtainables", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			app.CreateRawText("Exclude Non-Collectibles", {
+			app.CreateRawText(L.FUTURE_UNOBTAINABLE_EXCLUDE_NONCOLLECTIBLES, {
 				icon = 134941,
 				description = L.FUTURE_UNOBTAINABLE_NONCOLLECTIBLE_DESC,
 				visible = true,
@@ -139,7 +139,7 @@ app:CreateWindow("Future Unobtainables", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Maximum Patch", {
+			app.CreateRawText(L.FUTURE_UNOBTAINABLE_MAXIMUM_PATCH, {
 				icon = 134941,
 				description = L.FUTURE_UNOBTAINABLE_MAX_PATCH_DESC,
 				visible = true,

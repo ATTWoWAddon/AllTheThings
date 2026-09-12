@@ -211,7 +211,7 @@ app:CreateWindow("Tradeskills", {
 			return true
 		end, {
 			"Usage : /att harvest-reagents",
-			"Intended for contributor use to harvest Recipe reagent information",
+			L.TRADESKILLS_HARVEST_REAGENTS_DESC,
 		})
 		local function UpdateLocalizedCategories(self, updates)
 			if not updates.Categories then

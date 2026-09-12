@@ -38,7 +38,7 @@ app:CreateWindow("Illusions", {
 		settings.Flat = Flat;
 	end,
 	OnInit = function(self, handlers)
-		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "illusionID", "No illusions found.", "Illusion", "IllusionWithItem");
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "illusionID", L.ILLUSIONS_NO_RESULTS, "Illusion", "IllusionWithItem");
 		self:SetData(app.CreateFilter(103, {	-- Illusions
 			description = L.ILLUSIONS_TOOLTIP,
 			visible = true,

@@ -37,7 +37,7 @@ app:CreateWindow("Mounts", {
 		settings.Flat = Flat;
 	end,
 	OnInit = function(self, handlers)
-		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "spellID", "No mounts found.", "Mount", "MountWithItem");
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "spellID", L.MOUNTS_NO_RESULTS, "Mount", "MountWithItem");
 		self:SetData(app.CreateRawText(MOUNTS, {
 			icon = app.asset("Category_Mounts"),
 			description = L.MOUNTS_TOOLTIP,

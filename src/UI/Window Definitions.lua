@@ -3417,11 +3417,11 @@ end
 -- Dynamic Categories (Delayed)
 local DynamicCategoryHeaders = {
 	{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
-	{ id = "sourceID", name = "Appearances", icon = 135276 },
+	{ id = "sourceID", name = L.APPEARANCES, icon = 135276 },
 	{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
 	{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
 	{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
-	{ id = "explorationID", name = "Exploration", icon = app.asset("Category_Exploration") },
+	{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },
 	{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 	{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
 	{ id = "mountID", name = MOUNTS, icon = app.asset("Category_Mounts") },

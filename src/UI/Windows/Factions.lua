@@ -37,7 +37,7 @@ app:CreateWindow("Factions", {
 		settings.Flat = Flat;
 	end,
 	OnInit = function(self, handlers)
-		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "factionID", "No factions found.", "Faction", "FactionAsFriend", "FactionWithRenown");
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "factionID", L.FACTIONS_NO_RESULTS, "Faction", "FactionAsFriend", "FactionWithRenown");
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.FACTIONS, {
 			description = L.FACTIONS_TOOLTIP,
 			visible = true,

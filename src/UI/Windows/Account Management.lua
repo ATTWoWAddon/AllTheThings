@@ -2043,30 +2043,30 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 			r = 1, g = 0.8, b = 0.8
 		});
 		tinsert(tooltipInfo, {
-			left = "Left Click to Sync this Character",
+			left = L.ACCOUNT_MANAGEMENT_SYNC_CHARACTER_HINT,
 			r = 0.8, g = 1, b = 0.8
 		});
 		tinsert(tooltipInfo, {
-			left = "Right Click to Delete this Character",
+			left = L.DELETE_CHARACTER,
 			r = 1, g = 0.8, b = 0.8
 		});
 		tinsert(tooltipInfo, {
-			left = "Shift-Left Click to Open Character Unique Data Window.",
+			left = L.ACCOUNT_MANAGEMENT_UNIQUE_DATA_HINT,
 			r = 1, g = 0.8, b = 0.8
 		});
 		if character.ignored then
 			tinsert(tooltipInfo, {
-				left = "Alt-Right Click to Unignore this Character",
+				left = L.ACCOUNT_MANAGEMENT_UNIGNORE_CHARACTER_HINT,
 				r = 1, g = 0.8, b = 0.8
 			});
 			tinsert(tooltipInfo, { left = " " });
 			tinsert(tooltipInfo, {
-				left = "Ignored Characters will not appear in the tooltip when using 'Show Other Characters' nor will they be sync'd with your other accounts. Characters from other accounts that are ignored on your current account will still receive updates from your other accounts.",
+				left = L.ACCOUNT_MANAGEMENT_IGNORED_DESC,
 				r = 1, g = 1, b = 1, wrap = true
 			});
 		else
 			tinsert(tooltipInfo, {
-				left = "Alt-Right Click to Ignore this Character",
+				left = L.ACCOUNT_MANAGEMENT_IGNORE_CHARACTER_HINT,
 				r = 1, g = 0.8, b = 0.8
 			});
 		end
@@ -2090,17 +2090,17 @@ local function OnTooltipForCharacterHeader(t, tooltipInfo)
 	end
 	tinsert(tooltipInfo, { left = " " });
 	tinsert(tooltipInfo, {
-		left = "Total Time Played (Account)",
+		left = L.ACCOUNT_MANAGEMENT_TOTAL_TIME_PLAYED,
 		right = GetTimePlayedString(AccountTotalTimePlayed)
 	});
-	tinsert(tooltipInfo, { left = "By Class:" });
+	tinsert(tooltipInfo, { left = L.ACCOUNT_MANAGEMENT_BY_CLASS });
 	for class,total in pairs(ByClass) do
 		tinsert(tooltipInfo, {
 			left = "  " .. app.CreateCharacterClass(class).text,
 			right = GetTimePlayedString(total)
 		});
 	end
-	tinsert(tooltipInfo, { left = "By Race:" });
+	tinsert(tooltipInfo, { left = L.ACCOUNT_MANAGEMENT_BY_RACE });
 	for race,total in pairs(ByRace) do
 		tinsert(tooltipInfo, {
 			left = "  " .. app.CreateRace(race).text,
@@ -2111,20 +2111,20 @@ end
 local function OnTooltipForLinkedAccount(t, tooltipInfo)
 	if t.unit then
 		tinsert(tooltipInfo, {
-			left = "Linked as",
+			left = L.ACCOUNT_MANAGEMENT_LINKED_AS,
 			right = t.datalink,
 		});
 		tinsert(tooltipInfo, {
-			left = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.",
+			left = L.LINKED_ACCOUNT_TOOLTIP,
 			r = 0.8, g = 0.8, b = 1, wrap = true
 		});
 		tinsert(tooltipInfo, {
-			left = "Right Click to Delete this Linked Character",
+			left = L.DELETE_LINKED_CHARACTER,
 			r = 1, g = 0.8, b = 0.8
 		});
 	else
 		tinsert(tooltipInfo, {
-			left = "Right Click to Delete this Linked Account",
+			left = L.DELETE_LINKED_ACCOUNT,
 			r = 1, g = 0.8, b = 0.8
 		});
 	end
@@ -2138,7 +2138,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	if receiving then
 		tinsert(tooltipInfo, { left = " " });
 		tinsert(tooltipInfo, {
-			left = "Receiving: ",
+			left = L.ACCOUNT_MANAGEMENT_RECEIVING,
 			r = 0.8, g = 0.8, b = 1
 		});
 		for uid,data in pairs(receiving) do
@@ -2148,7 +2148,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = "  " .. uid,
-				right = count .. " / " .. data.count .. " Chunks",
+				right = L.ACCOUNT_MANAGEMENT_CHUNK_PROGRESS:format(count, data.count),
 				r = 0.8, g = 0.8, b = 0.8
 			});
 		end
@@ -2159,7 +2159,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	if sending then
 		tinsert(tooltipInfo, { left = " " });
 		tinsert(tooltipInfo, {
-			left = "Sending: ",
+			left = L.ACCOUNT_MANAGEMENT_SENDING,
 			r = 0.8, g = 0.8, b = 1
 		});
 		for uid,data in pairs(sending) do
@@ -2169,14 +2169,14 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = "  " .. uid .. ": " .. data.detail,
-				right = count .. " / " .. tostring(#data.chunks) .. " Chunks",
+				right = L.ACCOUNT_MANAGEMENT_CHUNK_PROGRESS:format(count, #data.chunks),
 				r = 0.8, g = 0.8, b = 0.8
 			});
 		end
 	end
 
 	tinsert(tooltipInfo, {
-		left = "Right Click to Delete this Sync Target",
+		left = L.ACCOUNT_MANAGEMENT_DELETE_SYNC_TARGET_HINT,
 		r = 1, g = 0.8, b = 0.8
 	});
 end
@@ -2233,13 +2233,13 @@ app:CreateWindow("Account Management", {
 
 		local options = {
 			app.CreateToggle("debugOutput", {
-				name = "Show Debug Output",
+				name = L.ACCOUNT_MANAGEMENT_DEBUG_OUTPUT,
 				icon = 236206,
 				description = L.ACCOUNT_MANAGEMENT_DEBUG_OUTPUT_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClickHandler = OnDebugOutputToggled,
 			}),
-			app.CreateRawText("Add Linked Character", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_ADD_LINKED, {
 				icon = app.asset("Button_Add"),
 				description = L.ACCOUNT_MANAGEMENT_ADD_LINKED_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
@@ -2258,7 +2258,7 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Merge Transferred Character Data", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_MERGE_CHARACTER, {
 				icon = 132996,
 				description = L.ACCOUNT_MANAGEMENT_MERGE_CHARACTER_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
@@ -2267,7 +2267,7 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Recalculate Account Wide Data", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_RECALCULATE, {
 				icon = 132996,
 				description = L.ACCOUNT_MANAGEMENT_RECALCULATE_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
@@ -2276,7 +2276,7 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Sync All Characters", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_SYNC_ALL, {
 				icon = app.asset("Button_Sync"),
 				description = L.ACCOUNT_MANAGEMENT_SYNC_ALL_DESC,
 				OnUpdate = function(t)
@@ -2294,7 +2294,7 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Enable Battle.net", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_BATTLE_NET, {
 				icon = 526421,
 				description = L.ACCOUNT_MANAGEMENT_BATTLE_NET_DESC,
 				OnUpdate = BNGetInfo and function(t)
@@ -2308,7 +2308,7 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Characters", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_CHARACTERS, {
 				icon = 526421,
 				description = L.SYNC_CHARACTERS_TOOLTIP,
 				expanded = true,
@@ -2341,7 +2341,7 @@ app:CreateWindow("Account Management", {
 					end
 
 					if #g < 1 then
-						tinsert(g, app.CreateRawText("No characters found.", {
+						tinsert(g, app.CreateRawText(L.NO_CHARACTERS_FOUND, {
 							OnUpdate = app.AlwaysShowUpdate,
 							icon = 526421,
 							parent = data,
@@ -2352,7 +2352,7 @@ app:CreateWindow("Account Management", {
 					return app.AlwaysShowUpdate(data);
 				end,
 			}),
-			app.CreateRawText("Linked Characters", {	-- Linked Characters
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_LINKED_CHARACTERS, {	-- Linked Characters
 				icon = 526421,
 				description = L.ACCOUNT_MANAGEMENT_LINKED_CHARACTERS_DESC,
 				expanded = true,
@@ -2390,7 +2390,7 @@ app:CreateWindow("Account Management", {
 					end
 
 					if #g < 1 then
-						tinsert(g, app.CreateRawText("No linked accounts found.", {
+						tinsert(g, app.CreateRawText(L.NO_LINKED_ACCOUNTS, {
 							OnUpdate = app.AlwaysShowUpdate,
 							icon = 526421,
 							parent = data,
@@ -2399,7 +2399,7 @@ app:CreateWindow("Account Management", {
 					return app.AlwaysShowUpdate(data);
 				end,
 			}),
-			app.CreateRawText("Pending Sync Queue", {	-- Pending Sync Queue
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_SYNC_QUEUE, {	-- Pending Sync Queue
 				icon = 236681,
 				description = L.ACCOUNT_MANAGEMENT_SYNC_QUEUE_DESC,
 				expanded = true,

@@ -37,7 +37,7 @@ app:CreateWindow("Flight Paths", {
 		settings.Flat = Flat;
 	end,
 	OnInit = function(self, handlers)
-		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "flightpathID", "No flight paths found.", "FlightPath");
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "flightpathID", L.FLIGHT_PATHS_NO_RESULTS, "FlightPath");
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.FLIGHT_PATHS, {
 			description = L.FLIGHT_PATHS_TOOLTIP,
 			visible = true,

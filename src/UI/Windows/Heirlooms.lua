@@ -39,7 +39,7 @@ app:CreateWindow("Heirlooms", {
 	end,
 	OnInit = function(self, handlers)
 		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self,
-			"heirloomID", "No heirlooms found.", "Heirloom", "HeirloomWithFaction", "HeirloomAndAppearance");
+			"heirloomID", L.HEIRLOOMS_NO_RESULTS, "Heirloom", "HeirloomWithFaction", "HeirloomAndAppearance");
 		self:SetData(app.CreateRawText(HEIRLOOMS, {
 			icon = app.asset("Weapon_Type_Heirloom"),
 			description = L.HEIRLOOMS_TOOLTIP,

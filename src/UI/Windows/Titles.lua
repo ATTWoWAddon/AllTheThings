@@ -38,7 +38,7 @@ if app.GameBuildVersion >= 20000 then
 			settings.Flat = Flat;
 		end,
 		OnInit = function(self, handlers)
-			self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "titleID", "No titles found.", "Title", "TitleWithGender", "PVPRank");
+			self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "titleID", L.TITLES_NO_RESULTS, "Title", "TitleWithGender", "PVPRank");
 			self:SetData(app.CreateRawText(PAPERDOLL_SIDEBAR_TITLES, {
 				icon = app.asset("Category_Titles"),
 				description = L.TITLES_TOOLTIP,

@@ -73,17 +73,17 @@ local lootMethodIDs = {
 };
 if GetLootMethod and SetLootMethod then
 	local lootMethods = {
-		personalloot = "Personal Loot",
-		group = "Group Loot",
-		master = "Master Loot",
-		freeforall = "Free for All",
-		needbeforegreed = "Need Before Greed",
-		roundrobin = "Round Robin",
+		personalloot = L.RAID_ASSISTANT_LOOT_METHOD_PERSONAL,
+		group = L.RAID_ASSISTANT_LOOT_METHOD_GROUP,
+		master = L.RAID_ASSISTANT_LOOT_METHOD_MASTER,
+		freeforall = L.RAID_ASSISTANT_LOOT_METHOD_FREE_FOR_ALL,
+		needbeforegreed = L.RAID_ASSISTANT_LOOT_METHOD_NEED_BEFORE_GREED,
+		roundrobin = L.RAID_ASSISTANT_LOOT_METHOD_ROUND_ROBIN,
 	};
 	local lootMethodLore = {
-		personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.",
-		group = "Group loot, round-robin for normal items, rolling for special ones.",
-		master = "Master looter, designated player distributes loot.",
+		personalloot = L.RAID_ASSISTANT_LOOT_LORE_PERSONAL,
+		group = L.RAID_ASSISTANT_LOOT_LORE_GROUP,
+		master = L.RAID_ASSISTANT_LOOT_LORE_MASTER,
 	};
 	if UnitLootMethod then
 		for key,value in pairs(UnitLootMethod) do
@@ -429,7 +429,7 @@ app:CreateWindow("RaidAssistant", {
 
 		-- If Loot Threshold exists, we have the ability to change the minimum acceptable loot quality for /roll'd items.
 		if app.CreateLootThreshold then
-			local lootthreshold = app.CreateRawText("Loot Threshold", {
+			local lootthreshold = app.CreateRawText(L.RAID_ASSISTANT_LOOT_THRESHOLD, {
 				icon = 133784,
 				description = L.RAID_ASSISTANT_LOOT_THRESHOLD_DESC,
 				expanded = true,
@@ -745,7 +745,7 @@ app:CreateWindow("RaidAssistant", {
 		end
 
 		if app.GameBuildVersion < 30000 then
-			tinsert(options, app.CreateRawText("Create a Group", {
+			tinsert(options, app.CreateRawText(L.RAID_ASSISTANT_CREATE_GROUP, {
 				icon = 132331,
 				description = L.RAID_ASSISTANT_CREATE_GROUP_DESC,
 				priority = 20,
@@ -759,7 +759,7 @@ app:CreateWindow("RaidAssistant", {
 					return true;
 				end,
 			}));
-			tinsert(options, app.CreateRawText("Create a Raid", {
+			tinsert(options, app.CreateRawText(L.RAID_ASSISTANT_CREATE_RAID, {
 				icon = 132331,
 				description = L.RAID_ASSISTANT_CREATE_RAID_DESC,
 				priority = 20,
@@ -807,7 +807,7 @@ app:CreateWindow("RaidAssistant", {
 				end,
 			}));
 		end
-		tinsert(options, app.CreateRawText("Port to Graveyard", {
+		tinsert(options, app.CreateRawText(L.RAID_ASSISTANT_PORT_TO_GRAVEYARD, {
 			icon = 132331,
 			description = L.RAID_ASSISTANT_GROUP_LEAVE_DESC,
 			priority = 25,

@@ -37,7 +37,7 @@ app:CreateWindow("Toys", {
 		settings.Flat = Flat;
 	end,
 	OnInit = function(self, handlers)
-		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "toyID", "No toys found.", "Toy", "ToyEventually");
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "toyID", L.TOYS_NO_RESULTS, "Toy", "ToyEventually");
 		self:SetData(app.CreateRawText(TOY_BOX, {
 			icon = app.asset("Category_ToyBox"),
 			description = L.TOYS_TOOLTIP,

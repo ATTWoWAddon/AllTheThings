@@ -588,14 +588,14 @@ app:CreateWindow("Debugger", {
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateRawText(L.SESSION_HISTORY, {
 			icon = app.asset("WindowIcon_RaidAssistant"),
-			description = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
+			description = L.SESSION_HISTORY_DESC,
 			visible = true,
 			expanded = true,
 			back = 1,
 			options = {
-				app.CreateRawText("Clear History", {
+				app.CreateRawText(L.SESSION_HISTORY_CLEAR, {
 					icon = 132293,
-					description = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
+					description = L.SESSION_HISTORY_CLEAR_DESC,
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
@@ -608,9 +608,9 @@ app:CreateWindow("Debugger", {
 							return true;
 						end
 						row.ref.count = row.ref.count + 1;
-						tinsert(self.data.options, app.CreateRawText("Restore Button " .. row.ref.count, {
+						tinsert(self.data.options, app.CreateRawText(L.SESSION_HISTORY_RESTORE_BUTTON:format(row.ref.count), {
 							icon = app.asset("Button_Reroll"),
-							description = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
+							description = L.SESSION_HISTORY_RESTORE_DESC,
 							visible = true,
 							data = copy,
 							OnClick = function(row, button)
@@ -632,9 +632,9 @@ app:CreateWindow("Debugger", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Export Raw Data", {
+				app.CreateRawText(L.SESSION_HISTORY_EXPORT_RAW, {
 					icon = 135468,
-					description = "Click this to export all of the data in raw string format.",
+					description = L.SESSION_HISTORY_EXPORT_RAW_DESC,
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
@@ -642,9 +642,9 @@ app:CreateWindow("Debugger", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Export Readable Data", {
+				app.CreateRawText(L.SESSION_HISTORY_EXPORT_READABLE, {
 					icon = 135468,
-					description = "Click this to export all of the data in readable string format.",
+					description = L.SESSION_HISTORY_EXPORT_READABLE_DESC,
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
@@ -652,9 +652,9 @@ app:CreateWindow("Debugger", {
 						return true;
 					end,
 				}),
-				app.CreateRawText("Import Raw Data", {
+				app.CreateRawText(L.SESSION_HISTORY_IMPORT_RAW, {
 					icon = 135468,
-					description = "Click this to import raw data into the debugger. Do NOT import readable data.",
+					description = L.SESSION_HISTORY_IMPORT_RAW_DESC,
 					visible = true,
 					count = 0,
 					OnClick = function(row, button)
