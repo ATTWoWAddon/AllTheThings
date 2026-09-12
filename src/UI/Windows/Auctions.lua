@@ -536,7 +536,7 @@ app:CreateWindow("Auctions", {
 					visible = true,
 					SortPriority = 1.5,
 					OnClick = function(row, button)
-						app:ShowPopupDialogWithEditBox("Please enter a new maximum price\n(all / cap / warband) are also accepted values", tostring(MaximumPrice * 0.0001), function(cmd)
+						app:ShowPopupDialogWithEditBox(L.AUCTIONS_MAX_PRICE_POPUP, tostring(MaximumPrice * 0.0001), function(cmd)
 							ParseCommand(self, cmd);
 						end);
 						return true;

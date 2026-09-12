@@ -146,7 +146,7 @@ app:CreateWindow("Future Unobtainables", {
 				priority = 6,
 				SortPriority = -1,
 				OnClick = function(row, button)
-					app:ShowPopupDialogWithEditBox("Please enter a new maximum RWP", MaximumRWP, function(cmd)
+					app:ShowPopupDialogWithEditBox(L.FUTURE_UNOBTAINABLE_MAX_RWP_POPUP, MaximumRWP, function(cmd)
 						ParseCommand(self, cmd);
 					end);
 					return true;

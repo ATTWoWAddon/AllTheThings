@@ -605,7 +605,7 @@ local function DeserializeSequentialKeys(str)
 			a = tonumber(a);
 			b = tonumber(b);
 			if (b - a) > 100000 then
-				app:ShowPopupDialogWithMultiLineEditBox("Rather than explode your RAM, Crieve decided instead to have you report this string of data to him for a fix.\n\nApologies for the inconvenience.\n\n" .. str, nil, "A parsing error occured during the sync process.");
+				app:ShowPopupDialogWithMultiLineEditBox(L.ACCOUNT_MANAGEMENT_PARSE_ERROR_POPUP:format(str), nil, L.ACCOUNT_MANAGEMENT_PARSE_ERROR_TITLE);
 				break;
 			end
 			for j=a,b,1 do
@@ -662,7 +662,7 @@ local function SerializeSequentialKeys(keys)
 	return str;
 end
 local function ShowSerializationDebugger()
-	app:ShowPopupDialogWithMultiLineEditBox("Serialization Debugger", function(text)
+	app:ShowPopupDialogWithMultiLineEditBox(L.ACCOUNT_MANAGEMENT_SERIALIZATION_DEBUGGER_TITLE, function(text)
 		text = text:gsub("    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
 		DevTools_Dump(DeserializeSequentialKeys(text));
 	end);
@@ -1721,10 +1721,10 @@ local function SortByCharacterLevel(a,b)
   return (a.lvl or 0) > (b.lvl or 0);
 end
 local function MergeCharacterData(character, row)
-	local message = "MERGE CHARACTER DATA:" .. "\n" .. (character.text or character.name or RETRIEVING_DATA) .. ",";
+	local message = L.ACCOUNT_MANAGEMENT_MERGE_HEADER:format(character.text or character.name or RETRIEVING_DATA);
 	if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
 	if character.race then message = message .. " " .. character.race; end
-	message = message .. "\n \nThe following fields will be merged:\n ";
+	message = message .. L.ACCOUNT_MANAGEMENT_MERGE_FIELDS_HEADER;
 	local fields = {};
 	for i,field in ipairs(eligibleFields) do
 		local cv = CurrentCharacter[field] or {};
@@ -1744,8 +1744,8 @@ local function MergeCharacterData(character, row)
 		end
 	end
 	local deaths = character.Deaths or 0;
-	if deaths > 0 then message = message .. "\n Deaths: " .. deaths; end
-	app:ShowPopupDialog(message .. "\n \nAre you sure you want to merge this?",
+	if deaths > 0 then message = message .. L.ACCOUNT_MANAGEMENT_MERGE_DEATHS:format(deaths); end
+	app:ShowPopupDialog(message .. L.ACCOUNT_MANAGEMENT_MERGE_CONFIRM,
 	function()
 		for _,tableName in ipairs(fields) do
 			local copyTable = character[tableName];
@@ -1771,7 +1771,7 @@ local function MergeCharacterData(character, row)
 		row:GetParent():GetParent():Rebuild();
 		app.print("Merged " .. character.text .. " into " .. CurrentCharacter.text);
 		C_Timer.After(0.01, function()
-			app:ShowPopupDialog("Would you also like to delete the old character data?\n\nNOTE: Any cached quest IDs that you have only completed on " .. character.text .. " will be lost. You have been warned.",
+			app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_OLD_DATA_CONFIRM:format(character.text),
 			function()
 				CharacterData[character.guid] = nil;
 				RecalculateAccountWideData(true);
@@ -1819,7 +1819,7 @@ local function MergeTransferredCharacterData(row)
 	end
 	if #eligibleCharacters > 1 then
 		tsort(eligibleCharacters, SortByCharacterLevel);
-		local message = "Please type the index of the character data you'd like to merge into your current character:\n ";
+		local message = L.ACCOUNT_MANAGEMENT_MERGE_INDEX_POPUP;
 		for i,character in ipairs(eligibleCharacters) do
 			message = message .. "\n" .. i .. ": " .. (character.text or character.name) .. ",";
 			if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
@@ -1888,7 +1888,7 @@ local function OnClickForCharacter(row, button)
 			character.ignored = not character.ignored;
 			row:GetParent():GetParent():Rebuild();
 		else
-			app:ShowPopupDialog("CHARACTER DATA: " .. (character.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+			app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_CHARACTER_POPUP:format(character.text or RETRIEVING_DATA),
 			function()
 				CharacterData[guid] = nil;
 				RecalculateAccountWideData(true);
@@ -1912,7 +1912,7 @@ local function OnClickForLinkedAccount(row, button)
 	end
 
 	if button == "RightButton" then
-		app:ShowPopupDialog("LINKED ACCOUNT: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+		app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_LINKED_POPUP:format(row.ref.text or RETRIEVING_DATA),
 		function()
 			LinkedCharacters[identifier] = nil;
 			row:GetParent():GetParent():Rebuild();
@@ -1945,7 +1945,7 @@ local function OnClickForSyncQueue(row, button)
 	if not identifier then return true; end
 
 	if button == "RightButton" then
-		app:ShowPopupDialog("SYNC QUEUE: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+		app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_SYNC_QUEUE_POPUP:format(row.ref.text or RETRIEVING_DATA),
 		function()
 			pendingReceiveChunksForUser[identifier] = nil;
 			pendingSendChunksForUser[identifier] = nil;
@@ -2244,7 +2244,7 @@ app:CreateWindow("Account Management", {
 				description = L.ACCOUNT_MANAGEMENT_ADD_LINKED_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
-					app:ShowPopupDialogWithEditBox("Please type the name of the character to link to. You can use Name or Name-Realm as the format. This is case-sensitive!", "", function(cmd)
+					app:ShowPopupDialogWithEditBox(L.ACCOUNT_MANAGEMENT_LINK_CHARACTER_POPUP, "", function(cmd)
 						if cmd and cmd ~= "" then
 							local fullIdentifier, shortIdentifier = NormalizeLinkedCharacterIdentifier(cmd);
 							cmd = fullIdentifier or shortIdentifier;

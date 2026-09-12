@@ -330,7 +330,7 @@ app:CreateWindow("Tradeskills", {
 				-- In Debugging, pop a dialog of all found missing recipes
 				if app.Debugging then
 					if #MissingRecipes > 0 then
-						app:ShowPopupDialogWithMultiLineEditBox(app.TableConcat(MissingRecipes, nil, nil, "\n"), nil, "Missing Recipes")
+						app:ShowPopupDialogWithMultiLineEditBox(app.TableConcat(MissingRecipes, nil, nil, "\n"), nil, L.TRADESKILLS_MISSING_RECIPES_TITLE)
 					else
 						app.PrintDebug("No Missing Recipes!")
 					end
