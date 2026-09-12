@@ -11,7 +11,7 @@ app:CreateWindow("Locked", {
 	AllowCompleteSound = true,
 	Commands = { "attlocked" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Locked Out", {
+		self:SetData(app.CreateRawText(L.LOCKED_OUT, {
 			icon = 134236,
 			description = L.LOCKED_TOOLTIP,
 			visible = true,

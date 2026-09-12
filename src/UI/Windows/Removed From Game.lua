@@ -7,7 +7,7 @@ local tinsert = tinsert;
 app:CreateWindow("Removed From Game", {
 	Commands = { "attrfg" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Removed From Game", {
+		self:SetData(app.CreateRawText(L.REMOVED_FROM_GAME, {
 			icon = app.asset("WindowIcon_RWP"),
 			description = L.REMOVED_FROM_GAME_TOOLTIP,
 			visible = true,

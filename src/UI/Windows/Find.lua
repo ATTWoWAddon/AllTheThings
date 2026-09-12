@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 if app.IsRetail then return; end
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
@@ -242,7 +243,7 @@ app:CreateWindow("ItemFinder", {
 					return true;
 				end,
 			};
-			self:SetData(app.CreateRawText("Item Finder", {
+			self:SetData(app.CreateRawText(L.ITEM_FINDER, {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,
@@ -326,7 +327,7 @@ app:CreateWindow("QuestFinder", {
 			function(t)
 				return #SearchForField("questID", t.questID) == 0;
 			end);
-			self:SetData(app.CreateRawText("Quest Finder", {
+			self:SetData(app.CreateRawText(L.QUEST_FINDER, {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,
@@ -404,7 +405,7 @@ app:CreateWindow("SpellFinder", {
 			function(t)
 				return #SearchForField("spellID", t.spellID) == 0;
 			end);
-			self:SetData(app.CreateRawText("Spell Finder", {
+			self:SetData(app.CreateRawText(L.SPELL_FINDER, {
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
 				visible = true,

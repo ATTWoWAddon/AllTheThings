@@ -71,7 +71,7 @@ app:CreateWindow("Export", {
 		-- "export",	-- TODO uncomment when fixing how commands are defined
 	},
 	OnInit = function(self, handlers)
-		local data = app.CreateRawText("Export", {
+		local data = app.CreateRawText(L.EXPORT, {
 			-- icon = app.asset("Interface_Vendor"),
 			description = L.EXPORT_TOOLTIP,
 			g = {},

@@ -369,7 +369,7 @@ app:CreateWindow("Auctions", {
 			end
 		end
 		self:SetMovable(false);
-		self:SetData(app.CreateRawText("Auction Module", {
+		self:SetData(app.CreateRawText(L.AUCTION_MODULE, {
 			icon = 133784,
 			description = L.AUCTIONS_TOOLTIP,
 			SortType = "name",

@@ -73,7 +73,7 @@ app:CreateWindow("Local List", {
 		"attlocal",
 	},
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Local List", {
+		self:SetData(app.CreateRawText(L.LOCAL_LIST, {
 			icon = app.asset("Category_Zones"),
 			description = L.LOCAL_LIST_TOOLTIP,
 			visible = true,

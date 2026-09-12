@@ -23,7 +23,7 @@ app:CreateWindow("Maps", {
 				return false;
 			end
 		end
-		self:SetData(app.CreateRawText("Maps", {
+		self:SetData(app.CreateRawText(L.MAPS, {
 			icon = app.asset("Category_Zones"),
 			description = L.MAPS_TOOLTIP,
 			back = 1,

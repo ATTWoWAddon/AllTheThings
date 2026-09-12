@@ -2429,7 +2429,7 @@ app:CreateWindow("Account Management", {
 				end,
 			}),
 		};
-		self:SetData(app.CreateRawText("Account Management", {
+		self:SetData(app.CreateRawText(L.ACCOUNT_MANAGEMENT, {
 			icon = app.asset("WindowIcon_AccountManagement"),
 			description = L.ACCOUNT_MANAGEMENT_WINDOW_TOOLTIP,
 			visible = true,
@@ -2627,7 +2627,7 @@ app:CreateWindow("Character Unique Data", {
 		end
 
 		-- Initialize the window data object
-		self:SetData(app.CreateRawText("Character Unique Data", {
+		self:SetData(app.CreateRawText(L.CHARACTER_UNIQUE_DATA, {
 			icon = 134400,
 			description = L.CHARACTER_UNIQUE_DATA_TOOLTIP,
 			visible = true,

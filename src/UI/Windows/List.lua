@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local coroutine, getmetatable, setmetatable, ipairs, pairs, rawget, rawset, tremove, tonumber, tostring, math_floor
@@ -205,7 +206,7 @@ app:CreateWindow("List", {
 	end,
 	OnInit = function(self, handlers)
 		self.doesOwnUpdate = true
-		self:SetData(app.CreateRawText("Full Data List", {
+		self:SetData(app.CreateRawText(L.FULL_DATA_LIST, {
 			icon = app.asset("Interface_Quest_header"),
 			visible = true,
 			expanded = true,

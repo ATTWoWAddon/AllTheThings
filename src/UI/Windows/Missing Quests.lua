@@ -15,7 +15,7 @@ app:CreateWindow("Missing Quests", {
 	},
 	HideFromSettings = true,
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Missing Quests", {
+		self:SetData(app.CreateRawText(L.MISSING_QUESTS, {
 			icon = app.asset("Interface_Quest"),
 			description = L.MISSING_QUESTS_TOOLTIP,
 			visible = true,

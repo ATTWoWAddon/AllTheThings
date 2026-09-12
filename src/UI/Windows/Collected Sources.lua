@@ -23,7 +23,7 @@ end
 app:CreateWindow("Collected Sources", {
 	Commands = { "attcollectedsources" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Collected Sources", {
+		self:SetData(app.CreateRawText(L.COLLECTED_SOURCES, {
 			icon = 134941,
 			description = L.COLLECTED_SOURCES_TOOLTIP,
 			visible = true,

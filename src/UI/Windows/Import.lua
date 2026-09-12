@@ -202,7 +202,7 @@ app:CreateWindow("Import", {
 			self:Rebuild()
 		end
 
-		self:SetData(app.CreateRawText("Import", {
+		self:SetData(app.CreateRawText(L.IMPORT, {
 			icon = app.asset("logo_32x32"),
 			description = L.IMPORT_TOOLTIP,
 			visible = true,

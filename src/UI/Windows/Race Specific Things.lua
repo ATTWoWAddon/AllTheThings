@@ -9,7 +9,7 @@ local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 app:CreateWindow("Race Specific Things", {
 	Commands = { "attraces" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Race Specific Things", {
+		self:SetData(app.CreateRawText(L.RACE_SPECIFIC_THINGS, {
 			icon = app.asset("WindowIcon_RWP"),
 			description = L.RACE_SPECIFIC_THINGS_TOOLTIP,
 			visible = true,

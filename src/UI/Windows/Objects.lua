@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local ipairs, tinsert, pairs
@@ -158,7 +159,7 @@ app:CreateWindow("Objects", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },
 	OnLoad = function(self, settings)
-		self:SetData(app.CreateRawText("Object Debugger", {
+		self:SetData(app.CreateRawText(L.OBJECT_DEBUGGER, {
 			icon = app.asset("WindowIcon_RaidAssistant"),
 			description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.",
 			back = 1,
