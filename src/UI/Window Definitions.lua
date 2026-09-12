@@ -2760,6 +2760,80 @@ local function BuildWindow(suffix)
 	app.HandleEvent("OnWindowCreated", window, suffix);
 	return window;
 end
+
+-- Localized display names for Windows.
+-- Maps a Window's suffix (the key passed to app:CreateWindow) to the localization constant used for its display name.
+-- Allows the Settings > Windows list & tooltips to show translated Window names instead of the raw English key.
+local LocalizedWindowNames = {
+	["Account Management"] = "ACCOUNT_MANAGEMENT",
+	["Achievements"] = "ACHIEVEMENTS",
+	["Added With Patch"] = "ADDED_WITH_PATCH",
+	["All-Hidden"] = "ALL_HIDDEN",
+	["Attunements"] = "ATTUNEMENTS",
+	["Auctions"] = "AUCTIONS",
+	["Bounty"] = "BOUNTY",
+	["Breadcrumbs"] = "BREADCRUMBS",
+	["Character Unique Data"] = "CHARACTER_UNIQUE_DATA",
+	["Class Specific Things"] = "CLASS_SPECIFIC_THINGS",
+	["Collected Sources"] = "COLLECTED_SOURCES",
+	["Commands"] = "COMMANDS",
+	["Dailies"] = "DAILIES",
+	["Exploration"] = "EXPLORATION",
+	["Export"] = "EXPORT",
+	["Factions"] = "FACTIONS",
+	["Flight Paths"] = "FLIGHT_PATHS",
+	["Future Unobtainables"] = "FUTURE_UNOBTAINABLE",
+	["Heirlooms"] = "HEIRLOOMS",
+	["Hidden Achievement Triggers"] = "HIDDEN_ACHIEVEMENT_TRIGGERS",
+	["Hidden Currency Triggers"] = "HIDDEN_CURRENCY_TRIGGERS",
+	["Hidden Quest Triggers"] = "HIDDEN_QUEST_TRIGGERS",
+	["Illusions"] = "ILLUSIONS",
+	["Import"] = "IMPORT",
+	["Item Filter"] = "ITEM_FILTER",
+	["List"] = "LIST_WINDOW",
+	["Local List"] = "LOCAL_LIST",
+	["Locked"] = "LOCKED",
+	["Maps"] = "MAPS",
+	["MiniList"] = "MINI_LIST",
+	["Missing Quests"] = "MISSING_QUESTS",
+	["Mounts"] = "MOUNTS",
+	["Never Implemented"] = "NEVER_IMPLEMENTED",
+	["New With Patch"] = "NEW_WITH_PATCH",
+	["Objects"] = "OBJECTS",
+	["Pet Battles"] = "PET_BATTLES",
+	["Prime"] = "MAIN_LIST",
+	["Quests"] = "QUESTS",
+	["Race Specific Things"] = "RACE_SPECIFIC_THINGS",
+	["RaidAssistant"] = "RAID_ASSISTANT",
+	["Random"] = "RANDOM",
+	["Recipes: Alchemy"] = "RECIPES_ALCHEMY",
+	["Recipes: Blacksmithing"] = "RECIPES_BLACKSMITHING",
+	["Recipes: Cooking"] = "RECIPES_COOKING",
+	["Recipes: Enchanting"] = "RECIPES_ENCHANTING",
+	["Recipes: Engineering"] = "RECIPES_ENGINEERING",
+	["Recipes: First Aid"] = "RECIPES_FIRST_AID",
+	["Recipes: Fishing"] = "RECIPES_FISHING",
+	["Recipes: Herbalism"] = "RECIPES_HERBALISM",
+	["Recipes: Inscription"] = "RECIPES_INSCRIPTION",
+	["Recipes: Jewelcrafting"] = "RECIPES_JEWELCRAFTING",
+	["Recipes: Leatherworking"] = "RECIPES_LEATHERWORKING",
+	["Recipes: Mining"] = "RECIPES_MINING",
+	["Recipes: Skinning"] = "RECIPES_SKINNING",
+	["Recipes: Tailoring"] = "RECIPES_TAILORING",
+	["Removed From Game"] = "REMOVED_FROM_GAME",
+	["Season of Discovery"] = "SEASON_OF_DISCOVERY",
+	["Sourceless"] = "SOURCELESS",
+	["Titles"] = "TITLES",
+	["Toys"] = "TOYS",
+	["Tradeskills"] = "TRADESKILLS",
+	["Unsorted"] = "UNSORTED",
+	["WorldQuests"] = "WORLD_QUESTS",
+};
+local function GetLocalizedWindowName(suffix)
+	local constant = LocalizedWindowNames[suffix];
+	-- Note: rawget avoids triggering the Localization table's fallback (which would report a MISSING LOCALE & return UNKNOWN)
+	return constant and rawget(L, constant) or nil;
+end
 function app:CreateWindow(suffix, definition)
 	app.WindowDefinitions[suffix] = definition;
 	if not definition then
@@ -2805,7 +2879,7 @@ function app:CreateWindow(suffix, definition)
 		end
 	end
 
-	definition.SettingsName = definition.SettingsName or suffix
+	definition.SettingsName = definition.SettingsName or GetLocalizedWindowName(suffix) or suffix
 	if definition.Preload then
 		-- This window still needs to be loaded right away
 		return app:GetWindow(suffix);
@@ -3343,11 +3417,11 @@ end
 -- Dynamic Categories (Delayed)
 local DynamicCategoryHeaders = {
 	{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
-	{ id = "sourceID", name = "Appearances", icon = 135276 },
+	{ id = "sourceID", name = L.APPEARANCES, icon = 135276 },
 	{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
 	{ id = "characterUnlock", name = CHARACTER .. " " .. UNLOCK .. "s", icon = app.asset("Category_ItemSets") },
 	{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
-	{ id = "explorationID", name = "Exploration", icon = app.asset("Category_Exploration") },
+	{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },
 	{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 	{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
 	{ id = "mountID", name = MOUNTS, icon = app.asset("Category_Mounts") },

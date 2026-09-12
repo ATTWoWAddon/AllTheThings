@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Window Definition
 if app.GameBuildVersion >= 20000 then
@@ -37,10 +38,10 @@ if app.GameBuildVersion >= 20000 then
 			settings.Flat = Flat;
 		end,
 		OnInit = function(self, handlers)
-			self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "titleID", "No titles found.", "Title", "TitleWithGender", "PVPRank");
+			self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "titleID", L.TITLES_NO_RESULTS, "Title", "TitleWithGender", "PVPRank");
 			self:SetData(app.CreateRawText(PAPERDOLL_SIDEBAR_TITLES, {
 				icon = app.asset("Category_Titles"),
-				description = "This list shows you all of the titles that you can collect.",
+				description = L.TITLES_TOOLTIP,
 				visible = true,
 				back = 1,
 				g = {},
@@ -55,7 +56,7 @@ else
 		OnInit = function(self, handlers)
 			self:SetData(app.CreateRawText(PAPERDOLL_SIDEBAR_TITLES, {
 				icon = app.asset("Category_Titles"),
-				description = "This list shows you all of the titles that you can collect.",
+				description = L.TITLES_TOOLTIP,
 				visible = true,
 				back = 1,
 				g = {},

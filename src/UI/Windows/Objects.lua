@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local ipairs, tinsert, pairs
@@ -75,14 +76,14 @@ local function OnTooltipForObject(t, tooltipInfo)
 	local name = app.ObjectNames[t.objectID];
 	if name then
 		tinsert(tooltipInfo, {
-			left = "Name",
+			left = L.OBJECT_DEBUGGER_NAME,
 			right = name,
 			r = 1, g = 1, b = 1,
 		});
 	else
 		tinsert(tooltipInfo, {
-			left = "Name",
-			right = "Missing",
+			left = L.OBJECT_DEBUGGER_NAME,
+			right = L.OBJECT_DEBUGGER_MISSING,
 			r = 1, g = 1, b = 1,
 			r2 = 1, g2 = 0.4, b2 = 0.4,
 		});
@@ -93,8 +94,8 @@ local function OnTooltipForObject(t, tooltipInfo)
 		if icon then
 			if invalidTextures[icon] then
 				tinsert(tooltipInfo, {
-					left = "Icon",
-					right = "Invalid",
+					left = L.OBJECT_DEBUGGER_ICON,
+					right = L.OBJECT_DEBUGGER_INVALID,
 					r = 1, g = 1, b = 1,
 					r2 = 1, g2 = 0.4, b2 = 0.4,
 				});
@@ -105,15 +106,15 @@ local function OnTooltipForObject(t, tooltipInfo)
 				});
 			else
 				tinsert(tooltipInfo, {
-					left = "Icon",
+					left = L.OBJECT_DEBUGGER_ICON,
 					right = icon,
 					r = 1, g = 1, b = 1,
 				});
 			end
 		else
 			tinsert(tooltipInfo, {
-				left = "Icon",
-				right = "Missing",
+				left = L.OBJECT_DEBUGGER_ICON,
+				right = L.OBJECT_DEBUGGER_MISSING,
 				r = 1, g = 1, b = 1,
 				r2 = 1, g2 = 0.4, b2 = 0.4,
 			});
@@ -125,8 +126,8 @@ local function OnTooltipForObject(t, tooltipInfo)
 		if model then
 			if invalidModels[model] then
 				tinsert(tooltipInfo, {
-					left = "Model",
-					right = "Invalid",
+					left = L.OBJECT_DEBUGGER_MODEL,
+					right = L.OBJECT_DEBUGGER_INVALID,
 					r = 1, g = 1, b = 1,
 					r2 = 1, g2 = 0.4, b2 = 0.4,
 				});
@@ -137,15 +138,15 @@ local function OnTooltipForObject(t, tooltipInfo)
 				});
 			else
 				tinsert(tooltipInfo, {
-					left = "Model",
+					left = L.OBJECT_DEBUGGER_MODEL,
 					right = model,
 					r = 1, g = 1, b = 1,
 				});
 			end
 		else
 			tinsert(tooltipInfo, {
-				left = "Model",
-				right = "Missing",
+				left = L.OBJECT_DEBUGGER_MODEL,
+				right = L.OBJECT_DEBUGGER_MISSING,
 				r = 1, g = 1, b = 1,
 				r2 = 1, g2 = 0.4, b2 = 0.4,
 			});
@@ -158,9 +159,9 @@ app:CreateWindow("Objects", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },
 	OnLoad = function(self, settings)
-		self:SetData(app.CreateRawText("Object Debugger", {
+		self:SetData(app.CreateRawText(L.OBJECT_DEBUGGER, {
 			icon = app.asset("WindowIcon_RaidAssistant"),
-			description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.",
+			description = L.OBJECT_DEBUGGER_DESC,
 			back = 1,
 			indent = 0,
 			visible = true,
@@ -169,9 +170,9 @@ app:CreateWindow("Objects", {
 			OnUpdate = function(data)
 				local g = data.g;
 				if #g < 1 then
-					tinsert(g, app.CreateRawText("Check Icons", {
+					tinsert(g, app.CreateRawText(L.OBJECT_DEBUGGER_CHECK_ICONS, {
 						icon = 135468,
-						description = "Click this row to toggle icon checking",
+						description = L.OBJECT_DEBUGGER_CHECK_ICONS_DESC,
 						collectible = true,
 						visible = true,
 						priority = 6,
@@ -187,9 +188,9 @@ app:CreateWindow("Objects", {
 							return true;
 						end,
 					}));
-					tinsert(g, app.CreateRawText("Check Models", {
+					tinsert(g, app.CreateRawText(L.OBJECT_DEBUGGER_CHECK_MODELS, {
 						icon = 135468,
-						description = "Click this row to toggle model checking",
+						description = L.OBJECT_DEBUGGER_CHECK_MODELS_DESC,
 						collectible = true,
 						visible = true,
 						priority = 6,

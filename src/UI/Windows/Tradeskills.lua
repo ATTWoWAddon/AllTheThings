@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 if app.IsRetail then return; end
 
 -- Global locals
@@ -100,9 +101,9 @@ app:CreateWindow("Tradeskills", {
 		self:SetClampedToScreen(false);
 		self.wait = 5;
 		self.cache = {};
-		self.header = app.CreateRawText("Profession List", {
+		self.header = app.CreateRawText(L.PROFESSION_LIST, {
 			['icon'] = 134940,
-			["description"] = "Open your professions to cache them.",
+			["description"] = L.PROFESSION_LIST_DESC,
 			['visible'] = true,
 			['expanded'] = true,
 			["indent"] = 0,

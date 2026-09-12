@@ -106,11 +106,11 @@ app:CreateWindow("Item Filter", {
 				end,
 				OnUpdate = function(data)
 					if SearchSetup.field == "f" and SearchSetup.value then
-						data.text = "Filter: " .. (L.FILTER_ID_TYPES[SearchSetup.value] or "???") .. " (" .. SearchSetup.value .. ")";
+						data.text = L.ITEM_FILTER_TITLE:format((L.FILTER_ID_TYPES[SearchSetup.value] or "???") .. " (" .. SearchSetup.value .. ")");
 					elseif SearchSetup.field and SearchSetup.value then
-						data.text = "Filter: "..SearchSetup.field.."="..tostring(SearchSetup.value)
+						data.text = L.ITEM_FILTER_TITLE:format(SearchSetup.field.."="..tostring(SearchSetup.value))
 					else
-						data.text = "Click to change the filter";
+						data.text = L.ITEM_FILTER_CLICK_TO_CHANGE;
 					end
 					return true;
 				end,

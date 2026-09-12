@@ -73,17 +73,17 @@ local lootMethodIDs = {
 };
 if GetLootMethod and SetLootMethod then
 	local lootMethods = {
-		personalloot = "Personal Loot",
-		group = "Group Loot",
-		master = "Master Loot",
-		freeforall = "Free for All",
-		needbeforegreed = "Need Before Greed",
-		roundrobin = "Round Robin",
+		personalloot = L.RAID_ASSISTANT_LOOT_METHOD_PERSONAL,
+		group = L.RAID_ASSISTANT_LOOT_METHOD_GROUP,
+		master = L.RAID_ASSISTANT_LOOT_METHOD_MASTER,
+		freeforall = L.RAID_ASSISTANT_LOOT_METHOD_FREE_FOR_ALL,
+		needbeforegreed = L.RAID_ASSISTANT_LOOT_METHOD_NEED_BEFORE_GREED,
+		roundrobin = L.RAID_ASSISTANT_LOOT_METHOD_ROUND_ROBIN,
 	};
 	local lootMethodLore = {
-		personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.",
-		group = "Group loot, round-robin for normal items, rolling for special ones.",
-		master = "Master looter, designated player distributes loot.",
+		personalloot = L.RAID_ASSISTANT_LOOT_LORE_PERSONAL,
+		group = L.RAID_ASSISTANT_LOOT_LORE_GROUP,
+		master = L.RAID_ASSISTANT_LOOT_LORE_MASTER,
 	};
 	if UnitLootMethod then
 		for key,value in pairs(UnitLootMethod) do
@@ -429,9 +429,9 @@ app:CreateWindow("RaidAssistant", {
 
 		-- If Loot Threshold exists, we have the ability to change the minimum acceptable loot quality for /roll'd items.
 		if app.CreateLootThreshold then
-			local lootthreshold = app.CreateRawText("Loot Threshold", {
+			local lootthreshold = app.CreateRawText(L.RAID_ASSISTANT_LOOT_THRESHOLD, {
 				icon = 133784,
-				description = "Select a new loot threshold.",
+				description = L.RAID_ASSISTANT_LOOT_THRESHOLD_DESC,
 				expanded = true,
 				maximum = 5,
 				minimum = app.GameBuildVersion > 11403 and 2 or 0,
@@ -483,7 +483,7 @@ app:CreateWindow("RaidAssistant", {
 			-- Allow the user to change the Loot Method
 			local lootmethod = app.CreateRawText(LOOT_METHOD, {
 				icon = 133784,
-				description = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
+				description = L.RAID_ASSISTANT_LOOT_SETTINGS_DESC,
 				expanded = true,
 				back = 1,
 				g = {},
@@ -527,7 +527,7 @@ app:CreateWindow("RaidAssistant", {
 			-- Allow the user to select a Loot Master
 			local lootmasters = app.CreateRawText(MASTER_LOOTER, {
 				icon = 133784,
-				description = "This setting allows you to select a new Master Looter.",
+				description = L.RAID_ASSISTANT_MASTER_LOOTER_DESC,
 				expanded = true,
 				members = {},
 				back = 1,
@@ -575,7 +575,7 @@ app:CreateWindow("RaidAssistant", {
 			tinsert(options, app.CreateUnit("player", {
 				title = MASTER_LOOTER,
 				priority = 2,
-				description = "This player is currently the Master Looter.",
+				description = L.RAID_ASSISTANT_CURRENT_MASTER_LOOTER_DESC,
 				OnClick = function(row, button)
 					if IsRaidLeader() then
 						self:SetData(lootmasters);
@@ -745,9 +745,9 @@ app:CreateWindow("RaidAssistant", {
 		end
 
 		if app.GameBuildVersion < 30000 then
-			tinsert(options, app.CreateRawText("Create a Group", {
+			tinsert(options, app.CreateRawText(L.RAID_ASSISTANT_CREATE_GROUP, {
 				icon = 132331,
-				description = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
+				description = L.RAID_ASSISTANT_CREATE_GROUP_DESC,
 				priority = 20,
 				OnClick = function(row, button)
 					InviteUnit(InviteCharacterName);
@@ -759,9 +759,9 @@ app:CreateWindow("RaidAssistant", {
 					return true;
 				end,
 			}));
-			tinsert(options, app.CreateRawText("Create a Raid", {
+			tinsert(options, app.CreateRawText(L.RAID_ASSISTANT_CREATE_RAID, {
 				icon = 132331,
-				description = "Click here to attempt to create a raid group.\n\nNOTE: This will invite a fake character and you can use this to force enter a raid without actually needing to be in a raid group. You need to run into the instance the moment you see 'Party converted to Raid'. It may take a couple of attempts.",
+				description = L.RAID_ASSISTANT_CREATE_RAID_DESC,
 				priority = 20,
 				OnClick = function(row, button)
 					InviteUnit(InviteCharacterName);
@@ -807,9 +807,9 @@ app:CreateWindow("RaidAssistant", {
 				end,
 			}));
 		end
-		tinsert(options, app.CreateRawText("Port to Graveyard", {
+		tinsert(options, app.CreateRawText(L.RAID_ASSISTANT_PORT_TO_GRAVEYARD, {
 			icon = 132331,
-			description = "Click here to create a group and then immediately leave it. This will port you to the nearest graveyard after 1 minute.",
+			description = L.RAID_ASSISTANT_GROUP_LEAVE_DESC,
 			priority = 25,
 			OnClick = function(row, button)
 				if IsInGroup() then

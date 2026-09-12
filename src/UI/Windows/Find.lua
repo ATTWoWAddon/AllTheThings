@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 if app.IsRetail then return; end
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
@@ -184,9 +185,9 @@ app:CreateWindow("ItemFinder", {
 			});
 			local ClearButton =
 			{
-				text = "Clear Harvested Item Database",
+				text = L.ITEM_FINDER_CLEAR_DB,
 				icon = 133733,
-				description = "Click this to clear the harvested item database.",
+				description = L.ITEM_FINDER_CLEAR_DB_DESC,
 				SortPriority = 1.3,
 				OnClick = function()
 					self.HarvestedItemDatabase = {};
@@ -198,9 +199,9 @@ app:CreateWindow("ItemFinder", {
 			};
 			local StartButton =
 			{
-				text = "Start Search",
+				text = L.ITEM_FINDER_START,
 				icon = 133733,
-				description = "Click this to start the search.",
+				description = L.ITEM_FINDER_START_DESC,
 				SortPriority = 1.3,
 				OnClick = function()
 					local data = self.data;
@@ -242,9 +243,9 @@ app:CreateWindow("ItemFinder", {
 					return true;
 				end,
 			};
-			self:SetData(app.CreateRawText("Item Finder", {
+			self:SetData(app.CreateRawText(L.ITEM_FINDER, {
 				icon = app.asset("WindowIcon_RaidAssistant"),
-				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
+				description = L.FINDER_DEBUG_TOOL_DESC,
 				visible = true,
 				expanded = true,
 				progress = 0,
@@ -326,9 +327,9 @@ app:CreateWindow("QuestFinder", {
 			function(t)
 				return #SearchForField("questID", t.questID) == 0;
 			end);
-			self:SetData(app.CreateRawText("Quest Finder", {
+			self:SetData(app.CreateRawText(L.QUEST_FINDER, {
 				icon = app.asset("WindowIcon_RaidAssistant"),
-				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
+				description = L.FINDER_DEBUG_TOOL_DESC,
 				visible = true,
 				expanded = true,
 				progress = 0,
@@ -404,9 +405,9 @@ app:CreateWindow("SpellFinder", {
 			function(t)
 				return #SearchForField("spellID", t.spellID) == 0;
 			end);
-			self:SetData(app.CreateRawText("Spell Finder", {
+			self:SetData(app.CreateRawText(L.SPELL_FINDER, {
 				icon = app.asset("WindowIcon_RaidAssistant"),
-				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
+				description = L.FINDER_DEBUG_TOOL_DESC,
 				visible = true,
 				expanded = true,
 				progress = 0,

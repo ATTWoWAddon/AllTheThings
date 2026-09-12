@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Private Variables
 local Flat;
@@ -36,10 +37,10 @@ app:CreateWindow("Mounts", {
 		settings.Flat = Flat;
 	end,
 	OnInit = function(self, handlers)
-		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "spellID", "No mounts found.", "Mount", "MountWithItem");
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "spellID", L.MOUNTS_NO_RESULTS, "Mount", "MountWithItem");
 		self:SetData(app.CreateRawText(MOUNTS, {
 			icon = app.asset("Category_Mounts"),
-			description = "This list shows you all of the mounts that you can collect.",
+			description = L.MOUNTS_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

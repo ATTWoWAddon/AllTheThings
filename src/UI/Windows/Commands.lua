@@ -50,9 +50,9 @@ app:CreateWindow("Commands", {
 			return rows
 		end
 
-		self:SetData(app.CreateRawText("Commands", {
+		self:SetData(app.CreateRawText(L.COMMANDS, {
 			icon = app.asset("logo_32x32"),
-			description = "List of all available ATT commands.",
+			description = L.COMMANDS_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = BuildCommandList(),

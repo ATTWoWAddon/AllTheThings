@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local contains = app.contains
 
 -- Global locals
@@ -102,7 +103,7 @@ local function UpdateMissingAchievements(self)
 						local achievement = (isGuildAch and app.CreateGuildAchievement or app.CreateAchievement)(achievementID);
 						self.data.achievements[i] = achievement;
 						achievement.parent = getAchievementCategory(self.data.categories, -1);-- achievement.parentCategoryID);
-						achievement.description = "@CRIEVE: This achievement has not been sourced yet.";
+						achievement.description = L.ACHIEVEMENTS_NO_SOURCE;
 						if not achievement.u or achievement.u ~= 1 then
 							tinsert(achievement.parent.g, achievement);
 						end
@@ -137,7 +138,7 @@ app:CreateWindow("Achievements", {
 	Commands = { "attachievements", "attach" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
-			description = "This list shows you all of the achievements that you can collect.",
+			description = L.ACHIEVEMENTS_TOOLTIP,
 			IgnoreBuildRequests = true,
 			visible = true,
 			expanded = true,
@@ -145,8 +146,8 @@ app:CreateWindow("Achievements", {
 			g = {},
 			achievements = {},
 			categories = {},
-			CheckForMissingButton = app.CreateRawText("Check for Missing Achievements", {
-				description = "Click this button to check for missing achievements.\n\nWARNING: This is going to be REALLY SLOW!!",
+			CheckForMissingButton = app.CreateRawText(L.ACHIEVEMENTS_CHECK_MISSING, {
+				description = L.ACHIEVEMENTS_MISSING_DESC,
 				icon = 132089,
 				OnClick = function(row, button)
 					-- Only run this once per session.
@@ -242,7 +243,7 @@ app:CreateWindow("Achievements", {
 			end
 		}));
 		if not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
-			self.data.description = "This section isn't a thing until Wrath, but by popular demand and my own insanity, I've added this section so you can track your progress for at least one of the big ticket achievements if you have the stomach for it.";
+			self.data.description = L.ACHIEVEMENTS_WRATH_SECTION_DESC;
 		end
 	end,
 });

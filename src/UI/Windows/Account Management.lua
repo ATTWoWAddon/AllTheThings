@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
@@ -604,7 +605,7 @@ local function DeserializeSequentialKeys(str)
 			a = tonumber(a);
 			b = tonumber(b);
 			if (b - a) > 100000 then
-				app:ShowPopupDialogWithMultiLineEditBox("Rather than explode your RAM, Crieve decided instead to have you report this string of data to him for a fix.\n\nApologies for the inconvenience.\n\n" .. str, nil, "A parsing error occured during the sync process.");
+				app:ShowPopupDialogWithMultiLineEditBox(L.ACCOUNT_MANAGEMENT_PARSE_ERROR_POPUP:format(str), nil, L.ACCOUNT_MANAGEMENT_PARSE_ERROR_TITLE);
 				break;
 			end
 			for j=a,b,1 do
@@ -661,7 +662,7 @@ local function SerializeSequentialKeys(keys)
 	return str;
 end
 local function ShowSerializationDebugger()
-	app:ShowPopupDialogWithMultiLineEditBox("Serialization Debugger", function(text)
+	app:ShowPopupDialogWithMultiLineEditBox(L.ACCOUNT_MANAGEMENT_SERIALIZATION_DEBUGGER_TITLE, function(text)
 		text = text:gsub("    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
 		DevTools_Dump(DeserializeSequentialKeys(text));
 	end);
@@ -1720,10 +1721,10 @@ local function SortByCharacterLevel(a,b)
   return (a.lvl or 0) > (b.lvl or 0);
 end
 local function MergeCharacterData(character, row)
-	local message = "MERGE CHARACTER DATA:" .. "\n" .. (character.text or character.name or RETRIEVING_DATA) .. ",";
+	local message = L.ACCOUNT_MANAGEMENT_MERGE_HEADER:format(character.text or character.name or RETRIEVING_DATA);
 	if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
 	if character.race then message = message .. " " .. character.race; end
-	message = message .. "\n \nThe following fields will be merged:\n ";
+	message = message .. L.ACCOUNT_MANAGEMENT_MERGE_FIELDS_HEADER;
 	local fields = {};
 	for i,field in ipairs(eligibleFields) do
 		local cv = CurrentCharacter[field] or {};
@@ -1743,8 +1744,8 @@ local function MergeCharacterData(character, row)
 		end
 	end
 	local deaths = character.Deaths or 0;
-	if deaths > 0 then message = message .. "\n Deaths: " .. deaths; end
-	app:ShowPopupDialog(message .. "\n \nAre you sure you want to merge this?",
+	if deaths > 0 then message = message .. L.ACCOUNT_MANAGEMENT_MERGE_DEATHS:format(deaths); end
+	app:ShowPopupDialog(message .. L.ACCOUNT_MANAGEMENT_MERGE_CONFIRM,
 	function()
 		for _,tableName in ipairs(fields) do
 			local copyTable = character[tableName];
@@ -1770,7 +1771,7 @@ local function MergeCharacterData(character, row)
 		row:GetParent():GetParent():Rebuild();
 		app.print("Merged " .. character.text .. " into " .. CurrentCharacter.text);
 		C_Timer.After(0.01, function()
-			app:ShowPopupDialog("Would you also like to delete the old character data?\n\nNOTE: Any cached quest IDs that you have only completed on " .. character.text .. " will be lost. You have been warned.",
+			app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_OLD_DATA_CONFIRM:format(character.text),
 			function()
 				CharacterData[character.guid] = nil;
 				RecalculateAccountWideData(true);
@@ -1818,7 +1819,7 @@ local function MergeTransferredCharacterData(row)
 	end
 	if #eligibleCharacters > 1 then
 		tsort(eligibleCharacters, SortByCharacterLevel);
-		local message = "Please type the index of the character data you'd like to merge into your current character:\n ";
+		local message = L.ACCOUNT_MANAGEMENT_MERGE_INDEX_POPUP;
 		for i,character in ipairs(eligibleCharacters) do
 			message = message .. "\n" .. i .. ": " .. (character.text or character.name) .. ",";
 			if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
@@ -1887,7 +1888,7 @@ local function OnClickForCharacter(row, button)
 			character.ignored = not character.ignored;
 			row:GetParent():GetParent():Rebuild();
 		else
-			app:ShowPopupDialog("CHARACTER DATA: " .. (character.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+			app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_CHARACTER_POPUP:format(character.text or RETRIEVING_DATA),
 			function()
 				CharacterData[guid] = nil;
 				RecalculateAccountWideData(true);
@@ -1911,7 +1912,7 @@ local function OnClickForLinkedAccount(row, button)
 	end
 
 	if button == "RightButton" then
-		app:ShowPopupDialog("LINKED ACCOUNT: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+		app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_LINKED_POPUP:format(row.ref.text or RETRIEVING_DATA),
 		function()
 			LinkedCharacters[identifier] = nil;
 			row:GetParent():GetParent():Rebuild();
@@ -1944,7 +1945,7 @@ local function OnClickForSyncQueue(row, button)
 	if not identifier then return true; end
 
 	if button == "RightButton" then
-		app:ShowPopupDialog("SYNC QUEUE: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+		app:ShowPopupDialog(L.ACCOUNT_MANAGEMENT_DELETE_SYNC_QUEUE_POPUP:format(row.ref.text or RETRIEVING_DATA),
 		function()
 			pendingReceiveChunksForUser[identifier] = nil;
 			pendingSendChunksForUser[identifier] = nil;
@@ -2042,30 +2043,30 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 			r = 1, g = 0.8, b = 0.8
 		});
 		tinsert(tooltipInfo, {
-			left = "Left Click to Sync this Character",
+			left = L.ACCOUNT_MANAGEMENT_SYNC_CHARACTER_HINT,
 			r = 0.8, g = 1, b = 0.8
 		});
 		tinsert(tooltipInfo, {
-			left = "Right Click to Delete this Character",
+			left = L.DELETE_CHARACTER,
 			r = 1, g = 0.8, b = 0.8
 		});
 		tinsert(tooltipInfo, {
-			left = "Shift-Left Click to Open Character Unique Data Window.",
+			left = L.ACCOUNT_MANAGEMENT_UNIQUE_DATA_HINT,
 			r = 1, g = 0.8, b = 0.8
 		});
 		if character.ignored then
 			tinsert(tooltipInfo, {
-				left = "Alt-Right Click to Unignore this Character",
+				left = L.ACCOUNT_MANAGEMENT_UNIGNORE_CHARACTER_HINT,
 				r = 1, g = 0.8, b = 0.8
 			});
 			tinsert(tooltipInfo, { left = " " });
 			tinsert(tooltipInfo, {
-				left = "Ignored Characters will not appear in the tooltip when using 'Show Other Characters' nor will they be sync'd with your other accounts. Characters from other accounts that are ignored on your current account will still receive updates from your other accounts.",
+				left = L.ACCOUNT_MANAGEMENT_IGNORED_DESC,
 				r = 1, g = 1, b = 1, wrap = true
 			});
 		else
 			tinsert(tooltipInfo, {
-				left = "Alt-Right Click to Ignore this Character",
+				left = L.ACCOUNT_MANAGEMENT_IGNORE_CHARACTER_HINT,
 				r = 1, g = 0.8, b = 0.8
 			});
 		end
@@ -2089,17 +2090,17 @@ local function OnTooltipForCharacterHeader(t, tooltipInfo)
 	end
 	tinsert(tooltipInfo, { left = " " });
 	tinsert(tooltipInfo, {
-		left = "Total Time Played (Account)",
+		left = L.ACCOUNT_MANAGEMENT_TOTAL_TIME_PLAYED,
 		right = GetTimePlayedString(AccountTotalTimePlayed)
 	});
-	tinsert(tooltipInfo, { left = "By Class:" });
+	tinsert(tooltipInfo, { left = L.ACCOUNT_MANAGEMENT_BY_CLASS });
 	for class,total in pairs(ByClass) do
 		tinsert(tooltipInfo, {
 			left = "  " .. app.CreateCharacterClass(class).text,
 			right = GetTimePlayedString(total)
 		});
 	end
-	tinsert(tooltipInfo, { left = "By Race:" });
+	tinsert(tooltipInfo, { left = L.ACCOUNT_MANAGEMENT_BY_RACE });
 	for race,total in pairs(ByRace) do
 		tinsert(tooltipInfo, {
 			left = "  " .. app.CreateRace(race).text,
@@ -2110,20 +2111,20 @@ end
 local function OnTooltipForLinkedAccount(t, tooltipInfo)
 	if t.unit then
 		tinsert(tooltipInfo, {
-			left = "Linked as",
+			left = L.ACCOUNT_MANAGEMENT_LINKED_AS,
 			right = t.datalink,
 		});
 		tinsert(tooltipInfo, {
-			left = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.",
+			left = L.LINKED_ACCOUNT_TOOLTIP,
 			r = 0.8, g = 0.8, b = 1, wrap = true
 		});
 		tinsert(tooltipInfo, {
-			left = "Right Click to Delete this Linked Character",
+			left = L.DELETE_LINKED_CHARACTER,
 			r = 1, g = 0.8, b = 0.8
 		});
 	else
 		tinsert(tooltipInfo, {
-			left = "Right Click to Delete this Linked Account",
+			left = L.DELETE_LINKED_ACCOUNT,
 			r = 1, g = 0.8, b = 0.8
 		});
 	end
@@ -2137,7 +2138,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	if receiving then
 		tinsert(tooltipInfo, { left = " " });
 		tinsert(tooltipInfo, {
-			left = "Receiving: ",
+			left = L.ACCOUNT_MANAGEMENT_RECEIVING,
 			r = 0.8, g = 0.8, b = 1
 		});
 		for uid,data in pairs(receiving) do
@@ -2147,7 +2148,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = "  " .. uid,
-				right = count .. " / " .. data.count .. " Chunks",
+				right = L.ACCOUNT_MANAGEMENT_CHUNK_PROGRESS:format(count, data.count),
 				r = 0.8, g = 0.8, b = 0.8
 			});
 		end
@@ -2158,7 +2159,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	if sending then
 		tinsert(tooltipInfo, { left = " " });
 		tinsert(tooltipInfo, {
-			left = "Sending: ",
+			left = L.ACCOUNT_MANAGEMENT_SENDING,
 			r = 0.8, g = 0.8, b = 1
 		});
 		for uid,data in pairs(sending) do
@@ -2168,14 +2169,14 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 			end
 			tinsert(tooltipInfo, {
 				left = "  " .. uid .. ": " .. data.detail,
-				right = count .. " / " .. tostring(#data.chunks) .. " Chunks",
+				right = L.ACCOUNT_MANAGEMENT_CHUNK_PROGRESS:format(count, #data.chunks),
 				r = 0.8, g = 0.8, b = 0.8
 			});
 		end
 	end
 
 	tinsert(tooltipInfo, {
-		left = "Right Click to Delete this Sync Target",
+		left = L.ACCOUNT_MANAGEMENT_DELETE_SYNC_TARGET_HINT,
 		r = 1, g = 0.8, b = 0.8
 	});
 end
@@ -2232,18 +2233,18 @@ app:CreateWindow("Account Management", {
 
 		local options = {
 			app.CreateToggle("debugOutput", {
-				name = "Show Debug Output",
+				name = L.ACCOUNT_MANAGEMENT_DEBUG_OUTPUT,
 				icon = 236206,
-				description = "ONLY toggle this when needing to enable spammy Debug output for troubleshooting purposes.",
+				description = L.ACCOUNT_MANAGEMENT_DEBUG_OUTPUT_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClickHandler = OnDebugOutputToggled,
 			}),
-			app.CreateRawText("Add Linked Character", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_ADD_LINKED, {
 				icon = app.asset("Button_Add"),
-				description = "Click here to link a character to your account.\n\nOnce Linked, click on the Linked Character in the list below to initiate a sync with that character.\n\nNOTE: Your character must be on the same faction (and server when not using Battle.net sync) as your current character to sync.",
+				description = L.ACCOUNT_MANAGEMENT_ADD_LINKED_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
-					app:ShowPopupDialogWithEditBox("Please type the name of the character to link to. You can use Name or Name-Realm as the format. This is case-sensitive!", "", function(cmd)
+					app:ShowPopupDialogWithEditBox(L.ACCOUNT_MANAGEMENT_LINK_CHARACTER_POPUP, "", function(cmd)
 						if cmd and cmd ~= "" then
 							local fullIdentifier, shortIdentifier = NormalizeLinkedCharacterIdentifier(cmd);
 							cmd = fullIdentifier or shortIdentifier;
@@ -2257,27 +2258,27 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Merge Transferred Character Data", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_MERGE_CHARACTER, {
 				icon = 132996,
-				description = "Click here to initiate a process to merge old data from your current character's old server. This will merge most of the larger cached tables. (Spells, Quests, Flight Paths, Exploration, etc)",
+				description = L.ACCOUNT_MANAGEMENT_MERGE_CHARACTER_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
 					MergeTransferredCharacterData(row);
 					return true;
 				end,
 			}),
-			app.CreateRawText("Recalculate Account Wide Data", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_RECALCULATE, {
 				icon = 132996,
-				description = "Click here to force ATT to recalculate its account wide statistical data. This happens automatically after a sync or refresh, but if there's ever a situation where ATT sees that a different character has done a thing, but your current character hasn't and isn't giving you partial credit, you can click this to manually initiate that recalculation.",
+				description = L.ACCOUNT_MANAGEMENT_RECALCULATE_DESC,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function(row, button)
 					RecalculateAccountWideData(true);
 					return true;
 				end,
 			}),
-			app.CreateRawText("Sync All Characters", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_SYNC_ALL, {
 				icon = app.asset("Button_Sync"),
-				description = "Click here to sync all of your characters.\n\nAlt+Click to toggle automatically syncing characters with your other accounts.\n\nYou must initially have the character stored on this account by Linking a Character and manually initiating a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be able to send whispers to other Linked characters (when not using Battle.net sync) to sync properly.",
+				description = L.ACCOUNT_MANAGEMENT_SYNC_ALL_DESC,
 				OnUpdate = function(t)
 					t.saved = self.Settings.AutoSync;
 					return app.AlwaysShowUpdate(t);
@@ -2293,9 +2294,9 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Enable Battle.net", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_BATTLE_NET, {
 				icon = 526421,
-				description = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
+				description = L.ACCOUNT_MANAGEMENT_BATTLE_NET_DESC,
 				OnUpdate = BNGetInfo and function(t)
 					t.saved = EnableBattleNet;
 					return app.AlwaysShowUpdate(t);
@@ -2307,9 +2308,9 @@ app:CreateWindow("Account Management", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Characters", {
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_CHARACTERS, {
 				icon = 526421,
-				description = "This shows all of the characters on your account.",
+				description = L.SYNC_CHARACTERS_TOOLTIP,
 				expanded = true,
 				characters = {},
 				g = {},
@@ -2340,7 +2341,7 @@ app:CreateWindow("Account Management", {
 					end
 
 					if #g < 1 then
-						tinsert(g, app.CreateRawText("No characters found.", {
+						tinsert(g, app.CreateRawText(L.NO_CHARACTERS_FOUND, {
 							OnUpdate = app.AlwaysShowUpdate,
 							icon = 526421,
 							parent = data,
@@ -2351,9 +2352,9 @@ app:CreateWindow("Account Management", {
 					return app.AlwaysShowUpdate(data);
 				end,
 			}),
-			app.CreateRawText("Linked Characters", {	-- Linked Characters
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_LINKED_CHARACTERS, {	-- Linked Characters
 				icon = 526421,
-				description = "This shows all of the linked characters you have defined so far.\n\nClick on a Linked Character in the list below to initiate a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be able to send whispers to other Linked characters (when not using Battle.net sync) to sync properly.",
+				description = L.ACCOUNT_MANAGEMENT_LINKED_CHARACTERS_DESC,
 				expanded = true,
 				g = {},
 				OnUpdate = function(data)
@@ -2389,7 +2390,7 @@ app:CreateWindow("Account Management", {
 					end
 
 					if #g < 1 then
-						tinsert(g, app.CreateRawText("No linked accounts found.", {
+						tinsert(g, app.CreateRawText(L.NO_LINKED_ACCOUNTS, {
 							OnUpdate = app.AlwaysShowUpdate,
 							icon = 526421,
 							parent = data,
@@ -2398,9 +2399,9 @@ app:CreateWindow("Account Management", {
 					return app.AlwaysShowUpdate(data);
 				end,
 			}),
-			app.CreateRawText("Pending Sync Queue", {	-- Pending Sync Queue
+			app.CreateRawText(L.ACCOUNT_MANAGEMENT_SYNC_QUEUE, {	-- Pending Sync Queue
 				icon = 236681,
-				description = "This shows the contents of the sync queue.",
+				description = L.ACCOUNT_MANAGEMENT_SYNC_QUEUE_DESC,
 				expanded = true,
 				g = {},
 				OnUpdate = function(data)
@@ -2428,9 +2429,9 @@ app:CreateWindow("Account Management", {
 				end,
 			}),
 		};
-		self:SetData(app.CreateRawText("Account Management", {
+		self:SetData(app.CreateRawText(L.ACCOUNT_MANAGEMENT, {
 			icon = app.asset("WindowIcon_AccountManagement"),
-			description = "This list shows you all of the functionality related to managing your account data.",
+			description = L.ACCOUNT_MANAGEMENT_WINDOW_TOOLTIP,
 			visible = true,
 			expanded = true,
 			indent = 0,
@@ -2626,9 +2627,9 @@ app:CreateWindow("Character Unique Data", {
 		end
 
 		-- Initialize the window data object
-		self:SetData(app.CreateRawText("Character Unique Data", {
+		self:SetData(app.CreateRawText(L.CHARACTER_UNIQUE_DATA, {
 			icon = 134400,
-			description = "Unique Data for this character only. Do not remove this character if you don't want to lose these things.",
+			description = L.CHARACTER_UNIQUE_DATA_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

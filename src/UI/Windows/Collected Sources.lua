@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 if C_TransmogCollection then
@@ -22,9 +23,9 @@ end
 app:CreateWindow("Collected Sources", {
 	Commands = { "attcollectedsources" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Collected Sources", {
+		self:SetData(app.CreateRawText(L.COLLECTED_SOURCES, {
 			icon = 134941,
-			description = "This window shows you all of the collected sources (according to Blizzard) tracked by ATT. Go get 'em!",
+			description = L.COLLECTED_SOURCES_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,

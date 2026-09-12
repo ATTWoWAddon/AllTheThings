@@ -129,7 +129,7 @@ app:CreateWindow("Import", {
 			{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 			{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
 			{ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
-			{ id = "explorationID", name = "Exploration", icon = app.asset("Category_Exploration") },
+			{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },
 			{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 			{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
 			{ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
@@ -152,7 +152,7 @@ app:CreateWindow("Import", {
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function()
 					app:ShowPopupDialogWithEditBox(
-						"Paste " .. label .. " IDs or Global Reference [ATTC.CurrentCharacter.Quests] etc.",
+						L.IMPORT_PASTE_HINT:format(label),
 						"",
 						function(input)
 							if not input or input:match("^%s*$") then
@@ -186,7 +186,7 @@ app:CreateWindow("Import", {
 			end
 			wipe(self.data.g)
 
-			local resetButton = app.CreateRawText("Reset Import", {
+			local resetButton = app.CreateRawText(L.IMPORT_RESET, {
 				icon = app.asset("unknown"),
 				visible = true,
 				isButton = true,
@@ -202,9 +202,9 @@ app:CreateWindow("Import", {
 			self:Rebuild()
 		end
 
-		self:SetData(app.CreateRawText("Import", {
+		self:SetData(app.CreateRawText(L.IMPORT, {
 			icon = app.asset("logo_32x32"),
-			description = "Import objects using their IDs, separated by commas.",
+			description = L.IMPORT_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {}

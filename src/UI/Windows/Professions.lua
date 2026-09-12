@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local ipairs, pairs, floor, tinsert
@@ -40,7 +41,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 				end
 			end
 			self:SetData(app.CreateProfession(professionID, {
-				description = "This list shows you all of the recipes you can collect for your profession.",
+				description = L.PROFESSIONS_TOOLTIP,
 				requireSkill = professionID,
 				visible = true,
 				expanded = true,

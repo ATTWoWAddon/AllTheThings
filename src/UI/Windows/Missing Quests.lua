@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 -- This window has a dependency on Questie in Classic.
 if not app.IsClassic then return; end
 local SearchForField = app.SearchForField;
@@ -14,27 +15,27 @@ app:CreateWindow("Missing Quests", {
 	},
 	HideFromSettings = true,
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Missing Quests", {
+		self:SetData(app.CreateRawText(L.MISSING_QUESTS, {
 			icon = app.asset("Interface_Quest"),
-			description = "This window shows you all of the quests that are missing from ATT that exist in Questie or in your Saved Variables.",
+			description = L.MISSING_QUESTS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
 			options = {
-				app.CreateRawText("From ATT", {	-- Missing Quests From ATT Header
+				app.CreateRawText(L.MISSING_QUESTS_FROM_ATT, {	-- Missing Quests From ATT Header
 					icon = app.asset("logo_32x32"),
 					preview = app.asset("Discord_2_128"),
-					description = "The following quests are missing from ATT, but were found in the Questie DB or your Saved Variables!",
+					description = L.MISSING_QUESTS_FROM_ATT_DESC,
 					OnUpdate = app.AlwaysShowUpdate,
 				}),
-				app.CreateRawText("From Questie", {	-- Missing Quests From Questie Header
+				app.CreateRawText(L.MISSING_QUESTS_FROM_QUESTIE, {	-- Missing Quests From Questie Header
 					icon = app.asset("Interface_Quest"),
-					description = "The following quests are missing from Questie, but were found in the ATT DB!",
+					description = L.MISSING_QUESTS_FROM_QUESTIE_DESC,
 					OnUpdate = app.AlwaysShowUpdate,
 				}),
-				app.CreateRawText("From Questie (With ATT Sources)", {	-- Missing Quests From Questie (With ATT Sources) Header
+				app.CreateRawText(L.MISSING_QUESTS_FROM_QUESTIE_SOURCED, {	-- Missing Quests From Questie (With ATT Sources) Header
 					icon = app.asset("Interface_Quest"),
-					description = "The following quests are missing from Questie, but were found in the ATT DB!",
+					description = L.MISSING_QUESTS_FROM_QUESTIE_DESC,
 					OnUpdate = app.AlwaysShowUpdate,
 				}),
 			},
@@ -98,7 +99,7 @@ app:CreateWindow("Missing Quests", {
 				app.Sort(MissingQuestsFromATT, app.SortDefaults.Values);
 				for _,id in ipairs(MissingQuestsFromATT) do
 					local quest = app.CreateQuest(id);
-					local description = "@Crieve: This has not been sourced in ATT yet!";
+					local description = L.MISSING_QUESTS_NOT_SOURCED;
 					local questieData = QuestieDB.GetQuest(id);
 					if questieData then
 						for key,value in pairs(questieData) do
@@ -135,7 +136,7 @@ app:CreateWindow("Missing Quests", {
 							questData[key] = value;
 						end
 					end
-					local description = "ATT Data:";
+					local description = L.MISSING_QUESTS_ATT_DATA;
 					for key,value in pairs(questData) do
 						description = description .. "\n  " .. key .. ": " .. tostring(value);
 					end

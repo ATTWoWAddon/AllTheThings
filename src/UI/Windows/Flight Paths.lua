@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Private Variables
 local Flat;
@@ -36,9 +37,9 @@ app:CreateWindow("Flight Paths", {
 		settings.Flat = Flat;
 	end,
 	OnInit = function(self, handlers)
-		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "flightpathID", "No flight paths found.", "FlightPath");
+		self.SearchAPI.BuildCategorizedAndFlatSearchFunctionsForClassTypes(self, "flightpathID", L.FLIGHT_PATHS_NO_RESULTS, "FlightPath");
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.FLIGHT_PATHS, {
-			description = "This list shows you all of the flight paths that you can collect.",
+			description = L.FLIGHT_PATHS_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

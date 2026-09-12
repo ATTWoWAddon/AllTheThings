@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local containsValue = app.containsValue;
 local tinsert = tinsert;
 
@@ -7,9 +8,9 @@ local tinsert = tinsert;
 app:CreateWindow("Class Specific Things", {
 	Commands = { "attclasses" },
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Class Specific Things", {
+		self:SetData(app.CreateRawText(L.CLASS_SPECIFIC_THINGS, {
 			icon = app.asset("WindowIcon_RWP"),
-			description = "This window shows you all of the class specific things for all classes.",
+			description = L.CLASS_SPECIFIC_THINGS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,

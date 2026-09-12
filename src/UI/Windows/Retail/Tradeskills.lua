@@ -211,7 +211,7 @@ app:CreateWindow("Tradeskills", {
 			return true
 		end, {
 			"Usage : /att harvest-reagents",
-			"Intended for contributor use to harvest Recipe reagent information",
+			L.TRADESKILLS_HARVEST_REAGENTS_DESC,
 		})
 		local function UpdateLocalizedCategories(self, updates)
 			if not updates.Categories then
@@ -330,7 +330,7 @@ app:CreateWindow("Tradeskills", {
 				-- In Debugging, pop a dialog of all found missing recipes
 				if app.Debugging then
 					if #MissingRecipes > 0 then
-						app:ShowPopupDialogWithMultiLineEditBox(app.TableConcat(MissingRecipes, nil, nil, "\n"), nil, "Missing Recipes")
+						app:ShowPopupDialogWithMultiLineEditBox(app.TableConcat(MissingRecipes, nil, nil, "\n"), nil, L.TRADESKILLS_MISSING_RECIPES_TITLE)
 					else
 						app.PrintDebug("No Missing Recipes!")
 					end

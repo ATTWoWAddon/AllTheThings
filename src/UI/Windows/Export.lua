@@ -35,7 +35,7 @@ local ExcludedWindows = {
 	Export = 1,
 	Prime = 1,
 }
-local NoDataGroup = app.CreateRawText("NO DATA")
+local NoDataGroup = app.CreateRawText(L.EXPORT_NO_DATA)
 local ExportWindowData = setmetatable({}, {
 	__index = function(t, window)
 		-- if the window already has data, then cache the reference and return it
@@ -71,12 +71,12 @@ app:CreateWindow("Export", {
 		-- "export",	-- TODO uncomment when fixing how commands are defined
 	},
 	OnInit = function(self, handlers)
-		local data = app.CreateRawText("Export", {
+		local data = app.CreateRawText(L.EXPORT, {
 			-- icon = app.asset("Interface_Vendor"),
-			description = "Allows exporting the data of an active window using a specified Style.",
+			description = L.EXPORT_TOOLTIP,
 			g = {},
 		})
-		local styleGroup = app.CreateRawText("Style", {
+		local styleGroup = app.CreateRawText(L.EXPORT_STYLE, {
 			icon = app.asset("Category_TradingPost"),
 			parent = data,
 			expanded = true,
@@ -97,7 +97,7 @@ app:CreateWindow("Export", {
 		end
 		data.g[#data.g + 1] = styleGroup
 
-		local windowsGroup = app.CreateRawText("Windows", {
+		local windowsGroup = app.CreateRawText(L.EXPORT_WINDOWS, {
 			icon = app.asset("Category_WorldDrops"),
 			parent = data,
 			expanded = true,
