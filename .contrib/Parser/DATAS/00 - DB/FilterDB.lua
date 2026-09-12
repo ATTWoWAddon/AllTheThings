@@ -593,6 +593,7 @@ for filterID,filterData in pairs({
 		constant = "KEYS",
 		text = {
 			en = "Keys",
+			cn = "钥匙",
 		},
 	},
 	[200] = {

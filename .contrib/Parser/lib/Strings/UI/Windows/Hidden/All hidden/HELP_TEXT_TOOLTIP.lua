@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "所有隐藏的ATT内容",
+		cn = "所有隐藏的 ATT 内容",
 		-- TODO: tw = "",
 	},
 })

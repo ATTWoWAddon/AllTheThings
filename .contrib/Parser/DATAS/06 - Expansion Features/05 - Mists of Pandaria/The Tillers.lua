@@ -20,6 +20,7 @@ local HARVESTING = createHeader({
 	},
 	description = {
 		en = "The following goods can be harvested by planting seeds in Tilled Soil at Sunsong Ranch. You will earn Tillers reputation for harvesting crops and a chance to obtain replacement seeds from the crop.\n\nFUN FACT: Priests may cast Levitate on their crops, making them float.",
+		cn = "在日歌农场的土壤里播种，即可收获以下作物。收获作物可获得阡陌客声望，并有机会从作物中获得替换用的种子。\n\n趣闻：牧师可以对作物施放漂浮术，让它们浮起来。",
 	},
 });
 

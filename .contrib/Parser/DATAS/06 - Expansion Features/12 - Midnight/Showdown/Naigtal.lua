@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							--ko = "Manaforge Translocators",
 							--pt = "Manaforge Translocators",
 							--ru = "Manaforge Translocators",
-							--cn = "Manaforge Translocators",
+							cn = "法力熔炉传送器",
 							--tw = "Manaforge Translocators",
 						},
 						description = {
@@ -47,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							-- TODO: ko = "",
 							-- TODO: pt = "",
 							-- TODO: ru = "",
-							-- TODO: cn = "",
+							cn = "法力熔炉传送器是一种传送装置，可让你在奈格塔尔各地瞬间移动。",
 							-- TODO: tw = "",
 						},
 					}), {

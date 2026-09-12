@@ -20,6 +20,7 @@ DAILY_EVENT_ROLL = createHeader({
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
+		cn = "如果此任务旁边有勾选标记，请查看下方以确认你是否有资格使用场景传送门。如果没有，则说明你需要明天再来。",
 	},
 });
 

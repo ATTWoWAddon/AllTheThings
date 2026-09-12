@@ -15,7 +15,7 @@ PREY_MID_S2 = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "至暗之夜狩猎第二季",
 		-- TODO: tw = "",
 	},
 });

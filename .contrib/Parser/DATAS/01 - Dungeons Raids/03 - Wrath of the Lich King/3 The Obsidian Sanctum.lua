@@ -20,6 +20,7 @@ TWILIGHT_ASSIST = createHeader({
 	},
 	description = {
 		en = "Engage Sartharion with at least 1 of the 3 drakes alive and then defeat Sartharion.",
+		cn = "在3条暮光幼龙中至少1条存活的情况下与萨塔里奥交战，然后将其击败。",
 	},
 });
 TWILIGHT_DUO = createHeader({
@@ -40,6 +41,7 @@ TWILIGHT_DUO = createHeader({
 	},
 	description = {
 		en = "Engage Sartharion with at least 2 of the 3 drakes alive and then defeat Sartharion.",
+		cn = "在3条暮光幼龙中至少2条存活的情况下与萨塔里奥交战，然后将其击败。",
 	},
 });
 TWILIGHT_ZONE = createHeader({
@@ -60,6 +62,7 @@ TWILIGHT_ZONE = createHeader({
 	},
 	description = {
 		en = "Engage Sartharion with all 3 drakes alive and then defeat Sartharion.",
+		cn = "在3条暮光幼龙全部存活的情况下与萨塔里奥交战，然后将其击败。",
 	},
 });
 

@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		ru = "Нажмите, чтобы скопировать ссылку на Discord сервер All The Things.\n\nВы можете делиться своим прогрессом или фрустрацией с другими собирателями!\n\nПримечание переводчика: на английском языке.",
 		-- TODO: ko = "",
-		cn = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！",
+		cn = "点击按钮复制 URL 到 All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！",
 		tw = "點擊按鈕複製 URL 到All The Things Discord 伺服器。\n\n可以與其他收藏家分享進步/挫折！",
 	},
 })

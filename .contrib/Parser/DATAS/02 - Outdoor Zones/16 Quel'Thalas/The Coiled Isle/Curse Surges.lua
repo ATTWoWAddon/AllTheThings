@@ -15,11 +15,12 @@ CURSE_SURGES = createHeader({
 		ko = "저주받은 쇄도",
 		pt = "Surtos Malditos",
 		ru = "Проклятых Натисков",
-		cn = "次诅咒狂潮",
-		tw = "波詛咒狂湧"
+		cn = "诅咒狂潮",
+		tw = "詛咒狂湧"
 	},
 	description = {
 		en = "Curse Surges are outdoor events that require players to complete an activity in order to summon a Rare Elite enemy.",
+		cn = "诅咒狂潮是户外事件，玩家需要完成一项活动才能召唤出一名稀有精英敌人。",
 	},
 });
 

@@ -15,6 +15,7 @@ AMANI_ENDEAVOR = createHeader({
 	icon = 7672957,
 	text = {
 		en = "Amani Endeavor",
+		cn = "阿曼尼文化",
 	},
 });
 DRACONIC_ENDEAVOR = createHeader({
@@ -46,6 +47,7 @@ KOBOLD_ENDEAVOR = createHeader({
 	icon = 2061718,
 	text = {
 		en = "Kobold Endeavor",
+		cn = "狗头人文化",
 	},
 });
 MARUUKAI_ENDEAVOR = createHeader({
@@ -53,6 +55,7 @@ MARUUKAI_ENDEAVOR = createHeader({
 	icon = 4578413,
 	text = {
 		en = "Maruukai Endeavor",
+		cn = "马鲁凯文化",
 	},
 });
 MECHAGNOME_ENDEAVOR = createHeader({
@@ -84,6 +87,7 @@ TORTOLLAN_ENDEAVOR = createHeader({
 	icon = 2065576,
 	text = {
 		en = "Tortollan Endeavor",
+		cn = "始祖龟文化",
 	},
 });
 

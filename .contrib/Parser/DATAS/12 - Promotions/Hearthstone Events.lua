@@ -20,6 +20,7 @@ HEARTHSTONE = createHeader({
 	},
 	description = {
 		en = "Win 3 games in Hearthstone to qualify for these rewards.\n\nThe game is free, go get it!\n\nNOTE: You can thank IceQ1337 for this!",
+		cn = "在《炉石传说》中赢得3场比赛即可获得这些奖励的资格。\n\n这款游戏是免费的，快去下载吧！\n\n注意：这要感谢 IceQ1337！",
 	},
 });
 HEARTHSTONE_MERCENARIES_MODE = createHeader({
@@ -40,6 +41,7 @@ HEARTHSTONE_MERCENARIES_MODE = createHeader({
 	},
 	description = {
 		en = "Complete the Mercenaries Mode tutorial in Hearthstone and send your party on a mission in order to receive this reward.",
+		cn = "完成《炉石传说》佣兵战纪模式的教学，并派遣你的队伍执行一次任务，即可获得此奖励。",
 	},
 });
 HEARTHSTONE_10TH_ANNIVERSARY = createHeader({

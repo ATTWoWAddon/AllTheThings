@@ -22,7 +22,7 @@ THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 		en = "These promotions happened during the time The War Within was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
 		es = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe enumeran en el orden de su primera aparición.",
 		mx = "Estas promociones ocurrieron durante el tiempo en que The War Within fue la expansión más reciente.\n\nSe listan en el orden de su primera aparición.",
-		cn = "这些促销活动均发生在《地心之战》作为最新资料片的时期。\n\n以下按活动首次出现的时间顺序列出",
+		cn = "这些促销活动均发生在《地心之战》作为最新资料片的时期。\n\n以下按活动首次出现的时间顺序列出。",
 	},
 });
 STEELSERIES = createHeader({
@@ -45,7 +45,7 @@ STEELSERIES = createHeader({
 		en = "Promotion for SteelSeries World of Warcraft Limited Edition Collection.",
 		es = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
 		mx = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
-		cn = "赛睿《魔兽世界》限量版系列促销活动",
+		cn = "赛睿《魔兽世界》限量版系列促销活动。",
 	},
 });
 RAZER = createHeader({
@@ -68,7 +68,7 @@ RAZER = createHeader({
 		en = "Promotion for Razer Gaming Peripherals World of Warcraft Collection. Purchasing any item will award all three promotional codes.",
 		es = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
 		mx = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
-		cn = "雷蛇《魔兽世界》系列游戏外设促销：购买任意一件，即可获赠全部三个促销兑换码",
+		cn = "雷蛇《魔兽世界》系列游戏外设促销：购买任意一件，即可获赠全部三个促销兑换码。",
 	},
 });
 

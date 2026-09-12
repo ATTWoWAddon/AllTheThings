@@ -20,6 +20,7 @@ ASSAULT_ON_THE_DARK_PORTAL = createHeader({
 	},
 	description = {
 		en = "The Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.",
+		cn = "进攻黑暗之门是塔纳安谷的副本版本，塔纳安谷是塔纳安丛林的子区域，也是《德拉诺之王》开场体验的场景之一。开场完成后，玩家将无法再返回该区域，这与死亡骑士的瘟疫之地：血色领地类似。",
 	},
 });
 

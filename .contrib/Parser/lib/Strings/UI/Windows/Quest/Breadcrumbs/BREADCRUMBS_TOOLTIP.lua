@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "这个窗口显示了ATT跟踪的所有探索任务。去获取它们吧！",
+		cn = "这个窗口显示了 ATT 跟踪的所有探索任务。去获取它们吧！",
 		-- TODO: tw = "",
 	},
 })

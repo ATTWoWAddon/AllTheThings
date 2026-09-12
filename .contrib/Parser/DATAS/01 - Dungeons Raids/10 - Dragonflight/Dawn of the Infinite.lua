@@ -7,6 +7,7 @@ DIVERGENT = createHeader({
 	icon = 4630469,
 	text = {
 		en = "Divergent",
+		cn = "歧路",
 	},
 	description = {
 		en = "Low Drop Chance",

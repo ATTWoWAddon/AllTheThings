@@ -1749,6 +1749,7 @@ root(ROOTS.Zones, {
 						},
 						description = {
 							en = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
+							cn = "购买库库鲁的宝箱钥匙即可开启。有极低几率开出不朽之责，更常见的是宠物邦卡斯。",
 						},
 					}), {
 						["providers"] = {

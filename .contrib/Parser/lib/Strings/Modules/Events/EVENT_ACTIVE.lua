@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		ru = "Активно:",
 		-- TODO: ko = "",
-		cn = "激活:",
+		cn = "激活：",
 		tw = "啟用:",
 	},
 })

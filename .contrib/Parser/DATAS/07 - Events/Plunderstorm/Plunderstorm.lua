@@ -34,6 +34,7 @@ PLUNDERSTORM = createHeader({
 	},
 	description = {
 		en = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
+		cn = "投入霸业风暴的怀抱——一场有趣、全新、限时的海盗主题大型活动，将持续数周。搜刮地图，在阿拉希高地上疾驰，寻找技能、升级和战利品，只为活下去，努力成为最后站着的海盗！\n\n游玩方式：登录正式服《魔兽世界》，在角色选择界面左上角的游戏模式中选择“霸业风暴”。",
 	},
 });
 
@@ -59,6 +60,7 @@ PLUNDERSTORE = createHeader({
 	},
 	description = {
 		en = "This ingame shop menu allows you to purchase new and returning rewards in exchange for Plunder earned during the event.",
+		cn = "此游戏内商店菜单允许你用活动期间赚取的掠夺币兑换新的和返场的奖励。",
 	},
 });
 
