@@ -52,9 +52,9 @@ CLASSIC_SKINNING = {
 	r(194174, {["timeline"] = {ADDED_7_0_3}}),	-- Skinning Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265855, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Skinning
 };
-TBC_SKINNING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, {
+TBC_SKINNING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_3 } }, {
 	r(32678, {	-- Skinning (Master)
-		["timeline"] = { ADDED_2_0_1, REMOVED_8_0_1_LAUNCH },
+		["timeline"] = { ADDED_2_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif

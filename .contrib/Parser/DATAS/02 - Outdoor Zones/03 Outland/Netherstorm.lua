@@ -2132,7 +2132,7 @@ root(ROOTS.Zones, {
 							i(8490),	-- Siamese Cat (PET!)
 							i(10392),	-- Crimson Snake (PET!)
 							i(29363, {	-- Mana Wyrmling (PET!)
-								["timeline"] = { ADDED_2_0_1},
+								["timeline"] = { ADDED_2_0_3},
 							}),
 							i(8495),	-- Senegal (PET!)
 							i(29902),	-- Red Moth (PET!)
@@ -2801,7 +2801,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(28277, {	-- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
-						["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
+						["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						["cr"] = 18870,	-- Voidshrieker
 					}),
 					i(22551, {	-- Formula: Enchant Weapon - Major Intellect

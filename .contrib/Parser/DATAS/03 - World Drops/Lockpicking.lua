@@ -384,7 +384,7 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(29569, {	-- Strong Junkbox
-				["timeline"] = { ADDED_2_0_1 },
+				["timeline"] = { ADDED_2_0_3 },
 				["sym"] = { {
 					"select", "itemID",
 					4354,	-- Pattern: Rich Purple Silk Shirt (RECIPE!) [Discord Confirmation - Luce]

@@ -156,7 +156,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 	}),
 	expansion(EXPANSION.TBC, {
 		applyclassicphase(TBC_PHASE_ONE, ach(124, {	-- Master Cook / Outland Cook [8.0.1+]
-			["timeline"] = { ADDED_2_0_1 },
+			["timeline"] = { ADDED_2_0_3 },
 		})),
 		-- CRIEVE NOTE: Despite being classified as TBC, these achievements weren't available (or possible to do) prior to Wrath prepatch.
 		applyclassicphase(WRATH_PHASE_ONE, ach(1801, {	-- Captain Rumsey's Lager

@@ -846,12 +846,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				-- #endif
-				["timeline"] = { CREATED_1_10_0, ADDED_2_0_1, REMOVED_4_3_0 },	-- This was not in WoW Classic.
+				["timeline"] = { CREATED_1_10_0, ADDED_2_0_3, REMOVED_4_3_0 },	-- This was not in WoW Classic.
 				["cost"] = { { "i", 19182, 40 } },	-- Tattered Darkmoon Faire Prize Ticket
 				["repeatable"] = true,
 				["groups"] = {
 					i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-						["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 },	-- This was not in WoW Classic.
+						["timeline"] = { CREATED_1_10_0, ADDED_2_0_3 },	-- This was not in WoW Classic.
 					}),
 				},
 			}),
@@ -1172,7 +1172,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -1216,7 +1216,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -1260,7 +1260,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -1303,7 +1303,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -2034,7 +2034,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -2462,7 +2462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -2807,7 +2807,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif
@@ -2874,7 +2874,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["lvl"] = 10,
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_1, REMOVED_4_3_0 },
+				["timeline"] = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
 				-- #else
 				["timeline"] = { REMOVED_4_3_0 },
 				-- #endif

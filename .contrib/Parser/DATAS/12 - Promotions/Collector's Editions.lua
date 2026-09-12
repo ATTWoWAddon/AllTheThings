@@ -405,7 +405,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				-- #if NOT ANYCLASSIC
 				q(8547, {	-- Welcome! (Blood Elf)
 					["provider"] = { "i", 20938 },	-- Falconwing Square [Wrath+] / Sunstrider Isle Gift Voucher
-					["timeline"] = { ADDED_2_0_1 },
+					["timeline"] = { ADDED_2_0_3 },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
@@ -419,7 +419,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				}),
 				q(9278, {	-- Welcome! (Draenei)
 					["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
-					["timeline"] = { ADDED_2_0_1 },
+					["timeline"] = { ADDED_2_0_3 },
 					["maps"] = { AZUREMYST_ISLE },
 					["classes"] = { DRAENEI },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately

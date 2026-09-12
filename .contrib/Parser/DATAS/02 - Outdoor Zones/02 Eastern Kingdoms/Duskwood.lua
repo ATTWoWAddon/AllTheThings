@@ -1835,7 +1835,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9429, {	-- Travel to Darkshire
 					["qg"] = 17103,	-- Emissary Taluun
 					["coord"] = { 78.2, 18.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["lvl"] = 18,
 				}),

@@ -259,7 +259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10373, {	-- A Call to Arms: The Plaguelands! [The Exodar]
 					["qg"] = 20722,	-- Herald Bran'daan
 					["coord"] = { 55.4, 47.2, THE_EXODAR },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10374, {	-- A Call to Arms: The Plaguelands! [Silvermoon City]
 					["qg"] = 20724,	-- Herald Amorlin
 					["coord"] = { 59.3, 64.7, SILVERMOON_CITY },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,

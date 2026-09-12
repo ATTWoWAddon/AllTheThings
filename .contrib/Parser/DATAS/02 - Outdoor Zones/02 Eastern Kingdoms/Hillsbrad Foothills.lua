@@ -2191,7 +2191,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(9425, {	-- Report to Tarren Mill
 					["qg"] = 16287,	-- Ambassador Sunsorrow
 					["coord"] = { 57.6, 90.8, UNDERCITY },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 				}),
 				q(542, {	-- Return to Milton
