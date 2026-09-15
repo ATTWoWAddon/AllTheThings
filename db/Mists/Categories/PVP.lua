@@ -5,14 +5,14 @@ local ach,cl,crit,cu,faction,flt,h,i,m,mnt,n,pvprank,q,qo,s,settings,title,x=_.C
 categories.PVP=
 h(-303,{SortPriority=55,g={
 h(-12,{pvp=1,g={
-ach(238,{pvp=1,u=12}),
-ach(513,{pvp=1,u=12}),
-ach(515,{pvp=1,u=12}),
-ach(516,{pvp=1,u=12}),
-ach(512,{pvp=1,u=12}),
-ach(509,{pvp=1,u=12}),
-ach(239,{pvp=1,u=12}),
-ach(869,{pvp=1,u=12}),
+ach(238,{awp=30002,pvp=1,u=12}),
+ach(513,{awp=30002,pvp=1,u=12}),
+ach(515,{awp=30002,pvp=1,u=12}),
+ach(516,{awp=30002,pvp=1,u=12}),
+ach(512,{awp=30002,pvp=1,u=12}),
+ach(509,{awp=30002,pvp=1,u=12}),
+ach(239,{awp=30002,pvp=1,u=12}),
+ach(869,{awp=30002,pvp=1,u=12}),
 ach(870,{awp=30002,pvp=1,u=12,g={
 title(94,{pvp=1,r=2,u=12}),
 title(95,{pvp=1,r=1,u=12})}}),
@@ -67,8 +67,8 @@ ach(614,{awp=30002,pvp=1,r=2,g={
 mnt(60118,{b=1,itemID=44223,lvl=40,pvp=1,q=4,r=2})}}),
 ach(619,{awp=30002,pvp=1,r=1,g={
 mnt(60119,{b=1,itemID=44224,lvl=40,pvp=1,q=4,r=1})}}),
-ach(701,{providers={{"i",18854},{"i",18856},{"i",18857},{"i",18858},{"i",18859},{"i",18862},{"i",18863},{"i",18864},{"i",28234},{"i",28235},{"i",28236},{"i",28237},{"i",28238},{"i",29593},{"i",30348},{"i",30349},{"i",30350},{"i",30351},{"i",37864},{"i",38589},{"i",40476},{"i",42123},{"i",42124},{"i",51377},{"i",60794},{"i",60800},{"i",64790},{"i",64791},{"i",64793},{"i",69861},{"i",70390},{"i",70391},{"i",70392},{"i",70603},{"i",70604},{"i",70606},{"i",72411},{"i",72412},{"i",72414},{"i",73535},{"i",73536},{"i",73539},{"i",84450},{"i",84452},{"i",84454},{"i",84932},{"i",84943},{"i",84945},{"i",91682},{"i",91684},{"i",91686},{"i",93560},{"i",93562},{"i",93564},{"i",94361},{"i",94386},{"i",94388},{"i",100031},{"i",100056},{"i",100058},{"i",100591},{"i",100616},{"i",100618},{"i",102625},{"i",102672},{"i",102738},{"i",103333},{"i",103334},{"i",103335}},pvp=1,r=2,u=12}),
-ach(700,{providers={{"i",18834},{"i",18845},{"i",18846},{"i",18849},{"i",18850},{"i",18851},{"i",18852},{"i",18853},{"i",28239},{"i",28240},{"i",28241},{"i",28242},{"i",28243},{"i",29592},{"i",30343},{"i",30344},{"i",30345},{"i",30346},{"i",37865},{"i",38588},{"i",40477},{"i",42122},{"i",42126},{"i",51378},{"i",60801},{"i",60806},{"i",60807},{"i",64789},{"i",64792},{"i",64794},{"i",69862},{"i",70393},{"i",70394},{"i",70395},{"i",70602},{"i",70605},{"i",70607},{"i",72410},{"i",72413},{"i",72415},{"i",73534},{"i",73537},{"i",73538},{"i",84451},{"i",84453},{"i",84455},{"i",84931},{"i",84933},{"i",84944},{"i",91683},{"i",91685},{"i",91687},{"i",93561},{"i",93563},{"i",93565},{"i",94338},{"i",94387},{"i",94454},{"i",100006},{"i",100057},{"i",100124},{"i",100568},{"i",100617},{"i",100684},{"i",102822},{"i",102869},{"i",102935},{"i",103530},{"i",103531},{"i",103532}},pvp=1,r=1,u=12}),
+ach(701,{awp=30002,providers={{"i",18854},{"i",18856},{"i",18857},{"i",18858},{"i",18859},{"i",18862},{"i",18863},{"i",18864},{"i",28234},{"i",28235},{"i",28236},{"i",28237},{"i",28238},{"i",29593},{"i",30348},{"i",30349},{"i",30350},{"i",30351},{"i",37864},{"i",38589},{"i",40476},{"i",42123},{"i",42124},{"i",51377},{"i",60794},{"i",60800},{"i",64790},{"i",64791},{"i",64793},{"i",69861},{"i",70390},{"i",70391},{"i",70392},{"i",70603},{"i",70604},{"i",70606},{"i",72411},{"i",72412},{"i",72414},{"i",73535},{"i",73536},{"i",73539},{"i",84450},{"i",84452},{"i",84454},{"i",84932},{"i",84943},{"i",84945},{"i",91682},{"i",91684},{"i",91686},{"i",93560},{"i",93562},{"i",93564},{"i",94361},{"i",94386},{"i",94388},{"i",100031},{"i",100056},{"i",100058},{"i",100591},{"i",100616},{"i",100618},{"i",102625},{"i",102672},{"i",102738},{"i",103333},{"i",103334},{"i",103335}},pvp=1,r=2,u=12}),
+ach(700,{awp=30002,providers={{"i",18834},{"i",18845},{"i",18846},{"i",18849},{"i",18850},{"i",18851},{"i",18852},{"i",18853},{"i",28239},{"i",28240},{"i",28241},{"i",28242},{"i",28243},{"i",29592},{"i",30343},{"i",30344},{"i",30345},{"i",30346},{"i",37865},{"i",38588},{"i",40477},{"i",42122},{"i",42126},{"i",51378},{"i",60801},{"i",60806},{"i",60807},{"i",64789},{"i",64792},{"i",64794},{"i",69862},{"i",70393},{"i",70394},{"i",70395},{"i",70602},{"i",70605},{"i",70607},{"i",72410},{"i",72413},{"i",72415},{"i",73534},{"i",73537},{"i",73538},{"i",84451},{"i",84453},{"i",84455},{"i",84931},{"i",84933},{"i",84944},{"i",91683},{"i",91685},{"i",91687},{"i",93561},{"i",93563},{"i",93565},{"i",94338},{"i",94387},{"i",94454},{"i",100006},{"i",100057},{"i",100124},{"i",100568},{"i",100617},{"i",100684},{"i",102822},{"i",102869},{"i",102935},{"i",103530},{"i",103531},{"i",103532}},pvp=1,r=1,u=12}),
 ach(446,{awp=10400,pvp=1,r=1,rwp=20001,u=2,g={
 title(26,{pvp=1,r=1,u=2})}}),
 ach(433,{awp=10400,pvp=1,r=2,rwp=20001,u=2,g={
@@ -158,11 +158,11 @@ crit(2367,{achID=245,c_disp={9},id=10,pvp=1}),
 crit(2368,{achID=245,c_disp={1},id=11,pvp=1}),
 crit(2365,{achID=245,c_disp={4},id=8,pvp=1}),
 crit(2360,{achID=245,c_disp={11},id=3,pvp=1})}}),
-ach(714,{awp=20001,pvp=1,r=1,u=12,g={
-title(34,{pvp=1,r=1,u=17})}}),
+ach(714,{awp=30002,pvp=1,r=1,u=12,g={
+title(34,{awp=20001,pvp=1,r=1,u=17})}}),
 ach(229,{awp=30002,pvp=1}),
-ach(907,{awp=20001,pvp=1,r=2,u=12,g={
-title(35,{pvp=1,r=2,u=17})}}),
+ach(907,{awp=30002,pvp=1,r=2,u=12,g={
+title(35,{awp=20001,pvp=1,r=2,u=17})}}),
 ach(8392,{awp=50300,pvp=1,rwp=50400,u=2,g={
 title(128,{pvp=1,u=2})}}),
 ach(8391,{awp=50300,pvp=1,rwp=50400,u=2}),
@@ -173,7 +173,7 @@ title(27,{pvp=1,r=1,u=2})}}),
 ach(604,{awp=30002,pvp=1,r=2}),
 ach(603,{awp=30002,pvp=1,r=1}),
 ach(231,{awp=30002,pvp=1})}}),
-x(1,{description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
+x(1,{awp=10100,description="In order to collect these, you need to have the original title associated with the gear.",pvp=1,g={
 h(-298,{awp=10400,pvp=1,rwp=20001,u=2,g={
 pvprank(1,{pvp=1,u=2}),
 pvprank(2,{pvp=1,u=2}),
@@ -517,30 +517,30 @@ i(18849,{b=1,c={4},f=53,pvp=1,q=3}),
 i(18845,{b=1,c={7},f=53,pvp=1,q=3}),
 i(18852,{b=1,c={9},f=53,pvp=1,q=3}),
 i(18834,{b=1,c={1},f=53,pvp=1,q=3})}}),
-h(-45,{awp=10800,pvp=1,g={
-q(8371,{coords={
+h(-45,{pvp=1,g={
+q(8371,{awp=10800,coords={
 [84]={{79.4,18}},
 [87]={{69.8,90}},
 [89]={{57.8,34.6}},
 [111]={{67.4,33.9}}},cost={{"i",20558,1},{"i",29024,1},{"i",20559,1},{"i",20560,1}},lvl=61,pvp=1,qgs={15351},r=2,rwp=30303,u=2}),
-q(8385,{coords={
+q(8385,{awp=10800,coords={
 [84]={{79.4,18}},
 [87]={{69.8,90}},
 [89]={{57.8,34.6}},
 [111]={{67.4,33.9}}},cost={{"i",20558,1},{"i",29024,1},{"i",20559,1},{"i",20560,1}},lvl=61,pvp=1,qgs={15351},r=2,repeatable=1,rwp=30303,sourceQuests={8371},u=2}),
-q(8367,{coords={
+q(8367,{awp=10800,coords={
 [85]={{79.8,30.4}},
 [88]={{56,76.7}},
 [111]={{67,56.6}},
 [998]={{60.7,87.7}}},cost={{"i",20558,1},{"i",29024,1},{"i",20559,1},{"i",20560,1}},lvl=61,pvp=1,qgs={15350},r=1,rwp=30303,u=2}),
-q(8388,{coords={
+q(8388,{awp=10800,coords={
 [85]={{79.8,30.4}},
 [88]={{56,76.7}},
 [111]={{67,56.6}},
 [998]={{60.7,87.7}}},cost={{"i",20558,1},{"i",29024,1},{"i",20559,1},{"i",20560,1}},lvl=61,pvp=1,qgs={15350},r=1,repeatable=1,rwp=30303,sourceQuests={8367},u=2})}})}}),
-x(2,{pvp=1,u=17,g={
-h(-299,{awp=20001,pvp=1,u=17,g={
-h(-210,{pvp=1,r=2,u=17,g={
+x(2,{awp=20003,pvp=1,u=17,g={
+h(-299,{pvp=1,u=17,g={
+h(-210,{awp=20001,pvp=1,r=2,u=17,g={
 h(-101,{pvp=1,u=17,g={
 s(139286,28940,{b=1,f=8,lvl=70,pvp=1,q=3,r=2,u=17}),
 s(139287,28941,{b=1,f=1,lvl=70,pvp=1,q=3,r=2,u=17}),
@@ -651,7 +651,7 @@ s(139068,28722,{b=1,c={11},f=5,loc=41,lvl=70,pvp=1,q=3,r=2,u=17}),
 s(139069,28723,{b=1,c={11},f=5,loc=42,lvl=70,pvp=1,q=3,r=2,u=17}),
 s(201339,28719,{b=1,c={11},f=5,loc=44,lvl=70,pvp=1,q=3,r=2,u=17}),
 s(139067,28721,{b=1,c={11},f=5,loc=46,lvl=70,pvp=1,q=3,r=2,u=17})}})}}),
-h(-211,{pvp=1,r=1,u=17,g={
+h(-211,{awp=20001,pvp=1,r=1,u=17,g={
 h(-101,{pvp=1,u=17,g={
 s(139285,28939,{b=1,f=8,lvl=70,pvp=1,q=3,r=1,u=17}),
 s(139284,28938,{b=1,f=1,lvl=70,pvp=1,q=3,r=1,u=17}),
@@ -1650,7 +1650,7 @@ i(69861,{awp=40100,b=1,f=53,lvl=70,pvp=1,q=3,rwp=60002,u=21}),
 i(37865,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=40003,u=2}),
 i(38588,{awp=30002,b=1,c={6},f=53,lvl=70,pvp=1,q=3,rwp=40003,u=2}),
 i(69862,{awp=40100,b=1,f=53,lvl=70,pvp=1,q=3,rwp=60002,u=21})}})}})}})}}),
-x(3,{pvp=1,g={
+x(3,{awp=30003,pvp=1,g={
 h(-251,{awp=30002,pvp=1,u=30,g={
 h(-12,{pvp=1,rwp=30100,u=2,g={
 ach(3336,{pvp=1,u=2,g={
@@ -2853,7 +2853,7 @@ s(179419,51526,{b=1,f=21,lvl=80,pvp=1,q=4,u=33}),
 s(179291,51389,{b=1,f=22,lvl=80,pvp=1,q=4,u=33}),
 s(179346,51448,{b=1,f=25,lvl=80,pvp=1,q=4,u=33}),
 s(179413,51520,{b=1,f=23,lvl=80,pvp=1,q=4,u=33})}})}})}})}}),
-x(4,{pvp=1,g={
+x(4,{awp=40003,pvp=1,g={
 h(-304,{pvp=1,g={
 h(-210,{pvp=1,r=2,u=1,g={
 h(-101,{pvp=1,u=1,g={
@@ -3272,7 +3272,7 @@ s(216113,77924,{b=1,c={1},f=7,loc=42,lvl=60,pvp=1,q=4,r=1,u=1}),
 s(216116,77927,{b=1,c={1},f=7,loc=40,lvl=60,pvp=1,q=4,r=1,u=1}),
 s(216112,77923,{b=1,c={1},f=7,loc=41,lvl=60,pvp=1,q=4,r=1,u=1})}})}})}}),
 h(-256,{pvp=1,u=40,g={
-h(-12,{awp=40003,pvp=1,u=40,g={
+h(-12,{pvp=1,u=40,g={
 ach(40971,{pvp=1,rwp=40200,u=2}),
 ach(40968,{pvp=1,rwp=40200,u=2}),
 ach(40970,{pvp=1,rwp=40200,u=2}),
@@ -3432,7 +3432,7 @@ s(209313,64863,{b=1,c={5,8,9},f=4,loc=47,lvl=85,OnUpdate=function(t)if settings:
 s(209314,64864,{b=1,c={5,8,9},f=4,loc=47,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,u=40}),
 s(209319,64869,{b=1,c={1,2,6},f=7,loc=47,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,u=40}),
 s(209320,64870,{b=1,c={1,2,6},f=7,loc=47,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,u=40})}}),
-flt(51,{awp=40003,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
+flt(51,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
 i(64713,{b=1,c={1,2,6},f=51,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64714,{b=1,c={1,2,6},f=51,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64800,{b=1,c={3,4,7,10,11},f=51,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
@@ -3440,7 +3440,7 @@ i(64801,{b=1,c={3,4,7,10,11},f=51,lvl=85,OnUpdate=function(t)if settings:GetUnob
 i(64807,{b=1,c={2,5,7,8,9,11},f=51,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64808,{b=1,c={2,5,7,8,9,11},f=51,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64809,{b=1,c={2,5,7,10,11},f=51,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2})}}),
-flt(52,{awp=40003,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
+flt(52,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
 i(64690,{b=1,c={2,5,7,8,9,11},f=52,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64691,{b=1,c={2,5,7,8,9,11},f=52,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64692,{b=1,c={2,5,7,10,11},f=52,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
@@ -3448,15 +3448,15 @@ i(64832,{b=1,c={3,4,7,10,11},f=52,lvl=85,OnUpdate=function(t)if settings:GetUnob
 i(64833,{b=1,c={3,4,7,10,11},f=52,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64851,{b=1,c={1,2,6},f=52,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64852,{b=1,c={1,2,6},f=52,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2})}}),
-flt(36,{awp=40003,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
+flt(36,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
 i(64759,{b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=0,rwp=40200,u=2}),
 i(64871,{b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=0,rwp=40200,u=2})}}),
-flt(54,{awp=40003,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
+flt(54,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
 i(64819,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,rwp=40200,u=2}),
 i(64820,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,rwp=40200,u=2}),
 i(64821,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,rwp=40200,u=2}),
 i(64822,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,rwp=40200,u=2})}}),
-flt(53,{awp=40003,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
+flt(53,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=40,g={
 i(64687,{b=1,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64688,{b=1,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
 i(64689,{b=1,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=3,rwp=40200,u=2}),
@@ -3695,7 +3695,7 @@ i(60806,{b=1,f=53,lvl=85,pvp=1,q=4,r=1,u=40}),
 i(60807,{b=1,f=53,lvl=85,pvp=1,q=4,r=1,u=40}),
 i(61045,{b=1,f=53,lvl=85,pvp=1,q=4,u=40}),
 i(61046,{b=1,f=53,lvl=85,pvp=1,q=4,u=40})}})}}),
-h(-295,{awp=40003,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,rwp=40200,u=2,g={
+h(-295,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,rwp=40200,u=2,g={
 h(-101,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,u=2,g={
 s(211152,67476,{b=1,f=8,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=4,u=2}),
 s(211140,67464,{b=1,f=27,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=4,u=2}),
@@ -3838,18 +3838,18 @@ flt(36,{OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rw
 i(67467,{b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=0,u=2}),
 i(67466,{b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40200 end	end,pvp=1,q=0,u=2})}})}})}}),
 h(-257,{pvp=1,u=41,g={
-h(-12,{awp=40200,pvp=1,u=41,g={
-ach(41334,{pvp=1,rwp=40300,u=2}),
-ach(41332,{pvp=1,rwp=40300,u=2}),
-ach(41333,{pvp=1,rwp=40300,u=2}),
-ach(41336,{pvp=1,rwp=40300,u=2,g={
+h(-12,{pvp=1,u=41,g={
+ach(41334,{awp=40200,pvp=1,rwp=40300,u=2}),
+ach(41332,{awp=40200,pvp=1,rwp=40300,u=2}),
+ach(41333,{awp=40200,pvp=1,rwp=40300,u=2}),
+ach(41336,{awp=40200,pvp=1,rwp=40300,u=2,g={
 mnt(101821,{b=1,itemID=71954,lvl=70,pvp=1,q=4,u=2})}}),
-ach(6316,{pvp=1,r=2,rwp=40300,u=2}),
-ach(6317,{pvp=1,r=1,rwp=40300,u=2}),
-ach(6124,{pvp=1,rwp=40300,u=2,g={
+ach(6316,{awp=40200,pvp=1,r=2,rwp=40300,u=2}),
+ach(6317,{awp=40200,pvp=1,r=1,rwp=40300,u=2}),
+ach(6124,{awp=40200,pvp=1,rwp=40300,u=2,g={
 title(192,{pvp=1,u=2})}}),
-ach(6322,{providers={{"i",71954}},pvp=1,rwp=40300,u=2}),
-mnt(101821,{b=1,description="Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=71954,lvl=70,pvp=1,q=4,rwp=40300,u=2})}}),
+ach(6322,{awp=40200,providers={{"i",71954}},pvp=1,rwp=40300,u=2}),
+mnt(101821,{awp=40200,b=1,description="Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",itemID=71954,lvl=70,pvp=1,q=4,rwp=40300,u=2})}}),
 h(-299,{OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=41 t.rwp=40300 end	end,pvp=1,u=41,g={
 cl(6,{OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=41 t.rwp=40300 end	end,pvp=1,u=41,g={
 s(212898,70558,{b=1,c={6},f=7,loc=42,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=41 t.rwp=40300 end	end,pvp=1,q=4,u=41}),
@@ -4397,18 +4397,18 @@ flt(36,{OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rw
 i(70197,{b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=41 t.rwp=40300 end	end,pvp=1,q=0,u=2}),
 i(70198,{b=1,f=36,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=41 t.rwp=40300 end	end,pvp=1,q=0,u=2})}})}})}}),
 h(-258,{pvp=1,u=42,g={
-h(-12,{awp=50004,pvp=1,u=42,g={
-ach(42775,{pvp=1,rwp=50004,u=2}),
-ach(42772,{pvp=1,rwp=50004,u=2}),
-ach(42774,{pvp=1,rwp=50004,u=2}),
-ach(42777,{pvp=1,rwp=50004,u=2,g={
+h(-12,{pvp=1,u=42,g={
+ach(42775,{awp=50004,pvp=1,rwp=50004,u=2}),
+ach(42772,{awp=50004,pvp=1,rwp=50004,u=2}),
+ach(42774,{awp=50004,pvp=1,rwp=50004,u=2}),
+ach(42777,{awp=50004,pvp=1,rwp=50004,u=2,g={
 mnt(124550,{b=1,itemID=85785,lvl=70,pvp=1,q=4,u=2})}}),
-ach(6939,{pvp=1,r=2,rwp=50004,u=2}),
-ach(6940,{pvp=1,r=1,rwp=50004,u=2}),
-ach(6938,{pvp=1,rwp=50004,u=2,g={
+ach(6939,{awp=50004,pvp=1,r=2,rwp=50004,u=2}),
+ach(6940,{awp=50004,pvp=1,r=1,rwp=50004,u=2}),
+ach(6938,{awp=50004,pvp=1,rwp=50004,u=2,g={
 title(193,{pvp=1,u=2})}}),
-ach(6741,{providers={{"i",85785}},pvp=1,rwp=50004,u=2}),
-mnt(124550,{b=1,description="Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=85785,lvl=70,pvp=1,q=4,rwp=50004,u=2})}}),
+ach(6741,{awp=50004,providers={{"i",85785}},pvp=1,rwp=50004,u=2}),
+mnt(124550,{awp=50004,b=1,description="Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",itemID=85785,lvl=70,pvp=1,q=4,rwp=50004,u=2})}}),
 h(-299,{pvp=1,u=42,g={
 cl(6,{pvp=1,u=42,g={
 s(213839,72332,{b=1,c={6},f=7,loc=42,lvl=85,pvp=1,q=4,u=42}),
@@ -4548,51 +4548,51 @@ s(213830,72316,{b=1,c={5,8,9},f=4,loc=47,lvl=85,pvp=1,q=4,u=42}),
 s(213832,72318,{b=1,c={5,8,9},f=4,loc=47,lvl=85,pvp=1,q=4,u=42}),
 s(213899,72396,{b=1,c={1,2,6},f=7,loc=47,lvl=85,pvp=1,q=4,u=42}),
 s(213900,72397,{b=1,c={1,2,6},f=7,loc=47,lvl=85,pvp=1,q=4,u=42})}}),
-h(-89,{awp=40300,pvp=1,u=42,g={
-s(213825,72305,{b=1,c={3,4,7,10,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-s(213826,72306,{b=1,c={3,4,7,10,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-s(213945,72451,{b=1,c={1,2,6},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-s(213946,72452,{b=1,c={1,2,6},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-s(213837,72323,{b=1,c={2,5,7,8,9,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-s(213838,72324,{b=1,c={2,5,7,10,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-s(213836,72322,{b=1,c={2,5,7,8,9,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2})}}),
-flt(52,{awp=40300,pvp=1,u=42,g={
-i(72330,{b=1,c={2,5,7,8,9,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72329,{b=1,c={2,5,7,8,9,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72331,{b=1,c={2,5,7,10,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72312,{b=1,c={3,4,7,10,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72311,{b=1,c={3,4,7,10,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72458,{b=1,c={1,2,6},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72457,{b=1,c={1,2,6},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2})}}),
-flt(51,{awp=40300,pvp=1,u=42,g={
-i(72454,{b=1,c={1,2,6},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72453,{b=1,c={1,2,6},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72307,{b=1,c={3,4,7,10,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72308,{b=1,c={3,4,7,10,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72325,{b=1,c={2,5,7,8,9,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72326,{b=1,c={2,5,7,8,9,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72327,{b=1,c={2,5,7,10,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2})}}),
-flt(54,{awp=40300,pvp=1,u=42,g={
-i(72456,{b=1,pvp=1,rwp=50004,u=2}),
-i(72328,{b=1,pvp=1,rwp=50004,u=2}),
-i(72358,{b=1,pvp=1,rwp=50004,u=2}),
-i(72310,{b=1,pvp=1,rwp=50004,u=2})}}),
-flt(53,{awp=40300,pvp=1,u=42,g={
-i(72304,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72448,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72450,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72359,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72361,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72360,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72309,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72449,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72455,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72411,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72414,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72412,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72410,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72415,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
-i(72413,{b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2})}})}}),
+h(-89,{pvp=1,u=42,g={
+s(213825,72305,{awp=40300,b=1,c={3,4,7,10,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+s(213826,72306,{awp=40300,b=1,c={3,4,7,10,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+s(213945,72451,{awp=40300,b=1,c={1,2,6},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+s(213946,72452,{awp=40300,b=1,c={1,2,6},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+s(213837,72323,{awp=40300,b=1,c={2,5,7,8,9,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+s(213838,72324,{awp=40300,b=1,c={2,5,7,10,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+s(213836,72322,{awp=40300,b=1,c={2,5,7,8,9,11},f=3,lvl=85,pvp=1,q=4,rwp=50004,u=2})}}),
+flt(52,{pvp=1,u=42,g={
+i(72330,{awp=40300,b=1,c={2,5,7,8,9,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72329,{awp=40300,b=1,c={2,5,7,8,9,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72331,{awp=40300,b=1,c={2,5,7,10,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72312,{awp=40300,b=1,c={3,4,7,10,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72311,{awp=40300,b=1,c={3,4,7,10,11},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72458,{awp=40300,b=1,c={1,2,6},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72457,{awp=40300,b=1,c={1,2,6},f=52,lvl=85,pvp=1,q=4,rwp=50004,u=2})}}),
+flt(51,{pvp=1,u=42,g={
+i(72454,{awp=40300,b=1,c={1,2,6},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72453,{awp=40300,b=1,c={1,2,6},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72307,{awp=40300,b=1,c={3,4,7,10,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72308,{awp=40300,b=1,c={3,4,7,10,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72325,{awp=40300,b=1,c={2,5,7,8,9,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72326,{awp=40300,b=1,c={2,5,7,8,9,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72327,{awp=40300,b=1,c={2,5,7,10,11},f=51,lvl=85,pvp=1,q=4,rwp=50004,u=2})}}),
+flt(54,{pvp=1,u=42,g={
+i(72456,{awp=40300,b=1,pvp=1,rwp=50004,u=2}),
+i(72328,{awp=40300,b=1,pvp=1,rwp=50004,u=2}),
+i(72358,{awp=40300,b=1,pvp=1,rwp=50004,u=2}),
+i(72310,{awp=40300,b=1,pvp=1,rwp=50004,u=2})}}),
+flt(53,{pvp=1,u=42,g={
+i(72304,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72448,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72450,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72359,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72361,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72360,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72309,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72449,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72455,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72411,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72414,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72412,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72410,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72415,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2}),
+i(72413,{awp=40300,b=1,f=53,lvl=85,pvp=1,q=4,rwp=50004,u=2})}})}}),
 h(-296,{pvp=1,u=42,g={
 h(-101,{pvp=1,u=42,g={
 s(214469,73468,{b=1,f=8,lvl=85,pvp=1,q=4,u=42}),
@@ -4789,14 +4789,14 @@ i(73640,{b=1,c={3,4,7,10,11},f=52,lvl=85,pvp=1,q=4,u=42}),
 i(73641,{b=1,c={3,4,7,10,11},f=52,lvl=85,pvp=1,q=4,u=42}),
 i(73488,{b=1,c={1,2,6},f=52,lvl=85,pvp=1,q=4,u=42}),
 i(73489,{b=1,c={1,2,6},f=52,lvl=85,pvp=1,q=4,u=42})}}),
-flt(36,{awp=40300,pvp=1,u=42,g={
-i(73471,{b=1,f=36,lvl=85,pvp=1,q=0,rwp=50004,u=2}),
-i(73445,{b=1,f=36,lvl=85,pvp=1,q=0,rwp=50004,u=2})}}),
-flt(54,{awp=40300,pvp=1,u=42,g={
-i(73490,{b=1,pvp=1,rwp=50004,u=2}),
-i(73624,{b=1,pvp=1,rwp=50004,u=2}),
-i(73594,{b=1,pvp=1,rwp=50004,u=2}),
-i(73642,{b=1,pvp=1,rwp=50004,u=2})}}),
+flt(36,{pvp=1,u=42,g={
+i(73471,{awp=40300,b=1,f=36,lvl=85,pvp=1,q=0,rwp=50004,u=2}),
+i(73445,{awp=40300,b=1,f=36,lvl=85,pvp=1,q=0,rwp=50004,u=2})}}),
+flt(54,{pvp=1,u=42,g={
+i(73490,{awp=40300,b=1,pvp=1,rwp=50004,u=2}),
+i(73624,{awp=40300,b=1,pvp=1,rwp=50004,u=2}),
+i(73594,{awp=40300,b=1,pvp=1,rwp=50004,u=2}),
+i(73642,{awp=40300,b=1,pvp=1,rwp=50004,u=2})}}),
 flt(53,{pvp=1,u=42,g={
 i(73648,{b=1,f=53,lvl=85,pvp=1,q=4,u=42}),
 i(73498,{b=1,f=53,lvl=85,pvp=1,q=4,u=42}),
@@ -4966,8 +4966,8 @@ i(74783,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(50)then	t.u=2
 i(74785,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(50)then	t.u=2 t.rwp=nil else	t.u=42 t.rwp=50004 end	end,pvp=1,u=2}),
 i(74784,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(50)then	t.u=2 t.rwp=nil else	t.u=42 t.rwp=50004 end	end,pvp=1,u=2}),
 i(74786,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(50)then	t.u=2 t.rwp=nil else	t.u=42 t.rwp=50004 end	end,pvp=1,u=2})}})}})}})}}),
-x(5,{pvp=1,g={
-h(-259,{awp=50004,pvp=1,u=50,g={
+x(5,{awp=50004,pvp=1,g={
+h(-259,{pvp=1,u=50,g={
 h(-12,{pvp=1,u=50,g={
 ach(8243,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 else	t.u=50 end	end,pvp=1,r=2,rwp=50200,u=2}),
 ach(8244,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 else	t.u=50 end	end,pvp=1,r=1,rwp=50200,u=2}),
@@ -8582,49 +8582,49 @@ s(129926,19111,{b=1,f=6,loc=41,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
 s(129927,19112,{b=1,f=7,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
 s(129928,19113,{b=1,f=5,loc=43,lvl=58,pvp=1,q=3,rwp=10600,u=2}),
 i(19109,{b=1,f=52,lvl=58,pvp=1,q=3,rwp=10600,u=2})}}),
-h(-12,{pvp=1,g={
+h(-12,{awp=30002,pvp=1,g={
 ach(708,{minReputation={729,42000},pvp=1,r=1,u=12}),
 ach(709,{minReputation={730,42000},pvp=1,r=2,u=12}),
-ach(1167,{awp=30002,pvp=1,g={
+ach(1167,{pvp=1,g={
 crit(226,{achID=230,id=2,pvp=1,r=2,u=17}),
 crit(226,{achID=1175,id=1,pvp=1,r=1,u=17})}}),
-ach(1168,{awp=30002,pvp=1,r=1,rwp=40300,sym={{"meta_achievement",219,221,222,224,1164,223,873,220,582,706,707,1166}},u=2}),
-ach(218,{awp=30002,pvp=1,rank=1}),
-ach(219,{awp=30002,pvp=1,rank=100,g={
+ach(1168,{pvp=1,r=1,rwp=40300,sym={{"meta_achievement",219,221,222,224,1164,223,873,220,582,706,707,1166}},u=2}),
+ach(218,{pvp=1,rank=1}),
+ach(219,{pvp=1,rank=100,g={
 crit(3392,{achID=1167,id=1,pvp=1})}}),
-ach(221,{awp=30002,pvp=1,g={
+ach(221,{pvp=1,g={
 crit(3393,{achID=1167,id=2,pvp=1})}}),
-ach(222,{awp=30002,pvp=1,g={
+ach(222,{pvp=1,g={
 crit(3394,{achID=1167,id=3,pvp=1})}}),
-ach(1151,{awp=30002,pvp=1,r=2,g={
+ach(1151,{pvp=1,r=2,g={
 crit(3395,{achID=1167,id=4,pvp=1})}}),
-ach(224,{awp=30002,pvp=1,r=1,g={
+ach(224,{pvp=1,r=1,g={
 crit(3407,{achID=1167,id=4,pvp=1})}}),
-ach(225,{awp=30002,pvp=1,r=2,g={
+ach(225,{pvp=1,r=2,g={
 crit(3396,{achID=1167,id=5,pvp=1})}}),
-ach(1164,{awp=30002,pvp=1,r=1,g={
+ach(1164,{pvp=1,r=1,g={
 crit(3408,{achID=1167,id=5,pvp=1})}}),
-ach(223,{awp=30002,pvp=1,g={
+ach(223,{pvp=1,g={
 crit(3398,{achID=1167,id=6,pvp=1})}}),
-ach(873,{awp=30002,pvp=1,r=1,g={
+ach(873,{pvp=1,r=1,g={
 crit(3411,{achID=1167,id=7,pvp=1})}}),
-ach(220,{awp=30002,pvp=1,r=2,g={
+ach(220,{pvp=1,r=2,g={
 crit(3399,{achID=1167,id=7,pvp=1})}}),
-ach(582,{awp=30002,pvp=1,g={
+ach(582,{pvp=1,g={
 crit(421,{achID=582,pvp=1}),
 crit(422,{achID=582,pvp=1}),
 crit(423,{achID=582,pvp=1}),
 crit(424,{achID=582,pvp=1}),
 crit(425,{achID=582,pvp=1}),
 crit(3400,{achID=1167,id=8,pvp=1})}}),
-ach(706,{awp=30002,providers={{"i",19029}},pvp=1,r=1,g={
+ach(706,{providers={{"i",19029}},pvp=1,r=1,g={
 crit(3413,{achID=1167,id=9,pvp=1})}}),
-ach(707,{awp=30002,providers={{"i",19030}},pvp=1,r=2,g={
+ach(707,{providers={{"i",19030}},pvp=1,r=2,g={
 crit(3401,{achID=1167,id=9,pvp=1})}}),
-ach(1166,{awp=30002,providers={{"i",18228}},pvp=1,g={
+ach(1166,{providers={{"i",18228}},pvp=1,g={
 crit(3403,{achID=1167,id=10,pvp=1})}}),
-ach(226,{awp=30002,pvp=1}),
-crit(6626,{achID=1785,awp=30002,id=2,maps={91,1537},providers={{"i",34753}},requireSkill=185,u=30})}}),
+ach(226,{pvp=1}),
+crit(6626,{achID=1785,id=2,maps={91,1537},providers={{"i",34753}},requireSkill=185,u=30})}}),
 h(-31,{awp=30002,pvp=1,g={
 faction(729,{icon=133287,OnTooltip=_.OnTooltipDB.ForAlteracValley,pvp=1,r=1,g={
 crit(5320,{achID=714,id=1,pvp=1,r=1,u=12})}}),
@@ -8920,46 +8920,46 @@ i(17306,{b=1,pvp=1,q=1}),
 i(17326,{b=1,pvp=1,q=1}),
 s(129191,18231,{f=10,filterForRWP=2,pvp=1,q=1})}})}}),
 m(93,{icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",maps={837,844,1366,1383},pvp=1,g={
-h(-12,{pvp=1,g={
-ach(1169,{awp=30002,pvp=1,g={
+h(-12,{awp=30002,pvp=1,g={
+ach(1169,{pvp=1,g={
 crit(227,{achID=230,id=3,pvp=1,r=2,u=17}),
 crit(227,{achID=1175,id=2,pvp=1,r=1,u=17})}}),
-ach(1170,{awp=30002,pvp=1,r=1,rwp=40300,sym={{"meta_achievement",155,165,158,73,1153,157,161,156,159,162,583,584}},u=2}),
-ach(154,{awp=30002,pvp=1,rank=1}),
-ach(155,{awp=30002,pvp=1,rank=100,g={
+ach(1170,{pvp=1,r=1,rwp=40300,sym={{"meta_achievement",155,165,158,73,1153,157,161,156,159,162,583,584}},u=2}),
+ach(154,{pvp=1,rank=1}),
+ach(155,{pvp=1,rank=100,g={
 crit(3416,{achID=1169,id=2,pvp=1})}}),
-ach(583,{awp=30002,pvp=1,g={
+ach(583,{pvp=1,g={
 crit(426,{achID=583,pvp=1}),
 crit(427,{achID=583,pvp=1}),
 crit(3429,{achID=1169,id=12,pvp=1})}}),
-ach(584,{awp=30002,pvp=1,g={
+ach(584,{pvp=1,g={
 crit(431,{achID=584,pvp=1}),
 crit(432,{achID=584,pvp=1}),
 crit(433,{achID=584,pvp=1}),
 crit(434,{achID=584,pvp=1}),
 crit(435,{achID=584,pvp=1}),
 crit(3430,{achID=1169,id=13,pvp=1})}}),
-ach(165,{awp=30002,pvp=1,g={
+ach(165,{pvp=1,g={
 crit(3417,{achID=1169,id=3,pvp=1})}}),
-ach(73,{awp=30002,pvp=1,g={
+ach(73,{pvp=1,g={
 crit(3419,{achID=1169,id=5,pvp=1})}}),
-ach(159,{awp=30002,pvp=1,g={
+ach(159,{pvp=1,g={
 crit(3424,{achID=1169,id=10,pvp=1})}}),
-ach(158,{awp=30002,pvp=1,g={
+ach(158,{pvp=1,g={
 crit(3418,{achID=1169,id=4,pvp=1})}}),
-ach(1153,{awp=30002,pvp=1,g={
+ach(1153,{pvp=1,g={
 crit(3420,{achID=1169,id=6,pvp=1})}}),
-ach(161,{awp=30002,pvp=1,g={
+ach(161,{pvp=1,g={
 crit(3422,{achID=1169,id=8,pvp=1})}}),
-ach(156,{awp=30002,pvp=1,g={
+ach(156,{pvp=1,g={
 crit(3423,{achID=1169,id=9,pvp=1})}}),
-ach(157,{awp=30002,pvp=1,g={
+ach(157,{pvp=1,g={
 crit(3421,{achID=1169,id=7,pvp=1})}}),
-ach(162,{awp=30002,pvp=1,g={
+ach(162,{pvp=1,g={
 crit(3427,{achID=1169,id=11,pvp=1})}}),
 ach(711,{minReputation={509,42000},pvp=1,r=2,u=12}),
 ach(710,{minReputation={510,42000},pvp=1,r=1,u=12}),
-crit(6627,{achID=1785,awp=30002,id=3,maps={93},providers={{"i",34753}},requireSkill=185,u=30})}}),
+crit(6627,{achID=1785,id=3,maps={93},providers={{"i",34753}},requireSkill=185,u=30})}}),
 h(-31,{awp=30002,pvp=1,g={
 faction(510,{icon=237568,OnTooltip=_.OnTooltipDB.ForArathiBasin,pvp=1,r=1,g={
 crit(5318,{achID=714,id=2,pvp=1,r=1,u=12})}}),
@@ -9755,44 +9755,44 @@ crit(63544,{achID=5223,id=12,pvp=1})}}),
 ach(5552,{pvp=1,r=1,g={
 crit(63600,{achID=5223,id=12,pvp=1})}})}})}}),
 m(92,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},pvp=1,g={
-h(-12,{pvp=1,g={
-ach(1172,{awp=30002,pvp=1,g={
+h(-12,{awp=30002,pvp=1,g={
+ach(1172,{pvp=1,g={
 crit(229,{achID=230,id=4,pvp=1,r=2,u=17}),
 crit(229,{achID=1175,id=3,pvp=1,r=1,u=17})}}),
-ach(1173,{awp=30002,pvp=1,r=1,rwp=40300,sym={{"meta_achievement",167,199,200,872,168,201,204,1251,1502,1252,207}},u=2}),
-ach(166,{awp=30002,pvp=1,rank=1}),
-ach(167,{awp=30002,pvp=1,rank=100,g={
+ach(1173,{pvp=1,r=1,rwp=40300,sym={{"meta_achievement",167,199,200,872,168,201,204,1251,1502,1252,207}},u=2}),
+ach(166,{pvp=1,rank=1}),
+ach(167,{pvp=1,rank=100,g={
 crit(3461,{achID=1172,id=1,pvp=1})}}),
-ach(199,{awp=30002,pvp=1,g={
+ach(199,{pvp=1,g={
 crit(3462,{achID=1172,id=2,pvp=1})}}),
-ach(200,{awp=30002,pvp=1,g={
+ach(200,{pvp=1,g={
 crit(3463,{achID=1172,id=3,pvp=1})}}),
-ach(872,{awp=30002,pvp=1,g={
+ach(872,{pvp=1,g={
 crit(3464,{achID=1172,id=4,pvp=1})}}),
-ach(168,{awp=30002,pvp=1,g={
+ach(168,{pvp=1,g={
 crit(3465,{achID=1172,id=5,pvp=1})}}),
-ach(201,{awp=30002,pvp=1,g={
+ach(201,{pvp=1,g={
 crit(3466,{achID=1172,id=6,pvp=1})}}),
-ach(204,{awp=30002,pvp=1,g={
+ach(204,{pvp=1,g={
 crit(3467,{achID=1172,id=7,pvp=1})}}),
-ach(203,{awp=30002,pvp=1,r=2,g={
+ach(203,{pvp=1,r=2,g={
 crit(3469,{achID=1172,id=8,pvp=1})}}),
-ach(1251,{awp=30002,pvp=1,r=1,g={
+ach(1251,{pvp=1,r=1,g={
 crit(3484,{achID=1172,id=8,pvp=1})}}),
-ach(202,{awp=30002,pvp=1,r=2,g={
+ach(202,{pvp=1,r=2,g={
 crit(3470,{achID=1172,id=9,pvp=1})}}),
-ach(1502,{awp=30002,pvp=1,r=1,g={
+ach(1502,{pvp=1,r=1,g={
 crit(3485,{achID=1172,id=9,pvp=1})}}),
-ach(206,{awp=30002,pvp=1,r=2,g={
+ach(206,{pvp=1,r=2,g={
 crit(3471,{achID=1172,id=10,pvp=1})}}),
-ach(1252,{awp=30002,pvp=1,r=1,g={
+ach(1252,{pvp=1,r=1,g={
 crit(3486,{achID=1172,id=10,pvp=1})}}),
-ach(207,{awp=30002,pvp=1,g={
+ach(207,{pvp=1,g={
 crit(3472,{achID=1172,id=11,pvp=1})}}),
-ach(1259,{awp=30002,pvp=1}),
+ach(1259,{pvp=1}),
 ach(713,{maps={63},minReputation={890,42000},pvp=1,r=2,u=12}),
 ach(712,{maps={63},minReputation={889,42000},pvp=1,r=1,u=12}),
-crit(6628,{achID=1785,awp=30002,id=4,maps={92,1339},providers={{"i",34753}},requireSkill=185,u=30})}}),
+crit(6628,{achID=1785,id=4,maps={92,1339},providers={{"i",34753}},requireSkill=185,u=30})}}),
 h(-31,{awp=30002,pvp=1,g={
 faction(890,{icon=132279,maps={63},OnTooltip=_.OnTooltipDB.ForWarsongGulch,pvp=1,r=2,g={
 crit(5334,{achID=907,id=3,pvp=1,r=2,u=12})}}),

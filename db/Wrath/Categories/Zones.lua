@@ -4,28 +4,28 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,cl,crit,cs,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy;
 categories.Zones=
 h(-732,{mapID=947,SortPriority=10,g={
-h(-12,{
-ach(973,{awp=30002}),
-ach(974,{awp=30002}),
-ach(975,{awp=30002}),
-ach(976,{awp=30002}),
-ach(977,{awp=30002}),
-ach(503,{awp=30002}),
-ach(504,{awp=30002}),
-ach(505,{awp=30002}),
-ach(506,{awp=30002}),
-ach(507,{awp=30002}),
-ach(508,{awp=30002}),
-ach(32,{awp=30002}),
-ach(978,{awp=30002,u=30,g={
+h(-12,{awp=30002,g={
+ach(973),
+ach(974),
+ach(975),
+ach(976),
+ach(977),
+ach(503),
+ach(504),
+ach(505),
+ach(506),
+ach(507),
+ach(508),
+ach(32),
+ach(978,{u=30,g={
 title(42,{u=30})}}),
-ach(31,{awp=30002}),
-ach(948,{awp=30002,r=2,u=11,g={
+ach(31),
+ach(948,{r=2,u=11,g={
 title(98,{u=30})}}),
-ach(762,{awp=30002,r=1,u=11,g={
+ach(762,{r=1,u=11,g={
 title(98,{u=30})}}),
-ach(941,{awp=30002,maps={119,1434,1951},sym={{"meta_achievement",939,938,940}},u=30}),
-ach(1833,{awp=30002,g={
+ach(941,{maps={119,1434,1951},sym={{"meta_achievement",939,938,940}},u=30}),
+ach(1833,{
 crit(8999,{achID=1833,id=1,providers={{"i",23164}}}),
 crit(9000,{achID=1833,id=1,providers={{"i",23176}}}),
 crit(9001,{achID=1833,id=1,providers={{"i",23246}}}),
@@ -214,9 +214,9 @@ crit(13257,{achID=1833,id=1,providers={{"i",43523}}}),
 crit(10504,{achID=1833,id=1,providers={{"i",37491}}}),
 crit(10978,{achID=1833,id=1,providers={{"i",37488}}}),
 crit(10618,{achID=1833,id=1,providers={{"i",46319}}}),
-crit(10498,{achID=1833,id=1,providers={{"i",37497}}})}}),
-ach(1576,{awp=30002,maps={121,1951},u=30}),
-ach(2556,{awp=30002,u=30,g={
+crit(10498,{achID=1833,id=1,providers={{"i",37497}}})}),
+ach(1576,{maps={121,1951},u=30}),
+ach(2556,{u=30,g={
 crit(9364,{achID=2556,id=1,providers={{"n",16068}},u=30}),
 crit(9366,{achID=2556,id=1,providers={{"n",4953}},u=30}),
 crit(9372,{achID=2556,id=1,providers={{"n",14881}},u=30}),
@@ -235,18 +235,18 @@ crit(9362,{achID=2556,id=1,providers={{"n",24174}},u=30}),
 crit(9361,{achID=2556,id=1,providers={{"n",9699}},u=30}),
 crit(9363,{achID=2556,id=1,providers={{"n",32258}},u=30}),
 crit(9368,{achID=2556,id=1,providers={{"n",4075}},u=30})}}),
-ach(1182,{awp=30002}),
+ach(1182),
 ach(942,{maps={1448,1946,1951},r=2,u=17,g={
 title(48,{u=30})}}),
 ach(943,{maps={1448,1946,1951},r=1,u=17,g={
 title(48,{u=30})}}),
-ach(1681,{awp=30002,r=2,rwp=50004,sym={{"meta_achievement",1678,1676,1262,41}},u=30,g={
+ach(1681,{r=2,rwp=50004,sym={{"meta_achievement",1678,1676,1262,41}},u=30,g={
 title(93,{u=30}),
 s(174770,43300,{b=1,f=9,q=4,u=30})}}),
-ach(1682,{awp=30002,r=1,rwp=50004,sym={{"meta_achievement",1680,1677,1274,1360}},u=30,g={
+ach(1682,{r=1,rwp=50004,sym={{"meta_achievement",1680,1677,1274,1360}},u=30,g={
 title(93,{u=30}),
 s(174770,43300,{b=1,f=9,q=4,u=30})}}),
-ach(1206,{awp=30002,description="|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",g={
+ach(1206,{description="|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",g={
 crit(3741,{achID=1206,coords={
 [114]={{72.6,41},{72.8,34.6},{73,38.6},{74.4,34.2}}},id=1,providers={{"n",25677}}}),
 crit(3744,{achID=1206,id=1,maps={1417,1429,1941},providers={{"n",6368}}}),
@@ -276,9 +276,9 @@ crit(3739,{achID=1206,coords={
 [114]={{60.8,47.8},{64.6,40.8},{68.6,40.4},{78.8,28.2}}},id=1,providers={{"n",25679}}}),
 crit(3759,{achID=1206,id=1,maps={1411,1413},providers={{"n",10685}}}),
 crit(3760,{achID=1206,id=1,maps={117,1424,1438,1454,1457},providers={{"n",1420}}})}}),
-ach(1244,{awp=30002}),
-ach(46,{awp=30002,sym={{"meta_achievement",42,43,44,45}},u=30,g={
-title(47,{u=30})}})}),
+ach(1244),
+ach(46,{sym={{"meta_achievement",42,43,44,45}},u=30,g={
+title(47,{u=30})}})}}),
 h(-56,{awp=30002,g={
 o(175738,{coords={
 [1420]={{61.7,52.1}},
@@ -476,8 +476,8 @@ o(175856,{coords={
 crit(3803,{achID=1244,id=1})}})}}),
 m(1414,{icon=236807,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},["zone-text-continent"]=1,g={
 h(-12,{
-ach(43),
-ach(1678,{r=2}),
+ach(43,{awp=30002}),
+ach(1678,{awp=30002,r=2}),
 ach(1680,{r=1,rwp=50004})}),
 m(1457,{icon=255141,isRaid=1,lore="The atmosphere inside the city is quiet and tranquil. It does not have the feeling of confinement that one would feel in Stormwind or Ironforge, where the buildings are grouped close together. Darnassus is open to the sky, and the graceful bridges spanning the lake around which it is built set the buildings wide apart. The elegant bridges, beautiful groves, and leaf-covered pathways that dot the city's landscape are testaments to the night elves' reverence for nature. One of Darnassus's most notable structures is the stunning Temple of the Moon, the center of worship for High Priestess Tyrande Whisperwind and her Sisters of Elune. The prime reason why the city's population is so low is that it is isolated: Teldrassil is a small island away from the main mass of Azeroth, and the only way to gain access from another continent is to fly or sail to Rut'theran Village, a small settlement at the base of Teldrassil, and from there step into the glowing portal to the city proper. Darnassus is home to night elves of all vocations and remains a symbol of the night elves' rich culture and glorious history.",g={
 h(-31,{
@@ -724,8 +724,8 @@ h(-12,{awp=30202,g={
 crit(11078,{achID=3556,e=101,id=1,r=2}),
 crit(11139,{achID=3581,e=101,id=1,r=1})}})}}),
 m(1454,{icon=255142,isRaid=1,lore="Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. Behind Orgrimmar's immense walls, elderly shaman pass their knowledge on to the Horde's newest generation of leaders, while warriors spar in the gladiatorial arena, honing their skills in preparation for the trials that await them in this dangerous land.",g={
-h(-12,{
-ach(1836,{providers={{"i",34486}},requireSkill=356,u=17})}),
+h(-12,{awp=30002,g={
+ach(1836,{providers={{"i",34486}},requireSkill=356,u=17})}}),
 h(-30,{
 exp(5170,{collectible=false})}),
 h(-31,{
@@ -9974,8 +9974,8 @@ s(117367,1493,{awp=100107,coords={
 [1441]={{20.6,22.2},{44.6,33.6}}},crs={4099},f=25,lvl=22,q=3,rwp=40003}),
 r(6692,{crs={10760},itemID=5773,learnedAt=150,q=2,requireSkill=197,rwp=40003})})}}),
 h(-388,{maps={1448,1452},["zone-text-areaID"]=1769,g={
-h(-12,{
-ach(944,{minReputation={576,42000}})}),
+h(-12,{awp=30002,g={
+ach(944,{minReputation={576,42000}})}}),
 h(-31,{awp=30002,g={
 faction(576,{icon=236696,OnTooltip=_.OnTooltipDB.ForTimbermawHold,g={
 crit(2014,{achID=942,id=1,r=2,u=17}),
@@ -10556,7 +10556,7 @@ r(18405,{isLimited=1,itemID=14468,learnedAt=260,q=1,requireSkill=197}),
 r(18417,{itemID=14481,learnedAt=275,q=1,requireSkill=197,rwp=20001,u=2})}}),
 n(10618,{coords={
 [1452]={{49.8,9.8}}},minReputation={589,42000},r=2,g={
-ach(3356,{providers={{"i",13086}},r=2}),
+ach(3356,{awp=30002,providers={{"i",13086}},r=2}),
 mnt(17229,{b=1,itemID=13086,lvl=40,q=4,r=2})}}),
 n(16015,{coords={
 [1452]={{58.9,78.4}}},g={
@@ -10606,8 +10606,8 @@ i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commm
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446},q=1})})}})}}),
 m(1415,{icon=236759,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},["zone-text-continent"]=1,g={
 h(-12,{
-ach(42),
-ach(1676,{r=2}),
+ach(42,{awp=30002}),
+ach(1676,{awp=30002,r=2}),
 ach(1677,{r=1,rwp=50004})}),
 m(1455,{icon=255138,isRaid=1,lore="Ironforge is the capital city of the dwarves, proud members of the Alliance. It is the ancestral home of the Bronzebeard dwarves. King Bronzebeard rules the kingdom of Khaz Modan from the throne room within the city. The Great Forge area gave the city its name.\n\nCarved into the stone heart of Khaz Modan, the mighty city of Ironforge is a testament to the dwarves' strength and resilience. The city is perhaps the most intricate of the Alliance cities, boasting many small passageways, shops built into the rock walls, and cavernous rooms. The feel of the city is a bustling, rowdy, and somewhat industrial one. However, it is predominantly safe-feeling and cozy; fires roar in the hearths of the inns and shops, and much dwarven laughing and frivolity is to be heard. Also, unlike Stormwind and Darnassus, the city is actually a massive cavern carved into the earth by the dwarves; the ceiling and floor are both hard stone.\n\nMainly because of the Deeprun Tram, linking Ironforge and Stormwind City, and the district of Tinker Town, Ironforge is one of the most racially diverse cities in the Alliance world. Dwarves predominate, of course, but you will find plenty of gnomes even outside of Tinker Town, and probably as many humans. You will find almost no night elves however, as they probably prefer more natural and open spaced environments.",g={
 h(-12,{awp=20001,g={
@@ -19579,12 +19579,12 @@ s(120197,5110,{crs={1867,1888,1889,1912,1913,1914,1915,1920,2120,3577,3578},desc
 i(3164,{crs={1765,1766,1923,12431},q=1}),
 r(6686,{crs={3530,3531},itemID=5771,learnedAt=70,q=1,requireSkill=197})})}}),
 m(1434,{icon=236844,lore="The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",g={
-h(-12,{
-ach(871,{awp=30002,sourceQuests={4621},u=11,g={
+h(-12,{awp=30002,g={
+ach(871,{sourceQuests={4621},u=11,g={
 title(111,{u=11})}}),
-ach(781,{awp=30002,g={
-crit(1293,{achID=42,id=1})}}),
-ach(940)}),
+ach(781,{
+crit(1293,{achID=42,id=1})}),
+ach(940)}}),
 h(-30,{
 exp(123,{awp=30002,g={
 crit(1217,{achID=781,id=1})}}),
@@ -19709,7 +19709,7 @@ q(603,{coords={
 [1416]={{18.8,78.5}}},lvl=32,qgs={2543},r=2,rwp=40003,sourceQuests={602}}),
 q(7838,{coords={
 [1434]={{29.6,47.4}}},cost={{"i",18706,12}},pvp=1,qgs={14508},repeatable=1,sourceQuests={7810},g={
-ach(396,{providers={{"i",19024}},pvp=1}),
+ach(396,{awp=30002,providers={{"i",19024}},pvp=1}),
 i(19024,{b=1,f=53,pvp=1,q=3})}}),
 q(7810,{coords={
 [1434]={{30.5,47.8}}},providers={{"i",18706}},pvp=1}),
@@ -20154,7 +20154,7 @@ n(14492,{coords={
 h(-56,{
 o(179697,{coords={
 [1434]={{30.5,47.8}}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
-ach(389,{pvp=1}),
+ach(389,{awp=30002,pvp=1}),
 i(18706,{b=1,f=53,lvl=35,pvp=1,q=2}),
 s(129615,18711,{f=6,loc=43,lvl=45,pvp=1,q=3}),
 s(129614,18710,{f=5,loc=43,lvl=45,pvp=1,q=3}),

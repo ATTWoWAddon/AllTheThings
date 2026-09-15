@@ -1,5 +1,3 @@
-12.0.7.67227
-ach(62413),	-- The Curse of Ula'tek
 12.1.5.69594
 ach(62500),	-- Sweet Tooth
 ach(62501),	-- I Ain't Afraid of no Ghost

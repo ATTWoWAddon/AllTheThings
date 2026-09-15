@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,cat,cl,cu,flt,h,i,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
 h(-698,{SortPriority=15,g={
-x(1,{
+x(1,{awp=10100,g={
 flt(3,{
 s(123297,9938,{f=3,lvl=43,q=2}),
 s(201077,14116,{f=3,lvl=9,q=1}),
@@ -3635,7 +3635,7 @@ i(9260,{coords={
 i(12205,{coords={
 [70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",q=1}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",q=2}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225},q=1})})}),
+i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225},q=1})})}}),
 x(2,{awp=20003,u=17,g={
 flt(3,{u=17,g={
 s(135398,25043,{f=3,lvl=70,q=2,u=17}),
@@ -4852,8 +4852,8 @@ r(31434,{itemID=24296,learnedAt=350,q=3,requireSkill=197,u=17}),
 r(31442,{itemID=24302,learnedAt=365,q=4,requireSkill=197,u=17}),
 r(31449,{itemID=24306,learnedAt=365,q=4,requireSkill=197,u=17}),
 r(31441,{itemID=24301,learnedAt=350,q=3,requireSkill=197,u=17})}})}})}}),
-x(3,{awp=30002,u=30,g={
-flt(3,{u=30,g={
+x(3,{awp=30003,u=30,g={
+flt(3,{awp=30002,u=30,g={
 s(170817,36411,{f=3,lvl=75,q=2,u=30}),
 s(170816,36410,{f=3,lvl=74,q=2,u=30}),
 s(171663,37797,{f=3,lvl=77,q=3,u=30}),
@@ -4871,15 +4871,15 @@ s(170810,36404,{f=3,lvl=68,q=2,u=30}),
 s(170821,36415,{f=3,lvl=79,q=2,u=30}),
 s(170812,36406,{f=3,lvl=70,q=2,u=30}),
 s(171625,37756,{f=3,lvl=74,q=3,u=30})}}),
-flt(102,{u=30,g={
+flt(102,{awp=30002,u=30,g={
 toy(37254,{b=1,lvl=80,q=4,u=30})}}),
-flt(50,{u=30,g={
+flt(50,{awp=30002,u=30,g={
 i(44663,{crs={32357,32358,32361,32377,32386,32398,32400,32409,32417,32422,32429,32438,32447,32471,32475,32481,32485,32487,32491,32495,32500,32501,32517,32630,33776,35189,38453},description="Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",q=1,u=30}),
 i(43297,{lvl=77,q=2,requireSkill=755,u=30}),
 i(36812,{description="Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",u=30})}}),
-flt(53,{u=30,g={
+flt(53,{awp=30002,u=30,g={
 i(37835,{f=53,lvl=80,q=4,u=30})}}),
-flt(52,{u=30,g={
+flt(52,{awp=30002,u=30,g={
 i(36428,{f=52,lvl=78,q=2,u=30}),
 i(36424,{f=52,lvl=74,q=2,u=30}),
 i(36421,{f=52,lvl=71,q=2,u=30}),
@@ -4901,7 +4901,7 @@ i(36426,{f=52,lvl=76,q=2,u=30}),
 i(37751,{f=52,lvl=70,q=3,u=30}),
 i(37822,{f=52,lvl=77,q=3,u=30}),
 i(37820,{f=52,lvl=72,q=3,u=30})}}),
-flt(51,{u=30,g={
+flt(51,{awp=30002,u=30,g={
 i(37823,{f=51,lvl=77,q=3,u=30}),
 i(36435,{f=51,lvl=71,q=2,u=30}),
 i(36437,{f=51,lvl=73,q=2,u=30}),
@@ -4920,7 +4920,7 @@ i(36432,{f=51,lvl=68,q=2,u=30}),
 i(36433,{f=51,lvl=69,q=2,u=30}),
 i(37794,{f=51,lvl=78,q=3,u=30}),
 i(37748,{f=51,lvl=69,q=3,u=30})}}),
-flt(1,{u=30,g={
+flt(1,{awp=30002,u=30,g={
 s(171681,37817,{f=1,lvl=73,q=3,u=30}),
 s(170850,36472,{f=1,lvl=80,q=2,u=30}),
 s(170840,36462,{f=1,lvl=70,q=2,u=30}),
@@ -4936,7 +4936,7 @@ s(170847,36469,{f=1,lvl=77,q=2,u=30}),
 s(170838,36460,{f=1,lvl=68,q=2,u=30}),
 s(170841,36463,{f=1,lvl=71,q=2,u=30}),
 s(170845,36467,{f=1,lvl=75,q=2,u=30})}}),
-flt(8,{u=30,g={
+flt(8,{awp=30002,u=30,g={
 s(171619,37747,{f=8,lvl=69,q=3,u=30}),
 s(171676,37810,{f=8,lvl=76,q=3,u=30}),
 s(170832,36454,{awp=60002,f=8,lvl=76,q=2,u=1}),
@@ -4954,7 +4954,7 @@ s(170830,36452,{f=8,lvl=74,q=2,u=30}),
 s(170828,36450,{f=8,lvl=72,q=2,u=30}),
 s(170827,36449,{f=8,lvl=71,q=2,u=30}),
 s(175250,44313,{f=8,lvl=80,q=4,u=30})}}),
-cat(227,{u=30,g={
+cat(227,{awp=30002,u=30,g={
 flt(21,{u=30,g={
 s(170954,36576,{f=21,lvl=72,q=2,u=30}),
 s(170952,36574,{f=21,lvl=70,q=2,rwp=60002,u=30}),
@@ -5232,11 +5232,11 @@ s(171045,36667,{f=27,lvl=79,q=2,u=30}),
 s(171035,36657,{f=27,lvl=69,q=2,u=30}),
 s(171040,36662,{f=27,lvl=74,q=2,u=30}),
 s(171043,36665,{f=27,lvl=77,q=2,u=30})}})}}),
-cat(258,{u=30,g={
+cat(258,{awp=30002,u=30,g={
 s(171616,37744,{f=6,loc=47,lvl=69,q=3,u=30}),
 s(171621,37752,{f=4,loc=47,lvl=70,q=3,u=30}),
 s(171631,37763,{f=5,loc=47,lvl=71,q=3,u=30})}}),
-flt(200,{u=30,g={
+flt(200,{awp=30002,u=30,g={
 prof(185,{u=30,g={
 r(58523,{b=1,itemID=43509,learnedAt=350,q=2,requireSkill=185,u=30}),
 r(58525,{b=1,itemID=43510,learnedAt=350,q=2,requireSkill=185,u=30}),
@@ -5269,32 +5269,32 @@ r(55996,{itemID=42175,learnedAt=400,q=2,requireSkill=197,u=30}),
 r(55993,{itemID=42172,learnedAt=400,q=2,requireSkill=197,u=30}),
 r(55997,{itemID=42177,learnedAt=400,q=2,requireSkill=197,u=30}),
 r(55999,{itemID=42178,learnedAt=400,q=2,requireSkill=197,u=30})}})}}),
-cat(257,{u=30,g={
+cat(257,{awp=30002,u=30,g={
 s(171642,37774,{f=6,loc=46,lvl=72,q=3,u=30}),
 s(171624,37755,{f=4,loc=46,lvl=73,q=3,u=30}),
 s(171633,37765,{f=5,loc=46,lvl=74,q=3,u=30}),
 s(171636,37768,{f=5,loc=46,lvl=77,q=3,u=30}),
 s(171615,37743,{f=7,loc=46,lvl=69,q=3,u=30}),
 s(201576,37786,{f=7,loc=46,lvl=74,q=3,u=30})}}),
-cat(255,{u=30,g={
+cat(255,{awp=30002,u=30,g={
 s(171656,37789,{f=7,loc=44,lvl=76,q=3,u=30}),
 s(201575,37782,{f=7,loc=44,lvl=70,q=3,u=30}),
 s(171661,37795,{f=7,loc=44,lvl=72,q=3,u=30}),
 s(171649,37781,{f=6,loc=44,lvl=78,q=3,u=30}),
 s(171627,37759,{f=4,loc=44,lvl=77,q=3,u=30})}}),
-cat(254,{u=30,g={
+cat(254,{awp=30002,u=30,g={
 s(171644,37776,{f=6,loc=43,lvl=74,q=3,u=30}),
 s(171645,37777,{f=6,loc=43,lvl=75,q=3,u=30}),
 s(171634,37766,{f=5,loc=43,lvl=75,q=3,u=30}),
 s(171628,37760,{f=4,loc=43,lvl=77,q=3,u=30}),
 s(171639,37771,{f=5,loc=43,lvl=78,q=3,u=30})}}),
-cat(253,{u=30,g={
+cat(253,{awp=30002,u=30,g={
 s(171659,37792,{f=7,loc=42,lvl=77,q=3,u=30}),
 s(171638,37770,{f=5,loc=42,lvl=77,q=3,u=30}),
 s(171648,37780,{f=6,loc=42,lvl=77,q=3,u=30}),
 s(171617,37745,{f=5,loc=42,lvl=69,q=3,u=30}),
 s(171622,37753,{f=4,loc=42,lvl=71,q=3,u=30})}}),
-cat(252,{u=30,g={
+cat(252,{awp=30002,u=30,g={
 s(171651,37783,{f=7,loc=41,lvl=71,q=3,u=30}),
 s(171626,37757,{f=4,loc=41,lvl=75,q=3,u=30}),
 s(171632,37764,{f=5,loc=41,lvl=72,q=3,u=30}),
@@ -5302,14 +5302,14 @@ s(171637,37769,{f=5,loc=41,lvl=77,q=3,u=30}),
 s(171647,37779,{f=6,loc=41,lvl=77,q=3,u=30}),
 s(175249,44312,{f=7,loc=41,lvl=80,q=4,u=30}),
 s(171640,37772,{f=6,loc=41,lvl=70,q=3,u=30})}}),
-cat(251,{u=30,g={
+cat(251,{awp=30002,u=30,g={
 s(171654,37787,{f=7,loc=40,lvl=75,q=3,u=30}),
 s(171643,37775,{f=6,loc=40,lvl=73,q=3,u=30}),
 s(171618,37746,{f=4,loc=40,lvl=69,q=3,u=30}),
 s(171635,37767,{f=5,loc=40,lvl=76,q=3,u=30}),
 s(171623,37754,{f=4,loc=40,lvl=72,q=3,u=30}),
 s(171660,37793,{f=7,loc=40,lvl=77,q=3,u=30})}}),
-flt(7,{u=30,g={
+flt(7,{awp=30002,u=30,g={
 s(170715,36309,{f=7,loc=42,lvl=69,q=2,u=30}),
 s(170713,36307,{f=7,loc=45,lvl=69,q=2,u=30}),
 s(170719,36313,{f=7,loc=41,lvl=69,q=2,u=30}),
@@ -5438,7 +5438,7 @@ s(170721,36315,{f=7,loc=45,lvl=70,q=2,u=30}),
 s(170725,36319,{f=7,loc=40,lvl=70,q=2,u=30}),
 s(170726,36320,{f=7,loc=46,lvl=70,q=2,u=30}),
 s(170722,36316,{f=7,loc=47,lvl=70,q=2,u=30})}}),
-flt(6,{u=30,g={
+flt(6,{awp=30002,u=30,g={
 s(170632,36226,{f=6,loc=43,lvl=72,q=2,u=30}),
 s(170627,36221,{f=6,loc=42,lvl=72,q=2,u=30}),
 s(170628,36222,{f=6,loc=44,lvl=72,q=2,u=30}),
@@ -5567,7 +5567,7 @@ s(170658,36252,{f=6,loc=47,lvl=76,q=2,u=30}),
 s(170661,36255,{f=6,loc=40,lvl=76,q=2,u=30}),
 s(170662,36256,{f=6,loc=46,lvl=76,q=2,u=30}),
 s(170663,36257,{f=6,loc=41,lvl=76,q=2,u=30})}}),
-flt(5,{u=30,g={
+flt(5,{awp=30002,u=30,g={
 s(170512,36106,{f=5,loc=43,lvl=71,q=2,u=30}),
 s(170506,36100,{f=5,loc=47,lvl=71,q=2,u=30}),
 s(170510,36104,{f=5,loc=46,lvl=71,q=2,u=30}),
@@ -5696,7 +5696,7 @@ s(170540,36134,{f=5,loc=44,lvl=75,q=2,u=30}),
 s(170539,36133,{f=5,loc=42,lvl=75,q=2,u=30}),
 s(170542,36136,{f=5,loc=46,lvl=75,q=2,u=30}),
 s(170543,36137,{f=5,loc=41,lvl=75,q=2,u=30})}}),
-flt(4,{u=30,g={
+flt(4,{awp=30002,u=30,g={
 s(170425,36019,{f=4,loc=45,lvl=75,q=2,u=30}),
 s(170426,36020,{f=4,loc=47,lvl=75,q=2,u=30}),
 s(170432,36026,{f=4,loc=43,lvl=75,q=2,u=30}),
@@ -5825,7 +5825,7 @@ s(170407,36001,{f=4,loc=41,lvl=72,q=2,u=30}),
 s(170403,35997,{f=4,loc=42,lvl=72,q=2,u=30}),
 s(170401,35995,{f=4,loc=45,lvl=72,q=2,u=30}),
 s(170402,35996,{f=4,loc=47,lvl=72,q=2,u=30})}}),
-cat(256,{u=30,g={
+cat(256,{awp=30002,u=30,g={
 s(201577,37790,{f=7,loc=45,lvl=77,q=3,u=30}),
 s(171652,37785,{f=7,loc=45,lvl=73,q=3,u=30}),
 s(171646,37778,{f=6,loc=45,lvl=76,q=3,u=30}),
@@ -5833,7 +5833,7 @@ s(171630,37762,{f=5,loc=45,lvl=70,q=3,u=30}),
 s(175246,44309,{f=4,loc=45,lvl=80,q=4,u=30}),
 s(171629,37761,{f=4,loc=45,lvl=78,q=3,u=30}),
 s(171641,37773,{f=6,loc=45,lvl=71,q=3,u=30})}}),
-flt(56,{u=30,g={
+flt(56,{awp=30002,u=30,g={
 i(44700,{coords={
 [114]={{40.2,19.2},{60.9,50.6},{66.6,40.7},{72.2,44.5},{79,41.8},{79.6,31.9}},
 [117]={{21.3,28.8}},
@@ -7347,18 +7347,18 @@ s(272814,88150,{f=25,lvl=90,q=4}),
 s(272813,88149,{f=20,lvl=90,q=4})}}),
 i(16883,{q=1})}}),
 ah(921,{description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
-x(1,{
+x(1,{awp=10100,g={
 i(6150,{description="Can be pickpocketed from Classic humanoids."}),
-i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})}),
-x(3,{
+i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})}}),
+x(3,{awp=30003,g={
 i(37674,{coords={
 [115]={{47.8,49.4}}},crs={27539},description="If only they would have read this."}),
 flt(55,{
 i(40202,{f=55,lvl=75,q=1})}),
-flt(102,{awp=30002,g={
-toy(36863,{description="Can be pickpocketed from Northrend humanoids.",q=1}),
-toy(36862,{description="Can be pickpocketed from Northrend humanoids.",q=1})}})}),
-x(4,{awp=40001,g={
 flt(102,{
-toy(63269,{description="Can be pickpocketed from Cataclysm humanoids.",q=1})})}})}})}})
+toy(36863,{awp=30002,description="Can be pickpocketed from Northrend humanoids.",q=1}),
+toy(36862,{awp=30002,description="Can be pickpocketed from Northrend humanoids.",q=1})})}}),
+x(4,{awp=40003,g={
+flt(102,{
+toy(63269,{awp=40001,description="Can be pickpocketed from Cataclysm humanoids.",q=1})})}})}})}})
 end)

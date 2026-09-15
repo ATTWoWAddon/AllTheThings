@@ -271,9 +271,9 @@ crit(9368,{achID=2556,id=1,providers={{"n",4075}},u=30})}}),
 ach(5518,{awp=40003,maps={198,241,249}}),
 ach(4827,{awp=40003}),
 ach(1182,{awp=30002}),
-ach(942,{maps={1448,1946,1951},r=2,u=17,g={
+ach(942,{awp=30002,maps={1448,1946,1951},r=2,u=17,g={
 title(48,{u=30})}}),
-ach(943,{maps={1448,1946,1951},r=1,u=17,g={
+ach(943,{awp=30002,maps={1448,1946,1951},r=1,u=17,g={
 title(48,{u=30})}}),
 ach(4958,{awp=40003,maps={121,241,1951}}),
 ach(5794,{awp=40200}),
@@ -882,7 +882,7 @@ crit(63510,{achID=5852,id=1,r=1,rwp=50004})}}),
 ach(5475,{awp=40200,r=1,requireSkill=185,u=40,g={
 crit(16244,{achID=5475,id=1,providers={{"s",99249}},r=1,u=40}),
 crit(63621,{achID=5846,id=1,r=1,rwp=50004,u=40})}}),
-ach(1836,{providers={{"i",34486}},requireSkill=356,u=17}),
+ach(1836,{awp=30002,providers={{"i",34486}},requireSkill=356,u=17}),
 crit(18295,{achID=6031,awp=40300,e=1,id=1,providers={{"i",74142}},r=1})}),
 h(-30,{
 exp(5170,{collectible=false})}),
@@ -18057,8 +18057,8 @@ s(117367,1493,{awp=100107,coords={
 [1441]={{20.6,22.2},{44.6,33.6}}},crs={4099},f=25,lvl=22,q=3,rwp=40003,u=2}),
 r(6692,{crs={10760},itemID=5773,learnedAt=150,q=2,requireSkill=197,rwp=40003,u=2})})}}),
 h(-388,{maps={1448,1452},["zone-text-areaID"]=1769,g={
-h(-12,{
-ach(944,{minReputation={576,42000}})}),
+h(-12,{awp=30002,g={
+ach(944,{minReputation={576,42000}})}}),
 h(-31,{awp=30002,g={
 faction(576,{icon=236696,OnTooltip=_.OnTooltipDB.ForTimbermawHold,g={
 crit(2014,{achID=942,id=1,r=2,u=17}),
@@ -19226,7 +19226,7 @@ crit(16182,{achID=5443,coords={
 [1452]={{67.6,54.2}}},crs={7457,7458,7459,7460,49235},id=1,providers={{"s",93165}}})}}),
 ach(857,{awp=30002,g={
 crit(1503,{achID=43,id=1})}}),
-ach(3356,{providers={{"i",13086}},r=2}),
+ach(3356,{awp=30002,providers={{"i",13086}},r=2}),
 ach(4940,{awp=40003,sourceQuests={28472,28628,28639,28710,28722,28742,28782,28828,28830,28831,28842,28848},g={
 crit(6134,{achID=1678,id=3,r=2}),
 crit(6134,{achID=1680,id=1,r=1,rwp=50004})}})}),
@@ -36369,7 +36369,7 @@ q(603,{coords={
 [1416]={{18.8,78.5}}},lvl=32,qgs={2543},r=2,rwp=40003,sourceQuests={602},u=2}),
 q(7838,{coords={
 [210]={{45,25.4}}},cost={{"i",18706,12}},pvp=1,qgs={14508},repeatable=1,sourceQuests={7810},g={
-ach(396,{providers={{"i",19024}},pvp=1}),
+ach(396,{awp=30002,providers={{"i",19024}},pvp=1}),
 i(19024,{b=1,f=53,pvp=1,q=3})}}),
 q(7810,{coords={
 [210]={{46.6,26.1}}},providers={{"i",18706}},pvp=1}),
@@ -36920,7 +36920,7 @@ n(14492,{coords={
 h(-56,{
 o(179697,{coords={
 [210]={{46.6,26.1}}},description="WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",pvp=1,g={
-ach(389,{pvp=1}),
+ach(389,{awp=30002,pvp=1}),
 i(18706,{b=1,f=53,lvl=35,pvp=1,q=2}),
 s(129615,18711,{f=6,loc=43,lvl=45,pvp=1,q=3}),
 s(129614,18710,{f=5,loc=43,lvl=45,pvp=1,q=3}),

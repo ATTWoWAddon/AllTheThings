@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,crit,flt,h,i,mnt,n,o,p,prof,q,r,s,sp,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
 h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
-x(1,{
+x(1,{awp=10100,g={
 prof(171,{
 h(-22,{
 i(3371,{description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",q=1}),
@@ -1086,8 +1086,8 @@ i(21151,{f=55,providers={{"o",180655},{"o",180658},{"o",180662},{"o",180682},{"o
 i(20709,{f=55,maps_disp={10,21,47,49,52,62,76},providers={{"o",180655}},q=1})}),
 flt(57,{
 s(121176,6366,{description="Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",f=57,learnedAt=50,lvl=15,maps_disp={14,25,49,50,56,63},q=1,requireSkill=356})}),
-flt(200,{awp=20300,g={
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})}}),
+flt(200,{
+r(43308,{awp=20300,b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})}),
 i(13888,{description="Can be caught on the seaside.",lvl=45,maps_disp={17,51},q=1}),
 i(6522,{coords={
 [10]={{37.3,45.9},{39.9,74.9},{56,80.6}}},f=55,providers={{"o",180658}},q=1}),
@@ -1127,15 +1127,15 @@ o(216764,{awp=50100,description="Can be found in inland waters and waterways.",m
 o(180658,{coords={
 [10]={{37.3,45.9},{39.9,74.9},{56,80.6}}}}),
 o(180712,{description="Can be found on the seaside.",maps={17,51,71}}),
-o(180901,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={50,210},g={
-crit(3873,{achID=1257,id=3,maps={50,210},providers={{"o",180901}},requireSkill=356})}}),
+o(180901,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={50,210},g={
+crit(3873,{achID=1257,awp=30002,id=3,maps={50,210},providers={{"o",180901}},requireSkill=356})}}),
 o(180655,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={10,21,47,49,52,62,76}}),
-o(180751,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={17,23,51,64,71},g={
-crit(3876,{achID=1257,id=6,maps={17,23,51,64,71},providers={{"o",180751}},requireSkill=356})}}),
-o(180662,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={25,56,63,65},g={
-crit(3874,{achID=1257,id=4,maps={14,25,56,63,65},providers={{"o",180662}},requireSkill=356})}}),
-o(180685,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={22,66,69,70,71},g={
-crit(3875,{achID=1257,id=5,maps={22,66,69,70},providers={{"o",180685}},requireSkill=356})}})}}),
+o(180751,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={17,23,51,64,71},g={
+crit(3876,{achID=1257,awp=30002,id=6,maps={17,23,51,64,71},providers={{"o",180751}},requireSkill=356})}}),
+o(180662,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={25,56,63,65},g={
+crit(3874,{achID=1257,awp=30002,id=4,maps={14,25,56,63,65},providers={{"o",180662}},requireSkill=356})}}),
+o(180685,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={22,66,69,70,71},g={
+crit(3875,{achID=1257,awp=30002,id=5,maps={22,66,69,70},providers={{"o",180685}},requireSkill=356})}})}}),
 prof(182,{description="It is beneficial to gather all herbs in the area even if you only need specific herbs because the node spawns are often connected.",g={
 ah(2366,{type="s",g={
 o(142141,{learnedAt=220,maps={22,23,300,317},requireSkill=182,rwp=40003,u=2}),
@@ -1225,8 +1225,8 @@ flt(50,{
 i(11020,{b=1,cost={{"i",11022,1},{"i",11018,2}},q=1,rwp=40003,u=2,g={
 i(11024,{b=1,q=1,u=2,g={
 i(11040,{q=1,u=2})}})}})}),
-h(-22,{awp=50004,g={
-s(271198,85663,{collectible=false,description="Can only be bought from Trade suppliers.",f=2,q=1,requireSkill=182})}})}}),
+h(-22,{
+s(271198,85663,{awp=50004,collectible=false,description="Can only be bought from Trade suppliers.",f=2,q=1,requireSkill=182})})}}),
 prof(773,{
 h(-22,{
 i(10648,{description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",rwp=50004,u=2}),
@@ -1939,8 +1939,8 @@ s(130855,20296,{f=6,loc=44,lvl=49,q=3}),
 s(126983,15046,{awp=40300,f=6,loc=46,lvl=49,q=3}),
 s(126984,15047,{f=6,loc=42,lvl=56,q=3,rwp=60002}),
 s(140317,29971,{awp=20005,b=1,f=6,loc=46,lvl=45,q=3,requireSkill=165,u=17})})}),
-flt(2,{awp=20300,g={
-s(201477,34086,{f=2,filterForRWP=2,loc=47,q=1,rwp=70302})}}),
+flt(2,{
+s(201477,34086,{awp=20300,f=2,filterForRWP=2,loc=47,q=1,rwp=70302})}),
 flt(50,{
 i(18251,{lvl=50,q=3}),
 i(4236,{q=1}),
@@ -2372,8 +2372,8 @@ i(2324,{description="Can be bought from Tailoring Suppliers, as well as some Tra
 i(6261,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(10290,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(4341,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1})}),
-flt(50,{awp=100105,g={
-i(18258,{lvl=42,q=2,rwp=40003,u=2})}}),
+flt(50,{
+i(18258,{awp=100105,lvl=42,q=2,rwp=40003,u=2})}),
 flt(56,{
 i(2996,{q=1}),
 i(4339,{q=1}),
@@ -2386,8 +2386,8 @@ i(14342,{coords={
 [76]={{10.77,74.71}},
 [89]={{43.1,80.27},{48.05,18.54}},
 [95]={{13.13,26.23}},
-[108]={{45.02,23.54}}},description="Coordinates are for select Moonwells around the world.",q=1})})})}),
-x(2,{u=17,g={
+[108]={{45.02,23.54}}},description="Coordinates are for select Moonwells around the world.",q=1})})})}}),
+x(2,{awp=20003,u=17,g={
 prof(171,{awp=20005,u=17,g={
 h(-26,{u=17,g={
 r(41458,{awp=20100,learnedAt=360,requireSkill=171,u=17}),
@@ -3494,8 +3494,8 @@ i(21845,{coords={
 i(24272,{coords={
 [104]={{58.3,70.9}}},q=3,u=17}),
 i(24271,{maps_disp={109},q=3,u=17})}})}})}}),
-x(3,{
-prof(171,{awp=30003,u=30,g={
+x(3,{awp=30003,g={
+prof(171,{u=30,g={
 h(-22,{u=30,g={
 i(40411,{awp=30002,description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2})}}),
 h(-26,{u=30,g={
@@ -3615,7 +3615,7 @@ s(209046,64460,{b=2,cost={{"c",399,130}},f=21,lvl=71,q=4,u=30}),
 i(64461,{b=1,cost={{"c",399,45}},u=30}),
 i(64467,{b=1,cost={{"c",399,45}},u=30}),
 toy(69775,{awp=40100,b=1,cost={{"c",399,100}},q=3,u=30})}})}}),
-prof(164,{awp=30003,u=30,g={
+prof(164,{u=30,g={
 h(-88,{u=30,g={
 s(175821,45559,{awp=30100,f=7,loc=47,lvl=80,q=4,u=30}),
 s(175812,45550,{awp=30100,f=7,loc=45,lvl=80,q=4,u=30}),
@@ -3746,7 +3746,7 @@ s(175479,45085,{awp=30100,f=20,lvl=80,q=4,u=30}),
 s(173594,41186,{b=1,f=25,lvl=78,q=3,rwp=40003,u=2}),
 s(173595,41187,{b=1,f=25,lvl=78,q=3,rwp=40003,u=2}),
 s(173596,41188,{b=1,f=24,lvl=78,q=3,u=30})}})}}),
-prof(185,{awp=30003,u=30,g={
+prof(185,{u=30,g={
 i(43491,{f=55,q=1,u=30}),
 i(42942,{f=55,lvl=70,q=1,u=30}),
 i(45932,{awp=30100,f=55,lvl=75,q=1,u=30}),
@@ -3793,7 +3793,7 @@ i(43001,{f=55,lvl=70,q=1,u=30}),
 i(34757,{f=55,lvl=70,q=1,u=30}),
 i(44953,{awp=30008,f=55,lvl=70,q=1,u=30}),
 i(34750,{f=55,lvl=70,q=1,u=30})}}),
-prof(333,{awp=30003,u=30,g={
+prof(333,{u=30,g={
 ah(13262,{type="s",u=30,g={
 i(34054,{description="Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",q=1,u=30}),
 i(34055,{description="Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",q=2,u=30}),
@@ -3874,7 +3874,7 @@ i(38965,{q=3,u=30}),
 i(38972,{q=3,u=30}),
 i(44467,{awp=30100,q=3,u=30}),
 i(44466,{awp=30100,q=3,u=30})}})}}),
-prof(202,{awp=30003,u=30,g={
+prof(202,{u=30,g={
 h(-22,{u=30,g={
 i(39684,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",q=1,u=30}),
 i(40533,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",q=1,u=30})}}),
@@ -3947,10 +3947,10 @@ n(32522,{coords={
 [123]={{84,71.5}}},description="Too few and far between to be reliably farmed on it's own.",requireSkill=202,u=30}),
 n(32544,{coords={
 [114]={{66,27}}},description="Too few and far between to be reliably farmed on it's own.",maps={119},requireSkill=202,u=30})}})}}),
-prof(129,{awp=30003,u=30,g={
+prof(129,{u=30,g={
 i(34721,{f=55,lvl=50,q=1,requireSkill=129,u=30}),
 i(34722,{f=55,lvl=65,q=1,requireSkill=129,u=30})}}),
-prof(356,{awp=30003,u=30,g={
+prof(356,{u=30,g={
 i(41812,{maps_disp={119},q=1,u=30}),
 i(45905,{description="Kill an animal and then swim in a body of water to create a pool to fish from.",providers={{"o",194479}},q=1,u=30}),
 i(41808,{maps_disp={114,115,116,117,118,119,120,121,123,127},q=1,u=30}),
@@ -4026,7 +4026,7 @@ crit(5287,{achID=1517,id=11,u=30})}}),
 o(194479,{maps={114},u=30}),
 flt(200,{u=30,g={
 r(43308,{b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356,u=30})}})}}),
-prof(182,{awp=30003,u=30,g={
+prof(182,{u=30,g={
 ah(2366,{type="s",u=30,g={
 o(191019,{learnedAt=400,maps={119},requireSkill=182,u=30}),
 o(191303,{coords={
@@ -4052,7 +4052,7 @@ i(36907,{coords={
 [121]={{33.2,66.7}}},description="Found around the lower tiers of Zul'Drak.",providers={{"o",190170}},q=1,u=30}),
 i(36904,{coords={
 [114]={{51.6,45}}},description="Found around inland waters and waterways.",maps_disp={116,117,119},providers={{"o",190169}},q=1,u=30})}})}}),
-prof(773,{awp=30003,u=30,g={
+prof(773,{u=30,g={
 ah(51005,{type="s",u=30,g={
 i(39343,{providers={{"i",36901},{"i",36903},{"i",36904},{"i",36905},{"i",36906},{"i",36907},{"i",37921},{"i",39970}},q=1,u=30}),
 i(43109,{providers={{"i",36901},{"i",36903},{"i",36904},{"i",36905},{"i",36906},{"i",36907},{"i",37921},{"i",39970}},q=2,u=30})}}),
@@ -4126,7 +4126,7 @@ i(44290,{q=3,u=30}),
 i(44291,{q=3,u=30}),
 i(44292,{q=3,u=30}),
 i(44293,{q=3,u=30})}})}})}}),
-prof(755,{awp=30003,u=30,g={
+prof(755,{u=30,g={
 ah(31252,{type="s",u=30,g={
 i(46849,{awp=30200,cost={{"i",36910,5}},q=2,u=32}),
 i(36917,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={{"i",36909},{"i",36910},{"i",36912}},q=2,u=30}),
@@ -4530,7 +4530,7 @@ i(44063,{b=1,f=53,lvl=75,q=3,requireSkill=755,u=30}),
 i(42341,{b=1,f=53,lvl=75,q=3,requireSkill=755,u=30}),
 i(42413,{b=1,f=53,lvl=75,q=3,requireSkill=755,u=30}),
 i(42395,{b=1,f=53,lvl=75,q=3,requireSkill=755,u=30})}})}}),
-prof(165,{awp=30003,u=30,g={
+prof(165,{u=30,g={
 h(-88,{u=30,g={
 h(-89,{u=30,g={
 s(172039,38441,{f=3,lvl=73,q=3,u=30}),
@@ -4690,7 +4690,7 @@ i(38372,{lvl=70,q=3,u=30}),
 i(44448,{f=113,q=3,rwp=40001,u=2}),
 i(44446,{f=113,q=3,u=30}),
 i(38399,{f=113,q=3,u=30})}})}}),
-prof(186,{awp=30003,u=30,g={
+prof(186,{u=30,g={
 ah(2575,{type="s",u=30,g={
 o(189978,{learnedAt=350,maps={114,115,116,117,121},requireSkill=186,u=30}),
 o(189979,{learnedAt=375,maps={114,115,116,117,121},requireSkill=186,u=30}),
@@ -4705,7 +4705,7 @@ i(36916,{cost={{"i",36909,1}},q=1,u=30}),
 i(36913,{cost={{"i",36912,2}},q=1,u=30}),
 i(41163,{cost={{"i",36910,2}},q=2,u=30}),
 i(37663,{cost={{"i",35627,1},{"i",36860,1},{"i",35624,1},{"i",41163,3}},OnTooltip=_.OnTooltipDB.IsSpellOnCooldown_55208,q=2,u=30})}})}}),
-prof(393,{awp=30003,description="The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",u=30,g={
+prof(393,{description="The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",u=30,g={
 i(44128,{description="Arctic Fur is a rare skinned drop from any skinnable creatures.",q=3,u=30}),
 i(33568,{description="Can be skinned from any skinnable WotLK mobs.",q=1,u=30}),
 i(33567,{q=1,u=30,g={
@@ -4723,7 +4723,7 @@ i(38558,{coords={
 [114]={{41.1,58.2},{54.9,70.4},{67.4,32}},
 [115]={{17.1,49.5},{26.2,49.5}},
 [118]={{53.4,76},{79.1,67.2}}},crs={24562,24563,24566,25294,25582,25619,25622,26402,26413,26445,26605,26606,30204,30205,30333,30541,30543,31037,31039,31747,31780},maps_disp={132,157},q=1,u=30})}}),
-prof(197,{awp=30003,u=30,g={
+prof(197,{u=30,g={
 h(-88,{u=30,g={
 s(174127,42096,{f=4,loc=47,lvl=80,q=3,u=30}),
 s(202054,47585,{awp=30200,f=4,loc=43,lvl=80,q=4,r=2,u=32}),
@@ -4822,7 +4822,7 @@ i(41510,{q=1,u=30}),
 i(41511,{q=2,u=30}),
 i(41593,{q=3,u=30}),
 i(41594,{q=3,u=30}),
-i(41595,{q=3,u=30})}})}})}),
+i(41595,{q=3,u=30})}})}})}}),
 x(4,{awp=40003,g={
 prof(171,{u=40,g={
 flt(55,{u=40,g={

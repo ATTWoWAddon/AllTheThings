@@ -5,13 +5,13 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,cat,h,i,prof,q,r,x=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateExpansion;
 categories.Professions=
 h(-44,{SortPriority=25,g={
-h(-12,{
+h(-12,{awp=10100,g={
 x(1,{
 ach(732),
 ach(731),
-ach(116)})}),
-prof(171,{
-x(1,{requireSkill=171})}),
+ach(116)})}}),
+prof(171,{awp=10100,g={
+x(1,{requireSkill=171})}}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
 r(24493,{lvl=20,rank=1}),
 r(24497,{lvl=30,rank=2}),
@@ -188,7 +188,7 @@ r(16995,{learnedAt=300,requireSkill=9787}),
 r(10007,{learnedAt=245,requireSkill=9787}),
 r(10003,{learnedAt=235,requireSkill=9787}),
 r(10015,{learnedAt=260,requireSkill=9787})}})}}),
-x(1,{requireSkill=164,g={
+x(1,{awp=10100,requireSkill=164,g={
 h(-45,{requireSkill=164,g={
 q(5283,{altQuests={5284,5301,5302},coords={
 [1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
@@ -198,13 +198,13 @@ q(5284,{altQuests={5283,5301,5302},coords={
 [1455]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=40003}),
 q(5302,{altQuests={5283,5284,5301},coords={
 [1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
-prof(185,{
+prof(185,{awp=10100,g={
 x(1,{requireSkill=185,g={
 ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
-ach(121,{requireSkill=185})}})}),
+ach(121,{requireSkill=185})}})}}),
 prof(333),
-prof(202,{
+prof(202,{awp=10100,g={
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={
 i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,g={
@@ -214,7 +214,7 @@ r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202})}}),
 i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,g={
 r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202}),
 r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202}),
-r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}),
+r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}}),
 prof(129,{rwp=80001,g={
 x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),
@@ -224,13 +224,13 @@ x(4,{requireSkill=129}),
 x(5,{requireSkill=129}),
 x(6,{requireSkill=129}),
 x(7,{requireSkill=129})}}),
-prof(356,{
+prof(356,{awp=10100,g={
 x(1,{requireSkill=356,g={
 ach(126,{requireSkill=356}),
 ach(127,{requireSkill=356}),
-ach(128,{requireSkill=356})}})}),
+ach(128,{requireSkill=356})}})}}),
 prof(182),
-prof(165,{
+prof(165,{awp=10100,g={
 x(1,{requireSkill=165,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
 cat(252,{requireSkill=165,g={
@@ -318,12 +318,12 @@ q(5146,{altQuests={5145,5148},coords={
 q(5143,{altQuests={5141,5144},coords={
 [1444]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853}}),
 q(5148,{altQuests={5145,5146},coords={
-[1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}})}),
+[1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}})}}),
 prof(633,{c={4},description="Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",DontEnforceSkillRequirements=1,OnTooltip=_.OnTooltipDB.ForLockpicking,OnUpdate=_.OnUpdateDB.ForLockpicking,g={
 r(1804,{c={4},providers={{"i",5060}}}),
 r(921,{c={4}})}}),
-prof(186,{
-x(1,{requireSkill=186})}),
+prof(186,{awp=10100,g={
+x(1,{requireSkill=186})}}),
 prof(40,{c={4},rwp=30002,g={
 cat(2,{
 r(6510,{lvl=34}),

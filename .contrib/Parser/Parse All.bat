@@ -4,7 +4,7 @@
 "Parser.exe" baseconfig=.config/retail/retail.config config=".config/classic/03 - Wrath.config"
 "Parser.exe" baseconfig=.config/retail/retail.config config=".config/classic/04 - Cataclysm.config"
 "Parser.exe" baseconfig=.config/retail/retail.config config=".config/classic/05 - Mists of Pandaria.config"
-"Parser.exe" baseconfig=.config/retail/retail.config config=".config/forever/01 - Forever.config"
+"Parser.exe" baseconfig=.config/retail/retail.config config=".config/forever/01 - Camelot.config"
 "Parser.exe" baseconfig=.config/retail/retail.config
 "Parser.exe" baseconfig=.config/retail/retail.config config=.config/retail/ptr.config
 "Parser.exe" baseconfig=.config/retail/retail.config config=.config/retail/beta.config

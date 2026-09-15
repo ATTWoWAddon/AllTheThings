@@ -7,9 +7,9 @@ categories.Promotions=
 h(-736,{SortPriority=90,g={
 h(-520,{awp=11101,g={
 p(107,{b=1,itemID=20371,petTypeID=1,q=1,spellID=24696,u=2})}}),
-h(-521,{awp=11505,u=3,g={
+h(-521,{awp=10100,u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
-h(-45,{rwp=40006,u=3,g={
+h(-45,{awp=11505,rwp=40006,u=3,g={
 q(91888,{coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929},description="These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",maps={1453,1454,1455,1456,1458},qgs={17249},rwp=30002,u=3,g={
 p(93,{awp=11101,b=1,itemID=13584,petTypeID=6,q=1,spellID=17708,u=3}),

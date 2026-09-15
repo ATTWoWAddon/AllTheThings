@@ -4,8 +4,8 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,crit,cs,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-x(2,{awp=20100,g={
-ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={1948},type="fa",u=1901,g={
+x(2,{awp=20003,g={
+ah(1015,{awp=20100,description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={1948},type="fa",u=1901,g={
 h(-12,{u=1901,g={
 ach(898,{minReputation={1015,42000},u=1901})}}),
 h(-31,{u=1901,g={
@@ -168,7 +168,7 @@ i(32621,{b=1,coords={
 i(32724,{b=1,coords={
 [1948]={{69.4,86}}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},u=1901,g={
 i(32726,{b=1,lvl=70,minReputation={1015,3000},q=1,u=1901})}})}})}})}}),
-x(3,{
+x(3,{awp=30003,g={
 h(-413,{awp=30200,maps={118,170},u=31,g={
 h(-12,{u=31,g={
 ach(3676,{minReputation={1094,42000},r=2,sourceQuests={13702,13732,13733,13734,13735},u=31}),
@@ -1755,8 +1755,8 @@ s(176481,47151,{b=1,cost={{"c",2711,30}},f=5,loc=43,lvl=80,q=4,r=2,u=33}),
 s(176407,47055,{b=1,cost={{"c",2711,30}},f=5,loc=43,lvl=80,q=4,r=2,u=33}),
 s(176448,47108,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33}),
 s(201982,47073,{b=1,cost={{"c",2711,30}},f=6,loc=43,lvl=80,q=4,r=2,u=33}),
-s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33})}})}})}})}),
-x(4,{
+s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33})}})}})}})}}),
+x(4,{awp=40003,g={
 h(-414,{awp=40200,lvl=32,u=41,g={
 q(29328,{coords={
 [204]={{69.8,34.2}}},qgs={53652},sourceQuests={29336},u=41}),
@@ -2766,7 +2766,7 @@ qo(1,{providers={{"n",53011}},u=4001})}}),
 q(29233,{qgs={52234},r=1,sourceQuests={29232},u=4001}),
 q(29124,{coords={
 [1434]={{76,66.6}}},qgs={52234},r=2,sourceQuests={29121},u=4001})}})}}),
-m(245,{awp=40003,description="Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",icon=409548,g={
+m(245,{description="Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",icon=409548,g={
 h(-12,{
 ach(5375,{minReputation={1177,42000},r=2}),
 ach(4874),
@@ -3055,5 +3055,5 @@ i(62471,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4}),
 i(62470,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4}),
 i(62468,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4})}})}),
 h(-63,{
-p(278,{b=1,crs={47676},itemID=64403,npcID=48641,petTypeID=8,q=3,spellID=90637})})}})})}})
+p(278,{b=1,crs={47676},itemID=64403,npcID=48641,petTypeID=8,q=3,spellID=90637})})}})}})}})
 end)

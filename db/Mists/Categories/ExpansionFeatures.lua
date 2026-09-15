@@ -4,8 +4,8 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,crit,cs,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-x(2,{awp=20100,g={
-ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={104},type="fa",u=1901,g={
+x(2,{awp=20003,g={
+ah(1015,{awp=20100,description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={104},type="fa",u=1901,g={
 h(-12,{u=1901,g={
 ach(898,{minReputation={1015,42000},u=1901})}}),
 h(-31,{u=1901,g={
@@ -168,7 +168,7 @@ i(32621,{b=1,coords={
 i(32724,{b=1,coords={
 [104]={{69.4,86}}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},u=1901,g={
 i(32726,{b=1,lvl=70,minReputation={1015,3000},q=1,u=1901})}})}})}})}}),
-x(3,{
+x(3,{awp=30003,g={
 h(-413,{awp=30200,maps={118,170},u=31,g={
 h(-12,{u=31,g={
 ach(3676,{minReputation={1094,42000},r=2,sourceQuests={13702,13732,13733,13734,13735},u=31}),
@@ -1756,8 +1756,8 @@ s(176481,47151,{b=1,cost={{"c",2711,30}},f=5,loc=43,lvl=80,q=4,r=2,u=33}),
 s(176407,47055,{b=1,cost={{"c",2711,30}},f=5,loc=43,lvl=80,q=4,r=2,u=33}),
 s(176448,47108,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33}),
 s(201982,47073,{b=1,cost={{"c",2711,30}},f=6,loc=43,lvl=80,q=4,r=2,u=33}),
-s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33})}})}})}})}),
-x(4,{
+s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33})}})}})}})}}),
+x(4,{awp=40003,g={
 h(-414,{awp=40200,lvl=32,u=41,g={
 q(29328,{coords={
 [204]={{69.8,34.2}}},qgs={53652},sourceQuests={29336},u=41}),
@@ -2765,7 +2765,7 @@ qo(1,{providers={{"n",53011}},u=4001})}}),
 q(29233,{qgs={52234},r=1,sourceQuests={29232},u=4001}),
 q(29124,{coords={
 [50]={{76,66.6}}},qgs={52234},r=2,sourceQuests={29121},u=4001})}})}}),
-m(245,{awp=40003,description="Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",icon=409548,petBattleLvl=23,g={
+m(245,{description="Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",icon=409548,petBattleLvl=23,g={
 h(-12,{
 ach(5375,{minReputation={1177,42000},r=2}),
 ach(4874),
@@ -3056,8 +3056,8 @@ i(62471,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4}),
 i(62470,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4}),
 i(62468,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4})}})}),
 h(-63,{
-p(278,{b=1,crs={47676},itemID=64403,npcID=48641,q=3,spellID=90637})})}})}),
-x(5,{u=50,g={
+p(278,{b=1,crs={47676},itemID=64403,npcID=48641,q=3,spellID=90637})})}})}}),
+x(5,{awp=50004,u=50,g={
 h(-416,{awp=50300,description="During 5.3 a big battle occured in Barrens.",maps={1,10,390},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2,g={
 h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
 ach(8307,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=1,u=2,g={
@@ -5144,7 +5144,7 @@ s(275849,93268,{b=1,f=5,loc=47,lvl=90,minReputation={1375,21000},q=4,r=1,u=51}),
 s(275850,93269,{b=1,f=5,loc=47,lvl=90,minReputation={1375,21000},q=4,r=1,u=51}),
 i(93253,{b=1,f=53,lvl=90,minReputation={1375,21000},q=4,u=51}),
 mnt(135418,{b=1,cost=20000000,itemID=93169,lvl=80,minReputation={1375,42000},q=4,u=51})}})}})}})),
-h(-417,{awp=50004,isRaid=1,maps={433},rwp=60002,g={
+h(-417,{isRaid=1,maps={433},rwp=60002,g={
 q(31488,{c={1,2,3,5,6,7,8,9,10,11},coords={
 [391]={{59.6,75.8}},
 [393]={{36.6,76.6}}},qgs={64047,64144},u=50}),
@@ -5259,7 +5259,7 @@ s(281857,102247,{awp=50400,b=1,cost={{"i",102457,1},{"i",98149,1}},f=3,lvl=90,q=
 s(281855,102245,{awp=50400,b=1,cost={{"i",102457,1},{"i",98335,1}},f=3,lvl=90,q=5,u=54}),
 s(281860,102250,{awp=50400,b=1,cost={{"i",102457,1},{"i",98146,1}},f=3,lvl=90,q=5,u=54}),
 s(281856,102246,{awp=50400,b=1,cost={{"i",102457,1},{"i",98150,1}},f=3,lvl=90,q=5,u=54})}}),
-ah(1271,{awp=50004,description="Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",icon=646324,lvl=90,maps={371},type="fa",u=50,g={
+ah(1271,{description="Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",icon=646324,lvl=90,maps={371},type="fa",u=50,g={
 h(-12,{u=50,g={
 ach(6550,{u=50})}}),
 flt(101,{description="The following pets require Exalted with Order of the Cloud Serpent and can be found around The Arboretum.",minReputation={1271,42000},pb=1,u=50,g={
@@ -5512,7 +5512,7 @@ s(273827,89796,{b=1,f=9,minReputation={1271,42000},q=3,u=50}),
 mnt(123992,{b=1,cost=30000000,itemID=85430,lvl=90,minReputation={1271,42000},q=4,u=50}),
 mnt(123993,{b=1,cost=30000000,itemID=85429,lvl=90,minReputation={1271,42000},q=4,u=50}),
 mnt(113199,{b=1,cost=30000000,itemID=79802,lvl=90,minReputation={1271,42000},q=4,u=50})}})}})}}),
-h(-418,{awp=50004,c={10},lore="The Peak of Serenity is a hidden monastery and sanctuary located high in the north-central reaches of Pandaria's Kun-Lai Summit. It served primarily as a training ground and place of refuge for monks, and was easily accessible to them through Zen Pilgrimage. In this way, it served a very similar function for monks as Moonglade did for druids and Acherus: The Ebon Hold did for death knights.",lvl=20,maps={379},g={
+h(-418,{c={10},lore="The Peak of Serenity is a hidden monastery and sanctuary located high in the north-central reaches of Pandaria's Kun-Lai Summit. It served primarily as a training ground and place of refuge for monks, and was easily accessible to them through Zen Pilgrimage. In this way, it served a very similar function for monks as Moonglade did for druids and Acherus: The Ebon Hold did for death knights.",lvl=20,maps={379},g={
 h(-45,{
 q(31834,{coords={
 [379]={{48.6,42.8}}},lvl=20,qgs={66260},sourceQuests={31856},g={
@@ -5632,7 +5632,7 @@ s(273684,89574,{b=1,c={10},f=34,lvl=70,q=2}),
 s(273685,89575,{b=1,c={10},f=34,lvl=80,q=2})}}),
 n(64978,{coords={
 [379]={{45.2,43.2}}}})})}}),
-h(-419,{awp=50004,maps={480},u=54,g={
+h(-419,{maps={480},u=54,g={
 h(-12,{u=54,g={
 ach(8507,{awp=50400,rwp=60002,u=54,g={
 title(215,{u=54})}}),
@@ -5656,7 +5656,7 @@ ach(8497,{awp=50400,rwp=60002,u=54}),
 ach(8492,{awp=50400,rwp=60002,u=54}),
 ach(8487,{awp=50400,rwp=60002,u=54}),
 ach(8697,{awp=50400,rwp=60002,u=54})}})}}),
-h(-420,{awp=50004,lvl=90,u=50,g={
+h(-420,{lvl=90,u=50,g={
 h(-12,{u=50,g={
 ach(7385,{u=50,g={
 toy(87528,{b=1,lvl=90,q=3,u=50})}}),
@@ -6586,7 +6586,7 @@ i(98134,{awp=50300,b=1,q=4,rwp=90001,sym={{"select","itemID",98546},{"groupfill"
 flt(110,{u=50,g={
 title(224,{collectible=false,u=50}),
 title(226,{collectible=false,u=50})}})}}),
-ah(1302,{awp=50004,description="The Anglers are a group of Pandaren fishermen that hope to feed their people and grow their knowledge of fishing.",icon=643874,lvl=85,maps={418},type="fa",u=50,g={
+ah(1302,{description="The Anglers are a group of Pandaren fishermen that hope to feed their people and grow their knowledge of fishing.",icon=643874,lvl=85,maps={418},type="fa",u=50,g={
 h(-12,{u=50,g={
 ach(7274,{u=50,g={
 toy(86596,{b=1,q=3,u=50})}}),
@@ -6690,7 +6690,7 @@ r(110410,{learnedAt=500,rank=8,requireSkill=356,rwp=80001,u=51}),
 r(7738,{requireSkill=356,u=51}),
 toy(86596,{b=1,minReputation={1358,6},q=3,u=50}),
 s(273193,88710,{b=1,f=2,loc=40,minReputation={1358,6},q=4,u=50})}})}})}}),
-ah(1341,{awp=50004,description="Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",icon=645203,lvl=90,type="fa",u=50,g={
+ah(1341,{description="Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",icon=645203,lvl=90,type="fa",u=50,g={
 h(-12,{u=50,g={
 ach(7287,{maps={418},sourceQuests={30739},u=50}),
 ach(6543,{u=50})}}),
@@ -6934,7 +6934,7 @@ heir(93224,{b=2,f=55,factionID=1341,minReputation={1341,21000},q=7,u=50}),
 s(273830,89799,{b=1,f=9,minReputation={1341,42000},q=3,u=50}),
 r(125556,{b=1,itemID=86377,learnedAt=600,minReputation={1341,42000},q=1,requireSkill=197,u=50}),
 mnt(129918,{b=1,cost=100000000,itemID=89304,lvl=90,minReputation={1341,42000},q=4,u=50})}})}})}}),
-ah(1269,{awp=50004,description="The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",icon=645218,lvl=90,maps={390,395,396},type="fa",u=50,g={
+ah(1269,{description="The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",icon=645218,lvl=90,maps={390,395,396},type="fa",u=50,g={
 h(-12,{u=50,g={
 ach(7323,{coords={
 [390]={{24.4,28}}},description="You need to be on or near someone on the quest That's Not a Rock! in order to activate the mogu statues so that they'll engage you and use their special ability.",providers={{"n",63447},{"n",65170}},u=50}),
@@ -7459,7 +7459,7 @@ mnt(127176,{b=1,cost=25000000,itemID=87782,lvl=90,minReputation={1269,42000},q=4
 mnt(127177,{b=1,cost=15000000,itemID=87783,lvl=90,minReputation={1269,42000},q=4,u=50})}})}}),
 h(-63,{u=50,g={
 i(103624,{awp=50400,b=1,crs={58474,58768,58769,58771,58778,58817,58949,62880,62881,63101,63240,63509,63691,63695,63977,63978},description="Contains a number of Pandarian crafting reagents, herbs, and ore.",q=3,u=54})}})}}),
-ah(1345,{awp=50004,description="The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",icon=645218,lvl=85,maps={390},type="fa",u=50,g={
+ah(1345,{description="The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",icon=645218,lvl=85,maps={390},type="fa",u=50,g={
 h(-12,{u=50,g={
 ach(6856,{u=50}),
 ach(6716,{u=50}),
@@ -7556,7 +7556,7 @@ i(87548,{b=1,minReputation={1345,42000},q=2,u=50}),
 i(87549,{b=1,minReputation={1345,42000},q=2,u=50}),
 s(273826,89795,{b=1,f=9,minReputation={1345,42000},q=3,u=50}),
 i(104198,{b=1,cost={{"i",87399,2}},minReputation={1345,42000},q=1,u=50})}})}})}}),
-ah(1272,{awp=50004,description="The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",icon=645198,lvl=85,maps={376},type="fa",u=50,g={
+ah(1272,{description="The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",icon=645198,lvl=85,maps={376},type="fa",u=50,g={
 h(-12,{u=50,g={
 ach(6551,{sym={{"partial_achievement",6552}},u=50}),
 ach(6552,{u=50}),

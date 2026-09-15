@@ -64,9 +64,3 @@ title(0),	-- Loa-speaker %s
 title(780),	-- %s, Light's Faithful
 title(793),	-- %s, Bane of the Swarm
 title(795),	-- %s the Venomous Contender
-title(796),	-- Loa-Blessed %s
-title(797),	-- Treasure Hound %s
-title(798),	-- Lockpickin' %s
-title(799),	-- Maze Runner %s
-title(801),	-- %s, Fabled Vanquisher of Kindo'jan
-title(802),	-- Lone Raider %s

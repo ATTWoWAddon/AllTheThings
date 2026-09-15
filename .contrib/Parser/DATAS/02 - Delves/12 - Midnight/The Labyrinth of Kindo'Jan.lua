@@ -12,8 +12,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(64039, bubbleDownSelf({ ["timeline"] = { "removed 12.1.5.99999" } }, {	-- Fabled Let Me Solo Him: Kindo'jan
-				-- TODO: Timeline out correctly
-					--title(XXX),	-- <Name>, Fabled Vanquisher of Kindo'jan
+				-- TODO: Timeline out correctly, 1 Week after 12.1.5 Launch
+					title(801),	-- <Name>, Fabled Vanquisher of Kindo'jan
 				})),
 				ach(63720, {	-- Happy Hexmask Collector
 					["providers"] = {
@@ -28,7 +28,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					},
 				}),
 				ach(63717, {	-- Kindo'jan's Labyrinth Discoveries
-					--title(XXX),	-- Treasure Hound <Name>
+					title(797),	-- Treasure Hound <Name>
 				}),
 				ach(63724),	-- Knock Knock
 				ach(63715, {	-- Let Me Solo Him: Kindo'Jan
@@ -45,11 +45,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
 					},
 					["cost"] = { { "i", 282402, 20 } },	-- 20x Archaic Amani Key
-					--["groups"] = { title(XXX) },	-- Lockpickin' <Name>
+					["groups"] = { title(798) },	-- Lockpickin' <Name>
 				}),
 				ach(63723),	-- My Labyrinth
 				ach(63716, {	-- The First Hash'ey
-					--title(XXX),	-- Loa-Blessed <Name>
+					title(796),	-- Loa-Blessed <Name>
 				}),
 				ach(63721),	-- The Labyrinth of Kindo'jan
 				ach(63863),	-- The Labyrinth of Kindo'jan: Tier 1
@@ -64,12 +64,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				ach(63852),	-- The Labyrinth of Kindo'jan: Tier 10
 				ach(63853),	-- The Labyrinth of Kindo'jan: Tier 11
 				ach(64118, bubbleDownSelf({ ["timeline"] = { REMOVED_12_1_7 } }, {	-- The Labyrinth of Kindo'jan: One-Champion Army
-					--title(XXX),	-- Lone Raider <Name>
+					title(802),	-- Lone Raider <Name>
 				})),
 				ach(63727),	-- Treasures Upon Treasures (10 Oddities)
 				ach(63728),	-- A Few More Can't Hurt (50 Oddities)
 				ach(63722, {	-- Who's Labyrinth?
-					--title(XXX),	-- Maze Runner <Name>
+					title(799),	-- Maze Runner <Name>
 				}),
 			}),
 			n(DELVE_COMPLETION, {
@@ -105,6 +105,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["cr"] = 273575,	-- Kinduru <Herald of de Loa>
 				}),
 				fp(3315, {	-- Jan'alai's Refuge
+					["coord"] = { 25.7, 26.8, LABYRINTH_KINDOJAN },
+					["cr"] = 273572,	-- Kinduru <Herald of de Loa>
+				}),
+				fp(3317, {	-- Akil'zon's Roost
 					["coord"] = { 25.7, 26.8, LABYRINTH_KINDOJAN },
 					["cr"] = 273572,	-- Kinduru <Herald of de Loa>
 				}),

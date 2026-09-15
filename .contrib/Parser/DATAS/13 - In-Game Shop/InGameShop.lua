@@ -362,7 +362,12 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		iensemble(208943, {	-- Arsenal: Cosmic Weapons Cache
 			["timeline"] = { ADDED_11_0_0 },
 		}),
-
+		iensemble(269797, {	-- Ensemble: Azshara's Darkscale Raiment
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		iensemble(269809, {	-- Ensemble: Azshara's Deepscale Raiment
+			["timeline"] = { ADDED_12_1_0 },
+		}),
 		------ Celestial Observer Set ------
 		-- #if AFTER 11.2.5
 		iensemble(255824, {	-- Ensemble: Celestial Observer
@@ -1130,6 +1135,12 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(206167, {	-- Wonderous Wavewhisker (MOUNT!)
 			["timeline"] = { ADDED_10_1_0 },
+		}),
+		i(268833, {	-- Zothwing Darkseeker (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		i(268834, {	-- Zothwing Deepseeker (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
 		}),
 	}),
 	filter(MOUNTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- REMOVED --

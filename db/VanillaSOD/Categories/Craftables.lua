@@ -5,7 +5,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,flt,h,i,o,p,prof,r,s,sp,toy,x=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
 h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
-x(1,{
+x(1,{awp=10100,g={
 prof(171,{
 h(-22,{
 i(3371,{description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",q=1}),
@@ -608,19 +608,19 @@ i(6218,{b=1,f=57,q=1}),
 i(11130,{b=1,f=57,q=1,rwp=50004}),
 i(6339,{b=1,f=57,q=1,rwp=50004}),
 i(11145,{b=1,f=57,q=1,rwp=50004})}),
-flt(54,{awp=11505,g={
-i(234002,{f=54,lvl=60,q=4,u=1610}),
-i(234000,{f=54,lvl=60,q=4,u=1610}),
-i(234001,{f=54,lvl=60,q=4,u=1610}),
-i(234469,{f=54,lvl=60,q=4,u=1610}),
-i(234474,{f=54,lvl=60,q=4,u=1610}),
-i(234468,{f=54,lvl=60,q=4,u=1610}),
-i(234475,{f=54,lvl=60,q=4,u=1610}),
-i(234476,{f=54,lvl=60,q=4,u=1610}),
-i(234477,{f=54,lvl=60,q=4,u=1610}),
-i(234479,{f=54,lvl=60,q=4,u=1610}),
-i(234480,{f=54,lvl=60,q=4,u=1610}),
-i(234478,{f=54,lvl=60,q=4,u=1610})}}),
+flt(54,{
+i(234002,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234000,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234001,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234469,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234474,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234468,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234475,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234476,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234477,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234479,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234480,{awp=11505,f=54,lvl=60,q=4,u=1610}),
+i(234478,{awp=11505,f=54,lvl=60,q=4,u=1610})}),
 flt(53,{
 i(233993,{awp=11505,f=53,lvl=60,q=4,u=1610}),
 i(233992,{awp=11505,f=53,lvl=60,q=4,u=1610}),
@@ -1822,8 +1822,8 @@ i(2324,{description="Can be bought from Tailoring Suppliers, as well as some Tra
 i(6261,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(10290,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(4341,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1})}),
-flt(50,{awp=100105,g={
-i(18258,{f=55,lvl=55,q=2,rwp=40003,u=1608})}}),
+flt(50,{
+i(18258,{awp=100105,f=55,lvl=55,q=2,rwp=40003,u=1608})}),
 flt(56,{
 i(2996,{q=1}),
 i(4339,{q=1}),
@@ -1835,5 +1835,5 @@ i(213379,{awp=11501,q=3,u=1606}),
 i(14342,{coords={
 [1440]={{60,72}},
 [1453]={{21,53}},
-[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world.",q=1})})})})}})
+[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world.",q=1})})})}})}})
 end)

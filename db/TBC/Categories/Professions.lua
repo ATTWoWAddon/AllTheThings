@@ -5,29 +5,29 @@ local ach,cat,flt,h,i,prof,q,qo,r,x=_.CreateAchievement,_.CreateCategory,_.Creat
 categories.Professions=
 h(-44,{SortPriority=25,g={
 h(-12,{
-x(1,{
+x(1,{awp=10100,g={
 ach(732),
 ach(731),
-ach(116)}),
+ach(116)}}),
 x(2,{awp=20003,g={
 ach(733,{u=17})}})}),
 prof(171,{
-x(1,{requireSkill=171}),
-x(2,{awp=20005,requireSkill=171,g={
-q(10906,{altQuests={10905,10907},coords={
+x(1,{awp=10100,requireSkill=171}),
+x(2,{awp=20003,requireSkill=171,g={
+q(10906,{altQuests={10905,10907},awp=20005,coords={
 [1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300}),
-q(10902,{altQuests={10897,10899},coords={
+q(10902,{altQuests={10897,10899},awp=20005,coords={
 [1955]={{45.8,20.4}}},cost={{"i",22831,5},{"i",28104,5},{"i",22834,5},{"i",31753,10}},description="Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",learnedAt=325,lvl=68,maps={273},qgs={19052},requireSkill=171,rwp=40300,sourceQuests={10906},g={
 r(28677,{requireSkill=28677})}}),
-q(10905,{altQuests={10906,10907},coords={
+q(10905,{altQuests={10906,10907},awp=20005,coords={
 [1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10897},qgs={16588,18802},requireSkill=171,rwp=40300}),
-q(10897,{altQuests={10899,10902},coords={
+q(10897,{altQuests={10899,10902},awp=20005,coords={
 [1946]={{44.1,36.6}}},cost={{"i",22836,5},{"i",22832,5},{"i",22829,5}},description="Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",learnedAt=325,lvl=68,maps={266},qgs={17909},requireSkill=171,rwp=40300,sourceQuests={10905},g={
 qo(1,{crs={17975},providers={{"i",31744}},requireSkill=171}),
 r(28675,{requireSkill=28675})}}),
-q(10907,{altQuests={10905,10906},coords={
+q(10907,{altQuests={10905,10906},awp=20005,coords={
 [1944]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10899},qgs={16588,18802},requireSkill=171,rwp=40300}),
-q(10899,{altQuests={10897,10902},coords={
+q(10899,{altQuests={10897,10902},awp=20005,coords={
 [1953]={{44.1,36.6}}},cost={{"i",23571,4}},description="Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",learnedAt=325,lvl=68,qgs={22427},requireSkill=171,rwp=40300,sourceQuests={10907},g={
 r(28672,{requireSkill=28672})}})}})}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
@@ -215,7 +215,7 @@ cat(227,{description="These can be crafted by any Weaponsmith.",requireSkill=164
 r(36125,{awp=70105,learnedAt=260,requireSkill=9787,u=1}),
 r(36128,{learnedAt=260,requireSkill=9787,u=17}),
 r(36126,{learnedAt=260,requireSkill=9787,u=17})}})}}),
-x(1,{requireSkill=164,g={
+x(1,{awp=10100,requireSkill=164,g={
 h(-45,{requireSkill=164,g={
 q(5283,{altQuests={5284,5301,5302},coords={
 [1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
@@ -226,14 +226,14 @@ q(5284,{altQuests={5283,5301,5302},coords={
 q(5302,{altQuests={5283,5284,5301},coords={
 [1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11178},r=1,requireSkill=164,rwp=40003})}})}})}),
 prof(185,{
-x(1,{requireSkill=185,g={
+x(1,{awp=10100,requireSkill=185,g={
 ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
 x(2,{awp=20003,requireSkill=185,g={
 ach(124,{requireSkill=185,u=17})}})}),
 prof(333),
-prof(202,{
+prof(202,{awp=10100,g={
 x(1,{requireSkill=202,g={
 h(-47,{requireSkill=202,g={
 i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,g={
@@ -243,7 +243,7 @@ r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202})}}),
 i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,g={
 r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202}),
 r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202}),
-r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}),
+r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}}),
 prof(129,{rwp=80001,g={
 x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),
@@ -258,15 +258,15 @@ x(7,{requireSkill=129})}}),
 prof(356,{
 h(-12,{awp=20300,requireSkill=356,g={
 ach(1243,{providers={{"s",43308}},requireSkill=356,spellID=43308})}}),
-x(1,{requireSkill=356,g={
+x(1,{awp=10100,requireSkill=356,g={
 ach(126,{requireSkill=356}),
 ach(127,{requireSkill=356}),
 ach(128,{requireSkill=356})}}),
-x(2,{requireSkill=356,u=17,g={
+x(2,{awp=20003,requireSkill=356,u=17,g={
 ach(129,{requireSkill=356,u=17})}})}),
 prof(182),
 prof(755,{u=17,g={
-x(1,{requireSkill=755,u=17,g={
+x(1,{awp=10100,requireSkill=755,u=17,g={
 flt(52,{requireSkill=755,u=17,g={
 r(26874,{learnedAt=210,requireSkill=755,u=17}),
 r(25617,{awp=20001,learnedAt=150,requireSkill=755,u=17}),
@@ -347,7 +347,7 @@ r(32809,{learnedAt=225,requireSkill=755,u=17}),
 r(32807,{learnedAt=110,requireSkill=755,u=17}),
 r(32259,{learnedAt=30,requireSkill=755,u=17}),
 r(32808,{learnedAt=175,requireSkill=755,u=17})}})}}),
-x(2,{requireSkill=755,u=17,g={
+x(2,{awp=20003,requireSkill=755,u=17,g={
 cat(868,{requireSkill=755,u=17,g={
 r(38068,{learnedAt=325,requireSkill=755,u=17})}}),
 cat(857,{requireSkill=755,u=17,g={
@@ -546,7 +546,7 @@ r(31082,{learnedAt=370,requireSkill=755,u=17})}}),
 cat(867,{requireSkill=755,u=17,g={
 r(47280,{learnedAt=350,requireSkill=755,u=17})}})}})}}),
 prof(165,{
-x(1,{requireSkill=165,g={
+x(1,{awp=10100,requireSkill=165,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
 cat(932,{requireSkill=165,g={
 r(35575,{learnedAt=375,requireSkill=10656,u=17}),
@@ -593,12 +593,12 @@ q(5143,{altQuests={5141,5144},coords={
 [1444]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853}}),
 q(5148,{altQuests={5145,5146},coords={
 [1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}}),
-x(2,{requireSkill=165})}),
+x(2,{awp=20003,requireSkill=165})}),
 prof(633,{c={4},description="Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",DontEnforceSkillRequirements=1,OnTooltip=_.OnTooltipDB.ForLockpicking,OnUpdate=_.OnUpdateDB.ForLockpicking,g={
 r(1804,{c={4},providers={{"i",5060}}}),
 r(921,{c={4}})}}),
-prof(186,{
-x(1,{requireSkill=186})}),
+prof(186,{awp=10100,g={
+x(1,{requireSkill=186})}}),
 prof(40,{c={4},rwp=30002,g={
 cat(2,{
 r(26786,{awp=20003,lvl=68,u=17}),
@@ -627,9 +627,9 @@ r(13229,{lvl=48}),
 r(13230,{lvl=56}),
 r(27283,{awp=20003,lvl=64,u=17})})}}),
 prof(393),
-prof(197,{awp=20005,g={
+prof(197,{awp=20003,g={
 x(2,{requireSkill=197,u=17,g={
-h(-45,{requireSkill=197,rwp=40003,u=17,g={
+h(-45,{awp=20005,requireSkill=197,rwp=40003,u=17,g={
 q(10831,{altQuests={10832,10833},coords={
 [1955]={{66.5,69.3}}},description="Upon finishing this quest, you will become a Mooncloth Tailor.",lvl=60,maps={1946},qgs={22208},requireSkill=197,u=17,g={
 qo(1,{coords={

@@ -4059,7 +4059,7 @@ i(13756,{description="Can be caught in open sea water in Azshara, Tanaris, The H
 h(-587,{e=133899,maps={1425,1434,1444,1446,1447},g={
 i(13755,{description="Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",e=133899,f=55,lvl=35,q=1})}}),
 h(-588,{description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={1434},g={
-h(-12,{e=6,g={
+h(-12,{awp=30002,e=6,g={
 ach(306,{e=6,providers={{"i",19970},{"i",19979}},requireSkill=356})}}),
 h(-45,{e=6,g={
 q(8194,{coords={

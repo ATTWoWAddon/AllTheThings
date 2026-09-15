@@ -4,7 +4,7 @@ local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ah,h,hqt,inst,m,prof,x=_.CreateHeader,_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateProfession,_.CreateExpansion;
 categories.HiddenQuestTriggers={
-x(1,{
+x(1,{awp=10100,g={
 h(-61,{
 hqt(78650)}),
 inst(760,{isRaid=1,savedInstanceID=249,g={
@@ -21,7 +21,7 @@ hqt(615,{awp=11201}),
 hqt(620,{awp=11201})})}}),
 hqt(6842),
 hqt(9611),
-hqt(236)}),
+hqt(236)}}),
 m(2537,{
 m(2512,{
 m(2509,{
@@ -47,9 +47,9 @@ hqt(95617,{repeatable=1}),
 hqt(95619,{repeatable=1}),
 hqt(97503,{repeatable=1})}})})})}),
 prof(171),
-h(-521,{awp=11505,u=3,g={
+h(-521,{awp=10100,u=3,g={
 x(1,{u=3,g={
-hqt(91889,{rwp=30002,u=3})}})}}),
+hqt(91889,{awp=11505,rwp=30002,u=3})}})}}),
 h(-55,{
 hqt(909),
 hqt(3366),

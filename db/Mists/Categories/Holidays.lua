@@ -5862,9 +5862,9 @@ i(13756,{description="Can be caught in open sea water in Blasted Lands and Swamp
 h(-587,{e=133899,maps={17,51},g={
 i(13755,{description="Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 23nd September to 20th March.",e=133899,f=55,lvl=35,q=1})}}),
 h(-588,{description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={50,210},g={
-h(-12,{awp=30003,e=6,g={
+h(-12,{awp=30002,e=6,g={
 ach(306,{e=6,providers={{"i",19970},{"i",19979},{"i",50287}},requireSkill=356,g={
-crit(5666,{achID=1516,id=6,u=30})}})}}),
+crit(5666,{achID=1516,awp=30003,id=6,u=30})}})}}),
 h(-45,{e=6,g={
 q(8194,{coords={
 [210]={{41.4,73}}},cost={{"i",19807,5}},e=6,qgs={15078},repeatable=1,requireSkill=356}),

@@ -5,7 +5,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cl,crit,cs,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
 categories.Instances=
 h(-75,{SortPriority=1,g={
-x(1,{
+x(1,{awp=10100,g={
 h(-318,{rwp=40003,u=15,g={
 cl(11,{u=15,g={
 q(8905,{c={11},coords={
@@ -516,7 +516,7 @@ q(6823,{awp=10001,coords={
 [1447]={{79.2,73.6}}},lvl=55,minReputation={749,9000},qgs={13278},rwp=30008,sourceQuests={6822}}),
 q(7633,{awp=10001,c={3},coords={
 [1448]={{47,24.48}}},lvl=60,qgs={14524},rwp=40003,sourceQuests={7632}}),
-q(7487,{awp=10100,coords={
+q(7487,{coords={
 [33]={{54.2,83.3}}},description="Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",lvl=55,maps={242},qgs={14387},rwp=10300,u=2,g={
 qo(1,{providers={{"i",18412},{"o",179553}},u=2})}}),
 q(7848,{awp=10300,coords={
@@ -547,9 +547,9 @@ qo(1,{providers={{"n",11658}}}),
 qo(2,{providers={{"n",11668}}}),
 qo(3,{providers={{"n",11673}}}),
 qo(4,{providers={{"n",12101}}})}})}),
-h(-47,{awp=10001,g={
-i(17333,{b=1,description="Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",minReputation={749,9000},q=1,rwp=30008,sourceQuests={6824}}),
-i(22754,{b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},q=1,rwp=30008,sourceQuests={6824},u=13})}}),
+h(-47,{
+i(17333,{awp=10001,b=1,description="Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",minReputation={749,9000},q=1,rwp=30008,sourceQuests={6824}}),
+i(22754,{awp=10001,b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},q=1,rwp=30008,sourceQuests={6824},u=13})}),
 h(-63,{
 i(20951,{awp=10001,description="For this to drop, you must be on the Scrying Goggles? No Problem! quest.",q=1,rwp=40003,u=15}),
 i(17010,{q=3}),
@@ -795,7 +795,7 @@ i(17063,{b=1,f=52,lvl=60,q=4}),
 i(19138,{b=1,f=52,lvl=60,q=4}),
 i(18815,{b=1,f=53,lvl=60,q=4}),
 i(17082,{b=1,f=53,lvl=60,q=4}),
-i(17982,{awp=10100,b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
+i(17982,{b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
 i(21110,{awp=10900,b=1,q=4,rwp=40003,u=15})}})}}),
 inst(760,{coords={
 [1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},["zone-text-areaID"]=2159,g={
@@ -837,12 +837,12 @@ qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you u
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},q=4}),
 i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4}),
 s(163483,18348,{b=1,c={1,2},f=25,lvl=60,q=4})}}),
-q(7497,{awp=10001,coords={
+q(7497,{coords={
 [1453]={{67,85}}},learnedAt=300,lvl=60,qgs={14394},r=2,requireSkill=165,sourceQuests={7496},g={
-r(19093,{itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
-q(7493,{awp=10001,coords={
+r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
+q(7493,{coords={
 [1454]={{52.2,75.8}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491},g={
-r(19093,{itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
+r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
 q(7495,{awp=10001,lvl=60,maps={1453},providers={{"i",18423}},r=2,rwp=100000}),
 q(7490,{awp=10001,lvl=60,maps={1454},providers={{"i",18422}},r=1,rwp=100000})}),
 prof(393,{
@@ -5336,7 +5336,7 @@ s(163043,16728,{b=1,f=7,loc=46,lvl=56,q=3}),
 s(163002,16687,{b=1,f=4,loc=46,lvl=56,q=3}),
 s(163024,16709,{b=1,f=5,loc=46,lvl=56,q=3}),
 s(163034,16719,{b=1,f=5,loc=46,lvl=56,q=3}),
-crit(3270,{achID=646,id=1})}})}})}}),
+crit(3270,{achID=646,awp=10100,id=1})}})}})}}),
 inst(63,{coords={
 [1436]={{42.2,82.6}}},lore="Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",lvl=10,mapID=291,maps={55,292},savedInstanceID=36,["zone-text-areaID"]=1581,g={
 h(-45,{
@@ -5369,20 +5369,20 @@ qo(1,{providers={{"i",7365}}}),
 s(158977,7607,{b=1,f=27,q=2}),
 s(158976,7606,{b=1,f=6,filterForRWP=7,loc=44,q=2})}})}),
 h(-46,{
-n(596,{awp=100107,coords={
+n(596,{coords={
 [1436]={{44,78.3}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
-s(157521,3902,{f=28,lvl=13,q=2,rwp=40003}),
-s(158287,5967,{f=4,loc=45,lvl=13,q=2,rwp=40003})}}),
+s(157521,3902,{awp=100107,f=28,lvl=13,q=2,rwp=40003}),
+s(158287,5967,{awp=100107,f=4,loc=45,lvl=13,q=2,rwp=40003})}}),
 n(626,{coords={
 [1436]={{42.2,82.6}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
 i(1875,{q=1}),
 s(156666,2167,{f=5,loc=44,lvl=15,q=2}),
 s(156665,2166,{f=6,loc=46,lvl=15,q=2}),
 s(156667,2168,{f=4,loc=47,lvl=16,q=2})}}),
-n(599,{awp=100107,coords={
+n(599,{coords={
 [1436]={{42.2,79.9}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
-s(157090,3019,{f=4,loc=42,lvl=13,q=2,rwp=40003}),
-s(157827,4660,{f=4,loc=47,lvl=13,q=2,rwp=40003})}})}),
+s(157090,3019,{awp=100107,f=4,loc=42,lvl=13,q=2,rwp=40003}),
+s(157827,4660,{awp=100107,f=4,loc=47,lvl=13,q=2,rwp=40003})}})}),
 h(-63,{
 s(160035,10402,{crs={4416},f=5,loc=47,lvl=13,q=2,rwp=40003}),
 s(160034,10401,{crs={634,4417},f=5,loc=44,lvl=13,q=2}),
@@ -5815,11 +5815,11 @@ s(159314,9384,{crs={4844,4845,4846},f=20,lvl=31,q=3}),
 s(159351,9423,{f=24,lvl=40,q=3}),
 s(159321,9391,{c={1},crs={4844,4845,4846},f=24,lvl=32,q=3}),
 s(159356,9428,{crs={4844,4845,4846},f=5,loc=43,lvl=30,q=3})}),
-h(-46,{awp=100107,g={
-n(7057,{description="This guy spawns outside of the instance in the cave leading to the instance.",rwp=40003,g={
+h(-46,{
+n(7057,{awp=100107,description="This guy spawns outside of the instance in the cave leading to the instance.",rwp=40003,g={
 s(159309,9378,{f=21,lvl=33,q=3}),
 s(159306,9375,{f=5,loc=40,lvl=33,q=3}),
-s(159312,9382,{f=5,loc=47,lvl=33,q=2})}})}}),
+s(159312,9382,{f=5,loc=47,lvl=33,q=2})}})}),
 h(-56,{
 o(141979,{description="Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",modelScale=3,sym={{"select","itemID",8029}}}),
 o(123329,{
@@ -6088,5 +6088,5 @@ i(10661,{q=1})}),
 e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
 i(8707,{q=1}),
 s(159379,9467,{b=1,f=20,lvl=42,q=2}),
-s(159380,9469,{b=1,f=6,loc=42,lvl=43,q=3})}})}})})}})
+s(159380,9469,{b=1,f=6,loc=42,lvl=43,q=3})}})}})}})}})
 end)

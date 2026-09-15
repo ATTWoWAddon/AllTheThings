@@ -17,7 +17,7 @@ ach(5378,{awp=40001,providers={{"i",67418}},u=2}),
 p(294,{awp=40001,b=1,itemID=67418,npcID=51122,petTypeID=1,q=3,spellID=94070,u=2}),
 ach(6185,{awp=40300,providers={{"i",71726}},u=2}),
 p(329,{awp=40200,b=1,itemID=71726,npcID=54438,petTypeID=1,q=3,spellID=101606,u=2})}),
-x(2,{u=3,g={
+x(2,{awp=20003,u=3,g={
 q(63768,{altQuests={63767},coords={
 [210]={{42.6,71.6}}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 toy(32542,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 5th May 2021 until 5th Nov 2022.",q=3,u=3})}}),
@@ -27,7 +27,7 @@ toy(33219,{b=1,description="Obtained if you set up a 6 Month WoW Subscription be
 q(65562,{altQuests={65561},coords={
 [210]={{42.6,71.6}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}})}}),
-x(3,{u=3,g={
+x(3,{awp=30003,u=3,g={
 q(72523,{altQuests={72522},coords={
 [210]={{42.6,71.6}}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 mnt(394209,{b=1,description="Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",itemID=201699,lvl=20,q=4,u=3})}}),
@@ -44,13 +44,13 @@ mnt(416158,{b=1,description="Obtained if you set up a 12 Month WoW Subscription 
 p(4273,{b=1,description="Obtained if you set up a 6 Month WoW Subscription after 10th January 2024.",itemID=209877,npcID=211012,petTypeID=7,q=3,spellID=423843,u=2}),
 mnt(49290,{description="Obtained if you set up a 3 Month WoW Subscription between 10th October 2022 until 8th January 2024.",u=2}),
 mnt(74856,{b=1,description="Obtained if you set up a 3 Month WoW Subscription between 8th January 2024 until 8th April 2024.",itemID=74269,lvl=20,q=4,u=2})}}),
-x(4,{u=3,g={
+x(4,{awp=40003,u=3,g={
 p(4585,{b=1,description="Obtained if you set up a 12 Month WoW Subscription after 9th July 2024.",itemID=224002,npcID=224065,petTypeID=3,q=3,u=2}),
 mnt(463045,{description="Obtained if you set up a 12 Month WoW Subscription after 15th October 2024.",u=2}),
 p(4685,{b=1,description="Obtained if you set up a 6/12 Month WoW Subscription after 31st January 2025.",itemID=231312,npcID=232536,q=3,u=2})}}),
 h(-521,{u=3,g={
-x(1,{awp=11505,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
-h(-45,{rwp=40006,u=2,g={
+x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
+h(-45,{awp=11505,rwp=40006,u=2,g={
 q(91888,{coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30002,u=2,g={
 ach(662,{awp=30002,u=3}),
@@ -76,9 +76,9 @@ toy(260622,{u=2}),
 toy(260221,{u=2}),
 mnt(1266866,{itemID=260759,u=2}),
 p(4962,{itemID=260433,u=2})}}),
-x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
-ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
-p(188,{b=1,itemID=39286,npcID=28883,petTypeID=4,q=3,rwp=30305,spellID=52615,u=2,g={
+x(3,{awp=30003,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
+ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2}),
+p(188,{awp=20403,b=1,itemID=39286,npcID=28883,petTypeID=4,q=3,rwp=30305,spellID=52615,u=2,g={
 crit(69844,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=30400,rwp=40001,u=2,g={
 h(-522,{description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,u=2,g={
@@ -87,9 +87,9 @@ p(4234,{b=1,itemID=198665,npcID=194870,petTypeID=9,q=4,spellID=384796,u=2}),
 toy(198647,{b=1,q=4,u=2})}}),
 h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,u=2,g={
 mnt(372677,{b=1,itemID=192455,lvl=20,q=4,u=2})}})}}),
-x(4,{awp=40001,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
-ach(5377,{providers={{"i",62540}},rwp=40302,u=2}),
-p(268,{b=1,itemID=62540,npcID=46896,petTypeID=2,q=3,rwp=40302,spellID=87344,u=2,g={
+x(4,{awp=40003,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
+ach(5377,{awp=40001,providers={{"i",62540}},rwp=40302,u=2}),
+p(268,{awp=40001,b=1,itemID=62540,npcID=46896,petTypeID=2,q=3,rwp=40302,spellID=87344,u=2,g={
 crit(69845,{achID=5377,id=3,u=2})}})}}),
 h(-526,{awp=30400,rwp=40402,u=2,g={
 h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",u=2,g={

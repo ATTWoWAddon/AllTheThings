@@ -4,8 +4,8 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,crit,cu,faction,fp,h,heir,i,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateFaction,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-x(2,{awp=20100,g={
-ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={1948},type="fa",u=1901,g={
+x(2,{awp=20003,g={
+ah(1015,{awp=20100,description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={1948},type="fa",u=1901,g={
 h(-12,{u=1901,g={
 ach(898,{minReputation={1015,42000},u=1901})}}),
 h(-31,{u=1901,g={
@@ -168,7 +168,7 @@ i(32621,{b=1,coords={
 i(32724,{b=1,coords={
 [1948]={{69.4,86}}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},u=1901,g={
 i(32726,{b=1,lvl=70,minReputation={1015,3000},q=1,u=1901})}})}})}})}}),
-x(3,{
+x(3,{awp=30003,g={
 h(-413,{awp=30200,maps={118,170},u=31,g={
 h(-12,{u=31,g={
 ach(3676,{minReputation={1094,42000},r=2,sourceQuests={13702,13732,13733,13734,13735},u=31}),
@@ -1722,5 +1722,5 @@ s(176481,47151,{b=1,cost={{"c",2711,30}},f=5,loc=43,lvl=80,q=4,r=2,u=33}),
 s(176407,47055,{b=1,cost={{"c",2711,30}},f=5,loc=43,lvl=80,q=4,r=2,u=33}),
 s(176448,47108,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33}),
 s(176420,47073,{b=1,cost={{"c",2711,30}},f=6,loc=43,lvl=80,q=4,r=2,u=33}),
-s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33})}})}})}})})}})
+s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2,u=33})}})}})}})}})}})
 end)

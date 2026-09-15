@@ -5,15 +5,15 @@ local ach,h,i,mnt,n,p,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.Create
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{
-x(2,{
+x(2,{awp=20003,g={
 h(-482,{lvl=55,maps={1419},rwp=20505,u=2,g={
 q(10259,{coords={
 [1419]={{58.25,55.05}}},lvl=55,qgs={19942},u=2,g={
 ach(2079,{providers={{"i",28788}},u=2}),
-s(139134,28788,{b=1,f=9,q=1,u=2})}})}})}),
-x(3),
-x(4,{awp=30300,g={
-h(-474,{maps={1453,1454,1455,1456},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,rwp=40003,u=2,g={
+s(139134,28788,{b=1,f=9,q=1,u=2})}})}})}}),
+x(3,{awp=30003}),
+x(4,{awp=40003,g={
+h(-474,{awp=30300,maps={1453,1454,1455,1456},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,rwp=40003,u=2,g={
 h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
 ach(4887,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2})}}),
 h(-45,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
@@ -195,7 +195,7 @@ s(179899,53506,{b=1,f=3,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFi
 s(179901,53508,{b=1,f=5,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
 s(179934,54592,{b=1,f=6,loc=43,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
 s(179900,53507,{b=1,f=4,loc=47,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2})}})}}),
-h(-475,{maps={1426,1455},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=2,rwp=40003,u=2,g={
+h(-475,{awp=30300,maps={1426,1455},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=2,rwp=40003,u=2,g={
 q(25229,{coords={
 [1455]={{69.2,49.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={7937},r=2,u=2,g={
 qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",52566},{"n",39253},{"n",39623}},r=2,u=2}),
@@ -240,7 +240,7 @@ q(25500,{altQuests={25286},coords={
 toy(54651,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,q=3,r=2,u=2})}}),
 q(25287,{coords={
 [1426]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",52731}},qgs={39396,39675},r=2,sourceQuests={25500},u=2})}}),
-h(-485,{maps={1411},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=1,rwp=40003,u=2,g={
+h(-485,{awp=30300,maps={1411},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=1,rwp=40003,u=2,g={
 q(25444,{coords={
 [1411]={{57.5,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40184},r=1,u=2,g={
 qo(1,{coords={

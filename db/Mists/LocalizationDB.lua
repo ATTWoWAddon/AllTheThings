@@ -9801,7 +9801,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753984800,
+		release = 1753981200,
 		state = 2,
 	},
 	[5002] = {
@@ -9810,7 +9810,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755021600,
+		release = 1755018000,
 		state = 2,
 	},
 	[5003] = {
@@ -9819,7 +9819,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755799200,
+		release = 1755795600,
 		state = 2,
 	},
 	[5004] = {
@@ -9828,7 +9828,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756231200,
+		release = 1756227600,
 		state = 2,
 	},
 	[5005] = {
@@ -9837,7 +9837,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756836000,
+		release = 1756832400,
 		state = 2,
 	},
 	[5006] = {
@@ -9846,7 +9846,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757008800,
+		release = 1757005200,
 		state = 2,
 	},
 	[5007] = {
@@ -9855,7 +9855,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758045600,
+		release = 1758042000,
 		state = 2,
 	},
 	[51] = {
@@ -9880,7 +9880,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765998000,
+		release = 1765994400,
 		state = 2,
 	},
 	[53] = {
@@ -9905,7 +9905,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781632800,
+		release = 1781629200,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -36034,7 +36034,7 @@ for key,value in pairs({
 	[3] = "战网点数",
 	[4] = "PvP 精良/角斗士",
 	[5] = "不可学",
-	[7] = "货栈",
+	[7] = "商栈",
 	[11] = "阶段1",
 	[1101] = "厄运之槌",
 	[12] = "阶段2",
@@ -36096,7 +36096,7 @@ for key,value in pairs({
 	[3] = "|cFFAAFFAA该物品需要付费解锁，需使用战网余额或真实货币购买。|r",
 	[4] = "|cFFFFAAAA除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
 	[5] = "|cFFFFAAAA这不能永久收集、学习或用于幻化。|r",
-	[7] = "|cFFAAFFAA该物品可在货栈购买。|r",
+	[7] = "|cFFAAFFAA该物品可在商栈购买。|r",
 	[11] = "|cFFAAFFAA该功能直到 阶段1 的 WoW Classic 才可用。|r",
 	[1101] = "|cFFAAFFAA这在 厄运之槌 的 WoW Classic 阶段发布时可用了|r",
 	[12] = "|cFFAAFFAA该功能直到 阶段2 的 WoW Classic 才可用。|r",
@@ -37154,7 +37154,7 @@ for key,value in pairs({
 	[3] = "|cFFAAFFAA這被鎖定在付費牆後面，例如遊戲內商店、另一個暴雪產品或招兵買馬召集令。|r",
 	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 頭銜、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。|r",
 	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
-	[7] = "|cFFAAFFAA該物品可以在貿易戰購買|r",
+	[7] = "|cFFAAFFAA該物品可以在貿易站購買|r",
 	[11] = "|cFFAAFFAA該功能直到 Phase 1 的 WoW Classic 才可用。|r",
 	[12] = "|cFFAAFFAA該功能直到 Phase 2 的 WoW Classic 才可用。|r",
 	[13] = "|cFFAAFFAA該功能直到 Phase 3 的 WoW Classic 才可用。|r",

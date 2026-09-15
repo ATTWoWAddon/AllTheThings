@@ -13,7 +13,7 @@ ach(415,{awp=30002,providers={{"i",43599}},u=2}),
 mnt(58983,{awp=30002,b=1,itemID=43599,lvl=20,q=3,u=2}),
 ach(3536,{awp=30200,providers={{"i",46802}},u=2}),
 p(228,{awp=30200,b=1,itemID=46802,petTypeID=1,q=3,spellID=66030,u=2})}),
-x(2,{u=3,g={
+x(2,{awp=20003,u=3,g={
 q(63768,{altQuests={63767},coords={
 [1434]={{28.2,75.8}}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 toy(32542,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 5th May 2021 until 5th Nov 2022.",q=3,u=3})}}),
@@ -23,7 +23,7 @@ toy(33219,{b=1,description="Obtained if you set up a 6 Month WoW Subscription be
 q(65562,{altQuests={65561},coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 s(134092,23705,{b=1,description="Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",f=9,q=4,u=3})}})}}),
-x(3,{u=3,g={
+x(3,{awp=30003,u=3,g={
 q(72523,{altQuests={72522},coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6746,6929,19232,28687,29532,31557,32413},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
 mnt(394209,{description="Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",itemID=201699,lvl=20,u=3})}}),
@@ -41,8 +41,8 @@ p(4273,{description="Obtained if you set up a 6 Month WoW Subscription after 10t
 mnt(49290,{description="Obtained if you set up a 3 Month WoW Subscription between 10th October 2022 until 8th January 2024.",u=2}),
 mnt(74856,{description="Obtained if you set up a 3 Month WoW Subscription between 8th January 2024 until 8th April 2024.",itemID=74269,u=2})}}),
 h(-521,{u=3,g={
-x(1,{awp=11505,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
-h(-45,{rwp=40006,u=3,g={
+x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
+h(-45,{awp=11505,rwp=40006,u=3,g={
 q(91888,{coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30002,u=2,g={
 ach(662,{awp=30002,u=3}),
@@ -68,10 +68,10 @@ toy(260622,{u=2}),
 toy(260221,{u=2}),
 mnt(1266866,{itemID=260759,u=2}),
 p(4962,{itemID=260433,u=2})}}),
-x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
-ach(683,{providers={{"i",39286}},rwp=30305,u=2,g={
+x(3,{awp=30003,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
+ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2,g={
 crit(69846,{achID=683,id=3,providers={{"n",28883}},u=2})}}),
-p(188,{b=1,itemID=39286,petTypeID=4,q=3,rwp=30305,spellID=52615,u=2})}}),
+p(188,{awp=20403,b=1,itemID=39286,petTypeID=4,q=3,rwp=30305,spellID=52615,u=2})}}),
 h(-525,{awp=30400,rwp=40001,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,u=3,g={
 ach(16332,{cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},u=3}),

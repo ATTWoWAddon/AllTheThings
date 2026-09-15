@@ -3,17 +3,19 @@ local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local ach,crit,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateExpansion;
 categories.HiddenAchievementTriggers={
-x(1,{
+x(1,{awp=10100,g={
+ach(15329),
 ach(15330,{u=1604}),
 ach(15332,{u=1604}),
 ach(15333,{u=1604}),
 ach(15334,{u=1604}),
 ach(15335,{u=1604}),
-ach(15637,{u=1604})}),
-x(2,{awp=20000,g={
+ach(15578),
+ach(15637,{u=1604})}}),
+x(2,{awp=20003,g={
 ach(15198),
 ach(15853)}}),
-x(3,{awp=30000,g={
+x(3,{awp=30003,g={
 ach(49),
 ach(50),
 ach(51),
@@ -452,7 +454,7 @@ ach(16437),
 ach(17328),
 ach(18375),
 ach(18376)}}),
-x(4,{awp=40000,g={
+x(4,{awp=40003,g={
 ach(5232),
 ach(5233),
 ach(5234),
@@ -563,7 +565,7 @@ ach(6167),
 ach(6168),
 ach(6170),
 ach(41134)}}),
-x(5,{awp=50000,g={
+x(5,{awp=50004,g={
 ach(6737),
 ach(6738),
 ach(6775),

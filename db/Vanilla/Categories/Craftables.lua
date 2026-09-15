@@ -5,7 +5,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,flt,h,i,o,p,prof,r,s,sp,toy,x=_.CreateHeader,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
 h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
-x(1,{
+x(1,{awp=10100,g={
 prof(171,{
 h(-22,{
 i(3371,{description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",q=1}),
@@ -1607,8 +1607,8 @@ i(2324,{description="Can be bought from Tailoring Suppliers, as well as some Tra
 i(6261,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(10290,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
 i(4341,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1})}),
-flt(50,{awp=100105,g={
-i(18258,{f=55,lvl=55,q=2,rwp=40003,u=1101})}}),
+flt(50,{
+i(18258,{awp=100105,f=55,lvl=55,q=2,rwp=40003,u=1101})}),
 flt(56,{
 i(2996,{q=1}),
 i(4339,{q=1}),
@@ -1618,5 +1618,5 @@ i(2997,{q=1}),
 i(14342,{coords={
 [1440]={{60,72}},
 [1453]={{21,53}},
-[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world.",q=1})})})})}})
+[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world.",q=1})})})}})}})
 end)

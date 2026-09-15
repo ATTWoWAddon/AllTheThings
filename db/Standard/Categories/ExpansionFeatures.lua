@@ -12781,7 +12781,7 @@ s(76909,133755,{b=1,f=57,spellID=221477}),
 artifact(841,{b=1,itemID=133755,sourceID=76909,sourceQuests={41010},spellID=221477}),
 artifact(988,{b=1,itemID=133755,providers={{"i",152583}},sourceID=82962,spellID=221477}),
 artifact(989,{b=1,itemID=133755,providers={{"i",152583}},sourceID=82963,spellID=221477})}})})}}),
-h(-221,{symselector=8,g={
+h(-221,{
 cl(12,{
 s(78746,137061,{b=1,c={12},f=5,loc=40,lvl=40,spellID=215149}),
 s(84507,144279,{b=1,c={12},f=5,loc=41,lvl=40,spellID=209354}),
@@ -13035,7 +13035,7 @@ i(132452,{b=1,f=52,lvl=40,spellID=208051}),
 i(144249,{b=1,c={1,2,6,10,11,12},f=53,lvl=40,spellID=235169}),
 i(154172,{b=1,f=53,lvl=45,spellID=256817}),
 i(144259,{b=1,f=53,lvl=40,spellID=235991}),
-i(144258,{b=1,c={2,5,7,10,11,13},f=53,lvl=40,spellID=235966})}}),
+i(144258,{b=1,c={2,5,7,10,11,13},f=53,lvl=40,spellID=235966})}),
 h(-138,{awp=70003,icon=1408997,g={
 h(-12,{maps={24,626,647,648,695,702,709,717,720,721,726,734,735,739,747},g={
 ach(11298,{
@@ -43150,7 +43150,7 @@ q(91228,{coords={
 q(91229,{coords={
 [2393]={{56.8,65.3}}},isWeekly=1,lvl=90,maxReputation={2808,10},qgs={245824}})}),
 n(258928,{awp=120100,coords={
-[2512]={{29.5,64.9},{52.9,42.2},{68.4,45}}},cost={{"i",274422,1}},crs={265151},description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",questID=98551,g={
+[2512]={{29.5,64.9},{52.9,42.2},{68.4,45}}},cost={{"i",274422,1}},crs={265151},description="Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, actived by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",isWeekly=1,questID=98551,g={
 de(15284,{awp=120001,itemID=263874,spellID=1270748}),
 mnt(1297407,{awp=120001,itemID=275659}),
 de(25337,{awp=120001,itemID=278154,spellID=1303663}),
