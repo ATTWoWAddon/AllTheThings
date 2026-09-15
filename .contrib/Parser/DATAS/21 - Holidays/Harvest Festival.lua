@@ -35,7 +35,9 @@ local RED_FIREWORK = i(9318);	-- Red Firework
 
 root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEADER, {
 	n(MAILBOX, {
-		i(19697),	-- Bounty of the Harvest
+		i(19697, {		-- Bounty of the Harvest
+			["timeline"] = { ADDED_1_12_1 },
+		}),
 	}),
 	n(QUESTS, {
 		q(8149, {	-- Honoring a Hero (A)
@@ -50,6 +52,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["maps"] = { WESTERN_PLAGUELANDS },
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_12_1 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(30, 30, 1),
 			["groups"] = {
@@ -72,6 +75,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			["maps"] = { ASHENVALE },
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_12_1 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(30, 30, 1),
 			["groups"] = {
@@ -92,6 +96,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 	}),
 	n(REWARDS, {
 		["description"] = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
+		["timeline"] = { ADDED_1_12_1 },
 		["groups"] = {
 			i(19995),	-- Harvest Boar
 			i(19696),	-- Harvest Bread
@@ -105,6 +110,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 			15012,	-- Javnir Nashak
 			15011,	-- Wagner Hammerstrike
 		},
+		["timeline"] = { ADDED_1_12_1 },
 		["groups"] = {
 			BLUE_FIREWORK,
 			GREEN_FIREWORK,

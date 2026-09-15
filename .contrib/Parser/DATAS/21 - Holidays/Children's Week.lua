@@ -356,7 +356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY, HELLFIRE_PENINSULA },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -374,7 +374,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31880 },	-- Blood Elf Orphan Whistle
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY, HELLFIRE_PENINSULA },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -485,6 +485,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_4_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = appendGroups(WARDEN_OF_THE_GROUPS, {
@@ -524,6 +525,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			-- #endif
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_4_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = appendGroups(WARDEN_OF_THE_GROUPS, {
@@ -541,7 +543,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY, TEROKKAR_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -564,7 +566,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22819 },	-- Orphan Matron Mercy
 			},
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -585,7 +587,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22819 },	-- Orphan Matron Mercy
 			},
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -688,7 +690,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["coord"] = { 57.6, 41.2, THE_EXODAR },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -707,7 +709,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		q(10943, {	-- Children's Week [Alliance - Draenei - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -749,7 +751,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		q(10942, {	-- Children's Week [Horde - Blood Elf - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -865,7 +867,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31880 },	-- Blood Elf Orphan Whistle
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY, ZANGARMARSH },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -954,7 +956,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1640,7 +1642,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY, THE_EXODAR },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1757,7 +1759,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1787,7 +1789,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31880 },	-- Blood Elf Orphan Whistle
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1813,7 +1815,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31880 },	-- Blood Elf Orphan Whistle
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_1_0 },
 			["maps"] = { SHATTRATH_CITY, NAGRAND },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1838,7 +1840,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "i", 31880 },	-- Blood Elf Orphan Whistle
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
-			["timeline"] = { ADDED_2_0_3, REMOVED_2_4_0 },
+			["timeline"] = { ADDED_2_1_0, REMOVED_2_4_0 },
 			["maps"] = { SHATTRATH_CITY, SILVERMOON_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,

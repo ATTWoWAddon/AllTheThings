@@ -1158,6 +1158,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 33.5, 66.5, IRONFORGE },
 				{ 49.5, 78.5, ORGRIMMAR },
 			},
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1185,6 +1186,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 33.6, 66.1, IRONFORGE },
 				{ 49.6, 77.7, ORGRIMMAR },
 			},
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 			["_drop"] = { "g" },
@@ -1199,21 +1201,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 33.6, 66.3, IRONFORGE },
 				{ 49.6, 78.2, ORGRIMMAR },
 			},
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 20,
 			["_drop"] = { "g" },
 			["groups"] = {
 				i(21301, {	-- Father Winter's Helper (PET!)
-					["timeline"] = { ADDED_1_11_1 },
+					["timeline"] = { ADDED_1_8_4 },
 				}),
 				i(21308, {	-- Winter Reindeer (PET!)
-					["timeline"] = { ADDED_1_11_1 },
+					["timeline"] = { ADDED_1_8_4 },
 				}),
 				i(21305, {	-- Winter's Little Helper (PET!)
-					["timeline"] = { ADDED_1_11_1 },
+					["timeline"] = { ADDED_1_8_4 },
 				}),
 				i(21309, {	-- Tiny Snowman (PET!)
-					["timeline"] = { ADDED_1_11_1 },
+					["timeline"] = { ADDED_1_8_4 },
 				}),
 			},
 		}),
@@ -1223,7 +1226,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 21270 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { REMOVED_6_2_3 },
+			["timeline"] = { ADDED_1_8_4, REMOVED_6_2_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
 			["isYearly"] = true,
@@ -1254,7 +1257,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 21271 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { REMOVED_6_2_3 },
+			["timeline"] = { ADDED_1_8_4, REMOVED_6_2_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
 			["isYearly"] = true,
@@ -1468,6 +1471,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 33.6, 66.5, IRONFORGE },
 				{ 49.5, 78.7, ORGRIMMAR },
 			},
+			["timeline"] = { ADDED_1_8_4 },
 			["isYearly"] = true,
 			["lvl"] = 40,
 			["_drop"] = { "g" },
@@ -1491,6 +1495,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["coord"] = { 33.4, 67.0, IRONFORGE },
 				-- #endif
+				["timeline"] = { ADDED_1_2_0 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(30, 30, 10),
 			}),
@@ -1502,6 +1507,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["coord"] = { 53.2, 66.6, ORGRIMMAR },
 				-- #endif
+				["timeline"] = { ADDED_1_2_0 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(30, 30, 10),
 			}),
@@ -1849,6 +1855,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 		}),
@@ -1876,6 +1883,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 			},
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 		}),
@@ -1887,6 +1895,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 		}),
@@ -1898,6 +1907,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 43.8, 58.6, THUNDER_BLUFF },
 			-- #endif
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 		}),
@@ -1909,6 +1919,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["coord"] = { 68.0, 39.0, UNDERCITY },
 			-- #endif
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 		}),
@@ -1970,6 +1981,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["timeline"] = { REMOVED_4_3_0 },
 			["maps"] = { SEARING_GORGE, TANARIS },
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_8_4 },
 			["isYearly"] = true,
 			["lvl"] = 40,
 			["groups"] = {
@@ -2000,6 +2012,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["timeline"] = { REMOVED_4_3_0 },
 			["maps"] = { SEARING_GORGE, TANARIS },
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_8_4 },
 			["isYearly"] = true,
 			["lvl"] = 40,
 			["groups"] = {
@@ -2041,6 +2054,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				WETLANDS,
 			},
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_8_4 },
 			-- #if BEFORE CATA
 			["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
 			-- #endif
@@ -2071,6 +2085,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				WETLANDS,
 			},
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_8_4 },
 			-- #if BEFORE CATA
 			["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
 			-- #endif
@@ -2087,7 +2102,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
-			["timeline"] = { REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			["timeline"] = { ADDED_1_2_0, REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			["maps"] = { ALTERAC_MOUNTAINS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -2100,7 +2115,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
-			["timeline"] = { REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			["timeline"] = { ADDED_1_2_0, REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			["maps"] = { ALTERAC_MOUNTAINS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -2114,6 +2129,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["coord"] = { 77.2, 11.8, IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 		}),
@@ -2125,6 +2141,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["coord"] = { 38.6, 36.2, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 		}),
@@ -2137,7 +2154,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 33.4, 67.0, IRONFORGE },
 			-- #endif
-			["timeline"] = { REMOVED_4_3_0 },
+			["timeline"] = { ADDED_1_8_4, REMOVED_4_3_0 },
 			["cost"] = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g
@@ -2157,7 +2174,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
-			["timeline"] = { REMOVED_4_3_0 },
+			["timeline"] = { ADDED_1_8_4, REMOVED_4_3_0 },
 			["cost"] = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g
@@ -2172,6 +2189,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["qg"] = 1365,	-- Goli Krumn
 			["coord"] = { 30.2, 59.8, IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 			["groups"] = { i(17735)	},	-- The Feast of Winter Veil (QI!)
@@ -2180,6 +2198,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["qg"] = 9550,	-- Furmund
 			["coord"] = { 51.0, 71.1, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 			["groups"] = { i(17735)	},	-- The Feast of Winter Veil (QI!)
@@ -2193,6 +2212,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				["qg"] = 13444,	-- Greatfather Winter
 				["coord"] = { 33.2, 65.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_2_0 },
 			}),
 			["hordeQuestData"] = q(6962, {	-- Treats for Great-father Winter (Horde)
 				-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
@@ -2203,6 +2223,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				["qg"] = 13445,	-- Great-father Winter
 				["coord"] = { 49.9, 78.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_2_0 },
 			}),
 			["cost"] = {
 				{ "i", 17197, 5 },	-- Gingerbread Cookie
@@ -2294,6 +2315,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				WETLANDS,
 			},
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 		}),
 		q(8828, {	-- Winter's Presents [H]
@@ -2317,6 +2339,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				WETLANDS,
 			},
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_2_0 },
 			["isYearly"] = true,
 		}),
 		q(81560, {	-- Winter's Presents
@@ -2364,6 +2387,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["maps"] = { IRONFORGE },
 				-- #endif
+				["timeline"] = { ADDED_1_2_0 },
 			}),
 			["hordeQuestData"] = q(6983, {	-- You're a Mean One... [H]
 				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
@@ -2379,6 +2403,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["maps"] = { ORGRIMMAR },
 				-- #endif
+				["timeline"] = { ADDED_1_2_0 },
 			}),
 			-- #if AFTER CATA
 			["isDaily"] = true,
@@ -2770,11 +2795,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			15790,	-- Undead Male Winter Reveler
 		},
 		["groups"] = {
-			i(21212),	-- Fresh Holly
+			i(21212, {	-- Fresh Holly
+				["timeline"] = { ADDED_1_8_4 },
+			}),
 			i(34191, {	-- Handful of Snowflakes
 				["timeline"] = { ADDED_2_3_0 },
 			}),
-			i(21519),	-- Mistletoe
+			i(21519, {	-- Mistletoe
+				["timeline"] = { ADDED_1_2_0 },
+			}),
 		},
 	}),
 	n(ZONE_DROPS, {

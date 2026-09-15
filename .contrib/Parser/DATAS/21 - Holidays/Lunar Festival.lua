@@ -957,7 +957,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["coord"] = { 64.2, 47.0, GRIZZLY_HILLS },
 			}),
 		}),
-		preWrathEldersHeader(ELDERS_OF_THE_ALLIANCE, 915, ADDED_1_12_1, {	-- Elders of the Alliance
+		preWrathEldersHeader(ELDERS_OF_THE_ALLIANCE, 915, ADDED_1_9_0, {	-- Elders of the Alliance
 			q(8718, {	-- Bladeswift the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus. The Elder is on the left side of the Cenarion Enclave.",
@@ -999,7 +999,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				},
 			}),
 		}),
-		preWrathEldersHeader(ELDERS_OF_THE_HORDE, 914, ADDED_1_12_1, {	-- Elders of the Horde
+		preWrathEldersHeader(ELDERS_OF_THE_HORDE, 914, ADDED_1_9_0, {	-- Elders of the Horde
 			q(8648, {	-- Darkcore the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.\n\nThe Elder is just inside the front door of the city. Alliance players can fly through the broken roof in front of the room. There are no guards in this area.",
@@ -1041,7 +1041,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				["qg"] = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
 			}),
 		}),
-		preWrathEldersHeader(ELDERS_OF_EASTERN_KINGDOMS, 912, ADDED_1_12_1, {	-- Elders of Eastern Kingdoms
+		preWrathEldersHeader(ELDERS_OF_EASTERN_KINGDOMS, 912, ADDED_1_9_0, {	-- Elders of Eastern Kingdoms
 			q(8647, {	-- Bellowrage the Elder
 				-- #if AFTER WOD
 				["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
@@ -1206,7 +1206,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				},
 			}),
 		}),
-		preWrathEldersHeader(ELDERS_OF_KALIMDOR, 911, ADDED_1_12_1, {	-- Elders of Kalimdor
+		preWrathEldersHeader(ELDERS_OF_KALIMDOR, 911, ADDED_1_9_0, {	-- Elders of Kalimdor
 			q(8715, {	-- Bladeleaf the Elder
 				-- #if AFTER BFA
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil. The Elder is on the left side of the Cenarion Enclave.",
@@ -1413,7 +1413,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				},
 			}),
 		}),
-		preWrathEldersHeader(ELDERS_OF_THE_DUNGEONS, 910, ADDED_1_12_1, {	-- Elders of the Dungeons
+		preWrathEldersHeader(ELDERS_OF_THE_DUNGEONS, 910, ADDED_1_9_0, {	-- Elders of the Dungeons
 			q(13067, {	-- Chogan'gada the Elder
 				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
 				["qg"] = 30538,	-- Elder Chogan'gada

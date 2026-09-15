@@ -72,7 +72,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
 		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
-		["timeline"] = { ADDED_4_2_0 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
@@ -82,7 +82,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
 		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
-		["timeline"] = { ADDED_4_2_0 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
@@ -153,7 +153,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		-- #else
 		["cost"] = { { "i", 33226, 100 } },	-- 100x Tricky Treat
 		-- #endif
-		["timeline"] = { ADDED_4_2_0 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
@@ -240,7 +240,7 @@ local PET_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
-		["timeline"] = { ADDED_4_2_0 },
+		["timeline"] = { ADDED_4_2_2 },
 		["cost"] = { { "i", 33226, 150 } },	-- 150x Tricky Treat
 	}),
 	i(151269, {	-- Naxxy (PET!)
@@ -291,11 +291,11 @@ local MASKS_WITH_COST = {
 	}),
 	i(49212, {	-- Goblin Female Mask
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(49210, {	-- Goblin Male Mask
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(20565, {	-- Human Female Mask
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
@@ -305,19 +305,19 @@ local MASKS_WITH_COST = {
 	}),
 	i(69187, {	-- Murloc Female Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(69188, {	-- Murloc Male Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(69189, {	-- Naga Female Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(69190, {	-- Naga Male Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(20563, {	-- Night Elf Female Mask
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
@@ -327,11 +327,11 @@ local MASKS_WITH_COST = {
 	}),
 	i(69192, {	-- Ogre Female Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(69193, {	-- Ogre Male Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(20569, {	-- Orc Female Mask
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
@@ -359,19 +359,19 @@ local MASKS_WITH_COST = {
 	}),
 	i(69194, {	-- Vrykul Female Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(69195, {	-- Vrykul Male Mask
 		["cost"] = { { "i", 33226, 5 } },	-- 5x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(49215, {	-- Worgen Female Mask
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 	i(49216, {	-- Worgen Male Mask
 		["cost"] = { { "i", 33226, 2 } },	-- 2x Tricky Treat
-		["timeline"] = { ADDED_4_0_1 },
+		["timeline"] = { ADDED_4_2_2 },
 	}),
 };
 
@@ -618,11 +618,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			crit(17590, {	-- Goblin Female Mask
 				["provider"] = { "i", 49212 },	-- Goblin Female Mask
-				["timeline"] = { ADDED_4_0_1 },
+				["timeline"] = { ADDED_4_2_2 },
 			}),
 			crit(17591, {	-- Goblin Male Mask
 				["provider"] = { "i", 49210 },	-- Goblin Male Mask
-				["timeline"] = { ADDED_4_0_1 },
+				["timeline"] = { ADDED_4_2_2 },
 			}),
 			crit(2264, {	-- Human Female Mask
 				["provider"] = { "i", 20565 },	-- Human Female Mask
@@ -662,11 +662,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			crit(17592, {	-- Worgen Female Mask
 				["provider"] = { "i", 49215 },	-- Worgen Female Mask
-				["timeline"] = { ADDED_4_0_1 },
+				["timeline"] = { ADDED_4_2_2 },
 			}),
 			crit(17593, {	-- Worgen Male Mask
 				["provider"] = { "i", 49216 },	-- Worgen Male Mask
-				["timeline"] = { ADDED_4_0_1 },
+				["timeline"] = { ADDED_4_2_2 },
 			}),
 		})),
 		ach(291, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Check Your Head
@@ -683,7 +683,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 			crit(17855, {	-- Goblin
-				["timeline"] = { ADDED_4_0_1 },
+				["timeline"] = { ADDED_4_2_2 },
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 			crit(5777, {	-- Human
@@ -705,7 +705,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 			crit(17854, {	-- Worgen
-				["timeline"] = { ADDED_4_0_1 },
+				["timeline"] = { ADDED_4_2_2 },
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 		})),
@@ -779,7 +779,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "i", 33154 },	-- Sinister Squashling
 				{ "i", 33292 },	-- Hallowed Helm
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			-- #else
 			crit(5783, {	-- Sinister Squashling
 				["provider"] = { "i", 33154 },	-- Sinister Squashling
@@ -863,11 +863,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(5837, {	-- Tricks and Treats of Cataclysm (A)
-			["timeline"] = { ADDED_4_2_0 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(5838, {	-- Tricks and Treats of Cataclysm (H)
-			["timeline"] = { ADDED_4_2_0 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 		}),
 		ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
@@ -890,11 +890,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_12_1_0 },
 		}),
 		ach(5836, {	-- Tricks and Treats of Northrend (A)
-			["timeline"] = { ADDED_4_2_0 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(5835, {	-- Tricks and Treats of Northrend (H)
-			["timeline"] = { ADDED_4_2_0 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 		}),
 		ach(969, {	-- Tricks and Treats of Outlands (A)
@@ -929,7 +929,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		-- #else
 		["questID"] = 11392,	-- Call the Headless Horseman
 		-- #endif
-		["timeline"] = { ADDED_2_0_3 },
+		["timeline"] = { ADDED_2_2_2 },
 		["maps"] = {
 			SCARLET_MONASTERY,
 			436,	-- Scarlet Monastery, Crusader's Chapel
@@ -1008,14 +1008,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #if BEFORE 10.1.7
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						["timeline"] = { ADDED_2_0_3 },
+						["timeline"] = { ADDED_2_2_2 },
 						["filterID"] = MOUNTS,
 					}),
 					i(33292, {	-- Hallowed Helm
 						["timeline"] = { ADDED_2_2_2 },
 					}),
 					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
-						["timeline"] = { ADDED_2_0_3 },
+						["timeline"] = { ADDED_2_2_2 },
 					}),
 					i(37011, {	-- Magic Broom (MOUNT!)
 						["timeline"] = { ADDED_2_4_3 },
@@ -1049,7 +1049,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["groups"] = {
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						["timeline"] = { ADDED_2_0_3 },
+						["timeline"] = { ADDED_2_2_2 },
 						["filterID"] = MOUNTS,
 					}),
 					ach(17547, {	-- The Lick King
@@ -1066,7 +1066,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { ADDED_2_2_2 },
 					}),
 					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
-						["timeline"] = { ADDED_2_0_3 },
+						["timeline"] = { ADDED_2_2_2 },
 						-- #if AFTER 10.1.7
 						["description"] = "Enabling the curses increases the chances for the mount. Subsequent attempts scan still drop the mount, according to Blizzard, but at a significantly lower rate (as far as we know).",
 						-- #endif
@@ -1254,11 +1254,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #if BEFORE 6.0.1
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						["timeline"] = { ADDED_2_0_3 },
+						["timeline"] = { ADDED_2_2_2 },
 						["filterID"] = MOUNTS,
 					}),
 					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
-						["timeline"] = { ADDED_2_0_3 },
+						["timeline"] = { ADDED_2_2_2 },
 					}),
 					-- #endif
 					-- Mists of Pandaria
@@ -1285,10 +1285,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #endif
 					-- Cataclysm
 					i(71326, {	-- The Horseman's Horrific Helm
-						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["timeline"] = { ADDED_4_2_2, REMOVED_5_0_4 },
 					}),
 					i(71325, {	-- The Horseman's Sinister Saber
-						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["timeline"] = { ADDED_4_2_2, REMOVED_5_0_4 },
 					}),
 					-- Wrath of the Lich King Classic
 					-- #if ANYCLASSIC
@@ -1327,11 +1327,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #if BEFORE WRATH
 			ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
-				["timeline"] = { ADDED_2_0_3 },
+				["timeline"] = { ADDED_2_2_2 },
 				["filterID"] = MOUNTS,
 			}),
 			i(37012, {	-- Headless Horseman's Mount (MOUNT!)
-				["timeline"] = { ADDED_2_0_3 },
+				["timeline"] = { ADDED_2_2_2 },
 			}),
 			-- #endif
 			-- Legion+
@@ -1402,16 +1402,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #endif
 			-- Cataclysm
 			i(71327, {	-- Band of Ghoulish Glee
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = { ADDED_4_2_2, REMOVED_5_0_4 },
 			}),
 			i(71330, {	-- Seal of the Petrified Pumpkin
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = { ADDED_4_2_2, REMOVED_5_0_4 },
 			}),
 			i(71328, {	-- The Horseman's Signet
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = { ADDED_4_2_2, REMOVED_5_0_4 },
 			}),
 			i(71329, {	-- Wicked Witch's Ring
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = { ADDED_4_2_2, REMOVED_5_0_4 },
 			}),
 			-- Wrath of the Lich King
 			i(49128, {	-- The Horseman's Baleful Blade
@@ -1431,19 +1431,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			-- Burning Crusade
 			i(38175, {	-- The Horseman's Blade
-				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 			}),
 			i(33808, {	-- The Horseman's Helm
-				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 			}),
 			i(34075, {	-- Ring of Ghoulish Delight
-				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 			}),
 			i(34073, {	-- The Horseman's Signet Ring
-				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 			}),
 			i(34074, {	-- Witches Band
-				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 			}),
 			-- #if BEFORE WRATH
 			i(33154, {	-- Sinister Squashling (PET!)
@@ -1463,13 +1463,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["timeline"] = { ADDED_2_2_2, DELETED_4_2_2 },
 			}),
 			i(33182, {	-- Swift Flying Broom (MOUNT!)
-				["timeline"] = { ADDED_2_0_3, REMOVED_2_4_3 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
 			}),
 			i(33184, {	-- Swift Magic Broom (MOUNT!)
-				["timeline"] = { ADDED_2_0_3, REMOVED_2_4_3 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
 			}),
 			i(33183, {	-- Old Magic Broom (MOUNT!)
-				["timeline"] = { ADDED_2_0_3, REMOVED_2_4_3 },
+				["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
 			}),
 			-- #endif
 			-- #endif
@@ -1496,7 +1496,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		},
 	})),
 	header(HEADERS.Quest, 12406, {	-- Candy Bucket Quests
-		["timeline"] = { ADDED_2_0_3 },
+		["timeline"] = { ADDED_2_2_2 },
 		["groups"] = {
 			n(FACTION_HEADER_NEUTRAL, {
 				candybucket(28955, {	-- Candy Bucket — Badlands, Fuselight, Neutral
@@ -1507,7 +1507,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12406, {	-- Candy Bucket — Blade's Edge Mountains, Evergrove, Neutral
 					["provider"] = { "o", 190112 },	-- Candy Bucket, Blade's Edge Mountains
 					["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(13460, {	-- Candy Bucket — Borean Tundra, Unu'pe, Neutral
 					["provider"] = { "o", 194068 },	-- Candy Bucket, Borean Tundra
@@ -1567,7 +1567,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12398, {	-- Candy Bucket — Dustwallow Marsh, Mudsprocket, Neutral
 					["provider"] = { "o", 190104 },	-- Candy Bucket, Dustwallow Marsh
 					["coord"] = { 41.86, 74.1, DUSTWALLOW_MARSH },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12402, {	-- Candy Bucket — Eastern Plaguelands, Light's Hope Chapel, Neutral
 					["provider"] = { "o", 190108 },	-- Candy Bucket, Eastern Plaguelands
@@ -1581,7 +1581,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 41.3, 90.4, LIGHTS_HOPE_CHAPEL },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28994, {	-- Candy Bucket — Felwood, Whisperwind Grove, Neutral
 					["provider"] = { "o", 208158 },	-- Candy Bucket, Felwood
@@ -1641,16 +1641,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12407, {	-- Candy Bucket — Netherstorm, Area 52, Neutral
 					["provider"] = { "o", 190113 },	-- Candy Bucket, Netherstorm
 					["coord"] = { 32.0, 64.4, NETHERSTORM },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12408, {	-- Candy Bucket — Netherstorm, The Stormspire, Neutral
 					["provider"] = { "o", 190114 },	-- Candy Bucket, Netherstorm
 					["coord"] = { 43.4, 36.1, NETHERSTORM },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12396, {	-- Candy Bucket — Northern Barrens, Ratchet, Neutral
 					["provider"] = { "o", 190102 },	-- Candy Bucket, Northern Barrens
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 67.3, 74.7, NORTHERN_BARRENS },
@@ -1673,7 +1673,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
 						{ 56.4, 59.8, SHADOWMOON_VALLEY },	-- Scryer
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12404, {	-- Candy Bucket — Shattrath City, Aldor Rise or Scryer's Tier, Neutral
 					["providers"] = {
@@ -1684,7 +1684,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
 						{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12950, {	-- Candy Bucket — Sholazar, Nesingwary Base Camp, Neutral
 					["provider"] = { "o", 192018 },	-- Candy Bucket, Sholazar Basin
@@ -1700,7 +1700,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 51.8, 39.2, SILITHUS },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28967, {	-- Candy Bucket — Swamp of Sorrows, Bogpaddle, Neutral
 					["provider"] = { "o", 208139 },	-- Candy Bucket, Swamp of Sorrows
@@ -1721,7 +1721,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 52.45, 27.88, TANARIS },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12397, {	-- Candy Bucket — The Cape of Stranglethorn, Booty Bay, Neutral
 					["provider"] = { "o", 190103 },	-- Candy Bucket, Stranglethorn Vale
@@ -1732,7 +1732,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 27.1, 77.3, STRANGLETHORN_VALE },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(32027, {	-- Candy Bucket — The Jade Forest, Dawn's Blossom, Neutral
 					["provider"] = { "o", 215880 },	-- Candy Bucket, The Jade Forest
@@ -1838,12 +1838,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 61.33, 38.86, WINTERSPRING },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12403, {	-- Candy Bucket — Zangarmarsh, Cenarion Refuge, Neutral
 					["provider"] = { "o", 190109 },	-- Candy Bucket, Zangarmarsh
 					["coord"] = { 78.5, 62.9, ZANGARMARSH },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12941, {	-- Candy Bucket — Zul'Drak, The Argent Stand, Neutral
 					["provider"] = { "o", 191879 },	-- Candy Bucket, Zul'Drak
@@ -2134,12 +2134,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12345, {	-- Candy Bucket — Ashenvale, Astranaar, Alliance
 					["provider"] = { "o", 190035 },	-- Candy Bucket, Ashenvale
 					["coord"] = { 37.0, 49.3, ASHENVALE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12333, {	-- Candy Bucket — Azuremyst Isle, Azure Watch, Alliance
 					["provider"] = { "o", 190037 },	-- Candy Bucket, Azuremyst Isle
 					["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28956, {	-- Candy Bucket — Badlands, Dragon's Mouth, Alliance
 					["provider"] = { "o", 208121 },	-- Candy Bucket, Badlands
@@ -2149,12 +2149,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12358, {	-- Candy Bucket — Blade's Edge Mountains, Sylvanaar, Alliance
 					["provider"] = { "o", 190061 },	-- Candy Bucket, Blade's Edge Mountains
 					["coord"] = { 35.8, 63.8, BLADES_EDGE_MOUNTAINS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12359, {	-- Candy Bucket — Blade's Edge Mountains, Toshley's Station, Alliance
 					["provider"] = { "o", 190062 },	-- Candy Bucket, Blade's Edge Mountains
 					["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28960, {	-- Candy Bucket — Blasted Lands, Nethergarde Keep, Alliance
 					["provider"] = { "o", 208122 },	-- Candy Bucket, Blasted Lands
@@ -2169,7 +2169,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12341, {	-- Candy Bucket — Bloodmyst Isle, Blood Watch, Alliance
 					["provider"] = { "o", 190045 },	-- Candy Bucket, Bloodmyst Isle
 					["coord"] = { 55.7, 59.9, BLOODMYST_ISLE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(13437, {	-- Candy Bucket — Borean Tundra, Fizzcrank Airstrip, Alliance
 					["provider"] = { "o", 194060 },	-- Candy Bucket, Borean Tundra
@@ -2194,7 +2194,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12338, {	-- Candy Bucket — Darkshore, Auberdine, Alliance
 					["provider"] = { "o", 190042 },	-- Candy Bucket, Auberdine
 					["coord"] = { 37.0, 44.0, DARKSHORE },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 				}),
 				candybucket(28951, {	-- Candy Bucket — Darkshore, Lor'danel, Alliance
 					["provider"] = { "o", 208115 },	-- Candy Bucket, Darkshore
@@ -2210,7 +2210,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 67.43, 16.0, DARNASSUS },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(29020, {	-- Candy Bucket — Deepholm, Temple of Earth, Alliance
 					["provider"] = { "o", 208183 },	-- Candy Bucket, Deepholm
@@ -2220,7 +2220,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12348, {	-- Candy Bucket — Desolace, Nijel's Point, Alliance
 					["provider"] = { "o", 190051 },	-- Candy Bucket, Desolace
 					["coord"] = { 66.3, 6.70, DESOLACE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(13438, {	-- Candy Bucket — Dragonblight, Stars' Rest, Alliance
 					["provider"] = { "o", 194061 },	-- Candy Bucket, Dragonblight
@@ -2241,22 +2241,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 47.38, 52.44, DUN_MOROGH },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12344, {	-- Candy Bucket — Duskwood, Darkshire, Alliance
 					["provider"] = { "o", 190048 },	-- Candy Bucket, Duskwood
 					["coord"] = { 73.9, 44.4, DUSKWOOD },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12349, {	-- Candy Bucket — Dustwallow Marsh, Theramore, Alliance
 					["provider"] = { "o", 190052 },	-- Candy Bucket, Dustwallow Marsh
 					["coord"] = { 66.6, 45.3, DUSTWALLOW_MARSH },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12286, {	-- Candy Bucket — Elwynn Forest, Goldshire, Alliance
 					["provider"] = { "o", 189303 },	-- Candy Bucket, Elwynn Forest
 					["coord"] = { 43.7, 66.0, ELWYNN_FOREST },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28995, {	-- Candy Bucket — Felwood, Talonbranch Glade, Alliance
 					["provider"] = { "o", 208159 },	-- Candy Bucket, Felwood
@@ -2277,7 +2277,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 30.9, 43.5, FERALAS },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12944, {	-- Candy Bucket — Grizzly Hills, Amberpine Lodge, Alliance
 					["provider"] = { "o", 191882 },	-- Candy Bucket, Grizzly Hills
@@ -2292,17 +2292,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12352, {	-- Candy Bucket — Hellfire Peninsula, Honor Hold, Alliance
 					["provider"] = { "o", 190055 },	-- Candy Bucket, Hellfire Peninsula
 					["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12353, {	-- Candy Bucket — Hellfire Peninsula, Temple of Telhamat, Alliance
 					["provider"] = { "o", 190056 },	-- Candy Bucket, Hellfire Peninsula
 					["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12346, {	-- Candy Bucket — Hillsbrad Foothills, Southshore, Alliance
 					["provider"] = { "o", 190049 },	-- Candy Bucket, Hillsbrad Foothills
 					["coord"] = { 51.1, 59.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 				}),
 				candybucket(13435, {	-- Candy Bucket — Howling Fjord, Fort Wildervar, Alliance
 					["provider"] = { "o", 194058 },	-- Candy Bucket, Howling Fjord
@@ -2322,7 +2322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12335, {	-- Candy Bucket — Ironforge, The Commons, Alliance
 					["provider"] = { "o", 190039 },	-- Candy Bucket, Ironforge
 					["coord"] = { 18.6, 51.3, IRONFORGE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(32042, {	-- Candy Bucket — Kun-Lai Summit, Westwind Rest, Alliance
 					["provider"] = { "o", 215900 },	-- Candy Bucket, Kun-Lai Summit
@@ -2337,12 +2337,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12339, {	-- Candy Bucket — Loch Modan, Thelsamar, Alliance
 					["provider"] = { "o", 190043 },	-- Candy Bucket, Loch Modan
 					["coord"] = { 35.5, 48.4, LOCH_MODAN },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12357, {	-- Candy Bucket — Nagrand, Telaar, Alliance
 					["provider"] = { "o", 190060 },	-- Candy Bucket, Nagrand
 					["coord"] = { 54.2, 75.8, NAGRAND },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28964, {	-- Candy Bucket — Northern Stranglethorn, Fort Livingston, Alliance
 					["provider"] = { "o", 208125 },	-- Candy Bucket, Northern Stranglethorn
@@ -2358,12 +2358,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 27.0, 44.9, REDRIDGE_MOUNTAINS },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12360, {	-- Candy Bucket — Shadowmoon Valley, Wildhammer Stronghold, Alliance
 					["provider"] = { "o", 190063 },	-- Candy Bucket, Shadowmoon Valley
 					["coord"] = { 37.1, 58.2, SHADOWMOON_VALLEY },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(29008, {	-- Candy Bucket — Southern Barrens, Fort Triumph, Alliance
 					["provider"] = { "o", 208171 },	-- Candy Bucket, Southern Barrens
@@ -2399,7 +2399,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 35.53, 6.4, STONETALON_MOUNTAINS },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(29012, {	-- Candy Bucket — Stonetalon Mountains, Thal'darah Overlook, Alliance
 					["provider"] = { "o", 208175 },	-- Candy Bucket, Stonetalon Mountains
@@ -2420,7 +2420,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 52.77, 65.77, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28968, {	-- Candy Bucket — Swamp of Sorrows, The Harborage, Alliance
 					["provider"] = { "o", 208126 },	-- Candy Bucket, Swamp of Sorrows
@@ -2436,17 +2436,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 55.6, 59.85, TELDRASSIL },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12356, {	-- Candy Bucket — Terokkar Forest, Allerian Stronghold, Alliance
 					["provider"] = { "o", 190059 },	-- Candy Bucket, Terokkar Forest
 					["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12337, {	-- Candy Bucket — The Exodar, Seat of the Naaru, Alliance
 					["provider"] = { "o", 190041 },	-- Candy Bucket, The Exodar
 					["coord"] = { 59.3, 19.2, THE_EXODAR },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12351, {	-- Candy Bucket — The Hinterlands, Aerie Peak, Alliance
 					["provider"] = { "o", 190054 },	-- Candy Bucket, The Hinterlands
@@ -2457,7 +2457,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 14.1, 41.5, THE_HINTERLANDS },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28970, {	-- Candy Bucket — The Hinterlands, Stormfeather Outpost, Alliance
 					["provider"] = { "o", 208127 },	-- Candy Bucket, The Hinterlands
@@ -2543,7 +2543,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						{ 56.8, 47.3, WESTFALL },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28991, {	-- Candy Bucket — Wetlands, Greenwarden's Grove, Alliance
 					["provider"] = { "o", 208135 },	-- Candy Bucket, Wetlands
@@ -2553,7 +2553,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12343, {	-- Candy Bucket — Wetlands, Menethil Harbor, Alliance
 					["provider"] = { "o", 190044 },	-- Candy Bucket, Wetlands
 					["coord"] = { 10.8, 60.9, WETLANDS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28990, {	-- Candy Bucket — Wetlands, Swiftgear Station, Alliance
 					["provider"] = { "o", 208136 },	-- Candy Bucket, Wetlands
@@ -2563,19 +2563,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12355, {	-- Candy Bucket — Zangarmarsh, Orebor Harborage, Alliance
 					["provider"] = { "o", 190058 },	-- Candy Bucket, Zangarmarsh
 					["coord"] = { 41.9, 26.2, ZANGARMARSH },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12354, {	-- Candy Bucket — Zangarmarsh, Telredor, Alliance
 					["provider"] = { "o", 190057 },	-- Candy Bucket, Zangarmarsh
 					["coord"] = { 67.2, 49.0, ZANGARMARSH },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 			})),
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
 				candybucket(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 					["provider"] = { "o", 190082 },	-- Candy Bucket, Arathi Highlands
 					["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28958, {	-- Candy Bucket — Ashenvale, Hellscream's Watch, Horde
 					["provider"] = { "o", 208118 },	-- Candy Bucket, Ashenvale
@@ -2590,7 +2590,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12377, {	-- Candy Bucket — Ashenvale, Splintertree Post, Horde
 					["provider"] = { "o", 190079 },	-- Candy Bucket, Ashenvale
 					["coord"] = { 73.9, 60.7, ASHENVALE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28989, {	-- Candy Bucket — Ashenvale, Zoram'gar Outpost, Horde
 					["provider"] = { "o", 208119 },	-- Candy Bucket, Ashenvale
@@ -2605,7 +2605,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12385, {	-- Candy Bucket — Badlands, Kargath, Horde (removed)
 					["provider"] = { "o", 190087 },	-- Candy Bucket, Badlands
 					["coord"] = { 2.8, 46.0, BADLANDS },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 				}),
 				candybucket(28957, {	-- Candy Bucket — Badlands, New Kargath, Horde
 					["provider"] = { "o", 208143 },	-- Candy Bucket, Badlands
@@ -2615,12 +2615,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12394, {	-- Candy Bucket — Blade's Edge Mountains, Mok'Nathal Village, Horde
 					["provider"] = { "o", 190100 },	-- Candy Bucket, Blade's Edge Mountains
 					["coord"] = { 76.2, 60.4, BLADES_EDGE_MOUNTAINS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12393, {	-- Candy Bucket — Blade's Edge Mountains, Thunderlord Stronghold, Horde
 					["provider"] = { "o", 190099 },	-- Candy Bucket, Blade's Edge Mountains
 					["coord"] = { 53.4, 55.5, BLADES_EDGE_MOUNTAINS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28959, {	-- Candy Bucket — Blasted Lands, Dreadmaul Hold, Horde
 					["provider"] = { "o", 208144 },	-- Candy Bucket, Blasted Lands
@@ -2660,7 +2660,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12381, {	-- Candy Bucket — Desolace, Shadowprey Village, Horde
 					["provider"] = { "o", 190083 },	-- Candy Bucket, Desolace
 					["coord"] = { 24.1, 68.3, DESOLACE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(13469, {	-- Candy Bucket — Dragonblight, Agmar's Hammer, Horde
 					["provider"] = { "o", 194078 },	-- Candy Bucket, Dragonblight
@@ -2675,22 +2675,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12361, {	-- Candy Bucket — Durotar, Razor Hill, Horde
 					["provider"] = { "o", 190064 },	-- Candy Bucket, Durotar
 					["coord"] = { 51.6, 41.7, DUROTAR },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12383, {	-- Candy Bucket — Dustwallow Marsh, Brackenwall Village, Horde
 					["provider"] = { "o", 190085 },	-- Candy Bucket, Dustwallow Marsh
 					["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12365, {	-- Candy Bucket — Eversong Woods, Fairbreeze Village, Horde
 					["provider"] = { "o", 190068 },	-- Candy Bucket, Eversong Woods
 					["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12364, {	-- Candy Bucket — Eversong Woods, Falconwing Square, Horde
 					["provider"] = { "o", 190067 },	-- Candy Bucket, Eversong Woods
 					["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28996, {	-- Candy Bucket — Feralas, Camp Ataya, Horde
 					["provider"] = { "o", 208160 },	-- Candy Bucket, Feralas
@@ -2700,7 +2700,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12386, {	-- Candy Bucket — Feralas, Camp Mojache, Horde
 					["provider"] = { "o", 190088 },	-- Candy Bucket, Feralas
 					["coord"] = { 74.8, 45.1, FERALAS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28998, {	-- Candy Bucket — Feralas, Stonemaul Hold, Horde
 					["provider"] = { "o", 208161 },	-- Candy Bucket, Feralas
@@ -2710,7 +2710,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12373, {	-- Candy Bucket — Ghostlands, Tranquillien, Horde
 					["provider"] = { "o", 190075 },	-- Candy Bucket, Ghostlands
 					["coord"] = { 48.7, 31.9, GHOSTLANDS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12947, {	-- Candy Bucket — Grizzly Hills, Camp Oneqwah, Horde
 					["provider"] = { "o", 191881 },	-- Candy Bucket, Grizzly Hills
@@ -2725,12 +2725,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12389, {	-- Candy Bucket — Hellfire Peninsula, Falcon Watch, Horde
 					["provider"] = { "o", 190091 },	-- Candy Bucket, Hellfire Peninsula
 					["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12388, {	-- Candy Bucket — Hellfire Peninsula, Thrallmar, Horde
 					["provider"] = { "o", 190090 },	-- Candy Bucket, Hellfire Peninsula
 					["coord"] = { 56.8, 37.5, HELLFIRE_PENINSULA },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28962, {	-- Candy Bucket — Hillsbrad Foothills, Eastpoint Tower, Horde
 					["provider"] = { "o", 208145 },	-- Candy Bucket, Hillsbrad Foothills
@@ -2740,7 +2740,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12376, {	-- Candy Bucket — Hillsbrad Foothills, Tarren Hill, Horde
 					["provider"] = { "o", 190078 },	-- Candy Bucket, Hillsbrad Foothills
 					["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(13464, {	-- Candy Bucket — Howling Fjord, Camp Winterhoof, Horde
 					["provider"] = { "o", 194073 },	-- Candy Bucket, Howling Fjord
@@ -2775,16 +2775,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12362, {	-- Candy Bucket — Mulgore, Bloodhoof Village, Horde
 					["provider"] = { "o", 190065 },	-- Candy Bucket, Mulgore
 					["coord"] = { 46.8, 60.4, MULGORE },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12392, {	-- Candy Bucket — Nagrand, Garadar, Horde
 					["provider"] = { "o", 190098 },	-- Candy Bucket, Nagrand
 					["coord"] = { 56.7, 34.6, NAGRAND },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12374, {	-- Candy Bucket — Northern Barrens, Crossroads, Horde
 					["provider"] = { "o", 190076 },	-- Candy Bucket, Northern Barrens
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 49.5, 58.0, NORTHERN_BARRENS },
@@ -2806,27 +2806,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12382, {	-- Candy Bucket — Northern Stranglethorn, Grom'gol Base Camp, Horde
 					["provider"] = { "o", 190084 },	-- Candy Bucket, Northern Stranglethorn
 					["coord"] = { 37.3, 51.7, NORTHERN_STRANGLETHORN },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12366, {	-- Candy Bucket — Orgrimmar, Valley of Strength, Horde
 					["provider"] = { "o", 190069 },	-- Candy Bucket, Orgrimmar
 					["coord"] = { 53.8, 78.8, ORGRIMMAR },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12395, {	-- Candy Bucket — Shadowmoon Valley, Shadowmoon Village, Horde
 					["provider"] = { "o", 190101 },	-- Candy Bucket, Shadowmoon Valley
 					["coord"] = { 30.3, 27.8, SHADOWMOON_VALLEY },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12370, {	-- Candy Bucket — Silvermoon City, The Bazaar, Horde
 					["provider"] = { "o", 190073 },	-- Candy Bucket, Silvermoon City
 					["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12369, {	-- Candy Bucket — Silvermoon City, The Royal Exchange, Horde
 					["provider"] = { "o", 190072 },	-- Candy Bucket, Silvermoon City
 					["coord"] = { 79.6, 57.9, SILVERMOON_CITY },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28966, {	-- Candy Bucket — Silverpine Forest, Forsaken Rear Guard, Horde
 					["provider"] = { "o", 208146 },	-- Candy Bucket, Silverpine Forest
@@ -2836,14 +2836,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12371, {	-- Candy Bucket — Silverpine Forest, The Sepulcher, Horde
 					["provider"] = { "o", 190074 },	-- Candy Bucket, Silverpine Forest
 					["coord"] = { 46.4, 42.8, SILVERPINE_FOREST },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12375, {	-- Candy Bucket — Southern Barrens, Camp Taurajo, Horde
 					["provider"] = { "o", 190077 },	-- Candy Bucket, Camp Taurajo
 					-- #if BEFORE CATA
 					["coord"] = { 45.6, 59.1, THE_BARRENS },
 					-- #endif
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 				}),
 				candybucket(29005, {	-- Candy Bucket — Southern Barrens, Desolation Hold, Horde
 					["provider"] = { "o", 208168 },	-- Candy Bucket, Southern Barrens
@@ -2863,17 +2863,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12378, {	-- Candy Bucket — Stonetalon Mountains, Sun Rock Retreat, Horde
 					["provider"] = { "o", 190080 },	-- Candy Bucket, Stonetalon Mountains
 					["coord"] = { 50.4, 63.8, STONETALON_MOUNTAINS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12384, {	-- Candy Bucket — Swamp of Sorrows, Stonard, Horde
 					["provider"] = { "o", 190086 },	-- Candy Bucket, Swamp of Sorrows
 					["coord"] = { 46.9, 56.7, SWAMP_OF_SORROWS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12391, {	-- Candy Bucket — Terokkar Forest, Stonebreaker Hold, Horde
 					["provider"] = { "o", 190097 },	-- Candy Bucket, Terokkar Forest
 					["coord"] = { 48.8, 45.2, TEROKKAR_FOREST },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28969, {	-- Candy Bucket — The Cape of Stranglethorn, Hardwrench Hideaway, Horde
 					["provider"] = { "o", 208147 },	-- Candy Bucket, The Cape of Stranglethorn
@@ -2888,7 +2888,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12387, {	-- Candy Bucket — The Hinterlands, Revantusk Village, Horde
 					["provider"] = { "o", 190089 },	-- Candy Bucket, The Hinterlands
 					["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(32028, {	-- Candy Bucket — The Jade Forest, Grookin Hill, Horde
 					["provider"] = { "o", 215881 },	-- Candy Bucket, The Jade Forest
@@ -2918,17 +2918,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12379, {	-- Candy Bucket — Thousand Needles, Freewind Post, Horde (removed)
 					["provider"] = { "o", 190081 },	-- Candy Bucket, Thousand Needles
 					["coord"] = { 46.1, 51.4, THOUSAND_NEEDLES },
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 				}),
 				candybucket(12367, {	-- Candy Bucket — Thunder Bluff, Lower Rise, Horde
 					["provider"] = { "o", 190070 },	-- Candy Bucket, Thunder Bluff
 					["coord"] = { 45.7, 64.5, THUNDER_BLUFF },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(12363, {	-- Candy Bucket — Tirisfal Glades, Brill, Horde
 					["provider"] = { "o", 190066 },	-- Candy Bucket, Tirisfal Glades
 					["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(28972, {	-- Candy Bucket — Tirisfal Glades, The Bulwark, Horde
 					["provider"] = { "o", 208149 },	-- Candy Bucket, Tirisfal Glades
@@ -2958,7 +2958,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12368, {	-- Candy Bucket — Undercity, The Trade Quarter, Horde
 					["provider"] = { "o", 190071 },	-- Candy Bucket, Undercity
 					["coord"] = { 67.7, 37.9, UNDERCITY },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(32022, {	-- Candy Bucket — Vale of Eternal Blossoms, Shrine of Two Moons, Horde
 					["provider"] = { "o", 215875 },	-- Candy Bucket, Vale of Eternal Blossoms
@@ -2987,7 +2987,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				candybucket(12390, {	-- Candy Bucket — Zangarmarsh, Zabra'jin, Horde
 					["provider"] = { "o", 190096 },	-- Candy Bucket, Zangarmarsh
 					["coord"] = { 30.7, 50.9, ZANGARMARSH },
-					["timeline"] = { ADDED_2_0_3 },
+					["timeline"] = { ADDED_2_2_2 },
 				}),
 				candybucket(54709, {	-- Candy Bucket — Zuldazar, Dazar'alor, Horde
 					["provider"] = { "o", 316754 },	-- Candy Bucket, The Great Seal
@@ -3013,7 +3013,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				{ 42.6, 64.6, ELWYNN_FOREST },
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm original level requirement
@@ -3033,7 +3033,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 47.2, 46.4, EVERSONG_WOODS },
 				{ 60.8, 53.6, TIRISFAL_GLADES },
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm original level requirement
@@ -3049,7 +3049,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29430, {	-- A Friend in Need (Alliance)
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.3, 50.9, ELWYNN_FOREST },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
@@ -3058,7 +3058,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29431, {	-- A Friend in Need (Horde)
 			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
@@ -3073,7 +3073,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				19173,	-- Night Elf Commoner
 				20102,	-- Goblin Commoner
 			},
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = {
 				NORTHERN_BARRENS,
 				TANARIS,
@@ -3103,7 +3103,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = {
 				NORTHERN_BARRENS,
 				TANARIS,
@@ -3160,7 +3160,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["qg"] = 15197,	-- Darkcaller Yanka
 			["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { ELWYNN_FOREST },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -3181,7 +3181,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["qg"] = 15197,	-- Darkcaller Yanka
 			["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -3192,7 +3192,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["qg"] = 51665,	-- Celestine of the Harvest
 			["coord"] = { 32.0, 50.4, ELWYNN_FOREST },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -3203,7 +3203,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["qg"] = 52064,	-- Keira
 			["coord"] = { 32.0, 50.4, ELWYNN_FOREST },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -3229,7 +3229,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				11220,	-- The Headless Horseman
 			},
 			["provider"] = { "o", 186267 },	-- Pumpkin Shrine
-			["timeline"] = { ADDED_2_0_3, REMOVED_3_3_0 },
+			["timeline"] = { ADDED_2_2_2, REMOVED_3_3_0 },
 			["maps"] = {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
@@ -3243,7 +3243,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29144, {	-- Clean Up in Stormwind
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
@@ -3264,7 +3264,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
@@ -3285,7 +3285,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				19173,	-- Night Elf Commoner
 				20102,	-- Goblin Commoner
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["maps"] = {
 				TANARIS,
 				WINTERSPRING,
@@ -3357,7 +3357,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 24.1, 44.8, STORMWIND_CITY },
 				-- #endif
 			},
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3365,7 +3365,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29415,	-- Missing Heirlooms (Horde)
 			["qg"] = 54142,	-- Hired Courier
 			["coord"] = { 57.4, 9.0, DUROTAR },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3374,7 +3374,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 11356,	-- Costumed Orphan Matron
 			["qg"] = 24519,	-- Costumed Orphan Matron
 			["coord"] = { 49.2, 51.4, AZUREMYST_ISLE },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
@@ -3392,7 +3392,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 11356,	-- Costumed Orphan Matron
 			["qg"] = 24519,	-- Costumed Orphan Matron
 			["coord"] = { 42.6, 64.4, ELWYNN_FOREST },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
@@ -3416,7 +3416,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 46.2, 53.1, DUN_MOROGH },
 				-- #endif
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
@@ -3434,7 +3434,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 11357,	-- Masked Orphan Matron
 			["qg"] = 23973,	-- Masked Orphan Matron
 			["coord"] = { 52.5, 41.2, DUROTAR },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
@@ -3452,7 +3452,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 11357,	-- Masked Orphan Matron
 			["qg"] = 23973,	-- Masked Orphan Matron
 			["coord"] = { 47.2, 46.6, EVERSONG_WOODS },
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
@@ -3476,7 +3476,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 60.9, 53.0, TIRISFAL_GLADES },
 				-- #endif
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
@@ -3510,7 +3510,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(11242, {	-- Free at Last! (Alliance)
 			["qg"] = 23904,	-- Sir Thomas
-			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 			["maps"] = { SCARLET_MONASTERY },
 			["provider"] = { "i", 33277 },	-- Tome of Thomas Thomson
 			["races"] = ALLIANCE_ONLY,
@@ -3518,7 +3518,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(11403, {	-- Free at Last! (Horde)
 			["qg"] = 23904,	-- Sir Thomas
-			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 			["maps"] = { SCARLET_MONASTERY },
 			["provider"] = { "i", 33277 },	-- Tome of Thomas Thomson
 			["races"] = HORDE_ONLY,
@@ -3537,6 +3537,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_1_8_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -3550,6 +3551,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stormwind Nougat
@@ -3562,6 +3564,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["qg"] = 6826,	-- Talvash del Kissel
 					["coord"] = { 36.0, 4.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(2, {	-- 0/1 Gnomeregan Gumdrop
@@ -3574,6 +3577,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["qg"] = 5111,	-- Innkeeper Firebrew <Innkeeper>
 					["coord"] = { 18.6, 51.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(3, {	-- 0/1 Ironforge Mint
@@ -3592,6 +3596,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(4, {	-- 0/1 Darnassus Marzipan
@@ -3620,6 +3625,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
 			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_1_8_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -3635,6 +3641,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Orgrimmar Nougat
@@ -3655,6 +3662,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(2, {	-- 0/1 Darkspear Gumdrop
@@ -3667,6 +3675,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
 					["coord"] = { 67.8, 38.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(3, {	-- 0/1 Undercity Mint
@@ -3679,6 +3688,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["qg"] = 6746,	-- Innkeeper Pala <Innkeeper>
 					["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_1_8_0 },
 					["repeatable"] = true,
 					["groups"] = {
 						objective(4, {	-- 0/1 Thunder Bluff Marzipan
@@ -3706,7 +3716,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["maps"] = {
 				TANARIS,
 				WINTERSPRING,
@@ -3744,7 +3754,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 61.1, 70.6, STORMWIND_CITY },
 				-- #endif
 			},
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3752,7 +3762,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29431,	-- A Friend in Need (Horde)
 			["qg"] = 54141,	-- Edgar Goodwin
 			["coord"] = { 54.4, 77.6, ORGRIMMAR },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3780,7 +3790,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 55.6, 69.9, TIRISFAL_GLADES },
 				{ 51.4, 59.0, HILLSBRAD_FOOTHILLS },
 			},
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_8_0, REMOVED_4_0_3 },
 			["cost"] = { { "i", 20605, 1 } },	-- Rotten Eggs
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -3790,7 +3800,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 8322,	-- Rotten Eggs
 			["provider"] = { "o", 180570 },	-- Keg
 			["coord"] = { 51.4, 59.0, HILLSBRAD_FOOTHILLS },
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_8_0, REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 30,
@@ -3808,7 +3818,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 61.1, 70.6, STORMWIND_CITY },
 				-- #endif
 			},
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3816,7 +3826,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29416,	-- Fencing the Goods (Horde)
 			["qg"] = 44866,	-- Auctioneer Drezmit
 			["coord"] = { 54.0, 73.4, ORGRIMMAR },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -3864,7 +3874,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 53.4, 51.5, DUN_MOROGH },
 				{ 42.6, 64.6, ELWYNN_FOREST },
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3882,7 +3892,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 47.2, 46.4, EVERSONG_WOODS },
 				{ 60.8, 53.6, TIRISFAL_GLADES },
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3894,7 +3904,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3917,7 +3927,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #endif
 			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3941,7 +3951,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 53.4, 51.5, DUN_MOROGH },
 				{ 42.6, 64.6, ELWYNN_FOREST },
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3965,7 +3975,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 47.2, 46.4, EVERSONG_WOODS },
 				{ 60.8, 53.6, TIRISFAL_GLADES },
 			},
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
@@ -3981,7 +3991,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29399,	-- Shopping Around (Alliance)
 			["qg"] = 54021,	-- Hudson Barnes
 			["coord"] = { 64.0, 46.4, STORMWIND_CITY },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -4013,7 +4023,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29425,	-- Shopping Around (Horde)
 			["qg"] = 54146,	-- Delian Sunshade
 			["coord"] = { 58.0, 48.2, ORGRIMMAR },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -4045,7 +4055,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29402,	-- Taking Precautions (Alliance)
 			["qg"] = 54021,	-- Hudson Barnes
 			["coord"] = { 64.0, 46.4, STORMWIND_CITY },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
@@ -4059,7 +4069,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["sourceQuest"] = 29426,	-- Taking Precautions (Horde)
 			["qg"] = 54146,	-- Delian Sunshade
 			["coord"] = { 58.0, 48.2, ORGRIMMAR },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { TIRISFAL_GLADES },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -4073,26 +4083,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29413, {	-- The Creepy Crate (Alliance)
 			["sourceQuest"] = 29411,	-- What Now? (Alliance)
 			["provider"] = { "o", 209076 },	-- Anson's Crate
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { ADDED_4_2_0 },
+					["timeline"] = { ADDED_4_2_2 },
 				}),
 			},
 		}),
 		q(29429, {	-- The Creepy Crate (Horde)
 			["sourceQuest"] = 29428,	-- What Now? (Horde)
 			["provider"] = { "o", 209095 },	-- Edgar's Crate
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { ADDED_4_2_0 },
+					["timeline"] = { ADDED_4_2_2 },
 				}),
 			},
 		}),
@@ -4107,7 +4117,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				{ 42.6, 64.4, ELWYNN_FOREST },
 			},
-			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			-- #if AFTER WRATH
 			["lvl"] = 75,
@@ -4122,7 +4132,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 47.3, 46.5, EVERSONG_WOODS },
 				{ 60.9, 53.0, TIRISFAL_GLADES },
 			},
-			["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+			["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			-- #if AFTER WRATH
 			["lvl"] = 75,
@@ -4133,7 +4143,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(8373, {	-- The Power of Pine
 			["qg"] = 15199,	-- Sergeant Hartman
 			["coord"] = { 50.0, 57.2, HILLSBRAD_FOOTHILLS },
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_8_0, REMOVED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,
@@ -4182,7 +4192,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "i", 71057 },	-- Recovered Crate
 			},
 			["coord"] = { 55.3, 43.5, STORMWIND_CITY },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
@@ -4194,7 +4204,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "i", 71057 },	-- Recovered Crate
 			},
 			["coord"] = { 65.8, 74.8, TIRISFAL_GLADES },
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_4_2_2 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -4291,7 +4301,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	}),
 	n(REWARDS, appendGroups(MASKS_WITHOUT_COST, appendGroups(WANDS_WITHOUT_COST, {
 		i(34077, {	-- Crudely Wrapped Gift
-			["timeline"] = { ADDED_2_0_3 },
+			["timeline"] = { ADDED_2_2_2 },
 			-- #if BEFORE CATA
 			["sym"] = {
 				-- Masks & Wands & Candy
@@ -4310,7 +4320,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				i(36877),	-- Folded Letter
 				-- #if BEFORE 4.0.1
 				i(33189, {	-- Rickety Magic Broom
-					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_2_2_2, REMOVED_4_0_1 },
 				}),
 				-- #endif
 				-- #if BEFORE CATA
