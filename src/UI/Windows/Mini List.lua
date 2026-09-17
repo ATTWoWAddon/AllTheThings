@@ -106,6 +106,7 @@ local rootGroups, mapGroups = {}, {};
 -- Hopefully can reconcile this more after Phase 1 of window consolidation
 local DataCloner = app.IsRetail and app.__CreateObject or app.CloneClassInstance
 local RetailMapDataStyleMetatable = {
+	__mode = "kv",
 	__index = function(cachedMapData, mapID)
 		if not mapID then
 			app.print("Invalid mapID for MiniList cache!",mapID)
