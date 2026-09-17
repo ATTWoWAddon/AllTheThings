@@ -3,7 +3,7 @@ local _, app = ...;
 
 -- Check to see if Garrison APIs are available for Warlords
 local C_Garrison = C_Garrison;
-if not C_Garrison or app.GameBuildVersion < 50000 then
+if not C_Garrison or app.GameBuildVersion < 60000 then
 	app.CreateGarrisonBuilding = app.CreateUnimplementedClass("GarrisonBuilding", "garrisonbuildingID");
 	app.CreateGarrisonMission = app.CreateUnimplementedClass("GarrisonMission", "missionID");
 	app.CreateGarrisonTalent = app.CreateUnimplementedClass("GarrisonTalent", "garrisonTalentID");
