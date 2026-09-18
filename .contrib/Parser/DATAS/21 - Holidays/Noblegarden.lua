@@ -19,16 +19,16 @@ NOBLEGARDEN_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(159),
 		-- #else
 		en = "Noblegarden",
-		-- TODO: de = "",
+		de = "Nobelgartenfest",
 		es = "Jardín noble",
 		mx = "Jardín noble",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
+		fr = "Le Jardin des nobles",
+		it = "Festa di Nobiluova",
+		ko = "귀족의 정원",
+		pt = "Jardinova",
+		ru = "Сад чудес",
 		cn = "复活节",
-		-- TODO: tw = "",
+		tw = "貴族花園",
 		-- #endif
 	},
 });
@@ -235,18 +235,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		i(72145, {	-- Swift Springstrider (MOUNT!)
 			["timeline"] = { ADDED_4_3_0 },
 		}),
-
 		i(19028, {	-- Elegant Dress
-			["timeline"] = { REMOVED_7_2_5 },
+			["timeline"] = { ADDED_1_3_0, REMOVED_7_2_5 },
 		}),
 		i(6835, {	-- Black Tuxedo Pants
-			["timeline"] = { REMOVED_7_2_5 },
+			["timeline"] = { ADDED_1_3_0, REMOVED_7_2_5 },
 		}),
-		i(6833),	-- White Tuxedo Shirt
+		i(6833, {	-- White Tuxedo Shirt
+			["timeline"] = { ADDED_1_3_0 },
+		}),
 		-- #if BEFORE 3.1.0.9733
-		i(7807),	-- Candy Bar
-		i(7808),	-- Chocolate Square
-		i(7806),	-- Lollipop
+		i(7807, {	-- Candy Bar
+			["timeline"] = { ADDED_1_3_0 },
+		}),
+		i(7808, {	-- Chocolate Square
+			["timeline"] = { ADDED_1_3_0 },
+		}),
+		i(7806, {	-- Lollipop
+			["timeline"] = { ADDED_1_3_0 },
+		}),
 		-- #endif
 		i(155905, {	-- Cursed Rabbit's Foot
 			["timeline"] = { ADDED_7_3_5 },

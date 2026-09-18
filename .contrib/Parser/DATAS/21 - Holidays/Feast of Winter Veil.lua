@@ -16,14 +16,6 @@ FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	-- #endif
 	text = {
 		en = WOWAPI_GetSpellName(21953),
-		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
 		cn = "冬幕节",	-- WOWAPI_GetSpellName(21953) == 冬幕大餐
 		tw = "冬幕節",
 	},

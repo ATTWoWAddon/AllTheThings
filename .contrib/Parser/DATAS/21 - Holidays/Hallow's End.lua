@@ -19,16 +19,16 @@ HALLOWS_END_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(158),
 		-- #else
 		en = "Hallow's End",
-		-- TODO: de = "",
+		de = "Schlotternächte",
 		es = "Halloween",
 		mx = "Halloween",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: ko = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
+		fr = "Sanssaint",
+		it = "Veglia delle Ombre",
+		ko = "할로윈 축제",
+		pt = "Noturnália",
+		ru = "Тыквовин",
 		cn = "万圣节",
-		-- TODO: tw = "",
+		tw = "萬鬼節",
 		-- #endif
 	},
 });
