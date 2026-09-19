@@ -126,6 +126,8 @@
 ---@field modID? ModID
 ---@field bonusID? BonusID
 ---@field questID? QuestID
+---@field sourceQuests? QuestID[] Prerequisite/source quests.
+---@field sourceQuestNumRequired? integer Number of source quests required.
 ---@field spellID? SpellID
 ---@field npcID? NPCID
 ---@field creatureID? CreatureID
@@ -137,6 +139,7 @@
 ---@field criteriaID? CriteriaID
 ---@field factionID? FactionID
 ---@field mapID? UiMapID
+---@field map? UiMapID Legacy singular map field.
 ---@field maps? UiMapID[]
 ---@field difficultyID? DifficultyID
 ---@field difficulties? DifficultyID[]
@@ -166,6 +169,10 @@
 ---@field providers? ATTProvider[]
 ---@field cost? ATTCost[]
 ---@field timeline? ATTTimelineEvent[]|ATTIgnoredValue
+---@field _defaulttimeline? ATTTimelineEvent[] Parser fallback timeline used when no explicit timeline is supplied.
+---@field forcetimeline? ATTTimelineEvent[] Parser-only timeline override consumed during expansion processing.
+---@field e? EventID Event association applied by `applyevent`.
+---@field symselector? integer Symbolic-selector ID.
 ---@field sym? ATTSym
 ---@field u? ATTUnobtainableStatus
 ---@field up? number|string Encoded upgrade target or parser sentinel such as `IGNORED_VALUE`.
@@ -185,10 +192,19 @@
 ---@field isBreadcrumb? boolean
 ---@field isLocked? boolean
 ---@field isRaid? boolean
+---@field collectible? boolean Whether the object is collectible.
+---@field repeatable? boolean Whether the object is repeatable.
+---@field gender? integer Gender restriction/variant ID.
+---@field pvp? boolean PvP requirement/filter flag.
+---@field cm? boolean Challenge-mode requirement/filter flag.
+---@field sr? boolean Skyriding requirement/filter flag.
 ---@field ignoreBonus? boolean
 ---@field autoname? string
 ---@field OnInit? string
 ---@field _drop? string[] Parser fields to remove after processing.
+---@field _noautomation? boolean Disables parser automation for this object.
+---@field _remove? boolean Marks the object for parser-side removal.
+---@field _multiDifficultyID? DifficultyID Original multi-difficulty ID retained for parser/instance processing.
 ---@field _ignore? boolean
 ---@field _DATAGROUP? string
 ---@field _DATAGROUPS? string[]
