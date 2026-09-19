@@ -2581,7 +2581,7 @@ end
 ---@param recipeID RecipeID
 ---@param questID QuestID
 ---@param added? ATTTimelineEvent
----@param description? string
+---@param description? string|ATTLocalizationStringTable
 ---@param maps? UiMapID[]
 ---@return ATTRecipeObject
 r_withQuest = function(recipeID, questID, added, description, maps)
@@ -3341,7 +3341,7 @@ local SECONDS_IN_A_WEEK = 604800;
 --- Registers a reusable parser header definition and returns its header ID.
 --- Header metadata is indexed for parser generation and can later be referenced
 --- through `header(...)`, `n(...)`, or generated constants.
----@param data? ATTHeaderInputDefinition
+---@param data ATTHeaderInputDefinition
 ---@return ATTHeaderID|nil
 createHeader = function(data)
 	if not data then
