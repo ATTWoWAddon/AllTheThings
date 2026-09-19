@@ -293,17 +293,27 @@
 ---@field description? ATTLocalizationStringTable Optional localized description.
 ---@field [string] any Additional localization metadata.
 
----@class ATTHeaderDefinition: ATTObject
+--- Shared fields used by both raw header definitions and processed header data.
+---@class ATTHeaderDefinitionBase: ATTObject
 ---@field readable string Human-readable parser label.
 ---@field text string|ATTLocalizationStringTable Localized header text.
 ---@field constant? string Unique header constant.
 ---@field icon? string|FileID
 ---@field sort? number
 ---@field SortPriority? number
----@field eventSchedule? number[]|string
 ---@field eventID? EventID
 ---@field eventIDs? EventID[]
+
+--- Raw definition accepted by `createHeader`.
+---@class ATTHeaderInputDefinition: ATTHeaderDefinitionBase
+---@field eventSchedule? number[] Numeric schedule definition consumed by `createHeader`.
 ---@field standalone? boolean
+
+--- Processed definition stored in `CustomHeaders`.
+---@class ATTHeaderDefinition: ATTHeaderDefinitionBase
+---@field eventSchedule? string Generated Lua schedule expression after processing.
+---@field standalone boolean Normalized by `createHeader`; defaults to `false`.
+---@field filepath? string Parser source file which registered this header.
 
 ---@class ATTCustomObjectDefinition: ATTObject
 ---@field readable string Human-readable parser label.
@@ -3285,8 +3295,10 @@ if not NextHeaderID then
 	NextHeaderID = -1;
 	HeaderAssignments = {};
 end
+---@type table<ATTHeaderID, ATTHeaderDefinition>
 local customHeaders = {};
 local customHeadersByReadable, customHeadersByConstant = {}, {};
+---@type table<ATTHeaderID, ATTHeaderDefinition>
 CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
 --- Serializes sorted table key/value pairs into a Lua table-literal string.
 ---@param t table<string, string|number>
@@ -3326,7 +3338,7 @@ local SECONDS_IN_A_WEEK = 604800;
 --- Registers a reusable parser header definition and returns its header ID.
 --- Header metadata is indexed for parser generation and can later be referenced
 --- through `header(...)`, `n(...)`, or generated constants.
----@param data? ATTHeaderDefinition
+---@param data? ATTHeaderInputDefinition
 ---@return ATTHeaderID|nil
 createHeader = function(data)
 	if not data then
@@ -3738,11 +3750,13 @@ createHeader = function(data)
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
 				return;
 			end
+			---@cast data ATTHeaderDefinition
 			data.eventSchedule = schedule .. "\n}";
 		end
 
 		-- Whether or not to allow empty headers for this type (Default: No)
 		if not data.standalone then data.standalone = false; end
+		---@cast data ATTHeaderDefinition
 
 		-- Try to find the headerID assignment from the readable table.
 		local headerID = HeaderAssignments[data.readable];
