@@ -193,7 +193,6 @@
 ---@field _DATAGROUP? string
 ---@field _DATAGROUPS? string[]
 ---@field [integer] ATTObject Array-style group entries.
----@field [string] any Additional parser-specific metadata.
 
 ---@class ATTAchievementObject: ATTObject
 ---@field achievementID? AchievementID
@@ -286,6 +285,7 @@
 ---@field sort? number
 ---@field SortPriority? number
 ---@field eventSchedule? number[]
+---@field eventID? EventID
 ---@field eventIDs? EventID[]
 ---@field standalone? boolean
 
