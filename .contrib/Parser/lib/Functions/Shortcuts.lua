@@ -88,6 +88,8 @@
 ---@alias ATTObjectArray ATTObject[]
 ---@alias ATTObjectArrayArray ATTObjectArray[]
 
+--- Intentionally non-exact: parser objects are an extensible data model and
+--- may carry module/flavor-specific fields outside this central shortcut schema.
 ---@class ATTObject
 ---@field groups? ATTObjectArray Nested parser objects.
 ---@field g? ATTObjectArray Legacy alias for `groups`; normalized by parser helpers.
@@ -320,7 +322,7 @@
 ---@field text string|ATTLocalizationStringTable Localized object text.
 ---@field constant? string Unique custom-object constant.
 
----@class ATTDateParts
+---@class (exact) ATTDateParts
 ---@field year integer
 ---@field month integer
 ---@field day? integer
@@ -333,7 +335,8 @@
 ---@field select fun(key: string): ATTSymCommand
 ---@field [string] integer|function
 
----@class ATTRootConstants
+--- Closed root-category registry; runtime rejects unknown keys via `__index`.
+---@class (exact) ATTRootConstants
 ---@field AchievementDB string
 ---@field Achievements string
 ---@field Arcantina string
