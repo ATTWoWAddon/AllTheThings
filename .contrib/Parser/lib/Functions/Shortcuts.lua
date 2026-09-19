@@ -93,7 +93,7 @@
 ---@field g? ATTObjectArray Legacy alias for `groups`; normalized by parser helpers.
 ---@field type? string Parser object type override.
 ---@field text? ATTLocalizationStringTable Display/localization text.
----@field description? ATTLocalizationStringTable Description/localization data.
+---@field description? string|ATTLocalizationStringTable Description/localization data.
 ---@field name? string Display name.
 ---@field readable? string Human-readable parser label.
 ---@field icon? string|FileID Icon path/file ID.
@@ -279,19 +279,19 @@
 
 ---@class ATTHeaderDefinition: ATTObject
 ---@field readable string Human-readable parser label.
----@field text ATTLocalizationStringTable Localized header text.
+---@field text string|ATTLocalizationStringTable Localized header text.
 ---@field constant? string Unique header constant.
 ---@field icon? string|FileID
 ---@field sort? number
 ---@field SortPriority? number
----@field eventSchedule? number[]
+---@field eventSchedule? number[]|string
 ---@field eventID? EventID
 ---@field eventIDs? EventID[]
 ---@field standalone? boolean
 
 ---@class ATTCustomObjectDefinition: ATTObject
 ---@field readable string Human-readable parser label.
----@field text ATTLocalizationStringTable Localized object text.
+---@field text string|ATTLocalizationStringTable Localized object text.
 ---@field constant? string Unique custom-object constant.
 
 ---@class ATTDateParts
@@ -609,7 +609,7 @@ applyDataSelf = function(data, t)
 end
 -- Applies a function against the group and all sub-groups
 --- Recursively applies a function to a group and all of its nested groups.
----@param func? fun(group: ATTObject)
+---@param func? fun(group: ATTObject|ATTObjectArray)
 ---@param t ATTObject|ATTObjectArray
 ---@return ATTObject|ATTObjectArray
 applyFunc = function(func, t)
@@ -3130,6 +3130,7 @@ end
 battleground = function(mapID, g)						-- Create a BATTLEGROUND in the PvP header.
 	root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, { m(mapID, g) })));
 end
+---@param ... UiMapID|ATTObject|ATTObjectArray
 maproot = function(...)									-- Create a MAP ROOT in the Zones header.
 	-- Example: maproot(KALIMDOR, ELWYNN_FOREST, { });
 	local args = { ... };
