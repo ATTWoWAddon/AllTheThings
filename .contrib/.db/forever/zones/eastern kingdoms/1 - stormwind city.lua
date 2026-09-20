@@ -289,16 +289,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					5677,	-- Arcane Feedback [Ironforge]
 					5678,	-- Arcane Feedback [Darnassus]
 				},
-				["qgs"] = {
-					11406,	-- High Priest Rohan <Priest Trainer>
-					376,	-- High Priestess Laurena <Priest Trainer>
-					11401,	-- Priestess Alathea <Priest Trainer>
-				},
-				["coords"] = {
-					{ 26.4, 7.6, MAP.IRONFORGE },
-					{ 38.8, 26.6, MAP.STORMWIND_CITY },
-					{ 40.0, 80.0, MAP.DARNASSUS },
-				},
+				["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
+				["coord"] = { 38.8, 26.6, MAP.STORMWIND_CITY },
 				["races"] = { HUMAN },
 				["classes"] = { PRIEST },
 				["lvl"] = 20,
@@ -349,7 +341,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["lvl"] = 10,
 				["groups"] = {
 					recipe(71),	-- Defensive Stance
-					recipe(7386),	-- Sunder Armor
+					-- recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 					recipe(355),	-- Taunt
 				},
 			}),
@@ -524,7 +516,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["groups"] = {
 					objective(1, {	-- 0/25 Terrordale Spirit slain
 						["provider"] = { "n", 14564 },	-- Terrordale Spirit
-						["coord"] = { 16.4, 31.8, MAP.EASTERN_PLAGUELANDS },
+						["coord"] = { 19.6, 36.8, MAP.EASTERN_PLAGUELANDS },
 					}),
 				},
 			}),
@@ -840,6 +832,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(7638, {	-- Lord Grayson Shadowbreaker [Stormwind City]
 				["qg"] = 6171,	-- Duthorian Rall
+				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				["classes"] = { PALADIN },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -1141,22 +1134,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					objective(2, {	-- 0/1 Marzon the Silent Blade slain
 						["provider"] = { "n", 1755 },	-- Marzon the Silent Blade
 					}),
-				},
-			}),
-			q(65603, {	-- The Binding (Incubus) [Stormwind City]
-				["sourceQuest"] = 65602,	-- What Is Love?
-				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
-				["classes"] = { WARLOCK },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
-					objective(1, {	-- 0/1 Summoned Incubus slain
-						["provider"] = { "n", 185335 },	-- Summoned Incubus
-						["cost"] = { { "i", 190186, 1 } },	-- Wooden Figurine
-					}),
-					recipe(713),	-- Summon Incubus
-					i(22243),	-- Small Soul Pouch
 				},
 			}),
 			q(1739, {	-- The Binding (Succubus) [Stormwind City]
@@ -1469,7 +1446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				["classes"] = { PALADIN },
 				["lvl"] = 12,
 				["groups"] = {
-					recipe(7328),	-- Redemption [Rank 1]
+					-- recipe(7328),	-- Redemption [Rank 1]
 				},
 			}),
 			q(4485, {	-- The Tome of Nobility (Stormwind City)
@@ -1657,68 +1634,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
-			q(65602, {	-- What Is Love?
-				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ASHENVALE },
-				["classes"] = { WARLOCK },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
-					objective(1, {	-- 0/1 Wooden Figurine
-						["providers"] = {
-							{ "i", 190309 },	-- Wooden Figurine
-							{ "o", 375544 },	-- Wooden Figurine
-							{ "o", createCustomObject({	-- Archaeologist's Cart [Couldn't find the proper objectID, so I faked it.]
-								readable = "Archaeologist's Cart",
-								text = {
-									en = "Archaeologist's Cart",
-									-- TODO: de = "",
-									-- TODO: es = "",
-									-- TODO: mx = "",
-									-- TODO: fr = "",
-									-- TODO: it = "",
-									-- TODO: ko = "",
-									-- TODO: pt = "",
-									-- TODO: ru = "",
-									cn = "考古学家的车",
-									tw = "考古學家的推車",
-								},
-							}) },
-						},
-						["coord"] = { 26.0, 22.0, MAP.ASHENVALE },
-						["cost"] = {{ "i", 190308, 1 }},	-- Burning Torch
-					}),
-					i(190308, {	-- 0/1 Burning Torch
-						["description"] = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
-						["providers"] = {
-							{ "i", 190307 },	-- Unlit Torch
-							{ "o", createCustomObject({	-- Unlit Torch [Couldn't find the proper objectID, so I faked it.]
-								readable = "Unlit Torch",
-								model = 201129,
-								icon = 135434,
-								text = {
-									en = "Unlit Torch",
-									de = "Nicht angezündete Fackel",
-									es = "Antorcha apagada",
-									-- TODO: mx = "",
-									fr = "Torche éteinte",
-									it = "Unlit Torch",
-									ko = "불을 붙이지 않은 횃불",
-									pt = "Tocha Apagada",
-									ru = "Незажженный факел",
-									cn = "未点燃的火把",
-									-- TODO: tw = "",
-								},
-							}) },
-						},
-						["coords"] = {
-							{ 26.79, 22.42, MAP.ASHENVALE },
-							{ 15.0, 31.0, MAP.ASHENVALE },
-						},
-					}),
-				},
-			}),
 			q(332, {	-- Wine Shop Advert
 				["sourceQuest"] = 61,	-- Shipment to Stormwind
 				["providers"] = {
@@ -1758,6 +1673,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					{ 34.2, 60.2, MAP.STORMWIND_CITY },
 					{ 50.0, 69.6, MAP.STORMWIND_CITY },
 					{ 47.2, 61.6, MAP.STORMWIND_CITY },
+				},
+			}),
+		}),
+		n(TREASURES, {
+			o(180665, {	-- Draconic for Dummies
+				["coord"] = { 75.35, 29.73, MAP.STORMWIND_CITY },
+				["groups"] = {
+					i(21107),	-- Draconic for Dummies [Chapter V]
 				},
 			}),
 		}),
@@ -2310,7 +2233,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(18606),	-- Alliance Battle Standard
 					i(18839),	-- Combat Healing Potion
 					i(18841),	-- Combat Mana Potion
-					moh(1, i(15198)),	-- Knight's Colors
+					i(15198),	-- Knight's Colors
 				}),
 			}),
 			n(12805, {	-- Officer Areyn <Accessories Quartermaster>
