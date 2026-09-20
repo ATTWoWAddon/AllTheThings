@@ -1460,11 +1460,20 @@ end
 
 -- Achievement Shortcuts
 --- Create an ACHIEVEMENT Object.
+---@param id AchievementID
+---@param altID? AchievementID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTAchievementObject
+---@overload fun(id: AchievementID, t?: ATTObject|ATTObjectArray): ATTAchievementObject
 ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
+	---@type AchievementID|ATTObject|ATTObjectArray|nil
+	local altID = altID;
 	if t or type(altID) == "number" then
+		---@cast altID AchievementID|nil
 		t = struct("allianceAchievementID", id, t or {});
 		t.hordeAchievementID = altID;
 	else
+		---@cast altID ATTObject|ATTObjectArray|nil
 		t = struct("achievementID", id, altID);
 	end
 	-- #if AFTER WRATH
@@ -1473,23 +1482,41 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 		t._defaulttimeline = { ADDED_3_0_2 }
 	end
 	-- #endif
+	---@cast t ATTAchievementObject
 	return t;
 end
 --- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
+---@param id AchievementID
+---@param factionID FactionID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTAchievementObject
 achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
 	t = ach(id, t);
 	t.minReputation = { factionID, EXALTED }
 	return t;
 end
 --- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+---@param id AchievementID
+---@param factions FactionID[]
+---@param t? ATTObject|ATTObjectArray
+---@return ATTAchievementObject
 achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
 	return ach(id, t);
 end
 --- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+---@param id AchievementID
+---@param factions FactionID[]
+---@param t? ATTObject|ATTObjectArray
+---@return ATTAchievementObject
 achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
 	return ach(id, t);
 end
 --- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info.
+---@param id AchievementID
+---@param altID? AchievementID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTAchievementObject
+---@overload fun(id: AchievementID, t?: ATTObject|ATTObjectArray): ATTAchievementObject
 achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
 	if t then
@@ -1504,6 +1531,10 @@ achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Crit
 	return t;
 end
 --- Create an ACHIEVEMENT Object whose Criteria is simply to complete a partial set of a broader Achievement's Criteria.
+---@param id AchievementID
+---@param fullAch AchievementID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTAchievementObject
 achpart = function(id, fullAch, t)						-- Create an ACHIEVEMENT Object whose Criteria is simply to complete a partial set of a broader Achievement's Criteria
 	t = ach(id, t)
 	t._noautomation = true
@@ -1513,69 +1544,114 @@ end
 
 -- SHORTCUTS for Object Class Types
 --- Create an ACHIEVEMENT CATEGORY Object.
+---@param id AchievementCategoryID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
 	return struct("achievementCategoryID", id, t);
 end
 achievementCategory = achcat;
 --- Create an ARTIFACT Object.
+---@param id ArtifactID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
 end
 --- Create a AZERITE ESSENCE Object.
+---@param id AzeriteEssenceID
+---@param rank? integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
+---@overload fun(id: AzeriteEssenceID, t?: ATTObject|ATTObjectArray): ATTObject
 az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object
+	---@type integer|ATTObject|ATTObjectArray|nil
+	local rank = rank;
 	if t or type(rank) == "number" then
+		---@cast rank integer|nil
 		t = struct("azeriteessenceID", id, t or {});
 		t.rank = rank;
 		return t;
 	else
+		---@cast rank ATTObject|ATTObjectArray|nil
 		return struct("azeriteessenceID", id, rank);
 	end
 end
 azeriteEssence = az;									-- Create a AZERITE ESSENCE Object. (alternative shortcut)
 --- Create an Item which is marked as having obtained the Heart of Azeroth.
+---@param id ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 azeriteItem = function(id, t)							-- Create an Item which is marked as having obtained the Heart of Azeroth
 	t = i(id, t);
 	t.customCollect = { "HOA" };
 	return t;
 end
 --- Create an Item which is marked as having not obtained the Heart of Azeroth.
+---@param id ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 azewrongItem = function(id, t)							-- Create an Item which is marked as having not obtained the Heart of Azeroth
 	t = i(id, t);
 	t.customCollect = { "!HOA" };
 	return t;
 end
 --- Create a CAMPSITE Object.
+---@param id integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 campsite = function(id, t)								-- Create a CAMPSITE Object
 	return struct("campsiteID", id, t);
 end
 --- Create a BATTLE PET Object (Battle Pet == Species == Pet).
+---@param id BattlePetSpeciesID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTBattlePetObject
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);
 end
 pet = battlepet;										-- Create a BATTLE PET Object (alternative shortcut)
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
 --- Create a BATTLE PET ABILITY Object.
+---@param id BattlePetAbilityID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
 	return struct("petAbilityID", id, t);
 end
 bpa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
 pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
 --- Create a BATTLE PET TYPE Object.
+---@param id BattlePetTypeID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
 	return struct("petTypeID", id, t);
 end
 bpt = battlepettype;									-- Create a BATTLE PET TYPE Object (alternative shortcut)
 --- Create a CATEGORY Object.
+---@param id integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
 cat = category
 --- Create a CHARACTER CLASS Object.
+---@param id ClassID
+---@param spec ChrSpecializationID
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
+---@overload fun(id: ClassID, t?: ATTObject|ATTObjectArray): ATTObject
 cl = function(id, spec, t)								-- Create a CHARACTER CLASS Object
+	---@type ChrSpecializationID|ATTObject|ATTObjectArray|nil, ATTObject|ATTObjectArray|nil
+	local spec, t = spec, t;
 	-- spec is optional
 	if not t then
+		---@cast spec ATTObject|ATTObjectArray|nil
 		t = spec;
 	else
+		---@cast spec ChrSpecializationID
 		if spec == FROST or spec == RESTORATION or spec == HOLY or spec == PROTECTION then
 			if id == MAGE then
 				spec = 64;
@@ -1593,21 +1669,32 @@ cl = function(id, spec, t)								-- Create a CHARACTER CLASS Object
 	return struct("classID", id, t);
 end
 --- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD).
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 challengemaster = function(t)							-- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD)
 	return bubbleDown({ ["cm"] = true }, t);
 end
 --- Create a CHARACTER CLASS Object without a Class Lock.
+---@param id ClassID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 clWithoutLock = function(id, t)							-- Create a CHARACTER CLASS Object without a Class Lock
 	t = struct("headerID", id, t);
 	t.type = HEADERS.Class;
 	return t;
 end
 --- Create a CREATURE Object.
+---@param id CreatureID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTCreatureObject
 creature = function(id, t)								-- Create a CREATURE Object
 	return struct("creatureID", id, t);
 end
 cr = creature;											-- Create a CREATURE Object (alternative shortcut)
 --- Create an Achievement Criteria Object (localized automatically).
+---@param criteriaUID CriteriaID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTAchievementCriteriaObject
 crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (localized automatically)
 	if not t then t = {};
 	elseif not t.groups then
@@ -1633,13 +1720,20 @@ crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (
 	if not t.timeline then
 		t._defaulttimeline = { ADDED_3_0_2 }
 	end
+	---@cast t ATTAchievementCriteriaObject
 	return t;
 end
 --- Create a CURRENCY Object.
+---@param id CurrencyID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTCurrencyObject
 currency = function(id, t)								-- Create a CURRENCY Object
 	return struct("currencyID", id, t);
 end
 --- Create a DIFFICULTY Object.
+---@param id DifficultyID|DifficultyID[]
+---@param t? ATTObject|ATTObjectArray
+---@return ATTDifficultyObject
 d = function(id, t)										-- Create a DIFFICULTY Object
 	if not id then
 		error("INVALID DIFFICULTY", id);
@@ -1703,10 +1797,15 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 	return t;
 end
 --- Create an ENCOUNTER Object (Post-Wrath).
+---@param id JournalEncounterID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTEncounterObject
 e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	return struct("encounterID", id, t);
 end
 --- Flag all nested content as requiring Elite PvP gameplay.
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 elitepvp = function(t)									-- Flag all nested content as requiring Elite PvP gameplay
 	return bubbleDown({
 		["pvp"] = true,
@@ -1718,12 +1817,21 @@ local RevDecimals = 2
 local PatchShift = 10 ^ PatchDecimals
 local RevShift = 10 ^ RevDecimals
 --- Create an EXPANSION Object.
+---@param id ExpansionID
+---@param patch number
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
+---@overload fun(id: ExpansionID, t?: ATTObject|ATTObjectArray): ATTObject
 expansion = function(id, patch, t)						-- Create an EXPANSION Object
+	---@type number|ATTObject|ATTObjectArray|nil, ATTObject|ATTObjectArray|nil
+	local patch, t = patch, t;
 	-- patch is optional
 	local hasPatch
 	if not t then
+		---@cast patch ATTObject|ATTObjectArray|nil
 		t = patch;
 	else
+		---@cast patch number
 		hasPatch = true
 		id = id + (patch / PatchShift);
 		t = togroups(t);
@@ -1742,6 +1850,7 @@ expansion = function(id, patch, t)						-- Create an EXPANSION Object
 		-- when an expansion header uses a specific patch, we can assume it's intended to have that specific timeline applied
 		-- note that this will cause 'awp' values within NYI context, which isn't technically correct
 		if hasPatch then
+			---@cast patch number
 			local patchstring = string.format("%.2f", patch)
 			t.timeline = { "added " .. math.floor(id) ..".".. patchstring }
 		else
@@ -1752,6 +1861,9 @@ expansion = function(id, patch, t)						-- Create an EXPANSION Object
 	return t;
 end
 --- Create an EXPLORATION Object.
+---@param id ExplorationID
+---@param t? ATTObject|ATTObjectArray|string
+---@return ATTExplorationObject
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then
 		t = nil;
@@ -1759,6 +1871,9 @@ exploration = function(id, t)							-- Create an EXPLORATION Object
 	return struct("explorationID", id, t);
 end
 --- Create an EXPLORATION Object (which fails to return in exploration API and must be visited manually for name-based area check to capture).
+---@param id ExplorationID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTExplorationObject
 visit_exploration = function(id, t)						-- Create an EXPLORATION Object (which fails to return in exploration API and must be visited manually for name-based area check to capture)
 	t = struct("explorationID", id, t)
 	t.collectible = false	-- only way to cache these is to visit manually -- too tedious :/
@@ -1778,10 +1893,16 @@ visit_exploration = function(id, t)						-- Create an EXPLORATION Object (which 
 end
 map_exploration = visit_exploration;
 --- Create a FACTION Object.
+---@param id FactionID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTFactionObject
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
 --- Create a FIRST CRAFT Object.
+---@param id RecipeID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTFirstCraftObject
 firstcraft = function(id, t)							-- Create a FIRST CRAFT Object
 	t = struct("firstcraftID", id, t);
 	t.provider = { "s", id };
@@ -1789,11 +1910,17 @@ firstcraft = function(id, t)							-- Create a FIRST CRAFT Object
 end
 fc = firstcraft;
 --- Create a FLIGHT PATH Object.
+---@param id FlightPathID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTFlightPathObject
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
 	return struct("flightpathID", id, t);
 end
 fp = flightpath;										-- Create a FLIGHT PATH Object (Alternative)
 --- Create a FILTER Object.
+---@param id FilterID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 filter = function(id, t)								-- Create a FILTER Object
 	if not id or id < 0 then
 		error("Used filter() with bad filter value "..(id or "")..". Did you mean to use n()?")
@@ -1802,35 +1929,60 @@ filter = function(id, t)								-- Create a FILTER Object
 end
 f = filter;												-- Create a FILTER Object (Alternative)
 --- Create a FOLLOWER Object.
+---@param id FollowerID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 follower = function(id, t)								-- Create a FOLLOWER Object
 	return struct("followerID", id, t);
 end
 --- Create a GARRISON BUILDING Object.
+---@param id GarrisonBuildingID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 garrisonBuilding = function(id, t)						-- Create a GARRISON BUILDING Object
 	return struct("buildingID", id, t);
 end
 gb = garrisonBuilding;									-- Create a GARRISON BUILDING Object (Alternative)
 --- Create a GARRISON TALENT Object.
+---@param id GarrisonTalentID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 garrisonTalent = function(id, t)						-- Create a GARRISON TALENT Object
 	return struct("talentID", id, t);
 end
 --- Create an GARRISON TALENT Object (Alternative).
+---@param id GarrisonTalentID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 gt = function(id, t)									-- Create an GARRISON TALENT Object (Alternative)
 	return struct("talentID", id, t);
 end
 --- Create a GEAR SET Object (IE: "Vestments of Prophecy").
+---@param id integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
 	return struct("setID", id, t);
 end
 --- Create a GEAR SET HEADER Object (IE: "Season 1").
+---@param id integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 gsh = function(id, t)									-- Create a GEAR SET HEADER Object (IE: "Season 1")
 	return struct("setHeaderID", id, t);
 end
 --- Create a GEAR SET SUB HEADER Object (IE: "Gladiator").
+---@param id integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
 	return struct("setSubHeaderID", id, t);
 end
 --- Create an Automatic Header which will use the plain Text of the specified in-game object based on Type-ID combination.
+---@param ty string|integer
+---@param id ATTHeaderID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 header = function(ty, id, t)							-- Create an Automatic Header which will use the plain Text of the specified in-game object based on Type-ID combination
 	if type(ty) == "string" or id >= 0 then
 		-- Create an Automatic Header which will use the plain Text of the specified in-game object based on Type-ID combination
@@ -1843,30 +1995,46 @@ header = function(ty, id, t)							-- Create an Automatic Header which will use 
 		-- This is a custom header
 		t = struct("headerID", ty, id);
 	end
+	---@cast t ATTHeaderObject
 	return t;
 end
 --- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance).
+---@param id ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
 	return struct("itemID", id, t);
 end
 --- Create a HQT (Hidden Quest Tracker) Object.
+---@param id QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
 hqt = function(id, t)									-- Create a HQT (Hidden Quest Tracker) Object
 	t = q(id, t);
 	t.type = "hqt"
 	return t
 end
 --- Create an ILLUSION Object (only necessary for illusions without itemIDs).
+---@param id IllusionID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 illusion = function(id, t)								-- Create an ILLUSION Object (only necessary for illusions without itemIDs)
 	return struct("illusionID", id, t);
 end
 ill = illusion;											-- Create an ILLUSION Object
 
 -- Create an ITEM Object
+---@param id ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 item = function(id, t)
 	return struct("itemID", id, t);
 end
 i = item;												-- Create an ITEM Object (alternative shortcut)
 --- Create an ITEM Object that ignores bonus IDs.
+---@param id ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
 	t = struct("itemID", id, t);
 	-- #if NOT ANYCLASSIC
@@ -1875,6 +2043,11 @@ ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
 	return t;
 end
 --- Create an ITEM Object which can be Upgraded to another Item version (specified by ModID/BonusID).
+---@param itemID ItemID
+---@param modID? ModID
+---@param bonusID? BonusID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which can be Upgraded to another Item version (specified by ModID/BonusID)
 	if (modID or 0) == 0 and (bonusID or 0) == 0 then
 		error("Item Upgrade needs ModID or BonusID!");
@@ -1885,6 +2058,9 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	return i;
 end
 --- Create an ITEM which imports Wago Ensemble data during Parse.
+---@param itemID ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 iensemble = function(itemID, t)							-- Create an ITEM which imports Wago Ensemble data during Parse
 	-- Include '_IgnoreSharedEnsembleByQuestID' in the RARE situation that two distinct ensembles are given the same QuestID by Blizz
 	local i = i(itemID, t);
@@ -1892,6 +2068,11 @@ iensemble = function(itemID, t)							-- Create an ITEM which imports Wago Ensem
 	return i
 end
 --- Create an exact ITEM Object (specified by ModID/BonusID).
+---@param itemID ItemID
+---@param modID? ModID
+---@param bonusID? BonusID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (specified by ModID/BonusID)
 	local i = i(itemID, t);
 	if modID and modID ~= 0 then
@@ -1903,6 +2084,9 @@ iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (s
 	return i;
 end
 --- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
+---@param id ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 container = function(id, t)								-- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
 	local bag = header(HEADERS.Item, id, t);
 	local providers = bag.providers;
@@ -1918,6 +2102,10 @@ container = function(id, t)								-- This function helps build an item containe
 	return bag;
 end
 --- This function helps build proper listing for 'Salvage' Recipes and their visible 'Display Item'.
+---@param recipeID RecipeID
+---@param displayItemID ItemID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 salvagerecipe = function(recipeID, displayItemID, t)	-- This function helps build proper listing for 'Salvage' Recipes and their visible 'Display Item'
 	local item = container(displayItemID, t)
 	local providers = item.providers
@@ -1925,6 +2113,9 @@ salvagerecipe = function(recipeID, displayItemID, t)	-- This function helps buil
 	return item
 end
 
+---@param id JournalInstanceID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTInstanceObject
 inst = function(id, t)									-- Create an INSTANCE Object
 	t = struct("instanceID", id, t);
 
@@ -1948,6 +2139,9 @@ inst = function(id, t)									-- Create an INSTANCE Object
 	return t;
 end
 
+---@param id UiMapID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTMapObject
 map = function(id, t)									-- Create a MAP Object
 	if t then
 		-- do not attach achievements to maps
@@ -1959,11 +2153,18 @@ map = function(id, t)									-- Create a MAP Object
 end
 m = map;												-- Create a MAP Object (alternative shortcut)
 --- Create an MISSION Object.
+---@param id MissionID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTMissionObject
 mission = function(id, t)								-- Create an MISSION Object
 	return struct("missionID", id, t);
 end
 mi = mission											-- Create a MISSION Object (Alternative)
 --- Create a MOLE MACHINE Quest Object.
+---@param questID? QuestID
+---@param explorationID ExplorationID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject|ATTNPCObject
 molemachine = function(questID, explorationID, t)		-- Create a MOLE MACHINE Quest Object
 	if questID then
 		t = q(questID, name(HEADERS.Exploration, explorationID, t))
@@ -1985,13 +2186,22 @@ molemachine = function(questID, explorationID, t)		-- Create a MOLE MACHINE Ques
 			t.races = { DARKIRON };
 		end
 	end
+	---@cast t ATTQuestObject|ATTNPCObject
 	return t;
 end
 --- Create a MOUNT Object, which is just a spellID with a filter.
+---@param id MountID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTMountObject
 mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
 	return struct("mountID", id, t);
 end
 
+--- Creates an NPC/header object. With a nil `id`, this preserves the legacy behavior of returning `unpack(t)`.
+---@param id? ATTHeaderID|NPCID|CreatureID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTNPCObject|ATTHeaderObject|ATTObject|nil first
+---@return ATTObject|nil ... additional Values returned only by the legacy `id == nil` + array form.
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	if not id then
 		print("NPC ID Missing for n() header");
@@ -2024,6 +2234,7 @@ npc = function(id, t)									-- Create an NPC Object (negative indicates that i
 			return nil;
 		end
 	end
+	---@cast id ATTHeaderID|NPCID|CreatureID
 	-- #IF NOT ANYCLASSIC
 	-- Retail Cleanliness checks
 	if id == COMMON_BOSS_DROPS or
@@ -2042,6 +2253,9 @@ npc = function(id, t)									-- Create an NPC Object (negative indicates that i
 end
 n = npc;												-- Create an NPC Object (alternative shortcut)
 --- Create an NPC Object which is Conditional (assign u = CONDITIONALLY_AVAILABLE for Retail).
+---@param id ATTHeaderID|NPCID|CreatureID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTNPCObject|ATTHeaderObject
 n_conditional = function(id, t)							-- Create an NPC Object which is Conditional (assign u = CONDITIONALLY_AVAILABLE for Retail)
 	t = n(id, t);
 	-- #if NOT ANYCLASSIC
@@ -2051,11 +2265,17 @@ n_conditional = function(id, t)							-- Create an NPC Object which is Condition
 	return t;
 end
 --- Create a WORLD OBJECT Object (an interactable, non-NPC object out in the world - like a chest).
+---@param id ObjectID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, non-NPC object out in the world - like a chest)
 	return struct("objectID", id, t);
 end
 o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
 --- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS.
+---@param t ATTObject|ATTObjectArray
+---@param o? ATTObjectArray
+---@return ATTObject|nil
 o_repeated = function(t, o)								-- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS
 	if t[1] then
 		-- move the raw array of objects into a .g group
@@ -2083,38 +2303,60 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 	print("Could not find a group with an objectID value");
 end
 --- Pet Battle (bubbleDown pb filter).
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 petbattle = function(t)									-- Pet Battle (bubbleDown pb filter)
 	return bubbleDown({ ["pb"] = true }, t);
 end
 --- Create a PROFESSION Object.
+---@param skillID SkillID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTProfessionObject
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 --- Create a PROFESSION NODE Object.
+---@param id integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 professionnode = function(id, t)						-- Create a PROFESSION NODE Object
 	return struct("professionnodeID", id, t);
 end
 pn = professionnode;
 --- Flag all nested content as requiring PvP gameplay.
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ ["pvp"] = true }, t);
 end
 --- Create a PVP Rank Object.
+---@param id integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 pvprank = function(id, t)								-- Create a PVP Rank Object.
 	return struct("pvpRankID", id, t);
 end
 --- Create a QUEST Object.
+---@param id QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
 quest = function(id, t)									-- Create a QUEST Object
 	return struct("questID", id, t);
 end
 q = quest;												-- Create a QUEST Object (alternative shortcut)
 --- Create a QUEST Object flagged with the NYI unobtainable flag.
+---@param id QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
 qNYI = function (id, t)									-- Create a QUEST Object flagged with the NYI unobtainable flag
 	t = q(id, t);
 	t.u = NEVER_IMPLEMENTED;
 	return t;
 end
 --- Create a QUEST OBJECTIVE Object.
+---@param id ObjectiveID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
 	t = struct("objectiveID", id, t);
 	if t and t.itemID then
@@ -2126,54 +2368,86 @@ end
 objective = questobjective;								-- Create a QUEST OBJECTIVE Object (alternative shortcut)
 qo = questobjective;									-- Create a QUEST OBJECTIVE Object (alternative shortcut)
 --- Create a RACE Object.
+---@param id RaceID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 race = function(id, t)									-- Create a RACE Object
 	return struct("raceID", id, t);
 end
 --- Create a CHARACTER RACE Object without a Race Lock.
+---@param id RaceID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 raceWithoutLock = function(id, t)						-- Create a CHARACTER RACE Object without a Race Lock
 	t = struct("headerID", id, t);
 	t.type = HEADERS.Race;
 	return t;
 end
 --- Create a Raw Decor Object.
+---@param id DecorID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 rawdecor = function(id, t)								-- Create a Raw Decor Object
 	return struct("decorID", id, t)
 end
 --- Create a RECIPE Object.
+---@param id RecipeID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTRecipeObject
 recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
 --- Create an Ensemble directly from SpellID.
+---@param spellID SpellID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTSpellObject
 sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellID
 	local i = sp(spellID, t);
 	i.type = "ensembleSpellID"
 	return i
 end
 --- Skyriding (bubbleDown sr filter).
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 skyriding = function(t)									-- Skyriding (bubbleDown sr filter)
 	return bubbleDown({ ["sr"] = true }, t);
 end
 --- Create a SPELL Object.
+---@param id SpellID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTSpellObject
 spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
 sp = spell;												-- Create a SPELL Object (alternative shortcut)
 --- Create an Item Source Object.
+---@param id SourceID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 itemsource = function(id, t)							-- Create an Item Source Object
 	return struct("sourceID", id, t)
 end
 --- Create a TITLE Object.
+---@param id TitleID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTTitleObject
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
 end
 --- Create a TITLE Object for Female Characters.
+---@param id TitleID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTTitleObject
 title_female = function(id, t)							-- Create a TITLE Object for Female Characters
 	t = struct("titleID", id, t);
 	t.gender = 3;
 	return t;
 end
 --- Create a TITLE Object for Male Characters.
+---@param id TitleID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTTitleObject
 title_male = function(id, t)							-- Create a TITLE Object for Male Characters
 	t = struct("titleID", id, t);
 	t.gender = 2;
@@ -2182,6 +2456,9 @@ end
 
 -- Common Object Types
 --- Creates a QUEST which is for a Dragonriding Race.
+---@param id QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
 dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragonriding Race
 	t = q(id, t);
 	t.repeatable = true;
@@ -2194,6 +2471,9 @@ dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragon
 	return t;
 end
 --- Creates a QUEST which is for a Skyriding Race.
+---@param id QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
 skyridingrace = function(id, t)							-- Creates a QUEST which is for a Skyriding Race
 	t = q(id, t);
 	t.repeatable = true;
@@ -2207,6 +2487,9 @@ skyridingrace = function(id, t)							-- Creates a QUEST which is for a Skyridin
 	return t;
 end
 --- Creates a QUEST which is for a D.R.I.V.E. Race.
+---@param id QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
 driverace = function(id, t)								-- Creates a QUEST which is for a D.R.I.V.E. Race
 	t = q(id, t);
 	t.repeatable = true;
@@ -2221,6 +2504,11 @@ driverace = function(id, t)								-- Creates a QUEST which is for a D.R.I.V.E. 
 end
 -- Simple function for First Craft HQTs
 --- Creates a First Craft hidden quest trigger for a recipe.
+---@param questID QuestID
+---@param recipeID RecipeID
+---@param added? ATTTimelineEvent
+---@param removed? ATTTimelineEvent
+---@return ATTFirstCraftObject
 FirstCraft = function(questID, recipeID, added, removed)
 	local t = fc(recipeID, {questID=questID})
 	t.provider = { "s", recipeID };
@@ -2237,6 +2525,12 @@ FirstCraft = function(questID, recipeID, added, removed)
 end
 -- Simple function for Recipes with HQTs
 --- Creates a recipe object associated with a hidden quest trigger.
+---@param recipeID RecipeID
+---@param questID QuestID
+---@param added? ATTTimelineEvent
+---@param description? string|ATTLocalizationStringTable
+---@param maps? UiMapID[]
+---@return ATTRecipeObject
 r_withQuest = function(recipeID, questID, added, description, maps)
 	local t = r(recipeID, {questID=questID})
 	if added then
@@ -2253,9 +2547,13 @@ end
 -- Creates a simple 'gathered' Item which has a set of object providers
 -- Note: If additional table data is provided it must be the last param
 --- Creates a gathered item with the supplied object providers.
+---@param itemID ItemID
+---@param ... ObjectID|ATTObject|ATTObjectArray
+---@return ATTItemObject
 i_gathered = function(itemID, ...)
 	local t
 	local params = {...}
+	---@type ObjectID|ATTObject|ATTObjectArray|nil
 	local last = params[#params]
 	if type(last) == "table" then
 		t = i(itemID, last)
@@ -2269,6 +2567,7 @@ i_gathered = function(itemID, ...)
 		providers = {}
 		t.providers = providers
 	end
+	---@cast params ObjectID[]
 	for i=1,#params do
 		providers[#providers + 1] = { "o", params[i] }
 	end
@@ -2276,24 +2575,46 @@ i_gathered = function(itemID, ...)
 end
 -- Outdoor Zones Headers with Filters
 --- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
+---@param timeline ATTTimelineEvent[]
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
+---@overload fun(t: ATTObject|ATTObjectArray): ATTObject
 battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
+	---@type ATTTimelineEvent[]|ATTObject|ATTObjectArray, ATTObject|ATTObjectArray|nil
+	local timeline, t = timeline, t;
 	if not t then
+		---@cast timeline ATTObject|ATTObjectArray
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
 	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
 --- Creates a PET_BATTLES header with pet battle filter on it. Use this with Outdoor Zones.
+---@param timeline ATTTimelineEvent[]
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
+---@overload fun(t: ATTObject|ATTObjectArray): ATTObject
 petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet battle filter on it. Use this with Outdoor Zones.
+	---@type ATTTimelineEvent[]|ATTObject|ATTObjectArray, ATTObject|ATTObjectArray|nil
+	local timeline, t = timeline, t;
 	if not t then
+		---@cast timeline ATTObject|ATTObjectArray
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
 	return petbattle(n(PET_BATTLES, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
 --- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+---@param skipRequirement boolean|nil
+---@param t ATTObject|ATTObjectArray
+---@return ATTProfessionObject
+---@overload fun(): ATTProfessionObject
+---@overload fun(t: ATTObject|ATTObjectArray): ATTProfessionObject
 lockpicking = function(skipRequirement, t)				-- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+	---@type boolean|ATTObject|ATTObjectArray|nil, ATTObject|ATTObjectArray|nil
+	local skipRequirement, t = skipRequirement, t;
 	if not t then
+		---@cast skipRequirement ATTObject|ATTObjectArray|nil
 		t = skipRequirement;
 		skipRequirement = nil;
 	end
@@ -2302,8 +2623,16 @@ lockpicking = function(skipRequirement, t)				-- Creates a LOCKPICKING header wi
 	return obj;
 end
 --- Creates a PICK POCKET header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+---@param skipRequirement boolean|nil
+---@param t ATTObject|ATTObjectArray
+---@return ATTHeaderObject
+---@overload fun(): ATTHeaderObject
+---@overload fun(t: ATTObject|ATTObjectArray): ATTHeaderObject
 pickpocketing = function(skipRequirement, t)			-- Creates a PICK POCKET header with Rogue Class Filtering on it. Use this with Outdoor Zones.
+	---@type boolean|ATTObject|ATTObjectArray|nil, ATTObject|ATTObjectArray|nil
+	local skipRequirement, t = skipRequirement, t;
 	if not t then
+		---@cast skipRequirement ATTObject|ATTObjectArray|nil
 		t = skipRequirement;
 		skipRequirement = nil;
 	end
