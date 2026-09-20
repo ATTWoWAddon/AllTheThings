@@ -3455,6 +3455,7 @@ createHeader = function(data)
 		if data.eventSchedule then
 			local schedule = "{";
 			local currentDate = os.date("*t");
+			---@cast currentDate osdate
 			if data.eventSchedule[1] == 0 then	-- Set Start and End Date
 				local startTime = {
 					year=data.eventSchedule[2],
