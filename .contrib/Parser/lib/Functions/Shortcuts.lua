@@ -1,5 +1,390 @@
 ---@diagnostic disable: lowercase-global
 
+
+-- ============================================================================
+-- LuaLS / DocGen type model
+-- ============================================================================
+-- Parser-side documentation types used by the shortcut functions below.
+-- These annotations are documentation-only and do not change runtime data.
+
+---@alias FileID integer
+---@alias ExpansionID integer
+---@alias ObjectID integer
+---@alias ItemID integer
+---@alias ModID integer
+---@alias ModItemID number
+---@alias SourceID integer
+---@alias BonusID integer
+---@alias IllusionID integer
+---@alias ArtifactID integer
+---@alias AzeriteEssenceID integer
+---@alias DecorID integer
+---@alias CurrencyID integer
+---@alias FilterID integer
+---@alias MountID integer
+---@alias QuestID integer
+---@alias ObjectiveID integer
+---@alias MissionID integer
+---@alias SpellID integer
+---@alias SkillID integer
+---@alias RecipeID integer
+---@alias CreatureID integer
+---@alias NPCID integer Interactive creatures are NPCs.
+---@alias ATTHeaderID integer Negative NPC IDs are used as ATT Headers
+---@alias FollowerID integer
+---@alias GarrisonBuildingID integer
+---@alias GarrisonTalentID integer
+---@alias RaceID integer
+---@alias ClassID integer
+---@alias ChrSpecializationID integer
+---@alias TitleID integer
+---@alias AchievementID integer
+---@alias AchievementCategoryID integer
+---@alias CriteriaID integer
+---@alias JournalEncounterID integer
+---@alias DungeonEncounterID integer
+---@alias BattlePetSpeciesID integer
+---@alias BattlePetAbilityID integer
+---@alias BattlePetTypeID integer
+---@alias FactionID integer
+---@alias UiMapID integer
+---@alias MapID integer
+---@alias JournalInstanceID integer
+---@alias FlightPathID integer
+---@alias ExplorationID integer
+---@alias DifficultyID integer
+---@alias EventID integer
+---@alias ATTUnobtainableStatus integer|string|string[]
+---@alias ATTIgnoredValue string Parser sentinel value assigned via `IGNORED_VALUE`.
+---@alias Region "US"|"EU"|"KR"|"TW"|"CN"
+---@alias ATTTimelineEvent string
+---@alias ATTSymCommand table
+---@alias ATTSym ATTSymCommand[]
+---@alias ATTProvider
+---| { [1]: "i", [2]: ItemID|ModItemID } item
+---| { [1]: "n", [2]: NPCID } creature
+---| { [1]: "o", [2]: ObjectID } object
+---| { [1]: "s", [2]: SpellID } spell
+---@alias ATTCost
+---| { [1]: "g", [2]: number } gold
+---| { [1]: "i", [2]: ItemID|ModItemID, [3]: number } item
+---| { [1]: "c", [2]: CurrencyID, [3]: number } currency
+---@alias x_axis number
+---@alias y_axis number
+---@alias ATTObjectArray ATTObject[]
+---@alias ATTObjectArrayArray ATTObjectArray[]
+
+--- Intentionally non-exact: parser objects are an extensible data model and
+--- may carry module/flavor-specific fields outside this central shortcut schema.
+---@class ATTObject
+---@field groups? ATTObjectArray Nested parser objects.
+---@field g? ATTObjectArray Legacy alias for `groups`; normalized by parser helpers.
+---@field type? string Parser object type override.
+---@field text? string|ATTLocalizationStringTable Display/localization text.
+---@field description? string|ATTLocalizationStringTable Description/localization data.
+---@field name? string Display name.
+---@field readable? string Human-readable parser label.
+---@field icon? string|FileID Icon path/file ID.
+---@field model? integer Display/model ID.
+---@field displayID? integer Display ID.
+---@field sourceID? SourceID Appearance/source ID.
+---@field achievementCategoryID? AchievementCategoryID
+---@field artifactID? ArtifactID
+---@field azeriteessenceID? AzeriteEssenceID
+---@field buildingID? GarrisonBuildingID
+---@field campsiteID? integer
+---@field categoryID? integer
+---@field classID? number Class ID, optionally specialization-encoded as a decimal.
+---@field decorID? DecorID
+---@field expansionID? number Expansion ID, optionally patch-encoded as a decimal.
+---@field followerID? FollowerID
+---@field illusionID? IllusionID
+---@field objectiveID? ObjectiveID
+---@field petAbilityID? BattlePetAbilityID
+---@field petTypeID? BattlePetTypeID
+---@field professionnodeID? integer
+---@field pvpRankID? integer
+---@field raceID? RaceID
+---@field setID? integer
+---@field setHeaderID? integer
+---@field setSubHeaderID? integer
+---@field talentID? GarrisonTalentID
+---@field itemID? ItemID
+---@field modItemID? ModItemID
+---@field modID? ModID
+---@field bonusID? BonusID
+---@field questID? QuestID
+---@field sourceQuests? QuestID[] Prerequisite/source quests.
+---@field sourceQuestNumRequired? integer Number of source quests required.
+---@field spellID? SpellID
+---@field npcID? NPCID
+---@field creatureID? CreatureID
+---@field encounterID? JournalEncounterID
+---@field achievementID? AchievementID
+---@field allianceAchievementID? AchievementID
+---@field hordeAchievementID? AchievementID
+---@field altAchID? AchievementID
+---@field criteriaID? CriteriaID
+---@field factionID? FactionID
+---@field mapID? UiMapID
+---@field map? UiMapID Legacy singular map field.
+---@field maps? UiMapID[]
+---@field difficultyID? DifficultyID
+---@field difficulties? DifficultyID[]
+---@field skillID? SkillID
+---@field professionID? SkillID
+---@field requireSkill? SkillID|ATTIgnoredValue
+---@field headerID? ATTHeaderID
+---@field filterID? FilterID
+---@field currencyID? CurrencyID
+---@field speciesID? BattlePetSpeciesID
+---@field flightpathID? FlightPathID
+---@field explorationID? ExplorationID
+---@field missionID? MissionID
+---@field mountID? MountID
+---@field titleID? TitleID
+---@field recipeID? RecipeID
+---@field instanceID? JournalInstanceID
+---@field savedInstanceID? MapID
+---@field firstcraftID? RecipeID
+---@field objectID? ObjectID
+---@field rank? integer
+---@field cr? CreatureID
+---@field crs? CreatureID[]
+---@field coord? Coord|ATTIgnoredValue
+---@field coords? Coord[]
+---@field provider? ATTProvider|ATTIgnoredValue
+---@field providers? ATTProvider[]
+---@field cost? number|ATTCost[] Copper amount or a list of cost entries.
+---@field timeline? ATTTimelineEvent[]|ATTIgnoredValue
+---@field _defaulttimeline? ATTTimelineEvent[] Parser fallback timeline used when no explicit timeline is supplied.
+---@field forcetimeline? ATTTimelineEvent[] Parser-only timeline override consumed during expansion processing.
+---@field e? EventID Event association applied by `applyevent`.
+---@field symselector? integer Symbolic-selector ID.
+---@field sym? ATTSym
+---@field u? ATTUnobtainableStatus
+---@field up? number|string Encoded upgrade target or parser sentinel such as `IGNORED_VALUE`.
+---@field r? RaceID Race restriction.
+---@field races? RaceID[]|ATTIgnoredValue Race restrictions.
+---@field c? ClassID[] Class restrictions.
+---@field classes? ClassID[]|ATTIgnoredValue Class restrictions.
+---@field f? FilterID Filter ID.
+---@field lvl? integer|{ [1]: integer, [2]: integer? } Minimum level, or a level tuple with an optional maximum.
+---@field minReputation? { [1]: FactionID, [2]: integer } Reputation requirement tuple.
+---@field maxReputation? { [1]: FactionID, [2]: integer } Reputation requirement tuple.
+---@field customCollect? string|string[]
+---@field pb? boolean|ATTIgnoredValue Pet-battle filter flag.
+---@field isDaily? boolean|ATTIgnoredValue
+---@field isWeekly? boolean|ATTIgnoredValue
+---@field isWorldQuest? boolean
+---@field isBreadcrumb? boolean
+---@field isLocked? boolean
+---@field isRaid? boolean
+---@field collectible? boolean Whether the object is collectible.
+---@field repeatable? boolean Whether the object is repeatable.
+---@field gender? integer Gender restriction/variant ID.
+---@field pvp? boolean PvP requirement/filter flag.
+---@field cm? boolean Challenge-mode requirement/filter flag.
+---@field sr? boolean Skyriding requirement/filter flag.
+---@field ignoreBonus? boolean
+---@field autoname? string
+---@field OnInit? string
+---@field _drop? string[] Parser fields to remove after processing.
+---@field _noautomation? boolean Disables parser automation for this object.
+---@field _remove? boolean Marks the object for parser-side removal.
+---@field _multiDifficultyID? DifficultyID Original multi-difficulty ID retained for parser/instance processing.
+---@field _ignore? boolean
+---@field _DATAGROUP? string
+---@field _DATAGROUPS? string[]
+---@field [integer] ATTObject Array-style group entries.
+
+---@class ATTAchievementObject: ATTObject
+---@field achievementID? AchievementID
+---@field allianceAchievementID? AchievementID
+---@field hordeAchievementID? AchievementID
+
+---@class ATTAchievementCriteriaObject: ATTObject
+---@field criteriaID CriteriaID
+
+---@class ATTItemObject: ATTObject
+---@field itemID ItemID
+
+---@class ATTQuestObject: ATTObject
+---@field questID QuestID
+
+---@class ATTSpellObject: ATTObject
+---@field spellID SpellID
+
+---@class ATTNPCObject: ATTObject
+---@field npcID NPCID
+
+---@class ATTCreatureObject: ATTObject
+---@field creatureID CreatureID
+
+---@class ATTEncounterObject: ATTObject
+---@field encounterID JournalEncounterID
+
+---@class ATTFactionObject: ATTObject
+---@field factionID FactionID
+
+---@class ATTMapObject: ATTObject
+---@field mapID UiMapID
+
+---@class ATTCurrencyObject: ATTObject
+---@field currencyID CurrencyID
+
+---@class ATTDifficultyObject: ATTObject
+---@field difficultyID DifficultyID
+
+---@class ATTHeaderObject: ATTObject
+---@field headerID ATTHeaderID
+---@field SortPriority? number Parser root-category sort priority.
+
+---@class ATTProfessionObject: ATTObject
+---@field professionID SkillID
+
+---@class ATTRecipeObject: ATTObject
+---@field recipeID RecipeID
+---@field requireSkill? SkillID|ATTIgnoredValue
+---@field _requireSkill? SkillID Parser-side recipe profession requirement cache.
+
+---@class ATTInstanceObject: ATTObject
+---@field instanceID JournalInstanceID
+---@field savedInstanceID? MapID
+
+---@class ATTFirstCraftObject: ATTObject
+---@field firstcraftID RecipeID
+---@field questID? QuestID
+
+---@class ATTBattlePetObject: ATTObject
+---@field speciesID BattlePetSpeciesID
+
+---@class ATTExplorationObject: ATTObject
+---@field explorationID ExplorationID
+
+---@class ATTFlightPathObject: ATTObject
+---@field flightpathID FlightPathID
+
+---@class ATTMissionObject: ATTObject
+---@field missionID MissionID
+
+---@class ATTMountObject: ATTObject
+---@field mountID MountID
+
+---@class ATTTitleObject: ATTObject
+---@field titleID TitleID
+
+---@class Coord
+---@field [1] x_axis
+---@field [2] y_axis
+---@field [3] UiMapID
+
+---@class ATTLocalizationStringTable
+---@field en string
+---@field de? string
+---@field es? string
+---@field mx? string
+---@field fr? string
+---@field it? string
+---@field ko? string
+---@field pt? string
+---@field ru? string
+---@field cn? string
+---@field tw? string
+
+---@class ATTLocalizationStringData
+---@field constant string Unique parser constant name.
+---@field readable? string Human-readable label used in parser diagnostics.
+---@field text ATTLocalizationStringTable Localized text/programmatic tokens by locale. Runtime formatting iterates this table.
+---@field icon? string Optional icon path or programmatic icon token.
+---@field color? string Optional color string or programmatic color token.
+---@field description? ATTLocalizationStringTable Optional localized description.
+---@field export? boolean Whether this localization definition is exported to generated addon data.
+---@field [string] any Additional localization metadata.
+
+--- Shared fields used by both raw header definitions and processed header data.
+---@class ATTHeaderDefinitionBase: ATTObject
+---@field readable string Human-readable parser label.
+---@field text string|ATTLocalizationStringTable Localized header text.
+---@field constant? string Unique header constant.
+---@field icon? string|FileID
+---@field sort? number
+---@field SortPriority? number
+---@field eventID? EventID
+---@field eventIDs? EventID[]
+---@field export? boolean Whether this header definition is exported to generated addon data.
+---@field npcfill? boolean Whether sourced Things may be filled into matching NPC sources.
+
+--- Mutable header while its schedule and standalone flag are normalized.
+---@class ATTHeaderProcessingDefinition: ATTHeaderDefinitionBase
+---@field eventSchedule? number[]|string
+---@field standalone? boolean
+
+--- Raw definition accepted by `createHeader`.
+---@class ATTHeaderInputDefinition: ATTHeaderDefinitionBase
+---@field eventSchedule? number[] Numeric schedule definition consumed by `createHeader`.
+---@field standalone? boolean
+
+--- Processed definition stored in `CustomHeaders`.
+---@class ATTHeaderDefinition: ATTHeaderDefinitionBase
+---@field eventSchedule? string Generated Lua schedule expression after processing.
+---@field standalone boolean Normalized by `createHeader`; defaults to `false`.
+---@field filepath? string Parser source file which registered this header.
+
+---@class ATTCustomObjectDefinition: ATTObject
+---@field readable string Human-readable parser label.
+---@field text string|ATTLocalizationStringTable Localized object text.
+---@field constant? string Unique custom-object constant.
+
+--- Date input accepted by `getTimestamp`. Either `day` (such as an
+--- `os.date("*t")` result) or parser-style `monthDay` must be present.
+---@alias ATTDateParts
+---| { year: integer, month: integer, day: integer, monthDay?: integer, hour?: integer, minute?: integer, weekday?: integer }
+---| { year: integer, month: integer, day?: integer, monthDay: integer, hour?: integer, minute?: integer, weekday?: integer }
+
+---@class ATTSymSelectorTable
+---@field select fun(key: string): ATTSymCommand
+---@field [string] integer Selector IDs; the reserved `select` method is declared separately.
+
+--- Closed root-category registry; runtime rejects unknown keys via `__index`.
+---@class (exact) ATTRootConstants
+---@field AchievementDB string
+---@field Achievements string
+---@field Arcantina string
+---@field BlackMarket string
+---@field Character string
+---@field Craftables string
+---@field Delves string
+---@field ExpansionFeatures string
+---@field Factions string
+---@field GroupFinder string
+---@field HiddenAchievementTriggers string
+---@field HiddenCurrencyTriggers string
+---@field HiddenQuestTriggers string
+---@field Holidays string
+---@field Housing string
+---@field InGameShop string
+---@field Instances string
+---@field ItemDB string
+---@field ItemDBConditional string
+---@field NeverImplemented string
+---@field PVP string
+---@field PetBattles string
+---@field Professions string
+---@field Promotions string
+---@field RecipeDB string
+---@field SeasonOfDiscovery string
+---@field Secrets string
+---@field Sourceless string
+---@field TradingPost string
+---@field Uncollectible string
+---@field Unsorted string
+---@field WorldDrops string
+---@field WorldEvents string
+---@field Zones string
+---@field AprilFools string
+
+
 struct = function(field, id, t)		-- Construct a commonly formatted object.
 	if type(id) ~= "number" then
 		error("struct() requires a number 'id'. Received:",type(id),"for",field)
