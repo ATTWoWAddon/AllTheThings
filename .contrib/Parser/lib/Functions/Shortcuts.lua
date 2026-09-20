@@ -1285,7 +1285,7 @@ applycost = function(item, ...)
 	local cost = item.cost;
 	if not cost then
 		cost = {};
-		item.cost = cost;
+		item --[[@as ATTObject]].cost = cost;
 	end
 	for i,o in ipairs({ ... }) do
 		table.insert(cost, o);
@@ -2775,7 +2775,7 @@ a = function(t)	-- Flag as Alliance Only
 		end
 		error("Attempted to assign RACES as ALLIANCE_ONLY on a thing already marked with races.");
 	else
-		t.races = ALLIANCE_ONLY;
+		t --[[@as ATTObject]].races = ALLIANCE_ONLY;
 	end
 	return t;
 end
@@ -2797,9 +2797,10 @@ end
 ---@return T
 crs = function(id, t)									-- Add a Creature List to an object.
 	if type(id) == "number" then
-		t.cr = id;
+		t --[[@as ATTObject]].cr = id;
 	else
-		t.crs = id;
+		---@cast id CreatureID[]
+		t --[[@as ATTObject]].crs = id;
 	end
 	return t;
 end
@@ -2828,7 +2829,7 @@ h = function(t) -- Flag as Horde Only
 		end
 		error("Attempted to assign RACES as HORDE_ONLY on a thing already marked with races.");
 	else
-		t.races = HORDE_ONLY;
+		t --[[@as ATTObject]].races = HORDE_ONLY;
 	end
 	return t;
 end
@@ -2848,7 +2849,7 @@ end
 ---@param t T
 ---@return T
 model = function(displayID, t)
-	t.displayID = displayID;
+	t --[[@as ATTObject]].displayID = displayID;
 	return t;
 end
 -- Converts a given Item/Mod/Bonus combination into the current modItemID format (should roughly match GetGroupItemIDWithModID from Item.Retail.lua)
@@ -2915,7 +2916,7 @@ end
 ---@param u ATTUnobtainableStatus
 ---@param t T
 ---@return T
-un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
+un = function(u, t) t --[[@as ATTObject]].u = u; return t; end						-- Mark an object unobtainable where u is the type.
 --- A daily group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards).
 ---@param questID QuestID
 ---@param t? ATTObject|ATTObjectArray
@@ -3093,7 +3094,7 @@ end
 ---@param t T
 ---@return T
 TempForceMisc = function(t)
-	t.f = MISC
+	t --[[@as ATTObject]].f = MISC
 	return t
 end
 
