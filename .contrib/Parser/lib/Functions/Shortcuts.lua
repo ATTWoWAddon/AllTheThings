@@ -385,6 +385,14 @@
 ---@field AprilFools string
 
 
+--- Generic constructor used by most shortcuts in this file.
+--- Accepts either an ordinary object table or an array of child objects. Array
+--- input is normalized to `groups`. The function also performs parser
+--- validation and registers `_DATAGROUP` / `_DATAGROUPS` references when set.
+---@param field string
+---@param id number
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject
 struct = function(field, id, t)		-- Construct a commonly formatted object.
 	if type(id) ~= "number" then
 		error("struct() requires a number 'id'. Received:",type(id),"for",field)
@@ -425,6 +433,12 @@ struct = function(field, id, t)		-- Construct a commonly formatted object.
 	return t;
 end
 
+--- Deep-clones parser data into an optional destination table.
+--- Existing keys in `c` are preserved; table values copied from `t` are
+--- recursively cloned so the resulting parser object can be mutated safely.
+---@param t any
+---@param c? table
+---@return any
 clone = function(t, c)	-- Clone a piece of data as a separate table (t => c, return c)
 	if type(t) ~= "table" then return t end
 	c = c or {};
@@ -438,11 +452,19 @@ clone = function(t, c)	-- Clone a piece of data as a separate table (t => c, ret
 end
 
 -- Helper Functions
+--
+-- Core table/group manipulation utilities used by parser DATAS. Most of these
+-- mutate the provided object tree in place and also return the same table so
+-- they can be composed around constructors.
 --- Checks whether a value is an array-style table (including an empty table).
+---@param t? any
+---@return boolean|nil
 isarray = function(t)
 	return t and type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
 --- Counts the number of keys in a table.
+---@param t? table
+---@return integer|nil
 keycount = function(t)
 	if not t or type(t) ~= "table" then return end
 	local c = 0
@@ -453,6 +475,9 @@ keycount = function(t)
 end
 -- Concats all the key/value pairs in the table into a string
 --- Concatenates the key/value pairs of a table into a string.
+---@param tbl? table
+---@param sep? string
+---@return string
 StringifyTable = function(tbl, sep)
 	if tbl then
 		local tostring = tostring
@@ -467,6 +492,8 @@ StringifyTable = function(tbl, sep)
 end
 -- Ensures that 't' has a 'groups' field containing the array/'g' data of the table
 --- Normalizes array or `g` data into a table containing a `groups` field.
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
 togroups = function(t)
 	if isarray(t) then
 		local groups = {};
@@ -483,12 +510,17 @@ togroups = function(t)
 	return t;
 end
 --- Appends an object to a table and returns that table.
+---@param o ATTObject
+---@param t ATTObjectArray
+---@return ATTObjectArray
 addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
 -- Appends a common groups set into the groups for this object. The last element is the one to append into.
 --- Combines group arrays, using the final argument as the destination when multiple arrays are supplied.
+---@param ... ATTObjectArray
+---@return ATTObjectArray
 appendGroups = function(...)
 	local data = { ... };
 	local count = #data;
@@ -512,6 +544,9 @@ appendGroups = function(...)
 end
 -- Appends together multiple arrays of groups (into the first provided group). This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
 --- Appends multiple group arrays into the first destination array.
+---@param g? ATTObjectArray
+---@param ... ATTObjectArray|nil
+---@return ATTObjectArray|nil
 appendAllGroups = function(g, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then
@@ -572,6 +607,8 @@ local BubbleDownKeyWarnings = {
 -- }
 -- Simply applies keys from 'data' into 't' using a custom function by key, or where the key does not already exist
 --- Copies missing fields from `data` into `t` without replacing fields already present.
+---@param data? table
+---@param t? table
 applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
@@ -592,6 +629,9 @@ end
 -- Performs applyData logic to the top-level table
 -- This is sort of a workaround for replacing bubbleDownSelf a billion times with static field and groups
 --- Normalizes the top-level object and applies missing fields from `data` to it.
+---@param data table
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
 applyDataSelf = function(data, t)
 	if not data then
 		error("applyDataSelf: No Data",StringifyTable(t,","))
@@ -609,6 +649,9 @@ applyDataSelf = function(data, t)
 end
 -- Applies a function against the group and all sub-groups
 --- Recursively applies a function to a group and all of its nested groups.
+---@param func? fun(group: ATTObject|ATTObjectArray)
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 applyFunc = function(func, t)
 	if not func then return t end
 	if t.groups then
@@ -624,6 +667,8 @@ applyFunc = function(func, t)
 	return t
 end
 --- Splits a timeline event string into its textual and numeric components.
+---@param epoch string
+---@return (string|number)[]
 splitTimelineEvent = function(epoch)
 	local words = {};
 	for word in epoch:gmatch("%S+") do table.insert(words, word) end
@@ -632,6 +677,8 @@ splitTimelineEvent = function(epoch)
 end
 -- Applies the timeline event (epoch) to the object.
 --- Adds a timeline event to an object while preserving timeline ordering and avoiding duplicates.
+---@param epoch? string
+---@param t? ATTObject
 applyTimelineEvent = function(epoch, t)
 	if epoch and t then
 		local timeline = t.timeline;
@@ -683,6 +730,9 @@ applyTimelineEvent = function(epoch, t)
 end
 -- Applies a copy of the provided data into the tables of the provided array/group
 --- Applies shared data to each direct child in a group or group container.
+---@param data table
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 sharedData = function(data, t)
 	if not data then
 		error("sharedData: No Shared Data",StringifyTable(t,","))
@@ -704,6 +754,9 @@ sharedData = function(data, t)
 end
 -- Performs sharedData logic but also applies the data to the top-level table
 --- Applies shared data to the top-level object and its direct children.
+---@param data table
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
 sharedDataSelf = function(data, t)
 	if not data then
 		error("sharedDataSelf: No Shared Data",StringifyTable(t,","))
@@ -725,6 +778,12 @@ sharedDataSelf = function(data, t)
 end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array
 --- Recursively applies missing fields from `data` to all nested groups.
+--- Recursively propagates shared metadata to descendant parser objects.
+--- Existing values on child objects take precedence. This is intended for
+--- inheritance-like metadata such as timeline, classes, races, or requirements.
+---@param data table
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 bubbleDown = function(data, t)
 	if not data then
 		error("bubbleDown: No Bubble Data",StringifyTable(t,","))
@@ -767,6 +826,10 @@ bubbleDown = function(data, t)
 end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array assuming that table matches the requirements of the filter.
 --- Recursively applies data only to groups accepted by the supplied filter function.
+---@param data table
+---@param filter fun(group: ATTObject): boolean
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray|nil
 bubbleDownFiltered = function(data, filter, t)
 	if t then
 		if t.g or t.groups then
@@ -784,6 +847,11 @@ bubbleDownFiltered = function(data, filter, t)
 	end
 end
 --- Recursively applies data to nested groups, replacing existing values.
+--- Recursively propagates metadata while replacing existing child values.
+--- Use only when the bubbled value is authoritative for every descendant.
+---@param data table
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray|nil
 bubbleDownAndReplace = function(data, t)
 	if t then
 		if t.g or t.groups then
@@ -806,6 +874,9 @@ bubbleDownAndReplace = function(data, t)
 end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 --- Applies bubbled data to the top-level object and all nested groups.
+---@param data table
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
 bubbleDownSelf = function(data, t)
 	if not data then
 		error("bubbleDownSelf: No Bubble Data",StringifyTable(t,","))
@@ -822,6 +893,10 @@ bubbleDownSelf = function(data, t)
 end
 -- Performs only the logic of applying the provided data against the merging object, this is intended as a quick replacement for those bubbleDown(Self) uses of only 'timeline' data
 --- Applies timeline data to the current object using timeline-aware merge behavior.
+---@param data table
+---@param t ATTObject|ATTObjectArray
+---@param auto? boolean
+---@return ATTObject|ATTObjectArray|nil
 timelineSelf = function(data, t, auto)
 	if not data then
 		error("timelineSelf: No Data",StringifyTable(t,","))
@@ -846,6 +921,9 @@ timelineSelf = function(data, t, auto)
 end
 -- Applies the timeline event (epoch) to all sub-groups of the provided table/array
 --- Recursively applies a timeline event to all nested groups.
+---@param epoch string
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 bubbleDownTimelineEvent = function(epoch, t)
 	if not epoch then
 		error("bubbleDownTimelineEvent: No Epoch",StringifyTable(t,","))
@@ -873,10 +951,16 @@ bubbleDownTimelineEvent = function(epoch, t)
 	end
 end
 --- Normalizes the object to a group container and bubbles a timeline event through it.
+---@param epoch string
+---@param t ATTObject|ATTObjectArray
+---@return ATTObject
 bubbleDownTimelineEventSelf = function(epoch, t)
 	return bubbleDownTimelineEvent(epoch, togroups(t));
 end
 --- Builds a human-readable representation of a nested table for validation errors.
+---@param indent string
+---@param t table
+---@return string
 generateValidationStructure = function(indent, t)
 	local msg = "";
 	for j,o in pairs(t) do
@@ -889,6 +973,8 @@ generateValidationStructure = function(indent, t)
 end
 -- Validates and returns 't' (expected 'groups' content) ensuring that contained content is in the expected formats
 --- Validates that group contents use numeric array keys and table values.
+---@param t? ATTObjectArray
+---@return ATTObjectArray|nil
 validateGroups = function(t)
 	if t then
 		for i,group in pairs(t) do
@@ -902,12 +988,18 @@ validateGroups = function(t)
 	end
 end
 --- Checks whether an array contains a value.
+---@param arr table
+---@param value any
+---@return boolean|nil
 contains = function(arr, value)
 	for i,value2 in ipairs(arr) do
 		if value2 == value then return true; end
 	end
 end
 --- Checks whether two arrays share at least one value.
+---@param arr table
+---@param otherArr table
+---@return boolean|nil
 containsAny = function(arr, otherArr)
 	for i, v in ipairs(arr) do
 		for j, w in ipairs(otherArr) do
@@ -916,12 +1008,18 @@ containsAny = function(arr, otherArr)
 	end
 end
 --- Checks whether a table contains a value.
+---@param dict table
+---@param value any
+---@return boolean|nil
 containsValue = function(dict, value)
 	for key,value2 in pairs(dict) do
 		if value2 == value then return true; end
 	end
 end
 --- Returns a filtered copy of a table excluding the supplied value or values.
+---@param data any
+---@param t table
+---@return table
 exclude = function(data, t)
 	local t2 = {};
 	if type(data) == "table" then
@@ -949,10 +1047,15 @@ exclude = function(data, t)
 	return t2;
 end
 --- Returns a filtered copy of a table excluding all supplied values.
+---@param t table
+---@param ... any
+---@return table
 excludeMany = function(t, ...)
 	return exclude({...}, t);
 end
 --- Merges multiple arrays into a new array.
+---@param ... ATTObjectArray
+---@return ATTObjectArray
 merge = function(...)
 	local t = {};
 	for i,groups in ipairs({...}) do
@@ -963,6 +1066,9 @@ merge = function(...)
 	return t;
 end
 --- Applies reputation requirements to grouped reputation tiers while skipping the initial ranks.
+---@param rep FactionID
+---@param group ATTObjectArrayArray
+---@return ATTObjectArray
 bubbleDownRepSkip = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
@@ -974,6 +1080,9 @@ bubbleDownRepSkip = function(rep, group)
 	return t;
 end
 --- Applies reputation requirements to grouped reputation tiers.
+---@param rep FactionID
+---@param group ATTObjectArrayArray
+---@return ATTObjectArray
 bubbleDownRep = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
@@ -992,6 +1101,9 @@ local classicRepsMap = {
 	EXALTED
 };
 --- Applies Classic reputation requirements to grouped reputation tiers.
+---@param rep FactionID
+---@param group ATTObjectArrayArray
+---@return ATTObjectArray
 bubbleDownClassicRep = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
@@ -1003,6 +1115,9 @@ bubbleDownClassicRep = function(rep, group)
 	return t;
 end
 --- Recursively invokes a method for an object and all nested groups.
+---@param method fun(group: ATTObject)
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray|nil
 run = function(method, t)
 	if t then
 		if t.g or t.groups then
@@ -1020,6 +1135,9 @@ run = function(method, t)
 	end
 end
 --- Recursively unpacks an array beginning at the requested index.
+---@param t table
+---@param i? integer
+---@return any ...
 unpack = function(t, i)
   i = i or 1
   if t[i] ~= nil then
@@ -1029,16 +1147,21 @@ end
 
 -- Helper Functions
 --- Provides the `asset` parser shortcut/helper.
+---@param path string
 asset = function(path)
 	print("ASSET: " .. path);
 	error("The asset function has been deprecated");
 end
 --- Provides the `icon` parser shortcut/helper.
+---@param path string
 icon = function(path)
 	print("ICON: " .. path);
 	error("The icon function has been deprecated");
 end
 --- Applies an event ID to all nested data.
+---@param eventID EventID
+---@param data ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray
 applyevent = function(eventID, data)
 	if not eventID then
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
@@ -1049,19 +1172,33 @@ applyevent = function(eventID, data)
 end
 -- #if ANYCLASSIC
 --- Applies a Classic phase/unobtainable value to nested data for Classic builds.
+---@param phase integer
+---@param data ATTObject|ATTObjectArray
+---@param force? boolean
+---@return ATTObject|ATTObjectArray
 applyclassicphase = function(phase, data, force)
 	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
 end
 --- Selects the Classic or non-Classic value for the active build.
+---@param classicValue any
+---@param value any
+---@return any
 ifclassic = function(classicValue, value)
 	return classicValue;
 end
 -- #else
 --- Applies a Classic phase/unobtainable value to nested data for Classic builds.
+---@param phase integer
+---@param data ATTObject|ATTObjectArray
+---@param force? boolean
+---@return ATTObject|ATTObjectArray
 applyclassicphase = function(phase, data, force)
 	return data;
 end
 --- Selects the Classic or non-Classic value for the active build.
+---@param classicValue any
+---@param value any
+---@return any
 ifclassic = function(classicValue, value)
 	return value;
 end
@@ -1069,6 +1206,10 @@ end
 
 local squishes = {};
 --- Returns the appropriate level after expansion-specific level squishes.
+---@param originalLvl integer
+---@param cataLvl integer
+---@param shadowlandsLvl integer
+---@return integer
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 	if cataLvl < shadowlandsLvl then
 		local squish = "lvlsquish(" .. originalLvl .. ", " .. cataLvl .. ", " ..shadowlandsLvl .. ") > " .. "lvlsquish(" .. originalLvl .. ", " .. shadowlandsLvl .. ", " .. cataLvl .. ")";
@@ -1088,16 +1229,24 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 	return lvl;
 end
 --- Builds the symbolic selector for a PvP weapons arsenal.
+---@param TIER integer
+---@param SEASON integer
+---@param PVPSET integer
+---@return ATTSym
 Sym_PvPWeaponsArsenal = function(TIER, SEASON, PVPSET)
 	return {{"sub","pvp_weapons_ensemble",TIER,SEASON,PVPSET}}
 end
 --- Creates the Shadowlands Legendaries header and assigns its symbolic selector.
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 SL_Legendaries = function(t)
 	t = n(LEGENDARIES, t)
 	t.symselector = SymSelector.LEGION_LEGENDARY_HEADERS
 	return t
 end
 --- Creates the Chronicle of Lost Memories item with its legendary-memory symbolic data.
+---@param t? ATTObject|ATTObjectArray
+---@return ATTItemObject
 ChronicleOfLostMemories = function(t)
 	t = t or {}
 	-- TODO: revise this, don't rely on a header containing all legendaries
