@@ -22,52 +22,19 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					i(122214, {	-- Music Roll: Mulgore Plains
-						["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
-						["coord"] = { 28.61, 24.61, MAP.THUNDER_BLUFF },
-						["timeline"] = { ADDED_6_1_0 },
-						["races"] = HORDE_ONLY,
-					}),
-				}),
-			}),
 			n(QUESTS, {
-				q(29362, {	-- "Magic" Mushrooms
-					["qg"] = 3026,	-- Aska Mistrunner
-					["coord"] = { 51.2, 52.2, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						COOKING_AWARD,
-					},
-				}),
 				q(6361, {	-- A Bundle of Hides
 					["providers"] = {
-						-- #if AFTER CATA
-						{ "n", 3079 },	-- Varg Windwhisper
-						-- #else
 						{ "n", 3483 },	-- Jahan Hawkwing <Leather & Mail Armor Merchant>
-						-- #endif
 						{ "i", 16282 },	-- Bundle of Hides
 					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.0, 58.2, MAP.MULGORE },
-						-- #else
-						{ 51.2, 29.0, MAP.THE_BARRENS },
-						-- #endif
-					},
+					["coord"] = { 51.2, 29.0, MAP.THE_BARRENS },
 					["races"] = { TAUREN },
-					["lvl"] = lvlsquish(10, 10, 1),
+					["lvl"] = 10,
 				}),
 				q(7822, {	-- A Donation of Mageweave
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -75,7 +42,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				q(7823, {	-- A Donation of Runecloth
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 60 } },	-- 60x Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -83,7 +49,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				q(7821, {	-- A Donation of Silk
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -91,7 +56,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				q(7820, {	-- A Donation of Wool
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -101,7 +65,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 					["maxReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14047, 20 } },	-- 20x Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -110,7 +73,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				q(936, {	-- Assisting Arch Druid Runetotem [Orgrimmar]
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["coord"] = { 54.2, 68.4, MAP.ORGRIMMAR },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -118,7 +80,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				q(3762, {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
 					["qg"] = 6746,	-- Innkeeper Pala
 					["coord"] = { 45.8, 64.4, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -126,7 +87,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				q(3784, {	-- Assisting Arch Druid Runetotem [Undercity]
 					["qg"] = 6741,	-- Innkeeper Norman
 					["coord"] = { 67.6, 38.2, MAP.UNDERCITY },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
@@ -135,42 +95,17 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
 					["qg"] = 6410,	-- Orm Stonehoof
 					["coord"] = { 39.0, 55.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(7130, {	-- Brutal Helm
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7130),	-- Brutal Helm
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
-					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
-					["qgs"] = {
-						207743,	-- Netali Proudwind <General Goods>
-						207754,	-- Mooart
-					},
-					["coord"] = { 28.8, 19.2, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(204716, {	-- Rune of Frenzied Assault
-							["classes"] = { WARRIOR },
-							["groups"] = {
-								recipe(425447),	-- Engrave Pants - Frenzied Assault
-							},
-						}),
-					},
-				})),
-				-- #endif
 				q(1844, {	-- Chimaeric Horn
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
 					["qg"] = 6410,	-- Orm Stonehoof
 					["coord"] = { 39.0, 55.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.STONETALON_MOUNTAINS },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -180,30 +115,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["provider"] = { "i", 6840 },	-- Galvanized Horn
 							["cr"] = 6167,	-- Chimaera Matriarch
 						}),
-					},
-				}),
-				q(29364, {	-- Corn Mash
-					["qg"] = 3026,	-- Aska Mistrunner
-					["coord"] = { 51.2, 52.2, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						COOKING_AWARD,
-					},
-				}),
-				q(29349, {	-- Craving Crayfish
-					["qg"] = 3028,	-- Kah Mistrunner
-					["coord"] = { 56.12, 46.34, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = FISHING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						i(67414),	-- Bag of Shiny Things
 					},
 				}),
 				q(1205, {	-- Deadmire
@@ -220,7 +131,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5644, {	-- Devouring Plague [Thunder Bluff]
 					["altQuests"] = {
 						5646,	-- Devouring Plague [Orgrimmar]
@@ -228,25 +138,20 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 20,
-					-- #if BEFORE 3.0.2
 					["groups"] = {
 						{
 							["recipeID"] = 2944,	-- Devouring Plague (Rank 1)
 							["rank"] = 1,
 						},
 					},
-					-- #endif
 				}),
-				-- #endif
 				q(1064, {	-- Forsaken Aid
 					["sourceQuest"] = 1063,	-- The Elder Crone
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["coord"] = { 69.85, 30.91, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -257,7 +162,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "i", 5838 },	-- Kodo Skin Scroll
 					},
 					["coord"] = { 61.52, 80.88, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
@@ -271,7 +175,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["coord"] = { 37.0, 68.0, MAP.ALTERAC_MOUNTAINS },
 							["cr"] = 4504,	-- Frostmaw
 						}),
-						-- #if BEFORE 4.0.3
 						i(5810, {	-- Fresh Carcass
 							["crs"] = {
 								2385,	-- Feral Mountain Lion
@@ -280,19 +183,12 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 								2384,	-- Starving Mountain Lion
 							},
 						}),
-						-- #endif
-						i(6720, {	-- Spirit Hunter Headdress
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6720),	-- Spirit Hunter Headdress
 					},
 				}),
 				q(768, {	-- Gathering Leather
 					["description"] =
-						-- #if AFTER 8.0.1
-						"This quest becomes available at Classic Skinning skill level 1 when the character level requirement is met.",
-						-- #else
 						"This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
-						-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, MAP.THUNDER_BLUFF },
 					["cost"] = { { "i", 2318, 12 } },	-- 12x Light Leather
@@ -300,17 +196,10 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
-						i(131214, {	-- Animal Scale Belt
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 						i(5936),	-- Animal Skin Belt
 						i(4962),	-- Double-layered Gloves
-						i(131215, {	-- Mulit-Scaled Gloves
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 					},
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5656, {	-- Hex of Weakness [Thunder Bluff]
 					["altQuests"] = {
 						5652,	-- Hex of Weakness [Orgrimmar]
@@ -320,27 +209,19 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
-					-- #if BEFORE 3.0.2
 					["groups"] = {
 						{
 							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
 							["rank"] = 1,
 						},
 					},
-					-- #endif
 				}),
-				-- #endif
 				q(769, {	-- Kodo Hide Bag
 					["description"] =
-						-- #if AFTER 8.0.1
-						"This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
-						-- #else
 						"This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
-						-- #endif
 					["qg"] = 3050,	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, MAP.THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
@@ -349,18 +230,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["groups"] = {
 						i(5083, {	-- Pattern: Kodo Hide Bag (RECIPE!)
 							["description"] =
-								-- #if AFTER 9.2.5
-								"This recipe is not soulbound and can be mailed to both Alliance and Horde alts.",
-								-- #else
 								"This recipe is not soulbound and can be mailed to Horde alts.",
-								-- #endif
 						}),
 					},
 				}),
 				q(1130, {	-- Melor Sends Word
 					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 44.8, 59.0, MAP.THE_BARRENS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
@@ -372,7 +248,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "i", 11103 },	-- Seed Voucher
 					},
 					["coord"] = { 78.4, 28.4, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
@@ -380,7 +255,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["sourceQuest"] = 3782,	-- Morrowgrain Research (1/2)
 					["qg"] = 9087,	-- Bashana Runetotem
 					["coord"] = { 70.8, 33.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
@@ -392,88 +266,12 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["sourceQuest"] = 3786,	-- Morrowgrain Research (2/2)
 					["qg"] = 9087,	-- Bashana Runetotem
 					["coord"] = { 70.8, 33.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 47,
 					["groups"] = {
 						i(11887),	-- Cenarion Circle Cache
-					},
-				}),
-				q(29363, {	-- Mulgore Spice Bread
-					["qg"] = 3026,	-- Aska Mistrunner
-					["coord"] = { 51.2, 52.2, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						COOKING_AWARD,
-					},
-				}),
-				q(29365, {	-- Perfectly Picked Portions
-					["qg"] = 3026,	-- Aska Mistrunner
-					["coord"] = { 51.2, 52.2, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						COOKING_AWARD,
-					},
-				}),
-				q(29358, {	-- Pining for Nuts
-					["qg"] = 3026,	-- Aska Mistrunner
-					["coord"] = { 51.2, 52.2, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = COOKING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						COOKING_AWARD,
-					},
-				}),
-				q(29345, {	-- Pond Predators
-					["qg"] = 3028,	-- Kah Mistrunner
-					["coord"] = { 56.12, 46.34, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = FISHING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						i(67414),	-- Bag of Shiny Things
-					},
-				}),
-				q(14100, {	-- Relic of the Earthen Ring
-					["qgs"] = {
-						35068,	-- Gotura Fourwinds <The Earthen Ring>
-						13417,	-- Sagorne Creststrider <Shaman Trainer>
-						3030,	-- Siln Skychaser <Shaman Trainer>
-					},
-					["coords"] = {
-						{ 32.6, 38.8, MAP.ORGRIMMAR },
-						{ 38.7, 35.9, MAP.ORGRIMMAR },
-						{ 23.0, 20.8, MAP.THUNDER_BLUFF },
-					},
-					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 5178, 1 },	-- 1x Air Totem
-						{ "i", 5175, 1 },	-- 1x Earth Totem
-						{ "i", 5176, 1 },	-- 1x Fire Totem
-						{ "i", 5177, 1 },	-- 1x Water Totem
-					},
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-					["groups"] = {
-						i(46978, {	-- Totem of the Earthen Ring
-							["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-						}),
 					},
 				}),
 				q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
@@ -484,36 +282,21 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["coord"] = { 46.8, 50.0, MAP.THUNDER_BLUFF },
 					["maps"] = {
-						-- #if AFTER CATA
-						MAP.MULGORE,
-						-- #else
 						MAP.THE_BARRENS,
-						-- #endif
 					},
 					["races"] = { TAUREN },
-					["lvl"] = lvlsquish(10, 10, 1),
+					["lvl"] = 10,
 				}),
 				q(6362, {	-- Ride to Thunder Bluff
 					["sourceQuest"] = 6361,	-- A Bundle of Hides
 					["providers"] = {
-						-- #if AFTER CATA
-						{ "n", 40809 },	-- Tak
-						-- #else
 						{ "n", 3615 },	-- Devrak
-						-- #endif
 						{ "i", 16282 },	-- Bundle of Hides
 					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 47.4, 58.6, MAP.MULGORE },
-						-- #else
-						{ 51.50, 30.34, MAP.THE_BARRENS },
-						-- #endif
-					},
+					["coord"] = { 51.50, 30.34, MAP.THE_BARRENS },
 					["races"] = { TAUREN },
-					["lvl"] = lvlsquish(10, 10, 1),
+					["lvl"] = 10,
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5642, {	-- Shadowguard [Thunder Bluff]
 					["altQuests"] = {
 						5643,	-- Shadowguard [Undercity]
@@ -521,113 +304,20 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 20,
-					-- #if BEFORE 2.4.1
 					["groups"] = {
 						{
 							["recipeID"] = 18137,	-- Shadowguard (Rank 1)
 							["rank"] = 1,
 						},
 					},
-					-- #endif
 				}),
-				-- #endif
-				q(29354, {	-- Shiny Baubles
-					["qg"] = 3028,	-- Kah Mistrunner
-					["coord"] = { 56.12, 46.34, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = FISHING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						o(208867, {	-- Shiny Stones
-							i(69983),	-- Shiny Stone (QI!)
-						}),
-						--
-						i(67414),	-- Bag of Shiny Things
-					},
-				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, q(76156, {	-- Stalk With The Earthmother (1/3)
-					["providers"] = {
-						{ "n", 205729 },	-- Boarton Shadetotem <Rogue Trainer?>
-						{ "i", 206159 },	-- Venture Co Disguise
-					},
-					["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { MAP.MULGORE },
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 6,
-					["groups"] = {
-						objective(1, {	-- 0/5 Seaforium Mining Charge
-							["providers"] = {
-								{ "i", 206157 },	-- Seaforium Mining Charge
-								{ "o", 403041 },	-- Blasting Supplies
-							},
-							["coord"] = { 61.0, 47.0, MAP.MULGORE },
-						}),
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, q(76160, {	-- Stalk With The Earthmother (2/3)
-					["sourceQuest"] = 76156,	-- Stalk With The Earthmother (1/3)
-					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
-					["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { MAP.MULGORE },
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 6,
-					["groups"] = {
-						objective(1, {	-- 0/1 Pine Salve
-							["providers"] = {
-								{ "i", 206175 },	-- Pine Salve
-								{ "o", 403105 },	-- Windfury Cone
-							},
-							["cost"] = {
-								{ "i", 206176, 1 },	-- 1x Mortar and Pestle
-								{ "i", 206170, 8 },	-- 8x Windfury Cone
-							},
-							["coord"] = { 53.48, 9.37, MAP.MULGORE },
-						}),
-						i(206177),	-- Pine Nut Butter
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, q(76240, {	-- Stalk With The Earthmother (3/3)
-					["sourceQuest"] = 76160,	-- Stalk With The Earthmother (2/3)
-					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
-					["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_2_0_1 },
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 6,
-					["groups"] = {
-						objective(1, {	-- 0/1 Fish Chunks
-							["providers"] = {
-								{ "i", 206345 },	-- Fish Chunks
-								{ "i", 206344 },	-- Knife Set
-							},
-							["cost"] = { { "i", 6291, 1 } },	-- 1x Raw Brilliant Smallfish
-							["coord"] = { 53.48, 9.37, MAP.THUNDER_BLUFF },
-						}),
-						recipe(674, {	-- Dual Wield
-							["classes"] = { SHAMAN },
-						}),
-						recipe(410104, {	-- Engrave Gloves - Lava Lash
-							["classes"] = { SHAMAN },
-						}),
-					},
-				})),
-				-- #endif
 				q(1131, {	-- Steelsnap
 					["sourceQuest"] = 1130,	-- Melor Sends Word
 					["qg"] = 3441,	-- Melor Stonehoof
 					["coord"] = { 61.51, 80.88, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -647,20 +337,15 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["coord"] = { 45.74, 55.86, MAP.THUNDER_BLUFF },
 					["maps"] = {
-						-- #if AFTER CATA
-						MAP.MULGORE,
-						-- #else
 						MAP.THE_BARRENS,
-						-- #endif
 					},
 					["races"] = { TAUREN },
-					["lvl"] = lvlsquish(10, 10, 1),
+					["lvl"] = 10,
 				}),
 				q(1086, {	-- The Flying Machine Airport
 					["sourceQuest"] = 1067,	-- Return to Thunder Bluff
 					["qg"] = 3419,	-- Apothecary Zamah
 					["coord"] = { 22.85, 20.90, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
@@ -671,35 +356,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				q(29348, {	-- The Race to Restock
-					["qg"] = 3028,	-- Kah Mistrunner
-					["coord"] = { 56.12, 46.34, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = FISHING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						i(67414),	-- Bag of Shiny Things
-					},
-				}),
-				q(29346, {	-- The Ring's the Thing
-					["qg"] = 3028,	-- Kah Mistrunner
-					["coord"] = { 56.12, 46.34, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["requireSkill"] = FISHING,
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["lvl"] = 10,
-					["groups"] = {
-						i(67414),	-- Bag of Shiny Things
-						i(69956),	-- Blind Cavefish
-					},
-				}),
 				q(1195, {	-- The Sacred Flame (1/3)
 					["qg"] = 4721,	-- Zangen Stonehoof
 					["coord"] = { 54.97, 51.32, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -709,11 +368,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["coord"] = { 60.0, 72.0, MAP.ASHENVALE },
 							["cost"] = { { "i", 5867, 1 } },	-- 1x Etched Phial
 						}),
-						-- #if BEFORE 4.0.3
 						i(5867, {	-- Etched Phial
 							["cr"] = 4054,	-- Laughing Sister
 						}),
-						-- #endif
 					},
 				}),
 				q(1196, {	-- The Sacred Flame (2/3)
@@ -723,7 +380,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "i", 5868 },	-- Filled Etched Phial
 					},
 					["coord"] = { 54.97, 51.32, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -735,7 +391,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "i", 5868 },	-- Filled Etched Phial
 					},
 					["coord"] = { 46.13, 51.69, MAP.THOUSAND_NEEDLES },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 5869, 1 } },	-- 1x Cloven Hoof
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -747,15 +402,10 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							},
 							["coord"] = { 42.0, 35.0, MAP.THOUSAND_NEEDLES },
 						}),
-						i(6739, {	-- Cliffrunner's Aim
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6740, {	-- Azure Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6739),	-- Cliffrunner's Aim
+						i(6740),	-- Azure Sash
 					},
 				}),
-				-- #if NOT ANYCLASSIC
 				q(5663, {	-- Touch of Weakness [Thunder Bluff]
 					["altQuests"] = {
 						5658,	-- Touch of Weakness [Undercity]
@@ -765,20 +415,16 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
-					-- #if BEFORE 3.0.2
 					["groups"] = {
 						{
 							["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)
 							["rank"] = 1,
 						},
 					},
-					-- #endif
 				}),
-				-- #endif
 				q(3761, {	-- Un'Goro Soil
 					["sourceQuests"] = {
 						936,	-- Assisting Arch Druid Runetotem [Orgrimmar]
@@ -787,7 +433,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["coord"] = { 78.4, 28.4, MAP.THUNDER_BLUFF },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.UNGORO_CRATER },
 					["cost"] = { { "i", 11018, 20 } },	-- 20x Un'Goro Soil
 					["races"] = HORDE_ONLY,
@@ -802,44 +447,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["maps"] = { MAP.SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
-				}),
-				q(26397, {	-- Walk With The Earth Mother
-					["sourceQuest"] = 24540,	-- War Dance
-					["altQuests"] = { 26398 },	-- Walk With The Earth Mother
-					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
-					["coord"] = { 60.3, 51.7, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { TAUREN },
-					["groups"] = {
-						i(243335, {	-- Tauren Bluff Rug (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
-						}),
-					},
-				}),
-				q(24540, {	-- War Dance
-					["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
-					["qg"] = 36648,	-- Baine Bloodhoof
-					["coord"] = { 60.3, 51.7, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { TAUREN },
-					["groups"] = {
-						i(57241, {	-- Dreamwalking Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57230, {	-- Kodo Mallet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57214, {	-- Stunted Tree Root
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57239, {	-- Sunwalker's Stunner
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(156986, {	-- Kodo Gavel
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-						i(57793),	-- Kodo Saddlebag
-					},
 				}),
 			}),
 			n(VENDORS, {
@@ -860,41 +467,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						846,	-- Tanned Leather Jerkin
 						845,	-- Tanned Leather Pants
 					}},
-				}),
-				n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
-					["coord"] = { 47.05, 50.23, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDownClassicRep(FACTION_THUNDER_BLUFF, {
-						{		-- Neutral
-							i(167860, {	-- Ancient Tauren Talisman
-								["timeline"] = { ADDED_8_2_0 },
-								["races"] = { TAUREN },
-							}),
-							i(243335, {	-- Tauren Bluff Rug (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
-							}),
-							i(45584, {	-- Thunder Bluff Tabard
-								["timeline"] = { ADDED_3_1_0 },
-							}),
-						}, {	-- Friendly
-						}, {	-- Honored
-						}, {	-- Revered
-							i(67534, {	-- Thunder Bluff Satchel
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-						}, {	-- Exalted
-							i(64917, {	-- Cape of Thunder Bluff
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(64918, {	-- Mantle of Thunder Bluff
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(64919, {	-- Shroud of Thunder Bluff
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-						},
-					}),
 				}),
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["coord"] = { 53.8, 57.2, MAP.THUNDER_BLUFF },
@@ -952,52 +524,10 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						928,	-- Long Staff
 						852,	-- Mace
 						924,	-- Maul
-						20981,	-- Neophyte's Mace
 						854,	-- Quarter Staff
 						2026,	-- Rock Hammer
 					}},
 				}),
-				-- #if AFTER CATA
-				n(3095, {	-- Fela <Heavy Armor Merchant>
-					["coord"] = { 42.8, 44.6, MAP.THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["sym"] = {{"select","itemID",
-						2419,	-- Augmented Chain Belt
-						2420,	-- Augmented Chain Boots
-						2421,	-- Augmented Chain Bracers
-						2422,	-- Augmented Chain Gloves
-						3891,	-- Augmented Chain Helm
-						2418,	-- Augmented Chain Leggings
-						2417,	-- Augmented Chain Vest
-						2451,	-- Crested Heater Shield
-						62260,	-- Grunts Chain Belt
-						62261,	-- Grunts Chain Boots
-						62262,	-- Grunts Chain Bracers
-						62266,	-- Grunts Chain Circlet
-						62263,	-- Grunts Chain Gloves
-						62264,	-- Grunts Chain Leggings
-						62265,	-- Grunts Chain Vest
-						62253,	-- Grunts Plate Armor
-						62254,	-- Grunts Plate Belt
-						62255,	-- Grunts Plate Boots
-						62256,	-- Grunts Plate Bracers
-						62257,	-- Grunts Plate Gloves
-						62259,	-- Grunts Plate Helm
-						62258,	-- Grunts Plate Leggings
-						2448,	-- Heavy Pavise
-						2446,	-- Kite Shield
-						17189,	-- Metal Buckler
-						17190,	-- Ornate Buckler
-						2148,	-- Polished Scale Belt
-						2149,	-- Polished Scale Boots
-						2150,	-- Polished Scale Bracers
-						2151,	-- Polished Scale Gloves
-						2152,	-- Polished Scale Leggings
-						2153,	-- Polished Scale Vest
-						17192,	-- Reinforced Targe
-					}},
-				}),
-				-- #endif
 				n(3003, {	-- Fyr Mistrunner <Bread Vendor>
 					["coord"] = { 41.4, 53.2, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -1130,10 +660,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						923,	-- Longsword
 						2526,	-- Main Gauche
 						2208,	-- Poniard
-						20977,	-- Recruit's Shortsword
 						2534,	-- Rondel
 						2027,	-- Scimitar
-						20982,	-- Sharp Dagger
 					}},
 				}),
 				n(3025, {	-- Kaga Mistrunner <Meat Vendor>
@@ -1184,15 +712,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
 					["coord"] = { 43.8, 45.1, MAP.THUNDER_BLUFF },
-					-- #if BEFORE CATA
-					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
-					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(
-						-- #if AFTER CATA
-						COMMON_CATACLYSM_TAILORING_RECIPES,
-						-- #endif
-						{
+					["groups"] = {
 						i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -1205,21 +726,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
-				-- #if AFTER CATA
-				n(3008, {	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
-					["coord"] = { 42.08, 43.46, MAP.THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
-				}),
-				-- #endif
 				n(3027, {	-- Naal Mistrunner <Cooking Supplies>
 					["coord"] = { 51.0, 52.5, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_vendor", 49737}},	-- Shazdar <Sous Chef>
-					-- #endif
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
@@ -1243,16 +754,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 44.9, 37.7, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						-- #if AFTER CATA
-						{"sub", "common_recipes_vendor", 3346},	-- Kithas <Enchanting Supplies>
-						-- #endif
 						{ "select","itemID",
 							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 							20752,	-- Formula: Minor Mana Oil (RECIPE!)
 							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-							-- #if BEFORE CATA
 							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							-- #endif
 							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					},
@@ -1269,62 +775,23 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 53.6, 56.8, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						23346,	-- Battleworn Claymore
-						52557,	-- Battleworn Hammer
 						2523,	-- Bullova
 						2531,	-- Great Axe
 						2521,	-- Flamberge
-						73210,	-- Trainee's Sword
 						2525,	-- War Hammer
 						2533,	-- War Maul
-						57244,	-- Warder's Spear
 						12282,	-- Worn Battleaxe
-						49778,	-- Worn Greatsword
-						57243,	-- Worn Spear
-						52532,	-- Worn Wood Chopper
 						2529,	-- Zweihander
 					}},
-				}),
-				n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
-					["coord"] = { 34.75, 53.45, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["races"] = HORDE_ONLY,
-					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>
 					["coord"] = { 39.31, 64.28, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = {{"select","itemID", 30746}},	-- Mining Sack
-					-- #endif
 					["groups"] = {
 						i(4498),	-- Brown Leather Satchel
-						-- #if AFTER CATA
-						i(30748),	-- Enchanter's Satchel
-						i(30747),	-- Gem Pouch
-						-- #endif
 						i(4497),	-- Heavy Brown Bag
-						-- #if AFTER CATA
-						i(30745),	-- Heavy Toolbox
-						-- #endif
 						i(4499),	-- Huge Brown Sack
 						i(4496),	-- Small Brown Pouch
-						-- #if AFTER CATA
-						-- i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
-						-- #endif
-					},
-				}),
-				n(52655, {	-- Palehoof's Big Bag of Parts <Engineering Supplies>
-					["coord"] = { 36.22, 60.21, MAP.THUNDER_BLUFF },
-					["timeline"] = { ADDED_4_1_0 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(18647, {	-- Schematic: Red Firework (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["isLimited"] = true,
-						}),
 					},
 				}),
 				n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
@@ -1338,12 +805,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(8363, {	-- Shadi Mistrunner <Trade Supplies>
 					["coord"] = { 40.6, 64.0, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						applyclassicphase(TBC_PHASE_ONE, i(21948, {	-- Design: Opal Necklace of Impact (RECIPE!)
-							["timeline"] = { ADDED_2_0_5 },
-							["isLimited"] = true,
-						})),
-					},
 				}),
 				n(3022, {	-- Sunn Ragetotem <Staff Merchant>
 					["coord"] = { 49.6, 49.8, MAP.THUNDER_BLUFF },
@@ -1428,9 +889,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
 					["coord"] = { 39.8, 55.6, MAP.THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 46359}},	-- Punra <Blacksmithing Supplies>
-					-- #endif
 				}),
 				n(5189, {	-- Thrumn <Tabard Vendor>
 					["coord"] = { 38.0, 63.0, MAP.THUNDER_BLUFF },
@@ -1438,16 +896,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if NOT ANYCLASSIC
-			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
-			o(207323, {	-- Warchief's Command Board
-				["coord"] = { 42.6, 57.4, MAP.THUNDER_BLUFF },
-				["timeline"] = { ADDED_4_0_1 },
-				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
-				["races"] = HORDE_ONLY,
-				["skipFill"] = true,
-			}),
-			-- #endif
 		},
 	}),
 }));
