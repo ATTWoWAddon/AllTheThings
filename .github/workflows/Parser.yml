@@ -96,35 +96,23 @@ jobs:
       - name: Full Success Check
         shell: pwsh
         run: |
-          $retail = '${{ steps.Parse-Retail.outcome }}'
-          $classicEra = '${{ steps.Parse-ClassicEra.outcome }}'
-          $classicSoD = '${{ steps.Parse-ClassicSoD.outcome }}'
-          $tbc = '${{ steps.Parse-TBC.outcome }}'
-          $wotlk = '${{ steps.Parse-WOTLK.outcome }}'
-          $cata = '${{ steps.Parse-CATA.outcome }}'
-          $mop = '${{ steps.Parse-MOP.outcome }}'
-          $forever = '${{ steps.Parse-FOREVER.outcome }}'
+          $results = [ordered]@{
+            Retail = '${{ steps.Parse-Retail.outcome }}'
+            ClassicEra = '${{ steps.Parse-ClassicEra.outcome }}'
+            ClassicSoD = '${{ steps.Parse-ClassicSoD.outcome }}'
+            TBC = '${{ steps.Parse-TBC.outcome }}'
+            WOTLK = '${{ steps.Parse-WOTLK.outcome }}'
+            CATA = '${{ steps.Parse-CATA.outcome }}'
+            MOP = '${{ steps.Parse-MOP.outcome }}'
+            FOREVER = '${{ steps.Parse-FOREVER.outcome }}'
+          }
 
           Write-Host "Verify all Versions Parsed Successfully..."
-          Write-Host "Retail: $retail"
-          Write-Host "ClassicEra: $classicEra"
-          Write-Host "ClassicSoD: $classicSoD"
-          Write-Host "TBC: $tbc"
-          Write-Host "WOTLK: $wotlk"
-          Write-Host "CATA: $cata"
-          Write-Host "MOP: $mop"
-          Write-Host "FOREVER: $forever"
+          foreach ($result in $results.GetEnumerator()) {
+            Write-Host "$($result.Key): $($result.Value)"
+          }
 
-          if (
-            $retail -eq 'success' -and
-            $classicEra -eq 'success' -and
-            $classicSoD -eq 'success' -and
-            $tbc -eq 'success' -and
-            $wotlk -eq 'success' -and
-            $cata -eq 'success' -and
-            $mop -eq 'success' -and
-            $forever -eq 'success'
-          ) {
+          if (@($results.Values | Where-Object { $_ -ne 'success' }).Count -eq 0) {
             Write-Host "✅ All Versions Parsed Successfully"
           } else {
             Write-Host "❌ One or more Parsed Versions Errored"
