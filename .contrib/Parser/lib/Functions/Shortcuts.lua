@@ -189,6 +189,7 @@
 ---@field ignoreBonus? boolean
 ---@field autoname? string
 ---@field OnInit? string
+---@field IgnoreWarnings? boolean Suppresses warnings when applying shared or bubbled fields.
 ---@field _drop? string[] Parser fields to remove after processing.
 ---@field _noautomation? boolean Disables parser automation for this object.
 ---@field _remove? boolean Marks the object for parser-side removal.
@@ -781,9 +782,10 @@ end
 --- Recursively propagates shared metadata to descendant parser objects.
 --- Existing values on child objects take precedence. This is intended for
 --- inheritance-like metadata such as timeline, classes, races, or requirements.
----@param data table
----@param t ATTObject|ATTObjectArray
----@return ATTObject|ATTObjectArray
+---@generic T: ATTObject|ATTObjectArray
+---@param data ATTObject
+---@param t T
+---@return T
 bubbleDown = function(data, t)
 	if not data then
 		error("bubbleDown: No Bubble Data",StringifyTable(t,","))
@@ -806,7 +808,7 @@ bubbleDown = function(data, t)
 		end
 	end
 	if t then
-		if t.g or t.groups then
+		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
 			applyData(data, t);
 			if t.groups then
 				bubbleDown(data, t.groups);
@@ -815,7 +817,7 @@ bubbleDown = function(data, t)
 				bubbleDown(data, t.g);
 			end
 		elseif isarray(t) then
-			for _,group in ipairs(t) do
+			for _,group in ipairs(t --[[@as ATTObjectArray]]) do
 				bubbleDown(data, group);
 			end
 		else
@@ -826,22 +828,27 @@ bubbleDown = function(data, t)
 end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array assuming that table matches the requirements of the filter.
 --- Recursively applies data only to groups accepted by the supplied filter function.
----@param data table
----@param filter fun(group: ATTObject): boolean
----@param t? ATTObject|ATTObjectArray
----@return ATTObject|ATTObjectArray|nil
+--- A true or integer filter result copies missing fields; false/nil skips that object.
+--- Children are visited regardless of the parent result; arrays are traversed
+--- without being passed to the filter. Returns the original input unchanged in shape.
+---@generic T: ATTObject|ATTObjectArray|nil
+---@param data ATTObject
+---@param filter fun(group: ATTObject): boolean|integer|nil
+---@param t T
+---@return T
+---@overload fun(data: ATTObject, filter: fun(group: ATTObject): boolean|integer|nil): nil
 bubbleDownFiltered = function(data, filter, t)
 	if t then
-		if t.g or t.groups then
+		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
 			if filter(t) then applyData(data, t); end
 			bubbleDownFiltered(data, filter, t.groups);
 			bubbleDownFiltered(data, filter, t.g);
 		elseif isarray(t) then
-			for _,group in ipairs(t) do
+			for _,group in ipairs(t --[[@as ATTObjectArray]]) do
 				bubbleDownFiltered(data, filter, group);
 			end
 		else
-			if filter(t) then applyData(data, t); end
+			if filter(t --[[@as ATTObject]]) then applyData(data, t); end
 		end
 		return t;
 	end
@@ -849,19 +856,19 @@ end
 --- Recursively applies data to nested groups, replacing existing values.
 --- Recursively propagates metadata while replacing existing child values.
 --- Use only when the bubbled value is authoritative for every descendant.
----@param data table
+---@param data ATTObject
 ---@param t? ATTObject|ATTObjectArray
 ---@return ATTObject|ATTObjectArray|nil
 bubbleDownAndReplace = function(data, t)
 	if t then
-		if t.g or t.groups then
+		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
 			for key, value in pairs(data) do
 				t[key] = value;
 			end
 			bubbleDownAndReplace(data, t.groups);
 			bubbleDownAndReplace(data, t.g);
 		elseif isarray(t) then
-			for i,group in ipairs(t) do
+			for i,group in ipairs(t --[[@as ATTObjectArray]]) do
 				bubbleDownAndReplace(data, group);
 			end
 		else
@@ -874,7 +881,7 @@ bubbleDownAndReplace = function(data, t)
 end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 --- Applies bubbled data to the top-level object and all nested groups.
----@param data table
+---@param data ATTObject
 ---@param t ATTObject|ATTObjectArray
 ---@return ATTObject
 bubbleDownSelf = function(data, t)
@@ -921,9 +928,10 @@ timelineSelf = function(data, t, auto)
 end
 -- Applies the timeline event (epoch) to all sub-groups of the provided table/array
 --- Recursively applies a timeline event to all nested groups.
----@param epoch string
----@param t ATTObject|ATTObjectArray
----@return ATTObject|ATTObjectArray
+---@generic T: ATTObject|ATTObjectArray
+---@param epoch ATTTimelineEvent
+---@param t T
+---@return T
 bubbleDownTimelineEvent = function(epoch, t)
 	if not epoch then
 		error("bubbleDownTimelineEvent: No Epoch",StringifyTable(t,","))
@@ -932,7 +940,7 @@ bubbleDownTimelineEvent = function(epoch, t)
 		error("bubbleDownTimelineEvent: No Source 't'",StringifyTable(t,","))
 	end
 	if t then
-		if t.g or t.groups then
+		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
 			applyTimelineEvent(epoch, t);
 			if t.groups then
 				bubbleDownTimelineEvent(epoch, t.groups);
@@ -941,7 +949,7 @@ bubbleDownTimelineEvent = function(epoch, t)
 				bubbleDownTimelineEvent(epoch, t.g);
 			end
 		elseif isarray(t) then
-			for _,group in ipairs(t) do
+			for _,group in ipairs(t --[[@as ATTObjectArray]]) do
 				bubbleDownTimelineEvent(epoch, group);
 			end
 		else
@@ -951,7 +959,7 @@ bubbleDownTimelineEvent = function(epoch, t)
 	end
 end
 --- Normalizes the object to a group container and bubbles a timeline event through it.
----@param epoch string
+---@param epoch ATTTimelineEvent
 ---@param t ATTObject|ATTObjectArray
 ---@return ATTObject
 bubbleDownTimelineEventSelf = function(epoch, t)
