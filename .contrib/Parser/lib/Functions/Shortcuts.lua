@@ -630,7 +630,8 @@ end
 -- Performs applyData logic to the top-level table
 -- This is sort of a workaround for replacing bubbleDownSelf a billion times with static field and groups
 --- Normalizes the top-level object and applies missing fields from `data` to it.
----@param data table
+--- Array input is wrapped in a group container before the fields are applied.
+---@param data ATTObject
 ---@param t ATTObject|ATTObjectArray
 ---@return ATTObject
 applyDataSelf = function(data, t)
