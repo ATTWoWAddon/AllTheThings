@@ -3038,10 +3038,15 @@ end
 do
 	local AutoTableMetaFunc
 	--- Wraps a table so missing string keys automatically create nested tables.
+	---@param t table
+	---@return table
 	local function SelfAutoTable(t)
 		return setmetatable(t, { __index = AutoTableMetaFunc })
 	end
 	--- Metatable index function which automatically creates nested tables for string keys.
+	---@param t table
+	---@param key any
+	---@return table|nil
 	AutoTableMetaFunc = function(t, key)
 		-- only auto-key string keys
 		if type(key) == "string" then
@@ -3050,20 +3055,27 @@ do
 			return value
 		end
 	end
+	---@type table<string, table>
 	DATAGROUP = SelfAutoTable({})
+	---@type table<string, table<string, integer[]>>
 	IDGROUP = SelfAutoTable({})
+	---@type table<string, table>
 	SYM = SelfAutoTable({})
 	local symselector = 0
 	--- Returns the next unique symbolic-selector ID.
+	---@return integer
 	local NextSymSelector = function()
 		symselector = symselector + 1
 		return symselector
 	end
 	-- Provides a Unique value for each unique Key referenced on the table
+	---@type ATTSymSelectorTable
 	SymSelector = setmetatable({
 		-- Returns the proper symlink "select" table for a given SymSelector key
 		-- e.g. {"select","symselector",SymSelector[key]}
 		--- Provides the `select` parser shortcut/helper.
+		---@param key string
+		---@return ATTSymCommand
 		select = function(key) return {"select","symselector",SymSelector[key]} end,
 	}, {
 		__index = function(t, key)
@@ -3077,15 +3089,22 @@ end
 -- Temporary function to force Items to use the Misc filter so that they do not get turned into Recipes by the Parser
 -- until the 'guessing' logic is eventually relegated when Prof DB's are sufficient
 --- Forces an item to use the Misc filter to prevent parser recipe conversion.
+---@generic T: ATTObject
+---@param t T
+---@return T
 TempForceMisc = function(t)
 	t.f = MISC
 	return t
 end
 
 -- Root Category Headers
+--
+-- Root categories are parser-only containers collected into the global `_`
+-- database. `root()` merges repeated declarations for the same category.
 (function()
 -- Root constants
 -- Usage: ROOTS.[Constant]
+---@type ATTRootConstants
 ROOTS = setmetatable({
 	["AchievementDB"] = "AchievementDB",
 	["Achievements"] = "Achievements",
@@ -3131,6 +3150,7 @@ ROOTS = setmetatable({
 
 -- Root Data Processors
 --- Marks quest objects under the Hidden Quest Triggers root as HQT objects.
+---@param data table
 local function HQTCleanup(data)
 	if data.questID then
 		-- force quests under the HQT section to be the HQT type
@@ -3139,6 +3159,8 @@ local function HQTCleanup(data)
 	end
 end
 --- Marks nested quest groups so parser-generated `g` data can be dropped.
+---@param g any
+---@return ATTObject|ATTObjectArray|nil
 local function __DropG(g)
 	return bubbleDownFiltered({
 		-- keep API data from populating into NYI/Hidden quests
@@ -3146,10 +3168,14 @@ local function __DropG(g)
 	},FILTERFUNC_questID,g)
 end
 --- Preprocesses Hidden Quest Trigger data before it is attached to the root.
+---@param g any
+---@return ATTObject|ATTObjectArray|nil
 local function __HiddenQuestTriggers(g)
 	return applyFunc(HQTCleanup, __DropG(g))
 end
 --- Returns all arguments unchanged.
+---@param ... any
+---@return any ...
 local function ReturnArguments(...)
 	return ...;
 end
@@ -3164,6 +3190,12 @@ local RootDataProcessors = setmetatable({
 
 -- Connect data to a Root Category
 --- Create a ROOT CATEGORY Object.
+---@param category string|integer
+---@param g any
+---@return table
+--- Adds data to a named parser root category.
+--- Repeated calls merge into the existing root array. Hidden/NYI roots can run
+--- preprocessing through `RootDataProcessors` before the data is stored.
 root = function(category, g)							-- Create a ROOT CATEGORY Object
 	g = RootDataProcessors[category](g or {});
 	local o = _[category];
@@ -3209,20 +3241,27 @@ root = function(category, g)							-- Create a ROOT CATEGORY Object
 	end
 	return o;
 end
+---@param mapID UiMapID
+---@param g? ATTObject|ATTObjectArray
 battleground = function(mapID, g)						-- Create a BATTLEGROUND in the PvP header.
 	root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, { m(mapID, g) })));
 end
+---@param ... UiMapID|ATTObject|ATTObjectArray
 maproot = function(...)									-- Create a MAP ROOT in the Zones header.
 	-- Example: maproot(KALIMDOR, ELWYNN_FOREST, { });
 	local args = { ... };
 	local count = #args;
 	local data = args[count];
+	---@cast data ATTObject|ATTObjectArray
 	for i=count-1,1,-1 do
-		data = { m(args[i], data) };
+		data = { m(args[i] --[[@as UiMapID]], data) };
 	end
 	root(ROOTS.Zones, data);
 end
 --- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.).
+---@param skillID SkillID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTProfessionObject
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
 	-- #if NOT ANYCLASSIC
@@ -3234,8 +3273,13 @@ end
 
 -- Assign a Root Category Header
 local rootCategoryHeaders = {};
+---@type table<string|integer, ATTHeaderObject>
 RootCategoryHeaders = rootCategoryHeaders;	-- This is global, so that it can be found by Parser!
 --- Assigns a header object to a root category with a parser sort priority.
+---@param priority number
+---@param category string|integer
+---@param headerID ATTHeaderID
+---@param data? ATTObject|ATTObjectArray
 assignRootCategoryHeader = function(priority, category, headerID, data)
 	if not headerID or type(headerID) ~= "number" then
 		print("ROOT CATEGORY: " .. category);
@@ -3252,12 +3296,19 @@ end)();
 -- Create a String.
 (function()
 local localizationStringsByConstant = {};
+---@type table<string, ATTLocalizationStringData>
 LocalizationStrings = localizationStringsByConstant;	-- This is global, so that it can be found by Parser!
 --- Checks whether a localization string is programmatic (prefixed with `~`).
+---@param str string
+---@return boolean
 function isTextProgrammatic(str)
 	return str:sub(1, 1) == '~';
 end
 --- Registers a parser localization string and applies optional color/icon formatting.
+--- Registers a parser localization definition by its unique `constant`.
+--- The definition may provide literal/localized text, an icon, formatting, or
+--- programmatic text. Duplicate constants are rejected.
+---@param data ATTLocalizationStringData
 createLocalizationString = function(data)
 	if not data then
 		print("INVALID LOCALIZATION STRING: You must pass data into the createLocalizationString function.");
@@ -3335,10 +3386,14 @@ if not NextHeaderID then
 	NextHeaderID = -1;
 	HeaderAssignments = {};
 end
+---@type table<ATTHeaderID, ATTHeaderDefinition>
 local customHeaders = {};
 local customHeadersByReadable, customHeadersByConstant = {}, {};
+---@type table<ATTHeaderID, ATTHeaderDefinition>
 CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
 --- Serializes sorted table key/value pairs into a Lua table-literal string.
+---@param t table<string, string|number>
+---@return string
 local concatKeyPairs = function(t)
 	local keys = {};
 	for key,value in pairs(t) do
@@ -3355,6 +3410,8 @@ local concatKeyPairs = function(t)
 	return schedule .. "}";
 end
 --- Converts a parser date table into a Unix timestamp.
+---@param t ATTDateParts
+---@return integer
 local getTimestamp = function(t)
 	return os.time({
 		year=t.year,
@@ -3369,6 +3426,11 @@ local SECONDS_IN_A_WEEK = 604800;
 -- Creates a Custom Header for use within ATT data
 -- 'npcfill = true' indicates that Things Sourced under this Header can be 'filled' into the corresponding NPC Sources if tagged with applicable NPC data
 --- Creates and registers a custom ATT header, returning its unique header ID.
+--- Registers a reusable parser header definition and returns its header ID.
+--- Header metadata is indexed for parser generation and can later be referenced
+--- through `header(...)`, `n(...)`, or generated constants.
+---@param data ATTHeaderInputDefinition
+---@return ATTHeaderID|nil
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");
@@ -3779,11 +3841,13 @@ createHeader = function(data)
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
 				return;
 			end
+			---@cast data -ATTHeaderInputDefinition, +ATTHeaderProcessingDefinition
 			data.eventSchedule = schedule .. "\n}";
 		end
 
 		-- Whether or not to allow empty headers for this type (Default: No)
 		if not data.standalone then data.standalone = false; end
+		---@cast data -ATTHeaderInputDefinition, -ATTHeaderProcessingDefinition, +ATTHeaderDefinition
 
 		-- Try to find the headerID assignment from the readable table.
 		local headerID = HeaderAssignments[data.readable];
@@ -3819,6 +3883,9 @@ CRIEVES_SUPER_COOL_HEADER = createHeader({
 ]]--
 local temporaryHeaderAssignments = {};
 --- Returns a programmatic header-translation token for a header ID or localization table.
+---@param data? ATTHeaderID|table<string, string>
+---@param key? string|integer
+---@return string|nil
 translate = function(data, key)
 	if not data then
 		print("INVALID TRANSLATION: You must pass data into the translate function.");
@@ -3847,6 +3914,10 @@ end)();
 (function()
 local nextCustomObjectID = 100000000;
 --- Registers a custom object and returns its unique object ID.
+--- Registers a reusable custom parser object and returns its custom object ID.
+--- Custom objects are parser definitions, not ordinary runtime WoW API objects.
+---@param data ATTCustomObjectDefinition
+---@return ObjectID|nil
 createCustomObject = function(data)
 	if not data then
 		print("INVALID OBJECT: You must pass data into the createCustomObject function.");
@@ -3867,6 +3938,14 @@ do
 local itemDBConditional = ItemDBConditional;
 local CurrentProfessionID = ALCHEMY;
 --- Updates parser ItemDB/RecipeDB metadata for a recipe and its profession requirement.
+--- Links an item and recipe in the parser-side ItemDB/RecipeDB.
+--- This records recipe metadata, profession requirements, and optional
+--- unobtainable state so generated database files can resolve the relationship.
+---@param itemID ItemID
+---@param recipeID RecipeID
+---@param unobtainStatus? ATTUnobtainableStatus
+---@param requireSkill? SkillID
+---@return ATTObject
 local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill)
 	-- Cache the object.
 	local object;
@@ -3928,19 +4007,24 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	local unobtainType = unobtainStatus and type(unobtainStatus);
 	if unobtainType then
 		if unobtainType == "number" then
+			---@cast unobtainStatus integer
 			-- #if ANYCLASSIC
 			-- CRIEVE NOTE: At this time, this is exclusive to Classic builds.
 			RecipeDB[recipeID].u = unobtainStatus
 			-- #endif
 		elseif unobtainType == "string" then
+			---@cast unobtainStatus ATTTimelineEvent
 			object.timeline = { unobtainStatus };
 		elseif unobtainType == "table" then
+			---@cast unobtainStatus ATTTimelineEvent[]
 			object.timeline = unobtainStatus;
 		end
 	end
 	return object;
 end
 --- Sets the active profession and returns the item/recipe helper function.
+---@param professionID SkillID
+---@return fun(itemID: ItemID, recipeID: RecipeID, unobtainStatus?: ATTUnobtainableStatus, requireSkill?: SkillID): ATTObject
 GetRecipeHelperForProfession = function(professionID)
 	CurrentProfessionID = professionID;
 	return ItemRecipeHelper;
