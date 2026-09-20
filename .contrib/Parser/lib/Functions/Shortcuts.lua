@@ -608,8 +608,8 @@ local BubbleDownKeyWarnings = {
 -- }
 -- Simply applies keys from 'data' into 't' using a custom function by key, or where the key does not already exist
 --- Copies missing fields from `data` into `t` without replacing fields already present.
----@param data? table
----@param t? table
+---@param data? ATTObject
+---@param t? ATTObject
 applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
