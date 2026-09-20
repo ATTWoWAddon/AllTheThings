@@ -756,7 +756,8 @@ sharedData = function(data, t)
 end
 -- Performs sharedData logic but also applies the data to the top-level table
 --- Applies shared data to the top-level object and its direct children.
----@param data table
+--- Array input is wrapped in a group container; the result is always an object.
+---@param data ATTObject
 ---@param t ATTObject|ATTObjectArray
 ---@return ATTObject
 sharedDataSelf = function(data, t)
