@@ -902,11 +902,13 @@ bubbleDownSelf = function(data, t)
 	return bubbleDown(data, t);
 end
 -- Performs only the logic of applying the provided data against the merging object, this is intended as a quick replacement for those bubbleDown(Self) uses of only 'timeline' data
---- Applies timeline data to the current object using timeline-aware merge behavior.
----@param data table
----@param t ATTObject|ATTObjectArray
+--- Applies timeline-only data to direct children via `sharedData`.
+--- Preserves the input type; auto mode returns nil when data is not timeline-only.
+---@generic T: ATTObject|ATTObjectArray
+---@param data ATTObject
+---@param t T
 ---@param auto? boolean
----@return ATTObject|ATTObjectArray|nil
+---@return T|nil
 timelineSelf = function(data, t, auto)
 	if not data then
 		error("timelineSelf: No Data",StringifyTable(t,","))
