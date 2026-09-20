@@ -3175,7 +3175,7 @@ ROOTS = setmetatable({
 
 -- Root Data Processors
 --- Marks quest objects under the Hidden Quest Triggers root as HQT objects.
----@param data table
+---@param data ATTObject
 local function HQTCleanup(data)
 	if data.questID then
 		-- force quests under the HQT section to be the HQT type
