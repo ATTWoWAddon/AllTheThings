@@ -1277,6 +1277,10 @@ end
 
 -- Cost Helper Functions
 --- Appends one or more cost entries to an object.
+---@generic T: ATTObject
+---@param item T
+---@param ... ATTCost
+---@return T
 applycost = function(item, ...)
 	local cost = item.cost;
 	if not cost then
@@ -1289,26 +1293,45 @@ applycost = function(item, ...)
 	return item;
 end
 --- Assign a token cost to an item.
+---@generic T: ATTObject
+---@param tokenItemID ItemID
+---@param item T
+---@return T
 tokencost = function(tokenItemID, item)				-- Assign a token cost to an item.
 	applycost(item, { "i", tokenItemID, 1 });
 	return item;
 end
 --- Assign a Remnant of Anguish cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 anguish = function(cost, item)						-- Assign a Remnant of Anguish cost to an item.
 	if cost > 0 then applycost(item, { "c", 3392, cost }); end
 	return item;
 end
 --- Assign an Bloody Tokens cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
 	if cost > 0 then applycost(item, { "c", BLOODY_TOKENS, cost }); end
 	return item;
 end
 --- Assign a Champion's Seal cost to an item with proper timeline & phase requirements.
+---@param cost number
+---@param item ATTObject
+---@return ATTObject
 champ = function(cost, item)							-- Assign a Champion's Seal cost to an item with proper timeline & phase requirements.
 	applycost(item, { "c", 241, cost });	-- Champion's Seal
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 --- Assign a Chef's Award or Epicurean's Award cost to an item. (based on patch).
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's Award cost to an item. (based on patch)
 	-- #if AFTER 5.0.4
 	applycost(item, { "c", 81, cost });	-- Epicurean's Award
@@ -1318,26 +1341,46 @@ chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's A
 	return item;
 end
 --- Assign a Conquest cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 conquest = function(cost, item)							-- Assign a Conquest cost to an item.
 	if cost > 0 then applycost(item, { "c", CONQUEST, cost }); end
 	return item;
 end
 --- Assign a Dalaran Jewelcrafter's Token cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter's Token cost to an item.
 	applycost(item, { "c", 61, cost });
 	return item;
 end
 --- Assign a Darkmoon Daggermaw cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 darkmoondaggermaw = function(cost, item)				-- Assign a Darkmoon Daggermaw cost to an item.
 	applycost(item, { "i", 124669, cost });	-- Darkmoon Daggermaw
 	return item;
 end
 --- Assign a Darkmoon Prize Ticket cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 darkmoonprizeticket = function(cost, item)				-- Assign a Darkmoon Prize Ticket cost to an item.
 	applycost(item, { "c", 515, cost });	-- Darkmoon Prize Ticket
 	return item;
 end
 --- Assign a Defiler's Scourgestone (Defense Protocol Gamma - Wrath Classic) cost to an item with proper timeline requirements.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 defilersscourgestone = function(cost, item)				-- Assign a Defiler's Scourgestone (Defense Protocol Gamma - Wrath Classic) cost to an item with proper timeline requirements.
 	-- #if ANYCLASSIC
 	applycost(item, { "c", DEFILERS_SCOURGESTONE, cost });
@@ -1345,6 +1388,9 @@ defilersscourgestone = function(cost, item)				-- Assign a Defiler's Scourgeston
 	return item;
 end
 --- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
+---@param cost number
+---@param item ATTObject
+---@return ATTObject
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
@@ -1352,6 +1398,9 @@ emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an ite
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 --- Assign a Emblem of Frost cost to an item with proper timeline & phase requirements.
+---@param cost number
+---@param item ATTObject
+---@return ATTObject
 emof = function(cost, item)								-- Assign a Emblem of Frost cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 341, cost });	-- Emblem of Frost
@@ -1359,6 +1408,9 @@ emof = function(cost, item)								-- Assign a Emblem of Frost cost to an item w
 	return applyclassicphase(WRATH_PHASE_FOUR, item);
 end
 --- Assign a Emblem of Heroism cost to an item with proper timeline & phase requirements.
+---@param cost number
+---@param item ATTObject
+---@return ATTObject
 emoh = function(cost, item)								-- Assign a Emblem of Heroism cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 101, cost });	-- Emblem of Heroism
@@ -1366,6 +1418,9 @@ emoh = function(cost, item)								-- Assign a Emblem of Heroism cost to an item
 	return applyclassicphase(WRATH_PHASE_ONE, item);
 end
 --- Assign a Emblem of Triumph cost to an item with proper timeline & phase requirements.
+---@param cost number
+---@param item ATTObject
+---@return ATTObject
 emot = function(cost, item)								-- Assign a Emblem of Triumph cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 301, cost });	-- Emblem of Triumph
@@ -1373,6 +1428,9 @@ emot = function(cost, item)								-- Assign a Emblem of Triumph cost to an item
 	return applyclassicphase(WRATH_PHASE_THREE, item);
 end
 --- Assign a Emblem of Valor cost to an item with proper timeline & phase requirements.
+---@param cost number
+---@param item ATTObject
+---@return ATTObject
 emov = function(cost, item)								-- Assign a Emblem of Valor cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 102, cost });	-- Emblem of Valor
@@ -1380,31 +1438,55 @@ emov = function(cost, item)								-- Assign a Emblem of Valor cost to an item w
 	return applyclassicphase(WRATH_PHASE_ONE, item);
 end
 --- Assign a Epicurean's Award cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 epicurean = function(cost, item)						-- Assign a Epicurean's Award cost to an item.
 	applycost(item, { "c", 81, cost });
 	return item;
 end
 --- Assign a Flame-Blessed Iron cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 fbiron = function(cost, item)						-- Assign a Flame-Blessed Iron cost to an item.
 	if cost > 0 then applycost(item, { "c", 3090, cost }); end
 	return item;
 end
 --- Assign a Gold cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 gold = function(cost, item)								-- Assign a Gold cost to an item.
 	applycost(item, { "g", cost * 10000 });	-- Gold
 	return item;
 end
 --- Assign an Heavy Savage Leather cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 heavysavageleather = function(cost, item)				-- Assign an Heavy Savage Leather cost to an item.
 	if cost > 0 then applycost(item, { "i", 56516, cost }); end
 	return item;
 end
 --- Assign an Honor cost to an item. (modern).
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 honor = function(cost, item)							-- Assign an Honor cost to an item. (modern)
 	if cost > 0 then applycost(item, { "c", HONOR, cost }); end
 	return item;
 end
 --- Assign a Honor cost to an item with proper timeline requirements. (pre-Cata costs).
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 honorpoints = function(cost, item)						-- Assign a Honor cost to an item with proper timeline requirements. (pre-Cata costs)
 	-- #if BEFORE CATA
 	-- TODO: Add the before Cata Honor System
@@ -1413,6 +1495,10 @@ honorpoints = function(cost, item)						-- Assign a Honor cost to an item with p
 	return item;
 end
 --- Assign a Mark of Honor cost to an item with proper timeline requirements.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with proper timeline requirements.
 	-- #if AFTER 7.0.3.22248
 	applycost(item, { "i", 137642, cost });	-- Mark of Honor
@@ -1420,6 +1506,10 @@ moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with
 	return item;
 end
 --- Assign a Sidereal Essence (Defense Protocol Beta - Wrath Classic) cost to an item with proper timeline requirements.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 siderealessence = function(cost, item)					-- Assign a Sidereal Essence (Defense Protocol Beta - Wrath Classic) cost to an item with proper timeline requirements.
 	-- #if ANYCLASSIC
 	applycost(item, { "c", SIDEREAL_ESSENCE, cost });
@@ -1427,6 +1517,10 @@ siderealessence = function(cost, item)					-- Assign a Sidereal Essence (Defense
 	return item;
 end
 --- Assign a Chef's Award or Epicurean's Award cost to an item. (based on patch).
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 spiritshard = function(cost, item)						-- Assign a Chef's Award or Epicurean's Award cost to an item. (based on patch)
 	-- #if AFTER 8.0.1
 	applycost(item, { "c", 1704, cost });	-- Spirit Shard (currency)
@@ -1436,16 +1530,28 @@ spiritshard = function(cost, item)						-- Assign a Chef's Award or Epicurean's 
 	return item;
 end
 --- Assign a Tol Barad Commendation cost to an item with proper timeline requirements.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendation cost to an item with proper timeline requirements.
 	applycost(item, { "c", 391, cost });	-- Tol Barad Commendation
 	return item;
 end
 --- Assign a Traders Tender cost to an item.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 traderstender = function(cost, item)                	-- Assign a Traders Tender cost to an item.
 	if cost > 0 then applycost(item, { "c", TRADERS_TENDER, cost }); end
 	return item;
 end
 --- Assign a Venture Coin cost to an item with proper timeline requirements.
+---@generic T: ATTObject
+---@param cost number
+---@param item T
+---@return T
 venture = function(cost, item)							-- Assign a Venture Coin cost to an item with proper timeline requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 201, cost });	-- Venture Coin
@@ -1453,6 +1559,8 @@ venture = function(cost, item)							-- Assign a Venture Coin cost to an item wi
 	return item;
 end
 --- Assign a Champion's Writ cost to an item with proper timeline & phase requirements.
+---@param item ATTObject
+---@return ATTObject
 writ = function(item)									-- Assign a Champion's Writ cost to an item with proper timeline & phase requirements.
 	applycost(item, { "i", 46114, 1 });	-- 1x Champion's Writ
 	return applyclassicphase(WRATH_PHASE_TWO, item);
@@ -2643,6 +2751,9 @@ end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 --- Flag as Alliance Only.
+---@generic T: ATTObject
+---@param t T
+---@return T
 a = function(t)	-- Flag as Alliance Only
 	if t.races then
 		for key,value in pairs(t) do
@@ -2671,10 +2782,19 @@ end
 -- Adds an item which is convertable between itself and another subitem by way of a subitem amount and whether the
 -- item to subitem is possible
 --- Creates an item with a conversion cost to another item and optional reverse-conversion child.
+---@param itemID ItemID
+---@param subItemID ItemID
+---@param subItemAmount number
+---@param includeItemToSubitem? boolean
+---@return ATTItemObject
 convertItem = function(itemID, subItemID, subItemAmount, includeItemToSubitem)
 	return i(itemID, {["cost"]={{"i",subItemID,subItemAmount}},["groups"]=includeItemToSubitem and {i(subItemID)} or nil})
 end
 --- Add a Creature List to an object.
+---@generic T: ATTObject
+---@param id CreatureID|CreatureID[]
+---@param t T
+---@return T
 crs = function(id, t)									-- Add a Creature List to an object.
 	if type(id) == "number" then
 		t.cr = id;
@@ -2684,6 +2804,9 @@ crs = function(id, t)									-- Add a Creature List to an object.
 	return t;
 end
 --- Flag as Horde Only.
+---@generic T: ATTObject
+---@param t T
+---@return T
 h = function(t) -- Flag as Horde Only
 	if t.races then
 		for key,value in pairs(t) do
@@ -2710,18 +2833,30 @@ h = function(t) -- Flag as Horde Only
 	return t;
 end
 --- Creates an item-drop Hidden Quest Trigger object.
+---@param itemID ItemID
+---@param questID QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTQuestObject
 itemDropHQT = function(itemID, questID, t)
 	t = t or {}
 	t.provider = {"i",itemID}	-- Item
 	return hqt(questID, name(HEADERS.Item, itemID, t))	-- Item Drop
 end
 --- Assigns a display ID to an object.
+---@generic T: ATTObject
+---@param displayID integer
+---@param t T
+---@return T
 model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
 end
 -- Converts a given Item/Mod/Bonus combination into the current modItemID format (should roughly match GetGroupItemIDWithModID from Item.Retail.lua)
 --- Encodes ItemID, ModID, and BonusID into the parser's modItemID numeric format.
+---@param itemID? ItemID
+---@param modID? ModID
+---@param bonusID? BonusID
+---@return ModItemID
 modItemId = function(itemID, modID, bonusID)
 	itemID = itemID and tonumber(itemID) or 0;
 	-- #if AFTER LEGION
@@ -2741,6 +2876,10 @@ end
 -- NOTE: The base Type must support: GlobalVariants.WithAutoName as a Class Variant for the 'autoname' field to be recognized in the addon to generate a 'name'
 -- ref. Classes/Quest.lua
 --- Adds automatic-name metadata for a supported object type and ID.
+---@param type? string
+---@param id? integer
+---@param t? ATTObject|ATTObjectArray
+---@return ATTObject|ATTObjectArray|nil
 name = function(type, id, t)
 	if not type or not id then return t end
 	t = togroups(t or {})
@@ -2752,6 +2891,10 @@ name = function(type, id, t)
 end
 -- Converts 3 separate patch values into a single patch decimal for use within expansion() groups
 --- Encodes major, minor, and build values into the parser's decimal patch format.
+---@param major number
+---@param minor number
+---@param build number
+---@return number
 patch = function(major, minor, build)
 	major = math.floor(tonumber(major) or 0)
 	minor = math.floor(tonumber(minor) or 0)
@@ -2768,8 +2911,15 @@ patch = function(major, minor, build)
 	return major + (minor / RevShift) + (build / 100000)
 end
 --- Mark an object unobtainable where u is the type.
+---@generic T: ATTObject
+---@param u ATTUnobtainableStatus
+---@param t T
+---@return T
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 --- A daily group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards).
+---@param questID QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 dailyReward = function(questID, t)								-- A daily group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards)
 	local t = n(DAILY, t)
 	t.questID = questID
@@ -2777,6 +2927,9 @@ dailyReward = function(questID, t)								-- A daily group based on questID with
 	return t
 end
 --- A weekly group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards).
+---@param questID QuestID
+---@param t? ATTObject|ATTObjectArray
+---@return ATTHeaderObject
 weeklyReward = function(questID, t)								-- A weekly group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards)
 	local t = n(WEEKLY, t)
 	t.questID = questID
@@ -2786,6 +2939,10 @@ end
 
 -- Region Specific Filters
 --- Restricts an object to a specific WoW portal region.
+---@generic T: ATTObject
+---@param region Region
+---@param t T
+---@return T
 regionExclusive = function(region, t)
 	if t.OnInit then
 		error("ERROR: You already have an OnInit assigned for this object.");
@@ -2799,6 +2956,10 @@ end]];
 	return t;
 end
 --- Marks an object unavailable in a specific WoW portal region.
+---@generic T: ATTObject
+---@param region Region
+---@param t T
+---@return T
 regionUnavailable = function(region, t)
 	if t.OnInit then
 		error("ERROR: You already have an OnInit assigned for this object.");
@@ -2812,33 +2973,63 @@ end]];
 	return t;
 end
 
+---@generic T: ATTObject
+---@param t T
+---@return T
 usONLY = function(t)	-- the object only available on US realm
 	return regionExclusive("US", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 euONLY = function(t)	-- the object only available on EU realm
 	return regionExclusive("EU", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 krONLY = function(t)	-- the object only available on KR realm
 	return regionExclusive("KR", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 twONLY = function(t)	-- the object only available on TW realm
 	return regionExclusive("TW", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 cnONLY = function(t)	-- the object only available on CN realm
 	return regionExclusive("CN", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 usUnavailable = function(t)	-- the object only unavailable on US realm
 	return regionUnavailable("US", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 euUnavailable = function(t)	-- the object only unavailable on EU realm
 	return regionUnavailable("EU", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 krUnavailable = function(t)	-- the object only unavailable on KR realm
 	return regionUnavailable("KR", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 twUnavailable = function(t)	-- the object only unavailable on TW realm
 	return regionUnavailable("TW", t);
 end
+---@generic T: ATTObject
+---@param t T
+---@return T
 cnUnavailable = function(t)	-- the object only unavailable on CN realm
 	return regionUnavailable("CN", t);
 end
