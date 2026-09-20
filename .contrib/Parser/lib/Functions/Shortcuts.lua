@@ -156,6 +156,8 @@
 ---@field rank? integer
 ---@field cr? CreatureID
 ---@field crs? CreatureID[]
+---@field qg? NPCID
+---@field qgs? NPCID[]
 ---@field coord? Coord|ATTIgnoredValue
 ---@field coords? Coord[]
 ---@field provider? ATTProvider|ATTIgnoredValue
