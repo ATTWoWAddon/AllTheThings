@@ -109,7 +109,9 @@
 ---@field setHeaderID? integer
 ---@field setSubHeaderID? integer
 ---@field talentID? GarrisonTalentID
----@field itemID? ItemID
+---@field itemID? ItemID General item ID.
+---@field qs? ItemID item grants or starts a quest.
+---@field qi? ItemID The item exists specifically for use in a quest.
 ---@field modItemID? ModItemID
 ---@field modID? ModID
 ---@field bonusID? BonusID
