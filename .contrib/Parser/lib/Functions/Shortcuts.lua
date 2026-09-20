@@ -651,17 +651,19 @@ applyDataSelf = function(data, t)
 end
 -- Applies a function against the group and all sub-groups
 --- Recursively applies a function to a group and all of its nested groups.
+--- Invokes the function after visiting children, including on array containers.
+--- Returns the original input, whose fields may have been changed by the function.
 ---@param func? fun(group: ATTObject|ATTObjectArray)
 ---@param t ATTObject|ATTObjectArray
 ---@return ATTObject|ATTObjectArray
 applyFunc = function(func, t)
 	if not func then return t end
-	if t.groups then
+	if t --[[@as ATTObject]].groups then
 		applyFunc(func, t.groups)
-	elseif t.g then
+	elseif t --[[@as ATTObject]].g then
 		applyFunc(func, t.g)
 	elseif isarray(t) then
-		for _,group in ipairs(t) do
+		for _,group in ipairs(t --[[@as ATTObjectArray]]) do
 			applyFunc(func, group)
 		end
 	end
