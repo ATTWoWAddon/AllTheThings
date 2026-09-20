@@ -1123,21 +1123,23 @@ bubbleDownClassicRep = function(rep, group)
 	return t;
 end
 --- Recursively invokes a method for an object and all nested groups.
+--- Array containers are traversed; only objects are passed to the method.
+--- Returns the original input, whose fields may have been changed by the method.
 ---@param method fun(group: ATTObject)
 ---@param t? ATTObject|ATTObjectArray
 ---@return ATTObject|ATTObjectArray|nil
 run = function(method, t)
 	if t then
-		if t.g or t.groups then
-			method(t);
+		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
+			method(t --[[@as ATTObject]]);
 			run(method, t.groups);
 			run(method, t.g);
 		elseif isarray(t) then
-			for _,group in ipairs(t) do
+			for _,group in ipairs(t --[[@as ATTObjectArray]]) do
 				run(method, group);
 			end
 		else
-			method(t);
+			method(t --[[@as ATTObject]]);
 		end
 		return t;
 	end
