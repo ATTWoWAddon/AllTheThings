@@ -111,11 +111,14 @@
 ---@field talentID? GarrisonTalentID
 ---@field itemID? ItemID General item ID.
 ---@field qs? ItemID item grants or starts a quest.
----@field qi? ItemID The item exists specifically for use in a quest.
+---@field qss? ItemID[] items grant or start a quest.
+---@field qi? ItemID item exists specifically for use in a quest.
+---@field qis? ItemID[] items exist specifically for use in a quest.
 ---@field modItemID? ModItemID
 ---@field modID? ModID
 ---@field bonusID? BonusID
 ---@field questID? QuestID
+---@field sourceQuest? QuestID Prerequisite/source quest.
 ---@field sourceQuests? QuestID[] Prerequisite/source quests.
 ---@field sourceQuestNumRequired? integer Number of source quests required.
 ---@field spellID? SpellID
