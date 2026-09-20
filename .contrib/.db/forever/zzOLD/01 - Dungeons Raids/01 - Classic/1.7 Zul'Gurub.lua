@@ -625,7 +625,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					["groups"] = { i(19858) },	-- Zandalar Honor Token
 				}),
 				q(8227, {	-- Nat's Measuring Tape
-					["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
+					["provider"] = { "o", 180366 },	-- Battered Tackle Box
+					["qi"] = 19973,	-- Nat's Measuring Tape (QI!)
+					["maps"] = { DUSTWALLOW_MARSH },
 					["requireSkill"] = FISHING,
 					["lvl"] = 58,
 				}),
@@ -1259,11 +1261,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(20260),	-- Seafury Leggings
 				i(19897),	-- Betrayer's Boots
 				i(19898),	-- Seal of Jin
-			}),
-			o(180366, {	-- Battered Tackle Box
-				["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
-				["requireSkill"] = FISHING,
-				["groups"] = { i(19973) },	-- Nat's Measuring Tape
 			}),
 			n(15114, {	-- Gahz'ranka
 				["sourceQuest"] = 8227,	-- Nat's Measuring Tape
@@ -1949,7 +1946,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						["groups"] = { i(19858) },	-- Zandalar Honor Token
 					}),
 					q(8227, {	-- Nat's Measuring Tape
-						["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
+						["provider"] = { "o", 180366 },	-- Battered Tackle Box
+						["qi"] = 19973,	-- Nat's Measuring Tape (QI!)
+						["maps"] = { DUSTWALLOW_MARSH },
 						["requireSkill"] = FISHING,
 						["lvl"] = 58,
 					}),
@@ -2461,11 +2460,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					i(230928),	-- Seafury Leggings
 					i(230923),	-- Betrayer's Boots
 					i(230929),	-- Seal of Jin
-				}),
-				o(180366, {	-- Battered Tackle Box
-					["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
-					["requireSkill"] = FISHING,
-					["groups"] = { i(19973) },	-- Nat's Measuring Tape
 				}),
 				n(15114, {	-- Gahz'ranka
 					["sourceQuest"] = 8227,	-- Nat's Measuring Tape
