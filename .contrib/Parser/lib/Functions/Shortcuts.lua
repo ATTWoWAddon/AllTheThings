@@ -731,21 +731,22 @@ applyTimelineEvent = function(epoch, t)
 end
 -- Applies a copy of the provided data into the tables of the provided array/group
 --- Applies shared data to each direct child in a group or group container.
----@param data table
----@param t ATTObject|ATTObjectArray
----@return ATTObject|ATTObjectArray
+---@generic T: ATTObject|ATTObjectArray
+---@param data ATTObject
+---@param t T
+---@return T
 sharedData = function(data, t)
 	if not data then
 		error("sharedData: No Shared Data",StringifyTable(t,","))
 	end
-	if not t or (#t == 0 and not t.g and not t.groups) then
+	if not t or (#t == 0 and not t --[[@as ATTObject]].g and not t --[[@as ATTObject]].groups) then
 		error("sharedData: No Source 't'",StringifyTable(t,","))
 	end
 	if t then
-		for _,group in ipairs(t) do
+		for _,group in ipairs(t --[[@as ATTObjectArray]]) do
 			applyData(data, group);
 		end
-		if t.g or t.groups then
+		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
 			for _,group in ipairs(t.g or t.groups --[[@as ATTObjectArray]]) do
 				applyData(data, group);
 			end
