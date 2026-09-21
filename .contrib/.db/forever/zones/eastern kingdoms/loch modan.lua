@@ -332,6 +332,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				["lvl"] = 30,
 				["groups"] = {
 					i(4982),	-- Ripped Prospector Belt
+					i(2776),	-- Gold Ore
+					i(1529),	-- Jade
 				},
 			}),
 			q(297, {	-- Gathering Idols
@@ -405,6 +407,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					objective(2, {	-- 0/10 Stonesplinter Bonesnapper slain
 						["provider"] = { "n", 1164 },	-- Stonesplinter Bonesnapper
 					}),
+					i(2863),	-- Coarse Sharpening Stone
 				},
 			}),
 			q(217, {	-- In Defense of the King's Lands (4/4)
@@ -527,12 +530,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				["coord"] = { 37.2, 47.4, MAP.LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
-			}),
-			q(13639, {	-- Resupplying the Excavation
-				["sourceQuest"] = 26868,	-- Axis of Awful
-				["qg"] = 1105,	-- Jern Hornhelm
-				["coord"] = { 37.2, 47.4, MAP.LOCH_MODAN },
-				["races"] = ALLIANCE_ONLY,
 			}),
 			q(6391, {	-- Ride to Ironforge
 				["sourceQuest"] = 6387,	-- Honor Students
@@ -959,19 +956,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				["description"] = "Has a chance to drop from any creature in the zone.",
 			}),
 			i(2281, {	-- Rodentia Flint Axe
-				["cr"] = 1202,	-- Tunnel Rat Kobold
-				["coord"] = { 27.6, 44.8, MAP.LOCH_MODAN },
-				
+				["coords"] = {
+					{ 38.4, 16.0, MAP.LOCH_MODAN },
+					{ 32.6, 26.4, MAP.LOCH_MODAN },
+					{ 32.2, 14.6, MAP.LOCH_MODAN },
+					{ 27.6, 44.8, MAP.LOCH_MODAN },
+				},
+				["crs"] = {
+					1176,	-- Tunnel Rat Forager
+					1202,	-- Tunnel Rat Kobold
+				},
 			}),
 			i(2282, {	-- Rodentia Shortsword
-				["crs"] = {
-					1173,	-- Tunnel Rat Scout
-					1172,	-- Tunnel Rat Vermin
-				},
 				["coords"] = {
+					{ 28.2, 36.0, MAP.LOCH_MODAN },
+					{ 25.2, 26.2, MAP.LOCH_MODAN },
+					{ 19.8, 46.8, MAP.LOCH_MODAN },
 					{ 28.6, 45.0, MAP.LOCH_MODAN },
 					{ 25.0, 32.6, MAP.LOCH_MODAN },
 					{ 37.4, 16.6, MAP.LOCH_MODAN },
+				},
+				["crs"] = {
+					1173,	-- Tunnel Rat Scout
+					1172,	-- Tunnel Rat Vermin
 				},
 			}),
 			i(2274, {	-- Sapper's Gloves
@@ -1009,6 +1016,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			i(5109, {	-- Stonesplinter Rags
 				["crs"] = {
+					1393,	-- Berserk Trogg
+					1398,	-- Boss Galgosh <Stonesplinter Chieftain>
+					1207,	-- Brawler
+					1206,	-- Gnasher
+					1205,	-- Grawmug
+					1399,	-- Magosh <Stonesplinter Tribal Shaman>
+					1166,	-- Stonesplinter Seer
+					1197,	-- Stonesplinter Shaman
+					1163,	-- Stonesplinter Skullthumper
 					1164,	-- Stonesplinter Bonesnapper
 					1167,	-- Stonesplinter Digger
 					1165,	-- Stonesplinter Geomancer
