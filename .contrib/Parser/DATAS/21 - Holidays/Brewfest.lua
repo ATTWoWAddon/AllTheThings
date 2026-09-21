@@ -3041,7 +3041,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
 						i(33976, {	-- Brewfest Ram (MOUNT!)
+							-- #if ANYCLASSIC
+							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							-- #else
 							["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
+							-- #endif
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
 					},
@@ -3284,7 +3288,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
 						i(33976, {	-- Brewfest Ram (MOUNT!)
+							-- #if ANYCLASSIC
+							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							-- #else
 							["timeline"] = { ADDED_2_2_2, REMOVED_2_4_3 },
+							-- #endif
 							["cost"] = { { "g", 100000 } },	-- 10g
 						}),
 					},
