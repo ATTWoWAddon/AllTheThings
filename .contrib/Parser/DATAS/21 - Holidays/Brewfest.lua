@@ -2877,11 +2877,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						}),
 						-- #endif
 						filter(QUEST_ITEMS, {
-							-- Wouter NOTE: in MoP Classic ID 37737 is still the item actually on the vendor, added a Classic timeline because I don't want to mess with the original (yet)
 							i(37599, {	-- "Brew of the Month" Club Membership Form (current)
 								["timeline"] = {
 									-- #if ANYCLASSIC
-									CREATED_2_2_2,
+									ADDED_2_5_1,
 									-- #else
 									CREATED_2_2_2, ADDED_3_0_2	-- NOTE: Not used in 2007
 									-- #endif
