@@ -998,6 +998,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 
 				-- Burning Crusade
+				-- #if CLASSIC_ANNIVERSARY
+				i(281735, {	-- Dark Iron Smoking Pipe [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281748, {	-- Direbrew Hops [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281903, {	-- Direbrew's Shanker [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281739, {	-- Empty Mug of Direbrew [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				-- #else
 				i(37597, {	-- Direbrew's Shanker [Level 70]
 					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 				}),
@@ -1019,6 +1033,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(38287, {	-- Empty Mug of Direbrew [Level 70]
 					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
 				}),
+				-- #endif
 				i(38280, {	-- Direbrew's Dire Brew (Alliance)
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
