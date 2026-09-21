@@ -2721,7 +2721,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				n(207496, {	-- Bragdur Battlebrew
 					["coord"] = { 29.8, 56.6, VALDRAKKEN },
-					["sym"] = {{"sub","common_vendor",23710}},	-- Belbi Quikswitch <Token Redeemer> (Ally Version)
+					["timeline"] = { ADDED_10_1_7 },
+					["sym"] = {{"sub","common_vendor",23710}},	-- Belbi Quikswitch <Token Redeemer>
 				}),
 				n(152871, {	-- Brewer Gerrat <Brew Vendor>
 					["coord"] = { 56.5, 37.5, DUN_MOROGH },
