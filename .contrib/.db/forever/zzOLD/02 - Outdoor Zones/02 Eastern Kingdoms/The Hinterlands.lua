@@ -9,86 +9,28 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(773),	-- Explore The Hinterlands
-				ach(4897, {	-- Hinterlands Quests
-					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER 7.3.5
-					["_doautomation"] = true,
-					-- #else
-					["sourceQuests"] = {
-						26532,	-- Shadra the Venom Queen
-						26643,	-- Starvation Diet
-						26525,	-- Venomous Secrets
-						26526,	-- Hunt the Keeper
-						26516,	-- It's Ours Now
-						26521,	-- Faces of Evil
-						26524,	-- Dark Vessels
-						26492,	-- Skulk Rock Supplies
-						26491,	-- Skulk Rock Clean-Up
-						26490,	-- Prime Slime
-						26486,	-- 99 Bottles of Booze on the Beach
-						26485,	-- Snapjaws, Lad!
-						26462,	-- The Wicked Revantusk
-						26387,	-- Starvation Diet
-						26419,	-- Shadra the Venom Queen
-						26308,	-- It's Ours Now
-						26369,	-- Hunt the Keeper
-						26357,	-- Faces of Evil
-						26368,	-- Venomous Secrets
-						26309,	-- Dark Vessels
-						26238,	-- The Savage Dwarves
-						26240,	-- Stomp To My Beat
-						26212,	-- Lard Lost His Lunch
-						26225,	-- Pupellyverbos Port
-						26224,	-- Hunt the Savages
-						26211,	-- Snapjaws, Mon!
-						26210,	-- Gammerita, Mon!
-						26267,	-- Skulk Rock Clean-Up
-						26283,	-- Prime Slime
-						26268,	-- Skulk Rock Supplies
-					},
-					-- #endif
-				}),
 			}),
 			explorationHeader({
 				exploration(348),	-- Aerie Peak
 				exploration(1884),	-- Agol'watha
-				-- #if AFTER CATA
-				exploration(1887),	-- Bogen's Ledge
-				-- #endif
 				exploration(1885),	-- Hiri'watha / Hiri'watha Research Station [CATA+]
 				exploration(354),	-- Jintha'Alor
 				exploration(1882),	-- Plaguemist Ravine
 				exploration(350),	-- Quel'Danil Lodge
-				-- #if AFTER CATA
-				exploration(3317),	-- Revantusk Village
-				-- #endif
 				exploration(356),	-- Seradane
 				exploration(353),	-- Shadra'Alor
 				exploration(1917),	-- Shaol'watha
 				exploration(351),	-- Skulk Rock
-				-- #if AFTER CATA
-				exploration(5323),	-- Stormfeather Outpost
-				-- #endif
 				exploration(355),	-- The Altar of Zul
 				exploration(1886),	-- The Creeping Ruin
 				exploration(307),	-- The Overlook Cliffs
 				exploration(1883),	-- Valorwind Lake
-				-- #if AFTER CATA
-				exploration(352),	-- Zun'watha
-				-- #endif
 			}),
-			-- #if BEFORE TBC
 			n(FACTIONS, {
 				faction(471, {	-- Wildhammer Clan
 					["description"] =
-						-- #if CLASSICERA
-						"You can grind to 11999/12000 by just killing trolls and then you can grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces. @Blackbear on the ATT Discord proposed for Classic Era that the goal for this should be Exalted. Be mad at him! :)",
-						-- #else
 						"This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
-						-- #endif
-					-- #if NOT CLASSICERA
 					["minReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
-					-- #endif
 					["OnTooltip"] = [[function(t, tooltipInfo)
 						local reputation = t.reputation;
 						if reputation < 42000 then
@@ -108,29 +50,16 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(43, {	-- Aerie Peak, The Hinterlands
 					["cr"] = 8018,	-- Guthrum Thunderfist <Gryphon Master>
 					["coord"] = { 11.0, 46.0, MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				fp(617, {	-- Hiri'watha Research Station, The Hinterlands
-					["cr"] = 43573,	-- Kellen Kuhn <Bat Handler>
-					["coord"] = { 32.4, 58.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
 				fp(76, {	-- Revantusk Village, The Hinterlands
 					["cr"] = 4314,	-- Gorkas <Wind Rider Master>
 					["coord"] = { 81.6, 81.8, MAP.THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
-				}),
-				fp(618, {	-- Stormfeather Outpost, The Hinterlands
-					["cr"] = 43570,	-- Brock Rockbeard <Gryphon Master>
-					["coord"] = { 65.6, 44.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -138,31 +67,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					n(11097, {	-- Drakk Stonehand <Master Leatherworking Trainer>
 						["coord"] = { 13.4, 43.4, MAP.THE_HINTERLANDS },
 						["races"] = ALLIANCE_ONLY,
-						-- #if BEFORE 2.1.0
 						["groups"] = EXPERT_ARTISAN_LEATHERWORKING,
-						-- #endif
 					}),
 				}),
 			}),
 			n(QUESTS, {
-				q(26486, {	-- 99 Bottles of Booze on the Beach
-					["qg"] = 43109,	-- Dron Blastbrew
-					["coord"] = { 66.2, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/12 Pupellyverbos Port
-							["providers"] = {
-								{ "i", 3900 },	-- Pupellyverbos Port
-								{ "o", 2068 },	-- Pupellyverbos Port
-							},
-						}),
-					},
-				}),
 				q(9470, {	-- A Gesture of Goodwill
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 41,
 					["groups"] = {
@@ -176,28 +88,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26547, {	-- A Mangy Threat
-					["sourceQuests"] = {
-						26542,	-- Hero's Call: The Hinterlands!
-						-- #if AFTER 6.0.2
-						38931,	-- Hero's Call: The Hinterlands!
-						-- #endif
-					},
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
-					["coord"] = { 9.9, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Mangy Silvermane slain
-							["provider"] = { "n", 2923 },	-- Mangy Silvermane
-						}),
-					},
-				}),
 				q(77, {	-- A Sticky Situation
 					["sourceQuest"] = 650,	-- Ripple Recovery (2/2)
 					["qg"] = 7801,	-- Gilveradin Sunchaser
 					["coord"] = { 26.6, 48.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
@@ -213,33 +107,17 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26523, {	-- All That Skitters (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
-					["coord"] = { 63.7, 59.9, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26310, {	-- All That Skitters (H)
-					["qg"] = 42622,	-- Eliza Darkgrin
-					["coord"] = { 67.6, 66.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(7842, {	-- Another Message to the Wildhammer
 					["sourceQuest"] = 7841,	-- Message to the Wildhammer
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
 					["coord"] = { 79.2, 79.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
-					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 4589, 10 } },	-- Long Elegant Feather
-					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 				}),
 				q(7830, {	-- Avenging the Fallen
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -253,92 +131,18 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 4297,	-- Food for Baby
 					["qg"] = 9660,	-- Agnar Beastamer
 					["coord"] = { 14.1, 43.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
-					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(11474, {	-- Sprite Darter Egg (PET!)
 							["timeline"] = { ADDED_1_11_1 },
-							-- #if BEFORE WRATH
 							["races"] = ALLIANCE_ONLY,
-							-- #endif
-						}),
-					},
-					-- #endif
-				}),
-				q(26641, {	-- Can't Make An Omelette Without... (A)
-					["sourceQuests"] = {
-						27625,	-- In Defense of Quel'Danil
-						27626,	-- The Highvale Documents
-					},
-					["qg"] = 43200,	-- Gilda Cloudcaller
-					["coord"] = { 30.6, 47.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Shadraspawn Egg
-							["providers"] = {
-								{ "i", 58252 },	-- Shadraspawn Egg
-								{ "o", 204102 },	-- Shadraspawn Egg
-							},
-						}),
-						i(59260, {	-- Shadraspawn Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59262, {	-- Cloudcaller Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59263, {	-- Belt of the Scattering Wind
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59264, {	-- Legguards of Caution
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131570, {	-- Cloudcaller Greaves
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(131571, {	-- Cinch of the Scattering Wind
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26382, {	-- Can't Make An Omelette Without... (H)
-					["qg"] = 42896,	-- Apothecary Surlis
-					["coord"] = { 31.8, 58.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Shadraspawn Egg
-							["providers"] = {
-								{ "i", 58252 },	-- Shadraspawn Egg
-								{ "o", 204102 },	-- Shadraspawn Egg
-							},
-						}),
-						i(59298, {	-- Surlis' Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59299, {	-- Apothecary Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59300, {	-- Shadraspawn Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59301, {	-- Legguards of Caution
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131519, {	-- Apothecary Chain Pants
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(131520, {	-- Shadraspawn Waistguard
-							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				q(7844, {	-- Cannibalistic Cousins
 					["qg"] = 14739,	-- Mystic Yayo'jin <Reagent Vendor>
 					["coord"] = { 78.8, 78.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -354,7 +158,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2934,	-- Undamaged Venom Sac
 					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 					["coord"] = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -362,7 +165,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				q(7850, {	-- Dark Vessels
 					["qg"] = 14736,	-- Primal Torntusk
 					["coord"] = { 78.2, 81.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -374,184 +176,24 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["description"] = "Can be found all over Jintha'alor.",
 							["coord"] = { 65.2, 71.9, MAP.THE_HINTERLANDS },
 						}),
-						i(19118, {	-- Nature's Breath
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-					},
-				}),
-				q(26524, {	-- Dark Vessels (A)
-					["sourceQuest"] = 26523,	-- All That Skitters
-					["qg"] = 43156,	-- Fraggar Thundermantle
-					["coord"] = { 63.7, 59.9, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vessel of Tainted Blood
-							["providers"] = {
-								{ "i", 19071 },	-- Vessel of Tainted Blood
-								{ "o", 179922 },	-- Vessel of Tainted Blood
-							},
-						}),
-						i(59252, {	-- Sandals of Tainted Blood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59253, {	-- Sandrene's Invisible Vest
-							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { ADDED_4_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
-						}),
-						i(59254, {	-- Spider Venom Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59255, {	-- Dark Vessel Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131544, {	-- Sandrene's Invisible Hauberk
-							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { ADDED_7_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
-						}),
-						i(131545, {	-- Spider Venom Legguards
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26309, {	-- Dark Vessels (H)
-					["sourceQuest"] = 26310,	-- All That Skitters
-					["qg"] = 42622,	-- Eliza Darkgrin
-					["coord"] = { 67.6, 66.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vessel of Tainted Blood
-							["providers"] = {
-								{ "i", 19071 },	-- Vessel of Tainted Blood
-								{ "o", 179922 },	-- Vessel of Tainted Blood
-							},
-						}),
-						i(59294, {	-- Sandals of Tainted Blood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59295, {	-- Sandrene's Invisible Vest
-							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { ADDED_4_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
-						}),
-						i(59296, {	-- Spider Venom Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59297, {	-- Dark Vessel Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131510, {	-- Sandrene's Invisible Hauberk
-							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { ADDED_7_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
-						}),
-						i(131511, {	-- Spider Venom Legguards
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26384, {	-- Darkcleric Marnal
-					["sourceQuest"] = 26369,	-- Hunt the Keeper
-					["qg"] = 42622,	-- Eliza Darkgrin
-					["coord"] = { 67.6, 66.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(26498, {	-- Death to the Vilebranch (A)
-					["sourceQuest"] = 26497,	-- Vilebranch Scum
-					["qg"] = 43157,	-- Doran Steelwing
-					["coord"] = { 63.8, 59.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vilebranch Berserker slain
-							["provider"] = { "n", 2643 },	-- Vilebranch Berserker
-						}),
-						objective(2, {	-- 0/5 Vilebranch Shadowcaster slain
-							["provider"] = { "n", 2642 },	-- Vilebranch Shadowcaster
-						}),
-					},
-				}),
-				q(26307, {	-- Death to the Vilebranch (H)
-					["sourceQuest"] = 26306,	-- Start Taking Back
-					["qg"] = 42642,	-- Death to the Vilebranch
-					["coord"] = { 67.8, 66.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vilebranch Berserker slain
-							["provider"] = { "n", 2643 },	-- Vilebranch Berserker
-						}),
-						objective(2, {	-- 0/1 Vilebranch Shadowcaster slain
-							["provider"] = { "n", 2642 },	-- Vilebranch Shadowcaster
-						}),
-					},
-				}),
-				q(26496, {	-- Down with the Vilebranch
-					["sourceQuests"] = {
-						26491,	-- Skulk Rock Clean-Up
-						26492,	-- Skulk Rock Supplies
-					},
-					["qg"] = 43108,	-- Kerr Ironsight
-					["coord"] = { 66.3, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(26521, {	-- Faces of Evil (A)
-					["qg"] = 43156,	-- Fraggar Thundermantle
-					["coord"] = { 63.7, 59.9, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(59249, {	-- Vile Branch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59250, {	-- Necklace of Evil Faces
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59251, {	-- Jintha'Alor Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					},
-				}),
-				q(26357, {	-- Faces of Evil (H)
-					["qg"] = 42624,	-- Kotonga
-					["coord"] = { 67.7, 66.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(59288, {	-- Vile Branch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59290, {	-- Jintha'Alor Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59289, {	-- Necklace of Evil Faces
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(19118),	-- Nature's Breath
 					},
 				}),
 				q(9469, {	-- Featherbeard's Endorsement
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
 				q(485, {	-- Find OOX-09/HL!
 					["description"] = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
 					["provider"] = { "i", 8704 },	-- OOX-09/HL Distress Beacon
-					["lvl"] = lvlsquish(43, 43, 10),
+					["lvl"] = 43,
 				}),
 				q(4297, {	-- Food for Baby
 					["sourceQuest"] = 3843,	-- The Newest Member of the Family
 					["qg"] = 9660,	-- Agnar Beastamer
 					["coord"] = { 14.1, 43.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
@@ -565,7 +207,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7815,	-- Snapjaws, Mon!
 					["qg"] = 14740,	-- Katoom the Angler
 					["coord"] = { 80.2, 81.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -581,154 +222,16 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26210, {	-- Gammerita, Mon!
-					["qg"] = 14740,	-- Katoom the Angler
-					["coord"] = { 80.3, 81.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Katoom's Best Lure
-							["provider"] = { "i", 19023 },	-- Katoom's Best Lure
-							["cr"] = 7977,	-- Gammerita
-						}),
-						i(59274, {	-- Katoom's Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59275, {	-- Stomachache Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59276, {	-- Snapjaw Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131495, {	-- Stomachache Cinch
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26483, {	-- Gan'dranda
-					["qg"] = 43108,	-- Kerr Ironsight
-					["coord"] = { 66.3, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Gan'dranda slain
-							["provider"] = { "n", 42609 },	-- Gan'dranda
-						}),
-						i(59242, {	-- Ironsight Crossbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59243, {	-- Theresa's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59244, {	-- Stormfeather Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59245, {	-- Head Kickers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131536, {	-- Stormfeather Treads
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
 				q(1450, {	-- Gryphon Master Talonaxe
 					["sourceQuest"] = 1449,	-- To The Hinterlands
 					["qg"] = 5635,	-- Falstad Wildhammer <High Thane>
 					["coord"] = { 11.8, 46.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
-				}),
-				q(26518, {	-- Heads Up (A)
-					["qg"] = 43157,	-- Doran Steelwing
-					["coord"] = { 63.8, 59.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Umboda's Head
-							["provider"] = { "i", 58236 },	-- Umboda's Head
-							["cr"] = 42724,	-- Umboda Three-Heads
-						}),
-					},
-				}),
-				q(26366, {	-- Heads Up (H)
-					["qg"] = 42642,	-- Primal Torntusk
-					["coord"] = { 67.8, 66.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Umboda's Head
-							["provider"] = { "i", 58236 },	-- Umboda's Head
-							["cr"] = 42724,	-- Umboda Three-Heads
-						}),
-					},
-				}),
-				q(26526, {	-- Hunt the Keeper (A)
-					["sourceQuest"] = 26517,	-- Summit of Fate
-					["qg"] = 43156,	-- Fraggar Thundermantle
-					["coord"] = { 63.8, 59.9, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Tablet of Shadra
-							["provider"] = { "i", 58241 },	-- Tablet of Shadra
-							["cr"] = 42877,	-- Morta'gya the Keeper
-						}),
-						i(59256, {	-- Unkeeper Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59257, {	-- Leggings of Secret Rituals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59258, {	-- Gloves of Strange Words
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59259, {	-- Tablet-Bearer's Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131546, {	-- Gauntlets of Strange Words
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(156945, {	-- Talon Hatchet
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-					},
-				}),
-				q(26369, {	-- Hunt the Keeper (H)
-					["sourceQuest"] = 26363,	-- Summit of Fate
-					["qg"] = 42642,	-- Primal Torntusk
-					["coord"] = { 67.8, 66.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Tablet of Shadra
-							["provider"] = { "i", 58241 },	-- Tablet of Shadra
-							["cr"] = 42877,	-- Morta'gya the Keeper
-						}),
-						i(59284, {	-- Unkeeper Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59285, {	-- Leggings of Secret Rituals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59286, {	-- Gloves of Strange Words
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59287, {	-- Tablet-Bearer's Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131518, {	-- Gauntlets of Strange Words
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(156945, {	-- Talon Hatchet
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-					},
 				}),
 				q(7829, {	-- Hunt the Savages
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -737,96 +240,16 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26224, {	-- Hunt the Savages
-					["sourceQuest"] = 26223,	-- Stalking the Stalkers
-					["qg"] = 14741,	-- Huntsman Markhor
-					["coord"] = { 79.1, 79.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/10 Savage Owlbeast slain
-							["provider"] = { "n", 2929 },	-- Savage Owlbeast
-						}),
-					},
-				}),
-				q(27625, {	-- In Defense of Quel'Danil
-					["sourceQuest"] = 27725,	-- Quel'Danil Lodge
-					["qg"] = 46475,	-- Anchorite Traska
-					["coord"] = { 32.1, 42.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/16 Deathstalker Invader slain
-							["provider"] = { "n", 43541 },	-- Deathstalker Invader
-						}),
-					},
-				}),
 				q(9476, {	-- In Pursuit of Featherbeard
 					["sourceQuest"] = 9469,	-- Featherbeard's Endorsement
 					["provider"] = { "o", 181649 },	-- Featherbeard's Journal
 					["coord"] = { 13.4, 55.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
-				}),
-				q(26516, {	-- It's Ours Now (A)
-					["sourceQuest"] = 26498,	-- Death to the Vilebranch
-					["qg"] = 43157,	-- Doran Steelwing
-					["coord"] = { 63.8, 59.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vilebranch Soul Eater slain
-							["provider"] = { "n", 2647 },	-- Vilebranch Soul Eater
-						}),
-						objective(2, {	-- 0/5 Vilebranch Blood Drinker slain
-							["provider"] = { "n", 2646 },	-- Vilebranch Blood Drinker
-						}),
-						i(59246, {	-- Blood Drinker Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59248, {	-- Steelwing Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59247, {	-- Soul Eater Shoulderguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131542, {	-- Soul Eater Pauldrons
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26308, {	-- It's Ours Now (H)
-					["sourceQuest"] = 26307,	-- Death to the Vilebranch
-					["qg"] = 42642,	-- Primal Torntusk
-					["coord"] = { 67.8, 66.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vilebranch Soul Eater slain
-							["provider"] = { "n", 2647 },	-- Vilebranch Soul Eater
-						}),
-						objective(2, {	-- 0/5 Vilebranch Blood Drinker slain
-							["provider"] = { "n", 2646 },	-- Vilebranch Blood Drinker
-						}),
-						i(59291, {	-- Blood Drinker Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59293, {	-- Torntusk Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59292, {	-- Soul Eater Shoulderguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131509, {	-- Soul Eater Pauldrons
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
 				}),
 				q(7862, {	-- Job Opening: Guard Captain of Revantusk Village
 					["provider"] = { "o", 179913 },	-- Call to Arms!
 					["coord"] = { 79.0, 79.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -842,45 +265,24 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						objective(4, {	-- 0/(20 / 5 (TBC) / 2 (Wrath)) Vilebranch Soul Eater slain
 							["provider"] = { "n", 2647 },	-- Vilebranch Soul Eater
 						}),
-						i(19120, {	-- Rune of the Guard Captain
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19120),	-- Rune of the Guard Captain
 					},
 				}),
 				q(7845, {	-- Kidnapped Elder Torntusk!
 					["qg"] = 14736,	-- Primal Torntusk
 					["coord"] = { 78.2, 81.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 				}),
 				q(7840, {	-- Lard Lost His Lunch
 					["qg"] = 14731,	-- Lard <Innkeeper>
 					["coord"] = { 78.2, 81.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lard's Lunch
 							["provider"] = { "i", 19034 },	-- Lard's Lunch
 							["coord"] = { 84.6, 41.2, MAP.THE_HINTERLANDS },
-							["cr"] = 14748,	-- Vilebranch Kidnapper
-						}),
-						-- #if BEFORE 4.0.3
-						i(19035, {	-- Lard's Special Picnic Basket
-							["description"] = "Contains a random world drop and some consumables.",
-						}),
-						-- #endif
-					},
-				}),
-				q(26212, {	-- Lard Lost His Lunch
-					["qg"] = 14731,	-- Lard
-					["coord"] = { 78.1, 81.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Lard's Lunch
-							["provider"] = { "i", 19034 },	-- Lard's Lunch
 							["cr"] = 14748,	-- Vilebranch Kidnapper
 						}),
 						i(19035, {	-- Lard's Special Picnic Basket
@@ -891,7 +293,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				q(7841, {	-- Message to the Wildhammer
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
 					["coord"] = { 79.2, 79.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -909,49 +310,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26515, {	-- Ongo'longo's Revenge (A)
-					["sourceQuests"] = {
-						26518,	-- Heads Up (A)
-					},
-					["qg"] = 43157,	-- Doran Steelwing
-					["coord"] = { 63.8, 59.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Ongo'longo enraged
-							["provider"] = { "n", 42815 },	-- Ongo'longo
-						}),
-					},
-				}),
-				q(26367, {	-- Ongo'longo's Revenge (H)
-					["sourceQuests"] = {
-						26307,	-- Death to the Vilebranch (H)
-						26366,	-- Heads Up (H)
-					},
-					["qg"] = 42642,	-- Primal Torntusk
-					["coord"] = { 67.8, 66.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Ongo'longo Enraged
-							["provider"] = { "n", 42815 },	-- Ongo'longo
-						}),
-					},
-				}),
-				q(26548, {	-- Out to the Front
-					["sourceQuests"] = {
-						26547,	-- A Mangy Threat
-						26546,	-- Razorbeak Friends
-					},
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
-					["coord"] = { 9.8, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(9471, {	-- Preying on the Predators
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
@@ -963,116 +324,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26490, {	-- Prime Slime (A)
-					["sourceQuests"] = {
-						26483,	-- Gan'dranda
-						26462,	-- The Wicked Revantusk
-					},
-					["qg"] = 43109,	-- Dron Blastbrew
-					["coord"] = { 66.2, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Direglob Sample
-							["provider"] = { "i", 58082 },	-- Direglob Sample
-							["cr"] = 42592,	-- The Direglob
-						}),
-						i(59239, {	-- Wand of Oomph
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59240, {	-- Blastbrew Hat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59241, {	-- Direglob-Slimed Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131537, {	-- Blastbrew Headgear
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(156946, {	-- Goopy Mallet
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-					},
-				}),
-				q(26283, {	-- Prime Slime (H)
-					["sourceQuests"] = {
-						26238,	-- The Savage Dwarves
-						26263,	-- Thornar Thunderclash
-					},
-					["qg"] = 42612,	-- Malcolm Fendelson
-					["coord"] = { 78.1, 81.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Direglob Sample
-							["provider"] = { "i", 58082 },	-- Direglob Sample
-							["cr"] = 42592,	-- The Direglob
-						}),
-						i(59277, {	-- Research Assistant's Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59278, {	-- Slime Hunter Headguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59279, {	-- Skulk Rock Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131501, {	-- Slime Hunter Headgear
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(156946, {	-- Goopy Mallet
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-					},
-				}),
-				q(26225, {	-- Pupellyverbos Port
-					["qg"] = 42464,	-- Grognard
-					["coord"] = { 77.3, 79.9, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/12 Pupellyverbos Port
-							["providers"] = {
-								{ "i", 3900 },	-- Pupellyverbos Port
-								{ "o", 2068 },	-- Pupellyverbos Port
-							},
-						}),
-					},
-				}),
-				q(27725, {	-- Quel'Danil Lodge
-					["sourceQuest"] = 26526,	-- Hunt the Keeper
-					["qg"] = 46476,	-- Tracker Yoro
-					["coord"] = { 63.9, 59.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26546, {	-- Razorbeak Friends
-					["qg"] = 5636,	-- Gryphon Master Talonaxe
-					["coord"] = { 9.9, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/7 Trained Razorbeak fed
-							["provider"] = { "i", 58935 },	-- Gryphon Chow
-							["cr"] = 2657,	-- Trained Razorbeak
-						}),
-						i(59236, {	-- Gryphon-Down Scarf
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59237, {	-- Gryphon Master's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59238, {	-- Talon Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131553, {	-- Gryphon Master's Chain
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-                        i(59235, {	-- Razorbeak Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					},
-				}),
 				q(9475, {	-- Reclaiming the Eggs
 					["sourceQuest"] = 9476,	-- In Pursuit of Featherbeard
 					["providers"] = {
@@ -1080,7 +331,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i",  23695 },	-- Featherbeard's Map
 					},
 					["coord"] = { 37.1, 71.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1103,7 +353,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7845,	-- Kidnapped Elder Torntusk!
 					["qg"] = 14757,	-- Elder Torntusk
 					["coord"] = { 59.6, 77.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -1128,23 +377,17 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7846,	-- Recover the Key!
 					["qg"] = 14757,	-- Elder Torntusk
 					["coord"] = { 59.6, 77.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
-						i(19114, {	-- Highland Bow
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19115, {	-- Flask of Forest Mojo
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19114),	-- Highland Bow
+						i(19115),	-- Flask of Forest Mojo
 					},
 				}),
 				q(1451, {	-- Rhapsody Shindigger
 					["sourceQuest"] = 1450,	-- Gryphon Master Talonaxe
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
@@ -1152,7 +395,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1451,	-- Rhapsody Shindigger
 					["qg"] = 5634,	-- Rhapsody Shindigger
 					["coord"] = { 26.8, 48.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.FERALAS, MAP.TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
@@ -1190,14 +432,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 6287 },	-- Atal'ai Tablet Fragment
 					},
 					["coord"] = { 26.8, 48.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(2742, {	-- Rin'ji is Trapped!
 					["qg"] = 7780,	-- Rin'ji <Witherbark Troll>
 					["coord"] = { 30.6, 47.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1208,7 +448,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 8724 },	-- Rin'ji's Secret
 					},
 					["coord"] = { 86.3, 59.1, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1219,14 +458,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 8685 },	-- Dran's Ripple Delivery
 					},
 					["coord"] = { 26.6, 48.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
 				q(649, {	-- Ripple Recovery (1/2)
 					["qg"] = 6986,	-- Dran Droffers
 					["coord"] = { 59.4, 36.8, MAP.ORGRIMMAR },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1234,7 +471,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 649,	-- Ripple Recovery
 					["qg"] = 6987,	-- Malton Droffers
 					["coord"] = { 59.4, 36.8, MAP.ORGRIMMAR },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -1242,7 +478,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2993,	-- Return to the Hinterlands
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1254,24 +489,17 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["coord"] = { 53.6, 66.8, MAP.THE_HINTERLANDS },
 							["cr"] = 8023,	-- Sharpbeak
 						}),
-						-- #if BEFORE 4.0.3
 						i(9472, {	-- Hexx's Key
 							["coord"] = { 59.6, 77.6, MAP.THE_HINTERLANDS },
 							["cr"] = 7995,	-- Vile Priestess Hexx
 						}),
-						-- #endif
-						i(9651, {	-- Gryphon Rider's Stormhammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9652, {	-- Gryphon Rider's Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9651),	-- Gryphon Rider's Stormhammer
+						i(9652),	-- Gryphon Rider's Leggings
 					},
 				}),
 				q(7849, {	-- Separation Anxiety
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -1289,78 +517,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 62.2, 75.5, MAP.THE_HINTERLANDS },
 						}),
-						i(19117, {	-- Laquered Wooden Plate Legplates
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19116, {	-- Greenleaf Handwraps
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-					},
-				}),
-				q(26532, {	-- Shadra the Venom Queen (A)
-					["sourceQuest"] = 26531,	-- Summoning Shadra
-					["qg"] = 43298,	-- Wildhammer Lookout
-					["coord"] = { 34.3, 67.7, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Shadra slain
-							["provider"] = { "n", 43007 },	-- Shadra
-						}),
-						i(59269, {	-- Veil of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59270, {	-- Headguard of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59271, {	-- Headcover of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59272, {	-- Helm of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131549, {	-- Aerie Headgear
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(131550, {	-- Aerie War Cap
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26419, {	-- Shadra the Venom Queen (H)
-					["sourceQuest"] = 26558,	-- Summoning Shadra
-					["qg"] = 43299,	-- Deathstalker Lookout
-					["coord"] = { 35.6, 68.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Shadra slain
-							["provider"] = { "n", 43007 },	-- Shadra
-						}),
-						i(59306, {	-- Darkcleric's Veil
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59307, {	-- Virulent Headguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59308, {	-- Venomous Headcover
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59309, {	-- Poisoner's Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131526, {	-- Virulent Headpiece
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(131527, {	-- Venomous Headgear
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						i(19117),	-- Laquered Wooden Plate Legplates
+						i(19116),	-- Greenleaf Handwraps
 					},
 				}),
 				q(2877, {	-- Skulk Rock Clean-up
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["coord"] = { 14.8, 44.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1372,107 +535,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26491, {	-- Skulk Rock Clean-Up (A)
-					["sourceQuests"] = {
-						26483,	-- Gan'dranda
-						26462,	-- The Wicked Revantusk
-					},
-					["qg"] = 43108,	-- Kerr Ironsight
-					["coord"] = { 66.3, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/10 Jade Ooze slain
-							["provider"] = { "n", 2656 },	-- Jade Ooze
-						}),
-					},
-				}),
-				q(26267, {	-- Skulk Rock Clean-Up (H)
-					["sourceQuests"] = {
-						26238,	-- The Savage Dwarves
-						26263,	-- Thornar Thunderclash
-					},
-					["qg"] = 42613,	-- Elder Torntusk
-					["coord"] = { 78.1, 81.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/10 Jade Ooze slain
-							["provider"] = { "n", 2656 },	-- Jade Ooze
-						}),
-					},
-				}),
-				q(26492, {	-- Skulk Rock Supplies (A)
-					["sourceQuests"] = {
-						26483,	-- Gan'dranda
-						26462,	-- The Wicked Revantusk
-					},
-					["qg"] = 43108,	-- Kerr Ironsight
-					["coord"] = { 66.3, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Ooze-Coated Supply Crate
-							["providers"] = {
-								{ "i", 57989 },	-- Ooze-Coated Supply Crate
-								{ "o", 203989 },	-- Ooze-coated Supply Crate
-							},
-						}),
-					},
-				}),
-				q(26268, {	-- Skulk Rock Supplies (H)
-					["sourceQuests"] = {
-						26238,	-- The Savage Dwarves
-						26263,	-- Thornar Thunderclash
-					},
-					["qg"] = 42613,	-- Elder Torntusk
-					["coord"] = { 78.1, 81.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Ooze-Coated Supply Crate
-							["providers"] = {
-								{ "i", 57989 },	-- Ooze-Coated Supply Crate
-								{ "o", 203989 },	-- Ooze-coated Supply Crate
-							},
-						}),
-					},
-				}),
-				q(26485, {	-- Snapjaws, Lad!
-					["qg"] = 43109,	-- Dron Blastbrew
-					["coord"] = { 66.2, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Snapjaw Gizzard
-							["provider"] = { "i", 58867 },	-- Snapjaw Gizzard
-							["cr"] = 2505,	-- Saltwater Snapjaw
-						}),
-						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
-					},
-				}),
 				q(7815, {	-- Snapjaws, Mon!
 					["qg"] = 14740,	-- Katoom the Angler
 					["coord"] = { 80.2, 81.4, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
-					-- #if BEFORE 4.0.3
 					["groups"] = {
 						objective(1, {	-- 0/(15 / 10 (Wrath)) Saltwater Snapjaw slain
-							["provider"] = { "n", 2505 },	-- Saltwater Snapjaw
-						}),
-						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
-					},
-					-- #endif
-				}),
-				q(26211, {	-- Snapjaws, Mon!
-					["qg"] = 14740,	-- Katoom the Angler
-					["coord"] = { 80.3, 81.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/10 Saltwater Snapjaw slain
 							["provider"] = { "n", 2505 },	-- Saltwater Snapjaw
 						}),
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
@@ -1481,7 +550,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				q(7828, {	-- Stalking the Stalkers
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -1493,92 +561,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26223, {	-- Stalking the Stalkers
-					["qg"] = 14741,	-- Huntsman Markhor
-					["coord"] = { 79.1, 79.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Silvermane Stalker slain
-							["provider"] = { "n", 2926 },	-- Silvermane Stalker
-						}),
-					},
-				}),
-				q(26306, {	-- Start Taking Back
-					["sourceQuest"] = 26432,	-- The Fall of Jintha'Alor
-					["qg"] = 42642,	-- Primal Torntusk
-					["coord"] = { 67.8, 66.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vilebranch Headhunter slain
-							["provider"] = { "n", 2641 },	-- Vilebranch Headhunter
-						}),
-						objective(2, {	-- 0/5 Vilebranch Witch Doctor slain
-							["provider"] = { "n", 2640 },	-- Vilebranch Witch Doctor
-						}),
-					},
-				}),
-				q(26643, {	-- Starvation Diet (A)
-					["sourceQuest"] = 26641,	-- Can't Make an Omelette Without...
-					["qg"] = 43200,	-- Gilda Cloudcaller
-					["coord"] = { 30.6, 47.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/6 Cocooned Victim slain
-							["provider"] = { "n", 42907 },	-- Cocooned Victim
-						}),
-					},
-				}),
-				q(26387, {	-- Starvation Diet (H)
-					["sourceQuest"] = 26382,	-- Can't Make an Omelette Without...
-					["qg"] = 42896,	-- Apothecary Surlis
-					["coord"] = { 31.8, 58.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/6 Cocooned Victim slain
-							["provider"] = { "n", 42907 },	-- Cocooned Victim
-						}),
-					},
-				}),
-				q(26240, {	-- Stomp To My Beat
-					["qg"] = 14739,	-- Mystic Yayo'jin
-					["coord"] = { 78.8, 78.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/6 Revantusk Warriors bolstered
-							["provider"] = { "n", 42597 },	-- Revantusk Troll Drums Buff Credit Bunny
-						}),
-					},
-				}),
-				q(26517, {	-- Summit of Fate (A)
-					["sourceQuests"] = {
-						26498,	-- Death to the Vilebranch
-						26515,	-- Ongo'longo's Revenge
-					},
-					["qg"] = 43156,	-- Fraggar Thundermantle
-					["coord"] = { 63.7, 59.9, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26363, {	-- Summit of Fate (H)
-					["sourceQuests"] = {
-						26308,	-- It's Ours Now
-						26367,	-- Ongo'longo's Revenge
-					},
-					["qg"] = 42642,	-- Primal Torntusk
-					["coord"] = { 67.8, 66.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(2937, {	-- Summoning Shadra
 					["sourceQuest"] = 2936,	-- The Spider God
 					["qg"] = 3188,	-- Master Gadrin
 					["coord"] = { 56.0, 74.6, MAP.DUROTAR },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -1593,20 +579,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26531, {	-- Summoning Shadra (A)
-					["sourceQuest"] = 26530,	-- The Shell of Shadra
-					["qg"] = 43200,	-- Gilda Cloudcaller
-					["coord"] = { 30.6, 47.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26558, {	-- Summoning Shadra (H)
-					["sourceQuest"] = 26418,	-- The Shell of Shadra
-					["qg"] = 42898,	-- Darkcleric Marnal
-					["coord"] = { 31.8, 58.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(2990, {	-- Thadius Grimshade
 					["sourceQuest"] = 2989,	-- The Altar of Zul
 					["providers"] = {
@@ -1614,7 +586,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 9468 },	-- Sharpbeak's Feather
 					},
 					["coord"] = { 9.8, 44.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -1622,88 +593,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2988,	-- Witherbark Cages
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
-				}),
-				q(26528, {	-- The Eye of Shadra (A)
-					["sourceQuests"] = {
-						27625,	-- In Defense of Quel'Danil
-						27626,	-- The Highvale Documents
-					},
-					["qg"] = 43200,	-- Gilda Cloudcaller
-					["coord"] = { 30.6, 47.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Eye of Shadra
-							["providers"] = {
-								{ "i", 58282 },	-- Eye of Shadra
-								{ "o", 204133 },	-- Cache of Shadra
-							},
-						}),
-					},
-				}),
-				q(26381, {	-- The Eye of Shadra (H)
-					["qg"] = 42898,	-- Darkcleric Marnal
-					["coord"] = { 31.8, 58.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Eye of Shadra
-							["providers"] = {
-								{ "i", 58282 },	-- Eye of Shadra
-								{ "o", 204133 },	-- Cache of Shadra
-							},
-						}),
-					},
-				}),
-				q(26432, {	-- The Fall of Jintha'Alor
-					["sourceQuests"] = {
-						26267,	-- Skulk Rock Clean-Up
-						26268,	-- Skulk Rock Supplies
-					},
-					["qg"] = 42613,	-- Elder Torntusk
-					["coord"] = { 78.1, 81.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(26529, {	-- The Fang of Shadra (A)
-					["sourceQuest"] = 26528,	-- The Eye of Shadra
-					["qg"] = 43200,	-- Gilda Cloudcaller
-					["coord"] = { 30.6, 47.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Fang of Shadra
-							["providers"] = {
-								{ "i", 58281 },	-- Fang of Shadra
-								{ "o", 204120 },	-- Cache of Shadra
-							},
-						}),
-					},
-				}),
-				q(26406, {	-- The Fang of Shadra (H)
-					["sourceQuest"] = 26381,	-- The Eye of Shadra
-					["qg"] = 42898,	-- Darkcleric Marnal
-					["coord"] = { 31.8, 58.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Fang of Shadra
-							["providers"] = {
-								{ "i", 58281 },	-- Fang of Shadra
-								{ "o", 204120 },	-- Cache of Shadra
-							},
-						}),
-					},
 				}),
 				q(7843, {	-- The Final Message to the Wildhammer
 					["sourceQuest"] = 7842,	-- Another Message to the Wildhammer
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
 					["coord"] = { 79.2, 79.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -1711,139 +607,12 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 							["provider"] = { "i", 19036 },	-- Final Message to the Wildhammer
 							["coord"] = { 14.0, 48.0, MAP.THE_HINTERLANDS },
 						}),
-						i(19119, {	-- Owlbeast Hide Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-					},
-				}),
-				q(27626, {	-- The Highvale Documents
-					["sourceQuest"] = 27725,	-- Quel'Danil Lodge
-					["qg"] = 46475,	-- Anchorite Traska
-					["coord"] = { 32.1, 42.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26238, {	-- The Savage Dwarves
-					["sourceQuest"] = 28574,	-- Warchief's Command: The Hinterlands!
-					["qg"] = 42613,	-- Elder Torntusk
-					["coord"] = { 78.1, 81.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/10 Wildhammer slain
-							["providers"] = {
-								{ "n", 42518},	-- Wildhammer Warrior
-								{ "n", 42554},	-- Wildhammer Shaman
-							},
-						}),
-					},
-				}),
-				q(26530, {	-- The Shell of Shadra (A)
-					["sourceQuest"] = 26529,	-- The Fang of Shadra
-					["qg"] = 43200,	-- Gilda Cloudcaller
-					["coord"] = { 30.6, 47.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Shell of Shadra
-							["provider"] = { "i", 58779 },	-- Shell of Shadra
-							["cr"] = 42919,	-- Qiaga the Keeper
-						}),
-						i(59265, {	-- Gown of the Last Priestess
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59266, {	-- Gwenyth's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59267, {	-- Gloves of Fanatical Zealotry
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59268, {	-- Greathammer of the Hinterlands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131547, {	-- Gwenyth's Wristguards
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(131548, {	-- Grips of Fanatical Zealotry
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26418, {	-- The Shell of Shadra (H)
-					["sourceQuest"] = 26406,	-- The Fang of Shadra
-					["qg"] = 42898,	-- Darkcleric Marnal
-					["coord"] = { 31.8, 58.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Shell of Shadra
-							["provider"] = { "i", 58779 },	-- Shell of Shadra
-							["cr"] = 42919,	-- Qiaga the Keeper
-						}),
-						i(59302, {	-- Gown of the Last Priestess
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59303, {	-- Gwenyth's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59304, {	-- Gloves of Fanatical Zealotry
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59305, {	-- Greataxe of the Hinterlands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131524, {	-- Gwenyth's Wristguards
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(131525, {	-- Grips of Fanatical Zealotry
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				q(26462, {	-- The Wicked Revantusk
-					["qg"] = 43108,	-- Kerr Ironsight
-					["coord"] = { 66.3, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/10 Revantusk slain
-							["providers"] = {
-								{ "n", 42536},	-- Revantusk Stalker
-								{ "n", 42555},	-- Revantusk Hexxer
-							},
-						}),
-					},
-				}),
-				q(26263, {	-- Thornar Thunderclash
-					["qg"] = 42613,	-- Elder Torntusk
-					["coord"] = { 78.1, 81.3, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/1 Thornar Thunderclash slain
-							["provider"] = { "n", 42610 },	-- Thornar Thunderclash
-						}),
-						i(59280, {	-- Voice Stealer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59281, {	-- Elder's Wristwraps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59282, {	-- Encroaching Treads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59283, {	-- Revantusk Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131498, {	-- Encroaching Boots
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						i(19119),	-- Owlbeast Hide Gloves
 					},
 				}),
 				q(2880, {	-- Troll Necklace Bounty
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["coord"] = { 14.8, 44.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -1853,13 +622,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["coord"] = { 14.8, 44.6, MAP.THE_HINTERLANDS },
 					["maxReputation"] = {
-						-- #if CLASSICERA
-						471, EXALTED,	-- Wildhammer Clan, Exalted.
-						-- #elseif BEFORE TBC
 						471, REVERED,	-- Wildhammer Clan, Revered.
-						-- #endif
 					},
-					["timeline"] = { REMOVED_2_0_3 },
 					["cost"] = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1869,7 +633,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2933,	-- Venom Bottles
 					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 					["coord"] = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1886,7 +649,6 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 9321 },	-- Venom Bottle
 					},
 					["coord"] = { 23.6, 58.7, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
@@ -1898,51 +660,18 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ "i", 9436 },	-- Faranell's Parcel
 					},
 					["coord"] = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(9649, {	-- Royal Highmark Vestments
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9650, {	-- Honorguard Chestpiece
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10686, {	-- Aegis of Battle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-					},
-				}),
-				q(26525, {	-- Venomous Secrets (A)
-					["sourceQuest"] = 26517,	-- Summit of Fate
-					["qg"] = 43156,	-- Fraggar Thundermantle
-					["coord"] = { 63.7, 59.9, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/8 Spawn of Shadra slain
-							["provider"] = { "n", 42879 },	-- Spawn of Shadra
-						}),
-					},
-				}),
-				q(26368, {	-- Venomous Secrets (H)
-					["sourceQuest"] = 26309,	-- Dark Vessels
-					["qg"] = 42622,	-- Eliza Darkgrin
-					["coord"] = { 67.6, 66.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/6 Shadra-Spawn Venom Sample
-							["provider"] = { "i", 58239 },	-- Shadra-Spawn Venom Sample
-							["cr"] = 42879,	-- Spawn of Shadra
-						}),
+						i(9649),	-- Royal Highmark Vestments
+						i(9650),	-- Honorguard Chestpiece
+						i(10686),	-- Aegis of Battle
 					},
 				}),
 				q(7839, {	-- Vilebranch Hooligans
 					["qg"] = 14737,	-- Smith Slagtree <Blacksmithing Supplies>
 					["coord"] = { 77.6, 80.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
@@ -1958,25 +687,9 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26497, {	-- Vilebranch Scum
-					["sourceQuest"] = 26496,	-- Down with the Vilebranch
-					["qg"] = 43157,	-- Doran Steelwing
-					["coord"] = { 63.8, 59.8, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/5 Vilebranch Headhunter slain
-							["provider"] = { "n", 2641 },	-- Vilebranch Headhunter
-						}),
-						objective(2, {	-- 0/5 Vilebranch Witch Doctor slain
-							["provider"] = { "n", 2640 },	-- Vilebranch Witch Doctor
-						}),
-					},
-				}),
 				q(7861, {	-- Wanted: Vile Priestess Hexx and Her Minions
 					["provider"] = { "o", 179913 },	-- Call to Arms!
 					["coord"] = { 79.0, 79.0, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
@@ -1987,18 +700,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/(20 / 10 (TBC) / 5 (Wrath)) Vilebranch Aman'zasi Guard slain
 							["provider"] = { "n", 2648 },	-- Vilebranch Aman'zasi Guard
 						}),
-						i(19159, {	-- Woven Ivy Necklace
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19121, {	-- Deep Woodlands Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19159),	-- Woven Ivy Necklace
+						i(19121),	-- Deep Woodlands Cloak
 					},
 				}),
 				q(2988, {	-- Witherbark Cages
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -2020,27 +728,16 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(8215, {	-- Grimungous
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 71.6, 62.6, MAP.THE_HINTERLANDS },
-						{ 73.8, 55.8, MAP.THE_HINTERLANDS },
-						{ 78.6, 50.8, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 63.8, 48.4, MAP.THE_HINTERLANDS },
 						{ 68.2, 50.2, MAP.THE_HINTERLANDS },
 						{ 62.8, 55.0, MAP.THE_HINTERLANDS },
 						{ 70.2, 59.8, MAP.THE_HINTERLANDS },
 						{ 74.6, 50.0, MAP.THE_HINTERLANDS },
 						{ 75.0, 56.0, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 				}),
 				n(8213, {	-- Ironback
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 80.2, 58.2, MAP.THE_HINTERLANDS },
-						{ 81.0, 55.4, MAP.THE_HINTERLANDS },
-						{ 79.4, 56.6, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 82.2, 44.8, MAP.THE_HINTERLANDS },
 						{ 81.6, 48.8, MAP.THE_HINTERLANDS },
 						{ 79.8, 61.2, MAP.THE_HINTERLANDS },
@@ -2049,180 +746,77 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ 76.8, 81.0, MAP.THE_HINTERLANDS },
 						{ 75.0, 88.8, MAP.THE_HINTERLANDS },
 						{ 73.4, 91.4, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 				}),
 				n(8214, {	-- Jalinde Summerdrake
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 34.6, 55.2, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 27.8, 44.0, MAP.THE_HINTERLANDS },
 						{ 28.6, 46.6, MAP.THE_HINTERLANDS },
 						{ 31.6, 49.6, MAP.THE_HINTERLANDS },
 						{ 31.2, 43.6, MAP.THE_HINTERLANDS },
 						{ 32.8, 44.6, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 					["races"] = HORDE_ONLY,
 				}),
 				n(8217, {	-- Mith'rethis the Enchanter
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 64.8, 81.6, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 58.8, 71.2, MAP.THE_HINTERLANDS },
 						{ 59.8, 77.4, MAP.THE_HINTERLANDS },
 						{ 66.8, 80.2, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 					["groups"] = {
-						i(17050, {	-- Chan's Imperial Robes
-							["timeline"] = { REMOVED_4_0_3, ADDED_9_0_1 },
-						}),
+						i(17050),	-- Chan's Imperial Robes
 					},
 				}),
 				n(8211, {	-- Old Cliff Jumper
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 13.6, 53.8, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 17.0, 54.6, MAP.THE_HINTERLANDS },
 						{ 19.0, 50.6, MAP.THE_HINTERLANDS },
 						{ 30.6, 49.4, MAP.THE_HINTERLANDS },
 						{ 22.6, 52.4, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
-				}),
-				n(107617, {	-- Ol' Muddle
-					["description"] = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
-					["coords"] = {
-						{ 44.4, 64.6, MAP.THE_HINTERLANDS },
-						{ 44.0, 59.6, MAP.THE_HINTERLANDS },
-						{ 44.6, 53.6, MAP.THE_HINTERLANDS },
-						{ 49.8, 57.2, MAP.THE_HINTERLANDS },
-						{ 52.4, 51.0, MAP.THE_HINTERLANDS },
-						{ 54.8, 46.2, MAP.THE_HINTERLANDS },
-						{ 61.0, 50.4, MAP.THE_HINTERLANDS },
-						{ 64.6, 42.0, MAP.THE_HINTERLANDS },
-						{ 70.2, 51.2, MAP.THE_HINTERLANDS },
-						{ 72.8, 50.0, MAP.THE_HINTERLANDS },
-						{ 76.8, 49.8, MAP.THE_HINTERLANDS },
-						{ 67.8, 57.4, MAP.THE_HINTERLANDS },
-						{ 64.0, 54.6, MAP.THE_HINTERLANDS },
-					},
-					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(8210, {	-- Razortalon
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 66.2, 53.6, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 27.0, 54.8, MAP.THE_HINTERLANDS },
 						{ 27.0, 66.0, MAP.THE_HINTERLANDS },
 						{ 37.8, 44.2, MAP.THE_HINTERLANDS },
 						{ 36.8, 51.2, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 				}),
 				n(8216, {	-- Retherokk the Berserker
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 47.6, 66.4, MAP.THE_HINTERLANDS },
-						{ 48.6, 68.4, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 44.6, 67.4, MAP.THE_HINTERLANDS },
 						{ 46.8, 70.2, MAP.THE_HINTERLANDS },
 						{ 46.4, 64.6, MAP.THE_HINTERLANDS },
 						{ 51.2, 65.6, MAP.THE_HINTERLANDS },
 						{ 50.4, 60.4, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 				}),
 				n(8212, {	-- The Reak
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 57.5, 42.6, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 46.8, 40.4, MAP.THE_HINTERLANDS },
 						{ 49.4, 53.0, MAP.THE_HINTERLANDS },
 						{ 58.0, 41.6, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 				}),
 				n(8218, {	-- Witherheart the Stalker
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 39.8, 66.6, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 34.2, 68.4, MAP.THE_HINTERLANDS },
 						{ 31.4, 73.0, MAP.THE_HINTERLANDS },
 						{ 34.0, 75.6, MAP.THE_HINTERLANDS },
 						{ 35.0, 74.0, MAP.THE_HINTERLANDS },
 						{ 33.8, 73.2, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, n(221828, {	-- Vengeful Spirit
-					["description"] = "Use your Sense Undead after 9PM Server near the Quel'Danil Lodge to spawn this rare.",
-					["timeline"] = { ADDED_1_15_1 },
-					["classes"] = { PALADIN },
-					["groups"] = {
-						i(220165, {	-- Rune of Wrath
-							["timeline"] = { ADDED_1_15_1 },
-							["classes"] = { PALADIN },
-							["groups"] = {
-								recipe(429249),	-- Engrave Helm - Wrath
-							},
-						}),
-					},
-				})),
-				-- #endif
 				n(8219, {	-- Zul'arek Hatefowler
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 24.8, 65.6, MAP.THE_HINTERLANDS },
-						-- #else
 						{ 24.2, 57.4, MAP.THE_HINTERLANDS },
 						{ 32.8, 57.6, MAP.THE_HINTERLANDS },
-						-- #endif
 					},
 				}),
 			}),
 			n(VENDORS, {
-				n(12040, {	-- Brannik Ironbelly <Armorsmith>
-					["coord"] = { 66.6, 44.2, MAP.THE_HINTERLANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select","itemID",
-						2424,	-- Brigandine Belt
-						2426,	-- Brigandine Boots
-						2427,	-- Brigandine Bracers
-						2428,	-- Brigandine Gloves
-						3894,	-- Brigandine Helm
-						2425,	-- Brigandine Leggings
-						2423,	-- Brigandine Vest
-						2451,	-- Crested Heater Shield
-						17190,	-- Ornate Buckler
-						8094,	-- Platemail Armor
-						8088,	-- Platemail Belt
-						8089,	-- Platemail Boots
-						8090,	-- Platemail Bracers
-						8091,	-- Platemail Gloves
-						8092,	-- Platemail Helm
-						8093,	-- Platemail Leggings
-					}},
-					["groups"] = {
-						i(12257, {	-- Heavy Notched Belt
-							["isLimited"] = true,
-						}),
-						i(12258, {	-- Serpent Clasp Belt
-							["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(12958, {	-- Gigget Zipcoil <Trade Supplies>
 					["coord"] = { 34.4, 38.6, MAP.THE_HINTERLANDS },
 					["groups"] = {
@@ -2232,13 +826,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				n(8161, {	-- Harggan <Blacksmithing Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 13.6, 44.8, MAP.THE_HINTERLANDS },
-						-- #else
-						{ 13.4, 44.1, MAP.THE_HINTERLANDS },
-						-- #endif
-					},
+					["coord"] = { 13.4, 44.1, MAP.THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)
@@ -2279,109 +867,32 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER 3.0.8
-			n(SPECIAL, {
-				i(9240, {	-- Mallet of Zul'Farrak
-					["description"] = "The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
-					["coord"] = { 59.0, 79.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 9241, 1 } },	-- Sacred Mallet
-				}),
-				i(9241, {	-- Sacred Mallet
-					["description"] = "Bring this to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",
-					["coord"] = { 49.2, 68.6, MAP.THE_HINTERLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 7996,	-- Qiaga the Keeper
-				}),
-			}),
-			-- #endif
 			n(ZONE_DROPS, {
 				i(16214, {	-- Formula: Enchant Bracer - Greater Intellect (RECIPE!)
-					["timeline"] = { REMOVED_2_3_0 },	-- Now taught by trainer, recipe removed from the game.
 					["cr"] = 2642,	-- Vilebranch Shadowcaster
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, i(220912, {	-- Geode Hammer
-					["provider"] = { "i", 220914 },	-- Broken Geode Hammer
-					["description"] = "Wield this hammer until it breaks, revealing the rune inside!",
-					["timeline"] = { ADDED_1_15_2 },
-					["classes"] = { WARRIOR },
-					["crs"] = {
-						2649,	-- Witherbark Scalper
-						2653,	-- Witherbark Sadist
-						2650,	-- Witherbark Zealot
-						2651,	-- Witherbark Hideskinner
-						2652,	-- Witherbark Venomblood
-						2654,	-- Witherbark Caller
-					},
-					["groups"] = {
-						i(220913, {	-- Rune of Demolition
-							["classes"] = { WARRIOR },
-							["groups"] = {
-								recipe(427084),	-- Engrave Bracers - Wrecking Crew
-							},
-						}),
-					},
-				})),
-				-- #endif
-				-- #if BEFORE CATA
 				i(4589),	-- Long Elegant Feather
-				-- #endif
 				i(8704, {	-- OOX-09/HL Distress Beacon
 					["description"] = "This item can drop off of any hostile creature in the zone. Rare and Elite creatures have higher drop chance.",
 				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 					["cr"] = 2644,	-- Vilebranch Hideskinner
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
 						{ 68.2, 75.0, MAP.THE_HINTERLANDS },
 						{ 63.8, 73.6, MAP.THE_HINTERLANDS },
 						{ 61.2, 68.4, MAP.THE_HINTERLANDS },
 					},
 				}),
-				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
-					["timeline"] = { REMOVED_4_0_1 },
 				}),
-				-- #endif
 				i(9259, {	-- Troll Tribal Necklace
-					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any troll in The Hinterlands.",
-					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, i(221261, {	-- Wildwhisper Draught
-					["description"] = "Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",
-					["timeline"] = { ADDED_1_15_2 },
-				})),
-				-- #endif
 			}),
 		},
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
-		m(MAP.EASTERN_KINGDOMS, {
-			m(MAP.THE_HINTERLANDS, {
-				n(QUESTS, {
-					q(26522),	-- Triggering after completing 'Faces of Evil' (q:26357 [H] & 26521 [A])
-				}),
-			}),
-		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
-		m(MAP.EASTERN_KINGDOMS, {
-			m(MAP.THE_HINTERLANDS, {
-				n(QUESTS, {
-					q(38931),	-- Hero's Call: The Hinterlands! - completed with q:26542
-				}),
-			}),
-		}),
-	})),
-});
