@@ -341,7 +341,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 			ach(1293, {	-- Blue Brewfest Stein [Removed]
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
-				["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 			}),
 			ach(2796, {	-- Brew of the Month
 				["providers"] = {
@@ -2134,37 +2134,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(12193, {	-- Say, There Wouldn't Happen to be a Souvenir This Year, Would There? (A)
 					["qg"] = 24468,	-- Pol Amberstill
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.6, 38.6, DUN_MOROGH },
-						-- #else
-						{ 46.4, 40.3, DUN_MOROGH },
-						-- #endif
-					},
-					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost.
+					["coords"] = { 46.4, 40.3, DUN_MOROGH },
+					["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
-							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 						}),
 					},
 				}),
 				q(12194, {	-- Say, There Wouldn't Happen to be a Souvenir This Year, Would There? (H)
-					["qg"] = 24497,	-- Ram Master Ray
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 42.6, 17.6, DUROTAR },
-						-- #else
-						{ 46.3, 14.8, DUROTAR },
-						-- #endif
-					},
-					["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+					["qg"] = 24510,	-- Driz Tumblequick <Ram Racing Apprentice>
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost.
+					["coords"] = { 46.3, 14.8, DUROTAR },
+					["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 					["provider"] = { "i", 33955 },	-- Brewfest Stein Voucher
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
-							["timeline"] = { ADDED_2_2_2, REMOVED_3_0_2 },
+							["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 						}),
 					},
 				}),
@@ -2343,7 +2333,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		}, {
 			fillstein(i(33016, {	-- Blue Brewfest Stein
 				["lore"] = "This stein was the reward from the 2008 Brewfest.",
-				["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 				["OnInit"] = OnInitForStein(30002),
 				["groups"] = {
 					i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
