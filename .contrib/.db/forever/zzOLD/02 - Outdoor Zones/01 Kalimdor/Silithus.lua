@@ -3,150 +3,62 @@
 ---------------------------------------------------
 
 local CENARION_COMBAT_BADGE = i(20802, {	-- Cenarion Combat Badge
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local CENARION_LOGISTICS_BADGE = i(20800, {	-- Cenarion Logistics Badge
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local CENARION_TACTICAL_BADGE = i(20801, {	-- Cenarion Tactical Badge
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local FOLLOWUP_LOGISTICS_ASSIGNMENT_A = i(20805, {	-- Followup Logistics Assignment (A)
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local FOLLOWUP_LOGISTICS_ASSIGNMENT_H = i(21386, {	-- Followup Logistics Assignment (H)
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local FOLLOWUP_TACTICAL_ASSIGNMENT = i(21133, {	-- Followup Tactical Assignment
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local LOGISTICS_ASSIGNMENT_A = i(21132, {	-- Logistics Assignment (A)
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local LOGISTICS_ASSIGNMENT_H = i(21266, {	-- Logistics Assignment (H)
-	["timeline"] = { REMOVED_4_0_3 },
 });
 local TACTICAL_ASSIGNMENT = i(20809, {	-- Tactical Assignment
-	["timeline"] = { REMOVED_4_0_3 },
 });
 
 root(ROOTS.Zones, m(MAP.KALIMDOR, {
 	m(MAP.SILITHUS, {
 		["lore"] = "Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",
 		["icon"] = 236829,
-		["maps"] = { 82 },	-- Twilight's Run
-		-- #if AFTER 7.3.5
-		["crs"] = { 128607 },	-- Zidormi
-		-- #endif
 		["groups"] = {
-			-- #if AFTER 5.2.0.16634
-			m(AHNQIRAJ_THE_FALLEN_KINGDOM, {
-				["description"] = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
-				["icon"] = 236829,
-				["groups"] = {
-					explorationHeader({
-						exploration(5695),	-- Ahn'Qiraj: The Fallen Kingdom
-					}),
-					n(RARES, {
-						n(50747, {	-- Tix
-							["coord"] = { 60.8, 6.6, AHNQIRAJ_THE_FALLEN_KINGDOM },
-							["timeline"] = { ADDED_5_2_0 },
-						}),
-					}),
-					n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-						o(421152, {	-- Carved Eye
-							["coord"] = { 43.0, 9.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
-							["timeline"] = { ADDED_10_2_5 },
-							["groups"] = {
-								i(212995),	-- Grimoire of the Whispering Observer (CI!)
-							},
-						}),
-					})),
-				},
-			}),
-			-- #endif
 			n(ACHIEVEMENTS, {
 				ach(856),	-- Explore Silithus
-				ach(4934, {	-- Silithus Quests
-					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER 7.3.5
-					["_doautomation"] = true,
-					-- #else
-					["sourceQuests"] = {
-						8321,	-- Vyral the Vile
-						8306,	-- Into The Maw of Madness
-						8314,	-- Unraveling the Mystery
-						8287,	-- A Terrible Purpose
-						8323,	-- True Believers
-					},
-					-- #endif
-				}),
 			}),
 			explorationHeader({
-				-- #if AFTER CATA
-				exploration(3428),	-- Ahn'Qiraj
-				-- #endif
 				exploration(3427),	-- Bronzebeard Encampment
 				exploration(3425),	-- Cenarion Hold
 				exploration(2742),	-- Hive'Ashi
 				exploration(2744),	-- Hive'Regal
 				exploration(2743),	-- Hive'Zora
-				-- #if AFTER CATA
-				exploration(3447),	-- Ortell's Hideout
-				exploration(3454),	-- Ruins of Ahn'Qiraj
-				-- #endif
 				exploration(2738),	-- Southwind Village
 				exploration(3426),	-- Staghelm Point
 				exploration(2740),	-- The Crystal Vale
 				exploration(2741),	-- The Scarab Dais
 				exploration(2737),	-- The Scarab Wall
-				-- #if BEFORE CATA
 				exploration(3097),	-- The Swarming Pillar
-				-- #endif
 				exploration(2739),	-- Twilight Base Camp
-				-- #if AFTER CATA
-				exploration(3099),	-- Twilight Outpost
-				exploration(3098),	-- Twilight Post
-				exploration(3446),	-- Twilight's Run
-				exploration(3077),	-- Valor's Rest
-				-- #endif
 				exploration(3077),	-- Valor's Rest
 			}),
 			n(FLIGHT_PATHS, {
 				fp(73, {	-- Cenarion Hold, Silithus (A)
 					["cr"] = 15177,	-- Cloud Skydancer <Hippogryph Master>
-					-- #if AFTER CATA
-					["description"] = "Speak to Zidormi to visit the past and access this point.",
-					-- #endif
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 54.4, 32.7, MAP.SILITHUS },
-						-- #else
-						{ 50.6, 34.4, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 50.6, 34.4, MAP.SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(72, {	-- Cenarion Hold, Silithus (H)
 					["cr"] = 15178,	-- Runk Windtamer <Wind Rider Master>
-					-- #if AFTER CATA
-					["description"] = "Speak to Zidormi to visit the past and access this point.",
-					-- #endif
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 52.8, 34.6, MAP.SILITHUS },
-						-- #else
-						{ 48.8, 36.6, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 48.8, 36.6, MAP.SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if BEFORE 4.3.0
 			n(PROFESSIONS, {
 				prof(SKINNING, {
 					i(20501, {	-- Heavy Silithid Carapace
-						["timeline"] = { REMOVED_4_3_0 },
 						["crs"] = {
 							11723,	-- Hive'Ashi Sandstalker
 							11730,	-- Hive'Regal Ambusher
@@ -156,7 +68,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						},
 					}),
 					i(20500, {	-- Light Silithid Carapace
-						["timeline"] = { REMOVED_4_3_0 },
 						["crs"] = {
 							13136,	-- Hive'Ashi Drone
 							11698,	-- Hive'Ashi Stinger
@@ -165,70 +76,46 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							11727,	-- Hive'Zora Wasp
 						},
 					}),
-					i(20498, {	-- Silithid Chitin
-						["timeline"] = { REMOVED_4_3_0 },
-					}),
+					i(20498),	-- Silithid Chitin
 				}),
 			}),
-			-- #endif
 			n(QUESTS, {
-				applyclassicphase(PHASE_FIVE_CATCH_UP, q(9248, {	-- A Humble Offering
+				q(9248, {	-- A Humble Offering
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20515, 1 } },	-- Abyssal Scepter
 					["lvl"] = 58,
 					["groups"] = {
-						i(22725, {	-- Band of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22725),	-- Band of Cenarius
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8287, {	-- A Terrible Purpose
+				}),
+				q(8287, {	-- A Terrible Purpose
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["providers"] = {
 						{ "n", 15194 },	-- Hermit Ortell
 						{ "i", 20405 },	-- Decoded Tablet Transcription
 					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 68.7, 63.0, MAP.SILITHUS },
-						-- #else
-						{ 67.0, 69.6, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(40, 40, 15),
+					["coord"] = { 67.0, 69.6, MAP.SILITHUS },
+					["lvl"] = 40,
 					["groups"] = {
 						i(20645, {	-- Nature's Whisper
 							["description"] =
-								-- #if AFTER TBC
-								"This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose.",
-								-- #else
 								"This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
-								-- #endif
 						}),
 					},
-				})),
+				}),
 				q(8361, {	-- Abyssal Contacts
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20513, 1 } },	-- Abyssal Crest
 					["lvl"] = 60,
 					["groups"] = {
 						i(20603, {	-- Bag of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20694, {	-- Glowing Black Orb
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20693, {	-- Weighted Cloak
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20692, {	-- Multicolored Band
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20694),	-- Glowing Black Orb
+								i(20693),	-- Weighted Cloak
+								i(20692),	-- Multicolored Band
 							},
 						}),
 					},
@@ -237,87 +124,60 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["sourceQuest"] = 8361,	-- Abyssal Contacts
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20513, 3 } },	-- Abyssal Crest
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
 						i(20603, {	-- Bag of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20694, {	-- Glowing Black Orb
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20693, {	-- Weighted Cloak
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20692, {	-- Multicolored Band
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20694),	-- Glowing Black Orb
+								i(20693),	-- Weighted Cloak
+								i(20692),	-- Multicolored Band
 							},
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8364, {	-- Abyssal Scepters
+				q(8364, {	-- Abyssal Scepters
 					["sourceQuest"] = 8352,	-- Scepter of the Council
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20515, 3 } },	-- Abyssal Scepter
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
 						i(20602, {	-- Chest of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20721, {	-- Band of the Cultist
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20722, {	-- Crystal Slugthrower
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20720, {	-- Dark Whisper Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20721),	-- Band of the Cultist
+								i(20722),	-- Crystal Slugthrower
+								i(20720),	-- Dark Whisper Blade
 							},
 						}),
 					},
-				})),
+				}),
 				q(8363, {	-- Abyssal Signets
 					["sourceQuest"] = 8348,	-- Signet of the Dukes
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20514, 3 } },	-- Abyssal Signet
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
 						i(20601, {	-- Sack of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20695, {	-- Abyssal War Beads
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20696, {	-- Crystal Spiked Maul
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20697, {	-- Crystalline Threaded Cape
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20698, {	-- Elemental Attuned Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20695),	-- Abyssal War Beads
+								i(20696),	-- Crystal Spiked Maul
+								i(20697),	-- Crystalline Threaded Cape
+								i(20698),	-- Elemental Attuned Blade
 							},
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(9338, {	-- Allegiance to Cenarion Circle
+				q(9338, {	-- Allegiance to Cenarion Circle
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
 					["maxReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 1 },	-- Cenarion Combat Badge
 						{ "i", 20800, 1 },	-- Cenarion Logistics Badge
@@ -325,138 +185,97 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 					["repeatable"] = true,
 					["lvl"] = 60,
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8316, {	-- Armaments of War [WARRIOR]
+				}),
+				q(8316, {	-- Armaments of War [WARRIOR]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20699, {	-- Cenarion Reservist's Legplates
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20710, {	-- Crystal Encrusted Greaves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20699),	-- Cenarion Reservist's Legplates
+						i(20710),	-- Crystal Encrusted Greaves
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8381, {	-- Armaments of War [MAGE / WARLOCK]
+				}),
+				q(8381, {	-- Armaments of War [MAGE / WARLOCK]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { MAGE, WARLOCK },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20705, {	-- Cenarion Reservist's Pants
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20716, {	-- Sandworm Skin Gloves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20705),	-- Cenarion Reservist's Pants
+						i(20716),	-- Sandworm Skin Gloves
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8379, {	-- Armaments of War [PRIEST]
+				}),
+				q(8379, {	-- Armaments of War [PRIEST]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20707, {	-- Cenarion Reservist's Pants
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20717, {	-- Desert Bloom Gloves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20707),	-- Cenarion Reservist's Pants
+						i(20717),	-- Desert Bloom Gloves
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8378, {	-- Armaments of War [ROGUE]
+				}),
+				q(8378, {	-- Armaments of War [ROGUE]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20703, {	-- Cenarion Reservist's Leggings
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20715, {	-- Dunestalker's Boots
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20703),	-- Cenarion Reservist's Leggings
+						i(20715),	-- Dunestalker's Boots
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8382, {	-- Armaments of War [DRUID]
+				}),
+				q(8382, {	-- Armaments of War [DRUID]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20704, {	-- Cenarion Reservist's Leggings
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20714, {	-- Sandstorm Boots
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20704),	-- Cenarion Reservist's Leggings
+						i(20714),	-- Sandstorm Boots
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8377, {	-- Armaments of War [HUNTER]
+				}),
+				q(8377, {	-- Armaments of War [HUNTER]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20702, {	-- Cenarion Reservist's Legguards
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20713, {	-- Desertstalkers's Gauntlets
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20702),	-- Cenarion Reservist's Legguards
+						i(20713),	-- Desertstalkers's Gauntlets
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8376, {	-- Armaments of War [PALADIN]
+				}),
+				q(8376, {	-- Armaments of War [PALADIN]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20700, {	-- Cenarion Reservist's Legplates
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20711, {	-- Crystal Lined Greaves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20700),	-- Cenarion Reservist's Legplates
+						i(20711),	-- Crystal Lined Greaves
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8380, {	-- Armaments of War [SHAMAN]
+				}),
+				q(8380, {	-- Armaments of War [SHAMAN]
 					["sourceQuest"] = 8315,	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20701, {	-- Cenarion Reservist's Legguards
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20712, {	-- Wastewalker's Gauntlets
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20701),	-- Cenarion Reservist's Legguards
+						i(20712),	-- Wastewalker's Gauntlets
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8780, {	-- Armor Kits for the Field (A)
+				}),
+				q(8780, {	-- Armor Kits for the Field (A)
 					["provider"] = { "i", 21263 },	-- Logistics Task Briefing VII (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
 						{ "i", 4265, 8 },	-- Heavy Armor Kit
@@ -468,10 +287,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8787, {	-- Armor Kits for the Field (H)
+				}),
+				q(8787, {	-- Armor Kits for the Field (H)
 					["provider"] = { "i", 21264 },	-- Logistics Task Briefing VII (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
 						{ "i", 4265, 8 },	-- Heavy Armor Kit
@@ -483,10 +301,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8781, {	-- Arms for the Field (A)
+				}),
+				q(8781, {	-- Arms for the Field (A)
 					["provider"] = { "i", 21260 },	-- Logistics Task Briefing VI (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3853, 2 } },	-- Moonsteel Broadsword
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -495,10 +312,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8786, {	-- Arms for the Field (H)
+				}),
+				q(8786, {	-- Arms for the Field (H)
 					["provider"] = { "i", 21261 },	-- Logistics Task Briefing VI (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 3855, 3 } },	-- Massive Iron Axe
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -507,18 +323,16 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
+				}),
 				q(8331, {	-- Aurel Goldleaf
 					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 48.7, 37.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8737, {	-- Azure Templar
+				q(8737, {	-- Azure Templar
 					["provider"] = { "i", 21245 },	-- Tactical Task Briefing I
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -528,10 +342,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8496, {	-- Bandages for the Field (A)
+				}),
+				q(8496, {	-- Bandages for the Field (A)
 					["provider"] = { "i", 20806 },	-- Logistics Task Briefing X (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14530, 30 },	-- Heavy Runecloth Bandage
 						{ "i", 8545, 30 },	-- Heavy Mageweave Bandage
@@ -544,10 +357,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8810, {	-- Bandages for the Field (H)
+				}),
+				q(8810, {	-- Bandages for the Field (H)
 					["provider"] = { "i", 21385 },	-- Logistics Task Briefing X (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14530, 30 },	-- Heavy Runecloth Bandage
 						{ "i", 8545, 30 },	-- Heavy Mageweave Bandage
@@ -560,10 +372,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8540, {	-- Boots for the Guard (A)
+				}),
+				q(8540, {	-- Boots for the Guard (A)
 					["provider"] = { "i", 20939 },	-- Logistics Task Briefing II (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 7936, 3 } },	-- Ornate Mithril Boots
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -572,10 +383,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8805, {	-- Boots for the Guard (H)
+				}),
+				q(8805, {	-- Boots for the Guard (H)
 					["provider"] = { "i", 21379 },	-- Logistics Task Briefing II (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 7936, 3 } },	-- Ornate Mithril Boots
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -584,25 +394,23 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8349, {	-- Bor Wildmane
+				}),
+				q(8349, {	-- Bor Wildmane
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8351, {	-- Bor Wishes to Speak
+				}),
+				q(8351, {	-- Bor Wishes to Speak
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8308, {	-- Brann Bronzebeard's Lost Letter
+				}),
+				q(8308, {	-- Brann Bronzebeard's Lost Letter
 					["provider"] = { "i", 20461 },	-- Brann Bronzebeard's Lost Letter
 					["crs"] = {
 						13301,	-- Hive'Ashi Ambusher
@@ -623,35 +431,17 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						11727,	-- Hive'Zora Wasp
 						11725,	-- Hive'Zora Waywatcher
 					},
-					["lvl"] = lvlsquish(58, 58, 15),
+					["lvl"] = 58,
 					["groups"] = {
 						i(20723),	-- Brann's Trusty Pick
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8310, {	-- Breaking the Code
+				}),
+				q(8310, {	-- Breaking the Code
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					["qg"] = 15171,	-- Frankal Stonebridge
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.0, 79.4, MAP.SILITHUS },
-						-- #else
-						{ 40.8, 88.6, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(58, 58, 15),
+					["coord"] = { 40.8, 88.6, MAP.SILITHUS },
+					["lvl"] = 58,
 					["groups"] = {
-						-- #if AFTER CATA
-						objective(1, {	-- 0/1 Hive'Regal Silithid Brain
-							["provider"] = { "i", 20459 },	-- Hive'Regal Silithid Brain
-							["crs"] = {
-								11730,	-- Hive'Regal Ambusher
-								11731,	-- Hive'Regal Burrower
-								11734,	-- Hive'Regal Hive Lord
-								11733,	-- Hive'Regal Slavemaker
-								11732,	-- Hive'Regal Spitfire
-							},
-						}),
-						-- #else
 						objective(1, {	-- 0/1 Hive'Ashi Silithid Brain
 							["provider"] = { "i", 20457 },	-- Hive'Ashi Silithid Brain
 							["crs"] = {
@@ -684,21 +474,18 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 								11732,	-- Hive'Regal Spitfire
 							},
 						}),
-						-- #endif
 					},
-				})),
-				applyclassicphase(PHASE_FIVE, q(8800, {	-- Cenarion Battlegear
+				}),
+				q(8800, {	-- Cenarion Battlegear
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 60,
-				})),
-				applyclassicphase(PHASE_FIVE, q(8573, {	-- Champion's Battlegear
+				}),
+				q(8573, {	-- Champion's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 15 },	-- Cenarion Combat Badge
 						{ "i", 20800, 20 },	-- Cenarion Logistics Badge
@@ -708,20 +495,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21188, {	-- Fist of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21190, {	-- Wrath of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21180, {	-- Earthstrike
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21188),	-- Fist of Cenarius
+						i(21190),	-- Wrath of Cenarius
+						i(21180),	-- Earthstrike
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8537, {	-- Crimson Templar
+				}),
+				q(8537, {	-- Crimson Templar
 					["provider"] = { "i", 20945 },	-- Tactical Task Briefing II
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -731,17 +511,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8277, {	-- Deadly Desert Venom
+				}),
+				q(8277, {	-- Deadly Desert Venom
 					["qg"] = 15189,	-- Beetix Ficklespragg
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.4, 36.3, MAP.SILITHUS },
-						-- #else
-						{ 51.6, 38.6, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 51.6, 38.6, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/8 Stonelash Scorpid Stinger
 							["provider"] = { "i", 20373 },	-- Stonelash Scorpid Stinger
@@ -752,62 +526,31 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["cr"] = 11738,	-- Sand Skitterer
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8304, {	-- Dearest Natalia
-					-- #if AFTER 4.1.0
-					["sourceQuest"] = 8321,	-- Vyral the Vile
-					-- #endif
-					["providers"] = {
-						{ "n", 15181 },	-- Commander Mar'alith
-						{ "i", 68032 },	-- Mar'alith's Speaking Shard
-					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 32.5, MAP.SILITHUS },
-						-- #else
-						{ 49.2, 34.2, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(58, 58, 15),
+				}),
+				q(8304, {	-- Dearest Natalia
+					["qg"] = 15181,	-- Commander Mar'alith
+					["coord"] = { 49.2, 34.2, MAP.SILITHUS },
+					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- Frankal Questioned
 							["provider"] = { "n", 15171 },	-- Frankal Stonebridge
-							["coords"] = {
-								-- #if AFTER CATA
-								{ 46.0, 79.2, MAP.SILITHUS },
-								-- #else
-								{ 40.8, 88.6, MAP.SILITHUS },
-								-- #endif
-							},
+							["coord"] = { 40.8, 88.6, MAP.SILITHUS },
 						}),
 						objective(2, {	-- Rutgar Questioned
 							["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
-							["coords"] = {
-								-- #if AFTER CATA
-								{ 46.4, 79.0, MAP.SILITHUS },
-								-- #else
-								{ 41.2, 88.4, MAP.SILITHUS },
-								-- #endif
-							},
+							["coord"] = { 41.2, 88.4, MAP.SILITHUS },
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8307, {	-- Desert Recipe
+				}),
+				q(8307, {	-- Desert Recipe
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.4, 36.6, MAP.SILITHUS },
-						-- #else
-						{ 51.8, 39.0, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 51.8, 39.0, MAP.SILITHUS },
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
-					["lvl"] = lvlsquish(54, 54, 15),
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8497, {	-- Desert Survival Kits (A)
+					["lvl"] = 54,
+				}),
+				q(8497, {	-- Desert Survival Kits (A)
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 7079, 4 },	-- Globe of Water
 						{ "i", 19440, 4 },	-- Powerful Anti-Venom
@@ -820,10 +563,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8804, {	-- Desert Survival Kits (H)
+				}),
+				q(8804, {	-- Desert Survival Kits (H)
 					["provider"] = { "i", 21378 },	-- Logistics Task Briefing I (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 7079, 4 },	-- Globe of Water
 						{ "i", 19440, 4 },	-- Powerful Anti-Venom
@@ -836,10 +578,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8856, {	-- Desert Survival Kits (A)
+				}),
+				q(8856, {	-- Desert Survival Kits (A)
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 7079, 4 },	-- Globe of Water
 						{ "i", 19440, 4 },	-- Powerful Anti-Venom
@@ -851,27 +592,23 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
+				}),
 				q(8332, {	-- Dukes of the Council
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
 						{ "i", 20513, 3 },	-- Abyssal Crest
 					},
 					["lvl"] = 54,
 					["groups"] = {
-						i(20422, {	-- Twilight Cultist Medallion of Station
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20422),	-- Twilight Cultist Medallion of Station
 					},
 				}),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8536, {	-- Earthen Templar
+				q(8536, {	-- Earthen Templar
 					["provider"] = { "i", 21751 },	-- Tactical Task Briefing III
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -881,25 +618,18 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8319, {	-- Encrypted Twilight Texts
+				}),
+				q(8319, {	-- Encrypted Twilight Texts
 					["sourceQuest"] = 8318,	-- Secret Communication
 					["qg"] = 15306,	-- Bor Wildmane
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 35.1, MAP.SILITHUS },
-						-- #else
-						{ 48.6, 37.8, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["maxReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(57, 57, 15),
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8783, {	-- Extraordinary Materials (A)
+					["lvl"] = 57,
+				}),
+				q(8783, {	-- Extraordinary Materials (A)
 					["provider"] = { "i", 21265 },	-- Logistics Task Briefing IX (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12655, 2 },	-- Enchanted Thorium Bar
 						{ "i", 12810, 2 },	-- Enchanted Leather
@@ -911,10 +641,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8809, {	-- Extraordinary Materials (H)
+				}),
+				q(8809, {	-- Extraordinary Materials (H)
 					["provider"] = { "i", 21381 },	-- Logistics Task Briefing IX (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12655, 2 },	-- Enchanted Thorium Bar
 						{ "i", 12810, 2 },	-- Enchanted Leather
@@ -926,11 +655,10 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8507, {	-- Field Duty (A)
+				}),
+				q(8507, {	-- Field Duty (A)
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -938,7 +666,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						q(8508, {	-- Field Duty Papers (A)
 							["qg"] = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
 							["coord"] = { 33.2, 52.1, MAP.SILITHUS },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 							["groups"] = {
@@ -952,25 +679,21 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 								}),
 							},
 						}),
-						i(20808, {	-- Combat Assignment
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20808),	-- Combat Assignment
 						LOGISTICS_ASSIGNMENT_A,
 						TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8731, {	-- Field Duty (H)
+				}),
+				q(8731, {	-- Field Duty (H)
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						applyclassicphase(PHASE_FIVE, q(8732, {	-- Field Duty Papers (H)
+						q(8732, {	-- Field Duty Papers (H)
 							["qg"] = 15612,	-- Krug Skullsplit
 							["coord"] = { 52.2, 68.4, MAP.SILITHUS },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["lvl"] = 54,
@@ -984,38 +707,21 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 									},
 								}),
 							},
-						})),
-						i(20808, {	-- Combat Assignment
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
+						i(20808),	-- Combat Assignment
 						LOGISTICS_ASSIGNMENT_H,
 						TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8309, {	-- Glyph Chasing
+				}),
+				q(8309, {	-- Glyph Chasing
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					["providers"] = {
 						{ "n", 15170 },	-- Rutgar Glyphshaper
 						{ "i", 20453 },	-- Geologist's Transcription Kit
 					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.4, 79.1, MAP.SILITHUS },
-						-- #else
-						{ 41.2, 88.4, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(58, 58, 15),
+					["coord"] = { 41.2, 88.4, MAP.SILITHUS },
+					["lvl"] = 58,
 					["groups"] = {
-						-- #if AFTER CATA
-						objective(1, {	-- 0/1 Hive'Regal Rubbing
-							["providers"] = {
-								{ "i",  20456 },	-- Hive'Regal Rubbing
-								{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
-							},
-							["coord"] = { 55.6, 90.6, MAP.SILITHUS },
-						}),
-						-- #else
 						objective(1, {	-- 0/1 Hive'Ashi Rubbing
 							["providers"] = {
 								{ "i", 20455 },	-- Hive'Ashi Rubbing
@@ -1037,20 +743,17 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							},
 							["coord"] = { 52.0, 99.0, MAP.SILITHUS },
 						}),
-						-- #endif
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8343, {	-- Goldleaf's Discovery
+				}),
+				q(8343, {	-- Goldleaf's Discovery
 					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 48.6, 37.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8541, {	-- Grinding Stones for the Guard (A)
+				}),
+				q(8541, {	-- Grinding Stones for the Guard (A)
 					["provider"] = { "i", 20940 },	-- Logistics Task Briefing III (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12644, 10 },	-- Dense Grinding Stone
 						{ "i", 7966, 10 },	-- Solid Grinding Stone
@@ -1062,10 +765,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8806, {	-- Grinding Stones for the Guard (H)
+				}),
+				q(8806, {	-- Grinding Stones for the Guard (H)
 					["provider"] = { "i", 21380 },	-- Logistics Task Briefing III (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12644, 10 },	-- Dense Grinding Stone
 						{ "i", 7966, 10 },	-- Solid Grinding Stone
@@ -1077,12 +779,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
+				}),
 				q(1126, {	-- Hive in the Tower
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 					["qg"] = 13220,	-- Layo Starstrike
 					["coord"] = { 81.8, 18.8, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Encrusted Silithid Object
@@ -1096,9 +797,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8739, {	-- Hive'Ashi Scout Report
+				q(8739, {	-- Hive'Ashi Scout Report
 					["provider"] = { "i", 21167 },	-- Tactical Task Briefing VIII
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1110,10 +810,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8738, {	-- Hive'Regal Scout Report
+				}),
+				q(8738, {	-- Hive'Regal Scout Report
 					["provider"] = { "i", 21166 },	-- Tactical Task Briefing VII
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1125,10 +824,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8534, {	-- Hive'Zora Scout Report
+				}),
+				q(8534, {	-- Hive'Zora Scout Report
 					["provider"] = { "i", 21165 },	-- Tactical Task Briefing VI
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1140,10 +838,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8535, {	-- Hoary Templar
+				}),
+				q(8535, {	-- Hoary Templar
 					["provider"] = { "i", 20947 },	-- Tactical Task Briefing IV
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1153,69 +850,47 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8306, {	-- Into The Maw of Madness
+				}),
+				q(8306, {	-- Into The Maw of Madness
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					["qg"] = 15181,	-- Commander Mar'alith
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 32.5, MAP.SILITHUS },
-						-- #else
-						{ 49.2, 34.2, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(58, 58, 15),
+					["coord"] = { 49.2, 34.2, MAP.SILITHUS },
+					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 The Fate of Mistress Natalia Mar'alith
 							["provider"] = { "n", 15215 },	-- Mistress Natalia Mar'alith <High Priestess of C'Thun>
-							["coords"] = {
-								-- #if AFTER CATA
-								{ 55.6, 90.6, MAP.SILITHUS },
-								-- #else
-								{ 53.6, 98.0, MAP.SILITHUS },
-								-- #endif
-							},
+							["coord"] = { 53.6, 98.0, MAP.SILITHUS },
 						}),
 						i(20724),	-- Corrupted Blackwood Staff
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8317, {	-- Kitchen Assistance
+				}),
+				q(8317, {	-- Kitchen Assistance
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.4, 36.6, MAP.SILITHUS },
-						-- #else
-						{ 51.8, 39.0, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 51.8, 39.0, MAP.SILITHUS },
 					["cost"] = { { "i", 20452, 10 } },	-- Smoked Desert Dumplings
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
-					["lvl"] = lvlsquish(54, 54, 15),
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8341, {	-- Lords of the Council
+					["lvl"] = 54,
+				}),
+				q(8341, {	-- Lords of the Council
 					["sourceQuest"] = 8343,	-- Goldleaf's Discovery
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 5 },	-- Large Brilliant Shard
 						{ "i", 20514, 3 },	-- Abyssal Signet
 					},
 					["lvl"] = 54,
 					["groups"] = {
-						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
-				})),
+				}),
 				q(8333, {	-- Medallion of Station
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
 						{ "i", 20513, 3 },	-- Abyssal Crest
@@ -1223,22 +898,14 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(20422, {	-- Twilight Cultist Medallion of Station
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20422),	-- Twilight Cultist Medallion of Station
 					},
 				}),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8278, {	-- Noggle's Last Hope
+				q(8278, {	-- Noggle's Last Hope
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
 					["qg"] = 15189,	-- Beetix Ficklespragg
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.4, 36.3, MAP.SILITHUS },
-						-- #else
-						{ 51.6, 38.6, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 51.6, 38.6, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/3 Stonelash Flayer Stinger
 							["provider"] = { "i", 20375 },	-- Stonelash Flayer Stinger
@@ -1253,100 +920,61 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["cr"] = 11739,	-- Rock Stalker
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8282, {	-- Noggle's Lost Satchel
+				}),
+				q(8282, {	-- Noggle's Lost Satchel
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 					["qg"] = 15190,	-- Noggle Ficklespragg
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.3, 36.2, MAP.SILITHUS },
-						-- #else
-						{ 51.6, 38.5, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 51.6, 38.5, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Noggle's Satchel
 							["providers"] = {
 								{ "i",  20379 },	-- Noggle's Satchel
 								{ "o", 180435 },	-- Noggle's Satchel
 							},
-							["coords"] = {
-								-- #if AFTER CATA
-								{ 49.2, 81.6, MAP.SILITHUS },
-								-- #else
-								{ 44.7, 91.5, MAP.SILITHUS },
-								-- #endif
-							},
+							["coord"] = { 44.7, 91.5, MAP.SILITHUS },
 						}),
 						i(13452),	-- Elixir of the Mongoose
 						i(13447),	-- Elixir of the Sages
 					},
-				})),
-				applyclassicphase(PHASE_SIX_SILITHYST, q(9416, {	-- Report to General Kirika
+				}),
+				q(9416, {	-- Report to General Kirika
 					["qg"] = 17081,	-- Scout Bloodfist
-					["coords"] = {
-						-- #if AFTER 7.2.0
-						{ 53.0, 34.6, MAP.SILITHUS },
-						-- #else
-						{ 49.0, 36.7, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 49.0, 36.7, MAP.SILITHUS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(53, 53, 15),
-				})),
-				applyclassicphase(PHASE_SIX_SILITHYST, q(9415, {	-- Report to Marshal Bluewall
+					["lvl"] = 53,
+				}),
+				q(9415, {	-- Report to Marshal Bluewall
 					["qg"] = 17082,	-- Rifleman Torrig
-					["coords"] = {
-						-- #if AFTER 7.2.0
-						{ 54.5, 32.9, MAP.SILITHUS },
-						-- #else
-						{ 50.7, 34.7, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 50.7, 34.7, MAP.SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(53, 53, 15),
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8352, {	-- Scepter of the Council
+					["lvl"] = 53,
+				}),
+				q(8352, {	-- Scepter of the Council
 					["sourceQuest"] = 8351,	-- Bor Wishes to Speak
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20515, 1 } },	-- Abyssal Scepter
 					["lvl"] = 54,
 					["groups"] = {
 						i(20602, {	-- Chest of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20721, {	-- Band of the Cultist
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20722, {	-- Crystal Slugthrower
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20720, {	-- Dark Whisper Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20721),	-- Band of the Cultist
+								i(20722),	-- Crystal Slugthrower
+								i(20720),	-- Dark Whisper Blade
 							},
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_SIX_SILITHYST, q(9419, {	-- Scouring the Desert [ALLIANCE]
+				}),
+				q(9419, {	-- Scouring the Desert [ALLIANCE]
 					["sourceQuest"] = 9415,	-- Report to Marshal Bluewall
 					["qg"] = 17080,	-- Marshal Bluewall
-					["coords"] = {
-						-- #if AFTER 7.2.0
-						{ 39.6, 46.8, MAP.SILITHUS },
-						-- #else
-						{ 33.3, 51.1, MAP.SILITHUS },
-						-- #endif
-					},
-					["timeline"] = { REMOVED_7_2_0 },
+					["coord"] = { 33.3, 51.1, MAP.SILITHUS },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(53, 53, 15),
+					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- Return Silithyst
 							["providers"] = {
@@ -1357,20 +985,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(13446),	-- Major Healing Potion
 						i(13444),	-- Major Mana Potion
 					},
-				})),
-				applyclassicphase(PHASE_SIX_SILITHYST, q(9422, {	-- Scouring the Desert [HORDE]
+				}),
+				q(9422, {	-- Scouring the Desert [HORDE]
 					["sourceQuest"] = 9416,	-- Report to General Kirika
 					["qg"] = 17079,	-- General Kirika
-					["coords"] = {
-						-- #if AFTER 7.2.0
-						{ 54.6, 62.8, MAP.SILITHUS },
-						-- #else
-						{ 50.8, 69.5, MAP.SILITHUS },
-						-- #endif
-					},
-					["timeline"] = { REMOVED_7_2_0 },
+					["coord"] = { 50.8, 69.5, MAP.SILITHUS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(53, 53, 15),
+					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- Return Silithyst
 							["providers"] = {
@@ -1381,10 +1002,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(13446),	-- Major Healing Potion
 						i(13444),	-- Major Mana Potion
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8779, {	-- Scrying Materials (A)
+				}),
+				q(8779, {	-- Scrying Materials (A)
 					["provider"] = { "i", 21259 },	-- Logistics Task Briefing V (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12364, 1 },	-- Huge Emerald
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
@@ -1396,10 +1016,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8807, {	-- Scrying Materials (H)
+				}),
+				q(8807, {	-- Scrying Materials (H)
 					["provider"] = { "i", 21382 },	-- Logistics Task Briefing V (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12364, 1 },	-- Huge Emerald
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
@@ -1411,100 +1030,64 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8318, {	-- Secret Communication
+				}),
+				q(8318, {	-- Secret Communication
 					["qg"] = 15306,	-- Bor Wildmane
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 35.1, MAP.SILITHUS },
-						-- #else
-						{ 48.6, 37.8, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
-					["lvl"] = lvlsquish(57, 57, 15),
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8280, {	-- Securing the Supply Lines
+					["lvl"] = 57,
+				}),
+				q(8280, {	-- Securing the Supply Lines
 					["sourceQuests"] = {
-						-- #if AFTER CATA
-						28528,	-- Hero's Call: Silithus!
-						28859,	-- The Dunes of Silithus
-						28856,	-- The Sands of Silithus
-						28527,	-- Warchief's Command: Silithus!
-						-- #else
 						8275,	-- Taking Back Silithus (A)
 						8276,	-- Taking Back Silithus (H)
-						-- #endif
 					},
 					["qg"] = 15191,	-- Windcaller Proudhorn
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 54.9, 36.0, MAP.SILITHUS },
-						-- #else
-						{ 51.2, 38.3, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 51.2, 38.3, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/15 Dredge Striker slain
 							["provider"] = { "n", 11740 },	-- Dredge Striker
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8313, {	-- Sharing the Knowledge
+				}),
+				q(8313, {	-- Sharing the Knowledge
 					["sourceQuest"] = 8307,	-- Desert Recipe
 					["providers"] = {
 						{ "o", 180503 },	-- Sandy Cookbook
 						{ "i",  20467 },	-- Torn Recipe Page
 					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 43.6, 42.0, MAP.SILITHUS },
-						-- #else
-						{ 37.9, 45.3, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 37.9, 45.3, MAP.SILITHUS },
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
-					["lvl"] = lvlsquish(54, 54, 15),
+					["lvl"] = 54,
 					["groups"] = {
 						recipe(24801),	-- Smoked Desert Dumplings
 					},
-				})),
+				}),
 				q(8348, {	-- Signet of the Dukes
 					["sourceQuest"] = 8349,	-- Bor Wildmane
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 20514, 1 } },	-- Abyssal Signet
 					["lvl"] = 54,
 					["groups"] = {
 						i(20601, {	-- Sack of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20695, {	-- Abyssal War Beads
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20696, {	-- Crystal Spiked Maul
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20697, {	-- Crystalline Threaded Cape
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20698, {	-- Elemental Attuned Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20695),	-- Abyssal War Beads
+								i(20696),	-- Crystal Spiked Maul
+								i(20697),	-- Crystalline Threaded Cape
+								i(20698),	-- Elemental Attuned Blade
 							},
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, q(8574, {	-- Stalwart's Battlegear
+				q(8574, {	-- Stalwart's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 15 },	-- Cenarion Combat Badge
 						{ "i", 20800, 20 },	-- Cenarion Logistics Badge
@@ -1514,70 +1097,47 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21184, {	-- Deeprock Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21185, {	-- Earthcalm Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21186, {	-- Rockfury Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21189, {	-- Might of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21184),	-- Deeprock Bracers
+						i(21185),	-- Earthcalm Orb
+						i(21186),	-- Rockfury Bracers
+						i(21189),	-- Might of Cenarius
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8281, {	-- Stepping Up Security
+				}),
+				q(8281, {	-- Stepping Up Security
 					["sourceQuest"] = 8280,	-- Securing the Supply Lines
 					["qg"] = 15191,	-- Windcaller Proudhorn
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 54.9, 36.0, MAP.SILITHUS },
-						-- #else
-						{ 51.2, 38.3, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 51.2, 38.3, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/20 Dredge Crusher
 							["provider"] = { "n", 11741 },	-- Dredge Crusher
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8324, {	-- Still Believing
+				}),
+				q(8324, {	-- Still Believing
 					["sourceQuest"] = 8323,	-- True Believers
 					["qg"] = 15194,	-- Hermit Ortell
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 68.7, 63.0, MAP.SILITHUS },
-						-- #else
-						{ 67.0, 69.6, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 67.0, 69.6, MAP.SILITHUS },
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(54, 54, 15),
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8275, {	-- Taking Back Silithus (A)
+					["lvl"] = 54,
+				}),
+				q(8275, {	-- Taking Back Silithus (A)
 					["qg"] = 15187,	-- Cenarion Emissary Jademoon
 					["coord"] = { 58.5, 47.3, MAP.IRONFORGE },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8276, {	-- Taking Back Silithus (H)
+				}),
+				q(8276, {	-- Taking Back Silithus (H)
 					["qg"] = 15188,	-- Cenarion Emissary Blackhoof
 					["coord"] = { 47.6, 65.8, MAP.ORGRIMMAR },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8770, {	-- Target: Hive'Ashi Defenders
+				}),
+				q(8770, {	-- Target: Hive'Ashi Defenders
 					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1586,10 +1146,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8771, {	-- Target: Hive'Ashi Sandstalkers
+				}),
+				q(8771, {	-- Target: Hive'Ashi Sandstalkers
 					["provider"] = { "i", 21750 },	-- Combat Task Briefing II
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1598,10 +1157,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8501, {	-- Target: Hive'Ashi Stingers
+				}),
+				q(8501, {	-- Target: Hive'Ashi Stingers
 					["provider"] = { "i", 20941 },	-- Combat Task Briefing XII
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1610,10 +1168,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8502, {	-- Target: Hive'Ashi Workers
+				}),
+				q(8502, {	-- Target: Hive'Ashi Workers
 					["provider"] = { "i", 20942 },	-- Combat Task Briefing III
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1622,10 +1179,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8774, {	-- Target: Hive'Regal Ambushers
+				}),
+				q(8774, {	-- Target: Hive'Regal Ambushers
 					["provider"] = { "i", 21252 },	-- Combat Task Briefing VIII
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1634,10 +1190,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8777, {	-- Target: Hive'Regal Burrowers
+				}),
+				q(8777, {	-- Target: Hive'Regal Burrowers
 					["provider"] = { "i", 21256 },	-- Combat Task Briefing XI
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1646,10 +1201,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8776, {	-- Target: Hive'Regal Slavemakers
+				}),
+				q(8776, {	-- Target: Hive'Regal Slavemakers
 					["provider"] = { "i", 21255 },	-- Combat Task Briefing X
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1658,10 +1212,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8775, {	-- Target: Hive'Regal Spitfires
+				}),
+				q(8775, {	-- Target: Hive'Regal Spitfires
 					["provider"] = { "i", 21253 },	-- Combat Task Briefing IX
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1670,10 +1223,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8539, {	-- Target: Hive'Zora Hive Sisters
+				}),
+				q(8539, {	-- Target: Hive'Zora Hive Sisters
 					["provider"] = { "i", 21249 },	-- Combat Task Briefing V
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1682,10 +1234,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8773, {	-- Target: Hive'Zora Reavers
+				}),
+				q(8773, {	-- Target: Hive'Zora Reavers
 					["provider"] = { "i", 21248 },	-- Combat Task Briefing IV
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1694,10 +1245,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8687, {	-- Target: Hive'Zora Tunnelers
+				}),
+				q(8687, {	-- Target: Hive'Zora Tunnelers
 					["provider"] = { "i", 21251 },	-- Combat Task Briefing VII
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1706,10 +1256,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8772, {	-- Target: Hive'Zora Waywatchers
+				}),
+				q(8772, {	-- Target: Hive'Zora Waywatchers
 					["provider"] = { "i", 21250 },	-- Combat Task Briefing VI
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1718,12 +1267,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						CENARION_COMBAT_BADGE,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8315, {	-- The Calling
+				}),
+				q(8315, {	-- The Calling
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Crystal Unlocking Mechanism
@@ -1735,32 +1283,18 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["cr"] = 14862,	-- Emissary Roman'khan
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8285, {	-- The Deserter
+				}),
+				q(8285, {	-- The Deserter
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
 					["providers"] = {
 						{ "n", 15183 },	-- Geologist Larksbane
 						{ "i", 20401 },	-- Restored Twilight Tablet
 					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.6, 35.3, MAP.SILITHUS },
-						-- #else
-						{ 49.7, 37.5, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
-				})),
-				q(28859, {	-- The Dunes of Silithus
-					-- ["sourceQuest"] = 24695,	-- Ever Watching From Above [nothing under this entire quest chain is required... maybe something completely different?]
-					["qg"] = 38269,	-- Zen'Aliri
-					["coord"] = { 55.7, 60.6, MAP.UNGORO_CRATER },
-					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
+					["lvl"] = 54,
 				}),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8538, {	-- The Four Dukes
+				q(8538, {	-- The Four Dukes
 					["provider"] = { "i", 20948 },	-- Tactical Task Briefing V
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1776,14 +1310,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						objective(4, {	-- 0/1 The Duke of Shards slain
 							["provider"] = { "n", 15208 },	-- The Duke of Shards <Abyssal Council>
 						}),
-						i(21508, {	-- Mark of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21508),	-- Mark of Cenarius
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8778, {	-- The Ironforge Brigade Needs Explosives!
+				}),
+				q(8778, {	-- The Ironforge Brigade Needs Explosives!
 					["provider"] = { "i", 21257 },	-- Logistics Task Briefing IV (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 15992, 10 },	-- Dense Blasting Powder
 						{ "i", 9061, 5 },	-- Goblin Rocket Fuel
@@ -1796,10 +1327,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8785, {	-- The Orgrimmar Legion Needs Mojo!
+				}),
+				q(8785, {	-- The Orgrimmar Legion Needs Mojo!
 					["provider"] = { "i", 21258 },	-- Logistics Task Briefing IV (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 8152, 6 },	-- Flask of Big Mojo
 						{ "i", 8956, 8 },	-- Oil of Immolation
@@ -1812,9 +1342,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_FIVE, q(86674, {	-- The Perfect Poison
+				}),
+				q(9023, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
 					["coord"] = { 52.1, 39.1, MAP.SILITHUS },
 					["maps"] = { MAP.RUINS_OF_AHNQIRAJ, MAP.ZULGURUB },
@@ -1826,60 +1355,18 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						objective(2, {	-- 0/1 Kurinnaxx's Venom Sac
 							["provider"] = { "i", 22217 },	-- Kurinnaxx's Venom Sac
 						}),
-						i(234798),	-- Doomulus Prime
-						i(234799),	-- Fahrad's Reloading Repeater
-						i(234792),	-- Ravenholdt Slicer
-						i(234793),	-- Shivsprocket's Shiv
-						i(234800),	-- Simone's Cultivating Hammer
-						i(234797),	-- The Thunderwood Poker
+						i(22378),	-- Ravenholdt Slicer
+						i(22379),	-- Shivsprocket's Shiv
+						i(22377),	-- The Thunderwood Poker
+						i(22348),	-- Doomulus Prime
+						i(22347),	-- Fahrad's Reloading Repeater
+						i(22380),	-- Simone's Cultivating Hammer
 					},
-				})),
-				-- #else
-				applyclassicphase(PHASE_FIVE, q(9023, {	-- The Perfect Poison
-					["qg"] = 16091,	-- Dirk Thunderwood
-					["coord"] = { 52.1, 39.1, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { MAP.RUINS_OF_AHNQIRAJ, MAP.ZULGURUB },
-					["lvl"] = 60,
-					["groups"] = {
-						objective(1, {	-- 0/1 Venoxis's Venom Sac
-							["provider"] = { "i", 22216 },	-- Venoxis's Venom Sac
-						}),
-						objective(2, {	-- 0/1 Kurinnaxx's Venom Sac
-							["provider"] = { "i", 22217 },	-- Kurinnaxx's Venom Sac
-						}),
-						i(22378, {	-- Ravenholdt Slicer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22379, {	-- Shivsprocket's Shiv
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22377, {	-- The Thunderwood Poker
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22348, {	-- Doomulus Prime
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22347, {	-- Fahrad's Reloading Repeater
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22380, {	-- Simone's Cultivating Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-					},
-				})),
-				-- #endif
-				q(28856, {	-- The Sands of Silithus
-					["qg"] = 11118,	-- Innkeeper Vizzie
-					["coord"] = { 59.8, 51.1, MAP.WINTERSPRING },
-					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
 				}),
 				q(1125, {	-- The Spirits of Southwind
 					["sourceQuest"] = 1124,	-- Wasteland
 					["qg"] = 13220,	-- Layo Starstrike
 					["coord"] = { 81.8, 18.8, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/8 Tortured Druid slain
@@ -1890,17 +1377,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8279, {	-- The Twilight Lexicon
+				q(8279, {	-- The Twilight Lexicon
 					["sourceQuest"] = 8285,	-- The Deserter
 					["qg"] = 15194,	-- Hermit Ortell
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 68.7, 63.0, MAP.SILITHUS },
-						-- #else
-						{ 67.0, 69.6, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 67.0, 69.6, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Twilight Lexicon - Chapter 1
 							["provider"] = { "i", 20394 },	-- Twilight Lexicon - Chapter 1
@@ -1918,17 +1399,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["cr"] = 11804,	-- Twilight Keeper Havunth <Twilight's Hammer>
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8284, {	-- The Twilight Mystery
+				}),
+				q(8284, {	-- The Twilight Mystery
 					["qg"] = 15183,	-- Geologist Larksbane
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.6, 35.3, MAP.SILITHUS },
-						-- #else
-						{ 49.7, 37.5, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 49.7, 37.5, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/8 Twilight Tablet Fragment
 							["providers"] = {
@@ -1939,10 +1414,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["coord"] = { 23.4, 11.8, MAP.SILITHUS },
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8829, {	-- The Ultimate Deception
+				}),
+				q(8829, {	-- The Ultimate Deception
 					["provider"] = { "i", 21514 },	-- Logistics Task Briefing XI
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 12735, 3 },	-- Frayed Abomination Stitching
 						{ "i", 12753, 1 },	-- Skin of Shadow
@@ -1951,27 +1425,18 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						i(21515, {	-- Mark of Remulos
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21515),	-- Mark of Remulos
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8323, {	-- True Believers
+				}),
+				q(8323, {	-- True Believers
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["qg"] = 15194,	-- Hermit Ortell
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 68.7, 63.0, MAP.SILITHUS },
-						-- #else
-						{ 67.0, 69.6, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 67.0, 69.6, MAP.SILITHUS },
 					["cost"] = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
-					["lvl"] = lvlsquish(54, 54, 15),
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8498, {	-- Twilight Battle Orders
+					["lvl"] = 54,
+				}),
+				q(8498, {	-- Twilight Battle Orders
 					["provider"] = { "i", 20943 },	-- Tactical Task Briefing X
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -1982,26 +1447,19 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8320, {	-- Twilight Geolords
+				}),
+				q(8320, {	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 35.2, MAP.SILITHUS },
-						-- #else
-						{ 48.7, 37.9, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(60, 60, 15),
+					["coord"] = { 48.7, 37.9, MAP.SILITHUS },
+					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/10 Twilight Geolord slain
 							["provider"] = { "n", 11881 },	-- Twilight Geolord
 						}),
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8740, {	-- Twilight Marauders
+				}),
+				q(8740, {	-- Twilight Marauders
 					["provider"] = { "i", 20944 },	-- Tactical Task Briefing IX
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
@@ -2014,13 +1472,12 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_TACTICAL_BADGE,
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8342, {	-- Twilight Ring of Lordship
+				}),
+				q(8342, {	-- Twilight Ring of Lordship
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14344, 5 },	-- Large Brilliant Shard
 						{ "i", 20514, 3 },	-- Abyssal Signet
@@ -2028,11 +1485,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
-				})),
+				}),
 				q(6844, {	-- Umber, Archivist
 					["sourceQuest"] = 1126,	-- Hive in the Tower
 					["providers"] = {
@@ -2040,13 +1495,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "i", 17346 },	-- Encrusted Silithid Object
 					},
 					["coord"] = { 81.8, 18.8, MAP.SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MAP.MOONGLADE },
 					["lvl"] = 54,
 				}),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8782, {	-- Uniform Supplies (A)
+				q(8782, {	-- Uniform Supplies (A)
 					["provider"] = { "i", 21262 },	-- Logistics Task Briefing VIII (A)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14048, 2 },	-- Bolt of Runecloth
 						{ "i", 14227, 1 },	-- Ironweb Spider Silk
@@ -2058,10 +1511,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_A,
 					},
-				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8808, {	-- Uniform Supplies (H)
+				}),
+				q(8808, {	-- Uniform Supplies (H)
 					["provider"] = { "i", 21384 },	-- Logistics Task Briefing VIII (H)
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 14048, 2 },	-- Bolt of Runecloth
 						{ "i", 14227, 1 },	-- Ironweb Spider Silk
@@ -2073,8 +1525,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						CENARION_LOGISTICS_BADGE,
 						LOGISTICS_ASSIGNMENT_H,
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8314, {	-- Unraveling the Mystery
+				}),
+				q(8314, {	-- Unraveling the Mystery
 					["sourceQuests"] = {
 						8310,	-- Breaking the Code
 						8309,	-- Glyph Chasing
@@ -2083,21 +1535,14 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "n", 15170 },	-- Rutgar Glyphshaper
 						{ "i", 20463 },	-- Glyphed Crystal Prism
 					},
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 46.4, 79.1, MAP.SILITHUS },
-						-- #else
-						{ 41.2, 88.4, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(58, 58, 15),
-				})),
-				applyclassicphase(PHASE_FIVE, q(8572, {	-- Veteran's Battlegear
+					["coord"] = { 41.2, 88.4, MAP.SILITHUS },
+					["lvl"] = 58,
+				}),
+				q(8572, {	-- Veteran's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 7 },	-- Cenarion Combat Badge
 						{ "i", 20800, 4 },	-- Cenarion Logistics Badge
@@ -2106,23 +1551,16 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21181, {	-- Grace of Earth
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21182, {	-- Band of Earthen Might
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21183, {	-- Earthpower Vest
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21181),	-- Grace of Earth
+						i(21182),	-- Band of Earthen Might
+						i(21183),	-- Earthpower Vest
 					},
-				})),
-				applyclassicphase(PHASE_FIVE, q(8548, {	-- Volunteer's Battlegear
+				}),
+				q(8548, {	-- Volunteer's Battlegear
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, MAP.SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 20802, 5 },	-- Cenarion Combat Badge
 						{ "i", 20800, 3 },	-- Cenarion Logistics Badge
@@ -2131,28 +1569,16 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21178, {	-- Gloves of Earthen Power
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21179, {	-- Band of Earthen Wrath
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21187, {	-- Earthweave Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21178),	-- Gloves of Earthen Power
+						i(21179),	-- Band of Earthen Wrath
+						i(21187),	-- Earthweave Cloak
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8321, {	-- Vyral the Vile
+				}),
+				q(8321, {	-- Vyral the Vile
 					["sourceQuest"] = 8320,	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 35.2, MAP.SILITHUS },
-						-- #else
-						{ 48.7, 37.9, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(60, 60, 15),
+					["coord"] = { 48.7, 37.9, MAP.SILITHUS },
+					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Vyral's Signet Ring
 							["provider"] = { "i", 20466 },	-- Vyral's Signet Ring
@@ -2162,64 +1588,41 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(20650),	-- Desert Wind Gauntlets
 						i(20649),	-- Sunprism Pendant
 					},
-				})),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
+				}),
+				q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
 					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.1, 35.0, MAP.SILITHUS },
-						-- #else
-						{ 51.3, 38.3, MAP.SILITHUS },
-						-- #endif
-					},
-					["lvl"] = lvlsquish(54, 54, 15),
+					["coord"] = { 51.3, 38.3, MAP.SILITHUS },
+					["lvl"] = 54,
 					["groups"] = {
 						objective(1, {	-- 0/1 Deathclasp's Pincer
 							["provider"] = { "i", 20385 },	-- Deathclasp's Pincer
-							["coords"] = {
-								-- #if AFTER CATA
-								{ 49.6, 82.0, MAP.SILITHUS },
-								-- #else
-								{ 45.0, 91.0, MAP.SILITHUS },
-								-- #endif
-							},
+							["coord"] = { 45.0, 91.0, MAP.SILITHUS },
 							["cr"] = 15196,	-- Deathclasp
 						}),
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
-				})),
+				}),
 			}),
 			n(RARES, {
 				o(180456, {	-- Lesser Wind Stone
 					["description"] =
-						-- #if AFTER CATA
-						"Before Cataclysm, this was the summoning place of Abyssal Templars.\nNow, it is unusable as items required for the summonings can't be obtained.",
-						-- #else
 						"Summons one of 4 Abyssal Templars. The ritual requires a Twilight Trappings set. To guarantee that a specific Templar is summoned, a Crest of Beckoning can be used.",
-						-- #endif
 					["cost"] = {
 						{ "i", 20408, 1 },	-- Twilight Cultist Cowl
 						{ "i", 20406, 1 },	-- Twilight Cultist Mantle
 						{ "i", 20407, 1 },	-- Twilight Cultist Robe
 					},
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 28.6, 77.1, MAP.SILITHUS },
-						{ 35.0, 29.5, MAP.SILITHUS },
-						{ 44.4, 39.6, MAP.SILITHUS },
-						-- #else
 						{ 20.5, 86.2, MAP.SILITHUS },
 						{ 18.2, 81.1, MAP.SILITHUS },
 						{ 39.0, 42.4, MAP.SILITHUS },
 						{ 38.3, 46.5, MAP.SILITHUS },
 						{ 27.9, 30.6, MAP.SILITHUS },
 						{ 24.4, 36.0, MAP.SILITHUS },
-						-- #endif
 					},
 					["groups"] = {
 						i(20513, {	-- Abyssal Crest
-							["timeline"] = { REMOVED_4_0_3, DELETED_7_1_5 },
 							["crs"] = {
 								15211,	-- Azure Templar <Abyssal Council>
 								15209,	-- Crimson Templar <Abyssal Council>
@@ -2229,73 +1632,41 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						n(15211, {	-- Azure Templar <Abyssal Council>
 							["cost"] = { { "i", 20420, 1 } },	-- Crest of Beckoning: Water
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20654, {	-- Amethyst War Staff
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20652, {	-- Abyssal Cloth Slippers
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20653, {	-- Abyssal Plate Gauntlets
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20654),	-- Amethyst War Staff
+								i(20652),	-- Abyssal Cloth Slippers
+								i(20653),	-- Abyssal Plate Gauntlets
 							},
 						}),
 						n(15209, {	-- Crimson Templar <Abyssal Council>
 							["cost"] = { { "i", 20416, 1 } },	-- Crest of Beckoning: Fire
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20657, {	-- Crystal Tipped Stiletto
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20655, {	-- Abyssal Cloth Handwraps
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20656, {	-- Abyssal Mail Sabatons
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20657),	-- Crystal Tipped Stiletto
+								i(20655),	-- Abyssal Cloth Handwraps
+								i(20656),	-- Abyssal Mail Sabatons
 							},
 						}),
 						n(15307, {	-- Earthen Templar <Abyssal Council>
 							["cost"] = { { "i", 20419, 1 } },	-- Crest of Beckoning: Stone
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20663, {	-- Deep Strike Bow
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20661, {	-- Abyssal Leather Gloves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20662, {	-- Abyssal Plate Greaves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20663),	-- Deep Strike Bow
+								i(20661),	-- Abyssal Leather Gloves
+								i(20662),	-- Abyssal Plate Greaves
 							},
 						}),
 						n(15212, {	-- Hoary Templar <Abyssal Council>
 							["cost"] = { { "i", 20418, 1 } },	-- Crest of Beckoning: Thunder
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20660, {	-- Stonecutting Glaive
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20658, {	-- Abyssal Leather Boots
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20659, {	-- Abyssal Mail Handguards
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20660),	-- Stonecutting Glaive
+								i(20658),	-- Abyssal Leather Boots
+								i(20659),	-- Abyssal Mail Handguards
 							},
 						}),
 					},
 				}),
 				o(180461, {	-- Wind Stone
 					["description"] =
-						-- #if AFTER CATA
-						"Before Cataclysm, this was the summoning place of Abyssal Dukes.\nNow, it is unusable as items required for the summonings can't be obtained.",
-						-- #else
 						"Summons one of 4 Abyssal Dukes. The ritual requires a Twilight Trappings set and a medallion of station. To guarantee that a specific Duke is summoned, a Signet of Beckoning can be used.",
-						-- #endif
 					["cost"] = {
 						{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
 						{ "i", 20408, 1 },	-- Twilight Cultist Cowl
@@ -2303,19 +1674,12 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "i", 20407, 1 },	-- Twilight Cultist Robe
 					},
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 25.8, 75.9, MAP.SILITHUS },
-						{ 32.2, 31.2, MAP.SILITHUS },
-						{ 43.3, 41.6, MAP.SILITHUS },
-						-- #else
 						{ 17.2, 84.8, MAP.SILITHUS },
 						{ 37.6, 44.8, MAP.SILITHUS },
 						{ 24.7, 32.7, MAP.SILITHUS },
-						-- #endif
 					},
 					["groups"] = {
 						i(20514, {	-- Abyssal Signet
-							["timeline"] = { REMOVED_4_0_3, DELETED_7_1_5 },
 							["crs"] = {
 								15206,	-- The Duke of Cynders <Abyssal Council>
 								15207,	-- The Duke of Fathoms <Abyssal Council>
@@ -2325,76 +1689,42 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						n(15206, {	-- The Duke of Cynders <Abyssal Council>
 							["cost"] = { { "i", 20432, 1 } },	-- Signet of Beckoning: Fire
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21989, {	-- Cinder of Cynders
-									["timeline"] = { REMOVED_4_0_3 },
-								})),
-								i(20666, {	-- Hardened Steel Warhammer
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20664, {	-- Abyssal Cloth Sash
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20665, {	-- Abyssal Leather Leggings
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(21989),	-- Cinder of Cynders
+								i(20666),	-- Hardened Steel Warhammer
+								i(20664),	-- Abyssal Cloth Sash
+								i(20665),	-- Abyssal Leather Leggings
 							},
 						}),
 						n(15207, {	-- The Duke of Fathoms <Abyssal Council>
 							["cost"] = { { "i", 20436, 1 } },	-- Signet of Beckoning: Water
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20669, {	-- Darkstone Claymore
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20667, {	-- Abyssal Leather Belt
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20668, {	-- Abyssal Mail Legguards
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20669),	-- Darkstone Claymore
+								i(20667),	-- Abyssal Leather Belt
+								i(20668),	-- Abyssal Mail Legguards
 							},
 						}),
 						n(15208, {	-- The Duke of Shards <Abyssal Council>
 							["cost"] = { { "i", 20435, 1 } },	-- Signet of Beckoning: Stone
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20672, {	-- Sparkling Crystal Wand
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20670, {	-- Abyssal Mail Clutch
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20671, {	-- Abyssal Plate Legplates
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20672),	-- Sparkling Crystal Wand
+								i(20670),	-- Abyssal Mail Clutch
+								i(20671),	-- Abyssal Plate Legplates
 							},
 						}),
 						n(15220, {	-- The Duke of Zephyrs <Abyssal Council>
 							["cost"] = { { "i", 20433, 1 } },	-- Signet of Beckoning: Thunder
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20675, {	-- Soulrender
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20674, {	-- Abyssal Cloth Pants
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20673, {	-- Abyssal Plate Girdle
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20675),	-- Soulrender
+								i(20674),	-- Abyssal Cloth Pants
+								i(20673),	-- Abyssal Plate Girdle
 							},
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, o(180466, {	-- Greater Wind Stone
+				o(180466, {	-- Greater Wind Stone
 					["description"] =
-						-- #if AFTER CATA
-						"Before Cataclysm, this was the summoning place of Abyssal High Council.\nNow, it is unusable as items required for the summonings can't be obtained.",
-						-- #else
 						"Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
-						-- #endif
 					["cost"] = {
 						{ "i", 20451, 1 },	-- Twilight Cultist Ring of Lordship
 						{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
@@ -2403,19 +1733,12 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ "i", 20407, 1 },	-- Twilight Cultist Robe
 					},
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 26.9, 74.8, MAP.SILITHUS },
-						{ 32.9, 32.4, MAP.SILITHUS },
-						{ 45.0, 41.9, MAP.SILITHUS },
-						-- #else
 						{ 18.6, 83.5, MAP.SILITHUS },
 						{ 39.6, 45.1, MAP.SILITHUS },
 						{ 25.6, 34.0, MAP.SILITHUS },
-						-- #endif
 					},
 					["groups"] = {
 						i(20515, {	-- Abyssal Scepter
-							["timeline"] = { REMOVED_4_0_3 },
 							["crs"] = {
 								15205,	-- Baron Kazum <Abyssal High Council>
 								15204,	-- High Marshal Whirlaxis <Abyssal High Council>
@@ -2425,120 +1748,56 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						}),
 						n(15205, {	-- Baron Kazum <Abyssal High Council>
 							["cost"] = { { "i", 20449, 1 } },	-- Scepter of Beckoning: Stone
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20688, {	-- Earthen Guard
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20686, {	-- Abyssal Cloth Amice
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20687, {	-- Abyssal Plate Vambraces
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20688),	-- Earthen Guard
+								i(20686),	-- Abyssal Cloth Amice
+								i(20687),	-- Abyssal Plate Vambraces
 							},
 						}),
 						n(15204, {	-- High Marshal Whirlaxis <Abyssal High Council>
 							["cost"] = { { "i", 20448, 1 } },	-- Scepter of Beckoning: Thunder
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20691, {	-- Windshear Cape
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20690, {	-- Abyssal Cloth Wristbands
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20689, {	-- Abyssal Leather Shoulders
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20691),	-- Windshear Cape
+								i(20690),	-- Abyssal Cloth Wristbands
+								i(20689),	-- Abyssal Leather Shoulders
 							},
 						}),
 						n(15305, {	-- Lord Skwol <Abyssal High Council>
 							["cost"] = { { "i", 20450, 1 } },	-- Scepter of Beckoning: Water
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20685, {	-- Wavefront Necklace
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20684, {	-- Abyssal Mail Armguards
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20683, {	-- Abyssal Plate Epaulets
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20685),	-- Wavefront Necklace
+								i(20684),	-- Abyssal Mail Armguards
+								i(20683),	-- Abyssal Plate Epaulets
 							},
 						}),
 						n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 							["cost"] = { { "i", 20447, 1 } },	-- Scepter of Beckoning: Fire
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20682, {	-- Elemental Focus Band
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20681, {	-- Abyssal Leather Bracers
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20680, {	-- Abyssal Mail Pauldrons
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20682),	-- Elemental Focus Band
+								i(20681),	-- Abyssal Leather Bracers
+								i(20680),	-- Abyssal Mail Pauldrons
 							},
 						}),
 					},
-				})),
-				n(50737, {	-- Acroniss
-					["coord"] = { 73.6, 16.0, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_1_0 },
-				}),
-				n(50746, {	-- Bornix the Burrower
-					["coord"] = { 63.0, 89.0, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
-				}),
-				n(50897, {	-- Ffexk the Dunestalker
-					["coord"] = { 32.1, 53.8, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14472, {	-- Gretheer
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 36.2, 39.6, MAP.SILITHUS },
-						{ 45.2, 51.4, MAP.SILITHUS },
-						{ 52.2, 55.2, MAP.SILITHUS },
-						{ 64.2, 58.2, MAP.SILITHUS },
-						-- #else
 						{ 28.8, 42.2, MAP.SILITHUS },
 						{ 39.8, 55.2, MAP.SILITHUS },
 						{ 48.8, 62.6, MAP.SILITHUS },
 						{ 61.8, 64.4, MAP.SILITHUS },
-						-- #endif
 					},
 				}),
 				n(14477, {	-- Grubthor
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 34.6, 72.8, MAP.SILITHUS },
-						{ 49.2, 72.6, MAP.SILITHUS },
-						{ 41.2, 64.8, MAP.SILITHUS },
-						{ 50.0, 62.8, MAP.SILITHUS },
-						-- #else
 						{ 27.2, 82.0, MAP.SILITHUS },
 						{ 36.2, 71.6, MAP.SILITHUS },
 						{ 48.6, 67.2, MAP.SILITHUS },
 						{ 44.8, 80.2, MAP.SILITHUS },
-						-- #endif
 					},
 				}),
 				n(14478, {	-- Huricanian
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 33.8, 14.6, MAP.SILITHUS },
-						{ 36.2, 17.8, MAP.SILITHUS },
-						{ 36.8, 21.0, MAP.SILITHUS },
-						{ 36.8, 23.6, MAP.SILITHUS },
-						{ 33.2, 26.4, MAP.SILITHUS },
-						{ 30.8, 26.2, MAP.SILITHUS },
-						{ 30.2, 24.2, MAP.SILITHUS },
-						{ 29.4, 19.2, MAP.SILITHUS },
-						-- #else
 						{ 29.4, 24.4, MAP.SILITHUS },
 						{ 29.8, 19.8, MAP.SILITHUS },
 						{ 28.2, 16.0, MAP.SILITHUS },
@@ -2549,40 +1808,18 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ 22.2, 26.2, MAP.SILITHUS },
 						{ 23.0, 28.8, MAP.SILITHUS },
 						{ 26.0, 26.8, MAP.SILITHUS },
-						-- #endif
 					},
-				}),
-				n(50370, {	-- Karapax
-					["coord"] = { 57.5, 14.8, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14476, {	-- Krellack
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 62.4, 18.6, MAP.SILITHUS },
-						{ 67.6, 28.8, MAP.SILITHUS },
-						{ 69.8, 37.4, MAP.SILITHUS },
-						{ 64.8, 39.4, MAP.SILITHUS },
-						-- #else
 						{ 59.8, 19.6, MAP.SILITHUS },
 						{ 65.8, 30.0, MAP.SILITHUS },
 						{ 62.8, 42.4, MAP.SILITHUS },
 						{ 69.6, 41.0, MAP.SILITHUS },
-						-- #endif
 					},
 				}),
 				n(14473, {	-- Lapress
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 58.6, 66.8, MAP.SILITHUS },
-						{ 55.4, 71.0, MAP.SILITHUS },
-						{ 57.6, 76.0, MAP.SILITHUS },
-						{ 60.8, 68.8, MAP.SILITHUS },
-						{ 61.6, 66.0, MAP.SILITHUS },
-						{ 63.0, 73.4, MAP.SILITHUS },
-						{ 65.6, 75.2, MAP.SILITHUS },
-						{ 63.6, 82.0, MAP.SILITHUS },
-						-- #else
 						{ 54.4, 83.8, MAP.SILITHUS },
 						{ 55.2, 89.8, MAP.SILITHUS },
 						{ 63.8, 91.6, MAP.SILITHUS },
@@ -2590,91 +1827,46 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						{ 64.2, 83.6, MAP.SILITHUS },
 						{ 64.8, 82.4, MAP.SILITHUS },
 						{ 64.2, 79.4, MAP.SILITHUS },
-						-- #endif
 					},
-				}),
-				n(50745, {	-- Losaj
-					["coord"] = { 42.6, 56.6, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
-				}),
-				n(50743, {	-- Manax
-					["coord"] = { 67.5, 66.6, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
-				}),
-				n(50742, {	-- Qem
-					["coord"] = { 44.0, 17.2, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
-				}),
-				n(50744, {	-- Qu'rik
-					["coord"] = { 54.6, 26.6, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14475, {	-- Rex Ashil
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 51.0, 23.0, MAP.SILITHUS },
-						{ 52.0, 24.8, MAP.SILITHUS },
-						{ 51.6, 26.6, MAP.SILITHUS },
-						-- #else
 						{ 47.2, 23.8, MAP.SILITHUS },
 						{ 47.6, 26.6, MAP.SILITHUS },
 						{ 46.0, 28.4, MAP.SILITHUS },
-						-- #endif
 					},
 				}),
 				n(14471, {	-- Setis
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 36.0, 82.8, MAP.SILITHUS },
-						-- #else
 						{ 48.0, 82.6, MAP.SILITHUS },
 						{ 22.2, 80.6, MAP.SILITHUS },
 						{ 27.8, 86.6, MAP.SILITHUS },
 						{ 22.6, 87.2, MAP.SILITHUS },
-						-- #endif
 					},
-				}),
-				n(51004, {	-- Toxx
-					["coord"] = { 42.8, 18.2, MAP.SILITHUS },
-					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14479, {	-- Twilight Lord Everun <Twilight's Hammer>
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 44.2, 40.2, MAP.SILITHUS },
-						{ 45.2, 42.6, MAP.SILITHUS },
-						{ 33.0, 30.0, MAP.SILITHUS },
-						{ 35.0, 30.8, MAP.SILITHUS },
-						-- #else
 						{ 25.6, 33.4, MAP.SILITHUS },
 						{ 40.2, 44.6, MAP.SILITHUS },
 						{ 19.8, 83.8, MAP.SILITHUS },
-						-- #endif
 					},
 					["groups"] = {
-						applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						})),
+						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
 				}),
 				n(14474, {	-- Zora
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 33.8, 53.4, MAP.SILITHUS },
-						{ 32.0, 55.8, MAP.SILITHUS },
-						-- #else
 						{ 20.2, 58.2, MAP.SILITHUS },
 						{ 23.6, 61.8, MAP.SILITHUS },
 						{ 17.6, 65.8, MAP.SILITHUS },
 						{ 24.0, 71.2, MAP.SILITHUS },
-						-- #endif
 					},
 				}),
 			}),
 			n(REWARDS, {
 				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
-					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20808, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Combat Assignment
+					i(20808, {	-- Combat Assignment
 						i(22648, {	-- Hive'Ashi Dossier
 							i(21749),	-- Combat Task Briefing I
 							i(21750),	-- Combat Task Briefing II
@@ -2693,128 +1885,92 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(21250),	-- Combat Task Briefing VI
 							i(21251),	-- Combat Task Briefing VII
 						}),
-					}))),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20419, {	-- Crest of Beckoning: Earth
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20419, {	-- Crest of Beckoning: Earth
 						["cost"] = {
 							{ "i", 20527, 1 },	-- Scroll: Create Crest of Beckoning (Earth)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 12365, 1 },	-- Dense Stone
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20416, {	-- Crest of Beckoning: Fire
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20416, {	-- Crest of Beckoning: Fire
 						["cost"] = {
 							{ "i", 20518, 1 },	-- Scroll: Create Crest of Beckoning (Fire)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 4625, 1 },	-- Firebloom
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20418, {	-- Crest of Beckoning: Thunder
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20418, {	-- Crest of Beckoning: Thunder
 						["cost"] = {
 							{ "i", 20526, 1 },	-- Scroll: Create Crest of Beckoning (Thunder)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 7069, 1 },	-- Elemental Air
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20420, {	-- Crest of Beckoning: Water
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20420, {	-- Crest of Beckoning: Water
 						["cost"] = {
 							{ "i", 20528, 1 },	-- Scroll: Create Crest of Beckoning (Water)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 4791, 1 },	-- Enchanted Water
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20449, {	-- Scepter of Beckoning: Stone
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20449, {	-- Scepter of Beckoning: Stone
 						["cost"] = {
 							{ "i", 20543, 1 },	-- Scroll: Create Scepter of Beckoning (Earth)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 12365, 20 },	-- Dense Stone
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20447, {	-- Scepter of Beckoning: Fire
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20447, {	-- Scepter of Beckoning: Fire
 						["cost"] = {
 							{ "i", 20540, 1 },	-- Scroll: Create Scepter of Beckoning (Fire)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 4625, 20 },	-- Firebloom
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20448, {	-- Scepter of Beckoning: Thunder
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20448, {	-- Scepter of Beckoning: Thunder
 						["cost"] = {
 							{ "i", 20542, 1 },	-- Scroll: Create Scepter of Beckoning (Thunder)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 7069, 20 },	-- Elemental Air
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20450, {	-- Scepter of Beckoning: Water
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20450, {	-- Scepter of Beckoning: Water
 						["cost"] = {
 							{ "i", 20544, 1 },	-- Scroll: Create Scepter of Beckoning (Water)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 4791, 20 },	-- Enchanted Water
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20435, {	-- Signet of Beckoning: Stone
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20435, {	-- Signet of Beckoning: Stone
 						["cost"] = {
 							{ "i", 20533, 1 },	-- Scroll: Create Signet of Beckoning (Earth)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 12365, 5 },	-- Dense Stone
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20432, {	-- Signet of Beckoning: Fire
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20432, {	-- Signet of Beckoning: Fire
 						["cost"] = {
 							{ "i", 20531, 1 },	-- Scroll: Create Signet of Beckoning (Fire)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 4625, 5 },	-- Firebloom
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20433, {	-- Signet of Beckoning: Thunder
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20433, {	-- Signet of Beckoning: Thunder
 						["cost"] = {
 							{ "i", 20532, 1 },	-- Scroll: Create Signet of Beckoning (Thunder)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 7069, 5 },	-- Elemental Air
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20436, {	-- Signet of Beckoning: Water
-						-- #if AFTER CATA
-						["description"] = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
-						-- #endif
+					}),
+					i(20436, {	-- Signet of Beckoning: Water
 						["cost"] = {
 							{ "i", 20535, 1 },	-- Scroll: Create Signet of Beckoning (Water)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 4791, 5 },	-- Enchanted Water
 						},
-					})),
-					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20469, {	-- Decoded True Believer Clippings
+					}),
+					i(20469, {	-- Decoded True Believer Clippings
 						["description"] = "This will arrive in your mailbox approximately 12-24 hours if either of the quests are turned in.",
 						["sourceQuests"] = {
 							8324,	-- Still Believing
@@ -2825,72 +1981,24 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(20547),	-- Pattern: Runed Stygian Boots (RECIPE!)
 							i(20548),	-- Pattern: Runed Stygian Belt (RECIPE!)
 							i(20546),	-- Pattern: Runed Stygian Leggings (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20554)),	-- Plans: Darkrune Breastplate (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20553)),	-- Plans: Darkrune Gauntlets (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20555)),	-- Plans: Darkrune Helm (RECIPE!)
-							i(20527, {	-- Scroll: Create Crest of Beckoning (Earth)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20518, {	-- Scroll: Create Crest of Beckoning (Fire)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20526, {	-- Scroll: Create Crest of Beckoning (Thunder)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20528, {	-- Scroll: Create Crest of Beckoning (Water)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20543, {	-- Scroll: Create Scepter of Beckoning (Earth)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20540, {	-- Scroll: Create Scepter of Beckoning (Fire)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20542, {	-- Scroll: Create Scepter of Beckoning (Thunder)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20544, {	-- Scroll: Create Scepter of Beckoning (Water)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20533, {	-- Scroll: Create Signet of Beckoning (Earth)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20531, {	-- Scroll: Create Signet of Beckoning (Fire)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20532, {	-- Scroll: Create Signet of Beckoning (Thunder)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
-							i(20535, {	-- Scroll: Create Signet of Beckoning (Water)
-								-- #if AFTER CATA
-								["description"] = "Even though this scroll can still be obtained, it became useless after the release of Cataclysm because the rest of the items are no longer obtainable.\n|cFFE50D12Spending materials listed in the tooltip would be considered a waste.|r",
-								-- #endif
-							}),
+							i(20554),	-- Plans: Darkrune Breastplate (RECIPE!)
+							i(20553),	-- Plans: Darkrune Gauntlets (RECIPE!)
+							i(20555),	-- Plans: Darkrune Helm (RECIPE!)
+							i(20527),	-- Scroll: Create Crest of Beckoning (Earth)
+							i(20518),	-- Scroll: Create Crest of Beckoning (Fire)
+							i(20526),	-- Scroll: Create Crest of Beckoning (Thunder)
+							i(20528),	-- Scroll: Create Crest of Beckoning (Water)
+							i(20543),	-- Scroll: Create Scepter of Beckoning (Earth)
+							i(20540),	-- Scroll: Create Scepter of Beckoning (Fire)
+							i(20542),	-- Scroll: Create Scepter of Beckoning (Thunder)
+							i(20544),	-- Scroll: Create Scepter of Beckoning (Water)
+							i(20533),	-- Scroll: Create Signet of Beckoning (Earth)
+							i(20531),	-- Scroll: Create Signet of Beckoning (Fire)
+							i(20532),	-- Scroll: Create Signet of Beckoning (Thunder)
+							i(20535),	-- Scroll: Create Signet of Beckoning (Water)
 						},
-					})),
-					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20805, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
+					}),
+					i(20805, {	-- Followup Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(20807),	-- Logistics Task Briefing I (A)
@@ -2900,8 +2008,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(21265),	-- Logistics Task Briefing IX (A)
 							i(21514),	-- Logistics Task Briefing XI
 						},
-					}))),
-					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21386, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (H)
+					}),
+					i(21386, {	-- Followup Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21378),	-- Logistics Task Briefing I (H)
@@ -2911,16 +2019,16 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(21381),	-- Logistics Task Briefing IX (H)
 							i(21514),	-- Logistics Task Briefing XI
 						},
-					}))),
-					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21133, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Tactical Assignment
+					}),
+					i(21133, {	-- Followup Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(20945),	-- Tactical Task Briefing II
 						i(20947),	-- Tactical Task Briefing IV
 						i(20948),	-- Tactical Task Briefing V
 						i(21167),	-- Tactical Task Briefing VIII
 						i(20943),	-- Tactical Task Briefing X
-					}))),
-					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21132, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (A)
+					}),
+					i(21132, {	-- Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(21257),	-- Logistics Task Briefing IV (A)
@@ -2929,8 +2037,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(21263),	-- Logistics Task Briefing VII (A)
 							i(20806),	-- Logistics Task Briefing X (A)
 						},
-					}))),
-					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21266, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (H)
+					}),
+					i(21266, {	-- Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21258),	-- Logistics Task Briefing IV (H)
@@ -2939,268 +2047,109 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							i(21264),	-- Logistics Task Briefing VII (H)
 							i(21385),	-- Logistics Task Briefing X (H)
 						},
-					}))),
-					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20809, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Tactical Assignment
+					}),
+					i(20809, {	-- Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(21751),	-- Tactical Task Briefing III
 						i(20944),	-- Tactical Task Briefing IX
 						i(21165),	-- Tactical Task Briefing VI
 						i(21166),	-- Tactical Task Briefing VII
-					}))),
+					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(TREASURES, {
-				applyclassicphase(SOD_PHASE_FOUR, i(226409, {	-- Rune of Dagger Specialization
-					["provider"] = { "o", 457100 },	-- Renzik's Thoughts on "Fair" Fighting
-					["coord"] = { 20.0, 85.1, MAP.SILITHUS },
-					["timeline"] = { ADDED_1_15_3 },
-					["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
-					["groups"] = {
-						recipe(453690, {	-- Engrave Ring - Dagger Specialization
-							["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
-						}),
-					},
-				})),
-				applyclassicphase(SOD_PHASE_FOUR, i(226411, {	-- Rune of Fist Weapon Specialization
-					["provider"] = { "o", 457096 },	-- Be First: A Brawler's Guide to Boxing
-					["coord"] = { 38.2, 45.5, MAP.SILITHUS },
-					["timeline"] = { ADDED_1_15_3 },
-					["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
-					["groups"] = {
-						recipe(453691, {	-- Engrave Ring - Fist Weapon Specialization
-							["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
-						}),
-					},
-				})),
-			}),
-			-- #endif
 			n(VENDORS, {
 				n(15293, {	-- Aendel Windspear
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 64.6, 45.8, MAP.SILITHUS },
-						-- #else
-						{ 62.6, 49.8, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 62.6, 49.8, MAP.SILITHUS },
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22769)),	-- Pattern: Bramblewood Belt (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20509)),	-- Pattern: Sandstalker Bracers (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20506)),	-- Pattern: Spitfire Bracers (RECIPE!)
+							i(22769),	-- Pattern: Bramblewood Belt (RECIPE!)
+							i(20509),	-- Pattern: Sandstalker Bracers (RECIPE!)
+							i(20506),	-- Pattern: Spitfire Bracers (RECIPE!)
 						}, {	-- Honored
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22770)),	-- Pattern: Bramblewood Boots (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20507)),	-- Pattern: Spitfire Gauntlets (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20510)),	-- Pattern: Sandstalker Gauntlets (RECIPE!)
+							i(22770),	-- Pattern: Bramblewood Boots (RECIPE!)
+							i(20507),	-- Pattern: Spitfire Gauntlets (RECIPE!)
+							i(20510),	-- Pattern: Sandstalker Gauntlets (RECIPE!)
 						}, {	-- Revered
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22771)),	-- Pattern: Bramblewood Helm (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20511)),	-- Pattern: Sandstalker Breastplate (RECIPE!)
-							applyclassicphase(PHASE_FOUR, i(20508)),	-- Pattern: Spitfire Breastplate (RECIPE!)
+							i(22771),	-- Pattern: Bramblewood Helm (RECIPE!)
+							i(20511),	-- Pattern: Sandstalker Breastplate (RECIPE!)
+							i(20508),	-- Pattern: Spitfire Breastplate (RECIPE!)
 						}, {	-- Exalted
-							applyclassicphase(PHASE_FOUR, i(20382)),	-- Pattern: Dreamscale Breastplate (RECIPE!)
+							i(20382),	-- Pattern: Dreamscale Breastplate (RECIPE!)
 						},
 					}),
 				}),
 				n(15174, {	-- Calandrath <Innkeeper>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.5, 36.8, MAP.SILITHUS },
-						-- #else
-						{ 51.8, 39.0, MAP.SILITHUS },
-						-- #endif
-					},
-					["groups"] = {
-						i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
-							["timeline"] = { ADDED_4_0_3 },
-							["isLimited"] = true,
-						}),
-					},
+					["coord"] = { 51.8, 39.0, MAP.SILITHUS },
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.6, 37.2, MAP.SILITHUS },
-						-- #else
-						{ 52.0, 39.7, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 52.0, 39.7, MAP.SILITHUS },
 					["sym"] = {
 						{ "select","itemID",
 							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 							20752,	-- Formula: Minor Mana Oil (RECIPE!)
 							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
 							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-							-- #if BEFORE CATA
 							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							-- #endif
 						},
 					},
 					["groups"] = {
-						applyclassicphase(PHASE_FIVE, i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance (RECIPE!)
-							["timeline"] = { REMOVED_5_0_4 },
-						})),
-						applyclassicphase(PHASE_FIVE, i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance (RECIPE!)
-							["timeline"] = { REMOVED_5_0_4 },
-						})),
+						i(20732),	-- Formula: Enchant Cloak - Greater Fire Resistance (RECIPE!)
+						i(20733),	-- Formula: Enchant Cloak - Greater Nature Resistance (RECIPE!)
 						i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234272, {	-- Formula: Enchanted Repellent (RECIPE!)
-							["timeline"] = { ADDED_1_15_5 },
-						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234271, {	-- Formula: Scroll: Wrath of the Swarm (RECIPE!)
-							["timeline"] = { ADDED_1_15_5 },
-						})),
-						-- #endif
 						i(20755),	-- Formula: Wizard Oil (RECIPE!)
-						applyclassicphase(PHASE_FIVE_RECIPES, i(22308)),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
+						i(22308),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
 					},
 				}),
 				n(15175, {	-- Khur Hornstriker <Reagent Vendor>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 52.8, 34.8, MAP.SILITHUS },
-						-- #else
-						{ 48.8, 37.0, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 48.8, 37.0, MAP.SILITHUS },
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234260, {		-- Recipe: Elixir of Alacrity (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
 						}, {	-- Honored
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234259, {		-- Recipe: Elixir of the Ironside (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							applyclassicphase(SOD_PHASE_SIX, i(234257, {		-- Recipe: Elixir of the Honey Badger (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							applyclassicphase(SOD_PHASE_SIX, i(234258, {		-- Recipe: Elixir of the Mage-Lord (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
 						}, {	-- Revered
 						}, {	-- Exalted
 						},
 					}),
 				}),
-				n(15179, {	-- Mishta <Trade Supplies> [TBC+] / Mishta <General Trade Goods Vendor>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.8, 34.3, MAP.SILITHUS },
-						-- #else
-						{ 49.8, 36.4, MAP.SILITHUS },
-						-- #endif
-					},
+				n(15179, {	-- Mishta <General Trade Goods Vendor>
+					["coord"] = { 49.8, 36.4, MAP.SILITHUS },
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
-							applyclassicphase(TBC_PHASE_ONE, i(21952, {	-- Design: Emerald Crown of Destruction (RECIPE!)
-								["timeline"] = { ADDED_2_0_5 },
-								["isLimited"] = true,
-							})),
 						}, {	-- Friendly
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234445, {		-- Pattern: Bolt of Qiraji Silk (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
-							applyclassicphase(PHASE_FIVE, i(22310)),	-- Pattern: Cenarion Herb Bag (RECIPE!)
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22772,	{	-- Pattern: Sylvan Shoulders (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-								["timeline"] = { REMOVED_1_15_5 },
-							-- #endif
-							})),
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234314, {	-- Pattern: Sylvan Shoulders (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							applyclassicphase(SOD_PHASE_SIX, i(234263, {		-- Schematic: Obsidian Bomb (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
+							i(22310),	-- Pattern: Cenarion Herb Bag (RECIPE!)
+							i(22772,	{	-- Pattern: Sylvan Shoulders (RECIPE!)
+							}),
 						}, {	-- Honored
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22773,	{	-- Pattern: Sylvan Crown (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-								["timeline"] = { REMOVED_1_15_5 },
-							-- #endif
-							})),
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234316, {	-- Pattern: Sylvan Crown (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							applyclassicphase(SOD_PHASE_SIX, i(234262, {		-- Schematic: The Fumigator (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
+							i(22773,	{	-- Pattern: Sylvan Crown (RECIPE!)
+							}),
 						}, {	-- Revered
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22683)),	-- Pattern: Gaea's Embrace (RECIPE!)
-							applyclassicphase(PHASE_FIVE, i(22312)),	-- Pattern: Satchel of Cenarius (RECIPE!)
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22774,	{	-- Pattern: Sylvan Vest (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-								["timeline"] = { REMOVED_1_15_5 },
-							-- #endif
-							})),
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234318, {	-- Pattern: Sylvan Vest (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							applyclassicphase(SOD_PHASE_SIX, i(234261, {	-- Schematic: Arcane Megabomb (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
+							i(22683),	-- Pattern: Gaea's Embrace (RECIPE!)
+							i(22312),	-- Pattern: Satchel of Cenarius (RECIPE!)
+							i(22774,	{	-- Pattern: Sylvan Vest (RECIPE!)
+							}),
 						}, {	-- Exalted
 						},
 					}),
 				}),
 				n(15176, {	-- Vargus <Blacksmith>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.0, 36.5, MAP.SILITHUS },
-						-- #else
-						{ 51.2, 38.8, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 51.2, 38.8, MAP.SILITHUS },
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
-							applyclassicphase(PHASE_FIVE, i(22209)),			-- Plans: Heavy Obsidian Belt (RECIPE!)
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22768)),	-- Plans: Ironvine Belt (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234279, {		-- Plans: Obsidian Grinding Stone (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							applyclassicphase(SOD_PHASE_SIX, i(234280, {		-- Schematic: Obsidian Blasting Powder (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
+							i(22209),			-- Plans: Heavy Obsidian Belt (RECIPE!)
+							i(22768),	-- Plans: Ironvine Belt (RECIPE!)
 						}, {	-- Honored
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234278, {		-- Manual: Smelt Obsidian-Infused Thorium Bar (RECIPE!)
-								["timeline"] = { ADDED_1_15_5 },
-							})),
-							-- #endif
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22767)),	-- Plans: Ironvine Gloves (RECIPE!)
-							applyclassicphase(PHASE_FIVE, i(22214)),	-- Plans: Light Obsidian Belt (RECIPE!)
+							i(22767),	-- Plans: Ironvine Gloves (RECIPE!)
+							i(22214),	-- Plans: Light Obsidian Belt (RECIPE!)
 						}, {	-- Revered
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22766)),	-- Plans: Ironvine Breastplate (RECIPE!)
+							i(22766),	-- Plans: Ironvine Breastplate (RECIPE!)
 						}, {	-- Exalted
 						},
 					}),
 				}),
 				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 81.2, 18.6, MAP.SILITHUS },
-						-- #else
-						{ 81.8, 17.8, MAP.SILITHUS },
-						-- #endif
-					},
+					["coord"] = { 81.8, 17.8, MAP.SILITHUS },
 					["groups"] = {
 						i(15724, {	-- Pattern: Heavy Scorpid Bracers (RECIPE!)
 							["isLimited"] = true,
@@ -3212,9 +2161,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_SIX, i(234010)),	-- Ancient Sandworm Bile
-				-- #endif
 				i(20404, {	-- Encrypted Twilight Text
 					["crs"] = {
 						15308,	-- Twilight Prophet <Twilight's Hammer>
@@ -3236,9 +2182,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						11741,	-- Dredge Crusher
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, i(20384, {	-- Silithid Carapace Fragment
+				i(20384, {	-- Silithid Carapace Fragment
 					["provider"] = { "i", 20402 },	-- Agent of Nozdormu
-					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						13301,	-- Hive'Ashi Ambusher
 						11722,	-- Hive'Ashi Defender
@@ -3259,18 +2204,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						11725,	-- Hive'Zora Waywatcher
 						15759,	-- Supreme Silithid Flayer
 					},
-				})),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_SIX, i(234008)),	-- Qiraji Silk
-				applyclassicphase(SOD_PHASE_SIX, i(234011)),	-- Qiraji Stalker Venom
-				-- #endif
+				}),
 				i(20408, {	-- Twilight Cultist Cowl
-					-- #if BEFORE 10.0.5
-					-- #if AFTER 4.0.3
-					["description"] = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
-					-- #endif
-					-- #endif
-					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
 						15201,	-- Twilight Flamereaver
@@ -3284,12 +2219,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(20406, {	-- Twilight Cultist Mantle
-					-- #if BEFORE 10.0.5
-					-- #if AFTER 4.0.3
-					["description"] = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
-					-- #endif
-					-- #endif
-					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
 						15201,	-- Twilight Flamereaver
@@ -3303,12 +2232,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				i(20407, {	-- Twilight Cultist Robe
-					-- #if BEFORE 10.0.5
-					-- #if AFTER 4.0.3
-					["description"] = "In order to collect this, you'll need to bind it to you such as by using an enchant / armor kit on a Cloth user and then relog.",
-					-- #endif
-					-- #endif
-					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
 						15201,	-- Twilight Flamereaver
