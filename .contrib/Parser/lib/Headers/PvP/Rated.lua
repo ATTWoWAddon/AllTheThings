@@ -1,6 +1,10 @@
 RATED = createHeader({
 	readable = "Rated",
+	-- #if AFTER 8.0.1
 	icon = 2022761,
+	-- #else
+	icon = 132487,
+	-- #endif
 	text = {
 		en = [[~PVP_TAB_CONQUEST]],
 	},
