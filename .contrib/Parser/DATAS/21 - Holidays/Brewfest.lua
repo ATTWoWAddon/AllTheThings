@@ -996,6 +996,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 
 				-- Burning Crusade
 				-- #if CLASSIC_ANNIVERSARY
+				i(281893, {	-- Balebrew Charm [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281895, {	-- Brightbrew Charm [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
+				i(281743, {	-- Coren's Lucky Coin [Level 70, 178 GS]
+					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+				}),
 				i(281735, {	-- Dark Iron Smoking Pipe [Level 70, 178 GS]
 					["timeline"] = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
@@ -1306,14 +1315,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(11293, {	-- Bark for the Barleybrews! (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11293,	-- Bark for the Barleybrews! (A)
-						11294,	-- Bark for the Thunderbrews! (A)
-					},
-					]]--
+					["altQuests"] = { 11294 },	-- Bark for the Thunderbrews! (A)
 					["qg"] = 23627,	-- Becan Barleybrew
+					["qi"] = 33306,	-- Ram Racing Reins
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 56.0, 38.0, DUN_MOROGH },
@@ -1323,21 +1327,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_11_2_0 },
 					["maps"] = { IRONFORGE },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11407, {	-- Bark for Drohn's Distillery! (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11407,	-- Bark for Drohn's Distillery! (H)
-						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
-					},
-					]]--
+					["altQuests"] = { 11408 },	-- Bark for T'chali's Voodoo Brewery! (H)
 					["qg"] = 24498,	-- Cort Gorestein
+					["qi"] = 33306,	-- Ram Racing Reins
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.5, 18.3, DUROTAR },
@@ -1347,21 +1345,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_11_2_0 },
 					["maps"] = { ORGRIMMAR },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11294, {	-- Bark for the Thunderbrews! (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11293,	-- Bark for the Barleybrews! (A)
-						11294,	-- Bark for the Thunderbrews! (A)
-					},
-					]]--
+					["altQuests"] = { 11293 },	-- Bark for the Barleybrews! (A)
 					["qg"] = 23628,	-- Daran Thunderbrew
+					["qi"] = 33306,	-- Ram Racing Reins
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 56.6, 36.8, DUN_MOROGH },
@@ -1371,21 +1363,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["timeline"] = { ADDED_2_2_2, REMOVED_11_2_0 },
 					["maps"] = { IRONFORGE },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery! (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
-					--[[
-					-- TODO: If they don't both check off when you complete one, uncomment.
-					["altQuests"] = {
-						11407,	-- Bark for Drohn's Distillery! (H)
-						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
-					},
-					]]--
-					["qg"] = 24498,	-- Cort Gorestein
+					["altQuests"] = { 11407 },	-- Bark for Drohn's Distillery! (H)
+					["qg"] = 24499,	-- Ja'ron
+					["qi"] = 33306,	-- Ram Racing Reins
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.5, 18.3, DUROTAR },
@@ -1757,7 +1743,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["timeline"] = { ADDED_3_2_0 },
 						}),
 						i(32233, {	-- Wolpertinger (PET!)
-							["timeline"] = { ADDED_2_2_2 },
+							["timeline"] = {
+								-- #if ANYCLASSIC
+								ADDED_3_0_2,
+								-- #else
+								ADDED_2_2_2,
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -1799,7 +1791,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							["timeline"] = { ADDED_3_2_0 },
 						}),
 						i(32233, {	-- Wolpertinger (PET!)
-							["timeline"] = { ADDED_2_2_2 },
+							["timeline"] = {
+								-- #if ANYCLASSIC
+								ADDED_3_0_2,
+								-- #else
+								ADDED_2_2_2,
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -2056,7 +2054,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["timeline"] = {
 						-- #if ANYCLASSIC
-						CREATED_2_2_2, ADDED_3_0_2,
+						ADDED_3_0_2,
 						-- #else
 						ADDED_2_2_2,
 						-- #endif
@@ -2098,7 +2096,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 					["timeline"] = {
 						-- #if ANYCLASSIC
-						CREATED_2_2_2, ADDED_3_0_2,
+						ADDED_3_0_2,
 						-- #else
 						ADDED_2_2_2,
 						-- #endif
@@ -2343,7 +2341,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 		}, {
 			fillstein(i(33016, {	-- Blue Brewfest Stein
+				-- #if ANYCLASSIC
+				["lore"] = "This stein was the reward from TBC Classic Brewfest.",
+				-- #else
 				["lore"] = "This stein was the reward from the 2008 Brewfest.",
+				-- #endif
 				["timeline"] = { ADDED_2_4_3, REMOVED_3_2_0 },
 				["OnInit"] = OnInitForStein(30002),
 				["groups"] = {
