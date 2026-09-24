@@ -51,6 +51,80 @@ local GenerateGroupsForGenericSubGroup = function(t)
 	return spg
 end
 
+local OBJECT_ID_SOURCE_CLIENT_TOOLTIP = "client-tooltip";
+local OBJECT_ID_SOURCE_CLIENT_GUID = "client-guid";
+local ObjectIDSourceNames = {
+	[OBJECT_ID_SOURCE_CLIENT_TOOLTIP] = "Client TooltipData",
+	[OBJECT_ID_SOURCE_CLIENT_GUID] = "Client GameObject GUID",
+};
+
+local function CleanObservedObjectName(name)
+	if not name or app.WOWAPI.issecretvalue(name) then return end
+	return name:gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", ""):trim();
+end
+
+-- Only client-observed ObjectIDs can be used to validate ATT data.
+function app.CheckInaccurateObjectInfo(objectID, clientName, source)
+	if source ~= OBJECT_ID_SOURCE_CLIENT_TOOLTIP and source ~= OBJECT_ID_SOURCE_CLIENT_GUID then
+		return
+	end
+
+	objectID = tonumber(objectID);
+	if not objectID then return end
+
+	if clientName and app.WOWAPI.issecretvalue(clientName) then
+		clientName = nil;
+	end
+
+	local contributor = app.Modules.Contributor;
+	local AddReportData = contributor and contributor.AddReportData;
+	if not AddReportData then return end
+
+	local objectIDSource = ObjectIDSourceNames[source] or source;
+	local objRef = app.SearchForObject("objectID", objectID);
+	if not objRef then
+		if app.Settings:GetTooltipSetting("Report:MissingObjectIDs") then
+			AddReportData(
+				"Missing Object ID",
+				objectID,
+				{
+					id = objectID,
+					type = "Object",
+					ClientName = clientName or UNKNOWN,
+					ATTName = app.ObjectNames[objectID] or UNKNOWN,
+					ObjectIDSource = objectIDSource,
+					MissingObjectID = "ObjectID discovered by the client but not referenced by ATT data.",
+				},
+				"Missing Object ID: " .. objectID
+			);
+		end
+		return
+	end
+
+	if not app.Settings:GetTooltipSetting("Report:ObjectNameMismatch") then return end
+
+	local observedName = CleanObservedObjectName(clientName);
+	if not observedName then return end
+
+	local attName = app.ObjectNames[objectID];
+	local cleanATTName = CleanObservedObjectName(attName);
+	if observedName ~= cleanATTName then
+		AddReportData(
+			"Object Name Mismatch",
+			objectID,
+			{
+				id = objectID,
+				type = "Object",
+				ClientName = clientName,
+				ATTName = attName or "<missing>",
+				ObjectIDSource = objectIDSource,
+				NameMismatch = "Client object name differs from the localized ATT ObjectDB name.",
+			},
+			"Object Name Mismatch: " .. objectID
+		);
+	end
+end
+
 -- Object Lib (as in "World Object")
 app.CreateObject = app.CreateClass("Object", "objectID", {
 	name = function(t)

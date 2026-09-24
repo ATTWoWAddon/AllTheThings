@@ -415,6 +415,8 @@ local TooltipSettingsBase = {
 		["Report:Collected"] = true,
 		["Report:CompletedQuests"] = true,
 		["Report:UnsortedQuests"] = true,
+		["Report:MissingObjectIDs"] = true,
+		["Report:ObjectNameMismatch"] = true,
 		["Report:DeathTracker"] = true,
 
 		-- Nearby Content

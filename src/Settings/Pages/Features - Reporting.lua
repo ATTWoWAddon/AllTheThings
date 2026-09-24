@@ -60,6 +60,26 @@ end)
 checkboxReportUnsourced:SetATTTooltip(L.REPORT_UNSORTED_CHECKBOX_TOOLTIP)
 checkboxReportUnsourced:AlignBelow(checkboxReportQuests, 1)
 
+local checkboxReportMissingObjectIDs = child:CreateCheckBox(L.REPORT_MISSING_OBJECT_IDS_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:MissingObjectIDs"))
+end,
+function(self)
+	settings:SetTooltipSetting("Report:MissingObjectIDs", self:GetChecked())
+end)
+checkboxReportMissingObjectIDs:SetATTTooltip(L.REPORT_MISSING_OBJECT_IDS_CHECKBOX_TOOLTIP)
+checkboxReportMissingObjectIDs:AlignBelow(checkboxReportUnsourced)
+
+local checkboxReportObjectNameMismatch = child:CreateCheckBox(L.REPORT_OBJECT_NAME_MISMATCH_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:ObjectNameMismatch"))
+end,
+function(self)
+	settings:SetTooltipSetting("Report:ObjectNameMismatch", self:GetChecked())
+end)
+checkboxReportObjectNameMismatch:SetATTTooltip(L.REPORT_OBJECT_NAME_MISMATCH_CHECKBOX_TOOLTIP)
+checkboxReportObjectNameMismatch:AlignBelow(checkboxReportMissingObjectIDs)
+
 -- This is only available if the Vignette Info class is available.
 if C_VignetteInfo then
 	local checkboxReportNearby = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_CHECKBOX,
@@ -70,7 +90,7 @@ if C_VignetteInfo then
 		settings:SetTooltipSetting("Nearby:ReportContent", self:GetChecked())
 	end)
 	checkboxReportNearby:SetATTTooltip(L.REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP)
-	checkboxReportNearby:AlignBelow(checkboxReportUnsourced, -1)
+	checkboxReportNearby:AlignBelow(checkboxReportObjectNameMismatch, -1)
 	checkboxReportNearby:MarkAsWIP();
 
 	local checkboxNearbyAutomaticallyPlot = child:CreateCheckBox(L.REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX,

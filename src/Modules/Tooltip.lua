@@ -188,6 +188,84 @@ else
 	end
 end
 
+-- ObjectID provenance: client observations may validate ATT data; ATT DB lookups are fallback only.
+local OBJECT_ID_SOURCE_CLIENT_TOOLTIP = "client-tooltip";
+local OBJECT_ID_SOURCE_CLIENT_GUID = "client-guid";
+local OBJECT_ID_SOURCE_ATT_DB = "att-db";
+local C_TooltipInfo_GetWorldCursor = C_TooltipInfo and C_TooltipInfo.GetWorldCursor;
+local TooltipDataType_Object = Enum and Enum.TooltipDataType and Enum.TooltipDataType.Object;
+
+local function GetObjectNameFromTooltipData(tooltipData)
+	local lines = tooltipData and tooltipData.lines;
+	local line = lines and lines[1];
+	local name = line and line.leftText;
+	if name and not issecretvalue(name) then
+		return name;
+	end
+end
+
+local function GetClientObjectID(tooltipData)
+	if tooltipData then
+		local ttType = tooltipData.type;
+		if not TooltipDataType_Object or issecretvalue(ttType) or ttType ~= TooltipDataType_Object then
+			return
+		end
+	else
+		if not C_TooltipInfo_GetWorldCursor or not TooltipDataType_Object then return end
+		local ok, worldData = pcall(C_TooltipInfo_GetWorldCursor);
+		if not ok or not worldData then return end
+		local ttType = worldData.type;
+		if issecretvalue(ttType) or ttType ~= TooltipDataType_Object then return end
+		tooltipData = worldData;
+	end
+
+	local clientName = GetObjectNameFromTooltipData(tooltipData);
+	local tooltipID = tooltipData.id;
+	if tooltipID and not issecretvalue(tooltipID) then
+		tooltipID = tonumber(tooltipID);
+		if tooltipID and tooltipID > 0 then
+			return tooltipID, clientName, OBJECT_ID_SOURCE_CLIENT_TOOLTIP;
+		end
+	end
+
+	local guid = UnitGUID("softinteract");
+	if not guid or issecretvalue(guid) then return end
+
+	local guidType, _, _, _, _, objectID = ("-"):split(guid);
+	if guidType ~= "GameObject" then return end
+
+	objectID = tonumber(objectID);
+	if not objectID or objectID < 1 then return end
+
+	local softInteractName = UnitName("softinteract");
+	if softInteractName and issecretvalue(softInteractName) then
+		softInteractName = nil;
+	end
+	if clientName and softInteractName
+		and CleanColor(clientName):trim() ~= CleanColor(softInteractName):trim()
+	then
+		return
+	end
+
+	return objectID, clientName or softInteractName, OBJECT_ID_SOURCE_CLIENT_GUID;
+end
+
+local function ResolveObjectID(tooltipData, fallbackName)
+	local objectID, objectName, source = GetClientObjectID(tooltipData);
+	if objectID then
+		return objectID, objectName, source;
+	end
+
+	objectName = GetObjectNameFromTooltipData(tooltipData) or fallbackName;
+	if objectName and issecretvalue(objectName) then
+		objectName = nil;
+	end
+	objectID = GetBestObjectIDForName(objectName);
+	if objectID then
+		return objectID, objectName, OBJECT_ID_SOURCE_ATT_DB;
+	end
+end
+
 -- For some reason, Blizzard puts some secure access functionality within the GetOwner() call on certain
 -- tooltips, which means when ATT checks the Owner via this function, a secure code taint error is thrown
 local function SafeGetOwner(tooltip)
@@ -755,6 +833,11 @@ local function ClearTooltip(tooltip)
 	-- app.PrintDebug("Clear Tooltip",SafeGetName(tooltip));
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
+	tooltip.ATT_SearchField = nil;
+	tooltip.ATT_SearchID = nil;
+	tooltip.ATT_ObjectIDSource = nil;
+	tooltip.ATT_ObjectValidationKey = nil;
+	tooltip.ATT_ObjectScanElapsed = nil;
 end
 local function ReshowGametooltip(tt)
 	tt = tt or GameTooltip
@@ -856,6 +939,36 @@ do
 		self.ATT_SearchField = field
 		self.ATT_SearchID = id
 		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), SearchOptionByField[field])
+	end
+end
+
+local function AttachObjectSearchResults(self, objectID, clientName, source)
+	if not self.AllTheThingsOnTooltipClearedHook then
+		pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
+		self.AllTheThingsOnTooltipClearedHook = true;
+	end
+
+	self.AllTheThingsProcessing = self.AllTheThingsProcessing or ("objectID:" .. objectID);
+	self.ATT_ObjectIDSource = source;
+
+	if source ~= OBJECT_ID_SOURCE_ATT_DB and app.CheckInaccurateObjectInfo then
+		local validationKey = source .. ":" .. objectID;
+		if self.ATT_ObjectValidationKey ~= validationKey then
+			self.ATT_ObjectValidationKey = validationKey;
+			app.CheckInaccurateObjectInfo(objectID, clientName, source);
+		end
+	end
+
+	local objects = SearchForObject("objectID", objectID, "none", true);
+	if objects and #objects > 0 then
+		AttachTypicalSearchResults(self, "objectID", objectID);
+	else
+		self.ATT_SearchField = "objectID";
+		self.ATT_SearchID = objectID;
+		self.ATT_AttachComplete = true;
+		if app.Settings:GetTooltipSetting("objectID") then
+			self:AddDoubleLine(L.OBJECT_ID, tostring(objectID));
+		end
 	end
 end
 
@@ -1137,12 +1250,14 @@ if TooltipDataProcessor and (app.GameBuildVersion > 60000 or app.IsForever) then
 					ttId = select(2, C_MountJournal.GetMountInfoByID(ttId));
 				end
 				if ttType == Enum_TooltipDataType.Object then
-					local objName = ttdata and ttdata.lines[1];
-					objName = objName and objName.leftText;
-					local objectID = GetBestObjectIDForName(objName);
+					local objectID, objectName, source = ResolveObjectID(ttdata);
 					if objectID then
-						knownSearchField = "objectID";
-						ttId = objectID;
+						AttachObjectSearchResults(self, objectID, objectName, source);
+						if self.ATT_AttachComplete == false then
+							app.ReshowGametooltip(self)
+						end
+						self:Show();
+						return true;
 					end
 				end
 				if ttType == Enum_TooltipDataType.MinimapMouseover then
@@ -1272,9 +1387,10 @@ else
 				-- If the owner has a ref, it's an ATT row. Ignore it.
 				if owner and owner.ref then return true; end
 
-				local objectID = GetBestObjectIDForName(_G[SafeGetName(self) .. "TextLeft1"]:GetText());
+				local tooltipName = _G[SafeGetName(self) .. "TextLeft1"]:GetText();
+				local objectID, objectName, source = ResolveObjectID(nil, tooltipName);
 				if objectID then
-					AttachTooltipSearchResults(self, SearchForField, "objectID", objectID);
+					AttachObjectSearchResults(self, objectID, objectName, source);
 					self:Show();
 					return true;
 				end
@@ -1392,6 +1508,41 @@ else
 			end);
 		end
 	end
+end
+
+local function AttachWorldObjectTooltip(self, elapsed)
+	if self.AllTheThingsIgnored or not CanAttachTooltips() then return end
+	if self.ATT_SearchField == "objectID"
+		and self.ATT_ObjectIDSource ~= OBJECT_ID_SOURCE_ATT_DB
+		and self.ATT_AttachComplete == true
+	then
+		return
+	end
+
+	self.ATT_ObjectScanElapsed = (self.ATT_ObjectScanElapsed or 0) + elapsed;
+	if self.ATT_ObjectScanElapsed < 0.1 then return end
+	self.ATT_ObjectScanElapsed = 0;
+
+	local objectID, objectName, source = GetClientObjectID();
+	if not objectID then return end
+
+	if self.ATT_SearchField == "objectID"
+		and self.ATT_SearchID == objectID
+		and self.ATT_ObjectIDSource == source
+		and self.ATT_AttachComplete == true
+	then
+		return
+	end
+
+	AttachObjectSearchResults(self, objectID, objectName, source);
+	if self.ATT_AttachComplete == false then
+		app.ReshowGametooltip(self)
+	end
+	self:Show();
+end
+
+if C_TooltipInfo_GetWorldCursor and TooltipDataType_Object then
+	GameTooltip:HookScript("OnUpdate", AttachWorldObjectTooltip);
 end
 
 -- Tooltip API Implementation
