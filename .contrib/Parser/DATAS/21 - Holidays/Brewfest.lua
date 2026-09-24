@@ -1575,6 +1575,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				q(29394, {	-- Brew For Brewfest (A)
 					["sourceQuest"] = 11122,	-- There and Back Again (A)
 					["qg"] = 23558,	-- Neill Ramstein
+					["qis"] = {
+						33306,	-- Ram Racing Reins
+						33797,	-- Portable Brewfest Keg
+						},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.6, 38.6, DUN_MOROGH },
@@ -1583,17 +1587,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_2_0 },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						i(33306),	-- Ram Racing Reins (PQI!)
-						i(33797),	-- Portable Brewfest Keg (QI!)
-					},
 				}),
 				q(29393, {	-- Brew For Brewfest (H)
 					["sourceQuest"] = 11412,	-- There and Back Again (H)
 					["qg"] = 24497,	-- Ram Master Ray
+					["qis"] = {
+						33306,	-- Ram Racing Reins
+						33797,	-- Portable Brewfest Keg
+						},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 17.6, DUROTAR },
@@ -1602,13 +1605,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_4_2_0 },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						i(33306),	-- Ram Racing Reins (PQI!)
-						i(33797),	-- Portable Brewfest Keg (QI!)
-					},
 				}),
 				q(12278, {	-- Brew of the Month Club (A)
 					-- #if BEFORE 3.0.0
@@ -2018,6 +2016,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11442,	-- Welcome to Brewfest! (A)
 					},
 					["qg"] = 23558,	-- Neill Ramstein
+					["qi"] = 33306,	-- Ram Racing Reins
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.6, 38.6, DUN_MOROGH },
@@ -2026,7 +2025,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 				}),
@@ -2036,6 +2034,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11447,	-- Welcome to Brewfest! (H)
 					},
 					["qg"] = 24497,	-- Ram Master Ray
+					["qi"] = 33306,	-- Ram Racing Reins
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 17.6, DUROTAR },
@@ -2044,7 +2043,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 				}),
@@ -2211,6 +2209,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				q(11122, {	-- There and Back Again (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["qg"] = 23558,	-- Neill Ramstein
+					["qis"] = {
+						33306,	-- Ram Racing Reins
+						33797,	-- Portable Brewfest Keg
+						},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.6, 38.6, DUN_MOROGH },
@@ -2219,7 +2221,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = BREWFEST_TOKEN,
@@ -2227,6 +2228,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				q(11412, {	-- There and Back Again (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["qg"] = 24497,	-- Ram Master Ray
+					["qis"] = {
+						33306,	-- Ram Racing Reins
+						33797,	-- Portable Brewfest Keg
+						},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 42.6, 17.6, DUROTAR },
@@ -2235,7 +2240,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },
-					["cost"] = { { "i", 33306, 1 } },	-- Ram Racing Reins
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = BREWFEST_TOKEN,
@@ -2534,7 +2538,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(32233, {	-- Wolpertinger's Tankard (PET!)
+								-- #if AFTER MOP
 								["cost"] = BREWFEST_TOKEN_COST(200),
+								-- #endif
 								["timeline"] = { ADDED_2_2_2 },
 							}),
 						}),
@@ -2801,7 +2807,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 								["cost"] = BREWFEST_TOKEN_COST(200),
 							}),
 							i(32233, {	-- Wolpertinger's Tankard (PET!)
+								-- #if AFTER MOP
 								["cost"] = BREWFEST_TOKEN_COST(200),
+								-- #endif
 								["timeline"] = { ADDED_2_2_2 },
 							}),
 						}),
