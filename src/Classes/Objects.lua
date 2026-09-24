@@ -51,6 +51,7 @@ local GenerateGroupsForGenericSubGroup = function(t)
 	return spg
 end
 
+-- Client sources trusted for validating ATT object data.
 local OBJECT_ID_SOURCE_CLIENT_TOOLTIP = "client-tooltip";
 local OBJECT_ID_SOURCE_CLIENT_GUID = "client-guid";
 local ObjectIDSourceNames = {
@@ -58,12 +59,13 @@ local ObjectIDSourceNames = {
 	[OBJECT_ID_SOURCE_CLIENT_GUID] = "Client GameObject GUID",
 };
 
+-- Strip tooltip formatting without changing localized text.
 local function CleanObservedObjectName(name)
 	if not name or app.WOWAPI.issecretvalue(name) then return end
 	return name:gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", ""):trim();
 end
 
--- Only client-observed ObjectIDs can be used to validate ATT data.
+-- Validate ATT only against ObjectIDs observed directly from the client.
 function app.CheckInaccurateObjectInfo(objectID, clientName, source)
 	if source ~= OBJECT_ID_SOURCE_CLIENT_TOOLTIP and source ~= OBJECT_ID_SOURCE_CLIENT_GUID then
 		return
@@ -82,6 +84,7 @@ function app.CheckInaccurateObjectInfo(objectID, clientName, source)
 
 	local objectIDSource = ObjectIDSourceNames[source] or source;
 	local objRef = app.SearchForObject("objectID", objectID);
+	-- Client found an ObjectID not referenced by ATT data.
 	if not objRef then
 		if app.Settings:GetTooltipSetting("Report:MissingObjectIDs") then
 			AddReportData(
@@ -108,6 +111,7 @@ function app.CheckInaccurateObjectInfo(objectID, clientName, source)
 
 	local attName = app.ObjectNames[objectID];
 	local cleanATTName = CleanObservedObjectName(attName);
+	-- Compare names only after the ObjectID itself is confirmed in ATT.
 	if observedName ~= cleanATTName then
 		AddReportData(
 			"Object Name Mismatch",

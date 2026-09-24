@@ -60,6 +60,7 @@ end)
 checkboxReportUnsourced:SetATTTooltip(L.REPORT_UNSORTED_CHECKBOX_TOOLTIP)
 checkboxReportUnsourced:AlignBelow(checkboxReportQuests, 1)
 
+-- Object data reports
 local checkboxReportMissingObjectIDs = child:CreateCheckBox(L.REPORT_MISSING_OBJECT_IDS_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:MissingObjectIDs"))

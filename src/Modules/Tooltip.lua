@@ -188,7 +188,7 @@ else
 	end
 end
 
--- ObjectID provenance: client observations may validate ATT data; ATT DB lookups are fallback only.
+-- Track whether an ObjectID came from the client or ATT's name lookup.
 local OBJECT_ID_SOURCE_CLIENT_TOOLTIP = "client-tooltip";
 local OBJECT_ID_SOURCE_CLIENT_GUID = "client-guid";
 local OBJECT_ID_SOURCE_ATT_DB = "att-db";
@@ -204,6 +204,7 @@ local function GetObjectNameFromTooltipData(tooltipData)
 	end
 end
 
+-- Resolve ObjectID from client data, preferring TooltipData over the soft-interact GUID.
 local function GetClientObjectID(tooltipData)
 	if tooltipData then
 		local ttType = tooltipData.type;
@@ -221,6 +222,7 @@ local function GetClientObjectID(tooltipData)
 
 	local clientName = GetObjectNameFromTooltipData(tooltipData);
 	local tooltipID = tooltipData.id;
+	-- Some clients provide ObjectID directly in TooltipData.
 	if tooltipID and not issecretvalue(tooltipID) then
 		tooltipID = tonumber(tooltipID);
 		if tooltipID and tooltipID > 0 then
@@ -228,6 +230,7 @@ local function GetClientObjectID(tooltipData)
 		end
 	end
 
+	-- Otherwise extract ObjectID from the current GameObject GUID.
 	local guid = UnitGUID("softinteract");
 	if not guid or issecretvalue(guid) then return end
 
@@ -241,6 +244,7 @@ local function GetClientObjectID(tooltipData)
 	if softInteractName and issecretvalue(softInteractName) then
 		softInteractName = nil;
 	end
+	-- Reject a nearby soft-interact target which does not match the hovered object.
 	if clientName and softInteractName
 		and CleanColor(clientName):trim() ~= CleanColor(softInteractName):trim()
 	then
@@ -250,6 +254,7 @@ local function GetClientObjectID(tooltipData)
 	return objectID, clientName or softInteractName, OBJECT_ID_SOURCE_CLIENT_GUID;
 end
 
+-- Prefer client-observed IDs; use ATT's localized name lookup only as fallback.
 local function ResolveObjectID(tooltipData, fallbackName)
 	local objectID, objectName, source = GetClientObjectID(tooltipData);
 	if objectID then
@@ -942,6 +947,7 @@ do
 	end
 end
 
+-- Reuse ATT's normal object tooltip path and validate only client-observed IDs.
 local function AttachObjectSearchResults(self, objectID, clientName, source)
 	if not self.AllTheThingsOnTooltipClearedHook then
 		pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
@@ -963,6 +969,7 @@ local function AttachObjectSearchResults(self, objectID, clientName, source)
 	if objects and #objects > 0 then
 		AttachTypicalSearchResults(self, "objectID", objectID);
 	else
+		-- Still expose a confirmed client ObjectID when ATT has no matching data.
 		self.ATT_SearchField = "objectID";
 		self.ATT_SearchID = objectID;
 		self.ATT_AttachComplete = true;
@@ -1510,6 +1517,7 @@ else
 	end
 end
 
+-- Poll world-object tooltips when ObjectID is unavailable through normal tooltip processing.
 local function AttachWorldObjectTooltip(self, elapsed)
 	if self.AllTheThingsIgnored or not CanAttachTooltips() then return end
 	if self.ATT_SearchField == "objectID"
@@ -1519,6 +1527,7 @@ local function AttachWorldObjectTooltip(self, elapsed)
 		return
 	end
 
+	-- Avoid querying the world cursor every frame.
 	self.ATT_ObjectScanElapsed = (self.ATT_ObjectScanElapsed or 0) + elapsed;
 	if self.ATT_ObjectScanElapsed < 0.1 then return end
 	self.ATT_ObjectScanElapsed = 0;
@@ -1541,6 +1550,7 @@ local function AttachWorldObjectTooltip(self, elapsed)
 	self:Show();
 end
 
+-- Use the fallback on any flavor exposing the required tooltip APIs.
 if C_TooltipInfo_GetWorldCursor and TooltipDataType_Object then
 	GameTooltip:HookScript("OnUpdate", AttachWorldObjectTooltip);
 end

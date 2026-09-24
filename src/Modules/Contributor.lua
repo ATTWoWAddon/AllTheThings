@@ -175,6 +175,7 @@ local function DoReport(reporttype, id)
 		end
 		reportData[#reportData + 1] = "Skills: "..(app.TableConcat(skills) or "")
 	end
+	-- Locale is required to diagnose localized data mismatches.
 	reportData[#reportData + 1] = "ATT: "..app.Version.." GameBuild: "..app.GameBuildVersion.." Locale: "..GetLocale().." UTC: "..date("!%Y-%m-%dT%H:%M:%SZ", time())
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
