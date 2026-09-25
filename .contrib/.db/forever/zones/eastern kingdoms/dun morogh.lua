@@ -101,7 +101,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 4,
 					}),
-					q(94373, {	-- Call of Earth
+					q(94373, {	-- Call of Earth (1/3)
 						["sourceQuest"] = 98581,	-- Archaic Rune
 						["qg"] = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						["coord"] = { 28.8, 66.2, MAP.DUN_MOROGH },
@@ -112,6 +112,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 							objective(1, {	-- 0/2 Frostmane Bear Pendant
 								["provider"] = { "i", 264356 },	-- Iceclaw Bear Pendant
 								["maps"] = { 428 },	-- Frostmane Hovel (Coldridge Valley)
+							}),
+						},
+					}),
+					q(94374, {	-- Call of Earth (2/3)
+						["sourceQuest"] = 94373,	-- Call of Earth (1/3)
+						["qg"] = 257446,	-- Teo Hammerstorm <Shaman Trainer>
+						["qi"] = 6635,	-- Earth Sapta
+						["coord"] = { 28.8, 66.2, MAP.DUN_MOROGH },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = { DWARF },
+						["classes"] = { SHAMAN },
+					}),
+					q(94375, {	-- Call of Earth (3/3)
+						["sourceQuest"] = 94374,	-- Call of Earth (2/3)
+						["qg"] = 5891,	-- Minor Manifestation of Earth
+						["qi"] = 6656,	-- Rough Quartz
+						["coord"] = { 24.9, 61.9, MAP.DUN_MOROGH },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = { DWARF },
+						["classes"] = { SHAMAN },
+						["groups"] = {
+							i(5175, {	-- Earth Totem
+								["description"] = "You must keep this in your bags forever.",
 							}),
 						},
 					}),
