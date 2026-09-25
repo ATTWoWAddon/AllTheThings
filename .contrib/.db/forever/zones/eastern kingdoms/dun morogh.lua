@@ -305,6 +305,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				}),
 				n(VENDORS, {
+					n(836, {	-- Durnan Furcutter
+						["coord"] = { 28.8, 66.4, MAP.DUN_MOROGH },
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {{"select","itemID",
+							2122,	-- Cracked Leather Belt
+							2123,	-- Cracked Leather Boots
+							2124,	-- Cracked Leather Bracers
+							2125,	-- Cracked Leather Gloves
+							2126,	-- Cracked Leather Pants
+							2127,	-- Cracked Leather Vest
+							2121,	-- Thin Cloth Armor
+							3599,	-- Thin Cloth Belt
+							3600,	-- Thin Cloth Bracers
+							2119,	-- Thin Cloth Gloves
+							2120,	-- Thin Cloth Pants
+							2117,	-- Thin Cloth Shoes
+						}},
+					}),
 					n(1104, {	-- Grundel Harkin <Armorer>
 						["coord"] = { 28.8, 67.8, MAP.DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
