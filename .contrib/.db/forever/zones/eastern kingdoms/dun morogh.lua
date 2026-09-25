@@ -1568,12 +1568,76 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 		}),
 		n(VENDORS, {
+			n(1240, {	-- Boran Ironclink
+				["coord"] = { 45.2, 51.8, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(2392),	-- Light Mail Armor
+					i(2393),	-- Light Mail Belt
+					i(2395),	-- Light Mail Boots
+					i(2396),	-- Light Mail Bracers
+					i(2397),	-- Light Mail Gloves
+					i(2394),	-- Light Mail Leggings
+				},
+			}),
+			n(1238, {	-- Gamili Frosthide
+				["coord"] = { 45.2, 51.9, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {{"select","itemID",
+					2122,	-- Cracked Leather Belt
+					2123,	-- Cracked Leather Boots
+					2124,	-- Cracked Leather Bracers
+					2125,	-- Cracked Leather Gloves
+					2126,	-- Cracked Leather Pants
+					2127,	-- Cracked Leather Vest
+					3602,	-- Knitted Belt
+					3603,	-- Knitted Bracers
+					793,	-- Knitted Gloves
+					794,	-- Knitted Pants
+					792,	-- Knitted Sandals
+					795,	-- Knitted Tunic
+					1839,	-- Rough Leather Belt
+					796,	-- Rough Leather Boots
+					1840,	-- Rough Leather Bracers
+					797,	-- Rough Leather Gloves
+					798,	-- Rough Leather Pants
+					799,	-- Rough Leather Vest
+					2121,	-- Thin Cloth Armor
+					3599,	-- Thin Cloth Belt
+					3600,	-- Thin Cloth Bracers
+					2119,	-- Thin Cloth Gloves
+					2120,	-- Thin Cloth Pants
+					2117,	-- Thin Cloth Shoes
+				}},
+			}),
+			n(1273, {	-- Grawn Thromwyn
+				["coord"] = { 45.3, 52.1, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {{"select","itemID",
+					2492,	-- Cudgel
+					2488,	-- Gladius
+					2491,	-- Large Axe
+					2494,	-- Stiletto
+					2490,	-- Tomahawk
+					2489,	-- Two-handed Sword
+					2495,	-- Walking Stick
+					2493,	-- Wooden Mallet
+				}},
+			}),
 			n(8508, {	-- Gretta Ganter <Fisherman Supplies>
 				["coord"] = { 31.6, 44.6, MAP.DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 				},
+			}),
+			n(1243, {	-- Hegnar Rumbleshot <Gunsmith>
+				["coord"] = { 40.7, 65.1, MAP.DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {{"select","itemID",
+					2509,	-- Ornate Blunderbuss
+					2510,	-- Solid Blunderbuss
+				}},
 			}),
 			n(1247, {	-- Innkeeper Belm <Innkeeper>
 				["coord"] = { 47.4, 52.6, MAP.DUN_MOROGH },
