@@ -1066,6 +1066,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(2901),	-- Mining Pick
 				},
 			}),
+			n(258306, {	-- Granny Finespindle
+				["coord"] = { 39.3, 33.7, MAP.IRONFORGE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(252761),	-- Pattern: Black Whelp Slippers (RECIPE!)
+					i(252762),	-- Pattern: Dark Leather Boots (RECIPE!)
+					i(252832),	-- Pattern: Mender's Leather Belt (RECIPE!)
+					i(252764),	-- Pattern: Moonglow Boots (RECIPE!)
+					i(252763),	-- Pattern: Murloc Scale Shoes (RECIPE!)
+					i(252826),	-- Pattern: Prowler's Leather Belt (RECIPE!)
+					i(252830),	-- Pattern: Skirmisher's Leather Belt (RECIPE!)
+					i(252831),	-- Pattern: Skycaller's Leather Belt (RECIPE!)
+					i(252827),	-- Pattern: Skulker's Leather Belt (RECIPE!)
+					i(252828),	-- Pattern: Stalker's Leather Belt (RECIPE!)
+					i(252829),	-- Pattern: Warden's Leather Belt (RECIPE!)
+				},
+			}),
 			n(5103, {	-- Grenil Steelfury
 				["coord"] = { 36.4, 66.6, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
