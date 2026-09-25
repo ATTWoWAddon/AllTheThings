@@ -304,6 +304,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 					}),
 				}),
+				n(VENDORS, {
+					n(1104, {	-- Grundel Harkin <Armorer>
+						["coord"] = { 28.8, 67.8, MAP.DUN_MOROGH },
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {{"select","itemID",
+							2129,	-- Large Round Shield
+							17184,	-- Small Shield
+							2380,	-- Tarnished Chain Belt
+							2383,	-- Tarnished Chain Boots
+							2384,	-- Tarnished Chain Bracers
+							2385,	-- Tarnished Chain Gloves
+							2381,	-- Tarnished Chain Leggings
+							2379,	-- Tarnished Chain Vest
+						}},
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(2109, {	-- Frostmane Chain Vest
 						["cr"] = 808,	-- Grik'nir the Cold
