@@ -202,7 +202,7 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(31952, {	-- Khorium Lockbox
-				["timeline"] = { ADDED_2_1_0 },
+				["timeline"] = { ADDED_2_0_3 },
 			}),
 			i(188787, {	-- Locked Broker Luggage
 				["timeline"] = { ADDED_9_2_0 },
