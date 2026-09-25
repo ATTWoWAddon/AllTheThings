@@ -378,6 +378,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
 					["races"] = { SKYBORNE_HORDE },
 					["lvl"] = 7,
+					["groups"] = {
+						i(286426),	-- Honorbound Cloak
+					},
 				}),
 				q(5726, {	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
