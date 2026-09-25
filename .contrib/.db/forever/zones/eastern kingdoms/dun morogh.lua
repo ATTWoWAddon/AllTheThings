@@ -101,6 +101,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 4,
 					}),
+					q(94373, {	-- Call of Earth
+						["sourceQuest"] = 98581,	-- Archaic Rune
+						["qg"] = 257446,	-- Teo Hammerstorm <Shaman Trainer>
+						["coord"] = { 28.8, 66.2, MAP.DUN_MOROGH },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = { DWARF },
+						["classes"] = { SHAMAN },
+						["groups"] = {
+							objective(1, {	-- 0/2 Frostmane Bear Pendant
+								["provider"] = { "i", 264356 },	-- Iceclaw Bear Pendant
+								["maps"] = { 428 },	-- Frostmane Hovel (Coldridge Valley)
+							}),
+						},
+					}),
 					q(233, {	-- Coldridge Valley Mail Delivery (1/2)
 						["sourceQuest"] = 179,	-- Dwarven Outfitters
 						["qg"] = 658,	-- Sten Stoutarm
