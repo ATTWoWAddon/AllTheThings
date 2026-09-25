@@ -319,6 +319,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 							2379,	-- Tarnished Chain Vest
 						}},
 					}),
+					n(945, {	-- Rybrad Coldbank
+						["coord"] = { 28.7, 67.7, MAP.DUN_MOROGH },
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {{"select","itemID",
+							1194,	-- Bastard Sword
+							2479,	-- Broad Axe
+							2130,	-- Club
+							2139,	-- Dirk
+							2134,	-- Hand Axe
+							2480,	-- Large Club
+							2132,	-- Short Staff
+							2131,	-- Shortsword
+						}},
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(2109, {	-- Frostmane Chain Vest
