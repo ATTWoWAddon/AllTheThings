@@ -910,6 +910,13 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					recipe(982),	-- Revive Pet
 				},
 			}),
+			q(95350, {	-- Welcome to Azeroth
+				sourceQuest = 95349,	-- The Earthen Ring
+				qg = 259119,	-- Alaana Stormwalker
+				coord = { 33.4, 22.4, MAP.MULGORE },
+				races = { SKYBORNE_HORDE },
+				lvl = 7,
+			}),
 			q(760, {	-- Wildmane Cleansing
 				["sourceQuest"] = 759,	-- Wildmane Totem
 				["qg"] = 2948,	-- Mull Thunderhorn
