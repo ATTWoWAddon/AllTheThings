@@ -40,7 +40,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
 				["groups"] = {
 					i(263428),	-- Dowsing Rod
-					i(2454),	-- Elixir Of Minor Strength
+					i(2454),	-- Elixir of Minor Strength
 				},
 			}),
 			q(94493, {	-- A Sacrifice in Vain
@@ -58,8 +58,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				["sourceQuest"] = 92461,	-- Harmony in Balance
 				["classes"] = { MAGE },
-				["groups"] = { i(282416), },	-- Glowing Recall Crystal
 				["lvl"] = 2,
+				["groups"] = { i(282416), },	-- Glowing Recall Crystal
 			}),
 			q(92471, {	-- Aetheen of the Gales
 				["qg"] = 251361,	-- Rorian the Dayseeker
@@ -114,8 +114,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["groups"] = {
 					i(263401),	-- Martyr's Armor
-					i(263402),	-- Sash Of Sorrow
-					i(263403),	-- Cilice Of Regret
+					i(263402),	-- Sash of Sorrow
+					i(263403),	-- Cilice of Regret
 				},
 			}),
 			q(93740, {	-- Blood for Blood
@@ -130,11 +130,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 256507,	-- Belann Windwood
 				["coord"] = { 62.8, 77.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { MAGE },
+				["lvl"] = 10,
 				["groups"] = {
 					i(263430),	-- Windbough Wand
-					i(250344),	-- Elixir Of Minor Spirit
+					i(250344),	-- Elixir of Minor Spirit
 				},
-				["lvl"] = 10,
 			}),
 			q(92645, {	-- Breaking the Breaker
 				["qg"] = 252378,	-- Yorana Windyreed
@@ -165,10 +165,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251166,	-- Minor Manifestation of Earth
 				["coord"] = { 49.6, 24.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
+				["lvl"] = 3,
 				["groups"] = {
 					i(5175),	-- Earth Totem
 				},
-				["lvl"] = 3,
 			}),
 			q(97243, {	-- Call of Fire
 				["qg"] = 252382,	-- Sessaria Skystride
@@ -196,10 +196,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
 				["races"] = { SKYBORNE_HORDE },
+				["lvl"] = 10,
 				["groups"] = {
 					i(5176),	-- Fire Totem
 				},
-				["lvl"] = 10,
 			}),
 			q(97963, {	-- Camping 101: Alchemy
 				["qg"] = 263664,	-- Raan Wildwind
@@ -321,7 +321,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["groups"] = {
-					i(263404),	-- Bow Of Hours
+					i(263404),	-- Bow of Hours
 					i(3382),	-- Minor Troll's Blood Elixir
 				},
 			}),
@@ -335,7 +335,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
 				["races"] = { SKYBORNE_HORDE },
 				["groups"] = {
-					i(263405),	-- Belt Of Blades
+					i(263405),	-- Belt of Blades
 					i(263406),	-- Empyrean Shoes
 					i(263407),	-- Empyrean Greatsword
 					i(273875),	-- Empyrean Treads
@@ -346,7 +346,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
 				["races"] = { SKYBORNE_ALLIANCE },
 				["groups"] = {
-					i(263405),	-- Belt Of Blades
+					i(263405),	-- Belt of Blades
 					i(263406),	-- Empyrean Shoes
 					i(263407),	-- Empyrean Greatsword
 					i(273875),	-- Empyrean Treads
@@ -450,9 +450,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251363,	-- Dalia the Collector
 				["coord"] = { 43.2, 24.0, MAP.ZEPHRAS_ISLE },
 				["groups"] = {
-					i(247840),	-- Mining For Dummies
+					i(247840),	-- Mining for Dummies
 					i(247841),	-- Wild Harvest
-					i(247846),	-- Pelt Collecting For Beginners
+					i(247846),	-- Pelt Collecting for Beginners
 					i(255663),	-- Windstone
 				},
 			}),
@@ -772,10 +772,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252377,	-- Seena Skybreaker
 				["coord"] = { 59.8, 72.8, MAP.ZEPHRAS_ISLE },
 				["classes"] = { WARRIOR },
+				["lvl"] = 10,
 				["groups"] = {
 					i(275290),	-- Stormforged Protector
 				},
-				["lvl"] = 10,
 			}),
 			q(93159, {	-- The Strange Hermit
 				["qg"] = 251684,	-- Strange Hermit
