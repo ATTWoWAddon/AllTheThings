@@ -70,6 +70,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 							}),
 						},
 					}),
+					q(98581, {	-- Archaic Rune
+						["sourceQuest"] = 179,	-- Dwarven Outfitters
+						["qg"] = 658,	-- Sten Stoutarm
+						["qi"] = 282400,	-- Archaic Rune (PQI!)
+						["coord"] = { 29.8, 71.2, MAP.DUN_MOROGH },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = { DWARF },
+						["classes"] = { SHAMAN },
+					}),
 					q(1599, {	-- Beginnings
 						["altQuests"] = { 1598 },	-- The Stolen Tome
 						["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
