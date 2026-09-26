@@ -801,9 +801,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					objective(1, {	-- 0/1 Sack of Fish
-						["cr"] = 271587,	-- Frosthowl
 						["provider"] = { "i", 280426 },	-- Sack of Fish
 						["coord"] = { 40.0, 48.4, MAP.DUN_MOROGH },
+						["cr"] = 271587,	-- Frosthowl
 					}),
 					i(281322),	-- Frosthowl's Footwarmers
 				},
@@ -875,11 +875,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["sourceQuest"] = 96392,	-- Farsen's Watch
 				["qg"] = 264936,	-- Earthseer Farsen
 				["coord"] = { 64.8, 58.4, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					objective(1, {	-- 0/10  Dark Iron Spy
-						["cr"] = 6123,	-- Dark Iron Spy
+					objective(1, {	-- 0/10 Dark Iron Spy slain
+						["provider"] = { "n", 6123 },	-- Dark Iron Spy
 					}),
 				}
 			}),
@@ -989,11 +989,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["sourceQuest"] = 99159,	-- Finding Warmth
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					objective(1, {	-- 0/10 Minor Ice Elemental
-						["cr"] = 276003,	-- Minor Ice Elemental
+						["provider"] = { "n", 276003 },	-- Minor Ice Elemental
 					}),
 				},
 			}),
@@ -1001,13 +1001,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["sourceQuest"] = 99160,	-- Rime's Wrath (1/2)
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					objective(1, {	-- 0/1 Avala's Core
-						["cr"] = 276009,	-- Avala <The Lost Rime>
 						["provider"] = { "i", 286325 },	-- Avala's Core
 						["coord"] = { 58.1, 42.1, MAP.DUN_MOROGH },
+						["cr"] = 276009,	-- Avala <The Lost Rime>
 					}),
 					i(286737),	-- Avala's Binding
 				},
@@ -1096,6 +1096,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						["crs"] = {
 							1128,	-- Young Black Bear
 							1196,	-- Ice Claw Bear
+						},
+					}),
+				},
+			}),
+			q(95213, {	-- Stolen Blasting Powder (1/2)
+				["qs"] = 268548,	-- Empty Powder Keg (QS!)
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 7,
+			}),
+			q(95214, {	-- Stolen Blasting Powder (2/2)
+				["qg"] = 1256,	-- Quarrymaster Thesten <Miners' League>
+				["coord"] = { 69.0, 54.8, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 7,
+				["groups"] = {
+					objective(1, {	-- 0/16 Stolen Blasting Powder
+						["provider"] = { "i", 267415 },	-- Stolen Blasting Powder
+						coord = { 72.6, 55.0, MAP.DUN_MOROGH },
+						["crs"] = {
+							1118,	-- Rockjaw Backbreaker
+							1116,	-- Rockjaw Ambusher
 						},
 					}),
 				},
@@ -1400,27 +1423,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["sourceQuest"] = 99159,	-- Finding Warmth
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					objective(1, {	-- 0/1 Coalbeard's Rifle
 						["providers"] = {
-							{ "o", 695222 },	-- Coalbeard's Rifle
 							{ "i", 286358 },	-- Coalbeard's Rifle
+							{ "o", 695222 },	-- Coalbeard's Rifle
 						},
 						["coord"] = { 52.1, 44.1, MAP.DUN_MOROGH },
 					}),
 					objective(1, {	-- 0/1 Stoneavil's Rifle
 						["providers"] = {
-							{ "o", 695277 },	-- Stoneavil's Rifle
 							{ "i", 286360 },	-- Stoneavil's Rifle
+							{ "o", 695277 },	-- Stoneavil's Rifle
 						},
 						["coord"] = { 53.1, 58.8, MAP.DUN_MOROGH },
 					}),
 					objective(1, {	-- 0/1 Sunhammers's Rifle
 						["providers"] = {
-							{ "o", 695223 },	-- Sunhammers's Rifle
 							{ "i", 286359 },	-- Sunhammers's Rifle
+							{ "o", 695223 },	-- Sunhammers's Rifle
 						},
 						["coord"] = { 59.9, 50.1, MAP.DUN_MOROGH },
 					}),
@@ -1473,6 +1496,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["groups"] = {
 					i(3225),	-- Bloodstained Knife
 					i(3008),	-- Wendigo Fur Cloak
+				},
+			}),
+			n(276111, {	-- Ghostfang
+				["coords"] = { 80.4, 47.0, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = {
+					i(286751),	-- Ghostfang's Steps
 				},
 			}),
 			n(8503, {	-- Gibblewilt
@@ -1713,7 +1743,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 78.6, 62.0, MAP.DUN_MOROGH },
 				crs = {
 					6124,	-- Captain Beld <Dark Iron Captain>
-					6123,	-- 6123
+					6123,	-- Dark Iron Spy
+				},
+			}),
+			i(268548, {	-- Empty Powder Keg (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				coord = { 72.6, 55.0, MAP.DUN_MOROGH },
+				crs = {
+					1118,	-- Rockjaw Backbreaker
+					1116,	-- Rockjaw Ambusher
 				},
 			}),
 			i(2067, {	-- Frostbit Staff

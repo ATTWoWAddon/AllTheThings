@@ -1,9 +1,76 @@
 Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Category,Minimum_criteria,Points,Flags,Ui_order,IconFileID,RewardItemID,Criteria_tree,Shares_criteria,CovenantID,HiddenBeforeDisplaySeason,LegacyAfterTimeEvent
+"Alterac Valley victories","Alterac Valley victories",,49,30,-1,0,153,0,0,1,6,136243,0,128749,0,0,0,0
+"Arathi Basin victories","Arathi Basin victories",,51,529,-1,0,153,0,0,1,8,136243,0,123018,0,0,0,0
+"Warsong Gulch battles","Warsong Gulch battles",,52,489,-1,0,153,0,0,1,9,136243,0,121974,0,0,0,0
+"Alterac Valley battles","Alterac Valley battles",,53,30,-1,0,153,0,0,1,5,136243,0,121976,0,0,0,0
+"Arathi Basin battles","Arathi Basin battles",,55,529,-1,0,153,0,0,1,7,136243,0,123973,0,0,0,0
+"Deaths in Warsong Gulch","Deaths in Warsong Gulch",,56,489,-1,0,124,0,0,1,3,136243,0,124248,0,0,0,0
+"Deaths in Alterac Valley","Deaths in Alterac Valley",,57,30,-1,0,124,0,0,1,1,136243,0,123275,0,0,0,0
+"Deaths from Drek'Thar","Deaths from Drek'Thar",,58,30,1,0,124,0,0,1,4,136243,0,124250,0,0,0,0
+"Deaths in Arathi Basin","Deaths in Arathi Basin",,59,529,-1,0,124,0,0,1,2,136243,0,124851,0,0,0,0
+"Total deaths","Total deaths",,60,-1,-1,0,122,0,0,1,1,136243,0,124407,0,0,0,0
+"Quests abandoned","Quests abandoned",,94,-1,-1,0,133,0,0,1,3,136243,0,123283,0,0,0,0
+"Average quests completed per day","Average quests completed per day",,95,-1,-1,0,133,0,0,73,2,136243,0,126005,0,0,0,0
+"Quests completed","Quests completed",,98,-1,-1,0,133,0,0,9,1,136243,0,122183,0,0,0,0
+"Warsong Gulch victories","Warsong Gulch victories",,105,-1,-1,0,153,0,0,1,12,136243,0,121932,0,0,0,0
+"Creatures killed","Creatures killed",,107,-1,-1,0,135,0,0,9,1,136243,0,122186,0,0,0,0
+"Critters killed","Critters killed",,108,-1,-1,0,135,0,0,1,4,136243,0,123501,0,0,0,0
+"Deaths from drowning","Deaths from drowning",,112,-1,-1,0,126,0,0,1,1,136243,0,132274,0,0,0,0
+"Deaths from fatigue","Deaths from fatigue",,113,-1,-1,0,126,0,0,1,3,136243,0,123503,0,0,0,0
+"Deaths from falling","Deaths from falling",,114,-1,-1,0,126,0,0,1,4,136243,0,123075,0,0,0,0
+"Deaths from fire and lava","Deaths from fire and lava",,115,-1,-1,0,126,0,0,9,5,136243,0,123505,0,0,0,0
+"Enchanting formulae learned","Enchanting formulae learned",,178,-1,-1,0,173,0,0,1,6,136243,0,121981,0,0,0,0
+"Items disenchanted","Items disenchanted",,181,-1,-1,0,173,0,0,1,8,136243,0,124252,0,0,0,0
+"Materials produced from disenchanting","Materials produced from disenchanting",,183,-1,-1,0,173,0,0,1,7,136243,0,129942,0,0,0,0
+"Largest heal cast","Largest heal cast",,189,-1,-1,0,141,0,0,1,5,0,0,122232,0,0,0,0
+"Largest hit dealt","Largest hit dealt",,193,-1,-1,0,141,0,0,1,1,0,0,122234,0,0,0,0
+"Total damage done","Total damage done",,197,-1,-1,0,141,0,0,1,3,0,0,127441,0,0,0,0
+"Total healing done","Total healing done",,198,-1,-1,0,141,0,0,1,7,0,0,121939,0,0,0,0
+"First Aid skill","First Aid skill",,281,-1,-1,0,178,0,0,1,5,136243,0,123332,0,0,0,0
+,"Total deaths from opposite faction",,318,-1,-1,0,21,0,0,1,4,136243,0,125881,0,0,0,0
+"Duels won","Duels won",,319,-1,-1,0,154,0,0,1,1,136243,0,127439,0,0,0,0
+"Duels lost","Duels lost",,320,-1,-1,0,154,0,0,1,2,136243,0,121472,0,0,0,0
+"Total raid and dungeon deaths","Total raid and dungeon deaths",,321,-1,-1,0,125,0,0,9,1,0,0,124571,0,0,0,0
+"Gold from quest rewards","Gold from quest rewards",,326,-1,-1,0,140,0,0,1,4,136243,0,128216,0,0,0,0
+"Total gold acquired","Total gold acquired",,328,-1,-1,0,140,0,0,9,1,136243,0,124219,0,0,0,0
+"Auctions posted","Auctions posted",,329,-1,-1,0,140,0,0,1,6,136243,0,128753,0,0,0,0
+"Auction purchases","Auction purchases",,330,-1,-1,0,140,0,0,1,7,136243,0,128930,0,0,0,0
+"Most expensive bid on auction","Most expensive bid on auction",,331,-1,-1,0,140,0,0,1,8,136243,0,129365,0,0,0,0
+"Most expensive auction sold","Most expensive auction sold",,332,-1,-1,0,140,0,0,1,9,136243,0,124224,0,0,0,0
+"Gold looted","Gold looted",,333,-1,-1,0,140,0,0,1,3,136243,0,124226,0,0,0,0
+"Most gold ever owned","Most gold ever owned",,334,-1,-1,0,140,0,0,1,15,136243,0,124228,0,0,0,0
+"Legendary items acquired","Legendary items acquired",,336,-1,-1,0,191,0,0,1,4,0,0,123672,0,0,0,0
+"Vanity pets owned","Vanity pets owned",,338,-1,-1,0,191,0,0,1,6,0,0,124755,0,0,0,0
+"Mounts owned","Mounts owned",,339,-1,-1,0,191,0,0,1,5,0,0,122250,0,0,0,0
+"Epic items looted","Epic items looted",,341,-1,-1,0,191,0,0,1,3,0,0,127612,0,0,0,0
+"Epic items acquired","Epic items acquired",,342,-1,-1,0,191,0,0,1,2,0,0,123114,0,0,0,0
+"Bandages used","Bandages used",,344,-1,-1,0,145,0,0,9,1,136243,0,123428,0,0,0,0
+"Health potions consumed","Health potions consumed",,345,-1,-1,0,145,0,0,9,4,136243,0,128755,0,0,0,0
+"Beverages consumed","Beverages consumed",,346,-1,-1,0,145,0,0,9,8,136243,0,122252,0,0,0,0
+"Food eaten","Food eaten",,347,-1,-1,0,145,0,0,9,9,136243,0,122443,0,0,0,0
+"Flight paths taken","Flight paths taken",,349,-1,-1,0,134,0,0,1,1,136243,0,123675,0,0,0,0
+"Mage Portals taken","Mage Portals taken",,350,-1,-1,0,134,0,0,9,3,136243,0,129855,0,0,0,0
+"Number of times hearthed","Number of times hearthed",,353,-1,-1,0,134,0,0,1,5,136243,0,123802,0,0,0,0
+"Most factions at Exalted","Most factions at Exalted",,377,-1,-1,0,147,0,0,1,1,0,0,125583,0,0,0,0
+"Most factions at Revered or higher","Most factions at Revered or higher",,378,-1,-1,0,147,0,0,1,2,0,0,124365,0,0,0,0
+"World Honorable Kills","World Honorable Kills",,381,-1,-1,0,136,0,0,9,2,136243,0,121829,0,0,0,0
+"Battleground Honorable Kills","Battleground Honorable Kills",,382,-1,-1,0,136,0,0,9,4,136243,0,132858,0,0,0,0
+"Alterac Valley towers defended","Alterac Valley towers defended",,393,-1,-1,0,153,0,0,1,13,136243,0,123117,0,0,0,0
+"Alterac Valley towers captured","Alterac Valley towers captured",,394,-1,-1,0,153,0,0,1,14,136243,0,124433,0,0,0,0
+"Warsong Gulch flags captured","Warsong Gulch flags captured",,395,-1,-1,0,153,0,0,1,15,136243,0,125190,0,0,0,0
+"Largest hit received","Largest hit received",,527,-1,-1,0,141,0,0,1,2,136243,0,123259,0,0,0,0
+"Total damage received","Total damage received",,528,-1,-1,0,141,0,0,1,4,136243,0,123708,0,0,0,0
+"Most factions at Honored or higher","Most factions at Honored or higher",,529,-1,-1,0,147,0,0,1,3,136243,0,124413,0,0,0,0
+"Warsong Gulch flags returned","Warsong Gulch flags returned",,586,-1,-1,0,153,0,0,1,16,136243,0,122211,0,0,0,0
+"Total Honorable Kills","Total Honorable Kills",,588,-1,-1,0,136,0,0,1,1,136243,0,123637,0,0,0,0
+"Deaths from Vanndar Stormpike","Deaths from Vanndar Stormpike",,593,-1,0,0,124,0,0,1,6,136243,0,126860,0,0,0,0
+"Deaths from Hogger","Deaths from Hogger",,594,-1,-1,0,126,0,0,1,2,136243,0,123805,0,0,0,0
 "Explore Dun Morogh, revealing the covered areas of the world map.","Explore Dun Morogh",,627,-1,-1,0,14777,0,0,0,7,236755,0,126372,0,0,0,0
 "Defeat Onyxia.","Conqueror of the Lair","Earn 1 Legacy Point.",684,249,-1,0,15594,1,1,134349824,6,254650,0,230797,0,0,0,0
 "Explore Durotar, revealing the covered areas of the world map.","Explore Durotar",,728,-1,-1,0,14778,0,0,0,6,236756,0,126894,0,0,0,0
 "Explore Mulgore, revealing the covered areas of the world map.","Explore Mulgore",,736,-1,-1,0,14778,0,0,0,12,236809,0,124127,0,0,0,0
 "Explore The Barrens, revealing the covered areas of the world map.","Explore The Barrens",,750,-1,-1,0,14778,0,0,0,3,236717,0,124142,0,0,0,0
+"Average gold earned per day","Average gold earned per day",,753,-1,-1,0,140,0,0,73,2,136243,0,124048,0,0,0,0
 "Explore Alterac Mountains, revealing the covered areas of the world map.","Explore Alterac Mountains",,760,-1,-1,0,14777,0,0,0,1,236711,0,121233,0,0,0,0
 "Explore Arathi Highlands, revealing the covered areas of the world map.","Explore Arathi Highlands",,761,-1,-1,0,14777,0,0,0,2,236712,0,127332,0,0,0,0
 "Explore Badlands, revealing the covered areas of the world map.","Explore Badlands",,765,-1,-1,0,14777,0,0,0,3,236716,0,127635,0,0,0,0
@@ -23,7 +90,18 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Explore Redridge Mountains, revealing the covered areas of the world map.","Explore Redridge Mountains",,780,-1,-1,0,14777,0,0,0,14,236814,0,124738,0,0,0,0
 "Explore Stranglethorn Vale, revealing the covered areas of the world map.","Explore Stranglethorn Vale",,781,-1,-1,0,14777,0,0,0,18,236844,0,123710,0,0,0,0
 "Explore Swamp of Sorrows, revealing the covered areas of the world map.","Explore Swamp of Sorrows",,782,-1,-1,0,14777,0,0,0,19,236845,0,123738,0,0,0,0
+"Resurrected by priests","Resurrected by priests",,796,-1,-1,0,127,0,0,9,1,136243,0,123924,0,0,0,0
+"Rebirthed by druids","Rebirthed by druids",,798,-1,-1,0,127,0,0,9,2,136243,0,123932,0,0,0,0
+"Spirit returned to body by shamans","Spirit returned to body by shamans",,799,-1,-1,0,127,0,0,9,4,136243,0,125274,0,0,0,0
+"Redeemed by paladins","Redeemed by paladins",,800,-1,-1,0,127,0,0,9,5,136243,0,123754,0,0,0,0
+"Resurrected by soulstones","Resurrected by soulstones",,801,-1,-1,0,127,0,0,9,6,136243,0,125389,0,0,0,0
 "Explore Westfall, revealing the covered areas of the world map.","Explore Westfall",,802,-1,-1,0,14777,0,0,0,22,236852,0,126395,0,0,0,0
+"Flasks consumed","Flasks consumed",,811,-1,-1,0,145,0,0,9,7,136243,0,123763,0,0,0,0
+"Healthstones used","Healthstones used",,812,-1,-1,0,145,0,0,9,10,136243,0,128169,0,0,0,0
+"Largest heal received","Largest heal received",,829,-1,-1,0,141,0,0,1,6,136243,0,124750,0,0,0,0
+"Total healing received","Total healing received",,830,-1,-1,0,141,0,0,1,8,136243,0,124435,0,0,0,0
+"Battlegrounds played","Battlegrounds played",,839,-1,-1,0,153,0,0,9,1,136243,0,126951,0,0,0,0
+"Battlegrounds won","Battlegrounds won",,840,-1,-1,0,153,0,0,9,3,136243,0,123459,0,0,0,0
 "Explore Wetlands, revealing the covered areas of the world map.","Explore Wetlands",,841,-1,-1,0,14777,0,0,0,23,236853,0,126140,0,0,0,0
 "Explore Teldrassil, revealing the covered areas of the world map.","Explore Teldrassil",,842,-1,-1,0,14778,0,0,0,17,236740,0,124236,0,0,0,0
 "Explore Darkshore, revealing the covered areas of the world map.","Explore Darkshore",,844,-1,-1,0,14778,0,0,0,4,236739,0,127706,0,0,0,0
@@ -40,16 +118,118 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Explore Moonglade, revealing the covered areas of the world map.","Explore Moonglade",,855,-1,-1,0,14778,0,0,0,10,135758,0,127084,0,0,0,0
 "Explore Silithus, revealing the covered areas of the world map.","Explore Silithus",,856,-1,-1,0,14778,0,0,0,14,236829,0,125171,0,0,0,0
 "Explore Winterspring, revealing the covered areas of the world map.","Explore Winterspring",,857,-1,-1,0,14778,0,0,0,20,236854,0,121728,0,0,0,0
-,"Warlord Zaela kills (Upper Blackrock Spire)",,9275,1358,-1,0,15233,0,0,1,1,136243,0,38168,0,0,0,0
-,"Has Died",,15329,-1,-1,0,14821,0,0,1050624,26,136243,0,94296,0,0,0,0
-,"Survivor of the Firelord",,15330,-1,-1,0,14821,0,0,1050624,27,136243,0,94292,0,0,0,0
-,Survivor,,15332,-1,-1,0,14821,0,0,1050624,32,136243,0,94307,0,0,0,0
-,"Survivor of the Shadow Flame",,15333,-1,-1,0,14821,0,0,1050624,28,136243,0,94311,0,0,0,0
-,"Survivor of the Old God",,15334,-1,-1,0,14821,0,0,1050624,29,136243,0,94313,0,0,0,0
-,"Survivor of the Damned",,15335,-1,-1,0,14821,0,0,1050624,30,136243,0,94315,0,0,0,0
-,"<Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits",,15578,-1,-1,0,14821,0,0,1048580,59,136243,0,95385,0,0,0,0
+"Total deaths in 10-player raids","Total deaths in 10-player raids",,917,-1,-1,0,125,0,0,9,3,136243,0,121887,0,0,0,0
+"Total deaths in 5-player dungeons","Total deaths in 5-player dungeons",,918,-1,-1,0,125,0,0,1,2,136243,0,132285,0,0,0,0
+"Gold earned from auctions","Gold earned from auctions",,919,-1,-1,0,140,0,0,1,5,136243,0,129051,0,0,0,0
+"Gold from vendors","Gold from vendors",,921,-1,-1,0,140,0,0,1,10,136243,0,122872,0,0,0,0
+"Mana potions consumed","Mana potions consumed",,922,-1,-1,0,145,0,0,9,5,136243,0,127086,0,0,0,0
+"Elixirs consumed","Elixirs consumed",,923,-1,-1,0,145,0,0,9,6,136243,0,122014,0,0,0,0
+"Most Horde factions at Exalted","Most Horde factions at Exalted",,926,-1,0,0,147,0,0,33,5,136243,0,122893,0,0,0,0
+"Equipped epic items in item slots","Equipped epic items in item slots",,927,-1,-1,0,191,0,0,33,1,136243,0,123810,0,0,0,0
+"Extra bank slots purchased","Extra bank slots purchased",,928,-1,-1,0,191,0,0,1,7,136243,0,122118,0,0,0,0
+"Total factions encountered","Total factions encountered",,931,-1,-1,0,147,0,0,1,6,136243,0,123035,0,0,0,0
+"Total 5-player dungeons entered","Total 5-player dungeons entered",,932,-1,-1,0,14807,0,0,1,1,136243,0,127328,0,0,0,0
+"Total 10-player raids entered","Total 10-player raids entered",,933,-1,-1,0,14807,0,0,1,2,136243,0,123037,0,0,0,0
+"Total 20-player raids entered","Total 20-player raids entered",,934,-1,-1,0,14807,0,0,1,3,136243,0,123830,0,0,0,0
+"Number of hugs","Number of hugs",,1042,-1,-1,0,131,0,0,1,1,136243,0,122978,0,0,0,0
+"Greed rolls made on loot","Greed rolls made on loot",,1043,-1,-1,0,191,0,0,1,8,136243,0,133359,0,0,0,0
+"Need rolls made on loot","Need rolls made on loot",,1044,-1,-1,0,191,0,0,1,9,136243,0,122980,0,0,0,0
+"Total cheers","Total cheers",,1045,-1,-1,0,131,0,0,1,5,136243,0,121330,0,0,0,0
+"Total facepalms","Total facepalms",,1047,-1,-1,0,131,0,0,1,2,136243,0,122982,0,0,0,0
+"Total waves","Total waves",,1065,-1,-1,0,131,0,0,1,6,136243,0,123085,0,0,0,0
+"Total times LOL'd","Total times LOL'd",,1066,-1,-1,0,131,0,0,9,4,136243,0,123087,0,0,0,0
+"Total times playing world's smallest violin","Total times playing world's smallest violin",,1067,-1,-1,0,131,0,0,1,3,136243,0,125810,0,0,0,0
+"Archmage Arugal kills (Shadowfang Keep)","Archmage Arugal kills (Shadowfang Keep)",,1092,33,-1,0,14821,0,5,524289,37,0,0,6547,0,0,0,0
+"Scarlet Commander Mograine kills (Scarlet Monastery)","Scarlet Commander Mograine kills (Scarlet Monastery)",,1093,189,-1,0,14821,0,5,524289,2,133154,0,123922,0,0,0,0
+"Chief Ukorz Sandscalp kills (Zul'Farrak)","Chief Ukorz Sandscalp kills (Zul'Farrak)",,1094,209,-1,0,14821,0,5,524289,45,132482,0,276,0,0,0,0
+"Emperor Dagran Thaurissan kills (Blackrock Depths)","Emperor Dagran Thaurissan kills (Blackrock Depths)",,1095,230,-1,0,14821,0,5,524289,48,0,0,14324,0,0,0,0
+"General Drakkisath kills (Blackrock Spire)","General Drakkisath kills (Upper Blackrock Spire)",,1096,229,-1,0,14821,0,5,524289,51,0,0,9942,0,0,0,0
+"Baron Rivendare kills (Stratholme)","Baron Rivendare kills (Stratholme)",,1097,329,-1,0,14821,0,5,524289,6,237511,0,129790,0,0,0,0
+"Onyxia kills (Onyxia's Lair)","Onyxia kills (Onyxia's Lair)",,1098,249,-1,0,14821,0,5,524289,54,134153,0,3820,0,0,0,0
+"Alterac Valley Honorable Kills","Alterac Valley Honorable Kills",,1113,-1,-1,0,136,0,0,1,6,136243,0,121288,0,0,0,0
+"Arathi Basin Honorable Kills","Arathi Basin Honorable Kills",,1114,-1,-1,0,136,0,0,1,7,136243,0,121742,0,0,0,0
+"Warsong Gulch Honorable Kills","Warsong Gulch Honorable Kills",,1115,-1,-1,0,136,0,0,1,8,136243,0,126786,0,0,0,0
+"Bandage used most","Bandage used most",,1125,-1,-1,0,145,0,0,17,2,136243,0,121744,0,0,0,0
+"Gold spent on travel","Gold spent on travel",,1146,-1,-1,0,140,0,0,1,11,136243,0,123079,0,0,0,0
+"Gold spent at barber shops","Gold spent at barber shops",,1147,-1,-1,0,140,0,0,1,12,136243,0,125713,0,0,0,0
+"Gold spent on postage","Gold spent on postage",,1148,-1,-1,0,140,0,0,1,13,136243,0,123081,0,0,0,0
+"Talent tree respecs","Talent tree respecs",,1149,-1,-1,0,130,0,0,1,1,136243,0,121905,0,0,0,0
+"Gold spent on talent tree respecs","Gold spent on talent tree respecs",,1150,-1,-1,0,140,0,0,1,14,136243,0,124912,0,0,0,0
+"Total kills","Total kills",,1197,-1,-1,0,128,0,0,9,1,136243,0,124192,0,0,0,0
+"Total kills that grant experience or honor","Total kills that grant experience or honor",,1198,-1,-1,0,128,0,0,9,2,136243,0,121801,0,0,0,0
+"Professions learned","Professions learned",,1199,-1,-1,0,132,0,0,33,1,136243,0,124195,0,0,0,0
+"Secondary skills at maximum skill","Secondary skills at maximum skill",,1200,-1,-1,0,132,0,0,33,3,136243,0,126945,0,0,0,0
+"Professions at maximum skill","Professions at maximum skill",,1201,-1,-1,0,132,0,0,33,2,136243,0,124395,0,0,0,0
+"Weapon skills at maximum skill","Weapon skills at maximum skill",,1202,-1,-1,0,132,0,0,33,4,136243,0,121784,0,0,0,0
+"Revived by druids","Revived by druids",,1229,-1,-1,0,127,0,0,9,3,136243,0,123660,0,0,0,0
+"Creature type killed the most","Creature type killed the most",,1336,-1,-1,0,135,0,0,17,3,136243,0,125754,0,0,0,0
+"Different creature types killed","Different creature types killed",,1337,-1,-1,0,135,0,0,33,2,136243,0,123641,0,0,0,0
+"Mage portal taken most","Mage portal taken most",,1339,-1,-1,0,134,0,0,17,4,136243,0,128069,0,0,0,0
+"Fish and other things caught","Fish and other things caught",,1456,-1,-1,0,178,0,0,1,9,136243,0,123845,0,0,0,0
+"Continent with the most Honorable Kills","Continent with the most Honorable Kills",,1458,-1,-1,0,136,0,0,17,3,136243,0,121346,0,0,0,0
+"Most Alliance factions at Exalted","Most Alliance factions at Exalted",,1466,-1,1,0,147,0,0,33,4,136243,0,121217,0,0,0,0
+"Total Killing Blows","Total Killing Blows",,1487,-1,-1,0,137,0,0,1,1,136243,0,121780,0,0,0,0
+,"World Killing Blows",,1488,-1,-1,0,137,0,0,9,2,136243,0,125729,0,0,0,0
+"Continent with the most Killing Blows","Continent with the most Killing Blows",,1489,-1,-1,0,137,0,0,17,3,136243,0,126170,0,0,0,0
+"Battleground Killing Blows","Battleground Killing Blows",,1491,-1,-1,0,137,0,0,9,4,136243,0,125004,0,0,0,0
+"Alterac Valley Killing Blows","Alterac Valley Killing Blows",,1495,-1,-1,0,137,0,0,1,6,136243,0,125576,0,0,0,0
+"Arathi Basin Killing Blows","Arathi Basin Killing Blows",,1496,-1,-1,0,137,0,0,1,7,136243,0,129442,0,0,0,0
+"Warsong Gulch Killing Blows","Warsong Gulch Killing Blows",,1497,-1,-1,0,137,0,0,1,8,136243,0,129061,0,0,0,0
+"Total deaths from other players","Total deaths from other players",,1501,-1,-1,0,21,0,0,1,2,136243,0,132087,0,0,0,0
+"Fish caught","Fish caught",,1518,-1,-1,0,178,0,0,1,8,136243,0,124998,0,0,0,0
+"Fishing skill","Fishing skill",,1519,-1,-1,0,178,0,0,1,7,136243,0,123279,0,0,0,0
+"Cooking skill","Cooking skill",,1524,-1,-1,0,178,0,0,1,1,136243,0,123832,0,0,0,0
+"Cooking daily quests completed","Cooking daily quests completed",,1525,-1,-1,0,178,0,10,9,2,133778,0,126344,0,0,0,0
+"Fishing daily quests completed","Fishing daily quests completed",,1526,-1,-1,0,178,0,10,9,10,132931,0,123834,0,0,0,0
+"Highest Alchemy skill","Highest Alchemy skill",,1527,-1,-1,0,173,0,0,1,1,136243,0,123808,0,0,0,0
+"Highest Blacksmithing skill","Highest Blacksmithing skill",,1532,-1,-1,0,173,0,0,1,3,136243,0,126282,0,0,0,0
+"Highest Enchanting skill","Highest Enchanting skill",,1535,-1,-1,0,173,0,0,1,5,136243,0,128255,0,0,0,0
+"Highest Leatherworking skill","Highest Leatherworking skill",,1536,-1,-1,0,173,0,0,1,14,136243,0,123281,0,0,0,0
+"Highest Mining skill","Highest Mining skill",,1537,-1,-1,0,173,0,0,1,16,136243,0,127451,0,0,0,0
+"Highest Herbalism skill","Highest Herbalism skill",,1538,-1,-1,0,173,0,0,1,11,136243,0,126280,0,0,0,0
+"Highest Inscription skill","Highest Inscription skill",,1539,-1,-1,0,173,0,0,1,12,136243,0,123468,0,0,0,0
+"Highest Skinning skill","Highest Skinning skill",,1541,-1,-1,0,173,0,0,1,18,136243,0,124095,0,0,0,0
+"Highest Tailoring skill","Highest Tailoring skill",,1542,-1,-1,0,173,0,0,1,19,136243,0,131937,0,0,0,0
+"Highest Engineering skill","Highest Engineering skill",,1544,-1,-1,0,173,0,0,1,9,136243,0,124097,0,0,0,0
+"Battleground with the most Killing Blows","Battleground with the most Killing Blows",,1716,-1,-1,0,137,0,0,17,5,136243,0,128663,0,0,0,0
+"Battleground with the most Honorable Kills","Battleground with the most Honorable Kills",,1719,-1,-1,0,136,0,0,17,5,136243,0,132036,0,0,0,0
+"Alchemy Recipes learned","Alchemy Recipes learned",,1729,-1,-1,0,173,0,0,1,2,136243,0,126359,0,0,0,0
+"Blacksmithing Plans learned","Blacksmithing Plans learned",,1730,-1,-1,0,173,0,0,1,4,136243,0,121936,0,0,0,0
+"Engineering Schematics learned","Engineering Schematics learned",,1734,-1,-1,0,173,0,0,1,10,136243,0,132855,0,0,0,0
+"Inscriptions learned","Inscriptions learned",,1735,-1,-1,0,173,0,0,1,13,0,0,128505,0,0,0,0
+"Leatherworking Patterns learned","Leatherworking Patterns learned",,1740,-1,-1,0,173,0,0,1,15,136243,0,131455,0,0,0,0
+"Tailoring Patterns learned","Tailoring Patterns learned",,1741,-1,-1,0,173,0,0,1,20,136243,0,129454,0,0,0,0
+"Cooking Recipes known","Cooking Recipes known",,1745,-1,-1,0,178,0,0,1,3,136243,0,128508,0,0,0,0
+"First Aid Manuals learned","First Aid Manuals learned",,1748,-1,-1,0,178,0,0,1,6,136243,0,132091,0,0,0,0
+"Dalaran Cooking Awards gained","Dalaran Cooking Awards gained",,1976,-1,-1,0,178,0,0,1,4,136243,0,128495,0,0,0,0
+"Summons accepted","Summons accepted",,2277,-1,-1,0,134,0,0,1,2,136243,0,132820,0,0,0,0
+"Battleground played the most","Battleground played the most",,2396,-1,-1,0,153,0,0,17,2,136243,0,124578,0,0,0,0
+"Battleground won the most","Battleground won the most",,2397,-1,-1,0,153,0,0,17,4,136243,0,132293,0,0,0,0
+"Smelting Recipes learned","Smelting Recipes learned",,3216,-1,-1,0,173,0,0,1,17,136243,0,128584,0,0,0,0
+"Aku'mai kills (Blackfathom Deeps)","Aku'mai kills (Blackfathom Deeps)",,6137,48,-1,0,14821,0,0,524289,39,136243,0,19395,0,0,0,0
+"Charlga Razorflank kills (Razorfen Kraul)","Charlga Razorflank kills (Razorfen Kraul)",,6139,47,-1,0,14821,0,0,524289,40,136243,0,19398,0,0,0,0
+"Mekgineer Thermaplugg kills (Gnomeregan)","Mekgineer Thermaplugg kills (Gnomeregan)",,6140,90,-1,0,14821,0,0,524289,41,136243,0,19401,0,0,0,0
+"Amnennar the Coldbringer kills (Razorfen Downs)","Amnennar the Coldbringer kills (Razorfen Downs)",,6141,129,-1,0,14821,0,0,524289,42,136243,0,19670,0,0,0,0
+"Archaedas kills (Uldaman)","Archaedas kills (Uldaman)",,6142,70,-1,0,14821,0,0,524289,44,136243,0,19752,0,0,0,0
+"Princess Theradras kills (Maraudon)","Princess Theradras kills (Maraudon)",,6143,349,-1,0,14821,0,0,524289,46,136243,0,19673,0,0,0,0
+"Shade of Eranikus kills (Sunken Temple)","Shade of Eranikus kills (Sunken Temple)",,6144,109,-1,0,14821,0,0,524289,47,136243,0,19411,0,0,0,0
+"Overlord Wyrmthalak kills (Lower Blackrock Spire)","Overlord Wyrmthalak kills (Lower Blackrock Spire)",,6145,229,-1,0,14821,0,0,524289,50,136243,0,19408,0,0,0,0
+"King Gordok kills (Dire Maul)","King Gordok kills (Dire Maul)",,6146,429,-1,0,14821,0,0,524289,49,136243,0,19492,0,0,0,0
+"High Inquisitor Whitemane kills (Scarlet Monastery)","High Inquisitor Whitemane kills (Scarlet Monastery)",,6786,1001,-1,0,14821,0,0,524289,43,136243,0,22423,0,0,0,0
+"Bazzalan kills (Ragefire Chasm)","Bazzalan kills (Ragefire Chasm)",,15027,389,-1,0,14821,0,0,524289,35,136243,0,91546,0,0,0,0
+"Mutanus the Devourer kills (Wailing Caverns)","Mutanus the Devourer kills (Wailing Caverns)",,15028,43,-1,0,14821,0,0,524289,36,136243,0,91548,0,0,0,0
+"Bazil Thredd kills (Stormwind Stockade)","Bazil Thredd kills (Stormwind Stockade)",,15029,34,-1,0,14821,0,5,524289,38,0,0,91550,0,0,0,0
+"Darkmaster Gandling kills (Scholomance)","Darkmaster Gandling kills (Scholomance)",,15030,229,-1,0,14821,0,5,524289,52,0,0,91552,0,0,0,0
+"Baron Rivendare kills (Stratholme)","Baron Rivendare kills (Stratholme)",,15031,229,-1,0,14821,0,5,524289,53,0,0,91554,0,0,0,0
+,"Has Died",,15329,-1,-1,0,14821,0,0,1050624,28,136243,0,94296,0,0,0,0
+,"Survivor of the Firelord",,15330,-1,-1,0,14821,0,0,1050624,29,136243,0,94292,0,0,0,0
+,Survivor,,15332,-1,-1,0,14821,0,0,1050624,34,136243,0,94307,0,0,0,0
+,"Survivor of the Shadow Flame",,15333,-1,-1,0,14821,0,0,1050624,30,136243,0,94311,0,0,0,0
+,"Survivor of the Old God",,15334,-1,-1,0,14821,0,0,1050624,31,136243,0,94313,0,0,0,0
+,"Survivor of the Damned",,15335,-1,-1,0,14821,0,0,1050624,32,136243,0,94315,0,0,0,0
+,"<Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits",,15578,-1,-1,0,14821,0,0,1048580,55,136243,0,95385,0,0,0,0
 ,"The Immortal",,15637,-1,-1,0,15425,0,0,1048576,3,135922,191481,95610,0,0,0,0
-,"UNUSED Bael'Gar Defeated (Daily)",,19563,-1,-1,0,14821,0,0,1050624,31,136243,0,0,0,0,0,0
+,"UNUSED Bael'Gar Defeated (Daily)",,19563,-1,-1,0,14821,0,0,1050624,33,136243,0,0,0,0,0,0
 ,"[DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)",,20129,-1,-1,0,15425,0,0,1050628,44,136243,0,156290,0,0,0,0
 ,"[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)",,20130,-1,-1,0,15425,0,0,1050628,45,136243,0,157566,0,0,0,0
 ,"[DNT] Discoverer's Delight - Reach Level 60 in Phase 4 (hidden)",,20131,-1,-1,0,15425,0,0,1050628,51,136243,0,161531,0,0,0,0
@@ -142,6 +322,18 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete Week 4 of the Field of Honor Journey.","Field of Honor: Week 4","Earn 1 Legacy Point.",63340,-1,-1,0,15620,0,0,134349824,1,2022756,0,229457,0,0,0,0
 "Complete Week 7 of the Field of Honor Journey.","Field of Honor: Week 7","Earn 1 Legacy Point.",63341,-1,-1,0,15620,0,0,134349824,4,2022756,0,229460,0,0,0,0
 "Complete Week 10 of the Field of Honor Journey.","Field of Honor: Week 10","Earn 1 Legacy Point.",63342,-1,-1,0,15620,0,0,134349824,6,2022756,0,229462,0,0,0,0
+"Edwin Vancleef Kills (Deadmines)","Edwin Vancleef Kills (Deadmines)",,63570,36,-1,0,14821,0,0,524289,3,133694,0,230971,0,0,0,0
+"Rath'mael Kills (Ruins of Lordaeron)","Rath'mael Kills (Ruins of Lordaeron)",,63571,2999,-1,0,14821,0,0,524289,4,135983,0,230973,0,0,0,0
+"Shade of the Archmage Kills (City of Dalaran)","Shade of the Archmage Kills (City of Dalaran)",,63572,2959,-1,0,14821,0,0,524289,5,799786,0,230975,0,0,0,0
+"Durgen Dirgehammer Kills (Hall of Thanes)","Durgen Dirgehammer Kills (Hall of Thanes)",,63573,3065,-1,0,14821,0,0,524289,8,2102434,0,230977,0,0,0,0
+"Nanaya Kills (Shaper's Terrace)","Nanaya Kills (Shaper's Terrace)",,63574,3001,-1,0,14821,0,0,524289,9,254088,0,230979,0,0,0,0
+"Blazeroar Kills (Alcaz Prison)","Blazeroar Kills (Alcaz Prison)",,63575,2994,-1,0,14821,0,0,524289,14,236234,0,230981,0,0,0,0
+"The Wild King kills (Hyjal Summit)","The Wild King kills (Hyjal Summit)",,63580,2981,-1,0,14821,0,0,524289,15,7941427,0,230991,0,0,0,0
+"Sonya Darkhallow Kills (Barrow Deeps)","Sonya Darkhallow Kills (Barrow Deeps)",,63581,3052,-1,0,14821,0,0,524289,16,1387709,0,230993,0,0,0,0
+"Lyn the Ignored Kills (City of Dalaran)","Lyn the Ignored Kills (City of Dalaran)",,63589,2959,-1,0,14821,0,0,524289,7,799786,0,231009,0,0,0,0
+"Cinder Kills (Shaper's Terrace)","Cinder Kills (Shaper's Terrace)",,63590,3001,-1,0,14821,0,0,524289,10,132193,0,231011,0,0,0,0
+"Bolt Kills (Shaper's Terrace)","Bolt Kills (Shaper's Terrace)",,63592,3001,-1,0,14821,0,0,524289,12,132189,0,231015,0,0,0,0
+"Snowtalon Kills (Shaper's Terrace)","Snowtalon Kills (Shaper's Terrace)",,63593,3001,-1,0,14821,0,0,524289,13,838684,0,231017,0,0,0,0
 "Explore Shen'dralas, revealing the covered areas of the world map.","Explore Shen'dralas",,63684,-1,-1,0,14778,0,0,0,13,132368,0,232142,0,0,0,0
 "Reach level 25 for the first time on a Warrior.","Novice Warrior","Earn 1 Legacy Point.",63969,-1,-1,0,15585,0,0,268567552,2,626008,0,234036,0,0,0,0
 "Reach level 45 for the first time on a Warrior.","Experienced Warrior","Earn 1 Legacy Point.",63970,-1,-1,0,15585,0,0,268567552,3,626008,0,234038,0,0,0,0
@@ -232,3 +424,11 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Hidden: BETA Survey - Level 30 - Rogue",,64157,-1,-1,0,15607,0,0,3145728,7,136243,0,234872,0,0,0,0
 ,"Hidden: BETA Survey - Level 30 - Priest",,64158,-1,-1,0,15607,0,0,3145728,8,136243,0,234874,0,0,0,0
 ,"Hidden: BETA Survey - Level 30 - Paladin",,64159,-1,-1,0,15607,0,0,3145728,9,136243,0,234876,0,0,0,0
+"Darkspear Island victories","Darkspear Island victories",,64176,2997,-1,0,153,0,0,1,10,136243,0,235075,0,0,0,0
+"Darkspear Islands battles","Darkspear Islands battles",,64179,-1,-1,0,153,0,0,0,11,136243,0,235079,0,0,0,0
+"Darkspear Islands Honorable Kills","Darkspear Islands Honorable Kills",,64180,-1,-1,0,136,0,0,0,9,136243,0,235081,0,0,0,0
+"Darkspear Island Killing Blows","Darkspear Island Killing Blows",,64181,-1,-1,0,137,0,0,0,9,136243,0,235083,0,0,0,0
+"Deaths in Darkspear Islands","Deaths in Darkspear Islands",,64182,2997,-1,0,124,0,0,0,5,136243,0,235085,0,0,0,0
+"Total deaths in 20-player raids","Total deaths in 20-player raids",,64183,-1,-1,0,125,0,0,1,4,136243,0,235087,0,0,0,0
+"Total 40-player raids entered","Total 40-player raids entered",,64184,-1,-1,0,14807,0,0,1,4,136243,0,235097,0,0,0,0
+"Total deaths in 40-player raids","Total deaths in 40-player raids",,64185,-1,-1,0,125,0,0,1,5,136243,0,235099,0,0,0,0

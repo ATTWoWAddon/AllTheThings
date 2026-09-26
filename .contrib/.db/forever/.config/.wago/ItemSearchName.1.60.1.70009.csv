@@ -2373,8 +2373,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 11884,"Moonlit Amice",2,0,0,0,-1,0,0,0,0,33,0,24580,0,32,0,-1,-1
 11888,"Quintis' Research Gloves",2,0,0,0,-1,0,0,0,0,50,0,24580,0,32,0,-1,-1
 11889,"Bark Iron Pauldrons",2,0,0,0,-1,0,0,0,0,50,0,24580,0,32,0,-1,-1
-11902,"Linken's Sword of Mastery",2,0,0,0,-1,0,0,0,0,56,0,24580,0,0,0,-1,-1
-11904,"Spirit of Aquementas",2,0,0,0,-1,0,0,0,0,56,0,24580,0,0,0,-1,-1
 11906,Beastsmasher,2,0,0,0,-1,0,0,0,0,55,0,24580,0,0,0,-1,-1
 11907,Beastslayer,2,0,0,0,-1,0,0,0,0,55,0,24580,0,0,0,-1,-1
 11908,"Archaeologist's Quarry Boots",2,0,0,0,-1,0,0,0,0,55,0,24580,0,32,0,-1,-1
@@ -3278,6 +3276,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 16489,"Champion's Silk Hood",3,0,0,0,128,58,0,0,0,63,32768,24580,0,32,0,-1,-1
 16490,"Legionnaire's Silk Pants",3,0,0,0,128,58,0,0,0,63,32768,24580,0,32,0,-1,-1
 16491,"Legionnaire's Silk Robes",3,0,0,0,128,58,0,0,0,63,32768,24580,0,32,0,-1,-1
+16536,"Warlord's Silk Amice",4,0,0,0,128,60,0,0,0,74,32768,24580,0,32,0,-1,-1
 16492,"Champion's Silk Shoulderpads",3,0,0,0,128,58,0,0,0,63,32768,24580,0,32,0,-1,-1
 16493,"Legionnaire's Dragonhide Armguards",3,0,0,0,1024,55,0,0,0,60,32768,24580,0,32,0,-1,-1
 16494,"Blood Guard's Dragonhide Boots",3,0,0,0,1024,58,0,0,0,63,32768,24580,0,32,0,-1,-1
@@ -3318,7 +3317,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 16533,"Warlord's Silk Cowl",4,0,0,0,128,60,0,0,0,74,32768,24580,0,32,0,-1,-1
 16534,"General's Silk Trousers",4,0,0,0,128,60,0,0,0,71,32768,24580,0,32,0,-1,-1
 16535,"Warlord's Silk Raiment",4,0,0,0,128,60,0,0,0,74,32768,24580,0,32,0,-1,-1
-16536,"Warlord's Silk Amice",4,0,0,0,128,60,0,0,0,74,32768,24580,0,32,0,-1,-1
 16537,"General's Silk Sash",4,0,0,0,128,60,0,0,0,65,32768,24580,0,32,0,-1,-1
 16538,"General's Silk Cuffs",4,0,0,0,128,60,0,0,0,65,32768,24580,0,32,0,-1,-1
 16539,"General's Silk Boots",4,0,0,0,128,60,0,0,0,71,32768,24580,0,32,0,-1,-1
@@ -5499,8 +5497,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 272157,"Monster - Sword1H, Skyborne (Green)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 272158,"Monster - Sword 2H, Skyborne (Blue)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 272159,"Monster - Sword 2H, Skyborne (White)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
-272160,"Monster - Sword1H, Skyborne (White)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
-272161,"Monster - Sword1H, Skyborne (Grey)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 272162,"Monster - Sword 2H, Skyborne (Green)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 272163,"Monster - Sword 2H, Skyborne (Gray)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 272164,"Monster - Dagger 1H, Skyborne (Blue)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
@@ -5836,7 +5832,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 272839,"Premier Grand Marshal's Handaxe",4,0,0,0,-1,60,0,0,0,65,36864,24580,0,0,0,-1,-1
 272840,"Premier Grand Marshal's Sunderer",4,0,0,0,-1,60,0,0,0,65,36864,24580,0,0,0,-1,-1
 272841,"Premier Grand Marshal's Bullseye",4,0,0,0,-1,60,0,0,0,65,36864,24580,0,0,0,-1,-1
-273388,"Premier Wyrmhide Waistband",3,0,0,0,1024,55,0,0,0,60,36864,24580,0,32,0,-1,-1
 272842,"Premier Grand Marshal's Repeater",4,0,0,0,-1,60,0,0,0,65,36864,24580,0,0,0,-1,-1
 272843,"Premier Grand Marshal's Dirk",4,0,0,0,-1,60,0,0,0,65,36864,24580,0,0,0,-1,-1
 272844,"Premier Grand Marshal's Right Hand Blade",4,0,0,0,-1,60,0,0,0,65,36864,24580,0,0,0,-1,-1
@@ -5917,6 +5912,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 273385,"Premier Wyrmhide Leggings",3,0,0,0,1024,55,0,0,0,60,36864,24580,0,32,0,-1,-1
 273386,"Premier Wyrmhide Headguard",3,0,0,0,1024,55,0,0,0,60,36864,24580,0,32,0,-1,-1
 273387,"Premier Wyrmhide Shoulders",3,0,0,0,1024,55,0,0,0,60,36864,24580,0,32,0,-1,-1
+273388,"Premier Wyrmhide Waistband",3,0,0,0,1024,55,0,0,0,60,36864,24580,0,32,0,-1,-1
 273389,"Premier Knight-Captain's Lunarhide Bracers",4,0,0,0,1024,60,0,0,0,65,36864,24580,0,32,0,-1,-1
 273390,"Premier Knight-Captain's Lunarhide Waistguard",4,0,0,0,1024,60,0,0,0,65,36864,24580,0,32,0,-1,-1
 273391,"Premier Lieutenant Commander's Lunarhide Gauntlets",4,0,0,0,1024,60,0,0,0,65,36864,24580,0,32,0,-1,-1
@@ -6369,12 +6365,12 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 277244,"Guardian's Maulers",3,0,0,0,-1,40,0,0,0,45,0,8192,0,0,0,-1,-1
 277245,"Swampspine Crusher",3,0,0,0,-1,40,0,0,0,45,0,8192,0,0,0,-1,-1
 277246,"Ruby-Adorned Blade",3,0,0,0,8,0,0,0,0,36,0,8192,0,0,0,-1,-1
-277247,"Mug of Muddled Memories",2,0,0,0,-1,0,0,0,0,18,0,8192,0,0,768,-1,-1
+277247,"Mug of Muddled Memories",2,0,0,0,-1,0,0,0,0,12,0,8192,0,0,768,-1,-1
 277248,"Notched Ritual Rib",3,0,0,0,-1,40,0,0,0,45,0,8192,0,0,768,-1,-1
 277250,"The Skullcracker",3,0,0,0,-1,40,0,0,0,45,0,8192,0,0,0,-1,-1
 277253,"Staff of Brutal Cunning",2,0,0,0,-1,0,0,0,0,43,0,8192,0,0,0,-1,-1
 277254,"Truthseeker's Bow",3,0,0,0,-1,0,0,0,0,48,0,8192,0,0,0,-1,-1
-277255,"Misplaced Shooter",2,0,0,0,-1,0,0,0,0,18,0,8192,0,0,0,-1,-1
+277255,"Misplaced Shooter",2,0,0,0,-1,0,0,0,0,12,0,8192,0,0,0,-1,-1
 277256,"Dudd's Second-Favorite Wand",2,0,0,0,-1,40,0,0,0,45,0,8192,0,0,0,-1,-1
 277257,"Raven Hill Crest",3,0,0,0,-1,0,0,0,0,29,0,8192,0,0,0,-1,-1
 277258,"Crest of Elucidation",3,0,0,0,-1,40,0,0,0,50,0,8192,0,0,0,-1,-1
@@ -6456,7 +6452,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 280623,"Veteran Adventurer's Rucksack",3,0,0,0,-1,1,0,0,0,1,32768,8192,0,8454144,1,-1,-1
 280696,"Elementalist's Guard",3,0,0,0,-1,1,0,0,0,40,0,8192,0,0,0,-1,-1
 280729,"Shen'dorei Tabard",4,0,0,0,-1,1,0,0,0,1,32768,24576,0,8454144,1,-1,-1
-281019,"Monster - Sword1H, Skyborne Back Sheathe (White)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
+281019,"Monster - Sword1H, Skyborne Back Sheathe (Blue)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 281020,"Monster - Shield, Skyborne (White)",2,0,0,0,-1,0,0,0,0,8,0,24580,0,0,0,-1,-1
 281060,"Replica Ironforge Air Rifle",3,0,0,0,-1,0,0,0,0,1,65730,6316036,0,0,0,-1,-1
 281250,"Forest Oracle's Cloak",2,0,0,0,-1,0,0,0,0,11,0,8192,0,0,0,-1,-1
@@ -6517,6 +6513,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 281322,"Frosthowl's Footwarmers",1,0,0,0,-1,0,0,0,0,9,0,8192,0,0,0,-1,-1
 281323,"Spirit-buckle Belt",2,0,0,0,-1,0,0,0,0,27,0,8192,0,0,0,-1,-1
 281324,"Sailing Tunic",2,0,0,0,-1,0,0,0,0,17,0,8192,0,0,0,-1,-1
+281358,"Stone Key",1,0,0,0,-1,0,0,0,0,1,32768,28676,0,0,0,-1,-1
 281538,"Matriarch's Mantle",2,0,0,0,-1,0,0,0,0,59,0,8196,0,0,0,-1,-1
 281539,"Bear Fur Cowl",2,0,0,0,-1,0,0,0,0,59,0,8196,0,0,0,-1,-1
 281586,"Elderwild Construction Hammer",3,0,0,0,-1,1,0,0,0,60,0,8192,0,0,768,-1,-1
@@ -6573,7 +6570,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 281731,"Restored Buckler",2,0,0,0,-1,1,0,0,0,1,32768,6316032,0,8388608,0,-1,-1
 281732,"Restored Bow",2,0,0,0,-1,1,0,0,0,1,32768,6316032,0,8388608,0,-1,-1
 281733,"Restored Wand",2,0,0,0,-1,1,0,0,0,1,32768,6316032,0,8388608,0,-1,-1
-282064,"Tim's Lost Rib",2,0,0,0,-1,0,0,0,0,18,0,8192,0,0,0,-1,-1
+282064,"Tim's Lost Rib",2,0,0,0,-1,0,0,0,0,12,0,8192,0,0,0,-1,-1
 282284,"Webwood Slicer",2,0,0,0,-1,1,0,0,0,10,0,8192,0,0,0,-1,-1
 282719,"Monster - Bow, Skyborne (Gray)",1,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 285242,"Monster - 2H Mace, Barrow Deeps - Red",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
@@ -6588,6 +6585,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 286139,"Monster - 1H Mace, Barrow Deeps - Red",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 286426,"Honorbound Cloak",2,0,0,0,-1,0,0,0,0,15,0,24576,0,32,0,-1,-1
 286427,"Cloak of the Honored Guest",2,0,0,0,-1,0,0,0,0,15,0,24576,0,32,0,-1,-1
+287090,"Sharpened Letter Opener",1,0,0,0,-1,2,0,0,0,17,32768,28672,0,0,0,-1,-1
 286424,"Monster - Sword, Scimitar Basic",0,0,0,0,32767,1,0,0,0,1,0,24576,0,0,0,-1,-1
 286425,"Monster - Sword, Scimitar Basic",0,0,0,0,32767,1,0,0,0,1,0,24576,0,0,0,-1,-1
 227802,"Monster - Torch",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
@@ -6618,5 +6616,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 22631,"Atiesh, Greatstaff of the Guardian",5,0,0,0,-1,60,0,0,0,90,96,28676,0,0,0,-1,-1
 22632,"Atiesh, Greatstaff of the Guardian",5,0,0,0,-1,60,0,0,0,90,96,28676,0,0,0,-1,-1
 241088,"Scarlet Staff",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
+272160,"Monster - Sword1H, Skyborne (Blue)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
+272161,"Monster - Sword1H, Skyborne (Blue)",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 272698,"Premier Sergeant's Cloak",3,0,0,0,-1,55,0,0,0,60,36864,24580,0,32,0,-1,-1
 272699,"Premier Sergeant's Cape",3,0,0,0,-1,55,0,0,0,60,36864,24580,0,32,0,-1,-1

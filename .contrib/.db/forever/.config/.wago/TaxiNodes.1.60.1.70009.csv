@@ -1,6 +1,6 @@
 Name_lang,Pos_0,Pos_1,Pos_2,MapOffset_0,MapOffset_1,FlightMapOffset_0,FlightMapOffset_1,ID,ContinentID,ConditionID,CharacterBitNumber,Flags,UiTextureKitID,MinimapAtlasMemberID,Facing,SpecialIconConditionID,VisibilityConditionID,MountCreatureID_0,MountCreatureID_1
 "Northshire Abbey",-8888.98046875,-0.54000002146,94.38999938965,0,0,0,0,1,0,0,0,1024,0,4689,0,0,0,308,0
-"Stormwind, Elwynn",-8840.5595703125,489.70001220703,109.61000061035,0,0,0,0,2,0,0,2,1025,0,4689,0,0,0,0,541
+"Stormwind, Elwynn",-8832.76953125,478.62298583984,109.61599731445,0,0,0,0,2,0,0,2,1025,0,4689,0,0,0,0,541
 "Programmer Isle",16391.810546875,16341.209960938,69.44000244141,0,0,0,0,3,0,0,0,1024,0,4689,0,0,0,308,0
 "Sentinel Hill, Westfall",-10628.889648438,1036.6800537109,34.06000137329,0,0,0,0,4,0,0,4,1025,0,4689,0,0,0,0,541
 "Lakeshire, Redridge",-9429.099609375,-2231.3999023438,68.65000152588,0,0,0,0,5,0,0,5,1025,0,4689,0,0,0,0,541
