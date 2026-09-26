@@ -589,6 +589,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				}),
 				q(8201, {	-- A Collection of Heads
 					["qg"] = 14910,	-- Exzhal <Servitor of Rastakhan>
+					["qi"] = 19883,	-- Sacred Cord (QI!)
 					["coord"] = { 15.3, 15.5, STRANGLETHORN_VALE },
 					["lvl"] = 58,
 					["groups"] = {
@@ -1910,6 +1911,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8201, {	-- A Collection of Heads
 						["qg"] = 14910,	-- Exzhal <Servitor of Rastakhan>
+						["qi"] = 19883,	-- Sacred Cord (QI!)
 						["coord"] = { 15.3, 15.5, STRANGLETHORN_VALE },
 						["lvl"] = 58,
 						["groups"] = {
