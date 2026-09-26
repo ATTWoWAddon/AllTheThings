@@ -89,7 +89,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
 				qi = 282420,	-- Folder Parchment (PQI!)
-				coord = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
 				lvl = 2,
 			}),
@@ -103,7 +103,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92471, {	-- Aetheen of the Gales
 				qg = 251361,	-- Rorian the Dayseeker
-				coord = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 			}),
 			q(92473, {	-- Aggressive Encroachment
@@ -185,7 +185,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92483, {	-- At Home in the Shadows
 				["sourceQuest"] = 92461,	-- Harmony in Balance
 				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				["classes"] = { ROGUE },
 				["lvl"] = 2,
 			}),
@@ -565,13 +565,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92464, {	-- Elemental Unrest
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
-				coord = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 			}),
 			q(92484, {	-- Embracing the Elements
 				["sourceQuest"] = 92461,	-- Harmony in Balance
 				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
 				["lvl"] = 2,
 			}),
@@ -665,7 +665,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93552, {	-- Harvesting Windstones
 				["sourceQuest"] = 92461,	-- Harmony in Balance
 				qg = 251363,	-- Dalia the Collector
-				coord = { 43.2, 24.0, MAP.ZEPHRAS_ISLE },
+				coord = { 43.4, 24.0, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 				groups = {
 					objective(1, {	-- 0/15 Windstone Cluster
@@ -823,7 +823,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92597, {	-- Reading the Ley Lines
 				["qg"] = 251371,	-- Falorne Fallwind
-				["coord"] = { 43.2, 24.8, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 43.3, 24.9, MAP.ZEPHRAS_ISLE },
 				["races"] = { SKYBORNE_ALLIANCE },
 				["lvl"] = 2,
 			}),
@@ -1232,14 +1232,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92532, {	-- The Warrior's Path
 				["sourceQuest"] = 92461,	-- Harmony in Balance
 				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				["classes"] = { WARRIOR },
 				["lvl"] = 2,
 			}),
 			q(92482, {	-- The Way of the Hunter
 				["sourceQuest"] = 92461,	-- Harmony in Balance
 				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				["classes"] = { HUNTER },
 				["lvl"] = 2,
 			}),
