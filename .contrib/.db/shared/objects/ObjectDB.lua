@@ -332542,9 +332542,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[613286] = {
 		readable = "Raw Windstone",
+		model = 8172752,
 		ignorewowhead = true,
 		text = {
 			en = "Raw Windstone",
+			es = "Piedra del Viento cruda",
+			de = "Rauer Windstein",
+			fr = "Pierre du Vent brute",
+			it = "Pietra del Vento Grezza",
+			cn = "原始风石",
+			tw = "原始風石",
 		},
 	},
 	[613317] = {

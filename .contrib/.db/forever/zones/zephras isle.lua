@@ -670,7 +670,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = {
 					objective(1, {	-- 0/15 Windstone Cluster
 						providers = {
-							{ "i", 258772 },	-- Windstone Cluster
+							{ "i", 258772 },	-- Windstone Cluster (QI!)
 							{ "o", 613286 },	-- Raw Windstone
 						},
 						coords = {
