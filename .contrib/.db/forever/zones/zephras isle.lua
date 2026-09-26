@@ -417,6 +417,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92464, {	-- Elemental Unrest
 				["qg"] = 251361,	-- Rorian the Dayseeker
 				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				["isBreadcrumb"] = true,
 				["lvl"] = 2,
 			}),
 			q(92484, {	-- Embracing the Elements
