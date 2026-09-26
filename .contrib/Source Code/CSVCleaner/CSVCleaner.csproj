@@ -2,10 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <Platform Condition="'$(Platform)' == ''">x64</Platform>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <BaseOutputPath>..\..\.wago</BaseOutputPath>
+    <OutputPath>..\..\.wago\$(Configuration)\</OutputPath>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <PlatformTarget>x64</PlatformTarget>
     <IsPublishable>False</IsPublishable>
@@ -16,15 +18,36 @@
     <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  <PropertyGroup Condition="'$(Platform)'=='x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <PublishAot>False</PublishAot>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <OutputPath>..\..\.builds\CSVCleaner\x86\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebugType>full</DebugType>
     <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
     <Optimize>False</Optimize>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <DebugType>none</DebugType>
     <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebugType>full</DebugType>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <DebugType>none</DebugType>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <Target Name="ValidateCSVCleanerPlatform" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="CSVCleaner supports only the x64 and x86 platforms. Select one in Parser.sln." />
+  </Target>
 </Project>
