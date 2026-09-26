@@ -4838,9 +4838,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2259, {	-- Frostmane Club
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 29.6, 79.0, DUN_MOROGH },
-						{ 26.0, 79.8, DUN_MOROGH },
-						{ 21.6, 77.0, DUN_MOROGH },
+						{ 21.2, 54.4, MAP.DUN_MOROGH },
+						{ 40.8, 35.0, MAP.DUN_MOROGH },
+						{ 40.8, 43.6, MAP.DUN_MOROGH },
 					},
 					["cr"] = 1121,	-- Frostmane Snowstrider
 				}),

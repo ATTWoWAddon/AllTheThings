@@ -346,10 +346,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 							{ "o", 629596 },	-- Snowdrift
 							{ "i", 267413 },	-- Gnomeregan Archival Data
 						},
+						coord = { 26.3, 41.2, DUN_MOROGH },
 					}),
 				}
 			}),
-
 			q(5639, {	-- Desperate Prayer
 				["altQuests"] = {
 					5634,	-- Desperate Prayer [Stormwind City #1]

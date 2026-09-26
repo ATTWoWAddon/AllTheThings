@@ -726,6 +726,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(99158, {	-- Dawn in the Mountains
 				["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+				["qi"] = 286355,	-- Crate of Candles (QI!)
 				["coord"] = { 47.3, 52.2, MAP.DUN_MOROGH },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["races"] = ALLIANCE_ONLY,
@@ -773,8 +774,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["groups"] = {
 					objective(1, {	-- 0/14 Mostly Dry Firewood
 						["providers"] = {
-							{ "o", 694934 },	-- Fallen Log
 							{ "i", 286339 },	-- Mostly Dry Firewood
+							{ "o", 694934 },	-- Fallen Log
 						},
 					}),
 				},
@@ -996,7 +997,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				},
 			}),
-			q(99160, {	-- Rime's Wrath (2/2)
+			q(99161, {	-- Rime's Wrath (2/2)
 				["sourceQuest"] = 99160,	-- Rime's Wrath (1/2)
 				["qg"] = 1253,	-- Father Gavin
 				["coord"] = { 57.7, 44.9, MAP.DUN_MOROGH },
@@ -1004,10 +1005,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["groups"] = {
 					objective(1, {	-- 0/1 Avala's Core
-						["cr"] = 276009,	-- Minor Ice Elemental
+						["cr"] = 276009,	-- Avala <The Lost Rime>
 						["provider"] = { "i", 286325 },	-- Avala's Core
 						["coord"] = { 58.1, 42.1, MAP.DUN_MOROGH },
 					}),
+					i(286737),	-- Avala's Binding
 				},
 			}),
 			q(2218, {	-- Road to Salvation
@@ -1724,9 +1726,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			i(2259, {	-- Frostmane Club
 				["cr"] = 1121,	-- Frostmane Snowstrider
 				["coords"] = {
-					{ 29.6, 79.0, MAP.DUN_MOROGH },
-					{ 26.0, 79.8, MAP.DUN_MOROGH },
-					{ 21.6, 77.0, MAP.DUN_MOROGH },
+					{ 21.2, 54.4, MAP.DUN_MOROGH },
+					{ 40.8, 35.0, MAP.DUN_MOROGH },
+					{ 40.8, 43.6, MAP.DUN_MOROGH },
 				},
 			}),
 			i(2260, {	-- Frostmane Hand Axe
@@ -1769,6 +1771,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					{ 67.0, 50.2, MAP.DUN_MOROGH },
 				},
 			}),
+			i(249879, {	-- Recipe: Peace Tea
+				["cr"] = 1397,	-- Frostmane Seer
+				["coords"] = {
+					{ 49.8, 37.2, MAP.DUN_MOROGH },
+					{ 46.6, 40.6, MAP.DUN_MOROGH },
+					{ 49.0, 42.6, MAP.DUN_MOROGH },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(2065, {	-- Rockjaw Blade
 				["cr"] = 1116,	-- Rockjaw Ambusher
 				["coords"] = {
@@ -1804,7 +1815,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					{ 46.6, 40.6, MAP.DUN_MOROGH },
 					{ 49.0, 42.6, MAP.DUN_MOROGH },
 				},
-				
 			}),
 		}),
 	},
