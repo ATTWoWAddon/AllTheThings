@@ -1406,6 +1406,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 5,
 			}),
 		}),
+		n(TREASURES, { -- Treasure Chests
+			o(626718, { -- Dented Chest
+				coord = { 37.8, 24.6 , MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(2651),	-- Flimsy Chain Bracers
+					i(252022),	-- Galestrider Jerky
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(272045, {	-- Brother Zendraas
 				["coord"] = { 57.8, 52.0, MAP.ZEPHRAS_ISLE },
