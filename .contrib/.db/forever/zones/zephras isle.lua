@@ -1036,5 +1036,182 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 5,
 			}),
 		}),
+		n(VENDORS, {
+			n(272045, {	-- Brother Zendraas
+				["coord"] = { 57.8, 52.0, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277069, {	-- Al'aketh Armguards
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277065, {	-- Al'aketh Belt
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277067, {	-- Al'aketh Boots
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277063, {	-- Al'aketh Bracers
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277059, {	-- Al'aketh Chain
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277056, {	-- Al'aketh Chainmail
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277077, {	-- Al'aketh Cord
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277075, {	-- Al'aketh Cuffs
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277073, {	-- Al'aketh Footwraps
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277058, {	-- Al'aketh Gauntlets
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277064, {	-- Al'aketh Gloves
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277061, {	-- Al'aketh Greaves
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277076, {	-- Al'aketh Handwraps
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277062, {	-- Al'aketh Harness
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277068, {	-- Al'aketh Jerkin
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277078, {	-- Al'aketh Leggings
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277060, {	-- Al'aketh Legguards
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277070, {	-- Al'aketh Mitts
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277072, {	-- Al'aketh Pants
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277079, {	-- Al'aketh Shoes
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277071, {	-- Al'aketh Strap
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277066, {	-- Al'aketh Trousers
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277074, {	-- Al'aketh Vestments
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277057, {	-- Al'aketh Wristguards
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+				},
+			}),
+			n(251364, {	-- Destin Thriceforged
+				["coord"] = { 43.5, 23.6, MAP.ZEPHRAS_ISLE },
+				["sym"] = {{"select","itemID",
+					1194,	-- Bastard Sword
+					2479,	-- Broad Axe
+					2130,	-- Club
+					2139,	-- Dirk
+					2134,	-- Hand Axe
+					2480,	-- Large Club
+					2132,	-- Short Staff
+					2131,	-- Shortsword
+				}},
+			}),
+			n(271478, {	-- Elaria Anvilwind
+				["coord"] = { 59.5, 76.1, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277083),	-- Zephrali Chain
+					i(277080),	-- Zephrali Chainmail
+					i(277082),	-- Zephrali Gauntlets
+					i(277085),	-- Zephrali Greaves
+					i(277084),	-- Zephrali Legguards
+					i(277081),	-- Zephrali Wristguards
+				},
+			}),
+			n(271483, {	-- Ergaan Eastwind
+				["coord"] = { 59.7, 75.9, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277093),	-- Zephrali Armguards
+					i(277089),	-- Zephrali Belt
+					i(277091),	-- Zephrali Boots
+					i(277087),	-- Zephrali Bracers
+					i(277097),	-- Zephrali Footwraps
+					i(277088),	-- Zephrali Gloves
+					i(277086),	-- Zephrali Harness
+					i(277092),	-- Zephrali Jerkin
+					i(277094),	-- Zephrali Mitts
+					i(277096),	-- Zephrali Pants
+					i(277095),	-- Zephrali Strap
+					i(277090),	-- Zephrali Trousers
+				},
+			}),
+			n(271465, {	-- Falfaan Halfwind
+				["coord"] = { 59.4, 75.8, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277105),	-- Zephrali Blade
+					i(277107),	-- Zephrali Bludgeon
+					i(277110),	-- Zephrali Bow
+					i(277111),	-- Zephrali Crossbow
+					i(277109),	-- Zephrali Greatstaff
+					i(277104),	-- Zephrali Greatsword
+					i(277108),	-- Zephrali Knife
+					i(277106),	-- Zephrali Smasher
+				},
+			}),
+			n(251965, {	-- Fevrath Skyhammer
+				["coord"] = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },
+				["sym"] = {{"select","itemID",
+					2129,	-- Large Round Shield
+					17184,	-- Small Shield
+					2380,	-- Tarnished Chain Belt
+					2383,	-- Tarnished Chain Boots
+					2384,	-- Tarnished Chain Bracers
+					2385,	-- Tarnished Chain Gloves
+					2381,	-- Tarnished Chain Leggings
+					2379,	-- Tarnished Chain Vest
+				}},
+			}),
+			n(251365, {	-- Jolee Brightmeadows
+				["coord"] = { 43.5, 23.7, MAP.ZEPHRAS_ISLE },
+				["sym"] = {{"select","itemID",
+					2122,	-- Cracked Leather Belt
+					2123,	-- Cracked Leather Boots
+					2124,	-- Cracked Leather Bracers
+					2125,	-- Cracked Leather Gloves
+					2126,	-- Cracked Leather Pants
+					2127,	-- Cracked Leather Vest
+					2121,	-- Thin Cloth Armor
+					3599,	-- Thin Cloth Belt
+					3600,	-- Thin Cloth Bracers
+					2119,	-- Thin Cloth Gloves
+					2120,	-- Thin Cloth Pants
+					2117,	-- Thin Cloth Shoes
+				}},
+			}),
+			n(271480, {	-- Taliaa Brightsky
+				["coord"] = { 59.3, 76.2, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(273812),	-- Airy Magister's Shirt
+					i(273813),	-- Airy Peacekeeper's Shirt
+					i(273814),	-- Airy Skyseer's Shirt
+					i(277101),	-- Zephrali Cord
+					i(277099),	-- Zephrali Cuffs
+					i(277100),	-- Zephrali Handwraps
+					i(277102),	-- Zephrali Leggings
+					i(277103),	-- Zephrali Shoes
+					i(277098),	-- Zephrali Vest
+				},
+			}),
+		}),
 	},
 });
