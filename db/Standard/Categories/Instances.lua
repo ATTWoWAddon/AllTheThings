@@ -10407,7 +10407,7 @@ h(-63,{
 i(32902,{f=55,lvl=23,spellID=41618}),
 i(32905,{f=55,lvl=23,spellID=41620}),
 r(26783,{b=1,crs={19168},itemID=21906,requireSkill=197,skillID=2539}),
-r(28571,{b=1,crs={19168},itemID=22920,requireSkill=171,skillID=2484})}),
+r(28571,{b=1,crs={19168,19221},itemID=22920,requireSkill=171,skillID=2484})}),
 o(184465,{modelScale=1.6,g={
 s(12353,28252,{b=1,f=4,loc=42,lvl=27}),
 s(12352,28251,{b=1,f=5,loc=47,lvl=27}),
@@ -10428,8 +10428,7 @@ i(28259,{b=1,f=52,lvl=27,modID=1}),
 s(12360,28262,{b=1,f=7,loc=42,lvl=27,modID=1}),
 s(12359,28260,{b=1,f=1,lvl=27,modID=1}),
 s(12324,28202,{b=1,f=5,loc=42,lvl=27,modID=1}),
-s(12361,28263,{b=1,f=21,lvl=27,modID=1}),
-r(28571,{b=1,itemID=22920,requireSkill=171,skillID=2484})}}),
+s(12361,28263,{b=1,f=21,lvl=27,modID=1})}}),
 e(565,{npcID=19220,g={
 ach(658,{
 crit(3976,{achID=1284,awp=30002,id=13})}),
@@ -10467,8 +10466,7 @@ i(28259,{b=1,f=52,lvl=27,modID=2}),
 s(12360,28262,{b=1,f=7,loc=42,lvl=27,modID=2}),
 s(12359,28260,{b=1,f=1,lvl=27,modID=2}),
 s(12324,28202,{b=1,f=5,loc=42,lvl=27,modID=2}),
-s(12361,28263,{b=1,f=21,lvl=27,modID=2}),
-r(28571,{b=1,itemID=22920,requireSkill=171,skillID=2484})}}),
+s(12361,28263,{b=1,f=21,lvl=27,modID=2})}}),
 e(565,{npcID=19220,g={
 ach(679,{
 crit(4035,{achID=1287,awp=30002,id=13})}),
@@ -22435,11 +22433,11 @@ i(203736,{b=1,modID=2,spellID=401544})}}),
 i(203737,{b=1,cost={{"i",203735,1},{"i",203736,1}}}),
 o(386668,{description="The second Bijou named 'Shattered Hakkari Bijou' is at the same spot, but during phase 2 of the Jin'do Boss Encounter. In the middle of the pyramid at roughly 48.6, 42.3 ",g={
 i(203735,{b=1,modID=2,spellID=401544})}}),
-o(180368,{description="Alchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",requireSkill=171,g={
+o(180368,{description="Can be looted near the Cache of Madness event, above the altar at 61.2, 45.6.\nAlchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",requireSkill=171,g={
 r(24266,{learnedAt=300,requireSkill=171,skillID=2485})}})}),
 h(-58,{
 n(143138,{coords={
-[1165]={{55,86.8}}},sourceQuests={74576},g={
+[1165]={{55,86.8}}},sourceAchievements={17366},g={
 cl(11,{
 en(203974,{b=1,c={11},cost={{"i",203769,6},{"i",203914,4}},questID=74720,spellID=402640,tmogSetID=2836,g={
 s(7811,19839,{b=1,c={11},f=5,loc=45,modID=2}),
@@ -43659,7 +43657,7 @@ r(256305,{b=1,itemID=162125,lvl=10,requireSkill=773,skillID=2507})}}),
 e(2168,{crs={137119,138530,138959},g={
 s(98841,163119,{f=24,lvl=50}),
 crit(40246,{achID=12521})}}),
-e(2167,{crs={135452,136429,137022,137023},g={
+e(2167,{crs={135452,136429,137022,137023},providers={{"o",291079}},g={
 crit(40247,{achID=12521})}}),
 e(2169,{crs={134445,134503,135824},g={
 crit(40223,{achID=12521})}}),
@@ -43787,7 +43785,7 @@ d(113,{difficulties={14,15,16},g={
 e(2168,{crs={137119,138530,138959},g={
 ach(12937,{
 crit(41317,{achID=12806,id=2})})}}),
-e(2167,{crs={135452,136429,137022,137023},g={
+e(2167,{crs={135452,136429,137022,137023},providers={{"o",291079}},g={
 ach(12938,{
 crit(41318,{achID=12806,id=3})})}}),
 e(2146,{crs={133298,133492},g={
@@ -47211,11 +47209,11 @@ s(94389,158373,{b=1,f=25}),
 s(95105,159337,{b=1,f=5,loc=44}),
 i(158368,{b=1,f=53,spellID=1294746})}})}}),
 d(104,{difficulties={2,23},g={
-e(2145,{npcID=133392,g={
+e(2145,{npcID=133392,providers={{"o",288640}},g={
 ach(12505,{
 crit(40901,{achID=12807,id=1})})}})}}),
 d(1,{
-e(2145,{npcID=133392,g={
+e(2145,{npcID=133392,providers={{"o",288640}},g={
 s(95080,159318,{b=1,customCollect={"HOA"},f=5,loc=40,lvl=50,modID=1}),
 s(95153,159374,{b=1,customCollect={"HOA"},f=6,loc=40,lvl=50,modID=1}),
 s(94997,159254,{b=1,customCollect={"HOA"},f=4,loc=41,lvl=50,modID=1}),
@@ -47231,7 +47229,7 @@ s(287918,239034,{b=1,f=6,loc=42,lvl=50,modID=1}),
 s(287924,239036,{b=1,f=7,loc=42,lvl=50,modID=1}),
 s(287912,239032,{b=1,f=4,loc=42,lvl=50,modID=1})}})}),
 d(2,{
-e(2145,{npcID=133392,g={
+e(2145,{npcID=133392,providers={{"o",288640}},g={
 s(95604,159318,{awp=120200,b=1,customCollect={"HOA"},f=5,loc=40,lvl=50,modID=35,rwp=120100,u=2}),
 s(98409,159374,{awp=120200,b=1,customCollect={"HOA"},f=6,loc=40,lvl=50,modID=35,rwp=120100,u=2}),
 s(95564,159254,{awp=120200,b=1,customCollect={"HOA"},f=4,loc=41,lvl=50,modID=35,rwp=120100,u=2}),
@@ -47250,7 +47248,7 @@ i(160832,{b=1,f=55,lvl=50,modID=14,g={
 i(160831,{b=1,f=55,lvl=50,modID=14,g={
 p(2186,{b=1,itemID=160702,npcID=138964,spellID=273159})}})}})}}),
 e(2144,{npcID=133389}),
-e(2145,{npcID=133392,g={
+e(2145,{npcID=133392,providers={{"o",288640}},g={
 ach(12508,{rwp=120100,u=2,g={
 crit(41378,{achID=12812,id=18})}}),
 ach(12506),
@@ -48205,7 +48203,7 @@ cd(172,{b=1,c={12},itemID=182471,spellID=341427}),
 cd(94,{b=1,c={7},itemID=182107,spellID=341427}),
 crit(48954,{achID=14715}),
 crit(53516,{achID=15663,awp=90205,rwp=100002,u=2})}}),
-e(2418,{npcID=166644,g={
+e(2418,{npcID=166644,providers={{"o",357751}},g={
 i(183960,{b=1,f=113}),
 rfl(173,{b=1,c={9},itemID=183370,spellID=342040}),
 rfl(97,{b=1,c={10},itemID=183296,spellID=342040}),
@@ -48540,7 +48538,7 @@ crit(49671,{achID=14355,id=2})})}}),
 e(2422,{crs={165759,165805,168973},g={
 ach(14608,{
 crit(49677,{achID=14355,id=3})})}}),
-e(2418,{npcID=166644,g={
+e(2418,{npcID=166644,providers={{"o",357751}},g={
 ach(14617,{
 crit(49672,{achID=14355,id=4})})}}),
 e(2428,{npcID=164261,g={
@@ -48688,7 +48686,7 @@ e(2429,{crs={165066,165067,169457,169458},g={
 crit(53525,{achID=15664,awp=90205,rwp=100002,u=2})}}),
 e(2422,{crs={165759,165805,168973},g={
 crit(53526,{achID=15664,awp=90205,rwp=100002,u=2})}}),
-e(2418,{npcID=166644,g={
+e(2418,{npcID=166644,providers={{"o",357751}},g={
 crit(53527,{achID=15664,awp=90205,rwp=100002,u=2})}}),
 e(2428,{npcID=164261,g={
 crit(53528,{achID=15664,awp=90205,rwp=100002,u=2})}}),
@@ -49158,7 +49156,7 @@ cd(203,{b=1,c={9},itemID=182747,spellID=341427}),
 crit(52486,{achID=15124}),
 crit(52487,{achID=15126}),
 crit(53555,{achID=15667,awp=90205,rwp=100002,u=2})}}),
-e(2441,{npcID=175732,g={
+e(2441,{npcID=175732,providers={{"o",369898}},g={
 cd(11,{b=1,c={1},itemID=180933,spellID=341427}),
 cd(268,{b=1,c={11},itemID=183483,spellID=341427}),
 cd(245,{b=1,c={4},itemID=183511,spellID=341427}),
@@ -49353,7 +49351,7 @@ crit(52369,{achID=15130,id=8})})}}),
 e(2440,{npcID=175559,g={
 ach(15108,{
 crit(52370,{achID=15130,id=9})})}}),
-e(2441,{npcID=175732,g={
+e(2441,{npcID=175732,providers={{"o",369898}},g={
 ach(15133,{
 crit(52373,{achID=15130,id=10})}),
 s(145985,186414,{b=1,c={3},f=32,lvl=60,spellID=353511})}})}}),
@@ -49522,7 +49520,7 @@ e(2447,{npcID=175730,g={
 crit(53565,{achID=15668,awp=90205,rwp=100002,u=2})}}),
 e(2440,{npcID=175559,g={
 crit(53566,{achID=15668,awp=90205,rwp=100002,u=2})}}),
-e(2441,{npcID=175732,g={
+e(2441,{npcID=175732,providers={{"o",369898}},g={
 ach(15134,{rwp=90200,u=2}),
 i(182177,{b=1,lvl=50}),
 crit(53567,{achID=15668,awp=90205,rwp=100002,u=2})}})}}),
@@ -52802,7 +52800,7 @@ crit(55115,{achID=17111})}}),
 e(2493,{npcID=190245,g={
 crit(55116,{achID=16343}),
 crit(55116,{achID=17112})}}),
-e(2499,{crs={189492,193909},g={
+e(2499,{crs={189492,193909},providers={{"o",378046}},g={
 mm(201790,{b=1,questID=72367}),
 crit(55117,{achID=16343}),
 crit(55117,{achID=17112})}})}}),
@@ -53015,7 +53013,7 @@ e(2493,{npcID=190245,g={
 ach(16442,{
 crit(55703,{achID=16355,id=7})}),
 crit(64935,{achID=19564,awp=100206,rwp=110002,u=2})}}),
-e(2499,{crs={189492,193909},g={
+e(2499,{crs={189492,193909},providers={{"o",378046}},g={
 ach(16451,{
 crit(55704,{achID=16355,id=8})}),
 crit(64936,{achID=19564,awp=100206,rwp=110002,u=2})}})}}),
@@ -53224,7 +53222,7 @@ crit(64942,{achID=19565,awp=100206,rwp=110002,u=2})}}),
 e(2493,{npcID=190245,g={
 crit(55126,{achID=16345}),
 crit(64943,{achID=19565,awp=100206,rwp=110002,u=2})}}),
-e(2499,{crs={189492,193909},g={
+e(2499,{crs={189492,193909},providers={{"o",378046}},g={
 ach(17107,{rwp=100100,u=2}),
 crit(55128,{achID=16345}),
 crit(64944,{achID=19565,awp=100206,rwp=110002,u=2})}})}}),
@@ -58347,7 +58345,7 @@ e(2612,{npcID=214506,g={
 r(445483,{itemID=226190,requireSkill=185,skillID=2873}),
 crit(67568,{achID=40244}),
 crit(67568,{achID=40248})}}),
-e(2601,{npcID=217748,g={
+e(2601,{npcID=217748,providers={{"o",454188}},g={
 r(450250,{itemID=223048,requireSkill=164,skillID=2872}),
 crit(67569,{achID=40244}),
 crit(67569,{achID=40248})}}),
@@ -58574,7 +58572,7 @@ crit(67622,{achID=40232,id=4})})}}),
 e(2612,{npcID=214506,g={
 ach(40263,{
 crit(67623,{achID=40232,id=5})})}}),
-e(2601,{npcID=217748,g={
+e(2601,{npcID=217748,providers={{"o",454188}},g={
 ach(40264,{
 crit(67624,{achID=40232,id=6})})}}),
 e(2608,{crs={217489,217491},g={
@@ -58791,7 +58789,7 @@ s(221110,225574,{b=1,f=3,lvl=80,modID=5,spellID=457489}),
 crit(67575,{achID=40245})}}),
 e(2612,{npcID=214506,g={
 crit(67576,{achID=40245})}}),
-e(2601,{npcID=217748,g={
+e(2601,{npcID=217748,providers={{"o",454188}},g={
 crit(67577,{achID=40245})}}),
 e(2608,{crs={217489,217491},g={
 crit(67578,{achID=40245})}}),
@@ -60987,7 +60985,7 @@ e(2747,{npcID=237861,g={
 r(435334,{itemID=223094,requireSkill=755,skillID=2879}),
 crit(103303,{achID=41598}),
 crit(103303,{achID=41602})}}),
-e(2690,{npcID=237763,g={
+e(2690,{npcID=237763,providers={{"o",562348}},g={
 s(291869,243365,{b=1,f=24,lvl=80,spellID=1235531}),
 i(246727,{b=1,description="Has a small chance dropping as Personal Loot from Nexus-King Salhadaar once you have reached Renown 12 with the Manaforge Vandals.",minReputation={2736,12}}),
 crit(103304,{achID=41598}),
@@ -61237,7 +61235,7 @@ crit(103310,{achID=41597,id=5})})}}),
 e(2747,{npcID=237861,g={
 ach(41617,{
 crit(103311,{achID=41597,id=6})})}}),
-e(2690,{npcID=237763,g={
+e(2690,{npcID=237763,providers={{"o",562348}},g={
 ach(41618,{
 crit(103312,{achID=41597,id=7})})}}),
 e(2691,{crs={233824,241517},g={
@@ -61475,7 +61473,7 @@ e(2688,{crs={237660,237661,237662,248404},g={
 crit(103293,{achID=41599})}}),
 e(2747,{npcID=237861,g={
 crit(103294,{achID=41599})}}),
-e(2690,{npcID=237763,g={
+e(2690,{npcID=237763,providers={{"o",562348}},g={
 crit(103295,{achID=41599})}}),
 e(2691,{crs={233824,241517},g={
 i(246446,{b=1,rwp=120001,u=2}),
@@ -63330,7 +63328,7 @@ de(14806,{itemID=262957,spellID=1269607}),
 i(268463,{awp=120005,rwp=120100,u=2}),
 crit(109379,{achID=61366}),
 crit(109379,{achID=61636})}}),
-e(2738,{npcID=244761,g={
+e(2738,{npcID=244761,providers={{"o",546729}},g={
 de(20632,{itemID=269269,spellID=1285071}),
 de(19252,{itemID=268049,rwp=120100,spellID=1281392,u=2}),
 i(267488,{awp=120005,rwp=120100,u=2}),
@@ -63517,7 +63515,7 @@ crit(111368,{achID=61380,id=5})})}}),
 e(2737,{crs={250587,250588,250589},g={
 ach(61936,{
 crit(112429,{achID=61380,id=6})})}}),
-e(2738,{npcID=244761,g={
+e(2738,{npcID=244761,providers={{"o",546729}},g={
 ach(61346,{
 crit(109383,{achID=61380,id=7})})}})}}),
 d(14,{
@@ -63696,7 +63694,7 @@ e(2735,{crs={250892,254109},g={
 crit(109082,{achID=61368})}}),
 e(2737,{crs={250587,250588,250589},g={
 crit(109085,{achID=61368})}}),
-e(2738,{npcID=244761,g={
+e(2738,{npcID=244761,providers={{"o",546729}},g={
 ach(61624,{rwp=120100,u=2}),
 de(17630,{itemID=265951,rwp=120100,spellID=1277442,u=2}),
 crit(109090,{achID=61368})}})}}),
@@ -64508,7 +64506,7 @@ i(278287,{rwp=120200}),
 de(21952,{itemID=272361,spellID=1291013}),
 crit(116122,{achID=63521}),
 crit(116122,{achID=63530})}}),
-e(2894,{crs={261835,261843,261848},g={
+e(2894,{crs={261835,261843,261848},providers={{"o",673637}},g={
 de(26374,{itemID=279118,spellID=1306032}),
 i(278286,{rwp=120200}),
 crit(116121,{achID=63521}),
@@ -64518,7 +64516,7 @@ i(278288,{rwp=120200}),
 de(1426,{itemID=244343,spellID=1237022}),
 crit(116123,{achID=63521}),
 crit(116123,{achID=63531})}}),
-e(2887,{crs={257361,257368},g={
+e(2887,{crs={257361,257368},providers={{"o",673657}},g={
 i(278289,{rwp=120200}),
 r(1291691,{itemID=273070,requireSkill=165,skillID=2915}),
 de(25813,{itemID=279122,spellID=1306036}),
@@ -64532,7 +64530,7 @@ s(309515,275937,{f=2,loc=40})}}),
 i(278290,{rwp=120200}),
 crit(116125,{achID=63521}),
 crit(116125,{achID=63532})}}),
-e(2895,{npcID=268956,g={
+e(2895,{npcID=268956,providers={{"o",673428}},g={
 de(27043,{itemID=279500,spellID=1306832}),
 i(278340,{questID=97591,spellID=1304670,type="ihqt"}),
 i(278284,{rwp=120200}),
@@ -64742,19 +64740,19 @@ crit(116581,{achID=63254,id=2})})}}),
 e(2882,{npcID=259181,g={
 ach(63397,{
 crit(116806,{achID=63254,id=4})})}}),
-e(2894,{crs={261835,261843,261848},g={
+e(2894,{crs={261835,261843,261848},providers={{"o",673637}},g={
 ach(63645,{
 crit(116582,{achID=63254,id=3})})}}),
 e(2871,{npcID=257347,g={
 ach(63391,{
 crit(116583,{achID=63254,id=5})})}}),
-e(2887,{crs={257361,257368},g={
+e(2887,{crs={257361,257368},providers={{"o",673657}},g={
 ach(63656,{
 crit(116807,{achID=63254,id=6})})}}),
 e(2883,{crs={259447,259854},g={
 ach(63669,{
 crit(116808,{achID=63254,id=7})})}}),
-e(2895,{npcID=268956,g={
+e(2895,{npcID=268956,providers={{"o",673428}},g={
 ach(63609,{
 p(5130,{itemID=279387,npcID=270425,spellID=1306694}),
 crit(116584,{achID=63254,id=8})})}})}}),
@@ -64954,15 +64952,15 @@ e(2874,{crs={258557,258558},g={
 crit(116112,{achID=63520})}}),
 e(2882,{npcID=259181,g={
 crit(116114,{achID=63520})}}),
-e(2894,{crs={261835,261843,261848},g={
+e(2894,{crs={261835,261843,261848},providers={{"o",673637}},g={
 crit(116113,{achID=63520})}}),
 e(2871,{npcID=257347,g={
 crit(116115,{achID=63520})}}),
-e(2887,{crs={257361,257368},g={
+e(2887,{crs={257361,257368},providers={{"o",673657}},g={
 crit(116116,{achID=63520})}}),
 e(2883,{crs={259447,259854},g={
 crit(116117,{achID=63520})}}),
-e(2895,{npcID=268956,g={
+e(2895,{npcID=268956,providers={{"o",673428}},g={
 ach(63650,{rwp=120200}),
 de(25131,{itemID=279125,rwp=120200,spellID=1306039}),
 crit(116118,{achID=63520})}})}}),
@@ -65565,6 +65563,7 @@ i(251148,{b=1,f=52,lvl=78}),
 s(298146,251146,{b=1,f=5,loc=41,lvl=78})}}),
 e(2777,{npcID=244100,g={
 s(298152,251153,{b=1,f=5,loc=47,lvl=78}),
+s(307631,271681,{f=1}),
 i(250244,{b=1,f=53,lvl=78,spellID=1250588}),
 s(298151,251152,{b=1,f=6,loc=44,lvl=78}),
 s(298150,251151,{b=1,f=7,loc=42,lvl=78}),

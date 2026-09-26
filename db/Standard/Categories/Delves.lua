@@ -2846,10 +2846,10 @@ crit(115843,{achID=61710,id=11}),
 crit(115855,{achID=61710,id=12})}),
 ach(61906,{
 mnt(1261349,{itemID=257199})}),
-ach(61720,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547}}),
-ach(61721,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={
+ach(61720,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635}}),
+ach(61721,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},g={
 i(264882,{f=55})}}),
-ach(62206,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547}}),
+ach(62206,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635}}),
 ach(61711,{
 crit(110876,{achID=61711,id=3,maps={2535}}),
 crit(110891,{achID=61711,id=7,maps={2547}}),
@@ -2990,7 +2990,7 @@ crit(111012,{achID=61734,id=2,questID=90806})}),
 ach(61901,{
 title(691),
 crit(111291,{achID=61906,id=2})})}),
-h(-24,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},symselector=3,g={
+h(-24,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},symselector=3,g={
 flt(101,{
 p(4959,{b=1,itemID=262395,npcID=256278,providers={{"o",584508},{"o",584509},{"o",584515},{"o",584518},{"o",623258}},spellID=1268704}),
 p(4957,{b=1,itemID=262396,npcID=256282,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584515},{"o",584518},{"o",584519}},spellID=1268718}),
@@ -3074,12 +3074,14 @@ i(273000)}}),
 o(623258,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584517,{providers={{"i",257386}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584515,{providers={{"i",257387}},VerifyLoot={"armor","weapon","miscellaneous"}}),
-o(658087,{awp=120100,VerifyLoot={"armor","weapon","miscellaneous"}}),
+o(658087,{awp=120100,VerifyLoot={"armor","weapon","miscellaneous"},g={
+i(254983,{b=1,f=55,spellID=1258939})}}),
 o(623259,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584519,{providers={{"i",257386}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584518,{providers={{"i",257387}},VerifyLoot={"armor","weapon","miscellaneous"},g={
 p(4953,{b=1,itemID=262390,npcID=256264,spellID=1268686})}}),
-o(658088,{awp=120100,VerifyLoot={"armor","weapon","miscellaneous"}}),
+o(658088,{awp=120100,VerifyLoot={"armor","weapon","miscellaneous"},g={
+i(254983,{b=1,f=55,spellID=1258939})}}),
 o(584504,{providers={{"n",256593}},rwp=120100,u=2,VerifyLoot={"armor","weapon","miscellaneous"},g={
 i(254983,{b=1,f=55,spellID=1258939,u=2})}}),
 o(584503,{description="Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",providers={{"n",256593}},rwp=120100,sym={{"select","itemID",264971,264970}},u=2,VerifyLoot={"armor","weapon","miscellaneous"},g={
@@ -3192,7 +3194,7 @@ q(93784,{isWeekly=1,lvl=80,qss={262586}}),
 q(93453,{coords={
 [2393]={{52.7,77.6}}},lvl=78,providers={{"n",254616}},qss={258738},g={
 cq(93866,{b=1,itemID=262966,rwp=120100,spellID=1269622,u=2})}})}),
-h(-55,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={
+h(-55,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},g={
 o(609862,{awp=120100,coords={
 [2393]={{52.6,77.3}}},lore="Died in Lordaeron or Undercity.",maps={18},g={
 ach(61456,{description="Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone."})}}),
@@ -3208,7 +3210,7 @@ n(256593,{coords={
 [2535]={{40.57,57.84},{43.12,65.28},{44.41,46.27},{57.38,83.09}},
 [2545]={{23.03,15.09},{24.13,88.14},{64.7,63.5}},
 [2547]={{30,22},{46.6,84.29},{81.36,39.86}}}})}}),
-h(-56,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},g={
+h(-56,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},g={
 o(584752,{description="Contains Chunk of Companion Experience tokens.",g={
 i(254756,{b=1,f=55,spellID=1258625}),
 i(254757,{b=1,f=55,spellID=1258626}),

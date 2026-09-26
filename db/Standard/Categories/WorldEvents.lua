@@ -19323,8 +19323,8 @@ i(23012,{b=1,u=2}),
 i(23013,{b=1,u=2}),
 i(23016,{b=1,u=2})}})}}),
 h(-106,{awp=110105,e=450,g={
-ach(64140,{awp=120100,e=450,rwp=120100,g={
-crit(117935,{achID=64140,e=450,id=5,providers={{"s",1319312}}})}}),
+ach(64140,{awp=120100,e=450,rwp=120100,u=2,g={
+crit(117935,{achID=64140,e=450,id=5,providers={{"s",1319312}},u=2})}}),
 i(235054,{b=1,description="Players below level 90 can gain Mysterious Satchels from quests and enemy drops from around the world, even low level content.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",e=450,g={
 h(-88,{e=450,g={
 h(-89,{e=450,g={

@@ -3571,7 +3571,8 @@ s(39453,77875,{b=1,c={11},f=5,loc=47,lvl=25,pvp=1,r=1}),
 s(39457,77879,{b=1,c={11},f=5,loc=44,lvl=25,pvp=1,r=1,spellID=23217}),
 s(39455,77877,{b=1,c={11},f=5,loc=46,lvl=25,pvp=1,r=1}),
 s(39316,77738,{b=1,c={11},f=5,loc=42,lvl=25,pvp=1,r=1}),
-s(39327,77749,{b=1,c={11},f=5,loc=42,lvl=25,pvp=1,r=1}),
+s(39327,77749,{b=1,c={11},f=5,loc=42,lvl=25,pvp=1,r=1,g={
+s(39329,77751,{b=1,c={11},f=5,loc=42,lvl=25,pvp=1,r=2})}}),
 s(39322,77744,{b=1,c={11},f=5,loc=46,lvl=25,pvp=1,r=1}),
 s(39318,77740,{b=1,c={11},f=5,loc=46,lvl=25,pvp=1,r=1}),
 s(39456,77878,{b=1,c={11},f=5,loc=41,lvl=25,pvp=1,r=1}),
@@ -48110,11 +48111,11 @@ p(1918,{b=1,itemID=139775,npcID=111202,pvp=1,spellID=221684,u=2}),
 p(1919,{b=1,itemID=139776,npcID=111296,pvp=1,spellID=221683,u=2})}})}}),
 ach(10743,{providers={{"s",218086}},pvp=1,r=2,u=2,g={
 i(138992,{b=1,pvp=1,r=2,u=2}),
-q(42978,{description="You get this quest when you reach Prestige Rank 2.",lvl=10,maps={84},providers={{"i",138992}},pvp=1,r=2,u=2}),
+q(42978,{description="You get this quest when you reach Prestige Rank 2.",lvl=10,maps={84},pvp=1,qss={138992},r=2,u=2}),
 q(42982,{lvl=10,pvp=1,qgs={109466},r=2,sourceQuests={42978},u=2})}}),
 ach(10745,{providers={{"s",218086}},pvp=1,r=1,u=2,g={
 i(138996,{b=1,pvp=1,r=1,u=2}),
-q(42985,{description="You get this quest when you reach Prestige Rank 2.",lvl=10,maps={90},providers={{"i",138996}},pvp=1,r=1,u=2}),
+q(42985,{description="You get this quest when you reach Prestige Rank 2.",lvl=10,maps={90},pvp=1,qss={138996},r=1,u=2}),
 q(42987,{coords={
 [90]={{57.8,91.6}}},lvl=10,pvp=1,qgs={109471},r=1,sourceQuests={42985},u=2})}}),
 ach(10993,{pvp=1,u=2,g={

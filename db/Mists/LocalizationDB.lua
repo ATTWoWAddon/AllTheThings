@@ -1660,7 +1660,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-43] = "This section contains Pet Battle related quests and tamers.",
 	[-44] = "This section will only show your current character's professions outside of Account and Debug Mode.",
 	[-47] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
-	[-49] = "Contains Things which are rewarded that upon completing that scenario.",
+	[-49] = "Contains Things which are rewarded upon scenario completion.",
 	[-50] = "The Mind-Seekers are an enigmatic cult of meta-puzzle architects who test Adventurers through obscure clues hidden in forgotten corners of the world.\nThey are neither benevolent nor malevolent; rather, they seem to derive sustenance from the collective effort, frustration, and eventual triumph of those who pursue their riddles. Solving their elaborate challenges proves one's mastery of Azeroth's deepest secrets.\n\nHere you will find records of currently available riddles they have scattered throughout Azeroth, challenging the denizens to solve them and, in time, join their ranks.",
 	[-213] = "This section will show you things that you could buy in the In-Game Shop in Retail.",
 	[-304] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
@@ -1841,7 +1841,7 @@ localize(L.HEADER_ICONS, {
 	[-299] = 133278,
 	[-303] = _.asset("category_pvp"),
 	[-304] = 132487,
-	[-305] = 2022761,
+	[-305] = 132487,
 	[-315] = 135764,
 	[-318] = 132738,
 	[-341] = 132874,
@@ -9808,7 +9808,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Mogu'shan Vaults.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1753981200,
+		release = 1753956000,
 		state = 2,
 	},
 	[5002] = {
@@ -9817,7 +9817,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Celestial Dungeons with MSV loot.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755018000,
+		release = 1754992800,
 		state = 2,
 	},
 	[5003] = {
@@ -9826,7 +9826,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1755795600,
+		release = 1755770400,
 		state = 2,
 	},
 	[5004] = {
@@ -9835,7 +9835,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Tier 14 Gear from Sha of Anger.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756227600,
+		release = 1756202400,
 		state = 2,
 	},
 	[5005] = {
@@ -9844,7 +9844,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Heart of Fear LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1756832400,
+		release = 1756807200,
 		state = 2,
 	},
 	[5006] = {
@@ -9853,7 +9853,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1757005200,
+		release = 1756980000,
 		state = 2,
 	},
 	[5007] = {
@@ -9862,7 +9862,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Terrace of Endless Springs LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50500,
-		release = 1758042000,
+		release = 1758016800,
 		state = 2,
 	},
 	[51] = {
@@ -9887,7 +9887,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Throne of Thunder LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50503,
-		release = 1765994400,
+		release = 1765969200,
 		state = 2,
 	},
 	[53] = {
@@ -9912,7 +9912,7 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Siege of Orgrimmar LFR gear for Celestial Dungeons.|r",
 		minimumBuildVersion = 50500,
 		buildVersion = 50504,
-		release = 1781629200,
+		release = 1781604000,
 		state = 2,
 	},
 } L.PHASES = phases

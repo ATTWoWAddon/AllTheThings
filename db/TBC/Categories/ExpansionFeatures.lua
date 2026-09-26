@@ -17,7 +17,7 @@ i(32464,{providers={{"o",185877}},q=1,u=1901})}}),
 prof(393,{u=1901,g={
 i(32470,{crs={23169,23264,23267,23269,23285,23326},q=1,u=1901})}}),
 h(-45,{u=1901,g={
-q(11041,{minReputation={1015,0},providers={{"i",32621}},sourceQuests={10870},u=1901,g={
+q(11041,{minReputation={1015,0},qss={32621},sourceQuests={10870},u=1901,g={
 qo(1,{providers={{"n",23264}},u=1901}),
 qo(2,{providers={{"n",23269}},u=1901}),
 s(143210,32866,{b=1,f=7,loc=47,q=2,u=1901}),
@@ -36,9 +36,9 @@ q(11012,{coords={
 q(11107,{coords={
 [1948]={{66,86.4}}},minReputation={1015,42000},qgs={23140},sourceQuests={11092},u=1901}),
 q(11100,{coords={
-[1948]={{62.4,28.4}}},minReputation={932,0},providers={{"i",32842}},qgs={21402},sourceQuests={11099},u=1901}),
+[1948]={{62.4,28.4}}},minReputation={932,0},qgs={21402},qis={32842},sourceQuests={11099},u=1901}),
 q(11095,{coords={
-[1948]={{56.2,59.6}}},minReputation={934,0},providers={{"i",32842}},qgs={21955},sourceQuests={11094},u=1901}),
+[1948]={{56.2,59.6}}},minReputation={934,0},qgs={21955},qis={32842},sourceQuests={11094},u=1901}),
 q(11083,{coords={
 [1948]={{71.6,87.6}}},minReputation={1015,3000},qgs={23166},sourceQuests={11075},u=1901,g={
 qo(1,{providers={{"n",23305}},u=1901}),
@@ -78,9 +78,9 @@ q(11109,{coords={
 [1955]={{67.8,17.2}}},minReputation={1015,42000},qgs={23462},sourceQuests={11107},u=1901,g={
 mnt(41515,{b=1,itemID=32859,lvl=70,q=4,u=1901})}}),
 q(11099,{coords={
-[1948]={{66.2,85.6}}},minReputation={932,3000},providers={{"i",32842}},qgs={23139},sourceQuests={11092},u=1901}),
+[1948]={{66.2,85.6}}},minReputation={932,3000},qgs={23139},qis={32842},sourceQuests={11092},u=1901}),
 q(11094,{coords={
-[1948]={{66.2,85.6}}},minReputation={934,3000},providers={{"i",32842}},qgs={23139},sourceQuests={11092},u=1901}),
+[1948]={{66.2,85.6}}},minReputation={934,3000},qgs={23139},qis={32842},sourceQuests={11092},u=1901}),
 q(11108,{coords={
 [1948]={{66.2,85.6}}},qgs={23139},sourceQuests={11107},u=1901}),
 q(11110,{coords={
@@ -128,7 +128,7 @@ q(11101,{coords={
 [1948]={{62.4,29.4}}},isDaily=1,maxReputation={1015,42000},minReputation={932,0},qgs={23452},sourceQuests={11100},u=1901}),
 q(11097,{coords={
 [1948]={{56.6,58.6}}},isDaily=1,maxReputation={1015,42000},minReputation={934,0},qgs={23434},sourceQuests={11095},u=1901}),
-q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",minReputation={1015,3000},providers={{"i",32726}},u=1901}),
+q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",minReputation={1015,3000},qss={32726},u=1901}),
 q(11049,{coords={
 [1948]={{65.9,86.4}}},cost={{"i",32506,1}},qgs={23141},sourceQuests={11019},u=1901}),
 q(11075,{coords={

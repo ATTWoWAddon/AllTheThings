@@ -393,11 +393,11 @@ q(8793,{coords={
 q(8794,{coords={
 [1454]={{30.3,67.6}}},lvl=10,qgs={15704},r=1,u=1501})}}),
 h(-45,{u=1503,g={
-q(8857,{crs={15742},lvl=51,providers={{"i",21534}},u=1503,g={
+q(8857,{crs={15742},lvl=51,qss={21534},u=1503,g={
 i(21528,{b=1,q=2,u=1503})}}),
-q(8858,{crs={15741},lvl=51,providers={{"i",21535}},u=1503,g={
+q(8858,{crs={15741},lvl=51,qss={21535},u=1503,g={
 i(21528,{b=1,q=2,u=1503})}}),
-q(8859,{crs={15740},lvl=51,providers={{"i",21533}},u=1503,g={
+q(8859,{crs={15740},lvl=51,qss={21533},u=1503,g={
 i(21528,{b=1,q=2,u=1503})}})}}),
 h(-47,{u=1501,g={
 i(21436,{b=1,q=1,r=2,u=1501}),
@@ -412,11 +412,11 @@ h(-45,{u=15,g={
 q(8519,{coords={
 [1451]={{28.7,89.1}}},lvl=60,minReputation={910,0},providers={{"o",180633}},sourceQuests={8305},u=15}),
 q(8303,{coords={
-[1451]={{49.5,36.4}}},lvl=60,minReputation={910,0},providers={{"i",20415}},qgs={15180},sourceQuests={8301},u=15}),
+[1451]={{49.5,36.4}}},lvl=60,minReputation={910,0},qgs={15180},qis={20415},sourceQuests={8301},u=15}),
 q(8575,{coords={
 [1447]={{57,85.6}}},lvl=60,providers={{"i",20949}},qgs={15481},sourceQuests={8555},u=15}),
 q(8743,{coords={
-[1451]={{25.7,90.9}}},lvl=60,providers={{"i",21175},{"o",180717}},sourceQuests={8742},u=1502,g={
+[1451]={{25.7,90.9}}},lvl=60,providers={{"o",180717}},qis={21175},sourceQuests={8742},u=1502,g={
 ach(416,{sourceQuests={8743},u=1502}),
 mnt(26656,{b=1,itemID=21176,lvl=60,q=5,u=1502})}}),
 q(8606,{coords={
@@ -437,7 +437,7 @@ q(8733,{lvl=60,maps={220},qgs={15362},sourceQuests={8555},u=15}),
 q(8305,{coords={
 [1446]={{65,50}}},lvl=60,minReputation={910,0},qgs={15192},sourceQuests={8303},u=15}),
 q(8599,{coords={
-[1446]={{59.4,96}}},description="You must be on the quest 'Draconic for Dummies' for this quest to be available.",lvl=60,providers={{"i",21032}},qgs={15526},sourceQuests={8576},u=15}),
+[1446]={{59.4,96}}},description="You must be on the quest 'Draconic for Dummies' for this quest to be available.",lvl=60,qgs={15526},qis={21032},sourceQuests={8576},u=15}),
 q(8730,{lvl=60,maps={287},qgs={13020},sourceQuests={8555},u=15,g={
 qo(1,{crs={11583},providers={{"i",21138}},u=15}),
 i(21142,{crs={11583},description="You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",q=1,u=15}),
@@ -449,16 +449,16 @@ q(8288,{coords={
 [1451]={{49.5,36.4}}},lvl=60,maps={287},qgs={15180},sourceQuests={8286},u=15,g={
 qo(1,{crs={12017},providers={{"i",20383}},u=15})}}),
 q(8598,{coords={
-[1446]={{59.4,96}}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"i",21029},{"o",180652}},sourceQuests={8599},u=15}),
+[1446]={{59.4,96}}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"o",180652}},qis={21029},sourceQuests={8599},u=15}),
 q(8587,{coords={
-[1446]={{52.6,28.1}}},lvl=60,providers={{"i",21028}},qgs={8125},sourceQuests={8586},u=15}),
+[1446]={{52.6,28.1}}},lvl=60,qgs={8125},qis={21028},sourceQuests={8586},u=15}),
 q(8578,{coords={
 [1421]={{46.2,86.7}}},lvl=60,maps={232},minReputation={910,0},providers={{"o",180642}},sourceQuests={8577},u=15,g={
 qo(1,{providers={{"i",20951}},u=15})}}),
 q(8577,{coords={
 [1446]={{65.2,18.6}}},lvl=60,maps={1421},qgs={11811},sourceQuests={8576},u=15}),
 q(8741,{coords={
-[1450]={{36.18,41.79}}},lvl=60,minReputation={910,0},providers={{"i",21139}},qgs={11832},sourceQuests={8736},u=15}),
+[1450]={{36.18,41.79}}},lvl=60,minReputation={910,0},qgs={11832},qis={21139},sourceQuests={8736},u=15}),
 q(8555,{coords={
 [1446]={{65,50}}},lvl=60,minReputation={910,0},qgs={15192},sourceQuests={8519},u=15}),
 q(8728,{coords={
@@ -506,7 +506,7 @@ s(164649,21527,{b=1,f=4,loc=42,lvl=60,q=4,u=15})}}),
 q(8576,{coords={
 [1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8575},u=15}),
 q(8745,{coords={
-[1451]={{25.9,91}}},lvl=60,providers={{"i",21175}},qgs={15693},sourceQuests={8742},u=15,g={
+[1451]={{25.9,91}}},lvl=60,qgs={15693},qis={21175},sourceQuests={8742},u=15,g={
 s(164646,21523,{b=1,f=20,lvl=60,q=4,u=15}),
 s(164645,21522,{b=1,f=20,lvl=60,q=4,u=15}),
 s(164644,21521,{b=1,f=25,lvl=60,q=4,u=15}),
@@ -563,12 +563,12 @@ q(9335,{coords={
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
 i(23122,{b=1,lvl=50,q=2,u=1601})}}),
-q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},providers={{"i",22949}},qgs={16431},r=2,u=1601,g={
+q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},qgs={16431},qis={22949},r=2,u=1601,g={
 i(23123,{b=1,lvl=50,q=2,u=1601}),
 i(23122,{b=1,lvl=50,q=2,u=1601})}}),
-q(9304,{lvl=45,providers={{"i",22948},{"i",22975}},u=1601}),
-q(9301,{lvl=45,providers={{"i",22930},{"i",22970}},u=1601}),
-q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},providers={{"i",22950}},qgs={16531},r=1,u=1601,g={
+q(9304,{lvl=45,qis={22948},qss={22975},u=1601}),
+q(9301,{lvl=45,qis={22930},qss={22970},u=1601}),
+q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},qgs={16531},qis={22950},r=1,u=1601,g={
 i(23123,{b=1,lvl=50,q=2,u=1601}),
 i(23122,{b=1,lvl=50,q=2,u=1601})}}),
 q(9262,{coords={
@@ -589,7 +589,7 @@ qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
 q(9264,{coords={
 [1456]={{33.1,59.9}}},isYearly=1,maps={1412},qgs={16490},r=1,u=1601,g={
 qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=1601})}}),
-q(9295,{lvl=45,providers={{"i",22932},{"i",22977}},u=1601}),
+q(9295,{lvl=45,qis={22932},qss={22977},u=1601}),
 q(9154,{coords={
 [1426]={{53.1,35}},
 [1453]={{55,62},{64.1,75}},
@@ -597,7 +597,7 @@ q(9154,{coords={
 [1455]={{35.3,68.7}},
 [1456]={{32.9,60.1},{43.5,53.2}},
 [1457]={{64.5,44.2},{77.3,42.8}},
-[1458]={{49.5,32.1},{65.9,21.4}}},isYearly=1,lvl=50,providers={{"i",22595}},qgs={16241,16255},u=1601}),
+[1458]={{49.5,32.1},{65.9,21.4}}},isYearly=1,lvl=50,qgs={16241,16255},qis={22595},u=1601}),
 q(9321,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
@@ -622,9 +622,9 @@ q(9320,{coords={
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
 i(13444,{f=55,lvl=49,q=1})}}),
-q(9302,{lvl=45,providers={{"i",22944},{"i",22973}},u=1601}),
-q(9299,{lvl=45,providers={{"i",22945},{"i",22972}},u=1601}),
-q(9300,{lvl=45,providers={{"i",22946},{"i",22974}},u=1601}),
+q(9302,{lvl=45,qis={22944},qss={22973},u=1601}),
+q(9299,{lvl=45,qis={22945},qss={22972},u=1601}),
+q(9300,{lvl=45,qis={22946},qss={22974},u=1601}),
 q(9085,{coords={
 [1423]={{81.1,60.6}}},isYearly=1,lvl=50,qgs={16361},u=1601,g={
 qo(1,{providers={{"n",16143}},u=1601}),
@@ -643,7 +643,7 @@ q(9343,{coords={
 [1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=1601,g={
 s(165148,22999,{b=1,f=9,q=1,u=1601})}}),
 q(9247,{coords={
-[1423]={{81.1,60.5}}},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,providers={{"i",22723}},qgs={16281},u=1601,g={
+[1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,qss={22723},u=1601,g={
 i(23123,{b=1,lvl=50,q=2,u=1601}),
 i(23122,{b=1,lvl=50,q=2,u=1601})}}),
 q(9153,{coords={

@@ -328,7 +328,7 @@ n(177195,{coords={
 [1543]={{23.2,46.8}}},description="Find a Stray Soul patting along Gorgoa, the River of Souls. Interact with it, and you will receive a |cFFa335eeWilling Wolf Soul|r.\n\nThe coordinates are near the beginning of the soul's path, where it respawns, but if no one interacts with the soul it can pat all the way to |cFFFFFFFF49.8, 16.4|r.",questID=63666,sourceQuests={63707},g={
 i(185471)}}),
 i(185475,{cost={{"i",185471,1},{"i",185474,1}},f=55,sourceQuests={63666}}),
-q(63684,{description="Once you have the |cFFa335eeArmored Husk|r and the |cFFa335eeWilling Wolf Soul|r, click on the Binding Altar at |cFFFFFFFF45.2, 48.3|r.\n\n|cffde1c1cAs soon as you summon the mount, it will start running, so make sure you're facing towards the interior of the zone and that you won't run off the edge and into the void!|r\n\nOnce you're mounted, your hotkeys will be replaced with runes. Use them in the order provided by your |cFFa335eeCrumbling Stele|r, and you will receive the mount!",lvl=60,providers={{"i",185475}},g={
+q(63684,{description="Once you have the |cFFa335eeArmored Husk|r and the |cFFa335eeWilling Wolf Soul|r, click on the Binding Altar at |cFFFFFFFF45.2, 48.3|r.\n\n|cffde1c1cAs soon as you summon the mount, it will start running, so make sure you're facing towards the interior of the zone and that you won't run off the edge and into the void!|r\n\nOnce you're mounted, your hotkeys will be replaced with runes. Use them in the order provided by your |cFFa335eeCrumbling Stele|r, and you will receive the mount!",lvl=60,qss={185475},g={
 mnt(344577,{b=1,itemID=184168}),
 i(185616,{spellID=350274})}})}}),
 ah(329900,{awp=90001,displayID=96259,modelScale=0.8,type="s",g={
@@ -567,7 +567,7 @@ i(207816,{coords={
 [2112]={{38.9,61.8}}},providers={{"n",198586}},sourceQuests={77230}}),
 i(207827,{cost={{"i",207816,1},{"i",207813,1},{"i",207814,1}}})}}),
 q(77237,{coords={
-[2112]={{26.6,53.9}}},crs={207697},DisablePartySync=1,lc={1,"questID",78202},lvl=10,providers={{"i",207827}},g={
+[2112]={{26.6,53.9}}},crs={207697},DisablePartySync=1,lc={1,"questID",78202},lvl=10,qss={207827},g={
 toy(206696,{b=1})}}),
 q(76504,{coords={
 [2112]={{26.7,53.9},{64.6,53.6}}},cost={{"i",206696,1}},description="Use Toy to accept quest. Follow arrows.",DisablePartySync=1,lc={1,"questID",77513},qgs={207697},sourceQuests={77237},g={
@@ -599,7 +599,7 @@ o(405513,{coords={
 [2022]={{54.5,20.3}}},sourceQuests={77401,77402,77403},g={
 i(208135,{spellID=420213})}})}}),
 q(77282,{coords={
-[2022]={{54.6,20.4}}},DisablePartySync=1,lc={1,"questID",78201},lvl=10,providers={{"i",208135}},g={
+[2022]={{54.6,20.4}}},DisablePartySync=1,lc={1,"questID",78201},lvl=10,qss={208135},g={
 toy(208092,{b=1})}}),
 q(77263,{coords={
 [2112]={{47.4,48.1}}},description="Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",DisablePartySync=1,lc={1,"questID",77522},qgs={206864},sourceQuests={77282},g={
@@ -628,7 +628,7 @@ o(9000004,{coords={
 o(405546,{coords={
 [2023]={{39.5,58.9}}},sourceQuests={77404,77405,77406,77407},g={
 i(208145,{spellID=420213})}})}}),
-q(77304,{DisablePartySync=1,lc={1,"questID",77524},lvl=10,providers={{"i",208145}},g={
+q(77304,{DisablePartySync=1,lc={1,"questID",77524},lvl=10,qss={208145},g={
 toy(207730,{b=1})}}),
 q(76456,{coords={
 [2112]={{47.4,48.1}}},description="Use the Idol. It points towards objectives.",DisablePartySync=1,lc={1,"questID",77524},qgs={206864},sourceQuests={77304},g={
@@ -640,7 +640,7 @@ o(404319,{coords={
 [2025]={{57.3,82.1},{58.5,78.4},{58.8,78.2},{59.3,78.8}}},description="Many locations, each location respawns after ~60 seconds.",g={
 i(208191,{questID=77421,spellID=418446,type="ihqt"})}}),
 i(208146,{cost={{"i",208191,3}}})}}),
-q(77305,{DisablePartySync=1,lc={1,"questID",76508},providers={{"i",208146}},g={
+q(77305,{DisablePartySync=1,lc={1,"questID",76508},qss={208146},g={
 crit(60855,{achID=18646,id=8,questID=76508})}}),
 q(77653,{coords={
 [2112]={{47.9,46.8}}},isDaily=1,lvl=10,qgs={207696},repeatable=1,g={
@@ -650,7 +650,7 @@ o(408226,{coords={
 i(208827,{spellID=420213})}})}}),
 o(408224,{coords={
 [2023]={{63.4,57}}},providers={{"i",208092}},questID=77972}),
-q(77822,{DisablePartySync=1,lc={1,"questID",77576},lvl=10,providers={{"i",208827}},g={
+q(77822,{DisablePartySync=1,lc={1,"questID",77576},lvl=10,qss={208827},g={
 crit(60856,{achID=18646,id=9,questID=77576})}}),
 q(77829,{coords={
 [2112]={{47.9,46.8}}},isDaily=1,lvl=10,qgs={207696},repeatable=1,sourceQuests={77822},g={
@@ -704,7 +704,7 @@ hqt(78052,{an="o:408976",coords={
 o(408980,{coords={
 [350]={{33.1,50.9}}},description="There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",g={
 i(208889,{spellID=420213})}})}}),
-q(77908,{description="Quest takes place in Old Karazhan Raid",DisablePartySync=1,lc={1,"questID",77579},lvl=10,providers={{"i",208889}},g={
+q(77908,{description="Quest takes place in Old Karazhan Raid",DisablePartySync=1,lc={1,"questID",77579},lvl=10,qss={208889},g={
 crit(60859,{achID=18646,id=12,questID=77579})}}),
 q(77928,{coords={
 [2112]={{47.9,46.8}}},isDaily=1,lvl=10,qgs={207696},repeatable=1,g={
@@ -723,7 +723,7 @@ hqt(78058,{an="o:409020",coords={
 [2112]={{46,41.4}}},DisablePartySync=1,lc={1,"questID",77580},providers={{"o",409020}}}),
 i(208936)}}),
 q(77934,{coords={
-[2112]={{44.1,60.2}}},description="Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",DisablePartySync=1,lc={1,"questID",77580},lvl=10,providers={{"i",208936}},sourceQuests={78053,78054,78055,78056,78057,78058},g={
+[2112]={{44.1,60.2}}},description="Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",DisablePartySync=1,lc={1,"questID",77580},lvl=10,qss={208936},sourceQuests={78053,78054,78055,78056,78057,78058},g={
 crit(60861,{achID=18646,id=14,questID=77580})}}),
 q(77953,{coords={
 [2112]={{47.5,46.2}}},lvl=10,qgs={185562},repeatable=1,sourceQuests={77934},g={
@@ -745,7 +745,7 @@ hqt(78111,{an="i:208092",coords={
 i(209799,{spellID=423408})}}),
 i(208944,{cost={{"i",209799,1},{"i",209797,1},{"i",209795,1}}})}}),
 q(77954,{coords={
-[2112]={{47.4,46.7}}},DisablePartySync=1,lc={1,"questID",77520},lvl=10,providers={{"i",208944}},g={
+[2112]={{47.4,46.7}}},DisablePartySync=1,lc={1,"questID",77520},lvl=10,qss={208944},g={
 crit(60860,{achID=18646,id=13,questID=77520})}}),
 q(77957,{coords={
 [2112]={{47.4,48.1}}},lvl=10,qgs={206864},repeatable=1,sourceQuests={77954},g={

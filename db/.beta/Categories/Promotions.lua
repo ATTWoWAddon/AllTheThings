@@ -216,15 +216,15 @@ ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2})}),
 h(-521,{u=3,g={
 x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=40006,u=2,g={
-q(8547,{awp=20003,maps={94},providers={{"i",20938}},races={10},u=3}),
-q(12781,{awp=30002,c={6},lvl=8,maps={23},providers={{"i",39713}},u=3}),
-q(9278,{awp=20003,c={11},maps={97},providers={{"i",22888}},r=2,u=3}),
-q(5841,{maps={27},providers={{"i",14647}},races={3,7},u=2}),
-q(5805,{maps={37},providers={{"i",14646}},races={1},u=2}),
-q(5842,{maps={57},providers={{"i",14648}},races={4},u=2}),
-q(5843,{maps={1},providers={{"i",14649}},races={2,8},u=2}),
-q(5844,{maps={7},providers={{"i",14650}},races={6},u=2}),
-q(5847,{maps={18},providers={{"i",14651}},races={5},u=2})}}),
+q(8547,{awp=20003,maps={94},qss={20938},races={10},u=3}),
+q(12781,{awp=30002,c={6},lvl=8,maps={23},qss={39713},u=3}),
+q(9278,{awp=20003,c={11},maps={97},qss={22888},r=2,u=3}),
+q(5841,{maps={27},qss={14647},races={3,7},u=2}),
+q(5805,{maps={37},qss={14646},races={1},u=2}),
+q(5842,{maps={57},qss={14648},races={4},u=2}),
+q(5843,{maps={1},qss={14649},races={2,8},u=2}),
+q(5844,{maps={7},qss={14650},races={6},u=2}),
+q(5847,{maps={18},qss={14651},races={5},u=2})}}),
 h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=40006,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
 ach(662,{awp=30002,providers={{"i",13584}},u=3}),
 ach(663,{awp=30002,providers={{"i",13583}},u=3}),
@@ -236,9 +236,9 @@ crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
 p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
 crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
 x(2,{awp=20003,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
-ach(665,{awp=30002,providers={{"i",25535}},u=3}),
+ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
 p(131,{itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
-crit(34633,{achID=665,awp=30002,id=3,u=3})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
+crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
 p(111,{description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=120007,u=3,g={
 mnt(346136,{b=1,itemID=248090,lvl=10,u=3})}}),
@@ -849,7 +849,7 @@ ach(19724)}),
 h(-39,{
 i(212154,{rwp=100206,u=2})}),
 h(-45,{
-q(79184,{providers={{"i",212154}},rwp=100206,u=2,g={
+q(79184,{qss={212154},rwp=100206,u=2,g={
 i(212157,{b=1,u=2})}}),
 q(79178,{coords={
 [2112]={{61.6,31.1}}},qgs={215409},rwp=100206,sourceQuests={79184},u=2,g={
@@ -1507,9 +1507,9 @@ i(204731,{b=2}),
 i(205189,{b=2,r=2}),
 i(205190,{b=2,r=1})}})}),
 h(-45,{
-q(73183,{providers={{"i",204731}},rwp=100200,u=2}),
-q(75625,{providers={{"i",205189}},r=2,rwp=100200,u=2}),
-q(75626,{providers={{"i",205190}},r=1,rwp=100200,u=2}),
+q(73183,{qss={204731},rwp=100200,u=2}),
+q(75625,{qss={205189},r=2,rwp=100200,u=2}),
+q(75626,{qss={205190},r=1,rwp=100200,u=2}),
 q(75221,{coords={
 [2112]={{48,46.4}}},cost={{"i",202162,1}},qgs={201230},repeatable=1,g={
 i(202163,{spellID=398642,g={
@@ -1666,7 +1666,7 @@ mnt(1284679,{itemID=269012,u=2}),
 mnt(75973,{b=1,itemID=54860,lvl=10,u=2})}}),
 i(269590,{u=2}),
 p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
-crit(34633,{achID=665,id=3,u=3})}}),
+crit(34633,{achID=665,id=3,rwp=30002,u=2})}}),
 p(3024,{b=1,customCollect={"SL_COV_VEN"},itemID=183107,npcID=173842,spellID=340710,u=2}),
 mnt(1267077,{itemID=262344,u=2}),
 mnt(1266982,{itemID=269659,u=2}),
@@ -1693,7 +1693,7 @@ i(209945,{u=2}),
 p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
 crit(34643,{achID=6185,id=3,u=2})}}),
 p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
-crit(34633,{achID=665,id=3,u=3})}}),
+crit(34633,{achID=665,id=3,rwp=30002,u=2})}}),
 toy(34499,{b=1,u=2}),
 p(242,{b=1,itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
 crit(23598,{achID=8397,id=23,pb=1})}}),

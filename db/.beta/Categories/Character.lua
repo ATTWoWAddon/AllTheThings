@@ -8049,7 +8049,7 @@ q(63494,{coords={
 q(63498,{coords={
 [1186]={{51.7,33.1}}},lvl=50,qgs={176828},races={34},sourceQuests={63494},g={
 i(184894,{b=1,races={34}})}}),
-q(63501,{lvl=50,providers={{"i",184894}},races={34},sourceQuests={63498},g={
+q(63501,{lvl=50,qss={184894},races={34},sourceQuests={63498},g={
 i(184916,{races={34}}),
 i(184915,{races={34}}),
 i(184917,{races={34}})}}),
@@ -8502,10 +8502,10 @@ q(65425,{c={9},coords={
 [84]={{79.5,69.8}}},description="Start this quest via your own Sayaad(Succubus/Incubus Pet).",qgs={184600},r=2,rwp=100105,u=2}),
 q(65424,{c={9},coords={
 [85]={{74.6,47.4}}},description="Start this quest via your own Sayaad(Succubus/Incubus Pet).",qgs={184600},r=1,rwp=100105,u=2}),
-q(76427,{awp=100105,c={9},isBreadcrumb=1,lvl=30,providers={{"i",208227}},r=1}),
+q(76427,{awp=100105,c={9},isBreadcrumb=1,lvl=30,qss={208227},r=1}),
 q(76430,{awp=100105,c={9},coords={
 [85]={{42.5,51.8}}},lvl=30,qgs={207051},r=1}),
-q(76410,{awp=100105,c={9},isBreadcrumb=1,lvl=30,nextQuests={75538},providers={{"i",208226}},r=2}),
+q(76410,{awp=100105,c={9},isBreadcrumb=1,lvl=30,nextQuests={75538},qss={208226},r=2}),
 q(75538,{awp=100105,c={9},coords={
 [84]={{43.6,79.3}}},lvl=30,qgs={204198},r=2,sourceQuests={76410}}),
 q(75539,{awp=100105,c={9},coords={
@@ -8529,7 +8529,7 @@ q(75544,{awp=100105,c={9},coords={
 sp(417884),
 i(208108,{b=1})}}),
 q(76163,{awp=100105,c={9},coords={
-[86]={{39.7,53.9}}},description="You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",lvl=30,providers={{"i",206681},{"o",405945}},sourceQuests={75544},g={
+[86]={{39.7,53.9}}},description="You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",lvl=30,providers={{"o",405945}},qss={206681},sourceQuests={75544},g={
 i(207101,{b=1,c={9},f=111,lvl=11,spellID=416229})}})}}),
 h(-88,{
 s(264,1396,{f=4,loc=46,rwp=90105,u=2}),

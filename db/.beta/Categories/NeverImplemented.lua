@@ -15849,8 +15849,6 @@ i(224577,{b=1,requireSkill=171,spellID=453274}),
 i(212295,{f=55,lvl=71,spellID=432497})}})}}),
 x(12,{awp=120001,g={
 x(12.0000001,{awp=120000,g={
-i(245900,{f=55,lvl=81,spellID=1238443}),
-i(245901,{f=55,lvl=81,spellID=1238443}),
 i(241315,{f=55,lvl=81,spellID=1239755}),
 i(241314,{f=55,lvl=81,spellID=1239755}),
 i(241279),
@@ -23998,7 +23996,7 @@ q(50285),
 q(51756),
 q(49732),
 q(51750),
-q(51883,{providers={{"i",160897}}}),
+q(51883,{qss={160897}}),
 q(50060),
 q(51557,{lvl=30,races={1,3,4,7,11,22,24,25,29,30,32,34,37,52,85,86}}),
 q(50383),
@@ -24029,7 +24027,7 @@ q(48515,{description="Area: |cFFf09f26Drustvar|r",lvl=20,r=2,g={
 i(155906)}}),
 q(48604,{description="Area: |cFFf09f26Drustvar|r",lvl=20,r=2,g={
 i(152629)}}),
-q(48653,{cost={{"i",152656,5}},description="Area: |cFFf09f26Nazmir|r",lvl=20,providers={{"i",152655}},r=1}),
+q(48653,{cost={{"i",152656,5}},description="Area: |cFFf09f26Nazmir|r",lvl=20,qss={152655},r=1}),
 q(48759,{description="Category: |cFFf09f26Herbalism|r",lvl=10}),
 q(48760,{description="Category: |cFFf09f26Herbalism|r",lvl=10}),
 q(48765,{description="Category: |cFFf09f26Herbalism|r",lvl=10}),
@@ -30933,8 +30931,6 @@ i(61027,{b=1,f=53,spellID=84960}),
 i(61028,{b=1,f=53,spellID=84960}),
 i(61029,{b=1,f=53,spellID=84960})})})}),
 x(4.03,{awp=40300,g={
-cl(11,{
-s(39329,77751,{b=1,c={11},f=5,loc=42,lvl=25,r=2})}),
 cl(8,{
 s(39358,77780,{b=1,c={8},f=4,loc=41,lvl=25,r=2})})}})}}),
 x(5,{awp=50004,g={

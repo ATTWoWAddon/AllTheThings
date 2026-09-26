@@ -17,7 +17,7 @@ i(32464,{providers={{"o",185877}},q=1,u=1901})}}),
 prof(393,{u=1901,g={
 i(32470,{crs={23169,23264,23267,23269,23285,23326},q=1,u=1901})}}),
 h(-45,{u=1901,g={
-q(11041,{minReputation={1015,0},providers={{"i",32621}},sourceQuests={10870},u=1901,g={
+q(11041,{minReputation={1015,0},qss={32621},sourceQuests={10870},u=1901,g={
 qo(1,{providers={{"n",23264}},u=1901}),
 qo(2,{providers={{"n",23269}},u=1901}),
 s(143210,32866,{b=1,f=7,loc=47,q=2,u=1901}),
@@ -36,9 +36,9 @@ q(11012,{coords={
 q(11107,{coords={
 [1948]={{66,86.4}}},minReputation={1015,42000},qgs={23140},sourceQuests={11092},u=1901}),
 q(11100,{coords={
-[1948]={{62.4,28.4}}},minReputation={932,0},providers={{"i",32842}},qgs={21402},sourceQuests={11099},u=1901}),
+[1948]={{62.4,28.4}}},minReputation={932,0},qgs={21402},qis={32842},sourceQuests={11099},u=1901}),
 q(11095,{coords={
-[1948]={{56.2,59.6}}},minReputation={934,0},providers={{"i",32842}},qgs={21955},sourceQuests={11094},u=1901}),
+[1948]={{56.2,59.6}}},minReputation={934,0},qgs={21955},qis={32842},sourceQuests={11094},u=1901}),
 q(11083,{coords={
 [1948]={{71.6,87.6}}},minReputation={1015,3000},qgs={23166},sourceQuests={11075},u=1901,g={
 qo(1,{providers={{"n",23305}},u=1901}),
@@ -78,9 +78,9 @@ q(11109,{coords={
 [1955]={{67.8,17.2}}},minReputation={1015,42000},qgs={23462},sourceQuests={11107},u=1901,g={
 mnt(41515,{b=1,itemID=32859,lvl=70,q=4,u=1901})}}),
 q(11099,{coords={
-[1948]={{66.2,85.6}}},minReputation={932,3000},providers={{"i",32842}},qgs={23139},sourceQuests={11092},u=1901}),
+[1948]={{66.2,85.6}}},minReputation={932,3000},qgs={23139},qis={32842},sourceQuests={11092},u=1901}),
 q(11094,{coords={
-[1948]={{66.2,85.6}}},minReputation={934,3000},providers={{"i",32842}},qgs={23139},sourceQuests={11092},u=1901}),
+[1948]={{66.2,85.6}}},minReputation={934,3000},qgs={23139},qis={32842},sourceQuests={11092},u=1901}),
 q(11108,{coords={
 [1948]={{66.2,85.6}}},qgs={23139},sourceQuests={11107},u=1901}),
 q(11110,{coords={
@@ -128,7 +128,7 @@ q(11101,{coords={
 [1948]={{62.4,29.4}}},isDaily=1,maxReputation={1015,42000},minReputation={932,0},qgs={23452},sourceQuests={11100},u=1901}),
 q(11097,{coords={
 [1948]={{56.6,58.6}}},isDaily=1,maxReputation={1015,42000},minReputation={934,0},qgs={23434},sourceQuests={11095},u=1901}),
-q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",minReputation={1015,3000},providers={{"i",32726}},u=1901}),
+q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",minReputation={1015,3000},qss={32726},u=1901}),
 q(11049,{coords={
 [1948]={{65.9,86.4}}},cost={{"i",32506,1}},qgs={23141},sourceQuests={11019},u=1901}),
 q(11075,{coords={
@@ -500,86 +500,86 @@ qo(1,{crs={33738,33739,33740,33743,33744,33745,33746,33747,33748,33749},provider
 i(46114,{b=1,q=1,u=31}),
 cu(241,{providers={{"i",45724}},u=31})}}),
 q(13855,{coords={
-[118]={{76.4,19}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13717,providers={{"i",46106}},qgs={33654,33870},r=2,sourceQuests={13689,13706},u=31,g={
+[118]={{76.4,19}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13717,qgs={33654,33870},qis={46106},r=2,sourceQuests={13689,13706},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13852,{coords={
-[118]={{76.5,19.9}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13715,providers={{"i",46106}},qgs={33649,33870},r=2,sourceQuests={13688,13704},u=31,g={
+[118]={{76.5,19.9}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13715,qgs={33649,33870},qis={46106},r=2,sourceQuests={13688,13704},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13851,{coords={
-[118]={{76.6,19.6}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13714,providers={{"i",46106}},qgs={33309,33870},r=2,sourceQuests={13685,13703},u=31,g={
+[118]={{76.6,19.6}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13714,qgs={33309,33870},qis={46106},r=2,sourceQuests={13685,13703},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13847,{coords={
-[118]={{76.6,19.2}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13718,providers={{"i",46106}},qgs={33223,33870},r=2,sourceQuests={13593,13684},u=31,g={
+[118]={{76.6,19.2}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13718,qgs={33223,33870},qis={46106},r=2,sourceQuests={13593,13684},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13854,{coords={
-[118]={{76.1,19.1}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13716,providers={{"i",46106}},qgs={33656,33870},r=2,sourceQuests={13690,13705},u=31,g={
+[118]={{76.1,19.1}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13716,qgs={33656,33870},qis={46106},r=2,sourceQuests={13690,13705},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13857,{coords={
-[118]={{75.9,24.4}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13719,providers={{"i",46106}},qgs={33545,33870},r=1,sourceQuests={13693,13708},u=31,g={
+[118]={{75.9,24.4}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13719,qgs={33545,33870},qis={46106},r=1,sourceQuests={13693,13708},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13856,{coords={
-[118]={{76.4,24.6}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13697,providers={{"i",46106}},qgs={33544,33870},r=1,sourceQuests={13691,13707},u=31,g={
+[118]={{76.4,24.6}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13697,qgs={33544,33870},qis={46106},r=1,sourceQuests={13691,13707},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13859,{coords={
-[118]={{76.5,23.9}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13722,providers={{"i",46106}},qgs={33548,33870},r=1,sourceQuests={13696,13711},u=31,g={
+[118]={{76.5,23.9}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13722,qgs={33548,33870},qis={46106},r=1,sourceQuests={13696,13711},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13858,{coords={
-[118]={{76.1,24.6}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13720,providers={{"i",46106}},qgs={33549,33870},r=1,sourceQuests={13694,13709},u=31,g={
+[118]={{76.1,24.6}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13720,qgs={33549,33870},qis={46106},r=1,sourceQuests={13694,13709},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13860,{coords={
-[118]={{76.5,24.3}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13721,providers={{"i",46106}},qgs={33547,33870},r=1,sourceQuests={13695,13710},u=31,g={
+[118]={{76.5,24.3}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13721,qgs={33547,33870},qis={46106},r=1,sourceQuests={13695,13710},u=31,g={
 qo(1,{providers={{"n",33438}},u=31}),
 qo(2,{providers={{"n",33550}},u=31}),
 qo(3,{providers={{"n",33429}},u=31}),
 i(44987,{b=1,q=1,u=31})}}),
 q(13861,{c={1,2,3,4,5,7,8,9,11},coords={
-[118]={{69.9,23.4}}},isDaily=1,providers={{"i",46106}},qgs={33759,33870},r=2,sourceQuests={13794},u=31,g={
+[118]={{69.9,23.4}}},isDaily=1,qgs={33759,33870},qis={46106},r=2,sourceQuests={13794},u=31,g={
 qo(1,{providers={{"n",34127}},u=31}),
 i(46114,{b=1,q=1,u=31}),
 cu(241,{providers={{"i",45724}},u=31})}}),
 q(13862,{c={1,2,3,4,5,7,8,9,11},coords={
-[118]={{69.9,23.4}}},isDaily=1,providers={{"i",46106}},qgs={33759,33870},r=1,sourceQuests={13794},u=31,g={
+[118]={{69.9,23.4}}},isDaily=1,qgs={33759,33870},qis={46106},r=1,sourceQuests={13794},u=31,g={
 qo(1,{providers={{"n",34127}},u=31}),
 i(46114,{b=1,q=1,u=31}),
 cu(241,{providers={{"i",45724}},u=31})}}),
 q(13863,{c={6},coords={
-[118]={{73.8,20}}},isDaily=1,providers={{"i",46106}},qgs={33762,33870},r=1,sourceQuests={13795},u=31,g={
+[118]={{73.8,20}}},isDaily=1,qgs={33762,33870},qis={46106},r=1,sourceQuests={13795},u=31,g={
 qo(1,{providers={{"n",34127}},u=31}),
 i(46114,{b=1,q=1,u=31}),
 cu(241,{providers={{"i",45724}},u=31})}}),
 q(13864,{c={6},coords={
-[118]={{73.8,20}}},isDaily=1,providers={{"i",46106}},qgs={33762,33870},r=2,sourceQuests={13795},u=31,g={
+[118]={{73.8,20}}},isDaily=1,qgs={33762,33870},qis={46106},r=2,sourceQuests={13795},u=31,g={
 qo(1,{providers={{"n",34127}},u=31}),
 i(46114,{b=1,q=1,u=31}),
 cu(241,{providers={{"i",45724}},u=31})}}),
-q(24442,{crs={34838,34839},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,providers={{"i",49676}},sourceAchievements={2771,2817},u=32,g={
+q(24442,{crs={34838,34839},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qss={49676},sourceAchievements={2771,2817},u=32,g={
 qo(1,{coords={
 [170]={{43.9,24.5}}},providers={{"i",49678},{"o",201367}},u=32})}}),
 q(14076,{coords={
@@ -621,49 +621,49 @@ q(14141,{coords={
 qo(1,{coords={
 [120]={{44.6,82}}},providers={{"i",46885},{"n",29618}},u=32}),
 cu(241,{u=32})}}),
-q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,providers={{"i",46955}},sourceAchievements={2771,2817},u=32}),
+q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qss={46955},sourceAchievements={2771,2817},u=32}),
 q(13627,{awp=30100,coords={
 [118]={{74.2,24.6}}},isDaily=1,maps={127},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or 31 end,qgs={33434},rwp=40001,sourceQuests={13820},u=31,g={
 qo(1,{awp=30200,providers={{"i",45045},{"i",45046},{"n",33308}},u=31})}}),
 q(13625,{coords={
-[118]={{76.5,19.5}}},isDaily=1,providers={{"i",46069}},qgs={33647,33843},r=2,sourceQuests={13828,13835,13837},u=31,g={
+[118]={{76.5,19.5}}},isDaily=1,qgs={33647,33843},qis={46069},r=2,sourceQuests={13828,13835,13837},u=31,g={
 qo(1,{providers={{"n",33229}},u=31}),
 qo(2,{providers={{"n",33243}},u=31}),
 qo(3,{providers={{"n",33272}},u=31}),
 i(45192,{b=1,q=1,u=31})}}),
 q(13677,{coords={
-[118]={{76.2,24.4}}},isDaily=1,providers={{"i",46070}},qgs={33659,33842},r=1,sourceQuests={13829,13838,13839},u=31,g={
+[118]={{76.2,24.4}}},isDaily=1,qgs={33659,33842},qis={46070},r=1,sourceQuests={13829,13838,13839},u=31,g={
 qo(1,{providers={{"n",33229}},u=31}),
 qo(2,{providers={{"n",33243}},u=31}),
 qo(3,{providers={{"n",33272}},u=31}),
 i(45192,{b=1,q=1,u=31})}}),
 q(13828,{coords={
-[118]={{76.5,19.4}}},providers={{"i",46069}},qgs={33625,33843},r=2,sourceQuests={13667},u=31,g={
+[118]={{76.5,19.4}}},qgs={33625,33843},qis={46069},r=2,sourceQuests={13667},u=31,g={
 qo(1,{coords={
 [118]={{72.6,19.2}}},providers={{"n",33973}},u=31}),
 qo(2,{providers={{"n",33229}},u=31})}}),
 q(13829,{coords={
-[118]={{76.2,24.3}}},providers={{"i",46070}},qgs={33542,33842},r=1,sourceQuests={13668},u=31,g={
+[118]={{76.2,24.3}}},qgs={33542,33842},qis={46070},r=1,sourceQuests={13668},u=31,g={
 qo(1,{coords={
 [118]={{72.6,19.2}}},providers={{"n",33973}},u=31}),
 qo(2,{providers={{"n",33229}},u=31})}}),
 q(13837,{coords={
-[118]={{76.4,19.4}}},providers={{"i",46069}},qgs={33646,33843},r=2,sourceQuests={13667},u=31,g={
+[118]={{76.4,19.4}}},qgs={33646,33843},qis={46069},r=2,sourceQuests={13667},u=31,g={
 qo(1,{coords={
 [118]={{72.6,18.8}}},providers={{"n",33972}},u=31}),
 qo(2,{providers={{"n",33272}},u=31})}}),
 q(13839,{coords={
-[118]={{76.3,24.3}}},providers={{"i",46070}},qgs={33658,33842},r=1,sourceQuests={13668},u=31,g={
+[118]={{76.3,24.3}}},qgs={33658,33842},qis={46070},r=1,sourceQuests={13668},u=31,g={
 qo(1,{coords={
 [118]={{72.6,18.8}}},providers={{"n",33972}},u=31}),
 qo(2,{providers={{"n",33272}},u=31})}}),
 q(13835,{coords={
-[118]={{76.5,19.5}}},providers={{"i",46069}},qgs={33647,33843},r=2,sourceQuests={13667},u=31,g={
+[118]={{76.5,19.5}}},qgs={33647,33843},qis={46069},r=2,sourceQuests={13667},u=31,g={
 qo(1,{coords={
 [118]={{73.2,19.2}}},providers={{"n",33974}},u=31}),
 qo(2,{providers={{"n",33243}},u=31})}}),
 q(13838,{coords={
-[118]={{76.2,24.4}}},providers={{"i",46070}},qgs={33659,33842},r=1,sourceQuests={13668},u=31,g={
+[118]={{76.2,24.4}}},qgs={33659,33842},qis={46070},r=1,sourceQuests={13668},u=31,g={
 qo(1,{coords={
 [118]={{73.2,19.2}}},providers={{"n",33974}},u=31}),
 qo(2,{providers={{"n",33243}},u=31})}}),
@@ -1046,7 +1046,7 @@ qo(2,{providers={{"n",34716}},u=32}),
 cu(241,{u=32})}})}}),
 ah(50379,{r=2,type="i",u=33,g={
 q(14443,{coords={
-[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",providers={{"i",50379}},r=2,u=33}),
+[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",qss={50379},r=2,u=33}),
 q(14444,{coords={
 [118]={{74.2,31.2}}},maps={115},qgs={36624},r=2,sourceQuests={14443},u=33,g={
 qo(1,{coords={
@@ -1064,7 +1064,7 @@ q(20439,{coords={
 qo(1,{coords={
 [125]={{69.8,31.6}}},crs={36670},providers={{"i",49698}},r=2,u=33})}}),
 q(24454,{coords={
-[125]={{39.6,57.6}}},description="Turning in this quest triggers a lore exposition.",providers={{"i",49698}},qgs={36669},r=2,sourceQuests={20439},u=33}),
+[125]={{39.6,57.6}}},description="Turning in this quest triggers a lore exposition.",qgs={36669},qis={49698},r=2,sourceQuests={20439},u=33}),
 q(24461,{coords={
 [118]={{74.2,31.2}}},maps={184},qgs={36624},r=2,sourceQuests={24454},u=33,g={
 qo(1,{cost={{"i",49723,1},{"i",49740,1},{"i",49718,5}},crs={36494},providers={{"i",49739}},r=2,u=33})}}),
@@ -1075,7 +1075,7 @@ q(24480,{coords={
 [118]={{74.2,31.2}}},description="Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",maps={185},qgs={36624},r=2,sourceQuests={24476},u=33,g={
 qo(1,{providers={{"i",49766},{"i",50254},{"n",37158}},r=2,u=33})}}),
 q(24522,{coords={
-[118]={{74.2,31.2}}},description="If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",maps={1957},providers={{"i",49870}},qgs={36624},r=2,sourceQuests={24480},u=33}),
+[118]={{74.2,31.2}}},description="If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",maps={1957},qgs={36624},qis={49870},r=2,sourceQuests={24480},u=33}),
 q(24535,{coords={
 [1957]={{44.6,45.4}}},qgs={37527},r=2,sourceQuests={24522},u=33,g={
 qo(1,{coords={
@@ -1087,14 +1087,14 @@ q(24595,{c={5,7,11},coords={
 [1957]={{44.6,45.4}}},maps={336},qgs={37527},r=2,sourceQuests={24535},u=33,g={
 qo(1,{providers={{"i",49871},{"i",49879},{"o",201794}},r=2,u=33})}}),
 q(24796,{c={1,2,3,4,6,8,9},coords={
-[118]={{74.2,31.2}}},maps={125},providers={{"i",49871}},qgs={36624},r=2,sourceQuests={24553},u=33,g={
+[118]={{74.2,31.2}}},maps={125},qgs={36624},qis={49871},r=2,sourceQuests={24553},u=33,g={
 crit(12903,{achID=4596,id=1,u=33})}}),
 q(24795,{c={5,7,11},coords={
-[118]={{74.2,31.2}}},maps={125},providers={{"i",49871}},qgs={36624},r=2,sourceQuests={24595},u=33,g={
+[118]={{74.2,31.2}}},maps={125},qgs={36624},qis={49871},r=2,sourceQuests={24595},u=33,g={
 crit(12902,{achID=4596,id=1,u=33})}})}}),
 ah(50380,{r=1,type="i",u=33,g={
 q(24554,{coords={
-[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",providers={{"i",50380}},r=1,u=33}),
+[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",qss={50380},r=1,u=33}),
 q(24555,{coords={
 [118]={{74.2,31.2}}},maps={115},qgs={36642},r=1,sourceQuests={24554},u=33,g={
 qo(1,{coords={
@@ -1112,7 +1112,7 @@ q(24451,{coords={
 qo(1,{coords={
 [125]={{39.6,57.6}}},crs={36669},providers={{"i",49698}},r=1,u=33})}}),
 q(24558,{coords={
-[125]={{69.8,31.6}}},description="Turning in this quest triggers a lore exposition.",providers={{"i",49698}},qgs={36670},r=1,sourceQuests={24451},u=33}),
+[125]={{69.8,31.6}}},description="Turning in this quest triggers a lore exposition.",qgs={36670},qis={49698},r=1,sourceQuests={24451},u=33}),
 q(24559,{coords={
 [118]={{74.2,31.2}}},maps={184},qgs={36642},r=1,sourceQuests={24558},u=33,g={
 qo(1,{cost={{"i",49723,1},{"i",49740,1},{"i",49718,5}},crs={36494},providers={{"i",49739}},r=1,u=33})}}),
@@ -1123,7 +1123,7 @@ q(24561,{coords={
 [118]={{74.2,31.2}}},description="Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",maps={185},qgs={36642},r=1,sourceQuests={24560},u=33,g={
 qo(1,{providers={{"i",49766},{"i",50254},{"n",37158}},r=1,u=33})}}),
 q(24562,{coords={
-[118]={{74.2,31.2}}},description="If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",maps={1957},providers={{"i",49870}},qgs={36642},r=1,sourceQuests={24561},u=33}),
+[118]={{74.2,31.2}}},description="If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",maps={1957},qgs={36642},qis={49870},r=1,sourceQuests={24561},u=33}),
 q(24563,{coords={
 [1957]={{44.6,45.4}}},qgs={37527},r=1,sourceQuests={24562},u=33,g={
 qo(1,{coords={
@@ -1141,16 +1141,16 @@ q(24596,{c={5,7,11},coords={
 [1957]={{44.6,45.4}}},qgs={37527},races={10},sourceQuests={24563},u=33,g={
 qo(1,{providers={{"i",49871},{"i",49879},{"o",201794}},r=1,u=33})}}),
 q(24801,{coords={
-[118]={{74.2,31.2}}},maps={125},providers={{"i",49871}},qgs={36642},races={2,5,6,8},sourceQuests={24564},u=33,g={
+[118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={2,5,6,8},sourceQuests={24564},u=33,g={
 crit(12907,{achID=4596,id=1,u=33})}}),
 q(24799,{c={5,7,11},coords={
-[118]={{74.2,31.2}}},maps={125},providers={{"i",49871}},qgs={36642},races={2,5,6,8},sourceQuests={24598},u=33,g={
+[118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={2,5,6,8},sourceQuests={24598},u=33,g={
 crit(12905,{achID=4596,id=1,u=33})}}),
 q(24800,{c={1,2,3,4,6,8,9},coords={
-[118]={{74.2,31.2}}},maps={125},providers={{"i",49871}},qgs={36642},races={10},sourceQuests={24594},u=33,g={
+[118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={10},sourceQuests={24594},u=33,g={
 crit(12906,{achID=4596,id=1,u=33})}}),
 q(24798,{c={5,7,11},coords={
-[118]={{74.2,31.2}}},maps={125},providers={{"i",49871}},qgs={36642},races={10},sourceQuests={24596},u=33,g={
+[118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={10},sourceQuests={24596},u=33,g={
 crit(12904,{achID=4596,id=1,u=33})}})}}),
 h(-56,{u=31,g={
 o(194618,{coords={

@@ -10407,7 +10407,7 @@ h(-63,{
 i(32902,{f=55,lvl=23,spellID=41618}),
 i(32905,{f=55,lvl=23,spellID=41620}),
 r(26783,{b=1,crs={19168},itemID=21906,requireSkill=197,skillID=2539}),
-r(28571,{b=1,crs={19168},itemID=22920,requireSkill=171,skillID=2484})}),
+r(28571,{b=1,crs={19168,19221},itemID=22920,requireSkill=171,skillID=2484})}),
 o(184465,{modelScale=1.6,g={
 s(12353,28252,{b=1,f=4,loc=42,lvl=27}),
 s(12352,28251,{b=1,f=5,loc=47,lvl=27}),
@@ -10428,8 +10428,7 @@ i(28259,{b=1,f=52,lvl=27,modID=1}),
 s(12360,28262,{b=1,f=7,loc=42,lvl=27,modID=1}),
 s(12359,28260,{b=1,f=1,lvl=27,modID=1}),
 s(12324,28202,{b=1,f=5,loc=42,lvl=27,modID=1}),
-s(12361,28263,{b=1,f=21,lvl=27,modID=1}),
-r(28571,{b=1,itemID=22920,requireSkill=171,skillID=2484})}}),
+s(12361,28263,{b=1,f=21,lvl=27,modID=1})}}),
 e(565,{npcID=19220,g={
 ach(658,{
 crit(3976,{achID=1284,awp=30002,id=13})}),
@@ -10467,8 +10466,7 @@ i(28259,{b=1,f=52,lvl=27,modID=2}),
 s(12360,28262,{b=1,f=7,loc=42,lvl=27,modID=2}),
 s(12359,28260,{b=1,f=1,lvl=27,modID=2}),
 s(12324,28202,{b=1,f=5,loc=42,lvl=27,modID=2}),
-s(12361,28263,{b=1,f=21,lvl=27,modID=2}),
-r(28571,{b=1,itemID=22920,requireSkill=171,skillID=2484})}}),
+s(12361,28263,{b=1,f=21,lvl=27,modID=2})}}),
 e(565,{npcID=19220,g={
 ach(679,{
 crit(4035,{achID=1287,awp=30002,id=13})}),
@@ -22435,11 +22433,11 @@ i(203736,{b=1,modID=2,spellID=401544})}}),
 i(203737,{b=1,cost={{"i",203735,1},{"i",203736,1}}}),
 o(386668,{description="The second Bijou named 'Shattered Hakkari Bijou' is at the same spot, but during phase 2 of the Jin'do Boss Encounter. In the middle of the pyramid at roughly 48.6, 42.3 ",g={
 i(203735,{b=1,modID=2,spellID=401544})}}),
-o(180368,{description="Alchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",requireSkill=171,g={
+o(180368,{description="Can be looted near the Cache of Madness event, above the altar at 61.2, 45.6.\nAlchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",requireSkill=171,g={
 r(24266,{learnedAt=300,requireSkill=171,skillID=2485})}})}),
 h(-58,{
 n(143138,{coords={
-[1165]={{55,86.8}}},sourceQuests={74576},g={
+[1165]={{55,86.8}}},sourceAchievements={17366},g={
 cl(11,{
 en(203974,{b=1,c={11},cost={{"i",203769,6},{"i",203914,4}},questID=74720,spellID=402640,tmogSetID=2836,g={
 s(7811,19839,{b=1,c={11},f=5,loc=45,modID=2}),
@@ -65633,6 +65631,7 @@ i(251148,{b=1,f=52,lvl=78}),
 s(298146,251146,{b=1,f=5,loc=41,lvl=78})}}),
 e(2777,{npcID=244100,g={
 s(298152,251153,{b=1,f=5,loc=47,lvl=78}),
+s(307631,271681,{f=1}),
 i(250244,{b=1,f=53,lvl=78,spellID=1250588}),
 s(298151,251152,{b=1,f=6,loc=44,lvl=78}),
 s(298150,251151,{b=1,f=7,loc=42,lvl=78}),

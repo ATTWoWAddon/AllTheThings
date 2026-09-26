@@ -17,7 +17,7 @@ i(32464,{providers={{"o",185877}}})}),
 prof(393,{
 i(32470,{crs={23169,23264,23267,23269,23285,23326}})}),
 h(-45,{
-q(11041,{crs={23264,23269},lvl=25,minReputation={1015,0},providers={{"i",32621}},sourceQuests={10870},g={
+q(11041,{crs={23264,23269},lvl=25,minReputation={1015,0},qss={32621},sourceQuests={10870},g={
 s(15142,32866,{b=1,f=7,loc=47}),
 s(15143,32867,{b=1,f=4,loc=45}),
 s(15141,32865,{b=1,f=5,loc=44}),
@@ -126,7 +126,7 @@ q(11101,{coords={
 [104]={{62.4,29.4}}},isDaily=1,lvl=25,maxReputation={1015,42000},minReputation={932,0},qgs={23452},sourceQuests={11100}}),
 q(11097,{coords={
 [104]={{56.6,58.6}}},isDaily=1,lvl=25,maxReputation={1015,42000},minReputation={934,0},qgs={23434},sourceQuests={11095}}),
-q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",lvl=25,minReputation={1015,3000},providers={{"i",32726}}}),
+q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",lvl=25,minReputation={1015,3000},qss={32726}}),
 q(11049,{coords={
 [104]={{65.9,86.4}}},cost={{"i",32506,1}},lvl=25,qgs={23141},sourceQuests={11019}}),
 q(11075,{coords={
@@ -527,7 +527,7 @@ q(13864,{c={6},coords={
 i(46114,{b=1}),
 cu(241,{providers={{"i",45724}}}),
 i(45724,{b=1})}}),
-q(24442,{crs={34838,34839},lvl=25,providers={{"i",49676}},qis={49678},sourceAchievements={2771,2817},g={
+q(24442,{crs={34838,34839},lvl=25,qis={49678},qss={49676},sourceAchievements={2771,2817},g={
 o(201367,{coords={
 [170]={{43.9,24.5}}}})}}),
 q(14076,{coords={
@@ -571,7 +571,7 @@ q(14141,{coords={
 cu(241),
 n(29618,{coords={
 [120]={{44.6,82}}}})}}),
-q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,lvl=25,providers={{"i",46955}},sourceAchievements={2771,2817}}),
+q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,lvl=25,qss={46955},sourceAchievements={2771,2817}}),
 q(13627,{awp=30100,coords={
 [118]={{74.2,24.6}}},crs={33308},isDaily=1,lvl=25,maps={127},qgs={33434},qis={45045,45046},rwp=40001,sourceQuests={13820},u=2}),
 q(13625,{coords={
@@ -937,7 +937,7 @@ n(34956,{coords={
 [118]={{60.8,23}}}})}})}),
 ah(50379,{r=2,type="i",g={
 q(14443,{coords={
-[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",lvl=25,providers={{"i",50379}},r=2}),
+[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",lvl=25,qss={50379},r=2}),
 q(14444,{coords={
 [118]={{74.2,31.2}}},lvl=25,maps={115},qgs={36624},r=2,sourceQuests={14443},g={
 n(27990,{coords={
@@ -978,7 +978,7 @@ q(24795,{c={5,7,11},coords={
 crit(12902,{achID=4596,id=2})}})}}),
 ah(50380,{r=1,type="i",g={
 q(24554,{coords={
-[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",lvl=25,providers={{"i",50380}},r=1}),
+[118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",lvl=25,qss={50380},r=1}),
 q(24555,{coords={
 [118]={{74.2,31.2}}},lvl=25,maps={115},qgs={36642},r=1,sourceQuests={24554},g={
 n(27990,{coords={
@@ -1540,7 +1540,7 @@ q(29195,{coords={
 crit(17794,{achID=5859,id=2}),
 n(52863,{coords={
 [198]={{27.4,55.6}}}})}}),
-q(29298,{lvl=32,maps={80},providers={{"i",69854},{"n",11801}},sourceAchievements={5859},g={
+q(29298,{lvl=32,maps={80},providers={{"n",11801}},qss={69854},sourceAchievements={5859},g={
 i(69854,{b=1,description="This item will be mailed to you after completing the achievement Legacy of Leyara.",lvl=32})}}),
 q(29281,{coords={
 [338]={{47,90}}},cost={{"c",416,125}},lvl=32,qgs={53214},sourceQuests={29181,29214},g={
@@ -2611,11 +2611,11 @@ q(32194,{coords={
 [379]={{59.9,75.4}}},lvl=15,qgs={67734},r=2,sourceQuests={32193},g={
 crit(22428,{achID=7928,id=5,r=2})}}),
 q(32166,{coords={
-[418]={{94.4,29.3}}},isDaily=1,lvl=15,providers={{"i",91856}},r=2}),
+[418]={{94.4,29.3}}},isDaily=1,lvl=15,qss={91856},r=2}),
 q(32164,{coords={
-[418]={{94.4,29.3}}},isDaily=1,lvl=15,providers={{"i",91854}},r=2}),
+[418]={{94.4,29.3}}},isDaily=1,lvl=15,qss={91854},r=2}),
 q(32165,{coords={
-[418]={{94.4,29.3}}},isDaily=1,lvl=15,providers={{"i",91855}},r=2}),
+[418]={{94.4,29.3}}},isDaily=1,lvl=15,qss={91855},r=2}),
 q(32186,{coords={
 [418]={{58.7,38.7}}},isDaily=1,lvl=15,qgs={67508},r=2,sourceQuests={32166}}),
 q(32184,{coords={
@@ -2786,11 +2786,11 @@ q(32167,{coords={
 q(32128,{coords={
 [418]={{9.02,51.2}}},isDaily=1,lvl=15,qgs={67880},r=1,sourceQuests={32126,32235}}),
 q(32163,{coords={
-[418]={{9.68,50.9}}},isDaily=1,lvl=15,providers={{"i",91822}},r=1}),
+[418]={{9.68,50.9}}},isDaily=1,lvl=15,qss={91822},r=1}),
 q(32161,{coords={
-[418]={{9.67,50.9}}},isDaily=1,lvl=15,providers={{"i",91819}},r=1}),
+[418]={{9.67,50.9}}},isDaily=1,lvl=15,qss={91819},r=1}),
 q(32162,{coords={
-[418]={{9.7,51}}},isDaily=1,lvl=15,providers={{"i",91821}},r=1}),
+[418]={{9.7,51}}},isDaily=1,lvl=15,qss={91821},r=1}),
 q(32183,{coords={
 [418]={{58.7,38.7}}},isDaily=1,lvl=15,qgs={67508},r=1,sourceQuests={32163}}),
 q(32181,{coords={
@@ -3416,11 +3416,11 @@ q(31373,{coords={
 q(31375,{coords={
 [390]={{60.6,21.8}}},isBreadcrumb=1,lvl=10,nextQuests={30134},qgs={64533},r=1}),
 q(30139,{coords={
-[371]={{65.3,31.6}}},lvl=10,providers={{"i",78962},{"n",58225}},sourceQuests={30138}}),
+[371]={{65.3,31.6}}},lvl=10,providers={{"n",58225}},qss={78962},sourceQuests={30138}}),
 q(30140,{coords={
-[371]={{65.3,31.6}}},lvl=10,providers={{"i",78960},{"n",58225}},sourceQuests={30138}}),
+[371]={{65.3,31.6}}},lvl=10,providers={{"n",58225}},qss={78960},sourceQuests={30138}}),
 q(30141,{coords={
-[371]={{65.3,31.6}}},lvl=10,providers={{"i",78961},{"n",58225}},sourceQuests={30138}}),
+[371]={{65.3,31.6}}},lvl=10,providers={{"n",58225}},qss={78961},sourceQuests={30138}}),
 q(30143,{coords={
 [371]={{57.6,44.9}}},lvl=10,minReputation={1271,21000},qgs={58564},sourceQuests={30142}}),
 q(30134,{coords={
@@ -4256,10 +4256,10 @@ q(30598,{coords={
 i(80303,{requireSkill=356,spellID=115027}),
 i(80310,{requireSkill=356}),
 crit(21991,{achID=7614,id=5})}}),
-q(31664,{collectible=false,providers={{"i",88563}},repeatable=1}),
-q(31443,{description="Found while fishing in any inland body of water on Pandaria.\n\n",isDaily=1,lvl=15,providers={{"i",86542}},requireSkill=356}),
-q(31446,{description="Found while fishing in any inland body of water on Pandaria.",isDaily=1,lvl=15,providers={{"i",86545}},requireSkill=356}),
-q(31444,{description="Found while fishing in inland water near Sha-touched land.",isDaily=1,lvl=15,providers={{"i",86544}},requireSkill=356})}),
+q(31664,{collectible=false,qss={88563},repeatable=1}),
+q(31443,{description="Found while fishing in any inland body of water on Pandaria.\n\n",isDaily=1,lvl=15,qss={86542},requireSkill=356}),
+q(31446,{description="Found while fishing in any inland body of water on Pandaria.",isDaily=1,lvl=15,qss={86545},requireSkill=356}),
+q(31444,{description="Found while fishing in inland water near Sha-touched land.",isDaily=1,lvl=15,qss={86544},requireSkill=356})}),
 h(-46,{
 n(70323,{coords={
 [371]={{50.8,20.8},{55.8,21.4}},
@@ -5051,26 +5051,26 @@ i(94197,{awp=50200,b=1,lvl=30,maps={504},sourceAchievements={8049}}),
 i(83774,{b=1,lvl=30,sourceAchievements={6858}})}}),
 h(-45,{
 q(31055,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83076},{"n",61962}},qis={83769}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qis={83769},qss={83076}}),
 q(31094,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83771},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83771}}),
 q(32602,{awp=50200,coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",94199},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={94199}}),
 q(31097,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83773},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83773}}),
 q(31093,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83770},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83770}}),
 q(31288,{coords={
 [390]={{83.6,31}}},isDaily=1,lvl=30,qgs={63984}}),
 q(31289,{coords={
 [390]={{83.6,31}},
 [1530]={{84.1,28.5}}},isDaily=1,lvl=30,qgs={63984}}),
 q(32601,{awp=50200,coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",94198},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={94198}}),
 q(31103,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83780},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83780}}),
 q(31095,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83772},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83772}}),
 q(32806,{awp=50300,coords={
 [390]={{83.2,29.6}}},lvl=35,maps={523},qgs={61962,63577},sourceQuests={32892},g={
 i(98133,{awp=50004,b=1})}}),
@@ -5081,20 +5081,20 @@ q(31368,{awp=100207,coords={
 q(32815,{awp=50300,coords={
 [390]={{83.1,29.7}}},lvl=35,qgs={61962},sourceQuests={32807}}),
 q(31102,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83779},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83779}}),
 q(31100,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83777},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83777}}),
 q(32807,{awp=50300,coords={
 [390]={{83.2,29.6}}},lvl=35,maps={520,521},qgs={61962},sourceQuests={32806},g={
 i(98133,{awp=50004,b=1}),
 crit(23535,{achID=8306,id=1,r=2,rwp=50400,u=2}),
 crit(23535,{achID=8307,id=1,r=1,rwp=50400,u=2})}}),
 q(32600,{awp=50200,coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",94197},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={94197}}),
 q(31291,{coords={
 [390]={{83.6,31}}},isDaily=1,lvl=30,qgs={63983}}),
 q(31096,{coords={
-[390]={{83.2,29.6}}},lvl=30,providers={{"i",83774},{"n",61962}}}),
+[390]={{83.2,29.6}}},lvl=30,providers={{"n",61962}},qss={83774}}),
 q(31015,{coords={
 [390]={{83.2,29.6}}},lvl=30,qgs={61962,63577},sourceQuests={31367,31368},g={
 o(212526,{coords={
@@ -5257,8 +5257,8 @@ p(1042,{b=1,itemID=85222,npcID=63370,spellID=123784})}}),
 s(46749,90042,{description="Once you hit Best Friend with Old Hillpaw you receive this in the mail.",f=2,loc=40,minReputation={1276,6}})}),
 h(-45,{
 q(31937,{coords={
-[376]={{53.2,51.8}}},description="You never have to loot a Vintage Bug Sprayer ever again!",lvl=15,providers={{"i",89813},{"o",215162}},sourceQuests={30523}}),
-q(31329,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,5},providers={{"i",86436}}}),
+[376]={{53.2,51.8}}},description="You never have to loot a Vintage Bug Sprayer ever again!",lvl=15,providers={{"o",215162}},qss={89813},sourceQuests={30523}}),
+q(31329,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,5},qss={86436}}),
 q(30252,{coords={
 [376]={{52,48.1}}},lvl=15,qgs={58721},g={
 n(58719,{coords={
@@ -5275,8 +5275,8 @@ q(31538,{coords={
 [376]={{53,51.6}}},lvl=15,minReputation={1275,5},qgs={58647},qis={87763},sourceQuests={31537},g={
 n(56133,{coords={
 [376]={{55.2,50.8}}}})}}),
-q(31325,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,2},providers={{"i",86433}}}),
-q(31328,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,4},providers={{"i",86435}}}),
+q(31325,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,2},qss={86433}}),
+q(31328,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,4},qss={86435}}),
 q(31323,{coords={
 [376]={{53.6,52.6}}},cost={{"i",75038,20}},lvl=15,minReputation={1273,5},qgs={58710},sourceQuests={31322}}),
 q(31320,{coords={
@@ -5453,21 +5453,21 @@ q(32198,{awp=50100,coords={
 [376]={{53.2,51.4}}},description="Available only on days where Barnaby Fletcher is in Halfhill.",lvl=15,qgs={67565},sourceQuests={32189},g={
 i(91806,{awp=50004,b=1,f=55,spellID=133036})}}),
 q(31938,{coords={
-[376]={{53.2,51.8}}},lvl=15,providers={{"i",89814}},sourceQuests={30529}}),
+[376]={{53.2,51.8}}},lvl=15,qss={89814},sourceQuests={30529}}),
 q(31936,{coords={
-[376]={{51.7,48.7}}},description="You never have to loot a Rusty Watering Can ever again!",lvl=15,providers={{"i",89812},{"o",215135}},sourceQuests={30516}}),
+[376]={{51.7,48.7}}},description="You never have to loot a Rusty Watering Can ever again!",lvl=15,providers={{"o",215135}},qss={89812},sourceQuests={30516}}),
 q(31534,{coords={
 [376]={{53,51.6}}},crs={57298,57402,58705,58706},lvl=15,minReputation={1275,3},qgs={58647},qis={87553,87554,87555,87556}}),
 q(31315,{coords={
 [377]={{31.5,53.3}}},lvl=15,providers={{"o",213767}},qis={86421},sourceQuests={31314},g={
 ach(7296)}}),
 q(31312,{coords={
-[376]={{43.4,29.1}}},crs={59639},description="Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",lvl=15,minReputation={1272,42000},providers={{"i",86404}}}),
+[376]={{43.4,29.1}}},crs={59639},description="Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",lvl=15,minReputation={1272,42000},qss={86404}}),
 q(31372,{coords={
 [390]={{87,60.8}}},isBreadcrumb=1,lvl=15,qgs={64036},r=2,u=2}),
 q(31374,{coords={
 [390]={{60.4,22.8}}},isBreadcrumb=1,lvl=15,qgs={64011},r=1,u=2}),
-q(31326,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,3},providers={{"i",86434}}}),
+q(31326,{crs={59119,59120,59121,59122,59123,59124,59125,59126,59127,59128,59129,59130,59131,59132,59133,59134,59135},lvl=15,minReputation={1280,3},qss={86434}}),
 q(31672,{coords={
 [376]={{52.2,48.8}}},cost={{"i",80592,1}},isDaily=1,lvl=15,maxReputation={1272,42000},qgs={58646},sourceQuests={30257},g={
 n(59990,{coords={
@@ -5922,7 +5922,7 @@ cl(9,{awp=50200,description="The Warlock Green Fire is a special visual effect f
 h(-45,{c={9},g={
 i(92426,{c={9},crs={50358,69664,69996,69997,69998,69999,70000,70001,70002,70003},maps={504},spellID=133806}),
 i(92441,{b=1,c={9},cost={{"i",5512,1},{"i",92426,1}},lvl=35,maps={504}}),
-q(32295,{c={9},lvl=35,maps={504},providers={{"i",92441}}}),
+q(32295,{c={9},lvl=35,maps={504},qss={92441}}),
 q(32307,{c={9},coords={
 [84]={{39.8,85.4}},
 [85]={{53.8,35.8}}},isBreadcrumb=1,lvl=35,nextQuests={32309,32310},qgs={5496,88705},sourceQuests={32295}}),
@@ -6199,9 +6199,9 @@ i(122454,{b=1,f=55,lvl=35,spellID=156426}),
 i(122452,{b=1,f=55,lvl=35,spellID=175790}),
 i(122455,{b=1,f=55,lvl=35,spellID=156428}),
 i(122456,{b=1,f=55,lvl=35,spellID=156430})}}),
-q(35342,{lvl=10,providers={{"i",113103}},r=2,requireSkill=171,g={
+q(35342,{lvl=10,qss={113103},r=2,requireSkill=171,g={
 i(109152,{f=55,lvl=35,requireSkill=171,spellID=156077})}}),
-q(35058,{lvl=10,providers={{"i",112566}},r=1,requireSkill=171,g={
+q(35058,{lvl=10,qss={112566},r=1,requireSkill=171,g={
 i(109152,{f=55,lvl=35,requireSkill=171,spellID=156077})}}),
 q(35343,{coords={
 [582]={{47.2,45.8}}},lvl=10,qgs={82466},r=2,requireSkill=171,sourceQuests={35342}}),
@@ -7348,7 +7348,7 @@ q(36182,{description="This Quest requires a Level 3 Lumber Mill.",lvl=10,qgs={84
 q(36192,{lvl=10,qgs={84248},r=2,sourceQuests={36189}}),
 q(36138,{lvl=10,qgs={84247},r=1,sourceQuests={36137}}),
 n(85199,{description="These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",g={
-q(36385,{lvl=10,providers={{"i",115467}},g={
+q(36385,{lvl=10,qss={115467},g={
 toy(115506,{b=1,lvl=35}),
 crit(25733,{achID=9429,id=2})}})}})})}),
 gb(168,{
@@ -7740,7 +7740,7 @@ follower(576,{u=5}),
 follower(527,{u=5}),
 follower(524,{u=5})}})}),
 h(-45,{
-q(39278,{lvl=40,providers={{"i",127989}},g={
+q(39278,{lvl=40,qss={127989},g={
 o(243345,{coords={
 [550]={{59.5,1.2}}},g={
 i(128027)}})}}),
@@ -9686,7 +9686,7 @@ q(39021,{coords={
 i(127853,{b=1})}}),
 q(33075,{coords={
 [582]={{46.9,50.8},{47,51}}},lvl=10,qgs={80568},r=2,sourceQuests={34692}}),
-q(36408,{lvl=10,providers={{"i",115507}},r=2,requireSkill=755}),
+q(36408,{lvl=10,qss={115507},r=2,requireSkill=755}),
 q(40792,{coords={
 [582]={{33.6,37.6}},
 [590]={{41.8,46.8}}},isWeekly=1,lvl=40,qgs={94870},u=2,g={
@@ -9990,7 +9990,7 @@ crit(27582,{achID=9825,id=4,r=2})}}),
 q(37992,{coords={
 [590]={{40.2,56}}},isDaily=1,lvl=40,providers={{"o",239791}},r=1,sourceQuests={37799},g={
 crit(27603,{achID=9836,id=4,r=1})}}),
-q(36589,{lvl=10,providers={{"i",116438}},r=1,requireSkill=202}),
+q(36589,{lvl=10,qss={116438},r=1,requireSkill=202}),
 q(38296,{coords={
 [582]={{34.5,33}},
 [590]={{40.2,56}}},cost={{"i",109129,10},{"i",109127,10},{"i",109128,10},{"i",109126,10},{"i",109125,10}},isDaily=1,lvl=10,qgs={91031,91404},g={
@@ -10099,7 +10099,7 @@ q(34676,{coords={
 [582]={{42.8,45.2}}},description="If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",DisablePartySync=1,isBreadcrumb=1,lvl=20,nextQuests={34558},providers={{"o",232397},{"o",232398},{"o",232400}},r=2}),
 q(37183,{coords={
 [582]={{38.2,37}}},DisablePartySync=1,isBreadcrumb=1,lvl=20,nextQuests={34558},qgs={81492},r=2}),
-q(36314,{lvl=10,providers={{"i",115287}},r=1,requireSkill=755}),
+q(36314,{lvl=10,qss={115287},r=1,requireSkill=755}),
 q(35556,{coords={
 [582]={{31.4,33.5},{38.3,36.7}}},isBreadcrumb=1,lvl=15,nextQuests={35033},qgs={81492},r=2}),
 q(35557,{description="If you don't see a Command Board or a Bulletin Board in your garrison, check whether you can obtain the quest from your Adventure Guide while in WoD Chromie time. If you can't find it there either, your level may be too low or high. Check the zone's minimum level requirements.",isBreadcrumb=1,lvl=15,nextQuests={33543},providers={{"o",232416},{"o",233291},{"o",237022}},r=1}),
@@ -10163,37 +10163,37 @@ o(236206,{coords={
 [590]={{41,50.8},{41.8,50.7}}},r=1,sourceQuests={36567}}),
 q(34736,{coords={
 [590]={{51.2,51.3}}},isBreadcrumb=1,lvl=10,nextQuests={34344},qgs={78487},r=1,sourceQuests={33657}}),
-q(38193,{lvl=40,providers={{"i",122423}},r=2,repeatable=1}),
-q(38196,{lvl=40,providers={{"i",122417}},r=2,repeatable=1}),
-q(38192,{lvl=40,providers={{"i",122404}},r=2,repeatable=1}),
-q(38191,{lvl=40,providers={{"i",122406}},r=2,repeatable=1}),
-q(38198,{lvl=40,providers={{"i",122414}},r=2,repeatable=1}),
-q(38190,{lvl=40,providers={{"i",122399}},r=2,repeatable=1}),
-q(38195,{lvl=40,providers={{"i",122422}},r=2,repeatable=1}),
-q(38199,{lvl=40,providers={{"i",122409}},r=2,repeatable=1}),
-q(38201,{lvl=40,providers={{"i",122410}},r=2,repeatable=1,g={
+q(38193,{lvl=40,qss={122423},r=2,repeatable=1}),
+q(38196,{lvl=40,qss={122417},r=2,repeatable=1}),
+q(38192,{lvl=40,qss={122404},r=2,repeatable=1}),
+q(38191,{lvl=40,qss={122406},r=2,repeatable=1}),
+q(38198,{lvl=40,qss={122414},r=2,repeatable=1}),
+q(38190,{lvl=40,qss={122399},r=2,repeatable=1}),
+q(38195,{lvl=40,qss={122422},r=2,repeatable=1}),
+q(38199,{lvl=40,qss={122409},r=2,repeatable=1}),
+q(38201,{lvl=40,qss={122410},r=2,repeatable=1,g={
 de(925,{awp=110207,itemID=241043,spellID=1230952})}}),
-q(38200,{lvl=40,providers={{"i",122407}},r=2,repeatable=1}),
-q(38197,{lvl=40,providers={{"i",122415}},r=2,repeatable=1,g={
+q(38200,{lvl=40,qss={122407},r=2,repeatable=1}),
+q(38197,{lvl=40,qss={122415},r=2,repeatable=1,g={
 de(8176,{awp=110207,itemID=251329,spellID=1252380})}}),
-q(38189,{lvl=40,providers={{"i",122401}},r=2,repeatable=1}),
-q(40944,{lvl=40,providers={{"i",133883}},r=2,repeatable=1,g={
+q(38189,{lvl=40,qss={122401},r=2,repeatable=1}),
+q(40944,{lvl=40,qss={133883},r=2,repeatable=1,g={
 de(8238,{awp=110207,itemID=251547,spellID=1252648})}}),
-q(40942,{lvl=40,providers={{"i",133878}},r=2,repeatable=1}),
-q(38180,{lvl=40,providers={{"i",122424}},r=1,repeatable=1}),
-q(38182,{lvl=40,providers={{"i",122418}},r=1,repeatable=1}),
-q(38179,{lvl=40,providers={{"i",122400}},r=1,repeatable=1}),
-q(38178,{lvl=40,providers={{"i",122402}},r=1,repeatable=1}),
-q(38184,{lvl=40,providers={{"i",122413}},r=1,repeatable=1}),
-q(38177,{lvl=40,providers={{"i",122403}},r=1,repeatable=1}),
-q(38181,{lvl=40,providers={{"i",122421}},r=1,repeatable=1}),
-q(38185,{lvl=40,providers={{"i",122411}},r=1,repeatable=1}),
-q(38187,{lvl=40,providers={{"i",122412}},r=1,repeatable=1}),
-q(38186,{lvl=40,providers={{"i",122408}},r=1,repeatable=1}),
-q(38183,{lvl=40,providers={{"i",122416}},r=1,repeatable=1}),
-q(38176,{lvl=40,providers={{"i",122405}},r=1,repeatable=1}),
-q(40943,{lvl=40,providers={{"i",133884}},r=1,repeatable=1}),
-q(40941,{lvl=40,providers={{"i",133876}},r=1,repeatable=1})}}),
+q(40942,{lvl=40,qss={133878},r=2,repeatable=1}),
+q(38180,{lvl=40,qss={122424},r=1,repeatable=1}),
+q(38182,{lvl=40,qss={122418},r=1,repeatable=1}),
+q(38179,{lvl=40,qss={122400},r=1,repeatable=1}),
+q(38178,{lvl=40,qss={122402},r=1,repeatable=1}),
+q(38184,{lvl=40,qss={122413},r=1,repeatable=1}),
+q(38177,{lvl=40,qss={122403},r=1,repeatable=1}),
+q(38181,{lvl=40,qss={122421},r=1,repeatable=1}),
+q(38185,{lvl=40,qss={122411},r=1,repeatable=1}),
+q(38187,{lvl=40,qss={122412},r=1,repeatable=1}),
+q(38186,{lvl=40,qss={122408},r=1,repeatable=1}),
+q(38183,{lvl=40,qss={122416},r=1,repeatable=1}),
+q(38176,{lvl=40,qss={122405},r=1,repeatable=1}),
+q(40943,{lvl=40,qss={133884},r=1,repeatable=1}),
+q(40941,{lvl=40,qss={133876},r=1,repeatable=1})}}),
 h(-56,{maps={582,590},g={
 o(231063,{coords={
 [590]={{38.2,63.2}}},description="In an underwater cave.",questID=34936,r=1}),
@@ -13095,7 +13095,7 @@ h(-12,{
 ach(11218,{rwp=70305,u=2})}),
 h(-116,{
 gm(1505,{
-q(45172,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",143328}},g={
+q(45172,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={143328},g={
 i(143606,{b=1,g={
 i(140413,{b=1,f=54}),
 i(140414,{b=1,f=54}),
@@ -13105,58 +13105,58 @@ i(140419,{b=1,f=54}),
 i(140423,{b=1,f=54})}})}})}),
 gm(1704,{
 i(152313,{b=1}),
-q(48288,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152313}},repeatable=1,g={
+q(48288,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152313},repeatable=1,g={
 i(153502,{b=1})}}),
 i(152314,{b=1}),
-q(48295,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152314}},repeatable=1,g={
+q(48295,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152314},repeatable=1,g={
 i(153504,{b=1})}}),
 i(152315,{b=1}),
-q(48299,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152315}},repeatable=1,g={
+q(48299,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152315},repeatable=1,g={
 i(153501,{b=1})}}),
 i(152316,{b=1}),
-q(48303,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152316}},repeatable=1,g={
+q(48303,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152316},repeatable=1,g={
 i(153503,{b=1})}}),
 i(153502,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",946},{"pop"},{"where","difficultyID",17},{"pop"},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54},{"exclude","itemID",152094,153115}}})}),
 gm(1708,{
 i(152317,{b=1}),
-q(48292,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152317}},repeatable=1,g={
+q(48292,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152317},repeatable=1,g={
 i(153502,{b=1})}}),
 i(152318,{b=1}),
-q(48296,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152318}},repeatable=1,g={
+q(48296,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152318},repeatable=1,g={
 i(153504,{b=1})}}),
 i(152319,{b=1}),
-q(48300,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152319}},repeatable=1,g={
+q(48300,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152319},repeatable=1,g={
 i(153501,{b=1})}}),
 i(152320,{b=1}),
-q(48304,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152320}},repeatable=1,g={
+q(48304,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152320},repeatable=1,g={
 i(153503,{b=1})}}),
 i(153504,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",946},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54},{"exclude","itemID",152094,153115,154172,154173,154174,154175,154176,154177,155831}}})}),
 gm(1709,{
 i(152321,{b=1}),
-q(48293,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152321}},repeatable=1,g={
+q(48293,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152321},repeatable=1,g={
 i(153502,{b=1})}}),
 i(152322,{b=1}),
-q(48297,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152322}},repeatable=1,g={
+q(48297,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152322},repeatable=1,g={
 i(153504,{b=1})}}),
 i(152323,{b=1}),
-q(48301,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152323}},repeatable=1,g={
+q(48301,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152323},repeatable=1,g={
 i(153501,{b=1})}}),
 i(152324,{b=1}),
-q(48305,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152324}},repeatable=1,g={
+q(48305,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152324},repeatable=1,g={
 i(153503,{b=1})}}),
 i(153501,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",946},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54},{"exclude","itemID",152094,153115,154172,154173,154174,154175,154176,154177,155831}}})}),
 gm(1710,{
 i(152325,{b=1}),
-q(48294,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152325}},repeatable=1,g={
+q(48294,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152325},repeatable=1,g={
 i(153502,{b=1})}}),
 i(152326,{b=1}),
-q(48298,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152326}},repeatable=1,g={
+q(48298,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152326},repeatable=1,g={
 i(153504,{b=1})}}),
 i(152327,{b=1}),
-q(48302,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152327}},repeatable=1,g={
+q(48302,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152327},repeatable=1,g={
 i(153501,{b=1})}}),
 i(152328,{b=1}),
-q(48306,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",152328}},repeatable=1,g={
+q(48306,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={152328},repeatable=1,g={
 i(153503,{b=1})}}),
 i(153503,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",946},{"pop"},{"where","difficultyID",16},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54},{"exclude","itemID",152094,153115,155880,154172,154173,154174,154175,154176,154177,155831}}})}),
 gm(1785,{
@@ -13165,189 +13165,189 @@ q(48601,{c={1,2,3,4,5,6,7,8,9,10,11,12},coords={
 [883]={{45.8,24.9}}},lvl=45,qgs={124312,126954},g={
 heir(153130,{spellID=254409})}})}),
 gm(1503,{
-q(45162,{lvl=45,providers={{"i",142553}}})}),
+q(45162,{lvl=45,qss={142553}})}),
 gm(1387,{
 p(1928,{b=1,itemID=140316,npcID=112132,spellID=223339})}),
 gm(1381,{
 toy(129165,{b=1})}),
 gm(1513,{
-q(45312,{lvl=45,providers={{"i",143590}},g={
+q(45312,{lvl=45,qss={143590},g={
 follower(986)}})}),
 gm(1504,{
-q(45163,{lvl=45,providers={{"i",142554}}})}),
+q(45163,{lvl=45,qss={142554}})}),
 gm(1386,{
 p(1929,{b=1,itemID=140320,npcID=112144,spellID=223359})}),
 gm(1512,{
-q(45304,{lvl=45,providers={{"i",143561}}})}),
+q(45304,{lvl=45,qss={143561}})}),
 gm(1506,{
-q(45173,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",143329}},u=2,g={
+q(45173,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={143329},u=2,g={
 i(143607,{b=1,u=2})}})}),
 gm(931,{
 i(140465,{b=1,spellID=227183})}),
 gm(1507,{
-q(45179,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",143478}},u=2,g={
+q(45179,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={143478},u=2,g={
 i(143607,{b=1,u=2,g={
 i(140415,{b=1,f=54,u=2}),
 i(140423,{b=1,f=54})}})}})}),
 gm(1511,{
-q(45180,{providers={{"i",143479}},u=2,g={
+q(45180,{qss={143479},u=2,g={
 i(143607,{b=1,u=2})}})}),
 gm(1502,{
-q(45111,{lvl=45,providers={{"i",142522}}})}),
+q(45111,{lvl=45,qss={142522}})}),
 gm(1296,{
 i(139484,{b=1,skipFill=1,sym={{"select","instanceID",768},{"pop"},{"where","difficultyID",17},{"pop"},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1298,{
 i(139480,{b=1}),
-q(43546,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",139480}},repeatable=1,u=2,g={
+q(43546,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={139480},repeatable=1,u=2,g={
 i(139484,{b=1,u=2})}}),
 i(139481,{b=1}),
-q(43547,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",139481}},repeatable=1,u=2,g={
+q(43547,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={139481},repeatable=1,u=2,g={
 i(139486,{b=1,u=2})}}),
 i(139482,{b=1}),
-q(43548,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",139482}},repeatable=1,u=2,g={
+q(43548,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={139482},repeatable=1,u=2,g={
 i(139487,{b=1,u=2})}}),
 i(139483,{b=1}),
-q(43549,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",139483}},repeatable=1,u=2,g={
+q(43549,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={139483},repeatable=1,u=2,g={
 i(139488,{b=1,u=2})}}),
 i(139486,{b=1,skipFill=1,sym={{"select","instanceID",768},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1300,{
 i(140163,{b=1}),
-q(43902,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140163}},repeatable=1,u=2,g={
+q(43902,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140163},repeatable=1,u=2,g={
 i(139484,{b=1,u=2})}}),
 i(140165,{b=1}),
-q(43904,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140165}},repeatable=1,u=2,g={
+q(43904,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140165},repeatable=1,u=2,g={
 i(139486,{b=1,u=2})}}),
 i(140167,{b=1}),
-q(43906,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140167}},repeatable=1,u=2,g={
+q(43906,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140167},repeatable=1,u=2,g={
 i(139487,{b=1,u=2})}}),
 i(140169,{b=1}),
-q(43908,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140169}},repeatable=1,u=2,g={
+q(43908,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140169},repeatable=1,u=2,g={
 i(139488,{b=1,u=2})}}),
 i(139487,{b=1,skipFill=1,sym={{"select","instanceID",768},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1302,{
 i(140164,{b=1}),
-q(43903,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140164}},repeatable=1,u=2,g={
+q(43903,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140164},repeatable=1,u=2,g={
 i(139484,{b=1,u=2})}}),
 i(140166,{b=1}),
-q(43905,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140166}},repeatable=1,u=2,g={
+q(43905,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140166},repeatable=1,u=2,g={
 i(139486,{b=1,u=2})}}),
 i(140168,{b=1}),
-q(43907,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140168}},repeatable=1,u=2,g={
+q(43907,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140168},repeatable=1,u=2,g={
 i(139487,{b=1,u=2})}}),
 i(140170,{b=1}),
-q(43909,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140170}},repeatable=1,u=2,g={
+q(43909,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140170},repeatable=1,u=2,g={
 i(139488,{b=1,u=2})}}),
 i(139488,{b=1,skipFill=1,sym={{"select","instanceID",768},{"pop"},{"where","difficultyID",16},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1303,{
 i(140147,{b=1}),
-q(43882,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140147}},repeatable=1,u=2,g={
+q(43882,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140147},repeatable=1,u=2,g={
 i(140148,{b=1,u=2})}}),
 i(140149,{b=1}),
-q(43889,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140149}},repeatable=1,u=2,g={
+q(43889,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140149},repeatable=1,u=2,g={
 i(140150,{b=1,u=2})}}),
 i(140151,{b=1}),
-q(43890,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140151}},repeatable=1,u=2,g={
+q(43890,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140151},repeatable=1,u=2,g={
 i(140152,{b=1,u=2})}}),
 i(140153,{b=1}),
-q(43891,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140153}},repeatable=1,u=2,g={
+q(43891,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140153},repeatable=1,u=2,g={
 i(140154,{b=1,u=2})}}),
 i(140148,{b=1,skipFill=1,sym={{"select","instanceID",786},{"pop"},{"where","difficultyID",17},{"pop"},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1304,{
 i(140171,{b=1}),
-q(43910,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140171}},repeatable=1,u=2,g={
+q(43910,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140171},repeatable=1,u=2,g={
 i(140148,{b=1,u=2})}}),
 i(140174,{b=1}),
-q(43913,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140174}},repeatable=1,u=2,g={
+q(43913,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140174},repeatable=1,u=2,g={
 i(140150,{b=1,u=2})}}),
 i(140178,{b=1}),
-q(43916,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140178}},repeatable=1,u=2,g={
+q(43916,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140178},repeatable=1,u=2,g={
 i(140152,{b=1,u=2})}}),
 i(140182,{b=1}),
-q(43919,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140182}},repeatable=1,u=2,g={
+q(43919,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140182},repeatable=1,u=2,g={
 i(140154,{b=1,u=2})}}),
 i(140150,{b=1,skipFill=1,sym={{"select","instanceID",786},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1305,{
 i(140172,{b=1}),
-q(43911,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140172}},repeatable=1,u=2,g={
+q(43911,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140172},repeatable=1,u=2,g={
 i(140148,{b=1,u=2})}}),
 i(140175,{b=1}),
-q(43914,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140175}},repeatable=1,u=2,g={
+q(43914,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140175},repeatable=1,u=2,g={
 i(140150,{b=1,u=2})}}),
 i(140472,{b=1}),
-q(43917,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140472}},repeatable=1,u=2,g={
+q(43917,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140472},repeatable=1,u=2,g={
 i(140152,{b=1,u=2})}}),
 i(140182,{b=1}),
-q(43920,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140182}},repeatable=1,u=2,g={
+q(43920,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140182},repeatable=1,u=2,g={
 i(140154,{b=1,u=2})}}),
 i(140152,{b=1,skipFill=1,sym={{"select","instanceID",786},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1306,{
 i(140173,{b=1}),
-q(43912,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140173}},repeatable=1,u=2,g={
+q(43912,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140173},repeatable=1,u=2,g={
 i(140148,{b=1,u=2})}}),
 i(140177,{b=1}),
-q(43915,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140177}},repeatable=1,u=2,g={
+q(43915,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140177},repeatable=1,u=2,g={
 i(140150,{b=1,u=2})}}),
 i(140180,{b=1}),
-q(43918,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140180}},repeatable=1,u=2,g={
+q(43918,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140180},repeatable=1,u=2,g={
 i(140152,{b=1,u=2})}}),
 i(140183,{b=1}),
-q(43921,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140183}},repeatable=1,u=2,g={
+q(43921,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={140183},repeatable=1,u=2,g={
 i(140154,{b=1,u=2})}}),
 i(140154,{b=1,skipFill=1,sym={{"select","instanceID",786},{"pop"},{"where","difficultyID",16},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2})}),
 gm(1680,{
 i(147497,{b=1}),
-q(47114,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147497}},repeatable=1,g={
+q(47114,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147497},repeatable=1,g={
 i(147518,{b=1})}}),
 i(147498,{b=1}),
-q(47115,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147498}},repeatable=1,g={
+q(47115,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147498},repeatable=1,g={
 i(147519,{b=1})}}),
 i(147499,{b=1}),
-q(47116,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147499}},repeatable=1,g={
+q(47116,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147499},repeatable=1,g={
 i(147520,{b=1})}}),
 i(147500,{b=1}),
-q(47117,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147500}},repeatable=1,g={
+q(47117,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147500},repeatable=1,g={
 i(147521,{b=1})}}),
 i(147518,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",875},{"pop"},{"where","difficultyID",17},{"pop"},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}}})}),
 gm(1681,{
 i(147501,{b=1}),
-q(47118,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147501}},repeatable=1,g={
+q(47118,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147501},repeatable=1,g={
 i(147518,{b=1})}}),
 i(147502,{b=1}),
-q(47119,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147502}},repeatable=1,g={
+q(47119,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147502},repeatable=1,g={
 i(147519,{b=1})}}),
 i(147503,{b=1}),
-q(47120,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147503}},repeatable=1,g={
+q(47120,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147503},repeatable=1,g={
 i(147520,{b=1})}}),
 i(147504,{b=1}),
-q(47121,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147504}},repeatable=1,g={
+q(47121,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147504},repeatable=1,g={
 i(147521,{b=1})}}),
 i(147519,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",875},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}}})}),
 gm(1682,{
 i(147505,{b=1}),
-q(47122,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147505}},repeatable=1,g={
+q(47122,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147505},repeatable=1,g={
 i(147518,{b=1})}}),
 i(147506,{b=1}),
-q(47123,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147506}},repeatable=1,g={
+q(47123,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147506},repeatable=1,g={
 i(147519,{b=1})}}),
 i(147507,{b=1}),
-q(47124,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147507}},repeatable=1,g={
+q(47124,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147507},repeatable=1,g={
 i(147520,{b=1})}}),
 i(147508,{b=1}),
-q(47125,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147508}},repeatable=1,g={
+q(47125,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147508},repeatable=1,g={
 i(147521,{b=1})}}),
 i(147520,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",875},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}}})}),
 gm(1683,{
 i(147509,{b=1}),
-q(47126,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147509}},repeatable=1,g={
+q(47126,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147509},repeatable=1,g={
 i(147518,{b=1})}}),
 i(147510,{b=1}),
-q(47127,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147510}},repeatable=1,g={
+q(47127,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147510},repeatable=1,g={
 i(147519,{b=1})}}),
 i(147511,{b=1}),
-q(47128,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147511}},repeatable=1,g={
+q(47128,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147511},repeatable=1,g={
 i(147520,{b=1})}}),
 i(147512,{b=1}),
-q(47129,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",147512}},repeatable=1,g={
+q(47129,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={147512},repeatable=1,g={
 i(147521,{b=1})}}),
 i(147521,{b=1,description="This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",skipFill=1,sym={{"select","instanceID",875},{"pop"},{"where","difficultyID",16},{"pop"},{"is","encounterID"},{"pop"},{"isnt","c"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}}})}),
 gm(1382,{
@@ -13556,7 +13556,7 @@ i(139457,{b=1,u=2}),
 i(139473,{b=1,lvl=45,u=2}),
 i(139475,{b=1,u=2})}),
 h(-45,{
-q(44057,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",140495}},qis={140496,140561,140562,140563}}),
+q(44057,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qis={140496,140561,140562,140563},qss={140495}}),
 q(43557,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,u=2,g={
 i(141164,{b=1,u=2})}}),
 q(44258,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,u=2,g={
@@ -13601,7 +13601,7 @@ q(43554,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,u=2,g={
 i(141161,{b=1,u=2})}}),
 q(44264,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,u=2,g={
 i(141171,{b=1,u=2})}}),
-q(44265,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,providers={{"i",141192}},u=2,g={
+q(44265,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,qss={141192},u=2,g={
 i(141181,{b=1,u=2})}}),
 q(43509,{c={1,2,3,4,5,6,7,8,9,10,11,12},lvl=45,u=2,g={
 i(141155,{b=1,u=2})}}),
@@ -13994,7 +13994,7 @@ de(5128,{c={9},itemID=248960,spellID=1248168})}})}}),
 h(-214,{c={9},g={
 cl(9.265,{
 i(140764,{b=1,c={9},description="Can be looted from any killed demon.",f=55}),
-q(44083,{c={9},description="Only available from Rare Elite (DANGER) World Quests.",lvl=45,providers={{"i",140764}},g={
+q(44083,{c={9},description="Only available from Rare Elite (DANGER) World Quests.",lvl=45,qss={140764},g={
 i(140762,{c={9}})}}),
 n(112862,{c={9},coords={
 [42]={{38.6,73.8}}},sourceQuests={44083},g={
@@ -16254,7 +16254,7 @@ q(45567,{c={2},coords={
 [650]={{55.8,16.2}}},lvl=45,qgs={117226},sourceQuests={45562}}),
 q(45644,{c={2},coords={
 [650]={{55.8,16.2}}},lvl=45,qgs={118009},sourceQuests={45565,45566,45567,45568}}),
-q(45561,{c={2},description="This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",lvl=45,providers={{"i",143900}},sourceQuests={24707,46045}}),
+q(45561,{c={2},description="This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",lvl=45,qss={143900},sourceQuests={24707,46045}}),
 q(45770,{c={2},coords={
 [24]={{52.3,78.1}}},lvl=45,qgs={90250},sourceQuests={46074},g={
 o(267580,{c={2},g={
@@ -17379,7 +17379,7 @@ q(44204,{c={4},coords={
 gt(441,{c={4},g={
 i(139781,{b=1,c={4},description="|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",lvl=10}),
 q(44159,{c={4},coords={
-[626]={{30.5,70.4}}},isDaily=1,isWeekly=1,lvl=10,providers={{"i",140774}},sourceQuests={44180}}),
+[626]={{30.5,70.4}}},isDaily=1,isWeekly=1,lvl=10,qss={140774},sourceQuests={44180}}),
 h(-47,{c={4},description="These are common rewards",g={
 s(74656,130322,{b=1,c={4},f=5,loc=40,lvl=45}),
 s(74661,130324,{b=1,c={4},f=5,loc=47,lvl=45})}}),
@@ -18625,9 +18625,9 @@ i(151554,{b=1,f=55,g={
 i(151546,{b=1,spellID=247060})}})}})}),
 n(124764,{
 h(-45,{
-q(47645,{lvl=45,providers={{"i",150941}}}),
+q(47645,{lvl=45,qss={150941}}),
 q(47557,{coords={
-[897]={{56.6,66.1}}},lvl=45,providers={{"i",150943}},sourceQuests={47645}})}),
+[897]={{56.6,66.1}}},lvl=45,qss={150943},sourceQuests={47645}})}),
 h(-63,{
 i(151141,{b=1,crs={122552},spellID=245805}),
 i(150943,{b=1,crs={122553}}),
@@ -18636,7 +18636,7 @@ n(124765,{
 h(-45,{
 q(47643,{cost={{"i",151166,3}},description="Use 'Nightmare-Catcher' to enter The Emerald Nightmare and kill the |cFFFFD700Dream Tormentors|r around each ancient.",lvl=45}),
 q(47559,{coords={
-[897]={{63.9,72.6}}},lvl=45,providers={{"i",150945}},sourceQuests={47643}})}),
+[897]={{63.9,72.6}}},lvl=45,qss={150945},sourceQuests={47643}})}),
 h(-63,{
 i(151168,{b=1,crs={122548},spellID=245863}),
 i(150945,{b=1,crs={122875}}),
@@ -18644,17 +18644,17 @@ i(151167,{b=1,crs={122549},spellID=245863}),
 i(151166,{b=1,cost={{"i",151167,10},{"i",151168,8}},spellID=245865})})}),
 n(124762,{
 h(-45,{
-q(47644,{lvl=45,providers={{"i",150938}}}),
+q(47644,{lvl=45,qss={150938}}),
 q(47558,{coords={
-[897]={{37.9,31.1}}},lvl=45,providers={{"i",150944}},sourceQuests={47644}})}),
+[897]={{37.9,31.1}}},lvl=45,qss={150944},sourceQuests={47644}})}),
 h(-64,{
 i(150938,{b=1,crs={122528}}),
 i(150944,{b=1,crs={122871}})})}),
 n(124763,{
 h(-45,{
-q(47642,{lvl=45,providers={{"i",150940}}}),
+q(47642,{lvl=45,qss={150940}}),
 q(47560,{coords={
-[897]={{47.6,48.8}}},lvl=45,providers={{"i",150946}},sourceQuests={47642}})}),
+[897]={{47.6,48.8}}},lvl=45,qss={150946},sourceQuests={47642}})}),
 h(-64,{
 i(150946,{b=1,crs={122874}}),
 i(150939,{b=1,crs={122540,122541,122542},spellID=245537}),
@@ -19129,13 +19129,13 @@ i(169687,{b=1,f=55,lvl=50,spellID=302933,g={
 i(169693,{b=1,questID=57063,spellID=302150,type="ihqt",g={
 i(168616,{b=1,f=55,lvl=50,spellID=298607})}})}})}),
 h(-45,{
-q(51903,{altQuests={51994},lvl=40,r=2,sourceQuests={53061}}),
-q(51904,{altQuests={51994},lvl=40,maps={1022},r=2,sourceQuests={51903}}),
-q(51870,{altQuests={51994},coords={
-[862]={{58.4,62.6}}},lvl=40,qgs={135691},r=1,sourceQuests={53062}}),
-q(51888,{altQuests={51994},lvl=40,maps={1022},r=1,sourceQuests={51870}}),
-q(53061,{altQuests={51994},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",51994,"questID",53062},lvl=35,nextQuests={51903},r=2}),
-q(53062,{altQuests={51994},DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",51994,"questID",53061},lvl=35,nextQuests={51870},r=1}),
+q(51903,{lc={1,"questID",51994},lvl=40,r=2,sourceQuests={53061}}),
+q(51904,{lc={1,"questID",51994},lvl=40,maps={1022},r=2,sourceQuests={51903}}),
+q(51870,{coords={
+[862]={{58.4,62.6}}},lc={1,"questID",51994},lvl=40,qgs={135691},r=1,sourceQuests={53062}}),
+q(51888,{lc={1,"questID",51994},lvl=40,maps={1022},r=1,sourceQuests={51870}}),
+q(53061,{DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",51994,"questID",53062},lvl=35,nextQuests={51903},r=2}),
+q(53062,{DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",51994,"questID",53061},lvl=35,nextQuests={51870},r=1}),
 q(53436,{coords={
 [1161]={{66.6,35.5}}},isWeekly=1,qgs={131290},r=2,g={
 i(168615,{b=1,f=55,lvl=50,spellID=298606}),
@@ -19167,93 +19167,93 @@ i(170149,{b=1,r=1,spellID=303988,g={
 i(168618,{b=1,f=55,lvl=50,spellID=298611,u=2})}})}}),
 q(56534,{lvl=50,qss={169765},r=1}),
 q(53160,{coords={
-[390]={{83.2,29.6}}},lvl=10,providers={{"i",163470},{"n",61962}},g={
+[390]={{83.2,29.6}}},lvl=10,providers={{"n",61962}},qss={163470},g={
 crit(41955,{achID=13127,id=19})}}),
 q(53171,{coords={
-[241]={{20.2,54.6}}},lvl=10,providers={{"i",163478},{"n",132888}},g={
+[241]={{20.2,54.6}}},lvl=10,providers={{"n",132888}},qss={163478},g={
 crit(41947,{achID=13127,id=11})}}),
 q(53163,{coords={
-[634]={{68.4,54.2}}},lvl=10,providers={{"i",163472},{"n",93231}},g={
+[634]={{68.4,54.2}}},lvl=10,providers={{"n",93231}},qss={163472},g={
 crit(41953,{achID=13127,id=17})}}),
 q(53177,{coords={
-[210]={{42,74.6}}},lvl=10,providers={{"i",163482},{"n",908}},g={
+[210]={{42,74.6}}},lvl=10,providers={{"n",908}},qss={163482},g={
 crit(41943,{achID=13127,id=7})}}),
 q(53181,{coords={
-[80]={{52.6,40.6}}},lvl=10,providers={{"i",163485},{"n",12042}},g={
+[80]={{52.6,40.6}}},lvl=10,providers={{"n",12042}},qss={163485},g={
 crit(41940,{achID=13127,id=4})}}),
 q(53169,{coords={
-[76]={{92.7,42}}},lvl=10,providers={{"i",163476},{"n",13278}},g={
+[76]={{92.7,42}}},lvl=10,providers={{"n",13278}},qss={163476},g={
 crit(41949,{achID=13127,id=13})}}),
 q(53176,{coords={
-[249]={{58.8,46.2}}},lvl=10,providers={{"i",163481},{"n",46134}},g={
+[249]={{58.8,46.2}}},lvl=10,providers={{"n",46134}},qss={163481},g={
 crit(41944,{achID=13127,id=8})}}),
 q(53167,{coords={
-[115]={{48,76}}},lvl=10,providers={{"i",163474},{"n",26245}},g={
+[115]={{48,76}}},lvl=10,providers={{"n",26245}},qss={163474},g={
 crit(41951,{achID=13127,id=15})}}),
 q(53168,{coords={
-[210]={{41,73}}},lvl=10,providers={{"i",163475},{"n",2496}},g={
+[210]={{41,73}}},lvl=10,providers={{"n",2496}},qss={163475},g={
 crit(41950,{achID=13127,id=14})}}),
 q(53174,{coords={
-[650]={{42.6,10.8},{49.6,15.8}}},lvl=10,providers={{"i",163480},{"n",98067}},g={
+[650]={{42.6,10.8},{49.6,15.8}}},lvl=10,providers={{"n",98067}},qss={163480},g={
 crit(41945,{achID=13127,id=9})}}),
 q(53155,{coords={
-[371]={{55.2,19.2}}},lvl=10,providers={{"i",163466},{"n",64365}},g={
+[371]={{55.2,19.2}}},lvl=10,providers={{"n",64365}},qss={163466},g={
 crit(41956,{achID=13127,id=20})}}),
 q(53178,{coords={
-[418]={{29.6,39}}},lvl=10,providers={{"i",163483},{"n",58278}},g={
+[418]={{29.6,39}}},lvl=10,providers={{"n",58278}},qss={163483},g={
 crit(41942,{achID=13127,id=6})}}),
 q(53161,{coords={
-[634]={{60.2,51.2}}},lvl=10,providers={{"i",163471},{"n",106904}},g={
+[634]={{60.2,51.2}}},lvl=10,providers={{"n",106904}},qss={163471},g={
 crit(41954,{achID=13127,id=18})}}),
 q(53164,{coords={
-[388]={{39.4,62}}},lvl=10,providers={{"i",163473},{"n",61584}},g={
+[388]={{39.4,62}}},lvl=10,providers={{"n",61584}},qss={163473},g={
 crit(41952,{achID=13127,id=16})}}),
 q(53182,{coords={
-[80]={{36.2,41.8}}},lvl=10,providers={{"i",163486},{"n",11832}},g={
+[80]={{36.2,41.8}}},lvl=10,providers={{"n",11832}},qss={163486},g={
 crit(41939,{achID=13127,id=3})}}),
 q(53170,{coords={
-[36]={{47.8,68.8}}},lvl=10,providers={{"i",163477},{"n",66306}},g={
+[36]={{47.8,68.8}}},lvl=10,providers={{"n",66306}},qss={163477},g={
 crit(41948,{achID=13127,id=12})}}),
 q(53172,{coords={
-[10]={{50.2,59.2},{66.8,72.6}}},description="Pats along the road between The Crossroads and Ratchet.",lvl=10,providers={{"i",163479},{"n",3658}},g={
+[10]={{50.2,59.2},{66.8,72.6}}},description="Pats along the road between The Crossroads and Ratchet.",lvl=10,providers={{"n",3658}},qss={163479},g={
 crit(41946,{achID=13127,id=10})}}),
 q(53180,{coords={
-[115]={{26.2,50.6}}},lvl=10,providers={{"i",163484},{"n",26653}},g={
+[115]={{26.2,50.6}}},lvl=10,providers={{"n",26653}},qss={163484},g={
 crit(41941,{achID=13127,id=5})}}),
 q(53184,{coords={
-[71]={{52,30}}},lvl=10,providers={{"i",163488},{"n",132832}},g={
+[71]={{52,30}}},lvl=10,providers={{"n",132832}},qss={163488},g={
 crit(41937,{achID=13127,id=1})}}),
 q(53183,{coords={
-[81]={{40,76.6}}},lvl=10,providers={{"i",163487},{"n",132886}},g={
+[81]={{40,76.6}}},lvl=10,providers={{"n",132886}},qss={163487},g={
 crit(41938,{achID=13127,id=2})}}),
 q(53112,{coords={
 [81]={{42.2,44.2}}},lvl=10,qgs={130216},qis={163217},repeatable=1,g={
 i(174502,{f=55,factionID=2164,repeatable=1,spellID=315613})}}),
 q(53118,{coords={
-[1161]={{68,22}}},lvl=10,qgs={122370},qis={163616},r=2,repeatable=1,g={
+[1161]={{68,22}}},cost={{"i",163616,1}},lvl=10,qgs={122370},r=2,repeatable=1,g={
 i(174504,{f=55,factionID=2160,r=2,repeatable=1,spellID=315627})}}),
 q(53120,{coords={
-[896]={{20.6,45.6}}},lvl=10,qgs={136269},qis={163614},r=2,repeatable=1,g={
+[896]={{20.6,45.6}}},cost={{"i",163614,1}},lvl=10,qgs={136269},r=2,repeatable=1,g={
 i(174503,{f=55,factionID=2161,r=2,repeatable=1,spellID=315623})}}),
 q(53114,{coords={
-[863]={{75.6,56.6}}},lvl=10,qgs={120551},qis={163619},r=1,repeatable=1,g={
+[863]={{75.6,56.6}}},cost={{"i",163619,1}},lvl=10,qgs={120551},r=1,repeatable=1,g={
 i(174506,{f=55,factionID=2156,r=1,repeatable=1,spellID=315629})}}),
 q(53115,{coords={
-[1163]={{35.4,7.8}}},lvl=10,qgs={126334},qis={163620},r=1,repeatable=1,sourceQuests={51142},g={
+[1163]={{35.4,7.8}}},cost={{"i",163620,1}},lvl=10,qgs={126334},r=1,repeatable=1,sourceQuests={51142},g={
 i(174518,{f=55,factionID=2103,r=1,repeatable=1,spellID=315663})}}),
 q(53119,{coords={
-[942]={{59.2,68.6}}},lvl=10,qgs={130576},qis={163615},r=2,repeatable=1,g={
+[942]={{59.2,68.6}}},cost={{"i",163615,1}},lvl=10,qgs={130576},r=2,repeatable=1,g={
 i(174505,{f=55,factionID=2162,r=2,repeatable=1,spellID=315628})}}),
 q(53117,{coords={
-[1161]={{69.2,25}}},lvl=10,qgs={135446},qis={163617},r=2,repeatable=1,g={
+[1161]={{69.2,25}}},cost={{"i",163617,1}},lvl=10,qgs={135446},r=2,repeatable=1,g={
 i(174507,{f=55,factionID=2159,r=2,repeatable=1,spellID=315638})}}),
 q(53116,{coords={
-[862]={{58,62.6}}},lvl=10,qgs={135447},qis={163621},r=1,repeatable=1,g={
+[862]={{58,62.6}}},cost={{"i",163621,1}},lvl=10,qgs={135447},r=1,repeatable=1,g={
 i(174508,{f=55,factionID=2157,r=1,repeatable=1,spellID=315649})}}),
 q(53113,{coords={
-[864]={{56.7,49.8}}},lvl=10,qgs={135804},qis={163618},r=1,repeatable=1,g={
+[864]={{56.7,49.8}}},cost={{"i",163618,1}},lvl=10,qgs={135804},r=1,repeatable=1,g={
 i(174501,{f=55,factionID=2158,r=1,repeatable=1,spellID=315616})}}),
-q(54751,{lvl=10,qgs={134345,135793},qis={166501},repeatable=1,g={
+q(54751,{cost={{"i",166501,1}},lvl=10,qgs={134345,135793},repeatable=1,g={
 i(174519,{f=55,factionID=2163,repeatable=1,spellID=315682})}}),
 q(52559,{repeatable=1}),
 q(52558,{repeatable=1}),
@@ -20986,7 +20986,7 @@ q(54008,{coords={
 [895]={{54.6,64.6}}},lvl=50,qgs={146073},r=1,sourceQuests={54007}}),
 q(54009,{coords={
 [895]={{54.6,64.6}}},lvl=50,qgs={146073},r=1,sourceQuests={54007}}),
-q(54022,{lvl=50,maps={895},providers={{"i",164987}},r=1,sourceQuests={54007},g={
+q(54022,{lvl=50,maps={895},qss={164987},r=1,sourceQuests={54007},g={
 i(164987,{b=1}),
 o(309916,{coords={
 [895]={{59.1,61.8}}},g={
@@ -23099,19 +23099,19 @@ i(173310,{b=1,cost={{"i",174287,45}},f=55,spellID=311310}),
 i(173290,{b=1,cost={{"i",174287,45}},f=55,spellID=311216}),
 i(168938,{b=1,cost={{"i",174287,45}},f=55,spellID=299540})}),
 h(-45,{description="Mogs are looted at the end from a full clear with that specific mask on.",maps={1469,1470},g={
-q(58314,{description="Obtained from completing the Valley of Wisdom objective with one mask active.",lvl=50,providers={{"i",174083}},g={
+q(58314,{description="Obtained from completing the Valley of Wisdom objective with one mask active.",lvl=50,qss={174083},g={
 s(108582,174342,{f=2,loc=40}),
 crit(47038,{achID=14162,id=3})}}),
-q(58297,{description="Obtained from completing the Valley of Honor objective with one mask active.",lvl=50,providers={{"i",174082}},g={
+q(58297,{description="Obtained from completing the Valley of Honor objective with one mask active.",lvl=50,qss={174082},g={
 s(107790,173955,{f=2,loc=40}),
 crit(47039,{achID=14162,id=4})}}),
-q(58316,{description="Obtained from completing the Mage Quarter objective with one mask active.",lvl=50,providers={{"i",174081}},g={
+q(58316,{description="Obtained from completing the Mage Quarter objective with one mask active.",lvl=50,qss={174081},g={
 s(107789,173953,{f=2,loc=40}),
 crit(47037,{achID=14162,id=2})}}),
-q(58318,{description="Obtained from a full clear of either vision.",lvl=50,providers={{"i",174080}},g={
+q(58318,{description="Obtained from a full clear of either vision.",lvl=50,qss={174080},g={
 s(107305,172952,{f=2,loc=40}),
 crit(47040,{achID=14162,id=5})}}),
-q(58317,{description="Obtained from completing the Old Town objective with one mask active.",lvl=50,providers={{"i",174079}},g={
+q(58317,{description="Obtained from completing the Old Town objective with one mask active.",lvl=50,qss={174079},g={
 s(107552,173524,{f=2,loc=40}),
 crit(47036,{achID=14162,id=1})}}),
 q(57841,{isWeekly=1}),
@@ -24302,7 +24302,7 @@ crit(47204,{achID=14154,id=1})}}),
 q(57728,{isWeekly=1,isWorldQuest=1,poiIDs={6491},g={
 i(169888,{b=1}),
 h(-45,{
-q(56574,{crs={160810,160825,160826,160867,160868,160872,160874,160922,160930},description="Quest item drops from many rares during Mantid Assault.",lvl=50,providers={{"i",169888}}}),
+q(56574,{crs={160810,160825,160826,160867,160868,160872,160874,160922,160930},description="Quest item drops from many rares during Mantid Assault.",lvl=50,qss={169888}}),
 q(56575,{coords={
 [1530]={{13.9,77.2}}},lvl=50,qgs={155487},sourceQuests={56574}}),
 q(56647,{coords={
@@ -24479,8 +24479,8 @@ s(108660,174647,{b=1,cost=2400000,f=9,minReputation={2415,42000}}),
 cq(58907,{b=1,cost={{"c",1560,500}},itemID=174905,spellID=317064,g={
 follower(1187,{collectible=false,u=5})}})}})})})}}),
 ah(311218,{awp=80100,type="o",g={
-q(54141,{crs={144769,144770,144777,144778,144780,144816},description="To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball toy.",lvl=50,providers={{"i",165605}},r=2}),
-q(54172,{crs={144769,144770,144777,144778,144780,144816},description="To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball Toy",lvl=50,providers={{"i",165668}},r=1}),
+q(54141,{crs={144769,144770,144777,144778,144780,144816},description="To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball toy.",lvl=50,qss={165605},r=2}),
+q(54172,{crs={144769,144770,144777,144778,144780,144816},description="To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up. Complete the questline to receive the Twitching Eyeball Toy",lvl=50,qss={165668},r=1}),
 q(54144,{c={1,2,3,4,6,7,8,9,10,11,12,13},coords={
 [942]={{40.4,36.4}}},lvl=50,qgs={135793},r=2,sourceQuests={54141},g={
 o(307091,{coords={
@@ -25110,7 +25110,7 @@ q(65168,{awp=90105,coords={
 [1708]={{58.7,36.2}}},customCollect={"SL_COV_KYR"},lc={1,"questID",58797},lvl=60,qgs={183278},sourceQuests={62795},g={
 follower(1260,{awp=90002,customCollect={"SL_COV_KYR"}}),
 crit(52888,{achID=14835,id=3})}}),
-q(62237,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",183054}},sourceQuests={57904}}),
+q(62237,{customCollect={"SL_COV_KYR"},lvl=60,qss={183054},sourceQuests={57904}}),
 q(65147,{awp=90105,coords={
 [1708]={{59.5,37.4}}},customCollect={"SL_COV_KYR"},lc={1,"questID",59919},lvl=60,qgs={183192},sourceQuests={62795},g={
 follower(1258,{awp=90002,customCollect={"SL_COV_KYR"}}),
@@ -25279,7 +25279,7 @@ q(58790,{coords={
 q(58787,{coords={
 [1707]={{55.6,42}}},customCollect={"SL_COV_KYR"},description="Requires Renown 5.",lvl=60,qgs={160037}}),
 q(58832,{coords={
-[1565]={{40.4,54.7}}},crs={161878,163363},customCollect={"SL_COV_KYR"},description="Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",lvl=60,providers={{"i",175982}},sourceQuests={58775},g={
+[1565]={{40.4,54.7}}},crs={161878,163363},customCollect={"SL_COV_KYR"},description="Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",lvl=60,qss={175982},sourceQuests={58775},g={
 i(175982,{b=1,customCollect={"SL_COV_KYR"}})}}),
 q(61776,{coords={
 [1536]={{35.4,26.4}}},customCollect={"SL_COV_KYR"},lvl=60,qgs={168743},sourceQuests={61773,61774,61775}}),
@@ -25481,35 +25481,35 @@ ach(14852,{customCollect={"SL_COV_KYR"}}),
 ach(14887,{customCollect={"SL_COV_KYR"},description="You need to |cffffffff/wave|r at Athanos after he 'waves goodbye to you' while you are falling off the edge.\n\nAllowing 'Massive Charge' to hit, pick up, and drop you over the edge is very consistent for getting him to wave since he doesn't use another ability immediately afterwards."})}}),
 prof(2791,{crs={168430},customCollect={"SL_COV_KYR"},description="Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",g={
 h(-45,{customCollect={"SL_COV_KYR"},g={
-q(62976,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184578}},sourceQuests={62981}}),
-q(60945,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",181499}},sourceQuests={60946}}),
-q(61714,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184580}},sourceQuests={62971}}),
+q(62976,{customCollect={"SL_COV_KYR"},lvl=60,qss={184578},sourceQuests={62981}}),
+q(60945,{customCollect={"SL_COV_KYR"},lvl=60,qss={181499},sourceQuests={60946}}),
+q(61714,{customCollect={"SL_COV_KYR"},lvl=60,qss={184580},sourceQuests={62971}}),
 q(60497,{coords={
 [1707]={{28.2,42.4}}},customCollect={"SL_COV_KYR"},lvl=60,qgs={168427},sourceQuests={60496},g={
 i(180464,{b=1,customCollect={"SL_COV_KYR"}})}}),
-q(60974,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184478}},sourceQuests={60973}}),
-q(62998,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184481}},sourceQuests={62928}}),
-q(62995,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184475}},sourceQuests={60975}}),
-q(62483,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184577}},sourceQuests={62970}}),
-q(62996,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184477}},sourceQuests={62997}}),
-q(62986,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184450}}}),
-q(62477,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",183761}}}),
-q(61272,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",181155}}}),
-q(61304,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",181165}}}),
-q(63000,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",181238}}}),
-q(62997,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184349}}}),
-q(62928,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184348}}}),
-q(62981,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184414}}}),
-q(62971,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184411}}}),
-q(62486,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",183794}}}),
-q(61269,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",181147}}}),
-q(60973,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",180495}}}),
-q(60946,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",180472}}}),
-q(62984,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184445}}}),
-q(60947,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",180482}}}),
-q(60975,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",180494}}}),
-q(62970,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",184407}}}),
-q(61713,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",182162}}})}}),
+q(60974,{customCollect={"SL_COV_KYR"},lvl=60,qss={184478},sourceQuests={60973}}),
+q(62998,{customCollect={"SL_COV_KYR"},lvl=60,qss={184481},sourceQuests={62928}}),
+q(62995,{customCollect={"SL_COV_KYR"},lvl=60,qss={184475},sourceQuests={60975}}),
+q(62483,{customCollect={"SL_COV_KYR"},lvl=60,qss={184577},sourceQuests={62970}}),
+q(62996,{customCollect={"SL_COV_KYR"},lvl=60,qss={184477},sourceQuests={62997}}),
+q(62986,{customCollect={"SL_COV_KYR"},lvl=60,qss={184450}}),
+q(62477,{customCollect={"SL_COV_KYR"},lvl=60,qss={183761}}),
+q(61272,{customCollect={"SL_COV_KYR"},lvl=60,qss={181155}}),
+q(61304,{customCollect={"SL_COV_KYR"},lvl=60,qss={181165}}),
+q(63000,{customCollect={"SL_COV_KYR"},lvl=60,qss={181238}}),
+q(62997,{customCollect={"SL_COV_KYR"},lvl=60,qss={184349}}),
+q(62928,{customCollect={"SL_COV_KYR"},lvl=60,qss={184348}}),
+q(62981,{customCollect={"SL_COV_KYR"},lvl=60,qss={184414}}),
+q(62971,{customCollect={"SL_COV_KYR"},lvl=60,qss={184411}}),
+q(62486,{customCollect={"SL_COV_KYR"},lvl=60,qss={183794}}),
+q(61269,{customCollect={"SL_COV_KYR"},lvl=60,qss={181147}}),
+q(60973,{customCollect={"SL_COV_KYR"},lvl=60,qss={180495}}),
+q(60946,{customCollect={"SL_COV_KYR"},lvl=60,qss={180472}}),
+q(62984,{customCollect={"SL_COV_KYR"},lvl=60,qss={184445}}),
+q(60947,{customCollect={"SL_COV_KYR"},lvl=60,qss={180482}}),
+q(60975,{customCollect={"SL_COV_KYR"},lvl=60,qss={180494}}),
+q(62970,{customCollect={"SL_COV_KYR"},lvl=60,qss={184407}}),
+q(61713,{customCollect={"SL_COV_KYR"},lvl=60,qss={182162}})}}),
 flt(200,{customCollect={"SL_COV_KYR"},g={
 r(333530,{customCollect={"SL_COV_KYR"},requireSkill=2791,u=5}),
 r(333548,{customCollect={"SL_COV_KYR"},requireSkill=2791,u=5}),
@@ -25581,8 +25581,8 @@ q(60495,{coords={
 i(181782,{customCollect={"SL_COV_KYR"},spellID=337365})}}),
 q(61358,{coords={
 [1707]={{29.9,38.8}}},cost={{"i",181274,1},{"i",179378,1}},customCollect={"SL_COV_KYR"},lvl=60,qgs={168430},sourceQuests={60498}}),
-q(60907,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",182095}}}),
-q(62223,{customCollect={"SL_COV_KYR"},lvl=60,providers={{"i",182975}},sourceQuests={58182}}),
+q(60907,{customCollect={"SL_COV_KYR"},lvl=60,qss={182095}}),
+q(62223,{customCollect={"SL_COV_KYR"},lvl=60,qss={182975},sourceQuests={58182}}),
 q(61963,{coords={
 [1707]={{29.9,38.8}}},customCollect={"SL_COV_KYR"},lvl=60,qgs={168430},sourceQuests={61358}}),
 q(61362,{coords={
@@ -27296,9 +27296,9 @@ q(57634,{coords={
 [1536]={{55.5,68.4}}},customCollect={"SL_COV_NEC"},isWeekly=1,lvl=60,qgs={159199},sourceQuests={58411},g={
 i(182959,{customCollect={"SL_COV_NEC"},questID=57610,spellID=340340}),
 crit(49721,{achID=14684,id=30})}}),
-q(58379,{customCollect={"SL_COV_NEC"},lvl=60,providers={{"i",174070}},repeatable=1,sourceQuests={60048},g={
+q(58379,{customCollect={"SL_COV_NEC"},lvl=60,qss={174070},repeatable=1,sourceQuests={60048},g={
 i(183475,{b=1,customCollect={"SL_COV_NEC"}})}}),
-q(58376,{customCollect={"SL_COV_NEC"},isDaily=1,lvl=60,providers={{"i",174076}},repeatable=1,sourceQuests={60048},g={
+q(58376,{customCollect={"SL_COV_NEC"},isDaily=1,lvl=60,qss={174076},repeatable=1,sourceQuests={60048},g={
 i(183519,{b=1,customCollect={"SL_COV_NEC"}})}}),
 q(62276,{coords={
 [1536]={{54.8,68.7}}},customCollect={"SL_COV_NEC"},isWeekly=1,lvl=60,qgs={158298},sourceQuests={58413},g={
@@ -28776,79 +28776,79 @@ p(3023,{b=1,cost={{"i",163036,250}},customCollect={"SL_COV_NFA"},itemID=182674,n
 i(182181,{b=1,cost={{"c",1813,1500}},customCollect={"SL_COV_NFA"},lvl=50}),
 i(182166,{b=1,cost={{"c",1813,1500}},customCollect={"SL_COV_NFA"},lvl=50})}})}})}})}}),
 h(-172,{customCollect={"SL_COV_NFA"},g={
-q(65010,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187882}}}),
-q(62422,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182165}}}),
-q(65025,{customCollect={"SL_COV_NFA"},e=1056,lvl=60,providers={{"i",187905}}}),
-q(64984,{customCollect={"SL_COV_NFA"},lvl=60,pb=1,providers={{"i",187858}}}),
-q(64961,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187819}}}),
+q(65010,{customCollect={"SL_COV_NFA"},lvl=60,qss={187882}}),
+q(62422,{customCollect={"SL_COV_NFA"},lvl=60,qss={182165}}),
+q(65025,{customCollect={"SL_COV_NFA"},e=1056,lvl=60,qss={187905}}),
+q(64984,{customCollect={"SL_COV_NFA"},lvl=60,pb=1,qss={187858}}),
+q(64961,{customCollect={"SL_COV_NFA"},lvl=60,qss={187819}}),
 q(64982,{coords={
 [1702]={{58.4,70.5}}},cost={{"i",187811,1}},customCollect={"SL_COV_NFA"},description="After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen's Conservatory portal downstairs.\nFind |cFFFFFFFFMa'oh|r next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",icon=656577,qgs={182093},sourceQuests={64961}}),
-q(64941,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187813}}}),
+q(64941,{customCollect={"SL_COV_NFA"},lvl=60,qss={187813}}),
 q(64939,{customCollect={"SL_COV_NFA"},description="Talk to Choofa in the covenant sanctum.",icon=645526}),
-q(65024,{customCollect={"SL_COV_NFA"},e=643,lvl=60,providers={{"i",187904}}}),
-q(64651,{customCollect={"SL_COV_NFA"},description="Drops from rated PvP.",lvl=60,providers={{"i",182167}},pvp=1}),
+q(65024,{customCollect={"SL_COV_NFA"},e=643,lvl=60,qss={187904}}),
+q(64651,{customCollect={"SL_COV_NFA"},description="Drops from rated PvP.",lvl=60,pvp=1,qss={182167}}),
 q(64938,{crs={174608},customCollect={"SL_COV_NFA"},description="Emote |cFFFFFFFF/pet|r on the little corgi named Sparkle running around the night fae covenant sanctum.",icon=1339013}),
-q(62424,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182168}}}),
-q(64990,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187871}}}),
-q(63607,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",185051}}}),
-q(65021,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187901}}}),
-q(62428,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182172}}}),
-q(64994,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187877}}}),
-q(65008,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187880}}}),
-q(62426,{customCollect={"SL_COV_NFA"},description="Drops from rated PvP.",lvl=60,providers={{"i",182170}},pvp=1}),
-q(62421,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",181314}}}),
-q(63608,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",185052}}}),
-q(62427,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182171}}}),
-q(64650,{customCollect={"SL_COV_NFA"},description="Drops from Mythic Dungeons.",lvl=60,providers={{"i",182173}}}),
-q(65023,{customCollect={"SL_COV_NFA"},e=562,lvl=60,providers={{"i",187903}}}),
-q(63609,{customCollect={"SL_COV_NFA"},e=587,lvl=60,providers={{"i",185053}}}),
-q(62429,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182174}}}),
-q(62438,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182182}}}),
-q(63610,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",185054}}}),
-q(62430,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182175}}}),
-q(64959,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187818}}}),
-q(65026,{customCollect={"SL_COV_NFA"},e=1263,lvl=60,providers={{"i",187906}}}),
-q(62432,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182177}}}),
-q(64989,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187870}}}),
-q(64992,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187873}}}),
-q(65009,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187881}}}),
-q(62433,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182178}}}),
-q(64985,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187859}}}),
-q(62434,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182179}}}),
-q(64995,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187878}}}),
-q(63605,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",185049}}}),
-q(64993,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187876}}}),
-q(62431,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182176}}}),
-q(63604,{customCollect={"SL_COV_NFA"},description="Drops from PvP.",lvl=60,providers={{"i",185048}},pvp=1}),
-q(62436,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182185}}}),
-q(64988,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",187862}}}),
-q(62420,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",181313}}}),
-q(63606,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",185050}}}),
-q(65022,{customCollect={"SL_COV_NFA"},e=559,lvl=60,providers={{"i",187902}}}),
-q(62435,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182180}}}),
-q(62437,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182181}}}),
-q(65467,{customCollect={"SL_COV_NFA"},e=101,lvl=60,providers={{"i",189705}}}),
-q(62423,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182166}}}),
-q(62425,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182169}}}),
-q(62439,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",182183}}}),
-q(62440,{customCollect={"SL_COV_NFA"},description="Drops from random battlegrounds.",lvl=60,providers={{"i",182184}},pvp=1}),
-q(63603,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",185047}}}),
-q(65514,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189986}}}),
-q(65509,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189977}}}),
-q(65518,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189990}}}),
-q(65510,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189980}}}),
-q(65640,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",190337}}}),
-q(65504,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189971}}}),
-q(65507,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189975}}}),
-q(65513,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189983}}}),
-q(65517,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189989}}}),
-q(65515,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189987}}}),
-q(65506,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189973}}}),
-q(65505,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189972}}}),
-q(65516,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189988}}}),
-q(65512,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189982}}}),
-q(65519,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189991}}}),
-q(65508,{customCollect={"SL_COV_NFA"},lvl=60,providers={{"i",189976}}})}}),
+q(62424,{customCollect={"SL_COV_NFA"},lvl=60,qss={182168}}),
+q(64990,{customCollect={"SL_COV_NFA"},lvl=60,qss={187871}}),
+q(63607,{customCollect={"SL_COV_NFA"},lvl=60,qss={185051}}),
+q(65021,{customCollect={"SL_COV_NFA"},lvl=60,qss={187901}}),
+q(62428,{customCollect={"SL_COV_NFA"},lvl=60,qss={182172}}),
+q(64994,{customCollect={"SL_COV_NFA"},lvl=60,qss={187877}}),
+q(65008,{customCollect={"SL_COV_NFA"},lvl=60,qss={187880}}),
+q(62426,{customCollect={"SL_COV_NFA"},description="Drops from rated PvP.",lvl=60,pvp=1,qss={182170}}),
+q(62421,{customCollect={"SL_COV_NFA"},lvl=60,qss={181314}}),
+q(63608,{customCollect={"SL_COV_NFA"},lvl=60,qss={185052}}),
+q(62427,{customCollect={"SL_COV_NFA"},lvl=60,qss={182171}}),
+q(64650,{customCollect={"SL_COV_NFA"},description="Drops from Mythic Dungeons.",lvl=60,qss={182173}}),
+q(65023,{customCollect={"SL_COV_NFA"},e=562,lvl=60,qss={187903}}),
+q(63609,{customCollect={"SL_COV_NFA"},e=587,lvl=60,qss={185053}}),
+q(62429,{customCollect={"SL_COV_NFA"},lvl=60,qss={182174}}),
+q(62438,{customCollect={"SL_COV_NFA"},lvl=60,qss={182182}}),
+q(63610,{customCollect={"SL_COV_NFA"},lvl=60,qss={185054}}),
+q(62430,{customCollect={"SL_COV_NFA"},lvl=60,qss={182175}}),
+q(64959,{customCollect={"SL_COV_NFA"},lvl=60,qss={187818}}),
+q(65026,{customCollect={"SL_COV_NFA"},e=1263,lvl=60,qss={187906}}),
+q(62432,{customCollect={"SL_COV_NFA"},lvl=60,qss={182177}}),
+q(64989,{customCollect={"SL_COV_NFA"},lvl=60,qss={187870}}),
+q(64992,{customCollect={"SL_COV_NFA"},lvl=60,qss={187873}}),
+q(65009,{customCollect={"SL_COV_NFA"},lvl=60,qss={187881}}),
+q(62433,{customCollect={"SL_COV_NFA"},lvl=60,qss={182178}}),
+q(64985,{customCollect={"SL_COV_NFA"},lvl=60,qss={187859}}),
+q(62434,{customCollect={"SL_COV_NFA"},lvl=60,qss={182179}}),
+q(64995,{customCollect={"SL_COV_NFA"},lvl=60,qss={187878}}),
+q(63605,{customCollect={"SL_COV_NFA"},lvl=60,qss={185049}}),
+q(64993,{customCollect={"SL_COV_NFA"},lvl=60,qss={187876}}),
+q(62431,{customCollect={"SL_COV_NFA"},lvl=60,qss={182176}}),
+q(63604,{customCollect={"SL_COV_NFA"},description="Drops from PvP.",lvl=60,pvp=1,qss={185048}}),
+q(62436,{customCollect={"SL_COV_NFA"},lvl=60,qss={182185}}),
+q(64988,{customCollect={"SL_COV_NFA"},lvl=60,qss={187862}}),
+q(62420,{customCollect={"SL_COV_NFA"},lvl=60,qss={181313}}),
+q(63606,{customCollect={"SL_COV_NFA"},lvl=60,qss={185050}}),
+q(65022,{customCollect={"SL_COV_NFA"},e=559,lvl=60,qss={187902}}),
+q(62435,{customCollect={"SL_COV_NFA"},lvl=60,qss={182180}}),
+q(62437,{customCollect={"SL_COV_NFA"},lvl=60,qss={182181}}),
+q(65467,{customCollect={"SL_COV_NFA"},e=101,lvl=60,qss={189705}}),
+q(62423,{customCollect={"SL_COV_NFA"},lvl=60,qss={182166}}),
+q(62425,{customCollect={"SL_COV_NFA"},lvl=60,qss={182169}}),
+q(62439,{customCollect={"SL_COV_NFA"},lvl=60,qss={182183}}),
+q(62440,{customCollect={"SL_COV_NFA"},description="Drops from random battlegrounds.",lvl=60,pvp=1,qss={182184}}),
+q(63603,{customCollect={"SL_COV_NFA"},lvl=60,qss={185047}}),
+q(65514,{customCollect={"SL_COV_NFA"},lvl=60,qss={189986}}),
+q(65509,{customCollect={"SL_COV_NFA"},lvl=60,qss={189977}}),
+q(65518,{customCollect={"SL_COV_NFA"},lvl=60,qss={189990}}),
+q(65510,{customCollect={"SL_COV_NFA"},lvl=60,qss={189980}}),
+q(65640,{customCollect={"SL_COV_NFA"},lvl=60,qss={190337}}),
+q(65504,{customCollect={"SL_COV_NFA"},lvl=60,qss={189971}}),
+q(65507,{customCollect={"SL_COV_NFA"},lvl=60,qss={189975}}),
+q(65513,{customCollect={"SL_COV_NFA"},lvl=60,qss={189983}}),
+q(65517,{customCollect={"SL_COV_NFA"},lvl=60,qss={189989}}),
+q(65515,{customCollect={"SL_COV_NFA"},lvl=60,qss={189987}}),
+q(65506,{customCollect={"SL_COV_NFA"},lvl=60,qss={189973}}),
+q(65505,{customCollect={"SL_COV_NFA"},lvl=60,qss={189972}}),
+q(65516,{customCollect={"SL_COV_NFA"},lvl=60,qss={189988}}),
+q(65512,{customCollect={"SL_COV_NFA"},lvl=60,qss={189982}}),
+q(65519,{customCollect={"SL_COV_NFA"},lvl=60,qss={189991}}),
+q(65508,{customCollect={"SL_COV_NFA"},lvl=60,qss={189976}})}}),
 h(-47,{customCollect={"SL_COV_NFA"},g={
 i(183702,{b=1,customCollect={"SL_COV_NFA"},description="Only Obtainable from Niya Soulbind.",spellID=342058})}}),
 h(-58,{customCollect={"SL_COV_NFA"},g={
@@ -29157,7 +29157,7 @@ q(58392,{coords={
 q(60995,{coords={
 [1533]={{24.3,29.8}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={170999},sourceQuests={60993}}),
 q(60265,{coords={
-[1525]={{57.4,69.2}}},customCollect={"SL_COV_VEN"},lvl=60,providers={{"i",178557}},sourceQuests={57727},g={
+[1525]={{57.4,69.2}}},customCollect={"SL_COV_VEN"},lvl=60,qss={178557},sourceQuests={57727},g={
 i(178557,{customCollect={"SL_COV_VEN"},sourceQuests={57727}})}}),
 q(58384,{coords={
 [1525]={{42.2,47.5}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={161208},sourceQuests={58426}}),
@@ -29225,7 +29225,7 @@ q(58385,{coords={
 q(60994,{coords={
 [1533]={{24.3,29.8}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={171001},sourceQuests={60993}}),
 q(58389,{coords={
-[1525]={{48.3,54.4}}},crs={161448,161480},customCollect={"SL_COV_VEN"},lvl=60,providers={{"i",174212}},sourceQuests={58443},g={
+[1525]={{48.3,54.4}}},crs={161448,161480},customCollect={"SL_COV_VEN"},lvl=60,qss={174212},sourceQuests={58443},g={
 i(174211,{customCollect={"SL_COV_VEN"}}),
 i(174212,{b=1,customCollect={"SL_COV_VEN"}})}}),
 q(60935,{coords={
@@ -30133,7 +30133,7 @@ q(61880,{coords={
 [1525]={{70,56.2}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={163073},sourceQuests={61704}}),
 q(63697,{coords={
 [1533]={{55.8,86.4}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={174916}}),
-q(62626,{customCollect={"SL_COV_VEN"},lvl=60,providers={{"i",181765}},repeatable=1}),
+q(62626,{customCollect={"SL_COV_VEN"},lvl=60,qss={181765},repeatable=1}),
 q(63213,{coords={
 [1644]={{61.8,59.8}}},customCollect={"SL_COV_VEN"},isDaily=1,lvl=60,qgs={176253},g={
 i(184627,{b=1,customCollect={"SL_COV_VEN"},f=55,g={
@@ -30262,9 +30262,9 @@ q(62177,{cost={{"i",182970,1}},customCollect={"SL_COV_VEN"},description="Summon 
 crit(50021,{achID=14683,customCollect={"SL_COV_VEN"},id=5})}}),
 q(62174,{cost={{"i",182973,1}},customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qgs={172854},sourceQuests={61763},g={
 crit(50024,{achID=14683,customCollect={"SL_COV_VEN"},id=8})}}),
-q(62206,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,providers={{"i",183861}},sourceQuests={61763},g={
+q(62206,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qss={183861},sourceQuests={61763},g={
 crit(49652,{achID=14681,customCollect={"SL_COV_VEN"},id=1})}}),
-q(62207,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,providers={{"i",183863}},sourceQuests={61763},g={
+q(62207,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qss={183863},sourceQuests={61763},g={
 crit(49653,{achID=14681,customCollect={"SL_COV_VEN"},id=2})}}),
 q(64340,{cost={{"i",187133,1}},customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qgs={172854},sourceQuests={61763}}),
 q(62178,{cost={{"i",182702,1}},customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qgs={172854},repeatable=1,sourceQuests={61763},g={
@@ -30289,7 +30289,7 @@ q(62173,{cost={{"i",182967,1}},customCollect={"SL_COV_VEN"},description="Summon 
 crit(50026,{achID=14683,customCollect={"SL_COV_VEN"},id=10})}}),
 q(62175,{cost={{"i",182971,1}},customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qgs={172854},sourceQuests={61763},g={
 crit(50023,{achID=14683,customCollect={"SL_COV_VEN"},id=7})}}),
-q(62208,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,providers={{"i",183860}},sourceQuests={61763},g={
+q(62208,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qss={183860},sourceQuests={61763},g={
 crit(49654,{achID=14681,customCollect={"SL_COV_VEN"},id=3})}}),
 q(62221,{cost={{"i",183842,1}},customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qgs={172854},sourceQuests={61763},g={
 crit(50027,{achID=14681,customCollect={"SL_COV_VEN"},id=5})}}),
@@ -30306,20 +30306,20 @@ q(64509,{cost={{"i",187256,1}},customCollect={"SL_COV_VEN"},description="Summon 
 q(62176,{cost={{"i",182972,1}},customCollect={"SL_COV_VEN"},lvl=60,qgs={172854},sourceQuests={61763},g={
 crit(50022,{achID=14683,customCollect={"SL_COV_VEN"},id=6})}}),
 q(63765,{cost={{"i",185741,1}},customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qgs={172854},sourceQuests={61763}}),
-q(62205,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,providers={{"i",183862}},sourceQuests={61763},g={
+q(62205,{customCollect={"SL_COV_VEN"},description="Summon your |cFF006211Dredger Butler|r from the Pet Journal.",lvl=60,qss={183862},sourceQuests={61763},g={
 crit(49655,{achID=14681,customCollect={"SL_COV_VEN"},id=4})}})}}),
 h(-321,{customCollect={"SL_COV_VEN"},icon=3750311,g={
 q(63690,{coords={
 [1536]={{50.4,67.4}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={171933}}),
-q(62597,{customCollect={"SL_COV_VEN"},lvl=60,providers={{"i",183844}},g={
+q(62597,{customCollect={"SL_COV_VEN"},lvl=60,qss={183844},g={
 i(183844,{b=1,customCollect={"SL_COV_VEN"}})}}),
 q(61943,{coords={
 [1525]={{28.5,41}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={165399},g={
 cq(61505,{b=1,customCollect={"SL_COV_VEN"},itemID=181537,spellID=336987,g={
 crit(49619,{achID=14679,customCollect={"SL_COV_VEN"},id=16})}})}}),
-q(62598,{customCollect={"SL_COV_VEN"},lvl=60,providers={{"i",183845}},g={
+q(62598,{customCollect={"SL_COV_VEN"},lvl=60,qss={183845},g={
 i(183845,{b=1,customCollect={"SL_COV_VEN"}})}}),
-q(62601,{customCollect={"SL_COV_VEN"},lvl=60,maps={1525},providers={{"i",183848}}}),
+q(62601,{customCollect={"SL_COV_VEN"},lvl=60,maps={1525},qss={183848}}),
 q(63691,{coords={
 [1565]={{50.8,70.4}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={171319}}),
 q(62613,{coords={
@@ -30408,7 +30408,7 @@ q(63689,{coords={
 h(-323,{customCollect={"SL_COV_VEN"},icon=3750310,g={
 q(61945,{coords={
 [1525]={{27.9,43.1}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={164966}}),
-q(62599,{customCollect={"SL_COV_VEN"},lvl=60,providers={{"i",183846}}}),
+q(62599,{customCollect={"SL_COV_VEN"},lvl=60,qss={183846}}),
 q(62616,{coords={
 [1565]={{51.6,34}}},customCollect={"SL_COV_VEN"},lvl=60,qgs={165382},sourceQuests={62599},g={
 cq(59694,{b=1,customCollect={"SL_COV_VEN"},itemID=177244,spellID=323300,g={
@@ -31667,7 +31667,7 @@ rfl(171,{b=1,c={9},itemID=183372,spellID=342040}),
 rfl(193,{b=1,c={1},itemID=183390,spellID=342040})}})}}),
 h(-45,{
 ah(14754,{type="a",g={
-q(60267,{crs={175123},lvl=60,providers={{"i",178585}},sourceQuests={61099}}),
+q(60267,{crs={175123},lvl=60,qss={178585},sourceQuests={61099}}),
 q(62967,{coords={
 [1543]={{46.9,41.7}}},description="Only available if you delete the quest item",lvl=60,qgs={162804},sourceQuests={61099}}),
 q(60268,{coords={
@@ -32044,7 +32044,7 @@ fp(2837,{coords={
 [2024]={{77.6,30.8}}},crs={189710},minReputation={2507,7},sourceQuests={71161}})}}),
 h(-45,{minReputation={2507,7},g={
 i(198538,{b=1,description="Appears when reaching Renown 7.",minReputation={2507,7}}),
-q(66595,{lvl=10,minReputation={2507,7},providers={{"i",198538}}}),
+q(66595,{lvl=10,minReputation={2507,7},qss={198538}}),
 q(66597,{coords={
 [2022]={{47.2,90.3}}},lvl=10,minReputation={2507,7},qgs={189066},sourceQuests={66595}}),
 q(66598,{coords={
@@ -32430,7 +32430,7 @@ q(70507,{coords={
 [2023]={{40,67.5}}},lvl=36,minReputation={2507,13},qgs={191159},sourceQuests={66094},g={
 i(193070,{minReputation={2507,13}})}}),
 q(70766,{coords={
-[2023]={{44,66}}},lvl=20,minReputation={2507,13},providers={{"i",199790}},sourceQuests={70507},g={
+[2023]={{44,66}}},lvl=20,minReputation={2507,13},qss={199790},sourceQuests={70507},g={
 i(203598,{b=1,minReputation={2507,13}}),
 i(200295,{b=1,minReputation={2507,13}}),
 i(199792,{minReputation={2507,13},spellID=388124}),
@@ -33759,7 +33759,7 @@ q(72386,{coords={
 i(198866,{b=1,minReputation={2511,4}})}}),
 q(70940,{coords={
 [2024]={{12.4,49.3}}},lvl=10,minReputation={2511,5},qgs={186448}}),
-q(72291,{isWeekly=1,lvl=10,minReputation={2511,5},providers={{"i",201470}}}),
+q(72291,{isWeekly=1,lvl=10,minReputation={2511,5},qss={201470}}),
 q(72875,{coords={
 [2024]={{13.1,49.3}}},DisablePartySync=1,lc={1,"questID",72387},lvl=60,minReputation={2511,5},qgs={193006},rwp=110000,u=2,g={
 i(198866,{b=1,minReputation={2511,5}})}}),
@@ -33881,7 +33881,7 @@ q(72322,{coords={
 i(201714,{b=1,minReputation={2511,14},requireSkill=393,spellID=394222})}}),
 q(70978,{coords={
 [2024]={{12.4,49.3}}},lvl=10,minReputation={2511,15},qgs={186448}}),
-q(72292,{isWeekly=1,lvl=10,minReputation={2511,15},providers={{"i",201471}}}),
+q(72292,{isWeekly=1,lvl=10,minReputation={2511,15},qss={201471}}),
 q(72280,{coords={
 [2024]={{13.1,49.3}}},lvl=60,minReputation={2511,15},qgs={193006},rwp=110000,u=2,g={
 i(198867,{b=1,minReputation={2511,15}})}}),
@@ -34346,7 +34346,7 @@ title(516,{minReputation={2510,12}}),
 crit(64495,{achID=19463,awp=100206,id=3})}}),
 h(-39,{minReputation={2510,12},g={
 i(208826,{b=1,lvl=30,minReputation={2510,12}})}})}}),
-q(77341,{lvl=10,maps={2025},minReputation={2510,12},providers={{"i",208826}},sourceQuests={77344},g={
+q(77341,{lvl=10,maps={2025},minReputation={2510,12},qss={208826},sourceQuests={77344},g={
 s(189610,208199,{f=9,minReputation={2510,12}})}})}}),
 q(72688,{coords={
 [2112]={{58.1,35.2}}},lvl=10,minReputation={2510,12},qgs={193015},g={
@@ -35540,9 +35540,9 @@ q(79226,{coords={
 [2025]={{61.6,31.3}},
 [2262]={{55.3,51.4}}},isWeekly=1,lvl=70,qgs={206107,209134},g={
 cu(2819)}}),
-q(77760,{lvl=70,providers={{"i",208733}}}),
-q(77766,{lvl=70,providers={{"i",208737}}}),
-q(77763,{lvl=70,providers={{"i",208734}}})}),
+q(77760,{lvl=70,qss={208733}}),
+q(77766,{lvl=70,qss={208737}}),
+q(77763,{lvl=70,qss={208734}})}),
 h(-46,{
 n(208029,{coords={
 [2024]={{27.75,46.2}}},g={
@@ -36622,7 +36622,7 @@ q(74569,{coords={
 o(386649,{coords={
 [2023]={{73.3,70.1},{73.3,71},{73.8,72.6},{74.4,70.2},{74.4,72.3},{74.5,71.5}}},g={
 i(204699)}})}}),
-q(74775,{lvl=60,providers={{"i",204071}},g={
+q(74775,{lvl=60,qss={204071},g={
 i(201923,{b=2,f=55,factionID=2503,repeatable=1,spellID=395660})}}),
 q(75182,{coords={
 [2023]={{75.6,69.9}}},isWeekly=1,lvl=60,qgs={201860}}),
@@ -36636,7 +36636,7 @@ q(75375,{coords={
 [2024]={{58.6,34.3}}},isWeekly=1,lvl=60,qgs={203603}}),
 q(75373,{coords={
 [2024]={{57.7,34.4}}},isWeekly=1,lvl=60,qgs={203601}}),
-q(75239,{lvl=60,providers={{"i",204683}},g={
+q(75239,{lvl=60,qss={204683},g={
 i(201922,{b=2,f=55,factionID=2511,repeatable=1,spellID=395659})}}),
 q(75372,{coords={
 [2024]={{57.7,34.4}}},isWeekly=1,lvl=60,qgs={203601}}),
@@ -39814,7 +39814,7 @@ o(503465,{coords={
 [2372]={{14.7,41},{16.2,39.9},{16.6,42.2}}},g={
 i(229094)}}),
 i(229095)}}),
-q(84640,{lvl=80,providers={{"i",228963}},sourceQuests={84638}}),
+q(84640,{lvl=80,qss={228963},sourceQuests={84638}}),
 q(84641,{coords={
 [2372]={{20.4,39.2}}},lvl=80,qgs={234662},sourceQuests={84639,84640,84658}}),
 q(84643,{coords={
@@ -40019,21 +40019,21 @@ i(239080,{lvl=70}),
 i(239090,{lvl=70}),
 i(239095,{lvl=70}),
 i(238405,{lvl=70,spellID=1233223})}}),
-q(86153,{lvl=80,providers={{"i",232919}},g={
+q(86153,{lvl=80,qss={232919},g={
 crit(104259,{achID=41889,id=2})}}),
-q(86801,{lvl=80,providers={{"i",235414}},g={
+q(86801,{lvl=80,qss={235414},g={
 crit(104263,{achID=41889,id=8})}}),
-q(86152,{lvl=80,providers={{"i",232918}},g={
+q(86152,{lvl=80,qss={232918},g={
 crit(104261,{achID=41889,id=4})}}),
-q(86151,{lvl=80,providers={{"i",232917}},g={
+q(86151,{lvl=80,qss={232917},g={
 crit(104260,{achID=41889,id=3})}}),
-q(86155,{lvl=80,providers={{"i",232921}},g={
+q(86155,{lvl=80,qss={232921},g={
 crit(104666,{achID=41889,id=5})}}),
-q(86154,{lvl=80,providers={{"i",232920}},g={
+q(86154,{lvl=80,qss={232920},g={
 crit(104105,{achID=41889,id=1})}}),
-q(88652,{lvl=80,providers={{"i",237434}},g={
+q(88652,{lvl=80,qss={237434},g={
 crit(103503,{achID=41889,id=6})}}),
-q(88903,{lvl=80,providers={{"i",238260}},g={
+q(88903,{lvl=80,qss={238260},g={
 crit(104262,{achID=41889,id=7})}})}),
 h(-46,{
 n(239581,{coords={
@@ -40410,9 +40410,9 @@ ach(40251),
 ach(40250,{providers={{"n",224530}}}),
 ach(41214,{awp=110100,maps={2346}})}),
 h(-45,{
-q(84542,{lvl=80,providers={{"i",228958}},rwp=110100,u=2}),
-q(87284,{awp=110100,lvl=80,providers={{"i",235896}},rwp=110200,u=2}),
-q(91539,{awp=110200,lvl=80,providers={{"i",246772}}}),
+q(84542,{lvl=80,qss={228958},rwp=110100,u=2}),
+q(87284,{awp=110100,lvl=80,qss={235896},rwp=110200,u=2}),
+q(91539,{awp=110200,lvl=80,qss={246772}}),
 ah(2255,{type="m",g={
 q(82285,{coords={
 [2255]={{65.2,56.1}}},poiIDs={7840},repeatable=1,g={
@@ -40662,7 +40662,7 @@ q(89507,{coords={
 i(269702,{f=55,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}}),
 i(268488,{f=55,rwp=120001,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}},u=2}),
 i(263466,{b=1,f=55,lvl=80,rwp=120100,sym={{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","headerID",-88,-101}}})}}),
-q(94834,{lvl=83,providers={{"i",265746}}}),
+q(94834,{lvl=83,qss={265746}}),
 h(-14,{
 q(91430,{coords={
 [2579]={{44.1,31.5}}},repeatable=1})})}),

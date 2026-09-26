@@ -262,9 +262,9 @@ crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
 p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
 crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
 x(2,{awp=20003,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
-ach(665,{awp=30002,providers={{"i",25535}},u=3}),
+ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
 p(131,{itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
-crit(34633,{achID=665,awp=30002,id=3,u=3})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
+crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
 p(111,{description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=120007,u=2,g={
 mnt(346136,{b=1,itemID=248090,lvl=10,u=2})}}),
@@ -1727,7 +1727,7 @@ mnt(1284679,{itemID=269012,u=2}),
 mnt(75973,{b=1,itemID=54860,lvl=10,u=2})}}),
 i(269590,{u=2}),
 p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
-crit(34633,{achID=665,id=3,u=3})}}),
+crit(34633,{achID=665,id=3,rwp=30002,u=2})}}),
 p(3024,{b=1,customCollect={"SL_COV_VEN"},itemID=183107,npcID=173842,spellID=340710,u=2}),
 mnt(1267077,{itemID=262344,u=2}),
 mnt(1266982,{itemID=269659,u=2}),
@@ -1754,7 +1754,7 @@ i(209945,{u=2}),
 p(329,{b=1,itemID=71726,npcID=54438,spellID=101606,u=2,g={
 crit(34643,{achID=6185,id=3,u=2})}}),
 p(131,{itemID=25535,npcID=18381,spellID=32298,u=2,g={
-crit(34633,{achID=665,id=3,u=3})}}),
+crit(34633,{achID=665,id=3,rwp=30002,u=2})}}),
 toy(34499,{b=1,u=2}),
 p(242,{b=1,itemID=49343,npcID=36511,pb=1,spellID=68810,u=2,g={
 crit(23598,{achID=8397,id=23,pb=1})}}),

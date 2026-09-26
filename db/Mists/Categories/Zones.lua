@@ -606,7 +606,7 @@ qo(1,{coords={
 i(67414,{b=1,q=1,requireSkill=356,u=40}),
 crit(17758,{achID=5848,awp=40200,id=6,r=2,requireSkill=356,u=40})}}),
 q(6342,{coords={
-[89]={{36,53.4}}},providers={{"i",16262}},qgs={7316},races={4},sourceQuests={6341}}),
+[89]={{36,53.4}}},qgs={7316},qis={16262},races={4},sourceQuests={6341}}),
 q(3763,{coords={
 [89]={{67.4,15.7}}},isBreadcrumb=1,lvl=47,nextQuests={3764},qgs={6735},r=2,rwp=40003,u=2}),
 q(3790,{coords={
@@ -625,7 +625,7 @@ q(26383,{awp=40003,coords={
 q(26385,{awp=40003,coords={
 [89]={{48.2,14.6}}},isBreadcrumb=1,maps={57,62},nextQuests={13518},qgs={48736},races={22},u=40}),
 q(4510,{coords={
-[89]={{42,85.8}}},lvl=50,providers={{"i",11843}},qgs={7740},r=2,rwp=40003,sourceQuests={4508},u=2,g={
+[89]={{42,85.8}}},lvl=50,qgs={7740},qis={11843},r=2,rwp=40003,sourceQuests={4508},u=2,g={
 s(124516,11870,{b=1,f=1,q=2,u=2}),
 s(124517,11871,{b=1,f=5,loc=41,q=2,u=2}),
 s(124518,11872,{b=1,f=7,loc=47,q=2,u=2})}}),
@@ -643,7 +643,7 @@ q(2260,{c={4},coords={
 q(7671,{coords={
 [89]={{42.6,32.8}}},cost={{"i",12302,1}},description="If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",qgs={4730},r=2,repeatable=1,rwp=10400,sym={{"select","itemID",18766,18767,18902}},u=2}),
 q(952,{coords={
-[89]={{34.8,8.8}}},lvl=6,providers={{"i",5390}},qgs={3516},r=2,rwp=40003,sourceQuests={940},u=2}),
+[89]={{34.8,8.8}}},lvl=6,qgs={3516},qis={5390},r=2,rwp=40003,sourceQuests={940},u=2}),
 q(29321,{awp=40100,coords={
 [89]={{49,61}}},isDaily=1,lvl=10,qgs={4156},r=2,requireSkill=356,u=40,g={
 qo(1,{coords={
@@ -651,7 +651,7 @@ qo(1,{coords={
 i(67414,{b=1,q=1,requireSkill=356,u=40}),
 crit(17754,{achID=5848,awp=40200,id=2,r=2,requireSkill=356,u=40})}}),
 q(32664,{awp=50200,description="This quest is available to Night Elves upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=10,races={4},rwp=100105}),
-q(14085,{awp=30300,description="The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46876}},races={4},rwp=50200,u=2}),
+q(14085,{awp=30300,description="The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46876},races={4},rwp=50200,u=2}),
 q(4493,{coords={
 [89]={{42,85.8}}},lvl=50,maps={71},qgs={7740},r=2,rwp=40003,sourceQuests={162},u=2}),
 q(1711,{c={1},coords={
@@ -661,7 +661,7 @@ q(1582,{coords={
 [89]={{60.4,37}}},cost={{"i",4239,1},{"i",2310,5},{"i",2309,5}},lvl=8,qgs={6034},r=2,requireSkill=165,g={
 r(8322,{itemID=6710,learnedAt=90,q=2,requireSkill=165})}}),
 q(3781,{coords={
-[89]={{34.8,8.8}}},lvl=47,providers={{"i",11103}},qgs={3516},r=2,rwp=40003,sourceQuests={3764},u=2,g={
+[89]={{34.8,8.8}}},lvl=47,qgs={3516},qis={11103},r=2,rwp=40003,sourceQuests={3764},u=2,g={
 i(11022,{q=1,u=2})}}),
 q(3785,{coords={
 [89]={{35.2,8}}},cost={{"i",11040,10}},lvl=47,qgs={4217},r=2,rwp=40003,sourceQuests={3781},u=2,g={
@@ -691,7 +691,7 @@ qo(1,{providers={{"i",8155}},u=2}),
 s(123020,9600,{b=1,f=4,loc=46,q=1,u=2}),
 s(123021,9601,{b=1,f=5,loc=47,q=1,u=2})}}),
 q(1692,{c={1},coords={
-[89]={{57.4,34.8}}},lvl=10,providers={{"i",6812}},qgs={4088},r=2,rwp=40003,sourceQuests={1686},u=2}),
+[89]={{57.4,34.8}}},lvl=10,qgs={4088},qis={6812},r=2,rwp=40003,sourceQuests={1686},u=2}),
 q(29357,{awp=40100,coords={
 [89]={{50,36.6}}},isDaily=1,lvl=10,qgs={4210},r=2,requireSkill=185,u=40,g={
 qo(1,{coords={
@@ -715,7 +715,7 @@ q(1710,{c={1},coords={
 qo(1,{coords={
 [64]={{11.7,37.1}}},providers={{"i",6849},{"o",89635}},u=2})}}),
 q(942,{coords={
-[89]={{31.2,84.2}}},lvl=15,maps={56},providers={{"i",4654}},qgs={2912},r=2,rwp=40003,sourceQuests={741},u=2}),
+[89]={{31.2,84.2}}},lvl=15,maps={56},qgs={2912},qis={4654},r=2,rwp=40003,sourceQuests={741},u=2}),
 q(1039,{coords={
 [89]={{61.8,39.4}}},lvl=25,maps={10},qgs={8026},r=2,rwp=40003,sourceQuests={1038},u=2}),
 q(29313,{awp=40100,coords={
@@ -2808,7 +2808,7 @@ i(11862,{b=1,f=52,q=2,u=2}),
 s(124509,11863,{b=1,f=34,q=2,u=2}),
 s(124510,11864,{b=1,f=29,q=2,u=2})}}),
 q(2757,{coords={
-[85]={{80.4,23.2}}},learnedAt=210,lvl=40,providers={{"i",8663}},qgs={7793},r=1,requireSkill=164,rwp=40003,sourceQuests={2756},u=2}),
+[85]={{80.4,23.2}}},learnedAt=210,lvl=40,qgs={7793},qis={8663},r=1,requireSkill=164,rwp=40003,sourceQuests={2756},u=2}),
 q(4511,{coords={
 [85]={{56.4,46.6}}},lvl=50,qgs={7010},r=1,rwp=40003,sourceQuests={4509},u=2,g={
 s(124516,11870,{b=1,f=1,q=2,u=2}),
@@ -2833,7 +2833,7 @@ q(1501,{altQuests={1473},c={9},coords={
 qo(1,{coords={
 [1]={{51.6,9.7}}},providers={{"i",6535},{"o",58595}},u=2})}}),
 q(2458,{c={4},coords={
-[85]={{43,53.4}}},lvl=20,providers={{"i",8051}},qgs={3401},r=1,rwp=40003,sourceQuests={2460},u=2}),
+[85]={{43,53.4}}},lvl=20,qgs={3401},qis={8051},r=1,rwp=40003,sourceQuests={2460},u=2}),
 q(13842,{awp=40003,coords={
 [85]={{49.2,72.3}}},qgs={3144},r=1,sourceQuests={13841},g={
 s(204757,56708,{b=1,f=32,q=3,rwp=60002}),
@@ -2842,7 +2842,7 @@ q(2378,{altQuests={2380},c={4},coords={
 [998]={{83.2,69}}},isBreadcrumb=1,lvl=16,nextQuests={2379},qgs={6467},r=1,rwp=40003,u=2}),
 q(26804,{awp=40003,coords={
 [85]={{49.4,59.2}}},qgs={3310},races={9},sourceQuests={26803}}),
-q(27686,{awp=40003,description="After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",isDaily=1,providers={{"i",63276}},r=1,requireSkill=773}),
+q(27686,{awp=40003,description="After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",isDaily=1,qss={63276},r=1,requireSkill=773}),
 q(25162,{awp=40003,coords={
 [85]={{72.4,34.4}}},isDaily=1,qgs={50482},r=1,requireSkill=755,g={
 cu(361,{requireSkill=755})}}),
@@ -2868,7 +2868,7 @@ q(5727,{coords={
 qo(1,{coords={
 [85]={{49.5,50.6}}},crs={3216},providers={{"i",14544}},u=2})}}),
 q(2479,{c={4},coords={
-[85]={{43,53.4}}},lvl=20,providers={{"i",8087}},qgs={3401},r=1,rwp=40003,sourceQuests={2478},u=2}),
+[85]={{43,53.4}}},lvl=20,qgs={3401},qis={8087},r=1,rwp=40003,sourceQuests={2478},u=2}),
 q(32674,{awp=50200,description="This quest is automatically offered to Horde players upon reaching level 30.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",34090,"spellID",34091,"spellID",90265},r=1,rwp=100105}),
 q(2754,{coords={
 [85]={{76.2,37.4}}},cost={{"i",3483,2},{"i",3482,2},{"i",3851,2}},description="This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",learnedAt=140,lvl=32,qgs={7790},r=1,requireSkill=164,sourceQuests={2753},g={
@@ -2882,7 +2882,7 @@ qo(1,{crs={4054},providers={{"i",7270}},u=2})}}),
 q(32673,{awp=50200,description="This quest is available to Goblins upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},races={9},rwp=100105}),
 q(32669,{awp=50200,description="This quest is available to Orcs upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},races={2},rwp=100105}),
 q(32667,{awp=50200,description="This quest is available to Pandaren upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},races={26},rwp=100105}),
-q(14086,{awp=30300,description="The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46880}},races={2},rwp=40003,u=2}),
+q(14086,{awp=30300,description="The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46880},races={2},rwp=40003,u=2}),
 q(65601,{c={9},coords={
 [85]={{47.2,46.6}}},lvl=20,qgs={5909},r=1,rwp=40003,u=2}),
 q(26293,{awp=40003,coords={
@@ -4911,7 +4911,7 @@ q(9552,{c={7},coords={
 q(9553,{c={7},coords={
 [97]={{24.8,35.8}}},lvl=30,qgs={17431},races={11},rwp=40003,sourceQuests={9552},u=2}),
 q(9554,{c={7},coords={
-[97]={{22.4,32.6}}},lvl=30,providers={{"i",23843}},qgs={17435},races={11},rwp=40003,sourceQuests={9553},u=2,g={
+[97]={{22.4,32.6}}},lvl=30,qgs={17435},qis={23843},races={11},rwp=40003,sourceQuests={9553},u=2,g={
 i(5178,{b=1,description="You must keep this in your bags forever.",q=1,u=17})}}),
 q(9605,{coords={
 [103]={{56.8,49.8}}},cost={{"i",23903,1}},lvl=5,maps={97},qgs={16768},races={11},sourceQuests={9604},u=17}),
@@ -4919,7 +4919,7 @@ q(10366,{c={2},coords={
 [97]={{48.4,49.6}}},lvl=12,qgs={17483},r=2,rwp=40003,u=2}),
 q(32661,{awp=50200,coords={
 [103]={{81.4,52.6}}},description="This quest is automatically offered to Draenei upon reaching the specified level.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,maps={97},qgs={20914},races={11},rwp=100105,u=17}),
-q(14082,{awp=30300,description="The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46879}},races={11},rwp=50200,u=2}),
+q(14082,{awp=30300,description="The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46879},races={11},rwp=50200,u=2}),
 q(9598,{c={2},coords={
 [103]={{38.4,82.2}}},cost={{"i",23926,1}},lvl=12,qgs={17509},races={11},rwp=40003,sourceQuests={10366},u=2}),
 q(9600,{c={2},coords={
@@ -5049,7 +5049,7 @@ q(29362,{awp=40100,coords={
 cu(81,{requireSkill=185,u=40}),
 crit(17734,{achID=5843,awp=40200,id=3,r=1,requireSkill=185,u=40})}}),
 q(6361,{coords={
-[7]={{46,58.2}}},lvl=10,providers={{"i",16282}},qgs={3079},races={6}}),
+[7]={{46,58.2}}},lvl=10,qgs={3079},qis={16282},races={6}}),
 q(7822,{coords={
 [88]={{43.2,42.8}}},cost={{"i",4338,60}},lvl=40,qgs={14728},r=1,rwp=40003,u=2}),
 q(7823,{coords={
@@ -5087,7 +5087,7 @@ qo(1,{coords={
 q(1064,{coords={
 [88]={{69.85,30.91}}},lvl=13,qgs={4046},r=1,rwp=40003,sourceQuests={1063},u=2}),
 q(1136,{coords={
-[88]={{61.52,80.88}}},lvl=26,maps={1416},providers={{"i",5838}},qgs={3441},r=1,rwp=40003,sourceQuests={1131},u=2,g={
+[88]={{61.52,80.88}}},lvl=26,maps={1416},qgs={3441},qis={5838},r=1,rwp=40003,sourceQuests={1131},u=2,g={
 qo(1,{coords={
 [1416]={{37,68}}},crs={4504},providers={{"i",5810},{"i",5811},{"o",1770}},u=2}),
 s(121506,6720,{b=1,f=5,loc=40,q=2,u=2})}}),
@@ -5101,7 +5101,7 @@ r(5244,{description="This recipe is not soulbound and can be mailed to Horde alt
 q(1130,{coords={
 [10]={{44.8,59}}},isBreadcrumb=1,lvl=20,nextQuests={1131},qgs={3387},r=1,rwp=40003,u=2}),
 q(3782,{coords={
-[88]={{78.4,28.4}}},lvl=47,providers={{"i",11103}},qgs={5769},r=1,rwp=40003,sourceQuests={3761},u=2}),
+[88]={{78.4,28.4}}},lvl=47,qgs={5769},qis={11103},r=1,rwp=40003,sourceQuests={3761},u=2}),
 q(3786,{coords={
 [88]={{70.8,33.8}}},cost={{"i",11040,10}},lvl=47,qgs={9087},r=1,rwp=40003,sourceQuests={3782},u=2,g={
 i(11887,{b=1,q=1,u=2})}}),
@@ -5129,9 +5129,9 @@ q(14100,{awp=30300,c={7},coords={
 [88]={{23,20.8}}},cost={{"i",5177,1},{"i",5176,1},{"i",5175,1},{"i",5178,1}},lvl=30,qgs={3030,13417,35068},r=1,rwp=40003,u=2,g={
 i(46978,{b=1,u=2})}}),
 q(6364,{coords={
-[88]={{46.8,50}}},lvl=10,maps={7},providers={{"i",16283}},qgs={2995},races={6},sourceQuests={6363}}),
+[88]={{46.8,50}}},lvl=10,maps={7},qgs={2995},qis={16283},races={6},sourceQuests={6363}}),
 q(6362,{coords={
-[7]={{47.4,58.6}}},lvl=10,providers={{"i",16282}},qgs={40809},races={6},sourceQuests={6361}}),
+[7]={{47.4,58.6}}},lvl=10,qgs={40809},qis={16282},races={6},sourceQuests={6361}}),
 q(29354,{awp=40100,coords={
 [88]={{56.12,46.34}}},isDaily=1,lvl=10,qgs={3028},r=1,requireSkill=356,g={
 o(208867,{requireSkill=356,g={
@@ -5143,7 +5143,7 @@ q(1131,{coords={
 qo(1,{coords={
 [64]={{13.6,28}}},crs={4548},providers={{"i",5837}},u=2})}}),
 q(6363,{coords={
-[88]={{45.74,55.86}}},lvl=10,maps={7},providers={{"i",16283}},qgs={8359},races={6},sourceQuests={6362}}),
+[88]={{45.74,55.86}}},lvl=10,maps={7},qgs={8359},qis={16283},races={6},sourceQuests={6362}}),
 q(1086,{coords={
 [88]={{22.85,20.9}}},lvl=13,maps={65},qgs={3419},r=1,rwp=40003,sourceQuests={1067},u=2,g={
 qo(1,{coords={
@@ -5162,9 +5162,9 @@ q(1195,{coords={
 qo(1,{coords={
 [63]={{60,72}}},cost={{"i",5867,1}},providers={{"i",5868}},u=2})}}),
 q(1196,{coords={
-[88]={{54.97,51.32}}},lvl=20,maps={64},providers={{"i",5868}},qgs={4721},r=1,rwp=40003,sourceQuests={1195},u=2}),
+[88]={{54.97,51.32}}},lvl=20,maps={64},qgs={4721},qis={5868},r=1,rwp=40003,sourceQuests={1195},u=2}),
 q(1197,{coords={
-[64]={{46.13,51.69}}},cost={{"i",5869,1}},lvl=20,providers={{"i",5868}},qgs={4722},r=1,rwp=40003,sourceQuests={1196},u=2,g={
+[64]={{46.13,51.69}}},cost={{"i",5869,1}},lvl=20,qgs={4722},qis={5868},r=1,rwp=40003,sourceQuests={1196},u=2,g={
 qo(1,{coords={
 [64]={{42,35}}},providers={{"i",5869},{"o",20807}},u=2}),
 s(121523,6739,{b=1,f=32,q=2,u=2}),
@@ -5172,7 +5172,7 @@ s(121524,6740,{b=1,f=5,loc=45,q=2,u=2})}}),
 q(3761,{coords={
 [88]={{78.4,28.4}}},cost={{"i",11018,20}},lvl=47,maps={78},qgs={5769},r=1,rwp=40003,sourceQuests={936,3762,3784},u=2}),
 q(264,{coords={
-[88]={{28.19,25.31}}},lvl=12,maps={21},providers={{"i",6145}},qgs={5543},r=1}),
+[88]={{28.19,25.31}}},lvl=12,maps={21},qgs={5543},qis={6145},r=1}),
 q(26397,{altQuests={26398},awp=40003,coords={
 [88]={{60.3,51.7}}},qgs={36648},races={6},sourceQuests={24540}}),
 q(24540,{awp=40003,coords={
@@ -5547,7 +5547,7 @@ q(13766,{awp=40003,coords={
 [63]={{83.8,63.1}}},qgs={17310},r=2,sourceQuests={26446}}),
 q(13958,{awp=40003,coords={
 [63]={{38,43.8}}},qgs={34359},r=1,sourceQuests={13947}}),
-q(13868,{awp=40003,crs={3921,3922,3924,3925,3926},providers={{"i",46128}},r=2}),
+q(13868,{awp=40003,crs={3921,3922,3924,3925,3926},qss={46128},r=2}),
 q(13653,{awp=40003,coords={
 [63]={{72.9,80.4}}},qgs={33421},r=1,sourceQuests={13651},g={
 qo(1,{providers={{"n",33507}}}),
@@ -5596,12 +5596,12 @@ q(9534,{awp=20001,coords={
 qo(1,{providers={{"n",11697}},u=2}),
 qo(2,{providers={{"n",6115}},u=2}),
 qo(3,{providers={{"n",6073}},u=2})}}),
-q(26443,{awp=40003,providers={{"i",23777}},r=2,g={
+q(26443,{awp=40003,qss={23777},r=2,g={
 i(23780,{lvl=19,q=1})}}),
-q(9520,{awp=20001,lvl=27,providers={{"i",23777},{"i",23780}},r=2,rwp=40003,u=2}),
+q(9520,{awp=20001,lvl=27,qis={23780},qss={23777},r=2,rwp=40003,u=2}),
 q(26447,{awp=40003,coords={
-[63]={{81.5,69.1}}},providers={{"i",23797},{"i",23798}},r=1}),
-q(9535,{awp=20001,lvl=27,providers={{"i",23797},{"i",23798}},r=1,rwp=40003,u=2}),
+[63]={{81.5,69.1}}},qis={23798},qss={23797},r=1}),
+q(9535,{awp=20001,lvl=27,qis={23798},qss={23797},r=1,rwp=40003,u=2}),
 q(13797,{awp=40003,coords={
 [63]={{72.2,57.6}}},qgs={33760},r=1,sourceQuests={13751},g={
 qo(1,{providers={{"i",45576},{"o",194566}}})}}),
@@ -5691,14 +5691,14 @@ qo(3,{coords={
 [63]={{74.8,74.2}}},providers={{"n",3942}},u=2}),
 s(120766,5813,{b=1,f=26,q=2,u=2})}}),
 q(824,{coords={
-[63]={{74,60.6}}},lvl=23,providers={{"i",60643}},qgs={12737},r=1,sourceQuests={1918},g={
+[63]={{74,60.6}}},lvl=23,qgs={12737},qis={60643},r=1,sourceQuests={1918},g={
 s(128369,16659,{b=1,f=5,loc=45,q=2}),
 s(128370,16660,{b=1,f=8,q=2}),
 s(128371,16661,{b=1,f=3,q=2})}}),
 q(1056,{coords={
 [63]={{35.6,49.2}}},isBreadcrumb=1,lvl=18,maps={65},nextQuests={1057},qgs={3996},r=2,rwp=40003,u=2}),
 q(4581,{coords={
-[63]={{34.7,48.9}}},lvl=24,providers={{"i",12060}},qgs={3845},r=2,rwp=40003,u=2}),
+[63]={{34.7,48.9}}},lvl=24,qgs={3845},qis={12060},r=2,rwp=40003,u=2}),
 q(13890,{awp=40003,coords={
 [63]={{12.1,33.8}}},qgs={34122},r=1,g={
 s(204762,56715,{b=1,f=4,loc=43,q=2}),
@@ -5785,7 +5785,7 @@ i(44967,{q=1})}})}}),
 q(26474,{awp=40003,coords={
 [63]={{26.8,36.6}}},qgs={3847},r=2,sourceQuests={13642}}),
 q(1020,{coords={
-[63]={{26.4,38.6}}},lvl=20,providers={{"i",5460}},qgs={3847},r=2,rwp=40003,sourceQuests={1010},u=2}),
+[63]={{26.4,38.6}}},lvl=20,qgs={3847},qis={5460},r=2,rwp=40003,sourceQuests={1010},u=2}),
 q(13805,{awp=40003,coords={
 [63]={{72.1,57.6}}},qgs={33760},r=1,sourceQuests={13803},g={
 s(204774,56727,{b=1,f=5,loc=43,q=2}),
@@ -5812,13 +5812,13 @@ qo(1,{providers={{"n",34314}}})}}),
 q(991,{coords={
 [63]={{36.6,49.6}}},lvl=18,qgs={3691},r=2,rwp=40003,sourceQuests={10752},u=2}),
 q(1023,{coords={
-[63]={{20.2,42.2}}},lvl=18,providers={{"i",5505}},qgs={3891},r=2,rwp=40003,sourceQuests={991},u=2,g={
+[63]={{20.2,42.2}}},lvl=18,qgs={3891},qis={5505},r=2,rwp=40003,sourceQuests={991},u=2,g={
 qo(1,{crs={3737,3739,3740,3742},providers={{"i",5463}},u=2}),
 s(204679,56624,{awp=40003,b=1,f=4,loc=42,q=2}),
 s(204680,56625,{awp=40003,b=1,f=5,loc=41,q=2}),
 s(204681,56626,{awp=40003,b=1,f=6,loc=44,q=2})}}),
 q(1024,{coords={
-[63]={{36.6,49.6}}},lvl=18,providers={{"i",5463}},qgs={3691},r=2,rwp=40003,sourceQuests={1023},u=2}),
+[63]={{36.6,49.6}}},lvl=18,qgs={3691},qis={5463},r=2,rwp=40003,sourceQuests={1023},u=2}),
 q(1026,{coords={
 [63]={{53.5,46.3}}},lvl=18,qgs={3916},r=2,rwp=40003,sourceQuests={1024},u=2,g={
 qo(1,{coords={
@@ -5830,21 +5830,21 @@ s(204718,56664,{awp=40003,b=1,f=4,loc=43,q=2}),
 s(204719,56665,{awp=40003,b=1,f=5,loc=47,q=2}),
 s(204720,56666,{awp=40003,b=1,f=6,loc=43,q=2})}}),
 q(1028,{coords={
-[63]={{53.5,46.3}}},lvl=18,providers={{"i",5547}},qgs={3916},r=2,rwp=40003,sourceQuests={1027},u=2,g={
+[63]={{53.5,46.3}}},lvl=18,qgs={3916},qis={5547},r=2,rwp=40003,sourceQuests={1027},u=2,g={
 i(5462,{q=1,u=2})}}),
 q(1055,{coords={
 [63]={{56.38,49.24}}},lvl=18,providers={{"o",19024}},r=2,rwp=40003,sourceQuests={1028},u=2}),
 q(1029,{coords={
-[63]={{53.5,46.3}}},lvl=18,providers={{"i",5462}},qgs={3916},r=2,rwp=40003,sourceQuests={1055},u=2}),
+[63]={{53.5,46.3}}},lvl=18,qgs={3916},qis={5462},r=2,rwp=40003,sourceQuests={1055},u=2}),
 q(1030,{coords={
-[63]={{36.6,49.6}}},lvl=18,providers={{"i",5462}},qgs={3691},r=2,rwp=40003,sourceQuests={1029},u=2}),
+[63]={{36.6,49.6}}},lvl=18,qgs={3691},qis={5462},r=2,rwp=40003,sourceQuests={1029},u=2}),
 q(1045,{coords={
-[63]={{50.8,75}}},lvl=18,providers={{"i",5462}},qgs={3897},r=2,rwp=40003,sourceQuests={1030},u=2,g={
+[63]={{50.8,75}}},lvl=18,qgs={3897},qis={5462},r=2,rwp=40003,sourceQuests={1030},u=2,g={
 qo(1,{coords={
 [63]={{54.6,79.4}}},crs={3696},providers={{"i",5388}},u=2}),
 qo(2,{providers={{"n",3932}},u=2})}}),
 q(1046,{coords={
-[63]={{50.8,75}}},lvl=18,providers={{"i",5388}},qgs={3897},r=2,rwp=40003,sourceQuests={1045},u=2,g={
+[63]={{50.8,75}}},lvl=18,qgs={3897},qis={5388},r=2,rwp=40003,sourceQuests={1045},u=2,g={
 s(120768,5815,{b=1,f=24,q=2,u=2}),
 s(128720,17046,{b=1,f=21,q=2,u=2}),
 i(1116,{b=1,f=52,q=2,u=2}),
@@ -5874,7 +5874,7 @@ i(23776,{q=1})}}),
 q(26456,{awp=40003,coords={
 [63]={{59,58.8}}},qgs={3880},r=2,sourceQuests={13935}}),
 q(9521,{awp=20001,coords={
-[63]={{86,44.4}}},lvl=21,providers={{"i",23778}},qgs={17287},r=2,rwp=40003,u=2}),
+[63]={{86,44.4}}},lvl=21,qgs={17287},qis={23778},r=2,rwp=40003,u=2}),
 q(9428,{awp=20001,coords={
 [85]={{71,68}}},lvl=18,qgs={17098},races={10},rwp=40003,u=2}),
 q(13626,{awp=40003,coords={
@@ -5931,9 +5931,9 @@ q(13942,{awp=40003,coords={
 [63]={{37.9,43.8}}},qgs={34395},r=1,sourceQuests={13936},g={
 qo(1,{providers={{"i",46698},{"o",195077}}})}}),
 q(24,{coords={
-[63]={{61.4,50.2}}},crs={12677},lvl=20,providers={{"i",16304}},r=1}),
+[63]={{61.4,50.2}}},crs={12677},lvl=20,qss={16304},r=1}),
 q(2,{coords={
-[63]={{73.2,73.6}}},crs={12676},lvl=20,providers={{"i",16305}},r=1}),
+[63]={{73.2,73.6}}},crs={12676},lvl=20,qss={16305},r=1}),
 q(13873,{awp=40003,coords={
 [63]={{90.7,58.1}}},qgs={34233},r=1,sourceQuests={13871}}),
 q(25,{coords={
@@ -5972,7 +5972,7 @@ q(6382,{coords={
 q(6383,{coords={
 [63]={{73.6,61.4}}},lvl=20,qgs={12696},r=1,rwp=40003,sourceQuests={235,742,6382},u=2}),
 q(1918,{coords={
-[63]={{50.8,71.6}}},crs={12759},lvl=23,providers={{"i",16408}},r=1,sourceQuests={25}}),
+[63]={{50.8,71.6}}},crs={12759},lvl=23,qss={16408},r=1,sourceQuests={25}}),
 q(26468,{awp=40003,coords={
 [63]={{78.3,44.8}}},qgs={3920},r=2,sourceQuests={26467},g={
 qo(1,{crs={4619},providers={{"i",5461}}}),
@@ -6066,15 +6066,15 @@ qo(2,{coords={
 q(1167,{coords={
 [63]={{26.2,38.6}}},lvl=13,maps={62},qgs={3663},r=2,rwp=40003,sourceQuests={1140},u=2}),
 q(6543,{coords={
-[10]={{48.12,5.42}}},lvl=17,providers={{"i",16783}},qgs={8582},r=1,rwp=40003,sourceQuests={6541,6542},u=2,g={
+[10]={{48.12,5.42}}},lvl=17,qgs={8582},qis={16783},r=1,rwp=40003,sourceQuests={6541,6542},u=2,g={
 q(6546,{coords={
-[63]={{83.6,51.4}}},providers={{"i",16746}},qgs={12864},repeatable=1,u=2,g={
+[63]={{83.6,51.4}}},qgs={12864},qis={16746},repeatable=1,u=2,g={
 qo(3,{providers={{"i",16765}},questID=6543,u=2})}}),
 q(6545,{coords={
-[63]={{12.2,34.2}}},providers={{"i",16746}},qgs={12863},repeatable=1,u=2,g={
+[63]={{12.2,34.2}}},qgs={12863},qis={16746},repeatable=1,u=2,g={
 qo(2,{providers={{"i",16763}},questID=6543,u=2})}}),
 q(6547,{coords={
-[63]={{71.04,68.22}}},providers={{"i",16746}},qgs={12862},repeatable=1,u=2,g={
+[63]={{71.04,68.22}}},qgs={12862},qis={16746},repeatable=1,u=2,g={
 qo(1,{providers={{"i",16764}},questID=6543,u=2})}})}}),
 q(1008,{coords={
 [63]={{34.7,48.9}}},lvl=14,qgs={3845},r=2,rwp=40003,u=2,g={
@@ -6124,7 +6124,7 @@ q(13936,{awp=40003,coords={
 q(13974,{awp=40003,coords={
 [63]={{37.9,43.8}}},qgs={34395},r=1,sourceQuests={13947}}),
 q(23,{coords={
-[63]={{40.4,66.4}}},crs={12678},lvl=20,providers={{"i",16303}},r=1}),
+[63]={{40.4,66.4}}},crs={12678},lvl=20,qss={16303},r=1}),
 q(1037,{coords={
 [63]={{22.2,53}}},lvl=25,qgs={3880},r=2,rwp=40003,sourceQuests={1022},u=2}),
 q(26467,{awp=40003,coords={
@@ -6370,7 +6370,7 @@ q(14428,{awp=40003,coords={
 [76]={{42.6,23.7}}},qgs={36596},r=1,g={
 qo(1,{crs={36594},providers={{"i",49356}}})}}),
 q(3564,{coords={
-[998]={{54.6,75.6}}},lvl=45,providers={{"i",10679}},qgs={6522},r=1,rwp=40003,sourceQuests={3542},u=2}),
+[998]={{54.6,75.6}}},lvl=45,qgs={6522},qis={10679},r=1,rwp=40003,sourceQuests={3542},u=2}),
 q(14468,{awp=40003,coords={
 [76]={{29.4,66.8}}},qgs={36752},r=1,sourceQuests={14161,14194,14197}}),
 q(14155,{awp=40003,coords={
@@ -6409,7 +6409,7 @@ q(14377,{awp=40003,coords={
 [76]={{50.4,74.3}}},qgs={36077},r=1,sourceQuests={14370,14371},g={
 i(49211,{q=1})}}),
 q(3504,{coords={
-[85]={{75,34.2}}},lvl=44,providers={{"i",10643}},qgs={4485},r=1,rwp=40003,u=2}),
+[85]={{75,34.2}}},lvl=44,qgs={4485},qis={10643},r=1,rwp=40003,u=2}),
 q(3505,{coords={
 [76]={{22.2,51.4}}},lvl=44,qgs={8576},r=1,rwp=40003,sourceQuests={3504},u=2,g={
 qo(1,{providers={{"n",6199}},u=2}),
@@ -6419,7 +6419,7 @@ q(3506,{coords={
 qo(1,{coords={
 [76]={{59.6,31.4}}},crs={8578},providers={{"i",10597},{"o",150140}},u=2})}}),
 q(3507,{coords={
-[76]={{22.2,51.4}}},lvl=44,providers={{"i",10597}},qgs={8576},r=1,rwp=40003,sourceQuests={3506},u=2,g={
+[76]={{22.2,51.4}}},lvl=44,qgs={8576},qis={10597},r=1,rwp=40003,sourceQuests={3506},u=2,g={
 s(123917,10709,{b=1,f=1,q=2,u=2}),
 s(124101,11120,{b=1,f=23,q=2,u=2})}}),
 q(24430,{awp=40001,coords={
@@ -6440,13 +6440,13 @@ qo(1,{crs={8761},providers={{"i",20017}},u=2})}}),
 q(14146,{awp=40003,r=1,sourceQuests={14135},g={
 qo(1,{providers={{"n",35177}}})}}),
 q(3542,{coords={
-[76]={{22.4,51.4}}},lvl=45,providers={{"i",10540}},qgs={8587},r=1,rwp=40003,sourceQuests={3517},u=2}),
+[76]={{22.4,51.4}}},lvl=45,qgs={8587},qis={10540},r=1,rwp=40003,sourceQuests={3517},u=2}),
 q(3561,{coords={
-[76]={{22.4,51.4}}},lvl=45,providers={{"i",10541}},qgs={8587},r=1,rwp=40003,sourceQuests={3517},u=2}),
+[76]={{22.4,51.4}}},lvl=45,qgs={8587},qis={10541},r=1,rwp=40003,sourceQuests={3517},u=2}),
 q(3541,{coords={
-[76]={{22.4,51.4}}},lvl=45,providers={{"i",10539}},qgs={8587},r=1,rwp=40003,sourceQuests={3517},u=2}),
+[76]={{22.4,51.4}}},lvl=45,qgs={8587},qis={10539},r=1,rwp=40003,sourceQuests={3517},u=2}),
 q(3518,{coords={
-[76]={{22.4,51.4}}},lvl=45,providers={{"i",10538}},qgs={8587},r=1,rwp=40003,sourceQuests={3517},u=2}),
+[76]={{22.4,51.4}}},lvl=45,qgs={8587},qis={10538},r=1,rwp=40003,sourceQuests={3517},u=2}),
 q(14433,{awp=40003,coords={
 [76]={{42.4,23.6}}},qgs={8586},r=1,sourceQuests={14431},g={
 qo(1,{coords={
@@ -6490,7 +6490,7 @@ s(203073,53422,{b=1,f=4,loc=46,q=2}),
 s(203080,53430,{b=1,f=5,loc=45,q=2}),
 s(203087,53437,{b=1,f=6,loc=42,q=2})}}),
 q(9364,{c={8},coords={
-[76]={{29.6,40.6}}},lvl=60,providers={{"i",23250}},qgs={8379},rwp=40003,sourceQuests={9362},u=2,g={
+[76]={{29.6,40.6}}},lvl=60,qgs={8379},qis={23250},rwp=40003,sourceQuests={9362},u=2,g={
 qo(1,{crs={6190,6193,6194,6195,6196},providers={{"n",16479}},u=2}),
 r(28272,{c={8},itemID=4142,u=2})}}),
 q(14130,{awp=40003,coords={
@@ -6538,7 +6538,7 @@ qo(1,{providers={{"n",36868}}})}}),
 q(14267,{awp=40003,coords={
 [76]={{50.6,75.2}}},qgs={35657},r=1,sourceQuests={14258}}),
 q(3563,{coords={
-[85]={{55.6,34}}},lvl=45,providers={{"i",10680}},qgs={8659},r=1,rwp=40003,sourceQuests={3541},u=2}),
+[85]={{55.6,34}}},lvl=45,qgs={8659},qis={10680},r=1,rwp=40003,sourceQuests={3541},u=2}),
 q(3601,{coords={
 [76]={{53.4,21.8}}},lvl=47,qgs={8420},rwp=40003,u=2,g={
 qo(1,{providers={{"i",10717},{"o",153123}},u=2}),
@@ -6561,7 +6561,7 @@ s(203063,53412,{b=1,f=5,loc=44,q=2})}}),
 q(3141,{coords={
 [76]={{60.8,66.4}}},lvl=45,qgs={7783},rwp=40003,sourceQuests={2744},u=2}),
 q(3562,{coords={
-[88]={{70.2,30.8}}},lvl=45,providers={{"i",10678}},qgs={4046},r=1,rwp=40003,sourceQuests={3518},u=2}),
+[88]={{70.2,30.8}}},lvl=45,qgs={4046},qis={10678},r=1,rwp=40003,sourceQuests={3518},u=2}),
 q(8250,_.ResolveQuestData({aqd=
 {coords={
 [84]={{49.2,87.7}},
@@ -6659,7 +6659,7 @@ q(14162,{awp=40003,coords={
 [76]={{26.9,77}}},isBreadcrumb=1,nextQuests={14161},qgs={35086},r=1,sourceQuests={14155}}),
 q(14271,{awp=40003,coords={
 [76]={{58.9,71.8}}},providers={{"o",195642}},r=1,sourceQuests={14270}}),
-q(14127,{awp=40003,crs={35095},providers={{"i",47039}},r=1}),
+q(14127,{awp=40003,crs={35095},qss={47039},r=1}),
 q(14128,{awp=40003,coords={
 [76]={{26.8,76.9}}},qgs={8576},r=1,sourceQuests={14127}}),
 q(3421,{coords={
@@ -6743,7 +6743,7 @@ qo(1,{providers={{"n",35095}}}),
 s(203067,53416,{b=1,f=27,q=2}),
 s(203097,53448,{b=1,f=5,loc=47,q=2})}}),
 q(3621,{coords={
-[76]={{60.8,66.4}}},lvl=45,maps={224},providers={{"i",10738}},qgs={7783},rwp=40003,sourceQuests={3602},u=2}),
+[76]={{60.8,66.4}}},lvl=45,maps={224},qgs={7783},qis={10738},rwp=40003,sourceQuests={3602},u=2}),
 q(14270,{awp=40003,coords={
 [76]={{58.9,71.8}}},providers={{"o",195642}},r=1,sourceQuests={14267},g={
 o(201579,{coords={
@@ -6769,7 +6769,7 @@ qo(1,{coords={
 qo(2,{crs={6140},providers={{"i",10598}},u=2}),
 qo(3,{crs={6140},providers={{"i",10600}},u=2})}}),
 q(3511,{coords={
-[76]={{77.2,42.8}}},lvl=45,providers={{"i",10610}},qgs={6134},rwp=40003,sourceQuests={3510},u=2}),
+[76]={{77.2,42.8}}},lvl=45,qgs={6134},qis={10610},rwp=40003,sourceQuests={3510},u=2}),
 q(14190,{awp=40003,coords={
 [76]={{29.1,66.2}}},qgs={35091},r=1,sourceQuests={14165},g={
 qo(1,{crs={35312},providers={{"i",47819}}})}}),
@@ -6851,7 +6851,7 @@ q(14299,{awp=40001,coords={
 s(203071,53420,{b=1,f=4,loc=45,q=2}),
 s(203053,53401,{b=1,f=5,loc=47,q=2})}}),
 q(3565,{coords={
-[76]={{29.2,40.2}}},lvl=45,providers={{"i",10681}},qgs={8379},r=1,rwp=40003,sourceQuests={3561},u=2})}),
+[76]={{29.2,40.2}}},lvl=45,qgs={8379},qis={10681},r=1,rwp=40003,sourceQuests={3561},u=2})}),
 h(-46,{
 n(6648,{coords={
 [76]={{45.2,27.2}}}}),
@@ -6947,7 +6947,7 @@ crit(21537,{achID=6560,id=7,pb=1})}})}}),
 m(97,{awp=20003,icon=236715,lore="Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",maps={98,99},u=17,g={
 m(468,{icon=135756,lore="Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",u=17,g={
 h(-45,{u=17,g={
-q(9798,{cost={{"i",23003,1}},lvl=2,providers={{"i",24414}},r=2,u=17}),
+q(9798,{cost={{"i",23003,1}},lvl=2,qss={24414},r=2,u=17}),
 q(9311,{coords={
 [468]={{33.8,69.2}}},lvl=2,qgs={16546},r=2,sourceQuests={10303},u=17,g={
 qo(1,{coords={
@@ -6969,7 +6969,7 @@ q(9450,{c={7},coords={
 [468]={{33.6,23.8}}},lvl=4,qgs={17087},races={11},rwp=40003,sourceQuests={9449},u=2,g={
 qo(1,{providers={{"n",17179}},u=2})}}),
 q(9451,{c={7},coords={
-[468]={{33.6,23.8}}},lvl=4,providers={{"i",23671}},qgs={17087},races={11},rwp=40003,sourceQuests={9450},u=2}),
+[468]={{33.6,23.8}}},lvl=4,qgs={17087},qis={23671},races={11},rwp=40003,sourceQuests={9450},u=2}),
 q(26968,{awp=40003,c={8},coords={
 [468]={{51,43}}},lvl=3,qgs={16500},races={11},rwp=70003,u=17}),
 q(9294,{coords={
@@ -7135,7 +7135,7 @@ qo(1,{crs={17186,17187},providers={{"i",23789}},u=17})}}),
 q(9473,{coords={
 [97]={{48.4,51.4}}},lvl=5,qgs={17215},races={11},sourceQuests={9463},u=17,g={
 qo(1,{providers={{"i",23692},{"o",181644}},u=17})}}),
-q(9616,{lvl=5,providers={{"i",23910}},r=2,u=17,g={
+q(9616,{lvl=5,qss={23910},r=2,u=17,g={
 s(134519,24141,{b=1,f=6,loc=44,q=1,u=17}),
 s(134520,24142,{b=1,f=5,loc=44,q=1,u=17}),
 s(134522,24144,{f=4,loc=44,q=1,u=17})}}),
@@ -7204,7 +7204,7 @@ q(9602,{coords={
 [97]={{47,70.2}}},cost={{"i",23899,1}},lvl=5,qgs={17240},r=2,sourceQuests={9537},u=17}),
 q(9453,{coords={
 [97]={{61,54.2}}},cost={{"i",23672,1}},lvl=4,qgs={17101},r=2,sourceQuests={9452},u=17}),
-q(9564,{lvl=7,providers={{"i",23850}},r=2,sourceQuests={9562},u=17,g={
+q(9564,{lvl=7,qss={23850},r=2,sourceQuests={9562},u=17,g={
 s(134815,24440,{b=1,f=6,loc=46,q=2,u=17}),
 s(134814,24439,{b=1,f=5,loc=46,q=2,u=17}),
 s(134813,24438,{b=1,f=4,loc=42,q=2,u=17})}}),
@@ -7245,7 +7245,7 @@ qo(3,{providers={{"n",17195}},u=17})}}),
 q(9452,{coords={
 [97]={{61.1,54.2}}},lvl=4,qgs={17101},r=2,u=17,g={
 qo(1,{cost={{"i",23654,1}},providers={{"i",23614},{"o",181616}},u=17})}}),
-q(9514,{lvl=6,providers={{"i",23759}},r=2,sourceQuests={9506},u=17}),
+q(9514,{lvl=6,qss={23759},r=2,sourceQuests={9506},u=17}),
 q(9565,{coords={
 [97]={{46.6,20.6}}},lvl=9,qgs={17440},r=2,sourceQuests={9562},u=17}),
 q(9757,{c={3},coords={
@@ -7261,7 +7261,7 @@ s(134809,24434,{b=1,f=28,q=1,u=17}),
 s(134807,24432,{b=1,f=24,q=1,u=17})}}),
 q(9559,{coords={
 [97]={{49.4,51}}},lvl=8,qgs={17114},r=2,sourceQuests={9544},u=17}),
-q(9455,{lvl=5,providers={{"i",23678}},r=2,u=17}),
+q(9455,{lvl=5,qss={23678},r=2,u=17}),
 q(9582,{altQuests={1665,1678,1683},c={1},coords={
 [97]={{49.8,50.4}}},lvl=10,qgs={17480},r=2,u=17,g={
 qo(1,{coords={
@@ -7421,7 +7421,7 @@ s(136365,26018,{b=1,f=5,loc=42,q=2,u=17}),
 s(136378,26031,{b=1,f=6,loc=42,q=2,u=17}),
 s(136351,26004,{b=1,f=4,loc=42,q=2,u=17}),
 i(24072,{f=55,lvl=5,q=1,u=17})}}),
-q(9550,{lvl=13,providers={{"i",23837}},r=2,sourceQuests={9549},u=17}),
+q(9550,{lvl=13,qss={23837},r=2,sourceQuests={9549},u=17}),
 q(9634,{coords={
 [106]={{63,87.9}}},lvl=8,qgs={17586},r=2,sourceQuests={9625,28559},u=17,g={
 qo(1,{providers={{"n",17525}},u=17}),
@@ -7463,7 +7463,7 @@ q(9508,{c={7},coords={
 qo(1,{coords={
 [106]={{25.8,40.8}}},cost={{"i",23751,1}},crs={17359},providers={{"i",23997}},u=2})}}),
 q(9509,{c={7},coords={
-[106]={{32.4,16.2}}},lvl=20,providers={{"i",23752}},qgs={17275},races={11},rwp=40003,sourceQuests={9508},u=2,g={
+[106]={{32.4,16.2}}},lvl=20,qgs={17275},qis={23752},races={11},rwp=40003,sourceQuests={9508},u=2,g={
 r(5394,{u=2}),
 i(5177,{b=1,description="You must keep this in your bags forever.",q=1,u=2})}}),
 q(9629,{coords={
@@ -7496,7 +7496,7 @@ q(9741,{coords={
 [106]={{30.2,45.8}}},lvl=16,qgs={17926},r=2,u=17,g={
 qo(1,{coords={
 [106]={{19.3,62.2}}},providers={{"n",17887}},u=17})}}),
-q(9576,{lvl=9,providers={{"i",23870}},r=2,u=17}),
+q(9576,{lvl=9,qss={23870},r=2,u=17}),
 q(9647,{coords={
 [106]={{55.8,57}}},lvl=14,qgs={17642},r=2,sourceQuests={9643},u=17,g={
 qo(1,{providers={{"n",17350}},u=17}),
@@ -7507,7 +7507,7 @@ q(10065,{coords={
 [106]={{30.2,45.9}}},lvl=16,qgs={17927},r=2,u=17,g={
 qo(1,{providers={{"n",17527}},u=17})}}),
 q(9557,{coords={
-[106]={{61.1,41.8}}},lvl=13,providers={{"i",23851},{"o",181756}},r=2,sourceQuests={9550},u=17}),
+[106]={{61.1,41.8}}},lvl=13,providers={{"o",181756}},qis={23851},r=2,sourceQuests={9550},u=17}),
 q(9666,{coords={
 [106]={{62.9,87.5}}},lvl=10,qgs={17649},r=2,sourceQuests={9663},u=17,g={
 qo(1,{coords={
@@ -7546,7 +7546,7 @@ s(136358,26011,{b=1,f=4,loc=47,q=2,u=17}),
 s(136384,26037,{b=1,f=6,loc=47,q=2,u=17}),
 s(136372,26025,{b=1,f=5,loc=47,q=2,u=17})}}),
 q(9706,{coords={
-[106]={{37.5,61.2}}},lvl=15,providers={{"i",24237},{"o",182032}},r=2,sourceQuests={9779},u=17}),
+[106]={{37.5,61.2}}},lvl=15,providers={{"o",182032}},qis={24237},r=2,sourceQuests={9779},u=17}),
 q(28559,{awp=40003,coords={
 [103]={{55.5,47.9}}},isBreadcrumb=1,lvl={9,18},nextQuests={9634},providers={{"o",207322}},r=2,u=17}),
 q(9700,{coords={
@@ -7646,7 +7646,7 @@ s(134719,24342,{b=1,f=27,q=2,u=17}),
 s(134720,24343,{b=1,f=23,q=2,u=17})}}),
 q(9578,{coords={
 [106]={{53.2,57.7}}},lvl=15,qgs={17434},r=2,u=17}),
-q(9594,{lvl=10,providers={{"i",23900}},r=2,u=17,g={
+q(9594,{lvl=10,qss={23900},r=2,u=17,g={
 qo(1,{providers={{"n",17337}},u=17}),
 qo(2,{providers={{"n",17339}},u=17})}}),
 q(10064,{coords={
@@ -7654,7 +7654,7 @@ q(10064,{coords={
 q(9580,{coords={
 [106]={{55.8,56.9}}},lvl=14,qgs={17642},r=2,u=17,g={
 qo(1,{crs={17348},providers={{"i",24026}},u=17})}}),
-q(9672,{altQuests={9751},description="The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",lvl=15,maps={97},providers={{"i",24132}},r=2,sourceQuests={9671},u=17}),
+q(9672,{altQuests={9751},description="The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",lvl=15,maps={97},qss={24132},r=2,sourceQuests={9671},u=17}),
 q(9751,{altQuests={9672},coords={
 [97]={{47,70.2}}},description="This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",lvl=15,qgs={17240},r=2,sourceQuests={9671},u=17}),
 q(9674,{coords={
@@ -7895,7 +7895,7 @@ q(986,{coords={
 qo(1,{crs={2071,2237},providers={{"i",5386}},u=2}),
 s(200888,5387,{b=1,f=3,q=2,u=2})}}),
 q(993,{coords={
-[62]={{39.4,43.5}}},lvl=10,providers={{"i",5387}},qgs={3693},r=2,rwp=40003,sourceQuests={986},u=2}),
+[62]={{39.4,43.5}}},lvl=10,qgs={3693},qis={5387},r=2,rwp=40003,sourceQuests={986},u=2}),
 q(13563,{awp=40003,coords={
 [62]={{50.8,17.9}}},qgs={32959},r=2,sourceQuests={13529,13554},g={
 qo(1,{providers={{"n",33181}}}),
@@ -7912,7 +7912,7 @@ q(13537,{awp=40003,coords={
 [62]={{52.3,18}}},cost={{"i",12238,4}},qgs={33175},r=2,requireSkill=356,sourceQuests={13518,13522},g={
 s(201962,46337,{b=1,f=57,q=1,requireSkill=356})}}),
 q(13831,{awp=40003,coords={
-[62]={{57.4,33.8}}},providers={{"i",45898},{"o",194714}},r=2,sourceQuests={13528}}),
+[62]={{57.4,33.8}}},providers={{"o",194714}},qis={45898},r=2,sourceQuests={13528}}),
 q(13542,{awp=40003,coords={
 [62]={{42.5,45.1}}},qgs={3694},r=2,g={
 qo(1,{crs={32985},providers={{"i",44868}}}),
@@ -7954,25 +7954,25 @@ s(121803,7229,{b=1,f=6,loc=42,q=2,u=2}),
 s(120633,5617,{b=1,f=5,loc=46,q=2,u=2}),
 s(120621,5604,{b=1,f=27,q=2,u=2})}}),
 q(4723,{coords={
-[62]={{42,31.6}}},lvl=11,providers={{"i",12242},{"o",175233}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{42,31.6}}},lvl=11,providers={{"o",175233}},qis={12242},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4728,{coords={
-[62]={{36,70.8}}},lvl=12,providers={{"i",12242},{"o",175226}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{36,70.8}}},lvl=12,providers={{"o",175226}},qis={12242},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4730,{coords={
-[62]={{32.7,80.9}}},lvl=12,providers={{"i",12242},{"o",175227}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{32.7,80.9}}},lvl=12,providers={{"o",175227}},qis={12242},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4733,{coords={
-[62]={{31.2,87.4}}},lvl=13,providers={{"i",12242},{"o",175230}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{31.2,87.4}}},lvl=13,providers={{"o",175230}},qis={12242},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4722,{coords={
-[62]={{37.2,62.2}}},lvl=11,providers={{"i",12289},{"o",176190}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{37.2,62.2}}},lvl=11,providers={{"o",176190}},qis={12289},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4725,{coords={
-[62]={{44.2,20.7}}},lvl=12,providers={{"i",12292},{"o",176197}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{44.2,20.7}}},lvl=12,providers={{"o",176197}},qis={12292},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4727,{coords={
-[62]={{53.1,18.1}}},lvl=12,providers={{"i",12289},{"o",176196}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{53.1,18.1}}},lvl=12,providers={{"o",176196}},qis={12289},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4731,{coords={
-[62]={{31.7,83.7}}},lvl=13,providers={{"i",12292},{"o",176198}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{31.7,83.7}}},lvl=13,providers={{"o",176198}},qis={12292},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(4732,{coords={
-[62]={{31.2,85.6}}},lvl=13,providers={{"i",12289},{"o",176191}},r=2,rwp=40003,sourceQuests={4681},u=2}),
+[62]={{31.2,85.6}}},lvl=13,providers={{"o",176191}},qis={12289},r=2,rwp=40003,sourceQuests={4681},u=2}),
 q(13557,{awp=40003,coords={
-[62]={{57.6,33.6}}},crs={33020,33022},providers={{"i",44927}},r=2,g={
+[62]={{57.6,33.6}}},crs={33020,33022},qss={44927},r=2,g={
 qo(1,{crs={33023,33024},providers={{"i",44925},{"o",194124},{"o",194133}}})}}),
 q(1002,{coords={
 [62]={{42,28.7}}},lvl=7,providers={{"o",17183}},r=2,rwp=40003,sourceQuests={1001},u=2,g={
@@ -8049,7 +8049,7 @@ qo(1,{providers={{"n",32859}}}),
 qo(2,{providers={{"n",34248}}}),
 s(202750,52659,{b=1,f=3,q=2}),
 s(202699,52597,{b=1,f=5,loc=42,q=2})}}),
-q(13591,{awp=40003,crs={32862},providers={{"i",46318}},r=2,sourceQuests={13515},g={
+q(13591,{awp=40003,crs={32862},qss={46318},r=2,sourceQuests={13515},g={
 s(203687,55128,{b=1,f=5,loc=47,q=3}),
 s(203688,55129,{b=1,f=6,loc=45,q=3}),
 s(202755,52675,{b=1,f=3,q=3})}}),
@@ -8185,7 +8185,7 @@ s(203686,55127,{b=1,f=5,loc=44,q=2}),
 s(202752,52662,{b=1,f=3,q=2})}}),
 q(13579,{awp=40003,coords={
 [62]={{43.7,53.4}}},qgs={33091},r=2}),
-q(13506,{awp=40003,crs={32863},providers={{"i",44979}},r=2,sourceQuests={13589}}),
+q(13506,{awp=40003,crs={32863},qss={44979},r=2,sourceQuests={13589}}),
 q(13570,{awp=40003,coords={
 [62]={{50.1,19.5}}},qgs={32959},r=2,sourceQuests={13591},g={
 s(202739,52645,{b=1,f=20,q=2}),
@@ -8196,7 +8196,7 @@ q(13505,{awp=40003,coords={
 [62]={{58.9,19.5}}},qgs={32966},r=2,sourceQuests={13589},g={
 qo(1,{providers={{"i",44830},{"o",194088},{"o",194089},{"o",194090}}})}}),
 q(950,{coords={
-[62]={{38.7,86.1}}},lvl=12,providers={{"i",5272},{"o",12666}},r=2,rwp=40003,sourceQuests={949},u=2}),
+[62]={{38.7,86.1}}},lvl=12,providers={{"o",12666}},qis={5272},r=2,rwp=40003,sourceQuests={949},u=2}),
 q(13566,{awp=40003,coords={
 [62]={{43,39}}},qgs={33048},r=2,sourceQuests={13564},g={
 qo(1,{coords={
@@ -8263,7 +8263,7 @@ q(729,{coords={
 q(731,{coords={
 [62]={{35.7,83.7}}},lvl=15,qgs={2917},r=2,rwp=40003,sourceQuests={729},u=2}),
 q(741,{coords={
-[62]={{37.4,41.8}}},lvl=15,maps={89},providers={{"i",4654}},qgs={2913},r=2,rwp=40003,sourceQuests={731},u=2,g={
+[62]={{37.4,41.8}}},lvl=15,maps={89},qgs={2913},qis={4654},r=2,rwp=40003,sourceQuests={731},u=2,g={
 s(120644,5629,{b=1,f=5,loc=44,q=2,u=2}),
 s(120645,5630,{b=1,f=5,loc=44,q=2,u=2}),
 s(124565,11936,{b=1,f=4,loc=45,q=2,u=2})}}),
@@ -8352,7 +8352,7 @@ s(127259,15335,{b=1,f=25,q=2,u=2}),
 s(127320,15396,{b=1,f=20,q=2,u=2}),
 s(127321,15397,{b=1,f=28,q=2,u=2})}}),
 q(13590,{awp=40003,coords={
-[62]={{58.9,19.4}}},providers={{"i",44985}},qgs={32963},r=2,sourceQuests={13512,13513}}),
+[62]={{58.9,19.4}}},qgs={32963},qis={44985},r=2,sourceQuests={13512,13513}}),
 q(13575,{awp=40003,coords={
 [62]={{43.7,53.4}}},qgs={33091},r=2}),
 q(13605,{awp=40003,coords={
@@ -8382,7 +8382,7 @@ s(202722,52623,{b=1,f=6,loc=47,q=2}),
 s(202707,52607,{b=1,f=5,loc=45,q=2}),
 s(202693,52591,{b=1,f=4,loc=44,q=2})}}),
 q(944,{coords={
-[62]={{43.5,76.3}}},lvl=12,providers={{"i",5251},{"o",10076}},qgs={3616},r=2,rwp=40003,sourceQuests={948},u=2}),
+[62]={{43.5,76.3}}},lvl=12,providers={{"o",10076}},qgs={3616},qis={5251},r=2,rwp=40003,sourceQuests={948},u=2}),
 q(13900,{awp=40003,coords={
 [62]={{32.3,85.4}}},qgs={34423},r=2,sourceQuests={13899},g={
 qo(1,{coords={
@@ -8391,7 +8391,7 @@ s(202691,52588,{b=1,f=4,loc=47,q=2}),
 s(202710,52610,{b=1,f=5,loc=45,q=2}),
 s(202728,52630,{b=1,f=6,loc=43,q=2}),
 i(55135,{b=1,f=52,q=2})}}),
-q(968,{lvl=10,maps={87},providers={{"i",5352}},r=2,rwp=40003,u=2}),
+q(968,{lvl=10,maps={87},qss={5352},r=2,rwp=40003,u=2}),
 q(4811,{coords={
 [62]={{37.7,43.4}}},lvl=12,qgs={2930},r=2,rwp=40003,u=2}),
 q(13569,{awp=40003,coords={
@@ -8439,7 +8439,7 @@ q(966,{coords={
 [62]={{55,24.9}}},lvl=13,qgs={3661},r=2,rwp=40003,sourceQuests={965},u=2,g={
 qo(1,{crs={2336},providers={{"i",5348}},u=2})}}),
 q(967,{coords={
-[62]={{55,24.9}}},lvl=13,maps={63},providers={{"i",5354}},qgs={3661},r=2,rwp=40003,sourceQuests={966},u=2}),
+[62]={{55,24.9}}},lvl=13,maps={63},qgs={3661},qis={5354},r=2,rwp=40003,sourceQuests={966},u=2}),
 q(1143,{coords={
 [62]={{55,24.9}}},lvl=13,qgs={3661},r=2,rwp=40003,sourceQuests={1167},u=2,g={
 qo(1,{coords={
@@ -8449,7 +8449,7 @@ q(981,{coords={
 s(123374,10043,{b=1,f=4,loc=46,q=2,u=2}),
 s(120630,5614,{b=1,f=26,q=2,u=2})}}),
 q(949,{coords={
-[62]={{38.6,86.2}}},lvl=12,providers={{"i",5251},{"o",10076}},r=2,rwp=40003,sourceQuests={944},u=2}),
+[62]={{38.6,86.2}}},lvl=12,providers={{"o",10076}},qss={5251},r=2,rwp=40003,sourceQuests={944},u=2}),
 q(13519,{awp=40003,coords={
 [62]={{50.3,20.3}}},qgs={32912},r=2,sourceQuests={13591},g={
 qo(1,{providers={{"n",32899}}}),
@@ -8478,7 +8478,7 @@ qo(3,{coords={
 q(4761,{coords={
 [62]={{39.4,43.5}}},lvl=11,qgs={3693},r=2,rwp=40003,sourceQuests={984},u=2}),
 q(13510,{awp=40003,coords={
-[62]={{64.4,5.4}}},description="In order to obtain this quest, loot a |cffffffffShatterspear Torturer's Cage Key|r dropped by |cffe50d12Rit'ko|r.",providers={{"i",45040},{"n",32964},{"o",194101}},r=2,g={
+[62]={{64.4,5.4}}},description="In order to obtain this quest, loot a |cffffffffShatterspear Torturer's Cage Key|r dropped by |cffe50d12Rit'ko|r.",providers={{"n",32964},{"o",194101}},qss={45040},r=2,g={
 s(202734,52637,{b=1,f=25,q=2}),
 s(202712,52613,{b=1,f=5,loc=44,q=2})}}),
 q(958,{coords={
@@ -8527,7 +8527,7 @@ s(127324,15400,{b=1,f=6,loc=43,q=1,u=2})}}),
 q(13525,{awp=40003,coords={
 [62]={{45.1,75.2}}},isBreadcrumb=1,nextQuests={13526},qgs={33250},r=2}),
 q(28529,{awp=40003,coords={
-[62]={{52.4,32}}},crs={48764},description="Jump into the whirlpool.",providers={{"i",64450}},r=2})}),
+[62]={{52.4,32}}},crs={48764},description="Jump into the whirlpool.",qss={64450},r=2})}),
 h(-46,{
 n(2186,{coords={
 [62]={{44.4,83}}}}),
@@ -8699,12 +8699,12 @@ qo(1,{providers={{"n",4670}},u=2}),
 qo(2,{providers={{"n",4672}},u=2}),
 qo(3,{providers={{"n",4673}},u=2}),
 qo(4,{providers={{"n",4675}},u=2})}}),
-q(14330,{awp=40003,crs={4656},providers={{"i",38567}},sourceQuests={14328}}),
+q(14330,{awp=40003,crs={4656},qss={38567},sourceQuests={14328}}),
 q(14359,{awp=40003,coords={
 [66]={{78.7,23.2}}},providers={{"o",195497}},r=2,repeatable=1,sourceQuests={14358},g={
 i(48857,{q=1})}}),
 q(14304,{awp=40003,coords={
-[66]={{58.8,46.4}}},providers={{"i",49138}},qgs={36048},g={
+[66]={{58.8,46.4}}},qgs={36048},qis={49138},g={
 qo(1,{providers={{"n",35412},{"n",36059}}})}}),
 q(14334,{awp=40003,coords={
 [66]={{22.6,71.9}}},description="Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",qgs={12031},r=1,sourceQuests={14337},g={
@@ -8807,14 +8807,14 @@ q(261,{coords={
 [66]={{66.4,7.8}}},lvl=34,qgs={1182},r=2,rwp=40003,sourceQuests={6141},u=2,g={
 qo(1,{providers={{"n",11561}},u=2})}}),
 q(1052,{coords={
-[66]={{66.5,7.9}}},lvl=34,maps={25},providers={{"i",5539}},qgs={1182},r=2,rwp=40003,sourceQuests={261},u=2}),
+[66]={{66.5,7.9}}},lvl=34,maps={25},qgs={1182},qis={5539},r=2,rwp=40003,sourceQuests={261},u=2}),
 q(14246,{awp=40003,coords={
 [66]={{70.4,33}}},qgs={35661},g={
 s(204289,55894,{b=1,f=4,loc=46,q=2}),
 s(204290,55895,{b=1,f=6,loc=44,q=2})}}),
-q(14362,{awp=40003,crs={4663,4664,4665,4666,4667},providers={{"i",49203}},r=2,g={
+q(14362,{awp=40003,crs={4663,4664,4665,4666,4667},qss={49203},r=2,g={
 qo(1,{crs={4663,4664,4665,4666,4667},providers={{"i",49008}}})}}),
-q(14232,{awp=40003,crs={4663,4664,4665,4666,4667},providers={{"i",49010}},r=1,g={
+q(14232,{awp=40003,crs={4663,4664,4665,4666,4667},qss={49010},r=1,g={
 qo(1,{crs={4663,4664,4665,4666,4667},providers={{"i",49008}}})}}),
 q(14354,{awp=40003,coords={
 [66]={{66.4,11.8}}},qgs={5642},r=2,sourceQuests={14387},g={
@@ -8881,7 +8881,7 @@ q(14378,{awp=40003,coords={
 [66]={{36.7,71.2}}},qgs={36329},r=2,sourceQuests={14373,14374},g={
 qo(1,{crs={36353},description="Brendol is stealthed. Be vigilant!",providers={{"i",49221}}})}}),
 q(5763,{coords={
-[66]={{25,72.2}}},lvl=28,maps={224},providers={{"i",14546}},qgs={11877},r=1,rwp=40003,u=2}),
+[66]={{25,72.2}}},lvl=28,maps={224},qgs={11877},qis={14546},r=1,rwp=40003,u=2}),
 q(14373,{awp=40003,coords={
 [66]={{36.7,71.2}}},qgs={36329},r=2,sourceQuests={14372},g={
 qo(1,{providers={{"n",35591}}}),
@@ -8900,11 +8900,11 @@ qo(1,{providers={{"n",36414}}}),
 qo(2,{providers={{"n",36412}}}),
 qo(3,{providers={{"n",36413}}})}}),
 q(14376,{awp=40003,coords={
-[66]={{51.2,75.4}}},crs={35591},providers={{"i",49220}},r=2,g={
+[66]={{51.2,75.4}}},crs={35591},qss={49220},r=2,g={
 qo(1,{providers={{"n",5771}}}),
 i(49199,{q=1})}}),
 q(14344,{awp=40003,coords={
-[66]={{51.2,75.4}}},crs={35591},providers={{"i",49200}},r=1,g={
+[66]={{51.2,75.4}}},crs={35591},qss={49200},r=1,g={
 qo(1,{providers={{"n",5771}}}),
 i(49199,{q=1})}}),
 q(1365,{coords={
@@ -9034,7 +9034,7 @@ qo(1,{crs={4678,4681,4685},providers={{"i",6250}},u=2}),
 qo(2,{crs={4679,4682,4684},providers={{"i",6251}},u=2}),
 qo(3,{crs={4680,5760,14226},providers={{"i",6252}},u=2})}}),
 q(1467,{coords={
-[66]={{66.2,9.6}}},lvl=30,providers={{"i",6253}},qgs={5638},r=2,rwp=40003,sourceQuests={1466},u=2,g={
+[66]={{66.2,9.6}}},lvl=30,qgs={5638},qis={6253},r=2,rwp=40003,sourceQuests={1466},u=2,g={
 s(121568,6793,{b=1,f=6,loc=43,q=2,u=2}),
 s(121569,6794,{b=1,f=5,loc=44,q=2,u=2})}}),
 q(1453,{coords={
@@ -9113,7 +9113,7 @@ q(1435,{coords={
 [66]={{52.2,53.4}}},lvl=25,qgs={4498},r=1,rwp=40003,sourceQuests={1433},u=2,g={
 qo(1,{coords={
 [66]={{55,26.7}}},cost={{"i",6436,1}},crs={4663,4664,4665,4666},providers={{"i",6435}},u=2})}}),
-q(1480,{crs={4663,4664,4665,4666,4667,4668,4705,13019},lvl=25,providers={{"i",20310}},r=1,rwp=40003,u=2}),
+q(1480,{crs={4663,4664,4665,4666,4667,4668,4705,13019},lvl=25,qss={20310},r=1,rwp=40003,u=2}),
 q(1481,{coords={
 [66]={{52.2,53.4}}},lvl=25,qgs={4498},r=1,rwp=40003,sourceQuests={1480},u=2,g={
 qo(1,{coords={
@@ -9147,7 +9147,7 @@ s(204339,55948,{awp=40003,b=1,f=22,q=2}),
 s(204340,55949,{awp=40003,b=1,f=4,loc=42,q=2}),
 s(204341,55950,{awp=40003,b=1,f=5,loc=47,q=2})}}),
 q(1457,{coords={
-[66]={{66.2,9.6}}},lvl=30,maps={87},providers={{"i",6245}},qgs={5638},r=2,rwp=40003,sourceQuests={1456},u=2,g={
+[66]={{66.2,9.6}}},lvl=30,maps={87},qgs={5638},qis={6245},r=2,rwp=40003,sourceQuests={1456},u=2,g={
 s(121566,6791,{b=1,f=4,loc=47,q=2,u=2}),
 s(121567,6792,{b=1,f=6,loc=41,q=2,u=2})}}),
 q(1362,{coords={
@@ -9184,7 +9184,7 @@ i(47833,{q=1})}}),
 q(1437,{coords={
 [66]={{66.4,11.8}}},lvl=30,qgs={5642},r=2,rwp=40003,u=2}),
 q(1465,{coords={
-[66]={{56.6,17.8}}},lvl=30,providers={{"i",6479},{"o",50961}},r=2,rwp=40003,sourceQuests={1437},u=2}),
+[66]={{56.6,17.8}}},lvl=30,providers={{"o",50961}},qis={6479},r=2,rwp=40003,sourceQuests={1437},u=2}),
 q(1438,{coords={
 [66]={{66.4,11.8}}},lvl=30,qgs={5642},r=2,rwp=40003,sourceQuests={1465},u=2}),
 q(28548,{awp=40003,coords={
@@ -9456,9 +9456,9 @@ q(1516,{altQuests={1519},c={7},coords={
 [1]={{42.4,69}}},lvl=4,qgs={5887},r=1,rwp=40003,u=2,g={
 qo(1,{crs={3102},providers={{"i",6640}},u=2})}}),
 q(1517,{altQuests={1520},c={7},coords={
-[1]={{42.4,69}}},lvl=4,providers={{"i",6635}},qgs={5887},r=1,rwp=40003,sourceQuests={1516},u=2}),
+[1]={{42.4,69}}},lvl=4,qgs={5887},qis={6635},r=1,rwp=40003,sourceQuests={1516},u=2}),
 q(1518,{altQuests={1521},c={7},coords={
-[1]={{44,76}}},lvl=4,providers={{"i",6656}},qgs={5891},r=1,rwp=40003,sourceQuests={1517},u=2}),
+[1]={{44,76}}},lvl=4,qgs={5891},qis={6656},r=1,rwp=40003,sourceQuests={1517},u=2}),
 q(31156,{awp=50004,c={10},coords={
 [461]={{44.8,66.6}}},qgs={3143},races={2},rwp=70003}),
 q(25147,{awp=40003,c={1},qgs={3153},races={2},rwp=70003,sourceQuests={2383}}),
@@ -9476,12 +9476,12 @@ s(120023,4915,{b=1,f=4,loc=47,q=1,u=2}),
 s(120022,4914,{b=1,f=5,loc=44,q=1,u=2})}}),
 q(1463,{c={7},coords={
 [1]={{42.4,69}}},lvl=4,qgs={5887},r=1,repeatable=1,rwp=40003,sourceQuests={1516},u=2}),
-q(3088,{c={4},providers={{"i",9560}},qgs={3143},races={2},rwp=70003,sourceQuests={788}}),
+q(3088,{c={4},qgs={3143},qis={9560},races={2},rwp=70003,sourceQuests={788}}),
 q(3083,{c={4},coords={
-[1]={{42,68.4}}},providers={{"i",9554}},qgs={3143},races={8},rwp=40003,sourceQuests={788},u=2}),
-q(3087,{c={3},providers={{"i",9553}},qgs={3143},races={2},rwp=70003,sourceQuests={788}}),
+[1]={{42,68.4}}},qgs={3143},qis={9554},races={8},rwp=40003,sourceQuests={788},u=2}),
+q(3087,{c={3},qgs={3143},qis={9553},races={2},rwp=70003,sourceQuests={788}}),
 q(3082,{c={3},coords={
-[1]={{42,68.4}}},providers={{"i",9564}},qgs={3143},races={8},rwp=40003,sourceQuests={788},u=2}),
+[1]={{42,68.4}}},qgs={3143},qis={9564},races={8},rwp=40003,sourceQuests={788},u=2}),
 q(25141,{awp=40003,c={4},qgs={3155},races={2},rwp=70003,sourceQuests={3088}}),
 q(25136,{awp=40003,coords={
 [461]={{43,62.4}}},qgs={9796},r=1,sourceQuests={25126},g={
@@ -9490,11 +9490,11 @@ q(4402,{coords={
 [1]={{42.6,67.2}}},qgs={9796},r=1,rwp=40003,sourceQuests={788},u=2,g={
 qo(1,{providers={{"i",11583},{"o",171938}},u=2}),
 i(11584,{f=55,q=1,u=2})}}),
-q(25138,{awp=40003,c={8},providers={{"i",52513}},qgs={3143},races={2},rwp=70003}),
+q(25138,{awp=40003,c={8},qgs={3143},qis={52513},races={2},rwp=70003}),
 q(3086,{c={8},coords={
-[1]={{42,68.4}}},providers={{"i",9575}},qgs={3143},races={8},rwp=40003,sourceQuests={788},u=2}),
+[1]={{42,68.4}}},qgs={3143},qis={9575},races={8},rwp=40003,sourceQuests={788},u=2}),
 q(3085,{c={5},coords={
-[1]={{42,68.4}}},providers={{"i",9561}},qgs={3143},races={8},rwp=40003,sourceQuests={788},u=2}),
+[1]={{42,68.4}}},qgs={3143},qis={9561},races={8},rwp=40003,sourceQuests={788},u=2}),
 q(25128,{awp=40003,coords={
 [461]={{41.7,70}}},isBreadcrumb=1,nextQuests={25129},qgs={5887},r=1,sourceQuests={25127}}),
 q(5649,{c={5},coords={
@@ -9517,9 +9517,9 @@ q(25133,{awp=40003,coords={
 [461]={{45.8,63.5}}},isBreadcrumb=1,nextQuests={25167},qgs={3145},r=1,sourceQuests={25132}}),
 q(805,{coords={
 [1]={{42.8,69}}},qgs={3145},r=1,rwp=40003,sourceQuests={794},u=2}),
-q(3089,{c={7},providers={{"i",9568}},qgs={3143},races={2},rwp=70003,sourceQuests={788}}),
+q(3089,{c={7},qgs={3143},qis={9568},races={2},rwp=70003,sourceQuests={788}}),
 q(3084,{c={7},coords={
-[1]={{42,68.4}}},providers={{"i",9562}},qgs={3143},races={8},rwp=40003,sourceQuests={788},u=2}),
+[1]={{42,68.4}}},qgs={3143},qis={9562},races={8},rwp=40003,sourceQuests={788},u=2}),
 q(25129,{awp=40003,coords={
 [461]={{34.6,44.2}}},qgs={3287},r=1,sourceQuests={25128},g={
 qo(1,{crs={3281},providers={{"i",4905}}})}}),
@@ -9531,9 +9531,9 @@ q(804,{coords={
 [1]={{40.6,62.6}}},qgs={3287},r=1,rwp=40003,sourceQuests={790},u=2,g={
 s(120024,4916,{b=1,f=4,loc=42,q=1,u=2}),
 s(120025,4917,{b=1,f=6,loc=46,q=1,u=2})}}),
-q(2383,{c={1},providers={{"i",12635}},qgs={3143},races={2},rwp=70003,sourceQuests={788}}),
+q(2383,{c={1},qgs={3143},qis={12635},races={2},rwp=70003,sourceQuests={788}}),
 q(3065,{c={1},coords={
-[1]={{42,68.4}}},providers={{"i",6488}},qgs={3143},races={8},rwp=40003,sourceQuests={788},u=2}),
+[1]={{42,68.4}}},qgs={3143},qis={6488},races={8},rwp=40003,sourceQuests={788},u=2}),
 q(25139,{awp=40003,c={3},qgs={39214},races={2},rwp=70003,sourceQuests={3087}}),
 q(25127,{awp=40003,coords={
 [461]={{44.9,66.4}}},qgs={3143},r=1,sourceQuests={25172},g={
@@ -9547,7 +9547,7 @@ qo(1,{crs={3124,3281},providers={{"i",4862}},u=2}),
 s(120027,4919,{b=1,f=4,loc=45,q=1,u=2}),
 s(200880,4920,{b=1,f=3,q=1,u=2})}}),
 q(3090,{c={9},coords={
-[1]={{43.2,68.2}}},providers={{"i",9579}},qgs={3143},races={2,8},rwp=70003,sourceQuests={788}}),
+[1]={{43.2,68.2}}},qgs={3143},qis={9579},races={2,8},rwp=70003,sourceQuests={788}}),
 q(25135,{awp=40003,coords={
 [461]={{46,63.4}}},qgs={11378},r=1,sourceQuests={25131}}),
 q(6394,{coords={
@@ -9686,14 +9686,14 @@ crit(21389,{achID=6560,id=1,pb=1}),
 crit(21454,{achID=6612,id=7,pb=1})}}),
 h(-45,{
 q(2161,{coords={
-[1]={{52,68.2}}},providers={{"i",7629}},qgs={6786},r=1,rwp=40003,u=2}),
+[1]={{52,68.2}}},qgs={6786},qis={7629},r=1,rwp=40003,u=2}),
 q(818,{coords={
 [1]={{55.8,74.4}}},lvl=5,qgs={3304},r=1,rwp=40003,u=2,g={
 qo(1,{crs={3103,3104,3105,3141},providers={{"i",4887}},u=2}),
 qo(2,{crs={3106,3107,3108,3228},providers={{"i",4888}},u=2}),
 i(4941,{b=1,f=55,q=1,u=2})}}),
 q(25263,{awp=40003,coords={
-[1]={{56.4,19.8}}},lvl=4,maps={85},providers={{"i",6658}},qgs={3208},r=1,sourceQuests={25262}}),
+[1]={{56.4,19.8}}},lvl=4,maps={85},qgs={3208},qis={6658},r=1,sourceQuests={25262}}),
 q(809,{coords={
 [85]={{49.6,50.4}}},lvl=4,qgs={3216},r=1,rwp=40003,sourceQuests={829},u=2}),
 q(25648,{awp=40003,coords={
@@ -9709,7 +9709,7 @@ q(1843,{c={1},coords={
 [1]={{56.2,74.4}}},lvl=20,qgs={6408},r=1,rwp=40003,sourceQuests={1842},u=2,g={
 s(121775,7129,{b=1,c={1},f=6,loc=44,q=2,u=2})}}),
 q(832,{coords={
-[1]={{51.78,9.56}}},crs={3204},lvl=4,maps={85},providers={{"i",4903}},r=1,rwp=40003,u=2}),
+[1]={{51.78,9.56}}},crs={3204},lvl=4,maps={85},qss={4903},r=1,rwp=40003,u=2}),
 q(791,{coords={
 [1]={{49.8,40.4}}},lvl=4,qgs={3147},r=1,rwp=40003,u=2,g={
 qo(1,{crs={3119,3120,3128,3129,3192,5808,5809},providers={{"i",4870}},u=2}),
@@ -9723,16 +9723,16 @@ qo(1,{providers={{"i",60732},{"o",205076}},u=2}),
 s(120050,4946,{b=1,f=6,loc=47,q=1,u=2}),
 s(120045,4940,{b=1,f=5,loc=44,q=1,u=2})}}),
 q(840,{coords={
-[1]={{50.8,43.5}}},isBreadcrumb=1,lvl=10,nextQuests={842,871},providers={{"i",4992}},qgs={3336},r=1}),
+[1]={{50.8,43.5}}},isBreadcrumb=1,lvl=10,nextQuests={842,871},qgs={3336},qis={4992},r=1}),
 q(842,{coords={
-[10]={{62.26,19.37}}},lvl=10,providers={{"i",4995}},qgs={3337},r=1,rwp=40003,sourceQuests={840},u=2}),
+[10]={{62.26,19.37}}},lvl=10,qgs={3337},qis={4995},r=1,rwp=40003,sourceQuests={840},u=2}),
 q(806,{coords={
 [1]={{52.2,43.2}}},lvl=4,qgs={3142},r=1,rwp=40003,sourceQuests={823},u=2,g={
 qo(1,{coords={
 [1]={{42.6,26.4}}},crs={3203},providers={{"i",4869}},u=2}),
 s(120047,4942,{b=1,f=5,loc=47,q=1,u=2})}}),
 q(6385,{coords={
-[85]={{53.5,78.7}}},providers={{"i",16307}},qgs={6929},races={2,8},sourceQuests={6384}}),
+[85]={{53.5,78.7}}},qgs={6929},qis={16307},races={2,8},sourceQuests={6384}}),
 q(837,{coords={
 [1]={{52,43.4}}},lvl=6,qgs={3139},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",3111}},u=2}),
@@ -9794,7 +9794,7 @@ q(1884,{c={8},coords={
 s(122000,7508,{b=1,c={8},f=1,q=2,u=2}),
 s(122941,9513,{b=1,c={8},f=28,q=2,u=2})}}),
 q(32671,{awp=50200,description="This quest is available to Trolls upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,races={8},rwp=100105}),
-q(14088,{awp=30300,description="The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46883}},races={8},rwp=40001,u=2}),
+q(14088,{awp=30300,description="The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46883},races={8},rwp=40001,u=2}),
 q(25179,{awp=40003,description="Talk to an Injured Razor Hill Grunt on the beach.",qgs={39270},r=1,sourceQuests={25173},g={
 s(203036,53384,{b=1,f=6,loc=43,q=1})}}),
 q(25193,{awp=40003,coords={
@@ -9815,7 +9815,7 @@ q(25261,{awp=40003,coords={
 q(828,{coords={
 [1]={{52.2,43.2}}},lvl=4,qgs={3142},r=1,rwp=40003,sourceQuests={806},u=2}),
 q(6365,{coords={
-[1]={{50.7,42.8}}},providers={{"i",16306}},qgs={3881},races={2,8}}),
+[1]={{50.7,42.8}}},qgs={3881},qis={16306},races={2,8}}),
 q(25267,{awp=40003,coords={
 [1]={{57.6,9.6}}},qgs={39609},races={9},sourceQuests={25266},g={
 i(52581,{q=1}),
@@ -9836,7 +9836,7 @@ qo(1,{providers={{"i",4904}},questID=812,u=2})}}),
 s(120042,4937,{b=1,f=8,q=1,u=2}),
 s(120036,4929,{b=1,f=5,loc=42,q=1,u=2})}}),
 q(829,{coords={
-[1]={{56.4,20}}},lvl=4,providers={{"i",6658}},qgs={3208},r=1,rwp=40003,sourceQuests={827},u=2}),
+[1]={{56.4,20}}},lvl=4,qgs={3208},qis={6658},r=1,rwp=40003,sourceQuests={827},u=2}),
 q(25165,{awp=40003,coords={
 [1]={{55.7,75.3}}},qgs={10578},r=1,sourceQuests={25170},g={
 qo(1,{crs={3125},providers={{"i",52505}}})}}),
@@ -9863,15 +9863,15 @@ q(7665,{coords={
 q(823,{coords={
 [1]={{56,74.6}}},lvl=4,qgs={3188},r=1,rwp=40003,sourceQuests={805},u=2}),
 q(26806,{awp=40003,coords={
-[1]={{51.8,43.4}}},providers={{"i",60370}},qgs={3139},races={9},sourceQuests={26804},g={
+[1]={{51.8,43.4}}},qgs={3139},qis={60370},races={9},sourceQuests={26804},g={
 i(60370,{q=1})}}),
 q(26807,{awp=40003,coords={
-[1]={{53,43.6}}},providers={{"i",60370}},qgs={41140},races={9},sourceQuests={26806},g={
+[1]={{53,43.6}}},qgs={41140},qis={60370},races={9},sourceQuests={26806},g={
 i(60370,{q=1})}}),
 q(6386,{coords={
-[85]={{49.5,59.2}}},providers={{"i",16307}},qgs={3310},races={2,8},sourceQuests={6385}}),
+[85]={{49.5,59.2}}},qgs={3310},qis={16307},races={2,8},sourceQuests={6385}}),
 q(6384,{coords={
-[1]={{53,43.6}}},maps={85},providers={{"i",16306}},qgs={41140},races={2,8},sourceQuests={6365}}),
+[1]={{53,43.6}}},maps={85},qgs={41140},qis={16306},races={2,8},sourceQuests={6365}}),
 q(25171,{awp=40003,coords={
 [1]={{55.9,74.7}}},qgs={3188},r=1,sourceQuests={25165,25168,25169}}),
 q(1842,{c={1},coords={
@@ -9921,9 +9921,9 @@ q(25195,{awp=40003,coords={
 [1]={{35.8,41.3}}},qgs={39324},r=1,sourceQuests={25194},g={
 qo(1,{providers={{"n",39385}}}),
 s(203050,53398,{b=1,f=3,q=1})}}),
-q(830,{providers={{"i",4881}},r=1,rwp=40003,u=2}),
+q(830,{qss={4881},r=1,rwp=40003,u=2}),
 q(831,{coords={
-[1]={{52,43.4}}},providers={{"i",4883}},qgs={3139},r=1,rwp=40003,sourceQuests={830},u=2}),
+[1]={{52,43.4}}},qgs={3139},qis={4883},r=1,rwp=40003,sourceQuests={830},u=2}),
 q(25232,{awp=40003,coords={
 [1]={{52.2,43.1}}},lvl=8,qgs={3142},r=1,g={
 qo(1,{crs={3195,3196,3199},providers={{"i",52564}}})}}),
@@ -10162,7 +10162,7 @@ q(27247,{awp=40003,coords={
 [70]={{65,47}}},qgs={23951},r=2,sourceQuests={27246},g={
 i(5917,{q=1})}}),
 q(1220,{coords={
-[70]={{65.1,47.1},{67.2,51},{68.1,48.2}}},lvl=30,providers={{"i",5917}},qgs={4947},r=2,rwp=40003,sourceQuests={1219},u=2}),
+[70]={{65.1,47.1},{67.2,51},{68.1,48.2}}},lvl=30,qgs={4947},qis={5917},r=2,rwp=40003,sourceQuests={1219},u=2}),
 q(27413,{awp=40003,coords={
 [70]={{41.5,72.9}}},qgs={23570},g={
 qo(1,{providers={{"i",33175},{"o",186463}}}),
@@ -10243,9 +10243,9 @@ q(25051,{awp=40003,coords={
 [70]={{36.4,31.8}}},qgs={4926},r=1,g={
 qo(1,{providers={{"o",205267}}})}}),
 q(27218,{awp=40003,coords={
-[70]={{72.1,47.1}}},providers={{"i",33127}},qgs={23892},r=2,sourceQuests={27217}}),
+[70]={{72.1,47.1}}},qgs={23892},qis={33127},r=2,sourceQuests={27217}}),
 q(11193,{awp=20300,coords={
-[70]={{72.1,47}}},lvl=30,providers={{"i",33127}},qgs={23892},r=2,rwp=40003,sourceQuests={11192},u=2}),
+[70]={{72.1,47}}},lvl=30,qgs={23892},qis={33127},r=2,rwp=40003,sourceQuests={11192},u=2}),
 q(27234,{awp=40003,coords={
 [70]={{59.7,41}}},qgs={5086},r=2,sourceQuests={27214},g={
 qo(1,{crs={23679},providers={{"i",33037}}})}}),
@@ -10254,7 +10254,7 @@ q(11137,{awp=20300,coords={
 qo(1,{coords={
 [70]={{64.9,27.3}}},crs={23679},providers={{"i",33037}},u=2})}}),
 q(11208,{awp=20300,coords={
-[70]={{53.6,56.9}}},lvl=35,providers={{"i",33163}},qgs={23797},sourceQuests={27347,27348}}),
+[70]={{53.6,56.9}}},lvl=35,qgs={23797},qis={33163},sourceQuests={27347,27348}}),
 q(27340,{awp=40003,coords={
 [70]={{46,57.4}}},qgs={23600},g={
 qo(1,{providers={{"n",23594},{"n",23595}}}),
@@ -10323,7 +10323,7 @@ q(27219,{awp=40003,coords={
 q(11194,{awp=20300,coords={
 [70]={{69.2,51.9}}},lvl=30,qgs={23896},r=2,rwp=40003,sourceQuests={11193},u=2}),
 q(1948,{c={8},coords={
-[70]={{46,57}}},cost={{"i",1529,1}},lvl=30,maps={14},providers={{"i",7516}},qgs={6546},rwp=40003,sourceQuests={1951},u=2,g={
+[70]={{46,57}}},cost={{"i",1529,1}},lvl=30,maps={14},qgs={6546},qis={7516},rwp=40003,sourceQuests={1951},u=2,g={
 qo(2,{coords={
 [14]={{52,51}}},cost={{"i",7273,10}},crs={2552,2553,2554,2555,2556,2557,2558,2605},providers={{"i",7272}},u=2})}}),
 q(27238,{awp=40003,coords={
@@ -10375,14 +10375,14 @@ q(27263,{awp=40003,coords={
 q(27264,{awp=40003,coords={
 [70]={{68.2,48.6}}},qgs={4944},r=2,sourceQuests={27263}}),
 q(1252,{coords={
-[70]={{29.8,48.2}}},lvl=30,providers={{"i",5950},{"o",21042}},r=2,rwp=40003,u=2}),
+[70]={{29.8,48.2}}},lvl=30,providers={{"o",21042}},qis={5950},r=2,rwp=40003,u=2}),
 q(1259,{coords={
 [70]={{68.2,48.6}}},lvl=30,qgs={4944},r=2,rwp=40003,sourceQuests={1252},u=2}),
 q(27260,{awp=40003,coords={
 [70]={{29.8,48.2}}},providers={{"o",21042}},r=1,g={
 i(5950,{q=1})}}),
 q(1269,{coords={
-[70]={{29.8,48.2}}},lvl=30,providers={{"i",5950},{"o",21042}},r=1,rwp=40003,u=2}),
+[70]={{29.8,48.2}}},lvl=30,providers={{"o",21042}},qis={5950},r=1,rwp=40003,u=2}),
 q(1952,{c={8},coords={
 [70]={{46,57}}},lvl=30,qgs={6546},rwp=40003,sourceQuests={1948},u=2,g={
 s(122006,7514,{b=1,c={8},f=27,q=3,u=2}),
@@ -10544,9 +10544,9 @@ s(143562,33259,{b=1,f=6,loc=40,q=2})}}),
 q(27235,{awp=40003,coords={
 [70]={{59.7,41}}},qgs={5086},r=2,sourceQuests={27234}}),
 q(11138,{awp=20300,coords={
-[70]={{59.7,41}}},lvl=32,providers={{"i",33037}},qgs={5086},r=2,rwp=40003,sourceQuests={11137},u=2}),
+[70]={{59.7,41}}},lvl=32,qgs={5086},qis={33037},r=2,rwp=40003,sourceQuests={11137},u=2}),
 q(1262,{coords={
-[70]={{35.2,30.6}}},lvl=30,providers={{"i",5942}},qgs={4791},r=1,rwp=40003,sourceQuests={1261},u=2}),
+[70]={{35.2,30.6}}},lvl=30,qgs={4791},qis={5942},r=1,rwp=40003,sourceQuests={1261},u=2}),
 q(27241,{awp=40003,coords={
 [84]={{85.6,32.9}}},qgs={1750},r=2,sourceQuests={27240}}),
 q(11223,{awp=20001,coords={
@@ -10592,7 +10592,7 @@ q(7541,{coords={
 i(18585,{b=1,f=52,q=3,u=2}),
 i(18586,{b=1,f=52,q=3,u=2})}}),
 q(11186,{awp=20300,coords={
-[70]={{47,46.8}}},crs={23881},lvl=35,providers={{"i",33115}},r=1,rwp=40003,u=2}),
+[70]={{47,46.8}}},crs={23881},lvl=35,qss={33115},r=1,rwp=40003,u=2}),
 q(27229,{awp=40003,coords={
 [70]={{37.4,31.5}}},providers={{"o",205332}},r=1,g={
 qo(1,{crs={45227},providers={{"i",60883}}})}}),
@@ -10640,7 +10640,7 @@ s(143556,33253,{b=1,f=6,loc=40,q=3,u=2}),
 s(143550,33247,{b=1,f=5,loc=41,q=3})}}),
 q(27306,{awp=40003,coords={
 [70]={{36.4,31.8}}},qgs={4926},r=1,sourceQuests={27260}}),
-q(11185,{awp=20300,crs={23881},lvl=35,providers={{"i",33114}},r=2,rwp=40003,u=2}),
+q(11185,{awp=20300,crs={23881},lvl=35,qss={33114},r=2,rwp=40003,u=2}),
 q(27252,{awp=40003,coords={
 [70]={{29.6,48.5}}},providers={{"o",20992}},r=2,sourceQuests={27249}}),
 q(27284,{awp=40003,coords={
@@ -10648,9 +10648,9 @@ q(27284,{awp=40003,coords={
 q(27285,{awp=40003,coords={
 [70]={{64.7,50.3}}},qgs={4941},r=2,sourceQuests={27284}}),
 q(1253,{coords={
-[70]={{29.6,48.5}}},lvl=30,providers={{"i",5919},{"o",20992}},r=2,rwp=40003,u=2}),
+[70]={{29.6,48.5}}},lvl=30,providers={{"o",20992}},qis={5919},r=2,rwp=40003,u=2}),
 q(1319,{coords={
-[70]={{68.2,48.6}}},lvl=30,providers={{"i",5919}},qgs={4944},r=2,rwp=40003,sourceQuests={1253},u=2}),
+[70]={{68.2,48.6}}},lvl=30,qgs={4944},qis={5919},r=2,rwp=40003,sourceQuests={1253},u=2}),
 q(1320,{coords={
 [70]={{64.6,50.4}}},lvl=30,qgs={4941},r=2,rwp=40003,sourceQuests={1319},u=2}),
 q(27254,{awp=40003,coords={
@@ -10665,16 +10665,16 @@ q(27257,{awp=40003,coords={
 q(27258,{awp=40003,coords={
 [70]={{36.4,31.8}}},qgs={4926},r=1,sourceQuests={27261}}),
 q(1251,{coords={
-[70]={{29.6,48.5}}},lvl=30,providers={{"i",5919},{"o",20992}},r=1,rwp=40003,u=2}),
+[70]={{29.6,48.5}}},lvl=30,providers={{"o",20992}},qis={5919},r=1,rwp=40003,u=2}),
 q(1321,{coords={
-[70]={{36.4,31.8}}},lvl=30,providers={{"i",5919}},qgs={4926},r=1,rwp=40003,sourceQuests={1251},u=2}),
+[70]={{36.4,31.8}}},lvl=30,qgs={4926},qis={5919},r=1,rwp=40003,sourceQuests={1251},u=2}),
 q(1322,{coords={
 [70]={{36.4,30.8}}},lvl=30,qgs={5087},r=1,rwp=40003,sourceQuests={1321},u=2,g={
 qo(1,{crs={4376,4378,4379,4380,4411,4412,4413,4414,4415},providers={{"i",5959}},u=2})}}),
 q(1323,{coords={
 [70]={{36.4,30.8}}},lvl=30,qgs={5087},r=1,rwp=40003,sourceQuests={1322},u=2}),
 q(1276,{coords={
-[70]={{36.4,31.8}}},lvl=30,providers={{"i",5919}},qgs={4926},r=1,rwp=40003,sourceQuests={1323},u=2}),
+[70]={{36.4,31.8}}},lvl=30,qgs={4926},qis={5919},r=1,rwp=40003,sourceQuests={1323},u=2}),
 q(27416,{awp=40003,coords={
 [70]={{37.1,33.1}}},qgs={4501},r=1,sourceQuests={27414}}),
 q(27417,{awp=40003,coords={
@@ -10749,7 +10749,7 @@ q(27244,{awp=40003,coords={
 [70]={{55.4,25.9}}},providers={{"o",20985}},r=1,g={
 i(5917,{q=1})}}),
 q(1238,{coords={
-[70]={{55.4,26}}},lvl=30,providers={{"i",5917},{"o",20985}},r=1,rwp=40003,u=2}),
+[70]={{55.4,26}}},lvl=30,providers={{"o",20985}},qis={5917},r=1,rwp=40003,u=2}),
 q(1265,{coords={
 [70]={{68,48.6}}},lvl=28,qgs={4964},r=2,rwp=40003,sourceQuests={1264},u=2}),
 q(1266,{coords={
@@ -10763,7 +10763,7 @@ q(27246,{awp=40003,coords={
 [70]={{55.4,25.9}}},providers={{"o",20985}},r=2,g={
 i(5917,{q=1})}}),
 q(1219,{coords={
-[70]={{55.4,26}}},lvl=30,providers={{"i",5917},{"o",20985}},r=2,rwp=40003,u=2}),
+[70]={{55.4,26}}},lvl=30,providers={{"o",20985}},qis={5917},r=2,rwp=40003,u=2}),
 q(27339,{awp=40003,coords={
 [70]={{46,57.2}}},qgs={23601},g={
 qo(1,{crs={4348,4412},providers={{"i",33103}}}),
@@ -10777,13 +10777,13 @@ s(143576,33273,{b=1,f=32,q=2}),
 s(143563,33260,{b=1,f=3,q=2}),
 s(201460,33244,{b=1,f=5,loc=40,q=2})}}),
 q(1239,{coords={
-[70]={{55.4,26}}},lvl=30,providers={{"i",5918},{"o",20985}},r=1,rwp=40003,sourceQuests={1238},u=2}),
+[70]={{55.4,26}}},lvl=30,providers={{"o",20985}},qis={5918},r=1,rwp=40003,sourceQuests={1238},u=2}),
 q(1202,{coords={
 [70]={{35.2,30.6}}},lvl=30,qgs={4791},r=1,sourceQuests={1201},g={
 qo(1,{coords={
 [70]={{71.5,51.1}}},providers={{"i",5882}}})}}),
 q(1240,{coords={
-[70]={{35.2,30.6}}},lvl=30,maps={224},providers={{"i",5918}},qgs={4791},r=1,rwp=40003,sourceQuests={1239},u=2}),
+[70]={{35.2,30.6}}},lvl=30,maps={224},qgs={4791},qis={5918},r=1,rwp=40003,sourceQuests={1239},u=2}),
 q(27189,{awp=40003,coords={
 [70]={{55.5,26.1}}},qgs={23843},sourceQuests={27188},g={
 qo(1,{providers={{"i",33112},{"o",186423}}})}}),
@@ -11068,7 +11068,7 @@ qo(1,{coords={
 q(28207,{awp=40003,coords={
 [77]={{41.2,49.9}}},qgs={47696},sourceQuests={28305},g={
 qo(1,{providers={{"i",63078},{"o",206764}}})}}),
-q(5202,{crs={7114,7118,7120,9862,14522,14523},lvl=49,providers={{"i",13140}},rwp=40003,u=2}),
+q(5202,{crs={7114,7118,7120,9862,14522,14523},lvl=49,qss={13140},rwp=40003,u=2}),
 q(28100,{awp=40003,coords={
 [77]={{51.4,80.4}}},qgs={11554}}),
 q(28150,{awp=40003,coords={
@@ -11079,7 +11079,7 @@ q(8419,{altQuests={8420},c={9},coords={
 [87]={{50.2,6}},
 [998]={{86,15.6}}},cost={{"i",14256,1}},lvl=50,qgs={461,3326,4563,5172},r=1,rwp=40003,u=2}),
 q(4261,{coords={
-[77]={{49.4,14.4}}},lvl=49,maps={63},providers={{"i",11445}},qgs={9598},r=2,rwp=40003,sourceQuests={4442},u=2,g={
+[77]={{49.4,14.4}}},lvl=49,maps={63},qgs={9598},qis={11445},r=2,rwp=40003,sourceQuests={4442},u=2,g={
 s(124519,11873,{b=1,f=3,q=2,u=2}),
 s(124520,11874,{b=1,f=5,loc=41,q=2,u=2})}}),
 q(4005,{coords={
@@ -11115,7 +11115,7 @@ q(28219,{awp=40003,coords={
 [77]={{48.6,25.1}}},qgs={48032},sourceQuests={28229},g={
 qo(1,{providers={{"n",48038}}})}}),
 q(5159,{coords={
-[10]={{65.8,43.8}}},lvl=48,providers={{"i",12906}},qgs={5901},rwp=40003,sourceQuests={5158},u=2}),
+[10]={{65.8,43.8}}},lvl=48,qgs={5901},qis={12906},rwp=40003,sourceQuests={5158},u=2}),
 q(4101,{coords={
 [77]={{54.2,86.7}}},lvl=48,qgs={9528},r=2,rwp=40003,u=2,g={
 qo(1,{crs={7100,7101,7104},providers={{"i",11503}},u=2}),
@@ -11296,7 +11296,7 @@ q(7602,{c={9},coords={
 qo(1,{crs={6200,6201,6202},providers={{"i",18624}},u=2}),
 qo(2,{crs={9862},providers={{"i",18622}},u=2}),
 qo(3,{crs={6011},providers={{"i",18623}},u=2})}}),
-q(939,{lvl=49,providers={{"i",11668}},r=2,rwp=40003,sourceQuests={4906},u=2,g={
+q(939,{lvl=49,qss={11668},r=2,rwp=40003,sourceQuests={4906},u=2,g={
 qo(1,{crs={7105,7106,7107,7108,7109,7110,7111,14340},providers={{"i",11674}},u=2})}}),
 q(28121,{awp=40003,coords={
 [77]={{44,61.9}}},qgs={11019},g={
@@ -11315,7 +11315,7 @@ qo(3,{providers={{"n",7107}},u=2}),
 qo(4,{providers={{"n",10648}},u=2}),
 s(124521,11875,{b=1,f=4,loc=43,q=2,u=2})}}),
 q(4883,{coords={
-[77]={{34.6,52.6}}},lvl=52,maps={88},providers={{"i",12558}},qgs={10306},r=1,rwp=40003,sourceQuests={4882},u=2,g={
+[77]={{34.6,52.6}}},crs={10306},lvl=52,maps={88},qss={12558},r=1,rwp=40003,sourceQuests={4882},u=2,g={
 s(127707,15796,{b=1,f=6,loc=43,q=2,u=2}),
 s(127708,15797,{b=1,f=7,loc=43,q=2,u=2})}}),
 q(28213,{awp=40003,coords={
@@ -11357,7 +11357,7 @@ qo(1,{providers={{"n",9516}}}),
 s(209683,65282,{b=1,f=4,loc=45,q=2}),
 s(209702,65302,{b=1,f=28,q=2})}}),
 q(5085,{coords={
-[77]={{60.2,5.9}}},lvl=52,providers={{"i",12813},{"o",176091}},rwp=40003,sourceQuests={5084},u=2}),
+[77]={{60.2,5.9}}},lvl=52,providers={{"o",176091}},qis={12813},rwp=40003,sourceQuests={5084},u=2}),
 q(28229,{awp=40003,coords={
 [77]={{43.9,28.1}}},qgs={48126},sourceQuests={28374},g={
 qo(1,{coords={
@@ -11482,7 +11482,7 @@ q(28220,{awp=40003,coords={
 [77]={{48.6,25.1}}},sourceQuests={28229},g={
 i(65286,{b=1,f=53,q=2})}}),
 q(5158,{coords={
-[77]={{51.2,82.2}}},lvl=48,maps={10},providers={{"i",12907}},qgs={10922},rwp=40003,sourceQuests={5157},u=2}),
+[77]={{51.2,82.2}}},lvl=48,maps={10},qgs={10922},qis={12907},rwp=40003,sourceQuests={5157},u=2}),
 q(28153,{awp=40003,coords={
 [77]={{36.2,58.2}}},qgs={51664},sourceQuests={28131},g={
 qo(1,{providers={{"n",9517}}})}}),
@@ -11545,7 +11545,7 @@ i(65319,{b=1,f=51,q=2})}}),
 q(28224,{awp=40003,coords={
 [77]={{48.7,25.2}}},qgs={48044},sourceQuests={28221,28222}}),
 q(5385,{coords={
-[77]={{38.4,50.4}}},lvl=49,providers={{"i",13562}},qgs={11020},rwp=40003,sourceQuests={5204},u=2,g={
+[77]={{38.4,50.4}}},lvl=49,qgs={11020},qis={13562},rwp=40003,sourceQuests={5204},u=2,g={
 s(127628,15706,{b=1,f=20,q=2,u=2}),
 s(127627,15705,{b=1,f=25,q=2,u=2})}}),
 q(28337,{awp=40003,coords={
@@ -11802,7 +11802,7 @@ q(2974,{coords={
 [69]={{76,42.8}}},lvl=38,qgs={4544},r=1,rwp=40003,sourceQuests={2973},u=2,g={
 qo(1,{crs={7725,7726,7727},providers={{"i",9460}},u=2})}}),
 q(2976,{coords={
-[69]={{76,42.8}}},lvl=37,providers={{"i",9462}},qgs={4544},r=1,rwp=40003,sourceQuests={2974},u=2,g={
+[69]={{76,42.8}}},lvl=37,qgs={4544},qis={9462},r=1,rwp=40003,sourceQuests={2974},u=2,g={
 s(124504,11858,{b=1,f=3,q=2,u=2}),
 s(124505,11859,{b=1,f=1,q=2,u=2})}}),
 q(4266,{coords={
@@ -11816,7 +11816,7 @@ q(2973,{coords={
 [69]={{76,42.8}}},lvl=38,qgs={4544},r=1,rwp=40003,u=2,g={
 qo(1,{crs={5278,7997},providers={{"i",9369}},u=2})}}),
 q(3121,{coords={
-[69]={{74.4,43.4}}},lvl=40,maps={85},providers={{"i",9629}},qgs={8115},r=1,rwp=40003,u=2}),
+[69]={{74.4,43.4}}},lvl=40,maps={85},qgs={8115},qis={9629},r=1,rwp=40003,u=2}),
 q(2981,{coords={
 [85]={{75,34.2}}},isBreadcrumb=1,lvl=38,nextQuests={2975},qgs={4485},r=1,rwp=40003,u=2}),
 q(26574,{awp=40003,coords={
@@ -11843,12 +11843,12 @@ q(2863,{coords={
 [69]={{74.8,42.6}}},lvl=39,qgs={7875},r=1,rwp=40003,sourceQuests={2862},u=2,g={
 qo(1,{providers={{"n",5258}},u=2})}}),
 q(3841,{coords={
-[69]={{65.8,45.6}}},lvl=38,providers={{"i",11102}},qgs={7956},r=2,rwp=40003,sourceQuests={2972},u=2}),
+[69]={{65.8,45.6}}},lvl=38,qgs={7956},qis={11102},r=2,rwp=40003,sourceQuests={2972},u=2}),
 q(25423,{awp=40003,coords={
 [69]={{65.9,62.8}}},lc={1,"questID",25368},qgs={40131},sourceQuests={25350,25643},g={
 qo(1,{crs={40059},providers={{"i",53136}}})}}),
 q(4127,{coords={
-[69]={{45.4,65}}},lvl=40,providers={{"i",11462},{"o",164909}},r=2,rwp=40003,sourceQuests={4125},u=2}),
+[69]={{45.4,65}}},lvl=40,providers={{"o",164909}},qis={11462},r=2,rwp=40003,sourceQuests={4125},u=2}),
 q(2979,{coords={
 [69]={{74.2,44.6}}},lvl=38,qgs={7777},r=1,rwp=40003,sourceQuests={2978},u=2,g={
 qo(1,{coords={
@@ -11874,7 +11874,7 @@ qo(1,{coords={
 s(200957,9665,{b=1,f=4,loc=44,q=2,u=2}),
 s(123077,9666,{b=1,f=6,loc=45,q=2,u=2})}}),
 q(2871,{coords={
-[69]={{30.4,46.2}}},lvl=40,providers={{"i",9248}},qgs={7877},r=2,rwp=40003,sourceQuests={2870},u=2,g={
+[69]={{30.4,46.2}}},lvl=40,qgs={7877},qis={9248},r=2,rwp=40003,sourceQuests={2870},u=2,g={
 s(123074,9663,{b=1,f=6,loc=42,q=2,u=2}),
 s(123075,9664,{b=1,f=7,loc=40,q=2,u=2})}}),
 q(2970,{coords={
@@ -11883,7 +11883,7 @@ qo(1,{providers={{"n",7726}},u=2}),
 qo(2,{providers={{"n",7725}},u=2}),
 qo(3,{providers={{"n",7727}},u=2})}}),
 q(2972,{coords={
-[69]={{65.8,45.6}}},lvl=38,maps={89},providers={{"i",9368}},qgs={7957},r=2,rwp=40003,sourceQuests={2970},u=2,g={
+[69]={{65.8,45.6}}},lvl=38,maps={89},qgs={7957},qis={9368},r=2,rwp=40003,sourceQuests={2970},u=2,g={
 s(123913,10705,{b=1,f=4,loc=43,q=2,u=2}),
 s(123914,10706,{b=1,f=6,loc=45,q=2,u=2})}}),
 q(25402,{awp=40003,coords={
@@ -11901,8 +11901,8 @@ i(9620,{q=1})}}),
 q(3125,{coords={
 [69]={{74.4,43.4}}},lvl=40,qgs={8115},r=1,rwp=40003,sourceQuests={3124},u=2,g={
 qo(1,{cost={{"i",9620,1}},crs={5276,5278},providers={{"i",9596}},u=2})}}),
-q(25475,{awp=40003,crs={39896},providers={{"i",8705}}}),
-q(2766,{lvl=40,providers={{"i",8705}},rwp=40003,u=2}),
+q(25475,{awp=40003,crs={39896},qss={8705}}),
+q(2766,{lvl=40,qss={8705},rwp=40003,u=2}),
 q(25468,{awp=40003,coords={
 [69]={{77,56.6}}},qgs={40913},r=2,sourceQuests={26574},g={
 qo(1,{crs={5276,5278},providers={{"i",58966}}})}}),
@@ -11982,10 +11982,10 @@ q(3787,{coords={
 q(3788,{coords={
 [69]={{31,43.4}}},isBreadcrumb=1,lvl=47,nextQuests={3791},qgs={7736},r=2,rwp=40003,u=2}),
 q(2853,{coords={
-[69]={{30.6,42.7}}},learnedAt=200,lvl=30,providers={{"i",9235}},qgs={7852},r=2,requireSkill=165,rwp=40003,sourceQuests={2848,2849,2850,2851,2852},u=2,g={
+[69]={{30.6,42.7}}},learnedAt=200,lvl=30,qgs={7852},qis={9235},r=2,requireSkill=165,rwp=40003,sourceQuests={2848,2849,2850,2851,2852},u=2,g={
 r(10574,{b=1,itemID=8408,learnedAt=250,q=2,requireSkill=165,u=2})}}),
 q(2860,{coords={
-[69]={{74.43,42.91}}},learnedAt=200,lvl=30,providers={{"i",9236}},qgs={7854},r=1,requireSkill=165,rwp=40003,sourceQuests={2855,2856,2857,2858,2859},u=2,g={
+[69]={{74.43,42.91}}},learnedAt=200,lvl=30,qgs={7854},qis={9236},r=1,requireSkill=165,rwp=40003,sourceQuests={2855,2856,2857,2858,2859},u=2,g={
 r(10574,{b=1,itemID=8408,learnedAt=250,q=2,requireSkill=165,u=2})}}),
 q(25333,{awp=40003,coords={
 [69]={{56.9,55}}},qgs={39653},r=2,sourceQuests={25208,25406},g={
@@ -12043,12 +12043,12 @@ i(52833,{q=1})}}),
 q(27134,{awp=40003,coords={
 [69]={{51.9,47.9}}},qgs={39656},r=1}),
 q(25454,{awp=40003,coords={
-[69]={{55.6,56.2}}},crs={39896},providers={{"i",55167}},r=1,sourceQuests={25452}}),
+[69]={{55.6,56.2}}},crs={39896},qss={55167},r=1,sourceQuests={25452}}),
 q(7738,{coords={
-[69]={{55.6,56.2}}},crs={5296,5297,5299},lvl=40,providers={{"i",18972}},r=1,repeatable=1,rwp=40003,u=2}),
+[69]={{55.6,56.2}}},crs={5296,5297,5299},lvl=40,qss={18972},r=1,repeatable=1,rwp=40003,u=2}),
 q(25451,{awp=40003,coords={
-[69]={{55.4,56.4}}},crs={39896},providers={{"i",55166}},r=2,sourceQuests={25449}}),
-q(7735,{crs={5296,5297,5299},lvl=40,providers={{"i",18969}},r=2,repeatable=1,rwp=40003,u=2}),
+[69]={{55.4,56.4}}},crs={39896},qss={55166},r=2,sourceQuests={25449}}),
+q(7735,{crs={5296,5297,5299},lvl=40,qss={18969},r=2,repeatable=1,rwp=40003,u=2}),
 q(4130,{coords={
 [69]={{32.5,43.8}}},lvl=40,qgs={7879},r=2,rwp=40003,sourceQuests={4129},u=2}),
 q(7726,{coords={
@@ -12071,9 +12071,9 @@ q(25645,{awp=40003,coords={
 q(26401,{awp=40003,coords={
 [69]={{65.9,62.9}}},providers={{"o",203134}},r=2,sourceQuests={25368}}),
 q(3122,{coords={
-[85]={{49.6,50.6}}},lvl=40,providers={{"i",9628}},qgs={3216},r=1,rwp=40003,sourceQuests={3121},u=2}),
+[85]={{49.6,50.6}}},lvl=40,qgs={3216},qis={9628},r=1,rwp=40003,sourceQuests={3121},u=2}),
 q(4267,{awp=20300,coords={
-[69]={{30.3,46.2}}},lvl=40,providers={{"i",11466}},qgs={3936},r=2,rwp=40003,sourceQuests={4266},u=2,g={
+[69]={{30.3,46.2}}},lvl=40,qgs={3936},qis={11466},r=2,rwp=40003,sourceQuests={4266},u=2,g={
 s(144372,34416,{b=1,f=4,loc=44,q=3,u=2}),
 s(144373,34417,{b=1,f=5,loc=44,q=3,u=2})}}),
 q(25252,{awp=40003,coords={
@@ -12093,11 +12093,11 @@ s(203567,54946,{b=1,f=5,loc=46,q=2}),
 s(203568,54947,{b=1,f=6,loc=47,q=2}),
 s(203569,54948,{b=1,f=3,q=2})}}),
 q(25398,{awp=40003,coords={
-[69]={{50.7,17.2}}},providers={{"i",52576}},qgs={40032},r=2,sourceQuests={25396,25397},g={
+[69]={{50.7,17.2}}},qgs={40032},qis={52576},r=2,sourceQuests={25396,25397},g={
 s(203538,54917,{b=1,f=4,loc=42,q=2}),
 s(203539,54918,{b=1,f=5,loc=45,q=2})}}),
 q(25250,{awp=40003,coords={
-[69]={{41.3,15.4}}},providers={{"i",52576}},qgs={39377},r=1,sourceQuests={25237,25241},g={
+[69]={{41.3,15.4}}},qgs={39377},qis={52576},r=1,sourceQuests={25237,25241},g={
 s(203540,54919,{b=1,f=4,loc=42,q=2}),
 s(203541,54920,{b=1,f=5,loc=45,q=2})}}),
 q(25447,{awp=40003,coords={
@@ -12110,7 +12110,7 @@ q(25436,{awp=40003,coords={
 [69]={{77.2,56.5}}},qgs={39725},r=2,sourceQuests={25429,25431,25433,25434},g={
 qo(1,{providers={{"n",40168}}})}}),
 q(25465,{awp=40003,coords={
-[69]={{48.7,44.8}}},providers={{"i",18904}},qgs={14637},g={
+[69]={{48.7,44.8}}},qgs={14637},qis={18904},g={
 qo(1,{crs={14603,14604,14638,14639,14640},providers={{"i",18956}}}),
 s(203572,54966,{b=1,f=25,q=2})}}),
 q(25431,{awp=40003,coords={
@@ -12151,7 +12151,7 @@ q(3123,{coords={
 [69]={{74.4,43.4}}},lvl=40,maps={26},qgs={8115},r=1,rwp=40003,sourceQuests={3122},u=2,g={
 qo(1,{cost={{"i",9618,1}},crs={2927},providers={{"i",9594}},u=2})}}),
 q(4281,{coords={
-[69]={{73.3,56.3}}},lvl=40,providers={{"i",11463}},r=2,rwp=40003,sourceQuests={4135},u=2}),
+[69]={{73.3,56.3}}},lvl=40,qss={11463},r=2,rwp=40003,sourceQuests={4135},u=2}),
 q(25304,{awp=40003,coords={
 [69]={{46,49.1}}},isBreadcrumb=1,qgs={3936},r=2}),
 q(25366,{awp=40003,coords={
@@ -12160,7 +12160,7 @@ i(54949,{b=1,f=52,q=2}),
 s(203570,54950,{b=1,f=4,loc=47,q=2}),
 i(9266,{q=1})}}),
 q(2903,{coords={
-[69]={{71.6,55.9}}},lvl=39,providers={{"i",9266},{"o",142195}},r=1,rwp=40003,sourceQuests={2902},u=2,g={
+[69]={{71.6,55.9}}},lvl=39,providers={{"o",142195}},qis={9266},r=1,rwp=40003,sourceQuests={2902},u=2,g={
 s(123072,9661,{b=1,f=8,q=2,u=2}),
 s(123073,9662,{b=1,f=7,loc=47,q=2,u=2})}}),
 q(25422,{awp=40003,coords={
@@ -12180,9 +12180,9 @@ q(25341,{awp=40003,coords={
 [69]={{51.9,47.9}}},qgs={39656},r=1,g={
 qo(1,{crs={5236,5240},providers={{"i",52832}}})}}),
 q(3002,{coords={
-[69]={{74.2,44.6}}},lvl=38,maps={85},providers={{"i",9371}},qgs={7777},r=1,rwp=40003,sourceQuests={2979},u=2}),
+[69]={{74.2,44.6}}},lvl=38,maps={85},qgs={7777},qis={9371},r=1,rwp=40003,sourceQuests={2979},u=2}),
 q(2978,{coords={
-[69]={{75.2,28.7},{80.8,35}}},lvl=38,providers={{"i",9370},{"o",143980}},r=1,rwp=40003,u=2}),
+[69]={{75.2,28.7},{80.8,35}}},lvl=38,providers={{"o",143980}},qss={9370},r=1,rwp=40003,u=2}),
 q(25400,{awp=40003,coords={
 [69]={{56.9,55}}},qgs={39653},r=2,g={
 qo(1,{providers={{"n",5234},{"n",5236},{"n",5240}}})}}),
@@ -12198,7 +12198,7 @@ q(25373,{awp=40003,coords={
 [69]={{74.5,42.8}}},qgs={39847},r=1,g={
 qo(1,{providers={{"n",39952}}})}}),
 q(4129,{coords={
-[69]={{31.9,45.1}}},lvl=40,providers={{"i",11462}},qgs={7880},r=2,rwp=40003,sourceQuests={4127},u=2}),
+[69]={{31.9,45.1}}},lvl=40,qgs={7880},qis={11462},r=2,rwp=40003,sourceQuests={4127},u=2}),
 q(25397,{awp=40003,coords={
 [69]={{50.7,17.2}}},qgs={40032},r=2,sourceQuests={25394},g={
 qo(1,{providers={{"n",40972}}})}}),
@@ -12232,7 +12232,7 @@ q(4124,{coords={
 q(4125,{coords={
 [69]={{31.9,45.1}}},lvl=40,qgs={7880},r=2,rwp=40003,sourceQuests={4124},u=2}),
 q(2942,{coords={
-[69]={{38.9,13.2}}},lvl=42,providers={{"i",9306},{"i",9307},{"o",144063}},r=2,rwp=40003,sourceQuests={2879},u=2,g={
+[69]={{38.9,13.2}}},lvl=42,providers={{"o",144063}},qis={9306,9307},r=2,rwp=40003,sourceQuests={2879},u=2,g={
 s(123065,9654,{b=1,f=27,q=2,u=2}),
 i(9655,{b=1,f=52,q=2,u=2})}}),
 q(3791,{coords={
@@ -12265,7 +12265,7 @@ qo(2,{providers={{"n",8961}},u=2})}}),
 q(4131,{coords={
 [69]={{31.9,45.1}}},lvl=40,qgs={7880},r=2,rwp=40003,sourceQuests={4129},u=2}),
 q(4135,{coords={
-[69]={{73.3,56.3}}},lvl=40,providers={{"i",11463},{"o",164953}},r=2,rwp=40003,sourceQuests={4131},u=2}),
+[69]={{73.3,56.3}}},lvl=40,providers={{"o",164953}},qis={11463},r=2,rwp=40003,sourceQuests={4131},u=2}),
 q(25387,{awp=40003,coords={
 [69]={{51.9,48}}},qgs={39656},r=1,sourceQuests={25329}}),
 q(25386,{awp=40003,coords={
@@ -12396,7 +12396,7 @@ q(7730,{coords={
 [69]={{74.8,42.6}}},description="This quest gets marked as completed when you complete the quest 'Verinias the Twisted' (25368).",lvl=39,qgs={7875},r=1,rwp=40003,sourceQuests={2903},u=2,g={
 qo(1,{crs={5244,5245,5246,5247,14661},providers={{"i",18961}},u=2})}}),
 q(7732,{coords={
-[69]={{74.8,42.6}}},lvl=39,maps={85},providers={{"i",19020}},qgs={7875},r=1,rwp=40003,sourceQuests={7730,7731},u=2,g={
+[69]={{74.8,42.6}}},lvl=39,maps={85},qgs={7875},qis={19020},r=1,rwp=40003,sourceQuests={7730,7731},u=2,g={
 i(19038,{b=1,f=52,q=2,u=2}),
 s(129862,19037,{b=1,f=7,loc=41,q=2,u=2})}})}),
 h(-46,{
@@ -12587,7 +12587,7 @@ q(6762,{coords={
 q(1123,{coords={
 [88]={{78.4,28.4}}},lvl=54,qgs={5769},r=1,rwp=40003,sourceQuests={1000,1004,1018},u=2}),
 q(10978,{c={11},coords={
-[80]={{72.5,63.3}}},lvl=70,maps={102},providers={{"i",32074}},qgs={22837},rwp=40001,sourceQuests={10965},u=2}),
+[80]={{72.5,63.3}}},lvl=70,maps={102},qgs={22837},qis={32074},rwp=40001,sourceQuests={10965},u=2}),
 q(28343,{awp=40003,c={11},coords={
 [80]={{52.4,40.4}}},lvl=47,maps={242},qgs={12042},sourceQuests={28289},g={
 qo(1,{providers={{"o",207103}}}),
@@ -12637,7 +12637,7 @@ i(18402,{b=1,f=52,q=2,u=2})}}),
 q(1185,{coords={
 [80]={{44.88,35.6}}},lvl=54,qgs={11939},rwp=40003,sourceQuests={6845},u=2}),
 q(1124,{coords={
-[80]={{51.7,45.1}}},lvl=54,providers={{"i",17355}},qgs={11801},rwp=40003,sourceQuests={1123,6762},u=2})}),
+[80]={{51.7,45.1}}},lvl=54,qgs={11801},qis={17355},rwp=40003,sourceQuests={1123,6762},u=2})}),
 h(-58,{
 n(7940,{coords={
 [80]={{51.6,33.2}}},g={
@@ -12801,7 +12801,7 @@ s(205083,57339,{b=1,f=24,q=2})}}),
 q(25324,{coords={
 [198]={{48.4,18.9}}},qgs={38917},sourceQuests={25424}}),
 q(25372,{coords={
-[198]={{27.3,55.5}}},providers={{"i",56057}},qgs={41381},sourceQuests={25381,25842},g={
+[198]={{27.3,55.5}}},qgs={41381},qis={56057},sourceQuests={25381,25842},g={
 s(205022,57267,{b=1,f=4,loc=41,q=3}),
 s(205021,57266,{b=1,f=5,loc=44,q=3}),
 s(205020,57265,{b=1,f=6,loc=47,q=3}),
@@ -13744,10 +13744,10 @@ q(753,{coords={
 qo(1,{coords={
 [7]={{50.2,81.3}}},providers={{"i",4755},{"o",2907}},u=2})}}),
 q(24857,{awp=30300,coords={
-[7]={{63.3,82.6}}},providers={{"i",4850},{"o",3076}},r=1,rwp=40003,u=2,g={
+[7]={{63.3,82.6}}},providers={{"o",3076}},qis={4850},r=1,rwp=40003,u=2,g={
 s(120019,4911,{b=1,f=8,q=1,u=2})}}),
 q(781,{coords={
-[7]={{63.3,82.6}}},providers={{"i",4850},{"i",4851},{"o",3076}},r=1,rwp=30300,u=2,g={
+[7]={{63.3,82.6}}},providers={{"o",3076}},qis={4850},qss={4851},r=1,rwp=30300,u=2,g={
 s(120019,4911,{b=1,f=8,q=1,rwp=40003,u=2})}}),
 q(3376,{coords={
 [7]={{44.8,76.6}}},lvl=3,qgs={3209},r=1,rwp=40003,u=2,g={
@@ -13759,9 +13759,9 @@ q(1519,{altQuests={1516},c={7},coords={
 [7]={{44.8,76.2}}},lvl=4,qgs={5888},r=1,rwp=40003,u=2,g={
 qo(1,{crs={2953},providers={{"i",6634}},u=2})}}),
 q(1520,{altQuests={1517},c={7},coords={
-[7]={{44.8,76.2}}},lvl=4,providers={{"i",6635}},qgs={5888},r=1,rwp=40003,sourceQuests={1519},u=2}),
+[7]={{44.8,76.2}}},lvl=4,qgs={5888},qis={6635},r=1,rwp=40003,sourceQuests={1519},u=2}),
 q(1521,{altQuests={1518},c={7},coords={
-[7]={{53.8,80.4}}},lvl=4,providers={{"i",6656}},qgs={5891},r=1,rwp=40003,sourceQuests={1520},u=2}),
+[7]={{53.8,80.4}}},lvl=4,qgs={5891},qis={6656},r=1,rwp=40003,sourceQuests={1520},u=2}),
 q(31165,{awp=50004,c={10},coords={
 [462]={{34,54}}},qgs={44927},races={6},rwp=70003}),
 q(27015,{awp=40003,c={2},coords={
@@ -13769,7 +13769,7 @@ q(27015,{awp=40003,c={2},coords={
 q(1462,{altQuests={1463},c={7},coords={
 [7]={{44.8,76.2}}},lvl=4,qgs={5888},r=1,repeatable=1,rwp=40003,sourceQuests={1519},u=2}),
 q(3092,{c={3},coords={
-[462]={{39.4,37}}},providers={{"i",9565}},qgs={2980},races={6},rwp=70003,sourceQuests={747}}),
+[462]={{39.4,37}}},qgs={2980},qis={9565},races={6},rwp=70003,sourceQuests={747}}),
 q(14461,{awp=40003,coords={
 [462]={{31,50.6}}},qgs={36694},r=1,sourceQuests={14455,14456},g={
 i(49539,{q=1})}}),
@@ -13822,11 +13822,11 @@ q(23733,{awp=40003,coords={
 q(755,{coords={
 [7]={{44.2,76.1}}},qgs={2981},r=1,rwp=40003,sourceQuests={753},u=2}),
 q(763,{coords={
-[7]={{44.2,76.1}}},providers={{"i",4783}},qgs={2981},r=1,rwp=40003,sourceQuests={757},u=2}),
+[7]={{44.2,76.1}}},qgs={2981},qis={4783},r=1,rwp=40003,sourceQuests={757},u=2}),
 q(3093,{c={7},coords={
-[462]={{39.4,37}}},providers={{"i",9552}},qgs={2980},races={6},rwp=70003,sourceQuests={747}}),
+[462]={{39.4,37}}},qgs={2980},qis={9552},races={6},rwp=70003,sourceQuests={747}}),
 q(3091,{c={1},coords={
-[462]={{39.4,37}}},providers={{"i",9547}},qgs={2980},races={6},rwp=70003,sourceQuests={747}}),
+[462]={{39.4,37}}},qgs={2980},qis={9547},races={6},rwp=70003,sourceQuests={747}}),
 q(14455,{awp=40003,coords={
 [462]={{31,50.6}}},qgs={36694},r=1,sourceQuests={14458},g={
 s(204994,57232,{b=1,f=6,loc=43,q=1}),
@@ -13860,7 +13860,7 @@ q(27023,{awp=40003,c={2},qgs={37737},races={6},rwp=70003,sourceQuests={27015}}),
 q(31166,{awp=50004,c={10},coords={
 [462]={{27.8,28.6}}},qgs={63327},races={6},rwp=70003}),
 q(3094,{c={11},coords={
-[462]={{39.4,37}}},providers={{"i",9581}},qgs={2980},races={6},rwp=70003,sourceQuests={747}})}),
+[462]={{39.4,37}}},qgs={2980},qis={9581},races={6},rwp=70003,sourceQuests={747}})}),
 h(-63,{
 s(117288,1388,{crs={2953},f=28,q=1,rwp=40003,u=2}),
 s(117285,1384,{crs={36708},f=25,q=1}),
@@ -13926,7 +13926,7 @@ s(204999,57237,{awp=40003,b=1,f=6,loc=42,q=2}),
 s(204990,57228,{awp=40003,b=1,f=5,loc=45,q=2}),
 s(204974,57212,{awp=40003,b=1,f=4,loc=47,q=2})}}),
 q(1656,{coords={
-[7]={{38.6,81.6}}},providers={{"i",7626}},qgs={6775},r=1,rwp=40003,u=2}),
+[7]={{38.6,81.6}}},qgs={6775},qis={7626},r=1,rwp=40003,u=2}),
 q(743,{coords={
 [7]={{47.4,61.2}}},lvl=5,qgs={2985},r=1,g={
 qo(1,{crs={2962,2963},providers={{"i",4751}}})}}),
@@ -13947,7 +13947,7 @@ q(11129,{awp=20102,coords={
 qo(1,{coords={
 [7]={{48.6,62.2}}},crs={2956,2957,3068},providers={{"i",33009},{"n",23616}}})}}),
 q(32670,{awp=50200,description="This quest is available to Tauren upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=10,races={6},rwp=100105}),
-q(14087,{awp=30300,description="The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46884}},races={6},rwp=40001,u=2}),
+q(14087,{awp=30300,description="The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46884},races={6},rwp=40001,u=2}),
 q(26188,{awp=40003,coords={
 [7]={{47.1,56.6}}},qgs={3055},r=1,g={
 qo(1,{crs={3035},providers={{"i",4805}}}),
@@ -13999,7 +13999,7 @@ q(771,{coords={
 qo(1,{providers={{"i",4808},{"o",2910}},u=2}),
 qo(2,{providers={{"i",4809},{"o",2912}},u=2})}}),
 q(772,{coords={
-[7]={{47.8,57.5}}},lvl=3,providers={{"i",4823}},qgs={3054},r=1,rwp=40003,sourceQuests={771},u=2,g={
+[7]={{47.8,57.5}}},lvl=3,qgs={3054},qis={4823},r=1,rwp=40003,sourceQuests={771},u=2,g={
 s(120014,4906,{b=1,f=5,loc=47,q=1,u=2}),
 s(200883,4958,{b=1,f=3,q=1,u=2})}}),
 q(773,{coords={
@@ -14048,7 +14048,7 @@ qo(1,{providers={{"i",15915},{"n",2959}},u=2})}}),
 q(6088,{c={3},coords={
 [7]={{47.8,55.6}}},lvl=10,qgs={3065},races={6},rwp=40003,sourceQuests={6087},u=2,g={
 qo(1,{providers={{"i",15916},{"n",2970}},u=2})}}),
-q(770,{lvl=6,providers={{"i",4854}},r=1,g={
+q(770,{lvl=6,qss={4854},r=1,g={
 s(120070,4971,{b=1,f=23,q=2}),
 s(118474,3079,{b=1,f=31,q=2})}}),
 q(6065,{c={3},coords={
@@ -14270,10 +14270,10 @@ q(13970,{coords={
 [10]={{58,49.4}}},qgs={34547},r=1,sourceQuests={13969},g={
 qo(1,{providers={{"i",46742},{"o",195118}}})}}),
 q(853,{coords={
-[10]={{51.44,30.15}}},lvl=10,maps={88},providers={{"i",5027}},qgs={3390},r=1,rwp=40003,sourceQuests={848},u=2,g={
+[10]={{51.44,30.15}}},lvl=10,maps={88},qgs={3390},qis={5027},r=1,rwp=40003,sourceQuests={848},u=2,g={
 s(120386,5340,{b=1,f=28,q=2,u=2})}}),
 q(1838,{c={1},coords={
-[10]={{57.23,30.34}}},cost={{"i",3575,10}},lvl=20,maps={25,65,301},providers={{"i",7587}},qgs={5878},r=1,rwp=40003,sourceQuests={1825},u=2,g={
+[10]={{57.23,30.34}}},cost={{"i",3575,10}},lvl=20,maps={25,65,301},qgs={5878},qis={7587},r=1,rwp=40003,sourceQuests={1825},u=2,g={
 qo(1,{crs={3998,3999,4001,4002,4003,4004},providers={{"i",7126}},u=2}),
 qo(2,{crs={2269},providers={{"i",7127}},u=2}),
 qo(4,{crs={6168},providers={{"i",6841}},u=2})}}),
@@ -14292,18 +14292,18 @@ q(2983,{c={7},coords={
 q(2984,{c={7},coords={
 [7]={{48.4,59.2}}},isBreadcrumb=1,lvl=10,nextQuests={1524},qgs={3066},r=1,rwp=40003,u=2}),
 q(1524,{c={7},coords={
-[10]={{55.8,20}}},lvl=10,providers={{"i",6653}},qgs={5907},r=1,rwp=40003,sourceQuests={1522,1523,2983,2984},u=2}),
+[10]={{55.8,20}}},lvl=10,qgs={5907},qis={6653},r=1,rwp=40003,sourceQuests={1522,1523,2983,2984},u=2}),
 q(1525,{c={7},coords={
 [1]={{38.6,58.8}}},lvl=10,qgs={5900},r=1,rwp=40003,sourceQuests={1524},u=2,g={
 qo(1,{crs={3267,3268,3269,3271},providers={{"i",5026}},u=2}),
 qo(2,{crs={3199},providers={{"i",6652}},u=2}),
 i(6636,{b=1,f=55,q=1,u=2})}}),
 q(1526,{c={7},coords={
-[1]={{38.6,58.8}}},lvl=10,providers={{"i",6653}},qgs={5900},r=1,rwp=40003,sourceQuests={1525},u=2,g={
+[1]={{38.6,58.8}}},lvl=10,qgs={5900},qis={6653},r=1,rwp=40003,sourceQuests={1525},u=2,g={
 qo(1,{coords={
 [1]={{38.6,58.2}}},crs={5893},providers={{"i",6636},{"i",6655}},u=2})}}),
 q(1527,{c={7},coords={
-[1]={{38.9,58.2}}},lvl=10,providers={{"i",6654},{"o",61934}},r=1,rwp=40003,sourceQuests={1526},u=2,g={
+[1]={{38.9,58.2}}},lvl=10,providers={{"o",61934}},qis={6654},r=1,rwp=40003,sourceQuests={1526},u=2,g={
 r(3599,{u=2}),
 i(5176,{b=1,description="You must keep this in your bags forever.",q=1,u=2})}}),
 q(2985,{c={7},coords={
@@ -14329,7 +14329,7 @@ q(1534,{c={7},coords={
 qo(1,{coords={
 [63]={{33,67}}},providers={{"i",7767},{"i",7770}},u=2})}}),
 q(220,{c={7},coords={
-[10]={{43.4,77.4}}},lvl=20,providers={{"i",7810}},qgs={5899},r=1,rwp=40003,sourceQuests={1534},u=2,g={
+[10]={{43.4,77.4}}},lvl=20,qgs={5899},qis={7810},r=1,rwp=40003,sourceQuests={1534},u=2,g={
 i(6637,{b=1,f=55,q=1,u=2})}}),
 q(63,{c={7},coords={
 [10]={{65.8,43.8}}},lvl=20,maps={21},qgs={5901},r=1,rwp=40003,sourceQuests={1534},u=2,g={
@@ -14338,7 +14338,7 @@ qo(1,{coords={
 q(100,{c={7},coords={
 [21]={{38.3,44.6}}},lvl=20,providers={{"o",113791}},r=1,rwp=40003,sourceQuests={1534},u=2}),
 q(96,{c={7},coords={
-[21]={{38.6,44.6}}},lvl=20,providers={{"i",7813}},qgs={5895},r=1,rwp=40003,sourceQuests={100},u=2,g={
+[21]={{38.6,44.6}}},lvl=20,qgs={5895},qis={7813},r=1,rwp=40003,sourceQuests={100},u=2,g={
 r(5394,{u=2}),
 i(5177,{b=1,description="You must keep this in your bags forever.",q=1,u=2})}}),
 q(1103,{c={7},coords={
@@ -14353,7 +14353,7 @@ s(120392,5346,{b=1,f=32,q=2,rwp=40003,u=2}),
 s(120390,5344,{b=1,f=21,q=2,rwp=40003,u=2}),
 s(120391,5345,{b=1,f=24,q=2,rwp=40003,u=2})}}),
 q(819,{coords={
-[10]={{37.9,16.1},{41.8,38.7},{43.8,12.2},{45,62.2},{54.7,37.2},{55.7,27.3},{55.8,20},{56.5,43.6},{57.1,9}}},lvl=11,providers={{"i",4926},{"o",3238}},r=1,rwp=40001,u=2}),
+[10]={{37.9,16.1},{41.8,38.7},{43.8,12.2},{45,62.2},{54.7,37.2},{55.7,27.3},{55.8,20},{56.5,43.6},{57.1,9}}},lvl=11,providers={{"o",3238}},qis={4926},r=1,rwp=40001,u=2}),
 q(821,{coords={
 [10]={{62.27,38.39}}},lvl=11,qgs={3292},r=1,rwp=40001,sourceQuests={819},u=2,g={
 qo(1,{crs={3241,3243,3415,3416,3425},providers={{"i",4893}},u=2}),
@@ -14481,11 +14481,11 @@ q(14056,{coords={
 [10]={{77.2,91.3}}},qgs={34749},r=1,sourceQuests={14052},g={
 qo(1,{crs={34747},providers={{"i",46834}}})}}),
 q(3634,{altQuests={3526,3629,3630,3632,3633,3635,3637,4181,29475,29477},coords={
-[10]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=2,requireSkill=202,rwp=40003,u=2}),
+[10]={{62.6,36.2}}},learnedAt=200,lvl=30,qgs={3494},qis={10789},r=2,requireSkill=202,rwp=40003,u=2}),
 q(3637,{altQuests={3526,3629,3630,3632,3633,3634,3635,4181,29475,29477},coords={
-[10]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003,u=2}),
+[10]={{62.6,36.2}}},learnedAt=200,lvl=30,qgs={3494},qis={10789},r=1,requireSkill=202,rwp=40003,u=2}),
 q(3633,{altQuests={3526,3629,3630,3632,3634,3635,3637,4181,29475,29477},coords={
-[10]={{62.6,36.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={3494},r=1,requireSkill=202,rwp=40003,u=2}),
+[10]={{62.6,36.2}}},learnedAt=200,lvl=30,qgs={3494},qis={10789},r=1,requireSkill=202,rwp=40003,u=2}),
 q(13621,{coords={
 [10]={{42.4,15.7}}},qgs={33263},r=1,sourceQuests={13620},g={
 qo(1,{providers={{"n",33302}}}),
@@ -14597,7 +14597,7 @@ s(206588,59551,{b=1,f=4,loc=44,q=2}),
 s(206589,59552,{b=1,f=5,loc=45,q=2}),
 s(206590,59553,{b=1,f=6,loc=47,q=2})}}),
 q(1060,{coords={
-[10]={{51.62,30.9}}},lvl=15,providers={{"i",5594}},qgs={3449},r=1,rwp=40003,sourceQuests={876},u=2}),
+[10]={{51.62,30.9}}},lvl=15,qgs={3449},qis={5594},r=1,rwp=40003,sourceQuests={876},u=2}),
 q(14038,{coords={
 [10]={{68.4,69}}},qgs={3391},r=1,sourceQuests={14034},g={
 qo(1,{providers={{"i",46829},{"o",195202}}})}}),
@@ -14708,9 +14708,9 @@ s(204690,56635,{b=1,f=6,loc=41,q=2})}}),
 q(14004,{coords={
 [10]={{44.3,24.9}}},qgs={9316},r=1,sourceQuests={29027}}),
 q(4976,{c={9},coords={
-[70]={{46,57}}},lvl=35,providers={{"i",12642}},qgs={6546},rwp=40003,sourceQuests={4961},u=2}),
+[70]={{46,57}}},lvl=35,qgs={6546},qis={12642},rwp=40003,sourceQuests={4961},u=2}),
 q(3923,{coords={
-[10]={{49,11.2}}},lvl=10,providers={{"i",11146}},qgs={9316},r=1,rwp=40003,sourceQuests={3922},u=2}),
+[10]={{49,11.2}}},lvl=10,qgs={9316},qis={11146},r=1,rwp=40003,sourceQuests={3922},u=2}),
 q(866,{coords={
 [10]={{67.9,71.5}}},description="To access this quest, you must have at least 40 skill in Herbalism.",lvl=9,qgs={3446},requireSkill=182,g={
 qo(1,{providers={{"i",5056}},requireSkill=182}),
@@ -14731,7 +14731,7 @@ q(29024,{altQuests={902},awp=40006,coords={
 s(206605,59568,{awp=40003,b=1,f=4,loc=45,q=2}),
 s(206606,59569,{awp=40003,b=1,f=5,loc=47,q=2})}}),
 q(894,{coords={
-[10]={{62.98,37.21}}},lvl=10,providers={{"i",5088}},qgs={3442},rwp=40003,u=2}),
+[10]={{62.98,37.21}}},lvl=10,qgs={3442},qis={5088},rwp=40003,u=2}),
 q(900,{coords={
 [10]={{52.41,11.6}}},lvl=10,providers={{"o",4141}},rwp=40003,sourceQuests={894},u=2,g={
 qo(1,{coords={
@@ -14745,7 +14745,7 @@ q(901,{coords={
 qo(1,{coords={
 [10]={{53,10.6}}},crs={3471},providers={{"i",5089}},u=2})}}),
 q(902,{coords={
-[10]={{52.41,11.6}}},lvl=10,providers={{"i",5054},{"o",4141}},rwp=40003,sourceQuests={901},u=2,g={
+[10]={{52.41,11.6}}},lvl=10,providers={{"o",4141}},qis={5054},rwp=40003,sourceQuests={901},u=2,g={
 s(120372,5324,{b=1,f=23,q=2,u=2}),
 s(120373,5325,{b=1,f=8,q=2,u=2})}}),
 q(3924,{coords={
@@ -14893,9 +14893,9 @@ s(206569,59532,{b=1,f=4,loc=43,q=2})}}),
 q(13991,{coords={
 [10]={{50,59.9}}},isBreadcrumb=1,nextQuests={14066},qgs={3338},r=1,sourceQuests={905}}),
 q(890,{coords={
-[10]={{62.68,36.24}}},lvl=9,providers={{"i",5080}},qgs={3391},rwp=40003,sourceQuests={887},u=2}),
+[10]={{62.68,36.24}}},lvl=9,qgs={3391},qis={5080},rwp=40003,sourceQuests={887},u=2}),
 q(892,{coords={
-[10]={{63.35,38.45}}},lvl=9,providers={{"i",5080}},qgs={3453},rwp=40003,sourceQuests={890},u=2}),
+[10]={{63.35,38.45}}},lvl=9,qgs={3453},qis={5080},rwp=40003,sourceQuests={890},u=2}),
 q(29094,{awp=40100,coords={
 [10]={{62.3,17.3}}},qgs={3442},r=1,sourceQuests={14006,29015,29086},g={
 qo(1,{providers={{"n",52203}}}),
@@ -14958,10 +14958,10 @@ qo(1,{coords={
 qo(2,{coords={
 [64]={{43.5,32.7}}},providers={{"i",6997}},u=2})}}),
 q(1804,{c={9},coords={
-[87]={{74.4,9.4}}},lvl=30,maps={56},providers={{"i",7006}},qgs={6294},r=2,rwp=40003,sourceQuests={1802},u=2,g={
+[87]={{74.4,9.4}}},lvl=30,maps={56},qgs={6294},qis={7006},r=2,rwp=40003,sourceQuests={1802},u=2,g={
 qo(1,{crs={1038,1057},providers={{"i",6930}},u=2})}}),
 q(1805,{c={9},coords={
-[998]={{76.6,36.8}}},lvl=30,maps={56},providers={{"i",7006}},qgs={6293},r=1,rwp=40003,sourceQuests={1803},u=2,g={
+[998]={{76.6,36.8}}},lvl=30,maps={56},qgs={6293},qis={7006},r=1,rwp=40003,sourceQuests={1803},u=2,g={
 qo(1,{crs={1038,1057},providers={{"i",6930}},u=2})}}),
 q(1824,{c={1},coords={
 [10]={{44.68,59.42}}},lvl=20,qgs={6394},r=1,rwp=40003,sourceQuests={1823},u=2,g={
@@ -15009,9 +15009,9 @@ i(6637,{b=1,f=55,q=1,u=2})}}),
 q(29026,{altQuests={3921},awp=40006,coords={
 [10]={{62.6,16.9}}},qgs={34674},r=1,sourceQuests={14003}}),
 q(3921,{coords={
-[10]={{62.98,37.21}}},lvl=10,providers={{"i",11142}},qgs={3442},r=1,rwp=40003,sourceQuests={902},u=2}),
+[10]={{62.98,37.21}}},lvl=10,qgs={3442},qis={11142},r=1,rwp=40003,sourceQuests={902},u=2}),
 q(1492,{coords={
-[10]={{51.44,30.15}}},lvl=9,providers={{"i",6462}},qgs={3390},r=1,rwp=40003,u=2}),
+[10]={{51.44,30.15}}},lvl=9,qgs={3390},qis={6462},r=1,rwp=40003,u=2}),
 q(13999,{coords={
 [10]={{48.6,58.2}}},qgs={3390},r=1,sourceQuests={13998}})}),
 h(-46,{
@@ -15233,7 +15233,7 @@ q(9248,{coords={
 [81]={{52,38.2}}},cost={{"i",20515,1}},lvl=58,minReputation={609,9000},qgs={15282},rwp=40003,u=2,g={
 i(22725,{b=1,f=52,q=3,u=2})}}),
 q(8287,{coords={
-[81]={{68.7,63}}},lvl=40,providers={{"i",20405}},qgs={15194},sourceQuests={8279},u=13,g={
+[81]={{68.7,63}}},lvl=40,qgs={15194},qis={20405},sourceQuests={8279},u=13,g={
 i(20645,{b=1,description="This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose.",f=51,q=2,u=13})}}),
 q(8361,{coords={
 [81]={{48.6,37.8}}},cost={{"i",20513,1}},lvl=60,qgs={15306},rwp=40003,u=2,g={
@@ -15294,41 +15294,41 @@ q(8380,{c={7},coords={
 [81]={{49.7,37.5}}},lvl=58,qgs={15183},rwp=40100,sourceQuests={8315},u=2,g={
 s(131196,20701,{b=1,f=6,loc=46,q=3,u=2}),
 s(131207,20712,{b=1,f=6,loc=44,q=3,u=2})}}),
-q(8780,{cost={{"i",4265,8},{"i",15564,8}},lvl=60,providers={{"i",21263}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(8780,{cost={{"i",4265,8},{"i",15564,8}},lvl=60,qss={21263},r=2,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(20805,{b=1,q=1,u=2})}}),
-q(8787,{cost={{"i",4265,8},{"i",15564,8}},lvl=60,providers={{"i",21264}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(8787,{cost={{"i",4265,8},{"i",15564,8}},lvl=60,qss={21264},r=1,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21386,{b=1,q=1,u=2})}}),
-q(8781,{cost={{"i",3853,2}},lvl=60,providers={{"i",21260}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(8781,{cost={{"i",3853,2}},lvl=60,qss={21260},r=2,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(20805,{b=1,q=1,u=2})}}),
-q(8786,{cost={{"i",3855,3}},lvl=60,providers={{"i",21261}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(8786,{cost={{"i",3855,3}},lvl=60,qss={21261},r=1,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21386,{b=1,q=1,u=2})}}),
 q(8331,{coords={
 [81]={{48.7,37.9}}},isBreadcrumb=1,lvl=54,minReputation={609,3000},nextQuests={8332},qgs={15270},rwp=40003,u=2}),
-q(8737,{lvl=60,providers={{"i",21245}},repeatable=1,rwp=40003,u=2,g={
+q(8737,{lvl=60,qss={21245},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",15211}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(21133,{b=1,q=1,u=2})}}),
-q(8496,{cost={{"i",6451,30},{"i",8545,30},{"i",14530,30}},lvl=60,providers={{"i",20806}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(8496,{cost={{"i",6451,30},{"i",8545,30},{"i",14530,30}},lvl=60,qss={20806},r=2,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(20805,{b=1,q=1,u=2})}}),
-q(8810,{cost={{"i",6451,30},{"i",8545,30},{"i",14530,30}},lvl=60,providers={{"i",21385}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(8810,{cost={{"i",6451,30},{"i",8545,30},{"i",14530,30}},lvl=60,qss={21385},r=1,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21386,{b=1,q=1,u=2})}}),
-q(8540,{cost={{"i",7936,3}},lvl=60,providers={{"i",20939}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(8540,{cost={{"i",7936,3}},lvl=60,qss={20939},r=2,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21132,{b=1,q=1,u=2})}}),
-q(8805,{cost={{"i",7936,3}},lvl=60,providers={{"i",21379}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(8805,{cost={{"i",7936,3}},lvl=60,qss={21379},r=1,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21266,{b=1,q=1,u=2})}}),
 q(8349,{coords={
 [81]={{52,38.2}}},isBreadcrumb=1,lvl=54,minReputation={609,3000},nextQuests={8348},qgs={15282},rwp=40003,sourceQuests={8332},u=2}),
 q(8351,{coords={
 [81]={{52,38.2}}},lvl=54,minReputation={609,21000},qgs={15282},rwp=40003,sourceQuests={8341},u=2}),
-q(8308,{crs={11698,11721,11722,11723,11724,11725,11726,11727,11728,11729,11730,11731,11732,11733,11734,13136,13301},lvl=58,providers={{"i",20461}},u=13,g={
+q(8308,{crs={11698,11721,11722,11723,11724,11725,11726,11727,11728,11729,11730,11731,11732,11733,11734,13136,13301},lvl=58,qss={20461},u=13,g={
 s(131218,20723,{b=1,f=21,q=2,u=13})}}),
 q(8310,{coords={
 [81]={{46,79.4}}},lvl=58,qgs={15171},sourceQuests={8304},u=13,g={
@@ -15340,7 +15340,7 @@ q(8573,{coords={
 s(131628,21188,{b=1,f=24,lvl=60,q=4,u=2}),
 i(21190,{b=1,f=52,q=4,u=2}),
 i(21180,{b=1,f=53,q=4,u=2})}}),
-q(8537,{lvl=60,providers={{"i",20945}},repeatable=1,rwp=40003,u=2,g={
+q(8537,{lvl=60,qss={20945},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",15209}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(20809,{b=1,q=1,u=2})}}),
@@ -15349,35 +15349,35 @@ q(8277,{coords={
 qo(1,{crs={11735},providers={{"i",20373}},u=13}),
 qo(2,{crs={11738},providers={{"i",20376}},u=13})}}),
 q(8304,{coords={
-[81]={{53.2,32.5}}},lvl=58,providers={{"i",68032}},qgs={15181},sourceQuests={8321},u=13,g={
+[81]={{53.2,32.5}}},lvl=58,qgs={15181},qis={68032},sourceQuests={8321},u=13,g={
 qo(1,{coords={
 [81]={{46,79.2}}},providers={{"n",15171}},u=13}),
 qo(2,{coords={
 [81]={{46.4,79}}},providers={{"n",15170}},u=13})}}),
 q(8307,{coords={
 [81]={{55.4,36.6}}},learnedAt=285,lvl=54,qgs={15174},requireSkill=185,u=13}),
-q(8497,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=60,providers={{"i",20807}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(8497,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=60,qss={20807},r=2,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21132,{b=1,q=1,u=2})}}),
-q(8804,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=55,providers={{"i",21378}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(8804,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=55,qss={21378},r=1,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21266,{b=1,q=1,u=2})}}),
-q(8856,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=60,providers={{"i",20807}},repeatable=1,rwp=40003,u=2,g={
+q(8856,{cost={{"i",20452,4},{"i",19440,4},{"i",7079,4}},lvl=60,qss={20807},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(20805,{b=1,q=1,u=2})}}),
 q(8332,{coords={
 [81]={{52,38.2}}},cost={{"i",20513,3},{"i",14344,1}},lvl=54,minReputation={609,3000},qgs={15282},rwp=40003,sourceQuests={8331},u=2,g={
 i(20422,{f=51,q=1,u=2})}}),
-q(8536,{lvl=60,providers={{"i",21751}},repeatable=1,rwp=40003,u=2,g={
+q(8536,{lvl=60,qss={21751},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",15307}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(21133,{b=1,q=1,u=2})}}),
 q(8319,{coords={
 [81]={{53.2,35.1}}},cost={{"i",20404,10}},lvl=57,maxReputation={609,42000},qgs={15306},repeatable=1,sourceQuests={8318},u=13}),
-q(8783,{cost={{"i",12810,2},{"i",12655,2}},lvl=60,providers={{"i",21265}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(8783,{cost={{"i",12810,2},{"i",12655,2}},lvl=60,qss={21265},r=2,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21132,{b=1,q=1,u=2})}}),
-q(8809,{cost={{"i",12810,2},{"i",12655,2}},lvl=60,providers={{"i",21381}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(8809,{cost={{"i",12810,2},{"i",12655,2}},lvl=60,qss={21381},r=1,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21266,{b=1,q=1,u=2})}}),
 q(8507,{coords={
@@ -15397,15 +15397,15 @@ i(20808,{b=1,q=1,u=2}),
 i(21266,{b=1,q=1,u=2}),
 i(20809,{b=1,q=1,u=2})}}),
 q(8309,{coords={
-[81]={{46.4,79.1}}},lvl=58,providers={{"i",20453}},qgs={15170},sourceQuests={8304},u=13,g={
+[81]={{46.4,79.1}}},lvl=58,qgs={15170},qis={20453},sourceQuests={8304},u=13,g={
 qo(1,{coords={
 [81]={{55.6,90.6}}},providers={{"i",20456},{"o",180453}},u=13})}}),
 q(8343,{coords={
 [81]={{48.6,37.9}}},isBreadcrumb=1,lvl=54,minReputation={609,21000},nextQuests={8341},qgs={15270},rwp=40003,u=2}),
-q(8541,{cost={{"i",3486,10},{"i",7966,10},{"i",12644,10}},lvl=60,providers={{"i",20940}},repeatable=1,rwp=40003,u=2,g={
+q(8541,{cost={{"i",3486,10},{"i",7966,10},{"i",12644,10}},lvl=60,qss={20940},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21132,{b=1,q=1,u=2})}}),
-q(8806,{cost={{"i",3486,10},{"i",7966,10},{"i",12644,10}},lvl=60,providers={{"i",21380}},repeatable=1,rwp=40003,u=2,g={
+q(8806,{cost={{"i",3486,10},{"i",7966,10},{"i",12644,10}},lvl=60,qss={21380},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21266,{b=1,q=1,u=2})}}),
 q(28528,{awp=40003,coords={
@@ -15415,22 +15415,22 @@ q(1126,{coords={
 [81]={{81.8,18.8}}},lvl=54,qgs={13220},rwp=40003,sourceQuests={1125},u=2,g={
 qo(1,{coords={
 [81]={{60.3,52.6}}},crs={13301},providers={{"i",17345},{"i",17346},{"o",178553}},u=2})}}),
-q(8739,{lvl=60,providers={{"i",21167}},repeatable=1,rwp=40003,u=2,g={
+q(8739,{lvl=60,qss={21167},repeatable=1,rwp=40003,u=2,g={
 qo(1,{coords={
 [81]={{44,14}}},crs={15611},providers={{"i",21161}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(20809,{b=1,q=1,u=2})}}),
-q(8738,{lvl=60,providers={{"i",21166}},repeatable=1,rwp=40003,u=2,g={
+q(8738,{lvl=60,qss={21166},repeatable=1,rwp=40003,u=2,g={
 qo(1,{coords={
 [81]={{53,97}}},crs={15609},providers={{"i",21160}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(21133,{b=1,q=1,u=2})}}),
-q(8534,{lvl=60,providers={{"i",21165}},repeatable=1,rwp=40003,u=2,g={
+q(8534,{lvl=60,qss={21165},repeatable=1,rwp=40003,u=2,g={
 qo(1,{coords={
 [81]={{23.6,62.4}}},crs={15610},providers={{"i",21158}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(21133,{b=1,q=1,u=2})}}),
-q(8535,{lvl=60,providers={{"i",20947}},repeatable=1,rwp=40003,u=2,g={
+q(8535,{lvl=60,qss={20947},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",15212}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(20809,{b=1,q=1,u=2})}}),
@@ -15474,10 +15474,10 @@ qo(1,{providers={{"o",181597},{"o",181598}},u=1602})}}),
 q(9422,{coords={
 [81]={{50.8,69.5}}},lvl=53,qgs={17079},r=1,rwp=70200,sourceQuests={9416},u=1602,g={
 qo(1,{providers={{"o",181597},{"o",181598}},u=1602})}}),
-q(8779,{cost={{"i",11178,1},{"i",14344,1},{"i",12364,1}},lvl=60,providers={{"i",21259}},repeatable=1,rwp=40003,u=2,g={
+q(8779,{cost={{"i",11178,1},{"i",14344,1},{"i",12364,1}},lvl=60,qss={21259},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(20805,{b=1,q=1,u=2})}}),
-q(8807,{cost={{"i",11178,1},{"i",14344,1},{"i",12364,1}},lvl=60,providers={{"i",21382}},repeatable=1,rwp=40003,u=2,g={
+q(8807,{cost={{"i",11178,1},{"i",14344,1},{"i",12364,1}},lvl=60,qss={21382},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21386,{b=1,q=1,u=2})}}),
 q(8318,{coords={
@@ -15486,7 +15486,7 @@ q(8280,{coords={
 [81]={{54.9,36}}},lvl=54,qgs={15191},sourceQuests={28527,28528,28856,28859},u=13,g={
 qo(1,{providers={{"n",11740}},u=13})}}),
 q(8313,{coords={
-[81]={{43.6,42}}},learnedAt=285,lvl=54,providers={{"i",20467},{"o",180503}},requireSkill=185,sourceQuests={8307},u=13,g={
+[81]={{43.6,42}}},learnedAt=285,lvl=54,providers={{"o",180503}},qis={20467},requireSkill=185,sourceQuests={8307},u=13,g={
 r(24801,{learnedAt=285,requireSkill=185,u=13})}}),
 q(8348,{coords={
 [81]={{48.6,37.8}}},cost={{"i",20514,1}},lvl=54,minReputation={609,3000},qgs={15306},rwp=40003,sourceQuests={8349},u=2,g={
@@ -15510,40 +15510,40 @@ q(8275,{coords={
 [87]={{58.5,47.3}}},isBreadcrumb=1,lvl=54,qgs={15187},r=2,rwp=40003,u=2}),
 q(8276,{coords={
 [85]={{47.6,65.8}}},isBreadcrumb=1,lvl=54,qgs={15188},r=1,rwp=40003,u=2}),
-q(8770,{lvl=60,providers={{"i",21749}},repeatable=1,rwp=40003,u=2,g={
+q(8770,{lvl=60,qss={21749},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11722}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8771,{lvl=60,providers={{"i",21750}},repeatable=1,rwp=40003,u=2,g={
+q(8771,{lvl=60,qss={21750},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11723}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8501,{lvl=60,providers={{"i",20941}},repeatable=1,rwp=40003,u=2,g={
+q(8501,{lvl=60,qss={20941},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11698}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8502,{lvl=60,providers={{"i",20942}},repeatable=1,rwp=40003,u=2,g={
+q(8502,{lvl=60,qss={20942},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11721}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8774,{lvl=60,providers={{"i",21252}},repeatable=1,rwp=40003,u=2,g={
+q(8774,{lvl=60,qss={21252},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11730}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8777,{lvl=60,providers={{"i",21256}},repeatable=1,rwp=40003,u=2,g={
+q(8777,{lvl=60,qss={21256},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11731}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8776,{lvl=60,providers={{"i",21255}},repeatable=1,rwp=40003,u=2,g={
+q(8776,{lvl=60,qss={21255},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11733}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8775,{lvl=60,providers={{"i",21253}},repeatable=1,rwp=40003,u=2,g={
+q(8775,{lvl=60,qss={21253},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11732}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8539,{lvl=60,providers={{"i",21249}},repeatable=1,rwp=40003,u=2,g={
+q(8539,{lvl=60,qss={21249},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11729}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8773,{lvl=60,providers={{"i",21248}},repeatable=1,rwp=40003,u=2,g={
+q(8773,{lvl=60,qss={21248},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11728}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8687,{lvl=60,providers={{"i",21251}},repeatable=1,rwp=40003,u=2,g={
+q(8687,{lvl=60,qss={21251},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11726}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
-q(8772,{lvl=60,providers={{"i",21250}},repeatable=1,rwp=40003,u=2,g={
+q(8772,{lvl=60,qss={21250},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",11725}},u=2}),
 i(20802,{b=1,q=2,u=2})}}),
 q(8315,{coords={
@@ -15551,19 +15551,19 @@ q(8315,{coords={
 qo(1,{coords={
 [81]={{48.5,58.5}}},crs={14862},providers={{"i",20464},{"i",20465}},u=2})}}),
 q(8285,{coords={
-[81]={{53.6,35.3}}},lvl=54,providers={{"i",20401}},qgs={15183},sourceQuests={8284},u=13}),
+[81]={{53.6,35.3}}},lvl=54,qgs={15183},qis={20401},sourceQuests={8284},u=13}),
 q(28859,{awp=40003,coords={
 [78]={{55.7,60.6}}},isBreadcrumb=1,nextQuests={8280},qgs={38269}}),
-q(8538,{lvl=60,providers={{"i",20948}},repeatable=1,rwp=40003,u=2,g={
+q(8538,{lvl=60,qss={20948},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",15206}},u=2}),
 qo(2,{providers={{"n",15207}},u=2}),
 qo(3,{providers={{"n",15220}},u=2}),
 qo(4,{providers={{"n",15208}},u=2}),
 i(21508,{b=1,q=2,u=2})}}),
-q(8778,{cost={{"i",8956,6},{"i",9061,5},{"i",15992,10}},lvl=60,providers={{"i",21257}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(8778,{cost={{"i",8956,6},{"i",9061,5},{"i",15992,10}},lvl=60,qss={21257},r=2,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(20805,{b=1,q=1,u=2})}}),
-q(8785,{cost={{"i",12804,6},{"i",8956,8},{"i",8152,6}},lvl=60,providers={{"i",21258}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(8785,{cost={{"i",12804,6},{"i",8956,8},{"i",8152,6}},lvl=60,qss={21258},r=1,repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21386,{b=1,q=1,u=2})}}),
 q(9023,{coords={
@@ -15594,18 +15594,18 @@ q(8284,{coords={
 [81]={{53.6,35.3}}},lvl=54,qgs={15183},u=13,g={
 qo(1,{coords={
 [81]={{23.4,11.8}}},providers={{"i",20378},{"o",180436},{"o",180501}},u=13})}}),
-q(8829,{cost={{"i",20407,1},{"i",12753,1},{"i",12735,3}},lvl=60,providers={{"i",21514}},repeatable=1,rwp=40003,u=2,g={
+q(8829,{cost={{"i",20407,1},{"i",12753,1},{"i",12735,3}},lvl=60,qss={21514},repeatable=1,rwp=40003,u=2,g={
 i(21515,{b=1,q=2,u=2})}}),
 q(8323,{coords={
 [81]={{68.7,63}}},cost={{"i",20404,10}},lvl=54,qgs={15194},sourceQuests={8279},u=13}),
-q(8498,{lvl=60,providers={{"i",20943}},repeatable=1,rwp=40003,u=2,g={
+q(8498,{lvl=60,qss={20943},repeatable=1,rwp=40003,u=2,g={
 qo(1,{crs={15308},providers={{"i",20803}},u=2}),
 i(20801,{b=1,q=2,u=2}),
 i(20809,{b=1,q=1,u=2})}}),
 q(8320,{coords={
 [81]={{53.2,35.2}}},lvl=60,qgs={15270},u=13,g={
 qo(1,{providers={{"n",11881}},u=13})}}),
-q(8740,{lvl=60,providers={{"i",20944}},repeatable=1,rwp=40003,u=2,g={
+q(8740,{lvl=60,qss={20944},repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",15541}},u=2}),
 qo(2,{providers={{"n",15542}},u=2}),
 i(20801,{b=1,q=2,u=2}),
@@ -15614,15 +15614,15 @@ q(8342,{coords={
 [81]={{52,38.2}}},cost={{"i",20514,3},{"i",14344,5}},lvl=54,minReputation={609,21000},qgs={15282},repeatable=1,rwp=40003,sourceQuests={8341},u=2,g={
 i(20451,{f=52,lvl=60,q=1,u=2})}}),
 q(6844,{coords={
-[81]={{81.8,18.8}}},lvl=54,maps={80},providers={{"i",17346}},qgs={13220},rwp=40003,sourceQuests={1126},u=2}),
-q(8782,{cost={{"i",14342,1},{"i",14227,1},{"i",14048,2}},lvl=60,providers={{"i",21262}},repeatable=1,rwp=40003,u=2,g={
+[81]={{81.8,18.8}}},lvl=54,maps={80},qgs={13220},qis={17346},rwp=40003,sourceQuests={1126},u=2}),
+q(8782,{cost={{"i",14342,1},{"i",14227,1},{"i",14048,2}},lvl=60,qss={21262},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21132,{b=1,q=1,u=2})}}),
-q(8808,{cost={{"i",14342,1},{"i",14227,1},{"i",14048,2}},lvl=60,providers={{"i",21384}},repeatable=1,rwp=40003,u=2,g={
+q(8808,{cost={{"i",14342,1},{"i",14227,1},{"i",14048,2}},lvl=60,qss={21384},repeatable=1,rwp=40003,u=2,g={
 i(20800,{b=1,q=2,u=2}),
 i(21266,{b=1,q=1,u=2})}}),
 q(8314,{coords={
-[81]={{46.4,79.1}}},lvl=58,providers={{"i",20463}},qgs={15170},sourceQuests={8309,8310},u=13}),
+[81]={{46.4,79.1}}},lvl=58,qgs={15170},qis={20463},sourceQuests={8309,8310},u=13}),
 q(8572,{coords={
 [81]={{51.2,38.9}}},cost={{"i",20801,4},{"i",20800,4},{"i",20802,7}},lvl=54,minReputation={609,9000},qgs={15176},repeatable=1,rwp=40003,sourceQuests={8800},u=2,g={
 i(21181,{b=1,f=53,q=3,u=2}),
@@ -16015,7 +16015,7 @@ qo(2,{coords={
 qo(3,{coords={
 [10]={{40.2,80.6}}},crs={3435},providers={{"i",5072}},u=2})}}),
 q(906,{coords={
-[10]={{44.55,59.26}}},lvl=17,providers={{"i",5072}},qgs={3430},r=1,rwp=40003,sourceQuests={879},u=2,g={
+[10]={{44.55,59.26}}},lvl=17,qgs={3430},qis={5072},r=1,rwp=40003,sourceQuests={879},u=2,g={
 s(120364,5316,{b=1,f=5,loc=42,q=2,u=2}),
 s(120365,5317,{b=1,f=5,loc=42,q=2,u=2})}}),
 q(24565,{coords={
@@ -16023,7 +16023,7 @@ q(24565,{coords={
 qo(1,{providers={{"n",37090}}}),
 qo(2,{providers={{"n",37091}}})}}),
 q(24606,{coords={
-[199]={{42.2,83.4}}},crs={37560,37660,37661},providers={{"i",49932}},g={
+[199]={{42.2,83.4}}},crs={37560,37660,37661},qss={49932},g={
 qo(1,{crs={37560,37660,37661},providers={{"i",49934}}})}}),
 q(5052,{coords={
 [10]={{44.55,59.26}}},cost={{"i",5075,1}},lvl=14,qgs={3430},r=1,rwp=40003,sourceQuests={878},u=2}),
@@ -16074,13 +16074,13 @@ r(6417,{itemID=5487,learnedAt=90,q=1,requireSkill=185,rwp=40300,u=2})}}),
 q(25104,{coords={
 [199]={{43.5,78.3}}},qgs={39118},r=2}),
 q(25044,{coords={
-[199]={{50,49.5}}},providers={{"i",49782}},qgs={38986},r=2,sourceQuests={25022},g={
+[199]={{50,49.5}}},qgs={38986},qis={49782},r=2,sourceQuests={25022},g={
 qo(1,{providers={{"n",37513}}}),
 s(202967,53265,{b=1,f=5,loc=47,q=2}),
 s(202991,53292,{b=1,f=3,q=2}),
 i(53267,{b=1,f=52,q=2})}}),
 q(1515,{c={9},coords={
-[10]={{44.6,59.2}}},lvl=20,providers={{"i",6624}},qgs={5911},races={2,5},rwp=40003,sourceQuests={1511},u=2}),
+[10]={{44.6,59.2}}},lvl=20,qgs={5911},qis={6624},races={2,5},rwp=40003,sourceQuests={1511},u=2}),
 q(24603,{coords={
 [199]={{44.5,88}}},qgs={37847},r=1,sourceQuests={24604},g={
 qo(1,{providers={{"n",37560},{"n",37660},{"n",37661},{"n",37929}}})}}),
@@ -16180,7 +16180,7 @@ q(25182,{coords={
 [199]={{43.5,78.3}}},qgs={39118},r=2,sourceQuests={25174},g={
 qo(1,{providers={{"n",39280}}})}}),
 q(883,{coords={
-[10]={{47.6,51.6}}},crs={3474},lvl=10,providers={{"i",5099}},r=1,rwp=40003,u=2}),
+[10]={{47.6,51.6}}},crs={3474},lvl=10,qss={5099},r=1,rwp=40003,u=2}),
 q(24941,{coords={
 [199]={{67,46.5}}},qgs={38620},r=2,g={
 qo(1,{coords={
@@ -16189,7 +16189,7 @@ q(24571,{coords={
 [199]={{50.3,40.4}}},qgs={38314},g={
 qo(1,{crs={37093},providers={{"i",49876}}})}}),
 q(24948,{coords={
-[199]={{67,46.5}}},providers={{"i",52017}},qgs={38620},r=2,sourceQuests={24943},g={
+[199]={{67,46.5}}},qgs={38620},qis={52017},r=2,sourceQuests={24943},g={
 qo(1,{providers={{"n",38818}}}),
 qo(2,{providers={{"n",38820}}})}}),
 q(25041,{coords={
@@ -16199,7 +16199,7 @@ q(24552,{coords={
 [199]={{41.5,47.1}}},qgs={3387},r=1,g={
 qo(1,{providers={{"n",37206},{"n",37207}}})}}),
 q(1512,{c={9},coords={
-[10]={{43.2,47.8}}},lvl=20,providers={{"i",6625}},qgs={5908},races={2,5},rwp=40003,sourceQuests={1515},u=2}),
+[10]={{43.2,47.8}}},lvl=20,qgs={5908},qis={6625},races={2,5},rwp=40003,sourceQuests={1515},u=2}),
 q(24633,{coords={
 [199]={{45.1,85.4}}},qgs={37812},r=1,sourceQuests={24653}}),
 q(874,{coords={
@@ -16248,7 +16248,7 @@ s(202995,53298,{b=1,f=26,q=2}),
 s(202977,53278,{b=1,f=5,loc=46,q=2}),
 s(202976,53277,{b=1,f=4,loc=41,q=2})}}),
 q(884,{coords={
-[10]={{49.6,59.6}}},crs={3473},lvl=10,providers={{"i",5102}},r=1,rwp=40003,u=2}),
+[10]={{49.6,59.6}}},crs={3473},lvl=10,qss={5102},r=1,rwp=40003,u=2}),
 q(24619,{coords={
 [199]={{42.6,70.2}}},qgs={37908},r=1,g={
 qo(1,{providers={{"i",49945},{"o",201904}}}),
@@ -16279,7 +16279,7 @@ qo(1,{providers={{"n",38661}}})}}),
 q(24921,{coords={
 [199]={{71.1,49.9}}},isBreadcrumb=1,nextQuests={24934},qgs={38623},r=2,sourceQuests={28550,28551}}),
 q(25087,{coords={
-[199]={{49.1,66.9}}},providers={{"i",52324}},qgs={39083},r=2,sourceQuests={25081}}),
+[199]={{49.1,66.9}}},qgs={39083},qis={52324},r=2,sourceQuests={25081}}),
 q(24943,{coords={
 [199]={{67,46.5}}},qgs={38620},r=2,sourceQuests={24941},g={
 qo(1,{providers={{"n",38658}}}),
@@ -16332,7 +16332,7 @@ qo(2,{crs={38663},providers={{"i",52036}}}),
 s(202968,53266,{b=1,f=6,loc=47,q=2}),
 s(202988,53289,{b=1,f=1,q=2})}}),
 q(24654,{coords={
-[199]={{41.6,69.4}}},providers={{"i",50128}},qgs={37910},r=1,g={
+[199]={{41.6,69.4}}},qgs={37910},qis={50128},r=1,g={
 qo(1,{providers={{"n",3252}}})}}),
 q(24621,{coords={
 [199]={{42.6,70.2}}},qgs={37908},r=1,sourceQuests={24620},g={
@@ -16344,7 +16344,7 @@ q(24566,{coords={
 [199]={{50.3,40.4}}},qgs={38314},sourceQuests={24570,24571},g={
 qo(1,{crs={37090,37091},providers={{"i",49882}}})}}),
 q(24534,{coords={
-[199]={{44.2,33.6}}},providers={{"i",49782}},qgs={11857},r=1,sourceQuests={24529},g={
+[199]={{44.2,33.6}}},qgs={11857},qis={49782},r=1,sourceQuests={24529},g={
 qo(1,{providers={{"n",37513}}}),
 s(202956,53252,{b=1,f=3,q=2}),
 s(202935,53228,{b=1,f=5,loc=47,q=2}),
@@ -16388,14 +16388,14 @@ q(24824,{coords={
 qo(1,{crs={37553},providers={{"i",50385}}})}}),
 q(24938,{coords={
 [199]={{69.3,49.1}}},qgs={38619},r=2,sourceQuests={24934}}),
-q(897,{lvl=10,providers={{"i",5138}},r=1,rwp=40003,u=2}),
-q(24518,{crs={37216},providers={{"i",49776}},r=1}),
+q(897,{lvl=10,qss={5138},r=1,rwp=40003,u=2}),
+q(24518,{crs={37216},qss={49776},r=1}),
 q(24601,{coords={
 [199]={{50.4,40.7}}},qgs={37570},sourceQuests={24574},g={
 i(53161,{b=1,f=52,q=2}),
 s(202932,53160,{b=1,f=5,loc=42,q=2}),
 s(202931,53159,{b=1,f=4,loc=47,q=2})}}),
-q(3513,{lvl=15,providers={{"i",10621}},r=1,rwp=40003,u=2}),
+q(3513,{lvl=15,qss={10621},r=1,rwp=40003,u=2}),
 q(25059,{coords={
 [199]={{50,49.5}}},qgs={38986},r=2,sourceQuests={25043,25045},g={
 qo(1,{providers={{"i",52277},{"o",202467}}})}}),
@@ -16428,7 +16428,7 @@ qo(1,{providers={{"i",49769},{"n",37167},{"o",201701}}}),
 s(202945,53239,{b=1,f=6,loc=43,q=2}),
 s(202937,53231,{b=1,f=5,loc=45,q=2}),
 i(53250,{b=1,f=52,q=2})}}),
-q(885,{crs={3472},lvl=10,providers={{"i",5103}},r=1,rwp=40003,u=2}),
+q(885,{crs={3472},lvl=10,qss={5103},r=1,rwp=40003,u=2}),
 q(893,{coords={
 [10]={{45.1,57.69}}},lvl=17,qgs={3433},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"i",5093}},u=2}),
@@ -16446,10 +16446,10 @@ q(24807,{coords={
 q(5044,{coords={
 [10]={{44.55,59.26}}},cost={{"i",5075,4}},lvl=14,qgs={3430},r=1,repeatable=1,rwp=40003,sourceQuests={5052},u=2}),
 q(25082,{coords={
-[199]={{49.2,67.9}}},providers={{"i",50128}},qgs={39085},r=2,g={
+[199]={{49.2,67.9}}},qgs={39085},qis={50128},r=2,g={
 qo(1,{providers={{"n",3252}}})}}),
 q(25027,{coords={
-[199]={{56.1,42.7}}},providers={{"i",52073}},qgs={38871},r=2,sourceQuests={25015,25022},g={
+[199]={{56.1,42.7}}},qgs={38871},qis={52073},r=2,sourceQuests={25015,25022},g={
 qo(1,{providers={{"n",38941}}}),
 qo(2,{providers={{"n",38940}}}),
 s(202999,53302,{b=1,f=5,loc=43,q=2}),
@@ -16673,7 +16673,7 @@ q(26074,{awp=40003,coords={
 [65]={{66.1,63.7}}},qgs={41023},r=1,sourceQuests={26073},g={
 qo(1,{providers={{"n",42030}}})}}),
 q(26098,{awp=40003,coords={
-[65]={{39.6,46.4}}},providers={{"i",56816}},qgs={42091},r=1,sourceQuests={26097}}),
+[65]={{39.6,46.4}}},qgs={42091},qis={56816},r=1,sourceQuests={26097}}),
 q(26046,{awp=40003,coords={
 [65]={{67,64.5}}},qgs={41990},r=1,sourceQuests={26044},g={
 qo(1,{providers={{"n",41993}}})}}),
@@ -16729,7 +16729,7 @@ s(205160,57426,{b=1,f=4,loc=42,q=2}),
 s(205161,57427,{b=1,f=6,loc=43,q=2}),
 s(205159,57425,{b=1,f=21,q=2})}}),
 q(5881,{coords={
-[65]={{47.17,61.08}}},lvl=23,maps={64},providers={{"i",16189}},qgs={11860},r=1,rwp=40003,u=2}),
+[65]={{47.17,61.08}}},lvl=23,maps={64},qgs={11860},qis={16189},r=1,rwp=40003,u=2}),
 q(25767,{awp=40003,coords={
 [65]={{58.7,56}}},qgs={40900},r=2,sourceQuests={25669},g={
 qo(1,{coords={
@@ -16746,11 +16746,11 @@ s(205156,57420,{b=1,f=6,loc=44,q=2}),
 s(205154,57418,{b=1,f=28,q=2}),
 s(205155,57419,{b=1,f=27,q=2})}}),
 q(1079,{coords={
-[65]={{59.6,67}}},lvl=17,providers={{"i",5738}},qgs={4077},r=2,rwp=40003,sourceQuests={1074,1077},u=2,g={
+[65]={{59.6,67}}},lvl=17,qgs={4077},qis={5738},r=2,rwp=40003,sourceQuests={1074,1077},u=2,g={
 qo(1,{coords={
 [65]={{66.1,51.3}}},providers={{"i",5718},{"o",19602}},u=2})}}),
 q(1080,{coords={
-[65]={{59.6,67}}},lvl=17,providers={{"i",5738}},qgs={4077},r=2,rwp=40003,sourceQuests={1074,1077},u=2,g={
+[65]={{59.6,67}}},lvl=17,qgs={4077},qis={5738},r=2,rwp=40003,sourceQuests={1074,1077},u=2,g={
 qo(1,{coords={
 [65]={{74.4,59.2}}},providers={{"i",5717},{"o",19603}},u=2})}}),
 q(6301,{coords={
@@ -16824,7 +16824,7 @@ q(25662,{awp=40003,coords={
 [65]={{59.6,56.9}}},qgs={40896},r=2,sourceQuests={25652},g={
 qo(1,{crs={41062},providers={{"i",55200},{"n",41070},{"o",203148}}})}}),
 q(1094,{coords={
-[65]={{59,62.53}}},lvl=16,providers={{"i",5735}},qgs={4201},rwp=40003,sourceQuests={1093},u=2}),
+[65]={{59,62.53}}},lvl=16,qgs={4201},qis={5735},rwp=40003,sourceQuests={1093},u=2}),
 q(1095,{coords={
 [10]={{62.97,37.19}}},lvl=16,qgs={3442},rwp=40003,sourceQuests={1094},u=2}),
 q(1096,{coords={
@@ -16836,7 +16836,7 @@ s(121466,6668,{b=1,f=5,loc=47,q=2,u=2})}}),
 q(1090,{coords={
 [65]={{71.8,60.05}}},lvl=17,qgs={4276},rwp=40003,u=2}),
 q(1092,{coords={
-[65]={{71.8,60.05}}},lvl=17,providers={{"i",5733}},qgs={4276},rwp=40003,sourceQuests={1090},u=2,g={
+[65]={{71.8,60.05}}},lvl=17,qgs={4276},qis={5733},rwp=40003,sourceQuests={1090},u=2,g={
 s(121464,6666,{b=1,f=6,loc=47,q=2,u=2})}}),
 q(25875,{awp=40003,coords={
 [65]={{48.3,51.9}}},qgs={41233},r=2,sourceQuests={25768}}),
@@ -16847,7 +16847,7 @@ q(25847,{awp=40003,coords={
 [65]={{72.3,83.8}}},qgs={11858},r=2,sourceQuests={25846},g={
 qo(1,{providers={{"i",56069},{"n",41351}}})}}),
 q(25846,{awp=40003,coords={
-[65]={{71.1,79.7}}},providers={{"i",56061}},qgs={41229},r=2,sourceQuests={25822}}),
+[65]={{71.1,79.7}}},qgs={41229},qis={56061},r=2,sourceQuests={25822}}),
 q(6282,{coords={
 [65]={{47.17,61.08}}},lvl=18,qgs={11860},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",4022}},u=2}),
@@ -16869,7 +16869,7 @@ q(25739,{awp=40003,coords={
 qo(1,{coords={
 [65]={{57.6,69.2}}},providers={{"n",41185}}})}}),
 q(25647,{awp=40003,coords={
-[65]={{72.3,61.7}}},crs={40905},providers={{"i",55181}},r=2,sourceQuests={25640}}),
+[65]={{72.3,61.7}}},crs={40905},qss={55181},r=2,sourceQuests={25640}}),
 q(26058,{awp=40003,coords={
 [65]={{66.2,62.9}}},qgs={40902},r=1,sourceQuests={26048},g={
 qo(1,{providers={{"n",42015},{"n",42016}}}),
@@ -16910,11 +16910,11 @@ qo(3,{coords={
 qo(4,{coords={
 [65]={{60,64.2}}},providers={{"i",55223},{"o",203175}}})}}),
 q(1091,{coords={
-[65]={{59.6,67}}},lvl=17,providers={{"i",5717}},qgs={4077},r=2,rwp=40003,sourceQuests={1079,1080},u=2}),
+[65]={{59.6,67}}},lvl=17,qgs={4077},qis={5717},r=2,rwp=40003,sourceQuests={1079,1080},u=2}),
 q(6401,{coords={
 [10]={{35.23,27.79}}},lvl=12,qgs={11857},r=1,rwp=40003,sourceQuests={6523},u=2}),
 q(1511,{c={9},coords={
-[65]={{73.2,95}}},lvl=20,providers={{"i",6624}},qgs={4197},races={2,5},rwp=40003,sourceQuests={1510},u=2}),
+[65]={{73.2,95}}},lvl=20,qgs={4197},qis={6624},races={2,5},rwp=40003,sourceQuests={1510},u=2}),
 q(6629,{coords={
 [10]={{35.23,27.79}}},lvl=12,qgs={11857},r=1,rwp=40003,sourceQuests={6548},u=2,g={
 qo(1,{coords={
@@ -16927,7 +16927,7 @@ s(205231,57507,{b=1,f=5,loc=46,q=2}),
 s(205230,57506,{b=1,f=3,q=2}),
 s(205232,57508,{b=1,f=21,q=2})}}),
 q(26004,{awp=40003,coords={
-[65]={{74.2,47.7}}},providers={{"i",56469}},qgs={34341},r=1,sourceQuests={26002}}),
+[65]={{74.2,47.7}}},qgs={34341},qis={56469},r=1,sourceQuests={26002}}),
 q(25891,{awp=40003,coords={
 [65]={{40,33.6}}},qgs={41482},r=2,sourceQuests={25889}}),
 q(25809,{awp=40003,coords={
@@ -16941,7 +16941,7 @@ q(26101,{awp=40003,coords={
 q(28084,{awp=40003,coords={
 [65]={{65.9,64.1}}},qgs={42028},r=1,sourceQuests={26004}}),
 q(25649,{awp=40003,coords={
-[65]={{72.5,61.5}}},providers={{"i",67437}},qgs={40879},r=2,sourceQuests={25647}}),
+[65]={{72.5,61.5}}},qgs={40879},qis={67437},r=2,sourceQuests={25647}}),
 q(26028,{awp=40003,coords={
 [65]={{66.1,64.2}}},description="Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",qgs={40907},r=1,sourceQuests={26026},g={
 qo(1,{providers={{"n",35203}}}),
@@ -16975,9 +16975,9 @@ q(1088,{coords={
 [65]={{45.91,60.35}}},lvl=20,maps={63},qgs={4198},r=1,rwp=40003,sourceQuests={1087},u=2,g={
 qo(1,{coords={
 [63]={{62,51.2}}},crs={4273},providers={{"i",5686}},u=2})}}),
-q(26016,{awp=40003,crs={41937},providers={{"i",56474}},r=1,rwp=50004,u=2}),
+q(26016,{awp=40003,crs={41937},qss={56474},r=1,rwp=50004,u=2}),
 q(25650,{awp=40003,coords={
-[65]={{70.8,63}}},providers={{"i",55182}},qgs={40881},r=2,sourceQuests={25649}}),
+[65]={{70.8,63}}},qgs={40881},qis={55182},r=2,sourceQuests={25649}}),
 q(25741,{awp=40003,coords={
 [65]={{59,56.4}}},qgs={40898},r=2,sourceQuests={25669},g={
 qo(1,{crs={4005,4006,4007},providers={{"i",55280}}})}}),
@@ -17026,7 +17026,7 @@ s(205166,57432,{b=1,f=5,loc=47,q=2}),
 s(205167,57433,{b=1,f=21,q=2}),
 s(205165,57431,{b=1,f=1,q=2})}}),
 q(25844,{awp=40003,coords={
-[65]={{70.9,79.7}}},providers={{"i",56059}},qgs={41278},r=2,sourceQuests={25837}}),
+[65]={{70.9,79.7}}},qgs={41278},qis={56059},r=2,sourceQuests={25837}}),
 q(25889,{awp=40003,coords={
 [65]={{40,33.6}}},qgs={41482},r=2,sourceQuests={25880},g={
 qo(1,{providers={{"i",56168},{"n",41528}}}),
@@ -17068,12 +17068,12 @@ qo(4,{coords={
 s(205175,57443,{b=1,f=6,loc=40,q=2}),
 i(57442,{b=1,f=52,q=2})}}),
 q(26048,{awp=40003,coords={
-[65]={{67.1,64.5}}},providers={{"i",56577}},qgs={41991},r=1,sourceQuests={26045,26046,26047},g={
+[65]={{67.1,64.5}}},qgs={41991},qis={56577},r=1,sourceQuests={26045,26046,26047},g={
 s(205216,57491,{b=1,f=6,loc=46,q=2}),
 s(205215,57490,{b=1,f=5,loc=45,q=2}),
 i(57489,{b=1,f=52,q=2})}}),
 q(1077,{coords={
-[84]={{43.1,80.3}}},lvl=17,providers={{"i",5731}},qgs={4078},r=2,rwp=40003,sourceQuests={1076},u=2}),
+[84]={{43.1,80.3}}},lvl=17,qgs={4078},qis={5731},r=2,rwp=40003,sourceQuests={1076},u=2}),
 q(26076,{awp=40003,coords={
 [65]={{52.9,39.1}}},qgs={42033},r=1,sourceQuests={26075},g={
 qo(1,{providers={{"i",56800},{"n",42034}}}),
@@ -17086,7 +17086,7 @@ qo(1,{crs={3988},providers={{"i",5734}},u=2})}}),
 q(25765,{awp=40003,coords={
 [65]={{59.5,57}}},qgs={40897},r=2,sourceQuests={25739}}),
 q(25845,{awp=40003,coords={
-[65]={{72.7,81.1}}},providers={{"i",56060}},qgs={41350},r=2,sourceQuests={25844}}),
+[65]={{72.7,81.1}}},qgs={41350},qis={56060},r=2,sourceQuests={25844}}),
 q(25925,{awp=40003,coords={
 [65]={{40,33.6}}},qgs={41482},r=2,sourceQuests={25891},g={
 qo(1,{providers={{"n",35163}}}),
@@ -17094,7 +17094,7 @@ qo(2,{providers={{"n",35158},{"n",35159},{"n",35160},{"n",35161},{"n",35174}}})}
 q(25793,{awp=40003,coords={
 [65]={{71.1,79.7}}},qgs={41229},r=2,sourceQuests={25765}}),
 q(1089,{coords={
-[65]={{45.91,60.35}}},lvl=20,providers={{"i",5687},{"o",19599}},qgs={4198},r=1,rwp=40003,sourceQuests={1088},u=2,g={
+[65]={{45.91,60.35}}},lvl=20,providers={{"o",19599}},qgs={4198},qis={5687},r=1,rwp=40003,sourceQuests={1088},u=2,g={
 qo(1,{coords={
 [65]={{25.6,11.4}}},providers={{"i",5687},{"i",5689},{"o",19596}},u=2}),
 qo(2,{coords={
@@ -17427,9 +17427,9 @@ qo(2,{providers={{"i",11018}},u=2})}}),
 q(25112,{awp=40003,coords={
 [71]={{52.3,28.1}}},qgs={39178}}),
 q(4508,{coords={
-[71]={{50.8,27}}},lvl=50,maps={89},providers={{"i",11844}},qgs={5594},r=2,rwp=40003,sourceQuests={4507},u=2}),
+[71]={{50.8,27}}},lvl=50,maps={89},qgs={5594},qis={11844},r=2,rwp=40003,sourceQuests={4507},u=2}),
 q(4509,{coords={
-[71]={{50.8,27}}},lvl=50,maps={85},providers={{"i",11844}},qgs={5594},r=1,rwp=40003,sourceQuests={4507},u=2}),
+[71]={{50.8,27}}},lvl=50,maps={85},qgs={5594},qis={11844},r=1,rwp=40003,sourceQuests={4507},u=2}),
 q(25166,{awp=40003,coords={
 [71]={{72.2,45.2}}},qgs={38704},r=2,sourceQuests={25053,26886,26887},g={
 qo(1,{providers={{"n",38749}}}),
@@ -17458,7 +17458,7 @@ i(16971,{f=55,lvl=40,q=1,requireSkill=185,u=2}),
 r(18260,{learnedAt=200,rank=4,requireSkill=185,rwp=30100,u=2}),
 r(64054,{learnedAt=250,requireSkill=185,u=2})}}),
 q(2882,{coords={
-[71]={{55.4,92.2}}},cost={{"i",9252,1},{"i",9253,1},{"i",9251,1},{"i",9275,1}},lvl=40,providers={{"i",9254},{"o",142189}},repeatable=1,rwp=40003,u=2,g={
+[71]={{55.4,92.2}}},cost={{"i",9252,1},{"i",9253,1},{"i",9251,1},{"i",9275,1}},lvl=40,providers={{"o",142189}},qss={9254},repeatable=1,rwp=40003,u=2,g={
 qo(1,{crs={7899,7901,7902},providers={{"i",9275}},u=2}),
 i(9265,{q=2,u=2,g={
 i(9360,{f=55,q=1,u=2}),
@@ -17488,8 +17488,8 @@ q(25060,{awp=40003,coords={
 [71]={{50,82.9}}},qgs={39059},r=2,sourceQuests={25061},g={
 qo(1,{providers={{"n",39020}}})}}),
 q(2661,{coords={
-[71]={{51,26.8}}},lvl=44,providers={{"i",8528}},qgs={7583},rwp=40003,sourceQuests={2641},u=2}),
-q(2874,{lvl=40,maps={224},providers={{"i",9245}},qgs={7881},rwp=40003,sourceQuests={2873},u=2,g={
+[71]={{51,26.8}}},lvl=44,qgs={7583},qis={8528},rwp=40003,sourceQuests={2641},u=2}),
+q(2874,{lvl=40,maps={224},qgs={7881},qis={9245},rwp=40003,sourceQuests={2873},u=2,g={
 s(123047,9636,{b=1,f=4,loc=45,q=2,u=2}),
 s(123048,9637,{b=1,f=7,loc=47,q=2,u=2})}}),
 q(3321,{coords={
@@ -17501,7 +17501,7 @@ qo(1,{crs={40632,40635,44762,44763},providers={{"i",54829}}})}}),
 q(25541,{awp=40003,coords={
 [71]={{71.8,45.4}}},qgs={38703},r=1,sourceQuests={24949},g={
 qo(1,{crs={40632,40635,44762,44763},providers={{"i",54829}}})}}),
-q(351,{description="The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",lvl=43,providers={{"i",8623}}}),
+q(351,{description="The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",lvl=43,qss={8623}}),
 q(25565,{awp=40003,coords={
 [71]={{40.1,77}}},qgs={40109},r=2,sourceQuests={28881},g={
 qo(1,{providers={{"i",52061},{"o",202420}}})}}),
@@ -17537,7 +17537,7 @@ q(25534,{awp=40003,coords={
 [71]={{71.8,45.4}}},qgs={38703},r=1,sourceQuests={24927},g={
 qo(1,{providers={{"n",40593}}})}}),
 q(3022,{coords={
-[71]={{52.2,26.8}}},lvl=42,maps={57},providers={{"i",9507}},qgs={7763},r=2,rwp=40003,u=2}),
+[71]={{52.2,26.8}}},lvl=42,maps={57},qgs={7763},qis={9507},r=2,rwp=40003,u=2}),
 q(28507,{awp=40003,coords={
 [89]={{29.6,48.4},{39.6,11.6},{45,50.5}},
 [103]={{55.5,47.9}}},isBreadcrumb=1,lvl={44,48},nextQuests={25049},providers={{"o",207321},{"o",207322}},r=2}),
@@ -17570,11 +17570,11 @@ q(7659,{coords={
 [71]={{51.4,28.7}}},cost={{"i",12359,20}},learnedAt=265,lvl=50,qgs={14567},requireSkill=164,rwp=40003,sourceQuests={7652},u=2,g={
 r(16646,{b=1,itemID=12687,learnedAt=265,q=2,requireSkill=164,u=2})}}),
 q(2606,{coords={
-[71]={{51.8,28.6}}},lvl=44,providers={{"i",8603}},qgs={7564},rwp=40003,sourceQuests={2605},u=2}),
+[71]={{51.8,28.6}}},lvl=44,qgs={7564},qis={8603},rwp=40003,sourceQuests={2605},u=2}),
 q(110,{coords={
 [71]={{50.2,27.5}}},lvl=39,qgs={7724},rwp=40003,sourceQuests={10},u=2}),
 q(113,{coords={
-[71]={{50.9,27}}},lvl=39,providers={{"i",8594}},qgs={5594},rwp=40003,sourceQuests={110},u=2}),
+[71]={{50.9,27}}},lvl=39,qgs={5594},qis={8594},rwp=40003,sourceQuests={110},u=2}),
 q(24953,{awp=40003,coords={
 [71]={{55.6,60.8}}},qgs={38706},sourceQuests={24951},g={
 i(56851,{b=1,f=51,q=2}),
@@ -17590,7 +17590,7 @@ q(25019,{awp=40003,coords={
 [71]={{33.2,77}}},qgs={38922},r=1,sourceQuests={25018},g={
 qo(1,{providers={{"n",38998}}})}}),
 q(3914,{coords={
-[71]={{53.9,29}}},lvl=47,maps={78},providers={{"i",11162},{"o",148504}},rwp=40003,sourceQuests={3913},u=2}),
+[71]={{53.9,29}}},lvl=47,maps={78},providers={{"o",148504}},qis={11162},rwp=40003,sourceQuests={3913},u=2}),
 q(25054,{awp=40003,coords={
 [71]={{72.2,45.2}}},qgs={38704},r=2,sourceQuests={25050},g={
 qo(1,{providers={{"i",51549},{"o",202263},{"o",203019},{"o",203021},{"o",203022}}})}}),
@@ -17635,7 +17635,7 @@ q(648,{coords={
 s(123054,9643,{b=1,f=8,q=2}),
 s(123055,9644,{b=1,f=1,q=2})}}),
 q(864,{coords={
-[71]={{52.4,28.4}}},lvl=38,maps={998},providers={{"i",8527}},qgs={7407},r=1,rwp=40003,sourceQuests={654},u=2,g={
+[71]={{52.4,28.4}}},lvl=38,maps={998},qgs={7407},qis={8527},r=1,rwp=40003,sourceQuests={654},u=2,g={
 s(124306,11502,{b=1,f=5,loc=41,q=2,u=2}),
 s(123046,9635,{b=1,f=3,q=2,u=2}),
 s(123045,9634,{b=1,f=4,loc=44,q=2,u=2})}}),
@@ -17694,7 +17694,7 @@ s(204783,56840,{b=1,f=4,loc=41,q=2}),
 s(204784,56841,{b=1,f=5,loc=44,q=2}),
 s(204785,56842,{b=1,f=6,loc=40,q=2}),
 s(204786,56843,{b=1,f=7,loc=41,q=2})}}),
-q(2876,{lvl=40,providers={{"i",9250}},rwp=40003,u=2}),
+q(2876,{lvl=40,qss={9250},rwp=40003,u=2}),
 q(3639,{altQuests={3641,3643},coords={
 [71]={{54.4,27.2}}},cost={{"i",10559,6},{"i",4407,1},{"i",4392,2}},learnedAt=200,lvl=30,qgs={8126},requireSkill=202,rwp=30002,sourceQuests={3638},u=2}),
 q(379,{coords={
@@ -17722,7 +17722,7 @@ q(4504,{coords={
 [71]={{51.6,26.8}}},lvl=48,maps={78},qgs={7876},rwp=40003,u=2,g={
 qo(1,{crs={6517,6518,6519,6527},providers={{"i",11834}},u=2})}}),
 q(654,{coords={
-[71]={{52.4,28.4}}},lvl=38,providers={{"i",8523},{"i",8524}},r=1,rwp=40003,sourceQuests={379},u=2,g={
+[71]={{52.4,28.4}}},lvl=38,qis={8523},qss={8524},r=1,rwp=40003,sourceQuests={379},u=2,g={
 qo(1,{crs={5419,5420,5421},providers={{"i",9437},{"i",9440}},u=2}),
 qo(2,{crs={5425,5426,5427,8208},providers={{"i",9439},{"i",9441}},u=2}),
 qo(3,{crs={5422,5423,5424,7803},providers={{"i",9438},{"i",9442}},u=2})}}),
@@ -17744,12 +17744,12 @@ qo(3,{providers={{"n",12046}},u=2}),
 s(128447,16738,{b=1,f=4,loc=44,q=2,u=2}),
 s(128448,16739,{b=1,f=5,loc=41,q=2,u=2})}}),
 q(25421,{awp=40003,coords={
-[71]={{37.8,84.1}}},providers={{"i",52470},{"o",202474}},r=2,g={
+[71]={{37.8,84.1}}},providers={{"o",202474}},qis={52470},r=2,g={
 s(204829,56897,{b=1,f=5,loc=40,q=2}),
 s(204830,56898,{b=1,f=6,loc=47,q=2}),
 s(204831,56899,{b=1,f=7,loc=45,q=2})}}),
 q(25107,{awp=40003,coords={
-[71]={{37.8,84.1}}},providers={{"i",52470},{"o",202474}},r=1,g={
+[71]={{37.8,84.1}}},providers={{"o",202474}},qis={52470},r=1,g={
 s(204832,56900,{b=1,f=5,loc=40,q=2}),
 s(204833,56901,{b=1,f=6,loc=47,q=2}),
 s(204834,56902,{b=1,f=7,loc=45,q=2})}}),
@@ -18555,24 +18555,24 @@ q(26940,{awp=40003,c={8},coords={
 [460]={{47.4,59.7}}},qgs={43006},races={4},rwp=70003,sourceQuests={26841},g={
 qo(2,{providers={{"n",44614}}})}}),
 q(31168,{awp=50004,c={10},coords={
-[460]={{45.8,73}}},providers={{"i",85205}},qgs={2077},races={4,22},rwp=70003,sourceQuests={28714}}),
+[460]={{45.8,73}}},qgs={2077},qis={85205},races={4,22},rwp=70003,sourceQuests={28714}}),
 q(921,{coords={
 [57]={{59,39.4}}},qgs={3514},r=2,rwp=40003,sourceQuests={920},u=2,g={
 qo(1,{coords={
 [57]={{59.94,33.07}}},providers={{"i",5184},{"i",5185}},u=2})}}),
 q(928,{coords={
-[57]={{59,39.4}}},providers={{"i",5186}},qgs={3514},r=2,rwp=40003,sourceQuests={921},u=2}),
+[57]={{59,39.4}}},qgs={3514},qis={5186},r=2,rwp=40003,sourceQuests={921},u=2}),
 q(28715,{awp=40003,coords={
 [460]={{45.9,72.9}}},qgs={2077},r=2,sourceQuests={28713,28734},g={
 qo(1,{coords={
 [460]={{33.3,77.4}}},providers={{"i",46700},{"o",195074}}}),
 i(46753,{f=113,q=1})}}),
 q(2159,{coords={
-[460]={{54.6,84.7}}},providers={{"i",7627}},qgs={6780},r=2}),
+[460]={{54.6,84.7}}},qgs={6780},qis={7627},r=2}),
 q(3118,{c={4},coords={
-[460]={{45.8,73}}},providers={{"i",9551}},qgs={2077,2079},races={4},rwp=70003,sourceQuests={28714}}),
+[460]={{45.8,73}}},qgs={2077,2079},qis={9551},races={4},rwp=70003,sourceQuests={28714}}),
 q(3117,{c={3},coords={
-[460]={{45.8,73}}},providers={{"i",9567}},qgs={2077,2079},races={4},rwp=70003,sourceQuests={28714}}),
+[460]={{45.8,73}}},qgs={2077,2079},qis={9567},races={4},rwp=70003,sourceQuests={28714}}),
 q(28714,{awp=40003,coords={
 [460]={{45.6,74.5},{46.3,73.5}}},qgs={2079},r=2,sourceQuests={28713},g={
 qo(1,{crs={1988,1989},providers={{"i",3297}}}),
@@ -18580,9 +18580,9 @@ s(120439,5398,{b=1,f=5,loc=46,q=1}),
 s(120440,5399,{b=1,f=6,loc=47,q=1}),
 s(200992,11190,{b=1,f=4,loc=44,q=1})}}),
 q(26841,{awp=40003,c={8},coords={
-[460]={{45.9,72.9}}},providers={{"i",60400}},qgs={2077,2079},races={4},rwp=70003}),
+[460]={{45.9,72.9}}},qgs={2077,2079},qis={60400},races={4},rwp=70003}),
 q(3119,{c={5},coords={
-[460]={{45.8,73}}},providers={{"i",9557}},qgs={2077,2079},races={4},rwp=70003,sourceQuests={28714}}),
+[460]={{45.8,73}}},qgs={2077,2079},qis={9557},races={4},rwp=70003,sourceQuests={28714}}),
 q(5622,{c={5},coords={
 [57]={{59.2,40.4}}},isBreadcrumb=1,lvl=5,nextQuests={5621},qgs={3595},races={4},rwp=40003,u=2}),
 q(28724,{awp=40003,coords={
@@ -18596,7 +18596,7 @@ qo(1,{crs={1988,1989},providers={{"i",10639},{"o",152094}},u=2}),
 qo(2,{providers={{"i",10641},{"o",152095}},u=2}),
 qo(3,{crs={1986},providers={{"i",10640}},u=2})}}),
 q(3522,{coords={
-[57]={{60.8,42}}},lvl=2,providers={{"i",10642}},qgs={8583},r=2,rwp=40003,sourceQuests={3522},u=2,g={
+[57]={{60.8,42}}},lvl=2,qgs={8583},qis={10642},r=2,rwp=40003,sourceQuests={3522},u=2,g={
 s(123877,10655,{b=1,f=4,loc=46,q=1,u=2}),
 s(123878,10656,{b=1,f=6,loc=42,q=1,u=2})}}),
 q(26945,{awp=40003,c={1},coords={
@@ -18606,7 +18606,7 @@ q(26949,{awp=40003,c={5},coords={
 [460]={{47.6,59.4}}},qgs={3595},races={4},rwp=70003,sourceQuests={3119},g={
 qo(2,{providers={{"n",44614}}})}}),
 q(28730,{awp=40003,coords={
-[460]={{42.5,50.5}}},providers={{"i",5184}},qgs={49479},races={4},sourceQuests={28729},g={
+[460]={{42.5,50.5}}},qgs={49479},qis={5184},races={4},sourceQuests={28729},g={
 s(120436,5395,{b=1,f=8,q=1}),
 s(120015,4907,{b=1,f=5,loc=42,q=1}),
 s(124158,11189,{b=1,f=4,loc=42,q=1})}}),
@@ -18619,13 +18619,13 @@ q(28728,{awp=40003,coords={
 [58]={{45.2,29}},
 [460]={{38.8,10.4}}},qgs={49480},races={4},sourceQuests={28727}}),
 q(3116,{c={1},coords={
-[460]={{45.8,73}}},providers={{"i",9545}},qgs={2077,2079},races={4,22},rwp=70003,sourceQuests={28714}}),
+[460]={{45.8,73}}},qgs={2077,2079},qis={9545},races={4,22},rwp=70003,sourceQuests={28714}}),
 q(28729,{awp=40003,coords={
 [460]={{42.5,50.5}}},qgs={49479},races={4},sourceQuests={28728},g={
 qo(1,{coords={
 [460]={{50,28}}},providers={{"i",5184},{"i",5185}}})}}),
 q(28731,{awp=40003,coords={
-[460]={{47.2,55.9}}},description="The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",providers={{"i",5186}},qgs={3514},races={4},sourceQuests={28730}}),
+[460]={{47.2,55.9}}},description="The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",qgs={3514},qis={5186},races={4},sourceQuests={28730}}),
 q(920,{coords={
 [57]={{57.8,41.6}}},qgs={2082},r=2,rwp=40003,sourceQuests={917},u=2}),
 q(31169,{awp=50004,c={10},coords={
@@ -18658,7 +18658,7 @@ s(120439,5398,{b=1,f=5,loc=46,q=1,u=2}),
 s(120440,5399,{b=1,f=6,loc=47,q=1,u=2}),
 s(200992,11190,{b=1,f=4,loc=44,q=1,u=2})}}),
 q(3120,{c={11},coords={
-[460]={{45.8,73}}},providers={{"i",9580}},qgs={2077,2079},races={4},rwp=70003,sourceQuests={28714}}),
+[460]={{45.8,73}}},qgs={2077,2079},qis={9580},races={4},rwp=70003,sourceQuests={28714}}),
 q(28727,{awp=40003,coords={
 [58]={{46.8,44.4}},
 [460]={{39.7,15.1}}},qgs={49480},races={4},sourceQuests={28726},g={
@@ -18742,7 +18742,7 @@ h(-45,{
 q(475,{coords={
 [57]={{55.7,52}}},lvl=4,qgs={2078},r=2}),
 q(997,{coords={
-[57]={{55.8,50.4}}},lvl=4,providers={{"i",5391}},qgs={2083},r=2,sourceQuests={486}}),
+[57]={{55.8,50.4}}},lvl=4,qgs={2083},qis={5391},r=2,sourceQuests={486}}),
 q(5636,{altQuests={5634,5635,5637,5638,5639,5640},c={5},coords={
 [57]={{55.6,56.8}}},lvl=10,qgs={3600},races={1,3},rwp=30002,u=2}),
 q(2561,{coords={
@@ -18797,13 +18797,13 @@ qo(1,{coords={
 s(120484,5458,{b=1,f=4,loc=45,q=2}),
 s(200891,5589,{b=1,f=6,loc=44,q=2})}}),
 q(941,{coords={
-[57]={{59.9,59.8}}},lvl=9,providers={{"i",5217}},qgs={2080},r=2,sourceQuests={927},g={
+[57]={{59.9,59.8}}},lvl=9,qgs={2080},qis={5217},r=2,sourceQuests={927},g={
 i(5218,{q=1})}}),
 q(4161,{coords={
 [57]={{57,61.2}}},cost={{"i",5465,7}},qgs={6286},r=2,requireSkill=185,rwp=40003,u=2,g={
 r(6412,{itemID=5482,learnedAt=10,q=1,requireSkill=185,u=2})}}),
 q(922,{coords={
-[57]={{59.9,59.8}}},lvl=4,providers={{"i",5168}},qgs={2080},r=2,sourceQuests={918}}),
+[57]={{59.9,59.8}}},lvl=4,qgs={2080},qis={5168},r=2,sourceQuests={918}}),
 q(6344,{coords={
 [57]={{56.7,53.5}}},isBreadcrumb=1,nextQuests={6341},qgs={4265},races={4}}),
 q(13945,{awp=40003,coords={
@@ -18811,7 +18811,7 @@ q(13945,{awp=40003,coords={
 q(2498,{coords={
 [89]={{38.4,21.6}}},lvl=4,qgs={3517},r=2,rwp=40003,sourceQuests={923},u=2}),
 q(2943,{coords={
-[57]={{55.4,92.2}}},lvl=42,maps={69},providers={{"i",9331}},qgs={7907},r=2,rwp=40003,sourceQuests={2944},u=2}),
+[57]={{55.4,92.2}}},lvl=42,maps={69},qgs={7907},qis={9331},r=2,rwp=40003,sourceQuests={2944},u=2}),
 q(489,{coords={
 [57]={{55.8,50.4}}},lvl=4,qgs={2083},r=2,sourceQuests={488},g={
 qo(1,{providers={{"i",3418},{"o",1673}}})}}),
@@ -18829,7 +18829,7 @@ q(2518,{coords={
 qo(1,{coords={
 [57]={{38.8,26},{42,25.6},{48,25.6}}},crs={7319},providers={{"i",8344}}})}}),
 q(940,{coords={
-[57]={{38.2,34.4}}},lvl=6,providers={{"i",5219}},qgs={3519},r=2,rwp=40003,sourceQuests={937},u=2}),
+[57]={{38.2,34.4}}},lvl=6,qgs={3519},qis={5219},r=2,rwp=40003,sourceQuests={937},u=2}),
 q(7383,{coords={
 [57]={{55.8,53.9}}},qgs={3515},r=2,sourceQuests={918},g={
 qo(1,{coords={
@@ -18843,9 +18843,9 @@ q(929,{coords={
 qo(1,{coords={
 [57]={{60,50}}},providers={{"i",5619},{"i",5639}}})}}),
 q(2241,{c={4},coords={
-[57]={{56.4,60.1}}},lvl=10,providers={{"i",7735}},qgs={3599},r=2,rwp=40003,u=2}),
+[57]={{56.4,60.1}}},lvl=10,qgs={3599},qis={7735},r=2,rwp=40003,u=2}),
 q(2941,{coords={
-[57]={{55.4,92.2}}},lvl=42,providers={{"i",9329}},qgs={7907},r=2,rwp=40003,sourceQuests={2940},u=2}),
+[57]={{55.4,92.2}}},lvl=42,qgs={7907},qis={9329},r=2,rwp=40003,sourceQuests={2940},u=2}),
 q(2438,{coords={
 [57]={{55.6,50}}},description="This quest is incorrectly marked as a weekly by Blizzard up until Legion. Complete it on a Night Elf character to prevent it from reappearing in ATT.",qgs={3567},r=2,g={
 qo(1,{coords={
@@ -18857,7 +18857,7 @@ s(200892,5591,{b=1,f=3,q=2}),
 s(203502,54872,{awp=40003,b=1,f=5,loc=46,q=2}),
 s(120610,5592,{b=1,description="This gets completely removed. To be safe, keep this in your bank forever on a mail user.",f=6,loc=45,q=1,rwp=40003,u=2})}}),
 q(930,{coords={
-[57]={{57.6,63}}},lvl=4,providers={{"i",5189},{"o",6751}},r=2}),
+[57]={{57.6,63}}},lvl=4,providers={{"o",6751}},qis={5189},r=2}),
 q(28517,{awp=40003,coords={
 [57]={{55.2,89.2}}},maps={89},qgs={42968},races={22}}),
 q(6071,{c={3},coords={
@@ -18871,7 +18871,7 @@ q(6721,{c={3},coords={
 q(6722,{c={3},coords={
 [27]={{45.8,53}}},isBreadcrumb=1,lvl=10,nextQuests={6063},qgs={1231},races={4},rwp=40003,u=2}),
 q(927,{coords={
-[89]={{52,63.6}}},crs={3535},lvl=5,providers={{"i",5179}},r=2}),
+[89]={{52,63.6}}},crs={3535},lvl=5,qss={5179},r=2}),
 q(483,{coords={
 [57]={{55.7,52}}},lvl=4,qgs={2078},r=2,sourceQuests={476},g={
 qo(1,{coords={
@@ -18890,7 +18890,7 @@ q(487,{coords={
 [57]={{49.4,44.7}}},lvl=5,qgs={2151},r=2,g={
 qo(1,{providers={{"n",2152}}})}}),
 q(931,{coords={
-[57]={{37.3,25.5}}},description="Give the Shimmering Frond to Denalan at the east end of Lake Al'Ameth (59.9, 59.8) to ensure you get the next quest.",lvl=4,providers={{"i",5190},{"o",6752}},r=2}),
+[57]={{37.3,25.5}}},description="Give the Shimmering Frond to Denalan at the east end of Lake Al'Ameth (59.9, 59.8) to ensure you get the next quest.",lvl=4,providers={{"o",6752}},qis={5190},r=2}),
 q(2541,{coords={
 [60]={{41.2,83.8}}},lvl=3,qgs={7317},r=2,sourceQuests={476},g={
 qo(1,{crs={2009},providers={{"i",8363}}})}}),
@@ -18905,7 +18905,7 @@ s(202416,49449,{b=1,f=5,loc=46,q=2}),
 s(202415,49448,{b=1,f=5,loc=44,q=2}),
 s(202477,49562,{b=1,f=3,q=2})}}),
 q(935,{coords={
-[57]={{42.5,58.2}}},providers={{"i",5188}},qgs={1992},r=2,sourceQuests={14005},g={
+[57]={{42.5,58.2}}},qgs={1992},qis={5188},r=2,sourceQuests={14005},g={
 s(203503,54873,{awp=40003,b=1,f=4,loc=46,q=2}),
 s(203504,54874,{awp=40003,b=1,f=5,loc=47,q=2}),
 s(120613,5595,{b=1,f=24,q=2}),
@@ -18919,7 +18919,7 @@ qo(1,{providers={{"i",5169},{"o",4608}}}),
 s(200893,5606,{b=1,f=4,loc=44,q=1}),
 s(120912,6061,{b=1,f=6,loc=43,q=1})}}),
 q(6341,{coords={
-[57]={{55.4,50.4}}},providers={{"i",16262}},qgs={40553},races={4},sourceQuests={6344}}),
+[57]={{55.4,50.4}}},qgs={40553},qis={16262},races={4},sourceQuests={6344}}),
 q(6103,{c={3},coords={
 [57]={{56.6,59.6}}},lvl=10,qgs={3601},races={4},rwp=40003,sourceQuests={6102},u=2}),
 q(932,{coords={
@@ -19079,9 +19079,9 @@ s(127388,15464,{b=1,f=24,q=2,u=2}),
 s(127389,15465,{b=1,f=27,q=2,u=2}),
 s(127390,15466,{b=1,f=8,q=2,u=2})}}),
 q(4881,{coords={
-[64]={{21.2,32}}},crs={10617},description="The item that starts this quest is dropped by Galak Messengers.",lvl=23,providers={{"i",12564}},r=1,rwp=40003,u=2}),
+[64]={{21.2,32}}},crs={10617},description="The item that starts this quest is dropped by Galak Messengers.",lvl=23,qss={12564},r=1,rwp=40003,u=2}),
 q(1118,{coords={
-[64]={{78.8,77.3}}},lvl=35,maps={224},providers={{"i",5826}},qgs={4452},rwp=40003,sourceQuests={1117},u=2}),
+[64]={{78.8,77.3}}},lvl=35,maps={224},qgs={4452},qis={5826},rwp=40003,sourceQuests={1117},u=2}),
 q(25790,{awp=40003,coords={
 [64]={{91.3,53.8}}},qgs={41204},r=2,sourceQuests={25778},g={
 s(208731,63566,{b=1,f=4,loc=47,q=2}),
@@ -19171,7 +19171,7 @@ s(208773,63614,{b=1,f=4,loc=45,q=2}),
 s(208774,63615,{b=1,f=8,q=2}),
 s(208775,63616,{b=1,f=5,loc=42,q=2})}}),
 q(1114,{coords={
-[64]={{78.8,77.3}}},lvl=30,providers={{"i",5802}},qgs={4452},rwp=40003,sourceQuests={1112},u=2}),
+[64]={{78.8,77.3}}},lvl=30,qgs={4452},qis={5802},rwp=40003,sourceQuests={1112},u=2}),
 q(25504,{awp=40003,coords={
 [64]={{75.9,74.6}}},qgs={40027},r=2,sourceQuests={25488}}),
 q(25505,{awp=40003,coords={
@@ -19204,7 +19204,7 @@ q(25778,{awp=40003,coords={
 q(25779,{awp=40003,coords={
 [64]={{88.5,54.8}}},qgs={41184},r=1,sourceQuests={25775}}),
 q(5361,{coords={
-[64]={{45.65,50.8}}},lvl=32,maps={66},providers={{"i",13507}},qgs={10537},r=1,rwp=40003,u=2}),
+[64]={{45.65,50.8}}},lvl=32,maps={66},qgs={10537},qis={13507},r=1,rwp=40003,u=2}),
 q(1394,{coords={
 [998]={{57.75,65.39}}},lvl=25,qgs={4488},r=1,rwp=40003,sourceQuests={6628},u=2,g={
 s(121579,6804,{b=1,f=23,q=3,u=2}),
@@ -19246,9 +19246,9 @@ q(25757,{awp=40003,coords={
 [64]={{88.5,54.8}}},qgs={41184},r=1,sourceQuests={25745},g={
 i(55807,{q=1})}}),
 q(1120,{altQuests={1121},coords={
-[64]={{78.8,77.3}}},lvl=35,providers={{"i",5806}},qgs={4452},rwp=40003,sourceQuests={1119},u=2}),
+[64]={{78.8,77.3}}},lvl=35,qgs={4452},qis={5806},rwp=40003,sourceQuests={1119},u=2}),
 q(1121,{altQuests={1120},coords={
-[64]={{78.8,77.3}}},lvl=35,providers={{"i",5806}},qgs={4452},rwp=40003,sourceQuests={1119},u=2}),
+[64]={{78.8,77.3}}},lvl=35,qgs={4452},qis={5806},rwp=40003,sourceQuests={1119},u=2}),
 q(1950,{c={8},coords={
 [64]={{78.2,75.8}}},lvl=30,qgs={6548},rwp=40003,sourceQuests={1949},u=2,g={
 qo(1,{coords={
@@ -19275,7 +19275,7 @@ q(1182,{coords={
 qo(1,{coords={
 [224]={{43.33,20.33}}},cost={{"i",5851,1}},providers={{"i",5852},{"o",20691}},u=2})}}),
 q(1183,{coords={
-[224]={{27.2,76.9}}},lvl=29,providers={{"i",5852}},qgs={2496},rwp=40003,sourceQuests={1182},u=2}),
+[224]={{27.2,76.9}}},lvl=29,qgs={2496},qis={5852},rwp=40003,sourceQuests={1182},u=2}),
 q(27318,{awp=40003,qgs={45277},r=2,sourceQuests={27314},g={
 qo(1,{providers={{"n",45410}}}),
 s(208759,63600,{b=1,f=4,loc=44,q=2}),
@@ -19333,7 +19333,7 @@ qo(1,{crs={4142,4143,4144},providers={{"i",5795}},u=2})}}),
 q(25660,{awp=40003,coords={
 [64]={{91.7,78.9}}},description="The Spirit of Tony Two-Tusk will appear and start haunting you shortly after you complete quest |cFFFFD700Two-Tusk Takedown|r.",qgs={41058},sourceQuests={25627,25628}}),
 q(5762,{coords={
-[64]={{78.8,77.3}}},lvl=28,maps={224},providers={{"i",14542}},qgs={4452},rwp=40003,u=2}),
+[64]={{78.8,77.3}}},lvl=28,maps={224},qgs={4452},qis={14542},rwp=40003,u=2}),
 q(28503,{altQuests={25479,25481},awp=40003,coords={
 [89]={{29.6,48.4},{39.6,11.6},{45,50.5}},
 [103]={{55.5,47.9}}},isBreadcrumb=1,lvl={39,43},nextQuests={25486},providers={{"o",207321},{"o",207322}},r=2}),
@@ -19382,9 +19382,9 @@ q(1176,{coords={
 [64]={{80.2,75.9}}},lvl=29,qgs={4630},rwp=40003,u=2,g={
 qo(1,{crs={4154,4158},providers={{"i",5848}},u=2})}}),
 q(1106,{coords={
-[64]={{78.1,77.1}}},lvl=26,maps={15},providers={{"i",5827}},qgs={4454},rwp=40003,sourceQuests={1104,1105},u=2}),
+[64]={{78.1,77.1}}},lvl=26,maps={15},qgs={4454},qis={5827},rwp=40003,sourceQuests={1104,1105},u=2}),
 q(4542,{coords={
-[64]={{32.23,22.17}}},isBreadcrumb=1,lvl=23,nextQuests={4841},providers={{"i",11886}},qgs={10079},r=1,rwp=40003,u=2}),
+[64]={{32.23,22.17}}},isBreadcrumb=1,lvl=23,nextQuests={4841},qgs={10079},qis={11886},r=1,rwp=40003,u=2}),
 q(25744,{awp=40003,coords={
 [64]={{75.9,74.6}}},qgs={40027},r=2,sourceQuests={25542}}),
 q(25745,{awp=40003,coords={
@@ -19402,9 +19402,9 @@ qo(1,{providers={{"n",4094}},u=2}),
 qo(2,{providers={{"n",4093}},u=2}),
 qo(3,{providers={{"n",4096}},u=2})}}),
 q(1112,{coords={
-[10]={{63.35,38.45}}},lvl=30,providers={{"i",5800}},qgs={3453},rwp=40003,sourceQuests={1111},u=2}),
+[10]={{63.35,38.45}}},lvl=30,qgs={3453},qis={5800},rwp=40003,sourceQuests={1111},u=2}),
 q(1148,{coords={
-[64]={{70.2,87}}},crs={4130,4131,4132,4133},lvl=28,providers={{"i",5877}},r=1,rwp=40003,u=2,g={
+[64]={{70.2,87}}},crs={4130,4131,4132,4133},lvl=28,qss={5877},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"i",5855}},u=2}),
 qo(2,{providers={{"i",5854}},u=2}),
 qo(3,{providers={{"i",5853}},u=2})}}),
@@ -19435,21 +19435,21 @@ q(28088,{awp=40003,coords={
 [64]={{12.8,34}}},qgs={47471},sourceQuests={28086,28087},g={
 qo(1,{providers={{"n",47487}}})}}),
 q(1122,{coords={
-[64]={{78.8,77.3}}},lvl=35,maps={224},providers={{"i",5807}},qgs={4452},rwp=40003,sourceQuests={1120,1121},u=2}),
+[64]={{78.8,77.3}}},lvl=35,maps={224},qgs={4452},qis={5807},rwp=40003,sourceQuests={1120,1121},u=2}),
 q(1194,{coords={
-[64]={{77.22,77.39}}},lvl=29,providers={{"i",5866},{"o",20805}},rwp=40003,sourceQuests={1190},u=2}),
+[64]={{77.22,77.39}}},lvl=29,providers={{"o",20805}},qis={5866},rwp=40003,sourceQuests={1190},u=2}),
 q(1110,{coords={
 [64]={{78.8,77.3}}},lvl=28,qgs={4452},rwp=40003,u=2,g={
 qo(1,{providers={{"i",5798},{"o",19869}},u=2})}}),
 q(1117,{coords={
-[224]={{27,77.2}}},lvl=30,providers={{"i",5804}},qgs={773},rwp=40003,sourceQuests={1116},u=2}),
+[224]={{27,77.2}}},lvl=30,qgs={773},qis={5804},rwp=40003,sourceQuests={1116},u=2}),
 q(5062,{coords={
 [64]={{21.55,32.34}}},lvl=24,qgs={10428},r=1,rwp=40003,sourceQuests={4865},u=2,g={
 qo(1,{providers={{"i",12732},{"o",175928}},u=2})}}),
 q(1188,{coords={
-[64]={{80.3,76.1}}},lvl=29,maps={71},providers={{"i",5862}},qgs={4706},rwp=40003,sourceQuests={1187},u=2}),
+[64]={{80.3,76.1}}},lvl=29,maps={71},qgs={4706},qis={5862},rwp=40003,sourceQuests={1187},u=2}),
 q(1189,{coords={
-[71]={{50.9,27}}},lvl=29,providers={{"i",5865}},qgs={4708},rwp=40003,sourceQuests={1188},u=2,g={
+[71]={{50.9,27}}},lvl=29,qgs={4708},qis={5865},rwp=40003,sourceQuests={1188},u=2,g={
 s(121511,6726,{b=1,f=4,loc=45,q=2,u=2}),
 s(121512,6727,{b=1,f=5,loc=44,q=2,u=2})}}),
 q(1104,{coords={
@@ -19516,7 +19516,7 @@ q(1151,{coords={
 [64]={{53.94,41.49}}},lvl=25,qgs={2986},r=1,rwp=40003,sourceQuests={1150},u=2,g={
 qo(1,{crs={4499},providers={{"i",5844}},u=2})}}),
 q(9434,{awp=20001,coords={
-[64]={{21.4,32.4}}},lvl=24,providers={{"i",23644}},qgs={10941},r=1,rwp=40003,sourceQuests={9433},u=2}),
+[64]={{21.4,32.4}}},lvl=24,qgs={10941},qis={23644},r=1,rwp=40003,sourceQuests={9433},u=2}),
 q(28048,{awp=40003,coords={
 [64]={{69.9,85.2}}},qgs={47383},sourceQuests={28045,28051},g={
 qo(1,{providers={{"n",47389}}}),
@@ -19532,7 +19532,7 @@ s(208767,63608,{b=1,f=3,q=2}),
 s(208768,63609,{b=1,f=4,loc=45,q=2}),
 s(208769,63610,{b=1,f=7,loc=46,q=2})}}),
 q(1179,{coords={
-[87]={{72.4,93.6}}},lvl=28,providers={{"i",5849}},qgs={2092},r=2,rwp=40003,u=2}),
+[87]={{72.4,93.6}}},lvl=28,qgs={2092},qis={5849},r=2,rwp=40003,u=2}),
 q(25872,{awp=40003,coords={
 [64]={{46.7,56}}},qgs={41421},r=1,sourceQuests={25836},g={
 qo(1,{providers={{"n",41460}}})}}),
@@ -19577,7 +19577,7 @@ s(208752,63591,{b=1,f=25,q=2}),
 i(63587,{b=1,f=52,q=2}),
 i(55230,{q=1})}}),
 q(3843,{coords={
-[64]={{78.4,74.7}}},lvl=38,maps={26},providers={{"i",11471}},qgs={9238},r=2,rwp=40003,sourceQuests={3842},u=2}),
+[64]={{78.4,74.7}}},lvl=38,maps={26},qgs={9238},qis={11471},r=2,rwp=40003,sourceQuests={3842},u=2}),
 q(27316,{awp=40003,coords={
 [64]={{43.3,43.4}}},qgs={48208},r=2,sourceQuests={27275,28283},g={
 i(60959,{q=1})}}),
@@ -19587,9 +19587,9 @@ i(60959,{q=1})}}),
 q(1115,{coords={
 [64]={{78.8,77.3}}},lvl=30,maps={224},qgs={4452},rwp=40003,u=2}),
 q(1145,{coords={
-[10]={{51.07,29.62}}},lvl=29,maps={85},providers={{"i",5846}},qgs={3428},r=1,rwp=40003,u=2}),
+[10]={{51.07,29.62}}},lvl=29,maps={85},qgs={3428},qis={5846},r=1,rwp=40003,u=2}),
 q(1146,{coords={
-[85]={{75,34.2}}},lvl=29,providers={{"i",5850}},qgs={4485},r=1,rwp=40003,sourceQuests={1145},u=2}),
+[85]={{75,34.2}}},lvl=29,qgs={4485},qis={5850},r=1,rwp=40003,sourceQuests={1145},u=2}),
 q(1147,{coords={
 [64]={{67.6,63.93}}},lvl=29,qgs={4483},r=1,rwp=40003,sourceQuests={1146},u=2,g={
 qo(1,{providers={{"n",4130}},u=2}),
@@ -19675,7 +19675,7 @@ s(208746,63584,{b=1,f=6,loc=44,q=2}),
 s(208747,63585,{b=1,f=7,loc=42,q=2}),
 s(208748,63586,{b=1,f=31,q=2})}}),
 q(1111,{coords={
-[64]={{78.8,77.3}}},lvl=30,providers={{"i",5799}},qgs={4452},rwp=40003,u=2}),
+[64]={{78.8,77.3}}},lvl=30,qgs={4452},qis={5799},rwp=40003,u=2}),
 q(28283,{awp=40003,isBreadcrumb=1,nextQuests={27316},qgs={45277},r=2,sourceQuests={27314}}),
 q(28284,{awp=40003,isBreadcrumb=1,nextQuests={27317},qgs={45278},r=1,sourceQuests={27315}}),
 q(25596,{awp=40003,coords={
@@ -19698,7 +19698,7 @@ s(208779,63620,{b=1,f=7,loc=40,q=2})}}),
 q(1191,{altQuests={1190},coords={
 [64]={{79.8,77}}},description="This quest is repeatable, but can only be completed while you have the quest \"Keeping Pace\" in your quest log.",lvl=29,qgs={4709},repeatable=1,rwp=40003,u=2}),
 q(1119,{coords={
-[224]={{27.1,77.2}}},lvl=35,providers={{"i",5806}},qgs={2498},rwp=40003,sourceQuests={1118},u=2})}),
+[224]={{27.1,77.2}}},lvl=35,qgs={2498},qis={5806},rwp=40003,sourceQuests={1118},u=2})}),
 h(-46,{
 n(5933,{coords={
 [64]={{70,49.2},{71,50.6},{72,49.4},{72,50.6}}}}),
@@ -19777,7 +19777,7 @@ q(8461,{coords={
 [77]={{64.8,8.2}}},lvl=45,qgs={15395},rwp=40003,u=2,g={
 s(131756,21317,{b=1,f=5,loc=40,q=2,u=2}),
 s(131755,21316,{b=1,f=7,loc=46,q=2,u=2})}}),
-q(8470,{crs={7156,7157,7158},lvl=45,minReputation={576,0},providers={{"i",20741}}}),
+q(8470,{crs={7156,7157,7158},lvl=45,minReputation={576,0},qss={20741}}),
 q(28524,{awp=40003,coords={
 [83]={{21,46.1}}},isBreadcrumb=1,minReputation={576,0},nextQuests={28460},qgs={11556}}),
 q(28366,{awp=40003,coords={
@@ -19811,9 +19811,9 @@ q(8465,{coords={
 q(28362,{awp=40003,coords={
 [77]={{64.1,10.3}}},qgs={48461}}),
 q(8484,{coords={
-[77]={{64.4,5.1}}},lvl=45,maps={87},minReputation={576,42000},providers={{"i",21155}},qgs={11555},r=2,rwp=40003,u=2}),
+[77]={{64.4,5.1}}},lvl=45,maps={87},minReputation={576,42000},qgs={11555},qis={21155},r=2,rwp=40003,u=2}),
 q(8485,{coords={
-[77]={{64.4,5.1}}},lvl=45,maps={85},minReputation={576,42000},providers={{"i",21155}},qgs={11555},r=1,rwp=40003,u=2}),
+[77]={{64.4,5.1}}},lvl=45,maps={85},minReputation={576,42000},qgs={11555},qis={21155},r=1,rwp=40003,u=2}),
 q(28364,{awp=40003,coords={
 [77]={{60.5,9.5}}},qgs={47556},sourceQuests={28362},g={
 qo(1,{crs={9462},providers={{"i",63695}}}),
@@ -19849,7 +19849,7 @@ s(131757,21318,{b=1,f=4,loc=44,q=2,u=2}),
 s(131758,21319,{b=1,f=5,loc=44,q=2,u=2}),
 s(131759,21320,{b=1,f=6,loc=42,q=2,u=2}),
 s(131761,21322,{b=1,f=7,loc=42,q=2,u=2})}}),
-q(8471,{crs={7438,7439,7440,7441,7442,10738,10916},lvl=50,minReputation={576,0},providers={{"i",20742}},rwp=40003,u=2}),
+q(8471,{crs={7438,7439,7440,7441,7442,10738,10916},lvl=50,minReputation={576,0},qss={20742},rwp=40003,u=2}),
 q(28768,{awp=40003,coords={
 [77]={{64,10.4}}},description="Only available above level 40.",isBreadcrumb=1,nextQuests={28460},qgs={15395}})}),
 h(-58,{
@@ -20035,7 +20035,7 @@ s(210066,65835,{b=1,f=5,loc=42,q=2}),
 s(210065,65834,{b=1,f=7,loc=43,q=2})}}),
 q(27943,{coords={
 [249]={{24.4,64}}},qgs={47159},sourceQuests={27939}}),
-q(27760,{crs={46590,46920,47014},providers={{"i",62483}}}),
+q(27760,{crs={46590,46920,47014},qss={62483}}),
 q(28403,{coords={
 [249]={{36.1,20.2}}},qgs={48528},sourceQuests={28402}}),
 q(27990,{coords={
@@ -20100,7 +20100,7 @@ qo(3,{providers={{"n",47187}}}),
 qo(4,{providers={{"n",47189}}})}}),
 q(27003,{coords={
 [71]={{30.4,65.5}}},qgs={44833},sourceQuests={28295,28296,28557,28558}}),
-q(28132,{crs={46993},isBreadcrumb=1,nextQuests={27926},providers={{"i",62768}},sourceQuests={27669}}),
+q(28132,{crs={46993},isBreadcrumb=1,nextQuests={27926},qss={62768},sourceQuests={27669}}),
 q(28112,{coords={
 [249]={{59.5,72}}},qgs={46872},sourceQuests={27923,27924,28105},g={
 i(64492,{b=1,collectible=false,factionID=1173,q=2,repeatable=1})}}),
@@ -20221,7 +20221,7 @@ q(28272,{coords={
 [249]={{27,7.5}}},qgs={48186},sourceQuests={28350},g={
 qo(1,{providers={{"i",63685},{"o",207124}}})}}),
 q(28376,{coords={
-[249]={{40.59,22.19}}},crs={48428},providers={{"i",63700}},sourceQuests={28367}}),
+[249]={{40.59,22.19}}},crs={48428},qss={63700},sourceQuests={28367}}),
 q(28561,{coords={
 [249]={{54.9,32.7}}},qgs={47684},sourceQuests={28533}}),
 q(27707,{qgs={46136},sourceQuests={27632}}),
@@ -20528,7 +20528,7 @@ h(-45,{
 q(3941,{coords={
 [78]={{44.6,8.2}}},lvl=47,qgs={8737},rwp=40003,sourceQuests={3914},u=2}),
 q(3913,{coords={
-[71]={{54,23.4}}},lvl=47,providers={{"i",11136}},qgs={9299},rwp=40003,sourceQuests={3912},u=2}),
+[71]={{54,23.4}}},lvl=47,qgs={9299},qis={11136},rwp=40003,sourceQuests={3912},u=2}),
 q(24735,{awp=40003,coords={
 [78]={{52,49.8}}},qgs={9999},sourceQuests={24734},g={
 s(203112,53566,{b=1,f=4,loc=46,q=2}),
@@ -20546,7 +20546,7 @@ s(203144,53600,{b=1,f=3,q=2}),
 s(203145,53601,{b=1,f=1,q=2}),
 s(203146,53602,{b=1,f=7,loc=43,q=2})}}),
 q(4142,{coords={
-[78]={{42.9,9.6}}},lvl=47,maps={69},providers={{"i",11316}},qgs={9119},r=2,rwp=40003,sourceQuests={4141},u=2}),
+[78]={{42.9,9.6}}},lvl=47,maps={69},qgs={9119},qis={11316},r=2,rwp=40003,sourceQuests={4141},u=2}),
 q(24855,{awp=40003,coords={
 [78]={{76.4,48.3}}},qgs={38263},sourceQuests={24687},g={
 qo(1,{providers={{"n",6509},{"n",6510},{"n",6511},{"n",6512},{"n",38358},{"n",38506}}}),
@@ -20559,7 +20559,7 @@ q(3883,{coords={
 qo(1,{coords={
 [78]={{48,85}}},providers={{"i",11131},{"i",11132},{"o",174793}},u=2})}}),
 q(24866,{awp=40003,coords={
-[78]={{38.5,66.1}}},providers={{"i",11112},{"o",161521}}}),
+[78]={{38.5,66.1}}},providers={{"o",161521}},qis={11112}}),
 q(24703,{awp=40003,coords={
 [78]={{30.6,51.1}}},qgs={38237}}),
 q(4501,{coords={
@@ -20581,7 +20581,7 @@ q(4144,{coords={
 [78]={{42.9,9.6}}},lvl=47,qgs={9119},r=2,rwp=40003,sourceQuests={4143},u=2,g={
 qo(1,{providers={{"i",11315},{"o",164958}},u=2})}}),
 q(4148,{coords={
-[78]={{45.6,8.6}}},lvl=47,providers={{"i",11315},{"o",164958}},qgs={9118},r=1,rwp=40003,sourceQuests={4146},u=2,g={
+[78]={{45.6,8.6}}},lvl=47,providers={{"o",164958}},qgs={9118},qis={11315},r=1,rwp=40003,sourceQuests={4146},u=2,g={
 i(11320,{q=1,u=2})}}),
 q(24687,{awp=40003,coords={
 [78]={{76.4,48.3}}},qgs={38263},sourceQuests={24689},g={
@@ -20643,7 +20643,7 @@ q(24720,{awp=40003,coords={
 q(4284,{coords={
 [78]={{41.8,2.6}}},cost={{"i",11188,7},{"i",11186,7},{"i",11185,7},{"i",11184,7}},lvl=47,qgs={9117},rwp=40003,u=2}),
 q(5150,{coords={
-[78]={{43.6,7.2}}},cost={{"i",11315,15}},lvl=47,providers={{"i",15699}},qgs={9274},repeatable=1,rwp=40003,u=2,g={
+[78]={{43.6,7.2}}},cost={{"i",11315,15}},lvl=47,qgs={9274},qis={15699},repeatable=1,rwp=40003,u=2,g={
 r(17557,{itemID=13481,learnedAt=275,q=2,requireSkill=171,u=2})}}),
 q(3881,{coords={
 [78]={{43.9,7.1}}},lvl=48,qgs={9270},rwp=40003,u=2,g={
@@ -20672,11 +20672,11 @@ qo(1,{coords={
 [78]={{49,45}}},providers={{"i",12472},{"o",148503}},u=2})}}),
 q(24689,{awp=40003,coords={
 [78]={{70.8,76.6}}},qgs={38274},sourceQuests={24686}}),
-q(13903,{altQuests={13917},awp=30200,isDaily=1,lvl=48,providers={{"i",46362}},qgs={34320},r=1,g={
+q(13903,{altQuests={13917},awp=30200,isDaily=1,lvl=48,qgs={34320},qis={46362},r=1,g={
 qo(1,{crs={6551,6552,6553,6554,6555},providers={{"i",46380}}}),
 i(47196,{b=1,q=1})}}),
 q(24699,{awp=40003,coords={
-[78]={{43.1,41.1}}},description="If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",providers={{"i",50746}},qgs={38276},sourceQuests={24737},g={
+[78]={{43.1,41.1}}},description="If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",qgs={38276},qis={50746},sourceQuests={24737},g={
 qo(1,{crs={38307},providers={{"i",50374}}}),
 s(203138,53592,{b=1,f=4,loc=42,q=2}),
 s(203139,53593,{b=1,f=7,loc=43,q=2})}}),
@@ -20694,22 +20694,22 @@ qo(1,{crs={6501,6502,6503,6504,9162,9163,9164},providers={{"i",50430}}}),
 s(203109,53563,{b=1,f=23,q=2}),
 s(203110,53564,{b=1,f=6,loc=45,q=2}),
 s(203111,53565,{b=1,f=7,loc=44,q=2})}}),
-q(13889,{altQuests={13915},awp=30200,isDaily=1,lvl=48,providers={{"i",46362}},qgs={34320},r=1,g={
+q(13889,{altQuests={13915},awp=30200,isDaily=1,lvl=48,qgs={34320},qis={46362},r=1,g={
 qo(1,{crs={6501,6502,6503,6504,9163,9164,9167},providers={{"i",46367}}}),
 i(47196,{b=1,q=1})}}),
 q(24865,{awp=40003,coords={
-[78]={{68.5,36.5}}},providers={{"i",11113},{"o",161526}}}),
+[78]={{68.5,36.5}}},providers={{"o",161526}},qis={11113}}),
 q(3844,{coords={
 [78]={{63.1,68.5}}},lvl=47,providers={{"o",161505}},rwp=40003,u=2}),
 q(3845,{coords={
-[78]={{63.1,68.5}}},lvl=47,providers={{"i",11107},{"o",161504}},rwp=40003,sourceQuests={3844},u=2,g={
+[78]={{63.1,68.5}}},lvl=47,providers={{"o",161504}},qss={11107},rwp=40003,sourceQuests={3844},u=2,g={
 qo(1,{providers={{"i",11104}},u=2}),
 qo(2,{providers={{"i",11105}},u=2}),
 qo(3,{providers={{"i",11106}},u=2}),
 i(11108,{q=1,u=2}),
 i(3108,{lvl=22,q=1,u=2})}}),
 q(3908,{coords={
-[78]={{44.6,8.2}}},lvl=47,maps={83},providers={{"i",11133}},qgs={8737},rwp=40003,sourceQuests={3845},u=2}),
+[78]={{44.6,8.2}}},lvl=47,maps={83},qgs={8737},qis={11133},rwp=40003,sourceQuests={3845},u=2}),
 q(3962,{coords={
 [78]={{44.6,8.2}}},lvl=47,qgs={8737},rwp=40003,sourceQuests={3961},u=2,g={
 qo(1,{coords={
@@ -20726,15 +20726,15 @@ qo(2,{providers={{"n",6512}},u=2}),
 qo(3,{providers={{"n",6510}},u=2}),
 qo(4,{providers={{"n",6511}},u=2})}}),
 q(3961,{coords={
-[78]={{41.8,2.6}}},lvl=47,providers={{"i",11522}},qgs={9117},rwp=40003,sourceQuests={4005},u=2}),
+[78]={{41.8,2.6}}},lvl=47,qgs={9117},qis={11522},rwp=40003,sourceQuests={4005},u=2}),
 q(3942,{coords={
 [78]={{41.8,2.6}}},lvl=47,maps={77},qgs={9117},rwp=40003,sourceQuests={3941},u=2}),
 q(24734,{awp=40003,coords={
-[78]={{55,62.7}}},providers={{"i",15722}},qgs={9997},sourceQuests={24742,24794},g={
+[78]={{55,62.7}}},qgs={9997},qis={15722},sourceQuests={24742,24794},g={
 o(202264,{coords={
 [78]={{53.1,51.9}}}})}}),
 q(4492,{coords={
-[78]={{43.6,8.5}}},lvl=50,providers={{"i",15722}},qgs={9997},rwp=40003,u=2}),
+[78]={{43.6,8.5}}},lvl=50,qgs={9997},qis={15722},rwp=40003,u=2}),
 q(4321,{coords={
 [78]={{41.8,2.6}}},lvl=47,qgs={9117},rwp=40003,sourceQuests={4285,4287,4288},u=2,g={
 i(11482,{u=2})}}),
@@ -20747,7 +20747,7 @@ s(203128,53582,{b=1,f=7,loc=43,q=2})}}),
 q(4147,{coords={
 [78]={{45.6,8.6}}},lvl=47,maps={10},qgs={9118},r=1,rwp=40003,sourceQuests={4145},u=2}),
 q(3912,{coords={
-[83]={{31.2,45.2}}},cost={{"i",11243,1}},lvl=47,providers={{"i",11136}},qgs={9298},rwp=40003,sourceQuests={3909},u=2}),
+[83]={{31.2,45.2}}},cost={{"i",11243,1}},lvl=47,qgs={9298},qis={11136},rwp=40003,sourceQuests={3909},u=2}),
 q(24693,{awp=40003,coords={
 [78]={{54.8,63.8}}},description="After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",qgs={10977},sourceQuests={24691}}),
 q(4141,{coords={
@@ -20756,7 +20756,7 @@ qo(1,{crs={6509,6510,6511,6512},providers={{"i",11316}},u=2})}}),
 q(24691,{awp=40003,coords={
 [78]={{54.8,63.8}}},qgs={10977},sourceQuests={24690},g={
 qo(1,{crs={6551,6552,6553,6554,6555,6582,38305},providers={{"i",50371}}})}}),
-q(13904,{altQuests={13916},awp=30200,isDaily=1,lvl=48,providers={{"i",46362}},qgs={34320},r=1,g={
+q(13904,{altQuests={13916},awp=30200,isDaily=1,lvl=48,qgs={34320},qis={46362},r=1,g={
 qo(1,{providers={{"i",46382},{"o",195037}}}),
 i(47196,{b=1,q=1})}}),
 q(24715,{awp=40003,coords={
@@ -20772,11 +20772,11 @@ q(3882,{coords={
 qo(1,{crs={6501,6502,6504,9162,9163,9164},providers={{"i",11114},{"o",161527}},u=2}),
 s(124537,11908,{b=1,f=4,loc=47,q=2,u=2}),
 s(124538,11909,{b=1,f=5,loc=45,q=2,u=2})}}),
-q(13905,{altQuests={13914},awp=30200,isDaily=1,lvl=48,maps={71},providers={{"i",46362}},qgs={34320},r=1,g={
+q(13905,{altQuests={13914},awp=30200,isDaily=1,lvl=48,maps={71},qgs={34320},qis={46362},r=1,g={
 qo(1,{crs={5430},providers={{"i",46381}}}),
 i(47196,{b=1,q=1})}}),
 q(24926,{awp=40003,coords={
-[78]={{63.8,19.7}}},providers={{"i",51546}},qgs={9623},sourceQuests={24715},g={
+[78]={{63.8,19.7}}},qgs={9623},qis={51546},sourceQuests={24715},g={
 s(203117,53571,{b=1,f=4,loc=41,q=2}),
 s(203118,53572,{b=1,f=6,loc=40,q=2}),
 s(203119,53573,{b=1,f=7,loc=42,q=2})}}),
@@ -20796,7 +20796,7 @@ s(200997,11917,{b=1,f=4,loc=43,q=2,u=2})}}),
 q(24794,{awp=40003,coords={
 [78]={{55.4,62.5}}},description="This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",isBreadcrumb=1,nextQuests={24734},qgs={10302},sourceQuests={24742}}),
 q(24737,{awp=40003,coords={
-[78]={{43.1,41.1}}},description="If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",providers={{"i",50742}},qgs={38276},sourceQuests={24693},g={
+[78]={{43.1,41.1}}},description="If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",qgs={38276},qis={50742},sourceQuests={24693},g={
 qo(1,{crs={6517,6518,6519,6527},providers={{"i",11834}}})}}),
 q(24717,{awp=40003,coords={
 [78]={{43.1,41.1}}},qgs={38275},sourceQuests={24701},g={
@@ -20815,7 +20815,7 @@ qo(1,{coords={
 s(203133,53587,{b=1,f=5,loc=42,q=2}),
 s(203134,53588,{b=1,f=6,loc=46,q=2})}}),
 q(4292,{coords={
-[78]={{71.6,76}}},lvl=48,providers={{"i",11568}},qgs={9619},rwp=40003,sourceQuests={4291},u=2,g={
+[78]={{71.6,76}}},lvl=48,qgs={9619},qis={11568},rwp=40003,sourceQuests={4291},u=2,g={
 qo(1,{coords={
 [78]={{79.9,49.9}}},crs={9684},providers={{"i",11510},{"i",11569},{"i",11570}},u=2}),
 s(124522,11876,{b=1,f=5,loc=42,q=2,u=2}),
@@ -20850,7 +20850,7 @@ s(203123,53577,{b=1,f=4,loc=43,q=2}),
 s(203124,53578,{b=1,f=5,loc=47,q=2}),
 s(203125,53579,{b=1,f=6,loc=44,q=2})}}),
 q(24708,{awp=40003,coords={
-[78]={{31.9,50.3}}},providers={{"i",50405}},qgs={9272},sourceQuests={24730},g={
+[78]={{31.9,50.3}}},qgs={9272},qis={50405},sourceQuests={24730},g={
 qo(1,{coords={
 [78]={{33,74.5}}},providers={{"i",50407},{"o",202165}}})}}),
 q(24718,{awp=40003,coords={
@@ -20885,7 +20885,7 @@ qo(1,{providers={{"n",38254}}})}}),
 q(3909,{coords={
 [83]={{31.2,45.2}}},lvl=47,maps={69},qgs={9298},rwp=40003,sourceQuests={3908},u=2,g={
 q(4041,{coords={
-[69]={{44,11},{45.1,25.6}}},providers={{"i",11242},{"o",164798}},qgs={7775},repeatable=1,u=2,g={
+[69]={{44,11},{45.1,25.6}}},providers={{"o",164798}},qgs={7775},qis={11242},repeatable=1,u=2,g={
 qo(1,{providers={{"i",11243}},questID=3909,u=2})}})}}),
 q(24723,{awp=40003,coords={
 [78]={{31.9,50.3}}},qgs={9272},sourceQuests={24709}}),
@@ -20927,7 +20927,7 @@ qo(1,{crs={6520,6521,14460},providers={{"i",11829}},u=2})}}),
 q(28526,{awp=40003,coords={
 [85]={{23.4,94.2},{45.6,5.9},{49.8,76.4},{58.3,45.7},{59,44.4},{66.7,49.5}},
 [88]={{42.6,57.4}}},isBreadcrumb=1,lvl={49,53},nextQuests={24740},providers={{"o",206109},{"o",206116},{"o",207323}},r=1}),
-q(3884,{lvl=48,providers={{"i",11116}},rwp=40003,u=2})}),
+q(3884,{lvl=48,qss={11116},rwp=40003,u=2})}),
 h(-46,{
 n(6582,{coords={
 [78]={{48.8,85}}}}),
@@ -21055,7 +21055,7 @@ q(31977,{altQuests={31980},coords={
 crit(21467,{achID=6612,id=21,pb=1}),
 crit(21540,{achID=6560,id=19,pb=1})}}),
 h(-45,{
-q(29037,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"i",68646},{"n",51677}},r=2,g={
+q(29037,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"n",51677}},qss={68646},r=2,g={
 qo(1,{providers={{"i",68645},{"o",208189}}}),
 i(68644,{b=1,q=1})}}),
 q(28782,{awp=40003,coords={
@@ -21066,7 +21066,7 @@ s(211067,67185,{b=1,f=5,loc=41,q=2}),
 s(211083,67202,{b=1,f=5,loc=42,q=2}),
 s(211103,67225,{b=1,f=6,loc=46,q=2}),
 s(211096,67218,{b=1,f=6,loc=47,q=2})}}),
-q(29035,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"i",68646},{"n",51677}},r=2,g={
+q(29035,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"n",51677}},qss={68646},r=2,g={
 qo(1,{crs={7443,7444,7445,7446},providers={{"i",12622}}}),
 i(68644,{b=1,q=1})}}),
 q(28719,{awp=40003,coords={
@@ -21134,7 +21134,7 @@ q(5307,{coords={
 [83]={{61.2,37.2}}},learnedAt=250,lvl=50,maps={317},qgs={11193},requireSkill=164,rwp=40003,u=2,g={
 qo(1,{crs={11121},providers={{"i",13350}},requireSkill=164,u=2}),
 r(16978,{itemID=12825,learnedAt=280,q=2,requireSkill=164,u=2})}}),
-q(29040,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"i",68646},{"n",51677}},r=2,g={
+q(29040,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"n",51677}},qss={68646},r=2,g={
 qo(1,{cost={{"i",68662,5},{"i",68663,1}},providers={{"i",68668}}}),
 i(68663,{crs={7458,7459,7460},q=1}),
 i(68662,{crs={7450,7451,7452,7453,7454},q=1}),
@@ -21158,7 +21158,7 @@ s(211061,67179,{b=1,f=5,loc=44,q=2}),
 s(211092,67212,{b=1,f=6,loc=45,q=2}),
 s(211077,67196,{b=1,f=6,loc=41,q=2})}}),
 q(6030,{coords={
-[83]={{61.2,38.8}}},lvl=50,maps={23},providers={{"i",15790}},qgs={10431},rwp=40003,u=2}),
+[83]={{61.2,38.8}}},lvl=50,maps={23},qgs={10431},qis={15790},rwp=40003,u=2}),
 q(28630,{awp=40003,coords={
 [83]={{59.3,49.7}}},qgs={10305},sourceQuests={28627}}),
 q(6604,{coords={
@@ -21199,7 +21199,7 @@ q(29032,{awp=40003,coords={
 [83]={{46.6,17.6}}},qgs={10618},r=2}),
 q(4901,{coords={
 [83]={{63,59.4}}},lvl=52,qgs={10300},r=2,rwp=40003,sourceQuests={979},u=2}),
-q(4882,{lvl=52,maps={77},providers={{"i",12558}},r=1,rwp=40003,sourceQuests={4741},u=2}),
+q(4882,{lvl=52,maps={77},qss={12558},r=1,rwp=40003,sourceQuests={4741},u=2}),
 q(28609,{awp=40003,coords={
 [83]={{59.8,49.1}}},qgs={11191}}),
 q(28544,{awp=40003,coords={
@@ -21219,7 +21219,7 @@ qo(1,{coords={
 s(127695,15784,{b=1,f=4,loc=41,q=2,u=2}),
 s(127697,15786,{b=1,f=5,loc=42,q=2,u=2}),
 s(127698,15787,{b=1,f=6,loc=42,q=2,u=2})}}),
-q(29038,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"i",68646},{"n",51677}},r=2,g={
+q(29038,{awp=40003,isDaily=1,maxReputation={589,42000},providers={{"n",51677}},qss={68646},r=2,g={
 i(68644,{b=1,q=1})}}),
 q(28628,{awp=40003,coords={
 [83]={{59.7,49.6}}},qgs={48965},sourceQuests={28632},g={
@@ -21289,9 +21289,9 @@ q(28829,{awp=40003,coords={
 [83]={{61.8,74.6}}},qgs={50263},g={
 qo(1,{providers={{"n",7452},{"n",7453},{"n",7454}}})}}),
 q(5252,{coords={
-[83]={{56.2,44.4}}},lvl=53,providers={{"i",13347}},qgs={10684},r=2,rwp=40003,sourceQuests={5248},u=2}),
+[83]={{56.2,44.4}}},lvl=53,qgs={10684},qis={13347},r=2,rwp=40003,sourceQuests={5248},u=2}),
 q(4810,{coords={
-[83]={{61.6,38.6}}},lvl=50,maps={36},providers={{"i",12445}},qgs={10468},rwp=40003,sourceQuests={4809},u=2,g={
+[83]={{61.6,38.6}}},lvl=50,maps={36},qgs={10468},qis={12445},rwp=40003,sourceQuests={4809},u=2,g={
 s(127753,15862,{b=1,f=21,q=2,u=2}),
 s(127754,15863,{b=1,f=23,q=2,u=2})}}),
 q(28610,{awp=40003,coords={
@@ -21361,20 +21361,20 @@ q(28841,{awp=40003,coords={
 [83]={{58,63.7}}},qgs={10929},sourceQuests={28840},g={
 i(66060,{q=1})}}),
 q(5253,{coords={
-[83]={{52,30.2}}},lvl=53,maps={89},providers={{"i",13347}},qgs={11079},r=2,rwp=40003,sourceQuests={5252},u=2,g={
+[83]={{52,30.2}}},lvl=53,maps={89},qgs={11079},qis={13347},r=2,rwp=40003,sourceQuests={5252},u=2,g={
 s(127702,15791,{b=1,f=4,loc=45,q=2,u=2}),
 s(127703,15792,{b=1,f=5,loc=41,q=2,u=2}),
 s(127706,15795,{b=1,f=7,loc=44,q=2,u=2})}}),
 q(28536,{awp=40003,coords={
 [83]={{50.6,55}}},qgs={48660},sourceQuests={28519}}),
 q(6028,{coords={
-[83]={{61.2,38.8}}},lvl=50,maps={22},providers={{"i",15788}},qgs={10431},r=2,rwp=40003,u=2}),
+[83]={{61.2,38.8}}},lvl=50,maps={22},qgs={10431},qis={15788},r=2,rwp=40003,u=2}),
 q(6029,{coords={
-[83]={{61.2,38.8}}},lvl=50,maps={18},providers={{"i",15788}},qgs={10431},r=1,rwp=40003,u=2}),
+[83]={{61.2,38.8}}},lvl=50,maps={18},qgs={10431},qis={15788},r=1,rwp=40003,u=2}),
 q(28471,{awp=40003,coords={
-[83]={{36.9,55.6}}},crs={10738},providers={{"i",12842}},sourceQuests={28469}}),
+[83]={{36.9,55.6}}},crs={10738},qss={12842},sourceQuests={28469}}),
 q(5123,{coords={
-[83]={{69.6,38.2}}},crs={10738},lvl=52,providers={{"i",12842}},rwp=40003,sourceQuests={5087},u=2}),
+[83]={{69.6,38.2}}},crs={10738},lvl=52,qss={12842},rwp=40003,sourceQuests={5087},u=2}),
 q(28838,{awp=40003,coords={
 [83]={{58,63.7}}},qgs={10929},sourceQuests={28837},g={
 qo(1,{coords={
@@ -21462,7 +21462,7 @@ i(12458,{b=1,q=1,u=2})}}),
 q(4802,{coords={
 [83]={{61.8,38.2}}},cost={{"i",12431,3}},lvl=55,qgs={10307},repeatable=1,rwp=40003,sourceQuests={975},u=2,g={
 i(12451,{b=1,q=1,u=2})}}),
-q(5083,{lvl=52,providers={{"i",12771}},rwp=40003,u=2}),
+q(5083,{lvl=52,qss={12771},rwp=40003,u=2}),
 q(5201,{coords={
 [83]={{49.8,9.8}}},lvl=58,maxReputation={589,42000},minReputation={589,1500},qgs={10618},r=2,repeatable=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",7439}},u=2}),
@@ -21779,9 +21779,9 @@ q(1618,{coords={
 [87]={{48.6,43}}},cost={{"i",6214,4},{"i",2857,4}},learnedAt=60,maps={49},qgs={6031},r=2,requireSkill=164,g={
 r(8367,{description="This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",itemID=6735,learnedAt=100,q=2,requireSkill=164})}}),
 q(3632,{altQuests={3526,3629,3630,3633,3634,3635,3637,4181,29475,29477},coords={
-[87]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003,u=2}),
+[87]={{68.8,45.2}}},learnedAt=200,lvl=30,qgs={5174},qis={10789},r=2,requireSkill=202,rwp=40003,u=2}),
 q(4181,{altQuests={3526,3629,3630,3632,3633,3634,3635,3637,29475,29477},coords={
-[87]={{68.8,45.2}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5174},r=2,requireSkill=202,rwp=40003,u=2}),
+[87]={{68.8,45.2}}},learnedAt=200,lvl=30,qgs={5174},qis={10789},r=2,requireSkill=202,rwp=40003,u=2}),
 q(1682,{c={1},coords={
 [87]={{49,42.6}}},lvl=10,qgs={6031},r=2,rwp=40003,sourceQuests={1681},u=2,g={
 s(121670,6978,{b=1,c={1},f=21,q=2,u=2}),
@@ -21789,7 +21789,7 @@ s(121676,6984,{b=1,c={1},f=25,q=2,u=2}),
 s(121674,6982,{b=1,c={1},f=23,q=2,u=2}),
 s(121673,6981,{b=1,c={1},f=20,q=2,u=2})}}),
 q(6388,{coords={
-[87]={{51,26}}},providers={{"i",16311}},qgs={4256},races={3,7},sourceQuests={6391}}),
+[87]={{51,26}}},qgs={4256},qis={16311},races={3,7},sourceQuests={6391}}),
 q(6609,{coords={
 [87]={{48.2,6.6}}},description="Requires 225 Fishing to start this quest.",isBreadcrumb=1,lvl=35,nextQuests={6607},qgs={5161},r=2,requireSkill=356,rwp=40003,u=2}),
 q(6612,{coords={
@@ -21803,7 +21803,7 @@ crit(17727,{achID=5841,awp=40200,id=6,r=2,requireSkill=185,u=40})}}),
 q(1073,{coords={
 [87]={{71.9,51.9}}},cost={{"i",2458,2},{"i",2455,4}},lvl=17,maps={65},qgs={4081},r=2,rwp=40003,sourceQuests={1072},u=2}),
 q(1074,{coords={
-[87]={{71.9,51.9}}},lvl=17,maps={65},providers={{"i",5732}},qgs={4081},r=2,rwp=40003,sourceQuests={1073},u=2}),
+[87]={{71.9,51.9}}},lvl=17,maps={65},qgs={4081},qis={5732},r=2,rwp=40003,sourceQuests={1073},u=2}),
 q(1708,{c={1},coords={
 [87]={{68.2,46.2}}},lvl=20,maps={56},qgs={6169},r=2,rwp=40003,sourceQuests={1704},u=2,g={
 qo(1,{coords={
@@ -21859,15 +21859,15 @@ q(14111,{awp=30300,c={7},coords={
 [103]={{32.3,23.9}}},cost={{"i",5177,1},{"i",5176,1},{"i",5175,1},{"i",5178,1}},lvl=30,qgs={17219,20407,23127,35073},r=2,rwp=40003,u=2,g={
 i(46978,{b=1,u=2})}}),
 q(6392,{coords={
-[87]={{55.8,47.8}}},maps={27},providers={{"i",16311}},qgs={1573},races={3,7},sourceQuests={6388}}),
+[87]={{55.8,47.8}}},maps={27},qgs={1573},qis={16311},races={3,7},sourceQuests={6388}}),
 q(3461,{coords={
-[76]={{77.8,91.4}}},lvl=45,providers={{"i",10445}},qgs={8392},r=2,rwp=40003,sourceQuests={3449},u=2,g={
+[76]={{77.8,91.4}}},lvl=45,qgs={8392},qis={10445},r=2,rwp=40003,sourceQuests={3449},u=2,g={
 s(123915,10707,{b=1,f=7,loc=47,q=2,u=2}),
 s(123916,10708,{b=1,f=1,q=2,u=2})}}),
 q(683,{coords={
-[87]={{63.5,67.2}}},lvl=25,providers={{"i",4514}},qgs={2695},r=2,rwp=40003,sourceQuests={637},u=2}),
+[87]={{63.5,67.2}}},lvl=25,qgs={2695},qis={4514},r=2,rwp=40003,sourceQuests={637},u=2}),
 q(26118,{awp=40003,coords={
-[87]={{39.8,57.2}}},providers={{"i",56837}},qgs={42129},r=2,sourceQuests={26112},u=40,g={
+[87]={{39.8,57.2}}},qgs={42129},qis={56837},r=2,sourceQuests={26112},u=40,g={
 qo(1,{coords={
 [87]={{36.6,43.2}}},providers={{"n",42146}},u=40}),
 s(205296,57583,{b=1,f=23,q=2,u=40}),
@@ -21902,7 +21902,7 @@ q(3000,{c={2},coords={
 q(1645,{altQuests={1646},c={2},coords={
 [87]={{27.4,12}}},lvl=12,qgs={6179},races={3},rwp=40003,sourceQuests={2997,2999,3000},u=2,g={
 i(6916,{b=1,lvl=12,q=1,u=2})}}),
-q(1646,{c={2},lvl=12,providers={{"i",6916}},races={3},rwp=40003,sourceQuests={1645},u=2}),
+q(1646,{c={2},lvl=12,qss={6916},races={3},rwp=40003,sourceQuests={1645},u=2}),
 q(1647,{c={2},coords={
 [87]={{27.4,12}}},lvl=12,qgs={6179},races={3},rwp=40003,sourceQuests={1646},u=2}),
 q(1648,{c={2},coords={
@@ -21910,7 +21910,7 @@ q(1648,{c={2},coords={
 q(1778,{c={2},coords={
 [87]={{27.6,70.6}}},lvl=12,qgs={6175},races={3},rwp=40003,sourceQuests={1648},u=2}),
 q(1779,{c={2},coords={
-[87]={{27.4,12}}},lvl=12,providers={{"i",6866}},qgs={6179},races={3},rwp=40003,sourceQuests={1778},u=2}),
+[87]={{27.4,12}}},lvl=12,qgs={6179},qis={6866},races={3},rwp=40003,sourceQuests={1778},u=2}),
 q(1783,{c={2},coords={
 [87]={{23.6,8.6}}},lvl=12,qgs={6178},races={3},rwp=40003,sourceQuests={1779},u=2,g={
 q(1789,{coords={
@@ -22165,7 +22165,7 @@ q(10360,{coords={
 q(10359,{coords={
 [110]={{56.6,52.5}}},cost={{"i",2592,60}},lvl=12,qgs={20612},r=1,rwp=40003,u=2}),
 q(9723,{c={2},coords={
-[110]={{92,38.8}}},cost={{"i",20520,5},{"i",12360,6},{"i",8838,10},{"i",14047,40},{"g",1500000}},lvl=60,providers={{"i",24277}},qgs={25223},races={10},rwp=40003,sourceQuests={9722},u=2}),
+[110]={{92,38.8}}},cost={{"i",20520,5},{"i",12360,6},{"i",8838,10},{"i",14047,40},{"g",1500000}},lvl=60,qgs={25223},qis={24277},races={10},rwp=40003,sourceQuests={9722},u=2}),
 q(64319,{c={2},coords={
 [110]={{89.3,35.2}}},qgs={17717},races={10},rwp=40003,sourceQuests={9678},u=2}),
 q(9721,{c={2},coords={
@@ -22179,15 +22179,15 @@ q(63866,{c={2},coords={
 qo(1,{coords={
 [110]={{92.1,36.2}}},crs={17544},providers={{"i",24156},{"i",185956}},u=2})}}),
 q(9621,{coords={
-[110]={{54,20.4}}},lvl=15,maps={998},providers={{"i",23929}},qgs={16802},races={10},sourceQuests={9328},u=17}),
+[110]={{54,20.4}}},lvl=15,maps={998},qgs={16802},qis={23929},races={10},sourceQuests={9328},u=17}),
 q(9812,{coords={
-[110]={{54,20.4}}},lvl=15,maps={998},providers={{"i",23929}},qgs={16802},races={2,5,6,8,9,26},sourceQuests={9811},u=17}),
+[110]={{54,20.4}}},lvl=15,maps={998},qgs={16802},qis={23929},races={2,5,6,8,9,26},sourceQuests={9811},u=17}),
 q(9707,{c={2},coords={
-[110]={{89.3,35.2}}},lvl=20,providers={{"i",24239}},qgs={17717},races={10},rwp=40003,sourceQuests={9692},u=2}),
+[110]={{89.3,35.2}}},lvl=20,qgs={17717},qis={24239},races={10},rwp=40003,sourceQuests={9692},u=2}),
 q(9626,{coords={
-[998]={{57.8,91.6}}},lvl=15,maps={85},providers={{"i",23930}},qgs={10181},races={10},sourceQuests={9621},u=17}),
+[998]={{57.8,91.6}}},lvl=15,maps={85},qgs={10181},qis={23930},races={10},sourceQuests={9621},u=17}),
 q(9813,{coords={
-[998]={{57.8,91.6}}},lvl=15,maps={85},providers={{"i",23930}},qgs={10181},races={2,5,6,8,9,26},sourceQuests={9812},u=17}),
+[998]={{57.8,91.6}}},lvl=15,maps={85},qgs={10181},qis={23930},races={2,5,6,8,9,26},sourceQuests={9812},u=17}),
 q(9685,{c={2},coords={
 [110]={{89.3,35.2}}},lvl=12,qgs={17717},races={10},rwp=40003,sourceQuests={63866},u=2,g={
 qo(1,{coords={
@@ -22196,7 +22196,7 @@ q(10788,{c={9},coords={
 [85]={{48.2,45.3}},
 [998]={{85.1,26}}},isBreadcrumb=1,lvl=10,nextQuests={9529},qgs={5675,5875},races={10},rwp=40003,u=2}),
 q(9134,{coords={
-[110]={{53.9,71}}},lvl=5,maps={94},providers={{"i",22550}},qgs={16191},races={10},sourceQuests={9133},u=17}),
+[110]={{53.9,71}}},lvl=5,maps={94},qgs={16191},qis={22550},races={10},sourceQuests={9133},u=17}),
 q(9710,{c={2},coords={
 [110]={{79.4,38.6}}},lvl=20,qgs={16669},races={10},rwp=40003,sourceQuests={9707},u=2,g={
 s(135819,25464,{b=1,f=29,q=3,u=2})}}),
@@ -24191,7 +24191,7 @@ qo(1,{coords={
 qo(2,{coords={
 [56]={{64.7,75.5}}},providers={{"i",2784},{"o",2084}},u=2})}}),
 q(336,{coords={
-[84]={{40.1,85.3}}},lvl=25,providers={{"i",2788}},qgs={1435},r=2,rwp=40003,sourceQuests={335},u=2}),
+[84]={{40.1,85.3}}},lvl=25,qgs={1435},qis={2788},r=2,rwp=40003,sourceQuests={335},u=2}),
 q(28825,{awp=40001,coords={
 [84]={{26.1,38.3},{43,71.9},{43.1,73.7},{62.5,30},{63.1,71.4},{74.6,18.8}},
 [87]={{26.5,70.2},{62.4,30.5}},
@@ -24214,12 +24214,12 @@ q(1638,{altQuests={1678,1679,1684,9582},c={1},coords={
 q(7796,{coords={
 [84]={{53.9,81.7}}},cost={{"i",14047,20}},lvl=50,maxReputation={72,42000},qgs={14722},r=2,repeatable=1,rwp=40003,sourceQuests={7795},u=2}),
 q(11451,{awp=20300,coords={
-[84]={{81.5,28.6}}},lvl=60,maps={111},providers={{"i",34089}},qgs={24729},r=2}),
+[84]={{81.5,28.6}}},lvl=60,maps={111},qgs={24729},qis={34089},r=2}),
 q(396,{coords={
-[84]={{57.7,47.9}}},lvl=16,providers={{"i",2956}},qgs={1646},r=2,rwp=40003,sourceQuests={395},u=2,g={
+[84]={{57.7,47.9}}},lvl=16,qgs={1646},qis={2956},r=2,rwp=40003,sourceQuests={395},u=2,g={
 i(2933,{b=1,f=52,q=3,u=2})}}),
 q(7643,{c={2},coords={
-[84]={{48.6,50}}},lvl=60,maps={25,234},providers={{"i",18753}},qgs={928,14566},r=2,rwp=40003,sourceQuests={7642},u=2,g={
+[84]={{48.6,50}}},lvl=60,maps={25,234},qgs={928,14566},qis={18753},r=2,rwp=40003,sourceQuests={7642},u=2,g={
 q(7645,{coords={
 [25]={{52,55.6}}},cost={{"i",13724,20},{"g",500000}},qgs={2357},repeatable=1,u=2,g={
 qo(1,{providers={{"i",18775}},questID=7643,u=2})}})}}),
@@ -24234,7 +24234,7 @@ s(122003,7511,{b=1,c={8},f=4,loc=42,q=2,u=2})}}),
 q(1639,{c={1},coords={
 [84]={{77.1,53.3}}},lvl=10,qgs={6089},r=2,rwp=40003,sourceQuests={1638,1679,1684,9582},u=2}),
 q(1665,{altQuests={1678,1683,9582},c={1},coords={
-[84]={{76.8,52.5}}},lvl=10,providers={{"i",6781}},qgs={6090},r=2,rwp=40003,sourceQuests={1640},u=2}),
+[84]={{76.8,52.5}}},lvl=10,qgs={6090},qis={6781},r=2,rwp=40003,sourceQuests={1640},u=2}),
 q(1640,{c={1},coords={
 [84]={{76.8,52.5}}},lvl=10,qgs={6090},r=2,rwp=40003,sourceQuests={1639},u=2}),
 q(26488,{awp=40001,coords={
@@ -24242,7 +24242,7 @@ q(26488,{awp=40001,coords={
 i(67414,{b=1,q=1,requireSkill=356}),
 crit(15815,{achID=5476,awp=40200,id=5,r=2,u=40})}}),
 q(7644,{c={2},coords={
-[84]={{48.6,50}}},lvl=60,maps={234},providers={{"i",18792}},qgs={928,14566},r=2,rwp=40003,sourceQuests={7643},u=2}),
+[84]={{48.6,50}}},lvl=60,maps={234},qgs={928,14566},qis={18792},r=2,rwp=40003,sourceQuests={7643},u=2}),
 q(29412,{awp=40200,coords={
 [84]={{58.9,52.7}}},qgs={54117},r=2,g={
 qo(1,{providers={{"i",71034},{"o",209242}}}),
@@ -24272,9 +24272,9 @@ qo(1,{coords={
 i(67414,{b=1,q=1,requireSkill=356}),
 crit(15813,{achID=5476,awp=40200,id=3,r=2,u=40})}}),
 q(6261,{coords={
-[84]={{77,61.2}}},description="This quest gets marked as completed when you complete the quest 'Dungar Longdrink' (26395).",lvl=10,providers={{"i",16115}},qgs={1323},races={1},rwp=40003,sourceQuests={6281},u=2}),
+[84]={{77,61.2}}},description="This quest gets marked as completed when you complete the quest 'Dungar Longdrink' (26395).",lvl=10,qgs={1323},qis={16115},races={1},rwp=40003,sourceQuests={6281},u=2}),
 q(26395,{awp=40003,coords={
-[84]={{77.2,61}}},providers={{"i",16115}},qgs={1323},races={1},sourceQuests={26394}}),
+[84]={{77.2,61}}},qgs={1323},qis={16115},races={1},sourceQuests={26394}}),
 q(25156,{awp=40003,coords={
 [84]={{63.8,61.2}}},isDaily=1,qgs={50480},r=2,requireSkill=755,g={
 cu(361,{requireSkill=755})}}),
@@ -24283,7 +24283,7 @@ q(5673,{altQuests={5672,5675},c={5},coords={
 q(7637,{c={2},coords={
 [84]={{48.6,50}}},cost=1500000,lvl=60,maps={87},qgs={928},r=2,rwp=40003,sourceQuests={7638,7670},u=2}),
 q(7640,{c={2},coords={
-[84]={{48.6,50}}},lvl=60,maps={23},providers={{"i",18752}},qgs={928},r=2,rwp=40003,sourceQuests={7639},u=2,g={
+[84]={{48.6,50}}},lvl=60,maps={23},qgs={928},qis={18752},r=2,rwp=40003,sourceQuests={7639},u=2,g={
 qo(1,{coords={
 [23]={{16.4,31.8}}},providers={{"n",14564}},u=2})}}),
 q(28807,{awp=40003,coords={
@@ -24295,14 +24295,14 @@ qo(1,{coords={
 cu(81,{requireSkill=185,u=40}),
 crit(15803,{achID=5474,awp=40200,id=3,r=2,u=40})}}),
 q(1701,{c={1},coords={
-[84]={{64.6,37.2}}},lvl=20,maps={56,65,301},providers={{"i",6842}},qgs={5413},r=2,rwp=40003,sourceQuests={1702},u=2,g={
+[84]={{64.6,37.2}}},lvl=20,maps={56,65,301},qgs={5413},qis={6842},r=2,rwp=40003,sourceQuests={1702},u=2,g={
 qo(1,{crs={1111,4040},providers={{"i",6838}},u=2}),
 qo(2,{crs={4031,4032},providers={{"i",6839}},u=2}),
 qo(3,{crs={6167},providers={{"i",6840}},u=2}),
 qo(4,{crs={6168},providers={{"i",6841}},u=2})}}),
 q(6184,{coords={
 [84]={{78.3,70.7}}},lvl=56,qgs={332},r=2,rwp=40003,sourceQuests={6183},u=2}),
-q(27675,{awp=40003,description="After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",isDaily=1,providers={{"i",62056}},r=2,requireSkill=773}),
+q(27675,{awp=40003,description="After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",isDaily=1,qss={62056},r=2,requireSkill=773}),
 q(1782,{c={1},coords={
 [84]={{64.6,37.2}}},lvl=20,qgs={5413},r=2,rwp=40003,sourceQuests={1701},u=2,g={
 s(121664,6972,{b=1,c={1},f=6,loc=42,q=3,u=2})}}),
@@ -24315,18 +24315,18 @@ q(1921,{c={8},coords={
 qo(2,{coords={
 [48]={{35,27}}},providers={{"i",7249},{"o",271}},u=2})}}),
 q(3630,{altQuests={3526,3629,3632,3633,3634,3635,3637,4181,29475,29477},coords={
-[84]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003,u=2}),
+[84]={{55,8.6}}},learnedAt=200,lvl=30,qgs={5518},qis={10789},r=2,requireSkill=202,rwp=40003,u=2}),
 q(3629,{altQuests={3526,3630,3632,3633,3634,3635,3637,4181,29475,29477},coords={
-[84]={{55,8.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={5518},r=2,requireSkill=202,rwp=40003,u=2}),
+[84]={{55,8.6}}},learnedAt=200,lvl=30,qgs={5518},qis={10789},r=2,requireSkill=202,rwp=40003,u=2}),
 q(1700,{c={1},coords={
-[84]={{64.6,37.2}}},isBreadcrumb=1,lvl=20,nextQuests={1705},providers={{"i",6926}},qgs={5413},r=2,rwp=40003,sourceQuests={1701},u=2}),
+[84]={{64.6,37.2}}},isBreadcrumb=1,lvl=20,nextQuests={1705},qgs={5413},qis={6926},r=2,rwp=40003,sourceQuests={1701},u=2}),
 q(1706,{c={1},coords={
 [84]={{59.7,33.8}}},lvl=20,qgs={1416},r=2,rwp=40003,sourceQuests={1705},u=2,g={
 s(121663,6971,{b=1,c={1},f=6,loc=40,q=2,u=2})}}),
 q(7648,{c={2},coords={
-[84]={{59.7,33.8}}},lvl=60,providers={{"i",18753}},qgs={1416},r=2,rwp=40003,sourceQuests={7642},u=2}),
+[84]={{59.7,33.8}}},lvl=60,qgs={1416},qis={18753},r=2,rwp=40003,sourceQuests={7642},u=2}),
 q(333,{coords={
-[84]={{62.3,67.9}}},providers={{"i",2724}},qgs={1427},r=2}),
+[84]={{62.3,67.9}}},qgs={1427},qis={2724},r=2}),
 q(27064,{awp=40003,coords={
 [84]={{85.7,31.6}}},qgs={44293},r=2,rwp=70003,sourceQuests={26997}}),
 q(1939,{c={8},coords={
@@ -24344,7 +24344,7 @@ qo(1,{coords={
 [52]={{36.3,54.6}}},providers={{"i",2998},{"o",1166}},u=2})}}),
 q(32675,{awp=50200,description="This quest is automatically offered to Alliance players upon reaching the specified level.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",34090,"spellID",34091,"spellID",90265},lvl=60,r=2,rwp=100105}),
 q(2759,{coords={
-[84]={{63,36.4}}},lvl=40,maps={224},providers={{"i",8663}},qgs={7798},r=2,requireSkill=164,rwp=40003,sourceQuests={2758},u=2}),
+[84]={{63,36.4}}},lvl=40,maps={224},qgs={7798},qis={8663},r=2,requireSkill=164,rwp=40003,sourceQuests={2758},u=2}),
 q(1448,{coords={
 [84]={{69.5,40.4}}},lvl=38,qgs={5384},r=2,rwp=40003,u=2}),
 q(2745,{coords={
@@ -24366,7 +24366,7 @@ q(27271,{awp=40003,c={8},coords={
 [89]={{37.6,80}},
 [103]={{47.2,61.8}}},isBreadcrumb=1,lvl=20,nextQuests={27354},qgs={5146,16749,50690},r=2}),
 q(1704,{c={1},coords={
-[84]={{64.6,37.2}}},isBreadcrumb=1,lvl=20,nextQuests={1708},providers={{"i",6926}},qgs={5413},races={3,7},rwp=40003,sourceQuests={1701},u=2}),
+[84]={{64.6,37.2}}},isBreadcrumb=1,lvl=20,nextQuests={1708},qgs={5413},qis={6926},races={3,7},rwp=40003,sourceQuests={1701},u=2}),
 q(32665,{awp=50200,description="This quest is automatically granted to Pandaren upon reaching the specified level.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,races={25},rwp=100105}),
 q(7670,{c={2},coords={
 [87]={{23.4,6.2}}},isBreadcrumb=1,lvl=60,nextQuests={7637},qgs={5149},r=2,rwp=40003,u=2}),
@@ -24382,7 +24382,7 @@ q(1666,{c={1},coords={
 q(2360,{c={4},coords={
 [84]={{78.3,70.7}}},lvl=20,qgs={332},r=2,rwp=40003,u=2}),
 q(1703,{c={1},coords={
-[84]={{64.6,37.2}}},isBreadcrumb=1,lvl=20,nextQuests={1710},providers={{"i",6926}},qgs={5413},races={4},rwp=40003,sourceQuests={1701},u=2}),
+[84]={{64.6,37.2}}},isBreadcrumb=1,lvl=20,nextQuests={1710},qgs={5413},qis={6926},races={4},rwp=40003,sourceQuests={1701},u=2}),
 q(1363,{coords={
 [84]={{51.8,74.3}}},lvl=37,qgs={338},r=2,rwp=40003,u=2}),
 q(1364,{coords={
@@ -24423,7 +24423,7 @@ qo(1,{coords={
 cu(81,{requireSkill=185,u=40}),
 crit(15804,{achID=5474,awp=40200,id=4,r=2,u=40})}}),
 q(334,{coords={
-[84]={{58.1,67.5}}},providers={{"i",2760}},qgs={1428},r=2}),
+[84]={{58.1,67.5}}},qgs={1428},qis={2760},r=2}),
 q(27044,{awp=40003,coords={
 [84]={{85.7,31.6}}},qgs={44293},r=2,rwp=70003,sourceQuests={26975,26997}}),
 q(26153,{awp=40003,coords={
@@ -24442,9 +24442,9 @@ q(2281,{c={4},coords={
 q(1919,{c={8},coords={
 [87]={{26.8,8.6}}},isBreadcrumb=1,lvl=15,nextQuests={1920},qgs={7312},races={1,7},rwp=40003,u=2}),
 q(26396,{awp=40003,coords={
-[84]={{71,72.6}}},maps={37},providers={{"i",16115}},qgs={352},races={1},sourceQuests={26395}}),
+[84]={{71,72.6}}},maps={37},qgs={352},qis={16115},races={1},sourceQuests={26395}}),
 q(6285,{coords={
-[84]={{71,72.5}}},description="This quest gets marked as completed when you complete the quest 'Return to Argus' (26396) in Elwynn Forest.",lvl=10,maps={52},providers={{"i",16115}},qgs={352},races={1},rwp=40003,sourceQuests={6261},u=2}),
+[84]={{71,72.5}}},description="This quest gets marked as completed when you complete the quest 'Return to Argus' (26396) in Elwynn Forest.",lvl=10,maps={52},qgs={352},qis={16115},races={1},rwp=40003,sourceQuests={6261},u=2}),
 q(26442,{awp=40001,coords={
 [84]={{55,69.6}}},isDaily=1,qgs={5494},r=2,requireSkill=356,g={
 qo(1,{coords={
@@ -24452,7 +24452,7 @@ qo(1,{coords={
 i(67414,{b=1,q=1,requireSkill=356}),
 crit(15814,{achID=5476,awp=40200,id=4,r=2,u=40})}}),
 q(393,{coords={
-[84]={{57.7,47.9}}},lvl=16,providers={{"i",8687}},qgs={1646},r=2,rwp=40003,sourceQuests={392},u=2}),
+[84]={{57.7,47.9}}},lvl=16,qgs={1646},qis={8687},r=2,rwp=40003,sourceQuests={392},u=2}),
 q(2206,{c={4},coords={
 [84]={{78.3,70.7}}},lvl=10,maps={37},qgs={332},r=2,rwp=40003,sourceQuests={2205},u=2,g={
 qo(1,{coords={
@@ -24461,9 +24461,9 @@ s(121842,7298,{b=1,c={4},f=20,q=2,u=2})}}),
 q(343,{coords={
 [84]={{55,54.2}}},lvl=20,qgs={1444},r=2,rwp=40003,u=2}),
 q(353,{coords={
-[84]={{59.7,33.8}}},providers={{"i",2806}},qgs={1416},r=2,sourceQuests={1097}}),
+[84]={{59.7,33.8}}},qgs={1416},qis={2806},r=2,sourceQuests={1097}}),
 q(579,{coords={
-[84]={{84.6,24.2}}},providers={{"i",3898}},qgs={2504},r=2,repeatable=1,rwp=40003,u=2,g={
+[84]={{84.6,24.2}}},qgs={2504},qis={3898},r=2,repeatable=1,rwp=40003,u=2,g={
 i(3899,{u=2}),
 i(2154,{b=1,u=2})}}),
 q(1688,{c={9},coords={
@@ -24486,7 +24486,7 @@ q(1689,{c={9},coords={
 [84]={{39.2,85.2}}},lvl=10,qgs={6122},races={1,7},rwp=40003,sourceQuests={1688},u=2,g={
 qo(1,{cost={{"i",6928,1}},providers={{"n",5676}},u=2})}}),
 q(392,{coords={
-[84]={{51.6,69.4}}},lvl=16,providers={{"i",8687}},qgs={1719},r=2,rwp=40003,sourceQuests={391},u=2}),
+[84]={{51.6,69.4}}},lvl=16,qgs={1719},qis={8687},r=2,rwp=40003,sourceQuests={391},u=2}),
 q(7646,{c={2},coords={
 [84]={{48.6,50}}},cost={{"i",18335,1},{"i",12800,1}},lvl=60,qgs={928},r=2,rwp=40003,sourceQuests={7644},u=2}),
 q(28826,{awp=40001,coords={
@@ -24509,17 +24509,17 @@ cu(361,{requireSkill=755})}}),
 q(1274,{coords={
 [84]={{49.6,44.5}}},lvl=28,qgs={4982},r=2,rwp=40003,u=2}),
 q(1241,{coords={
-[84]={{80.3,44.1}}},lvl=28,providers={{"i",5948}},qgs={4960},r=2,rwp=40003,sourceQuests={1274},u=2}),
+[84]={{80.3,44.1}}},lvl=28,qgs={4960},qis={5948},r=2,rwp=40003,sourceQuests={1274},u=2}),
 q(1242,{coords={
-[84]={{76.3,85.1}}},lvl=28,providers={{"i",5946}},qgs={4959},r=2,rwp=40003,sourceQuests={1241},u=2}),
+[84]={{76.3,85.1}}},lvl=28,qgs={4959},qis={5946},r=2,rwp=40003,sourceQuests={1241},u=2}),
 q(1243,{coords={
-[84]={{66,74.1}}},lvl=28,maps={47},providers={{"i",5960}},qgs={482},r=2,rwp=40003,sourceQuests={1242},u=2}),
+[84]={{66,74.1}}},lvl=28,maps={47},qgs={482},qis={5960},r=2,rwp=40003,sourceQuests={1242},u=2}),
 q(1244,{coords={
 [47]={{73.21,38.81}}},lvl=28,qgs={840},r=2,rwp=40003,sourceQuests={1243},u=2,g={
 qo(1,{coords={
 [47]={{24,72.1}}},providers={{"i",5947},{"o",21052}},u=2})}}),
 q(1245,{coords={
-[47]={{73.21,38.81}}},lvl=28,providers={{"i",5947}},qgs={840},r=2,rwp=40003,sourceQuests={1244},u=2}),
+[47]={{73.21,38.81}}},lvl=28,qgs={840},qis={5947},r=2,rwp=40003,sourceQuests={1244},u=2}),
 q(1246,{coords={
 [84]={{66,74.1}}},lvl=28,qgs={482},r=2,rwp=40003,sourceQuests={1245},u=2}),
 q(1447,{coords={
@@ -24544,7 +24544,7 @@ q(3681,{altQuests={1787,2998},c={2},coords={
 q(1641,{altQuests={1787},c={2},coords={
 [84]={{50.5,47.5}}},lvl=12,qgs={6171},races={1},rwp=40003,sourceQuests={2998,3681},u=2}),
 q(1642,{c={2},coords={
-[84]={{50.5,47.5}}},lvl=12,providers={{"i",6775}},qgs={6171},races={1},rwp=40003,sourceQuests={1641},u=2}),
+[84]={{50.5,47.5}}},crs={6171},lvl=12,qss={6775},races={1},rwp=40003,sourceQuests={1641},u=2}),
 q(1643,{c={2},coords={
 [84]={{50.5,47.5}}},lvl=12,qgs={6171},races={1},rwp=40003,sourceQuests={1642},u=2}),
 q(1644,{c={2},coords={
@@ -24552,7 +24552,7 @@ q(1644,{c={2},coords={
 q(1780,{c={2},coords={
 [84]={{63.8,72.2}}},lvl=12,qgs={6174},races={1},rwp=40003,sourceQuests={1644},u=2}),
 q(1781,{c={2},coords={
-[84]={{50.5,47.5}}},lvl=12,providers={{"i",6866}},qgs={6171},races={1},rwp=40003,sourceQuests={1780},u=2}),
+[84]={{50.5,47.5}}},lvl=12,qgs={6171},qis={6866},races={1},rwp=40003,sourceQuests={1780},u=2}),
 q(1786,{c={2},coords={
 [84]={{49.5,44.9}}},lvl=12,qgs={6173},races={1},rwp=40003,sourceQuests={1781},u=2,g={
 q(1790,{coords={
@@ -24574,7 +24574,7 @@ q(1794,{c={2},coords={
 q(1793,{c={2},coords={
 [84]={{50.5,47.5}}},lvl=20,qgs={6171},races={1},repeatable=1,rwp=40003,u=2}),
 q(1649,{c={2},coords={
-[84]={{50.5,47.5}}},lvl=20,providers={{"i",6776}},qgs={6171},r=2,rwp=40003,sourceQuests={1793,1794},u=2}),
+[84]={{50.5,47.5}}},crs={6171},lvl=20,qss={6776},r=2,rwp=40003,sourceQuests={1793,1794},u=2}),
 q(1650,{c={2},coords={
 [84]={{50.5,47.5}}},lvl=20,qgs={6171},r=2,rwp=40003,sourceQuests={1649},u=2}),
 q(1651,{c={2},coords={
@@ -24605,7 +24605,7 @@ qo(1,{coords={
 i(67414,{b=1,q=1,requireSkill=356}),
 crit(15816,{achID=5476,awp=40200,id=6,r=2,u=40})}}),
 q(7639,{c={2},coords={
-[87]={{25,8.2}}},lvl=60,providers={{"i",18819}},qgs={11406},r=2,rwp=40003,sourceQuests={7637},u=2}),
+[87]={{25,8.2}}},lvl=60,qgs={11406},qis={18819},r=2,rwp=40003,sourceQuests={7637},u=2}),
 q(1449,{coords={
 [84]={{69.5,40.4}}},lvl=38,maps={26},qgs={5384},r=2,rwp=40003,sourceQuests={1448},u=2}),
 q(26977,{awp=40003,coords={
@@ -24623,7 +24623,7 @@ qo(1,{coords={
 i(190308,{coords={
 [63]={{15,31},{26.79,22.42}}},description="You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",providers={{"i",190307},{"o",100000001}},q=1,u=2})}}),
 q(332,{coords={
-[84]={{63.8,73.6}}},providers={{"i",2722}},qgs={1432},r=2,g={
+[84]={{63.8,73.6}}},qgs={1432},qis={2722},r=2,g={
 i(2723,{f=55,q=1})}}),
 q(397,{c={9},coords={
 [84]={{40.1,85.3}}},lvl=25,qgs={1435},r=2,rwp=40003,sourceQuests={336},u=2,g={
@@ -26403,7 +26403,7 @@ q(1473,{altQuests={1501},c={9},coords={
 qo(1,{coords={
 [18]={{51.1,67.6}}},providers={{"i",6285}},u=2})}}),
 q(9189,{awp=20003,coords={
-[998]={{57.8,90.6}}},lvl=15,providers={{"i",22629}},qgs={16287},races={10},rwp=40003,sourceQuests={9180},u=2}),
+[998]={{57.8,90.6}}},lvl=15,qgs={16287},qis={22629},races={10},rwp=40003,sourceQuests={9180},u=2}),
 q(1507,{altQuests={1472},c={9},isBreadcrumb=1,lvl=20,nextQuests={1476,1508},qgs={5875},races={2,5},rwp=40003,u=2}),
 q(1472,{altQuests={1507},c={9},coords={
 [998]={{85,25.6}}},isBreadcrumb=1,lvl=20,nextQuests={1476,1508},qgs={5675},races={2,5},rwp=40003,u=2}),
@@ -26415,9 +26415,9 @@ q(1846,{c={1},coords={
 [998]={{62.4,39.2}}},lvl=20,maps={56},qgs={6411},r=1,rwp=40003,sourceQuests={1841},u=2,g={
 qo(1,{cost={{"i",7131,1}},crs={1034,1035,1036,1037,1038,1057,2091},providers={{"i",7134}},u=2})}}),
 q(232,{coords={
-[998]={{50,68.4}}},lvl=38,providers={{"i",8525}},qgs={5204},r=1,rwp=40003,u=2}),
+[998]={{50,68.4}}},lvl=38,qgs={5204},qis={8525},r=1,rwp=40003,u=2}),
 q(238,{coords={
-[998]={{58.2,55.2}}},lvl=38,providers={{"i",8523}},qgs={7683},r=1,rwp=40003,sourceQuests={232},u=2}),
+[998]={{58.2,55.2}}},lvl=38,qgs={7683},qis={8523},r=1,rwp=40003,sourceQuests={232},u=2}),
 q(29333,{awp=40100,coords={
 [998]={{62.2,44.6}}},isDaily=1,qgs={4552},r=1,requireSkill=185,g={
 cu(81,{requireSkill=185,u=40}),
@@ -26438,9 +26438,9 @@ q(1961,{c={8},coords={
 [998]={{85,10.2}}},cost={{"i",2589,10}},lvl=15,maps={21},qgs={4568},r=1,rwp=40003,sourceQuests={1960},u=2,g={
 qo(2,{crs={1867,1888,1889,1912,1913,1914,1915,3577,3578},providers={{"i",7293}},u=2})}}),
 q(3635,{altQuests={3526,3629,3630,3632,3633,3634,3637,4181,29475,29477},coords={
-[998]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003,u=2}),
+[998]={{75.6,74.6}}},learnedAt=200,lvl=30,qgs={4586},qis={10789},r=1,requireSkill=202,rwp=40003,u=2}),
 q(3526,{altQuests={3629,3630,3632,3633,3634,3635,3637,4181,29475,29477},coords={
-[998]={{75.6,74.6}}},learnedAt=200,lvl=30,providers={{"i",10789}},qgs={4586},r=1,requireSkill=202,rwp=40003,u=2}),
+[998]={{75.6,74.6}}},learnedAt=200,lvl=30,qgs={4586},qis={10789},r=1,requireSkill=202,rwp=40003,u=2}),
 q(1478,{altQuests={1506},c={9},coords={
 [18]={{61.6,52.6}}},lvl=10,qgs={5724},races={2,5},rwp=40003,u=2}),
 q(65593,{altQuests={65610},c={9},coords={
@@ -26456,7 +26456,7 @@ qo(1,{coords={
 qo(2,{coords={
 [56]={{50.6,12.6}}},crs={5683},providers={{"i",6313}},u=2})}}),
 q(243,{coords={
-[998]={{50.1,68}}},lvl=38,maps={71},providers={{"i",8523}},qgs={5204},r=1,rwp=40003,sourceQuests={238},u=2}),
+[998]={{50.1,68}}},lvl=38,maps={71},qgs={5204},qis={8523},r=1,rwp=40003,sourceQuests={238},u=2}),
 q(1960,{c={8},coords={
 [998]={{85,10.2}}},lvl=15,qgs={4568},r=1,rwp=40003,sourceQuests={1959},u=2,g={
 qo(1,{coords={
@@ -26490,7 +26490,7 @@ s(127625,15703,{b=1,f=3,q=2,u=2})}}),
 q(1885,{c={4},coords={
 [18]={{61.6,52}}},isBreadcrumb=1,lvl=10,nextQuests={1886,14420},qgs={2130},races={5},rwp=40003,u=2}),
 q(6322,{coords={
-[998]={{61.6,41.8}}},lvl=10,maps={21},providers={{"i",16210}},qgs={4556},races={5},sourceQuests={6323}}),
+[998]={{61.6,41.8}}},lvl=10,maps={21},qgs={4556},qis={16210},races={5},sourceQuests={6323}}),
 q(29361,{awp=40100,coords={
 [998]={{80.7,31.2}}},isDaily=1,qgs={4573},r=1,requireSkill=356,g={
 i(69999,{q=1,requireSkill=356,g={
@@ -26507,13 +26507,13 @@ q(1959,{c={8},coords={
 [88]={{25,20.6}}},isBreadcrumb=1,lvl=15,nextQuests={1960},qgs={3049,7311},r=1,rwp=40003,u=2}),
 q(6324,{coords={
 [13]={{44.9,38.9}},
-[998]={{63.4,48.6}}},lvl=10,maps={18},providers={{"i",16210}},qgs={4551},races={5},sourceQuests={6322}}),
+[998]={{63.4,48.6}}},lvl=10,maps={18},qgs={4551},qis={16210},races={5},sourceQuests={6322}}),
 q(29334,{awp=40100,coords={
 [998]={{62.2,44.6}}},isDaily=1,qgs={4552},r=1,requireSkill=185,g={
 cu(81,{requireSkill=185,u=40}),
 crit(17741,{achID=5844,awp=40200,id=5,r=1,requireSkill=185,u=40})}}),
 q(1358,{coords={
-[998]={{50,68.4}}},lvl=10,maps={10},providers={{"i",6016}},qgs={5204},r=1,rwp=40003,sourceQuests={1359},u=2,g={
+[998]={{50,68.4}}},lvl=10,maps={10},qgs={5204},qis={6016},r=1,rwp=40003,sourceQuests={1359},u=2,g={
 s(123860,10637,{b=1,f=4,loc=44,q=2,u=2}),
 s(123861,10638,{b=1,f=3,q=2,u=2})}}),
 q(3568,{coords={
@@ -26532,7 +26532,7 @@ i(10688,{b=1,f=55,q=1,u=2}),
 i(10689,{b=1,f=55,q=1,u=2}),
 i(10690,{b=1,f=55,q=1,u=2})}})}}),
 q(3569,{coords={
-[998]={{47.6,73}}},lvl=45,providers={{"i",10712}},qgs={8390},r=1,rwp=40003,sourceQuests={3568},u=2}),
+[998]={{47.6,73}}},lvl=45,qgs={8390},qis={10712},r=1,rwp=40003,sourceQuests={3568},u=2}),
 q(3570,{coords={
 [998]={{47.6,73}}},lvl=45,qgs={8390},r=1,rwp=40003,sourceQuests={3569},u=2}),
 q(1881,{altQuests={1883},c={8},coords={
@@ -26566,26 +26566,26 @@ q(1886,{c={4},coords={
 qo(1,{coords={
 [21]={{46.4,41.4},{51,36.2},{53.6,19.5},{67.4,5.6}}},crs={6497},providers={{"i",7231}},u=2})}}),
 q(1898,{c={4},coords={
-[998]={{83.2,69}}},lvl=10,providers={{"i",7231}},qgs={6467},races={5},rwp=30300,sourceQuests={1886},u=2}),
+[998]={{83.2,69}}},lvl=10,qgs={6467},qis={7231},races={5},rwp=30300,sourceQuests={1886},u=2}),
 q(1899,{c={4},coords={
 [998]={{54.6,75.6}}},lvl=10,qgs={6522},races={5},rwp=30300,sourceQuests={1898},u=2,g={
 qo(1,{coords={
 [998]={{55.3,76.7}}},providers={{"i",7294}},u=2})}}),
 q(1978,{c={4},coords={
-[998]={{83.2,69}}},lvl=10,providers={{"i",7294}},qgs={6467},races={5},rwp=30300,sourceQuests={1899},u=2,g={
+[998]={{83.2,69}}},lvl=10,qgs={6467},qis={7294},races={5},rwp=30300,sourceQuests={1899},u=2,g={
 s(121842,7298,{b=1,c={4},f=20,q=2,rwp=40003,u=2})}}),
 q(14420,{awp=30300,c={4},coords={
 [998]={{83.2,69}}},lvl=10,maps={21},qgs={6467},races={5},rwp=40003,sourceQuests={1885},u=2,g={
 qo(1,{coords={
 [21]={{46.4,41.4},{51,36.2},{53.6,19.5},{67.4,5.6}}},crs={6497},providers={{"i",7231}},u=2})}}),
 q(14419,{awp=30300,c={4},coords={
-[998]={{83.2,69}}},lvl=10,providers={{"i",7231}},qgs={6467},races={5},rwp=40003,sourceQuests={14420},u=2}),
+[998]={{83.2,69}}},lvl=10,qgs={6467},qis={7231},races={5},rwp=40003,sourceQuests={14420},u=2}),
 q(14421,{awp=30300,c={4},coords={
 [998]={{54.6,75.6}}},lvl=10,qgs={6522},races={5},rwp=40003,sourceQuests={14419},u=2,g={
 qo(1,{coords={
 [998]={{55.3,76.7}}},providers={{"i",7294}},u=2})}}),
 q(14418,{awp=30300,c={4},coords={
-[998]={{83.2,69}}},lvl=10,providers={{"i",7294}},qgs={6467},races={5},rwp=40003,sourceQuests={14421},u=2,g={
+[998]={{83.2,69}}},lvl=10,qgs={6467},qis={7294},races={5},rwp=40003,sourceQuests={14421},u=2,g={
 s(121842,7298,{b=1,c={4},f=20,q=2,u=2})}}),
 q(29322,{awp=40100,coords={
 [998]={{80.7,31.2}}},isDaily=1,qgs={4573},r=1,requireSkill=356,g={
@@ -26861,7 +26861,7 @@ s(206307,59195,{b=1,f=5,loc=43,q=2}),
 s(206308,59196,{b=1,f=5,loc=44,q=2}),
 s(206309,59197,{b=1,f=6,loc=42,q=2})}}),
 q(695,{coords={
-[14]={{46.2,47.8}}},lvl=30,providers={{"i",4529}},qgs={2788},r=2,rwp=40003,sourceQuests={694},u=2}),
+[14]={{46.2,47.8}}},lvl=30,qgs={2788},qis={4529},r=2,rwp=40003,sourceQuests={694},u=2}),
 q(696,{coords={
 [14]={{46.65,47}}},lvl=30,qgs={2789},r=2,rwp=40003,sourceQuests={695},u=2,g={
 qo(1,{coords={
@@ -26922,7 +26922,7 @@ q(26429,{awp=40003,coords={
 qo(1,{providers={{"n",2554}}}),
 qo(2,{providers={{"n",2556}}}),
 qo(3,{providers={{"n",2555},{"n",51633}}})}}),
-q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,providers={{"i",4614}},rwp=40003,u=2}),
+q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,qss={4614},rwp=40003,u=2}),
 q(667,{coords={
 [14]={{32.2,81.6}}},lvl=35,qgs={2610},rwp=40003,sourceQuests={670},u=2,g={
 i(4550,{b=1,f=52,q=2,u=2}),
@@ -26979,7 +26979,7 @@ q(701,{coords={
 [14]={{74.6,36.4}}},lvl=29,qgs={2706},r=1,rwp=40003,sourceQuests={675},u=2,g={
 qo(1,{crs={2561},providers={{"i",4513}},u=2})}}),
 q(702,{coords={
-[14]={{74.6,36.4}}},lvl=29,providers={{"i",4528}},qgs={2706},r=1,rwp=40003,sourceQuests={701},u=2}),
+[14]={{74.6,36.4}}},lvl=29,qgs={2706},qis={4528},r=1,rwp=40003,sourceQuests={701},u=2}),
 q(847,{coords={
 [14]={{72.6,34}}},lvl=29,qgs={2792},r=1,rwp=40003,sourceQuests={702},u=2,g={
 i(4546,{b=1,f=55,q=1,u=2})}}),
@@ -27021,11 +27021,11 @@ q(26116,{awp=40003,coords={
 q(663,{coords={
 [14]={{31.6,82.6}}},lvl=35,qgs={2766},rwp=40003,u=2}),
 q(647,{coords={
-[14]={{43.2,92.6}}},lvl=28,maps={25},providers={{"i",4441}},qgs={2696},r=2,rwp=40003,u=2}),
+[14]={{43.2,92.6}}},lvl=28,maps={25},qgs={2696},qis={4441},r=2,rwp=40003,u=2}),
 q(690,{coords={
 [84]={{50.6,87.6}}},isBreadcrumb=1,lvl=30,nextQuests={691},qgs={2708},r=2,rwp=40003,u=2}),
 q(697,{coords={
-[14]={{46.6,47}}},lvl=30,maps={84},providers={{"i",4533}},qgs={2789},r=2,rwp=40003,sourceQuests={696},u=2,g={
+[14]={{46.6,47}}},lvl=30,maps={84},qgs={2789},qis={4533},r=2,rwp=40003,sourceQuests={696},u=2,g={
 s(120074,4975,{b=1,f=8,q=3,u=2}),
 s(127036,15104,{b=1,f=4,loc=47,q=3,u=2})}}),
 q(653,{coords={
@@ -27051,7 +27051,7 @@ q(672,{coords={
 [14]={{74.6,36.4}}},lvl=29,qgs={2706},r=1,rwp=40003,sourceQuests={655},u=2,g={
 qo(1,{crs={2559,2560},providers={{"i",4512}},u=2})}}),
 q(674,{coords={
-[14]={{74.6,36.4}}},lvl=29,providers={{"i",4526}},qgs={2706},r=1,rwp=40003,sourceQuests={672},u=2}),
+[14]={{74.6,36.4}}},lvl=29,qgs={2706},qis={4526},r=1,rwp=40003,sourceQuests={672},u=2}),
 q(675,{coords={
 [14]={{72.6,34}}},lvl=29,qgs={2792},r=1,rwp=40003,sourceQuests={674},u=2}),
 q(26107,{awp=40003,coords={
@@ -27077,7 +27077,7 @@ q(26030,{awp=40003,coords={
 qo(1,{coords={
 [14]={{20.8,66.4}}},crs={2588,2590,2591},providers={{"i",4440}}})}}),
 q(641,{coords={
-[14]={{74.6,36.4}}},lvl=32,providers={{"i",4453}},qgs={2706},r=1,rwp=40003,sourceQuests={640},u=2}),
+[14]={{74.6,36.4}}},lvl=32,qgs={2706},qis={4453},r=1,rwp=40003,sourceQuests={640},u=2}),
 q(26031,{awp=40003,coords={
 [14]={{12.9,36.1}}},qgs={41944},r=1,sourceQuests={26030},g={
 qo(1,{coords={
@@ -27086,7 +27086,7 @@ q(644,{coords={
 [14]={{73.8,33.8}}},lvl=32,qgs={2703},r=1,rwp=40003,sourceQuests={643},u=2,g={
 qo(1,{crs={2607},providers={{"i",4466}},u=2})}}),
 q(26052,{awp=40003,coords={
-[14]={{27.5,82.9}}},providers={{"i",4493}},qgs={2774},sourceQuests={26051}}),
+[14]={{27.5,82.9}}},qgs={2774},qis={4493},sourceQuests={26051}}),
 q(651,{coords={
 [14]={{84.3,30.9}}},lvl=30,providers={{"o",2701}},rwp=40003,sourceQuests={642},u=2,g={
 qo(1,{coords={
@@ -27115,7 +27115,7 @@ s(206303,59191,{b=1,f=5,loc=43,q=2}),
 s(206304,59192,{b=1,f=5,loc=44,q=2}),
 s(206305,59193,{b=1,f=6,loc=42,q=2})}}),
 q(637,{coords={
-[14]={{44.3,92.9}}},lvl=25,providers={{"i",4432},{"i",4433},{"o",2656}},r=2,rwp=40003,u=2}),
+[14]={{44.3,92.9}}},lvl=25,providers={{"o",2656}},qis={4432},qss={4433},r=2,rwp=40003,u=2}),
 q(656,{coords={
 [15]={{51.4,76.8}}},lvl=30,qgs={2785},rwp=40003,sourceQuests={692},u=2,g={
 qo(1,{coords={
@@ -27124,19 +27124,19 @@ i(4743,{b=1,f=51,q=3,u=2})}}),
 q(665,{coords={
 [14]={{33.8,80.6}}},lvl=35,qgs={2768},rwp=40003,u=2}),
 q(666,{coords={
-[14]={{33.8,80.4}}},lvl=35,providers={{"i",4491}},qgs={2774},rwp=40003,sourceQuests={665},u=2,g={
+[14]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4491},rwp=40003,sourceQuests={665},u=2,g={
 qo(1,{coords={
 [14]={{23.6,87.4}}},providers={{"i",4492},{"o",2712}},u=2}),
 s(119699,4547,{b=1,f=27,q=2,u=2}),
 s(119700,4548,{b=1,f=24,q=2,u=2})}}),
 q(668,{coords={
-[14]={{33.8,80.4}}},lvl=35,providers={{"i",4493}},qgs={2774},rwp=40003,sourceQuests={666},u=2}),
+[14]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4493},rwp=40003,sourceQuests={666},u=2}),
 q(669,{coords={
-[14]={{32.2,81.4}}},lvl=35,maps={224},providers={{"i",4502}},qgs={2610},rwp=40003,sourceQuests={668},u=2}),
+[14]={{32.2,81.4}}},lvl=35,maps={224},qgs={2610},qis={4502},rwp=40003,sourceQuests={668},u=2}),
 q(670,{coords={
-[224]={{27.2,77}}},lvl=35,providers={{"i",4494}},qgs={2487},rwp=40003,sourceQuests={669},u=2}),
+[224]={{27.2,77}}},lvl=35,qgs={2487},qis={4494},rwp=40003,sourceQuests={669},u=2}),
 q(26051,{awp=40003,coords={
-[14]={{27.5,82.9}}},providers={{"i",4491}},qgs={2774},sourceQuests={26050},g={
+[14]={{27.5,82.9}}},qgs={2774},qis={4491},sourceQuests={26050},g={
 qo(1,{coords={
 [14]={{16.1,91.5}}},providers={{"i",4492},{"o",2712}}}),
 s(206310,59199,{b=1,f=5,loc=47,q=2}),
@@ -27231,13 +27231,13 @@ qo(1,{crs={12923,12924,12925},providers={{"i",16991}},requireSkill=129}),
 r(10846,{learnedAt=200,rank=4,requireSkill=129,rwp=30100,u=2}),
 i(49192,{awp=30200,b=1,requireSkill=129})}}),
 q(645,{coords={
-[14]={{73.8,33.8}}},lvl=32,providers={{"i",4467},{"o",2703}},qgs={2703},r=1,rwp=40003,sourceQuests={644},u=2}),
+[14]={{73.8,33.8}}},lvl=32,providers={{"o",2703}},qgs={2703},qis={4467},r=1,rwp=40003,sourceQuests={644},u=2}),
 q(646,{coords={
-[14]={{28.9,59.6}}},lvl=32,providers={{"i",4468},{"o",2703}},r=1,rwp=40003,sourceQuests={645},u=2,g={
+[14]={{28.9,59.6}}},lvl=32,providers={{"o",2703}},qis={4468},r=1,rwp=40003,sourceQuests={645},u=2,g={
 s(119661,4508,{b=1,f=6,loc=42,q=3,u=2}),
 s(119660,4507,{b=1,f=8,q=3,u=2})}}),
 q(26033,{awp=40003,coords={
-[14]={{12.9,36.1}}},providers={{"i",4466}},qgs={41944},r=1,sourceQuests={26032},g={
+[14]={{12.9,36.1}}},qgs={41944},qis={4466},r=1,sourceQuests={26032},g={
 qo(1,{coords={
 [14]={{22.5,61.5}}},providers={{"i",56804},{"o",203450}}})}}),
 q(638,{coords={
@@ -27493,7 +27493,7 @@ q(720,{coords={
 q(721,{coords={
 [15]={{53.4,43.4}}},lvl=35,qgs={2910},r=2,rwp=40003,sourceQuests={720},u=2}),
 q(27764,{awp=40003,coords={
-[15]={{65,38.3}}},providers={{"i",62387}},qgs={46652},sourceQuests={27774},g={
+[15]={{65,38.3}}},qgs={46652},qis={62387},sourceQuests={27774},g={
 s(208541,63159,{b=1,f=7,loc=42,q=2}),
 s(208540,63158,{b=1,f=6,loc=47,q=2}),
 s(208539,63157,{b=1,f=6,loc=43,q=2}),
@@ -27597,9 +27597,9 @@ q(1559,{coords={
 r(8243,{itemID=6672,learnedAt=185,q=2,requireSkill=202,u=2})}}),
 q(737,_.ResolveQuestData({aqd=
 {coords={
-[87]={{50.8,5.6}}},providers={{"i",4647},{"n",2786}},sourceQuests={735},u=2},hqd=
+[87]={{50.8,5.6}}},qgs={2786},qis={4647},sourceQuests={735},u=2},hqd=
 {coords={
-[998]={{53.7,54.5}}},providers={{"i",4647},{"n",2934}},sourceQuests={736},u=2},lvl=30,rwp=40003,u=2,g={
+[998]={{53.7,54.5}}},qgs={2934},qis={4647},sourceQuests={736},u=2},lvl=30,rwp=40003,u=2,g={
 s(120082,4984,{b=1,f=1,q=2,u=2})}})),
 q(27878,{awp=40003,coords={
 [15]={{52.1,51.5}}},qgs={46758},r=1,g={
@@ -27640,7 +27640,7 @@ q(1108,{coords={
 [15]={{42.22,52.69}}},lvl=28,qgs={4618},rwp=40003,sourceQuests={1106},u=2,g={
 qo(1,{crs={2892,2893,2894,6733},providers={{"i",5797}},u=2})}}),
 q(27826,{awp=40003,coords={
-[15]={{46.8,56.5}}},providers={{"i",62513}},qgs={46664},r=2,sourceQuests={27794}}),
+[15]={{46.8,56.5}}},qgs={46664},qis={62513},r=2,sourceQuests={27794}}),
 q(27776,{awp=40003,coords={
 [15]={{64.2,38.1}}},qgs={46653},sourceQuests={27775},g={
 qo(1,{coords={
@@ -27674,7 +27674,7 @@ qo(1,{providers={{"n",2945}},u=2}),
 qo(2,{providers={{"n",2893}},u=2}),
 s(120081,4983,{b=1,f=24,q=2,u=2})}}),
 q(27889,{awp=40003,coords={
-[15]={{46.8,56.5}}},providers={{"i",62513}},qgs={46664},r=1,sourceQuests={27888}}),
+[15]={{46.8,56.5}}},qgs={46664},qis={62513},r=1,sourceQuests={27888}}),
 q(1137,{coords={
 [15]={{42.22,52.69}}},lvl=28,maps={64},qgs={4618},rwp=40003,sourceQuests={1108},u=2,g={
 s(121513,6729,{b=1,f=27,q=2,u=2}),
@@ -27682,7 +27682,7 @@ s(121516,6732,{b=1,f=5,loc=44,q=2,u=2})}}),
 q(27835,{awp=40003,coords={
 [15]={{20.5,56.3}}},qgs={46854,46857},r=2,sourceQuests={27827}}),
 q(725,{coords={
-[87]={{77.5,11.8}}},lvl=35,providers={{"i",4622}},qgs={2916},r=2,rwp=40003,sourceQuests={724},u=2}),
+[87]={{77.5,11.8}}},lvl=35,qgs={2916},qis={4622},r=2,rwp=40003,sourceQuests={724},u=2}),
 q(726,{coords={
 [87]={{77.3,9.7}}},lvl=35,qgs={2918},r=2,rwp=40003,sourceQuests={725},u=2}),
 q(705,{coords={
@@ -27697,9 +27697,9 @@ s(122950,9522,{b=1,f=8,q=2,u=2}),
 s(123654,10358,{b=1,f=6,loc=43,q=2,u=2}),
 s(200989,10359,{b=1,f=4,loc=47,q=2,u=2})}}),
 q(723,{coords={
-[15]={{37.94,10.53}}},lvl=35,providers={{"i",4635}},qgs={2909},r=2,rwp=40003,sourceQuests={722},u=2}),
+[15]={{37.94,10.53}}},lvl=35,qgs={2909},qis={4635},r=2,rwp=40003,sourceQuests={722},u=2}),
 q(724,{coords={
-[15]={{53.4,43.2}}},lvl=35,providers={{"i",4635}},qgs={2910},r=2,rwp=40003,sourceQuests={723},u=2}),
+[15]={{53.4,43.2}}},lvl=35,qgs={2910},qis={4635},r=2,rwp=40003,sourceQuests={723},u=2}),
 q(1360,{coords={
 [87]={{74.2,9.4}}},lvl=33,maps={48},qgs={6294},r=2,rwp=40003,u=2,g={
 qo(1,{coords={
@@ -27709,14 +27709,14 @@ q(2342,{coords={
 qo(1,{coords={
 [48]={{33.9,93}}},providers={{"i",8026},{"o",124388}},u=2})}}),
 q(1420,{coords={
-[15]={{6.5,47.2}}},lvl=30,maps={51},providers={{"i",6167}},qgs={5394},r=1,rwp=40003,sourceQuests={1418},u=2}),
+[15]={{6.5,47.2}}},lvl=30,maps={51},qgs={5394},qis={6167},r=1,rwp=40003,sourceQuests={1418},u=2}),
 q(27794,{awp=40003,coords={
-[15]={{50.3,53.3}}},providers={{"i",62497},{"o",206374}},r=2,sourceQuests={27912},g={
+[15]={{50.3,53.3}}},providers={{"o",206374}},qis={62497},r=2,sourceQuests={27912},g={
 s(208558,63176,{b=1,f=7,loc=47,q=2}),
 s(208557,63175,{b=1,f=4,loc=45,q=2}),
 s(208556,63174,{b=1,f=29,q=2})}}),
 q(27888,{awp=40003,coords={
-[15]={{50.2,53.2}}},providers={{"i",62497},{"o",206374}},r=1,sourceQuests={27913},g={
+[15]={{50.2,53.2}}},providers={{"o",206374}},qis={62497},r=1,sourceQuests={27913},g={
 s(208561,63179,{b=1,f=7,loc=47,q=2}),
 s(208560,63178,{b=1,f=4,loc=45,q=2}),
 s(208559,63177,{b=1,f=29,q=2})}}),
@@ -27731,12 +27731,12 @@ q(733,{coords={
 qo(1,{crs={2701,2715,2716,2717,2718,2719,2720,2906,2907},providers={{"i",4630}},u=2}),
 s(119797,4652,{b=1,f=8,q=2,u=2}),
 s(200862,4653,{b=1,f=6,loc=47,q=2,u=2})}}),
-q(779,{lvl=40,providers={{"i",4843},{"i",4844},{"i",4845},{"o",2933}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(779,{lvl=40,providers={{"o",2933}},qis={4843,4844,4845},r=2,repeatable=1,rwp=40003,u=2,g={
 i(4615,{coords={
 [15]={{82.6,48.8}}},crs={2757},q=1,u=2}),
 i(4645,{coords={
 [15]={{81.4,50.6}}},crs={2759},q=1,u=2})}}),
-q(795,{lvl=40,providers={{"i",4843},{"i",4844},{"i",4845},{"o",2933}},r=1,repeatable=1,rwp=40003,u=2,g={
+q(795,{lvl=40,providers={{"o",2933}},qis={4843,4844,4845},r=1,repeatable=1,rwp=40003,u=2,g={
 i(4615,{coords={
 [15]={{82.6,48.8}}},crs={2757},q=1,u=2}),
 i(4645,{coords={
@@ -27815,9 +27815,9 @@ q(27709,{awp=40003,coords={
 q(27886,{awp=40003,coords={
 [15]={{47.9,50.9}}},providers={{"o",206336}},r=1,sourceQuests={27884}}),
 q(27797,{awp=40003,coords={
-[15]={{49.3,36.9}}},providers={{"i",62490}},qgs={46760},r=2,sourceQuests={27792}}),
+[15]={{49.3,36.9}}},qgs={46760},qis={62490},r=2,sourceQuests={27792}}),
 q(27884,{awp=40003,coords={
-[15]={{52,51.2}}},providers={{"i",62490}},qgs={46757},r=1,sourceQuests={27882}}),
+[15]={{52,51.2}}},qgs={46757},qis={62490},r=1,sourceQuests={27882}}),
 q(27831,{awp=40003,coords={
 [15]={{21.1,57.7}}},qgs={46654},r=2,sourceQuests={27830},g={
 qo(1,{coords={
@@ -27831,7 +27831,7 @@ qo(1,{coords={
 qo(2,{coords={
 [15]={{11,38.2}}},providers={{"n",46916}}})}}),
 q(735,{coords={
-[87]={{50.8,5.6}}},lvl=30,maps={70,224,1416},providers={{"i",4649}},qgs={2786},r=2,rwp=40003,sourceQuests={727},u=2,g={
+[87]={{50.8,5.6}}},lvl=30,maps={70,224,1416},qgs={2786},qis={4649},r=2,rwp=40003,sourceQuests={727},u=2,g={
 qo(1,{coords={
 [1416]={{39.6,51.8}}},crs={2417},providers={{"i",4646}},u=2}),
 qo(2,{coords={
@@ -27839,7 +27839,7 @@ qo(2,{coords={
 qo(3,{coords={
 [224]={{47.6,44.2}}},crs={1060},providers={{"i",4644}},u=2})}}),
 q(736,{coords={
-[998]={{53.7,54.5}}},lvl=30,maps={70,224,1416},providers={{"i",4650}},qgs={2934},r=1,rwp=40003,sourceQuests={728},u=2,g={
+[998]={{53.7,54.5}}},lvl=30,maps={70,224,1416},qgs={2934},qis={4650},r=1,rwp=40003,sourceQuests={728},u=2,g={
 qo(1,{coords={
 [1416]={{39.6,51.8}}},crs={2417},providers={{"i",4646}},u=2}),
 qo(2,{coords={
@@ -27853,15 +27853,15 @@ q(27912,{awp=40003,coords={
 q(27913,{awp=40003,coords={
 [15]={{52,51.2}}},qgs={46757},r=1,sourceQuests={27887}}),
 q(27772,{awp=40003,coords={
-[15]={{66.5,55.6}}},providers={{"i",62395}},qgs={46655},sourceQuests={27769}}),
+[15]={{66.5,55.6}}},qgs={46655},qis={62395},sourceQuests={27769}}),
 q(27693,{awp=40003,coords={
 [15]={{50.2,54.2}}},providers={{"o",206335}},r=2,sourceQuests={27796}}),
 q(27885,{awp=40003,coords={
 [15]={{50.2,54.2}}},providers={{"o",206335}},r=1,sourceQuests={27883}}),
 q(27796,{awp=40003,coords={
-[15]={{49.3,36.9}}},providers={{"i",62489}},qgs={46760},r=2,sourceQuests={27792}}),
+[15]={{49.3,36.9}}},qgs={46760},qis={62489},r=2,sourceQuests={27792}}),
 q(27883,{awp=40003,coords={
-[15]={{52,51.2}}},providers={{"i",62489}},qgs={46757},r=1,sourceQuests={27882}}),
+[15]={{52,51.2}}},qgs={46757},qis={62489},r=1,sourceQuests={27882}}),
 q(27829,{awp=40003,coords={
 [15]={{20.5,56},{20.5,56.3},{20.6,56.1}}},qgs={46855,46856,46857},r=2,sourceQuests={27828,27834,27835},g={
 qo(1,{providers={{"n",46859}}}),
@@ -27897,7 +27897,7 @@ s(208542,63160,{b=1,f=4,loc=47,q=2})}}),
 q(734,{coords={
 [15]={{25.8,45}}},lvl=35,qgs={2921},rwp=40003,sourceQuests={712,714},u=2}),
 q(777,{coords={
-[15]={{25.8,44.4}}},lvl=35,providers={{"i",4846}},qgs={2920},rwp=40003,sourceQuests={734},u=2}),
+[15]={{25.8,44.4}}},lvl=35,qgs={2920},qis={4846},rwp=40003,sourceQuests={734},u=2}),
 q(778,{coords={
 [15]={{25.8,45}}},lvl=35,qgs={2921},rwp=40003,sourceQuests={777},u=2,g={
 qo(1,{coords={
@@ -27906,14 +27906,14 @@ i(2820,{b=1,f=53,q=2,u=2})}}),
 q(27763,{awp=40003,coords={
 [15]={{92.6,38.9}}},isBreadcrumb=1,nextQuests={27774},qgs={46650},sourceQuests={27762}}),
 q(727,{coords={
-[15]={{51.4,76.9}}},lvl=30,providers={{"i",4648}},qgs={2785},r=2,rwp=40003,sourceQuests={709},u=2}),
+[15]={{51.4,76.9}}},lvl=30,qgs={2785},qis={4648},r=2,rwp=40003,sourceQuests={709},u=2}),
 q(28512,_.ResolveQuestData({aqd=
 {coords={
 [15]={{20.8,55.7}}},qgs={46930}},awp=40003,hqd=
 {coords={
 [15]={{18.4,41.5}}},qgs={46660}},isBreadcrumb=1,nextQuests={27963}})),
 q(728,{coords={
-[15]={{51.4,76.9}}},lvl=30,providers={{"i",4648}},qgs={2785},r=1,rwp=40003,sourceQuests={709},u=2}),
+[15]={{51.4,76.9}}},lvl=30,qgs={2785},qis={4648},r=1,rwp=40003,sourceQuests={709},u=2}),
 q(732,{coords={
 [15]={{61.8,54.2}}},lvl=40,qgs={2888},r=2,rwp=40003,sourceQuests={718},u=2,g={
 qo(1,{providers={{"i",4640}},u=2})}}),
@@ -28188,9 +28188,9 @@ q(3501,{coords={
 [17]={{51.8,35.6}}},cost={{"i",10593,1}},lvl=45,qgs={7363},rwp=40003,u=2,g={
 i(12122,{b=1,q=2,u=2})}}),
 q(26166,{awp=40003,coords={
-[17]={{55.1,49.5}}},providers={{"i",57140}},qgs={42299},r=2,sourceQuests={26164,26165}}),
+[17]={{55.1,49.5}}},qgs={42299},qis={57140},r=2,sourceQuests={26164,26165}}),
 q(25693,{awp=40003,coords={
-[17]={{54.3,50}}},providers={{"i",56025}},qgs={41159},r=1,sourceQuests={25691,25692}}),
+[17]={{54.3,50}}},qgs={41159},qis={56025},r=1,sourceQuests={25691,25692}}),
 q(25705,{awp=40003,coords={
 [17]={{71,60.1}}},qgs={41354},sourceQuests={25703},g={
 qo(1,{coords={
@@ -28218,12 +28218,12 @@ q(25677,{awp=40003,coords={
 qo(1,{coords={
 [17]={{50.11,10.61}}},providers={{"i",55238},{"o",203183}}})}}),
 q(26157,{awp=40003,coords={
-[17]={{63.1,16.8}}},providers={{"i",57136}},qgs={5385},r=2,sourceQuests={25716}}),
+[17]={{63.1,16.8}}},qgs={5385},qis={57136},r=2,sourceQuests={25716}}),
 q(2522,{coords={
 [17]={{51.8,35.6}}},cost={{"i",8244,1}},lvl=45,qgs={7363},repeatable=1,rwp=40003,sourceQuests={2521},u=2,g={
 i(10752,{b=1,q=2,u=2})}}),
 q(25772,{awp=40003,coords={
-[17]={{48.8,31.8}}},providers={{"i",8244},{"n",7363}},repeatable=1,g={
+[17]={{48.8,31.8}}},providers={{"n",7363}},qss={8244},repeatable=1,g={
 i(10752,{b=1,q=2})}}),
 q(25700,{awp=40003,coords={
 [17]={{39.3,35.7}}},qgs={7783},r=1,sourceQuests={25697,25698,25699}}),
@@ -28232,7 +28232,7 @@ q(25710,{awp=40003,coords={
 qo(1,{coords={
 [17]={{58.2,17.2}}},providers={{"n",42228}}})}}),
 q(25682,{awp=40003,coords={
-[17]={{62.2,1.4}}},providers={{"i",56017}},qgs={41134},r=1,sourceQuests={25681},g={
+[17]={{62.2,1.4}}},qgs={41134},qis={56017},r=1,sourceQuests={25681},g={
 s(206486,59414,{b=1,f=4,loc=47,q=2}),
 s(206488,59416,{b=1,f=6,loc=45,q=2}),
 s(206487,59415,{b=1,f=5,loc=41,q=2}),
@@ -28280,7 +28280,7 @@ q(3502,{coords={
 [17]={{51.8,35.6}}},cost={{"i",10593,1}},lvl=45,qgs={7363},repeatable=1,rwp=40003,sourceQuests={3501},u=2,g={
 i(12122,{b=1,q=2,u=2})}}),
 q(25771,{awp=40003,coords={
-[17]={{48.8,31.8}}},providers={{"i",10593},{"n",7363}},repeatable=1,g={
+[17]={{48.8,31.8}}},providers={{"n",7363}},qss={10593},repeatable=1,g={
 i(12122,{b=1,q=2})}}),
 q(25708,{awp=40003,coords={
 [17]={{61.4,18.6}}},qgs={9540},r=2,sourceQuests={25715},g={
@@ -28458,7 +28458,7 @@ q(7582,{c={9},coords={
 [17]={{34,50.2}}},lvl=60,maps={83},qgs={14463},rwp=40003,u=2,g={
 qo(1,{crs={7461,7462,7463},providers={{"i",18604}},u=2})}}),
 q(25696,{awp=40003,coords={
-[17]={{54.4,50.5}}},isBreadcrumb=1,nextQuests={25717},providers={{"i",57196}},qgs={19254},r=1,sourceQuests={25695}}),
+[17]={{54.4,50.5}}},isBreadcrumb=1,nextQuests={25717},qgs={19254},qis={57196},r=1,sourceQuests={25695}}),
 q(26165,{awp=40003,coords={
 [17]={{55.1,49.5}}},qgs={42299},r=2,sourceQuests={26163},g={
 qo(1,{crs={6010,6011,41253},providers={{"i",55991}}})}}),
@@ -28466,9 +28466,9 @@ q(25692,{awp=40003,coords={
 [17]={{54.3,50}}},qgs={41159},r=1,sourceQuests={25689},g={
 qo(1,{crs={6010,6011,41253},providers={{"i",55991}}})}}),
 q(26163,{awp=40003,coords={
-[17]={{62.4,25.9}}},providers={{"i",56019}},qgs={42298},r=2,sourceQuests={26167,26168,26169}}),
+[17]={{62.4,25.9}}},qgs={42298},qis={56019},r=2,sourceQuests={26167,26168,26169}}),
 q(25689,{awp=40003,coords={
-[17]={{39.3,35.7}}},providers={{"i",56019}},qgs={7783},r=1,sourceQuests={25688}}),
+[17]={{39.3,35.7}}},qgs={7783},qis={56019},r=1,sourceQuests={25688}}),
 q(2521,{coords={
 [17]={{51.8,35.6}}},cost={{"i",8244,1}},lvl=45,qgs={7363},rwp=40003,u=2,g={
 i(10752,{b=1,q=2,u=2})}}),
@@ -28648,21 +28648,21 @@ crit(21423,{achID=6613,id=4,pb=1}),
 crit(21555,{achID=6560,id=29,pb=1})}}),
 h(-45,{
 q(28316,{awp=40003,coords={
-[36]={{73.5,67.2}}},providers={{"i",63431}},qgs={48306,48346},r=2,sourceQuests={28311,28312,28313}}),
+[36]={{73.5,67.2}}},qgs={48306,48346},qis={63431},r=2,sourceQuests={28311,28312,28313}}),
 q(28448,{awp=40003,coords={
-[36]={{54.7,24.5}}},providers={{"i",63431}},qgs={48565},r=1,sourceQuests={28443,28444,28445}}),
+[36]={{54.7,24.5}}},qgs={48565},qis={63431},r=1,sourceQuests={28443,28444,28445}}),
 q(28318,{awp=40003,coords={
-[36]={{73.6,67.1}}},providers={{"i",63430}},qgs={48307},r=2,sourceQuests={28326}}),
+[36]={{73.6,67.1}}},qgs={48307},qis={63430},r=2,sourceQuests={28326}}),
 q(28451,{awp=40003,coords={
-[36]={{54.6,24.4}}},providers={{"i",63430}},qgs={48569},r=1,sourceQuests={28449}}),
+[36]={{54.6,24.4}}},qgs={48569},qis={63430},r=1,sourceQuests={28449}}),
 q(28317,{awp=40003,coords={
-[36]={{73.6,67.1}}},providers={{"i",63429}},qgs={48307},r=2,sourceQuests={28326}}),
+[36]={{73.6,67.1}}},qgs={48307},qis={63429},r=2,sourceQuests={28326}}),
 q(28450,{awp=40003,coords={
-[36]={{54.6,24.4}}},providers={{"i",63429}},qgs={48569},r=1,sourceQuests={28449}}),
+[36]={{54.6,24.4}}},qgs={48569},qis={63429},r=1,sourceQuests={28449}}),
 q(28319,{awp=40003,coords={
-[36]={{73.6,67.1}}},providers={{"i",63134}},qgs={48307},r=2,sourceQuests={28326}}),
+[36]={{73.6,67.1}}},qgs={48307},qis={63134},r=2,sourceQuests={28326}}),
 q(28452,{awp=40003,coords={
-[36]={{54.6,24.4}}},providers={{"i",63134}},qgs={48569},r=1,sourceQuests={28449}}),
+[36]={{54.6,24.4}}},qgs={48569},qis={63134},r=1,sourceQuests={28449}}),
 q(28178,{awp=40001,coords={
 [36]={{17.2,52}}},qgs={47811},r=2,sourceQuests={28174,28416},g={
 qo(1,{crs={9690,9697},providers={{"i",63136}}}),
@@ -28834,7 +28834,7 @@ qo(1,{providers={{"n",7034}},u=2}),
 qo(2,{providers={{"n",7033}},u=2}),
 qo(3,{providers={{"n",7035}},u=2})}}),
 q(4808,{coords={
-[36]={{65.2,23.8}}},lvl=50,providers={{"i",12438}},qgs={10267},rwp=40003,sourceQuests={4726},u=2}),
+[36]={{65.2,23.8}}},lvl=50,qgs={10267},qis={12438},rwp=40003,sourceQuests={4726},u=2}),
 q(4283,{coords={
 [36]={{84.6,68.8}}},lvl=50,qgs={9177},r=2,rwp=40003,u=2,g={
 qo(1,{crs={7025,7026,7027,7028,7029,7055,9690,9694,9697,10077},providers={{"i",11467}},u=2})}}),
@@ -28872,28 +28872,28 @@ q(3824,{coords={
 qo(1,{coords={
 [36]={{39.6,55.6}}},crs={9176},providers={{"i",11080}},u=2})}}),
 q(28245,{awp=40001,coords={
-[36]={{45.3,51.7}}},providers={{"i",63357}},qgs={48085},r=2,sourceQuests={28239},g={
+[36]={{45.3,51.7}}},qgs={48085},qis={63357},r=2,sourceQuests={28239},g={
 qo(1,{coords={
 [36]={{39.1,55.5}}},providers={{"o",206977}}})}}),
 q(28433,{awp=40001,coords={
-[36]={{45.3,51.7}}},providers={{"i",63357}},qgs={48085},r=1,sourceQuests={28432},g={
+[36]={{45.3,51.7}}},qgs={48085},qis={63357},r=1,sourceQuests={28432},g={
 qo(1,{coords={
 [36]={{39.1,55.5}}},providers={{"o",206977}}})}}),
 q(28666,{awp=40003,coords={
 [84]={{26.1,38.3},{43,71.9},{43.1,73.7},{62.5,30},{63.1,71.4}},
 [87]={{26.5,70.2},{62.4,30.5}}},isBreadcrumb=1,lvl={49,50},nextQuests={28174,28416},providers={{"o",206111},{"o",206294},{"o",207320}},r=2}),
 q(28278,{awp=40003,coords={
-[36]={{30.6,33.7}}},providers={{"i",63357}},qgs={48133},r=2,sourceQuests={28266},g={
+[36]={{30.6,33.7}}},qgs={48133},qis={63357},r=2,sourceQuests={28266},g={
 qo(1,{crs={7025,48119,48121,48153},providers={{"i",63390}}})}}),
 q(28439,{awp=40003,coords={
-[36]={{30.6,33.7}}},providers={{"i",63357}},qgs={48133},r=1,sourceQuests={28438},g={
+[36]={{30.6,33.7}}},qgs={48133},qis={63357},r=1,sourceQuests={28438},g={
 qo(1,{crs={7025,48119,48121,48153},providers={{"i",63390}}})}}),
 q(7629,{c={9},coords={
-[36]={{12.4,31.6}}},lvl=60,maps={476},providers={{"i",18688}},qgs={14437},rwp=40003,sourceQuests={7625,7630},u=2}),
+[36]={{12.4,31.6}}},lvl=60,maps={476},qgs={14437},qis={18688},rwp=40003,sourceQuests={7625,7630},u=2}),
 q(28239,{awp=40001,coords={
-[36]={{46.3,46}}},providers={{"i",63357}},qgs={48109},r=2,sourceQuests={28202,28203,28204,28205}}),
+[36]={{46.3,46}}},qgs={48109},qis={63357},r=2,sourceQuests={28202,28203,28204,28205}}),
 q(28432,{awp=40003,coords={
-[36]={{44.5,44.4}}},providers={{"i",63357}},qgs={48568},r=1,sourceQuests={28428,28429,28430,28431}}),
+[36]={{44.5,44.4}}},qgs={48568},qis={63357},r=1,sourceQuests={28428,28429,28430,28431}}),
 q(3822,{coords={
 [36]={{79.8,45.4}}},lvl=48,qgs={9136},r=1,rwp=40003,sourceQuests={3821},u=2,g={
 qo(1,{crs={8977},providers={{"i",11058}},u=2}),
@@ -28989,9 +28989,9 @@ q(7563,{c={9},coords={
 [36]={{12.6,31.6}}},lvl=60,maps={83},qgs={14436},rwp=40003,sourceQuests={7562},u=2,g={
 qo(1,{crs={7450,7451,7452,7453,7454},providers={{"i",18590}},u=2})}}),
 q(28425,{awp=40003,coords={
-[36]={{8.3,35.7}}},providers={{"i",63354}},qgs={14437},r=1,sourceQuests={28423,28424}}),
+[36]={{8.3,35.7}}},qgs={14437},qis={63354},r=1,sourceQuests={28423,28424}}),
 q(28183,{awp=40001,coords={
-[36]={{8.3,35.7}}},providers={{"i",63354}},qgs={14437},r=2,sourceQuests={28181,28182}}),
+[36]={{8.3,35.7}}},qgs={14437},qis={63354},r=2,sourceQuests={28181,28182}}),
 q(28226,{awp=40001,coords={
 [36]={{46.7,44}}},qgs={48033},sourceQuests={28184,28426},g={
 qo(1,{providers={{"i",63333}}}),
@@ -29040,12 +29040,12 @@ q(4296,{coords={
 qo(1,{coords={
 [36]={{53,40}}},providers={{"i",11470},{"o",169294}},u=2})}}),
 q(28253,{awp=40001,coords={
-[36]={{46.3,45.9}}},providers={{"i",63358}},qgs={48110},r=2,sourceQuests={28246,28252},g={
+[36]={{46.3,45.9}}},qgs={48110},qis={63358},r=2,sourceQuests={28246,28252},g={
 s(209067,64517,{b=1,f=7,loc=40,q=2}),
 s(209066,64516,{b=1,f=6,loc=42,q=2}),
 s(209065,64515,{b=1,f=4,loc=46,q=2})}}),
 q(28436,{awp=40003,coords={
-[36]={{44.5,44.4}}},providers={{"i",63358}},qgs={48568},r=1,sourceQuests={28434,28435},g={
+[36]={{44.5,44.4}}},qgs={48568},qis={63358},r=1,sourceQuests={28434,28435},g={
 s(209070,64520,{b=1,f=7,loc=40,q=2}),
 s(209069,64519,{b=1,f=6,loc=42,q=2}),
 s(209068,64518,{b=1,f=4,loc=46,q=2})}}),
@@ -29108,7 +29108,7 @@ qo(3,{coords={
 q(7627,{c={9},coords={
 [36]={{12.6,31.6}}},cost={{"i",11370,25},{"i",14344,6}},lvl=60,qgs={14436},rwp=40003,sourceQuests={7564},u=2}),
 q(7564,{c={9},coords={
-[36]={{12.6,31.6}}},lvl=60,providers={{"i",18591}},qgs={14436},rwp=40003,sourceQuests={7563},u=2})}),
+[36]={{12.6,31.6}}},lvl=60,qgs={14436},qis={18591},rwp=40003,sourceQuests={7563},u=2})}),
 h(-46,{
 n(50725,{awp=50100,coords={
 [36]={{71.8,23}}}}),
@@ -29228,7 +29228,7 @@ m(499,{icon=133861,lore="The Deeprun Tram is a long, fully enclosed, underground
 h(-45,{
 q(6661,{lvl=10,qgs={12997},r=2,g={
 qo(1,{crs={13016},providers={{"i",17117}}})}}),
-q(6662,{lvl=10,providers={{"i",17118}},qgs={12997},r=2,sourceQuests={6661},g={
+q(6662,{lvl=10,qgs={12997},qis={17118},r=2,sourceQuests={6661},g={
 i(17119,{f=55,lvl=5,q=1})}})})}}),
 m(27,{icon=236755,lore="Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",maps={29,31},g={
 m(427,{icon=236444,lore="Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",maps={28,428},g={
@@ -29251,27 +29251,27 @@ qo(3,{coords={
 q(24490,{awp=40003,coords={
 [427]={{42.7,62.2}}},qgs={786},r=2,sourceQuests={218}}),
 q(24471,{awp=40003,coords={
-[427]={{65.6,42.7}}},providers={{"i",49743}},qgs={658},r=2,sourceQuests={24469},g={
+[427]={{65.6,42.7}}},qgs={658},qis={49743},r=2,sourceQuests={24469},g={
 qo(1,{providers={{"n",37080}}})}}),
 q(24475,{awp=40003,coords={
 [427]={{60.6,21.1}}},qgs={37087},r=2,sourceQuests={24474},g={
 qo(1,{crs={708},providers={{"i",49747}}}),
 qo(2,{crs={704,705},providers={{"i",49748}}})}}),
 q(24496,{awp=40003,c={8},coords={
-[427]={{60.6,21.1}}},providers={{"i",49759}},qgs={37087},races={3},rwp=70003}),
+[427]={{60.6,21.1}}},qgs={37087},qis={49759},races={3},rwp=70003}),
 q(24526,{awp=40003,c={8},coords={
 [427]={{61.3,14.5}}},qgs={37121},races={3},rwp=70003,sourceQuests={24496},g={
 qo(2,{providers={{"n",44389}}})}}),
 q(1599,{altQuests={1598},c={9},coords={
 [27]={{28.6,66.1}}},qgs={460},r=2,rwp=30300,u=2}),
 q(3365,{coords={
-[27]={{28.8,66.4}}},lvl=4,providers={{"i",10440}},qgs={836},r=2,rwp=40003,sourceQuests={3364},u=2}),
+[27]={{28.8,66.4}}},lvl=4,qgs={836},qis={10440},r=2,rwp=40003,sourceQuests={3364},u=2}),
 q(233,{coords={
-[27]={{29.8,71.2}}},providers={{"i",2187}},qgs={658},r=2,rwp=40003,sourceQuests={179},u=2}),
+[27]={{29.8,71.2}}},qgs={658},qis={2187},r=2,rwp=40003,sourceQuests={179},u=2}),
 q(234,{coords={
-[27]={{22.6,71.4}}},providers={{"i",2188}},qgs={714},r=2,rwp=40003,sourceQuests={233},u=2}),
+[27]={{22.6,71.4}}},qgs={714},qis={2188},r=2,rwp=40003,sourceQuests={233},u=2}),
 q(3107,{c={2},coords={
-[427]={{60.6,21.1}}},providers={{"i",9563}},qgs={37087},races={3},rwp=70003,sourceQuests={179}}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9563},races={3},rwp=70003,sourceQuests={179}}),
 q(24493,{altQuests={24492},awp=40003,coords={
 [427]={{60.6,21.1}}},description="Only available during |cFFFFD700Pack Your Bags|r.",qgs={37087},r=2,sourceQuests={24491}}),
 q(24477,{awp=40003,coords={
@@ -29285,13 +29285,13 @@ s(116949,719,{b=1,f=4,loc=44,q=1,u=2}),
 s(120985,6171,{b=1,f=5,loc=44,q=1,u=2}),
 s(118039,2547,{b=1,f=6,loc=44,q=1,u=2})}}),
 q(31150,{awp=50004,c={10},coords={
-[427]={{60.6,21.1}}},providers={{"i",85174}},qgs={37087},races={3},rwp=70003}),
+[427]={{60.6,21.1}}},qgs={37087},qis={85174},races={3},rwp=70003}),
 q(3113,{c={4},coords={
-[427]={{60.6,21.1}}},providers={{"i",9558}},qgs={37087},races={7},rwp=40003,sourceQuests={179},u=2}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9558},races={7},rwp=40003,sourceQuests={179},u=2}),
 q(3109,{c={4},coords={
-[427]={{60.6,21.1}}},providers={{"i",9550}},qgs={37087},races={3},rwp=70003,sourceQuests={179}}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9550},races={3},rwp=70003,sourceQuests={179}}),
 q(3108,{c={3},coords={
-[427]={{60.6,21.1}}},providers={{"i",9566}},qgs={37087},races={3},rwp=70003,sourceQuests={179}}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9566},races={3},rwp=70003,sourceQuests={179}}),
 q(24530,{awp=40003,c={3},coords={
 [427]={{63.7,20.1}}},qgs={895},races={3},rwp=70003,sourceQuests={3108},g={
 qo(2,{providers={{"n",44389}}})}}),
@@ -29315,9 +29315,9 @@ s(210939,66930,{b=1,f=6,loc=47,q=1}),
 s(210938,66929,{b=1,f=5,loc=43,q=1}),
 s(210937,66928,{b=1,f=4,loc=45,q=1})}}),
 q(3114,{c={8},coords={
-[427]={{60.6,21.1}}},providers={{"i",9573}},qgs={37087},races={7},rwp=40003,sourceQuests={179},u=2}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9573},races={7},rwp=40003,sourceQuests={179},u=2}),
 q(3110,{c={5},coords={
-[427]={{60.6,21.1}}},providers={{"i",9556}},qgs={37087},races={3},rwp=70003,sourceQuests={179}}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9556},races={3},rwp=70003,sourceQuests={179}}),
 q(24469,{awp=40003,coords={
 [427]={{67.1,41.3}}},qgs={37081},r=2,g={
 qo(1,{providers={{"n",37070}}}),
@@ -29357,30 +29357,30 @@ i(57540,{b=1,q=1,g={
 i(57542,{b=1,f=113,q=1}),
 s(205261,57541,{b=1,f=3,q=1})}})}}),
 q(3364,{coords={
-[27]={{25,75.8}}},lvl=4,providers={{"i",10439}},qgs={12738},r=2,rwp=40003,u=2}),
+[27]={{25,75.8}}},lvl=4,qgs={12738},qis={10439},r=2,rwp=40003,u=2}),
 q(282,{altQuests={287},coords={
-[27]={{25,75.8}}},providers={{"i",2619}},qgs={786},r=2,rwp=40003,sourceQuests={218},u=2}),
+[27]={{25,75.8}}},qgs={786},qis={2619},r=2,rwp=40003,sourceQuests={218},u=2}),
 q(420,{altQuests={287},coords={
-[27]={{33.4,71.8}}},providers={{"i",2619}},qgs={1965},r=2,rwp=40003,sourceQuests={282},u=2}),
+[27]={{33.4,71.8}}},qgs={1965},qis={2619},r=2,rwp=40003,sourceQuests={282},u=2}),
 q(3112,{c={1},coords={
-[427]={{60.6,21.1}}},providers={{"i",9544}},qgs={37087},races={7},rwp=40003,sourceQuests={179},u=2}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9544},races={7},rwp=40003,sourceQuests={179},u=2}),
 q(3106,{c={1},coords={
-[427]={{60.6,21.1}}},providers={{"i",9543}},qgs={37087},races={3},rwp=70003,sourceQuests={179}}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9543},races={3},rwp=70003,sourceQuests={179}}),
 q(24531,{awp=40003,c={1},coords={
 [427]={{61.9,19}}},qgs={912},races={3},rwp=70003,sourceQuests={3106},g={
 qo(2,{providers={{"n",44389}}})}}),
 q(24494,{awp=40003,c={7},coords={
-[427]={{60.6,21.1}}},providers={{"i",49758}},qgs={37087},races={3},rwp=70003,sourceQuests={179}}),
+[427]={{60.6,21.1}}},qgs={37087},qis={49758},races={3},rwp=70003,sourceQuests={179}}),
 q(24527,{awp=40003,c={7},coords={
 [427]={{61.8,13.6}}},qgs={37115},races={3},rwp=70003,sourceQuests={24494},g={
 qo(2,{providers={{"n",44389}}})}}),
 q(2160,{awp=40001,coords={
-[27]={{33.8,72.2}}},providers={{"i",7646}},qgs={6782},r=2,rwp=40003,u=2,g={
+[27]={{33.8,72.2}}},qgs={6782},qis={7646},r=2,rwp=40003,u=2,g={
 s(205258,57537,{b=1,f=4,loc=43,q=1,u=2}),
 s(205259,57538,{b=1,f=5,loc=45,q=1,u=2}),
 s(205260,57539,{b=1,f=6,loc=47,q=1,u=2})}}),
 q(3115,{c={9},coords={
-[427]={{60.6,21.1}}},providers={{"i",9577}},qgs={37087},races={3},rwp=70003,sourceQuests={24473}}),
+[427]={{60.6,21.1}}},qgs={37087},qis={9577},races={3},rwp=70003,sourceQuests={24473}}),
 q(26904,{awp=40003,c={9},coords={
 [427]={{61.2,17.5}}},qgs={43455},races={3},rwp=70003,sourceQuests={3115},g={
 qo(2,{providers={{"n",44389}}})}}),
@@ -29449,7 +29449,7 @@ q(27635,{awp=40003,coords={
 [30]={{53.1,82.2}}},qgs={46274},races={7},sourceQuests={28169},g={
 qo(1,{providers={{"n",46185}}})}}),
 q(26364,{awp=40003,coords={
-[469]={{48.7,52.9}}},providers={{"i",58253}},qgs={42353},races={7},sourceQuests={26342},g={
+[469]={{48.7,52.9}}},qgs={42353},qis={58253},races={7},sourceQuests={26342},g={
 qo(1,{providers={{"n",42839}}}),
 s(206211,59052,{b=1,c={1},f=6,loc=45,q=1}),
 s(206210,59051,{b=1,f=5,loc=43,q=1}),
@@ -29483,7 +29483,7 @@ q(26284,{awp=40003,coords={
 qo(1,{coords={
 [469]={{26.6,68.2}}},providers={{"n",42645},{"o",204019}}})}}),
 q(26333,{awp=40003,coords={
-[469]={{38.2,33.7}}},providers={{"i",58200}},qgs={42491},races={7},sourceQuests={26329},g={
+[469]={{38.2,33.7}}},qgs={42491},qis={58200},races={7},sourceQuests={26329},g={
 qo(1,{providers={{"n",42224}}}),
 s(206208,59049,{b=1,c={1},f=6,loc=43,q=1}),
 s(206207,59048,{b=1,f=5,loc=44,q=1}),
@@ -29491,9 +29491,9 @@ s(206206,59047,{b=1,f=4,loc=45,q=1})}}),
 q(26373,{awp=40003,coords={
 [469]={{48.7,52.9}}},isBreadcrumb=1,nextQuests={25724},qgs={42353},races={7},sourceQuests={26364}}),
 q(26329,{awp=40003,coords={
-[469]={{37.3,65.2}}},providers={{"i",58178}},qgs={42708},races={7},sourceQuests={26318}}),
+[469]={{37.3,65.2}}},qgs={42708},qis={58178},races={7},sourceQuests={26318}}),
 q(26342,{awp=40003,coords={
-[469]={{48.7,52.9}}},providers={{"i",58203}},qgs={42353},races={7},sourceQuests={26339},g={
+[469]={{48.7,52.9}}},qgs={42353},qis={58203},races={7},sourceQuests={26339},g={
 qo(1,{providers={{"n",42291}}})}}),
 q(27670,{awp=40003,coords={
 [30]={{34.1,32.2}}},qgs={45966},races={7},g={
@@ -29505,7 +29505,7 @@ q(26222,{awp=40003,coords={
 qo(1,{coords={
 [469]={{39.9,30.8}}},providers={{"i",57764},{"o",203964},{"o",203965},{"o",203966},{"o",203967},{"o",203968}}})}}),
 q(27671,{awp=40003,coords={
-[30]={{50.9,32}}},providers={{"i",62057}},qgs={47250},races={7},sourceQuests={28167},g={
+[30]={{50.9,32}}},qgs={47250},qis={62057},races={7},sourceQuests={28167},g={
 qo(1,{providers={{"n",46268}}})}}),
 q(26339,{awp=40003,coords={
 [469]={{38,33.6}}},qgs={42366,103614},races={7},sourceQuests={26331,26333}}),
@@ -29637,13 +29637,13 @@ qo(1,{coords={
 qo(2,{coords={
 [27]={{40.7,65.1}}},crs={1243},u=2})}}),
 q(417,{coords={
-[27]={{79.7,36.2}}},lvl=8,providers={{"i",3117},{"o",2059}},r=2,rwp=40003,sourceQuests={419},u=2,g={
+[27]={{79.7,36.2}}},lvl=8,providers={{"o",2059}},qis={3117},r=2,rwp=40003,sourceQuests={419},u=2,g={
 qo(1,{coords={
 [27]={{78.34,37.74}}},crs={1961},providers={{"i",3183}},u=2}),
 s(117812,2218,{b=1,f=20,q=2,u=2}),
 s(117128,1009,{b=1,f=23,q=2,u=2})}}),
 q(26855,{awp=40003,coords={
-[27]={{87.6,50.2}}},maps={48},providers={{"i",3117},{"o",2059}},r=2,sourceQuests={26854},g={
+[27]={{87.6,50.2}}},maps={48},providers={{"o",2059}},qis={3117},r=2,sourceQuests={26854},g={
 qo(1,{coords={
 [27]={{87.4,49.2}}},crs={1961},providers={{"i",3183}}}),
 s(205276,57560,{b=1,f=4,loc=44,q=2}),
@@ -29657,17 +29657,17 @@ qo(2,{crs={1247},providers={{"i",2894}}}),
 i(2888,{f=55,q=1}),
 r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185})}}),
 q(310,{coords={
-[27]={{30.2,45.6}}},lvl=2,providers={{"i",2548}},qgs={1375},r=2,rwp=40003,u=2,g={
+[27]={{30.2,45.6}}},lvl=2,qgs={1375},qis={2548},r=2,rwp=40003,u=2,g={
 q(308,{coords={
 [27]={{47.6,52.6}}},cost={{"i",2686,1}},qgs={1373},r=2,repeatable=1,u=2,g={
 q(311,{coords={
-[27]={{47.7,52.7}}},lvl=2,providers={{"i",2666},{"o",270}},r=2,sourceQuests={310},u=2})}}),
+[27]={{47.7,52.7}}},lvl=2,providers={{"o",270}},qis={2666},r=2,sourceQuests={310},u=2})}}),
 q(403,{coords={
 [27]={{47.7,52.7}}},providers={{"o",269}},r=2,repeatable=1,u=2})}}),
 q(7674,{coords={
 [27]={{70.6,48.9}}},cost={{"i",13328,1}},description="If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",qgs={1261},r=2,repeatable=1,rwp=10400,sym={{"select","itemID",18785,18786,18787}},u=2}),
 q(26380,{awp=40003,coords={
-[27]={{49.9,45}}},providers={{"i",58271}},qgs={42933},r=2}),
+[27]={{49.9,45}}},qgs={42933},qis={58271},r=2}),
 q(25667,{awp=40003,coords={
 [27]={{53.7,52.2}}},qgs={40950},r=2,sourceQuests={25724},g={
 qo(1,{providers={{"n",40940},{"n",40941}}})}}),
@@ -29683,7 +29683,7 @@ q(25979,{awp=40003,coords={
 [27]={{82.6,48.3}}},qgs={41804},r=2,g={
 qo(1,{providers={{"n",41762}}})}}),
 q(26112,{awp=40003,coords={
-[27]={{78.3,20.5}}},providers={{"i",56823}},qgs={41853},r=2,sourceQuests={26102}}),
+[27]={{78.3,20.5}}},qgs={41853},qis={56823},r=2,sourceQuests={26102}}),
 q(5637,{altQuests={5634,5635,5636,5638,5639,5640},c={5},coords={
 [27]={{47.2,52.2}}},lvl=10,qgs={1226},races={1,3},rwp=30002,u=2}),
 q(25840,{awp=40003,coords={
@@ -29699,7 +29699,7 @@ qo(1,{providers={{"n",41763},{"n",41768}}})}}),
 q(318,{coords={
 [27]={{49.4,48.4}}},lvl=2,qgs={1378},r=2,rwp=40003,sourceQuests={317},u=2}),
 q(26078,{awp=40003,coords={
-[27]={{78.3,20.5}}},providers={{"i",56803}},qgs={41853},r=2,sourceQuests={25998},g={
+[27]={{78.3,20.5}}},qgs={41853},qis={56803},r=2,sourceQuests={25998},g={
 qo(1,{providers={{"n",42046}}})}}),
 q(313,{coords={
 [27]={{53.7,52.2}}},qgs={40950},r=2,sourceQuests={25724},g={
@@ -29745,7 +29745,7 @@ q(25933,{awp=40003,coords={
 q(25838,{awp=40003,coords={
 [27]={{53.7,52.2}}},qgs={40950},r=2,sourceQuests={412,25792}}),
 q(6387,{coords={
-[27]={{54.7,50.5}}},providers={{"i",16310}},qgs={1699},races={3,7}}),
+[27]={{54.7,50.5}}},qgs={1699},qis={16310},races={3,7}}),
 q(7675,{coords={
 [27]={{56.2,46.3}}},cost={{"i",13327,1}},description="If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",qgs={7955},r=2,repeatable=1,rwp=10400,sym={{"select","itemID",18772,18773,18774}},u=2}),
 q(5626,{c={5},coords={
@@ -29759,12 +29759,12 @@ s(205275,57559,{b=1,f=5,loc=47,q=1}),
 s(205272,57556,{b=1,f=6,loc=43,q=1})}}),
 q(32663,{awp=50200,description="This quest is available to Gnomes upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=10,races={7},rwp=100105}),
 q(32662,{awp=50200,description="This quest is available to Dwarves upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=10,races={3},rwp=100105}),
-q(14084,{awp=30300,description="The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46878}},races={7},rwp=40003,u=2}),
-q(14083,{awp=30300,description="The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46877}},races={3},rwp=40003,u=2}),
+q(14084,{awp=30300,description="The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46878},races={7},rwp=40003,u=2}),
+q(14083,{awp=30300,description="The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46877},races={3},rwp=40003,u=2}),
 q(1679,{altQuests={1638,1678,1684,9582},c={1},coords={
 [27]={{47.2,52.6}}},lvl=10,qgs={1229},r=2,rwp=40003,u=2}),
 q(2239,{c={4},coords={
-[27]={{25.2,44.4}}},lvl=10,providers={{"i",7715}},qgs={6886},r=2,rwp=40003,sourceQuests={2238},u=2,g={
+[27]={{25.2,44.4}}},lvl=10,qgs={6886},qis={7715},r=2,rwp=40003,sourceQuests={2238},u=2,g={
 s(121842,7298,{b=1,c={4},f=20,q=2,u=2})}}),
 q(412,{coords={
 [27]={{53.3,51.9}}},lvl=7,qgs={1269},r=2,sourceQuests={313,25667},g={
@@ -29780,7 +29780,7 @@ qo(1,{coords={
 s(205266,57550,{b=1,f=4,loc=47,q=1}),
 s(205267,57551,{b=1,f=5,loc=46,q=1})}}),
 q(25937,{awp=40003,coords={
-[27]={{76.2,53.1}}},providers={{"i",56226}},qgs={50631},r=2,g={
+[27]={{76.2,53.1}}},qgs={50631},qis={56226},r=2,g={
 qo(1,{coords={
 [27]={{76.5,58}}},providers={{"i",56225},{"o",203385}}}),
 s(205285,57571,{b=1,f=4,loc=46,q=2}),
@@ -29796,7 +29796,7 @@ s(200821,2817,{b=1,f=5,loc=42,q=1}),
 s(205268,57552,{awp=40003,b=1,f=6,loc=42,q=1}),
 s(118483,3103,{b=1,f=24,q=2,rwp=40003,u=2})}}),
 q(25792,{awp=40003,coords={
-[27]={{53.7,52.2}}},providers={{"i",56009}},qgs={40950},r=2,sourceQuests={313,25667},g={
+[27]={{53.7,52.2}}},qgs={40950},qis={56009},r=2,sourceQuests={313,25667},g={
 qo(1,{providers={{"n",41202}}}),
 s(123775,10547,{b=1,f=20,q=1}),
 s(200760,1010,{b=1,f=28,q=1}),
@@ -29811,19 +29811,19 @@ q(415,{coords={
 [27]={{46,51.6},{49.4,48.4}}},isBreadcrumb=1,lvl=8,nextQuests={413},qgs={1378,1872},r=2,rwp=40003,u=2,g={
 i(3087,{f=55,q=1,u=2})}}),
 q(320,{coords={
-[27]={{30.2,45.8}}},lvl=2,providers={{"i",2696}},qgs={1374},r=2,rwp=40003,sourceQuests={319},u=2,g={
+[27]={{30.2,45.8}}},lvl=2,qgs={1374},qis={2696},r=2,rwp=40003,sourceQuests={319},u=2,g={
 s(200761,1011,{b=1,f=21,q=1,u=2}),
 s(200760,1010,{b=1,f=28,q=1,u=2}),
 s(123775,10547,{b=1,f=20,q=1,u=2})}}),
 q(6391,{coords={
-[27]={{53.8,52.8}}},providers={{"i",16310}},qgs={43701},races={3,7},sourceQuests={6387}}),
+[27]={{53.8,52.8}}},qgs={43701},qis={16310},races={3,7},sourceQuests={6387}}),
 q(2218,{c={4},coords={
 [27]={{47.6,52.6}}},lvl=10,qgs={1234},r=2,rwp=40003,u=2}),
 q(466,{coords={
 [27]={{49.6,48.4}}},cost={{"i",3340,6}},lvl=20,maps={56},qgs={1377},r=2,rwp=40003,sourceQuests={467},u=2,g={
 s(118867,3565,{b=1,f=4,loc=44,q=2,u=2})}}),
 q(413,{coords={
-[27]={{30.2,45.8}}},lvl=8,providers={{"i",3085}},qgs={1374},r=2,rwp=40003,sourceQuests={315,415},u=2}),
+[27]={{30.2,45.8}}},lvl=8,qgs={1374},qis={3085},r=2,rwp=40003,sourceQuests={315,415},u=2}),
 q(1879,{altQuests={1860},c={8},coords={
 [27]={{47.4,52}}},isBreadcrumb=1,lvl=10,nextQuests={1880},qgs={1228},r=2,rwp=40003,u=2}),
 q(317,{coords={
@@ -29834,24 +29834,24 @@ q(467,{coords={
 [48]={{34.8,47}},
 [87]={{72.4,93.6}}},isBreadcrumb=1,lvl=20,nextQuests={466},qgs={1340,2092},r=2,rwp=40003,u=2}),
 q(414,{coords={
-[27]={{86.2,48.8}}},lvl=8,providers={{"i",3086}},qgs={1959},r=2,rwp=40003,sourceQuests={413},u=2}),
+[27]={{86.2,48.8}}},lvl=8,qgs={1959},qis={3086},r=2,rwp=40003,sourceQuests={413},u=2}),
 q(25841,{awp=40003,coords={
-[27]={{62.5,53.7}}},providers={{"i",56048}},qgs={41298},r=2,sourceQuests={25839},g={
+[27]={{62.5,53.7}}},qgs={41298},qis={56048},r=2,sourceQuests={25839},g={
 qo(1,{coords={
 [27]={{64,54}}},providers={{"n",41372}}}),
 qo(2,{coords={
 [27]={{63,57}}},providers={{"n",41373}}})}}),
 q(26094,{awp=40003,coords={
-[27]={{78.3,20.5}}},providers={{"i",56814}},qgs={41853},r=2,sourceQuests={26085},g={
+[27]={{78.3,20.5}}},qgs={41853},qis={56814},r=2,sourceQuests={26085},g={
 qo(1,{providers={{"n",41902},{"n",41924},{"n",42003},{"n",42012},{"n",42092}}})}}),
 q(6064,{c={3},coords={
-[27]={{45.8,53}}},lvl=10,providers={{"i",15911}},qgs={1231},races={3},rwp=40003,sourceQuests={6074,6075,6076},u=2,g={
+[27]={{45.8,53}}},lvl=10,qgs={1231},qis={15911},races={3},rwp=40003,sourceQuests={6074,6075,6076},u=2,g={
 qo(1,{providers={{"n",1126}},u=2})}}),
 q(6084,{c={3},coords={
-[27]={{45.8,53}}},lvl=10,providers={{"i",15913}},qgs={1231},races={3},rwp=40003,sourceQuests={6064},u=2,g={
+[27]={{45.8,53}}},lvl=10,qgs={1231},qis={15913},races={3},rwp=40003,sourceQuests={6064},u=2,g={
 qo(1,{providers={{"n",1201}},u=2})}}),
 q(6085,{c={3},coords={
-[27]={{45.8,53}}},lvl=10,providers={{"i",15908}},qgs={1231},races={3},rwp=40003,sourceQuests={6084},u=2,g={
+[27]={{45.8,53}}},lvl=10,qgs={1231},qis={15908},races={3},rwp=40003,sourceQuests={6084},u=2,g={
 qo(1,{providers={{"n",1196}},u=2})}}),
 q(6074,{c={3},coords={
 [87]={{70,84.6}}},isBreadcrumb=1,lvl=10,nextQuests={6064},qgs={5116},races={3},rwp=40003,u=2}),
@@ -29875,18 +29875,18 @@ s(205264,57547,{awp=40003,b=1,f=5,loc=47,q=1}),
 s(205265,57548,{awp=40003,b=1,f=6,loc=44,q=1}),
 s(118342,2905,{b=1,f=3,q=1,rwp=40003,u=2})}}),
 q(433,{coords={
-[27]={{75.9,54.3}}},description="The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",isYearly=1,lvl=6,providers={{"i",56222}},qgs={1977},r=2,g={
+[27]={{75.9,54.3}}},description="The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",isYearly=1,lvl=6,qgs={1977},qis={56222},r=2,g={
 qo(1,{providers={{"n",41671}}}),
 s(205284,57570,{awp=40003,b=1,f=6,loc=45,q=2}),
 s(205282,57568,{awp=40003,b=1,f=5,loc=46,q=2}),
 s(205283,57569,{awp=40003,b=1,f=5,loc=43,q=2}),
 n(1977)}}),
 q(291,{coords={
-[27]={{46.6,53.8}}},providers={{"i",2628}},qgs={1252},r=2,rwp=40003,sourceQuests={287},u=2}),
+[27]={{46.6,53.8}}},qgs={1252},qis={2628},r=2,rwp=40003,sourceQuests={287},u=2}),
 q(1653,{c={2},coords={
 [84]={{50.5,47.5}}},lvl=20,qgs={6171},r=2,rwp=40003,sourceQuests={1652},u=2}),
 q(1654,{c={2},coords={
-[27]={{52.6,36.8}}},lvl=20,maps={48,62,221,291,310},providers={{"i",6996}},qgs={6181},r=2,rwp=40003,sourceQuests={1653},u=2,g={
+[27]={{52.6,36.8}}},lvl=20,maps={48,62,221,291,310},qgs={6181},qis={6996},r=2,rwp=40003,sourceQuests={1653},u=2,g={
 qo(1,{crs={641},providers={{"i",6994}},u=2}),
 qo(3,{providers={{"i",6895},{"o",91138}},u=2}),
 q(1655,{c={2},coords={
@@ -29906,7 +29906,7 @@ q(25839,{awp=40003,coords={
 qo(1,{coords={
 [27]={{56.8,46.6}}},providers={{"n",41398}}})}}),
 q(28868,{awp=40003,coords={
-[27]={{62.5,53.8}}},providers={{"i",67249}},qgs={50601},r=2,sourceQuests={25839},g={
+[27]={{62.5,53.8}}},qgs={50601},qis={67249},r=2,sourceQuests={25839},g={
 qo(1,{providers={{"n",41251}}})}}),
 q(432,{coords={
 [27]={{76.3,54.7}}},lvl=5,qgs={1254},r=2,g={
@@ -29915,7 +29915,7 @@ qo(2,{providers={{"n",1117}}})}}),
 q(2299,{c={4},coords={
 [27]={{47.6,52.6}}},isBreadcrumb=1,lvl=16,nextQuests={2298},qgs={1234},r=2,rwp=40003,sourceQuests={2218},u=2}),
 q(400,{coords={
-[27]={{46,51.6}}},lvl=2,providers={{"i",2999}},qgs={1872},r=2,rwp=40003,u=2}),
+[27]={{46,51.6}}},lvl=2,qgs={1872},qis={2999},r=2,rwp=40003,u=2}),
 q(6086,{c={3},coords={
 [27]={{45.8,53}}},lvl=10,qgs={1231},races={3},rwp=40003,sourceQuests={6085},u=2}),
 q(25986,{awp=40003,coords={
@@ -29999,8 +29999,7 @@ i(2886,{coords={
 [27]={{46.6,59.8}}},crs={1125,1689},description="Only drops from Crag Boars in Dun Morogh.",q=1}),
 s(117694,2067,{awp=100107,coords={
 [27]={{78,54.2},{79.2,48.4}}},crs={1117},f=28,lvl=5,q=1,rwp=40003,u=2}),
-s(117847,2259,{awp=100107,coords={
-[27]={{21.6,77},{26,79.8},{29.6,79}}},crs={1121},f=23,lvl=3,q=1,rwp=40003,u=2}),
+s(117847,2259,{awp=100107,crs={1121},f=23,lvl=3,q=1,rwp=40003,u=2}),
 s(117848,2260,{awp=100107,coords={
 [27]={{26.6,50.6},{27.2,52.8}}},crs={1122,1123},f=21,lvl=4,q=1,rwp=40003,u=2}),
 s(117846,2258,{awp=100107,coords={
@@ -30096,10 +30095,10 @@ q(26720,{awp=40003,coords={
 qo(1,{coords={
 [47]={{21.6,73.2}}},providers={{"i",60206},{"n",43814}}})}}),
 q(231,{coords={
-[47]={{73.6,46.8}}},lvl=28,providers={{"i",2162},{"o",61}},qgs={576},r=2,rwp=40003,sourceQuests={229},u=2,g={
+[47]={{73.6,46.8}}},lvl=28,providers={{"o",61}},qgs={576},qis={2162},r=2,rwp=40003,sourceQuests={229},u=2,g={
 s(117644,2000,{b=1,f=26,q=2,u=2})}}),
 q(26797,{awp=40003,coords={
-[47]={{73.6,46.8}}},providers={{"i",2162},{"o",61}},qgs={576},r=2,sourceQuests={26796},g={
+[47]={{73.6,46.8}}},providers={{"o",61}},qgs={576},qis={2162},r=2,sourceQuests={26796},g={
 s(207251,60937,{b=1,f=25,q=3})}}),
 q(26707,{awp=40003,coords={
 [47]={{44.9,67.4}}},qgs={43738},r=2,g={
@@ -30108,7 +30107,7 @@ s(207242,60927,{b=1,f=3,q=2}),
 s(207239,60924,{b=1,f=25,q=2}),
 s(207240,60925,{b=1,f=4,loc=43,q=2}),
 s(207241,60926,{b=1,f=5,loc=42,q=2})}}),
-q(337,{lvl=20,maps={84},providers={{"i",2794}},r=2,rwp=40003,u=2}),
+q(337,{lvl=20,maps={84},qss={2794},r=2,rwp=40003,u=2}),
 q(1044,{coords={
 [47]={{75.3,49.2}}},lvl=25,maps={89},qgs={661},r=2,rwp=40003,sourceQuests={1043},u=2,g={
 s(120770,5817,{b=1,f=32,q=2,u=2}),
@@ -30123,7 +30122,7 @@ i(60936,{b=1,f=52,q=2}),
 s(207249,60934,{b=1,f=4,loc=42,q=2}),
 s(207250,60935,{b=1,f=5,loc=47,q=2})}}),
 q(322,{coords={
-[56]={{10.6,60.5}}},lvl=20,providers={{"i",2712}},qgs={1217},r=2,rwp=40003,sourceQuests={324,526},u=2}),
+[56]={{10.6,60.5}}},lvl=20,qgs={1217},qis={2712},r=2,rwp=40003,sourceQuests={324,526},u=2}),
 q(26686,{awp=40003,coords={
 [47]={{73.5,46.9}}},qgs={264},r=2,sourceQuests={26645},g={
 qo(1,{providers={{"n",48}}}),
@@ -30148,7 +30147,7 @@ s(207225,60909,{b=1,f=5,loc=44,q=2}),
 s(207224,60908,{b=1,f=4,loc=46,q=2}),
 i(60910,{b=1,f=52,q=2})}}),
 q(26672,{awp=40003,coords={
-[47]={{79,44.1}}},providers={{"i",3629}},qgs={43453},r=2,sourceQuests={26671}}),
+[47]={{79,44.1}}},qgs={43453},qis={3629},r=2,sourceQuests={26671}}),
 q(26760,{awp=40003,coords={
 [47]={{18.3,57.6}}},qgs={43730},r=2,sourceQuests={26720},g={
 qo(1,{coords={
@@ -30157,17 +30156,17 @@ s(207243,60928,{b=1,f=1,q=2}),
 s(207244,60929,{b=1,f=5,loc=43,q=2}),
 s(207245,60930,{b=1,f=8,q=2})}}),
 q(157,{coords={
-[47]={{75.8,45.3}}},lvl=20,providers={{"i",1596}},qgs={265},r=2,rwp=40003,sourceQuests={154},u=2}),
+[47]={{75.8,45.3}}},lvl=20,qgs={265},qis={1596},r=2,rwp=40003,sourceQuests={154},u=2}),
 q(26655,{awp=40003,coords={
-[47]={{75.7,45.2}}},providers={{"i",1596}},qgs={265},r=2,sourceQuests={26654},g={
+[47]={{75.7,45.2}}},qgs={265},qis={1596},r=2,sourceQuests={26654},g={
 s(207218,60900,{b=1,f=5,loc=45,q=2}),
 s(207219,60901,{b=1,f=6,loc=44,q=2}),
 s(207217,60899,{b=1,f=4,loc=42,q=2}),
 i(60898,{b=1,f=52,q=2})}}),
 q(164,{coords={
-[47]={{75.3,48.7}}},isBreadcrumb=1,lvl=17,nextQuests={95},providers={{"i",1922}},qgs={633},r=2,rwp=40003,u=2}),
+[47]={{75.3,48.7}}},isBreadcrumb=1,lvl=17,nextQuests={95},qgs={633},qis={1922},r=2,rwp=40003,u=2}),
 q(26719,{awp=40003,coords={
-[47]={{44.9,67.4}}},providers={{"i",60205}},qgs={43738},r=2,sourceQuests={26717}}),
+[47]={{44.9,67.4}}},qgs={43738},qis={60205},r=2,sourceQuests={26717}}),
 q(93,{coords={
 [47]={{73.8,43.5}}},cost={{"i",2251,6}},lvl=17,qgs={272},r=2,rwp=40003,sourceQuests={5},u=2,g={
 r(3377,{itemID=3683,learnedAt=110,q=1,requireSkill=185,u=2})}}),
@@ -30181,7 +30180,7 @@ qo(1,{coords={
 [47]={{9.4,39.8},{13,28.4},{13,70.6},{27.8,29.2},{52,12.4},{90.8,16}}},providers={{"n",539}},u=2}),
 s(118861,3559,{b=1,f=6,loc=44,q=2,u=2})}}),
 q(453,{coords={
-[47]={{73.8,44.4}}},lvl=20,providers={{"i",2161}},qgs={273},r=2,rwp=40003,sourceQuests={266},u=2}),
+[47]={{73.8,44.4}}},lvl=20,qgs={273},qis={2161},r=2,rwp=40003,sourceQuests={266},u=2}),
 q(156,{coords={
 [47]={{73.8,44.4}}},lvl=20,qgs={273},r=2,rwp=40003,sourceQuests={158},u=2,g={
 qo(1,{crs={202,531},providers={{"i",1598}},u=2})}}),
@@ -30190,9 +30189,9 @@ q(26661,{awp=40003,coords={
 qo(1,{coords={
 [47]={{79.6,73.5}}},providers={{"i",59345},{"o",204457}}})}}),
 q(149,{coords={
-[47]={{75.8,45.3}}},lvl=20,providers={{"i",1453}},qgs={265},r=2,rwp=40003,sourceQuests={148},u=2}),
+[47]={{75.8,45.3}}},lvl=20,qgs={265},qis={1453},r=2,rwp=40003,sourceQuests={148},u=2}),
 q(26652,{awp=40003,coords={
-[47]={{75.8,45.2}}},providers={{"i",1453}},qgs={265},r=2,sourceQuests={26653}}),
+[47]={{75.8,45.2}}},qgs={265},qis={1453},r=2,sourceQuests={26653}}),
 q(133,{coords={
 [47]={{28,31.5}}},lvl=20,qgs={289},r=2,rwp=40003,sourceQuests={159},u=2,g={
 qo(1,{crs={3,210,570,604,948},providers={{"i",884}},u=2})}}),
@@ -30210,13 +30209,13 @@ q(26669,{awp=40003,coords={
 qo(1,{coords={
 [47]={{66.5,76.5}}},providers={{"i",59361},{"o",204464}}})}}),
 q(266,{coords={
-[47]={{72.6,46.9}}},lvl=20,providers={{"i",2161}},qgs={267},r=2,rwp=40003,sourceQuests={265},u=2}),
+[47]={{72.6,46.9}}},lvl=20,qgs={267},qis={2161},r=2,rwp=40003,sourceQuests={265},u=2}),
 q(5,{coords={
 [47]={{18.2,56.3}}},lvl=17,qgs={288},r=2,rwp=40003,sourceQuests={163},u=2}),
 q(159,{coords={
-[47]={{73.8,44.4}}},lvl=20,providers={{"i",1451}},qgs={273},r=2,rwp=40003,sourceQuests={156},u=2}),
+[47]={{73.8,44.4}}},lvl=20,qgs={273},qis={1451},r=2,rwp=40003,sourceQuests={156},u=2}),
 q(26676,{awp=40003,coords={
-[47]={{73.7,44.4}}},providers={{"i",1451}},qgs={273},r=2,sourceQuests={26661},g={
+[47]={{73.7,44.4}}},qgs={273},qis={1451},r=2,sourceQuests={26661},g={
 s(207220,60902,{b=1,f=4,loc=44,q=2}),
 s(207221,60903,{b=1,f=5,loc=46,q=2}),
 i(60904,{b=1,f=52,q=2})}}),
@@ -30273,9 +30272,9 @@ q(26794,{awp=40003,coords={
 [47]={{72.6,47.7}}},qgs={268},r=2,sourceQuests={26793},g={
 i(2154,{b=1})}}),
 q(160,{coords={
-[47]={{28,31.5}}},lvl=20,providers={{"i",1637}},qgs={289},r=2,rwp=40003,sourceQuests={134},u=2}),
+[47]={{28,31.5}}},lvl=20,qgs={289},qis={1637},r=2,rwp=40003,sourceQuests={134},u=2}),
 q(26681,{awp=40003,coords={
-[47]={{87.4,35.2}}},providers={{"i",1637}},qgs={289},r=2,sourceQuests={26677}}),
+[47]={{87.4,35.2}}},qgs={289},qis={1637},r=2,sourceQuests={26677}}),
 q(1372,{coords={
 [47]={{87.6,35.6}}},lvl=37,qgs={5418},r=1,rwp=40003,u=2}),
 q(1383,{coords={
@@ -30286,9 +30285,9 @@ qo(3,{crs={4686,4687},providers={{"i",6082}},u=2}),
 s(121594,6832,{b=1,f=3,q=2,u=2}),
 s(124193,11265,{b=1,f=24,q=2,u=2})}}),
 q(1388,{coords={
-[47]={{87.4,35.4}}},lvl=37,providers={{"i",6086}},qgs={5414},r=1,rwp=40003,sourceQuests={1383},u=2}),
+[47]={{87.4,35.4}}},lvl=37,qgs={5414},qis={6086},r=1,rwp=40003,sourceQuests={1383},u=2}),
 q(1391,{coords={
-[47]={{87.6,35.6}}},lvl=37,providers={{"i",6089}},qgs={5418},r=1,rwp=40003,sourceQuests={1388},u=2}),
+[47]={{87.6,35.6}}},lvl=37,qgs={5418},qis={6089},r=1,rwp=40003,sourceQuests={1388},u=2}),
 q(134,{coords={
 [47]={{28,31.5}}},lvl=20,qgs={289},r=2,rwp=40003,sourceQuests={133},u=2,g={
 qo(1,{coords={
@@ -30307,13 +30306,13 @@ qo(3,{providers={{"n",785}},u=2})}}),
 q(163,{coords={
 [47]={{75.3,48.7}}},isBreadcrumb=1,lvl=17,nextQuests={5},qgs={633},r=2,rwp=40003,u=2}),
 q(154,{coords={
-[47]={{81.9,59.1}}},lvl=20,providers={{"i",1518}},qgs={302},r=2,rwp=40003,sourceQuests={149},u=2}),
+[47]={{81.9,59.1}}},lvl=20,qgs={302},qis={1518},r=2,rwp=40003,sourceQuests={149},u=2}),
 q(26654,{awp=40003,coords={
-[47]={{82,59.3}}},providers={{"i",1518}},qgs={302},r=2,sourceQuests={26652}}),
+[47]={{82,59.3}}},qgs={302},qis={1518},r=2,sourceQuests={26652}}),
 q(240,{coords={
-[47]={{73.8,43.5}}},lvl=17,providers={{"i",2250}},qgs={272},r=2,rwp=40003,sourceQuests={93},u=2}),
+[47]={{73.8,43.5}}},lvl=17,qgs={272},qis={2250},r=2,rwp=40003,sourceQuests={93},u=2}),
 q(268,{coords={
-[47]={{18.2,56.3}}},lvl=20,providers={{"i",2560}},qgs={288},r=2,rwp=40003,sourceQuests={453},u=2}),
+[47]={{18.2,56.3}}},lvl=20,qgs={288},qis={2560},r=2,rwp=40003,sourceQuests={453},u=2}),
 q(26670,{awp=40003,coords={
 [47]={{72.4,46.9}}},qgs={267},r=2,sourceQuests={26669},g={
 qo(1,{coords={
@@ -30330,18 +30329,18 @@ q(26620,{awp=40003,coords={
 qo(1,{crs={43704},providers={{"i",60989}}}),
 r(2549,{itemID=2701,learnedAt=100,q=1,requireSkill=185})}}),
 q(269,{coords={
-[47]={{7.8,34}}},lvl=20,providers={{"i",2560}},qgs={311},r=2,rwp=40003,sourceQuests={323},u=2}),
+[47]={{7.8,34}}},lvl=20,qgs={311},qis={2560},r=2,rwp=40003,sourceQuests={323},u=2}),
 q(26777,{awp=40003,coords={
 [47]={{20,57.8}}},qgs={43731},r=2,g={
 qo(1,{providers={{"i",60225},{"n",43923}}})}}),
 q(1395,{coords={
-[47]={{75.8,46.2}}},lvl=40,maps={17},providers={{"i",6091}},qgs={5464},r=2,rwp=40003,sourceQuests={1477},u=2}),
+[47]={{75.8,46.2}}},lvl=40,maps={17},qgs={5464},qis={6091},r=2,rwp=40003,sourceQuests={1477},u=2}),
 q(148,{coords={
 [47]={{28,31.5}}},lvl=20,qgs={289},r=2,rwp=40003,sourceQuests={165},u=2}),
 q(26653,{awp=40003,coords={
 [47]={{87.4,35.2}}},qgs={289},r=2,sourceQuests={26627}}),
 q(230,{coords={
-[47]={{49.9,77.7}}},lvl=20,providers={{"i",2161},{"o",59}},r=2,rwp=40003,sourceQuests={95},u=2}),
+[47]={{49.9,77.7}}},lvl=20,providers={{"o",59}},qis={2161},r=2,rwp=40003,sourceQuests={95},u=2}),
 q(95,{coords={
 [47]={{7.8,34}}},lvl=20,qgs={311},r=2,rwp=40003,sourceQuests={164},u=2}),
 q(1042,{coords={
@@ -30369,7 +30368,7 @@ q(26723,{awp=40003,coords={
 qo(1,{coords={
 [47]={{17,33.4}}},providers={{"o",204816}}})}}),
 q(26671,{awp=40003,coords={
-[47]={{72.4,46.9}}},providers={{"i",59362}},qgs={267},r=2,sourceQuests={26670}}),
+[47]={{72.4,46.9}}},qgs={267},qis={59362},r=2,sourceQuests={26670}}),
 q(26753,{awp=40003,coords={
 [47]={{23.4,35.4}}},providers={{"o",204817},{"o",204824}},r=2,sourceQuests={26725}}),
 q(165,{coords={
@@ -30388,7 +30387,7 @@ q(66,{coords={
 q(67,{coords={
 [47]={{72.6,46.9}}},lvl=22,qgs={267},r=2,rwp=40003,sourceQuests={66},u=2}),
 q(68,{coords={
-[52]={{41.5,66.7}}},lvl=22,providers={{"i",889},{"o",3643}},r=2,rwp=40003,sourceQuests={67},u=2}),
+[52]={{41.5,66.7}}},lvl=22,providers={{"o",3643}},qis={889},r=2,rwp=40003,sourceQuests={67},u=2}),
 q(69,{coords={
 [47]={{72.6,46.9}}},lvl=22,maps={37},qgs={267},r=2,rwp=40003,sourceQuests={68},u=2}),
 q(70,{coords={
@@ -30398,17 +30397,17 @@ qo(1,{coords={
 q(72,{coords={
 [84]={{29.6,61.9}}},lvl=22,qgs={297},r=2,rwp=40003,sourceQuests={70},u=2}),
 q(74,{coords={
-[84]={{29.6,61.9}}},lvl=22,maps={37},providers={{"i",916},{"o",1561}},r=2,rwp=40003,sourceQuests={72},u=2}),
+[84]={{29.6,61.9}}},lvl=22,maps={37},providers={{"o",1561}},qis={916},r=2,rwp=40003,sourceQuests={72},u=2}),
 q(75,{coords={
 [37]={{84.6,69.3}}},lvl=22,qgs={294},r=2,rwp=40003,sourceQuests={74},u=2,g={
 qo(1,{coords={
 [37]={{85.6,69.6}}},providers={{"i",921},{"o",1562}},u=2})}}),
 q(78,{coords={
-[37]={{84.6,69.3}}},lvl=22,providers={{"i",921}},qgs={294},r=2,rwp=40003,sourceQuests={75},u=2}),
+[37]={{84.6,69.3}}},lvl=22,qgs={294},qis={921},r=2,rwp=40003,sourceQuests={75},u=2}),
 q(79,{coords={
-[47]={{73.8,44.4}}},lvl=22,providers={{"i",938}},qgs={273},r=2,rwp=40003,sourceQuests={78},u=2}),
+[47]={{73.8,44.4}}},lvl=22,qgs={273},qis={938},r=2,rwp=40003,sourceQuests={78},u=2}),
 q(80,{coords={
-[47]={{73.6,46.9}}},lvl=22,providers={{"i",939}},qgs={264},r=2,rwp=40003,sourceQuests={79},u=2}),
+[47]={{73.6,46.9}}},lvl=22,qgs={264},qis={939},r=2,rwp=40003,sourceQuests={79},u=2}),
 q(97,{coords={
 [47]={{72.6,46.9}}},lvl=22,qgs={267},r=2,rwp=40003,sourceQuests={80},u=2}),
 q(98,{coords={
@@ -30446,9 +30445,9 @@ q(1043,{coords={
 qo(1,{coords={
 [47]={{73.7,79}}},providers={{"o",19030}},u=2})}}),
 q(262,{coords={
-[47]={{7.8,34}}},lvl=20,providers={{"i",2161}},qgs={311},r=2,rwp=40003,sourceQuests={230},u=2}),
+[47]={{7.8,34}}},lvl=20,qgs={311},qis={2161},r=2,rwp=40003,sourceQuests={230},u=2}),
 q(265,{coords={
-[47]={{75.8,45.3}}},lvl=20,providers={{"i",2161}},qgs={265},r=2,rwp=40003,sourceQuests={262},u=2}),
+[47]={{75.8,45.3}}},lvl=20,qgs={265},qis={2161},r=2,rwp=40003,sourceQuests={262},u=2}),
 q(26667,{awp=40003,coords={
 [47]={{72.4,46.9}}},qgs={267},r=2,sourceQuests={26666},g={
 qo(1,{coords={
@@ -30471,9 +30470,9 @@ q(26717,{awp=40003,coords={
 qo(1,{coords={
 [47]={{49.8,77.7}}},providers={{"n",43799},{"o",204777}}})}}),
 q(251,{coords={
-[47]={{71.9,46.5}}},lvl=20,providers={{"i",1637}},qgs={263},r=2,rwp=40003,sourceQuests={160},u=2}),
+[47]={{71.9,46.5}}},lvl=20,qgs={263},qis={1637},r=2,rwp=40003,sourceQuests={160},u=2}),
 q(252,{coords={
-[47]={{72.6,47.7}}},lvl=20,providers={{"i",1656}},qgs={268},r=2,rwp=40003,sourceQuests={401},u=2,g={
+[47]={{72.6,47.7}}},lvl=20,qgs={268},qis={1656},r=2,rwp=40003,sourceQuests={401},u=2,g={
 i(3248,{q=1,u=2})}}),
 q(9429,{awp=20003,coords={
 [84]={{78.2,18.2}}},lvl=18,qgs={17103},races={11},rwp=40003,u=2}),
@@ -30511,7 +30510,7 @@ q(222,{coords={
 qo(1,{providers={{"n",206}},u=2}),
 qo(2,{providers={{"n",920}},u=2})}}),
 q(223,{coords={
-[47]={{75.3,48}}},lvl=23,providers={{"i",2113}},qgs={663},r=2,rwp=40003,sourceQuests={222},u=2,g={
+[47]={{75.3,48}}},lvl=23,qgs={663},qis={2113},r=2,rwp=40003,sourceQuests={222},u=2,g={
 s(118339,2902,{b=1,f=3,q=2,u=2}),
 s(117400,1547,{b=1,f=8,q=2,u=2}),
 s(120300,5244,{b=1,f=27,q=2,u=2})}}),
@@ -30519,7 +30518,7 @@ q(26688,{awp=40003,coords={
 [47]={{75.3,48}}},qgs={663},r=2,g={
 qo(1,{providers={{"n",898}}})}}),
 q(26691,{awp=40003,coords={
-[47]={{75.3,48}}},providers={{"i",2113}},qgs={663},r=2,sourceQuests={26690},g={
+[47]={{75.3,48}}},qgs={663},qis={2113},r=2,sourceQuests={26690},g={
 s(207246,60931,{b=1,f=4,loc=44,q=2}),
 s(207247,60932,{b=1,f=5,loc=47,q=2}),
 s(207248,60933,{b=1,f=6,loc=42,q=2})}}),
@@ -30668,7 +30667,7 @@ s(172137,38707,{b=1,f=26,q=3})}}),
 q(12842,{coords={
 [124]={{48.1,28.4}}},qgs={28357},sourceQuests={12619}}),
 q(12848,{coords={
-[124]={{48.1,28.4}}},providers={{"i",40732}},qgs={28357},sourceQuests={12842},g={
+[124]={{48.1,28.4}}},qgs={28357},qis={40732},sourceQuests={12842},g={
 qo(1,{coords={
 [124]={{48.8,29.8}}},providers={{"n",29520},{"n",29565},{"n",29566},{"n",29567}}})}}),
 q(12636,{coords={
@@ -30717,7 +30716,7 @@ i(39317,{description="This explains the disappearance of Naxxramas from the East
 q(12697,{coords={
 [124]={{52.3,34}}},qgs={28377},sourceQuests={12678,12679,12687,12733}}),
 q(12698,{coords={
-[124]={{54.1,35}}},providers={{"i",39253}},qgs={28658},sourceQuests={12697},g={
+[124]={{54.1,35}}},qgs={28658},qis={39253},sourceQuests={12697},g={
 qo(1,{providers={{"n",28819},{"n",28822}}}),
 i(38674,{b=1,f=53,q=3})}}),
 q(12700,{coords={
@@ -30727,7 +30726,7 @@ q(12701,{coords={
 qo(1,{providers={{"n",28834},{"n",28850}}}),
 s(172128,38666,{b=1,f=7,loc=43,q=3})}}),
 q(12706,{coords={
-[124]={{52.3,34}}},providers={{"i",39269}},qgs={28377},sourceQuests={12701},g={
+[124]={{52.3,34}}},qgs={28377},qis={39269},sourceQuests={12701},g={
 s(172131,38669,{b=1,f=7,loc=46,q=3})}}),
 q(12714,{coords={
 [124]={{48.9,29.8}}},qgs={28444},sourceQuests={12706}}),
@@ -30742,7 +30741,7 @@ qo(2,{coords={
 qo(3,{crs={28610,28936,28939,28940,28941,28942,28945,28946,29000,29001,29076},providers={{"i",39328}}}),
 s(172130,38668,{b=1,f=7,loc=45,q=3})}}),
 q(12717,{coords={
-[124]={{54.7,57.4}}},providers={{"i",39329}},qgs={28919},sourceQuests={12716}}),
+[124]={{54.7,57.4}}},qgs={28919},qis={39329},sourceQuests={12716}}),
 q(12718,{coords={
 [124]={{56.2,51.9}}},cost={{"i",39328,20}},providers={{"o",190936}},repeatable=1,sourceQuests={12717}}),
 q(12719,{coords={
@@ -30829,22 +30828,22 @@ q(12751,{coords={
 [124]={{53,82.1}}},qgs={29053},sourceQuests={12739,12742,12743,12744,12745,12746,12747,12748,12749,12750,28649,28650},g={
 i(38675,{b=1,f=53,q=3})}}),
 q(12754,{coords={
-[124]={{56.2,79.8}}},providers={{"i",39645}},qgs={28914},sourceQuests={12751},g={
+[124]={{56.2,79.8}}},qgs={28914},qis={39645},sourceQuests={12751},g={
 qo(1,{coords={
 [124]={{60,76}}},crs={29076},providers={{"i",39646}}}),
 qo(2,{coords={
 [124]={{60,76}}},crs={29076},providers={{"i",39647}}})}}),
 q(12755,{coords={
-[124]={{56.2,79.8}}},providers={{"i",39647}},qgs={28914},sourceQuests={12754}}),
+[124]={{56.2,79.8}}},qgs={28914},qis={39647},sourceQuests={12754}}),
 q(12756,{coords={
-[124]={{65.7,83.8}}},providers={{"i",39654}},qgs={29077},sourceQuests={12755}}),
+[124]={{65.7,83.8}}},qgs={29077},qis={39654},sourceQuests={12755}}),
 q(12757,{coords={
-[124]={{56.2,79.8}}},providers={{"i",39654}},qgs={28914},sourceQuests={12756},g={
+[124]={{56.2,79.8}}},qgs={28914},qis={39654},sourceQuests={12756},g={
 s(172125,38663,{b=1,f=7,loc=41,q=3})}}),
 q(12778,{coords={
 [124]={{48.9,29.8}}},qgs={28444},sourceQuests={12757}}),
 q(12779,{coords={
-[124]={{53.5,36.9}}},providers={{"i",39700}},qgs={29110},sourceQuests={12778},g={
+[124]={{53.5,36.9}}},qgs={29110},qis={39700},sourceQuests={12778},g={
 qo(1,{providers={{"n",29150}}}),
 qo(2,{providers={{"n",29104}}}),
 s(172124,38661,{b=1,f=7,loc=40,q=3})}}),
@@ -30862,9 +30861,9 @@ qo(1,{providers={{"n",31099}}}),
 qo(2,{providers={{"n",31100}}}),
 s(172124,38661,{b=1,f=7,loc=40,q=3})}}),
 q(13189,{coords={
-[23]={{83.4,49.4}}},providers={{"i",43441}},qgs={31084},r=1,sourceQuests={13166}}),
+[23]={{83.4,49.4}}},qgs={31084},qis={43441},r=1,sourceQuests={13166}}),
 q(13188,{coords={
-[23]={{83.4,49.4}}},providers={{"i",43440}},qgs={31084},r=2,sourceQuests={13166}})}}),
+[23]={{83.4,49.4}}},qgs={31084},qis={43440},r=2,sourceQuests={13166}})}}),
 prof(960,{awp=30002,c={6},g={
 r(53428,{c={6},requireSkill=960}),
 r(53341,{c={6},requireSkill=960,rwp=60002}),
@@ -31052,7 +31051,7 @@ s(208430,62940,{b=1,f=5,loc=45,q=2}),
 s(208429,62939,{b=1,f=4,loc=45,q=2}),
 crit(15626,{achID=5442,id=4})}}),
 q(27386,{awp=40003,coords={
-[23]={{35.6,68.9}}},providers={{"i",60987}},qgs={11063},sourceQuests={27385}}),
+[23]={{35.6,68.9}}},qgs={11063},qis={60987},sourceQuests={27385}}),
 q(7621,{c={5},coords={
 [23]={{17.6,14.1}}},lvl=60,qgs={14494},rwp=40003,u=2}),
 q(27539,{awp=40003,coords={
@@ -31321,12 +31320,12 @@ qo(2,{coords={
 qo(3,{coords={
 [23]={{22.2,68.2}}},providers={{"i",12955},{"o",176207}}})}}),
 q(5942,{coords={
-[23]={{32.6,83.8}}},lvl=50,providers={{"i",15328},{"o",177544}},qgs={10926},rwp=40003,sourceQuests={5721},u=2,g={
+[23]={{32.6,83.8}}},lvl=50,providers={{"o",177544}},qgs={10926},qis={15328},rwp=40003,sourceQuests={5721},u=2,g={
 i(15855,{b=1,f=52,q=3,u=2}),
 i(15856,{b=1,f=51,q=3,u=2}),
 s(127748,15857,{b=1,f=1,q=3,u=2})}}),
 q(27391,{awp=40003,coords={
-[23]={{32.4,83.5}}},providers={{"i",15328},{"o",177544}},qgs={10926},sourceQuests={27390},g={
+[23]={{32.4,83.5}}},providers={{"o",177544}},qgs={10926},qis={15328},sourceQuests={27390},g={
 s(208450,62961,{b=1,f=7,loc=43,q=3}),
 s(208449,62960,{b=1,f=27,q=3}),
 i(62959,{b=1,f=52,q=3}),
@@ -31365,7 +31364,7 @@ s(208476,62994,{b=1,f=6,loc=44,q=2}),
 s(208475,62993,{b=1,f=5,loc=45,q=2}),
 i(62992,{b=1,f=51,q=2})}}),
 q(27527,{awp=40003,coords={
-[23]={{28.5,25.9}}},providers={{"i",61379}},qgs={45730},sourceQuests={27526},g={
+[23]={{28.5,25.9}}},qgs={45730},qis={61379},sourceQuests={27526},g={
 i(63022,{b=1,f=51,q=3}),
 s(208500,63021,{b=1,f=6,loc=44,q=3}),
 s(208499,63020,{b=1,f=5,loc=45,q=3}),
@@ -31434,7 +31433,7 @@ q(27420,{awp=40003,coords={
 [23]={{30.2,56.9}}},qgs={16135},sourceQuests={27544},g={
 qo(1,{crs={8546,8550},providers={{"i",61037},{"i",61038},{"n",45475}}})}}),
 q(5941,{coords={
-[23]={{75.6,53.8}}},lvl=50,providers={{"i",15314}},qgs={11063},rwp=40003,sourceQuests={5206},u=2}),
+[23]={{75.6,53.8}}},lvl=50,qgs={11063},qis={15314},rwp=40003,sourceQuests={5206},u=2}),
 q(6147,{coords={
 [23]={{81,78.4}}},lvl=56,qgs={11898},r=1,rwp=40003,sourceQuests={6146},u=2}),
 q(27479,{awp=40003,coords={
@@ -31521,11 +31520,11 @@ s(208455,62968,{b=1,f=7,loc=46,q=2}),
 s(208454,62967,{b=1,f=5,loc=40,q=2}),
 i(62966,{b=1,f=53,q=2})}}),
 q(7622,{c={5},coords={
-[23]={{17.6,14.1}}},cost={{"i",18665,1},{"i",18646,1}},lvl=60,providers={{"i",18659}},qgs={14494},rwp=40003,sourceQuests={7621},u=2,g={
+[23]={{17.6,14.1}}},cost={{"i",18665,1},{"i",18646,1}},lvl=60,qgs={14494},qis={18659},rwp=40003,sourceQuests={7621},u=2,g={
 s(129522,18609,{b=1,c={5},f=28,lvl=60,q=4,u=2}),
 s(129521,18608,{b=1,c={5},f=28,lvl=60,q=4,u=2})}}),
 q(27551,{awp=40003,coords={
-[23]={{29.4,19.6}}},crs={45867,45868},providers={{"i",61377},{"i",61378}},sourceQuests={27525}}),
+[23]={{29.4,19.6}}},crs={45867,45868},qis={61377},qss={61378},sourceQuests={27525}}),
 q(5721,{coords={
 [22]={{39.4,66.8}}},lvl=55,qgs={10667},rwp=40003,sourceQuests={5941},u=2,g={
 qo(1,{coords={
@@ -31590,7 +31589,7 @@ q(9211,{coords={
 [23]={{75.6,52.4}}},cost={{"i",22524,10},{"g",300000}},lvl=60,qgs={16133},repeatable=1,rwp=40003,u=2,g={
 i(22636,{b=1,lvl=55,q=3,u=2})}}),
 q(27532,{awp=40003,coords={
-[23]={{28.3,25.8},{50.5,20.2}}},description="Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",isBreadcrumb=1,nextQuests={27531},providers={{"i",61362}},qgs={45451},sourceQuests={27522}}),
+[23]={{28.3,25.8},{50.5,20.2}}},description="Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",isBreadcrumb=1,nextQuests={27531},qgs={45451},qis={61362},sourceQuests={27522}}),
 q(6133,{coords={
 [23]={{23,68.2}}},lvl=54,qgs={11878},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"n",8565}},u=2}),
@@ -31635,7 +31634,7 @@ q(27461,{awp=40003,coords={
 q(27462,{awp=40003,coords={
 [23]={{77.6,79.4}}},providers={{"o",205875}},sourceQuests={27460}}),
 q(5248,{coords={
-[23]={{48.8,17.6}}},lvl=53,providers={{"i",13347}},qgs={10304},r=2,rwp=40003,sourceQuests={5247},u=2}),
+[23]={{48.8,17.6}}},lvl=53,qgs={10304},qis={13347},r=2,rwp=40003,sourceQuests={5247},u=2}),
 q(27381,{awp=40003,coords={
 [23]={{35.3,68.9}}},qgs={45429},sourceQuests={27373},g={
 qo(1,{coords={
@@ -31647,7 +31646,7 @@ qo(2,{providers={{"n",8602}},u=2})}}),
 q(5241,{coords={
 [23]={{32.6,83.8}}},lvl=50,qgs={10926},rwp=40003,sourceQuests={5149},u=2}),
 q(27385,{awp=40003,coords={
-[23]={{32.4,83.6}}},providers={{"i",60987}},qgs={10926},sourceQuests={27384,27392}}),
+[23]={{32.4,83.6}}},qgs={10926},qis={60987},sourceQuests={27384,27392}}),
 q(27559,{awp=40003,coords={
 [23]={{50.6,20.1},{53,53.2},{61.6,42.6},{73.6,51.9}}},qgs={45400},repeatable=1,sourceQuests={27449}}),
 q(27612,{awp=40003,coords={
@@ -31754,30 +31753,30 @@ n(50947,{awp=50200,coords={
 n(10823,{coords={
 [23]={{64,12.4}}}})}),
 h(-47,{description="These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",g={
-q(9188,{cost={{"i",14104,6}},lvl=55,providers={{"i",22609}},repeatable=1,rwp=40003,u=2}),
-q(9178,{cost={{"i",12643,120}},lvl=55,providers={{"i",22600}},repeatable=1,rwp=40003,u=2}),
-q(9203,{cost={{"i",13506,1}},lvl=55,providers={{"i",22621}},repeatable=1,rwp=40003,u=2}),
-q(9197,{cost={{"i",10725,4}},lvl=55,providers={{"i",22615}},repeatable=1,rwp=40003,u=2}),
-q(9195,{cost={{"i",10646,20}},lvl=55,providers={{"i",22613}},repeatable=1,rwp=40003,u=2}),
-q(9201,{cost={{"i",13461,15}},lvl=55,providers={{"i",22620}},repeatable=1,rwp=40003,u=2}),
-q(9182,{cost={{"i",12775,3}},lvl=55,providers={{"i",22603}},repeatable=1,rwp=40003,u=2}),
-q(9179,{cost={{"i",12422,3}},lvl=55,providers={{"i",22601}},repeatable=1,rwp=40003,u=2}),
-q(9206,{cost={{"i",13757,30}},lvl=55,providers={{"i",22624}},repeatable=1,rwp=40003,u=2}),
-q(9202,{cost={{"i",13446,20}},lvl=55,providers={{"i",22618}},repeatable=1,rwp=40003,u=2}),
-q(9200,{cost={{"i",13444,10}},lvl=55,providers={{"i",22617}},repeatable=1,rwp=40003,u=2}),
-q(9205,{cost={{"i",13890,30}},lvl=55,providers={{"i",22623}},repeatable=1,rwp=40003,u=2}),
-q(9183,{cost={{"i",12417,3}},lvl=55,providers={{"i",22604}},repeatable=1,rwp=40003,u=2}),
-q(9185,{cost={{"i",15564,25}},lvl=55,providers={{"i",22606}},repeatable=1,rwp=40003,u=2}),
-q(9191,{cost={{"i",14046,8}},lvl=55,providers={{"i",22611}},repeatable=1,rwp=40003,u=2}),
-q(9190,{cost={{"i",13864,8}},lvl=55,providers={{"i",22610}},repeatable=1,rwp=40003,u=2}),
-q(9194,{cost={{"i",13858,8}},lvl=55,providers={{"i",22612}},repeatable=1,rwp=40003,u=2}),
-q(9187,{cost={{"i",15095,4}},lvl=55,providers={{"i",22608}},repeatable=1,rwp=40003,u=2}),
-q(9204,{cost={{"i",13422,40}},lvl=55,providers={{"i",22622}},repeatable=1,rwp=40003,u=2}),
-q(9196,{cost={{"i",15993,20}},lvl=55,providers={{"i",22614}},repeatable=1,rwp=40003,u=2}),
-q(9198,{cost={{"i",16000,14}},lvl=55,providers={{"i",22616}},repeatable=1,rwp=40003,u=2}),
-q(9181,{cost={{"i",12792,3}},lvl=55,providers={{"i",22602}},repeatable=1,rwp=40003,u=2}),
-q(9186,{cost={{"i",15088,9}},lvl=55,providers={{"i",22607}},repeatable=1,rwp=40003,u=2}),
-q(9184,{cost={{"i",15086,10}},lvl=55,providers={{"i",22605}},repeatable=1,rwp=40003,u=2}),
+q(9188,{cost={{"i",14104,6}},lvl=55,qss={22609},repeatable=1,rwp=40003,u=2}),
+q(9178,{cost={{"i",12643,120}},lvl=55,qss={22600},repeatable=1,rwp=40003,u=2}),
+q(9203,{cost={{"i",13506,1}},lvl=55,qss={22621},repeatable=1,rwp=40003,u=2}),
+q(9197,{cost={{"i",10725,4}},lvl=55,qss={22615},repeatable=1,rwp=40003,u=2}),
+q(9195,{cost={{"i",10646,20}},lvl=55,qss={22613},repeatable=1,rwp=40003,u=2}),
+q(9201,{cost={{"i",13461,15}},lvl=55,qss={22620},repeatable=1,rwp=40003,u=2}),
+q(9182,{cost={{"i",12775,3}},lvl=55,qss={22603},repeatable=1,rwp=40003,u=2}),
+q(9179,{cost={{"i",12422,3}},lvl=55,qss={22601},repeatable=1,rwp=40003,u=2}),
+q(9206,{cost={{"i",13757,30}},lvl=55,qss={22624},repeatable=1,rwp=40003,u=2}),
+q(9202,{cost={{"i",13446,20}},lvl=55,qss={22618},repeatable=1,rwp=40003,u=2}),
+q(9200,{cost={{"i",13444,10}},lvl=55,qss={22617},repeatable=1,rwp=40003,u=2}),
+q(9205,{cost={{"i",13890,30}},lvl=55,qss={22623},repeatable=1,rwp=40003,u=2}),
+q(9183,{cost={{"i",12417,3}},lvl=55,qss={22604},repeatable=1,rwp=40003,u=2}),
+q(9185,{cost={{"i",15564,25}},lvl=55,qss={22606},repeatable=1,rwp=40003,u=2}),
+q(9191,{cost={{"i",14046,8}},lvl=55,qss={22611},repeatable=1,rwp=40003,u=2}),
+q(9190,{cost={{"i",13864,8}},lvl=55,qss={22610},repeatable=1,rwp=40003,u=2}),
+q(9194,{cost={{"i",13858,8}},lvl=55,qss={22612},repeatable=1,rwp=40003,u=2}),
+q(9187,{cost={{"i",15095,4}},lvl=55,qss={22608},repeatable=1,rwp=40003,u=2}),
+q(9204,{cost={{"i",13422,40}},lvl=55,qss={22622},repeatable=1,rwp=40003,u=2}),
+q(9196,{cost={{"i",15993,20}},lvl=55,qss={22614},repeatable=1,rwp=40003,u=2}),
+q(9198,{cost={{"i",16000,14}},lvl=55,qss={22616},repeatable=1,rwp=40003,u=2}),
+q(9181,{cost={{"i",12792,3}},lvl=55,qss={22602},repeatable=1,rwp=40003,u=2}),
+q(9186,{cost={{"i",15088,9}},lvl=55,qss={22607},repeatable=1,rwp=40003,u=2}),
+q(9184,{cost={{"i",15086,10}},lvl=55,qss={22605},repeatable=1,rwp=40003,u=2}),
 i(22568,{b=1,q=1,rwp=40003,u=2,g={
 i(22609,{lvl=55,q=1,u=2}),
 i(22600,{lvl=55,q=1,u=2}),
@@ -31937,16 +31936,16 @@ s(117162,1161,{b=1,f=25,q=1}),
 s(120597,5579,{b=1,f=24,q=1,u=2}),
 s(117161,1159,{b=1,f=28,q=1,u=2})}}),
 q(31141,{awp=50004,c={10},coords={
-[425]={{33.5,53}}},providers={{"i",85160}},qgs={197},races={1},rwp=70003}),
+[425]={{33.5,53}}},qgs={197},qis={85160},races={1},rwp=70003}),
 q(26913,{awp=40003,c={1},coords={
 [425]={{40.9,53.8}}},qgs={911},races={1},rwp=70003,sourceQuests={3100},g={
 qo(2,{providers={{"n",44548}}})}}),
 q(3101,{c={2},coords={
-[425]={{33.5,53}}},providers={{"i",9570}},qgs={197},races={1},rwp=70003,sourceQuests={7}}),
+[425]={{33.5,53}}},qgs={197},qis={9570},races={1},rwp=70003,sourceQuests={7}}),
 q(5261,{coords={
 [37]={{48.17,42.94}}},isBreadcrumb=1,nextQuests={33},qgs={823},r=2,rwp=40003,sourceQuests={783},u=2}),
 q(3102,{c={4},coords={
-[425]={{33.5,53}}},providers={{"i",9555}},qgs={197},races={1},rwp=70003,sourceQuests={7}}),
+[425]={{33.5,53}}},qgs={197},qis={9555},races={1},rwp=70003,sourceQuests={7}}),
 q(26390,{awp=40003,coords={
 [425]={{33.5,53.1}}},qgs={197},r=2,sourceQuests={26389},g={
 qo(1,{providers={{"n",42938}}}),
@@ -31957,53 +31956,53 @@ s(271128,85575,{awp=50004,b=1,f=28,q=1}),
 s(205133,57394,{b=1,f=27,q=1,rwp=70305}),
 s(205131,57392,{b=1,f=6,loc=44,q=1,rwp=70305})}}),
 q(26910,{awp=40003,c={3},coords={
-[425]={{33.5,53}}},providers={{"i",60677}},qgs={197},races={1},rwp=70003,sourceQuests={7}}),
+[425]={{33.5,53}}},qgs={197},qis={60677},races={1},rwp=70003,sourceQuests={7}}),
 q(26391,{awp=40003,coords={
 [425]={{33.4,54.7}}},qgs={9296},r=2,sourceQuests={28817,28818,28819,28820,28821,28822,28823,29083,31145},g={
 qo(1,{providers={{"i",58362}}}),
 i(57247,{b=1,f=113,q=1}),
 s(200993,11475,{b=1,f=3,q=1})}}),
 q(28811,{awp=40003,c={4},coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={1},sourceQuests={28787},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={1},sourceQuests={28787},g={
 qo(1,{providers={{"n",50047}}}),
 s(205013,57257,{b=1,f=5,loc=43,q=1})}}),
 q(28812,{awp=40003,c={9},coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={1},sourceQuests={28788},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={1},sourceQuests={28788},g={
 qo(1,{providers={{"n",50047}}}),
 s(205012,57256,{b=1,f=4,loc=47,q=1})}}),
 q(28810,{awp=40003,c={5},coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={1},sourceQuests={28786},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={1},sourceQuests={28786},g={
 qo(1,{providers={{"n",50047}}}),
 s(205012,57256,{b=1,f=4,loc=47,q=1})}}),
 q(28813,{awp=40003,c={1},coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={1},sourceQuests={28789},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={1},sourceQuests={28789},g={
 qo(1,{providers={{"n",50047}}}),
 s(205014,57258,{b=1,f=6,loc=42,q=1})}}),
 q(28806,{awp=40003,c={3},coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={1},sourceQuests={28780},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={1},sourceQuests={28780},g={
 qo(1,{providers={{"n",50047}}})}}),
 q(28808,{awp=40003,c={8},coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={1},sourceQuests={28784},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={1},sourceQuests={28784},g={
 qo(1,{providers={{"n",50047}}}),
 s(205012,57256,{b=1,f=4,loc=47,q=1})}}),
 q(28809,{awp=40003,c={2},coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={1},sourceQuests={28785},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={1},sourceQuests={28785},g={
 qo(1,{providers={{"n",50047}}}),
 s(205014,57258,{b=1,f=6,loc=42,q=1})}}),
 q(29082,{awp=40006,coords={
-[425]={{34.8,38.3}}},providers={{"i",65733}},qgs={951},races={3,4,7,11,22,25},sourceQuests={29080},g={
+[425]={{34.8,38.3}}},qgs={951},qis={65733},races={3,4,7,11,22,25},sourceQuests={29080},g={
 qo(1,{providers={{"n",50047}}}),
 s(205013,57257,{awp=40003,b=1,f=5,loc=43,q=1}),
 s(205012,57256,{awp=40003,b=1,f=4,loc=47,q=1}),
 s(205014,57258,{awp=40003,b=1,f=6,loc=42,q=1})}}),
 q(3104,{c={8},coords={
-[425]={{33.5,53}}},providers={{"i",9571}},qgs={197},races={1},rwp=70003,sourceQuests={7}}),
+[425]={{33.5,53}}},qgs={197},qis={9571},races={1},rwp=70003,sourceQuests={7}}),
 q(3905,{coords={
-[37]={{50.7,39.3}}},lvl=2,providers={{"i",11125}},qgs={9296},r=2,rwp=40003,sourceQuests={3904},u=2,g={
+[37]={{50.7,39.3}}},lvl=2,qgs={9296},qis={11125},r=2,rwp=40003,sourceQuests={3904},u=2,g={
 s(118163,2690,{b=1,f=6,loc=45,q=1,u=2}),
 s(200993,11475,{b=1,f=3,q=1,u=2})}}),
 q(3103,{c={5},coords={
-[425]={{33.5,53}}},providers={{"i",9548}},qgs={197},races={1},rwp=70003,sourceQuests={7}}),
+[425]={{33.5,53}}},qgs={197},qis={9548},races={1},rwp=70003,sourceQuests={7}}),
 q(26919,{awp=40003,c={5},coords={
 [425]={{39.3,43.8}}},qgs={375},races={1},rwp=70003,sourceQuests={3103},g={
 qo(2,{providers={{"n",44548}}})}}),
@@ -32087,7 +32086,7 @@ q(31142,{awp=50004,c={10},coords={
 [425]={{41.2,52.1}}},qgs={63258},races={1},rwp=70003,sourceQuests={31141},g={
 qo(2,{providers={{"n",44548}}})}}),
 q(54,{coords={
-[425]={{33.5,53}}},providers={{"i",745}},qgs={197},r=2,sourceQuests={26390},g={
+[425]={{33.5,53}}},qgs={197},qis={745},r=2,sourceQuests={26390},g={
 s(205129,57390,{awp=40003,b=1,f=5,loc=42,q=1}),
 s(205128,57389,{awp=40003,b=1,f=4,loc=46,q=1}),
 s(200900,6078,{b=1,f=8,q=1}),
@@ -32099,10 +32098,10 @@ s(205135,57396,{awp=40003,b=1,f=5,loc=44,q=1}),
 i(132094),
 s(205136,57397,{awp=40003,b=1,f=6,loc=43,q=1})}}),
 q(346,{coords={
-[37]={{49.6,40.4}}},lvl=20,providers={{"i",2795}},qgs={951},r=2,rwp=40003,sourceQuests={347},u=2,g={
+[37]={{49.6,40.4}}},lvl=20,qgs={951},qis={2795},r=2,rwp=40003,sourceQuests={347},u=2,g={
 s(120945,6095,{b=1,f=4,loc=47,q=2,u=2})}}),
 q(3100,{c={1},coords={
-[425]={{33.5,53}}},providers={{"i",9542}},qgs={197},races={1},rwp=70003,sourceQuests={7}}),
+[425]={{33.5,53}}},qgs={197},qis={9542},races={1},rwp=70003,sourceQuests={7}}),
 q(21,{coords={
 [37]={{48.9,41.6}}},qgs={197},r=2,rwp=40003,sourceQuests={15},u=2,g={
 qo(1,{providers={{"n",80}},u=2}),
@@ -32110,7 +32109,7 @@ s(117785,2186,{b=1,f=5,loc=45,q=1,u=2}),
 s(118164,2691,{b=1,f=6,loc=47,q=1,u=2}),
 s(124161,11192,{b=1,f=4,loc=44,q=1,u=2})}}),
 q(3105,{c={9},coords={
-[425]={{33.5,53}}},providers={{"i",9576}},qgs={197},races={1},rwp=70003,sourceQuests={7}}),
+[425]={{33.5,53}}},qgs={197},qis={9576},races={1},rwp=70003,sourceQuests={7}}),
 q(26915,{awp=40003,c={4},coords={
 [425]={{41.1,45.3}}},qgs={915},races={1},rwp=70003,sourceQuests={3102},g={
 qo(2,{providers={{"n",44548}}})}}),
@@ -32304,11 +32303,11 @@ qo(1,{providers={{"i",13872},{"o",176793}}})}}),
 q(40,{coords={
 [37]={{42.1,67.3}}},lvl=7,qgs={241},r=2}),
 q(26393,{awp=40003,coords={
-[37]={{41.7,65.6}}},providers={{"i",58364}},qgs={514},races={1}}),
+[37]={{41.7,65.6}}},qgs={514},qis={58364},races={1}}),
 q(26150,{awp=40003,coords={
 [37]={{43.3,65.7}}},isBreadcrumb=1,nextQuests={106},qgs={253},r=2,sourceQuests={60}}),
 q(84,{coords={
-[37]={{34.5,84.3}}},lvl=5,providers={{"i",962}},qgs={246},r=2,sourceQuests={86}}),
+[37]={{34.5,84.3}}},lvl=5,qgs={246},qis={962},r=2,sourceQuests={86}}),
 q(46,{coords={
 [37]={{74,72.3}}},lvl=7,providers={{"o",203733}},r=2,g={
 qo(1,{crs={46,732},providers={{"i",780}}}),
@@ -32318,7 +32317,7 @@ s(117127,1008,{b=1,f=25,q=1,rwp=40003,u=2}),
 s(205007,57248,{awp=40003,b=1,f=26,q=2}),
 s(205242,57521,{awp=40003,b=1,f=33,q=2})}}),
 q(59,{coords={
-[37]={{74,72.2}}},lvl=7,providers={{"i",748}},qgs={261},r=2,sourceQuests={71},g={
+[37]={{74,72.2}}},lvl=7,qgs={261},qis={748},r=2,sourceQuests={71},g={
 s(117829,2237,{b=1,f=5,loc=46,q=2}),
 s(205241,57520,{awp=40003,b=1,f=6,loc=43,q=2}),
 s(200762,1171,{b=1,f=4,loc=42,q=2})}}),
@@ -32326,7 +32325,7 @@ q(112,{coords={
 [37]={{43.3,65.7}}},lvl=5,qgs={253},r=2,sourceQuests={107},g={
 qo(1,{crs={285,735},providers={{"i",1256}}})}}),
 q(26394,{awp=40003,coords={
-[37]={{41.7,64.6}}},maps={84},providers={{"i",58364}},qgs={42983},races={1},sourceQuests={26393}}),
+[37]={{41.7,64.6}}},maps={84},qgs={42983},qis={58364},races={1},sourceQuests={26393}}),
 q(1667,{c={1},coords={
 [37]={{84.6,69.4}}},lvl=10,qgs={294},r=2,rwp=40003,sourceQuests={1666},u=2,g={
 qo(1,{coords={
@@ -32379,7 +32378,7 @@ s(205137,57398,{awp=40003,b=1,f=4,loc=42,q=1}),
 i(1434,{b=1,f=55,q=1,rwp=40003,u=2}),
 s(205138,57399,{awp=40003,b=1,f=6,loc=45,q=1})}}),
 q(32618,{awp=50200,description="This quest is available to Humans upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=10,races={1},rwp=100105}),
-q(14079,{awp=30300,description="The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46875}},races={1},rwp=40001,u=2}),
+q(14079,{awp=30300,description="The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46875},races={1},rwp=40001,u=2}),
 q(85,{coords={
 [37]={{34.5,84.3}}},lvl=5,qgs={246},r=2}),
 q(147,{coords={
@@ -32391,7 +32390,7 @@ s(205243,57522,{awp=40003,b=1,f=5,loc=44,q=2}),
 s(117267,1360,{b=1,f=6,loc=44,q=2}),
 i(57251,{awp=40003,b=1,f=113,q=1})}}),
 q(107,{coords={
-[37]={{34.9,83.9}}},lvl=5,providers={{"i",1252}},qgs={248},r=2,sourceQuests={111}}),
+[37]={{34.9,83.9}}},lvl=5,qgs={248},qis={1252},r=2,sourceQuests={111}}),
 q(7678,{coords={
 [37]={{84,65.4}}},cost={{"i",12354,1}},description="If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",qgs={384},r=2,repeatable=1,rwp=10400,sym={{"select","itemID",18777,18776,18778}},u=2}),
 q(86,{coords={
@@ -32412,7 +32411,7 @@ s(205244,57523,{awp=40003,b=1,f=4,loc=47,q=2}),
 s(205245,57524,{awp=40003,b=1,f=5,loc=43,q=2}),
 s(205246,57525,{awp=40003,b=1,f=6,loc=42,q=2})}}),
 q(71,{coords={
-[37]={{79.8,55.5}}},lvl=7,providers={{"i",735},{"o",56}},r=2,sourceQuests={45}}),
+[37]={{79.8,55.5}}},lvl=7,providers={{"o",56}},qis={735},r=2,sourceQuests={45}}),
 q(11,{coords={
 [37]={{24.2,74.5}}},lvl=6,qgs={963},r=2,sourceQuests={239},g={
 qo(1,{crs={97,478},providers={{"i",782}}}),
@@ -32421,18 +32420,18 @@ s(117830,2238,{b=1,f=4,loc=46,q=2}),
 s(205248,57527,{awp=40003,b=1,f=6,loc=47,q=2}),
 s(205247,57526,{awp=40003,b=1,f=5,loc=47,q=2})}}),
 q(2205,{c={4},coords={
-[37]={{43.9,65.9}}},isBreadcrumb=1,lvl=10,nextQuests={2206,2300},providers={{"i",7674}},qgs={917},r=2,rwp=40003,u=2}),
+[37]={{43.9,65.9}}},isBreadcrumb=1,lvl=10,nextQuests={2206,2300},qgs={917},qis={7674},r=2,rwp=40003,u=2}),
 q(61,{coords={
-[37]={{43.2,65.8}}},lvl=3,maps={84},providers={{"i",957}},qgs={253},r=2,rwp=40003,sourceQuests={47},u=2}),
+[37]={{43.2,65.8}}},lvl=3,maps={84},qgs={253},qis={957},r=2,rwp=40003,sourceQuests={47},u=2}),
 q(2300,{c={4},coords={
 [37]={{43.8,65.8}}},isBreadcrumb=1,lvl=16,nextQuests={2281},qgs={917},r=2,rwp=40003,sourceQuests={2205},u=2}),
 q(111,{coords={
 [37]={{29.8,86}}},lvl=5,qgs={252},r=2,sourceQuests={106}}),
 q(1860,{altQuests={1879},c={8},coords={
 [37]={{43.3,66.2}}},isBreadcrumb=1,lvl=10,nextQuests={1861},qgs={328},r=2,rwp=40003,u=2}),
-q(123,{crs={13159},lvl=7,providers={{"i",1307},{"i",2223}},r=2}),
+q(123,{lvl=7,qis={2223},qss={1307},r=2}),
 q(114,{coords={
-[37]={{43.3,65.7}}},lvl=5,providers={{"i",1257}},qgs={253},r=2,sourceQuests={112}}),
+[37]={{43.3,65.7}}},lvl=5,qgs={253},qis={1257},r=2,sourceQuests={112}}),
 q(62,{coords={
 [37]={{42.1,65.9}}},lvl=4,qgs={240},r=2}),
 q(76,{coords={
@@ -32453,7 +32452,7 @@ q(239,{coords={
 q(7677,{coords={
 [37]={{84,65.4}}},cost={{"i",12353,1}},description="If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",qgs={384},r=2,repeatable=1,rwp=10400,sym={{"select","itemID",18777,18776,18778}},u=2}),
 q(106,{coords={
-[37]={{43.2,89.6}}},lvl=5,providers={{"i",1208}},qgs={251},r=2,sourceQuests={26150}})}),
+[37]={{43.2,89.6}}},lvl=5,qgs={251},qis={1208},r=2,sourceQuests={26150}})}),
 h(-46,{
 n(51077,{awp=50100,coords={
 [37]={{81.6,85.2},{83,82.8},{83.8,85}}}}),
@@ -32545,6 +32544,7 @@ r(7630,{isLimited=1,itemID=6270,learnedAt=55,q=1,requireSkill=197}),
 r(7751,{itemID=6325,q=1,requireSkill=185}),
 r(7753,{itemID=6328,learnedAt=50,q=1,requireSkill=185})}})}),
 h(-63,{
+i(1307,{b=1,crs={13159},lvl=7,q=1}),
 s(116992,778,{crs={476},f=21,lvl=2,q=1,rwp=40003,u=2}),
 s(117289,1389,{awp=100107,coords={
 [37]={{41.6,80},{61.4,50.4},{64.6,56.4}}},crs={40},f=23,lvl=2,q=1,rwp=40003,u=2}),
@@ -32774,12 +32774,12 @@ q(8473,{coords={
 [94]={{34,80}}},lvl=6,qgs={15398},r=1,sourceQuests={9258},u=17,g={
 qo(1,{providers={{"n",15637}},u=17})}}),
 q(8891,{coords={
-[94]={{69.2,52.1}}},lvl=8,providers={{"i",21783},{"o",181011}},r=1,u=17}),
+[94]={{69.2,52.1}}},lvl=8,providers={{"o",181011}},qis={21783},r=1,u=17}),
 q(8476,{coords={
 [94]={{60.3,62.7}}},lvl=7,qgs={15399},r=1,sourceQuests={9359},u=17,g={
 qo(1,{providers={{"n",15643}},u=17}),
 qo(2,{providers={{"n",15641}},u=17})}}),
-q(9360,{lvl=8,providers={{"i",23249}},r=1,u=17}),
+q(9360,{lvl=8,qss={23249},r=1,u=17}),
 q(8486,{coords={
 [94]={{36.6,57.4}}},lvl=4,qgs={15401},r=1,sourceQuests={9119},u=17,g={
 qo(1,{providers={{"n",15648}},u=17}),
@@ -32789,7 +32789,7 @@ s(133767,23371,{b=1,f=28,q=1,u=17})}}),
 q(9673,{c={3},coords={
 [94]={{60.3,62.8}}},lvl=10,maps={110},qgs={15399},races={10},rwp=40003,sourceQuests={9485},u=2,g={
 s(134514,24136,{b=1,c={3},f=32,q=2,u=2})}}),
-q(8887,{lvl=5,providers={{"i",21776}},r=1,u=17}),
+q(8887,{lvl=5,qss={21776},r=1,u=17}),
 q(8894,{coords={
 [94]={{68.7,46.9}}},lvl=8,qgs={15969},r=1,sourceQuests={9394},u=17,g={
 qo(1,{providers={{"n",15966}},u=17}),
@@ -32799,7 +32799,7 @@ q(9489,{c={5},coords={
 qo(1,{providers={{"n",15938}},u=2}),
 s(134302,23924,{b=1,c={5},f=4,loc=42,q=2,u=2})}}),
 q(8350,{coords={
-[94]={{40.4,32.2}}},lvl=4,providers={{"i",20804}},qgs={15301},r=1,sourceQuests={9705},u=17}),
+[94]={{40.4,32.2}}},lvl=4,qgs={15301},qis={20804},r=1,sourceQuests={9705},u=17}),
 q(8487,{coords={
 [94]={{54.2,70.9}}},lvl=7,qgs={15402},r=1,sourceQuests={9254},u=17,g={
 qo(1,{providers={{"i",20771},{"o",180921}},u=17})}}),
@@ -32819,9 +32819,9 @@ q(9252,{coords={
 qo(1,{providers={{"n",15658}},u=17}),
 qo(2,{providers={{"n",15657}},u=17})}}),
 q(8895,{coords={
-[94]={{47.2,46.3}}},lvl=4,providers={{"i",21807}},qgs={15418},r=1,sourceQuests={8472},u=17}),
+[94]={{47.2,46.3}}},lvl=4,qgs={15418},qis={21807},r=1,sourceQuests={8472},u=17}),
 q(9148,{coords={
-[94]={{48.9,88.9}}},lvl=9,providers={{"i",22717}},qgs={16183},r=1,sourceQuests={9147},u=17,g={
+[94]={{48.9,88.9}}},lvl=9,qgs={16183},qis={22717},r=1,sourceQuests={9147},u=17,g={
 s(138494,28148,{b=1,f=6,loc=43,q=2,u=17}),
 s(138492,28146,{b=1,f=4,loc=43,q=2,u=17}),
 s(138493,28147,{b=1,f=5,loc=43,q=2,u=17}),
@@ -32838,16 +32838,16 @@ q(8884,{coords={
 [94]={{30.2,58.3}}},lvl=5,qgs={15920},r=1,u=17,g={
 qo(1,{crs={15668,15669,15670,15937,15950},providers={{"i",21757}},u=17})}}),
 q(9133,{coords={
-[94]={{43.9,69.9}}},lvl=5,providers={{"i",22549}},qgs={44036},races={10},sourceQuests={9130},u=17}),
+[94]={{43.9,69.9}}},lvl=5,qgs={44036},qis={22549},races={10},sourceQuests={9130},u=17}),
 q(9130,{coords={
-[94]={{43.6,71.5}}},lvl=5,providers={{"i",22549}},qgs={16261},races={10},u=17}),
+[94]={{43.6,71.5}}},lvl=5,qgs={16261},qis={22549},races={10},u=17}),
 q(8886,{coords={
 [94]={{36.3,66.6}}},lvl=5,qgs={15921},r=1,u=17,g={
 qo(1,{crs={15668,15669,15670,15937,15950},providers={{"i",21771},{"o",180917}},u=17})}}),
-q(8482,{lvl=4,providers={{"i",20765}},r=1,u=17}),
+q(8482,{lvl=4,qss={20765},r=1,u=17}),
 q(32668,{awp=50200,coords={
 [94]={{61.2,54}}},description="This quest is automatically offered to Blood Elves upon reaching the specified level.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qgs={16280},races={10},rwp=100105,u=17}),
-q(14081,{awp=30300,description="The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46882}},races={10},rwp=50200,u=2}),
+q(14081,{awp=30300,description="The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46882},races={10},rwp=50200,u=2}),
 q(8480,{coords={
 [94]={{36.3,66.7}}},lvl=5,qgs={15404},r=1,u=17,g={
 qo(1,{coords={
@@ -32864,9 +32864,9 @@ q(9119,{coords={
 [94]={{44.6,53.1}}},lvl=4,qgs={15405},r=1,sourceQuests={8895},u=17}),
 q(9144,{coords={
 [94]={{44,70.7}}},isBreadcrumb=1,lvl=9,nextQuests={9147},qgs={16210},r=1,u=17}),
-q(8474,{lvl=7,providers={{"i",23228}},r=1,u=17}),
+q(8474,{lvl=7,qss={23228},r=1,u=17}),
 q(9705,{coords={
-[94]={{42,35.6}}},lvl=4,providers={{"i",20804}},qgs={17849},r=1,sourceQuests={9704},u=17}),
+[94]={{42,35.6}}},lvl=4,qgs={17849},qis={20804},r=1,sourceQuests={9704},u=17}),
 q(8491,{coords={
 [94]={{44.7,69.6}}},lvl=4,qgs={15417},r=1,u=17,g={
 qo(1,{crs={15651,15652},providers={{"i",20772}},u=17}),
@@ -32886,9 +32886,9 @@ qo(1,{coords={
 s(122941,9513,{b=1,c={8},f=28,q=2,u=17}),
 s(122000,7508,{b=1,c={8},f=1,q=2,u=17})}}),
 q(9255,{coords={
-[94]={{54.2,70.9}}},lvl=7,providers={{"i",22735}},qgs={15402},r=1,sourceQuests={8488},u=17}),
+[94]={{54.2,70.9}}},lvl=7,qgs={15402},qis={22735},r=1,sourceQuests={8488},u=17}),
 q(9135,{coords={
-[94]={{54.3,50.7}}},lvl=5,providers={{"i",22550}},qgs={16192},races={10},sourceQuests={9134},u=17}),
+[94]={{54.3,50.7}}},lvl=5,qgs={16192},qis={22550},races={10},sourceQuests={9134},u=17}),
 q(9691,{c={2},coords={
 [94]={{42,28}}},lvl=20,qgs={17807},races={10},rwp=40003,sourceQuests={9686},u=2}),
 q(9035,{coords={
@@ -32920,7 +32920,7 @@ qo(2,{coords={
 [94]={{45.2,56.4}}},crs={15941},providers={{"i",22473}},u=17}),
 i(22976,{b=1,f=113,q=1,u=17})}}),
 q(9064,{coords={
-[94]={{44.8,61}}},lvl=4,providers={{"i",22414}},qgs={15945},r=1,sourceQuests={9062},u=17}),
+[94]={{44.8,61}}},lvl=4,qgs={15945},qis={22414},r=1,sourceQuests={9062},u=17}),
 q(9484,{c={3},coords={
 [94]={{60.2,62.8}}},lvl=10,qgs={15399},races={10},rwp=40003,sourceQuests={9617},u=2,g={
 qo(1,{providers={{"i",23697},{"n",15650}},u=2})}}),
@@ -32999,7 +32999,7 @@ s(133666,23267,{b=1,f=4,loc=47,q=1,u=17})}}),
 q(9394,{coords={
 [94]={{67.8,56.5}}},isBreadcrumb=1,lvl=8,nextQuests={8894},qgs={15924},r=1,u=17}),
 q(10166,{coords={
-[94]={{34,80}}},lvl=7,providers={{"i",28209}},qgs={15398},r=1,sourceQuests={8474},u=17}),
+[94]={{34,80}}},lvl=7,qgs={15398},qis={28209},r=1,sourceQuests={8474},u=17}),
 q(8890,{coords={
 [94]={{67.8,56.5}}},lvl=8,qgs={15924},r=1,sourceQuests={8889},u=17,g={
 s(201242,23399,{b=1,f=4,loc=42,q=2,u=17})}}),
@@ -33270,7 +33270,7 @@ q(9143,{coords={
 [95]={{69.3,15.1}}},lvl=9,qgs={16219},r=1,sourceQuests={9145},u=17,g={
 qo(1,{crs={16340,16341},providers={{"i",22639}},u=17})}}),
 q(9166,{coords={
-[95]={{44.8,32.5}}},lvl=11,providers={{"i",22594}},qgs={16231},r=1,sourceQuests={9163},u=17}),
+[95]={{44.8,32.5}}},lvl=11,qgs={16231},qis={22594},r=1,sourceQuests={9163},u=17}),
 q(9155,{coords={
 [95]={{46,33.5}}},lvl=10,qgs={16200},r=1,sourceQuests={9138},u=17,g={
 qo(1,{providers={{"n",16301}},u=17}),
@@ -33287,7 +33287,7 @@ q(9157,{coords={
 qo(1,{coords={
 [95]={{71.6,22.3}}},providers={{"i",22674},{"o",181151}},u=17})}}),
 q(9811,{coords={
-[95]={{55,48.8}}},lvl=15,maps={110},providers={{"i",22653}},qgs={16239},races={2,5,6,8,9,26},sourceQuests={9167},u=17}),
+[95]={{55,48.8}}},lvl=15,maps={110},qgs={16239},qis={22653},races={2,5,6,8,9,26},sourceQuests={9167},u=17}),
 q(9139,{coords={
 [95]={{46.3,28.3}}},lvl=9,qgs={16197},r=1,sourceQuests={9138},u=17,g={
 qo(1,{providers={{"n",16325}},u=17}),
@@ -33303,9 +33303,9 @@ i(23717,{f=52,q=1,u=2})}}),
 q(9145,{coords={
 [95]={{45.4,32.4}}},isBreadcrumb=1,lvl=9,minReputation={922,3000},nextQuests={9143},qgs={16213},r=1,sourceQuests={9327,9329},u=17}),
 q(9328,{coords={
-[95]={{55,48.8}}},lvl=15,maps={110},providers={{"i",22653}},qgs={16239},races={10},sourceQuests={9167},u=17}),
+[95]={{55,48.8}}},lvl=15,maps={110},qgs={16239},qis={22653},races={10},sourceQuests={9167},u=17}),
 q(9162,{coords={
-[95]={{79.6,17.5}}},lvl=15,providers={{"i",22706},{"o",181150}},r=1,sourceQuests={9161},u=17}),
+[95]={{79.6,17.5}}},lvl=15,providers={{"o",181150}},qis={22706},r=1,sourceQuests={9161},u=17}),
 q(9163,{coords={
 [95]={{44.8,32.5}}},lvl=11,qgs={16231},r=1,sourceQuests={9160},u=17,g={
 qo(1,{coords={
@@ -33326,9 +33326,9 @@ qo(1,{providers={{"n",16330}},u=17}),
 qo(2,{coords={
 [95]={{38,14.4}}},u=17})}}),
 q(9177,{coords={
-[95]={{44.7,32.4}}},lvl=15,maps={998},providers={{"i",22627}},qgs={16252},races={2,5,6,8,9,26},sourceQuests={9175},u=17}),
+[95]={{44.7,32.4}}},lvl=15,maps={998},qgs={16252},qis={22627},races={2,5,6,8,9,26},sourceQuests={9175},u=17}),
 q(9180,{coords={
-[95]={{44.7,32.4}}},lvl=15,maps={998},providers={{"i",22627}},qgs={16252},races={10},sourceQuests={9175},u=17}),
+[95]={{44.7,32.4}}},lvl=15,maps={998},qgs={16252},qis={22627},races={10},sourceQuests={9175},u=17}),
 q(9217,{coords={
 [95]={{48.9,31.3}}},cost={{"i",22641,10}},lvl=15,qgs={16205},r=1,repeatable=1,sourceQuests={9216},u=17,g={
 i(22779,{b=1,f=55,q=1,u=17})}}),
@@ -33341,7 +33341,7 @@ s(133801,23405,{b=1,f=5,loc=42,q=2,u=17}),
 s(138490,28144,{b=1,f=4,loc=44,q=2,u=17}),
 s(138499,28153,{b=1,f=8,q=2,u=17})}}),
 q(9172,{coords={
-[95]={{71.9,32.6}}},lvl=15,providers={{"i",22706}},qgs={16203},r=1,sourceQuests={9162},u=17,g={
+[95]={{71.9,32.6}}},lvl=15,qgs={16203},qis={22706},r=1,sourceQuests={9162},u=17,g={
 s(138500,28154,{b=1,f=4,loc=46,q=2,u=17}),
 s(138503,28157,{b=1,f=5,loc=42,q=2,u=17}),
 s(138507,28161,{b=1,f=6,loc=46,q=2,u=17})}}),
@@ -33352,7 +33352,7 @@ qo(1,{coords={
 qo(2,{coords={
 [95]={{16.2,57.4}}},providers={{"n",16314}},u=17})}}),
 q(9618,{awp=30300,c={4},coords={
-[95]={{33,11.2}}},lvl=10,maps={110},providers={{"i",23919}},qgs={17224},races={10},rwp=40003,sourceQuests={9460},u=2,g={
+[95]={{33,11.2}}},lvl=10,maps={110},qgs={17224},qis={23919},races={10},rwp=40003,sourceQuests={9460},u=2,g={
 s(121842,7298,{b=1,c={4},f=20,q=2,u=2})}}),
 q(9758,{coords={
 [95]={{44.7,32.4}}},lvl=9,qgs={16252},r=1,sourceQuests={9327,9329},u=17}),
@@ -33386,7 +33386,7 @@ q(9327,{coords={
 [95]={{46.5,28.4}}},lvl=9,qgs={16197},races={10},sourceQuests={28560},u=17}),
 q(9329,{coords={
 [95]={{46.5,28.4}}},lvl=9,qgs={16197},races={2,5,6,8,9,26},sourceQuests={28560},u=17}),
-q(9175,{lvl=15,providers={{"i",22597}},r=1,u=17}),
+q(9175,{lvl=15,qss={22597},r=1,u=17}),
 q(9149,{coords={
 [95]={{47.6,34.8}}},lvl=10,qgs={16198},r=1,sourceQuests={9327,9329},u=17,g={
 qo(1,{coords={
@@ -33546,7 +33546,7 @@ q(14272,{c={4},coords={
 [202]={{71.43,65.78}}},qgs={35871},races={22},rwp=50004,sourceQuests={14269},u=2,g={
 qo(1,{providers={{"n",35118}},u=2})}}),
 q(14204,{coords={
-[202]={{56.87,81.41}}},providers={{"i",48707}},qgs={35378},races={22},sourceQuests={14159},g={
+[202]={{56.87,81.41}}},qgs={35378},qis={48707},races={22},sourceQuests={14159},g={
 qo(1,{providers={{"n",35463}}}),
 s(203589,54985,{b=1,f=24,q=1}),
 s(203590,54986,{b=1,f=33,q=1}),
@@ -33556,7 +33556,7 @@ q(14281,{c={8},coords={
 [202]={{68.01,64.68}}},qgs={35872},races={22},rwp=50004,sourceQuests={14277},u=2,g={
 qo(1,{providers={{"n",35118}},u=2})}}),
 q(24678,{coords={
-[202]={{32.37,57.01}}},providers={{"i",50220}},qgs={38539},races={22},sourceQuests={24920}}),
+[202]={{32.37,57.01}}},qgs={38539},qis={50220},races={22},sourceQuests={24920}}),
 q(14222,{coords={
 [202]={{48.93,52.79}}},qgs={35566},races={22},sourceQuests={14221},g={
 qo(1,{providers={{"n",35627}}})}}),
@@ -33649,7 +33649,7 @@ q(24627,{coords={
 [179]={{68.69,73.26}}},qgs={37195},races={22},sourceQuests={24617},g={
 qo(1,{providers={{"n",37757}}})}}),
 q(24592,{coords={
-[179]={{72.73,80.04}}},providers={{"i",50218}},qgs={37874},races={22},sourceQuests={24672},g={
+[179]={{72.73,80.04}}},qgs={37874},qis={50218},races={22},sourceQuests={24672},g={
 qo(1,{providers={{"n",37733},{"n",37735}}}),
 s(203607,55003,{b=1,f=3,q=2}),
 s(203606,55002,{b=1,f=5,loc=47,q=2}),
@@ -33715,7 +33715,7 @@ q(24675,{coords={
 [179]={{70.66,39.71}}},qgs={38143},races={22},sourceQuests={14466},g={
 qo(1,{crs={37786},providers={{"i",50219}}})}}),
 q(14386,{coords={
-[179]={{28.97,63.93}}},providers={{"i",49240}},qgs={36290},races={22},sourceQuests={14368,14369,14382},g={
+[179]={{28.97,63.93}}},qgs={36290},qis={49240},races={22},sourceQuests={14368,14369,14382},g={
 qo(1,{coords={
 [179]={{23.2,67.2}}},providers={{"n",36312}}}),
 s(203611,55007,{b=1,f=5,loc=42,q=1}),
@@ -33813,7 +33813,7 @@ s(203599,54995,{b=1,f=6,loc=42,q=2})}}),
 q(24617,{coords={
 [179]={{63.35,82.92}}},qgs={37822},races={22},sourceQuests={24616}}),
 q(24646,{coords={
-[179]={{68.69,73.26}}},providers={{"i",50134}},qgs={37195},races={22},sourceQuests={24627},g={
+[179]={{68.69,73.26}}},qgs={37195},qis={50134},races={22},sourceQuests={24627},g={
 qo(1,{coords={
 [179]={{57.6,75.7}}},providers={{"i",50086},{"o",201939}}})}}),
 q(14367,{coords={
@@ -34001,7 +34001,7 @@ q(28329,{awp=40001,coords={
 [25]={{48.8,71.2}}},qgs={48319},r=1,g={
 qo(1,{providers={{"n",48319}}})}}),
 q(522,{coords={
-[25]={{50.8,58.8}}},crs={2434},lvl=30,providers={{"i",3668}},r=2,rwp=40003,u=2}),
+[25]={{50.8,58.8}}},crs={2434},lvl=30,qss={3668},r=2,rwp=40003,u=2}),
 q(523,{coords={
 [25]={{48.2,59.4}}},lvl=30,qgs={2276},r=2,rwp=40003,sourceQuests={522},u=2,g={
 qo(1,{coords={
@@ -34049,13 +34049,13 @@ qo(3,{providers={{"n",2346}},u=2}),
 qo(4,{coords={
 [25]={{72.6,80}}},providers={{"n",2304}},u=2})}}),
 q(550,{coords={
-[25]={{62.32,20.33}}},lvl=19,maps={998},providers={{"i",3701}},qgs={2215},r=1,rwp=40003,sourceQuests={541},u=2,g={
+[25]={{62.32,20.33}}},lvl=19,maps={998},qgs={2215},qis={3701},r=1,rwp=40003,sourceQuests={541},u=2,g={
 s(119051,3761,{b=1,f=8,q=2,u=2}),
 s(119105,3822,{b=1,f=26,q=2,u=2}),
 s(121094,6282,{b=1,f=4,loc=46,q=2,u=2}),
 i(3760,{b=1,f=52,q=2,u=2})}}),
 q(14351,{awp=30300,coords={
-[25]={{62.32,20.33}}},lvl=19,maps={998},providers={{"i",3701}},qgs={2215},r=1,rwp=40003,sourceQuests={541},u=2,g={
+[25]={{62.32,20.33}}},lvl=19,maps={998},qgs={2215},qis={3701},r=1,rwp=40003,sourceQuests={541},u=2,g={
 s(119051,3761,{b=1,f=8,q=2,u=2}),
 s(119105,3822,{b=1,f=26,q=2,u=2}),
 s(121094,6282,{b=1,f=4,loc=46,q=2,u=2}),
@@ -34111,7 +34111,7 @@ q(28538,{awp=40003,coords={
 [25]={{57.2,46.3}}},qgs={2278},r=1,sourceQuests={28506},g={
 qo(1,{providers={{"i",64445},{"n",48741},{"n",48742}}})}}),
 q(1712,{c={1},coords={
-[1416]={{80.4,66.8}}},cost={{"i",3357,8}},lvl=30,maps={14,224},providers={{"i",6929}},qgs={6176},rwp=40003,sourceQuests={1791},u=2,g={
+[1416]={{80.4,66.8}}},cost={{"i",3357,8}},lvl=30,maps={14,224},qgs={6176},qis={6929},rwp=40003,sourceQuests={1791},u=2,g={
 qo(2,{crs={587,588,595,597,660,671,694,697,699,701,702},providers={{"i",3901}},u=2}),
 q(1714,{c={1},coords={
 [1416]={{80.4,66.8}}},cost={{"i",4480,8},{"i",4481,8},{"i",4479,8}},lvl=30,qgs={6176},repeatable=1,sourceQuests={1791},u=2,g={
@@ -34193,9 +34193,9 @@ q(509,{coords={
 qo(1,{coords={
 [25]={{64.2,62.5}}},providers={{"i",3502},{"o",1723}},u=2})}}),
 q(513,{coords={
-[25]={{61.45,19.05}}},lvl=24,maps={998},providers={{"i",3506}},qgs={2216},r=1,rwp=40003,sourceQuests={509},u=2}),
+[25]={{61.45,19.05}}},lvl=24,maps={998},qgs={2216},qis={3506},r=1,rwp=40003,sourceQuests={509},u=2}),
 q(515,{coords={
-[998]={{48.89,69.21}}},cost={{"i",3388,1}},lvl=24,providers={{"i",3508}},qgs={2055},r=1,rwp=40003,sourceQuests={513},u=2,g={
+[998]={{48.89,69.21}}},cost={{"i",3388,1}},lvl=24,qgs={2055},qis={3508},r=1,rwp=40003,sourceQuests={513},u=2,g={
 qo(2,{crs={2368,2369,2370,2371,14277},providers={{"i",3509}},u=2}),
 qo(3,{crs={2374,2375,2376,2377,14276},providers={{"i",3510}},u=2}),
 s(119039,3749,{b=1,f=3,q=2,u=2}),
@@ -34205,7 +34205,7 @@ q(517,{coords={
 qo(1,{coords={
 [25]={{72.7,80}}},providers={{"i",3517},{"o",1727}},u=2})}}),
 q(524,{coords={
-[25]={{61.45,19.05}}},lvl=24,providers={{"i",3520},{"o",1728}},qgs={2216},r=1,rwp=40003,sourceQuests={517},u=2}),
+[25]={{61.45,19.05}}},lvl=24,providers={{"o",1728}},qgs={2216},qis={3520},r=1,rwp=40003,sourceQuests={517},u=2}),
 q(501,{coords={
 [25]={{61.45,19.05}}},lvl=21,qgs={2216},r=1,rwp=40003,u=2,g={
 qo(1,{crs={2384,2385,2406,2407},providers={{"i",3496}},u=2}),
@@ -34214,18 +34214,18 @@ s(119032,3741,{b=1,f=5,loc=47,q=2,u=2}),
 s(121290,6482,{b=1,f=4,loc=47,q=2,u=2}),
 r(3398,{itemID=3735,learnedAt=125,q=1,requireSkill=185,u=2})}}),
 q(502,{coords={
-[25]={{61.45,19.05}}},lvl=21,providers={{"i",3497}},qgs={2216},r=1,rwp=40003,sourceQuests={501},u=2}),
+[25]={{61.45,19.05}}},lvl=21,qgs={2216},qis={3497},r=1,rwp=40003,sourceQuests={501},u=2}),
 q(496,{coords={
 [25]={{61.45,19.05}}},lvl=19,maps={1416},qgs={2216},r=1,rwp=40003,u=2,g={
 qo(1,{crs={2351,2354,2356,14280},providers={{"i",3476}},u=2}),
 qo(2,{crs={2348,2349,2350,14279},providers={{"i",3477}},u=2})}}),
 q(499,{coords={
-[25]={{61.45,19.05}}},lvl=19,providers={{"i",3495}},qgs={2216},r=1,rwp=40003,sourceQuests={496},u=2}),
+[25]={{61.45,19.05}}},lvl=19,qgs={2216},qis={3495},r=1,rwp=40003,sourceQuests={496},u=2}),
 q(8235,{c={4},coords={
 [76]={{29.6,40.6}}},lvl=50,qgs={8379},rwp=40003,sourceQuests={8234},u=2,g={
 qo(1,{crs={8766},providers={{"i",20023}},u=2})}}),
 q(511,{coords={
-[1416]={{58.3,68}}},lvl=30,providers={{"i",3521},{"o",1738},{"o",1739},{"o",1740}},r=2,rwp=40003,u=2}),
+[1416]={{58.3,68}}},lvl=30,providers={{"o",1738},{"o",1739},{"o",1740}},qis={3521},r=2,rwp=40003,u=2}),
 q(28634,{awp=40003,coords={
 [25]={{60,63.6}}},qgs={49201},r=1,sourceQuests={28620},g={
 qo(1,{providers={{"n",49245}}})}}),
@@ -34233,7 +34233,7 @@ q(559,{coords={
 [25]={{51.4,58.4}}},lvl=25,qgs={2228},r=2,rwp=40003,sourceQuests={536},u=2,g={
 qo(1,{crs={2374,2375,2376,2377,14276},description="Running joke is that since all adventurers take from the Murlocs is their heads, that's why the drop rate is so low - there's a bunch of headless murlocs running around!",providers={{"i",3716}},u=2})}}),
 q(560,{coords={
-[25]={{51.4,58.4}}},lvl=25,providers={{"i",3717}},qgs={2228},r=2,rwp=40003,sourceQuests={559},u=2}),
+[25]={{51.4,58.4}}},lvl=25,qgs={2228},qis={3717},r=2,rwp=40003,sourceQuests={559},u=2}),
 q(561,{coords={
 [25]={{49.5,58.6}}},lvl=25,qgs={2263},r=2,rwp=40003,sourceQuests={560},u=2}),
 q(28617,{awp=40001,coords={
@@ -34242,14 +34242,14 @@ q(28199,{awp=40001,coords={
 [25]={{36.3,60.2}}},qgs={47899},r=1,sourceQuests={28192},g={
 qo(1,{crs={47859,47861},providers={{"i",63254}}})}}),
 q(510,{coords={
-[1416]={{58.3,68}}},lvl=26,providers={{"i",3718},{"o",1738},{"o",1739},{"o",1740}},r=2,rwp=40003,u=2}),
+[1416]={{58.3,68}}},lvl=26,providers={{"o",1738},{"o",1739},{"o",1740}},qis={3718},r=2,rwp=40003,u=2}),
 q(28209,{awp=40001,coords={
 [25]={{40.3,59.3}}},qgs={47900},r=1,sourceQuests={28206},g={
 qo(1,{crs={48017},providers={{"i",63281}}}),
 s(209999,65713,{b=1,f=8,q=2}),
 s(209960,65673,{b=1,f=5,loc=42,q=2})}}),
 q(525,{coords={
-[87]={{74.4,12}}},lvl=30,providers={{"i",3518}},qgs={1356},r=2,rwp=40003,sourceQuests={514},u=2}),
+[87]={{74.4,12}}},lvl=30,qgs={1356},qis={3518},r=2,rwp=40003,sourceQuests={514},u=2}),
 q(28744,{awp=40001,coords={
 [25]={{33.5,49.3}}},qgs={49687},sourceQuests={28617}}),
 q(28114,{awp=40001,coords={
@@ -34328,7 +34328,7 @@ qo(2,{coords={
 qo(3,{coords={
 [25]={{44,50.6}}},providers={{"n",48924}}})}}),
 q(1065,{coords={
-[88]={{22.85,20.9}}},lvl=13,providers={{"i",5628}},qgs={3419},r=1,rwp=40003,sourceQuests={1064},u=2}),
+[88]={{22.85,20.9}}},lvl=13,qgs={3419},qis={5628},r=1,rwp=40003,sourceQuests={1064},u=2}),
 q(8249,{coords={
 [25]={{71.4,45}}},cost={{"i",16885,5}},lvl=50,maxReputation={349,42000},qgs={7323},repeatable=1,g={
 i(20086,{awp=11101,b=1,q=2,rwp=20001,u=2}),
@@ -34348,8 +34348,8 @@ s(209976,65689,{awp=40003,b=1,f=27,q=2}),
 s(209953,65666,{awp=40003,b=1,f=5,loc=46,q=2}),
 p(291,{awp=40003,b=1,itemID=66067,npcID=51090,q=1,spellID=93823})}}),
 q(514,{coords={
-[25]={{50.4,57}}},lvl=30,providers={{"i",3521}},qgs={2277},r=2,rwp=40003,sourceQuests={511},u=2}),
-q(27480,{awp=40003,crs={45728},description="Must complete part of the Silverpine Forest questline for the quest item to drop.",providers={{"i",61310}},r=1,sourceQuests={27483},g={
+[25]={{50.4,57}}},lvl=30,qgs={2277},qis={3521},r=2,rwp=40003,sourceQuests={511},u=2}),
+q(27480,{awp=40003,crs={45728},description="Must complete part of the Silverpine Forest questline for the quest item to drop.",qss={61310},r=1,sourceQuests={27483},g={
 qo(1,{providers={{"i",61311}}})}}),
 q(28206,{awp=40001,coords={
 [25]={{36.1,61.1}}},qgs={47781},r=1,sourceQuests={28196,28197,28199}}),
@@ -34365,7 +34365,7 @@ q(9435,{awp=20003,coords={
 [25]={{51,58.7}}},lvl=25,qgs={17218},r=2,rwp=40003,u=2,g={
 qo(1,{coords={
 [25]={{55.6,35.2}}},providers={{"i",23646},{"o",181620}},u=2})}}),
-q(28154,{awp=40001,crs={47759},providers={{"i",63090}},r=1,g={
+q(28154,{awp=40001,crs={47759},qss={63090},r=1,g={
 s(209978,65691,{awp=40003,b=1,f=5,loc=41,q=2}),
 s(209956,65669,{awp=40003,b=1,f=4,loc=45,q=2})}}),
 q(28192,{awp=40001,coords={
@@ -34376,7 +34376,7 @@ qo(1,{crs={2242,2243,2245,2246,2247,2319,14221},providers={{"i",3505}},u=2})}}),
 q(28115,{awp=40001,coords={
 [25]={{29.2,64}}},qgs={47432},r=1,sourceQuests={28096},g={
 qo(1,{providers={{"n",47204}}})}}),
-q(28356,{awp=40001,crs={2368,2369,2370,2371},providers={{"i",63686}},r=1,g={
+q(28356,{awp=40001,crs={2368,2369,2370,2371},qss={63686},r=1,g={
 qo(1,{providers={{"n",2368},{"n",2369},{"n",2370},{"n",2371}}}),
 i(65727,{awp=40003,b=1,f=52,q=2}),
 s(210001,65716,{awp=40003,b=1,f=1,q=2}),
@@ -34402,11 +34402,11 @@ q(28230,{awp=40001,coords={
 qo(1,{coords={
 [25]={{38.8,57.4}}},providers={{"n",47793}}})}}),
 q(563,{coords={
-[25]={{51.4,58.4}}},lvl=25,providers={{"i",3721}},qgs={2228},r=2,rwp=40003,sourceQuests={562},u=2}),
+[25]={{51.4,58.4}}},lvl=25,qgs={2228},qis={3721},r=2,rwp=40003,sourceQuests={562},u=2}),
 q(9425,{awp=20003,coords={
 [998]={{57.6,90.8}}},qgs={16287},races={10},rwp=40003,u=2}),
 q(542,{coords={
-[25]={{50.6,57.1}}},lvl=20,maps={84},providers={{"i",3660}},qgs={2277},r=2,rwp=40003,sourceQuests={540},u=2}),
+[25]={{50.6,57.1}}},lvl=20,maps={84},qgs={2277},qis={3660},r=2,rwp=40003,sourceQuests={540},u=2}),
 q(1067,{coords={
 [25]={{61.4,19.2}}},lvl=13,maps={88},qgs={2216,5588},r=1,rwp=40003,sourceQuests={1066},u=2}),
 q(8234,{c={4},coords={
@@ -34454,7 +34454,7 @@ s(209972,65685,{b=1,f=5,loc=44,q=3})}}),
 q(28348,{awp=40001,coords={
 [25]={{50,74.3}}},qgs={48218},r=1,sourceQuests={28345}}),
 q(554,{coords={
-[25]={{50.4,57}}},lvl=28,providers={{"i",3706}},qgs={2277},r=2,rwp=40003,sourceQuests={551},u=2}),
+[25]={{50.4,57}}},crs={2277},lvl=28,qss={3706},r=2,rwp=40003,sourceQuests={551},u=2}),
 q(562,{coords={
 [25]={{51.4,58.4}}},lvl=25,qgs={2228},r=2,rwp=40003,sourceQuests={561},u=2,g={
 qo(1,{providers={{"n",2369}},u=2}),
@@ -34472,7 +34472,7 @@ s(119049,3759,{b=1,f=4,loc=44,q=2,u=2})}}),
 q(6701,{c={4},coords={
 [1416]={{85.2,79.4}}},cost={{"i",17124,1}},lvl=24,maxReputation={349,3000},qgs={6766},repeatable=1,rwp=40003,sourceQuests={6681},u=2}),
 q(508,{coords={
-[1416]={{39.3,14.3}}},lvl=29,providers={{"i",3498}},qgs={2317},r=1,rwp=40003,sourceQuests={507},u=2,g={
+[1416]={{39.3,14.3}}},lvl=29,qgs={2317},qis={3498},r=1,rwp=40003,sourceQuests={507},u=2,g={
 s(119054,3765,{b=1,f=6,loc=41,q=2,u=2}),
 s(119053,3764,{b=1,f=4,loc=47,q=2,u=2})}}),
 q(28751,{awp=50004,coords={
@@ -34481,7 +34481,7 @@ q(28355,{awp=40001,coords={
 [25]={{58.5,73.9}}},qgs={2372,2373},r=1,g={
 qo(1,{providers={{"n",2372},{"n",2373}}})}}),
 q(28196,{awp=40001,coords={
-[25]={{37.6,63.7}}},crs={47789},providers={{"i",63250}},r=1}),
+[25]={{37.6,63.7}}},crs={47789},qss={63250},r=1}),
 q(495,{coords={
 [998]={{57.6,93.84}}},isBreadcrumb=1,lvl=34,maps={25},nextQuests={518},qgs={2227},r=1,rwp=50004,u=2}),
 q(518,{coords={
@@ -34502,7 +34502,7 @@ qo(1,{coords={
 qo(2,{coords={
 [1416]={{35.8,54}}},crs={2257},providers={{"i",3554}},u=2})}}),
 q(521,{coords={
-[25]={{62.61,20.64}}},lvl=34,maps={1416},providers={{"i",3554}},qgs={2278},r=1,rwp=40003,sourceQuests={520},u=2,g={
+[25]={{62.61,20.64}}},lvl=34,maps={1416},qgs={2278},qis={3554},r=1,rwp=40003,sourceQuests={520},u=2,g={
 i(4430,{b=1,f=51,q=2,u=2})}}),
 q(28645,{awp=40003,coords={
 [25]={{59.9,63.3}}},qgs={49243},r=1,sourceQuests={28644},g={
@@ -34524,18 +34524,18 @@ q(28644,{awp=40003,coords={
 qo(1,{coords={
 [25]={{67.6,60.6}}},providers={{"n",49265}}})}}),
 q(28643,{awp=40003,coords={
-[25]={{59.9,63.3}}},providers={{"i",64666}},qgs={49243},r=1,g={
+[25]={{59.9,63.3}}},qgs={49243},qis={64666},r=1,g={
 qo(1,{coords={
 [25]={{68.6,59.8}}},providers={{"n",49263}}})}}),
 q(551,{coords={
-[1416]={{39.2,14.8}}},lvl=30,providers={{"i",3706},{"o",1765}},r=2,rwp=40003,u=2}),
+[1416]={{39.2,14.8}}},lvl=30,providers={{"o",1765}},qss={3706},r=2,rwp=40003,u=2}),
 q(28484,{awp=40003,coords={
 [25]={{56.9,45.7}}},qgs={2437},r=1,g={
 qo(1,{crs={2248,48628},providers={{"i",64380}}}),
 s(210005,65720,{b=1,f=6,loc=43,q=2}),
 s(209989,65702,{b=1,f=5,loc=46,q=2}),
 s(209969,65682,{b=1,f=4,loc=43,q=2})}}),
-q(6681,{c={4},description="Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",lvl=24,providers={{"i",17125},{"i",17126}},rwp=40003,u=2}),
+q(6681,{c={4},description="Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",lvl=24,qis={17126},qss={17125},rwp=40003,u=2}),
 q(498,{coords={
 [25]={{63.24,20.68}}},lvl=17,maps={1416},qgs={2229},r=1,rwp=40003,u=2,g={
 qo(1,{coords={
@@ -34592,7 +34592,7 @@ q(28571,{awp=40003,coords={
 q(28089,{altQuests={27746},awp=40003,coords={
 [21]={{44.8,40.7},{45.3,84.3},{52.2,66.3},{57.3,10.1}}},isBreadcrumb=1,lvl=19,nextQuests={28096},qgs={44640,45631,46125},r=1}),
 q(28096,{awp=40001,coords={
-[25]={{29.2,63.3}}},providers={{"i",62932}},qgs={2215},r=1,sourceQuests={28089,28571},g={
+[25]={{29.2,63.3}}},qgs={2215},qis={62932},r=1,sourceQuests={28089,28571},g={
 qo(1,{providers={{"n",47444}}}),
 qo(2,{providers={{"n",47443}}}),
 qo(3,{providers={{"n",47442}}}),
@@ -34914,7 +34914,7 @@ q(11496,{coords={
 qo(1,{coords={
 [122]={{46,35}}},crs={24960,24966,25047},providers={{"i",34338},{"o",187078}},u=21})}}),
 q(11526,{coords={
-[122]={{47.4,30.4}}},lvl=70,providers={{"i",34420}},qgs={24967},u=21}),
+[122]={{47.4,30.4}}},lvl=70,qgs={24967},qis={34420},u=21}),
 q(11548,{coords={
 [122]={{49.1,37.6}}},cost=100000,isDaily=1,lvl=70,maxReputation={1077,42000},qgs={25112},u=2106})}}),
 h(-58,{u=21,g={
@@ -35573,18 +35573,18 @@ h(-45,{
 q(250,{coords={
 [48]={{46,13.6}}},lvl=16,qgs={1093},r=2,rwp=40003,u=2}),
 q(199,{coords={
-[48]={{56.1,13.3}}},lvl=16,providers={{"i",2563},{"o",257}},r=2,rwp=40003,sourceQuests={250},u=2}),
+[48]={{56.1,13.3}}},lvl=16,providers={{"o",257}},qis={2563},r=2,rwp=40003,sourceQuests={250},u=2}),
 q(161,{coords={
-[48]={{46,13.6}}},lvl=16,maps={56},providers={{"i",2563}},qgs={1093},r=2,rwp=40003,sourceQuests={199},u=2}),
+[48]={{46,13.6}}},lvl=16,maps={56},qgs={1093},qis={2563},r=2,rwp=40003,sourceQuests={199},u=2}),
 q(274,{coords={
-[56]={{50,18.2}}},lvl=16,providers={{"i",2609}},qgs={1073},r=2,rwp=40003,sourceQuests={161},u=2}),
+[56]={{50,18.2}}},lvl=16,qgs={1073},qis={2609},r=2,rwp=40003,sourceQuests={161},u=2}),
 q(278,{coords={
 [48]={{46,13.6}}},lvl=16,qgs={1093},r=2,rwp=40003,sourceQuests={274},u=2,g={
 qo(1,{crs={1184,1185,1195,14266},providers={{"i",2606}},u=2}),
 qo(2,{crs={1178,1179,1180,1181,1183,14267},providers={{"i",2607}},u=2}),
 qo(3,{crs={1693,2476},providers={{"i",2939}},u=2})}}),
 q(280,{coords={
-[48]={{46,13.6}}},lvl=16,providers={{"i",2610}},qgs={1093},r=2,rwp=40003,sourceQuests={278},u=2}),
+[48]={{46,13.6}}},lvl=16,qgs={1093},qis={2610},r=2,rwp=40003,sourceQuests={278},u=2}),
 q(283,{coords={
 [48]={{50.6,14.4}}},lvl=16,providers={{"o",1585}},r=2,rwp=40003,sourceQuests={280},u=2,g={
 s(118344,2907,{b=1,f=22,q=2,u=2}),
@@ -35684,7 +35684,7 @@ q(27026,{awp=40003,coords={
 [48]={{82.7,63.4}}},qgs={44859},r=2,sourceQuests={27025},g={
 qo(1,{providers={{"n",44188}}})}}),
 q(298,{coords={
-[48]={{65.9,65.6}}},lvl=10,providers={{"i",2637}},qgs={1344},r=2,rwp=40003,u=2}),
+[48]={{65.9,65.6}}},lvl=10,qgs={1344},qis={2637},r=2,rwp=40003,u=2}),
 q(13656,{awp=40003,coords={
 [48]={{36.7,61.1}}},providers={{"o",194387}},r=2}),
 q(13655,{awp=40003,coords={
@@ -35821,7 +35821,7 @@ s(117052,860,{b=1,f=4,loc=47,q=1,u=2})}}),
 q(26131,{awp=40003,coords={
 [87]={{41.4,52.3}}},isBreadcrumb=1,nextQuests={26854},qgs={1959},r=2}),
 q(301,{coords={
-[48]={{37.2,47.4}}},lvl=10,providers={{"i",2637}},qgs={1105},r=2,rwp=40003,sourceQuests={298},u=2}),
+[48]={{37.2,47.4}}},lvl=10,qgs={1105},qis={2637},r=2,rwp=40003,sourceQuests={298},u=2}),
 q(468,{coords={
 [48]={{34.8,47}}},isBreadcrumb=1,lvl=19,nextQuests={455},qgs={1340},r=2,rwp=40003,u=2}),
 q(273,{coords={
@@ -35834,7 +35834,7 @@ qo(1,{providers={{"n",14267},{"n",44758},{"n",44760}}})}}),
 q(27033,{awp=40003,coords={
 [48]={{78.5,76.2}}},qgs={44618},r=2,sourceQuests={27032}}),
 q(13635,{awp=40003,coords={
-[48]={{14,56.5}}},isBreadcrumb=1,nextQuests={26145},providers={{"i",60494}},qgs={1960},r=2,sourceQuests={26855}}),
+[48]={{14,56.5}}},isBreadcrumb=1,nextQuests={26145},qgs={1960},qis={60494},r=2,sourceQuests={26855}}),
 q(26928,{awp=40003,coords={
 [48]={{34.7,49.1}}},qgs={44345},r=2,sourceQuests={26927},g={
 qo(1,{crs={44176,44288,44292,45401},providers={{"i",60511}}})}}),
@@ -35842,7 +35842,7 @@ q(27035,{awp=40003,coords={
 [48]={{58.5,29.1}}},qgs={44870},r=2,sourceQuests={27034},g={
 qo(1,{providers={{"n",44724}}})}}),
 q(1338,{coords={
-[48]={{24.7,18.3}}},lvl=9,maps={84},providers={{"i",5998}},qgs={1343},r=2,rwp=40003,sourceQuests={1339},u=2}),
+[48]={{24.7,18.3}}},lvl=9,maps={84},qgs={1343},qis={5998},r=2,rwp=40003,sourceQuests={1339},u=2}),
 q(13636,{awp=40003,coords={
 [48]={{35.1,46.6}}},isBreadcrumb=1,lc={1,"questID",26843,"questID",26844},nextQuests={26843},qgs={1340},r=2}),
 q(26927,{awp=40003,coords={
@@ -35883,7 +35883,7 @@ q(271,{coords={
 qo(1,{coords={
 [48]={{37.6,62.6}}},crs={1225},providers={{"i",2713}},u=2})}}),
 q(531,{coords={
-[48]={{83.4,65.2}}},lvl=15,providers={{"i",2713}},qgs={1187},r=2,rwp=40003,sourceQuests={271},u=2,g={
+[48]={{83.4,65.2}}},lvl=15,qgs={1187},qis={2713},r=2,rwp=40003,sourceQuests={271},u=2,g={
 i(3574,{b=1,f=113,q=1,u=2}),
 i(3573,{b=1,f=113,q=1,u=2})}}),
 q(27036,{awp=40003,coords={
@@ -36150,15 +36150,15 @@ r(10647,{learnedAt=250,requireSkill=165,rwp=40003,u=2}),
 r(10621,{learnedAt=225,requireSkill=165,rwp=40003,u=2})}})})}),
 h(-45,{
 q(26317,{awp=40003,coords={
-[50]={{38.3,51}}},description="Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",providers={{"i",58165}},qgs={2465},r=1}),
+[50]={{38.3,51}}},description="Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",qgs={2465},qis={58165},r=1}),
 q(26746,{awp=40003,coords={
-[50]={{47.13,10.56}}},providers={{"i",58165}},qgs={43884},r=2,sourceQuests={26745},g={
+[50]={{47.13,10.56}}},qgs={43884},qis={58165},r=2,sourceQuests={26745},g={
 qo(1,{providers={{"i",60291}}})}}),
 q(26325,{awp=40003,coords={
-[50]={{38.5,48.7}}},providers={{"i",58165},{"o",2076}},r=1,sourceQuests={26323},g={
+[50]={{38.5,48.7}}},providers={{"o",2076}},qis={58165},r=1,sourceQuests={26323},g={
 qo(1,{providers={{"i",58171}}})}}),
 q(26747,{awp=40003,coords={
-[50]={{47.1,10.5}}},providers={{"i",58165}},qgs={43884},r=2,sourceQuests={26746},g={
+[50]={{47.1,10.5}}},qgs={43884},qis={58165},r=2,sourceQuests={26746},g={
 qo(1,{coords={
 [50]={{25,18.4}}},crs={1061},providers={{"i",58179}}}),
 s(207318,61064,{b=1,f=6,loc=46,q=2}),
@@ -36226,9 +36226,9 @@ s(128952,17687,{awp=120001,b=1,f=31,q=2,rwp=40003,u=2}),
 i(4110,{b=1,collectible=false,f=32,q=2,rwp=10200,u=2}),
 i(4111,{b=1,collectible=false,f=31,q=2,rwp=10200,u=2})}}),
 q(26748,{awp=40003,coords={
-[50]={{47.1,10.6}}},providers={{"i",58165}},qgs={42790},r=2,sourceQuests={26747}}),
+[50]={{47.1,10.6}}},qgs={42790},qis={58165},r=2,sourceQuests={26747}}),
 q(26334,{awp=40003,coords={
-[50]={{38.4,48.6}}},providers={{"i",58165}},qgs={42790},r=1,sourceQuests={26332}}),
+[50]={{38.4,48.6}}},qgs={42790},qis={58165},r=1,sourceQuests={26332}}),
 q(584,{coords={
 [224]={{32.2,27.8}}},lvl=30,qgs={2497},r=1,rwp=40003,sourceQuests={582},u=2,g={
 qo(1,{coords={
@@ -36304,8 +36304,8 @@ q(26345,{awp=40003,coords={
 [50]={{43.6,23.4}}},qgs={2495},sourceQuests={26344},g={
 qo(1,{crs={2635},providers={{"i",4105}}}),
 s(207357,61106,{b=1,f=5,loc=47,q=2})}}),
-q(26745,{awp=40003,description="Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",providers={{"i",58165}},qgs={42736},r=2,sourceQuests={26739}}),
-q(26323,{awp=40003,description="Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",providers={{"i",58165}},qgs={42736},r=1,sourceQuests={26321}}),
+q(26745,{awp=40003,description="Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",qgs={42736},qis={58165},r=2,sourceQuests={26739}}),
+q(26323,{awp=40003,description="Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",qgs={42736},qis={58165},r=1,sourceQuests={26321}}),
 q(2764,{coords={
 [224]={{50.6,20.4}}},learnedAt=210,lvl=40,qgs={7802},requireSkill=164,rwp=40003,sourceQuests={2761,2762,2763},u=2}),
 q(26776,{awp=40003,coords={
@@ -36336,19 +36336,19 @@ q(26298,{awp=40003,coords={
 [50]={{38.4,48.7}}},qgs={2497},r=1,sourceQuests={26279,26280},g={
 qo(1,{crs={587,588,595,597,660,671,694,697,699,701,702},providers={{"i",3901}}})}}),
 q(26739,{awp=40003,coords={
-[50]={{46.9,10.8}}},providers={{"i",58165}},qgs={1422},r=2,sourceQuests={26738},g={
+[50]={{46.9,10.8}}},qgs={1422},qis={58165},r=2,sourceQuests={26738},g={
 qo(1,{providers={{"n",689}}})}}),
 q(26321,{awp=40003,coords={
-[50]={{38.4,51}}},providers={{"i",58165}},qgs={2465},r=1,sourceQuests={26317},g={
+[50]={{38.4,51}}},qgs={2465},qis={58165},r=1,sourceQuests={26317},g={
 qo(1,{providers={{"n",4457},{"n",4458},{"n",4459},{"n",4460},{"n",4461}}})}}),
 q(215,{coords={
 [224]={{40,8}}},lvl=30,qgs={738},r=2,rwp=40003,u=2}),
 q(26738,{awp=40003,coords={
-[50]={{46.9,10.8}}},description="Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",providers={{"i",58165}},qgs={1422},r=2,sourceQuests={26732}}),
+[50]={{46.9,10.8}}},description="Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",qgs={1422},qis={58165},r=2,sourceQuests={26732}}),
 q(210,{coords={
-[224]={{37.7,3.3}}},lvl=32,providers={{"i",4085}},qgs={770},r=2,rwp=40003,u=2}),
+[224]={{37.7,3.3}}},lvl=32,qgs={770},qis={4085},r=2,rwp=40003,u=2}),
 q(26740,{awp=40003,coords={
-[50]={{47.1,10.7}}},providers={{"i",4085}},qgs={770},r=2}),
+[50]={{47.1,10.7}}},qgs={770},qis={4085},r=2}),
 q(207,{coords={
 [224]={{37.8,3.6}}},lvl=30,qgs={739},r=2,rwp=40003,u=2,g={
 qo(1,{coords={
@@ -36395,7 +36395,7 @@ qo(1,{providers={{"n",1907}},u=2}),
 qo(2,{coords={
 [224]={{28.9,62}}},providers={{"i",737},{"o",759}},u=2}),
 i(4112,{b=1,f=51,q=2,u=2})}}),
-q(26407,{awp=40003,crs={1142,1144},description="Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",providers={{"i",58491}},r=1}),
+q(26407,{awp=40003,crs={1142,1144},description="Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",qss={58491},r=1}),
 q(26300,{awp=40003,coords={
 [50]={{38.4,48.7}}},qgs={2497},r=1,sourceQuests={26299},g={
 qo(1,{coords={
@@ -36470,9 +36470,9 @@ q(331,{coords={
 s(119389,4123,{b=1,f=6,loc=41,q=2,u=2}),
 s(119405,4139,{b=1,f=4,loc=47,q=2,u=2})}}),
 q(622,{coords={
-[224]={{26.95,77.21}}},lvl=32,providers={{"i",1987}},qgs={773},r=2,rwp=40003,sourceQuests={627},u=2}),
+[224]={{26.95,77.21}}},lvl=32,qgs={773},qis={1987},r=2,rwp=40003,sourceQuests={627},u=2}),
 q(26765,{awp=40003,coords={
-[50]={{43.6,23.1}}},providers={{"i",1987}},qgs={773},r=2,sourceQuests={26763},g={
+[50]={{43.6,23.1}}},qgs={773},qis={1987},r=2,sourceQuests={26763},g={
 s(119390,4124,{b=1,f=5,loc=40,q=2})}}),
 q(3626,{coords={
 [224]={{50.6,20.4}}},lvl=45,maps={51},qgs={7802},rwp=40003,sourceQuests={3625},u=2}),
@@ -36504,7 +36504,7 @@ q(26773,{awp=40003,coords={
 q(26359,{awp=40003,coords={
 [50]={{63.4,39}}},qgs={42812},r=1,sourceQuests={26351}}),
 q(26332,{awp=40003,coords={
-[50]={{38.5,48.7}}},providers={{"i",58165},{"o",2076}},r=1,sourceQuests={26330},g={
+[50]={{38.5,48.7}}},providers={{"o",2076}},qis={58165},r=1,sourceQuests={26330},g={
 qo(1,{crs={667,696,780},providers={{"i",58201}}})}}),
 q(2761,{coords={
 [224]={{50.6,20.4}}},cost={{"i",3860,40},{"i",3575,40}},learnedAt=210,lvl=40,qgs={7802},requireSkill=164,rwp=40003,sourceQuests={2760},u=2,g={
@@ -36569,7 +36569,7 @@ qo(1,{crs={1150},providers={{"i",4053}}})}}),
 q(26386,{awp=40003,coords={
 [50]={{63.4,39}}},qgs={42812},r=1,sourceQuests={26362}}),
 q(26731,{awp=40003,coords={
-[50]={{47.6,10.3}}},providers={{"i",60273}},qgs={43885},r=2,sourceQuests={26730},g={
+[50]={{47.6,10.3}}},qgs={43885},qis={60273},r=2,sourceQuests={26730},g={
 qo(1,{coords={
 [50]={{19.2,40.6}}},crs={17207},providers={{"i",23680},{"i",23681},{"o",181636}}}),
 s(207315,61061,{b=1,f=6,loc=47,q=2}),
@@ -36626,7 +36626,7 @@ q(26269,{awp=40003,coords={
 [50]={{44.2,22.1}}},qgs={716},sourceQuests={583},g={
 qo(1,{crs={587,588,595,597,660,667,669,670,671,672,674,675,676,677,678,679,680,681,682,683,684,685,686,687,688,689,690,691,694,696,697,698,699,700,701,702,709,710,723,728,729,730,731,736,756,758,772,775,780,781,782,783,784,813,814,815,818,854,855,856,871,873,875,877,879,905,921,937,938,939,940,941,942,943,976,977,978,979,1059,1060,1061,1062,1085,1094,1095,1096,1097,1108,1114,1142,1144,1150,1151,1152,1421,1488,1489,1490,1491,1492,1493,1550,1551,1552,1557,1558,1559,1561,1562,1563,1564,1565,1653,1713,1907,2521,2522,2530,2534,2535,2536,2537,2541,2544,2545,2546,2547,2548,2549,2550,2551,2624,2635,4260,4457,4458,4459,4460,4461,4505,4506,4723,11346,11355,11383,14487,14488,14490,14491,14492,17411,31636,42858,43050,43223,43245,43255,43322,43364,43376,43377,43417,43454,43536,43542,43553,43556,43605,43636,43659,43660,43661,43663,43664,43665,43716,43726,43849,43910,43911,43912,43913,44112,44113,44178,44179,44182,51658,51661,51662,51663,52173,52224},providers={{"i",57990}}})}}),
 q(328,{coords={
-[224]={{43.7,9.4}}},lvl=30,providers={{"i",2719},{"o",287}},r=2,rwp=40003,sourceQuests={200},u=2,g={
+[224]={{43.7,9.4}}},lvl=30,providers={{"o",287}},qis={2719},r=2,rwp=40003,sourceQuests={200},u=2,g={
 s(119388,4122,{b=1,f=23,q=2,u=2})}}),
 q(26340,{awp=40003,coords={
 [50]={{38.1,50}}},isBreadcrumb=1,nextQuests={583},qgs={17094},r=1,sourceQuests={9457}}),
@@ -36666,7 +36666,7 @@ q(26734,{awp=40003,coords={
 [50]={{47.2,11.1}}},qgs={739},r=2,sourceQuests={26733},g={
 qo(1,{crs={939,941,942,978,979,43910,43911,43912,43913},providers={{"i",60263}}})}}),
 q(329,{coords={
-[224]={{32.2,27.8}}},lvl=30,providers={{"i",2720},{"o",288}},r=2,rwp=40003,sourceQuests={328},u=2}),
+[224]={{32.2,27.8}}},lvl=30,providers={{"o",288}},qis={2720},r=2,rwp=40003,sourceQuests={328},u=2}),
 q(26400,{awp=40003,coords={
 [50]={{63.7,39.7}}},qgs={42814},r=1,sourceQuests={26399},g={
 qo(1,{coords={
@@ -36714,7 +36714,7 @@ q(28688,{awp=40003,coords={
 [110]={{62.5,60.5}},
 [998]={{44,35.4},{61.8,75.6},{66.5,49.8}}},isBreadcrumb=1,lvl={24,28},nextQuests={26278},providers={{"o",207324},{"o",207325}},r=1}),
 q(26729,{awp=40003,coords={
-[50]={{47.6,10.3}}},providers={{"i",60273}},qgs={43885},r=2,sourceQuests={26736},g={
+[50]={{47.6,10.3}}},qgs={43885},qis={60273},r=2,sourceQuests={26736},g={
 qo(1,{coords={
 [50]={{21.2,40.2}}},crs={691},providers={{"i",3923}}})}}),
 q(583,{coords={
@@ -36722,14 +36722,14 @@ q(583,{coords={
 q(26416,{awp=40003,coords={
 [63]={{49.4,67.1}}},maps={85},qgs={43063},r=1}),
 q(26330,{awp=40003,coords={
-[50]={{38.5,48.7}}},providers={{"i",58165},{"o",2076}},r=1,sourceQuests={26325},g={
+[50]={{38.5,48.7}}},providers={{"o",2076}},qis={58165},r=1,sourceQuests={26325},g={
 qo(1,{coords={
 [50]={{25,18.4}}},crs={1061},providers={{"i",58179}}}),
 s(207347,61096,{b=1,f=6,loc=46,q=2}),
 s(207346,61095,{b=1,f=5,loc=46,q=2}),
 s(207345,61094,{b=1,f=4,loc=45,q=2})}}),
 q(26730,{awp=40003,coords={
-[50]={{47.6,10.3}}},providers={{"i",60273}},qgs={43885},r=2,sourceQuests={26729},g={
+[50]={{47.6,10.3}}},qgs={43885},qis={60273},r=2,sourceQuests={26729},g={
 qo(1,{crs={4457,4458,4459,4460,4461},providers={{"i",60274}}})}}),
 q(26779,{awp=40003,coords={
 [50]={{52.6,66.8}}},qgs={44021},r=2,sourceQuests={26773},g={
@@ -36898,9 +36898,9 @@ q(124,{coords={
 qo(1,{providers={{"n",426}},u=2}),
 qo(2,{providers={{"n",430}},u=2})}}),
 q(129,{coords={
-[49]={{26.7,44.3}}},lvl=12,providers={{"i",5534}},qgs={379},r=2,rwp=40003,u=2}),
+[49]={{26.7,44.3}}},lvl=12,qgs={379},qis={5534},r=2,rwp=40003,u=2}),
 q(94,{coords={
-[37]={{65.2,69.8}}},lvl=20,providers={{"i",1083}},qgs={313},r=2,rwp=40003,u=2}),
+[37]={{65.2,69.8}}},lvl=20,qgs={313},qis={1083},r=2,rwp=40003,u=2}),
 q(26708,{awp=40003,coords={
 [49]={{77.2,65.9}}},qgs={43733},r=2,sourceQuests={26694},g={
 qo(1,{providers={{"n",43775},{"n",43787}}}),
@@ -36909,7 +36909,7 @@ s(207163,60723,{b=1,f=5,loc=41,q=2}),
 s(207165,60725,{b=1,f=6,loc=41,q=2}),
 s(207164,60724,{b=1,f=5,loc=41,q=2})}}),
 q(2282,{c={4},coords={
-[49]={{28.2,52.2}}},lvl=16,providers={{"i",5060}},qgs={6966},r=2,rwp=40003,sourceQuests={2281},u=2,g={
+[49]={{28.2,52.2}}},lvl=16,qgs={6966},qis={5060},r=2,rwp=40003,sourceQuests={2281},u=2,g={
 qo(1,{providers={{"i",7871}},u=2}),
 i(7907,{b=1,description="This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",q=1,u=2})}}),
 q(34,{coords={
@@ -36964,7 +36964,7 @@ q(26714,{awp=40003,coords={
 qo(1,{coords={
 [49]={{58.6,55.5}}},providers={{"n",43496}}})}}),
 q(131,{coords={
-[49]={{21.9,46.4}}},lvl=12,providers={{"i",1325}},qgs={342},r=2,rwp=40003,sourceQuests={130},u=2,g={
+[49]={{21.9,46.4}}},lvl=12,qgs={342},qis={1325},r=2,rwp=40003,sourceQuests={130},u=2,g={
 i(1326,{f=55,lvl=5,q=1,u=2})}}),
 q(26668,{awp=40003,coords={
 [49]={{77.7,65.5}}},qgs={43611},r=2,sourceQuests={26651},g={
@@ -36986,7 +36986,7 @@ qo(2,{coords={
 [49]={{19.8,66.2}}},crs={428},providers={{"i",58892}}}),
 qo(3,{coords={
 [49]={{23,61.2}}},crs={547},providers={{"i",58893}}})}}),
-q(26519,{awp=40003,crs={430,445,446,580},description="Once obtained, the Quest has to be completed. It can't be abandoned.",providers={{"i",58898}},r=2,sourceQuests={26512},g={
+q(26519,{awp=40003,crs={430,445,446,580},description="Once obtained, the Quest has to be completed. It can't be abandoned.",qss={58898},r=2,sourceQuests={26512},g={
 qo(1,{coords={
 [49]={{17.9,18.6}}},providers={{"n",711}}})}}),
 q(26365,{awp=40003,coords={
@@ -37062,19 +37062,19 @@ s(207135,60695,{b=1,f=3,q=2}),
 s(207134,60694,{b=1,f=5,loc=42,q=2}),
 s(207133,60693,{b=1,f=5,loc=46,q=2})}}),
 q(248,{coords={
-[49]={{84.3,46.9}}},lvl=20,providers={{"i",1083},{"o",31},{"o",76}},r=2,rwp=40003,sourceQuests={94},u=2}),
+[49]={{84.3,46.9}}},lvl=20,providers={{"o",31},{"o",76}},qis={1083},r=2,rwp=40003,sourceQuests={94},u=2}),
 q(145,{coords={
-[49]={{30,44.4}}},lvl=18,providers={{"i",1409}},qgs={344},r=2,rwp=40003,sourceQuests={144},u=2}),
+[49]={{30,44.4}}},lvl=18,qgs={344},qis={1409},r=2,rwp=40003,sourceQuests={144},u=2}),
 q(146,{coords={
-[47]={{72,46.6}}},lvl=18,providers={{"i",1410}},qgs={263},r=2,rwp=40003,sourceQuests={145},u=2}),
+[47]={{72,46.6}}},lvl=18,qgs={263},qis={1410},r=2,rwp=40003,sourceQuests={145},u=2}),
 q(120,{coords={
-[49]={{30,44.4}}},lvl=14,providers={{"i",1293}},qgs={344},r=2,rwp=40003,u=2}),
+[49]={{30,44.4}}},lvl=14,qgs={344},qis={1293},r=2,rwp=40003,u=2}),
 q(121,{coords={
-[84]={{63.8,75.4}}},lvl=14,providers={{"i",1294}},qgs={466},r=2,rwp=40003,sourceQuests={120},u=2}),
+[84]={{63.8,75.4}}},lvl=14,qgs={466},qis={1294},r=2,rwp=40003,sourceQuests={120},u=2}),
 q(143,{coords={
-[49]={{30,44.4}}},lvl=14,providers={{"i",1407}},qgs={344},r=2,rwp=40003,sourceQuests={121},u=2}),
+[49]={{30,44.4}}},lvl=14,qgs={344},qis={1407},r=2,rwp=40003,sourceQuests={121},u=2}),
 q(144,{coords={
-[52]={{56.2,47.6}}},lvl=14,providers={{"i",1408}},qgs={234},r=2,rwp=40003,sourceQuests={143},u=2}),
+[52]={{56.2,47.6}}},lvl=14,qgs={234},qis={1408},r=2,rwp=40003,sourceQuests={143},u=2}),
 q(219,{coords={
 [49]={{28.4,12.6}}},lvl=19,qgs={349},r=2,rwp=40003,u=2,g={
 s(118857,3555,{b=1,f=4,loc=42,q=2,u=2}),
@@ -37094,11 +37094,11 @@ q(26508,{awp=40003,coords={
 qo(1,{coords={
 [49]={{19.9,47.5},{27.3,50.8},{35.8,49.4}}},providers={{"i",10958},{"o",154357}}})}}),
 q(26505,{awp=40003,coords={
-[49]={{15.3,64.6}}},providers={{"i",58890}},qgs={464},r=2,sourceQuests={26503}}),
+[49]={{15.3,64.6}}},qgs={464},qis={58890},r=2,sourceQuests={26503}}),
 q(26639,{awp=40003,coords={
 [49]={{52.5,55.4}}},qgs={43458},r=2,sourceQuests={26616}}),
 q(26646,{awp=40003,coords={
-[49]={{52.5,55.4}}},providers={{"i",60384}},qgs={43458},r=2,sourceQuests={26636,26637,26638,26640},g={
+[49]={{52.5,55.4}}},qgs={43458},qis={60384},r=2,sourceQuests={26636,26637,26638,26640},g={
 qo(1,{coords={
 [49]={{68.9,58.7},{69,60.2},{69.8,59.1}}},providers={{"o",204435},{"o",204441},{"o",204442}}}),
 o(204437,{coords={
@@ -37117,7 +37117,7 @@ q(347,{coords={
 q(26563,{awp=40003,coords={
 [49]={{28.3,17}}},qgs={43302},r=2,sourceQuests={26562}}),
 q(119,{coords={
-[37]={{41.7,65.5}}},lvl=13,providers={{"i",1284}},qgs={514},r=2,rwp=40003,sourceQuests={118},u=2}),
+[37]={{41.7,65.5}}},lvl=13,qgs={514},qis={1284},r=2,rwp=40003,sourceQuests={118},u=2}),
 q(26520,{awp=40003,coords={
 [49]={{17.8,18.6}}},providers={{"o",204351}},r=2,sourceQuests={26519},g={
 qo(1,{coords={
@@ -37187,7 +37187,7 @@ s(117248,1310,{b=1,f=5,loc=46,q=2,u=2}),
 s(117243,1303,{b=1,f=6,loc=44,q=2,u=2}),
 s(117244,1304,{b=1,f=4,loc=44,q=2,u=2})}}),
 q(26694,{awp=40003,coords={
-[49]={{77.7,65.5}}},description="If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",providers={{"i",59522}},qgs={43611},r=2,sourceQuests={26693},g={
+[49]={{77.7,65.5}}},description="If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",qgs={43611},qis={59522},r=2,sourceQuests={26693},g={
 qo(1,{coords={
 [49]={{71.3,45.4}}},providers={{"n",397}}}),
 s(207161,60721,{b=1,f=6,loc=45,q=2}),
@@ -37198,16 +37198,16 @@ qo(1,{coords={
 [49]={{41.5,54.68}}},providers={{"i",1309},{"o",32}},u=2}),
 i(2313,{lvl=5,q=1,u=2})}}),
 q(118,{coords={
-[49]={{31,47.4}}},lvl=14,providers={{"i",1283}},qgs={415},r=2,rwp=40003,u=2}),
+[49]={{31,47.4}}},lvl=14,qgs={415},qis={1283},r=2,rwp=40003,u=2}),
 q(1699,{c={1},coords={
 [49]={{26.6,44.8}}},lvl=20,qgs={6166},r=2,rwp=40003,sourceQuests={1698,10371},u=2}),
 q(1702,{c={1},coords={
-[49]={{26.6,44.8}}},lvl=20,providers={{"i",6843}},qgs={6166},r=2,rwp=40003,sourceQuests={1699},u=2,g={
+[49]={{26.6,44.8}}},lvl=20,qgs={6166},qis={6843},r=2,rwp=40003,sourceQuests={1699},u=2,g={
 s(121662,6970,{b=1,c={1},f=8,q=2,u=2})}}),
-q(178,{lvl=15,maps={37},providers={{"i",1956},{"i",1962}},r=2,rwp=40003,u=2,g={
+q(178,{lvl=15,maps={37},qis={1956},qss={1962},r=2,rwp=40003,u=2,g={
 i(1970,{b=1,f=55,q=1,u=2})}}),
 q(26607,{awp=40003,coords={
-[49]={{28.7,40.7}}},providers={{"i",59061}},qgs={43221},r=2,sourceQuests={26563,26573}}),
+[49]={{28.7,40.7}}},qgs={43221},qis={59061},r=2,sourceQuests={26563,26573}}),
 q(26544,{awp=40003,coords={
 [49]={{28.9,41.1}}},description="If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",qgs={344},r=2,sourceQuests={26514},g={
 qo(1,{coords={
@@ -37215,7 +37215,7 @@ qo(1,{coords={
 q(26568,{awp=40003,coords={
 [49]={{26.3,40.1}}},qgs={43184},r=2,sourceQuests={26567}}),
 q(26651,{awp=40003,coords={
-[49]={{52.5,55.4}}},description="If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",providers={{"i",60385}},qgs={43458},r=2,sourceQuests={26646},g={
+[49]={{52.5,55.4}}},description="If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",qgs={43458},qis={60385},r=2,sourceQuests={26646},g={
 qo(1,{coords={
 [49]={{63.8,70.5}}},providers={{"n",43589}}}),
 qo(2,{coords={
@@ -37234,7 +37234,7 @@ qo(1,{crs={441,14272},providers={{"i",1221}},u=2}),
 s(120942,6092,{b=1,f=5,loc=47,q=2,u=2}),
 s(117242,1302,{b=1,f=5,loc=44,q=2,u=2})}}),
 q(26640,{awp=40003,coords={
-[49]={{53,67.8}}},providers={{"i",59157}},qgs={43508},r=2,sourceQuests={26639}}),
+[49]={{53,67.8}}},qgs={43508},qis={59157},r=2,sourceQuests={26639}}),
 q(130,{coords={
 [49]={{17.3,69.5}}},lvl=12,qgs={464},r=2,rwp=40003,sourceQuests={129},u=2}),
 q(169,{coords={
@@ -37416,7 +37416,7 @@ qo(1,{coords={
 s(208384,62862,{b=1,f=6,loc=43,q=2}),
 s(208383,62861,{b=1,f=5,loc=42,q=2}),
 s(208382,62860,{b=1,f=4,loc=47,q=2})}}),
-q(27322,{crs={45301,46657},description="If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",providers={{"i",60956}},r=1,sourceQuests={27290},g={
+q(27322,{crs={45301,46657},description="If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",qss={60956},r=1,sourceQuests={27290},g={
 s(208389,62867,{b=1,f=4,loc=45,q=2}),
 s(208388,62866,{b=1,f=3,q=2}),
 s(208390,62868,{b=1,f=6,loc=45,q=2})}}),
@@ -37529,7 +37529,7 @@ s(208591,63211,{b=1,f=7,loc=46,q=2}),
 s(208590,63210,{b=1,f=6,loc=40,q=2}),
 s(208589,63209,{b=1,f=4,loc=42,q=2})}}),
 q(3201,{coords={
-[87]={{71.4,16.2}}},lvl=40,maps={48},providers={{"i",10022}},qgs={8256},r=2,rwp=40003,sourceQuests={3182},u=2,g={
+[87]={{71.4,16.2}}},lvl=40,maps={48},qgs={8256},qis={10022},r=2,rwp=40003,sourceQuests={3182},u=2,g={
 i(5396,{u=2})}}),
 q(4449,{coords={
 [32]={{65.5,62.2}}},cost={{"i",4306,15}},lvl=43,providers={{"o",173265}},rwp=40003,u=2,g={
@@ -37615,10 +37615,10 @@ qo(4,{coords={
 [51]={{92.6,65.6},{94.4,51.8}}},crs={9916},providers={{"i",11723}},u=2}),
 s(124506,11860,{b=1,f=27,q=2,u=2}),
 s(124507,11861,{b=1,f=6,loc=45,q=2,u=2})}}),
-q(7704,{awp=30300,lvl=45,providers={{"i",18950},{"n",14636},{"o",179832}},rwp=40003,u=2,g={
+q(7704,{awp=30300,lvl=45,providers={{"n",14636},{"o",179832}},qss={18950},rwp=40003,u=2,g={
 i(18951,{b=1,f=53,q=2})}}),
 q(28058,{awp=40003,coords={
-[32]={{46,29.8}}},description="After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",providers={{"i",62933},{"n",14636},{"o",179832}},sourceQuests={28054,28055,28056},g={
+[32]={{46,29.8}}},description="After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",providers={{"n",14636},{"o",179832}},qss={62933},sourceQuests={28054,28055,28056},g={
 i(18951,{awp=30300,b=1,f=53,q=2})}}),
 q(28053,{awp=40003,coords={
 [32]={{38.9,26}}},qgs={47429},sourceQuests={28064},g={
@@ -37668,7 +37668,7 @@ q(27985,{awp=40003,coords={
 [32]={{29.6,26.2}}},qgs={8436},sourceQuests={27984},g={
 qo(1,{crs={5860,5861,5862,8419},providers={{"i",10458}}})}}),
 q(3182,{coords={
-[48]={{18.2,84}}},lvl=40,providers={{"i",10005}},qgs={3836},r=2,rwp=40003,sourceQuests={3181},u=2}),
+[48]={{18.2,84}}},lvl=40,qgs={3836},qis={10005},r=2,rwp=40003,sourceQuests={3181},u=2}),
 q(28099,{awp=40003,coords={
 [32]={{38.1,26.9}}},qgs={14625},sourceQuests={27965},g={
 qo(1,{crs={47553},providers={{"i",63028}}})}}),
@@ -37753,7 +37753,7 @@ s(129937,19123,{b=1,f=4,loc=44,q=2,u=2})}}),
 q(3367,{coords={
 [32]={{63.8,60.8}}},lvl=40,qgs={8284},r=2,rwp=40003,u=2}),
 q(3368,{coords={
-[32]={{74.5,19.3}}},lvl=40,providers={{"i",10443},{"o",175704}},r=2,rwp=40003,sourceQuests={3367},u=2}),
+[32]={{74.5,19.3}}},lvl=40,providers={{"o",175704}},qss={10443},r=2,rwp=40003,sourceQuests={3367},u=2}),
 q(28055,{awp=40003,coords={
 [32]={{40.8,51.6}}},qgs={47393},sourceQuests={28052},g={
 qo(1,{providers={{"n",5843}}})}}),
@@ -37768,9 +37768,9 @@ q(3442,{coords={
 qo(1,{crs={5850,5852,5855,8281},providers={{"i",10509}},u=2}),
 qo(2,{crs={5853,5854,5855},providers={{"i",10511}},u=2})}}),
 q(3181,{coords={
-[32]={{73,77.2}}},crs={5833},lvl=40,maps={48},providers={{"i",10000},{"i",10005}},r=2,rwp=40003,u=2}),
+[32]={{73,77.2}}},crs={5833},lvl=40,maps={48},qis={10005},qss={10000},r=2,rwp=40003,u=2}),
 q(4451,{coords={
-[32]={{65.6,62.5}}},lvl=43,providers={{"i",11818},{"o",173265}},rwp=40003,u=2}),
+[32]={{65.6,62.5}}},lvl=43,providers={{"o",173265}},qss={11818},rwp=40003,u=2}),
 q(28035,{awp=40003,coords={
 [32]={{39.4,67.8}}},qgs={47393},sourceQuests={28034}}),
 q(28032,{awp=40003,coords={
@@ -37786,7 +37786,7 @@ qo(1,{providers={{"n",5857},{"n",5858}}})}}),
 q(3453,{coords={
 [32]={{39.1,39}}},lvl=40,qgs={8479},rwp=40003,sourceQuests={3452},u=2}),
 q(3454,{coords={
-[32]={{39.1,39}}},lvl=40,providers={{"i",10515},{"o",149047}},qgs={8479},rwp=40003,sourceQuests={3453},u=2}),
+[32]={{39.1,39}}},lvl=40,providers={{"o",149047}},qgs={8479},qis={10515},rwp=40003,sourceQuests={3453},u=2}),
 q(3385,{coords={
 [32]={{41,75}}},lvl=40,qgs={8439},requireSkill=197,rwp=40003,sourceQuests={3379},u=2,g={
 qo(1,{coords={
@@ -37809,7 +37809,7 @@ s(208605,63227,{b=1,f=31,q=2})}}),
 q(27965,{awp=40003,coords={
 [32]={{68.5,53.4}}},qgs={47266},sourceQuests={27957,27964}}),
 q(3481,{coords={
-[32]={{39,38.9}}},lvl=40,providers={{"i",10569},{"o",149502}},rwp=40003,sourceQuests={3463},u=2,g={
+[32]={{39,38.9}}},lvl=40,providers={{"o",149502}},qis={10569},rwp=40003,sourceQuests={3463},u=2,g={
 i(10575,{b=1,q=1,u=2})}}),
 q(27982,{awp=40003,coords={
 [32]={{36,28.4}}},qgs={14626},sourceQuests={27976,27977},g={
@@ -38053,7 +38053,7 @@ q(27194,{awp=40003,coords={
 q(27476,{awp=40003,coords={
 [21]={{51.8,65}}},qgs={45617},r=1,sourceQuests={27474,27475}}),
 q(481,{coords={
-[21]={{44,41}}},lvl=10,providers={{"i",3353}},qgs={2121},r=1,rwp=40003,sourceQuests={478},u=2}),
+[21]={{44,41}}},lvl=10,qgs={2121},qis={3353},r=1,rwp=40003,sourceQuests={478},u=2}),
 q(482,{coords={
 [21]={{44.2,39.8}}},lvl=10,qgs={1938},r=1,rwp=40003,sourceQuests={481},u=2}),
 q(27039,{awp=40003,coords={
@@ -38094,7 +38094,7 @@ s(208370,62848,{b=1,f=6,loc=47,q=2})}}),
 q(27180,{awp=40003,coords={
 [21]={{44.9,41.6}}},qgs={44365},r=1,sourceQuests={27098},g={
 i(60862,{q=1})}}),
-q(27574,{altQuests={27594},awp=40003,crs={45896},description="Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",providers={{"i",61505}},r=1}),
+q(27574,{altQuests={27594},awp=40003,crs={45896},description="Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",qss={61505},r=1}),
 q(26998,{awp=40003,coords={
 [21]={{56.2,8.4}}},qgs={44784},r=1,sourceQuests={26992,26995},g={
 qo(1,{providers={{"n",44825}}}),
@@ -38115,7 +38115,7 @@ qo(1,{coords={
 s(118776,3453,{b=1,f=4,loc=43,q=1,u=2}),
 s(118883,3583,{b=1,f=5,loc=45,q=1,u=2})}}),
 q(493,{coords={
-[21]={{43.4,40.8}}},lvl=19,providers={{"i",3468}},qgs={1937},r=1,rwp=40003,u=2}),
+[21]={{43.4,40.8}}},lvl=19,qgs={1937},qis={3468},r=1,rwp=40003,u=2}),
 q(27548,{awp=40003,coords={
 [21]={{51.8,65}}},qgs={45879},r=1,sourceQuests={27542},g={
 qo(1,{providers={{"n",45883}}})}}),
@@ -38127,7 +38127,7 @@ q(27093,{awp=40003,coords={
 [21]={{44,21.3}}},qgs={44916},r=1,sourceQuests={27069,27073},g={
 qo(1,{providers={{"n",44942}}})}}),
 q(478,{coords={
-[21]={{49.9,60.4}}},lvl=10,providers={{"i",3353},{"o",1627}},r=1,rwp=40003,sourceQuests={477},u=2}),
+[21]={{49.9,60.4}}},lvl=10,providers={{"o",1627}},qis={3353},r=1,rwp=40003,sourceQuests={477},u=2}),
 q(27099,{awp=40003,coords={
 [21]={{65.7,26.4}}},qgs={44365},r=1,sourceQuests={27097},g={
 s(208380,62858,{b=1,f=1,q=2}),
@@ -38171,7 +38171,7 @@ s(200839,3449,{b=1,f=3,q=2,u=2})}}),
 q(27550,{awp=40003,coords={
 [21]={{51.8,65}}},qgs={45878},r=1,sourceQuests={27542}}),
 q(441,{coords={
-[18]={{61.2,50.8}}},lvl=10,maps={998},providers={{"i",3234}},qgs={1499},r=1,rwp=40003,sourceQuests={440},u=2}),
+[18]={{61.2,50.8}}},lvl=10,maps={998},qgs={1499},qis={3234},r=1,rwp=40003,sourceQuests={440},u=2}),
 q(27231,{awp=40003,coords={
 [21]={{45.8,41.9}}},qgs={44916},r=1,sourceQuests={27098},g={
 qo(1,{providers={{"n",45254},{"n",45255}}})}}),
@@ -38185,20 +38185,20 @@ s(208398,62876,{b=1,f=23,q=2})}}),
 q(448,{coords={
 [21]={{43.4,40.8}}},lvl=10,qgs={1937},r=1,rwp=40003,sourceQuests={446},u=2}),
 q(460,{coords={
-[21]={{65.2,32.8}}},lvl=12,providers={{"i",3317},{"o",1599}},r=1,rwp=40003,u=2}),
+[21]={{65.2,32.8}}},lvl=12,providers={{"o",1599}},qss={3317},r=1,rwp=40003,u=2}),
 q(430,{coords={
-[21]={{43.4,40.8}}},lvl=10,providers={{"i",3165}},qgs={1937},r=1,rwp=40003,sourceQuests={429},u=2}),
+[21]={{43.4,40.8}}},lvl=10,qgs={1937},qis={3165},r=1,rwp=40003,sourceQuests={429},u=2}),
 q(27097,{awp=40003,coords={
 [21]={{57.3,10.1}}},qgs={44365},r=1,sourceQuests={27096}}),
 q(27472,{awp=40003,coords={
 [21]={{51.7,66}}},qgs={45525},r=1,sourceQuests={27438}}),
 q(439,{coords={
-[21]={{58.4,34.9}}},lvl=10,providers={{"i",3234},{"o",1593}},r=1,rwp=40003,sourceQuests={438},u=2}),
+[21]={{58.4,34.9}}},lvl=10,providers={{"o",1593}},qis={3234},r=1,rwp=40003,sourceQuests={438},u=2}),
 q(443,{coords={
 [21]={{43.4,40.8}}},lvl=10,qgs={1952},r=1,rwp=40003,sourceQuests={439},u=2,g={
 qo(1,{crs={1939,1940,1942,1943,1944},providers={{"i",3236}},u=2})}}),
 q(444,{coords={
-[21]={{43.4,40.8}}},lvl=10,providers={{"i",3237}},qgs={1937},r=1,rwp=40003,sourceQuests={443},u=2}),
+[21]={{43.4,40.8}}},lvl=10,qgs={1937},qis={3237},r=1,rwp=40003,sourceQuests={443},u=2}),
 q(27193,{awp=40003,coords={
 [21]={{44.8,41.6}}},qgs={44365},r=1,sourceQuests={27181},g={
 qo(1,{crs={45219},providers={{"i",60867}}})}}),
@@ -38223,11 +38223,11 @@ qo(1,{coords={
 [21]={{45.8,20.4}}},crs={1983},providers={{"i",3622}},u=2}),
 s(118777,3454,{b=1,f=4,loc=47,q=1,u=2})}}),
 q(449,{coords={
-[21]={{53.4,13.4}}},lvl=10,providers={{"i",3252}},qgs={1950},r=1,rwp=40003,sourceQuests={435},u=2}),
+[21]={{53.4,13.4}}},lvl=10,qgs={1950},qis={3252},r=1,rwp=40003,sourceQuests={435},u=2}),
 q(438,{coords={
 [21]={{43.4,40.8}}},lvl=10,qgs={1952},r=1,rwp=40003,sourceQuests={437},u=2}),
 q(440,{coords={
-[21]={{43.4,40.8}}},lvl=10,providers={{"i",3234}},qgs={1952},r=1,rwp=40003,sourceQuests={439},u=2}),
+[21]={{43.4,40.8}}},lvl=10,qgs={1952},qis={3234},r=1,rwp=40003,sourceQuests={439},u=2}),
 q(26989,{awp=40003,coords={
 [21]={{57.4,10.1}}},qgs={44615},r=1,sourceQuests={26965},g={
 qo(1,{providers={{"n",44793}}}),
@@ -38235,7 +38235,7 @@ s(208361,62839,{b=1,f=6,loc=43,q=2}),
 s(208359,62837,{b=1,f=3,q=2}),
 s(208360,62838,{b=1,f=27,q=2})}}),
 q(461,{coords={
-[21]={{67.8,24.8}}},lvl=12,providers={{"i",3318},{"o",1599}},r=1,rwp=40003,sourceQuests={460},u=2}),
+[21]={{67.8,24.8}}},lvl=12,providers={{"o",1599}},qis={3318},r=1,rwp=40003,sourceQuests={460},u=2}),
 q(26965,{awp=40003,coords={
 [21]={{57.4,10.1}}},qgs={44615},r=1,sourceQuests={26964,28568}}),
 q(27065,{awp=40003,coords={
@@ -38252,7 +38252,7 @@ qo(1,{coords={
 s(118775,3452,{b=1,f=28,q=2,u=2}),
 s(118884,3585,{b=1,f=5,loc=42,q=2,u=2})}}),
 q(446,{coords={
-[998]={{84.2,17.4}}},lvl=10,providers={{"i",3250}},qgs={1498},r=1,rwp=40003,sourceQuests={444},u=2,g={
+[998]={{84.2,17.4}}},lvl=10,qgs={1498},qis={3250},r=1,rwp=40003,sourceQuests={444},u=2,g={
 i(3251,{b=1,q=1,u=2})}}),
 q(27290,{awp=40003,coords={
 [21]={{44.8,41.6}}},qgs={44365},r=1,sourceQuests={27195,27226,27231,27232}}),
@@ -38275,7 +38275,7 @@ s(208355,62833,{b=1,f=3,q=2}),
 s(208353,62831,{b=1,f=4,loc=47,q=2}),
 s(208354,62832,{b=1,f=5,loc=44,q=2})}}),
 q(491,{coords={
-[21]={{65.3,24.8}}},lvl=12,maps={998},providers={{"i",3425},{"o",112888}},r=1,rwp=40003,sourceQuests={461},u=2,g={
+[21]={{65.3,24.8}}},lvl=12,maps={998},providers={{"o",112888}},qis={3425},r=1,rwp=40003,sourceQuests={461},u=2,g={
 s(118780,3457,{b=1,f=4,loc=46,q=2,u=2}),
 s(200840,3458,{b=1,f=6,loc=44,q=2,u=2}),
 s(118881,3581,{b=1,f=20,q=2,u=2})}}),
@@ -38288,7 +38288,7 @@ q(429,{coords={
 r(4508,{description="This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",itemID=4597,learnedAt=50,q=2,requireSkill=171,u=2}),
 i(4596,{f=55,lvl=5,q=1,u=2})}}),
 q(1359,{coords={
-[21]={{43.4,40.8}}},lvl=10,maps={998},providers={{"i",6016}},qgs={1937},r=1,rwp=40003,sourceQuests={3221},u=2})}),
+[21]={{43.4,40.8}}},lvl=10,maps={998},qgs={1937},qis={6016},r=1,rwp=40003,sourceQuests={3221},u=2})}),
 h(-46,{
 n(1920,{awp=100107,coords={
 [21]={{63.5,58.3}}},description="Found upstairs at the given coordinates.\n\nHorde players who have started questing in the zone should complete the main storyline to prevent phasing issues.",r=1,rwp=40003,u=2,g={
@@ -38505,7 +38505,7 @@ q(27851,{awp=40003,coords={
 qo(1,{coords={
 [51]={{48.5,55.6}}},providers={{"i",62516},{"o",206391}}})}}),
 q(1425,{coords={
-[51]={{26.8,59.8}}},lvl=30,maps={17},providers={{"i",6178}},qgs={5476},r=2,rwp=40003,sourceQuests={1398},u=2}),
+[51]={{26.8,59.8}}},lvl=30,maps={17},qgs={5476},qis={6178},r=2,rwp=40003,sourceQuests={1398},u=2}),
 q(1389,{coords={
 [51]={{26,31.4}}},lvl=30,qgs={1776},rwp=40003,u=2,g={
 qo(1,{coords={
@@ -38600,7 +38600,7 @@ s(209155,64624,{b=1,f=5,loc=40,q=2}),
 s(209158,64628,{b=1,f=6,loc=42,q=2}),
 s(209161,64631,{b=1,f=7,loc=41,q=2})}}),
 q(27587,{awp=40001,coords={
-[51]={{73.1,14.9}}},providers={{"i",62795}},qgs={45786},sourceQuests={28569,28570,28675,28677},g={
+[51]={{73.1,14.9}}},qgs={45786},qis={62795},sourceQuests={28569,28570,28675,28677},g={
 qo(1,{crs={45809},providers={{"i",61633}}})}}),
 q(27845,{awp=40003,coords={
 [51]={{68.1,36.1}}},qgs={46676},r=2,sourceQuests={27821,27822},g={
@@ -38625,7 +38625,7 @@ q(1418,{coords={
 [70]={{47.7,55.2}}},isBreadcrumb=1,lvl=30,nextQuests={1420},qgs={1442},r=1,rwp=40003,u=2}),
 q(27906,{awp=40003,coords={
 [51]={{49.3,55.3}}},isBreadcrumb=1,nextQuests={27907,27908},qgs={7623},r=1,sourceQuests={27857}}),
-q(1392,{crs={5477},lvl=29,providers={{"i",6196}},rwp=40003,u=2}),
+q(1392,{crs={5477},lvl=29,qss={6196},rwp=40003,u=2}),
 q(28553,{altQuests={28671},awp=40003,coords={
 [51]={{49.3,55.3}}},isBreadcrumb=1,nextQuests={25674},qgs={7623},r=1,sourceQuests={27916}}),
 q(27919,{awp=40003,coords={
@@ -38668,7 +38668,7 @@ i(64597,{b=1,f=53,q=2})}}),
 q(1444,{coords={
 [26]={{33.6,75.2}}},lvl=38,qgs={5598},r=1,rwp=40003,sourceQuests={1429},u=2}),
 q(27916,{awp=40003,coords={
-[51]={{21.2,51.7}}},isBreadcrumb=1,nextQuests={28553},providers={{"i",62748}},qgs={47041},r=1,sourceQuests={27911}}),
+[51]={{21.2,51.7}}},isBreadcrumb=1,nextQuests={28553},qgs={47041},qis={62748},r=1,sourceQuests={27911}}),
 q(27876,{awp=40003,coords={
 [51]={{26.8,33.5}}},qgs={17127},r=2,g={
 qo(1,{crs={46997},providers={{"i",62593}}})}}),
@@ -38694,7 +38694,7 @@ q(27663,{awp=40003,coords={
 [51]={{74.2,12.1}}},qgs={46182},sourceQuests={27587},g={
 qo(1,{crs={45825},providers={{"i",62043}}})}}),
 q(1429,{coords={
-[51]={{64.2,20.8}}},lvl=38,maps={26},providers={{"i",6193}},qgs={1443},r=1,rwp=40003,sourceQuests={1424},u=2}),
+[51]={{64.2,20.8}}},lvl=38,maps={26},qgs={1443},qis={6193},r=1,rwp=40003,sourceQuests={1424},u=2}),
 q(28569,{awp=40003,coords={
 [36]={{71.8,68}}},isBreadcrumb=1,lvl=40,nextQuests={27587},qgs={9177},r=2}),
 q(28570,{awp=40003,coords={
@@ -38714,7 +38714,7 @@ q(2621,{coords={
 q(27869,{awp=40003,coords={
 [51]={{69,76.5}}},isBreadcrumb=1,nextQuests={27694},qgs={46172},sourceQuests={27818}}),
 q(27918,{awp=40003,coords={
-[51]={{69.9,36.5}}},providers={{"i",62750}},qgs={18221},r=2,sourceQuests={27840,27860}}),
+[51]={{69.9,36.5}}},qgs={18221},qis={62750},r=2,sourceQuests={27840,27860}}),
 q(27915,{awp=40003,coords={
 [51]={{69.4,54.5}}},isBreadcrumb=1,maps={220},nextQuests={27605},qgs={46071},sourceQuests={27914}}),
 q(1421,{coords={
@@ -38724,7 +38724,7 @@ qo(1,{coords={
 q(27860,{awp=40003,coords={
 [51]={{69.8,36.5}}},qgs={18221},r=2,g={
 qo(1,{providers={{"n",759},{"n",760},{"n",761}}})}}),
-q(1423,{lvl=30,providers={{"i",6172},{"o",28604}},r=2,repeatable=1,rwp=40003,u=2,g={
+q(1423,{lvl=30,providers={{"o",28604}},qss={6172},r=2,repeatable=1,rwp=40003,u=2,g={
 i(6827,{q=1,u=2})}}),
 q(2622,{coords={
 [51]={{47.8,55}}},lvl=45,qgs={7623},r=1,rwp=40003,sourceQuests={2621},u=2}),
@@ -38972,13 +38972,13 @@ qo(1,{coords={
 qo(2,{coords={
 [210]={{41,74}}},crs={2491},providers={{"i",59037}}})}}),
 q(26821,{awp=40003,coords={
-[210]={{55.2,42.3}}},providers={{"i",58490}},qgs={44082},r=2,sourceQuests={26824}}),
+[210]={{55.2,42.3}}},qgs={44082},qis={58490},r=2,sourceQuests={26824}}),
 q(617,{coords={
 [224]={{27.4,76.8}}},lvl=38,qgs={2494},rwp=40003,u=2,g={
 qo(1,{crs={1907},providers={{"i",4029}},u=2}),
 s(119383,4117,{b=1,f=4,loc=45,q=2,u=2})}}),
 q(623,{coords={
-[224]={{27.4,76.8}}},lvl=38,maps={70},providers={{"i",4028}},qgs={2494},r=2,rwp=40003,sourceQuests={617},u=2}),
+[224]={{27.4,76.8}}},lvl=38,maps={70},qgs={2494},qis={4028},r=2,rwp=40003,sourceQuests={617},u=2}),
 q(26819,{awp=40003,coords={
 [210]={{55.4,42.2}}},qgs={44083},r=2,sourceQuests={26823},g={
 qo(1,{crs={1907},providers={{"i",4029}}})}}),
@@ -38986,7 +38986,7 @@ q(26487,{awp=40003,coords={
 [210]={{34.6,29.5}}},qgs={43095},races={2,5,6,8,10,26},sourceQuests={28704},g={
 qo(1,{crs={1907},providers={{"i",4029}}})}}),
 q(26617,{awp=40003,coords={
-[210]={{41.2,61.3}}},crs={43454},providers={{"i",59142},{"i",59143}}}),
+[210]={{41.2,61.3}}},crs={43454},qis={59142},qss={59143}}),
 q(3721,{awp=11101,coords={
 [210]={{43,72}}},lvl=30,qgs={7406},sourceQuests={648,836,25476},g={
 p(83,{itemID=10398,npcID=8376,q=1,spellID=12243})}}),
@@ -38997,7 +38997,7 @@ q(7838,{coords={
 ach(396,{awp=30002,providers={{"i",19024}},pvp=1}),
 i(19024,{b=1,f=53,pvp=1,q=3})}}),
 q(7810,{coords={
-[210]={{46.6,26.1}}},providers={{"i",18706}},pvp=1}),
+[210]={{46.6,26.1}}},pvp=1,qss={18706}}),
 q(26644,{awp=40003,coords={
 [210]={{44.3,91.6}}},qgs={2548},sourceQuests={26633,26634,26635}}),
 q(4621,{coords={
@@ -39040,9 +39040,9 @@ q(26635,{awp=40003,coords={
 qo(1,{coords={
 [210]={{49.5,93.9}}},providers={{"i",59151},{"o",204433}}})}}),
 q(26495,{awp=40003,coords={
-[210]={{34.6,29.5}}},providers={{"i",58883}},qgs={43095},r=1,sourceQuests={26493}}),
+[210]={{34.6,29.5}}},qgs={43095},qis={58883},r=1,sourceQuests={26493}}),
 q(624,{coords={
-[224]={{29.5,89.3},{33.6,88.3}}},lvl=35,maps={51},providers={{"i",4056},{"o",2554}},rwp=40003,u=2}),
+[224]={{29.5,89.3},{33.6,88.3}}},lvl=35,maps={51},providers={{"o",2554}},qss={4056},rwp=40003,u=2}),
 q(625,{coords={
 [51]={{22.8,48.1}}},lvl=35,maps={70},providers={{"o",2553}},rwp=40003,sourceQuests={624},u=2}),
 q(626,{coords={
@@ -39054,9 +39054,9 @@ q(613,{coords={
 qo(1,{crs={678,679,680,709,710,723},providers={{"i",3930}},u=2}),
 s(119395,4129,{b=1,f=8,q=2,u=2})}}),
 q(26826,{awp=40003,coords={
-[210]={{55.2,42.3}}},description="This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",providers={{"i",58490}},qgs={44082},r=2,sourceQuests={28702}}),
+[210]={{55.2,42.3}}},description="This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",qgs={44082},qis={58490},r=2,sourceQuests={28702}}),
 q(26825,{awp=40003,coords={
-[210]={{55.2,42.5}}},description="This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",providers={{"i",58490}},qgs={44082},r=2,sourceQuests={28702}}),
+[210]={{55.2,42.5}}},description="This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",qgs={44082},qis={58490},r=2,sourceQuests={28702}}),
 q(26612,{awp=40003,coords={
 [210]={{41.1,73.1}}},qgs={2496},sourceQuests={26611},g={
 qo(1,{providers={{"n",1565}}}),
@@ -39096,11 +39096,11 @@ s(207713,61594,{b=1,f=27,q=2}),
 s(207714,61596,{b=1,f=5,loc=44,q=2}),
 s(207715,61598,{b=1,f=6,loc=41,q=2})}}),
 q(26810,{awp=40003,coords={
-[210]={{55.7,42.2}}},providers={{"i",60374},{"n",44084}},r=2,sourceQuests={26809},g={
+[210]={{55.7,42.2}}},providers={{"n",44084}},qss={60374},r=2,sourceQuests={26809},g={
 qo(1,{coords={
 [210]={{61.19,43.77}}},providers={{"n",43245}}})}}),
 q(26551,{awp=40003,coords={
-[210]={{34.5,27.9}}},providers={{"i",58964},{"n",43098}},r=1,sourceQuests={26550},g={
+[210]={{34.5,27.9}}},providers={{"n",43098}},qss={58964},r=1,sourceQuests={26550},g={
 qo(1,{coords={
 [210]={{61.19,43.77}}},providers={{"n",43245}}})}}),
 q(628,{coords={
@@ -39141,22 +39141,22 @@ qo(1,{providers={{"i",60387},{"n",43110}}})}}),
 q(28702,{awp=40003,coords={
 [84]={{26.1,38.3},{43,71.9},{43.1,73.7},{62.5,30},{63.1,71.4}}},isBreadcrumb=1,lvl={29,33},nextQuests={26825,26826},providers={{"o",206111},{"o",206294}},r=2}),
 q(26812,{awp=40003,coords={
-[50]={{78.5,35.6}}},providers={{"i",60374},{"n",44084}},r=2,sourceQuests={26811},g={
+[50]={{78.5,35.6}}},providers={{"n",44084}},qss={60374},r=2,sourceQuests={26811},g={
 qo(1,{coords={
 [50]={{78,43.8}}},description="Attack Zanzil first to interupt the cast.",providers={{"n",43255},{"n",43257}}})}}),
 q(26553,{awp=40003,coords={
-[50]={{78.5,35.6}}},providers={{"i",58964},{"n",43098}},r=1,sourceQuests={26552},g={
+[50]={{78.5,35.6}}},providers={{"n",43098}},qss={58964},r=1,sourceQuests={26552},g={
 qo(1,{coords={
 [50]={{78,43.8}}},description="Attack Zanzil first to interupt the cast.",providers={{"n",43255},{"n",43257}}})}}),
 q(26814,{awp=40003,coords={
-[50]={{82.1,35.3}}},providers={{"i",60374},{"n",44084}},r=2,sourceQuests={26813},g={
+[50]={{82.1,35.3}}},providers={{"n",44084}},qss={60374},r=2,sourceQuests={26813},g={
 qo(1,{coords={
 [50]={{84,36.8}}},providers={{"n",43322},{"n",43323}}}),
 i(61549,{b=1,f=52,q=3}),
 s(207691,61550,{b=1,f=5,loc=47,q=3}),
 s(207692,61551,{b=1,f=3,q=3})}}),
 q(26555,{awp=40003,coords={
-[50]={{82.1,35.3}}},providers={{"i",58964},{"n",43098}},r=1,sourceQuests={26554},g={
+[50]={{82.1,35.3}}},providers={{"n",43098}},qss={58964},r=1,sourceQuests={26554},g={
 qo(1,{coords={
 [50]={{84,36.8}}},providers={{"n",43322},{"n",43323}}}),
 i(61552,{b=1,f=52,q=3}),
@@ -39167,7 +39167,7 @@ q(213,{coords={
 qo(1,{crs={1096},providers={{"i",4106}},u=2}),
 s(119387,4121,{b=1,f=4,loc=44,q=2,u=2})}}),
 q(26435,{awp=40003,coords={
-[210]={{33.6,29.1}}},providers={{"i",58490}},qgs={43096},r=1,sourceQuests={26434,26592}}),
+[210]={{33.6,29.1}}},qgs={43096},qis={58490},r=1,sourceQuests={26434,26592}}),
 q(26820,{awp=40003,coords={
 [210]={{55.4,42.2}}},qgs={44083},r=2,sourceQuests={26823},g={
 qo(1,{coords={
@@ -39212,7 +39212,7 @@ qo(1,{providers={{"i",59030},{"n",43203}}}),
 qo(2,{providers={{"i",59030},{"n",43204}}}),
 qo(3,{providers={{"i",59030},{"n",43205}}})}}),
 q(602,{coords={
-[224]={{27.2,76.8}}},lvl=32,providers={{"i",3960}},qgs={2496},r=2,rwp=40003,sourceQuests={601},u=2}),
+[224]={{27.2,76.8}}},lvl=32,qgs={2496},qis={3960},r=2,rwp=40003,sourceQuests={601},u=2}),
 q(26664,{awp=40003,coords={
 [210]={{50.3,91.5}}},providers={{"o",204450}},sourceQuests={26650},g={
 qo(1,{providers={{"n",43636}}}),
@@ -39220,11 +39220,11 @@ s(207722,61614,{b=1,f=23,q=2}),
 s(207723,61616,{b=1,f=20,q=2}),
 s(207724,61618,{b=1,f=6,loc=45,q=2})}}),
 q(26808,{awp=40003,coords={
-[210]={{55.4,42.2}}},providers={{"i",60373}},qgs={44083},r=2,sourceQuests={26819}}),
+[210]={{55.4,42.2}}},qgs={44083},qis={60373},r=2,sourceQuests={26819}}),
 q(3645,{coords={
 [224]={{43,72}}},cost=20000,learnedAt=200,lvl=30,qgs={7406},r=1,repeatable=1,requireSkill=202,rwp=40003,sourceQuests={3643},u=2,g={
 i(10790,{b=1,requireSkill=202,u=2})}}),
-q(594,{lvl=45,providers={{"i",4098}},rwp=40003,u=2}),
+q(594,{lvl=45,qss={4098},rwp=40003,u=2}),
 q(630,{coords={
 [224]={{38.4,80.6}}},lvl=42,qgs={2634},rwp=40003,sourceQuests={594},u=2,g={
 qo(1,{coords={
@@ -39233,7 +39233,7 @@ s(119384,4118,{b=1,f=6,loc=43,q=2,u=2})}}),
 q(26603,{awp=40003,coords={
 [210]={{48.5,81},{50.2,76},{54.3,65.4},{57,54.5},{62.4,46.8}}},providers={{"o",204406}}}),
 q(26494,{awp=40003,coords={
-[210]={{34.6,29.5}}},providers={{"i",58882}},qgs={43095},r=1,sourceQuests={26493}}),
+[210]={{34.6,29.5}}},qgs={43095},qis={58882},r=1,sourceQuests={26493}}),
 q(26601,{awp=40003,coords={
 [210]={{40.4,67.8}}},qgs={2500},sourceQuests={26602},g={
 qo(1,{coords={
@@ -39253,7 +39253,7 @@ q(26647,{awp=40003,coords={
 [210]={{46.6,94.9}}},qgs={2547},sourceQuests={26644},g={
 qo(1,{providers={{"n",43560}}})}}),
 q(26648,{awp=40003,coords={
-[210]={{46.5,93.2}}},providers={{"i",59226}},qgs={43556},sourceQuests={26644},g={
+[210]={{46.5,93.2}}},qgs={43556},qis={59226},sourceQuests={26644},g={
 qo(1,{providers={{"n",43553}}}),
 s(207716,61600,{b=1,f=29,q=2}),
 s(207718,61604,{b=1,f=5,loc=40,q=2}),
@@ -39263,9 +39263,9 @@ q(26817,{awp=40003,coords={
 qo(1,{coords={
 [210]={{43,48}}},providers={{"i",60386},{"o",759}}})}}),
 q(26813,{awp=40003,coords={
-[50]={{77.9,44.1}}},providers={{"i",60374},{"n",44084},{"o",204386}},r=2,sourceQuests={26812}}),
+[50]={{77.9,44.1}}},providers={{"n",44084},{"o",204386}},qss={60374},r=2,sourceQuests={26812}}),
 q(26554,{awp=40003,coords={
-[50]={{78,44.2}}},providers={{"i",58964},{"n",43098},{"o",204386}},r=1,sourceQuests={26553}}),
+[50]={{78,44.2}}},providers={{"n",43098},{"o",204386}},qss={58964},r=1,sourceQuests={26553}}),
 q(26818,{awp=40003,coords={
 [210]={{55.4,42.2}}},qgs={44083},r=2,sourceQuests={26823},g={
 qo(1,{crs={772},providers={{"i",58812}}}),
@@ -39301,13 +39301,13 @@ s(207688,61546,{b=1,f=3,q=2}),
 s(207689,61547,{b=1,f=5,loc=46,q=2}),
 s(207690,61548,{b=1,f=6,loc=47,q=2})}}),
 q(26824,{awp=40003,coords={
-[210]={{55.2,42}}},providers={{"i",58490}},qgs={44099},r=2,sourceQuests={26815}}),
+[210]={{55.2,42}}},qgs={44099},qis={58490},r=2,sourceQuests={26815}}),
 q(607,{coords={
-[224]={{26.9,73.6}}},lvl=30,providers={{"i",3922}},qgs={2502},rwp=40003,sourceQuests={606},u=2}),
+[224]={{26.9,73.6}}},lvl=30,qgs={2502},qis={3922},rwp=40003,sourceQuests={606},u=2}),
 q(26594,{awp=40003,coords={
-[210]={{40.5,67.8}}},providers={{"i",3922}},qgs={2502},sourceQuests={26593}}),
+[210]={{40.5,67.8}}},qgs={2502},qis={3922},sourceQuests={26593}}),
 q(26679,{awp=40003,coords={
-[210]={{40.6,73.2}}},providers={{"i",59523},{"o",204578}},sourceQuests={26678}}),
+[210]={{40.6,73.2}}},providers={{"o",204578}},qis={59523},sourceQuests={26678}}),
 q(606,{coords={
 [224]={{27.78,77.07}}},lvl=30,qgs={2501},rwp=40003,u=2,g={
 qo(1,{crs={1557},providers={{"i",3919}},u=2})}}),
@@ -39363,7 +39363,7 @@ s(207695,61556,{b=1,f=4,loc=43,q=2}),
 s(207696,61558,{b=1,f=5,loc=44,q=2}),
 s(207697,61560,{b=1,f=6,loc=42,q=2})}}),
 q(198,{coords={
-[224]={{26.95,77.21}}},lvl=30,providers={{"i",2252}},qgs={773},r=2,rwp=40003,u=2}),
+[224]={{26.95,77.21}}},lvl=30,qgs={773},qis={2252},r=2,rwp=40003,u=2}),
 q(575,{coords={
 [224]={{28.29,77.59}}},lvl=26,qgs={2495},rwp=40003,u=2,g={
 qo(1,{crs={1150},providers={{"i",4053}},u=2})}}),
@@ -39457,22 +39457,22 @@ q(26590,{awp=40003,coords={
 qo(1,{coords={
 [210]={{43,48}}},providers={{"i",58811},{"o",759}}})}}),
 q(2760,{coords={
-[224]={{28.8,75.4}}},learnedAt=210,lvl=40,providers={{"i",8686}},qgs={7794},requireSkill=164,rwp=40003,sourceQuests={2757,2759},u=2}),
-q(8552,{altQuests={620},lvl=35,providers={{"i",3985}},rwp=40003,u=2}),
+[224]={{28.8,75.4}}},learnedAt=210,lvl=40,qgs={7794},qis={8686},requireSkill=164,rwp=40003,sourceQuests={2757,2759},u=2}),
+q(8552,{altQuests={620},lvl=35,qss={3985},rwp=40003,u=2}),
 q(3642,{altQuests={3638,3640},coords={
 [224]={{28.2,76.2}}},learnedAt=200,lvl=30,qgs={7406},r=1,requireSkill=202,rwp=30002,sourceQuests={3635,3637},u=2,g={
 qo(1,{providers={{"i",10794},{"i",11282}},requireSkill=202,u=2})}}),
 q(578,{coords={
-[224]={{27.2,76.9}}},lvl=32,providers={{"i",3898}},qgs={2496},r=2,rwp=40003,sourceQuests={616},u=2}),
+[224]={{27.2,76.9}}},lvl=32,qgs={2496},qis={3898},r=2,rwp=40003,sourceQuests={616},u=2}),
 q(26493,{awp=40003,coords={
 [210]={{34.6,29.5}}},qgs={43095},r=1,sourceQuests={26450,26487},g={
 qo(1,{crs={1550,1551},providers={{"i",58880}}}),
 i(61523,{b=1,f=51,q=2}),
 s(207673,61524,{b=1,f=6,loc=40,q=2})}}),
 q(26811,{awp=40003,coords={
-[210]={{61.2,44.3}}},description="If you abandon this quest, talk to |cFFFFD700Maywiki|r at |cFFFFD700Explorers' League Digsite|r.",providers={{"i",60374},{"n",44084},{"o",204372}},r=2,sourceQuests={26810}}),
+[210]={{61.2,44.3}}},description="If you abandon this quest, talk to |cFFFFD700Maywiki|r at |cFFFFD700Explorers' League Digsite|r.",providers={{"n",44084},{"o",204372}},qss={60374},r=2,sourceQuests={26810}}),
 q(26552,{awp=40003,coords={
-[210]={{61.1,44.2}}},description="If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",providers={{"i",58964},{"n",43098},{"o",204372}},r=1,sourceQuests={26551}}),
+[210]={{61.1,44.2}}},description="If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",providers={{"n",43098},{"o",204372}},qss={58964},r=1,sourceQuests={26551}}),
 q(26823,{awp=40003,coords={
 [210]={{55.3,41.9}}},qgs={44099},r=2,sourceQuests={26825,26826},g={
 qo(1,{coords={
@@ -39505,7 +39505,7 @@ qo(2,{coords={
 qo(3,{coords={
 [224]={{40.2,58.6}}},crs={2537},providers={{"i",3926}},u=2})}}),
 q(26631,{awp=40003,coords={
-[210]={{43.8,56.4}}},providers={{"i",59149}},qgs={43504},sourceQuests={26629,26630}}),
+[210]={{43.8,56.4}}},qgs={43504},qis={59149},sourceQuests={26629,26630}}),
 q(28704,{awp=40003,coords={
 [110]={{62.5,60.5}},
 [998]={{44,35.4},{61.8,75.6},{66.5,49.8}}},isBreadcrumb=1,lvl={29,33},nextQuests={26487,26489},providers={{"o",207324},{"o",207325}},r=1}),
@@ -39807,7 +39807,7 @@ s(206383,59290,{b=1,f=21,q=2}),
 i(59289,{b=1,f=51,q=2})}}),
 q(9469,{awp=20001,coords={
 [26]={{15.1,47.2}}},lvl=42,qgs={17223},r=2,rwp=40003,u=2}),
-q(485,{description="The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",lvl=43,providers={{"i",8704}}}),
+q(485,{description="The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",lvl=43,qss={8704}}),
 q(4297,{coords={
 [26]={{14.1,43.6}}},lvl=38,qgs={9660},r=2,rwp=40003,sourceQuests={3843},u=2,g={
 qo(1,{crs={2926},providers={{"i",11472}},u=2})}}),
@@ -39938,7 +39938,7 @@ s(206335,59237,{b=1,f=5,loc=45,q=2}),
 s(206336,59238,{b=1,f=21,q=2}),
 i(59235,{b=1,f=51,q=2})}}),
 q(9475,{awp=20001,coords={
-[26]={{37.1,71.5}}},lvl=42,providers={{"i",23695},{"o",181643}},r=2,rwp=40003,sourceQuests={9476},u=2,g={
+[26]={{37.1,71.5}}},lvl=42,providers={{"o",181643}},qis={23695},r=2,rwp=40003,sourceQuests={9476},u=2,g={
 qo(1,{coords={
 [26]={{33.7,75},{34.2,72.8},{35.9,72.7},{36.7,71.2},{39.9,66}}},providers={{"i",23694},{"o",181645}},u=2})}}),
 q(7846,{coords={
@@ -39961,13 +39961,13 @@ qo(1,{crs={5428,5429,5430},providers={{"i",6257}},u=2}),
 qo(2,{crs={5268,5272,5274,5352},providers={{"i",6258}},u=2}),
 qo(3,{crs={5260,5262},providers={{"i",6259}},u=2})}}),
 q(1469,{coords={
-[26]={{26.8,48.4}}},lvl=38,providers={{"i",6287}},qgs={5634},r=2,rwp=40003,sourceQuests={1452},u=2}),
+[26]={{26.8,48.4}}},lvl=38,qgs={5634},qis={6287},r=2,rwp=40003,sourceQuests={1452},u=2}),
 q(2742,{coords={
 [26]={{30.6,47}}},lvl=42,qgs={7780},r=1,rwp=40003,u=2}),
 q(2782,{coords={
-[26]={{86.3,59.1}}},lvl=42,providers={{"i",8724},{"o",142127}},r=1,rwp=40003,sourceQuests={2742},u=2}),
+[26]={{86.3,59.1}}},lvl=42,providers={{"o",142127}},qis={8724},r=1,rwp=40003,sourceQuests={2742},u=2}),
 q(81,{coords={
-[26]={{26.6,48.4}}},lvl=42,providers={{"i",8685}},qgs={7801},r=1,rwp=40003,sourceQuests={77},u=2}),
+[26]={{26.6,48.4}}},lvl=42,qgs={7801},qis={8685},r=1,rwp=40003,sourceQuests={77},u=2}),
 q(649,{coords={
 [85]={{59.4,36.8}}},lvl=42,qgs={6986},r=1,rwp=40003,u=2}),
 q(650,{coords={
@@ -40059,7 +40059,7 @@ q(26531,{awp=40003,coords={
 q(26558,{awp=40003,coords={
 [26]={{31.8,58.3}}},qgs={42898},r=1,sourceQuests={26418}}),
 q(2990,{coords={
-[26]={{9.8,44.5}}},lvl=40,providers={{"i",9468}},qgs={5636},r=2,rwp=40003,sourceQuests={2989},u=2}),
+[26]={{9.8,44.5}}},lvl=40,qgs={5636},qis={9468},r=2,rwp=40003,sourceQuests={2989},u=2}),
 q(2989,{coords={
 [26]={{9.8,44.5}}},lvl=40,qgs={5636},r=2,rwp=40003,sourceQuests={2988},u=2}),
 q(26528,{awp=40003,coords={
@@ -40119,9 +40119,9 @@ q(2934,{coords={
 qo(1,{coords={
 [26]={{34.8,70.2}}},crs={2686},providers={{"i",9322}},u=2})}}),
 q(2933,{coords={
-[26]={{23.6,58.7}}},lvl=40,maps={25},providers={{"i",9321},{"o",142702}},r=1,rwp=40003,u=2}),
+[26]={{23.6,58.7}}},lvl=40,maps={25},providers={{"o",142702}},qis={9321},r=1,rwp=40003,u=2}),
 q(2938,{coords={
-[25]={{61.4,19.2}}},lvl=40,maps={998},providers={{"i",9436}},qgs={2216},r=1,rwp=40003,sourceQuests={2937},u=2,g={
+[25]={{61.4,19.2}}},lvl=40,maps={998},qgs={2216},qis={9436},r=1,rwp=40003,sourceQuests={2937},u=2,g={
 s(123060,9649,{b=1,f=4,loc=42,q=3,u=2}),
 s(123061,9650,{b=1,f=6,loc=42,q=3,u=2}),
 s(123894,10686,{b=1,f=8,q=3,u=2})}}),
@@ -40228,7 +40228,7 @@ p(458,{description="Found mostly around the Ruins of Lordaeron.",npcID=61905,pb=
 crit(21676,{achID=6586,id=43,pb=1})}})}}),
 h(-45,{
 q(8,{coords={
-[18]={{38.2,56.6}}},providers={{"i",7628}},qgs={6784},r=1,rwp=40003,u=2}),
+[18]={{38.2,56.6}}},qgs={6784},qis={7628},r=1,rwp=40003,u=2}),
 q(590,{coords={
 [18]={{38.2,56.6}}},qgs={6784},r=1,rwp=40003,sourceQuests={8},u=2}),
 q(24971,{awp=40003,coords={
@@ -40242,13 +40242,13 @@ q(28652,{awp=40003,coords={
 q(24969,{awp=40003,c={1},qgs={2119},races={5},rwp=70003,sourceQuests={3095}}),
 q(24968,{awp=40003,c={9},qgs={2126},races={5},rwp=70003,sourceQuests={3099}}),
 q(3096,{c={4},coords={
-[465]={{46.6,58.8}}},providers={{"i",9559}},qgs={1569},races={5},rwp=70003,sourceQuests={26801}}),
+[465]={{46.6,58.8}}},qgs={1569},qis={9559},races={5},rwp=70003,sourceQuests={26801}}),
 q(24959,{awp=40003,coords={
 [465]={{40.7,78.4}}},qgs={49044},races={5}}),
 q(3098,{c={8},coords={
-[465]={{46.6,58.8}}},providers={{"i",9574}},qgs={1569},races={5},rwp=70003,sourceQuests={26801}}),
+[465]={{46.6,58.8}}},qgs={1569},qis={9574},races={5},rwp=70003,sourceQuests={26801}}),
 q(3097,{c={5},coords={
-[465]={{46.6,58.8}}},providers={{"i",9569}},qgs={1569},races={5,10},rwp=70003,sourceQuests={26801}}),
+[465]={{46.6,58.8}}},qgs={1569},qis={9569},races={5,10},rwp=70003,sourceQuests={26801}}),
 q(5651,{c={5},coords={
 [18]={{31,66}}},lvl=5,qgs={2123},races={5},rwp=40003,u=2}),
 q(24965,{awp=40003,c={8},qgs={2124},races={5},rwp=70003,sourceQuests={3098}}),
@@ -40293,13 +40293,13 @@ s(118604,3274,{b=1,f=4,loc=47,q=1}),
 s(124497,11851,{b=1,f=5,loc=42,q=1}),
 s(200996,11852,{b=1,f=6,loc=46,q=1})}}),
 q(31146,{awp=50004,c={10},coords={
-[465]={{46.6,58.8}}},providers={{"i",85164}},qgs={1569},races={5},rwp=70003}),
+[465]={{46.6,58.8}}},qgs={1569},qis={85164},races={5},rwp=70003}),
 q(28653,{awp=40003,coords={
 [465]={{49.9,56.3}}},isBreadcrumb=1,nextQuests={26801},qgs={1740},races={5},sourceQuests={26800}}),
 q(3095,{c={1},coords={
-[465]={{46.6,58.8}}},providers={{"i",9546}},qgs={1569},races={5},rwp=70003,sourceQuests={26801}}),
+[465]={{46.6,58.8}}},qgs={1569},qis={9546},races={5},rwp=70003,sourceQuests={26801}}),
 q(3099,{c={9},coords={
-[465]={{46.6,58.8}}},providers={{"i",9578}},qgs={1569},races={5},rwp=70003,sourceQuests={26801}}),
+[465]={{46.6,58.8}}},qgs={1569},qis={9578},races={5},rwp=70003,sourceQuests={26801}}),
 q(376,{coords={
 [18]={{30.9,66.1}}},lvl=2,qgs={1661},r=1,rwp=40003,u=2}),
 q(26802,{awp=40003,coords={
@@ -40335,7 +40335,7 @@ q(31147,{awp=50004,c={10},coords={
 q(24962,{awp=40003,c={3},coords={
 [465]={{46.6,58.8}}},qgs={1569},races={5},rwp=70003}),
 q(383,{coords={
-[18]={{32.2,66}}},lvl=2,providers={{"i",2885}},qgs={1570},r=1,rwp=40003,sourceQuests={382},u=2}),
+[18]={{32.2,66}}},lvl=2,qgs={1570},qis={2885},r=1,rwp=40003,sourceQuests={382},u=2}),
 q(24972,{awp=40003,coords={
 [465]={{46.6,58.8}}},qgs={1569},r=1,sourceQuests={24971}})}),
 h(-46,{awp=50100,g={
@@ -40454,7 +40454,7 @@ i(57791,{b=1,f=113,q=1})}}),
 q(25010,{awp=40003,coords={
 [18]={{83.2,68.9}}},qgs={10837},r=1,sourceQuests={25009}}),
 q(361,{coords={
-[18]={{61.6,52.6}}},lvl=4,providers={{"i",2837},{"i",2839}},r=1,rwp=40003,u=2}),
+[18]={{61.6,52.6}}},lvl=4,qis={2837},qss={2839},r=1,rwp=40003,u=2}),
 q(25013,{awp=40003,coords={
 [18]={{83.2,69.2}}},qgs={11057},r=1,sourceQuests={25056},g={
 qo(1,{crs={1555},providers={{"i",2872}}}),
@@ -40472,14 +40472,14 @@ q(369,{coords={
 qo(1,{crs={1555},providers={{"i",2872}},u=2}),
 s(118765,3442,{b=1,f=4,loc=45,q=1,u=2})}}),
 q(492,{coords={
-[18]={{59.5,52.4}}},lvl=6,providers={{"i",3460}},qgs={1518},r=1,rwp=40003,sourceQuests={369},u=2}),
+[18]={{59.5,52.4}}},lvl=6,qgs={1518},qis={3460},r=1,rwp=40003,sourceQuests={369},u=2}),
 q(404,{coords={
 [18]={{58.21,51.45}}},lvl=4,qgs={1496},r=1,rwp=40003,u=2,g={
 qo(1,{crs={1525,1526},providers={{"i",2855}},u=2})}}),
 q(25090,{awp=40003,coords={
 [18]={{52.5,54.8}}},qgs={1496},r=1,g={
 qo(1,{crs={1525,1526},providers={{"i",2855}}})}}),
-q(24979,{awp=40003,providers={{"i",52079}},r=1,g={
+q(24979,{awp=40003,qss={52079},r=1,g={
 qo(1,{providers={{"n",38999}}})}}),
 q(24981,{awp=40003,coords={
 [18]={{60.5,51.8}}},qgs={1515},r=1,g={
@@ -40546,7 +40546,7 @@ qo(4,{crs={1657},providers={{"i",2831}}}),
 s(118769,3446,{b=1,f=28,q=2}),
 s(118764,3440,{b=1,f=24,q=2})}}),
 q(445,{coords={
-[18]={{59.5,52.4}}},lvl=9,providers={{"i",3238}},qgs={1518},r=1,rwp=40003,u=2}),
+[18]={{59.5,52.4}}},lvl=9,qgs={1518},qis={3238},r=1,rwp=40003,u=2}),
 q(5482,{coords={
 [18]={{57.5,49}}},lvl=5,qgs={10665},r=1,rwp=40003,sourceQuests={5481},u=2,g={
 qo(1,{providers={{"i",13702}},u=2})}}),
@@ -40563,7 +40563,7 @@ q(365,{coords={
 qo(1,{coords={
 [18]={{35.5,52.5}}},providers={{"i",2846},{"o",375}},u=2})}}),
 q(407,{coords={
-[18]={{59.5,52.4}}},lvl=4,providers={{"i",3035}},qgs={1518},r=1,rwp=40003,sourceQuests={365},u=2}),
+[18]={{59.5,52.4}}},lvl=4,qgs={1518},qis={3035},r=1,rwp=40003,sourceQuests={365},u=2}),
 q(24975,{awp=40003,coords={
 [18]={{44.6,53.7}}},qgs={1518},r=1,g={
 qo(1,{providers={{"i",2846},{"o",375}}})}}),
@@ -40617,7 +40617,7 @@ s(204924,57144,{b=1,f=6,loc=44,q=1})}}),
 q(24977,{awp=40003,coords={
 [18]={{44.6,53.7}}},qgs={1518},r=1,sourceQuests={24976}}),
 q(32672,{awp=40003,description="This quest is available to Undead upon reaching level 20.",DisablePartySync=1,isBreadcrumb=1,lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=10,races={5},rwp=100105}),
-q(14089,{awp=30300,description="The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,providers={{"i",46881}},races={5},rwp=40001,u=2}),
+q(14089,{awp=30300,description="The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",lc={1,"spellID",33388,"spellID",33391,"spellID",34090,"spellID",34091,"spellID",90265},lvl=20,qss={46881},races={5},rwp=40001,u=2}),
 q(24998,{awp=40003,coords={
 [18]={{61.6,34.3}}},qgs={38978},r=1,sourceQuests={24997},g={
 qo(1,{crs={1753},providers={{"i",3635}}}),
@@ -40645,7 +40645,7 @@ q(431,{coords={
 [18]={{68.1,42}}},lvl=5,providers={{"o",1586}},r=1,repeatable=1,u=2,g={
 i(3080,{q=1,u=2})}}),
 q(410,{coords={
-[18]={{66.6,44.8}}},lvl=5,providers={{"i",3080},{"o",1557}},r=1,repeatable=1,u=2,g={
+[18]={{66.6,44.8}}},lvl=5,providers={{"o",1557}},qss={3080},r=1,repeatable=1,u=2,g={
 qo(1,{coords={
 [18]={{66.6,44.8}}},qgs={1946},questID=409,u=2})}})}}),
 q(24978,{awp=40003,coords={
@@ -40658,7 +40658,7 @@ q(356,{coords={
 qo(1,{providers={{"n",1529}},u=2}),
 qo(2,{providers={{"n",1532}},u=2})}}),
 q(366,{coords={
-[998]={{84.2,17.4}}},lvl=5,providers={{"i",3016}},qgs={1498},r=1,rwp=40003,sourceQuests={357},u=2}),
+[998]={{84.2,17.4}}},lvl=5,qgs={1498},qis={3016},r=1,rwp=40003,sourceQuests={357},u=2}),
 q(360,{coords={
 [18]={{65.4,60.2}}},lvl=6,qgs={1495},r=1,rwp=40003,sourceQuests={359},u=2}),
 q(24989,{awp=40003,coords={
@@ -40674,7 +40674,7 @@ q(355,{coords={
 q(25005,{awp=40003,coords={
 [18]={{54.5,29.8}}},qgs={1500},r=1,sourceQuests={25004,25029}}),
 q(6321,{coords={
-[18]={{60.2,52.4}}},providers={{"i",16209}},qgs={1745},races={5}}),
+[18]={{60.2,52.4}}},qgs={1745},qis={16209},races={5}}),
 q(25012,{awp=40003,coords={
 [18]={{83.5,69.9}}},qgs={37915},r=1,sourceQuests={25011}}),
 q(375,{coords={
@@ -40710,7 +40710,7 @@ q(362,{coords={
 qo(1,{coords={
 [18]={{47.6,40.2}}},crs={1657},providers={{"i",2831}},u=2})}}),
 q(25030,{awp=40003,coords={
-[18]={{52.8,26.3}}},crs={1658},description="At the bottom of the |cFFFFD700Agamand Family Crypt|r.",providers={{"i",3082}},r=1}),
+[18]={{52.8,26.3}}},crs={1658},description="At the bottom of the |cFFFFD700Agamand Family Crypt|r.",qss={3082},r=1}),
 q(357,{coords={
 [998]={{84.2,17.4}}},lvl=5,qgs={1498},r=1,rwp=40003,sourceQuests={405},u=2,g={
 qo(1,{coords={
@@ -40728,9 +40728,9 @@ qo(2,{crs={1522},providers={{"i",3163}}})}}),
 q(24982,{awp=40003,coords={
 [18]={{52.5,54.8}}},isBreadcrumb=1,nextQuests={24983},qgs={1496},r=1}),
 q(405,{coords={
-[18]={{61.2,50.8}}},lvl=5,providers={{"i",3017}},qgs={1499},r=1,rwp=40003,u=2}),
+[18]={{61.2,50.8}}},lvl=5,qgs={1499},qis={3017},r=1,rwp=40003,u=2}),
 q(411,{coords={
-[18]={{68.2,42}}},lvl=5,providers={{"i",3081}},qgs={1497},r=1,rwp=40003,sourceQuests={409},u=2,g={
+[18]={{68.2,42}}},lvl=5,qgs={1497},qis={3081},r=1,rwp=40003,sourceQuests={409},u=2,g={
 s(120847,5940,{b=1,f=8,q=1,u=2})}}),
 q(24980,{awp=40003,coords={
 [18]={{44.7,53.6}}},qgs={1519},r=1,sourceQuests={24978},g={
@@ -42027,7 +42027,7 @@ i(59602,{b=1,f=52,q=3}),
 s(206632,59603,{b=1,f=3,q=3})}}),
 q(26089,{coords={
 [204]={{42.8,51}}},qgs={41908},r=1,sourceQuests={26087}}),
-q(26019,{crs={41925,41926},providers={{"i",56571}},r=2,sourceQuests={26015}}),
+q(26019,{crs={41925,41926},qss={56571},r=2,sourceQuests={26015}}),
 q(26122,{coords={
 [204]={{51.4,60.7}}},qgs={41669},r=1,sourceQuests={26221}}),
 q(26132,{coords={
@@ -42056,7 +42056,7 @@ q(26091,{coords={
 s(206672,59654,{b=1,f=4,loc=41,q=2}),
 s(206671,59653,{b=1,f=7,loc=47,q=2}),
 s(206673,59655,{b=1,f=25,q=2})}}),
-q(26090,{crs={41925,41926},providers={{"i",56570}},r=1,sourceQuests={26087}}),
+q(26090,{crs={41925,41926},qss={56570},r=1,sourceQuests={26087}}),
 q(26072,{coords={
 [204]={{42.6,37.9}}},qgs={41600},sourceQuests={25987,25988},g={
 qo(1,{providers={{"i",56801},{"n",41644},{"n",42051}}})}}),
@@ -42081,12 +42081,12 @@ s(206665,59647,{b=1,f=26,q=2})}}),
 q(26015,{coords={
 [204]={{47.3,49.7}}},qgs={41910},r=2,sourceQuests={26014},g={
 qo(1,{crs={41922,41923},providers={{"i",56568}}})}}),
-q(26144,{crs={41652},description="Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",providers={{"i",57102}},r=2,sourceQuests={26140},g={
+q(26144,{crs={41652},description="Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",qss={57102},r=2,sourceQuests={26140},g={
 qo(1,{providers={{"o",203705}}}),
 s(206642,59615,{b=1,f=25,q=2}),
 s(206643,59616,{b=1,f=20,q=2}),
 s(206641,59614,{b=1,f=24,q=2})}}),
-q(26149,{crs={41652},description="Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",providers={{"i",57118}},r=1,sourceQuests={26140},g={
+q(26149,{crs={41652},description="Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",qss={57118},r=1,sourceQuests={26140},g={
 qo(1,{providers={{"o",203709}}}),
 s(206639,59612,{b=1,f=25,q=2}),
 s(206640,59613,{b=1,f=20,q=2}),
@@ -42197,7 +42197,7 @@ qo(1,{coords={
 q(25471,{coords={
 [201]={{63.8,59.9}}},maps={205},qgs={41341},sourceQuests={27708}}),
 q(25638,{coords={
-[201]={{56.4,30}}},providers={{"i",62137},{"o",203128}},sourceQuests={25459}}),
+[201]={{56.4,30}}},providers={{"o",203128}},qis={62137},sourceQuests={25459}}),
 q(25390,{coords={
 [201]={{57.1,28.7}}},qgs={39883},sourceQuests={25598},g={
 qo(1,{coords={
@@ -42219,13 +42219,13 @@ s(206804,59804,{b=1,f=4,loc=40,q=2}),
 s(206803,59803,{b=1,f=6,loc=43,q=2}),
 s(206802,59802,{b=1,f=7,loc=44,q=2})}}),
 q(27687,{coords={
-[201]={{51.6,42.4},{54,49},{55.8,53}}},crs={40987},providers={{"i",62138}},sourceQuests={25598}}),
+[201]={{51.6,42.4},{54,49},{55.8,53}}},crs={40987},qss={62138},sourceQuests={25598}}),
 q(25477,{coords={
 [201]={{46,46.8}}},qgs={41248},sourceQuests={25558,25949},g={
 qo(1,{coords={
 [201]={{53.6,46.6}}},crs={40223},providers={{"i",54462}}})}}),
 q(25503,{coords={
-[201]={{51.1,52}}},crs={41183},providers={{"i",54639}},g={
+[201]={{51.1,52}}},crs={41183},qss={54639},g={
 qo(1,{coords={
 [201]={{56.6,54.8}}},crs={40466},providers={{"i",54640}}}),
 s(206785,59781,{b=1,f=4,loc=41,q=2}),
@@ -42260,7 +42260,7 @@ s(206782,59778,{b=1,f=28,q=2}),
 s(206781,59777,{b=1,f=5,loc=44,q=2}),
 s(206780,59776,{b=1,f=6,loc=43,q=2})}}),
 q(25388,{coords={
-[201]={{49.6,40.8}}},providers={{"i",53061},{"o",202871}},sourceQuests={25587}}),
+[201]={{49.6,40.8}}},providers={{"o",202871}},qis={53061},sourceQuests={25587}}),
 q(25657,{coords={
 [201]={{55.2,38.8}}},qgs={46338},sourceQuests={25651},g={
 qo(1,{crs={41057},providers={{"i",55190}}})}}),
@@ -42320,7 +42320,7 @@ q(27724,{coords={
 q(25883,{coords={
 [201]={{60.3,69.8}}},providers={{"o",203301}},sourceQuests={25887},g={
 qo(1,{providers={{"o",203300}}})}}),
-q(25467,{crs={40276},providers={{"i",54345}},g={
+q(25467,{crs={40276},qss={54345},g={
 qo(1,{crs={40282},providers={{"i",54344}}}),
 s(206798,59798,{b=1,f=22,q=2})}}),
 q(25419,{crs={41017},description="Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",qis={55187,55188},qss={55186},sourceQuests={25459},g={
@@ -42373,7 +42373,7 @@ qo(1,{providers={{"i",54957},{"o",203061}}})}}),
 q(25371,{coords={
 [201]={{46,46.8}}},qgs={41248},sourceQuests={25477},g={
 mnt(75207,{b=1,itemID=54465,lvl=80,q=3})}}),
-q(25377,{crs={39918},providers={{"i",53053}},g={
+q(25377,{crs={39918},qss={53053},g={
 qo(1,{crs={39964},providers={{"i",53054}}}),
 s(206791,59788,{b=1,f=8,q=2})}}),
 q(27708,{coords={
@@ -42474,7 +42474,7 @@ s(206768,59764,{b=1,f=5,loc=40,q=2}),
 s(206767,59763,{b=1,f=6,loc=45,q=2}),
 s(206766,59762,{b=1,f=7,loc=46,q=2})}}),
 q(25442,{coords={
-[205]={{67.3,49.7}}},crs={40510},providers={{"i",54614}},g={
+[205]={{67.3,49.7}}},crs={40510},qss={54614},g={
 s(206756,59752,{b=1,f=4,loc=40,q=2}),
 s(206755,59751,{b=1,f=5,loc=45,q=2}),
 s(206754,59750,{b=1,f=6,loc=44,q=2})}}),
@@ -42703,11 +42703,11 @@ qo(1,{providers={{"n",41731}}}),
 s(206743,59737,{b=1,f=5,loc=45,q=2}),
 s(206742,59736,{b=1,f=6,loc=45,q=2}),
 s(206741,59735,{b=1,f=7,loc=40,q=2})}}),
-q(27716,{providers={{"i",62281}},r=2,sourceQuests={25540},g={
+q(27716,{qss={62281},r=2,sourceQuests={25540},g={
 s(206707,59697,{b=1,f=6,loc=40,q=2}),
 s(206706,59696,{b=1,f=7,loc=44,q=2}),
 s(206708,59698,{b=1,f=27,q=2})}}),
-q(27717,{providers={{"i",62282}},r=1,sourceQuests={25958},g={
+q(27717,{qss={62282},r=1,sourceQuests={25958},g={
 s(206704,59694,{b=1,f=6,loc=40,q=2}),
 s(206703,59693,{b=1,f=7,loc=44,q=2}),
 s(206705,59695,{b=1,f=27,q=2})}}),
@@ -43022,13 +43022,13 @@ q(5901,{coords={
 qo(1,{coords={
 [23]={{42,38}}},providers={{"i",15042},{"i",15043},{"o",177464}},u=2})}}),
 q(5904,{coords={
-[22]={{43.4,84.8}}},lvl=48,providers={{"i",15044},{"o",177490},{"o",177491}},qgs={11616},r=2,rwp=40003,sourceQuests={5903},u=2}),
+[22]={{43.4,84.8}}},lvl=48,providers={{"o",177490},{"o",177491}},qgs={11616},qis={15044},r=2,rwp=40003,sourceQuests={5903},u=2}),
 q(5902,{coords={
-[18]={{83.2,72.4}}},lvl=48,providers={{"i",15044},{"o",177490},{"o",177491}},qgs={11615},r=1,rwp=40003,sourceQuests={5901},u=2}),
+[18]={{83.2,72.4}}},lvl=48,providers={{"o",177490},{"o",177491}},qgs={11615},qis={15044},r=1,rwp=40003,sourceQuests={5901},u=2}),
 q(6389,{coords={
-[22]={{48.4,31.9}}},lvl=48,providers={{"i",15044},{"o",177491}},r=2,rwp=40003,sourceQuests={5904},u=2}),
+[22]={{48.4,31.9}}},lvl=48,providers={{"o",177491}},qis={15044},r=2,rwp=40003,sourceQuests={5904},u=2}),
 q(6390,{coords={
-[22]={{48.4,31.9}}},lvl=48,providers={{"i",15044},{"o",177491}},r=1,rwp=40003,sourceQuests={5902},u=2}),
+[22]={{48.4,31.9}}},lvl=48,providers={{"o",177491}},qis={15044},r=1,rwp=40003,sourceQuests={5902},u=2}),
 q(5153,{coords={
 [22]={{49.2,78.4}}},lvl=50,qgs={10927},rwp=40003,sourceQuests={5152},u=2,g={
 qo(1,{coords={
@@ -43095,11 +43095,11 @@ q(27204,{awp=40003,coords={
 [22]={{39.9,69.4}}},qgs={44453},r=2,sourceQuests={27201,27202},g={
 qo(1,{providers={{"n",45235}}})}}),
 q(27164,{awp=40003,coords={
-[22]={{41.2,70}}},providers={{"i",60849}},qgs={44467},r=2,sourceQuests={27161},g={
+[22]={{41.2,70}}},qgs={44467},qis={60849},r=2,sourceQuests={27161},g={
 qo(1,{coords={
 [22]={{43.9,69.2}}},crs={1852},providers={{"i",17114},{"o",177241}}})}}),
 q(26925,{awp=40003,coords={
-[22]={{47.3,64.4}}},providers={{"i",60678}},qgs={44462},r=1,sourceQuests={26922},g={
+[22]={{47.3,64.4}}},qgs={44462},qis={60678},r=1,sourceQuests={26922},g={
 qo(1,{coords={
 [22]={{43.9,69.2}}},crs={1852},providers={{"i",17114},{"o",177241}}})}}),
 q(5401,{coords={
@@ -43121,9 +43121,9 @@ qo(1,{coords={
 q(5021,{coords={
 [22]={{38.4,54}}},lvl=50,providers={{"o",175894}},qgs={10778},rwp=40003,u=2}),
 q(5022,{coords={
-[22]={{38.8,55.2}}},lvl=50,maps={84},providers={{"i",12724},{"o",175894}},r=2,rwp=40003,sourceQuests={5021},u=2}),
+[22]={{38.8,55.2}}},lvl=50,maps={84},providers={{"o",175894}},qis={12724},r=2,rwp=40003,sourceQuests={5021},u=2}),
 q(5023,{coords={
-[22]={{38.8,55.2}}},lvl=50,maps={998},providers={{"i",12724},{"o",175894}},r=1,rwp=40003,sourceQuests={5021},u=2}),
+[22]={{38.8,55.2}}},lvl=50,maps={998},providers={{"o",175894}},qis={12724},r=1,rwp=40003,sourceQuests={5021},u=2}),
 q(27202,{awp=40003,coords={
 [22]={{39.8,69.7}}},qgs={45165},r=2,sourceQuests={27205},g={
 qo(1,{providers={{"n",45240},{"n",45241},{"n",45242},{"n",45243}}}),
@@ -43132,7 +43132,7 @@ s(208120,62212,{b=1,f=5,loc=43,q=2}),
 s(208119,62211,{b=1,f=4,loc=41,q=2}),
 i(62210,{b=1,f=52,q=2})}}),
 q(5210,{coords={
-[22]={{39.4,66.8}}},lvl=50,providers={{"i",13202}},qgs={10667},rwp=40003,sourceQuests={5154},u=2}),
+[22]={{39.4,66.8}}},lvl=50,qgs={10667},qis={13202},rwp=40003,sourceQuests={5154},u=2}),
 q(27163,{awp=40003,coords={
 [22]={{41,70.4}}},qgs={44453},r=2,sourceQuests={27159,27160},g={
 qo(1,{coords={
@@ -43224,10 +43224,10 @@ q(27053,{awp=40003,coords={
 qo(1,{coords={
 [22]={{62.6,58.8}}},crs={11078},providers={{"i",13189},{"i",13196},{"o",176392}}})}}),
 q(4986,{coords={
-[22]={{53.6,64.6}}},lvl=51,maps={89},providers={{"i",12663}},qgs={10739},r=2,rwp=40003,sourceQuests={4985},u=2,g={
+[22]={{53.6,64.6}}},lvl=51,maps={89},qgs={10739},qis={12663},r=2,rwp=40003,sourceQuests={4985},u=2,g={
 s(127715,15804,{b=1,f=3,q=2,u=2})}}),
 q(4987,{coords={
-[22]={{53.6,64.6}}},lvl=51,maps={88},providers={{"i",12663}},qgs={10739},r=1,rwp=40003,sourceQuests={4985},u=2,g={
+[22]={{53.6,64.6}}},lvl=51,maps={88},qgs={10739},qis={12663},r=1,rwp=40003,sourceQuests={4985},u=2,g={
 s(127715,15804,{b=1,f=3,q=2,u=2})}}),
 q(27166,{awp=40003,coords={
 [22]={{42.6,84}}},qgs={10838},r=2,g={
@@ -43235,11 +43235,11 @@ qo(1,{coords={
 [22]={{37.6,80}}},providers={{"i",60850},{"o",205246}}})}}),
 q(5050,_.ResolveQuestData({aqd=
 {coords={
-[84]={{52.4,41.8}}},providers={{"i",12721},{"n",3520}},sourceQuests={5048},u=2},hqd=
+[84]={{52.4,41.8}}},qgs={3520},qis={12721},sourceQuests={5048},u=2},hqd=
 {coords={
-[998]={{67.4,43.8}}},providers={{"i",12721},{"n",8403}},sourceQuests={5049},u=2},lvl=50,rwp=40003,u=2})),
+[998]={{67.4,43.8}}},qgs={8403},qis={12721},sourceQuests={5049},u=2},lvl=50,rwp=40003,u=2})),
 q(5048,{coords={
-[84]={{48.6,30.6}}},lvl=50,providers={{"i",12724}},qgs={10782},r=2,rwp=40003,sourceQuests={5022},u=2}),
+[84]={{48.6,30.6}}},lvl=50,qgs={10782},qis={12724},r=2,rwp=40003,sourceQuests={5022},u=2}),
 q(28576,{awp=40003,coords={
 [84]={{26.1,38.3},{43,71.9},{43.1,73.7},{62.5,30},{63.1,71.4}},
 [87]={{26.5,70.2},{62.4,30.5}}},isBreadcrumb=1,lvl={34,38},nextQuests={27159},providers={{"o",206111},{"o",206294},{"o",207320}},r=2}),
@@ -43252,7 +43252,7 @@ qo(2,{coords={
 qo(3,{coords={
 [22]={{47.6,53.2}}},providers={{"n",44487},{"o",205052}}})}}),
 q(8416,{c={2},coords={
-[22]={{52.2,83.6}}},lvl=50,providers={{"i",20612}},qgs={1854},r=2,rwp=40003,sourceQuests={8414},u=2}),
+[22]={{52.2,83.6}}},lvl=50,qgs={1854},qis={20612},r=2,rwp=40003,sourceQuests={8414},u=2}),
 q(5403,{coords={
 [22]={{43,83.6}}},cost={{"i",12841,10}},lvl=50,qgs={10840},r=2,repeatable=1,rwp=40003,u=2,g={
 i(12844,{b=1,factionID=529,q=2,repeatable=1,u=2})}}),
@@ -43274,11 +43274,11 @@ q(27087,{awp=40003,coords={
 q(5142,{altQuests={5601},coords={
 [22]={{49.2,78.4}}},lvl=50,maps={23},qgs={10927},rwp=40003,u=2}),
 q(5059,{coords={
-[22]={{48.2,49.6}}},lvl=52,providers={{"i",12738},{"o",175925}},repeatable=1,rwp=40003,u=2,g={
+[22]={{48.2,49.6}}},lvl=52,providers={{"o",175925}},qis={12738},repeatable=1,rwp=40003,u=2,g={
 i(12739,{b=1,coords={
 [22]={{48.2,49.6}}},crs={10836},q=1,u=2})}}),
 q(5060,{coords={
-[22]={{47.4,49.7}}},lvl=52,providers={{"i",12739},{"o",175924}},rwp=40003,u=2,g={
+[22]={{47.4,49.7}}},lvl=52,providers={{"o",175924}},qis={12739},rwp=40003,u=2,g={
 s(125723,13474,{b=1,f=31,q=2,u=2}),
 i(13475,{b=1,f=52,q=2,u=2})}}),
 q(26936,{awp=40003,coords={
@@ -43324,23 +43324,23 @@ q(27011,{awp=40003,coords={
 qo(1,{coords={
 [22]={{47.3,41.2}}},providers={{"i",60750},{"o",205137}}})}}),
 q(5220,{coords={
-[22]={{46.2,52}}},lvl=50,providers={{"i",13191},{"o",177289}},r=2,rwp=40003,sourceQuests={5219},u=2}),
+[22]={{46.2,52}}},lvl=50,providers={{"o",177289}},qis={13191},r=2,rwp=40003,sourceQuests={5219},u=2}),
 q(5232,{coords={
-[22]={{46.2,52}}},lvl=50,providers={{"i",13191},{"o",177289}},r=1,rwp=40003,sourceQuests={5231},u=2}),
+[22]={{46.2,52}}},lvl=50,providers={{"o",177289}},qis={13191},r=1,rwp=40003,sourceQuests={5231},u=2}),
 q(5217,{coords={
-[22]={{37.2,56.9}}},lvl=50,providers={{"i",13190},{"o",176361}},r=2,rwp=40003,sourceQuests={5216},u=2}),
+[22]={{37.2,56.9}}},lvl=50,providers={{"o",176361}},qis={13190},r=2,rwp=40003,sourceQuests={5216},u=2}),
 q(5230,{coords={
-[22]={{37.2,56.9}}},lvl=50,providers={{"i",13190},{"o",176361}},r=1,rwp=40003,sourceQuests={5229},u=2}),
+[22]={{37.2,56.9}}},lvl=50,providers={{"o",176361}},qis={13190},r=1,rwp=40003,sourceQuests={5229},u=2}),
 q(5226,{coords={
-[22]={{62.5,58.6}}},lvl=50,providers={{"i",13193},{"o",176392}},r=2,rwp=40003,sourceQuests={5225},u=2}),
+[22]={{62.5,58.6}}},lvl=50,providers={{"o",176392}},qis={13193},r=2,rwp=40003,sourceQuests={5225},u=2}),
 q(5236,{coords={
-[22]={{62.5,58.6}}},lvl=50,providers={{"i",13193},{"o",176392}},r=1,rwp=40003,sourceQuests={5235},u=2}),
+[22]={{62.5,58.6}}},lvl=50,providers={{"o",176392}},qis={13193},r=1,rwp=40003,sourceQuests={5235},u=2}),
 q(5223,{coords={
-[22]={{53,65.7}}},lvl=50,providers={{"i",13192},{"o",176393}},r=2,rwp=40003,sourceQuests={5222},u=2}),
+[22]={{53,65.7}}},lvl=50,providers={{"o",176393}},qis={13192},r=2,rwp=40003,sourceQuests={5222},u=2}),
 q(5234,{coords={
-[22]={{53,65.7}}},lvl=50,providers={{"i",13192},{"o",176393}},r=1,rwp=40003,sourceQuests={5233},u=2}),
+[22]={{53,65.7}}},lvl=50,providers={{"o",176393}},qis={13192},r=1,rwp=40003,sourceQuests={5233},u=2}),
 q(27057,{awp=40003,coords={
-[22]={{62.5,58.5}}},providers={{"i",13193},{"o",176392}},sourceQuests={27053}}),
+[22]={{62.5,58.5}}},providers={{"o",176392}},qis={13193},sourceQuests={27053}}),
 q(5096,{coords={
 [18]={{83,69}}},lvl=50,qgs={10837},r=1,rwp=40003,sourceQuests={5093,5094,5095,10374},u=2,g={
 qo(1,{coords={
@@ -43371,7 +43371,7 @@ qo(1,{providers={{"n",44315},{"n",44316},{"n",44574}}})}}),
 q(26979,{awp=40003,coords={
 [18]={{83.3,69}}},lvl=35,qgs={10837},r=1,sourceQuests={26936}}),
 q(27055,{awp=40003,coords={
-[22]={{49.2,54.9}}},providers={{"i",60772}},qgs={44454},sourceQuests={27054},g={
+[22]={{49.2,54.9}}},qgs={44454},qis={60772},sourceQuests={27054},g={
 qo(1,{providers={{"n",44445}}}),
 qo(2,{providers={{"n",44484}}}),
 qo(3,{providers={{"n",44485}}}),
@@ -43466,12 +43466,12 @@ qo(3,{coords={
 qo(4,{coords={
 [23]={{26.6,74.8}}},providers={{"n",11878}},u=2})}}),
 q(27161,{awp=40003,coords={
-[22]={{41.2,70}}},providers={{"i",60849}},qgs={44467},r=2,g={
+[22]={{41.2,70}}},qgs={44467},qis={60849},r=2,g={
 qo(1,{coords={
 [22]={{42,66}}},providers={{"o",204966}}}),
 qo(2,{providers={{"n",44329}}})}}),
 q(26922,{awp=40003,coords={
-[22]={{47.3,64.4}}},providers={{"i",60678}},qgs={44462},r=1,g={
+[22]={{47.3,64.4}}},qgs={44462},qis={60678},r=1,g={
 qo(1,{coords={
 [22]={{42,66}}},providers={{"o",204966}}}),
 qo(2,{providers={{"n",44329}}})}}),
@@ -43489,7 +43489,7 @@ qo(3,{coords={
 qo(4,{coords={
 [22]={{42,18.2}}},providers={{"n",45151}}})}}),
 q(5049,{coords={
-[998]={{69.6,43.6}}},lvl=50,providers={{"i",12724}},qgs={10781},r=1,rwp=40003,sourceQuests={5023},u=2}),
+[998]={{69.6,43.6}}},lvl=50,qgs={10781},qis={12724},r=1,rwp=40003,sourceQuests={5023},u=2}),
 q(26957,{awp=40003,coords={
 [22]={{42.6,14.9}}},qgs={44905}}),
 q(9474,{awp=20001,coords={
@@ -43524,7 +43524,7 @@ q(4985,{coords={
 [22]={{53.6,64.6}}},lvl=51,qgs={10739},rwp=40003,sourceQuests={4984},u=2,g={
 qo(1,{providers={{"n",1816}},u=2})}}),
 q(27172,{awp=40003,coords={
-[22]={{42.6,84}}},providers={{"i",60866}},qgs={10838},r=2,sourceQuests={27171}}),
+[22]={{42.6,84}}},qgs={10838},qis={60866},r=2,sourceQuests={27171}}),
 q(27173,{awp=40003,coords={
 [22]={{53.8,64.6}}},qgs={45165},r=2,sourceQuests={27172},g={
 qo(1,{providers={{"n",45209}}})}}),
@@ -43618,7 +43618,7 @@ s(208084,62169,{b=1,f=4,loc=45,q=2}),
 s(208085,62170,{b=1,f=8,q=2}),
 i(62168,{b=1,f=52,q=2})}}),
 q(10592,{awp=20001,c={2},coords={
-[18]={{83.2,71.2}}},lvl=50,maps={998},providers={{"i",30700}},qgs={17099},r=1,rwp=40003,sourceQuests={10590},u=2}),
+[18]={{83.2,71.2}}},lvl=50,maps={998},qgs={17099},qis={30700},r=1,rwp=40003,sourceQuests={10590},u=2}),
 q(5224,{coords={
 [22]={{53,65.7}}},cost={{"i",14047,4},{"i",13356,5},{"i",13320,1}},lvl=50,providers={{"o",176393}},repeatable=1,rwp=40003,sourceQuests={5222,5233},u=2}),
 q(26953,{awp=40003,coords={
@@ -43793,9 +43793,9 @@ i(68795,{b=1,coords={
 i(68797,{f=52,lvl=11,q=3})}})})}}),
 h(-45,{
 q(6181,{coords={
-[52]={{56.9,47.2}}},description="This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",lvl=10,providers={{"i",15998}},qgs={491},races={1},rwp=40003,u=2}),
+[52]={{56.9,47.2}}},description="This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",lvl=10,qgs={491},qis={15998},races={1},rwp=40003,u=2}),
 q(26320,{awp=40003,coords={
-[52]={{43,65}}},providers={{"i",58147}},qgs={42651},r=2,sourceQuests={26319},g={
+[52]={{43,65}}},qgs={42651},qis={58147},r=2,sourceQuests={26319},g={
 qo(1,{coords={
 [52]={{42.56,71.71}}},providers={{"n",42693}}})}}),
 q(26291,{awp=40003,coords={
@@ -43803,38 +43803,38 @@ q(26291,{awp=40003,coords={
 s(206127,58926,{b=1,f=6,loc=47,q=2}),
 s(206125,58924,{b=1,f=4,loc=46,q=2}),
 s(206126,58925,{b=1,f=5,loc=44,q=2})}}),
-q(136,{lvl=10,providers={{"i",1357}},rwp=40003,u=2}),
+q(136,{lvl=10,qss={1357},rwp=40003,u=2}),
 q(138,{coords={
-[52]={{25.9,47.77}}},lvl=10,providers={{"i",1358},{"o",35}},rwp=40003,sourceQuests={136},u=2}),
+[52]={{25.9,47.77}}},lvl=10,providers={{"o",35}},qis={1358},rwp=40003,sourceQuests={136},u=2}),
 q(139,{coords={
-[52]={{40.5,47.82}}},lvl=10,providers={{"i",1361},{"o",36}},rwp=40003,sourceQuests={138},u=2}),
+[52]={{40.5,47.82}}},lvl=10,providers={{"o",36}},qis={1361},rwp=40003,sourceQuests={138},u=2}),
 q(140,{coords={
-[52]={{25.97,16.9},{40.62,17.01}}},lvl=10,providers={{"i",1362},{"o",33},{"o",34}},rwp=40003,sourceQuests={139},u=2,g={
+[52]={{25.97,16.9},{40.62,17.01}}},lvl=10,providers={{"o",33},{"o",34}},qis={1362},rwp=40003,sourceQuests={139},u=2,g={
 i(3343,{b=1,f=113,q=1,u=2}),
 s(118671,3344,{b=1,f=4,loc=45,q=2,u=2}),
 s(118669,3342,{b=1,f=10,q=1,u=2}),
 i(2842,{q=2,u=2})}}),
 q(26353,{awp=40003,coords={
-[52]={{49.2,9.8}}},crs={126,127,171,391,456,458,513,515,517,519},providers={{"i",1357}}}),
+[52]={{49.2,9.8}}},crs={126,127,171,391,456,458,513,515,517,519},qss={1357}}),
 q(26354,{awp=40003,coords={
-[52]={{25.9,47.8}}},providers={{"i",1358},{"o",307330}},sourceQuests={26353}}),
+[52]={{25.9,47.8}}},providers={{"o",307330}},qis={1358},sourceQuests={26353}}),
 q(26355,{awp=40003,coords={
-[52]={{40.5,47.8}}},providers={{"i",1361},{"o",307307}},sourceQuests={26354}}),
+[52]={{40.5,47.8}}},providers={{"o",307307}},qis={1361},sourceQuests={26354}}),
 q(26356,{awp=40003,coords={
-[52]={{40.6,17}}},providers={{"i",1362},{"o",307277}},sourceQuests={26355},g={
+[52]={{40.6,17}}},providers={{"o",307277}},qis={1362},sourceQuests={26355},g={
 i(3343,{b=1,f=113,q=1}),
 s(118671,3344,{b=1,f=4,loc=45,q=2}),
 s(118669,3342,{b=1,f=10,q=1})}}),
 q(3861,{cost={{"i",11109,1}},description="Simply target any Chicken then spam |cFFFFD700/chicken|r at it until it emotes at you. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",maps={10,18,25,37,47,49,52,70,97},qgs={620},repeatable=1,g={
 p(84,{b=1,itemID=11110,npcID=30379,q=1,spellID=13548})}}),
 q(6281,{coords={
-[52]={{56.4,52.6}}},description="This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",lvl=10,maps={84},providers={{"i",15998}},qgs={523},races={1},rwp=40003,sourceQuests={6181},u=2}),
+[52]={{56.4,52.6}}},description="This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",lvl=10,maps={84},qgs={523},qis={15998},races={1},rwp=40003,sourceQuests={6181},u=2}),
 q(1076,{coords={
 [84]={{43.1,80.3}}},lvl=17,qgs={4078},r=2,rwp=40003,sourceQuests={1075},u=2,g={
 qo(1,{coords={
 [52]={{33.8,49.4},{34.6,68.6},{35.8,34.4},{38.8,61.4},{40.8,22},{42.6,59.2},{43,42.2},{46.8,48.6},{54.6,41},{61.6,36},{63.6,51.4},{68.8,74}}},crs={832},providers={{"i",5669}},u=2})}}),
 q(26296,{awp=40003,coords={
-[52]={{42.6,69.4}}},crs={42677},providers={{"i",58117}},r=2,sourceQuests={26292},g={
+[52]={{42.6,69.4}}},crs={42677},qss={58117},r=2,sourceQuests={26292},g={
 qo(1,{crs={42677},providers={{"i",58118}}}),
 s(206122,58921,{b=1,f=4,loc=44,q=2}),
 s(206124,58923,{b=1,f=6,loc=43,q=2}),
@@ -43850,18 +43850,18 @@ qo(1,{crs={42384,42386},providers={{"i",57991},{"n",42617}}})}}),
 q(26289,{awp=40003,coords={
 [52]={{56.3,47.5}}},qgs={234},r=2,sourceQuests={26271,26286}}),
 q(184,{coords={
-[37]={{24.8,95.3}}},lvl=8,providers={{"i",1971},{"o",203734}},r=2}),
+[37]={{24.8,95.3}}},lvl=8,providers={{"o",203734}},qis={1971},r=2}),
 q(22,{coords={
 [52]={{56.4,30.6}}},cost={{"i",723,8}},lvl=9,qgs={235},r=2,rwp=40003,u=2,g={
 i(724,{f=55,lvl=5,q=1,u=2}),
 r(2542,{itemID=2697,learnedAt=50,q=1,requireSkill=185,u=2})}}),
-q(26252,{awp=40003,crs={114},lvl=10,providers={{"i",57935}},r=2,sourceQuests={26236}}),
+q(26252,{awp=40003,crs={114},lvl=10,qss={57935},r=2,sourceQuests={26236}}),
 q(26378,{awp=40003,coords={
 [37]={{24.2,74.5},{42.1,65.9},{74,72.2},{81.9,66},{84.6,69.4}}},isBreadcrumb=1,lvl=9,nextQuests={26209},qgs={240,261,294,963,42256},r=2}),
 q(28562,{awp=40003,coords={
 [84]={{26.1,38.3},{43,71.9},{43.1,73.7},{62.5,30},{63.1,71.4}}},isBreadcrumb=1,lvl={9,18},nextQuests={26209},providers={{"o",206111},{"o",206294}},r=2}),
 q(26266,{awp=40003,coords={
-[52]={{56.4,30.5}}},providers={{"i",57988}},qgs={235},r=2,sourceQuests={26270}}),
+[52]={{56.4,30.5}}},qgs={235},qis={57988},r=2,sourceQuests={26270}}),
 q(26214,{awp=40003,coords={
 [52]={{60.1,19.3}}},qgs={42308},r=2,sourceQuests={26209},g={
 qo(1,{coords={
@@ -43885,7 +43885,7 @@ s(206104,58903,{b=1,f=1,q=2}),
 s(206103,58902,{b=1,f=20,q=2}),
 s(206105,58904,{b=1,f=8,q=2})}}),
 q(26257,{awp=40003,coords={
-[52]={{56,31.2}}},providers={{"i",57954}},qgs={233},r=2,sourceQuests={26252},g={
+[52]={{56,31.2}}},qgs={233},qis={57954},r=2,sourceQuests={26252},g={
 qo(1,{providers={{"n",42381},{"n",42601}}}),
 qo(2,{coords={
 [52]={{45,35.4}}},providers={{"n",42342}}}),
@@ -43910,7 +43910,7 @@ q(26347,{awp=40003,coords={
 qo(1,{coords={
 [52]={{38.8,44.4}}},crs={42669},providers={{"i",58204}}})}}),
 q(2359,{c={4},coords={
-[52]={{68.5,70.2}}},lvl=20,providers={{"i",8046}},qgs={7024},r=2,rwp=40003,sourceQuests={2360},u=2,g={
+[52]={{68.5,70.2}}},lvl=20,qgs={7024},qis={8046},r=2,rwp=40003,sourceQuests={2360},u=2,g={
 qo(1,{providers={{"i",7908}},u=2}),
 qo(2,{providers={{"i",7923}},u=2}),
 r(8681,{rwp=30002,u=2}),
@@ -43976,7 +43976,7 @@ s(206128,58927,{b=1,f=20,q=3}),
 s(206129,58928,{b=1,f=29,q=3}),
 s(206131,58930,{b=1,f=28,q=3})}}),
 q(26290,{awp=40003,coords={
-[52]={{68.3,70.4}}},providers={{"i",58112}},qgs={7024},r=2,sourceQuests={26289},g={
+[52]={{68.3,70.4}}},qgs={7024},qis={58112},r=2,sourceQuests={26289},g={
 qo(1,{coords={
 [52]={{70.5,74.1}}},providers={{"n",42655}}})}}),
 q(26319,{awp=40003,coords={
@@ -44034,11 +44034,11 @@ qo(1,{coords={
 q(65,{coords={
 [52]={{56.3,47.6}}},lvl=14,qgs={234},r=2,rwp=40003,u=2}),
 q(132,{coords={
-[49]={{26.6,45.3}}},lvl=14,providers={{"i",1327}},qgs={266},r=2,rwp=40003,sourceQuests={65},u=2}),
+[49]={{26.6,45.3}}},lvl=14,qgs={266},qis={1327},r=2,rwp=40003,sourceQuests={65},u=2}),
 q(135,{coords={
-[52]={{56.3,47.6}}},lvl=14,providers={{"i",1327}},qgs={234},r=2,rwp=40003,sourceQuests={132},u=2}),
+[52]={{56.3,47.6}}},lvl=14,qgs={234},qis={1327},r=2,rwp=40003,sourceQuests={132},u=2}),
 q(141,{coords={
-[84]={{75.8,59.8}}},lvl=14,providers={{"i",1353}},qgs={332},r=2,rwp=40003,sourceQuests={135},u=2}),
+[84]={{75.8,59.8}}},lvl=14,qgs={332},qis={1353},r=2,rwp=40003,sourceQuests={135},u=2}),
 q(142,{coords={
 [52]={{56.3,47.6}}},lvl=14,qgs={234},r=2,rwp=40003,sourceQuests={141},u=2,g={
 qo(1,{coords={
@@ -44087,7 +44087,7 @@ qo(1,{coords={
 q(26292,{awp=40003,coords={
 [52]={{56.3,47.5}}},qgs={234},r=2,sourceQuests={26291}}),
 q(36,{coords={
-[52]={{60,19.4}}},lvl=9,providers={{"i",2832}},qgs={238},r=2,rwp=40003,u=2}),
+[52]={{60,19.4}}},lvl=9,qgs={238},qis={2832},r=2,rwp=40003,u=2}),
 q(38,{coords={
 [52]={{56.4,30.6}}},cost={{"i",732,3},{"i",731,3},{"i",730,3},{"i",729,3}},lvl=9,qgs={235},r=2,rwp=40003,sourceQuests={36},u=2,g={
 r(2543,{b=1,itemID=728,learnedAt=75,q=1,requireSkill=185,u=2}),
@@ -44315,7 +44315,7 @@ qo(1,{crs={41419},providers={{"i",56087}}})}}),
 q(25816,{awp=40003,coords={
 [56]={{10.9,59.7}}},qgs={1239},r=2,sourceQuests={25815}}),
 q(469,{coords={
-[56]={{49.8,39.4}}},lvl=18,providers={{"i",3347}},qgs={2093},r=2,rwp=40003,u=2}),
+[56]={{49.8,39.4}}},lvl=18,qgs={2093},qis={3347},r=2,rwp=40003,u=2}),
 q(25866,{awp=40003,coords={
 [56]={{26.9,26}}},qgs={41415},r=2,sourceQuests={25865},g={
 qo(1,{providers={{"n",41409}}})}}),
@@ -44383,7 +44383,7 @@ qo(1,{providers={{"i",56058},{"o",203264}}})}}),
 q(305,{coords={
 [56]={{11.5,52.2}}},lvl=21,qgs={2096},r=2,rwp=40003,u=2}),
 q(306,{coords={
-[56]={{38.8,52.2}}},lvl=21,providers={{"i",2639}},qgs={1076},r=2,rwp=40003,sourceQuests={305},u=2}),
+[56]={{38.8,52.2}}},lvl=21,qgs={1076},qis={2639},r=2,rwp=40003,sourceQuests={305},u=2}),
 q(25735,{awp=40003,coords={
 [56]={{57.8,71.5}}},qgs={41128},r=2,sourceQuests={25725},g={
 qo(1,{providers={{"i",55240},{"i",55241},{"o",203188}}}),
@@ -44413,7 +44413,7 @@ q(25926,{awp=40003,coords={
 [56]={{56.3,40.4}}},qgs={41503},r=2,g={
 qo(1,{providers={{"n",41424}}})}}),
 q(465,{coords={
-[56]={{9.8,57.4}}},lvl=23,providers={{"i",3339}},qgs={2104},r=2,rwp=40003,sourceQuests={464},u=2}),
+[56]={{9.8,57.4}}},lvl=23,qgs={2104},qis={3339},r=2,rwp=40003,sourceQuests={464},u=2}),
 q(25777,{awp=40003,coords={
 [56]={{57.4,71.7}}},isBreadcrumb=1,nextQuests={25780},qgs={41086},r=2,sourceQuests={25733,25734,25735}}),
 q(294,{coords={
@@ -44441,7 +44441,7 @@ q(25802,{awp=40003,coords={
 q(473,{coords={
 [56]={{10.1,56.9}}},isBreadcrumb=1,lvl=23,nextQuests={464},qgs={2086},r=2,rwp=40003,sourceQuests={455},u=2}),
 q(286,{coords={
-[56]={{14,34.8}}},description="This quest gets marked as completed when you complete the quest 'Return the Statuette' (25805).",lvl=20,providers={{"i",2625},{"o",259}},r=2,rwp=40003,sourceQuests={285},u=2,g={
+[56]={{14,34.8}}},description="This quest gets marked as completed when you complete the quest 'Return the Statuette' (25805).",lvl=20,providers={{"o",259}},qis={2625},r=2,rwp=40003,sourceQuests={285},u=2,g={
 s(118375,2950,{b=1,f=28,q=2,u=2}),
 s(118374,2949,{b=1,f=5,loc=47,q=2,u=2})}}),
 q(25805,{awp=40003,coords={
@@ -44518,7 +44518,7 @@ s(206241,59092,{b=1,f=6,loc=41,q=2}),
 s(206240,59091,{b=1,f=5,loc=45,q=2}),
 s(206239,59090,{b=1,f=4,loc=42,q=2})}}),
 q(25736,{awp=40003,coords={
-[56]={{47.6,65.6}}},crs={41167},providers={{"i",55243}},r=2,sourceQuests={25734},g={
+[56]={{47.6,65.6}}},crs={41167},qss={55243},r=2,sourceQuests={25734},g={
 s(206218,59069,{b=1,f=6,loc=47,q=2}),
 s(206217,59068,{b=1,f=5,loc=46,q=2}),
 s(206216,59067,{b=1,f=3,q=2})}}),
@@ -44550,7 +44550,7 @@ qo(1,{providers={{"i",55209},{"o",203151}}})}}),
 q(631,{coords={
 [56]={{49.9,18.2}}},lvl=28,qgs={1075},r=2,rwp=40003,u=2}),
 q(632,{coords={
-[56]={{51.3,8}}},lvl=28,providers={{"i",4429},{"o",2652}},r=2,rwp=40003,sourceQuests={631},u=2}),
+[56]={{51.3,8}}},lvl=28,providers={{"o",2652}},qis={4429},r=2,rwp=40003,sourceQuests={631},u=2}),
 q(633,{coords={
 [56]={{49.9,18.2}}},lvl=28,maps={14},qgs={1075},r=2,rwp=40003,sourceQuests={632},u=2,g={
 qo(1,{coords={
@@ -46575,14 +46575,14 @@ s(141793,31447,{b=1,f=20,q=2,u=17}),
 s(141792,31446,{b=1,f=20,q=2,u=17}),
 s(141794,31448,{b=1,f=25,q=2,u=17})}}),
 q(10810,{coords={
-[105]={{71.8,40.9}}},lvl=65,providers={{"i",31384}},u=17}),
+[105]={{71.8,40.9}}},lvl=65,qss={31384},u=17}),
 q(10910,{coords={
-[105]={{62.6,40.2}}},lvl=65,providers={{"i",31763}},qgs={22127},sourceQuests={10821},u=17}),
+[105]={{62.6,40.2}}},lvl=65,qgs={22127},qis={31763},sourceQuests={10821},u=17}),
 q(10820,{coords={
 [105]={{73.23,40.1}}},lvl=65,providers={{"o",185165}},sourceQuests={10819},u=17,g={
 qo(1,{providers={{"n",19961}},u=17}),
 qo(2,{providers={{"n",19960}},u=17})}}),
-q(10719,{description="You have to accept or complete the quest '...and a Time for Action' to receive the item.",lvl=65,providers={{"i",31120}},sourceQuests={10682},u=17}),
+q(10719,{description="You have to accept or complete the quest '...and a Time for Action' to receive the item.",lvl=65,qss={31120},sourceQuests={10682},u=17}),
 q(10487,{coords={
 [105]={{52.4,57.9}}},lvl=65,qgs={21117},r=1,sourceQuests={10486},u=17,g={
 qo(1,{crs={20713},providers={{"i",30174}},u=17})}}),
@@ -46598,7 +46598,7 @@ i(31523,{b=1,f=52,q=2,u=17})}}),
 q(10986,{c={11},coords={
 [105]={{61.5,38.3}}},lvl=70,maps={107},qgs={22924},rwp=40001,sourceQuests={10980},u=2}),
 q(10797,{coords={
-[105]={{55,24.2}}},crs={20753},description="You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",lvl=65,providers={{"i",31363}},r=2,u=17}),
+[105]={{55,24.2}}},crs={20753},description="You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",lvl=65,qss={31363},r=2,u=17}),
 q(10489,{coords={
 [105]={{51.9,57.8}}},lvl=65,providers={{"o",184660}},r=1,u=17,g={
 qo(1,{crs={21023},providers={{"i",30177}},u=17}),
@@ -46628,7 +46628,7 @@ q(10859,{coords={
 qo(1,{providers={{"i",31668}},u=17}),
 i(31668,{q=1,u=17})}}),
 q(10594,{coords={
-[105]={{60.2,68.9}}},lvl=65,providers={{"i",30701}},qgs={21755},r=2,sourceQuests={10608},u=17,g={
+[105]={{60.2,68.9}}},lvl=65,qgs={21755},qis={30701},r=2,sourceQuests={10608},u=17,g={
 s(141791,31445,{b=1,f=7,loc=45,q=2,u=17}),
 s(141788,31442,{b=1,f=4,loc=46,q=2,u=17}),
 s(141789,31443,{b=1,f=5,loc=42,q=2,u=17}),
@@ -46742,7 +46742,7 @@ q(10671,{coords={
 [105]={{60.4,68.8}}},lvl=65,qgs={21824},r=2,sourceQuests={10620},u=17,g={
 qo(1,{crs={20668},providers={{"i",30840}},u=17})}}),
 q(10812,{coords={
-[105]={{62.6,40.2}}},lvl=65,providers={{"i",31387}},qgs={22020},sourceQuests={10810},u=17}),
+[105]={{62.6,40.2}}},lvl=65,qgs={22020},qis={31387},sourceQuests={10810},u=17}),
 q(11009,{coords={
 [105]={{55.5,44.8}}},lvl=70,qgs={22941},sourceQuests={11000,11022},u=17}),
 q(10714,{coords={
@@ -46752,7 +46752,7 @@ q(11030,{awp=20100,coords={
 q(11036,{coords={
 [105]={{53.2,54.4}}},isBreadcrumb=1,lvl=67,nextQuests={10186},qgs={19471},r=1,u=17}),
 q(11040,{coords={
-[105]={{60.8,69.1}}},isBreadcrumb=1,lvl=67,nextQuests={10186},providers={{"i",32623}},qgs={21112},r=2,u=17}),
+[105]={{60.8,69.1}}},isBreadcrumb=1,lvl=67,nextQuests={10186},qgs={21112},qis={32623},r=2,u=17}),
 q(10798,{coords={
 [105]={{62,38}}},lvl=65,qgs={22149},r=2,sourceQuests={10797},u=17}),
 q(10584,{coords={
@@ -46972,7 +46972,7 @@ qo(1,{crs={20731},providers={{"i",30413}},u=17}),
 qo(2,{crs={20726},providers={{"i",30415}},u=17})}}),
 q(11057,{altQuests={10983,10989},awp=20100,coords={
 [105]={{28.8,57.4}}},isBreadcrumb=1,lvl=70,nextQuests={10995,10996,10997},qgs={23233},u=1801}),
-q(10825,{crs={19988,19989,19990},lvl=66,providers={{"i",31489}},u=17}),
+q(10825,{crs={19988,19989,19990},lvl=66,qss={31489},u=17}),
 q(10867,{coords={
 [105]={{75.3,60.9}}},description="Nexus-Prince Razaan spawns after killing etereals in the area.",lvl=65,qgs={22004},r=1,sourceQuests={10865},u=17,g={
 qo(1,{providers={{"i",30890},{"n",21057},{"o",185033}},u=17}),
@@ -46984,7 +46984,7 @@ q(10542,{coords={
 [105]={{45,72.2}}},lvl=65,qgs={21349},r=1,u=17,g={
 qo(1,{providers={{"i",30468},{"o",184744}},u=17}),
 qo(2,{crs={19957},providers={{"i",29443},{"o",184504}},u=17})}}),
-q(10524,{crs={19995,19998},lvl=65,providers={{"i",30431}},r=1,u=17,g={
+q(10524,{crs={19995,19998},lvl=65,qss={30431},r=1,u=17,g={
 qo(2,{providers={{"i",30433},{"o",184727}},u=17}),
 qo(3,{providers={{"i",30432},{"o",184726}},u=17}),
 qo(4,{providers={{"i",30434},{"o",184728}},u=17})}}),
@@ -47007,7 +47007,7 @@ qo(1,{providers={{"n",22305}},u=17})}}),
 q(10525,{coords={
 [105]={{52.8,59}}},lvl=65,qgs={21311},r=1,sourceQuests={10524},u=17}),
 q(10609,{coords={
-[105]={{61,68.1}}},lvl=65,providers={{"i",30742}},qgs={21110},r=2,u=17,g={
+[105]={{61,68.1}}},lvl=65,qgs={21110},qis={30742},r=2,u=17,g={
 qo(1,{providers={{"i",30743}},u=17}),
 qo(2,{providers={{"i",30782}},u=17}),
 qo(3,{providers={{"i",30783}},u=17}),
@@ -47880,7 +47880,7 @@ q(9410,{coords={
 i(23669,{coords={
 [100]={{33.6,43.6}}},providers={{"n",17062}},q=1,u=17})}}),
 q(9401,{coords={
-[100]={{33.6,43.5}}},lvl=60,providers={{"i",23550}},qgs={17062},r=1,sourceQuests={9400},u=17}),
+[100]={{33.6,43.5}}},lvl=60,qgs={17062},qis={23550},r=1,sourceQuests={9400},u=17}),
 q(10367,{coords={
 [100]={{16.2,65}}},lvl=60,qgs={19361},sourceQuests={10403},u=17,g={
 qo(1,{coords={
@@ -47901,9 +47901,9 @@ q(10058,{coords={
 qo(1,{coords={
 [100]={{55,86.8}}},providers={{"i",25938},{"o",182804}},u=17})}}),
 q(10835,{coords={
-[100]={{61.1,81.7}}},lvl=58,providers={{"i",31550}},qgs={21279},r=1,sourceQuests={10538},u=17}),
+[100]={{61.1,81.7}}},lvl=58,qgs={21279},qis={31550},r=1,sourceQuests={10538},u=17}),
 q(10449,{coords={
-[100]={{55.1,36.3}}},lvl=58,providers={{"i",30326}},qgs={21256},r=1,sourceQuests={10450},u=17}),
+[100]={{55.1,36.3}}},lvl=58,qgs={21256},qis={30326},r=1,sourceQuests={10450},u=17}),
 q(9374,{coords={
 [100]={{26.3,60.3}}},lvl=60,qgs={16793},r=1,u=17,g={
 qo(1,{coords={
@@ -47914,16 +47914,16 @@ i(25505,{b=1,f=52,q=2,u=17})}}),
 q(10286,{coords={
 [100]={{26.3,60.3}}},crs={20159},lvl=60,qgs={16793},r=1,sourceQuests={9374},u=17}),
 q(10288,{coords={
-[100]={{87.3,50.7}}},lvl=58,providers={{"i",28105}},qgs={19229},r=2,sourceQuests={10119,28708},sqreq=1,u=17}),
+[100]={{87.3,50.7}}},lvl=58,qgs={19229},qis={28105},r=2,sourceQuests={10119,28708},sqreq=1,u=17}),
 q(10120,{coords={
-[100]={{87.3,49.8}}},lvl=58,providers={{"i",28024}},qgs={19253},r=1,sourceQuests={9407,28705},u=17}),
+[100]={{87.3,49.8}}},lvl=58,qgs={19253},qis={28024},r=1,sourceQuests={9407,28705},u=17}),
 q(10369,{coords={
 [100]={{16.2,65}}},lvl=60,qgs={19361},sourceQuests={10368},u=17,g={
 qo(1,{coords={
 [100]={{14.3,58.8}}},crs={19354},providers={{"i",29513},{"n",20680}},u=17})}}),
 q(9543,{coords={
 [100]={{23,40.3}}},lvl=60,qgs={16834},r=2,sourceQuests={9424},u=17}),
-q(9418,{lvl=60,providers={{"i",23580}},u=17,g={
+q(9418,{lvl=60,qss={23580},u=17,g={
 s(135844,25489,{b=1,f=3,q=2,u=17}),
 i(25487,{b=1,f=51,q=2,u=17}),
 i(25488,{b=1,f=52,q=2,u=17})}}),
@@ -47988,7 +47988,7 @@ q(10132,{coords={
 qo(1,{providers={{"n",19188}},u=17}),
 s(138408,28062,{b=1,f=33,q=2,u=17}),
 s(138409,28063,{b=1,f=27,q=2,u=17})}}),
-q(10134,{lvl=61,providers={{"i",29476}},u=17}),
+q(10134,{lvl=61,qss={29476},u=17}),
 q(9399,{coords={
 [100]={{23,40.2}}},lvl=60,qgs={16799},r=2,u=17,g={
 qo(1,{providers={{"n",17058}},u=17})}}),
@@ -48006,7 +48006,7 @@ q(9398,{coords={
 [100]={{23.3,38.1}}},lvl=60,qgs={16797},r=2,u=17,g={
 qo(1,{providers={{"n",16929}},u=17}),
 qo(2,{providers={{"n",16927}},u=17})}}),
-q(10229,{lvl=58,providers={{"i",28552}},r=1,u=17}),
+q(10229,{lvl=58,qss={28552},r=1,u=17}),
 q(9372,{coords={
 [100]={{15.6,52}}},lvl=61,qgs={16991},sourceQuests={10442,10443},u=17,g={
 qo(1,{crs={16880,16992},providers={{"i",23336}},u=17})}}),
@@ -48244,9 +48244,9 @@ qo(3,{coords={
 q(10213,{coords={
 [100]={{60.9,81.6}}},lvl=58,qgs={16858},r=1,sourceQuests={9345},u=17}),
 q(10140,{coords={
-[100]={{87.3,52.4}}},isBreadcrumb=1,lvl=58,nextQuests={10254},providers={{"i",28105}},qgs={18931},r=2,sourceQuests={10288},u=17}),
+[100]={{87.3,52.4}}},isBreadcrumb=1,lvl=58,nextQuests={10254},qgs={18931},qis={28105},r=2,sourceQuests={10288},u=17}),
 q(10289,{coords={
-[100]={{87.3,48.1}}},isBreadcrumb=1,lvl=58,nextQuests={10291},providers={{"i",28024}},qgs={18930},r=1,sourceQuests={10120},u=17}),
+[100]={{87.3,48.1}}},isBreadcrumb=1,lvl=58,nextQuests={10291},qgs={18930},qis={28024},r=1,sourceQuests={10120},u=17}),
 q(10159,{coords={
 [100]={{15.9,52.1}}},lvl=61,qgs={16888},u=17,g={
 qo(1,{providers={{"n",19349}},u=17}),
@@ -48306,8 +48306,8 @@ s(135857,25503,{b=1,f=4,loc=44,q=2,u=17}),
 s(135856,25502,{b=1,f=7,loc=44,q=2,u=17}),
 s(135858,25504,{b=1,f=5,loc=45,q=2,u=17})}}),
 q(9438,{coords={
-[100]={{55,36}}},lvl=60,providers={{"i",23662}},qgs={3230},r=1,rwp=40003,sourceQuests={9406},u=2}),
-q(9373,{lvl=58,providers={{"i",23338}},u=17}),
+[100]={{55,36}}},lvl=60,qgs={3230},qis={23662},r=1,rwp=40003,sourceQuests={9406},u=2}),
+q(9373,{lvl=58,qss={23338},u=17}),
 q(10146,{coords={
 [100]={{71.3,62.7}}},lvl=58,qgs={19310},r=2,sourceQuests={10144},u=17,g={
 qo(1,{coords={
@@ -48424,7 +48424,7 @@ i(25914,{b=1,f=51,q=2,u=17}),
 s(136262,25915,{b=1,f=25,q=2,u=17}),
 i(25913,{b=1,f=52,q=2,u=17})}}),
 q(10242,{coords={
-[100]={{66.1,41.9}}},lvl=58,providers={{"i",30404}},qgs={21257},r=1,sourceQuests={10449},u=17}),
+[100]={{66.1,41.9}}},lvl=58,qgs={21257},qis={30404},r=1,sourceQuests={10449},u=17}),
 q(10255,{coords={
 [100]={{15.6,52}}},lvl=61,qgs={16991},sourceQuests={9372},u=17,g={
 qo(1,{crs={16992},providers={{"i",23337}},u=17}),
@@ -48443,7 +48443,7 @@ q(9400,{coords={
 qo(1,{coords={
 [100]={{33.6,43.6}}},providers={{"n",17062}},u=17})}}),
 q(10230,{coords={
-[100]={{61.7,81.7}}},lvl=58,providers={{"i",28562}},qgs={19736},r=1,sourceQuests={10229},u=17,g={
+[100]={{61.7,81.7}}},lvl=58,qgs={19736},qis={28562},r=1,sourceQuests={10229},u=17,g={
 qo(1,{crs={16978},providers={{"i",28562}},u=17})}}),
 q(9370,{coords={
 [100]={{26.9,59.5}}},lvl=60,qgs={16791},r=1,sourceQuests={9366},u=17,g={
@@ -48452,7 +48452,7 @@ qo(1,{coords={
 i(25499,{b=1,f=52,q=2,u=17}),
 i(25500,{b=1,f=51,q=2,u=17}),
 s(135855,25501,{b=1,f=3,q=2,u=17})}}),
-q(10395,{lvl=58,providers={{"i",29588},{"i",29589}},r=2,u=17}),
+q(10395,{lvl=58,qis={29589},qss={29588},r=2,u=17}),
 q(10838,{coords={
 [100]={{52.2,36.4}}},lvl=58,qgs={16588},r=1,sourceQuests={10864},u=17,g={
 qo(1,{coords={
@@ -48467,7 +48467,7 @@ qo(2,{coords={
 qo(3,{coords={
 [100]={{13,58.6}}},providers={{"i",29501},{"n",20679}},u=17})}}),
 q(10349,{coords={
-[100]={{15.6,52}}},lvl=61,providers={{"i",29477}},qgs={19293},sourceQuests={10134},u=17}),
+[100]={{15.6,52}}},lvl=61,qgs={19293},qis={29477},sourceQuests={10134},u=17}),
 q(10935,{coords={
 [100]={{54.3,63.6}}},lvl=58,qgs={22430},r=2,sourceQuests={10909,10916},u=17,g={
 qo(1,{coords={
@@ -48500,7 +48500,7 @@ q(10141,{coords={
 q(9558,{coords={
 [100]={{54.2,63.5}}},isBreadcrumb=1,lvl=60,nextQuests={9417},qgs={16826},r=2,sourceQuests={10143},u=17}),
 q(9406,{coords={
-[100]={{31.9,27.7}}},lvl=60,providers={{"i",23569}},qgs={16845},r=1,sourceQuests={9410},u=17,g={
+[100]={{31.9,27.7}}},lvl=60,qgs={16845},qis={23569},r=1,sourceQuests={9410},u=17,g={
 s(135864,25510,{b=1,f=4,loc=42,q=2,u=17}),
 s(135866,25512,{b=1,f=6,loc=42,q=2,u=17}),
 s(135865,25511,{b=1,f=7,loc=46,q=2,u=17}),
@@ -48552,7 +48552,7 @@ s(135860,25506,{b=1,f=6,loc=40,q=2,u=17})}}),
 q(10093,{coords={
 [100]={{56.6,66.5}}},lvl=58,qgs={16839},r=2,sourceQuests={10047},u=17}),
 q(9405,{coords={
-[100]={{55,35.9}}},lvl=60,providers={{"i",23550}},qgs={3230},r=1,sourceQuests={9401},u=17}),
+[100]={{55,35.9}}},lvl=60,qgs={3230},qis={23550},r=1,sourceQuests={9401},u=17}),
 q(10278,{coords={
 [100]={{61.8,81.5}}},lvl=58,qgs={19683},r=1,u=17,g={
 qo(1,{coords={
@@ -48572,7 +48572,7 @@ q(10050,{coords={
 qo(1,{providers={{"n",16904}},u=17}),
 qo(2,{providers={{"n",16905}},u=17}),
 qo(3,{providers={{"n",16906}},u=17})}}),
-q(10393,{lvl=58,providers={{"i",29589},{"i",29590}},r=1,u=17}),
+q(10393,{lvl=58,qis={29589},qss={29590},r=1,u=17}),
 q(10294,{coords={
 [100]={{61.8,81.5}}},lvl=58,qgs={19683},r=1,sourceQuests={10278},u=17,g={
 qo(1,{crs={17014,19527},providers={{"i",29161}},u=17})}}),
@@ -49288,9 +49288,9 @@ s(135921,25567,{b=1,f=6,loc=45,q=2,u=17}),
 s(135920,25566,{b=1,f=7,loc=44,q=2,u=17}),
 s(135919,25565,{b=1,f=5,loc=41,q=2,u=17})}}),
 q(9871,{coords={
-[107]={{33.9,58}}},crs={18238},DisablePartySync=1,isBreadcrumb=1,lc={1,"factionID",978.7},nextQuests={9873},providers={{"i",24559}},r=2,u=17}),
+[107]={{33.9,58}}},crs={18238},DisablePartySync=1,isBreadcrumb=1,lc={1,"factionID",978.7},nextQuests={9873},qss={24559},r=2,u=17}),
 q(9872,{coords={
-[107]={{33.9,58}}},crs={18238},DisablePartySync=1,isBreadcrumb=1,lc={1,"factionID",941.6,"lvl",50},providers={{"i",24558}},r=1,u=17}),
+[107]={{33.9,58}}},crs={18238},DisablePartySync=1,isBreadcrumb=1,lc={1,"factionID",941.6,"lvl",50},qss={24558},r=1,u=17}),
 q(9867,{coords={
 [107]={{54.6,39.8}}},description="Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",minReputation={941,0},qgs={18068},r=1,u=17,g={
 qo(1,{crs={18204},providers={{"i",24543}},u=17}),
@@ -49322,7 +49322,7 @@ q(10075,{coords={
 [107]={{41.2,44.2}}},cost={{"i",26043,10}},description="This quest is only accessible when the Horde controls Halaa.",qgs={18816},r=1,repeatable=1,sourceQuests={10074},u=17,g={
 i(26044,{b=1,q=2,u=17})}}),
 q(10004,{coords={
-[107]={{27.4,42}}},maps={111},providers={{"i",25751}},qgs={18417},sourceQuests={10001},u=17}),
+[107]={{27.4,42}}},maps={111},qgs={18417},qis={25751},sourceQuests={10001},u=17}),
 q(9797,{coords={
 [102]={{32,50.4}}},isBreadcrumb=1,lvl=64,nextQuests={9888},qgs={18091},r=1,u=17}),
 q(10650,{minReputation={932,0},qgs={18417},sourceQuests={10649},u=17}),
@@ -49375,7 +49375,7 @@ q(9913,{coords={
 [107]={{51,69.8},{51.9,34.8}}},isBreadcrumb=1,nextQuests={9900},qgs={18335},u=17}),
 q(10990,{c={11},coords={
 [105]={{61.5,38.3}}},cost={{"i",32355,1},{"i",32657,1}},lvl=70,qgs={22924},rwp=40001,sourceQuests={10988},u=2}),
-q(9861,{crs={17158,17159,17160},providers={{"i",24504}},u=17}),
+q(9861,{crs={17158,17159,17160},qss={24504},u=17}),
 q(9888,{coords={
 [107]={{55.6,37.6}}},description="Completing this quest will grant Neutral with The Mag'har.",qgs={18106},r=1,sourceQuests={9797},u=17}),
 q(10171,{coords={
@@ -49958,7 +49958,7 @@ q(10272,{coords={
 [109]={{71.2,35.1}}},qgs={20110},sourceQuests={10281},u=17,g={
 qo(1,{providers={{"i",28971},{"o",184077}},u=17})}}),
 q(10305,{coords={
-[109]={{58.6,88.6}}},crs={19546},providers={{"i",29234}},u=17,g={
+[109]={{58.6,88.6}}},crs={19546},qss={29234},u=17,g={
 qo(1,{providers={{"i",28336},{"o",183268}},u=17})}}),
 q(10436,{coords={
 [109]={{44.7,14.6}}},qgs={20913},sourceQuests={10430},u=17,g={
@@ -49985,7 +49985,7 @@ s(140360,30014,{b=1,f=5,loc=46,q=3,u=17}),
 s(140362,30016,{b=1,f=7,loc=40,q=3,u=17}),
 toy(30847,{b=1,loc=40,q=2,rwp=70003,sourceID=141193,u=17})}}),
 q(10182,{coords={
-[109]={{60.6,87.6}}},crs={19543},providers={{"i",29233}},u=17,g={
+[109]={{60.6,87.6}}},crs={19543},qss={29233},u=17,g={
 qo(1,{providers={{"i",28351},{"o",183269}},u=17})}}),
 q(10924,{coords={
 [109]={{66.4,67.2}}},qgs={22479},u=17}),
@@ -50003,7 +50003,7 @@ s(140131,29785,{b=1,f=6,loc=43,q=2,u=17}),
 s(140130,29784,{b=1,f=5,loc=44,q=2,u=17}),
 s(140132,29786,{b=1,f=7,loc=47,q=2,u=17})}}),
 q(10307,{coords={
-[109]={{59.6,87.6}}},crs={19545},providers={{"i",29236}},u=17,g={
+[109]={{59.6,87.6}}},crs={19545},qss={29236},u=17,g={
 qo(1,{providers={{"i",28353},{"o",183266}},u=17})}}),
 q(10422,{coords={
 [109]={{58.6,31.7},{59.4,32},{60.1,32.5}}},crs={20770},qgs={20450},u=17,g={
@@ -50012,7 +50012,7 @@ q(10319,{coords={
 [109]={{57.5,86.3}}},qgs={19488},sourceQuests={10314},u=17,g={
 qo(1,{providers={{"i",29361},{"o",184310}},u=17})}}),
 q(10306,{coords={
-[109]={{59.8,85.6}}},crs={19544},providers={{"i",29235}},u=17,g={
+[109]={{59.8,85.6}}},crs={19544},qss={29235},u=17,g={
 qo(1,{providers={{"i",28352},{"o",183267}},u=17})}}),
 q(10265,{coords={
 [109]={{32.4,64.2}}},qgs={19880},sourceQuests={10263,10264},u=17,g={
@@ -50312,7 +50312,7 @@ s(201379,30352,{b=1,f=7,loc=43,q=2,u=17}),
 s(140687,30341,{b=1,f=5,loc=44,q=2,u=17}),
 s(140688,30342,{b=1,f=6,loc=45,q=2,u=17})}}),
 q(10413,{coords={
-[109]={{54.6,44.1}}},crs={20779},providers={{"i",29738}},u=17,g={
+[109]={{54.6,44.1}}},crs={20779},qss={29738},u=17,g={
 s(140684,30338,{b=1,f=3,q=2,u=17}),
 i(30339,{b=1,f=52,q=2,u=17}),
 i(30340,{b=1,f=53,q=2,u=17})}}),
@@ -50660,7 +50660,7 @@ qo(3,{providers={{"i",30823}},u=17})}}),
 q(10628,{coords={
 [104]={{57.3,49.5}}},lvl=68,qgs={21826},sourceQuests={10622},u=17}),
 q(10708,{altQuests={11052},coords={
-[104]={{58.1,48.1}}},lvl=68,maps={111},providers={{"i",32646}},qgs={21700},sourceQuests={10707},u=17,g={
+[104]={{58.1,48.1}}},lvl=68,maps={111},qgs={21700},qis={32646},sourceQuests={10707},u=17,g={
 s(141278,30932,{b=1,f=4,loc=45,q=3,u=17}),
 s(141345,30999,{b=1,f=20,q=3,u=17}),
 s(141346,31000,{b=1,f=31,q=3,u=17}),
@@ -50668,7 +50668,7 @@ s(141289,30943,{b=1,f=5,loc=44,q=3,u=17}),
 s(141330,30984,{b=1,f=8,q=3,u=17}),
 s(141763,31417,{b=1,f=28,q=3,u=17})}}),
 q(11052,{altQuests={10708},coords={
-[104]={{58.1,48.1}}},lvl=68,maps={111},providers={{"i",32646}},qgs={21700},rwp=30002,sourceQuests={10707},u=2,g={
+[104]={{58.1,48.1}}},lvl=68,maps={111},qgs={21700},qis={32646},rwp=30002,sourceQuests={10707},u=2,g={
 s(141278,30932,{b=1,f=4,loc=45,q=3,u=17}),
 s(141345,30999,{b=1,f=20,q=3,u=17}),
 s(141346,31000,{b=1,f=31,q=3,u=17}),
@@ -50733,7 +50733,7 @@ s(141332,30986,{b=1,f=8,q=2,u=17}),
 s(141293,30947,{b=1,f=6,loc=42,q=2,u=17}),
 s(141292,30946,{b=1,f=5,loc=40,q=2,u=17}),
 s(141275,30929,{b=1,f=4,loc=46,q=2,u=17})}}),
-q(10774,{description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,providers={{"i",31310}},qgs={22059},r=2,sourceQuests={10773},u=17,g={
+q(10774,{description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,qgs={22059},qis={31310},r=2,sourceQuests={10773},u=17,g={
 qo(1,{coords={
 [104]={{53,70.6}}},providers={{"n",22012}},u=17}),
 qo(2,{coords={
@@ -50742,21 +50742,21 @@ qo(3,{coords={
 [104]={{53,70.6}}},crs={22012},providers={{"i",31271}},u=17})}}),
 q(10546,{coords={
 [104]={{53.8,23.6}}},lvl=68,qgs={21183},sourceQuests={10519},u=17}),
-q(10773,{description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,providers={{"i",31310}},qgs={22059},r=2,sourceQuests={10772},u=17,g={
+q(10773,{description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,qgs={22059},qis={31310},r=2,sourceQuests={10772},u=17,g={
 qo(1,{providers={{"n",22016}},u=17}),
 qo(2,{providers={{"n",22018}},u=17}),
 qo(3,{providers={{"n",19824}},u=17})}}),
-q(10751,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,providers={{"i",31108}},qgs={21998},r=1,sourceQuests={10750},u=17,g={
+q(10751,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,qgs={21998},qis={31108},r=1,sourceQuests={10750},u=17,g={
 qo(1,{providers={{"n",22016}},u=17}),
 qo(2,{providers={{"n",22018}},u=17}),
 qo(3,{providers={{"n",22017}},u=17})}}),
 q(10586,{coords={
-[104]={{40.4,41.2}}},lvl=67,providers={{"i",30688}},qgs={21471},r=2,sourceQuests={10583,10585},u=17,g={
+[104]={{40.4,41.2}}},lvl=67,qgs={21471},qis={30688},r=2,sourceQuests={10583,10585},u=17,g={
 qo(1,{coords={
 [104]={{39,46}}},providers={{"n",21287}},u=17}),
 qo(2,{crs={21287},providers={{"i",30689}},u=17})}}),
 q(10603,{coords={
-[104]={{38.5,38.1}}},lvl=67,providers={{"i",30688}},qgs={21475},r=1,sourceQuests={10601,10602},u=17,g={
+[104]={{38.5,38.1}}},lvl=67,qgs={21475},qis={30688},r=1,sourceQuests={10601,10602},u=17,g={
 qo(1,{coords={
 [104]={{39,46}}},providers={{"n",21287}},u=17}),
 qo(2,{crs={21287},providers={{"i",30689}},u=17})}}),
@@ -50785,14 +50785,14 @@ q(11046,{coords={
 q(10528,{qgs={21292},sourceQuests={10527},u=17,g={
 qo(1,{crs={21309},providers={{"i",30442}},u=17})}}),
 q(10776,{coords={
-[104]={{52.4,68.4}}},description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,providers={{"i",31310}},qgs={22059},r=2,sourceQuests={10775},u=17,g={
+[104]={{52.4,68.4}}},description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,qgs={22059},qis={31310},r=2,sourceQuests={10775},u=17,g={
 qo(1,{crs={19823},providers={{"i",31279}},u=17}),
 s(141625,31279,{collectible=false,f=9,q=2,u=17}),
 i(31075,{b=1,f=52,q=3,u=17}),
 i(31078,{b=1,f=52,q=3,u=17}),
 i(31077,{b=1,f=52,q=3,u=17}),
 i(31076,{b=1,f=52,q=3,u=17})}}),
-q(10769,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,providers={{"i",31108}},qgs={21998},r=1,sourceQuests={10768},u=17,g={
+q(10769,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,qgs={21998},qis={31108},r=1,sourceQuests={10768},u=17,g={
 qo(1,{crs={19823},providers={{"i",31279}},u=17}),
 s(141625,31279,{collectible=false,f=9,q=2,u=17}),
 i(31075,{b=1,f=52,q=3,u=17}),
@@ -50866,9 +50866,9 @@ q(10643,{coords={
 qo(1,{crs={21795},providers={{"i",30719}},u=17}),
 s(141065,30719,{b=1,f=2,loc=40,q=1,u=17})}}),
 q(10621,{coords={
-[104]={{23,35.6}}},crs={21499},lvl=67,providers={{"i",30756}},r=2,u=17}),
+[104]={{23,35.6}}},crs={21499},lvl=67,qss={30756},r=2,u=17}),
 q(10623,{coords={
-[104]={{23,35.6}}},crs={21499},lvl=67,providers={{"i",30579}},r=1,u=17}),
+[104]={{23,35.6}}},crs={21499},lvl=67,qss={30579},r=1,u=17}),
 q(10782,{coords={
 [104]={{35.2,40.4},{35.4,37.6},{35.4,41.8}}},lvl=67,qgs={22024},sourceQuests={10780},u=17,g={
 qo(1,{coords={
@@ -50998,9 +50998,9 @@ qo(1,{crs={21408},providers={{"i",30819}},u=17})}}),
 q(10824,{coords={
 [104]={{56.2,58.7}}},cost={{"i",30810,10}},lvl=68,minReputation={934,0},qgs={22211},sourceQuests={10552},u=17}),
 q(10775,{coords={
-[104]={{52.4,68.4}}},description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,providers={{"i",31310}},qgs={22059},r=2,sourceQuests={10774},u=17,g={
+[104]={{52.4,68.4}}},description="Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,qgs={22059},qis={31310},r=2,sourceQuests={10774},u=17,g={
 qo(1,{crs={21979,22016,22017,22018,22093},providers={{"i",31278}},u=17})}}),
-q(10768,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,providers={{"i",31108}},qgs={21998},r=1,sourceQuests={10765},u=17,g={
+q(10768,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=68,qgs={21998},qis={31108},r=1,sourceQuests={10765},u=17,g={
 qo(1,{crs={21979,22016,22017,22018,22093},providers={{"i",31278}},u=17})}}),
 q(10568,{coords={
 [104]={{62.6,28.4}}},lvl=68,minReputation={932,0},qgs={21402},sourceQuests={10551},u=17,g={
@@ -51077,7 +51077,7 @@ q(10707,{coords={
 qo(1,{coords={
 [104]={{71.4,35.4}}},crs={22006},providers={{"i",31307}},u=17})}}),
 q(10550,{coords={
-[111]={{63.8,69.7}}},lvl=68,providers={{"i",30501}},qgs={21411},sourceQuests={10547},u=17}),
+[111]={{63.8,69.7}}},lvl=68,qgs={21411},qis={30501},sourceQuests={10547},u=17}),
 q(10588,{coords={
 [104]={{53.8,23.4}}},lvl=68,qgs={21183},sourceQuests={10523,10541,10579},u=17,g={
 qo(1,{providers={{"i",30657},{"n",21181}},u=17}),
@@ -51101,20 +51101,20 @@ q(10522,{coords={
 qo(1,{coords={
 [104]={{47.1,29.9}}},providers={{"i",30426},{"i",30428},{"o",184716}},u=17})}}),
 q(10523,{coords={
-[104]={{44.6,23.6}}},lvl=68,providers={{"i",30429}},qgs={21291},sourceQuests={10522},u=17,g={
+[104]={{44.6,23.6}}},lvl=68,qgs={21291},qis={30429},sourceQuests={10522},u=17,g={
 s(141291,30945,{b=1,f=5,loc=42,q=2,u=17}),
 s(141269,30923,{b=1,f=4,loc=45,q=2,u=17}),
 s(141302,30956,{b=1,f=6,loc=43,q=2,u=17}),
 i(30981,{b=1,f=51,q=2,u=17})}}),
 q(10541,{coords={
-[104]={{29.6,50.6}}},lvl=68,providers={{"i",30454}},qgs={21318},sourceQuests={10540},u=17,g={
+[104]={{29.6,50.6}}},lvl=68,qgs={21318},qis={30454},sourceQuests={10540},u=17,g={
 s(141282,30936,{b=1,f=5,loc=45,q=2,u=17}),
 s(141277,30931,{b=1,f=4,loc=40,q=2,u=17}),
 s(141303,30957,{b=1,f=6,loc=46,q=2,u=17}),
 s(141317,30971,{b=1,f=3,q=2,u=17}),
 s(141305,30959,{b=1,f=7,loc=42,q=2,u=17})}}),
 q(10579,{coords={
-[104]={{47.6,57.2}}},lvl=68,providers={{"i",30646}},qgs={21293},sourceQuests={10578},u=17,g={
+[104]={{47.6,57.2}}},lvl=68,qgs={21293},qis={30646},sourceQuests={10578},u=17,g={
 s(141297,30951,{b=1,f=6,loc=44,q=3,u=17}),
 s(141308,30962,{b=1,f=7,loc=45,q=3,u=17}),
 s(141285,30939,{b=1,f=5,loc=47,q=3,u=17}),
@@ -51159,11 +51159,11 @@ q(10680,{coords={
 q(10681,{coords={
 [104]={{28.4,26.5}}},isBreadcrumb=1,lvl=68,nextQuests={10458},qgs={21938},r=1,u=17}),
 q(10662,{coords={
-[104]={{36.8,54.8}}},lvl=67,maps={108},providers={{"i",30822}},qgs={19370},r=2,sourceQuests={10626},u=17}),
+[104]={{36.8,54.8}}},lvl=67,maps={108},qgs={19370},qis={30822},r=2,sourceQuests={10626},u=17}),
 q(10663,{coords={
-[104]={{29.8,31.2}}},lvl=67,maps={108},providers={{"i",30822}},qgs={19333},r=1,sourceQuests={10627},u=17}),
+[104]={{29.8,31.2}}},lvl=67,maps={108},qgs={19333},qis={30822},r=1,sourceQuests={10627},u=17}),
 q(10793,{coords={
-[104]={{51.6,61}}},lvl=68,providers={{"i",31345}},u=17}),
+[104]={{51.6,61}}},lvl=68,qss={31345},u=17}),
 q(10678,{coords={
 [104]={{36.5,55.2}}},lvl=67,qgs={21777},r=2,sourceQuests={10677},u=17,g={
 qo(1,{coords={
@@ -51288,7 +51288,7 @@ qo(1,{coords={
 q(10660,{coords={
 [104]={{30,28.2}}},lvl=67,qgs={21770},r=1,u=17,g={
 qo(1,{crs={21408,21900},providers={{"i",30819}},u=17})}}),
-q(10765,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=67,providers={{"i",31108}},qgs={21998},r=1,sourceQuests={10751},u=17,g={
+q(10765,{description="Use your Kor'kron Flare Gun to summon the questgiver anywhere on the Path of Conquest.",lvl=67,qgs={21998},qis={31108},r=1,sourceQuests={10751},u=17,g={
 qo(1,{coords={
 [104]={{53,70.6}}},providers={{"n",22012}},u=17}),
 qo(2,{coords={
@@ -51554,7 +51554,7 @@ q(11093,{awp=20100,coords={
 [108]={{63.6,65.8}}},qgs={23415},u=1802,g={
 qo(1,{awp=20003,crs={23219,23439},providers={{"i",32834}},u=1802})}}),
 q(11021,{awp=20100,coords={
-[108]={{69.2,78.2}}},crs={23066},providers={{"i",32523}},u=1802}),
+[108]={{69.2,78.2}}},crs={23066},qss={32523},u=1802}),
 q(11006,{awp=20100,coords={
 [108]={{64.1,66.9}}},cost={{"i",32388,6}},maxReputation={1031,42000},qgs={23042},repeatable=1,sourceQuests={11004},u=1802,g={
 i(32446,{awp=20003,b=1,q=1,u=1802})}}),
@@ -51617,7 +51617,7 @@ qo(2,{providers={{"n",21902}},u=17}),
 qo(3,{providers={{"n",21907}},u=17})}}),
 q(9978,{coords={
 [108]={{44.3,26.3}}},qgs={18446},sourceQuests={9968,9971},u=17}),
-q(10880,{crs={21661,21902,21907},providers={{"i",31707}},u=17}),
+q(10880,{crs={21661,21902,21907},qss={31707},u=17}),
 q(9971,{coords={
 [108]={{44.3,26.3}}},qgs={18446},u=17,g={
 qo(1,{providers={{"o",183789}},u=17})}}),
@@ -51806,7 +51806,7 @@ s(142143,31797,{b=1,f=5,loc=41,q=2,u=17}),
 s(142142,31796,{b=1,f=6,loc=44,q=2,u=17}),
 s(142140,31794,{b=1,f=7,loc=46,q=2,u=17})}}),
 q(9793,{altQuests={10104},coords={
-[102]={{68.2,50}}},isBreadcrumb=1,lvl=62,nextQuests={10026},providers={{"i",24415}},qgs={18004},r=2,u=17}),
+[102]={{68.2,50}}},isBreadcrumb=1,lvl=62,nextQuests={10026},qgs={18004},qis={24415},r=2,u=17}),
 q(10446,{coords={
 [108]={{69.6,44.6}}},qgs={21006},r=2,sourceQuests={9996},u=17,g={
 s(142130,31784,{b=1,f=5,loc=40,q=2,u=17}),
@@ -52325,7 +52325,7 @@ qo(1,{crs={18132,18133,18283,20197,20198},providers={{"i",24372}},u=17})}}),
 q(9716,{coords={
 [102]={{78.4,62}}},lvl=61,qgs={17841},sourceQuests={9912},u=17}),
 q(9731,{coords={
-[102]={{25.5,42.9},{62.1,40.7},{63.2,64.2},{70.5,80.5}}},lvl=59,providers={{"i",24330}},sourceQuests={9718},u=17,g={
+[102]={{25.5,42.9},{62.1,40.7},{63.2,64.2},{70.5,80.5}}},lvl=59,qss={24330},sourceQuests={9718},u=17,g={
 i(27734,{b=1,f=52,q=2,u=17}),
 i(27735,{b=1,f=51,q=2,u=17}),
 i(27733,{b=1,f=52,q=2,u=17}),
@@ -52462,7 +52462,7 @@ q(9773,{coords={
 qo(1,{coords={
 [102]={{75,66.6}}},crs={18138},providers={{"i",24374}},u=17})}}),
 q(9794,{coords={
-[102]={{41.2,28.6}}},isBreadcrumb=1,lvl=58,nextQuests={10455},providers={{"i",26048}},qgs={18019},r=2,u=17}),
+[102]={{41.2,28.6}}},isBreadcrumb=1,lvl=58,nextQuests={10455},qgs={18019},qis={26048},r=2,u=17}),
 q(9726,{coords={
 [102]={{19.5,50}}},lvl=62,minReputation={970,3000},qgs={17856},u=17,g={
 qo(1,{coords={
@@ -52510,7 +52510,7 @@ s(136270,25923,{b=1,f=6,loc=41,q=2,u=17}),
 s(136271,25924,{b=1,f=5,loc=47,q=2,u=17}),
 s(136272,25925,{b=1,f=4,loc=41,q=2,u=17})}}),
 q(9775,{coords={
-[102]={{85.3,54.8}}},lvl=62,providers={{"i",24382}},qgs={18011},r=1,u=17}),
+[102]={{85.3,54.8}}},lvl=62,qgs={18011},qis={24382},r=1,u=17}),
 q(9732,{coords={
 [100]={{16,52.1}}},lvl=60,qgs={16885},sourceQuests={9724},u=17,g={
 s(135878,25524,{b=1,f=5,loc=47,q=2,u=17}),
@@ -52544,7 +52544,7 @@ q(9846,{coords={
 qo(1,{coords={
 [102]={{45.8,60.6}}},crs={18113,18114,20270},providers={{"i",24497}},u=17})}}),
 q(9919,{coords={
-[102]={{19,63.4}}},lvl=60,minReputation={970,0},providers={{"i",25491}},qgs={17923},u=17}),
+[102]={{19,63.4}}},lvl=60,minReputation={970,0},qgs={17923},qis={25491},u=17}),
 q(9709,{coords={
 [102]={{23.3,66.2}}},lvl=61,qgs={17831},sourceQuests={9708},u=17,g={
 qo(1,{coords={
@@ -52561,7 +52561,7 @@ q(9841,{coords={
 [102]={{31.6,49.2}}},lvl=62,qgs={18015},r=1,u=17,g={
 qo(1,{coords={
 [102]={{25.8,31.6}}},providers={{"n",18133}},u=17})}}),
-q(11531,{lvl=67,providers={{"i",34469},{"i",34474},{"o",182952}},r=2,repeatable=1,requireSkill=356,u=17}),
+q(11531,{lvl=67,providers={{"o",182952}},qis={34474},qss={34469},r=2,repeatable=1,requireSkill=356,u=17}),
 q(9903,{coords={
 [102]={{32.2,49.6}}},lvl=62,qgs={18018},r=1,sourceQuests={9845},u=17,g={
 qo(1,{coords={
@@ -52573,7 +52573,7 @@ qo(2,{coords={
 q(9912,{coords={
 [100]={{16,52.1}}},isBreadcrumb=1,lvl=61,nextQuests={9716},qgs={16885},u=17}),
 q(9911,{coords={
-[102]={{32.8,59.5}}},lvl=62,providers={{"i",25459}},u=17}),
+[102]={{32.8,59.5}}},lvl=62,qss={25459},u=17}),
 q(9782,{coords={
 [102]={{68.2,50}}},lvl=60,qgs={18004},r=2,u=17,g={
 qo(1,{coords={
@@ -52652,7 +52652,7 @@ q(9780,{coords={
 [102]={{67.6,47.8}}},lvl=60,qgs={18006},r=2,sourceQuests={9791},u=17,g={
 qo(1,{coords={
 [102]={{75,66.6}}},crs={18138},providers={{"i",24374}},u=17})}}),
-q(9875,{lvl=60,maxReputation={942,9000},providers={{"i",24407}},repeatable=1,sourceQuests={9784},u=17}),
+q(9875,{lvl=60,maxReputation={942,9000},qss={24407},repeatable=1,sourceQuests={9784},u=17}),
 q(9901,{coords={
 [102]={{68.6,49.4}}},lvl=60,qgs={18295},r=2,u=17,g={
 qo(1,{coords={
@@ -52667,7 +52667,7 @@ qo(3,{coords={
 [102]={{20.8,3.6}}},providers={{"n",18121}},u=17}),
 s(135971,25617,{b=1,f=5,loc=40,q=2,u=17})}}),
 q(10964,{c={11},coords={
-[102]={{80.2,65.2}}},lvl=70,providers={{"i",31953}},qgs={22832},rwp=40001,sourceQuests={10961},u=2}),
+[102]={{80.2,65.2}}},lvl=70,qgs={22832},qis={31953},rwp=40001,sourceQuests={10961},u=2}),
 q(9820,{coords={
 [102]={{32,49.3}}},lvl=58,providers={{"o",182165}},r=1,u=17,g={
 qo(1,{coords={
@@ -52686,8 +52686,8 @@ q(9724,{coords={
 [102]={{78.4,62}}},lvl=61,maps={100},qgs={17841},sourceQuests={9731},u=17}),
 q(9697,{coords={
 [102]={{78.6,63}}},isBreadcrumb=1,lvl=61,nextQuests={9701},qgs={17834},u=17}),
-q(9827,{crs={18124},lvl=60,providers={{"i",24483}},r=2,u=17}),
-q(9828,{crs={18124},lvl=60,providers={{"i",24484}},r=1,u=17}),
+q(9827,{crs={18124},lvl=60,qss={24483},r=2,u=17}),
+q(9828,{crs={18124},lvl=60,qss={24484},r=1,u=17}),
 q(10355,{coords={
 [102]={{68.6,48.8}}},lvl=60,qgs={18007},r=2,sourceQuests={9827},u=17,g={
 qo(1,{coords={
@@ -52907,7 +52907,7 @@ q(13571,{coords={
 [126]={{44.2,25.6}}},qgs={32516},requireSkill=185,sourceQuests={12645},u=30,g={
 r(53056,{learnedAt=350,requireSkill=185,u=30})}}),
 q(13845,{coords={
-[126]={{63.6,12}}},providers={{"i",46004},{"n",29535}},repeatable=1,u=30})}}),
+[126]={{63.6,12}}},providers={{"n",29535}},qss={46004},repeatable=1,u=30})}}),
 h(-58,{u=30,g={
 n(29535,{coords={
 [126]={{63.2,11.4}}},sym={{"select","itemID",4565}},u=30}),
@@ -53903,12 +53903,12 @@ r(56001,{learnedAt=415,requireSkill=197,u=30}),
 r(56003,{learnedAt=415,requireSkill=197,u=30})}})}})}})}}),
 h(-45,{u=30,g={
 q(14409,{awp=30300,coords={
-[125]={{36.4,61}}},lvl=71,maps={89},providers={{"i",49335}},qgs={36506},r=2,rwp=40001,u=2}),
+[125]={{36.4,61}}},lvl=71,maps={89},qgs={36506},qis={49335},r=2,rwp=40001,u=2}),
 q(29608,{awp=40300,coords={
 [114]={{58.9,68.2}},
 [117]={{59.7,63.2}}},isBreadcrumb=1,qgs={23736,26879},r=2,u=30}),
 q(13986,{coords={
-[125]={{60.2,26.6}}},lvl=71,maps={88},providers={{"i",46775}},qgs={35471},r=1,rwp=40003,u=2}),
+[125]={{60.2,26.6}}},lvl=71,maps={88},qgs={35471},qis={46775},r=1,rwp=40003,u=2}),
 q(24580,{coords={
 [125]={{57.3,66.7}}},isWeekly=1,maps={162},qgs={20735},u=33,g={
 qo(1,{providers={{"n",15956}},u=33})}}),
@@ -54002,9 +54002,9 @@ q(24590,{coords={
 [125]={{57.3,66.7}}},isWeekly=1,maps={186},qgs={20735},u=33,g={
 qo(1,{providers={{"n",36612}},u=33})}}),
 q(29073,{awp=40006,coords={
-[125]={{48.7,39.6},{59.2,27.4}}},description="If you have your hearthstone set to Dalaran, this quest will be available to you.",lvl=80,providers={{"i",68809},{"o",208317}},r=1,rwp=60200,u=30}),
+[125]={{48.7,39.6},{59.2,27.4}}},description="If you have your hearthstone set to Dalaran, this quest will be available to you.",lvl=80,providers={{"o",208317}},qis={68809},r=1,rwp=60200,u=30}),
 q(29071,{awp=40006,coords={
-[125]={{25.9,43.1},{37.8,63.8},{47.8,41.2}}},description="If you have your hearthstone set to Dalaran, this quest will be available to you.",lvl=80,providers={{"i",68808},{"o",208316}},r=2,rwp=60200,u=30}),
+[125]={{25.9,43.1},{37.8,63.8},{47.8,41.2}}},description="If you have your hearthstone set to Dalaran, this quest will be available to you.",lvl=80,providers={{"o",208316}},qis={68808},r=2,rwp=60200,u=30}),
 q(24584,{coords={
 [125]={{57.3,66.7}}},isWeekly=1,maps={141},qgs={20735},u=33,g={
 qo(1,{providers={{"n",28859}},u=33})}}),
@@ -54021,7 +54021,7 @@ i(44113,{b=1,f=55,q=1,requireSkill=185,u=30}),
 cu(81,{requireSkill=185,u=30}),
 crit(12085,{achID=1783,id=6,r=1,requireSkill=185,u=30})}}),
 q(13148,{coords={
-[125]={{40.7,35.4}}},lvl=77,providers={{"i",43297},{"n",28701}},repeatable=1,requireSkill=755,u=30,g={
+[125]={{40.7,35.4}}},lvl=77,providers={{"n",28701}},qss={43297},repeatable=1,requireSkill=755,u=30,g={
 qo(1,{cost={{"i",36923,1},{"i",43299,1}},providers={{"i",43298}},requireSkill=755,u=30}),
 cu(61,{requireSkill=755,u=30})}}),
 q(24581,{coords={
@@ -54184,9 +54184,9 @@ crit(7297,{achID=2018,awp=30002,id=3,OnUpdate=function(t)if settings:GetUnobtain
 q(14103,{coords={
 [125]={{40.7,35.4}}},cost={{"i",46849,10}},qgs={28701},repeatable=1,requireSkill=755,u=32,g={
 cu(61,{requireSkill=755,u=32})}}),
-q(24431,{providers={{"i",49667}},repeatable=1,requireSkill=185,u=30,g={
+q(24431,{qss={49667},repeatable=1,requireSkill=185,u=30,g={
 cu(81,{requireSkill=185,u=30})}}),
-q(14160,{awp=30200,providers={{"i",47246}},requireSkill=755,rwp=30202,u=2}),
+q(14160,{awp=30200,qss={47246},requireSkill=755,rwp=30202,u=2}),
 q(24588,{coords={
 [125]={{57.3,66.7}}},isWeekly=1,maps={147},qgs={20735},u=33,g={
 qo(1,{providers={{"n",33293}},u=33})}})}}),
@@ -57612,7 +57612,7 @@ q(11587,{coords={
 [114]={{45.2,33.3}}},qgs={25262},sourceQuests={11574,11575},u=30}),
 q(11594,{coords={
 [114]={{48.3,19.3}}},qgs={25336},r=1,sourceQuests={11591},u=30}),
-q(11941,{crs={25719},providers={{"i",35648}},u=30}),
+q(11941,{crs={25719},qss={35648},u=30}),
 q(11697,{coords={
 [114]={{73.4,18.7}}},qgs={25705},r=2,sourceQuests={11694},u=30}),
 q(11712,{coords={
@@ -57916,7 +57916,7 @@ s(171189,37031,{b=1,f=28,q=2,u=30})}}),
 q(11625,{coords={
 [114]={{43.6,80.55}}},qgs={25450},sourceQuests={11620},u=30,g={
 qo(1,{crs={26451},providers={{"i",35774}},u=30})}}),
-q(11729,{crs={25752,25753,25758,25793},providers={{"i",34984}},r=2,u=30}),
+q(11729,{crs={25752,25753,25758,25793},qss={34984},r=2,u=30}),
 q(11686,{coords={
 [114]={{38,52.5}}},qgs={25437},r=1,sourceQuests={11618},u=30}),
 q(11716,{coords={
@@ -57962,7 +57962,7 @@ s(171487,37481,{b=1,f=7,loc=42,q=2,u=30}),
 s(171426,37404,{b=1,f=5,loc=40,q=2,u=30}),
 i(37524,{b=1,f=52,q=2,u=30}),
 s(171296,37205,{b=1,f=4,loc=41,q=2,u=30})}}),
-q(11654,{crs={26115},providers={{"i",34815}},r=1,u=30}),
+q(11654,{crs={26115},qss={34815},r=1,u=30}),
 q(11631,{coords={
 [114]={{50.2,9.7}}},qgs={25339},r=1,sourceQuests={11629},u=30,g={
 s(171456,37442,{b=1,f=6,loc=47,q=2,u=30}),
@@ -57989,7 +57989,7 @@ q(11963,{coords={
 q(11890,{coords={
 [114]={{77.2,38.4}}},qgs={25982},r=1,sourceQuests={11888},u=30}),
 q(11632,{coords={
-[114]={{43.1,56.7}}},description="Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",providers={{"i",34777}},r=1,u=30,g={
+[114]={{43.1,56.7}}},description="Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",qss={34777},r=1,u=30,g={
 s(171494,37505,{b=1,f=7,loc=42,q=2,u=30}),
 s(171417,37394,{b=1,f=5,loc=45,q=2,u=30}),
 s(171442,37424,{b=1,f=6,loc=41,q=2,u=30}),
@@ -58284,9 +58284,9 @@ q(12439,{coords={
 q(12274,{coords={
 [115]={{73.5,73.5}}},qgs={27350},r=1,sourceQuests={12260},u=30}),
 q(12067,{coords={
-[115]={{26.3,64.9}}},crs={26762},providers={{"i",36756}},r=2,u=30}),
+[115]={{26.3,64.9}}},crs={26762},qss={36756},r=2,u=30}),
 q(12085,{coords={
-[115]={{32.5,71.7}}},crs={26815},providers={{"i",36780}},r=1,u=30}),
+[115]={{32.5,71.7}}},crs={26815},qss={36780},r=1,u=30}),
 q(13266,{coords={
 [85]={{32,37.8}}},qgs={31412},r=1,rwp=40003,sourceQuests={13257},u=2}),
 q(12240,{coords={
@@ -58299,9 +58299,9 @@ s(171740,37950,{b=1,f=4,loc=43,q=2,u=30}),
 i(38068,{b=1,f=52,q=2,u=30}),
 s(171816,38037,{b=1,f=6,loc=41,q=2,u=30})}}),
 q(12055,{coords={
-[115]={{19.5,58.1}}},crs={26349},description="Must be on or have completed |cFFFFD700Prevent the Accord|r.",providers={{"i",36742}},r=2,sourceQuests={12000},u=30}),
+[115]={{19.5,58.1}}},crs={26349},description="Must be on or have completed |cFFFFD700Prevent the Accord|r.",qss={36742},r=2,sourceQuests={12000},u=30}),
 q(12059,{coords={
-[115]={{19.5,58.1}}},crs={26349},description="Must be on or have completed |cFFFFD700Prevent the Accord|r.",providers={{"i",36746}},r=1,sourceQuests={11999},u=30}),
+[115]={{19.5,58.1}}},crs={26349},description="Must be on or have completed |cFFFFD700Prevent the Accord|r.",qss={36746},r=1,sourceQuests={11999},u=30}),
 q(11977,{coords={
 [115]={{12.7,51.7}}},isBreadcrumb=1,nextQuests={11978},qgs={26156},r=1,sourceQuests={11930},u=30}),
 q(12008,{coords={
@@ -58439,9 +58439,9 @@ q(12265,{coords={
 [115]={{35.2,30}}},qgs={26593},sourceQuests={12263},u=30,g={
 qo(1,{providers={{"o",188695}},u=30})}}),
 q(12146,{coords={
-[115]={{72.3,28.1}}},crs={27005},providers={{"i",36855}},r=2,u=30}),
+[115]={{72.3,28.1}}},crs={27005},qss={36855},r=2,u=30}),
 q(12147,{coords={
-[115]={{72.3,28.1}}},crs={27005},providers={{"i",36856}},r=1,u=30}),
+[115]={{72.3,28.1}}},crs={27005},qss={36856},r=1,u=30}),
 q(12285,{coords={
 [115]={{76.7,63.2}}},qgs={27243},r=1,sourceQuests={12283},u=30,g={
 qo(1,{crs={27210},providers={{"i",37565}},u=30}),
@@ -58480,7 +58480,7 @@ q(12214,{coords={
 q(12036,{coords={
 [115]={{36.6,46.5}}},qgs={26415},r=1,sourceQuests={12034},u=30}),
 q(12478,{coords={
-[115]={{79.1,47.1}}},providers={{"i",37933}},qgs={27314},r=2,sourceQuests={12475},u=30,g={
+[115]={{79.1,47.1}}},qgs={27314},qis={37933},r=2,sourceQuests={12475},u=30,g={
 s(172089,38532,{b=1,f=5,loc=45,q=3,u=30}),
 s(172090,38533,{b=1,f=7,loc=45,q=3,u=30}),
 s(172088,38531,{b=1,f=6,loc=45,q=3,u=30}),
@@ -58956,16 +58956,16 @@ s(171780,37996,{b=1,f=5,loc=44,q=2,u=30}),
 s(171856,38101,{b=1,f=7,loc=47,q=2,u=30}),
 s(171743,37954,{b=1,f=4,loc=45,q=2,u=30})}}),
 q(12419,{coords={
-[115]={{47.7,49.2}}},crs={27680},providers={{"i",37833}},u=30}),
-q(12168,{crs={26319},description="Must be on or have completed |cFFFFD700Kill the Cultists|r for the item to drop.",providers={{"i",36958}},r=2,sourceQuests={12167},u=30}),
+[115]={{47.7,49.2}}},crs={27680},qss={37833},u=30}),
+q(12168,{crs={26319},description="Must be on or have completed |cFFFFD700Kill the Cultists|r for the item to drop.",qss={36958},r=2,sourceQuests={12167},u=30}),
 q(12057,{coords={
-[115]={{25.3,41.4}}},crs={26319,26606},providers={{"i",36744}},r=1,sourceQuests={12056},u=30}),
+[115]={{25.3,41.4}}},crs={26319,26606},qss={36744},r=1,sourceQuests={12056},u=30}),
 q(12065,{coords={
 [115]={{29,55.4}}},qgs={26673},r=2,sourceQuests={12060},u=30}),
 q(12066,{coords={
 [115]={{38,46.2}}},qgs={26471},r=1,sourceQuests={12061},u=30}),
 q(12291,{coords={
-[115]={{87.1,57.4}}},providers={{"i",37570}},qgs={27347},r=2,sourceQuests={12290},u=30}),
+[115]={{87.1,57.4}}},qgs={27347},qis={37570},r=2,sourceQuests={12290},u=30}),
 q(12221,{coords={
 [115]={{77.6,62.7}}},qgs={27172},r=1,sourceQuests={12218},u=30,g={
 s(171922,38178,{b=1,f=22,q=2,u=30}),
@@ -59043,7 +59043,7 @@ q(12476,{coords={
 [115]={{78.6,48.1}}},qgs={27155},r=2,sourceQuests={12305},u=30,g={
 qo(1,{providers={{"n",27330},{"n",27332},{"n",27333},{"n",27334},{"n",27875},{"n",32417}},u=30})}}),
 q(12271,{coords={
-[115]={{69.7,71.9}}},crs={27209},description="Must be on or have completed |cFFFFD700Torture the Torturer|r.",providers={{"i",37432}},r=1,sourceQuests={12245},u=30}),
+[115]={{69.7,71.9}}},crs={27209},description="Must be on or have completed |cFFFFD700Torture the Torturer|r.",qss={37432},r=1,sourceQuests={12245},u=30}),
 q(12276,{coords={
 [115]={{77.8,50.2}}},qgs={27159},r=2,sourceQuests={12275},u=30}),
 q(12239,{coords={
@@ -59061,7 +59061,7 @@ s(171783,38000,{b=1,f=5,loc=42,q=2,u=30}),
 s(171859,38104,{b=1,f=7,loc=40,q=2,u=30}),
 s(171747,37958,{b=1,f=4,loc=40,q=2,u=30})}}),
 q(12301,{coords={
-[115]={{87.1,57.4}}},providers={{"i",37577}},qgs={27347},r=2,sourceQuests={12291},u=30}),
+[115]={{87.1,57.4}}},qgs={27347},qis={37577},r=2,sourceQuests={12291},u=30}),
 q(12283,{coords={
 [115]={{73.5,73.5}}},qgs={27350},r=1,sourceQuests={12274},u=30}),
 q(12418,{coords={
@@ -59454,7 +59454,7 @@ q(12054,{coords={
 qo(1,{crs={26681},providers={{"i",36740}},u=30})}}),
 q(12178,{coords={
 [116]={{22,65.1}}},qgs={27037},r=1,sourceQuests={12177},u=30}),
-q(12105,{crs={27546},providers={{"i",36940}},r=2,u=30,g={
+q(12105,{crs={27546},qss={36940},r=2,u=30,g={
 s(172159,38734,{b=1,f=4,loc=40,q=2,u=30}),
 s(172198,39033,{b=1,f=5,loc=42,q=2,u=30}),
 s(172224,39060,{b=1,f=6,loc=41,q=2,u=30}),
@@ -59608,7 +59608,7 @@ qo(1,{crs={27177},providers={{"i",37035}},u=30})}}),
 q(12280,{coords={
 [116]={{34.4,32.6}}},isDaily=1,maxReputation={1085,42000},pvp=1,qgs={27422},r=1,u=30,g={
 crit(7289,{achID=2017,id=4,pvp=1,r=1,u=30})}}),
-q(12423,{crs={27546},providers={{"i",37830}},r=1,u=30}),
+q(12423,{crs={27546},qss={37830},r=1,u=30}),
 q(12225,{coords={
 [116]={{31.8,59.5}}},providers={{"o",188667}},r=2,u=30}),
 q(12414,{coords={
@@ -60436,8 +60436,8 @@ r(55534,{requireSkill=755,u=2})}}),
 q(12181,{coords={
 [117]={{53.5,66.3}}},isBreadcrumb=1,nextQuests={12182},qgs={24251},r=1,u=30,g={
 i(37027,{q=1,u=30})}}),
-q(11237,{crs={23989,23990,23991,24014},providers={{"i",33289}},r=2,u=30}),
-q(11266,{crs={23989,23990,23991,24014},providers={{"i",33347}},r=1,u=30}),
+q(11237,{crs={23989,23990,23991,24014},qss={33289},r=2,u=30}),
+q(11266,{crs={23989,23990,23991,24014},qss={33347},r=1,u=30}),
 q(11279,{coords={
 [117]={{53,66.9}}},qgs={24157},r=1,u=30,g={
 qo(1,{crs={24160},providers={{"i",33420}},u=30}),
@@ -60510,8 +60510,8 @@ s(170281,35841,{b=1,f=5,loc=44,q=2,u=30}),
 s(170282,35842,{b=1,f=6,loc=42,q=2,u=30}),
 s(170283,35843,{b=1,f=7,loc=41,q=2,u=30}),
 i(35839,{b=1,f=51,q=2,u=30})}}),
-q(11395,{crs={23643,23644,23645,24485,24540},providers={{"i",33961}},r=2,u=30}),
-q(11398,{crs={23643,23644,23645,24485,24540},providers={{"i",33962}},r=1,u=30}),
+q(11395,{crs={23643,23644,23645,24485,24540},qss={33961},r=2,u=30}),
+q(11398,{crs={23643,23644,23645,24485,24540},qss={33962},r=1,u=30}),
 q(11466,{coords={
 [117]={{36.3,80.4}}},qgs={24541},sourceQuests={11464},u=30}),
 q(11428,{coords={
@@ -60770,13 +60770,13 @@ qo(1,{crs={23919},providers={{"i",33605}},u=30})}}),
 q(11391,{coords={
 [117]={{30.8,28.5}}},isDaily=1,maxReputation={1068,42000},qgs={24399},r=2,sourceQuests={11390},u=30,g={
 qo(1,{providers={{"n",24440}},u=30})}}),
-q(11249,{crs={23661,23662,23663,23664,23665,23666,23667,23668,23669,23670},providers={{"i",33314}},r=2,u=30,g={
+q(11249,{crs={23661,23662,23663,23664,23665,23666,23667,23668,23669,23670},qss={33314},r=2,u=30,g={
 qo(1,{providers={{"n",23671}},u=30}),
 s(170331,35900,{b=1,f=4,loc=47,q=2,u=30}),
 s(170333,35902,{b=1,f=6,loc=41,q=2,u=30}),
 s(170334,35903,{b=1,f=7,loc=44,q=2,u=30}),
 s(170332,35901,{b=1,f=5,loc=45,q=2,u=30})}}),
-q(11260,{crs={23661,23662,23663,23664,23665,23666,23667,23668,23669,23670},providers={{"i",33345}},r=1,u=30,g={
+q(11260,{crs={23661,23662,23663,23664,23665,23666,23667,23668,23669,23670},qss={33345},r=1,u=30,g={
 qo(1,{providers={{"n",23671}},u=30}),
 i(33346,{q=1,u=30}),
 s(170331,35900,{b=1,f=4,loc=47,q=2,u=30}),
@@ -60948,9 +60948,9 @@ s(170274,35827,{b=1,f=27,q=2,u=30}),
 s(170272,35824,{b=1,f=25,q=2,u=30}),
 s(170273,35826,{b=1,f=27,q=2,u=30}),
 s(170276,35830,{b=1,f=34,q=2,u=30})}}),
-q(11452,{crs={24018},providers={{"i",34090}},r=2,u=30,g={
+q(11452,{crs={24018},qss={34090},r=2,u=30,g={
 qo(1,{providers={{"n",24023}},u=30})}}),
-q(11453,{crs={24018},providers={{"i",34091}},r=1,u=30,g={
+q(11453,{crs={24018},qss={34091},r=1,u=30,g={
 qo(1,{providers={{"n",24023}},u=30})}}),
 q(11511,{coords={
 [117]={{35,80.9}}},qgs={24539},sourceQuests={11510},u=30,g={
@@ -61501,7 +61501,7 @@ q(13135,{coords={
 [118]={{82.9,73}}},maps={127},qgs={30714},sourceQuests={13104,13105},u=30}),
 q(12887,{description="On the Skybreaker.",qgs={29799},r=2,u=30}),
 q(12892,{description="On Orgrim's Hammer.",qgs={29795},r=1,u=30}),
-q(13136,{crs={30597},providers={{"i",43242}},sourceQuests={13119,13120},u=30}),
+q(13136,{crs={30597},qss={43242},sourceQuests={13119,13120},u=30}),
 q(13341,{description="On the Skybreaker.",qgs={32302},r=2,sourceQuests={13225},u=30}),
 q(13340,{description="On Orgrim's Hammer.",qgs={31240},r=1,sourceQuests={13224},u=30}),
 q(13226,{description="On the Skybreaker.",isBreadcrumb=1,nextQuests={13036},qgs={31259},r=2,u=30}),
@@ -61765,7 +61765,7 @@ s(175289,44379,{b=1,f=5,loc=41,q=3,u=30}),
 s(175290,44380,{b=1,f=6,loc=41,q=3,u=30}),
 s(201846,44381,{b=1,f=7,loc=41,q=3,u=30})}}),
 q(12839,{coords={
-[118]={{9.2,41}}},description="Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",providers={{"i",40666}},sourceQuests={12838},u=30}),
+[118]={{9.2,41}}},description="Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",qss={40666},sourceQuests={12838},u=30}),
 q(13338,{description="On the Skybreaker.",qgs={29799},r=2,sourceQuests={13335},u=30}),
 q(13316,{description="On Orgrim's Hammer.",qgs={29795},r=1,sourceQuests={13329},u=30}),
 q(13400,{coords={
@@ -61839,7 +61839,7 @@ s(175075,43947,{b=1,f=7,loc=45,q=2,u=30})}}),
 q(12807,{coords={
 [118]={{19.5,48.1}}},qgs={29344},sourceQuests={12806},u=30}),
 q(13043,{coords={
-[118]={{34,36.3}}},crs={30409},providers={{"i",42772}},sourceQuests={12999},u=30,g={
+[118]={{34,36.3}}},crs={30409},qss={42772},sourceQuests={12999},u=30,g={
 s(174998,43861,{b=1,f=3,q=2,u=30}),
 s(175038,43909,{b=1,f=5,loc=45,q=2,u=30}),
 s(175088,43979,{b=1,f=6,loc=46,q=2,u=30}),
@@ -62132,7 +62132,7 @@ q(12735,{altQuests={12726,12736,12737},coords={
 [119]={{53.3,56.4}}},isDaily=1,maxReputation={1105,42000},minReputation={1105,3000},qgs={29006},sourceQuests={12695},u=30,g={
 crit(2068,{achID=962,id=8,u=30})}}),
 q(12704,{coords={
-[119]={{54.6,56.3}}},isDaily=1,maxReputation={1105,42000},minReputation={1105,3000},providers={{"i",38622}},qgs={28027},sourceQuests={12695},u=30,g={
+[119]={{54.6,56.3}}},isDaily=1,maxReputation={1105,42000},minReputation={1105,3000},qgs={28027},qis={38622},sourceQuests={12695},u=30,g={
 qo(1,{providers={{"i",38575},{"o",190558},{"o",190560},{"o",190561},{"o",190562},{"o",190563}},u=30}),
 crit(2062,{achID=962,id=2,u=30})}}),
 q(12689,{coords={
@@ -62620,7 +62620,7 @@ i(42733,{coords={
 [120]={{55,61.8}}},providers={{"i",42732},{"n",30292}},q=1,u=30})}}),
 q(13006,{coords={
 [120]={{64.2,59.6}}},isDaily=1,maxReputation={1119,42000},providers={{"o",192080}},sourceQuests={12987},u=30}),
-q(13420,{minReputation={1119,3000},providers={{"i",44725}},u=30}),
+q(13420,{minReputation={1119,3000},qss={44725},u=30}),
 q(13421,{coords={
 [120]={{67,60.8}}},cost={{"i",44724,1}},maxReputation={1119,42000},qgs={32594},repeatable=1,sourceQuests={13420},u=30}),
 q(12977,{coords={
@@ -62651,7 +62651,7 @@ i(42812,{b=1,f=52,q=2,u=30})}}),
 q(12823,{coords={
 [120]={{50,81.7}}},qgs={29432},sourceQuests={12821},u=30}),
 q(12976,{coords={
-[120]={{65.4,60.1}}},providers={{"i",42163}},qgs={30105},sourceQuests={12975},u=30}),
+[120]={{65.4,60.1}}},qgs={30105},qis={42163},sourceQuests={12975},u=30}),
 q(13009,{coords={
 [120]={{63.2,63.2}}},qgs={30127},sourceQuests={12967},u=30}),
 q(12956,{coords={
@@ -62673,7 +62673,7 @@ q(12882,{coords={
 q(12875,{coords={
 [120]={{30.2,74.7}}},qgs={29593},r=2,sourceQuests={12874},u=30}),
 q(12979,{coords={
-[120]={{25,45.2}}},crs={29380},providers={{"i",42203}},sourceQuests={12957,12964},u=30}),
+[120]={{25,45.2}}},crs={29380},qss={42203},sourceQuests={12957,12964},u=30}),
 q(12867,{coords={
 [120]={{29.8,75.7}}},qgs={29732},r=2,sourceQuests={12865},u=30}),
 q(13424,{coords={
@@ -63000,7 +63000,7 @@ s(174730,43210,{b=1,f=4,loc=44,q=3,u=30}),
 s(174731,43211,{b=1,f=5,loc=44,q=3,u=30}),
 s(174732,43212,{b=1,f=6,loc=44,q=3,u=30}),
 s(174733,43213,{b=1,f=7,loc=44,q=3,u=30})}}),
-q(12922,{providers={{"i",41556}},sourceQuests={13064},u=30}),
+q(12922,{qss={41556},sourceQuests={13064},u=30}),
 q(13843,{coords={
 [120]={{37.6,46.8}}},providers={{"o",191761}},repeatable=1,requireSkill=202,sourceQuests={12889},u=30}),
 q(12989,{coords={
@@ -63705,7 +63705,7 @@ s(172731,39789,{b=1,f=4,loc=41,q=2,u=30}),
 s(172791,39858,{b=1,f=3,q=2,u=30}),
 s(172761,39825,{b=1,f=6,loc=45,q=2,u=30}),
 s(172823,39893,{b=1,f=7,loc=42,q=2,u=30})}}),
-q(12631,{altQuests={12633},providers={{"i",38660}},u=30}),
+q(12631,{altQuests={12633},qss={38660},u=30}),
 q(12504,{coords={
 [121]={{40.4,48.1}}},qgs={28056},sourceQuests={12505},u=30,g={
 s(172716,39771,{b=1,f=4,loc=46,q=2,u=30}),
@@ -63783,7 +63783,7 @@ q(12894,{coords={
 [121]={{32.1,75.1}}},qgs={29687},sourceQuests={12883},u=30}),
 q(12664,{altQuests={12663},coords={
 [121]={{27,46.1}}},description="Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",qgs={28503},sourceQuests={12648},u=30}),
-q(12633,{altQuests={12631},providers={{"i",38673}},u=30}),
+q(12633,{altQuests={12631},qss={38673},u=30}),
 q(12552,{coords={
 [121]={{58,72}}},qgs={28283},sourceQuests={12598},u=30}),
 q(12503,{coords={
@@ -63968,7 +63968,7 @@ s(172785,39852,{b=1,f=20,q=2,u=30}),
 s(172786,39853,{b=1,f=28,q=2,u=30}),
 s(172741,39802,{b=1,f=26,q=2,u=30}),
 s(172765,39829,{b=1,f=32,q=2,u=30})}}),
-q(12507,{crs={28034,28035,28036},providers={{"i",38321}},u=30}),
+q(12507,{crs={28034,28035,28036},qss={38321},u=30}),
 q(12649,{altQuests={12648},coords={
 [121]={{14.1,73.8}}},qgs={28518},sourceQuests={12643},u=30}),
 q(13549,{coords={
@@ -64223,7 +64223,7 @@ h(-45,{
 q(26581,{coords={
 [207]={{71.8,47.6}}},lvl=82,qgs={43395},sourceQuests={26580}}),
 q(26871,{coords={
-[207]={{66.3,20.7}}},lvl=82,modelScale=4,providers={{"i",60504},{"o",204959}},sourceQuests={26869},g={
+[207]={{66.3,20.7}}},lvl=82,modelScale=4,providers={{"o",204959}},qis={60504},sourceQuests={26869},g={
 s(207596,61427,{b=1,f=7,loc=45,q=2}),
 s(207597,61428,{b=1,f=6,loc=40,q=2}),
 i(61429,{b=1,f=53,q=2})}}),
@@ -64669,7 +64669,7 @@ qo(1,{crs={43456},providers={{"i",59144}}}),
 s(207621,61459,{b=1,f=4,loc=46,q=2}),
 s(207620,61458,{b=1,f=5,loc=40,q=2}),
 s(207619,61457,{b=1,f=7,loc=42,q=2})}}),
-q(27100,{crs={43158,44936},lvl=82,providers={{"i",60816}},g={
+q(27100,{crs={43158,44936},lvl=82,qss={60816},g={
 qo(1,{crs={43158},providers={{"i",60814}}})}}),
 q(27048,{coords={
 [207]={{61.2,26.2}}},isDaily=1,lvl=82,maxReputation={1171,42000},qgs={44968},sourceQuests={26709},g={
@@ -65879,7 +65879,7 @@ q(31024,{coords={
 [422]={{54.3,35.8}}},isDaily=1,qgs={63758},sourceQuests={31092,31359},g={
 i(82869,{q=1})}}),
 q(31598,{coords={
-[422]={{31.8,57.8}}},crs={65229},isDaily=1,providers={{"i",87871}}}),
+[422]={{31.8,57.8}}},crs={65229},isDaily=1,qss={87871}}),
 q(31022,{coords={
 [422]={{66.8,65.3}}},qgs={62232,63328},sourceQuests={31020,31021}}),
 q(31021,{coords={
@@ -65956,7 +65956,7 @@ q(31808,{coords={
 q(31189,{coords={
 [422]={{54.7,72.1}}},qgs={63349},sourceQuests={31184,31187,31188}}),
 q(31023,{coords={
-[422]={{62.9,57.8}}},crs={61970},providers={{"i",82870}},g={
+[422]={{62.9,57.8}}},crs={61970},qss={82870},g={
 o(212079,{
 i(82867,{q=1})})}}),
 q(31072,{coords={
@@ -66084,7 +66084,7 @@ s(270056,83998,{b=1,f=6,loc=41,q=3}),
 s(270057,83999,{b=1,f=7,loc=41,q=3}),
 s(270058,84000,{b=1,f=7,loc=41,q=3})}}),
 q(31599,{coords={
-[422]={{41.6,29.8},{41.6,34},{42,35.6}}},crs={64724},isDaily=1,providers={{"i",87878}}}),
+[422]={{41.6,29.8},{41.6,34},{42,35.6}}},crs={64724},isDaily=1,qss={87878}}),
 q(31211,{coords={
 [422]={{28.6,42.1}}},qgs={62151},sourceQuests={31208,31209,31210},g={
 i(84065,{b=1,f=52,q=2}),
@@ -66116,7 +66116,7 @@ s(274041,90104,{b=1,f=1,q=2}),
 s(274042,90105,{b=1,f=1,q=2}),
 crit(20806,{achID=7312,id=8})}}),
 q(31677,{coords={
-[422]={{66.3,31.7}}},crs={65502},description="Requires 2 players. One must |cFFFFD700/sit|r on the red rune while the other must |cFFFFD700/lay|r on the green rune.",isDaily=1,providers={{"i",88715}}}),
+[422]={{66.3,31.7}}},crs={65502},description="Requires 2 players. One must |cFFFFD700/sit|r on the red rune while the other must |cFFFFD700/lay|r on the green rune.",isDaily=1,qss={88715}}),
 q(31609,{coords={
 [422]={{55,35.6}}},minReputation={1337,42000},qgs={64599},sourceQuests={31959}}),
 q(31605,{coords={
@@ -66720,7 +66720,7 @@ q(32729,{isDaily=1,r=1,u=52}),
 q(32564,{isDaily=1,r=1,u=52})}})}})}}),
 h(-45,{u=52,g={
 q(32621,{coords={
-[504]={{57.6,33.8}}},providers={{"i",94721}},requireSkill=164,u=52,g={
+[504]={{57.6,33.8}}},qss={94721},requireSkill=164,u=52,g={
 i(94553,{b=1,q=3,requireSkill=164,u=52,g={
 r(138882,{b=1,itemID=94568,learnedAt=500,q=1,requireSkill=164,u=52}),
 r(138888,{b=1,itemID=94572,learnedAt=500,q=1,requireSkill=164,u=52}),
@@ -67191,7 +67191,7 @@ i(80685,{q=1})}),
 o(211382,{
 i(80804,{q=1})})}}),
 q(30675,{coords={
-[418]={{48.1,90.8}}},crs={60299,60357,60358},providers={{"i",80827}},g={
+[418]={{48.1,90.8}}},crs={60299,60357,60358},qss={80827},g={
 o(211420,{
 i(80817,{q=1})}),
 toy(80822,{b=1,q=2}),
@@ -68183,7 +68183,7 @@ s(269140,82519,{b=1,f=5,loc=46,q=3}),
 s(269141,82520,{b=1,f=6,loc=46,q=3}),
 s(269142,82521,{b=1,f=7,loc=46,q=3}),
 s(269143,82522,{b=1,f=7,loc=46,q=3})}}),
-q(31809,{maps={388},providers={{"i",89317}},g={
+q(31809,{maps={388},qss={89317},g={
 s(274521,90912,{b=1,f=7,loc=47,lvl=90,q=4}),
 s(274523,90914,{b=1,f=5,loc=47,lvl=90,q=4}),
 s(274516,90907,{b=1,f=6,loc=47,lvl=90,q=4}),
@@ -68324,7 +68324,7 @@ s(270327,84518,{b=1,f=4,loc=47,q=2}),
 s(270331,84522,{b=1,f=4,loc=47,q=2}),
 s(270333,84524,{b=1,f=6,loc=47,q=2})}}),
 q(30582,{coords={
-[379]={{70.3,71.9}}},crs={59335},providers={{"i",80241}},g={
+[379]={{70.3,71.9}}},crs={59335},qss={80241},g={
 i(80241,{b=1,lvl=87,q=1})}}),
 q(30612,{coords={
 [379]={{45.9,64}}},qgs={59452},sourceQuests={30610,30611},g={
@@ -69634,7 +69634,7 @@ q(31853,{coords={
 qo(2,{coords={
 [1]={{66,0}}},providers={{"n",55054}},u=50})}}),
 q(29925,{coords={
-[371]={{47.1,46.1}}},providers={{"i",76483}},qgs={56348},sourceQuests={29723},u=50}),
+[371]={{47.1,46.1}}},qgs={56348},qis={76483},sourceQuests={29723},u=50}),
 q(29576,{coords={
 [371]={{48.3,46}}},isBreadcrumb=1,nextQuests={29578},qgs={59383},u=50}),
 q(29900,{coords={
@@ -69775,7 +69775,7 @@ qo(1,{coords={
 qo(2,{coords={
 [373]={{34.4,74.6}}},providers={{"n",56404}},u=50})}}),
 q(31261,{coords={
-[371]={{30.8,41.3}}},crs={63809},providers={{"i",85783}},r=1,u=50}),
+[371]={{30.8,41.3}}},crs={63809},qss={85783},r=1,u=50}),
 q(29906,{coords={
 [371]={{58.8,81.7}}},qgs={60970},r=2,sourceQuests={29904},u=50,g={
 qo(1,{coords={
@@ -69816,7 +69816,7 @@ qo(3,{coords={
 qo(4,{coords={
 [371]={{29.8,22.2}}},crs={55470,66917},providers={{"i",74163}},u=50})}}),
 q(30015,{coords={
-[371]={{28.6,47.5}}},providers={{"i",76761}},qgs={56339},r=1,sourceQuests={29967},u=50}),
+[371]={{28.6,47.5}}},qgs={56339},qis={76761},r=1,sourceQuests={29967},u=50}),
 q(29578,{coords={
 [371]={{43.4,75.9}}},qgs={54697},sourceQuests={29576},u=50,g={
 qo(1,{coords={
@@ -69958,9 +69958,9 @@ qo(3,{coords={
 [371]={{28.6,51.8}}},crs={56838},providers={{"i",80015}},u=50}),
 qo(4,{coords={
 [371]={{27,54.8}}},crs={56840},providers={{"i",80061}},u=50})}}),
-q(30498,{isBreadcrumb=1,nextQuests={30565},providers={{"i",86068}},qgs={57242},r=2,sourceQuests={30000},u=50}),
+q(30498,{isBreadcrumb=1,nextQuests={30565},qgs={57242},qis={86068},r=2,sourceQuests={30000},u=50}),
 q(30499,{coords={
-[371]={{55.8,57}}},isBreadcrumb=1,nextQuests={30484},providers={{"i",86067}},qgs={57242},r=1,sourceQuests={30000},u=50}),
+[371]={{55.8,57}}},isBreadcrumb=1,nextQuests={30484},qgs={57242},qis={86067},r=1,sourceQuests={30000},u=50}),
 q(29920,{coords={
 [371]={{52.5,38.1}}},qgs={56708},sourceQuests={29995},u=50,g={
 qo(1,{coords={
@@ -70131,7 +70131,7 @@ i(80782,{b=1,f=53,q=2,u=50}),
 crit(19331,{achID=6300,id=10,r=2,u=50}),
 crit(19331,{achID=6534,id=10,r=1,u=50})}}),
 q(29821,{coords={
-[371]={{28.1,24.7}}},providers={{"i",84157}},qgs={55521},r=1,sourceQuests={31999},u=50}),
+[371]={{28.1,24.7}}},qgs={55521},qis={84157},r=1,sourceQuests={31999},u=50}),
 q(29743,{coords={
 [371]={{30.8,17.4}}},providers={{"o",212181}},r=1,sourceQuests={31774},u=50,g={
 qo(1,{coords={
@@ -70173,7 +70173,7 @@ q(29580,{coords={
 qo(1,{coords={
 [371]={{44.5,75.2}}},providers={{"i",72133},{"o",209344},{"o",209345}},u=50})}}),
 q(29935,{coords={
-[371]={{26.2,37.3}}},providers={{"i",85507}},qgs={56313},r=1,sourceQuests={29879},u=50}),
+[371]={{26.2,37.3}}},qgs={56313},qis={85507},r=1,sourceQuests={29879},u=50}),
 q(30002,{coords={
 [371]={{56.2,60.4}}},qgs={56786},sourceQuests={29998},u=50,g={
 qo(1,{coords={
@@ -70641,7 +70641,7 @@ qo(1,{coords={
 qo(2,{coords={
 [371]={{48.3,21.11}}},u=50})}}),
 q(29932,{coords={
-[371]={{48.3,61.3}}},providers={{"i",74030}},qgs={59391},sourceQuests={30495},u=50}),
+[371]={{48.3,61.3}}},qgs={59391},qis={74030},sourceQuests={30495},u=50}),
 q(29866,{coords={
 [371]={{46.6,45.3}}},qgs={59178},sourceQuests={31230},u=50,g={
 qo(1,{coords={
@@ -70658,7 +70658,7 @@ qo(2,{coords={
 [371]={{50.2,90.8}}},crs={66148},providers={{"i",89603}},u=50}),
 i(73410,{q=1,u=50})}}),
 q(31112,{coords={
-[371]={{22.8,30.5}}},providers={{"i",84157}},qgs={62923},r=1,sourceQuests={29821},u=50,g={
+[371]={{22.8,30.5}}},qgs={62923},qis={84157},r=1,sourceQuests={29821},u=50,g={
 qo(1,{coords={
 [371]={{25.6,29}}},crs={62930},providers={{"i",74623}},u=50})}}),
 q(29617,{coords={
@@ -71152,7 +71152,7 @@ s(267171,73231,{b=1,f=5,loc=47,q=1}),
 s(267172,73232,{b=1,f=6,loc=47,q=1}),
 s(267170,73230,{b=1,f=4,loc=47,q=1})}}),
 q(29676,{coords={
-[378]={{65.6,42.6}}},providers={{"i",73183}},qgs={54975},sourceQuests={29661,29662,29663}}),
+[378]={{65.6,42.6}}},qgs={54975},qis={73183},sourceQuests={29661,29662,29663}}),
 q(29665,{coords={
 [378]={{42.3,86.4}}},qgs={55940},sourceQuests={29796},g={
 qo(1,{coords={
@@ -71291,7 +71291,7 @@ q(29795,{coords={
 qo(1,{coords={
 [378]={{52.2,79.2}}},providers={{"i",80806},{"o",211394},{"o",211397},{"o",211398},{"o",211399},{"o",211400},{"o",211401}}})}}),
 q(29782,{coords={
-[378]={{26.4,33.7}}},providers={{"i",76174},{"o",209673}},sourceQuests={29778},g={
+[378]={{26.4,33.7}}},providers={{"o",209673}},qis={76174},sourceQuests={29778},g={
 s(267201,74588,{b=1,f=33,q=1}),
 s(267203,74590,{b=1,f=20,q=1}),
 s(267202,74589,{b=1,f=26,q=1}),
@@ -71787,7 +71787,7 @@ i(103641,{b=1,f=55,lvl=85,q=1,u=54})}}),
 q(33375,{coords={
 [554]={{34.6,53.6}}},qgs={72870},sourceQuests={33337},u=54,g={
 i(105931,{q=4,u=54})}}),
-q(32974,{description="The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",providers={{"i",102225},{"o",222684}},u=54}),
+q(32974,{description="The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",providers={{"o",222684}},qss={102225},u=54}),
 q(32975,{coords={
 [554]={{49.4,69.3}}},description="Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",qgs={72751},sourceQuests={32974},u=54}),
 q(32976,{coords={
@@ -74765,7 +74765,7 @@ i(80127,{q=1,requireSkill=185})}}),
 q(31521,{coords={
 [376]={{53.6,51.2}}},description="Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",qgs={64231},requireSkill=185,sourceAchievements={7306}})}),
 q(30275,{coords={
-[376]={{57.7,25.9}}},crs={58754,58755},description="Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",providers={{"i",79238}},g={
+[376]={{57.7,25.9}}},crs={58754,58755},description="Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",qss={79238},g={
 i(79237,{q=1})}}),
 q(29918,{coords={
 [376]={{78.2,32.8}}},qgs={56312},sourceQuests={29916,29917},g={
@@ -74897,7 +74897,7 @@ o(210002,{type="AsSubGenericObject"})}})}}),
 q(29919,{coords={
 [376]={{75.3,35.5}}},qgs={56133},sourceQuests={29918}}),
 q(29758,{coords={
-[376]={{64.5,25.7}}},crs={56833},providers={{"i",83767}}}),
+[376]={{64.5,25.7}}},crs={56833},qss={83767}}),
 q(32018,{coords={
 [371]={{45.7,43.9}}},isBreadcrumb=1,nextQuests={29907},qgs={56774}}),
 q(30053,{coords={
