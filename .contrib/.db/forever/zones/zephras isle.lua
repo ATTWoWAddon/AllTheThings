@@ -6,12 +6,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 	lore = "Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",
 	--icon = ,	-- TODO: Add an icon for Zephras Isle
 	timeline = { TIMELINE.ADDED_1_60_1 },
-	["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 	["groups"] = {
 		n(QUESTS, {
 			q(93746, {	-- A Firm Response
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 				["groups"] = {
 					i(263305),	-- Windshaped Shield
@@ -21,13 +21,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92708, {	-- A Grand Adventure
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(92709, {	-- A Grand Adventure
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(93927, {	-- A Last Request
@@ -43,6 +43,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94413, {	-- A Magical Affront
 				["qg"] = 251903,	-- Rathiril Sunlance
 				["coord"] = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 				["groups"] = {
 					i(263428),	-- Dowsing Rod
@@ -126,6 +127,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92834, {	-- Avenged Tenfold
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
 				["groups"] = {
 					i(263401),	-- Martyr's Armor
@@ -136,6 +138,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93740, {	-- Blood for Blood
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(92679, {	-- Blood Tithe
@@ -147,6 +150,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 256507,	-- Belann Windwood
 				["coord"] = { 62.8, 77.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { MAGE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
 				["groups"] = {
 					i(263430),	-- Windbough Wand
@@ -178,12 +182,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251374,	-- Windshaper Boro
 				["coord"] = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 3,
 			}),
 			q(92468, {	-- Call of Earth
 				["qg"] = 251166,	-- Minor Manifestation of Earth
 				["coord"] = { 49.6, 24.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 3,
 				["groups"] = {
 					i(5175),	-- Earth Totem
@@ -247,7 +253,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = ENCHANTING,
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230643), },
 			}),
@@ -257,7 +263,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = ENCHANTING,
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230643), },
 			}),
@@ -323,7 +329,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = TAILORING,
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 				["groups"] = { recipe(1229504), },
 			}),
@@ -333,11 +339,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = TAILORING,
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 				["groups"] = { recipe(1263425), },
 			}),
 			q(92840, {	-- Catching Wind
+				["races"] = ALLIANCE_ONLY,
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -354,7 +361,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92646, {	-- Confront Lorthuna
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 				["groups"] = {
 					i(263405),	-- Belt of Blades
@@ -366,7 +373,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93835, {	-- Confront Lorthuna
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 				["groups"] = {
 					i(263405),	-- Belt of Blades
@@ -433,6 +440,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92474, {	-- Falling With Style
 				["qg"] = 263113,	-- Myriaal Mistwake
 				["coord"] = { 43.6, 24.0, MAP.ZEPHRAS_ISLE },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 2,
 			}),
 			q(94486, {	-- Feathers for Binding
@@ -510,13 +518,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92860, {	-- In Service of Zephras
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(92871, {	-- In Service of Zephras
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(92462, {	-- Infestation Investigation
@@ -548,6 +556,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94411, {	-- Meddlesome Mages
 				["qg"] = 251902,	-- Illaya Amberwind
 				["coord"] = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 				["groups"] = {
 					i(263411),	-- Windcharged Leaf
@@ -630,6 +639,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 9,
 			}),
 			q(93791, {	-- Speak with Belann
+				["races"] = ALLIANCE_ONLY,
 				["qg"] = 252373,	-- Anathamaas Aetherwind
 				["coord"] = { 65.8, 80.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { MAGE },
@@ -653,30 +663,35 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 69.8, 61.6, MAP.ZEPHRAS_ISLE },
 				["sourceQuest"] = 92840,	-- Catching Wind
 				["classes"] = { DRUID },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 			}),
 			q(94007, {	-- Taming the Beast
 				["qg"] = 254084,	-- Elayaa Easewind
 				["coord"] = { 45.2, 44.2, MAP.ZEPHRAS_ISLE },
 				["classes"] = { HUNTER },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 			}),
 			q(94013, {	-- Taming the Beast
 				["qg"] = 252389,	-- Quel'ana Quickgale
 				["coord"] = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { HUNTER },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 			}),
 			q(94978, {	-- Taming the Beast
 				["qg"] = 252389,	-- Quel'ana Quickgale
 				["coord"] = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { HUNTER },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 			}),
 			q(94979, {	-- Taming the Beast
 				["qg"] = 252389,	-- Quel'ana Quickgale
 				["coord"] = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { HUNTER },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 			}),
 			q(94485, {	-- Tears of the Lady
@@ -695,6 +710,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 2,
 			}),
 			q(93735, {	-- The Broken Construct
+				["races"] = HORDE_ONLY,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -702,13 +718,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93737, {	-- The Broken Construct
 				["qg"] = 256083,	-- Riaani Nightwind
 				["coord"] = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 			}),
 			q(93738, {	-- The Broken Construct
 				["qg"] = 256083,	-- Riaani Nightwind
 				["coord"] = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 			}),
 			q(92463, {	-- The Cirrusfly Queen
@@ -739,7 +755,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(95349, {	-- The Earthen Ring
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(94897, {	-- The Fate of a Loved One
@@ -755,13 +771,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93836, {	-- The Fate of Zephras
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(94369, {	-- The Fate of Zephras
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(93160, {	-- The Forest's Bounty
@@ -776,6 +792,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 2,
 			}),
 			q(92700, {	-- The Grand Skyseer
+				["races"] = HORDE_ONLY,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -789,6 +806,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252359,	-- Lotheluum Starbreeze
 				["coord"] = { 64.0, 75.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { DRUID },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 			}),
 			q(92881, {	-- The High Elder's Request
@@ -797,6 +815,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 6,
 			}),
 			q(92596, {	-- The High Order
+				["races"] = ALLIANCE_ONLY,
 				["qg"] = 251903,	-- Rathiril Sunlance
 				["coord"] = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -817,17 +836,18 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94946, {	-- The Magical City of Dalaran
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(92849, {	-- The Missing Scholar
 				["sourceQuest"] = 92727,	-- The Missing Scholar
 				["provider"] = { "o", 581822 },
 				["coord"] = { 50.6, 65.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 			}),
 			q(92727, {	-- The Missing Scholar
+				["races"] = ALLIANCE_ONLY,
 				["qg"] = 253204,	-- Dondallion Whisperwind
 				["coord"] = { 66.2, 79.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -836,7 +856,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["sourceQuest"] = 92849,	-- The Missing Scholar
 				["qg"] = 253284,	-- Fillion Flamebreeze
 				["coord"] = { 52.0, 69.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 			}),
 			q(92472, {	-- The Next Step
@@ -856,6 +876,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252377,	-- Seena Skybreaker
 				["coord"] = { 59.8, 72.8, MAP.ZEPHRAS_ISLE },
 				["classes"] = { WARRIOR },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 				["groups"] = {
 					i(275290),	-- Stormforged Protector
@@ -867,6 +888,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(92699, {	-- The Supreme Magister
+				["races"] = ALLIANCE_ONLY,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -899,6 +921,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 5,
 			}),
 			q(92595, {	-- The Windshapers
+				["races"] = HORDE_ONLY,
 				["qg"] = 251902,	-- Illaya Amberwind
 				["coord"] = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -911,7 +934,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92579, {	-- To Valanaar
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 6,
 				["groups"] = {
 					i(263414),	-- Traveler's Wraps
@@ -922,7 +945,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92701, {	-- To Valanaar
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(93320, {	-- Tower Defense
@@ -939,6 +962,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252389,	-- Quel'ana Quickgale
 				["coord"] = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { HUNTER },
+				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				["lvl"] = 10,
 			}),
 			q(92644, {	-- Unfortunate News
@@ -962,11 +986,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(93736, {	-- Unwelcome Spirits
+				["races"] = HORDE_ONLY,
 				["qg"] = 254344,	-- Endaria Mistgaze
 				["coord"] = { 58.2, 78.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
 			q(92741, {	-- Unwelcome Visitors
+				["races"] = ALLIANCE_ONLY,
 				["qg"] = 253004,	-- Iaadaria Bitterwind
 				["coord"] = { 66.2, 79.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
@@ -983,25 +1009,25 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92514, {	-- Welcome to Shen'dar Village
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 			}),
 			q(93461, {	-- Welcome to Shen'dar Village
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 			}),
 			q(93089, {	-- What Comes Next
 				["qg"] = 252476,	-- Talaanis Shadowsong
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(93090, {	-- What Comes Next
 				["qg"] = 252476,	-- Talaanis Shadowsong
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_HORDE },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(92698, {	-- What Is My Purpose?
