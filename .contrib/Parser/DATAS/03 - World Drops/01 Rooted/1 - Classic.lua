@@ -5109,15 +5109,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(1081, {	-- Crisp Spider Meat
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = {
-				MAP.ARATHI_HIGHLANDS,
-				MAP.ASHENVALE,
-				MAP.DUSKWOOD,
-				MAP.ALTERAC_MOUNTAINS,
-				MAP.HILLSBRAD_FOOTHILLS,
-				MAP.LOCH_MODAN,
-				MAP.REDRIDGE_MOUNTAINS,
-				MAP.STONETALON_MOUNTAINS,
-				MAP.WETLANDS,
+				ARATHI_HIGHLANDS,
+				ASHENVALE,
+				DUSKWOOD,
+				ALTERAC_MOUNTAINS,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				REDRIDGE_MOUNTAINS,
+				STONETALON_MOUNTAINS,
+				WETLANDS,
 			},
 			["crs"] = {
 				2565,	-- Giant Plains Creeper
@@ -6108,13 +6108,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(3174, {	-- Spider Ichor
 			["maps"] = {
-				MAP.ASHENVALE,
-				MAP.DUSKWOOD,
-				MAP.LOCH_MODAN,
-				MAP.REDRIDGE_MOUNTAINS,
-				MAP.SILVERPINE_FOREST,
-				MAP.STONETALON_MOUNTAINS,
-				MAP.WETLANDS,
+				ASHENVALE,
+				DUSKWOOD,
+				LOCH_MODAN,
+				REDRIDGE_MOUNTAINS,
+				SILVERPINE_FOREST,
+				STONETALON_MOUNTAINS,
+				WETLANDS,
 			},
 			["crs"] = {
 				3821,	-- Wildthorn Lurker
