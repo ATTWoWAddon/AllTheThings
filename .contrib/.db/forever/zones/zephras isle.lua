@@ -1024,6 +1024,47 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2131,	-- Shortsword
 				}},
 			}),
+			n(271478, {	-- Elaria Anvilwind
+				["coord"] = { 59.5, 76.1, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277083),	-- Zephrali Chain
+					i(277080),	-- Zephrali Chainmail
+					i(277082),	-- Zephrali Gauntlets
+					i(277085),	-- Zephrali Greaves
+					i(277084),	-- Zephrali Legguards
+					i(277081),	-- Zephrali Wristguards
+				},
+			}),
+			n(271483, {	-- Ergaan Eastwind
+				["coord"] = { 59.7, 75.9, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277093),	-- Zephrali Armguards
+					i(277089),	-- Zephrali Belt
+					i(277091),	-- Zephrali Boots
+					i(277087),	-- Zephrali Bracers
+					i(277097),	-- Zephrali Footwraps
+					i(277088),	-- Zephrali Gloves
+					i(277086),	-- Zephrali Harness
+					i(277092),	-- Zephrali Jerkin
+					i(277094),	-- Zephrali Mitts
+					i(277096),	-- Zephrali Pants
+					i(277095),	-- Zephrali Strap
+					i(277090),	-- Zephrali Trousers
+				},
+			}),
+			n(271465, {	-- Falfaan Halfwind
+				["coord"] = { 59.4, 75.8, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277105),	-- Zephrali Blade
+					i(277107),	-- Zephrali Bludgeon
+					i(277110),	-- Zephrali Bow
+					i(277111),	-- Zephrali Crossbow
+					i(277109),	-- Zephrali Greatstaff
+					i(277104),	-- Zephrali Greatsword
+					i(277108),	-- Zephrali Knife
+					i(277106),	-- Zephrali Smasher
+				},
+			}),
 			n(251965, {	-- Fevrath Skyhammer
 				["coord"] = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },
 				["sym"] = {{"select","itemID",
@@ -1053,6 +1094,20 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2120,	-- Thin Cloth Pants
 					2117,	-- Thin Cloth Shoes
 				}},
+			}),
+			n(271480, {	-- Taliaa Brightsky
+				["coord"] = { 59.3, 76.2, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(273812),	-- Airy Magister's Shirt
+					i(273813),	-- Airy Peacekeeper's Shirt
+					i(273814),	-- Airy Skyseer's Shirt
+					i(277101),	-- Zephrali Cord
+					i(277099),	-- Zephrali Cuffs
+					i(277100),	-- Zephrali Handwraps
+					i(277102),	-- Zephrali Leggings
+					i(277103),	-- Zephrali Shoes
+					i(277098),	-- Zephrali Vest
+				},
 			}),
 		}),
 	},
