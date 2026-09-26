@@ -76,6 +76,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92473, {	-- Aggressive Encroachment
 				["qg"] = 257551,	-- Valreaa Valewind
+				["sourceQuest"] = 92471, 	-- Aetheen of the Gales
 				["coord"] = { 42.4, 25.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 3,
 				["groups"] = {
@@ -243,6 +244,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(96646, {	-- Camping 101: Cooking
 				["qg"] = 263664,	-- Raan Wildwind
+				["sourceQuest"] = 92470,	-- Foul Matriarch
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
@@ -458,6 +460,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92470, {	-- Foul Matriarch
 				["qg"] = 251366,	-- Aetheen of the Gales
+				["sourceQuest"] = 92471, 	-- Aetheen of the Gales
 				["coord"] = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 2,
 				["groups"] = {
@@ -619,6 +622,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92469, {	-- Return to Rorian
 				["qg"] = 249363,	-- Yala Windwatcher
+				["sourceQuest"] = 92465,	-- Agitators
 				["coord"] = { 47.2, 21.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 3,
 				["groups"] = {
@@ -855,6 +859,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92472, {	-- The Next Step
 				["qg"] = 251366,	-- Aetheen of the Gales
+				["sourceQuest"] = 92470,	-- Foul Matriarch
 				["coord"] = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 3,
 			}),
