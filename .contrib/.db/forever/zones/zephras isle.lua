@@ -1010,5 +1010,50 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 5,
 			}),
 		}),
+		n(VENDORS, {
+			n(251364, {	-- Destin Thriceforged
+				["coord"] = { 43.5, 23.6, MAP.ZEPHRAS_ISLE },
+				["sym"] = {{"select","itemID",
+					1194,	-- Bastard Sword
+					2479,	-- Broad Axe
+					2130,	-- Club
+					2139,	-- Dirk
+					2134,	-- Hand Axe
+					2480,	-- Large Club
+					2132,	-- Short Staff
+					2131,	-- Shortsword
+				}},
+			}),
+			n(251965, {	-- Fevrath Skyhammer
+				["coord"] = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },
+				["sym"] = {{"select","itemID",
+					2129,	-- Large Round Shield
+					17184,	-- Small Shield
+					2380,	-- Tarnished Chain Belt
+					2383,	-- Tarnished Chain Boots
+					2384,	-- Tarnished Chain Bracers
+					2385,	-- Tarnished Chain Gloves
+					2381,	-- Tarnished Chain Leggings
+					2379,	-- Tarnished Chain Vest
+				}},
+			}),
+			n(251365, {	-- Jolee Brightmeadows
+				["coord"] = { 43.5, 23.7, MAP.ZEPHRAS_ISLE },
+				["sym"] = {{"select","itemID",
+					2122,	-- Cracked Leather Belt
+					2123,	-- Cracked Leather Boots
+					2124,	-- Cracked Leather Bracers
+					2125,	-- Cracked Leather Gloves
+					2126,	-- Cracked Leather Pants
+					2127,	-- Cracked Leather Vest
+					2121,	-- Thin Cloth Armor
+					3599,	-- Thin Cloth Belt
+					3600,	-- Thin Cloth Bracers
+					2119,	-- Thin Cloth Gloves
+					2120,	-- Thin Cloth Pants
+					2117,	-- Thin Cloth Shoes
+				}},
+			}),
+		}),
 	},
 });
