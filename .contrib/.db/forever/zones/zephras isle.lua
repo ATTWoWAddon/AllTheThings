@@ -65,6 +65,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				["sourceQuest"] = 92461,	-- Harmony in Balance
 				["classes"] = { MAGE },
+				["races"] = { SKYBORNE_ALLIANCE },
 				["lvl"] = 2,
 				["groups"] = { i(282416), },	-- Glowing Recall Crystal
 			}),
@@ -147,6 +148,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 256507,	-- Belann Windwood
 				["coord"] = { 62.8, 77.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { MAGE },
+				["races"] = { SKYBORNE_ALLIANCE },
 				["lvl"] = 10,
 				["groups"] = {
 					i(263430),	-- Windbough Wand
@@ -172,18 +174,21 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251374,	-- Windshaper Boro
 				["coord"] = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
+				["races"] = { SKYBORNE_HORDE },
 				["lvl"] = 3,
 			}),
 			q(92467, {	-- Call of Earth
 				["qg"] = 251374,	-- Windshaper Boro
 				["coord"] = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
+				["races"] = { SKYBORNE_HORDE },
 				["lvl"] = 3,
 			}),
 			q(92468, {	-- Call of Earth
 				["qg"] = 251166,	-- Minor Manifestation of Earth
 				["coord"] = { 49.6, 24.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
+				["races"] = { SKYBORNE_HORDE },
 				["lvl"] = 3,
 				["groups"] = {
 					i(5175),	-- Earth Totem
@@ -424,6 +429,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251361,	-- Rorian the Dayseeker
 				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
+				["races"] = { SKYBORNE_HORDE },
 				["lvl"] = 2,
 			}),
 			q(92529, {	-- Falaath Village
@@ -640,6 +646,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 252373,	-- Anathamaas Aetherwind
 				["coord"] = { 65.8, 80.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { MAGE },
+				["races"] = { SKYBORNE_ALLIANCE },
 				["lvl"] = 10,
 			}),
 			q(92693, {	-- Standing Our Ground
