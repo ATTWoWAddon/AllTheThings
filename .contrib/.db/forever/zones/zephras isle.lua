@@ -486,6 +486,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 43.4, 24.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 2,
 				["groups"] = {
+					objective(1, {	-- 0/15 Windstone Cluster
+						["providers"] = {
+							{ "i", 258772 },	-- Windstone Cluster (QI!)
+							{ "o", 613286 },	-- Raw Windstone
+						},
+					}),
 					i(247840),	-- Mining for Dummies
 					i(247841),	-- Wild Harvest
 					i(247846),	-- Pelt Collecting for Beginners
