@@ -110,7 +110,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92473, {	-- Aggressive Encroachment
 				sourceQuest = 92471,	-- Aetheen of the Gales
 				qg = 257551,	-- Valreaa Valewind
-				coord = { 42.4, 25.0, MAP.ZEPHRAS_ISLE },
+				coord = { 42.4, 25.2, MAP.ZEPHRAS_ISLE },
 				lvl = 3,
 				groups = {
 					objective(1, {	-- 0/6 Scrawny Ursera Claw
@@ -624,7 +624,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92470, {	-- Foul Matriarch
 				sourceQuest = 92471,	-- Aetheen of the Gales
 				qg = 251366,	-- Aetheen of the Gales
-				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				coord = { 42.8, 23.7, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 				groups = {
 					objective(1, {	-- 0/8 Ursera Scavenger slain
