@@ -77,7 +77,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92473, {	-- Aggressive Encroachment
 				["qg"] = 257551,	-- Valreaa Valewind
 				["sourceQuest"] = 92471, 	-- Aetheen of the Gales
-				["coord"] = { 42.4, 25.0, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 42.4, 25.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 3,
 				["groups"] = {
 					i(257257),	-- Thendal Ranger's Shoes
@@ -461,7 +461,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92470, {	-- Foul Matriarch
 				["qg"] = 251366,	-- Aetheen of the Gales
 				["sourceQuest"] = 92471, 	-- Aetheen of the Gales
-				["coord"] = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				["coord"] = { 42.8, 23.7, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 2,
 				["groups"] = {
 					i(258882),	-- Worn Greatsword
