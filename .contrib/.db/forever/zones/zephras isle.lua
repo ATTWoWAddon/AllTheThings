@@ -350,7 +350,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["groups"] = { recipe(1230171), },
 			}),
 			q(96646, {	-- Camping 101: Cooking
-				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
+				["sourceQuest"] = 92470,	-- Foul Matriarch
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
