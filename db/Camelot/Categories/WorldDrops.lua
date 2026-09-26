@@ -3581,6 +3581,7 @@ i(5465,{coords={
 i(1475,{description="Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={1432,1442}}),
 i(5468,{coords={
 [1439]={{33,70},{40,20}}},crs={2173,2174,6033},description="Drops from frenzies found in bodies of water.",maps={1421}}),
+i(3174,{crs={217,442,930,949,1111,1195,1780,1781,3819,3820,3821,4005,4006,4007,4040,221169,271898},maps={1421,1431,1432,1433,1437,1440,1442}}),
 i(3182,{crs={3819,3820,3821},description="Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={1440}}),
 i(5471,{coords={
 [1440]={{19.7,29.9},{39.5,63.6},{69.9,62.7}}},crs={3816,3817,3818},description="Drops from stags in Ashenvale as well as some other vanilla zones."}),

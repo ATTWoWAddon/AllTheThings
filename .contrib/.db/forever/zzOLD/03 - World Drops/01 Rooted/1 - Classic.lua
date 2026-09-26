@@ -5244,6 +5244,36 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				MAP.STONETALON_MOUNTAINS,
 			},
 		}),
+		i(3174, {	-- Spider Ichor
+			["maps"] = {
+				MAP.ASHENVALE,
+				MAP.DUSKWOOD,
+				MAP.LOCH_MODAN,
+				MAP.REDRIDGE_MOUNTAINS,
+				MAP.SILVERPINE_FOREST,
+				MAP.STONETALON_MOUNTAINS,
+				MAP.WETLANDS,
+			},
+			["crs"] = {
+				3821,	-- Wildthorn Lurker
+				3820,	-- Wildthorn Venomspitter
+				3819,	-- Wildthorn Stalker
+				949,	-- Carrion Recluse
+				930,	-- Black Widow Hatchling
+				217,	-- Venom Web Spider
+				221169,	-- Black Widow Broodmother
+				1195,	-- Forest Lurker
+				442,	-- Tarantula
+				271898,	-- Greater Tarantula
+				1781,	-- Mist Creeper
+				1780,	-- Moss Stalker
+				4005,	-- Deepmoss Creeper
+				4006,	-- Deepmoss Webspinner
+				4007,	-- Deepmoss Venomspitter
+				1111,	-- Leech Stalker
+				4040,	-- Cave Stalker
+			},
+		}),
 		i(5785, {	-- Thick Murloc Scale
 			["maps"] = {
 				MAP.DUSTWALLOW_MARSH,

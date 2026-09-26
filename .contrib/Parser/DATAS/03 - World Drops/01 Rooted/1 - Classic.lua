@@ -6063,6 +6063,49 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
 			-- #endif
 		}),
+		i(3174, {	-- Spider Ichor
+			["maps"] = {
+				MAP.ASHENVALE,
+				MAP.DUSKWOOD,
+				MAP.LOCH_MODAN,
+				MAP.REDRIDGE_MOUNTAINS,
+				MAP.SILVERPINE_FOREST,
+				MAP.STONETALON_MOUNTAINS,
+				MAP.WETLANDS,
+			},
+			["crs"] = {
+				3821,	-- Wildthorn Lurker
+				3820,	-- Wildthorn Venomspitter
+				3819,	-- Wildthorn Stalker
+				949,	-- Carrion Recluse
+				930,	-- Black Widow Hatchling
+				217,	-- Venom Web Spider
+				-- #if BEFORE CATA
+				539,	-- Pygmy Venom Web Spider
+				569,	-- Green Recluse
+				-- #endif
+				1195,	-- Forest Lurker
+				-- #if BEFORE CATA
+				1184,	-- Cliff Lurker
+				1185,	-- Wood Lurker
+				-- #endif
+				442,	-- Tarantula
+				-- #if BEFORE CATA
+				505,	-- Greater Tarantula
+				-- #endif
+				1781,	-- Mist Creeper
+				1780,	-- Moss Stalker
+				4005,	-- Deepmoss Creeper
+				4006,	-- Deepmoss Webspinner
+				4007,	-- Deepmoss Venomspitter
+				-- #if BEFORE CATA
+				4264,	-- Deepmoss Matriarch
+				4263,	-- Deepmoss Hatchling
+				-- #endif
+				1111,	-- Leech Stalker
+				4040,	-- Cave Stalker
+			},
+		}),
 		i(5785, {	-- Thick Murloc Scale
 			-- Danny Donkey:	Blizzard devs fucked around with this reagent during retail Cataclysm which lead to it periodically only becoming obtainable from the rare Scargil in Hillsbrad and random mobs in Dustwallow.
 			-- 					At an unknown point got it added to Bluegill murlocs in Wetlands, as well as possibly dropping in StV and DwM. Seems like Cata Classic carried on without affecting this drop.
