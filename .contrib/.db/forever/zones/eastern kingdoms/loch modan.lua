@@ -435,6 +435,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(1832),	-- Lucky Trousers
 				},
 			}),
+			q(86776, {	-- Ingredients for the Forge
+				-- CRIEVE NOTE: This might be a mining exclusive quest
+				qg = 167,	-- Morhan Coppertongue <Metalsmith>
+				coord = { 34.0, 46.6, LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { ARATHI_HIGHLANDS },
+				cost = {{ "i", 2841, 10 }},	-- Bronze Bar
+				lvl = 15,
+			}),
 			q(436, {	-- Ironband's Excavation
 				["qg"] = 1105,	-- Jern Hornhelm
 				["coord"] = { 37.2, 47.4, MAP.LOCH_MODAN },
@@ -652,6 +661,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(6189),	-- Durable Chain Shoulders
 					i(6191),	-- Kimbra Boots
 					i(1449),	-- Minor Channeling Ring
+					i(270019, {	-- Loch Walkers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 		}),
