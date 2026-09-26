@@ -1011,6 +1011,83 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 		}),
 		n(VENDORS, {
+			n(272045, {	-- Brother Zendraas
+				["coord"] = { 57.8, 52.0, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(277069, {	-- Al'aketh Armguards
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277065, {	-- Al'aketh Belt
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277067, {	-- Al'aketh Boots
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277063, {	-- Al'aketh Bracers
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277059, {	-- Al'aketh Chain
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277056, {	-- Al'aketh Chainmail
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277077, {	-- Al'aketh Cord
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277075, {	-- Al'aketh Cuffs
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277073, {	-- Al'aketh Footwraps
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277058, {	-- Al'aketh Gauntlets
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277064, {	-- Al'aketh Gloves
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277061, {	-- Al'aketh Greaves
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277076, {	-- Al'aketh Handwraps
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277062, {	-- Al'aketh Harness
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277068, {	-- Al'aketh Jerkin
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277078, {	-- Al'aketh Leggings
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277060, {	-- Al'aketh Legguards
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277070, {	-- Al'aketh Mitts
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277072, {	-- Al'aketh Pants
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277079, {	-- Al'aketh Shoes
+						["cost"] = {{ "i", 255663, 8 }},	-- Windstone
+					}),
+					i(277071, {	-- Al'aketh Strap
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+					i(277066, {	-- Al'aketh Trousers
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277074, {	-- Al'aketh Vestments
+						["cost"] = {{ "i", 255663, 15 }},	-- Windstone
+					}),
+					i(277057, {	-- Al'aketh Wristguards
+						["cost"] = {{ "i", 255663, 5 }},	-- Windstone
+					}),
+				},
+			}),
 			n(251364, {	-- Destin Thriceforged
 				["coord"] = { 43.5, 23.6, MAP.ZEPHRAS_ISLE },
 				["sym"] = {{"select","itemID",
