@@ -566,6 +566,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				isBreadcrumb = true,
 				lvl = 2,
 			}),
 			q(92484, {	-- Embracing the Elements
