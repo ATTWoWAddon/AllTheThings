@@ -80,6 +80,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 42.4, 25.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 3,
 				["groups"] = {
+					objective(1, {	-- 0/6 Scrawny Ursera Claw
+						["provider"] = { "n", 250926 },	-- Scrawny Ursera
+						["cr"] = 250926,	-- Scrawny Ursera
+					}),
 					i(257257),	-- Thendal Ranger's Shoes
 					i(257264),	-- Thendal Ranger's Gloves
 					i(257263),	-- Thendal Ranger's Belt
@@ -464,6 +468,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 42.8, 23.7, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 2,
 				["groups"] = {
+					objective(1, { ["provider"] = { "n", 250937 } }),	-- Ursera Scavenger
+					objective(2, {	-- Head of Urs'anah
+						["provider"] = { "i", 252665 },	-- Head of Urs'anah
+						["cr"] = 251115,	-- Urs'anah
+					}),
 					i(258882),	-- Worn Greatsword
 					i(257282),	-- Novice's Quarterstaff
 					i(257283),	-- Scout Ranger's Dagger
@@ -734,6 +743,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 2,
 				["groups"] = {
+					objective(1, { ["provider"] = { "n", 251404 } }),	-- Cirrusfly Queen
 					i(263408),	-- Exterminator's Vest
 					i(263409),	-- Gardening Pants
 					i(263410),	-- Watchers Mail Chest
