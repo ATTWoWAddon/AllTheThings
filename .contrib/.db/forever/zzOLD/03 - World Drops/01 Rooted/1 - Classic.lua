@@ -4687,6 +4687,48 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
 		}),
+		i(1081, {	-- Crisp Spider Meat
+			["maps"] = {
+				MAP.ARATHI_HIGHLANDS,
+				MAP.ASHENVALE,
+				MAP.DUSKWOOD,
+				MAP.ALTERAC_MOUNTAINS,
+				MAP.HILLSBRAD_FOOTHILLS,
+				MAP.LOCH_MODAN,
+				MAP.REDRIDGE_MOUNTAINS,
+				MAP.STONETALON_MOUNTAINS,
+				MAP.WETLANDS,
+			},
+			["crs"] = {
+				2565,	-- Giant Plains Creeper
+				2563,	-- Plains Creeper
+				3821,	-- Wildthorn Lurker
+				3820,	-- Wildthorn Venomspitter
+				3819,	-- Wildthorn Stalker
+				949,	-- Carrion Recluse
+				930,	-- Black Widow Hatchling
+				569,	-- Green Recluse
+				217,	-- Venom Web Spider
+				539,	-- Pygmy Venom Web Spider
+				221169,	-- Black Widow Broodmother
+				2348,	-- Elder Moss Creeper
+				2349,	-- Giant Moss Creeper
+				2350,	-- Forest Moss Creeper
+				1195,	-- Forest Lurker
+				1184,	-- Cliff Lurker
+				1185,	-- Wood Lurker
+				442,	-- Tarantula
+				271898,	-- Greater Tarantula
+				505,	-- Greater Tarantula
+				4005,	-- Deepmoss Creeper
+				4006,	-- Deepmoss Webspinner
+				4007,	-- Deepmoss Venomspitter
+				4264,	-- Deepmoss Matriarch
+				4263,	-- Deepmoss Hatchling
+				1111,	-- Leech Stalker
+				4040,	-- Cave Stalker
+			},
+		}),
 		i(2924, {	-- Crocolisk Meat
 			["coord"] = { 54.3, 57.8, MAP.LOCH_MODAN },	-- The Loch (southern isle)
 			["cr"] = 1693,	-- Loch Crocolisk
@@ -5261,15 +5303,22 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				949,	-- Carrion Recluse
 				930,	-- Black Widow Hatchling
 				217,	-- Venom Web Spider
+				539,	-- Pygmy Venom Web Spider
+				569,	-- Green Recluse
 				221169,	-- Black Widow Broodmother
 				1195,	-- Forest Lurker
+				1184,	-- Cliff Lurker
+				1185,	-- Wood Lurker
 				442,	-- Tarantula
 				271898,	-- Greater Tarantula
+				505,	-- Greater Tarantula
 				1781,	-- Mist Creeper
 				1780,	-- Moss Stalker
 				4005,	-- Deepmoss Creeper
 				4006,	-- Deepmoss Webspinner
 				4007,	-- Deepmoss Venomspitter
+				4264,	-- Deepmoss Matriarch
+				4263,	-- Deepmoss Hatchling
 				1111,	-- Leech Stalker
 				4040,	-- Cave Stalker
 			},

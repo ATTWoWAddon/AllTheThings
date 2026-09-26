@@ -544,6 +544,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				["races"] = { DWARF, GNOME },
 				["lvl"] = 10,
 			}),
+			q(86667, {	-- Snowbound
+				qg = 49808,	-- Grenhild Darktalon
+				coord = { 36.4, 48.2, LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Jar of Snow
+						providers = {
+							{ "i", 279379 },	-- Jar of Snow
+							{ "i", 279380 },	-- Ceramic Jar
+						},
+						coord = { 19.9, 62.6, MAP.LOCH_MODAN },
+					}),
+				},
+			}),
 			q(1338, {	-- Stormpike's Order
 				["sourceQuest"] = 1339,	-- Mountaineer Stormpike's Task
 				["qg"] = 1343,	-- Mountaineer Stormpike
