@@ -930,8 +930,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {{"sub", "common_vendor", 5565}},	-- Jillian Tanner <Leatherworking Supplies>
 				["groups"] = {
+					i(252784, {	-- Pattern: Forceful Medium Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 						["isLimited"] = true,
+					}),
+					i(252783, {	-- Pattern: Mystic Medium Armor Kit (RECIPE!)
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),
@@ -1266,16 +1272,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5107, {	-- Mangorn Flinthammer
 				["coord"] = { 32.0, 58.8, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-				}},
 				["groups"] = {
 					i(17187),	-- Banded Buckler
+					i(847),		-- Chainmail Armor
+					i(1845),	-- Chainmail Belt
+					i(849),		-- Chainmail Boots
+					i(1846),	-- Chainmail Bracers
+					i(850),		-- Chainmail Gloves
+					i(848),		-- Chainmail Pants
 					i(1202),	-- Wall Shield
 				},
 			}),
