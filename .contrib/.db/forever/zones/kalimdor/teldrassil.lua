@@ -327,6 +327,17 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							2127,	-- Cracked Leather Vest
 						}},
 					}),
+					n(3590, {	-- Janna Brightmoon
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {{"select","itemID",
+							2121,	-- Thin Cloth Armor
+							3599,	-- Thin Cloth Belt
+							3600,	-- Thin Cloth Bracers
+							2119,	-- Thin Cloth Gloves
+							2120,	-- Thin Cloth Pants
+							2117,	-- Thin Cloth Shoes
+						}},
+					}),
 					n(3589, {	-- Keina
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{"select","itemID",
