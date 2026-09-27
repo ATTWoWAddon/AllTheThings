@@ -1213,5 +1213,18 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 		}),
+		n(ZONE_DROPS, {
+			i(2057, {	-- Pitted Defias Shortsword
+				["cr"] = 251160,	-- Al'Aketh Convert
+				["coords"] = {
+					{ 45.7, 18.7, MAP.ZEPHRAS_ISLE },
+					{ 47.0, 20.0, MAP.ZEPHRAS_ISLE },
+				},
+			}),
+			i(251932, {	-- Sharpened Cirrusfly Stinger
+				["cr"] = 251402,	-- Cirrusfly Soldier
+				["coord"] = { 47.5, 27.7, MAP.ZEPHRAS_ISLE },
+			}),
+		}),
 	},
 });
