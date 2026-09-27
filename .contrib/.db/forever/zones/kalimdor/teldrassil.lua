@@ -74,6 +74,12 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["races"] = { NIGHTELF },
 						["classes"] = { HUNTER },
 					}),
+					q(97236, {	-- Fang of Githyiss
+						["provider"] = { "i", 277190 },	-- Fang of Githyiss
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = ALLIANCE_ONLY,
+						["cr"] = 1994,	-- Githyiss the Vile
+					}),
 					q(3119, {	-- Hallowed Sigil
 						["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 						["qg"] = 2079,	-- Conservator Ilthalaine
@@ -129,6 +135,21 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["groups"] = {
 							i(10655),	-- Sedgeweed Britches
 							i(10656),	-- Barkmail Vest
+						},
+					}),
+					q(97977, {	-- Nature's Call
+						["qg"] = 1992,	-- Tarindrella
+						["coord"] = { 57.8, 45.0, MAP.TELDRASSIL },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/4 Gnarlpine Totem
+								["providers"] = {
+									{ "i", 279082 },	-- Gnarlpine Totem
+									{ "o", 668482 },	-- Ellena Starlight
+									{ "o", 668493 },	-- (unnamed object that gave a Gnarlpine Totem)
+								},
+							}),
 						},
 					}),
 					q(5629, {	-- Returning Home [Teldrassil]
@@ -205,6 +226,12 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							i(5405),	-- Draped Cloak
 							i(6058),	-- Blackened Leather Belt
 						},
+					}),
+					q(97979, {	-- The Goddess Provides
+						["qg"] = 3595,	-- Shanda <Priest Trainer>
+						["coord"] = { 59.2, 40.4, MAP.TELDRASSIL },
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						["races"] = { NIGHTELF },
 					}),
 					q(458, {	-- The Woodland Protector (1/2)
 						["qg"] = 2077,	-- Melithar Staghelm
