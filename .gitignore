@@ -3,8 +3,12 @@
 .contrib/.tools/log.txt
 .contrib/Harvesters/RAW/
 .contrib/Harvesters/*.json
-.contrib/Parser/Parser.exe.config
 .contrib/Parser/Parser.pdb
+.contrib/Parser/KeraLua.pdb
+.contrib/Parser/NLua.pdb
+.contrib/Parser/KeraLua.xml
+.contrib/Parser/liblua54.dylib
+.contrib/Parser/liblua54.so
 .contrib/Parser/Parser V2.exe.config
 .contrib/Parser/Parser V2.pdb
 .contrib/Debugging/
