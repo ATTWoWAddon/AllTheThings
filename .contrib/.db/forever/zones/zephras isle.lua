@@ -1224,6 +1224,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			i(251932, {	-- Sharpened Cirrusfly Stinger
 				["cr"] = 251402,	-- Cirrusfly Soldier
 				["coord"] = { 47.5, 27.7, MAP.ZEPHRAS_ISLE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},
