@@ -74,6 +74,32 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='AnyCPU'">
+    <ShouldIncludeNativeLua>False</ShouldIncludeNativeLua>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\.builds\Parser\AnyCPU\Release\</OutputPath>
+    <DefineConstants>TRACE;RETAIL;TWW;PARSER_ANYCPU</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\.builds\Parser\AnyCPU\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RETAIL;TWW;PARSER_ANYCPU</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM64' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\.builds\Parser\ARM64\Release\</OutputPath>
@@ -111,6 +137,21 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Platform)'=='AnyCPU'">
+    <None Include="packages\KeraLua.1.4.10\runtimes\win-x86\native\lua54.dll">
+      <Link>x86\lua54.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages\KeraLua.1.4.10\runtimes\win-x64\native\lua54.dll">
+      <Link>x64\lua54.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages\KeraLua.1.4.10\runtimes\win-arm64\native\lua54.dll">
+      <Link>ARM64\lua54.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectedStatus.cs" />
@@ -198,6 +239,7 @@
     <Compile Include="Harvesters\ObjectHarvester.cs" />
     <Compile Include="Framework\ParseStage.cs" />
     <Compile Include="MiniJSON.cs" />
+    <Compile Include="NativeLua.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tracer.cs" />
@@ -226,10 +268,13 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\KeraLua.1.4.10\build\net46\KeraLua.targets" Condition="Exists('packages\KeraLua.1.4.10\build\net46\KeraLua.targets')" />
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64'" Text="Parser supports only the x64, x86, and ARM64 platforms. Select one in Parser.sln." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64' and '$(Platform)' != 'AnyCPU'" Text="Parser supports only the x64, x86, ARM64, and AnyCPU platforms. Select one in Parser.sln." />
   </Target>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <Error Condition="!Exists('packages\KeraLua.1.4.10\build\net46\KeraLua.targets')" Text="KeraLua.targets is missing. Restore NuGet packages for Parser.sln before building." />
+  </Target>
+  <Target Name="RemoveStaleAnyCpuLua" AfterTargets="CopyFilesToOutputDirectory" Condition="'$(Platform)' == 'AnyCPU'">
+    <Delete Files="$(TargetDir)lua54.dll" />
   </Target>
   <UsingTask TaskName="MarkPeLargeAddressAware" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
     <ParameterGroup>
