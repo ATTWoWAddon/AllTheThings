@@ -1181,6 +1181,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2379,	-- Tarnished Chain Vest
 				}},
 			}),
+			n(265756, {	-- Genn Fairweather
+				["coord"] = { 53.8, 81.2, MAP.ZEPHRAS_ISLE },
+				["groups"] = {
+					i(269681),	-- Empyrean Galestrider (MOUNT!)
+					i(269683),	-- Stormy Galestrider (MOUNT!)
+					i(269671),	-- Swift Empyrean Galestrider (MOUNT!)
+					i(269678),	-- Swift Stormy Galestrider (MOUNT!)
+					i(274933),	-- Swift Umber Galestrider (MOUNT!)
+					i(274930),	-- Umber Galestrider (MOUNT!)
+				},
+			}),
 			n(251365, {	-- Jolee Brightmeadows
 				["coord"] = { 43.5, 23.7, MAP.ZEPHRAS_ISLE },
 				["sym"] = {{"select","itemID",
