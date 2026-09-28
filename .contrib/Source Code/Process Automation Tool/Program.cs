@@ -29,8 +29,8 @@ namespace ATT
                 }
                 else
                 {
-                    // We want to parse the whole Parser folder.
-                    allFiles.AddRange(Directory.GetFiles("../Parser/", "*.lua", SearchOption.AllDirectories));
+                    // We want to parse the whole .db folder.
+                    allFiles.AddRange(Directory.GetFiles("../.db/", "*.lua", SearchOption.AllDirectories));
                 }
 
                 // Step 1: Clean the files before processing them.

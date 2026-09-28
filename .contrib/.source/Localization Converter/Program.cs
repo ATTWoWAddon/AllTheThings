@@ -7,7 +7,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.OutputEncoding = Encoding.UTF8;
-        string LocalizationStringsDirectory = "../Parser/lib/Strings";
+        string LocalizationStringsDirectory = "../.db/shared/lib/Strings";
         if (Directory.Exists(LocalizationStringsDirectory))
         {
             // Load all of the localization files into RAM.
