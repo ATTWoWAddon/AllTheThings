@@ -1,7 +1,7 @@
 ﻿// DBContext / AssetDB
 using System.Text;
 
-var databaseFolder = "../Parser/DATAS/00 - DB/AssetDB";
+var databaseFolder = "../.db/standard/00 - DB/AssetDB";
 Directory.CreateDirectory(databaseFolder);
 foreach (var file in Directory.GetFiles("../.raw/AssetDB"))
 {

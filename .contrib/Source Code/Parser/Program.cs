@@ -455,7 +455,7 @@ namespace ATT
                 }
 
                 // Load the main lua header file and all associated lib files first.
-                string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
+                string databaseRootFolder = Framework.Config["root-data"] ?? "./../.db/standard";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
                 luaFiles.Sort(StringComparer.InvariantCulture);
                 try
@@ -977,7 +977,7 @@ namespace ATT
             builder.Append("-- ").Append(shortname).AppendLine();
 
             // Are we already using the Retail DB?
-            string filename = ".\\DATAS\\" + shortname;
+            string filename =  (Framework.Config["root-data"] ?? "./../.db/standard/").Replace("/","\\") + shortname;
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;

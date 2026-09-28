@@ -461,7 +461,7 @@ end
 
 -- Helper Functions
 --
--- Core table/group manipulation utilities used by parser DATAS. Most of these
+-- Core table/group manipulation utilities used by parser db. Most of these
 -- mutate the provided object tree in place and also return the same table so
 -- they can be composed around constructors.
 --- Checks whether a value is an array-style table (including an empty table).

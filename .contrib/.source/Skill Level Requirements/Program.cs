@@ -3,7 +3,7 @@ using ATT;
 using System.Text;
 
 // Make sure the Skill Level Requirements folder exists.
-var SkillLevelRequirementsFolderName = "../Parser/DATAS/00 - Profession DB/Skill Level Requirements/";
+var SkillLevelRequirementsFolderName = "../.db/standard/00 - Profession DB/Skill Level Requirements/";
 #pragma warning disable CS8604 // Possible null reference argument.
 Directory.CreateDirectory(Path.GetDirectoryName(SkillLevelRequirementsFolderName));
 #pragma warning restore CS8604 // Possible null reference argument.
