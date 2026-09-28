@@ -1853,7 +1853,7 @@ q(24,{coords={
 q(2,{coords={
 [1440]={{75.8,69.6}}},crs={12676},lvl=20,qss={16305},r=1,sourceQuests={6383}}),
 h(-620,{coords={
-[1440]={{17.3,26.7}}},cost={{"i",210708,1}},OnUpdate=_.OnUpdateDB.FOR_CRAFTER,qgs={212334},questID=78907,rwp=20001,u=1605}),
+[1440]={{17.3,26.7}}},cost={{"i",210708,1}},OnUpdate=_.OnUpdateDB.SOD_FOR_CRAFTER,qgs={212334},questID=78907,rwp=20001,u=1605}),
 q(25,{coords={
 [1440]={{73.66,60.01}}},lvl=23,qgs={12737},r=1,g={
 qo(1,{providers={{"n",3917}}})}}),
@@ -7822,7 +7822,7 @@ q(4963,{altQuests={4962},c={9},coords={
 qo(1,{coords={
 [1443]={{50,73}}},crs={4676},providers={{"i",12646},{"i",12649}}})}}),
 q(78909,{coords={
-[1413]={{62,39.4}}},cost={{"i",211419,1},{"i",10978,2},{"i",10939,5},{"i",10940,40},{"g",50000}},OnUpdate=_.OnUpdateDB.FOR_CRAFTER,qgs={214208},rwp=20001,sourceQuests={78908},u=1605,g={
+[1413]={{62,39.4}}},cost={{"i",211419,1},{"i",10978,2},{"i",10939,5},{"i",10940,40},{"g",50000}},OnUpdate=_.OnUpdateDB.SOD_FOR_CRAFTER,qgs={214208},rwp=20001,sourceQuests={78908},u=1605,g={
 i(211420,{b=1,f=53,lvl=25,q=3,sourceQuests={78909},u=1605})}}),
 q(78267,{coords={
 [1413]={{61.8,39.4}}},lvl=20,maps={1442},qgs={211653},rwp=20001,sourceQuests={78284},u=1605,g={
@@ -7835,7 +7835,7 @@ qo(2,{providers={{"n",3382}}})}}),
 h(-624,{coords={
 [1413]={{61.8,39.4}}},lvl=20,qgs={211653},questID=78284,rwp=20001,u=1605}),
 h(-625,{coords={
-[1413]={{62,39.4}}},description="You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",lvl=20,OnUpdate=_.OnUpdateDB.FOR_CRAFTER,providers={{"i",211419},{"n",214208}},questID=78908,rwp=20001,u=1605}),
+[1413]={{62,39.4}}},description="You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",lvl=20,OnUpdate=_.OnUpdateDB.SOD_FOR_CRAFTER,providers={{"i",211419},{"n",214208}},questID=78908,rwp=20001,u=1605}),
 q(1823,{c={1},coords={
 [1454]={{80.2,32.4}},
 [1456]={{57.4,87.2}},
@@ -8019,7 +8019,8 @@ q(895,{coords={
 [1413]={{62.59,37.47}}},lvl=11,providers={{"o",3972}},g={
 qo(1,{coords={
 [1413]={{62.6,49.8}}},crs={3467},providers={{"i",5084}}})}}),
-q(885,{crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
+q(885,{coords={
+[1413]={{44.8,78.8}}},crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
 q(972,{c={7},coords={
 [1413]={{65.8,43.8}}},lvl=20,qgs={5901},r=1,repeatable=1,rwp=40003,sourceQuests={220},g={
 i(6637,{b=1,f=55,q=1})}}),
@@ -10558,7 +10559,7 @@ n(1319,{coords={
 s(156831,2445,{f=8,lvl=17,q=1}),
 s(163288,17188,{f=8,lvl=14,q=1})}}),
 n(12777,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"sub","pvp_gear_base",1,-210},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}}}),
-n(12782,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"sub","pvp_gear_base",1,-210,-101},{"pop"}}}),
+n(12782,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}}}),
 n(1291,{coords={
 [1453]={{55,56}}},r=2,g={
 s(162718,16059,{f=10,q=1}),
@@ -13128,7 +13129,8 @@ i(2886,{coords={
 i(208192,{c={3},crs={1125,1126,1127,1689,208638},q=1,rwp=20001,u=1605}),
 s(156601,2067,{awp=100107,coords={
 [1426]={{78,54.2},{79.2,48.4}}},crs={1117},f=28,lvl=5,q=1,rwp=40003}),
-s(156735,2259,{awp=100107,crs={1121},f=23,lvl=3,q=1,rwp=40003}),
+s(156735,2259,{awp=100107,coords={
+[1426]={{21.2,54.4},{40.8,35},{40.8,43.6}}},crs={1121},f=23,lvl=3,q=1,rwp=40003}),
 s(156736,2260,{awp=100107,coords={
 [1426]={{26.6,50.6},{27.2,52.8}}},crs={1122,1123},f=21,lvl=4,q=1,rwp=40003}),
 s(156734,2258,{awp=100107,coords={

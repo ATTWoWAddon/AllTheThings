@@ -3017,7 +3017,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=3,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=3,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=20,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=20,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=27,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=9,["monthDay"]=27,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=10,["monthDay"]=4,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=10,["monthDay"]=4,["weekday"]=1,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=10,["monthDay"]=11,["weekday"]=1,["year"]=2026},{["hour"]=23,["month"]=10,["monthDay"]=11,["weekday"]=1,["year"]=2026}),
@@ -3069,7 +3068,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=8,["monthDay"]=29,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=8,["monthDay"]=29,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=5,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=5,["weekday"]=1,["year"]=2027}),
 	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=12,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=12,["weekday"]=1,["year"]=2027}),
-	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=19,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=19,["weekday"]=1,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=19,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=19,["weekday"]=1,["year"]=2027}),
+	_.Modules.Events.CreateSchedule({["hour"]=21,["month"]=9,["monthDay"]=26,["weekday"]=1,["year"]=2027},{["hour"]=23,["month"]=9,["monthDay"]=26,["weekday"]=1,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -9911,6 +9911,7 @@ local ObjectNames = {
 	[293568] = "Wanted Poster",
 	[293569] = "River Clam",
 	[293699] = "Scroll of Safe Passage",
+	[293800] = "Evermoss",
 	[293812] = "Azerite-Infused Cannonballs",
 	[293814] = "Azerite-Infused Gunpowder",
 	[293817] = "Blazing Torch",
@@ -19485,6 +19486,7 @@ local ObjectModels = {
 	[293568] = 936419,
 	[293569] = 329444,
 	[293699] = 1354766,
+	[293800] = 1115577,
 	[293812] = 1662883,
 	[293814] = 987262,
 	[293817] = 1533570,
@@ -32171,6 +32173,7 @@ localize(ObjectNames, {
 	[293568] = "Steckbrief",
 	[293569] = "Flussmuschel",
 	[293699] = "Schriftrolle des sicheren Geleits",
+	[293800] = "Immermoos",
 	[293812] = "Azeritdurchströmte Kanonenkugeln",
 	[293814] = "Azeritdurchströmtes Schießpulver",
 	[293817] = "Lodernde Fackel",
@@ -40931,6 +40934,7 @@ localize(ObjectNames, {
 	[293568] = "Avis de recherche",
 	[293569] = "Palourde d’eau douce",
 	[293699] = "Parchemin du rituel de passage",
+	[293800] = "Mousse éternelle",
 	[293812] = "Boulets de canon imprégnés d’azérite",
 	[293814] = "Poudre à canon imprégnée d’azérite",
 	[293817] = "Torche flamboyante",
@@ -48914,6 +48918,7 @@ localize(ObjectNames, {
 	[293568] = "Manifesto dei Ricercati",
 	[293569] = "Bivalve di Fiume",
 	[293699] = "Pergamena del Passaggio Sicuro",
+	[293800] = "Muschieterno",
 	[293812] = "Palle di Cannone Infuse d'Azerite",
 	[293814] = "Polvere da Sparo Infusa d'Azerite",
 	[293817] = "Torcia Accesa",
@@ -56988,6 +56993,7 @@ localize(ObjectNames, {
 	[293568] = "Cartaz de Procura-se",
 	[293569] = "Marisco do Rio",
 	[293699] = "Pergaminho da Passagem Segura",
+	[293800] = "Musgueterno",
 	[293812] = "Balas de Canhão Imbuídas em Azerita",
 	[293814] = "Pólvora Imbuída em Azerita",
 	[293817] = "Tocha Fulgurante",
@@ -66051,6 +66057,7 @@ localize(ObjectNames, {
 	[293568] = [[Плакат "Разыскивается"]],
 	[293569] = "Речной моллюск",
 	[293699] = "Свиток безопасного прохода",
+	[293800] = "Вечномох",
 	[293812] = "Усиленные азеритом ядра",
 	[293814] = "Мешок с азеритовым порохом",
 	[293817] = "Пылающий факел",
@@ -74149,6 +74156,7 @@ localize(ObjectNames, {
 	[293568] = "현상 수배 전단",
 	[293569] = "강조개",
 	[293699] = "무사통과 의식의 두루마리",
+	[293800] = "영원이끼",
 	[293837] = "|cFFFFFFFFStep 2:|r 평범한 조약돌 I",
 	[293838] = "|cFFFFFFFFStep 3:|r 평범한 조약돌 II",
 	[293839] = "|cFFFFFFFFStep 4:|r 평범한 조약돌 III",
@@ -83050,6 +83058,7 @@ localize(ObjectNames, {
 	[293568] = "Cartel de Se busca",
 	[293569] = "Almeja de río",
 	[293699] = "Pergamino de salvoconducto",
+	[293800] = "Musgoeterno",
 	[293812] = "Balas de cañón imbuidas de azerita",
 	[293814] = "Pólvora imbuida de azerita",
 	[293817] = "Antorcha llameante",

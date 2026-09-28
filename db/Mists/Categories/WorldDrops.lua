@@ -3601,6 +3601,7 @@ i(5465,{coords={
 i(1475,{coords={
 [106]={{18.8,35.8}}},crs={17522,17523,17683},description="Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",q=1}),
 i(5468,{crs={2173,6033},description="Drops from frenzies found in bodies of water.",maps={21},q=1}),
+i(3174,{crs={217,442,930,949,1111,1195,1780,1781,3819,3820,3821,4005,4006,4007,4040},maps={21,47,48,49,56,63,65}}),
 i(3182,{crs={3819,3820,3821},description="Drops from spiders in lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={63},q=1}),
 i(67229,{awp=40003,coords={
 [62]={{45.2,40.8},{47.4,29.5}},

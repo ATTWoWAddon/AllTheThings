@@ -46,7 +46,7 @@ pvprank(11,{pvp=1}),
 pvprank(12,{pvp=1}),
 pvprank(13,{pvp=1}),
 pvprank(14,{pvp=1})}}),
-h(-210,{awp=10400,pvp=1,r=2,symselector=23,g={
+h(-210,{awp=10400,pvp=1,r=2,symselector=4,g={
 h(-101,{pvp=1,g={
 s(248989,234565,{b=1,f=26,lvl=60,pvp=1,q=4}),
 s(248990,234566,{b=1,f=22,lvl=60,pvp=1,q=4}),

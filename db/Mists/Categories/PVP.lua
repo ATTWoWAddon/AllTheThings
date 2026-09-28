@@ -189,7 +189,7 @@ pvprank(11,{pvp=1,u=2}),
 pvprank(12,{pvp=1,u=2}),
 pvprank(13,{pvp=1,u=2}),
 pvprank(14,{pvp=1,u=2})}}),
-h(-210,{awp=10400,pvp=1,r=2,symselector=23,g={
+h(-210,{awp=10400,pvp=1,r=2,symselector=4,g={
 h(-101,{pvp=1,g={
 s(129729,18825,{b=1,f=8,lvl=60,pvp=1,q=4,r=2}),
 s(129771,18867,{b=1,f=24,lvl=60,pvp=1,q=4,r=2}),
@@ -762,7 +762,7 @@ s(139220,28874,{b=1,c={11},f=5,loc=41,lvl=70,pvp=1,q=3,r=1,u=17}),
 s(139221,28875,{b=1,c={11},f=5,loc=42,lvl=70,pvp=1,q=3,r=1,u=17}),
 s(139217,28871,{b=1,c={11},f=5,loc=44,lvl=70,pvp=1,q=3,r=1,u=17}),
 s(139219,28873,{b=1,c={11},f=5,loc=46,lvl=70,pvp=1,q=3,r=1,u=17})}})}})}}),
-h(-247,{awp=20001,pvp=1,symselector=4,u=17,g={
+h(-247,{awp=20001,pvp=1,symselector=5,u=17,g={
 h(-12,{pvp=1,rwp=20102,u=2,g={
 ach(886,{providers={{"i",30609}},pvp=1,u=2}),
 mnt(37015,{b=1,description="Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=30609,lvl=70,pvp=1,q=4,u=2}),
@@ -1020,7 +1020,7 @@ i(30345,{awp=20003,b=1,c={7},f=53,lvl=70,pvp=1,q=3,rwp=40001,u=2}),
 i(30343,{awp=20003,b=1,c={9},f=53,lvl=70,pvp=1,q=3,rwp=40001,u=2}),
 i(30344,{awp=20003,b=1,c={1},f=53,lvl=70,pvp=1,q=3,rwp=40001,u=2}),
 i(24551,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=60002,u=17})}})}})}}),
-h(-248,{awp=20102,pvp=1,symselector=5,u=18,g={
+h(-248,{awp=20102,pvp=1,symselector=6,u=18,g={
 h(-12,{pvp=1,rwp=20300,u=2,g={
 ach(418,{pvp=1,u=2,g={
 title(37,{pvp=1,u=2})}}),
@@ -1211,7 +1211,7 @@ flt(52,{pvp=1,u=18,g={
 i(33056,{awp=20003,b=1,f=52,lvl=70,pvp=1,q=4,rwp=20504,u=2}),
 i(33064,{awp=20003,b=1,f=52,lvl=70,pvp=1,q=4,rwp=20504,u=2}),
 i(33057,{awp=20003,b=1,f=52,lvl=70,pvp=1,q=4,rwp=20504,u=2})}})}})}}),
-h(-249,{awp=20300,pvp=1,symselector=6,u=19,g={
+h(-249,{awp=20300,pvp=1,symselector=7,u=19,g={
 h(-12,{pvp=1,rwp=20403,u=2,g={
 ach(419,{pvp=1,u=2,g={
 title(40,{pvp=1,u=2})}}),
@@ -1422,7 +1422,7 @@ i(34576,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=30002,u=2}),
 i(34577,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=30002,u=2}),
 i(34578,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=30002,u=2}),
 i(34580,{awp=20003,b=1,f=53,lvl=70,pvp=1,q=4,rwp=30002,u=2})}})}})}}),
-h(-250,{awp=20403,pvp=1,symselector=7,u=21,g={
+h(-250,{awp=20403,pvp=1,symselector=8,u=21,g={
 h(-12,{pvp=1,rwp=30002,u=2,g={
 ach(420,{pvp=1,u=2,g={
 title(49,{pvp=1,u=2})}}),

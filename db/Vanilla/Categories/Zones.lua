@@ -7190,7 +7190,8 @@ q(895,{coords={
 [1413]={{62.59,37.47}}},lvl=11,providers={{"o",3972}},g={
 qo(1,{coords={
 [1413]={{62.6,49.8}}},crs={3467},providers={{"i",5084}}})}}),
-q(885,{crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
+q(885,{coords={
+[1413]={{44.8,78.8}}},crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
 q(972,{c={7},coords={
 [1413]={{65.8,43.8}}},lvl=20,qgs={5901},r=1,repeatable=1,rwp=40003,sourceQuests={220},g={
 i(6637,{b=1,f=55,q=1})}}),
@@ -9546,7 +9547,7 @@ n(1319,{coords={
 s(156831,2445,{f=8,lvl=17,q=1}),
 s(163288,17188,{f=8,lvl=14,q=1})}}),
 n(12777,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"sub","pvp_gear_base",1,-210},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}}}),
-n(12782,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"sub","pvp_gear_base",1,-210,-101},{"pop"}}}),
+n(12782,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}}}),
 n(1291,{coords={
 [1453]={{55,56}}},r=2,g={
 s(162718,16059,{f=10,q=1}),
@@ -11805,7 +11806,8 @@ i(2886,{coords={
 [1426]={{46.6,59.8}}},crs={1125,1126,1127,1689},description="Only drops from Crag Boars in Dun Morogh.",q=1}),
 s(156601,2067,{awp=100107,coords={
 [1426]={{78,54.2},{79.2,48.4}}},crs={1117},f=28,lvl=5,q=1,rwp=40003}),
-s(156735,2259,{awp=100107,crs={1121},f=23,lvl=3,q=1,rwp=40003}),
+s(156735,2259,{awp=100107,coords={
+[1426]={{21.2,54.4},{40.8,35},{40.8,43.6}}},crs={1121},f=23,lvl=3,q=1,rwp=40003}),
 s(156736,2260,{awp=100107,coords={
 [1426]={{26.6,50.6},{27.2,52.8}}},crs={1122,1123},f=21,lvl=4,q=1,rwp=40003}),
 s(156734,2258,{awp=100107,coords={

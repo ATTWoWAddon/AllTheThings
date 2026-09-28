@@ -16428,7 +16428,8 @@ qo(1,{providers={{"i",49769},{"n",37167},{"o",201701}}}),
 s(202945,53239,{b=1,f=6,loc=43,q=2}),
 s(202937,53231,{b=1,f=5,loc=45,q=2}),
 i(53250,{b=1,f=52,q=2})}}),
-q(885,{crs={3472},lvl=10,qss={5103},r=1,rwp=40003,u=2}),
+q(885,{coords={
+[10]={{44.8,78.8}}},crs={3472},lvl=10,qss={5103},r=1,rwp=40003,u=2}),
 q(893,{coords={
 [10]={{45.1,57.69}}},lvl=17,qgs={3433},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"i",5093}},u=2}),
@@ -25578,7 +25579,7 @@ s(117038,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(52027,{awp=40006,coords={
 [84]={{79.4,69.7}}},r=2,rwp=60002,sym={{"select","npcID",32509},{"pop"}}}),
 n(12784,{awp=20001,coords={
-[84]={{75.2,67.2}}},r=2,sym={{"sub","pvp_gear_base",1,-210},{"sub","pvp_gear_base",2,-250,-296},{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
+[84]={{75.2,67.2}}},r=2,sym={{"select","symselector",4},{"sub","pvp_gear_base",2,-250,-296},{"merge"},{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [84]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"c",1901,2000}},itemID=29465,lvl=40,pvp=1,q=4}),
@@ -25591,7 +25592,7 @@ mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,rwp=20001,u=2}),
 mnt(22723,{awp=20001,b=1,cost={{"c",1901,2000}},itemID=29471,lvl=40,pvp=1,q=4}),
 mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,rwp=20001,u=2})}}),
 n(12778,{awp=30002,coords={
-[84]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",4},{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"pop"},{"where","headerID",-296},{"pop"}},u=2}),
+[84]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"select","symselector",8},{"pop"},{"where","headerID",-296},{"pop"}},u=2}),
 n(54660,{coords={
 [84]={{74.8,67.6}}},r=2,rwp=50004,sym={{"sub","pvp_gear_base",4,-258,-295},{"merge"},{"pop"}},u=2}),
 n(52545,{coords={
@@ -29999,7 +30000,8 @@ i(2886,{coords={
 [27]={{46.6,59.8}}},crs={1125,1689},description="Only drops from Crag Boars in Dun Morogh.",q=1}),
 s(117694,2067,{awp=100107,coords={
 [27]={{78,54.2},{79.2,48.4}}},crs={1117},f=28,lvl=5,q=1,rwp=40003,u=2}),
-s(117847,2259,{awp=100107,crs={1121},f=23,lvl=3,q=1,rwp=40003,u=2}),
+s(117847,2259,{awp=100107,coords={
+[27]={{21.2,54.4},{40.8,35},{40.8,43.6}}},crs={1121},f=23,lvl=3,q=1,rwp=40003,u=2}),
 s(117848,2260,{awp=100107,coords={
 [27]={{26.6,50.6},{27.2,52.8}}},crs={1122,1123},f=21,lvl=4,q=1,rwp=40003,u=2}),
 s(117846,2258,{awp=100107,coords={

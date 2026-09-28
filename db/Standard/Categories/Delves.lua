@@ -2736,7 +2736,7 @@ s(307905,272276,{f=8})}})}),
 flt(50,{
 i(276547,{description="Use before starting your Prey quest to work properly.",f=55,spellID=1306913}),
 i(279290,{providers={{"o",584518}},questID=98043,spellID=1306485}),
-i(276548,{f=55,spellID=1306916}),
+i(276548,{description="Use before starting your Prey quest to work properly.",f=55,spellID=1306916}),
 i(274374,{f=55,providers={{"o",584518},{"o",656489}},questID=86371,spellID=1293799})}),
 flt(104,{
 i(274965),

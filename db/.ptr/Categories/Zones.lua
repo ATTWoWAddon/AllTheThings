@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,artifact,campsite,cat,cd,cl,cq,crit,cs,cu,de,en,ens,exp,faction,flt,follower,fp,gb,gm,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateWarbandScene,_.CreateCategory,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,campsite,cat,cd,cl,cq,crit,cs,cu,de,en,ens,exp,faction,flt,follower,fp,gb,gm,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateWarbandScene,_.CreateCategory,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateEnsembleSpell,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy;
 categories.Zones=
 h(-732,{mapID=947,SortPriority=10,g={
 h(-12,{
@@ -16929,7 +16929,8 @@ i(53250,{b=1,f=52}),
 s(75651,131370,{awp=70003,b=1,f=6,loc=45}),
 crit(38874,{achID=4981,id=1,r=1}),
 o(201701)}}),
-q(885,{crs={3472},qss={5103},r=1,rwp=40003,u=2}),
+q(885,{coords={
+[10]={{44.8,78.8}}},crs={3472},qss={5103},r=1,rwp=40003,u=2}),
 q(893,{coords={
 [10]={{45.1,57.69}}},qgs={3433},qis={5092,5093,5094},r=1,rwp=40003,u=2,g={
 s(2070,5322,{b=1,f=24,u=2}),
@@ -22808,74 +22809,6 @@ n(8117,{coords={
 h(-43,{awp=50004,pb=1,g={
 crit(19846,{achID=6584,id=2,pb=1})}})}}),
 m(1186,{awp=80001,icon=1786406,isRaid=1,lore="Known for their fiery tempers and fierce determination, Dark Iron dwarves have a turbulent history with the other clans. A failed coup in Ironforge ignited the War of the Three Hammers, and many of the Dark Iron once fought in the service of Ragnaros the Firelord. Though one faction of the dwarves is pledged to Queen-Regent Moira Thaurissan, others refuse to stand alongside their kin. The Alliance seeks a united Dark Iron clan to harness the power of azerite and aid their struggle against the Horde",races={34},g={
-ah(143925,{coords={
-[1186]={{61.44,24.35}}},icon=1786409,type="n",g={
-x(1,{
-cq(53591,{an="e:537",coords={
-[78]={{52.89,55.76}}},icon=1786409,qgs={143925},races={34}}),
-cq(53600,{an="e:1702",coords={
-[199]={{39.11,9.31}}},icon=1786409,qgs={143925},races={34}}),
-cq(53585,{an="e:348",coords={
-[26]={{13.52,46.81}}},icon=1786409,qgs={143925},races={34}}),
-cq(53587,{an="e:1584",coords={
-[35]={{33.4,24.7}}},icon=1786409,qgs={143925},races={34}}),
-cq(53594,{an="e:1438",coords={
-[17]={{61.82,12.74}}},icon=1786409,qgs={143925},races={34}})}),
-x(2,{
-cq(53592,{an="e:3538",coords={
-[100]={{53.15,64.89}}},icon=1786409,qgs={143925},races={34}}),
-cq(53597,{an="e:3866",coords={
-[105]={{72.41,17.65}}},icon=1786409,qgs={143925},races={34}}),
-cq(53599,{an="e:3746",coords={
-[104]={{50.77,35.28}}},icon=1786409,qgs={143925},races={34}})}),
-x(3,{
-cq(53586,{an="e:4658",coords={
-[118]={{76.97,18.68}}},icon=1786409,qgs={143925},races={34}}),
-cq(53596,{an="e:4168",coords={
-[115]={{45.34,49.92}}},icon=1786409,qgs={143925},races={34}})}),
-x(4,{
-cq(53601,{an="e:5039",coords={
-[198]={{57.16,77.09}}},icon=1786409,qgs={143925},races={34}})}),
-x(5,{
-cq(53595,{an="e:6085",coords={
-[379]={{57.68,62.81}}},icon=1786409,qgs={143925},races={34}}),
-cq(53598,{an="e:6001",coords={
-[376]={{31.51,73.57}}},icon=1786409,qgs={143925},races={34}})}),
-x(6,{
-cq(53590,{an="e:7139",coords={
-[550]={{65.74,8.24}}},icon=1786409,qgs={143925},races={34}}),
-cq(53588,{an="e:6892",coords={
-[543]={{46.69,38.75}}},icon=1786409,qgs={143925},races={34}})}),
-x(7,{
-cq(53589,{an="e:8648",coords={
-[646]={{71.68,48.01}}},icon=1786409,qgs={143925},races={34}}),
-cq(53593,{an="e:7806",coords={
-[650]={{44.66,72.87}}},icon=1786409,qgs={143925},races={34}})}),
-x(8,{
-cq(80102,{an="e:9623",awp=110005,coords={
-[942]={{64.21,29.44}}},icon=1786409,qgs={143925},races={34}}),
-cq(80101,{awp=110005,coords={
-[895]={{88.22,71.53}}},icon=1786409,qgs={143925},races={34}}),
-cq(80100,{awp=110005,coords={
-[862]={{38.24,72.38}}},icon=1786409,qgs={143925},races={34}}),
-cq(80099,{awp=110005,coords={
-[863]={{34.34,45.15}}},icon=1786409,qgs={143925},races={34}})}),
-x(9,{
-cq(80104,{an="e:11438",awp=110005,coords={
-[1525]={{19.94,38.81}}},icon=1786409,qgs={143925},races={34}}),
-cq(80106,{an="e:13455",awp=110005,coords={
-[1565]={{66.47,50.55}}},icon=1786409,qgs={143925},races={34}}),
-cq(80105,{an="e:11412",awp=110005,coords={
-[1533]={{51.75,13.14}}},icon=1786409,qgs={143925},races={34}}),
-cq(80103,{an="e:13406",awp=110005,coords={
-[1536]={{53.49,59.79}}},icon=1786409,qgs={143925},races={34}})}),
-x(10,{
-cq(80107,{an="e:14012",awp=110005,coords={
-[2022]={{32.36,54.9}}},icon=1786409,qgs={143925},races={34}}),
-cq(80108,{an="e:14017",awp=110005,coords={
-[2024]={{80.09,38.96}}},icon=1786409,qgs={143925},races={34}}),
-cq(80109,{an="e:14655",awp=110005,coords={
-[2133]={{52.73,27.67}}},icon=1786409,qgs={143925},races={34}})})}}),
 h(-58,{
 n(144129,{coords={
 [1186]={{49.9,32.5}}},g={
@@ -105808,7 +105741,8 @@ q(52449,{coords={
 q(56378,{coords={
 [1161]={{67.9,26.4}}},lvl=50,qgs={135681},r=2,g={
 follower(1182)}}),
-q(47952,{lvl=30,qgs={121235},r=2,sourceQuests={47962}}),
+q(47952,{coords={
+[1161]={{68.1,22.2}}},lvl=30,qgs={121235},r=2,sourceQuests={47962}}),
 q(47181,{coords={
 [1161]={{67.7,22}}},lvl=10,qgs={121239},r=2,sourceQuests={47960}}),
 q(54992,{coords={
@@ -111634,7 +111568,7 @@ q(48370,{coords={
 q(48368,{coords={
 [895]={{35.2,24.2}}},lvl=10,qgs={125922},r=2,sourceQuests={48366}}),
 q(49405,{coords={
-[895]={{77.1,82.9}}},lvl=10,qgs={128927},r=2,sourceQuests={49404}}),
+[895]={{77.1,82.9}}},lvl=10,qgs={130159},r=2,sourceQuests={49404}}),
 q(49239,{coords={
 [895]={{80.3,81.4}}},lvl=10,qgs={126158},r=2,sourceQuests={48558,48773}}),
 q(50700,{coords={
@@ -111854,7 +111788,9 @@ s(94290,158294,{b=1,f=31,r=2}),
 crit(39992,{achID=12473,id=6,r=2})}}),
 q(52787,{coords={
 [895]={{56.4,61.6}}},lvl=10,qgs={142393},r=2,sourceQuests={49869},g={
-i(162522)}}),
+o(293800,{coords={
+[895]={{55,59.2},{55.2,60.4},{55.2,61.2},{55.7,62},{55.9,59.8},{56,61.2},{56.3,58.4},{56.3,58.6},{57,58.7},{57.1,59.6}}},g={
+i(162522)}})}}),
 q(48366,{coords={
 [895]={{39.5,26.6}}},lvl=10,qgs={126298},r=2,sourceQuests={48009,48356,48365}}),
 q(48773,{coords={
@@ -169447,7 +169383,7 @@ o(518640,{
 i(237140,{b=1,spellID=1221748})}),
 o(523752,{
 i(237899,{f=55,spellID=1223190})})})}}),
-m(2512,{awp=120100,icon=7578560,lore="The Coiled Isle is an island located east of Zul'Aman, connected via the ruined Strait of Hexx'alor and surrounded by Zul'Aman Depths. It is shrouded in a mist.\n\nThe temple here, Atal'Utek, was built to commemorate the Amani tribes' victory over the faceless general Kith'ix. The strait dividing Atal'Utek from Zul'Aman is protected by the loa Pahk.",maps={2639,2640,2641,2642,2643,2644,2645},lvl=90,g={
+m(2512,{awp=120100,crs={265506},icon=7578560,lore="The Coiled Isle is an island located east of Zul'Aman, connected via the ruined Strait of Hexx'alor and surrounded by Zul'Aman Depths. It is shrouded in a mist.\n\nThe temple here, Atal'Utek, was built to commemorate the Amani tribes' victory over the faceless general Kith'ix. The strait dividing Atal'Utek from Zul'Aman is protected by the loa Pahk.",maps={2639,2640,2641,2642,2643,2644,2645},lvl=90,g={
 m(2509,{icon=136070,lore="The Vaults of Atal’Utek are an ancient, venom-corrupted Amani troll prison complex on the Coiled Isle. Built by the Amani empire long ago as a massive containment facility and designed to imprison Ula'tek, a horrific and ancient serpent goddess of venom and hatred whom the trolls came to view as a catastrophic threat.",maps={2613,2636,2637,2638},g={
 h(-12,{
 ach(62649,{description="During the Earth and Sky event, go to the Sky Altar and fly around the raid entrance, looking for the moving large blue orb.",providers={{"n",264091}},g={
@@ -171022,6 +170958,8 @@ q(95807,{coords={
 [2512]={{45.5,29.8}}},isWorldQuest=1}),
 q(94611,{coords={
 [2512]={{64.7,66.1}}},isWorldQuest=1}),
+q(95513,{coords={
+[2512]={{65,38.4}}},isWorldQuest=1}),
 q(93664,{coords={
 [2512]={{61,38.2}}},isWorldQuest=1}),
 q(95923,{coords={

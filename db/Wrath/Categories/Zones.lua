@@ -9465,7 +9465,8 @@ q(895,{coords={
 [1413]={{62.59,37.47}}},lvl=11,providers={{"o",3972}},g={
 qo(1,{coords={
 [1413]={{62.6,49.8}}},crs={3467},providers={{"i",5084}}})}}),
-q(885,{crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
+q(885,{coords={
+[1413]={{44.8,78.8}}},crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
 q(972,{c={7},coords={
 [1413]={{65.8,43.8}}},lvl=20,qgs={5901},r=1,repeatable=1,rwp=40003,sourceQuests={220},g={
 i(6637,{b=1,f=55,q=1})}}),
@@ -12706,7 +12707,7 @@ s(117037,844,{f=5,loc=44,lvl=12,q=1}),
 s(117039,846,{f=5,loc=42,lvl=12,q=1}),
 s(117038,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(12784,{awp=20001,coords={
-[1453]={{75.2,67.2}}},r=2,sym={{"sub","pvp_gear_base",1,-210},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
+[1453]={{75.2,67.2}}},r=2,sym={{"select","symselector",4},{"pop"},{"where","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [1453]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"c",1901,16650}},itemID=29465,lvl=40,pvp=1,q=4,r=2}),
@@ -12719,7 +12720,7 @@ mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2}),
 mnt(22723,{awp=20001,b=1,cost={{"c",1901,16650}},itemID=29471,lvl=40,pvp=1,q=4,r=2}),
 mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2})}}),
 n(12778,{awp=30002,coords={
-[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",4},{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"pop"},{"where","headerID",-296},{"pop"}}}),
+[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"select","symselector",8},{"pop"},{"where","headerID",-296},{"pop"}}}),
 n(34078,{coords={
 [1453]={{74.7,67.2}}},r=2,rwp=40003,sym={{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"}},u=33}),
 n(34077,{coords={
@@ -14872,7 +14873,8 @@ i(2886,{coords={
 [1426]={{46.6,59.8}}},crs={1125,1126,1127,1689},description="Only drops from Crag Boars in Dun Morogh.",q=1}),
 s(117694,2067,{awp=100107,coords={
 [1426]={{78,54.2},{79.2,48.4}}},crs={1117},f=28,lvl=5,q=1,rwp=40003}),
-s(117847,2259,{awp=100107,crs={1121},f=23,lvl=3,q=1,rwp=40003}),
+s(117847,2259,{awp=100107,coords={
+[1426]={{21.2,54.4},{40.8,35},{40.8,43.6}}},crs={1121},f=23,lvl=3,q=1,rwp=40003}),
 s(117848,2260,{awp=100107,coords={
 [1426]={{26.6,50.6},{27.2,52.8}}},crs={1122,1123},f=21,lvl=4,q=1,rwp=40003}),
 s(117846,2258,{awp=100107,coords={

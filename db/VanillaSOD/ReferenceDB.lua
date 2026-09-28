@@ -28,9 +28,9 @@ _.OnTooltipDB=
 }
 _.OnUpdateDB=
 {
-	["FOR_CRAFTER"] = function(t)t.visible=nil t.collectible=nil if _.MODE_DEBUG_OR_ACCOUNT then	return false else	local skills=_.CurrentCharacter.ActiveSkills if skills[2018] or skills[2108] or skills[3908] then	return false end	t.collectible=false t.visible=false return true end	end,
 	["ForLockpicking"] = function(t)if _.Settings.Collectibles.Recipes then	t.collectible=true local id=t.spellID local skills=_.CurrentCharacter.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=1 return end	if _.Settings.AccountWide.Recipes then	for guid,ch in pairs(ATTCharacterData)do	skills=ch.ActiveSkills and ch.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=2 return end	end	end	t.collected=false else	t.collectible=false end	end,
-	["OMARIONS_HANDBOOK"] = function(t)t.visible=true t.collectible=nil if _.MODE_DEBUG_OR_ACCOUNT or _.IsQuestFlaggedCompleted(9233)or C_QuestLog.IsOnQuest(9233)then	return false else	for spellID,skills in pairs(_.CurrentCharacter.ActiveSkills)do	if(spellID==2018 or spellID==2108 or spellID==3908)and skills[1]>270 then	t.collectible=false t.visible=false return true end	end	end	end
+	["OMARIONS_HANDBOOK"] = function(t)t.visible=true t.collectible=nil if _.MODE_DEBUG_OR_ACCOUNT or _.IsQuestFlaggedCompleted(9233)or C_QuestLog.IsOnQuest(9233)then	return false else	for spellID,skills in pairs(_.CurrentCharacter.ActiveSkills)do	if(spellID==2018 or spellID==2108 or spellID==3908)and skills[1]>270 then	t.collectible=false t.visible=false return true end	end	end	end,
+	["SOD_FOR_CRAFTER"] = function(t)t.visible=nil t.collectible=nil if _.MODE_DEBUG_OR_ACCOUNT then	return false else	local skills=_.CurrentCharacter.ActiveSkills if skills[2018] or skills[2108] or skills[3908] then	return false end	t.collectible=false t.visible=false return true end	end
 }
 _.OPAQDB=
 {52478,52479,52313,52314,52221,52222,52776,52777,52275,52276,52319,52320,52005,52127,53151,53152,53006,53007,52801,52802,52962,52963,52851,52852,52886,52888,53043,53044,53063,53064,53061,53062,53055,53056,53207,53175,61229,61191,61183,63193,63523,63183,63201,61144,63200,63204,63202,65047,71195,71196,71197,71198,71199,71209,51483,49783,53722,49782,51484,58436,49784,49928,58435,53721,82771,94464,74576,86535,88947,91780,92816,93519}

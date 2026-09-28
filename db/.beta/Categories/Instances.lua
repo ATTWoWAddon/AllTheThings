@@ -1397,7 +1397,7 @@ q(8240,{coords={
 [224]={{14.5,15.8}}},cost={{"i",19709,1},{"i",19714,1},{"i",19707,1},{"i",19712,1},{"i",19710,1},{"i",19711,1},{"i",19715,1},{"i",19713,1},{"i",19708,1}},description="Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",qgs={15070},repeatable=1,u=2,g={
 i(19858,{b=1,factionID=270,repeatable=1,spellID=24226,u=2})}}),
 q(8201,{coords={
-[224]={{15.3,15.5}}},cost={{"i",19881,5},{"i",19883,1}},qgs={14910},qis={19880},u=2,g={
+[224]={{15.3,15.5}}},cost={{"i",19881,5},{"i",19883,1}},qgs={14910},qis={19880,19883},u=2,g={
 s(8044,20216,{b=1,f=5,loc=45,u=2}),
 s(8043,20215,{b=1,f=6,loc=45,u=2}),
 s(8041,20213,{b=1,f=7,loc=45,u=2}),
@@ -42979,19 +42979,19 @@ toy(152982,{b=1,g={
 title(365,{collectible=false})}})}),
 e(1979,{npcID=122313,g={
 cq(79456,{awp=100205,b=1,c={9},itemID=213015,lvl=11,spellID=433533}),
-s(301468,258514,{awp=120001,b=1,f=28,lvl=78})}}),
+s(301468,258514,{awp=120001,b=1,f=28,lvl=78,rwp=120100})}}),
 e(1980,{npcID=122316,g={
-s(301469,258516,{awp=120001,b=1,f=27,lvl=78})}}),
+s(301469,258516,{awp=120001,b=1,f=27,lvl=78,rwp=120100})}}),
 e(1981,{npcID=122056,g={
-s(301471,258524,{awp=120001,b=1,f=34,lvl=78}),
-s(301470,258523,{awp=120001,b=1,f=1,lvl=78})}}),
+s(301471,258524,{awp=120001,b=1,f=34,lvl=78,rwp=120100}),
+s(301470,258523,{awp=120001,b=1,f=1,lvl=78,rwp=120100})}}),
 e(1982,{crs={122314,124729},g={
 ach(12007,{
 crit(37704,{achID=11298,id=4}),
 crit(37704,{achID=12083,id=8})}),
 de(926,{awp=110207,itemID=241044,spellID=1230953}),
 r(254238,{b=1,itemID=153037,lvl=10,requireSkill=773,skillID=2508}),
-s(301472,258525,{awp=120001,b=1,f=23,lvl=78})}})}}),
+s(301472,258525,{awp=120001,b=1,f=23,lvl=78,rwp=120100})}})}}),
 d(2,{
 e(1979,{npcID=122313,g={
 i(151312,{b=1,f=53,lvl=40,modID=2,spellID=250765}),

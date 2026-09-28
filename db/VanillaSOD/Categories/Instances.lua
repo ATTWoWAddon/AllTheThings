@@ -2756,7 +2756,7 @@ q(8240,{coords={
 [1434]={{14.5,15.8}}},cost={{"i",19709,1},{"i",19714,1},{"i",19707,1},{"i",19712,1},{"i",19710,1},{"i",19711,1},{"i",19715,1},{"i",19713,1},{"i",19708,1}},description="Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",lvl=58,qgs={15070},repeatable=1,rwp=11504,u=2,g={
 i(19858,{b=1,factionID=270,q=2,repeatable=1,u=2})}}),
 q(8201,{coords={
-[1434]={{15.3,15.5}}},lvl=58,qgs={14910},rwp=11504,u=2,g={
+[1434]={{15.3,15.5}}},lvl=58,qgs={14910},qis={19883},rwp=11504,u=2,g={
 qo(1,{cost={{"i",19881,5},{"i",19883,1}},providers={{"i",19880}},u=2}),
 s(164252,20216,{b=1,f=5,loc=45,q=3,u=2}),
 s(164251,20215,{b=1,f=6,loc=45,q=3,u=2}),
@@ -3252,7 +3252,7 @@ q(8240,{coords={
 [1434]={{14.5,15.8}}},cost={{"i",19709,1},{"i",19714,1},{"i",19707,1},{"i",19712,1},{"i",19710,1},{"i",19711,1},{"i",19715,1},{"i",19713,1},{"i",19708,1}},description="Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",lvl=58,qgs={15070},repeatable=1,u=1609,g={
 i(19858,{b=1,factionID=270,q=2,repeatable=1,u=1609})}}),
 q(8201,{coords={
-[1434]={{15.3,15.5}}},lvl=58,qgs={14910},u=1609,g={
+[1434]={{15.3,15.5}}},lvl=58,qgs={14910},qis={19883},u=1609,g={
 qo(1,{cost={{"i",19881,5},{"i",19883,1}},providers={{"i",19880}},u=1609}),
 s(164252,20216,{b=1,f=5,loc=45,q=3,u=1609}),
 s(164251,20215,{b=1,f=6,loc=45,q=3,u=1609}),
@@ -6633,9 +6633,9 @@ qo(1,{crs={4809,4810,4811,4812,4813,4814},providers={{"i",5879}},u=1605}),
 s(194143,211466,{b=1,f=5,loc=45,q=3,u=1605}),
 s(194142,211465,{b=1,f=4,loc=47,q=3,u=1605})}})}}),
 h(-44,{u=1605,g={
-n(212159,{OnUpdate=_.OnUpdateDB.FOR_CRAFTER,sourceQuests={78907},u=1605,g={
+n(212159,{OnUpdate=_.OnUpdateDB.SOD_FOR_CRAFTER,sourceQuests={78907},u=1605,g={
 i(211419,{b=1,q=2,u=1605})}}),
-o(411358,{OnUpdate=_.OnUpdateDB.FOR_CRAFTER,providers={{"i",211420}},sourceQuests={78909},u=1605,g={
+o(411358,{OnUpdate=_.OnUpdateDB.SOD_FOR_CRAFTER,providers={{"i",211420}},sourceQuests={78909},u=1605,g={
 i(211421,{b=1,q=1,u=1605})}})}}),
 h(-56,{description="After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.",u=1605,g={
 r(430409,{b=1,itemID=211849,learnedAt=100,providers={{"o",415614}},q=3,requireSkill=333,u=1605}),
@@ -11117,8 +11117,9 @@ qo(1,{crs={3638,3640,5763},providers={{"i",6464}}})}}),
 q(6981,{coords={
 [1413]={{63,37.2}}},providers={{"i",10441}},qgs={3442},rwp=40003})}}),
 h(-56,{
-i(209846,{b=1,coords={
-[1413]={{52.83,54.7}}},providers={{"o",409692}},q=1,u=1605})}),
+o(409692,{coords={
+[1413]={{52.83,54.7}}},u=1605,g={
+i(209846,{b=1,q=1,u=1605})}})}),
 h(-58,{
 n(5783,{coords={
 [1413]={{45.9,35.7}}},rwp=40003,g={

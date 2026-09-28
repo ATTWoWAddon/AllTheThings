@@ -8711,7 +8711,8 @@ q(895,{coords={
 [1413]={{62.59,37.47}}},lvl=11,providers={{"o",3972}},g={
 qo(1,{coords={
 [1413]={{62.6,49.8}}},crs={3467},providers={{"i",5084}}})}}),
-q(885,{crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
+q(885,{coords={
+[1413]={{44.8,78.8}}},crs={3472},lvl=10,qss={5103},r=1,rwp=40003}),
 q(972,{c={7},coords={
 [1413]={{65.8,43.8}}},lvl=20,qgs={5901},r=1,repeatable=1,rwp=40003,sourceQuests={220},g={
 i(6637,{b=1,f=55,q=1})}}),
@@ -11479,7 +11480,7 @@ s(117966,2445,{f=8,lvl=17,q=1}),
 s(128786,17188,{f=8,lvl=14,q=1})}}),
 n(12777,{coords={
 [1453]={{75,67.5}}},r=2,rwp=30002,sym={{"sub","pvp_gear_base",2,-249,-296},{"finalize"},{"sub","pvp_gear_base",2,-248,-296},{"finalize"},{"sub","pvp_gear_base",2,-247,-296},{"finalize"},{"sub","pvp_gear_base",2,-299,-210},{"finalize"},{"merge"},{"pop"},{"exclude","headerID",-101,-89},{"exclude","filterID",51,52,54,53}}}),
-n(12782,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"sub","pvp_gear_base",1,-210,-101},{"pop"}}}),
+n(12782,{description="Found within the Champion's Hall.",r=2,rwp=30002,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}}}),
 n(1291,{coords={
 [1453]={{55,56}}},r=2,g={
 s(127915,16059,{f=10,q=1}),
@@ -11685,7 +11686,7 @@ s(117037,844,{f=5,loc=44,lvl=12,q=1}),
 s(117039,846,{f=5,loc=42,lvl=12,q=1}),
 s(117038,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(12784,{awp=20001,coords={
-[1453]={{71.9,55.6}}},r=2,sym={{"sub","pvp_gear_base",1,-210},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
+[1453]={{71.9,55.6}}},r=2,sym={{"select","symselector",4},{"pop"},{"where","headerID",-101},{"pop"}}}),
 n(12783,{description="Found within the Champion's Hall.",pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29465,lvl=60,pvp=1,q=4,races={3,7}}),
 mnt(22719,{b=1,itemID=18243,lvl=55,pvp=1,q=4,races={3,7},rwp=20001,u=2}),
@@ -13791,7 +13792,8 @@ i(2886,{coords={
 [1426]={{46.6,59.8}}},crs={1125,1126,1127,1689},description="Only drops from Crag Boars in Dun Morogh.",q=1}),
 s(117694,2067,{awp=100107,coords={
 [1426]={{78,54.2},{79.2,48.4}}},crs={1117},f=28,lvl=5,q=1,rwp=40003}),
-s(117847,2259,{awp=100107,crs={1121},f=23,lvl=3,q=1,rwp=40003}),
+s(117847,2259,{awp=100107,coords={
+[1426]={{21.2,54.4},{40.8,35},{40.8,43.6}}},crs={1121},f=23,lvl=3,q=1,rwp=40003}),
 s(117848,2260,{awp=100107,coords={
 [1426]={{26.6,50.6},{27.2,52.8}}},crs={1122,1123},f=21,lvl=4,q=1,rwp=40003}),
 s(117846,2258,{awp=100107,coords={
