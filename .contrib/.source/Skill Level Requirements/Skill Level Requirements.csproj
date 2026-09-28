@@ -8,7 +8,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputPath>..\..\.tools\</OutputPath>
-	<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
 	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 	<ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>

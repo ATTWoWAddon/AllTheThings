@@ -38,12 +38,8 @@
     <ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="KeraLua">
-      <HintPath>..\..\.tools\KeraLua.dll</HintPath>
-    </Reference>
-    <Reference Include="NLua">
-      <HintPath>..\..\.tools\NLua.dll</HintPath>
-    </Reference>
+    <PackageReference Include="KeraLua" Version="1.2.13" />
+    <PackageReference Include="NLua" Version="1.5.7" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>

@@ -2,11 +2,11 @@
 .contrib/src/**/bin/
 .contrib/src/**/obj/
 .contrib/src/**/.vs/
+.contrib/src/**/[Pp]ackages/
 .contrib/.source/**/bin/
 .contrib/.source/**/obj/
 .contrib/.source/**/.vs/
-.contrib/src/Blizzard_API_Harvester/packages/
-.contrib/src/Parser/packages/
+.contrib/.source/**/[Pp]ackages/
 .contrib/.tools/log.txt
 .contrib/.tools/**/Debug/
 .contrib/Harvesters/RAW/
@@ -17,7 +17,6 @@
 .contrib/Harvesters/*.bat
 .contrib/Harvesters/System.Net.Http.Formatting.xml
 .contrib/Harvesters/Blizzard_API_Harvester.pdb
-.contrib/Harvesters/Blizzard_API_Harvester.exe.config
 .contrib/Harvesters/API.key
 .contrib/Harvesters/Client.key
 .contrib/.wago/Debug/*

@@ -186,22 +186,13 @@ Maintained Python and JavaScript source should eventually join the same tree. Th
 Use the x64 Developer Command Prompt for Visual Studio with the existing .NET Framework targeting packs and .NET 8 SDK installed. From the repository root:
 
 ```bat
-msbuild .contrib\src\ATT_Tools.sln /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
-msbuild .contrib\src\Parser\Parser.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Parser\packages"
-msbuild .contrib\src\Blizzard_API_Harvester\Blizzard_API_Harvester.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Blizzard_API_Harvester\packages"
-msbuild ".contrib\.source\All The Tools.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
-msbuild .contrib\src\ATT_Tools.sln /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
-msbuild ".contrib\.source\All The Tools.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
+msbuild .contrib\src\ATT_Tools.sln /restore /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
+msbuild ".contrib\.source\All The Tools.sln" /restore /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
 ```
 
-The solution restore prepares SDK dependencies and the existing shared `.source/packages` cache. Parser and Blizzard API Harvester need the separate restores because their legacy `HintPath` entries use their own `packages` directories. These commands preserve the current package versions and dependency model.
+Managed dependencies are declared by their owner projects. Restore keeps packages in each project's ignored `packages` directory; `.tools` is runtime output, never a managed build input. Profession restores NLua 1.4.1 separately from the shared tools' NLua 1.5.7. See `../src/README.md` for dependency versions and details.
 
-On an ARM64 Windows host using an ARM64 .NET SDK, add `/p:NETCoreSdkRuntimeIdentifier=win-x64` to the rebuild command to generate the existing x64 apphosts. Managed Any CPU targets remain unchanged; this is a command-line setting rather than a project RID:
-
-```bat
-msbuild .contrib\src\ATT_Tools.sln /t:Rebuild /p:Configuration=Release /p:Platform=x64 /p:NETCoreSdkRuntimeIdentifier=win-x64 /m:1
-msbuild ".contrib\.source\All The Tools.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /p:NETCoreSdkRuntimeIdentifier=win-x64 /m:1
-```
+On an ARM64 Windows host using an ARM64 .NET SDK, add `/p:NETCoreSdkRuntimeIdentifier=win-x64` to preserve the existing x64 apphosts. Managed Any CPU targets remain unchanged.
 
 The following proposed structure and shared build settings describe the separate source migration and later modernization work.
 

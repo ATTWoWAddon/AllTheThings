@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <RestorePackagesPath>$(MSBuildProjectDirectory)\packages</RestorePackagesPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);packages\**</DefaultItemExcludes>
+  </PropertyGroup>
+</Project>

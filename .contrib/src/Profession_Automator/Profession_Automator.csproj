@@ -36,12 +36,8 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="KeraLua">
-      <HintPath>..\Parser\lib\KeraLua.dll</HintPath>
-    </Reference>
-    <Reference Include="NLua">
-      <HintPath>..\Parser\lib\NLua.dll</HintPath>
-    </Reference>
+    <PackageReference Include="KeraLua" Version="1.2.13" />
+    <PackageReference Include="NLua" Version="1.4.1" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
