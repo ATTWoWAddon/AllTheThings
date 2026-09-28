@@ -1,2 +1,2 @@
-cd /d "..\..\.tools\"
+cd /d "..\.tools\"
 "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/.config/retail/debug.config" config="../.db/standard/.config/.config/classic/05 - Mists of Pandaria.config"

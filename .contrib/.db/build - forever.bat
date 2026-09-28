@@ -1,2 +1,2 @@
-cd /d "..\..\.tools\"
+cd /d "..\.tools\"
 "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
