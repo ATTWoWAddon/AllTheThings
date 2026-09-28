@@ -25,6 +25,20 @@
     <Optimize>true</Optimize>
     <DebugType>none</DebugType>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>..\..\.tools\x86\Debug\net48\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\.tools\x86\Release\net48\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Csv" Version="2.0.93" />
     <PackageReference Include="KeraLua" Version="1.2.13" />
@@ -134,6 +148,45 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64'" Text="Parser supports only the x64 platform in this revision." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="Parser supports only the x64 and x86 platforms. Select one in Parser.sln." />
+  </Target>
+  <UsingTask TaskName="MarkPeLargeAddressAware" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <ImagePath ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System" />
+      <Using Namespace="System.IO" />
+      <Code Type="Fragment" Language="cs"><![CDATA[
+        using (var image = new FileStream(ImagePath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
+        using (var reader = new BinaryReader(image))
+        {
+          var dos = reader.ReadBytes(64);
+          if (dos.Length != 64 || dos[0] != 0x4D || dos[1] != 0x5A)
+            throw new InvalidDataException("Parser x86 output has no valid DOS header: " + ImagePath);
+
+          int peOffset = BitConverter.ToInt32(dos, 0x3C);
+          if (peOffset < 64 || peOffset > image.Length - 24)
+            throw new InvalidDataException("Parser x86 output has no valid PE offset: " + ImagePath);
+
+          image.Position = peOffset;
+          var pe = reader.ReadBytes(24);
+          if (pe.Length != 24 || pe[0] != 0x50 || pe[1] != 0x45 || pe[2] != 0 || pe[3] != 0)
+            throw new InvalidDataException("Parser x86 output has no valid PE signature: " + ImagePath);
+          if (pe[4] != 0x4C || pe[5] != 0x01)
+            throw new InvalidDataException("Parser x86 output is not an x86 PE image: " + ImagePath);
+
+          const byte largeAddressAware = 0x20;
+          if ((pe[22] & largeAddressAware) == 0)
+          {
+            image.Position = peOffset + 22;
+            image.WriteByte((byte)(pe[22] | largeAddressAware));
+          }
+        }
+      ]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="MarkParserX86LargeAddressAware" AfterTargets="CoreCompile" Condition="'$(Platform)' == 'x86' and '$(DesignTimeBuild)' != 'true'">
+    <MarkPeLargeAddressAware ImagePath="$(IntermediateOutputPath)$(TargetFileName)" />
   </Target>
 </Project>

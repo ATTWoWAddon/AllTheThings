@@ -24,6 +24,8 @@ Global
 		Release|x64 = Release|x64
 		Retail|x64 = Retail|x64
 		Test|x64 = Test|x64
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic Era|x64.ActiveCfg = Release|Any CPU
@@ -122,6 +124,30 @@ Global
 		{666A1441-4B70-4E64-9569-42346F12F400}.Retail|x64.Build.0 = Release|x64
 		{666A1441-4B70-4E64-9569-42346F12F400}.Test|x64.ActiveCfg = Release|x64
 		{666A1441-4B70-4E64-9569-42346F12F400}.Test|x64.Build.0 = Release|x64
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Debug|x86.Build.0 = Debug|Any CPU
+		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x86.ActiveCfg = Debug|x86
+		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x86.Build.0 = Debug|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Debug|x86.Build.0 = Debug|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Debug|x86.Build.0 = Debug|Any CPU
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|x86.ActiveCfg = Debug|x86
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|x86.Build.0 = Debug|x86
+		{666A1441-4B70-4E64-9569-42346F12F400}.Debug|x86.ActiveCfg = Debug|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Debug|x86.Build.0 = Debug|x64
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Release|x86.ActiveCfg = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Release|x86.Build.0 = Release|Any CPU
+		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x86.ActiveCfg = Release|x86
+		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x86.Build.0 = Release|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Release|x86.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Release|x86.Build.0 = Release|Any CPU
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x86.ActiveCfg = Release|x86
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x86.Build.0 = Release|x86
+		{666A1441-4B70-4E64-9569-42346F12F400}.Release|x86.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Release|x86.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
