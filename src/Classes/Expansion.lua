@@ -5,7 +5,7 @@ local pairs, tostring, math_floor, setmetatable, rawget
 local EXPANSION_DATA = app.L.EXPANSION_DATA;
 
 -- These should match the `patch()` function shifts for `expansion()` objects
--- ref: .contrib\Parser\lib\Functions\Shortcuts.lua
+-- ref: .contrib\.db\shared\.config\lib\Functions\Shortcuts.lua
 local PatchShift, RevShift = 10 ^ 2, 10 ^ 2;
 local function GetPatchString(patchID, expansionID)
 	local patch_decimal = PatchShift * (patchID - expansionID);
