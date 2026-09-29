@@ -346,8 +346,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			ach(2796, {	-- Brew of the Month
 				["providers"] = {
 					-- #if ANYCLASSIC
+					-- #if NOT CLASSIC_ANNIVERSARY
 					{ "i", 37736 },	-- "Brew of the Month" Club Membership Form (original)
 					{ "i", 37737 },	-- "Brew of the Month" Club Membership Form (original)
+					-- #else
+					{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (current)
+					{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (current)
+					-- #endif
 					-- #else
 					{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (current)
 					{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (current)
@@ -1614,10 +1619,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #endif
 					["altQuests"] = { 12420 },	-- Brew of the Month Club (A) [???]
 					["providers"] = {
-						-- #if NOT ANYCLASSIC
-						{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (current)
-						-- #else
+						-- #if ANYCLASSIC
+						-- #if NOT CLASSIC_ANNIVERSARY
 						{ "i", 37736 },	-- "Brew of the Month" Club Membership Form (original)
+						-- #else
+						{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (current)
+						-- #endif
+						-- #else
+						{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (current)
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
@@ -1654,10 +1663,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #endif
 					["altQuests"] = { 12421 },	-- Brew of the Month Club (H) [???]
 					["providers"] = {
-						-- #if NOT ANYCLASSIC
-						{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (current)
-						-- #else
+						-- #if ANYCLASSIC
+						-- #if NOT CLASSIC_ANNIVERSARY
 						{ "i", 37737 },	-- "Brew of the Month" Club Membership Form (original)
+						-- #else
+						{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (current)
+						-- #endif
+						-- #else
+						{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (current)
 						-- #endif
 					},
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
@@ -2027,6 +2040,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Maintain a Trot for 8 seconds
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(2, {	-- 0/1 	Maintain a Canter for 8 seconds
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(3, {	-- 0/1 Maintain a Gallop for 8 seconds
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+					},
 				}),
 				q(11409, {	-- Now This is Ram Racing... Almost. (H)
 					["sourceQuests"] = {
@@ -2045,6 +2069,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Maintain a Trot for 8 seconds
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(2, {	-- 0/1 	Maintain a Canter for 8 seconds
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(3, {	-- 0/1 Maintain a Gallop for 8 seconds
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+					},
 				}),
 				q(11118, {	-- Pink Elekks On Parade (A) [Non-EU Only!]
 					["qg"] = 23486,	-- Goldark Snipehunter
@@ -2639,7 +2674,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							i(37571, {	-- "Brew of the Month" Club Membership Form (current)
 								["timeline"] = {
 									-- #if ANYCLASSIC
-									CREATED_2_2_2,
+									ADDED_2_5_1,
 									-- #else
 									CREATED_2_2_2, ADDED_3_0_2	-- NOTE: Not used in 2007
 									-- #endif
