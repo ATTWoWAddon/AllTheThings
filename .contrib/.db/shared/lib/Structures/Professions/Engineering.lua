@@ -466,13 +466,7 @@ WRATH_GNOMISH_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["time
 WRATH_GOBLIN_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3 } }, {
 	r(56514),	-- Global Thermal Sapper Charge
 }));
-ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
--- #if AFTER 3.0.3
-WRATH_GNOMISH_ENGINEERING
--- #else
-	{}
--- #endif
-);
+
 ALL_GOBLIN_ENGINEERING = appendGroups(CLASSIC_TBC_GOBLIN_ENGINEERING,
 -- #if AFTER 3.0.3
 WRATH_GOBLIN_ENGINEERING
@@ -579,6 +573,12 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(84410),	-- Safety Catch Removal Kit
 	}),
 }));
+
+CATA_GNOMISH_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	r(84413),	-- De-Weaponized Mechanical Companion
+    r(95705),	-- Gnomish Gravity Well
+}));
+
 CLASSIC_CATA_ENGINEERING = appendGroups(CLASSIC_ENGINEERING,
 -- #if AFTER CATA
 CATA_ENGINEERING
@@ -692,6 +692,31 @@ MOP_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"
 		r(127116),	-- Mirror Scope
 	}),
 }));
+
+MOP_GNOMISH_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, sharedData({ ["timeline"] = { ADDED_5_0_4 } }, {
+	r(127139),	-- Geosynchronous World Spinner
+}));
+
+ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
+-- #if AFTER 3.0.3
+    appendGroups(WRATH_GNOMISH_ENGINEERING,
+    -- #if AFTER 4.0.3
+        appendGroups(CATA_GNOMISH_ENGINEERING,
+        -- #if AFTER 5.0.4
+        MOP_GNOMISH_ENGINEERING
+        -- #else
+            {}
+        -- #endif
+        )
+    -- #else
+	    {}
+    -- #endif
+    )
+-- #else
+	{}
+-- #endif
+);
+
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
