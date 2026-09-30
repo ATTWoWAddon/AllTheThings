@@ -7,6 +7,8 @@
 .contrib/Parser/Parser.pdb
 .contrib/Parser/Parser V2.exe.config
 .contrib/Parser/Parser V2.pdb
+.contrib/.tools/Debug/
+.contrib/.tools/*/Debug/
 .contrib/Debugging/
 .contrib/Harvesters/DBs/
 .contrib/Harvesters/*.log

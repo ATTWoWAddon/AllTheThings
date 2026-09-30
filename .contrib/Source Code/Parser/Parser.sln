@@ -9,27 +9,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVCleaner", "..\CSVCleaner
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
-		Release|x86 = Release|x86
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|Any CPU.Build.0 = Debug|x86
-		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|x86.ActiveCfg = Release|x86
-		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|Any CPU.ActiveCfg = Release|x86
-		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|Any CPU.Build.0 = Release|x86
-		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x86.ActiveCfg = Release|x86
-		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x86.Build.0 = Release|x86
-		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x86.Build.0 = Debug|Any CPU
-		{97F33281-E45C-4940-9275-987C16854C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97F33281-E45C-4940-9275-987C16854C2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x86.ActiveCfg = Release|Any CPU
-		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x86.Build.0 = Release|Any CPU
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|x64.ActiveCfg = Debug|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|x64.Build.0 = Debug|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x64.Build.0 = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x64.ActiveCfg = Debug|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x64.Build.0 = Debug|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
