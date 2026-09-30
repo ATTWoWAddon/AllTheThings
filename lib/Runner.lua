@@ -188,6 +188,8 @@ local function CreateRunner(name)
 	local Name = "Runner:"..name;
 	local QueueIndex, RunIndex = 1, 1
 	local Pushed, perFrame
+	-- true only while a queued function of this Runner is executing
+	local Executing
 	local function SetPerFrame(count)
 		Config.PerFrame = math_max(1, tonumber(count) or 1);
 		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame)
@@ -231,6 +233,7 @@ local function CreateRunner(name)
 				while func do
 					perFrame = perFrame - 1;
 					params = ParameterBucketQueue[RunIndex];
+					Executing = true
 					if params then
 						-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
 						xpcall(func, err, unpack(params));
@@ -238,6 +241,7 @@ local function CreateRunner(name)
 						-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
 						xpcall(func, err, ParameterSingleQueue[RunIndex]);
 					end
+					Executing = nil
 					-- app.PrintDebug("FRC.Done."..name,RunIndex)
 					if perFrame <= 0 then
 						-- app.PrintDebug("FRC.Yield."..name,"Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
@@ -312,6 +316,24 @@ local function CreateRunner(name)
 			Pushed = true;
 			Push(nil, Name, StackRun);
 		end,
+		-- Adds a function to run immediately after the currently running function (ahead of everything
+		-- already queued), so a long job can split itself across frames without reordering the rest of the queue.
+		-- Must be called from a function this Runner is executing. Supports a single parameter.
+		RunNext = function(func, param)
+			if not Executing then
+				error("RunNext must be called from a function executing on this Runner")
+			end
+			local at = RunIndex + 1
+			for j = QueueIndex - 1, at, -1 do
+				FunctionQueue[j + 1] = FunctionQueue[j]
+				ParameterBucketQueue[j + 1] = ParameterBucketQueue[j]
+				ParameterSingleQueue[j + 1] = ParameterSingleQueue[j]
+			end
+			FunctionQueue[at] = func
+			ParameterBucketQueue[at] = nil
+			ParameterSingleQueue[at] = param
+			QueueIndex = QueueIndex + 1
+		end,
 		-- Adds a function with any necessary parameters but does not Run it yet
 		Queue = function(func, ...)
 			if type(func) ~= "function" then
@@ -345,6 +367,8 @@ local function CreateRunner(name)
 		GetPerFrame = function() return Config.PerFrame end,
 		-- Return if the Runner is currently Running
 		IsRunning = function() return Pushed end,
+		-- Return if a queued function of this Runner is executing right now
+		IsExecuting = function() return Executing end,
 		-- Allows defining the default PerFrame for this Runner (i.e. when Reset)
 		SetPerFrameDefault = function(count) Config.PerFrameDefault = count; Config.PerFrame = count end,
 		-- Allows adding/removing timing tracking into PrintDebug messages for this Runner
@@ -374,3 +398,38 @@ app.CreateRunner = function(name)
 end
 app.Runners = {}
 app.FunctionRunner = CreateRunner("default");
+
+-- Calls step() until it returns false, then finish(). When called from a function executing on the 'events' Runner,
+-- the work is split into ~budgetMs slices, one per frame, each inserted directly after the current function via RunNext
+-- so the overall event order is unchanged. Otherwise it runs synchronously.
+local debugprofilestop = debugprofilestop
+app.RunSliced = function(step, finish, budgetMs)
+	local runner = app.Runners.events
+	if not (runner and runner.IsExecuting()) then
+		while step() do end
+		if finish then finish() end
+		return
+	end
+	budgetMs = budgetMs or 12
+	local function slice()
+		local stopAt = debugprofilestop() + budgetMs
+		while step() do
+			if debugprofilestop() > stopAt then
+				runner.RunNext(slice)
+				return
+			end
+		end
+		if finish then finish() end
+	end
+	slice()
+end
+-- Runs step(i) for i = 1..count, then finish(), using RunSliced
+app.RunSpread = function(count, step, finish, budgetMs)
+	local i = 0
+	app.RunSliced(function()
+		if i >= count then return false end
+		i = i + 1
+		step(i)
+		return i < count
+	end, finish, budgetMs)
+end
