@@ -1248,8 +1248,28 @@ do -- Initial Data Loading Events
 
 		-- app.PrintMemoryUsage()
 		-- app.PrintDebug("Begin Cache Prime")
-		app.AssignChildren(rootData);
-		app.CacheFields(rootData);
+		-- AssignChildren + CacheFields on the whole database took ~2s in one frame.
+		-- Same work in the same order, but split across frames when running on the events Runner (see app.RunSliced).
+		-- AssignChildren: parent links set in the same depth-first order as app.AssignChildren.
+		local stack, stackParent = { rootData }, {}
+		app.RunSliced(function()
+			local n = #stack
+			if n == 0 then return false end
+			local group, parent = stack[n], stackParent[n]
+			stack[n], stackParent[n] = nil, nil
+			n = n - 1
+			if parent then group.parent = parent end
+			local g = group.g
+			if g then
+				for i=#g,1,-1 do
+					n = n + 1
+					stack[n], stackParent[n] = g[i], group
+				end
+			end
+			return n > 0
+		end, function()
+			app.CacheFieldsSpread(rootData)
+		end)
 		-- app.PrintDebugPrior("Ended Cache Prime")
 		-- app.PrintMemoryUsage()
 	end)

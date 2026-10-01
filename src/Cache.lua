@@ -373,6 +373,8 @@ app.AddGenericFieldConverter = function(field)
 end
 
 local allowMapCaching = true
+-- groups currently being walked which contain a given mapID
+local currentMapGroup = {}
 do	-- MapID & ExplorationID Key Cache
 -- Whether or not to ignore the mapID in a coord for a given key.
 local IsKeyIgnoredForCoord = setmetatable({
@@ -394,7 +396,6 @@ IsKeyIgnoredForCoord.headerID = function(group)
 end
 
 -- MapID Caching
-local currentMapGroup = {}
 local function cacheMapID(group, mapID)
 	-- already are within a caching group for this mapID or not allowing map caching, don't cache
 	if currentMapGroup[mapID] or not allowMapCaching then return end
@@ -675,6 +676,7 @@ end
 
 -- Now that we have the runners and post scripts, we can declare the CacheFields method.
 --local GetTimePreciseSec = GetTimePreciseSec;
+local FinishCacheFields
 CacheFields = function(group, skipMapCaching, cacheName)
 	-- app.PrintDebug("CacheFields",app:SearchLink(group),skipMapCaching,cacheName)
 	if cacheName then
@@ -684,6 +686,20 @@ CacheFields = function(group, skipMapCaching, cacheName)
 	--local start = GetTimePreciseSec();
 	allowMapCaching = not skipMapCaching
 	_CacheFields(group);
+	return FinishCacheFields(group);
+end
+-- Runs the deferred runners and post scripts once a CacheFields walk is complete
+-- Item Mod ID conversion for bonus IDs (post script for one group)
+local function CacheModItemID(group)
+	local modItemID = group.modItemID
+	if modItemID then
+		CacheField(group, "modItemID", modItemID)
+		if modItemID ~= group.itemID then
+			CacheField(group, "itemID", modItemID)
+		end
+	end
+end
+FinishCacheFields = function(group)
 	for i=1,#runners do
 		runners[i]()
 	end
@@ -692,17 +708,9 @@ CacheFields = function(group, skipMapCaching, cacheName)
 	-- Execute Post Scripts
 	-- Item Mod ID conversion for bonus IDs
 	if #cacheGroupForModItemID > 0 then
-		local modItemID,group
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
 		for i=1,#cacheGroupForModItemID do
-			group = cacheGroupForModItemID[i]
-			modItemID = group.modItemID
-			if modItemID then
-				CacheField(group, "modItemID", modItemID)
-				if modItemID ~= group.itemID then
-					CacheField(group, "itemID", modItemID)
-				end
-			end
+			CacheModItemID(cacheGroupForModItemID[i])
 		end
 		app.wipearray(cacheGroupForModItemID)
 		-- app.PrintDebug("caching for modItemID done")
@@ -711,6 +719,79 @@ CacheFields = function(group, skipMapCaching, cacheName)
 	return group;
 end
 app.CacheFields = CacheFields;
+
+-- Same walk as CacheFields(root) -- same node order, same map context, runners and post scripts at the end --
+-- but iterative, so app.RunSliced can pause between nodes and continue on the next frame.
+-- (CacheFields on the whole database was ~2s in a single frame.)
+app.CacheFieldsSpread = function(root)
+	-- This walk keeps its own copy of the shared CacheFields state and swaps it in only while one of its steps
+	-- runs, so another CacheFields call landing between slices neither sees nor disturbs it (and vice versa).
+	local walkCache, walkRunners, walkModItems, walkMapGroup = currentCache, {}, {}, {}
+	local savedCache, savedRunners, savedModItems, savedMapGroup, savedAllowMapCaching
+	local function Enter()
+		savedCache, savedRunners, savedModItems, savedMapGroup, savedAllowMapCaching
+			= currentCache, runners, cacheGroupForModItemID, currentMapGroup, allowMapCaching
+		currentCache, runners, cacheGroupForModItemID, currentMapGroup, allowMapCaching
+			= walkCache, walkRunners, walkModItems, walkMapGroup, true
+	end
+	local function Leave()
+		currentCache, runners, cacheGroupForModItemID, currentMapGroup, allowMapCaching
+			= savedCache, savedRunners, savedModItems, savedMapGroup, savedAllowMapCaching
+	end
+	-- nodes to visit; exitMapKeys[n] set means "all children done, uncache this node's map keys"
+	local stack, exitMapKeys = { root }, {}
+	local function WalkStep()
+		local n = #stack
+		if n == 0 then return false end
+		local group, mapKeys = stack[n], exitMapKeys[n]
+		stack[n], exitMapKeys[n] = nil, nil
+		n = n - 1
+		if mapKeys then
+			for key,value in next,mapKeys do
+				mapKeyUncachers[key](group, value);
+			end
+			return n > 0
+		end
+		local hasG = rawget(group, "g")
+		for key,value in next,group do
+			local _converter = fieldConverters[key];
+			if _converter and _converter(group, value) then
+				if mapKeys then mapKeys[key] = value
+				else mapKeys = { [key] = value }; end
+			end
+		end
+		if mapKeys then
+			n = n + 1
+			stack[n], exitMapKeys[n] = group, mapKeys
+		end
+		if hasG then
+			for i=#hasG,1,-1 do
+				n = n + 1
+				stack[n] = hasG[i]
+			end
+		end
+		return n > 0
+	end
+	app.RunSliced(function()
+		Enter()
+		local more = WalkStep()
+		Leave()
+		return more
+	end, function()
+		-- same as FinishCacheFields(root), with both loops sliced as well (they were ~0.45s together)
+		app.RunSpread(#walkRunners, function(i)
+			Enter()
+			walkRunners[i]()
+			Leave()
+		end, function()
+			app.RunSpread(#walkModItems, function(i)
+				Enter()
+				CacheModItemID(walkModItems[i])
+				Leave()
+			end)
+		end)
+	end)
+end
 end
 do	-- FactionID Key Cache
 local function cacheFactionID(group, id)
