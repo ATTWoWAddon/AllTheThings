@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classic_Item_Detector", "Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item_DB_Compare_Tool", "Item_DB_Compare_Tool\Item_DB_Compare_Tool.csproj", "{EC726264-8DB9-4DA1-811E-240E9D65AF6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{47D83200-8E21-487B-8F44-B08C7A1CBC82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser", "Parser\Parser.csproj", "{47D83200-8E21-487B-8F44-B08C7A1CBC82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profession_Automator", "Profession_Automator\Profession_Automator.csproj", "{666A1441-4B70-4E64-9569-42346F12F400}"
 EndProject

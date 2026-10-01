@@ -4,7 +4,10 @@
     <OutputType>Exe</OutputType>
     <Platforms>x64;x86</Platforms>
     <TargetFramework>net8.0</TargetFramework>
+    <RuntimeIdentifier>win-$(Platform)</RuntimeIdentifier>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <BaseOutputPath>..\..\.tools\</BaseOutputPath>
+    <PublishDir Condition="'$(PublishDir)' == ''">$(MSBuildProjectDirectory)\..\..\.builds\CSVCleaner\$(Platform)\$(Configuration)\$(TargetFramework)\</PublishDir>
     <PublishAot>False</PublishAot>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -16,8 +19,6 @@
 
   <PropertyGroup Condition="'$(Platform)'=='x86'">
     <PlatformTarget>x86</PlatformTarget>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
-    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -42,6 +43,6 @@
   </PropertyGroup>
 
   <Target Name="ValidateCSVCleanerPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="CSVCleaner supports only the x64 and x86 platforms. Select one in Parser.sln." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="CSVCleaner supports only the x64 and x86 platforms. Select one in ATT_Tools.sln." />
   </Target>
 </Project>

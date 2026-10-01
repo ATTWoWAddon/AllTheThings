@@ -192,6 +192,8 @@ msbuild ".contrib\.source\All The Tools.sln" /restore /t:Rebuild /p:Configuratio
 
 Managed dependencies are declared by their owner projects. Restore keeps packages in each project's ignored `packages` directory; `.tools` is runtime output, never a managed build input. All Lua tools use NLua 1.5.7 and KeraLua 1.2.13. See `../src/README.md` for dependency versions and details.
 
+Parser and CSVCleaner also support Folder publishing. See `../src/Parser/README.md` for direct build and publish commands.
+
 On an ARM64 Windows host using an ARM64 .NET SDK, add `/p:NETCoreSdkRuntimeIdentifier=win-x64` to preserve the existing x64 apphosts. Managed Any CPU targets remain unchanged.
 
 The following proposed structure and shared build settings describe the separate source migration and later modernization work.

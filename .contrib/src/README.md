@@ -38,4 +38,4 @@ Profession's table conversion accepts NLua 1.5.7's `Int64` integer values alongs
 
 Skill produces Newtonsoft.Json 13.0.3 under `.tools`; Harvester produces the same package version under `.contrib/Harvesters`, along with WebAPI 5.2.3 and the generated JSON binding redirect.
 
-Existing native Lua handling is retained. KeraLua's NuGet build targets still copy the same native assets as the previous explicit imports; this change adds no runtime identifiers or native layout.
+Legacy projects retain KeraLua's native copy targets; SDK Parser selects the matching native Lua through its Windows runtime identifier. Dependency normalization changes no checked-in native files or layout.
