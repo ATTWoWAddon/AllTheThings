@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">x64</Platform>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{47D83200-8E21-487B-8F44-B08C7A1CBC82}</ProjectGuid>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
+    <StartupObject>ATT.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <OutputPath>..\..\.tools\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>..\..\.tools\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
+    </Reference>
+    <Reference Include="KeraLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=04d04586786c6f34, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\KeraLua.dll</HintPath>
+    </Reference>
+    <Reference Include="NLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NLua.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollectedStatus.cs" />
+    <Compile Include="CustomConfiguration.cs" />
+    <Compile Include="DataValidator.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="MiniJSON.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Tracer.cs" />
+    <Compile Include="DB\Attributes\DataModuleAttribute.cs" />
+    <Compile Include="DB\Attributes\ExportableDataAttribute.cs" />
+    <Compile Include="DB\Attributes\LocalizeAttribute.cs" />
+    <Compile Include="DB\Interfaces\IDBType.cs" />
+    <Compile Include="DB\Interfaces\IWagoAreaID.cs" />
+    <Compile Include="DB\Interfaces\IWagoChild.cs" />
+    <Compile Include="DB\Interfaces\IWagoHolidayNameID.cs" />
+    <Compile Include="DB\Interfaces\IWagoItemID.cs" />
+    <Compile Include="DB\Interfaces\IWagoItemModifiedAppearanceID.cs" />
+    <Compile Include="DB\Interfaces\IWagoQuestID.cs" />
+    <Compile Include="DB\Interfaces\IWagoSpellID.cs" />
+    <Compile Include="DB\Interfaces\IWagoTransmogSetID.cs" />
+    <Compile Include="DB\Interfaces\IWagoUiMapID.cs" />
+    <Compile Include="DB\Types\Achievement.cs" />
+    <Compile Include="DB\Types\AchievementCategory.cs" />
+    <Compile Include="DB\Types\AreaTable.cs" />
+    <Compile Include="DB\Types\ArtifactAppearance.cs" />
+    <Compile Include="DB\Types\BattlePetSpecies.cs" />
+    <Compile Include="DB\Types\ClassTypeFlags.cs" />
+    <Compile Include="DB\Types\ContentTuning.cs" />
+    <Compile Include="DB\Types\Criteria.cs" />
+    <Compile Include="DB\Types\CriteriaTree.cs" />
+    <Compile Include="DB\Types\GlyphProperties.cs" />
+    <Compile Include="DB\Types\Holiday.cs" />
+    <Compile Include="DB\Types\HolidayNames.cs" />
+    <Compile Include="DB\Types\HouseDecor.cs" />
+    <Compile Include="DB\Types\Item.cs" />
+    <Compile Include="DB\Types\ItemBonus.cs" />
+    <Compile Include="DB\Types\ItemEffect.cs" />
+    <Compile Include="DB\Types\ItemModifiedAppearance.cs" />
+    <Compile Include="DB\Types\ItemSearchName.cs" />
+    <Compile Include="DB\Types\ItemXItemEffect.cs" />
+    <Compile Include="DB\Types\ModifierTree.cs" />
+    <Compile Include="DB\Types\RaceTypeBitIndexes.cs" />
+    <Compile Include="DB\Types\SkillLineAbility.cs" />
+    <Compile Include="DB\Types\SpellEffect.cs" />
+    <Compile Include="DB\Types\TaxiNodes.cs" />
+    <Compile Include="DB\Types\TransmogSet.cs" />
+    <Compile Include="DB\Types\TransmogSetItem.cs" />
+    <Compile Include="DB\Types\TransmogSourceTypeFlags.cs" />
+    <Compile Include="DB\Types\TypeFlags.cs" />
+    <Compile Include="DB\Types\UiMap.cs" />
+    <Compile Include="DB\Types\UiMapAssignment.cs" />
+    <Compile Include="DB\Types\WorldMapOverlay.cs" />
+    <Compile Include="DB\WagoData.cs" />
+    <Compile Include="Export\Export %28Compressed Lua%29.cs" />
+    <Compile Include="Export\Export %28Pure Lua%29.cs" />
+    <Compile Include="Export\Export %28Raw Lua%29.cs" />
+    <Compile Include="Export\Export %28Shortcuts%29.cs" />
+    <Compile Include="Export\Export %28Structures%29.cs" />
+    <Compile Include="Export\Export.cs" />
+    <Compile Include="Export\Exporter.cs" />
+    <Compile Include="Export\Object_Data\AchievementData.cs" />
+    <Compile Include="Export\Object_Data\CriteriaData.cs" />
+    <Compile Include="Export\Object_Data\HeaderData.cs" />
+    <Compile Include="Export\Object_Data\HeirloomData.cs" />
+    <Compile Include="Export\Object_Data\ItemData.cs" />
+    <Compile Include="Export\Object_Data\ItemSourceData.cs" />
+    <Compile Include="Export\Object_Data\MapData.cs" />
+    <Compile Include="Export\Object_Data\MountData.cs" />
+    <Compile Include="Export\Object_Data\ObjectData.cs" />
+    <Compile Include="Export\Object_Data\QuestData.cs" />
+    <Compile Include="Export\Object_Data\RecipeData.cs" />
+    <Compile Include="FieldTypes\Coords.cs" />
+    <Compile Include="FieldTypes\Cost.cs" />
+    <Compile Include="FieldTypes\IExportableField.cs" />
+    <Compile Include="FieldTypes\IMergeField.cs" />
+    <Compile Include="FieldTypes\IProcessedField.cs" />
+    <Compile Include="FieldTypes\LockCriteria.cs" />
+    <Compile Include="FieldTypes\Providers.cs" />
+    <Compile Include="FieldTypes\Timeline.cs" />
+    <Compile Include="FieldTypes\TimelineEntry.cs" />
+    <Compile Include="Framework\ConcurrentDataList.cs" />
+    <Compile Include="Framework\ConcurrentHashSet.cs" />
+    <Compile Include="Framework\Framework.cs" />
+    <Compile Include="Framework\Framework.Items.cs" />
+    <Compile Include="Framework\Framework.Logging.cs" />
+    <Compile Include="Framework\Framework.Merge.cs" />
+    <Compile Include="Framework\Framework.Objects.cs" />
+    <Compile Include="Framework\Framework.Processing.cs" />
+    <Compile Include="Framework\Handler.cs" />
+    <Compile Include="Framework\HierarchicalFieldAdjustments.cs" />
+    <Compile Include="Framework\ParseStage.cs" />
+    <Compile Include="Framework\ReplacementTree.cs" />
+    <Compile Include="Framework\Structs.cs" />
+    <Compile Include="Harvesters\ObjectHarvester.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="lib\lua54.dll">
+      <Link>lua54.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(Platform)' != 'x64'" Text="Parser supports only the x64 platform in this revision." />
+  </Target>
+</Project>

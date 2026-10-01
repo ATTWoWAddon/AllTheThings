@@ -22,7 +22,7 @@ jobs:
       - name: Database Parser for Retail with objective
         timeout-minutes: 5
         run: |
-          "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/retail/objectives.config"
+          "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/options/objectives.config"
         shell: cmd
 
       - name: Database Parser for Classic Era

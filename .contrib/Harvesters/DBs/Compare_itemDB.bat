@@ -1,4 +1,4 @@
-"Item DB Compare Tool.exe" itemDB > "Compared_itemDBs.txt"
+"Item_DB_Compare_Tool.exe" itemDB > "Compared_itemDBs.txt"
 
 xcopy /K /Y "itemDB-FULL.json" "..\..\.db\standard\00 - Item DB\itemDB.json"
 

@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <AssemblyName>Skill_Level_Requirements</AssemblyName>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>ATT</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>

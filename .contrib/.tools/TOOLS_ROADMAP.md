@@ -159,32 +159,58 @@ A tool is considered cross-platform only when its application code and all requi
 
 ## Source Layout
 
-All maintained ATT contributor tool source code should eventually be consolidated under a single source directory:
+Six Visual Studio/C# projects are maintained under `.contrib/src/`, with `.contrib/src/ATT_Tools.sln` as their shared solution: Parser, CSVCleaner, Blizzard API Harvester, Classic Item Detector, Item DB Compare Tool and Profession Automator.
 
-```text
-.contrib/
-└── src/
+The other six projects retain their original source directories and project filenames under `.contrib/.source/`, using `.contrib/.source/All The Tools.sln`. Migrating this source tree is a separate project. Tool executable names use underscores across both trees; namespaces remain unchanged. Harvester and database comparison batch files call the renamed executables.
+
+The source relocation preserves each project's framework, dependency model, and output directories. Existing shared Release outputs remain in `.contrib/.tools/`; the artifact layout below remains a future migration.
+
+| Tool | Executable in `.contrib/.tools/` |
+| --- | --- |
+| Parser | `Parser.exe` |
+| CSV cleaner | `CSVCleaner.exe` |
+| ATT Sync Tool | `ATT_Sync_Tool.exe` |
+| AssetDB Builder | `AssetDB_Builder.exe` |
+| IconID Converter | `IconID_Converter.exe` |
+| Item Database Consolidator | `Item_Database_Consolidator.exe` |
+| Skill Level Requirements | `Skill_Level_Requirements.exe` |
+
+Other maintained outputs are `Blizzard_API_Harvester.exe` and `Classic_Item_Detector.exe` under `.contrib/Harvesters/`, `Item_DB_Compare_Tool.exe` under `.contrib/Harvesters/DBs/`, and `Profession_Automator.exe` under its existing project output directory.
+
+Associated DLL, configuration, dependency manifest, and runtime configuration filenames use the same executable stem. `Database.dll` remains the shared ATT Sync Tool dependency.
+
+Maintained Python and JavaScript source should eventually join the same tree. Their current `.contrib/.tools/Localization/` and `.contrib/.tools/Lua/` directories remain in place until that separate migration.
+
+### Current Windows Build
+
+Use the x64 Developer Command Prompt for Visual Studio with the existing .NET Framework targeting packs and .NET 8 SDK installed. From the repository root:
+
+```bat
+msbuild .contrib\src\ATT_Tools.sln /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
+msbuild .contrib\src\Parser\Parser.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Parser\packages"
+msbuild .contrib\src\Blizzard_API_Harvester\Blizzard_API_Harvester.csproj /t:Restore /p:RestorePackagesConfig=true "/p:RestoreRepositoryPath=%CD%\.contrib\src\Blizzard_API_Harvester\packages"
+msbuild ".contrib\.source\All The Tools.sln" /t:Restore /p:RestorePackagesConfig=true /p:Configuration=Release /p:Platform=x64
+msbuild .contrib\src\ATT_Tools.sln /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
+msbuild ".contrib\.source\All The Tools.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /m:1
 ```
 
-The existing split between:
+The solution restore prepares SDK dependencies and the existing shared `.source/packages` cache. Parser and Blizzard API Harvester need the separate restores because their legacy `HintPath` entries use their own `packages` directories. These commands preserve the current package versions and dependency model.
 
-```text
-.contrib/.source/
-.contrib/Source Code/
+On an ARM64 Windows host using an ARM64 .NET SDK, add `/p:NETCoreSdkRuntimeIdentifier=win-x64` to the rebuild command to generate the existing x64 apphosts. Managed Any CPU targets remain unchanged; this is a command-line setting rather than a project RID:
+
+```bat
+msbuild .contrib\src\ATT_Tools.sln /t:Rebuild /p:Configuration=Release /p:Platform=x64 /p:NETCoreSdkRuntimeIdentifier=win-x64 /m:1
+msbuild ".contrib\.source\All The Tools.sln" /t:Rebuild /p:Configuration=Release /p:Platform=x64 /p:NETCoreSdkRuntimeIdentifier=win-x64 /m:1
 ```
 
-should be removed.
-
-Source code should not be stored in `.contrib/.tools/`.
-
-This applies to maintained contributor tooling regardless of implementation language, including C#, Python, and JavaScript.
+The following proposed structure and shared build settings describe the separate source migration and later modernization work.
 
 ### Proposed Structure
 
 ```text
 .contrib/
 ├── src/
-│   ├── ATT.Tools.sln
+│   ├── ATT_Tools.sln
 │   ├── Directory.Build.props
 │   ├── Directory.Packages.props
 │   │
@@ -196,28 +222,44 @@ This applies to maintained contributor tooling regardless of implementation lang
 │   │   ├── CSVCleaner.csproj
 │   │   └── ...
 │   │
-│   ├── AssetDBBuilder/
-│   │   ├── AssetDBBuilder.csproj
+│   ├── AssetDB_Builder/
+│   │   ├── AssetDB_Builder.csproj
 │   │   └── ...
 │   │
-│   ├── IconIDConverter/
-│   │   ├── IconIDConverter.csproj
+│   ├── IconID_Converter/
+│   │   ├── IconID_Converter.csproj
 │   │   └── ...
 │   │
-│   ├── ItemDatabaseConsolidator/
-│   │   ├── ItemDatabaseConsolidator.csproj
+│   ├── Item_Database_Consolidator/
+│   │   ├── Item_Database_Consolidator.csproj
 │   │   └── ...
 │   │
-│   ├── SkillLevelRequirements/
-│   │   ├── SkillLevelRequirements.csproj
+│   ├── Skill_Level_Requirements/
+│   │   ├── Skill_Level_Requirements.csproj
 │   │   └── ...
 │   │
-│   ├── ATTSyncTool/
-│   │   ├── ATTSyncTool.csproj
+│   ├── ATT_Sync_Tool/
+│   │   ├── ATT_Sync_Tool.csproj
 │   │   └── ...
 │   │
 │   ├── Database/
 │   │   ├── Database.csproj
+│   │   └── ...
+│   │
+│   ├── Blizzard_API_Harvester/
+│   │   ├── Blizzard_API_Harvester.csproj
+│   │   └── ...
+│   │
+│   ├── Classic_Item_Detector/
+│   │   ├── Classic_Item_Detector.csproj
+│   │   └── ...
+│   │
+│   ├── Item_DB_Compare_Tool/
+│   │   ├── Item_DB_Compare_Tool.csproj
+│   │   └── ...
+│   │
+│   ├── Profession_Automator/
+│   │   ├── Profession_Automator.csproj
 │   │   └── ...
 │   │
 │   ├── Localization/
@@ -236,7 +278,7 @@ This applies to maintained contributor tooling regardless of implementation lang
 └── .db/
 ```
 
-Project directory names should avoid spaces where practical so that command-line usage, scripting, and CI configuration remain simple.
+Project directory names and project filenames use underscores to preserve word boundaries without spaces.
 
 ## Shared Build Configuration
 
@@ -246,7 +288,7 @@ Common .NET build configuration should be moved to the root of the source tree r
 .contrib/src/
 ├── Directory.Build.props
 ├── Directory.Packages.props
-└── ATT.Tools.sln
+└── ATT_Tools.sln
 ```
 
 `Directory.Build.props` should contain common compiler and build settings.

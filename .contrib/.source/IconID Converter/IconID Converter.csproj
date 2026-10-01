@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <AssemblyName>IconID_Converter</AssemblyName>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>IconID_Converter</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>

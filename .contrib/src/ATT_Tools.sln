@@ -1,0 +1,129 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blizzard_API_Harvester", "Blizzard_API_Harvester\Blizzard_API_Harvester.csproj", "{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVCleaner", "CSVCleaner\CSVCleaner.csproj", "{97F33281-E45C-4940-9275-987C16854C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classic_Item_Detector", "Classic_Item_Detector\Classic_Item_Detector.csproj", "{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item_DB_Compare_Tool", "Item_DB_Compare_Tool\Item_DB_Compare_Tool.csproj", "{EC726264-8DB9-4DA1-811E-240E9D65AF6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{47D83200-8E21-487B-8F44-B08C7A1CBC82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profession_Automator", "Profession_Automator\Profession_Automator.csproj", "{666A1441-4B70-4E64-9569-42346F12F400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Classic Era|x64 = Classic Era|x64
+		Classic TBC|x64 = Classic TBC|x64
+		Classic Wrath|x64 = Classic Wrath|x64
+		Classic|x64 = Classic|x64
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		Retail|x64 = Retail|x64
+		Test|x64 = Test|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic Era|x64.ActiveCfg = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic Era|x64.Build.0 = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic TBC|x64.ActiveCfg = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic TBC|x64.Build.0 = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic Wrath|x64.ActiveCfg = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic Wrath|x64.Build.0 = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic|x64.ActiveCfg = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Classic|x64.Build.0 = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Debug|x64.Build.0 = Debug|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Release|x64.ActiveCfg = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Release|x64.Build.0 = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Retail|x64.ActiveCfg = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Retail|x64.Build.0 = Release|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Test|x64.ActiveCfg = Test|Any CPU
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Test|x64.Build.0 = Test|Any CPU
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic Era|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic Era|x64.Build.0 = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic TBC|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic TBC|x64.Build.0 = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic Wrath|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic Wrath|x64.Build.0 = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Classic|x64.Build.0 = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x64.ActiveCfg = Debug|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Debug|x64.Build.0 = Debug|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Release|x64.Build.0 = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Retail|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Retail|x64.Build.0 = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Test|x64.ActiveCfg = Release|x64
+		{97F33281-E45C-4940-9275-987C16854C2C}.Test|x64.Build.0 = Release|x64
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic Era|x64.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic Era|x64.Build.0 = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic TBC|x64.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic TBC|x64.Build.0 = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic Wrath|x64.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic Wrath|x64.Build.0 = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic|x64.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Classic|x64.Build.0 = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Debug|x64.Build.0 = Debug|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Release|x64.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Release|x64.Build.0 = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Retail|x64.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Retail|x64.Build.0 = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Test|x64.ActiveCfg = Release|Any CPU
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Test|x64.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic Era|x64.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic Era|x64.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic TBC|x64.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic TBC|x64.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic Wrath|x64.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic Wrath|x64.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic|x64.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Classic|x64.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Debug|x64.Build.0 = Debug|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Release|x64.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Release|x64.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Retail|x64.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Retail|x64.Build.0 = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Test|x64.ActiveCfg = Release|Any CPU
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Test|x64.Build.0 = Release|Any CPU
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic Era|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic Era|x64.Build.0 = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic TBC|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic TBC|x64.Build.0 = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic Wrath|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic Wrath|x64.Build.0 = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Classic|x64.Build.0 = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|x64.ActiveCfg = Debug|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Debug|x64.Build.0 = Debug|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Release|x64.Build.0 = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Retail|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Retail|x64.Build.0 = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Test|x64.ActiveCfg = Release|x64
+		{47D83200-8E21-487B-8F44-B08C7A1CBC82}.Test|x64.Build.0 = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic Era|x64.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic Era|x64.Build.0 = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic TBC|x64.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic TBC|x64.Build.0 = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic Wrath|x64.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic Wrath|x64.Build.0 = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic|x64.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Classic|x64.Build.0 = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Debug|x64.ActiveCfg = Debug|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Debug|x64.Build.0 = Debug|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Release|x64.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Release|x64.Build.0 = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Retail|x64.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Retail|x64.Build.0 = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Test|x64.ActiveCfg = Release|x64
+		{666A1441-4B70-4E64-9569-42346F12F400}.Test|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

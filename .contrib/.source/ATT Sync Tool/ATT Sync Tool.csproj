@@ -7,7 +7,7 @@
     <ProjectGuid>{372B2DCF-17CA-43B4-B6EE-88F0D392C6D7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ATT</RootNamespace>
-    <AssemblyName>ATT Sync Tool</AssemblyName>
+    <AssemblyName>ATT_Sync_Tool</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AssetDB_Builder/1.0.0": {
+        "runtime": {
+          "AssetDB_Builder.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AssetDB_Builder/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

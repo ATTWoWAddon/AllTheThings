@@ -23,6 +23,7 @@
         ".vscode",
         "db",
         ".config/.exports",
+        ".contrib/src",
         ".contrib/.source",
         ".contrib/.raw/ItemDB",
         ".contrib/.db/standard/00 - Item DB",

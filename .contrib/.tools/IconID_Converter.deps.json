@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IconID_Converter/1.0.0": {
+        "runtime": {
+          "IconID_Converter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IconID_Converter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
