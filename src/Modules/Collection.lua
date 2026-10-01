@@ -209,7 +209,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	end
 	-- Returns the tracked status for this Account for a given field ID
 	local function IsAccountTracked(field, id, setting)
-		return accountWide[setting or field] and accountWideData[field][id] or nil
+		return accountWide[setting or field]
+			and (accountWideData[field][id]
+				or (field == "Quests" and app.WOWAPI.IsQuestFlaggedCompletedOnAccount(id)))
+			or nil
 	end
 	-- Allows directly saving a cached state for a table of ids for a given field at the Account level
 	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
