@@ -1340,7 +1340,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = BREWFEST_TOKEN,
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						objective(1, {	-- 0/1 Bark Outside the Bank
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(2, {	-- 0/1 Bark in the Military Ward
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(3, {	-- 0/1 Bark in the Hall of Explorers
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(4, {	-- 0/1 Bark in the Mystic Ward
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+					}),
 				}),
 				q(11407, {	-- Bark for Drohn's Distillery! (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
@@ -1358,7 +1371,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = BREWFEST_TOKEN,
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						objective(1, {	-- 0/1 Bark outside the Auction House
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(2, {	-- 0/1 Bark in the Valley of Honor
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(3, {	-- 0/1 Bark in the Valley of Wisdom
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(4, {	-- 0/1 Bark in the Valley of Spirits
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+					}),
 				}),
 				q(11294, {	-- Bark for the Thunderbrews! (A)
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
@@ -1376,7 +1402,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = BREWFEST_TOKEN,
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						objective(1, {	-- 0/1 Bark Outside the Bank
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(2, {	-- 0/1 Bark in the Military Ward
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(3, {	-- 0/1 Bark in the Hall of Explorers
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(4, {	-- 0/1 Bark in the Mystic Ward
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+					}),
 				}),
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery! (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
@@ -1394,7 +1433,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = BREWFEST_TOKEN,
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						objective(1, {	-- 0/1 Bark outside the Auction House
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(2, {	-- 0/1 Bark in the Valley of Honor
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(3, {	-- 0/1 Bark in the Valley of Wisdom
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+						objective(4, {	-- 0/1 Bark in the Valley of Spirits
+							["provider"] = { "i", 33306 },	-- Ram Racing Reins
+						}),
+					}),
 				}),
 				q(11441, {	-- Brewfest! (A)
 					["altQuests"] = {
