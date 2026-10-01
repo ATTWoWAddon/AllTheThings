@@ -5135,9 +5135,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2465),	-- Studded Pants
 					},
 				}),
-				-- #if AFTER CATA
 				n(5812, {	-- Tumi <Heavy Armor Merchant>
-					["coord"] = { 75.8, 35.2, ORGRIMMAR },
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 75.8, 35.2, ORGRIMMAR },
+						-- #else
+						{ 82.4, 23.6, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2419),	-- Augmented Chain Belt
@@ -5193,7 +5198,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(285),	-- Scalemail Vest
 					},
 				}),
-				-- #endif
 				n(66022, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 					["coord"] = { 69.8, 41.0, ORGRIMMAR },
 					-- Available to Huojin Pandaren without faction requirements.

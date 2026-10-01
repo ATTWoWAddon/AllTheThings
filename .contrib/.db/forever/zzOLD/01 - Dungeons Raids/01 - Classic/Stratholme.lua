@@ -1920,12 +1920,3 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-	inst(236, {
-		q(35563),	-- Stratholme - Main Gate - Reward Quest - Normal completion
-		q(35564),	-- Stratholme - Main Gate - Bonus Objective Reward Quest
-		q(35574),	-- Stratholme - Service Entrance Reward Quest - Normal completion
-		q(35575),	-- Stratholme - Service Entrance Bonus Objective Reward Quest
-	}),
-})));

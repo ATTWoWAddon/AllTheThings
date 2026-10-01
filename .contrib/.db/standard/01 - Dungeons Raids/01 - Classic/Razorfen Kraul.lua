@@ -167,12 +167,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(1100, {	-- Lonebrow's Journal
-					["providers"] = {
-						{ "i", 5791 },	-- Henrig Lonebrow's Journal
-						{ "i", 5790 },	-- Henrig Lonebrow's Journal
-						{ "o", 19861 },	-- Henrig Lonebrow's Journal
-					},
-					["coord"] = { 30.0, 24.0, THOUSAND_NEEDLES },
+					["qs"] = 5791,	-- Henrig Lonebrow's Journal (QS!)
+					["qi"] = 5790,	-- Henrig Lonebrow's Journal (PQI!)
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,

@@ -1015,7 +1015,7 @@ pvprank(11),
 pvprank(12),
 pvprank(13),
 pvprank(14)}}),
-h(-210,{r=2,symselector=3,g={
+h(-210,{r=2,symselector=4,g={
 h(-101,{
 s(163703,18825,{b=1,f=8,lvl=60,spellID=13959}),
 s(163727,18867,{b=1,f=24,lvl=60}),
@@ -1179,7 +1179,7 @@ i(18862,{b=1,c={5},f=53,spellID=23276}),
 i(18857,{b=1,c={4},f=53,spellID=23273}),
 i(18858,{b=1,c={9},f=53,spellID=23273}),
 i(18854,{b=1,c={1},f=53,spellID=5579})}}),
-h(-211,{r=1,symselector=4,g={
+h(-211,{r=1,symselector=5,g={
 h(-101,{
 s(163709,18831,{b=1,f=22,lvl=60}),
 s(165286,23464,{b=1,f=23,lvl=60}),

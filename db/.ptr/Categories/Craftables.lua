@@ -2027,7 +2027,6 @@ o(181068,{maps={247,320},requireSkill=186}),
 o(73940,{coords={
 [64]={{66.1,86.2}}},requireSkill=186}),
 o(1733,{maps={14,15,22,23,25,26,47,50,56,63,65,66,69,199,210},requireSkill=186}),
-o(180215,{maps={337},requireSkill=186,rwp=40001,u=2}),
 o(177388,{maps={81},requireSkill=186}),
 o(123848,{coords={
 [78]={{50,81.2}}},requireSkill=186}),
@@ -2142,8 +2141,6 @@ i(8171,{description="Is a rare drop in place of Rugged Leather.",maps_disp={17}}
 i(8169,{description="Is a rare drop in place of Thick Leather.",maps_disp={15,64,77,78,83}}),
 i(15423,{crs={7447,7448,7449,8763,8764,10807},maps_disp={76,83},rwp=30100,u=2}),
 i(17012,{crs={11673,11982,53134},maps_disp={232,367}}),
-i(19767,{awp=100007}),
-i(19768,{awp=100007}),
 i(15419,{coords={
 [83]={{55.1,37.8},{58.1,89.4}}},crs={7443,7446,42336},description="Can be skinned from bears in previously highlevel vanilla zones like shardtooths in Winterspring."}),
 i(7428,{crs={684,768,1713},description="Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",maps_disp={51,224},rwp=30100,u=2}),
@@ -2152,7 +2149,6 @@ i(15416,{description="Can be skinned from elite creatures of the Black Dragonfli
 i(7286),
 i(15415,{crs={14020},description="Blizzard being Blizzard, Blue Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",maps_disp={287}}),
 i(12607),
-i(20381,{awp=70205,description="Can be skinned from corrupted creatures of the Green Dragonflight in Temple of Atal'hakkar. Can also be skinned from the Dragons of Nightmare during the Anniversary event.",maps_disp={220}}),
 i(15412,{description="Can be skinned from elite creatures of the Green Dragonflight around the world.",maps_disp={220}}),
 i(15408,{description="Can be skinned from scorpids in Silithus.",maps_disp={81}}),
 i(15414,{crs={14020},description="Blizzard being Blizzard, Red Dragonscale is only obtainable from Chromaggus in Blackwing Lair. All other sources are removed.",maps_disp={287}}),

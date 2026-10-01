@@ -1237,8 +1237,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						--- P4
 						applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
 						--]]
-						
-						
 					},
 				})),
 				n(9499, {	-- Plugger Spazzring
@@ -2272,21 +2270,3 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-		inst(228, {
-			q(35899),	-- Blackrock Depths (Detention Block) Reward Quest - Normal completion
-			q(35901),	-- Blackrock Depths (Detention Bonus) Reward Quest
-			q(35902),	-- Blackrock Depths (Upper City) Reward Quest - Normal completion
-			q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
-			q(35904),	-- Blackrock Depths (Everything) Reward Quest
-		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
-		inst(228, {
-			q(82739),	-- ???
-			q(82740),	-- Twilight Scheming (New 11.0 ID)
-			-- Both of these keep getting reported completed on turnin of seemingly any BRD class quest regardless of race or faction
-		}),
-	})),
-});

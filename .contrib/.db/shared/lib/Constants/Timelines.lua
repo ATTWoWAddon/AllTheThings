@@ -708,29 +708,32 @@ CREATED_12_1_0 = "created 12.1.0.69214";				-- Midnight 12.1.0 launch on August 
 ADDED_12_1_0 = "added 12.1.0.69214";					-- Midnight 12.1.0 launch on August 11th, 2026
 REMOVED_12_1_0 = "removed 12.1.0.69214";				-- Midnight 12.1.0 launch on August 11th, 2026
 DELETED_12_1_0 = "deleted 12.1.0.69214";				-- Midnight 12.1.0 launch on August 11th, 2026
-CREATED_12_1_5 = "created 12.1.5";						-- Midnight 12.1.5 launch in autumn 2026
-ADDED_12_1_5 = "added 12.1.5";							-- Midnight 12.1.5 launch in autumn 2026
-REMOVED_12_1_5 = "removed 12.1.5";						-- Midnight 12.1.5 launch in autumn 2026
-CREATED_12_1_7 = "created 12.1.7";						-- Midnight 12.1.7 launch in autumn 2026
-ADDED_12_1_7 = "added 12.1.7";							-- Midnight 12.1.7 launch in autumn 2026
-REMOVED_12_1_7 = "removed 12.1.7";						-- Midnight 12.1.7 launch in autumn 2026
+CREATED_12_1_5 = "created 12.1.5";						-- Midnight 12.1.5 launch on October 13th, 2026
+ADDED_12_1_5 = "added 12.1.5";							-- Midnight 12.1.5 launch on October 13th, 2026
+REMOVED_12_1_5 = "removed 12.1.5";						-- Midnight 12.1.5 launch on October 13th, 2026
+CREATED_12_1_7 = "created 12.1.7";						-- Midnight 12.1.7 launch on December 8th, 2026
+ADDED_12_1_7 = "added 12.1.7";							-- Midnight 12.1.7 launch on December 8th, 2026
+REMOVED_12_1_7 = "removed 12.1.7";						-- Midnight 12.1.7 launch on December 8th, 2026
 
-CREATED_12_2_0 = "created 12.2.0";						-- Midnight 12.2.0 launch in winter 2027
-ADDED_12_2_0 = "added 12.2.0";							-- Midnight 12.2.0 launch in winter 2027
-REMOVED_12_2_0 = "removed 12.2.0";						-- Midnight 12.2.0 launch in winter 2027
-CREATED_12_2_5 = "created 12.2.5";						-- Midnight 12.2.5 launch in spring 2027
-ADDED_12_2_5 = "added 12.2.5";							-- Midnight 12.2.5 launch in spring 2027
-REMOVED_12_2_5 = "removed 12.2.5";						-- Midnight 12.2.5 launch in spring 2027
-CREATED_12_2_7 = "created 12.2.7";						-- Midnight 12.2.7 launch in spring 2027
-ADDED_12_2_7 = "added 12.2.7";							-- Midnight 12.2.7 launch in spring 2027
-REMOVED_12_2_7 = "removed 12.2.7";						-- Midnight 12.2.7 launch in spring 2027
+CREATED_12_2_0 = "created 12.2.0";						-- Midnight 12.2.0 launch on February 2nd, 2027
+ADDED_12_2_0 = "added 12.2.0";							-- Midnight 12.2.0 launch on February 2nd, 2027
+REMOVED_12_2_0 = "removed 12.2.0";						-- Midnight 12.2.0 launch on February 2nd, 2027
+CREATED_12_2_5 = "created 12.2.5";						-- Midnight 12.2.5 launch on March 30th, 2027
+ADDED_12_2_5 = "added 12.2.5";							-- Midnight 12.2.5 launch on March 30th, 2027
+REMOVED_12_2_5 = "removed 12.2.5";						-- Midnight 12.2.5 launch on March 30th, 2027
+CREATED_12_2_7 = "created 12.2.7";						-- Midnight 12.2.7 launch on May 25th, 2027
+ADDED_12_2_7 = "added 12.2.7";							-- Midnight 12.2.7 launch on May 25th, 2027
+REMOVED_12_2_7 = "removed 12.2.7";						-- Midnight 12.2.7 launch on May 25th, 2027
 
 --------------------
 -- THE LAST TITAN --
 --------------------
-CREATED_13_0_0 = "created 13.0.0";						-- The Last Titan 13.0.0 launch in 2027
-ADDED_13_0_0 = "added 13.0.0";							-- The Last Titan 13.0.0 launch in 2027
-REMOVED_13_0_0 = "removed 13.0.0";						-- The Last Titan 13.0.0 launch in 2027
+CREATED_13_0_0 = "created 13.0.0";						-- The Last Titan 13.0.0 launch on July 27th, 2027
+ADDED_13_0_0 = "added 13.0.0";							-- The Last Titan 13.0.0 launch on July 27th, 2027
+REMOVED_13_0_0 = "removed 13.0.0";						-- The Last Titan 13.0.0 launch on July 27th, 2027
+CREATED_13_0_1 = "created 13.0.1";						-- The Last Titan 13.0.1 launch on September 7th, 2027
+ADDED_13_0_1 = "added 13.0.1";							-- The Last Titan 13.0.1 launch on September 7th, 2027
+REMOVED_13_0_1 = "removed 13.0.1";						-- The Last Titan 13.0.1 launch on September 7th, 2027
 
 --------------------
 -- HELPER  TABLES --

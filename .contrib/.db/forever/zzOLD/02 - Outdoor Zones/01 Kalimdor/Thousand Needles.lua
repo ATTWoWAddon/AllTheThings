@@ -934,6 +934,14 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(19861, {	-- Henrig Lonebrow's Journal
+					["coord"] = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
+					["groups"] = {
+						i(5791),	-- Henrig Lonebrow's Journal (QS!)
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(4877, {	-- Jandia <Trade Supplies>
 					["coord"] = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },

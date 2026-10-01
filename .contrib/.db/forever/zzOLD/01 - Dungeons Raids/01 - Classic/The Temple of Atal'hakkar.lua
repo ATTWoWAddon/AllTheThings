@@ -1566,9 +1566,3 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-	inst(237, {
-		q(35582),	-- Sunken Temple Reward Quest - Normal completion
-	}),
-})));

@@ -4286,6 +4286,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(63840),	-- Kith'ix (Normal The Unbinding of Kith'ix)
 			ach(63841),	-- Kith'ix (Heroic The Unbinding of Kith'ix)
 			ach(63842),	-- Kith'ix (Mythic The Unbinding of Kith'ix)
+
+			-- 12.1.5.70077
+			ach(64186),	-- [DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.
 		})),
 	}),
 });

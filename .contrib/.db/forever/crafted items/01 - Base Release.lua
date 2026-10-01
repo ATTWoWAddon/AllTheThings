@@ -889,6 +889,9 @@ root(ROOTS.Craftables, {
 			i(6365, {	-- Strong Fishing Pole
 				["isLimited"] = true,
 			}),
+			i(273636, {	-- Chef's Knife
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		})),
 		filter(ONE_HANDED_MACES, {
 			i(6360, {	-- Steelscale Crushfish

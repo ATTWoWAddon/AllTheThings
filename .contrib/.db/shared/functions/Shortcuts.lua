@@ -3296,6 +3296,10 @@ assignRootCategoryHeader = function(priority, category, headerID, data)
 	data = n(headerID, data or {});
 	data.SortPriority = priority;
 	rootCategoryHeaders[category] = data;
+	if data.groups then
+		root(category, data.groups);
+		data.groups = nil;
+	end
 	return data;
 end
 end)();

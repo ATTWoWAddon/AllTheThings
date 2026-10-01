@@ -8,6 +8,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = { 2665 },	-- Zephras Isle (Flight Path Map)
 	groups = {
+		n(EXPLORATION, {
+			exploration(16623),	-- Shen'dar Highlands
+			exploration(16624),	-- Shen'dar Village
+			exploration(16622),	-- Thendal Grove
+			exploration(17678),	-- Thendal Standing Stones
+			exploration(16635),	-- Thendal Village
+		}),
 		n(FACTIONS, {
 			faction(FACTION_NIGHTCLAW_DRUIDS),
 		}),
@@ -45,11 +52,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 4,
 			}),
 			q(94413, {	-- A Magical Affront
-				["qg"] = 251903,	-- Rathiril Sunlance
-				["coord"] = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuest = 92596,	-- The High Order
+				qg = 251903,	-- Rathiril Sunlance
+				coord = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/6 Windshaper Novice Seer defeated
+						provider = { "n", 257532 },	-- Windshaper Novice Seer
+					}),
 					i(263428),	-- Dowsing Rod
 					i(2454),	-- Elixir of Minor Strength
 				},
@@ -60,10 +71,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(92485, {	-- A Student of Nature
-				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
-				["classes"] = { DRUID },
-				["lvl"] = 2,
+				sourceQuest = 92461,	-- Harmony in Balance
+				qg = 251361,	-- Rorian the Dayseeker
+				qi = 282420,	-- Folder Parchment (PQI!)
+				coord = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				classes = { DRUID },
+				lvl = 2,
 			}),
 			q(92481, {	-- A Student of the Arcane
 				["qg"] = 251361,	-- Rorian the Dayseeker
@@ -74,27 +87,37 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["groups"] = { i(282416), },	-- Glowing Recall Crystal
 			}),
 			q(92471, {	-- Aetheen of the Gales
-				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 4,
+				qg = 251361,	-- Rorian the Dayseeker
+				coord = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				lvl = 4,
 			}),
 			q(92473, {	-- Aggressive Encroachment
-				["qg"] = 257551,	-- Valreaa Valewind
-				["coord"] = { 42.4, 25.0, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 3,
-				["groups"] = {
+				sourceQuest = 92471,	-- Aetheen of the Gales
+				qg = 257551,	-- Valreaa Valewind
+				coord = { 42.4, 25.0, MAP.ZEPHRAS_ISLE },
+				lvl = 3,
+				groups = {
+					objective(1, {	-- 0/6 Scrawny Ursera Claw
+						provider = { "i", 251918 },	-- Scrawny Ursera Claw
+						coord = { 40.4, 27.0, MAP.ZEPHRAS_ISLE },
+						cr = 250926,	-- Scrawny Ursera
+					}),
 					i(257257),	-- Thendal Ranger's Shoes
 					i(257264),	-- Thendal Ranger's Gloves
 					i(257263),	-- Thendal Ranger's Belt
 				},
 			}),
 			q(92465, {	-- Agitators
-				["qg"] = 249363,	-- Yala Windwatcher
-				["coord"] = { 47.3, 21.9, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 2,
-				["groups"] = {
-					objective(1, { ["provider"] = { "n", 251160 } }),	-- Al'Aketh Convert
-					objective(2, { ["provider"] = { "n", 251143 } }),	-- Roiling Winds
+				qg = 249363,	-- Yala Windwatcher
+				coord = { 47.3, 21.9, MAP.ZEPHRAS_ISLE },
+				lvl = 2,
+				groups = {
+					objective(1, {	-- 0/7 Al'Aketh Convert
+						provider = { "n", 251160 },	-- Al'Aketh Convert
+					}),
+					objective(2, {	-- 0/6 Roiling Winds
+						provider = { "n", 251143 },	-- Roiling Winds
+					}),
 				},
 			}),
 			q(94896, {	-- Aid For The Refugees
@@ -108,9 +131,21 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 6,
 			}),
 			q(92544, {	-- Al'Aketh Thugs
-				["qg"] = 252095,	-- Hanaa Nightwind
-				["coord"] = { 38.2, 30.2, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 2,
+				qg = 252095,	-- Hanaa Nightwind
+				coord = { 38.2, 30.2, MAP.ZEPHRAS_ISLE },
+				lvl = 2,
+				groups = {
+					objective(1, {	-- 0/6 Al'Aketh Brute slain
+						provider = { "n", 251145 },	-- Al'Aketh Brute
+					}),
+					objective(2, {	-- 0/4 Al'Aketh Neophyte slain
+						provider = { "n", 251448 },	-- Al'Aketh Neophyte
+					}),
+					objective(3, {	-- 0/1 Malduko Cloudcrush slain
+						provider = { "n", 256935 },	-- Malduko Cloudcrush
+						coord = { 35.6, 33.2, MAP.ZEPHRAS_ISLE },
+					}),
+				},
 			}),
 			q(92528, {	-- Among the Faithful
 				["qg"] = 257065,	-- Missionary Jasaan
@@ -231,121 +266,126 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(97963, {	-- Camping 101: Alchemy
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = ALCHEMY,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230564), },
 			}),
 			q(97964, {	-- Camping 101: Blacksmithing
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = BLACKSMITHING,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230171), },
 			}),
 			q(96646, {	-- Camping 101: Cooking
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
 			q(98284, {	-- Camping 101: Enchanting
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["altQuests"] = { 98286 },
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = ENCHANTING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230643), },
 			}),
 			q(98286, {	-- Camping 101: Enchanting
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["altQuests"] = { 98284 },
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = ENCHANTING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230643), },
 			}),
 			q(98285, {	-- Camping 101: Engineering
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = ENGINEERING,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230656), },
 			}),
 			q(97965, {	-- Camping 101: First Aid
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = FIRST_AID,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230117), },
 			}),
 			q(97967, {	-- Camping 101: Fishing
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = FISHING,
 				["lvl"] = 4,
 				["groups"] = { recipe(1229745), },
 			}),
 			q(97968, {	-- Camping 101: Herbalism
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = HERBALISM,
 				["lvl"] = 4,
 				["groups"] = { recipe(1229705), },
 			}),
 			q(97969, {	-- Camping 101: Leatherworking
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = LEATHERWORKING,
 				["lvl"] = 4,
 				["groups"] = { recipe(1229432), },
 			}),
 			q(97970, {	-- Camping 101: Mining
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = MINING,
 				["lvl"] = 4,
 				["groups"] = { recipe(1230161), },
 			}),
 			q(97971, {	-- Camping 101: Skinning
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = SKINNING,
 				["lvl"] = 4,
 				["groups"] = { recipe(1229517), },
 			}),
 			q(97972, {	-- Camping 101: Tailoring
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["altQuests"] = { 97973 },
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
-				["groups"] = { recipe(1229504), },
+				["groups"] = {
+					recipe(1229504),	-- Faction Banner (Horde)
+				},
 			}),
 			q(97973, {	-- Camping 101: Tailoring
+				["sourceQuest"] = 96101,	-- The Great Outdoors [Zephras Isle]
 				["altQuests"] = { 97972 },
 				["qg"] = 263664,	-- Raan Wildwind
 				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 96101,	-- The Great Outdoors
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
-				["groups"] = { recipe(1263425), },
+				["groups"] = {
+					recipe(1263425),	-- Faction Banner (Alliance)
+				},
 			}),
 			q(92840, {	-- Catching Wind
 				["races"] = ALLIANCE_ONLY,
@@ -358,9 +398,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92460, {	-- Coming of Age
-				["qg"] = 251362,	-- Ailee Farheart
-				["coord"] = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
-				["groups"] = { i(264908), },	-- Ancient Heirloom
+				qg = 251362,	-- Ailee Farheart
+				coord = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(264908),	-- Ancient Heirloom
+				},
 			}),
 			q(92646, {	-- Confront Lorthuna
 				["qg"] = 252383,	-- Valennia Stormfist
@@ -426,9 +468,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 6,
 			}),
 			q(92464, {	-- Elemental Unrest
-				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 2,
+				sourceQuest = 92461,	-- Harmony in Balance
+				qg = 251361,	-- Rorian the Dayseeker
+				coord = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
+				lvl = 2,
 			}),
 			q(92484, {	-- Embracing the Elements
 				["qg"] = 251361,	-- Rorian the Dayseeker
@@ -442,10 +485,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 5,
 			}),
 			q(92474, {	-- Falling With Style
-				["qg"] = 263113,	-- Myriaal Mistwake
-				["coord"] = { 43.6, 24.0, MAP.ZEPHRAS_ISLE },
-				["races"] = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
-				["lvl"] = 2,
+				qg = 263113,	-- Myriaal Mistwake
+				coord = { 43.6, 24.0, MAP.ZEPHRAS_ISLE },
+				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				lvl = 2,
 			}),
 			q(94486, {	-- Feathers for Binding
 				["qg"] = 257944,	-- Elegael Thornpaw
@@ -462,10 +505,20 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92470, {	-- Foul Matriarch
-				["qg"] = 251366,	-- Aetheen of the Gales
-				["coord"] = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 2,
-				["groups"] = {
+				sourceQuest = 92471,	-- Aetheen of the Gales
+				qg = 251366,	-- Aetheen of the Gales
+				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				lvl = 2,
+				groups = {
+					objective(1, {	-- 0/8 Ursera Scavenger slain
+						provider = { "n", 250937 },	-- Ursera Scavenger
+						coord = { 37.6, 26.0, MAP.ZEPHRAS_ISLE },
+					}),
+					objective(2, {	-- 0/1 Head of Urs'anah
+						provider = { "i", 252665 },	-- Head of Urs'anah
+						coord = { 35.7, 25.3, MAP.ZEPHRAS_ISLE },
+						cr = 251115,	-- Urs'anah <The Den Mother>
+					}),
 					i(258882),	-- Worn Greatsword
 					i(257282),	-- Novice's Quarterstaff
 					i(257283),	-- Scout Ranger's Dagger
@@ -484,20 +537,31 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92461, {	-- Harmony in Balance
-				["qg"] = 251361,	-- Rorian the Dayseeker
-				["coord"] = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 92460,	-- Coming of Age
-				["groups"] = {
+				sourceQuest = 92460,	-- Coming of Age
+				qg = 251361,	-- Rorian the Dayseeker
+				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				groups = {
+					objective(1, {	-- 0/8 Juvenile Vuldren
+						provider = { "n", 250873 },	-- Juvenile Vuldren
+					}),
 					i(257281),	-- Fur-Lined Shoes
 					i(257280),	-- Vuldren Hide Bracers
-					objective(1, { ["provider"] = { "n", 250873 } }),	-- Juvenile Vuldren
 				},
 			}),
 			q(93552, {	-- Harvesting Windstones
-				["qg"] = 251363,	-- Dalia the Collector
-				["coord"] = { 43.2, 24.0, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 2,
-				["groups"] = {
+				qg = 251363,	-- Dalia the Collector
+				coord = { 43.2, 24.0, MAP.ZEPHRAS_ISLE },
+				lvl = 2,
+				groups = {
+					objective(1, {	-- 0/15 Windstone Cluster
+						providers = {
+							{ "i", 258772 },	-- Windstone Cluster
+							{ "o", 613286 },	-- Raw Windstone
+						},
+						coords = {
+							{ 48.6, 78.2, MAP.ZEPHRAS_ISLE },
+						},
+					}),
 					i(247840),	-- Mining for Dummies
 					i(247841),	-- Wild Harvest
 					i(247846),	-- Pelt Collecting for Beginners
@@ -532,11 +596,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 6,
 			}),
 			q(92462, {	-- Infestation Investigation
-				["qg"] = 251368,	-- Elatrell Featherlight
-				["coord"] = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
-				["sourceQuest"] = 92460,	-- Coming of Age
-				["groups"] = {
-					objective(1, { ["provider"] = { "n", 251169 } }),	-- Pesky Cirrusfly
+				sourceQuest = 92460,	-- Coming of Age
+				qg = 251368,	-- Elatrell Featherlight
+				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
+				groups = {
+					objective(1, {	-- 0/8 Pesky Cirrusfly
+						["provider"] = { "n", 251169 },	-- Pesky Cirrusfly
+					}),
 				},
 			}),
 			q(93036, {	-- Infiltrating the Cult
@@ -618,10 +684,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92469, {	-- Return to Rorian
-				["qg"] = 249363,	-- Yala Windwatcher
-				["coord"] = { 47.2, 21.8, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 3,
-				["groups"] = {
+				sourceQuest = 92465,	-- Agitators
+				qg = 249363,	-- Yala Windwatcher
+				coord = { 47.2, 21.8, MAP.ZEPHRAS_ISLE },
+				lvl = 3,
+				groups = {
 					i(257277),	-- Windblown Short Cloak
 					i(257272),	-- Skychain Belt
 				},
@@ -704,14 +771,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(96638, {	-- The Adventurer [Zephras Isle]
-				["qg"] = 251366,	-- Aetheen of the Gales
-				["coord"] = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 4,
+				sourceQuest = 92470,	-- Foul Matriarch
+				qg = 251366,	-- Aetheen of the Gales
+				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				lvl = 4,
 			}),
 			q(94414, {	-- The Anchors of Zephras
-				["qg"] = 257554,	-- Halaan Hawk-Eye
-				["coord"] = { 43.8, 24.0, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 2,
+				qg = 257554,	-- Halaan Hawk-Eye
+				coord = { 43.8, 24.0, MAP.ZEPHRAS_ISLE },
+				lvl = 2,
 			}),
 			q(93735, {	-- The Broken Construct
 				["races"] = HORDE_ONLY,
@@ -732,20 +800,37 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 4,
 			}),
 			q(92463, {	-- The Cirrusfly Queen
-				["qg"] = 251368,	-- Elatrell Featherlight
-				["coord"] = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 2,
-				["groups"] = {
+				sourceQuest = 92462,	-- Infestation Investigation 
+				qg = 251368,	-- Elatrell Featherlight
+				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
+				lvl = 2,
+				groups = {
+					objective(1, {	-- 0/1 Cirrusfly Queen slain
+						provider = { "n", 251404 },	-- Cirrusfly Queen
+						coord = { 47.6, 28.9, MAP.ZEPHRAS_ISLE },
+					}),
 					i(263408),	-- Exterminator's Vest
 					i(263409),	-- Gardening Pants
 					i(263410),	-- Watchers Mail Chest
 				},
 			}),
 			q(92517, {	-- The Criminal Element
-				["qg"] = 251523,	-- Constable Aonda
-				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuests = {
+					93461,	-- Welcome to Shen'dar Village (A)
+					92514,	-- Welcome to Shen'dar Village (H)
+				},
+				qg = 251523,	-- Constable Aonda
+				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/10 Highlands Bandit slain
+						provider = { "n", 251918 },	-- Highlands Bandit
+						coord = { 49.4, 36.0, MAP.ZEPHRAS_ISLE },
+					}),
+					objective(2, {	-- 0/1 "Badwind" Bennic slain
+						provider = { "n", 255534 },	-- "Badwind" Bennic <Bandit Leader>
+						coord = { 50.7, 34.0, MAP.ZEPHRAS_ISLE },
+					}),
 					i(263421),	-- Bandit's Jerkin
 					i(263422),	-- Patchwork Leggings
 					i(263423),	-- Highlands Mail Legguards
@@ -801,10 +886,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
-			q(96101, {	-- The Great Outdoors
-				["qg"] = 263664,	-- Raan Wildwind
-				["coord"] = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 4,
+			q(96101, {	-- The Great Outdoors [Zephras Isle]
+				sourceQuest = 96638,	-- The Adventurer [Zephras Isle]
+				qg = 263664,	-- Raan Wildwind
+				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
+				lvl = 4,
 			}),
 			q(94006, {	-- The Great Ursera Spirit
 				["qg"] = 252359,	-- Lotheluum Starbreeze
@@ -819,10 +905,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 6,
 			}),
 			q(92596, {	-- The High Order
-				["races"] = ALLIANCE_ONLY,
-				["qg"] = 251903,	-- Rathiril Sunlance
-				["coord"] = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 4,
+				sourceQuest = 92472,	-- The Next Step
+				qg = 251903,	-- Rathiril Sunlance
+				coord = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
 			}),
 			q(92685, {	-- The Hills Have Eyes
 				["qg"] = 252800,	-- Aamelia Windfield
@@ -864,9 +951,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 4,
 			}),
 			q(92472, {	-- The Next Step
-				["qg"] = 251366,	-- Aetheen of the Gales
-				["coord"] = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
-				["lvl"] = 3,
+				sourceQuest = 92470,	-- Foul Matriarch
+				qg = 251366,	-- Aetheen of the Gales
+				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				lvl = 3,
 			}),
 			q(92515, {	-- The Problem With Prideclaws
 				["qg"] = 251993,	-- Indari Sunseam
@@ -1010,17 +1098,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(257255),	-- Highlands Defender's Shield
 				},
 			}),
-			q(92514, {	-- Welcome to Shen'dar Village
-				["qg"] = 251523,	-- Constable Aonda
-				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
+			q(93461, {	-- Welcome to Shen'dar Village (A)
+				qg = 251523,	-- Constable Aonda
+				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				races = ALLIANCE_ONLY,
+				lvl = 4,
 			}),
-			q(93461, {	-- Welcome to Shen'dar Village
-				["qg"] = 251523,	-- Constable Aonda
-				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 4,
+			q(92514, {	-- Welcome to Shen'dar Village (H)
+				qg = 251523,	-- Constable Aonda
+				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				races = HORDE_ONLY,
+				lvl = 4,
 			}),
 			q(93089, {	-- What Comes Next
 				["qg"] = 252476,	-- Talaanis Shadowsong
@@ -1213,6 +1301,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2117,	-- Thin Cloth Shoes
 				}},
 			}),
+			n(257020, {	-- Nasalanna Windsinger <Enchanter>
+				["coord"] = { 60.8, 44.2, MAP.ZEPHRAS_ISLE },
+				["groups"] = VANILLA_ENCHANTING_COMMON_RECIPES,
+			}),
+			n(251991, {	-- Taleen Shimmerthread <Tailor>
+				coord = { 77.3, 51.3, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(253665),	-- Pattern: Linen Reagent Bag (RECIPE!)
+					i(253668),	-- Pattern: Woolen Reagent Bag (RECIPE!)
+				},
+			}),
 			n(271480, {	-- Taliaa Brightsky
 				["coord"] = { 59.3, 76.2, MAP.ZEPHRAS_ISLE },
 				["groups"] = {
@@ -1227,9 +1326,32 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(277098),	-- Zephrali Vest
 				},
 			}),
+			n(257421, { -- Tephri Thriceforged <Weapon Merchant>
+				coord = { 44.8, 44.2, MAP.ZEPHRAS_ISLE },
+				sym = {{ "select", "itemID",
+					2131, -- Shortsword
+					1194, -- Bastard Sword
+					2134, -- Hand Axe
+					2479, -- Broad Axe
+					2130, -- Club
+					2480, -- Large Club
+					2139, -- Dirk
+					2132, -- Short Staff
+					2488, -- Gladius
+					2489, -- Two-handed Sword
+					2490, -- Tomahawk
+					2491, -- Large Axe
+					2492, -- Cudgel
+					2493, -- Wooden Mallet
+					2494, -- Stiletto
+					2495, -- Walking Stick
+					2506, -- Hornwood Recurve Bow
+					2507, -- Laminated Recurve Bow
+				}},
+			}),
 			n(254151, {	-- Vayn Moongaze
-				["coord"] = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
-				["groups"] = bubbleDownClassicRep(FACTION_NIGHTCLAW_DRUIDS, {
+				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
+				groups = bubbleDownClassicRep(FACTION_NIGHTCLAW_DRUIDS, {
 					{		-- Neutral
 					}, {	-- Friendly
 						i(276961),	-- Pattern: Azure Gustwoven Belt (RECIPE!)
@@ -1288,20 +1410,32 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					},
 				}),
 			}),
+			n(251905, {	-- Fimbo Greasemitz <Cook>
+				coord = { 43.9, 43.8, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+				},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(2057, {	-- Pitted Defias Shortsword
-				["cr"] = 251160,	-- Al'Aketh Convert
-				["coords"] = {
+				coords = {
 					{ 45.7, 18.7, MAP.ZEPHRAS_ISLE },
 					{ 47.0, 20.0, MAP.ZEPHRAS_ISLE },
 				},
+				cr = 251160,	-- Al'Aketh Convert
 			}),
 			i(251932, {	-- Sharpened Cirrusfly Stinger
-				["cr"] = 251402,	-- Cirrusfly Soldier
-				["coord"] = { 47.5, 27.7, MAP.ZEPHRAS_ISLE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				coord = { 47.5, 27.7, MAP.ZEPHRAS_ISLE },
+				cr = 251402,	-- Cirrusfly Soldier
 			}),
 		}),
 	},
+});
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(93463, {	-- Triggered when turning in 'The High Order', likely a shared quest flag for either faction having completed their initial introduction quest.
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });

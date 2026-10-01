@@ -14054,7 +14054,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Feed Ki'clak 5 snacks via completing the world quest ""Ki'clak Snack Attack"" in the Coiled Isle.","A Stack of Snacks","Pet: Ki'clak",63633,-1,-1,0,15547,0,5,131072,26,8032875,0,231415,0,0,0,0
 "Speak with Captain Tokka while The Coiled Huntress is equipped.","Where Did You Get That?",,63634,-1,-1,0,171,0,5,131072,104,7949493,0,231419,0,0,0,0
 "Prove your seaworthiness to Captain Tokka by completing the achievements below.","Tokka's Terrible Trials","Title: Bloodsworn Mariner",63635,-1,-1,0,171,0,10,131072,105,7816872,0,231421,0,0,0,0
-"Unlock every talent point at the Altar of Corrosion within the Vaults of Atal'Utek.","Fully Corroded","Title: The Snake",63636,-1,-1,0,15553,0,10,0,38,348565,0,231481,0,0,0,0
+"Unlock every talent point at the Altar of Corrosion within the Vaults of Atal'Utek.","Fully Corroded","Title: The Snake",63636,-1,-1,0,15553,0,10,131072,38,348565,0,231481,0,0,0,0
 "Conquer the Coiled Isle by completing the achievements below.","Ula'tek Uncoiled",,63639,-1,-1,0,15553,0,20,131072,19,7636668,0,231485,0,0,0,0
 "Explore the Coiled Isle, revealing the covered areas of the world map.","Explore the Coiled Isle",,63640,-1,-1,0,15553,0,10,131072,20,7488399,0,231502,0,0,0,0
 "Complete the optional Coiled Isle storylines listed below.","Snake Charmed, I'm Sure",,63641,-1,-1,0,15547,0,10,131072,5,8032874,0,231490,0,0,0,0
@@ -14098,16 +14098,16 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Logged in during WoW's 22nd Anniversary.","WoW's 22nd Anniversary",,63714,-1,-1,0,15274,0,0,2048,80,133783,0,232921,0,0,0,0
 "Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","Let Me Solo Him: Kindo'jan","Reward: Loa-Blessed Wayfarer",63715,-1,-1,0,15531,0,0,14336,24,8269989,0,232931,0,0,0,0
 "Defeat Kindo'jan within his Labyrinth.","The First Hash'ey","Title: Loa-Blessed",63716,-1,-1,0,15531,0,0,14336,13,3601564,0,232998,0,0,0,0
-"Find and open all Sturdy Chests hidden in Kindo'jan's Labyrinth.","Kindo'jan's Labyrinth Discoveries","Title: Treasure Hound",63717,-1,-1,0,15522,0,10,131200,40,4203076,0,233000,0,0,0,0
-"Open the locked door hidden within Kindo'jan's Labyrinth.","Lock and Key",,63718,-1,-1,0,15522,0,5,131072,33,134241,0,233049,0,0,0,0
-"Open the locked door hidden within Kindo'jan's Labyrinth 20 times.","Lock and Key Master","Title: Lockpickin'",63719,-1,-1,63718,15522,0,5,131200,34,134241,0,233055,0,0,0,0
+"Find and open all Sturdy Chests hidden in Kindo'jan's Labyrinth.","Kindo'jan's Labyrinth Discoveries","Title: Treasure Hound",63717,-1,-1,0,15522,0,10,131200,41,4203076,0,233000,0,0,0,0
+"Open the locked door hidden within Kindo'jan's Labyrinth.","Lock and Key",,63718,-1,-1,0,15522,0,5,131072,33,134241,0,235189,0,0,0,0
+"Open the locked door hidden within Kindo'jan's Labyrinth 20 times.","Lock and Key Master","Title: Lockpickin'",63719,-1,-1,63718,15522,0,5,131200,34,134241,0,235187,0,0,0,0
 "Gather all 3 Elemental Hexmasks while within Kindo'jan's Labyrinth.","Happy Hexmask Collector",,63720,-1,-1,0,15522,0,5,131072,35,135462,0,233073,0,0,0,0
 "Complete 9 Chambers within a single run of Kindo'jan's Labyrinth.","The Labyrinth of Kindo'jan",,63721,-1,-1,0,15522,0,5,131072,36,5212672,0,233077,0,0,0,0
-"Complete 9 Chambers within a single run of Kindo'jan's Labyrinth on Tier 11.","Whose Labyrinth?","Title: Maze Runner",63722,-1,-1,0,15522,0,10,0,37,1786405,0,233079,0,0,0,0
-"Complete a total of 100 Chambers within Kindo'jan's Labyrinth.","My Labyrinth",,63723,-1,-1,0,15522,0,10,131200,38,237388,0,233081,0,0,0,0
-"Enter Kindo'jan's Labyrinth for the first time.","Knock Knock",,63724,-1,-1,0,15522,0,5,131072,39,6025441,0,233092,0,0,0,0
-"Loot 10 Mislaid Oddities within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,41,7298691,0,233083,0,0,0,0
-"Loot 50 Mislaid Oddities within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,42,7298691,0,233090,0,0,0,0
+"Complete 9 Chambers within a single run of Kindo'jan's Labyrinth on Tier 11.","Whose Labyrinth?","Title: Maze Runner",63722,-1,-1,0,15522,0,10,0,38,1786405,0,233079,0,0,0,0
+"Complete a total of 100 Chambers within Kindo'jan's Labyrinth.","My Labyrinth",,63723,-1,-1,0,15522,0,10,131200,39,237388,0,233081,0,0,0,0
+"Enter Kindo'jan's Labyrinth for the first time.","Knock Knock",,63724,-1,-1,0,15522,0,5,131072,40,6025441,0,233092,0,0,0,0
+"Loot 10 Mislaid Oddities within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,42,7298691,0,233083,0,0,0,0
+"Loot 50 Mislaid Oddities within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,43,7298691,0,233090,0,0,0,0
 ,"Total Kindo'jan's Labyrinth Chambers completed",,63730,-1,-1,0,15533,0,0,1,18,136243,0,233094,0,0,0,0
 ,"Total Kindo'jan Kills",,63731,-1,-1,0,15533,0,0,1,19,136243,0,233096,0,0,0,0
 "Owner of the Sporebearer Fungal Strider mount, sold in Harandar during Midnight.","Fungal Not Frugal",,63830,-1,-1,0,15269,0,0,133120,73,8262534,0,233492,0,0,0,0
@@ -14137,4 +14137,5 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat Kith'ix in The Unbinding of Kith'ix on Normal difficulty or higher while in a guild group.","Kith'ix Guild Run",,64167,3095,-1,0,15570,0,10,61440,19,8214194,0,235020,0,0,0,0
 "Defeat Kith'ix in The Unbinding of Kith'ix on Heroic difficulty or higher while in a guild group.","Heroic: Kith'ix Guild Run",,64168,3095,-1,0,15570,0,10,61440,20,8214194,0,235022,0,0,0,0
 "Defeat Kith'ix in The Unbinding of Kith'ix on Mythic difficulty while in a guild group.","Mythic: Kith'ix Guild Run",,64169,3095,-1,0,15570,0,10,61440,21,8214194,0,235024,0,0,0,0
+"[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.","[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.",,64186,-1,-1,0,15522,0,5,1179648,37,136243,0,235115,0,0,0,0
 "Logged in during the 2026 BlizzCon celebration period.","BlizzCon 2026","Decor Reward: BlizzCon Doormat",63685,-1,-1,0,15274,0,0,134144,100,8198905,0,232154,0,0,0,0

@@ -842,6 +842,22 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
+				q(97583, {	-- WRIGGLE.
+					description = "Spam /dance at the excitable slimes that patrol around the Undercity.",
+					qg = 269452,	-- Excitable Slime
+					coords = {
+						{ 57.6, 63.4, MAP.UNDERCITY },
+						{ 64.6, 65.0, MAP.UNDERCITY },
+						{ 83.4, 45.4, MAP.UNDERCITY },
+						{ 74.6, 23.2, MAP.UNDERCITY },
+						{ 53.2, 29.4, MAP.UNDERCITY },
+					},
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					cost = {{ "i", 278265, 1 }},	-- Nutritious Slime Sludge
+					groups = {
+						i(275682),	-- Excitable Slime
+					},
+				}),
 			}),
 			n(TREASURES, {
 				o(180666, {	-- Draconic for Dummies
@@ -901,6 +917,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(15808),	-- Fine Light Crossbow
 						i(15809),	-- Heavy Crossbow
 						i(15807),	-- Light Crossbow
+					},
+				}),
+				n(4612, {	-- Boyle <Sludge Seller>
+					["coord"] = { 56.2, 64.6, MAP.UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(278265, {	-- Nutritious Slime Sludge
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				n(4569, {	-- Charles Seaton <Blade Merchant>

@@ -17,6 +17,7 @@ HeaderAssignments = {
 	["Alcaz Island"] = -386,
 	["All Roles"] = -311,
 	["Alliance"] = -210,
+	["Alliance Outrunners"] = -800,
 	["Allied Races"] = -6,
 	["Amani Endeavor"] = -762,
 	["Amateur Hunters"] = -395,
@@ -779,4 +780,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -800
+NextHeaderID = -801

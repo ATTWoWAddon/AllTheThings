@@ -12,7 +12,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			explorationHeader({
 				exploration(656),	-- Lake Elune'ara
+				exploration(493),	-- Moonglade
 				exploration(2361),	-- Nighthaven
+				exploration(2362),	-- Shrine of Remulos
 			}),
 			n(FLIGHT_PATHS, {
 				fp(49, {	-- Moonglade

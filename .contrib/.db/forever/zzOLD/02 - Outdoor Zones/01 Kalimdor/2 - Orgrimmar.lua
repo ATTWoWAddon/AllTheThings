@@ -1859,6 +1859,63 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(2465),	-- Studded Pants
 					},
 				}),
+				n(5812, {	-- Tumi <Heavy Armor Merchant>
+					["coord"] = { 82.4, 23.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2419),	-- Augmented Chain Belt
+						i(2420),	-- Augmented Chain Boots
+						i(2421),	-- Augmented Chain Bracers
+						i(2422),	-- Augmented Chain Gloves
+						i(3891),	-- Augmented Chain Helm
+						i(2418),	-- Augmented Chain Leggings
+						i(2417),	-- Augmented Chain Vest
+						i(847),	-- Chainmail Armor
+						i(1845),	-- Chainmail Belt
+						i(849),	-- Chainmail Boots
+						i(1846),	-- Chainmail Bracers
+						i(850),	-- Chainmail Gloves
+						i(848),	-- Chainmail Pants
+						i(2451),	-- Crested Heater Shield
+						i(62260),	-- Grunts Chain Belt
+						i(62261),	-- Grunts Chain Boots
+						i(62262),	-- Grunts Chain Bracers
+						i(62266),	-- Grunts Chain Circlet
+						i(62263),	-- Grunts Chain Gloves
+						i(62264),	-- Grunts Chain Leggings
+						i(62265),	-- Grunts Chain Vest
+						i(62253),	-- Grunts Plate Armor
+						i(62254),	-- Grunts Plate Belt
+						i(62255),	-- Grunts Plate Boots
+						i(62256),	-- Grunts Plate Bracers
+						i(62257),	-- Grunts Plate Gloves
+						i(62259),	-- Grunts Plate Helm
+						i(62258),	-- Grunts Plate Leggings
+						i(2448),	-- Heavy Pavise
+						i(2446),	-- Kite Shield
+						i(2392),	-- Light Mail Armor
+						i(2393),	-- Light Mail Belt
+						i(2395),	-- Light Mail Boots
+						i(2396),	-- Light Mail Bracers
+						i(2397),	-- Light Mail Gloves
+						i(2394),	-- Light Mail Leggings
+						i(17189),	-- Metal Buckler
+						i(17190),	-- Ornate Buckler
+						i(2148),	-- Polished Scale Belt
+						i(2149),	-- Polished Scale Boots
+						i(2150),	-- Polished Scale Bracers
+						i(2151),	-- Polished Scale Gloves
+						i(2152),	-- Polished Scale Leggings
+						i(2153),	-- Polished Scale Vest
+						i(17192),	-- Reinforced Targe
+						i(1853),	-- Scalemail Belt
+						i(287),	-- Scalemail Boots
+						i(1852),	-- Scalemail Bracers
+						i(718),	-- Scalemail Gloves
+						i(286),	-- Scalemail Pants
+						i(285),	-- Scalemail Vest
+					},
+				}),
 				n(3314, {	-- Urtharo <Weapon Merchant>
 					["coord"] = { 47.4, 68.6, MAP.ORGRIMMAR },
 					["races"] = HORDE_ONLY,

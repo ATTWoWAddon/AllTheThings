@@ -2383,6 +2383,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.2, 68.4, THE_HINTERLANDS },
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(13342, {	-- Pet Fish
+					["timeline"] = { ADDED_1_15_2 },
+					["cr"] = 221328,	-- Dreamwater Vicejaw
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",

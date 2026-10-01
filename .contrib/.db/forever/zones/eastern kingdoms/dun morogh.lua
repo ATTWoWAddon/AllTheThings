@@ -447,6 +447,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			exploration(212),	-- Helm's Bed Lake
 			exploration(211),	-- Iceflow Lake
 			exploration(716),	-- Ironband's Compound
+			exploration(1537),	-- Ironforge
 			exploration(131),	-- Kharanos
 			exploration(138),	-- Misty Pine Refuge
 			exploration(808),	-- North Gate Outpost

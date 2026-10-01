@@ -109188,7 +109188,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 217637,Vorasius,217635,1,0,109075,1,0
 217638,"Fallen-King Salhadaar",217635,1,0,109078,2,0
 217639,"Vaelgor & Ezzorak",217635,1,0,109082,3,0
-217640,"Lightblinded Vanguard",217635,1,0,109085,4,0
+217640,"Lightblinded Vanguard",217635,1,0,109086,4,0
 217641,"Crown of the Cosmos",217635,1,0,109090,5,0
 217642,"Heroic: March on Quel'Danas",0,0,4,0,0,0
 217643,"Belo'ren, Child of Al'ar",217642,1,0,109094,0,0
@@ -119273,7 +119273,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232434,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232435,"Stolen Artifacts collected",232434,10,0,113537,0,0
 232436,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232437,"Sullied Revenant slain",232436,1,0,117044,0,0
+232437,"Sullied Revenant slain",232436,1,0,117896,0,0
 232438,"12.1.5 Labyrinth - Chamber 3c - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232439,"Stolen Artifacts collected",232438,10,0,113537,0,0
 232440,"12.1.5 Labyrinth - Chamber 3c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
@@ -119440,7 +119440,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232986,"Run through and collect as much as you can before time runs out",232985,1,0,114903,0,0
 232998,"Defeat Kindo'jan within his Labyrinth.",0,0,4,0,0,0
 232999,,232998,0,0,117162,0,2
-233000,"Player Has Opened all Sturdy Chests in Kindo'jan's Labyrinth.",0,38,8,0,0,1
+233000,"Player Has Opened all Sturdy Chests in Kindo'jan's Labyrinth.",0,44,8,0,0,1
 233001,,233000,1,0,117163,0,2
 233002,,233000,1,0,117164,1,2
 233003,,233000,1,0,117165,2,2
@@ -119925,7 +119925,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235108,"True vessel found",235107,1,0,117036,0,0
 235109,"Vessel found 3c",0,0,4,0,0,0
 235110,"Vessel found",235109,1,0,117035,0,0
-13054,,0,0,4,0,0,0
+4834,,0,0,4,0,0,0
+235115,"Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.",0,0,4,0,0,0
+235116,,235115,0,0,118247,0,2
+235187,"Open 20 locked doors hidden within Kindo'jan's Labyrinth.",0,20,5,0,0,1
+235188,,235187,1,0,118290,0,2
+235190,,235189,1,0,118290,0,2
+235209,"12.1.5 Labyrinth - Intermission to End (No Boss) - TSH",0,0,4,0,0,0
+235210,"Speak to Kinduru to end your run",235209,1,0,118299,0,0
 207626,"12.0 Max Campaign - Ch 5 - Battle of the Bridge - Army Assembly - Signal Attack (KCO)",0,0,4,0,0,0
 207627,"Unnamed Branch",207626,0,4,0,0,0
 207628,"Speak to Arator",207627,0,0,103514,0,0
@@ -119985,7 +119992,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 2527,,0,0,4,0,0,0
 4712,,0,0,4,0,0,0
 4814,,0,0,4,0,0,0
-4834,,0,0,4,0,0,0
 5233,,0,0,4,0,0,0
 5236,,0,0,4,0,0,0
 6775,,0,0,4,0,0,0
@@ -119994,6 +120000,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10247,,0,0,4,0,0,0
 12350,,0,0,4,0,0,0
 12860,,0,0,4,0,0,0
+13054,,0,0,4,0,0,0
 13057,,0,0,4,0,0,0
 14117,,0,0,4,0,0,0
 14120,,0,0,4,0,0,0
@@ -120159,12 +120166,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8923,"Complete the cooking achievements listed below.",0,0,4,0,0,0
 7572,"Defeat the bosses in the Trial of the Champion on Heroic Difficulty.",0,0,4,0,0,0
 35949,"Explore Shadowmoon Valley, revealing the covered areas of the world map.",0,0,4,0,0,0
+89605,"Evade the Tarragrue",0,0,4,0,0,2
 10705,"Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",0,0,4,0,0,0
 7516,"Fight Thorim with Sif involved.",0,0,4,0,0,0
 7510,"Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",0,2,8,0,0,0
 7796,"Win Isle of Conquest while your team controls the Quarry and Oil Refinery.",0,0,4,0,0,0
 14932,"Defeat Heroic Faction Champions.",0,0,4,0,0,0
-85051,"Go to Northrend (H)",0,1,8,0,0,4096
 8449,"Complete the Pilgrim's Bounty achievements listed below.",0,0,4,0,0,0
 7697,"Defeat Heroic Beasts.",0,0,4,0,0,0
 10573,"Destroy the following vehicles in Isle of Conquest",0,0,4,0,0,0
@@ -120218,6 +120225,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18479,"Win 75 rated battlegrounds.",0,0,4,0,0,0
 20145,"Earn a battleground rating of 1100.",0,0,4,0,0,0
 16822,"Earn a battleground rating of 1500.",0,0,4,0,0,0
+40233,"Earned Gold Reward - Alliance",0,0,4,0,0,4096
 18290,"Win a Twin Peaks battle after being behind by a score of 0 to 2.",0,0,4,0,0,0
 20564,"Win 25 battles for Tol Barad.",0,0,4,0,0,0
 19607,"Earn exalted reputation with the classic battlegrounds listed below.",0,0,4,0,0,0
@@ -120281,6 +120289,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33926,"Seat and serve as many customers as you can in 5 minutes",0,0,4,0,0,0
 157389,"Seat and serve as many customers as you can in 5 minutes",0,0,4,0,0,0
 33883,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 15",0,1,8,0,0,0
+89601,"Evade the Tarragrue",0,0,4,0,0,2
 33918,"(H) End PvP season 14 in the top .5% of the rated battleground ladder.",0,0,4,0,0,0
 157385,"Get a score of at least 30,000",0,0,4,0,0,0
 34564,"Obtain Legendary Cloak 5.0 (Hidden Tracking)",0,0,4,0,0,0
@@ -120354,7 +120363,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 39849,"Achievement - Draenor Quest - Garrison Campaign - Alliance",0,0,4,0,0,0
 39832,"Achievement - Draenor Quest - Garrison Campaign - Horde",0,0,4,0,0,0
 39420,"Recruit Garrison Follower while in own Garrison - Horde",0,0,4,0,0,4096
-40233,"Earned Gold Reward - Alliance",0,0,4,0,0,4096
 40235,"Earn Gold Invasion - Horde",0,0,4,0,0,4096
 41531,"Defeat Remaining Shadowmoon Forces",0,0,4,0,0,0
 42563,"Complete The Real Big Race within 30 tolls.",0,1,8,0,0,0
@@ -120570,6 +120578,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 67030,"Defend Against Attackers",0,100,9,0,0,0
 67038,"Defend Against Attackers",0,100,9,0,0,0
 85067,"Go to Hellfire Peninsula (H)",0,1,8,0,0,4096
+85051,"Go to Northrend (H)",0,1,8,0,0,4096
 62847,"Travel to Stormwind",0,1,8,0,0,4096
 65221,"Travel to Stormwind",0,1,8,0,0,4096
 85064,"Go to Hellfire Peninsula (A)",0,1,8,0,0,4096
@@ -120923,8 +120932,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89589,"Evade the Tarragrue",0,0,4,0,0,2
 89593,"Evade the Tarragrue",0,0,4,0,0,2
 89597,"Evade the Tarragrue",0,0,4,0,0,2
-89601,"Evade the Tarragrue",0,0,4,0,0,2
-89605,"Evade the Tarragrue",0,0,4,0,0,2
 89609,"Evade the Tarragrue",0,0,4,0,0,2
 89613,"Evade the Tarragrue",0,0,4,0,0,2
 89617,"Evade the Tarragrue",0,0,4,0,0,2
@@ -121071,6 +121078,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85425,"Complete the Terrors in Tirna Scithe World Quest or the Mists of Tirna Scithe Dungeon.",0,1,8,0,0,4096
 85431,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
 85434,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
+90864,"Jailer's forces defeated",0,300,9,0,0,1
 85437,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
 85443,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85446,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
@@ -121139,7 +121147,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 90854,"Jailer's forces defeated",0,300,9,0,0,1
 90856,"Jailer's forces defeated",0,300,9,0,0,1
 90858,"Jailer's forces defeated",0,300,9,0,0,1
-90864,"Jailer's forces defeated",0,300,9,0,0,1
 90893,"Jailer's forces defeated",0,300,9,0,0,1
 90933,"Jailer's forces defeated",0,300,9,0,0,1
 90941,"Jailer's forces defeated",0,300,9,0,0,1
@@ -121418,11 +121425,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 152027,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152029,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152033,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
+168204,"Earthen Unlockable",0,1,4,0,0,0
 152035,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152037,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152039,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152041,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
-225554,"Battlegrounds won",0,2,5,0,0,4096
 152043,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152045,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152047,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
@@ -121484,11 +121491,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 219834,"Run Deephaul Ravine",0,0,4,0,0,4096
 162408,"Rare Creatures in Khaz Algar slain",0,4,5,0,0,4096
 168194,"Earthen Unlockable",0,1,4,0,0,0
-168204,"Earthen Unlockable",0,1,4,0,0,0
 163395,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
 169774,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
 206223,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
-205760,"11.2 - FF - Devourer Attack - 3 - Phase 1 (SMART)",0,0,4,0,0,4096
 163232,"Earn a 2600 personal rating in the 2v2 bracket of the arena in Season 38 (TWW 1)",0,0,4,0,0,0
 220407,"Complete the delves listed below on any difficulty.",0,0,4,0,0,0
 169781,"11.0 War Within - Legion - Bonus Event Weekend - Timewalking (Burning Crusade)",0,5,5,0,0,4096
@@ -121554,6 +121559,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 209873,"Add a Utility Curio to your collection",0,1,8,0,0,4096
 209802,"Equip a Combat Curio to your companion",0,1,8,0,0,4096
 209898,"Equip a Utility Curio to your companion",0,1,8,0,0,4096
+205760,"11.2 - FF - Devourer Attack - 3 - Phase 1 (SMART)",0,0,4,0,0,4096
 206003,"Achievement - Undermine - Wing 4",0,0,4,0,0,0
 206254,"11.1 Undermine - S&H - Weekly Cartel Chosen (KNF)",0,1,8,0,0,4096
 212394,"Delver's Cosmetic Surprise Bag purchased from Reno Jackson",0,0,4,0,0,6144
@@ -121621,7 +121627,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 210885,"Treasure goblins killed",0,1,4,0,0,1
 211355,"[DNT] Kill demons",0,100,5,0,0,4097
 211470,"Defeat Nexus-King Salhadaar inside Manaforge Omega on Normal difficulty or higher.",0,0,4,0,0,4096
-225552,"Battlegrounds won",0,2,5,0,0,4096
 211480,"Defeat Nexus-King Salhadaar inside Manaforge Omega on Normal difficulty or higher.",0,0,4,0,0,4096
 211449,"[DNT] Boss killed",0,0,4,0,0,4096
 211447,"[DNT] Enemies Slain",0,15,5,0,0,4096
@@ -121757,6 +121762,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225538,"Complete 3 World Quests in the Coiled Isle",0,3,5,0,0,4096
 225807,"Complete 3 World Quests in the Coiled Isle",0,3,5,0,0,4096
 225809,"Complete 3 World Quests in the Coiled Isle",0,3,5,0,0,4096
+225552,"Battlegrounds won",0,2,5,0,0,4096
+225554,"Battlegrounds won",0,2,5,0,0,4096
 225556,"Battlegrounds won",0,2,5,0,0,4096
 231550,"Battlegrounds won",0,2,5,0,0,4096
 227964,"Complete an Umbral Strike",0,3,5,0,0,4096
@@ -121800,6 +121807,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232317,"Burden carried",0,0,4,0,0,0
 232362,"Achievement - Keystone Myth: Midnight Dungeons Season 2",0,0,4,0,0,0
 234379,"Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party, before the end of Midnight Season 2.",0,0,4,0,0,0
+235189,"Open the locked door hidden within Kindo'jan's Labyrinth.",0,1,8,0,0,0
 233468,"12.1.5 Labyrinth - Chamber 4 - Speak to Kinduru (BAK)",0,0,4,0,0,0
 234332,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
 234334,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096

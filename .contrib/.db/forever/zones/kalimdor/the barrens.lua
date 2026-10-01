@@ -2632,7 +2632,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 		}),
 		n(RARES, {
-			n(5797, {	-- Aean Swiftriver <Alliance Outrunner>
+			n(THE_BARRENS_ALLIANCE_OUTRUNNERS, {	-- Alliance Outrunners
 				["coords"] = {
 					{ 45.6, 41.2, MAP.THE_BARRENS },
 					{ 48.8, 42.6, MAP.THE_BARRENS },
@@ -2653,13 +2653,28 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 46.0, 45.6, MAP.THE_BARRENS },
 				},
 				["races"] = HORDE_ONLY,
-				["crs"] = {
-					5799,	-- Hannah Bladeleaf <Alliance Outrunner>
-					5800,	-- Marcus Bel <Alliance Outrunner>
-					5798,	-- Thora Feathermoon <Alliance Outrunner>
-				},
 				["groups"] = {
-					i(10621),	-- Runed Scroll
+					n(5797, {	-- Aean Swiftriver <Alliance Outrunner>
+						i(285347, {	-- Alliance Outrunner Bow
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(10621),	-- Runed Scroll (QS!)
+					}),
+					n(5799, {	-- Hannah Bladeleaf <Alliance Outrunner>
+						i(285348, {	-- Alliance Outrunner Healing Rod
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+					}),
+					n(5800, {	-- Marcus Bel <Alliance Outrunner>
+						i(285350, {	-- Alliance Outrunner Staff
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+					}),
+					n(5798, {	-- Thora Feathermoon <Alliance Outrunner>
+						i(285346, {	-- Alliance Outrunner's Sword
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+					}),
 				},
 			}),
 			n(5834, {	-- Azzere the Skyblade

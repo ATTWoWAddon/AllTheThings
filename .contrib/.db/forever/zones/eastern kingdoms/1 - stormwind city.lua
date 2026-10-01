@@ -1828,7 +1828,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 		}),
 		n(RARES, {
 			n(3581, {	-- Sewer Beast
-				["coords"] = {
+				coords = {
 					{ 49.8, 22.6, MAP.STORMWIND_CITY },
 					{ 53.8, 30.6, MAP.STORMWIND_CITY },
 					{ 66.8, 32.2, MAP.STORMWIND_CITY },
@@ -1841,6 +1841,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					{ 34.2, 60.2, MAP.STORMWIND_CITY },
 					{ 50.0, 69.6, MAP.STORMWIND_CITY },
 					{ 47.2, 61.6, MAP.STORMWIND_CITY },
+				},
+				groups = {
+					i(282047, {	-- Baby Crocolisk
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 		}),

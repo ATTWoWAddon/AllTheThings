@@ -934,7 +934,8 @@ i(6532,{description="Can be bought from Fishing Suppliers, as well as some Trade
 s(158396,6256,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=57}),
 i(6530,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,requireSkill=356,spellID=8088}),
 i(6529,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,spellID=8087}),
-s(158431,6365,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=57,isLimited=1,learnedAt=10,lvl=5,requireSkill=356})}),
+s(158431,6365,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=57,isLimited=1,learnedAt=10,lvl=5,requireSkill=356}),
+i(273636,{awp=16001,description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",learnedAt=275,lvl=35,requireSkill=356,spellID=1292332})}),
 flt(23,{
 s(158428,6360,{description="Can be caught in open water in the given zones.",f=23,lvl=20,maps_disp={1424,1437,1440}})}),
 flt(52,{

@@ -99,41 +99,45 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				["lvl"] = 10,
 			}),
 			q(136, {	-- Captain Sanders' Hidden Treasure (1/4)
-				["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map (QS!)
+				["qs"] = 1357,	-- Captain Sanders' Treasure Map (QS!)
 				["lvl"] = 10,
 			}),
 			q(138, {	-- Captain Sanders' Hidden Treasure (2/4)
 				["sourceQuest"] = 136,	-- Captain Sanders' Hidden Treasure (1/4)
-				["providers"] = {
-					{ "o",   35 },	-- Captain's Footlocker
-					{ "i", 1358 },	-- A Clue to Sander's Treasure (PQI!)
-				},
+				["provider"] = { "o", 35 },	-- Captain's Footlocker
+				["qi"] = 1358,	-- A Clue to Sander's Treasure (PQI!)
 				["coord"] = { 25.9, 47.77, MAP.WESTFALL },
 				["lvl"] = 10,
 			}),
 			q(139, {	-- Captain Sanders' Hidden Treasure (3/4)
 				["sourceQuest"] = 138,	-- Captain Sanders' Hidden Treasure (2/4)
-				["providers"] = {
-					{ "o",   36 },	-- Broken Barrel
-					{ "i", 1361 },	-- Another Clue to Sander's Treasure (PQI!)
-				},
+				["provider"] = { "o", 36 },	-- Broken Barrel
+				["qi"] = 1361,	-- Another Clue to Sander's Treasure (PQI!)
 				["coord"] = { 40.50, 47.82, MAP.WESTFALL },
 				["lvl"] = 10,
 			}),
 			q(140, {	-- Captain Sanders' Hidden Treasure (4/4)
 				["sourceQuest"] = 139,	-- Captain Sanders' Hidden Treasure (3/4)
 				["providers"] = {
-					{ "o",   34 },	-- Old Jug
-					{ "i", 1362 },	-- Final Clue to Sanders' Treasure (PQI!)
-					{ "o",   33 },	-- Locked Chest
+					{ "o", 34 },	-- Old Jug
+					{ "o", 33 },	-- Locked Chest
 				},
+				["qi"] = 1362,	-- Final Clue to Sanders' Treasure (PQI!)
 				["coords"] = {
 					{ 40.62, 17.01, MAP.WESTFALL },
 					{ 25.97, 16.90, MAP.WESTFALL },
 				},
 				["lvl"] = 10,
 				["groups"] = {
-					i(3343),	-- Captain Sanders' Booty Bag
+					i(270257, {	-- Captain Sander's Locker
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						groups = {
+							i(270001),	-- Rusty Cutlass
+							i(276694),	-- Captain Sander's Lucky Shooter
+							i(270002),	-- Midshipman's Worn Boots
+							i(3343),	-- Captain Sanders' Booty Bag
+						},
+					}),
 					i(3344),	-- Captain Sanders' Sash
 					i(3342),	-- Captain Sanders' Shirt
 					i(2842),	-- Silver Bar

@@ -3,10 +3,6 @@
 .contrib/.tools/log.txt
 .contrib/Harvesters/RAW/
 .contrib/Harvesters/*.json
-.contrib/Parser/Parser.exe.config
-.contrib/Parser/Parser.pdb
-.contrib/Parser/Parser V2.exe.config
-.contrib/Parser/Parser V2.pdb
 .contrib/Debugging/
 .contrib/Harvesters/DBs/
 .contrib/Harvesters/*.log
@@ -14,7 +10,6 @@
 .contrib/Harvesters/System.Net.Http.Formatting.xml
 .contrib/Harvesters/Blizzard API Harvester.pdb
 .contrib/Harvesters/Blizzard API Harvester.exe.config
-.contrib/Parser/DATAS/89 - Extra/
 .contrib/Source Code/Parser/.vs/
 .contrib/Source Code/ATT/bin
 .contrib/Source Code/Parser/obj/
@@ -23,8 +18,6 @@
 .contrib/Source Code/Parser/packages/
 .contrib/Harvesters/API.key
 .contrib/Harvesters/Client.key
-.contrib/Parser/ATT.pdb
-.contrib/Parser/*.txt
 .contrib/Source Code/Blizzard API Harvester/bin/
 .contrib/Source Code/Classic Item Detector/bin/
 .contrib/.wago/Debug/*

@@ -511,9 +511,3 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-	inst(233, {
-		q(35598),	-- Razorfen Downs Reward Quest - Normal completion
-	}),
-})));

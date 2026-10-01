@@ -151,9 +151,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						providers = {
 							{ "i", 280839 },	-- Stolen Supplies (QI!)
 							{ "o", 673384 },	-- Water Barrel
+							{ "o", 673385 },	-- Grain Sack
+							{ "o", 673399 },	-- Meat Haunch
 						},
 						coords = {
 							{ 66.1, 73.6, MAP.REDRIDGE_MOUNTAINS },
+							{ 69.4, 79.5, MAP.REDRIDGE_MOUNTAINS },
 						},
 					}),
 					objective(2, {	-- 0/8 Stolen Weapon
@@ -278,15 +281,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			q(248, {	-- Looking Further
-				["sourceQuest"] = 94,	-- A Watchful Eye
-				["providers"] = {
+				sourceQuest = 94,	-- A Watchful Eye
+				providers = {
 					{ "o",   31 },	-- Old Lion Statue
 					{ "i", 1083 },	-- Glyph of Azora (QI!)
 					{ "o",   76 },	-- An Empty Jar
 				},
-				["coord"] = { 84.3, 46.9, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
+				coord = { 79.2, 46.7, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
 			}),
 			q(145, {	-- Messenger to Darkshire (1/2)
 				sourceQuest = 144,	-- Messenger to Westfall (2/2)
@@ -336,33 +339,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				lvl = 14,
 			}),
 			q(219, {	-- Missing In Action
-				["qg"] = 349,	-- Corporal Keeshan
-				["coord"] = { 28.4, 12.6, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 19,
-				["groups"] = {
+				qg = 349,	-- Corporal Keeshan
+				coord = { 23.4, 12.6, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				lvl = 19,
+				groups = {
 					i(3555),	-- Robe of Solomon
 					i(1275),	-- Deputy Chain Coat
 					i(3431),	-- Bone-studded Leather
 				},
 			}),
 			q(249, {	-- Morganth
-				["sourceQuest"] = 248,	-- Looking Further
-				["providers"] = {
+				sourceQuest = 248,	-- Looking Further
+				providers = {
 					{ "o",  31 },	-- Old Lion Statue
 					{ "n", 313 },	-- Theocritus <Mage of Tower Azora>
 				},
-				["coords"] = {
-					{ 84.5, 47.1, MAP.REDRIDGE_MOUNTAINS },
+				coords = {
+					{ 79.2, 46.7, MAP.REDRIDGE_MOUNTAINS },
 					{ 65.2, 69.8, MAP.ELWYNN_FOREST },
 				},
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
 					objective(1, {	-- 0/1 Pendant of Shadow
-						["provider"] = { "i", 3617 },	-- Pendant of Shadow (QI!)
-						["coord"] = { 80.0, 49.0, MAP.REDRIDGE_MOUNTAINS },
-						["cr"] = 397,	-- Morganth
+						provider = { "i", 3617 },	-- Pendant of Shadow (QI!)
+						coord = { 75.0, 49.0, MAP.REDRIDGE_MOUNTAINS },
+						cr = 397,	-- Morganth
 					}),
 					i(5274),	-- Rose Mantle
 				},
@@ -915,9 +918,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				}),
 			}),
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
-				["coord"] = { 88.2, 71.6, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
 					}),
@@ -930,9 +933,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			n(3096, {	-- Captured Servant of Azora <Specialist Tailoring Supplies>
-				["coord"] = { 74.5, 79.6, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 69.4, 79.5, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(4790, {	-- Inferno Cloak
 						isLimited = true,
 					}),
@@ -945,9 +948,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			n(2697, {	-- Clyde Ranthal <Leatherworking Supplies>
-				["coord"] = { 89.0, 70.2, MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 83.9, 70.9, MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(7289, {	-- Pattern: Black Whelp Cloak (RECIPE!)
 						isLimited = true,
 					}),

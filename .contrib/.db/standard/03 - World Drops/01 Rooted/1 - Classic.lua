@@ -2909,6 +2909,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(5214),	-- Wand of Eventide
 			i(15280),	-- Wizard's Hand
 		}),
+		filter(THROWN, {
+			i(5379),	-- Boot Knife
+		}),
 	}),
 	filter(SHIELDS, {
 		i(1203),	-- Aegis of Stormwind

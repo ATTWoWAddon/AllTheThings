@@ -353,8 +353,7 @@ q(57193),
 q(57408)}}),
 x(8.0205,{awp=80205,g={
 q(57550),
-q(57640,{description="Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",lvl=10,maps={1537},qgs={13151}}),
-q(57697)}}),
+q(57640,{description="Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",lvl=10,maps={1537},qgs={13151}})}}),
 x(8.03,{awp=80300,g={
 q(58576),
 q(59038),

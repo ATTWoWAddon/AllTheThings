@@ -3042,6 +3042,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_8_0_1 },
 				}),
 			}),
+			n(TREASURES, {
+				o(19861, {	-- Henrig Lonebrow's Journal
+					["coord"] = { 30.0, 24.0, THOUSAND_NEEDLES },
+					["timeline"] = { REMOVED_4_0_3 },
+					["groups"] = {
+						i(5791),	-- Henrig Lonebrow's Journal (QS!)
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(4877, {	-- Jandia <Trade Supplies>
 					["coord"] = { 46.0, 51.6, THOUSAND_NEEDLES },

@@ -3843,7 +3843,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(RARES, {
-				n(5797, {	-- Aean Swiftriver <Alliance Outrunner>
+				n(THE_BARRENS_ALLIANCE_OUTRUNNERS, {	-- Alliance Outrunners
 					-- #if BEFORE CATA
 					["coords"] = {
 						{ 45.6, 41.2, THE_BARRENS },
@@ -3867,15 +3867,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["crs"] = {
-						5799,	-- Hannah Bladeleaf <Alliance Outrunner>
-						5800,	-- Marcus Bel <Alliance Outrunner>
-						5798,	-- Thora Feathermoon <Alliance Outrunner>
-					},
 					["groups"] = {
-						i(10621, {	-- Runed Scroll
-							["timeline"] = { REMOVED_4_0_3 },
+						n(5797, {	-- Aean Swiftriver <Alliance Outrunner>
+							i(10621),	-- Runed Scroll (QS!)
 						}),
+						n(5799),	-- Hannah Bladeleaf <Alliance Outrunner>
+						n(5800),	-- Marcus Bel <Alliance Outrunner>
+						n(5798),	-- Thora Feathermoon <Alliance Outrunner>
 					},
 				}),
 				n(5834, {	-- Azzere the Skyblade

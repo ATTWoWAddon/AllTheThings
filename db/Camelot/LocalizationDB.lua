@@ -1213,6 +1213,7 @@ _.CategoryIcons = {
 -- Custom Header Database Module
 _.HeaderConstants = {
 	ACHIEVEMENTS = -12,
+	BLACK_MARKET_AUCTION_HOUSE = -554,
 	CHARACTER = -731,
 	CHILDRENS_WEEK_HEADER = -559,
 	COMMON_BOSS_DROPS = -19,
@@ -1325,6 +1326,7 @@ localize(L.HEADER_NAMES, {
 	[-366] = "Service Entrance",
 	[-367] = "Atal'ai Defenders",
 	[-388] = C_Map.GetAreaInfo(1769),
+	[-554] = BLACK_MARKET_AUCTION_HOUSE,
 	[-559] = "Children's Week",
 	[-574] = "Feast of Winter Veil",
 	[-576] = "Hallow's End",
@@ -1349,6 +1351,7 @@ localize(L.HEADER_NAMES, {
 	[-735] = EXPANSION_FILTER_TEXT,
 	[-796] = "Starter Gear",
 	[-799] = "Library Books",
+	[-800] = "Alliance Outrunners",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1368,9 +1371,11 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-365] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	[-366] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	[-367] = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
+	[-554] = "Instead of buying items from other players like the regular Auction House, items on the Black Market are generated and listed by NPCs. The items are listed for one day only. The items for sale vary from items that were difficulty to acquire to TCG items that have no other source. All items are listed infrequently, so it should not be seen as a reliable way to farm rarities.",
 	[-721] = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 	[-735] = "This section is for systems introduced during an expansion that involve several zones.\nIf an expansion feature is exclusive to a single zone, then it can be found within that zone in ATT, otherwise for the sake of reducing database duplication and bloat, it can be found below.",
 	[-796] = "The following contains gear that can be acquired by creating a brand new character of a given class and race.",
+	[-800] = "The outrunners patrol all over the Barrens as a group terrorizing Horde players that get too close.",
 })
 localize(L.HEADER_LORE, {
 	[-318] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
@@ -1443,6 +1448,7 @@ localize(L.HEADER_ICONS, {
 	[-366] = 134247,
 	[-367] = 134177,
 	[-388] = 236696,
+	[-554] = _.asset("category_blackmarket"),
 	[-559] = _.asset("holiday_children"),
 	[-574] = _.asset("holiday_winter_veil"),
 	[-576] = _.asset("holiday_hallows_end"),
@@ -1467,6 +1473,7 @@ localize(L.HEADER_ICONS, {
 	[-735] = _.asset("category_expansionfeatures"),
 	[-796] = 135018,
 	[-799] = 133739,
+	[-800] = 236449,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

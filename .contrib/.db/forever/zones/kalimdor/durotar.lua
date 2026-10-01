@@ -1220,6 +1220,17 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ 43.8, 50.0, MAP.DUROTAR },
 				},
 			}),
+			n(276198, {	-- Shal'ma
+				coords = {
+					{ 69.0, 71.6, MAP.DUROTAR },
+					{ 60.6, 89.6, MAP.DUROTAR },
+					{ 63.6, 95.6, MAP.DUROTAR },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286746),	-- Shal'ma's Shawl
+				},
+			}),
 			n(5808, {	-- Warlord Kolkanis
 				["coords"] = {
 					{ 46.6, 79.8, MAP.DUROTAR },
