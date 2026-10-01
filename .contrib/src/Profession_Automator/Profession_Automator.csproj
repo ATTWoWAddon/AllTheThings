@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="KeraLua" Version="1.2.13" />
-    <PackageReference Include="NLua" Version="1.4.1" />
+    <PackageReference Include="NLua" Version="1.5.7" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
