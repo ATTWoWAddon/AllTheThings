@@ -249,6 +249,7 @@ namespace Profession_Automator
                         break;
                     }
                     case "System.Boolean":
+                    case "System.Int64":
                     case "System.Double":
                     case "System.String":
                     {
