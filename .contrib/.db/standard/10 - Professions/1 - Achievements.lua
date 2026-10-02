@@ -30,19 +30,6 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 		ach(17410, {	-- Craftsman of the Zandalar Tribe
 			["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
 		}),
-		ach(18778, {	-- Massive Toolshed					-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18775,	-- Iwen's Enchanting Rod
-				18773,	-- Jewelhammer's Focus
-				18771,	-- Khaz'gorian Smithing Hammer
-				18777,	-- Mallet of Thunderous Skins
-				18772,	-- Sanguine Feather Quill of Lana'thel
-				18770,	-- Silas' Sphere of Transmutation
-				18774,	-- Synchronous Thread
-				18776,	-- The Ub3r-Spanner
-			}},
-			["timeline"] = { ADDED_10_1_7 },
-		}),
 		ach(18898, sharedDataSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- That's Just Cruel
 			crit(61656, {	-- Nefarian Defeated
 				["providers"] = {
