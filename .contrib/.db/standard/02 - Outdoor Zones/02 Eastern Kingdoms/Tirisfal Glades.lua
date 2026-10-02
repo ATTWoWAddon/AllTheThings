@@ -2215,6 +2215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER CATA
 				q(6323, {	-- Ride to the Undercity
+                    ["timeline"] = { ADDED_1_11_1 },
 					["sourceQuest"] = 6321,	-- Supplying Brill [CATA+] / Supplying the Sepulcher
 					["qg"] = 43124,	-- Anette Williams
 					["coord"] = { 58.8, 51.8, TIRISFAL_GLADES },
@@ -2260,6 +2261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER CATA
 				q(6321, {	-- Supplying Brill [CATA+] / Supplying the Sepulcher
+                    ["timeline"] = { ADDED_1_11_1 },
 					["qg"] = 1745,	-- Deathguard Morris
 					["qi"] = 16209,	-- Morris's Order
 					["coord"] = { 60.2, 52.4, TIRISFAL_GLADES },

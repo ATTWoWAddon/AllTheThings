@@ -7,10 +7,12 @@ root(ROOTS.Character, {
 	},{
 		-- CRIEVE NOTE: It is actually possible to max this out over several years.
 		faction(469, {	-- Alliance
+            ["timeline"] = { ADDED_1_0_1 },
 			["icon"] = 374217,
 			["races"] = ALLIANCE_ONLY,
 		}),
 		faction(67, {	-- Horde
+            ["timeline"] = { ADDED_1_0_1 },
 			["icon"] = 374221,
 			["races"] = HORDE_ONLY,
 		}),

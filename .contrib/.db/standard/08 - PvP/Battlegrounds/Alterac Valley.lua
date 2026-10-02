@@ -23,6 +23,7 @@ local REMOVED_WITH_ANNIVERSARY_15 = REMOVED_8_2_5;	-- TODO: potentially all of t
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
+        ["timeline"] = { ADDED_1_11_1 },
 		["lore"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
 		-- #if AFTER WRATH
 		["icon"] = 236388,

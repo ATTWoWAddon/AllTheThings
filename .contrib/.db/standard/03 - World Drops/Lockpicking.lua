@@ -64,6 +64,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(16882, {	-- Battered Junkbox
+                ["timeline"] = { ADDED_1_11_1 },
 				["groups"] = {
 					i(4446),	-- Blackvenom Blade
 					i(2567),	-- Evocator's Blade

@@ -23,9 +23,11 @@ root(ROOTS.Character, n(LEGENDARIES, {
 		["classes"] = { ROGUE }
 	}),
 	i(186414, {	-- Rae'shalare, Death's Whisper
+        ["timeline"] = { ADDED_9_1_0 },
 		["classes"] = { HUNTER },
 	}),
 	i(49623, {	-- Shadowmourne
+        ["timeline"] = { ADDED_3_3_0 },
 		["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
 	}),
 	i(17182, {	-- Sulfuras
@@ -33,6 +35,7 @@ root(ROOTS.Character, n(LEGENDARIES, {
 	}),
 	i(19019),	-- Thunderfury
 	i(34334, {	-- Thori'dal, the Stars' Fury
+        ["timeline"] = { ADDED_2_4_2 },
 		["classes"] = { WARRIOR, HUNTER, ROGUE }
 	}),
 	i(77950, {	-- Tiriosh, Nightmare of Ages
