@@ -485,6 +485,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					},
 				}),
 				q(65601, {	-- Love Hurts
+					["sourceQuest"] = 1507,
 					["qg"] = 5909,	-- Cazul
 					["coord"] = { 47.2, 46.6, MAP.ORGRIMMAR },
 					["classes"] = { WARLOCK },

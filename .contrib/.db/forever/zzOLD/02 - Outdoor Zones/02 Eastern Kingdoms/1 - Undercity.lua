@@ -355,6 +355,7 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(65593, {	-- Hearts of the Lovers
+					["sourceQuest"] = 1472,
 					["altQuests"] = { 65610 },	-- Wish You Were Here
 					["qg"] = 5675,	-- Carendin Halgar
 					["coord"] = { 85.0, 25.6, MAP.UNDERCITY },
@@ -843,6 +844,8 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(97583, {	-- WRIGGLE.
+					["lvl"] = 1,
+					["races"] = HORDE_ONLY,
 					description = "Spam /dance at the excitable slimes that patrol around the Undercity.",
 					qg = 269452,	-- Excitable Slime
 					coords = {

@@ -671,6 +671,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						provider = { "i", 277198 },	-- Gatehouse Shipment
 						coord = { 66.4, 74.8, MAP.STORMWIND_CITY },
 					}),
+					i(414),	-- Dalaran Sharp
 				},
 			}),
 			q(1921, {	-- Gathering Materials
@@ -1169,6 +1170,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						coord = { 76.3, 29.2, MAP.STORMWIND_CITY },
 					}),
 					i(20709),	-- Rumsey Rum Light
+					i(1179),	-- Ice Cold Milk
 				},
 			}),
 			q(2206, {	-- Snatch and Grab
@@ -1743,6 +1745,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(65602, {	-- What Is Love?
+				["sourceQuest"] = 1716,
 				["qg"] = 6122,	-- Gakin the Darkbinder
 				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
 				["maps"] = { MAP.ASHENVALE },

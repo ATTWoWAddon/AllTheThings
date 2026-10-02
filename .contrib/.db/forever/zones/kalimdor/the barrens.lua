@@ -1999,6 +1999,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					i(3334),	-- Farmer's Shovel
 					i(221498),	-- Sturdy Lunchbox
+					i(1652),	-- Sturdy Lunchbox
+					i(2901),	-- Mining Pick
+					i(4470),	-- Simple Wood
+					i(4471),	-- Flint and Tinder
 				},
 			}),
 			q(888, {	-- Stolen Booty

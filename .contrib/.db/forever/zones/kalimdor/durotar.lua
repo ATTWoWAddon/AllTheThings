@@ -284,6 +284,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						},
 					}),
 					q(96652, {	-- The Adventurer [Durotar]
+						["provider"] = { "o", 654925 },
+						["coord"] = { 42.82, 69.14, MAP.DUROTAR },
 						--["sourceQuest"] = ,	-- 
 						--["provider"] = { "o", 654925 },	--
 						["qi"] = 275022,	-- Lost Journal (PQI!)

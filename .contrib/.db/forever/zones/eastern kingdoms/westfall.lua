@@ -79,6 +79,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(92110, {	-- My First Real Potion
+				["races"] = ALLIANCE_ONLY,
 				qg = 249713,	-- Odd Child
 				coord = { 41., 79.0, MAP.WESTFALL },
 				timeline = { TIMELINE.ADDED_1_60_1 },

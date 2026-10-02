@@ -436,6 +436,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(86776, {	-- Ingredients for the Forge
+				["groups"] = {
+					i(3576),	-- Tin Bar
+				},
+				["races"] = ALLIANCE_ONLY,
 				-- CRIEVE NOTE: This might be a mining exclusive quest
 				qg = 167,	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, LOCH_MODAN },
@@ -545,6 +549,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				["lvl"] = 10,
 			}),
 			q(86667, {	-- Snowbound
+				["races"] = ALLIANCE_ONLY,
 				qg = 49808,	-- Grenhild Darktalon
 				coord = { 36.4, 48.2, LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },

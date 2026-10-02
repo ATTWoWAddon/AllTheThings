@@ -75,6 +75,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["classes"] = { HUNTER },
 					}),
 					q(97236, {	-- Fang of Githyiss
+						["lvl"] = 1,
 						["provider"] = { "i", 277190 },	-- Fang of Githyiss
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 						["races"] = ALLIANCE_ONLY,
@@ -138,6 +139,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97977, {	-- Nature's Call
+						["lvl"] = 1,
 						["qg"] = 1992,	-- Tarindrella
 						["coord"] = { 57.8, 45.0, MAP.TELDRASSIL },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },
@@ -188,6 +190,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(96630, {	-- The Adventurer [Teldrassil]
+						["provider"] = { "o", 654846 },
+						["coord"] = { 59.1, 39.49, MAP.TELDRASSIL },
 						--["sourceQuest"] = ,	-- 
 						--["provider"] = { "o", 654846 },	-- Quest starts from a book on a table behind Tenaron Stormgrip at the top of Aldrassil in Shadowglen.
 						["qi"] = 275022,	-- Lost Journal (PQI!)
@@ -228,6 +232,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97979, {	-- The Goddess Provides
+						["lvl"] = 1,
 						["qg"] = 3595,	-- Shanda <Priest Trainer>
 						["coord"] = { 59.2, 40.4, MAP.TELDRASSIL },
 						["timeline"] = { TIMELINE.ADDED_1_60_1 },

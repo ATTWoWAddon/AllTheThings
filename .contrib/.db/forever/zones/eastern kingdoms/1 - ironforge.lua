@@ -335,6 +335,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			q(95041, {	-- Data Hoaders
+				["lvl"] = 7,
 				["qg"] = 11028,	-- Jemma Quikswitch
 				["coord"] = { 67.7, 44.2, MAP.IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
@@ -892,6 +893,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			q(97263, {	-- Your Package Has Arrived
+				["lvl"] = 1,
 				["provider"] = { "o", 660964 },	-- Misplaced Packages
 				["qi"] = 277505,	-- Misplaced Package
 				["coord"] = { 72.6, 48.5, MAP.IRONFORGE },

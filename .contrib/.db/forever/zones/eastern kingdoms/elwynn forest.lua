@@ -23,6 +23,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						races = ALLIANCE_ONLY,
 					}),
 					q(92124, {	-- Book Inventory
+						["lvl"] = 1,
 						sourceQuest = 91741,	-- Nibbled on Book
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
@@ -87,6 +88,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						classes = { ROGUE },
 					}),
 					q(91758, {	-- Follow That Kobold!
+						["lvl"] = 1,
 						sourceQuest = 91752,	-- The Big Picture
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
@@ -180,6 +182,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					q(91745, {	-- Mining Consultant
+						["lvl"] = 1,
 						sourceQuest = 91743,	-- Rascally Rodents
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
@@ -188,6 +191,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
 					q(91741, {	-- Nibbled on Book
+						["lvl"] = 1,
 						qs = 247834,	-- Nibbled on Book (QS!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
@@ -196,6 +200,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					q(91743, {	-- Rascally Rodents
+						["lvl"] = 1,
 						sourceQuest = 92124,	-- Book Inventory
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
@@ -241,6 +246,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					q(91772, {	-- Shhh! We're Hunting Kobolds
+						["lvl"] = 1,
 						sourceQuest = 91758,	-- Follow That Kobold!
 						qg = 248415,	-- Tordrin Sternblade
 						qi = 247970,	-- Kobold Tracking Kit (PQI!)
@@ -292,6 +298,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						lvl = 4,
 					}),
 					q(91752, {	-- The Big Picture
+						["lvl"] = 1,
 						sourceQuest = 91745,	-- Mining Consultant
 						qg = 247226,	-- Kelsey Fargo
 						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
@@ -479,6 +486,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(91738, {	-- An Apple Treat
+				["races"] = ALLIANCE_ONLY,
 				sourceQuest = 91736,	-- Applejack Still
 				qg = 955,	-- Sergeant De Vries <Morale Officer>
 				coord = { 24.0, 73.0, MAP.ELWYNN_FOREST },
@@ -536,6 +544,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(91736, {	-- Applejack Still
+				["races"] = ALLIANCE_ONLY,
 				provider = { "o", 562131 },	-- Applejack Still
 				coord = { 24.6, 58.0, MAP.ELWYNN_FOREST },
 				cost = { { "i", 4536, 4 } },	-- Shiny Red Apple
@@ -563,6 +572,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 4,
 			}),
 			q(91775, {	-- Book Return
+				["lvl"] = 1,
 				sourceQuest = 91772,	-- Shhh! We're Hunting Kobolds
 				qg = 240,	-- Marshal Dughan
 				qi = 279935,	-- Book Bag (PQI!)
@@ -1113,6 +1123,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(91777, {	-- Rare Books
+				["lvl"] = 1,
 				sourceQuest = 91775,	-- Book Return
 				qg = 240,	-- Marshal Dughan
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },

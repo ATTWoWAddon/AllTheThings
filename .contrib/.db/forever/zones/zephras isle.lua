@@ -20,6 +20,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 		}),
 		n(QUESTS, {
 			q(93746, {	-- A Firm Response
+				["sourceQuest"] = 93738,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
@@ -30,23 +31,28 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92708, {	-- A Grand Adventure
+				["sourceQuest"] = 92700,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(92709, {	-- A Grand Adventure
+				["sourceQuest"] = 92699,
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(93927, {	-- A Last Request
+				["sourceQuest"] = 93926,
 				["qg"] = 252155,	-- Peacekeeper Vaaniel
 				["coord"] = { 42.4, 62.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
 			}),
 			q(93951, {	-- A Little Beauty
+				["sourceQuests"] = { 92514, 93461 },
+				["sourceQuestNumRequired"] = 1,
 				["qg"] = 251991,	-- Taleen Shimmerthread
 				["coord"] = { 44.8, 44.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -148,6 +154,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92528, {	-- Among the Faithful
+				["sourceQuest"] = 92529,
 				["qg"] = 257065,	-- Missionary Jasaan
 				["coord"] = { 46.8, 56.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -158,12 +165,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92483, {	-- At Home in the Shadows
+				["sourceQuest"] = 92461,
 				["qg"] = 251361,	-- Rorian the Dayseeker
 				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { ROGUE },
 				["lvl"] = 2,
 			}),
 			q(92834, {	-- Avenged Tenfold
+				["sourceQuest"] = 92840,
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
@@ -175,6 +184,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93740, {	-- Blood for Blood
+				["sourceQuest"] = 93746,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
@@ -197,6 +207,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92645, {	-- Breaking the Breaker
+				["sourceQuest"] = 93320,
 				["qg"] = 252378,	-- Yorana Windyreed
 				["coord"] = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -207,6 +218,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93949, {	-- Bugged
+				["sourceQuest"] = 93948,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -218,6 +230,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 3,
 			}),
 			q(92467, {	-- Call of Earth
+				["sourceQuest"] = 92466,
 				["qg"] = 251374,	-- Windshaper Boro
 				["coord"] = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
@@ -225,6 +238,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 3,
 			}),
 			q(92468, {	-- Call of Earth
+				["sourceQuest"] = 92467,
 				["qg"] = 251166,	-- Minor Manifestation of Earth
 				["coord"] = { 49.6, 24.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
@@ -242,6 +256,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 10,
 			}),
 			q(97244, {	-- Call of Fire
+				["sourceQuest"] = 97243,
 				["qg"] = 268592,	-- Olariaan Swiftburn
 				["coord"] = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
@@ -249,6 +264,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 10,
 			}),
 			q(97245, {	-- Call of Fire
+				["sourceQuest"] = 97244,
 				["qg"] = 268592,	-- Olariaan Swiftburn
 				["coord"] = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
@@ -256,6 +272,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 10,
 			}),
 			q(97257, {	-- Call of Fire
+				["sourceQuest"] = 97245,
 				["qg"] = 268592,	-- Olariaan Swiftburn
 				["coord"] = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
@@ -398,6 +415,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92460, {	-- Coming of Age
+				["lvl"] = 1,
 				qg = 251362,	-- Ailee Farheart
 				coord = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
 				groups = {
@@ -405,6 +423,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92646, {	-- Confront Lorthuna
+				["sourceQuest"] = 93958,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
@@ -417,6 +436,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93835, {	-- Confront Lorthuna
+				["sourceQuest"] = 93958,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
@@ -438,6 +458,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92703, {	-- Deliver the News
+				["sourceQuest"] = 92693,
 				["qg"] = 252800,	-- Aamelia Windfield
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -448,11 +469,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93948, {	-- Deliver the Signet
+				["sourceQuest"] = 92550,
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
 			}),
 			q(92640, {	-- Desperate Times
+				["sourceQuest"] = 94568,
 				["qg"] = 252476,	-- Talaanis Shadowsong
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -463,6 +486,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92642, {	-- Disrupting Logistics
+				["sourceQuest"] = 93320,
 				["qg"] = 252378,	-- Yorana Windyreed
 				["coord"] = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -474,12 +498,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 2,
 			}),
 			q(92484, {	-- Embracing the Elements
+				["sourceQuest"] = 92461,
 				["qg"] = 251361,	-- Rorian the Dayseeker
 				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { SHAMAN },
 				["lvl"] = 2,
 			}),
 			q(92529, {	-- Falaath Village
+				["sourceQuest"] = 93036,
 				["qg"] = 251904,	-- Sania Silverstream
 				["coord"] = { 44.8, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -491,11 +517,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 2,
 			}),
 			q(94486, {	-- Feathers for Binding
+				["sourceQuest"] = 94484,
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
 			}),
 			q(92683, {	-- Flutterfly Dust
+				["sourceQuest"] = 92679,
 				["qg"] = 252800,	-- Aamelia Windfield
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -527,6 +555,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93172, {	-- Free the Hollows
+				["sourceQuest"] = 93159,
 				["qg"] = 251684,	-- Strange Hermit
 				["coord"] = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
@@ -537,6 +566,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92461, {	-- Harmony in Balance
+				["lvl"] = 1,
 				sourceQuest = 92460,	-- Coming of Age
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
@@ -549,6 +579,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93552, {	-- Harvesting Windstones
+				["sourceQuest"] = 92461,
 				qg = 251363,	-- Dalia the Collector
 				coord = { 43.2, 24.0, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
@@ -569,6 +600,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92550, {	-- Havoc in the Highlands
+				["sourceQuest"] = 92528,
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -579,23 +611,28 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92516, {	-- Hippogryph Harrassment
+				["sourceQuests"] = { 92514, 93461 },
+				["sourceQuestNumRequired"] = 1,
 				["qg"] = 251906,	-- Teeri Wellwind
 				["coord"] = { 44.4, 45.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
 			q(92860, {	-- In Service of Zephras
+				["sourceQuest"] = 92840,
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(92871, {	-- In Service of Zephras
+				["sourceQuest"] = 93746,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(92462, {	-- Infestation Investigation
+				["lvl"] = 1,
 				sourceQuest = 92460,	-- Coming of Age
 				qg = 251368,	-- Elatrell Featherlight
 				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
@@ -606,11 +643,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93036, {	-- Infiltrating the Cult
+				["sourceQuest"] = 92517,
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
 			}),
 			q(92682, {	-- Make Yourself Useful
+				["sourceQuest"] = 92679,
 				["qg"] = 252800,	-- Aamelia Windfield
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -619,11 +658,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92947, {	-- Making Our Move
+				["sourceQuest"] = 93065,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 61.2, 71.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 7,
 			}),
 			q(94411, {	-- Meddlesome Mages
+				["sourceQuest"] = 92595,
 				["qg"] = 251902,	-- Illaya Amberwind
 				["coord"] = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
@@ -634,6 +675,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93165, {	-- Mercy Falls on Deaf Ears
+				["sourceQuest"] = 94484,
 				["qg"] = 254151,	-- Vayn Moongaze
 				["coord"] = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
@@ -644,10 +686,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93459, {	-- More Al'Aketh Ears
+				["sourceQuest"] = 93165,
+				["qg"] = 254151,
 				repeatable = true,
 				["lvl"] = 8,
 			}),
 			q(92684, {	-- Ornery Ornery Galestriders
+				["sourceQuest"] = 92679,
 				["qg"] = 252800,	-- Aamelia Windfield
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -659,11 +704,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93319, {	-- Pilfered Windstones
+				["sourceQuests"] = { 92514, 93461 },
+				["sourceQuestNumRequired"] = 1,
 				["qg"] = 251906,	-- Teeri Wellwind
 				["coord"] = { 44.4, 45.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
 			q(93065, {	-- Prepare for Battle
+				["sourceQuest"] = 92640,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 7,
@@ -675,6 +723,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 2,
 			}),
 			q(92553, {	-- Restocking the Larders
+				["sourceQuests"] = { 92514, 93461 },
+				["sourceQuestNumRequired"] = 1,
 				["qg"] = 251905,	-- Zerril Softbreeze
 				["coord"] = { 43.8, 43.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -694,6 +744,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92880, {	-- Return to Valanaar
+				["sourceQuests"] = { 92642, 92645 },
 				["qg"] = 252378,	-- Yorana Windyreed
 				["coord"] = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -717,6 +768,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 10,
 			}),
 			q(92693, {	-- Standing Our Ground
+				["sourceQuest"] = 92685,
 				["qg"] = 252800,	-- Aamelia Windfield
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -725,6 +777,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92551, {	-- Stolen Supplies
+				["sourceQuest"] = 92528,
 				["qg"] = 252172,	-- Danarii Bellowveil
 				["coord"] = { 45.2, 45.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -766,6 +819,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 10,
 			}),
 			q(94485, {	-- Tears of the Lady
+				["sourceQuest"] = 94484,
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
@@ -782,18 +836,21 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 2,
 			}),
 			q(93735, {	-- The Broken Construct
+				["sourceQuest"] = 92700,
 				["races"] = HORDE_ONLY,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
 			q(93737, {	-- The Broken Construct
+				["sourceQuest"] = 93735,
 				["qg"] = 256083,	-- Riaani Nightwind
 				["coord"] = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 4,
 			}),
 			q(93738, {	-- The Broken Construct
+				["sourceQuest"] = 93737,
 				["qg"] = 256083,	-- Riaani Nightwind
 				["coord"] = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
@@ -837,11 +894,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94568, {	-- The Cult's True Plans
+				["sourceQuest"] = 92644,
 				["qg"] = 252476,	-- Talaanis Shadowsong
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
 			}),
 			q(95349, {	-- The Earthen Ring
+				["sourceQuest"] = 93090,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
@@ -853,23 +912,27 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(94491, {	-- The Fate of the Den
+				["sourceQuest"] = 94490,
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
 			}),
 			q(93836, {	-- The Fate of Zephras
+				["sourceQuest"] = 92646,
 				["qg"] = 251968,	-- Ayessa Dawnsinger
 				["coord"] = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(94369, {	-- The Fate of Zephras
+				["sourceQuest"] = 93835,
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(93160, {	-- The Forest's Bounty
+				["sourceQuest"] = 93159,
 				["qg"] = 251684,	-- Strange Hermit
 				["coord"] = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
@@ -881,6 +944,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 2,
 			}),
 			q(92700, {	-- The Grand Skyseer
+				["sourceQuest"] = 92579,
 				["races"] = HORDE_ONLY,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
@@ -900,6 +964,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 10,
 			}),
 			q(92881, {	-- The High Elder's Request
+				["sourceQuest"] = 92880,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -912,6 +977,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(92685, {	-- The Hills Have Eyes
+				["sourceQuests"] = { 92682, 92683, 92684 },
 				["qg"] = 252800,	-- Aamelia Windfield
 				["coord"] = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -920,11 +986,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93958, {	-- The Inner Sanctum
+				["sourceQuest"] = 92947,
 				["qg"] = 253576,	-- Hyusaa Quickbreeze
 				["coord"] = { 63.8, 50.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 7,
 			}),
 			q(94946, {	-- The Magical City of Dalaran
+				["sourceQuest"] = 93089,
 				["qg"] = 252475,	-- Elaadrin Evengale
 				["coord"] = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
@@ -938,6 +1006,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 4,
 			}),
 			q(92727, {	-- The Missing Scholar
+				["sourceQuest"] = 92699,
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 253204,	-- Dondallion Whisperwind
 				["coord"] = { 66.2, 79.8, MAP.ZEPHRAS_ISLE },
@@ -957,6 +1026,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 3,
 			}),
 			q(92515, {	-- The Problem With Prideclaws
+				["sourceQuests"] = { 92514, 93461 },
+				["sourceQuestNumRequired"] = 1,
 				["qg"] = 251993,	-- Indari Sunseam
 				["coord"] = { 44.6, 44.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -980,6 +1051,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(92699, {	-- The Supreme Magister
+				["sourceQuest"] = 92701,
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
@@ -991,23 +1063,27 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(92643, {	-- The Turncoat
+				["sourceQuest"] = 92881,
 				["qg"] = 252476,	-- Talaanis Shadowsong
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
 			}),
 			q(92532, {	-- The Warrior's Path
+				["sourceQuest"] = 92461,
 				["qg"] = 251361,	-- Rorian the Dayseeker
 				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { WARRIOR },
 				["lvl"] = 2,
 			}),
 			q(92482, {	-- The Way of the Hunter
+				["sourceQuest"] = 92461,
 				["qg"] = 251361,	-- Rorian the Dayseeker
 				["coord"] = { 42.0, 23.4, MAP.ZEPHRAS_ISLE },
 				["classes"] = { HUNTER },
 				["lvl"] = 2,
 			}),
 			q(93926, {	-- The Western Watch
+				["sourceQuest"] = 92528,
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
@@ -1024,6 +1100,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(92579, {	-- To Valanaar
+				["sourceQuest"] = 92550,
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
@@ -1035,12 +1112,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92701, {	-- To Valanaar
+				["sourceQuest"] = 92550,
 				["qg"] = 251523,	-- Constable Aonda
 				["coord"] = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 6,
 			}),
 			q(93320, {	-- Tower Defense
+				["sourceQuests"] = { 92860, 92871 },
+				["sourceQuestNumRequired"] = 1,
 				["qg"] = 252383,	-- Valennia Stormfist
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -1058,6 +1138,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 10,
 			}),
 			q(92644, {	-- Unfortunate News
+				["sourceQuest"] = 92643,
 				["qg"] = 253372,	-- Dead Cultist
 				["coord"] = { 56.0, 58.8, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 6,
@@ -1073,23 +1154,28 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["lvl"] = 8,
 			}),
 			q(94487, {	-- Unwanted and Unworthy
+				["sourceQuest"] = 94484,
 				["qg"] = 257944,	-- Elegael Thornpaw
 				["coord"] = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
 			}),
 			q(93736, {	-- Unwelcome Spirits
+				["sourceQuest"] = 92700,
 				["races"] = HORDE_ONLY,
 				["qg"] = 254344,	-- Endaria Mistgaze
 				["coord"] = { 58.2, 78.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
 			}),
 			q(92741, {	-- Unwelcome Visitors
+				["sourceQuest"] = 92699,
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 253004,	-- Iaadaria Bitterwind
 				["coord"] = { 66.2, 79.6, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 8,
 			}),
 			q(93318, {	-- WANTED: Vulgara the Insatiable
+				["sourceQuests"] = { 92514, 93461 },
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 610954 },
 				["coord"] = { 45.2, 45.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
@@ -1111,18 +1197,21 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(93089, {	-- What Comes Next
+				["sourceQuest"] = 94369,
 				["qg"] = 252476,	-- Talaanis Shadowsong
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(93090, {	-- What Comes Next
+				["sourceQuest"] = 93836,
 				["qg"] = 252476,	-- Talaanis Shadowsong
 				["coord"] = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 7,
 			}),
 			q(92698, {	-- What Is My Purpose?
+				["sourceQuest"] = 92679,
 				["qg"] = 250929,	-- Malfunctioning Cyclone Construct
 				["coord"] = { 48.6, 78.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,

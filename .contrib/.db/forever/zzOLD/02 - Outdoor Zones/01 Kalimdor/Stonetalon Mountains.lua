@@ -591,6 +591,8 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(217314),	-- Moonsight Rifle
 						i(217315),	-- Precision Bow
 						i(3463),	-- Silver Star
+						i(3464),	-- Feathered Arrow
+						i(3465),	-- Exploding Shot
 					},
 				}),
 				q(1068, {	-- Shredding Machines
@@ -709,6 +711,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					lvl = 14,
 					groups = {
 						i(20709),	-- Rumsey Rum Light
+						i(5432),	-- Hickory Pipe
 					},
 				}),
 				q(1084, {	-- Wounded Ancients
