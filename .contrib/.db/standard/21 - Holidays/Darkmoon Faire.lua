@@ -231,6 +231,7 @@ local OnTooltipForDarkmoonFaire = [[function(t, tooltipInfo)
 end]];
 
 root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, {
+    ["timeline"] = { ADDED_1_6_0 },
 	-- #if AFTER 4.3.0
 	["mapID"] = DARKMOON_ISLAND,
 	-- #endif

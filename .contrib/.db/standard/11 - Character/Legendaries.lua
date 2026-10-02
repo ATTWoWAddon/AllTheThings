@@ -17,9 +17,11 @@ root(ROOTS.Character, n(LEGENDARIES, {
 		["classes"] = { WARLOCK }
 	})),
 	i(71086, {	-- Dragonwrath, Tarecgosa's Rest
+        ["timeline"] = { ADDED_4_2_0 },
 		["classes"] = { PRIEST, MAGE, WARLOCK, DRUID, SHAMAN, EVOKER }
 	}),
 	i(77949, {	-- Golad, Twilight of Aspects
+        ["timeline"] = { ADDED_4_3_0 },
 		["classes"] = { ROGUE }
 	}),
 	i(186414, {	-- Rae'shalare, Death's Whisper
@@ -31,23 +33,30 @@ root(ROOTS.Character, n(LEGENDARIES, {
 		["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
 	}),
 	i(17182, {	-- Sulfuras
+        ["timeline"] = { ADDED_1_1_0 },
 		["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, SHAMAN, DRUID }
 	}),
-	i(19019),	-- Thunderfury
+    i(19019, {	-- Thunderfury
+        ["timeline"] = { ADDED_1_6_0 },
+	}),
 	i(34334, {	-- Thori'dal, the Stars' Fury
         ["timeline"] = { ADDED_2_4_2 },
 		["classes"] = { WARRIOR, HUNTER, ROGUE }
 	}),
 	i(77950, {	-- Tiriosh, Nightmare of Ages
+        ["timeline"] = { ADDED_4_3_0 },
 		["classes"] = { ROGUE }
 	}),
 	i(46017, {	-- Val'anyr, Hammer of Ancient Kings
+        ["timeline"] = { ADDED_3_1_0 },
 		["classes"] = { PRIEST, DRUID, MONK, SHAMAN, PALADIN, EVOKER }
 	}),
 	i(32837, {	-- Warglaive of Azzinoth
+        ["timeline"] = { ADDED_2_1_0 },
 		["classes"] = { WARRIOR, ROGUE, MONK, DEMONHUNTER, DEATHKNIGHT }
 	}),
 	i(32838, {	-- Warglaive of Azzinoth
+        ["timeline"] = { ADDED_2_1_0 },
 		["classes"] = { WARRIOR, ROGUE, MONK, DEMONHUNTER, DEATHKNIGHT }
 	}),
 }));

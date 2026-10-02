@@ -92,6 +92,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(6, {	-- Ironforge, Dun Morogh
+                    ["timeline"] = { ADDED_1_1_0 },
 					["cr"] = 1573,	-- Gryth Thurden <Gryphon Master>
 					["coord"] = { 55.6, 48.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -313,6 +314,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(4512, {	-- A Little Slime Goes a Long Way (1/2)
+                    ["timeline"] = { ADDED_1_1_0 },
 					["qg"] = 9616,	-- Laris Geardawdle
 					["coord"] = { 75.4, 23.4, IRONFORGE },
 					["maps"] = { FELWOOD },
@@ -338,6 +340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(4513, {	-- A Little Slime Goes a Long Way (2/2)
+                    ["timeline"] = { ADDED_1_1_0 },
 					["sourceQuest"] = 4512,	-- A Little Slime Goes a Long Way (1/2)
 					["qg"] = 9616,	-- Laris Geardawdle
 					["coord"] = { 75.4, 23.4, IRONFORGE },
@@ -638,6 +641,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(2039, {	-- Find Bingles
+                    ["timeline"] = { ADDED_1_1_0 },
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -664,6 +668,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(1618, {	-- Gearing Redridge
+                    ["timeline"] = { ADDED_1_1_0 },
 					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 48.6, 43.0, IRONFORGE },
 					["maps"] = { REDRIDGE_MOUNTAINS },
@@ -754,6 +759,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6388, {	-- Gryth Thurden
+                    ["timeline"] = { ADDED_1_1_0 },
 					["sourceQuest"] = 6391,	-- Ride to Ironforge
 					["qg"] = 4256,	-- Golnir Bouldertoe
 					["qi"] = 16311,	-- Honorary Picks
@@ -1055,6 +1061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6392, {	-- Return to Brock / Return to Gremlock [CATA+]
+                    ["timeline"] = { ADDED_1_1_0 },
 					["sourceQuest"] = 6388,	-- Gryth Thurden
 					["qg"] = 1573,	-- Gryth Thurden
 					["qi"] = 16311,	-- Honorary Picks
@@ -1552,6 +1559,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
+                            ["timeline"] = { ADDED_1_4_0 },
 							["isLimited"] = true,
 						}),
 					},
@@ -1599,8 +1607,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2394,	-- Light Mail Leggings
 					}},
 					["groups"] = {
-						i(1201),	-- Dull Heater Shield
-						i(17186),	-- Small Targe
+						i(1201, {	-- Dull Heater Shield
+                            ["timeline"] = { ADDED_1_1_0 },
+                        }),
+                        i(17186, {	-- Small Targe
+                            ["timeline"] = { ADDED_1_1_0 },
+                        }),
 					},
 				}),
 				-- #if AFTER TBC
@@ -1731,6 +1743,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(5102, {	-- Dolman Steelfury
+                    ["timeline"] = { ADDED_1_1_0 },
 					["coord"] = { 36.6, 66.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",

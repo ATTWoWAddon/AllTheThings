@@ -113,7 +113,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 		n(WEAPONS, {
-			i(35),	-- Bent Staff
+			i(35, {	-- Bent Staff
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 			i(266262, {	-- Dawnroot Haranir Channeler
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
@@ -121,7 +123,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
 				i(270433),	-- Dawnroot Haranir Quarterstaff
 			})),
-			i(3661),	-- Handcrafted Staff
+            i(3661, {	-- Handcrafted Staff
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157666),	-- Wildshifter Tunic
@@ -309,7 +313,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
 				i(270439),	-- Wildgrove Haranir Spear
 			})),
-			i(2508),	-- Old Blunderbuss
+            i(2508, {	-- Old Blunderbuss
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 			i(20982, {	-- Sharp Dagger
 				["timeline"] = { ADDED_2_0_3, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
@@ -643,12 +649,16 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(20978, {	-- Apprentice's Staff
 				["timeline"] = { ADDED_3_0_2 }
 			}),
-			i(35),	-- Bent Staff
+		    i(35, {	-- Bent Staff
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 			i(232336, {	-- Creche-Magus's Staff
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
-			i(3661),	-- Handcrafted Staff
+			i(3661, {	-- Handcrafted Staff
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 			i(266264, {	-- Sunpetal Haranir Spire
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
@@ -729,6 +739,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_3 }
 			}),
 			mount(13819, {	-- Warhorse (MOUNT!)
+                ["timeline"] = { ADDED_1_1_0 },
 				-- #if AFTER 9.0.1
 				["description"] = "Received on reaching Level 10 as a Human or Dwarf Paladin.",
 				["lvl"] = 10,
@@ -833,8 +844,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(52557, {	-- Battleworn Hammer
 				["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
-			i(36),	-- Worn Mace
-			i(2362),	-- Worn Wooden Shield
+            i(36, {	-- Worn Mace
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
+            i(2362, {	-- Worn Wooden Shield
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157698),	-- Lightsoul Battleplate
@@ -1039,12 +1054,16 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(20978, {	-- Apprentice's Staff
 				["timeline"] = { ADDED_3_0_2 }
 			}),
-			i(35),	-- Bent Staff
+			i(35, {	-- Bent Staff
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 			i(232329, {	-- Creche-Weaver's Spire
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
-			i(3661),	-- Handcrafted Staff
+			i(3661, {	-- Handcrafted Staff
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 			i(266266, {	-- Moonpetal Haranir Staff
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
@@ -1257,7 +1276,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			i(2092),	-- Worn Dagger
+            i(2092, {	-- Worn Dagger
+				["timeline"] = { ADDED_1_1_0 }
+			}),
 			i(50055, {	-- Worn Dirk
 				["timeline"] = { ADDED_3_3_0 }
 			}),
@@ -1381,8 +1402,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			i(36),	-- Worn Mace
-			i(2362),	-- Worn Wooden Shield
+            i(36, {	-- Worn Mace
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
+            i(2362, {	-- Worn Wooden Shield
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157722),	-- Totem-Caller Tunic
@@ -1402,6 +1427,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	cl(WARLOCK, {
 		filter(MOUNTS, {
 			mount(5784, {	-- Felsteed (MOUNT!)
+                ["timeline"] = { ADDED_1_1_0 },
 				-- #if AFTER 9.0.1
 				["description"] = "Received on reaching Level 10 as a Warlock.",
 				["lvl"] = 10,
@@ -1680,7 +1706,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(20978, {	-- Apprentice's Staff
 				["timeline"] = { ADDED_3_0_2 },
 			}),
-			i(35),	-- Bent Staff
+			i(35, {	-- Bent Staff
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 			i(232038, {	-- Creche-Binder's Rod
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
@@ -1884,8 +1912,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(49778, {	-- Worn Greatsword
 				["timeline"] = { ADDED_2_0_3, REMOVED_9_0_1 },	-- TODO: I am not sure when this got removed.
 			}),
-			i(25),	-- Worn Shortsword
-			i(2362),	-- Worn Wooden Shield
+            i(25, {	-- Worn Shortsword
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
+			i(2362, {	-- Worn Wooden Shield
+                ["timeline"] = { ADDED_1_1_0 },
+            }),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
 			i(157738),	-- Warsinger's Breastplate
@@ -1992,7 +2024,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #else
 			["description"] = "Former Starter Shirt for Priests.",
 			-- #endif
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { ADDED_1_1_0, REMOVED_4_0_3 },
+            -- #else
+            ["timeline"] = { ADDED_1_1_0 },
 			-- #endif
 		}),
 		i(154, {	-- Primitive Mantle

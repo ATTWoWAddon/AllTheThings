@@ -69,12 +69,14 @@ root(ROOTS.Professions, lockpicking({
 	-- #endif
 	["groups"] = {
 		recipe(1804, {	-- Pick Lock
+            ["timeline"] = { ADDED_1_1_0 },
 			-- #if BEFORE WRATH
 			["provider"] = { "i", 5060 },	-- Thieves' Tools
 			-- #endif
 			["classes"] = { ROGUE },
 		}),
 		recipe(921, {	-- Pick Pocket
+            ["timeline"] = { ADDED_1_1_0 },
 			["classes"] = { ROGUE },
 		}),
 	}
