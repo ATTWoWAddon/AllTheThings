@@ -1311,20 +1311,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					},
 					{	-- Bags
 						frags(10, i(248666, {	-- Satchel of Celestial Chance
-							i(87777),	-- Astral Cloud Serpent (MOUNT!)
-							i(87786),	-- Black Riding Yak (MOUNT!)
-							i(87787),	-- Brown Riding Yak (MOP) / Modest Expedition Yak (Retail) (MOUNT!)
-							i(248741),	-- Celestial Riding Crane (MOUNT!)
-							i(87791),	-- Crimson Water Strider (MOUNT!)
-							i(87794),	-- Golden Water Strider (MOUNT!)
-							i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
-							i(87793),	-- Jade Water Strider (MOUNT!)
-							i(87784),	-- Jungle Riding Crane (MOUNT!)
-							i(87792),	-- Orange Water Strider (MOUNT!)
-							i(84753),	-- White Riding Yak (MOP) / Kafa Yak (Retail) (MOUNT!)
+							i(87777),	-- Reins of the Astral Cloud Serpent (MOUNT!)
+							i(87786),	-- Reins of the Black Riding Yak (MOUNT!)
+							i(87787),	-- Reins of the Brown Riding Yak (MOUNT!)
+							i(248741),	-- Reins of the Celestial Riding Crane (MOUNT!)
+							i(87791),	-- Reins of the Crimson Water Strider (MOUNT!)
+							i(87794),	-- Reins of the Golden Water Strider (MOUNT!)
+							i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
+							i(87793),	-- Reins of the Jade Water Strider (MOUNT!)
+							i(87784),	-- Reins of the Jungle Riding Crane (MOUNT!)
+							i(87792),	-- Reins of the Orange Water Strider (MOUNT!)
+							i(84753),	-- Reins of the White Riding Yak (MOUNT!)
 
-							-- Pets
-							i(86563),	-- Aqua Strider (PET!)
+							i(86563),	-- Hollow Reed (PET!)
 							i(86564),	-- Imbued Jade Fragment (PET!)
 							i(88148),	-- Jade Crane Chick (PET!)
 							i(89587),	-- Porcupette (PET!)
@@ -1676,33 +1675,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					},
 					{	-- Bags
 						shards(10, i(266273, {	-- Cache of Celestial Chance
-							i(94230),	-- Amber Primordial Direhorn (MOUNT!)
+							i(94230),	-- Reins of the Amber Primordial Direhorn (MOUNT!)
+							i(248743),	-- Reins of the Celestial Riding Serpent (MOUNT!)
 							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
-							i(94228),	-- Cobalt Primordial Direhorn (MOUNT!)
-							i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-							i(95057),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
-							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
-							i(93666),	-- Spawn of Horridon (MOUNT!)  [Unconfirmed]
-							i(89783),	-- Son of Galleon (MOUNT!)
-
-							i(87794),	-- Golden Water Strider (MOUNT!)
-							i(87792),	-- Orange Water Strider (MOUNT!)
+							i(87786),	-- Reins of the Black Riding Yak (MOUNT!)
+							i(94231),	-- Reins of the Jade Primordial Direhorn (MOUNT!)
+							i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
+							i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent (MOUNT!)
+							i(87793),	-- Reins of the Jade Water Strider (MOUNT!)
+							i(89783),	-- Son of Galleon's Saddle (MOUNT!)
 
 							i(94295),	-- Primal Egg
-							i(94573),	-- Direhorn Runt (PET!)
+							i(97960),	-- Dark Quivering Blob (PET!)
+							i(86563),	-- Hollow Reed (PET!)
+							i(86564),	-- Imbued Jade Fragment (PET!)
 							i(88148),	-- Jade Crane Chick (PET!)
 							i(94835),	-- Ji-Kun Hatchling (PET!)
-							i(97959),	-- Living Fluid (PET!)  [Unconfirmed]
 							i(94125),	-- Living Sandling (PET!)
-							i(94574),	-- Pygmy Direhorn (PET!)  [Unconfirmed]
+							i(89587),	-- Porcupette (PET!)
+							i(94574),	-- Pygmy Direhorn (PET!)
+							i(97959),	-- Quivering Blob (PET!)
 							i(94152),	-- Son of Animus (PET!)
-							i(94933),	-- Tiny Blue Carp (PET!)  [Unconfirmed]
+							i(94595),	-- Spawn of G'nathus (PET!)
+							i(94933),	-- Tiny Blue Carp (PET!)
 							i(94934),	-- Tiny Green Carp (PET!)
 							i(94932),	-- Tiny Red Carp (PET!)
-							i(94935),	-- Tiny White Carp (PET!)  [Unconfirmed]
-							i(97960),	-- Viscous Horror (PET!)  [Unconfirmed]
+							i(94935),	-- Tiny White Carp (PET!)
 							i(95422),	-- Zandalari Anklerender (PET!)
-							i(95423),	-- Zandalari Footlsasher (PET!)
+							i(95423),	-- Zandalari Footslasher (PET!)
 							i(94126),	-- Zandalari Kneebiter (PET!)
 							i(95424),	-- Zandalari Toenibbler (PET!)
 						})),
@@ -2077,12 +2077,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						clusters(10, i(276086, {	-- Coffer of Celestial Chance
 							i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 							i(87786),	-- Reins of the Black Riding Yak (MOUNT!)
+							i(94230),	-- Reins of the Amber Primordial Direhorn (MOUNT!)
 							i(248743),	-- Reins of the Celestial Riding Serpent (MOUNT!)
+							i(87791),	-- Reins of the Crimson Water Strider (MOUNT!)
 							i(87794),	-- Reins of the Golden Water Strider (MOUNT!)
+							i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
+							i(87784),	-- Reins of the Jungle Riding Crane (MOUNT!)
 							i(94231),	-- Reins of the Jade Primordial Direhorn (MOUNT!)
+							i(87792),	-- Reins of the Orange Water Strider (MOUNT!)
 							i(84753),	-- Reins of the White Riding Yak (MOUNT!)
+							i(94229),	-- Reins of the Slate Primordial Direhorn (MOUNT!)
+							i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent (MOUNT!)
+							i(90655),	-- Reins of the Thundering Ruby Cloud Serpent (MOUNT!)
+							i(89783),	-- Son of Galleon's Saddle (MOUNT!)
 							i(93666),	-- Spawn of Horridon (MOUNT!)
 
+							i(94295),	-- Primal Egg
 							i(104158),	-- Blackfuse Bombling (PET!)
 							i(97960),	-- Dark Quivering Blob (PET!)
 							i(94573),	-- Direhorn Runt (PET!)
@@ -2103,6 +2113,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							i(94933),	-- Tiny Blue Carp (PET!)
 							i(94934),	-- Tiny Green Carp (PET!)
 							i(94932),	-- Tiny Red Carp (PET!)
+							i(94935),	-- Tiny White Carp (PET!)
+							i(95422),	-- Zandalari Anklerender (PET!)
 							i(95423),	-- Zandalari Footslasher (PET!)
 							i(94126),	-- Zandalari Kneebiter (PET!)
 							i(95424),	-- Zandalari Toenibbler (PET!)
