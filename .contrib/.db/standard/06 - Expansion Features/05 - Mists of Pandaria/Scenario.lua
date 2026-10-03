@@ -365,7 +365,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 			})),
 			n(THERAMORES_FALL, {
-				["maps"] = { 483 },	-- Theramore's Fall
+				["maps"] = { 416 },	-- Theramore's Fall scenario map is named Dustwallow Marsh
 				["groups"] = {
 					n(ACHIEVEMENTS, bubbleDown({ ["lvl"] = lvlsquish(90, 90, 35) }, {
 						a(ach(7526)),	-- Kite Flight (A)
