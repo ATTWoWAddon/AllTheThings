@@ -10,8 +10,11 @@ indent_size = 4
 end_of_line = crlf
 indent_style = tab
 
-[.contrib/Parser/DATAS/00 - Missing DB/**]
+[.config/.exports/**]
 trim_trailing_whitespace = false
 
-[.contrib/Harvesters/Database Harvester/**]
+[.contrib/Harvesters/**]
+trim_trailing_whitespace = false
+
+[.contrib/Debugging/**]
 trim_trailing_whitespace = false

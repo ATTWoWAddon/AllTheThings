@@ -1,0 +1,165 @@
+1.60.1.69876
+exploration(474),	-- Galak Camp \\ Hunter Rise UNUSED
+exploration(616),	-- Mount Hyjal \\ Hyjal
+exploration(1219),	-- Legashi Encampment \\ Legash Encampment
+exploration(16004),	-- Mount Hyjal \\ Hyjal
+exploration(16144),	-- Elwynn Forest (Blue Whelpling Inn Prototype)
+exploration(16234),	-- Legashi Stronghold
+exploration(16508),	-- Burning Steppes
+exploration(16509),	-- Stormwind City
+exploration(16510),	-- Elwynn Forest
+exploration(16511),	-- Valley of Heroes
+exploration(16512),	-- Draco'dar
+exploration(16513),	-- Blackrock Mountain
+exploration(16514),	-- Echo Ridge Mine
+exploration(16515),	-- Tower of Azora
+exploration(16516),	-- Heroes' Vigil
+exploration(16517),	-- Mirror Lake
+exploration(16518),	-- Mirror Lake Orchard
+exploration(16519),	-- Jasperlode Mine
+exploration(16520),	-- Northshire Vineyards
+exploration(16521),	-- Crystal Lake
+exploration(16522),	-- Stone Cairn Lake
+exploration(16523),	-- Northshire Valley
+exploration(16524),	-- Goldshire
+exploration(16532),	-- Tyler's Test Map (Desolace)
+exploration(16537),	-- Northshire Valley - Camelot
+exploration(16544),	-- City of Dalaran
+exploration(16558),	-- Dalaran
+exploration(16559),	-- Fel Grove
+exploration(16560),	-- City of Dalaran
+exploration(16562),	-- Hillsbrad Foothills
+exploration(16577),	-- Thalassian Vanguard Camp
+exploration(16591),	-- Riverglades
+exploration(16593),	-- Zephras Isle
+exploration(16602),	-- Bandarion Keep
+exploration(16603),	-- Warsong Gulch
+exploration(16604),	-- Silverwing Hold
+exploration(16605),	-- Warsong Lumber Mill
+exploration(16606),	-- Darkspear Islands
+exploration(16607),	-- Ruins
+exploration(16608),	-- Camp
+exploration(16609),	-- Shipwreck Cove
+exploration(16610),	-- Abandoned Tower
+exploration(16611),	-- Ruins of Lordaeron
+exploration(16612),	-- King's Alley
+exploration(16614),	-- Lordaeron Graveyard
+exploration(16615),	-- Lordamere Overlook
+exploration(16616),	-- Whispering Forest
+exploration(16617),	-- Market Street
+exploration(16622),	-- Thendal Grove
+exploration(16623),	-- Shen'dar Highlands
+exploration(16624),	-- Shen'dar Village
+exploration(16625),	-- Windsong Lake
+exploration(16626),	-- Gustberry Lowlands
+exploration(16628),	-- Valanaar Skydocks
+exploration(16629),	-- Shrine of Akir
+exploration(16630),	-- Rohashi Spires
+exploration(16631),	-- Shadowgale Forest
+exploration(16632),	-- Half-Pint Tavern
+exploration(16635),	-- Thendal Village
+exploration(16636),	-- Falaath Village
+exploration(16637),	-- Stomping Grounds
+exploration(16638),	-- Valanaar
+exploration(16650),	-- Tyler's Test Subzone (Desolace)
+exploration(16651),	-- Shen'dralas
+exploration(16653),	-- Battle for Gilneas
+exploration(16654),	-- Lighthouse
+exploration(16655),	-- Waterworks
+exploration(16656),	-- Mines
+exploration(16657),	-- Horde Landing
+exploration(16658),	-- Gilnean Stronghold
+exploration(16659),	-- The Overlook
+exploration(16660),	-- Gilnean Coast
+exploration(16661),	-- Beneath the Double Rainbow
+exploration(16662),	-- Stormr's Test Map
+exploration(16663),	-- Windfield Orchard
+exploration(16672),	-- Shriekling Den
+exploration(16673),	-- Thendal Cave
+exploration(16674),	-- Bandit Hideout
+exploration(16675),	-- Magram Front
+exploration(16676),	-- Outcast Hideaway
+exploration(16677),	-- Bristleback Retreat
+exploration(16678),	-- Evenshade's Overlook
+exploration(16679),	-- Sanctum of Storms
+exploration(16685),	-- Twilight's Shroud
+exploration(16720),	-- Nightclaw Cavern
+exploration(16723),	-- Sunnyglade
+exploration(16724),	-- Farholde Keep
+exploration(16725),	-- Wheeler's Grange
+exploration(16726),	-- Bolder'ok
+exploration(16727),	-- Powderfuse Port
+exploration(16728),	-- Eastwind Shore
+exploration(16729),	-- Terral's Watch
+exploration(16731),	-- Windstead
+exploration(16732),	-- Excavation Site: Wetlands
+exploration(16734),	-- Elbrim's Farm
+exploration(16735),	-- Meadowsbrook
+exploration(16736),	-- Turner's Logging Camp
+exploration(16737),	-- Bristle Hills
+exploration(16739),	-- Poacher's Den
+exploration(16740),	-- Martsirt
+exploration(16741),	-- Ironforge Submarine Facility
+exploration(16742),	-- Forlorn Gardens
+exploration(16743),	-- Rog'mar
+exploration(16744),	-- Southern Watch
+exploration(16756),	-- Ruins of Gilneas
+exploration(16757),	-- Gilneas City
+exploration(16758),	-- Northern Headlands
+exploration(16759),	-- Dreadwatch Outpost
+exploration(16760),	-- Rutsak's Guard
+exploration(16761),	-- Emberstone Village
+exploration(16762),	-- Emberstone Mine
+exploration(16763),	-- Tempest's Reach
+exploration(16764),	-- The Blackwald
+exploration(16765),	-- Hayward Fishery
+exploration(16772),	-- Unused
+exploration(16820),	-- The Forbidding Sea
+exploration(16833),	-- Ruins of Ban'aethal
+exploration(16848),	-- Elderwild
+exploration(16849),	-- Summit of Eternity
+exploration(16853),	-- Tainted Foothills
+exploration(16866),	-- Dae'gun
+exploration(16867),	-- Shrine of Aviana
+exploration(16868),	-- Mourning's Rest
+exploration(16870),	-- Archimonde's Fall
+exploration(16876),	-- Whelgar's Excavation Site
+exploration(16877),	-- Lost Marsh
+exploration(16878),	-- Stalker's Thicket
+exploration(16879),	-- Site of the Guardian
+exploration(16880),	-- Lost Dig Site
+exploration(16881),	-- Shadowvale
+exploration(16916),	-- Stormrage Barrow Dens
+exploration(16919),	-- The Hall of Thanes
+exploration(16941),	-- Crafting
+exploration(16985),	-- The Shaper's Terrace
+exploration(16986),	-- Pillar of Assimilation
+exploration(16988),	-- Rise of Spirits
+exploration(17044),	-- Gloomrise
+exploration(17045),	-- Skywatcher Plateau
+exploration(17050),	-- Felblood Scar
+exploration(17052),	-- Scalding Ridge
+exploration(17065),	-- Gilneas
+exploration(17066),	-- Shark-Infested Waters
+exploration(17144),	-- Malorne's Retreat
+exploration(17145),	-- Cradle of Tranquility
+exploration(17191),	-- Manor Mistmantle
+exploration(17203),	-- Stormwind Harbor
+exploration(17221),	-- Skywall
+exploration(17223),	-- Camp Gev'rek
+exploration(17674),	-- West Pylon Watchtower
+exploration(17675),	-- East Pylon Watchtower
+exploration(17676),	-- Windsong Standing Stones
+exploration(17677),	-- Overlook Standing Stones
+exploration(17678),	-- Thendal Standing Stones
+exploration(17684),	-- Fairweather Stables
+exploration(17707),	-- Old Dalaran Ruins
+exploration(17716),	-- Dragonmaw Retreat
+exploration(17732),	-- Excavation Site: Wetlands
+exploration(17738),	-- The Drunken Dwarf
+exploration(17780),	-- Krol'dok Stronghold
+exploration(17803),	-- Blackrock Depths
+exploration(17804),	-- Blackrock Spire
+exploration(17808),	-- Ashwood's Fall
+exploration(17809),	-- Forlorn Pit
+exploration(17824),	-- The Eventide

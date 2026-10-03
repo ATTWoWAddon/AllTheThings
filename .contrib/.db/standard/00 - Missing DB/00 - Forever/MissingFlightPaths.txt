@@ -1,0 +1,15 @@
+1.60.1.69876
+fp(2913),	-- Quest Path 9571: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - H - 6 \\ Quest Path 9571: S03 - Runecarving - Shaman - Level 40 Quest - 6 - KJA
+fp(2914),	-- Quest Path 9574: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - H - 6 - Flight Back \\ Quest Path 9574: S03 - Runecarving - Shaman - Level 40 Quest - 6 - Flight Back - KJA
+fp(3203),	-- Rog'mar, Riverglades
+fp(3205),	-- Tidegear Coast, Dun Morogh
+fp(3206),	-- zzOLDBolder'ok, Riverglades
+fp(3207),	-- zzOLDRiverglades, Farholde Keep
+fp(3208),	-- zzOLDPowderfuse Port, Riverglades
+fp(3242),	-- Tainted Foothills, Mount Hyjal
+fp(3260),	-- Quest Path 11512: 1.60.0 - Dalaran Translocation Path
+fp(3261),	-- Quest Path 11515: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - A - 6
+fp(3262),	-- Quest Path 11517: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - A - 6 - Flight Back
+fp(3274),	-- Powderfuse Port, Riverglades
+fp(3275),	-- Powderfuse Port, Riverglades
+fp(3276),	-- Farholde Keep, Riverglades

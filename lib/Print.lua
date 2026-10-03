@@ -1,17 +1,28 @@
 -- Chat and Print functionality
 local appName, app = ...;
 
-local print, tostring, ipairs, pairs, type
-	= print, tostring, ipairs, pairs, type
+--- @type function,function,function,function,function,function,function,
+local print, tostring, ipairs, pairs, type,math_floor,GetTimePreciseSec
+	= print, tostring, ipairs, pairs, type,math.floor,GetTimePreciseSec
+local issecretvalue = app.WOWAPI.issecretvalue
 
 app.print = function(...)
 	print(app.L.SHORTTITLE, ...);
 end
 app.report = function(...)
-	if ... then
-		app.print(...);
+	if select("#", ...) > 0 then
+		local addReport = app.Modules.Contributor.AddReportData
+		if addReport then
+			local data = {...}
+			local reportID = data[1]
+			tremove(data, 1)
+			data.ALLOWREPEAT = true
+			addReport("Report", reportID, data, reportID)
+		else
+			app.print(...);
+			app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
+		end
 	end
-	app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
 end
 app.PrintMemoryUsage = function(...)
 	collectgarbage()
@@ -19,7 +30,6 @@ app.PrintMemoryUsage = function(...)
 	app.print(... or "Memory", GetAddOnMemoryUsage(appName));
 end
 -- Consolidated debug-only print with preceding precise timestamp
-local GetTimePreciseSec = GetTimePreciseSec;
 local DEBUG_PRINT_LAST;
 app.PrintDebug = function(...)
 	DEBUG_PRINT_LAST = GetTimePreciseSec();
@@ -30,10 +40,10 @@ app.PrintDebugPrior = function(...)
 	if app.Debugging then
 		local now = GetTimePreciseSec();
 		if DEBUG_PRINT_LAST then
-			local diff = now - DEBUG_PRINT_LAST;
-			print(now,"<>",diff,"Stutter @", math.ceil(1 / diff), ...)
+			local diff = now - DEBUG_PRINT_LAST
+			print(now,...,"<>",math_floor(diff * 10000 / 10),"ms @", math.ceil(1 / diff),"FPS")
 		else
-			print(now,0,...)
+			print(now,...)
 		end
 		DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
@@ -58,36 +68,44 @@ end
 local SkipTableFields = {
 	parent = 1,
 	sourceParent = 1,
+	symParent = 1,
 	__merge = 1,
 	window = 1,
 }
-app.PrintTable = function(t,depth)
+app.PrintTable = function(t,depth,preface,...)
 	-- only allowing table prints when Debug print is active
 	if not app.Debugging then return; end
+	if preface then app.PrintDebug(preface,...) end
 	if t == nil then print("nil"); return; end
-	if type(t) ~= "table" then print(type(t),t); return; end
+	local secret = issecretvalue(t) and "<secret>" or ""
 	depth = depth or 0;
-	if depth == 0 then app._PrintTable = {}; end
 	local p = "";
 	for i=1,depth,1 do
 		p = p .. "-";
 	end
+	if type(t) ~= "table" then print(p,type(t),secret,t); return; end
+	if issecretvalue(t) then
+		print(p,secret,tostring(t))
+		return
+	end
+	if depth == 0 then app._PrintTable = {}; end
 	-- dont accidentally recursively print the same table
 	if not app._PrintTable[t] then
 		app._PrintTable[t] = true;
 		print(p,tostring(t),"__type",t.__type," {");
 		for k,v in pairs(t) do
+			secret = issecretvalue(v) and "<secret>" or ""
 			if SkipTableFields[k] then
-				print(p,k,":",tostring(v), "[SKIPPED]")
+				print(p,k,secret,":",tostring(v), "[SKIPPED]")
 			elseif type(v) == "table" then
 				if k == "g" then
-					print(p,k,": #",v and #v)
+					print(p,k,secret,": #",v and #v)
 				else
 					print(p,k,":");
 					app.PrintTable(v,depth + 1);
 				end
 			else
-				print(p,k,":",tostring(v))
+				print(p,k,secret,":",tostring(v))
 			end
 		end
 		if getmetatable(t) then
@@ -98,4 +116,7 @@ app.PrintTable = function(t,depth)
 	else
 		print(p,tostring(t),"RECURSIVE");
 	end
+end
+app.PrintError = function(err, source, co)
+	app.report("Stack Trace #"..app.UniqueCounter.errorID,"Source:",source,"Error:",err,"Stack:",co and debugstack(co) or debugstack())
 end

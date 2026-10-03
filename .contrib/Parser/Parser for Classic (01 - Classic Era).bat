@@ -1,1 +1,0 @@
-"Parser.exe" config=".config/classic/01 - Classic Era.config"

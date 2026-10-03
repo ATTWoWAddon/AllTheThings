@@ -9,15 +9,17 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local select, pairs, type, rawget, wipe,math_floor
-	= select, pairs, type, rawget, wipe,math.floor
+local select, next, type, rawget, wipe,math_floor
+	= select, next, type, rawget, wipe,math.floor
 
 -- WoW API Cache
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 
 -- App locals
+---@type function,
 local containsAny = app.containsAny;
 local ALLIANCE_ONLY, HORDE_ONLY = unpack(app.Modules.FactionData.FACTION_RACES);
+---@type function,
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Module locals
@@ -231,14 +233,35 @@ end)
 DefineToggleFilter("FilterID", CharacterFilters,
 function(item)
 	local f = item.f;
-	if f and not item.g then
+	if f then
 		-- Filter applied via Settings (character-equippable or manually set)
 		if SettingsFilterIDs[f] then
-			return true;
+			-- loc is another possible FilterID value based on Equip Location
+			-- loc cannot be applied without f
+			local loc = item.loc
+			if loc then
+				-- Things with matching f and loc
+				if SettingsFilterIDs[loc] then
+					return true
+				end
+			else
+				-- Things with only matching f
+				return true
+			end
 		end
 		-- don't filter Types by their FilterID in some cases
-		if FilterFilterID_IgnoredTypes[item.__type or 0] then
+		if FilterFilterID_IgnoredTypes[item.__type] then
 			return true;
+		end
+		local itemg = item.g
+		if itemg then
+			for i=1,#itemg do
+				if itemg[i].visible then
+					-- app.PrintDebug("filterID ignored",f,app:SearchLink(item))
+					return true
+				end
+			end
+			-- app.PrintDebug("filterID included after",#itemg,f,app:SearchLink(item))
 		end
 	else
 		return true;
@@ -273,9 +296,9 @@ end or function(item)
 		return true;
 	end
 end);
-app.AddEventHandler("OnStartup", function()
-	Professions = app.CurrentCharacter.Professions
-	ActiveSkills = app.CurrentCharacter.ActiveSkills
+app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter)
+	Professions = currentCharacter.Professions
+	ActiveSkills = currentCharacter.ActiveSkills
 end)
 
 -- Class
@@ -372,21 +395,6 @@ end);
 -- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
 RawCharacterFilters.Level = nil;
 
--- SkillLevel (Classic only)
-if app.IsClassic then
-app.MaximumSkillLevel = 99999;
-DefineToggleFilter("SkillLevel", CharacterFilters,
-function(group)
-	if group.learnedAt then
-		return app.MaximumSkillLevel >= group.learnedAt;
-	end
-	-- no skill level requirement on the group, have to include it
-	return true;
-end);
--- SkillLevel doesn't really exclude a character from seeing a given Thing
-RawCharacterFilters.SkillLevel = nil;
-end
-
 -- Trackable
 -- Whether this group can be 'tracked'
 local function FilterTrackable(group)
@@ -398,20 +406,33 @@ api.Set.Trackable = function(active)
 end
 
 -- Expansion Filters (Retail Only)
-if app.IsRetail then
+if app.IsRetail and app.GameBuildVersion > 70000 then
 	-- Cache for expansion filter settings (indexed by expansion ID for fast lookup)
 	local ExpansionFilters = {}
 
 	DefineToggleFilter("ExpansionContent", AccountFilters,
 	function(item)
-		-- Check if item has awp (added with patch) field
-		local awp = GetRelativeValue(item, "awp")
+		-- 'awp' is consolidated when parsed, meaning all common values flow upwards in hierachy
+		-- so if a Thing has an explicit 'awp' we know that it and all sub-content match that awp
+		local awp = item.awp
 		if awp then
 			-- awp field uses patch format like 10205 for patch 1.2.5
 			-- Extract expansion ID from patch value (e.g., 10205 -> 1)
-			local expansionID = math_floor(awp / 10000)
-			-- Direct lookup: if ExpansionFilters[expansionID] is false, filter it out
-			return ExpansionFilters[expansionID]
+			return ExpansionFilters[math_floor(awp / 10000)]
+		end
+
+		-- if it contains more things, we can never assume all those things have an equivalent 'awp' value
+		if item.g then return true end
+
+		-- otherwise we fallback to the relative 'awp' value since this Thing may use the hierarchical 'awp' rather
+		-- than have its own
+		awp = GetRelativeValue(item, "awp")
+		-- ignoring 10000 since that's a non-real awp currently assigned as a default on the MainRoot
+		-- once everything is properly 'timeline'd in data, we can remove that default and this extra exclusion here
+		if awp and awp ~= 10000 then
+			-- awp field uses patch format like 10205 for patch 1.2.5
+			-- Extract expansion ID from patch value (e.g., 10205 -> 1)
+			return ExpansionFilters[math_floor(awp / 10000)]
 		end
 
 		return true
@@ -468,7 +489,7 @@ local function PrintExclusionCause(name, o)
 	app.PrintDebug("F-EX",name,o.hash,o.link or o.name)
 end
 local function ApplySettingsFilters(o, filters)
-	for name,filter in pairs(filters) do
+	for _,filter in next, filters do
 		-- if not filter(o) then PrintExclusionCause(name, o) return end
 		if not filter(o) then return end
 	end
@@ -489,9 +510,10 @@ end
 local function SettingsExtraFilters(item, extraFilters)
 	if SettingsFilters(item) then
 		if extraFilters then
+			local filters = api.Filters
 			local filter
-			for name,_ in pairs(extraFilters) do
-				filter = api.Filters[name]
+			for name in next, extraFilters do
+				filter = filters[name]
 				if filter then
 					-- if not filter(item) then PrintExclusionCause(name, item) return end
 					if not filter(item) then return end
@@ -509,7 +531,7 @@ local function SettingsFilters_IgnoreBoEFilter(item)
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
 local function CurrentCharacterFilters(o)
-	for name,filter in pairs(RawCharacterFilters) do
+	for _,filter in next, RawCharacterFilters do
 		-- if not filter(o) then PrintExclusionCause(name, o) return end
 		if not filter(o) then return end
 	end
@@ -637,13 +659,14 @@ app.RecursiveFilter = RecursiveFilter;
 local function CacheSettingsData()
 	SettingsUnobtainable = app.Settings:GetRawSettings("Unobtainable");
 	wipe(SettingsFilterIDs)
-	local rawFilters = app.Settings:GetRawFilters();
-	for k,v in pairs(rawFilters) do
+	local rawFilters = app.Settings:GetRawSettings("Filters");
+	for k,v in next, rawFilters do
 		-- app.PrintDebug("f:user",k,v)
 		SettingsFilterIDs[k] = v;
 	end
 	-- settings uses a meta-table to default filters... let's push those up for our local use
-	for k,v in pairs(getmetatable(rawFilters).__index) do
+	local rawFiltersIndex = getmetatable(rawFilters).__index
+	for k,v in next, rawFiltersIndex do
 		if SettingsFilterIDs[k] == nil then
 			-- app.PrintDebug("f:default",k,v)
 			SettingsFilterIDs[k] = v;

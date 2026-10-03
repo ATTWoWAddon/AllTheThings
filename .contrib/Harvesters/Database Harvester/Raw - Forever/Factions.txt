@@ -1,0 +1,256 @@
+﻿1.60.1.69876
+1@@@PLAYER, Human
+2@@@PLAYER, Orc
+3@@@PLAYER, Dwarf
+4@@@PLAYER, Night Elf
+5@@@PLAYER, Undead
+6@@@PLAYER, Tauren 
+7@@@Creature
+8@@@PLAYER, Gnome
+9@@@PLAYER, Troll
+14@@@Monster
+15@@@Defias Brotherhood
+16@@@Gnoll - Riverpaw
+17@@@Gnoll - Redridge
+18@@@Gnoll - Shadowhide
+19@@@Murloc
+20@@@Undead, Scourge
+21@@@Booty Bay
+22@@@Beast - Spider
+23@@@Beast - Boar
+24@@@Worgen
+25@@@Kobold
+26@@@Troll, Bloodscalp
+27@@@Troll, Skullsplitter
+28@@@Prey
+29@@@Beast - Wolf
+30@@@Defias Brotherhood Traitor
+31@@@Friendly
+32@@@Trogg
+33@@@Troll, Frostmane
+34@@@Orc, Blackrock
+35@@@Villain
+36@@@Victim
+37@@@Beast - Bear
+38@@@Ogre
+39@@@Kurzen's Mercenaries
+40@@@Escortee
+41@@@Venture Company
+42@@@Beast - Raptor
+43@@@Basilisk
+44@@@Dragonflight, Green
+45@@@Lost Ones
+46@@@Blacksmithing - Armorsmithing
+47@@@Ironforge
+48@@@Dark Iron Dwarves
+49@@@Human, Night Watch
+50@@@Dragonflight, Red
+51@@@Gnoll - Mosshide
+52@@@Orc, Dragonmaw
+53@@@Gnome - Leper
+54@@@Gnomeregan Exiles
+55@@@Leopard
+56@@@Scarlet Crusade
+57@@@Gnoll - Rothide
+58@@@Beast - Gorilla
+59@@@Thorium Brotherhood
+60@@@Naga
+61@@@Dalaran
+62@@@Forlorn Spirit
+63@@@Darkhowl
+64@@@Grell
+65@@@Furbolg
+66@@@Horde Generic
+67@@@Horde
+68@@@Undercity
+69@@@Darnassus
+70@@@Syndicate
+71@@@Hillsbrad Militia
+72@@@Stormwind
+73@@@Demon
+74@@@Elemental
+75@@@Spirit
+76@@@Orgrimmar
+77@@@Treasure
+78@@@Gnoll - Mudsnout
+79@@@HIllsbrad, Southshore Mayor
+80@@@Dragonflight, Black
+81@@@Thunder Bluff
+82@@@Troll, Witherbark
+83@@@Leatherworking - Elemental
+84@@@Quilboar, Razormane
+85@@@Quilboar, Bristleback
+86@@@Leatherworking - Dragonscale
+87@@@Bloodsail Buccaneers
+88@@@Blackfathom
+89@@@Makrura
+90@@@Centaur, Kolkar
+91@@@Centaur, Galak
+92@@@Gelkis Clan Centaur
+93@@@Magram Clan Centaur
+94@@@Maraudine
+108@@@Theramore
+109@@@Quilboar, Razorfen
+110@@@Quilboar, Razormane 2
+111@@@Quilboar, Deathshead
+128@@@Enemy
+148@@@Ambient
+168@@@Nethergarde Caravan
+169@@@Steamwheedle Cartel
+189@@@Alliance Generic
+209@@@Nethergarde
+229@@@Wailing Caverns
+249@@@Silithid
+269@@@Silvermoon Remnant
+270@@@Zandalar Tribe
+289@@@Blacksmithing - Weaponsmithing
+309@@@Scorpid
+310@@@Beast - Bat
+311@@@Titan
+329@@@Taskmaster Fizzule
+349@@@Ravenholdt
+369@@@Gadgetzan
+389@@@Gnomeregan Bug
+409@@@Harpy
+429@@@Burning Blade
+449@@@Shadowsilk Poacher
+450@@@Searing Spider
+469@@@Alliance
+470@@@Ratchet
+471@@@Wildhammer Clan
+489@@@Goblin, Dark Iron Bar Patron
+509@@@The League of Arathor
+510@@@The Defilers
+511@@@Giant
+529@@@Argent Dawn
+530@@@Darkspear Trolls
+531@@@Dragonflight, Bronze
+532@@@Dragonflight, Blue
+549@@@Leatherworking - Tribal
+550@@@Engineering - Goblin
+551@@@Engineering - Gnome
+569@@@Blacksmithing - Hammersmithing
+570@@@Blacksmithing - Axesmithing
+571@@@Blacksmithing - Swordsmithing
+572@@@Troll, Vilebranch
+573@@@Southsea Freebooters
+574@@@Caer Darrow
+575@@@Furbolg, Uncorrupted
+576@@@Timbermaw Hold
+577@@@Everlook
+589@@@Wintersaber Trainers
+609@@@Cenarion Circle
+629@@@Shatterspear Trolls
+630@@@Ravasaur Trainers
+649@@@Majordomo Executus
+669@@@Beast - Carrion Bird
+670@@@Beast - Cat
+671@@@Beast - Crab
+672@@@Beast - Crocilisk
+673@@@Beast - Hyena
+674@@@Beast - Owl
+675@@@Beast - Scorpid
+676@@@Beast - Tallstrider
+677@@@Beast - Turtle
+678@@@Beast - Wind Serpent
+679@@@Training Dummy
+689@@@Dragonflight, Black - Bait
+709@@@Battleground Neutral
+729@@@Frostwolf Clan
+730@@@Stormpike Guard
+749@@@Hydraxian Waterlords
+750@@@Sulfuron Firelords
+769@@@Gizlock's Dummy
+770@@@Gizlock's Charm
+771@@@Gizlock
+789@@@Moro'gai
+790@@@Spirit Guide - Alliance
+809@@@Shen'dralar
+829@@@Ogre (Captain Kromcrush)
+849@@@Spirit Guide - Horde
+869@@@Jaedenar
+889@@@Warsong Outriders
+890@@@Silverwing Sentinels
+891@@@Alliance Forces
+892@@@Horde Forces
+893@@@Revantusk Trolls
+909@@@Darkmoon Faire
+910@@@Brood of Nozdormu
+912@@@Might of Kalimdor
+915@@@Armies of C'Thun
+916@@@Silithid Attackers
+917@@@The Ironforge Brigade
+918@@@RC Enemies
+919@@@RC Objects
+920@@@Red
+921@@@Blue
+928@@@Scourge Invaders
+931@@@Test Faction (not a real faction)
+950@@@ToWoW - Flag
+951@@@ToWoW - Flag Trigger Alliance (DND)
+954@@@ToWoW - Flag Trigger Horde (DND)
+1041@@@Frenzy
+2402@@@CTF - Flag - Horde
+2403@@@CTF - Flag - Alliance
+2505@@@Dragonflight, Chromatic
+2586@@@Azeroth Commerce Authority
+2587@@@Durotar Supply and Logistics
+2588@@@S03 - Scarlet Crusade Disguise
+2634@@@Blood Moon
+2641@@@Emerald Wardens
+2646@@@S03 - 50 - Tanaris Arena Opponent
+2650@@@S03 - 60 - Western Plaguelands - Mage Runecarving
+2660@@@Elemental (The Molten Core Adds)
+2661@@@Hydraxian (The Molten Core Adds)
+2679@@@Order of the Silver Hand
+2686@@@S03 - Scourge Disguise
+2687@@@Hunter Quest Boss (Tamed Beast)
+2719@@@Cenarion Scouts
+2721@@@S03 - Scarlet Crusade
+2723@@@S03 - New Avalon - Scarlet Crusade - Disguise
+2724@@@S03 - New Avalon - Scarlet Crusade - Patrollers
+2730@@@1.50.0 - Hyjal Attunement - Leyara
+2731@@@1.50.0 - Hyjal Attunement - Gol'gere
+2740@@@Kirin Tor
+2741@@@Kirin Tor - Broken
+2745@@@Timbermaw Hold - Unbound Spirit - Enemies
+2746@@@Timbermaw Hold - Unbound Spirit - Allies
+2747@@@Barkskin Burrow
+2748@@@Shen'dorei
+2749@@@Al'Aketh
+2753@@@Deadwood Furbolg
+2754@@@CTF - Flag - Neutral
+2756@@@Hyjal Skunk
+2757@@@Zephras Peackeepers
+2758@@@Nightclaw Druids
+2759@@@Neutral Can Attack
+2760@@@Neutral Both But Horde Can Attack
+2761@@@Fenwick
+2765@@@Guardians of Hyjal
+2768@@@The Blackthorne Pact
+2769@@@Gelkis Outcasts
+2777@@@Beast - Predatory Stag
+2778@@@Windshapers
+2779@@@High Order
+2782@@@Bolder'ok Clan
+2785@@@Cenarion Circle (Legendary Event)
+2786@@@Replace
+2787@@@Earthen Ring
+2788@@@Ashen Reign
+2789@@@Ashen Reign - Warlock Disguise
+2790@@@CTF - Flag - Neutral
+2794@@@PLAYER, Windshaper Skyborne
+2795@@@PLAYER, High Order Skyborne
+2797@@@OLD
+2798@@@Darkspear Raiders
+2799@@@Theramore Expeditionary Force
+2800@@@PvP Rank Points
+2801@@@Neutral Both But Alliance Can Attack
+2802@@@Legacy Track
+2807@@@DNT Test Reputation
+2813@@@Syndicate Disguise
+2819@@@The Watchers
+2826@@@Brotherhood of the Horse
+2827@@@Powderfuse
+1.60.1.70170
+2757@@@Zephras Peacekeepers

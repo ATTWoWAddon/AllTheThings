@@ -5,6 +5,8 @@ from pathlib import Path
 from packaging import version
 from ThingTypes import (
     DATAS_FOLDER,
+    STANDARD_FOLDER,
+    FOREVER_FOLDER,
     DELIMITER,
     FLAVOR_FOLDERS
 )
@@ -32,9 +34,9 @@ def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
 
 
 def get_name(expansion: str, quest_id: str) -> str:
-    """This function try to get the quest name from wowhead."""
+    """This function try to get the quest name from wowhead. Currently broken"""
     name: str = ""
-    url = f"https://www.wowhead.com/{expansion}/quest={quest_id}"
+    """url = f"https://www.wowhead.com/{expansion}/quest={quest_id}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.4.600 Chrome/30.0.1599.101 Safari/537.36"
     }
@@ -46,7 +48,7 @@ def get_name(expansion: str, quest_id: str) -> str:
         for r in res1:
             name = f"{r.text}"
     else:
-        name = "--"
+        name = "--"""
     return name
 
 def get_available_expansions(patch: str) -> dict[str, str]:
@@ -97,30 +99,25 @@ def get_available_expansions(patch: str) -> dict[str, str]:
             "MOP": "mop-classic",
         }
         print("MoP :", patch)
-    elif version.parse(patch) < version.parse("11.0.0.0"):
+    elif version.parse(patch) < version.parse("12.0.0.0"):
         expansion_dict = {
             "Retail": "",
         }
-        print("WoD-DF :", patch)
-    elif version.parse(patch) < version.parse("11.2.7.99999"):
+        print("WoD-TWW :", patch)
+    elif version.parse(patch) < version.parse("12.0.1.99999"):
         expansion_dict = {
             "Retail": "",
             "PTR": "ptr",
             "PTR2": "ptr-2",
-            #"BETA": "beta",
+            "BETA": "beta",
         }
-        print("11.0.0-11.2.7 :", patch)
-    elif version.parse(patch) < version.parse("11.2.7.99999"):
+        print("12.0.0-12.0.1 :", patch)
+    elif version.parse(patch) < version.parse("12.0.5.99999"):
         expansion_dict = {
-            #"PTR": "ptr",
+            "PTR": "ptr",
             #"PTR2": "ptr-2",
         }
-        print("11.2.7 :", patch)
-    elif version.parse("11.2.7.99999") < version.parse(patch):
-        expansion_dict = {
-            "BETA": "beta"
-        }
-        print("12.0.0 :", patch)
+        print("12.0.5 :", patch)
     return expansion_dict
 
 def get_quest_names(flavor: str) -> None:
@@ -144,12 +141,19 @@ def get_quest_names(flavor: str) -> None:
         expansion: create_dict_from_raw(f"{expansion}.txt")
         for expansion in expansion_dict
     }
-    missing_path = Path(
-        DATAS_FOLDER,
-        "00 - Missing DB",
-        f"{FLAVOR_FOLDERS[flavor]}",
-        "MissingQuests.txt",
-    )
+    if flavor == "Forever":
+        missing_path = Path(
+            FOREVER_FOLDER,
+            "00 - Missing DB",
+            "MissingQuests.txt",
+        )
+    else:
+        missing_path = Path(
+            STANDARD_FOLDER,
+            "00 - Missing DB",
+            f"{FLAVOR_FOLDERS[flavor]}",
+            "MissingQuests.txt",
+        )
     with open(missing_path, "r") as missing_file:
         missing_lines: list[str] = missing_file.readlines()
         for index, missing_line in enumerate(missing_lines):

@@ -1,4 +1,3 @@
-
 -- Table Lib
 local _, app = ...;
 
@@ -8,8 +7,8 @@ local _, app = ...;
 -- Encapsulates the functionality concerning consistent and complex operations on Lua Tables
 
 -- Global locals
-local ipairs, pairs, select, table_concat
-	= ipairs, pairs, select, table.concat;
+local pairs, select, table_concat,next
+	= pairs, select, table.concat,next
 
 -- App locals
 
@@ -30,7 +29,7 @@ app.containsAny = function(arr, arr2)
 	end
 end
 app.containsValue = function(dict, value)
-	for _,value2 in pairs(dict) do
+	for _,value2 in next,dict do
 		if value2 == value then return true; end
 	end
 end
@@ -70,6 +69,57 @@ app.TableConcat = function(tbl, field, def, sep, i, j)
 	end
 	return "";
 end
+-- Performs table.concat(tbl, sep, i, j) on the given array, but safely handles concat manually if any values are secrets
+-- Currently table.concat will throw an exception if tbl contains any secrets values, but repeated use of .. is acceptable
+app.TableConcatWithSecrets = function(tbl, sep, i, j)
+	if tbl then
+		sep = sep or ""
+		-- testing /dump ATTC.TableConcatWithSecrets({secretwrap(1,2,3)}," : ")
+		if issecrettable(tbl) then
+			app.PrintDebug("table is secret??")
+			app.PrintTable(tbl)
+		else
+			-- if any value is a secret, table.concat fails
+			local issecret
+			local issecretvalue = issecretvalue
+			for i=1,#tbl do
+				if issecretvalue(tbl[i]) then
+					issecret = true
+					break
+				end
+			end
+			if issecret then
+				local s = ""
+				local c = #tbl
+				if c == 0 then return s end
+				if c == 1 then return tbl[1] end
+				local last = tbl[c]
+				c = c - 1
+				for i=1,c do
+					s = s..tbl[i]..sep
+				end
+				s = s..last
+				return s
+			else
+				return table_concat(tbl, sep, i, j)
+			end
+		end
+	end
+	return ""
+end
+-- Concats all the key/value pairs in the table into a string
+app.StringifyTable = function(tbl, sep)
+	if tbl then
+		local tostring = tostring
+		sep = sep or ""
+		local tblvals = {};
+		for k,v in pairs(tbl) do
+			tblvals[#tblvals + 1] = k..":"..tostring(tbl[k])
+		end
+		return table_concat(tblvals, sep)
+	end
+	return "";
+end
 -- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 app.ArrayAppend = function(a1, ...)
 	local arrs = select("#", ...);
@@ -87,6 +137,48 @@ app.ArrayAppend = function(a1, ...)
 	end
 	return a1;
 end
+-- Allows efficiently appending the unique content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
+app.ArrayAppendDistinct = function(a1, ...)
+	local arrs = select("#", ...)
+	if arrs > 0 then
+		a1 = a1 or {}
+		-- either simply use contains checks for small counts or a temp hash table check
+		if #a1 > 200 then
+			local h = {}
+			for i=1,#a1 do
+				h[a1[i]] = true
+			end
+			local a, b
+			for n=1,arrs do
+				a = select(n, ...)
+				if a then
+					for ai=1,#a do
+						b = a[ai]
+						if not h[b] then
+							h[b] = true
+							a1[#a1 + 1] = b
+						end
+					end
+				end
+			end
+		else
+			local a, b
+			local contains = app.contains
+			for n=1,arrs do
+				a = select(n, ...)
+				if a then
+					for ai=1,#a do
+						b = a[ai]
+						if not contains(a1, b) then
+							a1[#a1 + 1] = a[ai]
+						end
+					end
+				end
+			end
+		end
+	end
+	return a1
+end
 -- Allows for returning a reversed array. Will do nothing for un-ordered tables or tables with a single entry
 app.ReverseOrder = function(a)
 	if a and a[1] and a[2] then
@@ -99,3 +191,64 @@ app.ReverseOrder = function(a)
 	end
 	return a;
 end
+-- Returns true if the two tables have any difference in assigned keys
+app.TableKeyDiff = function(a,b)
+	if not a then
+		if b then return true end
+		return
+	elseif not b then
+		if a then return true end
+		return
+	end
+    -- Check keys in a that are missing in b
+    for k in next,a do
+        if b[k] == nil then
+            return true
+        end
+    end
+
+    -- Check keys in b that are missing in a
+    for k in next,b do
+        if a[k] == nil then
+            return true
+        end
+    end
+end
+-- Returns true if the two tables do not have any key-based differences
+app.TablesIdentical = function(a, b)
+    if type(a) ~= "table" or type(b) ~= "table" then return end
+    if a == b then return true end
+
+    for k, va in next,a do
+        if b[k] ~= va then return end
+    end
+    for k, vb in next,b do
+        if a[k] ~= vb then return end
+    end
+
+    return true
+end
+app.CountTable = function(a)
+    if type(a) ~= "table" then return -1 end
+
+    local c = 0
+    for _ in next,a do
+        c = c + 1
+    end
+    return c
+end
+app.UnpackTable = function(t,withKeys)
+    local tmp = {}
+	local tostring = tostring
+	if withKeys then
+		for k,v in next,t do
+			tmp[#tmp+1] = tostring(k)..":"..tostring(v)
+		end
+	else
+		for _,v in next,t do
+			tmp[#tmp+1] = v
+		end
+	end
+    return unpack(tmp)
+end
+

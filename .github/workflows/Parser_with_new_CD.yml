@@ -1,0 +1,472 @@
+name: Parser with New CD
+
+on:
+  push:
+    branches:
+      - "forever-beta"
+    tags-ignore:
+      - "*"
+  pull_request:
+    branches:
+      - "forever-beta"
+    paths:
+      - ".contrib/.db/**"
+  workflow_dispatch:
+    inputs:
+      target_sha:
+        description: Full commit SHA to rebuild
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  collect-commits:
+    runs-on: ubuntu-latest
+    outputs:
+      has_commits: ${{ steps.commits.outputs.has_commits }}
+      matrix: ${{ steps.commits.outputs.matrix }}
+      publish: ${{ steps.commits.outputs.publish }}
+    steps:
+      - name: Checkout repository history
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 300
+          persist-credentials: false
+
+      - name: Select commits to build
+        id: commits
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_DELETED: ${{ github.event.deleted }}
+          EVENT_COMMITS: ${{ toJSON(github.event.commits) }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          HEAD_SHA: ${{ github.sha }}
+          PR_SHA: ${{ github.event.pull_request.head.sha }}
+          REF_NAME: ${{ github.ref_name }}
+          TARGET_SHA: ${{ inputs.target_sha }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+
+          def full_commit(value):
+              value = (value or "").strip().lower()
+              if not re.fullmatch(r"(?:[0-9a-f]{40}|[0-9a-f]{64})", value):
+                  raise SystemExit(f"Expected a full commit SHA, got: {value!r}")
+              subprocess.run(["git", "cat-file", "-e", f"{value}^{{commit}}"], check=True)
+              return subprocess.check_output(
+                  ["git", "rev-parse", f"{value}^{{commit}}"], text=True
+              ).strip().lower()
+
+          event = os.environ["EVENT_NAME"]
+          ref_name = os.environ.get("REF_NAME", "")
+          default_branch = os.environ.get("DEFAULT_BRANCH", "")
+          publish = event != "pull_request"
+          retention_days = 7
+          source_ref = ref_name
+          shas = []
+
+          if event == "workflow_dispatch":
+              shas = [full_commit(os.environ.get("TARGET_SHA"))]
+              source_ref = f"manual:{shas[0]}"
+          elif event == "pull_request":
+              shas = [full_commit(os.environ.get("PR_SHA"))]
+              source_ref = f"pull-request:{ref_name}"
+              publish = False
+          elif event == "push" and os.environ.get("EVENT_DELETED") != "true":
+              head = full_commit(os.environ.get("HEAD_SHA"))
+              if ref_name == default_branch:
+                  retention_days = 30
+                  commits = json.loads(os.environ.get("EVENT_COMMITS") or "[]")
+                  shas = [full_commit(item.get("id")) for item in commits if item.get("id")]
+                  if head not in shas:
+                      shas.append(head)
+              else:
+                  shas = [head]
+
+          shas = list(dict.fromkeys(shas))
+          if len(shas) > 256:
+              raise SystemExit(
+                  f"This push contains {len(shas)} commits; the matrix limit is 256. "
+                  "Split the push or rebuild the remaining SHAs manually."
+              )
+
+          matrix = {
+              "include": [
+                  {
+                      "sha": sha,
+                      "publish": publish,
+                      "retention_days": retention_days,
+                      "source_ref": source_ref,
+                  }
+                  for sha in shas
+              ]
+          }
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"has_commits={'true' if shas else 'false'}\n")
+              handle.write(f"publish={'true' if publish and shas else 'false'}\n")
+              handle.write(f"matrix={json.dumps(matrix, separators=(',', ':'))}\n")
+          PY
+
+  build:
+    needs: collect-commits
+    if: needs.collect-commits.outputs.has_commits == 'true'
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: .contrib/.tools
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJSON(needs.collect-commits.outputs.matrix) }}
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ matrix.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Record commit identity
+        id: identity
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ matrix.sha }}
+        run: |
+          set -euo pipefail
+          oid="$(git rev-parse HEAD | tr '[:upper:]' '[:lower:]')"
+          format="$(git rev-parse --show-object-format | tr '[:upper:]' '[:lower:]')"
+          expected="$(printf '%s' "$EXPECTED_SHA" | tr '[:upper:]' '[:lower:]')"
+          test "$oid" = "$expected"
+          case "$format:$oid" in
+            sha1:????????????????????????????????????????) ;;
+            sha256:????????????????????????????????????????????????????????????????) ;;
+            *) echo "Unexpected $format object ID: $oid" >&2; exit 1 ;;
+          esac
+          printf 'oid=%s\nformat=%s\nkey=%s-%s\n' "$oid" "$format" "$format" "$oid" >> "$GITHUB_OUTPUT"
+
+      # Parser.exe is Windows-only, so these invocations intentionally use cmd.
+      - parallel:
+        - name: Database Parser for Retail
+          id: Parse-Retail
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config"
+
+        - name: Database Parser for Classic Era
+          id: Parse-ClassicEra
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
+
+        - name: Database Parser for Season of Discovery
+          id: Parse-ClassicSoD
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
+
+        - name: Database Parser for The Burning Crusade
+          id: Parse-TBC
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
+
+        - name: Database Parser for Wrath of the Lich King
+          id: Parse-WOTLK
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
+
+        - name: Database Parser for Cataclysm
+          id: Parse-CATA
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+
+        - name: Database Parser for Mists of Pandaria
+          id: Parse-MOP
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+
+        - name: Database Parser for Forever
+          id: Parse-FOREVER
+          timeout-minutes: 5
+          continue-on-error: true
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
+          shell: cmd
+
+      - name: Check Parser results
+        if: always()
+        shell: bash
+        env:
+          RETAIL: ${{ steps.Parse-Retail.outcome }}
+          CLASSIC_ERA: ${{ steps.Parse-ClassicEra.outcome }}
+          CLASSIC_SOD: ${{ steps.Parse-ClassicSoD.outcome }}
+          TBC: ${{ steps.Parse-TBC.outcome }}
+          WOTLK: ${{ steps.Parse-WOTLK.outcome }}
+          CATA: ${{ steps.Parse-CATA.outcome }}
+          MOP: ${{ steps.Parse-MOP.outcome }}
+          FOREVER: ${{ steps.Parse-FOREVER.outcome }}
+        run: |
+          set -euo pipefail
+          failed=0
+          for name in RETAIL CLASSIC_ERA CLASSIC_SOD TBC WOTLK CATA MOP FOREVER; do
+            value="${!name}"
+            printf '%s: %s\n' "$name" "$value"
+            test "$value" = success || failed=1
+          done
+          test "$failed" -eq 0
+
+      - name: Package database bundle
+        id: package
+        shell: bash
+        env:
+          COMMIT_OID: ${{ steps.identity.outputs.oid }}
+          OBJECT_FORMAT: ${{ steps.identity.outputs.format }}
+          KEY: ${{ steps.identity.outputs.key }}
+          PUBLISH: ${{ matrix.publish }}
+          RETENTION_DAYS: ${{ matrix.retention_days }}
+          SOURCE_REF: ${{ matrix.source_ref }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import datetime
+          import hashlib
+          import json
+          import os
+          import pathlib
+          import zipfile
+
+          db_root = pathlib.Path("db").resolve()
+          if not db_root.is_dir():
+              raise SystemExit("Parser did not produce the db directory")
+
+          key = os.environ["KEY"]
+          output_root = pathlib.Path(os.environ["RUNNER_TEMP"])
+          archive = output_root / f"db-{key}.zip"
+          manifest = output_root / f"db-{key}.sha256"
+          metadata = output_root / f"db-{key}.json"
+          files = sorted(path for path in db_root.rglob("*") if path.is_file())
+          if not files:
+              raise SystemExit("Parser produced an empty db directory")
+
+          lines = []
+          with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as bundle:
+              for path in files:
+                  relative = path.relative_to(db_root).as_posix()
+                  digest = hashlib.sha256(path.read_bytes()).hexdigest()
+                  lines.append(f"{digest}  {relative}\n")
+                  bundle.write(path, relative)
+          manifest.write_text("".join(lines), encoding="utf-8")
+
+          built_at = datetime.datetime.now(datetime.timezone.utc)
+          expires_at = built_at + datetime.timedelta(days=int(os.environ["RETENTION_DAYS"]))
+          payload = {
+              "schema": 1,
+              "commit": os.environ["COMMIT_OID"],
+              "git_object_format": os.environ["OBJECT_FORMAT"],
+              "key": key,
+              "source_ref": os.environ["SOURCE_REF"],
+              "publish": os.environ["PUBLISH"].lower() == "true",
+              "built_at": built_at.isoformat().replace("+00:00", "Z"),
+              "expires_at": expires_at.isoformat().replace("+00:00", "Z"),
+          }
+          metadata.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"archive={archive.as_posix()}\n")
+              handle.write(f"manifest={manifest.as_posix()}\n")
+              handle.write(f"metadata={metadata.as_posix()}\n")
+          PY
+
+      - name: Upload database bundle
+        uses: actions/upload-artifact@v7
+        with:
+          name: db-bundle-${{ steps.identity.outputs.key }}
+          path: |
+            ${{ steps.package.outputs.archive }}
+            ${{ steps.package.outputs.manifest }}
+            ${{ steps.package.outputs.metadata }}
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs:
+      - collect-commits
+      - build
+    if: >-
+      always() &&
+      needs.collect-commits.result == 'success' &&
+      needs.collect-commits.outputs.publish == 'true' &&
+      (needs.build.result == 'success' || needs.build.result == 'failure')
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+    concurrency:
+      group: db-release-publisher
+      cancel-in-progress: false
+    steps:
+      - name: Download successful bundles
+        uses: actions/download-artifact@v8
+        with:
+          pattern: db-bundle-*
+          path: bundles
+
+      - name: Publish commit-addressed database assets
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          RELEASE_TAG: db-artifacts
+        run: |
+          set -euo pipefail
+          if ! gh release view "$RELEASE_TAG" --repo "$REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --repo "$REPOSITORY" --target "$GITHUB_SHA" \
+              --title "Database Artifacts" \
+              --notes "Commit-addressed database snapshots generated by Parser." \
+              --prerelease
+          fi
+
+          release_id="$(gh api "repos/$REPOSITORY/releases/tags/$RELEASE_TAG" --jq .id)"
+          assets_json="$RUNNER_TEMP/assets.json"
+          gh api --paginate --slurp \
+            "repos/$REPOSITORY/releases/$release_id/assets?per_page=100" \
+            | jq '[.[][]]' > "$assets_json"
+
+          index_path="$RUNNER_TEMP/db-index.json"
+          index_id="$(jq -r '.[] | select(.name == "db-index.json") | .id' "$assets_json" | head -n 1)"
+          if test -n "$index_id"; then
+            gh api -H 'Accept: application/octet-stream' \
+              "repos/$REPOSITORY/releases/assets/$index_id" > "$index_path"
+          else
+            printf '{"schema":1,"entries":{}}\n' > "$index_path"
+          fi
+
+          mapfile -d '' metadata_files < <(find bundles -type f -name 'db-*.json' -print0)
+          test "${#metadata_files[@]}" -gt 0 || {
+            echo 'No successful database bundles were available to publish.' >&2
+            exit 1
+          }
+
+          for metadata in "${metadata_files[@]}"; do
+            test "$(jq -r .publish "$metadata")" = true || continue
+            key="$(jq -r .key "$metadata")"
+            directory="$(dirname "$metadata")"
+            archive_name="db-$key.zip"
+            manifest_name="db-$key.sha256"
+            archive="$directory/$archive_name"
+            manifest="$directory/$manifest_name"
+            test -f "$archive" && test -f "$manifest" || {
+              echo "Bundle $key is incomplete." >&2
+              exit 1
+            }
+
+            archive_id="$(jq -r --arg name "$archive_name" '.[] | select(.name == $name) | .id' "$assets_json" | head -n 1)"
+            manifest_id="$(jq -r --arg name "$manifest_name" '.[] | select(.name == $name) | .id' "$assets_json" | head -n 1)"
+            if { test -n "$archive_id" && test -z "$manifest_id"; } || \
+               { test -z "$archive_id" && test -n "$manifest_id"; }; then
+              echo "Release contains a partial asset pair for $key; refusing to overwrite it." >&2
+              exit 1
+            fi
+
+            if test -n "$archive_id"; then
+              existing="$RUNNER_TEMP/existing-$key.sha256"
+              gh api -H 'Accept: application/octet-stream' \
+                "repos/$REPOSITORY/releases/assets/$manifest_id" > "$existing"
+              test "$(sha256sum "$manifest" | cut -d ' ' -f 1)" = \
+                   "$(sha256sum "$existing" | cut -d ' ' -f 1)" || {
+                echo "Reproducibility conflict for $key: published checksums differ." >&2
+                exit 1
+              }
+              echo "Keeping existing assets for $key."
+            else
+              gh release upload "$RELEASE_TAG" "$archive" "$manifest" --repo "$REPOSITORY"
+              echo "Published $key."
+            fi
+          done
+
+          cleanup_plan="$RUNNER_TEMP/db-cleanup.tsv"
+          INDEX_PATH="$index_path" CLEANUP_PLAN="$cleanup_plan" python - <<'PY'
+          import datetime
+          import glob
+          import json
+          import os
+
+          def instant(value):
+              return datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+          with open(os.environ["INDEX_PATH"], encoding="utf-8") as handle:
+              index = json.load(handle)
+          index.setdefault("schema", 1)
+          entries = index.setdefault("entries", {})
+
+          for path in glob.glob("bundles/**/db-*.json", recursive=True):
+              with open(path, encoding="utf-8") as handle:
+                  metadata = json.load(handle)
+              if not metadata.get("publish"):
+                  continue
+              key = metadata["key"]
+              previous = entries.get(key)
+              if previous and instant(previous["expires_at"]) > instant(metadata["expires_at"]):
+                  metadata["expires_at"] = previous["expires_at"]
+              entries[key] = {
+                  "commit": metadata["commit"],
+                  "git_object_format": metadata["git_object_format"],
+                  "source_ref": metadata["source_ref"],
+                  "built_at": metadata["built_at"],
+                  "expires_at": metadata["expires_at"],
+                  "archive": f"db-{key}.zip",
+                  "checksum": f"db-{key}.sha256",
+              }
+
+          now = datetime.datetime.now(datetime.timezone.utc)
+          expired = []
+          for key, entry in list(entries.items()):
+              if instant(entry["expires_at"]) <= now:
+                  expired.append((key, entry["archive"], entry["checksum"]))
+                  del entries[key]
+
+          with open(os.environ["CLEANUP_PLAN"], "w", encoding="utf-8") as handle:
+              for row in expired:
+                  handle.write("\t".join(row) + "\n")
+          with open(os.environ["INDEX_PATH"], "w", encoding="utf-8") as handle:
+              json.dump(index, handle, indent=2, sort_keys=True)
+              handle.write("\n")
+          PY
+
+          while IFS=$'\t' read -r key archive_name manifest_name; do
+            test -n "$key" || continue
+            for name in "$archive_name" "$manifest_name"; do
+              asset_id="$(jq -r --arg name "$name" '.[] | select(.name == $name) | .id' "$assets_json" | head -n 1)"
+              if test -n "$asset_id"; then
+                gh api --method DELETE "repos/$REPOSITORY/releases/assets/$asset_id"
+              fi
+            done
+            echo "Removed expired assets for $key."
+          done < "$cleanup_plan"
+
+          gh release upload "$RELEASE_TAG" "$index_path" --repo "$REPOSITORY" --clobber

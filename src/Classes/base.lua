@@ -3,13 +3,14 @@
 local _, app = ...;
 
 -- Global locals
-local type,pairs,setmetatable,rawget,unpack,rawset,select
-	= type,pairs,setmetatable,rawget,unpack,rawset,select
+local type,pairs,setmetatable,rawget,unpack,rawset,select,getmetatable
+	= type,pairs,setmetatable,rawget,unpack,rawset,select,getmetatable
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
 local containsValue = app.containsValue;
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+local TryColorizeName = app.TryColorizeName
 
 -- Lib Helpers
 local constructor = function(id, t, typeID)
@@ -123,7 +124,7 @@ local DefaultFields = {
 	end,
 	-- Default text should be a valid link or name
 	["text"] = function(t)
-		return t.link or t.name;
+		return t.link or TryColorizeName(t, t.name)
 	end,
 	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
 	["modItemID"] = function(t)
@@ -176,6 +177,11 @@ local DefaultFields = {
 		if not merge then return end
 		return merge.isCost
 	end,
+	isOwnedCost = function(t)
+		local merge = t.__merge
+		if not merge then return end
+		return merge.isOwnedCost
+	end,
 	["nmc"] = function(t)
 		local c = t.c;
 		local nmc = c and not containsValue(c, app.ClassIndex) or false;
@@ -208,11 +214,11 @@ local DefaultFields = {
 		local u = GetRelativeValue(t, "u");
 		if u then
 			if u < 3 then
-				score = score + 100000;
+				score = score + 1000000;
 			elseif u < 4 then
-				score = score + 10;
+				score = score + 100000;
 			else
-				score = score + 1;
+				score = score + 1 + u;
 			end
 		end
 		t.AccessibilityScore = score;
@@ -268,19 +274,40 @@ local DefaultFields = {
 		end
 		return canretry
 	end,
-};
+	-- Future ProviderDB implementation for global object 'provider' content
+	-- providerinfo = function(t)
+	-- 	local k = t.key
+	-- 	local id = t[k]
+	-- 	local providersByType = app.ProviderDB[k]
+	-- 	return providersByType and providersByType[id] or nil
+	-- end,
+	-- Legacy Shim to handle code references to 'providers' after ProviderDB implementation
+	-- providers = function(t)
+	-- 	-- If cached, return immediately
+	-- 	local providers = t._providers
+	-- 	if providers ~= nil then return providers or nil end
 
-if app.IsRetail then
-	local TryColorizeName = app.TryColorizeName
-	-- Crieve doesn't see these fields being included as necessary,
-	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
-	-- Default text should be a valid link or name
-	-- In Retail, text can be colored and can be based on a variety of possible fields
-	-- trying to individually maintain variable coloring in every object class is quite absurd
-	DefaultFields.text = function(t)
-		return t.link or TryColorizeName(t)
-	end
-end
+	-- 	local info = t.providerinfo
+	-- 	if not info then
+	-- 		t._providers = false	-- sentinel
+	-- 		return
+	-- 	end
+
+	-- 	-- Build synthetic legacy provider list
+	-- 	providers = {}
+
+	-- 	for providerType,idList in pairs(info) do
+	-- 		for i=1,#idList do
+	-- 			providers[#providers+1] = { providerType, idList[i] }
+	-- 		end
+	-- 	end
+
+	-- 	-- Cache it
+	-- 	t._providers = providers
+
+	-- 	return providers
+	-- end,
+};
 
 
 local CloneDictionary = app.CloneDictionary
@@ -293,7 +320,7 @@ end
 local function ClassError(...)
 	local params = {...}
 	local err = app.TableConcat(params, nil, "", " ")
-	error(err)
+	app.report("ClassError",err)
 end
 -- Generates a metatable to use for the given class name based on the provided field functions
 local CreateClassMeta = not app.__perf and function(fields, className)
@@ -356,6 +383,18 @@ or function(fields, className)
 end
 app.BaseClass = CreateClassMeta(nil, "BaseClass");
 
+-- Extend the existing classes with a new field function handler.
+app.ExtendBaseClassHandler = function(field, handler)
+	if not DefaultFields[field] then
+		DefaultFields[field] = handler;
+		for key,class in pairs(classDefinitions) do
+			if rawget(class, field) == nil then
+				class[field] = handler;
+			end
+		end
+	end
+end
+
 -- Create a dictionary of classes by their classKey, for reference in generic object contructors.
 local classesByKey = setmetatable({}, {
 	__newindex = function(t, key, value)
@@ -365,7 +404,73 @@ local classesByKey = setmetatable({}, {
 		rawset(t, key, value);
 	end,
 });
+local ClassPriorityLookup = {
+"mapID",
+"explorationID",
+"sourceID",
+"encounterID",
+"instanceID",
+"currencyID",
+"speciesID",
+"objectID",
+"flightpathID",
+"followerID",
+"illusionID",
+"professionID",
+"categoryID",
+"criteriaID",
+"achID",
+"achievementID",
+"recipeID",
+"factionID",
+"heirloomID",
+"azeriteessenceID",
+"artifactID",
+"titleID",
+"runeforgepowerID",
+"conduitID",
+"decorID",
+"mountmodID",
+"toyID",
+"modItemID",
+"itemID",
+"npcID",
+"campsiteID",
+"firstcraftID",
+"professionnodeID",
+"unit",
+"classID",
+"raceID",
+"headerID",
+"expansionID",
+"difficultyID",
+"spellID",
+"f",
+"filterID",
+"objectiveID",
+"questID",
+"pvprankID",
+"text",
+}
+app.AddEventHandler("OnLoad", function()
+	-- assign any special class creator alternate functions which do not match their key, or require special handling
+	ClassPriorityLookup["achID"] = app.CreateAchievement
+	ClassPriorityLookup["f"] = app.CreateFilter
+	if app.GetItemIDAndModID then
+		ClassPriorityLookup["modItemID"] = function(modItemID, t)
+			local itemID, modID, bonusID = app.GetItemIDAndModID(modItemID)
+			t.modID = t.modID or modID
+			t.bonusID = t.bonusID or bonusID
+			return app.CreateItem(itemID, t)
+		end
+	end
+end)
 local function CreateClassInstance(key, id, t)
+	if t and t.__type and getmetatable(t) then
+		-- already has a metatable, so assume someone is calling this method unexpectedly
+		app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Used on existing object!",app.Colors.ChatLinkError),key,id,t.__type)
+		return t
+	end
 	if key then
 		if key == "creatureID" then
 			key = "npcID";
@@ -376,20 +481,27 @@ local function CreateClassInstance(key, id, t)
 		end
 		local classConstructor = classesByKey[key];
 		if classConstructor then return classConstructor(id, t); end
-	elseif not key then
-		local classConstructor;
-		for key,value in pairs(t) do
-			classConstructor = classesByKey[key];
-			if classConstructor then return classConstructor(value, t); end
+	end
+	-- perform a priority-based check on what object to create from this table
+	local keyVal, classConstructor
+	for i=1,#ClassPriorityLookup do
+		key = ClassPriorityLookup[i]
+		keyVal = t[key]
+		if keyVal then
+			classConstructor = ClassPriorityLookup[key] or classesByKey[key]
+			if classConstructor then
+				-- app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Created via constructor",app.Colors.ChatLinkError),key,keyVal)
+				return classConstructor(keyVal, t)
+			end
 		end
 	end
-	--[[
-	print("CreateClassInstance::Failed to Find Class Constructor for", key, id);
-	for key,value in pairs(t) do
-		print(" ", key, value);
+	if next(t) then
+		app.PrintDebug(app.Modules.Color.Colorize("CreateClassInstance::Failed to Find Class Constructor",app.Colors.ChatLinkError))
+		app.PrintTable(t)
 	end
-	]]--
-	return t;
+	-- if the t has absolutely no useable data to become a valid object, then just use the BaseClass to ensure it at least has some
+	-- proper handling if sent into a row
+	return setmetatable(t, app.BaseClass)
 end
 local function CloneClassInstance(object, ignoreChildren)
 	local clone = {}
@@ -547,6 +659,7 @@ local function GenerateVariantClasses(class)
 	local subbase = function(t, key) return class.__index; end
 	local classname = fields.__type()
 	local variantClone, variantName, variant
+	-- app.PrintDebug("Generating",#variants,"variants for",classname)
 	for i=1,#variants do
 		variant = variants[i]
 		if not variant.__name then
@@ -562,8 +675,8 @@ local function GenerateVariantClasses(class)
 		if variant.__onclassgenerated then variant.__onclassgenerated(variantName) end
 	end
 end
-local function AppendVariantConditionals(conditionals, class)
-	local subcassCondition = class.__class.__condition
+local function AppendVariantConditionals(conditionals, class, ignoresubcassCondition)
+	local subcassCondition = not ignoresubcassCondition and class.__class.__condition or nil
 	local variants = class.__class.variants
 	if subcassCondition then
 		if variants then
@@ -599,7 +712,7 @@ local function AppendVariantConditionals(conditionals, class)
 				variant = variants[i]
 				if variant.__class.__condition(t) then
 					setmetatable(t, variant);
-					-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variant.__name)
+					-- app.PrintDebug("Create Variant",t.hash,class.__class.__type(),":",variant.__class.__type())
 					return true
 				end
 			end
@@ -608,19 +721,19 @@ local function AppendVariantConditionals(conditionals, class)
 		end
 	end
 end
-local GenerateSimpleMetaClass = app.EmptyFunction
--- Only Classic utilizes this 'simplemeta' since the cost logic works completely different than in Retail
-if app.IsClassic then
-GenerateSimpleMetaClass = function(fields,name,subname)
-	if fields.collectibleAsCost then
-		local simpleclass = CloneDictionary(fields, {
-			collectibleAsCost = app.ReturnFalse
-		})
-		simpleclass.collectedAsCost = nil
-		local simplemeta = CreateClassMeta(simpleclass, "Simple" .. name .. (subname or ""))
-		fields.simplemeta = function(t) return simplemeta end
+local function BuildClassConstructor(conditionals, classKey, Class)
+	local total = #conditionals
+	return total > 0 and function(id, t)
+		t = constructor(id, t, classKey);
+		for i=1,total do
+			if conditionals[i](t) then
+				return t;
+			end
+		end
+		return setmetatable(t, Class);
+	end or function(id, t)
+		return setmetatable(constructor(id, t, classKey), Class);
 	end
-end
 end
 
 app.CreateClass = function(className, classKey, fields, ...)
@@ -655,9 +768,6 @@ app.CreateClass = function(className, classKey, fields, ...)
 		ImportClassFunctions(fields, fields.ImportFrom, unpack(fields.ImportFields))
 	end
 
-	-- If this object supports collectibleAsCost, that means it needs a way to fallback to a version of itself without any cost evaluations should it detect that it doesn't use it anywhere.
-	GenerateSimpleMetaClass(fields, className)
-
 	local args = { ... };
 	local total = #args;
 	local Class = CreateClassMeta(fields, className);
@@ -677,9 +787,19 @@ app.CreateClass = function(className, classKey, fields, ...)
 					if subfields.ImportFrom then
 						ImportClassFunctions(subfields, subfields.ImportFrom, unpack(subfields.ImportFields))
 					end
-					GenerateSimpleMetaClass(subfields, className, subclassName)
 					local subclass = CreateClassMeta(subfields, className .. subclassName)
 					GenerateVariantClasses(subclass)
+					if subfields.RootConstructor then
+						if app[subfields.RootConstructor] then
+							ClassError("RootConstructor for subclass",className .. subclassName,"has already been defined!")
+						else
+							-- the root constructor needs to also account for the generated variant conditionals
+							local subconditionals = {}
+							AppendVariantConditionals(subconditionals, subclass, true)
+							-- app.PrintDebug("Create Root Constructor",subfields.RootConstructor,"for",className .. subclassName,"with",#subconditionals,"conditionals")
+							app[subfields.RootConstructor] = BuildClassConstructor(subconditionals, classKey, subclass)
+						end
+					end
 					AppendVariantConditionals(conditionals, subclass)
 				else
 					conditionals[#conditionals] = conditional
@@ -689,18 +809,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 	end
 	-- Class variants must be added following other subclasses/variants
 	AppendVariantConditionals(conditionals, Class)
-	total = #conditionals;
-	local classConstructor = total > 0 and function(id, t)
-		t = constructor(id, t, classKey);
-		for i=1,total,1 do
-			if conditionals[i](t) then
-				return t;
-			end
-		end
-		return setmetatable(t, Class);
-	end or function(id, t)
-		return setmetatable(constructor(id, t, classKey), Class);
-	end
+	local classConstructor = BuildClassConstructor(conditionals, classKey, Class)
 	if not classesByKey[classKey] then
 		classesByKey[classKey] = classConstructor;
 	elseif not fields.IsClassIsolated then
@@ -837,17 +946,23 @@ local OverrideBaseClassFields = {
 	isContainer = true,
 	costTotal = true,
 	upgradeTotal = true,
+	summaryText = true,
+	__type = true,
 }
 -- Allows wrapping one Type Object with another Type Object. This allows for fall-through field logic
 -- without requiring a full copied definition of identical field functions and raw Object content
 app.WrapObject = function(object, baseObject)
-	if not object or not baseObject then
-		error("Tried to WrapObject with none provided!")
+	if not object then
+		error("Tried to WrapObject with no object provided!")
+	end
+	if not baseObject then
+		error("Tried to WrapObject with no baseObject provided!")
 	end
 	-- need to preserve the existing object's meta AND return the object being wrapped while also allowing fallback to the base object
 	local objectMeta = getmetatable(object)
 	if not objectMeta then
-		error("Tried to WrapObject which has no metatable! (Wrapping not necessary)")
+		-- for a raw object, simply metatable it with an __index of the baseObject
+		return setmetatable(object, { __index = baseObject })
 	end
 	-- save the set of originally-defined meta-fields of this object's class
 	local __class = objectMeta.__wrapclass
@@ -972,19 +1087,24 @@ app.GetOrCreateCache = function(idField, className)
 	return app.CreateCache(idField, className)
 end
 
--- Allows creating a group which is keyed based on only its 'text' field
-app.CreateRawText = app.CreateClass("RawText", "text", {
+-- Allows creating a group which is keyed based on only its 'name' field
+app.CreateRawText = app.CreateClass("RawText", "strKey", {
 	name = function(t)
-		return t.text
+		return t.strKey;
 	end,
 	isHeader = app.ReturnTrue,
 })
 
+local DLOBaseOverrides = {
+	visible = true,
+	total = 0,
+	progress = 0,
+}
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
 app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	local o;
-	local def = {}
+	local def
 	local params = {...};
 	local loader = {
 		__index = function(t, key)
@@ -1000,7 +1120,7 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				rawset(t, "__o", o);
 				-- allow the object to reference the DLO if needed
 				o.__dlo = t;
-				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash)
+				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash,"visible:",o.visible,t.visible)
 				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
 				if overrides.OnLoad then overrides.OnLoad(o); end
 			end
@@ -1008,23 +1128,24 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- override for the object
 			local override = overrides and overrides[key];
 			if override ~= nil then
-				-- app.PrintDebug("DLO:override",key,":",override)
+				-- app.PrintDebug("DLO:override",o,key,":",override)
 				-- overrides can also be a function which will execute once the object has been created
-				if o and type(override) == "function" then
-					return override(o, key);
+				if type(override) == "function" then
+					if o then
+						return override(o, key);
+					end
+					-- functions retrieved prior to o generation should pass to other defaults
 				else
 					return override;
 				end
 			-- existing object, then reference the respective key
 			elseif o then
 				return o[key];
-			-- otherwise ensure visible
-			elseif key == "visible" then
-				-- app.PrintDebug("dlo.visible",unpack(params))
-				return true;
 			end
+			local basedef = DLOBaseOverrides[key]
+			if basedef ~= nil then return basedef end
 			-- return any default value
-			return def[key]
+			if def then return def[key] end
 		end,
 		-- transfer field sets to the underlying object if the field does not have an override for the object
 		__newindex = function(t, key, val)
@@ -1037,7 +1158,8 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				rawset(t, key, val);
 			else
 				-- allow direct assignment prior to o creation to the set of default fields
-				def[key] = val
+				if not def then def = {[key]=val}
+				else def[key] = val end
 			end
 		end,
 	};
@@ -1130,7 +1252,6 @@ end
 local function NotInitialized(name)
 	app.print(name,"not initialized yet...");
 end
-app.SetAccountCollected = function() NotInitialized("SetAccountCollected") end;
 app.SetCollected = function() NotInitialized("SetCollected") end;
 app.SetCached = function() NotInitialized("SetCached") end;
 app.IsCached = function() NotInitialized("IsCached") end;
@@ -1138,3 +1259,4 @@ app.IsAccountCached = function() NotInitialized("IsAccountCached") end;
 app.IsAccountTracked = function() NotInitialized("IsAccountTracked") end;
 app.SetBatchAccountCached = function() NotInitialized("SetBatchAccountCached") end;
 app.SetBatchCached = function() NotInitialized("SetBatchCached") end;
+app.SetBatchCachedAndTrackChanges = function() NotInitialized("SetBatchCachedAndTrackChanges") end;

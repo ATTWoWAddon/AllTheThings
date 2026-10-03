@@ -1,0 +1,226 @@
+1.60.1.69876
+r(1240944),	-- Blacksmithing
+r(1240955),	-- Blacksmithing
+r(1240966),	-- Blacksmithing
+r(1240979),	-- Blacksmithing
+r(1252359),	-- Mithril Claymore
+r(1252988),	-- Earthcrusher's Adaptive Chestplate
+r(1252989),	-- Earthcrusher's Adaptive Armguards
+r(1252990),	-- Earthcrusher's Adaptive Girdle
+r(1253001),	-- Earthweaver's Adaptive Plate
+r(1253002),	-- Earthweaver's Adaptive Links
+r(1253003),	-- Earthweaver's Adaptive Waistguard
+r(1277780),	--
+r(1301421),	-- Cloudy Skyforged Chainmail
+r(1301426),	-- Cloudy Skyforged Greaves
+r(1301445),	-- Azure Skyforged Chainmail
+r(1301450),	-- Azure Skyforged Greaves
+r(1302598),	-- Rough Copper Chain Boots
+
+
+Missing in Blacksmithing
+
+1.60.1.69876
+r(1230171),	-- Sharpening Wheel
+r(1240944),	-- Blacksmithing
+r(1240955),	-- Blacksmithing
+r(1240966),	-- Blacksmithing
+r(1240979),	-- Blacksmithing
+r(1245287),	-- Copper Rod
+r(1252229),	-- Gemmed Copper Boots
+r(1252230),	-- Strange Copper Boots
+r(1252231),	-- Glowing Copper Boots
+r(1252232),	-- Sterling Silver Boots
+r(1252233),	-- Sterling Silver Leggings
+r(1252234),	-- Sterling Silver Gauntlet
+r(1252235),	-- Sterling Silver Shoulders
+r(1252236),	-- Sterling Silver Breastplate
+r(1252237),	-- Veteran's Chain Shirt
+r(1252238),	-- Guard's Chain Shirt
+r(1252239),	-- Protector's Chain Shirt
+r(1252240),	-- Acolyte's Chain Shirt
+r(1252241),	-- Crusader's Chain Shirt
+r(1252242),	-- Veteran's Chain Leggings
+r(1252243),	-- Guard's Chain Leggings
+r(1252244),	-- Protector's Chain Leggings
+r(1252245),	-- Acolyte's Chain Leggings
+r(1252246),	-- Crusader's Chain Leggings
+r(1252247),	-- Veteran's Chain Helm
+r(1252248),	-- Guard's Chain Helm
+r(1252249),	-- Protector's Chain Helm
+r(1252250),	-- Acolyte's Chain Helm
+r(1252251),	-- Crusader's Chain Helm
+r(1252257),	-- Veteran's Gloves
+r(1252258),	-- Guard's Gloves
+r(1252259),	-- Protector's Gloves
+r(1252260),	-- Acolyte's Gloves
+r(1252261),	-- Crusader's Gloves
+r(1252262),	-- Veteran's Chain Belt
+r(1252263),	-- Guard's Chain Belt
+r(1252264),	-- Protector's Chain Belt
+r(1252265),	-- Acolyte's Chain Belt
+r(1252266),	-- Crusader's Chain Belt
+r(1252267),	-- Veteran's Silvered Chain Shirt
+r(1252268),	-- Guard's Silvered Chain Shirt
+r(1252269),	-- Protector's Silvered Chain Shirt
+r(1252270),	-- Acolyte's Silvered Chain Shirt
+r(1252271),	-- Crusader's Silvered Chain Shirt
+r(1252272),	-- Veteran's Silvered Chain Leggings
+r(1252273),	-- Guard's Silvered Chain Leggings
+r(1252274),	-- Protector's Silvered Chain Leggings
+r(1252275),	-- Acolyte's Silvered Chain Leggings
+r(1252276),	-- Crusader's Silvered Chain Leggings
+r(1252277),	-- Veteran's Silvered Chain Helm
+r(1252278),	-- Guard's Silvered Chain Helm
+r(1252279),	-- Protector's Silvered Chain Helm
+r(1252280),	-- Acolyte's Silvered Chain Helm
+r(1252281),	-- Crusader's Silvered Chain Helm
+r(1252282),	-- Hard Gold Cuirass
+r(1252283),	-- Hard Gold Boots
+r(1252284),	-- Hard Gold Bracers
+r(1252285),	-- Hard Gold Leggings
+r(1252286),	-- Hard Gold Coif
+r(1252287),	-- Hard Gold Gauntlet
+r(1252288),	-- Hard Gold Pauldrons
+r(1252289),	-- Shining Mithril Breastplate
+r(1252290),	-- Shining Mithril Pauldrons
+r(1252291),	-- Shining Mithril Boots
+r(1252292),	-- Shining Mithril Helm
+r(1252293),	-- Shining Mithril Pants
+r(1252294),	-- Shining Mithril Gauntlet
+r(1252295),	-- Officer's Boots
+r(1252296),	-- Sentinel's Boots
+r(1252297),	-- Warder's Boots
+r(1252298),	-- Prefect's Boots
+r(1252299),	-- Justicar's Boots
+r(1252300),	-- Officer's Gloves
+r(1252301),	-- Sentinel's Gloves
+r(1252302),	-- Warder's Gloves
+r(1252303),	-- Prefect's Gloves
+r(1252304),	-- Justicar's Gloves
+r(1252305),	-- Officer's Belt
+r(1252306),	-- Sentinel's Belt
+r(1252307),	-- Warder's Belt
+r(1252308),	-- Prefect's Belt
+r(1252309),	-- Justicar's Belt
+r(1252310),	-- Officer's Sabatons
+r(1252311),	-- Sentinel's Sabatons
+r(1252312),	-- Warder's Sabatons
+r(1252313),	-- Prefect's Sabatons
+r(1252314),	-- Justicar's Sabatons
+r(1252315),	-- Officer's Gauntlet
+r(1252316),	-- Sentinel's Gauntlet
+r(1252317),	-- Warder's Gauntlet
+r(1252318),	-- Prefect's Gauntlet
+r(1252319),	-- Justicar's Gauntlet
+r(1252320),	-- Officer's Waistguard
+r(1252321),	-- Sentinel's Waistguard
+r(1252322),	-- Warder's Waistguard
+r(1252323),	-- Prefect's Waistguard
+r(1252324),	-- Justicar's Waistguard
+r(1252325),	-- Officer's Pauldrons
+r(1252326),	-- Sentinel's Pauldrons
+r(1252327),	-- Warder's Pauldrons
+r(1252328),	-- Prefect's Pauldrons
+r(1252329),	-- Justicar's Pauldrons
+r(1252330),	-- Officer's Wristguards
+r(1252331),	-- Sentinel's Wristguards
+r(1252332),	-- Warder's Wristguards
+r(1252333),	-- Prefect's Wristguards
+r(1252334),	-- Justicar's Wristguards
+r(1252335),	-- Blessed Plate Pauldrons
+r(1252336),	-- Blessed Plate Boots
+r(1252337),	-- Blessed Plate Gauntlet
+r(1252338),	-- Imperial Plate Gauntlets
+r(1252339),	-- Blessed Plate Bracers
+r(1252340),	-- Blessed Plate Leggings
+r(1252341),	-- Blessed Plate Belt
+r(1252342),	-- Blessed Plate Helm
+r(1252343),	-- Blessed Plate Chest
+r(1252344),	-- Enriched Thorium Breastplate
+r(1252345),	-- Enriched Thorium Leggings
+r(1252346),	-- Enriched Thorium Helm
+r(1252347),	-- Champion's Legplates
+r(1252348),	-- Stalwart Helm
+r(1252349),	-- Martyr's Legplates
+r(1252350),	-- Breastplate of Salvation
+r(1252351),	-- Brass Knuckles
+r(1252352),	-- Bronze Dory
+r(1252353),	-- Iron Fists
+r(1252354),	-- Steel Spear
+r(1252355),	-- Iron Morningstar
+r(1252356),	-- Mithril Shortsword
+r(1252357),	-- Mithril Warhammer
+r(1252358),	-- Mithril Claws
+r(1252359),	-- Mithril Claymore
+r(1252360),	-- Mithril Stiletto
+r(1252361),	-- Charged Mithril Battleaxe
+r(1252362),	-- Thorium Greatmace
+r(1252363),	-- Thorium Cestus
+r(1252364),	-- Thorium Poleaxe
+r(1252365),	-- Bold Dirk
+r(1252366),	-- Stormcarver
+r(1252367),	-- Bagh Nakh
+r(1252368),	-- Legionite Glaive
+r(1252988),	-- Earthcrusher's Adaptive Chestplate
+r(1252989),	-- Earthcrusher's Adaptive Armguards
+r(1252990),	-- Earthcrusher's Adaptive Girdle
+r(1253001),	-- Earthweaver's Adaptive Plate
+r(1253002),	-- Earthweaver's Adaptive Links
+r(1253003),	-- Earthweaver's Adaptive Waistguard
+r(1263041),	-- Anvil
+r(1263073),	-- Master Forge
+r(1277780),	--
+r(1292945),	-- Justice Leggings
+r(1292946),	-- Justice Gauntlets
+r(1292947),	-- Justice Spaulders
+r(1292948),	-- Justice Greaves
+r(1292949),	-- Justice Legplates
+r(1292950),	-- Justice Gloves
+r(1292951),	-- Justice Epaulets
+r(1292952),	-- Justice Treads
+r(1292953),	-- Justice Legguards
+r(1292954),	-- Justice Handguards
+r(1292955),	-- Justice Pauldrons
+r(1292956),	-- Justice Sabatons
+r(1292981),	-- Legplates of Glory
+r(1292982),	-- Gauntlets of Glory
+r(1292983),	-- Shoulders of Glory
+r(1292984),	-- Greaves of Glory
+r(1292985),	-- Legguards of Glory
+r(1292986),	-- Handguards of Glory
+r(1292987),	-- Pauldrons of Glory
+r(1292988),	-- Sabatons of Glory
+r(1297138),	-- Goregasher Grips
+r(1297139),	-- Goregasher Support
+r(1297140),	-- Goregasher Stompers
+r(1297141),	-- Clutchlord's Grips
+r(1297142),	-- Clutchlord's Support
+r(1297143),	-- Clutchlord's Stompers
+r(1301421),	-- Cloudy Skyforged Chainmail
+r(1301422),	-- Cloudy Skyforged Wristguards
+r(1301423),	-- Cloudy Skyforged Gauntlets
+r(1301424),	-- Cloudy Skyforged Chain
+r(1301425),	-- Cloudy Skyforged Legguards
+r(1301426),	-- Cloudy Skyforged Greaves
+r(1301445),	-- Azure Skyforged Chainmail
+r(1301446),	-- Azure Skyforged Wristguards
+r(1301447),	-- Azure Skyforged Gauntlets
+r(1301448),	-- Azure Skyforged Chain
+r(1301449),	-- Azure Skyforged Legguards
+r(1301450),	-- Azure Skyforged Greaves
+r(1301526),	-- Cloudy Skyforged Helm
+r(1301527),	-- Cloudy Skyforged Pauldrons
+r(1301534),	-- Azure Skyforged Helm
+r(1301535),	-- Azure Skyforged Pauldrons
+r(1302598),	-- Rough Copper Chain Boots
+r(1306533),	-- Ironwood Blade
+r(1306534),	-- Forest Defender's Axe
+r(1306535),	-- Greenhammer
+r(1306536),	-- Evergreen Shield
+r(1306537),	-- Depleted Thorium Sabatons
+r(1306538),	-- Heavy Thorium Gauntlets
+r(1306539),	-- Azerothium Legplates
+r(1317962),	-- Cracked Blacksmith Hammer
+r(1317963),	-- Mithril Blacksmith Hammer
+r(1317964),	-- Arcanite Blacksmith Hammer

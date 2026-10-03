@@ -1,0 +1,515 @@
+---------------------------------------------
+--      H O U S I N G    M O D U L E       --
+---------------------------------------------
+
+MAIL_DELIVERY_RACES = createHeader({
+	readable = "Mail Delivery Races",
+	icon = 413580,
+	text = {
+		en = "Neighborhood Postal Route",
+		de = "Postroute in der Nachbarschaft",
+		es = "Ruta postal del vecindario",
+		mx = "Ruta postal de vecindario",
+		fr = "Tournée postale dans le quartier",
+		it = "Percorso postale nel Vicinato",
+		ko = "거주구 우편 경로를",
+		pt = "Rota postal na vizinhança",
+		ru = "Pайонный почтовый маршрут",
+		cn = "住宅区邮路",
+		tw = "社區郵政路線"
+	},
+});
+
+root(ROOTS.Housing, {
+	n(QUESTS, {
+		["timeline"] = { ADDED_11_2_7 },
+		["groups"] = {
+			q(93057, {	-- A House For You
+				["description"] = "Triggers on login. Requires a re-log if purchasing Midnight via in-game shop.",
+				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+				["isBreadcrumb"] = true,
+			}),
+			q(91863, {	-- My First House
+				["sourceQuests"] = { 93057 },	-- A House For You
+				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			}),
+			q(94455, {	-- Home at Last
+				["sourceQuests"] = { 91863 },	-- My First House
+				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			}),
+			q(91968, {	-- Welcome Home
+				["sourceQuests"] = { 94455 },	-- Home at Last
+				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			}),
+			q(91969, {	-- Time to Decorate
+				["sourceQuests"] = { 91968 },	-- Welcome Home
+				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			}),
+			q(94210, {	-- Feathering the Nest
+				["sourceQuests"] = { 91969 },	-- Time to Decorate
+				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			}),
+			q(94379, {	-- This Old Hearth
+				["sourceQuests"] = { 94210 },	-- Feathering the Nest
+				["qgs"] = {
+					233063,	-- Lyssabel Dawnpetal
+					233708,	-- Tocho Couldhide
+				},
+				["coords"] = {
+					{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal
+					{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide
+				},
+				["groups"] = {
+					i(266892, sharedDataSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Neighborhood Campsites
+						campsite(146),	-- Founder's Point
+						campsite(145),	-- Razorwind Shores
+					})),
+				},
+			}),
+			q(92816, {	-- A Letter for Adventure
+				["sourceQuests"] = { 94379 },	-- This Old Hearth
+				["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+				-- apparently only obtainable via an Exile's Reach character as first Housing Tutorial on BNet account...
+				["lockCriteria"] = { 1, "questID", 91863, "lvl", 60 },	-- My First House / 60
+				["customCollect"] = { "NPE" },
+				["groups"] = {
+					i(254504),	-- Adventuring Letter (QI!)
+				},
+			}),
+			q(93647, {	-- Lumber For You
+				["qgs"] = {
+					255519,	-- Lestia Goldenstrike <Lumberjack>
+					255520,	-- Xiz'ro <Lumberjack>
+				},
+				["coords"] = {
+					{ 53.9, 39.5, FOUNDERS_POINT },	-- Lestia Goldenstrike <Lumberjack>
+					{ 53.6, 56.6, RAZORWIND_SHORES },	-- Xiz'ro <Lumberjack>
+					{ 54.2, 58.0, RAZORWIND_SHORES },	-- Xiz'ro <Lumberjack>
+				},
+			}),
+			q(89450, {	-- Create a Neighborhood
+				["qgs"] = {
+					233063,	-- Lyssabel Dawnpetal
+					233708,	-- Tocho Couldhide
+				},
+				["coords"] = {
+					{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal
+					{ 55.3, 57.6, RAZORWIND_SHORES },	-- Tocho Couldhide
+				},
+				["timeline"] = { ADDED_12_0_0 },
+				["groups"] = { i(239098) },	-- Neighborhood Charter
+			}),
+			q(94995, {	-- To Dye For
+				["qgs"] = {
+					255125,	-- Haleth Turnwater
+					255126,	-- Helmi Cooper
+				},
+				["coords"] = {
+					{ 52.4, 37.8, FOUNDERS_POINT },
+					{ 53.7, 58.1, RAZORWIND_SHORES },
+				},
+				["timeline"] = { ADDED_12_0_0 },
+				["groups"] = {
+					i(259115, {	-- Alliance Blue Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(274468, {	-- Blue Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(274470, {	-- Green Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(259113, {	-- Horde Red Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(259114, {	-- Lush Green Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+					i(274472, {	-- Purple Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(274473, {	-- Red Housing Dye
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					i(259126, {	-- Void Violet Dye
+						["timeline"] = { REMOVED_12_1_0 },
+					}),
+				},
+			}),
+			hqt(95389, {	-- Looted Essence of Lumber from logging trees (Weekly)
+				["name"] = "Looted Essence of Lumber from harvesting trees (Weekly)",
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_12_0_7 },
+				["groups"] = { i(269010) },	-- Essence of Lumber
+			}),
+			q(98204, {	-- Cursed Keepsake
+				["description"] = "Decor offered by the quest is on a rotation and is different per character on your account.\nYou can complete and obtain only 1 of 2 offered Decor Scenarios per Housing Area, per week.\nYou can buy additional copies of the Decor from the Cursed Keepsake after Scenario Completion with 'Keepsake Corruption' you have gathered as currency.",
+				["qg"] = 262726,	-- Cursed Keepsake
+				["coords"] = {
+					{ 52.7, 37.6, FOUNDERS_POINT },
+					{ 53.7, 57.4, RAZORWIND_SHORES },
+				},
+				["maps"] = { 0 },	-- Not kidding.
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+				["qi"] = 274481,	-- Keepsake Corruption (QI!)
+				["groups"] = {
+					i(255712),	-- Purified Ancient Urn (DECOR!)
+					i(253396),	-- Purified Crude Axe (DECOR!)
+					i(253703),	-- Purified Crude Hammer (DECOR!)
+					i(278696),	-- Purified Dracthyr Stein (DECOR!)
+					i(272142),	-- Purified Earthen Pot (DECOR!)
+					i(267355),	-- Purified Elven Mirror (DECOR!)
+					i(268943),	-- Purified Elven Glowlamp (DECOR!)
+					i(245993),	-- Purified Floating Lantern (DECOR!)
+					i(263876),	-- Purified Folk Mirror (DECOR!)
+					i(267205),	-- Purified Folk Candle (DECOR!)
+					i(278701),	-- Purified Goblin Cup (DECOR!)
+					i(267435),	-- Purified Kaldorei Candle (DECOR!)
+					i(245991),	-- Purified Sin'dorei Candle (DECOR!)
+					i(272129),	-- Purified Tauren Pot (DECOR!)
+					i(256684),	-- Purified Troll Amulet (DECOR!)
+					i(255652),	-- Purified Troll Loop (DECOR!)
+					i(256361),	-- Purified Troll Pendant (DECOR!)
+					i(252042),	-- Purified Troll Pitcher (DECOR!)
+					i(258540),	-- Purified Troll Ring (DECOR!)
+					i(244347),	-- Purified Troll Urn (DECOR!)
+				},
+			}),
+			q(98406, {	-- A Curated Gift
+				["description"] = "Unlocks when your house reaches Level 8.",
+				["qgs"] = {
+					248854,	-- The Last Architect [Founder's Point]
+					253596,	-- The Last Architect [Razorwind Shores]
+				},
+				["coords"] = {
+					{ 52.7, 37.5, FOUNDERS_POINT },
+					{ 53.7, 57.4, RAZORWIND_SHORES }
+				},
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = {
+					i(277975, {	-- Arcanostorage Sphere
+						i(245539),	-- Elegant Enchanted Vanity (DECOR!)
+						i(246958),	-- Mastercrafted Fungal Row Planter (DECOR!)
+						i(253481),	-- Masterful Sin'dorei Gravestone (DECOR!)
+						i(254561),	-- Ogre Champion's Prized Skull (DECOR!)
+						i(253397),	-- Revered Deepstone Table (DECOR!)
+						i(249923),	-- Sin'dorei Golden Welcome (DECOR!)
+					}),
+				},
+			}),
+			q(96780, {	-- Local Kafa Shop
+				["qg"] = 263258,	-- Cousin Shortkaf <Kafa Trader>
+				["coords"] =  {
+					{ 55.1, 43.6, FOUNDERS_POINT },
+					{ 55.2, 61.9, RAZORWIND_SHORES },
+				},
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(95387, {	-- One Neighbor's Junk is Another Troll's Treasure
+				["qg"] = 260485,	-- Griftah
+				["coords"] = {
+					{ 53.1, 38.1, FOUNDERS_POINT },
+					{ 54.2, 56.0, RAZORWIND_SHORES },
+				},
+				["isRepeatable"] = true,
+				["cost"] = { { "i", 269937, 3 } },	-- 3x Amani Construction Hammer
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(97073, {	-- Rustbolt Retailer
+				["qg"] = 267856,	-- J-3T 3000
+				["coords"] =  {
+					{ 55.2, 43.6, FOUNDERS_POINT },
+					{ 53.1, 54.5, RAZORWIND_SHORES },
+				},
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+		},
+	}),
+	n(QUESTS, sharedData({
+		["qg"] = 252312,	-- Second Chair Pawdo
+		["coords"] = {
+			{ 52.9, 68.0, DORNOGAL },
+			{ 52.9, 89.0, ORGRIMMAR },
+			{ 56.1, 77.1, STORMWIND_CITY },
+		},
+		["timeline"] = { ADDED_11_2_7 },
+	}, {
+		q(92578, {	-- Draconic Decor
+			["groups"] = { i(248116) },	-- Valdrakken Chandelier (DECOR!)
+		}),
+		q(92577, {	-- Dreamy Inspiration
+			["groups"] = { i(245259) },	-- Small Val'sharah Bookcase (DECOR!)
+		}),
+		q(92572, {	-- Furniture Favor
+			["groups"] = { i(253173) },	-- Meadery Storage Barrel (DECOR!)
+		}),
+		q(92581, {	-- Last Light
+			["groups"] = { i(247915) },	-- Square Suramar Table (DECOR!)
+		}),
+		q(92580, {	-- Spare A Chair
+			["groups"] = {
+				i(246487),	-- Gnomish Tesla Coil (DECOR!)
+				i(265822),	-- Unstable Mechagon Re-Localizatron (QI!)
+			},
+		}),
+	})),
+	n(QUESTS, {
+		["groups"] = sharedData({
+			["qgs"] = {
+				260942,	-- Vaeli @ Founder's Point
+				260943,	-- Vaeli @ Razorwind Shores
+				260957,	-- Vaeli @ Silvermoon City
+				260958,	-- Vaeli (This ID has been reported in both Neighborhoods)
+			},
+			["coords"] = {
+				{ 51.9, 39.5, FOUNDERS_POINT },
+				{ 49.5, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				{ 52.9, 59.8, RAZORWIND_SHORES }
+			},
+			["isWeekly"] = true,
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["groups"] = {	-- All quests given by Vaeli offer 'Essence of Lumber' as a reward
+				i(280734, {	-- Warbound Pack of Champion Mistcrests
+					["timeline"] = { ADDED_12_1_0 },
+				}),
+				i(280732, {	-- Warbound Pack of Hero Mistcrests
+					["timeline"] = { ADDED_12_1_0 },
+				}),
+				i(280737, {	-- Warbound Pack of Veteran Mistcrests
+					["timeline"] = { ADDED_12_1_0 },
+				}),
+				i(274070, {	-- Warbound Pack of Champion Dawncrests
+					["timeline"] = { REMOVED_12_1_0 },
+				}),
+				i(274069, {	-- Warbound Pack of Hero Dawncrests
+					["timeline"] = { REMOVED_12_1_0 },
+				}),
+				i(274071, {	-- Warbound Pack of Veteran Dawncrests
+					["timeline"] = { REMOVED_12_1_0 },
+				}),
+				-- Maybe do this better somehow. Technically this item should be a 'cost' on a symlink group attached to the respective Housing Lumberjack NPCs in both neighborhoods...  then could have proper coords on the NPC and cost indicator
+				i(269010, {	-- Essence of Lumber
+					["description"] =
+						-- #if AFTER 12.1
+						"Converts to 20 of any other Lumber type.\nWith the vendor re-design in 12.1, purchases of lumber using this item no longer grant progress towards the respective 'Lumberjack' achievement.",
+						-- #else
+						"Converts to 20 of any other Lumber type.",
+						-- #endif
+					["sym"] = {{"select","itemID",
+						245586,	-- Ironwood Lumber
+						242691,	-- Olemba Lumber
+						251762,	-- Coldwind Lumber
+						251764,	-- Ashwood Lumber
+						251763,	-- Bamboo Lumber
+						251766,	-- Shadowmoon Lumber
+						251767,	-- Fel-Touched Lumber
+						251768,	-- Darkpine Lumber
+						251772,	-- Arden Lumber
+						251773,	-- Dragonpine Lumber
+						248012,	-- Dornic Fir Lumber
+						256963,	-- Thalassian Lumber
+					}},
+				}),
+			},
+		}, {
+			q(95413),	-- Community Engagement
+			q(95416),	-- Going Postal
+			q(95440),	-- Housewarming
+			q(95438),	-- Lost Animals
+		}),
+	}),
+	n(QUESTS, sharedData({	-- Repeatables
+		["isRepeatable"] = true,
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = { i(269937) },	-- Neighborhood Knick Knack
+	}, {
+		q(95584, {	-- "Aromatic" Bottle
+			["qgs"] = {
+				255222,	-- "High Tides" Ren
+				255325,	-- "High Tides" Ren
+			},
+			["coords"] = {
+				{ 62.4, 80.1, FOUNDERS_POINT },
+				{ 39.8, 72.8, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268976, 1 } },	-- 1x "Aromatic" Bottle
+		}),
+		q(95590, {	-- Amani Construction Hammer
+			["qgs"] = {
+				255104,	-- Jorvan Longmoor
+				254687,	-- Rotha
+			},
+			["coords"] = {
+				{ 54.0, 39.6, FOUNDERS_POINT },
+				{ 53.6, 56.6, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 269019, 1 } },	-- 1x Amani Construction Hammer
+		}),
+		q(95589, {	-- Amani Waraxe
+			["qgs"] = {
+				255519,	-- Lestia Goldenstrike
+				255520,	-- Xiz'ro
+			},
+			["coords"] = {
+				{ 54.0, 39.5, FOUNDERS_POINT },
+				{ 53.6, 56.6, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268975, 1 } },	-- 1x Amani War Axe
+		}),
+		q(95585, {	-- Bone Pen
+			["qgs"] = {
+				233063,	-- Lyssabel Dawnpetal
+				233708,	-- Tocho Cloudhide
+			},
+			["coords"] = {
+				{ 53.1, 40.0, FOUNDERS_POINT },
+				{ 55.2, 57.6, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268973, 1 } },	-- 1x Bone Pen
+		}),
+		q(95587, {	-- Deactivated Amani Hex Ward
+			["qgs"] = {
+				248854,	-- The Last Architect
+				253596,	-- The Last Architect
+			},
+			["coords"] = {
+				{ 52.7, 37.5, FOUNDERS_POINT },
+				{ 53.6, 57.4, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268970, 1 } },	-- 1x Majestic Eagle Statue
+		}),
+		q(95597, {	-- Jan'alai Bibelot
+			["qgs"] = {
+				261942,	-- Cory Mear
+				262021,	-- Lisabeth Rothwell
+			},
+			["coords"] = {
+				{ 38.4, 32.2, FOUNDERS_POINT },
+				{ 47.2, 62.0, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 269021, 1 } },	-- 1x Jan'alai Bibelot
+		}),
+		q(95576, {	-- Majestic Eagle Statue
+			["qgs"] = {
+				255213,	-- Faarden the Builder
+				255297,	-- Shon'ja
+			},
+			["coords"] = {
+				{ 52.0, 38.4, FOUNDERS_POINT },
+				{ 54.0, 59.0, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268974, 1 } },	-- 1x Deactivated Amani Hex Ward
+		}),
+		q(95592, {	-- Ossein Fish Trinket
+			["qgs"] = {
+				255644,	-- Olafus
+				240345,	-- Nahuna
+			},
+			["coords"] = {
+				{ 29.0, 46.7, FOUNDERS_POINT },
+				{ 53.6, 82.0, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268977, 1 } },	-- 1x Ossein Fish Trinket
+		}),
+		q(95583, {	-- Pressed Sanguithorn
+			["qgs"] = {
+				255221,	-- Trevor Grenner
+				255301,	-- Botanist Boh'an
+			},
+			["coords"] = {
+				{ 53.4, 40.8, FOUNDERS_POINT },
+				{ 53.6, 57.6, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268972, 1 } },	-- 1x Pressed Sanguithorn
+		}),
+		q(95595, {	-- Scrimshaw Ward
+			["qgs"] = {
+				256750,	-- Klasa
+				240465,	-- Lonomia
+			},
+			["coords"] = {
+				{ 58.3, 61.7, FOUNDERS_POINT },
+				{ 68.2, 75.4, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 269020, 1 } },	-- 1x Scrimshaw Ward
+		}),
+		q(95593, {	-- Torga Statue
+			["qgs"] = {
+				257168,	-- Throska
+			},
+			["coords"] = {
+				{ 62.1, 82.2, FOUNDERS_POINT },
+				{ 39.0, 74.0, RAZORWIND_SHORES },
+			},
+			["cost"] = { { "i", 268978, 1 } },	-- 1x Torga Statue
+		}),
+	})),
+	n(MAIL_DELIVERY_RACES, {	-- Founder's Point Mail Delivery
+		["timeline"] = { ADDED_12_0_1_LAUNCH },
+		["groups"] = sharedData({	-- All Founder's Point Mail Delivery quests
+			["qg"] = 260942,	-- Vaeli
+			["coord"] = { 51.9, 39.5, FOUNDERS_POINT },
+			["isRepeatable"] = true,
+		}, {
+			q(95407),	-- Autumnal Addresses		// Gilded Oaks route
+			q(95408),	-- Coastal Courier			// Outer Banks route
+			q(95409),	-- High Road, Hollow Road	// Ridge and Hollow route
+		}),
+	}),
+	n(MAIL_DELIVERY_RACES, {	-- Razorwind Mail Delivery
+		["timeline"] = { ADDED_12_0_1_LAUNCH },
+		["groups"] = sharedData({
+			["qg"] = 260943,	-- Vaeli
+			["coord"] = { 52.9, 59.8, RAZORWIND_SHORES },
+			["isRepeatable"] = true,
+		}, {
+			q(95410),	-- Cragthorn Certified		// Cragthorn Highlands route
+			q(95411),	-- Desert Dispatch			// Bloom and Shore route
+			q(95412),	-- Runetotem Run			// Runetotem's Bounty route
+		}),
+	}),
+});
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.TWW, {
+		n(HOUSING, {
+			["timeline"] = { ADDED_11_2_7 },
+			["groups"] = {
+				q(92486),	-- Triggered after acquired a house
+				q(92654),	-- Triggered after talking to Elven Decor vendor
+				q(92666),	-- Triggered after talking to Local Decor vendor
+				q(92733),	-- Triggered after entering house
+				q(94424),	-- Triggered after entering house
+				q(92734),	-- Triggered after entering Razorwind and Founder's Point
+				q(93629),	-- Triggered after completing 'Time to Decorate'
+				q(94392),	-- Triggered after talking to flora decor
+				-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
+				q(95166, {	-- Pet the Pet
+					["name"] = "Pet the Pet",
+					["qgs"] = {
+						-- Add more Pets as you discover them!
+						235461,	-- Cat
+						245551,	-- Dog
+						256523,	-- Raptor Hatchling
+						256522,	-- Wolf Pup
+					},
+					["isDaily"] = true,
+				}),
+			},
+		}),
+	}),
+});
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.MID, {
+		n(HOUSING, {
+			["timeline"] = { ADDED_12_0_0 },
+			["groups"] = {
+				q(94905),	-- Triggered after completing "Home: Arcane Acrobatics" activity during 'Consortium Consternation' Endeavor
+				q(95406),	-- Lost Animals, Triggered after completing 'Lost Animals' (95438)
+			},
+		}),
+	}),
+});

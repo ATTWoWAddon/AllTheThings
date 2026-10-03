@@ -1,0 +1,108 @@
+1.60.1.69876
+r(2330),	--
+r(2337),	--
+r(2365),	-- Draught of Tongues
+r(3447),	--
+r(6619),	--
+r(7181),	--
+r(11447),	-- Draught of Water Walking
+r(11457),	--
+r(17556),	--
+r(17579),	-- Greater Holy Protection Potion
+r(17632),	-- Alchemist's Stone
+r(22430),	-- Refined Scale of Onyxia
+r(22732),	-- Major Rejuvenation Potion
+r(24365),	-- Mageblood Elixir
+r(24366),	-- Greater Dreamless Sleep Potion
+r(24367),	-- Living Action Potion
+r(24368),	-- Major Troll's Blood Elixir
+r(426607),	-- Elixir of Coalesced Regret
+r(435969),	-- Insulating Gniodine
+r(435971),	-- Mildly Irradiated Rejuvenation Potion
+r(439960),	-- Lesser Arcane Elixir
+r(446226),	-- Flask of Everlasting Nightmares
+r(446851),	-- Jar of Nightmarish Mojo
+r(448085),	-- Flask of Restless Dreams
+r(1213544),	-- Flask of Unyielding Sorrow
+r(1213546),	-- Flask of Ancient Knowledge
+r(1213548),	-- Flask of the Old Gods
+r(1213552),	-- Flask of Madness
+r(1213559),	-- Elixir of the Honey Badger
+r(1213563),	-- Elixir of the Mage-Lord
+r(1213565),	-- Elixir of the Ironside
+r(1213571),	-- Elixir of Alacrity
+r(1231583),	-- Major Discolored Healing Potion
+r(1240943),	-- Alchemy
+r(1240954),	-- Alchemy
+r(1240965),	-- Alchemy
+r(1240977),	-- Alchemy
+r(1244421),	-- Distilled Firewater
+r(1250775),	-- Revealing Draught
+r(1250776),	-- Draught of Predatory Senses
+r(1250781),	-- Cleric's Elixir
+r(1250783),	-- Elixir of Fortitude
+r(1250795),	-- Elixir of Spirit
+r(1250798),	-- Elixir of Strength
+r(1250802),	-- Elixir of Intellect
+r(1251733),	-- Superior Spellblasting Potion
+r(1251739),	-- Superior Frenzy Potion
+r(1251745),	-- Superior Mender's Potion
+r(1251752),	-- Potion of Elemental Purging \\ Potion of Elemental Siphoning
+r(1251753),	-- Potion of Beast Slaying \\ Potion of Beast Culling
+r(1263078),	-- Alchemy Laboratory
+r(1277779),	--
+r(1293559),	-- Flask of Natural Accuracy
+r(1293560),	-- Flask of Natural Aggression
+r(1293561),	-- Flask of Natural Precision
+r(1293562),	-- Flask of Natural Swiftness
+r(1317279),	-- Transmute: Legionite
+
+
+
+
+Missing in Alchemy
+
+1.60.1.69876
+r(2365),	-- Draught of Tongues
+r(6619),	--
+r(11447),	-- Draught of Water Walking
+r(17579),	-- Greater Holy Protection Potion
+r(17632),	-- Alchemist's Stone
+r(22430),	-- Refined Scale of Onyxia
+r(24266),	-- Gurubashi Mojo Madness
+r(426607),	-- Elixir of Coalesced Regret
+r(435969),	-- Insulating Gniodine
+r(435971),	-- Mildly Irradiated Rejuvenation Potion
+r(439960),	-- Lesser Arcane Elixir
+r(446226),	-- Flask of Everlasting Nightmares
+r(446851),	-- Jar of Nightmarish Mojo
+r(448085),	-- Flask of Restless Dreams
+r(1213544),	-- Flask of Unyielding Sorrow
+r(1213546),	-- Flask of Ancient Knowledge
+r(1213548),	-- Flask of the Old Gods
+r(1213552),	-- Flask of Madness
+r(1213559),	-- Elixir of the Honey Badger
+r(1213563),	-- Elixir of the Mage-Lord
+r(1213565),	-- Elixir of the Ironside
+r(1213571),	-- Elixir of Alacrity
+r(1231583),	-- Major Discolored Healing Potion
+r(1240943),	-- Alchemy
+r(1240954),	-- Alchemy
+r(1240965),	-- Alchemy
+r(1240977),	-- Alchemy
+r(1244421),	-- Distilled Firewater
+r(1250775),	-- Revealing Draught
+r(1250776),	-- Draught of Predatory Senses
+r(1250781),	-- Cleric's Elixir
+r(1250783),	-- Elixir of Fortitude
+r(1250795),	-- Elixir of Spirit
+r(1250798),	-- Elixir of Strength
+r(1250802),	-- Elixir of Intellect
+r(1251733),	-- Superior Spellblasting Potion
+r(1251739),	-- Superior Frenzy Potion
+r(1251745),	-- Superior Mender's Potion
+r(1251752),	-- Potion of Elemental Purging \\ Potion of Elemental Siphoning
+r(1251753),	-- Potion of Beast Slaying \\ Potion of Beast Culling
+r(1263078),	-- Alchemy Laboratory
+r(1277779),	--
+r(1317279),	-- Transmute: Legionite

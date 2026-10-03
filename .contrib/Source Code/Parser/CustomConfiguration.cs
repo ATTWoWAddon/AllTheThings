@@ -146,49 +146,13 @@ namespace ATT
             throw new InvalidOperationException($"CustomConfigurationNode cannot convert to bool type: {(string)value}");
         }
 
-        public static implicit operator string[](CustomConfigurationNode value)
-        {
-            try
-            {
-                return value?._list?.Select(v => (string)v).ToArray();
-            }
-            catch { }
+        public static implicit operator string[](CustomConfigurationNode value) => GetNodeAsArray<string>(value);
 
-            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to string[] type: {(string)value}");
-        }
+        public static implicit operator long[](CustomConfigurationNode value) => GetNodeAsArray<long>(value);
 
-        public static implicit operator long[](CustomConfigurationNode value)
-        {
-            try
-            {
-                return value?._list?.Select(v => (long)v).ToArray();
-            }
-            catch { }
+        public static implicit operator int[](CustomConfigurationNode value) => GetNodeAsArray<int>(value);
 
-            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to long[] type: {(string)value}");
-        }
-
-        public static implicit operator int[](CustomConfigurationNode value)
-        {
-            try
-            {
-                return value?._list?.Select(v => (int)v).ToArray();
-            }
-            catch { }
-
-            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to int[] type: {(string)value}");
-        }
-
-        public static implicit operator object[](CustomConfigurationNode value)
-        {
-            try
-            {
-                return value?._list?.Select(v => v._val).ToArray();
-            }
-            catch { }
-
-            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to object[] type: {(string)value}");
-        }
+        public static implicit operator object[](CustomConfigurationNode value) => GetNodeAsArray<object>(value);
 
         public static implicit operator Dictionary<string, string>(CustomConfigurationNode value)
         {
@@ -331,6 +295,17 @@ namespace ATT
 
             obj = set[index];
             return true;
+        }
+
+        private static T[] GetNodeAsArray<T>(CustomConfigurationNode value)
+        {
+            try
+            {
+                return value?._list?.Select(v => v._val).AsTypedEnumerable<T>().ToArray() ?? Array.Empty<T>();
+            }
+            catch { }
+
+            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to {typeof(T).Name}[] type: {(string)value}");
         }
     }
 }

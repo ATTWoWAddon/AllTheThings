@@ -1,0 +1,275 @@
+-----------------------------------------------------
+--        P R O M O T I O N S   M O D U L E        --
+-----------------------------------------------------
+
+BLIZZCON = createHeader({
+	readable = "BlizzCon",
+	icon = [[~_.asset("Promotion_Blizzcon")]],
+	eventID = 1181,
+	eventSchedule = {
+		0,	--
+		2026, 09, 12,	-- 12/09/2026
+		2026, 09, 13,	-- 13/09/2026
+	},
+	text = {
+		en = "BlizzCon",
+		ko = "블리즈컨",
+		-- TODO: ru = "",
+		cn = "暴雪嘉年华",
+		tw = "暴雪嘉年華",
+	},
+});
+
+root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+	ach(411, {	-- Blizzcon 2005 - Murky
+		["provider"] = { "i", 20371 },	-- Murky (PET!)
+		["timeline"] = { ADDED_3_0_2 },
+	}),
+	i(20371, {	-- Murky (PET!)
+		["timeline"] = { ADDED_1_11_1 },
+	}),
+
+	ach(412, {	-- Blizzcon 2007 - Murloc Costume
+		["provider"] = { "i", 33079 },	-- Murloc Costume (TOY!)
+		["timeline"] = { ADDED_3_0_2 },
+	}),
+	i(33079, {	-- Murloc Costume (TOY!)
+		["timeline"] = { ADDED_2_1_3 },
+	}),
+
+	ach(415, {	-- Blizzcon 2008 - Big Blizzard Bear
+		["provider"] = { "i", 43599 },	-- Big Blizzard Bear (MOUNT!)
+		["timeline"] = { ADDED_3_0_2 },
+	}),
+	i(43599, {	-- Big Blizzard Bear (MOUNT!)
+		["timeline"] = { ADDED_3_0_2 },
+	}),
+
+	ach(3536, {	-- Blizzcon 2009 - The Marine Marine
+		["provider"] = { "i", 46802 },	-- Grunty (PET!)
+		["timeline"] = { ADDED_3_2_0 },
+	}),
+	i(46802, {	-- Grunty (PET!)
+		["timeline"] = { ADDED_3_2_0 },
+	}),
+
+	ach(5378, {	-- Blizzcon 2010 - Deathy
+		["provider"] = { "i", 67418 },	-- Deathy (PET!)
+		["timeline"] = { ADDED_4_0_1 },
+	}),
+	i(67418, {	-- Deathy (PET!)
+		["timeline"] = { ADDED_4_0_1 },
+	}),
+
+	ach(6185, {	-- Blizzcon 2011 - Murkablo
+		["provider"] = { "i", 71726 },	-- Murkablo (PET!)
+		["timeline"] = { ADDED_4_3_0 },
+	}),
+	i(71726, {	-- Murkablo (PET!)
+		["timeline"] = { ADDED_4_2_0 },
+	}),
+
+	ach(8793, {	-- Blizzcon 2013 - Murkalot
+		["provider"] = { "i", 106244 },	-- Murkalot (PET!)
+		["timeline"] = { ADDED_5_4_2 },
+	}),
+	i(106244, {	-- Murkalot (PET!)
+		["timeline"] = { ADDED_5_4_2 },
+	}),
+
+	ach(9763, {	-- Blizzcon 2014 - Grommloc
+		["provider"] = { "i", 118517 },	-- Grommloc (PET!)
+		["timeline"] = { ADDED_6_1_0 },
+	}),
+	i(118517, {	-- Grommloc (PET!)
+		["timeline"] = { ADDED_6_0_3 },
+	}),
+
+	ach(10322, {	-- Blizzcon 2015 - Murkidan
+		["provider"] = { "i", 128427 },	-- Murkidan (PET!)
+		["timeline"] = { ADDED_6_2_2 },
+	}),
+	i(128427, {	-- Murkidan (PET!)
+		["timeline"] = { ADDED_6_2_2 },
+	}),
+
+	ach(11294, {	-- Blizzcon 2016 - Murloc Battlemasters
+		["providers"] = {
+			{ "i", 141894 },	-- Knight Captain Murky (PET!)
+			{ "i", 141895 },	-- Legionnaire Murky (PET!)
+		},
+		["timeline"] = { ADDED_7_2_0 },
+	}),
+	a(i(141894, {	-- Knight Captain Murky (PET!)
+		["timeline"] = { ADDED_7_1_0 },
+	})),
+	h(i(141895, {	-- Legionnaire Murky (PET!)
+		["timeline"] = { ADDED_7_1_0 },
+	})),
+
+	ach(11931, {	-- Blizzcon 2017 - Rides of War
+		["providers"] = {
+			{ "i", 151617 },	-- Orgrimmar Interceptor (MOUNT!)
+			{ "i", 151618 },	-- Stormwind Skychaser (MOUNT!)
+		},
+		["timeline"] = { ADDED_7_3_2 },
+	}),
+	h(i(151617, {	-- Orgrimmar Interceptor (MOUNT!)
+		["timeline"] = { ADDED_7_3_0 },
+	})),
+	a(i(151618, {	-- Stormwind Skychaser (MOUNT!)
+		["timeline"] = { ADDED_7_3_0 },
+	})),
+
+	ach(13138, {	-- Blizzcon 2018 - Flying Colors
+		["providers"] = {
+			{ "i", 163986 },	-- Orgrimmar Hero's War Banner (TOY!)
+			{ "i", 163987 },	-- Stormwind Champion's War Banner (TOY!)
+		},
+		["timeline"] = { ADDED_8_1_0 },
+	}),
+	i(163986, {	-- Orgrimmar Hero's War Banner (TOY!)
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
+		["races"] = HORDE_ONLY,
+		["f"] = TOYS,
+	}),
+	i(163987, {	-- Stormwind Champion's War Banner (TOY!)
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
+		["races"] = ALLIANCE_ONLY,
+		["f"] = TOYS,
+	}),
+	i(163985, {	-- War Mantle of the Alliance
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
+		["races"] = ALLIANCE_ONLY,
+		["filterID"] = CLOAKS,
+	}),
+	i(163984, {	-- War Mantle of the Horde
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
+		["races"] = HORDE_ONLY,
+		["filterID"] = CLOAKS,
+	}),
+
+	-- Blizzcon 2019
+	ach(14027, {	-- Blizzcon 2019 - Battle for Mrrglroth
+		["timeline"] = { ADDED_8_2_5 },
+	}),
+	-- #if AFTER 11.2.5
+	iensemble(258422, {	-- Ensemble: Wooly Wendigo (COSMETIC!)
+		["timeline"] = { ADDED_11_2_5 },
+	}),
+	-- #else
+	i(171341, {	-- Wooly Wendigo Pullover (COSMETIC!)
+		["timeline"] = { ADDED_8_2_5 },
+	}),
+	i(171340, {	-- Wooly Wendigo Hood (COSMETIC!)
+		["timeline"] = { ADDED_8_2_5 },
+	}),
+	i(171339, {	-- Wooly Wendigo Sweatpants (COSMETIC!)
+		["timeline"] = { ADDED_8_2_5 },
+	}),
+	i(171338, {	-- Wooly Wendigo Slippers (COSMETIC!)
+		["timeline"] = { ADDED_8_2_5 },
+	}),
+	i(171337, {	-- Wooly Wendigo Mittens (COSMETIC!)
+		["timeline"] = { ADDED_8_2_5 },
+	}),
+	-- #endif
+	pet(2777, {	-- Gillvanas (PET!)
+		["timeline"] = { ADDED_8_2_5 },
+		["races"] = HORDE_ONLY,
+	}),
+	pet(2778, {	-- Finduin (PET!)
+		["timeline"] = { ADDED_8_2_5 },
+		["races"] = ALLIANCE_ONLY,
+	}),
+
+	-- Blizzconline 2021 "Celebration Collection" (Removed from store 21 Feb 2022)
+	mount(341821, {	-- Snowstorm (MOUNT!)
+		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
+	}),
+	pet(3053, {	-- Moon-Touched Netherwhelp (PET!)
+		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
+	}),
+	ach(14904, {	-- Netherwhelp Online
+		["timeline"] = { ADDED_9_0_2, REMOVED_9_2_0 },
+	}),
+
+	-- Blizzcon 2023 Collection
+	mount(358072, {	-- Bound Blizzard (MOUNT!)
+		["description"] = "Received after buying the Blizzcon 2023 Collection: Legendary Pack.",
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
+		["u"] = REAL_MONEY,
+	}),
+	i(210042, {	-- Chilling Celebration Banner (TOY!)
+		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
+		["u"] = REAL_MONEY,
+	}),
+	pet(3579, {	-- Ysergle The Dreamurk (PET!)
+		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
+		["u"] = REAL_MONEY,
+	}),
+	ach(18250, {	-- Ysergle The Dreamurk
+		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
+		["u"] = REAL_MONEY,
+	}),
+
+	-- Blizzcon 2026 Collection
+	iensemble(276872, {	-- Ensemble: Garb of the Dawnfire Phoenix (COSMETIC!)
+		["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
+		["u"] = REAL_MONEY,
+	}),
+	i(274150, {	-- Murk'atath (PET!)
+		["description"] = "Received after buying the Blizzcon 2026 Ultimate Bundle.",
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
+		["u"] = REAL_MONEY,
+	}),
+	i(276873, {	-- Perch of the Dawnfire Phoenix (DECOR!)
+		["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
+		["u"] = REAL_MONEY,
+	}),
+	i(274260, {	-- Rabbit'ath (MOUNT!)
+		["description"] = "Received after buying the Blizzcon 2026 World of Warcraft Bundle.",
+		["timeline"] = { ADDED_12_0_7, "removed 12.1.0.69933" },
+		["u"] = REAL_MONEY,
+	}),
+	-- 2 Hours: 200x Trader's Tender
+	i(263303, {	-- Cuddly Blue Grrgle (DECOR!)
+		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 4 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
+		["u"] = IGNORED_VALUE,
+	}),
+	i(263449, {	-- Fluffy Comfy Flying Quilt (MOUNT!)
+		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 8 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
+		["u"] = IGNORED_VALUE,
+	}),
+	i(279590, {	-- Venomous Champion's Illustrious Banner (TOY!)
+		["description"] = "Watch any eligible World of Warcraft stream on Twitch.tv from September 12th at 9:30 am PDT to September 27th at 10:00 am PDT or on the official World of Warcraft YouTube channel from September 12th at 9:30 am PDT until September 13 at 7:00 pm PDT for 12 hours to receive this item.\n\nYour Twitch/Youtube account has to be connected with your Battle.net Account & you have to redeem the drop on Youtube/Twitch before receiving it in your in-game collection as gift.",
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
+		["u"] = IGNORED_VALUE,
+	}),
+	ach(63685, {	-- BlizzCon 2026
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69933" },
+		["u"] = IGNORED_VALUE,
+		["groups"] = { i(281107, { ["u"] = IGNORED_VALUE }) },	-- BlizzCon Doormat (DECOR!)
+	}),
+	i(278231, {	-- Aquatic Clockwork Quacker (PET!)
+		["description"] = "Available from capsule gachapon machines on the Blizzcon floor.",
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69875" },
+		["u"] = REAL_MONEY,
+	}),
+	i(278230, {	-- Classic Clockwork Quacker (PET!)
+		["description"] = "Available from capsule gachapon machines on the Blizzcon floor.",
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69875" },
+		["u"] = REAL_MONEY,
+	}),
+	i(278688, {	-- Skipper (PET!)
+		["description"] = "Available from capsule gachapon machines on the Blizzcon floor.",
+		["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69875" },
+		["u"] = REAL_MONEY,
+	}),
+})));

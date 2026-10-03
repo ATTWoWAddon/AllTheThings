@@ -24,28 +24,41 @@ local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
 local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
 local C_VignetteInfo_GetVignettePosition = C_VignetteInfo.GetVignettePosition;
 local Callback, DelayedCallback = app.CallbackHandlers.Callback, app.CallbackHandlers.DelayedCallback
+local Runner = app.CreateRunner("vignette")
+Runner.SetPerFrameDefault(10)
 
 -- Helper Functions
 local SettingsCache = {}
 local ActiveWaypointGUID;
+local SetTrackedVignette = C_SuperTrack.SetSuperTrackedVignette
+local GetTrackedVignette = C_SuperTrack.GetSuperTrackedVignette or function() return ActiveWaypointGUID end
 local function PlotUserWaypoint(pos)
 	C_SuperTrack.SetSuperTrackedUserWaypoint(false)
 	C_Map.ClearUserWaypoint()
 	C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(pos.mapID, pos.x, pos.y, pos.z))
 	C_SuperTrack.SetSuperTrackedUserWaypoint(true)
 	ActiveWaypointGUID = pos.guid
+	-- app.PrintDebug("ActiveWaypointGUID",ActiveWaypointGUID)
 end
 local function GetWaypointLink(guid, text)
 	-- Generates a waypoint link with text (optional) inside the link should the vignette guid have a valid position.
 	if guid and C_VignetteInfo_GetVignettePosition then
 		local mapID = app.CurrentMapID;
-		if mapID then
+		if mapID and mapID > 0 then
 			local pos = C_VignetteInfo_GetVignettePosition(guid, mapID);
 			if pos then
 				if SettingsCache.PlotWaypoints then
-					pos.mapID = mapID
-					pos.guid = guid
-					Callback(PlotUserWaypoint, pos)
+					-- don't user a UserWaypoint if direct Vignette tracking is available
+					if SetTrackedVignette then
+						-- Vignettes track at level 7, so don't replace higher priority tracking
+						if (C_SuperTrack.GetHighestPrioritySuperTrackingType() or 99) > 6 then
+							Runner.Run(SetTrackedVignette, guid)
+						end
+					else
+						pos.mapID = mapID
+						pos.guid = guid
+						Callback(PlotUserWaypoint, pos)
+					end
 					-- TODO: setting & logic here for incorporating into TomTom waypoints
 				end
 				return app:WaypointLink(mapID, pos.x, pos.y, text);
@@ -59,19 +72,70 @@ local ReportedVignettes = {};
 local Ignored = setmetatable({
 	npc = {
 		[198464] = true,	-- Rostrum of Transformation
-		[223728] = true,	-- Auditor Balwurz [Renown Quartermaster - Council of Dornogal]
-		[221390] = true,	-- Waxmonger Squick [Renown Quartermaster - The Assembly of the Deeps]
 		[213145] = true,	-- Auralia Steelstrike [Renown Quartermaster - Hallowfall Arathi]
 		[220867] = true,	-- Y'tekhi [Renown Quartermaster - The Severed Threads]
+		[221390] = true,	-- Waxmonger Squick [Renown Quartermaster - The Assembly of the Deeps]
+		[223728] = true,	-- Auditor Balwurz [Renown Quartermaster - Council of Dornogal]
 		[231409] = true,	-- Smaks Topskimmer [Renown Quartermaster - The Cartels of Undermine]
 		[235252] = true,	-- Om'sirik [Renown Quartermaster - The K'aresh Trust]
+		[240279] = true,	-- Magovu [Renown Quartermaster - Amani Tribe]
+		[240407] = true,	-- Naynar [Haranir Renown Quartermaster]
+		[240465] = true,	-- Lonomia [Decor Specialist]
+		[240838] = true,	-- Caeris Fairdawn [Renown Quartermaster]
+		[243220] = true,	-- Irissa Bloodstar [Conquest Quartermaster]
+		[243286] = true,	-- Lyrendal [Artisan's Consortium Quartermaster]
 		[245344] = true,	-- Zo'turu [Renown Quartermaster - Manaforge Vandals]
+		[248328] = true,	-- Void Researcher Anomander [Renown Quartermaster - The Singularity]
 		[250243] = true,	-- Timewarped Essence of Wyrmtongue
+		[250982] = true,	-- Dethelin [Decor Specialist]
+		[252873] = true,	-- Morta Gage [Decor Specialist]
+		[252910] = true,	-- Garnett [Decor Specialist]
+		[254603] = true,	-- Riica [Decor Specialist]
+		[254944] = true,	-- Tajaka Sawtusk [Decor Specialist]
+		[255114] = true,	-- Maku [Decor Specialist]
+		[255203] = true,	-- Xiao Dan [Decor Specialist]
+		[255213] = true,	-- Faarden the Builder [Decor Specialist]
+		[255216] = true,	-- Balen the Starfinder [Decor Specialist]
+		[255218] = true,	-- Argan Hammerfist [Decor Specialist]
+		[255221] = true,	-- Trevor Grenner [Decor Specialist]
+		[255222] = true,	-- "High Tides" Ren [Decor Specialist]
+		[255228] = true,	-- "Len" Splinthoof [Decor Specialist]
+		[255230] = true,	-- "Yen" Malone [Decor Specialist]
+		[255278] = true,	-- Gronthul [Decor Specialist]
+		[255297] = true,	-- Shon'ja [Decor Specialist]
+		[255298] = true,	-- Jehzar Starfall [Decor Specialist]
+		[255299] = true,	-- Lefton Farrer [Decor Specialist]
+		[255301] = true,	-- Botanist Boh'an [Decor Specialist]
+		[255319] = true,	-- "Yen" Malone [Decor Specialist]
+		[255325] = true,	-- "High Tides" Ren [Decor Specialist]
+		[256750] = true,	-- Klasa [Decor Specialist]
+		[256828] = true,	-- Dennia Silvertongue [Decor Specialist]
+		[257042] = true,	-- Research Console
+		[257257] = true,	-- Merki [Decor Specialist]
+		[257321] = true,	-- Fel'orei Moonstrider [Decor Specialist]
+		[257332] = true,	-- Devin Slatesmith [Decor Specialist]
+		[258181] = true,	-- Construct Ali'a [Decor Specialist]
+		[259864] = true,	-- Sathren Azuredawn [Decor Specialist]
+		[259922] = true,	-- Void Researcher Aemely [Decor Specialist]
+		[261697] = true,	-- Supply Wagon
+		[261751] = true,	-- Spirit Pyre
+		[263509] = true,	-- Western Chamber Entrance
+		[263508] = true,	-- Center Chamber Entrance
+		[263510] = true,	-- Eastern Chamber Entrance
+		[267794] = true,	-- Agratha [Decor Specialist]
+		[267795] = true,	-- Perry Winkles [Decor Specialist]
+		[267870] = true,	-- Unquestionably Griftah [Decor Specialist]
+		[268228] = true,	-- Jan'sari the Watchful [Renown Quartermaster - Zul'jarra's Forces]
+		[269485] = true,	-- Altar of Corrosion
+		[269806] = true,	-- Spiritwing Gust
+		[270399] = true,	-- Firetender Zab'ni [Decor Specialist]
+		[272175] = true,	-- <DNT> Players are active in this area.
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
 		[516991] = true,	-- Phase Conduit [K'aresh Teleport Node]
 		[527623] = true,	-- Phase Conduit [K'aresh Teleport Node]
+		[648564] = true,	-- Vul'zahn's Smuggled Treasure
 	},
 },{ __index = function() return app.EmptyTable end })
 local function AlertForVignetteInfo(info)
@@ -93,11 +157,11 @@ local function AlertForVignetteInfo(info)
 	elseif not SettingsCache.IncludeCompleted and (not group.visible or app.IsComplete(group)) then
 		return false
 	else
-		local progressText = group.progressText
+		local summaryText = group.summaryText
 			or GetProgressColorText(group.progress or 0, group.total or 0)
 			or (group.collectible and app.GetCollectionIcon(group.collected))
 			or (group.trackable and app.GetCompletionIcon(group.saved))
-		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. progressText
+		link = app:Linkify(info.name or id, app.Colors.ChatLink, "search:" .. link) .. " " .. summaryText
 	end
 	-- app.PrintDebug("Vignette.Alert",link)
 
@@ -114,6 +178,9 @@ local AlertMeta = {
 			if not SettingsCache.ReportContent then return end
 
 			local guid = info.objectGUID;
+			-- app.PrintDebug("Vignette.AlertMeta",guid,not ReportedVignettes[guid])
+			rawset(t, key, info);
+			app.UpdateRawID(info.SearchKey, info.ID, app.DirectGroupRedraw)
 			if not guid or ReportedVignettes[guid] then return end
 
 			-- if we encounter situations where a ton of vignettes all attempt to load in a single frame
@@ -122,7 +189,6 @@ local AlertMeta = {
 			if AlertForVignetteInfo(info) then
 				-- If someone has completed turned off
 				ReportedVignettes[guid] = true;
-				rawset(t, key, info);
 			end
 		else
 			rawset(t, key, info);
@@ -158,6 +224,7 @@ local CachedVignetteInfo = setmetatable({}, {
 				local searchType = VignetteSearchTypes[type]
 				if SettingsCache[searchType] then
 					vignetteInfo.SearchType = searchType
+					vignetteInfo.SearchKey = searchType.."ID"
 					vignetteInfo.ID = id
 					-- app.PrintDebug("CachedVignetteInfo",searchType,id,guid)
 					rawset(t, guid, vignetteInfo)
@@ -173,13 +240,15 @@ local function ClearVignette(guid)
 	local vignetteInfo = CachedVignetteInfo[guid]
 	if not vignetteInfo then return end
 
-	-- app.PrintDebug("Vignette.Clear",vignetteInfo.SearchType,vignetteInfo.ID,guid);
-	ActiveVignettes[vignetteInfo.SearchType][vignetteInfo.ID] = nil
+	local type, id = vignetteInfo.SearchType, vignetteInfo.ID
+	-- app.PrintDebug("Vignette.Clear",type,id,guid);
+	ActiveVignettes[type][id] = nil
 	CachedVignetteInfo[guid] = nil
-	if ActiveWaypointGUID == guid and SettingsCache.ClearWaypoints then
-		C_Map.ClearUserWaypoint()
+	if SettingsCache.ClearWaypoints and GetTrackedVignette() == guid then
+		C_SuperTrack.ClearAllSuperTracked()
 		ActiveWaypointGUID = nil
 	end
+	app.UpdateRawID(vignetteInfo.SearchKey, id, app.DirectGroupRedraw)
 end
 local vignettesByGUID = {}
 local function UpdateVignette(guid)
@@ -224,10 +293,8 @@ end
 local function InitialVignetteScan()
 	CacheVignetteSettings()
 	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
-	-- clean up the 1 time function, needs to be callback since it's removing within the same event
-	Callback(app.RemoveEventHandler, InitialVignetteScan)
 end
-app.AddEventHandler("OnRefreshCollectionsDone", InitialVignetteScan)
+app.AddEventHandlerOnce("OnRefreshCollectionsDone", InitialVignetteScan)
 app.AddEventHandler("Settings.OnSet", function(containerKey, key, value)
 	if containerKey ~= "Tooltips" then return end
 

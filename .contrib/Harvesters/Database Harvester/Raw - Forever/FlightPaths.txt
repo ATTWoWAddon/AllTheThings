@@ -1,0 +1,101 @@
+﻿1.60.1.69876
+1@@@Northshire Abbey
+2@@@Stormwind, Elwynn
+3@@@Programmer Isle
+4@@@Sentinel Hill, Westfall
+5@@@Lakeshire, Redridge
+6@@@Ironforge, Dun Morogh
+7@@@Menethil Harbor, Wetlands
+8@@@Thelsamar, Loch Modan
+9@@@Booty Bay, Stranglethorn
+10@@@The Sepulcher, Silverpine Forest
+11@@@Undercity, Tirisfal
+12@@@Darkshire, Duskwood
+13@@@Tarren Mill, Hillsbrad
+14@@@Southshore, Hillsbrad
+15@@@Eastern Plaguelands
+16@@@Refuge Pointe, Arathi
+17@@@Hammerfall, Arathi
+18@@@Booty Bay, Stranglethorn
+19@@@Booty Bay, Stranglethorn
+20@@@Grom'gol, Stranglethorn
+21@@@Kargath, Badlands
+22@@@Thunder Bluff, Mulgore
+23@@@Orgrimmar, Durotar
+24@@@Generic, World target for Zeppelin Paths
+25@@@Crossroads, The Barrens
+26@@@Auberdine, Darkshore
+27@@@Rut'theran Village, Teldrassil
+28@@@Astranaar, Ashenvale
+29@@@Sun Rock Retreat, Stonetalon Mountains
+30@@@Freewind Post, Thousand Needles
+31@@@Thalanaar, Feralas
+32@@@Theramore, Dustwallow Marsh
+33@@@Stonetalon Peak, Stonetalon Mountains
+34@@@Transport, Booty Bay - Ratchet
+35@@@Transport, Orgrimmar Zepplins
+36@@@Generic, World target
+37@@@Nijel's Point, Desolace
+38@@@Shadowprey Village, Desolace
+39@@@Gadgetzan, Tanaris
+40@@@Gadgetzan, Tanaris
+41@@@Feathermoon, Feralas
+42@@@Camp Mojache, Feralas
+43@@@Aerie Peak, The Hinterlands
+44@@@Valormok, Azshara
+45@@@Nethergarde Keep, Blasted Lands
+46@@@Southshore Ferry, Hillsbrad
+47@@@Transport, Grom'gol - Orgrimmar
+48@@@Bloodvenom Post, Felwood
+49@@@Moonglade
+50@@@Transport, Menethil Ships
+51@@@Transport, Rut'theran - Auberdine
+52@@@Everlook, Winterspring
+53@@@Everlook, Winterspring
+54@@@Transport, Feathermoon - Feralas
+55@@@Brackenwall Village, Dustwallow Marsh
+56@@@Stonard, Swamp of Sorrows
+57@@@Fishing Village, Teldrassil
+58@@@Zoram'gar Outpost, Ashenvale
+59@@@Dun Baldar, Alterac Valley
+60@@@Frostwolf Keep, Alterac Valley
+61@@@Splintertree Post, Ashenvale
+62@@@Nighthaven, Moonglade
+63@@@Nighthaven, Moonglade
+64@@@Talrendis Point, Azshara
+65@@@Talonbranch Glade, Felwood
+66@@@Chillwind Camp, Western Plaguelands
+67@@@Light's Hope Chapel, Eastern Plaguelands
+68@@@Light's Hope Chapel, Eastern Plaguelands
+69@@@Moonglade
+70@@@Flame Crest, Burning Steppes
+71@@@Morgan's Vigil, Burning Steppes
+72@@@Cenarion Hold, Silithus
+73@@@Cenarion Hold, Silithus
+74@@@Thorium Point, Searing Gorge
+75@@@Thorium Point, Searing Gorge
+76@@@Revantusk Village, The Hinterlands
+77@@@Camp Taurajo, The Barrens
+78@@@Naxxramas
+79@@@Marshal's Refuge, Un'Goro Crater
+80@@@Ratchet, The Barrens
+84@@@Plaguewood Tower, Eastern Plaguelands
+85@@@Northpass Tower, Eastern Plaguelands
+86@@@Eastwall Tower, Eastern Plaguelands
+87@@@Crown Guard Tower, Eastern Plaguelands
+559@@@Summit of Eternity, Mount Hyjal
+2913@@@Quest Path 9571: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - H - 6
+2914@@@Quest Path 9574: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - H - 6 - Flight Back
+2930@@@Quest Path 9620: S03 - Runecarving - Shaman - Level 40 Rune - Corrupted Fire Totem - Tal Taxi Path - KJA
+3203@@@Rog'mar, Riverglades
+3205@@@Tidegear Coast, Dun Morogh
+3206@@@zzOLDBolder'ok, Riverglades
+3207@@@zzOLDRiverglades, Farholde Keep
+3208@@@zzOLDPowderfuse Port, Riverglades
+3242@@@Tainted Foothills, Mount Hyjal
+3260@@@Quest Path 11512: 1.60.0 - Dalaran Translocation Path
+3261@@@Quest Path 11515: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - A - 6
+3262@@@Quest Path 11517: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - A - 6 - Flight Back
+3274@@@Powderfuse Port, Riverglades
+3275@@@Powderfuse Port, Riverglades
+3276@@@Farholde Keep, Riverglades

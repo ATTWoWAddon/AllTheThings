@@ -1,0 +1,208 @@
+1.60.1.69876
+faction(1),	-- PLAYER, Human
+faction(2),	-- PLAYER, Orc
+faction(3),	-- PLAYER, Dwarf
+faction(4),	-- PLAYER, Night Elf
+faction(5),	-- PLAYER, Undead
+faction(6),	-- PLAYER, Tauren
+faction(7),	-- Creature
+faction(8),	-- PLAYER, Gnome
+faction(9),	-- PLAYER, Troll
+faction(14),	-- Monster
+faction(15),	-- Defias Brotherhood
+faction(16),	-- Gnoll - Riverpaw
+faction(17),	-- Gnoll - Redridge
+faction(18),	-- Gnoll - Shadowhide
+faction(19),	-- Murloc
+faction(20),	-- Undead, Scourge
+faction(22),	-- Beast - Spider
+faction(23),	-- Beast - Boar
+faction(24),	-- Worgen
+faction(25),	-- Kobold
+faction(26),	-- Troll, Bloodscalp
+faction(27),	-- Troll, Skullsplitter
+faction(28),	-- Prey
+faction(29),	-- Beast - Wolf
+faction(30),	-- Defias Brotherhood Traitor
+faction(31),	-- Friendly
+faction(32),	-- Trogg
+faction(33),	-- Troll, Frostmane
+faction(34),	-- Orc, Blackrock
+faction(35),	-- Villain
+faction(36),	-- Victim
+faction(37),	-- Beast - Bear
+faction(38),	-- Ogre
+faction(39),	-- Kurzen's Mercenaries
+faction(40),	-- Escortee
+faction(41),	-- Venture Company
+faction(42),	-- Beast - Raptor
+faction(43),	-- Basilisk
+faction(44),	-- Dragonflight, Green
+faction(45),	-- Lost Ones
+faction(46),	-- Blacksmithing - Armorsmithing
+faction(48),	-- Dark Iron Dwarves
+faction(49),	-- Human, Night Watch
+faction(50),	-- Dragonflight, Red
+faction(51),	-- Gnoll - Mosshide
+faction(52),	-- Orc, Dragonmaw
+faction(53),	-- Gnome - Leper
+faction(55),	-- Leopard
+faction(56),	-- Scarlet Crusade
+faction(57),	-- Gnoll - Rothide
+faction(58),	-- Beast - Gorilla
+faction(60),	-- Naga
+faction(61),	-- Dalaran
+faction(62),	-- Forlorn Spirit
+faction(63),	-- Darkhowl
+faction(64),	-- Grell
+faction(65),	-- Furbolg
+faction(66),	-- Horde Generic
+faction(71),	-- Hillsbrad Militia
+faction(73),	-- Demon
+faction(74),	-- Elemental
+faction(75),	-- Spirit
+faction(77),	-- Treasure
+faction(78),	-- Gnoll - Mudsnout
+faction(79),	-- HIllsbrad, Southshore Mayor
+faction(80),	-- Dragonflight, Black
+faction(82),	-- Troll, Witherbark
+faction(83),	-- Leatherworking - Elemental
+faction(84),	-- Quilboar, Razormane
+faction(85),	-- Quilboar, Bristleback
+faction(86),	-- Leatherworking - Dragonscale
+faction(88),	-- Blackfathom
+faction(89),	-- Makrura
+faction(90),	-- Centaur, Kolkar
+faction(91),	-- Centaur, Galak
+faction(94),	-- Maraudine
+faction(108),	-- Theramore
+faction(109),	-- Quilboar, Razorfen
+faction(110),	-- Quilboar, Razormane 2
+faction(111),	-- Quilboar, Deathshead
+faction(128),	-- Enemy
+faction(148),	-- Ambient
+faction(168),	-- Nethergarde Caravan
+faction(189),	-- Alliance Generic
+faction(209),	-- Nethergarde
+faction(229),	-- Wailing Caverns
+faction(249),	-- Silithid
+faction(269),	-- Silvermoon Remnant
+faction(289),	-- Blacksmithing - Weaponsmithing
+faction(309),	-- Scorpid
+faction(310),	-- Beast - Bat
+faction(311),	-- Titan
+faction(329),	-- Taskmaster Fizzule
+faction(389),	-- Gnomeregan Bug
+faction(409),	-- Harpy
+faction(429),	-- Burning Blade
+faction(449),	-- Shadowsilk Poacher
+faction(450),	-- Searing Spider
+faction(489),	-- Goblin, Dark Iron Bar Patron
+faction(511),	-- Giant
+faction(531),	-- Dragonflight, Bronze
+faction(532),	-- Dragonflight, Blue
+faction(549),	-- Leatherworking - Tribal
+faction(550),	-- Engineering - Goblin
+faction(551),	-- Engineering - Gnome
+faction(569),	-- Blacksmithing - Hammersmithing
+faction(570),	-- Blacksmithing - Axesmithing
+faction(571),	-- Blacksmithing - Swordsmithing
+faction(572),	-- Troll, Vilebranch
+faction(573),	-- Southsea Freebooters
+faction(574),	-- Caer Darrow
+faction(575),	-- Furbolg, Uncorrupted
+faction(629),	-- Shatterspear Trolls
+faction(630),	-- Ravasaur Trainers
+faction(649),	-- Majordomo Executus
+faction(669),	-- Beast - Carrion Bird
+faction(670),	-- Beast - Cat
+faction(671),	-- Beast - Crab
+faction(672),	-- Beast - Crocilisk
+faction(673),	-- Beast - Hyena
+faction(674),	-- Beast - Owl
+faction(675),	-- Beast - Scorpid
+faction(676),	-- Beast - Tallstrider
+faction(677),	-- Beast - Turtle
+faction(678),	-- Beast - Wind Serpent
+faction(679),	-- Training Dummy
+faction(689),	-- Dragonflight, Black - Bait
+faction(709),	-- Battleground Neutral
+faction(749),	-- Hydraxian Waterlords
+faction(750),	-- Sulfuron Firelords
+faction(769),	-- Gizlock's Dummy
+faction(770),	-- Gizlock's Charm
+faction(771),	-- Gizlock
+faction(789),	-- Moro'gai
+faction(790),	-- Spirit Guide - Alliance
+faction(829),	-- Ogre (Captain Kromcrush)
+faction(849),	-- Spirit Guide - Horde
+faction(869),	-- Jaedenar
+faction(893),	-- Revantusk Trolls
+faction(912),	-- Might of Kalimdor
+faction(915),	-- Armies of C'Thun
+faction(916),	-- Silithid Attackers
+faction(917),	-- The Ironforge Brigade
+faction(918),	-- RC Enemies
+faction(919),	-- RC Objects
+faction(920),	-- Red
+faction(921),	-- Blue
+faction(928),	-- Scourge Invaders
+faction(931),	-- Test Faction (not a real faction)
+faction(950),	-- ToWoW - Flag
+faction(951),	-- ToWoW - Flag Trigger Alliance (DND)
+faction(954),	-- ToWoW - Flag Trigger Horde (DND)
+faction(1041),	-- Frenzy
+faction(2402),	-- CTF - Flag - Horde
+faction(2403),	-- CTF - Flag - Alliance
+faction(2505),	-- Dragonflight, Chromatic
+faction(2587),	-- Durotar Supply and Logistics
+faction(2588),	-- S03 - Scarlet Crusade Disguise
+faction(2634),	-- Blood Moon
+faction(2641),	-- Emerald Wardens
+faction(2646),	-- S03 - 50 - Tanaris Arena Opponent
+faction(2650),	-- S03 - 60 - Western Plaguelands - Mage Runecarving
+faction(2660),	-- Elemental (The Molten Core Adds)
+faction(2661),	-- Hydraxian (The Molten Core Adds)
+faction(2679),	-- Order of the Silver Hand
+faction(2686),	-- S03 - Scourge Disguise
+faction(2687),	-- Hunter Quest Boss (Tamed Beast)
+faction(2719),	-- Cenarion Scouts
+faction(2721),	-- S03 - Scarlet Crusade
+faction(2723),	-- S03 - New Avalon - Scarlet Crusade - Disguise
+faction(2724),	-- S03 - New Avalon - Scarlet Crusade - Patrollers
+faction(2730),	-- 1.50.0 - Hyjal Attunement - Leyara
+faction(2731),	-- 1.50.0 - Hyjal Attunement - Gol'gere
+faction(2741),	-- Kirin Tor - Broken
+faction(2745),	-- Timbermaw Hold - Unbound Spirit - Enemies
+faction(2746),	-- Timbermaw Hold - Unbound Spirit - Allies
+faction(2747),	-- Barkskin Burrow
+faction(2748),	-- Shen'dorei
+faction(2749),	-- Al'Aketh
+faction(2753),	-- Deadwood Furbolg
+faction(2754),	-- CTF - Flag - Neutral
+faction(2756),	-- Hyjal Skunk
+faction(2757),	-- Zephras Peacekeepers \\ Zephras Peackeepers
+faction(2759),	-- Neutral Can Attack
+faction(2760),	-- Neutral Both But Horde Can Attack
+faction(2761),	-- Fenwick
+faction(2765),	-- Guardians of Hyjal
+faction(2768),	-- The Blackthorne Pact
+faction(2769),	-- Gelkis Outcasts
+faction(2777),	-- Beast - Predatory Stag
+faction(2778),	-- Windshapers
+faction(2779),	-- High Order
+faction(2782),	-- Bolder'ok Clan
+faction(2785),	-- Cenarion Circle (Legendary Event)
+faction(2786),	-- Replace
+faction(2788),	-- Ashen Reign
+faction(2789),	-- Ashen Reign - Warlock Disguise
+faction(2790),	-- CTF - Flag - Neutral
+faction(2794),	-- PLAYER, Windshaper Skyborne
+faction(2795),	-- PLAYER, High Order Skyborne
+faction(2797),	-- OLD
+faction(2800),	-- PvP Rank Points
+faction(2801),	-- Neutral Both But Alliance Can Attack
+faction(2802),	-- Legacy Track
+faction(2807),	-- DNT Test Reputation
+faction(2813),	-- Syndicate Disguise
+faction(2819),	-- The Watchers

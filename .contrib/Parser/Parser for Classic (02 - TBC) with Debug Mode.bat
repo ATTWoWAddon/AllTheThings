@@ -1,1 +1,0 @@
-"Parser.exe" debug baseconfig=".config/classic/02 - TBC.config" config=".config/classic/Debug Mode.config"

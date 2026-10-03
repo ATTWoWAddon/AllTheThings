@@ -1,0 +1,102 @@
+1.60.1.69876
+pet(4172),	-- Cockatoo
+pet(4180),	-- Spotted Rabbit \\ Arctic Hare
+pet(4182),	-- Green Water Snake
+pet(4183),	-- Ribbon Snake
+pet(4184),	-- Scarlet Snake
+pet(4185),	-- Elven Wisp
+pet(5004),	-- Prairie Chicken
+pet(5005),	-- Musical Gustjumper
+pet(5006),	-- Corrupted Kitten
+pet(5008),	-- Mini Uber Diablo
+pet(5018),	-- Snowy Wolf Pup
+pet(5047),	-- Child of By'zaali
+pet(5069),	-- Wild Chicken
+pet(5075),	-- Excitable Slime
+pet(5094),	-- Bitter Baitling
+pet(5121),	-- Prairie Wolf Pup
+pet(5122),	-- Spectral Bear Cub
+pet(5135),	-- Shadowgale Squirrel
+pet(5136),	-- Weevil K. Neevil
+pet(5138),	-- Pachimari
+pet(5139),	-- Galestrider Chick
+pet(5140),	-- Black Furbolg Pet
+pet(5141),	-- Brown Furbolg Pet
+pet(5142),	-- Gray Furbolg Pet
+pet(5143),	-- Tan Furbolg Pet
+pet(5144),	-- White Furbolg Pet
+pet(5145),	-- Purple Ent Pet
+pet(5146),	-- Red Ent Pet
+pet(5147),	-- Blue Ent Pet
+pet(5148),	-- Gray Ent Pet
+pet(5149),	-- Orange Ent Pet
+pet(5150),	-- Yellow Ent Pet
+pet(5151),	-- Plagued Cockroach
+pet(5152),	-- Undercity Cockroach
+pet(5153),	-- Jungle Boa
+pet(5154),	-- Brown Ground Squirrel
+pet(5155),	-- Red Ground Squirrel
+pet(5157),	-- Brown Rabbit
+pet(5158),	-- Eagle Owl
+pet(5159),	-- Panda Cub
+pet(5160),	-- Zergling
+pet(5161),	-- Mini Diablo
+pet(5162),	-- Baby Crocolisk
+pet(5167),	-- Condor Hatchling
+pet(5172),	-- Tallstrider Hatchling
+pet(5174),	-- Minfernal
+pet(5176),	-- Minimule
+
+
+
+
+Missing in PetDB.lua
+
+1.60.1.69876
+pet(4172),	-- Cockatoo
+pet(4180),	-- Spotted Rabbit \\ Arctic Hare
+pet(4182),	-- Green Water Snake
+pet(4183),	-- Ribbon Snake
+pet(4184),	-- Scarlet Snake
+pet(4185),	-- Elven Wisp
+pet(5004),	-- Prairie Chicken
+pet(5005),	-- Musical Gustjumper
+pet(5006),	-- Corrupted Kitten
+pet(5008),	-- Mini Uber Diablo
+pet(5018),	-- Snowy Wolf Pup
+pet(5047),	-- Child of By'zaali
+pet(5069),	-- Wild Chicken
+pet(5075),	-- Excitable Slime
+pet(5094),	-- Bitter Baitling
+pet(5121),	-- Prairie Wolf Pup
+pet(5122),	-- Spectral Bear Cub
+pet(5135),	-- Shadowgale Squirrel
+pet(5136),	-- Weevil K. Neevil
+pet(5138),	-- Pachimari
+pet(5139),	-- Galestrider Chick
+pet(5140),	-- Black Furbolg Pet
+pet(5141),	-- Brown Furbolg Pet
+pet(5142),	-- Gray Furbolg Pet
+pet(5143),	-- Tan Furbolg Pet
+pet(5144),	-- White Furbolg Pet
+pet(5145),	-- Purple Ent Pet
+pet(5146),	-- Red Ent Pet
+pet(5147),	-- Blue Ent Pet
+pet(5148),	-- Gray Ent Pet
+pet(5149),	-- Orange Ent Pet
+pet(5150),	-- Yellow Ent Pet
+pet(5151),	-- Plagued Cockroach
+pet(5152),	-- Undercity Cockroach
+pet(5153),	-- Jungle Boa
+pet(5154),	-- Brown Ground Squirrel
+pet(5155),	-- Red Ground Squirrel
+pet(5157),	-- Brown Rabbit
+pet(5158),	-- Eagle Owl
+pet(5159),	-- Panda Cub
+pet(5160),	-- Zergling
+pet(5161),	-- Mini Diablo
+pet(5162),	-- Baby Crocolisk
+pet(5167),	-- Condor Hatchling
+pet(5172),	-- Tallstrider Hatchling
+pet(5174),	-- Minfernal
+pet(5176),	-- Minimule

@@ -1,1 +1,0 @@
-"Parser.exe" config=".config/classic/02 - TBC.config"

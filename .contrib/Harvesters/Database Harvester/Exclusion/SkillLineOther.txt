@@ -194,3 +194,15 @@
 2917@@@Midnight Skinning
 2918@@@Midnight Tailoring
 2950@@@Alchemy Research
+2937@@@Alchemy
+2938@@@Blacksmithing
+2939@@@Cooking
+2940@@@Enchanting
+2941@@@Engineering
+2942@@@First Aid
+2943@@@Fishing
+2944@@@Herbalism
+2945@@@Leatherworking
+2946@@@Mining
+2947@@@Skinning
+2948@@@Tailoring

@@ -5,8 +5,8 @@
 
 local _, app = ...
 
-local ipairs,math_floor
-	= ipairs,math.floor
+local ipairs,math_floor,type
+	= ipairs,math.floor,type
 
 -- Give a safe way to use HandleModifiedItemClick since Blizzard made it unsafe in 11.1.5
 -- HandleModifiedItemClick now throws a Lua error when the link is not perfectly-handled
@@ -22,13 +22,14 @@ end
 
 -- Clickable ATT Chat Link Handling
 local reports = {};
-function app:SetupReportDialog(id, reportMessage, text)
+function app:SetupReportDialog(id, reportMessage, text, replace)
 	-- Store some information for use by a report popup by id
-	if not reports[id] then
+	if not reports[id] or replace then
 		-- print("Setup Report", id, reportMessage)
 		reports[id] = {
 			msg = reportMessage,
-			text = (type(text) == "table" and app.TableConcat(text, nil, "", "\n") or text)
+			-- FYI: Safely-handling secrets through here doesn't matter anyway since the EditBox:SetText method doesn't allow secrets! Cool
+			text = (type(text) == "table" and app.TableConcatWithSecrets(text, "\n") or text)
 		};
 		return true;
 	end
@@ -71,12 +72,15 @@ hooksecurefunc("SetItemRef", function(link, text)
 end);
 
 -- Chat Links
+do
+local LeftClickAtlas = CreateAtlasMarkup('NPE_LeftClick', 14, 13)
 function app:Linkify(text, color, operation)
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
-	return "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+	return LeftClickAtlas.."|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+end
 end
 function app:SearchLink(group)
-	if not group then return end
+	if not group or type(group) ~= "table" then return end
 	return app:Linkify(group.text or group.hash or UNKNOWN, app.Colors.ChatLink, "search:"..(group.searchKey or group.key or "?")..":"..(group[group.key] or "?"))
 end
 function app:RawSearchLink(field,id)
@@ -86,16 +90,37 @@ function app:WaypointLink(mapID, x, y, text)
 	return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
 		.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 end
+-- Add a simple way for other addons to pull a standalone ATT group derived from a link
+app.GetLinkReference = function(link)
+	-- don't try searching for an invalid link
+	if app.Modules.RetrievingData.IsRetrieving(link) then
+		return
+	end
+	-- Search for the Link in the database
+	app.SetSkipLevel(2)
+	local group = app.GetCachedSearchResults(app.SearchForLink, link, nil, {ShortCache=true})
+	app.SetSkipLevel(0)
+	return group
+end
 
 -- Define Chat Commands handling
-app.ChatCommands = { Help = {} }
+app.ChatCommands = { Help = {}, List = {}, Slash = {} }
 local function ChatCommand_Add(cmd, func, help)
-	app.ChatCommands[cmd:lower()] = func
+	cmd = cmd and cmd:lower()
+	if not cmd then return end
+
+	if app.ChatCommands[cmd] then
+		app.print("Duplicate Command",cmd)
+		return
+	end
+	app.ChatCommands[cmd] = func
+	local list = app.ChatCommands.List
+	list[#list + 1] = cmd
 	if help then
 		if type(help) ~= "table" then
-			app.print("Attempted to add a non-table Help for a Chat Command: "..cmd)
+			app.print("Attempted to add a non-table Help for a Chat Command:",cmd)
 		else
-			app.ChatCommands.Help[cmd:lower()] = help
+			app.ChatCommands.Help[cmd] = help
 		end
 	end
 end
@@ -124,25 +149,36 @@ end
 -- Prints the Help information for a given command
 -- cmd : The command's Help to print
 app.ChatCommands.PrintHelp = function(cmd)
-	local allHelp = app.ChatCommands.Help;
-	local help = cmd and allHelp[cmd:lower()]
-	if help then
-		for _,helpLine in ipairs(help) do
-			app.print(helpLine)
+	cmd = cmd and cmd:lower()
+	if cmd then
+		if not app.ChatCommands[cmd] then
+			app.print("Unknown Command:",cmd)
+			return true
 		end
-	elseif not cmd then
-		local allCommands = {};
-		for command,help in pairs(allHelp) do
-			allCommands[#allCommands + 1] = command;
+		local allHelp = app.ChatCommands.Help;
+		local help = allHelp[cmd]
+		if help then
+			for _,helpLine in ipairs(help) do
+				app.print(helpLine)
+			end
+		else
+			app.print("No Help provided for Command:",cmd)
 		end
-		table.sort(allCommands);
-		app.print("Full Command List:");
-		for _,command in ipairs(allCommands) do
-			print(" " .. command);
-		end
-	else
-		app.print("No Help provided for command:",cmd)
+		return true
 	end
+
+	-- TODO: revise this to actually combine commands which are identical in the chat output & move base /att help here
+	-- local allCommands = app.ChatCommands.List
+	-- table.sort(allCommands);
+	-- local allSlash = app.ChatCommands.Slash
+	-- table.sort(allSlash);
+	-- app.print("Full Command List:");
+	-- for _,slash in ipairs(allSlash) do
+	-- 	print(slash);
+	-- end
+	-- for _,command in ipairs(allCommands) do
+	-- 	print("/att " .. command);
+	-- end
 	return true
 end
 
@@ -169,7 +205,7 @@ end, {
 -- Allows a user to use /att debug-events
 -- to enable Debug Printing of Event messages
 app.ChatCommands.Add("debug-events", function(args)
-	app.DebugEvents()
+	app.HandleEvent("OnToggle-DebugEvents")
 	app.print("Debug Events:",app.DebuggingEvents and "ACTIVE" or "OFF")
 	-- debug prints may/not be toggled due to this, so print status anyway
 	app.print("Debug Printing:",app.Debugging and "ACTIVE" or "OFF")
@@ -177,6 +213,51 @@ app.ChatCommands.Add("debug-events", function(args)
 end, {
 	"Usage : /att debug-events",
 	"Allows toggling the debug printing and monitoring of all game events that ATT handles.",
+})
+-- Add a Command that lets players toggle how ATT loads to potentially facilitate script timeout restrictions
+app.ChatCommands.Add("use-progressive-loading", function(args)
+	local newLoadStyle = AllTheThingsSavedVariables.LoadStyle == 1 and 0 or 1
+	AllTheThingsSavedVariables.LoadStyle = newLoadStyle
+	-- ATT Loading Style : [Progressive/Instant]
+	app.print(newLoadStyle == 1 and (UNIT_NAMEPLATES_THREAT_DISPLAY_PROGRESSIVE or "Progressive") or (SPELL_CAST_TIME_INSTANT_NO_MANA or "Instant"),(LFG_LIST_LOADING or "Loading..."))
+	app.print("/rl ->",RELOADUI)
+	return true
+end, {
+	"Usage : /att use-progressive-loading",
+	"Allows changing some load behavior of ATT to spread out the load sequence across many more game frames, potentially allowing successful loading in some game environments or locations where tighter addon restrictions may temporarily exist.",
+})
+local ForceDebugPrint
+app.AddEventHandler("OnToggle-DebugEvents", function()
+	app.DebuggingEvents = not app.DebuggingEvents
+	app.events.__ToggleOnEventFunc()
+	-- enable/disable Debugging for prints if not already enabled
+	if app.DebuggingEvents then
+		if not app.Debugging then
+			ForceDebugPrint = true
+			app.Debugging = true
+		end
+	else
+		if ForceDebugPrint and app.Debugging then
+			ForceDebugPrint = nil
+			app.Debugging = nil
+		end
+	end
+end, true)
+
+-- Allows a user to open a popout window for their target via /att [t|target]
+app.ChatCommands.Add({"t", "target"}, function(args)
+	local guid = UnitGUID("target");
+	if guid and not app.WOWAPI.issecretvalue(guid) then
+		local npcID = select(6, ("-"):split(guid))
+		if npcID then
+			app.CreatePopoutForSearch("n:" .. npcID)
+		end
+	end
+
+	return true
+end, {
+	"Usage : /att [t|target]",
+	"Allows opening a popout window for your targeted NPC",
 })
 
 -- Allows adding a direct slash command(s) to the game
@@ -186,7 +267,7 @@ local function AddSlashCommands(commands, func)
 	if not commands or type(commands) ~= "table" or not commands[1] then
 		error("Cannot add Slash Command -- Invalid command alias array provided")
 	end
-	local commandRoot = "ATT"..commands[commands.RootCommandIndex or 1]:upper()
+	local commandRoot = "ATT"..commands[1]:upper()
 	if not func or type(func) ~= "function" then
 		error(("Cannot add Slash Command for root %s -- Invalid call function provided"):format(tostring(commandRoot)))
 	end
@@ -194,221 +275,89 @@ local function AddSlashCommands(commands, func)
 	SlashCmdList[commandRoot] = func
 	-- Then assign the aliases
 	local cmd
+	local slash = app.ChatCommands.Slash
 	for i=1,#commands do
 		cmd = commands[i]:lower()
 		commands[i] = cmd
 		_G["SLASH_"..commandRoot..i] = "/"..cmd
+		slash[#slash + 1] = "/"..cmd
 	end
 end
 app.AddSlashCommands = AddSlashCommands
 
-
-
--- The below command handling is from Retail and is not currently synced with Classic
-if app.IsClassic then return end
-
-
-
--- Copied from Retail ATT, eventually migrate to defining windows or other related sources and using app.ChatCommands.Add() instead
-
-AddSlashCommands({"attbounty"},
-function() app:GetWindow("Bounty"):Toggle() end)
-
-AddSlashCommands({"attmaps"},
-function() app:GetWindow("CosmicInfuser"):Toggle() end)
-
-AddSlashCommands({"attra"},
-function() app:GetWindow("RaidAssistant"):Toggle() end)
-
-AddSlashCommands({"attran","attrandom"},
-function() app:GetWindow("Random"):Toggle() end)
-
-AddSlashCommands({"attwq"},
-function() app:GetWindow("WorldQuests"):Toggle() end)
-
-AddSlashCommands({"attmini","attminilist"},
-function() app:ToggleMiniListForCurrentZone() end)
-
-AddSlashCommands({"attharvest","attharvester"},
-function(cmd)
-	app.print("Force Debug Mode");
-	app.Debugging = true
-	app.Settings:ForceRefreshFromToggle();
-	app.Settings:SetDebugMode(true);
-	app.SetCustomWindowParam("list", "reset", true);
-	app.SetCustomWindowParam("list", "type", "cache:item");
-	app.SetCustomWindowParam("list", "harvesting", true);
-	local args = { (","):split(cmd:lower()) };
-	app.SetCustomWindowParam("list", "min", args[1]);
-	app.SetCustomWindowParam("list", "limit", args[2] or 999999);
-	-- reduce the re-try duration when harvesting
-	app.SetCAN_RETRY_DURATION_SEC(1)
-	app:GetWindow("list"):Toggle();
-end)
-
-local function ParseCommand(msg)
-	local itemLinks = {}
+do
+	local __ItemLinkCache = {}
 	local function StoreLinks(link)
-		itemLinks[#itemLinks + 1] = link
-		return "\x1F" .. #itemLinks
+		__ItemLinkCache[#__ItemLinkCache + 1] = link
+		return "\x1F" .. #__ItemLinkCache
 	end
+	app.ParseCommandArgsAndParams = function(msg)
+		wipe(__ItemLinkCache);
 
-	-- Step 1: Replace links with tokens
-	msg = msg:gsub("|c[%xnIQ:]+|H[a-z]+:%d+:.-|h%[.-%]|h|r", StoreLinks)
-	-- app.PrintDebug("tokenized",msg)
-	-- Step 2: Split by spaces
-	local args = { (" "):split(msg) }
+		-- Step 1: Replace links with tokens
+		msg = msg:gsub("|c[%xnIQ:]+|H[a-z]+:%d+:.-|h%[.-%]|h|r", StoreLinks)
+		-- app.PrintDebug("tokenized",msg)
+		-- Step 2: Split by spaces
+		local args = { (" "):split(msg) }
 
-	-- Step 3: Replace tokens with original item links
-	local index
-	for i, v in ipairs(args) do
-		index = tonumber(v:match("\x1F(%d+)"))
-		if index then
-			args[i] = itemLinks[index]
-		end
-	end
-
-	return args
-end
-
--- Performs a search for ATT content, then opens the single result in a new popout window
-app.CreatePopoutForSearch = function(search)
-	app.SetSkipLevel(2)
-	local group = app.GetCachedSearchResults(app.SearchForLink, search, nil, {SkipFill=true,IgnoreCache=true})
-	app.SetSkipLevel(0)
-	-- make sure it's 'something' returned from the search before throwing it into a window
-	if group then
-		if group.criteriaID and not group.achievementID then
-			app.print("Unsourced Criteria",group.criteriaID,"Use /att criteriaID:achievementID to view unsourced Criteria info")
-			return true
-		end
-		if group.link or group.name or group.text or group.key then
-			app:CreateMiniListForGroup(group)
-			return true
-		end
-	end
-end
-
--- Default /att support
-AddSlashCommands({"allthethings","things","att"},
-function(cmd)
-	if cmd then
-		-- app.PrintDebug(cmd)
-		local args = ParseCommand(cmd)
-		cmd = args[1];
-		-- app.PrintTable(args)
-
-		-- Eventually will migrate known Chat Commands to their respective creators
-		local commandFunc = app.ChatCommands[cmd]
-		if commandFunc then
-			local help = args[2] == "help"
-			if help then return app.ChatCommands.PrintHelp(cmd) end
-			return commandFunc(args)
-		elseif cmd == "help" then
-			return app.ChatCommands.PrintHelp(args[2])
-		end
-
-		-- first arg is always the window/command to execute
-		app.ResetCustomWindowParam(cmd);
-		for k=2,#args do
-			local customArg, customValue = args[k], nil;
-			customArg, customValue = ("="):split(customArg);
-			-- app.PrintDebug("Split custom arg:",customArg,customValue)
-			app.SetCustomWindowParam(cmd, customArg, customValue or true);
-		end
-
-		if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
-			app.ToggleMainList();
-			return true;
-		elseif cmd == "bounty" then
-			app:GetWindow("Bounty"):Toggle();
-			return true;
-		elseif cmd == "debugger" then
-			app.LoadDebugger();
-			return true;
-		elseif cmd == "filters" then
-			app:GetWindow("ItemFilter"):Toggle();
-			return true;
-		elseif cmd == "finder" then
-			app.SetCustomWindowParam("list", "type", "itemharvester");
-			app.SetCustomWindowParam("list", "harvesting", true);
-			app.SetCustomWindowParam("list", "limit", 225000);
-			app:GetWindow("list"):Toggle();
-			return true;
-		elseif cmd == "ra" then
-			app:GetWindow("RaidAssistant"):Toggle();
-			return true;
-		elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
-			app:GetWindow("Random"):Toggle();
-			return true;
-		elseif cmd == "list" then
-			app:GetWindow("list"):Toggle();
-			return true;
-		elseif cmd == "nwp" then
-			app:GetWindow("NWP"):Toggle();
-			return true;
-		elseif cmd == "awp" then
-			--app:GetWindow("awp"):Hide();
-			app.SetCustomWindowParam("awp", "reset", true);
-			app:GetWindow("awp"):Toggle();
-			return true;
-		elseif cmd == "rwp" then
-			app:GetWindow("RWP"):Toggle();
-			return true;
-		elseif cmd == "wq" then
-			app:GetWindow("WorldQuests"):Toggle();
-			return true;
-		elseif cmd == "unsorted" then
-			app:GetWindow("Unsorted"):Toggle();
-			return true;
-		elseif cmd == "nyi" then
-			app:GetWindow("NeverImplemented"):Toggle();
-			return true;
-		elseif cmd == "hat" then
-			app:GetWindow("HiddenAchievementTriggers"):Toggle();
-			return true;
-		elseif cmd == "hct" then
-			app:GetWindow("HiddenCurrencyTriggers"):Toggle();
-			return true;
-		elseif cmd == "hqt" then
-			app:GetWindow("HiddenQuestTriggers"):Toggle();
-			return true;
-		elseif cmd == "sourceless" then
-			app:GetWindow("Sourceless"):Toggle();
-			return true;
-		elseif cmd:sub(1, 4) == "mini" then
-			app:ToggleMiniListForCurrentZone();
-			return true;
-		elseif cmd:sub(1, 6) == "mapid:" then
-			app:GetWindow("CurrentInstance"):SetMapID(tonumber(cmd:sub(7)), true);
-			return true;
-		else
-			if cmd == "import" then
-				app:GetWindow("Import"):Toggle();
-				return true;
+		-- Step 3: Replace tokens with original item links
+		local customArg, customValue;
+		local tonumber = tonumber
+		for i, v in ipairs(args) do
+			customArg = tonumber(v:match("\x1F(%d+)"))
+			if customArg then
+				args[i] = __ItemLinkCache[customArg];
 			end
 		end
 
+		-- Step 4: Parse the Params
+		-- The first arg is always the command
+		local params = {};
+		for i=1,#args do
+			customArg, customValue = ("="):split(args[i]);
+			params[customArg] = customValue or true;
+		end
+		return args, params;
+	end
+end
+
+-- Allows a user to use /att [cmd]
+-- This is the base Slash for all Commands!
+AddSlashCommands({"att","allthethings","attc"}, function(cmd)
+	-- app.PrintDebug("root command:",cmd)
+	if cmd == "" then
+		app:GetWindow("Prime"):Toggle();
+		return true
+	end
+
+	local args,params = app.ParseCommandArgsAndParams(cmd)
+	-- app.PrintTable(args)
+	-- app.PrintTable(params)
+
+	local cmd = args[1]:lower()
+	-- Remove the first arg from args, within this context, it is the command and does not need to be passed to the Command itself
+	tremove(args, 1)
+	local commandFunc = app.ChatCommands[cmd]
+	if commandFunc then
+		local help = args[1] == "help"
+		if help then return app.ChatCommands.PrintHelp(cmd) end
+		return commandFunc(args, params)
+	elseif cmd == "help" then
+		return app.ChatCommands.PrintHelp(args[1])
+	elseif cmd then
+		-- Special case for rendering a custom mapID in the Minilist
+		if cmd:sub(1, 6) == "mapid:" then
+			app.ToggleMiniListForCurrentZone(tonumber(cmd:sub(7)))
+			return true
+		end
 		-- Search for the Link in the database
 		if app.CreatePopoutForSearch(cmd) then
 			return true
 		end
-		app.print("Unknown Command: ", cmd);
-	else
-		-- Default command
-		app.ToggleMainList();
-	end
-end)
-
--- Add a simple way for other addons to pull a standalone ATT group derived from a link
-app.GetLinkReference = function(link)
-	-- don't try searching for an invalid link
-	if app.Modules.RetrievingData.IsRetrieving(link) then
+		app.print("Unknown Command: ", cmd, app.TableConcat(args, nil, "", " "));
 		return
 	end
-	-- Search for the Link in the database
-	app.SetSkipLevel(2)
-	local group = app.GetCachedSearchResults(app.SearchForLink, link, nil, {ShortCache=true})
-	app.SetSkipLevel(0)
-	return group
-end
+end, {	-- TODO: currently this help is inaccessible. move it into the base help functionality eventually
+	"Usage : /att [<CMD>] [help] [PARAM=VAL|...]",
+	"Root slash command for ATT. Opens the Main list if no Command is provided",
+})

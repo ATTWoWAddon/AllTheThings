@@ -5,6 +5,8 @@ local CreateObject = app.__CreateObject;
 local api = {}
 app.Modules.Test = api
 
+local Runner = app.CreateRunner("TestRunner")
+
 app.Testraw = function(count)
 
 	local a
@@ -489,8 +491,8 @@ function ATTtestsort()
 	local sort1 = app.SortDefaults.Global
 	local sort2 = app.SortDefaults.Accessibility
 
-	local rawdatasearch1 = app:BuildSearchResponse("u", 2)
-	local rawdatasearch2 = app:BuildSearchResponse("u", 2)
+	local rawdatasearch1 = app:BuildSearchResponseRetailStyle("u", 2)
+	local rawdatasearch2 = app:BuildSearchResponseRetailStyle("u", 2)
 
 	local function dosorts()
 		app.PrintDebug("doSorts")
@@ -544,11 +546,15 @@ end
 
 function ATTscripttimeout(source, immediatesec)
 	app.print("Script Timeout test via",source,"@",immediatesec)
-	local Success
+	local GetTimePreciseSec=GetTimePreciseSec
+	local Success,StartWait
+	local function PrintWait(sec)
+		app.print("waiting",sec,"s ... via",source)
+	end
 	local function LongRun(sec)
 		Success = nil
-		app.print("waiting",sec,"s ... via",source)
-		local done = GetTimePreciseSec() + (sec or 0)
+		StartWait = GetTimePreciseSec()
+		local done = StartWait + (sec or 0)
 		while GetTimePreciseSec() < done do
 		end
 		app.print("waited",sec,"s via",source)
@@ -562,19 +568,42 @@ function ATTscripttimeout(source, immediatesec)
 
 	local Runner = app.CreateRunner("TestScriptTimeout")
 	Runner.SetPerFrameDefault(1)
-	local function VerifyPriorSuccess()
+
+	local test = true
+	local min,max = 0,60
+	local time = max
+	local function VerifyPriorSuccess(sec)
+		local change
 		if Success then
-			app.print("Success!")
+			app.print("Success!",sec)
+			min = math.max(min,time)
+			change = (max - min) / 2
+			time = min + change
 		else
-			app.print("Script Timeout!")
+			app.print("Script Timeout!",sec)
+			max = GetTimePreciseSec() - StartWait
+			change = (max - min) / 2
+			time = max - change
+		end
+		if change < (max / 100) then
+			test = nil
 		end
 	end
-
-	for i=0,5 do
-		-- Runner.Run(LongRun, math.pow(2,i))
-		Runner.Run(LongRun, 5)
-		Runner.Run(VerifyPriorSuccess)
+	local function FinalTimeouts()
+		app.print("Longest Success",min)
+		app.print("Shortest Timeout",max)
 	end
+	local function TryNextTime()
+		if test then
+			Runner.Run(PrintWait, time)
+			Runner.Run(LongRun, time)
+			Runner.Run(VerifyPriorSuccess, time)
+			Runner.Run(TryNextTime)
+		else
+			Runner.Run(FinalTimeouts)
+		end
+	end
+	Runner.Run(TryNextTime)
 end
 
 -- ATTscripttimeout("immediate", 21)
@@ -595,36 +624,69 @@ end
 
 function ATTlooptypes(count)
 
-	local ipairs = ipairs
-	local pairs = pairs
+	local ipairs,next,pairs
+		= ipairs,next,pairs
 	local z
-	local t = {}
+	local a = {}
 	for i=1,count do
-		t[i] = i
+		a[i] = i
 	end
+	local function fillRandomKeys(t, count)
+		local c = 0
+		while c < count do
+			local key
+			if math.random() < 0.5 then
+				key = math.random(1, 1e9)                -- numeric key
+			else
+				key = string.char(
+					math.random(97,122),
+					math.random(97,122),
+					math.random(97,122)
+				)                                        -- 3‑letter string key
+			end
+			if not t[key] then
+				c = c + 1
+				t[key] = true
+			end
+		end
+		return t
+	end
+	local t = fillRandomKeys({}, count)
 
-	local function Benchmark()
-		-- 0.01164 @ 1M
+	local function Benchmark(t, ty)
+		app.PrintDebug("Benchmark",ty)
+		-- 13,14,13ms @ 1M Array
+		-- N/A Table
 		app.PrintDebug("for i=1,#t",count)
 		for i=1,#t do
 			z = t[i]
 		end
 		app.PrintDebugPrior("---")
-		-- 0.13135 @ 1M
+		-- 79,80,82ms @ 1M Array
+		-- N/A Table
 		app.PrintDebug("for i,v in ipairs(t)",count)
 		for i,v in ipairs(t) do
 			z = v
 		end
 		app.PrintDebugPrior("---")
-		-- 0.11951 @ 1M
+		-- 79,83,80ms @ 1M Array
+		-- 152,145,144ms @ 1M Table
 		app.PrintDebug("for k,v in pairs(t)",count)
 		for k,v in pairs(t) do
 			z = v
 		end
 		app.PrintDebugPrior("---")
+		-- 87,81,80ms @ 1M Array
+		-- 157,149,142ms @ 1M Table
+		app.PrintDebug("for k,v in next(t)",count)
+		for k,v in next,t do
+			z = v
+		end
+		app.PrintDebugPrior("---")
 	end
 
-	Benchmark();
+	Runner.Run(Benchmark, a, "Array")
+	Runner.Run(Benchmark, t, "Table")
 end
 
 function attestimate_memory_usage(tbl)
@@ -711,5 +773,158 @@ function app.RunPerformanceCaptures()
 			Benchmark(100000, perfData[1], perfData[2]())
 		end)
 	end
+
+end
+
+
+do	-- app.ArrayAppendDistinct
+function Test_ArrayAppendDistinct()
+
+    local function assertEqual(desc, actual, expected)
+        if actual ~= expected then
+            print("FAIL:", desc, "Expected:", expected, "Got:", actual)
+        else
+            print("PASS:", desc)
+        end
+    end
+
+    local function assertTable(desc, t, expected)
+        if #t ~= #expected then
+            print("FAIL:", desc, "Length mismatch. Expected:", #expected, "Got:", #t)
+            return
+        end
+        for i=1,#t do
+            if t[i] ~= expected[i] then
+                print("FAIL:", desc, "Mismatch at index", i, "Expected:", expected[i], "Got:", t[i])
+                return
+            end
+        end
+        print("PASS:", desc)
+    end
+
+    print("Running ArrayAppendDistinct Tests...\n")
+
+    -- Test 1: Small array, no duplicates
+    local a1 = {1,2,3}
+    local a2 = {4,5}
+    local r = app.ArrayAppendDistinct(a1, a2)
+    assertTable("Test 1", r, {1,2,3,4,5})
+
+    -- Test 2: Small array, with duplicates
+    a1 = {1,2,3}
+    a2 = {2,3,4}
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertTable("Test 2", r, {1,2,3,4})
+
+    -- Test 3: Large array triggers hash path
+    a1 = {}
+    for i=1,250 do a1[i] = i end
+    a2 = {100,200,300,400}
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertEqual("Test 3 size", #r, 252)
+
+    -- Test 4: Multiple input arrays
+    a1 = {1,2}
+    a2 = {2,3}
+    local a3 = {3,4}
+    local a4 = {4,5}
+    r = app.ArrayAppendDistinct(a1, a2, a3, a4)
+    assertTable("Test 4", r, {1,2,3,4,5})
+
+    -- Test 5: Nil initial array
+    r = app.ArrayAppendDistinct(nil, {1,2}, {2,3})
+    assertTable("Test 5", r, {1,2,3})
+
+    -- Test 6: Nil/empty arrays
+    a1 = {1,2}
+    a2 = {}
+    a3 = nil
+    a4 = {2,3}
+    r = app.ArrayAppendDistinct(a1, a2, a3, a4)
+    assertTable("Test 6", r, {1,2,3})
+
+    -- Test 7: Table identity
+    local t1 = {x=1}
+    local t2 = {x=1}
+    local t3 = t1
+    a1 = {t1}
+    a2 = {t2, t3}
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertEqual("Test 7 count", #r, 2)
+
+    -- Test 8: Stress test
+    a1 = {}
+    for i=1,500 do a1[i] = i end
+    a2 = {}
+    for i=400,600 do a2[#a2+1] = i end
+    r = app.ArrayAppendDistinct(a1, a2)
+    assertEqual("Test 8 size", #r, 600)
+
+    -- Test 9: Multiple large arrays
+    a1 = {}
+    for i=1,300 do a1[i] = i end
+    a2 = {}
+    for i=250,350 do a2[#a2+1] = i end
+    a3 = {}
+    for i=340,360 do a3[#a3+1] = i end
+    r = app.ArrayAppendDistinct(a1, a2, a3)
+    assertEqual("Test 9 size", #r, 360)
+
+    -- Test 10: Return same table
+    a1 = {1,2,3}
+    r = app.ArrayAppendDistinct(a1, {4})
+    assertEqual("Test 10 same table", r == a1, true)
+
+    print("\nAll tests completed.")
+end
+
+
+end
+
+
+do -- Appearances which don't collect automatically
+local contains
+	= app.contains
+local C_TransmogCollection_GetSourceInfo
+	= C_TransmogCollection.GetSourceInfo;
+local C_TransmogCollection_GetAllAppearanceSources
+	= C_TransmogCollection.GetAllAppearanceSources
+
+	local NonSharedSourceIDs = {}
+	local function CheckSourceID(sourceID)
+		local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID);
+		if not sourceInfo then return end
+		-- app.PrintDebug("ASI",app:SearchLink(group))
+		-- app.PrintGroup(group)
+		local o = app.SearchForObject("sourceID", sourceID)
+		if not o or o.u == 1 or o.artifactID or o._missing then return end
+
+		local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
+		if #allVisualSources < 1 or not contains(allVisualSources, sourceID) then
+			-- Items with SourceInfo which don't register as having any visual data or don't include themselves as a shared appearance...
+			-- This typically happens on Items which can have a collectible SourceID, but not usable for Transmog
+			-- don't show the message on Sources which are explicitly non-collectible
+			NonSharedSourceIDs[#NonSharedSourceIDs + 1] = sourceID
+			app.print("Added Non-Shared SourceID",sourceID)
+		end
+	end
+
+	function ATTcheckunsharedsources(min,max)
+		local Runner = app.CreateRunner("ATTcheckunsharedsources")
+		Runner.SetPerFrameDefault(100)
+		min = math.max(1,min or 1)
+		max = math.min(330000,max or 330000)
+
+		Runner.Run(app.print, "Starting SourceID Scan for",min,"to",max,"...")
+
+		for i=min,max do
+			Runner.Run(CheckSourceID, i)
+		end
+
+		Runner.Run(app.print, "Completed SourceID Scan for",min,"to",max)
+
+		AllTheThingsHarvestItems.UnsharedSourceIDs = NonSharedSourceIDs
+	end
+
 
 end

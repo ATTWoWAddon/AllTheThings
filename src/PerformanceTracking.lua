@@ -112,7 +112,6 @@ local function CaptureFunction(func, key, scope)
 	-- print("Perf.F:",perfScope.__scope,key)
 	return function(...)
 		local now = GetTimePreciseSec();
-		-- if app.IsReady then print(now,perfScope.__scope,key,">",...) end
 		local res = {func(...)};
 		-- print(now,perfScope.__scope,key,"<")
 		typePerf.time = typePerf.time + (GetTimePreciseSec() - now);

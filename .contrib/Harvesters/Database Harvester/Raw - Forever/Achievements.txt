@@ -1,0 +1,445 @@
+﻿1.60.1.69876
+627@@@Explore Dun Morogh
+684@@@Conqueror of the Lair
+728@@@Explore Durotar
+736@@@Explore Mulgore
+750@@@Explore The Barrens
+760@@@Explore Alterac Mountains
+761@@@Explore Arathi Highlands
+765@@@Explore Badlands
+766@@@Explore Blasted Lands
+768@@@Explore Tirisfal Glades
+769@@@Explore Silverpine Forest
+770@@@Explore Western Plaguelands
+771@@@Explore Eastern Plaguelands
+772@@@Explore Hillsbrad Foothills
+773@@@Explore The Hinterlands
+774@@@Explore Searing Gorge
+775@@@Explore Burning Steppes
+776@@@Explore Elwynn Forest
+777@@@Explore Deadwind Pass
+778@@@Explore Duskwood
+779@@@Explore Loch Modan
+780@@@Explore Redridge Mountains
+781@@@Explore Stranglethorn Vale
+782@@@Explore Swamp of Sorrows
+802@@@Explore Westfall
+841@@@Explore Wetlands
+842@@@Explore Teldrassil
+844@@@Explore Darkshore
+845@@@Explore Ashenvale
+846@@@Explore Thousand Needles
+847@@@Explore Stonetalon Mountains
+848@@@Explore Desolace
+849@@@Explore Feralas
+850@@@Explore Dustwallow Marsh
+851@@@Explore Tanaris
+852@@@Explore Azshara
+853@@@Explore Felwood
+854@@@Explore Un'Goro Crater
+855@@@Explore Moonglade
+856@@@Explore Silithus
+857@@@Explore Winterspring
+9275@@@Warlord Zaela kills (Upper Blackrock Spire)
+15329@@@Has Died
+15330@@@Survivor of the Firelord
+15332@@@Survivor
+15333@@@Survivor of the Shadow Flame
+15334@@@Survivor of the Old God
+15335@@@Survivor of the Damned
+15578@@@<Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
+15637@@@The Immortal
+19563@@@UNUSED Bael'Gar Defeated (Daily)
+20129@@@[DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
+20130@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)
+20131@@@[DNT] Discoverer's Delight - Reach Level 60 in Phase 4 (hidden)
+20132@@@[DNT] Discoverer's Delight - Reach Level 60 in Phase 5 (hidden)
+20133@@@[DNT] Self-Found Soul (Level 1)
+20134@@@[DNT] Self-Found Soul (Level 10)
+20135@@@[DNT] Self-Found Soul (Level 20)
+20136@@@[DNT] Self-Found Soul (Level 30)
+20137@@@[DNT] Self-Found Soul (Level 40)
+20138@@@[DNT] Self-Found Soul (Level 50)
+20139@@@[DNT] Self-Found Soul (Level 60)
+20193@@@[DNT] Self-Found Soul (Removed Self-Found)
+40131@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)
+40132@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)
+40133@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
+40135@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
+40137@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
+41008@@@Rune Learned - Shared Acquisition - Illari Duskfeather (40)
+41009@@@Rune Learned - Shared Acquisition - Dark Riders (40)
+41010@@@Rune Learned - Shared Acquisition - Ley Lines (50)
+42133@@@[DNT] Balnazzar Defeated
+42186@@@[DNT] Balnazzar Defeated (Backup Achievement)
+61499@@@Novice Warrior
+61500@@@Experienced Warrior
+61501@@@Master Warrior
+61502@@@Novice Druid
+61503@@@Experienced Druid
+61504@@@Master Druid
+61515@@@1.60.0 - Lost Ones Tracking Achievement <HIDDEN>
+61989@@@Novice Hunter
+61992@@@Experienced Hunter
+61993@@@Master Hunter
+61994@@@Novice Mage
+61995@@@Experienced Mage
+61996@@@Master Mage
+61997@@@Novice Paladin
+61998@@@Experienced Paladin
+61999@@@Master Paladin
+62000@@@Novice Priest
+62001@@@Experienced Priest
+62002@@@Master Priest
+62003@@@Novice Rogue
+62004@@@Experienced Rogue
+62005@@@Master Rogue
+62006@@@Novice Shaman
+62007@@@Experienced Shaman
+62008@@@Master Shaman
+62009@@@Novice Warlock
+62010@@@Experienced Warlock
+62011@@@Master Warlock
+62012@@@Journeyman Alchemist
+62013@@@Expert Alchemist
+62014@@@Artisan Alchemist
+62015@@@Journeyman Blacksmith
+62016@@@Expert Blacksmith
+62017@@@Artisan Blacksmith
+62018@@@Journeyman Enchanter
+62019@@@Expert Enchanter
+62020@@@Artisan Enchanter
+62021@@@Journeyman Engineer
+62022@@@Expert Engineer
+62023@@@Artisan Engineer
+62024@@@Journeyman Leatherworker
+62025@@@Expert Leatherworker
+62026@@@Artisan Leatherworker
+62028@@@Journeyman Tailor
+62029@@@Expert Tailor
+62030@@@Artisan Tailor
+62031@@@Novice Spelunker
+62032@@@Experienced Spelunker
+62033@@@Master Spelunker
+62034@@@Conquerer of the Wilds
+62035@@@Conquerer of the Deeps
+62041@@@Rank 3
+62042@@@Rank 7
+62043@@@Rank 10
+62044@@@Rank 13
+62045@@@Rank 14
+62046@@@Master of Alterac Valley
+62047@@@Master of Arathi Basin
+62048@@@Master of Warsong Gulch
+62049@@@Master of Darkspear Islands
+62053@@@Explore Azeroth
+62054@@@Lord Valthalak Laid to Rest
+62353@@@Explore Eastern Kingdoms
+62354@@@Explore Riverglades
+62355@@@Explore Kalimdor
+62356@@@Explore Mount Hyjal
+62382@@@Explorer
+63340@@@Field of Honor: Week 4
+63341@@@Field of Honor: Week 7
+63342@@@Field of Honor: Week 10
+63684@@@Explore Shen'dralas
+63969@@@Novice Warrior
+63970@@@Experienced Warrior
+63971@@@Master Warrior
+63972@@@Novice Druid
+63973@@@Experienced Druid
+63974@@@Master Druid
+63975@@@Novice Hunter
+63976@@@Experienced Hunter
+63977@@@Master Hunter
+63978@@@Novice Mage
+63979@@@Experienced Mage
+63980@@@Master Mage
+63981@@@Novice Paladin
+63982@@@Experienced Paladin
+63983@@@Master Paladin
+63984@@@Novice Priest
+63985@@@Experienced Priest
+63986@@@Master Priest
+63987@@@Novice Rogue
+63988@@@Experienced Rogue
+63989@@@Master Rogue
+63990@@@Novice Shaman
+63991@@@Experienced Shaman
+63992@@@Master Shaman
+63993@@@Novice Warlock
+63994@@@Experienced Warlock
+63995@@@Master Warlock
+63996@@@Journeyman Alchemist
+63997@@@Expert Alchemist
+63998@@@Artisan Alchemist
+63999@@@Journeyman Blacksmith
+64000@@@Expert Blacksmith
+64001@@@Artisan Blacksmith
+64002@@@Journeyman Enchanter
+64003@@@Expert Enchanter
+64004@@@Artisan Enchanter
+64005@@@Journeyman Engineer
+64006@@@Expert Engineer
+64007@@@Artisan Engineer
+64008@@@Journeyman Leatherworker
+64009@@@Expert Leatherworker
+64010@@@Artisan Leatherworker
+64011@@@Journeyman Tailor
+64012@@@Expert Tailor
+64013@@@Artisan Tailor
+64014@@@Lord Valthalak Laid to Rest
+64015@@@Explorer
+64016@@@Novice Spelunker
+64017@@@Experienced Spelunker
+64018@@@Master Spelunker
+64019@@@Conquerer of the Wilds
+64020@@@Conquerer of the Deeps
+64021@@@Rank 3
+64022@@@Rank 7
+64023@@@Rank 10
+64024@@@Rank 13
+64025@@@Rank 14
+64026@@@Master of Alterac Valley
+64027@@@Master of Arathi Basin
+64028@@@Master of Warsong Gulch
+64029@@@Master of Darkspear Islands
+64030@@@Conqueror of the Lair
+64031@@@Field of Honor: Week 4
+64032@@@Field of Honor: Week 7
+64033@@@Field of Honor: Week 10
+64048@@@Hidden: Rank 3
+64051@@@Hidden: Rank 7
+64052@@@Hidden: Rank 10
+64053@@@Hidden: Rank 1
+64054@@@Hidden: Rank 2
+64055@@@Hidden: Rank 4
+64056@@@Hidden: Rank 5
+64057@@@Hidden: Rank 6
+64058@@@Hidden: Rank 8
+64059@@@Hidden: Rank 9
+64060@@@Hidden: Rank 11
+64061@@@Hidden: Rank 12
+64062@@@Hidden: Rank 13
+64063@@@Hidden: Rank 14
+64120@@@Hidden: Well Equipped (Tier 1)
+64151@@@Hidden: BETA Survey - Level 30 - Druid
+64152@@@Hidden: BETA Survey - Level 30 - Warrior
+64153@@@Hidden: BETA Survey - Level 30 - Mage
+64154@@@Hidden: BETA Survey - Level 30 - Shaman
+64155@@@Hidden: BETA Survey - Level 30 - Hunter
+64156@@@Hidden: BETA Survey - Level 30 - Warlock
+64157@@@Hidden: BETA Survey - Level 30 - Rogue
+64158@@@Hidden: BETA Survey - Level 30 - Priest
+64159@@@Hidden: BETA Survey - Level 30 - Paladin
+1.60.1.70009
+49@@@Alterac Valley victories
+51@@@Arathi Basin victories
+52@@@Warsong Gulch battles
+53@@@Alterac Valley battles
+55@@@Arathi Basin battles
+56@@@Deaths in Warsong Gulch
+57@@@Deaths in Alterac Valley
+58@@@Deaths from Drek'Thar
+59@@@Deaths in Arathi Basin
+60@@@Total deaths
+94@@@Quests abandoned
+95@@@Average quests completed per day
+98@@@Quests completed
+105@@@Warsong Gulch victories
+107@@@Creatures killed
+108@@@Critters killed
+112@@@Deaths from drowning
+113@@@Deaths from fatigue
+114@@@Deaths from falling
+115@@@Deaths from fire and lava
+178@@@Enchanting formulae learned
+181@@@Items disenchanted
+183@@@Materials produced from disenchanting
+189@@@Largest heal cast
+193@@@Largest hit dealt
+197@@@Total damage done
+198@@@Total healing done
+281@@@First Aid skill
+318@@@Total deaths from opposite faction
+319@@@Duels won
+320@@@Duels lost
+321@@@Total raid and dungeon deaths
+326@@@Gold from quest rewards
+328@@@Total gold acquired
+329@@@Auctions posted
+330@@@Auction purchases
+331@@@Most expensive bid on auction
+332@@@Most expensive auction sold
+333@@@Gold looted
+334@@@Most gold ever owned
+336@@@Legendary items acquired
+338@@@Vanity pets owned
+339@@@Mounts owned
+341@@@Epic items looted
+342@@@Epic items acquired
+344@@@Bandages used
+345@@@Health potions consumed
+346@@@Beverages consumed
+347@@@Food eaten
+349@@@Flight paths taken
+350@@@Mage Portals taken
+353@@@Number of times hearthed
+377@@@Most factions at Exalted
+378@@@Most factions at Revered or higher
+381@@@World Honorable Kills
+382@@@Battleground Honorable Kills
+393@@@Alterac Valley towers defended
+394@@@Alterac Valley towers captured
+395@@@Warsong Gulch flags captured
+527@@@Largest hit received
+528@@@Total damage received
+529@@@Most factions at Honored or higher
+586@@@Warsong Gulch flags returned
+588@@@Total Honorable Kills
+593@@@Deaths from Vanndar Stormpike
+594@@@Deaths from Hogger
+753@@@Average gold earned per day
+796@@@Resurrected by priests
+798@@@Rebirthed by druids
+799@@@Spirit returned to body by shamans
+800@@@Redeemed by paladins
+801@@@Resurrected by soulstones
+811@@@Flasks consumed
+812@@@Healthstones used
+829@@@Largest heal received
+830@@@Total healing received
+839@@@Battlegrounds played
+840@@@Battlegrounds won
+917@@@Total deaths in 10-player raids
+918@@@Total deaths in 5-player dungeons
+919@@@Gold earned from auctions
+921@@@Gold from vendors
+922@@@Mana potions consumed
+923@@@Elixirs consumed
+926@@@Most Horde factions at Exalted
+927@@@Equipped epic items in item slots
+928@@@Extra bank slots purchased
+931@@@Total factions encountered
+932@@@Total 5-player dungeons entered
+933@@@Total 10-player raids entered
+934@@@Total 20-player raids entered
+1042@@@Number of hugs
+1043@@@Greed rolls made on loot
+1044@@@Need rolls made on loot
+1045@@@Total cheers
+1047@@@Total facepalms
+1065@@@Total waves
+1066@@@Total times LOL'd
+1067@@@Total times playing world's smallest violin
+1092@@@Archmage Arugal kills (Shadowfang Keep)
+1093@@@Scarlet Commander Mograine kills (Scarlet Monastery)
+1094@@@Chief Ukorz Sandscalp kills (Zul'Farrak)
+1095@@@Emperor Dagran Thaurissan kills (Blackrock Depths)
+1096@@@General Drakkisath kills (Upper Blackrock Spire)
+1097@@@Baron Rivendare kills (Stratholme)
+1098@@@Onyxia kills (Onyxia's Lair)
+1113@@@Alterac Valley Honorable Kills
+1114@@@Arathi Basin Honorable Kills
+1115@@@Warsong Gulch Honorable Kills
+1125@@@Bandage used most
+1146@@@Gold spent on travel
+1147@@@Gold spent at barber shops
+1148@@@Gold spent on postage
+1149@@@Talent tree respecs
+1150@@@Gold spent on talent tree respecs
+1197@@@Total kills
+1198@@@Total kills that grant experience or honor
+1199@@@Professions learned
+1200@@@Secondary skills at maximum skill
+1201@@@Professions at maximum skill
+1202@@@Weapon skills at maximum skill
+1229@@@Revived by druids
+1336@@@Creature type killed the most
+1337@@@Different creature types killed
+1339@@@Mage portal taken most
+1456@@@Fish and other things caught
+1458@@@Continent with the most Honorable Kills
+1466@@@Most Alliance factions at Exalted
+1487@@@Total Killing Blows
+1488@@@World Killing Blows
+1489@@@Continent with the most Killing Blows
+1491@@@Battleground Killing Blows
+1495@@@Alterac Valley Killing Blows
+1496@@@Arathi Basin Killing Blows
+1497@@@Warsong Gulch Killing Blows
+1501@@@Total deaths from other players
+1518@@@Fish caught
+1519@@@Fishing skill
+1524@@@Cooking skill
+1525@@@Cooking daily quests completed
+1526@@@Fishing daily quests completed
+1527@@@Highest Alchemy skill
+1532@@@Highest Blacksmithing skill
+1535@@@Highest Enchanting skill
+1536@@@Highest Leatherworking skill
+1537@@@Highest Mining skill
+1538@@@Highest Herbalism skill
+1539@@@Highest Inscription skill
+1541@@@Highest Skinning skill
+1542@@@Highest Tailoring skill
+1544@@@Highest Engineering skill
+1716@@@Battleground with the most Killing Blows
+1719@@@Battleground with the most Honorable Kills
+1729@@@Alchemy Recipes learned
+1730@@@Blacksmithing Plans learned
+1734@@@Engineering Schematics learned
+1735@@@Inscriptions learned
+1740@@@Leatherworking Patterns learned
+1741@@@Tailoring Patterns learned
+1745@@@Cooking Recipes known
+1748@@@First Aid Manuals learned
+1976@@@Dalaran Cooking Awards gained
+2277@@@Summons accepted
+2396@@@Battleground played the most
+2397@@@Battleground won the most
+3216@@@Smelting Recipes learned
+6137@@@Aku'mai kills (Blackfathom Deeps)
+6139@@@Charlga Razorflank kills (Razorfen Kraul)
+6140@@@Mekgineer Thermaplugg kills (Gnomeregan)
+6141@@@Amnennar the Coldbringer kills (Razorfen Downs)
+6142@@@Archaedas kills (Uldaman)
+6143@@@Princess Theradras kills (Maraudon)
+6144@@@Shade of Eranikus kills (Sunken Temple)
+6145@@@Overlord Wyrmthalak kills (Lower Blackrock Spire)
+6146@@@King Gordok kills (Dire Maul)
+6786@@@High Inquisitor Whitemane kills (Scarlet Monastery)
+15027@@@Bazzalan kills (Ragefire Chasm)
+15028@@@Mutanus the Devourer kills (Wailing Caverns)
+15029@@@Bazil Thredd kills (Stormwind Stockade)
+15030@@@Darkmaster Gandling kills (Scholomance)
+15031@@@Baron Rivendare kills (Stratholme)
+63570@@@Edwin Vancleef Kills (Deadmines)
+63571@@@Rath'mael Kills (Ruins of Lordaeron)
+63572@@@Shade of the Archmage Kills (City of Dalaran)
+63573@@@Durgen Dirgehammer Kills (Hall of Thanes)
+63574@@@Nanaya Kills (Shaper's Terrace)
+63575@@@Blazeroar Kills (Alcaz Prison)
+63580@@@The Wild King kills (Hyjal Summit)
+63581@@@Sonya Darkhallow Kills (Barrow Deeps)
+63589@@@Lyn the Ignored Kills (City of Dalaran)
+63590@@@Cinder Kills (Shaper's Terrace)
+63592@@@Bolt Kills (Shaper's Terrace)
+63593@@@Snowtalon Kills (Shaper's Terrace)
+64176@@@Darkspear Island victories
+64179@@@Darkspear Islands battles
+64180@@@Darkspear Islands Honorable Kills
+64181@@@Darkspear Island Killing Blows
+64182@@@Deaths in Darkspear Islands
+64183@@@Total deaths in 20-player raids
+64184@@@Total 40-player raids entered
+64185@@@Total deaths in 40-player raids
+1.60.1.70170
+62034@@@Conqueror of the Wilds
+62035@@@Conqueror of the Deeps
+63570@@@Edwin VanCleef Kills (Deadmines)
+64019@@@Conqueror of the Wilds
+64020@@@Conqueror of the Deeps
+64176@@@Darkspear Islands victories
+64181@@@Darkspear Islands Killing Blows
+64208@@@<Hidden> Completed New Player Experience (Account)

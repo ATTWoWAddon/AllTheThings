@@ -1,0 +1,8615 @@
+--------------------------------------------
+--     H O L I D A Y S  M O D U L E       --
+--------------------------------------------
+
+-- #if BEFORE 6.2.3.20601
+if true then return end
+-- #endif
+
+-- All Timewalking EventIDs
+ExportDB._Compressed.TW_EventIDs = true
+ExportDB.TW_EventIDs = {
+	EVENTS.TIMEWALKING_CLASSIC_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_BATTLE_FOR_AZEROTH_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_SHADOWLANDS_DUNGEON_EVENT,
+	EVENTS.TIMEWALKING_DRAGONFLIGHT_DUNGEON_EVENT,
+}
+-- Helper function to build a CRS list for the Timereaver Mount.
+-- Since this data is all in the same file, we no longer have to do this as part of a post-processor.
+local TIMEWALKING_DUNGEON_CREATURE_IDS = {};
+local function inst_tw(id, t)
+	t = inst(id, t);
+	t.difficultyID = DIFFICULTY.DUNGEON.TIMEWALKING;
+	t.ItemAppearanceModifierID = 0;
+
+	-- Look for the CreatureID's
+	local groups = t.groups or t.g;
+	if groups then
+		for _,data in ipairs(groups) do
+			if data.encounterID then
+				local npcID = data.npcID or data.creatureID
+				if npcID and npcID > 0 then
+					table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, npcID);
+				end
+				if data.crs then
+					for _,creatureID in ipairs(data.crs) do
+						table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, creatureID);
+					end
+				end
+			end
+		end
+	end
+	return t;
+end
+local function inst_tw_wod(id, t)
+	t = inst_tw(id, t)
+	t.sym = {
+		{"select","instanceID",id},{"isnt","e"},{"pop"},
+		{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC},{"pop"}
+	}
+	return t
+end
+-- Provide a table of the instanceID's which should have corresponding Timewalking headers built
+-- Additionally the instanceID can be a table itself containing the {Source instanceID, sub-mapID, [timewalking instanceID]}
+local function AddInstancesToRotation(expansionTier, argument1, ...)
+	local instances = {};
+	for i,instanceInfo in ipairs(type(argument1) == "table" and argument1 or { argument1, ... }) do
+		if instanceInfo then
+			-- instanceInfo can also designate a sub-mapID within the instance group (Classic dungeons which were split)
+			if type(instanceInfo) == "table" then
+				table.insert(instances, inst(instanceInfo[1], {	m(instanceInfo[2], {
+					d(DIFFICULTY.DUNGEON.TIMEWALKING, { ["sym"] = {{"sub", "tw_instance", instanceInfo[3] or instanceInfo[1] }}, }),
+				})}));
+			else
+				table.insert(instances, inst(instanceInfo, {
+					d(DIFFICULTY.DUNGEON.TIMEWALKING, { ["sym"] = {{"sub", "tw_instance", instanceInfo }}, }),
+				}));
+			end
+		end
+	end
+	root(ROOTS.Instances, expansion(expansionTier, instances));
+end
+local function TimelyGoodieBag(t)
+	-- not a great way to add multiple providers for a 'container' in normal data flow
+	local tgb = container(232877, t)	-- Timely Goodie Bag
+	tgb.providers[#tgb.providers + 1] = {"i",229355}	-- Chromie's Premium Goodie Bag
+	tgb.providers[#tgb.providers + 1] = {"i",226102}	-- Chromie's Tour Goodie Bag
+	tgb.providers[#tgb.providers + 1] = {"i",229359}	-- Chromie's Goodie Bag
+	return tgb
+end
+
+root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
+	["modID"] = 22,	-- Timewalking
+	["timeline"] = { ADDED_6_2_2 },
+	["difficultyID"] = DIFFICULTY.DUNGEON.TIMEWALKING;
+	["groups"] = {
+		n(ACHIEVEMENTS, {
+			ach(19079, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 } },{	-- Master of the Turbulent Timeways (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(205208) },	-- Sandy Shalewing (MOUNT!)
+			})),
+			ach(41056, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 } }, {	-- Master of the Turbulent Timeways II (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(232624) },	-- Timely Buzzbee (MOUNT!)
+			})),
+			ach(41779, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 } }, {	-- Master of the Turbulent Timeways III (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(238739) },	-- Chrono Corsair (MOUNT!)
+			})),
+			ach(61394, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_0_1_LAUNCH } }, {	-- Master of the Turbulent Timeways IV (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(254694) },	-- Ta'readon's Mount Voucher
+			})),
+			ach(61463, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {	-- Master of the Turbulent Timeways V (automated!)
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = { i(258884) },	-- Spawn of Vyranoth (MOUNT!)
+			})),
+		}),
+		n(COMMON_BOSS_DROPS, {
+			currency(TIMEWARPED_BADGE),
+			i(133543, {	-- Infinite Timereaver (MOUNT!)
+				["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
+			}),
+		}),
+		n(COMMON_VENDOR_ITEMS, {
+			["crs"] = {
+				-- #if AFTER 6.2.2.20395
+				98685,	-- Cupri <Timewalking Vendor>
+				98690,	-- Auzin <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 6.2.3.20601
+				101759,	-- Kiatke <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 7.1.5.23109
+				118828,	-- Mistweaver Xia <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 8.1.5.29701
+				151987,	-- Kronnus <Timewalking Vendor> [Horde]
+				151955,	-- Tempra <Timewalking Vendor> [Alliance]
+				-- #endif
+				-- #if AFTER 9.1.5.40871
+				180899,	-- Aridormi <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 11.0.7
+				234555,	-- Bobadormu <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 11.1.7
+				239840,	-- Churbro <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 11.2.7
+				252687,	-- Collector Ta'steld <Timewalking Vendor>
+				-- #endif
+				-- #if AFTER 12.0.7
+				255019,	-- Xydan <Timewalking Vendor>
+				-- #endif
+			},
+			["maps"] = {
+				-- #if AFTER 6.2.2.20395
+				SHATTRATH_CITY,
+				NORTHREND_DALARAN,
+				-- #endif
+				-- #if AFTER 6.2.3.20601
+				STORMWIND_CITY,
+				ORGRIMMAR,
+				-- #endif
+				-- #if AFTER 7.1.5.23109
+				TIMELESS_ISLE,
+				-- #endif
+				-- #if AFTER 8.1.5.29701
+				WARSPEAR,
+				STORMSHIELD,
+				-- #endif
+				-- #if AFTER 9.1.5.40871
+				LEGION_DALARAN,
+				-- #endif
+				-- #if AFTER 11.1.7
+				BORALUS,
+				DAZARALOR,
+				-- #endif
+				-- #if AFTER 11.1.7
+				ORIBOS,
+				-- #endif
+				-- #if AFTER 12.0.7
+				VALDRAKKEN,
+				-- #endif
+			},
+			["groups"] = {
+				i(122338, {	-- Ancient Heirloom Armor Casing
+					["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
+				}),
+				i(122339, {	-- Ancient Heirloom Scabbard
+					["cost"] = { { "c", TIMEWARPED_BADGE, 900 } },
+				}),
+				i(204336, {	-- Awakened Heirloom Armor Casing
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+					["timeline"] = { ADDED_10_0_7 },
+				}),
+				i(204337, {	-- Awakened Heirloom Scabbard
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+					["timeline"] = { ADDED_10_0_7 },
+				}),
+				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(167732, {	-- Battle-Hardened Heirloom Scabbard
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(257511, {	-- Bronze Wilderling Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257513, {	-- Bronze Aquilon Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257514, {	-- Bronze Corpsefly Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(257516, {	-- Bronze Gravewing Harness (MOUNT!)
+					["sourceQuest"] = 92857,	-- Ta'readon's Mount Voucher
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(238739, {	-- Chrono Corsair (MOUNT!)
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_11_2_7 },
+				}),
+				i(187997, {	-- Eternal Heirloom Armor Casing
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+					["timeline"] = { ADDED_9_1_5 },
+				}),
+				i(187998, {	-- Eternal Heirloom Scabbard
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+					["timeline"] = { ADDED_9_1_5 },
+				}),
+				i(205208, {	-- Sandy Shalewing (MOUNT!)
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_11_0_7 },
+				}),
+				i(258884, {	-- Spawn of Vyranoth (MOUNT!)
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_12_1_0 },
+				}),
+				i(232624, {	-- Timely Buzzbee (MOUNT!)
+					["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+					["timeline"] = { ADDED_11_1_7 },
+				}),
+				i(122340, {	-- Timeworn Heirloom Armor Casing
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+				}),
+				i(122341, {	-- Timeworn Heirloom Scabbard
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+				}),
+				i(151614, {	-- Weathered Heirloom Armor Casing
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+					["timeline"] = { ADDED_7_2_5 },
+				}),
+				i(151615, {	-- Weathered Heirloom Scabbard
+					["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+					["timeline"] = { ADDED_7_2_5 },
+				}),
+			},
+		}),
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, REMOVED_12_0_0 } }, {
+			q(92857, {	-- Ta'readon's Mount Voucher
+				["provider"] = { "i", 254694 },	-- Ta'readon's Mount Voucher
+				["sym"] = {{"select","itemID",
+					-- You can choose 1 mount from this quest and buy the rest from the vendor
+					257511,	-- Bronze Wilderling Harness (MOUNT!)
+					257513,	-- Bronze Aquilon Harness (MOUNT!)
+					257514,	-- Bronze Corpsefly Harness (MOUNT!)
+					257516,	-- Bronze Gravewing Harness (MOUNT!)
+				}},
+			}),
+		})),
+		n(REWARDS, {
+			TimelyGoodieBag({	-- Timely Goodie Bag
+				-- TODO: probably nice to organize by armor/type & weapon since the drops are likely loot-spec-based
+				["description"] = "Available from the weekly Timewalking quest for characters below max level.",
+				["groups"] = {
+					i(226046),	-- Timely Tourist's Band
+					i(226064),	-- Timely Tourist's Beacon Staff
+					i(226082),	-- Timely Tourist's Belt
+					i(226091),	-- Timely Tourist's Bindings
+					i(226056),	-- Timely Tourist's Blade
+					i(226167),	-- Timely Tourist's Bolthrower
+					i(226085),	-- Timely Tourist's Boots
+					i(226083),	-- Timely Tourist's Bracers
+					i(226068),	-- Timely Tourist's Breastplate
+					i(226076),	-- Timely Tourist's Chainmail
+					i(226169),	-- Timely Tourist's Chisel
+					i(226171),	-- Timely Tourist's Cleaver
+					i(226051),	-- Timely Tourist's Cloak
+					i(226079),	-- Timely Tourist's Coif
+					i(226098),	-- Timely Tourist's Cord
+					i(226095),	-- Timely Tourist's Cowl
+					i(226099),	-- Timely Tourist's Cuffs
+					i(226063),	-- Timely Tourist's Drill-Tipped Stave
+					i(226089),	-- Timely Tourist's Epaulets
+					i(226070),	-- Timely Tourist's Gauntlets
+					i(226074),	-- Timely Tourist's Girdle
+					i(226086),	-- Timely Tourist's Gloves
+					i(226080),	-- Timely Tourist's Greaves
+					i(226078),	-- Timely Tourist's Grips
+					i(226055),	-- Timely Tourist's Hammer
+					i(226094),	-- Timely Tourist's Handwraps
+					i(226170),	-- Timely Tourist's Hatchet
+					i(226087),	-- Timely Tourist's Headgear
+					i(226071),	-- Timely Tourist's Helm
+					i(226072),	-- Timely Tourist's Legguards
+					i(226065),	-- Timely Tourist's Lantern
+					i(226096),	-- Timely Tourist's Leggings
+					i(226088),	-- Timely Tourist's Pants
+					i(226073),	-- Timely Tourist's Pauldrons
+					i(226049),	-- Timely Tourist's Pendant
+					i(226062),	-- Timely Tourist's Polearm
+					i(226054),	-- Timely Tourist's Pummeler
+					i(226048),	-- Timely Tourist's Ring
+					i(226053),	-- Timely Tourist's Ritual Knife
+					i(226092),	-- Timely Tourist's Robes
+					i(226069),	-- Timely Tourist's Sabatons
+					i(226093),	-- Timely Tourist's Sandals
+					i(226090),	-- Timely Tourist's Sash
+					i(226052),	-- Timely Tourist's Shank
+					i(226058),	-- Timely Tourist's Sharpshooter
+					i(226050),	-- Timely Tourist's Shawl
+					i(226066),	-- Timely Tourist's Shield
+					i(226081),	-- Timely Tourist's Shoulderguards
+					i(226097),	-- Timely Tourist's Shoulderpads
+					i(226047),	-- Timely Tourist's Signet
+					i(226061),	-- Timely Tourist's Spade
+					i(226168),	-- Timely Tourist's Spellblade
+					i(226077),	-- Timely Tourist's Striders
+					i(226057),	-- Timely Tourist's Sword
+					i(226059),	-- Timely Tourist's Torch
+					i(226075),	-- Timely Tourist's Vambraces
+					i(226084),	-- Timely Tourist's Vest
+					i(226060),	-- Timely Tourist's Waraxe
+				},
+			}),
+		}),
+	},
+})))
+
+-- Classic Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC_DUNGEON_EVENT, {
+	expansion(EXPANSION.CLASSIC, {["forcetimeline"] = { ADDED_11_0_5 }}),
+	expansion(EXPANSION.CLASSIC, {
+		n(ACHIEVEMENTS, {
+			achWithRep(957, FACTION_ZANDALAR_TRIBE),	-- Hero of the Zandalar Tribe
+		}),
+		n(GROUP_FINDER, {
+			i(225348, {	-- Ancient Timewarped Scroll
+				["description"] = "Drops from the last boss of any 'Classic Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			-- TW Classic Quest under level 80
+			q(85947, {	-- An Original Journey Through Time
+				["provider"] = { "n", 234555 },	-- Bobadormu
+				["coords"] = {
+					{ 56.0, 19.0, STORMWIND_CITY },
+					{ 52.8, 83.0, ORGRIMMAR },
+				},
+				["timeline"] = { ADDED_11_0_5 },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(83274, {	-- An Original Path Through Time
+				["provider"] = { "n", 234555 },	-- Bobadormu
+				["coords"] = {
+					{ 56.0, 19.0, STORMWIND_CITY },
+					{ 52.8, 83.0, ORGRIMMAR },
+				},
+				["timeline"] = { ADDED_11_0_5 },
+				["isWeekly"] = true,
+				["lvl"] = 80,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(82817, {	-- Disturbance Detected: Blackrock Depths
+				["qgs"] = { 234556 },	-- Grannadormu
+				["coords"] = {
+					{ 52.8, 82.8, ORGRIMMAR },
+					{ 56.0, 18.4, STORMWIND_CITY },
+				},
+				["timeline"] = { ADDED_11_2_7 },
+				["isWeekly"] = true,
+				["groups"] = { i(232471) },	-- Cache of Dark Iron Treasures
+			}),
+			q(83285, {	-- The Ancient Scroll
+				["provider"] = { "i", 225348 },	-- Ancient Timewarped Scroll
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+		}),
+		n(VENDORS, {
+			n(234555, {	-- Bobadormu
+				["coords"] = {
+					{ 56.0, 19.0, STORMWIND_CITY },
+					{ 52.8, 83.0, ORGRIMMAR },
+				},
+				["timeline"] = { ADDED_11_0_7 },
+				["groups"] = {
+					n(ARMOR, bubbleDownFiltered({
+						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+						["modID"] = 0,
+					},FILTERFUNC_itemID,{
+						filter(BACK_F, {
+							i(225187),	-- Blackmetal Cape
+						}),
+						filter(CLOTH, {
+							i(225182),	-- Aristocratic Cuffs
+							i(224858),	-- Coldstone Slippers
+							i(224854),	-- Holy Shroud
+						}),
+						filter(FINGER_F, {
+							i(225186),	-- Freezing Band
+						}),
+						filter(LEATHER, {
+							i(224853),	-- Adventurer's Pith Helmet
+							i(224857),	-- Feet of the Lynx
+							i(225181),	-- Unearthed Bands
+						}),
+						filter(MAIL, {
+							i(224859),	-- Caverndeep Trudgers
+							i(224855),	-- Helm of Narv
+							i(225183),	-- Slimescale Bracers
+						}),
+						filter(PLATE, {
+							i(224860),	-- Boots of Avoidance
+							i(224856),	-- Mugthol's Helm
+							i(234862, {	-- Ogre Captains Armor
+								["modID"] = 22,
+								["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+							}),
+							i(225184),	-- Runed Golem Shackles
+						}),
+					})),
+					filter(BATTLE_PETS, {
+						i(224410, {	-- Craggles (PET!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2200}}
+						}),
+						i(224406, {	-- Misty (PET!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2200}}
+						}),
+					}),
+					filter(COSMETIC, bubbleDown({["modID"] = 0 }, {
+						i(227718, {	-- Bearded Branch of Lore
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227704, {	-- Claymore of the Knight's Pledge
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227706, {	-- Doomreaper's Scythe
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227707, {	-- Doomwail Reaper
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227712, {	-- Emberswirl Bulwark
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2000}}
+						}),
+						i(227703, {	-- Farstrider's Huntsblade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}}
+						}),
+						i(227714, {	-- Gilded Drakecrest Shield
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2000}}
+						}),
+						i(227709, {	-- Kirin Tor Adept's Stave
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227705, {	-- Runed-Ice Dirk
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}}
+						}),
+						i(227717, {	-- Sermons of the Naaru
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}}
+						}),
+						i(227711, {	-- Tusked Branch of War
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+					})),
+					filter(MISC, sharedData({
+						["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						["modID"] = 0,
+					}, {
+						i(224567),	-- Commendation of the Argent Dawn
+						i(224558),	-- Commendation of the Brood of Nozdormu
+						i(224561),	-- Commendation of the Hydraxian Waterlords
+						i(224571),	-- Commendation of the Thorium Brotherhood
+						i(224566),	-- Commendation of the Timbermaw Hold
+						i(224565),	-- Commendation of the Wintersaber Trainers
+						i(224570),	-- Commendation of the Zandalar Tribe
+					})),
+					filter(MISC, sharedData({
+						["modID"] = 0,
+					}, {
+						i(224190, {	-- Kreeg's Hardy Draught
+							["cost"] = {{"c", TIMEWARPED_BADGE, 25}}
+						}),
+						i(225378, {	-- Mohawk Grenade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 200}}
+						}),
+					})),
+					filter(MOUNTS, {
+						i(224398, {	-- Frayfeather Hippogryph (MOUNT!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 5000}}
+						}),
+					}),
+					filter(TOYS, {
+						i(224192, {	-- Practice Ravager (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 200}}
+						}),
+					}),
+					n(WEAPONS, bubbleDown({["modID"] = 0 }, {
+						i(225200, {	-- Alcor's Sunrazor
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225195, {	-- Axe of the Deep Woods
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225192, {	-- Bow of Searing Arrows
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225197, {	-- Crimson Shocker
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225193, {	-- Elemental Mage Staff
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225199, {	-- Flurry Axe
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225196, {	-- Grimlok's Charge
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225191, {	-- Gut Ripper
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225188, {	-- Lefty's Brass Knuckle
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225189, {	-- Lightforged Blade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(234624, {	-- Longsword of the Knight's Pledge
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
+						}),
+						i(225190, {	-- Pendulum of Doom
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225201, {	-- Precisely Calibrated Rifle
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225194, {	-- Redbeard Crest
+							["cost"] = {{"c", TIMEWARPED_BADGE, 35}}
+						}),
+						i(225198, {	-- Warden Staff
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+					})),
+				},
+			}),
+		}),
+		inst_tw(63, {	-- Deadmines
+			e(2613, {	-- Rhahk'Zor
+				["crs"] = { 644 },
+				["groups"] = {
+					i(224735),	-- Blackened Bone Necklace
+					i(224731),	-- Ogre-Sized Belt
+					i(224732),	-- Foreman's Handwraps
+					i(224733),	-- Watchman's Boots
+					i(224734),	-- Defias Spiked Pauldrons
+					i(872),	-- Rockslicer
+				},
+			}),
+			e(2626, {	-- Sneed
+				["crs"] = { 643 },
+				["groups"] = {
+					i(224736),	-- Shredder Teeth
+					i(224737),	-- Goblin Treekickers
+					i(224738),	-- Logger's Wristguards
+					i(224739),	-- Lumbermaster's Mantle
+					i(5194),	-- Taskmaster Axe
+					i(1937),	-- Buzz Saw
+					i(2169),	-- Buzzer Blade
+					i(5195),	-- Gold-flecked Gloves
+				},
+			}),
+			e(2628, {	-- Gilned
+				["crs"] = { 1763 },
+				["groups"] = {
+					i(224740),	-- Forgemasters's Faceshield
+					i(224741),	-- Defias Scimitar
+					i(5199),	-- Smelting Pants
+					i(1156),	-- Lavishly Jeweled Ring
+				},
+			}),
+			e(2629, {	-- Mr. Smite
+				["crs"] = { 646 },
+				["groups"] = {
+					i(224742),	-- Smite's Pistol
+					i(224744),	-- Defias Cuirass
+					i(224745),	-- Blackguard Slippers
+					i(224746),	-- Thief's Gloves
+					i(224747),	-- Buccaneer's Bludgeon
+					i(7230),	-- Smite's Mighty Hammer
+					i(5196),	-- Smite's Reaver
+					i(5192),	-- Thief's Blade
+				},
+			}),
+			e(2630, {	-- Captain Greenskin
+				["crs"] = { 647 },
+				["groups"] = {
+					i(224748),	-- Captain's Tricorne
+					i(224749),	-- Goblin Griptreads
+					i(224753),	-- Pirate Captain's Girdle
+					i(5201),	-- Emberstone Staff
+					i(5200),	-- Impaling Harpoon
+					i(10403),	-- Blackened Defias Belt
+				},
+			}),
+			e(2631, {	-- Edwin VanCleef
+				["crs"] = { 639 },
+				["groups"] = {
+					i(224754),	-- Guildmaster's Leggings
+					i(224755),	-- Defias Knifeguards
+					i(5191),	-- Cruel Barb
+					i(5193),	-- Cape of the Brotherhood
+					i(5202),	-- Corsair's Overshirt
+					i(10399),	-- Blackened Defias Armor
+				},
+			}),
+			e(2632, {	-- Cookie
+				["crs"] = { 645 },
+				["groups"] = {
+					i(5198),	-- Cookie's Stirring Rod
+					i(5197),	-- Cookie's Tenderizer
+					i(224756),	-- Cookie's Special Flavors
+					i(224757),	-- Master Chef's Gloves
+					i(224758),	-- Stolen Stormwind Helmet
+					i(224759),	-- Pirate's Bracers
+				},
+			}),
+		}),
+		inst_tw(230, {	-- Dire Maul - Capital Gardens
+			e(406, {	-- Tendris Warpwood
+				["crs"] = { 11489 },	-- Tendris Warpwood
+				["groups"] = {
+					i(18353),	-- Stoneflower Staff
+					i(18352),	-- Petrified Bark Shield
+					i(18393),	-- Warpwood Bindings
+					i(18390),	-- Tanglemoss Leggings
+				},
+			}),
+			e(407, {	-- Illyanna Ravenoak
+				["crs"] = { 11488 },	-- Illyaana Ravenoak
+				["groups"] = {
+					i(18347),	-- Well Balanced Axe
+					i(18383),	-- Force Imbued Gauntlets
+					i(18349),	-- Gauntlets of Accuracy
+					i(18377),	-- Quickdraw Gloves
+					i(18386),	-- Padre's Trousers
+				},
+			}),
+			e(408, {	-- Magister Kalendris
+				["crs"] = { 11487 },	-- Magister Kalendris
+				["groups"] = {
+					i(18397),	-- Elder Magus Pendant
+					i(18374),	-- Flamescarred Shoulders
+					i(18350),	-- Amplifying Cloak
+					i(18351),	-- Magically Sealed Bracers
+					i(18371),	-- Mindtap Talisman
+				},
+			}),
+			e(409, {	-- Immol'thar
+				["crs"] = { 11496 },	-- Immol'thar
+				["groups"] = {
+					i(18372),	-- Blade of the New Moon
+					i(18381),	-- Evil Eye Pendant
+					i(18384),	-- Bile-Etched Spaulders
+					i(18389),	-- Cloak of the Cosmos
+					i(18385),	-- Robe of Everlasting Night
+					i(18394),	-- Demon Howl Wristguards
+					i(18391),	-- Eyestalk Cord
+					i(18379),	-- Odious Greaves
+					i(18370),	-- Vigilance Charm
+				},
+			}),
+			e(410, {	-- Prince Tortheldrin
+				["crs"] = { 11486 },	-- Prince Tortheldrin
+				["groups"] = {
+					i(18392),	-- Distracting Dagger
+					i(18396),	-- Mind Carver
+					i(18376),	-- Timeworn Mace
+					i(18388),	-- Stoneshatter
+					i(18382),	-- Fluctuating Cloak
+					i(18373),	-- Chestplate of Tranquility
+					i(18375),	-- Bracers of the Eclipse
+					i(18380),	-- Eldritch Reinforced Legplates
+					i(18378),	-- Silvermoon Leggings
+					i(18395),	-- Emerald Flame Ring
+				},
+			}),
+		}),
+		inst_tw(1276, {	-- Dire Maul - Warpwood Quarter
+			e(404, {	-- Lethtendris
+				["crs"] = { 14327 },	-- Lethtendris
+				["groups"] = {
+					i(18302),	-- Band of Vigor
+					i(18325),	-- Felhide Cap
+					i(18301),	-- Lethtendris' Wand
+					i(18311),	-- Quel'dorei Channeling Rod
+				},
+			}),
+			e(403, {	-- Hydrospawn
+				["crs"] = { 13280 },	-- Hydrospawn
+				["groups"] = {
+					i(18305),	-- Breakwater Legguards
+					i(18307),	-- Riptide Shoes
+					i(18317),	-- Tempest Talisman
+					i(18322),	-- Waterspout Boots
+					i(18324),	-- Waveslicer
+				},
+			}),
+			e(402, {	-- Zevrim Thornhoof
+				["crs"] = { 11490 },	-- Zevrim Thornhoof
+				["groups"] = {
+					i(18308),	-- Clever Hat
+					i(18319),	-- Fervent Helm
+					i(18306),	-- Gloves of Shadowy Mist
+					i(18313),	-- Helm of Awareness
+					i(18315),	-- Ring of Demonic Potency
+					i(18323),	-- Satyr's Bow
+				},
+			}),
+			e(405, {	-- Alzzin the Wildshaper
+				["crs"] = { 11492 },	-- Alzzin the Wildshaper
+				["groups"] = {
+					i(18321),	-- Energetic Rod
+					i(18312),	-- Energized Chestplate
+					i(18310),	-- Fiendish Machete
+					i(18309),	-- Gloves of Restoration
+					i(18318),	-- Merciful Greaves
+					i(18326),	-- Razor Gauntlets
+					i(18314),	-- Ring of Demonic Guile
+					i(18328),	-- Shadewood Cloak
+					i(18327),	-- Whipvine Cord
+				},
+			}),
+		}),
+		inst_tw(236, {	-- Stratholme - Main Gate
+			e(443, {	-- Hearthsinger Forresten
+				["crs"] = { 10558 },	-- Hearthsinger Forresten
+				["groups"] = {
+					i(13384),	-- Rainbow Girdle
+					i(13378),	-- Songbird Blouse
+					i(12103),	-- Star of Mystaria
+					i(13383),	-- Woollies of the Prancing Minstrel
+				},
+			}),
+			e(450, {	-- The Unforgiven
+				["crs"] = { 10516 },	-- The Unforgiven
+				["groups"] = {
+					i(151404),	-- Gauntlets of Purged Sanity
+					i(13404),	-- Mask of the Unforgiven
+					i(22406),	-- Redemption
+					i(13408),	-- Soul Breaker
+					i(13409),	-- Tearfall Bracers
+					i(13405),	-- Wailing Nightbane Pauldrons
+				},
+			}),
+			e(2633, {	-- Postmaster Malown
+				["crs"] = { 11143 },	-- Postmaster Malown
+				["groups"] = {
+					i(232905),	-- Malown's Slam
+					i(13390),	-- The Postmaster's Band
+					i(13392),	-- The Postmaster's Seal
+					i(13391),	-- The Postmaster's Treads
+					i(13389),	-- The Postmaster's Trousers
+					i(13388),	-- The Postmaster's Tunic
+				},
+			}),
+			e(445, {	-- Timmy the Cruel
+				["crs"] = { 10808 },	-- Timmy the Cruel
+				["groups"] = {
+					i(151403),	-- Fetid Stranglers
+					i(13403),	-- Grimgore Noose
+					i(13401),	-- The Cruel Hand of Timmy
+					i(13402),	-- Timmy's Galoshes
+					i(13400),	-- Vambraces of the Sadist
+				},
+			}),
+			e(749, {	-- Commander Malor
+				["crs"] = { 11032 },	-- Commander Malor
+				["groups"] = {
+					i(22403),	-- Nacreous Shell Necklace
+				},
+			}),
+			e(446, {	-- Willey Hopebreaker
+				["crs"] = { 10997 },	-- Willey Hopebreaker
+				["groups"] = {
+					i(18721),	-- Barrage Girdle
+					i(13382),	-- Cannonball Runner
+					i(22407),	-- Helm of the New Moon
+					i(22405),	-- Mantle of the Scarlet Crusade
+					i(13381),	-- Master Cannoneer Boots
+					i(22404),	-- Willey's Back Scratcher
+					i(13380),	-- Willey's Portable Howitzer
+				},
+			}),
+			e(448, {	-- Instructor Galford
+				["crs"] = { 10811 },	-- Instructor Galford
+				["groups"] = {
+					i(13386),	-- Archivist Cape
+					i(18716),	-- Ash Covered Boots
+					i(13387),	-- Foresight Girdle
+					i(13385),	-- Tome of Knowledge
+				},
+			}),
+			e(449, {	-- Balnazzar
+				["crs"] = {
+					10813,	-- Balnazzar
+					10812,	-- Grand Crusader Dathrohan
+				},
+				["groups"] = {
+					i(13353),	-- Book of the Dead
+					i(13359),	-- Crown of Tyranny
+					i(13348),	-- Demonshear
+					i(13369),	-- Fire Striders
+					i(13360),	-- Gift of the Elven Magi
+					i(18718),	-- Grand Crusader's Helm
+					i(18717),	-- Hammer of the Grand Crusader
+					i(18720),	-- Shroud of the Nathrezim
+					i(13358),	-- Wyrmtongue Shoulders
+				},
+			}),
+		}),
+		inst_tw(1292, {	-- Stratholme - Service Entrance
+			e(451, {	-- Baroness Anastari
+				["crs"] = { 10436 },	-- Baroness Anastari
+				["groups"] = {
+					i(18728),	-- Anastari Heirloom
+					i(13534),	-- Banshee Finger
+					i(13539),	-- Banshee's Touch
+					i(13537),	-- Chillhide Bracers
+					i(13535),	-- Coldtouch Phantom Wraps
+					i(18729),	-- Screeching Bow
+					i(18730),	-- Shadowy Laced Handwraps
+					i(13538),	-- Windshrieker Pauldrons
+				},
+			}),
+			e(452, {	-- Nerub'enkan
+				["crs"] = { 10437 },	-- Nerub'enkan
+				["groups"] = {
+					i(13533),	-- Acid-Etched Pauldrons
+					i(18738),	-- Carapace Spine Crossbow
+					i(18739),	-- Chitinous Plate Legguards
+					i(13531),	-- Crypt Stalker Leggings
+					i(13532),	-- Darkspinner Claws
+					i(13530),	-- Fangdrip Runners
+					i(13529),	-- Husk of Nerub'enkan
+					i(18740),	-- Thuzadin Sash
+				},
+			}),
+			e(453, {	-- Maleki the Pallid
+				["crs"] = { 10438 },	-- Maleki the Pallid
+				["groups"] = {
+					i(18737),	-- Bone Slicing Hatchet
+					i(13525),	-- Darkbind Fingers
+					i(13526),	-- Flamescarred Girdle
+					i(13527),	-- Lavawalker Greaves
+					i(18735),	-- Maleki's Footwraps
+					i(18734),	-- Pale Moon Cloak
+					i(13524),	-- Skull of Burning Shadows
+					i(13528),	-- Twilight Void Bracers
+				},
+			}),
+			e(454, {	-- Magistrate Barthilas
+				["crs"] = { 10435 },	-- Magistrate Barthilas
+				["groups"] = {
+					i(18727),	-- Crimson Felt Hat
+					i(18722),	-- Death Grips
+					i(18726),	-- Magistrate's Cuffs
+					i(18725),	-- Peacemaker
+					i(13376),	-- Royal Tribunal Cloak
+				},
+			}),
+			e(455, {	-- Ramstein the Gorger
+				["crs"] = { 10439 },	-- Ramstein the Gorger
+				["groups"] = {
+					i(18723),	-- Animated Chain Necklace
+					i(13373),	-- Band of Flesh
+					i(13375),	-- Crest of Retribution
+					i(13515),	-- Ramstein's Lightning Bolts
+					i(13372),	-- Slavedriver's Cane
+					i(13374),	-- Soulstealer Mantle
+				},
+			}),
+			e(456, {	-- Lord Aurius Rivendare
+				["crs"] = { 45412 },	-- Lord Aurius Rivendare
+				["groups"] = {
+					i(13335),	-- Rivendare's Deathcharger (MOUNT!)
+					i(13368),	-- Bonescraper
+					i(13340),	-- Cape of the Black Baron
+					i(13344),	-- Dracorian Gauntlets
+					i(22410),	-- Gauntlets of Deftness
+					i(22411),	-- Helm of the Executioner
+					i(22408),	-- Ritssyn's Wand of Bad Mojo
+					i(13346),	-- Robes of the Exalted
+					i(13505),	-- Runeblade of Baron Rivendare
+					i(13349),	-- Scepter of the Unholy
+					i(13345),	-- Seal of Rivendare
+					i(13361),	-- Skullforge Reaver
+					i(22412),	-- Thuzadin Mantle
+					i(22409),	-- Tunic of the Crescent Moon
+				},
+			}),
+		}),
+		inst_tw(241, {	-- Zul'Farrak
+			e(485, {	-- Theka the Martyr
+				["crs"] = { 7272 },	-- Theka the Martyr
+				["groups"] = {
+					i(151456),	-- Theka's Seal of Vigilance
+				},
+			}),
+			e(482, {	-- Hydromancer Velratha
+				["crs"] = { 7795 },	-- Hydromancer Velratha
+				["groups"] = {
+					i(9243),	-- Shriveled Troll Heart
+				},
+			}),
+			e(484, {	-- Antu'sul
+				["crs"] = { 8127 },	-- Antu'sul
+				["groups"] = {
+					i(9641),	-- Lifeblood Amulet
+					i(9379),	-- Sang'thraze the Deflector
+					i(9639),	-- The Hand of Antu'sul
+					i(9640),	-- Vice Grips
+				},
+			}),
+			e(486, {	-- Witch Doctor Zum'rah
+				["crs"] = { 7271 },
+				["groups"] = {
+					i(18083),	-- Jumanza Grips
+					i(151457),	-- Witch Doctor's Ritual Collar
+					i(18082),	-- Zum'rah's Vexing Cane
+				},
+			}),
+			e(483, {	-- Gahz'rilla
+				["crs"] = { 7273 },	-- Gahz'rilla
+				["groups"] = {
+					i(9467),	-- Gahz'rilla Fang
+					i(9469),	-- Gahz'rilla Scale Armor
+					i(151455),	-- Gahz'rilla Scale Cloak
+				},
+			}),
+			e(487, {	-- Nekrum & Sezzi'ziz
+				["crs"] = {
+					7796,	-- Nekrum Gutchewer
+					7275,	-- Shadowpriest Sezz'ziz
+				},
+				["groups"] = {
+					i(9470),	-- Bad Mojo Mask
+					i(9475),	-- Diabolic Skiver
+					i(9474),	-- Jinxed Hoodoo Kilt
+					i(9473),	-- Jinxed Hoodoo Skin
+					i(151459),	-- Nekrum's Witherguard
+					i(151458),	-- Sezz'ziz's Captive Kickers
+				},
+			}),
+			e(489, {	-- Chief Ukorz Sandscalp
+				["crs"] = {
+					7267,	-- Chief Ukorz Sandscalp
+					7797,	-- Ruuzlu
+				},
+				["groups"] = {
+					i(9476),	-- Big Bad Pauldrons
+					i(9479),	-- Embrace of the Lycan
+					i(151460),	-- Farraki Ceremonial Robes
+					i(232903),	-- Jang'thraze the Protector
+					i(9478),	-- Ripsaw
+					i(232904),	-- Sul'thraze the Lasher
+					i(9477),	-- The Chief's Enforcer
+					i(151461),	-- Ukorz's Chain Leggings
+				},
+			}),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.CLASSIC, {
+	-- Dungeons
+	63,	-- Deadmines
+	{230,236},	-- Dire Maul - Capital Gardens
+	{230,239,1276},	-- Dire Maul - Warpwood Quarter
+	{236,STRATHOLME},	-- Stratholme - Main Gate
+	{236,318,1292},	-- Stratholme - Service Entrance
+	241,	-- Zul'Farrak
+});
+
+-- The Burning Crusade Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
+	expansion(EXPANSION.TBC, {["forcetimeline"] = { ADDED_6_2_2 }}),
+	expansion(EXPANSION.TBC, {
+		n(GROUP_FINDER, {
+			i(187902, {	-- Sporebat Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss of any 'The Burning Crusade Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
+			}),
+			i(129747, {	-- Swirling Timewarped Vial
+				["description"] = "Drops from the last boss of any 'The Burning Crusade Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			-- TW TBC Quest under level 80
+			q(85948, {	-- A Burning Journey Through Time
+				["provider"] = { "n", 98685 },	-- Cupri
+				["coord"] = { 54.4, 38.8,  SHATTRATH_CITY },
+				["timeline"] = { ADDED_11_0_5 },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(47523, {	-- Disturbance Detected: Black Temple
+				["provider"] = { "n", 123252 },	-- Vormu
+				["coord"] = { 54.6, 39.0,  SHATTRATH_CITY },
+				["timeline"] = { ADDED_7_2_5 },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(208091, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (BC)
+						["description"] = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
+						["sym"] = {{"select","itemID",
+							97554,	-- Dripping Strider Egg
+							122112,	-- Hyjal Whisp
+							122110,	-- Sultry Grimoire
+							97555,	-- Tiny Fel Engine Key
+						}},
+						["groups"] = {
+							i(150774),	-- Timewarped Illidari Battleplans (QI!)
+						-- Can also contain any item from BT
+							i(32458),	-- Ashes of Al'ar (MOUNT!)
+							i(133543),	-- Infinite Timereaver (MOUNT!)
+							-- Archimonde
+							i(171942),	-- Cowl of Absolution
+							i(171941),	-- Cowl of the Tempest
+							i(171943),	-- Hood of Absolution
+							i(171940),	-- Hood of the Malefic
+							i(171929),	-- Lightbringer Faceguard
+							i(171930),	-- Lightbringer Greathelm
+							i(171931),	-- Lightbringer War-Helm
+							i(171932),	-- Gronnstalker's Helmet
+							i(171927),	-- Onslaught Battle-Helm
+							i(171928),	-- Onslaught Greathelm
+							i(171935),	-- Skyshatter Cover
+							i(171934),	-- Skyshatter Headguard
+							i(171933),	-- Skyshatter Helmet
+							i(171936),	-- Slayer's Helm
+							i(171938),	-- Thunderheart Cover
+							i(171939),	-- Thunderheart Headguard
+							i(171937),	-- Thunderheart Helmet
+							i(171502),	-- Apostle of Argus
+							i(171496),	-- Cataclysm's Edge
+							i(171504),	-- Tempest of Chaos
+							i(171500),	-- Bristleblitz Striker
+							i(171503),	-- Antonidas' Aegis of Rapt Concentration
+							i(171505),	-- Scepter of Purification
+							i(171501),	-- Mail of Fevered Pursuit
+							i(171499),	-- Midnight Chestguard
+							i(171507),	-- Robes of Rhonin
+							i(171498),	-- Savior's Grasp
+							i(171506),	-- Leggings of Eternity
+							i(171497),	-- Legguards of Endless Rage
+							-- Kael Thas
+							i(171902),	-- Cataclysm Chestguard
+							i(171903),	-- Cataclysm Chestpiece
+							i(171904),	-- Cataclysm Chestplate
+							i(171896),	-- Crystalforge Breastplate
+							i(171895),	-- Crystalforge Chestguard
+							i(171897),	-- Crystalforge Chestpiece
+							i(171889),	-- Deathmantle Chestguard
+							i(171894),	-- Destroyer Breastplate
+							i(171893),	-- Destroyer Chestguard
+							i(171899),	-- Deathmantle Chestguard
+							i(171907),	-- Nordrassil Chestguard
+							i(171909),	-- Nordrassil Chestpiece
+							i(171908),	-- Nordrassil Chestplate
+							i(171901),	-- Shroud of the Avatar
+							i(171900),	-- Vestments of the Avatar
+							i(171898),	-- Rift Stalker Hauberk
+							i(171906),	-- Robe of the Corruptor
+							i(171905),	-- Robes of Tirisfal
+							i(171494),	-- Band of the Ranger-General
+							i(171487),	-- Crown of the Sun
+							i(171484),	-- Gauntlets of the Sun King
+							i(171492),	-- Leggings of Murderous Intent
+							i(171493),	-- Rod of the Sun King
+							i(171489),	-- Royal Cloak of the Sunstriders
+							i(171495),	-- Royal Gauntlets of Silvermoon
+							i(171488),	-- Sunhawk Leggings
+							i(171486),	-- Sunshower Light Cloak
+							i(171491),	-- Thalassian Wildercloak
+							i(171485),	-- The Nexus Key
+							i(171490),	-- Twinblade of the Phoenix
+							-- Lady Vashj
+							i(171912),	-- Crystalforge Faceguard
+							i(171914),	-- Crystalforge Greathelm
+							i(171913),	-- Crystalforge War-Helm
+							i(171916),	-- Deathmantle Helm
+							i(171919),	-- Cataclysm Headguard
+							i(171920),	-- Cataclysm Headpiece
+							i(171921),	-- Cataclysm Helm
+							i(171925),	-- Nordrassil Headdress
+							i(171924),	-- Nordrassil Headguard
+							i(171926),	-- Nordrassil Headpiece
+							i(171917),	-- Cowl of the Avatar
+							i(171918),	-- Hood of the Avatar
+							i(171910),	-- Destroyer Battle-Helm
+							i(171911),	-- Destroyer Greathelm
+							i(171915),	-- Rift Stalker Helm
+							i(171922),	-- Cowl of Tirisfall
+							i(171923),	-- Hood of the Corruptor
+							i(171481),	-- Glorious Gauntlets of Crestfall
+							i(171471),	-- Krakken-Heart Breastplate
+							i(171472),	-- Fang of Vashj
+							i(171474),	-- Serpent Spine Longbow
+							i(171477),	-- Lightfathom Scepter
+							i(171480),	-- Runetotem's Mantle
+							i(171476),	-- Vestments of the Sea-Witch
+							i(171475),	-- Belt of One-Hundred Deaths
+							i(171473),	-- Cobta-Lash Boots
+							i(171479),	-- Coral Band of the Revived
+							i(171478),	-- Ring of Endless Coils
+							i(171482),	-- Prism of Inner Calm
+						},
+					})),
+				},
+			}),
+			q(40168, {	-- The Swirling Vial
+				["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+		}),
+		n(VENDORS, {
+			n(98685, {	-- Cupri <Timewalking Vendor>
+				["coord"] = { 54.4, 38.8,  SHATTRATH_CITY },
+				["groups"] = {
+					n(ARMOR, {
+						filter(BACK_F, {
+							i(129834, {	-- Bishop's Cloak
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129832, {	-- Blood Knight War Cloak
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129831, {	-- Dory's Embrace
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129830, {	-- Farstrider Defender's Cloak
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129833, {	-- Shawl of Shifting Possibilities
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(CLOTH, {
+							i(129843, {	-- Corrupted Soulcloth Pantaloons
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129837, {	-- Cowl of Naaru Blessings
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129855, {	-- Voodo-Woven Belt
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(LEATHER, {
+							i(129852, {	-- Belt of the Silent Path
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129836, {	-- Mask of the Deceiver
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129841, {	-- Trousers of the Scryer's Retainer
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(MAIL, {
+							i(129853, {	-- Aftershock Waistguard
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129840, {	-- Rushing Storm Kilt
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129838, {	-- Storm Master's Helmet
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(PLATE, {
+							i(129835, {	-- Faceguard of Determination
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129854, {	-- Girdle of Seething Rage
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129842, {	-- Legplates of Unending Fury
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(TRINKET_F, {
+							i(129848, {	-- Bloodlust Brooch
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129937, {	-- Emblem of Fury
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129851, {	-- Essence of the Martyr
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129849, {	-- Gnomeregan Auto-Blocker 601
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129850, {	-- Icon of the Silver Crescent
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+						}),
+					}),
+					filter(BATTLE_PETS, sharedDataSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+						i(231365, {	-- Karazhan Syphoner (PET!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2200}},
+							["timeline"] = { ADDED_11_0_5 },
+						}),
+					})),
+					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+						i(232002, {	-- Amani Tracker's Blunderbuss
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232067, {	-- Amani'shi Voodoo Bow
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232478, {	-- Area 52 Tabard
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+						}),
+						i(232051, {	-- Ashtongue Channeler's Staff
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232050, {	-- Ashtongue Guardian's Spire
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232029, {	-- Auchenai Vindicator's Crystal Cleaver
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232001, {	-- Blazing Skyhawk Repeater
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232061, {	-- Cenarion Guardian's Stave
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232023, {	-- Chilled Obsidian Dragon's Tooth
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232040, {	-- Corrupted Sunblade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232065, {	-- Crimson Draenethyst Crusher
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
+						}),
+						i(232039, {	-- Crystal-Hooked Shortsword
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232057, {	-- Drake's Breath Heater Shield
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
+						}),
+						iensemble(232319, {	-- Ensemble: Auchenai Priest's Raiment
+							["modID"] = 14,
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232321, {	-- Ensemble: Boulderfist Mystic's Battlegear
+							["modID"] = 14,
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232322, {	-- Ensemble: Cenarion Mender's Battlegear
+							["modID"] = 14,
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232318, {	-- Ensemble: Shadowmoon Warlock's Vestments
+							["modID"] = 14,
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232320, {	-- Ensemble: Telhamat Anchorite's Raiment
+							["modID"] = 14,
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						i(232048, {	-- Felguard Sentinel's Polearm
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232044, {	-- Hammer of the Forest Loas
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232066, {	-- Icefrost Focuser
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232022, {	-- Point of the Nether Vortex
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232062, {	-- Shadowsword Vanquisher's Blade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
+						}),
+						i(232021, {	-- Sunburst Sticker
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232024, {	-- Sunfury Stalker's Fists
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(23388, {	-- Tranquillien Tabard
+							["races"] = HORDE_ONLY,
+							["minReputation"] = { FACTION_TRANQUILLIEN, EXALTED },
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+						}),
+						i(232345, {	-- Xu'rakas, Glaive of Command
+							["cost"] = {{"c", TIMEWARPED_BADGE, 3000}},
+						}),
+					})),
+					filter(MISC, {
+						ig(35348, {	-- Bag of Fishing Treasures
+							["cost"] = {{"c", TIMEWARPED_BADGE, 150}},
+						}),
+						ig(33844, {	-- Barrel of Fish
+							["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+						}),
+						ig(129948, {	-- Commendation of Honor Hold
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						ig(129951, {	-- Commendation of Lower City
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						ig(129949, {	-- Commendation of the Cenarion Expedition
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						ig(129945, {	-- Commendation of The Consortium
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						ig(129950, {	-- Commendation of the Keepers of Time
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						ig(129946, {	-- Commendation of The Sha'tar
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						ig(129947, {	-- Commendation of Thrallmar
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						ig(33857, {	-- Crate of Meat
+							["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+						}),
+						ig(207112, {	-- Grimoire of the Void-Touched Fel Imp (CI!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1000}},
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					}),
+					filter(MOUNTS, {
+						i(224399, {	-- Amani Hunting Bear (MOUNT!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 5000}},
+							["timeline"] = { ADDED_11_0_5 },
+						}),
+						i(129923, {	-- Eclipse Dragonhawk (MOUNT!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 5000}},
+						}),
+					}),
+					filter(TOYS, {
+						i(129929, {	-- Ever-Shifting Mirror (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+						}),
+						i(151016, {	-- Fractured Necrolyte Skull (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 750}},
+							["timeline"] = { ADDED_7_2_5 },
+						}),
+						i(129926, {	-- Mark of the Ashtongue (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1250}},
+						}),
+						i(151184, {	-- Verdant Throwing Sphere (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+							["timeline"] = { ADDED_7_2_5 },
+						}),
+					}),
+					n(WEAPONS, {
+						i(129847, {	-- Azure-Shield of Coldarra
+							["cost"] = {{"c", TIMEWARPED_BADGE, 35}},
+						}),
+						i(129845, {	-- Crossbow of Relentless Strikes
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						}),
+						i(129858, {	-- Gavel of Naaru Blessings
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129846, {	-- Mazthoril Honor Shield
+							["cost"] = {{"c", TIMEWARPED_BADGE, 35}},
+						}),
+						i(129857, {	-- Scryer's Blade of Focus
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129829, {	-- Staff of the Forest Lord
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						}),
+						i(129828, {	-- Staff of the Soul-Eater
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						}),
+						i(129861, {	-- Sword of Unyielding Force
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129839, {	-- Talisman of Kalecgos
+							["cost"] = {{"c", TIMEWARPED_BADGE, 35}},
+						}),
+						i(129827, {	-- The Blade of Harbingers
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						}),
+						i(129931, {	-- The Mutilator
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129856, {	-- Vanir's Fist of Brutality
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(751, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }},{	-- The Black Temple
+			["isRaid"] = true,
+			["groups"] = {
+				cr(22887, e(1582, {	-- High Warlord Naj'entus
+					i(122104),	-- Leviathan Hatchling (PET!)
+					i(150447),	-- Halberd of Desolation
+					i(150437),	-- Rising Tide
+					i(150438),	-- The Maelstrom's Fury
+					i(150481),	-- Cowl of Benevolence
+					i(150441),	-- Guise of the Tidal Lurker
+					i(150520),	-- Mantle of Darkness
+					i(150434),	-- Eternium Shell Bracers
+					i(150435),	-- Fists of Mukoa
+					i(150443),	-- Boots of Oceanic Fury
+					i(150444),	-- Pearl Inlaid Boots
+					i(150440),	-- Slippers of the Seacaller
+					i(150445),	-- Tide-Stomper's Greaves
+					i(150439),	-- Ring of Calming Waves
+					i(150446),	-- Ring of Captured Storms
+				})),
+				cr(22898, e(1583, {	-- Supremus
+					i(122106),	-- Abyssius (PET!)
+					i(150460),	-- Syphon of the Nathrezim
+					i(150451),	-- Legionkiller
+					i(150453),	-- Felstone Bulwark
+					i(150532),	-- Veil of Turning Leaves
+					i(150456),	-- Naturalist's Preserving Cinch
+					i(150454),	-- Waistwrap of Infinity
+					i(150512),	-- Leggings of Devastation
+					i(150459),	-- Band of the Abyssal Lord
+				})),
+				cr(22841, e(1584, {	-- Shade of Akama
+					i(150452),	-- The Brutalizer
+					i(150507),	-- Blind-Seers Icon
+					i(150469),	-- Amice of Brilliant Light
+					i(150535),	-- Shroud of the Highborne
+					i(150473),	-- The Seeker's Wristguards
+					i(150470),	-- Spiritwalker Gauntlets
+					i(150463),	-- Shadow-Walker's Cord
+					i(150464),	-- Ring of Deceitful Intent
+				})),
+				cr(22871, e(1585, {	-- Teron Gorefiend
+					i(150500),	-- Soul Cleaver
+					i(150477),	-- Rifle of the Stoic Guardian
+					i(150475),	-- Shadowmoon Destroyer's Drape
+					i(150479),	-- Robe of the Shadow Council
+					i(150476),	-- Insidious Bands
+					i(150480),	-- Botanist's Gloves of Growth
+					i(150474),	-- Gauntlets of Enforcement
+					i(150533),	-- Belt of Divine Guidance
+					i(150529),	-- Girdle of Lordaeron's Fallen
+					i(150528),	-- Softstep Boots of Tracking
+				})),
+				cr(22948, e(1586, {	-- Gurtogg Bloodboil
+					i(150496),	-- Staff of Immaculate Recovery
+					i(150466),	-- Messenger of Fate
+					i(150495),	-- Wand of Prismatic Focus
+					i(150462),	-- Shoudlers of the Hidden Predator
+					i(150486),	-- Vest of Mounting Assault
+					i(150530),	-- Wristbands of Divine Influence
+					i(150491),	-- Belt of Primal Majesty
+					i(150471),	-- Flashfire Girdle
+					i(150494),	-- Girdle of Mighty Resolve
+					i(150493),	-- Leggings of Divine Retribution
+					i(150511),	-- Shadowmaster's Boots
+					i(150526),	-- Shadowmoon Insignia
+					i(150487),	-- Unstoppable Aggressor's Ring
+				})),
+				cr(23418, e(1587, {	-- Reliquary of Souls
+					i(122107),	-- Fragment of Anger (PET!)
+					i(122109),	-- Fragment of Desire (PET!)
+					i(122108),	-- Fragment of Suffering (PET!)
+					i(150484),	-- Torch of the Damned
+					i(150509),	-- Naaru-Blessed Life Rod
+					i(150506),	-- Crown of Empowered Fate
+					i(150490),	-- Blood-Cursed Shoulderpads
+					i(150531),	-- The Wavemender's Mantle
+					i(150503),	-- Elunite Empowered Bracers
+					i(150505),	-- Gloves of Unfailing Faith
+					i(150499),	-- Grips of Damnation
+					i(150498),	-- Boneweave Girdle
+					i(150485),	-- Girdle of Stability
+					i(150497),	-- Dreadboots of the Legion
+					i(150504),	-- Naturewarden's Treads
+				})),
+				cr(22947, e(1588, {	-- Mother Shahraz
+					i(122110),	-- Sister of Temptation (PET!)
+					i(150514),	-- Blade of Savagery
+					i(150519),	-- Forest Prowler's Helm
+					i(150442),	-- Helm of Soothing Currents
+					i(150516),	-- Helm of the Illidari Shatterer
+					i(150571),	-- Gronnstalker's Spaulders
+					h(i(150935)),	-- Illidari Shoulderpads (Horde DH only)
+					a(i(150771)),	-- Illidari Shoulderpads (Alliance DH only)
+					i(150556),	-- Lightbringer Shoulderguards
+					i(150558),	-- Mantle of the Malefic
+					i(150568),	-- Mantle of the Tempest
+					i(150555),	-- Onslaught Shoulderguards
+					i(150768),	-- Shoulderguards of the Broken Sage
+					i(150565),	-- Shoulderpads of Absolution
+					i(150560),	-- Skyshatter Mantle
+					i(150563),	-- Slayer's Shoulderpads
+					i(150573),	-- Thunderheart Spaulders
+					i(150765),	-- Undying Vigil Shoulderguards
+					i(150492),	-- Garments of Temperance
+					i(150510),	-- Heartshatter Breastplate
+					i(150467),	-- Focused Mana Bindings
+					i(150468),	-- Kilt of Immortal Nature
+				})),
+				cr(23426, e(1589, {	-- The Illidari Council
+					i(150536),	-- Cowl of the Illidari High Lord
+					i(150483),	-- Cloak of the Illidari Council
+					i(150572),	-- Gronnstalker's Leggings
+					h(i(150933)),	-- Illidari Leggings (Horde DH only)
+					a(i(150773)),	-- Illidari Leggings (Alliance DH only)
+					i(150567),	-- Leggings of Absolution
+					i(150580),	-- Leggings of the Malefic
+					i(150570),	-- Leggings of the Tempest
+					i(150769),	-- Leggings of the Broken Sage
+					i(150557),	-- Lightbringer Legguards
+					i(150554),	-- Onslaught Legguards
+					i(150562),	-- Skyshatter Legguards
+					i(150564),	-- Slayer's Legguards
+					i(150575),	-- Thunderheart Legguards
+					i(150766),	-- Undying Vigil Legplates
+					i(150527),	-- Madness of the Betrayer
+				})),
+				cr(22917, e(1590, {	-- Illidan Stormrage
+					ach(11869, {	-- I'll Hold These For You Until You Get Out
+						["sourceAchievements"] = { 426 },	-- Warglaives of Azzinoth
+						["groups"] = {
+							i(150372, {	-- Arsenal: The Warglaives of Azzinoth
+								["_doautomation"] = false,
+								["groups"] = {
+									i(151137),	-- Warglaive of Azzinoth
+								},
+							}),
+						},
+					}),
+					i(122196),	-- Music Roll: The Burning Legion
+					i(150517),	-- Zhar'doom, Greatstaff of the Devourer
+					i(150525),	-- Crystal Spire of Karabor
+					i(150521),	-- Shard of Azzinoth
+					i(150488),	-- Black Bow of the Betrayer
+					i(150518),	-- Bulwark of Azzinoth
+					i(150436),	-- Cursed Vision of Sargeras
+					i(150534),	-- Faceplate of the Impenetrable
+					i(150553),	-- Gronnstalker's Chestguard
+					h(i(150934)),	-- Illidari Robe (Horde DH only)
+					a(i(150772)),	-- Illidari Robe (Alliance DH only)
+					i(150770),	-- Jerkin of the Broken Sage
+					i(150552),	-- Lightbringer Chestguard
+					i(150551),	-- Onslaught Chestguard
+					i(150559),	-- Robe of the Malefic
+					i(150569),	-- Robes of the Tempest
+					i(150566),	-- Shroud of Absolution
+					i(150561),	-- Skyshatter Breastplate
+					i(150550),	-- Slayer's Chestguard
+					i(150574),	-- Thunderheart Tunic
+					i(150767),	-- Undying Vigil Battleplate
+					i(150524),	-- Stormrage Signet Ring
+					i(150523),	-- Memento of Tyrande
+					i(150522),	-- The Skull of Gul'dan
+				})),
+			},
+		})),
+		inst_tw(249, {	-- Magisters' Terrace
+			n(COMMON_BOSS_DROPS, {
+				i(35275, {	-- Orb of Sin'dorei (TOY!)
+					["crs"] = {
+						24723,	-- Selin Fireheart
+						24744,	-- Vexallus
+						24560,	-- Priestess Delrissa
+						24664,	-- Kael'thas Sunstrider
+					},
+				}),
+			}),
+			e(530, {	-- Selin Fireheart
+				["creatureID"] = 24723,
+				["groups"] = {
+					i(133467),	-- Jaded Crystal Dagger
+					i(133433),	-- Sun-Forged Cleaver
+					i(133465),	-- Shoulderplates of Everlasting Pain
+					i(133436),	-- Cloak of Swift Mending
+					i(133431),	-- Bindings of Raging Fire
+					i(133432),	-- Bracers of the Forest Stalker
+					i(133466),	-- Eversong Cuffs
+					i(133434),	-- Gauntlets of Divine Blessings
+					i(133457),	-- Gloves of Arcane Acuity
+					i(133435),	-- Leggings of the Betrayed
+					i(133454),	-- Band of Celerity
+				},
+			}),
+			e(531, {	-- Vexallus
+				["creatureID"] = 24744,
+				["groups"] = {
+					i(133471),	-- Rod of the Blazing Light
+					i(133469),	-- Edge of Oppression
+					i(133437),	-- Latro's Dancing Blade
+					i(133470),	-- Fel-Tinged Mantle
+					i(133442),	-- Cloak of the Coming Night
+					i(133468),	-- Breastplate of Fierce Survival
+					i(133478),	-- Netherforce Chestplate
+					i(133439),	-- Bracers of Divine Infusion
+					i(133441),	-- Boots of Resuscitation
+					i(133438),	-- Band of Arcane Alacrity
+					i(133440),	-- Band of Determination
+					i(133430),	-- Kharmaa's Ring of Fate
+				},
+			}),
+			e(532, {	-- Priestess Delrissa
+				["creatureID"] = 24560,
+				["groups"] = {
+					i(133446),	-- Battle-Mace of the High Priestess
+					i(133444),	-- Duskhallow Mantle
+					i(133448),	-- Cloak of the Betrayed
+					i(133445),	-- Bracers of Slaughter
+					i(133447),	-- Gauntlets of the Tranquil Waves
+					i(133458),	-- Sunrage Treads
+					i(133456),	-- Sunstrider Warboots
+					i(133464),	-- Commendation of Kael'thas
+					i(133463),	-- Shard of Contempt
+					i(133461),	-- Timbal's Focusing Crystal
+					i(133462),	-- Vial of the Sunwell
+				},
+			}),
+			e(533, {	-- Kael'thas Sunstrider
+				["creatureID"] = 24664,
+				["groups"] = {
+					i(35504),	-- Phoenix Hatchling (PET!)
+					i(35513),	-- Swift White Hawkstrider (MOUNT!)
+					i(133450),	-- Axe of Shattered Dreams
+					i(133453),	-- Sun-Infused Focus Staff
+					i(133479),	-- Breeching Comet
+					i(133474),	-- Cudgel of Consecration
+					i(133472),	-- Quickening Blade of the Prince
+					i(133451),	-- Helm of Sanctification
+					i(133476),	-- Shoulderpads of the Silvermoon Retainer
+					i(133459),	-- Cloak of Blade Turning
+					i(133455),	-- Hauberk of the War Bringer
+					i(133452),	-- Robes of Summer Flame
+					i(133473),	-- Scarlet Sin'dorei Robes
+					i(133477),	-- Tunic of the Ranger Lord
+					i(133449),	-- Cord of Reconstitution
+					i(133475),	-- Greaves of the Penitent Knight
+				},
+			}),
+		}),
+		inst_tw(250, {	-- Mana Tombs
+			n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+				i(225678),	-- Spare Key to Shaffar's Stasis Chamber
+			})),
+			e(534, {	-- Pandemonius
+				["creatureID"] = 18341,
+				["groups"] = {
+					i(127219),	-- Creepjacker
+					i(127234),	-- Twinblade of Mastery
+					i(127236),	-- Starbolt Longbow
+					i(127216),	-- Voidfire Wand
+					i(127254),	-- Shield of the Void
+					i(127235),	-- Mindrage Pauldrons
+					i(127237),	-- Starry Robes of the Crescent
+					i(127218),	-- Faith Bearer's Gauntlets
+					i(127249),	-- Wastewalker Leggings
+					i(127233),	-- Boots of the Colossus
+					i(127217),	-- Boots of the Outlander
+				},
+			}),
+			e(535, {	-- Tavarok
+				["creatureID"] = 18343,
+				["groups"] = {
+					i(127220),	-- Shaarde the Greater
+					i(127224),	-- Staff of Polarities
+					i(127225),	-- Scimitar of the Nexus-Stalkers
+					i(127223),	-- Lightning-Rod Pauldrons
+					i(127243),	-- Mantle of the Sea Wolf
+					i(127221),	-- Cloak of Revival
+					i(127241),	-- Robe of the Great Dark Beyond
+					i(127240),	-- Shard Encrusted Breastplate
+					i(127232),	-- Gauntlets of Vindication
+					i(127242),	-- Predatory Gloves
+					i(127238),	-- Extravagant Boots of Malice
+					i(127222),	-- Nethershade Boots
+					i(127239),	-- Crystal Band of Valor
+				},
+			}),
+			e(536, {	-- Yor
+				["description"] =
+					-- #if AFTER 11.0.5
+					"Requires one of two keys unlocked via a quest chain in Blades Edge or a conjured one rarely dropped from Mana Tombs bosses to open.",
+					-- #else
+					"Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
+					-- #endif
+				["provider"] = { "i", 32092 },	-- The Eye of Haramad
+				["cost"] = {
+					{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key
+					-- #if AFTER 11.0.5
+					{ "i", 225678, 1 },	-- Spare Key to Shaffar's Stasis Chamber
+					-- #endif
+				},
+				["creatureID"] = 22927,
+				["groups"] = {
+					i(127422),	-- Mistshroud Tunic
+					i(127421),	-- Skystalker's Tunic
+					i(127423),	-- Slatesteel Breastplate
+					i(127420),	-- Windchanneller's Tunic
+					i(127428),	-- Band of the Crystalline Void
+					i(127231),	-- Longstrider's Loop
+					i(127424),	-- Nexus-Prince's Ring of Balance
+					i(127427),	-- Ring of Conflict Survival
+					i(127425),	-- Shaffar's Band of Brutality
+					i(127426),	-- Yor's Collapsing Band
+					i(127429),	-- Yor's Revenge
+				},
+			}),
+			e(537, {	-- Nexus-Prince Shaffar
+				["creatureID"] = 18344,
+				["groups"] = {
+					i(127246),	-- Axe of the Nexus-Kings
+					i(127251),	-- Grand Scepter of the Nexus-Kings
+					i(127250),	-- Scepter of Sha'tar
+					i(127255),	-- Warp-Storm Warblade
+					i(127226),	-- Ethereal Warp-Bow
+					i(127259),	-- The Fel Barrier
+					i(127228),	-- Mask of the Howling Storm
+					i(127227),	-- Sigil of Shaffar
+					i(127247),	-- Mantle of the Unforgiven
+					i(127253),	-- Pauldrons of Swift Retribution
+					i(127256),	-- Bands of Negation
+					i(127244),	-- Lucid Dream Bracers
+					i(127229),	-- Nexus-Bracers of Vigor
+					i(127252),	-- Glyph-Lined Sash
+					i(127248),	-- Stillwater Girdle
+					i(127258),	-- Forestwalker Kilt
+					i(127230),	-- Ethereal Boots of the Skystrider
+					i(127257),	-- Cobalt Band of Tyrigosa
+					i(127245),	-- Warp-Scarab Brooch
+				},
+			}),
+		}),
+		inst_tw(254, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Arcatraz
+			e(548, {	-- Zereketh the Unbound
+				["creatureID"] = 20870,
+				["groups"] = {
+					i(127151),	-- Cloak of Scintillating Auras
+					i(127162),	-- Gloves of the Unbound
+					i(127171),	-- Hood of Oblivion
+					i(127152),	-- Mana-Sphere Shoulderguards
+					i(127154),	-- Outland Striders
+					i(127153),	-- Rubidium War-Girdle
+				},
+			}),
+			e(549, {	-- Dalliah the Doomsayer
+				["creatureID"] = 20885,
+				["groups"] = {
+					i(127170),	-- Helm of Assassination
+					i(127172),	-- Hungering Spineripper
+					i(127156),	-- Lamp of Peaceful Repose
+					i(127155),	-- Nether Core's Control Rod
+					i(127154),	-- Outland Striders
+					i(127159),	-- Reflex Blades
+					i(127157),	-- Thatia's Self-Correcting Gauntlets
+				},
+			}),
+			e(550, {	-- Wrath-Scryer Soccothrates
+				["creatureID"] = 20886,
+				["groups"] = {
+					i(127165),	-- Doomplate Chestguard
+					i(127163),	-- Emberhawk Crossbow
+					i(127169),	-- Hallowed Crown
+					i(127161),	-- Ryngo's Band of Ingenuity
+					i(127164),	-- The Sleeper's Cord
+					i(127160),	-- Warmaul of Infused Light
+					i(127158),	-- Worldfire Chestguard
+				},
+			}),
+			e(551, {	-- Harbinger Skyriss
+				["creatureID"] = 20912,
+				["groups"] = {
+					i(127175),	-- Belt of Depravity
+					i(127177),	-- Bracers of Dignity
+					i(127149),	-- Breastplate of the Bold
+					i(127174),	-- Choker of Fluid Thought
+					i(127167),	-- Elementium Band of the Sentry
+					i(127168),	-- Lamp of Peaceful Radiance
+					i(127176),	-- Shadowstep Striders
+					i(127173),	-- Shiffar's Nexus-Horn
+					i(127166),	-- Sigil-Laced Boots
+					i(127150),	-- Tidefury Chestpiece
+					i(127178),	-- Vileblade of the Betrayer
+				},
+			}),
+		})),
+		inst_tw(255, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Black Morass
+			e(552, {	-- Chrono Lord Deja
+				["creatureID"] = 17879,
+				["groups"] = {
+					i(127434),	-- Melmorta's Twilight Longbow
+					-- #if BEFORE 7.3.5
+					i(127456),	-- Quantum Blade (7.3.5 - Moved from Chrono Lord Deja)
+					-- #endif
+					i(127436),	-- Mask of Inner Fire
+					i(127437),	-- Mantle of Three Terrors
+					i(127438),	-- Sun-Gilded Shouldercaps
+					i(127435),	-- Burnoose of Shifting Ages
+					-- #if BEFORE 7.3.5
+					i(127430),	-- Handgrips of Assassination (7.3.5 - Moved to Temporus)
+					-- #endif
+					-- #if AFTER 7.3.5
+					i(127433),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
+					i(127432),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
+					-- #endif
+					i(127439),	-- Ring of Spiritual Precision
+				},
+			}),
+			e(553, {	-- Temporus
+				["creatureID"] = 17880,
+				["groups"] = {
+					i(127440),	-- Epoch-Mender
+					-- #if AFTER 7.3.5
+					i(127456),	-- Quantum Blade (7.3.5 - Moved from Chrono Lord Deja)
+					-- #endif
+					i(127442),	-- Millennium Blade
+					i(127445),	-- Star-Heart Lamp
+					i(127444),	-- Laughing Skull Battle-Harness
+					-- #if AFTER 7.3.5
+					i(127430),	-- Handgrips of Assassination (7.3.5 - Moved from Chrono Lord Deja)
+					-- #endif
+					i(127443),	-- Khadgar's Kilt of Abjuration
+					i(127441),	-- Hourglass of the Unraveller
+				},
+			}),
+			e(554, {	-- Aeonus
+				["creatureID"] = 17881,
+				["groups"] = {
+					i(127446),	-- Bloodfire Greatstaff
+					i(127447),	-- Latro's Shifting Sword
+					i(127452),	-- Cowl of the Guiltless
+					i(127449),	-- Helm of Desolation
+					i(127450),	-- Mana-Etched Crown
+					i(127453),	-- Pauldrons of the Crimson Flight
+					i(127451),	-- Primal Surge Bracers
+					i(127454),	-- Girdle of the Deathdealer
+					i(127455),	-- Girdle of Valorous Deeds
+					i(127457),	-- Breeches of the Occultist
+					-- #if BEFORE 7.3.5
+					i(127433),	-- Legplates of the Bold (7.3.5 - Moved to Chrono Lord Deja)
+					-- #endif
+					i(127431),	-- Legplates of the Righteous
+					-- #if BEFORE 7.3.5
+					i(127432),	-- Moonglade Pants (7.3.5	-- Moved to Chrono Lord Deja)
+					-- #endif
+					i(127448),	-- Scarab of the Infinite Cycle
+				},
+			}),
+		})),
+		inst_tw(256, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Blood Furnace
+			e(555, {	-- The Maker
+				["creatureID"] = 17381,
+				["groups"] = {
+					i(188293),	-- Bloodlord Legplates
+					i(188277),	-- Diamond-Core Sledgemace
+					i(188292),	-- Embroidered Cape of Mysteries
+					i(188280),	-- Girdle of the Gale Storm
+					i(188279),	-- Ironblade Gauntlets
+					i(188294),	-- Mage-Collar of the Firestorm
+					i(188291),	-- Moon-Touched Bands
+					i(188278),	-- Pendant of Battle-Lust
+				},
+			}),
+			e(556, {	-- Broggok
+				["creatureID"] = 17380,
+				["groups"] = {
+					i(188284),	-- Arcing Bracers
+					i(188282),	-- Auslese's Light Channeler
+					i(188285),	-- Bloody Surgeon's Mitts
+					i(188308),	-- Embroidered Spellpyre Boots
+					i(188299),	-- Emerald Eye Bracer
+					i(188296),	-- Firebrand Battleaxe
+					i(188283),	-- Kilt of the Night Strider
+					i(188281),	-- Legion Blunderbuss
+					i(188298),	-- Moonchild Leggings
+					i(188297),	-- Signet of Repose
+					i(188295),	-- Virtue Bearer's Vambraces
+				},
+			}),
+			e(557, {	-- Keli'dan the Breaker
+				["creatureID"] = 17377,
+				["groups"] = {
+					i(188304),	-- Adamantine Repeater
+					i(188307),	-- Bloodsworn Warboots
+					i(188301),	-- Doomplate Gauntlets
+					i(188311),	-- Eaglecrest Warboots
+					i(188309),	-- Icon of Unyielding Courage
+					i(188306),	-- Leggings of the Unrepentant
+					i(188314),	-- Mantle of Shadowy Embrace
+					i(188290),	-- Mantle of the Dusk-Dweller
+					i(188287),	-- Mindfire Waistband
+					i(188289),	-- Raiments of Divine Authority
+					i(188303),	-- Robe of Effervescent Light
+					i(188302),	-- Ruby Helm of the Just
+					i(188300),	-- Soldier's Dog Tags
+					i(188313),	-- Talisman of the Breaker
+					i(188305),	-- The Willbreaker
+					i(188288),	-- Vest of Vengeance
+					i(188286),	-- Warsong Howling Axe
+					i(188310),	-- Wastewalker Tunic
+					i(188312),	-- Wave-Crest Striders
+				},
+			}),
+		})),
+		inst_tw(257, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Botanica
+			e(558, {	-- Commander Sarannis
+				["creatureID"] = 17976,
+				["groups"] = {
+					i(188370),	-- Prismatic Mittens of Mending
+					i(188372),	-- Revenger
+					i(188369),	-- Sarannis' Mystic Sheen
+					i(188371),	-- Towering Mantle of the Hunt
+					i(188394),	-- Warhelm of the Bold
+					i(188391),	-- Warpscale Leggings
+				},
+			}),
+			e(559, {	-- High Botanist Freywinn
+				["creatureID"] = 17975,
+				["groups"] = {
+					i(188374),	-- Aegis of the Sunbird
+					i(188367),	-- Beast Lord Cuirass
+					i(188377),	-- Enchanted Thorium Torque
+					i(188375),	-- Energis Armwraps
+					i(188392),	-- Moonglade Cowl
+					i(188376),	-- Obsidian Clodstompers
+					i(188373),	-- Stormreaver Warblades
+				},
+			}),
+			e(560, {	-- Thorngrin the Tender
+				["creatureID"] = 17978,
+				["groups"] = {
+					i(188382),	-- Arcane Netherband
+					i(188381),	-- Dreamer's Dragonstaff
+					i(188380),	-- Gauntlets of Cruel Intention
+					i(188379),	-- Ring of Umbral Doom
+					i(188378),	-- Runed Dagger of Solace
+				},
+			}),
+			e(561, {	-- Laj
+				["creatureID"] = 17980,
+				["groups"] = {
+					i(188385),	-- Boots of the Shifting Sands
+					i(188384),	-- Devil-Stitched Leggings
+					i(188386),	-- Mantle of Autumn
+					i(188383),	-- Mithril-Bark Cloak
+					i(188366),	-- Spaulders of the Righteous
+					i(188393),	-- Tidefury Helm
+				},
+			}),
+			e(562, {	-- Warp Splinter
+				["creatureID"] = 17977,
+				["groups"] = {
+					i(188396),	-- Bangle of Endless Blessings
+					i(188398),	-- Boots of Ethereal Manipulation
+					i(188399),	-- Boots of the Endless Hunt
+					i(188400),	-- Feral Staff of Lashing
+					i(188401),	-- Gauntlets of Dissention
+					i(188395),	-- Greatsword of Forlorn Visions
+					i(188368),	-- Incanter's Robe
+					i(188389),	-- Jagged Bark Pendant
+					i(188397),	-- Netherfury Cape
+					i(188388),	-- Warp-Infused Drape
+					i(188390),	-- Warp Splinter's Thorn
+					i(188387),	-- Warpstaff of Arcanum
+				},
+			}),
+		})),
+		inst_tw(259, {	-- The Shattered Halls
+			e(566, {	-- Grand Warlock Nethekurse
+				["creatureID"] = 16807,
+				["groups"] = {
+					i(123995),	-- Hortus' Seal of Brilliance
+					i(123984),	-- Greathelm of the Unbreakable
+					i(123983),	-- Cloak of Malice
+					i(123981),	-- Bands of Nethekurse
+					i(123985),	-- Telaari Hunting Girdle
+					i(123992),	-- Figurine of the Colossus
+				},
+			}),
+			e(728, {	-- Blood Guard Porung
+				["creatureID"] = 20923,
+				["groups"] = {
+					i(124015),	-- Blood Guard's Necklace of Ferocity
+					i(124000),	-- Justice Bearer's Pauldrons
+					i(124011),	-- Spaulders of Slaughter
+					i(123997),	-- Hallowed Handwraps
+					i(124013),	-- Belt of Flowing Thought
+					i(124014),	-- Pantaloons of Flaming Wrath
+					i(124012),	-- Nimble-Foot Treads
+				},
+			}),
+			e(568, {	-- Warbringer O'mrogg
+				["creatureID"] = 16809,
+				["groups"] = {
+					i(123987),	-- Firemaul of Destruction
+					i(124002),	-- Runesong Dagger
+					i(123989),	-- Skyfire Hawk-Bow
+					i(124029),	-- Forestheart Bracers
+					i(123986),	-- World's End Bracers
+					i(124027),	-- Boots of the Righteous Path
+					i(123988),	-- Jeweled Boots of Sanctification
+				},
+			}),
+			e(569, {	-- Warchief Kargath Bladefist
+				["creatureID"] = 16808,
+				["groups"] = {
+					i(123994),	-- Demonblood Eviscerator
+					i(123999),	-- Lightsworn Hammer
+					i(124030),	-- The Bladefist
+					i(124001),	-- Nexus Torch
+					i(124028),	-- Bands of Rarefied Magic
+					i(123991),	-- Gauntlets of Desolation
+					i(123996),	-- Gauntlets of the Righteous
+					i(123998),	-- Gloves of Oblivion
+					i(123993),	-- Wastewalker Gloves
+					i(123990),	-- Greaves of the Shatterer
+				},
+			}),
+		}),
+		inst_tw(260, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Slave Pens
+			e(570, {	-- Mennu the Betrayer
+				["creatureID"] = 17941,
+				["groups"] = {
+					i(127183),	-- Spellfire Longsword
+					i(127191),	-- Starlight Dagger
+					i(127179),	-- Wastewalker Shiv
+					i(127213),	-- Adamantine Chain of the Unbroken
+					i(127193),	-- Traitor's Noose
+					i(127180),	-- Vest of Living Lightning
+					i(127189),	-- Archery Belt of the Broken
+					i(127190),	-- Cord of Belief
+					i(127182),	-- Tracker's Belt
+					i(127195),	-- Girdle of Many Blessings
+					i(127192),	-- Mennu's Scaled Leggings
+					i(127181),	-- Princely Reign Leggings
+				},
+			}),
+			e(571, {	-- Rokmar the Crackler
+				["creatureID"] = 17991,
+				["groups"] = {
+					i(127185),	-- Coilfang Hammer of Renewal
+					i(127187),	-- Calming Spore Reed
+					i(127188),	-- Coilfang Needler
+					i(127204),	-- Swamplight Lantern
+					i(127198),	-- Skeletal Necklace of Battlerage
+					i(127186),	-- Bogstrok Scale Cloak
+					i(127197),	-- Ironscale War Cloak
+					i(127194),	-- Coldwhisper Cord
+					i(127210),	-- Liar's Cord
+					i(127209),	-- Earthsoul Britches
+					i(127196),	-- Wavefury Boots
+					i(127184),	-- Runed Fungalcap
+				},
+			}),
+			e(572, {	-- Quagmirran
+				["creatureID"] = 17942,
+				["groups"] = {
+					i(127206),	-- Bleeding Hollow Warhammer
+					i(127200),	-- Phosphorescent Blade
+					i(127208),	-- Mana-Etched Spaulders
+					i(127203),	-- Pauldrons of Desolation
+					i(127215),	-- Pauldrons of Wild Magic
+					i(127211),	-- Breastplate of Righteous Fury
+					i(127202),	-- Shackles of Quagmirran
+					i(127199),	-- Girdle of the Immovable
+					i(127207),	-- Mage-Fury Girdle
+					i(127214),	-- Midnight Legguards
+					i(127212),	-- Boots of Blasphemy
+					i(127205),	-- Band of Ursol
+					i(127201),	-- Quagmirran's Eye
+				},
+			}),
+		})),
+		inst_tw(262, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Underbog
+			e(576, {	-- Hungarfen
+				["creatureID"] = 17770,
+				["groups"] = {
+					i(188335),	-- Arcanium Signet Bands
+					i(188336),	-- Boggspine Knuckles
+					i(188337),	-- Cassock of the Loyal
+					i(188333),	-- Girdle of Living Flame
+					i(188334),	-- Hungarhide Gauntlets
+					i(188316),	-- Lykul Bloodbands
+					i(188315),	-- Manaspark Gloves
+					i(188317),	-- Starlight Gauntlets
+				},
+			}),
+			e(577, {	-- Ghaz'an
+				["creatureID"] = 18105,
+				["groups"] = {
+					i(188324),	-- Cloak of Healing Rays
+					i(188342),	-- Dunewind Sash
+					i(188338),	-- Girdle of Gallantry
+					i(188339),	-- Greatstaff of the Leviathan
+					i(188326),	-- Hatebringer
+					i(188341),	-- Headdress of the Tides
+					i(188340),	-- Hydra-Fang Necklace
+					i(188327),	-- Luminous Pearls of Insight
+					i(188343),	-- Ring of the Shadow Deeps
+					i(188323),	-- Studded Girdle of Virtue
+					i(188325),	-- Talisman of Tenacity
+				},
+			}),
+			e(578, {	-- Swamplord Musel'ek
+				["creatureID"] = 17826,
+				["groups"] = {
+					i(188347),	-- Armwraps of Disdain
+					i(188349),	-- Bogreaver
+					i(188319),	-- Cloak of Enduring Swiftness
+					i(188345),	-- Crown of the Forest Lord
+					i(188321),	-- Greaves of the Iron Guardian
+					i(188346),	-- Hands of the Sun
+					i(188348),	-- Swampstone Necklace
+					i(188322),	-- Truth Bearer Shoulderguards
+					i(188320),	-- Tunic of the Nightwatcher
+					i(188344),	-- Weathered Band of the Swamplord
+					i(188318),	-- Zangartooth Shortblade
+				},
+			}),
+			e(579, {	-- The Black Stalker
+				["creatureID"] = 17882,
+				["groups"] = {
+					i(188359),	-- Alembic of Infernal Power
+					i(188352),	-- Argussian Compass
+					i(188355),	-- Barbaric Legstraps
+					i(188362),	-- Barkchip Boots
+					i(188356),	-- Bone Chain Necklace
+					i(188358),	-- Demonfang Ritual Helm
+					i(188353),	-- Doomplate Shoulderguards
+					i(188351),	-- Endbringer
+					i(188365),	-- Eye of the Stalker
+					i(188360),	-- Mana-Etched Pantaloons
+					i(188350),	-- Oracle Belt of Timeless Mystery
+					i(188328),	-- Pauldrons of Brute Force
+					i(188357),	-- Ring of Fabled Hope
+					i(188332),	-- Robes of the Augurer
+					i(188361),	-- Savage Mask of the Lynx Lord
+					i(188330),	-- Shamblehide Chestguard
+					i(188331),	-- Skulldugger's Leggings
+					i(188354),	-- Stormshield of Renewal
+					i(188364),	-- Stormsong Kilt
+					i(188363),	-- The Black Stalk
+					i(188329),	-- The Stalker's Fangs
+				},
+			}),
+		})),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.TBC, {
+	-- #if AFTER 7.2.5.23910
+	751,	-- Black Temple, not originally included with the rotation
+	-- #endif
+
+	-- Dungeons
+	249,	-- Magisters' Terrace
+	250,	-- Mana Tombs
+	259,	-- The Shattered Halls
+
+	-- #if AFTER 9.1.5
+	256,	-- The Blood Furnace
+	257,	-- The Botanica
+	262,	-- The Underbog
+	-- #else
+	254,	-- The Arcatraz
+	255,	-- The Black Morass
+	260,	-- The Slave Pens
+	-- #endif
+});
+
+-- Wrath of the Lich King Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
+	expansion(EXPANSION.WRATH, {["forcetimeline"] = { ADDED_6_2_2 }}),
+	expansion(EXPANSION.WRATH, {
+		n(GROUP_FINDER, {
+			i(129928, {	-- Frigid Timewarped Prism
+				["description"] = "Drops from the last boss of any 'Wrath of the Lich King Timewalking' dungeon.",
+			}),
+			i(187903, {	-- Jormungar Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss of any 'Wrath of the Lich King Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
+			}),
+		}),
+		n(QUESTS, {
+			-- TW WotLK Quest under level 80
+			q(85949, {	-- A Frozen Journey Through Time
+				["provider"] = { "n", 98690 },	-- Auzin
+				["coord"] = { 50.6, 46.4, NORTHREND_DALARAN },
+				["timeline"] = { ADDED_11_0_5 },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(50316, {	-- Disturbance Detected: Ulduar
+				["provider"] = { "n", 130654 },	-- Vormu
+				["coord"] = { 49.5, 45.7, NORTHREND_DALARAN },
+				["timeline"] = { ADDED_7_3_5 },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(157030),	-- Titan Prison Fragment (QI!)
+					i(208094, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (WOTLK)
+						["description"] = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).",	-- Might have been removed in 10.2.7 as a pouch dropped instead for me
+						["sym"] = {{"select","itemID",
+							-- Seems to be always 1 of those 3 pets	-- Gold 15.09.2023
+							142098,	-- Drudge Ghoul (PET!)
+							142086,	-- Magma Rageling (PET!)
+							142085,	-- Nerubian Swarmer (PET!)
+						}},
+						["groups"] = {
+						-- Can also contain any item from Ulduar
+							i(133543),	-- Infinite Timereaver (MOUNT!)
+							i(50818),	-- Invincible (MOUNT!)
+							i(45693),	-- Mimiron's Head (MOUNT!)
+							i(224547, {	-- Timewarped Pouch
+								["timeline"] = { ADDED_10_2_7 },	-- Dropping in place of a pet
+							}),
+
+							-- Anub'Arak
+							i(171615, {	-- Aegis of the Coliseum
+								["races"] = HORDE_ONLY,
+							}),
+							i(171616, {	-- Anguish
+								["races"] = HORDE_ONLY,
+							}),
+							i(171560, {	-- Archon Glaive
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171604, {	-- Ardent Guard
+								["races"] = HORDE_ONLY,
+							}),
+							i(171583, {	-- Argent Resolve
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171525, {	-- Armbands of Dark Determination
+								["races"] = HORDE_ONLY,
+							}),
+							i(171557, {	-- Armbands of the Ashen Saint
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171581, {	-- Baelgun's Heavy Crossbow
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171527, {	-- Band of the Traitor King
+								["races"] = HORDE_ONLY,
+							}),
+							i(171543, {	-- Band of Deplorable violence
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171548, {	-- Belt of Deathly Dominion
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171614, {	-- Belt of the Eternal
+								["races"] = HORDE_ONLY,
+							}),
+							i(171556, {	-- Belt of the Forgotten Martyr
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171536, {	-- Bindings of the Ashen Saint
+								["races"] = HORDE_ONLY,
+							}),
+							i(171610, {	-- Blackhorn Bludgeon
+								["races"] = HORDE_ONLY,
+							}),
+							i(171533, {	-- Boots of the Icy Floe
+								["races"] = HORDE_ONLY,
+							}),
+							i(171547, {	-- Bracers of Dark Determination
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171529, {	-- Breeches of the Deepening Void
+								["races"] = HORDE_ONLY,
+							}),
+							i(171595, {	-- Bulwark of the Royal Guard
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171558, {	-- Chestguard of Flowing Elements
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171585, {	-- Chestguard of the Warden
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171597, {	-- Cinch of the Undying
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171589, {	-- Cold Convergence
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171584, {	-- Crusader's Glory
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171537, {	-- Cuirass of Flowing Elements
+								["races"] = HORDE_ONLY,
+							}),
+							i(171612, {	-- Darkmaw Crossbow
+								["races"] = HORDE_ONLY,
+							}),
+							i(171555, {	-- Footpads of the Icy Floe
+								["races"] = HORDE_ONLY,
+							}),
+							i(171594, {	-- Fordragon Blades
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171608, {	-- Forsaken Bonecarver
+								["races"] = HORDE_ONLY,
+							}),
+							i(171603, {	-- Frostblade Hatchet
+								["races"] = HORDE_ONLY,
+							}),
+							i(171542, {	-- Gauntlets of Bitter Reprisal
+								["races"] = HORDE_ONLY,
+							}),
+							i(171535, {	-- Girdle of the Forgotten Martyr
+								["races"] = HORDE_ONLY,
+							}),
+							i(171561, {	-- Gloves of Bitter Reprisal
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171562, {	-- Gloves of the Lifeless Touch
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171546, {	-- Greaves of the 7th Legion
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171524, {	-- Greaves of the Saronite Citadel
+								["races"] = HORDE_ONLY,
+							}),
+							i(171538, {	-- Handwraps of the Lifeless Touch
+								["races"] = HORDE_ONLY,
+							}),
+							i(171541, {	-- Hellion Glaive
+								["races"] = HORDE_ONLY,
+							}),
+							i(171526, {	-- Hellscream Slicer
+								["races"] = HORDE_ONLY,
+							}),
+							i(171587, {	-- Helmet of the Crypt Lord
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171602, {	-- Helm of the Crypt Lord
+								["races"] = HORDE_ONLY,
+							}),
+							i(171530, {	-- Leggings of the Awakening
+								["races"] = HORDE_ONLY,
+							}),
+							i(171553, {	-- Leggings of the Deepening Void
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171531, {	-- Leggings of the Lurking Threat
+								["races"] = HORDE_ONLY,
+							}),
+							i(171551, {	-- Legguards of the Lurking Threat
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171607, {	-- Legplates of Redeemed Blood
+								["races"] = HORDE_ONLY,
+							}),
+							i(171596, {	-- Legplates of the Immortal Spider
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171592, {	-- Legplates of the Silver Hand
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171552, {	-- Legwraps of the Awakening
+								["races"] = HORDE_ONLY,
+							}),
+							i(171539, {	-- Lurid Manifestation
+								["races"] = HORDE_ONLY,
+							}),
+							i(171599, {	-- Mace of the Earthborn Chieftain
+								["races"] = HORDE_ONLY,
+							}),
+							i(171540, {	-- Maiden's Adoration
+								["races"] = HORDE_ONLY,
+							}),
+							i(171559, {	-- Maiden's Favor
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171532, {	-- Might of the Nerub
+								["races"] = HORDE_ONLY,
+							}),
+							i(171554, {	-- Misery's End
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171606, {	-- Pauldrons of the Shadow Hunter
+								["races"] = HORDE_ONLY,
+							}),
+							i(171591, {	-- Pauldrons of the Timeless Hunter
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171605, {	-- Perdition
+								["races"] = HORDE_ONLY,
+							}),
+							i(171600, {	-- Pride of the Kor'kron
+								["races"] = HORDE_ONLY,
+							}),
+							i(171528, {	-- Reign of the Dead
+								["races"] = HORDE_ONLY,
+							}),
+							i(171549, {	-- Reign of the Unliving
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171611, {	-- Robes of the Sleepless
+								["races"] = HORDE_ONLY,
+							}),
+							i(171545, {	-- Signet of the Traitor King
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171609, {	-- Shoulderpads of the Snow Bandit
+								["races"] = HORDE_ONLY,
+							}),
+							i(171593, {	-- Spaulders of the Snow Bandit
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171601, {	-- Stoneskin Chestplate
+								["races"] = HORDE_ONLY,
+							}),
+							i(171544, {	-- Stormpike Cleaver
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171550, {	-- Strength of the Nerub
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171534, {	-- Suffering's End
+								["races"] = HORDE_ONLY,
+							}),
+							i(171613, {	-- Sunwalker Legguards
+								["races"] = HORDE_ONLY,
+							}),
+							i(171590, {	-- The Grinder
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171582, {	-- The Lion's Maw
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171598, {	-- Vestments of the Sleepless
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171586, {	-- Vigilant Ward
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171523, {	-- Waistguard of Deathly Dominion
+								["races"] = HORDE_ONLY,
+							}),
+							i(171588, {	-- Westfall Saber
+								["races"] = ALLIANCE_ONLY,
+							}),
+							-- Heigan
+							i(171618),	-- Amulet of Autopsy			*14.01.2024
+							i(171515),	-- Bindings of the Decrepit
+							i(171509),	-- Breastplate of Tormented Rage
+							i(171516),	-- Chestguard of Bitter Charms
+							i(171514),	-- Cryptfiend's Bite
+							i(171619),	-- Cuffs of Dark Shadows
+							i(171617),	-- Demise
+							i(171521),	-- Eruption-Scarred Boots
+							i(171522),	-- Gloves of the Dancing Bear
+							i(171518),	-- Heigan's Putrid Vestments
+							i(171519),	-- Helm of Pilgrimage
+							i(171512),	-- Iron-Spring Jumpers
+							i(171508),	-- Leggings of Colossal Strides
+							i(171510),	-- Legguards of the Apostle
+							i(171623),	-- Necrogenic Belt
+							i(171624),	-- Preceptor's Bindings
+							i(171622),	-- Ring of Holy Cleansing		*14.01.2024
+							i(171625),	-- Saltarello Shoes
+							i(171520),	-- Serene Echoes
+							i(171621),	-- Shoulderplates of Bloodshed
+							i(171626),	-- Staff of the Plague Beast
+							i(171511),	-- Stalk-Skin Belt
+							i(171517),	-- The Undeath Carrier
+							i(171620),	-- Tunic of the Lost Pack
+							-- Lich King
+							i(171571),	-- Archus, Greatstaff of Antonidas
+							i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
+							i(171563),	-- Fal'inrush, Defender of Quel'Thalas
+							i(171566),	-- Glorenzelg, High-Blade of the Silver Hand
+							i(171576),	-- Halion, Staff of Forgotten Love
+							i(171565),	-- Havoc's Call, Blade of Lordaeron Kings
+							i(171568),	-- Heaven's Fall, Kryss of a Thousand Lies
+							i(171564),	-- Mithrios, Bronzebeard's Legacy
+							i(171567),	-- Oathbinder, Charge of the Ranger-General
+							i(171578),	-- Pugius, Fist of Defiance
+							i(171570),	-- Royal Scepter of Terenas II
+							i(171577),	-- Stormfury, Dark Blade of the Betrayer
+							i(171574),	-- Tainted Twig of Nordrassil
+							i(171580),	-- Tel'thas, Dagger of the Blood King
+							i(171572),	-- Troggbane, Axe of the Frostborne King
+							i(171575),	-- Valius, Gavel of the Lightbringer
+							i(171573),	-- Warmace of Menethil
+							i(171579),	-- Windrunner's Heartseeker
+							-- Possible Ulduar Zonedrop TW Items (from killing Yogg Quest)
+							-- Confirmed
+							i(156466),	-- Bracers of Righteous Reformation	*14.01.2024
+							i(156468),	-- Cloak of the Dormant Blaze		*14.01.2024
+							i(156251),	-- Shroud of Alteration				*14.01.2024
+							i(156253),	-- Shoulders of Misfortune			*14.01.2024
+							-- Very Likely
+							i(156461),	-- Adamant Handguards
+							i(156255),	-- Belt of the Sleeper
+							i(156470),	-- Bloodcrush Cudgel
+							i(156467),	-- Boots of Unsettled Prey
+							i(156257),	-- Daschal's Bite
+							i(156462),	-- Drape of the Spellweaver
+							i(156463),	-- Golemheart Longbow
+							i(156252),	-- Greaves of the Stonewarder
+							i(156256),	-- Grips of Chaos
+							i(156465),	-- Iceshear Mantle
+							i(156254),	-- Leggings of the Tortured Earth
+							i(156460),	-- Mimiron's Repeater
+							i(156469),	-- Pillar of Fortitude
+						},
+					})),
+				},
+			}),
+			q(40173, {	-- The Unstable Prism
+				["provider"] = { "i", 129928 },	-- Frigid Timewarped Prism
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+		}),
+		n(VENDORS, {
+			n(98690, {	-- Auzin <Timewalking Vendor>
+				["maps"] = { NORTHREND_DALARAN },
+				["groups"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+							i(171999, {	-- Coldstep Sandals
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+								["timeline"] = { ADDED_8_2_5 },
+							}),
+							i(171995, {	-- Coldstep Slippers
+								["races"] = HORDE_ONLY,
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+								["timeline"] = { ADDED_8_2_5 },
+							}),
+							i(129879, {	-- Gloves of False Gestures
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129892, {	-- Meteor Chaser's Raiment
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129869, {	-- Xintor's Expeditioary Boots
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(FINGER_F, {
+							i(129872, {	-- Band of Channeled Magic
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129876, {	-- Bloodshed Band
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129873, {	-- Renewal of Life
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129874, {	-- Ring of Invincibility
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129875, {	-- Signet of the Impregnable Fortress
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(LEATHER, {
+							i(129871, {	-- Boots of Captain Ellis
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129881, {	-- Cat Burglar's Gripes
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129891, {	-- Shadow Seeker's Tunic
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(MAIL, {
+							i(129877, {	-- Logsplitters
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129890, {	-- Longstrider's Vest
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129870, {	-- Pack-Ice Striders
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(NECK_F, {
+							i(129884, {	-- Brooch of the Wailing Night
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129882, {	-- Evoker's Charm
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129885, {	-- Frozen Tear of Elune
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(PLATE, {
+							i(129889, {	-- Castle Breaker's Battleplate
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129880, {	-- Gauntlets of the Kraken
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129868, {	-- Kyzoc's Ground Stompers
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129886, {	-- Shard of the Crystal Forest
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+							i(129883, {	-- Spiked Battleguard Choker
+								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+							}),
+						}),
+						filter(TRINKET_F, {
+							i(129898, {	-- Mark of Supremacy
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129896, {	-- Mirror of Truth
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129893, {	-- Sundial of the Exiled
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129897, {	-- The Egg of Mortal Essence
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+							i(129895, {	-- Valor Medal of the First War
+								["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+							}),
+						}),
+					}),
+					filter(BATTLE_PETS, sharedDataSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+						i(231356, {	-- Specter (PET!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2200}},
+							["timeline"] = { ADDED_11_0_5 },
+						}),
+					})),
+					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+						i(232042, {	-- Azure Magus' Blade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232291, {	-- Battered Bulwark of the Argent Crusade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						i(232058, {	-- Ceremonial Stratholme Shield
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232060, {	-- Coldarra Spellbinder's Stave
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232043, {	-- Crystal-Maw Basher
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232019, {	-- Dark Ritualists Spellblade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(231999, {	-- Dragonflayer's Heartpiercer
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232027, {	-- Dragonflayer's Iron Cleaver
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232052, {	-- Dragonflayer's Wing Splitter
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232063, {	-- Drakkari Head Splitter
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232026, {	-- Drakkari Voodoo Stick
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						iensemble(232316, {	-- Ensemble: Brunnhildar Scout's Kit
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232313, {	-- Ensemble: Coldarra Spellbinder's Regalia
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232317, {	-- Ensemble: Drakkari Stalker's Trappings
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232314, {	-- Ensemble: Jotunheim Berserker's Battleplate
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						iensemble(232315, {	-- Ensemble: Ymirjar Deathbringer's Battleplate
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						i(232476, {	-- Explorer's League Tabard
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(232025, {	-- Frost Giant's Claws
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232000, {	-- Frosted Ymirheim Battle Bow
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
+						}),
+						i(232078, {	-- Ghostly Titan Astrolabe
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232055, {	-- Griffon's Teeth Ripper
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232477, {	-- Hand of Vengeance Tabard
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+							["races"] = HORDE_ONLY,
+						}),
+						i(232004, {	-- Ironforge Hammerhead Rifle
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232064, {	-- Leviathan Mk II Crowd Control Blade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232008, {	-- Magehunter's Ornate Dagger
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232020, {	-- Stormforged Short Blade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232059, {	-- Tainted Keeper's Visage
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232041, {	-- Titan-Spark Longblade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232010, {	-- Vrykul Gutripper
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232028, {	-- Warsong Coldweather Cleaver
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
+						}),
+						i(232003, {	-- Wolf-Eyed Sharpshooter
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232056, {	-- Ymirjar Battle Harpoon
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+					})),
+					filter(MISC, {
+						i(46007, {	-- Bag of Fishing Treasure
+							["cost"] = {{"c", TIMEWARPED_BADGE, 150}},
+						}),
+						i(129955, {	-- Commendation of the Alliance Vanguard
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129942, {	-- Commendation of the Argent Crusade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129941, {	-- Commendation of the Ebon Blade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129954, {	-- Commendation of the Horde Expedition
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129940, {	-- Commendation of the Kirin Tor
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129943, {	-- Commendation of the Sons of Hodir
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(129944, {	-- Commendation of the Wyrmrest Accord
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+						}),
+						i(44113, {	-- Small Spice Bag
+							["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+						}),
+					}),
+					filter(MOUNTS, {
+						i(231374, {	-- Enchanted Spellweave Carpet (MOUNT!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 5000}},
+							["timeline"] = { ADDED_11_0_5 },
+						}),
+						i(129922, {	-- Ironbound Wraithcharger (MOUNT!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 5000}},
+						}),
+					}),
+					filter(TOYS, {
+						i(129965, {	-- Grizzlesnout's Fang (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 750}},
+						}),
+						i(129952, {	-- Hourglass of Eternity (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2000}},
+						}),
+						i(129938, {	-- Will of Northrend (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(759, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }},{	-- Ulduar
+			["isRaid"] = true,
+			["groups"] = {
+				n(ZONE_DROPS, {
+					--[[ Possibly
+					-- When confirmed, also remove them from the file at the very bottom
+					i(156461),	-- Adamant Handguards
+					i(156470),	-- Bloodcrush Cudgel
+					i(156467),	-- Boots of Unsettled Prey
+					i(156466),	-- Bracers of Righteous Reformation
+					i(156468),	-- Cloak of the Dormant Blaze
+					i(156252),	-- Greaves of the Stonewarder
+					i(156256),	-- Grips of Chaos
+					i(156465),	-- Iceshear Mantle
+					i(156254),	-- Leggings of the Tortured Earth
+					i(156460),	-- Mimiron's Repeater
+					i(156469),	-- Pillar of Fortitude
+					i(156253),	-- Shoulders of Misfortune
+					i(156251),	-- Shroud of Alteration--]]
+					-- Confirmed
+					i(156462),	-- Drape of the Spellweaver
+					i(156463),	-- Golemheart Longbow
+					i(156255),	-- Belt of the Sleeper
+					i(156257),	-- Daschal's Bite
+					-- Unknown
+					-- i(),	-- Relic Hunter's Cord	(no equivalent in TW, no possible item)
+				}),
+				cr(33113, e(1637, {	-- Flame Leviathan
+					i(156012),	-- Ironsoul
+					i(156017),	-- Firesoul
+					i(155933),	-- Golden Saronite Dragon
+					i(156014),	-- Kinetic Ripper
+					i(155924),	-- Titanguard
+					i(155928),	-- Leviathan Fueling Manual
+					i(155921),	-- Iron Riveted War Helm
+					i(156019),	-- Lifespark Visage
+					i(155931),	-- Steamworker's Goggles
+					i(156028),	-- Mantle of Fiery Vengeance
+					i(155937),	-- Shoulderpads of Dormant Energies
+					i(156018),	-- Firestrider Chestguard
+					i(156020),	-- Combustion Bracers
+					i(156013),	-- Flamewatch Armguards
+					i(155922),	-- Mechanist's Bindings
+					i(155925),	-- Mimiron's Inferno Couplings
+					i(155930),	-- Constructor's Handwraps
+					i(155923),	-- Gloves of the Fiery Behemoth
+					i(156022),	-- Handguards of Potent Cures
+					i(155932),	-- Embrace of the Leviathan
+					i(156024),	-- Gilded Steel Legplates
+					i(155935),	-- Plated Leggings of Ruination
+					i(155936),	-- Boots of Fiery Resolution
+					i(156021),	-- Energy Siphon
+					i(156016),	-- Pyrite Infuser
+				})),
+				cr(33118, e(1638, {	-- Ignis the Furnace Master
+					i(142086),	-- Magma Rageling (PET!)
+					i(155961),	-- Intensity
+					i(156039),	-- Relentless Edge
+					i(155956),	-- Worldcarver
+					i(156037),	-- Rifle of the Platinum Guard
+					i(155960),	-- Scepter of Creation
+					i(156042),	-- Igniter Rod
+					i(155955),	-- Helm of the Furnace Master
+					i(156049),	-- Pauldrons of Tempered Will
+					i(155963),	-- Soot-Covered Mantle
+					i(156046),	-- Drape of Fuming Anger
+					i(156045),	-- Shawl of the Caretaker
+					i(155958),	-- Lifeforge Breastplate
+					i(156044),	-- Armbraces of the Vibrant Flame
+					i(155964),	-- Wristguards of the Firetender
+					i(156038),	-- Gauntlets of the Iron Furnace
+					i(156040),	-- Gloves of Smoldering Touch
+					i(155962),	-- Flamewrought Cinch
+					i(155953),	-- Girdle of Embers
+					i(155957),	-- Charred Saronite Greaves
+					i(155954),	-- Flamestalker Boots
+					i(156041),	-- Furnace Stone
+					i(155952),	-- Heart of Iron
+				})),
+				cr(33186, e(1639, {	-- Razorscale
+					i(142087),	-- Ironbound Proto-Whelp (PET!)
+					i(155946),	-- Guiding Star
+					i(156026),	-- Razorscale Talon
+					i(155943),	-- Remorse
+					i(155938),	-- Veranus' Bane
+					i(155949),	-- Collar of the Wyrmhunter
+					i(156027),	-- Dragonsteel Faceplate
+					i(155941),	-- Razorscale Shoulderguards
+					i(155939),	-- Drape of the Drakerider
+					i(156033),	-- Breastplate of the Afterlife
+					i(155948),	-- Bracers of the Broodmother
+					i(156029),	-- Bracers of the Smothering Inferno
+					i(155945),	-- Shackles of the Odalisque
+					i(155950),	-- Belt of the Fallen Wyrm
+					i(156034),	-- Binding of the Dragon Matriarch
+					i(155940),	-- Dragonslayer's Brace
+					i(156032),	-- Stormtempered Girdle
+					i(156035),	-- Ironscale Leggings
+					i(155942),	-- Proto-Hide Leggings
+					i(155944),	-- Saronite Mesh Legguards
+					i(156030),	-- Treads of the Invader
+					i(156036),	-- Eye of the Broodmother
+					i(155947),	-- Living Flame
+				})),
+				cr(33293, e(1640, {	-- XT-002 Deconstructor
+					i(156290),	-- Aesir's Edge
+					i(155993),	-- Twisted Visage
+					i(155985),	-- Golem-Shard Sticker
+					i(156265),	-- Plasma Foil
+					i(156164),	-- Sorthalis, Hammer of the Watchers
+					i(156292),	-- Magnetized Projectile Emitter
+					i(155994),	-- Quartz Crystal Wand
+					i(156264),	-- Pulsing Spellshield
+					i(156267),	-- Helm of Veiled Energies
+					i(155992),	-- Mantle of Wavering Calm
+					i(155990),	-- Shoulderplates of the Deconstructor
+					i(156261),	-- Treacherous Shoulderpads
+					i(156167),	-- Breastplate of the Devoted
+					i(156289),	-- Breastplate of the Stoneshaper
+					i(156260),	-- Chestplate of Vicious Potency
+					i(155996),	-- Quartz-Studded Harness
+					i(156266),	-- Vest of the Glowing Crescent
+					i(156263),	-- Armbands of the Construct
+					i(156291),	-- Fluxing Energy Coils
+					i(156168),	-- Grasps of Reason
+					i(155991),	-- Horologist's Wristguards
+					i(156262),	-- Gloves of Taut Grip
+					i(156166),	-- Gloves of the Steady Hand
+					i(156268),	-- Conductive Cord
+					i(155987),	-- Clockwork Legplates
+					i(155997),	-- Boots of Hasty Revival
+					i(155988),	-- Brass-Lined Boots
+					i(155995),	-- Sandals of Rash Temperament
+				})),
+				cr(32867, e(1641, {	-- The Assembly of Iron
+					i(142088),	-- Runeforged Servitor (PET!)
+					i(155973),	-- Rapture
+					i(155972),	-- Stormrune Edge
+					i(156611),	-- Fang of Oblivion
+					i(156170),	-- Perilous Bite
+					i(156057),	-- Rune-Etched Nightblade
+					i(156058),	-- Stormtip
+					i(156171),	-- The Masticator
+					i(155968),	-- Ancient Iron Heaume
+					i(156055),	-- Circlet of True Sight
+					i(155969),	-- Iron-Studded Mantle
+					i(155984),	-- Shoulderpads of the Intruder
+					i(156050),	-- Cloak of the Iron Council
+					i(155981),	-- Drape of Mortal Downfall
+					i(155966),	-- Drape of the Lithe
+					i(155976),	-- Phaelia's Vestments of the Sprouting Seed
+					i(155979),	-- Raiments of the Iron Council
+					i(155967),	-- Steelbreaker's Embrace
+					i(156146),	-- Runetouch Wristwraps
+					i(155970),	-- Handguards of the Enclave
+					i(155978),	-- Runeshaper's Gloves
+					i(155980),	-- Belt of Colossal Rage
+					i(156177),	-- Belt of the Crystal Tree
+					i(156059),	-- Belt of the Iron Servant
+					i(156051),	-- Leggings of Swift Reflexes
+					i(155977),	-- Overload Legwraps
+					i(156102),	-- Boots of the Petrified Forest
+					i(156056),	-- Greaves of Iron Intensity
+					i(155983),	-- Greaves of Swift Vengeance
+					i(155971),	-- Runed Ironhide Boots
+				})),
+				cr(32930, e(1642, {	-- Kologarn
+					i(156269),	-- Spire of Withering Dreams
+					i(156003),	-- Malice
+					i(156274),	-- Stoneguard
+					i(155998),	-- Giant's Bane
+					i(156007),	-- Ironmender
+					i(156271),	-- Shoulderguards of the Solemn Watch
+					i(156002),	-- Shoulderpads of the Monolith
+					i(156278),	-- Shawl of the Shattered Giant
+					i(156008),	-- Robes of the Umbral Brute
+					i(156011),	-- Bracers of Unleashed Magic
+					i(156001),	-- Decimator's Armguards
+					i(156006),	-- Unfaltering Armguards
+					i(156005),	-- Gloves of the Pythonic Guardian
+					i(156009),	-- Handwraps of Plentiful Recovery
+					i(156010),	-- Leggings of the Stoneweaver
+					i(156004),	-- Saronite Plated Legguards
+					i(156275),	-- Greaves of the Earthbinder
+					i(156272),	-- Sabatons of the Iron Watcher
+					i(156277),	-- Spark of Hope
+					i(156000),	-- Wrathstone
+				})),
+				cr(33515, e(1643, {	-- Auriaya
+					i(142089),	-- Sanctum Cub (PET!)
+					i(156159),	-- Runescribed Blade
+					i(156043),	-- Stonerender
+					i(156284),	-- Nurturing Touch
+					i(156054),	-- Siren's Cry
+					i(156279),	-- Shieldwall of the Breaker
+					i(156286),	-- Cover of the Keepers
+					i(156158),	-- Cowl of the Absolute
+					i(156161),	-- Unwavering Stare
+					i(156162),	-- Amice of the Stoic Watch
+					i(156282),	-- Ironaya's Discarded Mantle
+					i(156285),	-- Mantle of the Preserver
+					i(156048),	-- Shoulderplates of the Eternal
+					i(156047),	-- Cloak of the Makers
+					i(156283),	-- Chestplate of Titanic Fury
+					i(156287),	-- Raiments of the Corrupted
+					i(156060),	-- Unbreakable Chestguard
+					i(156052),	-- Gloves of the Stonereaper
+					i(156281),	-- Nimble Climber's Belt
+					i(156280),	-- Archaedas' Lost Legplates
+					i(156157),	-- Greaves of the Rockmender
+					i(156163),	-- Sandals of the Ancient Keeper
+					i(156288),	-- Elemental Focus Stone
+				})),
+				cr(32845, e(1644, {	-- Hodir
+					i(138800),	-- Illusion: Blade Ward (ILLUSION!)
+					i(142090),	-- Winter Rageling (PET!)
+					i(156299),	-- Icecore Staff
+					i(156179),	-- Staff of Endless Winter
+					i(156180),	-- Stormedge
+					i(156612),	-- Constellus
+					i(156297),	-- Shiver
+					i(156294),	-- Avalanche
+					i(156300),	-- Ice Layered Barrier
+					i(156172),	-- Northern Barrier
+					i(156298),	-- The Boreal Guard
+					i(156186),	-- Cowl of Icy Breaths
+					i(156183),	-- Drape of Icy Intent
+					i(156295),	-- Winter's Frigid Embrace
+					i(156418),	-- Conqueror's Aegis Breastplate
+					i(156367),	-- Conqueror's Darkruned Chestguard
+					i(156385),	-- Conqueror's Deathbringer Robe
+					i(156488),	-- Conqueror's Glaivedancer Breastplate
+					i(156378),	-- Conqueror's Kirin Tor Tunic
+					i(156439),	-- Conqueror's Nightsong Vestments
+					i(156414),	-- Conqueror's Raiments of Sanctification
+					i(156388),	-- Conqueror's Scourgestalker Tunic
+					i(156408),	-- Conqueror's Siegebreaker Breastplate
+					i(156498),	-- Conqueror's Steelfist Breastplate
+					i(156372),	-- Conqueror's Terrorblade Breastplate
+					i(156451),	-- Conqueror's Worldbreaker Hauberk
+					i(156175),	-- Winter's Icy Embrace
+					i(156182),	-- Bindings of Winter Gale
+					i(156301),	-- Bitter Cold Armguards
+					i(156176),	-- Frost-Bound Chain Bracers
+					i(156184),	-- Gloves of the Frozen Glade
+					i(156174),	-- Frostplate Greaves
+					i(156108),	-- Valorous Aegis Legguards
+					i(156064),	-- Valorous Darkruned Legplates
+					i(156143),	-- Valorous Deathbringer Leggings
+					i(156496),	-- Valorous Glaivedancer Legplates
+					i(156091),	-- Valorous Kirin Tor Leggings
+					i(156118),	-- Valorous Leggings of Sanctification
+					i(156078),	-- Valorous Nightsong Trousers
+					i(156087),	-- Valorous Scourgestalker Legguards
+					i(156150),	-- Valorous Siegebreaker Legguards
+					i(156506),	-- Valorous Steelfist Legplates
+					i(156123),	-- Valorous Terrorblade Legplates
+					i(156132),	-- Valorous Worldbreaker Kilt
+				})),
+				cr(32865, e(1645, {	-- Thorim
+					i(138800),	-- Illusion: Blade Ward (ILLUSION!)
+					i(156309),	-- Combatant's Bootblade
+					i(156302),	-- Legacy of Thunder
+					i(156185),	-- Vulmir, the Northern Tempest
+					i(156610),	-- Skyforge Crossbow
+					i(156191),	-- Wisdom's Hold
+					i(156420),	-- Conqueror's Aegis Faceguard
+					i(156417),	-- Conqueror's Circlet of Sanctification
+					i(156369),	-- Conqueror's Darkruned Faceguard
+					i(156387),	-- Conqueror's Deathbringer Hood
+					i(156490),	-- Conqueror's Glaivedancer Helmet
+					i(156377),	-- Conqueror's Kirin Tor Hood
+					i(156436),	-- Conqueror's Nightsong Cover
+					i(156390),	-- Conqueror's Scourgestalker Headpiece
+					i(156412),	-- Conqueror's Siegebreaker Greathelm
+					i(156500),	-- Conqueror's Steelfist Helmet
+					i(156374),	-- Conqueror's Terrorblade Helmet
+					i(156454),	-- Conqueror's Worldbreaker Helm
+					i(156303),	-- Guise of the Midgard Serpent
+					i(156193),	-- Warhelm of the Champion
+					i(156195),	-- Pauldrons of the Combatant
+					i(156109),	-- Valorous Aegis Shoulderguards
+					i(156065),	-- Valorous Darkruned Shoulderplates
+					i(156145),	-- Valorous Deathbringer Shoulderpads
+					i(156497),	-- Valorous Glaivedancer Pauldrons
+					i(156093),	-- Valorous Kirin Tor Shoulderpads
+					i(156077),	-- Valorous Nightsong Mantle
+					i(156088),	-- Valorous Scourgestalker Spaulders
+					i(156117),	-- Valorous Shoulderpads of Sanctification
+					i(156151),	-- Valorous Siegebreaker Pauldrons
+					i(156507),	-- Valorous Steelfist Pauldrons
+					i(156124),	-- Valorous Terrorblade Pauldrons
+					i(156133),	-- Valorous Worldbreaker Shoulderpads
+					i(156194),	-- Embrace of the Gladiator
+					i(156307),	-- Gauntlets of the Thunder God
+					i(156306),	-- Handwraps of Resonance
+					i(156188),	-- Belt of the Betrayed
+					i(156305),	-- Belt of the Blood Pit
+					i(156189),	-- Leggings of Lost Love
+					i(156304),	-- Leggings of Unstable Discharge
+					i(156310),	-- Mjolnir Runestone
+					i(156187),	-- Scale of Fates
+					i(156308),	-- Sif's Remembrance
+				})),
+				cr(32906, e(1646, {	-- Freya
+					i(142091),	-- Snaplasher (PET!)
+					i(138800),	-- Illusion: Blade Ward (ILLUSION!)
+					i(156613),	-- Dreambinder
+					i(156196),	-- The Lifebinder
+					i(156312),	-- Unraveling Reach
+					i(156201),	-- Bladetwister
+					i(156320),	-- Serilas, Blood Blade of Invar One-Arm
+					i(156023),	-- Petrified Ivy Sprig
+					i(156313),	-- Ironbark Faceguard
+					i(156203),	-- Drape of the Sullen Goddess
+					i(156316),	-- Chestguard of the Lasher
+					i(156315),	-- Tunic of the Limber Stalker
+					i(156198),	-- Gauntlets of Ruthless Reprisal
+					i(156317),	-- Gloves of Whispering Winds
+					i(156204),	-- Handguards of Revitalization
+					i(156107),	-- Valorous Aegis Handguards
+					i(156063),	-- Valorous Darkruned Gauntlets
+					i(156142),	-- Valorous Deathbringer Gloves
+					i(156494),	-- Valorous Glaivedancer Gauntlets
+					i(156116),	-- Valorous Gloves of Sanctification
+					i(156379),	-- Valorous Kirin Tor Gauntlets
+					i(156076),	-- Valorous Nightsong Gloves
+					i(156085),	-- Valorous Scourgestalker Handguards
+					i(156149),	-- Valorous Siegebreaker Handguards
+					i(156504),	-- Valorous Steelfist Gauntlets
+					i(156121),	-- Valorous Terrorblade Gauntlets
+					i(156130),	-- Valorous Worldbreaker Gloves
+					i(156421),	-- Conqueror's Aegis Legguards
+					i(156370),	-- Conqueror's Darkruned Legguards
+					i(156386),	-- Conqueror's Deathbringer Leggings
+					i(156491),	-- Conqueror's Glaivedancer Legplates
+					i(156381),	-- Conqueror's Kirin Tor Leggings
+					i(156437),	-- Conqueror's Nightsong Trousers
+					i(156416),	-- Conqueror's Pants of Sanctification
+					i(156391),	-- Conqueror's Scourgestalker Legguards
+					i(156415),	-- Conqueror's Siegebreaker Legguards
+					i(156501),	-- Conqueror's Steelfist Legplates
+					i(156375),	-- Conqueror's Terrorblade Legplates
+					i(156455),	-- Conqueror's Worldbreaker Kilt
+					i(156205),	-- Leggings of the Enslaved Idol
+					i(156199),	-- Leggings of the Lifetender
+					i(156314),	-- Legplates of Flourishing Resolve
+					i(156200),	-- Boots of the Servant
+				})),
+				cr(33350, e(1647, {	-- Mimiron
+					["crs"] = {
+						33432,	-- Leviathan Mk II
+						33651,	-- VX-001
+						33670,	-- Aerial Command Unit
+					},
+					["groups"] = {
+						i(138800),	-- Illusion: Blade Ward (ILLUSION!)
+						i(142092),	-- G0-R41-0N Ultratonk (PET!)
+						i(156211),	-- Delirium's Touch
+						i(156329),	-- Fusion Blade
+						i(156206),	-- Insanity's Grip
+						i(156321),	-- Pulse Baton
+						i(156614),	-- Starshard Edge
+						i(156214),	-- Crown of Luminescence
+						i(156330),	-- Mimiron's Flight Goggles
+						i(156106),	-- Valorous Aegis Faceguard
+						i(156115),	-- Valorous Cowl of Sanctification
+						i(156062),	-- Valorous Darkruned Helmet
+						i(156140),	-- Valorous Deathbringer Hood
+						i(156495),	-- Valorous Glaivedancer Helmet
+						i(156090),	-- Valorous Kirin Tor Hood
+						i(156459),	-- Valorous Nightsong Cover
+						i(156086),	-- Valorous Scourgestalker Headpiece
+						i(156148),	-- Valorous Siegebreaker Greathelm
+						i(156505),	-- Valorous Steelfist Helmet
+						i(156122),	-- Valorous Terrorblade Helmet
+						i(156131),	-- Valorous Worldbreaker Helm
+						i(156209),	-- Malleable Steelweave Mantle
+						i(156323),	-- Shoulderguards of Assimilation
+						i(156210),	-- Asimov's Drape
+						i(156322),	-- Stylish Power Cape
+						i(156213),	-- Titanskin Cloak
+						i(156258),	-- Armbands of Bedlam
+						i(156419),	-- Conqueror's Aegis Handguards
+						i(156368),	-- Conqueror's Darkruned Handguards
+						i(156383),	-- Conqueror's Deathbringer Gloves
+						i(156489),	-- Conqueror's Glaivedancer Gauntlets
+						i(156409),	-- Conqueror's Handwraps of Sanctification
+						i(156380),	-- Conqueror's Kirin Tor Gauntlets
+						i(156434),	-- Conqueror's Nightsong Gloves
+						i(156389),	-- Conqueror's Scourgestalker Handguards
+						i(156410),	-- Conqueror's Siegebreaker Handguards
+						i(156499),	-- Conqueror's Steelfist Gauntlets
+						i(156373),	-- Conqueror's Terrorblade Gauntlets
+						i(156452),	-- Conqueror's Worldbreaker Gloves
+						i(156325),	-- Static Charge Handwraps
+						i(156324),	-- Cable of the Metrognome
+						i(156208),	-- Waistguard of the Creator
+						i(156326),	-- Fused Alloy Legplates
+						i(156327),	-- Greaves of the Iron Army
+						i(156328),	-- Tempered Mercury Greaves
+						i(156207),	-- Pandora's Plea
+					},
+				})),
+				cr(33271, e(1648, {	-- General Vezax
+					i(156331),	-- Hoperender
+					i(156215),	-- Lotrafen, Spear of the Damned
+					i(156353),	-- Tortured Earth
+					i(156228),	-- Voldrethar, Dark Blade of Oblivion
+					i(156355),	-- Aesuga, Hand of the Ardent Champion
+					i(156336),	-- Shadowbite
+					i(156356),	-- Void Sabre
+					i(156223),	-- Scepter of Lost Souls
+					i(156217),	-- Helm of the Faceless
+					i(156226),	-- Mantle of the Unknowing
+					i(156338),	-- Underworld Mantle
+					i(156352),	-- Drape of the Faceless General
+					i(156339),	-- Saronite Animus Cloak
+					i(156231),	-- Vestments of the Blind Denizen
+					i(156337),	-- Vestments of the Piercing Light
+					i(156334),	-- Bindings of the Depths
+					i(156332),	-- Gauntlets of the Wretched
+					i(156224),	-- Grips of the Unbroken
+					i(156232),	-- Handwraps of the Vigilant
+					i(156220),	-- Belt of Clinging Hope
+					i(156222),	-- Belt of the Darkspeaker
+					i(156219),	-- Darkcore Leggings
+					i(156354),	-- Leggings of Profound Darkness
+					i(156225),	-- Boots of the Forgotten Depths
+					i(156216),	-- Boots of the Underdweller
+					i(156230),	-- Flare of the Heavens
+					i(156221),	-- The General's Heart
+				})),
+				cr(33288, e(1649, {	-- Yogg-Saron
+					ach(12388, {	-- Alone in the Darkness
+						i(45693)	-- Mimiron's Head (MOUNT!)
+					}),
+					i(138801),	-- Illusion: Blood Draining (ILLUSION!)
+					i(142093),	-- Creeping Tentacle (PET!)
+					i(156341),	-- Abaddon
+					i(156243),	-- Dark Edge of Depravity
+					i(156348),	-- Devotion
+					i(156233),	-- Earthshaper
+					i(156357),	-- Hammer of Crushing Whispers
+					i(156361),	-- Caress of Insanity
+					i(156347),	-- Kingsbane
+					i(156238),	-- Soulscribe
+					i(156351),	-- Touch of Madness
+					i(156343),	-- Deliverance
+					i(156242),	-- Cowl of Dark Whispers
+					i(156349),	-- Faceguard of the Eyeless Horror
+					i(156235),	-- Garona's Guise
+					i(156358),	-- Amice of Inconceivable Horror
+					i(156422),	-- Conqueror's Aegis Shoulderguards
+					i(156371),	-- Conqueror's Darkruned Pauldrons
+					i(156384),	-- Conqueror's Deathbringer Shoulderpads
+					i(156492),	-- Conqueror's Glaivedancer Pauldrons
+					i(156382),	-- Conqueror's Kirin Tor Shoulderpads
+					i(156411),	-- Conqueror's Mantle of Sanctification
+					i(156441),	-- Conqueror's Nightsong Mantle
+					i(156392),	-- Conqueror's Scourgestalker Spaulders
+					i(156413),	-- Conqueror's Siegebreaker Pauldrons
+					i(156502),	-- Conqueror's Steelfist Pauldrons
+					i(156376),	-- Conqueror's Terrorblade Pauldrons
+					i(156456),	-- Conqueror's Worldbreaker Shoulderpads
+					i(156239),	-- Shawl of Haunted Memories
+					i(156236),	-- Chestguard of Insidious Intent
+					i(156241),	-- Chestguard of the Fallen God
+					i(156105),	-- Valorous Aegis Breastplate
+					i(156061),	-- Valorous Darkruned Battleplate
+					i(156144),	-- Valorous Deathbringer Robe
+					i(156493),	-- Valorous Glaivedancer Breastplate
+					i(156092),	-- Valorous Kirin Tor Tunic
+					i(156079),	-- Valorous Nightsong Vestments
+					i(156119),	-- Valorous Robe of Sanctification
+					i(156089),	-- Valorous Scourgestalker Tunic
+					i(156147),	-- Valorous Siegebreaker Breastplate
+					i(156503),	-- Valorous Steelfist Breastplate
+					i(156120),	-- Valorous Terrorblade Breastplate
+					i(156134),	-- Valorous Worldbreaker Hauberk
+					i(156359),	-- Soul-Devouring Cinch
+					i(156344),	-- Leggings of the Insatiable
+					i(156246),	-- Legguards of Cunning Deception
+					i(156350),	-- Treads of the Dragon Council
+					i(156247),	-- Treads of the False Oracle
+					i(156234),	-- Blood of the Old God
+					i(156345),	-- Royal Seal of King Llane
+					i(156245),	-- Show of Faith
+					i(156458),	-- Vanquished Clutches of Yogg-Saron
+				})),
+			},
+		})),
+		inst_tw(271, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- Ahn'kahet: The Old Kingdom
+			cr(29309, e(580, {	-- Elder Nadox
+				i(127607),	-- Blade of Nadox
+				i(127619),	-- Brood Plague Helmet
+				i(127621),	-- Elder Headpiece
+				i(127616),	-- Glowworm Cavern Bindings
+				i(127608),	-- Ahn'kahar Handwraps
+				i(127609),	-- Crawler-Emblem
+				i(127618),	-- Nerubian Shield Ring
+			})),
+			cr(29308, e(581, {	-- Prince Taldaram
+				i(127622),	-- Necklace of Taldaram
+				i(127611),	-- Slasher's Amulet
+				i(127620),	-- Sprinting Shoulderpads
+				i(127642),	-- Subterranean Waterfall Shroud
+				i(127623),	-- Bonegrinder Breastplate
+				i(127624),	-- Flame Sphere Bindings
+				i(127625),	-- Gauntlets of the Plundering Geist
+				i(127612),	-- Gloves of the Blood Prince
+			})),
+			cr(30258, e(583, {	-- Amanitar
+				i(127643),	-- Amanitar Skullbow
+				i(127644),	-- Amulet of the Spell Flinger
+				i(127613),	-- Mantle of Echoing Bats
+				i(127617),	-- Spored Tendrils Spaulders
+				i(127646),	-- Silken Bridge Handwraps
+				i(127635),	-- Web Winder Gloves
+				i(127614),	-- Pyramid Embossed Belt
+				i(127645),	-- Legguards of Swarming Attacks
+				i(127615),	-- Volazj's Sabatons
+			})),
+			cr(29310, e(582, {	-- Jedoga Shadowseeker
+				i(127640),	-- Edge of Oblivion
+				i(127647),	-- Ice-Rimed Chopper
+				i(127610),	-- Talisman of Scourge Command
+				i(127639),	-- Faceguard of the Hammer Clan
+				i(127641),	-- Shadowseeker's Pendant
+				i(127637),	-- Cloak of the Darkcaster
+				i(127638),	-- Battlechest of the Twilight Cult
+				i(127636),	-- Jedoga's Greatring
+				i(127634),	-- Stained-Glass Shard Ring
+			})),
+			cr(29311, e(584, {	-- Herald Volazj
+				i(127628),	-- Staff of Sinister Claws
+				i(127626),	-- Titanium Compound Bow
+				i(127630),	-- Wand of Ahn'kahet
+				i(127631),	-- Bracers of the Herald
+				i(127633),	-- Fiery Obelisk Handguards
+				i(127627),	-- Kilt of the Forgotten One
+				i(127632),	-- Skirt of the Old Kingdom
+				i(127629),	-- Greaves of Ancient Evil
+			})),
+		})),
+		inst_tw(272, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Azjol-Nerub
+			cr(28684, e(585, {	-- Krik'thir the Gatewatcher
+				i(188403),	-- Aura Focused Gauntlets
+				i(188402),	-- Cobweb Machete
+				i(188414),	-- Custodian's Chestpiece
+				i(188404),	-- Exquisite Spider-Silk Footwraps
+				i(188411),	-- Facade Shield of Glyphs
+				i(188412),	-- Golden Limb Bands
+				i(188428),	-- Nerubian Mantle
+				i(188413),	-- Stone-Worn Footwraps
+			})),
+			cr(28921, e(586, {	-- Hadronox
+				i(188417),	-- Egg Sac Robes
+				i(188415),	-- Essence of Gossamer
+				i(188418),	-- Grotto Mist Gloves
+				i(188416),	-- Hollowed Mandibles Legplates
+				i(188405),	-- Life-Staff of the Web Lair
+				i(188427),	-- Skittering Gauntlets
+				i(188407),	-- Spinneret Epaulets
+				i(188406),	-- Treads of Aspiring Heights
+			})),
+			cr(29120, e(587, {	-- Anub'arak
+				i(188425),	-- Ancient Aligned Girdle
+				i(188410),	-- Charmed Silken Cord
+				i(188422),	-- Chitin Shell Greathelm
+				i(188420),	-- Crypt Lord's Deft Blade
+				i(188424),	-- Flamebeard's Bracers
+				i(188421),	-- Insect Vestments
+				i(188419),	-- Ring of the Traitor King
+				i(188423),	-- Rod of the Fallen Monarch
+				i(188426),	-- Sash of the Servant
+				i(188408),	-- Signet of Arachnathid Command
+				i(188409),	-- Wing Cover Girdle
+			})),
+		})),
+		inst_tw(274, {	-- Gundrak
+			cr(29304, e(592, {	-- Slad'ran
+				i(127527),	-- Witch Doctor's Wildstaff
+				i(127538),	-- Wand of Sseratus
+				i(127548),	-- Helm of Cheated Fate
+				i(127539),	-- Snake Den Spaulders
+				i(127528),	-- Embroidered Gown of Zul'drak
+				i(127540),	-- Slad'ran Coiled Cord
+				i(127529),	-- Cannibal's Legguards
+				i(127541),	-- Slithering Slippers
+			})),
+			cr(29307, e(593, {	-- Drakkari Colossus
+				i(127533),	-- Drakkari Hunting Bow
+				i(127547),	-- Pauldrons of the Colossus
+				i(127534),	-- Shoulderguards of the Ice Troll
+				i(127535),	-- Hauberk of Totemic Mastery
+				i(127546),	-- Bracers of the Divine Elemental
+				i(127549),	-- Living Mojo Belt
+				i(127537),	-- Snowmelt Silken Cinch
+			})),
+			cr(29305, e(594, {	-- Moorabi
+				i(127543),	-- Fist of the Deity
+				i(127530),	-- Frozen Scepter of Necromancy
+				i(127545),	-- Ground Tremor Helm
+				i(127558),	-- Burning Skull Pendant
+				i(127542),	-- Shroud of Moorabi
+				i(127531),	-- Forlorn Breastplate of War
+				i(127560),	-- Belt of Tasseled Lanterns
+				i(127544),	-- Mojo Frenzy Greaves
+				i(127532),	-- Arcane Focal Signet
+				i(127554),	-- Hemorrhaging Circle
+			})),
+			cr(29932, e(595, {	-- Eck the Ferocious
+				i(127565),	-- Helmet of the Shrine
+				i(127564),	-- Engraved Chestplate of Eck
+				i(127567),	-- Leggings of the Ruins Dweller
+				i(127566),	-- Gorloc Muddy Footwraps
+			})),
+			cr(29306, e(596, {	-- Gal'darah
+				i(127563),	-- Amulet of the Stampede
+				i(127559),	-- Cloak of Bloodied Waters
+				i(127561),	-- Shroud of Akali
+				i(127553),	-- Arcane Flame Altar-Garb
+				i(127536),	-- Steel Bear Trap Bracers
+				i(127551),	-- Grips of the Beast God
+				i(127557),	-- Horn-Tipped Gauntlets
+				i(127555),	-- Sash of Blood Removal
+				i(127556),	-- Gored Hide Legguards
+				i(127552),	-- Boots of Transformation
+				i(127562),	-- Gal'darah's Signet
+				i(127550),	-- Offering of Sacrifice
+			})),
+		}),
+		inst_tw(275, {	-- Halls of Lightning
+			cr(28586, e(597, {	-- General Bjarngrim
+				i(127504),	-- Iron Dwarf Smith Pauldrons
+				i(127506),	-- Traditionally Dyed Handguards
+				i(127507),	-- The General's Steel Girdle
+				i(127505),	-- Patroller's War-Kilt
+				i(127526),	-- Awakened Handguards (Dropped on 9th December for me during TW - Gold)
+			})),
+			cr(28587, e(598, {	-- Volkhan
+				i(127525),	-- Helm of the Lightning Halls
+				i(127508),	-- Shroud of Reverberation
+				i(127511),	-- Giant-Hair Woven Gloves
+				i(127510),	-- Belt of Vivacity
+				i(127507),	-- The General's Steel Girdle
+				i(127509),	-- Slag Footguards
+			})),
+			cr(28546, e(599, {	-- Ionar
+				i(127519),	-- Ornate Woolen Stola
+				i(127514),	-- Charged-Bolt Grips
+				i(127513),	-- Cord of Swirling Winds
+				i(127515),	-- Skywall Striders
+				i(127512),	-- Winged Talisman
+			})),
+			cr(28923, e(600, {	-- Loken
+				i(127520),	-- Colossal Skull-Clad Cleaver
+				i(127516),	-- Lightning Giant Staff
+				i(127524),	-- Librarian's Paper Cutter
+				i(127517),	-- Planetary Helm
+				i(127521),	-- Advanced Tooled-Leather Bands
+				i(127518),	-- Flowing Sash of Order
+				i(127523),	-- Mail Girdle of the Audient Earth
+				i(127522),	-- Woven Bracae Leggings
+			})),
+		}),
+		inst_tw(278, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- Pit of Saron
+			cr(36494, e(608, {	-- Forgemaster Garfrost
+				i(133486),	-- Garfrost's Two-Ton Hammer
+				i(133485),	-- Unspeakable Secret
+				i(133488),	-- Polished Mirror Helm
+				i(133501),	-- Skeleton Lord's Cranium
+				i(133508),	-- Shroud of Rime
+				i(133490),	-- Flayer's Black Belt
+				i(133489),	-- Ice-Steeped Sandals
+				i(133487),	-- Ring of Carnelian and Bone
+			})),
+			cr(36476, e(609, {	-- Ick and Krick
+				i(133491),	-- Krick's Beetle Stabber
+				i(133517),	-- Saronite-Studded Shoulderguards
+				i(133493),	-- Wristguards of Subterranean Moss
+				i(133492),	-- Bent Gold Belt
+				i(133494),	-- Scabrous Zombie Leather Belt
+				i(133495),	-- Black Dragonskin Breeches
+				i(133504),	-- Rimewoven Silks
+				i(133496),	-- Purloined Wedding Ring
+			})),
+			cr(36658, e(610, {	-- Scourgelord Tyrannus
+				i(133497),	-- Rimebane Rifle
+				i(133503),	-- Protector of Frigid Souls
+				i(133506),	-- Horns of the Spurned Val'kyr
+				i(133500),	-- Painfully Sharp Choker
+				i(133505),	-- Cloak of the Fallen Cardinal
+				i(133507),	-- Palebone Robes
+				i(133498),	-- Scourgelord's Frigid Chestplate
+				i(133502),	-- Gondria's Spectral Bracer
+				i(133499),	-- Shaggy Wyrmleather Leggings
+			}))
+		})),
+		inst_tw(280, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Forge of Souls
+			cr(36497, e(615, {	-- Brojahm
+				i(50316),	-- Papa's Brand New Bag
+				i(50317),	-- Papa's New Bag
+				i(188457),	-- Bewildering Shoulderpads
+				i(188460),	-- Cold Sweat Grips
+				i(188477),	-- Eyes of Bewilderment
+				i(188476),	-- Love's Prisoner
+				i(188455),	-- Lucky Old Sun
+				i(188456),	-- Minister's Number One Legplates
+				i(188473),	-- Nighttime
+				i(188458),	-- Robes of the Cheating Heart
+				i(188459),	-- Seven Stormy Mornings
+				i(188474),	-- Very Fashionable Shoulders
+				i(188475),	-- Weeping Gauntlets
+			})),
+			cr(36502, e(616, {	-- Devourer of Souls
+				i(188464),	-- Accursed Crawling Cape
+				i(188485),	-- Arcane Loops of Anger
+				i(188481),	-- Black Spire Sabatons
+				i(188462),	-- Blood Boil Lancet
+				i(188479),	-- Blood Weeper
+				i(188469),	-- Brace Guards of the Starless Night
+				i(188471),	-- Coil of Missing Gems
+				i(188468),	-- Essence of Anger
+				i(188486),	-- Essence of Desire
+				i(188483),	-- Essence of Suffering
+				i(188480),	-- Frayed Scoundrel's Cap
+				i(188461),	-- Heartshiver
+				i(188488),	-- Helm of the Spirit Shock
+				i(188466),	-- Legplates of Frozen Granite
+				i(188463),	-- Lost Reliquary Chestguard
+				i(188487),	-- Mord'rethar Robes
+				i(188478),	-- Needle-Encrusted Scorpion
+				i(188482),	-- Pauldrons of the Souleater
+				i(188489),	-- Recovered Reliquary Boots
+				i(188484),	-- Seethe
+				i(188467),	-- Sollerets of Suffering
+				i(188470),	-- Soul Screaming Boots
+				i(188472),	-- Spiteful Signet
+				i(188465),	-- Tower of the Mouldering Corpse
+			})),
+		})),
+		inst_tw(281, {	-- The Nexus
+			a(cr(26798, e(833, {	-- Commander Stoutbeard
+				i(127568),	-- Glacier Sharpened Vileblade [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127603),	-- Cloak of the Enemy [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127600),	-- Rippling Azure Cloak [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127604),	-- Grips of Sculptured Icicles [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127606),	-- Opposed Stasis Leggings [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127569),	-- Attuned Crystalline Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127605),	-- Cleric's Linen Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127570),	-- Band of Glittering Permafrost [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127594),	-- Sphere of Red Dragon's Blood [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+			}))),
+			h(cr(26796, e(617, {	-- Commander Kolurg
+				i(127568),	-- Glacier Sharpened Vileblade [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127603),	-- Cloak of the Enemy [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127600),	-- Rippling Azure Cloak [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127604),	-- Grips of Sculptured Icicles [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127606),	-- Opposed Stasis Leggings [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127569),	-- Attuned Crystalline Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127605),	-- Cleric's Linen Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127570),	-- Band of Glittering Permafrost [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+				i(127594),	-- Sphere of Red Dragon's Blood [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
+			}))),
+			cr(26731, e(618, {	-- Grand Magus Telestra
+				i(127579),	-- Wand of Shimmering Scales
+				i(127580),	-- Telestra's Journal
+				i(127581),	-- Arcane-Shielded Helm
+				i(127583),	-- Spaulders of the Careless Thief
+				i(127577),	-- Insulating Bindings
+				i(127582),	-- Bands of Channeled Energy
+				i(127578),	-- Belt of Draconic Runes
+			})),
+			cr(26763, e(619, {	-- Anomalus
+				i(127571),	-- Tome of the Lore Keepers (TW Only)
+				i(127586),	-- Helm of Anomalus [DJ doesn't list it. Confirmed 2019-03-18]
+				i(127584),	-- Amulet of Dazzling Light [DJ doesn't list it. Confirmed 2018-07-24]
+				i(127601),	-- Glassy Silver Bracers (TW Only)
+				i(127572),	-- Gauntlets of Serpent Scales [DJ doesn't list it. Confirmed 2018-05-29]
+				i(127585),	-- Hauberk of the Arcane Wraith
+				i(127573),	-- Cleated Ice Boots
+				i(127587),	-- Rift Striders
+			})),
+			cr(26794, e(620, {	-- Ormorok the Tree-Shaper
+				i(127574),	-- Drakonid Arm Blade [DJ Shows Anomalus, but it's actually Ormorok; #errors confirmed 5-29-18]
+				i(127575),	-- Chiseled Stalagmite Pauldrons [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+				i(127590),	-- Gloves of the Crystal Gardener [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+				i(127589),	-- Girdle of Ice [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+				i(127591),	-- Frozen Forest Kilt [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+				i(127602),	-- Cavern Leather Treads [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+				i(127576),	-- Greaves of the Blue Flight [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+				i(127588),	-- Band of Frosted Thorns [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+			})),
+			cr(26723, e(621, {	-- Keristrasza
+				i(127596),	-- War Mace of Unrequited Love
+				i(127592),	-- Bulwark of the Noble Protector
+				i(127593),	-- Crystal-Infused Tunic
+				i(127597),	-- Interwoven Scale Bracers
+				i(127599),	-- Gloves of Glistening Runes
+				i(127598),	-- Flame-Bathed Steel Girdle
+				i(127595),	-- Dragon Slayer's Sabatons
+			})),
+		}),
+		inst_tw(285, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Utgarde Keep
+			cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
+				i(188441),	-- Battlemap Hide Helm
+				i(188430),	-- Dragon Stabler's Gauntlets
+				i(188440),	-- Infantry Assault Blade
+				i(188429),	-- Keleseth's Blade of Evocation
+				i(188431),	-- Reinforced Velvet Helm
+				i(188439),	-- Strategist's Belt
+				i(188438),	-- Wand of the San'layn
+			})),
+			cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
+				["crs"] = {
+					24201,	-- Dalronn the Controller
+				},
+				["groups"] = {
+					i(188432),	-- Arm Blade of Augelmir
+					i(188444),	-- Bindings of the Tunneler
+					i(188433),	-- Chestplate of the Northern Lights
+					i(188454),	-- Constructor's Worklight
+					i(188442),	-- Dagger of Betrayal
+					i(188445),	-- Dalronn's Jerkin
+					i(188443),	-- Helmet of the Constructor
+					i(188434),	-- Skarvald's Dragonskin Habergeon
+				},
+			})),
+			cr(23954, e(640, {	-- Ingvar the Plunderer
+				i(188451),	-- Annhylde's Ring
+				i(188448),	-- Breeches of the Caller
+				i(188450),	-- Drake-Mounted Crossbow
+				i(188449),	-- Enraged Feral Staff
+				i(188436),	-- Holistic Patchwork Breeches
+				i(188435),	-- Ingvar's Monolithic Cleaver
+				i(188437),	-- Overlaid Chain Spaulders
+				i(188447),	-- Plunderer's Helmet
+				i(188453),	-- Sharp-Barbed Leather Belt
+				i(188452),	-- Staggering Legplates
+				i(188446),	-- Unsmashable Heavy Band
+			})),
+		})),
+		inst_tw(286, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- Utgarde Pinnacle
+			cr(26668, e(641, {	-- Svala Sorrowgrave
+				i(127458),	-- Ritualistic Arthame
+				i(127459),	-- Brazier Igniter
+				i(127482),	-- Silent Spectator Shoulderpads
+				i(127502),	-- Ymijar Physician's Robe
+				i(127484),	-- Cuffs of the Trussed Hall
+				i(127460),	-- Svala's Bloodied Shackles
+				i(127461),	-- Tear-Linked Gauntlets
+				i(127483),	-- Sorrowgrave's Breeches
+				i(127478),	-- Berserker's Sabatons
+				i(127481),	-- Echoing Stompers
+			})),
+			cr(26687, e(642, {	-- Gortok Palehoof
+				i(127463),	-- Trophy Gatherer
+				i(127464),	-- Seal of Valgarde
+				i(127488),	-- Ferocious Pauldrons of the Rhino
+				i(127486),	-- Massive Spaulders of the Jormungar
+				i(127462),	-- Shroud of Resurrection
+				i(127465),	-- Reanimated Armor
+				i(127487),	-- Ravenous Leggings of the Furbolg
+				i(127480),	-- Tundra Wolf Boots
+				i(127485),	-- Ring of the Frenzied Wolvar
+			})),
+			cr(26693, e(643, {	-- Skadi the Ruthless
+				i(44151),	-- Blue Proto-Drake (MOUNT!)
+				i(127491),	-- Staff of Wayward Principles
+				i(127489),	-- Netherbreath Spellblade
+				i(127466),	-- Amulet of Deflected Blows
+				i(127467),	-- Silken Amice of the Ymijar
+				i(127469),	-- Dark Rider's Tunic
+				i(127503),	-- Bands of Fading Light
+				i(127479),	-- Dragonflayer Seer's Bindings
+				i(127490),	-- Skadi's Iron Belt
+				i(127492),	-- Crenelation Leggings
+				i(127468),	-- Harpooner's Striders
+			})),
+			cr(26861, e(644, {	-- King Ymiron
+				i(127471),	-- Jeweled Coronation Sword
+				i(127497),	-- Red Sword of Courage
+				i(127475),	-- Ymiron's Blade
+				i(127472),	-- Tor's Crest
+				i(127473),	-- Crown of the Forgotten Kings
+				i(127495),	-- Gold Amulet of Kings
+				i(127477),	-- Ceremonial Pyre Mantle
+				i(127496),	-- Mantle of Discarded Ways
+				i(127494),	-- Ornamented Plate Regalia
+				i(127500),	-- Gilt-Edged Leather Gauntlets
+				i(127499),	-- Girdle of Bane
+				i(127498),	-- Sovereign's Belt
+				i(127476),	-- Ancient Royal Legguards
+				i(127470),	-- Signet of Ranulf
+				i(127493),	-- Meteorite Whetstone
+				i(127474),	-- Vestige of Haldor
+			})),
+		})),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.WRATH, {
+	-- #if AFTER 7.2.5.23910
+	759,	-- Ulduar, not originally included with the rotation
+	-- #endif
+
+	-- Dungeons
+	274,	-- Gundrak
+	275,	-- Halls of Lightning
+	281,	-- The Nexus
+
+	-- #if AFTER 9.1.5
+	272,	-- Azjol-Nerub
+	280,	-- The Forge of Souls
+	285,	-- Utgarde Keep
+	-- #else
+	271,	-- Ahn'kahet: The Old Kingdom
+	278,	-- Pit of Saron
+	286,	-- Utgarde Pinnacle
+	-- #endif
+});
+
+-- Cataclysm Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
+	expansion(EXPANSION.CATA, {["forcetimeline"] = { ADDED_6_2_3 }}),
+	expansion(EXPANSION.CATA, {
+		n(GROUP_FINDER, {
+			i(185053, {	-- Kodo Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss of any 'Cataclysm Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
+			}),
+			a(i(133378, {	-- Smoldering Timewarped Ember [A] (QS!)
+				["description"] = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
+			})),
+			h(i(133377, {	-- Smoldering Timewarped Ember [H] (QS!)
+				["description"] = "Drops from the last boss of any 'Cataclysm Timewalking' dungeon.",
+			})),
+		}),
+		n(QUESTS, {
+			-- TW Cata Quest under level 80
+			q(86556, {	-- A Shattered Journey Through Time
+				["provider"] = { "n", 101759 },	-- Kiatke
+				["coords"] = {
+					{ 76.6, 16.6, STORMWIND_CITY },
+					{ 52.1, 41.6, ORGRIMMAR },
+				},
+				["timeline"] = { ADDED_11_0_7 },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(57637, {	-- Disturbance Detected: Firelands
+				["provider"] = { "n", 158276 },	-- Vormu
+				["coords"] = {
+					{ 74.8, 18.2, STORMWIND_CITY },
+					{ 49.8, 37.6, ORGRIMMAR },
+				},
+				["timeline"] = { ADDED_8_2_5 },
+				["isWeekly"] = true,
+				["groups"] = {
+					i(172506),	-- Time-Locked Cinder (QI!)
+					i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
+						["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Cho'gall or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
+						["sym"] = {{"select","itemID",
+							152978,	-- Infernal Pyreclaw (PET!)
+							152966,	-- Tinytron (PET!)
+							152969,	-- Twilight Clutch-Sister (PET!)
+							152973,	-- Zephyrian Prince (PET!)
+						}},
+						["groups"] = {
+						-- Can also contain any item from Firelands
+							i(77067),	-- Blazing Drake (MOUNT!)
+							i(78919),	-- Experiment 12-B (MOUNT!)
+							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+							i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
+							i(133543),	-- Infinite Timereaver (MOUNT!)
+							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
+
+							-- Chogall
+							i(171856),	-- Shadowflame Mantle
+							i(171872),	-- Reinforced Sapphirium Shoulderguards
+							i(171870),	-- Reinforced Sapphirium Pauldrons
+							i(171873),	-- Reinforced Sapphirium Mantle
+							i(171857),	-- Mercurial Shoulderwraps
+							i(171858),	-- Mercurial Mantle
+							i(171866),	-- Spaulders of the Raging Elements
+							i(171865),	-- Shoulderwraps of the Raging Elements
+							i(171864),	-- Mantle of the Raging Elements
+							i(171863),	-- Lightning-Charged Spaulders
+							i(171868),	-- Earthen Shoulderguards
+							i(171867),	-- Earthen Pauldrons
+							i(171862),	-- Wind Dancer's Spaulders
+							i(171861),	-- Stormrider's Spaulders
+							i(171860),	-- Stormrider's Shoulderwraps
+							i(171859),	-- Stormrider's Mantle
+							i(171871),	-- Magma Plated Shoulderguards
+							i(171869),	-- Magma Plated Pauldrons
+							i(171855),	-- Firelord's Mantle
+							i(171842),	-- Shalug'doom, the Axe of Unmaking
+							i(171847),	-- "Uhn'agh Fash, the Darkest Betrayal"
+							i(171854),	-- Twilight's Hammer
+							i(171845),	-- Helm of Maddening Whispers
+							i(171846),	-- Membrane of C'Thun
+							i(171844),	-- Battleplate of the Apocalypse
+							i(171849),	-- Shackles of the End of Days
+							i(171850),	-- Hands of the Twilight Council
+							i(171843),	-- Coil of Ten-Thousand Screams
+							i(171851),	-- Kilt of the Forgotten Battle
+							i(171848),	-- Treads of Hideous Transformation
+							i(171853),	-- Signet of the Fifth Circle
+							i(171852),	-- Fall of Mortality
+							-- Nefarian
+							i(171875),	-- Shadowflame Hood
+							i(171889),	-- Reinforced Sapphirium Helmet
+							i(171892),	-- Reinforced Sapphirium Headguard
+							i(171891),	-- Reinforced Sapphirium Faceguard
+							i(171876),	-- Mercurial Hood
+							i(171877),	-- Mercurial Cowl
+							i(171882),	-- Lightning-Charged Headguard
+							i(171885),	-- Helmet of the Raging Elements
+							i(171884),	-- Headpiece of the Raging Elements
+							i(171883),	-- Faceguard of the Raging Elements
+							i(171886),	-- Earthen Helemt
+							i(171887),	-- Earthen Faceguard
+							i(171881),	-- Wind Dancer's Helmet
+							i(171878),	-- Stormrider's Helm
+							i(171880),	-- Stormrider's Headpiece
+							i(171879),	-- Stormrider's Cover
+							i(171890),	-- Magma Plated Faceguard
+							i(171888),	-- Magma Plated Helmet
+							i(171874),	-- Firelord's Hood
+							i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+							i(171638),	-- Andoros, Fist of the Dragon King
+							i(171633),	-- Crul'korak, the Lightning's Arc
+							i(171634),	-- Akmin-Kurai, Dominion's Shield
+							i(171632),	-- Rage of Ages
+							i(171629),	-- Mantle of Nefarius
+							i(171630),	-- Pauldrons of the Apocalypse
+							i(171627),	-- Spaulders of the Scarred Lady
+							i(171637),	-- Shadow of Dread
+							i(171636),	-- Shadowblaze Robes
+							i(171635),	-- Belt of the Blackhand
+							i(171628),	-- Belt of the Nightmare
+							i(171631),	-- Prestor's Talisman of Machination
+						},
+					})),
+				},
+			}),
+			q(40787, {	-- The Smoldering Ember (A)
+				["qs"] = 133378,	-- Smoldering Timewarped Ember (QS!)
+				["races"] = ALLIANCE_ONLY,
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+			q(40786, {	-- The Smoldering Ember (H)
+				["qs"] = 133377,	-- Smoldering Timewarped Ember (QS!)
+				["races"] = HORDE_ONLY,
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+		}),
+		n(VENDORS, {
+			n(101759, {	-- Kiatke <Timewalking Vendor>
+				["maps"] = {
+					STORMWIND_CITY,
+					ORGRIMMAR,
+				},
+				["groups"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+							i(133536, {	-- Bracers of the Black Dream
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133526, {	-- Lightwarper Vestments
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133532, {	-- Vestal's Irrepressible Girdle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(FINGER_F, {
+							i(133521, {	-- Band of Reconstruction
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133523, {	-- Emergency Descent Loop
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133522, {	-- Ring of Torn Flesh
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133520, {	-- Seal of the Grand Architect
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133524, {	-- Signet of the Resolute
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(133529, {	-- Belt of Hidden Keys
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133535, {	-- Bracers of Manifold Pockets
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133528, {	-- Decaying Herbalist's Robes
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(133530, {	-- Cord of Dragon Sinew
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133534, {	-- Dragonbelly Bracers
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133527, {	-- Ghostworld Chestguard
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(133531, {	-- Blinding Girdle of Truth
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133525, {	-- Bones of the Damned
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(133533, {	-- Flashing Bracers of Warmth
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(TRINKET_F, {
+							i(133538, {	-- Bottled Wishes
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+							}),
+							i(133541, {	-- Fire of the Deep
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+							}),
+							i(133537, {	-- Kiroptric Sigil
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+							}),
+							i(133539, {	-- Reflection of the Light
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+							}),
+							i(133540, {	-- Rotting Skull
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+							}),
+						}),
+					}),
+					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+						i(244540, {	-- Charred Flamewake Sprout
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244542, {	-- Chronosmith's Temporal Safeguard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244647, {	-- Crook of the White Flame
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						iensemble(234859, {	-- Ensemble: Twilight Acolyte's Regalia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						iensemble(234857, {	-- Ensemble: Twilight Hunter's Guise
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						iensemble(234856, {	-- Ensemble: Twilight Zealot's Battleplate
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						iensemble(234855, {	-- Ensemble: Vestments of the Twisted Grove
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						i(234860, {	-- Explorer's League Deepholm Expedition Tabard
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(244651, {	-- Forest Ranger's Buckler
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244544, {	-- Forest Watcher's Rune-Axe
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244546, {	-- Forgotten Bow of the Banshee
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244650, {	-- Fort Triumph Longbow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244549, {	-- Light's Dawn Cryptblade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244680, {	-- Morchie's Desynchronized Chime
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244652, {	-- Prayer Beacon of the Goddess
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244681, {	-- Pyrewood Silver Blade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(234861, {	-- Reliquary Tabard
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(244543, {	-- Scimitar of the Crocolisk God
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244648, {	-- Scripture of the Scarlet High Priest
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244646, {	-- Seared Root of Regrowth
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244649, {	-- Shadowforge Senator's Ledger
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244548, {	-- Shattered Highvale Staff
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244550, {	-- Sunwalker's Ashen Warmaul
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244551, {	-- Time-Lost Worldbreaker
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244541, {	-- Zin-Azshari Court Scepter
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					})),
+					filter(MISC, {
+						ig(67414, {	-- Bag of Shiny Things
+							["cost"] = { { "c", TIMEWARPED_BADGE, 150 } },
+						}),
+						ig(133150, {	-- Commendation of the Dragonmaw Clan
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						ig(133159, {	-- Commendation of the Earthen Ring
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						ig(133152, {	-- Commendation of the Guardians of Hyjal
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						ig(133154, {	-- Commendation of the Ramkahen
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						ig(133151, {	-- Commendation of the Wildhammer Clan
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						ig(133160, {	-- Commendation of Therazanae
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+					filter(MOUNTS, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+						i(234730, {	-- Broodling of Sinestra (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+					})),
+					filter(RECIPES, {
+						i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(12227, {	-- Recipe: Lean Wolf Steak (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(14493, {	-- Pattern: Robe of Winter Night
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(15764, {	-- Pattern: Stormshroud Shoulders (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+						i(15753, {	-- Pattern: Stormshroud Armor (RECIPE!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_9_1_0 },
+						}),
+					}),
+					filter(TOYS, {
+						i(133511, {	-- Gurboggle's Gleaming Bauble (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(133542, {	-- Tosselwrench's Mega-Accurate Simulation Viewfinder (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(78, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }},{	-- Firelands
+			["isRaid"] = true,
+			["groups"] = {
+				n(COMMON_BOSS_DROPS, {
+					["crs"] = {
+						53691,	-- Shannox
+						52498,	-- Beth'tilac <The Red Widow>
+						52530,	-- Alysrazor
+						52558,	-- Lord Rhyolith
+						53494,	-- Baleroc <The Gatekeeper>
+						52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+						52409,	-- Ragnaros
+					},
+					["groups"] = {
+						i(173277),	-- Avool's Incendiary Shanker
+						i(173276),	-- Entrail Disgorger
+						i(173274),	-- Eye of Purification
+						i(173275),	-- Firethorn Mindslicer
+						i(173278),	-- Shatterskull Bonecrusher
+						i(173273),	-- Smoldering Censer of Purity
+						i(173272),	-- Zoid's Firelit Greatsword
+						ig(69237),	-- Living Ember
+					},
+				}),
+				e(192, {	-- Beth'tilac
+					["creatureID"] = 52498,
+					["groups"] = {
+						i(152976, {	-- Cinderweb Recluse (PET!)
+							["timeline"] = { ADDED_7_3_0 },
+						}),
+						i(171701),	-- Funeral Pyre
+						i(171664),	-- Mandible of Beth'tilac
+						i(171700),	-- Ward of the Red Widow
+						i(171702),	-- Cowl of the Clicking Menace
+						i(171697),	-- Flickering Shoulders
+						i(171705),	-- Spaulders of Manifold Eyes
+						i(171658),	-- Carapace of Imbibed Flame
+						i(171703),	-- Robes of Smoldering Devastation
+						i(171706),	-- Cindersilk Gloves
+						i(171698),	-- Cinderweb Leggings
+						i(171704),	-- Thoracic Flame Kilt
+						i(171696),	-- Arachnaflame Treads
+						i(171699),	-- Widow's Kiss
+						i(171643),	-- Spidersilk Spindle
+					},
+				}),
+				e(193, {	-- Lord Rhyolith
+					["creatureID"] = 52558,
+					["groups"] = {
+						i(171677),	-- Volcanospike
+						i(171671),	-- Arbalest of Erupting Fury
+						i(171681),	-- Flickering Cowl
+						i(171674),	-- Hood of Rampant Disdain
+						i(171682),	-- Heartstone of Rhyolith
+						i(171672),	-- Dreadfire Drape
+						i(171676),	-- Flaming Core Chestguard
+						i(171680),	-- Incendic Chestguard
+						i(171675),	-- Earthcrack Bracers
+						i(171679),	-- Lava Line Wristbands
+						i(171673),	-- Fireskin Gauntlets
+						i(171678),	-- Grips of the Raging Giant
+						i(171656),	-- Cracked Obsidian Stompers
+					},
+				}),
+				e(194, {	-- Alysrazor
+					["creatureID"] = 52530,
+					["groups"] = {
+						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+						i(171796, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Robes of the Cleansing Flame
+						i(171801, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Vestment of the Cleansing Flame
+						i(171777, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewakers Tunic
+						i(171813, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Hauberk
+						i(171806, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespider's Robes
+						i(171811, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Firehawk Robes
+						i(171818, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Tunic
+						i(171823, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Cuirass
+						i(171746, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Rainment
+						i(171751, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Tunic
+						i(171756, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave vestment
+						i(171768, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Dark Phoenix Tunic
+						i(171737, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Chestguard
+						i(171738, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Breastplate
+						i(171788, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Breastplate
+						i(171783, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Battleplate of the Molten Giant
+						i(171778, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Battleplate
+						i(171767, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Chestguard
+						i(171762, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Chestguard of the Molten Giant
+						i(171649),	-- Alysra's Razor
+						i(171650),	-- Greathelm of the Voracious Maw
+						i(171665),	-- Craterflame Spaulders
+						i(171653),	-- Spaulders of Recurring Flame
+						i(171670),	-- Wings of Flame
+						i(171668),	-- Clutch of the Firemother
+						i(171651),	-- Flickering Wristbands
+						i(171666),	-- Clawshaper Gauntlets
+						i(171655),	-- Lavaworm Legplates
+						i(171669),	-- Leggings of Billowing Fire
+						i(171652),	-- Moltenfeather Leggings
+						i(171667),	-- Phoenix-Down Treads
+						i(171654),	-- Alysrazor's Band
+						i(171645),	-- Eye of Blazing Power
+						i(199099, {	-- Glittering Phoenix Ember
+							["description"] = "Guaranteed drop.",
+							["timeline"] = { ADDED_10_0_7 },
+						}),
+					},
+				}),
+				e(195, {	-- Shannox
+					["creatureID"] = 53691,
+					["groups"] = {
+						i(152975),	-- Blazehound (PET!)
+						i(171734, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Legguards
+						i(171741, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Greaves
+						i(171759, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Legguards of the Molten Giant
+						i(171810, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- FireHawk Leggings
+						i(171805, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespiders Leggings
+						i(171800, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Leggings of the Cleansing Flame
+						i(171795, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Legwraps of the Cleansing Flame
+						i(171781, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Legplates
+						i(171826, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Legguards
+						i(171821, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Legwraps
+						i(171816, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Kilt
+						i(171775, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewakers Legguards
+						i(171745, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Legguards
+						i(171750, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave legwraps
+						i(171755, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Leggings
+						i(171771, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Dark Phoenix Legguards
+						i(171764, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Legguards
+						i(171786, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Legplates of the Molten Giant
+						i(171791, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Greaves
+						i(171684),	-- Skullstealer Greataxe
+						i(171683),	-- Feeding Frenzy
+						i(171689),	-- Goblet of Anger
+						i(171685),	-- Scalp of the Bandit Prince
+						i(171686),	-- Necklace of Fetishes
+						i(171692),	-- Flickering Shoulderpads
+						i(171693),	-- Bracers of the Dread Hunter
+						i(171687),	-- Gloves of Dissolving Smoke
+						i(171688),	-- Uncrushable Belt of Fury
+						i(171695),	-- Legplates of Absolute Control
+						i(171657),	-- Legplates of Frenzied Devotion
+						i(171690),	-- Coalwalker Sandals
+						i(171694),	-- Treads of Implicit Obedience
+						i(171691),	-- Crystal Prison Band
+					},
+				}),
+				e(196, {	-- Baleroc, the Gatekeeper
+					["creatureID"] = 53494,
+					["groups"] = {
+						i(152977),	-- Surger (PET!)
+						i(171793, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Handwraps of the Cleansing Flame
+						i(171798, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Gloves of the Cleansing Flame
+						i(171803, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespiders Handwraps
+						i(171808, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Firehawk Gloves
+						i(171735, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Handguards
+						i(171739, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Gauntlets
+						i(171766, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Handguards
+						i(171779, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Gauntlets
+						i(171784, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Gauntlets of the Molten Giant
+						i(171760, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Handguards of the Molten Giant
+						i(171789, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Gloves
+						i(171773, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewakers Gloves
+						i(171814, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Gloves
+						i(171819, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Handwraps
+						i(171824, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Grips
+						i(171743, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Grips
+						i(171748, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Handwraps
+						i(171753, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Gloves
+						i(171769, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Dark Phoenix Gloves
+						i(171707),	-- Gatecrasher
+						i(171659),	-- Shard of Torment
+						i(171711),	-- Molten Scream
+						i(171714),	-- Casque of Flame
+						i(171660),	-- Helm of Blazing Glory
+						i(171715),	-- Mantle of Closed Doors
+						i(171717),	-- Shoulderpads of the Forgotten Gate
+						i(171709),	-- Breastplate of the Incendiary Soul
+						i(171712),	-- Gatekeeper's Embrace
+						i(171713),	-- Glowing Wing Bracers
+						i(171661),	-- Flickering Handguards
+						i(171710),	-- Decimation Treads
+						i(171644),	-- Necromantic Focus
+					},
+				}),
+				e(197, {	-- Majordomo Staghelm
+					["creatureID"] = 52571,
+					["groups"] = {
+						i(152978),	-- Infernal Pyreclaw (PET!)
+						i(122304),	-- Fandral's Seed Pouch (TOY!)
+						i(171807),	-- Balespider's Mantle
+						i(171772),	-- Dark Phoenix Spaulders
+						i(171742),	-- Elementium Deathplate Pauldrons
+						i(171733),	-- Elementium Deathplate Shoulderguards
+						i(171822),	-- Erupting Volcanic Mantle
+						i(171817),	-- Erupting Volcanic Shoulderwraps
+						i(171827),	-- Erupting Volcanic Spaulders
+						i(171776),	-- Flamewaker's Spaulders
+						i(171812),	-- Firehawk Mantle
+						i(171855),	-- Firelord's Mantle
+						i(171792),	-- Immolation Mantle
+						i(171782),	-- Immolation Pauldrons
+						i(171763),	-- Immolation Shoulderguards
+						i(171797),	-- Mantle of the Cleansing Flame
+						i(171752),	-- Obsidian Arborweave Mantle
+						i(171757),	-- Obsidian Arborweave Shoulderwraps
+						i(171747),	-- Obsidian Arborweave Spaulders
+						i(171787),	-- Pauldrons of the Molten Giant
+						i(171758),	-- Shoulderguards of the Molten Giant
+						i(171802),	-- Shoulderwraps of the Cleansing Flame
+						i(171869),	-- Magma Plated Pauldrons
+						i(171871),	-- Magma Plated Shoulderguards
+						i(171648),	-- Fandral's Flamescythe
+						i(171719),	-- Stinger of the Flaming Scorpion
+						i(171720),	-- Flowform Choker
+						i(171716),	-- Breastplate of Shifting Visions
+						i(171662),	-- Bracers of the Fiery Path
+						i(171722),	-- Wristwraps of Arrogant Doom
+						i(171718),	-- Grips of Unerring Precision
+						i(171721),	-- Firecat Leggings
+						i(171708),	-- Sandals of Leaping Coals
+						i(171723),	-- Treads of the Penitent Man
+						i(171641),	-- Jaws of Defeat
+						i(171642),	-- The Hungerer
+					},
+				}),
+				e(198, {	-- Ragnaros
+					["creatureID"] = 52409,
+					["groups"] = {
+						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
+						i(171804),	-- Balespider's Hood
+						i(171794),	-- Cowl of the Cleansing Flame
+						i(171770),	-- Dark Phoenix Helmet
+						i(171736),	-- Elementium Deathplate Faceguard
+						i(171740),	-- Elementium Deathplate Helmet
+						i(171820),	-- Erupting Volcanic Faceguard
+						i(171815),	-- Erupting Volcanic Headpiece
+						i(171825),	-- Erupting Volcanic Helmet
+						i(171761),	-- Faceguard of the Molten Giant
+						i(171809),	-- Firehawk Hood
+						i(171774),	-- Flamewaker's Headguard
+						i(171785),	-- Helmet of the Molten Giant
+						i(171799),	-- Hood of the Cleansing Flame
+						i(171765),	-- Immolation Faceguard
+						i(171790),	-- Immolation Headguard
+						i(171780),	-- Immolation Helmet
+						i(171754),	-- Obsidian Arborweave Cover
+						i(171744),	-- Obsidian Arborweave Headpiece
+						i(171749),	-- Obsidian Arborweave Helm
+						-- This version requires confirmation, only the wierd one tagged as heroic timewalking might have made it in.
+						i(171732, { ["timeline"] = { CREATED_8_2_5}}),	-- Sho'ravon, Greatstaff of Annihilation
+						i(171731),	-- Sho'ravon, Greatstaff of Annihilation (Heroic, confirmed drop from 15th Anniversary event)
+						i(171724),	-- Sulfuras, the Extinguished Hand
+						i(171727),	-- Ko'gun, Hammer of the Firelord
+						i(171725),	-- Arathar, the Eye of Flame
+						i(171728),	-- Crown of Flame
+						i(171726),	-- Choker of the Vanquished Lord
+						i(171663),	-- Pauldrons of Roaring Flame
+						i(171730),	-- Fingers of Incineration
+						i(171729),	-- Majordomo's Chain of Office
+						i(171646),	-- Matrix Restabilizer
+						i(171640),	-- Variable Pulse Lightning Capacitor
+						i(171647),	-- Vessel of Acceleration
+					},
+				}),
+			},
+		})),
+		inst_tw(66, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Blackrock Caverns
+			cr(39665, e(105, {	-- Rom'ogg Boncrusher
+				i(188520),	-- Groundrumble Boots
+				i(188506),	-- Inquisition Robes
+				i(188508),	-- Manacles of Pain
+				i(188509),	-- Shield of the Iron Maiden
+				i(188505),	-- Skullcracker Ring
+				i(188507),	-- Torturer's Mercy
+			})),
+			cr(39679, e(106, {	-- Corla, Herald of Twilight
+				i(188492),	-- Armbands of Change
+				i(188491),	-- Corla's Baton
+				i(188490),	-- Grace of the Herald
+				i(188493),	-- Renouncer's Cowl
+				i(188494),	-- Signet of Transformation
+			})),
+			cr(39698, e(107, {	-- Karsh Steelbender
+				i(188496),	-- Bracers of Cooled Anger
+				i(188499),	-- Burned Gatherings
+				i(188498),	-- Heat Wave Leggings
+				i(188521),	-- Heat-Shielded Tunic
+				i(188495),	-- Quicksilver Amulet
+				i(188497),	-- Steelbender's Masterpiece
+			})),
+			cr(39700, e(108, {	-- Beauty
+				i(188504),	-- Beauty's Chew Toy
+				i(188501),	-- Beauty's Favorite Bone
+				i(188503),	-- Beauty's Plate
+				i(188500),	-- Beauty's Silken Ribbon
+				i(188519),	-- Gently Gnawed Hauberk
+				i(188502),	-- Kibble
+			})),
+			cr(39705, e(109, {	-- Ascendent Lord Obsidius
+				i(188511),	-- Amber Messenger
+				i(188513),	-- Carrier Wave Pendant
+				i(188517),	-- Clutches of Dying Light
+				i(188516),	-- Crepuscular Shield
+				i(188518),	-- Kyrstel Mantle
+				i(188512),	-- Raz's Pauldrons
+				i(188510),	-- Twitching Shadows
+				i(188515),	-- Willowy Crown
+				i(188514),	-- Witching Hourglass
+			})),
+		})),
+		inst_tw(184, {	-- End Time
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					54431,	-- Echo of Baine
+					54445,	-- Echo of Jaina
+					54123,	-- Echo of Sylvannas
+					54544,	-- Echo of Tyrande
+				},
+				["groups"] = {
+					i(133391),	-- Dragonshrine Scepter
+					i(133415),	-- Crescent Wand
+					i(133393),	-- Echoing Headguard
+					i(133422),	-- Breastplate of Despair
+					i(133388),	-- Breastplate of Sorrow
+					i(133424),	-- Bindings of the End Time
+					i(133414),	-- Archivist's Gloves
+					i(133387),	-- Gauntlets of Temporal Interference
+					i(133392),	-- Gloves of the Hollow
+					i(133416),	-- Time Strand Gauntlets
+					i(133385),	-- Cord of Lost Hope
+					i(133390),	-- Girdle of Lost Heroes
+					i(133428),	-- Time-Dessicated Girdle
+					i(133394),	-- Waistguard of Lost Time
+					i(133389),	-- Time Traveler's Leggings
+					i(133418),	-- Boots of the Forked Road
+					i(133386),	-- Dead End Boots
+				},
+			}),
+			cr(54431, e(340, {	-- Echo of Baine
+				i(133401),	-- Axe of The Tauren Chieftain
+				i(133402),	-- Bloodhoof Legguards
+			})),
+			cr(54445, e(285, {	-- Echo of Jaina
+				i(133395),	-- Jaina's Staff
+				i(133396),	-- Ward of Incantations
+			})),
+			cr(54123, e(323, {	-- Echo of Sylvanas
+				i(133397),	-- Windrunner's Bow
+				i(133398),	-- Cloak of the Banshee Queen
+			})),
+			cr(54544, e(283, {	-- Echo of Tyrande
+				i(133399),	-- Crescent Moon
+				i(133400),	-- Whisperwind Robes
+			})),
+			cr(54432, e(289, {	-- Murozond
+				i(133409),	-- Jagged Edge of Time
+				i(133417),	-- Bronze Blaster
+				i(133421),	-- Cowl of Destiny
+				i(133407),	-- Crown of Epochs
+				i(133410),	-- Timeway Headgear
+				i(133412),	-- Mantle of Time
+				i(133408),	-- Temporal Pauldrons
+				i(133405),	-- Breastplate of Tarnished Bronze
+				i(133413),	-- Robes of Fate
+				i(133411),	-- Time Twisted Tunic
+				i(133419),	-- Time Twister's Gauntlets
+				i(133403),	-- Distortion Greaves
+				i(133404),	-- Time Altered Legguards
+				i(133406),	-- Chrono Boots
+				i(133420),	-- Arrow of Time
+			})),
+		}),
+		inst_tw(71, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_9_1_5 }},{	-- Grim Batol
+			cr(39625, e(131, {	-- General Umbriss
+				i(133283),	-- Modgud's Blade
+				i(133285),	-- Wildhammer Riding Helm
+				i(133284),	-- Cursed Skardyn Vest
+				i(133306),	-- Bracers of Umbral Mending
+				i(133307),	-- Abandoned Dark Iron Ring
+				i(133286),	-- Umbriss Band
+				i(133282),	-- Skardyn's Grace
+			})),
+			cr(40177, e(132, {	-- Forgemaster Throngus
+				i(133288),	-- Wand of Untainted Power
+				i(133353),	-- Troggbone Cinch
+				i(133289),	-- Belt of the Forgemaster
+				i(133308),	-- Curse-Tainted Leggings
+				i(133290),	-- Dark Iron Chain Boots
+				i(133287),	-- Ring of Dun Algaz
+				i(133304),	-- Gale of Shadows
+				i(133291),	-- Throngus's Finger
+			})),
+			cr(40319, e(133, {	-- Drahga Shadowburner
+				i(133296),	-- Windwalker Blade
+				i(133294),	-- Earthshape Pauldrons
+				i(133292),	-- Azureborne Cloak
+				i(133363),	-- Troggstitched Drape
+				i(133295),	-- Crimsonborne Bracers
+				i(133354),	-- Glimmerthread Pantalons
+				i(133293),	-- Red Scale Boots
+			})),
+			cr(40484, e(134, {	-- Erudax
+				i(133303),	-- Staff of Siphoned Essences
+				i(133298),	-- Wild Hammer
+				i(133301),	-- Mace of Transformed Bone
+				i(133302),	-- Crown of Enfeebled Bodies
+				i(133374),	-- Courier's Dragonriding Spaulders
+				i(133309),	-- Shroud of Dark Memories
+				i(133297),	-- Vest of Misshapen Hides
+				i(133299),	-- Circle of Bone
+				i(133305),	-- Corrupted Egg Shell
+				i(133300),	-- Mark of Khardros
+			})),
+		})),
+		inst_tw(69, {	-- Lost City of the Tol'vir
+			e(117, {	-- General Husam
+				["crs"] = { 44577 },	-- General Husam
+				["groups"] = {
+					i(133257),	-- Saliza's Spear
+					i(133373),	-- Necklace of Rumbling Earth
+					i(133254),	-- Kaleki Cloak
+					i(133258),	-- Ionic Gloves
+					i(133256),	-- Greaves of Wu the Elder
+					i(133255),	-- Spirit Creeper Ring
+				},
+			}),
+			e(118, {	-- Lockmaw
+				["crs"] = {
+					43614,	-- Lockmaw
+					49045,	-- Augh
+				},
+				["groups"] = {
+					i(133261),	-- Balkar's Waders
+					i(133259),	-- Resonant Kris
+					i(133260),	-- Tauntka's Necklace
+					i(133280),	-- Oasis Bracers
+					i(133263),	-- Ring of the Darkest Day
+					i(133281),	-- Impetuous Query
+					i(133266),	-- Veneficial Band
+					-- Swapped/Confirmed Drops
+					i(133267),	-- Sand Dune Belt (8.3.7, confirmed dropping here too on 11.08.2020)
+					-- i(133262),	-- Greaves of Wu the Younger (moved to Barim)
+					-- i(133278),	-- Evelyn's Belt (moved to Siamat)
+				},
+			}),
+			e(119, {	-- High Prophet Barim
+				["crs"] = { 43612 },	-- High Prophet Barim
+				["groups"] = {
+					i(133265),	-- Barin's Main Gauche
+					i(133277),	-- Zora's Ward
+					i(133264),	-- Sand Silk Wristband
+					i(133276),	-- Leggings of the Path
+					i(133279),	-- Mirage Ring
+					i(133268),	-- Heart of Solace
+					-- Swapped/Confirmed Drops
+					i(133261),	-- Balkar's Waders	-- 10.0.7, confirmed dropping here too on 04.04.2023
+					i(133259),	-- Resonant Kris	-- 8.3.7, confirmed dropping here too on 18.08.2020
+					i(133278),	-- Evelyn's Belt	-- 9.1, confirmed dropping here too on 27.09.2021
+					i(133262),	-- Greaves of Wu the Younger	-- 9.1, confirmed dropping here too on 27.09.2021
+					-- i(133267),	-- Sand Dune Belt (movd to Lockmaw))
+					-- i(133266),	-- Veneficial Band (moved to Lockmaw)
+				},
+			}),
+			e(122, {	-- Siamat
+				["crs"] = { 44819 },	-- Siamat
+				["groups"] = {
+					i(133271),	-- Hammer of Sparks
+					i(133376),	-- Hammer of Swirling Winds
+					i(133274),	-- Mantle of Master Cho
+					i(133272),	-- Geordan's Cloak
+					i(133278),	-- Evelyn's Belt (erroneously listed on Lockmaw in DJ	-- drops from this boss)
+					i(133270),	-- Crafty's Gaiters
+					i(133273),	-- Ring of Three Lights
+					i(133275),	-- Sorrowsong
+					i(133269),	-- Tia's Grace
+				},
+			}),
+		}),
+		inst_tw(67, {	-- The Stonecore
+			cr(43438, e(110, {	-- Corborus
+				i(133375),	-- Crackling Geode Mace
+				i(133207),	-- Fist of Pained Senses
+				i(133364),	-- Crystal-Chained Lodestone
+				i(133208),	-- Cinnabar Shoulders
+				i(133356),	-- Crystalgrinder Bracers
+				i(133209),	-- Dolomite Adorned Gloves
+				i(133210),	-- Phosphorescent Ring
+				i(133206),	-- Key to the Endless Chamber
+			})),
+			cr(43214, e(111, {	-- Slabhide
+				i(63043),	-- Vitreous Stone Drake (MOUNT!)
+				i(133213),	-- Quicksilver Blade
+				i(133230),	-- Wand of Dark Worship
+				i(133365),	-- Crystalpowder Amice
+				i(133231),	-- Skin of Stone
+				i(133212),	-- Deep Delving Gloves
+				i(133214),	-- Hematite Plate Gloves
+				i(133357),	-- Earth-Strength Legguards
+				i(133211),	-- Rose Quartz Band
+			})),
+			cr(42188, e(112, {	-- Ozruk
+				i(133219),	-- Sword of the Bottomless Pit
+				i(133229),	-- Heavy Geode Mace
+				i(133366),	-- Fractured Earthstone Necklace
+				i(133215),	-- Pendant of the Lightless Grotto
+				i(133217),	-- Elementium Scale Bracers
+				i(133218),	-- Belt of the Ringworm
+				i(133227),	-- Tear of Blood
+				i(133216),	-- Tendrils of Burrowing Dark
+			})),
+			cr(42333, e(113, {	-- High Priestess Azil
+				i(133220),	-- Darkling Staff
+				i(133223),	-- Elementium Fang
+				i(133226),	-- Prophet's Scepter
+				i(133228),	-- Cowl of the Unseen World
+				i(133221),	-- Helm of Numberless Shadows
+				i(133225),	-- Slippers of the Twilight Prophet
+				i(133224),	-- Leaden Despair
+				i(133222),	-- Magnetite Mirror
+			})),
+		}),
+		inst_tw(68, {	-- The Vortex Pinnacle
+			cr(43878, e(114, {	-- Grand Vizier Ertan
+				i(133233),	-- Biting Wind
+				i(133234),	-- Headcover of Fog
+				i(133361),	-- Choker of Stolen Thunder
+				i(133369),	-- Ionized Choker
+				i(133236),	-- Red Sky Pendant
+				i(133235),	-- Fallen Snow Shoulderguards
+				i(133232),	-- Stratosphere Belt
+				i(133252),	-- Rainsong
+			})),
+			cr(43873, e(115, {	-- Altairus
+				i(63040),	-- Drake of the North Wind (MOUNT!)
+				i(133371),	-- Thundercleaver Axe
+				i(133240),	-- Axe of the Eclipse
+				i(133251),	-- Thundercall
+				i(133238),	-- Amulet of Tender Breath
+				i(133237),	-- Mantle of Bestilled Winds
+				i(133362),	-- Billowing Skydrape
+				i(133239),	-- Hail-Strung Belt
+				i(133253),	-- Darksky Treads
+				i(133370),	-- Sandals of the West Wind
+				i(133241),	-- Skyshard Ring
+			})),
+			cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
+				i(133242),	-- Lightningflash	-- Note!! Possible removal in 8.0 need confirmed reports
+				i(133249),	-- Lunar Halo
+				i(133245),	-- Billowing Cape
+				i(133247),	-- Shadow of Perfect Bliss
+				i(133244),	-- Gloves of Haze
+				i(133250),	-- Leggings of Iridescent Clouds
+				i(133243),	-- Legguards of Winnowing Wind
+				i(133372),	-- Ion-Cage Signet
+				i(133248),	-- Ring of Frozen Rain
+				i(133246),	-- Heart of Thunder
+			})),
+		}),
+		inst_tw(65, {	-- Throne of the Tides
+			cr(40586, e(101, {	-- Lady Naz'jar
+				i(133179),	-- Lightning Whelk Axe
+				i(133367),	-- Barnacled Shell Buckler
+				i(133182),	-- Aurelian Mitre
+				i(133358),	-- Old One Eye's Cowl
+				i(133359),	-- Ironshell Pendant
+				i(133180),	-- Periwinkle Cloak
+				i(133181),	-- Wrasse Handwraps
+				i(133205),	-- Alpheus Legguards
+				i(133183),	-- Entwined Nereis
+			})),
+			cr(40765, e(102, {	-- Commander Ulthok
+				i(133184),	-- Cerith Spire Staff
+				i(133203),	-- Barnacle Pendant
+				i(133186),	-- Caridean Epaulets
+				i(133185),	-- Harp Shell Pauldrons
+				i(133188),	-- Eagle Ray Cloak
+				i(133187),	-- Chromis Chestpiece
+				i(133204),	-- Ring of the Great Whale
+			})),
+			cr(40788, e(103, {	-- Mindbender Ghur'sha
+				i(133200),	-- Bioluminescent Lamp
+				i(133191),	-- Anomuran Helm
+				i(133360),	-- Stonespeaker's Spare Cinch
+				i(133190),	-- Decapod Slippers
+				i(133189),	-- Anthia's Ring
+				i(133192),	-- Porcelain Crab
+			})),
+			cr(44566, e(104, {	-- Ozumat
+				i(133196),	-- Whitefin Axe
+				i(133199),	-- Pipefish Cord
+				i(133202),	-- Abalone Plate Armor
+				i(133193),	-- Wentletrap Vest
+				i(133198),	-- Mnemiopsis Gloves
+				i(133368),	-- Salty Shell-Studded Girdle
+				i(133195),	-- Triton Legplates
+				i(133194),	-- Nautilus Ring
+				i(133197),	-- Might of the Ocean
+				i(133201),	-- Sea Star
+			})),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.CATA, {
+	-- #if AFTER 8.2.5.31958
+	78,	-- Firelands not originally included with the rotation
+	-- #endif
+
+	-- Dungeons
+	184,	-- End Time
+	 69,	-- Lost City of the Tol'vir
+	 67,	-- The Stonecore
+	 68,	-- The Vortex Pinnacle
+	 65,	-- Throne of the Tides
+
+	-- #if AFTER 9.1.5
+	 66,	-- Blackrock Caverns
+	-- #else
+	 71,	-- Grim Batol
+	-- #endif
+});
+
+-- Mists of Pandaria Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
+	expansion(EXPANSION.MOP, {["forcetimeline"] = { ADDED_7_1_5 }}),
+	expansion(EXPANSION.MOP, {
+		n(GROUP_FINDER, {
+			i(187904, {	-- Cloud Serpent Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss of any 'Mists of Pandaria Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
+			}),
+			i(143776, {	-- Shrouded Timewarped Coin
+				["description"] = "Drops from the last boss of any 'Mists of Pandaria Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			-- TW MoP Quest under level 80
+			q(86560, {	-- A Shrouded Journey Through Time
+				["provider"] = { "n", 118828 },	-- Mistweaver
+				["coord"] = { 43.1, 55.3, TIMELESS_ISLE },
+				["timeline"] = { ADDED_11_0_7 },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(45563, {	-- The Shrouded Coin
+				["provider"] = { "i", 143776 },	-- Shrouded Timewarped Coin
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+		}),
+		n(VENDORS, {
+			n(118828, {	-- Mistweaver Xia <Timewalking Vendor>
+				["coord"] = { 43.0, 55.4, TIMELESS_ISLE },
+				["groups"] = {
+					n(ARMOR, {
+						filter(BACK_F, {
+							i(144054, {	-- Blackguard Cape
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144055, {	-- Sagewhisper's Wrap
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(CLOTH, {
+							i(144044, {	-- Gloves of Red Feathers
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144056, {	-- Leggings of the Poisoned Soul
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144060, {	-- Mantle of the Golden Sun
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+							i(144051, {	-- Storm-Sing Sandals
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(144057, {	-- Dreadsworn Slayer Legs
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144045, {	-- Fingers of the Loneliest Monk
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144050, {	-- Tukka-Tuk's Hairy Boots
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144061, {	-- Whitepetal Shoulderguards
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(144058, {	-- Locust Swarm Legguards
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144046, {	-- Ravenmane's Gloves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144049, {	-- Sandals of the Elder Sage
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144062, {	-- Windwalker Spaulders
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+						}),
+						filter(NECK_F, {
+							i(144052, {	-- Bloodseeker's Solitaire
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144053, {	-- Choker of the Klaxxi'va
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(144059, {	-- Ambersmith Legplates
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144047, {	-- Gauntlets of Jade Sutras
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(144063, {	-- Stonetoe Spaulders
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+							i(144048, {	-- Yu'lon Guardian Boots
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(TRINKET_F, {
+							i(144070, {	-- Shado-Pan Dragon Gun
+								["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+							}),
+						}),
+					}),
+					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+						i(234775, {	-- Amber Pandaren Fan
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(234763, {	-- Bloody Expeditionary Cleaver
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234783, {	-- Caravan Guard's Buckler
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234774, {	-- Crimson Amber Incubator
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234796, {	-- Embroidered Shado-Pan Kilt
+							["cost"] = { { "c", TIMEWARPED_BADGE, 800 } },
+						}),
+						i(234762, {	-- Embroidered Shado-Pan Robes
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(234764, {	-- Fist of Knives
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234767, {	-- Flame-Bladed Long Sword
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234765, {	-- Flame-Bladed Steel Sword
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234794, {	-- Gilded Shado-Pan Kilt
+							["cost"] = { { "c", TIMEWARPED_BADGE, 800 } },
+						}),
+						i(234759, {	-- Gilded Shado-Pan Robes
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(234789, {	-- Gourd-Topped Mallet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234773, {	-- Imperial Gut Render
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234768, {	-- Jungle Gourd Splitter
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(234757, {	-- Kor'kron Pauldrons
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(234756, {	-- Kor'kron Tabard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(234772, {	-- Kris of the Mogu Shaman
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234771, {	-- Mogu Lightning Spitter
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+						}),
+						i(234781, {	-- Mogu'shan Vault's Improvised Shield
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234787, {	-- Mogu'shan Warden's Crystal Spear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+						}),
+						i(234784, {	-- Pandaran Bolt Thrower
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+						}),
+						i(234770, {	-- Pandaran Guard's Halberd
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234769, {	-- Pandaren Guard's Poleaxe
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234791, {	-- Reforged Harmonic Mallet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
+						}),
+						i(234790, {	-- Restored Harmonic Mallet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						i(234766, {	-- Ringed Pandaran Falchion
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234776, {	-- Saurok Mystic's Voodoo Stick
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(234795, {	-- Shado-Pan Guise
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(234778, {	-- Staff of the Jade Serpent
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234777, {	-- Stave-Master's Spire
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(234755, {	-- Tabard of the Pandaran Elders
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+					})),
+					filter(BATTLE_PETS, {
+						i(143953, {	-- Infinite Hatchling (PET!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
+						}),
+						i(143954, {	-- Paradox Spirit (PET!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
+						}),
+					}),
+					filter(MISC, {
+						i(143947, {	-- Commendation of Emperor Shaohao
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143944, {	-- Commendation of Operation: Shieldwall
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143946, {	-- Commendation of The Anglers
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143938, {	-- Commendation of The August Celestials
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143943, {	-- Commendation of the Dominance Offensive
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143937, {	-- Commendation of the Golden Lotus
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143940, {	-- Commendation of the Kirin Tor Offensive
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143935, {	-- Commendation of The Klaxxi
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143942, {	-- Commendation of the Order of the Cloud Serpent
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143936, {	-- Commendation of the Shado-Pan
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143945, {	-- Commendation of the Shado-Pan Assault
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143939, {	-- Commendation of the Sunreaver Onslaught
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143941, {	-- Commendation of The Tillers
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						-- Quest Items
+						i(79265, {	-- Blue Feather
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(79266, {	-- Jade Cat
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(79267, {	-- Lovely Apple
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(79268, {	-- Marsh Lily
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(79264, {	-- Ruby Shard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(143948, {	-- Chilled Satchel of Vegetables
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+						}),
+					}),
+					filter(MOUNTS, {
+						i(234740, {	-- Copper-Maned Quilen Reins (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(87775, {	-- Yu'lei, Daughter of Jade (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+					}),
+					filter(TOYS, {
+						i(144072, {	-- Adopted Puppy Crate (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(144393, {	-- Portable Yak Wash (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(303, {	-- Gate of the Setting Sun
+			e(655, {	-- Saboteur Kip'tilak
+				["crs"] = { 56906 },	-- Saboteur Kip'tilak
+				["sym"] = {{"select", "modItemID",
+					modItemId(144018,1),	-- Fallout-Filtering Hood
+					modItemId(144102,1),	-- Pendant of Precise Timing
+					modItemId(144100,1),	-- Saboteur's Stablizing Bracers
+					modItemId(144134,1),	-- Grenadier's Belt
+					modItemId(144135,1),	-- Pulled Grenade Pin
+				}},
+			}),
+			e(675, {	-- Striker Ga'dok
+				["crs"] = { 56589 },	-- Striker Ga'dok
+				["sym"] = {{"select", "modItemID",
+					modItemId(143980,1),	-- Acid-Scarred Spaulders
+					modItemId(144137,1),	-- Bomber's Precision Gloves
+					modItemId(144095,1),	-- Impaler's Girdle
+					modItemId(143983,1),	-- Airstream Treads
+					modItemId(144136,1),	-- Vision of the Predator
+				}},
+			}),
+			e(676, {	-- Commander Ri'mok
+				["crs"] = { 56636 },	-- Commander Ri'mok
+				["sym"] = {{"select", "modItemID",
+					modItemId(144098,1),	-- Mantid Trochanter
+					modItemId(144019,1),	-- Swarmcall Helm
+					modItemId(144138,1),	-- Ri'mok's Shattered Scale
+					modItemId(143982,1),	-- Leggings of the Frenzy
+					modItemId(144139,1),	-- Viscous Ring
+				}},
+			}),
+			e(649, {	-- Raigonn
+				["crs"] = { 56877 },	-- Raigonn
+				["sym"] = {{"select", "modItemID",
+					modItemId(144101,1),	-- Carapace Breaker
+					modItemId(144218,1),	-- Klatith, Fangs of the Swarm
+					modItemId(144140,1),	-- Impervious Carapace
+					modItemId(144104,1),	-- Shield of the Protectorate
+					modItemId(143991,1),	-- Shoulders of Engulfing Winds
+					modItemId(144141,1),	-- Drape of the Screeching Swarm
+					modItemId(143955,1),	-- Swarmbringer Chestguards
+					modItemId(144142,1),	-- Frenzyswarm Bracers
+					modItemId(144105,1),	-- Hive Protector's Gauntlets
+					modItemId(143977,1),	-- Wall-Breaker Legguards
+					modItemId(143984,1),	-- Treads of Fixation
+				}},
+			}),
+		}),
+		inst_tw(321, {	-- Mogu'shan Palace
+			e(708, {	-- Trial of the King (Ming the Cunning; 61442 Kuai the Brute, 61445 Haiyan the Unstoppable)
+				["crs"] = {
+					61445,	-- Haiyan the Unstoppable
+					61442,	-- Kuai the Brute
+					61444,	-- Ming the Cunning
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(144020,1),	-- Crest of the Clan Lords
+					modItemId(144021,1),	-- Meteoric Greathelm
+					modItemId(144144,1),	-- Whirling Dervish Choker
+					modItemId(144145,1),	-- Conflagrating Gloves
+					modItemId(144143,1),	-- Hurricane Belt
+				}},
+			}),
+			e(690, {	-- Gekkan
+				["crs"] = { 61243 },	-- Gekkan
+				["sym"] = {{"select", "modItemID",
+					modItemId(144148,1),	-- Claws of Gekkan
+					modItemId(144147,1),	-- Cloak of Cleansing Flames
+					modItemId(144149,1),	-- Hexxer's Lethargic Gloves
+					modItemId(143992,1),	-- Glintrok Sollerets
+					modItemId(144146,1),	-- Iron Protector Talisman
+				}},
+			}),
+			e(698, {	-- Xin the Weaponmaster
+				["crs"] = { 61398 },	-- Xin the Weaponmaster
+				["sym"] = {{"select", "modItemID",
+					modItemId(144150,1),	-- Ghostheart
+					modItemId(144214,1),	-- Mogu'Dar, Blade of the Thousand Slaves
+					modItemId(144154,1),	-- Firescribe Dagger
+					modItemId(144155,1),	-- Firescribe Dagger
+					modItemId(143995,1),	-- Regal Silk Shoulderpads
+					modItemId(143956,1),	-- Mind's Eye Breastplate
+					modItemId(144153,1),	-- Groundshaker Bracer
+					modItemId(144151,1),	-- Axebreaker Gauntlets
+					modItemId(143993,1),	-- Boots of Plummeting Death
+					modItemId(143994,1),	-- Soulbinder Treads
+					modItemId(144152,1),	-- Blade Trap Signet
+				}},
+			}),
+		}),
+		inst_tw(246, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Scholomance
+			e(659,   {	-- Instructor Chillheart
+				["crs"] = {
+					58633,	-- Instructor Chillheart
+					58664,	-- Instructor Chillheart's Phylactery
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(144201,2),	-- Gravetouch Greatsword
+					modItemId(144180,2),	-- Anarchist's Pendant
+					modItemId(143967,2),	-- Breastplate of Wracking Souls
+					modItemId(144200,2),	-- Shadow Puppet Bracers
+					modItemId(144202,2),	-- Icewrath Belt
+				}},
+			}),
+			e(663,   {	-- Jandice Barov
+				["crs"] = { 59184 },	-- Jandice Barov
+				["sym"] = {{"select", "modItemID",
+					modItemId(144207,2),	-- Metanoia Shield
+					modItemId(144029,2),	-- Barovian Ritual Hood
+					modItemId(144208,2),	-- Phantasmal Drape
+					modItemId(144012,2),	-- Ghostwoven Legguards
+					modItemId(144013,2),	-- Wraithplate Treads
+				}},
+			}),
+			e(665,   {	-- Rattlegore
+				["crs"] = { 59153 },	-- Rattlegore
+				["sym"] = {{"select", "modItemID",
+					modItemId(144011,2),	-- Bone Golem Boots
+					modItemId(144204,2),	-- Deadwalker Bracers
+					modItemId(144203,2),	-- Goresoaked Headreaper
+					modItemId(144205,2),	-- Necromantic Wand
+					modItemId(144206,2),	-- Rattling Gloves
+					modItemId(144015,2),	-- Vigorsteel Spaulders
+				}},
+			}),
+			n(59369, {	-- Doctor Theolen Krastinov
+				["description"] = "This is a Rare Creature and is not always present.",
+				["sym"] = {{"select", "itemID",
+					88566,	-- Krastinov's Bag of Horrors (TOY!)
+				}},
+			}),
+			e(666,   {	-- Lilian Voss
+				["crs"] = { 58722 },	-- Lilian Voss
+				["sym"] = {{"select", "modItemID",
+					modItemId(144030,2),	-- Soulburner Crown
+					modItemId(144181,2),	-- Necklace of the Dark Blaze
+					modItemId(143968,2),	-- Shivbreaker Vest
+					modItemId(144209,2),	-- Dark Blaze Gauntlets
+					modItemId(144014,2),	-- Leggings of Unleashed Anguish
+				}},
+			}),
+			e(684, {	-- Darkmaster Gandling
+				["crs"] = { 59080 },	-- Darkmaster Gandling
+				["sym"] = {{"select", "modItemID",
+					modItemId(144212,2),	-- Gloves of Explosive Pain
+					modItemId(144211,2),	-- Headmaster's Will
+					modItemId(144213,2),	-- Incineration Belt
+					modItemId(144161,2),	-- Lessons of the Darkmaster
+					modItemId(144159,2),	-- Price of Progress
+					modItemId(144160,2),	-- Searing Words
+					modItemId(144016,2),	-- Shoulderguards of Painful Lessons
+					modItemId(144210,2),	-- Tombstone Gauntlets
+					modItemId(144015,2),	-- Vigorsteel Spaulders
+				}},
+			}),
+		})),
+		inst_tw(312, {	-- Shado-Pan Monastery
+			e(673, {	-- Gu Cloudstrike
+				["crs"] = { 56747 },	-- Gu Cloudstrike
+				["sym"] = {{"select", "modItemID",
+					modItemId(144127,1),	-- Cloudstrike Pendant
+					modItemId(143961,1),	-- Azure Serpent Chestguard
+					modItemId(144126,1),	-- Star Summoner Bracers
+					modItemId(144096,1),	-- Sparkbreath Girdle
+					modItemId(143978,1),	-- Leggings of the Charging Soul
+				}},
+			}),
+			e(657, {	-- Master Snowdrift
+				["crs"] = { 56541 },	-- Master Snowdrift
+				["sym"] = {{"select", "modItemID",
+					modItemId(144110,1),	-- Snowdrift's Bladed Staff
+					modItemId(144106,1),	-- Gauntlets of Resolute Fury
+					modItemId(144097,1),	-- Quivering Heart Girdle
+					modItemId(144129,1),	-- Eye of the Tornado
+					modItemId(144128,1),	-- Heart of Fire
+				}},
+			}),
+			e(685, {	-- Sha of Violence
+				["crs"] = { 56719 },	-- Sha of Violence
+				["sym"] = {{"select", "modItemID",
+					modItemId(144099,1),	-- Crescent of Ichor
+					modItemId(144130,1),	-- Necklace of Disorientation
+					modItemId(144131,1),	-- Bladed Smoke Bracers
+					modItemId(144107,1),	-- Gloves of Enraged Slaughter
+					modItemId(143985,1),	-- Spike-Soled Stompers
+				}},
+			}),
+			e(686, {	-- Taran Zhu
+				["crs"] = { 56884 },	-- Taran Zhu
+				["sym"] = {{"select", "modItemID",
+					modItemId(144109,1),	-- Warmace of Taran Zhu
+					modItemId(144215,1),	-- Ka'eng, Breath of the Shadow
+					modItemId(144103,1),	-- Shield of Blind Hate
+					modItemId(143981,1),	-- Shadowspine Shoulderguards
+					modItemId(143962,1),	-- Hateshatter Chestplate
+					modItemId(143990,1),	-- Robes of Fevered Dreams
+					modItemId(144108,1),	-- Mindbender Plate Gloves
+					modItemId(143979,1),	-- Darkbinder Leggings
+					modItemId(143986,1),	-- Blastwalker Footguards
+					modItemId(144133,1),	-- Ring of Malice
+					modItemId(144132,1),	-- Seal of Hateful Meditation
+				}},
+			}),
+		}),
+		inst_tw(324, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 }},{	-- Siege of Niuzao Temple
+			e(693, {	-- Vizier Jin'bak
+				["crs"] = { 61567 },	-- Vizier Jin'bak
+				["sym"] = {{"select", "modItemID",
+					modItemId(144022,1),	-- Hood of Viridian Residue
+					modItemId(144162,1),	-- Engraved Amber Pendant
+					modItemId(144163,1),	-- Girdle of Soothing Detonation
+					modItemId(143996,1),	-- Sap-Encrusted Legplates
+					modItemId(144156,1),	-- Flashfrozen Resin Globule
+				}},
+			}),
+			e(738, {	-- Commander Vo'jak
+				["crs"] = { 61634 },	-- Commander Vo'jak
+				["sym"] = {{"select", "modItemID",
+					modItemId(144164,1),	-- Siege-Captain's Scimitar
+					modItemId(144023,1),	-- Sightfinder Helm
+					modItemId(143963,1),	-- Chestwrap of Arcing Flame
+					modItemId(144165,1),	-- Bombardment Bracers
+					modItemId(144166,1),	-- Archer's Precision Grips
+				}},
+			}),
+			e(692, {	-- General Pa'valak
+				["crs"] = { 61485 },	-- General Pa'valak
+				["sym"] = {{"select", "modItemID",
+					modItemId(144167,1),	-- Tempestuous Longbow
+					modItemId(144170,1),	-- Aerial Bombardment Cloak
+					modItemId(144168,1),	-- Siegeworn Bracers
+					modItemId(144169,1),	-- Breezebinder Handwraps
+					modItemId(144157,1),	-- Vial of Ichorous Blood
+				}},
+			}),
+			e(727, {	-- Wing Leader Ner'onok
+				["crs"] = { 62205 },	-- Wing Leader Ner'onok
+				["sym"] = {{"select", "modItemID",
+					modItemId(144172,1),	-- Gustwalker Staff
+					modItemId(144171,1),	-- Ner'onok's Razor Katar
+					modItemId(144219,1),	-- Tolakesh, Horn of the Black Ox
+					modItemId(144025,1),	-- Breezeswept Hood
+					modItemId(144024,1),	-- Windblast Helm
+					modItemId(143998,1),	-- Spaulders of Immovable Stone
+					modItemId(143999,1),	-- Whisperwind Spaulders
+					modItemId(143964,1),	-- Galedodger Chestguard
+					modItemId(144173,1),	-- Belt of Totemic Binding
+					modItemId(144000,1),	-- Airbender Sandals
+					modItemId(143997,1),	-- Anchoring Sabatons
+				}},
+			}),
+		})),
+		inst_tw(302, {	-- Stormstout Brewery
+			e(668, {	-- Ook-Ook
+				["crs"] = { 56637 },	-- Ook-Ook
+				["sym"] = {{"select", "modItemID",
+					modItemId(144084,1),	-- Ook's Hozen Slicer
+					modItemId(143957,1),	-- Nimbletoe Chestguard
+					modItemId(144087,1),	-- Bracers of Displaced Air
+					modItemId(143989,1),	-- Barreldodger Boots
+					modItemId(144119,1),	-- Empty Fruit Barrel
+				}},
+			}),
+			e(669, {	-- Hoptallus
+				["crs"] = { 56717 },	-- Hoptallus
+				["sym"] = {{"select", "modItemID",
+					modItemId(144092,1),	-- Bottle of Potent Potables
+					modItemId(144121,1),	-- Cloak of Hidden Flasks
+					modItemId(144088,1),	-- Bubble-Breaker Bracers
+					modItemId(144120,1),	-- Belt of Brazen Inebriation
+					modItemId(143975,1),	-- Hopping Mad Leggings
+				}},
+			}),
+			e(670, {	-- Yan-Zhu the Uncasked
+				["crs"] = { 59479 },	-- Yan-Zhu the Uncasked
+				["sym"] = {{"select", "modItemID",
+					modItemId(144124,1),	-- Wort Stirring Rod
+					modItemId(144085,1),	-- Gao's Keg Tapper
+					modItemId(144089,1),	-- Yan-Zhu's Pressure Valve
+					modItemId(143969,1),	-- Fizzy Spaulders
+					modItemId(143958,1),	-- Uncasked Chestguard
+					modItemId(144082,1),	-- Fermenting Belt
+					modItemId(143976,1),	-- Sudsy Legplates
+					modItemId(144125,1),	-- Alemental Seal
+					modItemId(144123,1),	-- Lime-Rimmed Signet
+					modItemId(144122,1),	-- Carbonic Carbuncle
+				}},
+			}),
+		}),
+		inst_tw(313, {	-- Temple of the Jade Serpent
+			e(672, {	-- Wise Mari
+				["crs"] = { 56448 },	-- Wise Mari
+				["sym"] = {{"select", "modItemID",
+					modItemId(144017,1),	-- Waterburst Helm
+					modItemId(144111,1),	-- Wind-Soaked
+					modItemId(143960,1),	-- Riverbed Chestguard
+					modItemId(143973,1),	-- Treads of Corrupted Water
+					modItemId(144112,1),	-- Crystallized Droplet
+				}},
+			}),
+			e(664, {	-- Lorewalker Stonestep
+				["crs"] = { 56843 },	-- Lorewalker Stonestep
+				["sym"] = {{"select", "modItemID",
+					modItemId(144081,1),	-- Girdle of Endemic Anger
+					modItemId(144083,1),	-- Sunheart Waistband
+					modItemId(143987,1),	-- Leggings of Whispered Dreams
+					modItemId(143974,1),	-- Stonestep Boots
+					modItemId(144113,1),	-- Windswept Pages
+				}},
+			}),
+			e(658, {	-- Liu Flameheart
+				["crs"] = { 56732 },	-- Liu Flameheart
+				["sym"] = {{"select", "modItemID",
+					modItemId(144090,1),	-- Firebelcher Hand Cannon
+					modItemId(143971,1),	-- Serpentstrike Shoulderpads
+					modItemId(144094,1),	-- Cape of Entaglement
+					modItemId(143988,1),	-- Flameheart Sandals
+					modItemId(144114,1),	-- Signet of Dancing Jade
+				}},
+			}),
+			e(335, {	-- Sha of Doubt
+				["crs"] = { 56439 },	-- Sha of Doubt
+				["sym"] = {{"select", "modItemID",
+					modItemId(144093,1),	-- Staff of Trembling Will
+					modItemId(144086,1),	-- Dubious Handaxe
+					modItemId(144216,1),	-- Je'lyu, Spirit of the Serpent
+					modItemId(144117,1),	-- Mindbreaker Pendant
+					modItemId(143972,1),	-- Doubtridden Shoulderguards
+					modItemId(143970,1),	-- Neverdare Shoulders
+					modItemId(144115,1),	-- Cloak of Failing Will
+					modItemId(143959,1),	-- Chestguard of Despair
+					modItemId(144091,1),	-- Hopecrusher Gauntlets
+					modItemId(144118,1),	-- Paralyzing Gloves
+					modItemId(144116,1),	-- Binding of Broken Dreams
+				}},
+			}),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.MOP, {
+	-- Raid not originally included with the rotation
+	-- It is expected that the raid will be Throne of Thunder.
+
+	-- Dungeons
+	303,	-- Gate of the Setting Sun
+	321,	-- Mogu'shan Palace
+	312,	-- Shado-Pan Monastery
+	302,	-- Stormstout Brewery
+	313,	-- Temple of the Jade Serpent
+
+	-- #if BEFORE 9.1.5
+	324,	-- Siege of Niuzao Temple
+	-- #endif
+});
+AddInstancesToRotation(EXPANSION.CLASSIC, {
+	-- #if AFTER 9.1.5
+	246,	-- Scholomance
+	-- #endif
+});
+
+-- Warlords of Draenor Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
+	expansion(EXPANSION.WOD, {["forcetimeline"] = { ADDED_8_1_5 }}),
+	expansion(EXPANSION.WOD, {
+		n(GROUP_FINDER, {
+			i(210062, {	-- Ironbound Satchel of Helpful Goods // Draenor TW Daily Reward
+				["description"] = "Rewarded for completing any 'Warlords of Draenor Timewalking' dungeon.\nAvailable once per day.",
+				["timeline"] = { ADDED_10_1_7 },
+				["sym"] = { { "select", "itemID", 156698 }, {"pop"} },	-- Tranquil Satchel of Helpful Goods
+			}),
+			i(187905, {	-- Boar Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss of any 'Warlords of Draenor Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
+			}),
+			i(167921, {	-- Shimmering Timewarped Crystal (A)
+				["description"] = "Drops from the last boss of any 'Warlords of Draenor Timewalking' dungeon.",
+			}),
+			i(167922, {	-- Shimmering Timewarped Crystal (H)
+				["description"] = "Drops from the last boss of any 'Warlords of Draenor Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			-- TW WoD Quest under level 80
+			q(86563, {	-- A Savage Journey Through Time
+				["qgs"] = {
+					151955,	-- Tempra
+					151987,	-- Kronnus
+				},
+				["coords"] = {
+					{ 37.0, 72.4, STORMSHIELD },
+					{ 42.8, 54.4, WARSPEAR },
+				},
+				["timeline"] = { ADDED_11_0_7 },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(55498, {	-- The Shimmering Crystal (A)
+				["provider"] = { "i", 167921 },	-- Shimmering Timewarped Crystal (A)
+				["races"] = ALLIANCE_ONLY,
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+			q(55499, {	-- The Shimmering Crystal (H)
+				["provider"] = { "i", 167922 },	-- Shimmering Timewarped Crystal (H)
+				["races"] = HORDE_ONLY,
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+		}),
+		n(VENDORS, {
+			n(151987, {	-- Kronnus <Timewalking Vendor> [Horde Side]
+				["races"] = HORDE_ONLY,
+				["coord"] = { 42.8, 54.5, WARSPEAR },
+				["groups"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+							i(109074, {	-- Fine Void-Chain Cinch
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(116765, {	-- Positive Pantaloons
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127296, {	-- Twisted Taboo Handwraps
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(116110, {	-- Zorkra's Hood
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(127304, {	-- Cave Keeper Wraps
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(113557, {	-- Dragonrider's Tinkered Leggings
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(109057, {	-- Frogskin Diving Cap
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(116834, {	-- Whitesea's Waistwrap
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(112096, {	-- Dented Ogre Skullcap
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(119372, {	-- Ironstudded Scale Girdle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(119370, {	-- Rattlekilt
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127311, {	-- Serpentine Gloves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(119382, {	-- Hershak's Heavy Legguards
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127319, {	-- Krag'goth's Iron Gauntlets
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(119384, {	-- Krud's Girthy Girdle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127320, {	-- Mo'gruth's Discarded Parade Helm
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+					}),
+					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+						i(244734, {	-- Anchorite's Crystal Torch
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244733, {	-- Aruuna Miner's Pick
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244784, {	-- Beastmaster's Lost Hatchet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244723, {	-- Blade of the Pale Flame
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244722, {	-- Bloodied Ashran Battletome
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244721, {	-- Crystalsmith's Energy Focus
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244787, {	-- Elodor Attuning Beacon
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						iensemble(234903, {	-- Ensemble: Gorgrond Cragstalker's Hunting Gear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(234901, {	-- Ensemble: Karabor Priest's Vestments
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(234904, {	-- Ensemble: Shadowmoon Anchorite's Guardplate
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(234902, {	-- Ensemble: Shattrath Artificer's Regalia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						i(244725, {	-- Frostwall Defender's Axe
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244786, {	-- Grom'gar Hunting Spear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244728, {	-- Lunarfall Rifle
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244732, {	-- Lunarfall Scout's Shortsword
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244729, {	-- Mok'gol Howling Shield
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244731, {	-- Rangari Climbing Hooks
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244730, {	-- Razorwall of the Foundry
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(234907, {	-- Tattered Iron Horde Tabard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(250777, {	-- Time-Lost Bite of the Frostwolves
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(244726, {	-- Time-Lost Sight of the Shadowmoon
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244785, {	-- Time-Lost Wolfbite, Legacy of Garad
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244776, {	-- Truesteel Gavel
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244724, {	-- Vindicator's Taladite Warmaul
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244727, {	-- Warsong Raider's Longbow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+					})),
+					filter(MISC, {
+						i(167924, {	-- Commendation of the Arakkoa Outcasts
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167928, {	-- Commendation of the Frostwolf Orcs
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167930, {	-- Commendation of the Laughing Skull Orcs
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167925, {	-- Commendation of the Order of the Awakened
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167927, {	-- Commendation of the Saberstalkers
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167926, {	-- Commendation of the Steamwheedle Preservation Society
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(168017, {	-- Commendation of Vol'jin's Headhunters
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+					filter(MOUNTS, {
+						i(167894, {	-- Beastlord's Irontusk (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(167895, {	-- Beastlord's Warwolf (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(234716, {	-- Nightfall Skyreaver's Reins (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+					}),
+					filter(TOYS, {
+						i(168012, {	-- Apexis Focusing Shard (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(168014, {	-- Banner of the Burning Blade (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
+						}),
+					}),
+					n(WEAPONS, {
+						i(119226, {	-- Blammo's Blammer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(127339, {	-- Forgotten Champion's Blade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(119396, {	-- Shadowspeaker's Shard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(113287, {	-- Shard of Scorn
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+				},
+			}),
+			n(151955, {	-- Tempra <Timewalking Vendor> [Alliance Side]
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 36.9, 72.5, STORMSHIELD },
+				["groups"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+							i(109074, {	-- Fine Void-Chain Cinch
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(116765, {	-- Positive Pantaloons
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127296, {	-- Twisted Taboo Handwraps
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(116110, {	-- Zorkra's Hood
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(127304, {	-- Cave Keeper Wraps
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(113557, {	-- Dragonrider's Tinkered Leggings
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(109057, {	-- Frogskin Diving Cap
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(116834, {	-- Whitesea's Waistwrap
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(112096, {	-- Dented Ogre Skullcap
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(119372, {	-- Ironstudded Scale Girdle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(119370, {	-- Rattlekilt
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127311, {	-- Serpentine Gloves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(119382, {	-- Hershak's Heavy Legguards
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127319, {	-- Krag'goth's Iron Gauntlets
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(119384, {	-- Krud's Girthy Girdle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(127320, {	-- Mo'gruth's Discarded Parade Helm
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+					}),
+					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+						i(244734, {	-- Anchorite's Crystal Torch
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244733, {	-- Aruuna Miner's Pick
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(234906, {	-- Auchenai Tabard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+							["minReputation"] = { FACTION_COUNCIL_OF_EXARCHS, EXALTED },
+						}),
+						i(244784, {	-- Beastmaster's Lost Hatchet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244723, {	-- Blade of the Pale Flame
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244722, {	-- Bloodied Ashran Battletome
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244721, {	-- Crystalsmith's Energy Focus
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244787, {	-- Elodor Attuning Beacon
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						iensemble(234903, {	-- Ensemble: Gorgrond Cragstalker's Hunting Gear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(234901, {	-- Ensemble: Karabor Priest's Vestments
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(234904, {	-- Ensemble: Shadowmoon Anchorite's Guardplate
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(234902, {	-- Ensemble: Shattrath Artificer's Regalia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						i(244725, {	-- Frostwall Defender's Axe
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244786, {	-- Grom'gar Hunting Spear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244728, {	-- Lunarfall Rifle
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244732, {	-- Lunarfall Scout's Shortsword
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244729, {	-- Mok'gol Howling Shield
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244731, {	-- Rangari Climbing Hooks
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244730, {	-- Razorwall of the Foundry
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(234907, {	-- Tattered Iron Horde Tabard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(250777, {	-- Time-Lost Bite of the Frostwolves
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_2_5 },
+						}),
+						i(244726, {	-- Time-Lost Sight of the Shadowmoon
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244785, {	-- Time-Lost Wolfbite, Legacy of Garad
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244776, {	-- Truesteel Gavel
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244724, {	-- Vindicator's Taladite Warmaul
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244727, {	-- Warsong Raider's Longbow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+					})),
+					filter(MISC, {
+						i(167924, {	-- Commendation of the Arakkoa Outcasts
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167929, {	-- Commendation of the Council of Exarchs
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(168018, {	-- Commendation of the Hand of the Prophet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167925, {	-- Commendation of the Order of the Awakened
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167927, {	-- Commendation of the Saberstalkers
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167932, {	-- Commendation of the Sha'tari Defense
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(167926, {	-- Commendation of the Steamwheedle Preservation Society
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+					filter(MOUNTS, {
+						i(167894, {	-- Beastlord's Irontusk (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(167895, {	-- Beastlord's Warwolf (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(234716, {	-- Nightfall Skyreaver's Reins (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+					}),
+					filter(TOYS, {
+						i(168012, {	-- Apexis Focusing Shard (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(168014, {	-- Banner of the Burning Blade (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
+						}),
+					}),
+					n(WEAPONS, {
+						i(119226, {	-- Blammo's Blammer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(127339, {	-- Forgotten Champion's Blade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(119396, {	-- Shadowspeaker's Shard
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(113287, {	-- Shard of Scorn
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw_wod(547, {	-- Auchindoun
+			e(1185, {	-- Vigilant Kaathar
+				["crs"] = { 75839 },
+			}),
+			e(1186, {	-- Soulbinder Nyami
+				["crs"] = { 76177 },
+			}),
+			e(1216, {	-- Azzakel
+				["crs"] = { 75927 },
+			}),
+			e(1225, {	-- Teron'gor
+				["crs"] = { 77734 },
+			}),
+		}),
+		inst_tw_wod(385, {	-- Bloodmaul Slag Mines
+			e(888, {	-- Slave Watcher Crushto
+				["crs"] = { 74787 },	-- Slave Watcher Crushto
+			}),
+			e(893, {	-- Magmolatus
+				["crs"] = {
+					74366,	-- Forgemaster Gog'duh
+					74475,	-- Magmolatus
+				},
+			}),
+			e(887, {	-- Roltall
+				["crs"] = { 75786 },	-- Roltall
+			}),
+			e(889, {	-- Gug'rokk
+				["crs"] = { 74790 },	-- Gug'rokk
+			}),
+		}),
+		inst_tw_wod(536, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Grimrail Depot
+			e(1138, {	-- Rocketspark and Borka
+				["crs"] = {
+					77816,	-- Borka the Brute
+					77803,	-- Railmaster Rocketspark
+				},
+			}),
+			e(1163, {	-- Nitrogg Thundertower
+				["crs"] = {
+					79545,	-- Nitrogg Thundertower
+					79548,	-- Assault Cannon
+				},
+			}),
+			e(1133, {	-- Skylord Tovra
+				["crs"] = { 80005 },	-- Skylord Tovra
+			}),
+		})),
+		inst_tw_wod(558, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 }},{	-- Iron Docks
+			e(1235, {	-- Fleshrender Nok'gar
+				["crs"] = {
+					81297,	-- Dreadfang
+					81305,	-- Fleshrender Nok'gar
+				},
+			}),
+			e(1236, {	-- Grimrail Enforcers
+				["crs"] = {
+					80816,	-- Ahri'ok Dugru
+					80805,	-- Makogg Emberblade
+					80808,	-- Neesa Nox
+				},
+			}),
+			e(1237, {	-- Oshir
+				["crs"] = { 79852 },	-- Oshir
+			}),
+			e(1238, {	-- Skulloc
+				["crs"] = {
+					83613,	-- Koramar
+					83612,	-- Skulloc
+					83616,	-- Zoggosh
+				},
+			}),
+		})),
+		inst_tw_wod(537, {	-- Shadowmoon Burial Grounds
+			e(1139, {	-- Sadana Bloodfury
+				["crs"] = { 75509 },
+			}),
+			e(1168, {	-- Nhallish
+				["crs"] = { 75829 },
+			}),
+			e(1140, {	-- Bonemaw
+				["crs"] = { 75452 },
+			}),
+			e(1160, {	-- Ner'zhul
+				["crs"] = { 76407 },
+			}),
+		}),
+		inst_tw_wod(476, {	-- Skyreach
+			e(965, {	-- Ranjit
+				["crs"] = { 75964 },
+			}),
+			e(966, {	-- Araknath
+				["crs"] = { 76141 },
+			}),
+			e(967, {	-- Rukhran
+				["crs"] = { 76143 },
+			}),
+			e(968, {	-- High Sage Viryx
+				["crs"] = { 76266 },
+			}),
+		}),
+		inst_tw_wod(556, {	-- The Everbloom
+			e(1214, {	-- Witherbark
+				["crs"] = { 81522 },	-- Witherbark
+			}),
+			e(1207, {	-- Ancient Protectors
+				["crs"] = {
+					83894,	-- Dulhu
+					83893,	-- Earthshaper Telu
+					83892,	-- Life Warden Gola
+				},
+			}),
+			e(1209, {	-- Xeri'tac
+				["crs"] = {
+					84666,	-- Xeri'tac (before pulling)
+					84550,	-- Xeri'tac
+				},
+			}),
+			e(1208, {	-- Archmage Sol
+				["crs"] = { 82682 },	-- Archmage Sol
+			}),
+			e(1210, {	-- Yalnu
+				["crs"] = { 83846 },	-- Yalnu
+			}),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.WOD, {
+	-- Raid not originally included with the rotation
+	-- It is expected that the raid will be Blackrock Foundry.
+
+	-- Dungeons
+	547,	-- Auchindoun
+	385,	-- Bloodmaul Slag Mines
+	537,	-- Shadowmoon Burial Grounds
+	476,	-- Skyreach
+	556,	-- The Everbloom
+
+	-- #if AFTER 9.1.5
+	536,	-- Grimrail Depot
+	-- #else
+	558,	-- Iron Docks
+	-- #endif
+});
+
+-- Legion Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
+	expansion(EXPANSION.LEGION, {["forcetimeline"] = { ADDED_9_1_5 }}),
+	expansion(EXPANSION.LEGION, {
+		n(GROUP_FINDER, {
+			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
+				["description"] = "Rewarded for completing any 'Legion Timewalking' dungeon.\nAvailable once per day.",
+				["timeline"] = { ADDED_10_1_7 },
+				["groups"] = {
+					i(113788),	-- Blossoming Belt*
+					i(113764),	-- Blossoming Cap*
+					i(113766),	-- Blossoming Gloves*
+					i(113767),	-- Blossoming Mantle*
+					i(113765),	-- Blossoming Robe*
+					i(113787),	-- Blossoming Slippers*
+					i(113772),	-- Firecracker Belt*		— 12/27/21
+					i(113770),	-- Firecracker Boots*		— 12/27/21
+					i(113731),	-- Firecracker Cap*			— 12/27/21
+					un(REMOVED_FROM_GAME, i(113773)),	-- Firecracker Girdle
+					i(113746),	-- Firecracker Gloves*		— 12/27/21
+					un(REMOVED_FROM_GAME, i(113733)),	-- Firecracker Helm
+					i(113752),	-- Firecracker Mantle*		— 12/27/21
+					un(REMOVED_FROM_GAME, i(113771)),	-- Firecracker Slippers
+					i(113740),	-- Firecracker Tunic*		— 12/27/21
+					un(REMOVED_FROM_GAME, i(113730)),	-- Venomtail Helm
+					i(113753),	-- Venomtail Shoulderguards*— 01/14/22
+					i(113741),	-- Venomtail Chestguard*	— 01/14/22
+					i(113747),	-- Venomtail Gauntlets*		— 01/14/22
+					i(113779),	-- Venomtail Girdle			— 01/14/22
+					un(REMOVED_FROM_GAME, i(113778)),	-- Venomtail Belt
+					i(113777),	-- Venomtail Boots			— 01/14/22
+					un(REMOVED_FROM_GAME, i(113776)),	-- Venomtail Treads
+					i(113732),	-- Venomtail Visor			— 01/14/22
+					i(113738),	-- Kyparite Chestguard
+					un(REMOVED_FROM_GAME, i(113784)),	-- Kyparite Belt
+					un(REMOVED_FROM_GAME, i(113782)),	-- Kyparite Boots
+					i(113785),	-- Kyparite Girdle*			— confirmed by Reaperman on discord on April 20, 2020 (blaze it)
+					i(113744),	-- Kyparite Gauntlets		- confirmed by Archvile June 02 2020
+					i(113729),	-- Kyparite Headguard
+					un(REMOVED_FROM_GAME, i(113728)),	-- Kyparite Helm
+					i(113783),	-- Kyparite Stompers*
+					i(113750),	-- Kyparite Shoulderguards*
+					i(113735),	-- Drifting Cloud Necklace*	— 01/14/22
+					i(113755),	-- Ring of Flowing Water*	— 01/14/22
+					i(113734),	-- Tranquil Breeze Pendant of the Peerless	— 01/14/22
+					i(113756),	-- Loop of Inner Clarity*	— 01/14/22
+				},
+			}),
+			i(187906, {	-- Owl Serpent Soul (SS!)
+				["description"] = "Can drop from the last boss of any 'Legion Timewalking' dungeon if you are aligned with the 'Night Fae Covenant'.",
+			}),
+			i(187611, {	-- Whispering Felflame Crystal
+				["description"] = "Drops from the last boss of any 'Legion Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			-- TW Legion Quest under level 80
+			q(86564, {	-- A Fel Journey Through Time
+				["provider"] = { "n", 180899 },	-- Aridormi
+				["coord"] = { 68.6, 49.2, LEGION_DALARAN },
+				["timeline"] = { ADDED_11_0_7 },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(64710, {	-- Whispering Felflame Crystal
+				["provider"] = { "i", 187611 },	-- Whispering Felflame Crystal
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+		}),
+		n(VENDORS, {
+			n(180899, {	-- Aridormi <Timewalking Vendor>
+				["coord"] = { 68.60, 49.20, LEGION_DALARAN },
+				["groups"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+							i(187580, {	-- Nar'thalas Ceremonial Legwraps
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187579, {	-- Nar'thalas Ceremonial Tunic
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187581, {	-- Nar'thalas Scrollmantle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(187583, {	-- Thorignir Breeches
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187582, {	-- Thorignir Heartguard
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187584, {	-- Thorignir Spaulders
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(187585, {	-- Leyguard Cuirass
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187586, {	-- Leyguard Greaves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187587, {	-- Leyguard Mantle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(187588, {	-- Black Rook Elite Chestguard
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187589, {	-- Black Rook Elite Legguards
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(187590, {	-- Black Rook Elite Shoulderplates
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+						}),
+					}),
+					filter(COSMETIC, {
+						i(244836, {	-- Cane of the Runic Wanderer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(234954, {	-- Corrupted Knot
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234952, {	-- Crux of Blind Faith
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_0_7, REMOVED_11_1_5 },	-- EU users have reported it absent from the vendor (?)
+						}),
+						i(234953, {	-- Edge of the First Blade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_0_7, REMOVED_11_1_5 },	-- EU users have reported it absent from the vendor (?)
+						}),
+						iensemble(234946, {	-- Ensemble: Broken Shore Battlemender's Gear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(234947, {	-- Ensemble: Drake Hunter's Kit
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(234948, {	-- Ensemble: Drekirjar Warrior's Battlegear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(234945, {	-- Ensemble: Invasion Stalker's Guise
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						iensemble(188209, {	-- Ensemble: Ravencrest's Battleplate
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(234958, {	-- Fenryr's Bloodstained Fang
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234955, {	-- Hate-Sculpted Magma
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(244834, {	-- Hippogryph Lancer's Magespear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(234949, {	-- Howling Echoes
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(234959, {	-- Key to the Halls
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(244830, {	-- Krokuun Tunneler's Axe
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244837, {	-- Mage-Forged Dragonblade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(234957, {	-- Monstrous Gluttony
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(244828, {	-- Nightforged Spellblade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(227294, {	-- Ravencrest's Wrath
+							["modID"] = 14,
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(187562, {	-- Replica Aegis of Aggramar
+							["cost"] = { { "c", TIMEWARPED_BADGE, 3000 } },
+						}),
+						i(234956, {	-- Rod of Crystalline Energies
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(244823, {	-- Silver Dragonblade of the Resistance
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(227287, {	-- Skovald's Resolve
+							["modID"] = 14,
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+						i(244833, {	-- Stonedark Chieftain's Bartered Tool
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244824, {	-- Time-Lost Dreadbow of the Banshee
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+						i(244827, {	-- Valarjar Sparring Buckler
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_11_1_7 },
+						}),
+					}),
+					filter(MISC, {
+						i(152960, {	-- Argussian Reach Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(152957, {	-- Army of the Light Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(146943, {	-- Court of Farondis Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(146942, {	-- Dreamweaver Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(146944, {	-- Highmountain Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(146950, {	-- Legionfall Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(146946, {	-- Nightfallen Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(146941, {	-- Valarjar Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(146945, {	-- Wardens Insignia
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						-- Materials
+						i(187598, {	-- Broken Isles Cloth Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+						}),
+						i(187604, {	-- Broken Isles Enchantment Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+						}),
+						i(187597, {	-- Broken Isles Fish Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							["groups"] = {
+								i(138777),	-- Drowned Mana
+							},
+						}),
+						i(187605, {	-- Broken Isles Gem Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+						}),
+						i(187599, {	-- Broken Isles Herb Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+						}),
+						i(187601, {	-- Broken Isles Leather Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+						}),
+						i(187596, {	-- Broken Isles Meat Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							["groups"] = {
+								i(151653),	-- Broken Isles Recipe Scrap
+							},
+						}),
+						i(187600, {	-- Broken Isles Ore Delivery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+						}),
+						i(141018, {	-- Sargerei Blood Vessel
+							["cost"] = { { "c", TIMEWARPED_BADGE, 150 } },
+							["groups"] = {
+								i(124124),	-- Blood of Sargeras
+							},
+						}),
+					}),
+					filter(MOUNTS, {
+						i(187595, {	-- Val'sharah Hippogryph (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(234721, {	-- Ur'zul Fleshripper Bridle (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+					}),
+					filter(TOYS, {
+						i(187591, {	-- Nightborne Guard's Vigilance (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(207114, {	-- Grimoire of the Fiendish Imp (CI!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					}),
+					n(WEAPONS, {
+						i(187566, {	-- Arcsmasher
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(187565, {	-- Argussian Reach Longbow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(187567, {	-- Nightborne Arcsaber
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(187564, {	-- Nightborne Arcshield
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+						}),
+						i(187563, {	-- Suramar Guard's Shield
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+						}),
+						i(187578, {	-- Warpcaster's Staff
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(740, {	-- Black Rook Hold
+			e(1518, {	-- Amalgam of Souls
+				["crs"] = { 98542 },	-- Amalgam of Souls
+				["sym"] = {{"select", "modItemID",
+					modItemId(136714,1),	-- Amalgam's Seventh Spine
+					modItemId(136976,1),	-- Etheldrin's Breastplate
+					modItemId(134437,1),	-- Harrowing Soulspun Bracers
+					modItemId(134469,1),	-- Midnight Reaper Handwraps
+					modItemId(139242,1),	-- Raven's Vil Gloves
+					modItemId(139246,1),	-- Ravencourt Formal Robes
+					modItemId(139241,1),	-- Rook Footman's Warboots
+					modItemId(139245,1),	-- Shadow Archer's Spaulders
+					modItemId(136977,1),	-- Shadowfeather Shawl
+					modItemId(134442,1),	-- Tooled Rivermoor Boots
+				}},
+			}),
+			e(1653, {	-- Illysanna Ravencrest
+				["crs"] = { 98696 },	-- Illysanna Ravencrest
+				["sym"] = {{"select", "modItemID",
+					modItemId(134412,1),	-- Cloak of Unwavering Loyalty
+					modItemId(136978,1),	-- Ember of Nullification
+					modItemId(134519,1),	-- Ravencrest Bonecrush Gauntlets
+					modItemId(134490,1),	-- Ring of Contempt
+					modItemId(134419,1),	-- Slippers of Heedless Sacrifice
+					modItemId(136724,1),	-- Soul-Torn Fury Cinch
+					modItemId(134440,1),	-- Soulstarve Hood
+				}},
+			}),
+			e(1664, {	-- Smashspite the Hateful
+				["crs"] = { 98949 },	-- Smashspite the Hateful
+				["sym"] = {{"select", "modItemID",
+					modItemId(134528,1),	-- Band of Callous Dominance
+					modItemId(134426,1),	-- Collar of Raking Claws
+					modItemId(134483,1),	-- Fel-Hammered Greaves
+					modItemId(134373,1),	-- Felbat Leather Vest
+					modItemId(134507,1),	-- Leadfoot Earthshakers
+					modItemId(134390,1),	-- Mardum Chain Vest
+					modItemId(134391,1),	-- Netherwhisper Cinch
+					modItemId(134362,1),	-- Portalguard Wristguard
+					modItemId(136979,1),	-- Shorn Batbrood Cuffs
+					modItemId(136715,1),	-- Spiked Counterweight
+				}},
+			}),
+			e(1672, {	-- Lord Kur'talos Ravencrest
+				["crs"] = {
+					98970,	-- Dantalionax
+					98965,	-- Kur'talos Ravencrest
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(136716,1),	-- Caged Horror
+					modItemId(136770,1),	-- Drape of the Raven Lord
+					modItemId(134370,1),	-- Felbat Leather Leggings
+					modItemId(134431,1),	-- Latosius's Blasting Gloves
+					modItemId(134384,1),	-- Madrum Chain Wristclamp
+					modItemId(134451,1),	-- Legguards of Endless Horrors
+					modItemId(134394,1),	-- Netherwhisper Leggings
+					modItemId(134510,1),	-- Pauldrons of Ancient Command
+					modItemId(134358,1),	-- Portalguard Helm
+					modItemId(134499,1),	-- Raven Filigree Pendant
+					modItemId(139243,1),	-- Raven's Veil Belt
+					modItemId(139247,1),	-- Ravencourt Formal Mantle
+					modItemId(134477,1),	-- Ravencrest's Unerring Striders
+					modItemId(139240,1),	-- Rook Footman's Legplates
+					modItemId(139244,1),	-- Shadow Archer's Helm
+				}},
+			}),
+		}),
+		inst_tw(800, {	-- Court of Stars
+			e(1718, {	-- Patrol Captain Gerdo
+				["crs"] = { 104215 },	-- Patrol Captain Gerdo
+				["sym"] = {{"select", "modItemID",
+					modItemId(134268,2),	-- Arcane Defender's Gauntlets
+					modItemId(134415,2),	-- Arcanist's Resonant Robes
+					modItemId(137483,2),	-- Cape of the Duskwatch
+					modItemId(137482,2),	-- Duskwatch Guard's Boots
+					modItemId(134480,2),	-- Epaulets of Deceitful Intent
+					modItemId(137484,2),	-- Flask of the Solemn Night
+					modItemId(137480,2),	-- Guileful Intruder Handguards
+					modItemId(134296,2),	-- Ley Dragoon's Wristbraces
+					modItemId(134308,2),	-- Manawracker Sandals
+					modItemId(134280,2),	-- Swordsinger's Wristguards
+				}},
+			}),
+			e(1719, {	-- Talixae Flamewreath
+				["crs"] = { 104217 },	-- Talixae Flamewreath
+				["sym"] = {{"select", "modItemID",
+					modItemId(134529,2),	-- Chain of Scorched Bones
+					modItemId(134473,2),	-- Collar of Fiery Allegiance
+					modItemId(137488,2),	-- Cord of Wicked Pyromania
+					modItemId(134374,2),	-- Felbat Leather Pauldrons
+					modItemId(134460,2),	-- Fevermelt Legguards
+					modItemId(137485,2),	-- Infernal Writ
+					modItemId(134503,2),	-- Inferno Breastplate
+					modItemId(134385,2),	-- Mardum Chain Gloves
+					modItemId(134392,2),	-- Netherwhisper Hood
+					modItemId(134360,2),	-- Portalguard Shoulders
+				}},
+			}),
+			e(1720, {	-- Advisor Melandrus
+				["crs"] = { 104218 },	-- Advisor Melandrus
+				["sym"] = {{"select", "modItemID",
+					modItemId(134432,2),	-- Amice of the Unfurling Tempest
+					modItemId(134271,2),	-- Arcane Defender's Pants
+					modItemId(137489,2),	-- Arcane-Bound Gale Chain
+					modItemId(137497,2),	-- Footpads of the Swift Balestra
+					modItemId(134513,2),	-- Helmet of Reverent Loyalty
+					modItemId(134542,2),	-- Jeweled Signet of Melandrus
+					modItemId(134298,2),	-- Ley Dragoon's Stompers
+					modItemId(137498,2),	-- Luminous Bladesworn Hauberk
+					modItemId(134310,2),	-- Manawracker Bindings
+					modItemId(137499,2),	-- Roaring Breeze Waistguard
+					modItemId(137487,2),	-- Strand of the Stars
+					modItemId(137496,2),	-- Suramar Magistrate Leggings
+					modItemId(134287,2),	-- Swordsinger's Belt
+					modItemId(134447,2),	-- Veil of Unseen Strikes
+					modItemId(137486,2),	-- Windscar Whetstone
+				}},
+			}),
+		}),
+		inst_tw(762, {	-- Darkheart Thicket
+			e(1654, {	-- Archdruid Glaidalis
+				["crs"] = { 96512 },	-- Archdruid Glaidalis
+				["sym"] = {{"select", "modItemID",
+					modItemId(134487,1),	-- Arch-Druid's Tainted Seal
+					modItemId(139077,1),	-- Bramblemail Belt
+					modItemId(137301,1),	-- Corrupted Starlight
+					modItemId(137300,1),	-- Gloves of Wretched Lesions
+					modItemId(134429,1),	-- Grove Darkener's Treads
+					modItemId(139086,1),	-- Night Dreamer Crest
+					modItemId(139058,1),	-- Nightsfall Helmet
+					modItemId(134423,1),	-- Poisonroot Belt
+					modItemId(134520,1),	-- Thornscar Wristguards
+					modItemId(139071,1),	-- Tranquil Bough Vest
+				}},
+			}),
+			e(1655, {	-- Oakheart
+				["crs"] = { 103344 },	-- Oakheart
+				["sym"] = {{"select", "modItemID",
+					modItemId(134531,1),	-- Band of Twisted Bark
+					modItemId(137305,1),	-- Blighted Grasp Bracers
+					modItemId(134500,1),	-- Breastplate of Preservation
+					modItemId(121299,1),	-- Dreadhide Girdle
+					modItemId(134452,1),	-- Epaulets of Desiccated Foliage
+					modItemId(137306,1),	-- Oakheart's Gnarled Root
+					modItemId(137304,1),	-- Oakheart's Trunkwarmers
+					modItemId(121325,1),	-- Terrorweave Gloves
+					modItemId(121319,1),	-- Vilescale Helm
+					modItemId(121280,1),	-- Wracksoul Legplates
+				}},
+			}),
+			e(1656, {	-- Dresaron
+				["crs"] = { 99200 },	-- Dresaron
+				["sym"] = {{"select", "modItemID",
+					modItemId(139082,1),	-- Bramblemail Greaves
+					modItemId(137311,1),	-- Chain of the Green Flight
+					modItemId(137310,1),	-- Greatbelt of Disruption
+					modItemId(139089,1),	-- Night Dreamer Robe
+					modItemId(137312,1),	-- Nightmare Egg Shell
+					modItemId(139056,1),	-- Nightsfall Gauntlets
+					modItemId(137309,1),	-- Slipstream Shoulderpads
+					modItemId(134461,1),	-- Thermal Bindings
+					modItemId(139070,1),	-- Tranquil Bough Hood
+					modItemId(134464,1),	-- Whelp Handler's Lined Boots
+				}},
+			}),
+			e(1657, {	-- Shade of Xavius
+				["crs"] = { 99192 },	-- Shade of Xavius
+				["sym"] = {{"select", "modItemID",
+					modItemId(134448,1),	-- Ashen Satyr Leggings
+					modItemId(137321,1),	-- Burning Sky Pauldrons
+					modItemId(134405,1),	-- Cloak of Fading Echoes
+					modItemId(134504,1),	-- Curserunner Soulcrushers
+					modItemId(121293,1),	-- Dreadhide Boots
+					modItemId(134462,1),	-- Dream Bolstered Chestguard
+					modItemId(137320,1),	-- Gloves of Vile Defiance
+					modItemId(137322,1),	-- Mantle of the Resolute Champion
+					modItemId(137319,1),	-- Paranoid Sprinters
+					modItemId(134537,1),	-- Signet of the Highborne Magi
+					modItemId(121326,1),	-- Terrorweave Leggings
+					modItemId(121316,1),	-- Vilescale Bracers
+					modItemId(121276,1),	-- Wracksoul Chestplate
+					modItemId(137314,1),	-- Wristbands of Cursed Torment
+					modItemId(137315,1),	-- Writhing Heart of Darkness
+				}},
+			}),
+		}),
+		inst_tw(716, {	-- Eye of Azshara
+			e(1480, {	-- Warlord Parjesh
+				["crs"] = { 91784 },	-- Warlord Parjesh
+				["sym"] = {{"select", "modItemID",
+					modItemId(134240,1),	-- Brinewashed Leather Cowl
+					modItemId(134223,1),	-- Coralplate Chestguard
+					modItemId(134484,1),	-- Crestrider Conduit Bracers
+					modItemId(134492,1),	-- Hatecoil Commander's Amulet
+					modItemId(137362,1),	-- Parjesh's Medallion
+					modItemId(137361,1),	-- Roaring Shellbreaker Greatbelt
+					modItemId(134251,1),	-- Sea Stalker's Cinch
+					modItemId(134261,1),	-- Seawitch Gloves
+					modItemId(134441,1),	-- Shellshock Footguards
+					modItemId(137360,1),	-- Shoulderpads of Crashing Waves
+				}},
+			}),
+			e(1490, {	-- Lady Hatecoil
+				["crs"] = { 91789 },	-- Lady Hatecoil
+				["sym"] = {{"select", "modItemID",
+					modItemId(134238,1),	-- Brinewashed Leather Pants
+					modItemId(134230,1),	-- Coralplate Wristguard
+					modItemId(134433,1),	-- Cord of the Sea-Caller
+					modItemId(137364,1),	-- Crashing Oceantide Mantle
+					modItemId(134471,1),	-- Helm of Endless Dunes
+					modItemId(134505,1),	-- Horizon Line Warboots
+					modItemId(134253,1),	-- Sea Stalker's Gloves
+					modItemId(134525,1),	-- Seal of the Nazjatar Empire
+					modItemId(134263,1),	-- Seawitch Robes
+					modItemId(137367,1),	-- Stormsinger Fulmination Charge
+				}},
+			}),
+			e(1479, {	-- Serpentrix
+				["crs"] = { 91808 },	-- Serpentrix
+				["sym"] = {{"select", "modItemID",
+					modItemId(134239,1),	-- Brinewashed Leather Grips
+					modItemId(134228,1),	-- Coraplate Pauldrons
+					modItemId(134465,1),	-- Hydra Scale Sabatons
+					modItemId(134256,1),	-- Sea Stalker's Leggings
+					modItemId(134260,1),	-- Seawitch Hood
+					modItemId(134508,1),	-- Stormwake Handguards
+					modItemId(137373,1),	-- Tempered Egg of Serpentrix
+					modItemId(134438,1),	-- Tunic of the Pitiless Monstrosity
+					modItemId(137372,1),	-- Wristbands of the Swirling Deeps
+				}},
+			}),
+			e(1491, {	-- King Deepbeard
+				["crs"] = { 91797 },	-- King Deepbeard
+				["sym"] = {{"select", "modItemID",
+					modItemId(134539,1),	-- Braided Silver Ring
+					modItemId(137368,1),	-- Breastplate of Ten Lashes
+					modItemId(137369,1),	-- Giant Ornamental Pearl
+					modItemId(134514,1),	-- Keelhauler Legplates
+					modItemId(134406,1),	-- Mainsail Cloak
+					modItemId(134428,1),	-- Rising Ocean Legwraps
+					modItemId(134456,1),	-- Taut Halyard Waistband
+				}},
+			}),
+			e(1492, {	-- Wrath of Azshara
+				["crs"] = { 96028 },	-- Wrath of Azshara
+				["sym"] = {{"select", "modItemID",
+					modItemId(134532,1),	-- Band of Fused Coral
+					modItemId(134237,1),	-- Brinewashed Leather Boots
+					modItemId(137378,1),	-- Bottled Hurricane
+					modItemId(134512,1),	-- Casque of the Deep
+					modItemId(134225,1),	-- Coralplate Girdle
+					modItemId(134459,1),	-- Cuffs of the Arcane Storm
+					modItemId(134255,1),	-- Sea Stalker's Hood
+					modItemId(134259,1),	-- Seawitch Cinch
+					modItemId(134417,1),	-- Slippers of Martyrdom
+					modItemId(134497,1),	-- Stormcharged Choker
+					modItemId(134478,1),	-- Thundercrush Pauldrons
+				}},
+			}),
+		}),
+		inst_tw(767, {	-- Neltharion's Lair
+			e(1662, {	-- Rokmora
+				["crs"] = { 91003 },	-- Rokmora
+				["sym"] = {{"select", "modItemID",
+					modItemId(134481,1),	-- Boulderbuckle Strap
+					modItemId(137337,1),	-- Deepfurrow Bracers
+					modItemId(139095,1),	-- Greystone Belt
+					modItemId(139105,1),	-- Rivermane Sandals
+					modItemId(134427,1),	-- Riverride Legwraps
+					modItemId(137338,1),	-- Shard of Rokmora
+					modItemId(139121,1),	-- Skyhorn Mantle
+					modItemId(139130,1),	-- Sunfrost Wristwraps
+					modItemId(134491,1),	-- Understone Gorget
+					modItemId(137336,1),	-- Vest of Rupturing Diamonds
+				}},
+			}),
+			e(1665, {	-- Ularogg Cragshaper
+				["crs"] = { 91004 },	-- Ularogg Cragshaper
+				["sym"] = {{"select", "modItemID",
+					modItemId(134164,1),	-- Bitestone Wristwraps
+					modItemId(137341,1),	-- Cragshaper's Fitted Hood
+					modItemId(134443,1),	-- Gravelworn Handguards
+					modItemId(134530,1),	-- Loop of Vitriolic Intent
+					modItemId(137342,1),	-- Rock Solid Legplates
+					modItemId(134141,1),	-- Rockbound Sabatons
+					modItemId(134177,1),	-- Roggthread Mantle
+					modItemId(134152,1),	-- Steelgazer Hide Hood
+					modItemId(137344,1),	-- Talisman of the Cragshaper
+					modItemId(137354,1),	-- Tunic of Screaming Earth
+				}},
+			}),
+			e(1673, {	-- Naraxas
+				["crs"] = { 91005 },	-- Naraxas
+				["sym"] = {{"select", "modItemID",
+					modItemId(134524,1),	-- Band of the Wyrm Matron
+					modItemId(137348,1),	-- Gauntlets of Innumerable Barbs
+					modItemId(137349,1),	-- Naraxas' Spiked Tongue
+					modItemId(134416,1),	-- Offal Galoshes
+					modItemId(134408,1),	-- Putrid Carapace
+					modItemId(134511,1),	-- Subterranean Horror Faceguard
+					modItemId(134458,1),	-- Wristbands of Rousing Violence
+				}},
+			}),
+			e(1687, {	-- Dargrul
+				["crs"] = { 91007 },	-- Dargrul
+				["sym"] = {{"select", "modItemID",
+					modItemId(134166,1),	-- Bitestone Boots
+					modItemId(134495,1),	-- Chain of the Underking
+					modItemId(137353,1),	-- Charskin Legguards
+					modItemId(134474,1),	-- Faultline Leggings
+					modItemId(134420,1),	-- Gloves of the Mountain Conquest
+					modItemId(137357,1),	-- Mark of Dargrul
+					modItemId(134470,1),	-- Mountain Throne Coif
+					modItemId(134135,1),	-- Rockbound Chestguard
+					modItemId(134171,1),	-- Roggthread Cord
+					modItemId(137355,1),	-- Rumblestone Guantlets
+					modItemId(134455,1),	-- Sinister Ashfall Cord
+					modItemId(134154,1),	-- Steelgazer Hide Mantle
+					modItemId(134517,1),	-- Tremorguard Pauldrons
+					modItemId(137352,1),	-- Tunic of Smoldering Ire
+				}},
+			}),
+		}),
+		inst_tw(707, {	-- Vault of the Wardens
+			e(1467, {	-- Tirathon Saltheril
+				["crs"] = { 95885 },	-- Tirathon Saltheril
+				["sym"] = {{"select", "modItemID",
+					modItemId(134369,1),	-- Felbat Leather Boots
+					modItemId(137509,1),	-- Glaivemaster's Studded Grips
+					modItemId(137502,1),	-- Hood of Indignation
+					modItemId(134390,1),	-- Mardum Chain Vest
+					modItemId(137524,1),	-- Mortar Guard Shoulderplates
+					modItemId(134398,1),	-- Netherwhisper Wristguard
+					modItemId(134362,1),	-- Portalguard Wristguard
+					modItemId(137532,1),	-- Seal of Saltheril
+					modItemId(137517,1),	-- Striders of Furious Flight
+					modItemId(137537,1),	-- Tirathon's Betrayal
+				}},
+			}),
+			e(1695, {	-- Inquisitor Tormentorum
+				["crs"] = { 96015 },	-- Inquisitor Tormentorum
+				["sym"] = {{"select", "modItemID",
+					modItemId(137503,1),	-- Amice of Cruel Laughter
+					modItemId(137525,1),	-- Blood-Spattered Gauntlets
+					modItemId(137530,1),	-- Drape of Vile Misfortune
+					modItemId(137511,1),	-- Hood of the Blind Executioner
+					modItemId(137518,1),	-- Leggings of Biting Links
+					modItemId(137538,1),	-- Orb of Torment
+				}},
+			}),
+			e(1468, {	-- Ash'golm
+				["crs"] = { 95886 },	-- Ash'golm
+				["sym"] = {{"select", "modItemID",
+					modItemId(139468,1),	-- Bindings of the Windlord (rogue appearance)
+					modItemId(137510,1),	-- Charskin Mantle
+					modItemId(137526,1),	-- Crown of Ash
+					modItemId(137539,1),	-- Faulty Countermeasure
+					modItemId(137512,1),	-- Flame Juggler's Armbands
+					modItemId(137504,1),	-- Flameheart Vestment
+					modItemId(137519,1),	-- Lavabreaker Gauntlets
+					modItemId(137535,1),	-- Lavadrip Pendant
+					modItemId(137505,1),	-- Leggings of the Third Degree
+					modItemId(137523,1),	-- Magmacrusher Girdle
+					modItemId(137520,1),	-- Permafrost Waistband
+				}},
+			}),
+			e(1469, {	-- Glazer
+				["crs"] = { 95887 },	-- Glazer
+				["sym"] = {{"select", "modItemID",
+					modItemId(137516,1),	-- Collar of Blindsight
+					modItemId(137540,1),	-- Concave Reflecting Lens
+					modItemId(137513,1),	-- Girdle of Lidless Sight
+					modItemId(137506,1),	-- Gloves of Unseen Evil
+					modItemId(137536,1),	-- Pendant of the Watchful Eye
+					modItemId(137527,1),	-- Polished Jade Chestguard
+					modItemId(137533,1),	-- Ring of Minute Mirrors
+				}},
+			}),
+			e(1470, {	-- Cordana Felsong
+				["crs"] = { 95888 },	-- Cordana Felsong
+				["sym"] = {{"select", "modItemID",
+					modItemId(137522,1),	-- Bracers of Twisted Revelation
+					modItemId(137514,1),	-- Chestguard of Insidious Desire
+					modItemId(137531,1),	-- Cloak of Enthralling Darkness
+					modItemId(134371,1),	-- Felbat Leather Gloves
+					modItemId(137528,1),	-- Legguards of Illusory Burdens
+					modItemId(134386,1),	-- Mardum Chain Boots
+					modItemId(137541,1),	-- Moonlit Prism
+					modItemId(134392,1),	-- Netherwhisper Hood
+					modItemId(137529,1),	-- Pathfinders of Dark Omens
+					modItemId(134356,1),	-- Portalguard Gauntlets
+					modItemId(137508,1),	-- Shadewalker Footwraps
+					modItemId(137521,1),	-- Shoulderguards of Shunned Duty
+					modItemId(137507,1),	-- Waistband of Spiritual Doom
+					modItemId(137515,1),	-- Warden's Martial Greaves
+				}},
+			}),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.LEGION, {
+	-- Raid not originally included with the rotation
+	-- It is expected that the raid will be Nighthold.
+
+	-- Dungeons
+	740,	-- Black Rook Hold
+	800,	-- Court of Stars
+	762,	-- Darkheart Thicket
+	716,	-- Eye of Azshara
+	767,	-- Neltharion's Lair
+	707,	-- Vault of the Wardens
+});
+
+-- Battle for Azeroth Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_FOR_AZEROTH_DUNGEON_EVENT, {
+	expansion(EXPANSION.BFA, {["forcetimeline"] = { ADDED_11_1_7 }}),
+	expansion(EXPANSION.BFA, {
+		n(GROUP_FINDER, {
+			i(238790, {	-- Remnant of Azeroth (A)
+				["description"] = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
+			}),
+			i(238791, {	-- Remnant of Azeroth (H)
+				["description"] = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			-- TW BFA Quest under level 80
+			q(88808, {	-- A Scarred Journey Through Time
+				["provider"] = { "n", 239840 },	-- Churbro
+				["coords"] = {
+					{ 70.8, 17.3, BORALUS },	-- Alliance
+					{ 46.1, 94.9, DAZARALOR },	-- Horde
+				},
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+			}),
+			q(89222, {	-- Remnant of Azeroth (A)
+				["provider"] = { "i", 238790 },	-- Remnant of Azeroth (A)
+				["races"] = ALLIANCE_ONLY,
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+			q(89223, {	-- Remnant of Azeroth (H)
+				["provider"] = { "i", 238791 },	-- Remnant of Azeroth (H)
+				["races"] = HORDE_ONLY,
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+		}),
+		n(VENDORS, {
+			n(239840, {	-- Churbro <Timewalking Vendor>
+				["coords"] = {
+					{ 70.8, 17.3, BORALUS },	-- Alliance
+					{ 46.1, 94.9, ZULDAZAR },	-- Horde
+				},
+				["groups"] = {
+					n(ARMOR, {
+						filter(BACK_F, {
+							i(243569, {	-- Bloodstained Shawl of Atal'Gurub
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(243567, {	-- Cloak of the Tideguard
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(243568, {	-- Tidecaller's Ritual Cape
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(243566, {	-- Waycrest Sentry Cloak
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(CLOTH, {
+							i(243561, {	-- Ancient Nazmani Bracelet
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(243563, {	-- Tal'aman Ambassador's Amice
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(243562, {	-- Mirestained Scout's Mantle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+							i(243560, {	-- Naval Officer's Armband
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(243565, {	-- Navigator's Flagship Mantle
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+							i(243558, {	-- Stormsong Mariner's Cuff
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(243564, {	-- Boralus Cityguard Spaulders
+								["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+							}),
+							i(243559, {	-- Pilfered Wristguards of Aka'ali
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+					}),
+					filter(BATTLE_PETS, {
+						i(245543, {	-- Flotsam Harvester (PET!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
+						}),
+						i(245574, {	-- Lil' Daz'ti (PET!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
+						}),
+					}),
+					filter(COSMETIC, {
+						i(244432, {	-- 7th Legion Commander's Crest
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						i(244430, {	-- Blade of the Prophet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(244440, {	-- Blade of the Rezani Prelate
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(244427, {	-- Blood Witch's Hex Cane
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(244437, {	-- Dark Ranger's Black Bow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(244441, {	-- Dazar's Ceremonial Negotiator
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(244426, {	-- Dinomancer's Calming Rod
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						iensemble(244145, {	-- Ensemble: Ashvane Smuggler's Attire
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						iensemble(244224, {	-- Ensemble: Bloodsail Smuggler's Attire
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						iensemble(244306, {	-- Ensemble: Golden Fleet's Sailing Garb
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						iensemble(244327, {	-- Ensemble: Zocalo Merchant's Wear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						i(244428, {	-- Fang of Sethraliss
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(244438, {	-- Nazmani Blood Drinker
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(244436, {	-- Parrot King's Hook-Leg
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(244445, {	-- Razdunk's WR0-NC4 5300
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1800 } },
+						}),
+						i(244439, {	-- Stormcrook of the Faithless
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(244431, {	-- Tideguard's Blessed Gavel
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(244471, {	-- Time-Lost Tempest Caller
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(244433, {	-- Waycrest Training Buckler
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(244434, {	-- Witch-Hunter's Shortsword
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+					}),
+					filter(MISC, {
+						i(238804, {	-- Commendation of Proudmoore Admiralty
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238805, {	-- Commendation of Storm's Wake
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238816, {	-- Commendation of Talanji's Expedition
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238806, {	-- Commendation of the 7th Legion
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238821, {	-- Commendation of the Champions of Azeroth
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238819, {	-- Commendation of the Honorbound
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238803, {	-- Commendation of the Order of Embers
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238826, {	-- Commendation of the Rajani
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238823, {	-- Commendation of the Rustbolt Resistance
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238822, {	-- Commendation of the Tortollan Seekers
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238827, {	-- Commendation of the Uldum Accord
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238820, {	-- Commendation of the Unshackled
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238817, {	-- Commendation of the Voldunai
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238809, {	-- Commendation of the Waveblade Ankoan
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(238818, {	-- Commendation of the Zandalari Empire
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+					filter(MOUNTS, {
+						i(245694, {	-- Reins of the Ivory Savagemane (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(245695, {	-- Reins of the Moonlit Nightsaber (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+					}),
+					filter(TOYS, {
+						i(246227, {	-- Lightning-Blessed Spire (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(245942, {	-- Sea-Blessed Shrine (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+					}),
+					n(WEAPONS, {
+						i(244151, {	-- Ashvane Ore Crusher
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(244158, {	-- Azerite-Carved Ritual Kris
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(244157, {	-- Blessed Bulwark of Zanchul
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(244162, {	-- Bondo's Spare Mechano-Clamps
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(244156, {	-- Crackling Stormbow of the Devoted
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(244154, {	-- Freehold Boarding Halberd
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(244160, {	-- Junkyard Clobberstick
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(244161, {	-- Mugambala Champion's Axe
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(244152, {	-- Pilfered Golden Scepter
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(244153, {	-- Reclaimed Ancestral Blade of the Deeps
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(244150, {	-- Seaglass Ritual Rod
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+						}),
+						i(244155, {	-- Siren Slayer's Trident
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(244159, {	-- Tol'Dagor Pocket Shank
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(968, {	-- Atal'Dazar
+			e(2082, {	-- Priestess Alun'za
+				["crs"] = { 122967 },	-- Priestess Alun'za
+				["sym"] = {{"select", "modItemID",
+					modItemId(158321,1),	-- Wand of Zealous Purification
+					modItemId(158322,1),	-- Aureus Vessel
+					modItemId(158309,1),	-- Wristlinks of Alchemical Transfusion
+					modItemId(158306,1),	-- Belt of Gleaming Determination
+					modItemId(158347,1),	-- Cincture of Glittering Gold
+					modItemId(158313,1),	-- Legplates of Beaten Gold
+					modItemId(155861,1),	-- Embellished Ritual Sabatons
+					modItemId(158319,1),	-- My'das Talisman
+					modItemId(168146,1),	-- Sphere of Sangaurum
+				}},
+			}),
+			e(2036, {	-- Vol'kaal
+				["crs"] = { 122965 },	-- Vol'kaal
+				["sym"] = {{"select", "modItemID",
+					modItemId(159632,1),	-- Adulation Enforcer
+					modItemId(158375,1),	-- Drape of the Loyal Vassal
+					modItemId(158348,1),	-- Wraps of Everliving Fealty
+					modItemId(158317,1),	-- Gauntlets of Eternal Service
+					modItemId(159445,1),	-- Grips of the Everlasting Guardian
+					modItemId(155869,1),	-- Shambling Berserker's Leggings
+					modItemId(158320,1),	-- Revitalizing Voodoo Totem
+				}},
+			}),
+			e(2083, {	-- Rezan
+				["crs"] = { 122963 },	-- Rezan
+				["sym"] = {{"select", "modItemID",
+					modItemId(168139,1),	-- Long Regal Sinew (LW reagent, has the highest drop chance from this boss)
+					modItemId(160269,1),	-- Soulrending Claw
+					modItemId(158711,1),	-- Hallowed Ossein Longbow
+					modItemId(158713,1),	-- Disc of Indomitable Will
+					modItemId(160214,1),	-- Venerated Raptorhide Bindings
+					modItemId(155868,1),	-- Kilt of Fanatical Consumption
+					modItemId(158303,1),	-- Devilsaur Worshiper's Sandals
+					modItemId(159458,1),	-- Seal of the Regal Loa
+					modItemId(158712,1),	-- Rezan's Gleaning Eye
+					modItemId(168128,1),	-- Essence of the Regal Loa
+				}},
+			}),
+			e(2030, {	-- Yazma
+				["crs"] = { 122968 },	-- Yazma
+				["sym"] = {{"select", "modItemID",
+					modItemId(158323,1),	-- Soulrender's Fang
+					modItemId(160212,1),	-- Shadowshroud Vambraces
+					modItemId(158308,1),	-- Souldrifting Sabatons
+					modItemId(159610,1),	-- Vessel of Skittering Shadows
+				}},
+				["groups"] = {
+					i(239073),	-- Coif of the Court Spider
+					i(239071),	-- Secret Spinner's Miter
+					i(239069),	-- Soulspun Casque
+					i(239070),	-- Mantle of Fastidious Machinations
+					i(239072),	-- Loa Betrayer's Vestments
+					i(239068),	-- Spymaster's  Wrap
+				},
+			}),
+		}),
+		inst_tw(1001, {	-- Freehold
+			e(2102, {	-- Skycap'n Kragg
+				["crs"] = {
+					126832,	-- Skycap'n Kragg
+					-- Shark Bait
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(159633,1),	-- Sharkbait's Fishhook
+					modItemId(155884,1),	-- Parrotfeather Cloak
+					modItemId(159227,1),	-- Silk Cuffs of the Skycap'n
+					modItemId(159353,1),	-- Chain-Linked Safety Cord
+					modItemId(158360,1),	-- Sharkbait Harneses Girdle
+					modItemId(155862,1),	-- Kragg's Rigging Scalers
+				}},
+			}),
+			e(2093, {	-- Council o' Captains
+				["crs"] = {
+					126848,	-- Captain Eudora
+					126845,	-- Captain Jolly
+					126847,	-- Captain Raoul
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(159132,1),	-- Jolly's Boot Dagger
+					modItemId(159130,1),	-- Captain's Diplomacy
+					modItemId(158311,1),	-- Concealed Fencing Plates
+					modItemId(159356,1),	-- Raoul's Barrelhook Bracers
+					modItemId(158346,1),	-- Sailcloth Waistband
+					modItemId(159297,1),	-- Silver-Trimmed Breeches
+					modItemId(158351,1),	-- Dashing Bilge Rat Shoes
+					modItemId(158314,1),	-- Seal of Questionable
+				}},
+			}),
+			e(2094, {	-- Ring of Booty
+				["crs"] = {
+					130086,	-- Davey "Two Eyes"
+					130099,	-- Lightning
+					129699,	-- Ludwig Von Tortollan
+					126969,	-- Trothak <The Shark Puncher>
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(159634,1),	-- Jeweled Sharksplitter
+					modItemId(158305,1),	-- Sea Dog's Cuffs
+					modItemId(155892,1),	-- Bite-Resistant Chain Gloves
+					modItemId(155891,1),	-- Greasy Bacon-Grabbers
+					modItemId(155889,1),	-- Sharkhide Grips
+					modItemId(155890,1),	-- Sharktooth-Knuckled Grips
+					modItemId(158302,1),	-- Chum-Coated Leggings
+					modItemId(158361,1),	-- Sharkwater Waders
+					modItemId(158356,1),	-- Shell-Kickers
+				}},
+			}),
+			e(2095,	{	-- Harlan Sweete
+				["crs"] = { 126983 },	-- Harlan Sweete
+				["sym"] = {{"select", "modItemID",
+					modItemId(159635,1),	-- Bloody Tideturner
+					modItemId(155888,1),	-- Irontide Captain's Hat
+					modItemId(155881,1),	-- Harlan's Loaded Dice
+					modItemId(168132,1),	-- Sweete's Diamond-Studded Spyglass
+				}},
+				["groups"] = {
+					i(239058),	-- Gaping Maw Shoulderguard
+					i(239057),	-- Gold-Tasseled Epaulets
+					i(239055),	-- Irontide Captain's Hat
+					i(239059),	-- Lockjaw Shoulderplate
+					i(239056),	-- Ruffled Poet Blouse
+					i(239052),	-- Sea-Brawler's Greathelm
+					i(239053),	-- Smartly Plumed Cap
+					i(239054),	-- Sweete's Jeweled Headgear
+				},
+			}),
+		}),
+		inst_tw(1041, {	-- King's Rest
+			e(2165, {	-- The Golden Serpent
+				["crs"] = { 135322 },	-- The Golden Serpent
+				["sym"] = {{"select", "modItemID",
+					159137,	-- Gilded Serpent's Tooth
+					159413,	-- Gauntlets of the Avian Sentinel
+					159369,	-- Belt of the Consecrateed Tomb
+					159313,	-- Breechees of the Sacred Hall
+					159234,	-- Down-Lined Breeches
+					159412,	-- Auric Puddle Stompers
+					159304,	-- Goldfeather Boots
+					159617,	-- Lustrous Golden Plumage
+					168168,	-- Gilded Plume
+				}},
+			}),
+			e(2171, {	-- Mchimba the Embalmer
+				["crs"] = { 134993 },	-- Mchimba the Embalmer
+				["sym"] = {{"select", "modItemID",
+					159642,	-- Royal Purifier's Spaade
+					159667,	-- Vessel of Last Rites
+					159409,	-- Embalmer's Steadying Bracers
+					159312,	-- Desiccator's Blessed Gloves
+					160213,	-- Sepulchral Construct's Gloves
+					159459,	-- Ritual Binder's Ring
+					159618,	-- Mchimba's Ritual Bandages
+				}},
+			}),
+			e(2170, {	-- The Council of Tribes
+				["crs"] = {
+					135470,	-- Aka'ali  the Conqueror
+					135475,	-- Kula the Butcher
+					135472,	-- Zanazal the Wise
+				},
+				["sym"] = {{"select", "modItemID",
+					160216,	-- Crackling Jade Kilij
+					159136,	-- Jeweled Dagger of Subjugation
+					159643,	-- Crossbow of Forgotten Majesty
+					159288,	-- Cloak of the Restless Tribes
+					159300,	-- Kula's Butchering Wristwraps
+					159418,	-- Girdle of Pestilent Purification
+					159371,	-- Boots of the Headlong Conqueror
+					159243,	-- Sandals of Wise Voodoo
+				}},
+			}),
+			e(2172, {	-- Dazar, The First King
+				["crs"] = { 136160 },	-- King Dazar <The First>
+				["sym"] = {{"select", "modItemID",
+					159644,	-- Geti'ikku, Cut of Death
+					159645,	-- Headcracker of Supplication
+					159301,	-- Primal Dinomancer's Belt
+					168129,	-- Essence of the Troll Dynasty
+				}},
+				["groups"] = {
+					i(239047),	-- Headdress of the First Empire
+					i(239050),	-- Helm of the Raptor King
+					i(239046),	-- Loa-Blessed Chestguard
+					i(239045),	-- Mantle of Ceremonial Ascension
+					i(239051),	-- Pauldrons of the Great Unifier
+					i(239049),	-- Spaulders of Prime Emperor
+					i(239048),	-- Vest of Reverent Adoration
+				},
+			}),
+		}),
+		inst_tw(1036, {	-- Shrine of the Storm
+			e(2153, {	-- Aqu'sirr
+				["crs"] = {
+					134056,	-- Aqu'sirr
+					134828,	-- Aqualing
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(159321,1),	-- Gloves of Corrupted Water
+					modItemId(159366,1),	-- Water Shapers
+					modItemId(159239,1),	-- Aqu'sirr's Swirling Sash
+					modItemId(159420,1),	-- Stormsurger's Sabatons
+					modItemId(158318,1),	-- Murkey Cerulean Signet
+					modItemId(159619,1),	-- Briny Barnacle
+				}},
+			}),
+			e(2154, {	-- Tidesage Council
+				["crs"] = {
+					134063,	-- Brother Ironhull
+					134058,	-- Galecaller Faye
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(158371,1),	-- Seabreeze
+					modItemId(159426,1),	-- Belt of the Unrelenting Gale
+					modItemId(159419,1),	-- Ironhull's Reinforced Legplates
+					modItemId(159359,1),	-- Sea Priest's Greaves
+					modItemId(159311,1),	-- Blessing Bearer's Waders
+					modItemId(159295,1),	-- Footpads of the Serene Wake
+					modItemId(159614,1),	-- Galecaller's Boon
+				}},
+			}),
+			e(2155, {	-- Lord Stormsong
+				["crs"] = {	134060 },	-- Lord Stormsong
+				["sym"] = {{"select", "modItemID",
+					modItemId(159646,1),	-- Aq'mar, the Tidecaller
+					modItemId(159289,1),	-- Void-Drenched Cape
+					modItemId(159364,1),	-- Bindings of the Calling Depths
+					modItemId(159308,1),	-- Bracers of the Sacred Fleet
+					modItemId(159421,1),	-- Gauntlets of Total Subservience
+					modItemId(159242,1),	-- Leggings of the Drowned Lord
+				}},
+			}),
+			e(2156, {	-- Vol'zith the Whisperer
+				["crs"] = { 134069 },	-- Vol'zith the Whisperer
+				["sym"] = {{"select", "modItemID",
+					modItemId(159135,1),	-- Deep Fathom's Bite
+					modItemId(159377,1),	-- Chain of Consummate Power
+					modItemId(159620,1),	-- Conch of Dark Whispers
+				}},
+				["groups"] = {
+					i(239040),	-- Cowl of Fluid Machinations
+					i(239043),	-- Chestguard of the Deep Denizen
+					i(239042),	-- Hauberk of Sunken Despair
+					i(239044),	-- Helm of Abyssal Malevolence
+					i(239038),	-- Mantle of Void-Touched Waters
+					i(239039),	-- Stormlurker's Cowl
+					i(239041),	-- Tentacle-Laced Spaulders
+				},
+			}),
+		}),
+		inst_tw(1030, {	-- Temple of Sethraliss
+			e(2142, {	-- Adderis and Aspix
+				["crs"] = {
+					133379,	-- Adderis
+					133944,	-- Aspix
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(159636,1),	-- Staff of the Lightning Serpent
+					modItemId(158370,1),	-- Twin-Strike Polearm
+					modItemId(159380,1),	-- Arc-Glass Bindings
+					modItemId(159263,1),	-- Bindings of the Slithering Current
+					modItemId(159425,1),	-- Shard-Tipped Vambraces
+					modItemId(159317,1),	-- Whirling Dervish Sash
+					modItemId(159329,1),	-- Leggings of the Galeforce Viper
+					modItemId(159435,1),	-- Legplates of Charged Duality
+					modItemId(159388,1),	-- Sabatons of Coruscating Energy
+					modItemId(159259,1),	-- Sandswept Sandals
+				}},
+			}),
+			e(2143, {	-- Merektha
+				["crs"] = { 133384 },	-- Merektha
+				["sym"] = {{"select", "modItemID",
+					modItemId(158714,1),	-- Swarm's Eedge
+					modItemId(159637,1),	-- Snakeebite Recurvee
+					modItemId(159437,1),	-- Fangproof Gauntlets
+					modItemId(159255,1),	-- Ouroborial Sash
+					modItemId(159375,1),	-- Legguards of the Awakening Brood
+					modItemId(159327,1),	-- Sand-Shined Snakeskin Sandals
+					modItemId(162544,1),	-- Jad Phidian Band
+					modItemId(158367,1),	-- Merektha's Fang
+				}},
+			}),
+			e(2144, {	-- Galvazzt
+				["crs"] = { 133389 },	-- Galvazzt
+				["sym"] = {{"select", "modItemID",
+					modItemId(158369,1),	-- Galvanized Stormcrusher
+					modItemId(159664,1),	-- Bulwark of Brimming Potential
+					modItemId(159247,1),	-- Handwraps of Oscillating Polarity
+					modItemId(159442,1),	-- Sand-Scoured Greatbelt
+					modItemId(158366,1),	-- Charged Sandstone Band
+					modItemId(158374,1),	-- Tiny Eelectromental in a Jar
+					modItemId(168154,1),	-- Static Induction Matrix
+				}},
+			}),
+			e(2145, {	-- Avatar of Sethraliss
+				["crs"] = { 133392 },	-- Avatar of Sethraliss
+				["sym"] = {{"select", "modItemID",
+					modItemId(158373,1),	-- Resonating Crystal Scimitar
+					modItemId(159337,1),	-- Grips of Electrified Defense
+					modItemId(158368,1),	-- Sethraliss' Defiled Relic
+					modItemId(168131,1),	-- Essence of the Sands
+				}},
+				["groups"] = {
+					i(239031),	-- Brood Cleanser's Amice
+					i(239033),	-- Hood of the Slithering Loa
+					i(239032),	-- Robes of the Reborn Serpent
+					i(239035),	-- Sethraliss' Fanged Helm
+					i(239037),	-- C'thraxxi Binders Pauldrons
+					i(239034),	-- Corrupted Hexxer's Vestments
+					i(239036),	-- Desert Guardian's Breastplate
+				},
+			}),
+		}),
+		inst_tw(1021, {	-- Waycrest Manor
+			e(2125, {	-- Heartsbane Triad
+				["crs"] = {
+					131825,	-- Sister Briar
+					131823,	-- Sister Malady
+					131824,	-- Sister Malady
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(159133,1),	-- Jagged Iris Sica
+					modItemId(159669,1),	-- Solena's Watchful Collection
+					modItemId(159340,1),	-- Bracers of Dreadful Maladies
+					modItemId(159449,1),	-- Soulwarped Vambraces
+					modItemId(159272,1),	-- Twisted Sisters Handwraps
+					modItemId(159450,1),	-- Girdle of Burgeoning Apathy
+					modItemId(159345,1),	-- Blight Toadskin Leggings
+					modItemId(159400,1),	-- Nettle-Scarred Greaves
+					modItemId(159404,1),	-- Bramble Looped Boots
+				}},
+			}),
+			e(2126, {	-- Soulbound Goliath
+				["crs"] = { 131667 },	-- Soulbound Goliath
+				["sym"] = {{"select", "modItemID",
+					modItemId(159659,1),	-- Sinister Wicker Talons
+					modItemId(159282,1),	-- Drust-Thatched Wristwraps
+					modItemId(159399,1),	-- Thornshaper Mitts
+					modItemId(159341,1),	-- Hound-Jowl Waistband
+					modItemId(159456,1),	-- Petrified Wickerplate Greaves
+					modItemId(162548,1),	-- Thornwoven Band
+					modItemId(159630,1),	-- Balefire Branch
+				}},
+			}),
+			e(2127, {	-- Raal the Gluttonous
+				["crs"] = {
+					131863,	-- Raal the Gluttonous
+					133361,	-- Wasting Servant
+					136541,	-- Bile Oozing
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(163833,1),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
+					modItemId(159660,1),	-- Servant Splitter
+					modItemId(159294,1),	-- Raal's Bib
+					modItemId(159397,1),	-- Slaughterhouse-Chain Bracers
+					modItemId(159346,1),	-- Grubby Servant-Grabbers
+					modItemId(159285,1),	-- Bloodstained Sous Chef Pants
+					modItemId(159452,1),	-- Fatty Hooves of Gory Comfort
+					modItemId(159616,1),	-- Gore-Crusted Butcher's Block
+				}},
+			}),
+			e(2128, {	-- Lord and Lady Waycrest
+				["crs"] = {
+					131527,	-- Lord Waycrest
+					131545,	-- Lady Waycrest
+				},
+				["sym"] = {{"select", "modItemID",
+					modItemId(159661,1),	-- Soulcharmer's Bludgeon
+					modItemId(159457,1),	-- Risen Lord's Oversized Gauntlets
+					modItemId(159262,1),	-- Belt of Undying Devotion
+					modItemId(159403,1),	-- Waistguard of Deteriorating Grace
+					modItemId(159347,1),	-- Moss-Covered Wingtip Shoes
+					modItemId(158362,1),	-- Lord Waycrest's Signet
+					modItemId(159631,1),	-- Lady Waycrest's Music Box
+				}},
+			}),
+			e(2129, {	-- Gorak Tul
+				["crs"] = { 131864 },	-- Gorak Tul
+				["sym"] = {{"select", "modItemID",
+					modItemId(159662,1),	-- Blightreaper
+					modItemId(168125,1),	-- Runestone of Thros
+				}},
+				["groups"] = {
+					i(239023),	-- Amice of the Returned
+					i(239029),	-- Breastplate of the Vengeful
+					i(239027),	-- Deathslaver's Hauberk
+					i(239026),	-- Gorak Tul's Mantle
+					i(239030),	-- Pauldrons of the Horned Horror
+					i(239025),	-- Raiment of the Blighted Tribe
+					i(239024),	-- Soulfuel Headdress
+					i(239028),	-- Soulscarred Headgear
+				},
+			}),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.BFA, {
+	-- Dungeons
+	968,	-- Atal'Dazar
+	1001,	-- Freehold
+	1041,	-- King's Rest
+	1036,	-- Shrine of the Storm
+	1030,	-- Temple of Sethraliss
+	1021,	-- Waycrest Manor
+});
+
+-- Shadowlands Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWLANDS_DUNGEON_EVENT, {
+	expansion(EXPANSION.SL, {["forcetimeline"] = { ADDED_11_2_7 }}),
+	expansion(EXPANSION.SL, {
+		n(GROUP_FINDER, {
+			i(253517, {	-- The Flickering Anima (QS!)
+				["description"] = "Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			q(92647, {	-- A Shadowed Journey Through Time
+				["qg"] = 252687,	-- Collector Ta'steld
+				["coord"] = { 56.0, 63.9, ORIBOS },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(92650, {	-- The Flickering Anima
+				["provider"] = { "i", 253517 },	-- The Flickering Anima
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+		}),
+		n(VENDORS, {
+			n(252687, {	-- Collector Ta'steld <Timewalking Vendor>
+				["coords"] = {
+					{ 56.3, 63.7, ORIBOS },
+				},
+				["groups"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+							i(256359, {	-- Cowl of the Forsworn Seer
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(256351, {	-- Robe of the Forsworn Seer
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(256352, {	-- Mantle of Harmonized Spirit
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(256360, {	-- Mask of Harmonized Spirit
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(256353, {	-- Elysian Pathfinder's Mail
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(256358, {	-- Elysian Pathfinder's Visor
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(256355, {	-- Animaforged Sentinel's Helm
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(256350, {	-- Animaforged Sentinel's Plate
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+					}),
+					filter(BATTLE_PETS, {
+						i(254876, {	-- P.O.S.T. Assistant (PET!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
+						}),
+					}),
+					filter(COSMETIC, {
+						i(254855, {	-- Amice of the Dark Necromancer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 450 } },
+						}),
+						i(254872, {	-- Creator's Rod of Origin
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254858, {	-- Crossbow of the First Ones
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(258527, {	-- Greathammer of the Fallen Lightbringer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						i(258528, {	-- Greathammer of the Righteous Lightbringer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						i(254844, {	-- Hammer of the Righteous Lightbringer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254845, {	-- Hammer of the Fallen Lightbringer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254853, {	-- Lance of the Architects
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254860, {	-- Longsword of the First Ones
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(254857, {	-- Maw Executioner's Guillotine
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254851, {	-- Maw Stalker's Quiver
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
+						}),
+						i(254864, {	-- Oozeframe of the Mad Alchemist
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
+						}),
+						i(258662, {	-- Progenitor's Custodial Sentry
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(254867, {	-- Progenitor's Fix-It-Up
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(254866, {	-- Progenitor's Fractured Smasher
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254854, {	-- Putrid Necromancer Mantle
+							["cost"] = { { "c", TIMEWARPED_BADGE, 450 } },
+						}),
+						i(254862, {	-- Runeblade of the Maldraxxus Paragon
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						i(254865, {	-- Shell of the Forbidden Land
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254861, {	-- Sinstone Cleaver
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254856, {	-- Soul Harvester's Scythe
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(254852, {	-- Spirit Marksman's Quiver
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
+						}),
+						i(254863, {	-- Staff of the Penitent
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(254873, {	-- Zerith Vibroblade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+					}),
+					filter(MISC, {
+						i(254768, {	-- Commendation of Marasmius
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254774, {	-- Commendation of the Archivist's Codex
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254760, {	-- Commendation of the Ascended
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254762, {	-- Commendation of the Avowed
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254746, {	-- Commendation of the Court of Harvesters
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254763, {	-- Commendation of the Court of Night
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254771, {	-- Commendation of the Death's Advance
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254764, {	-- Commendation of the Ember Court
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254775, {	-- Commendation of the Enlightened
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254765, {	-- Commendation of the Stitchmasters
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254759, {	-- Commendation of the Undying Army
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254758, {	-- Commendation of the Wild Hunt
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(254761, {	-- Commendation of Ve'nari
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+					filter(MOUNTS, {
+						i(258515, {	-- Crimson Lupine (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(259463, {	-- Snowpaw Glimmerfur Prowler (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+					}),
+					filter(TOYS, {
+						i(256881, {	-- Steward's Bauble (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
+						}),
+						i(256893, {	-- Wretched Dredger's Brand (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
+						}),
+					}),
+					n(WEAPONS, {
+						i(256339, {	-- Anima Drinker's Rapier
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(256338, {	-- Dagger of Forgotten Vows
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(256341, {	-- Faithspire Redeemer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(256348, {	-- Fallen Ascendant's Bulwark
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(256336, {	-- Kyrian Sky Splitter
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(254868, {	-- Sacred Bell of the Ascended
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(256340, {	-- Skyguard's Longbow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(256337, {	-- The Price Adjuster
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(256349, {	-- Warglaives of Devotion
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(1188, {	-- De Other Side
+			e(2408, {	-- Hakkar the Soulflayer
+				["crs"] = { 164558 },	-- Hakkar the Soulflayer
+				["sym"] = {{"select", "itemID",
+					179328,	-- Bloodspiller
+					179331,	-- Blood-Spattered Scale
+					179326,	-- Girdle of the Soulflayer
+					179325,	-- Hakkari Revenant's Grips
+					179324,	-- Soulfeather Breeches
+					179322,	-- Windscale Moccasins
+					179330,	-- Zin'khas, Blade of the Fallen God
+				}},
+			}),
+			e(2409, {	-- The Manastorms
+				["crs"] = {
+					164556,	-- Millhouse Manastorm
+					164555,	-- Millificent Manastorm
+				},
+				["sym"] = {{"select", "itemID",
+					179338,	-- Dynamo Doomstompers
+					179335,	-- Manastorm's Magnificent Threads
+					179342,	-- Overwhelming Power Crystal
+					179336,	-- Rocket Chicken Handlers
+					179340,	-- Supercollider
+					179337,	-- Techno-Coil Legguards
+					179339,	-- Whizblast Walking Stick
+				}},
+			}),
+			e(2398, {	-- Dealer Xy'exa
+				["crs"] = { 164450 },	-- Millificent Manastorm
+				["sym"] = {{"select", "itemID",
+					179346,	-- Breastplate of Fatal Contrivances
+					179347,	-- Collector's Pulse Staff
+					179349,	-- Dealer Xy'exa's Cape
+					179344,	-- Far Traveler's Shoulderpads
+					179350,	-- Inscrutable Quantum Device
+					179343,	-- Sash of Exquisite Acquisitions
+					179345,	-- Spatial Rift Striders
+					179348,	-- Xy Cartel Crossbow
+				}},
+			}),
+			e(2410, {	-- Mueh'zala
+				["crs"] = { 166608 },	-- Mueh'zala
+				["sym"] = {{"select", "itemID",
+					182178,	-- Raptor Soul (SS!)
+					186998,	-- Pattern: Pallid Oracle Bones (RECIPE!)
+					179355,	-- Death God's Signet
+					179353,	-- Harness of Twisted Whims
+					179351,	-- Mueh'zala's Hexthread Sarong
+					179352,	-- Primeval Soul's Ankleguards
+					179354,	-- Reality-Shatter Vambraces
+					179356,	-- Shadowgrasp Totem
+				}},
+			}),
+		}),
+		inst_tw(1185, {	-- Halls of Atonement
+			e(2406, {	-- Halkias
+				["crs"] = { 165408 },	-- Halkias
+				["sym"] = {{"select", "itemID",
+					178818,	-- Halkias' Towering Pillars
+					178830,	-- Shardskin Sabatons
+					178827,	-- Sin Stained
+					178817,	-- Hood of Refracted Shadows
+					178813,	-- Sinlight Shroud
+				}},
+			}),
+			e(2387, {	-- Echelon
+				["crs"] = { 164185 },	-- Echelon
+				["sym"] = {{"select", "itemID",
+					178819,	-- Skyterror's Stonehide Leggings
+					178815,	-- Soaring Decimator's Hauberk
+					178833,	-- Stonefiend Shaper's Mitts
+					178834,	-- Stoneguardian's Morningstar
+					178812,	-- Wing Commander's Helmet
+					178825,	-- Pulsating Stoneheart
+				}},
+			}),
+			e(2411, {	-- High Adjudicator Aleez
+				["crs"] = { 165410 },	-- High Adjudicator Aleez
+				["sym"] = {{"select", "itemID",
+					178814,	-- Breastplate of Otherworldly Influence
+					178822,	-- Cord of the Dark Word
+					178832,	-- Gloves of Haunting Fixation
+					178821,	-- Mantle of Ephemeral Visages
+					178826,	-- Sunblood Amethyst
+					178828,	-- Nathrian Tabernacle
+				}},
+			}),
+			e(2413, {	-- Lord Chamberlain
+				["crs"] = { 164218 },	-- Lord Chamberlain
+				["sym"] = {{"select", "itemID",
+					178816,	-- Nathrian Usurper's Mask
+					178829,	-- Nathrian Ferula
+					178824,	-- Signet of the False Accuser
+					178831,	-- Slippers of Leavened Station
+					178823,	-- Waistcord of Dark Devotion
+					178820,	-- Pauldrons of Unleashed Pride
+				}},
+			}),
+		}),
+		inst_tw(1183, {	-- Plaguefall
+			e(2419, {	-- Globgrog
+				["crs"] = { 164255 },	-- Globgrog
+				["sym"] = {{"select", "itemID",
+					178762,	-- Blightborne Chain Legguards
+					178760,	-- Disgested Interrogator's Gaze
+					178773,	-- Plague Handler's Greathelm
+					178770,	-- Slimy Consumptive Organ
+					178756,	-- Stradama's Misplaced Slippers
+					178753,	-- Surgical Pustule Extractor
+				}},
+			}),
+			e(2403, {	-- Doctor Ickus
+				["crs"] = { 164967 },	-- Doctor Ickus
+				["sym"] = {{"select", "itemID",
+					178759,	-- Depraved Physician's Mask
+					178775,	-- Fleshfused Crushers
+					178763,	-- Malodorous Gristle-Sown Spaulders
+					178771,	-- Phial of Putrefaction
+					178752,	-- Sophisticated Bonecracker
+					178767,	-- Tortured Assistant's Bindings
+				}},
+			}),
+			e(2423, {	-- Domina Venomblade
+				["crs"] = { 164266 },	-- Domina Venomblade
+				["sym"] = {{"select", "itemID",
+					178933,	-- Arachnid Cipher Ring
+					178932,	-- Belt of Wretched Manipulations
+					178928,	-- Domina's Oozing Shiv
+					178934,	-- Fastened Venombarb Binds
+					178929,	-- Halberd of the Aranakk
+					178930,	-- Mitts of Flawless Duplication
+					178931,	-- Scarred Bloodbound Girdle
+				}},
+			}),
+			e(2404, {	-- Margrave Stradama
+				["crs"] = { 164267 },	-- Margrave Stradama
+				["sym"] = {{"select", "itemID",
+					178755,	-- Blighted Margrave's Cloak
+					178757,	-- Gloves of Obscure Rituals
+					178769,	-- Infinitely Divisible Ooze
+					178761,	-- Leggings of the Erudite Scholar
+					178774,	-- Muckwallow Stompers
+					178764,	-- Plagueborne Shoulderguards
+					178754,	-- Poxstorm, Longsword of Pestilence
+				}},
+			}),
+		}),
+		inst_tw(1189, {	-- Sanguine Depths
+			e(2388, {	-- Kryxis the Voracious
+				["crs"] = { 162100 },	-- Kryxis the Voracious
+				["sym"] = {{"select", "itemID",
+					178835,	-- Anima-Splattered Hide
+					178848,	-- Entwined Gorger Tendril
+					178844,	-- Essence Surgers Cuffs
+					178854,	-- Hungering Devourer's Twinblade
+					178836,	-- Sabatons of the Rushing Juggernaut
+					178846,	-- Shackles of Alluring Vitality
+					178853,	-- Voracious Gorger Spine
+				}},
+			}),
+			e(2415, {	-- Executor Tarvold
+				["crs"] = { 162103 },	-- Executor Tarvold
+				["sym"] = {{"select", "itemID",
+					178859,	-- Castigator's Mantle
+					178851,	-- Cloak of Enveloping Manifestations
+					178843,	-- Executor's Prideful Girdle
+					178849,	-- Overflowing Anima Prison
+					178855,	-- Sinsmasher
+					178837,	-- Sinsoaked Waders
+					178845,	-- Vambraces of the Depraved Warden
+				}},
+			}),
+			e(2421, {	-- Grand Proctor Beryllia
+				["crs"] = { 162102 },	-- Grand Proctor Beryllia
+				["sym"] = {{"select", "itemID",
+					178838,	-- Beryllia's Leggings of Endless Torment
+					178841,	-- Iron Spiked Handgrips
+					178850,	-- Lingering Sunmote
+					178847,	-- Radiant Light Binders
+					178852,	-- Vessel of Shining Radiance
+					178842,	-- Waistguard of Expurged Anguish
+				}},
+			}),
+			e(2407, {	-- General Kaal
+				["crs"] = {
+					162133,	-- General Kaal (during gauntlet)
+					162099,	-- General Kaal
+				},
+				["sym"] = {{"select", "itemID",
+					178862,	-- Bladedancer's Armor Kit
+					178860,	-- Cowl of the Devoted General
+					178861,	-- Decanter of Anima-Charged Winds
+					178840,	-- Guilewind Stone Talons
+					178856,	-- Kaal's Gloomblade
+					178857,	-- Stone General's Edge
+					178858,	-- Wicked Bladewing Pauldrons
+					178839,	-- Wind Dancer's Legguards
+				}},
+			}),
+		}),
+		inst_tw(1186, {	-- Spires of Ascension
+			e(2399, {	-- Kin-Tara
+				["crs"] = {
+					163077,	-- Azules
+					162059,	-- Kin-Tara
+				},
+				["sym"] = {{"select", "itemID",
+					180115,	-- Azure-Venom Choker
+					180100,	-- Forsworn Stalker's Hauberk
+					180109,	-- Kin-Tara's Baleful Cord
+					180097,	-- Quarterstaff of Discordant Ethic
+					180101,	-- Warboots of Ruthless Conviction
+					180103,	-- Winged Hunters' Gloves
+				}},
+			}),
+			e(2416, {	-- Ventunax
+				["crs"] = { 162058 },	-- Ventunax
+				["sym"] = {{"select", "itemID",
+					180102,	-- Dark Stride Footwraps
+					180110,	-- Dark Praetorian's Clasp
+					180104,	-- Distorted Construct's Gauntlets
+					180116,	-- Overcharged Anima Battery
+					180095,	-- Penitent Edge
+					180111,	-- Shadowhirl Waistwrap
+				}},
+			}),
+			e(2414, {	-- Oryphrion
+				["crs"] = { 162060 },	-- Oryphrion
+				["sym"] = {{"select", "itemID",
+					180105,	-- Absonant Construct's Handguards
+					180118,	-- Anima Field Emitter
+					180117,	-- Empyreal Ordnance
+					180107,	-- Purge Protocol Legwraps
+					180112,	-- The Philosopher
+					180113,	-- Thunderous Echo Vambraces
+					180106,	-- Vicious Surge Faceguard
+				}},
+			}),
+			e(2412, {	-- Devos, Paragon of Doubt
+				["crs"] = { 162061 },	-- Devos, Paragon of Doubt
+				["sym"] = {{"select", "itemID",
+					180108,	-- Abyssal Disharmony Breeches
+					180119,	-- Boon of the Archon
+					180099,	-- Breastplate of Brutal Dissonance
+					180096,	-- Devos' Cacophonous Poleaxe
+					180123,	-- Drape of Twisted Loyalties
+					180114,	-- Fallen Paragon's Armguards
+					183054,	-- Mysterious Soul Mirror
+					180098,	-- Sinister Requiem Vestments
+				}},
+			}),
+		}),
+		inst_tw(1182, {	-- The Necrotic Wake
+			e(2395, {	-- Blightbone
+				["crs"] = { 162691 },	-- Blightbone
+				["sym"] = {{"select", "itemID",
+					178732,	-- Abominable Visage
+					178735,	-- Blight Belcher
+					178733,	-- Blightbone Spaulders
+					178730,	-- Engorged Worm Smasher
+					178734,	-- Fused Bone Greatbelt
+					178736,	-- Stitchflesh's Misplaced Signet
+					178731,	-- Viscera-Stitched Footpads
+				}},
+			}),
+			e(2391, {	-- Amarth, The Harvester
+				["crs"] = { 163157 },	-- Amarth, The Harvester
+				["sym"] = {{"select", "itemID",
+					178737,	-- Amarth's Spellblade
+					178742,	-- Bottled Chimera Toxin
+					178739,	-- Legplates of Unholy Frenzy
+					178738,	-- Rattling Deadeye Hood
+					178740,	-- Reanimator's Mantle
+					178741,	-- Risen Monstrosity Cuffs
+				}},
+			}),
+			e(2392, {	-- Surgeon Stitchflesh
+				["crs"] = {
+					162689,	-- Surgeon Stitchflesh
+					164578,	-- Stitchflesh's Creation
+				},
+				["sym"] = {{"select", "itemID",
+					178750,	-- Encrusted Canopic Lid
+					178744,	-- Freshly Embalmed Jerkin
+					178748,	-- Gory Surgeon's Gloves
+					178772,	-- Satchel of Misbegotten Minions
+					178751,	-- Spare Meat Hook
+					178743,	-- Stitchflesh's Scalpel
+					178745,	-- Striders of Restless Malice
+					178749,	-- Vile Butcher's Pauldrons
+				}},
+			}),
+			e(2396, {	-- Nalthor the Rimebinder
+				["crs"] = { 162693 },	-- Nalthor the Rimebinder
+				["sym"] = {{"select", "itemID",
+					178777,	-- Dark Frost Helmet
+					178778,	-- Lichbone Legguards
+					178782,	-- Necropolis Lord's Shackles
+					178780,	-- Rimebinder's Runeblade
+					178781,	-- Ritual Commander's Ring
+					178783,	-- Siphoning Phylactery Shard
+					178779,	-- Undying Chill Shoulderpads
+				}},
+			}),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.SL, {
+	-- Dungeons
+	1188,	-- De Other Side
+	1185,	-- Halls of Atonement
+	1183,	-- Plaguefall
+	1189,	-- Sanguine Depths
+	1186,	-- Spires of Ascension
+	1182,	-- The Necrotic Wake
+});
+
+
+-- Dragonflight Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONFLIGHT_DUNGEON_EVENT, {
+	expansion(EXPANSION.DF, {["forcetimeline"] = { ADDED_12_0_7 }}),
+	expansion(EXPANSION.DF, {
+		n(GROUP_FINDER, {
+			i(262918, {	-- Lost Iridescent Flightstone (QS!)
+				["description"] = "Drops from the last boss of any 'Dragonflight Timewalking' dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			q(93495, {	-- A Soaring Journey Through Time
+				["qg"] = 255019,	-- Xydan <Timewalking Vendor>
+				["coord"] = { 81.5, 47.2, VALDRAKKEN },
+				["lockCriteria"] = { 1, "lvl", 80 },
+				["isWeekly"] = true,
+				["groups"] = { i(232877) },	-- Timely Goodie Bag
+			}),
+			q(93497, {	-- A Soaring Path Through Time
+				["qgs"] = {
+					255019,	-- Xydan <Timewalking Vendor>
+					256212,	-- Archmage Aethas Sunreaver
+				},
+				["coords"] = {
+					{ 48.7, 64.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					{ 81.5, 47.2, VALDRAKKEN },
+				},
+				["isWeekly"] = true,
+				["lvl"] = 80,
+				["groups"] = { i(250116) },	-- Cache of Quel'Thalas Treasures
+			}),
+			q(93852, {	-- Lost Iridescent Flightstone
+				["provider"] = { "i", 262918 },	-- Lost Iridescent Flightstone (QS!)
+				["isWeekly"] = true,
+				["groups"] = { currency(TIMEWARPED_BADGE) },
+			}),
+		}),
+		n(VENDORS, {
+			n(255019, {	-- Xydan <Timewalking Vendor>
+				["coord"] = { 81.5, 47.2, VALDRAKKEN },
+				["groups"] = {
+					n(ARMOR, {
+						filter(CLOTH, {
+							i(262379, {	-- Chronomental Halfgloves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262383, {	-- Ohn'ir Initiate Leggings
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(FINGER_F, {
+							i(262386, {	-- Bronze Drake's Promise
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262387, {	-- Silver Keeper's Band
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262388, {	-- Vaultkeeper's Signet
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(LEATHER, {
+							i(262378, {	-- Chronomental Grips
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262382, {	-- Teerai Watcher Breeches
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(MAIL, {
+							i(262381, {	-- Chronomental Gloves
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262384, {	-- Shikaar Scout Breeches
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+						filter(PLATE, {
+							i(262380, {	-- Chronomental Gauntlets
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+							i(262385, {	-- Nokhud Reaver Legplates
+								["cost"] = { { "c", TIMEWARPED_BADGE, 25 } },
+							}),
+						}),
+					}),
+					filter(BATTLE_PETS, {
+						i(260885, {	-- Shadowflame Remnant (PET!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2200 } },
+						}),
+					}),
+					filter(COSMETIC, {
+						i(260920, {	-- Emergency Landing Kit
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
+						}),
+						i(260917, {	-- Infinite Broodkeeper's Greatstaff
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(260923, {	-- Infinite Timeslicer
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(260921, {	-- Khan's Ceremonial Crossbow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1500 } },
+						}),
+						i(260919, {	-- Scavenger's Banner
+							["cost"] = { { "c", TIMEWARPED_BADGE, 600 } },
+						}),
+						iensemble(260915, {	-- Arsenal: Found Plunder Key
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						iensemble(260914, {	-- Arsenal: Lost Plunder Key
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1200 } },
+						}),
+						iensemble(260946, {	-- Ensemble: Dragonstone Shoulderguards
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						iensemble(260944, {	-- Ensemble: Pristine Draconic Scholar's Finery
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						iensemble(260945, {	-- Ensemble: Razorscale Pauldrons
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+						iensemble(260926, {	-- Ensemble: Shadowflame-Seared Druidic Garb
+							["cost"] = { { "c", TIMEWARPED_BADGE, 4000 } },
+						}),
+						iensemble(260899, {	-- Ensemble: Time-Lost Earthwarden's Battlegear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2500 } },
+						}),
+						iensemble(260941, {	-- Ensemble: Winter's Dreaming Garb
+							["cost"] = { { "c", TIMEWARPED_BADGE, 2000 } },
+						}),
+					}),
+					filter(MISC, {
+						i(258841, {	-- Commendation of the Dragonscale Expedition
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258846, {	-- Commendation of the Dream Wardens
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258843, {	-- Commendation of the Iskaara Tuskarr
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258845, {	-- Commendation of the Loamm Niffen
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258842, {	-- Commendation of the Maruuk Centaur
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(258844, {	-- Commendation of the Valdrakken Accord
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+					}),
+					filter(MOUNTS, {
+						i(210140, {	-- Black-Furred Bakar (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+						i(192778, {	-- Liquid Hot Magma Slug (MOUNT!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 5000 } },
+						}),
+					}),
+					n(MOUNT_MODS, {
+						i(196993, {	-- Cliffside Wylderdrake: Sleek Horns (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(210478, {	-- Flourishing Whimsydrake: Gold and Pink Armor (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(207757, {	-- Grotto Netherwing Drake: Purple and Silver Armor (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+						i(207777, {	-- Grotto Netherwing Drake: Yellow Scales (MM!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+					}),
+					filter(TOYS, {
+						i(259899, {	-- Ashen Horn of the Fallen Keeper (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 750 } },
+						}),
+						i(260170, {	-- Oathstone Fragment (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 500 } },
+						}),
+						i(259335, {	-- Photo Finisher (TOY!)
+							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
+						}),
+					}),
+					n(WEAPONS, {
+						i(262368, {	-- Centaur Battleglaive
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262359, {	-- Djaradin Sparring Spear
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262364, {	-- Drakonid Stabber
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262363, {	-- Expeditioner's Mallet
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262362, {	-- Expeditioner's Spellblade
+							["cost"] = { { "c", TIMEWARPED_BADGE, 50 } },
+						}),
+						i(262366, {	-- Headmaster's Emberstaff
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262365, {	-- Maruuk Hunting Bow
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262361, {	-- Rothide Crusher
+							["cost"] = { { "c", TIMEWARPED_BADGE, 100 } },
+						}),
+						i(262367, {	-- Slumbering Guardian's Bulwark
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+						}),
+						i(262360, {	-- Storyteller's Verses
+							["cost"] = { { "c", TIMEWARPED_BADGE, 35 } },
+						}),
+					}),
+				},
+			}),
+		}),
+		inst_tw(1201, {	-- Algeth'ar Academy
+			e(2509, {	-- Vexamus
+					["crs"] = {
+						189668,	-- Professor Madormu
+						195416,	-- Magic Book
+						194181,	-- Vexamus
+					},
+					["sym"] = {{"select", "itemID",
+						193708,	-- Platinum Star Band
+						193711,	-- Spellbane Cutlass
+						193710,	-- Spellboon Saber
+						193709,	-- Vexamus' Expulsion Rod
+					}},
+				}),
+				e(2512, {	-- Overgrown Ancient
+					["crs"] = { 196482 },	-- Overgrown Ancient
+					["sym"] = {{"select", "itemID",
+						193716,	-- Algeth'ar Hedgecleaver
+						193715,	-- Boots of Explosive Growth
+						193713,	-- Experimental Safety Gloves
+						193714,	-- Frenzyroot Cuffs
+						193717,	-- Mystakra's Harvester
+						193712,	-- Potion-Stained Cloak
+					}},
+				}),
+				e(2495, {	-- Crawth
+					["crs"] = { 191736 },	-- Crawth
+					["sym"] = {{"select", "itemID",
+						193722,	-- Azure Belt of Competition
+						193720,	-- Bronze Challenger's Robe
+						193719,	-- Dragon Games Equipment
+						193718,	-- Emerald Coach's Whistle
+						193723,	-- Obsidian Goaltending Spire
+						193721,	-- Ruby Contestant's Gloves
+					}},
+				}),
+				e(2514, {	-- Echo of Doragosa
+					["crs"] = { 190609 },	-- Echo of Doragosa
+					["sym"] = {{"select", "itemID",
+						197147,	-- Highland Drake: Heavy Scales (MM!)
+						197112,	-- Highland Drake: Single Horned Head (MM!)
+						198910,	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
+						260359,	-- Valdrakken Bookcase (DECOR!)
+						193701,	-- Algeth'ar Puzzle Box
+						193705,	-- Breastplate of Proven Knowledge
+						193707,	-- Final Grade
+						193703,	-- Organized Pontificator's Cap
+						193704,	-- Scaled Commencement Spaulders
+						193706,	-- Venerated Professor's Greaves
+					}},
+				}),
+		}),
+		inst_tw(1196, {	-- Brackenhide Hollow
+			e(2471, {	-- Hackclaw's War-Band
+				["crs"] = {
+					186124,	-- Gashtooth
+					186122,	-- Rira Hackclaw
+					186125,	-- Tricktotem
+				},
+				["sym"] = {{"select", "itemID",
+					193674,	-- Ancestral Stone Shaper
+					193671,	-- Bloodied Wedding Ring
+					193672,	-- Frenzying Signoll Flare
+					193675,	-- Poached Kalu'ak Spear
+					193673,	-- Ravenous Pursuer's Footwraps
+				}},
+			}),
+			e(2473, {	-- Treemouth
+				["crs"] = { 186120 },	-- Treemouth
+				["sym"] = {{"select", "itemID",
+					193654,	-- Ancient Rot Walkers
+					193657,	-- Binders of the Moldering
+					193658,	-- Crushing Bough of Deterioration
+					193653,	-- Mask of Imperishable Leaves
+					193655,	-- Rooted Shoulders of Putrefaction
+					193656,	-- Swollen Bark Clasp
+					193652,	-- Treemouth's Festering Splinter
+				}},
+			}),
+			e(2472, {	-- Gutshot
+				["crs"] = { 186116 },	-- Gutshot
+				["sym"] = {{"select", "itemID",
+					193667,	-- Boastful Stalker's Epaulets
+					193793,	-- Ferocious Hyena Hidebinders
+					193670,	-- Gutshot's Trophy Hunter
+					193669,	-- Trapmaster's Utility Belt
+					193666,	-- Tuskarr Bone Necklace
+				}},
+			}),
+			e(2474, {	-- Decatriarch Wratheye
+				["crs"] = { 186121 },	-- Decatriarch Wratheye
+				["sym"] = {{"select", "itemID",
+					197396,	-- Renewed Proto-Drake: Skyterror Pattern (MM!)
+					197598,	-- Windborne Velocidrake: Gray Hair (MM!)
+					193661,	-- Blight Weaver's Clutches
+					193665,	-- Decatriarch's Bone Pestle
+					193663,	-- Decay Mother's Wrathful Gaze
+					193662,	-- Densified Ooze Tassets
+					193660,	-- Idol of Pure Decay
+					193664,	-- Rot-Carved Totemic Shank
+				}},
+			}),
+		}),
+		inst_tw(1204, {	-- Halls of Infusion
+			e(2504, {	-- Watcher Irideus
+				["crs"] = { 189719 },	-- Watcher Irideus
+				["sym"] = {{"select", "itemID",
+					193746,	-- Gauntlets of Incalculable Power
+					193743,	-- Irideus Fragment
+					193745,	-- Rod of Perfect Order
+					193747,	-- Titan-Forged Blaster
+					193744,	-- Watcher's Circlet of Purpose
+				}},
+			}),
+			e(2507, {	-- Gulping Goliath
+				["crs"] = { 189722 },	-- Gulping Goliath
+				["sym"] = {{"select", "itemID",
+					193726,	-- Amphibian's Bellowing Crown
+					193725,	-- Ancient Hornswog Spaulders
+					193730,	-- Croaking Dagger
+					193724,	-- Lily-Laced Bracelets
+					193760,	-- Ravenous Omnivore's Girdle
+					193770,	-- Swoglet Stompers
+					193729,	-- Tongue Hacker
+				}},
+			}),
+			e(2510, {	-- Khajin the Unyielding
+				["crs"] = { 189727 },	-- Khajin the Unyielding
+				["sym"] = {{"select", "itemID",
+					193731,	-- Circle of Ascended Frost
+					193735,	-- Earthshaker's Steel Visor
+					212683,	-- Globe of Jagged Ice
+					193734,	-- Hauberk of Frozen Fervor
+					193733,	-- Khajin's Hailstone Footwraps
+				}},
+			}),
+			e(2511, {	-- Primal Tsunami
+				["crs"] = { 189729 },	-- Primal Tsunami
+				["sym"] = {{"select", "itemID",
+					196975,	-- Cliffside Wylderdrake: Head Fin (MM!)
+					197007,	-- Cliffside Wylderdrake: Wide Stripes Pattern (MM!)
+					193741,	-- Mantle of Crushing Waves
+					193738,	-- Robe of Plunging Depths
+					193740,	-- Torrential Downpour Gauntlets
+					193739,	-- Treads of Restored Order
+					193742,	-- Undertow Tideblade
+					212682,	-- Water's Beating Heart
+				}},
+			}),
+		}),
+		inst_tw(1199, {	-- Neltharus
+			e(2490, {	-- Chargath, Bane of Scales
+				["crs"] = { 189340 },	-- Chargath, Bane of Scales
+				["sym"] = {{"select", "itemID",
+					193772,	-- Dragonscale Ripper
+					193769,	-- Erupting Spear Fragment
+					193727,	-- Obsidian-Hardened Wraps
+					193771,	-- Pristine Magma Stompers
+					193768,	-- Scalebane Signet
+				}},
+			}),
+			e(2489, {	-- Forgemaster Gorek
+				["crs"] = { 189478 },	-- Forgemaster Gorek
+				["sym"] = {{"select", "itemID",
+					194508,	-- Plans: Alvin the Anvil (RECIPE!)
+					193782,	-- Emberguard Harness
+					193780,	-- Flare-Singed Strap
+					193784,	-- Forgemaster's Grips
+					193785,	-- Forgestorm
+					193783,	-- Irontorch Igniter
+					193781,	-- Lavabearer Legwraps
+				}},
+			}),
+			e(2494, {	-- Magmatusk
+				["crs"] = { 181861 },	-- Magmatusk
+				["sym"] = {{"select", "itemID",
+					193789,	-- Fural's Blazing Faulds
+					193787,	-- Mammoth Trainer Drape
+					193788,	-- Molten Magma Mantle
+					193786,	-- Mutated Magmammoth Scale
+					193790,	-- Searing Tusk Shard
+				}},
+			}),
+			e(2501, {	-- Warlord Sargha
+				["crs"] = { 189901 },	-- Warlord Sargha
+				["sym"] = {{"select", "itemID",
+					256354,	-- Qalashi Goulash (DECOR!)
+					197376,	-- Renewed Proto-Drake: Ears (MM!)
+					197397,	-- Renewed Proto-Drake: Heavy Scales (MM!)
+					193776,	-- Dragonkiln Chestguard
+					193777,	-- Helm of Hardened Gold
+					193778,	-- Qalashi Defender
+					193779,	-- Sargha's Smasher
+					193773,	-- Spoils of Neltharus
+					193775,	-- Warlord's Cindermitts
+				}},
+			}),
+		}),
+		inst_tw(1202, {	-- Ruby Life Pools
+			e(2488, {	-- Melidrussa Chillworn
+				["crs"] = { 188252 },	-- Melidrussa Chillworn
+				["sym"] = {{"select", "itemID",
+					193761,	-- Chillworn's Infusion Staff
+					193759,	-- Egg Tender's Leggings
+					193757,	-- Ruby Whelp Shell
+					193728,	-- Scaleguard's Stalwart Greatboots
+					193758,	-- Subjugator's Chilling Grip
+				}},
+			}),
+			e(2485, {	-- Kokia Blazehoof
+				["crs"] = { 189232 },	-- Kokia Blazehoof
+				["sym"] = {{"select", "itemID",
+					193762,	-- Blazebinder's Hoof
+					193765,	-- Blazebound Lieutenant's Helm
+					193763,	-- Fireproof Drape of Cinders
+					193767,	-- Havoc Crusher
+					193764,	-- Invader's Firestorm Chestguard
+					193766,	-- Kokia's Burnout Rod
+				}},
+			}),
+			e(2503, {	-- Kyrakka and Erkhart Stormvein
+				["crs"] = {
+					190484,	-- Kyrakka
+					190485,	-- Erkhart Stormvein
+				},
+				["sym"] = {{"select", "itemID",
+					197401,	-- Renewed Proto-Drake: Beaked Snout (MM!)
+					197601,	-- Windborne Velocidrake: Wavy Horns (MM!)
+					201742,	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
+					256428,	-- Valdrakken Hanging Lamp (DECOR!)
+					193755,	-- Backdraft Cleaver
+					193753,	-- Breastplate of Soaring Terror
+					193751,	-- Crown of Roaring Storms
+					193754,	-- Drake Rider's Stecktarge
+					193752,	-- Galerattle Gauntlets
+					193748,	-- Kyrakka's Searing Embers
+					193691,	-- Sky Saddle Cord
+					193756,	-- Skyferno Rondel
+					193750,	-- Wind Soarer's Breeches
+				}},
+			}),
+		}),
+		inst_tw(1203, {	-- The Azure Vault
+			e(2492, {	-- Leymor
+				["crs"] = { 186644 },	-- Leymor
+				["sym"] = {{"select", "itemID",
+					193634,	-- Burgeoning Seed
+					193636,	-- Cinch of Forgotten Duty
+					193635,	-- Infused Elemental Bands
+					193638,	-- Ley-Line Tracer
+					193637,	-- Spaulders of Wild Growth
+					193633,	-- Unstable Arcane Loop
+				}},
+			}),
+			e(2505, {	-- Azureblade
+				["crs"] = { 186739 },	-- Azureblade
+				["sym"] = {{"select", "itemID",
+					193629,	-- Cloak of Lost Devotion
+					193632,	-- Fear Striker Tz'onna
+					193631,	-- Horizon Splitter,
+					212685,	-- Tome of Unstable Power
+					193630,	-- Twenty-Two-League Striders
+				}},
+			}),
+			e(2483, {	-- Telash Greywing
+				["crs"] = { 186737 },	-- Telash Greywing
+				["sym"] = {{"select", "itemID",
+					193648,	-- Azureblade's Work Gloves
+					193647,	-- Custodian's Seal of Delusion
+					193651,	-- Golden-Winged Rod
+					193650,	-- Illusion Breaker's Wristguards
+					193649,	-- Mirage Bindings
+				}},
+			}),
+			e(2508, {	-- Umbrelskul
+				["crs"] = { 186738 },	-- Umbrelskul
+				["sym"] = {{"select", "itemID",
+					197127,	-- Highland Drake: Grand Thorn Horns (MM!)
+					197140,	-- Highland Drake: Small Spotted Pattern (MM!)
+					193644,	-- Breastplate of Irreparable Madness
+					193645,	-- Crystalized Bulwark
+					193641,	-- Headwrap of the Abandoned
+					193642,	-- Mantle of Yearned Freedom
+					193646,	-- Refraction's Edge
+					193643,	-- Stasis Freed Leggings
+					212684,	-- Umbrelskul's Fractured Heart
+				}},
+			}),
+		}),
+	}),
+})));
+
+-- Only instances still in rotation should be in this list.
+-- This will prevent instances that don't have Timewalking currently from showing in the mini list.
+AddInstancesToRotation(EXPANSION.DF, {
+	-- Dungeons
+	1201,	-- Algeth'ar Academy
+	1196,	-- Brackenhide Hollow
+	1204,	-- Halls of Infusion
+	1199,	-- Neltharus
+	1202,	-- Ruby Life Pools
+	1203,	-- The Azure Vault
+});
+--[[
+-- Post Processors
+table.insert(POST_PROCESSING_FUNCTIONS, function()
+	print("Assigning mapID and creatureIDs for Infinite Timereaver...");
+	root(ROOTS.Holidays, InfiniteTimereaver);
+end);
+]]--
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
+			q(78204),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
+		})),
+	})),
+	expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
+			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
+			q(86295, { ["timeline"] = { ADDED_11_1_5 } }),	-- Disturbance Detected: Black Temple
+			q(89211, { ["timeline"] = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID 1229050)
+			q(92856, { ["timeline"] = { ADDED_11_2_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways IV (spellID 1258528)
+		})),
+	})),
+	expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
+			q(93509),	-- Gain Mastery of Timeways for 4 weeks during Turbulent Timeways V (spellID 1269518)
+		})),
+	})),
+});

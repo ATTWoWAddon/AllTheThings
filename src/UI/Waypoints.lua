@@ -14,17 +14,51 @@ local SearchForField = app.SearchForField
 local SearchForObject = app.SearchForObject;
 local WaypointRunner = app.CreateRunner("waypoint");
 WaypointRunner.SetPerFrameDefault(5)
-local __TomTomWaypointCacheIndexX = { __index = function(t, x)
-	local o = setmetatable({}, app.MetaTable.AutoTable);
-	t[x] = o;
-	return o;
-end };
-local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
-	local o = setmetatable({}, __TomTomWaypointCacheIndexX);
-	t[mapID] = o;
-	return o;
-end });
+local __TomTomWaypointCache = setmetatable({}, app.MetaTable.AutoTableOfTablesOfTables);
 local __TomTomWaypointCount, __PlottedGroup;
+-- Determine the best (closest) waypoint compared to player location
+local function PlotBestWaypoint()
+    local pmap, px, py = app.GetPlayerPosition()
+
+    local bestMap, bestX, bestY
+    local bestDist = 999999
+
+	-- app.PrintDebug("check best coord for player loc",pmap,px,py)
+    for mapID, c in pairs(__TomTomWaypointCache) do
+        for x, d in pairs(c) do
+            for y, datas in pairs(d) do
+                local dist
+                if mapID == pmap then
+                    -- Same map → direct Euclidean distance
+                    dist = (px - x/10)^2 + (py - y/10)^2
+					-- app.PrintDebug("on map dist",dist,"for",px,x/10,py,y/10)
+                else
+                    -- Different map → treat as "far but valid"
+                    dist = 999999 - 1
+					-- app.PrintDebug("other map dist",dist)
+                end
+
+                if dist < bestDist then
+                    bestDist = dist
+                    bestMap = mapID
+                    bestX = x/10
+                    bestY = y/10
+					-- app.PrintDebug("new best coord @ dist",bestDist,bestMap,bestX,bestY)
+                end
+            end
+        end
+    end
+
+    if bestMap then
+        C_SuperTrack.SetSuperTrackedUserWaypoint(false)
+        C_Map.ClearUserWaypoint()
+        local mapPoint = UiMapPoint.CreateFromCoordinates(bestMap, bestX / 100, bestY / 100)
+		-- app.PrintDebug("plotting waypoint in map",bestMap)
+		-- app.PrintTable(mapPoint)
+        C_Map.SetUserWaypoint(mapPoint)
+        C_SuperTrack.SetSuperTrackedUserWaypoint(true)
+    end
+end
 local function PlotCachedCoords()
 	if TomTom then
 		-- app.PrintDebug("WP:TomTom:Plot",__PlottedGroup.text,__TomTomWaypointCount)
@@ -57,38 +91,10 @@ local function PlotCachedCoords()
 								end
 							end
 							if group.qgs then
-								local count = #group.qgs;
-								if count > 1 and group.coords and #group.coords == count then
-									for i=count,1,-1 do
-										local coord = group.coords[i];
-										if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
-											creatureID = group.qgs[i];
-											break;
-										end
-									end
-									if not creatureID then
-										creatureID = group.qgs[1];
-									end
-								else
-									creatureID = group.qgs[1];
-								end
+								creatureID = group.qgs[1];
 							end
 							if group.crs then
-								local count = #group.crs;
-								if count > 1 and group.coords and #group.coords == count then
-									for i=count,1,-1 do
-										local coord = group.coords[i];
-										if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
-											creatureID = group.crs[i];
-											break;
-										end
-									end
-									if not creatureID then
-										creatureID = group.crs[1];
-									end
-								else
-									creatureID = group.crs[1];
-								end
+								creatureID = group.crs[1];
 							end
 						end
 						if creatureID then
@@ -112,11 +118,14 @@ local function PlotCachedCoords()
 					if first then
 						local sourcePath = app.GenerateSourceHash(first);
 						for i=2,#root,1 do sourcePath = sourcePath .. ";" .. app.GenerateSourceHash(root[i]); end
+						-- app.PrintDebug("plot.sourcePath",sourcePath,app.WOWAPI.issecretvalue(sourcePath))
+						-- app.PrintDebug("plot.title",first.text,app.WOWAPI.issecretvalue(first.text))
+						local isSecret = app.WOWAPI.issecretvalue(first.text)
 						TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
 							from = "ATT",
 							persistent = true,
 							sourcePath = sourcePath,
-							title = (first.text or RETRIEVING_DATA)
+							title = (isSecret and EVENTTRACE_SECRET_FMT:format(NAME)) or first.text or RETRIEVING_DATA
 						}, root);
 					end
 				end
@@ -128,23 +137,7 @@ local function PlotCachedCoords()
 	elseif C_SuperTrack then
 		-- app.PrintDebug("WP:C_SuperTrack:Plot",__PlottedGroup.text,__TomTomWaypointCount)
 		if C_SuperTrack.SetSuperTrackedUserWaypoint and C_Map.SetUserWaypoint then
-			-- try to track the first available waypoint in the cache
-			for mapID,c in pairs(__TomTomWaypointCache) do
-				for x,d in pairs(c) do
-					for y,datas in pairs(d) do
-						C_SuperTrack.SetSuperTrackedUserWaypoint(false);
-						C_Map.ClearUserWaypoint();
-						local mapPoint = UiMapPoint.CreateFromCoordinates(mapID or C_Map.GetBestMapForUnit("player") or 1, x/1000, y/1000);
-						-- app.PrintDebug("WP:SuperTrack")
-						-- app.PrintTable(mapPoint)
-						C_Map.SetUserWaypoint(mapPoint);
-						C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-						break;
-					end
-					break;
-				end
-				break;
-			end
+			PlotBestWaypoint()
 		end
 		-- or navigate by active quest
 		if __PlottedGroup.questID and C_QuestLog_IsOnQuest(__PlottedGroup.questID) then
@@ -157,31 +150,21 @@ local function PlotCachedCoords()
 		app.print(L.NO_COORDINATES_FORMAT:format(__PlottedGroup.text));
 	end
 end
-local function AddTomTomWaypointCache(coord, group)
-	local mapID = coord[3];
-	if mapID then
-		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group.keyval] = group;
-		__TomTomWaypointCount = __TomTomWaypointCount + 1;
-		-- app.PrintDebug("WP:Cache",__TomTomWaypointCount,app:SearchLink(group))
-	else
-		-- coord[3] not existing is checked by Parser and shouldn't ever happen
-		app.print("Missing mapID for", group.text, coord[1], coord[2], mapID);
-	end
-end
 -- Tracks attempted addition of coordinates. Sometimes we want to 'know' that coords exist but don't actually want to plot them
 local function TryAddGroupWaypoints(group)
-	local c = group.coords;
-	if c then
-		for _,coord in ipairs(c) do
-			AddTomTomWaypointCache(coord, group);
+	local coords = group.coords;
+	if coords then
+		for mapID,coordsForMap in pairs(coords) do
+			local cache = __TomTomWaypointCache[mapID];
+			for _,coord in ipairs(coordsForMap) do
+				cache[math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group.keyval] = group;
+				__TomTomWaypointCount = __TomTomWaypointCount + 1;
+				-- app.PrintDebug("WP:Cache",__TomTomWaypointCount,math_floor(coord[1] * 10),math_floor(coord[2] * 10),mapID,app:SearchLink(group))
+			end
 		end
 	end
-	c = group.coord;
-	if c then
-		AddTomTomWaypointCache(c, group);
-	end
 end
-local function AddTomTomParentCoord(group)
+local function AddTomTomParentCoords(group)
 	-- app.PrintDebug("WP:ParentChain")
 	local parent = group.sourceParent or group.parent;
 	while parent do
@@ -199,7 +182,7 @@ local function AddNestedTomTomWaypoints(group, depth, rootOnly)
 	if group.visible or depth == 0 then
 		if group.plotting then return false; end
 		group.plotting = true;
-		-- app.PrintDebug("WP:depth",depth)
+		-- app.PrintDebug("WP:depth",depth,app:SearchLink(group))
 		-- always plot directly clicked otherwise don't plot saved or inaccessible groups
 		if depth == 0 or (not group.saved and not group.missingSourceQuests) then
 			-- app.PrintDebug("WP:Group",app:SearchLink(group))
@@ -248,7 +231,7 @@ local function AddTomTomParentChainWaypoint(group, depth)
 		group.plotting = true;
 		-- also check for first coord(s) on parent chain of plotted group if no coords at or below the plotted group
 		if depth == 0 and __TomTomWaypointCount == 0 then
-			AddTomTomParentCoord(group);
+			AddTomTomParentCoords(group);
 		end
 		group.plotting = nil;
 	end
@@ -259,7 +242,7 @@ local function AddTomTomRawSearchResultWaypoints(field, value)
 	for _,o in ipairs(SearchForObject(field, value, "field", true)) do
 		-- app.PrintDebug("WP:Search:",o,field,value,app:RawSearchLink(field, value))
 		AddNestedTomTomWaypoints(o, 0, true);
-		AddTomTomParentCoord(o);
+		AddTomTomParentCoords(o);
 	end
 end
 local function AddTomTomSearchResultWaypoints(group)
@@ -317,7 +300,7 @@ AddTomTomProviderResults = function(group, depth)
 	-- is Cost really something that we'd plot for a waypoint? Probably not...
 end
 app.AddTomTomWaypoint = function(group)
-	-- app.PrintDebug("WP:Global",group.hash)
+	-- app.PrintDebug("WP:Global",app:SearchLink(group))
 	wipe(__TomTomWaypointCache);
 	__TomTomWaypointCount = 0;
 	__PlottedGroup = group;
@@ -343,7 +326,7 @@ app.AddEventHandler("OnReady", function()
 						for i,sourcePath in ipairs(sourceStrings) do
 							---@diagnostic disable-next-line: undefined-field
 							local hashes = { (">"):split(sourcePath) };
-							local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+							local ref = app.SearchForSourcePath(app:GetDatabaseRoot().g, hashes, 2, #hashes);
 							if ref then
 								tinsert(root, ref);
 							else

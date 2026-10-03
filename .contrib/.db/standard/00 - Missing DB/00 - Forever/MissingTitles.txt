@@ -1,0 +1,2 @@
+1.60.1.69876
+title(0),	-- Loa-speaker %s \\ %s the Blacksmith

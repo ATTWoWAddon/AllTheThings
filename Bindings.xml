@@ -2,6 +2,9 @@
 	<Binding name="ALLTHETHINGS_TOGGLEACCOUNTMODE" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.Settings:ToggleAccountMode();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEFILTERS" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleFilters();
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.Settings:ToggleCompletionistMode();
 	</Binding>
@@ -29,6 +32,9 @@
 	<Binding name="ALLTHETHINGS_TOGGLESOURCETEXT" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.Settings:SetTooltipSetting("SourceLocations",
 		not AllTheThings.Settings:GetTooltipSetting("SourceLocations"));
+	</Binding>
+	<Binding name="ALLTHETHINGS_ACTIVATENEXTPROFILE" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ActivateNextProfile();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="BINDING_HEADER_ALLTHETHINGS">
 		AllTheThings.ToggleMainList();

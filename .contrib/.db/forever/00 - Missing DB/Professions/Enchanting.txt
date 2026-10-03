@@ -1,0 +1,173 @@
+1.60.1.69876
+r(22434),	--
+r(22749),	-- Enchant Weapon - Spell Power
+r(22750),	-- Enchant Weapon - Healing Power
+r(23799),	-- Enchant Weapon - Strength
+r(23801),	-- Enchant Bracer - Mana Regeneration
+r(23802),	-- Enchant Bracer - Healing Power
+r(23803),	-- Enchant Weapon - Mighty Spirit
+r(23804),	-- Enchant Weapon - Mighty Intellect
+r(25072),	-- Enchant Gloves - Threat
+r(25073),	-- Enchant Gloves - Shadow Power
+r(25074),	-- Enchant Gloves - Frost Power
+r(25078),	-- Enchant Gloves - Fire Power
+r(25079),	-- Enchant Gloves - Healing Power
+r(25080),	-- Enchant Gloves - Superior Agility
+r(25081),	-- Enchant Cloak - Greater Fire Resistance
+r(25082),	-- Enchant Cloak - Greater Nature Resistance
+r(25083),	-- Enchant Cloak - Stealth
+r(25084),	-- Enchant Cloak - Subtlety
+r(25086),	-- Enchant Cloak - Dodge
+r(25127),	-- Lesser Mana Oil
+r(25128),	-- Wizard Oil
+r(25129),	-- Brilliant Wizard Oil
+r(25130),	-- Brilliant Mana Oil
+r(430409),	-- Blackfathom Mana Oil
+r(435481),	-- Enchant Weapon - Dismantle
+r(435903),	-- Enchant Chest - Retricutioner
+r(439156),	-- Sigil of Innovation
+r(446243),	-- Sigil of Living Dreams
+r(448624),	-- Scroll of Spatial Mending
+r(463866),	-- Sigil of Flowing Waters
+r(463869),	-- Conductive Shield Coating
+r(463871),	-- Enchant Shield - Law of Nature
+r(471400),	-- Magnificent Trollshine
+r(1213593),	-- Speedstone
+r(1213595),	-- Tear of the Dreamer
+r(1213598),	-- Lodestone of Retaliation
+r(1213600),	-- Enchanted Stopwatch
+r(1213603),	-- Ruby-Encrusted Broach
+r(1213607),	-- Scroll: Wrath of the Swarm
+r(1213610),	-- Enchanted Repellent
+r(1213616),	-- Enchant Chest - Living Stats
+r(1213628),	-- Enchanted Prayer Tome
+r(1213633),	-- Enchanted Totem
+r(1213635),	-- Enchanted Mushroom
+r(1216005),	-- Libram of Righteousness
+r(1216007),	-- Libram of the Exorcist
+r(1216010),	-- Libram of Sanctity
+r(1216014),	-- Totem of Pyroclastic Thunder
+r(1216016),	-- Totem of Thunderous Strikes
+r(1216018),	-- Totem of Flowing Magma
+r(1216020),	-- Idol of Sidereal Wrath
+r(1216022),	-- Idol of Feline Ferocity
+r(1216024),	-- Idol of Ursin Power
+r(1217189),	-- Enchant Bracer - Spell Power
+r(1217203),	-- Enchant Bracer - Agility
+r(1219577),	-- Enchant Off-Hand - Superior Intellect
+r(1219578),	-- Enchant Off-Hand - Excellent Spirit
+r(1219579),	-- Enchant Off-Hand - Wisdom
+r(1219580),	-- Enchant 2H Weapon - Spellblasting
+r(1219581),	-- Enchant Shield - Excellent Stamina
+r(1220623),	-- Enchant Shield - Critical Strike
+r(1231128),	-- Enchant Weapon - Grand Crusader
+r(1231139),	-- Enchant 2H Weapon - Grand Arcanist
+r(1231164),	-- Enchant Weapon - Grand Sorcerer
+r(1232172),	-- Enchant 2H Weapon - Grand Inquisitor
+r(1240946),	-- Enchanting
+r(1240957),	-- Enchanting
+r(1240968),	-- Enchanting
+r(1240981),	-- Enchanting
+r(1248459),	-- Enchant Bracer - Minor Healing Power
+r(1248461),	-- Twisted Nether Wand
+r(1248497),	-- Enchant Bracer - Agility
+r(1248498),	-- Enchant Bracer - Lesser Healing Power
+r(1248500),	-- Enchant Bracer - Greater Agility
+r(1248505),	-- Lesser Eternal Wand
+r(1248509),	-- Dreambough Wand
+r(1248510),	-- Enchant 2H Weapon - Lesser Agility
+r(1248511),	-- Enchant 2H Weapon - Lesser Strength
+r(1248515),	-- Greater Eternal Wand
+r(1248528),	-- Enchant Gloves - Advanced Skinning
+r(1248599),	-- Enchant Bracer - Superior Agility
+r(1248668),	-- Enchant 2H Weapon - Strength
+r(1249107),	-- Frozen Heart of the Mountain
+r(1249112),	-- Molten Heart of the Mountain
+r(1249114),	-- Dormant Heart of the Mountain \\ Dormant  Heart of the Mountain
+r(1263082),	-- Arcane Forge
+r(1277781),	--
+r(1294054),	-- Enchant Gloves - Lotus Claw
+r(1306520),	-- Torch of Light
+r(1306521),	-- Steadfast Libram
+r(1306522),	-- Libram of Infusion
+r(1306523),	-- Totem of Urgency
+r(1306524),	-- Idol of Swiftness
+r(1306525),	-- Idol of the Ursine Twins
+
+
+
+
+Missing in Enchanting
+
+1.60.1.69876
+r(22434),	--
+r(430409),	-- Blackfathom Mana Oil
+r(435481),	-- Enchant Weapon - Dismantle
+r(435903),	-- Enchant Chest - Retricutioner
+r(439156),	-- Sigil of Innovation
+r(446243),	-- Sigil of Living Dreams
+r(448624),	-- Scroll of Spatial Mending
+r(463866),	-- Sigil of Flowing Waters
+r(463869),	-- Conductive Shield Coating
+r(463871),	-- Enchant Shield - Law of Nature
+r(471400),	-- Magnificent Trollshine
+r(1213593),	-- Speedstone
+r(1213595),	-- Tear of the Dreamer
+r(1213598),	-- Lodestone of Retaliation
+r(1213600),	-- Enchanted Stopwatch
+r(1213603),	-- Ruby-Encrusted Broach
+r(1213607),	-- Scroll: Wrath of the Swarm
+r(1213610),	-- Enchanted Repellent
+r(1213616),	-- Enchant Chest - Living Stats
+r(1213628),	-- Enchanted Prayer Tome
+r(1213633),	-- Enchanted Totem
+r(1213635),	-- Enchanted Mushroom
+r(1216005),	-- Libram of Righteousness
+r(1216007),	-- Libram of the Exorcist
+r(1216010),	-- Libram of Sanctity
+r(1216014),	-- Totem of Pyroclastic Thunder
+r(1216016),	-- Totem of Thunderous Strikes
+r(1216018),	-- Totem of Flowing Magma
+r(1216020),	-- Idol of Sidereal Wrath
+r(1216022),	-- Idol of Feline Ferocity
+r(1216024),	-- Idol of Ursin Power
+r(1217189),	-- Enchant Bracer - Spell Power
+r(1217203),	-- Enchant Bracer - Agility
+r(1219577),	-- Enchant Off-Hand - Superior Intellect
+r(1219578),	-- Enchant Off-Hand - Excellent Spirit
+r(1219579),	-- Enchant Off-Hand - Wisdom
+r(1219580),	-- Enchant 2H Weapon - Spellblasting
+r(1219581),	-- Enchant Shield - Excellent Stamina
+r(1220623),	-- Enchant Shield - Critical Strike
+r(1231128),	-- Enchant Weapon - Grand Crusader
+r(1231139),	-- Enchant 2H Weapon - Grand Arcanist
+r(1231164),	-- Enchant Weapon - Grand Sorcerer
+r(1232172),	-- Enchant 2H Weapon - Grand Inquisitor
+r(1240946),	-- Enchanting
+r(1240957),	-- Enchanting
+r(1240968),	-- Enchanting
+r(1240981),	-- Enchanting
+r(1248459),	-- Enchant Bracer - Minor Healing Power
+r(1248461),	-- Twisted Nether Wand
+r(1248497),	-- Enchant Bracer - Agility
+r(1248500),	-- Enchant Bracer - Greater Agility
+r(1248505),	-- Lesser Eternal Wand
+r(1248509),	-- Dreambough Wand
+r(1248510),	-- Enchant 2H Weapon - Lesser Agility
+r(1248511),	-- Enchant 2H Weapon - Lesser Strength
+r(1248515),	-- Greater Eternal Wand
+r(1248528),	-- Enchant Gloves - Advanced Skinning
+r(1248599),	-- Enchant Bracer - Superior Agility
+r(1248668),	-- Enchant 2H Weapon - Strength
+r(1249107),	-- Frozen Heart of the Mountain
+r(1249112),	-- Molten Heart of the Mountain
+r(1249114),	-- Dormant Heart of the Mountain \\ Dormant  Heart of the Mountain
+r(1263082),	-- Arcane Forge
+r(1277781),	--
+r(1294054),	-- Enchant Gloves - Lotus Claw
+r(1306520),	-- Torch of Light
+r(1306521),	-- Steadfast Libram
+r(1306522),	-- Libram of Infusion
+r(1306523),	-- Totem of Urgency
+r(1306524),	-- Idol of Swiftness
+r(1306525),	-- Idol of the Ursine Twins

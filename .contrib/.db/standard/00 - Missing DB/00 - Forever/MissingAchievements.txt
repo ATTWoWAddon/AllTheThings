@@ -1,0 +1,161 @@
+1.60.1.69876
+ach(61499),	-- Novice Warrior
+ach(61500),	-- Experienced Warrior
+ach(61501),	-- Master Warrior
+ach(61502),	-- Novice Druid
+ach(61503),	-- Experienced Druid
+ach(61504),	-- Master Druid
+ach(61515),	-- 1.60.0 - Lost Ones Tracking Achievement <HIDDEN>
+ach(61989),	-- Novice Hunter
+ach(61992),	-- Experienced Hunter
+ach(61993),	-- Master Hunter
+ach(61994),	-- Novice Mage
+ach(61995),	-- Experienced Mage
+ach(61996),	-- Master Mage
+ach(61997),	-- Novice Paladin
+ach(61998),	-- Experienced Paladin
+ach(61999),	-- Master Paladin
+ach(62000),	-- Novice Priest
+ach(62001),	-- Experienced Priest
+ach(62002),	-- Master Priest
+ach(62003),	-- Novice Rogue
+ach(62004),	-- Experienced Rogue
+ach(62005),	-- Master Rogue
+ach(62006),	-- Novice Shaman
+ach(62007),	-- Experienced Shaman
+ach(62008),	-- Master Shaman
+ach(62009),	-- Novice Warlock
+ach(62010),	-- Experienced Warlock
+ach(62011),	-- Master Warlock
+ach(62012),	-- Journeyman Alchemist
+ach(62013),	-- Expert Alchemist
+ach(62014),	-- Artisan Alchemist
+ach(62015),	-- Journeyman Blacksmith
+ach(62016),	-- Expert Blacksmith
+ach(62017),	-- Artisan Blacksmith
+ach(62018),	-- Journeyman Enchanter
+ach(62019),	-- Expert Enchanter
+ach(62020),	-- Artisan Enchanter
+ach(62021),	-- Journeyman Engineer
+ach(62022),	-- Expert Engineer
+ach(62023),	-- Artisan Engineer
+ach(62024),	-- Journeyman Leatherworker
+ach(62025),	-- Expert Leatherworker
+ach(62026),	-- Artisan Leatherworker
+ach(62028),	-- Journeyman Tailor
+ach(62029),	-- Expert Tailor
+ach(62030),	-- Artisan Tailor
+ach(62031),	-- Novice Spelunker
+ach(62032),	-- Experienced Spelunker
+ach(62033),	-- Master Spelunker
+ach(62034),	-- Conquerer of the Wilds
+ach(62035),	-- Conquerer of the Deeps
+ach(62041),	-- Rank 3
+ach(62042),	-- Rank 7
+ach(62043),	-- Rank 10
+ach(62044),	-- Rank 13
+ach(62045),	-- Rank 14
+ach(62046),	-- Master of Alterac Valley
+ach(62047),	-- Master of Arathi Basin
+ach(62048),	-- Master of Warsong Gulch
+ach(62049),	-- Master of Darkspear Islands
+ach(62053),	-- Explore Azeroth
+ach(62054),	-- Lord Valthalak Laid to Rest
+ach(62353),	-- Explore Eastern Kingdoms
+ach(62354),	-- Explore Riverglades
+ach(62355),	-- Explore Kalimdor
+ach(62356),	-- Explore Mount Hyjal
+ach(62382),	-- Explorer
+ach(63340),	-- Field of Honor: Week 4
+ach(63341),	-- Field of Honor: Week 7
+ach(63342),	-- Field of Honor: Week 10
+ach(63684),	-- Explore Shen'dralas
+ach(63969),	-- Novice Warrior
+ach(63970),	-- Experienced Warrior
+ach(63971),	-- Master Warrior
+ach(63972),	-- Novice Druid
+ach(63973),	-- Experienced Druid
+ach(63974),	-- Master Druid
+ach(63975),	-- Novice Hunter
+ach(63976),	-- Experienced Hunter
+ach(63977),	-- Master Hunter
+ach(63978),	-- Novice Mage
+ach(63979),	-- Experienced Mage
+ach(63980),	-- Master Mage
+ach(63981),	-- Novice Paladin
+ach(63982),	-- Experienced Paladin
+ach(63983),	-- Master Paladin
+ach(63984),	-- Novice Priest
+ach(63985),	-- Experienced Priest
+ach(63986),	-- Master Priest
+ach(63987),	-- Novice Rogue
+ach(63988),	-- Experienced Rogue
+ach(63989),	-- Master Rogue
+ach(63990),	-- Novice Shaman
+ach(63991),	-- Experienced Shaman
+ach(63992),	-- Master Shaman
+ach(63993),	-- Novice Warlock
+ach(63994),	-- Experienced Warlock
+ach(63995),	-- Master Warlock
+ach(63996),	-- Journeyman Alchemist
+ach(63997),	-- Expert Alchemist
+ach(63998),	-- Artisan Alchemist
+ach(63999),	-- Journeyman Blacksmith
+ach(64000),	-- Expert Blacksmith
+ach(64001),	-- Artisan Blacksmith
+ach(64002),	-- Journeyman Enchanter
+ach(64003),	-- Expert Enchanter
+ach(64004),	-- Artisan Enchanter
+ach(64005),	-- Journeyman Engineer
+ach(64006),	-- Expert Engineer
+ach(64007),	-- Artisan Engineer
+ach(64008),	-- Journeyman Leatherworker
+ach(64009),	-- Expert Leatherworker
+ach(64010),	-- Artisan Leatherworker
+ach(64011),	-- Journeyman Tailor
+ach(64012),	-- Expert Tailor
+ach(64013),	-- Artisan Tailor
+ach(64014),	-- Lord Valthalak Laid to Rest
+ach(64015),	-- Explorer
+ach(64016),	-- Novice Spelunker
+ach(64017),	-- Experienced Spelunker
+ach(64018),	-- Master Spelunker
+ach(64019),	-- Conquerer of the Wilds
+ach(64020),	-- Conquerer of the Deeps
+ach(64021),	-- Rank 3
+ach(64022),	-- Rank 7
+ach(64023),	-- Rank 10
+ach(64024),	-- Rank 13
+ach(64025),	-- Rank 14
+ach(64026),	-- Master of Alterac Valley
+ach(64027),	-- Master of Arathi Basin
+ach(64028),	-- Master of Warsong Gulch
+ach(64029),	-- Master of Darkspear Islands
+ach(64030),	-- Conqueror of the Lair
+ach(64031),	-- Field of Honor: Week 4
+ach(64032),	-- Field of Honor: Week 7
+ach(64033),	-- Field of Honor: Week 10
+ach(64048),	-- Hidden: Rank 3
+ach(64051),	-- Hidden: Rank 7
+ach(64052),	-- Hidden: Rank 10
+ach(64053),	-- Hidden: Rank 1
+ach(64054),	-- Hidden: Rank 2
+ach(64055),	-- Hidden: Rank 4
+ach(64056),	-- Hidden: Rank 5
+ach(64057),	-- Hidden: Rank 6
+ach(64058),	-- Hidden: Rank 8
+ach(64059),	-- Hidden: Rank 9
+ach(64060),	-- Hidden: Rank 11
+ach(64061),	-- Hidden: Rank 12
+ach(64062),	-- Hidden: Rank 13
+ach(64063),	-- Hidden: Rank 14
+ach(64120),	-- Hidden: Well Equipped (Tier 1)
+ach(64151),	-- Hidden: BETA Survey - Level 30 - Druid
+ach(64152),	-- Hidden: BETA Survey - Level 30 - Warrior
+ach(64153),	-- Hidden: BETA Survey - Level 30 - Mage
+ach(64154),	-- Hidden: BETA Survey - Level 30 - Shaman
+ach(64155),	-- Hidden: BETA Survey - Level 30 - Hunter
+ach(64156),	-- Hidden: BETA Survey - Level 30 - Warlock
+ach(64157),	-- Hidden: BETA Survey - Level 30 - Rogue
+ach(64158),	-- Hidden: BETA Survey - Level 30 - Priest
+ach(64159),	-- Hidden: BETA Survey - Level 30 - Paladin

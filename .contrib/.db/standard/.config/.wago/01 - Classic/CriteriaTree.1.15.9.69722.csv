@@ -1,0 +1,361 @@
+ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
+248,"Defeat Emperor Dagran Thaurissan.",0,1,8,0,0,0
+253,"Defeat Darkmaster Gandling",0,0,4,0,0,0
+257,"Defeat the evil masterminds inhabiting Stratholme.",0,0,4,0,0,0
+276,"Chief Ukorz Sandscalp kills (Zul'Farrak)",0,0,4,0,0,0
+552,"Defeat Nefarian.",0,1,8,0,0,0
+553,Nefarian,552,1,0,3273,0,2
+554,"Therazane's Link",552,1,0,4564,4,2
+555,"Boots of the Shadow Flame",552,1,0,4567,7,2
+556,"Breastplate of Wrath",552,1,0,4578,18,2
+557,"Archimtiros' Ring of Reckoning",552,1,0,4565,5,2
+558,"Judgement Breastplate",552,1,0,4580,20,2
+559,"Stormrage Chestguard",552,1,0,4581,21,2
+560,"Robes of Transcendence",552,1,0,4584,24,2
+561,"Ashkandi, Greatsword of the Brotherhood",552,1,0,4566,6,2
+562,"Crul'shorukh, Edge of Chaos",552,1,0,4569,9,2
+563,"The Lord of Blackrock",552,1,0,4447,1,2
+564,"The Lord of Blackrock",552,1,0,4448,2,2
+565,"Cloak of the Brood Lord",552,1,0,4568,8,2
+566,"Lok'amir il Romathis",552,1,0,4570,10,2
+567,"Neltharion's Tear",552,1,0,4572,12,2
+568,"Staff of the Shadow Flame",552,1,0,4575,15,2
+569,"Breastplate of Ten Storms",552,1,0,4577,17,2
+570,"Dragonstalker's Breastplate",552,1,0,4579,19,2
+571,"Nefarius's Corruption",552,1,0,4449,3,2
+572,"Bloodfang Chestpiece",552,1,0,4576,16,2
+573,"Prestor's Talisman of Connivery",552,1,0,4573,13,2
+574,"Pure Elementium Band",552,1,0,4574,14,2
+575,"Netherwind Robes",552,1,0,4583,23,2
+576,"Mish'undare, Circlet of the Mind Flayer",552,1,0,4571,11,2
+577,"Nemesis Robes",552,1,0,4582,22,2
+579,"Defeat Ragnaros.",0,1,8,0,0,0
+588,"Stormrage Legguards",579,1,0,4558,18,2
+593,"Malistar's Defender",579,1,0,4559,19,2
+594,"Cloak of the Shrouded Mists",579,1,0,4561,21,2
+595,"Spinal Reaper",579,1,0,4563,23,2
+596,"Band of Accuria",579,1,0,4560,20,2
+597,"Dragon's Blood Cape",579,1,0,5055,24,2
+600,"Draconic for Dummies",579,1,0,7364,27,2
+602,"Shard of the Flame",579,1,0,5056,25,2
+604,"Essence of the Firelord",579,1,0,8893,26,2
+605,"Netherwind Pants",579,1,0,4557,17,2
+606,"Bonereaver's Edge",579,1,0,4562,22,2
+648,"Defeat Onyxia.",0,1,8,0,0,0
+650,"The Forging of Quel'Serrar",648,1,0,4270,4,2
+651,"Victory for the Alliance",648,1,0,4266,0,2
+652,"Eskhandar's Collar",648,1,0,4286,11,2
+653,"Onyxia Hide Backpack",648,1,0,4271,5,2
+654,"Victory for the Horde",648,1,0,4267,2,2
+655,"A Proper String",648,1,0,4268,1,2
+656,Deathbringer,648,1,0,4282,7,2
+657,"Ring of Binding",648,1,0,4284,9,2
+658,"Shard of the Scale",648,1,0,4287,12,2
+659,"Vis'kag the Bloodletter",648,1,0,4283,8,2
+660,"Ancient Cornerstone Grimoire",648,1,0,4272,6,2
+661,"Sapphiron Drape",648,1,0,4285,10,2
+811,"Defeat Charlga Razorflank.",0,1,8,0,0,0
+817,"Defeat Amnennar the Coldbringer.",0,1,8,0,0,0
+822,"Defeat Archaedas.",0,1,8,0,0,0
+828,"Defeat Chief Ukorz Sandscalp.",0,0,4,0,0,0
+831,"Defeat Princess Theradras.",0,1,8,0,0,0
+1521,"Defeat C'Thun.",0,1,8,0,0,0
+1522,C'Thun,1521,1,0,3274,1,2
+1523,"Mark of C'Thun",1521,1,0,4941,25,2
+1524,"Genesis Vest",1521,1,0,4454,5,2
+1525,"C'Thun's Legacy",1521,1,0,4459,11,2
+1526,"Cloak of Clarity",1521,1,0,4586,14,2
+1527,"Scepter of the False Prophet",1521,1,0,4593,21,2
+1528,"Death's Sting",1521,1,0,4589,17,2
+1529,"Dark Edge of Insanity",1521,1,0,4587,15,2
+1530,"Gauntlets of Annihilation",1521,1,0,4590,18,2
+1531,"Belt of Never-ending Agony",1521,1,0,4585,13,2
+1532,"Grasp of the Old God",1521,1,0,4591,19,2
+1533,"Eyestalk Waist Cord",1521,1,0,4596,24,2
+1534,"Deathdealer's Vest",1521,1,0,4451,3,2
+1535,"Stormcaller's Hauberk",1521,1,0,4455,6,2
+1536,"Enigma Robes",1521,1,0,4457,9,2
+1537,"Vestments of the Oracle",1521,1,0,4458,10,2
+1538,"Atiesh, the Befouled Greatstaff",1521,1,0,4460,12,2
+1539,"Striker's Hauberk",1521,1,0,4450,2,2
+1540,"Avenger's Breastplate",1521,1,0,4453,7,2
+1541,"Conqueror's Breastplate",1521,1,0,4452,4,2
+1542,"Dark Storm Gauntlets",1521,1,0,4588,16,2
+1543,"Ring of the Godslayer",1521,1,0,4592,20,2
+1544,"Husk of the Old God",1521,1,0,9078,36,2
+1545,"Vanquished Tentacle of C'Thun",1521,1,0,4594,22,2
+1546,"Doomcaller's Robes",1521,1,0,4456,8,2
+1547,"Conqueror's Breastplate",1521,1,0,8894,26,2
+1548,"Avenger's Breastplate",1521,1,0,8895,27,2
+1549,"Deathdealer's Vest",1521,1,0,8896,28,2
+1550,"Doomcaller's Robes",1521,1,0,8897,29,2
+1551,"Enigma Robes",1521,1,0,8898,30,2
+1552,"Genesis Vest",1521,1,0,8899,31,2
+1553,"Cloak of the Devoured",1521,1,0,4595,23,2
+1554,"Stormcaller's Hauberk",1521,1,0,8900,32,2
+1555,"Striker's Hauberk",1521,1,0,8901,33,2
+1556,"Vestments of the Oracle",1521,1,0,8902,34,2
+1557,"Husk of the Old God",1521,1,0,8903,35,2
+1559,"Defeat Hakkar.",0,0,4,0,0,0
+1716,"Ragnaros kills (Molten Core)",0,0,4,0,0,0
+1725,"Defeat Ossirian the Unscarred.",0,1,8,0,0,0
+1726,"Ossirian the Unscarred",1725,1,0,18891,1,2
+1727,"The Fall of Ossirian",1725,1,0,4265,2,2
+2527,,0,0,4,0,0,0
+2528,,2527,0,0,16884,1,2
+2948,"Statistic - Normal Whitemane (+ Legacy Mograine) kills",0,0,5,0,0,0
+2949,"Scarlet Commander Mograine",2948,1,0,3264,0,2
+3056,"Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",0,1,8,0,0,0
+3057,"Swift Razzashi Raptor",3056,1,0,51997,0,2
+3382,"Defeat Archmage Arugal.",0,1,8,0,0,0
+3385,"Defeat Bazil Thredd.",0,1,8,0,0,0
+3403,"Nefarian kills (Blackwing Lair)",0,0,4,0,0,0
+3404,Nefarian,3403,1,0,3273,1,0
+3419,"Hakkar kills (Zul'Gurub)",0,0,4,0,0,0
+3420,Hakkar,3419,1,0,3275,1,0
+3809,"Defeat Edwin VanCleef",0,1,8,0,0,0
+3812,"Defeat Mekgineer Thermaplugg.",0,1,8,0,0,0
+3820,"Onyxia kills (Onyxia's Lair)",0,0,4,0,0,0
+3821,Onyxia,3820,1,0,3271,1,0
+3990,"Defeat High Inquisitor Whitemane",0,0,4,0,0,0
+4106,"Defeat General Drakkisath.",0,1,8,0,0,0
+4194,"Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",0,1,8,0,0,0
+4195,"Swift Zulian Tiger",4194,1,0,51996,0,2
+4220,"Obtain the Deathcharger's Reins from Rivendare in Stratholme.",0,1,8,0,0,0
+4221,"Rivendare's Deathcharger",4220,1,0,51998,0,2
+4230,"Defeat Aku'mai.",0,0,4,0,0,0
+4327,"Defeat Bazzalan",0,1,8,0,0,0
+4978,"Defeat each wing of Dire Maul.",0,0,4,0,0,0
+6183,"C'Thun kills (Temple of Ahn'Qiraj)",0,0,4,0,0,0
+6184,C'Thun,6183,1,0,3274,1,0
+6547,"Archmage Arugal",0,1,5,0,0,0
+6646,"Ossirian the Unscarred",0,0,4,0,0,0
+6648,"Ossirian the Unscarred",6646,1,0,18891,0,2
+7357,"Defeat Mutanus the Devourer.",0,1,8,0,0,0
+7684,"Defeat Overlord Wyrmthalak.",0,1,8,0,0,0
+8133,"Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",0,0,4,0,0,0
+8188,"Defeat Shade of Eranikus.",0,1,8,0,0,0
+8901,"Cookie Kills",0,1,5,0,0,0
+8903,"""Captain"" Cookie",8901,1,0,18522,0,2
+9942,"General Drakkisath kills (Blackrock Spire)",0,0,4,0,0,0
+14324,"Emperor Dagran Thaurissan kills (Blackrock Depths)",0,0,4,0,0,0
+18065,,18064,0,0,16881,1,2
+18071,,18070,0,0,16882,1,2
+18144,,18143,0,0,16883,1,2
+18660,,18659,0,0,17386,1,2
+22423,"Statistic - High Inquisitor Whitemane",0,0,4,0,0,0
+26937,"Scarlet Halls (Flameweaver Koegler)",0,0,4,0,0,0
+26938,"Flameweaver Koegler",26937,1,0,19269,0,2
+37090,"Kill General Drakkisath",0,0,4,0,0,0
+38168,"Statistic - General Drakkisath",0,0,4,0,0,0
+82060,server-only,0,0,4,0,0,2
+91539,,1559,1,0,3275,0,0
+91540,,8133,1,0,51995,0,0
+91541,,648,1,0,3271,13,0
+91542,"Defeat Kel'Thuzad",0,0,4,0,0,0
+91543,"Kill Kel'Thuzad",91542,1,0,51999,0,0
+91544,"Kel'Thuzad kills (Naxxramas)",0,0,4,0,0,0
+91545,Kel'Thuzad,91544,1,0,51999,0,0
+91546,"Bazzalan kills (Ragefire Chasm)",0,1,5,0,0,0
+91548,"Mutanus the Devourer kills (Wailing Caverns)",0,1,5,0,0,0
+91550,"Bazil Thredd kills (Stormwind Stockade)",0,1,5,0,0,0
+91552,"Darkmaster Gandling kills (Scholomance)",0,0,4,0,0,0
+91554,"Baron Rivendare kills (Stratholme)",0,0,4,0,0,0
+94292,"Survivor of the Firelord",0,1,4,0,0,0
+94295,,94292,1,0,52886,0,0
+94296,"Has Died",0,0,4,0,0,0
+94297,,94296,1,0,52885,0,0
+94307,Survivor,0,0,4,0,0,0
+94308,,94307,60,0,52891,0,2
+94311,"Survivor of the Shadow Flame",0,1,4,0,0,0
+94312,,94311,1,0,52893,0,0
+94313,"Survivor of the Old God",0,1,4,0,0,0
+94314,,94313,1,0,52894,0,0
+94315,"Survivor of the Damned",0,1,4,0,0,0
+94316,,94315,1,0,52895,0,0
+95385,"<Hidden> Adventure Awaits - Reach Max Level of Season of Mastery with the buff Adventure Awaits",0,0,4,0,0,0
+95386,,95385,60,0,53349,0,2
+95513,"Lesser Deathstones collected",0,25,4,0,0,4096
+95514,,95513,25,0,53400,0,0
+95515,"Deathstone collected",0,1,5,0,0,4096
+95516,,95515,1,0,53401,0,0
+95610,"The Immortal",0,0,4,0,0,0
+95611,,95610,0,0,53412,0,0
+128587,"Learn a Second Talent Specilization AND Reach level 40",0,0,4,0,0,0
+128588,"Level up to 40.",128587,40,0,52891,1,2
+128589,"Learn a Second Talent Specialization.",128587,1,0,9619,0,2
+150026,"S03 - Mage 25 Collectibles - First Reward",0,7,8,0,0,0
+150027,,150026,1,0,62215,0,0
+150028,,150026,1,0,62216,1,0
+150082,,150026,1,0,62260,2,0
+150083,,150026,1,0,62261,3,0
+150084,,150026,1,0,62262,4,0
+150085,,150026,1,0,62263,5,0
+150086,,150026,1,0,62264,6,0
+150087,,150026,1,0,62265,7,0
+150088,,150026,1,0,62266,8,0
+150542,"(Q) Reach Level 25",0,0,4,0,0,4096
+150543,,150542,25,0,62625,0,0
+151333,"Cast Elixir of Insight",0,0,4,0,0,4096
+151334,,151333,1,0,63042,0,0
+153864,"Unbroken Self-Found Soul",0,0,4,0,0,0
+153865,,153864,1,0,64808,0,0
+154528,"Cast Summer Sapling",0,0,4,0,0,4096
+154529,,154528,1,0,65257,0,0
+154530,"Cast Spring Sapling",0,0,4,0,0,4096
+154531,,154530,1,0,65258,0,0
+154532,"Cast Fall Sapling",0,0,4,0,0,4096
+154533,,154532,1,0,65259,0,0
+154534,"Cast Winter Sapling",0,0,4,0,0,4096
+154535,,154534,1,0,65260,0,0
+155287,"Complete Skonk's Taste Test",0,0,4,0,0,4096
+155288,,155287,1,0,65583,0,0
+156290,"[DNT] S03 - Discoverer's Delight - Reach Level 25 in Phase 2",0,0,4,0,0,0
+156291,,156290,25,0,66241,0,2
+156292,"[DNT] S03 - Discoverer's Delight - Reach Level 40 in Phase 3 (Bracket Change)",0,0,4,0,0,0
+156293,,156292,40,0,66242,0,2
+156294,"[DNT] S03 - Discoverer's Delight - Reach Level 50 in Phase 4 (Bracket Change)",0,0,4,0,0,0
+156295,,156294,50,0,66243,0,2
+156296,"[DNT] S03 - Discoverer's Delight - Reach Level 60 in Phase 5",0,0,4,0,0,0
+156297,,156296,60,0,66244,0,2
+156298,"[DNT] Create a Self-Found Character",0,0,4,0,0,0
+156301,"[DNT] Reach Level 10 on Self-Found Character",0,0,4,0,0,0
+156304,"[DNT] Reach Level 20 on Self-Found Character",0,0,4,0,0,0
+156307,"[DNT] Reach Level 30 on Self-Found Character",0,0,4,0,0,0
+156310,"[DNT] Reach Level 40 on Self-Found Character",0,0,4,0,0,0
+156313,"[DNT] Reach Level 50 on Self-Found Character",0,0,4,0,0,0
+156316,"[DNT] Reach Level 60 on Self-Found Character",0,0,4,0,0,0
+156405,"[DNT] Remove Self-Found Aura",0,0,4,0,0,0
+156407,,156405,1,0,66299,1,0
+157566,"[DNT] S03 - Discoverer's Delight - Reach Level 40 in Phase 3",0,0,4,0,0,0
+157567,,157566,40,0,66857,0,2
+157661,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
+157662,,157661,1,0,66905,0,0
+157664,,157663,1,0,66906,0,0
+161333,,161332,1,0,66939,0,0
+161335,,161334,1,0,66940,0,0
+161337,,161336,1,0,66941,0,0
+161345,"S03 - Cast Murky Sapta Sight (Fire)",0,0,4,0,0,4096
+161346,,161345,1,0,66946,0,0
+161347,"S03 - Cast Murky Sapta Sight (Earth)",0,0,4,0,0,4096
+161348,,161347,1,0,66947,0,0
+161349,"S03 - Cast Murky Sapta Sight (Water)",0,0,4,0,0,4096
+161350,,161349,1,0,66948,0,0
+161525,"[DNT] S03 - Discoverer's Delight - Reach Level 50 in Phase 3",0,0,4,0,0,0
+161526,,161525,50,0,66242,0,2
+161527,"[DNT] S03 - Discoverer's Delight - Reach Level 40 in Phase 3.5 (Bracket Change)",0,0,4,0,0,0
+161528,,161527,40,0,67014,0,2
+161529,"[DNT] S03 - Discoverer's Delight - Reach Level 50 in Phase 3.5",0,0,4,0,0,0
+161530,,161529,50,0,67014,0,2
+161531,"[DNT] S03 - Discoverer's Delight - Reach Level 60 in Phase 4",0,0,4,0,0,0
+161532,,161531,60,0,66243,0,2
+161565,"Arena Victory",0,0,4,0,0,4096
+161566,,161565,1,0,67019,0,0
+166786,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166788,"S03 - 60 - Steppes Warrior Victory",0,0,4,0,0,4096
+166789,,166788,1,0,69419,0,0
+166927,,166926,1,0,69502,0,0
+168117,"S03 - P5 - Speak With Fallen Syndicate Member",0,0,4,0,0,4096
+168118,,168117,1,0,69926,0,0
+168234,"The Molten Core kills (Molten Core)",0,0,4,0,0,0
+168235,"The Molten Core",168234,1,0,69971,0,0
+168721,"S03 - Mage Epic Staff Quest - Translate Fire Scroll",0,0,4,0,0,4098
+168722,,168721,0,0,70332,0,0
+168723,"S03 - Mage Epic Staff Quest - Imbue Essence of Fire",0,0,4,0,0,4098
+168724,,168723,0,0,70333,0,0
+168779,"S03 - Mage Epic Staff Quest - Teleport to Haleh",0,0,4,0,0,4098
+168780,,168779,0,0,70378,0,0
+168781,"S03 - Mage Epic Staff Quest - Teleport to Haleh (Books)",0,0,4,0,0,4098
+168782,,168781,0,0,70379,0,0
+168817,"S03 - Mage Epic Staff Quest - Imbue Essence of Frost",0,0,4,0,0,4098
+168818,,168817,0,0,70400,0,0
+168825,"S03 - Warlock Epic Staff Quest - Open Suspicious Supplies",0,0,4,0,0,4098
+168826,,168825,0,0,70405,0,0
+168828,"S03 - Warlock Epic Staff Quest - Soul of Mischief",0,0,4,0,0,4098
+168829,,168828,0,0,70406,0,0
+168830,"S03 - Warlock Epic Staff Quest - Depleted Scythe of Chaos (Mischief)",0,0,4,0,0,4098
+168831,,168830,0,0,70407,0,0
+168832,"S03 - Warlock Epic Staff Quest - Xirath Progression",0,0,4,0,0,4096
+168833,,168832,0,0,70408,0,2
+168834,"S03 - Warlock Epic Staff Quest - Xirath Start",0,0,4,0,0,4098
+168835,,168834,0,0,70409,0,0
+168842,"S03 - Warlock Epic Staff Quest - Voidwalker Survived",0,0,4,0,0,4098
+168843,,168842,0,0,70415,0,0
+168844,"S03 - Warlock Epic Staff Quest - Soul of the Void",0,0,4,0,0,4098
+168845,,168844,0,0,70416,0,0
+168846,"S03 - Warlock Epic Staff Quest - Depleted Scythe of Chaos (Void)",0,0,4,0,0,4098
+168847,,168846,0,0,70417,0,0
+168848,"S03 - Warlock Epic Staff Quest - Soul of Enthralling",0,0,4,0,0,4098
+168849,,168848,0,0,70418,0,0
+168850,"S03 - Warlock Epic Staff Quest - Depleted Scythe of Chaos (Enthralling)",0,0,4,0,0,4098
+168851,,168850,0,0,70419,0,0
+168852,"S03 - Warlock Epic Staff Quest - Use Scroll of Spatial Mending",0,0,4,0,0,4098
+168853,,168852,0,0,70420,0,0
+168854,"S03 - Warlock Epic Staff Quest - Felhound Summoned",0,0,4,0,0,4096
+168855,,168854,0,0,70421,0,2
+168856,"S03 - Warlock Epic Staff Quest - Soul of Devouring",0,0,4,0,0,4098
+168857,,168856,0,0,70422,0,0
+168858,"S03 - Warlock Epic Staff Quest - Depleted Scythe of Chaos (Devouring)",0,0,4,0,0,4098
+168859,,168858,0,0,70423,0,0
+168860,"S03 - Warlock Epic Staff Quest - Use Scroll of Great Spatial Mending",0,0,4,0,0,4098
+168861,,168860,0,0,70424,0,0
+168862,"S03 - Warlock Epic Staff Quest - Scythe of Chaos",0,0,4,0,0,4098
+168863,,168862,0,0,70425,0,0
+168894,"S03 - Mage Epic Staff Quest - Translate Frost Scroll",0,0,4,0,0,4098
+168895,,168894,0,0,70450,0,0
+168896,"S03 - Mage Epic Staff Quest - Pickup Frost Scroll",0,0,4,0,0,4098
+168897,,168896,0,0,70451,0,0
+168986,"[DNT] S03 - Warlock Epic Staff Quest - Summon Des'Altek",0,0,4,0,0,4098
+168987,,168986,0,0,70507,0,0
+169184,"Collect all Runes - Chest",0,0,4,0,0,0
+169185,"Collect all Runes - Chest",169184,1,0,70625,0,0
+169187,"Collect All Runes - Chest",0,0,4,0,0,0
+169188,"Learn All Runes - Chest",169187,1,0,70627,0,0
+169189,"Collect All Runes - Legs",0,0,4,0,0,0
+169190,,169189,1,0,70626,0,0
+169195,"Rune Learned - Shared Acquisition - Illari Duskfather (40)",0,0,4,0,0,0
+169196,,169195,1,0,70630,0,0
+169197,"Rune Learned - Shared Acquisition - Dark Riders (40)",0,0,4,0,0,0
+169198,,169197,1,0,70631,0,0
+169199,"Rune Learned - Shared Acquisition - Wild Gods (50)",0,0,4,0,0,0
+169200,,169199,1,0,70632,0,0
+169201,"Rune Learned - Shared Acquisition - Ley Lines (50)",0,0,4,0,0,0
+169202,,169201,1,0,70633,0,0
+169203,"Get Shadow Flame Breath Debuff for Warrior Epic Quest",0,0,4,0,0,4096
+169204,,169203,1,0,70635,0,0
+170680,"Nefarius's Corruption",552,1,0,71474,25,2
+208319,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096
+208320,,208319,1,0,103943,0,0
+208325,,208324,1,0,103947,0,0
+210009,"S03 - Scarlet Enclave - Boss - Balnazzar - Achievement Credit",0,0,4,0,0,0
+210010,,210009,1,0,104998,0,0
+210320,"S03 - Scarlet Enclave - Boss - Balnazzar - Backup Achievement Credit",0,0,4,0,0,0
+210321,,210320,1,0,104998,0,0
+18064,,0,0,4,0,0,0
+18070,,0,0,4,0,0,0
+18143,,0,0,4,0,0,0
+18659,,0,0,4,0,0,0
+19395,,0,0,4,0,0,0
+19398,,0,0,4,0,0,0
+19401,,0,0,4,0,0,0
+19408,,0,0,4,0,0,0
+19411,,0,0,4,0,0,0
+19492,,0,0,4,0,0,0
+19670,,0,0,4,0,0,0
+19673,,0,0,4,0,0,0
+19752,,0,0,4,0,0,0
+82062,server-only,0,0,4,0,0,2
+157663,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
+161332,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
+161334,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
+161336,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
+166926,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
+166809,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166811,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166813,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166816,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166818,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166820,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166822,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166868,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+208324,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096

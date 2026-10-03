@@ -12,8 +12,10 @@ local ExpansionKeywords = {
 	all = { 0, 14 },
 	classic = { 0, 2 },
 	tbc = { 2, 3 },
+	bc = { 2, 3 },
 	wrath = { 3, 4 },
 	wotlk = { 3, 4 },
+	cataclysm = { 4, 5 },
 	cata = { 4, 5 },
 	mop = { 5, 6 },
 	wod = { 6, 7 },
@@ -25,19 +27,9 @@ local ExpansionKeywords = {
 	df = { 10, 11 },
 	tww = { 11, 12 },
 	midnight = { 12, 13 },
+	mid = { 12, 13 },
 	tlt = { 13, 14 },
 };
-function AddedWithPatchFilter(group)
-	if group.awp and group.awp == MinPatch then
-		return true;
-	end
-end
-function AddedWithPatchFilterMinMax(group)
-	if group.awp and group.awp >= MinPatch and group.awp < MaxPatch then
-		FilteredPatches[group.awp] = 1;
-		return true;
-	end
-end
 local function GetPatchString(patch)
 	patch = tonumber(patch)
 	return patch and (math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 100) .. "." .. (patch % 10))
@@ -46,15 +38,19 @@ local function ParsePatch(cmd)
 	local expansionKey = ExpansionKeywords[cmd];
 	if expansionKey then
 		return expansionKey[1] * 10000, expansionKey[2] * 10000;
+	elseif cmd == "current" then
+		return app.GameBuildVersion;
 	else
 		local patch = 0;
 		local major, minor, build = ("."):split(cmd);
+		major = tonumber(major)
+		if not major then return 0; end
 		if minor then
 			if build then patch = patch + tonumber(build); end
 			patch = patch + (tonumber(minor) * 100);
 			patch = patch + (tonumber(major) * 10000);
 		else
-			patch = tonumber(major);
+			patch = tonumber(major) * 10000;
 		end
 		if patch and patch > 0 then
 			while patch < 10000 do patch = patch * 10; end
@@ -77,6 +73,11 @@ local function ParseCommand(self, cmd)
 			MaxPatch = final;
 			dirty = true;
 		end
+		-- for simplicity in processing, a single patch will be both the min and max
+		if not MaxPatch then
+			MaxPatch = MinPatch + 1
+		end
+		-- app.PrintDebug("patch range",MinPatch,MaxPatch,dirty)
 		if dirty then
 			wipe(self.data.g);
 			collectgarbage();
@@ -84,12 +85,38 @@ local function ParseCommand(self, cmd)
 		end
 	end
 end
-
+-- Search Info
+local SearchInfo = {
+	field = "awp",
+	-- value = MinPatch,
+	-- drops = {},
+	searchcriteria = {
+		__SearchValueCriteriaMinMax = {
+			function(o,field,value)
+				local p = o[field]
+				if not p then return end
+				if p >= value and p < MaxPatch then
+					FilteredPatches[p] = 1
+					return true
+				end
+			end
+		},
+		__RecursiveFilterCriteria = {
+			-- Exclusion of 'Things' which are not the specific patch
+			function(o) return o.g or o.awp end
+		},
+	},
+}
+local function UpdateSearchInfo()
+	SearchInfo.searchcriteria.SearchValueCriteria = MaxPatch and SearchInfo.searchcriteria.__SearchValueCriteriaMinMax or nil
+end
 
 -- Implementation
 app:CreateWindow("Added With Patch", {
 	Commands = { "attawp" },
-	OnCommand = function(self, cmd)
+	RootCommands = { "awp" },
+	OnCommand = function(self, args, params)
+		local cmd = args[1];
 		if cmd and cmd ~= "" then
 			ParseCommand(self, cmd);
 			if self:IsShown() then
@@ -100,6 +127,7 @@ app:CreateWindow("Added With Patch", {
 	OnLoad = function(self, settings)
 		MaxPatch = settings.MaxPatch;
 		MinPatch = settings.MinPatch;
+		UpdateSearchInfo()
 	end,
 	OnSave = function(self, settings)
 		settings.MaxPatch = MaxPatch;
@@ -107,11 +135,10 @@ app:CreateWindow("Added With Patch", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			{	-- Patch
-				prefix = "Patch: ",
-				text = RETRIEVING_DATA,
+			app.CreateRawText(RETRIEVING_DATA, {	-- Patch
+				prefix = L.PATCH,
 				icon = 134941,
-				description = "Press this button to change the patch.\n\nChanging this value will filter out items that get added during the given patch.",
+				description = L.PATCH_TOOLTIP,
 				visible = true,
 				priority = 6,
 				OnClick = function(row, button)
@@ -126,7 +153,7 @@ app:CreateWindow("Added With Patch", {
 							str = "0-" .. GetPatchString(MaxPatch);
 						end
 					end
-					app:ShowPopupDialogWithEditBox("Please enter a new patch", str, function(cmd)
+					app:ShowPopupDialogWithEditBox(L.PATCH_EDIT_BOX, str or app.GameBuildVersion, function(cmd)
 						ParseCommand(self, cmd);
 					end);
 					return true;
@@ -144,16 +171,15 @@ app:CreateWindow("Added With Patch", {
 						end
 					end
 					if str then
-						data.text = data.prefix .. Colorize(str, app.Colors.AddedWithPatch);
+						data.strKey = data.prefix .. Colorize(str, app.Colors.AddedWithPatch);
 					else
-						data.text = data.prefix;
+						data.strKey = data.prefix;
 					end
-					return true;
+					return app.AlwaysShowUpdate(data);
 				end,
-			},
+			}),
 		};
-		self.data = {
-			text = L.ADDED_WITH_PATCH,
+		self:SetData(app.CreateRawText(L.ADDED_WITH_PATCH, {
 			icon = app.asset("Interface_Newly_Added"),
 			description = L.ADDED_WITH_PATCH_TOOLTIP,
 			visible = true,
@@ -164,38 +190,51 @@ app:CreateWindow("Added With Patch", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					for i,option in ipairs(options) do
-						option.parent = data;
-						tinsert(g, option);
-					end
+					app.NestObjects(t, options)
 					wipe(FilteredPatches);
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, MaxPatch and AddedWithPatchFilterMinMax or AddedWithPatchFilter);
+					local results = app:BuildSearchResponseRetailStyle(SearchInfo.field, MinPatch, SearchInfo.drops, SearchInfo.searchcriteria);
+					-- app.PrintDebug("range search",#results)
+					-- app.PrintTable(SearchInfo)
 					if results and #results > 0 then
+						local filteredPatchResults = {}
+						for i=1,#results do
+							app.AssignChildren(results[i])
+						end
+						-- local raw = app.CreateRawText("RAW RESULTS")
+						-- app.NestObjects(raw, results)
+						-- app.NestObject(t, raw)
 						if MaxPatch then
 							local patchList = {};
 							for key,_ in pairs(FilteredPatches) do
 								tinsert(patchList, key);
 							end
 							table.sort(patchList);
+							local GetRelativeValue = app.GetRelativeValue
 							for i,patch in ipairs(patchList) do
-								local cache = app:BuildSearchFilteredResponse(results, function(group)
-									if group.awp and group.awp == patch then
-										return true;
-									end
-								end);
+								local cache = app:BuildTargettedSearchResponse(results, SearchInfo.field, patch, nil
+								, {RecursiveFilterCriteria = {function(o) return GetRelativeValue(o, "awp") == patch or (o.g and #o.g > 0) end}})
 								if cache and #cache > 0 then
-									tinsert(g, app.CreateExpansion(patch * 0.0001, {g=cache}));
+									app.ArrayAppend(filteredPatchResults, cache)
+									local patchHeader = app.CreateExpansion(patch * 0.0001, {
+										skipFull = true,
+										SortType = "Global",
+									});
+									app.NestObjects(patchHeader, cache)
+									if patchHeader.patchString then patchHeader.name = patchHeader.patchString; end
+									app.NestObject(t, patchHeader)
 								end
 							end
 						else
-							for i,result in ipairs(results) do
-								tinsert(g, result);
-							end
+							app.NestObjects(t, results)
 						end
-						self:AssignChildren();
+						app.NestObject(t, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(filteredPatchResults))
 					end
+					self:AssignChildren();
 				end
 			end,
-		};
+		}));
+	end,
+	OnRebuild = function()
+		UpdateSearchInfo()
 	end,
 });

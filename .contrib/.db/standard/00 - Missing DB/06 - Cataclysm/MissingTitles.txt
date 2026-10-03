@@ -1,0 +1,6 @@
+4.0.1.12911
+title(144),	-- Warbringer %s \\ Guardian of %s \\ %s, Survivor of the Firelord
+4.3.4.15595
+title(182),	-- %s, Hero of the Alliance
+title(183),	-- %s, Hero of the Horde
+title(193),	-- Cataclysmic Gladiator %s

@@ -63,7 +63,7 @@ end
 app.CreateIllusion = app.CreateClass(CLASSNAME, KEY, illusionFields,
 "WithItem", {
 	ImportFrom = "Item",
-	ImportFields = app.IsRetail and { "name", "link", "icon", "tsm", "costCollectibles", "AsyncRefreshFunc" } or { "name", "link", "icon", "tsm" },
+	ImportFields = { "name", "link", "icon", "tsm", "costCollectibles", "AsyncRefreshFunc" },
 	text = function(t)
 		return Colorize("["..(t.name or RETRIEVING_DATA).."]", app.Colors.Illusion)
 	end
@@ -77,5 +77,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		accountWideData.Illusions = AccountWideIllusionData;
 	end
 end);
+app.AddEventHandler("OnLoad", function()
+	if app.L.FILTER_ID_TYPES[103] then
+		app.AddDynamicCategoryHeader({ id = "illusionID", name = app.L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") });
+		app.AddRandomSearchCategory("Illusions", "illusionID", app.L.FILTER_ID_TYPES[103], nil, app.asset("Category_Illusions"));
+	end
+end);
 
+app.AddGenericFieldConverter(KEY)
 app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)

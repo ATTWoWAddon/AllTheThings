@@ -2,18 +2,18 @@
 local _, app = ...
 
 -- Globals
-local rawget, select, pairs, tonumber, math_floor
-	= rawget, select, pairs, tonumber, math.floor
+local rawget, select, pairs, tonumber, math_floor,pcall
+	= rawget, select, pairs, tonumber, math.floor,pcall
 local GetCategoryInfo,GetAchievementInfo,GetAchievementCriteriaInfo,GetLFGDungeonInfo
 	= GetCategoryInfo,GetAchievementInfo,GetAchievementCriteriaInfo,GetLFGDungeonInfo
 
 -- WoW API Cache
 
 -- Module
-local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- App
+local GetRawFieldContainer = app.GetRawFieldContainer
 local SearchForObject = app.SearchForObject
 local CreateClassInstance = app.CreateClassInstance
 
@@ -42,7 +42,9 @@ local AlternateDataTypes = {
 		local ach = math_floor(id);
 		local crit = math_floor(100 * (id - ach) + 0.005);
 		local icon = select(10, GetAchievementInfo(ach))
-		return { name = GetAchievementCriteriaInfo(ach, crit), icon = icon };
+		-- 12.1: Blizzard breaks this API call, fascinating
+		local success, name = pcall(GetAchievementCriteriaInfo, ach, crit)
+		return { name = success and name or UNKNOWN, icon = icon };
 	end,
 	d = function(id)
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
@@ -74,14 +76,14 @@ local function GetAutomaticHeaderData(id, type)
 		return altFunc(id);
 	end
 	local typeID = HeaderTypeAbbreviations[type] or type;
-	local obj = SearchForObject(typeID, id, "key") or CreateClassInstance(typeID,id)
+	local obj = (GetRawFieldContainer(typeID) and SearchForObject(typeID, id, "key")) or CreateClassInstance(typeID,id)
 	if obj then
-		-- app.PrintDebug("GetAutomaticHeaderData", id, typeID, obj.text, obj.key, obj[obj.key]);
+		-- app.PrintDebug("GetAutomaticHeaderData",id,typeID,obj.text,obj.key,obj.keyval,obj.name,obj.link)
 		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
 		local name = obj.name or obj.link;
 		return { name = not IsRetrieving(name) and name or nil, icon = obj.icon };
 	end
-	app.print("Failed finding object/function for automatic header",type,id);
+	app.report("Failed finding object/function for automatic header",type,id);
 end
 -- Allows for directly accessing the Automatic Header Name logic for a specific ID/Type combination
 app.GetAutomaticHeaderData = GetAutomaticHeaderData;
@@ -97,22 +99,29 @@ local function CacheInfo(t, field)
 			_t[key] = value;
 		end
 	else
-		print("FAILED TO FIND AUTO HEADER DATA", id, type);
+		app.report("FAILED TO FIND AUTO HEADER DATA", id, type);
+	end
+	-- determine an icon from any providers otherwise
+	if not _t.icon then
+		_t.icon = app.GetIconFromProviders(t)
 	end
 	if field then return _t[field]; end
 end
 
 -- Automatic Type Header
 do
-	local KEY = "headerID"
-	app.CreateHeader = app.CreateClass("AutoHeader", KEY, {
+	app.CreateHeader = app.CreateClass("AutoHeader", "autoHeaderID", {
 		IsClassIsolated = true,
 		headerCode = function(t)
 			if t.type then
-				return t.type..t.headerID;
+				return t.type..t.autoHeaderID;
 			else
-				return t.headerID;
+				return t.autoHeaderID;
 			end
+		end,
+		headerID = function(t)
+			-- CRIEVE NOTE: This is because there's mini list logic that sorts by this.
+			return t.autoHeaderID;
 		end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
@@ -125,15 +134,7 @@ do
 		end,
 	},
 	"WithQuest", {
-		trackable = function(t)
-			-- raw repeatable quests can't really be tracked since they immediately unflag
-			return not rawget(t, "repeatable") and t.repeatable
-		end,
-		saved = function(t)
-			return IsQuestFlaggedCompleted(t.questID)
-		end,
-		repeatable = function(t)
-			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
-		end,
+		ImportFrom = "Quest",
+		ImportFields = { "repeatable", "trackable", "saved" },
 	}, (function(t) return t.questID end))
 end

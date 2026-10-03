@@ -1,0 +1,355 @@
+1.60.1.69876
+r(2671),	-- Rough Bronze Bracers
+r(8366),	-- Ironforge Chain
+r(8368),	-- Ironforge Gauntlets
+r(9818),	-- Barbaric Iron Boots
+r(9933),	-- Heavy Mithril Pants
+r(9942),	-- Mithril Plate Gloves
+r(9945),	-- Ornate Mithril Pants
+r(9950),	-- Ornate Mithril Gloves
+r(11643),	-- Golden Scale Gauntlets
+r(16960),	-- Thorium Greatsword
+r(16967),	-- Inlaid Thorium Hammer
+r(16980),	-- Rune Edge
+r(21161),	-- Sulfuron Hammer
+r(22757),	-- Elemental Sharpening Stone
+r(23632),	-- Girdle of the Dawn
+r(23633),	-- Gloves of the Dawn
+r(24136),	-- Bloodsoul Breastplate
+r(24137),	-- Bloodsoul Shoulders
+r(24138),	-- Bloodsoul Gauntlets
+r(24139),	-- Darksoul Breastplate
+r(24140),	-- Darksoul Leggings
+r(24141),	-- Darksoul Shoulders
+r(24912),	-- Darkrune Gauntlets
+r(24913),	-- Darkrune Helm
+r(24914),	-- Darkrune Breastplate
+r(27585),	-- Heavy Obsidian Belt
+r(27586),	-- Jagged Obsidian Shield
+r(27587),	-- Thick Obsidian Breastplate
+r(27588),	-- Light Obsidian Belt
+r(27589),	-- Black Grasp of the Destroyer
+r(27590),	-- Obsidian Mail Tunic
+r(28461),	-- Ironvine Breastplate
+r(28462),	-- Ironvine Gloves
+r(28463),	-- Ironvine Belt
+r(427061),	-- Mantle of the Second War
+r(429348),	-- Shifting Silver Breastplate
+r(430397),	-- Blackfathom Sharpening Stone
+r(435906),	-- Reflective Truesilver Braincage
+r(435908),	-- Tempered Interference-Negating Helmet
+r(435910),	-- Low-Background Truesilver Plates
+r(439120),	-- Golden Scale Gauntlets
+r(439122),	-- Golden Scale Boots
+r(439124),	-- Golden Scale Cuirass
+r(439126),	-- Golden Scale Coif
+r(439128),	-- Moonsteel Broadsword
+r(439130),	-- Golden Scale Shoulders
+r(439132),	-- Golden Scale Leggings
+r(446179),	-- Shoulderplates of Dread
+r(446188),	-- Fearmonger's Shoulderguards
+r(446191),	-- Baleful Pauldrons
+r(460460),	-- Sulfuron Hammer
+r(461647),	-- Skyrider's Masterwork Stormhammer
+r(461651),	-- Fiery Plate Gauntlets of the Hidden Technique
+r(461667),	-- Tempered Dark Iron Plate
+r(461669),	-- Refined Arcanite Champion
+r(461671),	-- Stronger-hold Gauntlets
+r(461675),	-- Refined Arcanite Reaper
+r(461712),	-- Refined Hammer of the Titans
+r(461714),	-- Desecration
+r(461716),	-- Deadly Heartseeker
+r(461718),	-- Tranquility
+r(461730),	-- Hardened Frostguard
+r(461733),	-- Finely-Enchanted Battlehammer
+r(461735),	-- Invincible Mail
+r(461737),	-- Tempest Gauntlets
+r(461739),	-- Warcrest of the Great Chief
+r(461743),	-- Sageblade of the Archmagus
+r(1213481),	-- Razorspike Headcage
+r(1213484),	-- Razorspike Shoulderplate
+r(1213490),	-- Razorspike Battleplate
+r(1213492),	-- Obsidian Reaver
+r(1213498),	-- Obsidian Champion
+r(1213500),	-- Obsidian Destroyer
+r(1213502),	-- Obsidian Stormhammer
+r(1213504),	-- Obsidian Sageblade
+r(1213506),	-- Obsidian Defender
+r(1213643),	-- Obsidian Grinding Stone
+r(1213709),	-- Ironvine Belt
+r(1213711),	-- Ironvine Gloves
+r(1213715),	-- Ironvine Breastplate
+r(1213746),	-- Heavy Obsidian Belt
+r(1213748),	-- Light Obsidian Belt
+r(1214137),	-- Obsidian Heartseeker
+r(1214257),	-- Black Grasp of the Destroyer
+r(1214270),	-- Jagged Obsidian Shield
+r(1214274),	-- Obsidian Mail Tunic
+r(1214309),	-- Dreamscale Visor
+r(1215507),	-- Thick Obsidian Breastplate
+r(1223787),	-- Icebane Breastplate
+r(1223789),	-- Icebane Gauntlets
+r(1223791),	-- Icebane Bracers
+r(1224631),	-- Scarlet Soldier's Helmet
+r(1224632),	-- Scarlet Soldier's Spaulders
+r(1224633),	-- Scarlet Soldier's Chestplate
+r(1224635),	-- Scarlet Soldier's Protectors
+r(1224636),	-- Scarlet Soldier's Grips
+r(1224637),	-- Scarlet Soldier's Waistguard
+r(1224638),	-- Scarlet Soldier's Legplates
+r(1224639),	-- Scarlet Soldier's Stompers
+r(1240944),	-- Blacksmithing
+r(1240955),	-- Blacksmithing
+r(1240966),	-- Blacksmithing
+r(1240979),	-- Blacksmithing
+r(1252238),	-- Guard's Chain Shirt
+r(1252261),	-- Crusader's Gloves
+r(1252282),	-- Hard Gold Cuirass
+r(1252283),	-- Hard Gold Boots
+r(1252284),	-- Hard Gold Bracers
+r(1252285),	-- Hard Gold Leggings
+r(1252286),	-- Hard Gold Coif
+r(1252288),	-- Hard Gold Pauldrons
+r(1252289),	-- Shining Mithril Breastplate
+r(1252290),	-- Shining Mithril Pauldrons
+r(1252291),	-- Shining Mithril Boots
+r(1252293),	-- Shining Mithril Pants
+r(1252294),	-- Shining Mithril Gauntlet
+r(1252295),	-- Officer's Boots
+r(1252296),	-- Sentinel's Boots
+r(1252297),	-- Warder's Boots
+r(1252298),	-- Prefect's Boots
+r(1252299),	-- Justicar's Boots
+r(1252300),	-- Officer's Gloves
+r(1252301),	-- Sentinel's Gloves
+r(1252302),	-- Warder's Gloves
+r(1252303),	-- Prefect's Gloves
+r(1252304),	-- Justicar's Gloves
+r(1252305),	-- Officer's Belt
+r(1252306),	-- Sentinel's Belt
+r(1252307),	-- Warder's Belt
+r(1252308),	-- Prefect's Belt
+r(1252309),	-- Justicar's Belt
+r(1252315),	-- Officer's Gauntlet
+r(1252316),	-- Sentinel's Gauntlet
+r(1252317),	-- Warder's Gauntlet
+r(1252318),	-- Prefect's Gauntlet
+r(1252319),	-- Justicar's Gauntlet
+r(1252335),	-- Blessed Plate Pauldrons
+r(1252336),	-- Blessed Plate Boots
+r(1252337),	-- Blessed Plate Gauntlet
+r(1252338),	-- Imperial Plate Gauntlets
+r(1252339),	-- Blessed Plate Bracers
+r(1252340),	-- Blessed Plate Leggings
+r(1252341),	-- Blessed Plate Belt
+r(1252342),	-- Blessed Plate Helm
+r(1252343),	-- Blessed Plate Chest
+r(1252347),	-- Champion's Legplates
+r(1252348),	-- Stalwart Helm
+r(1252349),	-- Martyr's Legplates
+r(1252350),	-- Breastplate of Salvation
+r(1252352),	-- Bronze Dory
+r(1252353),	-- Iron Fists
+r(1252354),	-- Steel Spear
+r(1252356),	-- Mithril Shortsword
+r(1252358),	-- Mithril Claws
+r(1252359),	-- Mithril Claymore
+r(1252360),	-- Mithril Stiletto
+r(1252361),	-- Charged Mithril Battleaxe
+r(1252364),	-- Thorium Poleaxe
+r(1252988),	-- Earthcrusher's Adaptive Chestplate
+r(1252989),	-- Earthcrusher's Adaptive Armguards
+r(1252990),	-- Earthcrusher's Adaptive Girdle
+r(1253001),	-- Earthweaver's Adaptive Plate
+r(1253002),	-- Earthweaver's Adaptive Links
+r(1253003),	-- Earthweaver's Adaptive Waistguard
+r(1263073),	-- Master Forge
+r(1277780),	--
+r(1301426),	-- Cloudy Skyforged Greaves
+r(1301450),	-- Azure Skyforged Greaves
+r(1301534),	-- Azure Skyforged Helm
+r(1302598),	-- Rough Copper Chain Boots
+r(1306533),	-- Ironwood Blade
+r(1306534),	-- Forest Defender's Axe
+r(1306535),	-- Greenhammer
+r(1306536),	-- Evergreen Shield
+r(1306537),	-- Depleted Thorium Sabatons
+r(1306538),	-- Heavy Thorium Gauntlets
+r(1306539),	-- Azerothium Legplates
+r(1317962),	-- Cracked Blacksmith Hammer
+r(1317963),	-- Mithril Blacksmith Hammer
+r(1317964),	-- Arcanite Blacksmith Hammer
+
+
+
+
+Missing in Blacksmithing
+
+1.60.1.69876
+r(2671),	-- Rough Bronze Bracers
+r(3501),	-- Green Iron Bracers
+r(3502),	-- Green Iron Helm
+r(3506),	-- Green Iron Leggings
+r(3508),	-- Green Iron Hauberk
+r(7223),	-- Golden Scale Bracers
+r(8366),	-- Ironforge Chain
+r(8368),	-- Ironforge Gauntlets
+r(9787),	-- Weaponsmith
+r(9788),	-- Armorsmith
+r(9916),	-- Steel Breastplate
+r(9926),	-- Heavy Mithril Shoulder
+r(9928),	-- Heavy Mithril Gauntlet
+r(9931),	-- Mithril Plate Pants
+r(9935),	-- Steel Plate Helm
+r(9942),	-- Mithril Plate Gloves
+r(16660),	-- Dawnbringer Shoulders
+r(16960),	-- Thorium Greatsword
+r(16965),	-- Bleakwood Hew
+r(16967),	-- Inlaid Thorium Hammer
+r(16980),	-- Rune Edge
+r(16986),	-- Blood Talon
+r(16987),	-- Darkspear
+r(17039),	-- Master Swordsmith
+r(17040),	-- Master Hammersmith
+r(17041),	-- Master Axesmith
+r(427061),	-- Mantle of the Second War
+r(429348),	-- Shifting Silver Breastplate
+r(430397),	-- Blackfathom Sharpening Stone
+r(435906),	-- Reflective Truesilver Braincage
+r(435908),	-- Tempered Interference-Negating Helmet
+r(435910),	-- Low-Background Truesilver Plates
+r(439120),	-- Golden Scale Gauntlets
+r(439122),	-- Golden Scale Boots
+r(439124),	-- Golden Scale Cuirass
+r(439126),	-- Golden Scale Coif
+r(439128),	-- Moonsteel Broadsword
+r(439130),	-- Golden Scale Shoulders
+r(439132),	-- Golden Scale Leggings
+r(446179),	-- Shoulderplates of Dread
+r(446188),	-- Fearmonger's Shoulderguards
+r(446191),	-- Baleful Pauldrons
+r(460460),	-- Sulfuron Hammer
+r(461647),	-- Skyrider's Masterwork Stormhammer
+r(461651),	-- Fiery Plate Gauntlets of the Hidden Technique
+r(461667),	-- Tempered Dark Iron Plate
+r(461669),	-- Refined Arcanite Champion
+r(461671),	-- Stronger-hold Gauntlets
+r(461675),	-- Refined Arcanite Reaper
+r(461712),	-- Refined Hammer of the Titans
+r(461714),	-- Desecration
+r(461716),	-- Deadly Heartseeker
+r(461718),	-- Tranquility
+r(461730),	-- Hardened Frostguard
+r(461733),	-- Finely-Enchanted Battlehammer
+r(461735),	-- Invincible Mail
+r(461737),	-- Tempest Gauntlets
+r(461739),	-- Warcrest of the Great Chief
+r(461743),	-- Sageblade of the Archmagus
+r(1213481),	-- Razorspike Headcage
+r(1213484),	-- Razorspike Shoulderplate
+r(1213490),	-- Razorspike Battleplate
+r(1213492),	-- Obsidian Reaver
+r(1213498),	-- Obsidian Champion
+r(1213500),	-- Obsidian Destroyer
+r(1213502),	-- Obsidian Stormhammer
+r(1213504),	-- Obsidian Sageblade
+r(1213506),	-- Obsidian Defender
+r(1213643),	-- Obsidian Grinding Stone
+r(1213709),	-- Ironvine Belt
+r(1213711),	-- Ironvine Gloves
+r(1213715),	-- Ironvine Breastplate
+r(1213746),	-- Heavy Obsidian Belt
+r(1213748),	-- Light Obsidian Belt
+r(1214137),	-- Obsidian Heartseeker
+r(1214257),	-- Black Grasp of the Destroyer
+r(1214270),	-- Jagged Obsidian Shield
+r(1214274),	-- Obsidian Mail Tunic
+r(1214309),	-- Dreamscale Visor
+r(1215507),	-- Thick Obsidian Breastplate
+r(1223787),	-- Icebane Breastplate
+r(1223789),	-- Icebane Gauntlets
+r(1223791),	-- Icebane Bracers
+r(1224631),	-- Scarlet Soldier's Helmet
+r(1224632),	-- Scarlet Soldier's Spaulders
+r(1224633),	-- Scarlet Soldier's Chestplate
+r(1224635),	-- Scarlet Soldier's Protectors
+r(1224636),	-- Scarlet Soldier's Grips
+r(1224637),	-- Scarlet Soldier's Waistguard
+r(1224638),	-- Scarlet Soldier's Legplates
+r(1224639),	-- Scarlet Soldier's Stompers
+r(1240944),	-- Blacksmithing
+r(1240955),	-- Blacksmithing
+r(1240966),	-- Blacksmithing
+r(1240979),	-- Blacksmithing
+r(1252238),	-- Guard's Chain Shirt
+r(1252261),	-- Crusader's Gloves
+r(1252282),	-- Hard Gold Cuirass
+r(1252283),	-- Hard Gold Boots
+r(1252284),	-- Hard Gold Bracers
+r(1252285),	-- Hard Gold Leggings
+r(1252286),	-- Hard Gold Coif
+r(1252288),	-- Hard Gold Pauldrons
+r(1252289),	-- Shining Mithril Breastplate
+r(1252290),	-- Shining Mithril Pauldrons
+r(1252291),	-- Shining Mithril Boots
+r(1252293),	-- Shining Mithril Pants
+r(1252294),	-- Shining Mithril Gauntlet
+r(1252295),	-- Officer's Boots
+r(1252296),	-- Sentinel's Boots
+r(1252297),	-- Warder's Boots
+r(1252298),	-- Prefect's Boots
+r(1252299),	-- Justicar's Boots
+r(1252300),	-- Officer's Gloves
+r(1252301),	-- Sentinel's Gloves
+r(1252302),	-- Warder's Gloves
+r(1252303),	-- Prefect's Gloves
+r(1252304),	-- Justicar's Gloves
+r(1252305),	-- Officer's Belt
+r(1252306),	-- Sentinel's Belt
+r(1252307),	-- Warder's Belt
+r(1252308),	-- Prefect's Belt
+r(1252309),	-- Justicar's Belt
+r(1252335),	-- Blessed Plate Pauldrons
+r(1252336),	-- Blessed Plate Boots
+r(1252337),	-- Blessed Plate Gauntlet
+r(1252338),	-- Imperial Plate Gauntlets
+r(1252339),	-- Blessed Plate Bracers
+r(1252340),	-- Blessed Plate Leggings
+r(1252341),	-- Blessed Plate Belt
+r(1252342),	-- Blessed Plate Helm
+r(1252343),	-- Blessed Plate Chest
+r(1252347),	-- Champion's Legplates
+r(1252348),	-- Stalwart Helm
+r(1252349),	-- Martyr's Legplates
+r(1252350),	-- Breastplate of Salvation
+r(1252352),	-- Bronze Dory
+r(1252353),	-- Iron Fists
+r(1252354),	-- Steel Spear
+r(1252356),	-- Mithril Shortsword
+r(1252358),	-- Mithril Claws
+r(1252359),	-- Mithril Claymore
+r(1252360),	-- Mithril Stiletto
+r(1252361),	-- Charged Mithril Battleaxe
+r(1252364),	-- Thorium Poleaxe
+r(1252988),	-- Earthcrusher's Adaptive Chestplate
+r(1252989),	-- Earthcrusher's Adaptive Armguards
+r(1252990),	-- Earthcrusher's Adaptive Girdle
+r(1253001),	-- Earthweaver's Adaptive Plate
+r(1253002),	-- Earthweaver's Adaptive Links
+r(1253003),	-- Earthweaver's Adaptive Waistguard
+r(1263073),	-- Master Forge
+r(1277780),	--
+r(1301426),	-- Cloudy Skyforged Greaves
+r(1301450),	-- Azure Skyforged Greaves
+r(1301534),	-- Azure Skyforged Helm
+r(1302598),	-- Rough Copper Chain Boots
+r(1306533),	-- Ironwood Blade
+r(1306534),	-- Forest Defender's Axe
+r(1306535),	-- Greenhammer
+r(1306536),	-- Evergreen Shield
+r(1306537),	-- Depleted Thorium Sabatons
+r(1306538),	-- Heavy Thorium Gauntlets
+r(1306539),	-- Azerothium Legplates
+r(1317962),	-- Cracked Blacksmith Hammer
+r(1317963),	-- Mithril Blacksmith Hammer
+r(1317964),	-- Arcanite Blacksmith Hammer

@@ -1,0 +1,18 @@
+createLocalizationString({
+	readable = "Breadcrumbs",
+	constant = "BREADCRUMBS",
+	export = true,
+	text = {
+		en = "Breadcrumbs",
+		de = "Brotkrümelquests",
+		es = "Misiones de exploración opcionales",
+		mx = "Misiones de exploración optativas",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: pt = "",
+		ru = "Задания-\"хлебные крохи\"",
+		-- TODO: ko = "",
+		cn = "线索任务",
+		tw = "無關緊要",
+	},
+})

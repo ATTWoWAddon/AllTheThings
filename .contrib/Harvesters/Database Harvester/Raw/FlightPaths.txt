@@ -156,6 +156,22 @@
 2913@@@Quest Path 9571: S03 - Runecarving - Shaman - Level 40 Quest - 6 - KJA
 2914@@@Quest Path 9574: S03 - Runecarving - Shaman - Level 40 Quest - 6 - Flight Back - KJA
 2930@@@Quest Path 9620: S03 - Runecarving - Shaman - Level 40 Rune - Corrupted Fire Totem - Tal Taxi Path - KJA
+1.60.1.69876
+559@@@Summit of Eternity, Mount Hyjal
+2913@@@Quest Path 9571: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - H - 6
+2914@@@Quest Path 9574: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - H - 6 - Flight Back
+3203@@@Rog'mar, Riverglades
+3205@@@Tidegear Coast, Dun Morogh
+3206@@@zzOLDBolder'ok, Riverglades
+3207@@@zzOLDRiverglades, Farholde Keep
+3208@@@zzOLDPowderfuse Port, Riverglades
+3242@@@Tainted Foothills, Mount Hyjal
+3260@@@Quest Path 11512: 1.60.0 - Dalaran Translocation Path
+3261@@@Quest Path 11515: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - A - 6
+3262@@@Quest Path 11517: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - A - 6 - Flight Back
+3274@@@Powderfuse Port, Riverglades
+3275@@@Powderfuse Port, Riverglades
+3276@@@Farholde Keep, Riverglades
 2.0.0.6080
 24@@@Generic, World Target 002
 34@@@Transport, Booty Bay
@@ -474,6 +490,8 @@
 438@@@Durotar - ET - CC Prologue Troll Taxi Bat Start
 439@@@Durotar - ET - CC Prologue Troll Recruit End
 440@@@Durotar - ET - CC Prologue - Troll Battle End
+3.80.0.65990
+3251@@@Naxxramas, Dragonblight
 4.0.1.12911
 25@@@Crossroads, Northern Barrens
 26@@@Lor'danel, Darkshore
@@ -2890,3 +2908,52 @@
 3239@@@Quest Path 11403: 12.0 Z1 - Eversong - Teleporters - Upper Rookery - Going Down - Force Taxi - SJC
 3240@@@Quest Path 11404: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Up - Force Taxi - SJC
 3241@@@Quest Path 11405: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Down - Force Taxi - SJC
+12.0.1.65448
+3123@@@Masters' Perch, Voidstorm
+12.0.5.66330
+3201@@@Quest Path 11282: 12.0.5 Event - Prop Hunt - Teleporter - Upper > Lower
+3202@@@Quest Path 11283: 12.0.5 Event - Prop Hunt - Teleporter - Lower > Upper
+12.0.7.67227
+3267@@@Val Outpost
+3268@@@Glacial Reservoir
+3269@@@Void Acropolis
+3270@@@Steam Ravine
+3277@@@Naigtal Outpost
+3278@@@Fungal Processing
+3279@@@Transit Hub
+3280@@@Fungal Forest
+12.0.7.67525
+3267@@@Umbral Base Camp
+3268@@@The Devouring Ingress
+3277@@@Umbral Base Camp
+3278@@@Sporeforge
+3279@@@Nexus Port
+3280@@@Extraction Coast
+12.1.0.68209
+3168@@@Tokka's Landing, The Coiled Isle
+3284@@@12.1 Ulatek - Faction Feature - Temple - Traversal - Flight Master - Eastern Entrance (HCR)
+3285@@@Amani Foothold
+3286@@@Eastern Entrance
+3288@@@Amani Foothold, Vaults of Atal'Utek
+12.1.5.69594
+3300@@@Labyrinth, Chamber of Rites
+3301@@@Labyrinth, Entrance to The Reliquary
+3302@@@12.1.5 Labyrinth - Rewards - Soulgate - Taxi - Chamber 1a
+3303@@@12.1.5 Labyrinth - Rewards - Soulgate - Taxi - Chamber 2b
+3304@@@Labyrinth, The Reliquary
+3305@@@Labyrinth, Entrance to Halazzi's Lair
+3306@@@Labyrinth, Halazzi's Lair
+3307@@@Labyrinth, Entrance to The Central Chamber
+3308@@@Labyrinth, Central Chamber
+3309@@@Labyrinth, Entrance to The Catacombs
+3310@@@Labyrinth, The Catacombs
+3311@@@Labyrinth, Entrance to The Central Chamber
+3312@@@Labyrinth, Entrance to The Cave Towers
+3313@@@Labyrinth, The Cave Towers
+3314@@@Labyrinth, Entrance to Jan'alai's Refuge
+3315@@@Labyrinth, Jan'alai's Refuge
+3316@@@Labyrinth, Entrance to Akil'zon's Roost
+3317@@@Labyrinth, Akil'zon's Roost
+3318@@@Labyrinth, Entrance to Nalorakk's Den
+3319@@@Labyrinth, Nalorakk's Den
+3329@@@Labyrinth, Entrance to The Catacombs

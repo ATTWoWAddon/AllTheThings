@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ATT
 {
@@ -11,6 +12,8 @@ namespace ATT
     /// </summary>
     public static partial class Export
     {
+        private static Regex DirectLuaFieldName = new Regex(@"^[A-z][A-z0-9]*$", RegexOptions.Compiled);
+
         /// <summary>
         /// Whether debug information will be printed from Export functions
         /// </summary>
@@ -57,7 +60,7 @@ namespace ATT
             ObjectData.Create("currencyID", "cu", "_.CreateCurrencyClass", "f");
             ObjectData.Create<ItemData>("itemID", "i", "_.CreateItem");
             ObjectData.Create("factionID", "faction", "_.CreateFaction", "f");
-            ObjectData.Create<AchievementData>("achID", "ach", "_.CreateAchievement", "f", "modID");
+            ObjectData.Create<AchievementData>("achID", "ach", "_.CreateAchievement", "f", "modID", "isGuild");
             ObjectData.Create("achievementCategoryID", "achcat", "_.CreateAchievementCategory", "f");
             ObjectData.Create("expansionID", "x", "_.CreateExpansion", "f");
             ObjectData.Create("petTypeID", "pt", "_.CreatePetType", "f");
@@ -170,8 +173,23 @@ namespace ATT
                 if (count++ > 0) builder2.Append(',');
                 builder2.Append(table.Key);
             }
-            builder2.Append("};").AppendLine();
+            builder2.Append("}").AppendLine();
             builder.Replace("--STRUCTURE_REPLACEMENTS" + Environment.NewLine, builder2.ToString());
+        }
+
+        public static void ExportFieldName(Exporter builder, object field)
+        {
+            var name = ToString(field);
+            if (DirectLuaFieldName.IsMatch(name))
+            {
+                builder.Append(name);
+            }
+            else
+            {
+                builder.Append("[");
+                ExportPureLua(builder, field);
+                builder.Append("]");
+            }
         }
 
         /// <summary>

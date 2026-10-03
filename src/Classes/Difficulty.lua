@@ -1,7 +1,6 @@
-do
 -- App locals
 local _,app = ...;
-local L, contains, containsValue, GetRelativeValue = app.L, app.contains, app.containsValue, app.GetRelativeValue;
+local L, GetRelativeValue = app.L, app.GetRelativeValue;
 
 -- Global locals
 local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN
@@ -11,18 +10,7 @@ local function GetRelativeDifficulty(group, checkDifficultyID)
 	if not group then return end
 	local difficultyID = group.difficultyID
 	if difficultyID then
-		if difficultyID == checkDifficultyID then
-			return true;
-		end
-		local difficulties = group.difficulties
-		if difficulties then
-			for i=1,#difficulties do
-				if difficulties[i] == checkDifficultyID then
-					return true;
-				end
-			end
-		end
-		return false;
+		return group.difficultyHash[difficultyID];
 	end
 	local parent = group.parent
 	if parent then
@@ -126,7 +114,11 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["icon"] = function(t)
 		return DifficultyIcons[t.difficultyID] or app.asset("Difficulty_Multi");
 	end,
-	["trackable"] = app.ReturnTrue,
+	["trackable"] = function(t)
+		local validDifficulty = not not app.GetRelativeValue(t, "instanceID")
+		t.trackable = validDifficulty
+		return validDifficulty
+	end,
 	["saved"] = function(t)
 		return t.locks;
 	end,
@@ -138,24 +130,17 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 				return locks.shared;
 			else
 				-- Look for this difficulty's lockout.
-				for difficultyKey, lock in pairs(locks) do
-					if difficultyKey == "shared" then
-						-- ignore this one
-					elseif difficultyKey == t.difficultyID then
-						t.locks = lock;
-						return lock;
-					end
-				end
-				local difficulties = t.difficulties;
-				if difficulties then
-					local diffLocks = {};
+				local difficultyHash = t.difficultyHash;
+				if difficultyHash then
+					local diffLocks,any = {},nil;
 					-- Look for matching difficulty lockouts.
 					for difficultyKey, lock in pairs(locks) do
-						if contains(difficulties, difficultyKey) then
+						if difficultyHash[difficultyKey] then
 							diffLocks[difficultyKey] = lock;
+							any = true;
 						end
 					end
-					if #diffLocks > 0 then
+					if any then
 						t.locks = diffLocks;
 						return diffLocks;
 					end
@@ -166,6 +151,17 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["difficulties"] = function(t)
 		return DifficultyMap[t.difficultyID];
 	end,
+	["difficultyHash"] = function(t)
+		local d = { [t.difficultyID] = true };
+		local ids = t.difficulties;
+		if ids then
+			for i=1,#ids do
+				d[ids[i]] = true;
+			end
+		end
+		t.difficultyHash = d;
+		return d;
+	end,
 	["e"] = function(t)
 		if t.difficultyID == 24 or t.difficultyID == 33 then
 			return 1271;	-- TIMEWALKING event constant
@@ -174,15 +170,9 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["ignoreSourceLookup"] = app.ReturnTrue,
 	["ShouldExcludeFromTooltip"] = function(t)
 		local difficultyID = app.GetCurrentDifficultyID();
+		-- app.PrintDebug(difficultyID, t.text, t.difficultyHash[difficultyID]);
 		if difficultyID > 0 then
-			if t.difficultyID == difficultyID then
-				return false;
-			end
-			local difficulties = t.difficulties;
-			if difficulties and containsValue(difficulties, difficultyID) then
-				return false;
-			end
-			return true;
+			return not t.difficultyHash[difficultyID];
 		end
 		return app.BaseClass.__class.ShouldExcludeFromTooltip(t)
 	end,
@@ -286,12 +276,94 @@ local CurrentDifficultyRemapper ={
 	[205] = 1,	-- Follower Dungeon -> Normal Dungeon
 	[220] = 220,	-- Story -> Story (currently only available to defeat during a quest and provides no loot...)
 }
+local IgnoredInstanceIDs = {
+	[1152] = true,	-- FW Horde Garrison Level 1
+	[1153] = true,	-- FW Horde Garrison Level 2
+	[1154] = true,	-- FW Horde Garrison Level 3
+	[1158] = true,	-- SMV Alliance Garrison Level 1
+	[1159] = true,	-- SMV Alliance Garrison Level 2
+	[1160] = true,	-- SMV Alliance Garrison Level 3
+}
 app.GetCurrentDifficultyID = function()
 	if not IsInInstance() then return 0 end
-	local diff = select(3, GetInstanceInfo()) or 0
-	return CurrentDifficultyRemapper[diff] or diff
+	local diff, _, _, _, _, instanceID = select(3, GetInstanceInfo())
+	if IgnoredInstanceIDs[instanceID] then return 0 end
+	return CurrentDifficultyRemapper[diff] or diff or 0
 end
 app.GetRelativeDifficultyIcon = function(t)
 	return DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 end
+
+-- If Difficulties exist, this means we can use the API!
+local GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
+	= GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
+local CurrentDifficulties, BuildCurrentDifficulties;
+if app.GameBuildVersion >= 20000 then
+	if app.GameBuildVersion >= 30000 then
+		BuildCurrentDifficulties = function()
+			if IsInInstance() then
+				local diff = select(3, GetInstanceInfo()) or 0
+				if diff ~= 0 then
+					return { [CurrentDifficultyRemapper[diff] or diff] = true };
+				end
+			end
+
+			-- While outside of a dungeon (such as at its entrance),
+			-- if the mini list shows difficulty headers, it should filter them
+			local d = {
+				[GetDungeonDifficultyID()] = true,
+				[GetRaidDifficultyID()] = true,
+				[GetLegacyRaidDifficultyID()] = true,
+			};
+			return d;
+		end
+	else
+		BuildCurrentDifficulties = function()
+			if IsInInstance() then
+				local diff = select(3, GetInstanceInfo()) or 0
+				if diff ~= 0 then
+					return { [CurrentDifficultyRemapper[diff] or diff] = true };
+				end
+			end
+
+			-- While outside of a dungeon (such as at its entrance),
+			-- if the mini list shows difficulty headers, it should filter them
+			return { [GetDungeonDifficultyID()] = true };
+		end
+	end
+else
+	-- No API Access to difficulty APIs
+	BuildCurrentDifficulties = function()
+		if IsInInstance() then
+			local diff = select(3, GetInstanceInfo()) or 0
+			if diff ~= 0 then
+				return { [CurrentDifficultyRemapper[diff] or diff] = true };
+			end
+		end
+		return app.EmptyTable;
+	end
 end
+local function GetCurrentDifficulties()
+	-- Compare and Cache the Current Difficulties
+	local difficulties = BuildCurrentDifficulties()
+	if not CurrentDifficulties or app.TableKeyDiff(CurrentDifficulties, difficulties) then
+		CurrentDifficulties = difficulties;
+		app.HandleEvent("OnCurrentDifficultiesChanged", difficulties);
+	end
+	return difficulties;
+end
+-- Event driven check includes 1-sec/combat delay
+local function CallbackGetCurrentDifficulties()
+	app.CallbackHandlers.AfterCombatOrDelayedCallback(GetCurrentDifficulties, 1)
+end
+app.GetCurrentDifficulties = GetCurrentDifficulties;
+app.AddEventRegistration("CHAT_MSG_SYSTEM", CallbackGetCurrentDifficulties)
+if app.IsClassic then
+	app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", CallbackGetCurrentDifficulties)
+end
+--[[
+app.AddEventHandler("OnCurrentDifficultiesChanged", function(diff)
+	app.PrintDebug("OnCurrentDifficultiesChanged", app.StringifyTable(diff))
+end)
+--]]
+app.AddEventHandlerOnce("OnStartup", GetCurrentDifficulties)

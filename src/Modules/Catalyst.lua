@@ -1,19 +1,6 @@
 -- Catalyst Module
 local _, app = ...;
 
--- Globals
-local setmetatable,tonumber,ipairs,tremove,unpack,string_match
-	= setmetatable,tonumber,ipairs,tremove,unpack,string.match
-local GameTooltip = GameTooltip
-
--- WOWAPI
-local C_Item_GetItemInfoInstant,C_Item_GetItemUpgradeInfo
-	= C_Item.GetItemInfoInstant,C_Item.GetItemUpgradeInfo
-
--- App
-local containsAnyKey
-	= app.containsAnyKey
-
 -- Catalyst API Implementation
 -- Access via AllTheThings.Modules.Catalyst
 local api = {}
@@ -28,10 +15,28 @@ app.Modules.Catalyst = api
 -- Blizzard likely has some other meaning for the value I've used for 'catalystID' but it seems to correlate to this purpose
 local PossibleCatalystBonusIDLookups = app.ItemConversionDB
 if not PossibleCatalystBonusIDLookups then
-	app.print("Catalyst Module missing ItemConversionDB! Cannot load!")
+	-- CRIEVE NOTE: This is expected to be nil in Classic, plz no throw error!
 	return
 end
+
+-- Globals
+--- @type function,function,function
+local tonumber,tremove,unpack
+	= tonumber,tremove,unpack
+local GameTooltip = GameTooltip
+
+-- WOWAPI
+local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
+local C_Item_GetItemUpgradeInfo
+	= C_Item.GetItemUpgradeInfo
+
+-- App
+--- @type function
+local containsAnyKey
+	= app.containsAnyKey
 local BonusCatalysts = PossibleCatalystBonusIDLookups.BonusCatalysts
+--- @type function,function
+local GetSourceID, CreateObject
 
 local BonusIDUpgradeTiers = {
 	-- TWW:S1
@@ -105,6 +110,45 @@ local BonusIDUpgradeTiers = {
 	[11996] = 11998,
 	[12375] = 11998,
 	[12376] = 11998,
+--[[
+	-- TWW:S3
+	-- Veteran
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	-- Champion
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	-- Hero
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	-- Myth
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+	[TODO] = TODO,
+]]--
 }
 
 -- apparently Blizzard decided that removing all Upgrade info from old season items was beneficial to someone, so now we have to add all this
@@ -122,22 +166,6 @@ local BonusIDReMappers = {
 		return BonusIDUpgradeTiers[newBonusID]
 	end
 }
--- TWW:S1
--- Veteran
-BonusIDReMappers[10376] = BonusIDReMappers.PastUpgrade
-BonusIDReMappers[10378] = BonusIDReMappers.PastUpgrade
--- Champion
-BonusIDReMappers[10377] = BonusIDReMappers.PastUpgrade
--- Hero
-BonusIDReMappers[10379] = BonusIDReMappers.PastUpgrade
--- TWW:S2
--- Veteran
-BonusIDReMappers[11964] = BonusIDReMappers.PastUpgrade
-BonusIDReMappers[11965] = BonusIDReMappers.PastUpgrade
--- Champion
-BonusIDReMappers[11966] = BonusIDReMappers.PastUpgrade
--- Hero
-BonusIDReMappers[11967] = BonusIDReMappers.PastUpgrade
 
 local CatalystArmorSlots = {
 	["INVTYPE_HEAD"] = true,
@@ -231,7 +259,7 @@ local function CheckGameTooltipForUpgradeLevel()
 	local text
 	for i=1,3 do
 		text = tooltipData[i]
-		level = string_match(text and text.leftText or "", ItemUpgradeLevelMatch)
+		level = (text and text.leftText or ""):match(ItemUpgradeLevelMatch)
 		if level then return tonumber(level) end
 	end
 end
@@ -240,7 +268,7 @@ local function GetCatalystSlot(data)
 	local link = data.link
 	if not link then return end
 
-	local itemID, _, _, itemEquipLoc, _, classID, subclassID = C_Item_GetItemInfoInstant(link)
+	local itemID, _, _, itemEquipLoc, _, classID, subclassID = GetItemInfoInstant(link)
 	if not itemID then return end
 
 	-- Armor only / Slot
@@ -290,18 +318,11 @@ local function GetCatalysts(data)
 	local upgradeLevel = upgradeInfo.currentLevel or 0
 
 	local remappedBonusID
+	local convertCatalystOutputManually
 	-- Non-Upgrade cases (use bonusID to find the matching upgradeTrackID lookup)
-	if not upgradeTrackID then
+	if not upgradeTrackID or upgradeLevel == 0 then
 		-- app.PrintDebug("Non-upgrade Item",data.link)
 		-- app.PrintTable(upgradeInfo)
-		-- Old Items whose catalyst-bonusID doesn't directly indicate the proper appearance tier anymore for some reason
-		local remapperFunc = BonusIDReMappers[bonusID]
-		if remapperFunc then
-			-- app.PrintDebug("remapping bonusID",bonusID)
-			remappedBonusID = bonusID
-			bonusID = remapperFunc(data)
-			-- app.PrintDebug("-->",bonusID)
-		end
 		-- Primalist Items, DF S1
 		if upgradeInfo.maxLevel == 3 then
 			if upgradeLevel == 2 then
@@ -314,13 +335,27 @@ local function GetCatalysts(data)
 		-- past upgrade items (Blizz returns no upgrade info because why...?)
 		-- TODO: if Blizzard ever fixes C_Item.GetItemUpgradeInfo returning nothing useful for old season items, this can all be simplified/removed
 		elseif upgradeLevel == 0 then
+			-- C_Item.GetItemUpgradeInfo now returns 'partial' information on old items which used to be upgraded but now are not
+			-- the current and max levels will show as 0
+			-- in this case, we should always try to re-map the bonusID for catalyst sym lookup
+			-- app.PrintDebug("remapping bonusID due to upgradelevel 0",bonusID)
+			remappedBonusID = bonusID
+			bonusID = BonusIDReMappers.PastUpgrade(data)
+			-- app.PrintDebug("-->",bonusID)
 			-- use the mapped upgradeTrack for the bonusID
-			upgradeTrackID = PossibleCatalystBonusIDLookups.BonusUpgradeTracks[bonusID]
+			upgradeTrackID = PossibleCatalystBonusIDLookups.BonusUpgradeTracks[bonusID or remappedBonusID]
 			-- then we need to scan the current tooltip to determine whether the item showing an actual upgrade level above it's mapped
 			-- upgrade track ID because THANKS BLIZZARD clearly there's no reason I would want to actually KNOW that information from an API
 			-- which says "GetItemUpgradeInfo" just because the item cannot be upgraded "further", the "current" upgrade level is still
 			-- IMPORTANT to some game functionality... reeeee
-			upgradeLevel = CheckGameTooltipForUpgradeLevel() or 0
+			if catalystID > 2 then
+				upgradeLevel = CheckGameTooltipForUpgradeLevel() or 0
+
+				-- if we still couldn't determine the proper upgrade level after all that, then we have to convert the catalyst output after the lookup
+				if upgradeLevel == 0 then
+					convertCatalystOutputManually = true
+				end
+			end
 		end
 		-- app.PrintDebug("Using UpgradeTrackID",upgradeTrackID,"@",upgradeLevel)
 	end
@@ -358,18 +393,37 @@ local function GetCatalysts(data)
 		-- Copy all but the catalyst bonusID to the resulting item
 		-- TODO: probably build a proper rawlink instead so it works properly for further nesting
 		catalystResult.bonuses = newBonuses
-		-- use a ridiculous bonusID to force the item cache to not find a matching modItemID
-		-- hacky af but idk...
-		catalystResult.bonusID = 99999
+		-- clear modID/bonusID since all catalyst results should be based on bonusID
+		catalystResult.modID = nil
+		catalystResult.bonusID = nil
 		-- Don't let a baked-in upgrade persist since our upgradeLevel might not allow it
 		catalystResult.up = nil
 		catalystResult._up = nil
 		catalystResult.rawlink = nil
 		catalystResult.filledType = "CATALYST"
+		-- re-generate the Item group for this Catalyst cache with the data adjustments
+		-- app.PrintDebug("Re-gen cata output",catalystResult.hash)
+		-- app.PrintTable(catalystResult)
+		if convertCatalystOutputManually then
+			-- wipe the ItemAppearance class from the result, and clear the SourceID
+			setmetatable(catalystResult, nil)
+			catalystResult.sourceID = nil
+			catalystResult.hash = nil
+			-- turn it into a raw Item
+			catalystResult = CreateObject(catalystResult)
+			-- app.PrintDebug("cata output as item",catalystResult.hash)
+			-- app.PrintTable(catalystResult)
+			-- then see if the game returns a valid SourceID for this Item
+			local sourceID = GetSourceID(catalystResult.link, true)
+			-- app.PrintDebug("check sourceid",sourceID,success)
+			if sourceID then catalystResult = app.CreateItemSource(sourceID, catalystResult.itemID, catalystResult) end
+		else
+			catalystResults[i] = CreateObject(catalystResult)
+		end
 	end
 
 	-- app.PrintDebug("Catalyst Result:",catalystResult.hash,catalystResult.up,app:SearchLink(catalystResult))
-	-- app.PrintTable(catalystResult.bonuses)
+	-- app.PrintTable(catalystResult)
 	data._cata = catalystResults
 	return catalystResults
 end
@@ -421,7 +475,7 @@ local function catalyst_select_proper_tier_item(ResolveFunctions)
 			-- app.PrintDebug("Class group contains",#searchResults,"items")
 		else
 			-- get the Armor type of the Item
-			local _, _, _, itemEquipLoc, _, _, armorType = C_Item_GetItemInfoInstant(baseItem.link)
+			local _, _, _, itemEquipLoc, _, _, armorType = GetItemInfoInstant(baseItem.link)
 			-- popout all the matching Armor Type items (if not a cloak)
 			if itemEquipLoc ~= "INVTYPE_CLOAK" then
 				contains(finalized, searchResults, o, "contains", "c", unpack(SharedArmorTypeClasses[armorType]))
@@ -445,28 +499,28 @@ end
 
 -- Event Handling
 app.AddEventHandler("OnLoad", function()
+	app.AddGenericFieldConverter("catalystID");
 	app.RegisterSymlinkSubroutine("catalyst_select_proper_tier_item", catalyst_select_proper_tier_item)
+	GetSourceID = app.GetSourceID
+	CreateObject = app.__CreateObject
 
 	local Fill = app.Modules.Fill
 	if not Fill then return end
 
-	local CreateObject = app.__CreateObject
 	Fill.AddFiller("CATALYST",
 	function(t, FillData)
 		local catalystResults = t._cata or GetCatalysts(t)
 		if not catalystResults or catalystResults == 0 then return end
 
-		local objs = {}
 		local o
 		for i=1,#catalystResults do
-			o = CreateObject(catalystResults[i])
+			o = catalystResults[i]
 			if not o.collected then
 				t.filledCatalyst = true
 			end
-			objs[i] = o
 		end
 		-- app.PrintDebug("filledCatalyst=",#objs,"<",t.modItemID)
-		return objs
+		return catalystResults
 	end,
 	{
 		ScopesIgnored = { "LIST" },

@@ -1,0 +1,199 @@
+1.60.1.69876
+r(3928),	-- Mechanical Squirrel
+r(3933),	-- Small Seaforium Charge
+r(3940),	-- Shadow Goggles
+r(3944),	-- Flame Deflector
+r(3952),	-- Minor Recombobulator
+r(3954),	-- Moonsight Rifle
+r(3957),	-- Ice Deflector
+r(3959),	-- Discombobulator Ray
+r(3960),	-- Portable Bronze Mortar
+r(3966),	-- Craftsman's Monocle
+r(3968),	-- Goblin Land Mine
+r(3969),	-- Mechanical Dragonling
+r(3971),	-- Gnomish Cloaking Device
+r(3972),	-- Large Seaforium Charge
+r(4073),	-- Mechanical Dragonling
+r(8243),	-- Flash Bomb
+r(8339),	-- EZ-Thro Dynamite
+r(9269),	-- Gnomish Universal Remote
+r(9273),	-- Goblin Jumper Cables
+r(12587),	-- Bright-Eye Goggles
+r(12597),	-- Deadly Scope
+r(12607),	-- Catseye Ultra Goggles
+r(12614),	-- Mithril Heavy-bore Rifle
+r(12616),	-- Parachute Cloak
+r(12620),	-- Sniper Scope
+r(12624),	-- Mithril Mechanical Dragonling
+r(12719),	-- Explosive Arrow
+r(12720),	-- Goblin "Boom" Box
+r(12722),	-- Goblin Radio
+r(12749),	-- Mithril Mechanical Dragonling
+r(12900),	-- Mobile Alarm
+r(12904),	-- Gnomish Ham Radio
+r(13166),	-- Battle Chicken
+r(13258),	-- Summon Goblin Bomb
+r(15628),	-- Pet Bombling
+r(15633),	-- Lil' Smoky
+r(19793),	-- Lifelike Mechanical Toad
+r(19796),	-- Dark Iron Rifle
+r(19799),	-- Dark Iron Bomb
+r(19804),	-- Arcanite Dragonling
+r(19814),	-- Masterwork Target Dummy
+r(19815),	-- Delicate Arcanite Converter
+r(19819),	-- Voice Amplification Modulator
+r(19830),	-- Arcanite Dragonling
+r(19831),	-- Arcane Bomb
+r(19833),	-- Flawless Arcanite Rifle
+r(21940),	-- Snowmaster 9000
+r(22704),	-- Field Repair Bot 74A
+r(22793),	-- Biznicks 247x128 Accurascope
+r(22795),	-- Core Marksman Rifle
+r(22797),	-- Force Reactive Disk
+r(23066),	-- Red Firework
+r(23067),	-- Blue Firework
+r(23068),	-- Green Firework
+r(23069),	-- EZ-Thro Dynamite II
+r(23077),	-- Gyrofreeze Ice Reflector
+r(23078),	-- Goblin Jumper Cables XL
+r(23079),	-- Major Recombobulator
+r(23080),	-- Powerful Seaforium Charge
+r(23081),	-- Hyper-Radiant Flame Reflector
+r(23082),	-- Ultra-Flash Shadow Reflector
+r(23096),	-- Alarm-O-Bot
+r(23129),	-- World Enlarger
+r(23507),	-- Snake Burst Firework
+r(24356),	-- Bloodvine Goggles
+r(24357),	-- Bloodvine Lens
+r(26416),	-- Small Blue Rocket
+r(26417),	-- Small Green Rocket
+r(26418),	-- Small Red Rocket
+r(26420),	-- Large Blue Rocket
+r(26421),	-- Large Green Rocket
+r(26422),	-- Large Red Rocket
+r(26423),	-- Blue Rocket Cluster
+r(26424),	-- Green Rocket Cluster
+r(26425),	-- Red Rocket Cluster
+r(26426),	-- Large Blue Rocket Cluster
+r(26427),	-- Large Green Rocket Cluster
+r(26428),	-- Large Red Rocket Cluster
+r(26442),	-- Firework Launcher
+r(26443),	-- Firework Cluster Launcher
+r(28327),	-- Steam Tonk Controller
+r(424641),	-- Shredder Autosalvage Unit
+r(431362),	-- Soul Vessel
+r(435956),	-- Polished Truesilver Gears
+r(435958),	-- Whirling Truesilver Gearwall
+r(435960),	-- Hyperconductive Goldwap
+r(435964),	-- High-Yield Radiation Bomb
+r(435966),	-- Ez-Thro Radiation Bomb
+r(446236),	-- Void-Powered Invoker's Vambraces
+r(446237),	-- Void-Powered Slayer's Vambraces
+r(446238),	-- Void-Powered Protector's Vambraces
+r(461710),	-- Fiery Core Sharpshooter Rifle
+r(1213573),	-- Arcane Megabomb
+r(1213576),	-- The Fumigator
+r(1213578),	-- Obsidian Bomb
+r(1213586),	-- G00 DV-1B3 Generator
+r(1213588),	-- Tuned Force Reactive Disk
+r(1213646),	-- Obsidian Blasting Powder
+r(1214145),	-- Obsidian Shotgun
+r(1217207),	-- Obsidian Scope
+r(1221012),	-- Creepy Censor Sensors
+r(1226206),	-- Tinkerbox
+r(1226207),	-- Tinkerbox: Teleport
+r(1226208),	-- Tinkerbox: Nitro Boosts
+r(1226209),	-- Tinkerbox: Magnetic Displacement
+r(1226210),	-- Tinker: Teleport
+r(1226211),	-- Tinker: Nitro Boosts
+r(1226212),	-- Tinker: Magnetic Displacement
+r(1226213),	-- Semisafe Transporter: New Avalon
+r(1228088),	-- Pop-Up Shrub
+r(1235244),	-- Engineering
+r(1240947),	-- Engineering
+r(1240958),	-- Engineering
+r(1240969),	-- Engineering
+r(1240982),	-- Engineering
+r(1249634),	-- Sandpaper
+r(1253004),	-- Sludge Suppressor
+r(1253005),	-- Enormous Tranquilizer Dart
+r(1253006),	-- G.R.R.-Nade
+r(1263034),	-- Repair Bot
+r(1263083),	-- Anarchist's Workbench
+r(1266893),	-- SAF-T Tabs
+r(1266905),	-- SAF-T Dynamite
+r(1266906),	-- SAF-T Copper Bomb
+r(1266907),	-- EZ-Thro Wrap
+r(1266908),	-- EZ-Thro Copper Bomb XL
+r(1266909),	-- No Slip SAF-T Padding
+r(1266910),	-- SAF-T Bronze Bomb
+r(1266911),	-- SAF-T Jumbo Dynamite
+r(1266912),	-- SAF-T Bell
+r(1266913),	-- Shafety Sheep
+r(1266914),	-- EZ-Thro Fireproof Fuse
+r(1266915),	-- EZ-Thro Bronze Mortar
+r(1266916),	-- EZ-Thro Grenade
+r(1266917),	-- SAF-T Casing
+r(1266918),	-- SAF-T Bomb
+r(1266919),	-- Emergency Field Cloak
+r(1266920),	-- Compact Critter Carrier
+r(1266921),	-- EZ-Thro Tru-Trigger
+r(1266922),	-- Tru-Trigger Frag Bomb
+r(1266923),	-- SAF-T Disposable Parachute
+r(1266924),	-- Gnomish Army Knife
+r(1266925),	-- Loot-A-Rang
+r(1266926),	-- SAF-T Tube
+r(1266927),	-- SAF-T Clever Dynamite
+r(1266928),	-- EZ-Thro Shell
+r(1266929),	-- EZ-Thro Thorium Grenade
+r(1266930),	-- EZ-Thro Dark Bomb
+r(1266931),	-- EZ-Thro Mana Bomb
+r(1266932),	-- EZ-Thro Field Transporter: Gadgetzan
+r(1266933),	-- SAF-T Emergency Ripper: Everlook
+r(1266934),	-- EZ and SAF Field Transporter: Mt. Hyjal
+r(1266935),	-- Ultrasafe Rechargeable Battery
+r(1266936),	-- Dimensional Transporter - Mt. Hyjal
+r(1266937),	-- Gnomish Poultryizer
+r(1266938),	-- Ultralight Goblin Glider
+r(1266939),	-- Gnomish Weather Machine
+r(1266940),	-- Stealthman 52
+r(1266941),	-- SAF-T Nitro Boosts
+r(1266942),	-- EZ-Thro Magnetic Displacer
+r(1266943),	-- SAF-T Teleport
+r(1277782),	--
+r(1286792),	-- Centaur Banner Deployment Device
+r(1286796),	-- Hoof-Shaped Foot Pedal
+r(1293088),	-- 9-60 Battery Pack
+r(1293849),	-- Swiftfeather Arrow
+r(1293850),	-- Swiftstrike Shot
+r(1302161),	-- Harvester Override Signalcaster
+r(1306546),	-- SAF-T Ultra Precision Scope
+r(1306547),	-- Hyper Deluxe Sniper Rifle Mk XVII
+r(1308178),	-- Whimsical Waistwrap
+r(1308179),	-- Gizmo Girdle
+r(1308180),	-- Clanking Cord
+r(1308182),	-- Serrated Strap
+r(1308183),	-- Floppy Goggles
+r(1308184),	-- Bent Goggles
+r(1308185),	-- Stuckbutton Goggles
+r(1308186),	-- Dented Goggles
+r(1317270),	-- Unsanctified Grenade
+r(1317958),	-- Satchel of Copper Bombs
+r(1317959),	-- Satchel of Bronze Bombs
+r(1317960),	-- Satchel of Iron Bombs
+r(1317961),	-- Satchel of Dark Iron Bombs
+r(1319154),	-- Small Purple Rocket
+r(1319155),	-- Small White Rocket
+r(1319156),	-- Small Yellow Rocket
+r(1319157),	-- Large Purple Rocket
+r(1319158),	-- Large White Rocket
+r(1319159),	-- Large Yellow Rocket
+r(1319160),	-- Purple Rocket Cluster
+r(1319161),	-- White Rocket Cluster
+r(1319162),	-- Yellow Rocket Cluster
+r(1319163),	-- Large Purple Rocket Cluster
+r(1319164),	-- Large White Rocket Cluster
+r(1319165),	-- Large Yellow Rocket Cluster
+
+
+Nothing is Missing in Engineering! Good Work!

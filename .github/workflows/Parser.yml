@@ -9,121 +9,145 @@ on:
     tags-ignore:
       - '*' # Ignore all tags
     paths:
-      - '.contrib/Parser/**'
+      - '.contrib/.db/**'
       - '.github/workflows/Parser.yml'
   # Triggers the workflow on each pull request event
   pull_request:
     paths:
-      - '.contrib/Parser/**'
+      - '.contrib/.db/**'
+      - '.github/workflows/Parser.yml'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+permissions:
+  pull-requests: read
 
 jobs:
   build:
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: .contrib/.tools
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
-      - name: Database Parser for Retail
-        id: Parse-Retail
-        timeout-minutes: 5
-        continue-on-error: true
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto baseconfig=.config/retail/retail.config
-        shell: cmd
+      - name: Check changed paths
+        id: changes
+        uses: dorny/paths-filter@v4
+        with:
+          predicate-quantifier: 'some-with-excludes'
+          filters: |
+            non_forever:
+              - '.contrib/.db/**'
+              - '!.contrib/.db/forever/**'
+              - '.github/workflows/Parser.yml'
 
-      - name: Database Parser for Classic Era
-        id: Parse-ClassicEra
-        timeout-minutes: 5
-        continue-on-error: true
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/01 - Classic Era.config"
-        shell: cmd
+      - parallel:
+        - name: Database Parser for Retail
+          id: Parse-Retail
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config"
 
-      - name: Database Parser for Season of Discovery
-        id: Parse-ClassicSoD
-        timeout-minutes: 5
-        continue-on-error: true
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/01 - Classic SOD.config"
-        shell: cmd
+        - name: Database Parser for Classic Era
+          id: Parse-ClassicEra
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
 
-      - name: Database Parser for The Burning Crusade
-        id: Parse-TBC
-        timeout-minutes: 5
-        continue-on-error: true
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/02 - TBC.config"
-        shell: cmd
+        - name: Database Parser for Season of Discovery
+          id: Parse-ClassicSoD
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
 
-      - name: Database Parser for Wrath of the Lich King
-        id: Parse-WOTLK
-        timeout-minutes: 5
-        continue-on-error: true
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/03 - Wrath.config"
-        shell: cmd
+        - name: Database Parser for The Burning Crusade
+          id: Parse-TBC
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
 
-      - name: Database Parser for Cataclysm
-        id: Parse-CATA
-        timeout-minutes: 5
-        continue-on-error: true
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/04 - Cataclysm.config"
-        shell: cmd
+        - name: Database Parser for Wrath of the Lich King
+          id: Parse-WOTLK
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
 
-      - name: Database Parser for Mists of Pandaria
-        id: Parse-MOP
-        timeout-minutes: 5
-        continue-on-error: true
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
-        shell: cmd
+        - name: Database Parser for Cataclysm
+          id: Parse-CATA
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+
+        - name: Database Parser for Mists of Pandaria
+          id: Parse-MOP
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+
+        - name: Database Parser for Forever
+          id: Parse-FOREVER
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
 
       - name: Full Success Check
         shell: pwsh
         run: |
-          $retail = '${{ steps.Parse-Retail.outcome }}'
-          $classicEra = '${{ steps.Parse-ClassicEra.outcome }}'
-          $classicSoD = '${{ steps.Parse-ClassicSoD.outcome }}'
-          $tbc = '${{ steps.Parse-TBC.outcome }}'
-          $wotlk = '${{ steps.Parse-WOTLK.outcome }}'
-          $cata = '${{ steps.Parse-CATA.outcome }}'
-          $mop = '${{ steps.Parse-MOP.outcome }}'
+          $results = [ordered]@{
+            FOREVER = '${{ steps.Parse-FOREVER.outcome }}'
+          }
+
+          if ('${{ github.event_name }}' -eq 'workflow_dispatch' -or '${{ steps.changes.outputs.non_forever }}' -eq 'true') {
+            $results = [ordered]@{
+              Retail = '${{ steps.Parse-Retail.outcome }}'
+              ClassicEra = '${{ steps.Parse-ClassicEra.outcome }}'
+              ClassicSoD = '${{ steps.Parse-ClassicSoD.outcome }}'
+              TBC = '${{ steps.Parse-TBC.outcome }}'
+              WOTLK = '${{ steps.Parse-WOTLK.outcome }}'
+              CATA = '${{ steps.Parse-CATA.outcome }}'
+              MOP = '${{ steps.Parse-MOP.outcome }}'
+              FOREVER = '${{ steps.Parse-FOREVER.outcome }}'
+            }
+          }
 
           Write-Host "Verify all Versions Parsed Successfully..."
-          Write-Host "Retail: $retail"
-          Write-Host "ClassicEra: $classicEra"
-          Write-Host "ClassicSoD: $classicSoD"
-          Write-Host "TBC: $tbc"
-          Write-Host "WOTLK: $wotlk"
-          Write-Host "CATA: $cata"
-          Write-Host "MOP: $mop"
+          foreach ($result in $results.GetEnumerator()) {
+            Write-Host "$($result.Key): $($result.Value)"
+          }
 
-          if (
-            $retail -eq 'success' -and
-            $classicEra -eq 'success' -and
-            $classicSoD -eq 'success' -and
-            $tbc -eq 'success' -and
-            $wotlk -eq 'success' -and
-            $cata -eq 'success' -and
-            $mop -eq 'success'
-          ) {
+          if (@($results.Values | Where-Object { $_ -ne 'success' }).Count -eq 0) {
             Write-Host "✅ All Versions Parsed Successfully"
           } else {
             Write-Host "❌ One or more Parsed Versions Errored"
             exit 1
           }
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
           name: db  # Artifact name
           path: db/  # File path to upload

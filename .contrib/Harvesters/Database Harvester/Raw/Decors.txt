@@ -3016,6 +3016,20 @@
 19198@@@March on Quel'Danas Vanquisher's Argent Trophy
 19252@@@Voidspire Vanquisher's Argent Trophy
 20172@@@[DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2
+12.0.0.65512
+12300@@@Brown Paper Sack
+15229@@@Corked Bottle of Liquid Mystery
+15550@@@Sturdy Portable Ice Chest
+15551@@@Tall Corked Bottle of Liquid Mystery
+15552@@@Short Corked Bottle of Liquid Mystery
+15553@@@Preserved Gift of Gilneas
+15554@@@Bluebird's Golden Cage
+15555@@@Backboard and Hoop Playset
+15654@@@Zapmaster Viewer 3000
+15668@@@Naturally Elegant Doormat
+15669@@@Simply Adorned Vase and Flowers
+12.0.0.65699
+14467@@@Miniature Replica Dark Portal
 12.0.1.64889
 1147@@@Rutaani Sporepod
 1159@@@Sin'dorei Honor Stone
@@ -3042,7 +3056,6 @@
 18800@@@Open Void Elf Bedroll
 12.0.1.65337
 2233@@@Waterlogged Haranir Pigment Bowl
-14467@@@Miniature Replica Dark Portal
 14635@@@Swirling Ritual Pedestal
 15501@@@Lightbloom Moss Mound
 15757@@@Opened Domanaar Storage Crate
@@ -3050,3 +3063,1044 @@
 20162@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril07.m2
 20163@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril08.m2
 20632@@@[DNT] [AUTOGEN] 12VD_Void_Crafting_ChannelingWardrobe01.m2
+12.0.1.65448
+20632@@@Devouring Ritual Spire
+12.0.1.65893
+11287@@@Sanctuary's Horadric Cube
+12.0.1.66013
+7826@@@Colorful Shroomic Egg
+7827@@@Colorful Dotted Egg
+7828@@@Colorful Striped Egg
+12.0.1.66263
+16691@@@Farstriders' Pride Statue
+17294@@@Farstriders' Glory Statue
+12.0.1.66527
+12244@@@Paw Pal Water Dish
+12245@@@Paw Pal Bed and Blanket
+12246@@@Paw Pal Bed
+12264@@@Paw Pal Dog House Frame
+12265@@@Paw Pal Dog House Elwynn Roof
+15547@@@Paw Pal Dog House Durotar Roof
+15548@@@Paw Pal Dog House Eversong Roof
+15549@@@Paw Pal Dog House Shadowglen Roof
+12.0.1.66666
+2299@@@Grand Aethercharged Crystal
+8877@@@Sumptuous Berry Pie
+12.0.5.66330
+9630@@@Open Sturdy Wooden Crate
+12169@@@Reinforced Wooden Barrel
+12170@@@Empty Reinforced Wooden Barrel
+12174@@@Refined Wooden Bed
+12214@@@Padded Wooden Bench
+12215@@@Sturdy Wooden Crate
+14807@@@Carved Wooden Chair
+14818@@@Razorwind Fishing Net
+15141@@@Spring Blossom Tree Pond
+15286@@@[DNT] [AUTOGEN] 12PH_Folk_Mirror_Wall01.m2
+15287@@@[DNT] [AUTOGEN] 12PH_Folk_WallLamp01.m2
+15288@@@[DNT] [AUTOGEN] 12PH_Folk_Table_Bar_Small01.m2
+15289@@@[DNT] [AUTOGEN] 12PH_Folk_Gazebo02.M2
+15290@@@[DNT] [AUTOGEN] 12PH_Folk_Rug03.M2
+15291@@@[DNT] [AUTOGEN] 12PH_Folk_Sconce01.M2
+15292@@@[DNT] [AUTOGEN] 12PH_Folk_Window_Interior01.M2
+15293@@@[DNT] [AUTOGEN] 12PH_Folk_Trellis02.M2
+15597@@@Ornate Cosmic Banner
+15600@@@[DNT] [AUTOGEN] 12PH_Folk_Sofa_Medium01.m2
+15601@@@[DNT] [AUTOGEN] 12PH_Folk_TableLight02.M2
+16039@@@Lush Garden Window
+16098@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_CurioShelf01.M2
+16099@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_SideTable01.M2
+16100@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_MoneyTree01.M2
+16101@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_Lantern01.M2
+16102@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_StoneLion01.M2
+16755@@@[DNT] [AUTOGEN] 12PH_Folk_WaterWell01.M2
+17749@@@Lush Garden Fungal Table
+17750@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_HatChair01.M2
+17751@@@[DNT] [AUTOGEN] 12PH_Opulent_Barrel02.M2
+17752@@@[DNT] [AUTOGEN] 12PH_Opulent_Barrel02_Open.M2
+17753@@@[DNT] [AUTOGEN] 12PH_Opulent_Bench_Long01.M2
+17793@@@Lush Garden Fungal Planter
+17797@@@Spring Blossom Pond
+17862@@@Short Hanging Tavern Lantern
+17879@@@Hanging Tavern Lantern
+17880@@@Long Hanging Tavern Lantern
+17887@@@[DNT] [AUTOGEN] 12PH_Opulent_Crate02_Open.M2
+17888@@@[DNT] [AUTOGEN] 12PH_Opulent_Rug03.M2
+18614@@@Ornate Elven Stovetop
+18618@@@Razorwind Campfire Grill
+18619@@@Founder's Point Hay Bale
+18620@@@Iron Candlelight Lantern
+18793@@@Elegant Elven Water Well
+18795@@@[DNT] [AUTOGEN] 12PH_Folk_Candelabra01.m2
+18796@@@[DNT] [AUTOGEN] 12PH_Folk_Candelabra02.m2
+18797@@@[DNT] [AUTOGEN] 12PH_Opulent_Chair_Dining_Small01.M2
+18880@@@[DNT] [AUTOGEN] 12PH_Opulent_Mirror_Wall01.M2
+18881@@@[DNT] [AUTOGEN] 12PH_Opulent_Bed_Small01.M2
+18899@@@[DNT] [AUTOGEN] 12PH_Folk_Chandelier02.m2
+18960@@@[DNT] [AUTOGEN] 12PH_Opulent_Candelabra02.M2
+19159@@@Loose Wisps of Hay
+19203@@@[DNT] [AUTOGEN] 12PH_Folk_Path_SteppingStones01.M2
+19204@@@[DNT] [AUTOGEN] 12PH_Folk_Path_SteppingStones02.M2
+19205@@@[DNT] [AUTOGEN] 12PH_Folk_Path_SteppingStones03.M2
+19206@@@[DNT] [AUTOGEN] 12PH_Folk_Path_SteppingStones04.M2
+19215@@@Scattered Wisps of Hay
+19216@@@Windblown Wisps of Hay
+19217@@@Trampled Wisps of Hay
+19218@@@Mounted Founder's Point Lantern
+19219@@@Mounted Tavern Lantern
+19688@@@[DNT] [AUTOGEN] 12PH_Shop_Skyborne_Windwell01.M2
+19689@@@[DNT] [AUTOGEN] 12PH_Shop_Skyborne_Windchimes01.M2
+19690@@@[DNT] [AUTOGEN] 12PH_Shop_Skyborne_Banner01.M2
+19691@@@[DNT] [AUTOGEN] 12PH_Shop_Skyborne_Curtain01.M2
+19760@@@[DNT] [AUTOGEN] 12PH_Opulent_Sofa_Medium01.M2
+19761@@@[DNT] [AUTOGEN] 12PH_Opulent_Trellis02.M2
+19762@@@[DNT] [AUTOGEN] 12PH_Opulent_WallRack02.M2
+19763@@@Sin'dorei Tiffin-Style Lamp
+20164@@@[DNT] [AUTOGEN] 12PH_Opulent_Table_Bar_Small01.M2
+20165@@@[DNT] [AUTOGEN] 12PH_Opulent_Sconce01.M2
+20166@@@[DNT] [AUTOGEN] 12PH_Shop_Skyborne_Pillow01.M2
+20167@@@[DNT] [AUTOGEN] 8HU_KULTIRAS_ROPELIGHTS02.M2
+20168@@@[DNT] [AUTOGEN] 8HU_KULTIRAS_ROPELIGHTS03.M2
+20169@@@[DNT] [AUTOGEN] 8HU_KULTIRAS_ROPELIGHTS04.M2
+20170@@@[DNT] [AUTOGEN] 12PH_LEG_undead_alchemy_table.M2
+20171@@@[DNT] [AUTOGEN] 12PH_LEG_11EA_Earthen_Decor_LoungeChair01.M2
+20326@@@[DNT] [AUTOGEN] 12PH_Opulent_Gazebo02.M2
+20327@@@[DNT] [AUTOGEN] 12PH_Opulent_Path_SteppingStones01.M2
+20328@@@[DNT] [AUTOGEN] 12PH_Opulent_Path_SteppingStones02.M2
+20329@@@[DNT] [AUTOGEN] 12PH_Opulent_Path_SteppingStones03.M2
+20330@@@[DNT] [AUTOGEN] 12PH_Opulent_Path_SteppingStones04.M2
+20331@@@[DNT] [AUTOGEN] 12PH_Opulent_WallLamp01.M2
+20332@@@[DNT] [AUTOGEN] 12PH_Opulent_TableLight02.M2
+20633@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentShrub_A01.m2
+20634@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentShrub_B02.m2
+20635@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentShrub_B01.m2
+20636@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSaguaro_B01.m2
+20637@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSaguaro_B02.m2
+20638@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSaguaro_B03.m2
+20639@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSaguaro_C02.m2
+20640@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSaguaro_D01.m2
+20641@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSaguaro_D02.m2
+20642@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_Grass_A01.m2
+20643@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_Grass_B01.m2
+20644@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_Grass_B02.m2
+20645@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSpiked_C01.m2
+20646@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusSpiked_D01.m2
+20647@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentShrub_B03.m2
+20648@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_Coconut_A01.m2
+20649@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_Coconut_A02.m2
+20650@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DesertBrush_A01.m2
+20651@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DesertBrush_B02.m2
+20652@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DesertBrush_C01.m2
+20653@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernDesert_A01.m2
+20654@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernDesert_A02.m2
+20655@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernDesert_A03.m2
+20656@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernDesert_B01.m2
+20657@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernDesert_B02.m2
+20658@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DuneGrass_A01.m2
+20659@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DuneGrass_A02.m2
+20660@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DuneGrassDry_A01.m2
+20661@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DuneGrassDry_A02.m2
+20662@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_GrassLush_A01.m2
+20663@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_GrassLush_B01.m2
+20664@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_GrassLush_B02.m2
+20665@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernLush_A01.m2
+20666@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernLush_A02.m2
+20667@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernLush_A03.m2
+20668@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernLush_B01.m2
+20669@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FernLush_B02.m2
+20670@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusPricklyPear_B01.m2
+20671@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_CactusPricklyPear_D02.m2
+20672@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_ShrubWild_A01.m2
+20673@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_ShrubWild_A02.m2
+20674@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FlowerAster_A01.m2
+20675@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_FlowerAster_A03.m2
+20676@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DesertBrushLush_A01.m2
+20677@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DesertBrushLush_B02.m2
+20678@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_DesertBrushLush_C01.m2
+20679@@@[DNT] [AUTOGEN] 12PH_Folk_WeaponRack_Wall01.M2
+20692@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_AloeBush_A01.m2
+20693@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_AloeBush_A02.m2
+20694@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_AloeBush_B01.m2
+20695@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_AloeBushBlue_A01.m2
+20696@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_AloeBushBlue_A02.m2
+20697@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_AloeBushBlue_B01.m2
+20698@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BallCactus_A01.m2
+20699@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BallCactus_A02.m2
+20700@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BallCactus_B01.m2
+20701@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Tree_Pine_B01.m2
+20702@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_SucculentPalm_B02.m2
+20703@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_SucculentPalm_B03.m2
+20704@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_SucculentPalm_B04.m2
+20705@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_SucculentPalm_B05.m2
+20706@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushWild_A01.m2
+20707@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushWild_A02.m2
+20708@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushWild_B01.m2
+20709@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_Tumbleweed_A02.m2
+20710@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_Tumbleweed_B01.m2
+20711@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Palm_A01.m2
+20712@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Palm_B01.m2
+20713@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Palm_B02.m2
+20714@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Palm_B03.m2
+20715@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_PalmStump_A01.m2
+20716@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_PalmStump_A02.m2
+20717@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_PalmLog_A01.m2
+20718@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_PalmLog_A02.m2
+20719@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Baobab_B01.m2
+20720@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Baobab_C01.m2
+20721@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Baobab_C02.m2
+20722@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_BaobabYellow_B01.m2
+20723@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_BaobabYellow_C01.m2
+20724@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_BaobabYellow_C02.m2
+20725@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Tree_PineRed_A01.m2
+20726@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushSpriggy_A01.m2
+20727@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushSpriggy_C01.m2
+20728@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushSpriggy_C02.m2
+20729@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushSpriggy_D01.m2
+20730@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Tree_PineStump_A02.m2
+20731@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_Blueberry_A01.m2
+20732@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_Blueberry_B01.m2
+20733@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushBirch_A01.m2
+20734@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushBirch_B01.m2
+20735@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushLeafy_B01.m2
+20736@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushWillow_A01.m2
+20737@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushWillow_A02.m2
+20738@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_BushWillow_B01.m2
+20739@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_ClubMoss_B01.m2
+20740@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_ClubMoss_B02.m2
+20741@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_Shrub_B01.m2
+20742@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_ShrubIvy_C01.m2
+20743@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_Shrub_C01.m2
+20744@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_ShrubIvy_B01.m2
+20745@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_ShrubIvy_B02.m2
+20746@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Plant_ShrubIvy_C02.m2
+20747@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Tree_Ash_B01.m2
+20748@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Tree_PineLog_B01.m2
+20749@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Tree_PineStump_A01.m2
+20750@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Tree_Ash_B02.m2
+20751@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Rock_ClusterSmall_B01.m2
+20752@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Rock_ClusterSmall_B02.m2
+20753@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Rock_Medium_B01.m2
+20754@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Rock_Medium_B02.m2
+20755@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Rock_Medium_B03.m2
+20756@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Rock_B01.m2
+20757@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Rock_C01.m2
+20758@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Rock_C02.m2
+20759@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Rock_D01.m2
+20760@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushWildDry_A01.m2
+20761@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushWildDry_A02.m2
+20762@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_BushWildDry_B01.m2
+20763@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Acacia_B01.m2
+20764@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Acacia_B02.m2
+20765@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Acacia_B03.m2
+20766@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Tree_Acacia_B04.m2
+20767@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentSmall_C01.m2
+20768@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentSmall_C02.m2
+20769@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Plant_SucculentSmall_C03.m2
+20770@@@[DNT] [AUTOGEN] 12DUR_Durotar_Main_Rock_C03.m2
+20771@@@[DNT] [AUTOGEN] 12DUR_Durotar_Bloom_Plant_FlowerBush_B02.m2
+20772@@@[DNT] [AUTOGEN] 12DUR_Durotar_Bloom_Plant_FlowerBush_B03.m2
+20773@@@[DNT] [AUTOGEN] 12DUR_Durotar_Bloom_Plant_BallCactus_B01.m2
+20774@@@[DNT] [AUTOGEN] 12DUR_Durotar_Bloom_Plant_BallCactus_B02.m2
+20775@@@[DNT] [AUTOGEN] 12DUR_Durotar_Bloom_Plant_BallCactus_C01.m2
+20776@@@[DNT] [AUTOGEN] 12DUR_Durotar_Bloom_Plant_Flower_B01.m2
+20777@@@[DNT] [AUTOGEN] 12DUR_Durotar_Azshara_Rock_Medium_B04.m2
+20878@@@[DNT] [AUTOGEN] 8ZUL_PalmPlant_A01.M2
+20879@@@[DNT] [AUTOGEN] 8ZUL_PalmPlant_B02.m2
+20880@@@[DNT] [AUTOGEN] 8ZUL_PalmPlant_B01.M2
+20881@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Tree_PalmLarge_A01.m2
+20882@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_FlowerBush_B01.m2
+20883@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_FlowerBush_B02.m2
+20884@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_FlowerAccent_C01.m2
+20885@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_FlowerAccent_D01.m2
+20886@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_FlowerAccent_D02.m2
+20887@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_FlowerAccent_D03.m2
+20888@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Grass_B01.m2
+20889@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Grass_B02.m2
+20890@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Grass_B03.m2
+20891@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Grass_C01.m2
+20892@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Bush_A01.m2
+20893@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Bush_C01.m2
+20894@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Bush_D01.m2
+20895@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Fern_B01.m2
+20896@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Fern_B02.m2
+20897@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Fern_B03.m2
+20898@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Fern_A01.m2
+20899@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Fern_A02.m2
+20900@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_MossClump_A01.m2
+20901@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_MossClump_A02.m2
+20902@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_MossClump_A03.m2
+20903@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_MossClump_A04.m2
+20904@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_MossClump_A05.m2
+20905@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Vines_A01.m2
+20906@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Vines_A02.m2
+20907@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_Vines_A03.m2
+20908@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_WaterGrass_B01.m2
+20909@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_WaterGrass_B02.m2
+20910@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_WaterGrass_C01.m2
+20911@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_WaterClover_B01.m2
+20912@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_WaterClover_B02.m2
+20913@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_WaterClover_C01.m2
+20914@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_BushLeafy_A01.m2
+20915@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_BushLeafy_B01.m2
+20916@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_BushLeafy_B02.m2
+20917@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_BushLeafy_B03.m2
+20918@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_BushLeafy_B04.m2
+20919@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_IvyBush_A01.m2
+20920@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_IvyBush_B01.m2
+20921@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_IvyBush_B02.m2
+20922@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_IvyBush_C01.m2
+20923@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_IvyBush_C02.m2
+20924@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Plant_IvyBush_D01.m2
+21060@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_Basket02.M2
+21061@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_Basket01.M2
+21079@@@Sin'dorei Covered Cookpot
+21080@@@Sin'dorei Open Cookpot
+21081@@@[DNT] [AUTOGEN] ULDUM_CROPS_SUGARCANE01.M2
+21082@@@[DNT] [AUTOGEN] ULDUM_CROPS_SUGARCANE06.M2
+21083@@@[DNT] [AUTOGEN] ULDUM_CROPS_SUGARCANEROW03.M2
+21084@@@[DNT] [AUTOGEN] ULDUM_CROPS_SUGARCANEROW04.M2
+21085@@@[DNT] [AUTOGEN] PA_CROP_BIGBANANA.M2
+21086@@@[DNT] [AUTOGEN] 8RIV_FarmCabbage_Single_01.m2
+21087@@@[DNT] [AUTOGEN] 8RIV_FarmCabbage_Single_02.m2
+21088@@@[DNT] [AUTOGEN] 10DG_Dragon_Fruit02.m2
+21089@@@[DNT] [AUTOGEN] 11ETI_Main_Plant_Lettuce_B01.m2
+21090@@@[DNT] [AUTOGEN] 11ETI_Main_Plant_Lettuce_C01.m2
+21091@@@[DNT] [AUTOGEN] 11ETI_Main_Plant_Lettuce_C02.m2
+21092@@@[DNT] [AUTOGEN] 10XP_Generic_Banana_Bunch01.m2
+21093@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Tree_PalmLarge_B01.m2
+21094@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Tree_PalmLarge_B02.m2
+21095@@@[DNT] [AUTOGEN] 12DUR_Oasis_Plant_AccentFern_A01.m2
+21096@@@[DNT] [AUTOGEN] 12DUR_Oasis_Plant_AccentFern_B01.m2
+21097@@@[DNT] [AUTOGEN] 12DUR_Oasis_Plant_AccentFern_B02.m2
+21098@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Tree_Banana_A01.m2
+21099@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Tree_Banana_A02.m2
+21100@@@[DNT] [AUTOGEN] 12DUR_Durotar_Oasis_Tree_Banana_A03.m2
+21101@@@Sin'dorei Cookpot Lid
+21106@@@Sin'dorei Display Case
+21598@@@Dark Obelisk
+21599@@@[DNT] [AUTOGEN] 12PH_Opulent_Window_Interior02.M2
+21600@@@[DNT] [AUTOGEN] 12PH_Opulent_Chandelier02.M2
+21601@@@[DNT] [AUTOGEN] 12PH_BloodElf_Decor_Chair_Porchswing01.M2
+21602@@@Sin'dorei Garden Swing
+21873@@@[DNT] [AUTOGEN] 7TR_Tauren_Pot01.m2
+21874@@@[DNT] [AUTOGEN] 7TR_Tauren_Pot02.m2
+21875@@@[DNT] [AUTOGEN] 8HU_KULTIRAS_HONEYPOT01.m2
+21876@@@[DNT] [AUTOGEN] 8HU_KULTIRAS_HONEYPOT02.m2
+21877@@@[DNT] [AUTOGEN] 9MW_IronMaiden_Torch01.m2
+21878@@@[DNT] [AUTOGEN] 9MW_IronMaiden_Torch02.m2
+21879@@@[DNT] [AUTOGEN] 10MP_MolePeople_Storage_Pottery01.m2
+21880@@@[DNT] [AUTOGEN] 10MP_MolePeople_Storage_Pottery_Desaturated02.m2
+21881@@@[DNT] [AUTOGEN] 10MP_MolePeople_Storage_Pottery_Desaturated03.m2
+21882@@@[DNT] [AUTOGEN] 11EA_Earthen_Cooking_Country_CookingPot02.m2
+21883@@@[DNT] [AUTOGEN] 11EA_Earthen_Cooking_Country_CookingPot02_Closed.m2
+21884@@@[DNT] [AUTOGEN] 11EA_Earthen_Cooking_Country_CookingPot03_Closed.m2
+21885@@@[DNT] [AUTOGEN] 11EA_Earthen_Cooking_Country_HoneyPot01.m2
+21886@@@[DNT] [AUTOGEN] 11EA_Earthen_Cooking_Country_HoneyPot03.m2
+21889@@@[DNT] [AUTOGEN] 6OR_Garrison_Torch01.m2
+21890@@@[DNT] [AUTOGEN] 7NE_Blackrook_Torch01.m2
+21891@@@[DNT] [AUTOGEN] 7NE_Blackrook_Torch02.m2
+21892@@@[DNT] [AUTOGEN] 7NE_Blackrook_Torch03.m2
+21932@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Dragon01.m2
+21933@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_BoarRug01.m2
+21934@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Doe01.m2
+21935@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Doe02.m2
+21936@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Dragon02.m2
+21937@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Elekk02.m2
+21938@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Lion02.m2
+21939@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_ShovelTusk02.m2
+21940@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Tigger02.m2
+21941@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Elk02.m2
+21942@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMountFrame01.m2
+21943@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMountFrame02.m2
+21944@@@[DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Tiger01.m2
+21945@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_Gourd01.M2
+21946@@@[DNT] [AUTOGEN] 12PH_Shop_LunarNewYear_StoneLion02.M2
+21947@@@[DNT] [AUTOGEN] 12PH_Shop_VenthyrDecor_Organ01.M2
+21948@@@[DNT] [AUTOGEN] 12PH_Shop_VenthyrDecor_Throne01.M2
+22006@@@Small Lumber Pile
+22007@@@Empty Wooden Toolbox
+22008@@@Suramar Arcfruit Bowl
+22009@@@Small Decorative Dornogal Opal
+22010@@@Decorative Dornogal Opal
+22011@@@Large Decorative Dornogal Opal
+22143@@@Void Elf Scribe's Desk
+22181@@@Void Elf Floating Desk
+22182@@@Runic Parchment
+22183@@@Void Flame Candle
+22388@@@Void Inkwell
+12.0.5.66529
+15293@@@Small Sturdy Wooden Trellis
+12.0.5.66591
+18614@@@Ornate Elven Stove
+12.0.5.67114
+16974@@@Spring Blossom Stepping Stone
+16975@@@Spring Blossom Privacy Screen
+16976@@@Spring Blossom Stepping Stone Duo
+16977@@@Spring Blossom Stepping Stone Trio
+16978@@@Spring Blossom Stepping Stone Collection
+17747@@@Spring Blossom Tea Set
+17748@@@Spring Blossom Table
+17792@@@Lush Garden Hedge
+17794@@@Lush Garden Fungal Picnic
+17795@@@Spring Blossom Lantern
+17796@@@Spring Blossom Tranquility Garden
+18794@@@Lush Garden Stable
+19848@@@Lush Garden Rug
+12.0.5.67823
+21947@@@Orchestrion of Echoing Atonement
+21948@@@Throne of Subjugated Souls
+22775@@@Condensed Anima Orb
+12.0.7.67227
+1283@@@Left-Bound Silvermoon Drapes
+1284@@@Right-Bound Silvermoon Drapes
+1451@@@Tied-Left Leather Curtains
+2606@@@Luminous Rotshroom
+5129@@@Large Amani Tiki Mask
+16098@@@Auspicious Curio Display
+16099@@@Auspicious Inkmaster's Desk
+16100@@@Auspicious Tree of Fortune
+16101@@@Auspicious Golden Carp Lantern
+16102@@@Auspicious Imperial Lion
+16314@@@Deactivated Consortium Translocation Portal
+17750@@@Auspicious Wooden Chair
+18897@@@Banner of Five Dawns
+19011@@@[DNT] [AUTOGEN] 12PH_Leg_7SR_SteppingStone_B01.M2 - duplicate do not use
+20679@@@Bartender Bob's "No Weapons Allowed" Rack
+21060@@@Auspicious Picnic Basket
+21061@@@Auspicious Meal Case
+21857@@@Tome of Kings
+21945@@@Auspicious Verdant Basin
+21946@@@Auspicious Stone Lion
+21950@@@[DNT] [AUTOGEN] 12PH_Folk_Rug04.M2
+25307@@@Sunstrider Omnium
+12.0.7.67360
+7584@@@Tall Founder's Point Gravestone
+18802@@@Army of the Light Golden Fence
+21950@@@Square Woolen Rug
+22183@@@Voidflame Candle
+25307@@@Sunstrider Omnium Simulacrum
+25564@@@Army of the Light Golden Barricade
+25565@@@Army of the Light Standing Banner
+25566@@@Army of the Light Transport Pad
+12.0.7.67525
+18802@@@Luminant Scout's Golden Fence
+25564@@@Luminant Defender's Golden Barricade
+25565@@@Luminant Soldier's War Banner
+25566@@@Lightveil's Transport Pad
+25664@@@De-Powered Lightforged Siegebreaker
+25665@@@Grand Artificer's Lightforged Console
+12.0.7.68232
+23706@@@Prized Orb of Azeroth
+24193@@@Framed Horde Pride
+24194@@@Framed Alliance Pride
+12.0.7.68887
+25936@@@Perch of the Dawnfire Phoenix
+12.1.0.68209
+1135@@@[DNT] [AUTOGEN] 12BE_BloodElf_Crafting_Forge01.m2 - DUPLICATE do not use
+1136@@@Bound Silvermoon Drapes
+1138@@@[DNT] [AUTOGEN] 12BE_BloodElf_Navigation_FenceCapper01.m2 - DUPLICATE do not use
+1139@@@[DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Bench01.m2 - DUPLICATE do not use
+1140@@@Unearthed Sarcophagus Lid
+1150@@@Unearthed Sarcophagus Base
+1154@@@Masterful Sin'dorei Gravestone
+1204@@@Sunsmoke Censer DEPRECATED DONT USE
+1221@@@[DNT] [AUTOGEN] 12BE_BloodElf_Furniture_FancyChair01.m2 - DUPLICATE do not use
+1222@@@[DNT] [AUTOGEN] 12BE_BloodElf_Storage_Barrel01.m2 - DUPLICATE do not use
+1224@@@[DNT] [AUTOGEN] 12BE_BloodElf_Navigation_Fence01.m2 - DUPLICATE do not use
+1225@@@[DNT] [AUTOGEN] 12BE_BloodElf_Structure_Fountain01.m2 - DUPLICATE do not use
+1226@@@[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_Chandelier01.m2 - DUPLICATE do not use
+1228@@@[DNT] [AUTOGEN] 12BE_BloodElf_Furniture_Bed01.m2 - DUPLICATE do not use
+1229@@@[DNT] [AUTOGEN] 12BE_BloodElf_Lighting_LanternHanging04.m2 - DUPLICATE do not use
+1283@@@Bound-Left Silvermoon Drapes
+1284@@@Bound-Right Silvermoon Drapes
+1426@@@Vessel of the Howling Ossuary
+1427@@@Griftah's Mystical Polter-Urn
+1430@@@Purified Troll Urn
+1730@@@Elegant Enchanted Vanity
+1907@@@Purified Sindorei Candle
+1909@@@Purified Floating Lantern
+2587@@@Mastercrafted Fungal Row Planter
+4426@@@Stack of Kafa Mugs
+5129@@@Furious Tiki Mask
+5131@@@Spirit-Touched Amani Mask
+5648@@@Amani Supply Sack
+5796@@@Sin'dorei Golden Welcome
+8990@@@Purified Troll Pitcher
+9289@@@Purified Crude Axe
+9290@@@Revered Deepstone Table
+9627@@@Purified Crude Hammer
+10368@@@Ogre Champion's Prized Skull
+10859@@@Amani Water Well
+10862@@@Purified Troll Loop
+10896@@@Purified Ancient Urn
+11140@@@Purified Troll Pendant
+11285@@@Purified Troll Amulet
+12145@@@Purified Troll Ring
+14353@@@[DNT] [AUTOGEN] 12PH_Leg_6HU_BLACKSMITH_FORGE03.m2 - DUPLICATE do not use
+14819@@@[DNT] [AUTOGEN] 12PH_Leg_12BE_BloodElf_Structure_Statue02.M2 - DUPLICATE do not use
+15156@@@Amani Storage Crate
+15157@@@Amani Wicker Crate
+15265@@@Amani Anvil
+15266@@@Amani Forgemaster's Workbench
+15283@@@Amani Forge
+15284@@@Emerald-Encrusted Amani Ritual Skull
+15285@@@Griftah's Resizing Hex-Skull
+15286@@@Purified Folk Mirror
+15290@@@Cherished Pet's Rug
+15506@@@Amani Ritual Totem
+15569@@@Amani Wayfarer's Torch
+16093@@@Hexed Tomb Brazier
+16316@@@Zul'Aman Brazier Post
+16808@@@Zul'Aman Amani Awning
+17786@@@[DNT] - Anim doesn't play - Self-Pouring 590 Quel'Lithien Red
+17799@@@Soulcoiler Canopy
+18615@@@Amani Blueflame Chandelier
+18796@@@Purified Folk Candle
+18798@@@Amani Territorial Totem
+18880@@@Purified Elven Mirror
+18900@@@Ula'tek Ritual Monolith
+18901@@@Venom Scholar's Focus
+18960@@@Purified Kaldorei Candle
+20332@@@Purified Elven Glowlamp
+21102@@@Serpent-Caller Spike
+21324@@@Stitched Blisterfang Bag
+21325@@@Fanged Scaleskin Pouch
+21616@@@Feathered Ula'tek Talisman
+21617@@@Opened Serpentine Reliquary
+21653@@@Clutch of Ula'tek
+21720@@@Egg of Ula'tek
+21725@@@Destroyed Clutch of Ula'tek
+21832@@@Venomous Tendril
+21833@@@Oozing Vilescar Barricade
+21873@@@Purified Tauren Pot
+21886@@@Purified Earthen Pot
+21949@@@Seaside Firefly Jar
+21951@@@Ula'tek Ritual Stone
+21952@@@Venomous Pyre
+21953@@@Venombound Ropes
+21956@@@Hanging Coiled Isle Ropes
+22144@@@Seaside Tiki Frondtree
+22145@@@Preyhunter's Scaled Effigy
+22146@@@Preyhunter's Fanged Effigy
+22147@@@Preyhunter's Fanged Bust
+22148@@@Preyhunter's Terror Effigy
+22397@@@Seaside Tiki Market Stand
+22398@@@Seaside Charcoal Grill
+22895@@@Seaside Cushioned Chair
+22916@@@Amani Decorative Plinth
+22917@@@Amani Road Marker
+22918@@@Woven Forest Troll Rug
+22919@@@Steamy Romance Tablet
+22920@@@Amani Building Peg
+22921@@@Forest Troll Fence
+22922@@@Forest Troll Fencepost
+22924@@@Witch Doctor's Punch Bowl
+22925@@@Shrine of Nalorakk, Loa of War
+22926@@@Shrine of Jan'alai, Loa of Fire
+22927@@@Shrine of Akil'zon, Loa of Victory
+23175@@@Seaside Lounge Chair
+23176@@@Short Centaur Wall
+23177@@@Long Centaur Wall
+23178@@@Closed Centaur Basket
+23179@@@Open Centaur Basket
+23180@@@Centaur Table
+23181@@@Centaur Bench
+23182@@@Round Centaur Carpet
+23183@@@Wide Centaur Carpet
+23184@@@Narrow Centaur Carpet
+23185@@@Centaur Stove
+23186@@@Tapered Centaur Wall
+23188@@@Shrine of Halazzi, Loa of the Hunt
+23548@@@Ball
+23549@@@Pet Food and Water Tray
+23550@@@Cooked Leg of Meat
+23551@@@Cooked Rack of Meat
+23553@@@Small Wooden Floor Tile
+23554@@@Large Wooden Floor Tile
+23555@@@Small Triangular Tile
+23556@@@Large Triangular Tile
+23557@@@Tall Round Column
+23558@@@Short Round Column
+23559@@@Short Square Column
+23560@@@Tall Square Column
+23707@@@Small Wooden Wall Tile
+23708@@@Large Wooden Wall Tile
+23709@@@Wide Wooden Staircase
+23710@@@Spiraling Wooden Stairs
+23868@@@Seaside Hanging Lantern
+23869@@@Seaside Straw Umbrella
+23870@@@Seaside Painted Surfboard
+23871@@@Cauldron of Ula'tek
+23873@@@Sealed Serpentine Reliquary
+23874@@@Wrapped Scaleskin Urn
+23875@@@Cracked Vilescar Urn
+23876@@@Charmed Blisterfang Urn
+23881@@@Soulcoiler Sconce
+23883@@@Seaside Waterfall Basin
+24196@@@Seaside Depths Porthole
+24512@@@Soulcoiler Skull
+24519@@@Soulcoiler Jaw
+24630@@@Seaside Murloc Tiki Totem
+24753@@@Seaside Tiki Gazebo
+24755@@@Seaside Fire Pit
+24765@@@Zul'Aman Creeping Pangoroot
+24888@@@Tune-O-Tron 6000
+24889@@@Zul'Aman Swamp Palm Sprout
+24890@@@Preyhunter's Scaled Bust
+24891@@@Preyhunter's Terror Bust
+25101@@@Westfall Pet Cage
+25102@@@Crossroads Pet Cage
+25103@@@Crude Pet Cage
+25104@@@Breanni's Menagerie Aquarium
+25105@@@Silvermoon Dragonhawk Incubator
+25106@@@Cozy Lightbloom Lilypad
+25121@@@Cozy Bird Nest
+25122@@@Loyal Companion's Plinth
+25128@@@Griftah's Torch of Rotation
+25131@@@The Venomous Abyss Aureate Trophy
+25132@@@The Venomous Abyss Gleaming Trophy
+25133@@@The Venomous Abyss Argent Trophy
+25274@@@Gilded Silvermoon Compass
+25279@@@Hanging Blood Knights Shield
+25284@@@Sturdy Silvermoon Crate
+25286@@@Sturdy Silvermoon Crate Lid
+25287@@@Adorned Sin'dorei Satchel
+25288@@@Stonecarved Sin'dorei Jar
+25289@@@Mysterious Sin'dorei Candlestick
+25292@@@Altar of Corrosion
+25293@@@Pillar of the Fanged Altar
+25294@@@Amani Worship Candle
+25295@@@Amani Ritual Candles
+25296@@@Zul'Aman Burning Pinecone
+25297@@@Traditional Tortollan Tent
+25299@@@Aged Tortollan Scroll Case
+25300@@@Blue Tortollan Signpost
+25336@@@Yellowed Kelp Pile
+25337@@@Hooked Net Trap
+25546@@@Pepe
+25812@@@Pillar of the Coiled Isle
+25813@@@Venom-Fanged Font
+26097@@@Vilescar Weapon Rack
+26196@@@Rustic Fishing Rack
+26197@@@Hanging Yellowed Kelp
+26198@@@Hatchery of Hissing Eggs
+26201@@@Hanging Candles
+26202@@@Arathor Toy Sword
+26203@@@Twilight Brazier
+26205@@@Soulcoiler's Ritual Candle
+26208@@@Royal Attendant's Coffin
+26363@@@Mounted Moby
+26364@@@Tortollan Traveler's Tincture
+26365@@@Compact Cookfire
+26366@@@Tortollan Slingsack
+26370@@@Empty Tortollan Display Rack
+26371@@@Sea Glass Bauble
+26372@@@Aetherlume Field Lamp
+26373@@@Tortollan Traveler's Chest
+26374@@@Lost Explorers Mailbox
+26377@@@Zul'Aman Pine Tree
+26378@@@Stretched Snakeskin Rack
+26379@@@Keen Hex Mask
+26381@@@Amani Forgemaster's Glaive
+26382@@@Amani Forgemaster's Rack
+26383@@@Coiled Hookshot
+26386@@@Half-Shell Hot Pot
+26387@@@Sea Glass Lamp Post
+26389@@@Apothecary's Tortollan Display Rack
+26391@@@Concocted Poisonous Residue
+26477@@@Rock Goblet
+26478@@@Ancient Memories of the Sea
+26481@@@Tortollan Scholar Satchel
+26482@@@Sealeather Sack
+26483@@@Collector's Tortollan Display Rack
+26484@@@Lost Tortollan Scroll
+26485@@@Fine Captain's Bottle
+26487@@@Clumped Asteroidea
+26488@@@Opalescent Amani Peridot
+26489@@@Piercing Amani Lapis
+26491@@@K'areshi Tea Cup
+26492@@@Purified Dracthyr Stein
+26494@@@Purified Goblin Cup
+26495@@@[DNT] [AUTOGEN] 12TB_TwilightsBlade_Furniture_SleepingCot01.m2
+26496@@@Enchanted Eversong Trout
+26564@@@Mason's Tortollan Display Rack
+26613@@@Warrens Candlecooker
+26614@@@Kobold Dig-Thing
+26617@@@Highlighting High Light
+26618@@@Small Warrens Candle
+26619@@@Kobold Sit-Thing
+26621@@@Medium Warrens Candle
+26651@@@Stormstout Hanging Lantern
+26785@@@Large Warrens Candle
+26786@@@Large Threedium Warrens Candle
+26787@@@Candle Cage
+26788@@@Bold Kobold Kabin
+26789@@@Hot Kobold Treasure
+26871@@@Tortollan Tarp Tent
+26936@@@Droopy Longwick Rope
+26937@@@Longwick Rope
+26938@@@Cozy Kobold Crate
+26939@@@Hanging Longwick Rope
+27041@@@Forgotten Amani Mural
+27042@@@"The Hunger Awakens" Mural
+27043@@@"Rage of the Shackled" Mural
+12.1.0.68301
+25666@@@Traditional Brewfest Banner
+25672@@@Brewfest Fence
+25673@@@Brewfest Fencepost
+25674@@@Hanging Brewfest Wreath
+25675@@@Brewfest Crate
+26374@@@Lost Explorers' Mailbox
+12.1.0.68412
+1907@@@Purified Sin'dorei Candle
+17800@@@Flat Snakeskin Canopy
+23176@@@Maruukai Barricade
+23177@@@Wide Maruukai Barricade
+23178@@@Maruukai Storage Basket
+23179@@@Open Maruukai Storage Basket
+23180@@@Maruukai Wooden Table
+23181@@@Maruukai Feast Table
+23182@@@Bakar's Napping Rug
+23183@@@Ornate Khanam's Rug
+23184@@@Large Ornate Khanam's Rug
+23185@@@Maruukai Chef's Stove
+23186@@@Tapered Maruukai Barricade
+23548@@@Bakar's Favorite Ball
+23550@@@Bakar's Snack
+23551@@@Bakar's Dinner
+23555@@@Small Triangular Wooden Tile
+23556@@@Large Triangular Wooden Tile
+23557@@@Tall Round Wooden Column
+23558@@@Short Round Wooden Column
+23559@@@Short Square Wooden Column
+23560@@@Tall Square Wooden Column
+23710@@@Spiral Wooden Stairs
+25139@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Defense_Barricade01.m2
+25279@@@Blood Knight's Decorative Shield
+25765@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_BarnQuilt01.M2
+25895@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_FloralBasket01.M2
+25896@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Rug01.M2
+26367@@@Protected Tortollan Scroll Case
+26380@@@Chiseled Amani Tablet
+26381@@@Amani Forgemaster's Decorative Spear
+26383@@@Coiled Amani Hookshot
+26384@@@"Cursed Gaze of Ula'tek" Mural
+26391@@@Ersatz Venom Splatter
+26477@@@Draenei Rock Goblet
+26485@@@Proudmoore Ship-in-a-Bottle
+26490@@@Roaring Amani Garnet
+26495@@@Twilight's Blade Bedroll
+26496@@@Enchanted Voidwell Fish
+26703@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_RockingChair01.M2
+26704@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_AppleJuicer01.M2
+26705@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Pumpkins01.M2
+26706@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Corn01.M2
+26707@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Vines01.M2
+26708@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Shed01.M2
+26875@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_HangingLight01.M2
+26876@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_PicnicTable01.M2
+26877@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_Pastel_Window01_Day.M2
+26878@@@Tuskarr Fire Pit
+26879@@@Tuskarr Hanging Grill
+26935@@@Seeker's First Draft
+26940@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_SaddleStand01.M2
+27044@@@Beguiling Memories of the Sea
+27045@@@[DNT] [AUTOGEN] 12PH_Shop_Fall_PSL_Tractor01.M2
+27046@@@Tuskarr Fishing Gear Rack
+27047@@@[DNT] [AUTOGEN] 12PH_Leg_Book_Troll_03.M2
+27167@@@Color-Curious Candle
+12.1.0.68569
+5130@@@Mysterious Voodoo Mask
+27041@@@"Summoning of Ula'tek" Mural
+12.1.0.68675
+1140@@@Unearthed Amani Sarcophagus Lid
+1150@@@Unearthed Amani Sarcophagus Base
+1428@@@Forgotten Amani Urn
+16808@@@Fortified Amani Awning
+17295@@@[DNT] [AUTOGEN] 12PH_Durotar_Barrel_Large01.M2
+17296@@@[DNT] [AUTOGEN] 12PH_Durotar_Keg01.M2
+17798@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Canopy01.m2
+18486@@@[DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Canopy04.m2
+21615@@@Venomjade Necklace
+25137@@@Venomous Thread
+25138@@@Venomous Globule
+25139@@@Venomous Defender's Barricade
+26201@@@Kobold's Hanging Kandles
+26204@@@Corrosive Cache
+26375@@@Pungent Atal'Utek Shroom
+26376@@@Atal'Utek Ivy
+12.1.0.68914
+25765@@@Framed Moonbrook Quilt
+25895@@@Jansen Farm Floral Basket
+25896@@@Saldean Autumnal Woven Rug
+26703@@@Sentinel Hill Rocking Chair
+26704@@@Demont Orchard Juicer
+26705@@@Furlbrow Farm Pumpkin Trio
+26706@@@Molsen Farm Corn Row
+26707@@@Old Moonbrook Creeping Ivy
+26708@@@Westfall Farmer's Shed
+26875@@@Westfall Harvest Lamp
+26876@@@Sentinel Hill Picnic Table
+26877@@@Old Moonbrook Daylight Window
+26940@@@Maxwell Stables Saddle
+27045@@@Torquewrench Tractor
+27973@@@Old Moonbrook Nighttime Window
+12.1.0.69814
+28350@@@BlizzCon Doormat
+12.1.5.69594
+1429@@@Broken Amani Ritual Urn
+1431@@@Cracked Amani Funerary Urn
+1432@@@Ruined Amani Ritual Urn
+1433@@@Shattered Amani Ritual Urn
+2589@@@Open Fungal Jar
+8991@@@Amani Horn Beaker
+8992@@@Amani Horn Cup
+14623@@@Open Sin'dorei Scroll
+15161@@@Frayed Amani Offering Basket
+15491@@@Wall-Mounted Amani Animal Trophy
+15748@@@Blue Amani Tapestry
+15749@@@Green Amani Tapestry
+15750@@@Brown Amani Tapestry
+15757@@@Open Domanaar Storage Crate
+16095@@@Amani Fishing Canoe
+16096@@@Worn Amani Oar
+21617@@@Open Serpentine Reliquary
+22399@@@"Gnoma Lisa" Painting
+23552@@@Tusked Amani Canoe
+25129@@@Corroded Amani Sconce
+25301@@@Nourished Clutch of Brood Eggs
+25302@@@Nourished Brood Egg Cluster
+25303@@@Nourished Brood Eggs
+25304@@@Dormant Clutch of Brood Eggs
+25305@@@Dormant Brood Egg
+25306@@@Dormant Brood Egg Cluster
+25308@@@Symbol of Halazzi, Loa of the Hunt
+25323@@@Small Shadowmoon Shadebrush
+25324@@@Overgrown Valuun Shrub
+25325@@@Verdant Mire Scale-Leaf
+25326@@@Everbloom Forest Floor
+25474@@@Kith'ix's Seal
+26009@@@Simple Hallow's End Candle
+26010@@@Candlelit Smiling Jack-o'-Lantern
+26011@@@Candlelit Shrieking Jack-o'-Lantern
+26012@@@Candlelit Ogre Jack-o'-Lantern
+26013@@@Scarecrow Pepe
+26015@@@Apple Bobbing Bucket
+26016@@@Filled Candy Bucket
+26017@@@Spidery Witch Hat
+26018@@@Eternally Powered Glowskull
+26019@@@Spooky Scarecrow
+26020@@@Buckled Witch Hat
+26050@@@Enchanted Hallow's End Candle
+26051@@@Unlit Smiling Jack-o'-Lantern
+26052@@@Unlit Shrieking Jack-o'-Lantern
+26053@@@Unlit Ogre Jack-o'-Lantern
+26054@@@Horrific Head of the Horseman
+26385@@@Amani Hex Candle
+26479@@@Beloved Murloc Plushie
+26709@@@Beloved Ottuk Plushie
+26710@@@Beloved Ottuuuuuuk Plushie
+26711@@@Beloved Plush Doll
+26880@@@Looming Heartsbane Effigy
+26881@@@Elaborate Heartsbane Ritual Markings
+26882@@@Heartsbane Ritual Markings
+26883@@@Heartsbane Stone Circle
+26884@@@Heartsbane Banner
+26885@@@Ominous Heartsbane Shrine
+26886@@@Ominous Heartsbane Banner
+26887@@@Elaborate Heartsbane Doom Catcher
+26888@@@Heartsbane Doom Catcher
+26889@@@Heartsbane Candle
+27216@@@Aqir Hunter's Trophy
+27217@@@"Pride of Stormwind" Statue
+27220@@@Lillistrasza's Lucky Duck Plushie
+27255@@@Caravan Smith's Anvil
+27458@@@Ancient Amani Mural
+27606@@@Mature Star Lily
+27608@@@Shielded Lightforged Pylon
+27609@@@Nomad's Round Cushion
+27610@@@Ornate Vulpera Caravan
+27612@@@Nathrian Reaching Briar
+27613@@@Large Nathrian Bladebush
+27614@@@Starseed Sapling
+27617@@@Kyrian Waymarker Plaque
+27683@@@Embaari Beech Tree
+27684@@@Sinfall Dining Table
+27824@@@Hanging Lightforged Standard
+27982@@@Vulpera War Banner
+28106@@@Lightforged Holo-Tower
+28107@@@Lightforged Holo-Barricade
+28108@@@Lightforged Holo-Parapet
+28109@@@Lightforged Holo-Shield
+28110@@@Mysterious Imported Piranha
+28111@@@Obsidian Lava Pool
+28317@@@Pale Shadowmoon Willow
+28318@@@Huddled Nightmarsh Blossom
+28319@@@Curved Karabor Hedge
+28320@@@Elaborate Karabor Hedge
+28321@@@Karabor Hedge
+28322@@@Shadow Lily Bloom
+28323@@@Gloomshade Glowpod
+28324@@@Karabor Beech Tree
+28325@@@Verdant Shadowmoon Willow
+28326@@@Nagrand Clover Cluster
+28327@@@Nagrand Wild Wheat
+28328@@@Young Sentinel Tree
+28329@@@Highmaul Sentinel Tree
+28330@@@Wandering Sentinel Tree
+28331@@@Mature Spiritwood Oak
+28332@@@Spiritwood Oak Stump
+28333@@@Sentinel Tree Root
+28334@@@Stonecrag Sentinel Tree
+28335@@@Kalandrios Lily
+28336@@@Aborius Pod Plant
+28337@@@Gordawg Mossy Rock
+28338@@@Nagrand Heart Ivy
+28341@@@Small Darkhaven Window
+28343@@@Nathrian Window
+28344@@@Maldraxxi Shielding Lattice
+28353@@@Endmire Anima Blossom
+28354@@@Ceremonial Kyrian Standard
+28367@@@Ossified Maldraxxi Spike
+28427@@@Decorative Lightforged Holo-Screen
+28428@@@Gilded Stonework Altar
+28429@@@Gleaming Lightforge
+28430@@@Hanging Argunite Lamp
+28431@@@Argunite Sconce
+28432@@@Standing Argunite Lamp
+28433@@@Eredath Artisan's Workbench
+28434@@@Argunite Crystal Storage
+28435@@@Raw Argunite Supply
+28436@@@Carved Argunite Supply
+28437@@@Shimmering Lightforged Canister
+28438@@@Gleaming Lightforged Grindstone
+28439@@@Lightforged Recall Beacon
+28440@@@Lightforged Control Console
+28441@@@Replica Crown of the Triumvirate
+28442@@@Golden Argunite Crystal
+28443@@@Celadon Argunite Crystal
+28444@@@Amethyst Argunite Crystal
+28445@@@Reinforced Empyrium Tile
+28446@@@Decorative Lightweave Bolt
+28447@@@Solar Mana-Ring
+28448@@@Ceremonial Lightforged Standard
+28450@@@Skysong Sentinel Tree
+28456@@@Withered Crimson Oak
+28457@@@Closed Vulpera Scroll
+28458@@@Drustvar Leaf Clump
+28463@@@Wooden Vulpera Caravan
+28464@@@Damaged Nomad's Makeshift Barricade
+28465@@@Fortified Nomad's Makeshift Barricade
+28466@@@Nomad's Wooden Lamppost
+28467@@@Nomad's Warped Water Gourd
+28468@@@Nomad's Worn Water Gourd
+28469@@@Nomad's Water Gourd
+28470@@@Nomad's Wooden Table
+28471@@@Nomad's Steel Lantern
+28472@@@Nomad's Campfire Grill
+28473@@@Nomad's Mortar and Pestle
+28474@@@Nomad's Covered Serving Bowl
+28475@@@Nomad's Serving Bowl
+28476@@@Nomad's Stone Pitcher
+28477@@@Nomad's Stone Urn
+28478@@@Nomad's Refreshment Set
+28479@@@Nomad's Bowl Set
+28480@@@Nomad's Serving Sundries
+28481@@@Reinforced Nomad's Makeshift Barricade
+28482@@@Blue Vulpera Cushion
+28483@@@Black Vulpera Cushion
+28484@@@Long Red Vulpera Cushion
+28485@@@Withered Barrow-weed
+28486@@@Scarlet Drustvar Thornwood
+28487@@@Lush Drustvar Witchfern
+28488@@@Scarlet Drustvar Oak
+28489@@@Drustvar Glowcap Cluster
+28490@@@Twisted Crimson Root
+28491@@@Short Crimson Oak Stump
+28492@@@Short Drustvar Oak Stump
+28493@@@Drustvar Shelfcap
+28494@@@Snowbound Highroad Pine
+28495@@@Boralus Swill Bottle
+28497@@@Drustvar Leaf Patch
+28498@@@Vacant Buzzard Roost
+28499@@@Arching Crimson Ivy
+28508@@@Vulpera Postbox
+28509@@@Nathrian Sinstain Oak
+28510@@@Nathrian Forked Briar
+28511@@@Large Nathrian Briar Root
+28512@@@Small Nathrian Briar Root
+28513@@@Nathrian Leafy Briar
+28514@@@Nathrian Sinstain Bush
+28515@@@Nathrian Sinstain Ivy Cluster
+28516@@@Windswept Elysian Grass
+28517@@@Nathrian Fungal Rotcap
+28518@@@Lonely Banewood Pine
+28519@@@Verdant Elysian Crownblossom
+28520@@@Sparse Elysian Pondweed
+28521@@@Windswept Elysian Willow
+28522@@@Elysian Skyfrond
+28523@@@Lush Elysian Lily
+28524@@@Nathrian Rubyroot Growth
+28525@@@Brightburned Nathrian Clawbush
+28526@@@Windswept Elysian Skyplume
+28527@@@Lush Elysian Lotus
+28528@@@Windswept Elysian Shrub
+28529@@@Elysian Bulbflower
+28530@@@Brightburned Nathrian Root
+28531@@@Sinner's Gibbet
+28532@@@Revendreth Sinner's Prison
+28533@@@Nathrian Thicket Hedge
+28534@@@Venthyr Fence
+28535@@@Venthyr Fencepost
+28536@@@Kyrian Waymarker
+28537@@@Dormant Wildseed
+28538@@@Leaning Wildgrove Tree
+28539@@@Hanging Wildseed
+28540@@@Fae Anima Wall Lantern
+28541@@@Fae Moonbough Table
+28542@@@Anima-Infused Dreamcatcher
+28543@@@Fae Moonbough Gate
+28544@@@Open Bonewood Barrel
+28545@@@Highback Bonewood Chair
+28546@@@Suspended Lich Scroll
+28547@@@Fae Lantern Blossom
+28548@@@Maldraxxi Horned Beast Skull
+28549@@@Levitating Lich Library
+28550@@@Lush Wildgrove Fern
+28551@@@Hanging Wildgrove Ivy
+28552@@@Pale Nathrian Rose
+28553@@@Radiant Elysian Water Lily
+28554@@@Winged Elysian Spiralbloom
+28555@@@Celestial Grovebush
+28556@@@Lush Celestial Moonbough
+28557@@@Leaning Celestial Orchid
+28558@@@Endmire Sinsticker Bush
+28559@@@Maldraxxi Anima Crystal
+28560@@@Hanging Elysian Skyvy
+28561@@@Lush Elysian Bellflower Bush
+28562@@@Fae Animashroom Circle
+28563@@@Spherical Nathrian Topiary
+28564@@@Narrow Kyrian Drapes
+28565@@@Small Shimmering Moonvine
+28566@@@Venthyr Alchemy Rack
+28567@@@Wildgrove Leaf Pile
+28568@@@Confessor's Anima Jar
+28569@@@Runic Kyrian Reliquary
+28570@@@Fae Moonbough Cocoon
+28571@@@Kyrian Steward Effigy
+28572@@@Restored Night Fae Sigil
+28573@@@Elysian Heart-Lotus
+28574@@@Anima-Powered Anvil
+28575@@@Fae Moonbough Scroll
+28576@@@Sinfall Arched Bookcase
+28577@@@Fae Animashroom
+28578@@@Ornate Kyrian Glass Platform
+28579@@@Anima-Powered Kyrian Oven
+28629@@@Lunarfall Beech Tree
+28632@@@Eredath Worktable
+28633@@@Nomad's Steel Forge
+28634@@@Blooming Celestial Dreamleaf
+28693@@@Incineratus Grass Patch
+28694@@@Tall Crimson Oak
+29117@@@Amani Open Fire Grill
+30255@@@Ritual Embaari Arch

@@ -1,0 +1,386 @@
+1.60.1.69876
+r(1229504),	-- Faction Banner
+r(1240953),	-- Tailoring
+r(1240964),	-- Tailoring
+r(1240976),	-- Tailoring
+r(1240988),	-- Tailoring
+r(1252979),	-- Slimeslayer's Adaptive Robes
+r(1252980),	-- Slimeslayer's Adaptive Cuffs
+r(1252981),	-- Slimeslayer's Adaptive Cord
+r(1252991),	-- Slimetender's Adaptive Tunic
+r(1252992),	-- Slimetender's Adaptive Bracers
+r(1252993),	-- Slimetender's Adaptive Belt
+r(1257013),	-- Linen Reagent Bag
+r(1257017),	-- Woolen Reagent Bag
+r(1257368),	-- Novice Arcanist's Sash
+r(1257369),	-- Novice Ardent's Sash
+r(1257370),	-- Pristine Boots
+r(1257371),	-- Silky Boots
+r(1257372),	-- Flame Boots
+r(1257373),	-- Shadow Boots
+r(1257374),	-- Pearly Boots
+r(1257375),	-- Shining Boots
+r(1257376),	-- Filigreed Pristine Gown
+r(1257377),	-- Filigreed Silky Gown
+r(1257378),	-- Filigreed Flame Gown
+r(1257379),	-- Filigreed Shadow Gown
+r(1257380),	-- Filigreed Pearly Gown
+r(1257381),	-- Filigreed Shining Gown
+r(1257382),	-- Pristine Gloves
+r(1257383),	-- Silky Gloves
+r(1257384),	-- Flame Gloves
+r(1257385),	-- Shadow Gloves
+r(1257386),	-- Pearly Gloves
+r(1257387),	-- Shining Gloves
+r(1257388),	-- Pristine Sash
+r(1257389),	-- Silky Sash
+r(1257390),	-- Flame Sash
+r(1257391),	-- Shadow Sash
+r(1257392),	-- Pearly Sash
+r(1257393),	-- Shining Sash
+r(1257394),	-- Filigreed Pristine Leggings
+r(1257395),	-- Filigreed Silky Leggings
+r(1257396),	-- Filigreed Flame Leggings
+r(1257397),	-- Filigreed Shadow Leggings
+r(1257398),	-- Filigreed Pearly Leggings
+r(1257399),	-- Filigreed Shining Leggings
+r(1257400),	-- Pristine Circlet
+r(1257401),	-- Silky Circlet
+r(1257402),	-- Flame Circlet
+r(1257403),	-- Shadow Circlet
+r(1257404),	-- Pearly Circlet
+r(1257405),	-- Shining Circlet
+r(1257406),	-- Pristine Gown
+r(1257407),	-- Silky Gown
+r(1257408),	-- Flame Gown
+r(1257409),	-- Shadow Gown
+r(1257410),	-- Pearly Gown
+r(1257411),	-- Shining Gown
+r(1257412),	-- Silk Reagent Bag
+r(1257413),	-- Filigreed Pristine Circlet
+r(1257414),	-- Filigreed Silky Circlet
+r(1257415),	-- Filigreed Flame Circlet
+r(1257416),	-- Filigreed Shadow Circlet
+r(1257417),	-- Filigreed Pearly Circlet
+r(1257418),	-- Filigreed Shining Circlet
+r(1257419),	-- Pristine Leggings
+r(1257420),	-- Silky Leggings
+r(1257421),	-- Flame Leggings
+r(1257422),	-- Shadow Leggings
+r(1257423),	-- Pearly Leggings
+r(1257424),	-- Shining Leggings
+r(1257425),	-- Earthen Leggings
+r(1257426),	-- Gilded Slippers
+r(1257427),	-- Frothing Slippers
+r(1257428),	-- Fiery Slippers
+r(1257429),	-- Black Slippers
+r(1257430),	-- Golden Slippers
+r(1257431),	-- Radiant Slippers
+r(1257432),	-- Earthen Silk Slippers
+r(1257433),	-- Earthen Silk Hood
+r(1257434),	-- Earthen Silk Gloves
+r(1257435),	-- Earthen Silk Cuffs
+r(1257436),	-- Gilded Handwraps
+r(1257437),	-- Frothing Handwraps
+r(1257438),	-- Fiery Handwraps
+r(1257439),	-- Black Handwraps
+r(1257440),	-- Golden Handwraps
+r(1257441),	-- Radiant Handwraps
+r(1257442),	-- Earthen Silk Shoulders
+r(1257443),	-- Mageweave Reagent Bag
+r(1257444),	-- Gilded Cord
+r(1257445),	-- Frothing Cord
+r(1257446),	-- Fiery Cord
+r(1257447),	-- Black Cord
+r(1257448),	-- Golden Cord
+r(1257449),	-- Radiant Cord
+r(1257450),	-- Nethergeld Shoulders
+r(1257451),	-- Netherfroth Shoulders
+r(1257452),	-- Netherflame Shoulders
+r(1257453),	-- Netherpearl Shoulders
+r(1257454),	-- Nethershine Shoulders
+r(1257455),	-- Netherlight Shoulders
+r(1257456),	-- Nethergeld Cuffs
+r(1257457),	-- Netherfroth Cuffs
+r(1257458),	-- Netherflame Cuffs
+r(1257459),	-- Netherpearl Cuffs
+r(1257460),	-- Nethershine Cuffs
+r(1257461),	-- Netherlight Cuffs
+r(1257462),	-- Ghostweave Cord
+r(1257463),	-- Earthenweave Gloves
+r(1257464),	-- Earthenweave Cord
+r(1257465),	-- Runecloth Reagent Bag
+r(1257466),	-- Gilded Waistcord
+r(1257467),	-- Frothing Waistcord
+r(1257468),	-- Fiery Waistcord
+r(1257469),	-- Black Waistcord
+r(1257470),	-- Golden Waistcord
+r(1257471),	-- Radiant Waistcord
+r(1257472),	-- Earthenweave Boots
+r(1257473),	-- Gilded Gloves
+r(1257474),	-- Frothing Gloves
+r(1257475),	-- Fiery Gloves
+r(1257476),	-- Black Gloves
+r(1257477),	-- Golden Gloves
+r(1257478),	-- Radiant Gloves
+r(1257479),	-- Gilded Sandals
+r(1257480),	-- Frothing Sandals
+r(1257481),	-- Fiery Sandals
+r(1257482),	-- Black Sandals
+r(1257483),	-- Golden Sandals
+r(1257484),	-- Radiant Sandals
+r(1257485),	-- Earthenweave Mantle
+r(1257486),	-- Earthenweave Vest
+r(1257487),	-- Runecloth Cuffs
+r(1257488),	-- Earthenweave Leggings
+r(1257489),	-- Ghostweave Mantle
+r(1257490),	-- Ghostweave Boots
+r(1257491),	-- Earthenweave Cuffs
+r(1257492),	-- Mooncloth Reagent Bag
+r(1257493),	-- Ghostweave Hood
+r(1257494),	-- Earthenweave Crown
+r(1257495),	-- Bottomless Reagent Bag
+r(1263032),	-- Spinning Wheel
+r(1263080),	-- Loom
+r(1263425),	-- Faction Banner
+r(1277784),	--
+r(1292941),	-- Manaflare Pants
+r(1292942),	-- Manaflare Gloves
+r(1292943),	-- Manaflare Mantle
+r(1292944),	-- Manaflare Boots
+r(1292957),	-- Pants of Conviction
+r(1292958),	-- Gloves of Conviction
+r(1292959),	-- Mantle of Conviction
+r(1292960),	-- Treads of Conviction
+r(1292961),	-- Leggings of Conviction
+r(1292962),	-- Handguards of Conviction
+r(1292963),	-- Pauldrons of Conviction
+r(1292964),	-- Boots of Conviction
+r(1292977),	-- Demonheart Leggings
+r(1292978),	-- Demonheart Gloves
+r(1292979),	-- Demonheart Spaulders
+r(1292980),	-- Demonheart Boots
+r(1297120),	-- Venomspew Gloves
+r(1297121),	-- Venomspew Cord
+r(1297122),	-- Venomspew Footpads
+r(1297123),	-- Swarmtender's Gloves
+r(1297124),	-- Swarmtender's Cord
+r(1297125),	-- Swarmtender's Footpads
+r(1301439),	-- Cloudy Stormsewn Vest
+r(1301440),	-- Cloudy Stormsewn Cuffs
+r(1301441),	-- Cloudy Stormsewn Handwraps
+r(1301442),	-- Cloudy Stormsewn Cord
+r(1301443),	-- Cloudy Stormsewn Leggings
+r(1301444),	-- Cloudy Stormsewn Shoes
+r(1301463),	-- Azure Stormsewn Vest
+r(1301464),	-- Azure Stormsewn Cuffs
+r(1301465),	-- Azure Stormsewn Handwraps
+r(1301466),	-- Azure Stormsewn Cord
+r(1301468),	-- Azure Stormsewn Leggings
+r(1301469),	-- Azure Stormsewn Shoes
+r(1301532),	-- Cloudy Stormsewn Cowl
+r(1301533),	-- Cloudy Stormsewn Epaulets
+r(1301540),	-- Azure Stormsewn Cowl
+r(1301541),	-- Azure Stormsewn Epaulets
+r(1306540),	-- Robes of Fiery Devastation
+r(1306541),	-- Mana-infused Cord
+r(1306542),	-- Rime-encrusted Boots
+r(1306543),	-- Fel Cape
+r(1306544),	-- Cloak of Earth and Sky
+r(1306545),	-- Felblood Soul Bag
+
+
+
+
+Missing in Tailoring
+
+1.60.1.69876
+r(1229504),	-- Faction Banner
+r(1240953),	-- Tailoring
+r(1240964),	-- Tailoring
+r(1240976),	-- Tailoring
+r(1240988),	-- Tailoring
+r(1252979),	-- Slimeslayer's Adaptive Robes
+r(1252980),	-- Slimeslayer's Adaptive Cuffs
+r(1252981),	-- Slimeslayer's Adaptive Cord
+r(1252991),	-- Slimetender's Adaptive Tunic
+r(1252992),	-- Slimetender's Adaptive Bracers
+r(1252993),	-- Slimetender's Adaptive Belt
+r(1257013),	-- Linen Reagent Bag
+r(1257017),	-- Woolen Reagent Bag
+r(1257368),	-- Novice Arcanist's Sash
+r(1257369),	-- Novice Ardent's Sash
+r(1257370),	-- Pristine Boots
+r(1257371),	-- Silky Boots
+r(1257372),	-- Flame Boots
+r(1257373),	-- Shadow Boots
+r(1257374),	-- Pearly Boots
+r(1257375),	-- Shining Boots
+r(1257376),	-- Filigreed Pristine Gown
+r(1257377),	-- Filigreed Silky Gown
+r(1257378),	-- Filigreed Flame Gown
+r(1257379),	-- Filigreed Shadow Gown
+r(1257380),	-- Filigreed Pearly Gown
+r(1257381),	-- Filigreed Shining Gown
+r(1257382),	-- Pristine Gloves
+r(1257383),	-- Silky Gloves
+r(1257384),	-- Flame Gloves
+r(1257385),	-- Shadow Gloves
+r(1257386),	-- Pearly Gloves
+r(1257387),	-- Shining Gloves
+r(1257388),	-- Pristine Sash
+r(1257389),	-- Silky Sash
+r(1257390),	-- Flame Sash
+r(1257391),	-- Shadow Sash
+r(1257392),	-- Pearly Sash
+r(1257393),	-- Shining Sash
+r(1257394),	-- Filigreed Pristine Leggings
+r(1257395),	-- Filigreed Silky Leggings
+r(1257396),	-- Filigreed Flame Leggings
+r(1257397),	-- Filigreed Shadow Leggings
+r(1257398),	-- Filigreed Pearly Leggings
+r(1257399),	-- Filigreed Shining Leggings
+r(1257400),	-- Pristine Circlet
+r(1257401),	-- Silky Circlet
+r(1257402),	-- Flame Circlet
+r(1257403),	-- Shadow Circlet
+r(1257404),	-- Pearly Circlet
+r(1257405),	-- Shining Circlet
+r(1257406),	-- Pristine Gown
+r(1257407),	-- Silky Gown
+r(1257408),	-- Flame Gown
+r(1257409),	-- Shadow Gown
+r(1257410),	-- Pearly Gown
+r(1257411),	-- Shining Gown
+r(1257412),	-- Silk Reagent Bag
+r(1257413),	-- Filigreed Pristine Circlet
+r(1257414),	-- Filigreed Silky Circlet
+r(1257415),	-- Filigreed Flame Circlet
+r(1257416),	-- Filigreed Shadow Circlet
+r(1257417),	-- Filigreed Pearly Circlet
+r(1257418),	-- Filigreed Shining Circlet
+r(1257419),	-- Pristine Leggings
+r(1257420),	-- Silky Leggings
+r(1257421),	-- Flame Leggings
+r(1257422),	-- Shadow Leggings
+r(1257423),	-- Pearly Leggings
+r(1257424),	-- Shining Leggings
+r(1257425),	-- Earthen Leggings
+r(1257426),	-- Gilded Slippers
+r(1257427),	-- Frothing Slippers
+r(1257428),	-- Fiery Slippers
+r(1257429),	-- Black Slippers
+r(1257430),	-- Golden Slippers
+r(1257431),	-- Radiant Slippers
+r(1257432),	-- Earthen Silk Slippers
+r(1257433),	-- Earthen Silk Hood
+r(1257434),	-- Earthen Silk Gloves
+r(1257435),	-- Earthen Silk Cuffs
+r(1257436),	-- Gilded Handwraps
+r(1257437),	-- Frothing Handwraps
+r(1257438),	-- Fiery Handwraps
+r(1257439),	-- Black Handwraps
+r(1257440),	-- Golden Handwraps
+r(1257441),	-- Radiant Handwraps
+r(1257442),	-- Earthen Silk Shoulders
+r(1257443),	-- Mageweave Reagent Bag
+r(1257444),	-- Gilded Cord
+r(1257445),	-- Frothing Cord
+r(1257446),	-- Fiery Cord
+r(1257447),	-- Black Cord
+r(1257448),	-- Golden Cord
+r(1257449),	-- Radiant Cord
+r(1257450),	-- Nethergeld Shoulders
+r(1257451),	-- Netherfroth Shoulders
+r(1257452),	-- Netherflame Shoulders
+r(1257453),	-- Netherpearl Shoulders
+r(1257454),	-- Nethershine Shoulders
+r(1257455),	-- Netherlight Shoulders
+r(1257456),	-- Nethergeld Cuffs
+r(1257457),	-- Netherfroth Cuffs
+r(1257458),	-- Netherflame Cuffs
+r(1257459),	-- Netherpearl Cuffs
+r(1257460),	-- Nethershine Cuffs
+r(1257461),	-- Netherlight Cuffs
+r(1257462),	-- Ghostweave Cord
+r(1257463),	-- Earthenweave Gloves
+r(1257464),	-- Earthenweave Cord
+r(1257465),	-- Runecloth Reagent Bag
+r(1257466),	-- Gilded Waistcord
+r(1257467),	-- Frothing Waistcord
+r(1257468),	-- Fiery Waistcord
+r(1257469),	-- Black Waistcord
+r(1257470),	-- Golden Waistcord
+r(1257471),	-- Radiant Waistcord
+r(1257472),	-- Earthenweave Boots
+r(1257473),	-- Gilded Gloves
+r(1257474),	-- Frothing Gloves
+r(1257475),	-- Fiery Gloves
+r(1257476),	-- Black Gloves
+r(1257477),	-- Golden Gloves
+r(1257478),	-- Radiant Gloves
+r(1257479),	-- Gilded Sandals
+r(1257480),	-- Frothing Sandals
+r(1257481),	-- Fiery Sandals
+r(1257482),	-- Black Sandals
+r(1257483),	-- Golden Sandals
+r(1257484),	-- Radiant Sandals
+r(1257485),	-- Earthenweave Mantle
+r(1257486),	-- Earthenweave Vest
+r(1257487),	-- Runecloth Cuffs
+r(1257488),	-- Earthenweave Leggings
+r(1257489),	-- Ghostweave Mantle
+r(1257490),	-- Ghostweave Boots
+r(1257491),	-- Earthenweave Cuffs
+r(1257492),	-- Mooncloth Reagent Bag
+r(1257493),	-- Ghostweave Hood
+r(1257494),	-- Earthenweave Crown
+r(1257495),	-- Bottomless Reagent Bag
+r(1263032),	-- Spinning Wheel
+r(1263080),	-- Loom
+r(1263425),	-- Faction Banner
+r(1277784),	--
+r(1292941),	-- Manaflare Pants
+r(1292942),	-- Manaflare Gloves
+r(1292943),	-- Manaflare Mantle
+r(1292944),	-- Manaflare Boots
+r(1292957),	-- Pants of Conviction
+r(1292958),	-- Gloves of Conviction
+r(1292959),	-- Mantle of Conviction
+r(1292960),	-- Treads of Conviction
+r(1292961),	-- Leggings of Conviction
+r(1292962),	-- Handguards of Conviction
+r(1292963),	-- Pauldrons of Conviction
+r(1292964),	-- Boots of Conviction
+r(1292977),	-- Demonheart Leggings
+r(1292978),	-- Demonheart Gloves
+r(1292979),	-- Demonheart Spaulders
+r(1292980),	-- Demonheart Boots
+r(1297120),	-- Venomspew Gloves
+r(1297121),	-- Venomspew Cord
+r(1297122),	-- Venomspew Footpads
+r(1297123),	-- Swarmtender's Gloves
+r(1297124),	-- Swarmtender's Cord
+r(1297125),	-- Swarmtender's Footpads
+r(1301439),	-- Cloudy Stormsewn Vest
+r(1301440),	-- Cloudy Stormsewn Cuffs
+r(1301441),	-- Cloudy Stormsewn Handwraps
+r(1301442),	-- Cloudy Stormsewn Cord
+r(1301443),	-- Cloudy Stormsewn Leggings
+r(1301444),	-- Cloudy Stormsewn Shoes
+r(1301463),	-- Azure Stormsewn Vest
+r(1301464),	-- Azure Stormsewn Cuffs
+r(1301465),	-- Azure Stormsewn Handwraps
+r(1301466),	-- Azure Stormsewn Cord
+r(1301468),	-- Azure Stormsewn Leggings
+r(1301469),	-- Azure Stormsewn Shoes
+r(1301532),	-- Cloudy Stormsewn Cowl
+r(1301533),	-- Cloudy Stormsewn Epaulets
+r(1301540),	-- Azure Stormsewn Cowl
+r(1301541),	-- Azure Stormsewn Epaulets
+r(1306540),	-- Robes of Fiery Devastation
+r(1306541),	-- Mana-infused Cord
+r(1306542),	-- Rime-encrusted Boots
+r(1306543),	-- Fel Cape
+r(1306544),	-- Cloak of Earth and Sky
+r(1306545),	-- Felblood Soul Bag

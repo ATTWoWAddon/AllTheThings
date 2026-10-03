@@ -1,0 +1,96 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+	["icon"] = 7488399,
+	["lore"] = "Quel'Thalas is a forested area in northern Lordaeron. It is ruled by the blood elves, descendants of the kingdom's Highborne founders, and is known as the Land of Eternal Spring. Its capital is Silvermoon City.",
+	["timeline"] = { ADDED_12_0_1_LAUNCH },
+	["groups"] = {
+		m(MAP.MIDNIGHT.SILVERMOON_CITY, {
+			["icon"] = 135761,
+			["lore"] = "Silvermoon City is the crown jewel of the blood elves and their capital city. It is nestled in the northern reaches of the Eversong Woods (at the northernmost tip of the Eastern Kingdoms) in their ancestral homeland of Quel'Thalas",
+			["isRaid"] = true,
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["maps"] = {
+				-- #if AFTER 12.1.5
+				2605,	-- Silvermoon City, Falconwing Square (Aqir Invasion scenario)
+				-- #endif
+				2443,	-- Silvermoon City, The Bazaar (The Battle of the Bridge scenario)
+			},
+		}),
+		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
+			["icon"] = 7301737,
+			["lore"] = "The blood elves have called the resplendent Eversong Woods home for millennia, but the stewardship of this forested region has not been without its perils.",
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+		}),
+		m(MAP.MIDNIGHT.HARANDAR, {
+			["icon"] = 7385004,
+			["lore"] = "A bioluminscent primordial jungle, it is an underground cavern where the roots of all World Trees on Azeroth converge, and home to the haranir. The Rift of Aln is also located here.",
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["maps"] = {
+				2576,	-- The Den
+			},
+		}),
+		m(MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
+			["icon"] = 7454100,
+			["lore"] = "Seven thousand years ago, when Quel'Thalas was founded, Dath'Remar Sunstrider, ruler of the new elven kingdom, created a mystic fountain at a convergence of ley lines on this island off the northern coast of Eversong Woods, utilizing a vial of water stolen from the Well of Eternity sometime before the Great Sundering. As a result, the island - which became known as Quel'Danas - is also known as the Sunwell Isle.",
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["maps"] = {
+				MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO,	-- Isle of Quel'Danas (Intro)
+				-- #if AFTER 12.0.7
+				2649,	-- Magister's Terrace
+				-- #endif
+				2565,	-- Parhelion Plaza, Isle of Quel'Danas (Intro)
+				2566,	-- The Sunwell, Isle of Quel'Danas (Intro)
+			},
+		}),
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+			["icon"] = 7578560,
+			["lore"] = "The Coiled Isle is an island located east of Zul'Aman, connected via the ruined Strait of Hexx'alor and surrounded by Zul'Aman Depths. It is shrouded in a mist.\n\nThe temple here, Atal'Utek, was built to commemorate the Amani tribes' victory over the faceless general Kith'ix. The strait dividing Atal'Utek from Zul'Aman is protected by the loa Pahk.",
+			["timeline"] = { ADDED_12_1_0 },
+			["maps"] = {
+				2640,	-- Blistering Terrace
+				2639,	-- Crypt of the Denied
+				2644,	-- Crypt of the Disgraced
+				2643,	-- Crypt of the Lost Mason
+				2641,	-- Crypt of the Lost Warrior
+				2642,	-- Tomb of the Lost Priest
+			},
+			["cr"] = 265506,	-- Portal to The Coiled Isle
+		}),
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+			m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
+				["icon"] = 136070,
+				["lore"] = "The Vaults of Atal’Utek are an ancient, venom-corrupted Amani troll prison complex on the Coiled Isle. Built by the Amani empire long ago as a massive containment facility and designed to imprison Ula'tek, a horrific and ancient serpent goddess of venom and hatred whom the trolls came to view as a catastrophic threat.",
+				["timeline"] = { ADDED_12_1_0 },
+				["maps"] = {
+					2638,	-- Profaned Mausoleum
+					2637,	-- Ruuk'jar's Clutch
+					2613,	-- The Underbelly
+					2636,	-- Vault of Restless Bones
+				},
+			}),
+		}),
+		m(MAP.MIDNIGHT.VOIDSTORM, {
+			["icon"] = 5927657,
+			["lore"] = "It is a world shaped by the Void where predation reigns supreme, and serves as Xal'atath's launching point for her attack on the Sunwell.",
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["maps"] = {
+				2526,	-- Lair of Predaxas
+				2527,	-- Lair of Predaxas
+				2444,	-- Slayer's Rise (Outdoor)
+			},
+		}),
+		m(MAP.MIDNIGHT.ZULAMAN, {
+			["icon"] = 7578705,
+			["lore"] = "Zul'Aman is a fortress and a temple city that serves as the capital of the Amani tribe, located in the southeastern portion of Quel'Thalas, on northern Lordaeron. The main temple area is known as Atal'Aman.",
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["maps"] = {
+				2536,	-- Atal'Aman
+				2584,	-- Revantusk Sedge
+				2583,	-- Wit'Kalar Crypt
+			},
+		}),
+	},
+}));

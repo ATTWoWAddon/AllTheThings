@@ -1,0 +1,104 @@
+1.60.1.69876
+r(1229737),	-- Basic Campfire
+r(1240945),	-- Cooking
+r(1240956),	-- Cooking
+r(1240967),	-- Cooking
+r(1240980),	-- Cooking
+r(1247741),	-- Spinefin Halibut
+r(1249957),	-- Peace Tea
+r(1249958),	-- Royal Tea
+r(1249959),	-- Root Tea
+r(1249960),	-- Triage Tea
+r(1249961),	-- Sunny Tea
+r(1249962),	-- Sage's Tea
+r(1249963),	-- Venomous Smoothie
+r(1249964),	-- Slimy Smoothie
+r(1249965),	-- Mrrggl Smrrthle
+r(1249966),	-- Calcified Smoothie
+r(1249967),	-- Spicy Smoothie
+r(1249968),	-- Wicked Smoothie
+r(1250142),	-- Savory Stag Sliders
+r(1250143),	-- Soaring Pamplona
+r(1250144),	-- Bat Hachee
+r(1250145),	-- Savory Turtle Stew
+r(1250146),	-- Flank au Poivre
+r(1250147),	-- Bear Bruscitti
+r(1250148),	-- Steaming Stag Steak
+r(1250149),	-- Swiftstrike Steak
+r(1250150),	-- Raging Raptor Ribs
+r(1250151),	-- Bear Brisket
+r(1250152),	-- Prehistoric Pulled Raptor
+r(1250153),	-- Raptor Rouladen
+r(1250154),	-- Twice-Spiced Raptor Slice
+r(1250155),	-- Giant Scrambled Eggs
+r(1250156),	-- Tasty Raptor Bites
+r(1250157),	-- Breakfast Omelette
+r(1250158),	-- Clam Linguine
+r(1252566),	-- Savory Whimsyfin Delight
+r(1255241),	-- Cleansing Stew
+r(1262978),	-- Cookie's Feast
+r(1263067),	-- Iron Oven
+r(1270632),	-- Critter Cookie
+r(1270633),	-- Skywall Souffle
+r(1270635),	-- Pincer Bites
+r(1283400),	-- Journeyman Campfire
+r(1291341),	-- Expert Campfire
+r(1294014),	-- Sweetpaw Jam
+r(1295805),	-- Briny Seafood Stew
+r(1295834),	-- Plain Ol' Paletusk
+r(1319313),	-- Plated Armorfish
+
+
+
+
+Missing in Cooking
+
+1.60.1.69876
+r(1229737),	-- Basic Campfire
+r(1240945),	-- Cooking
+r(1240956),	-- Cooking
+r(1240967),	-- Cooking
+r(1240980),	-- Cooking
+r(1247741),	-- Spinefin Halibut
+r(1249957),	-- Peace Tea
+r(1249958),	-- Royal Tea
+r(1249959),	-- Root Tea
+r(1249960),	-- Triage Tea
+r(1249961),	-- Sunny Tea
+r(1249962),	-- Sage's Tea
+r(1249963),	-- Venomous Smoothie
+r(1249964),	-- Slimy Smoothie
+r(1249965),	-- Mrrggl Smrrthle
+r(1249966),	-- Calcified Smoothie
+r(1249967),	-- Spicy Smoothie
+r(1249968),	-- Wicked Smoothie
+r(1250142),	-- Savory Stag Sliders
+r(1250143),	-- Soaring Pamplona
+r(1250144),	-- Bat Hachee
+r(1250145),	-- Savory Turtle Stew
+r(1250146),	-- Flank au Poivre
+r(1250147),	-- Bear Bruscitti
+r(1250148),	-- Steaming Stag Steak
+r(1250149),	-- Swiftstrike Steak
+r(1250150),	-- Raging Raptor Ribs
+r(1250151),	-- Bear Brisket
+r(1250152),	-- Prehistoric Pulled Raptor
+r(1250153),	-- Raptor Rouladen
+r(1250154),	-- Twice-Spiced Raptor Slice
+r(1250155),	-- Giant Scrambled Eggs
+r(1250156),	-- Tasty Raptor Bites
+r(1250157),	-- Breakfast Omelette
+r(1250158),	-- Clam Linguine
+r(1252566),	-- Savory Whimsyfin Delight
+r(1255241),	-- Cleansing Stew
+r(1262978),	-- Cookie's Feast
+r(1263067),	-- Iron Oven
+r(1270632),	-- Critter Cookie
+r(1270633),	-- Skywall Souffle
+r(1270635),	-- Pincer Bites
+r(1283400),	-- Journeyman Campfire
+r(1291341),	-- Expert Campfire
+r(1294014),	-- Sweetpaw Jam
+r(1295805),	-- Briny Seafood Stew
+r(1295834),	-- Plain Ol' Paletusk
+r(1319313),	-- Plated Armorfish

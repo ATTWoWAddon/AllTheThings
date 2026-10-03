@@ -92,7 +92,7 @@ namespace ATT
 
 
             // include 'name' as a comment instead of a data value since ATT does not process this field in game
-            data2.TryGetValue("name", out object commentName);
+            data2.TryGetName(out string commentName);
             data2.Remove("name");
 
             // Write the shortcut with the highest priority
@@ -164,7 +164,7 @@ namespace ATT
                 }
 
                 // Append the Sub-Indent and the Field Name
-                builder.Append(subindent).Append("[\"g\"] = ");
+                builder.Append(subindent).Append("g=");
 
                 // Append the undetermined object's format to the builder.
                 ExportRawLua(builder, g, subindent);

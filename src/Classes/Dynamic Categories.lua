@@ -7,81 +7,96 @@ local onClickForDynamicCategory = function(row, button)
 			window:Toggle();
 			return true;
 		elseif not row.ref.g or #row.ref.g < 1 then
-			if #window.data.g < 1 then window:ForceRebuild(); end
-			local prime = app:GetWindow("Prime");
-			local primeData = prime.data;
-			if primeData then
-				local progress, total = window.data.progress or 0, window.data.total or 0;
-				local g = app.CloneReference(window.data).g;
-				for i,o in ipairs(g) do
-					o.parent = row.ref;
-				end
-				row.ref.g = g;
-				row.ref.progress = progress;
-				row.ref.total = total;
-				prime:Refresh();
+			if not window:IsShown() then
+				window:ForceRebuild();
+				row.ref.progress = window.data.progress;
+				row.ref.total = window.data.total;
+				row.ref.visible = app.GroupVisibilityFilter(window.data);
 			end
 		end
 	end
 end
-local onUpdateForDynamicCategory = function(data)
-	local window = data.dynamicWindow;
-	data.progress = nil; data.total = nil;
+local onUpdateForDynamicCategory = function(o)
+	local window = o.dynamicWindow;
+	o.progress = nil;
+	o.total = nil;
 	if window then
-		window:ForceRebuild();
-		--print("onUpdateForDynamicCategory", data.text, data.progress, data.total);
-		local parent, total = data.parent, data.total;
-		if parent and total then
-			if not data.sourceIgnored then
-				parent.progress = parent.progress + data.progress;
-				parent.total = parent.total + total;
+		local data = window.data;
+		if data then
+			if o.g then
+				return false;
+			else
+				window:ForceRebuild();
+				o.progress = data.progress or 0;
+				o.total = data.total or 0;
+				
+				-- Increment the parent group's totals if the group is not ignored for sources
+				if not o.sourceIgnored then
+					local parent = o.parent;
+					if parent then
+						parent.total = parent.total + o.total
+						parent.progress = parent.progress + o.progress
+					end
+				end
+				o.visible = app.GroupVisibilityFilter(data);
+				return true;
 			end
-			data.visible = app.GroupVisibilityFilter(data);
-		else
-			data.visible = true;
 		end
-	else
-		data.visible = false;
 	end
+	o.visible = false;
 	return true;
 end
 app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
-	["dynamicWindow"] = function(t)
+	dynamicWindow = function(t)
 		local window = app:GetWindow(t.suffix);
-		if window then t.dynamicWindow = window; return window; end
+		if window then
+			window:RegisterRefreshCallback(function(TLUG)
+				if t.__lastTLUG ~= TLUG then
+					local w = app.GetRelativeValue(t, "window");
+					t.progress = window.data.progress; t.total = window.data.total;
+					t.visible = app.GroupVisibilityFilter(window.data);
+					app.CallbackHandlers.DelayedCallback(t.expanded and w.Update or w.Redraw, 0.1, w, true);
+				end
+			end);
+			t.dynamicWindow = window;
+			return window;
+		end
 		return app.EmptyTable;
 	end,
-	["dynamicWindowData"] = function(t)
+	dynamicWindowData = function(t)
 		return t.dynamicWindow.data or app.EmptyTable;
 	end,
-	["IgnoreBuildRequests"] = function(t)
-		return true;
-	end,
-	["text"] = function(t)
+	IgnoreBuildRequests = app.ReturnTrue,
+	name = function(t)
 		return t.dynamicWindowData.text or ("Dynamic Category: " .. t.suffix);
 	end,
-	["icon"] = function(t)
+	icon = function(t)
 		return t.dynamicWindowData.icon or 134064;
 	end,
-	["description"] = function(t)
+	description = function(t)
 		return t.dynamicWindowData.description;
 	end,
-	["progress"] = function(t)
-		return t.dynamicWindowData.progress;
-	end,
-	["total"] = function(t)
-		return t.dynamicWindowData.total;
-	end,
-	["summary"] = function(t)
-		local total = t.total;
-		if not total or total < 1 then
-			return "[Click to Cache]";
+	g = function(t)
+		if t.expanded then
+			local g = t.dynamicWindowData.g;
+			if g and t.__lastTLUG ~= t.dynamicWindowData.TLUG then
+				t.__lastTLUG = t.dynamicWindowData.TLUG
+				local newG = app.CloneClassInstance(g);
+				if newG and #newG > 0 then
+					for i,o in ipairs(newG) do
+						o.parent = t;
+					end
+					t.__clonedG = newG;
+				end
+				return newG;
+			end
 		end
+		return t.__clonedG;
 	end,
-	["OnClick"] = function(t)
+	OnClick = function(t)
 		return onClickForDynamicCategory;
 	end,
-	["OnUpdate"] = function(t)
+	OnUpdate = function(t)
 		return onUpdateForDynamicCategory;
 	end,
 });

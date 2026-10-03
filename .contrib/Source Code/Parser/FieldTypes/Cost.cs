@@ -158,14 +158,13 @@ namespace ATT.FieldTypes
                                 Items.MarkItemAsReferenced((long)costID);
                             }
 
-                            var item = Items.GetNull(costID);
-                            if (item == null || !TryGetSOURCED("itemID", costID, out _))
+                            if (!TryGetSOURCED("modItemID", costID, out var sourcedCostItems))
                             {
                                 // The item isn't Sourced in Retail version
                                 // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
                                 LogDebugWarn($"Non-Sourced 'cost-item' {costID}", _data);
                             }
-                            else if (item.TryGetValue("u", out long u) && u == 1)
+                            else if (sourcedCostItems.Any(i => i.TryGetValue("u", out long u) && u == 1))
                             {
                                 // The item was classified as never being implemented
                                 LogDebug($"INFO: Removed NYI 'cost-item' {costID}", _data);

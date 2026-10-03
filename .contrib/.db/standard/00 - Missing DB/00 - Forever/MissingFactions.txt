@@ -1,0 +1,45 @@
+1.60.1.69876
+faction(2719),	-- Cenarion Scouts
+faction(2730),	-- 1.50.0 - Hyjal Attunement - Leyara
+faction(2731),	-- 1.50.0 - Hyjal Attunement - Gol'gere
+faction(2740),	-- Kirin Tor
+faction(2741),	-- Kirin Tor - Broken
+faction(2745),	-- Timbermaw Hold - Unbound Spirit - Enemies
+faction(2746),	-- Timbermaw Hold - Unbound Spirit - Allies
+faction(2747),	-- Barkskin Burrow
+faction(2748),	-- Shen'dorei
+faction(2749),	-- Al'Aketh
+faction(2753),	-- Deadwood Furbolg
+faction(2754),	-- CTF - Flag - Neutral
+faction(2756),	-- Hyjal Skunk
+faction(2757),	-- Zephras Peackeepers
+faction(2758),	-- Nightclaw Druids
+faction(2759),	-- Neutral Can Attack
+faction(2760),	-- Neutral Both But Horde Can Attack
+faction(2761),	-- Fenwick
+faction(2765),	-- Guardians of Hyjal
+faction(2768),	-- The Blackthorne Pact
+faction(2769),	-- Gelkis Outcasts
+faction(2777),	-- Beast - Predatory Stag
+faction(2778),	-- Windshapers
+faction(2779),	-- High Order
+faction(2782),	-- Bolder'ok Clan
+faction(2785),	-- Cenarion Circle (Legendary Event)
+faction(2786),	-- Replace
+faction(2787),	-- Earthen Ring
+faction(2788),	-- Ashen Reign
+faction(2789),	-- Ashen Reign - Warlock Disguise
+faction(2790),	-- CTF - Flag - Neutral
+faction(2794),	-- PLAYER, Windshaper Skyborne
+faction(2795),	-- PLAYER, High Order Skyborne
+faction(2797),	-- OLD
+faction(2798),	-- Darkspear Raiders
+faction(2799),	-- Theramore Expeditionary Force
+faction(2800),	-- PvP Rank Points
+faction(2801),	-- Neutral Both But Alliance Can Attack
+faction(2802),	-- Legacy Track
+faction(2807),	-- DNT Test Reputation
+faction(2813),	-- Syndicate Disguise
+faction(2819),	-- The Watchers
+faction(2826),	-- Brotherhood of the Horse
+faction(2827),	-- Powderfuse

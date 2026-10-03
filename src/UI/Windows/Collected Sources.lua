@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 if C_TransmogCollection then
@@ -22,10 +23,9 @@ end
 app:CreateWindow("Collected Sources", {
 	Commands = { "attcollectedsources" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Collected Sources",
+		self:SetData(app.CreateRawText(L.COLLECTED_SOURCES, {
 			icon = 134941,
-			description = "This window shows you all of the collected sources (according to Blizzard) tracked by ATT. Go get 'em!",
+			description = L.COLLECTED_SOURCES_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
@@ -34,7 +34,7 @@ app:CreateWindow("Collected Sources", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+					local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 						if group.sourceID then
 							local sourceInfo = C_TransmogCollection_GetSourceInfo(group.sourceID);
 							return sourceInfo and sourceInfo.isCollected;
@@ -51,7 +51,7 @@ app:CreateWindow("Collected Sources", {
 					end
 				end
 			end,
-		};
+		}));
 	end
 });
 end

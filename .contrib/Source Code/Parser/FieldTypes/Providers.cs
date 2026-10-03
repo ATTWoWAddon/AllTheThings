@@ -144,7 +144,11 @@ namespace ATT.FieldTypes
 
             if (_providerTypes == null)
             {
-                _providerTypes = new Dictionary<string, HashSet<decimal>>(merge._providerTypes);
+                _providerTypes = new Dictionary<string, HashSet<decimal>>();
+                foreach (var kvp in merge._providerTypes)
+                {
+                    _providerTypes.Add(kvp.Key, new HashSet<decimal>(kvp.Value));
+                }
                 return;
             }
 
@@ -214,7 +218,10 @@ namespace ATT.FieldTypes
             // don't modify providers on any special 'type' of Quest
             if (!_data.ContainsKey("type"))
             {
+                bool hasQuestStarter = _data.ContainsKey("qss");
                 bool hasQuestGivers = _data.TryGetValue("qgs", out List<object> qgs) && qgs.Count > 0;
+                bool isRawQuest = ObjectData.TryGetMostSignificantObjectType(_data, out ObjectData objectData, out object objKeyValue)
+                    && objectData.ObjectType == "questID";
 
                 // Item providers consolidation
                 var itemIDs = GetProviderType("i", true);
@@ -230,34 +237,24 @@ namespace ATT.FieldTypes
                             Remove("i", itemID);
                             LogDebug($"INFO: Removed NYI 'provider-item' {itemID}", _data);
                         }
-                        else
+                        else if (isRawQuest)
                         {
-                            // the First Item provider should also be Sourced
-                            if (!hasQuestGivers && FirstItemProvider == itemID)
+                            // the First Item provider can be switched to be a Quest Starter
+                            if (FirstItemProvider == itemID)
                             {
-                                // Items which are the 'first' provider indicate that their acquisition is what 'provides' the data
-                                // and thus they must be Sourced to be properly visible for being acquired
-                                if (itemSources == null)
+                                if (!hasQuestGivers && !hasQuestStarter)
                                 {
-                                    // The item isn't Sourced in Retail version
-                                    // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
-                                    // There are currently about 1000 warnings due to unsourced Items of this nature
-                                    LogDebugWarn($"Non-Sourced 'provider-item' {itemID}", _data);
+                                    // we will use 'qss' as an item-based quest starter
+                                    Objects.Merge(_data, "qss", (long)itemID);
+                                    Remove("i", itemID);
+                                    hasQuestStarter = true;
                                 }
                             }
                             else
                             {
-                                // Classic likes providers to be Items still due to the logic implementation
-                                if (!PreProcessorTags.Contains("ANYCLASSIC"))
-                                {
-                                    if (ObjectData.TryGetMostSignificantObjectType(_data, out ObjectData objectData, out object objKeyValue)
-                                        && objectData.ObjectType == "questID")
-                                    {
-                                        // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                        Objects.Merge(_data, "qis", (long)itemID);
-                                        Remove("i", itemID);
-                                    }
-                                }
+                                // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
+                                Objects.Merge(_data, "qis", (long)itemID);
+                                Remove("i", itemID);
                             }
                         }
                     }

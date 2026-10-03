@@ -1,0 +1,255 @@
+--------------------------------------------
+--     H O L I D A Y S  M O D U L E       --
+--------------------------------------------
+
+DECOR_DUEL = createHeader({
+	readable = "Decor Duel",
+	icon = 1392559,
+	text = {
+		en = "Decor Duel",
+		de = "Dekorationsduell",
+		es = "Duelo de adornos",
+		mx = "Duelo de decoraciones",
+		fr = "Duel de décoration",
+		it = "Duello di Decorazioni",
+		ko = "하우징 장식 결투",
+		pt = "Duelo de Decoração",
+		ru = "Дуэль декораторов",
+		cn = "装饰决斗",
+		tw = "裝迷藏競賽",
+	},
+	description = {
+		en = "Decor Duel is a team-based prop hunt event in Silvermoon City, offering a fun activity to escape the madness of the Void invasion with a friendly magical game of hide and seek.\n\nPlayers can access the Decor Duel queue through the Quick Match section in the PvP tab of the Group Finder. Teams of up to 5 can queue up together for this casual PvP activity. Groups of 1 to 4 players will be matched with other random queuers.",
+		-- TODO: de = "",
+		es = "Duelo de adornos es un evento de búsqueda de objetos por equipos en Ciudad Lunargenta, que ofrece una actividad divertida para escapar de la locura de la invasión del Vacío con un amistoso juego mágico de escondite.\n\nLos jugadores pueden acceder a la cola de Duelo de adornos a través de la sección Partida rápida en la pestaña JcJ del Buscador de grupos. Equipos de hasta 5 pueden unirse a la cola para esta actividad JcJ casual. Los grupos de 1 a 4 jugadores se emparejarán con otros jugadores aleatorios.",
+		mx = "Duelo de decoraciones es un evento de búsqueda de objetos por equipos en Ciudad Lunargenta, que ofrece una actividad divertida para escapar de la locura de la invasión del Vacío con un amistoso juego mágico de escondite.\n\nLos jugadores pueden acceder a la cola de Duelo de decoraciones a través de la sección Partida rápida en la pestaña JcJ del Buscador de grupos. Equipos de hasta 5 pueden unirse a la cola para esta actividad JcJ casual. Los grupos de 1 a 4 jugadores se emparejarán con otros jugadores aleatorios.",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "装饰决斗是银月城的一项基于团队的道具猎杀活动，为玩家提供了一个有趣的活动来逃避虚空入侵的疯狂，享受一场友好的魔法捉迷藏游戏。\n\n玩家可以通过组队查找器中的 PvP 标签下的快速匹配部分进入装饰决斗队列。最多5人的团队可以一起排队参加这个休闲的 PvP 活动。1到4人的团队将与其它随机排队的玩家匹配。",
+		-- TODO: tw = "",
+	},
+});
+
+local ILLUSIONARY_COIN = 3393;
+
+root(ROOTS.WorldEvents,
+	n(DECOR_DUEL, {
+		["maps"] = { MAP.MIDNIGHT.SILVERMOON_CITY },	-- Silvermoon City
+		["cr"] = 257125,	-- Fieldweaver Amolenne <Match Coordinator>
+		["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61793),	-- Deployed to the Void
+				ach(61887),	-- Disguised to the Nines
+				ach(61881),	-- Hide and Peekless
+				ach(61880),	-- It's Cold Here in This Shadow
+				ach(61883),	-- Now You Don't See Me...
+				ach(61882),	-- Null and Avoided
+				ach(61792),	-- T-A-G that spells "Gotcha!"
+				ach(61878),	-- Tagged and Bagged
+				ach(61886),	-- The Whole Kit and Caboodle
+				ach(61879),	-- You're It
+			}),
+			n(ARMOR, sharedData({["collectible"] = false},{	-- Used only when you play as a seeker
+				i(260467),	-- Arcane Ranger - Chest
+				i(260465),	-- Arcane Ranger - Feet
+				i(260464),	-- Arcane Ranger - Legs
+				i(260463),	-- Arcane Ranger - Waist
+				i(260457),	-- Mage-Hunter- Chest
+				i(260456),	-- Mage-Hunter- Feet
+				i(260455),	-- Mage-Hunter- Legs
+				i(260462),	-- Mage-Hunter- Tabard
+				i(260454),	-- Mage-Hunter- Waist
+				i(260442),	-- Spellbreaker - Chest
+				i(260449),	-- Spellbreaker - Feet
+				i(260448),	-- Spellbreaker - Legs
+				i(260445),	-- Spellbreaker - Waist
+			})),
+			n(QUESTS, {
+				q(93774, {	-- When is a Chair not for Sitting?
+					["qg"] = 256307,	-- Silvermoon Cizizen / Completely Ordinary *Decor* (Depends on the NPC)
+					["coords"] = {
+						{ 35.6, 61.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 51.1, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 51.9, 71.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					},
+				}),
+				q(93716, {	-- Learning the Cloaks - Part 1
+					["sourceQuest"] = 93774,	-- When is a Chair not for Sitting?
+					["qg"] = 255368,	-- Riftblade Maella
+					["coord"] = { 27.4, 76.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93717, {	-- Learning the Cloaks - Part 2
+					["sourceQuest"] = 93716,	-- Learning the Cloaks - Part 1
+					["qg"] = 255370,	-- Captain Auric Sunchaser
+					["coord"] = { 27.5, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93719, {	-- Nothing Captured, Nothing Gained
+					["sourceQuest"] = 93717,	-- Learning the Cloaks - Part 2
+					["qg"] = 255365,	-- Aethas Sunreaver
+					["coord"] = { 27.6, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93816, {	-- Putting it Together
+					["sourceQuest"] = 93719,	-- Nothing Captured, Nothing Gained
+					["qg"] = 255365,	-- Aethas Sunreaver
+					["coord"] = { 27.6, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(93907, {	-- Edification of the Worthy
+					["sourceQuest"] = 93816,	-- Putting it Together
+					["qg"] = 256697,	-- Propagandist Naicira
+					["coord"] = { 31.5, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(96242, {	-- An Easy Path to Trickery
+					["sourceQuest"] = 93907,	-- Edification of the Worthy
+					["qg"] = 257125,	-- Fieldweaver Amolenne
+					["coord"] = { 31.5, 76.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				-- Repeatable Quests
+				q(93870, {	-- The Ephemeron Masquerade
+					["sourceQuests"] = {
+						93719,	-- Nothing Captured, Nothing Gained
+						93914,	-- AW HQT during quest chain, possibly considered as unlock for alts...
+					},
+					["sourceQuestNumRequired"] = 1,
+					["qg"] = 256697,	-- Propagandist Naicira
+					["coord"] = { 31.5, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["isDaily"] = true,	-- Speculation
+				}),
+			}),
+			n(REWARDS, {
+				o(621494, {	-- Prize Chest
+					currency(ILLUSIONARY_COIN),
+					i(268122),	-- Dispelled Coins
+				}),
+			}),
+			n(VENDORS, {
+				-- #if BEFORE 12.1.0
+				n(264056, {	-- Disguised Decor Duel Vendor <Illusionary Coin Trader>
+					["coord"] = { 31.6, 76.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["timeline"] = { ADDED_12_0_5 },
+					["groups"] = {
+						i(272445, {	-- Decorative Dornogal Opal (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+						}),
+						i(272442, {	-- Empty Wooden Toolbox (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(272446, {	-- Large Decorative Dornogal Opal (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+						}),
+						i(269636, {	-- Sin'dorei Cookpot Lid (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
+						}),
+						i(269613, {	-- Sin'dorei Covered Cookpot (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 30 } },
+						}),
+						i(269641, {	-- Sin'dorei Display Case (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
+						}),
+						i(271162, {	-- Sin'dorei Garden Swing (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 120 } },
+						}),
+						i(269614, {	-- Sin'dorei Open Cookpot (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 15 } },
+						}),
+						i(268457, {	-- Sin'dorei Tiffin-Style Lamp (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 50 } },
+						}),
+						i(272444, {	-- Small Decorative Dornogal Opal (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+						}),
+						i(272441, {	-- Small Lumber Pile (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 10 } },
+						}),
+						i(272443, {	-- Suramar Arcfruit Bowl (DECOR!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+					},
+				}),
+				-- #endif
+				n(256084, {	-- Gamesmaster Fleurian <Illusionary Coin Trader>
+					["coord"] = { 31.6, 76.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(262746, {	-- "Clockwork Sentinel" Kit (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(262741, {	-- "Dispelling Leap" Kit (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(262755, {	-- "Eccentro-Magic Pulse" Enhancement (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(262756, {	-- "Make Decoy" Enhancement (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(262743, {	-- "Nullification Field" Kit (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(262744, {	-- "Riftwalk" Kit (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(262745, {	-- "Stealth" Kit (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						i(262742, {	-- "Swift" Kit (CI!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 20 } },
+						}),
+						-- Rewards
+						i(268456, {	-- Animated Bench (TOY!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 200 } },
+						}),
+						i(272321, {	-- Arcane Ranger's Spellbow (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(268455, {	-- Enchanted Hourglass (TOY!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 200 } },
+						}),
+						i(272337, {	-- Mage Guard's Spellblade (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(272338, {	-- Mage Guard's Spellsteel (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(268481, {	-- Magister's Spell Bee Comb (MOUNT!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 500 } },
+						}),
+						i(272320, {	-- Nullbeacon Rift Channeler (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(272336, {	-- Nullbeacon Rift Smasher (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(272316, {	-- Spellbreaker's Bladelance (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(272961, {	-- Spellbreaker's Bladestaff (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(272317, {	-- Spellbreaker's Phoenixglaive (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(272318, {	-- Spellbreaker's Phoenixblade (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(272960, {	-- Spellbreaker's Shieldwall (COSMETIC!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 150 } },
+						}),
+						i(239018, {	-- Winner's Podium (TOY!)
+							["cost"] = { { "c", ILLUSIONARY_COIN, 200 } },
+						}),
+					},
+				}),
+			}),
+		},
+	}))
+
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.MID, {
+		n(DECOR_DUEL, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+			q(93914),	-- Triggered after interracting with Gamesmaster Fleurian during 'Edification of the Worthy' (93907)
+		})),
+	}),
+});

@@ -1,0 +1,180 @@
+1.60.1.69876
+r(1230656),	-- Reagent Bot
+r(1235244),	-- Engineering
+r(1240947),	-- Engineering
+r(1240958),	-- Engineering
+r(1240969),	-- Engineering
+r(1240982),	-- Engineering
+r(1249634),	-- Sandpaper
+r(1253004),	-- Sludge Suppressor
+r(1253005),	-- Enormous Tranquilizer Dart
+r(1253006),	-- G.R.R.-Nade
+r(1263034),	-- Repair Bot
+r(1263083),	-- Anarchist's Workbench
+r(1266893),	-- SAF-T Tabs
+r(1266905),	-- SAF-T Dynamite
+r(1266906),	-- SAF-T Copper Bomb
+r(1266907),	-- EZ-Thro Wrap
+r(1266908),	-- EZ-Thro Copper Bomb XL
+r(1266909),	-- No Slip SAF-T Padding
+r(1266910),	-- SAF-T Bronze Bomb
+r(1266911),	-- SAF-T Jumbo Dynamite
+r(1266912),	-- SAF-T Bell
+r(1266913),	-- Shafety Sheep
+r(1266914),	-- EZ-Thro Fireproof Fuse
+r(1266915),	-- EZ-Thro Bronze Mortar
+r(1266916),	-- EZ-Thro Grenade
+r(1266917),	-- SAF-T Casing
+r(1266918),	-- SAF-T Bomb
+r(1266919),	-- Emergency Field Cloak
+r(1266920),	-- Compact Critter Carrier
+r(1266921),	-- EZ-Thro Tru-Trigger
+r(1266922),	-- Tru-Trigger Frag Bomb
+r(1266923),	-- SAF-T Disposable Parachute
+r(1266924),	-- Gnomish Army Knife
+r(1266925),	-- Loot-A-Rang
+r(1266926),	-- SAF-T Tube
+r(1266927),	-- SAF-T Clever Dynamite
+r(1266928),	-- EZ-Thro Shell
+r(1266929),	-- EZ-Thro Thorium Grenade
+r(1266930),	-- EZ-Thro Dark Bomb
+r(1266931),	-- EZ-Thro Mana Bomb
+r(1266932),	-- EZ-Thro Field Transporter: Gadgetzan
+r(1266933),	-- SAF-T Emergency Ripper: Everlook
+r(1266934),	-- EZ and SAF Field Transporter: Mt. Hyjal
+r(1266935),	-- Ultrasafe Rechargeable Battery
+r(1266936),	-- Dimensional Transporter - Mt. Hyjal
+r(1266937),	-- Gnomish Poultryizer
+r(1266938),	-- Ultralight Goblin Glider
+r(1266939),	-- Gnomish Weather Machine
+r(1266940),	-- Stealthman 52
+r(1266941),	-- SAF-T Nitro Boosts
+r(1266942),	-- EZ-Thro Magnetic Displacer
+r(1266943),	-- SAF-T Teleport
+r(1277782),	--
+r(1286792),	-- Centaur Banner Deployment Device
+r(1286796),	-- Hoof-Shaped Foot Pedal
+r(1293088),	-- 9-60 Battery Pack
+r(1293849),	-- Swiftfeather Arrow
+r(1293850),	-- Swiftstrike Shot
+r(1302161),	-- Harvester Override Signalcaster
+r(1306546),	-- SAF-T Ultra Precision Scope
+r(1306547),	-- Hyper Deluxe Sniper Rifle Mk XVII
+r(1308178),	-- Whimsical Waistwrap
+r(1308179),	-- Gizmo Girdle
+r(1308180),	-- Clanking Cord
+r(1308182),	-- Serrated Strap
+r(1308183),	-- Floppy Goggles
+r(1308184),	-- Bent Goggles
+r(1308185),	-- Stuckbutton Goggles
+r(1308186),	-- Dented Goggles
+r(1317270),	-- Unsanctified Grenade
+r(1317958),	-- Satchel of Copper Bombs
+r(1317959),	-- Satchel of Bronze Bombs
+r(1317960),	-- Satchel of Iron Bombs
+r(1317961),	-- Satchel of Dark Iron Bombs
+r(1319154),	-- Small Purple Rocket
+r(1319155),	-- Small White Rocket
+r(1319156),	-- Small Yellow Rocket
+r(1319157),	-- Large Purple Rocket
+r(1319158),	-- Large White Rocket
+r(1319159),	-- Large Yellow Rocket
+r(1319160),	-- Purple Rocket Cluster
+r(1319161),	-- White Rocket Cluster
+r(1319162),	-- Yellow Rocket Cluster
+r(1319163),	-- Large Purple Rocket Cluster
+r(1319164),	-- Large White Rocket Cluster
+r(1319165),	-- Large Yellow Rocket Cluster
+
+
+
+
+Missing in Engineering
+
+1.60.1.69876
+r(1230656),	-- Reagent Bot
+r(1235244),	-- Engineering
+r(1240947),	-- Engineering
+r(1240958),	-- Engineering
+r(1240969),	-- Engineering
+r(1240982),	-- Engineering
+r(1249634),	-- Sandpaper
+r(1253004),	-- Sludge Suppressor
+r(1253005),	-- Enormous Tranquilizer Dart
+r(1253006),	-- G.R.R.-Nade
+r(1263034),	-- Repair Bot
+r(1263083),	-- Anarchist's Workbench
+r(1266893),	-- SAF-T Tabs
+r(1266905),	-- SAF-T Dynamite
+r(1266906),	-- SAF-T Copper Bomb
+r(1266907),	-- EZ-Thro Wrap
+r(1266908),	-- EZ-Thro Copper Bomb XL
+r(1266909),	-- No Slip SAF-T Padding
+r(1266910),	-- SAF-T Bronze Bomb
+r(1266911),	-- SAF-T Jumbo Dynamite
+r(1266912),	-- SAF-T Bell
+r(1266913),	-- Shafety Sheep
+r(1266914),	-- EZ-Thro Fireproof Fuse
+r(1266915),	-- EZ-Thro Bronze Mortar
+r(1266916),	-- EZ-Thro Grenade
+r(1266917),	-- SAF-T Casing
+r(1266918),	-- SAF-T Bomb
+r(1266919),	-- Emergency Field Cloak
+r(1266920),	-- Compact Critter Carrier
+r(1266921),	-- EZ-Thro Tru-Trigger
+r(1266922),	-- Tru-Trigger Frag Bomb
+r(1266923),	-- SAF-T Disposable Parachute
+r(1266924),	-- Gnomish Army Knife
+r(1266925),	-- Loot-A-Rang
+r(1266926),	-- SAF-T Tube
+r(1266927),	-- SAF-T Clever Dynamite
+r(1266928),	-- EZ-Thro Shell
+r(1266929),	-- EZ-Thro Thorium Grenade
+r(1266930),	-- EZ-Thro Dark Bomb
+r(1266931),	-- EZ-Thro Mana Bomb
+r(1266932),	-- EZ-Thro Field Transporter: Gadgetzan
+r(1266933),	-- SAF-T Emergency Ripper: Everlook
+r(1266934),	-- EZ and SAF Field Transporter: Mt. Hyjal
+r(1266935),	-- Ultrasafe Rechargeable Battery
+r(1266936),	-- Dimensional Transporter - Mt. Hyjal
+r(1266937),	-- Gnomish Poultryizer
+r(1266938),	-- Ultralight Goblin Glider
+r(1266939),	-- Gnomish Weather Machine
+r(1266940),	-- Stealthman 52
+r(1266941),	-- SAF-T Nitro Boosts
+r(1266942),	-- EZ-Thro Magnetic Displacer
+r(1266943),	-- SAF-T Teleport
+r(1277782),	--
+r(1286792),	-- Centaur Banner Deployment Device
+r(1286796),	-- Hoof-Shaped Foot Pedal
+r(1293088),	-- 9-60 Battery Pack
+r(1293849),	-- Swiftfeather Arrow
+r(1293850),	-- Swiftstrike Shot
+r(1302161),	-- Harvester Override Signalcaster
+r(1306546),	-- SAF-T Ultra Precision Scope
+r(1306547),	-- Hyper Deluxe Sniper Rifle Mk XVII
+r(1308178),	-- Whimsical Waistwrap
+r(1308179),	-- Gizmo Girdle
+r(1308180),	-- Clanking Cord
+r(1308182),	-- Serrated Strap
+r(1308183),	-- Floppy Goggles
+r(1308184),	-- Bent Goggles
+r(1308185),	-- Stuckbutton Goggles
+r(1308186),	-- Dented Goggles
+r(1317270),	-- Unsanctified Grenade
+r(1317958),	-- Satchel of Copper Bombs
+r(1317959),	-- Satchel of Bronze Bombs
+r(1317960),	-- Satchel of Iron Bombs
+r(1317961),	-- Satchel of Dark Iron Bombs
+r(1319154),	-- Small Purple Rocket
+r(1319155),	-- Small White Rocket
+r(1319156),	-- Small Yellow Rocket
+r(1319157),	-- Large Purple Rocket
+r(1319158),	-- Large White Rocket
+r(1319159),	-- Large Yellow Rocket
+r(1319160),	-- Purple Rocket Cluster
+r(1319161),	-- White Rocket Cluster
+r(1319162),	-- Yellow Rocket Cluster
+r(1319163),	-- Large Purple Rocket Cluster
+r(1319164),	-- Large White Rocket Cluster
+r(1319165),	-- Large Yellow Rocket Cluster

@@ -10,8 +10,8 @@ local _, app = ...;
 -- Miscellaneous
 
 -- Global locals
-local floor, 	  type, tonumber,pairs,wipe
-	= math.floor, type, tonumber,pairs,wipe
+local floor, 	  type, tonumber,pairs,wipe,tremove
+	= math.floor, type, tonumber,pairs,wipe,tremove
 
 -- App locals
 local SearchForObject, GetRelativeRawWithField
@@ -64,8 +64,10 @@ local KeyMaps = setmetatable({
 	currency = "currencyID",
 	crit = "criteriaID",
 	enchant = "spellID",
+	fc = "firstcraftID",
 	fp = "flightpathID",
 	follower = "followerID",
+	gameobject = "objectID",
 	garrbuilding = "garrisonbuildingID",
 	garrfollower = "followerID",
 	["journal:0"] = "instanceID",
@@ -80,6 +82,8 @@ local KeyMaps = setmetatable({
 	npc = "npcID",
 	o = "objectID",
 	object = "objectID",
+	pn = "professionnodeID",
+	pvprank = "pvprankID",
 	r = "spellID",
 	recipe = "spellID",
 	rfp = "runeforgepowerID",
@@ -92,6 +96,18 @@ local KeyMaps = setmetatable({
 	q = "questID",
 	quest = "questID",
 }, { __index = function(t,key) return key.."ID" end})
+-- For external use of obtaining the proper Search Key field
+api.GetSearchKeyField = function(kind)
+	return KeyMaps[kind:lower():gsub("id", "")]
+end
+-- For external use of obtaining the proper Search Key field
+api.GetKeyField = function(kind)
+	local key = KeyMaps[kind:lower():gsub("id", "")]
+	if key == "modItemID" then
+		return "itemID"
+	end
+	return key
+end
 
 local function SearchByItemLink(link)
 	-- Parse the link and get the itemID and bonus ids.
@@ -305,7 +321,10 @@ local __ParentInclusionCriteria = {
 	end
 }
 local ParentInclusionCriteria = {}
-local Eval_SearchCriteria,Eval_SearchValueCriteria,Eval_ParentInclusionCriteria
+-- A set of Filter functions which are evaluated against the final result hierarchy to determine any final individual group exclusions
+local __RecursiveFilterCriteria = {}
+local RecursiveFilterCriteria = {}
+local Eval_SearchCriteria,Eval_SearchValueCriteria,Eval_ParentInclusionCriteria,Eval_RecursiveFilterCriteria
 local function __Eval_SearchCriteria(o)
 	for i=1,#SearchCriteria do
 		if not SearchCriteria[i](o) then return end
@@ -324,10 +343,17 @@ local function __Eval_ParentInclusionCriteria(o)
 	end
 	return true
 end
+local function __Eval_RecursiveFilterCriteria(o)
+	for i=1,#RecursiveFilterCriteria do
+		if not RecursiveFilterCriteria[i](o) then return end
+	end
+	return true
+end
 local function ResetCriterias(criteria)
 	wipe(SearchCriteria)
 	wipe(SearchValueCriteria)
 	wipe(ParentInclusionCriteria)
+	wipe(RecursiveFilterCriteria)
 	local sc = criteria and criteria.SearchCriteria or __SearchCriteria
 	for i=1,#sc do
 		SearchCriteria[#SearchCriteria + 1] = sc[i]
@@ -340,9 +366,14 @@ local function ResetCriterias(criteria)
 	for i=1,#pic do
 		ParentInclusionCriteria[#ParentInclusionCriteria + 1] = pic[i]
 	end
+	local rfc = criteria and criteria.RecursiveFilterCriteria or __RecursiveFilterCriteria
+	for i=1,#rfc do
+		RecursiveFilterCriteria[#RecursiveFilterCriteria + 1] = rfc[i]
+	end
 	Eval_SearchCriteria = #SearchCriteria > 0 and __Eval_SearchCriteria or app.ReturnTrue
 	Eval_SearchValueCriteria = #SearchValueCriteria > 0 and __Eval_SearchValueCriteria or app.ReturnTrue
 	Eval_ParentInclusionCriteria = #ParentInclusionCriteria > 0 and __Eval_ParentInclusionCriteria or app.ReturnTrue
+	Eval_RecursiveFilterCriteria = #RecursiveFilterCriteria > 0 and __Eval_RecursiveFilterCriteria or app.ReturnTrue
 end
 -- Wraps a given object such that it can act as an unfiltered Header of the base group
 local function CloneGroupIntoHeirarchy(group)
@@ -361,7 +392,7 @@ local function MatchOrCloneParentInHierarchy(group)
 		local parent = group.parent;
 		if not Eval_ParentInclusionCriteria(parent) then
 			-- app.PrintDebug("PIH-PCrit",app:SearchLink(parent))
-			return
+			return false
 		end
 
 		-- is this a top-level group?
@@ -410,7 +441,9 @@ local function BuildClonedHierarchy(sources)
 				-- need to map the cloned Thing also since it may end up being a parent of another Thing
 				ClonedHierarachyMapping[source] = thing;
 				NestObject(parent, thing);
-			-- else app.PrintDebug("CloneHierarchy-Fail",source.parent,app:SearchLink(source))
+			elseif parent == nil then
+				-- app.PrintDebug("CloneHierarchy-Fail",source.parent,app:SearchLink(source))
+				app.PrintDebug("Search results are missing expected hierarchy (parent). Ensure searches are performed against hierarchical datasets. ==>",app:SearchLink(source))
 			end
 		-- else app.PrintDebug("Criteria-Fail:",app:SearchLink(source))
 		end
@@ -442,6 +475,20 @@ local function AddSearchGroupsByFieldValue(groups, field, value)
 		end
 	end
 end
+-- Recursively filter through all groups in the ClonedHierarchyGroups using the current RecursiveFilterCriteria
+local function RunRecursiveFilterCriteria(groups)
+	if not groups or #groups == 0 then return end
+	local group
+	for i=#groups,1,-1 do
+		group = groups[i]
+		-- depth-first
+		RunRecursiveFilterCriteria(group.g)
+		if not Eval_RecursiveFilterCriteria(group) then
+			-- app.PrintDebug("RFC.--",app:SearchLink(group))
+			tremove(groups, i)
+		end
+	end
+end
 -- Builds ClonedHierarchyGroups from the cached container using groups which match a particular key and value
 local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 	-- app.PrintDebug("BSR:Cached",value)
@@ -457,16 +504,14 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 		end
 	end
 end
--- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
--- should additionally clear their contents when being cloned
-function app:BuildSearchResponse(field, value, drop, criteria)
-	return app:BuildTargettedSearchResponse(app:GetDataCache(), field, value, drop, criteria)
+-- Collects a cloned hierarchy of groups which have the field and/or value within the given field
+function app:BuildSearchResponseRetailStyle(field, value, drop, criteria)
+	return app:BuildTargettedSearchResponse(app:GetDatabaseRoot(), field, value, drop, criteria)
 end
--- Collects a cloned hierarchy of groups within the given target 'groups' which have the field and/or value within the given field. Specify 'clear' if found groups which match
--- should additionally clear their contents when being cloned
+-- Collects a cloned hierarchy of groups within the given target 'groups' which have the field and/or value within the given field
 function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	if not groups then return end
-	MainRoot = app:GetDataCache()
+	MainRoot = app:GetDatabaseRoot()
 	if not MainRoot then app.PrintDebug("BuildTargettedSearchResponse.FAIL - No MainRoot available") return end
 	local UseCached = groups == MainRoot
 	if groups.g then groups = groups.g end
@@ -512,6 +557,11 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 		AddSearchGroupsByField(groups, field);
 		BuildClonedHierarchy(SearchGroups);
 	end
+	-- app.PrintDebug("BSR:PreFilter",#ClonedHierarchyGroups)
+	-- Perform a final filtering pass if necessary
+	if Eval_RecursiveFilterCriteria ~= app.ReturnTrue then
+		RunRecursiveFilterCriteria(ClonedHierarchyGroups)
+	end
 	return ClonedHierarchyGroups;
 end
 
@@ -527,7 +577,7 @@ app.SearchAndOpen = function(search)
 	end
 
 	-- expand the hierarchy to each search result
-	local DGR = app.DirectGroupRefresh
+	local DGU = app.DirectGroupRefresh
 	local GetRelative = app.GetRelativeRawWithField
 	local windows = {}
 	local window, o
@@ -547,7 +597,7 @@ app.SearchAndOpen = function(search)
 		-- force the search results to be visible
 		o.forceShow = true
 		-- DGU them to chain visibility
-		DGR(o)
+		DGU(o)
 		o = o.parent
 		while o do
 			o.expanded = true
@@ -568,10 +618,10 @@ end
 -- Allows a user to use /att search|? [link]
 -- to enable Debug Printing of Event messages
 app.ChatCommands.Add({"search","?"}, function(args)
-	local search = args[2]
+	local search = args[1]
 	if not search then
 		local guid = UnitGUID("target");
-		if guid then
+		if guid and not app.WOWAPI.issecretvalue(guid) then
 			local npcID = select(6, ("-"):split(guid))
 			if npcID then
 				search = "n:" .. npcID
@@ -586,3 +636,23 @@ end, {
 	"Usage : /att [search|?] [link]",
 	"Allows performing a search against ATT data and navigating to the found result(s)",
 })
+
+do
+	local FilterBind = app.Modules.Filter.Filters.Bind
+	local function SearchForMissingItemsRecursively(group, listing)
+		-- app.PrintDebug("SearchForMissingItemsRecursively",app:SearchLink(group))
+		if group.visible then
+			if group.itemID and not FilterBind(group) then
+				listing[#listing + 1] = group
+			end
+			local g = group.g
+			if g and group.expanded then
+				-- Go through the sub groups and determine if any of them have a response.
+				for i=1,#g do
+					SearchForMissingItemsRecursively(g[i], listing)
+				end
+			end
+		end
+	end
+api.SearchForMissingItemsRecursively = SearchForMissingItemsRecursively
+end

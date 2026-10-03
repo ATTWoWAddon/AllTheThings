@@ -5,3 +5,22 @@
 258965@@@(TEST) Legion Blacksmithing
 264160@@@(TEST) Legion Engineering
 264191@@@(TEST) Pandaria Engineering
+1243219@@@Light's Potential
+1244876@@@Primal Philosopher's Stone
+1244895@@@Mote of Pure Void
+1244939@@@Mote of Primal Energy
+1244940@@@Mote of Light
+1244942@@@Lightfused Mana Potion \\ Midnight Mana Potion
+1248781@@@Composite Flora
+1248784@@@Bouquet of Herbs
+1248787@@@School of Gems
+1248796@@@Potion of Zealotry
+1248831@@@Potion of Devoured Dreams
+1248832@@@Potion of Recklessness
+1248834@@@Draught of Rampant Abandon
+1248839@@@Void-Shrouded Tincture
+1248840@@@Flask of the Shattered Sun \\ Midnight Critical Strike Flask
+1248842@@@Flask of the Blood Knights \\ Midnight Haste Flask
+1248845@@@Flask of the Magisters \\ Midnight Mastery Flask
+1248848@@@Haranir Phial of Ingenuity
+1248849@@@Haranir Phial of Perception

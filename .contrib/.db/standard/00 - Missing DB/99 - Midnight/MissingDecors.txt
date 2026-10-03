@@ -1,0 +1,252 @@
+12.1.0.68209
+decor(21956),	-- Hanging Coiled Isle Ropes
+decor(24888),	-- Tune-O-Tron 6000
+decor(25104),	-- Breanni's Menagerie Aquarium
+12.1.0.68412
+decor(26935),	-- Seeker's First Draft
+decor(27047),	-- [DNT] [AUTOGEN] 12PH_Leg_Book_Troll_03.M2
+12.1.0.68675
+decor(17295),	-- [DNT] [AUTOGEN] 12PH_Durotar_Barrel_Large01.M2
+decor(17296),	-- [DNT] [AUTOGEN] 12PH_Durotar_Keg01.M2
+decor(17798),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Canopy01.m2
+decor(18486),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Canopy04.m2
+12.1.5.69594
+decor(22399),	-- "Gnoma Lisa" Painting
+decor(23552),	-- Tusked Amani Canoe
+decor(25129),	-- Corroded Amani Sconce
+decor(25301),	-- Nourished Clutch of Brood Eggs
+decor(25302),	-- Nourished Brood Egg Cluster
+decor(25303),	-- Nourished Brood Eggs
+decor(25304),	-- Dormant Clutch of Brood Eggs
+decor(25305),	-- Dormant Brood Egg
+decor(25306),	-- Dormant Brood Egg Cluster
+decor(25308),	-- Symbol of Halazzi, Loa of the Hunt
+decor(25323),	-- Small Shadowmoon Shadebrush
+decor(25324),	-- Overgrown Valuun Shrub
+decor(25325),	-- Verdant Mire Scale-Leaf
+decor(25326),	-- Everbloom Forest Floor
+decor(25474),	-- Kith'ix's Seal
+decor(26009),	-- Simple Hallow's End Candle
+decor(26010),	-- Candlelit Smiling Jack-o'-Lantern
+decor(26011),	-- Candlelit Shrieking Jack-o'-Lantern
+decor(26012),	-- Candlelit Ogre Jack-o'-Lantern
+decor(26013),	-- Scarecrow Pepe
+decor(26015),	-- Apple Bobbing Bucket
+decor(26016),	-- Filled Candy Bucket
+decor(26017),	-- Spidery Witch Hat
+decor(26018),	-- Eternally Powered Glowskull
+decor(26019),	-- Spooky Scarecrow
+decor(26020),	-- Buckled Witch Hat
+decor(26050),	-- Enchanted Hallow's End Candle
+decor(26051),	-- Unlit Smiling Jack-o'-Lantern
+decor(26052),	-- Unlit Shrieking Jack-o'-Lantern
+decor(26053),	-- Unlit Ogre Jack-o'-Lantern
+decor(26054),	-- Horrific Head of the Horseman
+decor(26385),	-- Amani Hex Candle
+decor(26479),	-- Beloved Murloc Plushie
+decor(26709),	-- Beloved Ottuk Plushie
+decor(26710),	-- Beloved Ottuuuuuuk Plushie
+decor(26711),	-- Beloved Plush Doll
+decor(26880),	-- Looming Heartsbane Effigy
+decor(26881),	-- Elaborate Heartsbane Ritual Markings
+decor(26882),	-- Heartsbane Ritual Markings
+decor(26883),	-- Heartsbane Stone Circle
+decor(26884),	-- Heartsbane Banner
+decor(26885),	-- Ominous Heartsbane Shrine
+decor(26886),	-- Ominous Heartsbane Banner
+decor(26887),	-- Elaborate Heartsbane Doom Catcher
+decor(26888),	-- Heartsbane Doom Catcher
+decor(26889),	-- Heartsbane Candle
+decor(27216),	-- Aqir Hunter's Trophy
+decor(27217),	-- "Pride of Stormwind" Statue
+decor(27220),	-- Lillistrasza's Lucky Duck Plushie
+decor(27255),	-- Caravan Smith's Anvil
+decor(27458),	-- Ancient Amani Mural
+decor(27606),	-- Mature Star Lily
+decor(27608),	-- Shielded Lightforged Pylon
+decor(27609),	-- Nomad's Round Cushion
+decor(27610),	-- Ornate Vulpera Caravan
+decor(27612),	-- Nathrian Reaching Briar
+decor(27613),	-- Large Nathrian Bladebush
+decor(27614),	-- Starseed Sapling
+decor(27617),	-- Kyrian Waymarker Plaque
+decor(27683),	-- Embaari Beech Tree
+decor(27684),	-- Sinfall Dining Table
+decor(27824),	-- Hanging Lightforged Standard
+decor(27982),	-- Vulpera War Banner
+decor(28106),	-- Lightforged Holo-Tower
+decor(28107),	-- Lightforged Holo-Barricade
+decor(28108),	-- Lightforged Holo-Parapet
+decor(28109),	-- Lightforged Holo-Shield
+decor(28110),	-- Mysterious Imported Piranha
+decor(28111),	-- Obsidian Lava Pool
+decor(28317),	-- Pale Shadowmoon Willow
+decor(28318),	-- Huddled Nightmarsh Blossom
+decor(28319),	-- Curved Karabor Hedge
+decor(28320),	-- Elaborate Karabor Hedge
+decor(28321),	-- Karabor Hedge
+decor(28322),	-- Shadow Lily Bloom
+decor(28323),	-- Gloomshade Glowpod
+decor(28324),	-- Karabor Beech Tree
+decor(28325),	-- Verdant Shadowmoon Willow
+decor(28326),	-- Nagrand Clover Cluster
+decor(28327),	-- Nagrand Wild Wheat
+decor(28328),	-- Young Sentinel Tree
+decor(28329),	-- Highmaul Sentinel Tree
+decor(28330),	-- Wandering Sentinel Tree
+decor(28331),	-- Mature Spiritwood Oak
+decor(28332),	-- Spiritwood Oak Stump
+decor(28333),	-- Sentinel Tree Root
+decor(28334),	-- Stonecrag Sentinel Tree
+decor(28335),	-- Kalandrios Lily
+decor(28336),	-- Aborius Pod Plant
+decor(28337),	-- Gordawg Mossy Rock
+decor(28338),	-- Nagrand Heart Ivy
+decor(28341),	-- Small Darkhaven Window
+decor(28343),	-- Nathrian Window
+decor(28344),	-- Maldraxxi Shielding Lattice
+decor(28353),	-- Endmire Anima Blossom
+decor(28354),	-- Ceremonial Kyrian Standard
+decor(28367),	-- Ossified Maldraxxi Spike
+decor(28427),	-- Decorative Lightforged Holo-Screen
+decor(28428),	-- Gilded Stonework Altar
+decor(28429),	-- Gleaming Lightforge
+decor(28430),	-- Hanging Argunite Lamp
+decor(28431),	-- Argunite Sconce
+decor(28432),	-- Standing Argunite Lamp
+decor(28433),	-- Eredath Artisan's Workbench
+decor(28434),	-- Argunite Crystal Storage
+decor(28435),	-- Raw Argunite Supply
+decor(28436),	-- Carved Argunite Supply
+decor(28437),	-- Shimmering Lightforged Canister
+decor(28438),	-- Gleaming Lightforged Grindstone
+decor(28439),	-- Lightforged Recall Beacon
+decor(28440),	-- Lightforged Control Console
+decor(28441),	-- Replica Crown of the Triumvirate
+decor(28442),	-- Golden Argunite Crystal
+decor(28443),	-- Celadon Argunite Crystal
+decor(28444),	-- Amethyst Argunite Crystal
+decor(28445),	-- Reinforced Empyrium Tile
+decor(28446),	-- Decorative Lightweave Bolt
+decor(28447),	-- Solar Mana-Ring
+decor(28448),	-- Ceremonial Lightforged Standard
+decor(28450),	-- Skysong Sentinel Tree
+decor(28456),	-- Withered Crimson Oak
+decor(28457),	-- Closed Vulpera Scroll
+decor(28458),	-- Drustvar Leaf Clump
+decor(28463),	-- Wooden Vulpera Caravan
+decor(28464),	-- Damaged Nomad's Makeshift Barricade
+decor(28465),	-- Fortified Nomad's Makeshift Barricade
+decor(28466),	-- Nomad's Wooden Lamppost
+decor(28467),	-- Nomad's Warped Water Gourd
+decor(28468),	-- Nomad's Worn Water Gourd
+decor(28469),	-- Nomad's Water Gourd
+decor(28470),	-- Nomad's Wooden Table
+decor(28471),	-- Nomad's Steel Lantern
+decor(28472),	-- Nomad's Campfire Grill
+decor(28473),	-- Nomad's Mortar and Pestle
+decor(28474),	-- Nomad's Covered Serving Bowl
+decor(28475),	-- Nomad's Serving Bowl
+decor(28476),	-- Nomad's Stone Pitcher
+decor(28477),	-- Nomad's Stone Urn
+decor(28478),	-- Nomad's Refreshment Set
+decor(28479),	-- Nomad's Bowl Set
+decor(28480),	-- Nomad's Serving Sundries
+decor(28481),	-- Reinforced Nomad's Makeshift Barricade
+decor(28482),	-- Blue Vulpera Cushion
+decor(28483),	-- Black Vulpera Cushion
+decor(28484),	-- Long Red Vulpera Cushion
+decor(28485),	-- Withered Barrow-weed
+decor(28486),	-- Scarlet Drustvar Thornwood
+decor(28487),	-- Lush Drustvar Witchfern
+decor(28488),	-- Scarlet Drustvar Oak
+decor(28489),	-- Drustvar Glowcap Cluster
+decor(28490),	-- Twisted Crimson Root
+decor(28491),	-- Short Crimson Oak Stump
+decor(28492),	-- Short Drustvar Oak Stump
+decor(28493),	-- Drustvar Shelfcap
+decor(28494),	-- Snowbound Highroad Pine
+decor(28495),	-- Boralus Swill Bottle
+decor(28497),	-- Drustvar Leaf Patch
+decor(28498),	-- Vacant Buzzard Roost
+decor(28499),	-- Arching Crimson Ivy
+decor(28508),	-- Vulpera Postbox
+decor(28509),	-- Nathrian Sinstain Oak
+decor(28510),	-- Nathrian Forked Briar
+decor(28511),	-- Large Nathrian Briar Root
+decor(28512),	-- Small Nathrian Briar Root
+decor(28513),	-- Nathrian Leafy Briar
+decor(28514),	-- Nathrian Sinstain Bush
+decor(28515),	-- Nathrian Sinstain Ivy Cluster
+decor(28516),	-- Windswept Elysian Grass
+decor(28517),	-- Nathrian Fungal Rotcap
+decor(28518),	-- Lonely Banewood Pine
+decor(28519),	-- Verdant Elysian Crownblossom
+decor(28520),	-- Sparse Elysian Pondweed
+decor(28521),	-- Windswept Elysian Willow
+decor(28522),	-- Elysian Skyfrond
+decor(28523),	-- Lush Elysian Lily
+decor(28524),	-- Nathrian Rubyroot Growth
+decor(28525),	-- Brightburned Nathrian Clawbush
+decor(28526),	-- Windswept Elysian Skyplume
+decor(28527),	-- Lush Elysian Lotus
+decor(28528),	-- Windswept Elysian Shrub
+decor(28529),	-- Elysian Bulbflower
+decor(28530),	-- Brightburned Nathrian Root
+decor(28531),	-- Sinner's Gibbet
+decor(28532),	-- Revendreth Sinner's Prison
+decor(28533),	-- Nathrian Thicket Hedge
+decor(28534),	-- Venthyr Fence
+decor(28535),	-- Venthyr Fencepost
+decor(28536),	-- Kyrian Waymarker
+decor(28537),	-- Dormant Wildseed
+decor(28538),	-- Leaning Wildgrove Tree
+decor(28539),	-- Hanging Wildseed
+decor(28540),	-- Fae Anima Wall Lantern
+decor(28541),	-- Fae Moonbough Table
+decor(28542),	-- Anima-Infused Dreamcatcher
+decor(28543),	-- Fae Moonbough Gate
+decor(28544),	-- Open Bonewood Barrel
+decor(28545),	-- Highback Bonewood Chair
+decor(28546),	-- Suspended Lich Scroll
+decor(28547),	-- Fae Lantern Blossom
+decor(28548),	-- Maldraxxi Horned Beast Skull
+decor(28549),	-- Levitating Lich Library
+decor(28550),	-- Lush Wildgrove Fern
+decor(28551),	-- Hanging Wildgrove Ivy
+decor(28552),	-- Pale Nathrian Rose
+decor(28553),	-- Radiant Elysian Water Lily
+decor(28554),	-- Winged Elysian Spiralbloom
+decor(28555),	-- Celestial Grovebush
+decor(28556),	-- Lush Celestial Moonbough
+decor(28557),	-- Leaning Celestial Orchid
+decor(28558),	-- Endmire Sinsticker Bush
+decor(28559),	-- Maldraxxi Anima Crystal
+decor(28560),	-- Hanging Elysian Skyvy
+decor(28561),	-- Lush Elysian Bellflower Bush
+decor(28562),	-- Fae Animashroom Circle
+decor(28563),	-- Spherical Nathrian Topiary
+decor(28564),	-- Narrow Kyrian Drapes
+decor(28565),	-- Small Shimmering Moonvine
+decor(28566),	-- Venthyr Alchemy Rack
+decor(28567),	-- Wildgrove Leaf Pile
+decor(28568),	-- Confessor's Anima Jar
+decor(28569),	-- Runic Kyrian Reliquary
+decor(28570),	-- Fae Moonbough Cocoon
+decor(28571),	-- Kyrian Steward Effigy
+decor(28572),	-- Restored Night Fae Sigil
+decor(28573),	-- Elysian Heart-Lotus
+decor(28574),	-- Anima-Powered Anvil
+decor(28575),	-- Fae Moonbough Scroll
+decor(28576),	-- Sinfall Arched Bookcase
+decor(28577),	-- Fae Animashroom
+decor(28578),	-- Ornate Kyrian Glass Platform
+decor(28579),	-- Anima-Powered Kyrian Oven
+decor(28629),	-- Lunarfall Beech Tree
+decor(28632),	-- Eredath Worktable
+decor(28633),	-- Nomad's Steel Forge
+decor(28634),	-- Blooming Celestial Dreamleaf
+decor(28693),	-- Incineratus Grass Patch
+decor(28694),	-- Tall Crimson Oak
+decor(29117),	-- Amani Open Fire Grill
+decor(30255),	-- Ritual Embaari Arch

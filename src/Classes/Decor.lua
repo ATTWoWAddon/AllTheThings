@@ -21,12 +21,13 @@ local C_HousingCatalog_GetCatalogEntryInfo,C_HouseEditor_IsHouseEditorActive,C_T
 -- this is non-parameterized, returns some quantity of decor owned and placed?
 -- /dump C_HousingCatalog.GetDecorTotalOwnedCount() -> 110,39
 -- /dump C_HousingCatalog.GetCatalogEntryDebugInfoForID(7620)	-- force taint error
+-- /dump C_HousingCatalog.GetCatalogEntryInfoByRecordID(1, 383, true)
 
 local pairs
  	= pairs
 
 local IsAccountCached = app.IsAccountCached
-app.AddEventHandler("OnStartupDone", function()
+app.AddEventHandler("OnStartup", function()
 	IsAccountCached = app.IsAccountCached
 end)
 
@@ -79,12 +80,12 @@ do
 			-- only checking for new collected decor because Blizzard
 			if not IsAccountCached(CACHE, entry.recordID) then
 				local info = C_HousingCatalog_GetCatalogEntryInfo(entry)
-				if info and info.entryType == DecorType then
+				if info and info.entryID.entryType == DecorType then
 					local qty = HowManyDecor(info)
 
 					-- qty can sometimes be 4294967295
 					if qty > 0 and qty < 1000000 then
-						-- app.PrintDebug("Decor Collected",recordID,qty,info.numPlaced,info.numStored,info.quantity)
+						-- app.PrintDebug("Decor Collected",entry.recordID,qty,info.numPlaced,info.numStored,info.quantity)
 						saved[entry.recordID] = true
 						added[#added + 1] = entry
 					-- still ignoring removing destroyed decor from cache since it continues to be inconsistent from Blizzard
@@ -110,6 +111,7 @@ do
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 	end)
+	app.AddGenericFieldConverter(KEY)
 	app.AddEventHandler("OnRefreshCollections", RefreshDecorCollection)
 	app.AddEventRegistration("HOUSE_DECOR_ADDED_TO_CHEST", function(decorUid, decorID)
 		app.SetThingCollected(KEY, decorID, true, true)
@@ -163,5 +165,10 @@ do
 		-- Attach ATT info to Housing Catalog tooltips
 		app.ForceAttachTooltip(tooltip, {type="decor", id=decorID})
 	end)
+
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") });
+		app.AddRandomSearchCategory("Decor", "decorID", app.L.DECOR, app.L.DECOR_DESC, app.asset("Category_Housing"));
+	end);
 end
 

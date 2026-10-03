@@ -1,4 +1,0 @@
-2.5.1.39399
-ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
-2.5.4.44833
-ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys

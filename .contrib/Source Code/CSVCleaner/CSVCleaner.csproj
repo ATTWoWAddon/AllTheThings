@@ -2,29 +2,32 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <Platforms>x64</Platforms>
     <TargetFramework>net8.0</TargetFramework>
+    <BaseOutputPath>..\..\.tools\</BaseOutputPath>
+    <PublishAot>False</PublishAot>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <BaseOutputPath>..\..\.wago</BaseOutputPath>
-    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Platform)'=='x64'">
     <PlatformTarget>x64</PlatformTarget>
-    <IsPublishable>False</IsPublishable>
-    <PublishTrimmed>False</PublishTrimmed>
-    <IsAotCompatible>true</IsAotCompatible>
-    <PublishAot>True</PublishAot>
     <VerifyReferenceAotCompatibility>true</VerifyReferenceAotCompatibility>
-    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebugType>full</DebugType>
-    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
-    <Optimize>False</Optimize>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <DebugType>none</DebugType>
-    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)|$(TargetFramework)'=='Release|x64|net8.0'">
+    <OutputPath>..\..\.tools\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <Target Name="ValidateCSVCleanerPlatform" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(Platform)' != 'x64'" Text="CSVCleaner supports only the x64 platform in this revision." />
+  </Target>
 </Project>

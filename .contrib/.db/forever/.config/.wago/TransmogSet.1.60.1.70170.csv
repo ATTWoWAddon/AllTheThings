@@ -1,0 +1,8 @@
+Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescriptionID,ParentTransmogSetID,CompleteWorldStateID,ExpansionID,PatchIntroduced,UiOrder,ConditionID
+"Green Snugglefin Murloc Romper",3634,0,82027,2,262,13968,0,1,9,100207,1640,0
+"Spiritplume Celestial Collection",4397,0,89504,387,0,13967,0,1,10,110105,10,0
+"Shen'dorei Magister's Garb",5700,0,95977,258,393,13967,0,18,0,0,1000,0
+"Shen'dorei Peacekeeper's Garb",5701,0,95978,258,393,13968,5700,18,0,0,1000,0
+"Shen'dorei Skyseer's Garb",5702,0,95979,258,393,14120,5700,18,0,0,1000,0
+"Al'Aketh Zealot's Garb",5703,0,95980,258,393,14245,5700,18,0,0,1000,0
+"Veteran Adventurer's Outdoor Wear",5914,0,97984,258,0,13968,0,18,0,16000,10,0

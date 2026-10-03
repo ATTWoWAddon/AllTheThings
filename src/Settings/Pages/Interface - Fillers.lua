@@ -31,6 +31,7 @@ app.AddEventHandler("Fill.DefinedSettings", function(fillSettings)
 		-- app.PrintTable(usersettings)
 		if not rawget(StaticFillMeta, "__Initialized") then
 			-- app.PrintDebug("init static meta")
+			-- app.PrintTable(fillSettings)
 			-- build a static metatable of the defaults for the fill settings, everything defaults to 'true' unless specified as 'false' or 'ignored'
 			for r,rowval in ipairs(fillSettings.Row) do
 				if rowval ~= "[]" then
@@ -38,7 +39,10 @@ app.AddEventHandler("Fill.DefinedSettings", function(fillSettings)
 						if colval ~= NAME then
 							local settingkey = colval..":"..rowval
 							-- all fillers enabled by default on first load if not ignored or defaulted to false
-							if fillSettings.ScopesIgnored[colval][rowval] or fillSettings.Defaults[rowval] == false then
+							if fillSettings.ScopesIgnored[colval][rowval]
+								or fillSettings.SettingsDefaults[rowval] == false
+								or fillSettings.SettingsDefaults[settingkey] == false
+							then
 								-- app.PrintDebug(settingkey,"defaulted to false")
 								DefaultValues[settingkey] = false
 							end

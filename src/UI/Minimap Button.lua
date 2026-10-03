@@ -3,6 +3,7 @@ local appName, app = ...;
 
 -- App & Module locals
 local DESCRIPTION_SEPARATOR, L = app.DESCRIPTION_SEPARATOR, app.L;
+local ButtonName = "AllTheThings"
 
 -- Global locals
 local math_floor = math.floor;
@@ -11,7 +12,7 @@ local math_floor = math.floor;
 local GameTooltip = GameTooltip;
 
 -- Minimap Button
-local MinimapButton;
+local MinimapButton, UseLDI
 function AllTheThings_MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		-- Right Button opens the Options menu.
@@ -20,7 +21,7 @@ function AllTheThings_MinimapButtonOnClick(self, button)
 		-- Left Button
 		if IsShiftKeyDown() then
 			app.RefreshCollections();
-		elseif app.ToggleMiniListForCurrentZone and (IsAltKeyDown() or IsControlKeyDown()) then
+		elseif IsAltKeyDown() or IsControlKeyDown() then
 			app.ToggleMiniListForCurrentZone();
 		else
 			app.ToggleMainList();
@@ -31,16 +32,16 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
 	GameTooltip:ClearATTReferenceTexture();
-	local reference = app:GetDataCache();
+	local reference = app:GetDatabaseRoot();
 	if reference then
 		GameTooltip:SetATTReferenceForTexture(reference);
 
 		local left, right = DESCRIPTION_SEPARATOR:split(reference.title);
-		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
+		GameTooltip:AddDoubleLine(reference.text, reference.summaryText, 1, 1, 1);
 		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
 
 		local prime = app:GetWindow("Prime");
-		if prime and (prime.forceFullDataRefresh or (app.IsRetail and (not prime.data or not prime.data.TLUG))) then	-- NOTE: Retail uses TLUG.
+		if prime and (prime.HasPendingUpdate or (not prime.data or not prime.data.TLUG)) then
 			GameTooltip:AddDoubleLine(L["UPDATES_PAUSED"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 0.4, 0.4);
 		else
 			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
@@ -145,6 +146,15 @@ app.SetMinimapButtonRadius = function(radius)
 	if MinimapButton then MinimapButton:update(); end
 end
 app.SetMinimapButtonSettings = function(visible, size)
+	if UseLDI then
+		if visible then
+			UseLDI:Show(ButtonName)
+		else
+			UseLDI:Hide(ButtonName)
+		end
+		MinimapButton:SetSize(size, size)
+		return
+	end
 	if visible then
 		(MinimapButton or CreateMinimapButton()):SetSize(size, size);
 		MinimapButton:Show();
@@ -153,18 +163,74 @@ app.SetMinimapButtonSettings = function(visible, size)
 	end
 end
 
+do
 -- Register with the Data Broker
-app.AddEventHandler("OnStartup", function()
+local function RegisterDataBrokers()
 	if not LibStub then return end
 
 	local LDB = LibStub:GetLibrary("LibDataBroker-1.1", true)
-	if not LDB then return end
+	if LDB then
+		local o = LDB:NewDataObject(ButtonName, {
+			type = "launcher",
+			icon = app.asset("Discord_2_64"),
+			OnClick = AllTheThings_MinimapButtonOnClick,
+			OnEnter = AllTheThings_MinimapButtonOnEnter,
+			OnLeave = AllTheThings_MinimapButtonOnLeave,
+		});
 
-	LDB:NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = AllTheThings_MinimapButtonOnClick,
-		OnEnter = AllTheThings_MinimapButtonOnEnter,
-		OnLeave = AllTheThings_MinimapButtonOnLeave,
-	});
-end);
+		local LDI = LibStub:GetLibrary("LibDBIcon-1.0", true)
+		if LDI then
+			local MinimapPos = AllTheThingsSavedVariables.MinimapButtonAngle or 193.47782
+			local function UpdateMinimapPosToSettings()
+				AllTheThingsSavedVariables.MinimapButtonAngle = MinimapPos
+			end
+			-- re-routing table to ATT settings instead of a static table
+			local db = setmetatable({}, {
+				__index = function(t,key)
+					if key == "hide" then return not app.Settings:GetTooltipSetting("MinimapButton") end
+					if key == "minimapPos" then return MinimapPos or 193.47782 end
+				end,
+				__newindex = function(t,key,val)
+					-- this is called every frame while you drag a minimap button
+					-- so let's just wrap all those calls into a 0.5 second callback while caching the new value
+					if key == "minimapPos" then MinimapPos = val; app.CallbackHandlers.DelayedCallback(UpdateMinimapPosToSettings, 0.5) end
+				end
+			})
+			LDI:Register(ButtonName, o, db)
+			MinimapButton = LDI:GetMinimapButton(ButtonName)
+			-- clean up the extra regions created by LibDBIcon
+			local regions = { MinimapButton:GetRegions() }
+			for _, region in ipairs(regions) do
+				if region:IsObjectType("Texture") then
+					local tex = region:GetTexture()
+
+					-- Remove Blizzard’s default border/background
+					if tex == 136430 or tex == 136467 then
+						region:SetTexture(nil)
+						region:Hide()
+					end
+				end
+			end
+			MinimapButton.icon:SetAllPoints()
+			if MinimapButton.border then
+				MinimapButton.border:Hide()
+				MinimapButton.border = nil
+			end
+			MinimapButton:SetHighlightTexture(app.asset("MinimapHighlight_64x64"))
+			-- move the ATT button to highest level to match when created without LibDB smile
+			MinimapButton:SetFixedFrameStrata(false)
+			MinimapButton:SetFixedFrameLevel(false)
+			MinimapButton:SetFrameStrata("HIGH")
+			MinimapButton:Raise()
+			MinimapButton:SetFixedFrameLevel(true)
+			MinimapButton:SetFixedFrameStrata(true)
+			-- only assign if Minimap button was fully successful
+			UseLDI = LDI
+		end
+	end
+end
+app.AddEventHandler("OnLoad", function()
+	-- use a callback so that any error in registration does not propagate to the event sequencing
+	app.CallbackHandlers.Callback(RegisterDataBrokers)
+end)
+end

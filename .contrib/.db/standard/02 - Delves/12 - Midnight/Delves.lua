@@ -1,0 +1,1803 @@
+---------------------------------------------------
+--          D E L V E S      M O D U L E         --
+---------------------------------------------------
+
+--DELVES_MID_S3 = createHeader({
+--	readable = "Delves MID S3",
+--	icon = 1604168,
+--	text = {
+--		en = "Delves MID S3",
+--		-- TODO: de = "",
+--		es = "Profundidades MID T3",
+--		mx = "Abismos MID T3",
+--		-- TODO: fr = "",
+--		-- TODO: it = "",
+--		-- TODO: ko = "",
+--		-- TODO: pt = "",
+--		ru = "Вылазки MID 3 сезон",
+--		cn = "至暗之夜地下堡第三季",
+--		tw = "至暗之夜探究第三季",
+--	},
+--});
+local ALL_REGULAR_DELVES_MID = {
+	ATAL_AMAN,
+	COLLEGIATE_CALAMITY,
+	PARHELION_PLAZA,
+	SHADOWGUARD_POINT,
+	SUNKILLER_SANCTUM,
+	THE_DARKWAY,
+	THE_GRUDGE_PIT,
+	THE_GULF_OF_MEMORY,
+	THE_SHADOW_ENCLAVE,
+	--TORMENTS_RISE,
+	TWILIGHT_CRYPTS,
+	-- #if AFTER 12.1.0
+	GNARLDOR_ISLE,
+	THE_RING_OF_GLORY,
+	-- VENOMFALL_DEEPS,
+	-- #endif
+	-- #if AFTER 12.1.5
+	LABYRINTH_KINDOJAN
+	-- #endif
+};
+local ALL_THE_DELVES_MID = {
+	ATAL_AMAN,
+	COLLEGIATE_CALAMITY,
+	PARHELION_PLAZA,
+	SHADOWGUARD_POINT,
+	SUNKILLER_SANCTUM,
+	THE_DARKWAY,
+	THE_GRUDGE_PIT,
+	THE_GULF_OF_MEMORY,
+	THE_SHADOW_ENCLAVE,
+	TORMENTS_RISE,
+	TWILIGHT_CRYPTS,
+	-- #if AFTER 12.1.0
+	GNARLDOR_ISLE,
+	THE_RING_OF_GLORY,
+	VENOMFALL_DEEPS,
+	-- #endif
+	-- #if AFTER 12.1.5
+	LABYRINTH_KINDOJAN
+	-- #endif
+};
+local mapped = function(t)
+	if not t.maps then
+		t.maps = ALL_REGULAR_DELVES_MID
+	end
+	return t
+end
+root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	n(ACHIEVEMENTS, {
+		ach(63434, {	-- Buddy System VII: Valeera
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		ach(63435, {	-- Buddy System VIII: Valeera
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		ach(61722),	-- Curio Enthusiast: Midnight
+		ach(61723),	-- Curio Fanatic: Midnight
+		ach(61741),	-- Delve Loremaster: Midnight
+		ach(61707),	-- Delver of the Depths: Midnight
+		ach(61708),	-- Delver of the Depths II: Midnight
+		ach(61709),	-- Delver of the Depths III: Midnight
+		ach(61710),	-- Delver of the Depths IV: Midnight
+		ach(61906, {	-- Glory of the Midnight Delver
+			i(257199),	-- Giganto Manis (MOUNT!)
+		}),
+		ach(61720, {	-- Midnight Delver
+			["maps"] = ALL_REGULAR_DELVES_MID,
+			["sym"] = {{"meta_achievement",
+				61711,	-- Midnight Delver Damage Dealer
+				61714,	-- Midnight Delver Healer
+				61717,	-- Midnight Delver Tank
+			}},
+		}),
+		ach(61721, {	-- Midnight Delver II
+			["maps"] = ALL_REGULAR_DELVES_MID,
+			["sym"] = {{"meta_achievement",
+				61712,	-- Midnight Delver Damage Dealer II
+				61715,	-- Midnight Delver Healer II
+				61718,	-- Midnight Delver Tank II
+			}},
+			["groups"] = { i(FINERY_FUNDS) },
+		}),
+		ach(62206, {	-- Midnight Delver III
+			["maps"] = ALL_REGULAR_DELVES_MID,
+			["sym"] = {{"meta_achievement",
+				61713,	-- Midnight Delver Damage Dealer III
+				61716,	-- Midnight Delver Healer III
+				61719,	-- Midnight Delver Tank III
+			}},
+		}),
+		ach(61711, {	-- Midnight Delver Damage Dealer
+			["groups"] = {
+				crit(110876, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110891, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115836, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110889, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110886, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110892, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110890, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110888, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110893, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115848, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110887, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110894, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61712, {	-- Midnight Delver Damage Dealer II
+			["groups"] = {
+				crit(110897, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110901, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115840, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110899, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110895, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110902, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110900, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110898, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110903, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115852, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110896, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110904, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61713, {	-- Midnight Delver Damage Dealer III
+			["groups"] = {
+				crit(110908, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110912, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115844, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110910, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110905, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110913, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110911, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110909, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110914, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115856, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110906, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110915, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61714, {	-- Midnight Delver Healer
+			["groups"] = {
+				crit(110918, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110922, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115837, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110920, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110916, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110923, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110921, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110919, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110924, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115849, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110917, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110925, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61715, {	-- Midnight Delver Healer II
+			["groups"] = {
+				crit(110928, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110932, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115841, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110930, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110926, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110933, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110931, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110929, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110934, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115853, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110927, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110935, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61716, {	-- Midnight Delver Healer III
+			["groups"] = {
+				crit(110938, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110942, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115845, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110940, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110936, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110943, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110941, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110939, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110944, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115857, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110937, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110945, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61717, {	-- Midnight Delver Tank
+			["groups"] = {
+				crit(110948, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110952, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115838, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110950, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110946, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110953, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110951, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110949, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110954, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115850, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110947, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110955, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61718, {	-- Midnight Delver Tank II
+			["groups"] = {
+				crit(110958, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110962, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115842, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110960, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110956, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110963, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110961, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110959, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110964, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115854, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110957, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110965, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61719, {	-- Midnight Delver Tank III
+			["groups"] = {
+				crit(110968, {	-- Atal'Aman
+					["maps"] = { ATAL_AMAN },
+				}),
+				crit(110972, {	-- Collegiate Calamity
+					["maps"] = { COLLEGIATE_CALAMITY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115846, {	-- Gnarldor Isle
+					["maps"] = { GNARLDOR_ISLE },
+				}),
+				-- #endif
+				crit(110970, {	-- Parhelion Plaza
+					["maps"] = { PARHELION_PLAZA },
+				}),
+				crit(110966, {	-- Shadowguard Point
+					["maps"] = { SHADOWGUARD_POINT },
+				}),
+				crit(110973, {	-- Sunkiller Sanctum
+					["maps"] = { SUNKILLER_SANCTUM },
+				}),
+				crit(110971, {	-- The Darkway
+					["maps"] = { THE_DARKWAY },
+				}),
+				crit(110969, {	-- The Grudge Pit
+					["maps"] = { THE_GRUDGE_PIT },
+				}),
+				crit(110974, {	-- The Gulf of Memory
+					["maps"] = { THE_GULF_OF_MEMORY },
+				}),
+				-- #if AFTER 12.1.0
+				crit(115858, {	-- The Ring of Glory
+					["maps"] = { THE_RING_OF_GLORY },
+				}),
+				-- #endif
+				crit(110967, {	-- The Shadow Enclave
+					["maps"] = { THE_SHADOW_ENCLAVE },
+				}),
+				crit(110975, {	-- Twilight Crypts
+					["maps"] = { TWILIGHT_CRYPTS },
+				}),
+			},
+		}),
+		ach(61832),	-- Midnight Delves: Tier 1
+		ach(61835),	-- Midnight Delves: Tier 2
+		ach(61836),	-- Midnight Delves: Tier 3
+		ach(61734),	-- Midnight Delves: Endgame
+		ach(61901, {	-- Midnight: Leave No Treasure Unfound
+			title(691),	-- Treasure Seeker <Name>
+		}),
+	}),
+	n(DELVE_COMPLETION, {["symselector"]=SymSelector.MID_DelveCompletion}),
+	mapped(n(DELVE_COMPLETION, {
+		filter(BATTLE_PETS, {
+			i(262395, {	-- Hexed Bunny (PET!)
+				["providers"] = {
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 623258 },	-- Pilfered Trunk
+				},
+			}),
+			i(262396, {	-- Lost Star (PET!)
+				["providers"] = {
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584511 },	-- Nemesis Strongbox
+					{ "o", 584519 },	-- Heavy Trunk
+				},
+			}),
+			i(262392, {	-- Nibblesworth (PET!)
+				["providers"] = {
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584511 },	-- Nemesis Strongbox
+					{ "o", 623259 },	-- Pilfered Trunk
+				},
+			}),
+			i(262343, {	-- Treja'saka (PET!)
+				["providers"] = {
+					{ "o", 584514 },	-- Bountiful Coffer
+					{ "o", 581922 },	-- Hidden Trove
+				},
+			}),
+			i(262342, {	-- Spormilian (PET!)
+				["providers"] = {
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+				},
+			}),
+			i(262394, {	-- Ziorg'pharon (PET!)
+				["providers"] = {
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584512 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584508 },	-- Nemesis Strongbox
+				},
+			}),
+		}),
+		filter(CONSUMABLES, {
+		}),
+		filter(MISC, {
+			-- Blessings
+			i(264669),	-- Blessing of Potency
+			i(264670),	-- Blessing of Zeal
+			i(260913),	-- Crimson Blessing
+			i(260924),	-- Sentinel's Blessing
+			i(262389),	-- Veiled Blessing
+			--
+			i(254250),	-- Bountiful Coffer
+			i(257387),	-- Bountiful Heavy Trunk
+			i(262965),	-- Delver's Delight (CI!)
+			i(257386),	-- Heavy Trunk (Delve reward UI)
+			i(232371),	-- Companion Experience (Delver's Call reward)
+			i(263488),	-- Companion Experience (Delver's Call reward)
+			i(257383),	-- Companion Experience (Uncommon)
+			i(257384),	-- Companion Experience (Rare)
+			i(257382),	-- Companion Experience (Epic)
+			i(257380),	-- Player Experience (Uncommon)
+			i(257381),	-- Player Experience (Rare)
+			i(257379),	-- Player Experience (Epic)
+			i(268297, {	-- Rattling Bag o' Gold
+				["providers"] = {
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+					{ "o", 584517 },	-- Heavy Trunk
+					{ "o", 584519 },	-- Heavy Trunk
+					{ "o", 584512 },	-- Nemesis Strongbox
+					{ "o", 584509 },	-- Nemesis Strongbox
+					{ "o", 584508 },	-- Nemesis Strongbox
+					{ "o", 584511 },	-- Nemesis Strongbox
+				},
+			}),
+			i(265714),	-- Trovehunter's Bounty
+			-- Items and different things
+			i(262586, {	-- Primeval Arcane Remnant (QI!/QS!)
+				["providers"] = {
+					{ "o", 623258 },	-- Pilfered Trunk
+					{ "o", 584517 },	-- Heavy Trunk
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+				},
+			}),
+			currency(2803, {	-- Undercoin
+				["timeline"] = { REMOVED_13_0_0 },
+			}),
+		}),
+		filter(RECIPES, {
+			["providers"] = {
+				-- no Wowhead data to confirm these in Delves, only a few confirmed drops by word of mouth
+				-- added based on respective Item tooltips of what can contain Recipes in Delve UI
+				{ "o", 584518 },	-- Bountiful Heavy Trunk
+				{ "o", 584515 },	-- Bountiful Heavy Trunk
+				{ "o", 584517 },	-- Heavy Trunk
+				{ "o", 584519 },	-- Heavy Trunk
+			},
+			["groups"] = {
+				i(259366),	-- Design: Replica Haranir Mural (RECIPE!)
+				i(256718),	-- Design: Stabilizing Gemstone Bandolier (RECIPE!)
+				i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots (RECIPE!)
+				i(256738),	-- Formula: Enchant Helm - Empowered Hex of Leeching (RECIPE!)
+				i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance (RECIPE!)
+				i(256752),	-- Formula: Enchant Ring - Nature's Fury (RECIPE!)
+				i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace (RECIPE!)
+				i(256740),	-- Formula: Enchant Shoulders - Akil'zon's Swiftness (RECIPE!)
+				i(259370),	-- Formula: Rootflame Campfire (RECIPE!)
+				i(258126),	-- Pattern: Arcanoweave Cord (RECIPE!)
+				i(256637),	-- Pattern: Axe-Flingin' Bands (RECIPE!)
+				i(259365),	-- Pattern: Plush Haranir Leather Pillow (RECIPE!)
+				i(256638),	-- Pattern: Row Walker's Swiftgrips (RECIPE!)
+				i(258025),	-- Pattern: Sunfire Silk Lining (RECIPE!)
+				i(256650),	-- Pattern: World Tender's Rootslippers (RECIPE!)
+				i(247425),	-- Recipe: Riftstone (RECIPE!)
+				i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
+			},
+		}),
+		filter(COSMETIC, {
+			["providers"] = {
+				{ "o", 623259 },	-- Pilfered Trunk
+				{ "o", 623258 },	-- Pilfered Trunk
+				{ "o", 584518 },	-- Bountiful Heavy Trunk
+				{ "o", 584515 },	-- Bountiful Heavy Trunk
+				{ "o", 584517 },	-- Heavy Trunk
+				{ "o", 584519 },	-- Heavy Trunk
+				{ "o", 584512 },	-- Nemesis Strongbox
+				{ "o", 584511 },	-- Nemesis Strongbox
+				{ "o", 584508 },	-- Nemesis Strongbox
+				{ "o", 584509 },	-- Nemesis Strongbox
+			},
+			["groups"] = {
+				i(262983),	-- Archival Magnimace (COSMETIC!)
+				i(264852),	-- Bladed Twilight Spaulder (COSMETIC!)
+				i(276164, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corroded Patagia (COSMETIC!)
+				i(264847),	-- Dozing Vinepouch (COSMETIC!)
+				i(262992),	-- Myth Maker's Brush (COSMETIC!)
+				i(262970),	-- Ominous Tome (COSMETIC!)
+				i(263286),	-- Repurposed Fungarian Gong (COSMETIC!)
+				i(264848),	-- Sunlit Vinepouch (COSMETIC!)
+				i(264857),	-- Twilight Fanatic's Cowl (COSMETIC!)
+				i(264859),	-- Twilight Follower's Cowl (COSMETIC!)
+				i(262991),	-- Two Thousand and Two Nights (COSMETIC!)
+				i(264855),	-- Vilebranch Deathseer (COSMETIC!)
+				i(264854),	-- Vilebranch Soulseer (COSMETIC!)
+				i(263442),	-- Voidridden Domaneye (COSMETIC!)
+				i(264851),	-- Voidtouched Twilight Spaulder (COSMETIC!)
+			},
+		}),
+		n(DECOR, {
+			["providers"] = {
+				{ "o", 584518 },	-- Bountiful Heavy Trunk
+				{ "o", 584515 },	-- Bountiful Heavy Trunk
+				{ "o", 584517 },	-- Heavy Trunk
+				{ "o", 584519 },	-- Heavy Trunk
+				{ "o", 584512 },	-- Nemesis Strongbox
+				{ "o", 584511 },	-- Nemesis Strongbox
+				{ "o", 584508 },	-- Nemesis Strongbox
+				{ "o", 584509 },	-- Nemesis Strongbox
+				{ "o", 623259 },	-- Pilfered Trunk
+				{ "o", 623258 },	-- Pilfered Trunk
+			},
+			["groups"] = {
+				i(267080, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Blueflame Chandelier (DECOR!)
+				i(264329),	-- Amani Dining Table (DECOR!)
+				i(264330),	-- Amani Hanging Brazier (DECOR!)
+				i(267009),	-- Amani Training Dummy (DECOR!)
+				i(264258),	-- Blossoming Forge (DECOR!)
+				i(264342),	-- Cosmic Void Cache (DECOR!)
+				i(251967),	-- Fungarian Banner (DECOR!)
+				i(263036),	-- Hanging Dawnflower (DECOR!)
+				i(263042),	-- Rootlight Lamppost (DECOR!)
+				i(263233),	-- Sin'dorei Spinning Library (DECOR!)
+				i(248963, {["timeline"] = { ADDED_12_1_0 }}),	-- Spirit-Touched Amani Mask (DECOR!)
+				i(275855, {["timeline"] = { ADDED_12_1_0 }}),	-- Zul'Aman Swamp Palm Sprout (DECOR!)
+			},
+		}),
+		n(TREASURES, {
+			-- Currently ATT tooltips cannot distinguish one object from the other due to identical name
+			-- Distinguishing by color may be possible for some of the 'special' objects, but would need to be determined how to do it
+			o(584514, {	-- Bountiful Coffer
+				["provider"] = { "i", 254250 },	-- Bountiful Coffer
+				["cost"] = {{"c",RESTORED_COFFER_KEY,1}},	-- 1x Restored Coffer Key
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["groups"] = {
+					i(273000),	-- Corrosive Soul
+				},
+			}),
+			o(623258, {	-- Pilfered Trunk
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(584517, {	-- Heavy Trunk
+				["provider"] = { "i", 257386 },	-- Heavy Trunk
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(584515, {	-- Bountiful Heavy Trunk
+				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(658087, {	-- Abundantly Bountiful Heavy Trunk
+				-- ["provider"] = { "n", DUNDUN_NPC },	-- Dundun
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = { i(254983) },	-- Assassin's Subtle Tea
+			}),
+			o(623259, {	-- Pilfered Trunk
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(584519, {	-- Heavy Trunk
+				["provider"] = { "i", 257386 },	-- Heavy Trunk
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(584518, {	-- Bountiful Heavy Trunk
+				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["groups"] = {
+					i(262390),	-- Sporbie (PET!)
+				},
+			}),
+			o(658088, {	-- Abundantly Bountiful Heavy Trunk
+				-- ["provider"] = { "n", DUNDUN_NPC },	-- Dundun
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_1_0 },
+				["groups"] = { i(254983) },	-- Assassin's Subtle Tea
+			}),
+			o(584504, {	-- Sanctified Spoils
+				["provider"] = { "n", 256593 },	-- Sanctified Banner
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				["groups"] = { i(254983) },	-- Assassin's Subtle Tea
+			}),
+			o(584503, {	-- Grand Sanctified Spoils
+				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
+				["provider"] = { "n", 256593 },	-- Sanctified Banner
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				["sym"] = {{"select","itemID",
+					264971,	-- Annihilation Rod (COSMETIC!)
+					264970,	-- Oblivion's Edge (COSMETIC!)
+				}},
+				["groups"] = {
+					i(265368),	-- Twilight Destroyer (COSMETIC!)
+					i(265366),	-- Twilight Executioner (COSMETIC!)
+					i(265367),	-- Twilight Fang (COSMETIC!)
+					i(254983),	-- Assassin's Subtle Tea
+				},
+			}),
+			o(584512, {	-- Nemesis Strongbox (Poor)
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(584511, {	-- Nemesis Strongbox (Uncommon)
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(584509, {	-- Nemesis Strongbox (Rare)
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+			}),
+			o(584508, {	-- Nemesis Strongbox (Epic)
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["groups"] = {
+					i(254869),	-- Chunk of Companion Experience (Epic)
+					i(265366),	-- Twilight Executioner (COSMETIC!)
+				},
+			}),
+			o(581922, {	-- Hidden Trove
+				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				["providers"] = {
+					{ "i", 252415 },	-- Trovehunter's Bounty
+					{ "i", 265714 },	-- Trovehunter's Bounty (Delve UI)
+				},
+			}),
+			o(506498, {	-- Gilded Stash
+				["timeline"] = { ADDED_12_0_1_SEASONSTART },
+			}),
+			o(658855, {	-- Abundant Spoils
+				["timeline"] = { ADDED_12_1_0 },
+				-- contains a user-chosen option based on Dundun dialog (Decor/Marl/Undercoin/XP) so no reason to list specifically
+			}),
+		}),
+	})),
+	n(FACTIONS, {
+		faction(2744),	-- Valeera Sanguinar
+	}),
+	n(HIDDEN_QUESTS, {
+		hqt(92087),	-- Unlock Ability 1 - Level 2
+		hqt(92088),	-- Unlock Ability 2 - Level 3
+		hqt(92089),	-- Unlock Ability 3 - Level 4
+		hqt(92090),	-- Unlock Ability 4 - Level 5
+		hqt(92091),	-- Unlock Ability 5 - Level 6
+		hqt(92092),	-- Unlock Ability 6 - Level 7
+		hqt(92093),	-- Unlock Ability 7 - Level 8
+		hqt(92756),	-- Level 9
+		hqt(92758),	-- Level 10
+		hqt(92759),	-- Level 11
+		hqt(92760),	-- Level 12
+		hqt(92761),	-- Level 13
+		hqt(92762),	-- Level 14
+		hqt(92763),	-- Level 15
+		hqt(92764),	-- Level 16
+		hqt(92765),	-- Level 17
+		hqt(92766),	-- Level 18
+		hqt(92767),	-- Level 19
+		hqt(92768),	-- Level 20
+		hqt(92769),	-- Level 21
+		hqt(92770),	-- Level 22
+		hqt(92771),	-- Level 23
+		hqt(92772),	-- Level 24
+		hqt(92773),	-- Level 25
+		hqt(92774),	-- Level 26
+		hqt(92775),	-- Level 27
+		hqt(92776),	-- Level 28
+		hqt(92777),	-- Level 29
+		hqt(92778),	-- Level 30
+		hqt(92779),	-- Level 31
+		hqt(92780),	-- Level 32
+		hqt(92781),	-- Level 33
+		hqt(92782),	-- Level 34
+		hqt(92783),	-- Level 35
+		hqt(92784),	-- Level 36
+		hqt(92785),	-- Level 37
+		hqt(92786),	-- Level 38
+		hqt(92787),	-- Level 39
+		hqt(92788),	-- Level 40
+		hqt(92789),	-- Level 41
+		hqt(92790),	-- Level 42
+		hqt(92791),	-- Level 43
+		hqt(92792),	-- Level 44
+		hqt(92793),	-- Level 45
+		hqt(92794, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 46
+		hqt(92795, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 47
+		hqt(92796, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 48
+		hqt(92797, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 49
+		hqt(92798, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 50
+		hqt(92799, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 51
+		hqt(92800, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 52
+		hqt(92801, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 53
+		hqt(92803, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 54
+		hqt(92804, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 55
+		hqt(92805, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 56
+		hqt(92806, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 57
+		hqt(92807, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 58
+		hqt(92808, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 59
+		hqt(92809, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 60
+		hqt(95856, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 61
+		hqt(95857, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 62
+		hqt(95858, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 63
+		hqt(95859, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 64
+		hqt(95860, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 65
+		hqt(95861, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 66
+		hqt(95862, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 67
+		hqt(95863, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 68
+		hqt(95864, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 69
+		hqt(95865, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 70
+		hqt(95866, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 71
+		hqt(95867, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 72
+		hqt(95868, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 73
+		hqt(95869, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 74
+		hqt(95870, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 75
+		hqt(95871, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 76
+		hqt(95872, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 77
+		hqt(95873, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 78
+		hqt(95874, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 79
+		hqt(95875, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 80
+	}),
+	n(MAILBOX, {
+		i(258738, {	-- A Cordial Invitation (QS!)
+			["description"] = "Mailed to you after your first death in a delve.",
+		}),
+	}),
+	n(QUESTS, {
+		q(93784, {	-- A Gnawing Void of Curiosity
+			["provider"] = { "i", 262586 },	-- Primeval Arcane Remnant (QI!/QS!)
+			["isWeekly"] = true,
+		}),
+		q(93453, {	-- A Grave Concern
+			["providers"] = {
+				{ "i", 258738 },	-- A Cordial Invitation (QI!/QS!)
+				{ "n", 254616 },	-- Nelthius Shadestone <Master Engraver>
+			},
+			["coord"] = { 52.7, 77.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["groups"] = {
+				i(262966, {	-- Budget Friendly (CI!)
+					["timeline"] = { REMOVED_12_1_0 },	-- The cosmetic remains, but the item was removed and its HQT can no longer be completed
+				}),
+			},
+		}),
+	}),
+	n(RARES, {
+		-- TODO: Alex - I don't think there any point to source them but in case there will be achievement for it or whatever
+		--n(253257),	-- Abandoned Sentinel
+		--n(253249),	-- Clever Saptor
+		--n(207482),	-- Invasive Sporecap // alpha
+		--n(253304),	-- Paingolin
+		--n(253267),	-- Wailing Spirit
+	}),
+	n(SPECIAL, {
+		o(609862, {	-- Lordaeron's Loss (Gravestone)
+			["lore"] = "Died in Lordaeron or Undercity.",	-- This is visible only AFTER the acquisition.
+			["coord"] = { 52.6, 77.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["maps"] = { TIRISFAL_GLADES },
+			["timeline"] = { ADDED_12_1_0 },
+			["groups"] = {
+				ach(61456, {	-- Die in Lordaeron or Undercity (Hidden Achievement Trigger)
+					["description"] = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone.",
+				}),
+			},
+		}),
+	}),
+	mapped(n(SPECIAL, {
+		n(256593, {	-- Sanctified Banner
+			["coords"] = {
+				-- Atal'Aman
+				{ 40.57, 57.84, ATAL_AMAN },
+				{ 57.38, 83.09, ATAL_AMAN },
+				{ 43.12, 65.28, ATAL_AMAN },
+				{ 44.41, 46.27, ATAL_AMAN },
+				-- Collegiate Calamity
+				{ 81.36, 39.86, COLLEGIATE_CALAMITY },
+				{ 46.60, 84.29, COLLEGIATE_CALAMITY },
+				{ 30.00, 22.00, COLLEGIATE_CALAMITY },
+				-- Parhelion Plaza
+				{ 24.13, 88.14, PARHELION_PLAZA },
+				{ 64.70, 63.50, PARHELION_PLAZA },
+				{ 23.03, 15.09, PARHELION_PLAZA },
+				-- Shadowguard Point
+				{ 49.47, 55.11, SHADOWGUARD_POINT },
+				{ 57.17, 33.16, SHADOWGUARD_POINT },
+				{ 37.98, 44.75, SHADOWGUARD_POINT },
+				-- Sunkiller Sanctum
+				{ 65.58, 38.55, SUNKILLER_SANCTUM },
+				{ 43.23, 46.23, SUNKILLER_SANCTUM },
+				{ 53.35, 37.61, SUNKILLER_SANCTUM },
+				-- The Darkway
+				{ 43.4, 49.3, THE_DARKWAY },
+				{ 49.61, 37.52, THE_DARKWAY },
+				{ 53.66, 49.89, THE_DARKWAY },
+				-- The Gulf of Memory
+				{ 56.51, 46.52, THE_GULF_OF_MEMORY },
+				{ 42.00, 23.90, THE_GULF_OF_MEMORY },
+				-- The Grudge Pit
+				{ 55.22, 64.39, THE_GRUDGE_PIT },
+				{ 43.30, 22.68, THE_GRUDGE_PIT },
+				-- The Shadow Enclave
+				{ 46.00, 22.00, THE_SHADOW_ENCLAVE },
+				{ 47.94, 57.33, THE_SHADOW_ENCLAVE },
+				-- Twilight Crypts
+				{ 45.1, 54.8, 2504 },
+				{ 39.1, 84.1, 2504 },
+				{ 39.45, 84.72, TWILIGHT_CRYPTS },
+				{ 20.85, 62.86, TWILIGHT_CRYPTS },
+			},
+		}),
+	})),
+	mapped(n(TREASURES, {
+		o(584752, {	-- Mislaid Curiosity
+			["description"] = "Contains Chunk of Companion Experience tokens.",
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
+			["groups"] = {
+				-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff
+				-- Alpha items (NYI?)
+				--i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
+				--i(260910),	-- Boon of Vitality (Rare) // alpha
+				i(254756),	-- Chunk of Companion Experience (Uncommon)
+				i(254757),	-- Chunk of Companion Experience (Rare)
+				i(254748),	-- Chunk of Companion Experience (Epic)
+				-- Boons (Renown 1)
+				i(260911),	-- Boon of Fortitude (Rare)
+				i(267240),	-- Boon of Fortitude (Epic)
+				i(260878),	-- Boon of Possibilities (Rare)
+				i(267239),	-- Boon of Possibilities (Epic)
+				i(260882),	-- Boon of Potency (Rare)
+				i(267238),	-- Boon of Potency (Epic)
+				i(260879),	-- Boon of Power (Rare)
+				i(267237),	-- Boon of Power (Epic)
+				i(260884),	-- Boon of Temperance (Rare)
+				i(267241),	-- Boon of Temperance (Epic)
+				i(267647),	-- Boon of Vigor (Uncommon)
+				i(267649),	-- Boon of Vigor (Rare)
+				i(267648),	-- Boon of Vigor (Epic)
+			},
+		}),
+	})),
+	n(VENDORS, {
+		n(242398, {	-- Naleidea Rivergleam
+			["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["groups"] = {
+				-- TODO: Some items looks like seasoned (e.g. keys, bags, but sorted them out later on if needed)
+				-- TODO: not sorted via name but as listed order in vendor
+				filter(BATTLE_PETS, {
+					i(262393, {	-- Kreepah'zoyd (PET!)
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
+					}),
+				}),
+				filter(COSMETIC, {
+					iensemble(263577, {	-- Arsenal: Rootlands Weaponry
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263575, {	-- Ensemble: Elder Moss Outfit
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263574, {	-- Ensemble: Osseoclad's Wear (COSMETIC!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263576, {	-- Ensemble: Rampant Thorn Armor
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					iensemble(263520, {	-- Ensemble: Sprawling Garb (COSMETIC!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					i(264849, {	-- Dewy Vinepouch (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					-- #if BEFORE 12.1.0
+					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					-- #endif
+					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					i(276165, {	-- Ophidian Patagia (COSMETIC!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					-- #if BEFORE 12.1.0
+					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					-- #endif
+					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
+					i(264856, {	-- Vilebranch Lifeseer (COSMETIC!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+				}),
+				n(DECOR, {
+					i(246779, {	-- Hanging Mana Brazier (DECOR!)
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(275853, {	-- Zul'Aman Burning Pinecone (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(275857, {	-- Zul'Aman Creeping Pangoroot (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+				}),
+				filter(MISC, {
+					i(280458, {	-- Delver's Corroded Pouch of Undercoin
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "i", 273000, 1 } },	-- 1x Corrosive Soul
+						["groups"] = { currency(UNDERCOIN) },
+					}),
+					i(264652, {	-- Delver's Pouch of Voidlight Marl
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					i(244193, {	-- L00T RAID-R Mini
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
+					}),
+					-- #if BEFORE 12.1.0
+					i(262963, {	-- Pious Memorial (CI!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					-- #endif
+					i(263188, {	-- Restored Coffer Key
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					i(263191, {	-- Restored Coffer Key
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					i(233061, {	-- Rock-in-a-Bottle
+						["cost"] = { { "c", UNDERCOIN, 250 } },
+					}),
+					i(275910, {	-- Scalebound Herald's Flute
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #if AFTER 12.1.0
+					i(262951, {	-- Sin'dorei Gravestone (CI!)
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+					-- #endif
+					i(248755, {	-- Star-in-a-Jar
+						["cost"] = { { "c", UNDERCOIN, 250 } },
+					}),
+					i(279289, {	-- Well Urned Rest (CI!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", UNDERCOIN, 2000 } },
+					}),
+				}),
+				filter(MOUNTS, {
+					i(262502, {	-- Elven Arcane Guardian (MOUNT!)
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
+					}),
+				}),
+				filter(TOYS, {
+					-- #if BEFORE 12.1.0
+					i(262431, {	-- Bouncy Mushroom (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #endif
+					i(267291, {	-- Coffer Key Glue (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 250 } },
+					}),
+					-- #if AFTER 12.1.0
+					i(265100, {	-- Corewarden's Hearthstone (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 10000 } },
+					}),
+					i(264414, {	-- Midnight Delver's Flare Gun (TOY!)
+						["cost"] = { { "c", UNDERCOIN, 5000 } },
+					}),
+					-- #endif
+				}),
+			},
+		}),
+		n(242399, {	-- Telemancer Astrandis
+			["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["groups"] = {
+				n(DECOR, {
+					i(264175, {	-- Amani Strongbox (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(267207, {	-- Amani Territorial Totem (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+					i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(264007, {	-- Corewarden's Spoils (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(265386, {	-- Fortified Amani Awning (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+					i(263994, {	-- Fungal Chest (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(264008, {	-- Root-Wrapped Reliquary (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(263996, {	-- Twilight Tabernacle (DECOR!)
+						["cost"] = {
+							-- #if AFTER 12.1.0
+							{ "c", VOIDLIGHT_MARL, 500 },
+							-- #else
+							{ "c", VOIDLIGHT_MARL, 250 },
+							-- #endif
+						},
+					}),
+					i(272360, {	-- Ula'tek Ritual Stone (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+					i(265033, {	-- Zul'Aman Brazier Post (DECOR!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+					}),
+				}),
+				-- #if AFTER 12.1.0
+				filter(COSMETIC, {
+					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+					}),
+					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+					}),
+					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+					}),
+					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+					}),
+				}),
+				-- #endif
+				filter(MISC, {
+					i(276536, {	-- Corrosive Reticule
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+					i(275936, {	-- Delve-O-Bot 7001: Midnight Software Update Chip (CI!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+					i(275986, {	-- Delver's Cosmetic Surprise Bag (CI!)
+						["timeline"] = { ADDED_12_1_0 },
+					}),
+					-- #if AFTER 12.1.0
+					i(262963, {	-- Pious Memorial (CI!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 2000 } },
+					}),
+					-- #endif
+				}),
+				filter(MOUNTS, {
+					i(276162, {	-- Corroded Soul Crusher (MOUNT!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+				}),
+				filter(TOYS, {
+					-- #if AFTER 12.1.0
+					i(262431, {	-- Bouncy Mushroom (TOY!)
+						["cost"] = { { "c", VOIDLIGHT_MARL, 5000 } },
+					}),
+					-- #endif
+					i(276189, {	-- Effigy of Dundun (TOY!)
+						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+				}),
+			},
+		}),
+	}),
+	m(ATAL_AMAN, {
+		["icon"] = 7389674,
+		["coord"] = { 63.8, 80.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61863),	-- Atal'Aman Discoveries
+				ach(61729),	-- Atal'Aman Stories
+			}),
+			n(QUESTS, {
+				q(93409, {	-- Delver's Call: Atal'Aman
+					["provider"] = { "n", 254726 },	-- Fallen Amani Scout
+					["coords"] = {
+						{ 24.9, 43.3, ATAL_AMAN },
+						{ 39.8, 38.4, MAP.MIDNIGHT.ZULAMAN },
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(617852, {	-- Sturdy Chest
+					["coord"] = { 53.1, 57.9, ATAL_AMAN },
+					["questID"] = 94000,
+				}),
+				o(618270, {	-- Sturdy Chest
+					["coord"] = { 48.3, 50.5, ATAL_AMAN },
+					["questID"] = 94014,
+					["groups"] = { i(252265) },	-- Hexed Potatoad Mucus (TOY!)
+				}),
+				o(618290, {	-- Sturdy Chest
+					["coord"] = { 53.1, 65.3, ATAL_AMAN },
+					["questID"] = 94038,
+				}),
+			}),
+		},
+	}),
+	m(COLLEGIATE_CALAMITY, {
+		["icon"] = 7137586,
+		["coord"] = { 40.5, 53.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		["maps"] = {
+			2577,	-- Thalassian Library
+			2578,	-- Thalassian University
+		},
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61894),	-- Collegiate Calamity Discoveries
+				ach(61726),	-- Collegiate Calamity Stories
+			}),
+			n(QUESTS, {
+				q(93384, {	-- Delver's Call: Collegiate Calamity
+					["provider"] = { "o", 612038 },	-- Agitated Tome
+					["coords"] = {
+						{ 41.6, 61.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 59.5, 60.1, 2577 },	-- Thalassian Library
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(618274, {	-- Sturdy Chest
+					["coord"] = { 31.0, 12.5, COLLEGIATE_CALAMITY },
+					["questID"] = 94018,
+				}),
+				o(618285, {	-- Sturdy Chest
+					["coord"] = { 81.3, 32.0, COLLEGIATE_CALAMITY },	-- TODO: could be off
+					["questID"] = 94029,
+				}),
+				o(618286, {	-- Sturdy Chest
+					["coord"] = { 29.3, 54.7, COLLEGIATE_CALAMITY },
+					["questID"] = 94030,
+				}),
+			}),
+		},
+	}),
+	m(GNARLDOR_ISLE, {
+		["icon"] = 2065590,
+		["coord"] = { 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(63170),	-- Gnarldor Isle Discoveries
+				ach(63437),	-- Gnarldor Isle Stories
+			}),
+			filter(MISC, {
+				i(276286),	-- Gnarled Heart
+				-- Story Variant: Olds and Ends
+				i(271997),	-- Abused Relic
+				i(271996),	-- Crumpled Scroll
+				i(271998),	-- Discarded Potion
+				-- Story Variant: Speaking Their Language
+				i(276206),	-- Leagally Sourced Cannon Shot
+				i(276205),	-- Legitimate Shipment of Swivel Guns
+				i(276198),	-- Shellman's 195
+				i(276186),	-- Totally Not Stolen Powder
+			}),
+			n(TREASURES, {
+				o(655978, {	-- Sturdy Chest
+					["coord"] = { 60.4, 68.2, GNARLDOR_ISLE },
+					["questID"] = 96802,
+					["groups"] = { i(262496) },	-- Delver's Arcane Golem (MOUNT!)
+				}),
+				o(655980, {	-- Sturdy Chest
+					["coord"] = { 52.4, 40.9, GNARLDOR_ISLE },
+					["questID"] = 96804,
+				}),
+				o(655981, {	-- Sturdy Chest
+					["coord"] = { 28.7, 41.7, GNARLDOR_ISLE },
+					["questID"] = 96805,
+				}),
+			}),
+		},
+	}),
+	m(PARHELION_PLAZA, {
+		["icon"] = 252996,
+		["coord"] = { 47.5, 41.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61893),	-- Parhelion Plaza Discoveries
+				ach(61725),	-- Parhelion Plaza Stories
+			}),
+			n(QUESTS, {
+				q(93386, {	-- Delver's Call: Parhelion Plaza
+					["provider"] = { "o", 612894 },	-- Parhelion Plaza
+					["coords"] = {
+						{ 52.3, 77.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 74.5, 28.0, PARHELION_PLAZA },
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(618275, {	-- Sturdy Chest
+					["coord"] = { 9.7, 50.3, PARHELION_PLAZA },
+					["questID"] = 94019,
+				}),
+				o(618113, {	-- Sturdy Chest
+					["coord"] = { 23.4, 59.3, PARHELION_PLAZA },
+					["questID"] = 94015,
+					["groups"] = { i(262964) },	-- Death's Hope (CI!)
+				}),
+				o(618287, {	-- Sturdy Chest
+					["coord"] = { 40.9, 86.8, PARHELION_PLAZA },
+					["questID"] = 94033,
+				}),
+			}),
+		},
+	}),
+	m(SHADOWGUARD_POINT, {
+		["icon"] = 6999168,
+		["coord"] = { 37.3, 48.3, MAP.MIDNIGHT.VOIDSTORM },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61900),	-- Shadowguard Point Discoveries
+				ach(61733),	-- Shadowguard Point Stories
+			}),
+			n(QUESTS, {
+				q(93428, {	-- Delver's Call: Shadowguard Point
+					["provider"] = { "o", 612364 },	-- Shadowguard Point (TODO: missing open world objectID)
+					["coords"] = {
+						{ 47.6, 79.3, SHADOWGUARD_POINT },
+						{ 37.6, 51.9, MAP.MIDNIGHT.VOIDSTORM },
+					},
+				}),
+				filter(MISC, {
+					o(570235, {	-- Worm Bait
+						["coord"] = { 51.5, 56.9, SHADOWGUARD_POINT },
+						["groups"] = { i(250096) },	-- Worm Bait (QI!)
+					}),
+				}),
+			}),
+			n(TREASURES, {
+				o(618273, {	-- Sturdy Chest
+					["coord"] = { 41.8, 53.7, SHADOWGUARD_POINT },
+					["questID"] = 94017,
+					["groups"] = {
+						i(245526),	-- Bloodmarked Phasebound Visor (COSMETIC!)
+					},
+				}),
+				o(618281, {	-- Sturdy Chest
+					["coord"] = { 58.2, 41.5, SHADOWGUARD_POINT },
+					["questID"] = 94025,
+				}),
+				o(618295, {	-- Sturdy Chest
+					["coord"] = { 58.6, 60.4, SHADOWGUARD_POINT },
+					["questID"] = 94044,
+				}),
+			}),
+		},
+	}),
+	m(SUNKILLER_SANCTUM, {
+		["icon"] = 7137506,
+		["coord"] = { 54.8, 47.0, MAP.MIDNIGHT.VOIDSTORM },
+		["maps"] = { 2571 },	-- Lower Sanctum
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61899),	-- Sunkiller Sanctum Discoveries
+				ach(61732),	-- Sunkiller Sanctum Stories
+			}),
+			n(FLIGHT_PATHS, {
+				fp(3169, {	-- Base Node
+					--["coord"] = {},	-- TODO: Add coord
+				}),
+				fp(3172, {	-- Exposed Vein
+					--["coord"] = {},	-- TODO: Add coord
+				}),
+				fp(3173, {	-- Focal Point
+					--["coord"] = {},	-- TODO: Add coord
+				}),
+				fp(3174, {	-- Forge of Secrets
+					--["coord"] = {},	-- TODO: Add coord
+				}),
+			}),
+			n(QUESTS, {
+				q(93427, {	-- Delver's Call: Sunkiller Sanctum
+					["provider"] = { "o", 612354 },	-- Sunkiller Sanctum
+					["coords"] = {
+						{ 42.7, 70.8, MAP.MIDNIGHT.VOIDSTORM },
+						{ 63.4, 34.8, SUNKILLER_SANCTUM },
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(618280, {	-- Sturdy Chest
+					["coord"] = { 60.1, 40.8, 2571 },
+					["questID"] = 94024,
+				}),
+				o(618294, {	-- Sturdy Chest
+					["coord"] = { 49.7, 50.6, 2571 },
+					["questID"] = 94043,
+				}),
+				o(618293, {	-- Sturdy Chest
+					["coord"] = { 38.1, 49.0, SUNKILLER_SANCTUM },
+					["questID"] = 94042,
+				}),
+			}),
+		},
+	}),
+	m(THE_DARKWAY, {
+		["icon"] = 132299,
+		["coord"] = { 39.3, 31.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61895),	-- The Darkway Discoveries
+				ach(61728),	-- The Darkway Stories
+			}),
+			n(QUESTS, {
+				q(93385, {	-- Delver's Call: The Darkway
+					["provider"] = { "o", 612039 },	-- The Darkway
+					["coords"] = {
+						{ 52.1, 78.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+						{ 49.1, 18.6, THE_DARKWAY },
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(618283, {	-- Sturdy Chest
+					["coord"] = { 53.0, 43.1, THE_DARKWAY },
+					["questID"] = 94026,
+				}),
+				o(618284, {	-- Sturdy Chest
+					["coord"] = { 41.6, 48.2, THE_DARKWAY },
+					["questID"] = 94027,
+				}),
+				o(618296, {	-- Sturdy Chest
+					["coord"] = { 45.6, 45.4, THE_DARKWAY },
+					["questID"] = 94045,
+				}),
+			}),
+		},
+	}),
+	m(THE_GULF_OF_MEMORY, {
+		["icon"] = 7355375,
+		["coord"] = { 36.6, 49.1, MAP.MIDNIGHT.HARANDAR },
+		["maps"] = { 2575 },	-- Lower Rootway
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61898),	-- The Gulf of Memory Discoveries
+				ach(61731),	-- The Gulf of Memory Stories
+			}),
+			n(QUESTS, {
+				q(93416, {	-- Delver's Call: The Gulf of Memory
+					["provider"] = { "o", 612259 },	-- The Gulf of Memory
+					["coords"] = {
+						{ 50.8, 17.8, THE_GULF_OF_MEMORY },
+						{ 51.3, 16.6, THE_GULF_OF_MEMORY },
+						{ 52.9, 51.7, MAP.MIDNIGHT.HARANDAR },
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(618278, {	-- Sturdy Chest
+					["coord"] = { 54.3, 25.2, THE_GULF_OF_MEMORY },
+					["questID"] = 94023,
+				}),
+				o(618292, {	-- Sturdy Chest
+					["coord"] = { 55.5, 26.2, THE_GULF_OF_MEMORY },
+					["questID"] = 94041,
+				}),
+				o(618272, {	-- Sturdy Chest
+					["coord"] = { 39.8, 26.6, THE_GULF_OF_MEMORY },
+					["questID"] = 94016,
+					["groups"] = { i(264805) },	-- Brann-O-Vision 3000 (TOY!)
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(255826, {	-- Mysterious Skyshards
+					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
+				}),
+			}),
+		},
+	}),
+	m(THE_GRUDGE_PIT, {
+		["icon"] = 5789324,
+		["coord"] = { 71.0, 65.6, MAP.MIDNIGHT.HARANDAR },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61897),	-- The Grudge Pit Discoveries
+				ach(61724),	-- The Grudge Pit Stories
+			}),
+			filter(MISC, {
+				o_repeated({
+					i(247237),	-- Mold Samples
+					o(558184),	-- Decaying Fighter
+					o(563491),	-- Moldy Chunks
+				}),
+			}),
+			n(QUESTS, {
+				q(93421, {	-- Delver's Call: The Grudge Pit
+					["provider"] = { "o", 612264 },	-- The Grudge Pit
+					["coords"] = {
+						{ 39.2, 42.9, THE_GRUDGE_PIT },
+						{ 71.2, 52.1, MAP.MIDNIGHT.HARANDAR },
+					},
+				}),
+			}),
+			n(TREASURES, {
+				o(618291, {	-- Sturdy Chest
+					["coord"] = { 37.6, 27.6, THE_GRUDGE_PIT },
+					["questID"] = 94039,
+				}),
+				o(618279, {	-- Sturdy Chest
+					["coord"] = { 69.9, 31.6, THE_GRUDGE_PIT },
+					["questID"] = 94022,
+				}),
+				o(618277, {	-- Sturdy Chest
+					["coord"] = { 67.6, 59.5, THE_GRUDGE_PIT },
+					["questID"] = 94021,
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(255826, {	-- Mysterious Skyshards
+					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
+				}),
+			}),
+		},
+	}),
+	m(THE_RING_OF_GLORY, {
+		["icon"] = 7876617,
+		["coord"] = { 71.2, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(63171),	-- The Ring of Glory Discoveries
+				ach(63436),	-- The Ring of Glory Stories
+			}),
+			n(TREASURES, {
+				o(655979, {	-- Sturdy Chest
+					["coord"] = { 25.2, 73.7, THE_RING_OF_GLORY },
+					["questID"] = 96803,
+				}),
+				o(655982, {	-- Sturdy Chest
+					["coord"] = { 48.6, 94.9, THE_RING_OF_GLORY },
+					["questID"] = 96806,
+				}),
+				o(655983, {	-- Sturdy Chest
+					["coord"] = { 44.1, 22.7, THE_RING_OF_GLORY },
+					["questID"] = 96807,
+				}),
+			}),
+		},
+	}),
+	m(THE_SHADOW_ENCLAVE, {
+		["icon"] = 132291,
+		["coord"] = { 45.4, 85.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61892),	-- The Shadow Enclave Discoveries
+				ach(61727),	-- The Shadow Enclave Stories
+			}),
+			n(QUESTS, {
+				q(93372, {	-- Delver's Call: Shadow Enclave
+					["provider"] = { "o", 611933 },	-- The Shadow Enclave
+					["coords"] = {
+						{ 29.2, 73.6, THE_SHADOW_ENCLAVE },
+						{ 50.8, 40.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+					},
+				}),
+				filter(MISC, {
+					i(263368),	-- Armageddon and You - A Beginner's Guide to Thriving in the Apocalypse
+					i(263361),	-- Chicken Soup for the Soulless
+					i(263354),	-- Filling the Void in Your Heart
+					i(263350),	-- Harbinger Fan Fiction
+					i(263379),	-- Personal Advertising Platform
+					i(263348),	-- Purple Is The New Black
+					i(263380),	-- Recruitment Pamphlets
+					i(263382),	-- Twilight Material
+					i(263377),	-- Xal-a-Pal
+					i(263381),	-- Xal'atath Wall Scrolls
+					i(263373),	-- You Can't Believe It's Not Void
+				}),
+			}),
+			n(TREASURES, {
+				o(618111, {	-- Sturdy Chest
+					["coord"] = { 54.7, 48.5, THE_SHADOW_ENCLAVE },
+					["questID"] = 94002,
+				}),
+				o(617855, {	-- Sturdy Chest
+					["coord"] = { 54.7, 85.0, THE_SHADOW_ENCLAVE },
+					["questID"] = 94001,
+				}),
+				o(618112, {	-- Sturdy Chest
+					["coord"] = { 56.0, 34.6, THE_SHADOW_ENCLAVE },
+					["questID"] = 94028,
+				}),
+			}),
+		},
+	}),
+	m(TWILIGHT_CRYPTS, {
+		["icon"] = 1373907,
+		["coord"] = { 25.4, 84.0, MAP.MIDNIGHT.ZULAMAN },
+		["maps"] = { 2504 },	-- Twilight Crypts
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(61896),	-- Twilight Crypts Discoveries
+				ach(61730),	-- Twilight Crypts Stories
+			}),
+			n(QUESTS, {
+				q(93410, {	-- Delver's Call: Twilight Crypts
+					["provider"] = { "o", 612242 },	-- Twilight Crypts
+					["coords"] = {
+						{ 47.2, 39.6, TWILIGHT_CRYPTS },
+						{ 48.2, 38.1, TWILIGHT_CRYPTS },
+						{ 43.7, 67.3, MAP.MIDNIGHT.ZULAMAN },
+					},
+				}),
+				q(94909, {	-- Blessings of Pestilence (TODO: unsure if it exist only here)
+					["qs"] = 266438,	-- Idol of Pestilence (QS!)
+				}),
+			}),
+			n(TREASURES, {
+				o(618289, {	-- Sturdy Chest
+					["coord"] = { 46.9, 49.9, 2504 },
+					["questID"] = 94037,
+				}),
+				o(618276, {	-- Sturdy Chest
+					["coord"] = { 57.5, 84.5, 2504 },
+					["questID"] = 94020,
+				}),
+				o(618288, {	-- Sturdy Chest
+					["coord"] = { 21.7, 36.2, 2504 },
+					["questID"] = 94034,
+				}),
+			}),
+			n(REWARDS, {
+				i(266438),	-- Idol of Pestilence (QS!)
+			}),
+		},
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(DELVES, bubbleDownFiltered({ ["timeline"] = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_questID,{
+		n(BOUNTIFUL, sharedData({
+			["isDaily"] = true,
+		}, {
+			q(91188, name(HEADERS.Map, ATAL_AMAN)),	-- Atal'Aman
+			q(91186, name(HEADERS.Map, COLLEGIATE_CALAMITY)),	-- Collegiate Calamity
+			q(91189, name(HEADERS.Map, THE_SHADOW_ENCLAVE)),	-- Shadow Enclave
+			q(91184, name(HEADERS.Map, SHADOWGUARD_POINT)),	-- Shadowguard Point
+			q(91183, name(HEADERS.Map, SUNKILLER_SANCTUM)),	-- Sunkiller Sanctum
+			q(91185, name(HEADERS.Map, THE_GRUDGE_PIT)),	-- The Grudge Pit
+			q(91187, name(HEADERS.Map, THE_GULF_OF_MEMORY)),	-- The Gulf of Memory
+			q(91190, name(HEADERS.Map, TWILIGHT_CRYPTS)),	-- Twilight Crypts
+			q(92444, name(HEADERS.Map, THE_DARKWAY)),	-- The Darkway
+			q(91182, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
+		})),
+		q(93819, name(HEADERS.Faction, FACTION_AMANI_TRIBE, {isWeekly=true})),	-- Amani Rep
+		q(93820, name(HEADERS.Faction, FACTION_THE_SINGULARITY, {isWeekly=true})),	-- The Singularity Rep
+		q(93821, name(HEADERS.Faction, FACTION_SILVERMOON_COURT, {isWeekly=true})),	-- Silvermoon Court Rep
+		q(93822, name(HEADERS.Faction, FACTION_HARATI, {isWeekly=true})),	-- Hara'ti Rep
+		q(93935, {isWeekly=true}),	-- 1st weekly bonus Hero item from Bountiful chest
+		q(93936, {isWeekly=true}),	-- 2nd weekly bonus Hero item from Bountiful chest
+		q(93937, {isWeekly=true}),	-- 3rd weekly bonus Hero item from Bountiful chest
+	})),
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(DELVES, bubbleDownFiltered({ ["timeline"] = { ADDED_12_1_0 } },FILTERFUNC_questID,{
+		n(BOUNTIFUL, sharedData({
+			["isDaily"] = true,
+		}, {
+			q(95715, name(HEADERS.Map, GNARLDOR_ISLE)),	-- Gnarldor Isle
+			q(95716, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
+			q(97064, name(HEADERS.Object, 658087, {isWeekly=true})),	-- Abundantly Bountiful Heavy Trunk spwaned
+			q(97628),	-- Looted Afflicted Soul
+			q(97637),	-- Looted Tormented Soul
+			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
+		})),
+		q(99222, name(HEADERS.Faction, FACTION_ZULJARRAS_FORCES, {isWeekly=true})),	-- Zul'Jarra's Forces Rep
+	})),
+}));

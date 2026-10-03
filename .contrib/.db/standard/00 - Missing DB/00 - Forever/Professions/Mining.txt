@@ -1,0 +1,28 @@
+1.60.1.69876
+r(1230161),	-- Lodestone
+r(1235230),	-- Mining
+r(1240951),	-- Mining
+r(1240962),	-- Mining
+r(1240973),	-- Mining
+r(1240986),	-- Mining
+r(1249637),	-- Smelt Azerothium
+r(1262975),	-- Rock Garden
+r(1263071),	-- Molten Foundry
+r(1306126),	-- Smelt Heavy Thorium
+
+
+
+
+Missing in Mining
+
+1.60.1.69876
+r(1230161),	-- Lodestone
+r(1235230),	-- Mining
+r(1240951),	-- Mining
+r(1240962),	-- Mining
+r(1240973),	-- Mining
+r(1240986),	-- Mining
+r(1249637),	-- Smelt Azerothium
+r(1262975),	-- Rock Garden
+r(1263071),	-- Molten Foundry
+r(1306126),	-- Smelt Heavy Thorium

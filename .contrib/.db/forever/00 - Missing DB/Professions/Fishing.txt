@@ -1,0 +1,12 @@
+1.60.1.69876
+r(43308),	-- Find Fish
+r(1240948),	-- Fishing
+r(1240959),	-- Fishing
+r(1240970),	-- Fishing
+r(1240983),	-- Fishing
+r(1262990),	-- Fishing Rack
+r(1262998),	-- Fishing Hut
+r(1278067),	-- Bait and Tackle
+
+
+Nothing is Missing in Fishing! Good Work!

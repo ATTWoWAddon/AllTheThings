@@ -1,0 +1,295 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+	m(MAP.MIDNIGHT.VOIDSTORM, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(COMMON_BOSS_DROPS, {
+				["isDaily"] = IGNORED_VALUE,
+				["crs"] = {
+					256924,	-- Aeonelle Blackstar
+					256923,	-- Bane of the Vilebloods
+					256770,	-- Bilemaw the Gluttonous
+					245182,	-- Eruundi
+					256821,	-- Far'thana the Mad
+					257231,	-- Gar'chak Skullcleave
+					257199,	-- Hardin Steellock
+					256925,	-- Lotus Darkblossom
+					245044,	-- Nightbrood
+					256926,	-- Queen o' War
+					257027,	-- Rakshur the Bonegrinder
+					256808,	-- Ravengerus
+					256922,	-- Screammaxa the Matriarch
+					244272,	-- Sundereth the Caller
+					238498,	-- Territorial Voidscythe
+					241443,	-- Tremora
+				},
+				["groups"] = {
+					i(257085),	-- Augmented Stormray (MOUNT!)
+					i(260635),	-- Sanguine Harrower (MOUNT!)
+				},
+			}),
+			n(256924, {	-- Aeonelle Blackstar
+				["coord"] = { 39.2, 64.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93944,
+				["groups"] = {
+					i(264637),	-- Cosmic Hunter's Glaive
+					i(264549),	-- Ever-Devouring Shoulderguards
+				},
+			}),
+			n(256923, {	-- Bane of the Vilebloods
+				["coord"] = { 47.0, 80.6, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93946,
+				["groups"] = {
+					i(264572),	-- Netherplate Clasp
+					i(264558),	-- Vileblood Resistant Sabatons
+				},
+			}),
+			n(256770, {	-- Bilemaw the Gluttonous
+				["coord"] = { 35.5, 50.2, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93884,
+				["groups"] = {
+					i(264579),	-- Hungering Wristplates
+					i(264623),	-- Shredding Fang
+				},
+			}),
+			n(245182, {	-- Eruundi
+				["coord"] = { 41.6, 90.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 91047,
+				["groups"] = {
+					i(264600),	-- Ancient Argussian Band
+					i(264563),	-- Eruundi's Wristguards
+				},
+			}),
+			n(256821, {	-- Far'thana the Mad
+				["coord"] = { 53.8, 62.7, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93896,
+				["groups"] = {
+					i(264913),	-- Focused Netherslicer
+					i(264912),	-- Void-Channeler's Spire
+				},
+			}),
+			n(257231, {	-- Gar'chak Skullcleave
+				["crs"] = {
+					257249,	-- Neevus
+					257245,	-- Veserra
+				},
+				["coord"] = { 70.6, 77.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 94461,
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(264609),	-- Gar'chak's Mark of Honor
+					i(264641),	-- Sharpened Skullcleaver
+				},
+			}),
+			n(257199, {	-- Hardin Steellock
+				["crs"] = {
+					257228,	-- Bolvin
+					257213,	-- Solaria Fusebot
+				},
+				["coord"] = { 28.7, 57.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 94461,
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(264615),	-- Hardin's Backup Blade
+					i(264599),	-- Kul'Tiran Signet Ring
+				},
+			}),
+			n(256925, {	-- Lotus Darkblossom
+				["coord"] = { 37.9, 71.8, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93947,
+				["groups"] = {
+					i(264632),	-- Darkblossom's Crook
+					i(264548),	-- Sash of Cosmic Tranquility
+				},
+			}),
+			n(245044, {	-- Nightbrood
+				["coord"] = { 40.2, 41.5, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 91051,
+				["groups"] = {
+					i(264574),	-- Netherterror's Legplates
+					i(264551),	-- Nightbrood's Jaw
+				},
+			}),
+			n(256926, {	-- Queen o' War
+				["provider"] = { "o", 617692 },	-- Queen o' War
+				["coord"] = { 55.7, 79.4, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93934,
+				["groups"] = {
+					i(264601),	-- Queen's Eye Band
+					i(264533),	-- Queen's Tentacle Sash
+				},
+			}),
+			n(257027, {	-- Rakshur the Bonegrinder
+				["coord"] = { 46.5, 40.8, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				["questID"] = 93953,
+				["groups"] = {
+					i(264630),	-- Colossal Voidsunderer
+					i(264561),	-- Primal Bonestompers
+				},
+			}),
+			n(256808, {	-- Ravengerus
+				["coord"] = { 48.8, 53.2, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93895,
+				["groups"] = {
+					i(264535),	-- Leggings of the Cosmic Harrower
+					i(264589),	-- Voidfused Wing Cloak
+				},
+			}),
+			n(256922, {	-- Screammaxa the Matriarch
+				["coord"] = { 43.7, 51.5, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 93966,
+				["groups"] = {
+					i(264583),	-- Barbute of the Winged Hunter
+					i(264545),	-- Harrower-Claw Grips
+				},
+			}),
+			n(244272, {	-- Sundereth the Caller
+				["coord"] = { 29.5, 50.1, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 90805,
+				["groups"] = {
+					i(264619),	-- Nethersteel Spellblade
+					i(264539),	-- Robes of the Voidcaller
+				},
+			}),
+			n(238498, {	-- Territorial Voidscythe
+				["coord"] = { 34.1, 82.1, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 91050,
+				["groups"] = {
+					i(264642),	-- Carving Voidscythe
+					i(264565),	-- Voidscale Shoulderpads
+				},
+			}),
+			n(241443, {	-- Tremora
+				["coord"] = { 36.0, 83.3, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 91048,
+				["groups"] = {
+					i(264610),	-- Escaped Specimen's ID Tag
+					i(264646),	-- Specimen Sinew Longbow
+					i(264565),	-- Voidscale Shoulderpads
+				},
+			}),
+			--Stormarion Assault rares
+			n(248700, {	-- Abysslick
+				["coord"] = { 28.2, 66.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94462,
+				["groups"] = {
+					i(264634),	-- Spire of Flowing Void
+					i(264596),	-- Voidthread Veil
+				},
+			}),
+			n(248823, {	-- Blackcore
+				["providers"] = {
+					{ "n", 248907 },	-- Blackcore (vignette, pop if ready to be summoned?)
+					{ "n", 248825 },	-- Mid phase before actually spawned
+				},
+				["coord"] = { 24.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94463,
+				["cost"] = { { "i", 248680, 3 } },	-- 3x Unstable Focusing Crystal
+				["groups"] = {
+					i(264606),	-- Netherlocus Amulet
+					i(264519),	-- Repurposed Voidwalker's Chestplate
+				},
+			}),
+			n(248068, {	-- Nullspiral
+				["coord"] = { 29.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94460,
+				["groups"] = {
+					i(264531),	-- Shadowthread Slippers
+					i(264588),	-- Shawl of Cosmic Whispers
+				},
+			}),
+			n(248459, {	-- The Many-Broken
+				["coord"] = { 28.8, 70.2, MAP.MIDNIGHT.VOIDSTORM },
+				["questID"] = 94458,
+				["groups"] = {
+					i(264577),	-- Crystalforged Boots
+					i(264651),	-- Resonating Traumatizer
+				},
+			}),
+			n(248791, {	-- Voidseer Orivane
+				["coords"] = {
+					{ 30.1, 69.3, MAP.MIDNIGHT.VOIDSTORM },
+					{ 30.3, 66.5, MAP.MIDNIGHT.VOIDSTORM },
+				},
+				["questID"] = 94459,
+				["groups"] = {
+					i(264628),	-- Spear of Nothingness
+					i(264556),	-- Voidforged Cinch
+				},
+			}),
+		})),
+	}),
+}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.VOIDSTORM, {
+			n(RARES, {
+				q(94751, {	-- Weekly reputation: Aeonelle Blackstar
+					["name"] = "Aeonelle Blackstar weekly reputation obtained.",
+				}),
+				q(94732, {	-- Weekly reputation: Bane of the Vilebloods
+					["name"] = "Bane of the Vilebloods weekly reputation obtained.",
+				}),
+				q(94752, {	-- Weekly reputation: Bilemaw the Gluttonous
+					["name"] = "Bilemaw the Gluttonous weekly reputation obtained.",
+				}),
+				q(94754, {	-- Weekly reputation: Eruundi
+					["name"] = "Eruundi weekly reputation obtained.",
+				}),
+				q(94755, {	-- Weekly reputation: Far'thana the Mad
+					["name"] = "Far'thana the Mad weekly reputation obtained.",
+				}),
+				q(94756, {	-- Weekly reputation: Gar'chak Skullcleave
+					["name"] = "Gar'chak Skullcleave weekly reputation obtained.",
+				}),
+				q(94757, {	-- Weekly reputation: Hardin Steellock
+					["name"] = "Hardin Steellock weekly reputation obtained.",
+				}),
+				q(94758, {	-- Weekly reputation: Lotus Darkblossom
+					["name"] = "Lotus Darkblossom weekly reputation obtained.",
+				}),
+				q(94759, {	-- Weekly reputation: Nightbrood
+					["name"] = "Nightbrood weekly reputation obtained.",
+				}),
+				q(94761, {	-- Weekly reputation: Queen o' War
+					["name"] = "Queen o' War weekly reputation obtained.",
+				}),
+				q(94762, {	-- Weekly reputation: Rakshur the Bonegrinder
+					["name"] = "Rakshur the Bonegrinder weekly reputation obtained.",
+				}),
+				q(94763, {	-- Weekly reputation: Ravengerus
+					["name"] = "Ravengerus weekly reputation obtained.",
+				}),
+				q(94731, {	-- Weekly reputation: Screammaxa the Matriarch
+					["name"] = "Screammaxa the Matriarch weekly reputation obtained.",
+				}),
+				q(94728, {	-- Weekly reputation: Sundereth the Caller
+					["name"] = "Sundereth the Caller weekly reputation obtained.",
+				}),
+				q(94729, {	-- Weekly reputation: Territorial Voidscythe
+					["name"] = "Territorial Voidscythe weekly reputation obtained.",
+				}),
+				q(94730, {	-- Weekly reputation: Tremora
+					["name"] = "Tremora weekly reputation obtained.",
+				}),
+				--Stormarion Assault rares missing weekly rep flags
+				q(94750, {	-- Weekly reputation: Abysslick
+					["name"] = "Abysslick weekly reputation obtained.",
+				}),
+				q(94753, {	-- Weekly reputation: Blackcore
+					["name"] = "Blackcore weekly reputation obtained.",
+				}),
+				q(94760, {	-- Weekly reputation: Nullspiral
+					["name"] = "Nullspiral weekly reputation obtained.",
+				}),
+				q(94764, {	-- Weekly reputation: The Many-Broken
+					["name"] = "The Many-Broken weekly reputation obtained.",
+				}),
+				q(94765, {	-- Weekly reputation: Voidseer Orivane
+					["name"] = "Voidseer Orivane weekly reputation obtained.",
+				}),
+			}),
+		}),
+	}),
+}));

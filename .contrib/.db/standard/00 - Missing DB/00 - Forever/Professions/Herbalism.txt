@@ -1,0 +1,26 @@
+1.60.1.69876
+r(1229705),	-- Incense Candle
+r(1235236),	-- Herb Gathering
+r(1240949),	-- Herbalism
+r(1240960),	-- Herbalism
+r(1240971),	-- Herbalism
+r(1240984),	-- Herbalism
+r(1262980),	-- Greenhouse
+r(1263070),	-- Seed Hybridizer
+r(1278062),	-- Gardening
+
+
+
+
+Missing in Herbalism
+
+1.60.1.69876
+r(1229705),	-- Incense Candle
+r(1235236),	-- Herb Gathering
+r(1240949),	-- Herbalism
+r(1240960),	-- Herbalism
+r(1240971),	-- Herbalism
+r(1240984),	-- Herbalism
+r(1262980),	-- Greenhouse
+r(1263070),	-- Seed Hybridizer
+r(1278062),	-- Gardening

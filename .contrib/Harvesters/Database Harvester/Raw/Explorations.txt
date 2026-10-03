@@ -10735,3 +10735,235 @@
 16874@@@Founders Point Camp
 12.0.1.64914
 16875@@@Den of the Undreamt
+12.0.1.66838
+16310@@@Isle of Quel'Danas
+16311@@@Silvermoon City
+16312@@@Eversong Woods
+16313@@@Court of Blood
+16314@@@Court of the Sun
+16315@@@Falconwing Square
+16316@@@Dawning Lane
+16317@@@The Royal Exchange
+16318@@@The Shining Span
+16319@@@Murder Row
+16320@@@Walk of Elders
+16321@@@Silvermoon Harbor
+16322@@@Sunwing Rookery
+16323@@@Gardens of Remembrance
+16324@@@The Bazaar
+16325@@@Duskglow Gloriette
+16326@@@Augurs' Terrace
+16327@@@Lithiel's Landing
+16329@@@North Sanctum
+16330@@@Path of Dawn
+16331@@@Sunstrider Isle
+16332@@@The Great Sea
+12.0.5.66330
+16686@@@Silvermoon City
+16747@@@Speaker's Rest
+16748@@@Ritual Site Outskirts
+16766@@@Broken Throne
+16770@@@Zul'Aman
+16773@@@Silvermoon City
+16796@@@Ritual Site
+16823@@@Daggerspine Point
+16939@@@Ritual Site
+16940@@@Daggerspine Point
+12.0.7.67227
+16279@@@Sporefall
+16297@@@Sporefall
+16298@@@Funggor Hollow
+16309@@@[DO NOT DISTURB]
+16381@@@[DO NOT DISTURB]
+16387@@@[DO NOT DISTURB]
+16391@@@[DO NOT DISTURB]
+16392@@@[DO NOT DISTURB]
+16402@@@[DO NOT DISTURB]
+16403@@@[DO NOT DISTURB]
+16404@@@[DO NOT DISTURB]
+16405@@@[DO NOT DISTURB]
+16406@@@[DO NOT DISTURB]
+16407@@@[DO NOT DISTURB]
+16408@@@[DO NOT DISTURB]
+16409@@@[DO NOT DISTURB]
+16410@@@[DO NOT DISTURB]
+16411@@@[DO NOT DISTURB]
+16412@@@[DO NOT DISTURB]
+16413@@@[DO NOT DISTURB]
+16414@@@[DO NOT DISTURB]
+16533@@@[DO NOT DISTURB]
+16540@@@[DO NOT DISTURB]
+16621@@@[DO NOT DISTURB]
+16668@@@The Hinterlands
+16669@@@Durnholde Keep
+16686@@@Silvermoon City, Prop Hunt
+16900@@@Val
+16920@@@Void Acropolis
+16921@@@Umbral Base Camp
+16922@@@The Lost Holdout
+16923@@@Frost Chitter Grotto
+16924@@@Sleet-Rune Hollow
+16925@@@Glacial Reservoir
+16926@@@Steam Ravine
+16943@@@Naigtal
+16945@@@Ritual Site
+16946@@@Lightbloom
+17047@@@The Collapsed Passage
+17060@@@Void Acropolis
+17062@@@The Forgotten Depths
+17067@@@The Lycaneum
+17068@@@The Hushed Foyer
+17072@@@The South Atrium
+17095@@@Nexus Port
+17096@@@Sporeforge
+17097@@@Vennorax Wreckage
+17098@@@Extraction Coast
+17099@@@The Holding Pens
+17100@@@Soltian Marsh
+17101@@@Staging Grounds
+17102@@@Command Point: Primos
+17103@@@Vilaldoun
+17104@@@Naigtal Outpost
+17195@@@Sleeper's Grotto
+17198@@@Manaforge: Arcvein
+17199@@@Shoals of Rememberance
+12.0.7.67360
+17104@@@Umbral Base Camp
+17217@@@Hidden Spire
+17218@@@The Devouring Ingress
+17219@@@The Beast Pens
+17220@@@Marshwalker Refuge
+12.0.7.67525
+17098@@@Extraction Shores
+12.1.0.68209
+16365@@@The Coiled Isle
+16535@@@Vaults of Atal'Utek
+16671@@@The Tidebound Grotto
+16755@@@Crypt of the Denied
+16769@@@Zail'Zar Span
+16771@@@The Altar of Wrath
+16774@@@Tokka's Landing
+16775@@@Ofi's Hut
+16776@@@Mlurkkr Mire
+16777@@@Cloudlight Beacon
+16778@@@Wreck of Paku's Talon
+16779@@@Wreck of Torga's Beak
+16780@@@The Whispering Marsh
+16781@@@The Ring of Glory
+16782@@@Defiant Ring
+16783@@@Wreck of Gral's Belly
+16784@@@Gnarldor Isle
+16785@@@Gate of the Eastern Fang
+16786@@@Gate of the Western Fang
+16787@@@The Forum
+16788@@@Wreck of Sethralis's Scale
+16789@@@The Fangs
+16790@@@Path of Whispers
+16791@@@Gate of the Serpent's Eye
+16792@@@Venom Rise
+16793@@@Blistering Terrace
+16795@@@The Serpent's Tail
+16822@@@Labyrinth
+16824@@@Tooth of Sargoth
+16830@@@Tokka's Folly
+16838@@@The Coiled Isle (copy)
+16843@@@Null Space
+16865@@@Altar of Fangs
+16897@@@Diver's Arch
+16913@@@12.1 Ula'Tek Labyrinth
+16915@@@The Venomous Abyss
+16977@@@Ruuk'Jar's Clutch
+16978@@@Vault of Restless Bones
+16979@@@Profaned Mausoleum
+16980@@@Gnarldor Isle
+16981@@@The Ring of Glory
+16987@@@Venomfall Deeps
+16989@@@Cursed Keepsake
+16990@@@The Underbelly
+16992@@@Crypt of the Lost Mason
+16993@@@Kin's Rest
+16994@@@Blistering Vault
+16995@@@Tomb of the Lost Priest
+16996@@@Crypt of The Lost Warrior
+16997@@@Crypt of the Disgraced
+17022@@@Cursed Depths
+17023@@@The Seal of Wrath
+17107@@@Demolition Dome
+17316@@@Vaults of Atal'Utek
+17650@@@Amani Foothold
+17680@@@The Soulcoil Well
+17681@@@Pit of Fangs
+17682@@@Mor'zahi's Tomb
+17683@@@Crypt of the Soulcoilers
+17685@@@The Serpent Warren
+17686@@@Altar of the Six Winds
+17687@@@The Vile Crypt
+17688@@@The Venomducts
+17689@@@Halls of the Malignant
+17701@@@The Crucible of Venom
+17702@@@The Tomb of Ula'tek
+17710@@@The Carnage Pit
+17711@@@The Altar of Fangs
+17712@@@Sacrificial Approach
+17713@@@Mutation Chambers
+17714@@@Ancient Burrow
+17715@@@The Chamber of Virulence
+12.1.0.68301
+17701@@@The Coiled Altar
+12.1.0.68412
+16788@@@Wreck of Sethraliss's Scale
+17107@@@Dummy Dome
+17718@@@The Great Sea
+17719@@@The Forbidding Sea
+17720@@@The Forbidding Sea
+17729@@@North Amani Outpost
+17730@@@East Amani Outpost
+12.1.0.68569
+17729@@@Northern Amani Bulwark
+17730@@@Eastern Amani Outpost
+12.1.5.69594
+16913@@@The Labyrinth of Kindo'Jan
+16944@@@Silvermoon City
+16947@@@The Great Sea
+16948@@@Silvermoon City
+16949@@@Eversong Woods
+16950@@@Court of Blood
+16951@@@Court of the Sun
+16952@@@Falconwing Square
+16953@@@Dawning Lane
+16954@@@The Royal Exchange
+16955@@@The Shepherd's Gate
+16956@@@Murder Row
+16957@@@Walk of Elders
+16958@@@The Shining Span
+16959@@@Silvermoon Harbor
+16960@@@Sunwing Rookery
+16961@@@Gardens of Remembrance
+16962@@@Thalassian University
+16963@@@Lithiel's Landing
+16964@@@Augurs' Terrace
+16965@@@Duskglow Gloriette
+16966@@@The Bazaar
+16967@@@North Sanctum
+16968@@@Sunsail Anchorage
+16969@@@West Sanctum
+16970@@@Path of Dawn
+16971@@@Tranquil Repose
+16972@@@Stillwhisper Pond
+16973@@@Farstrider Hold
+16974@@@Brightwing Estate
+16975@@@Sunstrider Isle
+16976@@@Thuron's Livery
+17025@@@Chamber of Rites
+17026@@@The Reliquary
+17027@@@Central Chamber
+17028@@@The Catacombs
+17029@@@Halazzi's Lair
+17030@@@Jan'alai's Refuge
+17031@@@Akil'zon's Roost
+17032@@@Nalorakk's Den
+17033@@@The Cave Towers
+17059@@@The Unbinding of Kith'ix
+17197@@@The Speaker's Chamber
+17778@@@Kith'ix' Prison
+17798@@@The Tomb of Ula'tek

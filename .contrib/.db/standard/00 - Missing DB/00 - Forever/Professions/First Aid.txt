@@ -1,0 +1,50 @@
+1.60.1.69876
+r(1230117),	-- First Aid Kit
+r(1240927),	-- First Aid
+r(1240928),	-- First Aid
+r(1240929),	-- First Aid
+r(1240930),	-- First Aid
+r(1244431),	-- Minor Healing Potion
+r(1244432),	-- Lesser Healing Potion
+r(1244433),	-- Healing Potion
+r(1244434),	-- Greater Healing Potion
+r(1244435),	-- Superior Healing Potion
+r(1244436),	-- Major Healing Potion
+r(1259341),	-- Potent Anti-Venom
+r(1259342),	-- Simple Poultice
+r(1259343),	-- Clever Poultice
+r(1259344),	-- Superior Poultice
+r(1259345),	-- Powerful Poultice
+r(1259347),	-- Woolen Tourniquet
+r(1259348),	-- Leather Tourniquet
+r(1259349),	-- Surgical Tourniquet
+r(1262996),	-- Toxin Study
+r(1263001),	-- Plague Doctor's Laboratory
+
+
+
+
+Missing in First Aid
+
+1.60.1.69876
+r(1230117),	-- First Aid Kit
+r(1240927),	-- First Aid
+r(1240928),	-- First Aid
+r(1240929),	-- First Aid
+r(1240930),	-- First Aid
+r(1244431),	-- Minor Healing Potion
+r(1244432),	-- Lesser Healing Potion
+r(1244433),	-- Healing Potion
+r(1244434),	-- Greater Healing Potion
+r(1244435),	-- Superior Healing Potion
+r(1244436),	-- Major Healing Potion
+r(1259341),	-- Potent Anti-Venom
+r(1259342),	-- Simple Poultice
+r(1259343),	-- Clever Poultice
+r(1259344),	-- Superior Poultice
+r(1259345),	-- Powerful Poultice
+r(1259347),	-- Woolen Tourniquet
+r(1259348),	-- Leather Tourniquet
+r(1259349),	-- Surgical Tourniquet
+r(1262996),	-- Toxin Study
+r(1263001),	-- Plague Doctor's Laboratory

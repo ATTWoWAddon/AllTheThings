@@ -1,0 +1,383 @@
+---------------------------------------------------
+--          D E L V E S      M O D U L E         --
+---------------------------------------------------
+
+DELVES_MID_S2 = createHeader({
+	readable = "Delves MID S2",
+	icon = 1604168,
+	text = {
+		en = "Delves MID S2",
+		-- TODO: de = "",
+		es = "Profundidades MID T2",
+		mx = "Abismos MID T2",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		ru = "Вылазки MID 2 сезон",
+		cn = "至暗之夜地下堡第二季",
+		tw = "至暗之夜探究第二季",
+	},
+});
+local ALL_REGULAR_DELVES_MID = {
+	ATAL_AMAN,
+	COLLEGIATE_CALAMITY,
+	PARHELION_PLAZA,
+	SHADOWGUARD_POINT,
+	SUNKILLER_SANCTUM,
+	THE_DARKWAY,
+	THE_GRUDGE_PIT,
+	THE_GULF_OF_MEMORY,
+	THE_SHADOW_ENCLAVE,
+	--TORMENTS_RISE,
+	TWILIGHT_CRYPTS,
+	-- #if AFTER 12.1.0
+	GNARLDOR_ISLE,
+	THE_RING_OF_GLORY,
+	-- VENOMFALL_DEEPS,
+	-- #endif
+	-- #if AFTER 12.1.5
+	LABYRINTH_KINDOJAN
+	-- #endif
+};
+local ALL_THE_DELVES_MID = {
+	ATAL_AMAN,
+	COLLEGIATE_CALAMITY,
+	PARHELION_PLAZA,
+	SHADOWGUARD_POINT,
+	SUNKILLER_SANCTUM,
+	THE_DARKWAY,
+	THE_GRUDGE_PIT,
+	THE_GULF_OF_MEMORY,
+	THE_SHADOW_ENCLAVE,
+	TORMENTS_RISE,
+	TWILIGHT_CRYPTS,
+	-- #if AFTER 12.1.0
+	GNARLDOR_ISLE,
+	THE_RING_OF_GLORY,
+	VENOMFALL_DEEPS,
+	-- #endif
+	-- #if AFTER 12.1.5
+	LABYRINTH_KINDOJAN
+	-- #endif
+};
+local mapped = function(t)
+	if not t.maps then
+		t.maps = ALL_REGULAR_DELVES_MID
+	end
+	return t
+end
+root(ROOTS.Delves, expansion(EXPANSION.MID, {
+	n(DELVES_MID_S2, {
+		["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+		["groups"] = {
+			-- MID Season 2 Boss
+			m(VENOMFALL_DEEPS, {
+				["icon"] = 7876113,
+				["coord"] = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				["groups"] = {
+					n(262455, {	-- Azta'rec ?
+						["questID"] = 92888,
+						["isWeekly"] = true,
+						["groups"] = {
+							ach(63326, {	-- My Venomous Nemesis
+								i(276163),	-- Apophic Patagia (COSMETIC!)
+							}),
+							i(264971, {	-- Annihilation Rod (COSMETIC!)
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+							}),
+							i(264970, {	-- Oblivion's Edge (COSMETIC!)
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+							}),
+							i(262391),	-- Ominous Dominus (PET)
+							i(265368, {	-- Twilight Destroyer (COSMETIC!)
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+							}),
+							i(265366, {	-- Twilight Executioner (COSMETIC!)
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+							}),
+							i(265367, {	-- Twilight Fang (COSMETIC!)
+								["description"] = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+							}),
+						},
+					}),
+					n(265500, {	-- Azta'rec ??
+						["questID"] = 97913,	-- one-time quest, determine weekly
+						["isWeekly"] = true,
+						["groups"] = {
+							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+								["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },	-- 1 Week Later unobtainable
+								["groups"] = { title(776) },	-- <Name>, Fabled Vanquisher of Azta'rec
+							}),
+							ach(63333, {	-- Let Me Solo Him: Azta'rec
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+								["groups"] = { i(275657) },	-- Apophic Soul Crusher (MOUNT!)
+							}),
+							ach(63332, {	-- Purging the Poison
+								title(775),	-- <Name> the Poisonous
+							}),
+						},
+					}),
+				},
+			}),
+			n(ACHIEVEMENTS, {
+				mapped(ach(62889)),	-- Midnight Delves: Tier 4 (Season 2)
+				mapped(ach(62890)),	-- Midnight Delves: Tier 5 (Season 2)
+				mapped(ach(62891)),	-- Midnight Delves: Tier 6 (Season 2)
+				mapped(ach(62892)),	-- Midnight Delves: Tier 7 (Season 2)
+				mapped(ach(62893)),	-- Midnight Delves: Tier 8 (Season 2)
+				mapped(ach(62894)),	-- Midnight Delves: Tier 9 (Season 2)
+				mapped(ach(62895)),	-- Midnight Delves: Tier 10 (Season 2)
+				mapped(ach(62897, {	-- Midnight Delves: Tier 11 (Season 2)
+					title(550),	-- High Explorer <Name>
+				})),
+				ach(63433, {	-- Midnight: Journey's End (Season 2)
+					title(774),	-- Snake Eater <Name>
+				}),
+			}),
+			n(CURIO, {
+				--Combat
+				i(249223),	-- Corrosive Bilespear
+				i(271132),	-- Essence Trap
+				i(249219),	-- Ouroboric Curse
+				i(271133, { ["timeline"] = { ADDED_12_1_5 } }),	-- Viperwind Idol
+				--Utility
+				i(249227),	-- Dundun's Favor
+				i(249228),	-- Soul-Cracking Dreamcatcher
+				i(271130),	-- Venom Infusion
+			}),
+			mapped(n(DELVE_COMPLETION, {
+				n(ARMOR, {
+					filter(BACK_F, {
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272227),	-- Galerider's Veil
+							i(272226),	-- Miststalker's Shroud
+							i(272230),	-- Pledgebearer's Pall
+							i(272225),	-- Pyrewalker's Mantle
+						},
+					}),
+					filter(CLOTH, {
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272232),	-- Pyrewalker's Buskins
+							i(272231),	-- Pyrewalker's Doublet
+							i(272233),	-- Pyrewalker's Gloves
+							i(272236),	-- Pyrewalker's Mantlet
+							i(272234),	-- Pyrewalker's Miter
+							i(272237),	-- Pyrewalker's Obi
+							i(272235),	-- Pyrewalker's Treads
+							i(272238),	-- Pyrewalker's Wraps
+						},
+					}),
+					filter(FINGER_F, {
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272148),	-- Anguine Gyre
+							i(272147),	-- Colubrine Band
+							i(272149),	-- Hex Loop
+							i(272150),	-- Ouroboric Signet
+						},
+					}),
+					filter(LEATHER, {
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272239),	-- Miststalker's Brigandine
+							i(272245),	-- Miststalker's Cinch
+							i(272242),	-- Miststalker's Cowl
+							i(272243),	-- Miststalker's Cuisses
+							i(272241),	-- Miststalker's Grips
+							i(272244),	-- Miststalker's Spaulders
+							i(272240),	-- Miststalker's Striders
+							i(272246),	-- Miststalker's Wristbands
+						},
+					}),
+					filter(MAIL, {
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272247),	-- Galerider's Byrnie
+							i(272249),	-- Galerider's Chain Clasps
+							i(272248),	-- Galerider's Chausses
+							i(272251),	-- Galerider's Chausses
+							i(272250),	-- Galerider's Gaze
+							i(272253),	-- Galerider's Mail Skirt
+							i(272252),	-- Galerider's Mantle
+							i(272254),	-- Galerider's Mesh Wraps
+						},
+					}),
+					filter(NECK_F, {
+						["providers"] = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,
+						["groups"] = {
+							i(272229),	-- Serpentine Talisman
+							i(272228),	-- Whispering Periapt
+						},
+					}),
+					filter(PLATE, {
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(272255),	-- Pledgebearer's Cuirass
+							i(272257),	-- Pledgebearer's Gauntlets
+							i(272261),	-- Pledgebearer's Girdle
+							i(272258),	-- Pledgebearer's Mask
+							i(272260),	-- Pledgebearer's Pauldrons
+							i(272259),	-- Pledgebearer's Poleyns
+							i(272256),	-- Pledgebearer's Sabatons
+							i(272262),	-- Pledgebearer's Splints
+						},
+					}),
+					filter(TRINKET_F, {
+						["providers"] = DATAGROUP.MID.DELVES.ARMOR_PROVIDERS,
+						["groups"] = {
+							i(274494),	-- Chiral Marrowgrafter
+							i(251789),	-- Consecrated Chalice
+							i(251790),	-- Desecrated Chalice
+							i(274493),	-- Effigy of Ula'Tek's Faithful
+							i(251786),	-- Ever-Collapsing Void Fissure
+							i(251792),	-- Glorious Crusader's Keepsake
+							i(264694),	-- Ultradon Cuirass
+							i(251785),	-- Void-Reaper's Libram
+						},
+					}),
+					filter(SHIELDS, {
+						["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
+						["groups"] = {
+							i(272276),	-- Wailing Bulwark
+						},
+					}),
+				}),
+				filter(MISC, {
+					i(276547, {	-- Afflicted Soul
+						["description"] = "Use before starting your Prey quest to work properly.",
+					}),
+					i(279290, {	-- Fang Lover's (CI!)
+						["providers"] = {
+							{ "o",584518 },	-- Bountiful Heavy Trunk (verified)
+						},
+					}),
+					i(276548, {	-- Tormented Soul
+						["description"] = "Use before starting your Prey quest to work properly.",
+					}),
+					i(274374, {	-- Trovehunter's Bounty
+						["providers"] = {
+							{ "o",584518 },	-- Bountiful Heavy Trunk (verified)
+							{ "o",656489 },	-- Azta'rec Cache (verified)
+						},
+					}),
+				}),
+				filter(QUEST_ITEMS, {
+					-- Currently unaware of objectIDs so treated just as reward
+					i(274965),	-- Ancient Curio (Combat) (QI!/QS!)
+					i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
+					i(277506),	-- Codex of the Soul Coilers (QS!)
+					i(279012),	-- Cracked Keystone (QI!/QS!/CI!)
+				}),
+				n(WEAPONS, {
+					["providers"] = DATAGROUP.MID.DELVES.WEAPON_PROVIDERS,
+					["groups"] = {
+						i(251884),	-- Abyss Sabre
+						i(272270),	-- Bonedust Pestle
+						i(272280),	-- Exhumed Soul-Cleaver
+						i(272266),	-- Forgotten Eidolon's Dagger
+						i(272272),	-- Harrowed Partisan
+						i(251935),	-- Lightgrasp Worldroot
+						i(272268),	-- Mask-Etcher
+						i(251885),	-- Radiant Foil
+						i(272274),	-- Realm Splitter
+						i(272278),	-- Recurve Wisp-Shooter
+						i(272269),	-- Soulsealer's Headstone
+						i(272275),	-- Soulsinger's Horn
+						i(272271),	-- Spiritbound Focus
+						i(272277),	-- Spirit-Reaver
+						i(272283),	-- Swordsman's Emanation
+						i(272267),	-- Uncoffined Labrys
+						i(272273),	-- Unshrined Ceremonial Scepter
+					},
+				}),
+			})),
+			n(FACTIONS, {
+				faction(2796),	-- Delves: Season 2
+			}),
+			n(QUESTS, {
+				q(97454, {	-- Seasonal Refresher: Midnight
+					["qg"] = 242381,	-- Valeera Sanguinar
+					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
+				q(97321, {	-- Slithering Spoils
+					["sourceQuest"] = 97454,	-- Seasonal Refresher: Midnight
+					["qg"] = 242381,	-- Valeera Sanguinar
+					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(277949),	-- Sizzling Venom (QI!)
+						o(661347, {	-- Slithersoul Spoils
+							i(277934),	-- Slithersoul Spoils (QI!)
+						}),
+					},
+				}),
+				q(97482, {	-- Fangs for the Memories
+					["sourceQuest"] = 97321,	-- Slithering Spoils
+					["qg"] = 242381,	-- Valeera Sanguinar
+					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["maps"] = { VENOMFALL_DEEPS },
+					["groups"] = { i(275988) },	-- Corrosive Victory (TOY!)
+				}),
+				q(96612, {	-- Ancient Curiosity: Combat
+					["provider"] = { "i", 274965 },	-- Ancient Curio (QI!/QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
+				q(96615, {	-- Ancient Curiosity: Utility
+					["provider"] = { "i", 274970 },	-- Ancient Curio (QI!/QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
+				q(97616, {	-- Corrosive Gifts: Corrosive Power
+					["provider"] = { "i", 277506 },	-- Codex of the Soul Coilers (QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				--	While the reward is correct, its a 1time quest reward and you need like 500+ of them if you all trade them in for corrosive coins. ~Gold Aug 2026
+				--	["groups"] = { i(273000) },	-- Corrosive Soul
+				}),
+				q(97910, {	-- Cracked Keystone
+					["provider"] = { "i", 279012 },	-- Cracked Keystone (QS!)
+					["maps"] = ALL_REGULAR_DELVES_MID,
+				}),
+			}),
+			mapped(n(TREASURES, {
+				o(656489, {	-- Azta'rec Cache
+					["questID"] = 92887,
+					["isWeekly"] = true,
+					["cost"] = { { "i", 275910, 1 } },	-- Scalebound Herald's Flute
+					["sym"] = {{"select","itemID",
+						262391,	-- Ominous Dominus (PET!)
+						264971,	-- Annihilation Rod (COSMETIC!)
+						264970,	-- Oblivion's Edge (COSMETIC!)
+						265368,	-- Twilight Destroyer (COSMETIC!)
+						265366,	-- Twilight Executioner (COSMETIC!)
+						265367,	-- Twilight Fang (COSMETIC!)
+					}},
+				}),
+			})),
+			n(VENDORS, {
+				n(242398, {	-- Naleidea Rivergleam
+					["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["groups"] = {
+						i(275978, {	-- Delver's Starter Kit (CI!)
+							--["cost"] = { { "c", UNDERCOIN, 0 } },
+						}),
+					},
+				}),
+			}),
+		},
+	}),
+}))
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	n(DELVES, {
+		n(DELVES_MID_S2, {
+			["timeline"] = { ADDED_12_1_0 },
+			["groups"] = {
+				q(95039),	-- triggered when buying Delver's Cosmetic Surprise Bag [275986]
+				q(98787),	-- triggered with completion of Slithering Spoils [97321]
+				--q(97041),	-- Azta'rec crests??
+			},
+		}),
+	}),
+}))

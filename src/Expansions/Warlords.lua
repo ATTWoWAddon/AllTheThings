@@ -3,7 +3,7 @@ local _, app = ...;
 
 -- Check to see if Garrison APIs are available for Warlords
 local C_Garrison = C_Garrison;
-if not C_Garrison then
+if not C_Garrison or app.GameBuildVersion < 60000 then
 	app.CreateGarrisonBuilding = app.CreateUnimplementedClass("GarrisonBuilding", "garrisonbuildingID");
 	app.CreateGarrisonMission = app.CreateUnimplementedClass("GarrisonMission", "missionID");
 	app.CreateGarrisonTalent = app.CreateUnimplementedClass("GarrisonTalent", "garrisonTalentID");
@@ -63,6 +63,7 @@ do
 		end,
 	}, (function(t) return t.itemID; end));
 
+	app.AddGenericFieldConverter(KEY);
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
 		local saved, none = {}, {}
@@ -78,12 +79,13 @@ do
 		-- Character Cache
 		app.SetBatchCached(CACHE, saved, 1)
 		-- can't un-cache because API data is incorrect unless in Garrison, thanks Blizzard
-		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, saved, 1)
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "garrisonbuildingID", name = "Buildings", icon = 1005027 });
 	end);
 end
 
@@ -162,6 +164,7 @@ do
 		if field then return _t[field]; end
 	end
 	app.CreateFollower = app.CreateClass(CLASSNAME, KEY, {
+		CACHE = function() return CACHE end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
 		end,
@@ -180,10 +183,6 @@ do
 		link = function(t)
 			return cache.GetCachedField(t, "link", CacheInfo);
 		end,
-		description = function(t)
-			return L.FOLLOWERS_COLLECTION_DESC;
-		end,
-		RefreshCollectionOnly = true,
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collected = function(t)
 			return app.TypicalCharacterCollected(CACHE, t[KEY])
@@ -193,28 +192,38 @@ do
 			-- character collected
 			if app.IsCached(CACHE, id) then return 1; end
 		end,
-
-		app.AddEventHandler("OnRefreshCollections", function()
-			local state
-			local saved = {}
-			for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-				-- this returns false when wrong SL covenant, so we can't clear followers once cached for a character
-				state = C_Garrison_IsFollowerCollected(id)
-				if state then
-					saved[id] = true
-				end
-			end
-			-- Character Cache
-			app.SetBatchCached(CACHE, saved, 1)
-			-- Account Cache (removals handled by Sync)
-			app.SetBatchAccountCached(CACHE, saved, 1)
-		end);
-		app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-			if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
-			if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
-		end);
-		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	});
+
+	app.AddGenericFieldConverter(KEY);
+	app.AddEventHandler("OnRefreshCollections", function()
+		local state
+		local saved = {}
+		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+			-- this returns false when wrong SL covenant, so we can't clear followers once cached for a character
+			state = C_Garrison_IsFollowerCollected(id)
+			if state then
+				saved[id] = true
+			end
+		end
+		-- Character Cache
+		app.SetBatchCached(CACHE, saved, 1)
+	end);
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+	app.AddEventRegistration("GARRISON_FOLLOWER_ADDED", function(guid)
+		local info = C_Garrison_GetFollowerInfo(guid)
+		local id = info and info.garrFollowerID
+		if not id then return end
+
+		app.SetThingCollected("followerID", id, nil, true)
+	end);
+	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") });
+		app.AddRandomSearchCategory("Followers", "followerID", L.FOLLOWERS, L.FOLLOWER_DESC, app.asset("Category_Followers"));
+	end);
 end
 
 -- Subroutines

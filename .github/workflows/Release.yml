@@ -16,6 +16,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Prevent alpha, manual, and tagged releases from publishing at the same time.
+concurrency:
+  group: release-publishing
+  cancel-in-progress: false
+
 jobs:
   # Check for changes since last tag
   check-changes:
@@ -38,14 +43,15 @@ jobs:
 
       - name: Checkout code
         if: steps.release_type.outputs.release_type == 'alpha'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
            fetch-depth: 300
-           fetch-tags: true
 
       - name: Reset to SHA that triggered the workflow
         if: steps.release_type.outputs.release_type == 'alpha'
-        run: git reset --hard ${{ github.sha }}
+        run: |
+            git fetch --depth=300
+            git reset --hard ${{ github.sha }}
 
       - name: Check for changes since last tag
         id: check_changes
@@ -69,61 +75,71 @@ jobs:
     if: needs.check-changes.outputs.release_type == 'release' || needs.check-changes.outputs.changes_detected == 'true'
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
+        with:
+           fetch-depth: 300
 
       - name: Reset to SHA that triggered the workflow
         run: git reset --hard ${{ github.sha }}
 
-      - name: Database Parser for Retail
-        timeout-minutes: 5
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto baseconfig=.config/retail/retail.config
-        shell: cmd
+      - parallel:
+        - name: Database Parser for Retail
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/options/simplify.config"
+          shell: cmd
 
-      - name: Database Parser for Classic Era
-        timeout-minutes: 5
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/01 - Classic Era.config"
-        shell: cmd
+        - name: Database Parser for Classic Era
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
+          shell: cmd
 
-      - name: Database Parser for Season of Discovery
-        timeout-minutes: 5
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/01 - Classic SOD.config"
-        shell: cmd
+        - name: Database Parser for Season of Discovery
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
+          shell: cmd
 
-      - name: Database Parser for The Burning Crusade
-        timeout-minutes: 5
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/02 - TBC.config"
-        shell: cmd
+        - name: Database Parser for The Burning Crusade
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
+          shell: cmd
 
-      - name: Database Parser for Wrath of the Lich King
-        timeout-minutes: 5
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/03 - Wrath.config"
-        shell: cmd
+        - name: Database Parser for Wrath of the Lich King
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
+          shell: cmd
 
-      - name: Database Parser for Cataclysm
-        timeout-minutes: 5
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/04 - Cataclysm.config"
-        shell: cmd
+        - name: Database Parser for Cataclysm
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+          shell: cmd
 
-      - name: Database Parser for Mists of Pandaria
-        timeout-minutes: 5
-        run: |
-          cd .contrib/Parser
-          "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
-        shell: cmd
+        - name: Database Parser for Mists of Pandaria
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+          shell: cmd
 
-      - uses: actions/upload-artifact@v6
+        - name: Database Parser for Forever
+          timeout-minutes: 5
+          run: |
+            cd .contrib/.tools
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
+          shell: cmd
+
+      - uses: actions/upload-artifact@v7
         with:
             name: db-output  # Artifact name
             path: db/  # File path to upload
@@ -134,16 +150,17 @@ jobs:
     needs: build-windows
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
            fetch-depth: 300
-           fetch-tags: true
 
       - name: Reset to SHA that triggered the workflow
-        run: git reset --hard ${{ github.sha }}
+        run: |
+            git fetch --depth=300
+            git reset --hard ${{ github.sha }}
 
       - name: Download artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: db-output  # Name of the artifact to download
           path: db

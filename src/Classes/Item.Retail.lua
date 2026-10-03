@@ -5,7 +5,6 @@ local L = app.L
 -- App locals
 local GetRawField, contains
 	= app.GetRawField, app.contains
-local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Global locals
@@ -17,7 +16,16 @@ local ItemEventListener = ItemEventListener
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemCount = app.WOWAPI.GetItemCount;
-local IsBoAOverride = C_Item.IsItemBindToAccountUntilEquip
+local IsBoAOverride = C_Item.IsItemBindToAccountUntilEquip or app.ReturnFalse;
+
+-- CRIEVE NOTE: Add this to Classic's LocalizationDB and then remove this.
+local L = app.L;
+if not rawget(L, "ITEM_NAMES") then
+	rawset(L, "ITEM_NAMES", {});
+end
+if not rawget(L, "SOURCE_NAMES") then
+	rawset(L, "SOURCE_NAMES", {});
+end
 
 -- Class locals
 
@@ -204,19 +212,22 @@ api.CleanLink = CleanLink
 local CLASS = "Item"
 local KEY = "itemID"
 local cache = app.CreateCache("modItemID");
-local function ItemAsyncRefreshFunc(t)
-	local _t, id = cache.GetCached(t)
-	if _t.__Retrieved then return end
+local ItemAsyncRefreshFunc
+if ItemEventListener then
+	ItemAsyncRefreshFunc = function(t)
+		local _t, id = cache.GetCached(t)
+		if _t.__Retrieved then return end
 
-	_t.__Retrieved = true
-	-- app.PrintDebug("RetrievalFunc",t.hash)
-	-- app.PrintDebug("Item Callback", id)
-	ItemEventListener:AddCallback(math_floor(id), function()
-		-- app.PrintDebug("Item Loaded", id)
-		app.DirectGroupRefresh(t, true)
-		app.ReshowGametooltip()
-	end)
-	return true
+		_t.__Retrieved = true
+		-- app.PrintDebug("ItemAsyncRefreshFunc",t.hash)
+		-- app.PrintDebug("Item Callback", id)
+		ItemEventListener:AddCallback(math_floor(id), function()
+			-- app.PrintDebug("Item Loaded", id)
+			app.DirectGroupRedraw(t, true)
+			app.ReshowGametooltip()
+		end)
+		return true
+	end
 end
 app.AddEventRegistration("ITEM_DATA_LOAD_RESULT", function(itemID, success)
 	if not success then
@@ -245,7 +256,6 @@ local function CacheInfo(t, field)
 			t.modID = nil;
 		end
 		local rawbonuses = rawget(t, "bonuses")
-		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if rawbonuses then
 			local bonusesString = #rawbonuses..":"..app.TableConcat(rawbonuses, nil, nil, ":")
 			itemLink = ("item:%d:::::::::::%s:%s:"):format(itemLink, modID or "", bonusesString)
@@ -259,6 +269,7 @@ local function CacheInfo(t, field)
 		else
 			itemLink = ("item:%d"):format(itemLink);
 		end
+		-- app.PrintDebug("default_link",itemLink)
 		-- save this link so it doesn't need to be built again
 		t.rawlink = itemLink
 		t.modItemID = nil
@@ -407,9 +418,7 @@ local itemFields = {
 		end
 	end,
 	modItemID = function(t)
-		-- if app.IsReady then app.PrintDebug("item.modItemID?",t.key,t[t.key]) end
 		local modItemID = GetGroupItemIDWithModID(t) or t.itemID;
-		-- if app.IsReady then app.PrintDebug("item.modItemID=",modItemID) end
 		t.modItemID = modItemID;
 		return modItemID;
 	end,
@@ -459,34 +468,22 @@ itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
 
 app.CreateItem = app.CreateClass(CLASS, KEY, itemFields,
 "AsHQT", {
+	CACHE = function() return "Quests" end,
+	ImportFrom = "Quest",
+	ImportFields = { "repeatable", "trackable", "saved" },
 	CollectibleType = function() return "QuestsHidden" end,
 	collectible = app.CollectibleAsQuest,
 	locked = app.GlobalVariants.AndLockCriteria.locked,
-	collected = IsQuestFlaggedCompletedForObject,
-	trackable = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable")
+	collected = function(t)
+		return app.TypicalCharacterCollected("Quests", t.questID)
 	end,
-	saved = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
-	end
 }, (function(t) return t.type == "ihqt"; end),
 "WithQuest", {
-	CollectibleType = app.IsClassic and function() return "Quests" end
-	-- Retail: items tracked as HQT
-	or function() return "QuestsHidden" end,
-	collectible = app.IsClassic and (app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest)
-	-- Retail: these Items not inherently collectible, manually convert to Character Unlocks as needed
-	or app.ReturnFalse,
+	ImportFrom = "Quest",
+	ImportFields = { "repeatable", "trackable", "saved" },
+	CollectibleType = function() return "QuestsHidden" end,
+	collectible = app.ReturnFalse,
 	locked = app.GlobalVariants.AndLockCriteria.locked,
-	collected = IsQuestFlaggedCompletedForObject,
-	trackable = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable")
-	end,
-	saved = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
-	end
 }, (function(t) return t.questID; end),
 "WithFaction", {
 	collectible = function(t)
@@ -501,6 +498,11 @@ app.CreateItem = app.CreateClass(CLASS, KEY, itemFields,
 }, (function(t) return t.factionID; end));
 
 local function OnClickCostItem(row, button)
+	-- allow default chat linking
+	if button == "LeftButton" and IsShiftKeyDown() then
+		return
+	end
+	-- block all rightclicks
 	if button ~= "RightButton" then
 		return true
 	end

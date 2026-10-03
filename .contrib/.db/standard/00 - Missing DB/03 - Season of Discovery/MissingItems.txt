@@ -1,0 +1,1275 @@
+1.15.0.52124
+i(202256),	-- Privateer's Ornate Pistol
+i(202316),	-- Runecarving Test - Crippling Poison
+i(203726),	-- Cutty's Rune
+1.15.0.52409
+i(202251),	-- Bag of Pet Treats
+i(202254),	-- Bracers of Redirection
+i(202641),	-- Mud-covered notebook
+i(203756),	-- Azora Apprentice Notes: Page 1
+i(203960),	-- Azora Apprentice Notes: Page 2
+i(203961),	-- Azora Apprentice Notes: Page 3
+i(203962),	-- Azora Apprentice Notes: Page 4
+i(203992),	-- Rune of Trickery
+i(204270),	-- Fathom Core
+i(205218),	-- Libram of Discovery
+i(205420),	-- Libram of Judgement
+i(205863),	-- Corrupted Libram
+i(205942),	-- Chimaeric Epiphany
+i(205943),	-- Prophecy of a Desecrated Citadel
+i(205946),	-- Memory of a Leader's Betrayal
+i(205948),	-- Anodyne Epiphany
+i(205949),	-- Manifold Epiphany
+i(205952),	-- Memory of a Shattered World
+i(205953),	-- Prophecy of a Broken Vow
+i(206157),	-- Seaforium Mining Charge
+i(206159),	-- Venture Co Disguise
+i(206168),	-- Rune of the Chimera
+i(206170),	-- Windfury Cone
+i(206175),	-- Pine Salve
+i(206176),	-- Mortar and Pestle
+i(206344),	-- Knife Set
+i(206345),	-- Fish Chunks
+i(206376),	-- Bulwark Icon
+i(206383),	-- Lithic Icon
+i(206384),	-- Astral Icon
+i(206385),	-- Clastic Icon
+i(206389),	-- Brimstone Icon
+i(206390),	-- Ichthyan Icon
+i(206391),	-- Syzygic Icon
+i(206466),	-- Prairie Crown
+i(206966),	-- Satyrweed Bulb \\ Lakeweed Bulb
+i(206985),	-- Echo of the Alpha
+i(208086),	-- Forged Scarlet Memorandum
+i(208140),	-- Wendigo Blood
+i(208760),	-- Glade Crown
+i(208764),	-- Rune of the Mind \\ Rune of the Banshee
+i(208766),	-- Helping Hand
+i(208767),	-- Rune of Mending
+i(208828),	-- Memory of a Broken Vow
+i(208848),	-- Cracked Skull-Shaped Geode
+i(209608),	-- Captain's Skeleton Key
+i(209748),	-- Althalaxx Orb
+i(209778),	-- Summoner's Salt
+i(209779),	-- Mote of Mannoroth
+i(209800),	-- Orb Fragments
+i(210045),	-- Shadeleaf
+i(210053),	-- Dire Wolf Paw
+i(210055),	-- Hillsbrad Human Bones
+i(210056),	-- Tincture of Waking Death
+i(210080),	-- Voodoo Offering
+i(210138),	-- Dark Iron Ordinance
+i(210146),	-- Shredder Turbocharger
+i(210179),	-- Spell Notes: ILMEGAI SARRBES
+i(210183),	-- Horn of Xelthos
+i(210188),	-- Shredded Work Order
+i(210209),	-- Twin Key
+i(210229),	-- Rune of Mutilation
+i(210655),	-- Spell Notes: TERWEM DINI
+i(210665),	-- Mote of Torrential Rage
+i(210667),	-- Mote of Infernal Rage
+i(210668),	-- Mote of Seismic Rage
+i(210712),	-- Elixir of Insight
+i(210724),	-- Hirzek's Staff
+i(210763),	-- Bough of Altek
+i(210765),	-- Orb of Des
+i(210772),	-- Supply Shipment: Copper Bars
+i(210953),	-- Eye of Bhossca
+i(210955),	-- Scarlet Initiate's Uniform
+i(210963),	-- Scryer's Key
+i(210966),	-- Blood of the Legion
+i(210967),	-- Confidential Message
+i(210968),	-- Reliquary Key
+i(210979),	-- Rune of Shadowstep \\ Rune of Blade Rush
+i(211368),	-- Supply Shipment
+i(211447),	-- Arms Shipment
+i(211448),	-- Signed Procurement Contract
+i(211799),	-- Sack of Stolen Goods
+i(211809),	-- Comprehension Primer
+i(211818),	-- Strange Water Globe
+i(212160),	-- Chronoboon Displacer
+i(213087),	-- Sergeant's Cloak
+i(213088),	-- Sergeant's Cloak
+1.15.0.52610
+i(213121),	-- Preserved Holly
+i(213443),	-- Ticking Present
+1.15.1.53009
+i(211269),	-- Primitive Drawing
+i(211301),	-- Rune of Expose Weakness
+i(212225),	-- Neverending Soul Vessel
+i(212748),	-- Tattered Note
+i(212994),	-- Stormchaser's Bindings
+i(212996),	-- Lightningcaller's Bindings
+i(212997),	-- Tidecaller's Bindings
+i(213127),	-- Spell Notes: PELFRB STOLLOTS
+i(213165),	-- Basilisks: Should Petrification be Feared?
+i(213391),	-- UNUSED Electrified Mithril Gauntlets
+i(213421),	-- Singed Note
+i(213426),	-- Ogre Lightning Rod
+i(213427),	-- Grime-Encrusted Salvage
+i(213526),	-- Hybrid Haunch
+i(213527),	-- Smuggler's Spice Blend
+i(213528),	-- Balmy Brew
+i(213529),	-- Viscous Venom
+i(213549),	-- Scroll of Arcane Angling
+i(213551),	-- Scroll of Controlled Displacement
+i(213552),	-- Tear of Theradras
+i(213553),	-- Tear of Theradras
+i(213554),	-- Vial of Crystal Water
+i(213558),	-- Elemental Salve
+i(213563),	-- Field Guide
+i(213564),	-- Scroll of Minor Evocation
+i(213565),	-- Entomology Starter Kit
+i(213583),	-- Brimstone Carving
+i(213594),	-- Idol of the Heckler
+i(213599),	-- Unsettling Vision
+i(213632),	-- Partial Spell Notes
+i(213633),	-- Partial Spell Notes
+i(213634),	-- Partial Spell Notes
+i(213701),	-- Strong Harpy Feather
+i(213709),	-- Cloud Serpent Fang
+i(213737),	-- Offering to the Wind Spirit
+i(214435),	-- Cougar Cage Key
+i(215112),	-- UNUSED - Cloak of Arcane Insulation
+i(215113),	-- UNUSED - Razor-Lined Shoulderpads
+i(215116),	-- UNUSED - Hyperconductive Speed Belt
+i(215126),	-- UNUSED Flask of Merciless Pursuit
+i(215371),	-- Jani's Charm
+i(215394),	-- Waylaid Supplies: Lesser Stoneshield Potions
+i(215405),	-- Waylaid Supplies: Gnomish Rocket Boots
+i(215406),	-- Waylaid Supplies: Goblin Mortars
+i(215425),	-- Swamp Echo
+i(215426),	-- Graveyard Echo
+i(215427),	-- Arathi Echo
+i(215428),	-- Theramore Echo
+i(215434),	-- UNUSED
+i(215441),	-- Broken Hammer
+i(215443),	-- Shattered Orb Fragment
+i(215450),	-- Tabard Project (Aidan)
+i(215456),	-- Singed Message
+i(215458),	-- Enclosed Message
+i(215459),	-- Enclosed Message
+i(215460),	-- Enclosed Message
+i(215468),	-- Orders from the Grand Crusader
+i(215683),	-- Geomancy: The Stone-Cold Truth
+i(215815),	-- Defensive Magics 101
+i(215816),	-- A Web of Lies: Debunking Myths and Legends
+i(215817),	-- Demons and You
+i(215820),	-- Mummies: A Guide to the Unsavory Undead
+i(215822),	-- RwlRwlRwlRwl!
+i(215824),	-- A Ludite's Guide to Caring for Your Demonic Pet
+i(216523),	-- Rusted Cage Key
+i(216549),	-- Reins of the Bengal Tiger
+i(216610),	-- Orders from the Grand Crusader
+i(216616),	-- Compound Cage Key
+i(216617),	-- Kurzen Fighter's Uniform
+i(216618),	-- Captain Aransas' Reward
+i(216633),	-- Hydraulic Truesilver Strut
+i(216636),	-- Charged Voidcore
+i(216879),	-- Mysterious Troll Scroll
+i(216880),	-- Deciphered Troll Scroll
+i(216938),	-- Greater Insignia of the Alliance
+i(216939),	-- Greater Insignia of the Horde
+i(216956),	-- Torn Letter
+i(217017),	-- Fishing Tournament!
+i(217161),	-- Spell Notes: TROFF IRESTBOL
+1.15.1.53247
+i(217260),	-- Pattern: Big Voodoo Mask
+i(217262),	-- Pattern: Big Voodoo Robe
+i(217264),	-- Pattern: Guardian Leather Bracers
+i(217266),	-- Pattern: Guardian Belt
+i(217271),	-- Pattern: Turtle Scale Gloves
+i(217693),	-- Invisibility Potion
+1.15.2.53941
+i(217609),	-- Talisman of Kazdor
+i(217717),	-- Hollow Emblem
+i(217718),	-- Emblem of Blood Magic
+i(217719),	-- Blood Magic Essence
+i(217720),	-- Offering of Flesh
+i(217721),	-- Offering of Bone
+i(217727),	-- Ward of the Dead
+i(217737),	-- Modified Talisman
+i(218083),	-- Tail of Eranikus
+i(219345),	-- Infernal Lasso
+i(219399),	-- Nightmare Moss
+i(219401),	-- Cold Iron Ore
+i(219402),	-- Dream-Touched Dragonscale
+i(219404),	-- Shadowscythe
+i(219405),	-- Ogre Magi Text
+i(219406),	-- Unhatched Green Dragon Egg
+i(219414),	-- Shattered Eggshells
+i(219444),	-- Dreamroot
+i(219445),	-- Fool's Gold Dust
+i(219446),	-- Dream-Infused Dragonscale
+i(219447),	-- Dream-Touched Dragon Egg
+i(219448),	-- Dreamengine
+i(219449),	-- Azsharan Prophecy
+i(219454),	-- Star Lotus
+i(219486),	-- Starsilver Ore
+i(219487),	-- Starshell
+i(219488),	-- Star-Touched Dragonegg
+i(219490),	-- Elunar Relic
+i(219491),	-- Dreampearl
+i(219514),	-- Moonroot
+i(219515),	-- Greater Moonstone
+i(219517),	-- Moondragon Scale
+i(219518),	-- Harpy Screed
+i(219519),	-- Mad Keeper's Notes
+i(219520),	-- Moonglow Dragonegg
+i(219759),	-- Charla's Field Report
+i(219770),	-- Gemeron's Field Report
+i(219771),	-- Thandros' Field Report
+i(219772),	-- Fallia's Field Report
+i(219776),	-- Intelligence Report: Vul'gol Ogre Mound
+i(219778),	-- Intelligence Report: Rotting Orchard
+i(219803),	-- Intelligence Report: Yorgen Farmstead
+i(219918),	-- Bloody Missive
+i(219924),	-- Intelligence Report: Forest Song
+i(219925),	-- Intelligence Report: Satyrnaar
+i(219926),	-- Intelligence Report: Warsong Lumber Camp
+i(219928),	-- Intelligence Report: Agol'watha
+i(219929),	-- Bloody Missive
+i(219930),	-- Bloody Missive
+i(219935),	-- Kajind's Blade
+i(219937),	-- Intelligence Report: Shaol'watha
+i(219938),	-- Intelligence Report: Skulk Rock
+i(219957),	-- Intelligence Report: Oneiros
+i(219958),	-- Intelligence Report: Twin Colossals
+i(219959),	-- Intelligence Report: Ruins of Ravenwind
+i(220166),	-- Fiery Infernal Core
+i(220167),	-- Shimmering Grave Dust
+i(220169),	-- Symbol of Faith
+i(220213),	-- Fel Lifeblood
+i(220214),	-- Infernal Chain Link
+i(220216),	-- Infernal Lasso
+i(220217),	-- Rune of the Ravenous
+i(220345),	-- Sanguine Sorcery
+i(220346),	-- Legends of the Tidesages
+i(220347),	-- The Liminal and the Arcane
+i(220348),	-- Everyday Etiquette
+i(220349),	-- Stonewrought Design
+i(220350),	-- Venomous Journeys
+i(220351),	-- Murky Air Sapta
+i(220352),	-- A Mind of Metal
+i(220353),	-- Conjurer's Codex
+i(220375),	-- Fragment of Air
+i(220379),	-- Torn Shaman's Notes
+i(220510),	-- Elemental Essence
+i(220525),	-- Glowing Fragment of Air
+i(220526),	-- Sludge-Covered G-7 C.O.R.E. Processor
+i(220531),	-- Undulating Purple Flower
+i(220570),	-- Mantle of Nightmares
+i(220682),	-- Rune of the Unbridled
+i(220687),	-- Rune of the Raptor
+i(220754),	-- Rune of the Windstorm
+i(220791),	-- Rune of the Jungle Cat
+i(220794),	-- Knight's Plate Hauberk
+i(220795),	-- Knight-Lieutenant's Plate Pauldrons
+i(220796),	-- Blood Guard's Plate Pauldrons
+i(220797),	-- Knight's Plate Leggings
+i(220798),	-- Stone Guard's Plate Leggings
+i(220799),	-- Sergeant Major's Plate Greaves
+i(220800),	-- First Sergeant's Plate Greaves
+i(220801),	-- Stone Guard's Plate Armor
+i(220803),	-- Blood Guard's Plate Helm
+i(220804),	-- Knight-Lieutenant's Plate Helm
+i(220806),	-- Sergeant Major's Plate Gauntlets
+i(220807),	-- First Sergeant's Plate Gauntlets
+i(220808),	-- Knight-Lieutenant's Imbued Pauldrons
+i(220809),	-- Knight's Imbued Leggings
+i(220810),	-- Knight-Lieutenant's Imbued Helmet
+i(220811),	-- Sergeant Major's Imbued Greaves
+i(220812),	-- Sergeant Major's Imbued Gauntlets
+i(220813),	-- Knight's Imbued Armor
+i(220814),	-- Sergeant Major's Lamellar Boots
+i(220815),	-- Knight's Lamellar Chestplate
+i(220816),	-- Knight's Lamellar Legplates
+i(220817),	-- Sergeant Major's Lamellar Gauntlets
+i(220818),	-- Knight-Lieutenant's Lamellar Pauldrons
+i(220819),	-- Knight-Lieutenant's Lamellar Helm
+i(220820),	-- Blood Guard's Mail Helmet
+i(220821),	-- Blood Guard's Chain Helmet
+i(220822),	-- Knight-Lieutenant's Chain Helmet
+i(220823),	-- Blood Guard's Mail Epaulets
+i(220824),	-- Blood Guard's Chain Epaulets
+i(220825),	-- Knight-Lieutenant's Chain Epaulets
+i(220826),	-- Stone Guard's Mail Armor
+i(220827),	-- Stone Guard's Chain Armor
+i(220828),	-- Knight's Chain Armor
+i(220829),	-- Sergeant Major's Chain Gauntlets
+i(220830),	-- First Sergeant's Chain Gauntlets
+i(220831),	-- First Sergeant's Mail Gauntlets
+i(220832),	-- Knight's Chain Legplates
+i(220833),	-- Stone Guard's Chain Legplates
+i(220834),	-- Stone Guard's Mail Legplates
+i(220835),	-- First Sergeant's Mail Sabatons
+i(220836),	-- First Sergeant's Chain Sabatons
+i(220837),	-- Sergeant Major's Chain Sabatons
+i(220838),	-- Stone Guard's Inscribed Chestpiece
+i(220839),	-- Stone Guard's Inscribed Legplates
+i(220840),	-- First Sergeant's Inscribed Sabatons
+i(220841),	-- Blood Guard's Inscribed Shoulder Pads
+i(220842),	-- Blood Guard's Inscribed Skullcap
+i(220843),	-- First Sergeant's Inscribed Gauntlets
+i(220844),	-- Stone Guard's Pulsing Breastplate
+i(220845),	-- First Sergeant's Pulsing Gauntlets
+i(220846),	-- First Sergeant's Pulsing Greaves
+i(220847),	-- Stone Guard's Pulsing Legplates
+i(220848),	-- Blood Guard's Pulsing Helmet
+i(220849),	-- Blood Guard's Pulsing Shoulders
+i(220850),	-- Knight-Lieutenant's Leather Headband
+i(220851),	-- Blood Guard's Leather Headband
+i(220852),	-- Knight-Lieutenant's Leather Shoulders
+i(220853),	-- Blood Guard's Leather Shoulders
+i(220854),	-- Knight's Leather Armor
+i(220855),	-- Stone Guard's Leather Armor
+i(220856),	-- Sergeant Major's Leather Gauntlets
+i(220857),	-- First Sergeant's Leather Gauntlets
+i(220858),	-- Knight's Leather Pants
+i(220859),	-- Stone Guard's Leather Pants
+i(220860),	-- Sergeant Major's Leather Boots
+i(220861),	-- First Sergeant's Leather Boots
+i(220862),	-- Sergeant Major's Crackling Leather Boots
+i(220863),	-- First Sergeant's Crackling Leather Boots
+i(220864),	-- Knight's Crackling Leather Leggings
+i(220865),	-- Stone Guard's Crackling Leather Leggings
+i(220866),	-- Sergeant Major's Crackling Leather Gauntlets
+i(220867),	-- First Sergeant's Crackling Leather Gauntlets
+i(220868),	-- Knight's Crackling Leather Tunic
+i(220869),	-- Stone Guard's Crackling Leather Tunic
+i(220870),	-- Knight-Lieutenant's Crackling Leather Spaulders
+i(220871),	-- Blood Guard's Crackling Leather Spaulders
+i(220872),	-- Knight-Lieutenant's Crackling Leather Helmet
+i(220873),	-- Blood Guard's Crackling Leather Helmet
+i(220874),	-- Knight-Lieutenant's Restored Leather Helm
+i(220875),	-- Blood Guard's Restored Leather Helm
+i(220876),	-- Knight-Lieutenant's Restored Leather Spaulders
+i(220877),	-- Blood Guard's Restored Leather Spaulders
+i(220878),	-- Knight's Restored Leather Jerkin
+i(220879),	-- Stone Guard's Restored Leather Jerkin
+i(220880),	-- Sergeant Major's Restored Leather Gloves
+i(220881),	-- First Sergeant's Restored Leather Gloves
+i(220882),	-- Knight's Restored Leather Leggings
+i(220883),	-- Stone Guard's Restored Leather Leggings
+i(220884),	-- Sergeant Major's Restored Leather Boots
+i(220885),	-- First Sergeant's Restored Leather Boots
+i(220886),	-- Knight's Dreadweave Vest
+i(220887),	-- Knight-Lieutenant's Dreadweave Mantle
+i(220888),	-- Knight's Dreadweave Leggings
+i(220889),	-- Knight-Lieutenant's Dreadweave Hat
+i(220890),	-- Sergeant Major's Dreadweave Gloves
+i(220891),	-- Sergeant Major's Dreadweave Boots
+i(220892),	-- Knight's Satin Armor
+i(220893),	-- Knight's Satin Leggings
+i(220894),	-- Knight-Lieutenant's Satin Pads
+i(220895),	-- Sergeant Major's Satin Boots
+i(220896),	-- Knight-Lieutenant's Satin Cover
+i(220897),	-- Sergeant Major's Satin Gloves
+i(220898),	-- First Sergeant's Satin Gloves
+i(220899),	-- Blood Guard's Satin Cover
+i(220900),	-- First Sergeant's Satin Boots
+i(220901),	-- Blood Guard's Satin Pads
+i(220902),	-- Stone Guard's Satin Leggings
+i(220903),	-- Stone Guard's Satin Armor
+i(220904),	-- Stone Guard's Dreadweave Vest
+i(220905),	-- Blood Guard's Dreadweave Mantle
+i(220906),	-- Stone Guard's Dreadweave Leggings
+i(220907),	-- Blood Guard's Dreadweave Hat
+i(220908),	-- First Sergeant's Dreadweave Gloves
+i(220909),	-- First Sergeant's Dreadweave Boots
+i(220914),	-- Broken Geode Hammer
+i(220915),	-- Idol of the Raging Shambler
+i(220964),	-- Decharged Void-Powered Vambraces
+i(221017),	-- Keldara's Log
+i(221018),	-- Field Medicine Kit
+i(221019),	-- Satyrweed Sample
+i(221020),	-- Rune of the Moon Goddess
+i(221030),	-- Atal'ai Mojo of Forbidden Magic
+i(221191),	-- Dreamstone
+i(221192),	-- Dream Journal
+i(221196),	-- Atal'ai Mojo of War
+i(221199),	-- Satyrweed Tincture
+i(221256),	-- Right Arm of the Obliterator
+i(221257),	-- Left Arm of the Obliterator
+i(221258),	-- Right Foot of the Obliterator
+i(221259),	-- Left Foot of the Obliterator
+i(221260),	-- Head of the Obliterator
+i(221267),	-- Rune of the Bloodthirsty
+i(221311),	-- Atal'ai Mojo of Life
+i(221314),	-- Wanted Notice
+i(221317),	-- Feralas Leycryst
+i(221318),	-- Azshara Leycryst
+i(221319),	-- Blackrock Leycryst
+i(221320),	-- Hinterlands Leycryst
+i(221321),	-- Atal'ai Signet of Might
+i(221322),	-- Atal'ai Signet of Mojo
+i(221323),	-- Atal'ai Signet of Serenity
+i(221324),	-- Brittle Shadowforge Key
+i(221325),	-- EZ-Splode Blasting Charge
+i(221326),	-- Sacred Stag Heart
+i(221327),	-- Schematic: Gnomish Shrink Ray
+i(221328),	-- Schematic: Gnomish Goggles
+i(221329),	-- Schematic: Gnomish Net-o-matic Projector
+i(221330),	-- Schematic: Gnomish Harm Prevention Belt
+i(221331),	-- Schematic: Gnomish Rocket Boots
+i(221332),	-- Schematic: Gnomish Battle Chicken
+i(221333),	-- Schematic: Gnomish Mind Control Cap
+i(221334),	-- Schematic: Gnomish Death Ray
+i(221335),	-- Schematic: Goblin Construction Helmet
+i(221336),	-- Schematic: Goblin Mining Helmet
+i(221337),	-- Schematic: Goblin Mortar
+i(221338),	-- Schematic: Goblin Sapper Charge
+i(221339),	-- Schematic: Goblin Rocket Boots
+i(221340),	-- Schematic: Goblin Bomb Dispenser
+i(221341),	-- Schematic: The Big One
+i(221342),	-- Schematic: Goblin Dragon Gun
+i(221343),	-- Schematic: Goblin Rocket Helmet
+i(221345),	-- Corrupted Blood of Eranikus
+i(221347),	-- Murky Fire Sapta
+i(221348),	-- Murky Water Sapta
+i(221349),	-- Murky Earth Sapta
+i(221350),	-- Charred Shaman's Notes
+i(221351),	-- Waterlogged Shaman's Notes
+i(221352),	-- Smudged Shaman's Notes
+i(221353),	-- Fragment of Fire
+i(221354),	-- Fragment of Water
+i(221355),	-- Fragment of Earth
+i(221356),	-- Glowing Fragment of Fire
+i(221357),	-- Glowing Fragment of Water
+i(221358),	-- Glowing Fragment of Earth
+i(221359),	-- Pristine Owlbeast Quill
+i(221360),	-- Farraki Papyrus
+i(221361),	-- Zukk'ash Resin
+i(221370),	-- Precious Medallion
+i(221371),	-- Kidnapper's Coin Purse
+i(221372),	-- Mangled Coin Purse
+i(221428),	-- Rune of Foul Play
+i(221433),	-- Rune of Focus
+i(221444),	-- Jungle Durian
+i(221445),	-- Rune of Focused Fire
+i(221461),	-- Rune of Carnage
+i(221470),	-- Dream Emerald
+i(221471),	-- Emerald Wardens Chest
+i(221473),	-- Rune of the Watchman
+i(221497),	-- Old Key
+i(221519),	-- Mannoroc Orb
+i(221544),	-- Stormcrow Egg
+i(221545),	-- Deciphered Warlock Notes
+i(221549),	-- Wastewander Cipher
+i(221971),	-- Dreamsworn Horn
+i(221972),	-- Dreampyre Fire
+i(221973),	-- Dreamhunter Fang
+i(221974),	-- Grimtotem Necklace
+i(221975),	-- Broken Woodpaw Staff
+i(221976),	-- Diseased Nature Staff
+i(221979),	-- Prophecy of Verdant Winter
+i(221980),	-- Prophecy of Awakened Chaos
+i(221981),	-- Prophecy of the Lost Tribe
+i(223073),	-- Knight-Lieutenant's Mail Epaulets
+i(223074),	-- Knight's Mail Legplates
+i(223075),	-- Knight-Lieutenant's Mail Helmet
+i(223076),	-- Sergeant Major's Mail Gauntlets
+i(223077),	-- Sergeant Major's Mail Sabatons
+i(223078),	-- Knight's Mail Armor
+i(223147),	-- Spell Notes: Balefire Bolt
+i(223171),	-- Scroll of Geomancy
+i(223173),	-- Geomancer's Cord
+i(223174),	-- Geomancer's Boots
+i(223175),	-- Geomancer's Cloak
+i(223177),	-- Geomancer's Cap
+i(223178),	-- Geomancer's Bracers
+i(223180),	-- Geomancer's Gloves
+i(223181),	-- Geomancer's Spaulders
+i(223182),	-- Geomancer's Trousers
+i(223183),	-- Geomancer's Wraps
+i(223323),	-- Shirt \\ Premo's Poise-Demanding Uniform
+i(223330),	-- Pulsating Eye
+i(223331),	-- Pulsating Eye
+i(223332),	-- Vibrating Eye
+i(223333),	-- Baleful Eye
+i(223334),	-- Glowing Eye
+i(223335),	-- Oozing Eye
+i(223336),	-- Piercing Eye
+i(223337),	-- Burning Eye
+1.15.2.54332
+i(220775),	-- Engineering Exchange Ticket
+i(220916),	-- Thunderstomp Stegodon Horn
+i(220917),	-- Box of Scarlet Dye
+1.15.3.55112
+i(224806),	-- Legion Portal Tuner
+i(224836),	-- Otherworldly Treasure
+i(224848),	-- Otherworldly Treasure
+i(224849),	-- Otherworldly Treasure
+i(224850),	-- Otherworldly Treasure
+i(224851),	-- Otherworldly Treasure
+i(224893),	-- Overcharged Portal Tuner
+i(224912),	-- Portal Tuner Tuner
+i(225675),	-- Sooty Obsidian Core
+i(225676),	-- Molten Obsidian Core
+i(225740),	-- Rune of Composure
+i(225838),	-- Voltaic Icon
+i(225893),	-- Epoch's End
+i(225914),	-- Rune of the Bound Spirit
+i(225942),	-- Tainted Boar Meat
+i(225943),	-- Rancid Hunk of Flesh
+i(225955),	-- Rune of the Resourceful
+i(226201),	-- Squire Cuthbert's Blade
+i(226207),	-- Echo of Anastari
+i(226208),	-- Echo of Barthilas
+i(226209),	-- Echo of Dathrohan
+i(226210),	-- Echo of Maleki
+i(226211),	-- Echo of Nerub'enkan
+i(226212),	-- Echo of Ramstein
+i(226213),	-- Echo of Rivendare
+i(226214),	-- Echo of Willey
+i(226252),	-- Rune of the Guerrilla
+i(226374),	-- Occult Poison I
+i(226420),	-- Finely Crafted Bust
+i(226421),	-- PLACEHOLDER_ASHBRINGER_QUESTITEM_01
+i(226472),	-- Stratholme Shadow Jar
+i(226526),	-- Busted Gizmo
+i(226546),	-- Desert Sonar
+i(226587),	-- Rune of Shelling
+i(226678),	-- Premonition and Combat Foresight
+i(226679),	-- Timeless Wanderer's Insights
+i(226680),	-- Rune of the First Warrior
+i(226698),	-- Vertically Composited Patch Hampler
+i(226699),	-- Brass-fitted Flam-Tamp Flange
+i(226856),	-- Guided Buoyancy Accelerant
+i(227041),	-- Scourge Shadow Scalpel
+i(227285),	-- Structural Dynamics of Flow
+i(227444),	-- Idol of the Huntress
+i(227451),	-- Sending Sigil
+i(227456),	-- Rune of the Crimson Tempest \\ Rune of Crimson Tempest
+i(227549),	-- Scrap of Parchment
+i(227552),	-- Shredded Parchment
+i(227685),	-- Modified Shadow Scalpel
+i(227686),	-- Ornate Warhammer
+i(227687),	-- Orthas' Favorite Gold Tooth
+i(227689),	-- Partially-Digested Plate Armor
+i(227690),	-- Necrotic Runestone
+i(227724),	-- Bloodstained Commendation
+1.15.3.55244
+i(227743),	-- Obsidian Power Core
+i(227745),	-- Family Heirloom
+i(227746),	-- Rune of the World Tree
+i(227747),	-- Family Records
+i(227748),	-- Survivor Journal
+i(227749),	-- Rune of the Falling Star
+i(227767),	-- Flamestone Cluster
+i(227768),	-- Dreamjuice
+i(227806),	-- Wisdom of the Timbermaw
+i(227811),	-- Defender of the Timbermaw
+i(227812),	-- Furbolg Medicine Pouch
+i(227845),	-- Refined Arcanite Reaper
+i(227847),	-- Devilcore Leggings
+i(227848),	-- Devilcore Gauntlets
+i(227850),	-- Sageblade of the Archmagus
+i(227855),	-- Synthetic Gordok Ogre Suit
+i(227858),	-- Hammer of the Wild Gods
+i(227873),	-- Honed Blue Dragonscale Shoulders
+i(227874),	-- Honed Blue Dragonscale Leggings
+i(227875),	-- Honed Blue Dragonscale Breastplate
+i(227877),	-- Living Green Dragonscale Leggings
+i(227878),	-- Living Green Dragonscale Gauntlets
+i(227879),	-- Living Green Dragonscale Breastplate
+i(227885),	-- Stronger-hold Gauntlets
+i(227887),	-- Hardened Frostguard
+i(227895),	-- Pattern: Golden Mantle of the Dawn
+i(227896),	-- Pattern: Argent Boots
+i(227897),	-- Pattern: Argent Shoulders
+i(227898),	-- Pattern: Honed Blue Dragonscale Breastplate
+i(227899),	-- Pattern: Honed Blue Dragonscale Shoulders
+i(227900),	-- Pattern: Living Green Dragonscale Leggings
+i(227912),	-- Applied Divinity
+i(227914),	-- Owlbeast Pineal Gland
+i(227921),	-- Rune of Knives
+i(227922),	-- Rune of the Swashbuckler
+i(227928),	-- Toolbox Key
+i(227930),	-- Safe Box Key
+i(227931),	-- Hidden Bundle
+i(227932),	-- Rusty Crowbar
+i(227936),	-- Diplomat Ring
+i(227937),	-- Puzzle Box
+i(227938),	-- Shard of Light
+i(227939),	-- Shard of Light
+i(227942),	-- Serpentine Skuller
+i(227943),	-- Verek's Collar
+i(227944),	-- Verek's Leash
+i(227945),	-- Soot Encrusted Footwear
+i(227946),	-- Rubidium Hammer
+i(227947),	-- Golem Fitted Pauldrons
+i(227949),	-- Force of Magma
+i(227950),	-- Stone of the Earth
+i(227951),	-- Bloodfist
+i(227953),	-- The Hammer of Grace
+i(227954),	-- Boreal Mantle
+i(227966),	-- Naglering
+i(227968),	-- Rockfist
+i(227969),	-- Chief Architect's Monocle
+i(227975),	-- Golem Skull Helm
+i(227976),	-- Libram of Truth
+i(227977),	-- Totem of Rage
+i(227979),	-- Hands of the Exalted Herald
+i(227989),	-- Hand of Justice
+i(227992),	-- Death Knight Sabatons
+i(227995),	-- Cadaverous Armor
+i(228035),	-- Lord Blackwood's Buckler
+i(228043),	-- Boots of the Shrieker
+i(228048),	-- Libram of Divinity
+i(228049),	-- Totem of Sustaining
+i(228105),	-- Everburning Flame Core \\ Molten Orb
+i(228114),	-- Plans: Refined Arcanite Reaper
+i(228116),	-- Pattern: Synthetic Gordok Ogre Suit
+i(228117),	-- Plans: Refined Arcanite Champion
+i(228118),	-- Plans: Stronger-hold Gauntlets
+i(228119),	-- Pattern: Devilcore Gauntlets
+i(228120),	-- Pattern: Devilcore Leggings
+i(228122),	-- The Molten Core
+i(228123),	-- Jubilant Epiphany
+i(228124),	-- Oneiric Epiphany
+i(228125),	-- Refined Arcanite Champion
+i(228129),	-- Shadowflame Skull
+i(228130),	-- Altruist Ward
+i(228131),	-- Altruist Ward
+i(228132),	-- Undead Potatoes
+i(228133),	-- Magma or Lava?
+i(228134),	-- Northern Kalimdor - A Comprehensive Guide
+i(228135),	-- A Study of the Light
+i(228136),	-- Ka-Boom!
+i(228138),	-- The Knight and the Lady
+i(228140),	-- Scourge: Undead Menace or Misunderstood?
+i(228141),	-- Necromancy 101
+i(228143),	-- Shadowflame Sword
+i(228144),	-- Strange Note
+i(228164),	-- Personal Ballista
+i(228167),	-- Whelpling-Head Trophy
+i(228191),	-- Shimmering Molten Mineral
+i(228227),	-- Scroll of Overwhelming Power \\ Aggrend's Scroll of Overwhelming Power
+i(228230),	-- Refined Hammer of the Titans
+i(228251),	-- Pattern: Living Green Dragonscale Gauntlets \\ Pattern: Living Green Dragonscale Leggings
+1.15.3.55348
+i(225929),	-- Plagued Soul Shard
+i(225938),	-- Torn Spell Notes
+i(225939),	-- Torn Spell Notes
+i(225940),	-- Torn Spell Notes
+i(225941),	-- Torn Spell Notes
+i(225954),	-- Charred Spell Notes
+i(227658),	-- Shadowsworn Note
+i(227796),	-- Mysterious Darnassian Scroll
+i(227797),	-- Deciphered Darnassian Scroll
+i(227924),	-- Unusual Flask
+i(228305),	-- Plans: Refined Hammer of the Titans
+i(228309),	-- Pattern: Living Green Dragonscale Breastplate
+i(228310),	-- Plans: Hardened Frostguard
+i(228323),	-- Copper Slaughter Coin
+i(228324),	-- Gold Slaughter Coin
+i(228325),	-- Silver Slaughter Coin
+i(228326),	-- Satchel of Copper Slaughter Coins
+i(228327),	-- Satchel of Silver Slaughter Coins
+i(228498),	-- Dreadblade of the Destructor
+i(228615),	-- Otherworldly Treasure
+1.15.3.55391
+i(228688),	-- Head of Onyxia
+i(228689),	-- Head of Onyxia
+i(228696),	-- Heated Ancient Blade
+i(228697),	-- Treated Ancient Blade
+i(228719),	-- TEST ROGUE PANTS
+1.15.3.55515
+i(228749),	-- Splinter of Nordrassil
+i(228797),	-- Grimoire of Fel Armor
+1.15.3.55563
+i(227688),	-- Gorehowl
+i(228746),	-- Fluorescent Green Mechanostrider
+i(228747),	-- Reins of the Golden Sabercat
+i(228748),	-- Whistle of the Mottled Blood Raptor
+i(228912),	-- Artifact Storage Key
+1.15.3.55917
+i(208222),	-- Old Guard Retaliator
+i(228978),	-- Enchanted Sigil: Flowing Waters
+i(229055),	-- Frayed Aranasi Silk
+i(229056),	-- Pumice Chunk
+i(229057),	-- Impounded Goods
+i(229378),	-- Magmadar's Right Claw
+i(229382),	-- Hyperthermically Insulated Lava Dredger
+1.15.3.56488
+i(220610),	-- Rune of Mental Dexterity
+i(220612),	-- Rune of Tidal Waves
+i(220613),	-- Rune of Rolling Thunder
+i(220614),	-- Rune of Static Shock
+i(220616),	-- Rune of Overcharged
+i(220617),	-- Rune of Pandemic
+i(220618),	-- Rune of Immolation Aura
+i(225686),	-- Rune of Decimation
+i(225687),	-- Rune of Infernal Armor
+i(225688),	-- Rune of Mark of Chaos
+i(225689),	-- Spell Notes: Arcane Barrage
+i(225690),	-- Spell Notes: Frozen Orb
+i(225691),	-- Spell Notes: Overheat
+1.15.4.56400
+i(224122),	-- Dream Eater
+i(224279),	-- Terrestris
+i(224280),	-- Suzerain, Defender of the Dragonflights
+i(224281),	-- Gla'sir
+i(224282),	-- Rae'lar
+i(229362),	-- Storehouse Key
+i(229415),	-- Survival Supplies
+i(229416),	-- Warm Fur
+i(229749),	-- Truthbearer
+i(229806),	-- Truthbearer
+i(229894),	-- Dream Emerald
+i(229897),	-- Scroll: Create Signet of Beckoning
+i(229909),	-- Staff of Order
+i(229911),	-- Caius' Dream Eater
+i(229964),	-- Demon Lord's Hoof
+i(229965),	-- The Eye of Az'olgothal
+i(229966),	-- Torque of the Silver Hand
+i(229971),	-- Staff of Inferno
+i(229972),	-- Staff of Rime
+i(230003),	-- Hammer of the Lightbringer
+i(230018),	-- Mannoroc Orb Fragments
+i(230751),	-- Ninja Obi
+i(230903),	-- Scroll: Essence of Fire
+i(230908),	-- Imbued Essence of Fire
+i(230909),	-- Depleted Essence of Fire
+i(230946),	-- Scroll: SEENECS FO ROFTS
+i(230947),	-- Scroll: Essence of Frost
+i(230948),	-- Imbued Essence of Frost
+i(230949),	-- Depleted Essence of Frost
+i(230984),	-- Incomplete Staff of Order
+i(231014),	-- Lizardscale Eyepatch
+i(231015),	-- Twill Mask
+i(231275),	-- Blazefury Retributer
+i(231298),	-- Scroll of Lesser Spatial Mending
+i(231304),	-- Scroll: SERELS PATALIS GNEMIND
+i(231382),	-- Vessel of Rebirth
+i(231383),	-- Presence of Sight
+i(231384),	-- Falcon's Fury
+i(231385),	-- Simulacrum of the Dragon Soul
+i(231386),	-- Flawless Black Dragonscale
+i(231466),	-- Blackwing Warlock's Codex
+i(231509),	-- Cassandra's Tome
+i(231625),	-- Testament of Horn of Lordaeron
+i(231642),	-- Warden's Herb Bag
+i(231644),	-- Warden's Enchanting Bag
+i(231732),	-- Suspicious Supplies
+i(231752),	-- S03 - Monster - Sword, 2H Alliance
+i(231754),	-- Kestrel
+i(231755),	-- Peregrine
+i(231778),	-- Mountain Spring Water
+i(231789),	-- Sigil of the Keeper
+i(231792),	-- Soul of Mischief
+i(231797),	-- Soul of the Void
+i(231798),	-- Soul of Enthralling
+i(231799),	-- Soul of Devouring
+i(231800),	-- Soul of Des'Altek
+i(231811),	-- Libram of Awe
+i(231828),	-- Rune of Meditation Specialization
+i(231829),	-- Rune of Healing Specialization
+i(231836),	-- Glowing Scroll of Spatial Mending
+i(231837),	-- Shadow Carving
+i(231841),	-- Blood of the Lightbringer
+i(231842),	-- Nandieb's Stave
+i(231843),	-- First Sigil Fragment
+i(231844),	-- Second Sigil Fragment
+i(231845),	-- Third Sigil Fragment
+i(231890),	-- Terrestris
+i(231891),	-- Treatise of the Falcon
+i(231901),	-- Truthbearer
+i(231902),	-- Ada's Amulet
+i(231903),	-- Scrap of Torn Cloth
+i(231904),	-- Tarnished Horn
+i(231909),	-- Crystallized Starlight
+i(231996),	-- Supercharged Gobmogrifier
+i(232312),	-- Blood of the Lightbringer
+i(232324),	-- Bird Whistle \\ Whistle
+1.15.4.56493
+i(232344),	-- Vick's VIP Pass
+i(232358),	-- Empty Reliquary
+i(232373),	-- Refined Eye of Sulfuras
+i(232414),	-- Dragontooth Blade
+1.15.4.56573
+i(232454),	-- Emblem of the Wild Gods
+i(232455),	-- Emblem of Dishonor
+i(232456),	-- Emblem of the Violet Eye
+i(232457),	-- Emblem of the Worldcore
+i(232458),	-- Rune of Improved Sanctuary
+i(232459),	-- Rune of Backdraft
+i(232460),	-- Rune of Displacement
+i(232461),	-- Rune of Despair
+i(232462),	-- Rune of Purifying Power
+1.15.5.57537
+i(232549),	-- Logistics Task Briefing VI
+i(232652),	-- Zila Amanemodas
+i(233197),	-- Argent Training Manual
+i(233198),	-- Horn of the Dawn
+i(233200),	-- Songflower Seed
+i(233206),	-- Overseer's Anvil
+i(233208),	-- "Defective" Magic 8-Ball
+i(233209),	-- Firewater Cauldron
+i(233211),	-- Spirit Conch
+i(233215),	-- Explosive Sand Trap
+i(233216),	-- Freez-O-Matic Ray
+i(233217),	-- Tunneler's Incense
+i(233226),	-- Ancient Zandalarian Rope
+i(233250),	-- Ancient Branch
+i(233358),	-- Tamed Silithid Tank
+i(233672),	-- Doomcaller's Pants
+i(233673),	-- Doomcaller's Treads
+i(233696),	-- Stormcaller's Sabatons
+i(233724),	-- Battle Hardened Plate Girdle
+i(233725),	-- Battle Hardened Plate Girdle
+i(233726),	-- Battle Hardened Plate Armguards
+i(233727),	-- Battle Hardened Plate Armguards
+i(233728),	-- Blood-Caked Insignia
+i(233729),	-- Blood-Caked Choker
+i(233730),	-- Blood-Caked Talisman
+i(233731),	-- Blood-Caked Amulet
+i(233732),	-- Blood-Caked Necklace
+i(233733),	-- Blood-Caked Ring
+i(233734),	-- Blood-Caked Circle
+i(233735),	-- Blood-Caked Loop
+i(233736),	-- Blood-Caked Band
+i(233737),	-- Blood-Caked Cloak
+i(233738),	-- Blood-Caked Cape
+i(233739),	-- Blood-Caked Drape
+i(233740),	-- Blood-Caked Shroud
+i(233741),	-- Battle Hardened Lamellar Belt
+i(233742),	-- Battle Hardened Lamellar Armguards
+i(233743),	-- Battle Hardened Lamellar Wrists
+i(233744),	-- Battle Hardened Lamellar Cord
+i(233745),	-- Battle Hardened Mail Waistband
+i(233746),	-- Battle Hardened Mail Cord
+i(233747),	-- Battle Hardened Mail Belt
+i(233748),	-- Battle Hardened Mail Bracers
+i(233749),	-- Battle Hardened Mail Wristguards
+i(233750),	-- Battle Hardened Mail Vambraces
+i(233751),	-- Battle Hardened Chain Girdle
+i(233752),	-- Battle Hardened Chain Girdle
+i(233753),	-- Battle Hardened Chain Belt
+i(233754),	-- Battle Hardened Chain Belt
+i(233755),	-- Battle Hardened Chain Wristguards
+i(233756),	-- Battle Hardened Chain Wristguards
+i(233757),	-- Battle Hardened Chain Bracers
+i(233758),	-- Battle Hardened Chain Bracers
+i(233759),	-- Battle Hardened Dragonhide Bracers
+i(233760),	-- Battle Hardened Dragonhide Bracers
+i(233761),	-- Battle Hardened Dragonhide Belt
+i(233762),	-- Battle Hardened Dragonhide Belt
+i(233763),	-- Battle Hardened Dragonhide Waistguard
+i(233764),	-- Battle Hardened Dragonhide Waistguard
+i(233765),	-- Battle Hardened Dragonhide Cord
+i(233766),	-- Battle Hardened Dragonhide Cord
+i(233767),	-- Battle Hardened Dragonhide Wrists
+i(233768),	-- Battle Hardened Dragonhide Wrists
+i(233769),	-- Battle Hardened Dragonhide Armbands
+i(233770),	-- Battle Hardened Dragonhide Armbands
+i(233771),	-- Battle Hardened Leather Girdle
+i(233772),	-- Battle Hardened Leather Girdle
+i(233773),	-- Battle Hardened Leather Armsplints
+i(233774),	-- Battle Hardened Leather Armsplints
+i(233775),	-- Battle Hardened Silk Cuffs
+i(233776),	-- Battle Hardened Silk Cuffs
+i(233777),	-- Battle Hardened Silk Sash
+i(233778),	-- Battle Hardened Silk Sash
+i(233779),	-- Battle Hardened Satin Bracers
+i(233780),	-- Battle Hardened Satin Bracers
+i(233781),	-- Battle Hardened Satin Wrists
+i(233782),	-- Battle Hardened Satin Wrists
+i(233783),	-- Battle Hardened Satin Sash
+i(233784),	-- Battle Hardened Satin Sash
+i(233785),	-- Battle Hardened Satin Cinch
+i(233786),	-- Battle Hardened Satin Cinch
+i(233787),	-- Battle Hardened Dreadweave Cuffs
+i(233788),	-- Battle Hardened Dreadweave Cuffs
+i(233789),	-- Battle Hardened Dreadweave Belt
+i(233790),	-- Battle Hardened Dreadweave Belt
+i(233791),	-- Blood-Caked Copper Coin
+i(233965),	-- Flask of the Old Gods
+i(233984),	-- Arcane Megabomb
+i(234124),	-- Handbook of Occult Poison II
+i(234129),	-- Onyx Embedded Leggings
+i(234130),	-- Amulet of Shadow Shielding
+i(234132),	-- Drake Tooth Necklace
+i(234133),	-- Drudge Boots
+i(234134),	-- Gnomish Turban of Psychic Might
+i(234135),	-- Band of Icy Depths
+i(234136),	-- Darkwater Robes
+i(234137),	-- Fang of Korialstrasz
+i(234138),	-- Shadowsong's Sorrow
+i(234139),	-- Ravencrest's Legacy
+i(234141),	-- Runesword of the Red
+i(234142),	-- Bottomless Noggenfogger Elixir
+i(234143),	-- Globe of Deception
+i(234144),	-- Censer of the False Prophet
+i(234145),	-- Blood-Caked Hakkari Bijou
+i(234176),	-- Darkmoon Card: Heroism
+i(234177),	-- Darkmoon Card: Blue Dragon
+i(234178),	-- Darkmoon Card: Maelstrom
+i(234179),	-- Darkmoon Card: Twisting Nether
+i(234180),	-- Temporal Flare
+i(234181),	-- Twilight Cultist's Journal
+i(234288),	-- Ironvine Belt
+i(234289),	-- Plans: Ironvine Belt
+i(234290),	-- Ironvine Gloves
+i(234291),	-- Plans: Ironvine Gloves
+i(234292),	-- Ironvine Breastplate
+i(234293),	-- Plans: Ironvine Breastplate
+i(234294),	-- Sandstalker Bracers
+i(234295),	-- Pattern: Sandstalker Bracers
+i(234296),	-- Sandstalker Gauntlets
+i(234297),	-- Pattern: Sandstalker Gauntlets
+i(234298),	-- Sandstalker Breastplate
+i(234299),	-- Pattern: Sandstalker Breastplate
+i(234300),	-- Spitfire Bracers
+i(234301),	-- Pattern: Spitfire Bracers
+i(234302),	-- Spitfire Gauntlets
+i(234303),	-- Pattern: Spitfire Gauntlets
+i(234304),	-- Spitfire Breastplate
+i(234305),	-- Pattern: Spitfire Breastplate
+i(234306),	-- Bramblewood Belt
+i(234307),	-- Pattern: Bramblewood Belt
+i(234308),	-- Bramblewood Boots
+i(234309),	-- Pattern: Bramblewood Boots
+i(234310),	-- Bramblewood Helm
+i(234311),	-- Pattern: Bramblewood Helm
+i(234319),	-- Heavy Obsidian Belt
+i(234320),	-- Plans: Heavy Obsidian Belt
+i(234321),	-- Light Obsidian Belt
+i(234322),	-- Plans: Light Obsidian Belt
+i(234324),	-- Dreamscale Breastplate
+i(234325),	-- Pattern: Dreamscale Breastplate
+i(234444),	-- Occult Poison II
+i(234447),	-- Bubbles' Rod of Transformation
+i(234462),	-- Earthstrike
+i(234463),	-- Wrath of Cenarius
+i(234464),	-- Bubbles' Rod of Bubbles
+i(234465),	-- Reins of the Swift Spectral Tiger
+i(234467),	-- Bubbles' Rod of Dragons
+i(234481),	-- Pattern: Dreamscale Kilt
+i(234482),	-- Dreamscale Kilt
+i(234487),	-- Dreamscale Visor
+i(234488),	-- Plans: Dreamscale Visor
+i(234747),	-- Fist of Cenarius
+i(234748),	-- Deeprock Bracers
+i(234749),	-- Earthcalm Orb
+i(234760),	-- Rockfury Bracers
+i(234761),	-- Might of Cenarius
+i(234779),	-- Grace of Earth
+i(234780),	-- Band of Earthen Might
+i(234782),	-- Earthpower Vest
+i(234785),	-- Gloves of Earthen Power
+i(234786),	-- Band of Earthen Wrath
+i(234788),	-- Earthweave Cloak
+i(234792),	-- Ravenholdt Slicer
+i(234793),	-- Shivsprocket's Shiv
+i(234797),	-- The Thunderwood Poker
+i(234798),	-- Doomulus Prime
+i(234799),	-- Fahrad's Reloading Repeater
+i(234800),	-- Simone's Cultivating Hammer
+i(234801),	-- Amulet of the Fallen God
+i(234802),	-- Cloak of the Fallen God
+i(234803),	-- Ring of the Fallen God
+i(234960),	-- Reins of the Blood-Caked Tiger
+i(234961),	-- Whistle of the Blood-Caked Raptor
+i(235142),	-- Blood-Caked Silver Coin
+i(235143),	-- Blood-Caked Gold Coin
+i(235144),	-- Satchel of Blood-Caked Copper Coins
+i(235145),	-- Satchel of Blood-Caked Silver Coins
+i(235275),	-- Portals Deck
+i(235276),	-- Elementals Deck
+i(235277),	-- Warlords Deck
+i(235278),	-- Beasts Deck
+1.15.5.57638
+i(235511),	-- Flawless Yellow Qiraji Resonating Crystal
+i(235512),	-- Flawless Green Qiraji Resonating Crystal
+i(235513),	-- Flawless Blue Qiraji Resonating Crystal
+i(235514),	-- Flawless Red Qiraji Resonating Crystal
+1.15.5.57716
+i(232433),	-- Dense Runecloth Bandage
+i(232434),	-- Manual: Dense Runecloth Bandage
+i(232436),	-- Darkclaw Bisque
+i(232437),	-- Recipe: Darkclaw Bisque
+i(232438),	-- Smoked Redgill
+i(232443),	-- Recipe: Smoked Redgill
+i(235473),	-- Grand Marshal's Barricade
+i(235474),	-- High Warlord's Barricade
+i(235476),	-- High Warlord's Hacker
+i(235477),	-- High Warlord's Bonecracker
+i(235478),	-- High Warlord's Shiv
+i(235479),	-- Grand Marshal's Shiv
+i(235480),	-- Grand Marshal's Bonecracker
+i(235481),	-- Grand Marshal's Hacker
+i(235497),	-- Draught of the Sands
+1.15.5.57979
+i(235825),	-- Draught of the Sands
+1.15.6.58185
+i(213074),	-- Rune of Nourishing
+i(213086),	-- Rune of the Storm
+i(213090),	-- Rune of Synergy
+i(213093),	-- Rune of Power
+i(213094),	-- Rune of Fire Nova
+i(213096),	-- Rune of Decoys
+i(213098),	-- Rune of Invocation
+i(213101),	-- Rune of Shadowflames
+i(213102),	-- Rune of Wickedness
+i(213109),	-- Rune of Focused Rage
+i(213110),	-- Rune of the Commander
+i(213111),	-- Rune of Intervention
+i(213117),	-- Rune of Berserk
+i(213119),	-- Rune of Instinct
+i(213120),	-- Rune of the Dreamer
+i(213122),	-- Rune of Steady Shot
+i(213123),	-- Rune of Exposure
+i(213125),	-- Rune of Invigoration
+i(213126),	-- Rune of the Scrapper
+i(213129),	-- Rune of Light's Embrace
+i(213131),	-- Rune of Sacred Shields
+i(213136),	-- Rune of Subtlety
+i(213138),	-- Rune of the Southpaw
+i(213139),	-- Rune of the Assassin
+i(213140),	-- Prophecy of the Quickened Path
+i(213141),	-- Rune of Hope
+i(213142),	-- Prophecy of Imprisoned Malice
+i(213143),	-- Apocryphal Epiphany
+i(235517),	-- Torch
+i(235583),	-- Test Dagger
+i(235597),	-- Spell Notes: Deep Freeze
+i(235598),	-- Spell Notes: Icy Veins
+i(235599),	-- Spell Notes: Temporal Anomaly
+i(235600),	-- Rune of Divine Storm
+i(235601),	-- Rune of Fanaticism
+i(235602),	-- Rune of Hammer of the Righteous
+i(235603),	-- Rune of Righteous Vengeance
+i(235604),	-- Rune of Shield of Righteousness
+i(235605),	-- Rune of Shock and Awe
+i(235785),	-- Deadwind Cage "Key"
+i(235786),	-- Karazhan Curio
+i(235788),	-- Enthusiastic Wisp
+i(235789),	-- Flame of Life
+i(235790),	-- Enchanted Firebrand
+i(235852),	-- Violet Satchel
+i(236354),	-- Aspirant's Seal of the Dawn
+i(236355),	-- Initiate's Seal of the Dawn
+i(236356),	-- Squire's Seal of the Dawn
+i(236357),	-- Knight's Seal of the Dawn
+i(236358),	-- Templar's Seal of the Dawn
+i(236360),	-- Champion's Seal of the Dawn
+i(236361),	-- Vanguard's Seal of the Dawn
+i(236362),	-- Crusader's Seal of the Dawn
+i(236363),	-- Commander's Seal of the Dawn
+i(236364),	-- Highlord's Seal of the Dawn
+i(236374),	-- Commander's Seal of the Dawn
+i(236375),	-- Highlord's Seal of the Dawn
+i(236376),	-- Crusader's Seal of the Dawn
+i(236378),	-- Vanguard's Seal of the Dawn
+i(236379),	-- Champion's Seal of the Dawn
+i(236380),	-- Templar's Seal of the Dawn
+i(236382),	-- Knight's Seal of the Dawn
+i(236383),	-- Squire's Seal of the Dawn
+i(236384),	-- Initiate's Seal of the Dawn
+i(236385),	-- Aspirant's Seal of the Dawn
+i(236386),	-- Highlord's Seal of the Dawn
+i(236388),	-- Commander's Seal of the Dawn
+i(236389),	-- Crusader's Seal of the Dawn
+i(236390),	-- Vanguard's Seal of the Dawn
+i(236391),	-- Champion's Seal of the Dawn
+i(236392),	-- Templar's Seal of the Dawn
+i(236393),	-- Knight's Seal of the Dawn
+i(236394),	-- Squire's Seal of the Dawn
+i(236395),	-- Initiate's Seal of the Dawn
+i(236396),	-- Aspirant's Seal of the Dawn
+i(236414),	-- Damaged Undermine Supply Crate
+i(236657),	-- Bubbles' Rotting Branch
+i(236658),	-- Bubbles' Spine Trophy
+i(236660),	-- Bubbles' Troll Tusk
+i(236661),	-- Bubbles' Ribcage of Ribaldy
+i(236704),	-- Frosty Wrists
+i(236705),	-- Frosty Gloves
+i(236706),	-- Frosty Vest
+i(236786),	-- Heart of Doom
+i(236871),	-- Creepy Censor Sensors
+i(236872),	-- Schematic: Creepy Censor Sensors
+1.15.6.58658
+i(237041),	-- Tome of Enchanted Flare
+i(237143),	-- Orders from the Commander \\ Orders from the High General
+i(237261),	-- Fine Sand
+i(237263),	-- Supply Bag
+i(237275),	-- Icebane Helmet
+i(237277),	-- Frosty Leggings
+i(237278),	-- The Purifier
+i(237279),	-- Amulet of the Dawn
+i(237280),	-- Medallion of the Dawn
+i(237281),	-- Bracers of Hope
+i(237282),	-- Bracers of Subterfuge
+i(237283),	-- Talisman of Ascendance
+i(237348),	-- Monster - Sword, Short Ornate
+i(237386),	-- Wartorn Undermine Supply Crate
+i(237504),	-- Supply Shipment
+1.15.7.59706
+i(190325),	-- Monster - Incubus Whip Mace1H
+i(237020),	-- Scarlet Insignia
+i(237023),	-- Pop-Up Shrub
+i(237037),	-- Haute Club Membership Card
+i(237163),	-- Ancient Hero's Skull
+i(238637),	-- Prowler Steak
+i(238638),	-- Filet o' Flank
+i(238639),	-- Sunrise Omelette
+i(238641),	-- Specklefin Feast
+i(238642),	-- Grand Lobster Banquet
+i(238645),	-- Recipe: Prowler Steak
+i(238646),	-- Recipe: Filet o' Flank
+i(238647),	-- Recipe: Sunrise Omelette
+i(238649),	-- Recipe: Specklefin Feast
+i(238650),	-- Recipe: Grand Lobster Banquet
+i(238687),	-- Maul of Onslaught
+i(238734),	-- Tinkerbox: Teleport
+i(238735),	-- Tinkerbox: Nitro Boosts
+i(238736),	-- Tinkerbox: Magnetic Displacement
+i(238737),	-- Tinkerbox
+i(238781),	-- Semisafe Transporter: New Avalon
+i(238782),	-- Schematic: Tinkerbox
+i(238783),	-- Schematic: Tinkerbox: Teleport
+i(238784),	-- Schematic: Tinkerbox: Nitro Boosts
+i(238785),	-- Schematic: Tinkerbox: Magnetic Displacement
+i(238786),	-- Schematic: Tinker: Teleport
+i(238787),	-- Schematic: Tinker: Nitro Boosts
+i(238788),	-- Schematic: Tinker: Magnetic Displacement
+i(238789),	-- Schematic: Semisafe Transporter: New Avalon
+i(238794),	-- Unappetizing Leftovers
+i(238811),	-- Juicy Apple
+i(238830),	-- Apple Scope
+i(238831),	-- Apple Rope
+i(238899),	-- Assorted Fish
+i(238925),	-- Scarlet Quiver
+i(238926),	-- Scarlet Ammo Pouch
+i(238927),	-- Pattern: Scarlet Quiver
+i(238928),	-- Pattern: Scarlet Ammo Pouch
+i(238935),	-- Gently Plagued Meat
+i(238945),	-- Caladboulder
+i(238960),	-- Quartermaster's Crate
+i(238961),	-- Caladbolg
+i(238985),	-- Heavy Crate
+i(239011),	-- Shard of Crystallized Light
+i(239012),	-- Splinter of Crystallized Light
+i(239013),	-- Crystalline Axe
+i(239016),	-- Holy Salts
+i(239017),	-- Exquisite Spices
+i(239021),	-- Carrie's Cookbook
+i(239061),	-- Flawless Obsidian Hammer
+i(239092),	-- Preposterously Prosed Postage
+i(239097),	-- Key to the Cathedral
+i(239119),	-- Holy Arrow
+i(239123),	-- Monster - BOW_1H_STANDARD_C_01 - Red
+i(239159),	-- S03 - Scarlet Enclave - Captains Shield
+i(239218),	-- Stoneshaper's Notes
+i(239221),	-- Monster - Sword1H, Basic
+i(239222),	-- Schematic: Pop-Up Shrub
+i(239223),	-- House Prop
+i(239225),	-- Classy Quill
+i(239246),	-- Fizzlefuse's Shopping List
+i(239248),	-- Scarlet Junkbox
+i(239292),	-- Forgewright's Notes
+i(239302),	-- Scarlet Uniform Belt
+i(239316),	-- Triangulation Samophlange
+i(239540),	-- Dawnstalker Headpiece
+i(239618),	-- Monster - Sword 1H - Vanquisher's Sword (Alt)
+i(239688),	-- Monster - Spear 2H - Scarlet Cavalry - Spear
+i(239698),	-- Dawnwoven Fabric
+i(239764),	-- Crimson Bladeleaf
+i(240018),	-- Fizzlefuse's Tinker Manual
+i(240195),	-- Invisible Sword
+i(240217),	-- Monster Item - Stave_2H_Jeweled_A_02 - Red
+i(240742),	-- Monster - 1H, Shortsword, Red
+i(240832),	-- Nivifacient Gland
+i(240835),	-- Crate of Moonglade Supplies
+i(240836),	-- Thisalee's Whistle
+i(240837),	-- Strings of Fate
+i(240845),	-- Prototype Magnet
+i(240846),	-- Magnetic Scrap
+i(240848),	-- Nordrassil Detritus
+i(240945),	-- Slice of Carrie's Apple Pie
+i(240994),	-- Tim's Test Ranged Weapon 2
+i(241082),	-- Ashbringer
+i(241083),	-- S03 - Scarlet Enclave - Sword 2h Raid
+i(241084),	-- S03 - Scarlet Enclave - Herod's Sword - Normal
+i(241085),	-- S03 - Scarlet Enclave - Sword 1h
+i(241086),	-- Scarlet Tower Shield
+i(241087),	-- Scarlet Staff
+i(241088),	-- Scarlet Staff
+i(241089),	-- Scarlet Dagger
+i(241090),	-- Scarlet Great Axe
+i(241091),	-- Scarlet Mace
+i(241092),	-- Scarlet Edge
+i(241120),	-- S03 - Scarlet Enclave - Herod's Sword - Molten
+i(241121),	-- Reborn Dagger
+i(241122),	-- Reborn Knife
+i(241123),	-- Reborn Dagger
+i(241124),	-- Reborn Knife
+i(241128),	-- Pile of Portiporters
+i(241169),	-- Prototype Nitro Boosts
+i(241190),	-- Bird Whistle
+i(241212),	-- Cluck Cannon
+i(241233),	-- [DNT] Super Strong Lockbox
+i(241241),	-- Lucky Doubloon
+i(241613),	-- No Longer Used
+i(241629),	-- Scarlet Cannonball
+i(241649),	-- Gauntlets of the Hillsbrad Guard
+i(241652),	-- Discolored Beast Heart
+i(241654),	-- Inert Ashbringer
+i(241655),	-- Mishandled Healing Potion
+i(241656),	-- Mishandled Healing Potion
+i(242018),	-- Plaguelands Bleeding Heart
+i(242224),	-- Basket of Hearts
+i(242256),	-- Satchel of Incendiary Bombs
+i(242257),	-- Mysterious Alchemical Sample
+i(242258),	-- Research Notes
+i(242266),	-- World of Wardcraft
+i(242269),	-- Brilliance of the Grand Sorcerer
+i(242270),	-- Brilliance of the Grand Arcanist
+i(242271),	-- Brilliance of the Grand Crusader
+i(242310),	-- Hand of Reborn Justice
+i(242311),	-- Leonid's Charm
+i(242312),	-- Barthalomew Family Seal \\ Bartholomew Family Seal
+i(242313),	-- Journal of the Revered
+i(242314),	-- Cinders of the Fallen Crusade
+i(242315),	-- Ashes of Arrogance
+i(242316),	-- Dust of the Defiant
+i(242317),	-- Desecrated Prayerbook
+i(242319),	-- New Plague Samples
+i(242320),	-- New Plague Samples
+i(242362),	-- Brilliance of the Grand Inquisitor
+i(242367),	-- Wing and String
+i(242425),	-- Torn Diary Page - Page 1
+i(242426),	-- Torn Diary Page - Page 2
+i(242427),	-- Putress' Diary
+i(242428),	-- Torn Diary Page - Page 3
+i(242429),	-- Putress' Diary
+i(242430),	-- Torn Diary Page - Page 4
+i(242431),	-- Torn Diary Page - Page 5
+i(242432),	-- Putress' Diary
+i(242433),	-- Torn Diary Page - Page 6
+i(242434),	-- Putress' Diary
+i(242435),	-- Putress' Diary
+i(242436),	-- Putress' Diary
+1.15.7.59856
+i(231806),	-- Searing Arrow
+i(231807),	-- Searing Shot
+i(242710),	-- Monster Weapon [DNT]
+1.15.7.60000
+i(243010),	-- Corrupted Ashbringer
+i(243064),	-- Long Staff
+i(243177),	-- Ingenious Toy
+i(243230),	-- Ruined Lightforged Blade
+1.15.7.60249
+i(208196),	-- Moa'kin Band
+i(208425),	-- Shiny Archaic Vestige
+i(208484),	-- Sunlight
+i(230002),	-- Mortal Finisher
+i(243065),	-- Broken Wand
+i(243198),	-- Poultry Precision Scope
+i(243345),	-- Long Staff
+i(244460),	-- Caladbolg
+1.15.7.60663
+i(244353),	-- Poultry Precision Scope
+i(245675),	-- Gordok Inner Door Key

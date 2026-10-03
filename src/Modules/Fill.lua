@@ -24,10 +24,6 @@ app.SetSkipLevel = function(level)
 	CurrentSkipLevel = level or 0
 end
 
--- Currently, Classic does not use any of the following Fill logic but the above
--- SkipLevel functions are referenced within Classic files
-if app.IsClassic then return end
-
 
 
 
@@ -106,8 +102,8 @@ local FillSettings = {
 	Icons = {
 		REAGENT = app.asset("Interface_Reagent")
 	},
-	Defaults = {
-		NPC = false
+	SettingsDefaults = {
+		["LIST:REAGENT"] = false,
 	},
 }
 local ActiveFillFunctions = {}
@@ -289,6 +285,8 @@ app.AddEventHandler("OnStartup", function()
 	end
 	app.AddEventHandler("Fill.OnActivateFiller", CheckRebuildMinilist)
 	app.AddEventHandler("Fill.OnDeactivateFiller", CheckRebuildMinilist)
+
+	SyncFillPriorityFromSettings()
 end)
 
 -- TODO: how to handle agnostic Filler priorities?
@@ -317,6 +315,11 @@ api.AddFiller = function(name, func, options)
 		end
 		if options.SettingsIcon then
 			FillSettings.Icons[name] = options.SettingsIcon
+		end
+		if options.SettingsDefaults then
+			for k, v in pairs(options.SettingsDefaults) do
+				FillSettings.SettingsDefaults[k] = v
+			end
 		end
 	end
 
@@ -468,7 +471,7 @@ local function FillGroupDirect(group, FillData, doDGU)
 	-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
 	if not ignoreSkip then
 		local groupHash = group.hash;
-		if groupHash then
+		if groupHash and not FillStopTypes[group.__type] then
 			-- app.PrintDebug("FGA-Included",groupHash,#groups)
 			FillData.Included[groupHash] = true;
 		end
@@ -604,22 +607,25 @@ local function AssignGroupFilledTag(group)
 	-- app.PrintDebug("wasFilled",app:SearchLink(group),group.filledReagent,group.filledCost,group.filledUpgrade)
 end
 local function HandleOnWindowFillComplete(window)
+	if not window or not window.data then return end
+
 	window.data._fillcomplete = true
 	AssignGroupFilledTag(window.data)
-	app.HandleEvent("OnWindowFillComplete", window)
+	app.HandleEvent("OnWindowFillComplete", window, window.Suffix)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
-local FillGroups = function(group, options)
+local function FillGroups(group, options)
 	group.__FillGroups = true
 	-- Sometimes entire sub-groups should be preventing from even allowing filling (i.e. Dynamic groups)
 	local skipFull = app.GetRelativeRawWithField(group, "skipFull");
 	if skipFull then return end
 
 	-- Check if this group is inside a Window or not
-	local groupWindow = app.GetRelativeRawWithField(group, "window");
+	local groupWindow = not group.__FillImmediate and app.GetRelativeRawWithField(group, "window");
+	group.__FillImmediate = nil
 	local fillers = options and options.Fillers
 	if not fillers then
-		local fillScope = groupWindow and (groupWindow.Suffix == "CurrentInstance" and "LIST" or "POPOUT") or "TOOLTIP"
+		local fillScope = groupWindow and (groupWindow.Suffix == "MiniList" and "LIST" or "POPOUT") or "TOOLTIP"
 		fillers = ActiveFillFunctions[fillScope]
 	end
 	-- Setup the FillData for this fill operation
@@ -629,7 +635,7 @@ local FillGroups = function(group, options)
 		NextLayer = {},
 		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
-		InMinilist = groupWindow and groupWindow.Suffix == "CurrentInstance" and true or nil,
+		InMinilist = groupWindow and groupWindow.Suffix == "MiniList" and true or nil,
 		-- TODO: Fillers can provide context requirements for themselves to be utilized for a given
 		-- fill operation.
 		-- i.e. provided the Root/Window/Instance/Combat -- the Filler may return that it should not be included

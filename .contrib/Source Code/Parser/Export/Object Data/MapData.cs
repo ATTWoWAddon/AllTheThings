@@ -2,6 +2,7 @@
 using ATT.DB.Types;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace ATT
@@ -63,8 +64,8 @@ namespace ATT
                                             if (header.TryGetValue("readable", out string readable) && !EMPTY_HEADER_WHITELIST.ContainsKey(readable))
                                             {
                                                 EMPTY_HEADER_WHITELIST[readable] = true;
-                                                Console.WriteLine($"EMPTY HEADER {readable ?? "UNKNOWN"}");
-                                                Console.WriteLine($"  {MiniJSON.Json.Serialize(element)}");
+                                                Trace.WriteLine($"EMPTY HEADER {readable ?? "UNKNOWN"}");
+                                                Trace.WriteLine($"  {MiniJSON.Json.Serialize(element)}");
                                                 Console.ReadLine();
                                             }
                                             g.RemoveAt(i);

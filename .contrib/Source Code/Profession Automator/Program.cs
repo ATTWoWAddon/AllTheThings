@@ -157,7 +157,7 @@ namespace Profession_Automator
                                                 Print(builder3, gRef, "\t");
                                                 builder3.Append("),\n});");
 
-                                                var filename = Path.Combine("../../../../.contrib/Parser/DATAS/11 - Professions", name, "Recipes/_ Automation.lua");
+                                                var filename = Path.Combine("../../../../.contrib/.db/standard/11 - Professions", name, "Recipes/_ Automation.lua");
                                                 Directory.CreateDirectory(Path.GetDirectoryName(filename));
                                                 File.WriteAllText(filename, builder3.ToString());
                                             }
@@ -249,6 +249,7 @@ namespace Profession_Automator
                         break;
                     }
                     case "System.Boolean":
+                    case "System.Int64":
                     case "System.Double":
                     case "System.String":
                     {

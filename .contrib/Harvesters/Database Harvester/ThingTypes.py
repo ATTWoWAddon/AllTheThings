@@ -6,13 +6,17 @@ from packaging.version import Version
 from typing import Optional
 
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
-DEBUGGING_FOLDER = Path("..", "..", "..", ".contrib", "Debugging")
+STANDARD_FOLDER = Path("..", "..", ".db", "standard")
+SHARED_FOLDER = Path("..", "..", ".db", "shared")
+FOREVER_FOLDER = Path("..", "..", ".db", "forever")
+DEBUGGING_FOLDER = Path("..", "..", "Debugging")
 DELIMITER = "@@@"
 # Define patch version ranges per flavor
 FLAVOR_RANGES: dict[str, tuple[Version, Optional[Version]]] = {
     "Classic": (version.parse("0.0.0.00000"), version.parse("1.14.1.00000")),
     "SoM":     (version.parse("1.14.1.00000"), version.parse("1.15.0.00000")),
     "SoD":     (version.parse("1.15.0.00000"), version.parse("1.16.0.00000")),
+    "Forever": (version.parse("1.60.0.00000"), version.parse("1.61.0.00000")),
     "TBC":     (version.parse("2.0.0.00000"), version.parse("3.0.0.00000")),
     "WotLK":   (version.parse("3.0.0.00000"), version.parse("4.0.0.00000")),
     "Cata":    (version.parse("4.0.0.00000"), version.parse("5.0.0.00000")),
@@ -24,11 +28,12 @@ FLAVOR_FOLDERS: dict[str, str] = {
     "Classic": "01 - Classic",
     "SoM": "02 - Season of Mastery",
     "SoD": "03 - Season of Discovery",
+    "Forever": "00 - Forever",
     "TBC": "04 - The Burning Crusade",
     "WotLK": "05 - Wrath of the Lich King",
     "Cata": "06 - Cataclysm",
     "MoP": "07 - Mists of Pandaria",
-    "Retail": "99 - The War Within",
+    "Retail": "99 - Midnight",
 }
 
 
@@ -127,6 +132,34 @@ class Campsites(Thing):
         return ["id", "name"]
 
 
+class Currencies(Thing):
+    @staticmethod
+    def table() -> str:
+        return "currencytypes"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "currency"
+
+    @staticmethod
+    def existing_prefixes() -> tuple[str, ...]:
+        return ("cu(",)
+
+    @staticmethod
+    def new_prefix() -> str:
+        return "currency("
+
+    @staticmethod
+    def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
+        # Currencies have names in the same db
+        title = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+        return f"{row['ID']}{DELIMITER}{row[title]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
+
+
 class Decors(Thing):
     @staticmethod
     def table() -> str:
@@ -176,6 +209,8 @@ class Explorations(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Explorations have names in the same db
         title = "AreaName_lang" if "AreaName_lang" in row else "AreaName_lang[0]"
+        if build == "1.60.1.69876":  # Cursed build
+            title = "Field_1_60_1_69876_001_lang"
         return f"{row['ID']}{DELIMITER}{row[title]}"
 
     @staticmethod
@@ -206,9 +241,13 @@ class Factions(Thing):
         if build and version.parse(build) < version.parse("3.4.2.49658") and version.parse(build) > version.parse("3.4.1.46722"):
             name = "Field_3_4_1_46722_001_lang"
             id = "Field_3_4_1_46722_003"
+        elif build == "1.60.1.69876":  # Cursed build
+            name = "Field_1_60_1_69876_000_lang"
+            id = "ID"
         else:
             name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
             id = "ID"
+        
         return f"{row[id]}{DELIMITER}{row[name]}"
 
     @staticmethod
@@ -284,7 +323,7 @@ class Followers(Thing):
 
 
 class Illusions(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "IllusionDB.lua")
+    db_path = Path(STANDARD_FOLDER, "00 - DB", "IllusionDB.lua")
 
     @staticmethod
     def table() -> str:
@@ -341,6 +380,8 @@ class Items(Thing):
         # Helps Toys and Transmog
         if build == "11.2.5.62554":
             return f"{row['ID']}{DELIMITER}{row['Field_11_2_5_62554_005_lang'].strip()}"
+        elif build == "1.60.1.69876":  # Cursed build
+            return f"{row['ID']}{DELIMITER}{row['Field_1_60_1_69876_004_lang'].strip()}"
         else:
             return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
 
@@ -350,7 +391,7 @@ class Items(Thing):
 
 
 class Mounts(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "MountDB.lua")
+    db_path = Path(SHARED_FOLDER, "modules", "MountDB.lua")
 
     @staticmethod
     def table() -> str:
@@ -386,7 +427,7 @@ class Mounts(Thing):
 
 
 class Pets(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "PetDB.lua")
+    db_path = Path(SHARED_FOLDER, "modules", "PetDB.lua")
 
     @staticmethod
     def table() -> str:
@@ -469,7 +510,10 @@ class Recipes(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
-        return f"{row['Spell']}{DELIMITER}{row['SkillLine']}"
+        if build == "1.60.1.69876":
+            return f"{row['Field_1_60_1_69876_004']}{DELIMITER}{row['Field_1_60_1_69876_003']}"
+        else:
+            return f"{row['Spell']}{DELIMITER}{row['SkillLine']}"
 
     @staticmethod
     def id_schema() -> list[str]:
@@ -505,7 +549,7 @@ class Titles(Thing):
 
 
 class Toys(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - DB", "ToyDB.lua")
+    db_path = Path(SHARED_FOLDER, "modules", "ToyDB.lua")
 
     @staticmethod
     def table() -> str:

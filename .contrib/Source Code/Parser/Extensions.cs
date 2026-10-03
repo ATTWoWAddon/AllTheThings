@@ -198,6 +198,39 @@ namespace ATT
             return false;
         }
 
+        /// <summary>
+        /// Retrieves the 'name' or '_name' field of the data, otherwise attempts to check Items DB or Objects DB
+        /// for a corresponding 'name' value. This will then be cached as '_name' in the data for future efficiency
+        /// </summary>
+        public static bool TryGetName(this IDictionary<string, object> data, out string name)
+        {
+            if (data.TryGetValue("name", out name) || data.TryGetValue("_name", out name))
+                return true;
+
+            if (Framework.Items.GetNull(data)?.TryGetValue("name", out name) == true)
+            {
+                data["_name"] = name;
+                return true;
+            }
+
+            if (data.TryGetValue("itemID", out decimal itemID))
+            {
+                if (Framework.Items.GetNull(itemID)?.TryGetValue("name", out name) == true)
+                {
+                    data["_name"] = name;
+                    return true;
+                }
+
+                if (Framework.Objects.TryGetSharedDataByKey("itemID", itemID, "name", out name))
+                {
+                    data["_name"] = name;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public static bool TryGetValue(this IDictionary<string, object> dict, out Coords value)
         {
             if (dict != null && dict.TryGetValue(Coords.Field, out object o) && o is Coords val)
@@ -276,6 +309,29 @@ namespace ATT
             }
             value = null;
             return false;
+        }
+
+        /// <summary>
+        /// Returns the KVPs of the dictionary except those which match the keys specified in the "_drop" field of the dictionary, which is expected to be a list of strings representing keys to drop from the dictionary for certain processing contexts (such as conditions or providers which should not be merged with other conditions/providers containing the same keys)
+        /// </summary>
+        public static IEnumerable<KeyValuePair<string, object>> WithoutDrops(this IDictionary<string, object> dict, object drops = null)
+        {
+            if (dict != null)
+            {
+                if (drops is IDictionary<string, object> dropsDict && !dropsDict.TryGetValue("_drop", out drops))
+                {
+                    return dict;
+                }
+                if (drops is null && !dict.TryGetValue("_drop", out drops))
+                {
+                    return dict;
+                }
+
+                HashSet<string> dropset = drops.AsTypedEnumerable<string>().ToHashSet();
+                return dict.AsEnumerable().Where(kvp => !dropset.Contains(kvp.Key));
+            }
+
+            return dict;
         }
 
         /// <summary>
@@ -366,7 +422,7 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains the specified key/value pair
         /// </summary>
-        public static IDictionary<string, object> FindObject<T>(this IEnumerable<object> list, string key, T value)
+        public static IDictionary<string, object> FindObject<T,TData>(this IEnumerable<TData> list, string key, T value)
         {
             if (list == null) return null;
 
@@ -390,7 +446,7 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains both specified key/value pairs
         /// </summary>
-        public static IDictionary<string, object> FindObject<T1, T2>(this IEnumerable<object> list, string key1, T1 value1, string key2, T2 value2)
+        public static IDictionary<string, object> FindObject<T1, T2, TData>(this IEnumerable<TData> list, string key1, T1 value1, string key2, T2 value2)
         {
             if (list == null) return null;
 
@@ -480,7 +536,7 @@ namespace ATT
                     {
                         Framework.LogWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
                     }
-                    if (debugWarnOnConvert)
+                    else if (debugWarnOnConvert)
                     {
                         Framework.LogDebugWarn($"Potentially unexpected value type conversion for {obj} ({obj?.GetType().FullName}) => {typeof(T).FullName}");
                     }
@@ -537,6 +593,8 @@ namespace ATT
         public static bool IsNumeric(this object val) => val?.GetType().IsNumeric() ?? false;
 
         public static bool IsDecimal(this Type myType) => DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
+
+        public static bool IsBoundedBy(this long val, long min, long max) => val >= min && val <= max;
 
         /// <summary>
         /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
@@ -624,19 +682,24 @@ namespace ATT
         public static bool IsEquivalent(this object val1, object val2)
         {
             if (Equals(val1, val2))
-            {
                 return true;
-            }
+
+            if (val1 is null || val2 is null)
+                return false;
 
             if (val1 is ICollection<object> col1 && val2 is ICollection<object> col2)
-            {
                 return col1.Matches(col2);
-            }
 
             if (val1 is IEnumerable<object> arr1 && val2 is IEnumerable<object> arr2)
-            {
                 return arr1.Matches(arr2);
+
+            try
+            {
+                var val1AsVal2Type = Convert.ChangeType(val1, val2.GetType());
+                if (Equals(val1AsVal2Type, val2))
+                    return true;
             }
+            catch { }
 
             return false;
         }

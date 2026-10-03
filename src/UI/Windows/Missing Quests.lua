@@ -1,7 +1,9 @@
 -- App locals
 local _, app = ...;
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local L = app.L;
+-- This window has a dependency on Questie in Classic.
+if not (app.IsClassic or app.IsForever) then return; end
+local SearchForField = app.SearchForField;
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
@@ -13,30 +15,29 @@ app:CreateWindow("Missing Quests", {
 	},
 	HideFromSettings = true,
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Missing Quests",
+		self:SetData(app.CreateRawText(L.MISSING_QUESTS, {
 			icon = app.asset("Interface_Quest"),
-			description = "This window shows you all of the quests that are missing from ATT that exist in Questie or in your Saved Variables.",
+			description = L.MISSING_QUESTS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
 			options = {
-				{	-- Missing Quests From ATT Header
-					text = "From ATT",
+				app.CreateRawText(L.MISSING_QUESTS_FROM_ATT, {	-- Missing Quests From ATT Header
 					icon = app.asset("logo_32x32"),
 					preview = app.asset("Discord_2_128"),
-					description = "The following quests are missing from ATT, but were found in the Questie DB or your Saved Variables!",
-				},
-				{	-- Missing Quests From Questie Header
-					text = "From Questie",
+					description = L.MISSING_QUESTS_FROM_ATT_DESC,
+					OnUpdate = app.AlwaysShowUpdate,
+				}),
+				app.CreateRawText(L.MISSING_QUESTS_FROM_QUESTIE, {	-- Missing Quests From Questie Header
 					icon = app.asset("Interface_Quest"),
-					description = "The following quests are missing from Questie, but were found in the ATT DB!",
-				},
-				{	-- Missing Quests From Questie (With ATT Sources) Header
-					text = "From Questie (With ATT Sources)",
+					description = L.MISSING_QUESTS_FROM_QUESTIE_DESC,
+					OnUpdate = app.AlwaysShowUpdate,
+				}),
+				app.CreateRawText(L.MISSING_QUESTS_FROM_QUESTIE_SOURCED, {	-- Missing Quests From Questie (With ATT Sources) Header
 					icon = app.asset("Interface_Quest"),
-					description = "The following quests are missing from Questie, but were found in the ATT DB!",
-				},
+					description = L.MISSING_QUESTS_FROM_QUESTIE_DESC,
+					OnUpdate = app.AlwaysShowUpdate,
+				}),
 			},
 			OnUpdate = function(data)
 				local QuestieDB = self.QuestieDB;
@@ -78,7 +79,7 @@ app:CreateWindow("Missing Quests", {
 					end
 				end
 
-				for id,questData in pairs(SearchForFieldContainer("questID")) do
+				for id,questData in pairs(app.GetFieldContainer("questID")) do
 					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
 						local shouldAdd = true;
 						for i,quest in ipairs(questData) do
@@ -98,7 +99,7 @@ app:CreateWindow("Missing Quests", {
 				app.Sort(MissingQuestsFromATT, app.SortDefaults.Values);
 				for _,id in ipairs(MissingQuestsFromATT) do
 					local quest = app.CreateQuest(id);
-					local description = "@Crieve: This has not been sourced in ATT yet!";
+					local description = L.MISSING_QUESTS_NOT_SOURCED;
 					local questieData = QuestieDB.GetQuest(id);
 					if questieData then
 						for key,value in pairs(questieData) do
@@ -135,7 +136,7 @@ app:CreateWindow("Missing Quests", {
 							questData[key] = value;
 						end
 					end
-					local description = "ATT Data:";
+					local description = L.MISSING_QUESTS_ATT_DATA;
 					for key,value in pairs(questData) do
 						description = description .. "\n  " .. key .. ": " .. tostring(value);
 					end
@@ -151,7 +152,7 @@ app:CreateWindow("Missing Quests", {
 				for i,questID in ipairs(MissingQuestsFromQuestie) do
 					MissingQuestsFromQuestieDict[questID] = true;
 				end
-				local filteredData = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+				local filteredData = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
 					if group.questID and MissingQuestsFromQuestieDict[group.questID] then
 						return true;
 					end
@@ -165,7 +166,7 @@ app:CreateWindow("Missing Quests", {
 				self:AssignChildren();
 				data.OnUpdate = nil;
 			end,
-		};
+		}));
 		app:StartATTCoroutine("Waiting For Questie...", function()
 			coroutine.yield();
 			local waiter = 200;
@@ -197,6 +198,6 @@ app:CreateWindow("Missing Quests", {
 			rawSettings.DebugMode = debugMode;
 			app.Settings:UpdateMode();
 		end
-		return false;
+		return true
 	end
 });

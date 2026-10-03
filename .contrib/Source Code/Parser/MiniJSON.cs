@@ -476,7 +476,7 @@ namespace MiniJSON
 
             void SerializeValue(object value)
             {
-                IList asList;
+                IEnumerable asList;
                 IDictionary asDict;
                 string asStr;
 
@@ -492,10 +492,6 @@ namespace MiniJSON
                 {
                     builder.Append((bool)value ? "true" : "false");
                 }
-                else if ((asList = value as IList) != null)
-                {
-                    SerializeArray(asList);
-                }
                 else if ((asDict = value as IDictionary) != null)
                 {
                     SerializeObject(asDict);
@@ -503,6 +499,10 @@ namespace MiniJSON
                 else if (value is char)
                 {
                     SerializeString(new string((char)value, 1));
+                }
+                else if ((asList = value as IEnumerable) != null)
+                {
+                    SerializeArray(asList);
                 }
                 else
                 {
@@ -541,7 +541,7 @@ namespace MiniJSON
                 builder.Append('}');
             }
 
-            void SerializeArray(IList anArray)
+            void SerializeArray(IEnumerable anArray)
             {
                 builder.Append('[');
 

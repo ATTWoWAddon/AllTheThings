@@ -1,20 +1,31 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local ipairs, tinsert, pairs, tostring
 	= ipairs, tinsert, pairs, tostring;
-local C_Map_GetMapInfo = C_Map.GetMapInfo;
+local C_Map_GetMapInfo
+	= C_Map.GetMapInfo;
 
 -- Implementation
 app:CreateWindow("Maps", {
 	IgnoreQuestUpdates = true,
 	Commands = { "attmaps" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "All The Maps!",
+		local function SortBySizeAndName(a, b)
+			local aSize, bSize = #a.g, #b.g;
+			if aSize > bSize then
+				return true;
+			elseif bSize == aSize then
+				return b.name > a.name;
+			else
+				return false;
+			end
+		end
+		self:SetData(app.CreateRawText(L.MAPS, {
 			icon = app.asset("Category_Zones"),
-			description = "This window helps debug when we're missing map IDs in the addon.",
+			description = L.MAPS_TOOLTIP,
 			back = 1,
 			indent = 0,
 			visible = true,
@@ -25,7 +36,7 @@ app:CreateWindow("Maps", {
 				if #g < 1 then
 					-- Cache all maps by their ID number, starting with maps we reference in our DB.
 					local mapsByID = {};
-					for mapID,cachedMaps in pairs(app.SearchForFieldContainer("mapID")) do
+					for mapID,cachedMaps in pairs(app.GetFieldContainer("mapID")) do
 						if not mapsByID[mapID] then
 							local mapObject = app.CreateMap(mapID, {
 								mapInfo = C_Map_GetMapInfo(mapID),
@@ -75,16 +86,7 @@ app:CreateWindow("Maps", {
 					end
 
 					-- Sort the maps by number of relative maps, then by name if matching.
-					app.Sort(g, function(a, b)
-						local aSize, bSize = #a.g, #b.g;
-						if aSize > bSize then
-							return true;
-						elseif bSize == aSize then
-							return b.name > a.name;
-						else
-							return false;
-						end
-					end, true);
+					app.Sort(g, SortBySizeAndName, true);
 
 					-- Now finally, clear out unused gs.
 					for i,mapObject in ipairs(g) do
@@ -95,6 +97,6 @@ app:CreateWindow("Maps", {
 					t.OnUpdate = nil;
 				end
 			end
-		};
+		}));
 	end,
 });

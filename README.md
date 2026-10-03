@@ -7,7 +7,6 @@
 <br>
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/ATTWoWAddon/AllTheThings?logo=github&label=Issues)](https://github.com/ATTWoWAddon/AllTheThings/issues)
 ![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/ATTWoWAddon/AllTheThings?logo=github&label=Activity&cacheSeconds=600)
-[![Process Automation Tool (PAT)](https://github.com/ATTWoWAddon/AllTheThings/actions/workflows/Process%20Automation%20Tool%20(PAT).yml/badge.svg)](https://github.com/ATTWoWAddon/AllTheThings/actions/workflows/Process%20Automation%20Tool%20(PAT).yml)
 <br>
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white)](https://discord.gg/allthethings)
 [![Patreon](https://img.shields.io/badge/Patreon-F96854?&logo=patreon&logoColor=white)](https://www.patreon.com/allthethings)
@@ -28,17 +27,17 @@
 Do you find yourself completing old content just so that you can get literally everything for your Collections? Say no more! ALL THE THINGS will help you with your endeavor by giving you the ability to track your completion for everything.
 
 ## Features
-- Supports tracking of Achievements, Quests, Appearances, Mounts, Pets, Toys, Titles, and much more.
-- Primary Collections Window is moveable and resizeable.
+- Supports tracking of Achievements, Quests, Appearances, Mounts, Pets, Toys, Titles, Decor, and much more.
+- Primary Collections Window is movable and resizable.
 - Auto Minilist
 - Datatext Support
-- Multiple Database modules to keep the addon from having to access Blizzard API.
+- Multiple Database modules to keep the addon from having to access the Blizzard API.
 - Filters to allow you to customize the addon to your preferences.
-- Extra tooltip information (Models, Icons, Descriptions, etc).
+- Extra tooltip information (Models, Icons, Descriptions, etc.).
 - Fanfare music when you learn anything new.
 
 ## Release Schedule
-There are two release types, alpha build and official release.
+There are two release types: alpha builds and official releases.
 - Alpha Build
     - Released at 7:00 UTC every day.
 - Official Release
@@ -48,7 +47,7 @@ There are two release types, alpha build and official release.
 The git version is not a release, but it is still supported.
 
 ## Why do I need this addon?
-- Ability to see what items you are missing from your collection in a more presentable means than Blizzard's UI.
+- Ability to see what items you are missing from your collection in a more presentable way than Blizzard's UI.
 - The UI has information on quests, vendors, rares, dungeons and raids, world events, and more.
 
 ## Problem? Suggestion?

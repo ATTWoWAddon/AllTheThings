@@ -3,11 +3,16 @@
 --------------------------------------------------------------------------------
 --            Copyright 2017-2025 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
-local rawget, pairs, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,getmetatable
-	= rawget, pairs, tinsert, tremove, setmetatable, print,math.sqrt,math.floor,getmetatable
+local rawget, next, pairs, rawset, type, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,getmetatable
+	= rawget, next, pairs, rawset, type, tinsert, tremove, setmetatable, print,math.sqrt,math.floor,getmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local appName, app = ...;
-app.Categories = {};
+if not app.ReagentsDB then
+	app.ReagentsDB = {};
+end
+if not app.ForceFillDB then
+	app.ForceFillDB = {};
+end
 
 -- Hey Blizzard, stop that. Thanks.
 SetCVar("taintLog","0");
@@ -60,7 +65,8 @@ app.ResolveQuestData = function(t)
 			local g = t.g;
 			if g then
 				local qdg = questData.g
-				for i=1,#qdg do
+				local qdgCount = #qdg
+				for i=1,qdgCount do
 					tinsert(g, 1, qdg[i]);
 				end
 				questData.g = g;
@@ -114,7 +120,8 @@ local function AssignChildren(parent)
 	if g then
 		-- Iterate through the groups
 		local group;
-		for i=1,#g,1 do
+		local gCount = #g
+		for i=1,gCount,1 do
 			-- Set the group's parent
 			group = g[i];
 			group.parent = parent;
@@ -127,7 +134,8 @@ local function AssignFieldValue(group, field, value)
 		group[field] = value;
 		local g = group.g
 		if g then
-			for i=1,#g do
+			local gCount = #g
+			for i=1,gCount do
 				AssignFieldValue(g[i], field, value)
 			end
 		end
@@ -135,14 +143,15 @@ local function AssignFieldValue(group, field, value)
 end
 local function CloneArray(arr, clone)
 	local clone = clone or {}
-	for i=1,#arr do
+	local arrCount = #arr
+	for i=1,arrCount do
 		clone[#clone + 1] = arr[i]
 	end
 	return clone
 end
 local function CloneDictionary(data, clone)
 	if clone and getmetatable(clone) then
-		for key,value in pairs(data) do
+		for key,value in next,data do
 			if rawget(clone, key) == nil then
 				clone[key] = value
 			end
@@ -150,27 +159,13 @@ local function CloneDictionary(data, clone)
 		return clone
 	else
 		clone = clone or {}
-		for key,value in pairs(data) do
+		for key,value in next,data do
 			if clone[key] == nil then
 				clone[key] = value
 			end
 		end
 		return clone
 	end
-end
-local function CloneReference(group)
-	local clone = {};
-	local gg = group.g
-	if gg then
-		local g = {};
-		for i=1,#gg do
-			local child = CloneReference(gg[i]);
-			child.parent = clone;
-			g[#g + 1] = child
-		end
-		clone.g = g;
-	end
-	return setmetatable(clone, { __index = group });
 end
 app.distance = function( x1, y1, x2, y2 )
 	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
@@ -188,18 +183,11 @@ local function GetBestMapForGroup(group, currentMapID)
 			return mapID;
 		end
 
-		local coords = group.coords;
-		if coords then
-			for i=1,#coords do
-				mapID = coords[i][3];
-				if mapID == currentMapID then
-					return mapID;
-				end
-			end
-		end
+		if group.coords and group.coords[currentMapID] then return currentMapID; end
 		local maps = group.maps;
 		if maps then
-			for i=1,#maps do
+			local mapCount = #maps
+			for i=1,mapCount do
 				mapID = maps[i];
 				if mapID == currentMapID then
 					return mapID;
@@ -221,6 +209,13 @@ local function GetDeepestRelativeFunc(group, func)
 		return GetDeepestRelativeFunc(group.sourceParent or group.parent, func) or func(group);
 	end
 end
+-- Returns the first matching relative group from the "oldest" parent in the hierarchy where you need to go recursively deeper in the hierarchy to find the value from the top down. (meaning if you're 4 headerIDs deep and looking for "headerID", it'll return the root category's headerID rather than the immediate parent or grandparent's headerID)
+local function GetDeepestRelativeGroup(group, field)
+	if group then
+		return GetDeepestRelativeGroup(group.sourceParent or group.parent, field) or (group[field] and group);
+	end
+end
+app.GetDeepestRelativeGroup = GetDeepestRelativeGroup;
 local function GetRelativeField(group, field, value)
 	if group then
 		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
@@ -264,7 +259,6 @@ app.AssignChildren = AssignChildren;
 app.AssignFieldValue = AssignFieldValue;
 app.CloneArray = CloneArray;
 app.CloneDictionary = CloneDictionary;
-app.CloneReference = CloneReference;
 app.GetBestMapForGroup = GetBestMapForGroup;
 app.GetDeepestRelativeFunc = GetDeepestRelativeFunc;
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;
@@ -279,23 +273,30 @@ app.IsComplete = function(o)
 	return true;
 end
 
--- Potentially shared functions which aren't yet added to Classic
-app.DirectGroupRefresh = app.EmptyFunction
-app.DirectGroupUpdate = app.EmptyFunction
-
 local GetItemIcon = app.WOWAPI.GetItemIcon;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon
 app.GetIconFromProviders = function(group)
+	local qss = group.qss;
+	if qss then 
+		local icon = GetItemIcon(qss[1]);
+		if icon then return icon; end
+	end
 	local providers = group.providers
 	if not providers or #providers == 0 then return end
 
-	local icon, v
-	for i=1,#providers do
+	local icon, v, t, id
+	local providerCount = #providers
+	for i=1,providerCount do
 		v = providers[i]
-		if v[2] > 0 then
-			if v[1] == "o" then
-				icon = app.ObjectIcons[v[2]];
-			elseif v[1] == "i" then
-				icon = GetItemIcon(v[2]);
+		t = v[1]
+		id = v[2]
+		if id > 0 then
+			if t == "o" then
+				icon = app.ObjectIcons[id];
+			elseif t == "i" then
+				icon = GetItemIcon(id);
+			elseif t == "s" then
+				icon = GetSpellIcon(id);
 			end
 			if icon then return icon; end
 		end
@@ -307,7 +308,8 @@ app.GetNameFromProviders = function(group)
 	if not providers or #providers == 0 then return end
 
 	local pt, id, name, v
-	for i=1,#providers do
+	local providerCount = #providers
+	for i=1,providerCount do
 		v = providers[i]
 		id = v[2]
 		if id > 0 then
@@ -322,7 +324,7 @@ app.GetNameFromProviders = function(group)
 				name = app.NPCNameFromID[id];
 				break
 			elseif pt == "s" then
-				name = app.GetSpellName(id)
+				name = app.WOWAPI.GetSpellName(id)
 				break
 			end
 		end
@@ -340,29 +342,107 @@ app.GetNameFromProvider = function(pt, id)
 	elseif pt == "n" then
 		return app.NPCNameFromID[id];
 	elseif pt == "s" then
-		return app.GetSpellName(id)
+		return app.WOWAPI.GetSpellName(id)
 	end
 end
 
 -- Common Metatable Functions
 do
-local __MetaTable = {
-	AutoTable = function()
-		return { __index = function(t, key)
-			if key == nil then return end
-			local k = {}
-			t[key] = k
-			return k
-		end}
-	end,
-}
+local function AutoTableMetaFunc(t, key)
+	local value = {}
+	t[key] = value
+	return value
+end
 if app.__perf then
 	-- if tracking performance, we actually want each MetaTable reference to create a unique metatable so that performance stats are not shared
 	-- between multiple tables
-	app.MetaTable = setmetatable({__noperf=true}, { __index = function(t,key) return __MetaTable[key] and __MetaTable[key]() or nil end })
+	local function AutoTableOfTablesMetaIndexFunc(t, key)
+		local value = setmetatable({}, { __index = AutoTableMetaFunc });
+		t[key] = value;
+		return value;
+	end
+	local function AutoTableOfTablesMetaNewIndexFunc(t, key, value)
+		if type(value) == "table" then
+			setmetatable(value, { __index = AutoTableMetaFunc });
+		end
+		rawset(t, key, value);
+		return value;
+	end
+	local function AutoTableOfTablesOfTablesMetaIndexFunc(t, key)
+		local value = setmetatable({}, {
+			__index = AutoTableOfTablesMetaIndexFunc,
+			__newindex = AutoTableOfTablesMetaNewIndexFunc
+		});
+		t[key] = value;
+		return value;
+	end
+	local function AutoTableOfTablesOfTablesMetaNewIndexFunc(t, key, value)
+		if type(value) == "table" then
+			setmetatable(value, {
+				__index = AutoTableOfTablesMetaIndexFunc,
+				__newindex = AutoTableOfTablesMetaNewIndexFunc
+			});
+		end
+		rawset(t, key, value);
+		return value;
+	end
+	local __MetaTable = {
+		AutoTable = function()
+			return { __index = AutoTableMetaFunc }
+		end,
+		AutoTableOfTables = function()
+			return {
+				__index = AutoTableOfTablesMetaIndexFunc,
+				__newindex = AutoTableOfTablesMetaNewIndexFunc
+			};
+		end,
+		AutoTableOfTablesOfTables = function()
+			return {
+				__index = AutoTableOfTablesOfTablesMetaIndexFunc,
+				__newindex = AutoTableOfTablesOfTablesMetaNewIndexFunc
+			};
+		end
+	}
+	app.MetaTable = setmetatable({__noperf=true}, {
+		__index = function(t,key)
+			return __MetaTable[key] and __MetaTable[key]() or nil
+		end
+	})
 else
-	app.MetaTable = {}
-	app.MetaTable.AutoTable = __MetaTable.AutoTable()
+	local AutoTableMeta = { __index = AutoTableMetaFunc };
+	local AutoTableOfTablesMeta = {
+		__index = function(t, key)
+			local value = setmetatable({}, AutoTableMeta);
+			t[key] = value;
+			return value;
+		end,
+		__newindex = function(t, key, value)
+			if type(value) == "table" then
+				setmetatable(value, AutoTableMeta);
+			end
+			rawset(t, key, value);
+			return value;
+		end,
+	};
+	local AutoTableOfTablesOfTablesMeta = {
+		__index = function(t, key)
+			local value = setmetatable({}, AutoTableOfTablesMeta);
+			t[key] = value;
+			return value;
+		end,
+		__newindex = function(t, key, value)
+			if type(value) == "table" then
+				setmetatable(value, AutoTableOfTablesMeta);
+			end
+			rawset(t, key, value);
+			return value;
+		end,
+	};
+	app.MetaTable = {
+		AutoTable = AutoTableMeta,
+		AutoTableOfTables = AutoTableOfTablesMeta,
+		AutoTableOfTablesOfTables = AutoTableOfTablesOfTablesMeta,
+	};
 end
 end
 
@@ -404,16 +484,17 @@ app.Race = race;
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<
 	if IsOnTournamentRealm() then
-		app.print("Data will not be saved for this Realm");
+		app.print("Data will not be saved for Tournament Realms");
 		app.IgnoreDataCaching = app.ReturnTrue;
 		return true;
 	end
 	local realmName = GetRealmName();
 	if  realmName:find("Mythic Dungeons") or
 		realmName:find("Arena Champions") or
-		realmName:find("US") or
-		realmName:find("AU") or
-		realmName:find("EU")
+		realmName:find("Tournament")
+		-- realmName:find("US") or
+		-- realmName:find("AU") or
+		-- realmName:find("EU") or
 		-- confirm realm tournament names elsewhere
 		-- or realmName:find("CN")
 		-- or realmName:find("TW")
@@ -449,6 +530,11 @@ app.LocalizeGlobalIfAllowed = function(globalName, init)
 	return app.LocalizeGlobal(globalName, init);
 end
 
+-- Make sure required variables exist
+if not app.Presets then app.Presets = {}; end
+if not app.ObjectNames then app.ObjectNames = {}; end
+if not app.FilterConstants then app.FilterConstants = {}; end
+if not app.AccountWideQuestsDB then app.AccountWideQuestsDB = {}; end
 if not app.Presets.ALL then app.Presets.ALL = setmetatable({}, {__index = app.ReturnTrue}) end
 
 do
@@ -531,21 +617,15 @@ end
 local frameClass = getmetatable(frame).__index;
 frameClass.SetATTTooltip = SetATTTooltip;
 frameClass.StartATTCoroutine = StartATTCoroutine;
-if app.IsRetail then
-	local StartCoroutine = app.StartCoroutine
-	app.StartATTCoroutine = function(self, ...)
-		StartCoroutine(...);
-	end
-else
-	app.StartATTCoroutine = function(self, ...)
-		StartATTCoroutine(frame, ...);
-	end
+-- app-based coroutine calls are unique on app, but we only ever call them in global context
+app.StartATTCoroutine = function(self, ...)
+	app.StartCoroutine(...);
 end
 
 local button = CreateFrame("Button", nil, frame);
 ---@class ATTButtonClass: Button
 local buttonClass = getmetatable(button).__index;
-buttonClass.StartATTCoroutine = StartATTCoroutine;
+buttonClass.StartATTCoroutine = StartATTCoroutine;	-- don't think this is used...
 buttonClass.SetATTTooltip = SetATTTooltip;
 button:Hide();
 
@@ -560,14 +640,20 @@ local editbox = CreateFrame("EditBox", nil, frame);
 local editBoxClass = getmetatable(editbox).__index;
 editBoxClass.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
+
+local slider = CreateFrame("Slider", nil, frame);
+---@class ATTEditBoxClass: Slider
+local sliderClass = getmetatable(slider).__index;
+sliderClass.SetATTTooltip = SetATTTooltip;
+slider:Hide();
 end
 
 function app:ShowPopupDialog(msg, callback)
 	local popup = StaticPopupDialogs.ALL_THE_THINGS;
 	if not popup then
 		popup = {
-			button1 = "Yes",
-			button2 = "No",
+			button1 = YES,
+			button2 = NO,
 			timeout = 0,
 			showAlert = true,
 			whileDead = true,
@@ -586,34 +672,57 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	local popup = StaticPopupDialogs.ALL_THE_THINGS_EDITBOX;
 	if not popup then
 		popup = {
-			button1 = "Okay",
-			timeout = timeout,
+			button1 = OKAY,
+			button2 = CANCEL,
 			showAlert = true,
 			whileDead = true,
 			hideOnEscape = true,
 			enterClicksFirstButton = true,
 			hasEditBox = true,
+			maxLetters = 0,
 			OnAccept = function(self)
 				if popup.callback and type(popup.callback) == "function" then
 					local editBox = self.editBox or self.EditBox or (self.GetEditBox and self:GetEditBox())
 					popup.callback(editBox:GetText());
 				end
 			end,
+			-- OnCancel = function(self)
+			-- end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
 		};
 		StaticPopupDialogs.ALL_THE_THINGS_EDITBOX = popup;
 	end
-	popup.OnShow = function (self, data)
+	popup.OnShow = function(self, data)
 		local editBox = self.editBox or self.EditBox or (self.GetEditBox and self:GetEditBox())
-		editBox:SetText(text);
-		editBox:SetJustifyH("CENTER");
-		editBox:SetWidth(240);
+		editBox:SetText(text)
+		editBox:SetJustifyH("CENTER")
+		editBox:SetWidth(240)
 		if editBox.HighlightText then
-			editBox:HighlightText();
+			editBox:HighlightText()
 		end
+		editBox:SetFocus()
+
+		editBox:SetScript("OnEnterPressed", function(self)
+			local parent = self:GetOwningDialog()
+			local acceptButton = parent and parent.GetButton1 and parent:GetButton1()
+			if acceptButton then
+				acceptButton:Click()
+			end
+		end)
+
+		editBox:SetScript("OnEscapePressed", function(self)
+			local parent = self:GetOwningDialog()
+			local cancelButton = parent and parent.GetButton2 and parent:GetButton2()
+			if cancelButton then
+				cancelButton:Click()
+			else
+				StaticPopup_Hide("ALL_THE_THINGS_EDITBOX")
+			end
+		end)
 	end;
 	popup.text = msg or "";
 	popup.callback = callback;
+	popup.timeout = timeout;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
 end
@@ -655,6 +764,9 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 			l:SetPoint("TOP", f, "TOP", 0, -3);
 			l:SetJustifyH("CENTER");
 			l:SetText(label or "");
+			l:SetWordWrap(true)
+			l:SetPoint("LEFT", f, "LEFT", 10, -10)
+			l:SetPoint("RIGHT", f, "RIGHT", -10, -10)
 			f.Label = l;
 			sf:SetPoint("TOP", l, "BOTTOM", 0, -5)
 		else
@@ -730,3 +842,134 @@ app.Modules = {};
 
 -- Global Variables
 AllTheThingsSavedVariables = {};
+
+-- Data style exporters and utility for copying window data via various styles.
+local DataStyleExporters = {};
+app.DataStyleExporters = DataStyleExporters
+
+-- Register a new exporter by name.  If the style already exists or the
+-- provided function is invalid the call is ignored.
+--
+-- 'funcs' is a table of callbacks used by ExportStylizedData:
+--
+-- funcs.main(data, depth)
+--   Required. Returns a string representation for the current data node.
+--
+-- funcs.beforeData(data, depth)
+--   Optional. If returns a string, it is inserted before current data.
+--
+-- funcs.afterData(data, depth)
+--   Optional. If returns a string, it is inserted after current data.
+--
+-- funcs.beforeSub(data, depth)
+--   Optional. If returns a string, it is inserted before descendants are processed.
+--
+-- funcs.afterSub(data, depth)
+--   Optional. If returns a string, it is inserted after descendants are processed.
+--
+-- funcs.depthShift(data)
+--   Optional. Controls depth increment for child recursion. Defaults to 1.
+function app:RegisterDataStyleExporter(style, funcs)
+	if type(style) ~= "string" or type(funcs) ~= "table" or type(funcs.main) ~= "function" then
+		app.print("Invalid definition for RegisterDataStyleExporter:", style)
+		return
+	end
+	if DataStyleExporters[style] then
+		app.print("Export Style already defined!",style)
+	end
+	-- Validate optional function keys
+	for key, func in pairs(funcs) do
+		if key ~= "main" and type(func) ~= "function" then
+			app.print("Invalid definition for RegisterDataStyleExporter:", style, "- invalid key:", key)
+			return
+		end
+	end
+	DataStyleExporters[style] = funcs
+end
+
+-- Recursive helper which walks data and its .g subgroups applying the
+-- provided style function and collecting results into the strings array.
+local function ExportDataRecursively(data, styleFuncs, strings, depth)
+	if not data then return end
+	depth = depth or 0
+	local g = data.g
+	if not g or type(g) ~= "table" then
+		g = nil
+	end
+	local str
+	-- run the style exporter and add its result if present
+	if styleFuncs.beforeData then
+		str = styleFuncs.beforeData(data, depth)
+		if str then
+			strings[#strings + 1] = str
+		end
+	end
+	str = styleFuncs.main(data, depth)
+	if str then
+		strings[#strings + 1] = str;
+	end
+	if g then
+		if styleFuncs.beforeSub then
+			str = styleFuncs.beforeSub(data, depth)
+			if str then
+				strings[#strings + 1] = str
+			end
+		end
+		local depthShift = styleFuncs.depthShift and styleFuncs.depthShift(data) or 1
+		local gCount = #g
+		for i=1,gCount do
+			ExportDataRecursively(g[i], styleFuncs, strings, depth + depthShift)
+		end
+		if styleFuncs.afterSub then
+			str = styleFuncs.afterSub(data, depth)
+			if str then
+				strings[#strings + 1] = str;
+			end
+		end
+	end
+	if styleFuncs.afterData then
+		str = styleFuncs.afterData(data, depth)
+		if str then
+			strings[#strings + 1] = str
+		end
+	end
+end
+
+-- Accepts a window (string identifier or table) and an export style key.
+-- The style key is looked up in DataStyleExporters; if missing an error message is
+-- shown.  Data from the window and all nested groups is passed through the
+-- exporter and the resulting strings concatenated and displayed in a multi-
+-- line popup for easy copying.
+function app:ExportStylizedData(window, style)
+	-- style must exist and window must have data
+	local styleFuncs = DataStyleExporters[style]
+	if not styleFuncs then
+		app.print("Export Style not defined!",style)
+		return
+	end
+	-- resolve window string to actual window table if needed
+	if type(window) == "string" then
+		window = app:GetWindow(window)
+	end
+	if not window or not window.data then
+		app.print("Export Window not defined or has no data!")
+		return
+	end
+	local DataStyleStrings = {}
+	if styleFuncs.beforeExport then
+		local str = styleFuncs.beforeExport(window.data)
+		if str then
+			DataStyleStrings[#DataStyleStrings + 1] = str
+		end
+	end
+	ExportDataRecursively(window.data, styleFuncs, DataStyleStrings)
+	if styleFuncs.afterExport then
+		local str = styleFuncs.afterExport(window.data)
+		if str then
+			DataStyleStrings[#DataStyleStrings + 1] = str
+		end
+	end
+	-- join each style string with a newline for readability
+	local out = app.TableConcat(DataStyleStrings, nil, nil, "\n")
+	app:ShowPopupDialogWithMultiLineEditBox(out)
+end

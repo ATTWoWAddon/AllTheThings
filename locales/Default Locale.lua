@@ -4,15 +4,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 local L = {
 	-- Temporary
-    EVENT_REMAPPING = {};
-    EVENT_TIMERUNNING_SEASONS = {};
-    HEADER_DESCRIPTIONS = {};
-    HEADER_EVENTS = {};
-    HEADER_ICONS = {};
-    HEADER_LORE = {};
-    HEADER_NAMES = {};
-    QUEST_NAMES = {};
-    MAP_ID_TO_ZONE_TEXT = {};
+	EVENT_REMAPPING = {};
+	EVENT_TIMERUNNING_SEASONS = {};
+	HEADER_DESCRIPTIONS = {};
+	HEADER_EVENTS = {};
+	HEADER_ICONS = {};
+	HEADER_LORE = {};
+	HEADER_NAMES = {};
+	QUEST_NAMES = {};
+	MAP_ID_TO_ZONE_TEXT = {};
 
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
@@ -42,13 +42,15 @@ local L = {
 		["Ingénierie"] = 4036,	-- Engineering
 		["Secourisme"] = 3273,	-- First Aid
 
-		-- Spanish (Classic Era)
+		-- Spanish-EU (Classic Era)
+		["Botánica"] = 2366,	-- Herbalism
 		["Costura"] = 3908,	-- Tailoring
+		["Desollar"] = 8613,	-- Skinning
+		["Ganzúa"] = 1809,	-- Lock Pick
 		["Marroquinería"] = 2108,	-- Leatherworking
 
-		["Ganzúa"] = 1809,        -- Lock Pick    -- Required for ES (EU)
-		["Desollar"] = 8613,    -- Skinning        -- Required for ES (EU)
-		["Cнятие шкур"] = 8613,    -- Skinning        -- Required for RU
+		-- Russian
+		["Cнятие шкур"] = 8613,	-- Skinning
 	},
 
 	EXPANSION_DATA = {
@@ -58,47 +60,47 @@ local L = {
 		},
 		{	-- The Burning Crusade
 			["icon"] = app.asset("Expansion_TBC"),
-			["lore"] = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.",
+			["lore"] = "The Burning Crusade is the first expansion.\n\nThe Doom Lord Kazzak reopened the Dark Portal to Outland, flooding Azeroth with the ravenous demons of the Burning Legion. Expeditions from the Horde and Alliance, reinforced by their new blood elf and draenei allies, passed through the gateway to stop the invasion at its source. On Outland's desiccated Hellfire Peninsula, the Alliance discovered several of their heroes who had crossed through the portal many years before, while the Horde made contact with the Mag'har - 'uncorrupted' orcs who had not participated in their race's original invasion of Azeroth. The expedition into Outland dragged Horde and Alliance armies further into conflict with the agents of the Legion and the lieutenants of Illidan Stormrage, who had claimed the shattered realm for his own.",
 		},
 		{	-- Wrath of the Lich King
 			["icon"] = app.asset("Expansion_WOTLK"),
-			["lore"] = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.",
+			["lore"] = "Wrath of the Lich King is the second expansion.\n\nIn the wake of the Sunwell's purification, a period of suspicious quiet had swept over the world. As if on cue, the undead Scourge launched a massive assault against the cities and towns of Azeroth, this time extending its reach far beyond the Eastern Kingdoms. Under pressure to respond with a full army, Warchief Thrall deployed an expedition force to Northrend led by Overlord Garrosh Hellscream. Meanwhile, the missing human king Varian Wrynn at last returned to Stormwind City and reclaimed his crown. He sent an equally powerful Alliance army, commanded by Bolvar Fordragon, to defeat the Lich King... And any Horde forces who would stand in their way.",
 		},
 		{	-- Cataclysm
 			["icon"] = app.asset("Expansion_CATA"),
-			["lore"] = "Cataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, introduces Archaeology & reforging, & restructures the world itself.",
+			["lore"] = "Cataclysm is the third expansion.\n\nThe victorious Northrend expeditions returned home to find all of Azeroth shaken by erratic elemental forces. This unrest preceded the return of the maddened Dragon Aspect Deathwing the Destroyer, who erupted from his lair in the bowels of the Elemental Plane, shattering Azeroth in the process. With the elemental realms now open to the world, chaotic elemental spirits and their tyrannical lords emerged to help the Destroyer and the nihilistic Twilight's Hammer cult bring about the Hour of Twilight: the end of all life on Azeroth.",
 		},
 		{	-- Mists of Pandaria
 			["icon"] = app.asset("Expansion_MOP"),
-			["lore"] = "Mists of Pandaria is the fourth expansion. The expansion refocuses primarily on the war between the Alliance & Horde, in the wake of the accidental rediscovery of Pandaria. Adventurers rediscover the ancient pandaren people, whose wisdom will help guide them to new destinies; the Pandaren Empire's ancient enemy, the mantid; and their legendary oppressors, the enigmatic mogu. The land changes over time & the conflict between Varian Wrynn & Garrosh Hellscream escalates. As civil war wracks the Horde, the Alliance & forces in the Horde opposed to Hellscream's violent uprising join forces to take the battle directly to Hellscream & his Sha-touched allies in Orgrimmar.",
+			["lore"] = "Mists of Pandaria is the fourth expansion.\n\nWith Deathwing's menace ended, Warchief Garrosh Hellscream seized the opportunity to strike at the Alliance and expand the Horde's territory on Kalimdor. His assault completely obliterated the human city of Theramore, causing world-wide violence between the factions to erupt anew. A destructive naval skirmish left Alliance and Horde forces washed ashore on the fog-shrouded island of Pandaria, which had appeared in the open sea, defying modern maps and charts. As both warring factions established footholds on the resource-rich continent, they made contact with the noble pandaren, one of its most prolific peoples. This ancient race worked with the Alliance and Horde in the hopes of dispersing the Sha: dark, ephemeral beings roused from beneath Pandaria by the bloody conflict.",
 		},
 		{	-- Warlords of Draenor
 			["icon"] = app.asset("Expansion_WOD"),
-			["lore"] = "Warlords of Draenor is the fifth expansion. Across Draenor's savage jungles & battle-scarred plains, Azeroth's heroes will engage in a mythic conflict involving mystical draenei champions & mighty orc clans, & cross axes with the likes of Grommash Hellscream, Blackhand, & Ner'zhul at the height of their primal power. Players will need to scour this unwelcoming land in search of allies to help build a desperate defense against the old Horde's formidable engine of conquest, or else watch their own world's bloody, war-torn history repeat itself.",
+			["lore"] = "Warlords of Draenor is the fifth expansion.\n\nGarrosh Hellscream escaped justice with the assistance of the bronze dragon Kairozdormu, eventually finding himself in an alternate Draenor in the time before the original Horde had come to Azeroth. Hungry for vengeance, Garrosh provided his father, Grommash Hellscream, with the technology to assemble his ideal army—the conquering force called the Iron Horde. Grommash was quick to unite Draenor's orcish clans under his banner, and the clan leaders became the Iron Horde's warlords. Among them were the bloodthirsty Kargath Bladefist, the cunning Blackhand, the elder shaman Ner'zhul, and the fearless Kilrogg Deadeye. The Iron Horde took command of several vital locations on Draenor, subjugated the ogre city of Highmaul, and built massive fortifications like Blackrock Foundry to outfit the warlords' armies. Once the Iron Horde had Draenor in its grasp, the orcs invaded Azeroth through the Dark Portal, razed Nethergarde Keep, and seized control of Dreadmaul Hold. In retaliation, Khadgar assembled the champions of the Alliance and the Horde, leading them through the portal to stop the Iron Horde on Draenor once and for all. Garrosh ultimately met his end at Thrall's hands, and after an exhausting campaign, the heroes of Azeroth were able to defeat most of the Iron Horde's warlords. Khadgar's offensive dealt a crushing blow to the Iron Horde. Grommash's failure to give his warriors the victory he had promised bred dissent within the ranks, affording the warlock Gul'dan the opportunity to usurp the Iron Horde and summon the demonic Burning Legion to Draenor...",
 		},
 		{	-- Legion
 			["icon"] = app.asset("Expansion_LEGION"),
-			["lore"] = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.",
+			["lore"] = "Legion is the sixth expansion.\n\nGul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.",
 		},
 		{	-- Battle for Azeroth
 			["icon"] = app.asset("Expansion_BFA"),
-			["lore"] = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.",
+			["lore"] = "Battle for Azeroth is the seventh expansion.\n\nAzeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.",
 		},
 		{	-- Shadowlands
 			["icon"] = app.asset("Expansion_SL"),
-			["lore"] = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.",
+			["lore"] = "Shadowlands is the eighth expansion.\n\nThe veil between life and death is no more.\n\nWith a single act of destruction, Sylvanas Windrunner has ripped open the way to the afterlife. Azeroth's staunchest defenders have been dragged into all-consuming darkness. An ancient force of death threatens to break its bonds and unravel reality.\n\nHidden realms of wonder and horror await any who would pass to the other side. The Shadowlands is home to an entire realm of the departed; it is a world between worlds whose delicate balance preserves life and death itself.",
 		},
 		{	-- Dragonflight
 			["icon"] = app.asset("Expansion_DF"),
-			["lore"] = "Dragonflight is the ninth expansion. The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
+			["lore"] = "Dragonflight is the ninth expansion.\n\nThe dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
 		},
 		{	-- The War Within
 			["icon"] = app.asset("Expansion_TWW"),
-			["lore"] = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
+			["lore"] = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga.\n\nJourney through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
 		},
 		{	-- Midnight
 			["icon"] = app.asset("Expansion_MN"),
-			["lore"] = "Midnight is the eleventh expansion for World of Warcraft and the second chapter of the Worldsoul Saga. Return to Quel'Thalas, where the forces of the Void have invaded Azeroth, intent on claiming the Sunwell and plunging the world into darkness and fear. Reunify the scattered elven tribes of Azeroth and ultimately fight alongside the forces of the Light to banish the Shadow forever.",
+			["lore"] = "Midnight is the eleventh expansion for World of Warcraft and the second chapter of the Worldsoul Saga.\n\nReturn to Quel'Thalas, where the forces of the Void have invaded Azeroth, intent on claiming the Sunwell and plunging the world into darkness and fear. Reunify the scattered elven tribes of Azeroth and ultimately fight alongside the forces of the Light to banish the Shadow forever.",
 		},
 		{	-- The Last Titan
 			["icon"] = app.asset("Expansion_TLT"),
@@ -116,7 +118,8 @@ local L = {
 	},
 };
 L = setmetatable(L, { __index = function(t, k)
-	app.print(("MISSING LOCALE: %s"):format(k))
+	if k == "ToDebugString" then return end
+	app.report("MISSING LOCALE",k)
 	rawset(t, k, UNKNOWN)
 	return UNKNOWN
 end })
@@ -134,19 +137,21 @@ local ABBREVIATIONS = {
 	["Outdoor Zones"] = LFG_TYPE_ZONE,
 	-- Expansion sorted
 	["Classic %> "] = "",
-	["The Burning Crusade"] = "BC",
-	["Burning Crusade"] = "BC",
-	["The BC"] = "BC",
-	["Wrath of the Lich King"] = "WotLK",
-	["Cataclysm %>"] = "Cata >",
+	["%> The Burning Crusade"] = "> BC",
+	["%> Burning Crusade"] = "> BC",
+	["%> The BC"] = "> BC",
+	["%> The TBC"] = "> BC",							-- German locale issue
+	["%> Wrath of the Lich King"] = "> WotLK",
+	["%> Cataclysm"] = "> Cata",
 	["Cataclysm "] = "Cata ",
-	["Mists of Pandaria"] = "MoP",
-	["Warlords of Draenor"] = "WoD",
-	["Battle for Azeroth"] = "BFA",
-	["The Shadowlands"] = "SL",
-	["Shadowlands"] = "SL",
-	["Dragonflight"] = "DF",
-	["The War Within"] = "TWW",
+	["%> Mists of Pandaria"] = "> MoP",
+	["%> Warlords of Draenor"] = "> WoD",
+	["%> Battle for Azeroth"] = "> BFA",
+	["%> The Shadowlands"] = "> SL",
+	["%> Shadowlands"] = "> SL",
+	["%> Dragonflight"] = "> DF",
+	["%> The War Within"] = "> TWW",
+	["%> Midnight"] = "> MN",
 	-- Dungeon & Raid
 	["Normal"] = "N",
 	["Heroic"] = "H",
@@ -155,10 +160,13 @@ local ABBREVIATIONS = {
 	["Raid Finder"] = "LFR",
 	["Looking For Raid"] = "LFR",
 	["10 Player"] = "10M",
-	["10 Player (Heroic)"] = "10M (H)",
 	["25 Player"] = "25M",
-	["25 Player (Heroic)"] = "25M (H)",
 	[BATTLEGROUNDS] = "BGs",
+	-- Random Season names where Blizzard used a word instead of number
+	["Season One"] = "Season 1",
+	["Season Two"] = "Season 2",
+	["Season Three"] = "Season 3",
+	["Season Four"] = "Season 4",
 	-- Dungeon & Raid Names
 	-- Classic
 	["Scarlet Monastery of Old"] = "SM: Old",
@@ -186,13 +194,21 @@ local ABBREVIATIONS = {
 	["Tazavesh, the Veiled Market"] = "Tazavesh",
 	-- TWW
 	["Ara-Kara, City of Echoes"] = "Ara-Kara",
-	["Enterprising Hero: The War Within Season Two"] = "Enterprising Hero: TWW S2",
-	["The War Within Keystone Legend: SeasonTwo"] = "TWW Keystone Legend: S2",
-	["Unbound Hero: The War Within Season Three"] = "Unbound Hero: TWW S3",
 	["Mug'Zee, Heads of Security"] = "Mug'Zee",
 	["Sikran, Captain of the Sureki"] = "Sikran",
 	["Vexie and the Geargrinders"] = "Vexie & the Geargrinders",
+	-- MID
+	["The Voidspire"] = "Voidspire",
+	["The Tidebound Grotto"] = "Tidebound Grotto",
+	["Nymrissa Wavecaller"] = "Nymrissa",
+	["The Venomous Abyss"] = "Venomous Abyss",
+	["Nek'zali the Soulcoiler"] = "Nek'zali",
+	["Vashnik the Malignant"] = "Vashnik",
+	["The Lost Explorers"] = "Lost Explorers",
+	["The Twin Fangs"] = "Twin Fangs",
+	["The Coiled Altar"] = "Coiled Altar",
 	-- Outdoor Zones
+	["One Does Not Simply Walk Into Harandar"] = "One Does Not Simply...",
 	["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
 	["Season "] = "S",
 	["Sanctum Upgrades %> "] = "",
@@ -205,12 +221,16 @@ local ABBREVIATIONS = {
 	["WoW Anniversary"] = "Anniversary",
 	["Dragonriding Challenge: Dragon Isles: Gold > "] = "",
 	["Dragon Racing Completionist: Gold > "] = "",
+	["Reverse Racer: Gold > "] = "",
 	["Emerald Dream Challenge Racing Completionist: Gold > "] = "",
 	["Emerald Dream Racing Completionist: Gold > "] = "",
 	["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
 	["Forbidden Reach Racing Completionist: Gold > "] = "",
 	["Zaralek Cavern Racing Completionist: Gold > "] = "",
+	["Vaults of Atal'Utek"] = "Vaults",
+	["The Coiled Isle"] = "Coiled Isle",
 
+	["Vendors"] = "Vendor",
 	["WoW's Anniversary %> "] = "",
 	[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
 	["Emissary Quests"] = "Emissary",
@@ -572,7 +592,7 @@ if localeString == "zhCN" or localeString == "zhTW" then
 	end
 end
 
-if app.IsRetail then
+if app.IsRetail and app.GameBuildVersion > 70000 then
 	local CUSTOM_COLLECTS_REASONS = {
 		["NPE"] = {
 			color = "ff5bc41d",

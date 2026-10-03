@@ -1,8 +1,7 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local contains = app.contains;
-local AssignChildren, ExpandGroupsRecursively =
-	app.AssignChildren, app.ExpandGroupsRecursively;
 
 -- Global locals
 local ipairs, setmetatable =
@@ -16,14 +15,8 @@ function LocalMapFilter(group)
 		if group.mapID == __currentMapID then
 			return true;
 		end
-	elseif group.coord and group.coord[3] == __currentMapID then
+	elseif group.coords and group.coords[__currentMapID] then
 		return true;
-	elseif group.coords then
-		for i,coord in ipairs(group.coords) do
-			if coord[3] == __currentMapID then
-				return true;
-			end
-		end
 	end
 	if group.maps and contains(group.maps, __currentMapID) then
 		return true;
@@ -33,11 +26,8 @@ local CachedLocalMapData = setmetatable({}, {
 	__index = function(cachedLocalMapData, mapID)
 		if mapID then
 			__currentMapID = mapID;
-			local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, LocalMapFilter);
+			local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, LocalMapFilter);
 			if results and #results > 0 then
-				local f = {g=results};
-				AssignChildren(f);
-				ExpandGroupsRecursively(f, true, true);
 				cachedLocalMapData[mapID] = results;
 				return results;
 			else
@@ -70,7 +60,6 @@ local CachedLocalMapData = setmetatable({}, {
 -- Implementation
 app:CreateWindow("Local List", {
 	AllowCompleteSound = true,
-	IsTopLevel = true,
 	Defaults = {
 		["y"] = 0,
 		["x"] = 0,
@@ -84,10 +73,9 @@ app:CreateWindow("Local List", {
 		"attlocal",
 	},
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Local List",
+		self:SetData(app.CreateRawText(L.LOCAL_LIST, {
 			icon = app.asset("Category_Zones"),
-			description = "This window shows you all of the content for the local map.\n\nThis is more a debugging tool than anything else.",
+			description = L.LOCAL_LIST_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
@@ -95,13 +83,12 @@ app:CreateWindow("Local List", {
 			OnUpdate = function(t)
 				local data = CachedLocalMapData[self.mapID];
 				if data and data ~= t.g then
-					for i,o in ipairs(data) do
-						o.parent = t;
-					end
 					t.g = data;
+					self:AssignChildren();
+					self:ExpandData(true);
 				end
 			end,
-		};
+		}));
 		self.SetMapID = function(self, mapID, show)
 			if mapID and mapID ~= self.mapID then
 				self.mapID = mapID;

@@ -1,0 +1,4 @@
+12.1.5.69594
+fp(3302),	-- 12.1.5 Labyrinth - Rewards - Soulgate - Taxi - Chamber 1a
+fp(3303),	-- 12.1.5 Labyrinth - Rewards - Soulgate - Taxi - Chamber 2b
+fp(3317),	-- Labyrinth, Akil'zon's Roost

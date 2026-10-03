@@ -7,23 +7,26 @@ local L = app.L
 -- Encapsulates the functionality for handling and checking Cost information
 
 -- Global locals
-local rawget, ipairs, pairs, type,math_min,wipe
-	= rawget, ipairs, pairs, type,math.min,wipe
-local PlayerHasToy, C_CurrencyInfo_GetCurrencyInfo
-	= PlayerHasToy, C_CurrencyInfo.GetCurrencyInfo
+local rawget, pairs, type,math_min,wipe
+	= rawget, pairs, type,math.min,wipe
+local PlayerHasToy
+	= PlayerHasToy
+
+-- WoW API Cache
+local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
 
 -- App locals
-local SearchForFieldContainer, GetRawField, GetRelativeByFunc, SearchForObject, IsComplete
-	= app.SearchForFieldContainer, app.GetRawField, app.GetRelativeByFunc, app.SearchForObject, app.IsComplete
-local OneTimeQuests = app.EmptyTable
+local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, IsComplete
+	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
 local GetItemCount = app.WOWAPI.GetItemCount
 local IsSpellKnownHelper, CreateObject, FillGroups
 
 -- Module locals
 local RecursiveGroupRequirementsFilter, RecursiveAccountFilter, DGU, UpdateRunner, ExtraFilters
 -- If a Thing which has a cost is not a quest or is available as a quest
+-- Also exclude anything marked with _nosearch in its parent chain.
 local function IsAvailable(ref)
-	return not ref.questID or app.IsQuestAvailable(ref)
+	return not GetRelativeRawWithField(ref, "_nosearch") and (not ref.questID or app.IsQuestAvailable(ref))
 end
 local CostLinkedFillOptions = {Fillers={}}
 
@@ -50,6 +53,9 @@ local CostDebugIDs = {
 	-- [193215] = true,	-- Scaleseeker Mezeri
 	-- [24368] = true,	-- Coilfang Armaments
 	-- [9766] = true,	-- Coilfang Armaments (quest)
+	-- [3160] = true,	-- MID Tailoring Knowledge
+	-- [273000] = true,	-- Corrosive Soul
+	-- [167698] = true,	-- Secret Fish Goggles
 }
 local function PrintDebug(id, ...)
 	if CostDebugIDs.ALL then
@@ -71,7 +77,7 @@ end
 -- 2 - Available to collect based on only Unobtainable Filtering
 -- 3 - Available to collect without Filtering
 local function CheckCollectible(ref, costid)
-	-- local RefSearch = app:RawSearchLink(ref.key,ref.keyval)
+	-- local RefSearch = CostDebugIDs[costid] and app:RawSearchLink(ref.key,ref.keyval)
 	-- Depth = Depth + 1
 	-- Only track Costs through Things which are Available
 	if not IsAvailable(ref) then
@@ -143,12 +149,12 @@ local function CacheFilters()
 end
 app.AddEventHandler("OnLoad", CacheFilters)
 local function BlockedParent(group)
-	if group.questID and (group.saved or group.locked or OneTimeQuests[group.questID]) then
-		return group
-	end
+	if not group.questID or app.IsQuestAvailable(group) then return end
+
+	return group
 end
 local CurrencyAmounts = setmetatable({}, { __index = function(t, key)
-	local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(key)
+	local currencyInfo = GetCurrencyInfo(key)
 	t[key] = (currencyInfo and currencyInfo.quantity) or 0
 	return t[key]
 end})
@@ -196,30 +202,34 @@ do
 	end
 end
 local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost)
-	-- Iterate on the search result of the entry key
+	-- Intent:
+	-- isCost 		= you should see this Thing as a Cost because it's needed for Purchases
+	-- isOwnedCost 	= you own enough to complete all Purchases (according to ATT)
+
 	local parent, blockedBy
 	-- PrintDebug(costID, "SetCostTotals",#costs,isCost)
-	for _,c in ipairs(costs) do
+	local c
+	for i=1,#costs do
+		c = costs[i]
 		-- Mark the group with a costTotal
-		-- PrintDebug(costID, "Force Cost",app:SearchLink(c),isCost,c.hash,c.modItemID or c.currencyID)
-		c._SettingsRefresh = refresh;
-		c.isOwnedCost = isOwnedCost
+		-- PrintDebug(costID,"Force Cost",app:SearchLink(c),c.hash,c.modItemID or c.currencyID)
+		c._SettingsRefresh = refresh
 		-- only mark cost on visible content
 		if isCost and RecursiveGroupRequirementsFilter(c, ExtraFilters) then
 			parent = c.parent
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
-			if not blockedBy then
-				c.isCost = isCost;
-				-- PrintDebug(costID, "Unblocked Cost",app:SearchLink(c))
-			else
-				c.isCost = nil;
-				-- PrintDebug(costID, "Skipped cost under locked/saved parent"
-				-- 	,app:SearchLink(c)
-				-- 	,app:SearchLink(blockedBy))
-			end
+			-- PrintDebug(costID, "Cost"
+			-- 	,app:SearchLink(c)
+			-- 	,"Parent"
+			-- 	,app:SearchLink(parent)
+			-- 	,"BlockedBy"
+			-- 	,app:SearchLink(blockedBy))
+			c.isCost = not blockedBy and isCost or nil
+			c.isOwnedCost = isOwnedCost
 		else
 			-- PrintDebug(costID, "Not a cost",app:SearchLink(c))
-			c.isCost = nil;
+			c.isCost = nil
+			c.isOwnedCost = nil
 		end
 		-- regardless of the Cost state, make sure to update this specific cost group for visibility
 		DGU(c)
@@ -246,8 +256,10 @@ local function DoCollectibleCheckForItemRef(ref, itemID, itemUnbound)
 	-- PrintDebug(itemID, app:SearchLink(ref),"collectible with Default Filtering",app:RawSearchLink("itemID",itemID))
 	local refproviders = ref.providers
 	if refproviders and type(refproviders) == "table" then
-		for _,providerCheck in ipairs(refproviders) do
-			if providerCheck[1] == "i" and providerCheck[2] == itemID then
+		local p
+		for i=1,#refproviders do
+			p = refproviders[i]
+			if p[1] == "i" and p[2] == itemID then
 				CostTotals.AddItemProvider(itemID)
 				break
 			end
@@ -255,10 +267,24 @@ local function DoCollectibleCheckForItemRef(ref, itemID, itemUnbound)
 	end
 	local refcosts = ref.cost
 	if refcosts and type(refcosts) == "table" then
-		for _,costCheck in ipairs(refcosts) do
-			if costCheck[1] == "i" and costCheck[2] == itemID then
+		local c
+		for i=1,#refcosts do
+			c = refcosts[i]
+			if c[1] == "i" and c[2] == itemID then
 				-- add the total item cost amount from this ref to our tracker
-				CostTotals.AddItem(itemID, costCheck[3], ref)
+				CostTotals.AddItem(itemID, c[3], ref)
+				break
+			end
+		end
+	end
+	local refqss = ref.qss
+	if refqss and type(refqss) == "table" then
+		local c
+		for i=1,#refqss do
+			c = refqss[i]
+			if c == itemID then
+				-- add the total item cost amount from this ref to our tracker
+				CostTotals.AddItem(itemID, c, ref)
 				break
 			end
 		end
@@ -282,10 +308,12 @@ local function DoCollectibleCheckForCurrRef(ref, currencyID)
 	-- PrintDebug(currencyID, app:SearchLink(ref),"collectible with Default Filtering",app:RawSearchLink("currencyID",currencyID))
 	local refcosts = ref.cost
 	if refcosts and type(refcosts) == "table" then
-		for _,costCheck in ipairs(refcosts) do
-			if costCheck[1] == "c" and costCheck[2] == currencyID then
+		local c
+		for i=1,#refcosts do
+			c = refcosts[i]
+			if c[1] == "c" and c[2] == currencyID then
 				-- add the total currency cost amount from this ref to our tracker
-				CostTotals.AddCurr(currencyID, costCheck[3], ref)
+				CostTotals.AddCurr(currencyID, c[3], ref)
 				break
 			end
 		end
@@ -312,13 +340,18 @@ local function DoCollectibleCheckForSpellRef(ref, spellID, itemUnbound)
 	-- PrintDebug(spellID, app:SearchLink(ref),"collectible with Default Filtering",app:RawSearchLink("spellID",spellID))
 	local refproviders = ref.providers
 	if refproviders and type(refproviders) == "table" then
-		for _,providerCheck in ipairs(refproviders) do
-			if providerCheck[1] == "s" and providerCheck[2] == spellID then
+		local p
+		for i=1,#refproviders do
+			p = refproviders[i]
+			if p[1] == "s" and p[2] == spellID then
 				CostTotals.AddSpellProvider(spellID)
 				break
 			end
 		end
 	end
+end
+local function PlayerIsMissingProviderSpell(spellID)
+	return not IsSpellKnownHelper(spellID)
 end
 local function PlayerIsMissingProviderItem(itemID)
 	return not PlayerHasToy(itemID) and GetItemCount(itemID, true, nil, true, true) == 0
@@ -329,25 +362,39 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 	local owned = 0
 	local isCost
 	if total > 0 or not isProv then
-		owned = total > 0 and GetItemCount(itemID, true, nil, true, true) or 0
-		isCost = total > owned
+		isCost = total > 0
+		owned = isCost and GetItemCount(itemID, true, nil, true, true) or 0
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
 	else
-		isProv = PlayerIsMissingProviderItem(itemID)
-		-- PrintDebug(itemID, app:SearchLink(costs[1]),isProv and "IS PROV" or "NOT PROV")
+		owned = PlayerIsMissingProviderItem(itemID) and 0 or 1
+		if owned == 0 then
+			-- if this provider Item is also a spell, check if the player knows that spell
+			local item = SearchForObject("itemID", itemID, "field")
+			local spellID = item and item.spellID
+			if spellID then
+				owned = item.saved and 1 or 0
+				-- PrintDebug(itemID, owned == 1 and "PROV IS KNOWN SPELL" or "PROV IS UNKNOWN SPELL")
+			end
+		else
+			-- provider-only Toy costs no longer show as a cost once you own the item as a toy
+			if PlayerHasToy(itemID) then
+				isCost = nil
+				isProv = nil
+			end
+		end
+		-- PrintDebug(itemID, app:SearchLink(costs[1]),owned == 1 and "PROV OWNED" or "PROV MISSING")
 	end
-	local isOwnedCost = not isCost and owned > 0
-	SetCostTotals(costs, isCost or isProv, refresh, itemID, isOwnedCost)
+	isCost = isCost or isProv
+	local isOwnedCost = (isCost and owned >= total) or nil
+	SetCostTotals(costs, isCost, refresh, itemID, isOwnedCost)
 end
 local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
 	local total = CostTotals.c[currencyID] or 0
 	local owned = CurrencyAmounts[currencyID]
-	local isCost = total > owned
+	local isCost = total > 0
+	local isOwnedCost = (isCost and owned >= total) or nil
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
-	SetCostTotals(costs, isCost, refresh, currencyID)
-end
-local function PlayerIsMissingProviderSpell(spellID)
-	return not IsSpellKnownHelper(spellID)
+	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost)
 end
 local function FinishCostAssignmentsForSpell(spellID, costs, refresh)
 	local isProv = CostTotals.sp[spellID]
@@ -439,7 +486,6 @@ local function CostCalcComplete()
 	end
 	for suffix,window in pairs(app.Windows) do
 		if suffix ~= "Prime" then
-			-- TODO: I don't like this, find a way to make it not necessary when Cost updates are performed
 			-- app.PrintDebug("Refresh after Costs",window.Suffix)
 			app.UpdateRunner.Run(window.Update, window, true)
 		end
@@ -456,22 +502,36 @@ local function UpdateCosts()
 	UpdateRunner.Run(CostCalcStart)
 	-- app.PrintDebug("UpdateCosts",refresh)
 
+	-- TODO: Quests can be costs but they're never updated properly since they aren't cached as 'costable-quests' somewhere
+	-- like other objects are below
+
 	-- Get all itemIDAsCost entries
-	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
+	for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
 	end
 
 	-- Get all currencyIDAsCost entries
-	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
+	for currencyID,refs in pairs(app.GetFieldContainer("currencyIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, false, refs)
 	end
 
 	-- Get all spellIDAsCost entries
-	for spellID,refs in pairs(SearchForFieldContainer("spellIDAsCost")) do
+	for spellID,refs in pairs(app.GetFieldContainer("spellIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsBySpellID, spellID, refresh, false, refs)
 	end
 end
 
+local UpdateCostTypeFunc = setmetatable({
+	i = UpdateCostsByItemID,
+	c = UpdateCostsByCurrencyID,
+	s = UpdateCostsBySpellID,
+	o = app.EmptyFunction,	-- objects are not costs, but can be providers
+	n = app.EmptyFunction,	-- NPCs are not costs but can be providers
+	g = app.EmptyFunction,	-- gold sometimes defined as a cost type
+}, { __index = function(t, key)
+	app.report("Unhandled Cost Update Type",key)
+	return app.EmptyFunction
+end})
 -- Performs a recursive update sequence and update of cost against the referenced 'cost'/'providers' table
 UpdateCostGroup = function(c)
 	-- app.PrintDebug("UCG",app:SearchLink(c),app._SettingsRefresh)
@@ -480,6 +540,27 @@ UpdateCostGroup = function(c)
 		return
 	end
 	local refresh = app._SettingsRefresh;
+	-- update child groups (hopefully no situations where we need to update recursively nested groups...)
+	local g = c.g
+	if g then
+		local o
+		for i=1,#g do
+			o = g[i]
+			if o.itemID then
+				-- app.PrintDebug("Send sub-group cost update i",app:SearchLink(o))
+				UpdateRunner.Run(UpdateCostsByItemID, o.modItemID or o.itemID, refresh, true)
+			end
+			if o.currencyID then
+				-- app.PrintDebug("Send sub-group cost update c",app:SearchLink(o))
+				UpdateRunner.Run(UpdateCostsByCurrencyID, o.currencyID, refresh, true)
+			end
+			if o.spellID then
+				-- app.PrintDebug("Send sub-group cost update s",app:SearchLink(o))
+				UpdateRunner.Run(UpdateCostsBySpellID, o.spellID, refresh, true)
+			end
+		end
+	end
+
 	local costs, providers = c.cost, c.providers
 	-- update cost
 	if costs and type(costs) == "table" then
@@ -488,12 +569,8 @@ UpdateCostGroup = function(c)
 		for i=1,#costs do
 			cost = costs[i];
 			type, id = cost[1], cost[2];
-			-- app.PrintDebug("UCG:",type,id)
-			if type == "i" then
-				UpdateCostsByItemID(id, refresh, true)
-			elseif type == "c" then
-				UpdateCostsByCurrencyID(id, refresh, true)
-			end
+			-- app.PrintDebug("UCG.cost:",type,id)
+			UpdateCostTypeFunc[type](id, refresh, true)
 		end
 	end
 	-- update providers
@@ -503,22 +580,13 @@ UpdateCostGroup = function(c)
 		for i=1,#providers do
 			prov = providers[i];
 			type, id = prov[1], prov[2];
-			-- app.PrintDebug("UCG:",type,id)
-			if type == "i" then
-				UpdateCostsByItemID(id, refresh, true)
-			elseif type == "c" then
-				UpdateCostsByCurrencyID(id, refresh, true)
-			elseif type == "s" then
-				UpdateCostsBySpellID(id, refresh, true)
-			end
+			-- app.PrintDebug("UCG.providers:",type,id)
+			UpdateCostTypeFunc[type](id, refresh, true)
 		end
 	end
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
 end
-local function OnSearchResultUpdate(group)
-	UpdateCostGroup(group)
-end
-app.AddEventHandler("OnSearchResultUpdate", OnSearchResultUpdate)
+app.AddEventHandler("OnSearchResultUpdate", UpdateCostGroup)
 
 local CACChain = {}
 -- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
@@ -544,12 +612,16 @@ app.CollectibleAsCost = function(t)
 	CACChain[thash] = true
 	-- PrintDebug(t.keyval, "CAC:Check",app:SearchLink(t))
 	t._SettingsRefresh = appSettings;
+	local previsCost = t.isCost
 	t.isCost = nil;
 	-- this group should not be considered collectible as a cost if it is already obtained as a Toy
 	local toyItemID = t.toyID
 	if toyItemID and not PlayerIsMissingProviderItem(toyItemID) then
 		-- PrintDebug(toyItemID, "Not collectibleAsCost since Toy owned!",app:SearchLink(t))
 		CACChain[thash] = nil
+		if previsCost then
+			app.DirectGroupUpdate(t)
+		end
 		return
 	end
 	-- check the collectibles if any are considered collectible currently
@@ -560,7 +632,9 @@ app.CollectibleAsCost = function(t)
 	t.collectibleAsCost = false;
 	-- local subDepth = Depth
 	local collectible, isCollectibleAcceptable
-	for _,ref in ipairs(collectibles) do
+	local ref
+	for i=1,#collectibles do
+		ref = collectibles[i]
 		-- Use the common collectibility check logic
 		-- Depth = subDepth
 		collectible = CheckCollectible(ref)
@@ -571,12 +645,18 @@ app.CollectibleAsCost = function(t)
 			t.collectibleAsCost = nil;
 			CACChain[thash] = nil
 			-- PrintDebug(t.keyval, "CAC:Set",app:SearchLink(t),"from",app:SearchLink(ref),"w/req",collectible,"@",t._SettingsRefresh)
+			if not previsCost then
+				app.DirectGroupUpdate(t)
+			end
 			return true;
 		end
 	end
 	-- app.PrintDebug("CAC:nil",t.hash)
 	t.collectibleAsCost = nil;
 	CACChain[thash] = nil
+	if previsCost then
+		app.DirectGroupUpdate(t)
+	end
 end
 local function CalculateGroupsCostAmount(g, costID, includedHashes)
 	local o, subg, subcost, c
@@ -630,11 +710,8 @@ app.AddEventHandler("OnLoad", function()
 	fillers[#fillers + 1] = getFiller("SYMLINK")
 	-- UpdateRunner.ToggleDebugFrameTime()
 end)
-app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-	ExtraFilters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
-end)
 app.AddEventHandler("OnAfterSavedVariablesAvailable", function(currentCharacter, accountWideData)
-	OneTimeQuests = accountWideData.OneTimeQuests
+	ExtraFilters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
 end)
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateCosts)
 -- Information Types
@@ -650,7 +727,11 @@ app.AddEventHandler("OnLoad", function()
 			local id = reference[reference.key]
 			local currencyCount = CalculateTotalCosts(reference, id)
 			if currencyCount > 0 then
-				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = app.formatNumericWithCommas(currencyCount) }
+				local needed = app.formatNumericWithCommas(currencyCount)
+				if reference.isOwnedCost then
+					needed = app.Modules.Color.Colorize(needed, app.Colors.Time).." |T"..app.asset("known_green")..":0|t"
+				end
+				tooltipInfo[#tooltipInfo + 1] = { left = L.CURRENCY_NEEDED_TO_BUY, right = needed }
 			end
 		end
 	})
@@ -674,7 +755,7 @@ do
 		return k
 	end}
 
-	local function AddGroupCosts(o, Collector, amount)
+	local function AddGroupCosts(Collector, o, amount)
 		-- app.PrintDebug("AGC",app:SearchLink(o),o.visible,amount)
 		-- if we're adding a specific amount, then we ignore the duplicate prevention
 		if not amount then
@@ -690,7 +771,7 @@ do
 		local providers = o.providers;
 		if not cost and not providers then return; end
 
-		amount = amount or 1
+		amount = amount or o.objectiveCost or 1
 		-- app.PrintDebug("AGC.Needed",
 		-- 	o.visible and "VISIBLE",
 		-- 	o.saved and "SAVED",
@@ -702,8 +783,9 @@ do
 		-- app.PrintTable(providers)
 		local Data = Collector.Data
 		if cost then
-			local type
-			for _,c in ipairs(cost) do
+			local type, c
+			for i=1,#cost do
+				c = cost[i]
 				type = c[1]
 				if type == "c" or type == "i" then
 					AddCost(Data[type], c[2], c[3] * amount)
@@ -714,8 +796,9 @@ do
 			end
 		end
 		if providers then
-			local type
-			for _,c in ipairs(providers) do
+			local type, c
+			for i=1,#providers do
+				c = providers[i]
 				type = c[1]
 				if type == "i" then
 					AddCost(Data[type], c[2], amount)
@@ -731,7 +814,7 @@ do
 	local IgnoredTypesForNested = {
 		EnsembleItem = true,
 	}
-	local function ScanGroups(group, Collector)
+	local function ScanGroups(Collector, group)
 		-- ignore costs for and within certain groups
 		if not group.visible or group.sourceIgnored then return end
 
@@ -739,8 +822,8 @@ do
 		local groupType = group.__type
 		-- app.PrintDebug("AGC:Run",app:SearchLink(group),IgnoredTypes[groupType],IgnoredTypesForNested[groupType],group.filledCost)
 		-- don't include NonCollectible or VisualHeaders
-		if not IgnoredTypes[groupType] then
-			runner.Run(AddGroupCosts, group, Collector)
+		if not IgnoredTypes[groupType] and not group.window then
+			runner.Run(AddGroupCosts, Collector, group)
 		end
 		local g = group.g
 		if not g then return end
@@ -749,22 +832,24 @@ do
 		-- this leads to wildly bloated totals
 		if (not group.window and group.filledCost) or IgnoredTypesForNested[groupType] then return end
 
-		for _,o in ipairs(g) do
-			ScanGroups(o, Collector)
+		local o
+		for i=1,#g do
+			o = g[i]
+			Collector:ScanGroups(o)
 		end
 	end
 	local function StartUpdating(Collector)
-		local group = Collector.__group
-		Collector.Reset()
+		local group = Collector.InfoGroup
+		Collector:Reset()
 		group.text = (group.__text or "").."  "..BLIZZARD_STORE_PROCESSING
 		group.OnSetVisibility = app.ReturnTrue
-		-- app.PrintDebug("AGC:Start",text)
+		-- app.PrintDebug("AGC:Start",Collector,Collector.WindowGroup.text)
 		app.DirectGroupRefresh(group, true)
 	end
 	local function EndUpdating(Collector)
-		local group = Collector.__group
+		local group = Collector.InfoGroup
 		group.text = group.__text
-		-- app.PrintDebug("AGC:End",group.text)
+		-- app.PrintDebug("AGC:End",Collector,Collector.WindowGroup.text)
 		-- app.PrintTable(Collector.Data)
 		-- Build all the cost data which is available to the current filters into the cost group
 		local costItems = group.g
@@ -814,10 +899,14 @@ do
 			group.OnSetVisibility = nil
 		end
 		app.DirectGroupUpdate(group)
-		Collector.Reset()
+		Collector:Reset()
 	end
 	local function ScanSubCosts(Collector)
-		-- app.PrintDebug("SSC:Start",Collector.__group.__text)
+		-- app.PrintDebug("SSC:Start",Collector,Collector.WindowGroup.text)
+		-- if cost data has been gathered, then include the Cost of the window group as well
+		if next(Collector.Data) then
+			Collector:AddGroupCosts(Collector.WindowGroup)
+		end
 		local costThing
 		local anyNewCost
 		local CurCostData = app.CloneDictionary(Collector.Data)
@@ -833,7 +922,7 @@ do
 							costType.Amounts[id] = amount
 							costThing = app.SearchForObject("currencyID", id, "key") or app.CreateCurrencyClass(id)
 							anyNewCost = true
-							AddGroupCosts(costThing, Collector, amount)
+							Collector:AddGroupCosts(costThing, amount)
 						end
 					end
 				elseif costKey == "i" then
@@ -844,7 +933,7 @@ do
 							costType.Amounts[id] = amount
 							costThing = app.SearchForObject("itemID", id, "field") or app.CreateItem(id)
 							anyNewCost = true
-							AddGroupCosts(costThing, Collector, amount)
+							Collector:AddGroupCosts(costThing, amount)
 						end
 					end
 				end
@@ -857,37 +946,60 @@ do
 			Collector.Runner.Run(EndUpdating, Collector)
 		end
 	end
+	local function BeginNewScan(Collector)
+		-- app.PrintDebug("Collector.ScanGroups",Collector,Collector.WindowGroup.text)
+		if not Collector:CheckStatusForScan() then return end
 
-	api.GetCostCollector = function(group)
+		Collector:UpdateStatus()
+		wipe(Collector.InfoGroup.g)
+		local runner = Collector.Runner
+		runner.Run(StartUpdating, Collector)
+		ScanGroups(Collector, Collector.WindowGroup)
+		runner.Run(ScanSubCosts, Collector)
+	end
+	local function Reset(Collector)
+		wipe(Collector.Data)
+		wipe(Collector.Hashes)
+	end
+	local function CheckStatusForScan(Collector)
+		-- app.PrintDebug("Collector.CheckStatusForScan",app._SettingsRefresh,Collector.WindowGroup.progress,Collector.WindowGroup.total)
+		-- app.PrintTable(Collector.Status)
+		return Collector.WindowGroup._fillcomplete
+			and (Collector.Status.SettingsRefresh ~= app._SettingsRefresh
+				or Collector.Status.Progress ~= Collector.WindowGroup.progress
+				or Collector.Status.Total ~= Collector.WindowGroup.total)
+	end
+	local function UpdateStatus(Collector)
+		Collector.Status.SettingsRefresh = app._SettingsRefresh
+		Collector.Status.Progress = Collector.WindowGroup.progress
+		Collector.Status.Total = Collector.WindowGroup.total
+		-- app.PrintDebug("Collector.UpdateStatus")
+		-- app.PrintTable(Collector.Status)
+	end
 
-		-- local windowRunner = group.window and group.window:GetRunner()
-		-- app.PrintDebug("New Cost Collector",windowRunner)
+	local CollectorBase = {
+		Runner = CollectorRunner,
+		ScanGroups = ScanGroups,
+		StartUpdating = StartUpdating,
+		EndUpdating = EndUpdating,
+		ScanSubCosts = ScanSubCosts,
+		BeginNewScan = BeginNewScan,
+		Reset = Reset,
+		CheckStatusForScan = CheckStatusForScan,
+		UpdateStatus = UpdateStatus,
+		AddGroupCosts = AddGroupCosts,
+	}
+
+	api.GetCostCollector = function(group, infoGroup)
+
 		-- Table which can capture cost information for a collector
-		local Collector = {
-			Runner = CollectorRunner,
+		local Collector = setmetatable({
 			Data = setmetatable({}, __costData),
 			Hashes = {},
 			WindowGroup = group,
-		}
-
-		Collector.ScanGroups = function(group, costGroup)
-			if costGroup._SettingsRefresh == app._SettingsRefresh then
-				return
-			end
-			wipe(costGroup.g)
-			-- only need to run costs once per settings refresh, otherwise the costs won't change from regular refreshes
-			costGroup._SettingsRefresh = app._SettingsRefresh
-			Collector.__group = costGroup
-			local runner = Collector.Runner
-			runner.Run(StartUpdating, Collector)
-			ScanGroups(group, Collector)
-			runner.Run(ScanSubCosts, Collector)
-		end
-
-		Collector.Reset = function()
-			wipe(Collector.Data)
-			wipe(Collector.Hashes)
-		end
+			InfoGroup = infoGroup,
+			Status = {},
+		}, { __index = CollectorBase })
 
 		return Collector
 	end
@@ -899,7 +1011,8 @@ local function BuildCost(group)
 	local cost = group.cost;
 	cost = cost and type(cost) == "table" and cost;
 	local providers = group.providers;
-	if not cost and not providers then return; end
+	local qss = group.qss
+	if not cost and not providers and not qss then return end
 
 	-- Pop out the cost objects into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST, {
@@ -915,8 +1028,9 @@ local function BuildCost(group)
 	-- Gold cost currently ignored
 	-- print("BuildCost",group.hash)
 	if cost then
-		local costItem;
-		for _,c in ipairs(cost) do
+		local costItem, c
+		for i=1,#cost do
+			c = cost[i]
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "c" then
@@ -932,8 +1046,9 @@ local function BuildCost(group)
 		end
 	end
 	if providers then
-		local costItem;
-		for _,c in ipairs(providers) do
+		local costItem, c
+		for i=1,#providers do
+			c = providers[i]
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "i" then
@@ -942,6 +1057,17 @@ local function BuildCost(group)
 			end
 			if costItem then
 				app.NestObject(costGroup, costItem);
+			end
+		end
+	end
+	if qss then
+		local costItem, c
+		for i=1,#qss do
+			c = qss[i]
+			-- print("Cost",c[1],c[2],c[3]);
+			costItem = app.CreateCostItem(SearchForObject("itemID", c, "field") or app.CreateItem(c), 1)
+			if costItem then
+				app.NestObject(costGroup, costItem)
 			end
 		end
 	end
@@ -957,7 +1083,7 @@ local function BuildTotalCost(group)
 	-- Pop out the cost totals into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST_TOTAL, {
 		description = L.COST_TOTAL_DESC,
-		icon = 901746,
+		icon = app.GameBuildVersion > 50400 and 901746 or 133786,
 		sourceIgnored = true,
 		skipFull = true,
 		SortPriority = -2.4,
@@ -967,16 +1093,8 @@ local function BuildTotalCost(group)
 	-- keep an unmodified text copy
 	costGroup.__text = costGroup.text
 
-	-- we need to make sure we have a window reference for this group's Collector
-	-- so that when the window is expired, we know to remove the necessary Handler(s)
 	if group.window then
-
-		local Collector = app.Modules.Costs.GetCostCollector(group)
-
-		group.window.__RefreshCostCollector = function(window, didUpdate)
-			-- app.PrintDebug("RefreshCollector??",group.window.Suffix,window and app:SearchLink(window.data),didUpdate)
-			Collector.ScanGroups(group, costGroup)
-		end
+		group.window.__RefreshCostCollector = app.Modules.Costs.GetCostCollector(group, costGroup)
 	end
 
 	-- We only need one hooked method to attempt to refresh the collector on whichever window triggered the respective events
@@ -985,15 +1103,15 @@ local function BuildTotalCost(group)
 		RefreshCollectorHooked = true
 		-- Event handlers are still called by every Window which triggers these events, so let's just only run the Refresh
 		-- if the Window itself has it assigned, instead of trying to determine if the Window matches the Event Window
-		local function RefreshIfExisting(window, didUpdate)
-			if window and didUpdate and window.__RefreshCostCollector and window.data._fillcomplete then
-				window.__RefreshCostCollector(window, didUpdate)
+		local function RefreshIfExisting(window, suffix)
+			-- app.PrintDebug("Cost.TC.Refresh?",window and window.Suffix,window and window.__RefreshCostCollector,window and window.data._fillcomplete)
+			if window and window.__RefreshCostCollector then
+				window.__RefreshCostCollector:BeginNewScan()
 			end
 		end
 		app.AddEventHandler("OnWindowUpdated", RefreshIfExisting)
-		-- when called from window fill complete, force it to appear as an update
-		app.AddEventHandler("OnWindowFillComplete", function(window) RefreshIfExisting(window, true) end)
-		-- app.PrintDebug("RefreshCollectorHooked")
+		app.AddEventHandler("OnWindowFillComplete", RefreshIfExisting)
+		-- app.PrintDebug("RefreshCollectorHooked",group.window.Suffix)
 	end
 
 	-- Add the cost group to the popout
@@ -1027,6 +1145,7 @@ local SkipPurchases = {
 	},
 	LearnedTypes = {
 		Toy = 1,
+		ToyEventually = 1,
 		Recipe = 1,
 		RecipeWithItem = 1,
 		Mount = 1,
@@ -1060,10 +1179,15 @@ app.AddEventHandler("OnLoad", function()
 		-- do not fill purchases on certain items, can skip the skip though based on a level
 		if not ShouldFillPurchases(group, FillData) then return end
 
-		-- Certain Collected Types which are NOT the Root of the Fill should not be filled
-		if SkipPurchases.LearnedTypes[group.__type] and group ~= FillData.Root and group.collected then
-			-- app.PrintDebug("Don't Fill purchases for non-Root collected Toy",app:SearchLink(group))
-			return
+		if group ~= FillData.Root then
+			-- Certain Collected Types which are NOT the Root of the Fill should not be filled
+			if SkipPurchases.LearnedTypes[group.__type] and app.IsComplete(group) then
+				-- app.PrintDebug("Don't Fill purchases for non-Root collected Toy",app:SearchLink(group))
+				return
+			end
+
+			-- don't fill Costs if they're owned and not the root of the Fill
+			if group.isOwnedCost then return end
 		end
 
 		local collectibles = group.costCollectibles;
@@ -1080,8 +1204,9 @@ app.AddEventHandler("OnLoad", function()
 			local groupHash = group.hash;
 			-- if FillData.Debug then app.PrintDebug("DeterminePurchaseGroups",app:SearchLink(group),"-collectibles",collectibles and #collectibles) end
 			local groups = {};
-			local clone;
-			for _,o in ipairs(collectibles) do
+			local clone, o
+			for i=1,#collectibles do
+				o = collectibles[i]
 				if o.hash ~= groupHash then
 					-- if FillData.Debug then app.PrintDebug("Purchase @",app:SearchLink(o)) end
 					clone = CreateObject(o);

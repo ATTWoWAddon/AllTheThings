@@ -1,1 +1,0 @@
-"Parser.exe" config=".config/classic/05 - Mists of Pandaria.config"

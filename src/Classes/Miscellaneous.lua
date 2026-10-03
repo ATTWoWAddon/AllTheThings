@@ -7,9 +7,10 @@ local pairs, ipairs = pairs, ipairs;
 
 -- App locals
 local AssignChildren, GetRelativeValue = app.AssignChildren, app.GetRelativeValue
-local NestObjects, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
+local NestObjects, CreateObject, NestObject, SearchForObject
 
-local DynamicDataCache = app.CreateDataCache("dynamic", true);
+local DynamicDataCache = app.CreateDataCache("dynamic");
+DynamicDataCache.skipMapCaching = true;
 local Runner = app.CreateRunner("dynamic");
 Runner.SetPerFrameDefault(1)
 
@@ -21,7 +22,6 @@ app.AddEventHandler("OnLoad", function()
 	NestObject = app.NestObject
 	NestObjects = app.NestObjects
 	CreateObject = app.__CreateObject
-	SearchForFieldContainer = app.SearchForFieldContainer
 	SearchForObject = app.SearchForObject;
 end)
 
@@ -49,7 +49,7 @@ end
 local DynamicCategory_Nested = function(self)
 	-- app.PrintDebug("DC:N",self.dynamic,self.dynamic_value,self.dynamic_withsubgroups,self.dynamic_searchcriteria)
 	-- pull out all Things which should go into this category based on field & value
-	local groups = app:BuildSearchResponse(self.dynamic, self.dynamic_value, {g=not self.dynamic_withsubgroups}, self.dynamic_searchcriteria);
+	local groups = app:BuildSearchResponseRetailStyle(self.dynamic, self.dynamic_value, {g=not self.dynamic_withsubgroups}, self.dynamic_searchcriteria);
 	NestObjects(self, groups);
 	-- reset indents and such
 	AssignChildren(self);
@@ -99,16 +99,22 @@ end
 local DynamicCategory_Simple = function(self)
 	local dynamicCache = app.GetRawFieldContainer(self.dynamic);
 	if dynamicCache then
-		local rootATT = app:GetWindow("Prime").data;
+		local rootATT = app:GetDatabaseRoot();
 		local top, thing;
-		local topHeaders, dynamicValue, clearSubgroups = CreateTopHeaderCache(), self.dynamic_value, not self.dynamic_withsubgroups;
+		local topHeaders, dynamicValue, clearSubgroups, searchcriteria = CreateTopHeaderCache(), self.dynamic_value, not self.dynamic_withsubgroups, self.dynamic_searchcriteria
+		-- not going to bother making this complex
+		if searchcriteria and searchcriteria.SearchCriteria then
+			searchcriteria = searchcriteria.SearchCriteria[1]
+		else
+			searchcriteria = nil
+		end
 		if dynamicValue then
 			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
 			if dynamicValueCache then
 				-- app.PrintDebug("DC:S",self.dynamic,self.dynamic_value,self.dynamic_withsubgroups)
 				for _,source in pairs(dynamicValueCache) do
 					-- only pull in actual 'Things' to the simple dynamic group
-					if thingKeys[source.key] then
+					if thingKeys[source.key] and (not searchcriteria or searchcriteria(source)) then
 						-- find the top-level parent of the Thing
 						top = topHeaders[RecursiveParentMapper(source, "parent", rootATT)]
 						if top then
@@ -127,16 +133,20 @@ local DynamicCategory_Simple = function(self)
 				return DynamicCategory_Nested(self);
 			end
 		else
+			local thingKeys = app.ThingKeys
 			for id,sources in pairs(dynamicCache) do
 				for _,source in pairs(sources) do
-					-- find the top-level parent of the Thing
-					top = topHeaders[RecursiveParentMapper(source, "parent", rootATT)]
-					if top then
-						-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-						-- remove it from being considered a cost within the dynamic category
-						thing = CreateObject(source, clearSubgroups);
-						thing.collectibleAsCost = false;
-						NestObject(top, thing);
+					-- only pull in actual 'Things' to the simple dynamic group
+					if thingKeys[source.key] and (not searchcriteria or searchcriteria(source)) then
+						-- find the top-level parent of the Thing
+						top = topHeaders[RecursiveParentMapper(source, "parent", rootATT)]
+						if top then
+							-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+							-- remove it from being considered a cost within the dynamic category
+							thing = CreateObject(source, clearSubgroups);
+							thing.collectibleAsCost = false;
+							NestObject(top, thing);
+						end
 					end
 				end
 			end
@@ -190,7 +200,7 @@ local function NestDynamicValueCategories(group)
 	local cat, search
 	local field = group.dynamicValueID
 	local dynamicvalue_field = group.dynamic_valueField
-	local cache = SearchForFieldContainer(field);
+	local cache = app.SearchForFieldContainer(field);
 	-- app.PrintDebug("FDVC:",field,dynamicvalue_field)
 	for id,_ in pairs(cache) do
 		search = SearchForObject(field, id, "key", true)
@@ -267,7 +277,7 @@ app.CreateToggle = app.CreateClass("Toggle", "toggleID", {
 					parent[t.toggleID] = saved
 				end
 				local handler = t.OnClickHandler
-				return handler and handler(saved) or nil
+				return handler and handler(row, button, t.toggleID, saved) or nil
 			end
 			t._OnClick = onclick
 		end
@@ -313,7 +323,7 @@ app.CreateDynamicHeaderByValue = app.CreateClass("DynamicValues", "dynamicValueI
 local BaseClass__class = app.BaseClass.__class
 local VisualHeaderFields = {
 	-- back = function(t)
-	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- 	return 0.3	-- visibility of which rows are cloned
 	-- end,
 	__type = function() return "VisualHeader" end,
 	hash = BaseClass__class.hash,
@@ -382,6 +392,7 @@ for _,field in ipairs({
 	"isYearly",
 	"repeatable",
 	"requireSkill",
+	"SortPriority",
 	"sym",
 }) do
 	CreateVisualHeader__class[field] = Empty
@@ -391,7 +402,7 @@ local CreateNonCollectible, CreateNonCollectible__class = app.CreateClass("NonCo
 	-- back = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
 	-- end,
-	collectible = app.EmptyFunction,
+	collectible = Empty,
 });
 -- manually remove the 'key' field since it isn't in BaseClass
 CreateNonCollectible__class.__class.key = nil

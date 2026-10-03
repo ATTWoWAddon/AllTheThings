@@ -1,0 +1,35 @@
+Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Category,Minimum_criteria,Points,Flags,Ui_order,IconFileID,Criteria_tree,Shares_criteria
+"Visit your class trainer when you are at least level 40 and activate your Dual Talent Specialization.","Dual Talent Specialization",,2716,-1,-1,0,81,0,0,0,20,236544,128587,0
+,"Warlord Zaela kills (Upper Blackrock Spire)",,9275,1358,-1,0,15233,0,0,1,1,136243,38168,0
+,"Has Died",,15329,-1,-1,0,14821,0,0,1050624,2,136243,94296,0
+,"Survivor of the Firelord",,15330,-1,-1,0,14821,0,0,1050624,3,136243,94292,0
+,Survivor,,15332,-1,-1,0,14821,0,0,1050624,8,136243,94307,0
+,"Survivor of the Shadow Flame",,15333,-1,-1,0,14821,0,0,1050624,4,136243,94311,0
+,"Survivor of the Old God",,15334,-1,-1,0,14821,0,0,1050624,5,136243,94313,0
+,"Survivor of the Damned",,15335,-1,-1,0,14821,0,0,1050624,6,136243,94315,0
+,"<Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits",,15578,-1,-1,0,14821,0,0,1048580,35,136243,95385,0
+,"The Immortal",,15637,-1,-1,0,14808,0,0,1048576,2,135922,95610,0
+,"Unbroken Self-Found Soul",,19563,-1,-1,0,14821,0,0,1050624,7,136243,153864,0
+,"[DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)",,20129,-1,-1,0,81,0,0,1050628,11,136243,156290,0
+,"[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)",,20130,-1,-1,0,81,0,0,1050628,12,136243,157566,0
+,"[DNT] Discoverer's Delight - Reach Level 60 in Phase 4 (hidden)",,20131,-1,-1,0,81,0,0,1050628,18,136243,161531,0
+,"[DNT] Discoverer's Delight - Reach Level 60 in Phase 5 (hidden)",,20132,-1,-1,0,81,0,0,1050628,19,136243,156296,0
+,"[DNT] Self-Found Soul (Level 1)",,20133,-1,-1,0,81,0,0,1050628,1,136243,156298,0
+,"[DNT] Self-Found Soul (Level 10)",,20134,-1,-1,0,81,0,0,1050628,5,136243,156301,0
+,"[DNT] Self-Found Soul (Level 20)",,20135,-1,-1,0,81,0,0,1050628,6,136243,156304,0
+,"[DNT] Self-Found Soul (Level 30)",,20136,-1,-1,0,81,0,0,1050628,7,136243,156307,0
+,"[DNT] Self-Found Soul (Level 40)",,20137,-1,-1,0,81,0,0,1050628,8,136243,156310,0
+,"[DNT] Self-Found Soul (Level 50)",,20138,-1,-1,0,81,0,0,1050628,9,136243,156313,0
+,"[DNT] Self-Found Soul (Level 60)",,20139,-1,-1,0,81,0,0,1050628,10,136243,156316,0
+,"[DNT] Self-Found Soul (Removed Self-Found)",,20193,-1,-1,0,81,0,0,1050628,4,136243,156405,0
+,"[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)",,40131,-1,-1,0,81,0,0,1050628,15,136243,156292,0
+,"[DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)",,40132,-1,-1,0,81,0,0,1050628,13,136243,161525,0
+,"[DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)",,40133,-1,-1,0,81,0,0,1050628,16,136243,161527,0
+,"[DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)",,40135,-1,-1,0,81,0,0,1050628,14,136243,161529,0
+,"[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)",,40137,-1,-1,0,81,0,0,1050628,17,136243,156294,0
+,"Rune Learned - Shared Acquisition - Illari Duskfeather (40)",,41008,-1,-1,0,15538,0,0,1048576,3,236449,169195,0
+,"Rune Learned - Shared Acquisition - Dark Riders (40)",,41009,-1,-1,0,15538,0,0,1048576,4,136243,169197,0
+,"Rune Learned - Shared Acquisition - Ley Lines (50)",,41010,-1,-1,0,15538,0,0,1048576,5,136243,169201,0
+,"Rune Learned - Shared Acquisition - Wild Gods (50)",,41011,-1,-1,0,15538,0,0,1048576,6,136243,169199,0
+,"[DNT] Balnazzar Defeated",,42133,-1,-1,0,81,0,0,9570308,2,136243,210009,0
+,"[DNT] Balnazzar Defeated (Backup Achievement)",,42186,-1,-1,0,81,0,0,9439236,3,136243,210320,0

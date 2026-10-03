@@ -5,8 +5,8 @@ Areas can also be sorted numerically.
 Generated as:
 [Expansion] [Instance type] [Map/Parent ID - Map/Parent Name] exploration(Exploration ID)	-- Exploration Name
 
-Build: 11.2.7.64743
-Maps: 1135, Children: 8360, Total explorations: 9495
+Build: 12.0.5.67314
+Maps: 1191, Children: 8689, Total explorations: 9880
 
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(1),	-- Dun Morogh
 [Vanilla] [Outdoor] [Parent 1 - Dun Morogh] exploration(131),	-- Kharanos
@@ -556,6 +556,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 139 - Eastern Plaguelands] exploration(8358),	-- Browman Mill
 [Vanilla] [Outdoor] [Parent 139 - Eastern Plaguelands] exploration(8359),	-- Eastwall Tower
 [Vanilla] [Outdoor] [Parent 139 - Eastern Plaguelands] exploration(8360),	-- Pestilent Scar
+[Vanilla] [Outdoor] [Parent 139 - Eastern Plaguelands] exploration(16646),	-- Thalassian Pass
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(170),	-- Lordamere Lake
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(267),	-- Hillsbrad Foothills
 [Vanilla] [Outdoor] [Parent 267 - Hillsbrad Foothills] exploration(36),	-- Alterac Mountains
@@ -657,7 +658,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 1537 - Ironforge] exploration(10223),	-- Aegrim's Study
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(1579),	-- Unused The Deadmines 002
 [Vanilla] [Outdoor] [Parent 1579 - Unused The Deadmines 002] exploration(1580),	-- Unused Ironclad Cove 003
-[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(2037),	-- Quel'thalas
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(2037),	-- Quel'Thalas
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(2280),	-- DO NOT USE
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(3459),	-- City
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(4706),	-- Ruins of Gilneas
@@ -894,6 +895,149 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 13983 - Tirisfal Glades] exploration(13989),	-- Death's Watch Waystation
 [Vanilla] [Outdoor] [Parent 13983 - Tirisfal Glades] exploration(13990),	-- Brill Inn
 [Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(14045),	-- Tirisfal Glades
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(15947),	-- Zul'Aman
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16183),	-- Amani'Zar Village
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16184),	-- Temple of Akil'zon
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16185),	-- Temple of Jan'alai
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16186),	-- Temple of Halazzi
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16187),	-- Akil'zon's Reach
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16188),	-- Spiritpaw Borough
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16189),	-- Nalorakk's Prowl
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16190),	-- Spiritpaw Backwoods
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16191),	-- Speaker's Rest
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16192),	-- Broken Throne
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16193),	-- Revantusk Sedge
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16194),	-- Atal'Aman
+[Vanilla] [Outdoor] [Parent 16194 - Atal'Aman] exploration(16382),	-- Talonstrike Terrace
+[Vanilla] [Outdoor] [Parent 16194 - Atal'Aman] exploration(16383),	-- Swiftclaw Terrace
+[Vanilla] [Outdoor] [Parent 16194 - Atal'Aman] exploration(16384),	-- Ragemaw Terrace
+[Vanilla] [Outdoor] [Parent 16194 - Atal'Aman] exploration(16385),	-- Firewing Terrace
+[Vanilla] [Outdoor] [Parent 16194 - Atal'Aman] exploration(16386),	-- Warlord's Stair
+[Vanilla] [Outdoor] [Parent 16194 - Atal'Aman] exploration(16670),	-- Altar of Malacrass
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16195),	-- Atal'Abasi
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16196),	-- Funerary Coast
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16197),	-- Leech Bog
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16198),	-- Shrine of Kulzi
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16199),	-- Maisara Deeps
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16200),	-- Zeb'Alar Lumberyard
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16201),	-- Bitterbark
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16202),	-- Witherbark Bluffs
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16203),	-- Camp Stonewash
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16204),	-- Shrine of Filo
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16348),	-- Zul'Aman Depths
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16352),	-- Numazon Crypts
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16367),	-- Solemn Valley
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16375),	-- Loaknit Den
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16379),	-- Strait of Hexx'alor
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16380),	-- The Skybridge
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16418),	-- Shadebasin Watch
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16567),	-- Wit'Kalar Crypt
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16568),	-- Miststone Wells
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16586),	-- Torntusk Overlook
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16598),	-- The Stump
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16721),	-- Hermit's Mooring
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16730),	-- Thresh Cove
+[Vanilla] [Outdoor] [Parent 15947 - Zul'Aman] exploration(16841),	-- Tomb of Mun'jin
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(15968),	-- Eversong Woods
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15992),	-- North Sanctum
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15993),	-- West Sanctum
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15994),	-- Sunsail Anchorage
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15995),	-- Fairbreeze Village
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15996),	-- Lightbloom Ath'Ran
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15997),	-- Saltheril's Haven
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15998),	-- East Sanctum
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(15999),	-- Goldenmist Village
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16000),	-- Runestone Falithas
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16001),	-- Tranquillien
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16043),	-- Windrunner Village
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16044),	-- Elrendar River
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16045),	-- Runestone Shan'dor
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16046),	-- Suncrown Village
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16047),	-- Suncrown Tree
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16048),	-- Dawnstar Spire
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16049),	-- Lightbloom Lash'Ra
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16050),	-- Farstrider Enclave
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16051),	-- Sanctum of the Sun
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16052),	-- Amani Pass
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16053),	-- Zeb'Nowa
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16054),	-- Thalassian Pass
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16055),	-- Thalassian Range
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16056),	-- Ruins of Deatholme
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16057),	-- Windrunner Spire
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16058),	-- Sanctum of the Moon
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16059),	-- Hollow Grove
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16060),	-- Daggerspine Landing
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16061),	-- Daggerspine Point
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16062),	-- Lake Elrendar
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16063),	-- Scintilas Falls
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16064),	-- Tor'Watha
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16065),	-- Brightwing Estate
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16066),	-- Azurebreeze Coast
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16067),	-- Farstrider Hold
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16068),	-- Stillwhisper Pond
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16069),	-- Thuron's Livery
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16070),	-- Fallen Tree (use Tor'watha)
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16071),	-- Goldenbough Pass
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16072),	-- Sunset Strand
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16073),	-- Path of Dawn
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16173),	-- Sunstrider Isle
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16334),	-- Zeb'tela Ruins
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16338),	-- Scintilas Outpost
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16343),	-- Watha'nan Crypts
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16351),	-- Tranquil Repose
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16355),	-- Sunfeather Point
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16426),	-- Silverglade Refuge
+[Vanilla] [Outdoor] [Parent 15968 - Eversong Woods] exploration(16536),	-- Solaarian Sunbath
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(15969),	-- Silvermoon City
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16079),	-- The Bazaar
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16082),	-- Murder Row
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16083),	-- Walk of Elders
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16084),	-- The Royal Exchange
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16085),	-- Court of Blood
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16086),	-- Court of the Sun
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16087),	-- Farstrider Square
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16088),	-- Falconwing Square
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16089),	-- Dawning Lane
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16094),	-- Augurs' Terrace
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16095),	-- Lithiel's Landing
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16096),	-- Thalassian University
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16097),	-- Gardens of Remembrance
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16098),	-- Sunwing Rookery
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16099),	-- Silvermoon Harbor
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16100),	-- The Shining Span
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16235),	-- Duskglow Gloriette
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16333),	-- Sanctum of Light
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16357),	-- Sunfury Spire
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16570),	-- The Shepherd's Gate
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16618),	-- Hall of Blood
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16627),	-- Sunwing Sundries
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16633),	-- The Illicit Rain
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16634),	-- Astalor's Sanctum
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16644),	-- Silvermoon City Inn
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16645),	-- Wayfarer's Rest
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16647),	-- Den of Indulgence
+[Vanilla] [Outdoor] [Parent 15969 - Silvermoon City] exploration(16665),	-- Umbral Atrium
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(16215),	-- Isle of Quel'Danas
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16525),	-- The Darkwell
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16526),	-- The Sunwell
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16613),	-- Sunwell Ramparts
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16719),	-- The Shining Span
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16754),	-- Court of the Phoenix
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16807),	-- Sun's Reach Harbor
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16808),	-- Sun's Reach Sanctum
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16809),	-- Golden Boughs
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16810),	-- Dawnstar Village
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16811),	-- Sun's Reach Armory
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16812),	-- Sunwell Ramparts
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16813),	-- Parhelion Plaza
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16814),	-- Magisters' Terrace
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16815),	-- Greengill Coast
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16816),	-- Silver Landing
+[Vanilla] [Outdoor] [Parent 16215 - Isle of Quel'Danas] exploration(16817),	-- Western Sungrove
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(16217),	-- The Great Sea
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(16365),	-- Atal'Utek
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(16838),	-- Atal'Utek (copy)
+[Vanilla] [Outdoor] [Map 0 - Eastern Kingdoms] map_exploration(16860),	-- The Great Sea
 [Vanilla] [Outdoor] [Map 1 - Kalimdor] map_exploration(14),	-- Durotar
 [Vanilla] [Outdoor] [Parent 14 - Durotar] exploration(362),	-- Razor Hill
 [Vanilla] [Outdoor] [Parent 14 - Durotar] exploration(365),	-- Burning Blade Coven
@@ -1025,7 +1169,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1218),	-- TESTAzshara
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1219),	-- Legash Encampment
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1220),	-- Darnassian Base Camp
-[Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1221),	-- Ruins of Eldarath
+[Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1221),	-- Ruins of Eldarath 
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1222),	-- Hetaera's Clutch
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1223),	-- Temple of Zin-Malor
 [Vanilla] [Outdoor] [Parent 16 - Azshara] exploration(1224),	-- Bear's Head
@@ -1365,8 +1509,8 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1769),	-- Timbermaw Hold
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1770),	-- Shadow Hold
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1771),	-- Shrine of the Deceiver
-[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1997),	-- Bloodvenom Post
-[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1998),	-- Talonbranch Glade
+[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1997),	-- Bloodvenom Post 
+[Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(1998),	-- Talonbranch Glade 
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(2478),	-- Morlos'Aran
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(2479),	-- Emerald Sanctuary
 [Vanilla] [Outdoor] [Parent 361 - Felwood] exploration(2480),	-- Jadefire Glen
@@ -1939,7 +2083,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [N/A] [N/A] [Parent 4019 - Development Land] exploration(5734),	-- Sarahland
 [N/A] [N/A] [Parent 4019 - Development Land] exploration(7772),	-- Julie's Test Area
 [N/A] [N/A] [N/A - N/A] exploration(9651),	-- Model Test World
-[N/A] [N/A] [N/A - N/A] exploration(13343),	-- Not Doug Land
+[N/A] [N/A] [N/A - N/A] exploration(13343),	-- Doug Land
 [Vanilla] [Raid] [Map 469 - Blackwing Lair] map_exploration(2677),	-- Blackwing Lair
 [Vanilla] [Battleground] [Map 489 - Classic Warsong Gulch] map_exploration(3277),	-- Warsong Gulch
 [Vanilla] [Battleground] [Parent 3277 - Warsong Gulch] exploration(3320),	-- Warsong Lumber Mill
@@ -1968,42 +2112,42 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Battleground] [Parent 3358 - Arathi Basin] exploration(3423),	-- Gold Mine
 [Vanilla] [Battleground] [Parent 3358 - Arathi Basin] exploration(3424),	-- Stables
 [Vanilla] [Battleground] [Map 529 - Classic Arathi Basin] map_exploration(8490),	-- Winter AB
-[TBC] [Outdoor] [Map 530 - Outland] map_exploration(3430),	-- Eversong Woods
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3460),	-- Golden Strand
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3461),	-- Sunsail Anchorage
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3462),	-- Fairbreeze Village
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3463),	-- Magisters Gate
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3464),	-- Farstrider Retreat
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3465),	-- North Sanctum
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3466),	-- West Sanctum
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3467),	-- East Sanctum
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3468),	-- Saltheril's Haven
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3469),	-- Thuron's Livery
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3470),	-- Stillwhisper Pond
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3471),	-- The Living Wood
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3472),	-- Azurebreeze Coast
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3473),	-- Lake Elrendar
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3474),	-- The Scorched Grove
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3475),	-- Zeb'Watha
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3476),	-- Tor'Watha
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3480),	-- Duskwither Grounds
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3481),	-- Duskwither Spire
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3482),	-- The Dead Scar
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3531),	-- Skulking Row
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3532),	-- Dawning Lane
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3533),	-- Ruins of Silvermoon
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3534),	-- Feth's Way
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3558),	-- Elrendar Falls
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3662),	-- Commons Hall
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3663),	-- Derelict Manor
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3664),	-- Huntress of the Sun
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3665),	-- Falconwing Square
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3911),	-- Tranquil Shore
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3912),	-- Goldenbough Pass
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3913),	-- Runestone Falithas
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(3914),	-- Runestone Shan'dor
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(5728),	-- Falconwing Inn
-[TBC] [Outdoor] [Parent 3430 - Eversong Woods] exploration(6455),	-- Sunstrider Isle
+[TBC] [Outdoor] [Map 530 - Outland] map_exploration(3430),	-- Eversong Woods (Burning Crusade)
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3460),	-- Golden Strand
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3461),	-- Sunsail Anchorage
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3462),	-- Fairbreeze Village
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3463),	-- Magisters Gate
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3464),	-- Farstrider Retreat
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3465),	-- North Sanctum
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3466),	-- West Sanctum
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3467),	-- East Sanctum
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3468),	-- Saltheril's Haven
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3469),	-- Thuron's Livery
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3470),	-- Stillwhisper Pond
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3471),	-- The Living Wood
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3472),	-- Azurebreeze Coast
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3473),	-- Lake Elrendar
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3474),	-- The Scorched Grove
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3475),	-- Zeb'Watha
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3476),	-- Tor'Watha
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3480),	-- Duskwither Grounds
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3481),	-- Duskwither Spire
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3482),	-- The Dead Scar
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3531),	-- Skulking Row
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3532),	-- Dawning Lane
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3533),	-- Ruins of Silvermoon
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3534),	-- Feth's Way
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3558),	-- Elrendar Falls
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3662),	-- Commons Hall
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3663),	-- Derelict Manor
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3664),	-- Huntress of the Sun
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3665),	-- Falconwing Square
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3911),	-- Tranquil Shore
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3912),	-- Goldenbough Pass
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3913),	-- Runestone Falithas
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(3914),	-- Runestone Shan'dor
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(5728),	-- Falconwing Inn
+[TBC] [Outdoor] [Parent 3430 - Eversong Woods (Burning Crusade)] exploration(6455),	-- Sunstrider Isle
 [TBC] [Outdoor] [Parent 6455 - Sunstrider Isle] exploration(3431),	-- Sunstrider Isle
 [TBC] [Outdoor] [Parent 6455 - Sunstrider Isle] exploration(3432),	-- Shrine of Dath'Remar
 [TBC] [Outdoor] [Parent 6455 - Sunstrider Isle] exploration(3484),	-- The Sunspire
@@ -2102,10 +2246,10 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [TBC] [Outdoor] [Parent 3483 - Hellfire Peninsula] exploration(5541),	-- Hellfire Citadel - Ramparts Entrance
 [TBC] [Outdoor] [Parent 3483 - Hellfire Peninsula] exploration(5543),	-- Hellfire Citadel - The Shattered Halls Entrance
 [TBC] [Outdoor] [Parent 3483 - Hellfire Peninsula] exploration(5544),	-- Hellfire Citadel - The Blood Furnace Entrance
-[TBC] [Outdoor] [Map 530 - Outland] map_exploration(3487),	-- Silvermoon City
-[TBC] [Outdoor] [Parent 3487 - Silvermoon City] exploration(3704),	-- The Shepherd's Gate
-[TBC] [Outdoor] [Parent 3487 - Silvermoon City] exploration(8619),	-- Silvermoon City Inn
-[TBC] [Outdoor] [Parent 3487 - Silvermoon City] exploration(10275),	-- Court of the Sun
+[TBC] [Outdoor] [Map 530 - Outland] map_exploration(3487),	-- Silvermoon City (Burning Crusade)
+[TBC] [Outdoor] [Parent 3487 - Silvermoon City (Burning Crusade)] exploration(3704),	-- The Shepherd's Gate
+[TBC] [Outdoor] [Parent 3487 - Silvermoon City (Burning Crusade)] exploration(8619),	-- Silvermoon City Inn
+[TBC] [Outdoor] [Parent 3487 - Silvermoon City (Burning Crusade)] exploration(10275),	-- Court of the Sun
 [TBC] [Outdoor] [Map 530 - Outland] map_exploration(3518),	-- Nagrand
 [TBC] [Outdoor] [Parent 3518 - Nagrand] exploration(3609),	-- Unused3
 [TBC] [Outdoor] [Parent 3518 - Nagrand] exploration(3610),	-- Burning Blade Ruins
@@ -3233,7 +3377,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [WotLK] [Raid] [Map 615 - The Obsidian Sanctum] map_exploration(4493),	-- The Obsidian Sanctum
 [WotLK] [Raid] [Map 616 - The Eye of Eternity] map_exploration(4500),	-- The Eye of Eternity
 [Vanilla] [Arena] [Map 617 - Dalaran Sewers] map_exploration(4378),	-- Dalaran Arena
-[Vanilla] [Arena] [Map 618 - The Ring of Valor] map_exploration(4406),	-- The Ring of Valor
+[N/A] [N/A] [N/A - N/A] exploration(4406),	-- The Ring of Valor
 [WotLK] [Dungeon] [Map 619 - Ahn'kahet: The Old Kingdom] map_exploration(4494),	-- Ahn'kahet: The Old Kingdom
 [WotLK] [Dungeon] [Parent 4494 - Ahn'kahet: The Old Kingdom] exploration(4623),	-- Hall of the Conquered Kings
 [WotLK] [Dungeon] [Parent 4494 - Ahn'kahet: The Old Kingdom] exploration(4624),	-- Befouled Terrace
@@ -5020,7 +5164,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [WoD] [Scenario] [Parent 6851 - Grommar] exploration(6971),	-- Shadowmoon Grotto
 [WoD] [Scenario] [Parent 6851 - Grommar] exploration(6972),	-- Grommar Hold
 [WoD] [Scenario] [Parent 6851 - Grommar] exploration(6973),	-- Grommar Docks
-[Legion] [Arena] [Map 1170 - Shado-Pan Showdown] map_exploration(8624),	-- Shado-Pan Showdown
+[Legion] [Battleground] [Map 1170 - Shado-Pan Showdown] map_exploration(8624),	-- Shado-Pan Showdown
 [N/A] [N/A] [N/A - N/A] exploration(7691),	-- Small Battleground D
 [WoD] [Dungeon] [Map 1175 - Bloodmaul Slag Mines] map_exploration(6874),	-- Bloodmaul Slag Mines
 [WoD] [Dungeon] [Map 1176 - Shadowmoon Burial Grounds] map_exploration(6932),	-- Shadowmoon Burial Grounds
@@ -5426,6 +5570,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Legion] [Outdoor] [Parent 7543 - Broken Shore] exploration(8707),	-- Strand's End
 [Legion] [Outdoor] [Parent 7543 - Broken Shore] exploration(8715),	-- Blood Nest
 [Legion] [Outdoor] [Parent 7543 - Broken Shore] exploration(8845),	-- Secret Treasure Lair
+[Legion] [Outdoor] [Parent 7543 - Broken Shore] exploration(16752),	-- Derelict Legion Vessel
 [Legion] [Outdoor] [Map 1220 - Broken Isles] map_exploration(7558),	-- Val'sharah
 [Legion] [Outdoor] [Parent 7558 - Val'sharah] exploration(7559),	-- Steelclaw Vale
 [Legion] [Outdoor] [Parent 7558 - Val'sharah] exploration(7572),	-- Thas'talah
@@ -6823,7 +6968,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Legion] [Raid] [Parent 8638 - Antorus, the Burning Throne] exploration(9333),	-- Elarian Sanctuary
 [N/A] [N/A] [N/A - N/A] exploration(8591),	-- Shwayder's Tavern
 [Legion] [Scenario] [Map 1714 - Halls Of Valor - Warrior Class Mount] map_exploration(8594),	-- Halls of Valor
-[Legion] [Battleground] [Map 1715 - Battle for Blackrock Mountain] map_exploration(8597),	-- Battle for Blackrock Mountain
+[N/A] [N/A] [N/A - N/A] exploration(8597),	-- Battle for Blackrock Mountain
 [N/A] [N/A] [N/A - N/A] exploration(8601),	-- Animation Playground
 [BfA] [Outdoor] [Map 1718 - Nazjatar] map_exploration(10052),	-- Nazjatar
 [BfA] [Outdoor] [Parent 10052 - Nazjatar] exploration(10327),	-- Tide's Fall
@@ -6967,7 +7112,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [N/A] [N/A] [N/A - N/A] exploration(9101),	-- Tropical Isle 8.0
 [N/A] [N/A] [N/A - N/A] exploration(9331),	-- Gilneas Island
 [N/A] [N/A] [N/A - N/A] exploration(9541),	-- Pandaren Farm Dev
-[Legion] [Battleground] [Map 1782 - Seething Strand] map_exploration(9043),	-- Silithus Brawl
+[N/A] [N/A] [N/A - N/A] exploration(9043),	-- Silithus Brawl
 [BfA] [Outdoor] [Map 1795 - Vale of Eternal Blossoms] map_exploration(9105),	-- Vale of Eternal Blossoms
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(11056),	-- Mistfall Village
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(11057),	-- Ruins of Guo-Lai
@@ -7013,6 +7158,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(11431),	-- The Silent Sanctuary
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(12871),	-- Digestion Chamber
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(13198),	-- Seat of Knowledge
+[BfA] [Outdoor] [Parent 13198 - Seat of Knowledge] exploration(16806),	-- Sanctuary of the Mind-Seekers
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(13212),	-- Big Blossom Mine
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(13213),	-- Ruined Passage
 [BfA] [Outdoor] [Parent 9105 - Vale of Eternal Blossoms] exploration(13227),	-- Serpent's Spine
@@ -7434,7 +7580,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Legion] [Scenario] [Map 2180 - The Dreamgrove (Hearthstone Tavern)] map_exploration(10431),	-- The Dreamgrove
 [BfA] [Outdoor] [Map 2186 - The Obsidian Sanctum - 8.2 Magni - Heart of Azeroth] map_exploration(10456),	-- The Obsidian Sanctum
 [BfA] [Scenario] [Map 2187 - Halls of Origination] map_exploration(10584),	-- Halls of Origination
-[BfA] [Outdoor] [Map 2195 - Hearthstone Tavern] map_exploration(10473),	-- Hearthstone Tavern
+[MID] [Outdoor] [Map 2195 - Arcantina] map_exploration(10473),	-- Arcantina
 [Vanilla] [Battleground] [Map 2197 - Korrak's Revenge] map_exploration(10458),	-- Alterac Valley
 [Vanilla] [Battleground] [Parent 10458 - Alterac Valley] exploration(11536),	-- Winterax Cave
 [Vanilla] [Battleground] [Parent 10458 - Alterac Valley] exploration(12073),	-- Dun Baldar
@@ -8621,7 +8767,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [N/A] [N/A] [N/A - N/A] exploration(14662),	-- 11Test5
 [N/A] [N/A] [N/A - N/A] exploration(14855),	-- 11Test7
 [N/A] [N/A] [N/A - N/A] exploration(15027),	-- 2510 Coreway
-[SL] [Arena] [Map 2511 - Enigma Arena] map_exploration(13970),	-- Enigma Arena
+[N/A] [N/A] [N/A - N/A] exploration(13970),	-- Enigma Arena
 [DF] [Outdoor] [Map 2512 - Grand Time Adventure] map_exploration(13992),	-- The Primalist Future
 [DF] [Outdoor] [Parent 13992 - The Primalist Future] exploration(14148),	-- Out of Temporal Bounds
 [DF] [Outdoor] [Parent 13992 - The Primalist Future] exploration(14454),	-- Temporal Conflux
@@ -8728,6 +8874,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [DF] [Raid] [Parent 14643 - Amirdrassil, the Dream's Hope] exploration(15026),	-- Heart of Amirdrassil
 [DF] [Raid] [Parent 14643 - Amirdrassil, the Dream's Hope] exploration(15049),	-- Pit of Volcoross
 [DF] [Raid] [Parent 14643 - Amirdrassil, the Dream's Hope] exploration(15050),	-- Wellspring Atrium
+[N/A] [N/A] [N/A - N/A] exploration(15459),	-- 12.0 WB Playground
 [TWW] [Outdoor] [Map 2552 - Khaz Algar (Surface)] map_exploration(14717),	-- Isle of Dorn
 [TWW] [Outdoor] [Parent 14717 - Isle of Dorn] exploration(14771),	-- Dornogal
 [TWW] [Outdoor] [Parent 14771 - Dornogal] exploration(15042),	-- Keepers Terrace
@@ -9113,6 +9260,45 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [TWW] [Scenario] [Parent 15048 - Hall of Awakening] exploration(15142),	-- Firewall of Negation
 [TWW] [Scenario] [Parent 15048 - Hall of Awakening] exploration(15143),	-- Processing Unit
 [TWW] [Scenario] [Parent 15048 - Hall of Awakening] exploration(15144),	-- Annihilation Interface
+[N/A] [N/A] [N/A - N/A] exploration(16502),	-- PvP POI Dev Land
+[MID] [Outdoor] [Map 2694 - Harandar] map_exploration(15355),	-- Harandar
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15917),	-- Har'athir
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15918),	-- The Grudge Pit
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15919),	-- Rift of Aln
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15920),	-- The Cradle
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15921),	-- The Den
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15922),	-- Amirdrassil Roots
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15923),	-- Nordrassil Roots
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15924),	-- Har'kuai
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15925),	-- Blooming Lattice
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15926),	-- Fungal Cleft
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15927),	-- Teldrassil Roots
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15928),	-- Har'mara
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15929),	-- Shrine of Ages
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15930),	-- Den of Echoes
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15931),	-- Fungara Village
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15932),	-- Har'alnor
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15933),	-- The Blinding Bloom
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15934),	-- The Tangleknot
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15935),	-- Gloom Mire
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15936),	-- Vale of Mists
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(15937),	-- Blossoming Terrace
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16344),	-- Vale of Secrets
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16345),	-- Shrouded Grove
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16346),	-- Veilroot Clearing
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16347),	-- Verdant Sepulcher
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16400),	-- Glimmering Cataract
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16401),	-- Ahl'ua Wetland
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16504),	-- Glade of Walking Memories
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16506),	-- Dreth'amar Cavern
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16528),	-- The Shadow Cleft
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16530),	-- Stillroot Basin
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16543),	-- Floaret Grotto
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16582),	-- Encroaching Bloom
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16583),	-- Nai'theren Grotto
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16584),	-- Nihil
+[MID] [Outdoor] [Parent 15355 - Harandar] exploration(16750),	-- Har'alnor Den
+[MID] [Outdoor] [Map 2694 - Harandar] map_exploration(15469),	-- Harandar Dev Land
 [SL] [Unknown] [Map 2695 - Void Zone: Arathi Highlands] map_exploration(15058),	-- Arathi Highlands
 [SL] [Unknown] [Parent 15058 - Arathi Highlands] exploration(15057),	-- Stromgarde Keep
 [SL] [Unknown] [Parent 15058 - Arathi Highlands] exploration(15059),	-- Newstead
@@ -9151,7 +9337,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [SL] [Unknown] [Parent 15058 - Arathi Highlands] exploration(15092),	-- The Neglected Seat
 [Vanilla] [Outdoor] [Map 2698 - 11.0 - Chamber of Heart] map_exploration(15051),	-- Chamber of Heart
 [TWW] [Scenario] [Map 2699 - New Candle, New Hope] map_exploration(15052),	-- Darkflame Cleft
-[TWW] [Outdoor] [Map 2703 - 11.0 Warband Testing] map_exploration(15180),	-- 11.0 warband camp
+[TWW] [Outdoor] [Map 2703 - 11.0 Warband Screen] map_exploration(15180),	-- 11.0 warband camp
 [TWW] [Outdoor] [Map 2704 - 11.0 Warband Testing 2] map_exploration(15387),	-- Warband Camp
 [TWW] [Outdoor] [Map 2706 - Undermine] map_exploration(15347),	-- Undermine
 [TWW] [Outdoor] [Parent 15347 - Undermine] exploration(15348),	-- Tailgate Park
@@ -9182,6 +9368,9 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [TWW] [Outdoor] [Map 2706 - Undermine] map_exploration(16093),	-- Undermine
 [N/A] [N/A] [N/A - N/A] exploration(15343),	-- KVigue Test
 [TWW] [Scenario] [Map 2710 - Awakening The Machine] map_exploration(15133),	-- Awakening The Machine
+[N/A] [N/A] [N/A - N/A] exploration(15173),	-- Eversong Woods
+[N/A] [N/A] [N/A - N/A] exploration(15516),	-- 2711- Silvermoon
+[N/A] [N/A] [N/A - N/A] exploration(16396),	-- 12test
 [TWW] [Scenario] [Map 2713 - 11.0 - Campaign Finale Scenario] map_exploration(15134),	-- The Burrows
 [TWW] [Scenario] [Map 2716 - 11.0 - Priory Scenario] map_exploration(15145),	-- Hallowfall
 [TWW] [Scenario] [Parent 15145 - Hallowfall] exploration(15146),	-- The Undersea
@@ -9289,6 +9478,61 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [TWW] [Raid] [Parent 15522 - Liberation of Undermine] exploration(16175),	-- The Shooting Gallery
 [TWW] [Raid] [Parent 15522 - Liberation of Undermine] exploration(16176),	-- The Midnight Lounge
 [TWW] [Raid] [Parent 15522 - Liberation of Undermine] exploration(16177),	-- The Golden Cabana
+[MID] [Outdoor] [Map 2771 - Voidstorm] map_exploration(16648),	-- Voidstorm
+[MID] [Outdoor] [Parent 16648 - Voidstorm] exploration(15458),	-- Voidstorm
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15949),	-- The Ingress
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15950),	-- Locus Point
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15951),	-- The Howling Ridge
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15952),	-- Nexus-Point Antius
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15953),	-- Shadowguard Point
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15954),	-- Nexus-Point Xenas
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15955),	-- Nexus-Point Mid'Ar
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15956),	-- Stormarion Keep
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15957),	-- Obscurion Citadel
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15960),	-- The Voidspire
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15961),	-- The Approach
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15962),	-- Ethereum Refinery
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15963),	-- Storm Fields
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15964),	-- The Molt
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15965),	-- The Bladeburrows
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15966),	-- Den of Predaxas
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(15967),	-- Ethereum Overcroft
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16341),	-- Gnawing Reach
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16360),	-- Grasping Reach
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16364),	-- Underground Burrows
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16429),	-- Exiles' Hovel
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16485),	-- Stormarion Citadel
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16486),	-- Stormarion Watch
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16501),	-- Night Trench
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16534),	-- Lair of Predaxas
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16581),	-- Abundant Voidburrow
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16652),	-- Overrun Hollow
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16804),	-- The Gorging Pit
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16844),	-- Dusk's Repose
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16863),	-- Quiet Cavern
+[MID] [Outdoor] [Parent 15458 - Voidstorm] exploration(16864),	-- Consumptor Cave
+[MID] [Outdoor] [Parent 16648 - Voidstorm] exploration(15959),	-- Slayer's Rise
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(15970),	-- Grief Spire
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(15971),	-- Hate Spire
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(15973),	-- Voidscar Arena
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(15974),	-- Path of Predation
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(15975),	-- The Bloodplains
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(15976),	-- Stareater Pavilion
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(15977),	-- Shattersky Pavilion
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16213),	-- Claw's Edge
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16214),	-- The Fangfall
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16216),	-- Bastion of Might
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16218),	-- Shenzar Refinery
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16219),	-- The Husk
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16220),	-- Sparring Grounds
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16221),	-- Hanaar Outpost
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16222),	-- Shadowridge Outpost
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16223),	-- Bastion of Valor
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16600),	-- Shadow Rise
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16850),	-- Retribution Hold
+[MID] [Outdoor] [Parent 15959 - Slayer's Rise] exploration(16851),	-- Mettle's Hold
+[MID] [Outdoor] [Parent 16648 - Voidstorm] exploration(16649),	-- Masters' Perch
+[MID] [Outdoor] [Parent 16649 - Masters' Perch] exploration(15958),	-- Masters' Perch
 [TWW] [Dungeon] [Map 2773 - Operation: Floodgate] map_exploration(15452),	-- Operation: Floodgate
 [TWW] [Dungeon] [Parent 15452 - Operation: Floodgate] exploration(15710),	-- The Waterworks
 [Vanilla] [Scenario] [Map 2776 - Kalimdor] map_exploration(15431),	-- Silithus
@@ -9315,6 +9559,7 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [DF] [Outdoor] [Map 2785 - Dragon Isles] map_exploration(15780),	-- Forbidden Reach - (11.0.5 Version) - Dracthyr for All
 [TWW] [Outdoor] [Map 2786 - Pocket Dimension] map_exploration(15513),	-- Pocket Dimension
 [Vanilla] [Raid] [Map 2792 - Blackrock Depths] map_exploration(15913),	-- Blackrock Depths
+[N/A] [N/A] [N/A - N/A] exploration(16042),	-- 13doodadtest
 [Legion] [Outdoor] [Map 2794 - 11.2.7 - The Wandering Isle] map_exploration(15543),	-- The Wandering Isle
 [Legion] [Outdoor] [Parent 15543 - The Wandering Isle] exploration(15614),	-- Pei-Wu Forest
 [Legion] [Outdoor] [Parent 15543 - The Wandering Isle] exploration(15615),	-- Ki-Han Brewery
@@ -9401,6 +9646,23 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [TWW] [Outdoor] [Parent 15717 - Hillsbrad Foothills] exploration(15751),	-- The Great Sea
 [TWW] [Outdoor] [Parent 15717 - Hillsbrad Foothills] exploration(15752),	-- Ravenholdt Manor
 [TWW] [Outdoor] [Map 2796 - Arathi Highlands 3] map_exploration(16428),	-- Arathi Highlands RPE
+[MID] [Battleground] [Map 2799 - Slayer's Rise] map_exploration(16423),	-- Slayer's Rise
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16487),	-- Path of Predation
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16488),	-- Grief Spire
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16489),	-- Hate Spire
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16490),	-- The Bloodplains
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16491),	-- Bastion of Might
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16492),	-- Bastion of Valor
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16493),	-- Claw's Edge
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16494),	-- Shadowridge Outpost
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16495),	-- Stareater Pavilion
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16496),	-- Hanaar Outpost
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16497),	-- The Fangfall
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16498),	-- The Husk
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16499),	-- Shenzar Refinery
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16500),	-- Sparring Grounds
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16599),	-- Slayer's Rise
+[MID] [Battleground] [Parent 16423 - Slayer's Rise] exploration(16855),	-- Voidscar Arena
 [Vanilla] [Outdoor] [Map 2801 - Ny'alotha, the Waking City] map_exploration(15764),	-- Ny'alotha, the Waking City
 [Vanilla] [Outdoor] [Parent 15764 - Ny'alotha, the Waking City] exploration(15765),	-- Ny'alotha
 [Vanilla] [Outdoor] [Parent 15764 - Ny'alotha, the Waking City] exploration(15766),	-- Locus of Infinite Truths
@@ -9418,16 +9680,32 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [Vanilla] [Outdoor] [Parent 15764 - Ny'alotha, the Waking City] exploration(15778),	-- Obsidian Overlook
 [Vanilla] [Outdoor] [Parent 15764 - Ny'alotha, the Waking City] exploration(15779),	-- Vision of Destiny
 [TWW] [Scenario] [Map 2803 - Archival Assault] map_exploration(16427),	-- Archival Assault
+[MID] [Dungeon] [Map 2805 - Windrunner Spire] map_exploration(15808),	-- Windrunner Spire
 [Vanilla] [Raid] [Map 2810 - Manaforge Omega] map_exploration(16178),	-- Manaforge Omega
 [Vanilla] [Raid] [Parent 16178 - Manaforge Omega] exploration(16339),	-- The Dark Heart
 [Vanilla] [Raid] [Parent 16178 - Manaforge Omega] exploration(16358),	-- The Forge Core
 [Vanilla] [Raid] [Parent 16178 - Manaforge Omega] exploration(16571),	-- Wastes of K'aresh
 [Vanilla] [Raid] [Parent 16178 - Manaforge Omega] exploration(16572),	-- The Glassed Expanse
+[MID] [Dungeon] [Map 2811 - Magisters' Terrace] map_exploration(15829),	-- Magisters' Terrace
+[MID] [Dungeon] [Map 2813 - Murder Row] map_exploration(16091),	-- Murder Row
+[MID] [Dungeon] [Parent 16091 - Murder Row] exploration(16179),	-- Augurs' Terrace
+[MID] [Dungeon] [Parent 16091 - Murder Row] exploration(16180),	-- Lithiel's Landing
+[MID] [Dungeon] [Parent 16091 - Murder Row] exploration(16181),	-- The Illicit Rain
+[MID] [Dungeon] [Parent 16091 - Murder Row] exploration(16666),	-- Silvermoon City
+[MID] [Dungeon] [Parent 16091 - Murder Row] exploration(16680),	-- Den of Indulgence
+[MID] [Dungeon] [Parent 16091 - Murder Row] exploration(16681),	-- Silvermoon Pet Shop
 [TWW] [Scenario] [Map 2815 - Excavation Site 9] map_exploration(15836),	-- Excavation Site 9
 [Vanilla] [Outdoor] [Map 2818 - Lordaeron Garrison] map_exploration(15841),	-- Scarlet Halls
 [Vanilla] [Outdoor] [Parent 15841 - Scarlet Halls] exploration(15842),	-- Huntsman's Cloister
 [Vanilla] [Outdoor] [Parent 15841 - Scarlet Halls] exploration(15843),	-- Training Grounds
 [Vanilla] [Outdoor] [Map 2818 - Lordaeron Garrison] map_exploration(15989),	-- Lordaeron Garrison
+[N/A] [N/A] [N/A - N/A] exploration(15915),	-- Warband Camp
+[MID] [Dungeon] [Map 2825 - Den of Nalorakk] map_exploration(16368),	-- Den of Nalorakk
+[MID] [Dungeon] [Parent 16368 - Den of Nalorakk] exploration(16388),	-- The Foraging
+[MID] [Dungeon] [Parent 16368 - Den of Nalorakk] exploration(16389),	-- The Storm Approaches
+[MID] [Dungeon] [Parent 16368 - Den of Nalorakk] exploration(16390),	-- Enduring Winter
+[MID] [Dungeon] [Parent 16368 - Den of Nalorakk] exploration(16640),	-- Dreamer's Passage
+[MID] [Dungeon] [Parent 16368 - Den of Nalorakk] exploration(16641),	-- The Heart of Rage
 [TWW] [Scenario] [Map 2826 - Sidestreet Sluice] map_exploration(15990),	-- Sidestreet Sluice
 [TWW] [Scenario] [Map 2827 - Horrific Vision of Stormwind] map_exploration(15942),	-- Vision of Stormwind
 [TWW] [Scenario] [Map 2828 - Horrific Vision of Orgrimmar] map_exploration(15946),	-- Vision of Orgrimmar
@@ -9439,9 +9717,67 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [TWW] [Dungeon] [Parent 16104 - Eco-Dome Al'dani] exploration(16569),	-- Temple of the Untamed
 [TWW] [Scenario] [Map 2831 - Demolition Dome] map_exploration(15991),	-- Demolition Dome
 [TWW] [Outdoor] [Map 2834 - 11.1 Warband - General] map_exploration(16078),	-- Warband_Plains
+[N/A] [N/A] [N/A - N/A] exploration(16103),	-- Delve Prototype
+[MID] [Outdoor] [Map 2857 - Scarlet Halls] map_exploration(16170),	-- Scarlet Halls
+[MID] [Outdoor] [Parent 16170 - Scarlet Halls] exploration(16171),	-- Huntsman's Cloister
+[MID] [Outdoor] [Parent 16170 - Scarlet Halls] exploration(16172),	-- Training Grounds
+[MID] [Outdoor] [Map 2858 - 12.0 Quel'Danas Scenario] map_exploration(16182),	-- Isle of Quel'Danas
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16205),	-- Sun's Reach Harbor
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16206),	-- Magisters' Terrace
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16207),	-- Greengill Coast
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16208),	-- Sun's Reach Armory
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16209),	-- Sun's Reach Sanctum
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16210),	-- Dawnstar Village
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16211),	-- Parhelion Plaza
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16291),	-- Sunstrider Rise
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16336),	-- Silver Landing
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16337),	-- The Thalassian Strait
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16356),	-- Sunwell Ramparts
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16393),	-- Golden Boughs
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16397),	-- Silvermoon Harbor
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16398),	-- The Shining Span
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16538),	-- Isle of Quel'Danas
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16547),	-- Magisters' Park
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16553),	-- Western Sungrove
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16555),	-- The Sunwell
+[MID] [Outdoor] [Parent 16182 - Isle of Quel'Danas] exploration(16749),	-- Sunstrider Corsair
+[MID] [Dungeon] [Map 2859 - The Blinding Vale] map_exploration(16359),	-- The Blinding Vale
+[MID] [Dungeon] [Parent 16359 - The Blinding Vale] exploration(16799),	-- The Luminous Garden
+[MID] [Dungeon] [Parent 16359 - The Blinding Vale] exploration(16800),	-- The Gilded Tangle
+[MID] [Dungeon] [Parent 16359 - The Blinding Vale] exploration(16801),	-- Warden's Retreat
+[MID] [Dungeon] [Parent 16359 - The Blinding Vale] exploration(16802),	-- Conviction's Crucible
 [N/A] [N/A] [N/A - N/A] exploration(16533),	-- [DNT][PH]
 [N/A] [N/A] [N/A - N/A] exploration(16621),	-- [DNT]
 [N/A] [N/A] [N/A - N/A] exploration(16309),	-- Castle Nathria
+[MID] [Dungeon] [Map 2874 - Maisara Caverns] map_exploration(16395),	-- Maisara Caverns
+[MID] [Dungeon] [Parent 16395 - Maisara Caverns] exploration(16664),	-- Wailing Depths
+[MID] [Scenario] [Map 2907 - 12.0 - Silvermoon City - Campaign Finale Scenario] map_exploration(16310),	-- Isle of Quel'Danas
+[MID] [Scenario] [Map 2907 - 12.0 - Silvermoon City - Campaign Finale Scenario] map_exploration(16311),	-- Silvermoon City
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16313),	-- Court of Blood
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16314),	-- Court of the Sun
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16315),	-- Falconwing Square
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16316),	-- Dawning Lane
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16317),	-- The Royal Exchange
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16318),	-- The Shining Span
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16319),	-- Murder Row
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16320),	-- Walk of Elders
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16321),	-- Silvermoon Harbor
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16322),	-- Sunwing Rookery
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16323),	-- Gardens of Remembrance
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16324),	-- The Bazaar
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16325),	-- Duskglow Gloriette
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16326),	-- Augurs' Terrace
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16327),	-- Lithiel's Landing
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16328),	-- Magister Academy
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16329),	-- North Sanctum
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16330),	-- Path of Dawn
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16331),	-- Sunstrider Isle
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16332),	-- The Great Sea
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16415),	-- Salabria
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16416),	-- The Starchaser
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16417),	-- The Crimson Treader
+[MID] [Scenario] [Parent 16311 - Silvermoon City] exploration(16578),	-- Sanctum of Light
+[MID] [Scenario] [Map 2907 - 12.0 - Silvermoon City - Campaign Finale Scenario] map_exploration(16312),	-- Eversong Woods
 [N/A] [N/A] [N/A - N/A] exploration(16381),	-- [DNT]
 [N/A] [N/A] [N/A - N/A] exploration(16387),	-- [DNT]
 [N/A] [N/A] [N/A - N/A] exploration(16391),	-- [DNT]
@@ -9451,55 +9787,104 @@ Maps: 1135, Children: 8360, Total explorations: 9495
 [N/A] [N/A] [N/A - N/A] exploration(16406),	-- [DNT]
 [N/A] [N/A] [N/A - N/A] exploration(16407),	-- [DNT]
 [N/A] [N/A] [N/A - N/A] exploration(16409),	-- [DNT]
+[MID] [Raid] [Map 2912 - The Voidspire] map_exploration(16340),	-- The Voidspire
+[MID] [Raid] [Parent 16340 - The Voidspire] exploration(16507),	-- Isle of Quel'Danas
+[MID] [Raid] [Parent 16507 - Isle of Quel'Danas] exploration(16639),	-- Magisters' Terrace
+[MID] [Raid] [Parent 16340 - The Voidspire] exploration(16825),	-- Devouring Stronghold
+[MID] [Raid] [Parent 16340 - The Voidspire] exploration(16826),	-- Behemoth's Rise
+[MID] [Raid] [Parent 16340 - The Voidspire] exploration(16827),	-- The Riftlabs
+[MID] [Raid] [Parent 16340 - The Voidspire] exploration(16828),	-- Crown of the Cosmos
+[MID] [Raid] [Parent 16340 - The Voidspire] exploration(16829),	-- The Approach
+[MID] [Raid] [Map 2913 - March on Quel'Danas] map_exploration(16342),	-- Isle of Quel'Danas
+[MID] [Raid] [Parent 16342 - Isle of Quel'Danas] exploration(16601),	-- The Sunwell
+[MID] [Raid] [Parent 16342 - Isle of Quel'Danas] exploration(16767),	-- The Great Sea
+[MID] [Raid] [Parent 16342 - Isle of Quel'Danas] exploration(16768),	-- Court of the Phoenix
+[MID] [Dungeon] [Map 2915 - Nexus-Point Xenas] map_exploration(16573),	-- Nexus-Point Xenas
+[MID] [Dungeon] [Parent 16573 - Nexus-Point Xenas] exploration(16574),	-- Corespark Engineway
+[MID] [Dungeon] [Parent 16573 - Nexus-Point Xenas] exploration(16575),	-- Core Defense Nullward
+[MID] [Dungeon] [Parent 16573 - Nexus-Point Xenas] exploration(16576),	-- The Nexus Core
 [N/A] [N/A] [N/A - N/A] exploration(16540),	-- [DNT][PH]
-[TWW] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16430),	-- The Hinterlands
-[TWW] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16470),	-- Jintha'Alor
-[TWW] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16471),	-- Zun'watha
-[TWW] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16472),	-- The Altar of Zul
-[TWW] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16473),	-- The Forbidding Sea
-[TWW] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16474),	-- Bogen's Ledge
-[TWW] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16475),	-- Shadra'Alor
-[TWW] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16431),	-- Twilight Highlands
-[TWW] [Outdoor] [Parent 16431 - Twilight Highlands] exploration(16469),	-- Vermillion Redoubt
-[TWW] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16432),	-- Arathi Highlands
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16442),	-- Drywhisker Gorge
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16443),	-- Dabyrie's Farmstead
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16444),	-- Circle of Outer Binding
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16445),	-- Refuge Pointe
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16446),	-- Circle of Inner Binding
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16447),	-- Ar'gorok
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16448),	-- Hatchet Ridge
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16449),	-- High Perch
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16450),	-- Northfold Crossing
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16451),	-- Drywhisker Mine
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16452),	-- Highlands Mill
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16453),	-- Stromgarde Keep
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16454),	-- Valorcall Pass
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16455),	-- Galson's Lode
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16456),	-- Go'Shek Farm
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16457),	-- Witherbark Village
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16458),	-- Boulderfist Hall
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16459),	-- Thandol Span
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16460),	-- Thoradin's Wall
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16461),	-- Faldir's Cove
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16462),	-- The Drowned Reef
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16463),	-- Circle of East Binding
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16464),	-- Boulder'gor
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16465),	-- The Forbidding Sea
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16466),	-- Hammerfall
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16467),	-- Circle of Elements
-[TWW] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16468),	-- Newstead
-[TWW] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16433),	-- Wetlands
-[TWW] [Outdoor] [Parent 16433 - Wetlands] exploration(16476),	-- Saltspray Glen
-[TWW] [Outdoor] [Parent 16433 - Wetlands] exploration(16477),	-- Dun Modr
-[TWW] [Outdoor] [Parent 16433 - Wetlands] exploration(16478),	-- Thandol Span
-[TWW] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16434),	-- Hillsbrad Foothills
-[TWW] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16435),	-- Ravenholdt Manor
-[TWW] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16436),	-- Nethander Stead
-[TWW] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16437),	-- Durnholde Keep
-[TWW] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16438),	-- Dun Garok
-[TWW] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16439),	-- Eastern Strand
-[TWW] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16440),	-- Thoradin's Wall
-[TWW] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16441),	-- The Great Sea
+[MID] [Dungeon] [Map 2923 - Voidscar Arena] map_exploration(16425),	-- Voidscar Arena
+[MID] [Dungeon] [Map 2923 - Voidscar Arena] map_exploration(16479),	-- Voidstorm
+[MID] [Dungeon] [Parent 16479 - Voidstorm] exploration(16480),	-- Slayer's Rise
+[MID] [Dungeon] [Parent 16480 - Slayer's Rise] exploration(16481),	-- Pit of Spite
+[MID] [Dungeon] [Parent 16480 - Slayer's Rise] exploration(16482),	-- The Husk
+[MID] [Dungeon] [Parent 16480 - Slayer's Rise] exploration(16483),	-- Sparring Grounds
+[MID] [Dungeon] [Parent 16479 - Voidstorm] exploration(16484),	-- Grasping Reach
+[DF] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16430),	-- The Hinterlands
+[DF] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16470),	-- Jintha'Alor
+[DF] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16471),	-- Zun'watha
+[DF] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16472),	-- The Altar of Zul
+[DF] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16473),	-- The Forbidding Sea
+[DF] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16474),	-- Bogen's Ledge
+[DF] [Outdoor] [Parent 16430 - The Hinterlands] exploration(16475),	-- Shadra'Alor
+[DF] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16431),	-- Twilight Highlands
+[DF] [Outdoor] [Parent 16431 - Twilight Highlands] exploration(16469),	-- Vermillion Redoubt
+[DF] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16432),	-- Arathi Highlands
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16442),	-- Drywhisker Gorge
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16443),	-- Dabyrie's Farmstead
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16444),	-- Circle of Outer Binding
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16445),	-- Refuge Pointe
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16446),	-- Circle of Inner Binding
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16447),	-- Ar'gorok
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16448),	-- Hatchet Ridge
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16449),	-- High Perch
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16450),	-- Northfold Crossing
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16451),	-- Drywhisker Mine
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16452),	-- Highlands Mill
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16453),	-- Stromgarde Keep
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16454),	-- Valorcall Pass
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16455),	-- Galson's Lode
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16456),	-- Go'Shek Farm
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16457),	-- Witherbark Village
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16458),	-- Boulderfist Hall
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16459),	-- Thandol Span
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16460),	-- Thoradin's Wall
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16461),	-- Faldir's Cove
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16462),	-- The Drowned Reef
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16463),	-- Circle of East Binding
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16464),	-- Boulder'gor
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16465),	-- The Forbidding Sea
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16466),	-- Hammerfall
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16467),	-- Circle of Elements
+[DF] [Outdoor] [Parent 16432 - Arathi Highlands] exploration(16468),	-- Newstead
+[DF] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16433),	-- Wetlands
+[DF] [Outdoor] [Parent 16433 - Wetlands] exploration(16476),	-- Saltspray Glen
+[DF] [Outdoor] [Parent 16433 - Wetlands] exploration(16477),	-- Dun Modr
+[DF] [Outdoor] [Parent 16433 - Wetlands] exploration(16478),	-- Thandol Span
+[DF] [Outdoor] [Map 2927 - Arathi Highlands RPE] map_exploration(16434),	-- Hillsbrad Foothills
+[DF] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16435),	-- Ravenholdt Manor
+[DF] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16436),	-- Nethander Stead
+[DF] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16437),	-- Durnholde Keep
+[DF] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16438),	-- Dun Garok
+[DF] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16439),	-- Eastern Strand
+[DF] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16440),	-- Thoradin's Wall
+[DF] [Outdoor] [Parent 16434 - Hillsbrad Foothills] exploration(16441),	-- The Great Sea
+[MID] [Scenario] [Map 2933 - Collegiate Calamity] map_exploration(16545),	-- Collegiate Calamity
+[MID] [Raid] [Map 2939 - The Dreamrift] map_exploration(16531),	-- The Dreamrift
+[MID] [Raid] [Parent 16531 - The Dreamrift] exploration(16875),	-- Den of the Undreamt
 [DF] [Raid] [Map 2950 - Vault of the Incarnates] map_exploration(16551),	-- Vault of the Incarnates (V2)
 [TWW] [Scenario] [Map 2951 - Voidrazor Sanctuary] map_exploration(16539),	-- Voidrazor Sanctuary
+[MID] [Scenario] [Map 2952 - The Shadow Enclave] map_exploration(16594),	-- The Shadow Enclave
+[MID] [Scenario] [Map 2953 - Parhelion Plaza] map_exploration(16542),	-- Parhelion Plaza
+[MID] [Scenario] [Parent 16542 - Parhelion Plaza] exploration(16354),	-- Voidstorm
+[MID] [Scenario] [Map 2961 - Twilight Crypts] map_exploration(16557),	-- Twilight Crypts
+[MID] [Scenario] [Map 2962 - Atal'Aman] map_exploration(16556),	-- Atal'Aman
+[MID] [Scenario] [Map 2963 - The Grudge Pit] map_exploration(16548),	-- The Grudge Pit
+[MID] [Scenario] [Map 2964 - The Gulf of Memory] map_exploration(16595),	-- The Gulf of Memory
+[MID] [Scenario] [Map 2965 - Sunkiller Sanctum] map_exploration(16592),	-- Sunkiller Sanctum
+[MID] [Scenario] [Map 2966 - Torment's Rise] map_exploration(16596),	-- Torment's Rise
+[MID] [Scenario] [Map 2979 - Shadowguard Point] map_exploration(16549),	-- Shadowguard Point
+[MID] [Scenario] [Map 3003 - The Darkway] map_exploration(16642),	-- The Darkway
+[Vanilla] [Scenario] [Map 3009 - 12.0.5 - Prop Hunt - Silvermoon] map_exploration(16686),	-- Silvermoon City
+[MID] [Scenario] [Map 3014 - Broken Throne] map_exploration(16748),	-- Ritual Site Outskirts
+[MID] [Scenario] [Map 3014 - Broken Throne] map_exploration(16770),	-- Zul'Aman
+[MID] [Scenario] [Map 3014 - Broken Throne] map_exploration(16796),	-- Ritual Site
+[MID] [Scenario] [Parent 16796 - Ritual Site] exploration(16747),	-- Speaker's Rest
+[MID] [Scenario] [Parent 16796 - Ritual Site] exploration(16766),	-- Broken Throne
+[MID] [Scenario] [Parent 16796 - Ritual Site] exploration(16823),	-- Daggerspine Point
+[MID] [Scenario] [Map 3022 - Silvermoon's Falconwing Square] map_exploration(16773),	-- Silvermoon City
+[MID] [Outdoor] [Map 3026 - 12.0 Warband - Founder's Point] map_exploration(16874),	-- Founders Point Camp
+[MID] [Outdoor] [Map 3027 - 12.0 Warband - Razorwind Shores] map_exploration(16873),	-- Razorwind Camp
+[MID] [Scenario] [Map 3074 - Daggerspine Point] map_exploration(16939),	-- Ritual Site
+[MID] [Scenario] [Parent 16939 - Ritual Site] exploration(16940),	-- Daggerspine Point

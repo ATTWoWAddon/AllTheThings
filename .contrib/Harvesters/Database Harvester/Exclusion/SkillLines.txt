@@ -584,3 +584,13 @@
 2950@@@Alchemy Research
 2961@@@Pet - Exotic Whiptail
 2987@@@Language: Hara'ni
+2929@@@Traveler
+3004@@@Hungry Tortollan
+2933@@@Test Profession [DNT]
+2934@@@Test Profession [DNT]
+2980@@@Skyborne Racial
+3011@@@Galestrider Riding
+3012@@@Comprehension
+3014@@@Feral Combat
+3015@@@Pet - Bat
+3016@@@Pet - Fox

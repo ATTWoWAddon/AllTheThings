@@ -3,13 +3,13 @@ using ATT;
 using System.Text;
 
 // Make sure the Skill Level Requirements folder exists.
-var SkillLevelRequirementsFolderName = "../Parser/DATAS/00 - Profession DB/Skill Level Requirements/";
+var SkillLevelRequirementsFolderName = "../.db/standard/00 - Profession DB/Skill Level Requirements/";
 #pragma warning disable CS8604 // Possible null reference argument.
 Directory.CreateDirectory(Path.GetDirectoryName(SkillLevelRequirementsFolderName));
 #pragma warning restore CS8604 // Possible null reference argument.
 
 // Define the Common Header
-string commonHeader = "-- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!\nlocal recipeDB = RecipeDBConditional;";
+string commonHeader = "-- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!\nlocal recipeDB = RecipeDBConditional;\n-- #if NOT ANYCLASSIC\nif true then return end\n-- #endif";
 
 // Classic Profession Data
 StringBuilder sb = new StringBuilder().AppendLine(commonHeader);

@@ -1,0 +1,84 @@
+1.60.1.69876
+r(1230643),	-- Enchanted Lute
+r(1240946),	-- Enchanting
+r(1240957),	-- Enchanting
+r(1240968),	-- Enchanting
+r(1240981),	-- Enchanting
+r(1248497),	-- Enchant Bracer - Agility
+r(1277781),	--
+r(1294054),	-- Enchant Gloves - Lotus Claw
+
+
+
+
+
+Missing in Enchanting
+
+1.60.1.69876
+r(1240946),	-- Enchanting
+r(1240957),	-- Enchanting
+r(1240968),	-- Enchanting
+r(1240981),	-- Enchanting
+r(1245320),	-- Dust to Motes
+r(1245321),	-- Novice's Practice Wand
+r(1248458),	-- Enchant Bracer - Minor Intellect
+r(1248459),	-- Enchant Bracer - Minor Healing Power
+r(1248460),	-- Enchant Bracer - Lesser Agility
+r(1248461),	-- Twisted Nether Wand
+r(1248497),	-- Enchant Bracer - Agility
+r(1248498),	-- Enchant Bracer - Lesser Healing Power
+r(1248500),	-- Enchant Bracer - Greater Agility
+r(1248505),	-- Lesser Eternal Wand
+r(1248509),	-- Dreambough Wand
+r(1248510),	-- Enchant 2H Weapon - Lesser Agility
+r(1248511),	-- Enchant 2H Weapon - Lesser Strength
+r(1248515),	-- Greater Eternal Wand
+r(1248528),	-- Enchant Gloves - Advanced Skinning
+r(1248599),	-- Enchant Bracer - Superior Agility
+r(1248607),	-- Enchant 2H Weapon - Mighty Spell Power
+r(1248636),	-- Enchant 2H Weapon - Mighty Healing Power
+r(1248640),	-- Enchant Gloves - Superior Strength
+r(1248645),	-- Enchant Gloves - Natural Power
+r(1248650),	-- Brilliant Wand
+r(1248661),	-- Enchant Bracer - Superior Intellect
+r(1248665),	-- Enchant Bracer - Superior Deflection
+r(1248668),	-- Enchant 2H Weapon - Strength
+r(1248703),	-- Glimmering Staff
+r(1248739),	-- Soulstaff
+r(1248745),	-- Orb of Mystic Insight
+r(1248748),	-- Orb of Souls
+r(1248752),	-- Mystic Mushroom
+r(1248754),	-- Tenets of the Silver Hand
+r(1248755),	-- Polished Driftwood Icon
+r(1248757),	-- Enchant Weapon - Insight
+r(1248760),	-- Enchant Weapon - Recovery
+r(1248805),	-- Enchant Weapon - Revelation
+r(1248974),	-- Talons of Wrath
+r(1249006),	-- Libram of Invocation
+r(1249015),	-- Totem of Ancestral Protection
+r(1249019),	-- Enchant Necklace - Strength
+r(1249057),	-- Enchant Necklace - Spell Power
+r(1249058),	-- Enchant Necklace - Healing Power
+r(1249059),	-- Enchant Necklace - Agility
+r(1249060),	-- Enchant Necklace - Deflection
+r(1249061),	-- Radiant Staff
+r(1249064),	-- Dreamstaff
+r(1249069),	-- Truesilver Conduit
+r(1249070),	-- Twisting Essence Jar
+r(1249071),	-- Enchant Chest - Absorption
+r(1249107),	-- Frozen Heart of the Mountain
+r(1249112),	-- Molten Heart of the Mountain
+r(1249114),	-- Dormant Heart of the Mountain
+r(1249128),	-- Idol of the Dream
+r(1249152),	-- Libram of Holy Alacrity
+r(1249154),	-- Totem of Thunder
+r(1263056),	-- Arcane Salvager
+r(1263082),	-- Arcane Forge
+r(1277781),	--
+
+r(1306520),	-- Torch of Light
+r(1306521),	-- Steadfast Libram
+r(1306522),	-- Libram of Infusion
+r(1306523),	-- Totem of Urgency
+r(1306524),	-- Idol of Swiftness
+r(1306525),	-- Idol of the Ursine Twins

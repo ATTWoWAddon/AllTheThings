@@ -1,0 +1,331 @@
+1.60.1.69876
+ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
+ach(15329),	-- Has Died
+ach(15330),	-- Survivor of the Firelord
+ach(15332),	-- Survivor
+ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
+ach(19563),	-- UNUSED Bael'Gar Defeated (Daily)
+ach(20129),	-- [DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
+ach(20130),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)
+ach(20131),	-- [DNT] Discoverer's Delight - Reach Level 60 in Phase 4 (hidden)
+ach(20132),	-- [DNT] Discoverer's Delight - Reach Level 60 in Phase 5 (hidden)
+ach(20133),	-- [DNT] Self-Found Soul (Level 1)
+ach(20134),	-- [DNT] Self-Found Soul (Level 10)
+ach(20135),	-- [DNT] Self-Found Soul (Level 20)
+ach(20136),	-- [DNT] Self-Found Soul (Level 30)
+ach(20137),	-- [DNT] Self-Found Soul (Level 40)
+ach(20138),	-- [DNT] Self-Found Soul (Level 50)
+ach(20139),	-- [DNT] Self-Found Soul (Level 60)
+ach(20193),	-- [DNT] Self-Found Soul (Removed Self-Found)
+ach(40131),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)
+ach(40132),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)
+ach(40133),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
+ach(40135),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
+ach(40137),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
+ach(41008),	-- Rune Learned - Shared Acquisition - Illari Duskfeather (40)
+ach(41009),	-- Rune Learned - Shared Acquisition - Dark Riders (40)
+ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
+ach(42133),	-- [DNT] Balnazzar Defeated
+ach(42186),	-- [DNT] Balnazzar Defeated (Backup Achievement)
+ach(61515),	-- 1.60.0 - Lost Ones Tracking Achievement <HIDDEN>
+ach(62012),	-- Journeyman Alchemist
+ach(62013),	-- Expert Alchemist
+ach(62014),	-- Artisan Alchemist
+ach(62015),	-- Journeyman Blacksmith
+ach(62016),	-- Expert Blacksmith
+ach(62017),	-- Artisan Blacksmith
+ach(62018),	-- Journeyman Enchanter
+ach(62019),	-- Expert Enchanter
+ach(62020),	-- Artisan Enchanter
+ach(62021),	-- Journeyman Engineer
+ach(62022),	-- Expert Engineer
+ach(62023),	-- Artisan Engineer
+ach(62024),	-- Journeyman Leatherworker
+ach(62025),	-- Expert Leatherworker
+ach(62026),	-- Artisan Leatherworker
+ach(62028),	-- Journeyman Tailor
+ach(62029),	-- Expert Tailor
+ach(62030),	-- Artisan Tailor
+ach(62034),	-- Conqueror of the Wilds \\ Conquerer of the Wilds
+ach(62035),	-- Conqueror of the Deeps \\ Conquerer of the Deeps
+ach(63969),	-- Novice Warrior
+ach(63970),	-- Experienced Warrior
+ach(63971),	-- Master Warrior
+ach(63972),	-- Novice Druid
+ach(63973),	-- Experienced Druid
+ach(63974),	-- Master Druid
+ach(63975),	-- Novice Hunter
+ach(63976),	-- Experienced Hunter
+ach(63977),	-- Master Hunter
+ach(63978),	-- Novice Mage
+ach(63979),	-- Experienced Mage
+ach(63980),	-- Master Mage
+ach(63981),	-- Novice Paladin
+ach(63982),	-- Experienced Paladin
+ach(63983),	-- Master Paladin
+ach(63984),	-- Novice Priest
+ach(63985),	-- Experienced Priest
+ach(63986),	-- Master Priest
+ach(63987),	-- Novice Rogue
+ach(63988),	-- Experienced Rogue
+ach(63989),	-- Master Rogue
+ach(63990),	-- Novice Shaman
+ach(63991),	-- Experienced Shaman
+ach(63992),	-- Master Shaman
+ach(63993),	-- Novice Warlock
+ach(63994),	-- Experienced Warlock
+ach(63995),	-- Master Warlock
+ach(63996),	-- Journeyman Alchemist
+ach(63997),	-- Expert Alchemist
+ach(63998),	-- Artisan Alchemist
+ach(63999),	-- Journeyman Blacksmith
+ach(64000),	-- Expert Blacksmith
+ach(64001),	-- Artisan Blacksmith
+ach(64002),	-- Journeyman Enchanter
+ach(64003),	-- Expert Enchanter
+ach(64004),	-- Artisan Enchanter
+ach(64005),	-- Journeyman Engineer
+ach(64006),	-- Expert Engineer
+ach(64007),	-- Artisan Engineer
+ach(64008),	-- Journeyman Leatherworker
+ach(64009),	-- Expert Leatherworker
+ach(64010),	-- Artisan Leatherworker
+ach(64011),	-- Journeyman Tailor
+ach(64012),	-- Expert Tailor
+ach(64013),	-- Artisan Tailor
+ach(64014),	-- Lord Valthalak Laid to Rest
+ach(64015),	-- Explorer
+ach(64016),	-- Novice Spelunker
+ach(64017),	-- Experienced Spelunker
+ach(64018),	-- Master Spelunker
+ach(64019),	-- Conqueror of the Wilds \\ Conquerer of the Wilds
+ach(64020),	-- Conqueror of the Deeps \\ Conquerer of the Deeps
+ach(64030),	-- Conqueror of the Lair
+ach(64048),	-- Hidden: Rank 3
+ach(64051),	-- Hidden: Rank 7
+ach(64052),	-- Hidden: Rank 10
+ach(64053),	-- Hidden: Rank 1
+ach(64054),	-- Hidden: Rank 2
+ach(64055),	-- Hidden: Rank 4
+ach(64056),	-- Hidden: Rank 5
+ach(64057),	-- Hidden: Rank 6
+ach(64058),	-- Hidden: Rank 8
+ach(64059),	-- Hidden: Rank 9
+ach(64060),	-- Hidden: Rank 11
+ach(64061),	-- Hidden: Rank 12
+ach(64062),	-- Hidden: Rank 13
+ach(64063),	-- Hidden: Rank 14
+ach(64120),	-- Hidden: Well Equipped (Tier 1)
+ach(64151),	-- Hidden: BETA Survey - Level 30 - Druid
+ach(64152),	-- Hidden: BETA Survey - Level 30 - Warrior
+ach(64153),	-- Hidden: BETA Survey - Level 30 - Mage
+ach(64154),	-- Hidden: BETA Survey - Level 30 - Shaman
+ach(64155),	-- Hidden: BETA Survey - Level 30 - Hunter
+ach(64156),	-- Hidden: BETA Survey - Level 30 - Warlock
+ach(64157),	-- Hidden: BETA Survey - Level 30 - Rogue
+ach(64158),	-- Hidden: BETA Survey - Level 30 - Priest
+ach(64159),	-- Hidden: BETA Survey - Level 30 - Paladin
+1.60.1.70009
+ach(49),	-- Alterac Valley victories
+ach(51),	-- Arathi Basin victories
+ach(52),	-- Warsong Gulch battles
+ach(53),	-- Alterac Valley battles
+ach(55),	-- Arathi Basin battles
+ach(56),	-- Deaths in Warsong Gulch
+ach(57),	-- Deaths in Alterac Valley
+ach(58),	-- Deaths from Drek'Thar
+ach(59),	-- Deaths in Arathi Basin
+ach(60),	-- Total deaths
+ach(94),	-- Quests abandoned
+ach(95),	-- Average quests completed per day
+ach(98),	-- Quests completed
+ach(105),	-- Warsong Gulch victories
+ach(107),	-- Creatures killed
+ach(108),	-- Critters killed
+ach(112),	-- Deaths from drowning
+ach(113),	-- Deaths from fatigue
+ach(114),	-- Deaths from falling
+ach(115),	-- Deaths from fire and lava
+ach(178),	-- Enchanting formulae learned
+ach(181),	-- Items disenchanted
+ach(183),	-- Materials produced from disenchanting
+ach(189),	-- Largest heal cast
+ach(193),	-- Largest hit dealt
+ach(197),	-- Total damage done
+ach(198),	-- Total healing done
+ach(281),	-- First Aid skill
+ach(318),	-- Total deaths from opposite faction
+ach(319),	-- Duels won
+ach(320),	-- Duels lost
+ach(321),	-- Total raid and dungeon deaths
+ach(326),	-- Gold from quest rewards
+ach(328),	-- Total gold acquired
+ach(329),	-- Auctions posted
+ach(330),	-- Auction purchases
+ach(331),	-- Most expensive bid on auction
+ach(332),	-- Most expensive auction sold
+ach(333),	-- Gold looted
+ach(334),	-- Most gold ever owned
+ach(336),	-- Legendary items acquired
+ach(338),	-- Vanity pets owned
+ach(339),	-- Mounts owned
+ach(341),	-- Epic items looted
+ach(342),	-- Epic items acquired
+ach(344),	-- Bandages used
+ach(345),	-- Health potions consumed
+ach(346),	-- Beverages consumed
+ach(347),	-- Food eaten
+ach(349),	-- Flight paths taken
+ach(350),	-- Mage Portals taken
+ach(353),	-- Number of times hearthed
+ach(377),	-- Most factions at Exalted
+ach(378),	-- Most factions at Revered or higher
+ach(381),	-- World Honorable Kills
+ach(382),	-- Battleground Honorable Kills
+ach(393),	-- Alterac Valley towers defended
+ach(394),	-- Alterac Valley towers captured
+ach(395),	-- Warsong Gulch flags captured
+ach(527),	-- Largest hit received
+ach(528),	-- Total damage received
+ach(529),	-- Most factions at Honored or higher
+ach(586),	-- Warsong Gulch flags returned
+ach(588),	-- Total Honorable Kills
+ach(593),	-- Deaths from Vanndar Stormpike
+ach(594),	-- Deaths from Hogger
+ach(753),	-- Average gold earned per day
+ach(796),	-- Resurrected by priests
+ach(798),	-- Rebirthed by druids
+ach(799),	-- Spirit returned to body by shamans
+ach(800),	-- Redeemed by paladins
+ach(801),	-- Resurrected by soulstones
+ach(811),	-- Flasks consumed
+ach(812),	-- Healthstones used
+ach(829),	-- Largest heal received
+ach(830),	-- Total healing received
+ach(839),	-- Battlegrounds played
+ach(840),	-- Battlegrounds won
+ach(917),	-- Total deaths in 10-player raids
+ach(918),	-- Total deaths in 5-player dungeons
+ach(919),	-- Gold earned from auctions
+ach(921),	-- Gold from vendors
+ach(922),	-- Mana potions consumed
+ach(923),	-- Elixirs consumed
+ach(926),	-- Most Horde factions at Exalted
+ach(927),	-- Equipped epic items in item slots
+ach(928),	-- Extra bank slots purchased
+ach(931),	-- Total factions encountered
+ach(932),	-- Total 5-player dungeons entered
+ach(933),	-- Total 10-player raids entered
+ach(934),	-- Total 20-player raids entered
+ach(1042),	-- Number of hugs
+ach(1043),	-- Greed rolls made on loot
+ach(1044),	-- Need rolls made on loot
+ach(1045),	-- Total cheers
+ach(1047),	-- Total facepalms
+ach(1065),	-- Total waves
+ach(1066),	-- Total times LOL'd
+ach(1067),	-- Total times playing world's smallest violin
+ach(1092),	-- Archmage Arugal kills (Shadowfang Keep)
+ach(1093),	-- Scarlet Commander Mograine kills (Scarlet Monastery)
+ach(1094),	-- Chief Ukorz Sandscalp kills (Zul'Farrak)
+ach(1095),	-- Emperor Dagran Thaurissan kills (Blackrock Depths)
+ach(1096),	-- General Drakkisath kills (Upper Blackrock Spire)
+ach(1097),	-- Baron Rivendare kills (Stratholme)
+ach(1098),	-- Onyxia kills (Onyxia's Lair)
+ach(1113),	-- Alterac Valley Honorable Kills
+ach(1114),	-- Arathi Basin Honorable Kills
+ach(1115),	-- Warsong Gulch Honorable Kills
+ach(1125),	-- Bandage used most
+ach(1146),	-- Gold spent on travel
+ach(1147),	-- Gold spent at barber shops
+ach(1148),	-- Gold spent on postage
+ach(1149),	-- Talent tree respecs
+ach(1150),	-- Gold spent on talent tree respecs
+ach(1197),	-- Total kills
+ach(1198),	-- Total kills that grant experience or honor
+ach(1199),	-- Professions learned
+ach(1200),	-- Secondary skills at maximum skill
+ach(1201),	-- Professions at maximum skill
+ach(1202),	-- Weapon skills at maximum skill
+ach(1229),	-- Revived by druids
+ach(1336),	-- Creature type killed the most
+ach(1337),	-- Different creature types killed
+ach(1339),	-- Mage portal taken most
+ach(1456),	-- Fish and other things caught
+ach(1458),	-- Continent with the most Honorable Kills
+ach(1466),	-- Most Alliance factions at Exalted
+ach(1487),	-- Total Killing Blows
+ach(1488),	-- World Killing Blows
+ach(1489),	-- Continent with the most Killing Blows
+ach(1491),	-- Battleground Killing Blows
+ach(1495),	-- Alterac Valley Killing Blows
+ach(1496),	-- Arathi Basin Killing Blows
+ach(1497),	-- Warsong Gulch Killing Blows
+ach(1501),	-- Total deaths from other players
+ach(1518),	-- Fish caught
+ach(1519),	-- Fishing skill
+ach(1524),	-- Cooking skill
+ach(1525),	-- Cooking daily quests completed
+ach(1526),	-- Fishing daily quests completed
+ach(1527),	-- Highest Alchemy skill
+ach(1532),	-- Highest Blacksmithing skill
+ach(1535),	-- Highest Enchanting skill
+ach(1536),	-- Highest Leatherworking skill
+ach(1537),	-- Highest Mining skill
+ach(1538),	-- Highest Herbalism skill
+ach(1539),	-- Highest Inscription skill
+ach(1541),	-- Highest Skinning skill
+ach(1542),	-- Highest Tailoring skill
+ach(1544),	-- Highest Engineering skill
+ach(1716),	-- Battleground with the most Killing Blows
+ach(1719),	-- Battleground with the most Honorable Kills
+ach(1729),	-- Alchemy Recipes learned
+ach(1730),	-- Blacksmithing Plans learned
+ach(1734),	-- Engineering Schematics learned
+ach(1735),	-- Inscriptions learned
+ach(1740),	-- Leatherworking Patterns learned
+ach(1741),	-- Tailoring Patterns learned
+ach(1745),	-- Cooking Recipes known
+ach(1748),	-- First Aid Manuals learned
+ach(1976),	-- Dalaran Cooking Awards gained
+ach(2277),	-- Summons accepted
+ach(2396),	-- Battleground played the most
+ach(2397),	-- Battleground won the most
+ach(3216),	-- Smelting Recipes learned
+ach(6137),	-- Aku'mai kills (Blackfathom Deeps)
+ach(6139),	-- Charlga Razorflank kills (Razorfen Kraul)
+ach(6140),	-- Mekgineer Thermaplugg kills (Gnomeregan)
+ach(6141),	-- Amnennar the Coldbringer kills (Razorfen Downs)
+ach(6142),	-- Archaedas kills (Uldaman)
+ach(6143),	-- Princess Theradras kills (Maraudon)
+ach(6144),	-- Shade of Eranikus kills (Sunken Temple)
+ach(6145),	-- Overlord Wyrmthalak kills (Lower Blackrock Spire)
+ach(6146),	-- King Gordok kills (Dire Maul)
+ach(6786),	-- High Inquisitor Whitemane kills (Scarlet Monastery)
+ach(15027),	-- Bazzalan kills (Ragefire Chasm)
+ach(15028),	-- Mutanus the Devourer kills (Wailing Caverns)
+ach(15029),	-- Bazil Thredd kills (Stormwind Stockade)
+ach(15030),	-- Darkmaster Gandling kills (Scholomance)
+ach(15031),	-- Baron Rivendare kills (Stratholme)
+ach(63570),	-- Edwin VanCleef Kills (Deadmines) \\ Edwin Vancleef Kills (Deadmines)
+ach(63571),	-- Rath'mael Kills (Ruins of Lordaeron)
+ach(63572),	-- Shade of the Archmage Kills (City of Dalaran)
+ach(63573),	-- Durgen Dirgehammer Kills (Hall of Thanes)
+ach(63574),	-- Nanaya Kills (Shaper's Terrace)
+ach(63575),	-- Blazeroar Kills (Alcaz Prison)
+ach(63580),	-- The Wild King kills (Hyjal Summit)
+ach(63581),	-- Sonya Darkhallow Kills (Barrow Deeps)
+ach(63589),	-- Lyn the Ignored Kills (City of Dalaran)
+ach(63590),	-- Cinder Kills (Shaper's Terrace)
+ach(63592),	-- Bolt Kills (Shaper's Terrace)
+ach(63593),	-- Snowtalon Kills (Shaper's Terrace)
+ach(64176),	-- Darkspear Islands victories \\ Darkspear Island victories
+ach(64179),	-- Darkspear Islands battles
+ach(64180),	-- Darkspear Islands Honorable Kills
+ach(64181),	-- Darkspear Islands Killing Blows \\ Darkspear Island Killing Blows
+ach(64182),	-- Deaths in Darkspear Islands
+ach(64183),	-- Total deaths in 20-player raids
+ach(64184),	-- Total 40-player raids entered
+ach(64185),	-- Total deaths in 40-player raids
+1.60.1.70170
+ach(64208),	-- <Hidden> Completed New Player Experience (Account)

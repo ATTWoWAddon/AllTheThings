@@ -8,18 +8,12 @@ local _, app = ...;
 -- Capability to add to and run a sequence of Functions with a specific allotment being processed individually each frame
 
 -- Global locals
+--- @type function,function,function,function,function,function,function,function,function,function,function,
 local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer_After,GetTimePreciseSec =
 	  math.max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer.After,GetTimePreciseSec
+--- @type function,function,function,function,
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
-
-local function PrintError(err, source, co)
-	app.print(app.Modules.Color.Colorize("ERROR:",app.Colors.ChatLinkError),source,":",err)
-	if co then
-		local instanceTrace = debugstack(co);
-		print(instanceTrace)
-	end
-end
 
 local function wipearray(t, max)
 	local c = math_max(#t, max or 0)
@@ -36,6 +30,7 @@ local QueueStack;
 -- passing the corresponding Stack param to each called Function.
 -- Any Functions which do not return a status will be removed
 local StackCo
+local StackIndex = 1
 local function SetStackCo()
 	-- app.PrintDebug("SetStackCo")
 	StackCo = c_create(function()
@@ -48,10 +43,11 @@ local function SetStackCo()
 				status, err = pcall(f, p);
 				-- Function call has an error or it is not continuing, remove it from the Stack
 				if not status or not err then
-					if not status then PrintError(err, "StackCo", StackCo) end
+					if not status then app.PrintError(err, "StackCo", StackCo) end
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);
+					StackIndex = StackIndex - 1
 				end
 			end
 			-- app.PrintDebug("StackCo:Done",f,p)
@@ -73,7 +69,7 @@ local function RunStack()
 	if c_status(StackCo) == "dead" then SetStackCo() end
 	RunningStack = nil;
 	local ok, err = pcall(c_resume, StackCo);
-	if not ok then PrintError(err, "RunStack", StackCo) end
+	if not ok then app.PrintError(err, "RunStack", StackCo) end
 end
 QueueStack = function()
 	-- app.PrintDebug("QueueStackStatus:",RunningStack and "REPEAT" or "FIRST",c_status(StackCo))
@@ -83,8 +79,9 @@ QueueStack = function()
 end
 -- Accepts a param and Function which will execute on the following frame using the provided param
 local function Push(param, name, func)
-	Stack[#Stack + 1] = func;
-	StackParams[#StackParams + 1] = param or 1;
+	Stack[StackIndex] = func;
+	StackParams[StackIndex] = param or 1;
+	StackIndex = StackIndex + 1
 	-- app.PrintDebug("Push @",#StackParams,name,func,param)
 	QueueStack();
 end
@@ -105,19 +102,25 @@ local CoroutineCache = setmetatable({}, {
 		return co;
 	end
 });
+local InUse = {} -- co -> name, while checked out
 local function GetCoroutine(func, name)
-	local co = CoroutineCache[func];
+	local co = CoroutineCache[func]
+	if InUse[co] then
+		-- pooled co already checked out elsewhere; make a one-off instead of colliding
+		co = c_create(function() while true do func() c_yield(false) end end)
+		app.report("Pooled coroutine re-use warning!",func,name)
+	end
 	-- Mark this name/coroutine until the coroutine is returned
-	CoroutineCache[name] = true;
-	CoroutineCache[co] = name;
-	return co;
+	CoroutineCache[name] = true
+	InUse[co] = name
+	return co
 end
 -- Allows freeing a coroutine and the respective name used to create it initially
 local function ReturnCoroutine(co)
-	local name = CoroutineCache[co];
+	local name = InUse[co]
 	-- app.PrintDebug("CO:Return",name,co)
-	CoroutineCache[name] = nil;
-	CoroutineCache[co] = nil;
+	CoroutineCache[name] = nil
+	InUse[co] = nil
 end
 -- We will make this a weak-value cache, such that the Push methods can be cleaned up/recreated if needed
 local _PushQueue = setmetatable({}, {__mode = "v",})
@@ -147,7 +150,7 @@ local PushQueue = setmetatable({}, {
 						-- app.PrintDebug("PUSH.Run.Yielded",co)
 						return true;
 					end
-				else PrintError(err, "PUSH.Run", co) end
+				else app.PrintError(err, "CO:resume", co) end
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
 			_PushQueue[#_PushQueue + 1] = pushfunc;
@@ -210,10 +213,14 @@ local function CreateRunner(name)
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
 	local RunnerCoroutine
 	local function err(msg)
-		PrintError(msg, "Runner."..name, RunnerCoroutine)
+		app.PrintError(msg, "Runner."..name, RunnerCoroutine)
 	end
 	local SetRunnerCoroutine = function()
 		RunnerCoroutine = c_create(function()
+			local FunctionQueue = FunctionQueue
+			local ParameterBucketQueue = ParameterBucketQueue
+			local ParameterSingleQueue = ParameterSingleQueue
+			local Config = Config
 			while true do
 				local frameStartTime = Config.DebugFrameTime and GetTimePreciseSec() or nil
 				perFrame = Config.PerFrame
@@ -233,7 +240,7 @@ local function CreateRunner(name)
 					end
 					-- app.PrintDebug("FRC.Done."..name,RunIndex)
 					if perFrame <= 0 then
-						-- app.PrintDebug("FRC.Yield."..name)
+						-- app.PrintDebug("FRC.Yield."..name,"Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
 						if frameStartTime then
 							local diff = math.floor(100000 * (GetTimePreciseSec() - frameStartTime)) / 100
 							app.PrintDebug("FRC",name,"FrameTime","#",Config.PerFrame,diff,"ms Stutter @", math.ceil(1000 / diff))
@@ -278,18 +285,40 @@ local function CreateRunner(name)
 				-- app.PrintDebug("Stack.Run.Yielded",Name)
 				return true;	-- This means more work is required.
 			end
-		else PrintError(err, Name, RunnerCoroutine) end
+		else app.PrintError(err, Name, RunnerCoroutine) end
 	end
 
 	-- Provides a utility which will process a given number of functions each frame in a Queue
 	local Runner = {
 		-- Adds a function to be run with any necessary parameters
+		-- Can be called with no parameters to simply begin the Runner's queue
 		Run = function(func, ...)
+			if func then
+				if type(func) ~= "function" then
+					error("Must be a 'function' type!")
+				end
+				FunctionQueue[QueueIndex] = func;
+				-- app.PrintDebug("FR.Run."..name,QueueIndex,...)
+				local arrs = select("#", ...);
+				if arrs == 1 then
+					ParameterSingleQueue[QueueIndex] = ...;
+				elseif arrs > 1 then
+					ParameterBucketQueue[QueueIndex] = { ... };
+				end
+				QueueIndex = QueueIndex + 1;
+			end
+			-- Only push the coroutine onto the Stack once until it is completed
+			if Pushed then return; end
+			Pushed = true;
+			Push(nil, Name, StackRun);
+		end,
+		-- Adds a function with any necessary parameters but does not Run it yet
+		Queue = function(func, ...)
 			if type(func) ~= "function" then
 				error("Must be a 'function' type!")
 			end
 			FunctionQueue[QueueIndex] = func;
-			-- app.PrintDebug("FR.Add."..name,QueueIndex,...)
+			-- app.PrintDebug("FR.Queue."..name,QueueIndex,...)
 			local arrs = select("#", ...);
 			if arrs == 1 then
 				ParameterSingleQueue[QueueIndex] = ...;
@@ -297,10 +326,6 @@ local function CreateRunner(name)
 				ParameterBucketQueue[QueueIndex] = { ... };
 			end
 			QueueIndex = QueueIndex + 1;
-			-- Only push the coroutine onto the Stack once until it is completed
-			if Pushed then return; end
-			Pushed = true;
-			Push(nil, Name, StackRun);
 		end,
 		-- Set a function to be run once the queue is empty. This function takes no parameters.
 		OnEnd = function(func)

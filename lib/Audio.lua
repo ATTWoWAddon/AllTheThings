@@ -3,6 +3,9 @@ local _, app = ...;
 local api = {};
 app.Audio = api;
 
+local type, time, math_random, PlaySound, PlaySoundFile
+	= type, time, math.random, PlaySound, PlaySoundFile
+
 -- Sound Pack Management
 local EventHandlers, SoundPacks, CurrentSoundPack = {}, {}, nil;
 function api:ActivateSoundPack(name, noerror)
@@ -106,7 +109,8 @@ local SoundDelays = setmetatable({}, {
 	end
 });
 local function PlayAudio(soundType, setting)
-	if not setting or app.Settings:GetTooltipSetting(setting) then
+	local settings = app.Settings
+	if not setting or settings:GetTooltipSetting(setting) then
 		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
 		local now = time();
 		if SoundDelays[soundType] < now then
@@ -115,9 +119,9 @@ local function PlayAudio(soundType, setting)
 				local audioCount = #targetAudio;
 				if audioCount > 0 then
 					SoundDelays[soundType] = now + 1;
-					local soundFile = targetAudio[math.random(1, audioCount)];
+					local soundFile = targetAudio[math_random(1, audioCount)];
 					if soundFile then
-						(type(soundFile) == "string" and PlaySoundFile or PlaySound)(soundFile, app.Settings:GetTooltipSetting("Channel"));
+						(type(soundFile) == "string" and PlaySoundFile or PlaySound)(soundFile, settings:GetTooltipSetting("Channel"));
 						-- app.PrintDebug("PlayAudio",soundFile)
 						return true;
 					end

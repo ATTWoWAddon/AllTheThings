@@ -1,9 +1,10 @@
 ﻿---@diagnostic disable: deprecated
-local appName, _ = ...;
+local appName, _ = ...
+_.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local cu,x=_.CreateCurrencyClass,_.CreateExpansion;
-_.Categories.HiddenCurrencyTriggers={
-x(11,{
-x(11.0002,{awp=110002,g={
+categories.HiddenCurrencyTriggers={
+x(11,{awp=110002,g={
+x(11.0002,{
 cu(3002),
 cu(3003),
 cu(3004),
@@ -71,16 +72,16 @@ cu(3103),
 cu(3104),
 cu(3115),
 cu(3142),
-cu(3143)}}),
+cu(3143)}),
 x(11.0005,{awp=110005,g={
 cu(3144),
 cu(3145),
 cu(3146)}}),
 x(11.0007,{awp=110007,g={
 cu(3139),
-cu(3180)}})}),
-x(12),
-x(10,{
+cu(3180)}})}}),
+x(12,{awp=120001}),
+x(10,{awp=100002,g={
 x(10.0206,{awp=100206,g={
 cu(3010),
 cu(3011)}}),
@@ -110,4 +111,5 @@ cu(2874),
 cu(2875),
 cu(2876),
 cu(3000),
-cu(3001)}})})};
+cu(3001)}})}})}
+end)

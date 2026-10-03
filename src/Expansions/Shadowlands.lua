@@ -47,6 +47,8 @@ do
 			end,
 			lvl = function(t) return 60; end,
 		});
+
+		app.AddGenericFieldConverter(KEY);
 		app.AddEventHandler("OnRefreshCollections", function()
 			local state
 			local saved, none = {}, {}
@@ -61,8 +63,6 @@ do
 			-- Character Cache
 			app.SetBatchCached(CACHE, saved, 1)
 			app.SetBatchCached(CACHE, none)
-			-- Account Cache (removals handled by Sync)
-			app.SetBatchAccountCached(CACHE, saved, 1)
 		end);
 		app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 			if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
@@ -70,6 +70,9 @@ do
 		end);
 		-- No known 'on learned' Event
 		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
+		app.AddEventHandler("OnLoad", function()
+			app.AddDynamicCategoryHeader({ id = "conduitID", name = app.WOWAPI.GetSpellName(348869) .. " (" .. EXPANSION_NAME8 .. ")", icon = 3601566 });
+		end);
 	else
 		app.CreateConduit = app.CreateUnimplementedClass("Conduit", KEY);
 	end
@@ -88,6 +91,8 @@ do
 			collected = function(t) return app.IsAccountCached(CACHE, t[KEY]) and 1 end,
 			lvl = function(t) return 60; end,
 		});
+
+		app.AddGenericFieldConverter(KEY);
 		app.AddEventHandler("OnRefreshCollections", function()
 			local check
 			local saved, none = {}, {}
@@ -111,6 +116,9 @@ do
 			app.SetThingCollected(KEY, id, true, true)
 		end);
 		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
+		app.AddEventHandler("OnLoad", function()
+			app.AddDynamicCategoryHeader({ id = "runeforgepowerID", name = LOOT_JOURNAL_LEGENDARIES .. " (" .. EXPANSION_NAME8 .. ")", icon = app.asset("Weapon_Type_Legendary") });
+		end);
 	else
 		app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", KEY);
 	end

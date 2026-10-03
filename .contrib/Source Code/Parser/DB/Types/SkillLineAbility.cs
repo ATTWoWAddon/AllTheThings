@@ -17,7 +17,6 @@ namespace ATT.DB.Types
         public long TrivialSkillLineRankHigh { get; set; }
         [ExportableData("skillID")]
         public long SkillupSkillLineID { get; set; }
-
         [ExportableData("recipeID")]
         public long SpellID => Spell;
         [ExportableData("learnedAt")]

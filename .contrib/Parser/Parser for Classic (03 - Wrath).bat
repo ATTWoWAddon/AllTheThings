@@ -1,1 +1,0 @@
-"Parser.exe" config=".config/classic/03 - Wrath.config"

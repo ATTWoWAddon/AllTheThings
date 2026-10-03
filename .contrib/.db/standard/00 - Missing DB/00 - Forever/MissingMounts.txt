@@ -1,0 +1,91 @@
+1.60.1.69876
+mount(436329),	-- Golden Sabercat
+mount(1277329),	-- Green Skeletal Horse
+mount(1277330),	-- Dark Skeletal Horse
+mount(1277336),	-- Purple Skeletal Horse
+mount(1279399),	-- Summon Warhorse
+mount(1286011),	-- Swift Empyrean Galestrider
+mount(1286021),	-- Swift Regal Galestrider
+mount(1286022),	-- Swift Stormy Galestrider
+mount(1286024),	-- Empyrean Galestrider
+mount(1286025),	-- Regal Galestrider
+mount(1286026),	-- Stormy Galestrider
+mount(1290805),	-- Translocation
+mount(1292482),	-- Swift Hyjal Stag
+mount(1294897),	-- Striped Dawnsaber
+mount(1295387),	-- Orchre Skeletal Warhorse
+mount(1295678),	-- Umber Galestrider
+mount(1295683),	-- Swift Umber Galestrider
+mount(1296534),	-- Summon Forsaken Charger
+mount(1298450),	-- White Kodo
+mount(1298496),	-- Black Skeletal Horse
+mount(1301636),	-- Pack Kodo
+mount(1302661),	-- Spectral Bear
+mount(1303075),	-- Lavender Kodo
+mount(1303215),	-- Caravan Kodo
+mount(1309208),	-- Cerulean Prideclaw
+mount(1309246),	-- [PH] Purple Prideclaw
+mount(1309248),	-- [PH] Brown Prideclaw
+mount(1309250),	-- [PH] White Blue Prideclaw
+mount(1309268),	-- Black Warden Saber Mount
+mount(1309270),	-- Brown Warden Saber Mount
+mount(1309271),	-- Gray Warden Saber Mount
+mount(1309272),	-- White Warden Saber Mount
+mount(1309346),	-- Black Devilsaur Mount
+mount(1309347),	-- Blue Devilsaur Mount
+mount(1309348),	-- Green Devilsaur Mount
+mount(1309349),	-- Purple Devilsaur Mount
+mount(1309350),	-- White Devilsaur Mount
+mount(1309377),	-- Black Druid Moose Mount
+mount(1309379),	-- White Druid Moose Mount
+mount(1309380),	-- Green Druid Moose Mount
+mount(1309381),	-- Gray Druid Moose Mount
+mount(1309405),	-- Veteran Adventurer's Loyal Companion
+
+
+
+
+Missing in MountDB.lua
+
+1.60.1.69876
+mount(1277329),	-- Green Skeletal Horse
+mount(1277330),	-- Dark Skeletal Horse
+mount(1277336),	-- Purple Skeletal Horse
+mount(1279399),	-- Summon Warhorse
+mount(1286011),	-- Swift Empyrean Galestrider
+mount(1286021),	-- Swift Regal Galestrider
+mount(1286022),	-- Swift Stormy Galestrider
+mount(1286024),	-- Empyrean Galestrider
+mount(1286025),	-- Regal Galestrider
+mount(1286026),	-- Stormy Galestrider
+mount(1290805),	-- Translocation
+mount(1292482),	-- Swift Hyjal Stag
+mount(1294897),	-- Striped Dawnsaber
+mount(1295387),	-- Orchre Skeletal Warhorse
+mount(1295678),	-- Umber Galestrider
+mount(1295683),	-- Swift Umber Galestrider
+mount(1296534),	-- Summon Forsaken Charger
+mount(1298450),	-- White Kodo
+mount(1298496),	-- Black Skeletal Horse
+mount(1301636),	-- Pack Kodo
+mount(1302661),	-- Spectral Bear
+mount(1303075),	-- Lavender Kodo
+mount(1303215),	-- Caravan Kodo
+mount(1309208),	-- Cerulean Prideclaw
+mount(1309246),	-- [PH] Purple Prideclaw
+mount(1309248),	-- [PH] Brown Prideclaw
+mount(1309250),	-- [PH] White Blue Prideclaw
+mount(1309268),	-- Black Warden Saber Mount
+mount(1309270),	-- Brown Warden Saber Mount
+mount(1309271),	-- Gray Warden Saber Mount
+mount(1309272),	-- White Warden Saber Mount
+mount(1309346),	-- Black Devilsaur Mount
+mount(1309347),	-- Blue Devilsaur Mount
+mount(1309348),	-- Green Devilsaur Mount
+mount(1309349),	-- Purple Devilsaur Mount
+mount(1309350),	-- White Devilsaur Mount
+mount(1309377),	-- Black Druid Moose Mount
+mount(1309379),	-- White Druid Moose Mount
+mount(1309380),	-- Green Druid Moose Mount
+mount(1309381),	-- Gray Druid Moose Mount
+mount(1309405),	-- Veteran Adventurer's Loyal Companion

@@ -1,18 +1,13 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
-local tinsert, math_floor
-	= tinsert, math.floor;
+local math_floor
+	= math.floor;
 local Colorize = app.Modules.Color.Colorize;
 
 -- Local functions
 local DefaultRWP = ((math.ceil(app.GameBuildVersion / 10000) + 1) * 10000) - 1;
 local ExcludeNonCollectibles, MaximumRWP;
-function RemovedWithPatchFilter(group)
-	if group.rwp and group.rwp < MaximumRWP and (not ExcludeNonCollectibles or group.collectible) then
-		return true;
-	end
-end
 local function GetPatchString(patch)
 	patch = tonumber(patch)
 	return patch and (math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 100) .. "." .. (patch % 10))
@@ -22,16 +17,18 @@ local function ParseCommand(self, cmd)
 		cmd = cmd:lower();
 		local patch = 0;
 		local major, minor, build = ("."):split(cmd);
+		major = tonumber(major)
+		if not major then return 0; end
 		if not minor then
 			if cmd == "default" then
 				patch = DefaultRWP;
 			elseif cmd == "classic" then
 				patch = 19999;
-			elseif cmd == "tbc" then
+			elseif cmd == "tbc" or cmd == "bc" then
 				patch = 29999;
 			elseif cmd == "wrath" then
 				patch = 39999;
-			elseif cmd == "cata" then
+			elseif cmd == "cataclysm" or cmd == "cata" then
 				patch = 49999;
 			elseif cmd == "mop" then
 				patch = 59999;
@@ -47,7 +44,7 @@ local function ParseCommand(self, cmd)
 				patch = 109999;
 			elseif cmd == "tww" then
 				patch = 119999;
-			elseif cmd == "midnight" then
+			elseif cmd == "midnight" or cmd == "mid" then
 				patch = 129999;
 			elseif cmd == "any" or cmd == "all" then
 				patch = 9999999999;
@@ -72,11 +69,36 @@ local function ParseCommand(self, cmd)
 	end
 end
 
+-- Search Info
+local SearchInfo = {
+	field = "rwp",
+	value = app.GameBuildVersion,
+	-- drops = {},
+	searchcriteria = {
+		SearchValueCriteria = {
+			-- only include 'rwp' search results where the value is >= the current game version
+			function(o,field,value)
+				local rwp = o[field]
+				if not rwp then return end
+				return rwp >= value and rwp <= MaximumRWP
+			end
+		},
+		__RecursiveFilterCriteria = {
+			-- Exclusion of 'Things' which are non-collectible
+			function(o) return o.g or o.collectible end
+		},
+	},
+}
+local function UpdateRecursiveFilterCriteria()
+	SearchInfo.searchcriteria.RecursiveFilterCriteria = ExcludeNonCollectibles and SearchInfo.searchcriteria.__RecursiveFilterCriteria or nil
+end
 
 -- Implementation
 app:CreateWindow("Future Unobtainables", {
 	Commands = { "attrwp" },
-	OnCommand = function(self, cmd)
+	RootCommands = { "rwp" },
+	OnCommand = function(self, args, params)
+		local cmd = args[1];
 		if cmd and cmd ~= "" then
 			ParseCommand(self, cmd);
 			if self:IsShown() then
@@ -87,6 +109,7 @@ app:CreateWindow("Future Unobtainables", {
 	OnLoad = function(self, settings)
 		ExcludeNonCollectibles = settings.ExcludeNonCollectibles;
 		if ExcludeNonCollectibles == nil then ExcludeNonCollectibles = true; end
+		UpdateRecursiveFilterCriteria()
 		MaximumRWP = settings.MaximumRWP;
 		if not MaximumRWP or DefaultRWP > MaximumRWP then
 			MaximumRWP = DefaultRWP;
@@ -98,14 +121,15 @@ app:CreateWindow("Future Unobtainables", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			{	-- Exclude Non-Collectibles Button
-				text = "Exclude Non-Collectibles",
+			app.CreateRawText(L.FUTURE_UNOBTAINABLE_EXCLUDE_NONCOLLECTIBLES, {
 				icon = 134941,
-				description = "Press this button to toggle excluding non-collectible items such as Thrown weapons and Relic items.",
+				description = L.FUTURE_UNOBTAINABLE_NONCOLLECTIBLE_DESC,
 				visible = true,
 				priority = 6,
+				SortPriority = -1.1,
 				OnClick = function(row, button)
 					ExcludeNonCollectibles = not ExcludeNonCollectibles;
+					UpdateRecursiveFilterCriteria()
 					wipe(self.data.g);
 					self:Rebuild();
 					return true;
@@ -114,51 +138,54 @@ app:CreateWindow("Future Unobtainables", {
 					data.saved = ExcludeNonCollectibles;
 					return true;
 				end,
-			},
-			{	-- Maximum Patch
-				prefix = "Maximum Patch: ",
-				text = RETRIEVING_DATA,
+			}),
+			app.CreateRawText(L.FUTURE_UNOBTAINABLE_MAXIMUM_PATCH, {
 				icon = 134941,
-				description = "Press this button to change the maximum removed with patch value.\n\nChanging this value will filter out items that get removed after the given patch.",
+				description = L.FUTURE_UNOBTAINABLE_MAX_PATCH_DESC,
 				visible = true,
 				priority = 6,
+				SortPriority = -1,
 				OnClick = function(row, button)
-					app:ShowPopupDialogWithEditBox("Please enter a new maximum RWP", MaximumRWP, function(cmd)
+					app:ShowPopupDialogWithEditBox(L.FUTURE_UNOBTAINABLE_MAX_RWP_POPUP, MaximumRWP, function(cmd)
 						ParseCommand(self, cmd);
 					end);
 					return true;
 				end,
 				OnUpdate = function(data)
-					data.text = data.prefix .. Colorize(GetPatchString(MaximumRWP), app.Colors.RemovedWithPatch);
+					data.summaryText = Colorize(GetPatchString(MaximumRWP), app.Colors.RemovedWithPatch);
 					return true;
 				end,
-			},
+			}),
 		};
-		self.data = {
-			text = L.FUTURE_UNOBTAINABLE,
+		self:SetData(app.CreateRawText(L.FUTURE_UNOBTAINABLE, {
 			icon = app.asset("Interface_Future_Unobtainable"),
 			description = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			visible = true,
 			expanded = true,
+			SortType = "Global",
 			back = 1,
 			indent = 0,
 			g = { },
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
-					for i,option in ipairs(options) do
-						option.parent = data;
-						tinsert(g, option);
-					end
-					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, RemovedWithPatchFilter);
-					if results and #results > 0 then
-						for i,result in ipairs(results) do
-							tinsert(g, result);
+					app.NestObjects(t, options);
+					local results = app:BuildSearchResponseRetailStyle(SearchInfo.field, SearchInfo.value, SearchInfo.drops, SearchInfo.searchcriteria)
+					app.NestObjects(t, results);
+					t.SortType = "Global";
+					-- sort children of top level groups
+					for i = 1, #g do
+						local child = g[i]
+						if child.g then
+							child.SortType = "expansion"
 						end
-						self:AssignChildren();
 					end
+					-- don't fill into groups if they are popped out
+					t.skipFull = true
+					app.NestObject(t, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
+					self:AssignChildren();
 				end
 			end,
-		};
+		}));
 	end,
 });

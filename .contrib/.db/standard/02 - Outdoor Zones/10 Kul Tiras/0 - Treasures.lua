@@ -1,0 +1,295 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
+root(ROOTS.Zones, {
+	m(KUL_TIRAS, {
+		n(TREASURES, {
+			o_repeated(bubbleDownFiltered({	-- Small Treasure Chest
+				["isDaily"] = true,
+			},FILTERFUNC_questID,{
+				-- Items
+				i(161207),	-- Admiral's Black Rum
+				i(163097),	-- Carved Rabbit Effigy
+				i(161209),	-- Coven Dream Catcher
+				i(163092),	-- Embroidered Falconry Hood
+				i(163091),	-- Jeweled Spyglass
+				i(161210),	-- Homemade Child's Doll
+				i(163096),	-- Lead-Glass Hand Mirror
+				i(161201),	-- Mermaid's Looking Glass
+				i(161204),	-- Oily Glass Eyeball
+				i(161198),	-- Old Sailor's Almanac
+				i(161213),	-- Sagehold Hymnal
+				i(161203),	-- Shanty Sheet Music
+				i(161211),	-- Ship-in-a-Bottle
+				i(161199),	-- Silver-Plated Tankard
+				i(163093),	-- Witch's Ritual Chalk
+				-- Objects
+				o(291225, {	-- Small Treasure Chest
+					["questID"] = 51907,
+					["coords"] = {
+						{ 29.4, 22.6, DRUSTVAR },
+						{ 30.0, 26.9, DRUSTVAR },
+					},
+				}),
+				o(291227, {	-- Small Treasure Chest
+					["questID"] = 51911,
+					["coords"] = {
+						{ 25.5, 40.5, DRUSTVAR },
+						{ 25.6, 36.6, DRUSTVAR },
+					},
+				}),
+				o(291217, {	-- Small Treasure Chest
+					["coord"] = { 67.6, 57.5, DRUSTVAR },
+				}),
+				o(291223, {	-- Small Treasure Chest
+					--["questID"] = 51899,
+					["coords"] = {
+						{ 69.6, 64.9, DRUSTVAR },
+						{ 71.6, 58.1, DRUSTVAR },
+					},
+				}),
+				o(291224, {	-- Small Treasure Chest
+					["questID"] = 51902,
+					["coords"] = {
+						{ 31.0, 17.1, DRUSTVAR },
+						{ 33.3, 16.7, DRUSTVAR },
+					},
+				}),
+				o(291228, {	-- Small Treasure Chest
+					["questID"] = 51912,
+					["coords"] = {
+						{ 18.5, 54.3, DRUSTVAR },
+					},
+				}),
+				o(291229, {	-- Small Treasure Chest
+					["questID"] = 51913,
+					["coords"] = {
+						{ 32.0, 57.6, DRUSTVAR },
+					},
+				}),
+				o(291230, {	-- Small Treasure Chest
+					["questID"] = 51914,
+					["coords"] = {
+						{ 38.1, 63.5, DRUSTVAR },
+					},
+				}),
+				o(291204, {	-- Small Treasure Chest
+					["coord"] = { 55.3, 27.1, DRUSTVAR },
+				}),
+				o(291201, {	-- Small Treasure Chest
+					["coord"] = { 66.1, 24.2, DRUSTVAR },
+				}),
+				o(287531, {	-- Small Treasure Chest
+					["questID"] = 51184,
+					["coords"] = {
+						{ 61.3, 63.2, STORMSONG_VALLEY },
+						{ 64.9, 60.2, STORMSONG_VALLEY },
+					},
+				}),
+				o(291244, {	-- Small Treasure Chest
+					["questID"] = 51927,
+					["coords"] = {
+						{ 69.9, 52.6, STORMSONG_VALLEY },
+						{ 70.2, 59.1, STORMSONG_VALLEY },
+						{ 70.6, 51.2, STORMSONG_VALLEY },
+					},
+				}),
+				o(291246, {	-- Small Treasure Chest
+					["questID"] = 51930,
+					["coords"] = {
+						{ 66.1, 45.3, STORMSONG_VALLEY },
+						{ 66.8, 43.7, STORMSONG_VALLEY },
+						{ 66.9, 42.6, STORMSONG_VALLEY },
+					},
+				}),
+				o(291254, {	-- Small Treasure Chest
+					["questID"] = 51935,
+					["coords"] = {
+						{ 59.3, 42.5, STORMSONG_VALLEY },
+						{ 59.8, 39.1, STORMSONG_VALLEY },
+						{ 62.0, 40.1, STORMSONG_VALLEY },
+						{ 61.2, 40.3, STORMSONG_VALLEY },
+					},
+				}),
+				o(291255, {	-- Small Treasure Chest
+					["questID"] = 51938,
+					["coords"] = {
+						{ 74.1, 32.1, STORMSONG_VALLEY },
+						{ 76.2, 37.1, STORMSONG_VALLEY },
+					},
+				}),
+				o(291257, {	-- Small Treasure Chest
+					["questID"] = 51939,
+					["coords"] = {
+						{ 64.4, 70.2, STORMSONG_VALLEY },
+						{ 65.9, 75.7, STORMSONG_VALLEY },
+						{ 66.4, 68.2, STORMSONG_VALLEY },
+						{ 67.3, 78.0, STORMSONG_VALLEY },
+						{ 68.1, 71.4, STORMSONG_VALLEY },
+						{ 68.8, 78.8, STORMSONG_VALLEY },
+						{ 69.2, 77.2, STORMSONG_VALLEY },
+						{ 69.4, 68.1, STORMSONG_VALLEY },
+						{ 71.2, 69.4, STORMSONG_VALLEY },
+						{ 72.0, 65.9, STORMSONG_VALLEY },
+						{ 72.1, 68.7, STORMSONG_VALLEY },
+						{ 72.7, 72.8, STORMSONG_VALLEY },
+						{ 73.3, 67.5, STORMSONG_VALLEY },
+						{ 74.1, 67.8, STORMSONG_VALLEY },
+					},
+				}),
+				o(291258, {	-- Small Treasure Chest
+					["questID"] = 51940,
+					["coords"] = {
+						{ 47.7, 64.7, STORMSONG_VALLEY },
+						{ 49.8, 66.1, STORMSONG_VALLEY },
+						{ 50.4, 62.6, STORMSONG_VALLEY },
+						{ 66.2, 40.4, STORMSONG_VALLEY },
+					},
+				}),
+				o(291259, {	-- Small Treasure Chest
+					["questID"] = 51941,
+					["coords"] = {
+						{ 39.0, 58.2, STORMSONG_VALLEY },
+						{ 42.0, 60.7, STORMSONG_VALLEY },
+					},
+				}),
+				o(291263, {	-- Small Treasure Chest
+					["questID"] = 51942,
+					["coords"] = {
+						{ 51.2, 47.8, 1183 },
+						{ 57.8, 54.1, 1183 },
+					},
+				}),
+				o(291264, {	-- Small Treasure Chest
+					["questID"] = 51943,
+					["coords"] = {
+						{ 34.3, 75.9, STORMSONG_VALLEY },
+						{ 34.1, 69.4, STORMSONG_VALLEY },
+					},
+				}),
+				o(291265, {	-- Small Treasure Chest
+					["questID"] = 51944,
+					["coords"] = {
+						{ 26.2, 61.9, STORMSONG_VALLEY },
+						{ 31.4, 40.6, STORMSONG_VALLEY },
+						{ 32.1, 51.6, STORMSONG_VALLEY },
+					},
+				}),
+				o(291266, {	-- Small Treasure Chest
+					["questID"] = 51945,
+					["coords"] = {
+						{ 37.9, 44.1, STORMSONG_VALLEY },
+						{ 39.0, 44.7, STORMSONG_VALLEY },
+					},
+				}),
+				o(291267, {	-- Small Treasure Chest
+					["questID"] = 51946,
+					["coords"] = {
+						{ 57.6, 50.9, STORMSONG_VALLEY },
+						{ 60.9, 51.2, STORMSONG_VALLEY },
+					},
+				}),
+				o(273900, {	-- Small Treasure Chest
+					["questID"] = 48593,
+					["coords"] = {
+						{ 76.8, 75.5, TIRAGARDE_SOUND },
+						{ 76.9, 75.4, TIRAGARDE_SOUND },
+						{ 77.1, 77.3, TIRAGARDE_SOUND },
+						{ 77.9, 78.4, TIRAGARDE_SOUND },
+						{ 78.4, 76.2, TIRAGARDE_SOUND },
+						{ 78.5, 76.3, TIRAGARDE_SOUND },
+						{ 79.0, 79.2, TIRAGARDE_SOUND },
+						{ 81.7, 73.1, TIRAGARDE_SOUND },
+						{ 82.1, 74.0, TIRAGARDE_SOUND },
+						{ 82.6, 75.6, TIRAGARDE_SOUND },
+						{ 83.3, 74.7, TIRAGARDE_SOUND },
+						{ 83.4, 72.0, TIRAGARDE_SOUND },
+						{ 83.5, 72.1, TIRAGARDE_SOUND },
+						{ 83.9, 73.9, TIRAGARDE_SOUND },
+					},
+				}),
+				o(273910, {	-- Small Treasure Chest
+					["questID"] = 48599,
+					["coords"] = {
+						{ 41.9, 26.5, TIRAGARDE_SOUND },
+					},
+				}),
+				o(273956, {	-- Small Treasure Chest
+					["questID"] = 48612,
+					["coords"] = {
+						{ 59.7, 23.0, TIRAGARDE_SOUND },
+						{ 57.4, 22.2, TIRAGARDE_SOUND },
+					},
+				}),
+				o(275070, {	-- Small Treasure Chest
+					["questID"] = 48617,
+					["coords"] = {
+						{ 56.2, 18.9, TIRAGARDE_SOUND },
+						{ 58.5, 14.6, TIRAGARDE_SOUND },
+					},
+				}),
+				o(275071, {	-- Small Treasure Chest
+					["questID"] = 48618,
+					["coords"] = {
+						{ 87.3, 73.8, TIRAGARDE_SOUND },
+						{ 87.8, 75.9, TIRAGARDE_SOUND },
+						{ 88.0, 79.6, TIRAGARDE_SOUND },
+						{ 88.4, 78.4, TIRAGARDE_SOUND },
+						{ 88.4, 78.5, TIRAGARDE_SOUND },
+						{ 88.5, 78.4, TIRAGARDE_SOUND },
+						{ 88.5, 78.5, TIRAGARDE_SOUND },
+						{ 88.7, 72.8, TIRAGARDE_SOUND },
+						{ 88.9, 79.9, TIRAGARDE_SOUND },
+						{ 89.0, 76.3, TIRAGARDE_SOUND },
+						{ 89.3, 71.1, TIRAGARDE_SOUND },
+						{ 89.9, 78.2, TIRAGARDE_SOUND },
+						{ 90.0, 75.2, TIRAGARDE_SOUND },
+					},
+				}),
+				o(275076, {	-- Small Treasure Chest
+					["questID"] = 48621,
+					["coords"] = {
+						{ 45.4, 22.3, TIRAGARDE_SOUND },
+						{ 47.6, 20.5, TIRAGARDE_SOUND },
+					},
+				}),
+				o(275074, {	-- Small Treasure Chest
+					["coord"] = { 72.3, 17.0, TIRAGARDE_SOUND },
+				}),
+				o(273917, {	-- Small Treasure Chest
+					["coords"] = {
+						{ 78.1, 49.0, TIRAGARDE_SOUND },
+						{ 78.8, 47.6, TIRAGARDE_SOUND },
+						{ 79.2, 50.4, TIRAGARDE_SOUND },
+						{ 79.2, 50.5, TIRAGARDE_SOUND },
+						{ 79.5, 45.7, TIRAGARDE_SOUND },
+						{ 79.7, 48.2, TIRAGARDE_SOUND },
+						{ 80.2, 47.2, TIRAGARDE_SOUND },
+						{ 80.4, 49.6, TIRAGARDE_SOUND },
+						{ 80.5, 49.6, TIRAGARDE_SOUND },
+						{ 80.7, 45.8, TIRAGARDE_SOUND },
+						{ 81.3, 49.4, TIRAGARDE_SOUND },
+						{ 82.3, 47.8, TIRAGARDE_SOUND },
+						{ 82.5, 47.8, TIRAGARDE_SOUND },
+					},
+				}),
+				o(273919, {	-- Small Treasure Chest
+					["coord"] = { 70.0, 57.1, TIRAGARDE_SOUND },
+				}),
+				o(273902, {	-- Small Treasure Chest
+					["coords"] = {
+						{ 76.3, 80.9, TIRAGARDE_SOUND },
+						{ 76.6, 81.2, TIRAGARDE_SOUND },
+						{ 76.8, 83.5, TIRAGARDE_SOUND },
+						{ 77.0, 85.5, TIRAGARDE_SOUND },
+						{ 77.4, 85.3, TIRAGARDE_SOUND },
+						{ 77.5, 82.7, TIRAGARDE_SOUND },
+						{ 77.7, 85.0, TIRAGARDE_SOUND },
+						{ 78.0, 80.5, TIRAGARDE_SOUND },
+					},
+				}),
+			})),
+		}),
+	}),
+});

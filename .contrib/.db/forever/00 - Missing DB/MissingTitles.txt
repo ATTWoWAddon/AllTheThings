@@ -1,0 +1,42 @@
+1.60.1.69876
+title(0),	-- %s the Blacksmith
+title(1),	-- %s of the Magram
+title(2),	-- %s of the Gelkis
+title(3),	-- %s the Alchemist
+title(4),	-- %s the Enchanter
+title(5),	-- %s the Engineer
+title(6),	-- %s the Leatherworker
+title(7),	-- %s the Tailor
+title(8),	-- Private %s
+title(9),	-- Corporal %s
+title(10),	-- Sergeant %s
+title(11),	-- Master Sergeant %s
+title(12),	-- Sergeant Major %s
+title(13),	-- Knight %s
+title(14),	-- Knight-Lieutenant %s
+title(15),	-- Knight-Champion %s
+title(16),	-- Lieutenant Commander %s
+title(17),	-- Commander %s
+title(18),	-- Marshal %s
+title(19),	-- Field Marshal %s
+title(20),	-- Grand Marshal %s
+title(21),	-- Scout %s
+title(22),	-- Grunt %s
+title(23),	-- Sergeant %s
+title(24),	-- Senior Sergeant %s
+title(25),	-- First Sergeant %s
+title(26),	-- Stone Guard %s
+title(27),	-- Blood Guard %s
+title(28),	-- Legionnaire %s
+title(29),	-- Centurion %s
+title(30),	-- Champion %s
+title(31),	-- Lieutenant General %s
+title(32),	-- General %s
+title(33),	-- Warlord %s
+title(34),	-- High Warlord %s
+title(35),	-- Knight-Captain %s
+title(36),	-- [DNT] Test %s
+title(37),	-- Master Angler %s
+title(38),	-- %s of the Nightclaw
+title(39),	-- %s the Harbinger of Darkness
+title(111),	-- Bloodsail Admiral %s

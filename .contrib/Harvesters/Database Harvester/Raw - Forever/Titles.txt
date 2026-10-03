@@ -1,0 +1,42 @@
+﻿1.60.1.69876
+0@@@%s the Blacksmith
+1@@@%s of the Magram
+2@@@%s of the Gelkis
+3@@@%s the Alchemist
+4@@@%s the Enchanter
+5@@@%s the Engineer
+6@@@%s the Leatherworker
+7@@@%s the Tailor
+8@@@Private %s
+9@@@Corporal %s
+10@@@Sergeant %s
+11@@@Master Sergeant %s
+12@@@Sergeant Major %s
+13@@@Knight %s
+14@@@Knight-Lieutenant %s
+15@@@Knight-Champion %s
+16@@@Lieutenant Commander %s
+17@@@Commander %s
+18@@@Marshal %s
+19@@@Field Marshal %s
+20@@@Grand Marshal %s
+21@@@Scout %s
+22@@@Grunt %s
+23@@@Sergeant %s
+24@@@Senior Sergeant %s
+25@@@First Sergeant %s
+26@@@Stone Guard %s
+27@@@Blood Guard %s
+28@@@Legionnaire %s
+29@@@Centurion %s
+30@@@Champion %s
+31@@@Lieutenant General %s
+32@@@General %s
+33@@@Warlord %s
+34@@@High Warlord %s
+35@@@Knight-Captain %s
+36@@@[DNT] Test %s
+37@@@Master Angler %s
+38@@@%s of the Nightclaw
+39@@@%s the Harbinger of Darkness
+111@@@Bloodsail Admiral %s

@@ -1,0 +1,18 @@
+PVP_ELITE = createHeader({
+	readable = "Elite Gear",
+	icon = 311232,
+	constant = "PVP_ELITE",
+	text = {
+		en = "Elite Gear",
+		de = "Elite Rüstung",
+		es = "Equipo de Elite",
+		mx = "Equipo de Elite",
+		fr = "Équipement Élite",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		ru = "Элитные доспехи",
+		cn = "精锐装备",
+		tw = "精英裝備",
+	},
+});

@@ -22,7 +22,7 @@ namespace ATT
             /// <param name="fields">The fields.</param>
             public override void Build(Exporter builder, IDictionary<string, object> data, IList<string> fields)
             {
-                if (fields.Contains("isGuild"))
+                if (data.TryGetValue("isGuild", out bool isGuild) && isGuild)
                 {
                     fields.Remove("isGuild");
                     WriteShortcut(builder, "gcat", "_.CreateGuildAchievementCriteria");

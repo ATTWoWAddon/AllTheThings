@@ -364,6 +364,22 @@
 1284042@@@Thunderhoof Celestial
 1284043@@@Stormgilded Celestial
 1284044@@@Scorching Imperial Quilen
+3.80.0.65586
+110051@@@Heart of the Aspects
+1266345@@@Cerulean Phase-Hunter
+1266866@@@Reins of the Starshard Netherdrake
+3.80.1.67155
+457485@@@Grizzly Hills Packmaster
+1266982@@@The Sire's Palanquin
+1267077@@@Scarlet Lady
+1284679@@@Sha-Warped Riding Wolf
+1285897@@@Sha-Warped Owl
+3.80.1.68181
+1291315@@@Spring Panda
+3.80.1.68768
+1301737@@@Sunflash Driftmoth
+3.80.2.68943
+435115@@@Guardian Quilen
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -407,7 +423,6 @@
 103195@@@Mountain Horse
 103196@@@Swift Mountain Horse
 107844@@@Twilight Harbinger
-110051@@@Heart of the Aspects
 113120@@@Feldrake
 5.5.0.60481
 113199@@@Jade Cloud Serpent
@@ -541,12 +556,30 @@
 1229670@@@Prophet's Great Crow
 1229672@@@Archmage's Great Crow
 5.5.2.63832
-1266345@@@Cerulean Phase-Hunter
-1266866@@@Reins of the Starshard Netherdrake
 5.5.3.64530
 1280068@@@[PH] Lunar Horse Mount
 5.5.3.65302
 1280068@@@Scorching Courage
+5.5.3.65703
+1257516@@@Lana'thel's Sanguine Cascade
+1285724@@@Stormgilded Celestial
+1285725@@@Thunderhoof Celestial
+5.5.3.66509
+1257673@@@Snowfall Groveglider
+1257674@@@Embertuft Groveglider
+1257676@@@Petalbranch Groveglider
+1257677@@@Shadowbough Groveglider
+5.5.4.67279
+1298510@@@Reins of the Black Kor'kron Proto-drake
+1298512@@@Stormcrow
+1298515@@@Spectral Gryphon
+1298516@@@Spectral Wind Rider
+5.5.4.67732
+1298510@@@Reins of the Fire Drake
+1302506@@@Frostwyrm
+1302947@@@Darkshade Drake
+5.5.4.69032
+1309841@@@Tuskarr Hermit Crab
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -1867,7 +1900,6 @@
 435107@@@Forest Windsteed
 435108@@@Daystorm Windsteed
 435109@@@Feathered Windsurfer
-435115@@@Guardian Quilen
 435118@@@Marble Quilen
 435123@@@Gilded Riding Crane
 435124@@@Luxurious Riding Crane
@@ -2037,7 +2069,6 @@
 453785@@@Earthen Ordinant's Ramolith
 11.0.0.55939
 454682@@@Startouched Furline
-457485@@@Grizzly Hills Packmaster
 459784@@@Golden Ashes of Al'ar
 11.0.0.55960
 464443@@@Harmonious Salutations Bear
@@ -2465,6 +2496,16 @@
 1266703@@@Lab-grown Stormray
 1270522@@@Comfy Bel'ameth Flying Quilt
 1270523@@@Comfy Silvermoon Flying Quilt
+12.0.0.65512
+1268809@@@Fantastical Goblin Waveshredder
+1269181@@@Ghastropod
+1269556@@@Hypo-Speed X6000
+1271549@@@Fel Spirehawk
+12.0.0.65560
+1258573@@@Thunderhoof Celestial
+1258574@@@Stormgilded Celestial
+12.0.0.65699
+1284640@@@Golden Ashened Cataclysm
 12.0.1.64889
 1261298@@@Crimson Dragonhawk
 12.0.1.65337
@@ -2472,3 +2513,143 @@
 1260354@@@Untainted Grove Crawler
 1261296@@@Umbral Dragonhawk
 1270673@@@Vivacious Chloroceros
+12.0.1.65448
+3363@@@Nether-Warped Drake
+12.0.1.66013
+1289395@@@Swift Spectral Dragonhawk
+12.0.1.66263
+1261293@@@Peridot Dragonhawk
+12.0.1.66337
+1251697@@@Frostfall Groveglider
+1251762@@@Cindertuft Groveglider
+1251764@@@Gloombough Groveglider
+1251765@@@Blossombranch Groveglider
+12.0.1.66838
+1265785@@@Emerald Hawkstrider
+12.0.5.66330
+3363@@@Nether-Swept Drake
+1261362@@@Witherbark Warbear Mother
+1271698@@@Unbound Manawyrm
+1282268@@@Gilnean Iron Charger
+1282274@@@Gilnean Copper Charger
+1282275@@@Pyrewood Rebel's Rouncey
+1282276@@@Gilneas Loyalist's Rouncey
+1282450@@@Blossomback Arboon
+1282453@@@Amberback Arboon
+1282471@@@Magister's Spell Bee
+1282936@@@Void-Touched Hawkstrider
+1283906@@@[PH] Giant Eagle Sunwalker Mount Blue
+1283908@@@Dusk-Painted Sun Roc
+1283910@@@Flame-Painted Sun Roc
+1283911@@@[PH] Giant Eagle Sunwalker Mount White
+1286606@@@Void-Corrupted Hex Eagle
+1287357@@@Void-Touched Snapdragon
+1287359@@@Void-Corruped Lynx
+12.0.5.66529
+1287359@@@Void-Corrupted Lynx
+12.0.5.67165
+1296731@@@Cerulean Deathwalker
+1296734@@@Amethyst Mechsuit
+1296756@@@Blue-Chip Shreddertank
+1296758@@@Profit-Green Shreddertank
+1296759@@@High-Yield Shreddertank
+1296760@@@Speculative Shreddertank
+12.0.5.67314
+1283837@@@Zothwing Darkseeker
+1283838@@@Zothwing Deepseeker
+12.0.7.67227
+404018@@@Black-Furred Bakar
+1261369@@@Amani Hex Bear
+1264184@@@Spawn of Vyranoth
+1284973@@@Luminous Sporeglider
+1292102@@@Blackwater X-TREME Firework Rocket
+1292342@@@Green Rocket Mount [PH]
+1292344@@@Bligewater X-TREME Firework Rocket
+1292345@@@Pink Rocket Mount [PH]
+1294648@@@Voidmancer's Starcarver
+1294663@@@Arcforged Nullframe
+1294677@@@[PH] Horse with Hat
+1294767@@@Badlands Buzzard
+1297427@@@Tortured Gorger
+1298439@@@Sun Festival's Painted Roc
+12.0.7.67360
+1294663@@@Netherforged Nullframe
+1297427@@@Void-Tortured Gorger
+12.0.7.67669
+1243582@@@Dusk Grimlynx
+12.0.7.67808
+350220@@@Liquid Hot Magma Slug
+12.0.7.68182
+1292344@@@Bilgewater X-TREME Firework Rocket
+12.0.7.68453
+1279352@@@Stoneforged Sentinel
+12.0.7.68774
+1292356@@@Sunflare Driftmoth
+1299156@@@Shadow Spirehawk
+12.0.7.68887
+1293456@@@Rabbit'ath
+12.1.0.68209
+1266211@@@Venomous Gladiator's Goredrake
+1292668@@@Spirit of Tok'jara
+1295958@@@Swift Spectral Eagle
+1296670@@@Vicious Lightbloom Boar
+1296672@@@Vicious Lightbloom Boar
+1296724@@@[PH] Broomstick Spice - Orange
+1296985@@@[PH] Broomstick Spice - Green
+1296986@@@[PH] Broomstick Spice - Grey
+1296987@@@[PH] Broomstick Spice - Hallow
+1296988@@@[PH] Broomstick Spice - Pink
+1296989@@@[PH] Broomstick Spice - Red
+1297217@@@Caustic Venomfang
+1297220@@@Crimson Venomfang
+1297404@@@Apophic Soul Crusher
+1297405@@@Primeval Skyfriend
+1297407@@@Hexflame Reaver
+1297408@@@Preyhunter's Courser
+1298808@@@Corroded Soul Crusher
+1299963@@@Violet-Backed Skyfang
+1299965@@@Emerald Skyfang
+1300776@@@The Writhing Brood
+1300777@@@Venomous Coiler
+1300778@@@Indigo Coiled Horror
+1301070@@@Breath of Blight
+1301074@@@Breath of Ruin
+1301775@@@Umbral Ashes
+1301817@@@[PH] Pygmy Owl
+1305204@@@Crested Burnished Leafmimic
+1305206@@@Crested Aqua Leafmimic
+1305207@@@Crested Verdant Leafmimic
+1305209@@@Crested Violet Leafmimic
+12.1.0.68412
+1296724@@@Autumnal Witchwick's Rider
+1296985@@@Mossy Witchwick's Rider
+1296986@@@Moonlit Witchwick's Rider
+1296987@@@Scarlet Witchwick's Rider
+1296988@@@Blushing Witchwick's Rider
+1296989@@@Carmine Witchwick's Rider
+1297224@@@Auriferous Venomfang
+1297408@@@Preyhunter's Fury
+1299961@@@Topaz Skyfang
+1300779@@@Ruby Writhe
+1301817@@@Whoofle Bramblewing
+1305204@@@Crested Ember Leafmimic
+1309340@@@Wintry Witchwick's Rider
+1309376@@@Veteran Adventurer's Loyal Companion
+12.1.0.68569
+1266703@@@Lab-Grown Stormray
+12.1.0.68824
+1297216@@@Sea-Dwelling Isle Serpent
+12.1.0.69299
+142515@@@Hearthkeeper's Wandering Caravan
+1293028@@@Tuskarr Hermit Crab
+12.1.5.69594
+1250285@@@Whaletested Crest-Horn
+1251689@@@Aubergine Warturkey
+1297808@@@Living Heartsbane Cauldron
+1301331@@@Corrupted Swarmer
+1313788@@@Sporebearer Fungal Strider
+1314165@@@Hot Motocross Bunmover 4000
+1314166@@@Hot Motocross Bunmover 4200
+1314168@@@Hot Motocross Bunmover 4400
+1314169@@@Hot Motocross Bunmover 4600
+1314715@@@Loa-Blessed Wayfarer

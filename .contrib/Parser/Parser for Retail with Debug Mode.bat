@@ -1,1 +1,0 @@
-"Parser.exe" debug baseconfig=.config/retail/retail.config config=.config/retail/debug.config > log_debug.txt

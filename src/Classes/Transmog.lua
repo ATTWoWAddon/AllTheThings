@@ -36,8 +36,8 @@ local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local L, contains, containsAny, SearchForField, SearchForFieldContainer
-	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer
+local L, contains, containsAny, SearchForField
+	= app.L, app.contains, app.containsAny, app.SearchForField
 local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection_GetAllAppearanceSources
@@ -153,6 +153,9 @@ app.GetGroupSourceID = function(group)
 	if sourceID then group.sourceID = sourceID; end
 end
 
+-- caches for mod/bonus which have successfully been used to find valid appearances
+local UsedModIDs = {}
+local UsedBonusIDs = {}
 -- Attempts to determine an ItemLink which will return the provided SourceID
 app.DetermineItemLink = function(sourceID)
 	local link;
@@ -210,16 +213,37 @@ app.DetermineItemLink = function(sourceID)
 		-- end
 	end
 
+	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
+	for m in pairs(UsedModIDs) do
+		link = itemFormat:format(m)
+		checkID, found = GetSourceID(link)
+		-- app.PrintDebug(link,checkID,found)
+		if found and checkID == sourceID then return link end
+	end
+
+	itemFormat = "item:"..itemID.."::::::::::::1:%d";
+	for b in pairs(UsedBonusIDs) do
+		link = itemFormat:format(b)
+		checkID, found = GetSourceID(link)
+		-- app.PrintDebug(link,checkID,found)
+		if found and checkID == sourceID then return link end
+	end
+
 	-- Check ModIDs
 	-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
 	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
 	for m=1,299,1 do
-		---@diagnostic disable-next-line: undefined-field
-		link = itemFormat:format(m);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
+		if not UsedModIDs[m] then
+			---@diagnostic disable-next-line: undefined-field
+			link = itemFormat:format(m);
+			checkID, found = GetSourceID(link);
+			-- app.PrintDebug(link,checkID,found)
+			if found and checkID == sourceID then
+				UsedModIDs[m] = true
+				return link
+			end
+		end
 	end
 
 	-- Only try to manually scan for a bonusID-based sourceID if we are Debugging (save regular users from unnecessary lookups)
@@ -229,11 +253,16 @@ app.DetermineItemLink = function(sourceID)
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
 	for b=1,15999,1 do
-		---@diagnostic disable-next-line: undefined-field
-		link = itemFormat:format(b);
-		checkID, found = GetSourceID(link);
-		-- app.PrintDebug(link,checkID,found)
-		if found and checkID == sourceID then return link; end
+		if not UsedBonusIDs[b] then
+			---@diagnostic disable-next-line: undefined-field
+			link = itemFormat:format(b);
+			checkID, found = GetSourceID(link);
+			-- app.PrintDebug(link,checkID,found)
+			if found and checkID == sourceID then
+				UsedBonusIDs[b] = true
+				return link
+			end
+		end
 	end
 	-- app.PrintDebug("DetermineItemLink:Fail",sourceID,"(No ModID or BonusID match)");
 end
@@ -398,6 +427,9 @@ local function GetUniqueRemovedSourceIDs(sourceID, visualID, filter)
 	end
 	return removedSourceIDs
 end
+local function GetSourceAppearanceLink(sourceID)
+	return "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"
+end
 app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 	-- based on the current ItemSourceFilter assignment (i.e. collection mode)
 	local tkey = t.key
@@ -409,12 +441,19 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 		local sourceID = t.sourceID
 		if not t._missing then
 			if app.Settings:GetTooltipSetting("Report:Collected") then
-				app.print(L.ITEM_ID_ADDED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID))
+				app.print(L.ITEM_ID_ADDED:format(app:SearchLink(t) or GetSourceAppearanceLink(sourceID), t.itemID))
 			end
 		else
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
 			-- always report missing
-			app.print(L.ITEM_ID_ADDED_MISSING:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo and sourceInfo.itemID, app.Version))
+			app.report("Missing Appearance Learned",
+					L.ITEM_ID_ADDED_MISSING:format(
+					sourceID,
+					sourceInfo and sourceInfo.itemID,
+					app.Version),
+				GetSourceAppearanceLink(sourceID),
+				t.rawlink or t.link,
+				t.modItemID)
 		end
 		app.HandleEvent("OnThingCollected", t)
 	else
@@ -429,14 +468,26 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 			-- TODO eventual setting to control reporting of already collected Things
 			if newAppearancesLearned > 0 then
 				if app.Settings:GetTooltipSetting("Report:Collected") then
-					app.print(L.ITEM_ID_ADDED_SHARED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID, newAppearancesLearned));
+					app.print(L.ITEM_ID_ADDED_SHARED:format(
+						app:SearchLink(t) or GetSourceAppearanceLink(sourceID),
+						t.itemID,
+						newAppearancesLearned))
 				end
 				app.HandleEvent("OnThingCollected", t)
 				app.UpdateRawIDs(tkey, unlockedSourceIDs)
 			end
 		else
 			-- always report missing
-			app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned, app.Version));		app.HandleEvent("OnThingCollected", t)
+			app.report("Missing Appearance Learned",
+					(newCollected and L.ITEM_ID_ADDED_SHARED_MISSING or L.ITEM_ID_ADDED_MISSING):format(
+					sourceID,
+					sourceInfo and sourceInfo.itemID,
+					newAppearancesLearned,
+					app.Version),
+				GetSourceAppearanceLink(sourceID),
+				t.rawlink or t.link,
+				t.modItemID)
+			app.HandleEvent("OnThingCollected", t)
 			app.UpdateRawIDs(tkey, unlockedSourceIDs)
 		end
 	end
@@ -452,7 +503,7 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 		-- app.PrintDebug("Completionist Remove",app:SearchLink(t))
 		local sourceID = t.sourceID
 		if app.Settings:GetTooltipSetting("Report:Collected") then
-			app.print(L.ITEM_ID_REMOVED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID))
+			app.print(L.ITEM_ID_REMOVED:format(app:SearchLink(t) or GetSourceAppearanceLink(sourceID), t.itemID))
 		end
 		app.HandleEvent("OnThingRemoved", t)
 	else
@@ -465,7 +516,12 @@ app.AddRemovalTypeHandler("ItemWithAppearance", function(t)
 		-- TODO eventual setting to control reporting of already collected Things
 		if uniqueRemoved > 0 then
 			if app.Settings:GetTooltipSetting("Report:Collected") then
-				app.print(L.ITEM_ID_REMOVED_SHARED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, uniqueRemoved))
+				app.report("Missing Appearance Removed",
+						L.ITEM_ID_REMOVED_SHARED:format(
+						GetSourceAppearanceLink(sourceID),
+						sourceInfo.itemID,
+						uniqueRemoved),
+					t.rawlink or t.link)
 			end
 			app.HandleEvent("OnThingRemoved", t)
 			app.UpdateRawIDs(tkey, removedSourceIDs)
@@ -488,6 +544,14 @@ local ArmorTypeMogs = {
 	[6] = true,	-- Mail
 	[7] = true,	-- Plate
 	[10] = true,	-- Shirts
+	[40] = true,	-- Head
+	[41] = true,	-- Shoulder
+	[42] = true,	-- Chest
+	[43] = true,	-- Wrist
+	[44] = true,	-- Hands
+	[45] = true,	-- Waist
+	[46] = true,	-- Legs
+	[47] = true,	-- Feet
 }
 local function MainOnlyCanTransmogAppearanceItem(knownItem)
 	return not knownItem.nmr and not knownItem.nmc and ArmorTypeMogs[knownItem.f] and CurrentCharacterFilterIDSet[knownItem.f]
@@ -704,7 +768,7 @@ end
 local function DetermineMaxATTSourceID()
 	-- app.PrintDebug("Initial Session Refresh")
 	local maxSourceID = 0;
-	for id,_ in pairs(SearchForFieldContainer("sourceID")) do
+	for id,_ in pairs(app.GetFieldContainer("sourceID")) do
 		-- track the max sourceID so we can evaluate sources not in ATT as well
 		if id > maxSourceID then maxSourceID = id; end
 	end
@@ -798,28 +862,25 @@ app.SaveHarvestSource = function(data)
 		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
 end
-local function BuildAppearanceLink(sourceID)
-	return "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"
-end
 
 -- Items With Appearances (Item Source)
 do
 	-- Allows generating and capturing the specific ItemString which represents the SourceID of a group, if possible
 	local function GenerateGroupLinkUsingSourceID(group)
-		app.DirectGroupRefresh(group)
+		app.DirectGroupRedraw(group)
 		local sourceID = group and group.sourceID;
 		if not sourceID then return; end
 
 		local link = app.DetermineItemLink(sourceID);
 		if not link then
-			group.link = BuildAppearanceLink(sourceID)
+			group.link = GetSourceAppearanceLink(sourceID)
 			return
 		end
 		-- app.PrintDebug("GGLUS",sourceID,"=>",link)
 
 		if IsRetrieving(link) then
 			if not group.CanRetry then
-				group.link = BuildAppearanceLink(sourceID)
+				group.link = GetSourceAppearanceLink(sourceID)
 				return
 			end
 			app.FunctionRunner.Run(GenerateGroupLinkUsingSourceID, group)
@@ -830,7 +891,7 @@ do
 	end
 	local ITEM_FILTERS_WITH_APPEARANCES = {
 		[2]  = true,	-- Cosmetic
-		[3]  = true,	-- Cloaks
+		[3]  = true,	-- Back
 		[20] = true,	-- Daggers
 		[21] = true,	-- One-Handed Axes
 		[22] = true,	-- Two-Handed Axes
@@ -845,6 +906,14 @@ do
 		[32] = true,	-- Bows
 		[33] = true,	-- Crossbows
 		[34] = true,	-- Fist Weapons
+		[40] = true,	-- Head
+		[41] = true,	-- Shoulder
+		[42] = true,	-- Chest
+		[43] = true,	-- Wrist
+		[44] = true,	-- Hands
+		[45] = true,	-- Waist
+		[46] = true,	-- Legs
+		[47] = true,	-- Feet
 	};
 
 	local KEY, CACHE, SETTING = "sourceID", "Sources", "Transmog"
@@ -860,10 +929,32 @@ do
 	-- Appearance-based Classes
 	local AppearanceVariantClasses = { CLASSNAME }
 
+	local AndAppearanceCollectible = (app.IsRetail or app.IsForever) and app.ReturnTrue or function(t)
+		-- White/Grey items are not collectible in Classic builds unless they're BOP.
+		if (t.q or 0) < 2 and (t.b or 0) ~= 1 then
+			return false;
+		end
+		return true;
+	end
+	local function AddAppearanceCollectibleSwap(classname, setting)
+		local function AssignCollectibleFunction()
+			-- app.PrintDebug("Swapping",classname,".collectible","via",setting,app.Settings.Collectibles[setting])
+			if app.Settings.Collectibles[setting] then
+				app.SwapClassDefinitionMethod(classname,"collectible",AndAppearanceCollectible)
+			else
+				app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnFalse)
+			end
+		end
+		app.AddEventHandler("OnSettingsNeedsRefresh", AssignCollectibleFunction);
+		app.AddEventHandler("OnStartup", AssignCollectibleFunction);
+	end
+
 	local AndAppearance = {
 		__name = "AndAppearance",
 		CACHE = function() return CACHE end,
-		collectible = function(t) return app.Settings.Collectibles.Transmog end,
+		collectible = function(t)
+			return app.Settings.Collectibles.Transmog
+		end,
 		collected = collected_Completionist,
 		visualID = function(t)
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(t[KEY])
@@ -873,7 +964,7 @@ do
 		__onclassgenerated = function(variantName)
 			AppearanceVariantClasses[#AppearanceVariantClasses + 1] = variantName
 			-- any appearance-based variant is tracked based on 'Transmog' setting
-			app.AddSimpleCollectibleSwap(variantName, SETTING)
+			AddAppearanceCollectibleSwap(variantName, SETTING)
 		end,
 	}
 	app.GlobalVariants.AndAppearance = AndAppearance
@@ -884,13 +975,13 @@ do
 		-- this is swapped based on settings
 		collectible = AndAppearance.collectible,
 		collected = AndAppearance.collected,
-		collectedwarband = app.IsClassic and app.EmptyFunction or
+		collectedwarband = app.GameBuildVersion >= 100000 and app.EmptyFunction or
 		function(t)
 			return app.IsAccountCached("SourceItemsOnCharacter", t[KEY])
 		end,
 		visualID = AndAppearance.visualID,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-		itemID = app.IsRetail and function(t)
+		itemID = function(t)
 			if t.__autolink then return; end
 			-- async generation of the proper Item Link
 			-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
@@ -902,34 +993,10 @@ do
 			return rawget(t, "itemID")
 		end,
 		baselink = function(t)
-			return BuildAppearanceLink(t.sourceID)
+			return GetSourceAppearanceLink(t.sourceID)
 		end,
 	});
-	app.CreateItemSource = app.GameBuildVersion < 60000 and ((C_Seasons and C_Seasons.GetActiveSeason() == 2 and function(sourceID, itemID, t)
-		if t and ((not t.q or t.q < 2) or not (t.f and ITEM_FILTERS_WITH_APPEARANCES[t.f])) then
-			t[KEY] = sourceID;
-			return app.CreateItem(itemID, t);
-		end
-		t = createItemWithAppearance(sourceID, t);
-		t.itemID = itemID;
-		return t;
-	end) or function(sourceID, itemID, t)
-		if t and (not t.q or t.q < 2) then
-			t[KEY] = sourceID;
-			return app.CreateItem(itemID, t);
-		end
-		t = createItemWithAppearance(sourceID, t);
-		-- Shared Appearances may attempt to create an Item Source without an ItemID
-		-- so quickly try to derive one since the Classic Item class doesn't protect against
-		-- various situations where a nil itemID can cause problems and createItemWithAppearance
-		-- extends from Item
-		if not itemID then
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID)
-			itemID = sourceInfo and sourceInfo.itemID or -1
-		end
-		t.itemID = itemID;
-		return t;
-	end) or function(sourceID, itemID, t)
+	app.CreateItemSource = function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		-- TEMPORARY
 		if itemID and itemID > 0 then
@@ -937,7 +1004,7 @@ do
 		end
 		return t;
 	end
-	app.AddSimpleCollectibleSwap(CLASSNAME, SETTING)
+	AddAppearanceCollectibleSwap(CLASSNAME, SETTING)
 
 	-- Extend the Filter Module to include ItemSource
 	app.Modules.Filter.Set.ItemSource = function(useUnique, useMainOnly)
@@ -978,7 +1045,7 @@ local function GetLinkTooltipInfo(sourceGroup, useItemIDs, sameItem)
 			link = RETRIEVING_DATA
 		else
 			missingStr = " |CFFFF0000(INVALID BLIZZARD DATA)|r"
-			link = sourceID and BuildAppearanceLink(sourceID) or UNKNOWN
+			link = sourceID and GetSourceAppearanceLink(sourceID) or UNKNOWN
 		end
 	end
 	local text
@@ -1230,7 +1297,7 @@ local function BuildSourceInformationForPopout(group)
 	local appearanceGroup;
 	if #g > 0 then
 		appearanceGroup = app.CreateCustomHeader(app.HeaderConstants.SHARED_APPEARANCES, {
-			OnUpdate = app.AlwaysShowUpdate,
+			OnSetVisibility = app.ReturnTrue,
 			OnClick = app.UI.OnClick.IgnoreRightClick,
 			sourceIgnored = true,
 			skipFull = true,
@@ -1239,7 +1306,7 @@ local function BuildSourceInformationForPopout(group)
 		});
 	else
 		appearanceGroup = app.CreateCustomHeader(app.HeaderConstants.UNIQUE_APPEARANCE, {
-			OnUpdate = app.AlwaysShowUpdate,
+			OnSetVisibility = app.ReturnTrue,
 			OnClick = app.UI.OnClick.IgnoreRightClick,
 			sourceIgnored = true,
 			skipFull = true,
@@ -1247,8 +1314,7 @@ local function BuildSourceInformationForPopout(group)
 		});
 	end
 	-- add the group showing the Appearance information for this popout
-	if group.g then tinsert(group.g, appearanceGroup)
-	else group.g = { appearanceGroup } end
+	app.NestObject(group, appearanceGroup)
 end
 app.AddEventHandler("OnNewPopoutGroup", BuildSourceInformationForPopout)
 
@@ -1306,6 +1372,14 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 
 	-- saved var global will exist at this point
 	CharacterData = ATTCharacterData
+
+	-- Delete the original Transmog tracking table for classic pre-cata
+	if ATTAccountWideData.Transmog then
+		ATTAccountWideData.Transmog = nil;
+		for guid,character in pairs(CharacterData) do
+			character.Transmog = nil;
+		end
+	end
 end);
 
 if app.IsRetail then
@@ -1360,10 +1434,10 @@ if app.IsRetail then
 	-- local function CheckForBoundSourceItems()
 	-- 	app.ScanInventory(CheckForUnknownSourceID)
 	-- end
-	local CheckForBoundSourceItems = app.EmptyFunction
+	--local CheckForBoundSourceItems = app.EmptyFunction
 
 	app.AddEventHandler("OnStartup", function()
-		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
+		--app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
 		-- Add information type once ATT starts up
 		app.Settings.CreateInformationType("collectedwarband", { text = "collectedwarband", priority = 11001, HideCheckBox = true, ForceActive = true,
 			Process = function(t, reference, tooltipInfo)
@@ -1385,7 +1459,7 @@ if app.IsRetail then
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 		app.WipeSearchCache()
-		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
+		--app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
 	end)
-	app.AddEventHandler("OnRecalculateDone", CheckForBoundSourceItems)
+	--app.AddEventHandler("OnRecalculateDone", CheckForBoundSourceItems)
 end

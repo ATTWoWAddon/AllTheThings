@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local containsValue = app.containsValue;
 local tinsert = tinsert;
 
@@ -7,10 +8,9 @@ local tinsert = tinsert;
 app:CreateWindow("Class Specific Things", {
 	Commands = { "attclasses" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Class Specific Things",
+		self:SetData(app.CreateRawText(L.CLASS_SPECIFIC_THINGS, {
 			icon = app.asset("WindowIcon_RWP"),
-			description = "This window shows you all of the class specific things for all classes.",
+			description = L.CLASS_SPECIFIC_THINGS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
@@ -19,11 +19,16 @@ app:CreateWindow("Class Specific Things", {
 			OnUpdate = function(t)
 				local g = t.g;
 				if #g < 1 then
+					local filteredG = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
+						if group.c and #group.c == 1 then
+							return true;
+						end
+					end);
 					for classID=1,13,1 do
 						local classObject = app.CreateCharacterClass(classID);
 						if classObject.isValid then
 							tinsert(g, classObject);
-							classObject.g = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
+							classObject.g = app:BuildSearchFilteredResponse(filteredG, function(group)
 								if group.c and #group.c == 1 and containsValue(group.c, classID) then
 									return true;
 								end
@@ -35,6 +40,6 @@ app:CreateWindow("Class Specific Things", {
 					self:ExpandData(true);
 				end
 			end,
-		};
+		}));
 	end,
 });

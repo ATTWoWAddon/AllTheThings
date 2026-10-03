@@ -1,0 +1,550 @@
+1.15.0.52124
+s(184334)/i(202254),	-- Bracers of Redirection
+s(184335)/i(202256),	-- Privateer's Ornate Pistol
+s(189607)/i(208194),	--
+s(189612)/i(208222),	-- Old Guard Retaliator
+s(189729)/i(208413),	--
+s(189733)/i(208422),	--
+s(189735)/i(208424),	--
+s(189773)/i(208483),	--
+s(189774)/i(208484),	-- Sunlight
+s(190111)/i(208740),	--
+s(190117)/i(208774),	--
+s(191033)/i(209842),	--
+s(194481)/i(211925),	--
+1.15.0.52409
+s(195197)/i(213087),	-- Sergeant's Cloak
+s(195198)/i(213088),	-- Sergeant's Cloak
+1.15.1.53009
+s(194901)/i(212566),	--
+s(195166)/i(212994),	-- Stormchaser's Bindings
+s(195167)/i(212996),	-- Lightningcaller's Bindings
+s(195168)/i(212997),	-- Tidecaller's Bindings
+s(195296)/i(213391),	-- UNUSED Electrified Mithril Gauntlets
+s(196747)/i(215112),	-- UNUSED - Cloak of Arcane Insulation
+s(196748)/i(215113),	-- UNUSED - Razor-Lined Shoulderpads
+s(196751)/i(215116),	-- UNUSED - Hyperconductive Speed Belt
+s(196778)/i(215450),	-- Tabard Project (Aidan)
+s(198599)/i(216494),	-- Aragriar's Whimsical World Warper
+1.15.2.53941
+s(198741)/i(216891),	--
+s(200650)/i(218083),	-- Tail of Eranikus
+s(218465)/i(219945),	--
+s(218798)/i(220794),	-- Knight's Plate Hauberk
+s(218799)/i(220795),	-- Knight-Lieutenant's Plate Pauldrons
+s(218800)/i(220796),	-- Blood Guard's Plate Pauldrons
+s(218801)/i(220797),	-- Knight's Plate Leggings
+s(218802)/i(220798),	-- Stone Guard's Plate Leggings
+s(218803)/i(220799),	-- Sergeant Major's Plate Greaves
+s(218804)/i(220800),	-- First Sergeant's Plate Greaves
+s(218805)/i(220801),	-- Stone Guard's Plate Armor
+s(218807)/i(220803),	-- Blood Guard's Plate Helm
+s(218808)/i(220804),	-- Knight-Lieutenant's Plate Helm
+s(218810)/i(220806),	-- Sergeant Major's Plate Gauntlets
+s(218811)/i(220807),	-- First Sergeant's Plate Gauntlets
+s(218812)/i(220808),	-- Knight-Lieutenant's Imbued Pauldrons
+s(218813)/i(220809),	-- Knight's Imbued Leggings
+s(218814)/i(220810),	-- Knight-Lieutenant's Imbued Helmet
+s(218815)/i(220811),	-- Sergeant Major's Imbued Greaves
+s(218816)/i(220812),	-- Sergeant Major's Imbued Gauntlets
+s(218817)/i(220813),	-- Knight's Imbued Armor
+s(218818)/i(220814),	-- Sergeant Major's Lamellar Boots
+s(218819)/i(220815),	-- Knight's Lamellar Chestplate
+s(218820)/i(220816),	-- Knight's Lamellar Legplates
+s(218821)/i(220817),	-- Sergeant Major's Lamellar Gauntlets
+s(218822)/i(220818),	-- Knight-Lieutenant's Lamellar Pauldrons
+s(218823)/i(220819),	-- Knight-Lieutenant's Lamellar Helm
+s(218824)/i(220820),	-- Blood Guard's Mail Helmet
+s(218825)/i(220821),	-- Blood Guard's Chain Helmet
+s(218826)/i(220822),	-- Knight-Lieutenant's Chain Helmet
+s(218827)/i(220823),	-- Blood Guard's Mail Epaulets
+s(218828)/i(220824),	-- Blood Guard's Chain Epaulets
+s(218829)/i(220825),	-- Knight-Lieutenant's Chain Epaulets
+s(218830)/i(220826),	-- Stone Guard's Mail Armor
+s(218831)/i(220827),	-- Stone Guard's Chain Armor
+s(218832)/i(220828),	-- Knight's Chain Armor
+s(218833)/i(220829),	-- Sergeant Major's Chain Gauntlets
+s(218834)/i(220830),	-- First Sergeant's Chain Gauntlets
+s(218835)/i(220831),	-- First Sergeant's Mail Gauntlets
+s(218836)/i(220832),	-- Knight's Chain Legplates
+s(218837)/i(220833),	-- Stone Guard's Chain Legplates
+s(218838)/i(220834),	-- Stone Guard's Mail Legplates
+s(218839)/i(220835),	-- First Sergeant's Mail Sabatons
+s(218840)/i(220836),	-- First Sergeant's Chain Sabatons
+s(218841)/i(220837),	-- Sergeant Major's Chain Sabatons
+s(218842)/i(220838),	-- Stone Guard's Inscribed Chestpiece
+s(218843)/i(220839),	-- Stone Guard's Inscribed Legplates
+s(218844)/i(220840),	-- First Sergeant's Inscribed Sabatons
+s(218845)/i(220841),	-- Blood Guard's Inscribed Shoulder Pads
+s(218846)/i(220842),	-- Blood Guard's Inscribed Skullcap
+s(218847)/i(220843),	-- First Sergeant's Inscribed Gauntlets
+s(218848)/i(220844),	-- Stone Guard's Pulsing Breastplate
+s(218849)/i(220845),	-- First Sergeant's Pulsing Gauntlets
+s(218850)/i(220846),	-- First Sergeant's Pulsing Greaves
+s(218851)/i(220847),	-- Stone Guard's Pulsing Legplates
+s(218852)/i(220848),	-- Blood Guard's Pulsing Helmet
+s(218853)/i(220849),	-- Blood Guard's Pulsing Shoulders
+s(218854)/i(220850),	-- Knight-Lieutenant's Leather Headband
+s(218855)/i(220851),	-- Blood Guard's Leather Headband
+s(218856)/i(220852),	-- Knight-Lieutenant's Leather Shoulders
+s(218857)/i(220853),	-- Blood Guard's Leather Shoulders
+s(218858)/i(220854),	-- Knight's Leather Armor
+s(218859)/i(220855),	-- Stone Guard's Leather Armor
+s(218860)/i(220856),	-- Sergeant Major's Leather Gauntlets
+s(218861)/i(220857),	-- First Sergeant's Leather Gauntlets
+s(218862)/i(220858),	-- Knight's Leather Pants
+s(218863)/i(220859),	-- Stone Guard's Leather Pants
+s(218864)/i(220860),	-- Sergeant Major's Leather Boots
+s(218865)/i(220861),	-- First Sergeant's Leather Boots
+s(218866)/i(220862),	-- Sergeant Major's Crackling Leather Boots
+s(218867)/i(220863),	-- First Sergeant's Crackling Leather Boots
+s(218868)/i(220864),	-- Knight's Crackling Leather Leggings
+s(218869)/i(220865),	-- Stone Guard's Crackling Leather Leggings
+s(218870)/i(220866),	-- Sergeant Major's Crackling Leather Gauntlets
+s(218871)/i(220867),	-- First Sergeant's Crackling Leather Gauntlets
+s(218872)/i(220868),	-- Knight's Crackling Leather Tunic
+s(218873)/i(220869),	-- Stone Guard's Crackling Leather Tunic
+s(218874)/i(220870),	-- Knight-Lieutenant's Crackling Leather Spaulders
+s(218875)/i(220871),	-- Blood Guard's Crackling Leather Spaulders
+s(218876)/i(220872),	-- Knight-Lieutenant's Crackling Leather Helmet
+s(218877)/i(220873),	-- Blood Guard's Crackling Leather Helmet
+s(218878)/i(220874),	-- Knight-Lieutenant's Restored Leather Helm
+s(218879)/i(220875),	-- Blood Guard's Restored Leather Helm
+s(218880)/i(220876),	-- Knight-Lieutenant's Restored Leather Spaulders
+s(218881)/i(220877),	-- Blood Guard's Restored Leather Spaulders
+s(218882)/i(220878),	-- Knight's Restored Leather Jerkin
+s(218883)/i(220879),	-- Stone Guard's Restored Leather Jerkin
+s(218884)/i(220880),	-- Sergeant Major's Restored Leather Gloves
+s(218885)/i(220881),	-- First Sergeant's Restored Leather Gloves
+s(218886)/i(220882),	-- Knight's Restored Leather Leggings
+s(218887)/i(220883),	-- Stone Guard's Restored Leather Leggings
+s(218888)/i(220884),	-- Sergeant Major's Restored Leather Boots
+s(218889)/i(220885),	-- First Sergeant's Restored Leather Boots
+s(218890)/i(220886),	-- Knight's Dreadweave Vest
+s(218891)/i(220887),	-- Knight-Lieutenant's Dreadweave Mantle
+s(218892)/i(220888),	-- Knight's Dreadweave Leggings
+s(218893)/i(220889),	-- Knight-Lieutenant's Dreadweave Hat
+s(218894)/i(220890),	-- Sergeant Major's Dreadweave Gloves
+s(218895)/i(220891),	-- Sergeant Major's Dreadweave Boots
+s(218896)/i(220892),	-- Knight's Satin Armor
+s(218897)/i(220893),	-- Knight's Satin Leggings
+s(218898)/i(220894),	-- Knight-Lieutenant's Satin Pads
+s(218899)/i(220895),	-- Sergeant Major's Satin Boots
+s(218900)/i(220896),	-- Knight-Lieutenant's Satin Cover
+s(218901)/i(220897),	-- Sergeant Major's Satin Gloves
+s(218902)/i(220898),	-- First Sergeant's Satin Gloves
+s(218903)/i(220899),	-- Blood Guard's Satin Cover
+s(218904)/i(220900),	-- First Sergeant's Satin Boots
+s(218905)/i(220901),	-- Blood Guard's Satin Pads
+s(218906)/i(220902),	-- Stone Guard's Satin Leggings
+s(218907)/i(220903),	-- Stone Guard's Satin Armor
+s(218908)/i(220904),	-- Stone Guard's Dreadweave Vest
+s(218909)/i(220905),	-- Blood Guard's Dreadweave Mantle
+s(218910)/i(220906),	-- Stone Guard's Dreadweave Leggings
+s(218911)/i(220907),	-- Blood Guard's Dreadweave Hat
+s(218912)/i(220908),	-- First Sergeant's Dreadweave Gloves
+s(218913)/i(220909),	-- First Sergeant's Dreadweave Boots
+s(219281)/i(221469),	-- Headhunter's Barbed Spear
+s(219404)/i(221784),	--
+s(219686)/i(223073),	-- Knight-Lieutenant's Mail Epaulets
+s(219687)/i(223074),	-- Knight's Mail Legplates
+s(219688)/i(223075),	-- Knight-Lieutenant's Mail Helmet
+s(219689)/i(223076),	-- Sergeant Major's Mail Gauntlets
+s(219690)/i(223077),	-- Sergeant Major's Mail Sabatons
+s(219691)/i(223078),	-- Knight's Mail Armor
+s(219700)/i(223173),	-- Geomancer's Cord
+s(219701)/i(223174),	-- Geomancer's Boots
+s(219702)/i(223175),	-- Geomancer's Cloak
+s(219704)/i(223177),	-- Geomancer's Cap
+s(219705)/i(223178),	-- Geomancer's Bracers
+s(219707)/i(223180),	-- Geomancer's Gloves
+s(219708)/i(223181),	-- Geomancer's Spaulders
+s(219709)/i(223182),	-- Geomancer's Trousers
+s(219710)/i(223183),	-- Geomancer's Wraps
+s(219803)/i(223323),	-- Shirt \\ Premo's Poise-Demanding Uniform
+1.15.2.54332
+s(220131)/i(223648),	-- Dream Imbued Arrow
+1.15.3.55112
+s(222832)/i(225893),	-- Epoch's End
+s(224038)/i(227688),	-- Gorehowl
+1.15.3.55244
+s(224085)/i(227806),	-- Wisdom of the Timbermaw
+s(224090)/i(227812),	-- Furbolg Medicine Pouch
+s(224120)/i(227845),	-- Refined Arcanite Reaper
+s(224121)/i(227846),	--
+s(224122)/i(227847),	-- Devilcore Leggings
+s(224123)/i(227848),	-- Devilcore Gauntlets
+s(224125)/i(227850),	-- Sageblade of the Archmagus
+s(224131)/i(227858),	-- Hammer of the Wild Gods
+s(224146)/i(227873),	-- Honed Blue Dragonscale Shoulders
+s(224147)/i(227874),	-- Honed Blue Dragonscale Leggings
+s(224148)/i(227875),	-- Honed Blue Dragonscale Breastplate
+s(224150)/i(227877),	-- Living Green Dragonscale Leggings
+s(224151)/i(227878),	-- Living Green Dragonscale Gauntlets
+s(224152)/i(227879),	-- Living Green Dragonscale Breastplate
+s(224158)/i(227885),	-- Stronger-hold Gauntlets
+s(224160)/i(227887),	-- Hardened Frostguard
+s(224168)/i(227925),	-- Beacon of Hydraxis
+s(224173)/i(227942),	-- Serpentine Skuller
+s(224174)/i(227944),	-- Verek's Leash
+s(224175)/i(227945),	-- Soot Encrusted Footwear
+s(224176)/i(227946),	-- Rubidium Hammer
+s(224177)/i(227947),	-- Golem Fitted Pauldrons
+s(224179)/i(227949),	-- Force of Magma
+s(224180)/i(227950),	-- Stone of the Earth
+s(224181)/i(227951),	-- Bloodfist
+s(224183)/i(227953),	-- The Hammer of Grace
+s(224184)/i(227954),	-- Boreal Mantle
+s(224196)/i(227968),	-- Rockfist
+s(224197)/i(227969),	-- Chief Architect's Monocle
+s(224202)/i(227975),	-- Golem Skull Helm
+s(224204)/i(227979),	-- Hands of the Exalted Herald
+s(224213)/i(227992),	-- Death Knight Sabatons
+s(224216)/i(227995),	-- Cadaverous Armor
+s(224254)/i(228035),	-- Lord Blackwood's Buckler
+s(224262)/i(228043),	-- Boots of the Shrieker
+s(224303)/i(228115),	-- Pattern: Synthetic Gordok Ogre Suit
+s(224304)/i(228116),	-- Pattern: Synthetic Gordok Ogre Suit
+s(224305)/i(228125),	-- Refined Arcanite Champion
+s(224310)/i(228143),	-- Shadowflame Sword
+s(224471)/i(228164),	-- Personal Ballista
+s(224472)/i(228165),	-- Dragonslayer's Javelin
+s(224474)/i(228167),	-- Whelpling-Head Trophy
+s(224488)/i(228230),	-- Refined Hammer of the Titans
+1.15.3.55348
+s(224613)/i(228498),	-- Dreadblade of the Destructor
+s(224622)/i(228512),	--
+1.15.3.55391
+s(224729)/i(228719),	-- TEST ROGUE PANTS
+1.15.3.55917
+s(226571)/i(229378),	-- Magmadar's Right Claw
+s(226575)/i(229382),	-- Hyperthermically Insulated Lava Dredger
+1.15.4.56400
+s(220277)/i(224122),	-- Dream Eater
+s(220336)/i(224279),	-- Terrestris
+s(220337)/i(224280),	-- Suzerain, Defender of the Dragonflights
+s(220338)/i(224281),	-- Gla'sir
+s(220339)/i(224282),	-- Rae'lar
+s(227561)/i(229749),	-- Truthbearer
+s(227674)/i(229806),	-- Truthbearer
+s(227742)/i(229909),	-- Staff of Order
+s(227767)/i(229971),	-- Staff of Inferno
+s(227768)/i(229972),	-- Staff of Rime
+s(227781)/i(230001),	--
+s(227782)/i(230002),	-- Mortal Finisher
+s(227783)/i(230003),	-- Hammer of the Lightbringer
+s(227784)/i(230004),	--
+s(227785)/i(230005),	--
+s(227786)/i(230006),	--
+s(227787)/i(230007),	--
+s(227788)/i(230009),	--
+s(227789)/i(230010),	--
+s(227790)/i(230013),	--
+s(227791)/i(230014),	--
+s(227792)/i(230015),	--
+s(227793)/i(230016),	--
+s(227794)/i(230020),	--
+s(227795)/i(230022),	--
+s(227797)/i(230023),	--
+s(227798)/i(230024),	--
+s(227799)/i(230025),	--
+s(227800)/i(230028),	--
+s(227861)/i(230094),	--
+s(227862)/i(230095),	--
+s(227863)/i(230096),	--
+s(227864)/i(230097),	--
+s(227865)/i(230098),	--
+s(227866)/i(230099),	--
+s(227867)/i(230100),	--
+s(227868)/i(230101),	--
+s(227869)/i(230102),	--
+s(227870)/i(230103),	--
+s(227871)/i(230104),	--
+s(227872)/i(230105),	--
+s(229117)/i(230748),	--
+s(229118)/i(230749),	--
+s(229119)/i(230750),	--
+s(229120)/i(230751),	-- Ninja Obi
+s(229121)/i(230752),	--
+s(229122)/i(230753),	--
+s(229123)/i(230754),	--
+s(229124)/i(230760),	--
+s(229125)/i(230762),	--
+s(229127)/i(230764),	--
+s(229247)/i(231014),	-- Lizardscale Eyepatch
+s(229248)/i(231015),	-- Twill Mask
+s(229441)/i(231275),	-- Blazefury Retributer
+s(229792)/i(231752),	-- S03 - Monster - Sword, 2H Alliance
+s(229794)/i(231754),	-- Kestrel
+s(229795)/i(231755),	-- Peregrine
+s(229800)/i(231806),	-- Searing Arrow
+s(229801)/i(231807),	-- Searing Shot
+s(229847)/i(231890),	-- Terrestris
+s(230198)/i(232297),	--
+1.15.5.57537
+s(230310)/i(232560),	--
+s(231137)/i(233672),	-- Doomcaller's Pants
+s(231138)/i(233673),	-- Doomcaller's Treads
+s(231161)/i(233696),	-- Stormcaller's Sabatons
+s(231189)/i(233724),	-- Battle Hardened Plate Girdle
+s(231190)/i(233725),	-- Battle Hardened Plate Girdle
+s(231191)/i(233726),	-- Battle Hardened Plate Armguards
+s(231192)/i(233727),	-- Battle Hardened Plate Armguards
+s(231193)/i(233737),	-- Blood-Caked Cloak
+s(231194)/i(233738),	-- Blood-Caked Cape
+s(231195)/i(233739),	-- Blood-Caked Drape
+s(231196)/i(233740),	-- Blood-Caked Shroud
+s(231197)/i(233741),	-- Battle Hardened Lamellar Belt
+s(231198)/i(233742),	-- Battle Hardened Lamellar Armguards
+s(231199)/i(233743),	-- Battle Hardened Lamellar Wrists
+s(231200)/i(233744),	-- Battle Hardened Lamellar Cord
+s(231201)/i(233745),	-- Battle Hardened Mail Waistband
+s(231202)/i(233746),	-- Battle Hardened Mail Cord
+s(231203)/i(233747),	-- Battle Hardened Mail Belt
+s(231204)/i(233748),	-- Battle Hardened Mail Bracers
+s(231205)/i(233749),	-- Battle Hardened Mail Wristguards
+s(231206)/i(233750),	-- Battle Hardened Mail Vambraces
+s(231207)/i(233751),	-- Battle Hardened Chain Girdle
+s(231208)/i(233752),	-- Battle Hardened Chain Girdle
+s(231209)/i(233753),	-- Battle Hardened Chain Belt
+s(231210)/i(233754),	-- Battle Hardened Chain Belt
+s(231211)/i(233755),	-- Battle Hardened Chain Wristguards
+s(231212)/i(233756),	-- Battle Hardened Chain Wristguards
+s(231213)/i(233757),	-- Battle Hardened Chain Bracers
+s(231214)/i(233758),	-- Battle Hardened Chain Bracers
+s(231215)/i(233759),	-- Battle Hardened Dragonhide Bracers
+s(231216)/i(233760),	-- Battle Hardened Dragonhide Bracers
+s(231217)/i(233761),	-- Battle Hardened Dragonhide Belt
+s(231218)/i(233762),	-- Battle Hardened Dragonhide Belt
+s(231219)/i(233763),	-- Battle Hardened Dragonhide Waistguard
+s(231220)/i(233764),	-- Battle Hardened Dragonhide Waistguard
+s(231221)/i(233765),	-- Battle Hardened Dragonhide Cord
+s(231222)/i(233766),	-- Battle Hardened Dragonhide Cord
+s(231223)/i(233767),	-- Battle Hardened Dragonhide Wrists
+s(231224)/i(233768),	-- Battle Hardened Dragonhide Wrists
+s(231225)/i(233769),	-- Battle Hardened Dragonhide Armbands
+s(231226)/i(233770),	-- Battle Hardened Dragonhide Armbands
+s(231227)/i(233771),	-- Battle Hardened Leather Girdle
+s(231228)/i(233772),	-- Battle Hardened Leather Girdle
+s(231229)/i(233773),	-- Battle Hardened Leather Armsplints
+s(231230)/i(233774),	-- Battle Hardened Leather Armsplints
+s(231231)/i(233775),	-- Battle Hardened Silk Cuffs
+s(231232)/i(233776),	-- Battle Hardened Silk Cuffs
+s(231233)/i(233777),	-- Battle Hardened Silk Sash
+s(231234)/i(233778),	-- Battle Hardened Silk Sash
+s(231235)/i(233779),	-- Battle Hardened Satin Bracers
+s(231236)/i(233780),	-- Battle Hardened Satin Bracers
+s(231237)/i(233781),	-- Battle Hardened Satin Wrists
+s(231238)/i(233782),	-- Battle Hardened Satin Wrists
+s(231239)/i(233783),	-- Battle Hardened Satin Sash
+s(231240)/i(233784),	-- Battle Hardened Satin Sash
+s(231241)/i(233785),	-- Battle Hardened Satin Cinch
+s(231242)/i(233786),	-- Battle Hardened Satin Cinch
+s(231243)/i(233787),	-- Battle Hardened Dreadweave Cuffs
+s(231244)/i(233788),	-- Battle Hardened Dreadweave Cuffs
+s(231245)/i(233789),	-- Battle Hardened Dreadweave Belt
+s(231246)/i(233790),	-- Battle Hardened Dreadweave Belt
+s(231505)/i(234129),	-- Onyx Embedded Leggings
+s(231506)/i(234133),	-- Drudge Boots
+s(231507)/i(234134),	-- Gnomish Turban of Psychic Might
+s(231508)/i(234136),	-- Darkwater Robes
+s(231509)/i(234137),	-- Fang of Korialstrasz
+s(231510)/i(234138),	-- Shadowsong's Sorrow
+s(231511)/i(234139),	-- Ravencrest's Legacy
+s(231512)/i(234141),	-- Runesword of the Red
+s(231540)/i(234288),	-- Ironvine Belt
+s(231541)/i(234290),	-- Ironvine Gloves
+s(231542)/i(234292),	-- Ironvine Breastplate
+s(231543)/i(234294),	-- Sandstalker Bracers
+s(231544)/i(234296),	-- Sandstalker Gauntlets
+s(231545)/i(234298),	-- Sandstalker Breastplate
+s(231546)/i(234300),	-- Spitfire Bracers
+s(231547)/i(234302),	-- Spitfire Gauntlets
+s(231548)/i(234304),	-- Spitfire Breastplate
+s(231549)/i(234306),	-- Bramblewood Belt
+s(231550)/i(234308),	-- Bramblewood Boots
+s(231551)/i(234310),	-- Bramblewood Helm
+s(231555)/i(234319),	-- Heavy Obsidian Belt
+s(231556)/i(234321),	-- Light Obsidian Belt
+s(231557)/i(234324),	-- Dreamscale Breastplate
+s(248928)/i(234482),	-- Dreamscale Kilt
+s(248931)/i(234487),	-- Dreamscale Visor
+s(249125)/i(234747),	-- Fist of Cenarius
+s(249126)/i(234748),	-- Deeprock Bracers
+s(249127)/i(234749),	-- Earthcalm Orb
+s(249133)/i(234760),	-- Rockfury Bracers
+s(249152)/i(234782),	-- Earthpower Vest
+s(249155)/i(234785),	-- Gloves of Earthen Power
+s(249157)/i(234788),	-- Earthweave Cloak
+s(249161)/i(234792),	-- Ravenholdt Slicer
+s(249162)/i(234793),	-- Shivsprocket's Shiv
+s(249166)/i(234797),	-- The Thunderwood Poker
+s(249167)/i(234798),	-- Doomulus Prime
+s(249168)/i(234799),	-- Fahrad's Reloading Repeater
+s(249169)/i(234800),	-- Simone's Cultivating Hammer
+s(249170)/i(234802),	-- Cloak of the Fallen God
+1.15.5.57716
+s(266863)/i(235473),	-- Grand Marshal's Barricade
+s(266864)/i(235474),	-- High Warlord's Barricade
+s(266866)/i(235476),	-- High Warlord's Hacker
+s(266867)/i(235477),	-- High Warlord's Bonecracker
+s(266868)/i(235478),	-- High Warlord's Shiv
+s(266869)/i(235479),	-- Grand Marshal's Shiv
+s(266870)/i(235480),	-- Grand Marshal's Bonecracker
+s(266871)/i(235481),	-- Grand Marshal's Hacker
+1.15.6.58185
+s(267023)/i(235583),	-- Test Dagger
+s(267063)/i(235699),	--
+s(284813)/i(236704),	-- Frosty Wrists
+s(284814)/i(236705),	-- Frosty Gloves
+s(284815)/i(236706),	-- Frosty Vest
+s(284951)/i(236871),	-- Creepy Censor Sensors
+1.15.6.58658
+s(285174)/i(237275),	-- Icebane Helmet
+s(285175)/i(237277),	-- Frosty Leggings
+s(285176)/i(237278),	-- The Purifier
+s(285177)/i(237281),	-- Bracers of Hope
+s(285178)/i(237282),	-- Bracers of Subterfuge
+s(285226)/i(237348),	-- Monster - Sword, Short Ornate
+1.15.7.59706
+s(168412)/i(190325),	-- Monster - Incubus Whip Mace1H
+s(287139)/i(237897),	--
+s(287530)/i(238687),	-- Maul of Onslaught
+s(287840)/i(238918),	--
+s(287849)/i(238945),	-- Caladboulder
+s(287862)/i(238961),	-- Caladbolg
+s(287979)/i(239061),	-- Flawless Obsidian Hammer
+s(288000)/i(239123),	-- Monster - BOW_1H_STANDARD_C_01 - Red
+s(288012)/i(239159),	-- S03 - Scarlet Enclave - Captains Shield
+s(288015)/i(239221),	-- Monster - Sword1H, Basic
+s(288259)/i(239540),	-- Dawnstalker Headpiece
+s(288302)/i(239618),	-- Monster - Sword 1H - Vanquisher's Sword (Alt)
+s(288310)/i(239621),	--
+s(288349)/i(239688),	-- Monster - Spear 2H - Scarlet Cavalry - Spear
+s(288775)/i(240195),	-- Invisible Sword
+s(288777)/i(240217),	-- Monster Item - Stave_2H_Jeweled_A_02 - Red
+s(289299)/i(240742),	-- Monster - 1H, Shortsword, Red
+s(289388)/i(240837),	-- Strings of Fate
+s(289414)/i(240993),	--
+s(289415)/i(240994),	-- Tim's Test Ranged Weapon 2
+s(289416)/i(240997),	-- Fratley's Spur
+s(289450)/i(241082),	-- Ashbringer
+s(289451)/i(241083),	-- S03 - Scarlet Enclave - Sword 2h Raid
+s(289452)/i(241084),	-- S03 - Scarlet Enclave - Herod's Sword - Normal
+s(289453)/i(241085),	-- S03 - Scarlet Enclave - Sword 1h
+s(289454)/i(241086),	-- Scarlet Tower Shield
+s(289455)/i(241087),	-- Scarlet Staff
+s(289456)/i(241088),	-- Scarlet Staff
+s(289457)/i(241089),	-- Scarlet Dagger
+s(289458)/i(241090),	-- Scarlet Great Axe
+s(289459)/i(241091),	-- Scarlet Mace
+s(289460)/i(241092),	-- Scarlet Edge
+s(289487)/i(241120),	-- S03 - Scarlet Enclave - Herod's Sword - Molten
+s(289488)/i(241121),	-- Reborn Dagger
+s(289489)/i(241122),	-- Reborn Knife
+s(289490)/i(241123),	-- Reborn Dagger
+s(289491)/i(241124),	-- Reborn Knife
+s(289527)/i(241212),	-- Cluck Cannon
+s(289606)/i(241649),	-- Gauntlets of the Hillsbrad Guard
+s(290246)/i(242427),	-- Putress' Diary
+s(290247)/i(242429),	-- Putress' Diary
+s(290248)/i(242432),	-- Putress' Diary
+s(290249)/i(242434),	-- Putress' Diary
+s(290250)/i(242435),	-- Putress' Diary
+s(290251)/i(242436),	-- Putress' Diary
+1.15.7.59856
+s(291557)/i(242710),	-- Monster Weapon [DNT]
+1.15.7.60000
+s(291563)/i(242801),	--
+s(291564)/i(242802),	--
+s(291565)/i(242803),	--
+s(291566)/i(242804),	--
+s(291567)/i(242805),	--
+s(291568)/i(242806),	--
+s(291569)/i(242807),	--
+s(291570)/i(242808),	--
+s(291571)/i(242809),	--
+s(291572)/i(242810),	--
+s(291573)/i(242811),	--
+s(291574)/i(242812),	--
+s(291575)/i(242813),	--
+s(291576)/i(242814),	--
+s(291577)/i(242815),	--
+s(291578)/i(242816),	--
+s(291579)/i(242817),	--
+s(291580)/i(242818),	--
+s(291581)/i(242819),	--
+s(291582)/i(242820),	--
+s(291583)/i(242821),	--
+s(291584)/i(242822),	--
+s(291585)/i(242823),	--
+s(291586)/i(242824),	--
+s(291587)/i(242825),	--
+s(291588)/i(242826),	--
+s(291589)/i(242827),	--
+s(291590)/i(242828),	--
+s(291591)/i(242829),	--
+s(291592)/i(242830),	--
+s(291593)/i(242831),	--
+s(291594)/i(242832),	--
+s(291595)/i(242833),	--
+s(291596)/i(242834),	--
+s(291597)/i(242835),	--
+s(291598)/i(242836),	--
+s(291599)/i(242837),	--
+s(291600)/i(242838),	--
+s(291601)/i(242839),	--
+s(291602)/i(242840),	--
+s(291603)/i(242841),	--
+s(291604)/i(242842),	--
+s(291605)/i(242843),	--
+s(291606)/i(242844),	--
+s(291607)/i(242845),	--
+s(291608)/i(242846),	--
+s(291609)/i(242847),	--
+s(291610)/i(242848),	--
+s(291620)/i(242851),	--
+s(291621)/i(242852),	--
+s(291622)/i(242853),	--
+s(291623)/i(242854),	--
+s(291624)/i(242855),	--
+s(291625)/i(242856),	--
+s(291626)/i(242857),	--
+s(291627)/i(242858),	--
+s(291628)/i(242859),	--
+s(291629)/i(242860),	--
+s(291630)/i(242861),	--
+s(291631)/i(242862),	--
+s(291632)/i(242863),	--
+s(291633)/i(242864),	--
+s(291634)/i(242865),	--
+s(291635)/i(242866),	--
+s(291636)/i(242868),	--
+s(291637)/i(242869),	--
+s(291638)/i(242870),	--
+s(291639)/i(242871),	--
+s(291640)/i(242872),	--
+s(291641)/i(242873),	--
+s(291642)/i(242874),	--
+s(291643)/i(242875),	--
+s(291644)/i(242876),	--
+s(291645)/i(242877),	--
+s(291646)/i(242878),	--
+s(291647)/i(242879),	--
+s(291648)/i(242880),	--
+s(291649)/i(242881),	--
+s(291651)/i(242882),	--
+s(291653)/i(242883),	--
+s(291655)/i(242884),	--
+s(291656)/i(242885),	--
+s(291658)/i(242886),	--
+s(291660)/i(242887),	--
+s(291661)/i(242888),	--
+s(291663)/i(242889),	--
+s(291664)/i(242890),	--
+s(291665)/i(242891),	--
+s(291774)/i(243010),	-- Corrupted Ashbringer
+s(291812)/i(243064),	-- Long Staff
+1.15.7.60249
+s(291868)/i(243345),	-- Long Staff
+s(292215)/i(244460),	-- Caladbolg

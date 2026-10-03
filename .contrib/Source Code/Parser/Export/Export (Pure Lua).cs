@@ -118,15 +118,15 @@ namespace ATT
         private static void ExportPureLuaKeyValue(Exporter builder, object key, object value, string subindent = "")
         {
             // Append the Sub-Indent and the Field Name
-            builder.Append(subindent).Append("[");
-            ExportPureLua(builder, key, subindent);
+            builder.Append(subindent);
+            ExportFieldName(builder, key);
             if (CompressedLua)
             {
-                builder.Append("]=");
+                builder.Append("=");
             }
             else
             {
-                builder.Append("] = ");
+                builder.Append(" = ");
             }
 
             // Append the undetermined object's format to the builder.

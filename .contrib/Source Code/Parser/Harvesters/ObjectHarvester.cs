@@ -51,6 +51,17 @@ namespace ATT
         /// </summary>
         private const string NOT_FOUND_MESSAGE = "\"database-detail-page-not-found-message\"";
 
+        /// <summary>
+        /// Represents that a specific name should render as a commented TODO rather than directly exported
+        /// </summary>
+        public const string TODO_NAME = "-- TODO";
+
+        private const string EMPTY_DOCUMENT = "EMPTY";
+
+        private static bool WowheadShadowban = false;
+
+        private static int FailureCount = 0;
+
         private static List<string> _gameFlavors;
         /// <summary>
         /// The game flavors of WoWHead to try querying.
@@ -61,33 +72,41 @@ namespace ATT
             {
                 if (_gameFlavors != null) return _gameFlavors;
 
-                _gameFlavors = new List<string> { string.Empty };
-                if (Framework.CURRENT_RELEASE_VERSION < Framework.FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
+                _gameFlavors = new List<string> { };
+                if (Framework.PreProcessorTags.Contains("FOREVER"))
                 {
-                    if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["CATA"].ConvertVersion())
-                    {
-                        _gameFlavors.Insert(0, "cata");
-                    }
-                    else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
-                    {
-                        _gameFlavors.Insert(0, "wotlk");
-                    }
-                    else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["TBC"].ConvertVersion())
-                    {
-                        _gameFlavors.Insert(0, "tbc");
-                    }
-                    else
-                    {
-                        _gameFlavors.Insert(0, "classic");
-                    }
+                    _gameFlavors.Insert(0, "forever");
                 }
-                if (Framework.PreProcessorTags.Contains("PTR"))
+                else
                 {
-                    _gameFlavors.Insert(0, "ptr");
-                }
-                if (Framework.PreProcessorTags.Contains("PTR2"))
-                {
-                    _gameFlavors.Insert(0, "ptr-2");
+                    if (Framework.CURRENT_RELEASE_VERSION < Framework.FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
+                    {
+                        if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["CATA"].ConvertVersion())
+                        {
+                            _gameFlavors.Insert(0, "cata");
+                        }
+                        else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
+                        {
+                            _gameFlavors.Insert(0, "wotlk");
+                        }
+                        else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["TBC"].ConvertVersion())
+                        {
+                            _gameFlavors.Insert(0, "tbc");
+                        }
+                        else
+                        {
+                            _gameFlavors.Insert(0, "classic");
+                        }
+                    }
+                    else _gameFlavors.Add(string.Empty);
+                    if (Framework.PreProcessorTags.Contains("PTR"))
+                    {
+                        _gameFlavors.Insert(0, "ptr");
+                    }
+                    if (Framework.PreProcessorTags.Contains("PTR2"))
+                    {
+                        _gameFlavors.Insert(0, "ptr-2");
+                    }
                 }
 
                 return _gameFlavors;
@@ -97,7 +116,7 @@ namespace ATT
         /// <summary>
         /// All of the supported locales. (excluding english)
         /// </summary>
-        private static readonly string[] SupportedLocales = { "es", "mx", "de", "fr", "it", "pt", "ru", "ko", "cn", "tw" };
+        private static readonly string[] SupportedLocales = Framework.SUPPORTED_LOCALES.Except(l => l == "en").ToArray();
 
         /// <summary>
         /// All of the objects and their fields that have been dirtied.
@@ -113,6 +132,9 @@ namespace ATT
         /// <returns></returns>
         private static string GetDocumentFromWoWHead(long objectID, string locale = "en", string flavor = null)
         {
+            // Wowhead Cloudflare CDN shadowbans your IP after about 30 requests within a minute or so
+            if (WowheadShadowban) return null;
+
             try
             {
                 // https://www.wowhead.com/classic/de/object=14845
@@ -126,7 +148,21 @@ namespace ATT
             catch (Exception e)
             {
                 Trace.WriteLine(e);
-                return string.Empty;
+                if (e.Message.Contains("(403)"))
+                {
+                    WowheadShadowban = true;
+                    return null;
+                }
+                else
+                {
+                    FailureCount++;
+                    // after a lot of failures, just give up for this session
+                    if (FailureCount > 20)
+                    {
+                        WowheadShadowban = true;
+                    }
+                }
+                return EMPTY_DOCUMENT;
             }
         }
 
@@ -166,63 +202,76 @@ namespace ATT
         }
 
         /// <summary>
-        /// Export the dirty objects.
+        /// Export the provided objectDB
         /// </summary>
         /// <param name="extraIndent">The initial extra indent. (excluding the first line with the parenthesis)</param>
         /// <returns>The exported string in a builder or null if there are no dirty objects.</returns>
-        public static StringBuilder ExportDirtyObjects(string extraIndent="")
+        public static StringBuilder ExportObjects(IDictionary<long, IDictionary<string, object>> db, string extraIndent = "")
         {
-            if (DIRTY_OBJECT_FIELDS.Any())
+            if (!db.Any())
+                return null;
+
+            var builder = new StringBuilder();
+            var keys = db.Keys.ToList();
+            Framework.LogDebug($"Found {keys.Count} Dirty objects. Exporting now...");
+            keys.Sort();
+            builder.AppendLine("{");
+            foreach (var key in keys)
             {
-                var builder = new StringBuilder();
-                var keys = DIRTY_OBJECT_FIELDS.Keys.ToList();
-                Trace.Write("Found ");
-                Trace.Write(keys.Count());
-                Trace.WriteLine("Dirty objects. Exporting now...");
-                keys.Sort();
-                builder.AppendLine("{");
-                foreach (var key in keys)
+                var objectData = db[key];
+                builder.Append(extraIndent).Append("\t[").Append(key).AppendLine("] = {");
+                if (objectData.TryGetValue("readable", out string readable))
                 {
-                    var objectData = DIRTY_OBJECT_FIELDS[key];
-                    builder.Append(extraIndent).Append("\t[").Append(key).AppendLine("] = {");
-                    if (objectData.TryGetValue("readable", out string readable))
+                    builder.Append(extraIndent).Append("\t\treadable = ").Append(FormatStringForExport(readable)).AppendLine(",");
+                }
+                if (objectData.TryGetValue("icon", out string icon))
+                {
+                    if (icon.Contains("\""))
                     {
-                        builder.Append(extraIndent).Append("\t\treadable = ")
-                            .Append(FormatStringForExport(readable)).AppendLine(",");
+                        builder.Append(extraIndent).Append("\t\ticon = ").Append(FormatStringForExport(icon)).AppendLine(",");
                     }
-                    if (objectData.TryGetValue("icon", out string icon))
+                    else
                     {
-                        builder.Append(extraIndent).Append("\t\ticon = ")
-                            .Append(FormatStringForExport(icon)).AppendLine(",");
+                        builder.Append(extraIndent).Append("\t\ticon = ").Append(icon).AppendLine(",");
                     }
-                    if (objectData.TryGetValue("model", out object model))
+                }
+                if (objectData.TryGetValue("model", out object model))
+                {
+                    builder.Append(extraIndent).Append("\t\tmodel = ").Append(model).AppendLine(",");
+                }
+                if (objectData.TryGetValue("ignorewowhead", out bool ignore))
+                {
+                    builder.Append(extraIndent).AppendLine("\t\tignorewowhead = true,");
+                }
+                if (objectData.TryGetValue("text", out object localeObj) && localeObj is Dictionary<string, object> locales)
+                {
+                    builder.Append(extraIndent).AppendLine("\t\ttext = {");
+                    if (locales.TryGetValue("en", out string localeString))
                     {
-                        builder.Append(extraIndent).Append("\t\tmodel = ")
-                            .Append(model).AppendLine(",");
+                        builder.Append(extraIndent).Append("\t\t\ten = ").Append(FormatStringForExport(localeString)).AppendLine(",");
                     }
-                    if (objectData.TryGetValue("text", out object localeObj) && localeObj is Dictionary<string, object> locales)
+                    foreach (var locale in SupportedLocales)
                     {
-                        builder.Append(extraIndent).AppendLine("\t\ttext = {");
-                        if (locales.TryGetValue("en", out string localeString))
+                        if (locales.TryGetValue(locale, out localeString))
                         {
-                            builder.Append(extraIndent).Append("\t\t\ten = ")
-                                .Append(FormatStringForExport(localeString)).AppendLine(",");
-                        }
-                        foreach (var locale in SupportedLocales)
-                        {
-                            if (locales.TryGetValue(locale, out localeString))
+                            if (localeString == TODO_NAME)
+                            {
+                                locales[locale] = null;
+                                builder.Append(extraIndent).Append("\t\t\t-- TODO: ").Append(locale).Append(" = ")
+                                    .Append(FormatStringForExport(string.Empty)).AppendLine(",");
+                            }
+                            else
                             {
                                 builder.Append(extraIndent).Append("\t\t\t").Append(locale).Append(" = ")
                                     .Append(FormatStringForExport(localeString)).AppendLine(",");
                             }
                         }
-                        builder.Append(extraIndent).AppendLine("\t\t},");
                     }
-                    builder.Append(extraIndent).Append("\t").AppendLine("},");
+                    builder.Append(extraIndent).AppendLine("\t\t},");
                 }
-                return builder.Append(extraIndent).Append("}");
+                builder.Append(extraIndent).Append("\t").AppendLine("},");
             }
-            return null;
+            return builder.Append(extraIndent).Append("}");
         }
 
         /// <summary>
@@ -230,14 +279,21 @@ namespace ATT
         /// If there are no dirty objects, this function does nothing.
         /// </summary>
         /// <param name="filePath">The file path.</param>
-        public static void ExportDirtyObjectsToFilePath(string filePath)
+        public static void ExportDirtyObjectsToFilePath(string filePath) => ExportObjectsToFilePath(DIRTY_OBJECT_FIELDS, filePath);
+
+        /// <summary>
+        /// Exports the provided objectDB to a given file path.
+        /// </summary>
+        /// <param name="db"></param>
+        /// <param name="filePath"></param>
+        public static void ExportObjectsToFilePath(IDictionary<long, IDictionary<string, object>> db, string filePath, string filePrefix = null)
         {
-            var finalDirtyObjectStringBuilder = ExportDirtyObjects();
-            if (finalDirtyObjectStringBuilder != null)
+            var sb = ExportObjects(db);
+            if (sb != null)
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-                File.WriteAllText(filePath, finalDirtyObjectStringBuilder
-                    .Insert(0, "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
+                File.WriteAllText(filePath, sb
+                    .Insert(0, (filePrefix ?? string.Empty) + Environment.NewLine + "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
                     .Append($")\ndo ObjectDB[objectID] = objectData; end{Environment.NewLine}").ToString(), Encoding.UTF8);
             }
         }
@@ -268,12 +324,50 @@ namespace ATT
         /// <returns>The name or an empty string.</returns>
         private static string ParseNameFromDocument(string document)
         {
-            if(document.Contains(NOT_FOUND_MESSAGE)) return string.Empty;
+            if (document.Contains(NOT_FOUND_MESSAGE))
+                return string.Empty;
+
             int index = document.IndexOf(NAME_START);
-            if (index == -1) return string.Empty;
+            if (index == -1)
+                return string.Empty;
+
             index += NAME_START.Length;
-            return document.Substring(index, document.IndexOf(NAME_END, index) - index).Replace("&quot;", "\"").Trim();
+
+            string raw = document.Substring(index, document.IndexOf(NAME_END, index) - index)
+                                 .Replace("&quot;", "\"")
+                                 .Trim();
+
+            return StripHtmlTags(raw);
         }
+
+        private static string StripHtmlTags(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            var sb = new StringBuilder(input.Length);
+            bool insideTag = false;
+
+            foreach (char c in input)
+            {
+                if (c == '<')
+                {
+                    insideTag = true;
+                    continue;
+                }
+                if (c == '>')
+                {
+                    insideTag = false;
+                    continue;
+                }
+
+                if (!insideTag)
+                    sb.Append(c);
+            }
+
+            return sb.ToString();
+        }
+
 
         /// <summary>
         /// Attempt to update the object data from WoWHead.
@@ -281,8 +375,17 @@ namespace ATT
         /// <param name="objectID">The object ID.</param>
         /// <param name="objectData">The object data.</param>
         /// <returns>Whether or not the object is dirty.</returns>
-        public static bool UpdateInformationFromWoWHead(long objectID, Dictionary<string, object> objectData)
+        public static bool UpdateInformationFromWoWHead(long objectID, IDictionary<string, object> objectData)
         {
+            // If the Object is flagged to skip wowhead
+            if (objectData.ContainsKey("ignorewowhead"))
+            {
+                return false;
+            }
+
+            // Wowhead Cloudflare CDN shadowbans your IP after about 30 requests within a minute or so
+            if (WowheadShadowban) return false;
+
             // Don't look at "custom" objects... Yeesh. Why do these even exist?!
             if (objectID >= 9000000) return false;
 
@@ -299,7 +402,7 @@ namespace ATT
             }
             else
             {
-                objectData["text"] = textLocalizations = new Dictionary<string, object>();
+                textLocalizations = new Dictionary<string, object>();
                 dirty = true;
             }
 
@@ -324,14 +427,21 @@ namespace ATT
                 foreach (string flavor in GameFlavors)
                 {
                     englishDocument = GetDocumentFromWoWHead(objectID, "en", flavor);
-                    if (!string.IsNullOrEmpty(englishDocument))
+                    switch (englishDocument)
                     {
-                        name = ParseNameFromDocument(englishDocument);
-                        if (!string.IsNullOrEmpty(name))
-                        {
-                            gameFlavor = flavor;
+                        case EMPTY_DOCUMENT:
+                            objectData["ignorewowhead"] = true;
                             break;
-                        }
+                        case null:
+                        case "":
+                            break;
+                        default:
+                            name = ParseNameFromDocument(englishDocument);
+                            if (!string.IsNullOrEmpty(name))
+                            {
+                                gameFlavor = flavor;
+                            }
+                            break;
                     }
                 }
 
@@ -382,6 +492,8 @@ namespace ATT
                 }
             }
 
+            // Only update the object data if we have obtained the en locale (Wowhead likes to shadow ban repeated url requests)
+            objectData["text"] = textLocalizations;
             // The english text, which acts as the default.
             string englishText = textLocalizations["en"].ToString();
 
@@ -390,26 +502,45 @@ namespace ATT
             {
                 if (!textLocalizations.TryGetValue(locale, out string oldValue) || oldValue.Contains(englishText))
                 {
+                    string name = oldValue;
                     string document = GetDocumentFromWoWHead(objectID, locale, gameFlavor);
-                    if (!string.IsNullOrEmpty(document))
+                    switch (document)
                     {
-                        // Attempt to parse the non-english document.
-                        string name = ParseNameFromDocument(document);
-                        if (!string.IsNullOrEmpty(name))
-                        {
-                            Trace.Write(" text.");
-                            Trace.Write(locale);
-                            Trace.Write(" = ");
-                            Trace.WriteLine(name);
-                            textLocalizations[locale] = name;
-                            dirtyTextFields[locale] = name;
-                            dirtyFields["text"] = dirtyTextFields;
-                            dirty = true;
-                        }
+                        case EMPTY_DOCUMENT:
+                            objectData["ignorewowhead"] = true;
+                            break;
+                        case null:
+                        case "":
+                            break;
+                        default:
+                            // Attempt to parse the non-english document.
+                            name = ParseNameFromDocument(document);
+                            if (!string.IsNullOrEmpty(name))
+                            {
+                                // don't store the English default for other locales
+                                if (name.StartsWith("[") && name.EndsWith("]"))
+                                {
+                                    name = oldValue;
+                                }
+
+                                Trace.Write(" text.");
+                                Trace.Write(locale);
+                                Trace.Write(" = ");
+                                Trace.WriteLine(name);
+                            }
+                            break;
+                    }
+
+                    if (name != oldValue)
+                    {
+                        textLocalizations[locale] = name;
+                        dirtyTextFields[locale] = name;
+                        dirtyFields["text"] = dirtyTextFields;
+                        dirty = true;
                     }
                 }
             }
-            if(dirty && dirtyFields.Any()) DIRTY_OBJECT_FIELDS[objectID] = dirtyFields;
+            if (dirty && dirtyFields.Any()) DIRTY_OBJECT_FIELDS[objectID] = dirtyFields;
             return dirty;
         }
     }

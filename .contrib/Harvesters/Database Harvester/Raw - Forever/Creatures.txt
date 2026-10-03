@@ -1,0 +1,181 @@
+﻿1.60.1.69876
+2671@@@Mechanical Squirrel
+7380@@@Siamese
+7381@@@Silver Tabby
+7382@@@Orange Tabby
+7383@@@Black Tabby
+7384@@@Cornish Rex
+7385@@@Bombay
+7386@@@White Kitten
+7387@@@Green Wing Macaw
+7388@@@Cockatoo
+7389@@@Senegal
+7390@@@Cockatiel
+7391@@@Hyacinth Macaw
+7392@@@Prairie Chicken
+7394@@@Ancona Chicken
+7395@@@Cockroach
+7543@@@Dark Whelpling
+7544@@@Crimson Whelpling
+7545@@@Emerald Whelpling
+7546@@@Bronze Whelpling
+7547@@@Azure Whelpling
+7548@@@Faeling
+7549@@@Tree Frog
+7550@@@Wood Frog
+7551@@@Dart Frog
+7552@@@Island Frog
+7553@@@Great Horned Owl
+7554@@@Snowy Owl
+7555@@@Hawk Owl
+7556@@@Eagle Owl
+7558@@@Cottontail Rabbit
+7559@@@Arctic Hare
+7560@@@Snowshoe Rabbit
+7561@@@Albino Snake
+7562@@@Brown Snake
+7565@@@Black Kingsnake
+7566@@@Scarlet Snake
+7567@@@Crimson Snake
+7568@@@Ribbon Snake
+7569@@@Green Water Snake
+7570@@@Elven Wisp
+8376@@@Mechanical Chicken
+9656@@@Tiny Walking Bomb
+9657@@@Lil' Smoky
+9662@@@Sprite Darter Hatchling
+9936@@@Corrupted Kitten
+10259@@@Worg Pup
+10598@@@Smolderweb Hatchling
+11236@@@Blood Parrot
+11325@@@Panda Cub
+11326@@@Mini Diablo
+11327@@@Zergling
+12419@@@Lifelike Toad
+14421@@@Brown Prairie Dog
+14629@@@Loggerhead Snapjaw
+14630@@@Leatherback Snapjaw
+14631@@@Olive Snapjaw
+14632@@@Hawksbill Snapjaw
+14633@@@Albino Snapjaw
+14755@@@Tiny Green Dragon
+14756@@@Tiny Red Dragon
+14878@@@Jubling
+15186@@@Murky
+15356@@@Blue Baby Murloc
+15357@@@Purple Baby Murloc
+15358@@@White Baby Murloc
+15359@@@Pink Baby Murloc
+15360@@@Green Baby Murloc
+15361@@@Murki
+15429@@@Disgusting Oozeling
+15661@@@Baby Shark
+15698@@@Father Winter's Helper
+15699@@@Tranquil Mechanical Yeti
+15705@@@Winter's Little Helper
+15706@@@Winter Reindeer
+15710@@@Tiny Snowman
+16069@@@Gurky
+16085@@@Peddlefeet
+16445@@@Terky
+16456@@@Poley
+16547@@@Speedy
+16548@@@Mr. Wiggles
+16549@@@Whiskers the Rat
+16701@@@Spirit of Summer
+17254@@@White Tiger Cub
+17255@@@Hippogryph Hatchling
+23909@@@Sinister Squashling
+55571@@@Lunar Lantern
+55574@@@Festival Lantern
+61544@@@Orphan Spell Visual Invisible Holder
+121295@@@Invisible Stalker
+130357@@@Invisible Stalker
+167875@@@RTC Player Dummy
+259430@@@Thief
+259842@@@Musical Gustjumper
+260580@@@Mini Uber Diablo
+261680@@@Snowy Wolf Pup
+262224@@@[DNT] Template Creature
+262986@@@Rusty Wolf Pup
+263559@@@Child of By'zaali
+264632@@@Sister
+264634@@@Leo
+264636@@@Buster
+264638@@@Callie
+264639@@@Bebe
+265797@@@Wild Chicken
+266025@@@Rat Familiar
+266735@@@Excitable Slime
+267842@@@Bitter Baitling
+268707@@@Prairie Wolf Pup
+268744@@@Frog Familiar
+268840@@@Spectral Bear Cub
+270313@@@Generic Bunny
+271368@@@Shadowgale Squirrel
+271636@@@Weevil K. Neevil
+271867@@@Pachimari
+271870@@@Galestrider Chick
+271874@@@Black Furbolg Pet
+271875@@@Brown Furbolg Pet
+271876@@@Gray Furbolg Pet
+271877@@@Tan Furbolg Pet
+271878@@@White Furbolg Pet
+271888@@@Purple Ent Pet
+271889@@@Red Ent Pet
+271890@@@Blue Ent Pet
+271891@@@Gray Ent Pet
+271892@@@Orange Ent Pet
+271893@@@Yellow Ent Pet
+271913@@@Plagued Cockroach
+271914@@@Undercity Cockroach
+271915@@@Jungle Boa
+271972@@@Brown Prairie Dog
+271979@@@Brown Ground Squirrel
+271980@@@Red Ground Squirrel
+271993@@@Brown Rabbit
+272012@@@Cat Familiar
+272210@@@Orc Mage
+272213@@@Human Hunter
+272214@@@Tauren Druid
+272215@@@Night Elf Warrior
+272219@@@Troll Warlock
+272226@@@Gnome Priest
+272227@@@Skyborne Shaman
+272229@@@Skyborne Mage Alliance
+272231@@@Undead Paladin
+272235@@@Dwarf Shaman
+272238@@@Orc Warrior
+272239@@@Human Warlock
+272241@@@Tauren Hunter
+272242@@@Night Elf Druid
+272243@@@Gnome Rogue
+272245@@@Troll Rogue
+272249@@@Skyborne Warrior Alliance
+272250@@@Skyborne Druid
+272251@@@Dwarf Paladin
+272252@@@Undead Warlock
+272309@@@Tux
+272310@@@Mocha
+272328@@@Mini Diablo
+272329@@@Zergling
+272330@@@Panda Cub
+272614@@@Cappy
+273003@@@Worg Pup
+273391@@@Baby Crocolisk
+273916@@@Human Paladin
+273917@@@Night Elf Priest
+273918@@@Skyborne Hunter
+273919@@@Dwarf Hunter
+273920@@@Human Mage
+273921@@@Dwarf Warrior
+273925@@@Gnome Warrior
+273926@@@Gnome Warlock
+273927@@@Night Elf Rogue
+273928@@@Human Priest
+273956@@@Condor Hatchling
+274334@@@Tallstrider Hatchling
+274412@@@Minfernal
+274947@@@Minimule
+1.60.1.70009
+276331@@@Spawn of Grubthor

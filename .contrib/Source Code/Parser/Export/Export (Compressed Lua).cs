@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace ATT
 {
@@ -27,7 +28,7 @@ namespace ATT
         {
             new [] { @"\n|\r", "\t" },
             new [] { @"\t[\t]+", "\t" },
-            new [] { @";[\s]*", @";" },
+            new [] { @";[\s]*", @" " },
             new [] { @",[\s]*", @"," },
             new [] { @"[\s]+=[\s]+", @"=" },
             new [] { @"[\s]+==[\s]+", @"==" },
@@ -89,81 +90,39 @@ namespace ATT
         private static void ExportCompressedLua<KEY, VALUE>(Exporter builder, IDictionary<KEY, VALUE> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
-            if (data.Any())
+            if (!data.Any())
             {
-                // If there is no most signficant type, then we write it generically.
-                // Open Bracket for beginning of the Dictionary.
-                builder.Append('{');
-
-                // Export Fields
-                int fieldCount = 0;
-                var keys = data.Keys.ToList();
-                keys.Sort(Framework.Compare);
-                foreach (var key in keys)
-                {
-                    // If this is NOT the first field, append a comma.
-                    if (fieldCount++ > 0) builder.Append(',');
-
-                    if (AddTableNewLines)
-                        builder.Append(Environment.NewLine);
-
-                    // Append the Sub-Indent and the Field Name
-                    builder.Append("[");
-                    ExportCompressedLua(builder, key);
-                    builder.Append("]=");
-
-                    // Append the undetermined object's format to the builder.
-                    ExportCompressedLua(builder, data[key]);
-                }
-
-                // Close Bracket for the end of the Dictionary.
-                builder.Append('}');
+                builder.Append("{}");
+                return;
             }
-            else builder.Append("{}");
-        }
 
+            // If there is no most signficant type, then we write it generically.
+            // Open Bracket for beginning of the Dictionary.
+            builder.Append('{');
 
-        /// <summary>
-        /// Export the contents of the dictionary to the builder in a compressed, minified format.
-        /// Only whitelisted fields will be written in order to preserve memory and filesize.
-        /// </summary>
-        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
-        /// <param name="builder">The builder.</param>
-        /// <param name="data">The data dictionary.</param>
-        private static void ExportCompressedLua<VALUE>(Exporter builder, IDictionary<string, VALUE> data)
-        {
-            // If the dictionary doesn't have any content, then return immediately.
-            if (data.Any())
+            // Export Fields
+            int fieldCount = 0;
+            var keys = data.Keys.ToList();
+            keys.Sort(Framework.Compare);
+            foreach (var key in keys)
             {
-                // If there is no most signficant type, then we write it generically.
-                // Open Bracket for beginning of the Dictionary.
-                builder.Append('{');
+                // If this is NOT the first field, append a comma.
+                if (fieldCount++ > 0) builder.Append(',');
 
-                // Export Fields
-                int fieldCount = 0;
-                var keys = data.Keys.ToList();
-                keys.Sort(Framework.Compare);
-                foreach (var key in keys)
-                {
-                    // If this is NOT the first field, append a comma.
-                    if (fieldCount++ > 0) builder.Append(',');
+                if (AddTableNewLines)
+                    builder.Append(Environment.NewLine);
 
-                    if (AddTableNewLines)
-                        builder.Append(Environment.NewLine);
+                // Append the Sub-Indent and the Field Name
+                builder.Append("[");
+                ExportCompressedLua(builder, key);
+                builder.Append("]=");
 
-                    // Append the Sub-Indent and the Field Name
-                    builder.Append("[");
-                    ExportCompressedLua(builder, key);
-                    builder.Append("]=");
-
-                    // Append the undetermined object's format to the builder.
-                    ExportCompressedLua(builder, data[key]);
-                }
-
-                // Close Bracket for the end of the Dictionary.
-                builder.Append('}');
+                // Append the undetermined object's format to the builder.
+                ExportCompressedLua(builder, data[key]);
             }
-            else builder.Append("{}");
+
+            // Close Bracket for the end of the Dictionary.
+            builder.Append('}');
         }
 
         /// <summary>
@@ -192,8 +151,7 @@ namespace ATT
                 var onInitBody = SimplifyLuaBody(OnInitRef);
                 if (!onInitBody.Contains("return") && onInitBody.Contains("function("))
                 {
-                    Console.WriteLine("Missing a return within an OnInit function body.");
-                    Console.WriteLine(OnInitRef.ToString());
+                    Framework.LogWarn("Missing a return within an OnInit function body.", data);
                     onInitBody = $"function(t2) ({onInitBody})(t2); return t2; end";
                 }
                 builder.Append('(').Append(onInitBody).Append(")(");
@@ -236,8 +194,8 @@ namespace ATT
                     {
                         // If this is NOT the first field, append a comma.
                         if (fieldCount++ > 0) builder.Append(',');
-                        if (field.Contains('-')) builder.Append("[\"").Append(field).Append("\"]=");
-                        else builder.Append(field).Append('=');
+                        ExportFieldName(builder, field);
+                        builder.Append('=');
 
                         // Append the undetermined object's format to the builder.
                         if (field == "sym" || field == "cost")
@@ -293,7 +251,7 @@ namespace ATT
             else
             {
                 // Uhh, that shouldn't happen.
-                if (hasOnInit) Framework.LogError("ERROR: OnInit in a place where it does not belong!");
+                //if (hasOnInit) Framework.LogError("ERROR: OnInit in a place where it does not belong!");
             }
 
             // Close the Parenthesis for the end of the constructor.
@@ -430,63 +388,25 @@ namespace ATT
         {
             // Export the Category
             var builder = new Exporter(name);
-            builder.Append("_.Categories.").Append(name).Append("={");
-            foreach (var group in category)
+            builder.Append("categories.").Append(name).Append("=");
+            bool isPrimaryRootCategory = false;
+            if (Framework.RootCategoryHeaders.TryGetValue(name, out var headerObj)
+                && headerObj is Dictionary<string, object> header && header != null)
             {
-                ExportCompressedLua(builder, group);
-                builder.Append(",");
+                header["g"] = category;
+                ExportCompressedLua(builder, header);
+                isPrimaryRootCategory = true;
             }
-            builder.Remove(builder.Length - 1, 1).AppendLine("};");
+            else ExportCompressedLua(builder, category);
+            builder.AppendLine().AppendLine("end)");
             builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
             ExportLocalVariablesForLua(builder);
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
-                .AppendLine("local appName, _ = ...;"));
-            AddTableNewLines = ConfigUseExportNewlines;
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the categories to a new string builder instance.
-        /// </summary>
-        /// <param name="categories"></param>
-        /// <returns></returns>
-        public static Exporter ExportCompressedLuaCategories(IDictionary<string, List<object>> categories)
-        {
-            // Export all of the Categories
-            var builder = new Exporter();
-            builder.AppendLine("_.Categories={");
-            foreach (var pair in categories)
-            {
-                if (pair.Value.Count > 0)
-                {
-                    builder.Append(pair.Key).AppendLine("={");
-                    foreach (var group in pair.Value)
-                    {
-                        ExportCompressedLua(builder, group);
-                        builder.Append(",");
-                    }
-                    builder.Remove(builder.Length - 1, 1).AppendLine("};");
-                }
-            }
-            builder.AppendLine("};");
-
-            // Simplify the structure of the string and then export to the builder.
-            if (!Framework.PreProcessorTags.Contains("NOSIMPLIFY"))
-            {
-                var simplifyConfig = Framework.Config["SimplifyStructures"];
-                if (simplifyConfig.Defined)
-                {
-                    int[] simplify = simplifyConfig;
-                    SimplifyStructureForLua(builder, simplify[0], simplify[1]);
-                }
-                else
-                {
-                    SimplifyStructureForLua(builder);
-                }
-            }
-            ExportLocalVariablesForLua(builder);
-            ExportCategoriesHeaderForLua(builder);
+                .AppendLine("local appName, _ = ...")
+                .Append("_.AddEventHandler(\"")
+                .Append(isPrimaryRootCategory ? "OnBuildDataCache" : "OnBuildHiddenDataCache")
+                .AppendLine("\", function(categories)"));
             AddTableNewLines = ConfigUseExportNewlines;
             return builder;
         }

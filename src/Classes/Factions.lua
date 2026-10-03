@@ -178,7 +178,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 					return false;
 				end
 			end
-			return true;
+			return not t.locked;
 		end
 		return false;
 	end,
@@ -287,11 +287,9 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	standing = function(t)
 		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).currentLevel;
 	end,
-	maxstanding = app.IsClassic and function(t)
+	maxstanding = function(t)
 		local minReputation = t.minReputation;
 		if minReputation and minReputation[1] == t[KEY] then return minReputation[2]; end
-		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).maxLevel;
-	end or function(t)
 		return C_GossipInfo_GetFriendshipReputationRanks(t[KEY]).maxLevel;
 	end,
 	standingName = function(t)
@@ -378,23 +376,14 @@ end
 app.AddEventHandler("OnRefreshCollections", function()
 	local faction
 	local saved, none, bonus, nobonus = {}, {}, {}, {}
-	for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+	for id,_ in pairs(app.GetFieldContainer(KEY)) do
 		faction = app.SearchForObject(KEY, id, "key")
+		-- TODO: store account-wide factions in acct cache directly
 		if faction then
 			if faction.standing >= faction.maxstanding then
 				saved[id] = true
 			else
 				none[id] = true
-			end
-			-- This is currently always 'false' in Retail, even for Factions with the bonus because Blizzard broke it
-			-- years ago and hasn't bothered fixing it
-			if not app.IsClassic and GetFactionBonusReputation(id) then	-- (sidenote: it does work in Classic at the moment)
-				-- leaving this debug print here in case it ever gets fixed I'll see it spam chat and we can rejoice
-				-- and make the Grand Commendations collectible again :)
-				app.PrintDebug("FactionBonus",id,app:SearchLink(faction))
-				bonus[id] = true
-			else
-				nobonus[id] = true
 			end
 		else PrintMissingFaction(id)
 		end
@@ -402,11 +391,6 @@ app.AddEventHandler("OnRefreshCollections", function()
 	-- Character Cache
 	app.SetBatchCached(CACHE, saved, 1)
 	app.SetBatchCached(CACHE, none)
-	-- Account Cache (removals handled by Sync)
-	app.SetBatchAccountCached(CACHE, saved, 1)
-	-- Account Cache of FactionBonus
-	app.SetBatchAccountCached("FactionBonus", bonus, 1)
-	app.SetBatchAccountCached("FactionBonus", nobonus)
 end);
 local function ScanForNewCollectedFactions()
 	-- app.PrintDebug("Scan uncollected factions")
@@ -420,6 +404,7 @@ local function ScanForNewCollectedFactions()
 				-- factions can dynamically be during the 'UPDATE_FACTION' event (thanks Blizzard not telling us which Faction got rep...)
 				if faction.standing >= faction.maxstanding then
 					-- Character Cache
+					-- TODO: collect as accountWide if this Faction is account-wide
 					app.SetThingCollected(KEY, id, false, true)
 				end
 			else PrintMissingFaction(id)
@@ -446,6 +431,9 @@ app.CreateFactionStandingFromText = function(text)
 		local standing = StandingByName[replevel:trim()];
 		if standing then return { factionID, standing.threshold }; end
 	end
+end
+app.LookupFactionData = function(factionID)
+	return app.SearchForObject("factionID", factionID, "key") or app.CreateFaction(factionID)
 end
 
 -- Information Type hook for Events

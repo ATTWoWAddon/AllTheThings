@@ -1,10 +1,14 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
+local ipairs, pairs
+	= ipairs, pairs
 
 -- Implementation
 app:CreateWindow("Prime", {
 	AllowCompleteSound = true,
-	SettingsName = "Main List",
+	SettingsName = L.MAIN_LIST,
+	Preload = true,
 	IsTopLevel = true,
 	Defaults = {
 		["y"] = 20,
@@ -16,48 +20,14 @@ app:CreateWindow("Prime", {
 		["point"] = "CENTER",
 		["relativePoint"] = "CENTER",
 	},
-	Commands = {
-		"att",
-		"allthethings",
-		"attc",
-	},
-	RootCommandIndex = 2,
-	OnCommand = function(self, cmd)
-		if cmd and cmd:len() > 0 then
-			-- Search for the Link in the database
-			cmd = cmd:lower();
-			local args = { (" "):split(cmd) };
-			local arg1 = args[1]
-
-			local commandFunc = app.ChatCommands[arg1]
-			if commandFunc then
-				if args[2] == "help" then return app.ChatCommands.PrintHelp(arg1) end
-				commandFunc(args);
-				return true;
-			elseif arg1 == "help" then
-				app.ChatCommands.PrintHelp(args[2]);
-				return true;
-			end
-
-			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
-			if group then app:CreateMiniListForGroup(group); end
-			return true;
-		end
-	end,
+	RootCommands = { "main", "mainlist" },
 	OnInit = function(self)
 		app.ToggleMainList = function()
 			self:Toggle();
 		end
-	end,
-	OnLoad = function(self, settings)
-		if not settings.visible then
-			self:ForceRebuild();
-		end
-	end,
-	OnRebuild = function(self)
-		-- Prime's data is built elsewhere.
-		self.data = app:GetDataCache();
-		return false;
+		self:AddEventHandler("OnDataCached", function(self, categories, rootData)
+			self:SetData(rootData);
+		end);
 	end,
 	OnUpdate = function(self, ...)
 		self:DefaultUpdate(...);
@@ -71,5 +41,17 @@ app:CreateWindow("Prime", {
 				modeString = rootData.modeString,
 			};
 		end
-	end
+		return true
+	end,
+	EventHandlers = {
+		["Settings.OnSet"] = function(self,container,setting,value)
+			if container ~= "Tooltips" then return end
+
+			if setting == "MainListScale" then
+				self:SetScale(value)
+			elseif setting == "InactiveWindowAlpha" then
+				self:OnInactiveAlphaChanged(value)
+			end
+		end,
+	}
 });

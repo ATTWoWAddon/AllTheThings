@@ -998,3 +998,59 @@
 755@@@Preyseeker %s
 12.0.1.65337
 690@@@Spirebane %s
+12.0.1.66192
+756@@@Volunteer %s
+757@@@Caring Citizen %s
+758@@@%s, The Backbone of the Realm
+759@@@%s, The Philanthropist
+760@@@%s, The Everlasting
+761@@@%s, World Apex
+762@@@Azeroth's Top Ten Youth %s
+763@@@Model of the Era %s
+764@@@Big Brother %s
+12.0.5.66330
+749@@@Darkspear Dasher %s
+766@@@%s, Mrglgrgl of Grglmrgl
+12.0.5.67088
+772@@@Void Breacher %s
+12.0.5.67165
+773@@@%s the Umbral Contender
+12.0.7.67227
+771@@@Ritual Breaker %s
+12.1.0.68209
+662@@@%s the Venomous Hero
+663@@@%s the Venomous
+767@@@Venomous Gladiator %s
+768@@@Venomous Legend %s
+769@@@Venomous Marshal %s
+770@@@Venomous Warlord %s
+774@@@Snake Eater %s
+775@@@%s the Poisonous
+776@@@%s, Fabled Vanquisher of Azta'rec
+777@@@%s the Cursebreaker
+778@@@%s, Hash'ura of Zul'jarra
+779@@@Briny %s
+781@@@%s, Voice of the Fangs
+782@@@%s, Nalorakk's Favored
+783@@@Street Sovereign %s
+784@@@%s, Eyes of the Vale
+785@@@Voidscar Champion %s
+786@@@%s, the Uncrowned Conqueror
+787@@@%s, Flame of Life
+788@@@%s, Wrath of Sethraliss
+789@@@Bloodsworn Mariner %s
+790@@@%s, Famed Slayer of Ula'tek
+791@@@%s, Venom's End
+12.1.0.68412
+792@@@%s, Servant of Astalor
+794@@@%s the Snake
+12.1.5.69594
+780@@@%s, Light's Faithful
+793@@@%s, Bane of the Swarm
+795@@@%s the Venomous Contender
+796@@@Loa-Blessed %s
+797@@@Treasure Hound %s
+798@@@Lockpickin' %s
+799@@@Maze Runner %s
+801@@@%s, Fabled Vanquisher of Kindo'jan
+802@@@Lone Raider %s

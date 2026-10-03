@@ -19,7 +19,7 @@ local api = {};
 app.Modules.Symlink = api;
 
 -- Module locals
-local ResolveSymbolicLink, FinalizeModID, PruneFinalized, FillFinalized, SelectMod, CreateObject, NestObject, NestObjects, MergeProperties, ExpandGroupsRecursively, MergeObjects, PriorityNestObjects, GetGroupItemIDWithModID, GetItemIDAndModID, FillGroups, NPCExpandHeaders
+local ResolveSymbolicLink, FinalizeModID, PruneFinalized, FillFinalized, SelectMod, CreateObject, NestObject, NestObjects, MergeProperties, MergeObjects, PriorityNestObjects, GetGroupItemIDWithModID, GetItemIDAndModID, FillGroups, NPCExpandHeaders
 
 app.AddEventHandler("OnLoad", function()
 	CreateObject = app.__CreateObject
@@ -46,10 +46,6 @@ app.AddEventHandler("OnLoad", function()
 	MergeProperties = app.MergeProperties
 	if not MergeProperties then
 		error("Symlink Module requires app.MergeProperties definition!")
-	end
-	ExpandGroupsRecursively = app.ExpandGroupsRecursively
-	if not ExpandGroupsRecursively then
-		error("Symlink Module requires app.ExpandGroupsRecursively definition!")
 	end
 	GetGroupItemIDWithModID = app.GetGroupItemIDWithModID
 	if not GetGroupItemIDWithModID then
@@ -162,11 +158,6 @@ local ResolveFunctions = {
 			end
 		end
 		app.print("'selectparent' failed for",o.hash);
-	end,
-	-- Instruction to find all content marked with the specified 'requireSkill'
-	selectprofession = function(finalized, searchResults, o, cmd, requireSkill)
-		local search = app:BuildSearchResponse("requireSkill", requireSkill);
-		ArrayAppend(searchResults, search);
 	end,
 	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
 	fill = function(finalized, searchResults, o)
@@ -520,11 +511,11 @@ local ResolveFunctions = {
 	end,
 };
 
+--[[ TODO: not used anymore, likely can be removed soon
 -- Replace achievementy_criteria function if criteria API doesn't exist
 if GetAchievementNumCriteria then
 	local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo;
 	-- Instruction to query all criteria of an Achievement via the in-game APIs and generate Criteria data into the most-accurate Sources
-	-- TODO: not used anymore, likely can be removed soon
 	ResolveFunctions.achievement_criteria = function(finalized, searchResults, o)
 		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
 		local achievementID = o.achievementID;
@@ -615,7 +606,7 @@ if GetAchievementNumCriteria then
 			end
 		end
 	end
-end
+end--]]
 
 -- Subroutine Logic Cache
 local SubroutineCache = {
@@ -820,11 +811,11 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 		ResolveFunctions.finalize(finalized, searchResults);
 		return;
 	end
-	app.print("Could not find subroutine", sub);
+	app.report("Could not find subroutine", sub);
 end;
 local NonSelectCommands = {
 	finalize = true,
-	achievement_criteria = true,
+	-- achievement_criteria = true,
 	sub = true,
 	myModID = true,
 	modID = true,
@@ -847,7 +838,7 @@ local HandleCommands = app.Debugging and function(finalized, searchResults, o, o
 				debug = false
 			end
 		else
-			app.print("Unknown symlink command",cmd);
+			app.report("Unknown symlink command",cmd);
 		end
 		-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"from",o.hash,"with:",unpack(sym))
 	end
@@ -860,7 +851,7 @@ end or function(finalized, searchResults, o, oSym)
 		if cmdFunc then
 			cmdFunc(finalized, searchResults, o, unpack(sym));
 		else
-			app.print("Unknown symlink command",cmd);
+			app.report("Unknown symlink command",cmd);
 		end
 	end
 end
@@ -905,7 +896,7 @@ ResolveSymbolicLink = function(o, refonly)
 		-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 		sHash = clone.hash;
 		if clone == o or (sHash and sHash == oHash) then
-			app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,i,FinalizeModID)
+			app.report("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,i,FinalizeModID)
 		else
 			clone = CreateObject(clone)
 			cloned[#cloned + 1] = clone
@@ -950,35 +941,6 @@ app.ResolveSymbolicLink = ResolveSymbolicLink
 -- Performance Tracking
 if app.__perf then
 	app.__perf.AutoCaptureTable(ResolveFunctions, "Symlink.ResolveFunctions");
-end
-
-local function ResolveSymlinkGroupAsync(group)
-	-- app.PrintDebug("RSGa",group.hash)
-	local groups = ResolveSymbolicLink(group);
-	group.sym = nil;
-	if groups then
-		PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
-		-- app.PrintDebug("RSGa",group.g and #group.g,group.hash)
-		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
-		-- on the initial pass due to the async nature
-		app.FillGroups(group);
-		AssignChildren(group);
-		-- auto-expand the symlink group
-		ExpandGroupsRecursively(group, true);
-		app.DirectGroupUpdate(group);
-	end
-end
--- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
--- NOTE: ONLY performs the symlink for 'achievement_criteria'
-app.FillAchievementCriteriaAsync = function(o)
-	local sym = o.sym
-	if not sym then return end
-
-	local sym = sym[1][1]
-	if sym ~= "achievement_criteria" then return end
-
-	-- app.PrintDebug("resolve achievement_criteria",o.hash)
-	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 
 local function GetRelativeFieldInSet(group, field, set)
@@ -1034,6 +996,8 @@ app.AddEventHandler("OnLoad", function()
 		SettingsTooltip = app.L.FILL_SYMLINK_DATA_CHECKBOX_TOOLTIP:format(app.Modules.Color.Colorize(app.L.SYM_ROW_INFORMATION, app.Colors.SymLink)),
 	})
 
+	local NPCFillThings = app.CloneDictionary(app.ThingKeys)
+	NPCFillThings.encounterID = nil
 	-- Pulls in Common drop content for specific NPCs if any exists
 	-- (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 	Fill.AddFiller("NPC",
@@ -1057,20 +1021,26 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#npcGroups do
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
-					headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
-					-- app.PrintDebug("DropCheck",app:SearchLink(npcGroup),"=>",headerID)
-					-- where headerID is allowed and the nested difficultyID matches
-					if headerID then
-						npcDiff = GetRelativeValue(npcGroup, "difficultyID");
-						-- copy the header under the NPC groups
-						if not npcDiff or npcDiff == difficultyID then
-							-- wrap the npcGroup in the matching header if it is not a header
-							if not npcGroup.headerID then
-								npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
+					if NPCFillThings[npcGroup.key] and npcGroup.providers then
+						-- app.PrintDebug("IsThingDrop.Diff",group.hash,"<==",npcGroup.hash)
+						if groups then groups[#groups + 1] = CreateObject(npcGroup)
+						else groups = { CreateObject(npcGroup) }; end
+					else
+						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
+						-- app.PrintDebug("DropCheck",app:SearchLink(npcGroup),"=>",headerID)
+						-- where headerID is allowed and the nested difficultyID matches
+						if headerID then
+							npcDiff = GetRelativeValue(npcGroup, "difficultyID");
+							-- copy the header under the NPC groups
+							if not npcDiff or npcDiff == difficultyID then
+								-- wrap the npcGroup in the matching header if it is not a header
+								if not npcGroup.headerID then
+									npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
+								end
+								-- app.PrintDebug("IsDrop.Diff",difficultyID,group.hash,"<==",npcGroup.hash)
+								if groups then groups[#groups + 1] = CreateObject(npcGroup)
+								else groups = { CreateObject(npcGroup) }; end
 							end
-							-- app.PrintDebug("IsDrop.Diff",difficultyID,group.hash,"<==",npcGroup.hash)
-							if groups then groups[#groups + 1] = CreateObject(npcGroup)
-							else groups = { CreateObject(npcGroup) }; end
 						end
 					end
 				end
@@ -1082,18 +1052,24 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#npcGroups do
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
-					headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
-					-- app.PrintDebug("DropCheck",app:SearchLink(npcGroup),"=>",headerID)
-					-- where headerID is allowed
-					if headerID then
-						-- copy the header under the NPC groups
-						-- wrap the npcGroup in the matching header if it is not a header
-						if not npcGroup.headerID then
-							npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
-						end
-						-- app.PrintDebug("IsDrop",group.hash,"<==",npcGroup.hash)
+					if NPCFillThings[npcGroup.key] and npcGroup.providers then
+						-- app.PrintDebug("IsThingDrop",group.hash,"<==",npcGroup.hash)
 						if groups then groups[#groups + 1] = CreateObject(npcGroup)
 						else groups = { CreateObject(npcGroup) }; end
+					else
+						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
+						-- app.PrintDebug("DropCheck",app:SearchLink(npcGroup),"=>",headerID)
+						-- where headerID is allowed
+						if headerID then
+							-- copy the header under the NPC groups
+							-- wrap the npcGroup in the matching header if it is not a header
+							if not npcGroup.headerID then
+								npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
+							end
+							-- app.PrintDebug("IsDrop",group.hash,"<==",npcGroup.hash)
+							if groups then groups[#groups + 1] = CreateObject(npcGroup)
+							else groups = { CreateObject(npcGroup) }; end
+						end
 					end
 				end
 			end
@@ -1103,6 +1079,9 @@ app.AddEventHandler("OnLoad", function()
 	{
 		-- SettingsIcon = ,
 		SettingsTooltip = app.L.FILL_NPC_DATA_CHECKBOX_TOOLTIP,
+		SettingsDefaults = {
+			["LIST:NPC"] = false,
+		}
 	})
 
 	-- Pulls in Common drop content for specific Objects if any exists (e.g. mining/herbing/fishing nodes)

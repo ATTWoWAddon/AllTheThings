@@ -25,7 +25,7 @@ local function ShowColorPicker(callback, color)
 			newR, newG, newB = ColorPickerFrame:GetColorRGB();
 		end
 		callback({r = newR, g = newG, b = newB, a = newA});
-		app.CallbackEvent("OnRenderDirty")
+		app.CallbackEvent("OnRedrawWindows")
 	end
 	picker.func, picker.opacityFunc, picker.cancelFunc, picker.swatchFunc
 		= OnColorChanged, OnColorChanged, OnColorChanged, OnColorChanged
@@ -54,8 +54,7 @@ settings.GetWindowColors = function()
 	-- Border colors
 	if settings:GetTooltipSetting("Window:UseClassForBorder") then
 		-- Set all the borders to the current class color
-		local _, class = UnitClass("player")
-		rBd, gBd, bBd = GetClassColor(class)
+		rBd, gBd, bBd = GetClassColor(app.Class)
 		aBd = 1
 	else
 		-- User-saved colors
@@ -66,22 +65,6 @@ settings.GetWindowColors = function()
 		aBd = tonumber(colord.a) or 0
 	end
 	return rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
-end
-settings.ApplyWindowColors = function(window)
-	-- Apply the user-set colours
-	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
-
-	window:SetBackdropColor(rBg, gBg, bBg, aBg)
-	window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
-end
-settings.ApplyAllWindowColors = function()
-	-- Apply the user-set colours
-	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
-
-	for suffix, window in pairs(app.Windows) do
-		window:SetBackdropColor(rBg, gBg, bBg, aBg)
-		window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
-	end
 end
 
 -- Settings: Accessibility Page
@@ -113,7 +96,7 @@ local buttonDefault = child:CreateButton(
 {
 	OnClick = function(self)
 		wipe(app.Colors);
-		app.CallbackEvent("OnRenderDirty")
+		app.CallbackEvent("OnRedrawWindows")
 	end,
 })
 buttonDefault:SetPoint("TOPLEFT", checkboxUseMoreColors.Text, "TOPRIGHT", 10, 5)
@@ -176,7 +159,6 @@ headerWindowColors:SetPoint("TOP", buttonMountColor, "BOTTOM", 0, -20)
 -- Color Picker
 local function SetWindowBackgroundColor(color)
 	settings:Set("Window:BackgroundColor", color);
-	settings.ApplyAllWindowColors();
 end
 local buttonBackgroundColor = child:CreateButton(
 { text = L.BACKGROUND, tooltip = L.BACKGROUND_TOOLTIP, },
@@ -190,7 +172,6 @@ buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -
 
 local function SetWindowBorderColor(color)
 	settings:Set("Window:BorderColor", color);
-	settings.ApplyAllWindowColors();
 end
 local buttonBorderColor = child:CreateButton(
 { text = L.BORDER, tooltip = L.BORDER_TOOLTIP, },
@@ -199,9 +180,9 @@ local buttonBorderColor = child:CreateButton(
 		ShowColorPicker(SetWindowBorderColor, settings:Get("Window:BorderColor"));
 	end,
 })
-buttonBorderColor:SetPoint("BOTTOMLEFT", buttonBackgroundColor, "BOTTOMRIGHT", 5, 0)
+buttonBorderColor:AlignAfter(buttonBackgroundColor, 5)
 buttonBorderColor.OnRefresh = function(self)
-	if settings:GetTooltipSetting("Window:UseClassForBorder") then
+	if settings:GetTooltipSetting("Window:UseClassForBorder") or settings:GetTooltipSetting("Window:HideBorders") then
 		self:Disable()
 	else
 		self:Enable()
@@ -214,18 +195,33 @@ local buttonResetColor = child:CreateButton(
 	OnClick = function(self)
 		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
 		settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
-		settings.ApplyAllWindowColors()
 	end,
 })
-buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
+buttonResetColor:AlignAfter(buttonBorderColor, 5)
 
 local checkboxUseClassColorForBorder = child:CreateCheckBox(L.CLASS_BORDER,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Window:UseClassForBorder"))
+	if settings:GetTooltipSetting("Window:HideBorders") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
 end,
 function(self)
 	settings:SetTooltipSetting("Window:UseClassForBorder", self:GetChecked())
-	settings.ApplyAllWindowColors()
 end)
 checkboxUseClassColorForBorder:SetATTTooltip(L.CLASS_BORDER_TOOLTIP)
-checkboxUseClassColorForBorder:SetPoint("TOPLEFT", buttonBackgroundColor, "BOTTOMLEFT", -2, 0)
+checkboxUseClassColorForBorder:AlignBelow(buttonBackgroundColor, nil, 0)
+
+local checkboxHideWindowBorders = child:CreateCheckBox(L.HIDE_BORDERS,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Window:HideBorders"))
+end,
+function(self)
+	settings:SetTooltipSetting("Window:HideBorders", self:GetChecked())
+end)
+checkboxHideWindowBorders:SetATTTooltip(L.HIDE_BORDERS_TOOLTIP)
+checkboxHideWindowBorders:AlignBelow(checkboxUseClassColorForBorder)

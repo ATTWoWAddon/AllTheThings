@@ -89,11 +89,12 @@ q(questID, {	-- Quest Name
 	["sourceQuests"] = { questID },	-- Quest Name
 	["sourceQuestNumRequired"] = number,
 	["altQuests"] = { questID },	-- Quest Name
+	["qs"] = itemID,	-- Quest Item (QS!)
 	["provider"] = { "n", npcID },	-- Npc Name
 	["coord"] = { X, Y, MAPID_CONSTANT },
 	["timeline"] = { timeline },
 	["maps"] = { MAPID_CONSTANT },
-	["cost"] = { { "i", itemID, number }, },	-- numberxItem Name
+	["cost"] = { { "i", itemID, number } },	-- numberxItem Name
 	["races"] = { raceID },
 	["classes"] = { classID },
 	["lockCriteria"] = { criteriaID },
@@ -105,6 +106,7 @@ q(questID, {	-- Quest Name
 	["isMonthly"] = true,
 	["isWeekly"] = true,
 	["isDaily"] = true,
+	["qi"] = itemID,	-- Quest Item (QI!)
 	["groups"] = {
 		i(itemID),	-- Item Name
 	},

@@ -5,8 +5,8 @@
 local _, app = ...;
 
 -- Global locals
-local C_Timer_After, InCombatLockdown, math_max, unpack
-	= C_Timer.After, InCombatLockdown, math.max, unpack;
+local C_Timer_After, InCombatLockdown, math_max, unpack, select
+	= C_Timer.After, InCombatLockdown, math.max, unpack, select;
 
 -- Setup the callback tables since they are heavily used
 local __callbacks = {};
@@ -34,7 +34,7 @@ local CallbackMethodCache = setmetatable({}, { __mode = "kv",
 -- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
 local function Callback(method, ...)
 	if not __callbacks[method] then
-		__callbacks[method] = ... and {...} or true;
+		__callbacks[method] = select("#", ...) > 0 and {...} or true;
 		C_Timer_After(0, CallbackMethodCache[method]);
 	-- else app.PrintDebug("CB:Skip",method)
 	end
@@ -42,7 +42,7 @@ end
 -- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
 local function DelayedCallback(method, delaySec, ...)
 	if not __callbacks[method] then
-		__callbacks[method] = ... and {...} or true;
+		__callbacks[method] = select("#", ...) > 0 and {...} or true;
 		C_Timer_After(math_max(0, delaySec or 0), CallbackMethodCache[method]);
 	-- else app.PrintDebug("DCB:Skip",method)
 	end
@@ -54,7 +54,7 @@ local __combatcallbacks = {};
 local function AfterCombatCallback(method, ...)
 	if not InCombatLockdown() then Callback(method, ...); return; end
 	if not __callbacks[method] then
-		__callbacks[method] = ... and {...} or true;
+		__callbacks[method] = select("#", ...) > 0 and {...} or true;
 		-- TODO: convert to a CallbackRunner?
 		__combatcallbacks[#__combatcallbacks + 1] = CallbackMethodCache[method];
 		app:RegisterEvent("PLAYER_REGEN_ENABLED");

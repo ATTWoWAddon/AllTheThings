@@ -1,0 +1,120 @@
+1.60.1.69876
+r(2542),	-- Goretusk Liver Pie
+r(2543),	-- Westfall Stew
+r(2545),	-- Cooked Crab Claw
+r(2547),	-- Redridge Goulash
+r(2548),	-- Succulent Pork Ribs
+r(2549),	-- Seasoned Wolf Kabob
+r(2795),	-- Beer Basted Boar Ribs
+r(3370),	-- Crocolisk Steak
+r(3371),	-- Blood Sausage
+r(3372),	-- Murloc Fin Soup
+r(3373),	-- Crocolisk Gumbo
+r(3376),	-- Curiously Tasty Omelet
+r(3377),	-- Gooey Spider Cake
+r(3397),	-- Big Bear Steak
+r(3398),	-- Hot Lion Chops
+r(4094),	-- Barbecued Buzzard Wing
+r(6413),	-- Scorpid Surprise
+r(6414),	-- Roasted Kodo Meat
+r(6416),	-- Strider Stew
+r(6417),	-- Dig Rat Stew
+r(6418),	-- Crispy Lizard Tail
+r(6419),	-- Lean Venison
+r(6501),	-- Clam Chowder
+r(7213),	-- Giant Clam Scorcho
+r(7751),	-- Brilliant Smallfish
+r(7752),	-- Slitherskin Mackerel
+r(7753),	-- Longjaw Mud Snapper
+r(7754),	-- Loch Frenzy Delight
+r(7755),	-- Bristle Whisker Catfish
+r(7827),	-- Rainbow Fin Albacore
+r(7828),	-- Rockscale Cod
+r(8238),	-- Savory Deviate Delight
+r(8607),	-- Smoked Bear Meat
+r(9513),	-- Thistle Tea
+r(15853),	-- Lean Wolf Steak
+r(15855),	-- Roast Raptor
+r(15856),	-- Hot Wolf Ribs
+r(15861),	-- Jungle Stew
+r(15863),	-- Carrion Surprise
+r(15865),	-- Mystery Stew
+r(15906),	-- Dragonbreath Chili
+r(15910),	-- Heavy Kodo Stew
+r(15915),	-- Spiced Chili Crab
+r(15933),	-- Monster Omelet
+r(15935),	-- Crispy Bat Wing
+r(18239),	-- Cooked Glossy Mightfish
+r(18241),	-- Filet of Redgill
+r(18242),	-- Hot Smoked Bass
+r(18245),	-- Lobster Stew
+r(18246),	-- Mightfish Steak
+r(18247),	-- Baked Salmon
+r(20626),	-- Undermine Clam Chowder
+r(20916),	-- Mithril Headed Trout
+r(21143),	-- Gingerbread Cookie
+r(21144),	-- Egg Nog
+r(22480),	-- Tender Wolf Steak
+r(22761),	-- Runn Tum Tuber Surprise
+r(24418),	-- Heavy Crocolisk Stew
+r(25659),	-- Dirge's Kickin' Chimaerok Chops
+r(25704),	-- Smoked Sagefish
+r(25954),	-- Sagefish Delight
+r(470359),	-- Darkclaw Bisque
+r(470370),	-- Smoked Redgill
+r(1225758),	-- Prowler Steak
+r(1225759),	-- Filet o' Flank
+r(1225760),	-- Sunrise Omelette
+r(1225762),	-- Specklefin Feast
+r(1225763),	-- Grand Lobster Banquet
+r(1229737),	-- Basic Campfire
+r(1240945),	-- Cooking
+r(1240956),	-- Cooking
+r(1240967),	-- Cooking
+r(1240980),	-- Cooking
+r(1247741),	-- Spinefin Halibut
+r(1249957),	-- Peace Tea
+r(1249958),	-- Royal Tea
+r(1249959),	-- Root Tea
+r(1249960),	-- Triage Tea
+r(1249961),	-- Sunny Tea
+r(1249962),	-- Sage's Tea
+r(1249963),	-- Venomous Smoothie
+r(1249964),	-- Slimy Smoothie
+r(1249965),	-- Mrrggl Smrrthle
+r(1249966),	-- Calcified Smoothie
+r(1249967),	-- Spicy Smoothie
+r(1249968),	-- Wicked Smoothie
+r(1250142),	-- Savory Stag Sliders
+r(1250143),	-- Soaring Pamplona
+r(1250144),	-- Bat Hachee
+r(1250145),	-- Savory Turtle Stew
+r(1250146),	-- Flank au Poivre
+r(1250147),	-- Bear Bruscitti
+r(1250148),	-- Steaming Stag Steak
+r(1250149),	-- Swiftstrike Steak
+r(1250150),	-- Raging Raptor Ribs
+r(1250151),	-- Bear Brisket
+r(1250152),	-- Prehistoric Pulled Raptor
+r(1250153),	-- Raptor Rouladen
+r(1250154),	-- Twice-Spiced Raptor Slice
+r(1250155),	-- Giant Scrambled Eggs
+r(1250156),	-- Tasty Raptor Bites
+r(1250157),	-- Breakfast Omelette
+r(1250158),	-- Clam Linguine
+r(1252566),	-- Savory Whimsyfin Delight
+r(1255241),	-- Cleansing Stew
+r(1262978),	-- Cookie's Feast
+r(1263067),	-- Iron Oven
+r(1270632),	-- Critter Cookie
+r(1270633),	-- Skywall Souffle
+r(1270635),	-- Pincer Bites
+r(1283400),	-- Journeyman Campfire
+r(1291341),	-- Expert Campfire
+r(1294014),	-- Sweetpaw Jam
+r(1295805),	-- Briny Seafood Stew
+r(1295834),	-- Plain Ol' Paletusk
+r(1319313),	-- Plated Armorfish
+
+
+Nothing is Missing in Cooking! Good Work!

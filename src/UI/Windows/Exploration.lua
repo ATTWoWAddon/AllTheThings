@@ -1,25 +1,23 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Implementation
 app:CreateWindow("Exploration", {
 	AllowCompleteSound = true,
 	Commands = { "attexploration" },
 	OnInit = function(self, handlers)
-		self.data = {
-			text = "Exploration",
-			icon = app.asset("Category_Exploration"),
-			description = "This window shows you all of the exploration locations that you can complete. You may need to Shift+Left Click any header in ATT and also relog for these to be detected perfectly.",
+		self:SetData(app.CreateCustomHeader(app.HeaderConstants.EXPLORATION, {
+			description = L.EXPLORATION_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
 			OnUpdate = function(t)
-				local g = app:BuildSearchResponseForField(app:GetDataCache().g, "explorationID");
+				local g = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "explorationID");
 				if g and #g > 0 then
-					tinsert(g, 1, {	-- Harvest Exploration
-						text = "Harvest Exploration",
+					tinsert(g, 1, app.CreateRawText(L.EXPLORATION_HARVEST, {	-- Harvest Exploration
 						icon = 132331,
-						description = "Click here to attempt to harvest and collect all exploration credit.\n\nNOTE: This will likely take a while, but may correct some exploration issues you may be having.",
+						description = L.EXPLORATION_HARVEST_DESC,
 						OnClick = function(row, button)
 							app.HarvestExploration();
 							return true;
@@ -28,13 +26,13 @@ app:CreateWindow("Exploration", {
 							data.visible = true;
 							return true;
 						end,
-					});
+					}));
 					t.g = g;
 					t.OnUpdate = nil;
 					self:AssignChildren();
 					self:ExpandData(true);
 				end
 			end
-		};
+		}));
 	end,
 });

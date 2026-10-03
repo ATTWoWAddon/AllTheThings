@@ -1,0 +1,36 @@
+createLocalizationString({
+	readable = "Hide Borders",
+	constant = "HIDE_BORDERS",
+	export = true,
+	text = {
+		en = "Hide Borders",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: ko = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+})
+createLocalizationString({
+	readable = "Whether ATT Windows should not have Borders and adjust internal padding/alignment to compensate",
+	constant = "HIDE_BORDERS_TOOLTIP",
+	export = true,
+	text = {
+		en = "Whether ATT Windows should not have Borders and adjust internal padding/alignment to compensate",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: ko = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+})

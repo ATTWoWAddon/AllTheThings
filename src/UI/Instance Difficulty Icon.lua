@@ -1,6 +1,7 @@
 local _, app = ...
 
-if not app.IsRetail then return end
+-- CRIEVE NOTE: I'm not sure what patch this will become usable
+if not (app.IsRetail and app.GameBuildVersion > 70000) then return end
 
 -- Returns the Texture name to be swapped based on the DifficultyID. Defaults to "NormalTexture"
 local TextureNameByDifficultyID = setmetatable({
@@ -36,5 +37,5 @@ local function CallbackDifficultyIconUpdate()
 end
 
 -- when this event fires, the difficultyID can still be detected as 0
-app.AddEventRegistration("UPDATE_INSTANCE_INFO", CallbackDifficultyIconUpdate)
+app.AddEventHandler("OnSavesUpdated", CallbackDifficultyIconUpdate)
 app.AddEventRegistration("RAID_INSTANCE_WELCOME", CallbackDifficultyIconUpdate)

@@ -150,7 +150,7 @@ do
 					e = t.e,
 					u = t.u,
 					-- TODO: maybe can do this eventually
-					-- provider = {{"i",t.itemID}},
+					-- providers = {{"i",t.itemID}},
 				});
 				unlock.parent = t;
 				t.g = { unlock };
@@ -313,7 +313,7 @@ do
 
 	-- app.AddCollectionReportFormatFunc("HeirloomLevel", function(t)
 	-- 	local itemID, link = t.itemID, t.link or t.silentLink
-	-- 	app.print(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom_GetHeirloomInfo(itemID)) or 1)))
+	-- 	app.report(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom_GetHeirloomInfo(itemID)) or 1)))
 	-- end)
 	app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 		-- app.PrintDebug("HEIRLOOMS_UPDATED",itemID,kind,...)
@@ -330,8 +330,13 @@ do
 			end
 		end
 	end)
+	app.AddEventHandler("OnLoad", function()
+		app.AddDynamicCategoryHeader({ id = "heirloomID", name = HEIRLOOMS, icon = app.asset("Weapon_Type_Heirloom") });
+		app.AddRandomSearchCategory("Heirlooms", "heirloomID", HEIRLOOMS, nil, app.asset("Weapon_Type_Heirloom"));
+	end);
 end
 
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
+	if not accountWideData.HeirloomRanks then accountWideData.HeirloomRanks = {}; end
 end)

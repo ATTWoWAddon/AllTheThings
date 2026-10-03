@@ -13,7 +13,7 @@ namespace ATT
         static void Main(string[] args)
         {
             // DBContext / ItemDB
-            var databaseFolder = "../Parser/DATAS/00 - Item DB/.dynamic";
+            var databaseFolder = "../.db/standard/00 - Item DB/.dynamic";
             Directory.CreateDirectory(databaseFolder);
             foreach (var file in Directory.GetFiles("../.raw/ItemDB"))
             {
