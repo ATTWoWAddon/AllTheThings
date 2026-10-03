@@ -167,6 +167,20 @@ local C_TradeSkillUI = C_TradeSkillUI;
 ---@diagnostic disable-next-line: deprecated, undefined-global
 AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
 AssignAPIWrapper("GetTradeSkillDisplayName", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillDisplayName, app.EmptyFunction);
+AssignAPIWrapper("GetAllProfessionTradeSkillLines", C_TradeSkillUI and C_TradeSkillUI.GetAllProfessionTradeSkillLines,
+	function() return app.EmptyTable end);
+AssignAPIWrapper("GetProfessionInfoBySkillLineID", C_TradeSkillUI and C_TradeSkillUI.GetProfessionInfoBySkillLineID, app.EmptyFunction);
+local GetTradeSkillLineForRecipe = C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillLineForRecipe;
+AssignAPIWrapper("GetProfessionInfoByRecipeID", C_TradeSkillUI and C_TradeSkillUI.GetProfessionInfoByRecipeID,
+	GetTradeSkillLineForRecipe and function(recipeID)
+		local professionID = GetTradeSkillLineForRecipe(recipeID);
+		if professionID then return { professionID = professionID }; end
+	end,
+	app.EmptyFunction);
+AssignAPIWrapper("GetProfessions", GetProfessions, app.EmptyFunction);
+AssignAPIWrapper("GetProfessionInfo", GetProfessionInfo, app.EmptyFunction);
+AssignAPIWrapper("IsTradeSkillLinked", C_TradeSkillUI and C_TradeSkillUI.IsTradeSkillLinked, IsTradeSkillLinked, app.EmptyFunction);
+AssignAPIWrapper("IsTradeSkillGuild", C_TradeSkillUI and C_TradeSkillUI.IsTradeSkillGuild, app.EmptyFunction);
 
 -- Specialization APIs
 local C_SpecializationInfo = C_SpecializationInfo

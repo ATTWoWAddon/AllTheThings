@@ -4,8 +4,8 @@ local L = app.L;
 if not app.IsRetail then return; end
 
 -- Global locals
-local coroutine, ipairs, pairs, select, wipe
-	= coroutine, ipairs, pairs, select, wipe
+local coroutine, ipairs, pairs, select, time, wipe
+	= coroutine, ipairs, pairs, select, time, wipe
 local C_TradeSkillUI, InCombatLockdown = C_TradeSkillUI, InCombatLockdown;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo
 	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo;
@@ -14,8 +14,13 @@ local C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForReci
 
 -- Implementation
 do -- TradeSkill Functionality
-	local GetProfessionInfo, C_TradeSkillUI_GetBaseProfessionInfo
-		= GetProfessionInfo, C_TradeSkillUI.GetBaseProfessionInfo
+	local C_TradeSkillUI_GetBaseProfessionInfo = C_TradeSkillUI.GetBaseProfessionInfo;
+	local GetProfessions = app.WOWAPI.GetProfessions;
+	local GetProfessionInfo = app.WOWAPI.GetProfessionInfo;
+	local GetAllProfessionTradeSkillLines = app.WOWAPI.GetAllProfessionTradeSkillLines;
+	local GetProfessionInfoBySkillLineID = app.WOWAPI.GetProfessionInfoBySkillLineID;
+	local IsTradeSkillLinked = app.WOWAPI.IsTradeSkillLinked;
+	local IsTradeSkillGuild = app.WOWAPI.IsTradeSkillGuild;
 	local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 	local GetSpellName = app.WOWAPI.GetSpellName;
 	local tradeSkillSpecializationMap = app.SkillDB.Specializations
@@ -34,10 +39,33 @@ do -- TradeSkill Functionality
 	app.GetSpecializationBaseTradeSkill = function(specializationID)
 		return specializationTradeSkillMap[specializationID];
 	end
+	local function HasCacheChanged(previous, current)
+		for id,value in pairs(previous) do
+			if current[id] ~= value then return true; end
+		end
+		for id,value in pairs(current) do
+			if previous[id] ~= value then return true; end
+		end
+	end
 	-- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
 	local function RefreshTradeSkillCache()
 		local cache = app.CurrentCharacter.Professions;
+		local previousCache = {};
+		for id,value in pairs(cache) do previousCache[id] = value; end
 		wipe(cache);
+		-- Keep expansion skill lines separate; their ranks are not interchangeable.
+		-- Linked and guild profession views must not overwrite this character's ranks.
+		local ranks, previousRanks = nil, {};
+		if not IsTradeSkillLinked() and not IsTradeSkillGuild() then
+			ranks = app.CurrentCharacter.ProfessionRanks;
+			if ranks then
+				for id,value in pairs(ranks) do previousRanks[id] = value; end
+				wipe(ranks);
+			else
+				ranks = {};
+				app.CurrentCharacter.ProfessionRanks = ranks;
+			end
+		end
 		-- "Professions" that anyone can "know"
 		for _,skillID in ipairs(app.SkillDB.AlwaysAvailable) do
 			cache[skillID] = 1
@@ -46,21 +74,52 @@ do -- TradeSkill Functionality
 		local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 		for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
 			if j ~= 0 then
-				local prof = select(7, GetProfessionInfo(j));
-				cache[GetBaseTradeSkillID(prof)] = true;
-				-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
-				local specializations = GetTradeSkillSpecialization(prof);
-				if specializations ~= nil then
-					for _,spellID in pairs(specializations) do
-						if spellID and app.IsSpellKnownHelper(spellID) then
-							cache[spellID] = true;
+				local _, _, skillRank, _, _, _, prof = GetProfessionInfo(j);
+				if prof then
+					cache[GetBaseTradeSkillID(prof)] = true;
+					if ranks and skillRank and skillRank > 0 then ranks[prof] = skillRank; end
+					-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
+					local specializations = GetTradeSkillSpecialization(prof);
+					if specializations ~= nil then
+						for _,spellID in pairs(specializations) do
+							if spellID and app.IsSpellKnownHelper(spellID) then
+								cache[spellID] = true;
+							end
 						end
 					end
 				end
 			end
 		end
+		if ranks then
+			for _,skillLineID in ipairs(GetAllProfessionTradeSkillLines()) do
+				local info = GetProfessionInfoBySkillLineID(skillLineID);
+				if info and info.skillLevel and info.skillLevel > 0 then
+					ranks[skillLineID] = info.skillLevel;
+				end
+			end
+		end
+		local professionsChanged = HasCacheChanged(previousCache, cache);
+		local ranksChanged = ranks and HasCacheChanged(previousRanks, ranks);
+		if professionsChanged or ranksChanged then
+			local character = app.CurrentCharacter;
+			local timestamps = character.TimeStamps;
+			if not timestamps then
+				timestamps = {};
+				character.TimeStamps = timestamps;
+			end
+			local now = time();
+			if professionsChanged then timestamps.Professions = now; end
+			if ranksChanged then timestamps.ProfessionRanks = now; end
+			character.lastPlayed = now;
+			app.WipeSearchCache();
+		end
 	end
 	app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
+	local function QueueTradeSkillCacheRefresh()
+		app.CallbackHandlers.DelayedCallback(RefreshTradeSkillCache, 2);
+	end
+	app.AddEventRegistration("TRADE_SKILL_SHOW", QueueTradeSkillCacheRefresh)
+	app.AddEventRegistration("TRADE_SKILL_LIST_UPDATE", QueueTradeSkillCacheRefresh)
 	app.AddEventHandler("OnStartup", function()
 		local conversions = app.Settings.InformationTypeConversionMethods;
 		conversions.professionName = function(skillID)

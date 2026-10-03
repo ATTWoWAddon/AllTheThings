@@ -1414,6 +1414,7 @@ local deserializers = setmetatable({
 		return currentValue;
 	end,
 	AzeriteEssenceRanks = wrappers.dser.numnumtbl,
+	ProfessionRanks = wrappers.dser.numnumtbl,
 }, {
 	__index = function(t)
 		return defaultDeserializer;
@@ -1481,6 +1482,7 @@ local serializers = setmetatable({
 		if any then return str; end
 	end,
 	AzeriteEssenceRanks = wrappers.ser.numnumtbl,
+	ProfessionRanks = wrappers.ser.numnumtbl,
 
 	-- The main data package containing the simple stuff.
 	Summary = function(character, value)
@@ -1712,6 +1714,7 @@ end
 -- Merging
 local BlacklistedTooltipFields = {
 	ActiveSkills = true,
+	ProfessionRanks = true,
 	Lockouts = true,
 	PrimeData = true,
 	TimeStamps = true,
