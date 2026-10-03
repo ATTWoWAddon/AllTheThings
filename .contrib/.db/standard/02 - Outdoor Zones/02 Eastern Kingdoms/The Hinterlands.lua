@@ -1311,7 +1311,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7849, {	-- Separation Anxiety
 					["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 					["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
---					["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
+					["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
