@@ -18,7 +18,7 @@ BLACK_MARKET_AUCTION_HOUSE = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "与普通拍卖行从其他玩家处购买物品不同，黑市中的物品由 NPC 生成并上架。物品仅上架一天。售卖物品涵盖难以获取的装备以及无其他获取途径的 TCG 卡牌物品。所有物品上架频率低，因此不应将其视作稳定刷取稀有物品的方式。",
 		-- TODO: tw = "",
 	},
 });

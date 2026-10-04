@@ -11,7 +11,7 @@ STARTER_GEAR = createHeader({
 		--ko = "",
 		--pt = "",
 		--ru = "",
-		--cn = "",
+		cn = "起始装备",
 		--tw = "",
 	},
 	description = {
@@ -24,7 +24,7 @@ STARTER_GEAR = createHeader({
 		--ko = "",
 		--pt = "",
 		--ru = "",
-		--cn = "",
+		cn = "以下装备可通过创建对应种族与职业的全新角色获取。",
 		--tw = "",
 	},
 });

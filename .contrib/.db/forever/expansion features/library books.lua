@@ -14,7 +14,7 @@ local LIBRARY_BOOKS_HEADER = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "图书馆藏书",
 		-- TODO: tw = "",
 	},
 });

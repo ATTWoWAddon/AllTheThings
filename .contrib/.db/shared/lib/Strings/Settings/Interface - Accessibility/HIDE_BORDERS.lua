@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "隐藏边框",
 		-- TODO: tw = "",
 	},
 })
@@ -30,7 +30,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "是否隐藏ATT窗口边框并调整内部边距/对齐作为补偿",
 		-- TODO: tw = "",
 	},
 })
