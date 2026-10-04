@@ -20,6 +20,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetTradeSkillDisplayName = app.WOWAPI.GetTradeSkillDisplayName;
 local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount;
+local GetProfessionInfoByRecipeID = app.WOWAPI.GetProfessionInfoByRecipeID;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage(L.INFORMATION_PAGE, L.INTERFACE_PAGE)
@@ -234,15 +235,80 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 local knownBy = {};
-local function BuildKnownByInfoForKind(tooltipInfo, kind)
-	if #knownBy > 0 and kind then
-		app.Sort(knownBy, app.SortDefaults.name);
-		local desc = "";
-		for i,character in ipairs(knownBy) do
-			if i > 1 then desc = desc .. ", "; end
-			desc = desc .. (character.text or "???");
+local function GetCharacterDisplayName(character, stripRealm)
+	local text = character.text or character.name or "???";
+	local realm;
+	if stripRealm then realm = character.realm; else realm = GetRealmName(); end
+	if realm and realm ~= "" then
+		-- Remove only the exact realm suffix, preserving class colors and Owned By quantities.
+		local quantity = text:match(" %(x%d+%)$") or "";
+		local suffixEnd = #text - #quantity;
+		if text:sub(suffixEnd - 1, suffixEnd) == "|r" then suffixEnd = suffixEnd - 2; end
+		local suffix = "-" .. realm;
+		local suffixStart = suffixEnd - #suffix + 1;
+		if suffixStart > 0 and text:sub(suffixStart, suffixEnd) == suffix then
+			text = text:sub(1, suffixStart - 1) .. text:sub(suffixEnd + 1);
 		end
-		tinsert(tooltipInfo, { left = kind:format(desc:gsub("-" .. GetRealmName(), "")), wrap = true, color = app.Colors.TooltipDescription });
+	end
+	return text;
+end
+local function GetCharacterFactionName(character)
+	if character.factionID == Enum.FlightPathFaction.Horde then return FACTION_HORDE; end
+	if character.factionID == Enum.FlightPathFaction.Alliance then return FACTION_ALLIANCE; end
+	return UNKNOWN;
+end
+local function SortCharactersByRealmAndFaction(a, b)
+	local realmA, realmB = a.realm or "", b.realm or "";
+	if realmA ~= realmB then return realmA < realmB; end
+	local factionA, factionB = a.factionID or 0, b.factionID or 0;
+	if factionA ~= factionB then return factionA < factionB; end
+	local nameA = a.name or (a.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "");
+	local nameB = b.name or (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "");
+	return nameA < nameB;
+end
+local function BuildKnownByInfoForKind(tooltipInfo, kind)
+	for i = #knownBy, 1, -1 do
+		if knownBy[i].ignored then tremove(knownBy, i); end
+	end
+	if #knownBy > 0 and kind then
+		if settings:GetTooltipSetting("GroupByRealm") then
+			app.Sort(knownBy, SortCharactersByRealmAndFaction);
+			local names, realm, faction, titleAdded = {}, nil, nil, nil;
+			local function FlushGroup()
+				if #names > 0 then
+					tinsert(tooltipInfo, { left = "  " .. realm .. ", " .. faction .. " (" .. #names .. ")", r = 0.8, g = 0.8, b = 0.8 });
+					tinsert(tooltipInfo, { left = "    " .. table.concat(names, ", "), wrap = true, color = app.Colors.TooltipDescription });
+					wipearray(names);
+				end
+			end
+			for _,character in ipairs(knownBy) do
+				-- Account-wide completion notices are messages, rather than character records.
+				if not (character.name or character.realm or character.guid or character.factionID) then
+					tinsert(tooltipInfo, { left = kind:format(character.text or "???"), wrap = true, color = app.Colors.TooltipDescription });
+				else
+					if not titleAdded then
+						tinsert(tooltipInfo, { left = kind:format(""), r = 1, g = 0.82, b = 0 });
+						titleAdded = true;
+					end
+					local characterRealm = character.realm;
+					if not characterRealm or characterRealm == "" then characterRealm = UNKNOWN; end
+					local characterFaction = GetCharacterFactionName(character);
+					if characterRealm ~= realm or characterFaction ~= faction then
+						FlushGroup();
+						realm, faction = characterRealm, characterFaction;
+					end
+					tinsert(names, GetCharacterDisplayName(character, true));
+				end
+			end
+			FlushGroup();
+		else
+			app.Sort(knownBy, app.SortDefaults.name);
+			local names = {};
+			for _,character in ipairs(knownBy) do
+				tinsert(names, GetCharacterDisplayName(character));
+			end
+			tinsert(tooltipInfo, { left = kind:format(table.concat(names, ", ")), wrap = true, color = app.Colors.TooltipDescription });
+		end
 		wipearray(knownBy);
 	end
 end
@@ -264,9 +330,9 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 			end
 		else
 			for _,character in pairs(ATTCharacterData) do
-				if (character.Quests and character.Quests[id])
+				if not character.ignored and ((character.Quests and character.Quests[id])
 					-- perhaps expand into a separate information type instead for previously-completed quests
-					or (character.PriorQuests and character.PriorQuests[id]) then
+					or (character.PriorQuests and character.PriorQuests[id])) then
 					tinsert(knownBy, character);
 				end
 			end
@@ -402,7 +468,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 					local character = data[1];
 					tinsert(tooltipInfo, {
 						---@diagnostic disable-next-line: undefined-field
-						left = ("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), "")),
+						left = "  " .. GetCharacterDisplayName(character),
 						right = data[2] .. " / " .. data[3],
 					});
 				end
@@ -417,13 +483,70 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 			local knownByCache
 			for guid,character in pairs(ATTCharacterData) do
 				knownByCache = character[cacheName] or character.Spells
-				if knownByCache and knownByCache[id] then
+				if not character.ignored and knownByCache and knownByCache[id] then
 					tinsert(knownBy, character);
 				end
 			end
 			BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
 		end
 	end
+end
+
+local function ProcessForUsefulFor(t, reference, tooltipInfo)
+	-- Only actual recipes can be useful to a character; arbitrary item/spell IDs are not recipes.
+	local recipe, recipeID = reference, reference.recipeID;
+	if not recipeID then
+		local id = reference.knownByID or reference.spellID;
+		if not id then return; end
+		recipe = app.SearchForObject("recipeID", id, "key");
+		if not recipe then return; end
+		recipeID = recipe.recipeID;
+	end
+	if not recipeID then return; end
+	local skillID = reference.skillID or reference.requireSkill or recipe.skillID or GetRelativeValue(recipe, "requireSkill");
+	if not skillID then return; end
+	local learnedAt = reference.learnedAt or GetRelativeValue(recipe, "learnedAt") or 1;
+	local skillDB = app.SkillDB;
+	local specializationSpell = skillDB.SpecializationSpells[skillID];
+	local baseSkillID = skillDB.SpellToSkill[specializationSpell or 0] or skillDB.Conversion[skillID] or skillID;
+	local rankSkillID = skillID;
+	if app.IsRetail then
+		-- Retail skill levels belong to a particular expansion, not the base profession.
+		local professionInfo = GetProfessionInfoByRecipeID(recipeID);
+		if professionInfo and professionInfo.professionID and professionInfo.professionID > 0 then
+			rankSkillID = professionInfo.professionID;
+		elseif not app.IsForever and (not skillDB.Conversion[skillID] or skillDB.Conversion[skillID] == skillID) then
+			-- A base profession rank cannot identify which Retail expansion a recipe belongs to.
+			return;
+		end
+	end
+	local professionSpellID = skillDB.SkillToSpell[skillID] or skillDB.SkillToSpell[baseSkillID];
+	local faction = GetRelativeValue(recipe, "r");
+	local classes = GetRelativeValue(recipe, "c");
+	local races = GetRelativeValue(recipe, "races");
+	for _,character in pairs(ATTCharacterData) do
+		if not character.ignored
+			and not (character.Spells and character.Spells[recipeID])
+			and (not faction or faction == 0 or character.factionID == faction)
+			and (not classes or app.contains(classes, character.classID))
+			and (not races or app.contains(races, character.raceID)) then
+			local rank;
+			if app.IsRetail then
+				local professions = character.Professions;
+				if professions and professions[baseSkillID] and (not specializationSpell or professions[skillID]) then
+					rank = character.ProfessionRanks and character.ProfessionRanks[rankSkillID];
+				end
+			else
+				local skills = professionSpellID and character.ActiveSkills and character.ActiveSkills[professionSpellID];
+				rank = skills and skills[1];
+			end
+			-- Missing cached rank data must not imply that a character can learn the recipe.
+			if type(rank) == "number" and rank > 0 and rank >= learnedAt then
+				tinsert(knownBy, character);
+			end
+		end
+	end
+	BuildKnownByInfoForKind(tooltipInfo, L.USEFUL_FOR);
 end
 
 -- Specialization Requirements
@@ -1323,6 +1446,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
+	CreateInformationType("UsefulFor", { text = L.USEFUL_FOR:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForUsefulFor });
 	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,
 		Process = function(t, reference, tooltipInfo)
 			local itemID = reference.itemID
