@@ -1628,6 +1628,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					795,	-- Knitted Tunic
 				}},
 			}),
+			n(268238, {		-- Nordun Steadysight <Traveling Ranged Weapon Salesman>
+				coord = { 42.1, 66.6, MAP.ELWYNN_FOREST },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
+					2504, 	-- Worn Shortbow
+					2505, 	-- Polished Shortbow
+					2506, 	-- Hornwood Recurve Bow
+					2509,	-- Ornate Blunderbuss
+					2510, 	-- Solid Blunderbuss
+				}},
+			}),
 			n(1198, {	-- Rallic Finn <Bowyer>
 				coord = { 83.2, 66.0, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
