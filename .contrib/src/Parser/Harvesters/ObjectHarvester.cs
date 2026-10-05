@@ -390,9 +390,9 @@ namespace ATT
             if (sb != null)
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-                File.WriteAllText(filePath, sb
+                ATT.TextFile.WriteAllText(filePath, sb
                     .Insert(0, (filePrefix ?? string.Empty) + Environment.NewLine + "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
-                    .Append($")\ndo ObjectDB[objectID] = objectData; end{Environment.NewLine}").ToString(), Encoding.UTF8);
+                    .Append($")\ndo ObjectDB[objectID] = objectData; end{Environment.NewLine}").ToString());
             }
         }
 

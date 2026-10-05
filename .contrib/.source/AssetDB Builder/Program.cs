@@ -29,6 +29,6 @@ foreach (var file in Directory.GetFiles("../.raw/AssetDB"))
             builder.AppendLine().Append('[').Append(key).Append("]=1,");
         }
         builder.AppendLine().AppendLine("};").AppendLine("-- #endif");
-        File.WriteAllText(Path.Combine(databaseFolder, $"{dbFileName}.lua"), builder.ToString(), Encoding.UTF8);
+        ATT.TextFile.WriteAllText(Path.Combine(databaseFolder, $"{dbFileName}.lua"), builder.ToString());
     }
 }
