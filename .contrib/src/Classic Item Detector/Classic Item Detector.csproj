@@ -58,4 +58,7 @@
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\TextFile.cs" Link="TextFile.cs" />
+  </ItemGroup>
 </Project>

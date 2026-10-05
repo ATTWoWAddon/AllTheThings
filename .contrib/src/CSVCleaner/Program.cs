@@ -92,7 +92,7 @@ foreach (string l in sorted)
     sb.AppendLine(l);
 }
 
-File.WriteAllText(filepath, sb.ToString());
+ATT.TextFile.WriteAllText(filepath, sb.ToString());
 
 return 0;
 
