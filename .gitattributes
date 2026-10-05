@@ -244,3 +244,7 @@ MiniJSON.cs text eol=crlf
 # Normalize Parser input configuration files to LF.
 /.contrib/.db/*.config text eol=lf
 /.contrib/.db/**/*.config text eol=lf
+
+
+/.contrib/generator-tests/*.py text eol=lf
+/.contrib/generator-tests/requirements.txt text eol=lf
