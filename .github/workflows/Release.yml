@@ -82,61 +82,157 @@ jobs:
       - name: Reset to SHA that triggered the workflow
         run: git reset --hard ${{ github.sha }}
 
+      - name: Set up stable .NET 10 SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Build Parser from source
+        shell: pwsh
+        working-directory: ${{ github.workspace }}
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $false
+          $repoRoot = (Get-Location).Path
+          $globalJsonPath = Join-Path $repoRoot 'global.json'
+          $originalGlobalJsonExisted = Test-Path -LiteralPath $globalJsonPath -PathType Leaf
+          $originalGlobalJsonBytes = $null
+          if ($originalGlobalJsonExisted) {
+            $originalGlobalJsonBytes = [System.IO.File]::ReadAllBytes($globalJsonPath)
+          }
+          $outputPath = (Join-Path $env:RUNNER_TEMP 'parser') + [System.IO.Path]::DirectorySeparatorChar
+          $intermediatePath = (Join-Path $env:RUNNER_TEMP 'parser-obj') + [System.IO.Path]::DirectorySeparatorChar
+          $buildExitCode = $null
+          $repoLocationPushed = $false
+          try {
+            Push-Location -LiteralPath $repoRoot
+            $repoLocationPushed = $true
+            # .NET SDK 10.0.100 is the minimum; latestMinor selects the highest stable .NET 10 SDK.
+            $globalJson = '{"sdk":{"version":"10.0.100","rollForward":"latestMinor","allowPrerelease":false}}'
+            [System.IO.File]::WriteAllText(
+              $globalJsonPath,
+              $globalJson + [Environment]::NewLine,
+              [System.Text.UTF8Encoding]::new($false)
+            )
+            $dotnetVersion = (& dotnet --version 2>&1 | Out-String).Trim()
+            if ($LASTEXITCODE -ne 0 -or $dotnetVersion -notmatch '^10\.\d+\.\d+$') {
+              throw "Expected a stable .NET SDK 10.x; got '$dotnetVersion'."
+            }
+            Write-Host "Using .NET SDK $dotnetVersion"
+            $currentProject = '.contrib/src/Parser/Parser.csproj'
+            $legacyProject = '.contrib/Source Code/Parser/Parser.csproj'
+            if (Test-Path -LiteralPath $currentProject -PathType Leaf) {
+              $project = $currentProject
+            }
+            elseif (Test-Path -LiteralPath $legacyProject -PathType Leaf) {
+              $project = $legacyProject
+            }
+            else {
+              throw 'Parser project was not found in this commit'
+            }
+            [xml]$projectXml = Get-Content -LiteralPath $project -Raw
+            $sdk = $projectXml.Project.GetAttribute('Sdk')
+            if (-not [string]::IsNullOrWhiteSpace($sdk)) {
+              Write-Host "Building SDK-style Parser project (Sdk=$sdk): $project"
+              dotnet build $project --configuration Release -p:Platform=x64 -p:OutputType=Exe --output $outputPath --nologo "-p:BaseIntermediateOutputPath=$intermediatePath" "-p:IntermediateOutputPath=$intermediatePath"
+              $buildExitCode = $LASTEXITCODE
+            }
+            else {
+              Write-Host "Building legacy Parser project with Visual Studio MSBuild: $project"
+              # Older SHAs can point at the ignored NuGet Csv 2.0.93 folder.
+              $csvHint = Join-Path (Split-Path -Parent $project) 'packages/Csv.2.0.93/lib/net40/Csv.dll'
+              $hasLegacyCsvHint = Select-String -LiteralPath $project -Pattern '<HintPath>\s*packages[\\/]+Csv\.2\.0\.93[\\/]+lib[\\/]+net40[\\/]+Csv\.dll\s*</HintPath>' -Quiet
+              if ($hasLegacyCsvHint -and -not (Test-Path -LiteralPath $csvHint -PathType Leaf)) {
+                New-Item -ItemType Directory -Force (Split-Path -Parent $csvHint) | Out-Null
+                Copy-Item -LiteralPath '.contrib/.tools/Csv.dll' -Destination $csvHint -ErrorAction Stop
+              }
+              $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+              if (-not (Test-Path -LiteralPath $vswhere -PathType Leaf)) {
+                throw 'Visual Studio vswhere was not found'
+              }
+              $msbuild = & $vswhere -latest -products '*' -requires Microsoft.Component.MSBuild -find 'MSBuild\**\Bin\MSBuild.exe' | Select-Object -First 1
+              if (-not $msbuild) { throw 'MSBuild was not found' }
+              & $msbuild $project /nologo /m /restore /p:Configuration=Release /p:Platform=x64 /p:OutputType=Exe "/p:OutputPath=$outputPath" "/p:BaseIntermediateOutputPath=$intermediatePath" "/p:IntermediateOutputPath=$intermediatePath"
+              $buildExitCode = $LASTEXITCODE
+            }
+          }
+          finally {
+            try {
+              if ($repoLocationPushed) {
+                Pop-Location
+              }
+            }
+            finally {
+              if ($originalGlobalJsonExisted) {
+                [System.IO.File]::WriteAllBytes($globalJsonPath, $originalGlobalJsonBytes)
+              }
+              elseif (Test-Path -LiteralPath $globalJsonPath) {
+                Remove-Item -LiteralPath $globalJsonPath -Force
+              }
+            }
+          }
+          if ($buildExitCode -ne 0) { exit $buildExitCode }
+          $parserPath = Join-Path $outputPath 'Parser.exe'
+          if (-not (Test-Path -LiteralPath $parserPath -PathType Leaf)) {
+            throw "The newly built Parser was not found: $parserPath"
+          }
+          "ATT_PARSER=$parserPath" >> $env:GITHUB_ENV
+
       - parallel:
         - name: Database Parser for Retail
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/options/simplify.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/options/simplify.config"
           shell: cmd
 
         - name: Database Parser for Classic Era
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
           shell: cmd
 
         - name: Database Parser for Season of Discovery
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
           shell: cmd
 
         - name: Database Parser for The Burning Crusade
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
           shell: cmd
 
         - name: Database Parser for Wrath of the Lich King
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
           shell: cmd
 
         - name: Database Parser for Cataclysm
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
           shell: cmd
 
         - name: Database Parser for Mists of Pandaria
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
           shell: cmd
 
         - name: Database Parser for Forever
           timeout-minutes: 5
           run: |
             cd .contrib/.tools
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
           shell: cmd
 
       - uses: actions/upload-artifact@v7
