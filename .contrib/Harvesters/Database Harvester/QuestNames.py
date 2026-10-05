@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
 from packaging import version
+from TextOutput import text_output
 from ThingTypes import (
     DATAS_FOLDER,
     STANDARD_FOLDER,
@@ -16,7 +17,7 @@ def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
     """This function creates a dict of raw files"""
     raw_path = Path("Raw", "QuestNames", file_name)
     item_dict: dict[str, list[str]] = {}
-    with open(raw_path, "r+") as raw_file:
+    with open(raw_path, "r+", encoding="utf-8-sig") as raw_file:
         lines = raw_file.readlines()
         for line in lines:
             try:
@@ -154,7 +155,7 @@ def get_quest_names(flavor: str) -> None:
             f"{FLAVOR_FOLDERS[flavor]}",
             "MissingQuests.txt",
         )
-    with open(missing_path, "r") as missing_file:
+    with open(missing_path, "r", encoding="utf-8-sig") as missing_file:
         missing_lines: list[str] = missing_file.readlines()
         for index, missing_line in enumerate(missing_lines):
             missing_line = missing_line.strip()
@@ -170,7 +171,7 @@ def get_quest_names(flavor: str) -> None:
                     except KeyError:
                         print(f"Have to get {expansion}: {missing_line}")
                         name_dict[expansion] = get_name(expansion_dict[expansion], missing_line)
-                        with open(raw_path_dict[expansion], "a") as expansion_file:
+                        with text_output(raw_path_dict[expansion], "a") as expansion_file:
                             expansion_file.write(f"{missing_line}{DELIMITER}{name_dict[expansion]}\n")
                         continue
                 for expansion in name_dict:
@@ -184,5 +185,5 @@ def get_quest_names(flavor: str) -> None:
                 missing_lines[index] = f"{quest_name.rstrip()}\n"
             else:
                 expansion_dict = get_available_expansions(missing_line)
-    with open(missing_path, "w") as missing_file:
+    with text_output(missing_path) as missing_file:
         missing_file.writelines(missing_lines)
