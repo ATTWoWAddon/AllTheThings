@@ -2532,7 +2532,7 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "影之哀伤持有者，供未拥有者查看。",
+		cn = "获取影之哀伤者可将其提供给尚未拥有该物品的玩家。",
 		-- TODO: tw = "",
 	},
 	lore = {
