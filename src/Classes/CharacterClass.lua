@@ -211,6 +211,27 @@ local function CacheCharacterDataFromATTCache(_t, unit)
 		end
 	end
 end
+--- Character identity captured from client APIs or saved character data.
+---@class ATTCharacterIdentity
+---@field name? string Complete native character name, including Forever surnames.
+---@field realm? string Realm name exactly as reported by the client when known.
+---@field guid? string Character GUID when available.
+---@field text? string Character display text, optionally including class colors.
+---@field build? integer Client build that last populated the saved identity.
+
+--- Optional class, race, and icon data stored for a unit lookup.
+---@class ATTUnitIdentityCache: ATTCharacterIdentity
+---@field className? string Localized class name.
+---@field classFile? string Class token used by class metadata and colors.
+---@field classID? ClassID Base character class ID.
+---@field race? string Localized race name.
+---@field raceID? RaceID Character race ID.
+---@field icon? string|FileID Class icon path or file ID.
+
+--- Populate cached identity, class, and race data from a GUID or unit token.
+--- Preserve native player names and other units' realm information.
+---@param _t ATTUnitIdentityCache Character cache record to populate.
+---@param unit string GUID or unit token to query.
 local function CacheCharacterDataFromAPIs(_t, unit)
 	local name, realm, guid, className, classFile, classID, raceName, raceFile, raceID;
 	local _,_,s3 = ("-"):split(unit)
@@ -220,7 +241,11 @@ local function CacheCharacterDataFromAPIs(_t, unit)
 		className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
 		if classFile then classID = ClassInfoByClassFile[classFile].classID; end
 	else
-		name, realm = UnitFullName(unit)
+		name = GetUnitName(unit);
+		realm = GetRealmName();
+		if unit ~= "player" and not app.IsForever then
+			name, realm = UnitFullName(unit);
+		end
 		if name then
 			guid = UnitGUID(unit);
 			if guid and app.WOWAPI.issecretvalue(guid) then guid = nil; end

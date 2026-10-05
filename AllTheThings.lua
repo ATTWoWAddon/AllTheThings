@@ -1349,8 +1349,8 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 		characterData[app.GUID] = currentCharacter;
 	end
 	currentCharacter.build = app.GameBuildVersion;
-	local name, realm = UnitName("player");
-	if not realm then realm = GetRealmName(); end
+	local name = GetUnitName("player");
+	local realm = GetRealmName();
 	if name then currentCharacter.name = name; end
 	if realm then currentCharacter.realm = realm; end
 	if app.Me then currentCharacter.text = app.Me; end
