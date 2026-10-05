@@ -1,0 +1,4 @@
+aiohttp
+beautifulsoup4
+packaging
+requests
