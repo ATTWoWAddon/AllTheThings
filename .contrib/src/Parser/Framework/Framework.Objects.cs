@@ -1199,10 +1199,10 @@ namespace ATT
             public static void ExportDebug(string directory)
             {
                 // Export all of the Containers
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ExportRawLua(AllContainers).ToString(), Encoding.UTF8);
+                ATT.TextFile.WriteAllText(Path.Combine(directory, "Categories.lua"), ExportRawLua(AllContainers).ToString());
 
                 // Export as JSON!
-                File.WriteAllText(Path.Combine(directory, "Categories.json"), ToJSON(AllContainers), Encoding.UTF8);
+                ATT.TextFile.WriteAllText(Path.Combine(directory, "Categories.json"), ToJSON(AllContainers));
 
                 // Cache the "Unsorted" list.
                 if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
@@ -1248,7 +1248,7 @@ namespace ATT
                             else listOfItems.Add(itemNameBuilder.ToString());
                         }
                     }
-                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
 
                     // Export the Binding Filtered Dictionary List.
                     builder2.Clear();
@@ -1279,10 +1279,10 @@ namespace ATT
                             builder2.AppendLine();
                         }
                     }
-                    File.WriteAllText(Path.Combine(directory, "SortedItemsByFilteredBinding.lua"), builder2.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(directory, "SortedItemsByFilteredBinding.lua"), builder2.ToString());
 
                     // Export all Unsorted.
-                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ExportRawLua(unsorted).ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ExportRawLua(unsorted).ToString());
                 }
             }
 
@@ -1468,7 +1468,7 @@ end");
                         if (entryName != null) builder.Append("\t-- ").Append(entryName);
                     }
                 }
-                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("}").ToString(), Encoding.UTF8);
+                ATT.TextFile.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("}").ToString());
             }
 
             private static void ProcessDB(List<object> list)

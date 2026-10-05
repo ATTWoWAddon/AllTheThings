@@ -47,6 +47,6 @@ while ((line = sr.ReadLine()) != null)
 }
 sr.Dispose();
 
-File.WriteAllText(filepath, sb.ToString());
+ATT.TextFile.WriteAllText(filepath, sb.ToString());
 
 return 0;
