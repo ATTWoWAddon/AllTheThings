@@ -60,7 +60,11 @@ targets `net10.0`.
 The Parser and Release workflows build Parser from the selected checkout's
 source into `.contrib/.builds/parser/`, then keep `.tools` as the working
 directory for relative configuration paths. Full Parser generation still
-requires Windows and its native Lua dependency.
+requires Windows and its native Lua dependency. The historical Windows record
+below concerns the original implementation and commit only; it is not
+validation of the rebased checker or current branch.
 
 The `audit-before.txt` file is a historical baseline snapshot. It describes the
-original checkout and does not report the current policy.
+original checkout and does not report the current policy. See
+[windows-validation.md](windows-validation.md) for the original Windows
+validation record, including its implementation commit and date.
