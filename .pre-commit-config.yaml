@@ -28,3 +28,12 @@ repos:
       - id: mypy
         args: [--strict]
         additional_dependencies: [aiohttp, types-beautifulsoup4]
+
+  - repo: local
+    hooks:
+      - id: file-hygiene
+        name: Check repository text hygiene
+        entry: python .contrib/file-hygiene/check_file_hygiene.py --index
+        language: python
+        additional_dependencies: [EditorConfig==0.17.1]
+        types: [file]
