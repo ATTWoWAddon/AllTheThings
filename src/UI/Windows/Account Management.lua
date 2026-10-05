@@ -273,12 +273,21 @@ local function SendMessageChunks(method, target, detail, msg, chunksize)
 		method(target, msg);
 	end
 end
+--- Logical character identifier, native whisper name, or Battle.net game-account ID.
+---@alias ATTAccountTransportKey string|number
+
+local GetCharacterWhisperTarget;
 local function _SendAddonMessage(target, msg)
 	DebugPrint("SEND.MSG",target,msg:len(),msg:sub(1, 500))
 	C_ChatInfo.SendAddonMessage(AddonMessagePrefix, msg, "WHISPER", target);
 end
+--- Sends an account-sync whisper, queuing chunks when the message exceeds the payload limit.
+--- Forever identifiers are converted to native full names before the queue key is chosen.
+---@param target string Character name or ATT name-realm identifier.
+---@param detail string|nil Label shown for queued messages.
+---@param msg string|string[] Message text or commands to encode.
 local function SendAddonMessage(target, detail, msg)
-	SendMessageChunks(_SendAddonMessage, target, detail, msg, 255);
+	SendMessageChunks(_SendAddonMessage, GetCharacterWhisperTarget(target), detail, msg, 255);
 end
 local function _SendBattleNetMessage(target, msg)
 	DebugPrint("SEND.NET",target,msg:len(),msg:sub(1, 500))
@@ -345,6 +354,28 @@ local function NormalizeLinkedCharacterIdentifier(identifier, ...)
 	if realm == "" then return; end
 	return name .. "-" .. realm:gsub("%s+", ""), name;
 end
+--- Maps Forever logical identifiers to native full names, preserving exact known names.
+--- Other clients and numeric IDs pass through unchanged.
+---@param identifier ATTAccountTransportKey Native full name, ATT name-realm identifier, or Battle.net game-account ID.
+---@return ATTAccountTransportKey target Whisper recipient after Forever name resolution; numeric IDs pass through.
+GetCharacterWhisperTarget = function(identifier)
+	if not app.IsForever or type(identifier) ~= "string" then return identifier; end
+	identifier = TrimString(identifier);
+	local normalizedIdentifier, name = NormalizeLinkedCharacterIdentifier(identifier);
+	local knownName;
+	for _,character in pairs(CharacterData) do
+		if type(character.name) == "string" and character.name ~= "" then
+			-- Native full names take precedence over interpreting name punctuation.
+			if identifier == character.name then return character.name; end
+			local qualified = NormalizeLinkedCharacterIdentifier(character.name, character.realm);
+			if qualified and (identifier == qualified or normalizedIdentifier == qualified) then
+				knownName = character.name;
+			end
+		end
+	end
+	-- Forever whispers use the full name without ATT's internal realm suffix.
+	return knownName or name or identifier;
+end
 local function AddCharacterLookup(characterByInfo, character)
 	local identifier = NormalizeLinkedCharacterIdentifier(character.name, character.realm)
 	if identifier then
@@ -354,10 +385,20 @@ local function AddCharacterLookup(characterByInfo, character)
 		characterByInfo[character.guid] = character
 	end
 end
+--- Checks whether a sender is allowed by the explicit or implicit linked-character entries.
+--- Forever senders also match the native whisper name of an allowed logical identifier.
+---@param identifier ATTAccountTransportKey Character sender name or Battle.net game-account ID.
+---@return boolean linked
 local function IsLinkedCharacter(identifier)
 	if LinkedCharacters[identifier] then return true end
 	local fullIdentifier, shortIdentifier = NormalizeLinkedCharacterIdentifier(identifier);
-	return (fullIdentifier and LinkedCharacters[fullIdentifier]) or (shortIdentifier and LinkedCharacters[shortIdentifier]) or false;
+	if (fullIdentifier and LinkedCharacters[fullIdentifier]) or (shortIdentifier and LinkedCharacters[shortIdentifier]) then return true; end
+	if app.IsForever and type(identifier) == "string" then
+		for linked,allowed in pairs(LinkedCharacters) do
+			if allowed and type(linked) == "string" and GetCharacterWhisperTarget(linked) == identifier then return true; end
+		end
+	end
+	return false;
 end
 local function UpdateBattleTags()
 	-- Attempt to cache each character's battleTag if it is missing.
@@ -1995,8 +2036,24 @@ local function OnClickForLinkedAccount(row, button)
 	end
 	return true;
 end
+--- Queue data shared by the progress, tooltip, and cancellation callbacks.
+---@class ATTSyncQueueItem
+---@field datalink? ATTAccountTransportKey Key used by the pending send and receive queues.
+---@field text? string Display name used in the cancellation prompt.
+---@field progress? number Number of received or acknowledged chunks.
+---@field total? number Total number of send and receive chunks.
+---@field visible? boolean Whether the queue item is displayed.
+
+--- Window row displaying a synchronization queue item.
+---@class ATTSyncQueueRow: ATTRowClass
+---@field ref ATTSyncQueueItem Queue data associated with the row.
+
+--- Cancels pending send and receive chunks after a right-click confirmation.
+---@param row ATTSyncQueueRow Window row containing the transport key and display name.
+---@param button string Clicked mouse button.
+---@return true handled
 local function OnClickForSyncQueue(row, button)
-	local identifier = row.ref.text;
+	local identifier = row.ref.datalink;
 	if not identifier then return true; end
 
 	if button == "RightButton" then
@@ -2184,8 +2241,11 @@ local function OnTooltipForLinkedAccount(t, tooltipInfo)
 		});
 	end
 end
+--- Appends send/receive chunk progress and the cancellation hint for this transport key.
+---@param t ATTSyncQueueItem Queue item containing the transport key.
+---@param tooltipInfo ATTTooltipLine[] Tooltip lines to append to.
 local function OnTooltipForSyncQueue(t, tooltipInfo)
-	local identifier = t.text;
+	local identifier = t.datalink;
 	if not identifier then return; end
 
 	-- Show the Receive Queue
@@ -2235,8 +2295,11 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 		r = 1, g = 0.8, b = 0.8
 	});
 end
+--- Updates combined send/receive progress and makes the queue item visible.
+---@param t ATTSyncQueueItem Queue item containing the transport key.
+---@return true|nil updated Nil when the item has no transport key.
 local function OnUpdateForSyncQueue(t)
-	local identifier = t.text;
+	local identifier = t.datalink;
 	if not identifier then return; end
 
 	local progress, total = 0, 0;
@@ -2471,6 +2534,7 @@ app:CreateWindow("Account Management", {
 					end
 					for sender,_ in pairs(senders) do
 						tinsert(g, app.CreateRawText(tostring(sender), {
+							datalink = sender,
 							OnClick = OnClickForSyncQueue,
 							OnTooltip = OnTooltipForSyncQueue,
 							OnUpdate = OnUpdateForSyncQueue,
