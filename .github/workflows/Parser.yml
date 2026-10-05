@@ -9,10 +9,14 @@ on: # Controls automatic and manual workflow triggers
     paths: # Require at least one matching changed file; not evaluated for tag pushes
       - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
       - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
+      - '.contrib/src/Parser/**' # Trigger on Parser source changes
+      - '.contrib/src/TextFile.cs' # Trigger on shared generated-text formatting changes
   pull_request: # Trigger on opened, synchronize, or reopened events for any target branch
     paths: # Require at least one matching file changed in the pull request
       - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
       - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
+      - '.contrib/src/Parser/**' # Trigger on Parser source changes
+      - '.contrib/src/TextFile.cs' # Trigger on shared generated-text formatting changes
   workflow_dispatch: # Run manually: Actions -> Parser -> Run workflow -> select a branch -> Run workflow (requires write access and this file on the default branch; no path filters)
 
 permissions:
@@ -28,6 +32,19 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Build Parser from source
+        shell: pwsh
+        working-directory: ${{ github.workspace }}
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $msbuild = & $vswhere -latest -products '*' -requires Microsoft.Component.MSBuild -find 'MSBuild\**\Bin\MSBuild.exe' | Select-Object -First 1
+          if (-not $msbuild) { throw 'MSBuild was not found' }
+          $output = "$env:GITHUB_WORKSPACE\.contrib\.builds\parser\"
+          $intermediate = "$env:GITHUB_WORKSPACE\.contrib\.builds\parser-obj\"
+          & $msbuild '.contrib/src/Parser/Parser.csproj' /nologo /m /p:Configuration=Release /p:Platform=x64 /p:OutputType=Exe "/p:OutputPath=$output" "/p:BaseIntermediateOutputPath=$intermediate" "/p:IntermediateOutputPath=$intermediate"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          "ATT_PARSER=${output}Parser.exe" >> $env:GITHUB_ENV
+
       - name: Check changed paths
         id: changes
         uses: dorny/paths-filter@v4
@@ -38,6 +55,8 @@ jobs:
               - '.contrib/.db/**'
               - '!.contrib/.db/forever/**'
               - '.github/workflows/Parser.yml'
+              - '.contrib/src/Parser/**'
+              - '.contrib/src/TextFile.cs'
 
       - parallel:
         - name: Database Parser for Retail
@@ -47,7 +66,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config"
 
         - name: Database Parser for Classic Era
           id: Parse-ClassicEra
@@ -56,7 +75,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
 
         - name: Database Parser for Season of Discovery
           id: Parse-ClassicSoD
@@ -65,7 +84,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
 
         - name: Database Parser for The Burning Crusade
           id: Parse-TBC
@@ -74,7 +93,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
 
         - name: Database Parser for Wrath of the Lich King
           id: Parse-WOTLK
@@ -83,7 +102,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
 
         - name: Database Parser for Cataclysm
           id: Parse-CATA
@@ -92,7 +111,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
 
         - name: Database Parser for Mists of Pandaria
           id: Parse-MOP
@@ -101,7 +120,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
 
         - name: Database Parser for Forever
           id: Parse-FOREVER
@@ -109,7 +128,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
 
       - name: Full Success Check
         shell: pwsh
