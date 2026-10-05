@@ -76,5 +76,7 @@ Use a suitable temporary directory for the C# output on Windows. The C# fixtures
 require .NET 8 and test the shared writer used by legacy and modern generators.
 Full Parser generation needs Windows and its native Lua dependency. Compiling
 Parser with .NET Framework reference assemblies on macOS verifies source
-compatibility, but does not run that native pipeline. Report full regeneration
-separately; it has not been executed as part of the local normalization checks.
+compatibility. The [Windows validation record](windows-validation.md) documents
+nine actual Parser configurations, identical repeated output, and data-content
+comparison against the original master processing code. It also records the
+Windows checkout matrix and generator fixtures.
