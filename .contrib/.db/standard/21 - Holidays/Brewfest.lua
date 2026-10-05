@@ -11,8 +11,8 @@ BREWFEST_HEADER = createHeader({
 	-- #if BEFORE WRATH
 	eventSchedule = {
 		1,	-- Recurring
-		9, 20, 10, 0,	-- 9/20 at 10 AM
-		10, 4, 10, 0	-- 10/4 at 10 AM
+		9, 22, 10, 0,	-- 9/22 at 10 AM
+		10, 6, 10, 0	-- 10/6 at 10 AM
 	},
 	-- #endif
 	text = {
@@ -22,7 +22,7 @@ BREWFEST_HEADER = createHeader({
 		en = "Brewfest",
 		-- TODO: de = "",
 		es = "Fiesta de la cerveza",
-		mx = "Fiesta de la cerveza",
+		mx = "Fiesta de la Cerveza",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: ko = "",
@@ -39,7 +39,16 @@ BREWFEST_BANQUET = createHeader({
 	icon = [[~_.asset("Holiday_brewfest")]],
 	text = {
 		en = "Brewfest Banquet",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		mx = "Festín de la Fiesta de la Cerveza",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
 		cn = "美酒节宴会",
+		-- TODO: tw = "",
 	},
 });
 -- Developer note: Use the BREWFEST_TOKEN constant in place of the reward.
@@ -2313,7 +2322,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
-					["groups"] = BREWFEST_TOKEN,
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						objective(1, {	-- 0/3 Kegs Delivered
+							["provider"] = { "i", 33797 },	-- Portable Brewfest Keg
+							["crs"] = {
+								24468,	-- Pol Amberstill <Ram Racing Apprentice>
+								24364,	-- Flynn Firebrew
+							},
+						}),
+					}),
 				}),
 				q(11412, {	-- There and Back Again (H)
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
@@ -2333,6 +2350,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = BREWFEST_TOKEN,
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						objective(1, {	-- 0/3 Kegs Delivered
+							["provider"] = { "i", 33797 },	-- Portable Brewfest Keg
+							["crs"] = {
+								24510,	-- Driz Tumblequick <Ram Racing Apprentice>
+								24527,	-- Bok Dropcertain
+							},
+						}),
+					}),
 				}),
 				q(12020, {	-- This One Time, When I Was Drunk... (A)
 					["provider"] = { "o", 189989 },	-- Dark Iron Mole Machine Wreckage
