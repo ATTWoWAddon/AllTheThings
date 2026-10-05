@@ -58,6 +58,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	CurrentCharacter = currentCharacter
 	AccountWideData = accountWideData
 	CharacterData = characterData
+	-- Identifiers are derived from names and realms; rebuild any saved pre-fix values.
+	-- TODO: Remove after Forever's official launch once legacy identifiers are rebuilt.
+	-- Add login identity-change invalidation before removing this loop.
+	for _,character in pairs(characterData) do character.Identifier = nil; end
 	local now = time();
 	if cachedTotalTimePlayed then
 		currentCharacter.totalTimePlayed = cachedTotalTimePlayed;
@@ -298,18 +302,47 @@ local function CamelCaseName(str)
         return first:upper() .. rest;
     end);
 end
-local function NormalizeLinkedCharacterIdentifier(identifier,identifierRealm)
-	if not identifier or type(identifier) ~= "string" or identifier == "" then return; end
-	local name, realm = identifier:match("^%s*([%w]+)%s*-?%s*([%w ]-)%s*$");
-	if not name or name == "" then
+--- Saved character identity and metadata exchanged by account synchronization.
+---@class ATTAccountCharacter: ATTCharacterIdentity
+---@field Identifier? string Cached normalized name-realm identifier.
+---@field battleTag? string Battle tag of the character's account.
+---@field factionID? FactionID Character faction ID.
+---@field lvl? number Character level.
+---@field classID? ClassID Character class ID.
+---@field class? string Class token used by class metadata and colors.
+---@field raceID? RaceID Character race ID.
+---@field lastPlayed? number Timestamp of the character's last login or update.
+---@field Deaths? number Recorded character death count.
+
+--- Builds a name-realm identifier while preserving spaces within complete names.
+--- An explicit realm argument keeps the entire name; missing realms use the current realm.
+---@param identifier string|number|nil Complete name or combined identifier; non-strings are rejected.
+---@param ... string|nil Optional explicit realm, including nil for the current realm.
+---@return string|nil identifier Normalized name followed by a realm without spaces.
+---@return string|nil name Normalized complete name without the realm suffix.
+local function NormalizeLinkedCharacterIdentifier(identifier, ...)
+	if type(identifier) ~= "string" or identifier == "" then return; end
+	local name, realm = identifier, ...;
+	if select("#", ...) == 0 then
+		identifier = TrimString(identifier);
 		name = identifier;
+		local separator = identifier:find("-", 1, true);
+		if separator then
+			name, realm = identifier:sub(1, separator - 1), identifier:sub(separator + 1);
+		end
+	end
+	name = CamelCaseName(name);
+	if not name or name == "" then return; end
+	if realm ~= nil then
+		if type(realm) ~= "string" then return; end
+		realm = TrimString(realm);
 	end
 	if not realm or realm == "" then
-		realm = identifierRealm or CurrentCharacter.realm
+		realm = CurrentCharacter and CurrentCharacter.realm;
 	end
-    name = CamelCaseName(name);
-	if not name or name == "" then return; end
-	realm = CamelCaseName(realm)
+	if type(realm) ~= "string" then return; end
+	realm = CamelCaseName(realm);
+	if realm == "" then return; end
 	return name .. "-" .. realm:gsub("%s+", ""), name;
 end
 local function AddCharacterLookup(characterByInfo, character)
@@ -1309,6 +1342,21 @@ local wrappers = {
 		end,
 	}
 }
+--- Serialized character summary, with each string stored in its wire position.
+---@class ATTCharacterSummaryFields
+---@field [1] string Battle tag.
+---@field [2] string Character display text, including class colors.
+---@field [3] string Complete native character name.
+---@field [4] string Realm name.
+---@field [5] string Faction ID encoded as a number.
+---@field [6] string Character level encoded as a number.
+---@field [7] string Class ID encoded as a number.
+---@field [8] string Class token.
+---@field [9] string Race ID encoded as a number.
+---@field [10] string Last-played timestamp encoded as a number.
+---@field [11] string Death count encoded as a number.
+---@field [12] string Client build encoded as a number.
+
 local deserializers = setmetatable({
 	ActiveSkills = function(field, currentValue, data)
 		if currentValue then
@@ -1389,11 +1437,18 @@ local deserializers = setmetatable({
 		currentValue.modeString = modeString;
 		return currentValue;
 	end,
+	--- Applies the received twelve-field summary to saved character identity and metadata.
+	--- Clears the derived Identifier so later lookups use the updated name and realm.
+	---@param field string Serialized field name (unused).
+	---@param currentValue any Value supplied by the generic deserializer (unused).
+	---@param data ATTCharacterSummaryFields Summary fields in wire order.
+	---@param character ATTAccountCharacter Saved character record to update.
 	Summary = function(field, currentValue, data, character)
 		character.battleTag = data[1];
 		character.text = data[2];
 		character.name = data[3];
 		character.realm = data[4];
+		character.Identifier = nil;
 		character.factionID = tonumber(data[5]);
 		character.lvl = tonumber(data[6]);
 		character.classID = tonumber(data[7]);
