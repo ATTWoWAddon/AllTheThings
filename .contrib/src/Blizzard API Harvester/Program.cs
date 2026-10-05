@@ -1573,9 +1573,9 @@ namespace ATT
 			}
 
 			if (ProcessObjects[ObjType.item])
-				File.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
+				ATT.TextFile.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }), ATT.TextFile.Lf, ATT.TextFile.Utf8NoBom);
 			if (ProcessObjects[ObjType.quest])
-				File.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
+				ATT.TextFile.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }), ATT.TextFile.Lf, ATT.TextFile.Utf8NoBom);
 
 			Console.WriteLine("Done exporting the data.");
 			WaitForParsingData = false;
