@@ -261,25 +261,27 @@ local knownBy = {};
 ---@field text? string Localized label for the information type.
 ---@field priority? number Display sort order.
 
---- Removes local realm suffixes while preserving character colors and quantities.
----@param character ATTCharacterIdentity? Cached identity to format; nil yields "???".
----@param realmName string? Exact local realm alias returned by GetRealmName.
----@param normalizedRealmName string? Normalized local realm alias returned by GetNormalizedRealmName.
----@return string displayName Display text retaining foreign realms, color codes, and owned quantity.
+--- Shortens local realm suffixes in saved UI text while preserving colors and quantities.
+---@param character ATTCharacterIdentity? Saved UI text and actual realm to format; nil yields "???".
+---@param realmName string Exact local realm name returned by GetRealmName.
+---@param normalizedRealmName string Normalized local realm name returned by GetNormalizedRealmName.
+---@return string displayName Saved UI text with a matching local realm suffix omitted.
 local function GetCharacterDisplayName(character, realmName, normalizedRealmName)
 	if not character then return "???"; end
-	local text = character.text or character.name or "???";
-	if not character.name then return text; end
+	local text = character.text or "???";
 	local realm = character.realm;
-	if realm and realm ~= "" and realm ~= realmName and realm ~= normalizedRealmName then return text; end
-	local color = text:match("^|c%x%x%x%x%x%x%x%x") or "";
-	local displayName = color .. character.name;
-	local ending = (color ~= "" and "|r" or "") .. (text:match(" %(x%d+%)$") or "");
-	-- Compare complete strings so realm punctuation and name contents stay literal.
-	if (realmName and realmName ~= "" and text == displayName .. "-" .. realmName .. ending)
-		or (normalizedRealmName and normalizedRealmName ~= ""
-			and text == displayName .. "-" .. normalizedRealmName .. ending) then
-		return displayName .. ending;
+	if not realm or realm == "" or (realm ~= realmName and realm ~= normalizedRealmName) then return text; end
+	local ending = text:match(" %(x%d+%)$") or "";
+	local display = text:sub(1, #text - #ending);
+	if display:sub(-2) == "|r" then
+		display = display:sub(1, -3);
+		ending = "|r" .. ending;
+	end
+	-- Compare suffixes literally so spaces and realm punctuation retain their meaning.
+	local suffix = "-" .. realmName;
+	if display:sub(-#suffix) ~= suffix then suffix = "-" .. normalizedRealmName; end
+	if suffix ~= "-" and display:sub(-#suffix) == suffix then
+		return display:sub(1, -#suffix - 1) .. ending;
 	end
 	return text;
 end

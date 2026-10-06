@@ -148,11 +148,11 @@ test("uncolored names keep their spelling while removing only the suffix",functi
 end)
 
 for _,missing in ipairs({{name="nil"},{name="empty",realm=""}}) do
-	test(missing.name.." realm metadata never strips a foreign tail from the name",function()
+	test(missing.name.." realm metadata leaves saved display text unchanged",function()
 		local f=fixture()
 		local localChar=character("Milo River",normalizedRealm); localChar.realm=missing.realm
 		local foreign=character("Visitor Stone","East-"..normalizedRealm); foreign.realm=missing.realm
-		contains(text(f.processors.render({localChar},f.app.L.KNOWN_BY)),"|cffaabbccMilo River|r")
+		contains(text(f.processors.render({localChar},f.app.L.KNOWN_BY)),localChar.text)
 		contains(text(f.processors.render({foreign},f.app.L.KNOWN_BY)),foreign.text)
 	end)
 end
