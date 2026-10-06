@@ -1718,6 +1718,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25275, {	-- Report to the Labor Captain
+                    ["sourceQuest"] = 25267, -- Message for Garrosh (Cata) / Vol'jin (WoD) / Saurfang (Legion)
 					["qg"] = 3144,	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
