@@ -156,7 +156,7 @@ for _,flavor in ipairs({
 			local record={}; unitCache(app,env)(record,unit)
 			equal(record.name,flavor.expected); equal(record.realm,flavor.realm); equal(record.guid,"remote")
 			equal(record.classID,8); equal(record.raceID,1)
-			equal(calls.complete,3); equal(calls.realm,3)
+			equal(calls.complete,3-flavor.nativeCalls,"No unused complete-name calls"); equal(calls.realm,3-flavor.nativeCalls,"No unused current-realm calls")
 			equal(calls.native,flavor.nativeCalls,"Only other players on Retail and Classic use UnitFullName's realm")
 			equal(calls.unit,0); equal(calls.unmodified,0); equal(calls.nameutil,0)
 			equal(app.CurrentCharacter.name,flavor.full); equal(app.CurrentCharacter.realm,rawRealm,"Remote lookups retain the current player's identity")

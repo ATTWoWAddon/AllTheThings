@@ -241,10 +241,11 @@ local function CacheCharacterDataFromAPIs(_t, unit)
 		className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
 		if classFile then classID = ClassInfoByClassFile[classFile].classID; end
 	else
-		name = GetUnitName(unit);
-		realm = GetRealmName();
 		if unit ~= "player" and not app.IsForever then
 			name, realm = UnitFullName(unit);
+		else
+			name = GetUnitName(unit);
+			realm = GetRealmName();
 		end
 		if name then
 			guid = UnitGUID(unit);
