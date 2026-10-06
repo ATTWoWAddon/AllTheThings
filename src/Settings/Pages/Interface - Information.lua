@@ -261,7 +261,7 @@ local knownBy = {};
 ---@field text? string Localized label for the information type.
 ---@field priority? number Display sort order.
 
---- Removes local realm suffixes while preserving colors, quantities and cached Forever surnames.
+--- Removes local realm suffixes while preserving character colors and quantities.
 ---@param character ATTCharacterIdentity? Cached identity to format; nil yields "???".
 ---@param realmName string? Exact local realm alias returned by GetRealmName.
 ---@param normalizedRealmName string? Normalized local realm alias returned by GetNormalizedRealmName.
@@ -270,12 +270,6 @@ local function GetCharacterDisplayName(character, realmName, normalizedRealmName
 	if not character then return "???"; end
 	local text = character.text or character.name or "???";
 	if not character.name then return text; end
-	local build = character.build;
-	-- Cached Forever alts may still store a surname as their realm.
-	-- TODO: Remove after Forever's official launch once all cached Forever identities
-	-- are refreshed and older sync clients no longer reintroduce legacy data.
-	if type(build) == "number" and build >= 16001 and build < 20000
-		and character.guid ~= app.GUID then return text; end
 	local realm = character.realm;
 	if realm and realm ~= "" and realm ~= realmName and realm ~= normalizedRealmName then return text; end
 	local color = text:match("^|c%x%x%x%x%x%x%x%x") or "";

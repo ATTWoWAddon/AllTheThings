@@ -111,7 +111,7 @@ test("native initialized Forever names reach flat tooltips without losing surnam
 	f.data.current=app.CurrentCharacter; f.app.CurrentCharacter=app.CurrentCharacter
 	f.data.alt=character("Milo Stone",normalizedRealm,{build=16001,text="|cff00cc00Milo Stone-"..normalizedRealm.."|r"})
 	local rendered=text(f:run("known",{spellID=10}))
-	contains(rendered,"|cffaabbccMilo River|r"); contains(rendered,"|cff00cc00Milo Stone-"..normalizedRealm.."|r")
+	contains(rendered,"|cffaabbccMilo River|r"); contains(rendered,"|cff00cc00Milo Stone|r")
 	assert(rendered:find("Milo River",1,true)<rendered:find("Milo Stone",1,true),"Complete names sort separately despite a shared first name")
 	local owner=setmetatable({text=app.CurrentCharacter.text.." (x4)"},{__index=app.CurrentCharacter})
 	contains(text(f.processors.render({owner},f.app.L.OWNED_BY)),"|cffaabbccMilo River|r (x4)")
@@ -154,19 +154,6 @@ for _,missing in ipairs({{name="nil"},{name="empty",realm=""}}) do
 		local foreign=character("Visitor Stone","East-"..normalizedRealm); foreign.realm=missing.realm
 		contains(text(f.processors.render({localChar},f.app.L.KNOWN_BY)),"|cffaabbccMilo River|r")
 		contains(text(f.processors.render({foreign},f.app.L.KNOWN_BY)),foreign.text)
-	end)
-end
-
-for _,build in ipairs({16001,19999}) do
-	test("legacy Forever cache keeps its surname for build "..build,function()
-		local f=fixture()
-		local legacy=character("Milo","River",{build=build,guid="cached-alt"})
-		local collision=character("RealmCollision",rawRealm,{build=build,guid="cached-collision"})
-		contains(text(f.processors.render({legacy,collision},f.app.L.KNOWN_BY)),legacy.text)
-		contains(text(f.processors.render({legacy,collision},f.app.L.KNOWN_BY)),collision.text)
-		local owner=setmetatable({text=legacy.text.." (x3)"},{__index=legacy})
-		contains(text(f.processors.render({owner},f.app.L.OWNED_BY)),"|cffaabbccMilo-River|r (x3)")
-		equal(legacy.name,"Milo"); equal(legacy.realm,"River")
 	end)
 end
 
@@ -241,7 +228,7 @@ test("twelve-field Summary preserves complete native names and clears identity c
 	for _,field in ipairs({"name","realm","text","build"}) do equal(result[field],original[field],"Synced "..field) end
 	equal(result.Identifier,nil)
 	local f=fixture(); result.Spells={[10]=true}; f.data.alt=result
-	contains(text(f:run("known",{spellID=10})),original.text)
+	contains(text(f:run("known",{spellID=10})),"|cffaabbccMilo River|r")
 end)
 
 test("twelve-field Summary refresh clears an already-matching identity cache",function()
