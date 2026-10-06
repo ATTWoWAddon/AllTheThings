@@ -16,9 +16,6 @@ end
 local function contains(value,part)
 	assert(value:find(part,1,true),"Missing "..part.." in "..value)
 end
-local function excludes(value,part)
-	assert(not value:find(part,1,true),"Unexpected "..part.." in "..value)
-end
 local function text(rows)
 	local result={}; for _,row in ipairs(rows) do result[#result+1]=(row.left or "").." "..(row.right or "") end
 	return table.concat(result,"\n")
@@ -96,13 +93,15 @@ for _,case in ipairs({
 	{name="spaced metadata and text",realm=rawRealm,suffix=rawRealm},
 	{name="normalized metadata and text",realm=normalizedRealm,suffix=normalizedRealm},
 }) do
-	test(case.name.." shortens the current realm literally",function()
-		local f=fixture()
-		f.data.localChar=character("Milo River",case.realm,{build=16001,guid="current"})
-		f.data.localChar.text="|cffaabbccMilo River-"..case.suffix.."|r"
-		local rows=f:run("known",{spellID=10}); equal(#rows,1)
-		contains(text(rows),"|cffaabbccMilo River|r"); excludes(text(rows),"Milo River-")
-	end)
+	for _,identity in ipairs({{name="current character",guid="current"},{name="cached Forever alt",guid="cached-alt"}}) do
+		test("KnownBy hides the matching local realm for "..identity.name..": "..case.name,function()
+			local f=fixture()
+			f.data.localChar=character("Milo River",case.realm,{build=16001,guid=identity.guid})
+			f.data.localChar.text="|cffaabbccMilo River-"..case.suffix.."|r"
+			local rows=f:run("known",{spellID=10}); equal(#rows,1)
+			equal(rows[1].left,"Known by |cffaabbccMilo River|r")
+		end)
+	end
 end
 
 test("native initialized Forever names reach flat tooltips without losing surnames",function()
@@ -117,12 +116,12 @@ test("native initialized Forever names reach flat tooltips without losing surnam
 	contains(text(f.processors.render({owner},f.app.L.OWNED_BY)),"|cffaabbccMilo River|r (x4)")
 end)
 
-test("foreign prefixes and tails retain their complete realm suffix",function()
-	local f=fixture()
+test("KnownBy retains complete foreign realms containing local realm words",function()
+	local f=fixture({forever=false,build=120000})
 	for _,realm in ipairs({normalizedRealm.."-East","East-"..normalizedRealm,rawRealm.." East","Other Realm"}) do
-		local name="Foreign"
-		local record=character(name,realm,{build=16001})
-		contains(text(f.processors.render({record},f.app.L.KNOWN_BY)),record.text)
+		f.data.foreign=character("Foreign",realm,{build=120000,guid="foreign-alt"})
+		local rows=f:run("known",{spellID=10}); equal(#rows,1)
+		equal(rows[1].left,"Known by "..f.data.foreign.text)
 	end
 end)
 
@@ -142,6 +141,24 @@ for _,name in ipairs({normalizedRealm,"Watcher-"..rawRealm}) do
 	end)
 end
 
+test("KnownBy preserves custom display text, colors, and quantities when hiding the local realm",function()
+	local f=fixture()
+	f.data.alias=character("Stored Raw Name",rawRealm,{build=16001,guid="cached-alt",
+		text="|cff00cc00Display Alias-"..normalizedRealm.."|r (x2)"})
+	equal(f:run("known",{spellID=10})[1].left,"Known by |cff00cc00Display Alias|r (x2)")
+	f.data.alias.text="|cff00cc00Custom label-"..rawRealm
+	equal(f:run("known",{spellID=10})[1].left,"Known by |cff00cc00Custom label")
+	f.data.alias.text="Custom UI label"
+	equal(f:run("known",{spellID=10})[1].left,"Known by Custom UI label")
+end)
+
+test("KnownBy uses the missing-text fallback without rebuilding a cached name",function()
+	local f=fixture()
+	f.data.missing=character("Stored Raw Name",rawRealm,{build=16001,guid="cached-alt"})
+	f.data.missing.text=nil
+	equal(f:run("known",{spellID=10})[1].left,"Known by ???")
+end)
+
 test("uncolored names keep their spelling while removing only the suffix",function()
 	local f=fixture(); f.data.localChar=character("Milo River",normalizedRealm,{text="Milo River-"..normalizedRealm})
 	equal(f:run("known",{spellID=10})[1].left,"Known by Milo River")
@@ -157,10 +174,12 @@ for _,missing in ipairs({{name="nil"},{name="empty",realm=""}}) do
 	end)
 end
 
-test("Classic and Retail cached records shorten their matching current realm",function()
+test("KnownBy hides the matching local realm for Classic and Retail cached alts",function()
 	for _,build in ipairs({20000,30400,120000}) do
-		local f=fixture({forever=false,build=build}); local record=character("Player",rawRealm,{build=build})
-		contains(text(f.processors.render({record},f.app.L.KNOWN_BY)),"|cffaabbccPlayer|r")
+		local f=fixture({forever=false,build=build})
+		f.data.alt=character("Player",rawRealm,{build=build,guid="cached-alt"})
+		local rows=f:run("known",{spellID=10}); equal(#rows,1)
+		equal(rows[1].left,"Known by |cffaabbccPlayer|r")
 	end
 end)
 
@@ -207,13 +226,13 @@ test("Classic Owned by adds quantities without changing colors or foreign realms
 	contains(rendered,"|cffaabbccOwner|r (x3)"); contains(rendered,f.data.foreign.text)
 end)
 
-test("profession Known by keeps ranks and complete Forever surnames",function()
+test("profession KnownBy preserves saved names and ranks",function()
 	local f=fixture({classic=true})
 	f.data.updated=character("Milo River",rawRealm,{build=16001,guid="current",ActiveSkills={[2259]={60,100}}})
-	f.data.legacy=character("Milo","Stone",{build=16001,ActiveSkills={[2259]={50,100}}})
+	f.data.alt=character("Milo Stone","Other Realm",{build=16001,ActiveSkills={[2259]={50,100}}})
 	local rows=f:run("known",{key="professionID",knownByID=2259})
-	equal(#rows,3); contains(rows[2].left,"|cffaabbccMilo River|r"); equal(rows[2].right,"60 / 100")
-	contains(rows[3].left,f.data.legacy.text); equal(rows[3].right,"50 / 100")
+	equal(#rows,3); equal(rows[2].left,"  |cffaabbccMilo River|r"); equal(rows[2].right,"60 / 100")
+	equal(rows[3].left,"  "..f.data.alt.text); equal(rows[3].right,"50 / 100")
 end)
 
 local function summaryFields(wire)
