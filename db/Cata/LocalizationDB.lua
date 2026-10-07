@@ -26944,6 +26944,8 @@ L.HIDDEN_CURRENCY_TRIGGERS = "隐藏货币触发器"
 L.HIDDEN_CURRENCY_TRIGGERS_DESC = "这些货币是根据特定条件手动判定触发的，主要由游戏内部用于追踪目的。"
 L.HIDDEN_QUEST_TRIGGERS = "隐藏任务触发"
 L.HIDDEN_QUEST_TRIGGERS_DESC = "这些任务是根据特定的标准手动确定触发的任务，主要用于游戏内部的追踪目的"
+L.HIDE_BORDERS = "隐藏边框"
+L.HIDE_BORDERS_TOOLTIP = "是否隐藏ATT窗口边框并调整内部边距/对齐作为补偿"
 L.HOLIDAY_DROP = "每个战网账号每天的首次尝试才有机会掉落独特奖励，如坐骑、宠物、玩具和手稿。每次未获得奖励后，掉落几率都会提高。\n暴雪尚未明确说明哪些物品适用此系统。"
 L.ICON_LEGEND_MISC_LABEL = "杂项图标图例"
 L.ICON_LEGEND_MISC_TEXT = "|c" .. _.DefaultColors.White .. "|T" .. _.asset("Currency") .. ":0|t 用作一种货币\n|T" .. _.asset("Interface_Reagent") .. ":0|t 用作制作材料\n|T" .. _.asset("Interface_Catalyst") .. ":0|t 可在化生台转换为新外观\n|T" .. _.asset("Interface_Upgrade") .. ":0|t 可升级以获得新外观|r"
@@ -27738,6 +27740,7 @@ localize(L.HEADER_NAMES, {
 	[-781] = "国服魔兽世界21周年庆典",
 	[-782] = "中国促销（经典）",
 	[-784] = "20周年纪念包经典版",
+	[-800] = "联盟斥候",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -27792,6 +27795,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-781] = "仅限中国，庆祝21周年纪念，从2026年8月6日开始，",
 	[-782] = "这些促销活动仅限于经典与泰坦重铸中国服务器。",
 	[-784] = "2025年纪念包可在2025年7月16日至10月15日使用",
+	[-800] = "这些斥候成群在贫瘠之地各处巡逻，会袭击过于靠近的部落玩家。",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",
@@ -29711,7 +29715,7 @@ for key,value in pairs({
 	[3101] = "|cFFAAFFAA持有这把锤子的人很准时！|r",
 	[32] = "|cFFAAFFAA该功能直到 阶段3 的 巫妖王之怒 才可用。|r",
 	[33] = "|cFFAAFFAA该功能直到 阶段4 的 巫妖王之怒 才可用。|r",
-	[3301] = "|cFFAAFFAA对于所有还没拥有影之哀伤的人来说。|r",
+	[3301] = "|cFFAAFFAA获取影之哀伤者可将其提供给尚未拥有该物品的玩家。|r",
 	[3302] = "|cFFAAFFAA这在《巫妖王之怒》怀旧服中的红玉圣殿发布时一同推出。|r",
 	[40] = "|cFFAAFFAA该功能直到 阶段1 的 大地的裂变 才可用。|r",
 	[4001] = "|cFFAAFFAA在《大灾变》经典服“赞达拉的崛起”内容推出之前，这些是无法获取/使用的。 |r",

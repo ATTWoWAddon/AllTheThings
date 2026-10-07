@@ -2654,7 +2654,7 @@ q(2752,{coords={
 [1454]={{76.2,37.4}}},cost={{"i",7956,4},{"i",7958,4}},description="This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",learnedAt=140,lvl=32,qgs={7790},r=1,requireSkill=164,sourceQuests={2751},g={
 r(9811,{description="This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",itemID=7978,learnedAt=160,q=2,requireSkill=164})}}),
 q(25275,{awp=40003,coords={
-[1454]={{48.6,71}}},qgs={3144},races={9}}),
+[1454]={{48.6,71}}},qgs={3144},races={9},sourceQuests={25267}}),
 q(26840,{awp=40001,coords={
 [1454]={{48.6,71}}},qgs={3144},r=1,sourceQuests={26830}}),
 q(10794,{awp=20003,c={4},coords={
@@ -25040,7 +25040,8 @@ qo(1,{coords={
 [1417]={{62.6,34.6}}},crs={2755},providers={{"i",4472},{"i",4473},{"o",138492}},u=2}),
 i(4743,{b=1,f=51,q=3,u=2})}}),
 q(665,{coords={
-[1417]={{33.8,80.6}}},lvl=35,qgs={2768},rwp=40003,u=2}),
+[1417]={{33.8,80.6}}},lvl=35,qgs={2768},rwp=40003,u=2,g={
+qo(1,{providers={{"n",2768}},u=2})}}),
 q(666,{coords={
 [1417]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4491},rwp=40003,sourceQuests={665},u=2,g={
 qo(1,{coords={
@@ -28122,7 +28123,7 @@ qo(1,{crs={930,45582},providers={{"i",60207}}})}}),
 q(66,{coords={
 [1431]={{75.8,45.3}}},lvl=22,qgs={265},r=2,rwp=40003,u=2}),
 q(67,{coords={
-[1431]={{72.6,46.9}}},lvl=22,qgs={267},r=2,rwp=40003,sourceQuests={66},u=2}),
+[1431]={{72.6,46.9}}},lvl=22,maps={1436},qgs={267},r=2,rwp=40003,sourceQuests={66},u=2}),
 q(68,{coords={
 [1436]={{41.5,66.7}}},lvl=22,providers={{"o",3643}},qis={889},r=2,rwp=40003,sourceQuests={67},u=2}),
 q(69,{coords={

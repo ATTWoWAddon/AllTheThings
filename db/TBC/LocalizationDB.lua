@@ -1662,9 +1662,9 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=7,["year"]=2027},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=6,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(7, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=20,["weekday"]=7,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=4,["weekday"]=7,["year"]=2025}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=20,["weekday"]=1,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=4,["weekday"]=1,["year"]=2026}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=20,["weekday"]=2,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=4,["weekday"]=2,["year"]=2027})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=2,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=3,["year"]=2026}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=22,["weekday"]=4,["year"]=2027},{["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=4,["year"]=2027})
 })
 _.Modules.Events.SetEventInformation(1181, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=12,["weekday"]=7,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=1,["year"]=2026})
@@ -43682,6 +43682,8 @@ L.HIDDEN_CURRENCY_TRIGGERS = "隐藏货币触发器"
 L.HIDDEN_CURRENCY_TRIGGERS_DESC = "这些货币是根据特定条件手动判定触发的，主要由游戏内部用于追踪目的。"
 L.HIDDEN_QUEST_TRIGGERS = "隐藏任务触发"
 L.HIDDEN_QUEST_TRIGGERS_DESC = "这些任务是根据特定的标准手动确定触发的任务，主要用于游戏内部的追踪目的"
+L.HIDE_BORDERS = "隐藏边框"
+L.HIDE_BORDERS_TOOLTIP = "是否隐藏ATT窗口边框并调整内部边距/对齐作为补偿"
 L.HOLIDAY_DROP = "每个战网账号每天的首次尝试才有机会掉落独特奖励，如坐骑、宠物、玩具和手稿。每次未获得奖励后，掉落几率都会提高。\n暴雪尚未明确说明哪些物品适用此系统。"
 L.ICON_LEGEND_MISC_LABEL = "杂项图标图例"
 L.ICON_LEGEND_MISC_TEXT = "|c" .. _.DefaultColors.White .. "|T" .. _.asset("Currency") .. ":0|t 用作一种货币\n|T" .. _.asset("Interface_Reagent") .. ":0|t 用作制作材料\n|T" .. _.asset("Interface_Catalyst") .. ":0|t 可在化生台转换为新外观\n|T" .. _.asset("Interface_Upgrade") .. ":0|t 可升级以获得新外观|r"
@@ -44385,6 +44387,7 @@ localize(L.HEADER_NAMES, {
 	[-727] = "地下城中的长者",
 	[-728] = "部落的长者",
 	[-782] = "中国促销（经典）",
+	[-800] = "联盟斥候",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "术士可以教导他们的恶魔新技能，一些高等级的魔典只能从你阵营首都的恶魔训练师那里购买。",
@@ -44417,6 +44420,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-735] = "这个部分是为在一个扩展中引入的系统而设立的，这些系统涉及几个区域。\n如果一个扩展功能仅限于一个区域，那么它可以在 ATT 中的那个区域找到，否则为了减少数据库重复和膨胀，它可以在下面找到。",
 	[-736] = "此部分用于介绍现实世界的促销活动，这些活动在某些极稀有内容出现在游戏商店之前，就将其引入了游戏中。",
 	[-782] = "这些促销活动仅限于经典与泰坦重铸中国服务器。",
+	[-800] = "这些斥候成群在贫瘠之地各处巡逻，会袭击过于靠近的部落玩家。",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "这些龙中的一只会在艾泽拉斯的相关坐标随机生成。",

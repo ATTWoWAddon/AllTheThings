@@ -1444,6 +1444,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 33.8, 80.6, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/1 Defend Professor Phizzlethorpe
+							["provider"] = { "n", 2768 },	-- Professor Phizzlethorpe
+						}),
+					},
 				}),
 				q(666, {	-- Sunken Treasure (2/5)
 					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
