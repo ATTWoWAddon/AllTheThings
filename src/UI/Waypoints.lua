@@ -342,7 +342,10 @@ app.AddEventHandler("OnReady", function()
 					if #root > 0 then
 						local first = root[1];
 						if IsRetrieving(opts.title) then
-							opts.title = first.text or RETRIEVING_DATA;
+							local text = first.text;
+							if text and not app.WOWAPI.issecretvalue(text) then
+								opts.title = text;
+							end
 						end
 						local displayID = GetDisplayID(first);
 						if displayID then
