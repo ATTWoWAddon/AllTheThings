@@ -473,6 +473,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.6, 8.4, THE_BARRENS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 25, 34 },
@@ -489,6 +492,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.6, 8.4, THE_BARRENS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 35, 44 },
@@ -521,6 +527,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 61.6, 83.8, ASHENVALE },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 25, 34 },
@@ -537,6 +546,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 61.6, 83.8, ASHENVALE },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 35, 44 },

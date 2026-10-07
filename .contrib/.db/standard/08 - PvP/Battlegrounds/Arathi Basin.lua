@@ -188,6 +188,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.0, 45.2, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 8.0.1.26812
@@ -207,6 +210,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.0, 45.2, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 8.0.1.26812
@@ -827,6 +833,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 73.4, 29.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 8.0.1.26812
@@ -846,6 +855,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 73.4, 29.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 8.0.1.26812
