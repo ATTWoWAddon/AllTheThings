@@ -839,6 +839,9 @@ local function SetRowData(self, row, data)
 	end
 end
 -- Allow re-attempting the RowOnEnter logic for a row
+if app.__perf then
+	SetRowData = app.__perf.CaptureFunction(SetRowData, "set", "window.row", { module = "windows", minLevel = 3 });
+end
 local function RedrawRowTooltip()
 	-- app.PrintDebug("RedrawRowTooltip",GameTooltip and GameTooltip:IsVisible(),GameTooltip and GameTooltip:GetOwner())
 	if GameTooltip and GameTooltip:IsVisible() then

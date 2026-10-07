@@ -244,6 +244,9 @@ local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost, chainU
 		UpdateRunner.Run(app.UpdateRawGroups, costs)
 	end
 end
+if app.__perf then
+	SetCostTotals = app.__perf.CaptureFunction(SetCostTotals, "totals", "costs.assign", { module = "costs", minLevel = 3 });
+end
 local function DoCollectibleCheckForItemRef(ref, itemID, itemUnbound)
 	-- Depth = 0
 	local collectible = CheckCollectible(ref, itemID)
@@ -419,6 +422,9 @@ local function FinishCostAssignmentsForSpell(spellID, costs, refresh, chainUpdat
 end
 
 if app.__perf then
+	DoCollectibleCheckForItemRef = app.__perf.CaptureFunction(DoCollectibleCheckForItemRef, "item", "costs.refs", { module = "costs", minLevel = 3 });
+	DoCollectibleCheckForCurrRef = app.__perf.CaptureFunction(DoCollectibleCheckForCurrRef, "currency", "costs.refs", { module = "costs", minLevel = 3 });
+	DoCollectibleCheckForSpellRef = app.__perf.CaptureFunction(DoCollectibleCheckForSpellRef, "spell", "costs.refs", { module = "costs", minLevel = 3 });
 	FinishCostAssignmentsForItem = app.__perf.CaptureFunction(FinishCostAssignmentsForItem, "item", "costs.assign", { module = "costs", minLevel = 2 });
 	FinishCostAssignmentsForCurr = app.__perf.CaptureFunction(FinishCostAssignmentsForCurr, "currency", "costs.assign", { module = "costs", minLevel = 2 });
 	FinishCostAssignmentsForSpell = app.__perf.CaptureFunction(FinishCostAssignmentsForSpell, "spell", "costs.assign", { module = "costs", minLevel = 2 });

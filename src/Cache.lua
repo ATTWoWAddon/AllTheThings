@@ -1049,8 +1049,21 @@ end
 
 -- Performance Tracking for Caching
 if app.__perf then
-	app.__perf.CaptureTable(fieldConverters, "CacheFields");
+	app.__perf.CaptureTable(fieldConverters, "CacheFields", { module = "cache", minLevel = 3 });
+	local CaptureFunction = app.__perf.CaptureFunction;
+	local options = { module = "cache", minLevel = 3 };
+	---Register a generic field converter with the enabled performance tracker.
+	---@param field string Field name whose values are indexed into the active ATT data cache.
+	app.AddGenericFieldConverter = function(field)
+		---Index a group by one declared generic field.
+		---@param group table ATT group being indexed.
+		---@param value any Value used as the field-cache lookup key.
+		fieldConverters[field] = CaptureFunction(function(group, value)
+			CacheField(group, field, value);
+		end, field, "CacheFields", options);
+	end;
 end
+
 setmetatable(fieldConverters, {
 	__index = function(t, key)
 		--print("Ignoring Field Cache: ", key);

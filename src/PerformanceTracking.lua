@@ -99,7 +99,7 @@ local function GetPerfForScope(obj, scope)
 end
 
 -- Capture sessions use the original scope/key metrics and the same wrappers.
-local MAX_CAPTURE_LEVEL = 2;
+local MAX_CAPTURE_LEVEL = 3;
 local DEFAULT_DURATION, MAX_DURATION = 30, 300;
 local math_huge, table_sort, string_format = math.huge, table.sort, string.format;
 local LEVEL_NAMES = {"overview", "components", "workload", "jobs", "timeline", "diagnostics"};
@@ -321,6 +321,7 @@ local function CaptureMetric(metric)
 		session.metrics[#session.metrics+1] = metric;
 		if detail then session.details = session.details + 1; else session.overview = session.overview + 1; end
 	end
+	if session.config.level >= 3 and level < 6 then capture.calls = capture.calls + 1; end
 	return capture;
 end
 
@@ -493,6 +494,10 @@ function performance.Report()
 	else
 		lines[#lines+1]="Timing ID\tCalls\tTotal ms\tAvg ms\tMax ms\tp95 bucket ms\tUnits";
 		for _, row in ipairs(rows) do if row.count>0 then lines[#lines+1]=string_format("%s\t%d\t%.3f\t%.3f\t%.3f\t%s\t-",row.id,row.count,row.time*1000,row.time*1000/row.count,row.max*1000,P95(row));end end
+		if session.config.level>=3 then
+			lines[#lines+1]="Counter ID\tCount";
+			for _, row in ipairs(rows) do if row.level<6 then lines[#lines+1]=row.id..".calls\t"..row.calls;end end
+		end
 	end
 	if session.addonStart or session.addonStop then
 		lines[#lines+1]="Blizzard C_AddOnProfiler (whole addon):";
