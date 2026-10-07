@@ -99,7 +99,6 @@ local function GetPerfForScope(obj, scope)
 end
 
 -- Capture sessions use the original scope/key metrics and the same wrappers.
-local MAX_CAPTURE_LEVEL = 5;
 local DEFAULT_DURATION, MAX_DURATION = 30, 300;
 local math_huge, table_sort, string_format = math.huge, table.sort, string.format;
 local LEVEL_NAMES = {"overview", "components", "workload", "jobs", "timeline", "diagnostics"};
@@ -198,7 +197,6 @@ local function ValidateConfig(durationSeconds, level, options)
 	if type(level) ~= "number" or level ~= math.floor(level) or level < 1 or level > 6 then
 		return nil, "Level must be 1 to 6 or overview/components/workload/jobs/timeline/diagnostics.";
 	end
-	if level > MAX_CAPTURE_LEVEL then return nil, "This capture level is not available."; end
 	if options ~= nil and type(options) ~= "table" then return nil, "Profile options must be a table."; end
 	options = options or {};
 	local accepted = { include = true, exclude = true, sampleEvery = true, slowThresholdMs = true,
@@ -365,8 +363,27 @@ local function CaptureMetric(metric)
 		session.metrics[#session.metrics+1] = metric;
 		if detail then session.details = session.details + 1; else session.overview = session.overview + 1; end
 	end
+	if level == 6 then
+		capture.seen = capture.seen + 1;
+		if (capture.seen - 1) % session.config.sampleEvery ~= 0 then session.samplesSkipped = session.samplesSkipped + 1; return; end
+	end
 	if session.config.level >= 3 and level < 6 then capture.calls = capture.calls + 1; end
 	return capture;
+end
+
+---Retain optional caller text for an accepted diagnostic in the session's bounded storage.
+---@param metric table Original selected diagnostic metric.
+---@return boolean? captured True when caller text was collected; nil when unavailable or omitted.
+local function CaptureStack(metric)
+	local session = currentSession;
+	if not session.config.stacks or type(debugstack) ~= "function" then return; end
+	if #session.stacks >= 128 or session.stackBytes >= session.config.stackByteBudget then session.stacksDropped=session.stacksDropped+1; return; end
+	local ok, text = pcall(debugstack, 4, 8, 0);
+	if not ok or type(text) ~= "string" then return; end
+	text = text:sub(1, session.config.stackByteBudget-session.stackBytes);
+	session.stackBytes = session.stackBytes + #text;
+	session.stacks[#session.stacks+1] = {id=metric.id,text=text};
+	return true;
 end
 
 ---Begin added observations inside the original function wrapper.
@@ -390,6 +407,7 @@ local function BeginCapture(metric, now, queued, target)
 		-- Resume accounting still serves selected nested functions if its row is omitted.
 		return metric.resume and clock and {sessionID=performance.SessionID,clock=clock,resume=true,thread=thread} or nil;
 	end
+	if metric.minLevel == 6 and CaptureStack(metric) then now=GetTimePreciseSec(); end
 	local job = queued and queued[1];
 	if queued then queued[1] = nil; end
 	if job and (job.sessionID ~= performance.SessionID or job.started) then job=nil; end
@@ -495,7 +513,7 @@ function performance.Start(seconds, level, options)
 	performance.Reset();
 	currentSession={config=config,start=GetTimePreciseSec(),metrics={},overview=0,details=0,metricsDropped=0,
 		jobs={},jobsDropped=0,execution=setmetatable({}, {__mode="k"}),context=setmetatable({}, {__mode="k"}),
-		timeline={},timelineNext=1,timelineCount=0,overwritten=0};
+		timeline={},timelineNext=1,timelineCount=0,overwritten=0,stacks={},stackBytes=0,stacksDropped=0,samplesSkipped=0};
 	currentSession.addonStart=GetAddonSnapshot();performance.Enabled=true;
 	local generation=performance.SessionID;
 	C_Timer.After(config.seconds,function()
@@ -598,6 +616,11 @@ function performance.Report()
 		lines[#lines+1]="At ms\tEvent\tID\tDuration ms";
 		local first=session.timelineCount<session.config.timelineBudget and 1 or session.timelineNext;
 		for i=0,session.timelineCount-1 do local row=session.timeline[(first+i-1)%session.config.timelineBudget+1];lines[#lines+1]=string_format("%.3f\t%s\t%s\t%s",row.at*1000,row.event,row.id,row.duration and string_format("%.3f",row.duration*1000) or "-");end
+	end
+	if session.config.level==6 then
+		lines[#lines+1]=string_format("Diagnostics: sample every %d; %d skipped; stacks %d records / %d bytes; %d omitted",session.config.sampleEvery,session.samplesSkipped,#session.stacks,session.stackBytes,session.stacksDropped);
+		for _, row in ipairs(rows) do if row.level==6 then lines[#lines+1]=string_format("Sampled: %s; eligible=%d; accepted=%d",row.id,row.seen,row.count);end end
+		for _, stack in ipairs(session.stacks) do lines[#lines+1]="Caller: "..stack.id.."\n"..stack.text;end
 	end
 	if session.addonStart or session.addonStop then
 		lines[#lines+1]="Blizzard C_AddOnProfiler (whole addon):";

@@ -14,6 +14,10 @@ local PlayerHasToy
 -- WoW API Cache
 ---@type function
 local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
+if app.__perf then
+	GetCurrencyInfo = app.__perf.CaptureFunction(GetCurrencyInfo, "currencyinfo", "costs.api", { module = "costs", minLevel = 6 });
+end
+
 
 -- App locals
 ---@type function,function,function,function,function
@@ -21,6 +25,9 @@ local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, 
 	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
 ---@type function
 local GetItemCount = app.WOWAPI.GetItemCount
+if app.__perf then
+	GetItemCount = app.__perf.CaptureFunction(GetItemCount, "itemcount", "costs.api", { module = "costs", minLevel = 6 });
+end
 ---@type function,function,function,
 local IsSpellKnownHelper, CreateObject, FillGroups
 

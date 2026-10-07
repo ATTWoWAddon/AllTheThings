@@ -42,6 +42,11 @@ local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection_GetAllAppearanceSources
 	= C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection.GetAllAppearanceSources
+if app.__perf then
+	C_TransmogCollection_GetSourceInfo = app.__perf.CaptureFunction(C_TransmogCollection_GetSourceInfo, "sourceinfo", "transmog.api", { module = "transmog", minLevel = 6 });
+	C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = app.__perf.CaptureFunction(C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance, "known", "transmog.api", { module = "transmog", minLevel = 6 });
+end
+
 local C_TooltipInfo_GetItemByItemModifiedAppearanceID = C_TooltipInfo and C_TooltipInfo.GetItemByItemModifiedAppearanceID
 
 local ATTAccountWideData, AccountSources, CharacterData
