@@ -99,7 +99,7 @@ local function GetPerfForScope(obj, scope)
 end
 
 -- Capture sessions use the original scope/key metrics and the same wrappers.
-local MAX_CAPTURE_LEVEL = 4;
+local MAX_CAPTURE_LEVEL = 5;
 local DEFAULT_DURATION, MAX_DURATION = 30, 300;
 local math_huge, table_sort, string_format = math.huge, table.sort, string.format;
 local LEVEL_NAMES = {"overview", "components", "workload", "jobs", "timeline", "diagnostics"};
@@ -303,7 +303,20 @@ local function Includes(module)
 	return not config.excludeModules[module] and (not config.includeModules or config.includeModules[module]);
 end
 
-local function Timeline() end
+---Retain a lifecycle or slow-call entry in the session's bounded chronological ring.
+---@param id string Original metric's report label.
+---@param event string Observed lifecycle state or slow duration.
+---@param now number Precise event time in seconds.
+---@param duration number? Optional execution duration in seconds.
+local function Timeline(id, event, now, duration)
+	local session = currentSession;
+	if session.config.level < 5 or session.config.timelineBudget == 0 then return; end
+	local slot = session.timelineNext;
+	session.timeline[slot] = {id=id,event=event,at=now-session.start,duration=duration};
+	session.timelineNext = slot % session.config.timelineBudget + 1;
+	if session.timelineCount < session.config.timelineBudget then session.timelineCount = session.timelineCount + 1;
+	else session.overwritten = session.overwritten + 1; end
+end
 
 ---Add one observed invocation to the same session, within its job capacity.
 ---@param metric table Original scope/key metric containing static hook metadata.
@@ -411,6 +424,7 @@ local function FinishCapture(state, now, results)
 		local bucket = #BUCKET_LIMITS+1;
 		for i, limit in ipairs(BUCKET_LIMITS) do if duration*1000 <= limit then bucket=i;break;end end
 		capture.buckets[bucket]=(capture.buckets[bucket] or 0)+1;
+		if duration*1000 >= session.config.slowThresholdMs and Includes(capture.module) then Timeline(capture.id,"slow",now,duration); end
 	end
 	local job = state.job;
 	if job then
@@ -481,7 +495,7 @@ function performance.Start(seconds, level, options)
 	performance.Reset();
 	currentSession={config=config,start=GetTimePreciseSec(),metrics={},overview=0,details=0,metricsDropped=0,
 		jobs={},jobsDropped=0,execution=setmetatable({}, {__mode="k"}),context=setmetatable({}, {__mode="k"}),
-	};
+		timeline={},timelineNext=1,timelineCount=0,overwritten=0};
 	currentSession.addonStart=GetAddonSnapshot();performance.Enabled=true;
 	local generation=performance.SessionID;
 	C_Timer.After(config.seconds,function()
@@ -578,6 +592,12 @@ function performance.Report()
 				job.queued and job.started and string_format("%.3f",(job.started-job.queued)*1000) or "-",duration*1000,
 				((job.ended or now)-(job.started or job.created))*1000,job.parent or "-");
 		end
+	end
+	if session.config.level>=5 then
+		lines[#lines+1]=string_format("Timeline: %d retained; %d overwritten",session.timelineCount,session.overwritten);
+		lines[#lines+1]="At ms\tEvent\tID\tDuration ms";
+		local first=session.timelineCount<session.config.timelineBudget and 1 or session.timelineNext;
+		for i=0,session.timelineCount-1 do local row=session.timeline[(first+i-1)%session.config.timelineBudget+1];lines[#lines+1]=string_format("%.3f\t%s\t%s\t%s",row.at*1000,row.event,row.id,row.duration and string_format("%.3f",row.duration*1000) or "-");end
 	end
 	if session.addonStart or session.addonStop then
 		lines[#lines+1]="Blizzard C_AddOnProfiler (whole addon):";
