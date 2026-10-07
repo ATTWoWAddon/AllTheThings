@@ -2273,6 +2273,11 @@ local FieldDefaults = {
 		self:RegisterRefreshCallback(...);
 	end,
 };
+if app.__perf then
+	FieldDefaults.DefaultUpdate = app.__perf.CaptureFunction(FieldDefaults.DefaultUpdate, "update", "window", { module = "windows", minLevel = 1 });
+	FieldDefaults.DefaultRefresh = app.__perf.CaptureFunction(FieldDefaults.DefaultRefresh, "refresh", "window", { module = "windows", minLevel = 1 });
+	FieldDefaults.DefaultRedraw = app.__perf.CaptureFunction(FieldDefaults.DefaultRedraw, "redraw", "window", { module = "windows", minLevel = 1 });
+end
 local function CheckOpenWindowsForCompletion()
 	for suffix,window in pairs(app.Windows) do
 		-- app.PrintDebug("check window complete",suffix,window:IsVisible(),window.AllowCompleteSound,window.PlayCompleteSound,window.data.total,app.IsComplete(window.data))

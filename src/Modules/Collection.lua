@@ -164,6 +164,9 @@ local function DoCollection(group, isadd)
 	Runner.Run(HandleCollectionChange, group, isadd)
 end
 
+if app.__perf then
+	DoCollection = app.__perf.CaptureFunction(DoCollection, "apply", "collection", { module = "collection", minLevel = 1 });
+end
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	-- Update timestamps.
 	local now = time();

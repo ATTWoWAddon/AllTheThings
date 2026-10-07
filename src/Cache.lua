@@ -56,6 +56,10 @@ app.SearchForManyInAllCaches = function(field, ids)
 	end
 	return groups;
 end
+if app.__perf then
+	app.SearchForFieldInAllCaches = app.__perf.CaptureFunction(app.SearchForFieldInAllCaches, "single", "cache.search", { module = "cache", minLevel = 1 });
+	app.SearchForManyInAllCaches = app.__perf.CaptureFunction(app.SearchForManyInAllCaches, "many", "cache.search", { module = "cache", minLevel = 1 });
+end
 app.CreateDataCache = function(name)
 	-- Returns: An object which can be used for holding cached data by various keys allowing for quick updates of data states.
 	return AllCaches[name];
@@ -710,6 +714,9 @@ CacheFields = function(group, skipMapCaching, cacheName)
 	end
 	--print(("Cache Fields: %.3f %s"):format((GetTimePreciseSec() - start) * 1000, group.text));
 	return group;
+end
+if app.__perf then
+	CacheFields = app.__perf.CaptureFunction(CacheFields, "fields", "cache.build", { module = "cache", minLevel = 1 });
 end
 app.CacheFields = CacheFields;
 end

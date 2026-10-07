@@ -824,6 +824,10 @@ local function RefreshAppearanceSources()
 	end
 	-- app.PrintDebugPrior("Completionist Refresh done")
 end
+if app.__perf then
+	CollectUniqueAppearances = app.__perf.CaptureFunction(CollectUniqueAppearances, "collect", "transmog.unique", { module = "transmog", minLevel = 1 });
+	RefreshAppearanceSources = app.__perf.CaptureFunction(RefreshAppearanceSources, "scan", "transmog.sources", { module = "transmog", minLevel = 1 });
+end
 -- These events are technically 'refresh' of collections, but they also cause different results on
 -- 'new settings' since they literally change the cached collection state of SourceIDs based on current
 -- settings... maybe in future we can revise how these work so that changing settings doesn't require

@@ -841,6 +841,9 @@ local function AttachTooltipSearchResults(tooltip, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults.Complete",app:SearchLink(group),tooltip.ATT_AttachComplete,working,group.working)
 end
 
+if app.__perf then
+	AttachTooltipSearchResults = app.__perf.CaptureFunction(AttachTooltipSearchResults, "attach", "tooltip", { module = "tooltip", minLevel = 1 });
+end
 local AttachTypicalSearchResults
 do
 	local DefaultSearchOptions = { AppendSearchParams = { "field", true }}

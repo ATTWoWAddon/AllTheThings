@@ -13,6 +13,18 @@ local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall
 --- @type function,function,function,function,
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
+-- Select optional resume monitoring once; ordinary resumes use the original function.
+local pooled_resume = c_resume;
+local ProfileRunnerModules;
+if app.__perf then
+	ProfileRunnerModules = {
+		default = "runner", events = "events", update = "collection", collection = "collection",
+		costs = "costs", cost_collector = "costs", upgrade = "upgrade", inventory = "inventory",
+		reagent_collector = "costs", search = "search", vignette = "runner", contributor = "runner",
+		waypoint = "runner", dynamic = "collection", quests = "collection",
+	};
+	pooled_resume = app.__perf.CaptureFunction(c_resume, "coroutine.slice", "coroutine", { id = "coroutine.slice", module = "runner", minLevel = 1, resume = true });
+end
 
 local function wipearray(t, max)
 	local c = math_max(#t, max or 0)
@@ -139,7 +151,7 @@ local PushQueue = setmetatable({}, {
 			-- Check the status of the coroutine
 			-- app.PrintDebug("PUSH:Run",pushfunc,"=>",co)
 			if co and c_status(co) ~= "dead" then
-				local ok, err = c_resume(co);
+				local ok, err = pooled_resume(co);
 				if ok then
 					if err == false then
 						-- This means the coroutine signals completion by returning false
@@ -181,10 +193,19 @@ app.StartCoroutine = StartCoroutine;
 
 -- Iterative Function Runner
 -- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
-local function CreateRunner(name)
+local function CreateRunner(name, profileModule)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
 	local OnStart, OnReset
 	local Name = "Runner:"..name;
+	local resume = c_resume;
+	local profileCategory;
+	if app.__perf then
+		local builtinModule = ProfileRunnerModules[name];
+		local module = builtinModule or ((profileModule == "windows" or (app.Windows and app.Windows[name])) and "windows" or "runner");
+		profileCategory = builtinModule and name or (module == "windows" and "windows" or "other");
+		local sliceID = "runner."..profileCategory..".slice";
+		resume = app.__perf.CaptureFunction(c_resume, sliceID, "runner", { id = sliceID, module = module, minLevel = 1, resume = true });
+	end
 	local QueueIndex, RunIndex = 1, 1
 	local Pushed, perFrame
 	local function SetPerFrame(count)
@@ -275,7 +296,7 @@ local function CreateRunner(name)
 	local function StackRun()
 		-- app.PrintDebug("Stack.Run",Name)
 		if c_status(RunnerCoroutine) == "dead" then SetRunnerCoroutine() end
-		local ok, err = c_resume(RunnerCoroutine);
+		local ok, err = resume(RunnerCoroutine);
 		if ok then
 			if err == false then
 				-- app.PrintDebug("Stack.Run.Complete",Name)
@@ -368,8 +389,12 @@ local function CreateRunner(name)
 	return Runner;
 end
 -- Retrieves an existing or creates a new Runner with the provided name
-app.CreateRunner = function(name)
-	return app.Runners[name] or CreateRunner(name)
+---Retrieve a Runner by its original lookup name, optionally labeling dynamic windows.
+---@param name string Existing Runner lookup key; normal execution keeps the original queue behavior.
+---@param profileModule 'windows'? Optional profiling category consulted only when PerformanceTracking.lua is loaded.
+---@return table runner Existing or newly constructed function Runner.
+app.CreateRunner = function(name, profileModule)
+	return app.Runners[name] or CreateRunner(name, profileModule)
 end
 app.Runners = {}
 app.FunctionRunner = CreateRunner("default");

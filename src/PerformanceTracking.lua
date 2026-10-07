@@ -99,7 +99,7 @@ local function GetPerfForScope(obj, scope)
 end
 
 -- Capture sessions use the original scope/key metrics and the same wrappers.
-local MAX_CAPTURE_LEVEL = 0;
+local MAX_CAPTURE_LEVEL = 1;
 local DEFAULT_DURATION, MAX_DURATION = 30, 300;
 local math_huge, table_sort, string_format = math.huge, table.sort, string.format;
 local LEVEL_NAMES = {"overview", "components", "workload", "jobs", "timeline", "diagnostics"};
@@ -249,7 +249,124 @@ end
 ---@field CountTimeOver5Ms number? Cumulative whole-addon ticks exceeding five milliseconds.
 ---@field CountTimeOver10Ms number? Cumulative whole-addon ticks exceeding ten milliseconds.
 
-local function GetAddonSnapshot() end
+-- Blizzard's whole-addon metrics provide context beside ATT's own scopes.
+-- RecentAverageTime is rolling; threshold counts can be compared at session boundaries.
+---@type ATTProfilerAddonMetricName[]
+local AddonMetricNames = { "RecentAverageTime", "CountTimeOver5Ms", "CountTimeOver10Ms" };
+---Read available whole-addon Blizzard metrics without requiring or enabling its profiler.
+---Unavailable APIs, disabled profiling, API errors, and invalid values are skipped.
+---@return ATTProfilerAddonSnapshot? snapshot Available whole-addon boundary values; nil when profiling is unavailable, disabled, or supplies no valid metrics.
+local function GetAddonSnapshot()
+	local api = C_AddOnProfiler;
+	local metricEnum = Enum and Enum.AddOnProfilerMetric;
+	if not api or type(api.GetAddOnMetric) ~= "function" or not metricEnum then return; end
+	if type(api.IsEnabled) == "function" then
+		local ok, enabled = pcall(api.IsEnabled);
+		if not ok or not enabled then return; end
+	end
+	---@type ATTProfilerAddonSnapshot
+	local snapshot = {};
+	for _, name in ipairs(AddonMetricNames) do
+		local metric = metricEnum[name];
+		if type(metric) == "number" then
+			local ok, value = pcall(api.GetAddOnMetric, appName, metric);
+			if ok and type(value) == "number" and value >= 0 and value < math_huge then
+				snapshot[name] = value;
+			end
+		end
+	end
+	if next(snapshot) then return snapshot; end
+end
+
+
+
+---Return the coroutine identity used by the original wrapper's session observations.
+---@return thread|table thread Current coroutine, or the shared main-thread key.
+local function CurrentThread()
+	local thread, main = coroutine.running();
+	return (not thread or main) and MAIN_THREAD or thread;
+end
+
+---Read accumulated execution time, excluding waits outside observed resumes.
+---@param clock table? Existing coroutine execution clock; nil uses wall time.
+---@param now number Current precise time in seconds.
+---@return number seconds Current active execution clock, or wall time without a resume boundary.
+local function ExecutionTime(clock, now)
+	return clock and (clock.total + (clock.start and now - clock.start or 0)) or now;
+end
+
+---Apply the current detail filters without affecting the original cumulative statistics.
+---@param module string Module attached to an explicitly selected original metric.
+---@return boolean included True if detail observations are selected.
+local function Includes(module)
+	local config = currentSession.config;
+	return not config.excludeModules[module] and (not config.includeModules or config.includeModules[module]);
+end
+
+---Select or initialize generation-tagged samples directly on an existing metric.
+---@param metric table Original count/time object; no separate metric registry is created.
+---@return table? capture Accepted session fields; nil for filtered, sampled-out, or omitted entries.
+local function CaptureMetric(metric)
+	local session, level = currentSession, metric.minLevel;
+	if not level or level > session.config.level or level > 1 and not Includes(metric.module) then return; end
+	local capture = metric.capture;
+	if not capture or capture.sessionID ~= performance.SessionID then
+		local detail = level > 1;
+		if detail and session.details >= session.config.metricBudget or not detail and session.overview >= 64 then
+			session.metricsDropped = session.metricsDropped + 1; return;
+		end
+		capture = {sessionID=performance.SessionID,id=metric.id,module=metric.module,level=level,
+			count=0,time=0,max=0,calls=0,seen=0,buckets={}};
+		metric.capture = capture;
+		session.metrics[#session.metrics+1] = metric;
+		if detail then session.details = session.details + 1; else session.overview = session.overview + 1; end
+	end
+	return capture;
+end
+
+---Begin added observations inside the original function wrapper.
+---@param metric table Original scope/key count/time metric with optional capture labels.
+---@param now number Original wrapper's start clock reading in seconds.
+---@param queued table? Weak queue token created by the original assignment hook.
+---@param target any First original argument; a coroutine for resume hooks.
+---@return table? state Session observation state; nil leaves cumulative tracking alone.
+local function BeginCapture(metric, now, queued, target)
+	if not performance.Enabled then return; end
+	local session, thread = currentSession, CurrentThread();
+	local clock;
+	if metric.resume and type(target) == "thread" then
+		thread = target;
+		clock = session.execution[thread];
+		if not clock then clock={total=0};session.execution[thread]=clock; end
+		clock.start = now;
+	else clock = session.execution[thread]; end
+	local capture = CaptureMetric(metric);
+	if not capture then
+		-- Resume accounting still serves selected nested functions if its row is omitted.
+		return metric.resume and clock and {sessionID=performance.SessionID,clock=clock,resume=true,thread=thread} or nil;
+	end
+	return {sessionID=performance.SessionID,capture=capture,thread=thread,clock=clock,resume=metric.resume,
+		startClock=ExecutionTime(clock,now)};
+end
+
+---Finish an original wrapper's successful return and update its session fields.
+---@param state table? Added state from BeginCapture; nil requires no session work.
+---@param now number Original wrapper's final precise clock reading in seconds.
+---@param results table Original result pack; resume false carries the coroutine error object.
+local function FinishCapture(state, now, results)
+	if not state or state.sessionID ~= performance.SessionID or not performance.Enabled then return; end
+	local session, clock = currentSession, state.clock;
+	if state.resume and clock and clock.start then clock.total=clock.total+now-clock.start;clock.start=nil; end
+	local capture = state.capture;
+	if capture then
+		local duration = math.max(0, ExecutionTime(clock,now)-state.startClock);
+		capture.count, capture.time = capture.count+1, capture.time+duration;
+		capture.max = math.max(capture.max,duration);
+		local bucket = #BUCKET_LIMITS+1;
+		for i, limit in ipairs(BUCKET_LIMITS) do if duration*1000 <= limit then bucket=i;break;end end
+		capture.buckets[bucket]=(capture.buckets[bucket] or 0)+1;
+	end
+end
 
 ---Copy scalar session policy without exposing mutable filter sets or observations.
 ---@return ATTPerformanceCaptureConfig? config Copied public fields, or nil before a capture.
@@ -278,6 +395,7 @@ function performance.Stop(reason)
 	if not performance.Enabled then return false; end
 	local session, now=currentSession,GetTimePreciseSec();
 	session.stop,session.reason=now,reason or "manual";
+	for _, clock in pairs(session.execution) do if clock.start then clock.total=clock.total+now-clock.start;clock.start=nil;end end
 	session.addonStop=GetAddonSnapshot();performance.Enabled=false;
 	return true;
 end
@@ -291,7 +409,8 @@ end
 function performance.Start(seconds, level, options)
 	local config, message=ValidateConfig(seconds,level,options);if not config then return false,message;end
 	performance.Reset();
-	currentSession={config=config,start=GetTimePreciseSec(),metrics={},overview=0,details=0,metricsDropped=0};
+	currentSession={config=config,start=GetTimePreciseSec(),metrics={},overview=0,details=0,metricsDropped=0,
+		execution=setmetatable({}, {__mode="k"})};
 	currentSession.addonStart=GetAddonSnapshot();performance.Enabled=true;
 	local generation=performance.SessionID;
 	C_Timer.After(config.seconds,function()
@@ -337,6 +456,15 @@ function performance.StartNextLogin()
 	return performance.Start(request.seconds,request.level,request.options);
 end
 
+---Format the upper-bound histogram bucket containing the 95th-percentile completed duration.
+---@param capture table Session fields attached to an original metric.
+---@return string bucket Millisecond upper bound, overflow, or dash without completed samples.
+local function P95(capture)
+	if capture.count==0 then return "-";end
+	local total=0;for i=1,#BUCKET_LIMITS+1 do total=total+(capture.buckets[i] or 0);if total>=math.ceil(capture.count*0.95) then return BUCKET_LIMITS[i] and string_format("<=%.2f",BUCKET_LIMITS[i]) or ">1000";end end
+	return "-";
+end
+
 ---Copy session results from the original metrics without stopping an active capture.
 ---@return string report Tab-separated timings, counts, optional observations, and limits.
 function performance.Report()
@@ -347,7 +475,25 @@ function performance.Report()
 		string_format("Level: %d (%s); include=%s; exclude=%s",session.config.level,LEVEL_NAMES[session.config.level],session.config.include,session.config.exclude or "-"),
 		"Times are in ms. Completed function timings use observed coroutine execution clocks when available. Overlapping scopes are not additive.",
 		string_format("Metrics: %d overview; %d detail; %d omitted entries",session.overview,session.details,session.metricsDropped)};
-	lines[#lines+1]="No measurements captured.";
+	-- Combine fixed report labels when copying rows; cumulative keys stay original.
+	local rows, byID={},{};
+	for _, metric in ipairs(session.metrics) do
+		local capture=metric.capture;
+		local row=byID[capture.id];
+		if not row then
+			row={id=capture.id,level=capture.level,count=0,time=0,max=0,calls=0,seen=0,buckets={}};
+			rows[#rows+1]=row;byID[capture.id]=row;
+		end
+		row.count,row.time,row.calls,row.seen=row.count+capture.count,row.time+capture.time,row.calls+capture.calls,row.seen+capture.seen;
+		row.max=math.max(row.max,capture.max);
+		for bucket,count in pairs(capture.buckets) do row.buckets[bucket]=(row.buckets[bucket] or 0)+count;end
+	end
+	table_sort(rows,function(a,b)return a.time==b.time and a.id<b.id or a.time>b.time;end);
+	if #rows==0 then lines[#lines+1]="No measurements captured.";
+	else
+		lines[#lines+1]="Timing ID\tCalls\tTotal ms\tAvg ms\tMax ms\tp95 bucket ms\tUnits";
+		for _, row in ipairs(rows) do if row.count>0 then lines[#lines+1]=string_format("%s\t%d\t%.3f\t%.3f\t%.3f\t%s\t-",row.id,row.count,row.time*1000,row.time*1000/row.count,row.max*1000,P95(row));end end
+	end
 	if session.addonStart or session.addonStop then
 		lines[#lines+1]="Blizzard C_AddOnProfiler (whole addon):";
 		local start,stop=session.addonStart or {},session.addonStop or {};
@@ -428,11 +574,13 @@ local function CaptureFunction(func, key, scope, options)
 			elseif result then app.print("ATT next-login profile was not started:", result); end
 		end
 		local now = GetTimePreciseSec();
+		local state = BeginCapture(typePerf, now, nil, select(1, ...));
 		local res = {func(...)};
 		-- print(now,perfScope.__scope,key,"<")
 		local ended = GetTimePreciseSec();
 		typePerf.time = typePerf.time + (ended - now);
 		typePerf.count = typePerf.count + 1;
+		FinishCapture(state, ended, res);
 		return unpack(res);
 	end
 	typePerf.wrapper = captured;
