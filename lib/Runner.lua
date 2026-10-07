@@ -198,10 +198,11 @@ local function CreateRunner(name, profileModule)
 	local OnStart, OnReset
 	local Name = "Runner:"..name;
 	local resume = c_resume;
-	local profileCategory;
+	local profileCategory, profileModuleName;
 	if app.__perf then
 		local builtinModule = ProfileRunnerModules[name];
 		local module = builtinModule or ((profileModule == "windows" or (app.Windows and app.Windows[name])) and "windows" or "runner");
+		profileModuleName = module;
 		profileCategory = builtinModule and name or (module == "windows" and "windows" or "other");
 		local sliceID = "runner."..profileCategory..".slice";
 		resume = app.__perf.CaptureFunction(c_resume, sliceID, "runner", { id = sliceID, module = module, minLevel = 1, resume = true });
@@ -383,7 +384,7 @@ local function CreateRunner(name, profileModule)
 	Runner.Stats = Stats -- for testing
 	app.Runners[name] = Runner
 	if app.__perf then
-		app.__perf.AutoCaptureTable(FunctionQueue,"FunctionQueue",Runner)
+		app.__perf.AutoCaptureTable(FunctionQueue,"FunctionQueue",Runner, { id = "Runner_"..profileCategory..".FunctionQueue.queued", module = profileModuleName, minLevel = 2, queued = true });
 	end
 
 	return Runner;

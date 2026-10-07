@@ -99,7 +99,7 @@ local function GetPerfForScope(obj, scope)
 end
 
 -- Capture sessions use the original scope/key metrics and the same wrappers.
-local MAX_CAPTURE_LEVEL = 3;
+local MAX_CAPTURE_LEVEL = 4;
 local DEFAULT_DURATION, MAX_DURATION = 30, 300;
 local math_huge, table_sort, string_format = math.huge, table.sort, string.format;
 local LEVEL_NAMES = {"overview", "components", "workload", "jobs", "timeline", "diagnostics"};
@@ -303,6 +303,37 @@ local function Includes(module)
 	return not config.excludeModules[module] and (not config.includeModules or config.includeModules[module]);
 end
 
+local function Timeline() end
+
+---Add one observed invocation to the same session, within its job capacity.
+---@param metric table Original scope/key metric containing static hook metadata.
+---@param now number Current precise time in seconds.
+---@param origin string queued, unknown, or call, depending on the observed entry boundary.
+---@param thread thread|table Coroutine or main thread owning this work.
+---@return table? job Retained observation; nil when disabled, filtered, or at capacity.
+local function NewJob(metric, now, origin, thread)
+	local session = currentSession;
+	if session.config.level < 4 or not Includes(metric.module) then return; end
+	if #session.jobs >= session.config.jobBudget then session.jobsDropped = session.jobsDropped + 1; return; end
+	local parent = session.context[CurrentThread()];
+	local job = {number=#session.jobs+1,id=metric.id,sessionID=performance.SessionID,origin=origin,
+		queued=origin=="queued" and now or nil,created=now,thread=thread,parent=parent and parent.number,
+		status=origin=="queued" and "queued" or "running"};
+	session.jobs[#session.jobs+1] = job;
+	Timeline(job.id, job.status, now);
+	return job;
+end
+
+---Observe assignment of a queued function through the original AutoCaptureTable hook.
+---@param metric table Original function metric configured with queued metadata.
+---@return table? token Weak reference to the queued observation, or nil outside a selected session.
+local function ObserveQueue(metric)
+	if not performance.Enabled or not metric.queued or not metric.minLevel then return; end
+	if currentSession.config.level < metric.minLevel or not Includes(metric.module) then return; end
+	local job = NewJob(metric, GetTimePreciseSec(), "queued", CurrentThread());
+	return job and setmetatable({job}, {__mode="v"}) or nil;
+end
+
 ---Select or initialize generation-tagged samples directly on an existing metric.
 ---@param metric table Original count/time object; no separate metric registry is created.
 ---@return table? capture Accepted session fields; nil for filtered, sampled-out, or omitted entries.
@@ -346,8 +377,22 @@ local function BeginCapture(metric, now, queued, target)
 		-- Resume accounting still serves selected nested functions if its row is omitted.
 		return metric.resume and clock and {sessionID=performance.SessionID,clock=clock,resume=true,thread=thread} or nil;
 	end
-	return {sessionID=performance.SessionID,capture=capture,thread=thread,clock=clock,resume=metric.resume,
-		startClock=ExecutionTime(clock,now)};
+	local job = queued and queued[1];
+	if queued then queued[1] = nil; end
+	if job and (job.sessionID ~= performance.SessionID or job.started) then job=nil; end
+	if metric.resume then job=clock and clock.job; end
+	if not job then job=NewJob(metric, now, (metric.queued or metric.resume) and "unknown" or "call", thread); end
+	if job then
+		job.started = job.started or now;
+		job.clock, job.startClock = clock, job.startClock or ExecutionTime(clock, now);
+		job.status = "running";
+		if metric.resume and clock then clock.job=job; end
+		Timeline(job.id, metric.resume and "resume" or "started", now);
+	end
+	local previous = session.context[thread];
+	if job then session.context[thread]=job; end
+	return {sessionID=performance.SessionID,capture=capture,metric=metric,thread=thread,clock=clock,resume=metric.resume,
+		startClock=ExecutionTime(clock,now),job=job,previous=previous};
 end
 
 ---Finish an original wrapper's successful return and update its session fields.
@@ -366,6 +411,24 @@ local function FinishCapture(state, now, results)
 		local bucket = #BUCKET_LIMITS+1;
 		for i, limit in ipairs(BUCKET_LIMITS) do if duration*1000 <= limit then bucket=i;break;end end
 		capture.buckets[bucket]=(capture.buckets[bucket] or 0)+1;
+	end
+	local job = state.job;
+	if job then
+		local terminal = not state.resume or results[1] == false or coroutine.status(state.thread) == "dead";
+		job.status = terminal and (state.resume and results[1] == false and "failed" or "completed") or "yielded";
+		if terminal then job.ended=now;job.execution=math.max(0,ExecutionTime(clock,now)-job.startClock);end
+		Timeline(job.id,job.status,now,job.execution);
+		if terminal and clock and state.resume then clock.job=nil; end
+	end
+	if session.context[state.thread] == job then session.context[state.thread]=state.previous; end
+	if state.resume and results[1] == false then
+		for _, child in ipairs(session.jobs) do
+			if child.thread == state.thread and not child.ended and child.started then
+				child.status,child.ended,child.execution="failed",now,math.max(0,ExecutionTime(child.clock,now)-child.startClock);
+				Timeline(child.id,"failed",now,child.execution);
+			end
+		end
+		session.context[state.thread]=nil;
 	end
 end
 
@@ -397,6 +460,12 @@ function performance.Stop(reason)
 	local session, now=currentSession,GetTimePreciseSec();
 	session.stop,session.reason=now,reason or "manual";
 	for _, clock in pairs(session.execution) do if clock.start then clock.total=clock.total+now-clock.start;clock.start=nil;end end
+	for _, job in ipairs(session.jobs) do
+		if not job.ended then
+			job.execution=job.started and math.max(0,ExecutionTime(job.clock,now)-job.startClock) or 0;
+			job.ended,job.status=now,"incomplete";Timeline(job.id,"incomplete",now,job.execution);
+		end
+	end
 	session.addonStop=GetAddonSnapshot();performance.Enabled=false;
 	return true;
 end
@@ -411,7 +480,8 @@ function performance.Start(seconds, level, options)
 	local config, message=ValidateConfig(seconds,level,options);if not config then return false,message;end
 	performance.Reset();
 	currentSession={config=config,start=GetTimePreciseSec(),metrics={},overview=0,details=0,metricsDropped=0,
-		execution=setmetatable({}, {__mode="k"})};
+		jobs={},jobsDropped=0,execution=setmetatable({}, {__mode="k"}),context=setmetatable({}, {__mode="k"}),
+	};
 	currentSession.addonStart=GetAddonSnapshot();performance.Enabled=true;
 	local generation=performance.SessionID;
 	C_Timer.After(config.seconds,function()
@@ -499,6 +569,16 @@ function performance.Report()
 			for _, row in ipairs(rows) do if row.level<6 then lines[#lines+1]=row.id..".calls\t"..row.calls;end end
 		end
 	end
+	if session.config.level>=4 then
+		lines[#lines+1]=string_format("Jobs: %d retained; %d omitted",#session.jobs,session.jobsDropped);
+		lines[#lines+1]="Job ID\tScope\tState\tOrigin\tQueue wait ms\tExecution ms\tWall ms\tParent";
+		for _, job in ipairs(session.jobs) do
+			local duration=job.execution or job.started and math.max(0,ExecutionTime(job.clock,now)-job.startClock) or 0;
+			lines[#lines+1]=string_format("%d\t%s\t%s\t%s\t%s\t%.3f\t%.3f\t%s",job.number,job.id,job.status,job.origin,
+				job.queued and job.started and string_format("%.3f",(job.started-job.queued)*1000) or "-",duration*1000,
+				((job.ended or now)-(job.started or job.created))*1000,job.parent or "-");
+		end
+	end
 	if session.addonStart or session.addonStop then
 		lines[#lines+1]="Blizzard C_AddOnProfiler (whole addon):";
 		local start,stop=session.addonStart or {},session.addonStop or {};
@@ -571,6 +651,7 @@ local function CaptureFunction(func, key, scope, options)
 	-- Perf capture of func calls
 	local typePerf = perfScope[key];
 	ConfigureCapture(typePerf, key, scope or perfScope.__scope, options);
+	local queued = ObserveQueue(typePerf);
 	-- print("Perf.F:",perfScope.__scope,key)
 	local captured = function(...)
 		if typePerf.login then
@@ -579,7 +660,7 @@ local function CaptureFunction(func, key, scope, options)
 			elseif result then app.print("ATT next-login profile was not started:", result); end
 		end
 		local now = GetTimePreciseSec();
-		local state = BeginCapture(typePerf, now, nil, select(1, ...));
+		local state = BeginCapture(typePerf, now, queued, select(1, ...));
 		local res = {func(...)};
 		-- print(now,perfScope.__scope,key,"<")
 		local ended = GetTimePreciseSec();
