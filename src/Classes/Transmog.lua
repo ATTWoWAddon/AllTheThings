@@ -1,5 +1,7 @@
 -- App locals
 local appName,app = ...;
+---@type ATTProfiler
+local Profiler = app.Profiler;
 
 local C_TransmogCollection = C_TransmogCollection;
 if not C_TransmogCollection then
@@ -775,7 +777,12 @@ local function DetermineMaxATTSourceID()
 	app.MaxSourceID = maxSourceID;
 	-- app.PrintDebug("MaxSourceID",maxSourceID)
 end
+---Rebuilds Unique collection credit from known sources using the current filters.
+---Records the synchronous sweep in the capture active at entry; Units is the
+---source-ID scan bound, not the number of appearances collected.
 local function CollectUniqueAppearances()
+	local profileStart = Profiler and Profiler.Enabled and GetTimePreciseSec();
+	local profileSession = profileStart and Profiler.SessionID;
 	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
 	-- app.PrintDebug("Unique Refresh",app.MaxSourceID)
 	wipe(AccountUniqueSources);
@@ -807,8 +814,16 @@ local function CollectUniqueAppearances()
 		end
 	end
 	-- app.PrintDebug("Unique Refresh done")
+	if profileStart and Profiler.Enabled and Profiler.SessionID == profileSession then
+		Profiler.Record("transmog.unique.collect", (GetTimePreciseSec() - profileStart) * 1000, app.MaxSourceID);
+	end
 end
+---Rebuilds directly collected source states by scanning through MaxSourceID.
+---Records the synchronous scan only when its original capture is still active;
+---Units counts source-ID indices visited.
 local function RefreshAppearanceSources()
+	local profileStart = Profiler and Profiler.Enabled and GetTimePreciseSec();
+	local profileSession = profileStart and Profiler.SessionID;
 	-- app.PrintDebug("RefreshAppearanceSources")
 	wipe(AccountSources);
 	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
@@ -823,6 +838,9 @@ local function RefreshAppearanceSources()
 		end
 	end
 	-- app.PrintDebugPrior("Completionist Refresh done")
+	if profileStart and Profiler.Enabled and Profiler.SessionID == profileSession then
+		Profiler.Record("transmog.sources.scan", (GetTimePreciseSec() - profileStart) * 1000, app.MaxSourceID);
+	end
 end
 -- These events are technically 'refresh' of collections, but they also cause different results on
 -- 'new settings' since they literally change the cached collection state of SourceIDs based on current

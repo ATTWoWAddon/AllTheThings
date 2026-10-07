@@ -192,6 +192,62 @@ end, {
 	"Usage : /att report-reset",
 	"Allows resetting the tracking of displayed Dialog reports such that duplicate reports can be repeated in the same game session.",
 })
+-- Capture a short-lived performance profile using explicit ATT instrumentation.
+app.ChatCommands.Add("profile",
+---Starts, stops, reports, clears, or schedules a capture; prints usage for invalid arguments.
+---Reporting opens a copyable snapshot and leaves an active capture running.
+---@param args string[] Parsed arguments following /att profile.
+---@return boolean handled Always true after handling the action or printing usage for invalid arguments.
+function(args)
+	local action = args[1] and args[1]:lower()
+	---@type ATTProfiler
+	local profiler = app.Profiler
+	if action == "start" then
+		if args[3] then return app.ChatCommands.PrintHelp("profile") end
+		local ok, result = profiler.Start(args[2])
+		if ok then
+			app.print("ATT profile started for", result, "seconds. Use /att profile report to view it.")
+		else
+			app.print(result)
+		end
+	elseif action == "nextlogin" then
+		if args[3] then return app.ChatCommands.PrintHelp("profile") end
+		if args[2] and args[2]:lower() == "cancel" then
+			if profiler.CancelNextLogin() then
+				app.print("ATT next-login profile canceled.")
+			else
+				app.print("No ATT next-login profile is scheduled.")
+			end
+		else
+			local ok, result = profiler.ScheduleNextLogin(args[2])
+			if ok then
+				app.print("ATT profile scheduled for", result, "seconds at the next login or /reload.")
+			else
+				app.print(result)
+			end
+		end
+	elseif action == "stop" and not args[2] then
+		if profiler.Stop() then
+			app.print("ATT profile stopped. Use /att profile report to view it.")
+		else
+			app.print("No ATT profile is running.")
+		end
+	elseif action == "report" and not args[2] then
+		app:ShowPopupDialogWithMultiLineEditBox(profiler.Report(), nil, "ATT Performance Profile")
+	elseif action == "reset" and not args[2] then
+		profiler.Reset()
+		app.print("ATT profile cleared.")
+	else
+		app.ChatCommands.PrintHelp("profile")
+	end
+	return true
+end, {
+	"Usage : /att profile start [seconds] (default 30, maximum 300)",
+	"Usage : /att profile nextlogin [seconds] | cancel (one-shot, includes /reload)",
+	"The next character login or /reload consumes the request; cancel removes it.",
+	"Usage : /att profile stop | report | reset",
+	"Captures ATT's instrumented timings and counters in memory for a short session."
+})
 -- Allows a user to use /att debug-print
 -- to enable Debug Printing of any PrintDebug messages
 app.ChatCommands.Add("debug-print", function(args)

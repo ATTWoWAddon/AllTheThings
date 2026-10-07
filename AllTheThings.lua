@@ -1327,6 +1327,14 @@ end);
 
 -- Startup Event
 app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
+	-- Start an armed capture before settings initialization and collection refresh.
+	local profileStarted, profileResult = app.Profiler.StartNextLogin();
+	if profileStarted then
+		app.print("ATT login profile started for", profileResult, "seconds. Use /att profile report to view it.");
+	elseif profileResult then
+		app.print("ATT login profile skipped:", profileResult);
+	end
+
 	-- Old Saved Variables
 	local AllTheThingsAD = app.LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
 

@@ -1,5 +1,7 @@
 
 local _, app = ...;
+---@type ATTProfiler
+local Profiler = app.Profiler
 
 --- @type function,function,function,function,function,function
 local pairs, setmetatable, print, type, pcall, tinsert
@@ -424,9 +426,25 @@ local function RunnerEventCompleted(eventName)
 		CheckAwaitedEvents(eventName)
 	end
 end
--- Performs the logic needed to integrate the Handlers of a given Event into the current Event flow such that they
--- are processed in the proper sequence and timing in conjunction with other events
+-- Count the collection events that can trigger expensive work without creating
+-- a dynamic metric name for every event dispatched by ATT.
+---@type table<string, string>
+local ProfiledEventIDs = {
+	OnRecalculate = "event.trigger.OnRecalculate",
+	OnRefreshCollections = "event.trigger.OnRefreshCollections",
+	OnSourcesCollected = "event.trigger.OnSourcesCollected",
+}
+---Performs the logic needed to integrate the Handlers of a given Event into the current Event flow such that they
+---are processed in the proper sequence and timing in conjunction with other events
+---Profile counters count dispatch requests before queued requests are coalesced;
+---they do not represent completed handlers.
+---@param eventName string ATT event whose registered handlers should run.
+---@param ... any Arguments forwarded to each registered handler.
 local function HandleEvent(eventName, ...)
+	if Profiler and Profiler.Enabled then
+		local profileID = ProfiledEventIDs[eventName]
+		if profileID then Profiler.Count(profileID) end
+	end
 	-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
 	-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto

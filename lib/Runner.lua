@@ -186,6 +186,7 @@ local function CreateRunner(name)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
 	local OnStart, OnReset
 	local Name = "Runner:"..name;
+	local ProfileSliceID = "runner."..name..".slice";
 	local QueueIndex, RunIndex = 1, 1
 	local Pushed, perFrame
 	local function SetPerFrame(count)
@@ -272,11 +273,21 @@ local function CreateRunner(name)
 	end
 	SetRunnerCoroutine()
 
-	-- Static Function that handles the Stack-Run for the Runner-Coroutine
+	---Resumes one Runner execution slice and signals whether it needs another frame.
+	---Profiling measures this resume only, excluding waits between frames, and
+	---discards the slice if its capture session changes during execution.
+	---@return boolean? continuing True while more work remains; nil on completion or error.
 	local function StackRun()
 		-- app.PrintDebug("Stack.Run",Name)
 		if c_status(RunnerCoroutine) == "dead" then SetRunnerCoroutine() end
+		---@type ATTProfiler
+		local profiler = app.Profiler;
+		local profileStart = profiler and profiler.Enabled and GetTimePreciseSec();
+		local profileSession = profileStart and profiler.SessionID;
 		local ok, err = c_resume(RunnerCoroutine);
+		if profileStart and profiler.Enabled and profiler.SessionID == profileSession then
+			profiler.Record(ProfileSliceID, (GetTimePreciseSec() - profileStart) * 1000);
+		end
 		if ok then
 			if err == false then
 				-- app.PrintDebug("Stack.Run.Complete",Name)

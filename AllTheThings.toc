@@ -43,6 +43,7 @@ db\[Game]\ReferenceDB.lua
 lib\Debugging.lua
 lib\Print.lua
 lib\EventRegistration.lua
+lib\Profiler.lua
 lib\Runner.lua
 lib\Colors.lua
 lib\Sort.lua
