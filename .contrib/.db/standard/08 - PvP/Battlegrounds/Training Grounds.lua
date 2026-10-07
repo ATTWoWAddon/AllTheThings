@@ -35,6 +35,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				["maps"] = {
 					1366,	-- Arathi Basin (BG)
 				},
+				["timeline"] = { ADDED_1_7_0 },
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(1169, {	-- Master of Arathi Basin
@@ -149,7 +150,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			m(275, {	-- Battle for Gilneas
 				["icon"] = 462671,
-				["timeline"] = { ADDED_4_0_3 },
+				["timeline"] = { ADDED_4_0_3_LAUNCH },
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(5258, {	-- Master of the Battle for Gilneas

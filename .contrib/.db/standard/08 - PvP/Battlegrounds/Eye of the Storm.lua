@@ -11,6 +11,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			397,	-- Eye of the Storm (BG)
 		},
 		-- #endif
+		["timeline"] = { ADDED_2_0_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1171, {	-- Master of Eye of the Storm

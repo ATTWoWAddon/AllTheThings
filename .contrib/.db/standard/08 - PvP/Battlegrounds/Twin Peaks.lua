@@ -5,7 +5,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(206, {	-- Twin Peaks
 		["icon"] = 136026,
-		["timeline"] = { ADDED_4_0_3 },
+		["timeline"] = { ADDED_4_0_3_LAUNCH },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5223, {	-- Master of Twin Peaks
