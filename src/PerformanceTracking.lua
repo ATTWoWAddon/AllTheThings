@@ -99,7 +99,7 @@ local function GetPerfForScope(obj, scope)
 end
 
 -- Capture sessions use the original scope/key metrics and the same wrappers.
-local MAX_CAPTURE_LEVEL = 1;
+local MAX_CAPTURE_LEVEL = 2;
 local DEFAULT_DURATION, MAX_DURATION = 30, 300;
 local math_huge, table_sort, string_format = math.huge, table.sort, string.format;
 local LEVEL_NAMES = {"overview", "components", "workload", "jobs", "timeline", "diagnostics"};

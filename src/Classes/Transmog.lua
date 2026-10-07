@@ -827,6 +827,7 @@ end
 if app.__perf then
 	CollectUniqueAppearances = app.__perf.CaptureFunction(CollectUniqueAppearances, "collect", "transmog.unique", { module = "transmog", minLevel = 1 });
 	RefreshAppearanceSources = app.__perf.CaptureFunction(RefreshAppearanceSources, "scan", "transmog.sources", { module = "transmog", minLevel = 1 });
+	MarkUniqueCollectedSourcesBySource = app.__perf.CaptureFunction(MarkUniqueCollectedSourcesBySource, "expand", "transmog.unique", { module = "transmog", minLevel = 2 });
 end
 -- These events are technically 'refresh' of collections, but they also cause different results on
 -- 'new settings' since they literally change the cached collection state of SourceIDs based on current

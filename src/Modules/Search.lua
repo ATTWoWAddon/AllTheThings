@@ -491,6 +491,9 @@ local function RunRecursiveFilterCriteria(groups)
 		end
 	end
 end
+if app.__perf then
+	BuildClonedHierarchy = app.__perf.CaptureFunction(BuildClonedHierarchy, "clone", "search", { module = "search", minLevel = 2 });
+end
 -- Builds ClonedHierarchyGroups from the cached container using groups which match a particular key and value
 local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 	-- app.PrintDebug("BSR:Cached",value)
@@ -505,6 +508,9 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 			end
 		end
 	end
+end
+if app.__perf then
+	BuildSearchResponseViaCacheContainer = app.__perf.CaptureFunction(BuildSearchResponseViaCacheContainer, "cached", "search", { module = "search", minLevel = 2 });
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field
 function app:BuildSearchResponseRetailStyle(field, value, drop, criteria)

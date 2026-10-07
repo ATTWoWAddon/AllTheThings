@@ -149,6 +149,9 @@ local function HandleCollectionChange(t, isadd)
 		RemovalTypeHandlers[ttype](t)
 	end
 end
+if app.__perf then
+	HandleCollectionChange = app.__perf.CaptureFunction(HandleCollectionChange, "change", "collection", { module = "collection", minLevel = 2 });
+end
 local function DoCollection(group, isadd)
 	-- app.PrintDebug("DoCollection",app:SearchLink(group),isadd and "Collected" or "Removed",group and group.collectible,group and group.collected)
 	if not group then return; end

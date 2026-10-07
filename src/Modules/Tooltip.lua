@@ -754,6 +754,9 @@ app.AddEventHandler("OnReady", function()
 		return (not InCombatLockdown() or settings:GetTooltipSetting("DisplayInCombat")) and settings:GetTooltipSettingWithMod("Enabled")
 	end
 end)
+if app.__perf then
+	AttachTooltipInformation = app.__perf.CaptureFunction(AttachTooltipInformation, "information", "tooltip", { module = "tooltip", minLevel = 2 });
+end
 local function ClearTooltip(tooltip)
 	-- app.PrintDebug("Clear Tooltip",SafeGetName(tooltip));
 	tooltip.AllTheThingsProcessing = nil;

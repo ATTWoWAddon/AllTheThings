@@ -126,6 +126,9 @@ local function CheckCollectible(ref, costid)
 		end
 	end
 end
+if app.__perf then
+	CheckCollectible = app.__perf.CaptureFunction(CheckCollectible, "collectible", "costs", { module = "costs", minLevel = 2 });
+end
 app.CheckCollectible = CheckCollectible;
 local ItemUnboundSetting, Filters_ItemUnbound
 -- Contains the functions to return if the CheckCollectible return value is acceptable under the current conditions
@@ -415,6 +418,11 @@ local function FinishCostAssignmentsForSpell(spellID, costs, refresh, chainUpdat
 	SetCostTotals(costs, isProv, refresh, spellID, chainUpdate)
 end
 
+if app.__perf then
+	FinishCostAssignmentsForItem = app.__perf.CaptureFunction(FinishCostAssignmentsForItem, "item", "costs.assign", { module = "costs", minLevel = 2 });
+	FinishCostAssignmentsForCurr = app.__perf.CaptureFunction(FinishCostAssignmentsForCurr, "currency", "costs.assign", { module = "costs", minLevel = 2 });
+	FinishCostAssignmentsForSpell = app.__perf.CaptureFunction(FinishCostAssignmentsForSpell, "spell", "costs.assign", { module = "costs", minLevel = 2 });
+end
 ---@type function
 local UpdateCostGroup
 local function UpdateCostsByItemID(itemID, refresh, chainUpdate, refs)
@@ -514,6 +522,9 @@ local function UpdateCosts()
 end
 
 if app.__perf then
+	UpdateCostsByItemID = app.__perf.CaptureFunction(UpdateCostsByItemID, "item", "costs.update", { module = "costs", minLevel = 2 });
+	UpdateCostsByCurrencyID = app.__perf.CaptureFunction(UpdateCostsByCurrencyID, "currency", "costs.update", { module = "costs", minLevel = 2 });
+	UpdateCostsBySpellID = app.__perf.CaptureFunction(UpdateCostsBySpellID, "spell", "costs.update", { module = "costs", minLevel = 2 });
 	UpdateCosts = app.__perf.CaptureFunction(UpdateCosts, "refresh", "costs.queue", { module = "costs", minLevel = 1 });
 end
 local UpdateCostTypeFunc = setmetatable({
