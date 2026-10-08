@@ -603,7 +603,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(666, {	-- Sunken Treasure (2/5)
 				["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
 				["qg"] = 2774,	-- Doctor Draxlegauge
-				["qi"] = 4491,	-- Goggles of Gem Hunting
 				["coord"] = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
 				["lvl"] = 35,
 				["groups"] = {
@@ -616,6 +615,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(4547),	-- Gnomish Zapper
 					i(4548),	-- Servomechanic Sledgehammer
+					i(4491),	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
 				},
 			}),
 			q(668, {	-- Sunken Treasure (3/5)

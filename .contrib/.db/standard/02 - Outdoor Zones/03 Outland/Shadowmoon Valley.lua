@@ -895,7 +895,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 30719 },	-- Spectrecles (Provided)
 								["cr"] = 21795,	-- Shadowmoon Harbinger
 							}),
-							i(30719),	-- Spectrecles
+							i(30719),	-- Spectrecles/ Do not convert to QI or it will give an error because it also provides an xmog
 						},
 					}),
 					heroscall(q(49550, {	-- Hero's Call: Shadowmoon Valley! (Outland)
@@ -1491,7 +1491,7 @@ root(ROOTS.Zones, {
 						}),
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
-							i(30721),	-- Spectrecles
+							i(30721),	-- Spectrecles/ Do not convert to QI or it will give an error because it also provides an xmog
 						},
 					},
 					q(11047, {	-- The Apprentice's Request

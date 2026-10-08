@@ -1453,7 +1453,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(666, {	-- Sunken Treasure (2/5)
 					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
 					["qg"] = 2774,	-- Doctor Draxlegauge
-					["qi"] = 4491,	-- Goggles of Gem Hunting
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -1469,6 +1468,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4548, {	-- Servomechanic Sledgehammer
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+						i(4491, {	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
@@ -1501,7 +1503,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26051, {	-- Sunken Treasure
 					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["qg"] = 2774,	-- Doctor Draxlegauge
-					["qi"] = 4491,	-- Goggles of Gem Hunting
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1523,6 +1524,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(156948, {	-- Waterlogged Elven Spear
 							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(4491, {	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),
