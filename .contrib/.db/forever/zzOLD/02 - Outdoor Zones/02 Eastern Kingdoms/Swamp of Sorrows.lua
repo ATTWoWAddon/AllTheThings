@@ -71,6 +71,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Tale of Sorrow
+							["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+						}),
+					},
 				}),
 				q(8417, {	-- A Troubled Spirit
 					["allianceQuestData"] = {
