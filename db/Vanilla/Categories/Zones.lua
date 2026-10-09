@@ -5953,7 +5953,7 @@ qo(1,{coords={
 q(3161,{coords={
 [1446]={{52.6,45.8}}},lvl=43,qgs={7771},rwp=40003,g={
 qo(1,{providers={{"i",8443},{"o",140971}}}),
-i(9978,{loc=40,q=1}),
+s(159721,9978,{collectible=false,f=104,loc=40,q=1}),
 s(160194,10827,{b=1,f=5,loc=42,q=2}),
 s(160193,10826,{b=1,f=28,q=2})}}),
 q(3022,{coords={
@@ -10608,6 +10608,7 @@ s(159415,9521,{b=1,f=22,q=2})}}),
 q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,qss={4614},rwp=40003}),
 q(667,{coords={
 [1417]={{32.2,81.6}}},lvl=35,qgs={2610},rwp=40003,sourceQuests={670},g={
+qo(1,{providers={{"n",2775}}}),
 i(4550,{b=1,f=52,q=2}),
 i(4549,{b=1,f=52,q=2})}}),
 q(662,{coords={
@@ -10726,7 +10727,7 @@ qo(1,{coords={
 [1417]={{23.6,87.4}}},providers={{"i",4492},{"o",2712}}}),
 s(157802,4547,{b=1,f=27,q=2}),
 s(157803,4548,{b=1,f=24,learnedAt=100,q=2,requireSkill=202}),
-i(4491,{loc=40,q=1})}}),
+s(157792,4491,{collectible=false,f=104,loc=40,q=1})}}),
 q(668,{coords={
 [1417]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4493},rwp=40003,sourceQuests={666}}),
 q(669,{coords={

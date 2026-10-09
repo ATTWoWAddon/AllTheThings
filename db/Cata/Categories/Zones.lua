@@ -6130,7 +6130,7 @@ s(203057,53405,{b=1,f=5,loc=42,q=2}),
 s(203077,53427,{b=1,f=6,loc=44,q=2})}}),
 q(14340,{awp=40003,coords={
 [1447]={{42.6,25.1}}},qgs={36210},r=1,sourceQuests={14345},g={
-i(49201,{loc=40,q=1})}}),
+s(202314,49201,{collectible=false,f=104,loc=40,q=1})}}),
 q(14390,{awp=40003,coords={
 [1447]={{27.8,41}}},r=1,sourceQuests={14389}}),
 q(14480,{awp=40003,coords={
@@ -16417,7 +16417,7 @@ qo(1,{coords={
 q(3161,{coords={
 [1446]={{52.6,45.8}}},lvl=43,qgs={7771},rwp=40003,u=2,g={
 qo(1,{providers={{"i",8443},{"o",140971}},u=2}),
-i(9978,{loc=40,q=1,u=2}),
+s(123334,9978,{collectible=false,f=104,loc=40,q=1,u=2}),
 s(124017,10827,{b=1,f=5,loc=42,q=2,u=2}),
 s(124016,10826,{b=1,f=28,q=2,u=2})}}),
 q(25522,{awp=40003,coords={
@@ -24843,10 +24843,12 @@ qo(3,{providers={{"n",2555},{"n",51633}}})}}),
 q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,qss={4614},rwp=40003,u=2}),
 q(667,{coords={
 [1417]={{32.2,81.6}}},lvl=35,qgs={2610},rwp=40003,sourceQuests={670},u=2,g={
+qo(1,{providers={{"n",2775}},u=2}),
 i(4550,{b=1,f=52,q=2,u=2}),
 i(4549,{b=1,f=52,q=2,u=2})}}),
 q(26628,{awp=40003,coords={
 [1417]={{25.9,83.8}}},qgs={2610},sourceQuests={26052},g={
+qo(1,{providers={{"n",2775}}}),
 s(206321,59212,{b=1,f=4,loc=42,q=2}),
 s(206322,59213,{b=1,f=5,loc=46,q=2}),
 s(206323,59214,{b=1,f=5,loc=43,q=2}),
@@ -25048,7 +25050,7 @@ qo(1,{coords={
 [1417]={{23.6,87.4}}},providers={{"i",4492},{"o",2712}},u=2}),
 s(119699,4547,{b=1,f=27,q=2,u=2}),
 s(119700,4548,{b=1,f=24,q=2,u=2}),
-i(4491,{loc=40,q=1,u=2})}}),
+s(119645,4491,{collectible=false,f=104,loc=40,q=1,u=2})}}),
 q(668,{coords={
 [1417]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4493},rwp=40003,sourceQuests={666},u=2}),
 q(669,{coords={
@@ -25061,7 +25063,7 @@ qo(1,{coords={
 [1417]={{16.1,91.5}}},providers={{"i",4492},{"o",2712}}}),
 s(206310,59199,{b=1,f=5,loc=47,q=2}),
 s(206311,59200,{b=1,f=29,q=2}),
-i(4491,{loc=40,q=1})}}),
+s(119645,4491,{collectible=false,f=104,loc=40,q=1})}}),
 q(640,{coords={
 [1417]={{73.8,33.8}}},lvl=32,qgs={2703},r=1,rwp=40003,sourceQuests={639},u=2,g={
 qo(1,{crs={2583,2584,2585},providers={{"i",4450}},u=2})}}),
@@ -43807,7 +43809,7 @@ s(141831,31485,{b=1,f=4,loc=46,q=2,u=17}),
 s(141833,31487,{b=1,f=6,loc=40,q=2,u=17})}}),
 q(10819,{coords={
 [1949]={{62.6,40.2}}},lvl=65,qgs={22127},sourceQuests={10812},u=17,g={
-i(31366,{collectible=false,loc=40,lvl=65,q=1,u=17})}}),
+s(201437,31366,{collectible=false,f=104,loc=40,lvl=65,q=1,u=17})}}),
 q(10911,{coords={
 [1949]={{63.5,35.5}}},description="Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",lvl=65,qgs={22423},sourceQuests={10904},u=17,g={
 qo(1,{providers={{"i",31807},{"n",22443}},u=17}),

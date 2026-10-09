@@ -7466,7 +7466,7 @@ qo(1,{coords={
 q(3161,{coords={
 [1446]={{52.6,45.8}}},lvl=43,qgs={7771},rwp=40003,g={
 qo(1,{providers={{"i",8443},{"o",140971}}}),
-i(9978,{loc=40,q=1}),
+s(123334,9978,{collectible=false,f=104,loc=40,q=1}),
 s(124017,10827,{b=1,f=5,loc=42,q=2}),
 s(124016,10826,{b=1,f=28,q=2})}}),
 q(3022,{coords={
@@ -12571,6 +12571,7 @@ s(122949,9521,{b=1,f=22,q=2})}}),
 q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,qss={4614},rwp=40003}),
 q(667,{coords={
 [1417]={{32.2,81.6}}},lvl=35,qgs={2610},rwp=40003,sourceQuests={670},g={
+qo(1,{providers={{"n",2775}}}),
 i(4550,{b=1,f=52,q=2}),
 i(4549,{b=1,f=52,q=2})}}),
 q(662,{coords={
@@ -12689,7 +12690,7 @@ qo(1,{coords={
 [1417]={{23.6,87.4}}},providers={{"i",4492},{"o",2712}}}),
 s(119699,4547,{b=1,f=27,q=2}),
 s(119700,4548,{b=1,f=24,q=2}),
-i(4491,{loc=40,q=1})}}),
+s(119645,4491,{collectible=false,f=104,loc=40,q=1})}}),
 q(668,{coords={
 [1417]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4493},rwp=40003,sourceQuests={666}}),
 q(669,{coords={
@@ -22676,7 +22677,7 @@ s(141831,31485,{b=1,f=4,loc=46,q=2,u=17}),
 s(141833,31487,{b=1,f=6,loc=40,q=2,u=17})}}),
 q(10819,{coords={
 [1949]={{62.6,40.2}}},lvl=65,qgs={22127},sourceQuests={10812},u=17,g={
-i(31366,{collectible=false,loc=40,lvl=65,q=1,u=17})}}),
+s(141712,31366,{collectible=false,f=104,loc=40,lvl=65,q=1,u=17})}}),
 q(10911,{coords={
 [1949]={{63.5,35.5}}},description="Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",lvl=65,qgs={22423},sourceQuests={10904},u=17,g={
 qo(1,{providers={{"i",31807},{"n",22443}},u=17}),
