@@ -464,6 +464,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Tale of Sorrow
+							["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+						}),
+					},
 				}),
 				q(1430, {	-- Fresh Meat
 					["qg"] = 5591,	-- Dar

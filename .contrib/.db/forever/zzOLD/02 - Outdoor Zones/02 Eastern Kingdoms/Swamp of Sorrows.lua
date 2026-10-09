@@ -182,6 +182,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Tale of Sorrow
+							["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+						}),
+					},
 				}),
 				q(1430, {	-- Fresh Meat
 					["qg"] = 5591,	-- Dar
