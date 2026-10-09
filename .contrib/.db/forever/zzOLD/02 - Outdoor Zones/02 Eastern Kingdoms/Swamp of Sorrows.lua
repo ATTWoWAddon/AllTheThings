@@ -368,6 +368,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["maps"] = { MAP.AZSHARA },
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 	Conversation with Loramus
+							["provider"] = { "n", 7783 },	-- Loramus Thalipedes
+						}),
+					},
 				}),
 				q(2621, {	-- The Disgraced One
 					["sourceQuest"] = 2784,	-- Fall From Grace
