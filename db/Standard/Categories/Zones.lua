@@ -6911,7 +6911,7 @@ s(26180,53425,{b=1,f=3}),
 s(26168,53412,{b=1,f=5,loc=44}),
 s(75641,131360,{awp=70003,b=1,f=6,loc=44})}}),
 q(3141,{coords={
-[76]={{60.8,66.4}}},qgs={7783},rwp=40003,sourceQuests={2744},u=2}),
+[76]={{60.8,66.4}}},crs={7783},qgs={7783},rwp=40003,sourceQuests={2744},u=2}),
 q(3562,{coords={
 [88]={{70.2,30.8}}},qgs={4046},qis={10678},r=1,rwp=40003,sourceQuests={3518},u=2}),
 q(8250,_.ResolveQuestData({aqd=
@@ -27609,11 +27609,11 @@ q(26429,{awp=40003,coords={
 [14]={{69,34.8}}},crs={2554,2555,2556,51633},lvl=10,qgs={2771},r=1}),
 q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",qss={4614},rwp=40003,u=2}),
 q(667,{coords={
-[14]={{32.2,81.6}}},qgs={2610},rwp=40003,sourceQuests={670},u=2,g={
+[14]={{32.2,81.6}}},crs={2610,2775},qgs={2610},rwp=40003,sourceQuests={670},u=2,g={
 i(4550,{b=1,f=52,u=2}),
 i(4549,{b=1,f=52,u=2})}}),
 q(26628,{awp=40003,coords={
-[14]={{25.9,83.8}}},lvl=10,qgs={2610},sourceQuests={26052},g={
+[14]={{25.9,83.8}}},crs={2610,2775},lvl=10,qgs={2610},sourceQuests={26052},g={
 s(29481,59212,{b=1,f=4,loc=42}),
 s(29482,59213,{b=1,f=5,loc=46}),
 s(29483,59214,{b=1,f=5,loc=43}),
@@ -38856,7 +38856,7 @@ n(1386,{coords={
 h(-45,{
 q(2801,_.ResolveQuestData({aqd=
 {sourceQuests={2783},u=2},coords={
-[51]={{34.3,66.2}}},hqd=
+[51]={{34.3,66.2}}},crs={7572},hqd=
 {sourceQuests={2623},u=2},qgs={7572},rwp=40003,u=2})),
 q(8417,_.ResolveQuestData({aqd=
 {coords={
@@ -38928,7 +38928,7 @@ s(93239,157012,{awp=70305,b=1,f=20})}}),
 q(1396,{coords={
 [51]={{26.8,59.8}}},crs={767,858,1084},qgs={5476},r=2,rwp=40003,sourceQuests={9609},u=2}),
 q(2784,{coords={
-[51]={{34.3,66.2}}},qgs={7572},r=1,rwp=40003,u=2}),
+[51]={{34.3,66.2}}},crs={7572},qgs={7572},r=1,rwp=40003,u=2}),
 q(1430,{coords={
 [51]={{44.8,57.2}}},crs={1088},qgs={5591},qis={6184},r=1,rwp=40003,u=2,g={
 i(9681,{f=55,lvl=15,spellID=1129,u=2}),
@@ -39095,7 +39095,7 @@ s(32310,64619,{b=1,f=7,loc=45}),
 n(46371,{coords={
 [51]={{63.2,86.8}}}})}}),
 q(2744,{coords={
-[51]={{34.3,66.2}}},maps={76},qgs={7572},rwp=40003,sourceQuests={2743},u=2}),
+[51]={{34.3,66.2}}},crs={7783},maps={76},qgs={7572},rwp=40003,sourceQuests={2743},u=2}),
 q(2621,{coords={
 [51]={{34.3,66.2}}},qgs={7572},r=1,rwp=40003,sourceQuests={2784},u=2}),
 q(27869,{awp=40003,coords={

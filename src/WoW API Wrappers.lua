@@ -61,6 +61,8 @@ AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage,
 
 -- Currency APIs
 local C_CurrencyInfo = C_CurrencyInfo;
+---@diagnostic disable-next-line: deprecated
+AssignAPIWrapper("GetCoinTextureString", C_CurrencyInfo and C_CurrencyInfo.GetCoinTextureString, GetCoinTextureString);
 AssignAPIWrapper("GetCurrencyInfo", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo, GetCurrencyInfo);
 AssignAPIWrapper("GetCurrencyLink", C_CurrencyInfo and C_CurrencyInfo.GetCurrencyLink, GetCurrencyLink);
 
@@ -121,6 +123,8 @@ AssignAPIWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
 AssignAPIWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, GetItemInfoInstant)
 AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
 AssignAPIWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
+AssignAPIWrapper("GetItemSpell", C_Item and C_Item.GetItemSpell, GetItemSpell)
+AssignAPIWrapper("GetDetailedItemLevelInfo", C_Item and C_Item.GetDetailedItemLevelInfo, GetDetailedItemLevelInfo)
 AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
 if app.GameBuildVersion >= 70000 then
 	AssignAPIWrapper("IsArtifactRelicItem", C_ItemSocketInfo and C_ItemSocketInfo.IsArtifactRelicItem, IsArtifactRelicItem)
