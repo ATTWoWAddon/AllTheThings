@@ -854,6 +854,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
+						objective(1, {	-- 0/1	Weaponry Creation
+							["provider"] = { "n", 7802 },	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
+						})
 						i(10697, {	-- Enchanted Azsharite Felbane Dagger
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
