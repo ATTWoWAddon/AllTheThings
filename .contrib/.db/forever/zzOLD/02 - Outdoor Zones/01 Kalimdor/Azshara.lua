@@ -336,6 +336,11 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["qg"] = 7783,	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.4, MAP.AZSHARA },
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 Loramus' Story
+							["provider"] = { "n", 7783 },	-- Loramus Thalipedes
+						}),
+					},
 				}),
 				q(3562, {	-- Magatha's Payment to Jediga
 					["sourceQuest"] = 3518,	-- Delivery to Magatha
