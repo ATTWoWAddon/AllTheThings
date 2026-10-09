@@ -499,6 +499,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
+						objective(1, {	-- 0/1 Defend Shakes O'Breen
+							["provider"] = { "i", 2610 },	-- Shakes O'Breen <Blackwater Raiders>
+							["provider"] = { "i", 2775 },	-- Daggerspine Marauder
+						}),
 						i(4550, {	-- Coldwater Ring
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -513,6 +517,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.9, 83.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Defend Shakes O'Breen
+							["provider"] = { "i", 2610 },	-- Shakes O'Breen <Blackwater Raiders>
+							["provider"] = { "i", 2775 },	-- Daggerspine Marauder
+						}),
 						i(59212, {	-- O'Breen's Dress Robes
 							["timeline"] = { ADDED_4_0_3 },
 						}),
