@@ -69,6 +69,26 @@ ssh-keygen -t rsa -b 4096 -C "YOUR_EMAIL_OR_LABEL" -f "$HOME/.ssh/id_rsa_signing
 
 Use this instead of the Ed25519 generation command. Replace `id_ed25519_signing` with `id_rsa_signing` in subsequent local-file examples, including `.pub` paths.
 
+### Choosing a key size
+
+**For new keys, this guide recommends at least 128 bits of classical security.** Follow a stricter organization policy where applicable. This is the guide's recommendation, not a universal GitHub requirement or a claim that existing RSA 2048 keys are immediately unsafe. Existing-key and 1Password routes still reuse suitable keys without a generation step.
+
+Key size measures an algorithm's parameters; security strength estimates resistance to attacks. Compare strength across algorithms, not raw bit counts.
+
+| SSH key type | Size or curve choice | Approximate classical security |
+| --- | --- | --- |
+| RSA | At least 3072 bits for a new key; the example above uses 4096. | 3072 bits provides about 128 bits of security; 4096 adds margin. |
+| ECDSA | P-256, P-384, or P-521; with `-t ecdsa`, select `-b 256`, `-b 384`, or `-b 521`, respectively. | About 128, 192, or 256 bits, respectively. |
+| Ed25519 | Fixed parameters; there is no larger Ed25519 key-size option. | About 128 bits. |
+
+Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5, §7.1 for Ed25519](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf).
+
+RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected generation route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
+
+**GPG/OpenPGP:** in [Step B2](#step-b2--reuse-a-suitable-secret-key-or-generate-one), `gpg --full-generate-key` lets you choose an algorithm and its available size or curve. Apply the same RSA 3072/4096 guidance. A primary key and signing or encryption subkeys may use different algorithms and sizes; choose the required strength for each role rather than matching raw bit counts. Git commit signing needs signing capability, not an encryption subkey. This guidance does not require replacing suitable existing keys. [GnuPG key management](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html).
+
+Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the policy below.
+
 ## Policy — Post-quantum cryptography (PQC)
 
 **Checked 10 October 2026.** This is a policy recommendation, not an extra required workflow step.
@@ -253,6 +273,8 @@ gpg --full-generate-key
 ```
 
 Choose a GitHub-supported, team-approved algorithm; RSA 4096 is a common compatibility choice. Menu choices vary by version. Enter your identity and matching email, a strong passphrase, and an expiry consistent with your policy. Secure an encrypted backup and revocation certificate.
+
+See [Choosing a key size](#choosing-a-key-size) for the recommended strength and size or curve choices.
 
 ```sh
 gpg --list-secret-keys --keyid-format=long --with-subkey-fingerprint
@@ -451,9 +473,10 @@ This shared reference explains terms used across both guides. It adds no require
 | gpg-agent / pinentry | GnuPG's key service and passphrase prompt. Modern GnuPG uses gpg-agent as part of its architecture. |
 | Keychain | macOS credential storage that can remember a key's passphrase. This is optional and separate from using an SSH agent. |
 | 1Password | An external key manager with SSH-agent and signing integrations. Its supported integration is required only when choosing that key-source route. |
+| Key size / security strength | Parameter length versus estimated resistance to attacks. Compare security strength across algorithms, not raw key lengths. |
 | RSA | Rivest–Shamir–Adleman: a public-key algorithm usable for authentication and signing. Its key format does not determine its signature hash. |
 | DSA | Digital Signature Algorithm: a legacy signature scheme. GitHub stopped supporting DSA SSH keys on 15 March 2022; this SSH restriction is distinct from its GPG-key support. |
-| ECDSA | Elliptic Curve Digital Signature Algorithm: a classical signature scheme, distinct from Ed25519. |
+| ECDSA | Elliptic Curve Digital Signature Algorithm: a classical signature scheme whose curve determines its parameters, distinct from Ed25519. |
 | Ed25519 | A signature scheme in the Edwards-curve Digital Signature Algorithm family; the example key type in these guides. |
 | SHA-1 / SHA-2 | Secure Hash Algorithm 1 is a hash algorithm; Secure Hash Algorithm 2 is a family. RSA/SHA-2 uses SHA-256/512; SSHSIG excludes RSA/SHA-1. |
 | SSHSIG | OpenSSH's signature format, used by Git's SSH signing route. It is separate from SSH transport authentication. |
