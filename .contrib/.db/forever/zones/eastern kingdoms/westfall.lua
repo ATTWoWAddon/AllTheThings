@@ -278,8 +278,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(103, {	-- Keeper of the Flame
 				["qg"] = 392,	-- Captain Grayson
 				["coord"] = { 30.0, 86.0, MAP.WESTFALL },
-				["cost"] = { { "i", 814, 5 } },	-- Flask of Oil
 				["lvl"] = 10,
+				["groups"] = {
+					objective(1, {	-- 0/5 Flask of Oil
+						["cost"] = { { "i", 814, 5 } },	-- Flask of Oil
+					}),
+				},
 			}),
 			q(2359, {	-- Klaven's Tower
 				["sourceQuest"] = 2360,	-- Mathias and the Defias

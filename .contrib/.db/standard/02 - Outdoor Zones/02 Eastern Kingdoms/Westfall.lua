@@ -756,8 +756,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 392,	-- Captain Grayson
 					["coord"] = { 30.0, 86.0, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 814, 5 } },	-- Flask of Oil
 					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/5 Flask of Oil
+							["cost"] = { { "i", 814, 5 } },	-- Flask of Oil
+						}),
+					},
 				}),
 				q(26347, {	-- Keeper of the Flame
 					["qg"] = 392,	-- Captain Grayson
