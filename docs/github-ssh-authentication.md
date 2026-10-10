@@ -46,9 +46,9 @@ flowchart TD
 | Ed25519 | Preferred for new keys with compatible tools. |
 | RSA | A compatibility alternative; use 4096 bits for a new key. |
 | ECDSA | Still available as an alternative. |
-| DSA (`ssh-dss`) | Unsupported by GitHub since 15 March 2022; do not generate it. |
+| DSA (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
 
-Sources: [GitHub key generation and DSA retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+Sources: [GitHub key generation and DSA SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
 
 SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Hash Algorithm 1) is an older hash function.
 
@@ -374,7 +374,7 @@ This shared reference explains terms used across both guides. It adds no require
 | Keychain | macOS credential storage that can remember a key's passphrase. This is optional and separate from using an SSH agent. |
 | 1Password | An external key manager with SSH-agent and signing integrations. Its supported integration is required only when choosing that key-source route. |
 | RSA | Rivest–Shamir–Adleman: a public-key algorithm usable for authentication and signing. Its key format does not determine its signature hash. |
-| DSA | Digital Signature Algorithm: a legacy signature scheme unsupported by GitHub since 15 March 2022. |
+| DSA | Digital Signature Algorithm: a legacy signature scheme. GitHub stopped supporting DSA SSH keys on 15 March 2022; this SSH restriction is distinct from its GPG-key support. |
 | ECDSA | Elliptic Curve Digital Signature Algorithm: a classical signature scheme, distinct from Ed25519. |
 | Ed25519 | A signature scheme in the Edwards-curve Digital Signature Algorithm family; the example key type in these guides. |
 | SHA-1 / SHA-2 | Secure Hash Algorithm 1 is a hash algorithm; Secure Hash Algorithm 2 is a family. RSA/SHA-2 uses SHA-256/512; SSHSIG excludes RSA/SHA-1. |
@@ -396,3 +396,5 @@ This shared reference explains terms used across both guides. It adds no require
 | TTY / terminal | TTY comes from teletype and names a terminal device. `GPG_TTY` identifies the terminal for GnuPG's passphrase interaction. |
 
 Standards terminology: [NIST ML-KEM](https://csrc.nist.gov/pubs/fips/203/final), [NIST ML-DSA](https://csrc.nist.gov/pubs/fips/204/final).
+
+DSA support scope: [GitHub SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [GitHub supported GPG-key algorithms](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key#supported-gpg-key-algorithms).
