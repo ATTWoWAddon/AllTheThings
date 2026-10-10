@@ -207,10 +207,10 @@ Source: [Git commit flags](https://git-scm.com/docs/git-commit).
 For the manager path, use the public key copied from the SSH Key item; a local `.pub` file is not required. For trusted **local SSH verification**, create/edit `~/.ssh/allowed_signers` as plain 8-bit Unicode Transformation Format (UTF-8) or American Standard Code for Information Interchange (ASCII, a text encoding) text. Preserve existing entries. Add one trusted public-key entry:
 
 ```text
-YOUR_VERIFIED_EMAIL namespaces="git" ssh-ed25519 PUBLIC_KEY_BASE64
+YOUR_VERIFIED_EMAIL namespaces="git" PUBLIC_KEY_TYPE PUBLIC_KEY_BASE64
 ```
 
-Replace the full base64 field with the second field from your `.pub` file. Avoid Windows PowerShell 5.1's default 16-bit Unicode Transformation Format (UTF-16) redirection. Then:
+Replace `PUBLIC_KEY_TYPE` and `PUBLIC_KEY_BASE64` with the first and complete second fields of your selected signing key's public-key text, from its `.pub` file or the manager's public-key export. For the RSA alternative, the type is `ssh-rsa`; for Ed25519 it is `ssh-ed25519`. Copy both fields from the same key and omit the trailing comment. The key type is not the signature algorithm: do not substitute `rsa-sha2-256` or `rsa-sha2-512` for `ssh-rsa`. Avoid Windows PowerShell 5.1's default 16-bit Unicode Transformation Format (UTF-16) redirection. Then:
 
 ```sh
 git config --local gpg.ssh.allowedSignersFile "$HOME/.ssh/allowed_signers"
