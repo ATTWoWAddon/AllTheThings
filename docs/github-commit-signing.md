@@ -12,7 +12,7 @@ Signing verifies commit/tag content and its signing identity; it does not grant 
 
 **Recommendation — Use separate SSH key pairs (linked public and private keys) for authentication/login and commit signing.** Separate keys let you revoke and rotate each independently and manage permissions and intended uses separately. This is a recommendation, not a GitHub requirement. The examples use `id_ed25519_github` for authentication and `id_ed25519_signing` for signing; apply the same separation when choosing existing keys or manager-held keys. GitHub also allows the same public key for both purposes, but register it separately as an **Authentication key** and a **Signing key** ([GitHub key registration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)).
 
-This guide provides setup instructions, not a record of changes to your keys or accounts. Commands were checked against official documentation, but the complete routes were not tested on your computers. Replace every uppercase placeholder before running a command. See the [commit signing terminology appendix](#appendix--commit-signing-terminology) for definitions.
+This guide provides setup instructions, not a record of changes to your keys or accounts. Commands were checked against official documentation, but the complete setup routes were not tested end to end on your computers. The separate [GPG compatibility experiment](#appendix--gpg-verification-matrix) records isolated signing and verification tests. Replace every uppercase placeholder before running a command. See the [commit signing terminology appendix](#appendix--commit-signing-terminology) for definitions.
 
 ## Flow — Choose your route once
 
@@ -207,6 +207,8 @@ Source: [GitHub verification](https://docs.github.com/en/authentication/managing
 GPG provides an alternative signing method. Modern GnuPG uses **gpg-agent (its background key service) as part of its architecture**, normally started automatically. This is distinct from the optional ssh-agent used for SSH keys.
 
 For a new OpenPGP signing key, this guide recommends at least 128 bits of classical security. RSA 4096 is a common compatibility choice; use a GitHub-supported, team-approved signing algorithm. The [OpenPGP key reference](#openpgp-signing-key-types-and-sizes) explains sizes, curves, and signing capability.
+
+**Tested compatibility:** RSA, NIST ECDSA, and Ed25519 signatures passed GitHub API verification in the 11 October 2026 experiment. DSA also passed as a legacy case; do not generate it for new signing keys. See the [dated GPG matrix](#appendix--gpg-verification-matrix) for the exact sizes, signing subkeys, and Ed448 format result.
 
 ### Step B1 — Check GPG and your repository identity
 
@@ -494,7 +496,7 @@ For a new OpenPGP signing key, this guide recommends **at least 128 bits of clas
 | --- | --- | --- |
 | RSA | 2048, 3072, or 4096 bits | About 112 bits of security at 2048; about 128 at 3072. RSA 4096 adds margin, not 256-bit security. RSA 3072/4096 are compatibility choices; RFC 9580 discourages new RSA keys and requires at least 3072 bits when generating them. |
 | EdDSA with Ed25519 | Fixed parameters; 32-byte encoded public-key value | About 128 bits of security; a practical modern option with compatible tools and key formats. There is no larger Ed25519 key-size setting. |
-| EdDSA with Ed448 | Fixed parameters; 57-byte encoded public-key value | About 224 bits of security. GnuPG has supported Ed448 since 2.3, but GitHub's generic EdDSA listing does not guarantee Ed448 or every OpenPGP packet format works; test GitHub verification before choosing it. |
+| EdDSA with Ed448 | Fixed parameters; 57-byte encoded public-key value | About 224 bits of security. GitHub rejected the tested GnuPG 2.5.24 certificate using algorithm ID 22 and v5 packets; see the [dated matrix](#appendix--gpg-verification-matrix). This result does not cover all Ed448 formats. |
 | ECDSA | NIST P-256, P-384, or P-521; GnuPG names `nistp256`, `nistp384`, `nistp521` | About 128, 192, or 256 bits of security, respectively. Other curves, such as Brainpool or secp256k1, depend on the build; do not assume GitHub accepts every curve. |
 | DSA (legacy) | Historical 1024-, 2048-, or 3072-bit parameters | Do not generate new DSA keys: RFC 9580 forbids this, and FIPS 186-5 retains DSA only for verifying old signatures. GitHub still lists DSA for OpenPGP; this is distinct from its retired DSA SSH keys. |
 
@@ -507,6 +509,36 @@ Check the actual installation with `gpg --version` and `gpg --with-colons --list
 Sources: [OpenPGP algorithm roles](https://www.rfc-editor.org/rfc/rfc9580.html#section-9.1), [GnuPG key management and available algorithms](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
 
 Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the [PQC appendix](#appendix--post-quantum-cryptography-pqc).
+
+## Appendix — GPG verification matrix
+
+**Observed 11 October 2026 · GnuPG 2.5.24 · libgcrypt 1.12.4 · macOS.** This experiment tested nine algorithm/size/curve groups using nine OpenPGP certificates and eleven signing cases. RSA 4096 and Ed25519 each used one certificate for both a primary key and a signing subkey using the same algorithm.
+
+Each empty commit was signed with the exact selected fingerprint from an isolated GnuPG home. Verification used a separate home containing only the public certificates. All eleven passed local verification, and every commit retained the base tree. GitHub accepted eight certificates and its commit API returned `verified=true`, `reason=valid` for ten commits.
+
+The links identify the full commit SHA on the [test branch](https://github.com/NORPG/AllTheThings/tree/codex/gpg-verification-matrix). The key and signature packet versions below were checked separately. `verified` and `reason` describe GitHub's signature result; `verified_at` records its verification time. All listed timestamps are UTC on **2026-10-11**.
+
+| Group | Signer | Algorithm ID | Key / signature packet version | Commit SHA | GitHub API `verified` / `reason` | `verified_at` (UTC) |
+| --- | --- | --- | --- | --- | --- | --- |
+| RSA 2048 | Primary | 1 | v4 / v4 | [f23d0a3b2382a1265b5989f6544a0271aa702ddf](https://github.com/NORPG/AllTheThings/commit/f23d0a3b2382a1265b5989f6544a0271aa702ddf) | `true` / `valid` | `16:45:13` |
+| RSA 3072 | Primary | 1 | v4 / v4 | [374a08ae0c7a4a6b2fc69cc8d6374bde29fdcc47](https://github.com/NORPG/AllTheThings/commit/374a08ae0c7a4a6b2fc69cc8d6374bde29fdcc47) | `true` / `valid` | `16:45:13` |
+| RSA 4096 | Primary | 1 | v4 / v4 | [8704ad4c4dd7a8f4160e3ffd3e11a647fa3fa6ad](https://github.com/NORPG/AllTheThings/commit/8704ad4c4dd7a8f4160e3ffd3e11a647fa3fa6ad) | `true` / `valid` | `16:45:13` |
+| RSA 4096 | Signing subkey | 1 | v4 / v4 | [e50a892bfb46b2882e4e7a03abc66898c267b729](https://github.com/NORPG/AllTheThings/commit/e50a892bfb46b2882e4e7a03abc66898c267b729) | `true` / `valid` | `16:45:13` |
+| DSA 3072 | Primary | 17 | v4 / v4 | [3bb90feb6c559241bf06ee3c450397f03ab33525](https://github.com/NORPG/AllTheThings/commit/3bb90feb6c559241bf06ee3c450397f03ab33525) | `true` / `valid` | `16:45:13` |
+| ECDSA NIST P-256 | Primary | 19 | v4 / v4 | [5203f13463d9635706b51930a0943916f6b11b5f](https://github.com/NORPG/AllTheThings/commit/5203f13463d9635706b51930a0943916f6b11b5f) | `true` / `valid` | `16:45:13` |
+| ECDSA NIST P-384 | Primary | 19 | v4 / v4 | [e24eeaed2c183154727b85a706050d21b7c812fe](https://github.com/NORPG/AllTheThings/commit/e24eeaed2c183154727b85a706050d21b7c812fe) | `true` / `valid` | `16:45:13` |
+| ECDSA NIST P-521 | Primary | 19 | v4 / v4 | [3a7f72621d8068f0b879776c38fb7b54574af22d](https://github.com/NORPG/AllTheThings/commit/3a7f72621d8068f0b879776c38fb7b54574af22d) | `true` / `valid` | `16:45:13` |
+| Ed25519 | Primary | 22 | v4 / v4 | [9733f75fc4db0db4cd6379df24e957dce3d46552](https://github.com/NORPG/AllTheThings/commit/9733f75fc4db0db4cd6379df24e957dce3d46552) | `true` / `valid` | `16:45:14` |
+| Ed25519 | Signing subkey | 22 | v4 / v4 | [be45b21cbd3594e11d57c51b1282a886bb78ba10](https://github.com/NORPG/AllTheThings/commit/be45b21cbd3594e11d57c51b1282a886bb78ba10) | `true` / `valid` | `16:45:14` |
+| Ed448 | Primary | 22 | v5 / v5 | [05b40afb33eec6fa3a0ac0163be297de6bf222e8](https://github.com/NORPG/AllTheThings/commit/05b40afb33eec6fa3a0ac0163be297de6bf222e8) | `false` / `gpgverify_error` | `null` |
+
+Each primary key and signing subkey had an independently checked lifetime of **7,200 seconds from its own creation timestamp**. Keys were created between `16:14:14` and `16:14:25` UTC and expired between `18:14:14` and `18:14:25` UTC on 2026-10-11. Verification occurred before expiry. These short-lived experiment keys are not production-key examples.
+
+**Ed448 result and scope:** GitHub rejected the exact Ed448 public certificate using algorithm ID 22 and v5 key packets with: "We got an error adding your GPG key. Please verify the input is a valid GPG key." Its signed commit used a v5 signature packet and returned `verified=false`, `reason=gpgverify_error`, `verified_at=null`, despite passing local verification. GitHub documents `gpgverify_error` as a communication error involving its verification service; it does not identify a curve or packet-version cause. These observations do not establish that every Ed448 format is unsupported. Other Ed448 encodings and packet versions were not tested.
+
+**Selection limits:** Successful DSA 3072 verification does not recommend generating new DSA keys; the [OpenPGP key reference](#openpgp-signing-key-types-and-sizes) explains its legacy status. ElGamal and ECDH were not tested: they are encryption/key-agreement choices, so this matrix makes no commit-signing support claim for them. The results apply to these concrete certificates, signing roles, versions, and recorded observations, rather than guaranteeing every size, curve, packet format, or future platform behavior.
+
+Sources: [GitHub commit API verification fields and reasons](https://docs.github.com/en/rest/commits/commits#get-a-commit), [public test-account GPG key listing](https://api.github.com/users/NORPG/gpg_keys), and the exact commit links above. The API payloads matched the locally signed payloads, and its signature values matched the commits' `gpgsig` values.
 
 ## Appendix — GitHub SSH key policy and migration dates
 
@@ -552,6 +584,11 @@ This reference explains terms used in this commit signing guide. It adds no requ
 | HTTPS | Hypertext Transfer Protocol Secure: another encrypted Git transport. It is separate from the commit-signature method. |
 | OpenPGP / PGP | OpenPGP is a protocol for signed/encrypted data and keys, based on Pretty Good Privacy (PGP). |
 | GnuPG / GPG / gpg | GNU Privacy Guard implements OpenPGP. GPG is its common short name; `gpg` is its command. |
+| libgcrypt | The cryptographic library used by the tested GnuPG build. |
+| API | Application programming interface: the GitHub commit API reports signature-verification fields. |
+| OpenPGP certificate | Public material for the primary key, its identity and self-signatures, and any bound subkeys. |
+| Primary key / signing subkey | A certificate's main key and a bound subkey authorized to sign; they have separate fingerprints and lifetimes. |
+| Algorithm ID / packet version | The OpenPGP algorithm identifier and the format version of a typed data record. Key packets and signature packets have separately checked versions. |
 | Agent / ssh-agent | A background service that performs key operations for clients. Native ssh-agent is optional for these direct local-file routes. |
 | gpg-agent / pinentry | GnuPG's key service and passphrase prompt. Modern GnuPG uses gpg-agent as part of its architecture. |
 | Keychain | macOS credential storage that can remember a key's passphrase. This is optional and separate from using an SSH agent. |
