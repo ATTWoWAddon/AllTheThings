@@ -58,10 +58,6 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	CurrentCharacter = currentCharacter
 	AccountWideData = accountWideData
 	CharacterData = characterData
-	-- Identifiers are derived from names and realms; rebuild any saved pre-fix values.
-	-- TODO: Remove after Forever's official launch once legacy identifiers are rebuilt.
-	-- Add login identity-change invalidation before removing this loop.
-	for _,character in pairs(characterData) do character.Identifier = nil; end
 	local now = time();
 	if cachedTotalTimePlayed then
 		currentCharacter.totalTimePlayed = cachedTotalTimePlayed;
@@ -1481,17 +1477,19 @@ local deserializers = setmetatable({
 		return currentValue;
 	end,
 	--- Applies the received twelve-field summary to saved character identity and metadata.
-	--- Clears the derived Identifier so later lookups use the updated name and realm.
+	--- Clears the derived Identifier only when the received name or realm changes.
 	---@param field string Serialized field name (unused).
 	---@param currentValue any Value supplied by the generic deserializer (unused).
 	---@param data ATTCharacterSummaryFields Summary fields in wire order.
 	---@param character ATTAccountCharacter Saved character record to update.
 	Summary = function(field, currentValue, data, character)
+		if character.name ~= data[3] or character.realm ~= data[4] then
+			character.Identifier = nil;
+		end
 		character.battleTag = data[1];
 		character.text = data[2];
 		character.name = data[3];
 		character.realm = data[4];
-		character.Identifier = nil;
 		character.factionID = tonumber(data[5]);
 		character.lvl = tonumber(data[6]);
 		character.classID = tonumber(data[7]);
@@ -2578,6 +2576,7 @@ app:CreateWindow("Account Management", {
 		-- Delete some things I thought were going to be useful but ARENT THANKS BLIZZARD.
 		-- We do actually use gameAccountID, but its value changes between game sessions and is unreliable.
 		for guid,character in pairs(CharacterData) do
+			character.Identifier = NormalizeLinkedCharacterIdentifier(character.name, character.realm);
 			character.bnetAccountID = nil;
 			character.gameAccountID = nil;
 		end

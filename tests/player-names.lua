@@ -17,6 +17,8 @@
 -- which later cases call for player, party1 and raid3 using the same fake APIs.
 -- Assertions compare saved names/realms, colored UI text and API call counts,
 -- and ensure login preserves the existing spell and profession tables.
+-- Login stores native identity without managing Account Management's Identifier.
+-- linked-character-identifiers.lua tests rebuilding that cache before AutoSync.
 -- Loading with "fixtures" returns initialize without running the test cases;
 -- character-names.lua uses this mode to reuse the initialized player in tooltip tests.
 -- test() reports each case and collects assertion failures with tracebacks.
@@ -31,6 +33,7 @@
 ---@field raw? string Actual realm returned by GetRealmName; defaults to the spaced fixture realm.
 ---@field savedName? string Existing saved name used to verify login refresh.
 ---@field savedRealm? string Existing saved realm used to verify login refresh.
+---@field savedIdentifier? string Existing derived identifier left for Account Management to refresh.
 ---@field remoteUnit? string Additional permitted unit token, such as party1 or raid3.
 ---@field remoteFull? string Remote GetUnitName result, including a Forever surname or Retail/Classic realm suffix.
 ---@field remoteName? string Remote UnitFullName name result.
@@ -153,7 +156,7 @@ local function initialize(opts)
 	local oldSkills={[2259]={50,100}}
 	local savedName,savedRealm=opts.savedName or "OldFirst",opts.savedRealm or "OldSurname"
 	---@type ATTPlayerNameTestSavedCharacter
-	local saved={name=savedName,realm=savedRealm,text="|c"..color..savedName.."-"..savedRealm.."|r",Identifier="OldFirst-OldSurname",Spells={[10]=true},ActiveSkills=oldSkills}
+	local saved={name=savedName,realm=savedRealm,text="|c"..color..savedName.."-"..savedRealm.."|r",Identifier=opts.savedIdentifier or "OldFirst-OldSurname",Spells={[10]=true},ActiveSkills=oldSkills}
 	---@type table<string, ATTPlayerNameTestSavedCharacter>
 	local data={current=saved}
 	local realm=opts.raw
@@ -241,6 +244,46 @@ local function test(name,fn)
 	tests=tests+1; local ok,err=xpcall(fn,debug.traceback)
 	if ok then print("PASS "..name) else failures[#failures+1]=name.."\n"..err; print("FAIL "..name) end
 end
+
+test("login preserves the account cache when name and realm are unchanged",function()
+	local cachedIdentifier="Milo River-WinterAndRivers"
+	local app=initialize({
+		full="Milo River",first="Milo",second="River",
+		savedName="Milo River",savedRealm=rawRealm,savedIdentifier=cachedIdentifier,
+	})
+	equal(app.CurrentCharacter.Identifier,cachedIdentifier,"Unchanged identity retains its derived cache")
+	equal(app.CurrentCharacter.name,"Milo River","Complete name remains unchanged")
+	equal(app.CurrentCharacter.realm,rawRealm,"Actual realm remains unchanged")
+	equal(app.CurrentCharacter.Spells[10],true,"Known spell progress is retained")
+	equal(app.CurrentCharacter.ActiveSkills[2259][1],50,"Profession rank is retained")
+	equal(app.CurrentCharacter.ActiveSkills[2259][2],100,"Profession maximum is retained")
+end)
+
+test("login updates the native name without managing the account cache",function()
+	local app=initialize({
+		full="Milo Stone",first="Milo",second="Stone",
+		savedName="Milo River",savedRealm=rawRealm,savedIdentifier="Milo River-WinterAndRivers",
+	})
+	equal(app.CurrentCharacter.name,"Milo Stone","The changed native complete name replaces the saved name")
+	equal(app.CurrentCharacter.realm,rawRealm,"The unchanged realm is retained")
+	equal(app.CurrentCharacter.Identifier,"Milo River-WinterAndRivers","Account Management owns the derived cache")
+	equal(app.CurrentCharacter.Spells[10],true,"Known spell progress is retained")
+	equal(app.CurrentCharacter.ActiveSkills[2259][1],50,"Profession rank is retained")
+	equal(app.CurrentCharacter.ActiveSkills[2259][2],100,"Profession maximum is retained")
+end)
+
+test("login updates the native realm without managing the account cache",function()
+	local app=initialize({
+		full="Milo River",first="Milo",second="River",raw="Other Realm",
+		savedName="Milo River",savedRealm=rawRealm,savedIdentifier="Milo River-WinterAndRivers",
+	})
+	equal(app.CurrentCharacter.name,"Milo River","The unchanged complete name is retained")
+	equal(app.CurrentCharacter.realm,"Other Realm","The changed native realm replaces the saved realm")
+	equal(app.CurrentCharacter.Identifier,"Milo River-WinterAndRivers","Account Management owns the derived cache")
+	equal(app.CurrentCharacter.Spells[10],true,"Known spell progress is retained")
+	equal(app.CurrentCharacter.ActiveSkills[2259][1],50,"Profession rank is retained")
+	equal(app.CurrentCharacter.ActiveSkills[2259][2],100,"Profession maximum is retained")
+end)
 
 test("Forever keeps first and surname while repairing the saved surname realm",function()
 	checkIdentity({full="Milo River",first="Milo",second="River",savedName="Milo",savedRealm="River"},"Milo River",rawRealm)

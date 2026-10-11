@@ -15,7 +15,7 @@
 --    quantities, account notices and profession ranks.
 -- 4. Summary: accountSync() loads the actual serializer/deserializer from
 --    src/UI/Windows/Account Management.lua. Cases check the twelve wire fields,
---    complete names and clearing cached Identifier values after receiving data.
+--    complete names and clearing Identifier only after name or realm changes.
 --    player-names.lua is loaded in "fixtures" mode to obtain its initializer,
 --    so login output can also be passed through the tooltip and Summary paths.
 -- 5. Results: test() catches assertion failures and prints each case's result.
@@ -131,7 +131,7 @@
 --- Real twelve-field Summary functions exported by the generated account chunk.
 ---@class ATTTooltipTestSummaryAPI
 ---@field serialize fun(character: ATTNameTestCharacter): string Encodes the saved identity and metadata.
----@field deserialize fun(field: string, currentValue: unknown, data: ATTCharacterSummaryFields, character: ATTNameTestCharacter) Applies Summary fields and invalidates Identifier.
+---@field deserialize fun(field: string, currentValue: unknown, data: ATTCharacterSummaryFields, character: ATTNameTestCharacter) Applies Summary fields and clears Identifier only when name or realm changes.
 
 local root=arg[1] or "."
 --- Reads an addon or fixture source file relative to the repository root.
@@ -458,13 +458,43 @@ test("twelve-field Summary preserves complete native names and clears identity c
 	contains(text(f:run("known",{spellID=10})),"|cffaabbccMilo River|r")
 end)
 
-test("twelve-field Summary refresh clears an already-matching identity cache",function()
+test("twelve-field Summary refresh preserves an already-matching identity cache",function()
 	local sync=accountSync(); local original=character("Milo","River",{build=16001})
 	local fields=summaryFields(sync.serialize(original)); equal(#fields,12)
 	local result={name="Milo",realm="River",Identifier="Milo-River"}
-	sync.deserialize("Summary",nil,fields,result); equal(result.Identifier,nil)
+	sync.deserialize("Summary",nil,fields,result); equal(result.Identifier,"Milo-River")
 	local f=fixture(); result.Spells={[10]=true}; f.data.alt=result
 	contains(text(f:run("known",{spellID=10})),original.text)
+end)
+
+test("Summary clears Identifier after a name-only change",function()
+	local sync=accountSync()
+	local fields=summaryFields(sync.serialize(character("Milo River","Moon Guard",{build=16001})))
+	local result=character("Milo Stone","Moon Guard",{build=16001,Identifier="Milo Stone-MoonGuard"})
+	sync.deserialize("Summary",nil,fields,result)
+	equal(result.name,"Milo River"); equal(result.realm,"Moon Guard")
+	equal(result.Identifier,nil)
+end)
+
+test("Summary clears Identifier after a realm-only change",function()
+	local sync=accountSync()
+	local fields=summaryFields(sync.serialize(character("Milo River","Moon Guard",{build=16001})))
+	local result=character("Milo River","Silvermoon",{build=16001,Identifier="Milo River-Silvermoon"})
+	sync.deserialize("Summary",nil,fields,result)
+	equal(result.name,"Milo River"); equal(result.realm,"Moon Guard")
+	equal(result.Identifier,nil)
+end)
+
+test("Summary text-only refresh preserves the cached identity",function()
+	local sync=accountSync(); local result=character("Milo River","Moon Guard",{build=16001})
+	local fields=summaryFields(sync.serialize(result))
+	-- Hydrate all wire fields before changing only the display text.
+	sync.deserialize("Summary",nil,fields,result)
+	result.Identifier="Milo River-MoonGuard"
+	fields[2]="|cff00cc00Custom Display-Moon Guard|r"
+	sync.deserialize("Summary",nil,fields,result)
+	equal(result.name,"Milo River"); equal(result.realm,"Moon Guard")
+	equal(result.text,fields[2]); equal(result.Identifier,"Milo River-MoonGuard")
 end)
 
 print(("\n%d tests, %d failures"):format(tests,#failures))
