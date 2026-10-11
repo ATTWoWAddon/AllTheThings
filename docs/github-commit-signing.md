@@ -6,7 +6,7 @@
 
 Choose **A. Secure Shell (SSH) signing** (signatures made with SSH-format keys) or **B. GNU Privacy Guard (GPG) signing**. The `gpg` tool belongs to GNU Privacy Guard (GnuPG), an implementation of the OpenPGP protocol (based on Pretty Good Privacy, PGP) for signed and encrypted messages. For SSH, choose exactly one key source: new local key, existing local key, or external manager such as 1Password (an app that stores keys and authorizes their use). Local private files can be used without ssh-agent (a background program that handles key-use requests). The manager path instead requires its supported integration. Optional convenience defaults are kept separate.
 
-Signing verifies commit/tag content and its signing identity; it does not grant repository access. Authentication for clone/fetch/push is covered in the separate [**GitHub SSH Authentication Guide**](github-ssh-authentication.md). Signed commits can be transported over Hypertext Transfer Protocol Secure (HTTPS, encrypted web transport) or SSH.
+Signing verifies commit/tag content and its signing identity; it does not grant repository access. Authentication for clone/fetch/push is covered in the separate [**GitHub SSH Login Guide**](github-ssh-login.md). Signed commits can be transported over Hypertext Transfer Protocol Secure (HTTPS, encrypted web transport) or SSH.
 
 **Recommendation — Use separate SSH key pairs (linked public and private keys) for authentication/login and commit signing.** Separate keys let you revoke and rotate each independently and manage permissions and intended uses separately. This is a recommendation, not a GitHub requirement. The examples use `id_ed25519_github` for authentication and `id_ed25519_signing` for signing; apply the same separation when choosing existing keys or manager-held keys. GitHub also allows the same public key for both purposes, but register it separately as an **Authentication key** and a **Signing key** ([GitHub key registration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)).
 
@@ -49,7 +49,7 @@ flowchart TD
 | Ed25519 | Preferred for new keys with compatible tools. |
 | RSA | A compatibility alternative; use 4096 bits for a new key. |
 | ECDSA | Still available as an alternative. |
-| DSA (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
+| ~~DSA~~ (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
 
 Sources: [GitHub key generation and DSA SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
 
@@ -85,7 +85,25 @@ Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nv
 
 RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected generation route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
 
-**GPG/OpenPGP:** in [Step B2](#step-b2--reuse-a-suitable-secret-key-or-generate-one), `gpg --full-generate-key` lets you choose an algorithm and its available size or curve. Apply the same RSA 3072/4096 guidance. A primary key and signing or encryption subkeys may use different algorithms and sizes; choose the required strength for each role rather than matching raw bit counts. Git commit signing needs signing capability, not an encryption subkey. This guidance does not require replacing suitable existing keys. [GnuPG key management](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html).
+### OpenPGP signing key types and sizes
+
+For a new OpenPGP signing key, this guide recommends **at least 128 bits of classical security**. Key sizes and encoded public-key lengths do not compare algorithms directly. Suitable existing keys do not automatically need replacement.
+
+| Signing algorithm | Size or curve | Strength and selection guidance |
+| --- | --- | --- |
+| RSA | 2048, 3072, or 4096 bits | About 112 bits of security at 2048; about 128 at 3072. RSA 4096 adds margin, not 256-bit security. RSA 3072/4096 are compatibility choices; RFC 9580 discourages new RSA keys and requires at least 3072 bits when generating them. |
+| EdDSA with Ed25519 | Fixed parameters; 32-byte encoded public-key value | About 128 bits of security; a practical modern option with compatible tools and key formats. There is no larger Ed25519 key-size setting. |
+| EdDSA with Ed448 | Fixed parameters; 57-byte encoded public-key value | About 224 bits of security. GnuPG has supported Ed448 since 2.3, but GitHub's generic EdDSA listing does not guarantee Ed448 or every OpenPGP packet format works; test GitHub verification before choosing it. |
+| ECDSA | NIST P-256, P-384, or P-521; GnuPG names `nistp256`, `nistp384`, `nistp521` | About 128, 192, or 256 bits of security, respectively. Other curves, such as Brainpool or secp256k1, depend on the build; do not assume GitHub accepts every curve. |
+| DSA (legacy) | Historical 1024-, 2048-, or 3072-bit parameters | Do not generate new DSA keys: RFC 9580 forbids this, and FIPS 186-5 retains DSA only for verifying old signatures. GitHub still lists DSA for OpenPGP; this is distinct from its retired DSA SSH keys. |
+
+Sources: [GitHub's OpenPGP algorithm list](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key#supported-gpg-key-algorithms), [RFC 9580 algorithm and generation rules](https://www.rfc-editor.org/rfc/rfc9580.html#section-12.4), [Ed25519 and Ed448 parameters](https://www.rfc-editor.org/rfc/rfc8032.html#section-1), [NIST security-strength comparison](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
+
+**Choose signing capability, not an encryption algorithm.** ECDH with `cv25519` or `cv448`, and ElGamal, are encryption choices; they cannot sign Git commits. ElGamal is legacy, and RFC 9580 forbids generating new ElGamal keys. GnuPG's ML-KEM/Kyber hybrid options are also for encryption, not post-quantum commit signatures; 768/1024 identify parameter sets, not security bits. A GitHub list containing encryption algorithms does not make them signing algorithms. A signing-only setup needs no encryption subkey. Primary keys and subkeys may use different algorithms and strengths; assess each role instead of giving every key the same raw length.
+
+Check the actual installation with `gpg --version` and `gpg --with-colons --list-config curve`; generation menus vary by version. GnuPG's ability to create a key does not establish GitHub support for its curve or packet format. ASCII armor changes the text representation, not the underlying key format. Upload only public keys and verify a test signature on GitHub before relying on a less widely supported choice.
+
+Sources: [OpenPGP algorithm roles](https://www.rfc-editor.org/rfc/rfc9580.html#section-9.1), [GnuPG key management and available algorithms](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
 
 Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the policy below.
 
@@ -274,7 +292,7 @@ gpg --full-generate-key
 
 Choose a GitHub-supported, team-approved algorithm; RSA 4096 is a common compatibility choice. Menu choices vary by version. Enter your identity and matching email, a strong passphrase, and an expiry consistent with your policy. Secure an encrypted backup and revocation certificate.
 
-See [Choosing a key size](#choosing-a-key-size) for the recommended strength and size or curve choices.
+See [OpenPGP signing key types and sizes](#openpgp-signing-key-types-and-sizes) for the recommended strength and size or curve choices.
 
 ```sh
 gpg --list-secret-keys --keyid-format=long --with-subkey-fingerprint
@@ -363,7 +381,7 @@ ssh-add -l
 git config --local user.signingkey "$HOME/.ssh/id_ed25519_signing.pub"
 ```
 
-The `.pub` setting is intentional **only in this agent-backed variant**. The matching private key must be available through that agent. The agent can reduce repeated unlocking. macOS Keychain passphrase storage is another optional choice; Windows has a native ssh-agent service. Follow the companion authentication guide's optional platform instructions, substituting the signing key filename.
+The `.pub` setting is intentional **only in this agent-backed variant**. The matching private key must be available through that agent. The agent can reduce repeated unlocking. macOS Keychain passphrase storage is another optional choice; Windows has a native ssh-agent service. Follow the companion [GitHub SSH Login Guide](github-ssh-login.md) for optional platform instructions, substituting the signing key filename.
 
 **Expected result:** the selected agent can sign with the matching key. A terminal, GUI, Git Bash, Windows Subsystem for Linux (WSL, a Linux environment on Windows), and Windows OpenSSH may use different agents. Do not infer that one application's success proves all are configured.
 
@@ -478,6 +496,11 @@ This shared reference explains terms used across both guides. It adds no require
 | DSA | Digital Signature Algorithm: a legacy signature scheme. GitHub stopped supporting DSA SSH keys on 15 March 2022; this SSH restriction is distinct from its GPG-key support. |
 | ECDSA | Elliptic Curve Digital Signature Algorithm: a classical signature scheme whose curve determines its parameters, distinct from Ed25519. |
 | Ed25519 | A signature scheme in the Edwards-curve Digital Signature Algorithm family; the example key type in these guides. |
+| EdDSA / Ed448 | Edwards-curve Digital Signature Algorithm is a signature family. Ed448 is a fixed-parameter scheme in that family; tool support does not establish GitHub format compatibility. |
+| ECDH / cv25519 / cv448 | Elliptic Curve Diffie–Hellman is key agreement. The named GnuPG encryption curves do not provide commit-signing capability. |
+| ElGamal | A legacy encryption algorithm. RFC 9580 prohibits generating new OpenPGP ElGamal keys. |
+| Brainpool / secp256k1 | An elliptic-curve family and a named curve; availability and interoperability depend on the implementation and key format. |
+| RFC | Request for Comments: a technical specification series. RFC 9580 specifies the current OpenPGP protocol. |
 | SHA-1 / SHA-2 | Secure Hash Algorithm 1 is a hash algorithm; Secure Hash Algorithm 2 is a family. RSA/SHA-2 uses SHA-256/512; SSHSIG excludes RSA/SHA-1. |
 | SSHSIG | OpenSSH's signature format, used by Git's SSH signing route. It is separate from SSH transport authentication. |
 | QC | Quantum computing: computation using quantum-mechanical effects. The opening notice concerns sufficiently capable future quantum computers. |

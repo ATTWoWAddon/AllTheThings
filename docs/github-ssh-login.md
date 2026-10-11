@@ -1,16 +1,16 @@
-# GitHub Secure Shell (SSH) Authentication Guide
+# GitHub SSH Login Guide
 
-**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make authentication or commit signing post-quantum. See the post-quantum cryptography (PQC) policy below; keep platform-compatible keys until a supported migration is verified.
+This guide helps you connect to GitHub with an SSH key so you can clone, pull, and push repositories.
+
+**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make SSH authentication post-quantum. See the post-quantum cryptography (PQC) policy below; keep platform-compatible keys until a supported migration is verified.
 
 **Step-by-step draft · macOS and Windows 11 · Official documentation checked October 10, 2026**
 
-SSH provides an encrypted client/server connection for Git transport. Follow the numbered workflow for **one selected key source**: new local key, existing local key, or external manager such as 1Password (an app that stores keys and authorizes their use). Local-file paths need no ssh-agent (a background program that handles key-use requests). The manager path requires its own supported agent/client integration. Native agents, macOS Keychain (the system's protected credential store), global defaults, and GitHub's command-line interface (CLI) are not universal prerequisites.
+Follow the numbered workflow for **one selected key source**: new local key, existing local key, or external manager such as 1Password (an app that stores keys and authorizes their use). Local-file paths need no ssh-agent (a background program that handles key-use requests). The manager path requires its own supported agent/client integration. Native agents, macOS Keychain (the system's protected credential store), global defaults, and GitHub's command-line interface (CLI) are not universal prerequisites.
 
-Here, “login” means SSH authentication for Git clone/fetch/push, not website login or a remote shell. An Authentication key enables transport; a Signing key enables commit/tag verification. Reusing a public key for both requires registering it separately in both roles. See the companion [**GitHub Commit Signing Guide**](github-commit-signing.md) for signatures.
+**Recommendation — Use separate SSH key pairs (linked public and private keys) for login and commit signing.** Separate keys let you revoke and rotate each independently and manage their intended uses separately. This is a recommendation, not a GitHub requirement. For commit signing, see the companion [**GitHub Commit Signing Guide**](github-commit-signing.md).
 
-**Recommendation — Use separate SSH key pairs (linked public and private keys) for authentication/login and commit signing.** Separate keys let you revoke and rotate each independently and manage permissions and intended uses separately. This is a recommendation, not a GitHub requirement. The examples use `id_ed25519_github` for authentication and `id_ed25519_signing` for signing; apply the same separation when choosing existing keys or manager-held keys. GitHub also allows the same public key for both purposes, but register it separately as an **Authentication key** and a **Signing key** ([GitHub key registration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)).
-
-This is an unexecuted draft procedure. No keys or settings were changed and no repository was pushed. Commands are based on official docs, not testing on your computers. Replace uppercase placeholders with your values. See the [shared terminology appendix](#appendix--shared-terminology) for definitions.
+This is an unexecuted draft procedure. No keys or settings were changed and no repository was pushed. Commands are based on official docs, not testing on your computers. Replace uppercase placeholders with your values. See the [SSH login terminology appendix](#appendix--ssh-login-terminology) for definitions.
 
 ## Flow — Choose one SSH key source
 
@@ -46,7 +46,7 @@ flowchart TD
 | Ed25519 | Preferred for new keys with compatible tools. |
 | RSA | A compatibility alternative; use 4096 bits for a new key. |
 | ECDSA | Still available as an alternative. |
-| DSA (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
+| ~~DSA~~ (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
 
 Sources: [GitHub key generation and DSA SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
 
@@ -54,9 +54,7 @@ SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Has
 
 An `ssh-rsa` public-key prefix identifies RSA, not SHA-1. Use `rsa-sha2-256` or `rsa-sha2-512` for authentication ([RSA distinction](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)).
 
-Git commit signing is a separate use: the [SSH signature format (SSHSIG), a detached cryptographic proof](https://github.com/openssh/openssh-portable/blob/master/PROTOCOL.sshsig) requires RSA/SHA-2; historical SSH authentication exceptions do not apply to commit signatures.
-
-**Announced, not yet effective:** RSA uploads for either role require at least 3072 bits from **14 October 2026**. RSA/SHA-1 authentication brownouts: **4 November** and **9 December 2026**; permanent removal: **13 January 2027**. [Schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+**Announced, not yet effective:** New RSA SSH key uploads require at least 3072 bits from **14 October 2026**. RSA/SHA-1 authentication brownouts: **4 November** and **9 December 2026**; permanent removal: **13 January 2027**. [Schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
 
 For the RSA alternative in your selected new-local-key path:
 
@@ -82,23 +80,21 @@ Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nv
 
 RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected generation route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
 
-**GPG/OpenPGP:** for the companion guide's [GPG signing route](github-commit-signing.md#step-b2--reuse-a-suitable-secret-key-or-generate-one), `gpg --full-generate-key` lets you choose an algorithm and its available size or curve. Apply the same RSA 3072/4096 guidance. A primary key and signing or encryption subkeys may use different algorithms and sizes; choose the required strength for each role rather than matching raw bit counts. Git commit signing needs signing capability, not an encryption subkey. This guidance does not require replacing suitable existing keys. [GnuPG key management](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html).
-
 Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the policy below.
 
 ## Policy — Post-quantum cryptography (PQC)
 
 **Checked 10 October 2026.** This is a policy recommendation, not an extra required workflow step.
 
-Distinguish SSH transport **key exchange**, SSH **host/user authentication signatures**, and **Git commit signatures**. Hybrid PQ key exchange protects transport; it does not make RSA, ECDSA, or Ed25519 signatures post-quantum. Ed25519 is the current compatibility recommendation, not a quantum-resistance claim.
+Distinguish SSH transport **key exchange** from SSH **host/user authentication signatures**. Hybrid PQ key exchange protects transport; it does not make RSA, ECDSA, or Ed25519 signatures post-quantum. Ed25519 is the current compatibility recommendation, not a quantum-resistance claim.
 
 A key-encapsulation mechanism (KEM) establishes a shared secret. Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) is a post-quantum KEM; Module-Lattice-Based Digital Signature Algorithm (ML-DSA) creates post-quantum signatures, a different task.
 
 GitHub announced `sntrup761x25519-sha512` hybrid KEX for github.com and non-US data-residency regions, effective 17 September 2025 ([rollout](https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/)). GitHub schedules `mlkem768x25519-sha256` for **14 October 2026** on these endpoints; rollout remains future at this check ([schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). No endpoint negotiation was tested while preparing this guide.
 
-[OpenSSH 10.6](https://www.openssh.org/txt/release-10.6), released 6 October 2026, enables hybrid `ssh-mldsa44-ed25519` signatures. The sources checked here do not establish GitHub acceptance of that key type for authentication or commit signing; client capability alone is insufficient evidence.
+[OpenSSH 10.6](https://www.openssh.org/txt/release-10.6), released 6 October 2026, enables hybrid `ssh-mldsa44-ed25519` signatures. The sources checked here do not establish GitHub acceptance of that key type for SSH authentication; client capability alone is insufficient evidence.
 
-**Recommended policy:** use maintained SSH/Git clients, prefer compatible hybrid PQ KEX defaults, and confirm the actual endpoint's negotiated algorithm. Keep host-key verification and signature checks; do not globally suppress PQ warnings. Manage transport, authentication, and signing migrations separately. Before adopting PQ signatures, require explicit support from GitHub, clients, agents/hardware, and verifiers, then test recovery, revocation, and historical-signature verification.
+**Recommended policy:** use maintained SSH/Git clients, prefer compatible hybrid PQ KEX defaults, and confirm the actual endpoint's negotiated algorithm. Keep host-key verification and signature checks; do not globally suppress PQ warnings. Manage transport and authentication migrations separately. Before adopting PQ authentication signatures, require explicit support from GitHub, clients, and agents/hardware, then test host/user authentication, recovery, and revocation.
 
 ## Required workflow — Follow only your chosen key-source branch
 
@@ -165,7 +161,7 @@ Source: [1Password key management](https://www.1password.dev/ssh/manage-keys).
 
 ### Step 3 — Register the public Authentication key
 
-Go to **GitHub Settings → SSH and GPG keys → New SSH key**. Give it a device/purpose title, select **Authentication key**, and paste the whole public-key line. Manager users copy the public field from 1Password; the following clipboard commands are for local-file paths only.
+Open [GitHub SSH key settings](https://github.com/settings/keys) and choose **New SSH key**. Give it a device/purpose title, select **Authentication key**, and paste the whole public-key line. Manager users copy the public field from 1Password; the following clipboard commands are for local-file paths only.
 
 ```sh
 # macOS: PUBLIC key only
@@ -368,54 +364,47 @@ Sources: [GitHub SSH troubleshooting](https://docs.github.com/en/authentication/
 - Give keys clear device/purpose names. Revoke and replace affected keys if a device is lost or a key may be compromised.
 - Treat authentication, commit signing, repository authorization, and permission to publish as separate checks.
 
-## Appendix — Shared terminology
+## Appendix — SSH login terminology
 
-This shared reference explains terms used across both guides. It adds no required steps or tools.
+This reference explains terms used in this SSH login guide. It adds no required steps or tools.
 
 | Term | Plain-English meaning |
 | --- | --- |
 | Key pair | Two mathematically linked parts: a public key and a private key. |
 | Public key | The shareable half used to check signatures. Register it with GitHub for the intended key role. |
-| Private key / secret key | The protected half used to sign or prove key possession. Keep it private; never upload it to GitHub. |
+| Private key | The protected half used to sign or prove key possession. Keep it private; never upload it to GitHub. |
 | Passphrase | A secret that unlocks a protected private key. It is separate from a GitHub account password. |
 | Fingerprint | A short digest identifying a public key. Compare it through a trusted source before trusting the key. |
 | Authentication | Proving which account a connection belongs to. GitHub SSH authentication does not provide website login or a remote shell. |
 | Authorization | Permission to access a repository or perform an action. Authentication alone does not grant this permission. |
-| Signing / signature | Using a private key to attach a cryptographic check to specific data, such as a commit or tag. |
-| Verification | Checking a signature with its public key and applicable identity/trust rules. It does not assess code safety or intent. |
-| Verified badge | GitHub accepted the signature under its verification rules. This does not prove safe/correct code or the signer's good intentions. |
-| Authentication key / Signing key | Separate GitHub registration roles for SSH access and signature verification. A reused public key must be registered for each role. |
-| SSH / OpenSSH | Secure Shell is the connection protocol. OpenSSH supplies the SSH client, key tools, and SSH signing tools used here. |
-| HTTPS | Hypertext Transfer Protocol Secure: another encrypted Git transport. It is separate from the commit-signature method. |
-| OpenPGP / PGP | OpenPGP is a protocol for signed/encrypted data and keys, based on Pretty Good Privacy (PGP). |
-| GnuPG / GPG / gpg | GNU Privacy Guard implements OpenPGP. GPG is its common short name; `gpg` is its command. |
+| Signing / signature | Using a private key to attach a cryptographic check to specific data. SSH uses signatures to prove possession of host and user keys. |
+| Verification | Checking a signature with its public key and applicable identity/trust rules. Host-key verification checks the server identity; it does not grant repository access. |
+| Authentication key | The GitHub registration role for an SSH key used to access repositories. |
+| SSH / OpenSSH | Secure Shell is the connection protocol. OpenSSH supplies the SSH client and key tools used here. |
+| HTTPS | Hypertext Transfer Protocol Secure: another encrypted Git transport. |
 | Agent / ssh-agent | A background service that performs key operations for clients. Native ssh-agent is optional for these direct local-file routes. |
-| gpg-agent / pinentry | GnuPG's key service and passphrase prompt. Modern GnuPG uses gpg-agent as part of its architecture. |
 | Keychain | macOS credential storage that can remember a key's passphrase. This is optional and separate from using an SSH agent. |
-| 1Password | An external key manager with SSH-agent and signing integrations. Its supported integration is required only when choosing that key-source route. |
+| 1Password | An external key manager with SSH-agent integration. Its supported integration is required only when choosing that key-source route. |
 | Key size / security strength | Parameter length versus estimated resistance to attacks. Compare security strength across algorithms, not raw key lengths. |
 | RSA | Rivest–Shamir–Adleman: a public-key algorithm usable for authentication and signing. Its key format does not determine its signature hash. |
-| DSA | Digital Signature Algorithm: a legacy signature scheme. GitHub stopped supporting DSA SSH keys on 15 March 2022; this SSH restriction is distinct from its GPG-key support. |
+| ~~DSA~~ | Digital Signature Algorithm: a legacy signature scheme. GitHub stopped supporting DSA SSH keys on 15 March 2022. |
 | ECDSA | Elliptic Curve Digital Signature Algorithm: a classical signature scheme whose curve determines its parameters, distinct from Ed25519. |
-| Ed25519 | A signature scheme in the Edwards-curve Digital Signature Algorithm family; the example key type in these guides. |
-| SHA-1 / SHA-2 | Secure Hash Algorithm 1 is a hash algorithm; Secure Hash Algorithm 2 is a family. RSA/SHA-2 uses SHA-256/512; SSHSIG excludes RSA/SHA-1. |
-| SSHSIG | OpenSSH's signature format, used by Git's SSH signing route. It is separate from SSH transport authentication. |
+| Ed25519 | A signature scheme in the Edwards-curve Digital Signature Algorithm family; the example key type in this guide. |
+| SHA-1 / SHA-2 | Secure Hash Algorithm 1 is a hash algorithm; Secure Hash Algorithm 2 is a family. RSA/SHA-2 uses SHA-256/512; an `ssh-rsa` public-key prefix alone does not imply SHA-1. |
 | QC | Quantum computing: computation using quantum-mechanical effects. The opening notice concerns sufficiently capable future quantum computers. |
 | PQ / PQC | Post-quantum / post-quantum cryptography: methods designed to resist quantum-computer attacks, without requiring a quantum computer to use them. |
 | Hybrid | A combination of classical and post-quantum methods. Hybrid key exchange and hybrid signatures serve different purposes. |
-| KEX | Key exchange: the SSH process that establishes session secrets to protect a connection. It does not sign Git commits. |
+| KEX | Key exchange: the SSH process that establishes session secrets to protect a connection. It is separate from authentication signatures. |
 | KEM | Key-encapsulation mechanism: public-key algorithms that let two parties establish a shared secret. It is not a digital signature. |
 | ML-KEM | Module-Lattice-Based Key-Encapsulation Mechanism: a post-quantum KEM used in the named hybrid SSH key exchange. |
 | ML-DSA | Module-Lattice-Based Digital Signature Algorithm: a post-quantum signature scheme. OpenSSH client support does not establish GitHub acceptance. |
 | NIST | National Institute of Standards and Technology: the U.S. standards body publishing the cited cryptography standards and guidance. |
 | SSO / IP | Single sign-on connects organization login to an identity provider. Internet Protocol addresses may also be subject to access restrictions. |
-| CLI / IDE / GUI | Command-line interface / integrated development environment / graphical user interface: different ways to run tools; they may select different clients. |
+| CLI / GUI | Command-line interface / graphical user interface: different ways to run tools; they may select different clients. |
 | WSL | Windows Subsystem for Linux: a Linux environment on Windows that can have its own clients and agents. |
-| UTF-8 / UTF-16 / ASCII | Text encodings: 8-bit or 16-bit Unicode Transformation Format, and American Standard Code for Information Interchange. Use the encoding required by the trust-file instructions. |
-| PR / CI | Pull request: a proposed change for review. Continuous integration: automated checks that repository events may trigger. |
-| URL / ID | Uniform Resource Locator: an address. ID: an identifier. |
-| TTY / terminal | TTY comes from teletype and names a terminal device. `GPG_TTY` identifies the terminal for GnuPG's passphrase interaction. |
+| CI | Continuous integration: automated checks that repository events may trigger. |
+| URL | Uniform Resource Locator: an address. |
 
 Standards terminology: [NIST ML-KEM](https://csrc.nist.gov/pubs/fips/203/final), [NIST ML-DSA](https://csrc.nist.gov/pubs/fips/204/final).
 
-DSA support scope: [GitHub SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [GitHub supported GPG-key algorithms](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key#supported-gpg-key-algorithms).
+DSA SSH support: [GitHub SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
