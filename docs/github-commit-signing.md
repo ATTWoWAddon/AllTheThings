@@ -48,10 +48,12 @@ flowchart TD
 | --- | --- |
 | Ed25519 | Preferred for new keys with compatible tools. |
 | RSA | A compatibility alternative; use 4096 bits for a new key. |
-| ECDSA | Still available as an alternative. |
+| ECDSA | Available for local-file use with compatible tools; unsupported by 1Password. |
 | ~~DSA~~ (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
 
 Sources: [GitHub key generation and DSA SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+
+**1Password scope (checked 11 October 2026):** This table lists general SSH choices. 1Password can generate and import only Ed25519 or RSA **2048-, 3072-, or 4096-bit** keys; other RSA lengths and key types are unsupported. For new manager-held keys, choose Ed25519 or RSA 3072/4096 to follow this guide's strength recommendation. [1Password supported SSH key types](https://www.1password.dev/ssh/manage-keys#supported-ssh-key-types).
 
 SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Hash Algorithm 1) is an older hash function.
 
@@ -179,7 +181,7 @@ Sources: [key generation](https://docs.github.com/en/authentication/connecting-t
 
 **Path 2 — Use an existing local key.** Skip all generation commands. Confirm its private-file path, matching public file, fingerprint, permissions, and passphrase availability. Substitute these paths throughout the local-file examples. Expected: the existing identity is reused unchanged.
 
-**Path 3 — Use an external key manager such as 1Password.** Open and unlock the desktop app, then select an existing SSH Key item. To create one there instead: **New Item → SSH Key → Add Private Key → Generate a New Key → choose Ed25519 → Generate → Save**. Keep the private key in the manager. Copy its **public key** and record the fingerprint for Step A3. Expected: a manager-held key, without exporting a private file. Continue through Step A4's manager branch, not its direct-file commands.
+**Path 3 — Use an external key manager such as 1Password.** Open and unlock the desktop app, then select an existing supported Ed25519 or RSA SSH Key item. To create one there instead: **New Item → SSH Key → Add Private Key → Generate a New Key → choose Ed25519 → Generate → Save**. Keep the private key in the manager. Copy its **public key** and record the fingerprint for Step A3. Expected: a manager-held key, without exporting a private file. Continue through Step A4's manager branch, not its direct-file commands.
 
 Source: [1Password key creation and public-key sharing](https://www.1password.dev/ssh/manage-keys).
 
@@ -222,7 +224,7 @@ On Windows, if multiple OpenSSH installations cause ambiguity, select the verifi
 
 Sources: [Git user.signingKey](https://git-scm.com/docs/git-config#Documentation/git-config.txt-usersigningKey), [OpenSSH signature key inputs](https://man.openbsd.org/ssh-keygen).
 
-**Manager path 3 — 1Password:** enable the supported 1Password SSH integration and open the chosen SSH Key item → **Configure Commit Signing**. Use **Copy Snippet** for the intended repository, or **Edit Automatically** only if you deliberately want global configuration. Keep its `op-ssh-sign` integration rather than setting a local private-file path. Review any copied snippet: signer, format, and key selection belong to this route; `commit.gpgsign=true` is only the optional auto-sign default, so explicit `-S` remains sufficient without it. Approve the signing request through 1Password when prompted. Expected: Git invokes the manager-backed signer for the selected key. No private-key export is needed.
+**Manager path 3 — 1Password:** this integration signs with supported SSH keys; it does not manage OpenPGP private keys. Enable the supported 1Password SSH integration and open the chosen SSH Key item → **Configure Commit Signing**. Use **Copy Snippet** for the intended repository, or **Edit Automatically** only if you deliberately want global configuration. Keep its `op-ssh-sign` integration rather than setting a local private-file path. Review any copied snippet: signer, format, and key selection belong to this route; `commit.gpgsign=true` is only the optional auto-sign default, so explicit `-S` remains sufficient without it. Approve the signing request through 1Password when prompted. Expected: Git invokes the manager-backed signer for the selected key. No private-key export is needed.
 
 Sources: [1Password signing setup](https://www.1password.dev/ssh/git-commit-signing), [1Password SSH agent](https://www.1password.dev/ssh/agent).
 

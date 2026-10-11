@@ -45,10 +45,12 @@ flowchart TD
 | --- | --- |
 | Ed25519 | Preferred for new keys with compatible tools. |
 | RSA | A compatibility alternative; use 4096 bits for a new key. |
-| ECDSA | Still available as an alternative. |
+| ECDSA | Available for local-file use with compatible tools; unsupported by 1Password. |
 | ~~DSA~~ (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
 
 Sources: [GitHub key generation and DSA SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+
+**1Password scope (checked 11 October 2026):** This table lists general SSH choices. 1Password can generate and import only Ed25519 or RSA **2048-, 3072-, or 4096-bit** keys; other RSA lengths and key types are unsupported. For new manager-held keys, choose Ed25519 or RSA 3072/4096 to follow this guide's strength recommendation. [1Password supported SSH key types](https://www.1password.dev/ssh/manage-keys#supported-ssh-key-types).
 
 SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Hash Algorithm 1) is an older hash function.
 
@@ -154,7 +156,7 @@ Source: [GitHub key generation](https://docs.github.com/en/authentication/connec
 
 **Path 2 — Use an existing local key.** Skip generation. Confirm the private path, matching public key and fingerprint, safe permissions, and available passphrase. Substitute the existing paths in the examples. Expected: reuse the existing key without overwriting it.
 
-**Path 3 — Use an external key manager such as 1Password.** Open/unlock the desktop app and choose an existing SSH Key item. If you need a new manager-held key: **New Item → SSH Key → Add Private Key → Generate a New Key → Ed25519 → Generate → Save**. Copy only its public field for Step 3; retain the private key in 1Password. Expected: a selected manager-held identity. Continue through Step 4's manager setup/test branch, not its direct-file command.
+**Path 3 — Use an external key manager such as 1Password.** Open/unlock the desktop app and choose an existing supported Ed25519 or RSA SSH Key item. If you need a new manager-held key: **New Item → SSH Key → Add Private Key → Generate a New Key → Ed25519 → Generate → Save**. Copy only its public field for Step 3; retain the private key in 1Password. Expected: a selected manager-held identity. Continue through Step 4's manager setup/test branch, not its direct-file command.
 
 Source: [1Password key management](https://www.1password.dev/ssh/manage-keys).
 
