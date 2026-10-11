@@ -235,7 +235,8 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 local knownBy = {};
---- Text and styling for one appended tooltip line.
+--- Left and right text, color, and wrapping options for one appended tooltip row.
+--- Used by collection information processors and synchronization queue tooltips.
 ---@class ATTTooltipLine
 ---@field left? string Left-column text.
 ---@field right? string Right-column text.
@@ -246,7 +247,8 @@ local knownBy = {};
 ---@field b? number Blue color component.
 ---@field a? number Alpha color component.
 
---- Collection fields used to find characters that know a thing.
+--- Collection type, ID, character cache, and tracking flags supplied to KnownBy.
+--- Selects which saved collection records the character-list processor consults.
 ---@class ATTKnownByReference
 ---@field knownByID? number Collection ID overriding the spell ID.
 ---@field spellID? SpellID Spell to find in character collection caches.
@@ -255,7 +257,8 @@ local knownBy = {};
 ---@field perCharacter? boolean Whether this thing is tracked per character.
 ---@field CACHE? string Saved character cache containing this collection.
 
---- Descriptor for an information type registered with the settings page.
+--- Identifier, localized label, and display priority for a registered information type.
+--- Used by the Interface Information page to configure and order tooltip information.
 ---@class ATTInformationType
 ---@field informationTypeID string Registered information type identifier.
 ---@field text? string Localized label for the information type.

@@ -311,7 +311,8 @@ local function CamelCaseName(str)
         return first:upper() .. rest;
     end);
 end
---- Saved character identity and metadata exchanged by account synchronization.
+--- Saved character record containing identity, a derived Identifier, and account-sync metadata.
+--- Read and updated by Summary serialization and linked-character lookups.
 ---@class ATTAccountCharacter: ATTCharacterIdentity
 ---@field Identifier? string Cached normalized name-realm identifier.
 ---@field battleTag? string Battle tag of the character's account.
@@ -1383,7 +1384,8 @@ local wrappers = {
 		end,
 	}
 }
---- Serialized character summary, with each string stored in its wire position.
+--- Fixed twelve-string array used to encode and decode account-sync Summary messages.
+--- Positions retain the wire order below; numeric values stay strings until deserialized.
 ---@class ATTCharacterSummaryFields
 ---@field [1] string Battle tag.
 ---@field [2] string Character display text, including class colors.
@@ -2036,7 +2038,8 @@ local function OnClickForLinkedAccount(row, button)
 	end
 	return true;
 end
---- Queue data shared by the progress, tooltip, and cancellation callbacks.
+--- Pending synchronization item containing a transport key, display label, and chunk progress.
+--- Shared by queue display, progress tooltips, and cancellation callbacks.
 ---@class ATTSyncQueueItem
 ---@field datalink? ATTAccountTransportKey Key used by the pending send and receive queues.
 ---@field text? string Display name used in the cancellation prompt.
@@ -2044,7 +2047,8 @@ end
 ---@field total? number Total number of send and receive chunks.
 ---@field visible? boolean Whether the queue item is displayed.
 
---- Window row displaying a synchronization queue item.
+--- ATT window row whose ref points to the synchronization item being displayed.
+--- Click handling uses that item's transport key to cancel pending synchronization.
 ---@class ATTSyncQueueRow: ATTRowClass
 ---@field ref ATTSyncQueueItem Queue data associated with the row.
 

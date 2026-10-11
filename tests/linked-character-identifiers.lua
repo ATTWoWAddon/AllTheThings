@@ -1,16 +1,93 @@
 -- Standalone regression tests for linked character name and realm identifiers.
--- Run from the repository root: lua .contrib/tests/linked-character-identifiers.lua [repository-root]
+-- Run from the repository root: lua tests/linked-character-identifiers.lua [repository-root]
+--
+-- Test architecture:
+-- Loads the actual normalizer and its name/realm helpers from Account Management.
+-- Small fixtures supply client flavor and the current realm without loading the addon.
+-- Input arrays retain an explicit count when a trailing realm argument is nil.
+-- This distinguishes an explicitly missing realm from an omitted realm argument.
+-- The check helper calls the normalizer and verifies both returned values:
+-- the normalized name-realm identifier and the complete name without the realm.
+-- Cases cover full names, delimiters, spacing, invalid inputs, and Forever names.
+--
+-- A second extracted section registers the actual SavedVariables startup callback.
+-- A registration mock captures it, and a fixed clock avoids requesting play time.
+-- Initialization assertions verify that stale identifier caches are cleared while
+-- names, realms, learned-spell progress, and existing play-time data stay intact.
+-- A failed assertion stops the run with a message; success prints the check count.
+
+--- Record-shaped values deliberately rejected as names or explicit realms.
+---@class ATTIdentifierTestRecordInput
+---@field name? string Name carried by a malformed table input.
+
+--- Valid strings and transport IDs mixed with intentionally invalid argument values.
+---@alias ATTIdentifierTestInput ATTAccountTransportKey|boolean|ATTIdentifierTestRecordInput|nil
+
+--- Packed normalizer inputs, including an explicit count when the last argument is nil.
+---@class ATTIdentifierTestArguments
+---@field [1]? ATTIdentifierTestInput Candidate name or combined name-realm identifier.
+---@field [2]? ATTIdentifierTestInput Optional explicit realm, including invalid test values.
+---@field n? integer Argument count used to preserve an explicit trailing nil.
+
+--- Client flavor exposed to the extracted identifier helper closures.
+---@class ATTIdentifierTestApp
+---@field IsForever boolean Whether the fixture represents a Forever client.
+
+--- Current-realm context, allowing malformed cached realm values for rejection tests.
+---@class ATTIdentifierTestCurrentCharacter
+---@field realm? string|number Realm fallback; numbers deliberately exercise invalid data.
+
+--- Production normalizer accepting packed test inputs and returning the identifier and complete name.
+---@alias ATTIdentifierTestNormalizer fun(identifier: ATTIdentifierTestInput, ...: ATTIdentifierTestInput): string?, string?
+
+--- Loaded production chunk binding a client flavor and optional current-realm context.
+---@alias ATTIdentifierTestNormalizerFactory fun(app: ATTIdentifierTestApp, currentCharacter: ATTIdentifierTestCurrentCharacter?): ATTIdentifierTestNormalizer
+
+--- Learned-spell flags whose contents and table identity must survive cache invalidation.
+---@alias ATTIdentifierTestSpellFlags table<integer, boolean>
+
+--- Saved characters supplied to the extracted initialization callback.
+---@alias ATTIdentifierTestCharacterData table<string, ATTNameTestCharacter>
+
+--- Empty account-wide state retained by the initialization fixture.
+---@class ATTIdentifierTestAccountWideData
+
+--- Actual initialization callback updating saved identifier caches and play-time metadata.
+---@alias ATTIdentifierTestSavedVariablesHandler fun(currentCharacter: ATTNameTestCharacter, accountWideData: ATTIdentifierTestAccountWideData, characterData: ATTIdentifierTestCharacterData)
+
+--- Event-registration mock capturing the actual SavedVariables callback.
+---@class ATTIdentifierTestInitializationApp
+---@field AddEventHandler fun(eventName: string, callback: ATTIdentifierTestSavedVariablesHandler) Captures a callback; the event name is unused.
+
+---@type string
 local root = arg[1] or ".";
+--- Uses the available Lua unpack API without losing explicitly packed nil arguments.
 local unpackValues = table.unpack or unpack;
 local file = assert(io.open(root .. "/src/UI/Windows/Account Management.lua", "rb"));
 local source = file:read("*a"):gsub("\r\n", "\n");
 file:close();
 local helpers = assert(source:match("(local function TrimString.-)local function AddCharacterLookup"), "Cannot locate linked character identifier helpers");
-local chunk = assert((loadstring or load)("local app, CurrentCharacter = ...\nlocal GetCharacterWhisperTarget;\n" .. helpers .. "\nreturn NormalizeLinkedCharacterIdentifier", "@actual-linked-character-identifiers"));
+--- Loads the actual production helpers and binds their client and current-character context.
+---@type ATTIdentifierTestNormalizerFactory
+local chunk = assert((loadstring or load)([[
+---@type ATTIdentifierTestApp, ATTIdentifierTestCurrentCharacter?
+local app, CurrentCharacter = ...
+---@type fun(identifier: ATTAccountTransportKey): ATTAccountTransportKey
+local GetCharacterWhisperTarget;
+]] .. helpers .. "\nreturn NormalizeLinkedCharacterIdentifier", "@actual-linked-character-identifiers"));
+---@type ATTIdentifierTestApp
 local normalApp = { IsForever = false };
+---@type ATTIdentifierTestCurrentCharacter
 local currentCharacter = { realm = "Realm With Spaces" };
+---@type ATTIdentifierTestNormalizer
 local normalize = chunk(normalApp, currentCharacter);
 local tests = 0;
+--- Runs a production normalizer and checks both results without accepting thrown errors.
+---@param label string Case label included in assertion failures.
+---@param arguments ATTIdentifierTestArguments Packed call inputs; n preserves explicit nil realms.
+---@param fullName string? Expected normalized name-realm identifier, or nil for rejected inputs.
+---@param shortName string? Expected complete normalized name without the realm, or nil for rejected inputs.
+---@param fn ATTIdentifierTestNormalizer? Alternate bound normalizer; nil uses the default fixture.
 local function check(label, arguments, fullName, shortName, fn)
 	local ok, actualFull, actualShort = pcall(fn or normalize, unpackValues(arguments, 1, arguments.n or #arguments));
 	assert(ok, label .. " threw: " .. tostring(actualFull));
@@ -63,6 +140,7 @@ check("blank current realm", {"Alice"}, nil, nil, chunk(normalApp, {realm=" \t "
 check("explicit realm without current character", {"first last", "Realm"}, "First Last-Realm", "First Last", chunk(normalApp, nil));
 
 -- Forever native display names follow the same full-name/realm contract.
+---@type ATTIdentifierTestNormalizer
 local forever = chunk({IsForever=true}, currentCharacter);
 check("Forever native display fullname", {"first last"}, "First Last-RealmWithSpaces", "First Last", forever);
 check("Forever qualified native fullname", {"first last-Moon Guard"}, "First Last-MoonGuard", "First Last", forever);
@@ -77,15 +155,26 @@ tests = tests + 1;
 -- Exercise the actual SavedVariables initialization to invalidate disposable parsed identifiers.
 local initSource = assert(source:match('(app.AddEventHandler%("OnSavedVariablesAvailable".-\nend%))'), "Cannot locate account SavedVariables initialization");
 local initProgram = [[
+---@type ATTIdentifierTestSavedVariablesHandler?
 local handler;
+---@type ATTIdentifierTestInitializationApp
 local app = { AddEventHandler = function(_, fn) handler = fn; end };
+---@type ATTNameTestCharacter?, ATTIdentifierTestAccountWideData?, ATTIdentifierTestCharacterData?, number?, boolean?
 local CurrentCharacter, AccountWideData, CharacterData, cachedTotalTimePlayed, suppressTimePlayed;
+--- Returns a fixed timestamp so existing play-time data stays current during initialization.
+---@return integer now Constant timestamp in seconds.
 local time = function() return 1000; end;
+--- Fails if initialization requests play time despite the fixture's current recorded timestamp.
 local RequestTimePlayed = function() error("Unexpected play-time request"); end;
 ]] .. initSource .. "\nreturn handler";
+--- Captured production startup callback invoked with the saved fixture records.
+---@type ATTIdentifierTestSavedVariablesHandler
 local initialize = assert((loadstring or load)(initProgram, "@actual-account-saved-variables"))();
+---@type ATTIdentifierTestSpellFlags
 local progress = { [123] = true };
+---@type ATTNameTestCharacter
 local repaired = { name="First Last", realm="Realm With Spaces", Identifier="First-Last", Spells=progress, totalTimePlayed=12, lastTimePlayedRecorded=1000 };
+---@type ATTNameTestCharacter
 local other = { name="Alice", realm="Other Realm", Identifier="Alice-OtherRealm", Spells={[456]=true} };
 initialize(repaired, {}, { current=repaired, other=other });
 assert(repaired.Identifier == nil and other.Identifier == nil, "Saved identifier caches must be rebuilt");

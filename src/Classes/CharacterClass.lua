@@ -211,7 +211,8 @@ local function CacheCharacterDataFromATTCache(_t, unit)
 		end
 	end
 end
---- Complete character names, actual realms and UI display text stored separately.
+--- Complete native name, separate realm, GUID, display text, and client build for a character.
+--- Shared by saved character records, unit caches, and tooltip name formatting.
 ---@class ATTCharacterIdentity
 ---@field name? string Complete native character name, including Forever surnames, without a realm suffix.
 ---@field realm? string Actual realm reported by the client, stored separately from the name.
@@ -219,7 +220,8 @@ end
 ---@field text? string Saved UI display text, normally the complete name and realm with optional class colors.
 ---@field build? integer Client build that last populated the saved identity.
 
---- Optional class, race, and icon data stored for a unit lookup.
+--- Character identity plus optional class, race, and icon fields populated by unit or GUID lookups.
+--- Supplies cached metadata for unit display names and tooltips.
 ---@class ATTUnitIdentityCache: ATTCharacterIdentity
 ---@field className? string Localized class name.
 ---@field classFile? string Class token used by class metadata and colors.
