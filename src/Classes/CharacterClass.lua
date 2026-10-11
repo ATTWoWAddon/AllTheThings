@@ -7,6 +7,17 @@ local Colorize = app.Modules.Color.Colorize;
 local C_CreatureInfo = C_CreatureInfo;
 local RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace
 	= RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace;
+local RegionalUniqueNamesEnabled = RegionalUniqueNamesEnabled;
+-- Select native name semantics once for this module.
+local HasRegionalUniqueNames = RegionalUniqueNamesEnabled and RegionalUniqueNamesEnabled() or false;
+local NativeUnitName = HasRegionalUniqueNames and GetUnitName or UnitName;
+--- Returns the native character name using the API selected at module initialization.
+--- Regional names retain surnames through GetUnitName; traditional names use UnitName's first result.
+---@param unit string Unit token such as "player", "party1", or "raid3"; GUIDs are handled separately.
+---@return string? name Character name without a realm suffix, or nil when the unit cannot be resolved. Realm is obtained separately.
+local function GetNativeUnitName(unit)
+	return (NativeUnitName(unit));
+end
 local math_floor, rawget, rawset, setmetatable, ipairs
 	= math.floor, rawget, rawset, setmetatable, ipairs
 
@@ -211,6 +222,29 @@ local function CacheCharacterDataFromATTCache(_t, unit)
 		end
 	end
 end
+--- Complete native name, separate realm, GUID, display text, and client build for a character.
+--- Shared by saved character records, unit caches, and tooltip name formatting.
+---@class ATTCharacterIdentity
+---@field name? string Complete native character name, including Forever surnames, without a realm suffix.
+---@field realm? string Actual realm reported by the client, stored separately from the name.
+---@field guid? string Character GUID when available.
+---@field text? string Saved UI display text, normally the complete name and realm with optional class colors.
+---@field build? integer Client build that last populated the saved identity.
+
+--- Character identity plus optional class, race, and icon fields populated by unit or GUID lookups.
+--- Supplies cached metadata for unit display names and tooltips.
+---@class ATTUnitIdentityCache: ATTCharacterIdentity
+---@field className? string Localized class name.
+---@field classFile? string Class token used by class metadata and colors.
+---@field classID? ClassID Base character class ID.
+---@field race? string Localized race name.
+---@field raceID? RaceID Character race ID.
+---@field icon? string|FileID Class icon path or file ID.
+
+--- Populate cached identity, class, and race data from a GUID or unit token.
+--- Resolve native names and realms according to regional naming semantics.
+---@param _t ATTUnitIdentityCache Character cache record to populate.
+---@param unit string GUID or unit token to query.
 local function CacheCharacterDataFromAPIs(_t, unit)
 	local name, realm, guid, className, classFile, classID, raceName, raceFile, raceID;
 	local _,_,s3 = ("-"):split(unit)
@@ -220,7 +254,11 @@ local function CacheCharacterDataFromAPIs(_t, unit)
 		className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
 		if classFile then classID = ClassInfoByClassFile[classFile].classID; end
 	else
-		name, realm = UnitFullName(unit)
+		name = GetNativeUnitName(unit);
+		realm = GetRealmName();
+		if unit ~= "player" and not HasRegionalUniqueNames then
+			realm = select(2, UnitFullName(unit)) or realm;
+		end
 		if name then
 			guid = UnitGUID(unit);
 			if guid and app.WOWAPI.issecretvalue(guid) then guid = nil; end

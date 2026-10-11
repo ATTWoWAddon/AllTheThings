@@ -3386,6 +3386,7 @@ createLocalizationString = function(data)
 			end
 		end
 	end
+	return "~L." .. data.constant;
 end
 end)();
 

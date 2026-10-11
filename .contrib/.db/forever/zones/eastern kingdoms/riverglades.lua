@@ -172,7 +172,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
-			n(263384, { -- Mister Graphed
+			n(263384, { -- Mister Graphed <Agent of the Black Market>
 				coord = { 78.1, 51.9, MAP.RIVERGLADES },
 				groups = {
 					i(271871, { -- Gift of Galloping

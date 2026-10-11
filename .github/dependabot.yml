@@ -5,6 +5,9 @@ version: 2
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
+    labels:
+      - "type:dependencies"
+      - "area:github-actions"
     schedule:
       interval: "daily"
     cooldown:

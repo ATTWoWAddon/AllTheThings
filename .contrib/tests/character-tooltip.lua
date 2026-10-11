@@ -30,6 +30,7 @@ local wipearray = app.wipearray
 local Colorize = app.Modules.Color.Colorize
 local GetRelativeValue = app.GetRelativeValue
 local GetRealmName = GetRealmName
+local GetNormalizedRealmName = GetNormalizedRealmName
 local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount
 local GetItemCount = app.WOWAPI.GetItemCount
 local GetProfessionInfoByRecipeID = app.WOWAPI.GetProfessionInfoByRecipeID
@@ -112,6 +113,9 @@ local function fixture(opts)
 	local data = {}
 	local env = setmetatable({
 		ATTCharacterData = data, GetRealmName = function() return currentRealm end,
+		--- Returns the alternate local realm spelling used by the shared formatter.
+		---@return string realm Local realm name matching existing fixture text.
+		GetNormalizedRealmName = function() return currentRealm end,
 		FACTION_ALLIANCE = "Alliance", FACTION_HORDE = "Horde", FACTION_NEUTRAL = "Neutral", UNKNOWN = "Unknown",
 		ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE = "Account-Wide", ACCOUNT_COMPLETED_QUEST_NOTICE = "Previously completed on your Account",
 		Enum = { FlightPathFaction = { Alliance = ALLIANCE, Horde = HORDE, Neutral = 0 } },
@@ -277,7 +281,8 @@ for _,mode in ipairs(modes) do
 		equal(#headerGroups,expected,"Unknown metadata must not create duplicate buckets")
 		if mode.faction and not mode.realm then equal(groupContaining(rows,"Unknown").count,3) end
 		if mode.realm and not mode.faction then equal(groupContaining(rows,"Unknown").count,2) end
-		if mode.realm then contains(rendered,"|cffaabbccMissing-"..currentRealm.."|r") else contains(rendered,"|cffaabbccMissing|r") end
+		-- Missing realm metadata preserves the saved display text in every grouping mode.
+		contains(rendered,"|cffaabbccMissing-"..currentRealm.."|r")
 	end)
 end
 

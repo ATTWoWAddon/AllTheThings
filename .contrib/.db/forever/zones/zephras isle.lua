@@ -814,6 +814,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251906,	-- Teeri Wellwind
 				["coord"] = { 44.4, 45.0, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
+				["qi"] = 257945,	-- Pilfered Windstone (QI!)
 			}),
 			q(93065, {	-- Prepare for Battle
 				["sourceQuest"] = 92640,	-- Desperate Times
@@ -1192,6 +1193,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 251993,	-- Indari Sunseam
 				["coord"] = { 44.6, 44.4, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
+				["qi"] = 252670,	-- Prideclaw Pelt (QI!)
 				["groups"] = {
 					i(256935),	-- Simple Leather Satchel
 				},
@@ -1361,9 +1363,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					93461,	-- Welcome to Shen'dar Village (A)
 				},
 				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "o", 610954 },
-				["coord"] = { 45.2, 45.2, MAP.ZEPHRAS_ISLE },
+				["provider"] = { "o", 610954 },	-- Bounty Available: Vulgara the Insatiable!
+				["coord"] = { 43.4, 45.9, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 4,
+				["qi"] = 257942,	-- Vulgara's Head (QI!)
 				["groups"] = {
 					i(257943),	-- Hunter's Simple Cloak
 					i(257255),	-- Highlands Defender's Shield
@@ -1400,6 +1403,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				["qg"] = 250929,	-- Malfunctioning Cyclone Construct
 				["coord"] = { 48.6, 78.2, MAP.ZEPHRAS_ISLE },
 				["lvl"] = 5,
+			}),
+		}),
+		n(TREASURES, {
+			o(616907, {	-- Windstone
+				["description"] = "Spawns randomly throughout Zephras Isle.",
+				["sourceQuest"] = 93552,	-- Harvesting Windstones
+				["groups"] = { i(255663) },	-- Windstone
 			}),
 		}),
 		n(VENDORS, {

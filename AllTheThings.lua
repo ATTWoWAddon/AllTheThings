@@ -1285,7 +1285,7 @@ function app:GetDatabaseRoot()
 		text = L.TITLE,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
-		awp = app.IsForever and 16000 or 10000,
+		awp = app.IsForever and 16000 or nil,
 		description = L.DESCRIPTION,
 		font = "GameFontNormalLarge",
 		SortType = "Global",
@@ -1349,8 +1349,8 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 		characterData[app.GUID] = currentCharacter;
 	end
 	currentCharacter.build = app.GameBuildVersion;
-	local name, realm = UnitName("player");
-	if not realm then realm = GetRealmName(); end
+	local name = GetUnitName("player");
+	local realm = GetRealmName();
 	if name then currentCharacter.name = name; end
 	if realm then currentCharacter.realm = realm; end
 	if app.Me then currentCharacter.text = app.Me; end

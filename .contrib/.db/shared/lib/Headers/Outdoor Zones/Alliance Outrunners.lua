@@ -11,10 +11,11 @@ THE_BARRENS_ALLIANCE_OUTRUNNERS = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "联盟斥候",
 		-- TODO: tw = "",
 	},
 	description = {
 		en = "The outrunners patrol all over the Barrens as a group terrorizing Horde players that get too close.",
+		cn = "这些斥候成群在贫瘠之地各处巡逻，会袭击过于靠近的部落玩家。",
 	},
 });

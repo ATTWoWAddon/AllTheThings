@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, {
-	inst(3065, {	-- The Hall of Thanes
+	inst(3065, {	-- Hall of Thanes
 		["lore"] = "Hidden beneath the High Seat of Ironforge, the Hall of Thanes is part of the legendary \"Old Ironforge\", forever incapable of access in Classic Azeroth until WoW: Forever. The Hall of Thanes is the resting place of the Legendary Dwarves of the Eastern Kingdoms, but has recently been invaded by the hostile Dark Iron Dwarves",
 		["icon"] = [[~_.asset("hallofthanes")]],
-		["zone-text-areaID"] = 16919,	-- The Hall of Thanes
+		["zone-text-areaID"] = 16919,	-- Hall of Thanes
 		["coord"] = { 50.0, 50.0, MAP.IRONFORGE },
 		["timeline"] = { TIMELINE.ADDED_1_60_1 },
 		["lvl"] = 13,

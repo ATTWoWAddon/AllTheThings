@@ -1,6 +1,6 @@
 name: Data Discrepancy Report
 description: Report any mismatches between ATT's database and the actual in-game content.
-labels: ["Data Discrepancy"]
+labels: ["type:data-discrepancy"]
 
 body:
   - type: dropdown

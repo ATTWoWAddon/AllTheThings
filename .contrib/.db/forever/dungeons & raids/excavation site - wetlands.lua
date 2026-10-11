@@ -165,7 +165,7 @@ root(ROOTS.Instances, {
 				}),
 				q(95772, {	-- Songblade Search
 					qg = 956,	-- Dorin Songblade <Armorer>
-					coord = { 30.8, 46.6, MAP.REDRIDGE_MOUNTAINS },
+					coord = { 25.8, 46.5, MAP.REDRIDGE_MOUNTAINS },
 					races = ALLIANCE_ONLY,
 					lvl = 24,
 				}),

@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report an issue or something not working correctly.
-labels: ["Addon Bug"]
+labels: ["type:addon-bug"]
 
 body:
   - type: dropdown

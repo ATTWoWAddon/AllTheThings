@@ -339,11 +339,9 @@ root(ROOTS.Craftables, {
 					i(3713),	-- Soothing Spices
 				}),
 				sharedData({
-					-- #if AFTER CATA
-					["description"] = "This item is only common among Alliance bartenders. Horde players only have a few sources.",
-					-- #endif
 					["providers"] = {
 						{ "n", 1328 },	-- Elly Langston <Barmaid>
+						{ "n", 5611 },	-- Barkeep Morag
 					},
 				}, {
 					i(2594),	-- Flagon of Dwarven Honeymead/Mead
@@ -2818,6 +2816,7 @@ root(ROOTS.Craftables, {
 							MAP.TIRISFAL_GLADES,
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
+							MAP.ZEPHRAS_ISLE
 						},
 						["provider"] = { "o", 1731 },	-- Copper Vein
 					}),
@@ -2872,6 +2871,23 @@ root(ROOTS.Craftables, {
 							MAP.AZSHARA,
 						},
 						["provider"] = { "o", 2040 },	-- Mithril Deposit
+					}),
+					i(249391, {	-- Pyrite
+						["maps_disp"] = {
+							MAP.DARKSHORE,
+							MAP.DUN_MOROGH,
+							MAP.DUROTAR,
+							MAP.ELWYNN_FOREST,
+							MAP.LOCH_MODAN,
+							MAP.MULGORE,
+							MAP.SILVERPINE_FOREST,
+							MAP.TIRISFAL_GLADES,
+							MAP.WESTFALL,
+							MAP.THE_BARRENS,
+							MAP.ZEPHRAS_ISLE
+						},
+						["provider"] = { "o", 1731 },	-- Copper Vein
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(2775, {	-- Silver Ore
 						["description"] = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
@@ -3316,7 +3332,24 @@ root(ROOTS.Craftables, {
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(2901, {	-- Mining Pick
-				["description"] = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
+				["description"] = createLocalizationString({
+					readable = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
+					constant = "MINING_PICK_DESCRIPTION",
+					export = true,
+					text = {
+						en = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
+						-- TODO: de = "",
+						es = "Se puede comprar a proveedores de equipos de minería, así como a algunos comerciantes repartidos por todo el mundo.",
+						-- TODO: mx = "",
+						-- TODO: fr = "",
+						-- TODO: it = "",
+						-- TODO: ko = "",
+						-- TODO: pt = "",
+						-- TODO: ru = "",
+						-- TODO: cn = "",
+						-- TODO: tw = "",
+					},
+				}),
 			}),
 		}),
 		header(HEADERS.Spell, 2656, {	-- Smelting

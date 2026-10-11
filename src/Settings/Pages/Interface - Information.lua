@@ -10,7 +10,8 @@ local GetPatchString = app.Modules.Color.GetPatchString;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
 local wipearray = app.wipearray
-local GetRealmName = GetRealmName
+local GetRealmName = GetRealmName;
+local GetNormalizedRealmName = GetNormalizedRealmName;
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
@@ -235,33 +236,61 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 local knownBy = {};
---- Format character text for flat or realm-grouped lists, preserving colors and quantities.
----@param character table Character record to display.
----@param stripRealm boolean? Remove the saved realm when grouping; otherwise remove the current realm.
----@return string text
-local function GetCharacterDisplayName(character, stripRealm)
-	local text = character.text or character.name or "???";
-	local realm;
-	if stripRealm then
-		realm = character.realm;
-	else
-		realm = GetRealmName();
+--- Left and right text, color, and wrapping options for one appended tooltip row.
+--- Used by collection information processors and synchronization queue tooltips.
+---@class ATTTooltipLine
+---@field left? string Left-column text.
+---@field right? string Right-column text.
+---@field color? string Eight-digit ARGB hexadecimal color.
+---@field wrap? boolean Whether the left text wraps.
+---@field r? number Red color component.
+---@field g? number Green color component.
+---@field b? number Blue color component.
+---@field a? number Alpha color component.
+
+--- Collection type, ID, character cache, and tracking flags supplied to KnownBy.
+--- Selects which saved collection records the character-list processor consults.
+---@class ATTKnownByReference
+---@field knownByID? number Collection ID overriding the spell ID.
+---@field spellID? SpellID Spell to find in character collection caches.
+---@field key? string Primary field identifying the collection type.
+---@field __type? string ATT object type used for account-wide filtering.
+---@field perCharacter? boolean Whether this thing is tracked per character.
+---@field CACHE? string Saved character cache containing this collection.
+
+--- Identifier, localized label, and display priority for a registered information type.
+--- Used by the Interface Information page to configure and order tooltip information.
+---@class ATTInformationType
+---@field informationTypeID string Registered information type identifier.
+---@field text? string Localized label for the information type.
+---@field priority? number Display sort order.
+
+--- Omits matching realm suffixes in saved UI text while preserving colors and quantities.
+---@param character ATTCharacterIdentity? Saved UI text and actual realm to format; nil yields "???".
+---@param realmName string Exact realm suffix to omit; the local realm for flat lists.
+---@param normalizedRealmName string Alternate spelling of the realm suffix, including the normalized local realm.
+---@return string displayName Saved UI text with a matching realm suffix omitted.
+local function GetCharacterDisplayName(character, realmName, normalizedRealmName)
+	if not character then return "???"; end
+	local text = character.text or "???";
+	local realm = character.realm;
+	if not realm or realm == "" or (realm ~= realmName and realm ~= normalizedRealmName) then return text; end
+	local ending = text:match(" %(x%d+%)$") or "";
+	local display = text:sub(1, #text - #ending);
+	if display:sub(-2) == "|r" then
+		display = display:sub(1, -3);
+		ending = "|r" .. ending;
 	end
-	if realm and realm ~= "" then
-		-- Remove only the exact realm suffix, preserving class colors and Owned By quantities.
-		local quantity = text:match(" %(x%d+%)$") or "";
-		local suffixEnd = #text - #quantity;
-		if text:sub(suffixEnd - 1, suffixEnd) == "|r" then suffixEnd = suffixEnd - 2; end
-		local suffix = "-" .. realm;
-		local suffixStart = suffixEnd - #suffix + 1;
-		if suffixStart > 0 and text:sub(suffixStart, suffixEnd) == suffix then
-			text = text:sub(1, suffixStart - 1) .. text:sub(suffixEnd + 1);
-		end
+	-- Compare suffixes literally so spaces and realm punctuation retain their meaning.
+	local suffix = "-" .. realmName;
+	if display:sub(-#suffix) ~= suffix then suffix = "-" .. normalizedRealmName; end
+	if suffix ~= "-" and display:sub(-#suffix) == suffix then
+		return display:sub(1, -#suffix - 1) .. ending;
 	end
 	return text;
 end
 --- Return the localized faction label for a character.
----@param character table Character record whose faction is displayed.
+---@param character ATTCharacterIdentity Character record whose faction is displayed.
 ---@return string factionName
 local function GetCharacterFactionName(character)
 	if character.factionID == Enum.FlightPathFaction.Horde then return FACTION_HORDE; end
@@ -269,15 +298,15 @@ local function GetCharacterFactionName(character)
 	return UNKNOWN;
 end
 --- Return the saved realm label or Unknown.
----@param character table Character record whose realm is displayed.
+---@param character ATTCharacterIdentity Character record whose realm is displayed.
 ---@return string realmName
 local function GetCharacterRealmName(character)
 	local realm = character.realm;
 	return realm and realm ~= "" and realm or UNKNOWN;
 end
 --- Compare characters by enabled realm and faction groups, then by plain name.
----@param a table First character record.
----@param b table Second character record.
+---@param a ATTCharacterIdentity First character record.
+---@param b ATTCharacterIdentity Second character record.
 ---@param groupByRealm boolean Whether to group characters by realm.
 ---@param groupByFaction boolean Whether to group characters by faction.
 ---@return boolean precedes
@@ -294,11 +323,15 @@ local function SortCharactersForGrouping(a, b, groupByRealm, groupByFaction)
 	local nameB = b.name or (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "");
 	return nameA < nameB;
 end
+--- Appends cached character names to the tooltip using the supplied format.
+---@param tooltipInfo ATTTooltipLine[] Mutable array receiving appended tooltip lines.
+---@param kind string? Localized format with %s for the character list; nil skips output.
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
 	for i = #knownBy, 1, -1 do
 		if knownBy[i].ignored then tremove(knownBy, i); end
 	end
 	if #knownBy > 0 and kind then
+		local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
 		-- Each setting controls its own grouping and sorting dimension.
 		local groupByRealm = settings:GetTooltipSetting("GroupByRealm");
 		local groupByFaction = settings:GetTooltipSetting("GroupByFaction");
@@ -337,7 +370,12 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 						FlushGroup();
 						realm, faction = characterRealm, characterFaction;
 					end
-					tinsert(names, GetCharacterDisplayName(character, groupByRealm));
+					local displayRealm, displayNormalizedRealm = realmName, normalizedRealmName;
+					if groupByRealm and character.realm ~= realmName and character.realm ~= normalizedRealmName then
+						displayRealm = character.realm or "";
+						displayNormalizedRealm = displayRealm;
+					end
+					tinsert(names, GetCharacterDisplayName(character, displayRealm, displayNormalizedRealm));
 				end
 			end
 			FlushGroup();
@@ -345,7 +383,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 			app.Sort(knownBy, app.SortDefaults.name);
 			local names = {};
 			for _,character in ipairs(knownBy) do
-				tinsert(names, GetCharacterDisplayName(character));
+				tinsert(names, GetCharacterDisplayName(character, realmName, normalizedRealmName));
 			end
 			tinsert(tooltipInfo, { left = kind:format(table.concat(names, ", ")), wrap = true, color = app.Colors.TooltipDescription });
 		end
@@ -485,6 +523,10 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		end
 	end
 end
+--- Adds known-character entries and Classic profession ranks to the tooltip.
+---@param t ATTInformationType? Information type descriptor (unused).
+---@param reference ATTKnownByReference Collection, spell, and cache fields used to find known characters.
+---@param tooltipInfo ATTTooltipLine[] Mutable array receiving appended tooltip lines.
 local function ProcessForKnownBy(t, reference, tooltipInfo)
 	-- This is to show which characters have this profession.
 	local id = reference.knownByID or reference.spellID
@@ -504,11 +546,12 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 					left = L.KNOWN_BY:format(""),
 					color = app.Colors.TooltipDescription,
 				});
+				local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
 					tinsert(tooltipInfo, {
 						---@diagnostic disable-next-line: undefined-field
-						left = "  " .. GetCharacterDisplayName(character),
+						left = "  " .. GetCharacterDisplayName(character, realmName, normalizedRealmName),
 						right = data[2] .. " / " .. data[3],
 					});
 				end
@@ -1691,6 +1734,45 @@ end
 local function OnRefreshForInformationCheckBox(self)
 	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
 end
+--- Applies an All, Default, or None preset to the visible Information options.
+--- Refreshes the active tooltip information and settings controls.
+---@param value boolean|nil true enables all; false disables all; nil clears overrides to restore ATT defaults.
+local function SetInformationTypes(value)
+	for _,informationType in ipairs(SortedInformationTypesByName) do
+		-- nil removes the override so the profile uses ATT's default value.
+		settings:SetTooltipSetting(informationType.informationTypeID, value)
+	end
+	RefreshActiveInformationTypes()
+	settings:Refresh()
+end
+
+local buttonAll = child:CreateButton(
+{ text = ALL, },
+{
+	OnClick = function(self)
+		SetInformationTypes(true)
+	end,
+})
+
+local buttonDefault = child:CreateButton(
+{ text = DEFAULT, },
+{
+	OnClick = function(self)
+		SetInformationTypes(nil)
+	end,
+})
+
+local buttonNone = child:CreateButton(
+{ text = NONE, },
+{
+	OnClick = function(self)
+		SetInformationTypes(false)
+	end,
+})
+buttonNone:SetPoint("BOTTOMRIGHT", child, "BOTTOMRIGHT", -8, 10)
+buttonDefault:SetPoint("RIGHT", buttonNone, "LEFT", -8, 0)
+buttonAll:SetPoint("RIGHT", buttonDefault, "LEFT", -8, 0)
+
 settings.RefreshActiveInformationTypes = function()
 	SortInformationTypes()
 	RefreshActiveInformationTypes();
