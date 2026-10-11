@@ -7,6 +7,17 @@ local Colorize = app.Modules.Color.Colorize;
 local C_CreatureInfo = C_CreatureInfo;
 local RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace
 	= RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace;
+local RegionalUniqueNamesEnabled = RegionalUniqueNamesEnabled;
+-- Select native name semantics once for this module.
+local HasRegionalUniqueNames = RegionalUniqueNamesEnabled and RegionalUniqueNamesEnabled() or false;
+local NativeUnitName = HasRegionalUniqueNames and GetUnitName or UnitName;
+--- Returns the native character name using the API selected at module initialization.
+--- Regional names retain surnames through GetUnitName; traditional names use UnitName's first result.
+---@param unit string Unit token such as "player", "party1", or "raid3"; GUIDs are handled separately.
+---@return string? name Character name without a realm suffix, or nil when the unit cannot be resolved. Realm is obtained separately.
+local function GetNativeUnitName(unit)
+	return (NativeUnitName(unit));
+end
 local math_floor, rawget, rawset, setmetatable, ipairs
 	= math.floor, rawget, rawset, setmetatable, ipairs
 
@@ -231,7 +242,7 @@ end
 ---@field icon? string|FileID Class icon path or file ID.
 
 --- Populate cached identity, class, and race data from a GUID or unit token.
---- Preserve native player names and other units' realm information.
+--- Resolve native names and realms according to regional naming semantics.
 ---@param _t ATTUnitIdentityCache Character cache record to populate.
 ---@param unit string GUID or unit token to query.
 local function CacheCharacterDataFromAPIs(_t, unit)
@@ -243,11 +254,10 @@ local function CacheCharacterDataFromAPIs(_t, unit)
 		className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
 		if classFile then classID = ClassInfoByClassFile[classFile].classID; end
 	else
-		if unit ~= "player" and not app.IsForever then
-			name, realm = UnitFullName(unit);
-		else
-			name = GetUnitName(unit);
-			realm = GetRealmName();
+		name = GetNativeUnitName(unit);
+		realm = GetRealmName();
+		if unit ~= "player" and not HasRegionalUniqueNames then
+			realm = select(2, UnitFullName(unit)) or realm;
 		end
 		if name then
 			guid = UnitGUID(unit);

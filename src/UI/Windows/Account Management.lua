@@ -73,6 +73,9 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 end)
 -- Module locals
 local AddonMessagePrefix, MESSAGE_HANDLERS, EnableBattleNet = "ATTSYNC", {}, true;
+local RegionalUniqueNamesEnabled = RegionalUniqueNamesEnabled;
+-- Resolve native whisper name semantics once for this module.
+local HasRegionalUniqueNames = RegionalUniqueNamesEnabled and RegionalUniqueNamesEnabled() or false;
 local uid, pendingReceiveChunksForUser, pendingSendChunksForUser, pendingSendResponsesForUser = 1, {}, {}, {};
 local function ProcessSendChunks()
 	local any;
@@ -278,7 +281,7 @@ local function _SendAddonMessage(target, msg)
 	C_ChatInfo.SendAddonMessage(AddonMessagePrefix, msg, "WHISPER", target);
 end
 --- Sends an account-sync whisper, queuing chunks when the message exceeds the payload limit.
---- Forever identifiers are converted to native full names before the queue key is chosen.
+--- Regionally unique names use native full names before the queue key is chosen.
 ---@param target string Character name or ATT name-realm identifier.
 ---@param detail string|nil Label shown for queued messages.
 ---@param msg string|string[] Message text or commands to encode.
@@ -351,12 +354,12 @@ local function NormalizeLinkedCharacterIdentifier(identifier, ...)
 	if realm == "" then return; end
 	return name .. "-" .. realm:gsub("%s+", ""), name;
 end
---- Maps Forever logical identifiers to native full names, preserving exact known names.
---- Other clients and numeric IDs pass through unchanged.
+--- Maps logical identifiers to regionally unique native full names, preserving exact known names.
+--- Without regional unique names, identifiers pass through unchanged; numeric IDs always pass through.
 ---@param identifier ATTAccountTransportKey Native full name, ATT name-realm identifier, or Battle.net game-account ID.
----@return ATTAccountTransportKey target Whisper recipient after Forever name resolution; numeric IDs pass through.
+---@return ATTAccountTransportKey target Whisper recipient after regional name resolution; numeric IDs pass through.
 GetCharacterWhisperTarget = function(identifier)
-	if not app.IsForever or type(identifier) ~= "string" then return identifier; end
+	if not HasRegionalUniqueNames or type(identifier) ~= "string" then return identifier; end
 	identifier = TrimString(identifier);
 	local normalizedIdentifier, name = NormalizeLinkedCharacterIdentifier(identifier);
 	local knownName;
@@ -370,7 +373,7 @@ GetCharacterWhisperTarget = function(identifier)
 			end
 		end
 	end
-	-- Forever whispers use the full name without ATT's internal realm suffix.
+	-- Regionally unique whispers use the full name without ATT's internal realm suffix.
 	return knownName or name or identifier;
 end
 local function AddCharacterLookup(characterByInfo, character)
@@ -383,14 +386,14 @@ local function AddCharacterLookup(characterByInfo, character)
 	end
 end
 --- Checks whether a sender is allowed by the explicit or implicit linked-character entries.
---- Forever senders also match the native whisper name of an allowed logical identifier.
+--- Regionally unique senders also match the native whisper name of an allowed logical identifier.
 ---@param identifier ATTAccountTransportKey Character sender name or Battle.net game-account ID.
 ---@return boolean linked
 local function IsLinkedCharacter(identifier)
 	if LinkedCharacters[identifier] then return true end
 	local fullIdentifier, shortIdentifier = NormalizeLinkedCharacterIdentifier(identifier);
 	if (fullIdentifier and LinkedCharacters[fullIdentifier]) or (shortIdentifier and LinkedCharacters[shortIdentifier]) then return true; end
-	if app.IsForever and type(identifier) == "string" then
+	if HasRegionalUniqueNames and type(identifier) == "string" then
 		for linked,allowed in pairs(LinkedCharacters) do
 			if allowed and type(linked) == "string" and GetCharacterWhisperTarget(linked) == identifier then return true; end
 		end

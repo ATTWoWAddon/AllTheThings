@@ -5,8 +5,8 @@
 -- Account Management supplies the production transport, ACK/event handlers,
 -- and queue-building, progress, and cancellation callbacks loaded here.
 -- Probe handlers expose reassembled payloads and queued replies to assertions.
--- Each fixture selects Forever, Retail, or Classic behavior with fresh
--- characters, linked senders, captured messages, and send/receive queues.
+-- Each fixture selects a client mode and independently mocks regional-name
+-- capability, with fresh characters, linked senders, messages, and queues.
 -- Mock chat and Battle.net APIs record calls; window rebuilds are counted and
 -- popup confirmations run immediately. A fixed clock and manually resumed
 -- coroutine control the production scheduler without a WoW client.
@@ -118,7 +118,7 @@
 ---@class ATTWhisperTestAPI
 ---@field send fun(target: string, detail: string?, message: string|string[]) Send a character whisper before or through chunking.
 ---@field bnet fun(target: number, detail: string?, message: string|string[]) Send to a numeric Battle.net game-account ID.
----@field target fun(identifier: ATTAccountTransportKey): ATTAccountTransportKey Resolve Forever native full names.
+---@field target fun(identifier: ATTAccountTransportKey): ATTAccountTransportKey Resolve regionally unique native full names.
 ---@field normalize fun(identifier: string|number|nil, ...: string|nil): string?, string? Build a logical identifier and return its normalized complete name.
 ---@field events ATTWhisperTestEvents Filtered addon-message event callbacks.
 ---@field handlers table<string, ATTWhisperTestMessageHandler> Command callbacks, including the extracted ACK handler and test probes.
@@ -129,7 +129,7 @@
 
 --- Addon services required by the extracted transport and queue code.
 ---@class ATTWhisperTestApp
----@field IsForever boolean Whether native full-name whisper conversion is active.
+---@field IsForever boolean Whether the fixture represents Forever, independently of regional-name capability.
 ---@field IsRetail boolean Retail flag used by the selected fixture mode.
 ---@field print fun(...: ATTWhisperTestPrintedValue) Discard addon chat output.
 ---@field asset fun(name: string): string Return the requested mock asset name unchanged.
@@ -175,8 +175,8 @@ local cancel = assert(source:match("(local function OnClickForSyncQueue.-)local 
 local progress = assert(source:match("(local function OnTooltipForSyncQueue.-)%-%- Implementation"));
 local queueOption = assert(source:match("(app.CreateRawText%(L%.ACCOUNT_MANAGEMENT_SYNC_QUEUE,.-\n\t\t\t%}%)),"));
 local program = [[
----@type ATTWhisperTestApp, ATTWhisperTestChatAPI, fun(target: number, prefix: string, message: string), ATTNameTestCharacter, table<string, ATTNameTestCharacter>, table<ATTAccountTransportKey, boolean>, ATTWhisperTestLocale, fun(): number
-local app, C_ChatInfo, BNSendGameData, CurrentCharacter, CharacterData, LinkedCharacters, L, time = ...;
+---@type ATTWhisperTestApp, ATTWhisperTestChatAPI, fun(target: number, prefix: string, message: string), ATTNameTestCharacter, table<string, ATTNameTestCharacter>, table<ATTAccountTransportKey, boolean>, ATTWhisperTestLocale, fun(): number, (fun(): boolean)?
+local app, C_ChatInfo, BNSendGameData, CurrentCharacter, CharacterData, LinkedCharacters, L, time, RegionalUniqueNamesEnabled = ...;
 --- Discard production debug messages in the isolated module.
 ---@type fun(...: ATTWhisperTestPrintedValue)
 local DebugPrint = function() end;
@@ -202,13 +202,15 @@ return {
 }
 ]];
 --- Load extracted production code with the fixture's services and identity tables.
----@type fun(app: ATTWhisperTestApp, chat: ATTWhisperTestChatAPI, bnet: fun(target: number, prefix: string, message: string), current: ATTNameTestCharacter, characters: table<string, ATTNameTestCharacter>, linked: table<ATTAccountTransportKey, boolean>, locale: ATTWhisperTestLocale, clock: fun(): number): ATTWhisperTestAPI
+---@type fun(app: ATTWhisperTestApp, chat: ATTWhisperTestChatAPI, bnet: fun(target: number, prefix: string, message: string), current: ATTNameTestCharacter, characters: table<string, ATTNameTestCharacter>, linked: table<ATTAccountTransportKey, boolean>, locale: ATTWhisperTestLocale, clock: fun(): number, regionalNames: (fun(): boolean)?): ATTWhisperTestAPI
 local chunk = assert((loadstring or load)(program, "@actual-account-whisper-transport"));
 local logicalTarget, nativeTarget = "First Last-Remote Realm", "First Last";
 --- Create independent transport state, API mocks, and coroutine controls for one client mode.
 ---@param mode ATTWhisperTestMode Flavor behavior to exercise.
+---@param regionalNames? boolean Capability result; nil enables it only for the default Forever fixture.
+---@param regionalAPIAvailable? boolean Whether the feature API exists; nil defaults to true.
 ---@return ATTWhisperTestFixture fixture Initialized production transport and captured effects.
-local function fixture(mode)
+local function fixture(mode, regionalNames, regionalAPIAvailable)
 	local h = { outgoing = {}, battleNet = {}, linked = {}, characters = {}, rebuilds = 0, now = 1000 };
 	local window = {};
 	--- Count rebuilds requested by the production queue code.
@@ -260,10 +262,17 @@ local function fixture(mode)
 		function(_, key) return key; end});
 	---@type ATTNameTestCharacter
 	local current = { realm="Local Realm", name="Current Player", guid="current", lastPlayed=1000 };
+	---@type (fun(): boolean)?
+	local regionalAPI;
+	if regionalAPIAvailable ~= false then
+		--- Report regional-name capability independently of the client flavor flags.
+		---@return boolean enabled Whether this fixture uses regionally unique native names.
+		regionalAPI = function() return regionalNames == nil and mode == "forever" or regionalNames == true; end;
+	end
 	h.api = chunk(app, chat, bnet, current, h.characters, h.linked, locale,
 		--- Read the fixture clock without advancing it during production cooldown checks.
 		---@return number now Current simulated time.
-		function() return h.now; end);
+		function() return h.now; end, regionalAPI);
 	--- Resume one synchronization step and clear the handle when the coroutine ends.
 	---@param self ATTWhisperTestFixture Fixture with an active synchronization coroutine.
 	function h:step()
@@ -345,6 +354,27 @@ local function acknowledgeAll(h, target, sender, battleNet)
 		assert(data.acks[i], "ACK did not match transport queue");
 	end
 	h:step(); h:finish(); assert(h.api.sending[target] == nil, "Acknowledged queue remained");
+end
+
+test("Regional names work independently of the Forever flag", function()
+	local h=fixture("retail",true); h.linked[logicalTarget]=true;
+	h.api.send(logicalTarget,"big",string.rep("x",600));
+	local id,data=pending(h,nativeTarget);
+	assert(h.api.sending[logicalTarget]==nil and h.api.target(logicalTarget)==nativeTarget);
+	h:step(); assert(h.outgoing[1].target==nativeTarget);
+	h:chat("Other Surname","ack,"..id..",1"); assert(data.acks[1]==nil);
+	h:chat(nativeTarget,"ack,"..id..",1"); assert(data.acks[1],"Regional native sender must match the allowed logical link");
+end);
+for _,apiAvailable in ipairs({true,false}) do
+	test(apiAvailable and "Disabled regional names preserve realm-qualified transport" or "Missing regional API preserves realm-qualified transport", function()
+		local h=fixture("forever",false,apiAvailable); h.linked[logicalTarget]=true;
+		h.api.send(logicalTarget,"big",string.rep("x",600));
+		local id,data=pending(h,logicalTarget);
+		assert(h.api.sending[nativeTarget]==nil and h.api.target(logicalTarget)==logicalTarget);
+		h:step(); assert(h.outgoing[1].target==logicalTarget);
+		h:chat(nativeTarget,"ack,"..id..",1"); assert(data.acks[1]==nil);
+		h:chat(logicalTarget,"ack,"..id..",1"); assert(data.acks[1],"Original realm-qualified sender must remain authorized");
+	end);
 end
 
 test("Forever immediate sends use native full names", function()
