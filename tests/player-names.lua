@@ -6,7 +6,7 @@
 --   src/WoW API Wrappers.lua supplies client-build flags and API bindings.
 --   src/base.lua builds app.Me, the class-colored complete name and realm.
 --   AllTheThings.lua's login storage block updates the existing saved player.
---   src/Classes/CharacterClass.lua supplies CacheCharacterDataFromAPIs.
+--   src/Classes/CharacterClass.lua supplies feature detection and the cache helper.
 --
 -- Setup: initialize(opts) creates fake name, realm, build, GUID, class and race APIs.
 -- Inputs distinguish the complete GetUnitName result from tuple first/second values,
@@ -14,9 +14,11 @@
 -- Saved spell/profession data starts intact; the saved name and realm may be stale.
 -- Execution: compile() runs the wrapper module and extracted base/login blocks.
 -- checkIdentity() checks their outputs; unitCache() loads the real cache helper,
--- which later cases call for player, party1 and raid3 using the same fake APIs.
--- Assertions compare saved names/realms, colored UI text and API call counts,
--- and ensure login preserves the existing spell and profession tables.
+-- together with its actual module-level name selection. Cases call player, party1,
+-- raid3 and GUID inputs, with regional names absent, disabled or enabled.
+-- Assertions compare identities, UI text, API counts and class/race metadata.
+-- They verify one feature check per module load, secret-GUID handling,
+-- and preservation of existing spell and profession tables at login.
 -- Login stores native identity without managing Account Management's Identifier.
 -- linked-character-identifiers.lua tests rebuilding that cache before AutoSync.
 -- Loading with "fixtures" returns initialize without running the test cases;
@@ -36,8 +38,11 @@
 ---@field savedIdentifier? string Existing derived identifier left for Account Management to refresh.
 ---@field remoteUnit? string Additional permitted unit token, such as party1 or raid3.
 ---@field remoteFull? string Remote GetUnitName result, including a Forever surname or Retail/Classic realm suffix.
+---@field remoteFirst? string Remote UnitName first result, separate from the UnitFullName name.
 ---@field remoteName? string Remote UnitFullName name result.
 ---@field remoteRealm? string Remote UnitFullName surname or realm result.
+---@field regionalNames? boolean Feature API result; nil omits RegionalUniqueNamesEnabled entirely.
+---@field secretGuid? boolean Whether unit-token GUIDs must be discarded as secret.
 
 --- Native API call counts and the server-name flags passed to GetUnitName.
 ---@class ATTPlayerNameTestCalls
@@ -47,6 +52,12 @@
 ---@field unmodified integer UnitNameUnmodified call count.
 ---@field native integer UnitFullName call count.
 ---@field nameutil integer NameUtil reconstruction call count.
+---@field regional integer RegionalUniqueNamesEnabled evaluation count.
+---@field guidInfo integer GetPlayerInfoByGUID call count.
+---@field guid integer UnitGUID call count.
+---@field class integer UnitClass call count.
+---@field race integer UnitRace call count.
+---@field secret integer Secret-GUID guard call count.
 ---@field flags (boolean|"default")[] GetUnitName flags in call order; omitted flags are recorded as "default".
 
 --- Saved collection data that must survive identity initialization.
@@ -82,7 +93,7 @@
 ---@field GetRealmName fun(): string Actual current realm, with spaces retained.
 ---@field GetNormalizedRealmName fun(): string Normalized current realm alias.
 ---@field GetUnitName fun(unit: string, showServer?: boolean): string? Complete native name for an allowed unit.
----@field UnitName fun(unit: string): string, string Player tuple that must not be used to obtain a realm.
+---@field UnitName fun(unit: string): string?, string? Native first name and client-specific second component.
 ---@field UnitNameUnmodified fun(unit: string): string, string Unmodified player tuple that must not be used to obtain a realm.
 ---@field UnitFullName fun(unit: string): string?, string? Player or remote tuple with client-specific second-value semantics.
 ---@field NameUtil { GetUnmodifiedUnitFullName: fun(unit?: string): string } Reconstruction sentinel that must not be called.
@@ -90,6 +101,9 @@
 ---@field UnitClass fun(unit?: string): string, string, integer Localized class, class token and class ID.
 ---@field UnitRace fun(unit?: string): string, string, integer Localized race, race token and race ID.
 ---@field UnitGUID fun(unit: string): string GUID for an allowed unit.
+---@field RegionalUniqueNamesEnabled? fun(): boolean Whether complete regional names are available.
+---@field GetPlayerInfoByGUID fun(guid: string): string, string, string, string, integer, string GUID class/race metadata and native name.
+---@field issecretvalue fun(value: string): boolean Whether a GUID must be hidden from the cache.
 ---@field C_CreatureInfo { GetRaceInfo: fun(raceID?: integer): { raceName: string } } Localized race metadata.
 ---@field RAID_CLASS_COLORS table<string, { colorStr: string }> Class-color lookup by class token.
 
@@ -120,6 +134,7 @@ local base=read("src/base.lua")
 local startup=read("AllTheThings.lua")
 local nameSetup=assert(base:match("(%-%- Determine the player's name and class information.-)%-%- Determine the player's race information"))
 local characterSource=read("src/Classes/CharacterClass.lua")
+local unitNameSetup=assert(characterSource:match("(local RegionalUniqueNamesEnabled = RegionalUniqueNamesEnabled;.-)local math_floor"),"Cannot locate module-level native name selection")
 local unitSetup=assert(characterSource:match("(local function CacheCharacterDataFromAPIs.-)local cache = app.CreateCache"))
 local characterSetup=assert(startup:match("(%-%- Character Data Storage.-app%.CurrentCharacter = currentCharacter;)"))
 --- Assert equality while retaining a caller-supplied failure explanation.
@@ -162,7 +177,7 @@ local function initialize(opts)
 	local realm=opts.raw
 	if realm==nil then realm=rawRealm end
 	---@type ATTPlayerNameTestCalls
-	local calls={complete=0,realm=0,unit=0,unmodified=0,native=0,nameutil=0,flags={}}
+	local calls={complete=0,realm=0,unit=0,unmodified=0,native=0,nameutil=0,regional=0,guidInfo=0,guid=0,class=0,race=0,secret=0,flags={}}
 	--- Reject API calls to unit tokens that this fixture does not define.
 	---@param unit string Requested player or configured remote unit token.
 	local function expectUnit(unit)
@@ -180,7 +195,12 @@ local function initialize(opts)
 			expectUnit(unit); calls.complete=calls.complete+1; calls.flags[#calls.flags+1]=showServer==nil and "default" or showServer
 			return unit=="player" and opts.full or opts.remoteFull
 		end,
-		UnitName=function(unit) expectUnit(unit); calls.unit=calls.unit+1; return opts.first,opts.second end,
+		UnitName=function(unit)
+			expectUnit(unit); calls.unit=calls.unit+1
+			if unit=="player" then return opts.first,opts.second end
+			-- A distinct second value detects realm reads from the wrong tuple API.
+			return opts.remoteFirst,"Ignored UnitName realm"
+		end,
 		UnitNameUnmodified=function(unit) expectUnit(unit); calls.unmodified=calls.unmodified+1; return opts.first,opts.second end,
 		UnitFullName=function(unit)
 			expectUnit(unit); calls.native=calls.native+1
@@ -189,13 +209,23 @@ local function initialize(opts)
 		end,
 		NameUtil={GetUnmodifiedUnitFullName=function() calls.nameutil=calls.nameutil+1; return "Wrong reconstructed name" end},
 		Constants={CharacterNameSeparatorConsts={CHARACTERNAME_SURNAME_SEPARATOR="!"}},
-		UnitClass=function() return "Mage","MAGE",8 end,
-		UnitRace=function() return "Human","Human",1 end,
-		UnitGUID=function(unit) expectUnit(unit); return unit=="player" and "current" or "remote" end,
+		UnitClass=function() calls.class=calls.class+1; return "Mage","MAGE",8 end,
+		UnitRace=function() calls.race=calls.race+1; return "Human","Human",1 end,
+		UnitGUID=function(unit) expectUnit(unit); calls.guid=calls.guid+1; return unit=="player" and "current" or "remote" end,
+		GetPlayerInfoByGUID=function(guid)
+			equal(guid,"Player-1-Test"); calls.guidInfo=calls.guidInfo+1
+			return "GUID Mage","MAGE","Human","Human",1,"GuidName"
+		end,
+		issecretvalue=function() calls.secret=calls.secret+1; return opts.secretGuid or false end,
 		C_CreatureInfo={GetRaceInfo=function() return {raceName="Human"} end},
 		RAID_CLASS_COLORS={MAGE={colorStr=color}},
 	},{__index=_G})
 	---@cast env ATTPlayerNameTestEnvironment
+	if opts.regionalNames~=nil then
+		--- Record module-level feature detection independently from unit lookups.
+		---@return boolean enabled Whether native names include regional name components.
+		env.RegionalUniqueNamesEnabled=function() calls.regional=calls.regional+1; return not not opts.regionalNames end
+	end
 	compile(wrappers,"@src/WoW API Wrappers.lua",env)("AllTheThings",app)
 	compile("local _,app=...\n"..nameSetup,"@src/base.lua",env)("AllTheThings",app)
 	compile("local _,app=...\n"..characterSetup,"@AllTheThings.lua",env)("AllTheThings",app)
@@ -227,13 +257,13 @@ local function checkIdentity(opts,name,realm)
 	equal(app.CurrentCharacter.text,expected,"Saved display matches base display")
 	return calls
 end
---- Compile the actual unit-cache helper with the fixture app and class metadata.
+--- Compile actual module-level name selection and the cache helper with fixture APIs.
 ---@param app ATTPlayerNameTestApp Initialized player identity and client-flavor flags.
 ---@param env ATTPlayerNameTestEnvironment Native APIs used by unit-token lookups.
 ---@return ATTPlayerNameTestUnitCache cache Callable that fills a unit identity cache record.
 local function unitCache(app,env)
 	local prefix="local _,app=...\nlocal ClassInfoByClassFile={MAGE={classID=8}}\nlocal ClassInfoByID={[8]={icon=1}}\n"
-	return compile(prefix..unitSetup.."\nreturn CacheCharacterDataFromAPIs","@src/Classes/CharacterClass.lua",env)("AllTheThings",app)
+	return compile(prefix..unitNameSetup.."\n"..unitSetup.."\nreturn CacheCharacterDataFromAPIs","@src/Classes/CharacterClass.lua",env)("AllTheThings",app)
 end
 ---@type integer, string[]
 local tests,failures=0,{}
@@ -318,37 +348,119 @@ end)
 
 for _,flavor in ipairs({{name="Forever",build=16001,first="Milo",second="River",expected="Milo River",realm=rawRealm},{name="Retail",build=120000,first="RetailName",second=normalizedRealm,expected="RetailName",realm=rawRealm},{name="Classic",build=30400,first="ClassicName",second=normalizedRealm,expected="ClassicName",realm=rawRealm}}) do
 	test(flavor.name.." unit cache uses the client name and realm semantics",function()
-		local app,calls,env=initialize({build=flavor.build,full=flavor.expected,first=flavor.first,second=flavor.second})
+		local app,calls,env=initialize({build=flavor.build,full=flavor.expected,first=flavor.first,second=flavor.second,regionalNames=flavor.name=="Forever"})
 		local cache=unitCache(app,env)
 		---@type ATTUnitIdentityCache
 		local record={}; cache(record,"player")
 		equal(record.name,flavor.expected); equal(record.realm,flavor.realm); equal(record.guid,"current"); equal(record.classID,8); equal(record.raceID,1)
-		equal(calls.complete,3,"Both initialization paths and the unit cache use GetUnitName")
-		equal(calls.realm,3,"Both initialization paths and the unit cache use GetRealmName")
-		equal(calls.unit,0); equal(calls.unmodified,0); equal(calls.native,0,"Tuple APIs are not used for identity on any client")
+		equal(calls.complete,flavor.name=="Forever" and 3 or 2,"Only regional unit names use GetUnitName")
+		equal(calls.realm,3,"Player realm comes from GetRealmName in both modes")
+		equal(calls.unit,flavor.name=="Forever" and 0 or 1,"Traditional names use UnitName exactly once")
+		equal(calls.regional,1,"Feature detection runs once at module initialization")
+		equal(calls.unmodified,0); equal(calls.native,0,"Player lookups never use UnitFullName")
 	end)
 end
 
 for _,flavor in ipairs({
-	{name="Forever",build=16001,full="Milo River",first="Milo",second="River",remoteFull="Visitor Stone",remoteName="Visitor",remoteRealm="Stone",expected="Visitor Stone",realm=rawRealm,nativeCalls=0},
-	{name="Retail",build=120000,full="RetailName",first="RetailName",second=normalizedRealm,remoteFull="Visitor-MoonGuard",remoteName="Visitor",remoteRealm="Moon Guard",expected="Visitor",realm="Moon Guard",nativeCalls=1},
-	{name="Classic",build=30400,full="ClassicName",first="ClassicName",second=normalizedRealm,remoteFull="Visitor-DawnsHope",remoteName="Visitor",remoteRealm="Dawn's Hope (EU)",expected="Visitor",realm="Dawn's Hope (EU)",nativeCalls=1},
+	{name="Forever",build=16001,full="Milo River",first="Milo",second="River",remoteFull="Visitor Stone",remoteFirst="Visitor",remoteName="IgnoredVisitor",remoteRealm="Stone",expected="Visitor Stone",realm=rawRealm,nativeCalls=0},
+	{name="Retail",build=120000,full="RetailName",first="RetailName",second=normalizedRealm,remoteFull="Visitor-MoonGuard",remoteFirst="Visitor",remoteName="IgnoredVisitor",remoteRealm="Moon Guard",expected="Visitor",realm="Moon Guard",nativeCalls=1},
+	{name="Classic",build=30400,full="ClassicName",first="ClassicName",second=normalizedRealm,remoteFull="Visitor-DawnsHope",remoteFirst="Visitor",remoteName="IgnoredVisitor",remoteRealm="Dawn's Hope (EU)",expected="Visitor",realm="Dawn's Hope (EU)",nativeCalls=1},
 }) do
 	for _,unit in ipairs({"party1","raid3"}) do
 		test(flavor.name.." preserves the client identity for "..unit,function()
 			local app,calls,env=initialize({build=flavor.build,full=flavor.full,first=flavor.first,second=flavor.second,
-				remoteUnit=unit,remoteFull=flavor.remoteFull,remoteName=flavor.remoteName,remoteRealm=flavor.remoteRealm})
+				remoteUnit=unit,remoteFull=flavor.remoteFull,remoteFirst=flavor.remoteFirst,remoteName=flavor.remoteName,remoteRealm=flavor.remoteRealm,
+				regionalNames=flavor.name=="Forever"})
 			---@type ATTUnitIdentityCache
 			local record={}; unitCache(app,env)(record,unit)
 			equal(record.name,flavor.expected); equal(record.realm,flavor.realm); equal(record.guid,"remote")
 			equal(record.classID,8); equal(record.raceID,1)
-			equal(calls.complete,3-flavor.nativeCalls,"No unused complete-name calls"); equal(calls.realm,3-flavor.nativeCalls,"No unused current-realm calls")
-			equal(calls.native,flavor.nativeCalls,"Only other players on Retail and Classic use UnitFullName's realm")
-			equal(calls.unit,0); equal(calls.unmodified,0); equal(calls.nameutil,0)
+			equal(calls.complete,3-flavor.nativeCalls,"Only regional unit names use GetUnitName")
+			equal(calls.realm,3,"Each unit lookup initializes the local realm")
+			equal(calls.native,flavor.nativeCalls,"Traditional remote lookups read only UnitFullName's realm")
+			equal(calls.unit,flavor.nativeCalls,"Traditional remote names use UnitName exactly once")
+			equal(calls.regional,1,"Feature detection runs once at module initialization")
+			equal(calls.unmodified,0); equal(calls.nameutil,0)
 			equal(app.CurrentCharacter.name,flavor.full); equal(app.CurrentCharacter.realm,rawRealm,"Remote lookups retain the current player's identity")
 		end)
 	end
 end
+
+
+test("an absent regional-name API uses the first UnitName result for player",function()
+	local app,calls,env=initialize({build=120000,full="RetailName-RealmSuffix",first="RetailName",second="TupleRealm"})
+	---@type ATTUnitIdentityCache
+	local record={}; unitCache(app,env)(record,"player")
+	equal(record.name,"RetailName"); equal(record.realm,rawRealm)
+	equal(calls.regional,0); equal(calls.complete,2); equal(calls.unit,1); equal(calls.native,0)
+end)
+
+test("a traditional remote unit without a realm retains the local realm",function()
+	local app,calls,env=initialize({build=120000,full="PlayerName",first="PlayerName",second=normalizedRealm,
+		regionalNames=false,remoteUnit="party1",remoteFull="Visitor-RealmSuffix",remoteFirst="Visitor",remoteName="IgnoredVisitor"})
+	---@type ATTUnitIdentityCache
+	local record={}; unitCache(app,env)(record,"party1")
+	equal(record.name,"Visitor","UnitFullName cannot overwrite the selected native name")
+	equal(record.realm,rawRealm,"A missing remote realm preserves GetRealmName")
+	equal(calls.complete,2); equal(calls.unit,1); equal(calls.native,1); equal(calls.realm,3)
+end)
+
+test("regional names on a non-Forever client keep the complete remote name",function()
+	local app,calls,env=initialize({build=120000,full="PlayerName",first="PlayerName",second=normalizedRealm,
+		regionalNames=true,remoteUnit="party1",remoteFull="Visitor Stone",remoteFirst="Visitor",remoteName="IgnoredVisitor",remoteRealm="Stone"})
+	equal(app.IsForever,false,"This case must not rely on a Forever build")
+	---@type ATTUnitIdentityCache
+	local record={}; unitCache(app,env)(record,"party1")
+	equal(record.name,"Visitor Stone"); equal(record.realm,rawRealm,"Surname is never treated as a realm")
+	equal(calls.complete,3); equal(calls.unit,0); equal(calls.native,0); equal(calls.realm,3)
+end)
+
+test("regional-name selection is cached across repeated unit lookups",function()
+	local app,calls,env=initialize({full="Milo River",first="Milo",second="River",regionalNames=true})
+	local cache=unitCache(app,env)
+	equal(calls.regional,1,"The feature API runs while the module locals initialize")
+	--- Fail if a lookup rechecks feature availability after module initialization.
+	---@return boolean enabled This sentinel never returns normally.
+	env.RegionalUniqueNamesEnabled=function() error("Feature selection must remain cached") end
+	--- Fail if a lookup resolves the name API again instead of using the selected local.
+	---@param unit string Unit token passed to an incorrectly reselected API.
+	---@param showServer? boolean Optional realm-display flag; unused by this sentinel.
+	---@return string? name This sentinel never returns normally.
+	env.GetUnitName=function(unit,showServer) error("Name API selection must remain cached: "..unit) end
+	for _=1,2 do
+		---@type ATTUnitIdentityCache
+		local record={}; cache(record,"player")
+		equal(record.name,"Milo River"); equal(record.realm,rawRealm)
+	end
+	equal(calls.regional,1); equal(calls.complete,4,"Exactly one selected name call per lookup")
+	equal(calls.unit,0); equal(calls.native,0); equal(calls.realm,4)
+end)
+
+test("GUID input retains the GUID metadata path without unit-token APIs",function()
+	local app,calls,env=initialize({full="Milo River",first="Milo",second="River",regionalNames=true})
+	local classCalls,raceCalls=calls.class,calls.race
+	---@type ATTUnitIdentityCache
+	local record={}; unitCache(app,env)(record,"Player-1-Test")
+	equal(record.name,"GuidName"); equal(record.realm,nil); equal(record.guid,"Player-1-Test")
+	equal(record.className,"GUID Mage"); equal(record.classFile,"MAGE"); equal(record.classID,8); equal(record.icon,1)
+	equal(record.race,"Human"); equal(record.raceID,1)
+	equal(calls.guidInfo,1); equal(calls.guid,0); equal(calls.secret,0)
+	equal(calls.class,classCalls); equal(calls.race,raceCalls)
+	equal(calls.complete,2); equal(calls.realm,2); equal(calls.unit,0); equal(calls.native,0)
+end)
+
+test("unit-token lookups discard a secret GUID while retaining class and race",function()
+	local app,calls,env=initialize({full="Milo River",first="Milo",second="River",regionalNames=true,secretGuid=true})
+	local classCalls,raceCalls=calls.class,calls.race
+	---@type ATTUnitIdentityCache
+	local record={}; unitCache(app,env)(record,"player")
+	equal(record.name,"Milo River"); equal(record.realm,rawRealm); equal(record.guid,nil)
+	equal(record.className,"Mage"); equal(record.classFile,"MAGE"); equal(record.classID,8); equal(record.icon,1)
+	equal(record.race,"Human"); equal(record.raceID,1)
+	equal(calls.guid,1); equal(calls.secret,1); equal(calls.guidInfo,0)
+	equal(calls.class,classCalls+1); equal(calls.race,raceCalls+1)
+	equal(calls.complete,3); equal(calls.unit,0); equal(calls.native,0)
+end)
 
 print(("\n%d tests, %d failures"):format(tests,#failures))
 if #failures>0 then io.stderr:write(table.concat(failures,"\n\n"),"\n"); os.exit(1) end
