@@ -1,97 +1,129 @@
 # GitHub SSH Login Guide
 
-This guide helps you connect to GitHub with an SSH key so you can clone, pull, and push repositories.
+This guide helps you connect to GitHub with an SSH key so you can clone, pull, and push repositories. A registered public key identifies your account; your client uses the protected private key to prove possession. Authentication is separate from repository permissions and commit signing.
 
-**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make SSH authentication post-quantum. See the [post-quantum cryptography (PQC) appendix](#appendix--post-quantum-cryptography-pqc); keep platform-compatible keys until a supported migration is verified.
+**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break RSA, DSA, ECDSA, and Ed25519 signatures; this does not mean they are currently broken ([NIST analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange does not make SSH authentication post-quantum. Keep platform-compatible keys until a supported migration is verified; see the [post-quantum cryptography (PQC) appendix](#appendix--post-quantum-cryptography-pqc).
 
 **Step-by-step draft · macOS and Windows 11 · Official documentation checked October 10, 2026**
 
-Follow the numbered workflow for **one selected key source**: new local key, existing local key, or external manager such as 1Password (an app that stores keys and authorizes their use). Local-file paths need no ssh-agent (a background program that handles key-use requests). The manager path requires its own supported agent/client integration. Native agents, macOS Keychain (the system's protected credential store), global defaults, and GitHub's command-line interface (CLI) are not universal prerequisites.
-
 **Recommendation — Use separate SSH key pairs (linked public and private keys) for login and commit signing.** Separate keys let you revoke and rotate each independently and manage their intended uses separately. This is a recommendation, not a GitHub requirement. For commit signing, see the companion [**GitHub Commit Signing Guide**](github-commit-signing.md).
 
-This is an unexecuted draft procedure. No keys or settings were changed and no repository was pushed. Commands are based on official docs, not testing on your computers. Replace uppercase placeholders with your values. See the [SSH login terminology appendix](#appendix--ssh-login-terminology) for definitions.
+These are setup instructions, not a record of changes to your keys or account settings. Examples follow official documentation; the workflow and 1Password import were not tested for this guide. Replace uppercase placeholders with your values. See the [SSH login terminology appendix](#appendix--ssh-login-terminology) for definitions.
 
-## Flow — Choose one SSH key source
+## Choose one key source
 
-```mermaid
-flowchart TD
-  Start[Check tools] --> Source{Choose ONE key source}
-  Source -->|New local key| New[Generate with ssh-keygen]
-  Source -->|Existing local key| Existing[Reuse protected key files]
-  Source -->|External manager| Manager[Select or create key in 1Password]
-  New --> Public[Register PUBLIC Authentication key on GitHub]
-  Existing --> Public
-  Manager --> Public
-  Public --> Client{Configure selected source}
-  Client -->|Local file| Direct[SSH reads PRIVATE file directly]
-  Client -->|1Password| Integration[Configure 1Password agent and SSH client]
-  Direct --> Test[Verify host fingerprint and test account]
-  Integration --> Test
-  Test --> Read[Confirm SSH remote and test clone or fetch]
-  Read --> Publish{Want to publish}
-  Publish -->|No| Stop[Stop after read testing]
-  Publish -->|Yes and authorized| Push[Review and push intended branch]
-  Direct -. Optional convenience .-> Agent[Native ssh-agent and optional Keychain]
-```
+Choose once. Read the key-choice guidance and check the tools below, then open only your selected route, complete it in order, and continue to the shared completion steps. Native ssh-agent (a background program that handles key-use requests), macOS Keychain (the system's protected credential store), global defaults, and GitHub's command-line interface (CLI) are optional conveniences.
 
-**Text version:** choose new local / existing local / 1Password → register the public Authentication key → configure that source → verify host and account → test repository reads → push only if intended and authorized. Native ssh-agent and Keychain are optional for local files. **Choosing 1Password requires its own agent/client integration, not exporting its private key.**
-
-## Reference — SSH key types
-
-**Checked 10 October 2026.**
-
-| Key type | Guidance for authentication |
+| Your key source | Follow this route |
 | --- | --- |
-| Ed25519 | Preferred for new keys with compatible tools. |
-| RSA | A compatibility alternative; use 4096 bits for a new key. |
-| ECDSA | Available for local-file use with compatible tools; unsupported by 1Password. |
-| ~~DSA~~ (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
+| You need a new local key pair. | [Route A — New local key](#route-a--new-local-key) |
+| You already have a suitable local private key and matching public key. | [Route B — Existing local key](#route-b--existing-local-key) |
+| You want an SSH Key item held in 1Password. | [Route C — 1Password](#route-c--1password) |
 
-Sources: [GitHub key generation and DSA SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+Local-file routes use the private file directly and require no agent. Route C requires 1Password's supported agent/client integration and keeps the private key in 1Password.
 
-**1Password scope (checked 11 October 2026):** This table lists general SSH choices. 1Password can generate and import only Ed25519 or RSA **2048-, 3072-, or 4096-bit** keys; other RSA lengths and key types are unsupported. For new manager-held keys, choose Ed25519 or RSA 3072/4096 to follow this guide's strength recommendation. [1Password supported SSH key types](https://www.1password.dev/ssh/manage-keys#supported-ssh-key-types).
+### Key choice for this workflow
 
-SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Hash Algorithm 1) is an older hash function.
+**For new keys, prefer Ed25519 with compatible tools.** RSA 4096 is a compatibility alternative. This guide recommends at least 128 bits of classical security for new keys; a stricter organization policy takes precedence. This is a recommendation, not a universal GitHub requirement or a claim that suitable existing RSA 2048 keys are immediately unsafe.
 
-An `ssh-rsa` public-key prefix identifies RSA, not SHA-1. Use `rsa-sha2-256` or `rsa-sha2-512` for authentication ([RSA distinction](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)).
+ECDSA is available for local-file use with compatible tools; 1Password does not support it. ~~DSA~~ (`ssh-dss`) is unsupported by GitHub; do not generate it for SSH use. See the [key reference](#appendix--ssh-key-types-and-sizes) for sizes, strength comparisons, and the RSA generation command.
 
-**Announced, not yet effective:** New RSA SSH key uploads require at least 3072 bits from **14 October 2026**. RSA/SHA-1 authentication brownouts: **4 November** and **9 December 2026**; permanent removal: **13 January 2027**. [Schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+An `ssh-rsa` public-key prefix identifies RSA, not SHA-1. Use `rsa-sha2-256` or `rsa-sha2-512` for authentication ([RSA distinction](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). Policy history and future dates are in the [SSH policy appendix](#appendix--github-ssh-key-policy-and-migration-dates).
 
-For the RSA alternative in your selected new-local-key path:
+### Check the tools before your route
 
-```sh
-ssh-keygen -t rsa -b 4096 -C "YOUR_EMAIL_OR_LABEL" -f "$HOME/.ssh/id_rsa_github"
-```
-
-Use this instead of the Ed25519 generation command. Replace `id_ed25519_github` with `id_rsa_github` in subsequent local-file examples, including `.pub` paths.
-
-### Choosing a key size
-
-**For new keys, this guide recommends at least 128 bits of classical security.** Follow a stricter organization policy where applicable. This is the guide's recommendation, not a universal GitHub requirement or a claim that existing RSA 2048 keys are immediately unsafe. Existing-key and 1Password routes still reuse suitable keys without a generation step.
-
-Key size measures an algorithm's parameters; security strength estimates resistance to attacks. Compare strength across algorithms, not raw bit counts.
-
-| SSH key type | Size or curve choice | Approximate classical security |
-| --- | --- | --- |
-| RSA | At least 3072 bits for a new key; the example above uses 4096. | 3072 bits provides about 128 bits of security; 4096 adds margin. |
-| ECDSA | P-256, P-384, or P-521; with `-t ecdsa`, select `-b 256`, `-b 384`, or `-b 521`, respectively. | About 128, 192, or 256 bits, respectively. |
-| Ed25519 | Fixed parameters; there is no larger Ed25519 key-size option. | About 128 bits. |
-
-Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5, §7.1 for Ed25519](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf).
-
-RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected generation route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
-
-Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the [PQC appendix](#appendix--post-quantum-cryptography-pqc).
-
-## Required workflow — Follow only your chosen key-source branch
-
-### Step 1 — Check the client and existing key files
+In a terminal on macOS or PowerShell on Windows 11:
 
 ```sh
 git --version
 ssh -V
 ```
+
+**Expected result:** identify the Git and SSH clients. Client-selection issues are covered in the [compatibility appendix](#appendix--client-compatibility-and-organization-access).
+
+Source: [OpenSSH client](https://man.openbsd.org/ssh).
+
+## Route A — New local key
+
+### A1 — Prepare the key pair
+
+Inspect existing filenames before creating a new key. Do not print private-key contents.
+
+macOS:
+
+```sh
+command -v ssh
+ls -al "$HOME/.ssh"
+mkdir -p "$HOME/.ssh"
+```
+
+PowerShell:
+
+```powershell
+Get-Command ssh, ssh-keygen
+Get-ChildItem -Force "$HOME/.ssh"
+New-Item -ItemType Directory -Force "$HOME/.ssh" | Out-Null
+```
+
+Generate the pair and view its public fingerprint in either shell:
+
+```sh
+ssh-keygen -t ed25519 -C "YOUR_EMAIL_OR_LABEL" -f "$HOME/.ssh/id_ed25519_github"
+ssh-keygen -lf "$HOME/.ssh/id_ed25519_github.pub"
+```
+
+Choose a strong passphrase and cancel any overwrite prompt. `id_ed25519_github` is private; `.pub` is public. Protect the private file from other users; do not weaken permissions to silence an error. `-C` is only a label; it need not be a verified GitHub email. Commit email is a separate setting.
+
+For the RSA alternative, use the [RSA command](#appendix--ssh-key-types-and-sizes) instead and replace `id_ed25519_github` with `id_rsa_github` throughout this route, including `.pub` paths.
+
+**Expected result:** a usable protected private file and its matching public file.
+
+Source: [GitHub key generation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+### A2 — Register the public Authentication key
+
+Copy only the public key:
+
+```sh
+# macOS: PUBLIC key only
+pbcopy < "$HOME/.ssh/id_ed25519_github.pub"
+```
+
+```powershell
+# PowerShell: PUBLIC key only
+Get-Content "$HOME/.ssh/id_ed25519_github.pub" | Set-Clipboard
+```
+
+Open [GitHub SSH key settings](https://github.com/settings/keys), choose **New SSH key**, give it a device/purpose title, select **Authentication key**, and paste the whole public-key line. Never upload the private file.
+
+**Expected result:** your public key is an Authentication key on the intended GitHub account.
+
+Source: [adding SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+### A3 — Configure direct-file use for SSH and Git
+
+Merge this into `~/.ssh/config` on macOS or `$HOME\.ssh\config` in PowerShell. The filename has no `.txt` suffix. Preserve existing configuration and reconcile any existing GitHub/1Password entry instead of appending duplicate settings.
+
+```sshconfig
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_github
+  IdentitiesOnly yes
+  IdentityAgent none
+```
+
+`IdentityFile` selects the **private file**, not `.pub`. `IdentityAgent none` disables agent use for this host; it does not bypass host verification. An encrypted file needs its passphrase, potentially on every connection. The host entry lets SSH and Git select the same identity without repeating `-i`.
+
+**Expected result:** the intended local private file is selected. Continue directly to [Shared completion — Step 1](#step-1--verify-the-host-and-test-your-account).
+
+Source: [SSH configuration](https://man.openbsd.org/ssh_config).
+
+## Route B — Existing local key
+
+### B1 — Confirm the existing key pair
+
+Confirm the private path, matching public key and fingerprint, safe permissions, and available passphrase. Do not generate or overwrite a key. In every example in this route, replace `id_ed25519_github` and its `.pub` path with your actual existing paths; the examples do not rename your files.
 
 macOS:
 
@@ -107,49 +139,19 @@ Get-Command ssh, ssh-keygen
 Get-ChildItem -Force "$HOME/.ssh"
 ```
 
-**Expected result:** identify the SSH client and any suitable existing key. Reuse a suitable key instead of generating another unnecessarily. Do not print private-key contents. The local-file route needs no agent. If choosing the manager path, check the manager and its supported client integration instead.
-
-Source: [OpenSSH client](https://man.openbsd.org/ssh).
-
-### Step 2 — Choose exactly one key-preparation path
-
-**Path 1 — Generate a new local key with ssh-keygen.**
-
-If a suitable key already exists, skip generation and substitute its path in the later examples. Otherwise create the directory:
+View the public fingerprint after replacing the example path:
 
 ```sh
-# macOS
-mkdir -p "$HOME/.ssh"
-```
-
-```powershell
-# PowerShell
-New-Item -ItemType Directory -Force "$HOME/.ssh" | Out-Null
-```
-
-Generate the pair and view its public fingerprint:
-
-```sh
-ssh-keygen -t ed25519 -C "YOUR_EMAIL_OR_LABEL" -f "$HOME/.ssh/id_ed25519_github"
 ssh-keygen -lf "$HOME/.ssh/id_ed25519_github.pub"
 ```
 
-Choose a strong passphrase and cancel any overwrite prompt. `id_ed25519_github` is private; `.pub` is public. Protect the private file from other users; do not weaken permissions to silence an error. On macOS, files are normally under `/Users/YOU/.ssh`; in PowerShell `$HOME/.ssh` normally maps under `C:/Users/YOU`.
+Do not print private-key contents or weaken permissions to silence an error.
 
-**Expected result:** a usable protected private file and its public counterpart. `-C` is only a label; it need not be a verified GitHub email. SSH authentication maps the registered public key to your account. Commit email is a separate setting.
+**Expected result:** the suitable existing key pair is reused unchanged.
 
-Source: [GitHub key generation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+### B2 — Register the public Authentication key
 
-**Path 2 — Use an existing local key.** Skip generation. Confirm the private path, matching public key and fingerprint, safe permissions, and available passphrase. Substitute the existing paths in the examples. Expected: reuse the existing key without overwriting it.
-
-**Path 3 — Use an external key manager such as 1Password.** Open/unlock the desktop app and choose an existing supported Ed25519 or RSA SSH Key item. If you need a new manager-held key: **New Item → SSH Key → Add Private Key → Generate a New Key → Ed25519 → Generate → Save**. Copy only its public field for Step 3; retain the private key in 1Password. Expected: a selected manager-held identity. Continue through Step 4's manager setup/test branch, not its direct-file command.
-
-Source: [1Password key management](https://www.1password.dev/ssh/manage-keys).
-
-
-### Step 3 — Register the public Authentication key
-
-Open [GitHub SSH key settings](https://github.com/settings/keys) and choose **New SSH key**. Give it a device/purpose title, select **Authentication key**, and paste the whole public-key line. Manager users copy the public field from 1Password; the following clipboard commands are for local-file paths only.
+Copy only the public key, using its actual path:
 
 ```sh
 # macOS: PUBLIC key only
@@ -161,45 +163,15 @@ pbcopy < "$HOME/.ssh/id_ed25519_github.pub"
 Get-Content "$HOME/.ssh/id_ed25519_github.pub" | Set-Clipboard
 ```
 
-For an organization using single sign-on (SSO, organization-managed login), authorize the key with **Configure SSO** if required. You may first need an identity-provider login, and Internet Protocol (IP) allow-list restrictions may also apply.
+Open [GitHub SSH key settings](https://github.com/settings/keys), choose **New SSH key**, give it a device/purpose title, select **Authentication key**, and paste the whole public-key line. Never upload the private file.
 
-**Expected result:** the public key is an Authentication key on the intended GitHub account and authorized for the relevant organization where required. Never upload the private file.
+**Expected result:** your public key is an Authentication key on the intended GitHub account.
 
-Sources: [adding SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account), [SSO authorization](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/authorizing-an-ssh-key-for-use-with-single-sign-on).
+Source: [adding SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-### Step 4 — Configure the selected source and test safely
+### B3 — Configure direct-file use for SSH and Git
 
-**Local-file paths 1 or 2:**
-
-Run in an interactive terminal; this command explicitly avoids an agent:
-
-```sh
-ssh -o IdentityAgent=none -o IdentitiesOnly=yes -i "$HOME/.ssh/id_ed25519_github" -T git@github.com
-```
-
-The `-i` path is the **private file**, not `.pub`. An encrypted file needs its passphrase; without an agent you may be prompted on each connection. The username for GitHub.com is `git`; your key determines your GitHub account.
-
-**Manager path 3 — 1Password:** enable its SSH agent and configure your SSH client using the app's supported setup. Replace conflicting direct-file/`IdentityAgent none` settings with the intended manager configuration; do not start a competing native agent. Keep the private key in 1Password. Then test:
-
-```sh
-ssh -T git@github.com
-```
-
-Approve only the intended client request in 1Password, optionally using Touch ID (Apple's fingerprint authentication) or Windows Hello. Expected: the selected manager-held key is offered. [Official 1Password agent/client setup](https://www.1password.dev/ssh/agent).
-
-**Both branches:** Before accepting a first-use host prompt, compare its fingerprint with [GitHub's official fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints). On an unexpected host-key change, stop and investigate. Do not disable host checking or delete `known_hosts` just to hide the warning.
-
-**Expected result:** GitHub identifies your expected username and reports successful authentication with no shell access. **Exit code 1 is normal for this successful GitHub test.** It proves account authentication, not access to a particular repository.
-
-Sources: [SSH identity options](https://man.openbsd.org/ssh), [IdentityAgent and IdentityFile](https://man.openbsd.org/ssh_config), [GitHub test result](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
-
-### Step 5 — Make Git use the same identity
-
-**Local-file paths 1 or 2:**
-
-Git also needs to select the intended private key. This guide uses a host entry so Git operations can use the key without repeating `-i`. Configuration is a selection method, not an agent requirement.
-
-Merge this into `~/.ssh/config` on macOS or `$HOME\.ssh\config` in PowerShell. The filename has no `.txt` suffix. Preserve existing configuration; if there is already a GitHub/1Password entry, reconcile it rather than blindly appending duplicate settings.
+Merge this into `~/.ssh/config` on macOS or `$HOME\.ssh\config` in PowerShell, substituting the actual private-key path. The filename has no `.txt` suffix. Preserve existing configuration and reconcile any existing GitHub/1Password entry instead of appending duplicate settings.
 
 ```sshconfig
 Host github.com
@@ -210,29 +182,63 @@ Host github.com
   IdentityAgent none
 ```
 
-`IdentityAgent none` explicitly disables agent use for this host. It is not a host-security bypass. If you later choose an agent, remove or replace this setting as part of that intentional switch.
+`IdentityFile` selects the **private file**, not `.pub`. `IdentityAgent none` disables agent use for this host; it does not bypass host verification. An encrypted file needs its passphrase, potentially on every connection. The host entry lets SSH and Git select the same identity without repeating `-i`.
+
+**Expected result:** the intended existing private file is selected. Continue directly to [Shared completion — Step 1](#step-1--verify-the-host-and-test-your-account).
+
+Source: [SSH configuration](https://man.openbsd.org/ssh_config).
+
+## Route C — 1Password
+
+### C1 — Select or create the manager-held key
+
+Open/unlock the desktop app and choose an existing supported Ed25519 or RSA **SSH Key** item. To create a new manager-held key: **New Item → SSH Key → Add Private Key → Generate a New Key → Ed25519 → Generate → Save**. Keep the private key in 1Password.
+
+**1Password generation (checked 11 October 2026):** 1Password can generate Ed25519 or RSA **2048-, 3072-, or 4096-bit** SSH keys. For new manager-held keys, choose Ed25519 or RSA 3072/4096 to follow this guide's strength recommendation. [Official key-generation options](https://www.1password.dev/cli/ssh-keys#generate-an-ssh-key).
+
+Generation options and existing-key import support are separate. The [key reference](#appendix--ssh-key-types-and-sizes) preserves the documented import scope and its testing limitation.
+
+**Expected result:** a selected manager-held identity without exporting a private key.
+
+Source: [1Password key management](https://www.1password.dev/ssh/manage-keys).
+
+### C2 — Register the public Authentication key
+
+Copy only the item's **public key** field. Open [GitHub SSH key settings](https://github.com/settings/keys), choose **New SSH key**, give it a device/purpose title, select **Authentication key**, and paste the whole public-key line. Retain the private key in 1Password.
+
+**Expected result:** the item's public key is an Authentication key on the intended GitHub account.
+
+Source: [adding SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+### C3 — Configure 1Password's SSH client integration
+
+Enable 1Password's SSH agent and configure your SSH client using the [official supported setup](https://www.1password.dev/ssh/agent). Replace conflicting direct-file/`IdentityAgent none` settings with the intended manager configuration; do not start a competing native agent. Confirm Git uses the same SSH client/integration.
+
+During the account test below, approve only the intended client request in 1Password, optionally using Touch ID (Apple's fingerprint authentication) or Windows Hello.
+
+**Expected result:** SSH and Git request the intended manager-held key through 1Password. Continue directly to [Shared completion — Step 1](#step-1--verify-the-host-and-test-your-account).
+
+## Shared completion — All three routes
+
+Your chosen source is now registered and configured. Complete these steps without changing key source.
+
+### Step 1 — Verify the host and test your account
+
+Complete any required organization authorization for the registered key using **Configure SSO** (single sign-on, organization-managed login). See the [organization-access reference](#appendix--client-compatibility-and-organization-access) for identity-provider and access restrictions.
+
+Before accepting a first-use host prompt, compare its fingerprint with [GitHub's official fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints). On an unexpected host-key change, stop and investigate. Do not disable host checking or delete `known_hosts` to hide the warning.
 
 ```sh
 ssh -T git@github.com
 ```
 
-**Expected result:** the same account succeeds using the saved key selection. You can instead pass equivalent SSH options through `git -c core.sshCommand=...`; you only need one consistent selection method.
+The username for GitHub.com is `git`; your key determines the GitHub account. **Expected result:** GitHub identifies your expected username and reports successful authentication with no shell access. **Exit code 1 is normal for this successful GitHub test.** It proves account authentication, not access to a particular repository.
 
-If Git for Windows selects a different SSH binary, inspect its configuration and use a verified executable where necessary, for example:
+Source: [GitHub test result](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection).
 
-```powershell
-git config --local core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
-```
+### Step 2 — Confirm the repository URL and test read access
 
-Run `--local` inside the intended repository. It affects transport, not signing. Windows Subsystem for Linux (WSL, a Linux environment on Windows) and graphical user interfaces (GUIs, graphical applications) can have different clients or prompt support. Fix the client/prompt or use an optional supported agent rather than removing the key passphrase.
-
-Sources: [SSH configuration](https://man.openbsd.org/ssh_config), [Windows SSH client conflicts](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-
-**Manager path 3:** keep the client setup completed in Step 4; do not apply the agentless host block above. Confirm Git uses the same SSH client/integration. Expected: Git requests authorization from 1Password with the intended key.
-
-### Step 6 — Confirm the repository Uniform Resource Locator (URL, a resource address) and test read access
-
-For an existing repository:
+Run inside the intended local repository. To create a new copy first, use the [clone reference](#appendix--client-compatibility-and-organization-access).
 
 ```sh
 git remote -v
@@ -248,13 +254,7 @@ Only if you deliberately want to switch this remote:
 git remote set-url origin git@github.com:OWNER/REPO.git
 ```
 
-Recheck fetch and push URLs: a separately configured `pushurl` may still differ. For a new local copy instead:
-
-```sh
-git clone git@github.com:OWNER/REPO.git
-```
-
-Enter the cloned folder, then test:
+Recheck fetch and push URLs: a separately configured `pushurl` may still differ. Then test:
 
 ```sh
 git ls-remote origin
@@ -263,11 +263,11 @@ git fetch origin
 
 **Expected result:** `ls-remote` reads the accessible refs, and fetch completes. An empty repository may have no refs. Fetch updates local remote-tracking information; it does not merge into your work branch or change the remote.
 
-Sources: [remote management](https://docs.github.com/en/get-started/git-basics/managing-remote-repositories), [clone](https://git-scm.com/docs/git-clone), [fetch](https://git-scm.com/docs/git-fetch).
+Sources: [remote management](https://docs.github.com/en/get-started/git-basics/managing-remote-repositories), [fetch](https://git-scm.com/docs/git-fetch).
 
-### Step 7 — Push only when you intend to publish
+### Step 3 — Push only when you intend to publish
 
-You can stop after read-access testing if you do not want to publish anything. If publishing is intended, review the changes, exact destination, branch rules, and authorization first:
+You can stop after read-access testing. To publish, review the changes, exact destination, branch rules, and authorization first:
 
 ```sh
 git push -u origin YOUR_BRANCH
@@ -277,7 +277,99 @@ git push -u origin YOUR_BRANCH
 
 Sources: [push](https://git-scm.com/docs/git-push), [protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
 
-## Optional convenience tools — Not part of the minimum workflow
+## Security checklist
+
+- Never commit, paste into chat, or upload a private key to GitHub.
+- Keep passphrases out of scripts and command-line arguments.
+- Verify host fingerprints; do not disable host checking.
+- Redact unnecessary usernames, paths, hosts, and sensitive details before sharing diagnostic logs.
+- Give keys clear device/purpose names. Revoke and replace affected keys if a device is lost or a key may be compromised.
+- Treat authentication, commit signing, repository authorization, and permission to publish as separate checks.
+
+## Appendix — SSH key types and sizes
+
+**Checked 10 October 2026.**
+
+| Key type | Guidance for authentication |
+| --- | --- |
+| Ed25519 | Preferred for new keys with compatible tools. |
+| RSA | A compatibility alternative; use 4096 bits for a new key. |
+| ECDSA | Available for local-file use with compatible tools; unsupported by 1Password. |
+| ~~DSA~~ (`ssh-dss`) | DSA SSH keys are unsupported by GitHub; do not generate them for SSH use. |
+
+Sources: [GitHub SSH key guidance](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+
+**1Password import (official documented support; not tested for this guide):** The [official key-import guidance](https://www.1password.dev/ssh/manage-keys#key-import-errors) lists Ed25519 or RSA **2048-, 3072-, or 4096-bit** keys as supported; other RSA lengths, DSA, and ECDSA are unsupported. This import scope comes from the import documentation, not from the generation options.
+
+SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Hash Algorithm 1) is an older hash function.
+
+### Choosing a key size
+
+**For new keys, this guide recommends at least 128 bits of classical security.** Follow a stricter organization policy where applicable. This is the guide's recommendation, not a universal GitHub requirement or a claim that existing RSA 2048 keys are immediately unsafe. Existing-key and 1Password routes still reuse suitable keys without a generation step.
+
+Key size measures an algorithm's parameters; security strength estimates resistance to attacks. Compare strength across algorithms, not raw bit counts.
+
+| SSH key type | Size or curve choice | Approximate classical security |
+| --- | --- | --- |
+| RSA | At least 3072 bits for a new key; the RSA example below uses 4096. | 3072 bits provides about 128 bits of security; 4096 adds margin. |
+| ECDSA | P-256, P-384, or P-521; with `-t ecdsa`, select `-b 256`, `-b 384`, or `-b 521`, respectively. | About 128, 192, or 256 bits, respectively. |
+| Ed25519 | Fixed parameters; there is no larger Ed25519 key-size option. | About 128 bits. |
+
+Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5, §7.1 for Ed25519](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf).
+
+RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
+
+Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the [PQC appendix](#appendix--post-quantum-cryptography-pqc).
+
+For the RSA alternative in Route A:
+
+```sh
+ssh-keygen -t rsa -b 4096 -C "YOUR_EMAIL_OR_LABEL" -f "$HOME/.ssh/id_rsa_github"
+```
+
+Use this instead of the Ed25519 generation command. Replace `id_ed25519_github` with `id_rsa_github` throughout Route A, including `.pub` paths.
+
+## Appendix — Client compatibility and organization access
+
+### Local paths and client selection
+
+On macOS, key files are normally under `/Users/YOU/.ssh`; in PowerShell `$HOME/.ssh` normally maps under `C:/Users/YOU`.
+
+Instead of a host entry, you can pass equivalent SSH options through `git -c core.sshCommand=...`; use one consistent selection method. To test a local private file explicitly in an interactive terminal:
+
+```sh
+ssh -o IdentityAgent=none -o IdentitiesOnly=yes -i "$HOME/.ssh/id_ed25519_github" -T git@github.com
+```
+
+The `-i` path is the private file, not `.pub`. Use the actual path for an existing key or RSA key. Keep the host-fingerprint checks from shared Step 1.
+
+If Git for Windows selects a different SSH binary, inspect its configuration and use a verified executable where necessary, for example:
+
+```powershell
+git config --local core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
+```
+
+Run `--local` inside the intended repository. It affects transport, not signing. Windows Subsystem for Linux (WSL, a Linux environment on Windows) and graphical user interfaces (GUIs, graphical applications) can have different clients or prompt support. Fix the client/prompt or use an optional supported agent rather than removing the key passphrase.
+
+Sources: [SSH identity options](https://man.openbsd.org/ssh), [SSH configuration](https://man.openbsd.org/ssh_config), [Windows SSH client conflicts](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+### Organization authorization
+
+For an organization using SSO, authorize the key with **Configure SSO** if required. You may first need an identity-provider login, and Internet Protocol (IP) allow-list restrictions may also apply.
+
+Source: [SSO authorization](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/authorizing-an-ssh-key-for-use-with-single-sign-on).
+
+### Clone a new local copy
+
+```sh
+git clone git@github.com:OWNER/REPO.git
+```
+
+Enter the cloned folder and continue at shared Step 2. Confirm the fetch/push destination before relying on `origin`.
+
+Source: [clone](https://git-scm.com/docs/git-clone).
+
+## Appendix — Optional convenience tools
 
 ### Optional A — macOS ssh-agent and Keychain
 
@@ -330,10 +422,9 @@ Sources: [Microsoft key management](https://learn.microsoft.com/en-us/windows-se
 
 ### Optional C — Global defaults and GitHub CLI
 
-This guide uses repository-local Git settings. Choose `--global` only when you intentionally want a user-wide default, accounting for local/conditional overrides. GitHub CLI is not required for browser-based public-key registration. Selecting 1Password in Step 2 is an alternative key-source workflow, not an additional convenience layer everyone must configure.
+This guide uses repository-local Git settings. Choose `--global` only when you intentionally want a user-wide default, accounting for local/conditional overrides. GitHub CLI is not required for browser-based public-key registration. Selecting Route C is an alternative key-source workflow, not an additional convenience layer everyone must configure.
 
-## Troubleshooting and security
-
+## Appendix — Troubleshooting
 
 - **Permission denied (publickey):** Check that the SSH username is `git`, the public key is an Authentication key on the correct account, and the selected private file is readable with correct permissions. For the optional agent route, also inspect `ssh-add -l`. Use `ssh -vT git@github.com` to inspect key selection.
 - **SSH test works but repository not found / push denied:** Check `OWNER/REPO`, account permissions, organization SSO, and separate fetch/push URLs. Account authentication is not repository authorization.
@@ -343,14 +434,13 @@ This guide uses repository-local Git settings. Choose `--global` only when you i
 
 Sources: [GitHub SSH troubleshooting](https://docs.github.com/en/authentication/troubleshooting-ssh/error-permission-denied-publickey), [SSH client configuration](https://man.openbsd.org/ssh_config).
 
-## Security checklist
+## Appendix — GitHub SSH key policy and migration dates
 
-- Never commit, paste into chat, or upload a private key to GitHub.
-- Keep passphrases out of scripts and command-line arguments.
-- Verify host fingerprints; do not disable host checking.
-- Redact unnecessary usernames, paths, hosts, and sensitive details before sharing diagnostic logs.
-- Give keys clear device/purpose names. Revoke and replace affected keys if a device is lost or a key may be compromised.
-- Treat authentication, commit signing, repository authorization, and permission to publish as separate checks.
+**Checked 10 October 2026.** These policy dates add no setup steps.
+
+DSA SSH keys have been unsupported by GitHub since 15 March 2022. [GitHub SSH key support](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+**Announced, not yet effective:** New RSA SSH key uploads require at least 3072 bits from **14 October 2026**. RSA/SHA-1 authentication brownouts: **4 November** and **9 December 2026**; permanent removal: **13 January 2027**. [Schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
 
 ## Appendix — Post-quantum cryptography (PQC)
 

@@ -1,6 +1,8 @@
 # GitHub Commit Signing Guide
 
-**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make authentication or commit signing post-quantum. See the [post-quantum cryptography (PQC) appendix](#appendix--post-quantum-cryptography-pqc); keep platform-compatible keys until a supported migration is verified.
+This guide helps you sign Git commits so others can verify the signing key and identity, and check that the commit content has not changed since signing. A valid signature does not establish that the code is safe or correct.
+
+**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break RSA, DSA, ECDSA, and Ed25519 signatures; this does not mean they are currently broken ([NIST analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange does not make authentication or commit signing post-quantum. Keep platform-compatible keys until a supported migration is verified; see the [post-quantum cryptography (PQC) appendix](#appendix--post-quantum-cryptography-pqc).
 
 **Step-by-step draft · macOS and Windows 11 · Official documentation checked October 10, 2026**
 
@@ -10,110 +12,44 @@ Signing verifies commit/tag content and its signing identity; it does not grant 
 
 **Recommendation — Use separate SSH key pairs (linked public and private keys) for authentication/login and commit signing.** Separate keys let you revoke and rotate each independently and manage permissions and intended uses separately. This is a recommendation, not a GitHub requirement. The examples use `id_ed25519_github` for authentication and `id_ed25519_signing` for signing; apply the same separation when choosing existing keys or manager-held keys. GitHub also allows the same public key for both purposes, but register it separately as an **Authentication key** and a **Signing key** ([GitHub key registration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)).
 
-This is a draft procedure, not a record of changes made. No keys were generated, accounts/configuration changed, or commits signed/pushed while preparing it. Commands were checked against official documentation but not tested on your computers. Replace every uppercase placeholder before running a command. See the [commit signing terminology appendix](#appendix--commit-signing-terminology) for definitions.
+This guide provides setup instructions, not a record of changes to your keys or accounts. Commands were checked against official documentation, but the complete routes were not tested on your computers. Replace every uppercase placeholder before running a command. See the [commit signing terminology appendix](#appendix--commit-signing-terminology) for definitions.
 
-## Flow — Choose a signing method and one key source
+## Flow — Choose your route once
 
 ```mermaid
 flowchart TD
   Start[Choose signing method] --> Method{SSH or GPG}
-  Method -->|SSH| Source{Choose ONE SSH key source}
-  Source -->|New local key| New[Generate with ssh-keygen]
-  Source -->|Existing local key| Existing[Reuse protected key files]
-  Source -->|External manager| Manager[Select or create key in 1Password]
-  New --> Register[Register PUBLIC key as GitHub Signing key]
-  Existing --> Register
-  Manager --> Register
-  Register --> Signer{Use selected source}
-  Signer -->|Local file| Direct[Configure PRIVATE path in Git]
-  Signer -->|1Password| Managed[Configure 1Password signing integration]
-  Direct --> Sign[Review and sign commit]
-  Managed --> Sign
-  Method -->|GPG| GPGSource{New or existing GPG key}
-  GPGSource --> GPG[Prepare GPG key and register PUBLIC key]
-  GPG --> GPGConfig[Configure GPG and passphrase entry]
-  GPGConfig --> Sign
-  Sign --> Verify[Verify locally and on GitHub after authorized publication]
-  Direct -. Optional convenience .-> Agent[ssh-agent and optional Keychain]
-  Sign -. Optional default .-> Auto[Automatic signing of future commits]
+  Method -->|SSH| SSHCheck[Check SSH tools and commit identity]
+  SSHCheck --> SSHSource{Choose one SSH key source}
+  SSHSource -->|New local key| New[Generate a protected key]
+  SSHSource -->|Existing local key| Existing[Identify protected key files]
+  New --> Local[Register public key and configure local signer]
+  Existing --> Local
+  SSHSource -->|1Password| Manager[Select key, register public key, configure integration]
+  Local --> SSHFinish[Sign and verify with SSH]
+  Manager --> SSHFinish
+  Method -->|GPG| GPGCheck[Check GPG and commit identity]
+  GPGCheck --> GPGSource{New or existing GPG key}
+  GPGSource -->|New| GPGNew[Generate a protected signing key]
+  GPGSource -->|Existing| GPGExisting[Identify a suitable signing key]
+  GPGNew --> GPGFinish[Register public key, configure GPG, sign and verify]
+  GPGExisting --> GPGFinish
 ```
 
-**Text version:** SSH → choose new local / existing local / 1Password → register public Signing key → configure that source's signer → sign → verify. Alternatively, GPG → new/existing GPG key → public-key registration → GPG configuration → sign → verify. Native agents, macOS Keychain (the system's protected credential store), and automatic defaults are optional side paths. **The 1Password integration is required only if you choose the 1Password source; it is not an extra step for everyone.**
+Choose SSH or GPG, then follow the linked route in order:
 
-## Reference — SSH key types
+- **SSH:** start with [Step A1](#step-a1--check-tools-and-commit-identity), then choose [new local key](#path-a-new--generate-a-local-ssh-key), [existing local key](#path-a-existing--reuse-a-local-ssh-key), or [1Password](#path-a-manager--use-1password). Each path leads to [SSH completion](#ssh-completion--sign-and-verify).
+- **GPG:** start with [Step B1](#step-b1--check-gpg-and-your-repository-identity), then choose [new key](#path-b-new--generate-a-gpg-key) or [existing key](#path-b-existing--reuse-a-gpg-key). Each path leads to [GPG completion](#gpg-completion--register-configure-sign-and-verify).
 
-**Checked 10 October 2026.**
+The required steps end when your signed commit verifies. Native ssh-agent, macOS Keychain (the system's protected credential store), and automatic signing defaults are [optional conveniences](#optional-convenience-tools-and-defaults).
 
-| Key type | Guidance for commit signing |
-| --- | --- |
-| Ed25519 | Preferred for new keys with compatible tools. |
-| RSA | A compatibility alternative; use 4096 bits for a new key. |
-| ECDSA | Available for local-file use with compatible tools; unsupported by 1Password. |
-| ~~DSA~~ (`ssh-dss`) | DSA SSH keys have been unsupported by GitHub since 15 March 2022; do not generate them for SSH use. |
+## Route A — SSH signing
 
-Sources: [GitHub key generation and DSA SSH-key retirement](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
-
-**1Password scope (checked 11 October 2026):** This table lists general SSH choices. 1Password can generate and import only Ed25519 or RSA **2048-, 3072-, or 4096-bit** keys; other RSA lengths and key types are unsupported. For new manager-held keys, choose Ed25519 or RSA 3072/4096 to follow this guide's strength recommendation. [1Password supported SSH key types](https://www.1password.dev/ssh/manage-keys#supported-ssh-key-types).
-
-SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Hash Algorithm 1) is an older hash function.
-
-An `ssh-rsa` public-key prefix does not imply SHA-1 ([key-format distinction](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). For RSA commit signatures, the [SSH signature format (SSHSIG), a detached cryptographic proof](https://github.com/openssh/openssh-portable/blob/master/PROTOCOL.sshsig) requires `rsa-sha2-256` or `rsa-sha2-512`, never legacy RSA/SHA-1. Do not apply old SSH authentication exceptions to commit signing.
-
-SSH transport authentication and commit signing have separate algorithm and verification requirements.
-
-**Announced, not yet effective:** RSA uploads for either role require at least 3072 bits from **14 October 2026**. RSA/SHA-1 authentication brownouts: **4 November** and **9 December 2026**; permanent removal: **13 January 2027**. [Schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
-
-For the RSA alternative in your selected new-local-key path:
-
-```sh
-ssh-keygen -t rsa -b 4096 -C "YOUR_EMAIL_OR_LABEL" -f "$HOME/.ssh/id_rsa_signing"
-```
-
-Use this instead of the Ed25519 generation command. Replace `id_ed25519_signing` with `id_rsa_signing` in subsequent local-file examples, including `.pub` paths.
-
-### Choosing a key size
-
-**For new keys, this guide recommends at least 128 bits of classical security.** Follow a stricter organization policy where applicable. This is the guide's recommendation, not a universal GitHub requirement or a claim that existing RSA 2048 keys are immediately unsafe. Existing-key and 1Password routes still reuse suitable keys without a generation step.
-
-Key size measures an algorithm's parameters; security strength estimates resistance to attacks. Compare strength across algorithms, not raw bit counts.
-
-| SSH key type | Size or curve choice | Approximate classical security |
-| --- | --- | --- |
-| RSA | At least 3072 bits for a new key; the example above uses 4096. | 3072 bits provides about 128 bits of security; 4096 adds margin. |
-| ECDSA | P-256, P-384, or P-521; with `-t ecdsa`, select `-b 256`, `-b 384`, or `-b 521`, respectively. | About 128, 192, or 256 bits, respectively. |
-| Ed25519 | Fixed parameters; there is no larger Ed25519 key-size option. | About 128 bits. |
-
-Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5, §7.1 for Ed25519](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf).
-
-RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected generation route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
-
-### OpenPGP signing key types and sizes
-
-For a new OpenPGP signing key, this guide recommends **at least 128 bits of classical security**. Key sizes and encoded public-key lengths do not compare algorithms directly. Suitable existing keys do not automatically need replacement.
-
-| Signing algorithm | Size or curve | Strength and selection guidance |
-| --- | --- | --- |
-| RSA | 2048, 3072, or 4096 bits | About 112 bits of security at 2048; about 128 at 3072. RSA 4096 adds margin, not 256-bit security. RSA 3072/4096 are compatibility choices; RFC 9580 discourages new RSA keys and requires at least 3072 bits when generating them. |
-| EdDSA with Ed25519 | Fixed parameters; 32-byte encoded public-key value | About 128 bits of security; a practical modern option with compatible tools and key formats. There is no larger Ed25519 key-size setting. |
-| EdDSA with Ed448 | Fixed parameters; 57-byte encoded public-key value | About 224 bits of security. GnuPG has supported Ed448 since 2.3, but GitHub's generic EdDSA listing does not guarantee Ed448 or every OpenPGP packet format works; test GitHub verification before choosing it. |
-| ECDSA | NIST P-256, P-384, or P-521; GnuPG names `nistp256`, `nistp384`, `nistp521` | About 128, 192, or 256 bits of security, respectively. Other curves, such as Brainpool or secp256k1, depend on the build; do not assume GitHub accepts every curve. |
-| DSA (legacy) | Historical 1024-, 2048-, or 3072-bit parameters | Do not generate new DSA keys: RFC 9580 forbids this, and FIPS 186-5 retains DSA only for verifying old signatures. GitHub still lists DSA for OpenPGP; this is distinct from its retired DSA SSH keys. |
-
-Sources: [GitHub's OpenPGP algorithm list](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key#supported-gpg-key-algorithms), [RFC 9580 algorithm and generation rules](https://www.rfc-editor.org/rfc/rfc9580.html#section-12.4), [Ed25519 and Ed448 parameters](https://www.rfc-editor.org/rfc/rfc8032.html#section-1), [NIST security-strength comparison](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
-
-**Choose signing capability, not an encryption algorithm.** ECDH with `cv25519` or `cv448`, and ElGamal, are encryption choices; they cannot sign Git commits. ElGamal is legacy, and RFC 9580 forbids generating new ElGamal keys. GnuPG's ML-KEM/Kyber hybrid options are also for encryption, not post-quantum commit signatures; 768/1024 identify parameter sets, not security bits. A GitHub list containing encryption algorithms does not make them signing algorithms. A signing-only setup needs no encryption subkey. Primary keys and subkeys may use different algorithms and strengths; assess each role instead of giving every key the same raw length.
-
-Check the actual installation with `gpg --version` and `gpg --with-colons --list-config curve`; generation menus vary by version. GnuPG's ability to create a key does not establish GitHub support for its curve or packet format. ASCII armor changes the text representation, not the underlying key format. Upload only public keys and verify a test signature on GitHub before relying on a less widely supported choice.
-
-Sources: [OpenPGP algorithm roles](https://www.rfc-editor.org/rfc/rfc9580.html#section-9.1), [GnuPG key management and available algorithms](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
-
-Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the [PQC appendix](#appendix--post-quantum-cryptography-pqc).
-
-## Route A — Required workflow for the SSH key source you choose
+For a new SSH signing key, prefer Ed25519 with compatible tools; RSA 4096 is a compatibility alternative. This guide recommends at least 128 bits of classical security for new keys. Suitable existing keys do not automatically need replacement. Key size and security strength describe different things: compare strength across algorithms, not raw bit counts. The [key types and sizes appendix](#appendix--ssh-key-types-and-sizes) explains other choices and the separate 1Password generation and documented import limits.
 
 ### Step A1 — Check tools and commit identity
 
-Use Git 2.34 or later and a current supported OpenSSH release. OpenSSH added signature operations in 8.1. An integrated development environment (IDE, a coding application) or graphical user interface (GUI, a graphical application) may use a different binary from your terminal.
+Use Git 2.34 or later and a current supported OpenSSH release. OpenSSH added signature operations in 8.1. Run these checks in the terminal you will use for signing:
 
 ```sh
 git --version
@@ -121,7 +57,7 @@ ssh -V
 git config --show-origin --get-regexp "^(user|gpg|commit|tag)\."
 ```
 
-Inside the intended repository, check or set the identity for new commits:
+Inside the intended repository, set the identity for new commits:
 
 ```sh
 git config --local user.name "YOUR_NAME"
@@ -130,17 +66,15 @@ git config --local user.email "YOUR_VERIFIED_EMAIL"
 
 Use an email verified on the intended GitHub account, or your exact GitHub-provided noreply address from **Settings → Emails**. `user.name` need not be your GitHub username. An SSH key's trailing comment is only a label, not email verification.
 
-**Expected result:** compatible tools and the intended repository identity. `--local` affects this repository only; user-wide defaults are optional. Empty output for an unset setting is normal.
+**Expected result:** compatible tools and the intended repository identity. `--local` affects this repository only; empty output for an unset setting is normal. Review the current signer settings before proceeding with the source you selected in the opening flow.
 
 Sources: [GitHub signing configuration](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key), [OpenSSH 8.1](https://www.openssh.org/txt/release-8.1), [commit email](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address), [Git name](https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git).
 
-### Step A2 — Choose exactly one key-preparation path
+### Path A-new — Generate a local SSH key
 
-**Path 1 — Generate a new local key with ssh-keygen.** Use this only if you need a new key.
+Inspect existing filenames first: macOS `ls -al ~/.ssh`; PowerShell `Get-ChildItem -Force "$HOME/.ssh"`. Do not print private-key contents or overwrite an existing key.
 
-Inspect existing filenames first: macOS `ls -al ~/.ssh`; PowerShell `Get-ChildItem -Force "$HOME/.ssh"`. Do not print private-key contents. If you already have a suitable key, use its real path in later steps and skip generation.
-
-If a new key is needed, create its directory:
+Create the directory with your platform's command:
 
 ```sh
 # macOS
@@ -161,20 +95,21 @@ ssh-keygen -lf "$HOME/.ssh/id_ed25519_signing.pub"
 
 Choose a strong passphrase. Cancel any overwrite prompt and choose a new filename. Protect the private file with user-only access; do not relax its permissions to fix an error. macOS files normally live under `/Users/YOU/.ssh`; PowerShell uses `$HOME/.ssh`, normally under `C:/Users/YOU`.
 
-**Expected result:** a protected private key named `id_ed25519_signing` and its public `.pub` counterpart. No `ssh-add` or SSH agent is required for this route.
+**Expected result:** a protected private key named `id_ed25519_signing` and its public `.pub` counterpart. No `ssh-add` or SSH agent is required. Continue with [local-file setup](#local-file-setup--register-and-configure).
 
 Sources: [key generation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [OpenSSH key files](https://man.openbsd.org/ssh-keygen).
 
-**Path 2 — Use an existing local key.** Skip all generation commands. Confirm its private-file path, matching public file, fingerprint, permissions, and passphrase availability. Substitute these paths throughout the local-file examples. Expected: the existing identity is reused unchanged.
+### Path A-existing — Reuse a local SSH key
 
-**Path 3 — Use an external key manager such as 1Password.** Open and unlock the desktop app, then select an existing supported Ed25519 or RSA SSH Key item. To create one there instead: **New Item → SSH Key → Add Private Key → Generate a New Key → choose Ed25519 → Generate → Save**. Keep the private key in the manager. Copy its **public key** and record the fingerprint for Step A3. Expected: a manager-held key, without exporting a private file. Continue through Step A4's manager branch, not its direct-file commands.
+Confirm the private-file path, matching public file, fingerprint, user-only permissions, and passphrase availability. Keep the existing identity unchanged. Substitute these real paths for `id_ed25519_signing` and its `.pub` counterpart in the following local-file steps. Continue with [local-file setup](#local-file-setup--register-and-configure).
 
-Source: [1Password key creation and public-key sharing](https://www.1password.dev/ssh/manage-keys).
+### Local-file setup — Register and configure
 
+Complete these two steps for the local key you prepared above.
 
-### Step A3 — Register only the public key on GitHub
+#### 1. Register the public key
 
-Open **Settings → SSH and GPG keys → New SSH key**, select **Signing key**, give it a useful title, and paste the complete public-key line. For the manager path, copy the public field from 1Password instead of running the local-file clipboard commands.
+Copy the complete public-key line using your platform's command:
 
 ```sh
 # macOS: copy PUBLIC key
@@ -186,15 +121,15 @@ pbcopy < "$HOME/.ssh/id_ed25519_signing.pub"
 Get-Content "$HOME/.ssh/id_ed25519_signing.pub" | Set-Clipboard
 ```
 
-**Expected result:** this public key appears as a Signing key on the correct account. Registering it as an Authentication key alone is insufficient. If reusing one public key for both roles, register it separately under each role. Never upload the private file.
+Open **GitHub Settings → SSH and GPG keys → New SSH key**, select **Signing key**, give it a useful title, and paste the public key. Never upload the private file. Keep this public key and its fingerprint available for local verification.
+
+**Expected result:** the public key appears as a Signing key on the correct account. An Authentication key registration alone does not enable signing verification; the two roles are explained in the opening recommendation.
 
 Source: [GitHub's two SSH key roles](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-### Step A4 — Configure the signer for your chosen source
+#### 2. Configure the native signer
 
-**Local-file paths 1 or 2:**
-
-Run inside the repository only after deliberately choosing native OpenSSH over any existing signer:
+Inside the intended repository, select native OpenSSH and the private-file path you chose:
 
 ```sh
 git config --local gpg.format ssh
@@ -202,21 +137,49 @@ git config --local gpg.ssh.program ssh-keygen
 git config --local user.signingkey "$HOME/.ssh/id_ed25519_signing"
 ```
 
-**There is no `.pub` suffix in `user.signingkey` here.** Git accepts a private-key path directly. A public-key path or `key::` public-key value instead requires the private half through an SSH agent. Do not replace an existing 1Password signer merely to follow this example.
+**There is no `.pub` suffix in `user.signingkey` here.** Git accepts the private-key path directly, without an SSH agent. Start in an interactive terminal so the encrypted key can request its passphrase. It may ask again for each signing operation. Keep the passphrase protection.
 
-**Expected result:** Git selects the native signer and private file. An encrypted key needs a supported passphrase prompt; it may ask again for each signing operation. Start in an interactive terminal. Some GUI/noninteractive environments cannot display the prompt correctly; stop and fix the prompt or choose the optional agent workflow rather than removing the passphrase.
-
-On Windows, if multiple OpenSSH installations cause ambiguity, select the verified executable path, for example `C:/Windows/System32/OpenSSH/ssh-keygen.exe`, instead of `ssh-keygen`. `gpg.ssh.program` controls signing; `core.sshCommand` controls transport.
+**Expected result:** Git selects the native signer and your private file. Continue with [SSH completion](#ssh-completion--sign-and-verify). Other prompt and executable configurations are covered in the [signer compatibility reference](#reference--signer-compatibility).
 
 Sources: [Git user.signingKey](https://git-scm.com/docs/git-config#Documentation/git-config.txt-usersigningKey), [OpenSSH signature key inputs](https://man.openbsd.org/ssh-keygen).
 
-**Manager path 3 — 1Password:** this integration signs with supported SSH keys; it does not manage OpenPGP private keys. Enable the supported 1Password SSH integration and open the chosen SSH Key item → **Configure Commit Signing**. Use **Copy Snippet** for the intended repository, or **Edit Automatically** only if you deliberately want global configuration. Keep its `op-ssh-sign` integration rather than setting a local private-file path. Review any copied snippet: signer, format, and key selection belong to this route; `commit.gpgsign=true` is only the optional auto-sign default, so explicit `-S` remains sufficient without it. Approve the signing request through 1Password when prompted. Expected: Git invokes the manager-backed signer for the selected key. No private-key export is needed.
+### Path A-manager — Use 1Password
 
-Sources: [1Password signing setup](https://www.1password.dev/ssh/git-commit-signing), [1Password SSH agent](https://www.1password.dev/ssh/agent).
+This integration signs with supported SSH keys; it does not manage OpenPGP private keys. Its supported integration is required for this path.
 
-### Step A5 — Review and create a signed commit
+1. Open and unlock the desktop app. Select an existing supported Ed25519 or RSA SSH Key item, or create an Ed25519 item with **New Item → SSH Key → Add Private Key → Generate a New Key → choose Ed25519 → Generate → Save**. Keep the private key in the manager. Generation options and official import support are documented separately in the [key appendix](#appendix--ssh-key-types-and-sizes); no import was tested for this guide.
+2. Copy the item's **public key** and record its fingerprint. Open **GitHub Settings → SSH and GPG keys → New SSH key**, select **Signing key**, give it a useful title, and paste the complete public-key line. Keep the public key for local verification. No private-key export is needed.
+3. Enable the supported 1Password SSH integration. Open the selected SSH Key item → **Configure Commit Signing** → **Copy Snippet**. Apply its signer, format, and key selection to the intended repository. Keep the `op-ssh-sign` integration and manager-held key selection. The snippet's `commit.gpgsign=true` is an optional automatic-signing default; the explicit `-S` command below does not require it.
 
-On your own work branch, review already-staged changes:
+**Expected result:** Git invokes the 1Password signer for the registered key. Continue with [SSH completion](#ssh-completion--sign-and-verify), approving the signing request through 1Password when prompted. Global automatic editing is covered under [optional defaults](#optional-c2--automatic-signing-and-global-defaults).
+
+Sources: [1Password key creation and public-key sharing](https://www.1password.dev/ssh/manage-keys), [1Password signing setup](https://www.1password.dev/ssh/git-commit-signing), [1Password SSH agent](https://www.1password.dev/ssh/agent).
+
+### SSH completion — Sign and verify
+
+The following steps use the signer and public key you selected above.
+
+#### Step A2 — Prepare trusted local verification
+
+Create/edit `~/.ssh/allowed_signers` as plain UTF-8 text, preserving existing entries. Add one trusted entry using your registered public key:
+
+```text
+YOUR_VERIFIED_EMAIL namespaces="git" PUBLIC_KEY_TYPE PUBLIC_KEY_BASE64
+```
+
+Copy `PUBLIC_KEY_TYPE` and the complete `PUBLIC_KEY_BASE64` from the first two fields of that public-key text, and omit its trailing comment. The key's fingerprint must be the one you recorded. Verify other people's fingerprints through a trusted channel before adding them. Set the trust-file path in the intended repository:
+
+```sh
+git config --local gpg.ssh.allowedSignersFile "$HOME/.ssh/allowed_signers"
+```
+
+**Expected result:** a trusted public-key entry for local verification. Its principal is a local identifier, not proof of GitHub email ownership. The trust file supports this local check; creating signatures and GitHub verification do not use it. Key-field and encoding details are in the [compatibility reference](#reference--signer-compatibility).
+
+Sources: [local SSH trust](https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile), [allowed signers format](https://man.openbsd.org/ssh-keygen#ALLOWED_SIGNERS).
+
+#### Step A3 — Review and create a signed commit
+
+On your own work branch, review already-staged changes, then sign:
 
 ```sh
 git status --short
@@ -224,35 +187,26 @@ git diff --cached
 git commit -S -m "YOUR_COMMIT_MESSAGE"
 ```
 
-**Expected result:** a new signed commit. `-S` requests a cryptographic signature. Lowercase `-s` only adds a Signed-off-by trailer. No default auto-sign setting is required when you explicitly use `-S`.
+**Expected result:** a new signed commit. `-S` requests a cryptographic signature; lowercase `-s` only adds a Signed-off-by trailer. Approve the chosen signer's passphrase or manager prompt.
 
 Source: [Git commit flags](https://git-scm.com/docs/git-commit).
 
-### Step A6 — Verify locally and check GitHub when published
-
-For the manager path, use the public key copied from the SSH Key item; a local `.pub` file is not required. For trusted **local SSH verification**, create/edit `~/.ssh/allowed_signers` as plain 8-bit Unicode Transformation Format (UTF-8) or American Standard Code for Information Interchange (ASCII, a text encoding) text. Preserve existing entries. Add one trusted public-key entry:
-
-```text
-YOUR_VERIFIED_EMAIL namespaces="git" PUBLIC_KEY_TYPE PUBLIC_KEY_BASE64
-```
-
-Replace `PUBLIC_KEY_TYPE` and `PUBLIC_KEY_BASE64` with the first and complete second fields of your selected signing key's public-key text, from its `.pub` file or the manager's public-key export. For the RSA alternative, the type is `ssh-rsa`; for Ed25519 it is `ssh-ed25519`. Copy both fields from the same key and omit the trailing comment. The key type is not the signature algorithm: do not substitute `rsa-sha2-256` or `rsa-sha2-512` for `ssh-rsa`. Avoid Windows PowerShell 5.1's default 16-bit Unicode Transformation Format (UTF-16) redirection. Then:
+#### Step A4 — Verify the signature
 
 ```sh
-git config --local gpg.ssh.allowedSignersFile "$HOME/.ssh/allowed_signers"
 git verify-commit HEAD
 git log -1 --show-signature
 ```
 
-**Expected result:** local verification succeeds with the expected key and signer. The trust file is needed for this local check, **not** for creating a signature or for GitHub's verification. Its principal is a local identifier; do not treat it as proof of GitHub email ownership. Verify other people's fingerprints through a trusted channel before adding them.
+**Expected result:** local verification succeeds with the expected key and signer. After a separate decision to publish and a permitted push, inspect the commit's **Verified** badge on GitHub. GitHub uses account-registered Signing keys. Local success does not grant push permission or bypass branch rules. See [verification results](#reference--verification-results) for status codes and trust warnings.
 
-After a separate decision to publish and a permitted push, inspect the commit's **Verified** badge on GitHub. GitHub uses account-registered Signing keys, not your local trust file. Local success does not grant push permission or bypass branch rules.
+Source: [GitHub verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
-Sources: [local SSH trust](https://git-scm.com/docs/git-config#Documentation/git-config.txt-gpgsshallowedSignersFile), [allowed signers format](https://man.openbsd.org/ssh-keygen#ALLOWED_SIGNERS), [GitHub verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
+## Route B — GPG signing
 
-## Route B — Required workflow for GPG signing
+GPG provides an alternative signing method. Modern GnuPG uses **gpg-agent (its background key service) as part of its architecture**, normally started automatically. This is distinct from the optional ssh-agent used for SSH keys.
 
-GPG is an alternative to Route A, not an extra layer you must install for SSH signing. Modern GnuPG uses **gpg-agent (its background key service) as part of its architecture**, normally started automatically. That is distinct from the **optional ssh-agent** in the SSH workflows.
+For a new OpenPGP signing key, this guide recommends at least 128 bits of classical security. RSA 4096 is a common compatibility choice; use a GitHub-supported, team-approved signing algorithm. The [OpenPGP key reference](#openpgp-signing-key-types-and-sizes) explains sizes, curves, and signing capability.
 
 ### Step B1 — Check GPG and your repository identity
 
@@ -263,34 +217,43 @@ git --version
 gpg --version
 git config --local user.name "YOUR_NAME"
 git config --local user.email "YOUR_VERIFIED_EMAIL"
-gpg --list-secret-keys --keyid-format=long --with-subkey-fingerprint
 ```
 
-**Expected result:** the intended Git/GPG installation and commit identity. For GitHub GPG verification, the committer email must match an email on your GPG key and a verified email on the intended GitHub account. You may use your exact GitHub noreply address consistently. The display name need not equal your GitHub username.
+**Expected result:** the intended Git/GPG installation and commit identity. For GitHub GPG verification, the committer email must match an email on your GPG key and a verified email on the intended GitHub account. You may use your exact GitHub noreply address consistently. The display name need not equal your GitHub username. Continue with the new-key or existing-key path you chose in the opening flow.
 
 Sources: [GPG email matching](https://docs.github.com/en/authentication/troubleshooting-commit-signature-verification/using-a-verified-email-address-in-your-gpg-key), [GPG prerequisites](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key).
 
-### Step B2 — Reuse a suitable secret key or generate one
-
-If the listing already shows a suitable key, skip generation. Otherwise:
+### Path B-new — Generate a GPG key
 
 ```sh
 gpg --full-generate-key
 ```
 
-Choose a GitHub-supported, team-approved algorithm; RSA 4096 is a common compatibility choice. Menu choices vary by version. Enter your identity and matching email, a strong passphrase, and an expiry consistent with your policy. Secure an encrypted backup and revocation certificate.
-
-See [OpenPGP signing key types and sizes](#openpgp-signing-key-types-and-sizes) for the recommended strength and size or curve choices.
+Choose your signing algorithm and size. Enter your identity and matching email, a strong passphrase, and an expiry consistent with your policy. Secure an encrypted backup and revocation certificate. Record the full signing-key fingerprint:
 
 ```sh
 gpg --list-secret-keys --keyid-format=long --with-subkey-fingerprint
 ```
 
-**Expected result:** a usable signing key and its full fingerprint. Do not rely on a short identifier (ID) alone.
+**Expected result:** a usable signing key and its full fingerprint. Do not rely on a short identifier (ID) alone. Continue with [GPG completion](#gpg-completion--register-configure-sign-and-verify).
 
 Source: [GPG key generation](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key).
 
-### Step B3 — Register the public GPG key
+### Path B-existing — Reuse a GPG key
+
+List the available secret keys:
+
+```sh
+gpg --list-secret-keys --keyid-format=long --with-subkey-fingerprint
+```
+
+Confirm the selected key can sign, is usable, and has the matching email and available private-key material. Record its full fingerprint rather than a short ID. Continue with [GPG completion](#gpg-completion--register-configure-sign-and-verify).
+
+### GPG completion — Register, configure, sign, and verify
+
+Complete these steps with the full fingerprint you recorded above.
+
+#### Step B2 — Register the public GPG key
 
 ```sh
 gpg --armor --export "YOUR_GPG_FINGERPRINT"
@@ -302,7 +265,7 @@ Copy the full PGP PUBLIC KEY BLOCK into **GitHub Settings → SSH and GPG keys �
 
 Source: [adding a GPG public key](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account).
 
-### Step B4 — Select the GPG signer
+#### Step B3 — Select the GPG signer
 
 Inside the intended repository:
 
@@ -311,35 +274,25 @@ git config --local gpg.format openpgp
 git config --local user.signingkey "YOUR_GPG_FINGERPRINT"
 ```
 
-If Git selects the wrong GPG installation, set its verified path using your platform's command:
-
-```sh
-# macOS
-git config --local gpg.openpgp.program "$(command -v gpg)"
-```
-
-```powershell
-# PowerShell
-git config --local gpg.openpgp.program (Get-Command gpg).Source
-```
-
-**Expected result:** Git uses the intended GPG key and keyring. To force a particular signing subkey, use its full fingerprint followed by `!`, quoted, after confirming it has signing capability and available private-key material.
+**Expected result:** Git uses the intended GPG key and keyring. Explicit executable paths and signing-subkey selection are in the [compatibility reference](#reference--signer-compatibility).
 
 Source: [Git signing configuration](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key).
 
-### Step B5 — Make passphrase entry work and sign
+#### Step B4 — Prepare passphrase entry
 
-A terminal device is also called a TTY (from teletype); `GPG_TTY` tells GnuPG which terminal to use for prompts.
-
-In an interactive macOS shell, set the terminal for GPG if needed:
+In an interactive macOS shell, set the terminal for GPG:
 
 ```sh
 export GPG_TTY=$(tty)
 ```
 
-Native Windows Gpg4win uses Windows pinentry (the passphrase prompt program) and does not require `GPG_TTY`. GUI apps may need graphical pinentry. Use the real installed path if configuring `pinentry-program`; do not copy another computer's Homebrew prefix. After adjusting agent configuration, `gpgconf --kill gpg-agent` allows a fresh agent on the next use.
+A terminal device is also called a TTY (from teletype); `GPG_TTY` tells GnuPG which terminal to use for prompts. Native Windows Gpg4win uses Windows pinentry (the passphrase prompt program) and does not require `GPG_TTY`. Use your platform's prompt when signing. Never embed the passphrase in scripts, command arguments, Git settings, or environment variables. GUI prompt configuration is in the [compatibility reference](#reference--signer-compatibility).
 
-Review staged content on your work branch, then:
+Source: [GnuPG agent and pinentry](https://gnupg.org/documentation/manuals/gnupg-devel/Invoking-GPG_002dAGENT.html).
+
+#### Step B5 — Review, sign, and verify
+
+On your own work branch, review staged content, then:
 
 ```sh
 git status --short
@@ -349,11 +302,9 @@ git verify-commit HEAD
 git log -1 --show-signature
 ```
 
-**Expected result:** passphrase entry works, a signed commit is created, and verification reports the expected key. Read trust warnings separately from cryptographic validity. Never embed the passphrase in scripts, command arguments, Git settings, or environment variables.
+**Expected result:** passphrase entry works, a signed commit is created, and verification reports the expected key. Read trust warnings separately from cryptographic validity. After separately authorizing publication, inspect GitHub's **Verified** badge. See [verification results](#reference--verification-results) for details.
 
-After separately authorizing publication, inspect GitHub's Verified badge. `allowedSignersFile` is an SSH-verification setting and is not part of this GPG route.
-
-Sources: [GnuPG agent and pinentry](https://gnupg.org/documentation/manuals/gnupg-devel/Invoking-GPG_002dAGENT.html), [verification](https://git-scm.com/docs/git-verify-commit).
+Source: [verification](https://git-scm.com/docs/git-verify-commit).
 
 ## Optional convenience tools and defaults
 
@@ -383,9 +334,41 @@ To sign future commits by default in this repository:
 git config --local commit.gpgsign true
 ```
 
-This saves typing `-S`; it does not sign old commits. `--global` is optional and affects other repositories unless overridden. Review local and conditional settings before changing global configuration.
+This saves typing `-S`; it does not sign old commits. `--global` is optional and affects other repositories unless overridden. Review local and conditional settings before changing global configuration. For 1Password, **Edit Automatically** is another choice only when you deliberately want global configuration; **Copy Snippet** supports reviewing the settings for the intended repository.
 
 Source: [signing defaults](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
+
+## Reference — Signer compatibility
+
+These details help diagnose a tool or prompt mismatch; they do not add steps to every route.
+
+### Native SSH signing and local verification
+
+An integrated development environment (IDE, a coding application) or graphical user interface (GUI, a graphical application) may use a different binary from your terminal. On Windows, multiple OpenSSH installations can require a verified executable path, for example `C:/Windows/System32/OpenSSH/ssh-keygen.exe`, instead of `ssh-keygen`. `gpg.ssh.program` controls signing; `core.sshCommand` controls transport. Do not replace an existing 1Password signer merely to follow the native-file example.
+
+A public-key path or `key::` public-key value in `user.signingkey` requires the private half through an SSH agent. The minimum local-file route uses the private-key path directly. Some GUI/noninteractive environments cannot display its passphrase prompt correctly; stop and fix the prompt or deliberately choose the optional agent workflow, keeping the passphrase.
+
+For the `allowed_signers` entry, the RSA public-key type is `ssh-rsa`; for Ed25519 it is `ssh-ed25519`. The public-key type is not the signature algorithm: do not substitute `rsa-sha2-256` or `rsa-sha2-512` for `ssh-rsa`. Copy both public-key fields from the same selected key. Plain 8-bit Unicode Transformation Format (UTF-8) or American Standard Code for Information Interchange (ASCII) text is supported; avoid Windows PowerShell 5.1's default 16-bit Unicode Transformation Format (UTF-16) redirection.
+
+### GPG executable, subkeys, and prompts
+
+Generation menus vary by GnuPG version. When Git selects the wrong GPG installation, set its verified path using your platform's command:
+
+```sh
+# macOS
+git config --local gpg.openpgp.program "$(command -v gpg)"
+```
+
+```powershell
+# PowerShell
+git config --local gpg.openpgp.program (Get-Command gpg).Source
+```
+
+To force a particular signing subkey, use its full fingerprint followed by `!`, quoted, after confirming it has signing capability and available private-key material.
+
+GUI apps may need graphical pinentry. Use the real installed path when configuring `pinentry-program`; do not copy another computer's Homebrew prefix. After adjusting agent configuration, `gpgconf --kill gpg-agent` allows a fresh agent on the next use. `allowedSignersFile` is an SSH-verification setting and does not apply to the GPG route.
+
+Sources: [Git signing-key inputs](https://git-scm.com/docs/git-config#Documentation/git-config.txt-usersigningKey), [OpenSSH signature key inputs](https://man.openbsd.org/ssh-keygen), [Git signing configuration](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key), [GnuPG agent and pinentry](https://gnupg.org/documentation/manuals/gnupg-devel/Invoking-GPG_002dAGENT.html).
 
 ## Reference — Verification results
 
@@ -454,6 +437,87 @@ Sources: [amend](https://git-scm.com/docs/git-commit), [rebase signing](https://
 
 Before publishing, verify every commit newly introduced to the target branch, including merged history. Investigate missing/unverifiable signatures first. Check the exact remote and branch, keep private keys and passphrases out of Git, and ensure public commit name/email are appropriate to disclose.
 
+## Appendix — SSH key types and sizes
+
+**Checked 10 October 2026.**
+
+| Key type | Guidance for commit signing |
+| --- | --- |
+| Ed25519 | Preferred for new keys with compatible tools. |
+| RSA | A compatibility alternative; use 4096 bits for a new key. |
+| ECDSA | Available for local-file use with compatible tools; unsupported by 1Password. |
+| ~~DSA~~ (`ssh-dss`) | DSA SSH keys are unsupported by GitHub; do not generate them for SSH use. |
+
+Sources: [GitHub SSH key guidance](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), [supported RSA/ECDSA keys](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+
+**1Password generation (checked 11 October 2026):** 1Password can generate Ed25519 or RSA **2048-, 3072-, or 4096-bit** SSH keys. For new manager-held keys, choose Ed25519 or RSA 3072/4096 to follow this guide's strength recommendation. [Official key-generation options](https://www.1password.dev/cli/ssh-keys#generate-an-ssh-key).
+
+**1Password import (official documented support; not tested for this guide):** The [official key-import guidance](https://www.1password.dev/ssh/manage-keys#key-import-errors) lists Ed25519 or RSA **2048-, 3072-, or 4096-bit** keys as supported; other RSA lengths, DSA, and ECDSA are unsupported. This import scope comes from the import documentation, not from the generation options.
+
+SHA-2 (Secure Hash Algorithm 2) is a family of hash functions; SHA-1 (Secure Hash Algorithm 1) is an older hash function.
+
+An `ssh-rsa` public-key prefix does not imply SHA-1 ([key-format distinction](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). For RSA commit signatures, the [SSH signature format (SSHSIG), a detached cryptographic proof](https://github.com/openssh/openssh-portable/blob/master/PROTOCOL.sshsig) requires `rsa-sha2-256` or `rsa-sha2-512`, never legacy RSA/SHA-1.
+
+SSH transport authentication and commit signing have separate algorithm and verification requirements.
+
+For GitHub policy changes and dates, see the [SSH policy appendix](#appendix--github-ssh-key-policy-and-migration-dates).
+
+For the RSA alternative in your selected new-local-key path:
+
+```sh
+ssh-keygen -t rsa -b 4096 -C "YOUR_EMAIL_OR_LABEL" -f "$HOME/.ssh/id_rsa_signing"
+```
+
+Use this instead of the Ed25519 generation command. Replace `id_ed25519_signing` with `id_rsa_signing` in subsequent local-file examples, including `.pub` paths.
+
+### Choosing a key size
+
+**For new keys, this guide recommends at least 128 bits of classical security.** Follow a stricter organization policy where applicable. This is the guide's recommendation, not a universal GitHub requirement or a claim that existing RSA 2048 keys are immediately unsafe. Existing-key and 1Password routes still reuse suitable keys without a generation step.
+
+Key size measures an algorithm's parameters; security strength estimates resistance to attacks. Compare strength across algorithms, not raw bit counts.
+
+| SSH key type | Size or curve choice | Approximate classical security |
+| --- | --- | --- |
+| RSA | At least 3072 bits for a new key; the example above uses 4096. | 3072 bits provides about 128 bits of security; 4096 adds margin. |
+| ECDSA | P-256, P-384, or P-521; with `-t ecdsa`, select `-b 256`, `-b 384`, or `-b 521`, respectively. | About 128, 192, or 256 bits, respectively. |
+| Ed25519 | Fixed parameters; there is no larger Ed25519 key-size option. | About 128 bits. |
+
+Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5, §7.1 for Ed25519](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf).
+
+RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected generation route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
+
+### OpenPGP signing key types and sizes
+
+For a new OpenPGP signing key, this guide recommends **at least 128 bits of classical security**. Key sizes and encoded public-key lengths do not compare algorithms directly. Suitable existing keys do not automatically need replacement.
+
+| Signing algorithm | Size or curve | Strength and selection guidance |
+| --- | --- | --- |
+| RSA | 2048, 3072, or 4096 bits | About 112 bits of security at 2048; about 128 at 3072. RSA 4096 adds margin, not 256-bit security. RSA 3072/4096 are compatibility choices; RFC 9580 discourages new RSA keys and requires at least 3072 bits when generating them. |
+| EdDSA with Ed25519 | Fixed parameters; 32-byte encoded public-key value | About 128 bits of security; a practical modern option with compatible tools and key formats. There is no larger Ed25519 key-size setting. |
+| EdDSA with Ed448 | Fixed parameters; 57-byte encoded public-key value | About 224 bits of security. GnuPG has supported Ed448 since 2.3, but GitHub's generic EdDSA listing does not guarantee Ed448 or every OpenPGP packet format works; test GitHub verification before choosing it. |
+| ECDSA | NIST P-256, P-384, or P-521; GnuPG names `nistp256`, `nistp384`, `nistp521` | About 128, 192, or 256 bits of security, respectively. Other curves, such as Brainpool or secp256k1, depend on the build; do not assume GitHub accepts every curve. |
+| DSA (legacy) | Historical 1024-, 2048-, or 3072-bit parameters | Do not generate new DSA keys: RFC 9580 forbids this, and FIPS 186-5 retains DSA only for verifying old signatures. GitHub still lists DSA for OpenPGP; this is distinct from its retired DSA SSH keys. |
+
+Sources: [GitHub's OpenPGP algorithm list](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key#supported-gpg-key-algorithms), [RFC 9580 algorithm and generation rules](https://www.rfc-editor.org/rfc/rfc9580.html#section-12.4), [Ed25519 and Ed448 parameters](https://www.rfc-editor.org/rfc/rfc8032.html#section-1), [NIST security-strength comparison](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf), [FIPS 186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
+
+**Choose signing capability, not an encryption algorithm.** ECDH with `cv25519` or `cv448`, and ElGamal, are encryption choices; they cannot sign Git commits. ElGamal is legacy, and RFC 9580 forbids generating new ElGamal keys. GnuPG's ML-KEM/Kyber hybrid options are also for encryption, not post-quantum commit signatures; 768/1024 identify parameter sets, not security bits. A GitHub list containing encryption algorithms does not make them signing algorithms. A signing-only setup needs no encryption subkey. Primary keys and subkeys may use different algorithms and strengths; assess each role instead of giving every key the same raw length.
+
+Check the actual installation with `gpg --version` and `gpg --with-colons --list-config curve`; generation menus vary by version. GnuPG's ability to create a key does not establish GitHub support for its curve or packet format. ASCII armor changes the text representation, not the underlying key format. Upload only public keys and verify a test signature on GitHub before relying on a less widely supported choice.
+
+Sources: [OpenPGP algorithm roles](https://www.rfc-editor.org/rfc/rfc9580.html#section-9.1), [GnuPG key management and available algorithms](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
+
+Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the [PQC appendix](#appendix--post-quantum-cryptography-pqc).
+
+## Appendix — GitHub SSH key policy and migration dates
+
+**Checked 10 October 2026.** These policy dates add no setup steps.
+
+DSA SSH keys have been unsupported by GitHub since 15 March 2022. [GitHub SSH key support](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+**Announced, not yet effective:** RSA uploads for either role require at least 3072 bits from **14 October 2026**. RSA/SHA-1 authentication brownouts: **4 November** and **9 December 2026**; permanent removal: **13 January 2027**. [Schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/).
+
+Do not apply old SSH authentication exceptions to commit signing.
+
 ## Appendix — Post-quantum cryptography (PQC)
 
 **Checked 10 October 2026.** This is a policy recommendation, not an extra required workflow step.
@@ -494,7 +558,7 @@ This reference explains terms used in this commit signing guide. It adds no requ
 | 1Password | An external key manager with SSH-agent and signing integrations. Its supported integration is required only when choosing that key-source route. |
 | Key size / security strength | Parameter length versus estimated resistance to attacks. Compare security strength across algorithms, not raw key lengths. |
 | RSA | Rivest–Shamir–Adleman: a public-key algorithm usable for authentication and signing. Its key format does not determine its signature hash. |
-| DSA | Digital Signature Algorithm: a legacy signature scheme. GitHub stopped supporting DSA SSH keys on 15 March 2022; this SSH restriction is distinct from its GPG-key support. |
+| DSA | Digital Signature Algorithm: a legacy signature scheme. GitHub does not support DSA SSH keys; this SSH restriction is distinct from its GPG-key support. |
 | ECDSA | Elliptic Curve Digital Signature Algorithm: a classical signature scheme whose curve determines its parameters, distinct from Ed25519. |
 | Ed25519 | A signature scheme in the Edwards-curve Digital Signature Algorithm family; the example key type in these guides. |
 | EdDSA / Ed448 | Edwards-curve Digital Signature Algorithm is a signature family. Ed448 is a fixed-parameter scheme in that family; tool support does not establish GitHub format compatibility. |
