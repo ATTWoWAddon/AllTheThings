@@ -330,4 +330,124 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(279246),	-- Torch of Light
 		}),
 	}),
+	prof(ENGINEERING, {
+		filter(AMMO, {
+			-- Unknown
+			i(274387),	-- Swiftfeather Arrow
+			i(274388),	-- Swiftstrike Shot
+		}),
+		n(ARMOR, {
+			i(280311),	-- Bent Goggles
+			i(280308),	-- Clanking Cord
+			i(280313),	-- Dented Goggles
+			i(280310),	-- Floppy Goggles
+			i(280307),	-- Gizmo Girdle
+			i(260810),	-- SAF-T Disposable Parachute
+			i(280312),	-- Stuckbutton Goggles
+			i(280306),	-- Whimsical Waistwrap
+			-- Unknown
+			i(260829),	-- EZ-Thro Magnetic Displacer
+			i(260828),	-- SAF-T Nitro Boosts
+			i(260830),	-- SAF-T Teleport
+		}),
+		filter(MISC, {
+			-- Bombs
+			i(260795),	-- EZ-Thro Copper Bomb XL
+			i(260793),	-- SAF-T Copper Bomb
+			i(260792),	-- SAF-T Dynamite
+			-- Misc
+			i(279989),	-- Anarchist's Workbench
+			i(260807),	-- Compact Critter Carrier
+			i(260823),	-- Dimensional Transporter - Mt.
+			i(260811),	-- Gnomish Army Knife
+			i(269902),	-- Hoof-Shaped Foot Pedal
+			i(260812),	-- Loot-A-Rang
+			i(279950),	-- Reagent Bot
+			i(279949),	-- Repair Bot
+			i(210147),	-- Shredder Autosalvage Unit
+			i(260827),	-- Stealthman 52
+			i(260825),	-- Ultralight Goblin Glider
+			i(260822),	-- Ultrasafe Rechargeable Battery
+			-- Unknown
+			-- Bombs
+			i(260802),	-- EZ-Thro Bronze Mortar
+			i(260817),	-- EZ-Thro Dark Bomb
+			i(260803),	-- EZ-Thro Grenade
+			i(260818),	-- EZ-Thro Mana Bomb
+			i(260816),	-- EZ-Thro Thorium Grenade
+			i(284868),	-- Holy Hand Grenade of Alterac
+			i(260805),	-- SAF-T Bomb
+			i(260797),	-- SAF-T Bronze Bomb
+			i(260814),	-- SAF-T Clever Dynamite
+			i(260798),	-- SAF-T Jumbo Dynamite
+			i(260800),	-- Shafety Sheep
+			i(260809),	-- Tru-Trigger Frag Bomb
+			i(284869),	-- Unsanctified Grenade
+			-- Fireworks
+			i(21591),	-- Large Purple Rocket
+			i(21717),	-- Large Purple Rocket Cluster
+			i(21593),	-- Large White Rocket
+			i(21719),	-- Large White Rocket Cluster
+			i(21595),	-- Large Yellow Rocket
+			i(21720),	-- Large Yellow Rocket Cluster
+			i(21575),	-- Purple Rocket Cluster
+			i(21560),	-- Small Purple Rocket
+			i(21561),	-- Small White Rocket
+			i(21562),	-- Small Yellow Rocket
+			i(21577),	-- White Rocket Cluster
+			i(21578),	-- Yellow Rocket Cluster
+		}),
+		filter(REAGENTS, {
+			i(260801),	-- EZ-Thro Fireproof Fuse
+			i(260794),	-- EZ-Thro Wrap
+			i(260796),	-- No Slip SAF-T Padding
+			i(260799),	-- SAF-T Bell
+			i(260784),	-- SAF-T Tabs
+			i(249432),	-- Sandpaper
+			-- Unknown
+			i(260815),	-- EZ-Thro Shell
+			i(260808),	-- EZ-Thro Tru-Trigger
+			i(260804),	-- SAF-T Casing
+			i(260813),	-- SAF-T Tube
+		}),
+		filter(THROWN, {
+			i(285276),	-- Satchel of Bronze Bombs
+			i(285275),	-- Satchel of Copper Bombs
+			i(285278),	-- Satchel of Dark Iron Bombs
+			i(285277),	-- Satchel of Iron Bombs
+		}),
+		filter(TOYS, {
+			i(269900),	-- Centaur Banner Deployment Device (TOY!)
+		}),
+		filter(TRINKET_F, {
+			i(260806),	-- Emergency Field Cloak
+			i(260824),	-- Gnomish Poultryizer
+			-- Unknown
+			i(260821),	-- EZ and SAF Field Transporter: Mt. Hyjal
+			i(260819),	-- EZ-Thro Field Transporter: Gadgetzan
+			i(260820),	-- SAF-T Emergency Ripper: Everlook
+		}),
+		n(WEAPONS, {
+			-- Unknown
+			i(279273),	-- Hyper Deluxe Sniper Rifle Mk XVII
+		}),
+		n(WEAPON_ENCHANTMENTS, {
+			-- Unknown
+			i(279272),	-- SAF-T Ultra Precision Scope
+		}),
+	}),
+	prof(FIRST_AID, {
+		i(255717),	-- Clever Poultice
+		i(279968),	-- First Aid Kit
+		i(279951),	-- Plague Doctor's Laboratory
+		i(255715),	-- Potent Anti-Venom
+		i(255716),	-- Simple Poultice
+		i(279940),	-- Toxin Study
+		i(255720),	-- Woolen Tourniquet
+		-- Unknown
+		i(255721),	-- Leather Tourniquet
+		i(255719),	-- Powerful Poultice
+		i(255718),	-- Superior Poultice
+		i(255722),	-- Surgical Tourniquet
+	}),
 }));

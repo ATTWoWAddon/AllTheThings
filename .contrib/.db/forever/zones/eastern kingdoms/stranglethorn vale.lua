@@ -165,7 +165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			prof(ENGINEERING, {
 				n(7406, {	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["coord"] = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
-					["groups"] = ALL_GNOMISH_ENGINEERING,
+					["groups"] = ENGINEERING_RECIPES.GNOMISH_ENGINEERING,
 				}),
 			}),
 			prof(LEATHERWORKING, {
@@ -550,6 +550,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				["coord"] = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				["lvl"] = 45,
 				["groups"] = {
+					objective(1, {	-- 0/1	Weaponry Creation
+						["provider"] = { "n", 7802 },	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
+					}),
 					i(10697),	-- Enchanted Azsharite Felbane Dagger
 					i(10698),	-- Enchanted Azsharite Felbane Staff
 					i(10696),	-- Enchanted Azsharite Felbane Sword

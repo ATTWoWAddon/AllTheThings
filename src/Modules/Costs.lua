@@ -13,15 +13,20 @@ local PlayerHasToy
 	= PlayerHasToy
 
 -- WoW API Cache
+---@type function
 local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
 
 -- App locals
+---@type function,function,function,function,function
 local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, IsComplete
 	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
+---@type function
 local GetItemCount = app.WOWAPI.GetItemCount
+---@type function,function,function,
 local IsSpellKnownHelper, CreateObject, FillGroups
 
 -- Module locals
+---@type function,function,function,function,table
 local RecursiveGroupRequirementsFilter, RecursiveAccountFilter, DGU, UpdateRunner, ExtraFilters
 -- If a Thing which has a cost is not a quest or is available as a quest
 -- Also exclude anything marked with _nosearch in its parent chain.
@@ -201,7 +206,7 @@ do
 		return total
 	end
 end
-local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost)
+local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost, chainUpdate)
 	-- Intent:
 	-- isCost 		= you should see this Thing as a Cost because it's needed for Purchases
 	-- isOwnedCost 	= you own enough to complete all Purchases (according to ATT)
@@ -231,8 +236,13 @@ local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost)
 			c.isCost = nil
 			c.isOwnedCost = nil
 		end
-		-- regardless of the Cost state, make sure to update this specific cost group for visibility
-		DGU(c)
+		-- regardless of the Cost state, make sure to update this specific cost group for visibility, unless chaining updates
+		if not chainUpdate then
+			DGU(c)
+		end
+	end
+	if chainUpdate then
+		UpdateRunner.Run(app.UpdateRawGroups, costs)
 	end
 end
 local function DoCollectibleCheckForItemRef(ref, itemID, itemUnbound)
@@ -356,7 +366,7 @@ end
 local function PlayerIsMissingProviderItem(itemID)
 	return not PlayerHasToy(itemID) and GetItemCount(itemID, true, nil, true, true) == 0
 end
-local function FinishCostAssignmentsForItem(itemID, costs, refresh)
+local function FinishCostAssignmentsForItem(itemID, costs, refresh, chainUpdate)
 	local isProv = CostTotals.ip[itemID]
 	local total = CostTotals.i[itemID] or 0
 	local owned = 0
@@ -386,17 +396,17 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 	end
 	isCost = isCost or isProv
 	local isOwnedCost = (isCost and owned >= total) or nil
-	SetCostTotals(costs, isCost, refresh, itemID, isOwnedCost)
+	SetCostTotals(costs, isCost, refresh, itemID, isOwnedCost, chainUpdate)
 end
-local function FinishCostAssignmentsForCurr(currencyID, costs, refresh)
+local function FinishCostAssignmentsForCurr(currencyID, costs, refresh, chainUpdate)
 	local total = CostTotals.c[currencyID] or 0
 	local owned = CurrencyAmounts[currencyID]
 	local isCost = total > 0
 	local isOwnedCost = (isCost and owned >= total) or nil
 	-- PrintDebug(currencyID, app:SearchLink(costs[1]),isCost and "IS COST" or "NOT COST","requiring",total,"minus owned:",owned)
-	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost)
+	SetCostTotals(costs, isCost, refresh, currencyID, isOwnedCost, chainUpdate)
 end
-local function FinishCostAssignmentsForSpell(spellID, costs, refresh)
+local function FinishCostAssignmentsForSpell(spellID, costs, refresh, chainUpdate)
 	local isProv = CostTotals.sp[spellID]
 	if isProv then
 		isProv = PlayerIsMissingProviderSpell(spellID)
@@ -406,11 +416,12 @@ local function FinishCostAssignmentsForSpell(spellID, costs, refresh)
 		-- 	PrintDebug(spellID, app:SearchLink(costs[1]),"NOT PROV")
 		-- end
 	end
-	SetCostTotals(costs, isProv, refresh, spellID)
+	SetCostTotals(costs, isProv, refresh, spellID, chainUpdate)
 end
 
+---@type function
 local UpdateCostGroup
-local function UpdateCostsByItemID(itemID, refresh, includeUpdate, refs)
+local function UpdateCostsByItemID(itemID, refresh, chainUpdate, refs)
 	local costs = SearchForObject("itemID", itemID, "field", true);
 	if costs and #costs > 0 then
 		-- PrintDebug(itemID, #costs,"item cost groups @",app:SearchLink(costs[1]))
@@ -425,16 +436,11 @@ local function UpdateCostsByItemID(itemID, refresh, includeUpdate, refs)
 				UpdateRunner.Run(DoCollectibleCheckForItemRef, refs[i], itemID, itemUnbound)
 			end
 		end
-		UpdateRunner.Run(FinishCostAssignmentsForItem, itemID, costs, refresh)
-		if includeUpdate then
-			for i=1,#costs do
-				UpdateRunner.Run(UpdateCostGroup, costs[i]);
-			end
-		end
+		UpdateRunner.Run(FinishCostAssignmentsForItem, itemID, costs, refresh, chainUpdate)
 	-- else PrintDebug("Item as Cost is not Sourced!",itemID)
 	end
 end
-local function UpdateCostsByCurrencyID(currencyID, refresh, includeUpdate, refs)
+local function UpdateCostsByCurrencyID(currencyID, refresh, chainUpdate, refs)
 	local costs = SearchForObject("currencyID", currencyID, "field", true);
 	if costs and #costs > 0 then
 		-- PrintDebug(currencyID, #costs,"curr cost groups @",app:SearchLink(costs[1]))
@@ -447,16 +453,11 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, includeUpdate, refs)
 				UpdateRunner.Run(DoCollectibleCheckForCurrRef, refs[i], currencyID)
 			end
 		end
-		UpdateRunner.Run(FinishCostAssignmentsForCurr, currencyID, costs, refresh)
-		if includeUpdate then
-			for i=1,#costs do
-				UpdateRunner.Run(UpdateCostGroup, costs[i]);
-			end
-		end
+		UpdateRunner.Run(FinishCostAssignmentsForCurr, currencyID, costs, refresh, chainUpdate)
 	-- else PrintDebug(key,"as Cost is not Sourced!",id)
 	end
 end
-local function UpdateCostsBySpellID(spellID, refresh, includeUpdate, refs)
+local function UpdateCostsBySpellID(spellID, refresh, chainUpdate, refs)
 	local costs = SearchForObject("spellID", spellID, "field", true);
 	if costs and #costs > 0 then
 		local itemUnbound = Filters_ItemUnbound(costs[1])
@@ -466,12 +467,7 @@ local function UpdateCostsBySpellID(spellID, refresh, includeUpdate, refs)
 				UpdateRunner.Run(DoCollectibleCheckForSpellRef, refs[i], spellID, itemUnbound)
 			end
 		end
-		UpdateRunner.Run(FinishCostAssignmentsForSpell, spellID, costs, refresh)
-		if includeUpdate then
-			for i=1,#costs do
-				UpdateRunner.Run(UpdateCostGroup, costs[i]);
-			end
-		end
+		UpdateRunner.Run(FinishCostAssignmentsForSpell, spellID, costs, refresh, chainUpdate)
 	end
 end
 
@@ -532,6 +528,70 @@ local UpdateCostTypeFunc = setmetatable({
 	app.report("Unhandled Cost Update Type",key)
 	return app.EmptyFunction
 end})
+-- Keeps track of queued cost type updates by type..id
+-- This table is wiped when the Runner Starts or Resets
+local QueuedCostTypeUpdates = {}
+-- Handles queueing a Cost-Type update onto the Runner. Ignores cost updates which have already been pushed previously
+local function QueueCostTypeUpdate(type, id, refresh, doUpdate, refs)
+	local costkey = type..id
+	if QueuedCostTypeUpdates[costkey] then
+		-- app.PrintDebug("Ignore Queued cost update",costkey)
+		return
+	end
+	QueuedCostTypeUpdates[costkey] = true
+	UpdateRunner.Run(UpdateCostTypeFunc[type], id, refresh, doUpdate, refs)
+end
+-- When a 'parent' receives an update, re-verify if any child costs have now become blocked, without re-evaluating the entire cost chains
+local function ReVerifyBlockedParent(parent)
+	local g = parent.g
+	if not g then return end
+
+	local blockedBy = GetRelativeByFunc(parent, BlockedParent)
+	if not blockedBy then return end
+
+	-- clean all existing child costs which are now blocked by the parent
+	-- app.PrintDebug("ReVerifyBlockedParent",app:SearchLink(parent),"is now blocking")
+	local o
+	for i=1,#g do
+		o = g[i]
+		if o.isCost then
+			o.isCost = nil
+			DGU(o)
+		end
+	end
+end
+local function SendUpdatesToNextCostLinks(c, refresh)
+	local sentUpdates, costs, providers
+	while c do
+		costs, providers = c.cost, c.providers
+		-- update cost
+		if costs and type(costs) == "table" then
+			-- app.PrintDebug("UCG:cost",#costs)
+			local cost, type, id
+			for i=1,#costs do
+				cost = costs[i];
+				type, id = cost[1], cost[2];
+				-- app.PrintDebug("UCG.cost:",type,id)
+				QueueCostTypeUpdate(type, id, refresh, true)
+				sentUpdates = true
+			end
+		end
+		-- update providers
+		if providers and type(providers) == "table" then
+			-- app.PrintDebug("UCG:providers",#providers)
+			local prov, type, id
+			for i=1,#providers do
+				prov = providers[i];
+				type, id = prov[1], prov[2];
+				-- app.PrintDebug("UCG.providers:",type,id)
+				QueueCostTypeUpdate(type, id, refresh, true)
+				sentUpdates = true
+			end
+		end
+
+		c = not sentUpdates and c.parent or nil
+	end
+end
 -- Performs a recursive update sequence and update of cost against the referenced 'cost'/'providers' table
 UpdateCostGroup = function(c)
 	-- app.PrintDebug("UCG",app:SearchLink(c),app._SettingsRefresh)
@@ -540,50 +600,8 @@ UpdateCostGroup = function(c)
 		return
 	end
 	local refresh = app._SettingsRefresh;
-	-- update child groups (hopefully no situations where we need to update recursively nested groups...)
-	local g = c.g
-	if g then
-		local o
-		for i=1,#g do
-			o = g[i]
-			if o.itemID then
-				-- app.PrintDebug("Send sub-group cost update i",app:SearchLink(o))
-				UpdateRunner.Run(UpdateCostsByItemID, o.modItemID or o.itemID, refresh, true)
-			end
-			if o.currencyID then
-				-- app.PrintDebug("Send sub-group cost update c",app:SearchLink(o))
-				UpdateRunner.Run(UpdateCostsByCurrencyID, o.currencyID, refresh, true)
-			end
-			if o.spellID then
-				-- app.PrintDebug("Send sub-group cost update s",app:SearchLink(o))
-				UpdateRunner.Run(UpdateCostsBySpellID, o.spellID, refresh, true)
-			end
-		end
-	end
-
-	local costs, providers = c.cost, c.providers
-	-- update cost
-	if costs and type(costs) == "table" then
-		-- app.PrintDebug("UCG:cost",#costs)
-		local cost, type, id
-		for i=1,#costs do
-			cost = costs[i];
-			type, id = cost[1], cost[2];
-			-- app.PrintDebug("UCG.cost:",type,id)
-			UpdateCostTypeFunc[type](id, refresh, true)
-		end
-	end
-	-- update providers
-	if providers and type(providers) == "table" then
-		-- app.PrintDebug("UCG:providers",#providers)
-		local prov, type, id
-		for i=1,#providers do
-			prov = providers[i];
-			type, id = prov[1], prov[2];
-			-- app.PrintDebug("UCG.providers:",type,id)
-			UpdateCostTypeFunc[type](id, refresh, true)
-		end
-	end
+	ReVerifyBlockedParent(c)
+	SendUpdatesToNextCostLinks(c, refresh)
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
 end
 app.AddEventHandler("OnSearchResultUpdate", UpdateCostGroup)
@@ -702,8 +720,12 @@ app.AddEventHandler("OnLoad", function()
 	UpdateRunner = app.CreateRunner("costs");
 	api.Runner = UpdateRunner
 	UpdateRunner.SetPerFrameDefault(100)
-	UpdateRunner.DefaultOnStart(ResetCostTotals)
-	UpdateRunner.DefaultOnReset(ResetCostTotals)
+	local function OnRunnerStartOrReset()
+		ResetCostTotals()
+		wipe(QueuedCostTypeUpdates)
+	end
+	UpdateRunner.DefaultOnStart(OnRunnerStartOrReset)
+	UpdateRunner.DefaultOnReset(OnRunnerStartOrReset)
 	local fillers = CostLinkedFillOptions.Fillers
 	local getFiller = app.Modules.Fill.GetFiller
 	fillers[#fillers + 1] = getFiller("NPC")

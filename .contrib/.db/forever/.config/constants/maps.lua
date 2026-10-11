@@ -10,7 +10,7 @@ local mapMetatable = {
 		error("Unknown map key MAP." .. mapKey .. ". You done messed up, A-aron!");
 	end
 };
-MAP = setmetatable({
+local _MAP = setmetatable({
 	-- Roots
 	AZEROTH = 947;
 	COSMIC = 947;
@@ -121,7 +121,8 @@ MAP = setmetatable({
 	SHENDRALAS = 2652;
 }, mapMetatable);
 
--- Temporary solution forces the map globals to exist.
-for mapConst,mapID in pairs(MAP) do
+-- Temporary solution forces the map globals to exist. Also apply to the MAP constant from shared
+for mapConst,mapID in pairs(_MAP) do
 	_G[mapConst] = mapID;
+	MAP[mapConst] = mapID
 end

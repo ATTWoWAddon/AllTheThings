@@ -846,10 +846,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 10425,	-- Crimson Battle Mage
 						}),
 						i(18658, {	-- Schematic: Ultra-Flash Shadow Reflector (RECIPE!)
-							["cr"] = 10426,	-- Crimson Inquisitor / Risen Inquisitor [CATA+]
+							["cr"] = 10426,	-- Crimson Inquisitor
 						}),
 						i(16052, {	-- Schematic: Voice Amplification Modulator (RECIPE!)
-							["cr"] = 10426,	-- Crimson Inquisitor / Risen Inquisitor [CATA+]
+							["cr"] = 10426,	-- Crimson Inquisitor
 						}),
 					}),
 					n(10393, {	-- Skul

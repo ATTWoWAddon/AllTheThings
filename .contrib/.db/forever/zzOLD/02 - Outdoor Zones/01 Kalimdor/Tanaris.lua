@@ -74,13 +74,13 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 			}),
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
-					n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>
-						["coord"] = { 51.6, 30.2, MAP.TANARIS },
-						["groups"] = EXPERT_ARTISAN_ENGINEERING,
+					n(8736, {	-- Buzzek Bracketswing <Master Engineer>
+						["coord"] = { 52.2, 27.6, MAP.TANARIS },
+						["groups"] = ENGINEERING_RECIPES.ARTISAN,
 					}),
-					n(8126, {	-- Nixx Sprocketspring <Goblin Engineering Trainer>
-						["coord"] = { 52.2, 28.2, MAP.TANARIS },
-						["groups"] = ALL_GOBLIN_ENGINEERING,
+					n(8126, {	-- Nixx Sprocketspring <Master Goblin Engineer>
+						["coord"] = { 52.4, 27.2, MAP.TANARIS },
+						["groups"] = ENGINEERING_RECIPES.GOBLIN_ENGINEERING,
 					}),
 				}),
 			}),

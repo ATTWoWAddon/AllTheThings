@@ -5,21 +5,15 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
-			i(244346),	-- Broken Amani Ritual Urn
-			i(244348),	-- Cracked Amani Funerary Urn
 			i(244349),	-- Ruined Amani Ritual Urn
 			i(244350),	-- Shattered Amani Ritual Urn
-			i(252043),	-- Amani Horn Beaker
-			i(264485),	-- Green Amani Tapestry
 			i(264486),	-- Brown Amani Tapestry
-			i(264719),	-- Worn Amani Oar
 			i(265331),	-- Draenei Holo-Junction
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
 			i(270282),	-- Kazok's Rune-Key
 			i(271051),	-- Sugar Beet
 			i(271052),	-- Blighted Bloom
-			i(271156),	-- Stolen Artifact
 			i(275731),	-- A Rat-Sized Portion of Cheese
 			i(275732),	-- A Rat-Sized Portion of Onion
 			i(275733),	-- A Rat-Sized Portion of Mushroom
@@ -41,7 +35,6 @@ root(ROOTS.Unsorted, {
 			i(277898),	-- Duskhallow Vanguard Greaves
 			i(277899),	-- Fangwarden's Shardspine Bow
 			i(279396),	-- Timelost Saddle
-			i(280562),	-- Ascendant Venomstone
 			i(280563),	-- Ancient Hash'ey Battle Art: Falco Strikes
 			i(280678),	-- Primordial Venom Mote
 			i(280820),	-- Loa-Blessed Victory
@@ -148,7 +141,6 @@ root(ROOTS.Unsorted, {
 			i(282277),	-- Wood Haunter's Frost Fetish
 			i(282289),	-- Horrific Head of the Horseman
 			i(282327),	-- Fae Animashroom
-			i(282424),	-- Akil'zon's Swiftness
 			i(282427),	-- Nalorakk's Ferocity
 			i(282563),	-- Ice Walker's Bell-Scythe
 			i(282564),	-- Embered Bell-Scythe
@@ -309,8 +301,6 @@ root(ROOTS.Unsorted, {
 			i(284051),	-- Hexbearer's Pauldrons
 			i(284052),	-- Amani Effigy
 			i(284054),	-- Hexdrinker's Shoulders
-			i(284055),	-- Hexbinder's Spaulders
-			i(284056),	-- Spirit Effigy
 			i(284057),	-- Effigy of Corrosion
 			i(284106),	-- Nagrand Clover Cluster
 			i(284108),	-- Nagrand Wild Wheat
@@ -328,7 +318,6 @@ root(ROOTS.Unsorted, {
 			i(284132),	-- Skysong Sentinel Tree
 			i(284134),	-- Incineratus Grass Patch
 			i(284180),	-- Loa-Touched Deltoid
-			i(284181),	-- Loa-Touched Spine
 			i(284182),	-- Loa-Touched Visage
 			i(284189),	-- Unlock Mail Carrier
 			i(284190),	-- Unlock Repair Services
@@ -357,11 +346,7 @@ root(ROOTS.Unsorted, {
 			i(284260),	-- Overflowing Voidspire
 			i(284263),	-- Pattern: Beloved Murloc Plushie
 			i(284264),	-- "Gnoma Lisa" Painting
-			i(284353),	-- Amani Open Fire Grill
-			i(284355),	-- Amani Hex Candle
 			i(284357),	-- Ancient Amani Mural
-			i(284359),	-- Corroded Amani Sconce
-			i(284362),	-- Tusked Amani Canoe
 			i(284384),	-- Boralus Swill Bottle
 			i(284402),	-- Valdrakken Resupply Coin
 			i(284460),	-- Kyrian Waymarker Plaque
@@ -436,7 +421,6 @@ root(ROOTS.Unsorted, {
 			i(285334),	-- Embered Reversed Pauldrons
 			i(285335),	-- Ice-Walker's Reversed Pauldrons
 			i(285336),	-- Wood Haunter's Reversed Pauldrons
-			i(285876),	-- Zah'ran
 			i(285877),	-- Zah'ran
 			i(285942),	-- Spirited Tidesage Manse
 			i(285956),	-- Ice Walker's Bell-Crook
@@ -532,11 +516,8 @@ root(ROOTS.Unsorted, {
 			i(276912),	-- Middle Fragment of Ulantu's Log
 			i(276914),	-- End Fragment of Ulantu's Log
 			i(277525),	-- Ulantu's Belongings
-			i(275551),	-- [PH] Broomstick Spice - Orange
 			i(275570),	-- [PH] Broomstick Spice - Green
-			i(275571),	-- [PH] Broomstick Spice - Grey
 			i(275572),	-- [PH] Broomstick Spice - Hallow
-			i(275573),	-- [PH] Broomstick Spice - Pink
 			i(275574),	-- [PH] Broomstick Spice - Red
 			i(275655),	-- Venom Serpent - White
 			i(275703),	-- ArcaneGolem2 Pet - Red
@@ -548,11 +529,8 @@ root(ROOTS.Unsorted, {
 			i(276420),	-- [PH] Rainbow Mace- 2h - Purple
 			i(276550),	-- Wind Serpent - White
 			i(276552),	-- Wind Serpent - Pink
-			i(276622),	-- De-cryption Amulet
-			i(276624),	-- Overflowing Hash'ura Trove
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(277157),	-- Barnacle-Encrusted Chest
-			i(277261),	-- [PH] Pygmy Owl
 			i(277266),	-- The First Troll Legend
 			i(277270),	-- Kirin Tor Kitty
 			i(277318),	-- Catsramas
@@ -642,14 +620,6 @@ root(ROOTS.Unsorted, {
 			i(278994),	-- Big Green Armageddon
 			i(279001),	-- Big Dark Armageddon
 			i(279002),	-- Big Red Armageddon
-			i(279013),	-- [ph] SpiceWitch Chest - Blue
-			i(279014),	-- [ph] SpiceWitch Feet - Blue
-			i(279015),	-- [ph] SpiceWitch Waist - Blue
-			i(279016),	-- [ph] SpiceWitch Gloves- Blue
-			i(279017),	-- [ph] SpiceWitch Legs - Blue
-			i(279018),	-- [ph] SpiceWitch Head - Blue
-			i(279019),	-- [ph] SpiceWitch Shoulders - Blue
-			i(279022),	-- [ph] Ensemble: SpiceWitch Blue Attire
 			i(279056),	-- [ph] SpiceWitch Chest - Green
 			i(279057),	-- [ph] SpiceWitch Feet - Green
 			i(279058),	-- [ph] SpiceWitch Waist - Green
@@ -658,17 +628,7 @@ root(ROOTS.Unsorted, {
 			i(279062),	-- [ph] SpiceWitch Head - Green
 			i(279063),	-- [ph] SpiceWitch Shoulders - Green
 			i(279065),	-- [ph] Ensemble: SpiceWitch Green Attire
-			i(279066),	-- [ph] SpiceWitch Chest - Grey
-			i(279070),	-- [ph] SpiceWitch Head - Blue (Hair Vis)
 			i(279071),	-- [ph] SpiceWitch Head - Green (Hair Vis)
-			i(279072),	-- [ph] SpiceWitch Feet - Grey
-			i(279074),	-- [ph] SpiceWitch Waist - Grey
-			i(279075),	-- [ph] SpiceWitch Gloves- Grey
-			i(279076),	-- [ph] SpiceWitch Legs - Grey
-			i(279077),	-- [ph] SpiceWitch Head - Grey
-			i(279078),	-- [ph] SpiceWitch Head - Grey(Hair Vis)
-			i(279079),	-- [ph] SpiceWitch Shoulders - Grey
-			i(279080),	-- [ph] Ensemble: SpiceWitch Grey Attire
 			i(279081),	-- [ph] SpiceWitch Chest - Hallow
 			i(279083),	-- [ph] SpiceWitch Feet - Hallow
 			i(279084),	-- [ph] SpiceWitch Waist - Hallow
@@ -678,45 +638,15 @@ root(ROOTS.Unsorted, {
 			i(279088),	-- [ph] SpiceWitch Head - Hallow (Hair Vis)
 			i(279089),	-- [ph] SpiceWitch Shoulders - Hallow
 			i(279090),	-- [ph] Ensemble: SpiceWitch Hallow Attire
-			i(279095),	-- [ph] SpiceWitch Chest - Orange
-			i(279096),	-- [ph] SpiceWitch Feet - Orange
-			i(279097),	-- [ph] SpiceWitch Waist - Orange
-			i(279098),	-- [ph] SpiceWitch Gloves- Orange
-			i(279099),	-- [ph] SpiceWitch Legs - Orange
-			i(279101),	-- [ph] SpiceWitch Head - Orange
-			i(279102),	-- [ph] SpiceWitch Head - Orange (Hair Vis)
-			i(279103),	-- [ph] SpiceWitch Shoulders - Orange
-			i(279104),	-- [ph] Ensemble: SpiceWitch Orange Attire
-			i(279107),	-- [ph] SpiceWitch Chest - Pink
-			i(279108),	-- [ph] SpiceWitch Feet - Pink
-			i(279109),	-- [ph] SpiceWitch Waist - Pink
-			i(279110),	-- [ph] SpiceWitch Gloves- Pink
-			i(279111),	-- [ph] SpiceWitch Legs - Pink
-			i(279114),	-- [ph] SpiceWitch Head - Pink
-			i(279133),	-- [ph] SpiceWitch Head - Pink (Hair Vis)
-			i(279134),	-- [ph] SpiceWitch Shoulders - Pink
-			i(279135),	-- [ph] Ensemble: SpiceWitch Pink Attire
-			i(279136),	-- [ph] SpiceWitch Shoulders 02 - Blue
 			i(279137),	-- [ph] SpiceWitch Shoulders 02 - Green
-			i(279138),	-- [ph] SpiceWitch Shoulders 02 - Grey
 			i(279139),	-- [ph] SpiceWitch Shoulders 02 - Hallow
-			i(279140),	-- [ph] SpiceWitch Shoulders 02 - Orange
-			i(279141),	-- [ph] SpiceWitch Shoulders 02 - Pink
 			i(279142),	-- Intact Spine Segment
 			i(279143),	-- Elongated Viscera
 			i(279147),	-- Unrecognizable bone
-			i(279149),	-- [ph] SpiceWitch Head 02 - Blue
-			i(279150),	-- [ph] SpiceWitch Head 02 - Blue (Hair Vis)
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
-			i(279156),	-- [ph] SpiceWitch Head 02 - Grey
-			i(279158),	-- [ph] SpiceWitch Head 02 - Grey (Hair Vis)
 			i(279159),	-- [ph] SpiceWitch Head 02 - Hallow
 			i(279161),	-- [ph] SpiceWitch Head 02 - Hallow (Hair Vis)
-			i(279162),	-- [ph] SpiceWitch Head 02 - Orange
-			i(279163),	-- [ph] SpiceWitch Head 02 - Orange (Hair Vis)
-			i(279164),	-- [ph] SpiceWitch Head 02 - Pink
-			i(279165),	-- [ph] SpiceWitch Head 02 - Pink (Hair Vis)
 			i(279166),	-- Pumice Hand Chalk
 			i(279360),	-- Amani Forgemaster's Rack
 			i(279363),	-- Enchanted Eversong Trout
@@ -762,9 +692,7 @@ root(ROOTS.Unsorted, {
 			i(279623),	-- Nebulous Voidcache: Murder Row
 			i(279624),	-- Nebulous Voidcache:Temple of Sethraliss
 			i(279625),	-- Nebulous Voidcache: Voidscar Arena
-			i(280131),	-- Nebulous Voidcache: Prey
 			i(280102),	-- Handful of Corrosive Coins
-			i(280581),	-- Wintry Witchwick's Rider
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(274677),	-- Sky Blue Riverside Room Plans
@@ -1153,8 +1081,6 @@ root(ROOTS.Unsorted, {
 				i(272400),	-- Fine Lynx Fur
 				i(272893),	-- Icy Harness
 				i(259472),	-- Lost Revantusk Possessions
-				i(267381),	-- Official G.G.R. Rehydration Container
-				i(267380),	-- Volatile Pink Brightbursts
 				i(260892),	-- "Arcane Ranger" Kit
 				i(262757),	-- "Greater Metamorph" Enhancement
 			}),
@@ -1174,7 +1100,6 @@ root(ROOTS.Unsorted, {
 			n(WEAPONS, {
 				-- These Exist but needs a source.
 				i(269972),	-- Arathi Miner's Pickaxe
-				i(269988),	-- Peacekeeper's Axe
 			}),
 		})),
 		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
@@ -2715,7 +2640,6 @@ root(ROOTS.Unsorted, {
 				i(161431),	-- Ancient Skinning Knife
 				i(163681),	-- Focus
 				i(164382),	-- Azerite Crystal
-				i(164622),	-- Grayson's Note
 			}),
 			-- Projectile?
 			i(151215),	-- Zandalari Blowgun Dart
@@ -2827,9 +2751,7 @@ root(ROOTS.Unsorted, {
 			i(165879),	-- Briny Salt \\ Alkalescent Salt
 			i(165881),	-- Outpost Upgrade
 			i(165882),	-- Mission Report
-			i(165945),	-- Investigation Results
 			i(166231),	-- Player Experience
-			i(166243),	-- Investigation Results
 			i(166246),	-- Highborne Relic
 			i(166252),	-- Looted Titan Relic
 			i(166253),	-- Mana Crystal

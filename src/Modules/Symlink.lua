@@ -949,19 +949,6 @@ local function GetRelativeFieldInSet(group, field, set)
 		return set[val] and val or GetRelativeFieldInSet(group.sourceParent or group.parent, field, set);
 	end
 end
-local function GetAllNestedGroupsByFunc(results, groups, func)
-	local g,o
-	for i=1,#groups do
-		o = groups[i]
-		if func(o) then results[#results + 1] = o end
-		g = o.g
-		if g then
-			for i=1,#g do
-				GetAllNestedGroupsByFunc(results, g[i], func)
-			end
-		end
-	end
-end
 local function GetNpcIDForDrops(group)
 	-- assuming for any 'crs' references on an encounter/header group that all crs are linked to the same resulting content
 	-- Fyrakk Assaults uses two headers with 'crs' test that when changing this check
@@ -982,7 +969,7 @@ app.AddEventHandler("OnLoad", function()
 			if groups and #groups > 0 then
 				-- flag all nested symlinked content so that any NPC groups do not nest NPC data
 				local results = {}
-				GetAllNestedGroupsByFunc(results, groups, GetNpcIDForDrops)
+				app.GetAllNestedGroupsByFunc(results, groups, GetNpcIDForDrops)
 				for i=1,#results do
 					results[i].NestNPCDataSkip = true
 				end

@@ -2,6 +2,7 @@
 local _, app = ...;
 local L = app.L;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetCoinTextureString = app.WOWAPI.GetCoinTextureString;
 
 -- Global locals
 local debugprofilestop, next, pcall, select, tinsert, tonumber, type,math_min

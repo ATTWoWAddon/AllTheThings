@@ -490,10 +490,23 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
 		}),
 		-- #endif
-
 		iensemble(223485, {	-- Ensemble: Green Snugglefin Murloc Romper
 			["timeline"] = { ADDED_10_2_7 },
 		}),
+		------ Hexed Witchwick Collection ------
+		iensemble(279104, {	-- Ensemble: Autumnal Witchwick Ensemble
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		iensemble(279135, {	-- Ensemble: Blushing Witchwick Ensemble
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		iensemble(279080, {	-- Ensemble: Moonlit Witchwick Ensemble
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		iensemble(279022, {	-- Ensemble: Wintry Witchwick Ensemble
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		---
 
 		------ Murloc Shells Set ------
 		-- #if AFTER 11.2.5
@@ -950,6 +963,20 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["description"] = "Also obtained if you set up a 6-Month WoW Subscription.",
 			["timeline"] = { ADDED_11_1_7 },
 		}),
+		------ Hexed Witchwick Collection ------
+		i(275551, {	-- Autumnal Witchwick's Rider (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		i(275573, {	-- Blushing Witchwick's Rider (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		i(275571, {	-- Moonlit Witchwick's Rider (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		i(280581, {	-- Wintry Witchwick's Rider (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
+		}),
+		---
 		i(166774, {	-- Hogrus, Swine of Good Fortune (MOUNT!)
 			["timeline"] = { ADDED_8_1_0 },
 		}),
@@ -1132,6 +1159,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { ADDED_9_1_5 },
+		}),
+		i(277261, {	-- Whoofle Bramblewing (MOUNT!)
+			["timeline"] = { ADDED_12_1_0 },
 		}),
 		i(206167, {	-- Wonderous Wavewhisker (MOUNT!)
 			["timeline"] = { ADDED_10_1_0 },

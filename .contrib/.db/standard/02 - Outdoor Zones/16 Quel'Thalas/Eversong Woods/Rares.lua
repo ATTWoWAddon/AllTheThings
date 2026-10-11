@@ -34,6 +34,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264621),	-- Bad Zed's Worst Channeler
 					i(264536),	-- Zedling Summoning Collar
+					hqt_bonusRenown(94690, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Bad Zed
 				},
 			}),
 			n(250826, {	-- Banuran
@@ -42,6 +43,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264552),	-- Frogskin Grips
 					i(264526),	-- Supremely Slimy Sash
+					hqt_bonusRenown(94692, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Banuran
 				},
 			}),
 			n(250582, {	-- Bloated Snapdragon
@@ -50,6 +52,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264560),	-- Sharpclaw Gauntlets
 					i(264543),	-- Snapdragon Pantaloons
+					hqt_bonusRenown(94685, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Bloated Snapdragon
 				},
 			}),
 			n(250683, {	-- Coralfang
@@ -58,6 +61,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264602),	-- Abyss Coral Band
 					i(264629),	-- Coralfang's Hefty Fin
+					hqt_bonusRenown(94687, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Coralfang
 				},
 			}),
 			n(250719, {	-- Cre'van
@@ -66,6 +70,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264647),	-- Cre'van's Punisher
 					i(264573),	-- Taskmaster's Sadistic Shoulderguards
+					hqt_bonusRenown(94686, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Cre'van
 				},
 			}),
 			n(255348, {	-- Dame Bloodshed
@@ -75,6 +80,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(265609),	-- Princess Bloodshed (PET!)
 					i(264624),	-- Fang of the Dame
 					i(264595),	-- Lynxhide Shawl
+					hqt_bonusRenown(94696, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Dame Bloodshed
 				},
 			}),
 			n(255302, {	-- Duskburn
@@ -84,6 +90,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					--i(251791),	-- Holy Retributor's Order
 					i(264594),	-- Netherscale Cloak
 					i(264569),	-- Void-Gorged Kickers
+					hqt_bonusRenown(94694, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Duskburn
 				},
 			}),
 			n(246633, {	-- Harried Hawkstrider
@@ -92,6 +99,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264522),	-- Striderplume Armbands
 					i(264521),	-- Striderplume Focus
+					hqt_bonusRenown(94682, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Harried Hawkstrider
 				},
 			}),
 			n(250754, {	-- Lady Liminus
@@ -100,6 +108,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264645),	-- Aged Farstrider Bow
 					i(264612),	-- Tarnished Gold Locket
+					hqt_bonusRenown(94688, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Lady Liminus
 				},
 			}),
 			n(250806, {	-- Lost Guardian
@@ -109,6 +118,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264575),	-- Hexwood Helm
 					i(264555),	-- Splintered Hexwood Clasps
+					hqt_bonusRenown(94693, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Lost Guardian
 				},
 			}),
 			n(255329, {	-- Malfunctioning Construct
@@ -117,6 +127,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264603),	-- Guardian's Gemstone Loop
 					i(264584),	-- Stonecarved Smashers
+					hqt_bonusRenown(94695, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Malfunctioning Construct
 				},
 			}),
 			n(240129, {	-- Overfester Hydra (vignette - Dormant Lightbloom Hydra)
@@ -125,6 +136,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264523),	-- Hydrafang Blade
 					i(264524),	-- Lightblighted Verdant Vest
+					hqt_bonusRenown(94684, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Overfester Hydra
 				},
 			}),
 			n(250876, {	-- Terrinor
@@ -133,6 +145,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264546),	-- Bat Fur Boots
 					i(264537),	-- Winged Terror Gloves
+					hqt_bonusRenown(94689, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Terrinor
 				},
 			}),
 			n(246332, {	-- Warden of Weeds
@@ -141,6 +154,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264613),	-- Steelbark Bulwark
 					i(264520),	-- Warden's Leycrook
+					hqt_bonusRenown(94681, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Warden of Weeds
 				},
 			}),
 			n(250780, {	-- Waverly
@@ -150,61 +164,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264910),	-- Shell-Cleaving Poleaxe
 					i(264608),	-- String of Lovely Blossoms
+					hqt_bonusRenown(94691, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Waverly
 				},
 			}),
 		})),
 	}),
-}));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.EVERSONG_WOODS, {
-			n(RARES, {
-				q(94690, {	-- Weekly reputation: Bad Zed
-					["name"] = "Bad Zed weekly reputation obtained.",
-				}),
-				q(94692, {	-- Weekly reputation: Banuran
-					["name"] = "Banuran weekly reputation obtained.",
-				}),
-				q(94685, {	-- Weekly reputation: Bloated Snapdragon
-					["name"] = "Bloated Snapdragon weekly reputation obtained.",
-				}),
-				q(94687, {	-- Weekly reputation: Coralfang
-					["name"] = "Coralfang weekly reputation obtained.",
-				}),
-				q(94686, {	-- Weekly reputation: Cre'van
-					["name"] = "Cre'van weekly reputation obtained.",
-				}),
-				q(94696, {	-- Weekly reputation: Dame Bloodshed
-					["name"] = "Dame Bloodshed weekly reputation obtained.",
-				}),
-				q(94694, {	-- Weekly reputation: Duskburn
-					["name"] = "Duskburn weekly reputation obtained.",
-				}),
-				q(94682, {	-- Weekly reputation: Harried Hawkstrider
-					["name"] = "Harried Hawkstrider weekly reputation obtained.",
-				}),
-				q(94688, {	-- Weekly reputation: Lady Liminus
-					["name"] = "Lady Liminus weekly reputation obtained.",
-				}),
-				q(94693, {	-- Weekly reputation: Lost Guardian
-					["name"] = "Lost Guardian weekly reputation obtained.",
-				}),
-				q(94695, {	-- Weekly reputation: Malfunctioning Construct
-					["name"] = "Malfunctioning Construct weekly reputation obtained.",
-				}),
-				q(94684, {	-- Weekly reputation: Overfester Hydra
-					["name"] = "Overfester Hydra weekly reputation obtained.",
-				}),
-				q(94689, {	-- Weekly reputation: Terrinor
-					["name"] = "Terrinor weekly reputation obtained.",
-				}),
-				q(94691, {	-- Weekly reputation: Waverly
-					["name"] = "Waverly weekly reputation obtained.",
-				}),
-				q(94681, {	-- Weekly reputation: Warden of Weeds
-					["name"] = "Warden of Weeds weekly reputation obtained.",
-				}),
-			}),
-		}),
-	}),
-}));
+}))

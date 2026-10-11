@@ -203,8 +203,8 @@ root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		]]--
 		cl(HUNTER, {
 			i(205877, {	-- Adventurer's Footlocker
-				i(231840, {["timeline"] = {ADDED_11_0_5}}),	-- Trailseeker Crossbow
-				i(231839, {["timeline"] = {ADDED_11_0_5}}),	-- Trailseeker Longbow
+				i(231840, {["timeline"] = {ADDED_11_0_5, REMOVED_11_2_7}}),	-- Trailseeker Crossbow
+				i(231839, {["timeline"] = {ADDED_11_0_5, REMOVED_11_2_7}}),	-- Trailseeker Longbow
 				i(170638),	-- Trailseeker Shotgun
 				i(170639),	-- Trailseeker Spear
 			}),
@@ -436,8 +436,8 @@ root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		cl(PRIEST, {
 			-- No Adventurer's Footlocker
 			cl(PRIEST, DISCIPLINE, {
-				i(153919, {["timeline"] = REMOVED_10_2_0}),	-- Communal Wand
-				i(153934, {["timeline"] = ADDED_10_2_0}),	-- Communal Staff
+				i(153919, {["timeline"] = {REMOVED_10_2_0}}),	-- Communal Wand
+				i(153934, {["timeline"] = {ADDED_10_2_0, REMOVED_11_2_7}}),	-- Communal Staff
 				i(153923),	-- Communal Hood
 				i(153925),	-- Communal Necklace
 				i(153931),	-- Communal Shoulderpads
@@ -454,8 +454,8 @@ root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(153930),	-- Communal Stone of Wisdom
 			}),
 			cl(PRIEST, HOLY, {
-				i(153919, {["timeline"] = REMOVED_10_2_0}),	-- Communal Wand
-				i(153934, {["timeline"] = ADDED_10_2_0}),	-- Communal Staff
+				i(153919, {["timeline"] = {REMOVED_10_2_0}}),	-- Communal Wand
+				i(153934, {["timeline"] = {ADDED_10_2_0, REMOVED_11_2_7}}),	-- Communal Staff
 				i(153923),	-- Communal Hood
 				i(153925),	-- Communal Necklace
 				i(153931),	-- Communal Shoulderpads

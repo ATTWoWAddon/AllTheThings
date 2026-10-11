@@ -1819,10 +1819,46 @@ local eligibleFields = { "Buildings","GarrisonBuildings","Factions","FlightPaths
 local function SortByCharacterLevel(a,b)
   return (a.lvl or 0) > (b.lvl or 0);
 end
+
+local function GetCharacterRaceText(character)
+	local raceID = character.raceID
+
+	if raceID and C_CreatureInfo and C_CreatureInfo.GetRaceInfo then
+		local raceInfo = C_CreatureInfo.GetRaceInfo(raceID)
+
+		if raceInfo and raceInfo.raceName then
+			return raceInfo.raceName
+		end
+	end
+
+	return character.race
+end
+
+local function GetMergeCandidateText(character)
+	local text = character.text or character.name or RETRIEVING_DATA
+
+	if character.lvl then
+		text = text .. ", " .. LEVEL .. " " .. character.lvl
+	end
+
+	local race = GetCharacterRaceText(character)
+
+	if race then
+		text = text .. " " .. race
+	end
+
+	if character.lastPlayed then
+		text = text .. " |cffaaaaaa(" .. date("%Y-%m-%d", character.lastPlayed) .. ")|r"
+	end
+
+	return text
+end
+
 local function MergeCharacterData(character, row)
 	local message = L.ACCOUNT_MANAGEMENT_MERGE_HEADER:format(character.text or character.name or RETRIEVING_DATA);
 	if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
-	if character.race then message = message .. " " .. character.race; end
+	local race = GetCharacterRaceText(character);
+	if race then message = message .. " " .. race; end
 	message = message .. L.ACCOUNT_MANAGEMENT_MERGE_FIELDS_HEADER;
 	local fields = {};
 	for i,field in ipairs(eligibleFields) do
@@ -1918,11 +1954,26 @@ local function MergeTransferredCharacterData(row)
 	end
 	if #eligibleCharacters > 1 then
 		tsort(eligibleCharacters, SortByCharacterLevel);
+		if MenuUtil and MenuUtil.CreateContextMenu then
+			-- Scrollable menu of all eligible characters; picking one opens the existing merge confirmation
+			MenuUtil.CreateContextMenu(row, function(owner, rootDescription)
+				rootDescription:CreateTitle(L.ACCOUNT_MANAGEMENT_MERGE_CHARACTER);
+				if rootDescription.SetScrollMode then
+					rootDescription:SetScrollMode(400);
+				end
+				for _,character in ipairs(eligibleCharacters) do
+					rootDescription:CreateButton(GetMergeCandidateText(character), function()
+						C_Timer.After(0.01, function()
+							MergeCharacterData(character, row);
+						end);
+					end);
+				end
+			end);
+			return;
+		end
 		local message = L.ACCOUNT_MANAGEMENT_MERGE_INDEX_POPUP;
 		for i,character in ipairs(eligibleCharacters) do
-			message = message .. "\n" .. i .. ": " .. (character.text or character.name) .. ",";
-			if character.lvl then message = message .. " " .. LEVEL .. " " .. character.lvl; end
-			if character.race then message = message .. " " .. character.race; end
+			message = message .. "\n" .. i .. ": " .. GetMergeCandidateText(character);
 		end
 		app:ShowPopupDialogWithEditBox(message, "1", function(input)
 			local index = input and input ~= "" and tonumber(input);

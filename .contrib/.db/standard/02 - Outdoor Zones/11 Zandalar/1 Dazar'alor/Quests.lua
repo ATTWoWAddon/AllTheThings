@@ -13,370 +13,327 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(OUTPOSTS, {
 				["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras. You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail. Each one will start a mission on your Mission Command Table. After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["groups"] = {
-					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,
-						["groups"] = {
-							mi(2106, {	-- Upgrade: The Great Seal
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(54225, {	-- Mission Report: The Great Seal
-										["provider"] = { "n", 138706 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-									}),
-								},
-							}),
-							q(54231, {	-- Outpost Upgrade: The Great Seal
-								["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 165728, {	-- Outpost Upgrade: The Great Seal
+						mi(2106, {	-- Upgrade: The Great Seal
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",165728,1}},	-- Outpost Upgrade: The Great Seal
+							["groups"] = {
+								q(54225, {	-- Mission Report: The Great Seal
+									["provider"] = { "n", 138706 },	-- Mission Command Table
+									["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+									["races"] = HORDE_ONLY,
+								}),
+							},
+						}),
+						q(54231, {	-- Outpost Upgrade: The Great Seal
+							["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(2108, {	-- Upgrade: Vulpera Hideaway
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(54258, {	-- Mission Report: Vulpera Hideaway
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-									}),
-								},
-							}),
-							q(54260, {	-- Outpost Upgrade: Vulpera Hideaway
-								["sourceQuests"] = { 54258 },	-- Mission Report: Vulpera Hideaway
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 165804, {	-- Outpost Upgrade: Vulpera Hideaway
+						mi(2108, {	-- Upgrade: Vulpera Hideaway
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",165804,1}},	-- Outpost Upgrade: Vulpera Hideaway
+							["groups"] = {
+								q(54258, {	-- Mission Report: Vulpera Hideaway
+									["provider"] = { "n", 138704 },	-- Mission Command Table
+									["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+									["races"] = HORDE_ONLY,
+								}),
+							},
+						}),
+						q(54260, {	-- Outpost Upgrade: Vulpera Hideaway
+							["sourceQuests"] = { 54258 },	-- Mission Report: Vulpera Hideaway
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins (CI!)
-						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(2107, {	-- Upgrade: Zul'jan Ruins
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(54239, {	-- Mission Report: Zul'jan Ruins
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-									}),
-								},
-							}),
-							q(54240, {	-- Outpost Upgrade: Zul'jan Ruins
-								["sourceQuests"] = { 54239 },	-- Mission Report: Zul'jan Ruins
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 165750, {	-- Outpost Upgrade: Zul'jan Ruins
+						mi(2107, {	-- Upgrade: Zul'jan Ruins
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",165750,1}},	-- Outpost Upgrade: Zul'jan Ruins
+							["groups"] = {
+								q(54239, {	-- Mission Report: Zul'jan Ruins
+									["provider"] = { "n", 138704 },	-- Mission Command Table
+									["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+									["races"] = HORDE_ONLY,
+								}),
+							},
+						}),
+						q(54240, {	-- Outpost Upgrade: Zul'jan Ruins
+							["sourceQuests"] = { 54239 },	-- Mission Report: Zul'jan Ruins
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(162533, {	-- Scouting Report: Hillcrest Pasture
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(1967, {	-- Hillcrest Pasture
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52478, {	-- Mission Report: Hillcrest Pasture
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(162119),	-- Hillcrest Pasture (CI!)
-											i(162123),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52479, {	-- Hillcrest Pasture
-								["sourceQuests"] = { 52478 },	-- Mission Report: Hillcrest Pasture
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 162119, {	-- Hillcrest Pasture
+						mi(1967, {	-- Hillcrest Pasture
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162533,1}},	-- Scouting Report: Hillcrest Pasture
+							["groups"] = {
+								i(162119),	-- Hillcrest Pasture (QS!)
+							},
+						}),
+						q(52478, {	-- Mission Report: Hillcrest Pasture
+							["qs"] = 162119,	-- Hillcrest Pasture (QS!)
+							["qi"] = 162123,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53743 },	-- Hillcrest Pasture (mission completed)
+						}),
+						q(52479, {	-- Hillcrest Pasture
+							["sourceQuests"] = { 52478 },	-- Mission Report: Hillcrest Pasture
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(162535, {	-- Scouting Report: Mudfisher Cove
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(1965, {	-- Mudfisher Cove
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52313, {	-- Mission Report: Mudfisher Cove
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(161482),	-- Mudfisher Cove (CI!)
-											i(161484),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52314, {	-- Mudfisher Cove
-								["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-							mi(2095, {	-- Wicker Defense
-								["sourceQuests"] = { 52314 },	-- Mudfisher Cove
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(53125, {	-- Mission Report: Into The Wicker (Per Character)
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(163334),	-- Outpost Upgrade
-											i(163335),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(53126, {	-- The Wicker Totem (Per Character)
-								["sourceQuests"] = { 53125 },	-- Mission Report: Into The Wicker
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 161482, {	-- Mudfisher Cove
+						mi(1965, {	-- Mudfisher Cove
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162535,1}},	-- Scouting Report: Mudfisher Cove
+							["groups"] = {
+								i(161482),	-- Mudfisher Cove (QS!)
+							},
+						}),
+						q(52313, {	-- Mission Report: Mudfisher Cove
+							["qs"] = 161482,	-- Mudfisher Cove (QS!)
+							["qi"] = 161484,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53745 },	-- Mudfisher Cove (mission completed)
+						}),
+						q(52314, {	-- Mudfisher Cove
+							["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
+						mi(2095, {	-- Wicker Defense
+							["sourceQuests"] = { 52314 },	-- Mudfisher Cove
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["groups"] = {
+								i(163334),	-- Outpost Upgrade (QS!)
+							},
+						}),
+						q(53125, {	-- Mission Report: Into The Wicker (Per Character)
+							["qs"] = 163334,	-- Outpost Upgrade (QS!)
+							["qi"] = 163335,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+						}),
+						q(53126, {	-- The Wicker Totem (Per Character)
+							["sourceQuests"] = { 53125 },	-- Mission Report: Into The Wicker
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(162531, {	-- Scouting Report: Stonefist Watch
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(1963, {	-- Stonefist Watch
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52221, {	-- Mission Report: Stonefist Watch
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(161385),	-- Stonefist Watch (CI!)
-											i(161386),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52222, {	-- Stonefist Watch
-								["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-							mi(2092, {	-- Spare Parts
-								["sourceQuests"] = { 52222 },	-- Stonefist Watch
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(53081, {	-- Mission Report: Spare Parts (Per Character)
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(163184),	-- Outpost Upgrade
-											i(163185),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(53082, {	-- Spare Parts (Per Character)
-								["sourceQuests"] = { 53081 },	-- Mission Report: Spare Parts
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 161385, {	-- Stonefist Watch
+						mi(1963, {	-- Stonefist Watch
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162531,1}},	-- Scouting Report: Stonefist Watch
+							["groups"] = {
+								i(161385),	-- Stonefist Watch (QS!)
+							},
+						}),
+						q(52221, {	-- Mission Report: Stonefist Watch
+							["qs"] = 161385,	-- Stonefist Watch (QS!)
+							["qi"] = 161386,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53740 },	-- Stonefist Watch (mission completed)
+						}),
+						q(52222, {	-- Stonefist Watch
+							["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
+						mi(2092, {	-- Spare Parts
+							["sourceQuests"] = { 52222 },	-- Stonefist Watch
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["groups"] = {
+								i(163184),	-- Outpost Upgrade (QS!)
+							},
+						}),
+						q(53081, {	-- Mission Report: Spare Parts (Per Character)
+							["qs"] = 163184,	-- Outpost Upgrade (QS!)
+							["qi"] = 163185,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+						}),
+						q(53082, {	-- Spare Parts (Per Character)
+							["sourceQuests"] = { 53081 },	-- Mission Report: Spare Parts
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(162534, {	-- Scouting Report: Stonetusk Watch
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(2067, {	-- Stonetusk Watch
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52776, {	-- Mission Report: Stonetusk Watch
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(162511),	-- Stonetusk Watch (CI!)
-											i(162512),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52777, {	-- Stonetusk Watch
-								["sourceQuests"] = { 52776 },	-- Mission Report: Stonetusk Watch
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-							mi(2093, {	-- Giant Slaying
-								["sourceQuests"] = { 52777 },	-- Stonetusk Watch
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(53100, {	-- Mission Report: Giant Slaying (Per Character)
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(163190),	-- Outpost Upgrade
-											i(163191),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(53101, {	-- Nettin' Ettin (Per Character)
-								["sourceQuests"] = { 53100 },	-- Mission Report: Giant Slaying
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 162511, {	-- Stonetusk Watch
+						mi(2067, {	-- Stonetusk Watch
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162534,1}},	-- Scouting Report: Stonetusk Watch
+							["groups"] = {
+								i(162511),	-- Stonetusk Watch (QS!)
+							},
+						}),
+						q(52776, {	-- Mission Report: Stonetusk Watch
+							["qs"] = 162511,	-- Stonetusk Watch (QS!)
+							["qi"] = 162512,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53742 },	-- Stonetusk Watch (mission completed)
+						}),
+						q(52777, {	-- Stonetusk Watch
+							["sourceQuests"] = { 52776 },	-- Mission Report: Stonetusk Watch
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
+						mi(2093, {	-- Giant Slaying
+							["sourceQuests"] = { 52777 },	-- Stonetusk Watch
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["groups"] = {
+								i(163190),	-- Outpost Upgrade (QS!)
+							},
+						}),
+						q(53100, {	-- Mission Report: Giant Slaying (Per Character)
+							["qs"] = 163190,	-- Outpost Upgrade (QS!)
+							["qi"] = 163191,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+						}),
+						q(53101, {	-- Nettin' Ettin (Per Character)
+							["sourceQuests"] = { 53100 },	-- Mission Report: Giant Slaying
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(162536, {	-- Scouting Report: Swiftwind Post
-						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(1964, {	-- Swiftwind Post
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52275, {	-- Mission Report: Swiftwind Post
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(161449),	-- Swiftwind Post (CI!)
-											i(161483),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52276, {	-- Swiftwind Post
-								["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.44, 62.67, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-							mi(2094, {	-- Nature Calls
-								["sourceQuests"] = { 52276 },	-- Swiftwind Post
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(53102, {	-- Mission Report: Nature Calls (Per Character)
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(163193),	-- Outpost Upgrade
-											i(163194),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(53103, {	-- Wicker Magic (Per Character)
-								["sourceQuests"] = { 53102 },	-- Mission Report: Nature Calls
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.44, 62.67, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 161449, {	-- Swiftwind Post
+						mi(1964, {	-- Swiftwind Post
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162536,1}},	-- Scouting Report: Swiftwind Post
+							["groups"] = {
+								i(161449),	-- Swiftwind Post (QS!)
+							},
+						}),
+						q(52275, {	-- Mission Report: Swiftwind Post
+							["qs"] = 161449,	-- Swiftwind Post (QS!)
+							["qi"] = 161483,	-- Mission Report (QI!)
+							["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53744 },	-- Swiftwind Post (mission completed)
+						}),
+						q(52276, {	-- Swiftwind Post
+							["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.44, 62.67, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
+						mi(2094, {	-- Nature Calls
+							["sourceQuests"] = { 52276 },	-- Swiftwind Post
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["groups"] = {
+								i(163193),	-- Outpost Upgrade (QS!)
+							},
+						}),
+						q(53102, {	-- Mission Report: Nature Calls (Per Character)
+							["qs"] = 163193,	-- Outpost Upgrade (QS!)
+							["qi"] = 163194,	-- Mission Report (QI!)
+							["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+						}),
+						q(53103, {	-- Wicker Magic (Per Character)
+							["sourceQuests"] = { 53102 },	-- Mission Report: Nature Calls
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.44, 62.67, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(162532, {	-- Scouting Report: Windfall Cavern
-						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							mi(1966, {	-- Windfall Cavern
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52319, {	-- Mission Report: Windfall Cavern
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(161487),	-- Windfall Cavern (CI!)
-											i(161488),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52320, {	-- Windfall Cavern
-								["sourceQuests"] = { 52319 },	-- Mission Report: Windfall Cavern
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 161487, {	-- Windfall Cavern
+						mi(1966, {	-- Windfall Cavern
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162532,1}},	-- Scouting Report: Windfall Cavern
+							["groups"] = {
+								i(161487),	-- Windfall Cavern (QS!)
+							},
+						}),
+						q(52319, {	-- Mission Report: Windfall Cavern
+							["qs"] = 161487,	-- Windfall Cavern (QS!)
+							["qi"] = 161488,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53741 },	-- Windfall Cavern (mission completed)
+						}),
+						q(52320, {	-- Windfall Cavern
+							["sourceQuests"] = { 52319 },	-- Mission Report: Windfall Cavern
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					i(162530, {	-- Scouting Report: Wolf's Den
-						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
-						["races"] = HORDE_ONLY,
-						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["groups"] = {
-							-- initial outpost setup
-							mi(1880, {	-- Wolf's Den
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									q(52005, {	-- Mission Report: Wolf's Den
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(161121),	-- The Wolf's Den (CI!)
-											i(161152),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(52127, {	-- Wolf's Den
-								["sourceQuests"] = { 52005 },	-- Mission Report: Wolf's Den
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-							mi(1957, {	-- Wolves For The Den
-								["sourceQuests"] = { 52127 },	-- Wolf's Den
-								["races"] = HORDE_ONLY,
-								["cr"] = 138706,	-- Mission Command Table
-								["groups"] = {
-									q(53151, {	-- Mission Report: Wolves For The Den
-										["provider"] = { "n", 138704 },	-- Mission Command Table
-										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["races"] = HORDE_ONLY,
-										["groups"] = {
-											i(163507),	-- Outpost Upgrade
-											i(163519),	-- Mission Report (QI!)
-										},
-									}),
-								},
-							}),
-							q(53152, {	-- Wolves For The Den
-								["sourceQuests"] = { 53151 },	-- Mission Report: Wolves For The Den
-								["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-								["coord"] = { 58.4, 62.6, ZULDAZAR },
-								["races"] = HORDE_ONLY,
-							}),
-						},
+					header(HEADERS.Item, 161121, {	-- The Wolf's Den
+						mi(1880, {	-- Wolf's Den
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["cost"] = {{"i",162530,1}},	-- Scouting Report: Wolf's Den
+							["groups"] = {
+								i(161121),	-- The Wolf's Den (QS!)
+							},
+						}),
+						q(52005, {	-- Mission Report: Wolf's Den
+							["qs"] = 161121,	-- The Wolf's Den (QS!)
+							["qi"] = 161152,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53739 },	-- The Wolf's Den (mission completed)
+						}),
+						q(52127, {	-- Wolf's Den
+							["sourceQuests"] = { 52005 },	-- Mission Report: Wolf's Den
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
+						mi(1957, {	-- Wolves For The Den
+							["sourceQuests"] = { 52127 },	-- Wolf's Den
+							["races"] = HORDE_ONLY,
+							["cr"] = 138706,	-- Mission Command Table
+							["groups"] = {
+								i(163507),	-- Outpost Upgrade (QS!)
+							},
+						}),
+						q(53151, {	-- Mission Report: Wolves For The Den
+							["qs"] = 163507,	-- Outpost Upgrade (QS!)
+							["qi"] = 163519,	-- Mission Report (QI!)
+							["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+							["races"] = HORDE_ONLY,
+							["lockCriteria"] = { 1, "questID", 53152 },	-- Wolves For The Den
+						}),
+						q(53152, {	-- Wolves For The Den
+							["sourceQuests"] = { 53151 },	-- Mission Report: Wolves For The Den
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 				},
 			}),

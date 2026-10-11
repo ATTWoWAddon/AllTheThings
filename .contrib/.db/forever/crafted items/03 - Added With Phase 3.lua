@@ -39,7 +39,7 @@ root(ROOTS.Craftables, {
 		i(20452),	-- Smoked Desert Dumplings
 	}),
 	prof(FIRST_AID, {
-		i(19440),	-- Powerful Anti-Venom
+		--i(19440),	-- Powerful Anti-Venom
 	}),
 	prof(LEATHERWORKING, {
 		prof(10656, {	-- Dragonscale Leatherworking

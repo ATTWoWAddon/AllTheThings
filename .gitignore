@@ -9,18 +9,17 @@
 .contrib/Harvesters/*.log
 .contrib/Harvesters/*.bat
 .contrib/Harvesters/System.Net.Http.Formatting.xml
-.contrib/Harvesters/Blizzard API Harvester.pdb
 .contrib/Harvesters/Blizzard API Harvester.exe.config
-.contrib/Source Code/Parser/.vs/
-.contrib/Source Code/ATT/bin
-.contrib/Source Code/Parser/obj/
-.contrib/Source Code/Item DB Compare Tool/bin/
-.contrib/Source Code/Blizzard API Harvester/packages/
-.contrib/Source Code/Parser/packages/
+.contrib/src/Parser/.vs/
+.contrib/src/ATT/bin
+.contrib/src/Parser/obj/
+.contrib/src/Item DB Compare Tool/bin/
+.contrib/src/Blizzard API Harvester/packages/
+.contrib/src/Parser/packages/
 .contrib/Harvesters/API.key
 .contrib/Harvesters/Client.key
-.contrib/Source Code/Blizzard API Harvester/bin/
-.contrib/Source Code/Classic Item Detector/bin/
+.contrib/src/Blizzard API Harvester/bin/
+.contrib/src/Classic Item Detector/bin/
 .contrib/.wago/Debug/*
 AllTheThings.iml
 .idea/workspace.xml
@@ -30,6 +29,7 @@ AllTheThings.iml
 icon.png
 log.txt
 *.log
+*.[pP][dD][bB]
 *.user
 .vs/
 obj/
@@ -44,4 +44,4 @@ __pycache__
 .contrib/.tools/Wago/
 SavedVariables.lua
 .contrib/.tools/ATT-ERROR-FILE.txt
-.contrib/.tools/log_debug.txt
+.contrib/.tools/**/*debug.txt

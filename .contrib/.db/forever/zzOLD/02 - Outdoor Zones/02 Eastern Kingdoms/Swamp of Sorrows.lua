@@ -71,6 +71,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Tale of Sorrow
+							["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+						}),
+					},
 				}),
 				q(8417, {	-- A Troubled Spirit
 					["allianceQuestData"] = {
@@ -182,6 +187,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Tale of Sorrow
+							["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+						}),
+					},
 				}),
 				q(1430, {	-- Fresh Meat
 					["qg"] = 5591,	-- Dar
@@ -358,6 +368,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 					["maps"] = { MAP.AZSHARA },
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 	Conversation with Loramus
+							["provider"] = { "n", 7783 },	-- Loramus Thalipedes
+						}),
+					},
 				}),
 				q(2621, {	-- The Disgraced One
 					["sourceQuest"] = 2784,	-- Fall From Grace
@@ -698,6 +713,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					},
 				}),
 				i(6172),	-- Lost Supplies
+				i(255728, {	-- Manual: Potent Anti-Venom (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					cr = 760,
+					coord = { 64.2, 20.6, MAP.SWAMP_OF_SORROWS },
+				}),
 				i(6196, {	-- Noboru's Cudgel
 					["cr"] = 5477,	-- Noboru the Cudgel
 				}),

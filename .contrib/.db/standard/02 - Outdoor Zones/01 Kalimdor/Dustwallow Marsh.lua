@@ -3708,6 +3708,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(256554, {	-- Definitely Real, Not At All Fake Head of the Broodmother (DECOR!)
 							["sourceAchievement"] = 4405,	-- More Dots! (25 player)	// This one remains because Achievement awards i:244852 (Head of the Broodmother)
 							["timeline"] = { ADDED_11_2_7 },
+							decorID = 1674,	-- This item is not linked in Wago data to the proper decorID
 						}),
 					},
 				}),

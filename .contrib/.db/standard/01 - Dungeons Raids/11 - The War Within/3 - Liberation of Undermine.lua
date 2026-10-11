@@ -540,7 +540,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
 							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
@@ -565,7 +564,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
 							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
@@ -590,7 +588,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
 							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
@@ -615,7 +612,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["minReputation"] = { FACTION_GALLAGIO, 11 },
 						["groups"] = sharedData({
 							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 						}, {

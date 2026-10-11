@@ -543,50 +543,27 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(ENGINEERING, {
-		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
-			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
-			--[[["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
-			["coords"] = {
-				{ 67.8, 43.0, MAP.IRONFORGE },
-				{ 75.5, 74.3, MAP.UNDERCITY },
-				{ 55.0, 7.0, MAP.STORMWIND_CITY },
-				{ 75.6, 25.2, MAP.ORGRIMMAR },
-			},
-			["providers"] = {
-				{ "n", 5519},	-- Billibub Cogspinner <Engineering Supplies>
-				{ "n", 4587},	-- Elizabeth Van Talen <Engineering Supplies>
-				{ "n", 5175},	-- Gearcutter Cogspinner <Engineering Supplies>
-				{ "n", 3413},	-- Sovik <Engineering Supplies>
-			},]]
-		}, {
+		n(COMMON_VENDOR_ITEMS, {
 			i(4400),	-- Heavy Stock
 			i(4399),	-- Wooden Stock
-		})),
+		}),
 		prof(GNOMISH_ENGINEERING, {
 			n(ARMOR, {
 				i(10545, {	-- Gnomish Goggles
 					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
 				}),
+				i(10721),	-- Gnomish Harm Prevention Belt
+				i(10726),	-- Gnomish Mind Control Cap
+				i(10724),	-- Gnomish Rocket Boots
 			}),
 			filter(BATTLE_PETS, {
-				i(11826, {	-- Lil' Smoky (PET!)
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required, until Wrath)
-				}),
+				i(11826),	-- Lil' Smoky (PET!)
 			}),
 			filter(MISC, {
 				i(18645),	-- Gnomish Alarm-o-Bot
-				i(10725, {	-- Gnomish Battle Chicken
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
+				i(18986, {	-- Ultrasafe Transporter: Gadgetzan
+					["requireSkill"] = GNOMISH_ENGINEERING,
 				}),
-				i(10645, {	-- Gnomish Death Ray
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
-				}),
-				i(10721),	-- Gnomish Harm Prevention Belt
-				i(10726),	-- Gnomish Mind Control Cap
-				i(10720),	-- Gnomish Net-o-Matic Projector
-				i(10724),	-- Gnomish Rocket Boots
-				i(10716),	-- Gnomish Shrink Ray
 			}),
 			filter(RECIPES, {
 				i(10713, {	-- Plans: Inlaid Mithril Cylinder (RECIPE!)
@@ -594,37 +571,39 @@ root(ROOTS.Craftables, {
 				}),
 			}),
 			filter(TOYS, {
-				i(18986, {	-- Ultrasafe Transporter: Gadgetzan (TOY!)
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
-				}),
 				i(18660, {	-- World Enlarger (TOY!)
 					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
 				}),
 			}),
+			filter(TRINKET_F, {
+				i(10725, {	-- Gnomish Battle Chicken
+					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
+				}),
+				i(10645, {	-- Gnomish Death Ray
+					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
+				}),
+				i(10720),	-- Gnomish Net-o-Matic Projector
+				i(10716),	-- Gnomish Shrink Ray
+			}),
 		}),
 		prof(GOBLIN_ENGINEERING, {
-			filter(BATTLE_PETS, {
-				i(11825, {	-- Pet Bombling (PET!)
-					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required, until Wrath)
-				}),
-			}),
-			filter(MISC, {
-				i(10587, {	-- Goblin Bomb Dispenser
-					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
-				}),
+			n(ARMOR, {
 				i(10543, {	-- Goblin Construction Helmet
 					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 				}),
-				i(10727, {	-- Goblin Dragon Gun
-					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
-				}),
-				i(18587),	-- Goblin Jumper Cables XL
 				i(10542, {	-- Goblin Mining Helmet
 					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 				}),
-				i(10577),	-- Goblin Mortar
 				i(7189),	-- Goblin Rocket Boots
 				i(10588),	-- Goblin Rocket Helmet
+			}),
+			filter(BATTLE_PETS, {
+				i(11825),	-- Pet Bombling (PET!)
+			}),
+			filter(MISC, {
+				i(18984, {	-- Dimensional Ripper - Everlook (TOY!)
+					["requireSkill"] = GOBLIN_ENGINEERING,
+				}),
 				i(10646),	-- Goblin Sapper Charge
 				i(10586),	-- The Big One
 			}),
@@ -633,11 +612,23 @@ root(ROOTS.Craftables, {
 					["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
 				}),
 			}),
-			filter(TOYS, {
-				i(18984, {	-- Dimensional Ripper - Everlook (TOY!)
+			filter(TRINKET_F, {
+				i(10587, {	-- Goblin Bomb Dispenser
 					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
 				}),
+				i(10727, {	-- Goblin Dragon Gun
+					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
+				}),
+				i(18587),	-- Goblin Jumper Cables XL
 			}),
+		}),
+		filter(AMMO, {
+			i(8068),	-- Crafted Heavy Shot
+			i(8067),	-- Crafted Light Shot
+			i(8069),	-- Crafted Solid Shot
+			i(10512),	-- Hi-Impact Mithril Slugs
+			i(10513),	-- Mithril Gyro-Shot
+			i(15997),	-- Thorium Shells
 		}),
 		n(ARMOR, {
 			i(10499),	-- Bright-Eye Goggles
@@ -649,6 +640,7 @@ root(ROOTS.Craftables, {
 			i(10504),	-- Green Lens
 			i(4385),	-- Green Tinted Goggles
 			i(16008),	-- Master Engineer's Goggles
+			i(10518),	-- Parachute Cloak
 			i(10503),	-- Rose Colored Goggles
 			i(4373),	-- Shadow Goggles
 			i(10502),	-- Spellpower Goggles Xtreme
@@ -660,79 +652,68 @@ root(ROOTS.Craftables, {
 			i(21277),	-- Tranquil Mechanical Yeti (PET!)
 		}),
 		filter(MISC, {
-			i(4392),	-- Advanced Target Dummy
-			i(6533),	-- Aquadynamic Fish Attractor
+			-- Bombs
 			i(16040),	-- Arcane Bomb
 			i(4380),	-- Big Bronze Bomb
 			i(4394),	-- Big Iron Bomb
-			i(9312),	-- Blue Firework
-			i(21571),	-- Blue Rocket Cluster
-			i(6712),	-- Clockwork Box[4.3.0+] / Classic: Practice Lock
-			i(21570),	-- Cluster Launcher
 			i(4365),	-- Coarse Dynamite
-			i(4391),	-- Compact Harvest Reaper Kit
-			i(8068),	-- Crafted Heavy Shot
-			i(8067),	-- Crafted Light Shot
-			i(8069),	-- Crafted Solid Shot
 			i(16005),	-- Dark Iron Bomb
 			i(18641),	-- Dense Dynamite
-			i(4388),	-- Discombobulator Ray
 			i(4384),	-- Explosive Sheep
 			i(6714),	-- EZ-Thro Dynamite
 			i(18588),	-- EZ-Thro Dynamite II
-			i(18232),	-- Field Repair Bot 74A
-			i(21569),	-- Firework Launcher
-			i(4376),	-- Flame Deflector
-			i(4852),	-- Flash Bomb
-			i(4397),	-- Gnomish Cloaking Device
-			i(7506),	-- Gnomish Universal Remote
-			i(7148),	-- Goblin Jumper Cables
 			i(4395),	-- Goblin Land Mine
-			i(9313),	-- Green Firework
-			i(21574),	-- Green Rocket Cluster
-			i(18634),	-- Gyrofreeze Ice Reflector
 			i(4378),	-- Heavy Dynamite
 			i(10562),	-- Hi-Explosive Bomb
-			i(10512),	-- Hi-Impact Mithril Slugs
-			i(18638),	-- Hyper-Radiant Flame Reflector
-			i(4386),	-- Ice Deflector
 			i(4390),	-- Iron Grenade
+			i(4370),	-- Large Copper Bomb
+			i(4398),	-- Large Seaforium Charge
+			i(10514),	-- Mithril Frag Bomb
+			i(4403),	-- Portable Bronze Mortar
+			i(18594),	-- Powerful Seaforium Charge
+			i(4360),	-- Rough Copper Bomb
+			i(4358),	-- Rough Dynamite
+			i(4374),	-- Small Bronze Bomb
+			i(4367),	-- Small Seaforium Charge
+			i(10507),	-- Solid Dynamite
+			i(15993),	-- Thorium Grenade
+			-- Fireworks
+			i(9312),	-- Blue Firework
+			i(21571),	-- Blue Rocket Cluster
+			i(21570),	-- Cluster Launcher
+			i(21569),	-- Firework Launcher
+			i(9313),	-- Green Firework
+			i(21574),	-- Green Rocket Cluster
 			i(21589),	-- Large Blue Rocket
 			i(21714),	-- Large Blue Rocket Cluster
-			i(4370),	-- Large Copper Bomb
 			i(21590),	-- Large Green Rocket
 			i(21716),	-- Large Green Rocket Cluster
 			i(21592),	-- Large Red Rocket
 			i(21718),	-- Large Red Rocket Cluster
-			i(4398),	-- Large Seaforium Charge
-			i(16023),	-- Masterwork Target Dummy
-			i(11590),	-- Mechanical Repair Kit
-			i(4381),	-- Minor Recombobulator
-			i(10514),	-- Mithril Frag Bomb
-			i(10513),	-- Mithril Gyro-Shot
-			i(5507),	-- Ornate Spyglass
-			i(10518),	-- Parachute Cloak
-			i(4403),	-- Portable Bronze Mortar
-			i(18594),	-- Powerful Seaforium Charge
 			i(9318),	-- Red Firework
 			i(21576),	-- Red Rocket Cluster
-			i(4360),	-- Rough Copper Bomb
-			i(4358),	-- Rough Dynamite
-			i(15846),	-- Salt Shaker
 			i(21558),	-- Small Blue Rocket
-			i(4374),	-- Small Bronze Bomb
 			i(21559),	-- Small Green Rocket
 			i(21557),	-- Small Red Rocket
-			i(4367),	-- Small Seaforium Charge
 			i(19026),	-- Snake Burst Firework
-			i(10507),	-- Solid Dynamite
-			i(22728, {	-- Steam Tonk Controller	-- CRIEVE NOTE: This might not be in the game, originally added with TBC
-				description = "This might not be in the game, please @crieve if you craft it!",
-			}),
+			-- Misc
+			i(4392),	-- Advanced Target Dummy
+			i(6533),	-- Aquadynamic Fish Attractor
+			i(4391),	-- Compact Harvest Reaper Kit
+			i(4388),	-- Discombobulator Ray
+			i(18232),	-- Field Repair Bot 74A
+			i(4376),	-- Flame Deflector
+			i(4852),	-- Flash Bomb
+			i(4397),	-- Gnomish Cloaking Device
+			i(7148),	-- Goblin Jumper Cables
+			i(4386),	-- Ice Deflector
+			i(16023),	-- Masterwork Target Dummy
+			i(11590),	-- Mechanical Repair Kit
+			i(5507),	-- Ornate Spyglass
+			i(6712),	-- Practice Lock
 			i(4366),	-- Target Dummy
-			i(15993),	-- Thorium Grenade
-			i(15997),	-- Thorium Shells
-			i(18639),	-- Ultra-Flash Shadow Reflector
+		}),
+		filter(NECK_F, {
 			i(16009),	-- Voice Amplification Modulator
 		}),
 		filter(PROFESSION_EQUIPMENT, {
@@ -757,6 +738,7 @@ root(ROOTS.Craftables, {
 			i(10561),	-- Mithril Casing
 			i(10559),	-- Mithril Tube
 			i(4357),	-- Rough Blasting Powder
+			i(15846),	-- Salt Shaker
 			i(4404),	-- Silver Contact
 			i(10505),	-- Solid Blasting Powder
 			i(16000),	-- Thorium Tube
@@ -767,11 +749,19 @@ root(ROOTS.Craftables, {
 		}),
 		filter(TOYS, {
 			i(17716),	-- Snowmaster 9000 (TOY!)
+			i(22728, {	-- Steam Tonk Controller (TOY!)	-- CRIEVE NOTE: This might not be in the game, originally added with TBC
+				description = "This might not be in the game, please @crieve if you craft it!",
+			}),
 		}),
 		filter(TRINKET_F, {
 			i(16022),	-- Arcanite Dragonling
+			i(7506),	-- Gnomish Universal Remote
+			i(18634),	-- Gyrofreeze Ice Reflector
+			i(18638),	-- Hyper-Radiant Flame Reflector
 			i(4396),	-- Mechanical Dragonling
+			i(4381),	-- Minor Recombobulator
 			i(10576),	-- Mithril Mechanical Dragonling
+			i(18639),	-- Ultra-Flash Shadow Reflector
 		}),
 		n(WEAPONS, {
 			i(16004),	-- Dark Iron Rifle
@@ -791,27 +781,26 @@ root(ROOTS.Craftables, {
 			i(10546),	-- Deadly Scope
 			i(10548),	-- Sniper Scope
 			i(4406),	-- Standard Scope
-		}),
+		}),	
 	}),
 	prof(FIRST_AID, {
-		i(118),	-- Minor Healing Potion
-		i(1710),	-- Greater Healing Potion
-		i(929),	-- Healing Potion
-		i(858),	-- Lesser Healing Potion
-		i(13446),	-- Major Healing Potion
-		i(3928),	-- Superior Healing Potion
-		
 		i(6452),	-- Anti-Venom
+		i(1710),	-- Greater Healing Potion
+		i(929),		-- Healing Potion
 		i(2581),	-- Heavy Linen Bandage
 		i(8545),	-- Heavy Mageweave Bandage
 		i(14530),	-- Heavy Runecloth Bandage
 		i(6451),	-- Heavy Silk Bandage
 		i(3531),	-- Heavy Wool Bandage
+		i(858),		-- Lesser Healing Potion
 		i(1251),	-- Linen Bandage
 		i(8544),	-- Mageweave Bandage
+		i(13446),	-- Major Healing Potion
+		i(118),		-- Minor Healing Potion
 		i(14529),	-- Runecloth Bandage
 		i(6450),	-- Silk Bandage
 		i(6453),	-- Strong Anti-Venom
+		i(3928),	-- Superior Healing Potion
 		i(3530),	-- Wool Bandage
 	}),
 	prof(FISHING, {

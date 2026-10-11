@@ -36,12 +36,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				ach(63718, {	-- Lock and Key
 					["coords"] = {	-- Potential Coordinates of Locked Doors
+						{ 50.4, 78.5, LABYRINTH_KINDOJAN },
 						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
 					},
 					["cost"] = { { "i", 282402, 1 } },	-- 1x Archaic Amani Key
 				}),
 				ach(63719, {	-- Lock and Key Master
 					["coords"] = {	-- Potential Coordinates of Locked Doors
+						{ 50.4, 78.5, LABYRINTH_KINDOJAN },
 						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
 					},
 					["cost"] = { { "i", 282402, 20 } },	-- 20x Archaic Amani Key
@@ -74,7 +76,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			}),
 			n(DELVE_COMPLETION, {	-- UI Elements
 				i(285807),	-- Heroic Soul Fragment
-				i(285875),	-- Kindo'jan
+				i(285875),	-- Kindo'jan (Tier 8+)
+				i(285876),	-- Zah'ran (Tier 6+)
 			}),
 			n(FACTIONS, {
 				faction(2836),	-- Kindo'jan's Labyrinth
@@ -166,6 +169,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 44.4, 84.6, LABYRINTH_KINDOJAN },
 					["groups"] = { i(286643) },	-- Kinduru's Spiriting Quill (TOY!)
 				}),
+				filter(MISC, {
+					i(271156),	-- Stolen Artifact
+				}),
 			}),
 			n(REWARDS, {
 				i(285801),	-- Heroic Soul Fragment
@@ -243,6 +249,21 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 47.7, 42.7, LABYRINTH_KINDOJAN },
 						["questID"] = 98649,
 					}),
+					o(676622, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 38.8, 83.4, LABYRINTH_KINDOJAN },
+						["questID"] = 98605,
+						["groups"] = {
+							i(282424),	-- Akil'zon's Swiftness
+							i(284359),	-- Corroded Amani Sconce (DECOR!)
+						},
+					}),
+					o(676623, {	-- Sturdy Chest
+						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
+						["coord"] = { 38.0, 83.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98606,
+						["groups"] = { i(284181) },	-- Loa-Touched Spine (COSMETIC!)
+					}),
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
 					["description"] = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
@@ -257,6 +278,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["description"] = "Spawns randomly throughout the Labyrinth.",
 				}),
 				o(677411, {	-- Mislaid Treasure
+					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
+				o(705955, {	-- Mislaid Treasure
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
 			}),

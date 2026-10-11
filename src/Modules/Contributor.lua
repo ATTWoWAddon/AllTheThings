@@ -4,16 +4,23 @@
 local _, app = ...;
 
 -- Globals
+--- @type function,function,function,function,
 local ipairs,pairs,tostring,setmetatable
 	= ipairs,pairs,tostring,setmetatable
+--- @type function,function,
 local GetQuestID,C_QuestLog_IsOnQuest
 	= GetQuestID,C_QuestLog.IsOnQuest
 
 -- Modules
+--- @type function
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+--- @type function
 local round = app.round
+--- @type function
 local SearchForObject = app.SearchForObject
+--- @type function
 local GetPlayerAura = app.WOWAPI.GetPlayerAuraBySpellID
+--- @type function
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant
 local DebugPrinting
 
@@ -64,20 +71,39 @@ local Reports = setmetatable({}, { __index = function(t,key)
 end})
 
 
+-- since discord just keeps changing how they color code blocks
+-- will try to use some common format lines for easier adjustments in the future
+local ReportLineFormats = {
+	KeyNum = ",%s=%d",
+	KeyRaw = ",%s#%s",
+	KeyStr = ",%s=\"%s\"",
+	KeySec = ",%s#<secret>",
+	Info = "%s:%s",
+	PlayerLocation = "PlayerLocation: {%s, %s, %s},    -- %s",
+	ATT = "ATT: \"%s\"GameBuild\"%d\"UTC\"%s\"",
+}
 local function GetReportPlayerLocation()
 	local mapID, px, py, fake = app.GetPlayerPosition()
 	local difficultyID, diffName = select(3, GetInstanceInfo())
-	local diffVal = (difficultyID and difficultyID ~= 0 and ("Diff: "..difficultyID) or "")
+	local diffVal = (difficultyID and difficultyID ~= 0 and (" Diff: "..difficultyID) or "")
 	if diffName and diffName ~= "" then
 		diffVal = diffVal.." ["..diffName.."]"
 	end
 	if fake then
-		return UNKNOWN..", "..UNKNOWN..", "..tostring(mapID or UNKNOWN).." \""..(app.GetMapName(mapID) or "??").."\" "..diffVal
+		return ReportLineFormats.PlayerLocation:format(
+			UNKNOWN,
+			UNKNOWN,
+			tostring(mapID or UNKNOWN),
+			(app.GetMapName(mapID) or "??")..diffVal)
 	end
 	-- floor coords to nearest tenth
 	if px then px = ("%.1f"):format(round(px, 1)) end
 	if py then py = ("%.1f"):format(round(py, 1)) end
-	return tostring(px or UNKNOWN)..", "..tostring(py or UNKNOWN)..", "..tostring(mapID or UNKNOWN).." \""..(app.GetMapName(mapID) or "??").."\" "..diffVal
+	return ReportLineFormats.PlayerLocation:format(
+		tostring(px or UNKNOWN),
+		tostring(py or UNKNOWN),
+		tostring(mapID or UNKNOWN),
+		(app.GetMapName(mapID) or "??")..diffVal)
 end
 
 local LorewalkingIgnoredReportTypes = {
@@ -88,7 +114,7 @@ local ReportTitleSuffixFuncs = {
 	Quest = function()
 		local mapID, px, py, fake = app.GetPlayerPosition()
 		local mapName = app.GetMapName(mapID)
-		return " ("..(mapName or "Unknown Map")..")"
+		return "--("..(mapName or "Unknown Map")..")"
 	end,
 }
 local function DoReport(reporttype, id)
@@ -108,11 +134,11 @@ local function DoReport(reporttype, id)
 	local orderedReportData = {}
 	-- id/type are ordered first always if existing
 	if reportData.id then
-		orderedReportData[#orderedReportData + 1] = "id: "..reportData.id
+		orderedReportData[#orderedReportData + 1] = ReportLineFormats.KeyNum:format("id",reportData.id)
 		reportData.id = nil
 	end
 	if reportData.type then
-		orderedReportData[#orderedReportData + 1] = "type: "..reportData.type
+		orderedReportData[#orderedReportData + 1] = ReportLineFormats.KeyStr:format("type",reportData.type)
 		reportData.type = nil
 	end
 	-- secret report data
@@ -132,14 +158,16 @@ local function DoReport(reporttype, id)
 	for k,v in pairs(reportData) do
 		vtype = type(v)
 		if vtype == "number" then
-			val = tostring(k)..": "..tostring(v)
+			val = ReportLineFormats.KeyNum:format(tostring(k),tostring(v))
 		else
 			val = tostring(v)
 			-- EditBox:SetText cannot accept secret values in the end, so trying to maintain them through the report sequence is pointless
 			if issecretvalue(val) then
-				val = tostring(k)..": <secret>"
+				val = ReportLineFormats.KeySec:format(tostring(k))
+			elseif type(v) == "boolean" then
+				val = ReportLineFormats.KeyRaw:format(k,tostring(v))
 			else
-				val = tostring(k)..": \""..tostring(v).."\""
+				val = ReportLineFormats.KeyStr:format(tostring(k),tostring(v))
 			end
 		end
 		keyedData[#keyedData + 1] = val
@@ -151,17 +179,17 @@ local function DoReport(reporttype, id)
 		headerTitle = headerTitle..titleSuffix()
 	end
 	reportData[#reportData + 1] = headerTitle
-	reportData[#reportData + 1] = "```vbnet"	-- discord fancy box start (testing: https://highlightjs.org/demo)
+	reportData[#reportData + 1] = "```lua"	-- discord fancy box start (testing: https://highlightjs.org/demo // https://discord-syntax-highlighting.vercel.app/)
 	-- add distinct ordered/keyed data
 	app.ArrayAppendDistinct(reportData, orderedReportData, keyedData)
 	-- common report data
 	reportData[#reportData + 1] = "---- User Info ----"
-	reportData[#reportData + 1] = "PlayerLocation: "..GetReportPlayerLocation()
+	reportData[#reportData + 1] = GetReportPlayerLocation()
 	local lastQuests = app.TableConcat(app.MostRecentQuestTurnIns, nil, nil, "<") or ""
 	if lastQuests ~= "" then
 		reportData[#reportData + 1] = "LastQuests:"..lastQuests
 	end
-	reportData[#reportData + 1] = "Character: L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")"
+	reportData[#reportData + 1] = "Character: L:"..app.Level.." R:"..app.RaceID.." \""..app.Race.."\" C:"..app.ClassIndex.." \""..app.Class.."\""
 	-- somehow app.CurrentCharacter nil at this point in some situation...
 	-- maybe an app.report triggered before PLAYER_LOGIN... ?
 	local Professions = app.CurrentCharacter and app.CurrentCharacter.Professions
@@ -187,7 +215,49 @@ local function DoReport(reporttype, id)
 		end
 		reportData[#reportData + 1] = "Skills: "..(app.TableConcat(skills) or "")
 	end
-	reportData[#reportData + 1] = "ATT: "..app.Version.." GameBuild: "..app.GameBuildVersion.." UTC: "..date("!%Y-%m-%dT%H:%M:%SZ", time())
+
+	if C_Covenants then	-- Covenants
+		local covInfo = "";
+		local covID = C_Covenants.GetActiveCovenantID();
+		if covID and covID > 0 then
+			local covData = C_Covenants.GetCovenantData(covID);
+			if covData then
+				covInfo = covInfo .. covID..":"..covData.name;
+				local covRenown = C_CovenantSanctumUI.GetRenownLevel();
+				if covRenown then
+					covInfo = covInfo .. ":"..covRenown;
+				end
+			else
+				covInfo = covInfo .. "N/A";
+			end
+		else
+			covInfo = covInfo .. "N/A";
+		end
+		reportData[#reportData + 1] = ReportLineFormats.Info:format("cov",covInfo)
+	end
+	if C_MajorFactions then	-- Renown
+		local data = {}
+		-- DF/TWW/MD
+		for i=9,11 do
+			local exp = {}
+			data[i==9 and "DF" or i==10 and "TWW" or i==11 and "MD" or i] = exp
+			for _,factionID in ipairs(C_MajorFactions.GetMajorFactionIDs(i)) do
+				local renown = C_MajorFactions.GetMajorFactionData(factionID);
+				exp[factionID] = renown and renown.renownLevel or "?"
+			end
+		end
+		reportData[#reportData + 1] = ReportLineFormats.Info:format("renown",app:RenderStylizedRawData(data, "Compact"))
+	end
+
+	if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
+		local acctUnlocks = {
+			app.IsQuestFlaggedCompleted(72366) and "DF_CA:Y" or "DF_CA:N",	-- Dragonflight Campaign Complete
+			app.IsQuestFlaggedCompleted(75658) and "DF_ZC:Y" or "DF_ZC:N",	-- Dragonflight Zaralek Caverns Complete
+			app.IsQuestFlaggedCompleted(79573) and "WW_CA:Y" or "WW_CA:N",	-- The War Within Campaign Complete
+		}
+		reportData[#reportData + 1] = ReportLineFormats.Info:format("unlocks",app.TableConcat(acctUnlocks, nil, nil, "/"))
+	end
+	reportData[#reportData + 1] = ReportLineFormats.ATT:format(app.Version,app.GameBuildVersion,date("!%Y-%m-%dT%H:%M:%SZ", time()))
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
 	if app:SetupReportDialog(dialogID, "Contributor Report: " .. dialogID, reportData, allowRepeat) then
@@ -4169,3 +4239,51 @@ app.AddEventHandler("OnStartup", function()
 	Contribute(AllTheThingsSavedVariables.Contributor)
 	DebugPrinting = AllTheThingsSavedVariables.Contributor_DebugPrinting
 end)
+
+do	-- Data Serialization
+
+local IgnoredKeys = {
+	parent = true,
+	sourceParent = true,
+	__merge = true,
+	window = true,
+}
+local TableRefs = {}
+local function Serialize(v)
+	local t = type(v)
+	if t == "string" then
+		return (string.format("%q", v):gsub("\\\n", "\\n"))
+	elseif t == "number" or t == "boolean" then
+		return tostring(v)
+	elseif t == "table" then
+		if TableRefs[v] then
+			return "<REF>"
+		else
+			TableRefs[v] = true
+			local out, n = {}, #v
+			for i = 1, n do out[#out + 1] = Serialize(v[i]) end
+			local keys = {}
+			for k in pairs(v) do
+				if not IgnoredKeys[k] and not (type(k) == "number" and k % 1 == 0 and k >= 1 and k <= n) then
+					keys[#keys + 1] = k
+				end
+			end
+			table.sort(keys, function(a, b) return tostring(a) < tostring(b) end)
+			for _, k in ipairs(keys) do
+				local ks = (type(k) == "string" and k:match("^[%a_][%w_]*$")) and k or ("[" .. Serialize(k) .. "]")
+				out[#out + 1] = ks .. "=" .. Serialize(v[k])
+			end
+			return "{" .. table.concat(out, ",") .. "}"
+		end
+	elseif t == "function" then
+		return "<func>"
+	end
+	return "nil"
+end
+
+app:RegisterDataStyleExporter("Compact", {
+	main = function(data, depth) wipe(TableRefs) return Serialize(data) end,
+	getSub = function() return "" end,	-- Serialize handles the nesting so don't follow default Sub data
+})
+
+end

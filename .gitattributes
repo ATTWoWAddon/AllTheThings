@@ -91,6 +91,7 @@ setup.cfg export-ignore
 contrib export-ignore
 .contrib export-ignore
 .github export-ignore
+tests export-ignore
 ###############################################################################
 # using for Git LFS (Large File Storage)
 ###############################################################################

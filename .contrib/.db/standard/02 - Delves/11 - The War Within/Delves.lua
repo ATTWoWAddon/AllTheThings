@@ -1804,7 +1804,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 		hqt(86990, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 77
 		hqt(86991, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 78
 		hqt(86992, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 79
-		-- hqt(86993, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 80 Attached on achievement
+		hqt(86993, {["timeline"] = { ADDED_11_1_0_SEASONSTART }}),	-- Level 80
 		hqt(88948, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 81
 		hqt(88949, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 82
 		hqt(88950, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 83
@@ -1824,7 +1824,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 		hqt(88964, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 97
 		hqt(88965, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 98
 		hqt(88966, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 99
-		-- hqt(88967, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 100 Attached on achievement
+		hqt(88967, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 100
 	}),
 	n(QUESTS, {
 		q(84370, {	-- The Key to Success
@@ -1892,7 +1892,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			-- ["provider"] = { "n", xxxxx },	-- Auto-accept?
 			-- ["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81596, {	-- Delve Hunter
 			["sourceQuests"] = { 81595 },	-- Seasonal Start

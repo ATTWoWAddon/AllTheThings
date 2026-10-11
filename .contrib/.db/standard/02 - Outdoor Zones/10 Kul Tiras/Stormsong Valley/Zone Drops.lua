@@ -75,6 +75,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(159198),	-- Brineworks Vambraces
 			i(159192),	-- Brineworks Gauntlets
 			i(159193),	-- Brineworks Girdle
+			i(158180, {	-- The Glazer
+				description = "Very low drop rate",
+				coord = { 67.0, 70.0, MAP.BFA.STORMSONG_VALLEY },
+				crs = {
+					131663,	-- Flowing Honey
+					133429,	-- Bubbling Mead
+					132341,	-- Hive Mother
+				},
+			}),
 		}),
 	}),
 })));

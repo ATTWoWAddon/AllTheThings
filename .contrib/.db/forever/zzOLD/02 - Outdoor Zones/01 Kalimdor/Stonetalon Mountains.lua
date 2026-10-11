@@ -568,7 +568,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
-					["coord"] = { 43.1, 80.3, MAP.STORMWIND_CITY },
+					["coord"] = { 53.0, 86.6, MAP.STORMWIND_CITY },
 					["maps"] = { MAP.THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
@@ -619,11 +619,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 				q(1077, {	-- Special Delivery for Gaxim
 					["sourceQuest"] = 1076,	-- Devils in Westfall
-					["providers"] = {
-						{ "n", 4078 },	-- Collin Mauren
-						{ "i", 5731 },	-- Scroll of Messaging
-					},
-					["coord"] = { 43.1, 80.3, MAP.STORMWIND_CITY },
+					["qg"] = 4078,	-- Collin Mauren
+					["qi"] = 5731,	-- Scroll of Messaging
+					["coord"] = { 53.0, 86.6, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),

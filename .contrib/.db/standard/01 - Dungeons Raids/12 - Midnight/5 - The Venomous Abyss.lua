@@ -632,7 +632,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1320, {	-- The Venomous Abyss
 		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = {
+		["groups"] = sharedData({
+			isWeekly=true
+		},{
 			-- LFR
 			hqt(98084, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98080, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
@@ -645,23 +647,22 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			hqt(98091, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			hqt(98075, name(HEADERS.NPC, 261503)),	-- Frightmaw
 			hqt(98087, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
-			hqt(98097, name(HEADERS.Encounter, COILED_ALTAR)),	-- Coiled Altar
-			hqt(97980, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
+			hqt(98097, name(HEADERS.Encounter, COILED_ALTAR, {isWeekly=IGNORED_VALUE})),	-- Coiled Altar
+			hqt(97980, name(HEADERS.Encounter, ULATEK, {isWeekly=IGNORED_VALUE})),	-- Ula'tek
 			-- H
-			hqt(96496, name(HEADERS.Encounter, NEKZALI)),	-- second week this triggered on boss kill... weird it's likely something else
 			hqt(98082, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98078, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98090, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			hqt(98074, name(HEADERS.NPC, 261503)),	-- Frightmaw
 			hqt(98086, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
-			hqt(97983, name(HEADERS.Encounter, ULATEK)),	-- Ula'tek
+			hqt(97983, name(HEADERS.Encounter, ULATEK, {isWeekly=IGNORED_VALUE})),	-- Ula'tek
 			-- M
 			hqt(98081, name(HEADERS.NPC, 261491)),	-- Noxiss Venomcrest
 			hqt(98077, name(HEADERS.NPC, 261492)),	-- Gorefang the Reaver
 			hqt(98089, name(HEADERS.NPC, 266538)),	-- Shriekcoil
 			hqt(98073, name(HEADERS.NPC, 261503)),	-- Frightmaw
 			hqt(98085, name(HEADERS.NPC, 263594)),	-- Venomweaver Vexhiss
-		},
+		}),
 	}),
 }))
 

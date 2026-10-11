@@ -13,8 +13,8 @@ SYMLINKS = {}
 -- Auto-Metatable handling
 do
 --- Metatable index function which automatically creates nested tables for string keys.
----@param t table
----@param key any
+---@param t table Table receiving the automatically created nested table.
+---@param key any Missing key being looked up; string keys create nested tables.
 ---@return table|nil
 local function AutoTableMetaFunc(t, key)
 	-- only auto-key string keys
@@ -25,7 +25,7 @@ local function AutoTableMetaFunc(t, key)
 	end
 end
 --- Wraps a table so missing string keys automatically create nested tables.
----@param t table
+---@param t table Table to wrap with automatic nested-table creation.
 ---@return table
 function SelfAutoTable(t, metafunc)
 	return setmetatable(t or {}, { __index = metafunc or AutoTableMetaFunc })

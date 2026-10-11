@@ -471,10 +471,10 @@ s(15756,34140,{b=1,e=7,f=1,spellID=44540,u=2})}}),
 q(11487,{awp=20202,e=7,maps={242},qgs={23872},r=1,rwp=20403,sourceQuests={11454},u=2,g={
 s(15756,34140,{b=1,e=7,f=1,spellID=44540,u=2})}}),
 q(11122,{awp=20202,coords={
-[27]={{53.6,38.6}}},e=7,isYearly=1,qgs={23558},qis={33306,33797},r=2,sourceQuests={11318},g={
+[27]={{53.6,38.6}}},crs={24364,24468},e=7,isYearly=1,qgs={23558},qis={33306,33797},r=2,sourceQuests={11318},g={
 i(37829,{awp=20403,e=7})}}),
 q(11412,{awp=20202,coords={
-[1]={{42.6,17.6}}},e=7,isYearly=1,qgs={24497},qis={33306,33797},r=1,sourceQuests={11409},g={
+[1]={{42.6,17.6}}},crs={24510,24527},e=7,isYearly=1,qgs={24497},qis={33306,33797},r=1,sourceQuests={11409},g={
 i(37829,{awp=20403,e=7})}}),
 q(12020,{awp=20202,coords={
 [27]={{56,37.1}}},e=7,isDaily=1,providers={{"o",189989}},r=2,rwp=80200,u=2,g={
@@ -11581,9 +11581,16 @@ i(19805,{b=1,e=6}),
 s(7794,19808,{collectible=false,description="Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",e=6,f=23,lvl=17}),
 i(19807,{e=6})}})}})}}),
 h(-589,{awp=70205,e=266,g={
+q(95012,{awp=120100,coords={
+[2339]={{46,55.1}},
+[2393]={{51.1,76.4}}},e=266,isYearly=1,qgs={220307},r=2}),
 q(47709,{coords={
 [469]={{36.3,36.5}}},e=266,isYearly=1,qgs={124280},r=2,g={
-toy(267472,{awp=120100,e=266})}})}}),
+toy(267472,{awp=120100,e=266,races={7,37}})}}),
+n(259603,{awp=120100,coords={
+[469]={{36.3,36.5}}},e=266,r=2,g={
+i(267381,{awp=70205,e=266,f=55,spellID=1280336}),
+i(267380,{awp=70205,e=266,f=55,spellID=431058})}})}}),
 h(-590,{awp=70105,e=249,sharedDescription="Thousand Boat Bash must be available for this World Quest to display.",g={
 h(-62,{e=249,g={
 q(45808,{e=249,isWorldQuest=1,maps={64},g={
@@ -16925,7 +16932,7 @@ ach(41038,{e=242,rwp=110007,u=2}),
 ach(41013,{e=242,questID=85661}),
 ach(40661,{coords={
 [71]={{61.7,50},{61.8,49.9},{61.9,50.1},{62.2,49.6},{62.3,49.3}}},crs={227559},e=242,providers={{"i",224157},{"n",227682}}})}}),
-inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=26,g={
+inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=27,g={
 h(-12,{e=242,g={
 ach(40999,{e=242,g={
 crit(70571,{achID=40999,e=242,id=2,providers={{"n",232243}}}),
@@ -16937,7 +16944,7 @@ h(-45,{e=242,g={
 q(82817,{coords={
 [84]={{56,18.4}},
 [85]={{52.8,82.8}}},e=242,isWeekly=1,lvl=30,qgs={234556},rwp=110007,u=2,g={
-i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",27},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
 hqt(84743,{coords={
@@ -17046,11 +17053,11 @@ s(229527,231428,{b=1,e=242,f=23,lvl=22,u=2}),
 s(229522,231422,{b=1,e=242,f=5,loc=46,lvl=22,u=2}),
 s(229538,231441,{b=1,e=242,f=5,loc=43,lvl=22,u=2}),
 n(223881,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",27},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(233209,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",27},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(224322,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",27},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 d(116,{difficulties={17,14,15},e=242,g={
 h(-63,{e=242,g={
 s(229587,231501,{e=242,f=4,loc=43,lvl=80}),
@@ -17735,7 +17742,7 @@ q(82783,{coords={
 [71]={{62.6,50}}},e=242,isWeekly=1,lvl=10,maps={2354},qgs={226368},g={
 ach(40977,{e=242,g={
 crit(70589,{achID=40976,e=242,id=8})}}),
-i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",26},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",27},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 cu(1166,{e=242})}})}}),
 h(-56,{e=242,g={
 o(455795,{coords={

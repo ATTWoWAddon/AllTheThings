@@ -134,27 +134,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(255903)),	-- Galactic Warmonger's Spaulders
 					}),
 					n(WEAPONS, {
-						bloody(525, i(255931)),	-- Galactic Warmonger's Aegis
-						bloody(875, i(255918)),	-- Galactic Warmonger's Battleaxe
+						bloody(525, i(255931)),		-- Galactic Warmonger's Aegis
+						bloody(875, i(255918)),		-- Galactic Warmonger's Battleaxe
 						bloody(1750, i(255925)),	-- Galactic Warmonger's Battlestaff
 						bloody(1750, i(255927)),	-- Galactic Warmonger's Broadsword
-						bloody(875, i(255920)),	-- Galactic Warmonger's Carver
+						bloody(875, i(255920)),		-- Galactic Warmonger's Carver
 						bloody(1225, i(255928)),	-- Galactic Warmonger's Club
-						bloody(875, i(255936)),	-- Galactic Warmonger's Crusher
-						bloody(875, i(255930)),	-- Galactic Warmonger's Cudgel
+						bloody(875, i(255936)),		-- Galactic Warmonger's Crusher
+						bloody(875, i(255930)),		-- Galactic Warmonger's Cudgel
 						bloody(1225, i(255938)),	-- Galactic Warmonger's Dagger
-						bloody(875, i(255939)),	-- Galactic Warmonger's Dirk
+						bloody(875, i(255939)),		-- Galactic Warmonger's Dirk
 						bloody(1750, i(255921)),	-- Galactic Warmonger's Flameshot
 						bloody(1750, i(255926)),	-- Galactic Warmonger's Greatsword
-						bloody(875, i(255929)),	-- Galactic Warmonger's Hammer
+						bloody(875, i(255929)),		-- Galactic Warmonger's Hammer
 						bloody(1225, i(255919)),	-- Galactic Warmonger's Hatchet
 						bloody(1750, i(255932)),	-- Galactic Warmonger's Impaler
-						bloody(525, i(255923)),	-- Galactic Warmonger's Lantern
-						bloody(875, i(255935)),	-- Galactic Warmonger's Mace
+						bloody(525, i(255923)),		-- Galactic Warmonger's Lantern
+						bloody(875, i(255935)),		-- Galactic Warmonger's Mace
 						bloody(1750, i(255933)),	-- Galactic Warmonger's Spear
 						bloody(1750, i(255924)),	-- Galactic Warmonger's Spire
 						bloody(1225, i(255937)),	-- Galactic Warmonger's Scepter
-						bloody(875, i(255922)),	-- Galactic Warmonger's Twinblade
+						bloody(875, i(255922)),		-- Galactic Warmonger's Twinblade
 						bloody(1225, i(255934)),	-- Galactic Warmonger's Wand
 					}),
 				},
@@ -478,25 +478,25 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 							conquest(525, i(255394)),	-- Galactic Gladiator's Shawl
 						}),
 						cl(ROGUE, {
-							i(255473),	-- Galactic Gladiator's Leather Vest
-							i(255474),	-- Galactic Gladiator's Leather Jerkin
-							i(255475),	-- Galactic Gladiator's Leather Boots
-							i(255476),	-- Galactic Gladiator's Leather Treads
-							i(255477),	-- Galactic Gladiator's Leather Gloves
-							i(255478),	-- Galactic Gladiator's Leather Grips
-							i(255479),	-- Galactic Gladiator's Leather Helm
-							i(255480),	-- Galactic Gladiator's Leather Mask
-							i(255481),	-- Galactic Gladiator's Leather Breeches
-							i(255482),	-- Galactic Gladiator's Leather Legwraps
-							i(255483),	-- Galactic Gladiator's Leather Spaulders
-							i(255484),	-- Galactic Gladiator's Leather Shoulderpads
-							i(255485),	-- Galactic Gladiator's Leather Belt
-							i(255486),	-- Galactic Gladiator's Leather Strap
-							i(255487),	-- Galactic Gladiator's Leather Wristwraps
-							i(255488),	-- Galactic Gladiator's Leather Wristguards
-							i(255489),	-- Galactic Gladiator's Cloak
-							i(255490),	-- Galactic Gladiator's Drape
-							i(255491),	-- Galactic Gladiator's Shawl
+							conquest(875, i(255473)),	-- Galactic Gladiator's Leather Vest
+							conquest(875, i(255474)),	-- Galactic Gladiator's Leather Jerkin
+							conquest(700, i(255475)),	-- Galactic Gladiator's Leather Boots
+							conquest(700, i(255476)),	-- Galactic Gladiator's Leather Treads
+							conquest(700, i(255477)),	-- Galactic Gladiator's Leather Gloves
+							conquest(700, i(255478)),	-- Galactic Gladiator's Leather Grips
+							conquest(875, i(255479)),	-- Galactic Gladiator's Leather Helm
+							conquest(875, i(255480)),	-- Galactic Gladiator's Leather Mask
+							conquest(875, i(255481)),	-- Galactic Gladiator's Leather Breeches
+							conquest(875, i(255482)),	-- Galactic Gladiator's Leather Legwraps
+							conquest(700, i(255483)),	-- Galactic Gladiator's Leather Spaulders
+							conquest(700, i(255484)),	-- Galactic Gladiator's Leather Shoulderpads
+							conquest(700, i(255485)),	-- Galactic Gladiator's Leather Belt
+							conquest(700, i(255486)),	-- Galactic Gladiator's Leather Strap
+							conquest(525, i(255487)),	-- Galactic Gladiator's Leather Wristwraps
+							conquest(525, i(255488)),	-- Galactic Gladiator's Leather Wristguards
+							conquest(525, i(255489)),	-- Galactic Gladiator's Cloak
+							conquest(525, i(255490)),	-- Galactic Gladiator's Drape
+							conquest(525, i(255491)),	-- Galactic Gladiator's Shawl
 						}),
 						cl(SHAMAN, {
 							conquest(875, i(255530)),	-- Galactic Gladiator's Chain Vest

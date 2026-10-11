@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(239477),	-- Reshii Brute's Epaulettes
 					i(239455),	-- Reshii Magi's Bands
 					i(239460),	-- Reshii Scout's Breeches
+					hqt_bonusRenown_weekly(90676, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: "Chowdar"
 				},
 			}),
 			n(241956, {	-- Arcana-Monger So'zer
@@ -29,6 +30,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(239474),	-- Reshii Brute's Handguards
 					i(239456),	-- Reshii Scout's Jerkin
 					i(239467),	-- Reshii Skirmisher's Cowl
+					hqt_bonusRenown_weekly(90697, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: "Arcana-Monger So'zer"
 				},
 			}),
 			n(238540, {	-- Grubber
@@ -45,6 +47,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(239463),	-- Reshii Scout's Bracers
 					i(239465),	-- Reshii Skirmisher's Boots
 					i(239469),	-- Reshii Skirmisher's Pauldrons
+					hqt_bonusRenown_weekly(90699, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Grubber
 				},
 			}),
 			n(245998, {	-- Heka'tamos <the Elemental Disjunction>
@@ -60,6 +63,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(245272),	-- Heka'Tarnos, Bringer of Discord (PET!)
 					i(246065),	-- Reshii Magi's Band
 					i(246064),	-- Reshii Magi's Pendant
+					hqt_bonusRenown_weekly(91422, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Heka'tamos
 				},
 			}),
 			n(238536, {	-- Hollowbane
@@ -71,6 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(239473),	-- Reshii Brute's Sollerets
 					i(239462),	-- Reshii Scout's Belt
 					i(239471),	-- Reshii Skirmisher's Armguards
+					hqt_bonusRenown_weekly(90691, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Hollowbane
 				},
 			}),
 			n(231229, {	-- Korgoth the Hungerer
@@ -99,6 +104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(240111),	-- Reshii Skirmisher's Axe
 					i(240114),	-- Reshii Skirmisher's Morningstar
 					i(240119),	-- Reshii Skirmisher's Staff
+					hqt_bonusRenown_weekly(91433, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Korgoth the Hungerer
 				},
 			}),
 			n(245997, {	-- Malek'ta <The Jaws of Oblivion>
@@ -109,6 +115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(245214),	-- Palek'ti, the Mouth of Nothingness (PET!)
 					i(240169),	-- Reshii Magi's Amulet
 					i(240168),	-- Reshii Magi's Seal
+					hqt_bonusRenown_weekly(91421, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Malek'ta
 				},
 			}),
 			n(234970, {	-- Miasmawrath
@@ -138,6 +145,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(240112),	-- Reshii Scout's Blade
 					i(240111),	-- Reshii Skirmisher's Axe
 					i(240119),	-- Reshii Skirmisher's Staff
+					hqt_bonusRenown_weekly(91434, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Miasmawrath
 				},
 			}),
 			n(235422, {	-- Phase-Thief Tezra
@@ -157,6 +165,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(239460),	-- Reshii Scout's Breeches
 					i(239459),	-- Reshii Scout's Hood
 					i(239466),	-- Reshii Skirmisher's Gauntlets
+					hqt_bonusRenown_weekly(90693, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Purple Peat (TODO: swap with rare questID if wrong)
 				},
 			}),
 			n(238135, {	-- Shatterpulse
@@ -165,6 +174,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 90687,
 				["groups"] = {
 					i(239452),	-- Reshii Magi's Leggings
+					hqt_bonusRenown_weekly(90688, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Shatterpulse (TODO: swap with rare questID if wrong)
 				},
 			}),
 			n(235087, {	-- The Harvester
@@ -195,6 +205,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(240111),	-- Reshii Skirmisher's Axe
 					i(240114),	-- Reshii Skirmisher's Morningstar
 					i(240119),	-- Reshii Skirmisher's Staff
+					hqt_bonusRenown_weekly(91435, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: The Harvester
 				},
 			}),
 			n(235104, {	-- The Wallbreaker
@@ -225,6 +236,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(240111),	-- Reshii Skirmisher's Axe
 					i(240114),	-- Reshii Skirmisher's Morningstar
 					i(240119),	-- Reshii Skirmisher's Staff
+					hqt_bonusRenown_weekly(91436, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: The Wallbreaker
 				},
 			}),
 			n(238384, {	-- Xy'vox the Twisted
@@ -238,6 +250,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(239461),	-- Reshii Scout's Shoulderpads
 					i(239457),	-- Reshii Scout's Soles
 					i(239470),	-- Reshii Skirmisher's Sash
+					hqt_bonusRenown_weekly(90695, FACTION_THE_KARESH_TRUST),	-- Bonus Rep: Xy'vox the Twisted (TODO: swap with rare questID if wrong)
 				},
 			}),
 		})),
@@ -248,52 +261,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 		}),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(KHAZ_ALGAR, {
-		m(KARESH, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
-			n(RARES, {
-				q(90697, {	-- Weekly reputation: "Arcana-Monger So'zer"
-					["name"] = "Arcana-Monger So'zer weekly reputation obtained.",
-				}),
-				q(90676, {	-- Weekly reputation: "Chowdar"
-					["name"] = "Chowdar weekly reputation obtained.",
-				}),
-				q(90699, {	-- Weekly reputation: Grubber
-					["name"] = "Grubber weekly reputation obtained.",
-				}),
-				q(91422, {	-- Weekly reputation: Heka'tamos
-					["name"] = "Heka'tamos weekly reputation obtained.",
-				}),
-				q(90691, {	-- Weekly reputation: Hollowbane
-					["name"] = "Hollowbane weekly reputation obtained.",
-				}),
-				q(91433, {	-- Weekly reputation: Korgoth the Hungerer
-					["name"] = "Korgoth the Hungerer weekly reputation obtained.",
-				}),
-				q(91421, {	-- Weekly reputation: Malek'ta
-					["name"] = "Malek'ta weekly reputation obtained.",
-				}),
-				q(91434, {	-- Weekly reputation: Miasmawrath
-					["name"] = "Miasmawrath weekly reputation obtained.",
-				}),
-				q(90693, {	-- Weekly reputation: Purple Peat (TODO: swap with rare questID if wrong)
-					["name"] = "Purple Peat weekly reputation obtained.",
-				}),
-				q(90688, {	-- Weekly reputation: Shatterpulse (TODO: swap with rare questID if wrong)
-					["name"] = "Shatterpulse weekly reputation obtained.",
-				}),
-				q(91435, {	-- Weekly reputation: The Harvester
-					["name"] = "The Harvester weekly reputation obtained.",
-				}),
-				q(91436, {	-- Weekly reputation: The Wallbreaker
-					["name"] = "The Wallbreaker weekly reputation obtained.",
-				}),
-				q(90695, {	-- Weekly reputation: Xy'vox the Twisted (TODO: swap with rare questID if wrong)
-					["name"] = "Xy'vox the Twisted weekly reputation obtained.",
-				}),
-			}),
-		})),
-	}),
-}));
+}))

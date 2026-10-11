@@ -23,15 +23,32 @@ THE_GREAT_GNOMEREGAN_RUN_HEADER = createHeader({
 });
 
 root(ROOTS.Holidays, applyevent(EVENTS.THE_GREAT_GNOMEREGAN_RUN, n(THE_GREAT_GNOMEREGAN_RUN_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {
-	q(47709, {	-- The Great Gnomeregan Race
+	a(q(95012, {	-- Run On Gnome
+		["qg"] = 220307,	-- Holiday Enthusiast
+		["coords"] = {
+			{ 46.0, 55.1, DORNOGAL },
+			{ 51.1, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+		},
+		["isYearly"] = true,
+		["timeline"] = { ADDED_12_1_0 },
+	})),
+	a(q(47709, {	-- The Great Gnomeregan Race
 		["provider"] = { "n", 124280 },	-- Mina Gleespanner
 		["coord"] = { 36.3, 36.5, NEW_TINKERTOWN },
 		["isYearly"] = true,
 		["groups"] = {
-			-- Possibly Ally only? Kinda ass tho
 			i(267472, {	-- Gnomatic Projector (TOY!)
+				["races"] = { GNOME, MECHAGNOME },
 				["timeline"] = { ADDED_12_1_0 },
 			}),
 		},
-	}),
+	})),
+	a(n(259603, {	-- Deena Kastspindle <Merch>
+		["coord"] = { 36.3, 36.5, NEW_TINKERTOWN },
+		["timeline"] = { ADDED_12_1_0 },
+		["groups"] = {
+			i(267381),	-- Official G.G.R. Rehydration Container
+			i(267380),	-- Volatile Pink Brightbursts
+		},
+	})),
 }))));

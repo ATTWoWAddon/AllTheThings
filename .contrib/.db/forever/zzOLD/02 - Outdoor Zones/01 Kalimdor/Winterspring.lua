@@ -842,12 +842,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 				}),
 			}),
 			n(VENDORS, {
-				n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
-					["coord"] = { 60.8, 37.8, MAP.WINTERSPRING },
-					["groups"] = {
-						i(13480),	-- Recipe: Major Healing Potion (RECIPE!)
-					},
-				}),
 				n(11187, {	-- Himmik <Food & Drink>
 					["coord"] = { 61.2, 39.0, MAP.WINTERSPRING },
 					["groups"] = {

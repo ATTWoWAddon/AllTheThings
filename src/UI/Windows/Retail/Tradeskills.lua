@@ -670,8 +670,9 @@ app:CreateWindow("Tradeskills", {
 		if TSM_API and TSMAPI_FOUR then
 			if not self.cachedTSMFrame then
 				for i,child in ipairs({UIParent:GetChildren()}) do
+					--- Enumerated UI frame inspected to locate and hook the TradeSkillMaster crafting window.
 					---@class ATTChildFrameTemplate: Frame
-					---@field headerBgCenter any
+					---@field headerBgCenter any Header background element used to identify the TradeSkillMaster crafting frame.
 					local f = child;
 					if f.headerBgCenter then
 						self.cachedTSMFrame = f;

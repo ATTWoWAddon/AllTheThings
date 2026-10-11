@@ -75,7 +75,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 			i(163937),	-- Leyshock's Grand Compilation
 		}),
 	}),
-	n(WEAPONS, {	-- [Epic	-- No adjustments]
+	n(WEAPONS, {	-- [Epic]
 		i(163969),	-- Ameelton's Shot-Thrower
 		i(163957),	-- Carmodius Crystalline Stylus
 		i(163962),	-- Decapitator of Alireza
@@ -90,11 +90,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 		i(163967),	-- Shtuf's Ruler
 		i(163963),	-- Silirrion's Tenderizer
 		i(159840),	-- Teebu's Scorching Straight Sword
-		i(158180),	-- The Glazer
 		i(163956),	-- Treiya's Shining Pillar
 		i(163968),	-- Yang's Other Recurve
 	}),
-	n(WEAPONS, {	-- [Uncommon	-- needs ID's]
+	n(WEAPONS, {	-- [Uncommon]
 		i(159545),	-- Bleached Bone Club
 		i(159595),	-- Bleached Bone Cutlass
 		i(159508),	-- Bleached Bone Glaive

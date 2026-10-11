@@ -196,6 +196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(240214),	-- Miniature Reshii Sandgarden
 						i(240171),	-- Observer's Soul Fetters
 						i(240213),	-- Veiling Mana Shroud
+						hqt_bonusRenown_weekly(90685, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Ixthar the Unblinking
 					},
 				}),
 				n(232077, {	-- Korgorath the Ravager
@@ -205,6 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239475),	-- Reshii Brute's Helmet
 						i(239448),	-- Reshii Magi's Vestments
 						i(239462),	-- Reshii Scout's Belt
+						hqt_bonusRenown_weekly(90675, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Korgorath the Ravager
 					},
 				}),
 				n(231981, {	-- Maw of the Sands
@@ -216,6 +218,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(240172),	-- Depleted K'areshi Battery
 						i(240214),	-- Miniature Reshii Sandgarden
 						i(240213),	-- Veiling Mana Shroud
+						hqt_bonusRenown_weekly(90683, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Maw of the Sands
 					},
 				}),
 				n(232108, {	-- Morgil the Netherspawn
@@ -226,6 +229,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239472),	-- Reshii Brute's Breastplate
 						i(239450),	-- Reshii Magi's Gloves
 						i(239457),	-- Reshii Scout's Soles
+						hqt_bonusRenown_weekly(90677, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Morgil the Netherspawn
 					},
 				}),
 				n(232127, {	-- Orith the Dreadful
@@ -236,6 +240,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["groups"] = {
 						i(240172),	-- Depleted K'areshi Battery
 						i(240214),	-- Miniature Reshii Sandgarden
+						hqt_bonusRenown_weekly(90684, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Orith the Dreadful
 					},
 				}),
 				n(232182, {	-- Prototype Mk-V
@@ -245,6 +250,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239478),	-- Reshii Brute's Greatbelt
 						i(239449),	-- Reshii Magi's Slippers
 						i(239464),	-- Reshii Skirmisher's Brigandine
+						hqt_bonusRenown_weekly(90679, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Prototype Mk-V
 					},
 				}),
 				n(232189, {	-- Revenant of the Wasteland
@@ -254,6 +260,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239476),	-- Reshii Brute's Greaves
 						i(239459),	-- Reshii Scout's Hood
 						i(239471),	-- Reshii Skirmisher's Armguards
+						hqt_bonusRenown_weekly(90680, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Revenant of the Wasteland
 					},
 				}),
 				n(232129, {	-- Shadowhowl
@@ -263,6 +270,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239474),	-- Reshii Brute's Handguards
 						i(239452),	-- Reshii Magi's Leggings
 						i(239469),	-- Reshii Skirmisher's Pauldrons
+						hqt_bonusRenown_weekly(90674, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Shadowhowl
 					},
 				}),
 				n(232006, {	-- Sha'ryth the Cursed
@@ -272,6 +280,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239453),	-- Reshii Magi's Spines
 						i(239458),	-- Reshii Scout's Grips
 						i(239465),	-- Reshii Skirmisher's Boots
+						hqt_bonusRenown_weekly(90673, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Sha'ryth the Cursed
 					},
 				}),
 				n(232193, {	-- Stalker of the Wastes
@@ -281,6 +290,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239461),	-- Reshii Scout's Shoulderpads
 						i(239466),	-- Reshii Skirmisher's Gauntlets
 						i(246063),	-- Void-Polished Warpstalker Stone // Junk item worth 50g. Only source of it for now.
+						hqt_bonusRenown_weekly(90681, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Stalker of the Wastes
 					},
 				}),
 				n(234845, {	-- Sthaarbs <the Mindroiler>
@@ -292,6 +302,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(240171),	-- Observer's Soul Fetters
 						i(246160),	-- Sthaarbs's Last Lunch (MOUNT!)
 						i(240213),	-- Veiling Mana Shroud
+						hqt_bonusRenown_weekly(91431, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Sthaarbs (TODO: swipe with rare questID if wrong)
 					},
 				}),
 				n(232111, {	-- The Nightreaver
@@ -302,6 +313,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239479),	-- Reshii Brute's Vambraces
 						i(239454),	-- Reshii Magi's Cord
 						i(239467),	-- Reshii Skirmisher's Cowl
+						hqt_bonusRenown_weekly(90678, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: The Nightreaver
 					},
 				}),
 				n(232195, {	-- Urmag <The Terror Below>
@@ -312,6 +324,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239473),	-- Reshii Brute's Sollerets
 						i(239456),	-- Reshii Scout's Jerkin
 						i(239470),	-- Reshii Skirmisher's Sash
+						hqt_bonusRenown_weekly(90682, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Urmag
 					},
 				}),
 				n(232199, {	-- Xarran the Binder
@@ -321,6 +334,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(239451),	-- Reshii Magi's Crown
 						i(239463),	-- Reshii Scout's Bracers
 						i(239468),	-- Reshii Skirmisher's Legguards
+						hqt_bonusRenown_weekly(90672, FACTION_THE_KARESH_TRUST),    -- Bonus Rep: Xarran the Binder
 					},
 				}),
 			})),
@@ -514,55 +528,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 		}),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(KHAZ_ALGAR, {
-		m(KARESH, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
-			n(RARES, {
-				q(90685, {	-- Weekly reputation: Ixthar the Unblinking
-					["name"] = "Ixthar the Unblinking weekly reputation obtained.",
-				}),
-				q(90675, {	-- Weekly reputation: Korgorath the Ravager
-					["name"] = "Korgorath the Ravager weekly reputation obtained.",
-				}),
-				q(90683, {	-- Weekly reputation: Maw of the Sands
-					["name"] = "Maw of the Sands weekly reputation obtained.",
-				}),
-				q(90677, {	-- Weekly reputation: Morgil the Netherspawn
-					["name"] = "Morgil the Netherspawn weekly reputation obtained.",
-				}),
-				q(90684, {	-- Weekly reputation: Orith the Dreadful
-					["name"] = "Orith the Dreadful weekly reputation obtained.",
-				}),
-				q(90679, {	-- Weekly reputation: Prototype Mk-V
-					["name"] = "Prototype Mk-V weekly reputation obtained.",
-				}),
-				q(90680, {	-- Weekly reputation: Revenant of the Wasteland
-					["name"] = "Revenant of the Wasteland weekly reputation obtained.",
-				}),
-				q(90674, {	-- Weekly reputation: Shadowhowl
-					["name"] = "Shadowhowl weekly reputation obtained.",
-				}),
-				q(90673, {	-- Weekly reputation: Sha'ryth the Cursed
-					["name"] = "Sha'ryth the Cursed weekly reputation obtained.",
-				}),
-				q(90681, {	-- Weekly reputation: Stalker of the Wastes
-					["name"] = "Stalker of the Wastes weekly reputation obtained.",
-				}),
-				q(91431, {	-- Weekly reputation: Sthaarbs (TODO: swipe with rare questID if wrong)
-					["name"] = "Sthaarbs weekly reputation obtained.",
-				}),
-				q(90678, {	-- Weekly reputation: The Nightreaver
-					["name"] = "The Nightreaver weekly reputation obtained.",
-				}),
-				q(90682, {	-- Weekly reputation: Urmag
-					["name"] = "Urmag weekly reputation obtained.",
-				}),
-				q(90672, {	-- Weekly reputation: Xarran the Binder
-					["name"] = "Xarran the Binder weekly reputation obtained.",
-				}),
-			}),
-		})),
-	}),
-}));
+}))

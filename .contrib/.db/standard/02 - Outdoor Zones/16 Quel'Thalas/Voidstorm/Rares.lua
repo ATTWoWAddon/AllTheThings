@@ -35,6 +35,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264637),	-- Cosmic Hunter's Glaive
 					i(264549),	-- Ever-Devouring Shoulderguards
+					hqt_bonusRenown(94751, FACTION_THE_SINGULARITY),	-- Bonus Rep: Aeonelle Blackstar
 				},
 			}),
 			n(256923, {	-- Bane of the Vilebloods
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264572),	-- Netherplate Clasp
 					i(264558),	-- Vileblood Resistant Sabatons
+					hqt_bonusRenown(94732, FACTION_THE_SINGULARITY),	-- Bonus Rep: Bane of the Vilebloods
 				},
 			}),
 			n(256770, {	-- Bilemaw the Gluttonous
@@ -51,6 +53,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264579),	-- Hungering Wristplates
 					i(264623),	-- Shredding Fang
+					hqt_bonusRenown(94752, FACTION_THE_SINGULARITY),	-- Bonus Rep: Bilemaw the Gluttonous
 				},
 			}),
 			n(245182, {	-- Eruundi
@@ -59,6 +62,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264600),	-- Ancient Argussian Band
 					i(264563),	-- Eruundi's Wristguards
+					hqt_bonusRenown(94754, FACTION_THE_SINGULARITY),	-- Bonus Rep: Eruundi
 				},
 			}),
 			n(256821, {	-- Far'thana the Mad
@@ -67,6 +71,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264913),	-- Focused Netherslicer
 					i(264912),	-- Void-Channeler's Spire
+					hqt_bonusRenown(94755, FACTION_THE_SINGULARITY),	-- Bonus Rep: Far'thana the Mad
 				},
 			}),
 			n(257231, {	-- Gar'chak Skullcleave
@@ -80,6 +85,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264609),	-- Gar'chak's Mark of Honor
 					i(264641),	-- Sharpened Skullcleaver
+					hqt_bonusRenown(94756, FACTION_THE_SINGULARITY),	-- Bonus Rep: Gar'chak Skullcleave
 				},
 			}),
 			n(257199, {	-- Hardin Steellock
@@ -93,6 +99,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264615),	-- Hardin's Backup Blade
 					i(264599),	-- Kul'Tiran Signet Ring
+					hqt_bonusRenown(94757, FACTION_THE_SINGULARITY),	-- Bonus Rep: Hardin Steellock
 				},
 			}),
 			n(256925, {	-- Lotus Darkblossom
@@ -101,6 +108,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264632),	-- Darkblossom's Crook
 					i(264548),	-- Sash of Cosmic Tranquility
+					hqt_bonusRenown(94758, FACTION_THE_SINGULARITY),	-- Bonus Rep: Lotus Darkblossom
 				},
 			}),
 			n(245044, {	-- Nightbrood
@@ -109,6 +117,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264574),	-- Netherterror's Legplates
 					i(264551),	-- Nightbrood's Jaw
+					hqt_bonusRenown(94759, FACTION_THE_SINGULARITY),	-- Bonus Rep: Nightbrood
 				},
 			}),
 			n(256926, {	-- Queen o' War
@@ -118,6 +127,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264601),	-- Queen's Eye Band
 					i(264533),	-- Queen's Tentacle Sash
+					hqt_bonusRenown(94761, FACTION_THE_SINGULARITY),	-- Bonus Rep: Queen o' War
 				},
 			}),
 			n(257027, {	-- Rakshur the Bonegrinder
@@ -126,6 +136,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264630),	-- Colossal Voidsunderer
 					i(264561),	-- Primal Bonestompers
+					hqt_bonusRenown(94762, FACTION_THE_SINGULARITY),	-- Bonus Rep: Rakshur the Bonegrinder
 				},
 			}),
 			n(256808, {	-- Ravengerus
@@ -134,6 +145,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264535),	-- Leggings of the Cosmic Harrower
 					i(264589),	-- Voidfused Wing Cloak
+					hqt_bonusRenown(94763, FACTION_THE_SINGULARITY),	-- Bonus Rep: Ravengerus
 				},
 			}),
 			n(256922, {	-- Screammaxa the Matriarch
@@ -142,6 +154,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264583),	-- Barbute of the Winged Hunter
 					i(264545),	-- Harrower-Claw Grips
+					hqt_bonusRenown(94731, FACTION_THE_SINGULARITY),	-- Bonus Rep: Screammaxa the Matriarch
 				},
 			}),
 			n(244272, {	-- Sundereth the Caller
@@ -150,6 +163,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264619),	-- Nethersteel Spellblade
 					i(264539),	-- Robes of the Voidcaller
+					hqt_bonusRenown(94728, FACTION_THE_SINGULARITY),	-- Bonus Rep: Sundereth the Caller
 				},
 			}),
 			n(238498, {	-- Territorial Voidscythe
@@ -158,6 +172,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264642),	-- Carving Voidscythe
 					i(264565),	-- Voidscale Shoulderpads
+					hqt_bonusRenown(94729, FACTION_THE_SINGULARITY),	-- Bonus Rep: Territorial Voidscythe
 				},
 			}),
 			n(241443, {	-- Tremora
@@ -167,6 +182,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264610),	-- Escaped Specimen's ID Tag
 					i(264646),	-- Specimen Sinew Longbow
 					i(264565),	-- Voidscale Shoulderpads
+					hqt_bonusRenown(94730, FACTION_THE_SINGULARITY),	-- Bonus Rep: Tremora
 				},
 			}),
 			--Stormarion Assault rares
@@ -176,6 +192,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264634),	-- Spire of Flowing Void
 					i(264596),	-- Voidthread Veil
+					hqt_bonusRenown(94750, FACTION_THE_SINGULARITY),	-- Bonus Rep: Abysslick
 				},
 			}),
 			n(248823, {	-- Blackcore
@@ -189,6 +206,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264606),	-- Netherlocus Amulet
 					i(264519),	-- Repurposed Voidwalker's Chestplate
+					hqt_bonusRenown(94753, FACTION_THE_SINGULARITY),	-- Bonus Rep: Blackcore
 				},
 			}),
 			n(248068, {	-- Nullspiral
@@ -197,6 +215,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264531),	-- Shadowthread Slippers
 					i(264588),	-- Shawl of Cosmic Whispers
+					hqt_bonusRenown(94760, FACTION_THE_SINGULARITY),	-- Bonus Rep: Nullspiral
 				},
 			}),
 			n(248459, {	-- The Many-Broken
@@ -205,6 +224,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264577),	-- Crystalforged Boots
 					i(264651),	-- Resonating Traumatizer
+					hqt_bonusRenown(94764, FACTION_THE_SINGULARITY),	-- Bonus Rep: The Many-Broken
 				},
 			}),
 			n(248791, {	-- Voidseer Orivane
@@ -216,80 +236,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264628),	-- Spear of Nothingness
 					i(264556),	-- Voidforged Cinch
+					hqt_bonusRenown(94765, FACTION_THE_SINGULARITY),	-- Bonus Rep: Voidseer Orivane
 				},
 			}),
 		})),
 	}),
-}));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.VOIDSTORM, {
-			n(RARES, {
-				q(94751, {	-- Weekly reputation: Aeonelle Blackstar
-					["name"] = "Aeonelle Blackstar weekly reputation obtained.",
-				}),
-				q(94732, {	-- Weekly reputation: Bane of the Vilebloods
-					["name"] = "Bane of the Vilebloods weekly reputation obtained.",
-				}),
-				q(94752, {	-- Weekly reputation: Bilemaw the Gluttonous
-					["name"] = "Bilemaw the Gluttonous weekly reputation obtained.",
-				}),
-				q(94754, {	-- Weekly reputation: Eruundi
-					["name"] = "Eruundi weekly reputation obtained.",
-				}),
-				q(94755, {	-- Weekly reputation: Far'thana the Mad
-					["name"] = "Far'thana the Mad weekly reputation obtained.",
-				}),
-				q(94756, {	-- Weekly reputation: Gar'chak Skullcleave
-					["name"] = "Gar'chak Skullcleave weekly reputation obtained.",
-				}),
-				q(94757, {	-- Weekly reputation: Hardin Steellock
-					["name"] = "Hardin Steellock weekly reputation obtained.",
-				}),
-				q(94758, {	-- Weekly reputation: Lotus Darkblossom
-					["name"] = "Lotus Darkblossom weekly reputation obtained.",
-				}),
-				q(94759, {	-- Weekly reputation: Nightbrood
-					["name"] = "Nightbrood weekly reputation obtained.",
-				}),
-				q(94761, {	-- Weekly reputation: Queen o' War
-					["name"] = "Queen o' War weekly reputation obtained.",
-				}),
-				q(94762, {	-- Weekly reputation: Rakshur the Bonegrinder
-					["name"] = "Rakshur the Bonegrinder weekly reputation obtained.",
-				}),
-				q(94763, {	-- Weekly reputation: Ravengerus
-					["name"] = "Ravengerus weekly reputation obtained.",
-				}),
-				q(94731, {	-- Weekly reputation: Screammaxa the Matriarch
-					["name"] = "Screammaxa the Matriarch weekly reputation obtained.",
-				}),
-				q(94728, {	-- Weekly reputation: Sundereth the Caller
-					["name"] = "Sundereth the Caller weekly reputation obtained.",
-				}),
-				q(94729, {	-- Weekly reputation: Territorial Voidscythe
-					["name"] = "Territorial Voidscythe weekly reputation obtained.",
-				}),
-				q(94730, {	-- Weekly reputation: Tremora
-					["name"] = "Tremora weekly reputation obtained.",
-				}),
-				--Stormarion Assault rares missing weekly rep flags
-				q(94750, {	-- Weekly reputation: Abysslick
-					["name"] = "Abysslick weekly reputation obtained.",
-				}),
-				q(94753, {	-- Weekly reputation: Blackcore
-					["name"] = "Blackcore weekly reputation obtained.",
-				}),
-				q(94760, {	-- Weekly reputation: Nullspiral
-					["name"] = "Nullspiral weekly reputation obtained.",
-				}),
-				q(94764, {	-- Weekly reputation: The Many-Broken
-					["name"] = "The Many-Broken weekly reputation obtained.",
-				}),
-				q(94765, {	-- Weekly reputation: Voidseer Orivane
-					["name"] = "Voidseer Orivane weekly reputation obtained.",
-				}),
-			}),
-		}),
-	}),
-}));
+}))

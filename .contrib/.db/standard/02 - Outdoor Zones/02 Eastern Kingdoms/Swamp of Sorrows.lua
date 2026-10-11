@@ -160,6 +160,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Tale of Sorrow
+							["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+						}),
+					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8417, {	-- A Troubled Spirit
 					["allianceQuestData"] = {
@@ -464,6 +469,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Tale of Sorrow
+							["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+						}),
+					},
 				}),
 				q(1430, {	-- Fresh Meat
 					["qg"] = 5591,	-- Dar
@@ -1168,6 +1178,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
 					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 	Conversation with Loramus
+							["provider"] = { "n", 7783 },	-- Loramus Thalipedes
+						}),
+					},
 				}),
 				q(2621, {	-- The Disgraced One
 					["sourceQuest"] = 2784,	-- Fall From Grace

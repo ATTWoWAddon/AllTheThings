@@ -2518,7 +2518,9 @@ i(272920, 1291315);	-- Spring Panda
 ------------------
 i(275657, 1297404);	-- Apophic Soul Crusher
 i(275656, 1297224);	-- Auriferous Venomfang
+i(275551, 1296724);	-- Autumnal Witchwick's Rider
 i(250191, 1250481);	-- Bilebound Ur'zul
+i(275573, 1296988);	-- Blushing Witchwick's Rider
 i(276881, 1301070);	-- Breath of Blight
 i(276882, 1301074);	-- Breath of Ruin
 i(275654, 1297217);	-- Caustic Venomfang
@@ -2534,6 +2536,7 @@ i(263449, 1270520);	-- Fluffy Comfy Flying Quilt
 i(274164, 142515);	-- Hearthkeeper's Wandering Caravan
 i(275659, 1297407);	-- Hexflame Reaver
 i(276802, 1300778);	-- Indigo Coiled Horror
+i(275571, 1296986);	-- Moonlit Witchwick's Rider
 i(275660, 1297408);	-- Preyhunter's Fury
 i(275658, 1297405);	-- Primeval Skyfriend
 i(276803, 1300779);	-- Ruby Writhe
@@ -2549,24 +2552,21 @@ i(280599, 1309376);	-- Veteran Adventurer's Loyal Companion
 i(275433, 1296670);	-- Vicious Lightbloom Boar [A]
 i(275432, 1296672);	-- Vicious Lightbloom Boar [H]
 i(276551, 1299963);	-- Violet-Backed Skyfang
+i(277261, 1301817);	-- Whoofle Bramblewing
+i(280581, 1309340);	-- Wintry Witchwick's Rider
 i(268833, 1283837);	-- Zothwing Darkseeker
 i(268834, 1283838);	-- Zothwing Deepseeker
 --- NYI ---
 i(276800, 1300780);	-- [PH]Writhes Mount - Yellow
-i(275551, 1296724);	-- Autumnal Witchwick's Rider	(SHOP OR TRADING POST)
-i(275573, 1296988);	-- Blushing Witchwick's Rider	(SHOP OR TRADING POST)
 i(275574, 1296989);	-- Carmine Witchwick's Rider	(SHOP OR TRADING POST)
 i(278576, 1305209);	-- Crested Violet Leafmimic		(SHOP OR TRADING POST)
-i(275571, 1296986);	-- Moonlit Witchwick's Rider	(SHOP OR TRADING POST)
 i(275570, 1296985);	-- Mossy Witchwick's Rider		(SHOP OR TRADING POST)
 i(275572, 1296987);	-- Scarlet Witchwick's Rider	(SHOP OR TRADING POST)
 i(0, 1295958);	-- Swift Spectral Eagle
 i(275655, 1297223);	-- Venom Serpent - White
 i(280599, 1309376);	-- Veteran Adventurer's Loyal Companion
-i(277261, 1301817);	-- Whoofle Bramblewing			(SHOP OR TRADING POST)
 i(276552, 1299964);	-- Wind Serpent - Pink
 i(276550, 1299962);	-- Wind Serpent - White
-i(280581, 1309340);	-- Wintry Witchwick's Rider		(SHOP OR TRADING POST)
 
 ------------------
 -- PATCH 12.1.5 --

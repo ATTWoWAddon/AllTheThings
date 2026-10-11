@@ -2776,7 +2776,7 @@ qo(1,{crs={4832},providers={{"i",5881}}}),
 s(121693,7002,{b=1,f=8,q=3}),
 s(121692,7001,{b=1,f=27,q=3})}}),
 q(1198,{coords={
-[1457]={{28.7,52.1}}},isBreadcrumb=1,lvl=18,nextQuests={1200},qgs={4786},r=2,rwp=40003}),
+[1457]={{28.7,52.1}}},description="This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",isBreadcrumb=1,lvl=18,nextQuests={1200},qgs={4786},rwp=40003}),
 q(971,{coords={
 [1455]={{50.8,5.6}}},lvl=10,qgs={2786},r=2,rwp=40003,sourceQuests={968},g={
 qo(1,{description="Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",providers={{"i",5359},{"o",13949}}}),
@@ -6565,7 +6565,7 @@ i(23437,{awp=20003,q=3,u=17})}})}})}}),
 inst(748,{coords={
 [1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,savedInstanceID=548,sourceQuests={10901},u=18,["zone-text-areaID"]=3607,g={
 h(-45,{u=18,g={
-q(10944,{coords={
+q(10944,{awp=20100,coords={
 [332]={{48,18.2}}},description="After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",maps={1948},qgs={22820},sourceQuests={10708},u=18})}}),
 h(-63,{u=18,g={
 i(24368,{q=1,u=17}),
@@ -6684,9 +6684,9 @@ i(30018,{b=1,f=51,q=4,u=18}),
 i(30017,{b=1,f=51,q=4,u=18}),
 i(30007,{b=1,f=51,q=4,u=18}),
 i(30015,{b=1,f=51,q=4,u=18})}}),
-q(10946,{coords={
+q(10946,{awp=20100,coords={
 [1948]={{58,48.2}}},qgs={21700},sourceQuests={10944},u=18,g={
-qo(1,{crs={19514},providers={{"i",31946}},u=18})}})}}),
+qo(1,{awp=20003,crs={19514},providers={{"i",31946}},u=18})}})}}),
 h(-63,{u=18,g={
 r(36315,{b=1,itemID=30280,learnedAt=375,q=4,requireSkill=197,u=18}),
 r(36351,{b=1,itemID=30302,learnedAt=375,q=4,requireSkill=165,u=18}),

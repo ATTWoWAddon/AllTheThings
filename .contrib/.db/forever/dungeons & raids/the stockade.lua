@@ -33,6 +33,9 @@ root(ROOTS.Instances, {
 						}),
 						i(2906),	-- Darkshire Mail Leggings
 						i(2033),	-- Ambassador's Boots
+						i(270029, {	-- Town Clerk's Mittens
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(387, {	-- Quell The Uprising
@@ -74,6 +77,9 @@ root(ROOTS.Instances, {
 						}),
 						i(1264),	-- Headbasher
 						i(3562),	-- Belt of Vindication
+						i(270036, {	-- Magistrate's Pantaloons
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(391, {	-- The Stockade Riots
@@ -124,16 +130,31 @@ root(ROOTS.Instances, {
 				i(273808, {	-- Bridgebreaker Bindings
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
+				i(273807, {	-- Demolition Girdle
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 				i(2280),	-- Kam's Walking Stick
 			}),
 			n(1663, {	-- Dextren Ward
 				i(3628),	-- Hand of Dextren Ward
+				i(273819, {	-- Boneslicer
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(273817, {	-- Graverobber's Shovel
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(273820, {	-- Nightskulker Ring
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(1717, {	-- Hamhock
 				i(273809, {	-- Hamhock's Cleaver
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				i(273810, {	-- Ogre Grips
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(273811, {	-- Repurposed Rack
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 			}),
@@ -146,9 +167,6 @@ root(ROOTS.Instances, {
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				i(273804, {	-- Executioner Mantle
-					timeline = { TIMELINE.ADDED_1_60_1 },
-				}),
-				i(273820, {	-- Nightskulker Ring
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 			}),

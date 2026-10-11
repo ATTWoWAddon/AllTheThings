@@ -33,6 +33,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(280540),	-- Lil' Mon (PET!)
 					i(280689),	-- Big Mon's Big Spear
 					i(280713),	-- Big Mon's Buckle
+					hqt_bonusRenown(98353, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Big Mon
 				},
 			}),
 			n(257906, {	-- Coin-Eye Skully
@@ -41,6 +42,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280715),	-- Eye of Skully
 					i(280695),	-- Skully's Skullcleaver
+					hqt_bonusRenown(98352, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Coin-Eye Skully
 				},
 			}),
 			n(261142, {	-- Destra
@@ -49,6 +51,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280712),	-- Bracers of the Sleeping Hydra
 					i(280709),	-- Triple Threat Pauldrons
+					hqt_bonusRenown(98355, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Destra
 				},
 			}),
 			n(264854, {	-- Farthik the Plunderer
@@ -58,6 +61,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280717),	-- Farthik's Precious Pendant
 					i(280692),	-- Plunderer's Pummeler
+					hqt_bonusRenown(98344, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Farthik the Plunderer
 				},
 			}),
 			n(258916, {	-- Garsecg <The Hull Render>
@@ -66,6 +70,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280710),	-- Garsecg's Barnacled Girdle
 					i(280714),	-- Hull Render Hauberk
+					hqt_bonusRenown(98350, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Garsecg
 				},
 			}),
 			n(265262, {	-- Hisstara <The Raiser>
@@ -74,6 +79,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280691),	-- Dagger of the Slithering Ritual
 					i(280702),	-- Mantle of the Riser
+					hqt_bonusRenown(98348, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Hisstara
 				},
 			}),
 			n(268090, {	-- Kari'zah the Forgotten
@@ -82,6 +88,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280694),	-- Blade of the Forgotten
 					i(280711),	-- Pitted Specter Shackles
+					hqt_bonusRenown(98346, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Kari'zah the Forgotten
 				},
 			}),
 			n(265237, {	-- Lockjaw <The Snapper>
@@ -90,6 +97,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280690),	-- Bow of the Snapper
 					i(280708),	-- Venom-Shelled Sash
+					hqt_bonusRenown(98347, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Lockjaw
 				},
 			}),
 			n(258920, {	-- Nar'zira <The Omnilegent>
@@ -98,6 +106,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280716),	-- Locket of the Omnilegent
 					i(280693),	-- Staff of All-Knowing
+					hqt_bonusRenown(98351, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Nar'zira
 				},
 			}),
 			n(268049, {	-- Siltmouth <The Unflappable>
@@ -106,6 +115,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280704),	-- Siltmouth's Venom Waders
 					i(280718),	-- Unflappable Flapping Cape
+					hqt_bonusRenown(98345, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Siltmouth
 				},
 			}),
 			n(261109, {	-- Sss'alik <The Rotten Claw>
@@ -114,6 +124,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280700),	-- Armbands of the Rotten Claw
 					i(280706),	-- Sss'alik's Rotting Claws
+					hqt_bonusRenown(98354, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Sss'alik
 				},
 			}),
 			n(263456, {	-- Szarith The Fanged
@@ -122,54 +133,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(280698),	-- Szarith's Underbelly Slicer
 					i(280701),	-- Waistwrap of the Fanged
+					hqt_bonusRenown(98349, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Szarith The Fanged
 				},
-			}),
-		})),
-	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
-			n(RARES, {
-				q(98353, {	-- Weekly reputation: Big Mon
-					["name"] = "Big Mon weekly reputation obtained.",
-				}),
-				q(98352, {	-- Weekly reputation: Coin-Eye Skully
-					["name"] = "Coin-Eye Skully weekly reputation obtained.",
-				}),
-				q(98355, {	-- Weekly reputation: Destra
-					["name"] = "Destra weekly reputation obtained.",
-				}),
-				q(98344, {	-- Weekly reputation: Farthik the Plunderer
-					["name"] = "Farthik the Plunderer weekly reputation obtained.",
-				}),
-				-- Blizzard switched to using this questID for the Achievement Criteria recently since it was originally set to 94856
-				-- which was correct, but killing Garsecg actually triggered 92393 instead, so since no one could get achievement criteria for the rare, they changed the Criteria. Then they fixed the rare questID trigger. Quite strange.
-				-- q(98350, {	-- Weekly reputation: Garsecg
-				-- 	["name"] = "Garsecg weekly reputation obtained.",
-				-- }),
-				q(98348, {	-- Weekly reputation: Hisstara
-					["name"] = "Hisstara weekly reputation obtained.",
-				}),
-				q(98346, {	-- Weekly reputation: Kari'zah the Forgotten
-					["name"] = "Kari'zah the Forgotten weekly reputation obtained.",
-				}),
-				q(98347, {	-- Weekly reputation: Lockjaw
-					["name"] = "Lockjaw weekly reputation obtained.",
-				}),
-				q(98351, {	-- Weekly reputation: Nar'zira
-					["name"] = "Nar'zira weekly reputation obtained.",
-				}),
-				q(98345, {	-- Weekly reputation: Siltmouth
-					["name"] = "Siltmouth weekly reputation obtained.",
-				}),
-				q(98354, {	-- Weekly reputation: Sss'alik
-					["name"] = "Sss'alik weekly reputation obtained.",
-				}),
-				q(98349, {	-- Weekly reputation: Szarith The Fanged
-					["name"] = "Szarith The Fanged weekly reputation obtained.",
-				}),
 			}),
 		})),
 	}),

@@ -2922,6 +2922,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
 				["groups"] = ENCHANTING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
+			n(248200, {	-- Fizzlefuse <Opportunist Engineer>
+				["coord"] = { 49.8, 29.6, MAP.THE_BARRENS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["groups"] = ENGINEERING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
+			}),
 			n(3495, {	-- Gagsprocket <Engineering Goods>
 				["coord"] = { 62.7, 36.3, MAP.THE_BARRENS },
 				["groups"] = {
@@ -3264,6 +3269,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 				["description"] = "Can drop from any mob in the Barrens.",
+			}),
+			i(250187, {	-- Recipe: Tasty Raptor Bites (RECIPE!)
+				["coord"] = { 56.2, 37.6, MAP.THE_BARRENS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["cr"] = 3255,	-- Sunscale Screecher
 			}),
 			i(5165, {	-- Sunscale Feather
 				["crs"] = {

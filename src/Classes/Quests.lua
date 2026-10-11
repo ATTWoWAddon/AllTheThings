@@ -399,11 +399,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	})
 end)
 local CacheQuestsByScope, CacheQuestByScope
+local FirstRefresh = true
 if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
 	local AccountWide = app.AccountWideQuestsDB
 	local acctQuests = {}
 	local charQuests = {}
-	CacheQuestsByScope = function(quests, flag)
+	CacheQuestsByScope = function(quests, flag, manyQuests)
 		wipe(acctQuests)
 		wipe(charQuests)
 		flag = flag and 1 or nil
@@ -416,7 +417,17 @@ if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
 				charQuests[questID] = true
 			end
 		end
-		-- app.PrintDebug("ACCT")
+		if not FirstRefresh and not manyQuests then
+			-- app.PrintDebug("CacheQuestsByScope:Repeat")
+			---@type function
+			local SetThingCollected = app.SetThingCollected
+			for questID in pairs(acctQuests) do
+				SetThingCollected("questID", questID, true, flag)
+			end
+			for questID in pairs(charQuests) do
+				SetThingCollected("questID", questID, false, flag)
+			end
+		end
 		-- app.PrintTable(acctQuests)
 		-- app.PrintDebug("CHAR")
 		-- app.PrintTable(charQuests)
@@ -438,8 +449,17 @@ if app.AccountWideQuestsDB and next(app.AccountWideQuestsDB) ~= nil then
 		end
 	end
 else
-	CacheQuestsByScope = function(quests, flag)
+	CacheQuestsByScope = function(quests, flag, manyQuests)
 		flag = flag and 1 or nil
+		-- first refresh or many Quests is simply caching
+		if not FirstRefresh and not manyQuests then
+			---@type function
+			local SetThingCollected = app.SetThingCollected
+			-- repeat refresh assumes direct collection
+			for questID in pairs(quests) do
+				SetThingCollected("questID", questID, false, flag)
+			end
+		end
 		app.SetBatchCached(CACHE, quests, flag)
 	end
 	CacheQuestByScope = function(questID, flag)
@@ -693,62 +713,16 @@ end
 local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, checks)
 	-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 	local info = {
-		infoText,
-		questChange..": \""..((questRef and questRef.name) or QuestNameFromID[id] or "???").."\"",
-		OBJREF = questRef,
+		reason=infoText,
+		questChange=questChange,
+		OBJREF=questRef,
 	};
 	if checks then
 		for k,v in pairs(checks) do
-			tinsert(info, k..":"..tostring(v))
+			info["Check-"..k]=v
 		end
 	end
-
-	if C_Covenants then	-- Covenants and Renown
-		local covInfo = "cov:";
-		local covID = C_Covenants.GetActiveCovenantID();
-		if covID and covID > 0 then
-			local covData = C_Covenants.GetCovenantData(covID);
-			if covData then
-				covInfo = covInfo .. covID..":"..covData.name;
-				local covRenown = C_CovenantSanctumUI.GetRenownLevel();
-				if covRenown then
-					covInfo = covInfo .. ":"..covRenown;
-				end
-			else
-				covInfo = covInfo .. "N/A";
-			end
-		else
-			covInfo = covInfo .. "N/A";
-		end
-		tinsert(info, covInfo);
-	end
-	if C_MajorFactions then
-		local MajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(10), {}, nil;
-		if MajorFactionIDs then
-			for _,factionID in ipairs(MajorFactionIDs) do
-				tinsert(majorFactionInfo, "|");
-				tinsert(majorFactionInfo, factionID);
-				data = C_MajorFactions.GetMajorFactionData(factionID);
-				if data then
-					tinsert(majorFactionInfo, ":");
-					tinsert(majorFactionInfo, data.name:sub(1,4));
-					tinsert(majorFactionInfo, ":");
-					tinsert(majorFactionInfo, data.renownLevel);
-				end
-			end
-			tinsert(info, "renown:"..app.TableConcat(majorFactionInfo));
-		end
-	end
-
-	if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
-		local acctUnlocks = {
-			IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
-			IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
-			IsQuestFlaggedCompleted(79573) and "WW_CA" or "N",	-- The War Within Campaign Complete
-		}
-		tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "/"))
-	end
-	tinsert(info, "sq:"..GenerateSourceQuestString(questRef or id));
+	info.sq = GenerateSourceQuestString(questRef or id)
 	return info;
 end
 local function SearchForQuestData(questID)
@@ -964,7 +938,6 @@ local RefreshQuestInfo = function(questID)
 		RefreshAllQuestInfo();
 	end
 end
-local FirstRefresh = true
 if C_QuestLog_GetAllCompletedQuestIDs then
 	local MAX = 999999;
 	local UnflaggedQuests = {}
@@ -1036,10 +1009,10 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 			app.wipearray(DirtyQuests)
 		end
 		if next(FlaggedQuests) then
-			CacheQuestsByScope(FlaggedQuests,1)
+			CacheQuestsByScope(FlaggedQuests,1,manyQuests)
 		end
 		if next(UnflaggedQuests) then
-			CacheQuestsByScope(UnflaggedQuests)
+			CacheQuestsByScope(UnflaggedQuests,false,manyQuests)
 		end
 
 		if manyQuests then
@@ -1107,7 +1080,7 @@ else	-- no C_QuestLog_GetAllCompletedQuestIDs
 			for i=1,#DirtyQuests do
 				UpdateQuestIDs[DirtyQuests[i]] = true
 			end
-			CacheQuestsByScope(UpdateQuestIDs, 1);
+			CacheQuestsByScope(UpdateQuestIDs, 1, #DirtyQuests < 50);
 		end
 		BatchRefresh = nil
 		if FirstRefresh then
@@ -1585,6 +1558,7 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 		return costCollectibles
 	end,
 });
+local QuestBonusReputationFormat = LFG_BONUS_REPUTATION.." %s [%s]"
 app.AddEventHandler("OnSettingsNeedsRefresh", function()
 	-- since the quest costCollectibles depends on Filtering, it needs to be reset when Settings are changed which can change filtering
 	wipe(QuestWithReputationCostCollectibles)
@@ -1670,8 +1644,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			end
 		end
 	end,
-
-	-- These are Retail fields that aren't used in Classic... yet?
 	missingSourceQuests = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestsLocked");
@@ -1737,7 +1709,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 },
 "WithReputation", {
 	description = QuestWithReputationDescription,
-	-- Retail: Quests which have a maxrepuation can be considered a Cost for the respective Faction
 	collectibleAsCost = app.CollectibleAsCost,
 	costCollectibles = function(t)
 		return QuestWithReputationCostCollectibles[t]
@@ -1748,6 +1719,30 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		app.GlobalVariants.WithAutoName,
 	}
 }, (function(t) return t.maxReputation; end),
+"WithBonusReputation", {
+	RootConstructor = "CreateHQTBonusRep",
+	CollectibleType = function() return "QuestsHidden" end,
+	isHQT = app.ReturnTrue,
+	name = function(t)
+		local parent = t.sourceParent or t.parent
+		local factionID = t.maxReputation[1]
+		local faction = app.SearchForObject("factionID", factionID, "key") or app.CreateFaction(factionID)
+		-- "Bonus Reputation: Faction [SourceName]"
+		local name = QuestBonusReputationFormat:format(faction.name, parent.name)
+		t.name = name
+		return name
+	end,
+	description = QuestWithReputationDescription,
+	collectibleAsCost = app.CollectibleAsCost,
+	costCollectibles = function(t)
+		return QuestWithReputationCostCollectibles[t]
+	end,
+	variants = {
+		app.GlobalVariants.AndLockCriteriaWithAutoName,
+		app.GlobalVariants.AndLockCriteria,
+		app.GlobalVariants.WithAutoName,
+	}
+}, (function(t) return t.type == "hqtbr"; end),
 "AsHQT", {
 	RootConstructor = "CreateHQT",
 	CollectibleType = function() return "QuestsHidden" end,
@@ -1766,20 +1761,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		AndBreadcrumbWithLockCriteria,
 	},
 }, (function(t) return t.isBreadcrumb; end)
--- Both: World Quests (Baked back into Quest for now since multiple types can be WorldQuests)
---[[
-,"AsWorldQuest", {
-	icon = function(t)
-		return app.GetIconFromProviders(t) or GetWorldQuestIcon(t);
-	end,
-	repeatable = function(t)
-		return true;
-	end,
-	timeRemaining = function(t)
-		return (GetQuestTimeLeftMinutes(t.questID) or 0) * 60
-	end,
-}, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end)
---]]
 );
 
 app.CreateQuest = createQuest;

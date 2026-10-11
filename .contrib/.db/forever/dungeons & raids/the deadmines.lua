@@ -269,12 +269,15 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(643, {	-- Sneed
+				i(273092, {	-- Blueprint: Repair Bot (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(210178, {	-- Schematic: Shredder Autosalvage Unit (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 				i(5194),	-- Taskmaster Axe
 				i(5195),	-- Gold-flecked Gloves
 				i(273293, {	-- Bandsaw Wristbands
-					timeline = { TIMELINE.ADDED_1_60_1 },
-				}),
-				i(273092, {	-- Blueprint: Repair Bot
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 			}),

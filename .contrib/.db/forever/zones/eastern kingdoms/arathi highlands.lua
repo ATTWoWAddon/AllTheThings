@@ -56,7 +56,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				n(12920, {	-- Doctor Gregory Victor <Trauma Surgeon>
 					["coord"] = { 73.4, 36.8, MAP.ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["groups"] = ARTISAN_FIRST_AID,
+					["groups"] = FIRST_AID_RECIPES.ARTISAN,
 				}),
 			}),
 			prof(FISHING, {
@@ -191,6 +191,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				["coord"] = { 32.2, 81.6, MAP.ARATHI_HIGHLANDS },
 				["lvl"] = 35,
 				["groups"] = {
+					objective(1, {	-- 0/1 Defend Shakes O'Breen
+						["providers"] = {
+							{ "n", 2610 },    -- Shakes O'Breen <Blackwater Raiders>
+							{ "n", 2775 },    -- Daggerspine Marauder
+						},
+					}),
 					i(4550),	-- Coldwater Ring
 					i(4549),	-- Seafire Band
 				},
@@ -594,11 +600,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				["qg"] = 2768,	-- Professor Phizzlethorpe
 				["coord"] = { 33.8, 80.6, MAP.ARATHI_HIGHLANDS },
 				["lvl"] = 35,
+				["groups"] = {
+					objective(1, {	-- 0/1 Defend Professor Phizzlethorpe
+						["provider"] = { "n", 2768 },	-- Professor Phizzlethorpe
+					}),
+				},
 			}),
 			q(666, {	-- Sunken Treasure (2/5)
 				["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
 				["qg"] = 2774,	-- Doctor Draxlegauge
-				["qi"] = 4491,	-- Goggles of Gem Hunting
 				["coord"] = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
 				["lvl"] = 35,
 				["groups"] = {
@@ -611,6 +621,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(4547),	-- Gnomish Zapper
 					i(4548),	-- Servomechanic Sledgehammer
+					i(4491),	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
 				},
 			}),
 			q(668, {	-- Sunken Treasure (3/5)
@@ -1111,6 +1122,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 				["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
 				["coord"] = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
+			}),
+			i(255723, {	-- Manual: Greater Healing Potion (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 2589,	-- Syndicate Mercenary
+				coord = { 32.4, 30.8, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(1993, {	-- Ogremind Ring
 				["crs"] = {

@@ -2180,7 +2180,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			r_withQuest(1225359, 88484),	-- Lightfused Brilliant Silver
 			r_withQuest(1225351, 88487),	-- Lightfused Refulgent Copper
 			r_withQuest(1225367, 88488),	-- Lightfused Umbral Tin
-			r(1301495, {["timeline"] = { ADDED_12_1_0 }}),	-- Overload Cursed Deposits
+			r(1301495, {	-- Overload Cursed Deposits
+				timeline = { ADDED_12_1_0 },
+				-- this is temporary, I have another idea to streamline how all herb/mine stuff is designed
+				-- to capture proper possible providers and have nice tooltips - Runaway
+				providers = {
+					{ "o", 656001 },	-- Cursed Refulgent Copper
+				},
+			}),
 			r(1225818),	-- Overload Lightfused Deposits
 			r(1225817),	-- Overload Primal Deposits
 			r(1225820),	-- Overload Voidbound Deposits

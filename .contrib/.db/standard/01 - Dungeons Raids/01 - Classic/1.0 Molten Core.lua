@@ -798,9 +798,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					ach(5056, {	-- Molten Core Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
+					-- #if ANYCLASSIC
 					ach(15330, {	-- Survivor of the Firelord (Season of Mastery)
 						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
+					-- #endif
 					-- #endif
 					i(17204, {	-- Eye of Sulfuras
 						-- #if SEASON_OF_DISCOVERY

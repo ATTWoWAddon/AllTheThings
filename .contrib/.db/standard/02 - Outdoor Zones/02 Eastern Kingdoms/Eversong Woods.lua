@@ -1259,6 +1259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 40.4, 32.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
+					["_drop"] = { "g" },	-- Refreshing Spring Water
 				}),
 				q(8487, {	-- Corrupted Soil
 					["sourceQuest"] = 9254,	-- The Wayward Apprentice

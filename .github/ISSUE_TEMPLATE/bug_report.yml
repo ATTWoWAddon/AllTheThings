@@ -1,0 +1,147 @@
+name: Bug Report
+description: Report an issue or something not working correctly.
+labels: ["type:bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please [search existing issues](https://github.com/ATTWoWAddon/AllTheThings/issues) before reporting a bug.
+        If you just updated ATT, fully close and reopen WoW before checking again, as noted in the [README](https://github.com/ATTWoWAddon/AllTheThings#problem-suggestion).
+
+  - type: dropdown
+    id: flavour
+    attributes:
+      label: "WoW Flavor"
+      description: "Select the WoW Flavor where the issue occurs. Use the environment field for PTR or Beta."
+      options:
+        - "Retail"
+        - "Classic Progression (MoP)"
+        - "Classic Era"
+        - "Classic Hardcore"
+        - "Classic Anniversary (TBC)"
+        - "Season of Discovery"
+        - "Forever"
+        - "Other / Unsure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "WoW Environment"
+      description: "Optional: specify whether this occurs on Live, PTR, or Beta."
+      options:
+        - "Live"
+        - "PTR"
+        - "Beta"
+
+  - type: dropdown
+    id: region
+    attributes:
+      label: "Region"
+      description: "Optional: include your region if server availability or regional behavior matters."
+      options:
+        - "US"
+        - "EU"
+        - "KR"
+        - "CN"
+        - "TW"
+
+  - type: input
+    id: wow_build
+    attributes:
+      label: "WoW Client Build"
+      description: "Provide the client version and build number from `/dump GetBuildInfo()` or the login screen."
+      placeholder: "Client version and build number"
+    validations:
+      required: true
+
+  - type: input
+    id: wow_event
+    attributes:
+      label: "Special Event or Game Mode"
+      description: "Optional: name any relevant event, season, or special realm mode."
+      placeholder: "Event or mode name, if relevant"
+
+  - type: dropdown
+    id: wow_language
+    attributes:
+      label: "WoW Client Language"
+      description: "Optional: include your client language for text, localization, or search issues."
+      options:
+        - "enUS"
+        - "deDE"
+        - "esES"
+        - "esMX"
+        - "frFR"
+        - "itIT"
+        - "koKR"
+        - "ptBR"
+        - "ruRU"
+        - "zhCN"
+        - "zhTW"
+
+  - type: dropdown
+    id: att_version
+    attributes:
+      label: "ATT Release Channel"
+      description: "Select how ATT was installed; provide the exact version below."
+      options:
+        - "Release"
+        - "Alpha"
+        - "Git"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: input
+    id: att_build
+    attributes:
+      label: "Exact ATT Version"
+      description: "Copy `/dump ATTC.Version` or the version in addon info. Git installs may report `[Git]`; include your branch and commit SHA (`git branch --show-current` and `git rev-parse HEAD`)."
+      placeholder: "Exact release/alpha version, or [Git] with branch and commit SHA"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: "Describe the Bug"
+      description: "Describe the issue, what you expected to happen, and what actually happened."
+      placeholder: "Describe the issue here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshot"
+      description: "Attach a screenshot or image that helps illustrate the issue."
+      placeholder: "Drop image(s) here or paste links..."
+
+  - type: textarea
+    id: reproduce_steps
+    attributes:
+      label: "Reproduction Context"
+      description: "List steps and relevant character, location, or activity details. If intermittent or not reproducible, say so and describe when it happened."
+      placeholder: "Steps, frequency, and conditions; or why you cannot reproduce it"
+    validations:
+      required: true
+
+  - type: textarea
+    id: lua_errors
+    attributes:
+      label: "Lua Errors"
+      description: "Optional: paste the complete error and stack trace from BugSack or `/console scriptErrors 1`."
+      placeholder: "Paste the full error and stack trace here..."
+      render: text
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: |
+        Optional: ATT mode/filters, other addons and their versions, and whether it occurs with only ATT enabled ("Not tested" is fine).
+        If AI helped with related work or this report, add an `AI Assistance` section with the actual model name(s), what it helped with, and what you verified, per [AGENTS.md](https://github.com/ATTWoWAddon/AllTheThings/blob/master/AGENTS.md).
+      placeholder: "Settings, addon isolation results, or other relevant context"

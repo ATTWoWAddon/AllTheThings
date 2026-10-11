@@ -44,6 +44,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					["groups"] = BLACKSMITHING_RECIPES.WEAPONSMITHING,
 				}),
 			}),
+			prof(ENGINEERING, {
+				n(5174, {	-- Springspindle Fizzlegear <Artisan Engineer>
+					["coord"] = { 68.8, 45.2, MAP.IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = ENGINEERING_RECIPES.EXPERT,
+				}),
+			}),
 		}),
 		n(QUESTS, {
 			q(7809, {	-- A Donation of Mageweave

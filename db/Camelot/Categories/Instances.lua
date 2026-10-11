@@ -547,6 +547,12 @@ s(158722,6911,{f=5,loc=45}),
 s(158720,6909,{f=26}),
 crit(18526,{achID=62032,awp=16001,id=2})})}}),
 inst(2959,{awp=16001,icon=_.asset("cityofdalaran"),lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",["zone-text-areaID"]=16544,g={
+h(-45,{
+q(92489,{coords={
+[1453]={{48.7,87.6}}},lvl=24,qgs={5694},r=2,g={
+qo(1,{providers={{"n",246016}}}),
+s(298449,251962,{f=4,loc=45}),
+s(311519,279849,{f=5,loc=44})}})}),
 h(-46,{
 e(3310,{npcID=247032})}),
 e(3311,{npcID=247126}),
@@ -610,7 +616,7 @@ s(307693,271766,{b=1,f=24}),
 s(307694,271767,{b=1,f=28}),
 s(307651,271716,{b=1,f=3})}}),
 q(95772,{coords={
-[1433]={{30.8,46.6}}},lvl=24,qgs={956},r=2})}),
+[1433]={{25.8,46.5}}},lvl=24,qgs={956},r=2})}),
 e(3480,{npcID=260322,g={
 s(308387,273023,{f=6,loc=45}),
 s(308386,273022,{f=5,loc=46}),
@@ -744,7 +750,7 @@ e(419,{npcID=7361,g={
 s(159365,9445,{f=6,loc=44})}}),
 o(142475,{cost={{"i",9280,1}},description="This is located in the bottom of the Dormitories.",g={
 i(9282),
-r(3952,{description="If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",itemID=14639,requireSkill=202})}}),
+r(3952,{description="If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",itemID=14639,learnedAt=165,requireSkill=202,skillID=2941})}}),
 o(142476,{cost={{"i",9282,1}},description="This is located at the bottom of the platform in the Engineering Labs.",g={
 i(9281)}}),
 e(420,{npcID=7079,g={
@@ -758,7 +764,7 @@ s(159367,9448,{f=4,loc=43}),
 i(9447,{f=52})}}),
 o(142696,{cost={{"i",9281,1}},description="This is located in the Workshop below Crowd Pummeler.",g={
 i(9316),
-r(3959,{description="If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",itemID=4413,providers={{"i",9327}},requireSkill=202})}}),
+r(3959,{description="If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",itemID=4413,learnedAt=180,providers={{"i",9327}},requireSkill=202,skillID=2941})}}),
 e(418,{npcID=6229,g={
 s(159368,9449,{b=1,f=24,lvl=29,spellID=13494}),
 s(159369,9450,{f=5,loc=47})}}),
@@ -772,23 +778,66 @@ s(159377,9459,{f=22}),
 s(159376,9458,{f=8,spellID=1292880}),
 s(159401,9492,{f=4,loc=40,spellID=11826}),
 i(9461,{f=52}),
-r(3966,{itemID=4415,requireSkill=202}),
-r(3959,{itemID=4413,requireSkill=202}),
-r(8339,{itemID=6716}),
-r(3944,{itemID=4411,requireSkill=202}),
-r(8243,{itemID=6672,requireSkill=202}),
-r(3971,{b=1,itemID=7742,requireSkill=202}),
-r(9269,{b=1,itemID=7560,requireSkill=202}),
-r(9273,{b=1,itemID=7561,requireSkill=202}),
-r(3968,{itemID=4416,requireSkill=202}),
-i(7192,{f=200,requireSkill=202}),
-r(3972,{itemID=4417,requireSkill=202}),
-r(3928,{itemID=4408,requireSkill=202}),
-r(3954,{itemID=4412,requireSkill=202}),
-r(3960,{itemID=4414,requireSkill=202}),
-r(3940,{itemID=4410,requireSkill=202}),
-r(3933,{itemID=4409,requireSkill=202}),
+r(3966,{itemID=4415,learnedAt=205,requireSkill=202,skillID=2941}),
+r(3959,{itemID=4413,learnedAt=180,requireSkill=202,skillID=2941}),
+r(8339,{itemID=6716,learnedAt=115,requireSkill=202,skillID=2941}),
+r(3944,{itemID=4411,learnedAt=125,requireSkill=202,skillID=2941}),
+r(8243,{itemID=6672,learnedAt=185,requireSkill=202,skillID=2941}),
+r(3971,{b=1,itemID=7742,learnedAt=220,requireSkill=202,skillID=2941}),
+r(9269,{b=1,itemID=7560,learnedAt=150,requireSkill=202,skillID=2941}),
+r(9273,{b=1,itemID=7561,learnedAt=160,requireSkill=202,skillID=2941}),
+r(3968,{itemID=4416,learnedAt=215,requireSkill=202,skillID=2941}),
+r(8895,{itemID=7192,learnedAt=245,requireSkill=20222,skillID=2941}),
+r(3972,{itemID=4417,learnedAt=200,requireSkill=202,skillID=2941}),
+r(3928,{itemID=4408,learnedAt=105,requireSkill=202,skillID=2941}),
+r(3954,{itemID=4412,learnedAt=170,requireSkill=202,skillID=2941}),
+r(3960,{itemID=4414,learnedAt=185,requireSkill=202,skillID=2941}),
+r(3940,{itemID=4410,learnedAt=145,requireSkill=202,skillID=2941}),
+r(3933,{itemID=4409,learnedAt=130,requireSkill=202,skillID=2941}),
 crit(18529,{achID=62032,awp=16001,id=3})}})}}),
+inst(3065,{awp=16001,coords={
+[1455]={{50,50}}},icon=_.asset("hallofthanes"),lore="Hidden beneath the High Seat of Ironforge, the Hall of Thanes is part of the legendary \"Old Ironforge\", forever incapable of access in Classic Azeroth until WoW: Forever. The Hall of Thanes is the resting place of the Legendary Dwarves of the Eastern Kingdoms, but has recently been invaded by the hostile Dark Iron Dwarves",lvl=13,["zone-text-areaID"]=16919,g={
+h(-45,{
+q(96395,{lvl=10,qgs={265002},r=2,g={
+qo(1,{providers={{"n",261306}}}),
+s(311432,279899,{b=1,f=3}),
+s(311435,279900,{b=1,f=5,loc=46})}}),
+q(96403,{coords={
+[1455]={{32.4,44.8}}},lvl=10,qgs={265003},r=2,g={
+qo(1,{providers={{"i",274289},{"o",457387}}}),
+s(311433,279898,{b=1,f=1}),
+s(311429,280096,{b=1,f=4,loc=44})}}),
+q(96394,{coords={
+[1455]={{33.2,47.8}}},lvl=10,qgs={264943},r=2,g={
+qo(1,{providers={{"n",263389}}}),
+qo(2,{providers={{"n",263390}}}),
+s(311431,279897,{b=1,f=5,loc=45}),
+s(311428,280095,{b=1,f=6,loc=43})}}),
+q(96393,{coords={
+[1426]={{64.8,58.4}}},lvl=9,qgs={264936},r=2,sourceQuests={96391},g={
+qo(1,{crs={261319},providers={{"i",274286}}}),
+s(311430,279894,{b=1,f=31}),
+s(311436,279895,{b=1,f=24}),
+s(311434,279896,{b=1,f=27})}}),
+q(98423,{lvl=9,qss={281030},r=2,g={
+qo(1,{coords={
+[1455]={{39.3,56}}},providers={{"n",2784}}})}})}),
+e(3493,{npcID=261306,g={
+s(306395,271096,{b=1,f=4,loc=43,lvl=13}),
+i(270227,{b=1,f=51,lvl=13}),
+s(306396,271097,{b=1,f=3,lvl=13})}}),
+e(3495,{npcID=261316,g={
+s(306394,271095,{b=1,f=20,lvl=13}),
+s(305005,270231,{b=1,f=5,loc=44,lvl=13}),
+s(305004,270230,{b=1,f=6,loc=45,lvl=13})}}),
+e(3494,{npcID=261311,g={
+s(306397,271098,{b=1,f=6,loc=42,lvl=13}),
+s(305002,270228,{b=1,f=28,lvl=13}),
+s(305003,270229,{b=1,f=6,loc=47,lvl=13})}}),
+e(3496,{npcID=261319,g={
+s(305019,270260,{b=1,f=5,loc=46,lvl=13}),
+s(305018,270256,{b=1,f=21,lvl=13}),
+s(305020,270261,{b=1,f=4,loc=42,lvl=13})}})}}),
 inst(226,{coords={
 [1454]={{50.6,51.6}}},icon=136350,lore="Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",lvl=13,mapID=213,["zone-text-areaID"]=2437,g={
 h(-45,{
@@ -1073,6 +1122,7 @@ s(158416,6323,{f=23,spellID=1292142}),
 i(6321,{f=52,spellID=1292121}),
 s(308573,273637,{awp=16001,b=1,f=25,lvl=21})}}),
 e(98,{npcID=4278,g={
+r(1262996,{awp=16001,itemID=273105,requireSkill=129,skillID=2942}),
 s(157158,3191,{f=22}),
 s(158414,6320,{f=8}),
 s(158426,6341,{f=1}),
@@ -1193,10 +1243,11 @@ s(156668,2169,{b=1,f=20,lvl=16}),
 s(156528,1937,{b=1,f=25,lvl=18}),
 i(285292,{awp=16001,b=1,f=36,lvl=16})}),
 n(643,{
+r(1263034,{awp=16001,itemID=273092,learnedAt=140,requireSkill=202,skillID=2941}),
+r(424641,{awp=16001,itemID=210178,learnedAt=135,requireSkill=202,skillID=2941}),
 s(158047,5194,{b=1,f=22,lvl=18}),
 s(158048,5195,{b=1,f=4,loc=44,lvl=17}),
-s(308448,273293,{awp=16001,b=1,f=6,loc=43,lvl=16,spellID=1292039}),
-r(1263034,{awp=16001,itemID=273092})}),
+s(308448,273293,{awp=16001,b=1,f=6,loc=43,lvl=16,spellID=1292039})}),
 n(1763,{
 s(158052,5199,{b=1,f=5,loc=46,lvl=16,spellID=1291915}),
 i(1156,{b=1,f=52,lvl=17}),
@@ -1223,49 +1274,6 @@ p(44,{itemID=8490,npcID=7380,spellID=10677}),
 s(158051,5198,{b=1,f=27,lvl=17,spellID=1322312}),
 s(158050,5197,{b=1,f=23,lvl=16}),
 i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883})})}}),
-inst(3065,{awp=16001,coords={
-[1455]={{50,50}}},icon=_.asset("hallofthanes"),lore="Hidden beneath the High Seat of Ironforge, the Hall of Thanes is part of the legendary \"Old Ironforge\", forever incapable of access in Classic Azeroth until WoW: Forever. The Hall of Thanes is the resting place of the Legendary Dwarves of the Eastern Kingdoms, but has recently been invaded by the hostile Dark Iron Dwarves",lvl=13,["zone-text-areaID"]=16919,g={
-h(-45,{
-q(96395,{lvl=10,qgs={265002},r=2,g={
-qo(1,{providers={{"n",261306}}}),
-s(311432,279899,{b=1,f=3}),
-s(311435,279900,{b=1,f=5,loc=46})}}),
-q(96403,{coords={
-[1455]={{32.4,44.8}}},lvl=10,qgs={265003},r=2,g={
-qo(1,{providers={{"i",274289},{"o",457387}}}),
-s(311433,279898,{b=1,f=1}),
-s(311429,280096,{b=1,f=4,loc=44})}}),
-q(96394,{coords={
-[1455]={{33.2,47.8}}},lvl=10,qgs={264943},r=2,g={
-qo(1,{providers={{"n",263389}}}),
-qo(2,{providers={{"n",263390}}}),
-s(311431,279897,{b=1,f=5,loc=45}),
-s(311428,280095,{b=1,f=6,loc=43})}}),
-q(96393,{coords={
-[1426]={{64.8,58.4}}},lvl=9,qgs={264936},r=2,sourceQuests={96391},g={
-qo(1,{crs={261319},providers={{"i",274286}}}),
-s(311430,279894,{b=1,f=31}),
-s(311436,279895,{b=1,f=24}),
-s(311434,279896,{b=1,f=27})}}),
-q(98423,{lvl=9,qss={281030},r=2,g={
-qo(1,{coords={
-[1455]={{39.3,56}}},providers={{"n",2784}}})}})}),
-e(3493,{npcID=261306,g={
-s(306395,271096,{b=1,f=4,loc=43,lvl=13}),
-i(270227,{b=1,f=51,lvl=13}),
-s(306396,271097,{b=1,f=3,lvl=13})}}),
-e(3495,{npcID=261316,g={
-s(306394,271095,{b=1,f=20,lvl=13}),
-s(305005,270231,{b=1,f=5,loc=44,lvl=13}),
-s(305004,270230,{b=1,f=6,loc=45,lvl=13})}}),
-e(3494,{npcID=261311,g={
-s(306397,271098,{b=1,f=6,loc=42,lvl=13}),
-s(305002,270228,{b=1,f=28,lvl=13}),
-s(305003,270229,{b=1,f=6,loc=47,lvl=13})}}),
-e(3496,{npcID=261319,g={
-s(305019,270260,{b=1,f=5,loc=46,lvl=13}),
-s(305018,270256,{b=1,f=21,lvl=13}),
-s(305020,270261,{b=1,f=4,loc=42,lvl=13})}})}}),
 inst(238,{coords={
 [1453]={{51.6,69.4}}},icon=136358,lore="The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",lvl=15,mapID=225,["zone-text-areaID"]=717,["zone-text-names"]={"Stormwind Stockade"},g={
 h(-45,{
@@ -1285,7 +1293,8 @@ q(378,{coords={
 [1437]={{49.8,18.2}}},lvl=25,qgs={1074},r=2,sourceQuests={303},g={
 qo(1,{providers={{"i",3640}}}),
 s(156242,1264,{f=24}),
-s(157372,3562,{f=5,loc=45})}}),
+s(157372,3562,{f=5,loc=45}),
+s(304890,270036,{awp=16001,f=4,loc=46})}}),
 q(391,{coords={
 [1453]={{51.6,69.4}}},lvl=16,qgs={1719},r=2,sourceQuests={389},g={
 qo(1,{providers={{"i",2926}}})}}),
@@ -1305,18 +1314,22 @@ s(157038,2941,{f=20})}}),
 n(1666,{
 i(3640),
 s(308601,273808,{awp=16001,f=4,loc=43}),
+s(308600,273807,{awp=16001,f=5,loc=45}),
 s(156749,2280,{f=28,spellID=1292546})}),
 n(1663,{
-i(3628)}),
+i(3628),
+s(308611,273819,{awp=16001,f=29}),
+s(308610,273817,{awp=16001,f=24,spellID=1292560}),
+i(273820,{awp=16001,f=52,spellID=1292575})}),
 n(1717,{awp=16001,g={
 s(308602,273809,{f=21}),
-s(308603,273810,{f=6,loc=44})}}),
+s(308603,273810,{f=6,loc=44}),
+s(308604,273811,{f=8})}}),
 n(1696,{
 i(3630),
 s(308599,273805,{awp=16001,f=5,loc=42}),
 i(273806,{awp=16001,f=52}),
-s(308598,273804,{awp=16001,f=5,loc=41}),
-i(273820,{awp=16001,f=52,spellID=1292575})}),
+s(308598,273804,{awp=16001,f=5,loc=41})}),
 n(1716,{
 i(2926),
 s(308615,273827,{awp=16001,f=25,spellID=1292594}),
@@ -3565,12 +3578,12 @@ i(15770,{crs={8898},f=200}),
 r(15293,{b=1,description="|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",itemID=11614,learnedAt=265,providers={{"o",173232}},requireSkill=164,skillID=2938}),
 r(15295,{b=1,description="|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",itemID=11615,learnedAt=275,providers={{"o",173232}},requireSkill=164,skillID=2938}),
 r(15294,{crs={9554,10043},itemID=11611,learnedAt=270,requireSkill=9787,skillID=2938}),
-r(19799,{crs={8920},itemID=16049,requireSkill=202}),
-r(19796,{crs={8897},itemID=16048,requireSkill=202}),
-r(22704,{description="On the floor next to Golem Lord Argelmach.",itemID=18235,providers={{"o",179552}}}),
-r(23096,{crs={8920},itemID=18654}),
-r(19825,{crs={8900},itemID=16053,requireSkill=202,rwp=20001}),
-r(23129,{crs={8920},itemID=18661}),
+r(19799,{crs={8920},itemID=16049,learnedAt=305,requireSkill=202,skillID=2941}),
+r(19796,{crs={8897},itemID=16048,learnedAt=295,requireSkill=202,skillID=2941}),
+r(22704,{description="On the floor next to Golem Lord Argelmach.",itemID=18235,learnedAt=320,providers={{"o",179552}},requireSkill=202,skillID=2941}),
+r(23096,{crs={8920},itemID=18654,learnedAt=275,requireSkill=20219,skillID=2941}),
+r(19825,{crs={8900},itemID=16053,learnedAt=310,requireSkill=202,skillID=2941}),
+r(23129,{crs={8920},itemID=18661,learnedAt=260,requireSkill=20219,skillID=2941}),
 s(160548,12546,{f=4,loc=43}),
 s(160556,12555,{f=7,loc=47}),
 s(160553,12552,{f=3}),
@@ -3725,7 +3738,7 @@ i(2663,{f=113,rwp=40001,spellID=14828}),
 i(2662,{f=113,rwp=40001,spellID=29415}),
 i(11742,{f=113})}}),
 e(383,{npcID=9499,g={
-r(23078,{itemID=18653,requireSkill=20222}),
+r(23078,{itemID=18653,learnedAt=285,requireSkill=20222,skillID=2941}),
 s(160640,12791,{f=20}),
 s(160642,12793,{f=5,loc=42})}}),
 e(381,{description="Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",npcID=9502,g={
@@ -4141,7 +4154,7 @@ i(12926,{f=52}),
 r(29228,{c={7},itemID=23320,lvl=60,rank=6,rwp=40001,u=16})}}),
 s(160954,13371,{b=1,description="Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",f=1,providers={{"o",175245}},rwp=60002}),
 n(10264,{description="This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",rwp=60002,g={
-r(23081,{itemID=18657,requireSkill=202}),
+r(23081,{itemID=18657,learnedAt=310,requireSkill=202,skillID=2941}),
 s(163010,16695,{b=1,f=4,loc=41,lvl=55,rwp=40003}),
 s(160570,12603,{f=5,loc=42}),
 s(160575,12609,{f=4,loc=42}),
@@ -4493,7 +4506,7 @@ i(19258,{spellID=23678,u=13}),
 i(18780,{lvl=50,rwp=40003,spellID=23231,u=1101}),
 crit(18535,{achID=62033,awp=16001,id=15})}}),
 o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,providers={{"n",14353}},u=1101,g={
-r(23079,{itemID=18655,requireSkill=202,u=1101}),
+r(23079,{itemID=18655,learnedAt=285,requireSkill=202,skillID=2941,u=1101}),
 s(163577,18499,{f=8,u=1101}),
 s(163561,18479,{f=6,loc=40,u=1101}),
 i(18537,{f=53,spellID=1302356,u=1101}),
@@ -5316,8 +5329,8 @@ i(12734,{b=1,description="These can be found in 4 places in the Scarlet Enclave.
 r(20036,{crs={10422},itemID=16249,learnedAt=320,requireSkill=333,skillID=2940}),
 r(18441,{crs={10384},itemID=14495,requireSkill=197,rwp=40003}),
 r(19103,{crs={10425},itemID=15777,requireSkill=165,rwp=40003}),
-r(23082,{crs={10426},itemID=18658,requireSkill=202}),
-r(19819,{crs={10426},itemID=16052,requireSkill=202})}),
+r(23082,{crs={10426},itemID=18658,learnedAt=320,requireSkill=202,skillID=2941}),
+r(19819,{crs={10426},itemID=16052,learnedAt=310,requireSkill=202,skillID=2941})}),
 n(10393,{description="This is a Rare Creature and, as such, is not always present.",g={
 s(160975,13396,{f=27}),
 s(160973,13394,{f=7,loc=42}),

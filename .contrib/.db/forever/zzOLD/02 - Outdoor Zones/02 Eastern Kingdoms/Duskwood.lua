@@ -467,12 +467,10 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(90, {	-- Seasoned Wolf Kabobs
-					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.8, 43.5, MAP.DUSKWOOD },
 					["cost"] = {
 						{ "i", 1015, 10 },	-- Lean Wolf Flank
-						{ "i", 2665, 1 },	-- Stormwind Seasoning Herbs
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -564,15 +562,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["sourceQuest"] = 66,	-- The Legend of Stalvan (1/13)
 					["qg"] = 267,	-- Clerk Daltry
 					["coord"] = { 72.6, 46.9, MAP.DUSKWOOD },
+					["maps"] = { MAP.WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(68, {	-- The Legend of Stalvan (3/13)
 					["sourceQuest"] = 67,	-- The Legend of Stalvan (2/13)
-					["providers"] = {
-						{ "o", 3643 },	-- Old Footlocker
-						{ "i", 889 },	-- A Dusty Unsent Letter
-					},
+					["provider"] = { "o", 3643 },	-- Old Footlocker
+					["qi"] = 889,	-- A Dusty Unsent Letter
 					["coord"] = { 41.5, 66.7, MAP.WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -604,17 +601,15 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				q(72, {	-- The Legend of Stalvan (6/13)
 					["sourceQuest"] = 70,	-- The Legend of Stalvan (5/13)
 					["qg"] = 297,	-- Caretaker Folsom
-					["coord"] = { 29.6, 61.9, MAP.STORMWIND_CITY },
+					["coord"] = { 42.6, 72.2, MAP.STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(74, {	-- The Legend of Stalvan (7/13)
 					["sourceQuest"] = 72,	-- The Legend of Stalvan (6/13)
-					["providers"] = {
-						{ "o", 1561 },	-- Sealed Crate
-						{ "i", 916 },	-- A Torn Journal Page
-					},
-					["coord"] = { 29.6, 61.9, MAP.STORMWIND_CITY },
+					["provider"] = { "o", 1561 },	-- Sealed Crate
+					["qi"] = 916,	-- A Torn Journal Page
+					["coord"] = { 42.6, 72.2, MAP.STORMWIND_CITY },
 					["maps"] = { MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -637,30 +632,24 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 				}),
 				q(78, {	-- The Legend of Stalvan (9/13)
 					["sourceQuest"] = 75,	-- The Legend of Stalvan (8/13)
-					["providers"] = {
-						{ "n", 294 },	-- Marshal Haggard
-						{ "i", 921 },	-- A Faded Journal Page
-					},
+					["qg"] = 294,	-- Marshal Haggard
+					["qi"] = 921,	-- A Faded Journal Page
 					["coord"] = { 84.6, 69.3, MAP.ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(79, {	-- The Legend of Stalvan (10/13)
 					["sourceQuest"] = 78,	-- The Legend of Stalvan (9/13)
-					["providers"] = {
-						{ "n", 273 },	-- Tavernkeep Smitts
-						{ "i", 938 },	-- Muddy Journal Pages
-					},
+					["qg"] = 273,	-- Tavernkeep Smitts
+					["qi"] = 938,	-- Muddy Journal Pages
 					["coord"] = { 73.8, 44.4, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(80, {	-- The Legend of Stalvan (11/13)
 					["sourceQuest"] = 79,	-- The Legend of Stalvan (10/13)
-					["providers"] = {
-						{ "n", 264 },	-- Commander Althea Ebonlocke
-						{ "i", 939 },	-- A Bloodstained Journal Page
-					},
+					["qg"] = 264,	-- Commander Althea Ebonlocke
+					["qi"] = 939,	-- A Bloodstained Journal Page
 					["coord"] = { 73.6, 46.9, MAP.DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
@@ -1271,6 +1260,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						{ 73.6, 72.0, MAP.DUSKWOOD },
 					},
 					["cr"] = 206,	-- Nightbane Vile Fang
+				}),
+				i(255724, {	-- Manual: Clever Poultice (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					cr = 910,	-- Defias Enchanter
+					coords = {
+						{ 21.8, 71.8, MAP.DUSKWOOD },
+						{ 50.2, 77.2, MAP.DUSKWOOD },
+					},
 				}),
 				i(2234, {	-- Nightwalker Armor
 					["coords"] = {

@@ -37,6 +37,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264643),	-- Ash'an's Spare Cleaver
 					i(264593),	-- Warcloak of the Butcher
+					hqt_bonusRenown(94710, FACTION_AMANI_TRIBE),	-- Bonus Rep: Ash'an the Empowered
 				},
 			}),
 			n(242027, {	-- Depthborn Eelamental
@@ -45,6 +46,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264598),	-- Eelectrum Signet
 					i(264618),	-- Strangely Eelastic Blade
+					hqt_bonusRenown(94708, FACTION_AMANI_TRIBE),	-- Bonus Rep: Depthborn Eelamental
 				},
 			}),
 			n(242026, {	-- Elder Oaktalon
@@ -53,6 +55,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264529),	-- Cover of the Furbolg Elder
 					i(264547),	-- Worn Furbolg Bindings
+					hqt_bonusRenown(94707, FACTION_AMANI_TRIBE),	-- Bonus Rep: Elder Oaktalon
 				},
 			}),
 			n(242028, {	-- Lightwood Borer
@@ -61,6 +64,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264557),	-- Borerplate Pauldrons
 					i(264640),	-- Sharpened Borer Claw
+					hqt_bonusRenown(94699, FACTION_AMANI_TRIBE),	-- Bonus Rep: Lightwood Borer
 				},
 			}),
 			n(245975, {	-- Mrrlokk
@@ -69,6 +73,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264580),	-- Mrrlokk's Mrgl Grrdle
 					i(264570),	-- Reinforced Chainmrrl
+					hqt_bonusRenown(94700, FACTION_AMANI_TRIBE),	-- Bonus Rep: Mrrlokk
 				},
 			}),
 			n(242023, {	-- Necrohexxer Raz'ka
@@ -77,6 +82,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264611),	-- Pendant of Siphoned Vitality
 					i(264527),	-- Vile Hexxer's Mantle
+					hqt_bonusRenown(94683, FACTION_AMANI_TRIBE),	-- Bonus Rep: Necrohexxer Raz'ka
 				},
 			}),
 			n(242032, {	-- Oophaga
@@ -85,6 +91,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264541),	-- Egg-Swaddling Sash
 					i(264528),	-- Goop-Coated Leggings
+					hqt_bonusRenown(94703, FACTION_AMANI_TRIBE),	-- Bonus Rep: Oophaga
 				},
 			}),
 			n(247976, {	-- Poacher Rav'ik
@@ -93,6 +100,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264911),	-- Forest Hunter's Arc
 					i(264627),	-- Rav'ik's Spare Hunting Spear
+					hqt_bonusRenown(94701, FACTION_AMANI_TRIBE),	-- Bonus Rep: Poacher Rav'ik
 				},
 			}),
 			n(242025, {	-- Skullcrusher Harak
@@ -101,6 +109,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264631),	-- Harak's Skullcutter
 					i(264542),	-- Skullcrusher's Mantle
+					hqt_bonusRenown(94698, FACTION_AMANI_TRIBE),	-- Bonus Rep: Skullcrusher Harak
 				},
 			}),
 			n(242031, {	-- Spinefrill
@@ -110,6 +119,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264554),	-- Frilly Leather Vest
 					i(251783),	-- Lost Idol of the Hash'ey
 					i(264620),	-- Pufferspine Spellpierce
+					hqt_bonusRenown(94702, FACTION_AMANI_TRIBE),	-- Bonus Rep: Spinefrill
 				},
 			}),
 			n(245691, {	-- The Decaying Diamondback
@@ -119,6 +129,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264582),	-- Diamondback-Scale Legguards
 					i(264525),	-- Wrapped Antenna Cuffs
+					hqt_bonusRenown(94709, FACTION_AMANI_TRIBE),	-- Bonus Rep: The Decaying Diamondback
 				},
 			}),
 			n(242035, {	-- The Devouring Invader
@@ -127,6 +138,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264559),	-- Devourer's Visage
 					i(264638),	-- Fangs of the Invader
+					hqt_bonusRenown(94706, FACTION_AMANI_TRIBE),	-- Bonus Rep: The Devouring Invader
 				},
 			}),
 			n(242024, {	-- The Snapping Scourge
@@ -135,6 +147,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264617),	-- Scourge's Spike
 					i(264585),	-- Snapper Steppers
+					hqt_bonusRenown(94697, FACTION_AMANI_TRIBE),	-- Bonus Rep: The Snapping Scourge
 				},
 			}),
 			n(242033, {	-- Tiny Vermin
@@ -143,6 +156,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264597),	-- Leechtooth Band
 					i(264648),	-- Verminscale Gavel
+					hqt_bonusRenown(94704, FACTION_AMANI_TRIBE),	-- Bonus Rep: Tiny Vermin
 				},
 			}),
 			n(242034, {	-- Voidtouched Crustacean
@@ -155,62 +169,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264564),	-- Crab Wrangling Harness
 					i(264586),	-- Crustacean Carapace Chestguard
+					hqt_bonusRenown(94705, FACTION_AMANI_TRIBE),	-- Bonus Rep: Voidtouched Crustacean
 				},
 			}),
 		})),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.ZULAMAN, {
-			n(RARES, {
-				q(94710, {	-- Weekly reputation: Ash'an the Empowered
-					["name"] = "Ash'an the Empowered weekly reputation obtained.",
-				}),
-				q(94708, {	-- Weekly reputation: Depthborn Eelamental
-					["name"] = "Depthborn Eelamental weekly reputation obtained.",
-				}),
-				q(94707, {	-- Weekly reputation: Elder Oaktalon
-					["name"] = "Elder Oaktalon weekly reputation obtained.",
-				}),
-				q(94699, {	-- Weekly reputation: Lightwood Borer
-					["name"] = "Lightwood Borer weekly reputation obtained.",
-				}),
-				q(94700, {	-- Weekly reputation: Mrrlokk
-					["name"] = "Mrrlokk weekly reputation obtained.",
-				}),
-				q(94683, {	-- Weekly reputation: Necrohexxer Raz'ka
-					["name"] = "Necrohexxer Raz'ka weekly reputation obtained.",
-				}),
-				q(94703, {	-- Weekly reputation: Oophaga
-					["name"] = "Oophaga weekly reputation obtained.",
-				}),
-				q(94701, {	-- Weekly reputation: Poacher Rav'ik
-					["name"] = "Poacher Rav'ik weekly reputation obtained.",
-				}),
-				q(94698, {	-- Weekly reputation: Skullcrusher Harak
-					["name"] = "Skullcrusher Harak weekly reputation obtained.",
-				}),
-				q(94702, {	-- Weekly reputation: Spinefrill
-					["name"] = "Spinefrill weekly reputation obtained.",
-				}),
-				q(94709, {	-- Weekly reputation: The Decaying Diamondback
-					["name"] = "The Decaying Diamondback weekly reputation obtained.",
-				}),
-				q(94706, {	-- Weekly reputation: The Devouring Invader
-					["name"] = "The Devouring Invader weekly reputation obtained.",
-				}),
-				q(94697, {	-- Weekly reputation: The Snapping Scourge
-					["name"] = "The Snapping Scourge weekly reputation obtained.",
-				}),
-				q(94704, {	-- Weekly reputation: Tiny Vermin
-					["name"] = "Tiny Vermin weekly reputation obtained.",
-				}),
-				q(94705, {	-- Weekly reputation: Voidtouched Crustacean
-					["name"] = "Voidtouched Crustacean weekly reputation obtained.",
-				}),
-			}),
-		}),
-	}),
-}));
+}))

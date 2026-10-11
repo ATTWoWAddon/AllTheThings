@@ -410,6 +410,14 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["cost"] = { { "i", 4392, 1 } },	-- Advanced Target Dummy
 					["lvl"] = 30,
+					["groups"] = {
+						i(269901, {	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(269903, {	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
+							["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						}),
+					},
 				}),
 				q(5381, {	-- Hand of Iruxos
 					["qg"] = 11624,	-- Taiga Wisemane
@@ -1047,7 +1055,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(251458),	-- Plans: Iron Morningstar (RECIPE!)
 						i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)
 						i(249486),	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
-						i(273615),	-- Enchant Bracer - Lesser Healing Power
+						i(273615),	-- Enchant Bracer - Lesser Healing Power (RECIPE!)
+						i(269903),	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
+						i(269901),	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
 					},
 				}),
 				n(253140, {	-- Molkar <Gelkis Clan Quartermaster>
@@ -1059,7 +1069,9 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 						i(251458),	-- Plans: Iron Morningstar (RECIPE!)
 						i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)
 						i(249486),	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
-						i(273615),	-- Enchant Bracer - Lesser Healing Power
+						i(273615),	-- Enchant Bracer - Lesser Healing Power (RECIPE!)
+						i(269903),	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
+						i(269901),	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
 					},
 				}),
 				n(12045, {	-- Hae'Wilani <Axecrafter>

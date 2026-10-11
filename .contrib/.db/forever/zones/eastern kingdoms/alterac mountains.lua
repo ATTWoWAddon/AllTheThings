@@ -616,13 +616,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
 			}),
-			q(94947, {	-- Welcome to Azeroth
-				["qg"] = 259084,	-- Denaaris Stargale
-				["coord"] = { 12.3, 56.4, MAP.ALTERAC_MOUNTAINS },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 7,
-			}),
 			q(99191, {	-- A Donation of Wool
 				["qg"] = 276170,	-- Belanaa Windveil
 				["coord"] = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
@@ -634,13 +627,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						["provider"] = { "i", 2592 },	-- Wool Cloth
 					}),
 				},
-			}),
-			q(94946, {	-- The Magical City of Dalaran
-				["qg"] = 259084,	-- Denaaris Stargale
-				["coord"] = { 12.3, 56.4, MAP.ALTERAC_MOUNTAINS },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 7,
 			}),
 		}),
 		n(RARES, {

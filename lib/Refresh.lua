@@ -182,15 +182,15 @@ app.AddEventHandler("OnSavedVariablesAvailable", OneTimeFixes)
 -- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
 local InCombatLockdown = InCombatLockdown;
 local print = app.EmptyFunction;
-local __FirstRefresh = true;
+app.__FirstRefresh = true;
 local IsRefreshing
 
 -- [Event]Done is called automatically when processed by a Runner and it completes the set of functions
 app.AddEventHandler("OnRefreshCollectionsDone", function()
 	-- Report success once refresh is done
 	print(app.L.DONE_REFRESHING);
-	if __FirstRefresh then
-		__FirstRefresh = nil;
+	if app.__FirstRefresh then
+		app.__FirstRefresh = nil;
 		print = app.print;
 	end
 	IsRefreshing = nil

@@ -103,32 +103,35 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(256828, {	-- Dennia Silvertongue
 				["description"] = "This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",
 				["coord"] = { 51.1, 56.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				["groups"] = bubbleDown({
+					["u"] = REAL_MONEY,
+					["sourceAchievement"] = 61402,	-- Epic Edition: Voidlight Surger
+				}, {
 					i(252668, {	-- "The Harbinger" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },	-- 10,000g
+						["cost"] = { { "g", 50000000 } },	-- 5,000g
 					}),
 					i(252666, {	-- "The High Exarch" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },	-- 10,000g
+						["cost"] = { { "g", 50000000 } },	-- 5,000g
 					}),
 					i(252667, {	-- "The Ranger of the Void" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },	-- 10,000g
+						["cost"] = { { "g", 50000000 } },	-- 5,000g
 					}),
 					i(252669, {	-- "The Redeemer" Painting (DECOR!)
-						["cost"] = { { "g", 100000000 } },	-- 10,000g
+						["cost"] = { { "g", 50000000 } },	-- 5,000g
 					}),
 					i(244668, {	-- Light-Infused Fountain (DECOR!)
-						["cost"] = { { "g", 250000000 } },	-- 25,000g
+						["cost"] = { { "g", 150000000 } },	-- 15,000g
 					}),
 					i(246414, {	-- Light-Infused Rotunda (DECOR!)
-						["cost"] = { { "g", 250000000 } },	-- 25,000g
+						["cost"] = { { "g", 150000000 } },	-- 15,000g
 					}),
 					i(245939, {	-- Void-Corrupted Fountain (DECOR!)
-						["cost"] = { { "g", 250000000 } },	-- 25,000g
+						["cost"] = { { "g", 150000000 } },	-- 15,000g
 					}),
 					i(248809, {	-- Void-Corrupted Rotunda (DECOR!)
-						["cost"] = { { "g", 250000000 } },	-- 25,000g
+						["cost"] = { { "g", 150000000 } },	-- 15,000g
 					}),
-				},
+				}),
 			}),
 			n(250982, {	-- Dethelin <Purloined Decor>
 				["coord"] = { 52.5, 47.2, MAP.MIDNIGHT.SILVERMOON_CITY },

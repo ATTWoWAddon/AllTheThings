@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,campsite,cq,crit,cu,de,en,exp,faction,flt,fp,h,hqt,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cq,crit,cu,de,en,exp,faction,flt,fp,h,hqt,hqtbr,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHQT,_.CreateHQTBonusRep,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Delves=
 h(-204,{SortPriority=2,g={
 x(11,{awp=110002,g={
@@ -273,10 +273,10 @@ ach(40538,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,234
 crit(68808,{achID=40438,id=7})}}),
 ach(40635,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},g={
 crit(111233,{achID=40438,id=7})}}),
-ach(42676,{awp=110200,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},g={
-crit(105820,{achID=42676,id=1,questID=88967})}}),
+ach(42676,{awp=110200,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
 ach(61342,{awp=110200,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
-ach(41723,{awp=110100,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
+ach(41723,{awp=110100,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},g={
+crit(115824,{achID=41723,id=2,questID=95875})}}),
 ach(41537,{awp=110100,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},g={
 crit(115825,{achID=41537,id=2,questID=95865})}}),
 ach(40461,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
@@ -938,6 +938,8 @@ hqt(86989,{awp=110100}),
 hqt(86990,{awp=110100}),
 hqt(86991,{awp=110100}),
 hqt(86992,{awp=110100}),
+hqt(86993,{awp=110100,g={
+crit(103602,{achID=41723,id=1})}}),
 hqt(88948,{awp=110200}),
 hqt(88949,{awp=110200}),
 hqt(88950,{awp=110200}),
@@ -957,7 +959,9 @@ hqt(88962,{awp=110200}),
 hqt(88963,{awp=110200}),
 hqt(88964,{awp=110200}),
 hqt(88965,{awp=110200}),
-hqt(88966,{awp=110200})}),
+hqt(88966,{awp=110200}),
+hqt(88967,{awp=110200,g={
+crit(105820,{achID=42676,id=1})}})}),
 h(-45,{
 q(84370,{isWeekly=1,lvl=70,qss={227794}}),
 q(84519,{lvl=70,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452},qss={228560},rwp=110100,u=2,g={
@@ -974,7 +978,7 @@ q(81593,{coords={
 q(81595,{coords={
 [2339]={{47.4,44.4}}},lvl=80,qgs={206017},rwp=110100,sourceQuests={81510,84365},sqreq=1,u=2}),
 q(84224,{coords={
-[2339]={{47.4,44.4}}},lvl=80,rwp=110100,u=2}),
+[2339]={{47.4,44.4}}},lvl=80}),
 q(81596,{coords={
 [2339]={{47.8,44.5}}},lvl=70,qgs={226763},rwp=110100,sourceQuests={81595},u=2}),
 q(83500,{coords={
@@ -1851,14 +1855,18 @@ i(246053,{spellID=1240570})}),
 h(-56,{
 o(455498,{coords={
 [2454]={{62.1,38.2}},
-[2455]={{47.9,24.6}}},description="Use Waygate on the 1st Level.",questID=83692}),
+[2455]={{47.9,24.6}}},description="Use Waygate on the 1st Level.",questID=83692,g={
+crit(105903,{achID=42679,id=2})}}),
 o(455518,{coords={
-[2455]={{62,11.1}}},questID=83673}),
+[2455]={{62,11.1}}},questID=83673,g={
+crit(105905,{achID=42679,id=4})}}),
 o(455535,{coords={
-[2455]={{49.7,92.6}}},description="Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",questID=92573}),
+[2455]={{49.7,92.6}}},description="Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",questID=92573,g={
+crit(109146,{achID=42679,id=1})}}),
 o(539785,{coords={
 [2455]={{43.9,64.7}},
-[2476]={{43.3,65.7}}},questID=90839})})}}),
+[2476]={{43.3,65.7}}},questID=90839,g={
+crit(105904,{achID=42679,id=3})}})})}}),
 m(2269,{coords={
 [2248]={{38.6,73.9}}},icon=_.asset("Delves_Nerubian"),g={
 h(-12,{
@@ -2938,7 +2946,11 @@ o(584508,{VerifyLoot={"armor","weapon","miscellaneous"},g={
 i(254869,{b=1,f=55,spellID=1258805}),
 s(303844,265366,{f=21})}}),
 o(581922,{providers={{"i",252415},{"i",265714}},VerifyLoot={"armor","weapon","miscellaneous"}}),
-o(506498)})}}),
+o(506498)}),
+hqtbr(93819,{isWeekly=1,maxReputation={2696,20}}),
+hqtbr(93820,{isWeekly=1,maxReputation={2699,20}}),
+hqtbr(93821,{isWeekly=1,maxReputation={2710,20}}),
+hqtbr(93822,{isWeekly=1,maxReputation={2704,20}})}}),
 h(-31,{
 faction(2744)}),
 h(-35,{

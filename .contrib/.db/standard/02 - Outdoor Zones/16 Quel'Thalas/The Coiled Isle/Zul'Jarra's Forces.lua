@@ -139,6 +139,10 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}, {	-- RENOWN 19 --
 						}, {	-- RENOWN 20 --
 							------ Paragon ------
+							q(93798, {	-- Renowned with Zul'jarra's Forces
+								["isRepeatable"] = true,
+								["groups"] = { i(276624) },	-- Overflowing Hash'ura Trove
+							}),
 						},
 					}))),
 					n(VENDORS, {

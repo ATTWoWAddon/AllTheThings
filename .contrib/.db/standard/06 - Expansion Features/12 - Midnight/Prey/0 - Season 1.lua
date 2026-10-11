@@ -142,6 +142,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						-- Bonus roll
 						i(269768, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Prey
 					}),
+					-- Weekly Bonus Reputations
+					-- Season 1 Prey
+					hqt_bonusRenown_weekly(95000, 2764, {timeline={ADDED_12_0_1_SEASONSTART,REMOVED_12_0_1_SEASONSTART}}),	-- 1st per week
+					hqt_bonusRenown_weekly(95001, 2764, {timeline={ADDED_12_0_1_SEASONSTART,REMOVED_12_0_1_SEASONSTART}}),	-- 2nd per week
+					hqt_bonusRenown_weekly(95002, 2764, {timeline={ADDED_12_0_1_SEASONSTART,REMOVED_12_0_1_SEASONSTART}}),	-- 3rd per week
+					hqt_bonusRenown_weekly(95003, 2764, {timeline={ADDED_12_0_1_SEASONSTART,REMOVED_12_0_1_SEASONSTART}}),	-- 4th per week
 				}),
 				n(FACTIONS, {
 					faction(2764),	-- Prey: Season 1

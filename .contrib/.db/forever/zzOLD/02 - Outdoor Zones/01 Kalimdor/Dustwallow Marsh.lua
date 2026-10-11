@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					n(12939, {	-- Doctor Gustaf VanHowzen <Trauma Surgeon>
 						["coord"] = { 67.6, 48.8, MAP.DUSTWALLOW_MARSH },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = ARTISAN_FIRST_AID,
+						["groups"] = FIRST_AID_RECIPES.ARTISAN,
 					}),
 				}),
 				prof(FISHING, {

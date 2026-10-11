@@ -20,8 +20,13 @@ end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 -- Put items between these two bars if you dont want to sort them /Braghe
 i(6457);	-- Rusted Engineering Parts
-i(23553,{collectible=false})	-- Living Branch
+i(4491,{collectible=false})	-- Goggles of Gem Hunting
+i(6653,{collectible=false})	-- Torch of the Dormant Flame
+i(9978,{collectible=false})	-- Gahz'ridian Detector
 i(16967,{collectible=false})	-- Feralas Ahi
+i(23553,{collectible=false})	-- Living Branch
+i(49201,{collectible=false})	-- Dingy Wizard Hat (assumed since no retro-credit)
+i(167547,{collectible=false})	-- Deep Diving Helmet
 i(29570);	-- A Gnmome Effigy
 i(44435);	-- Windle's Lighter
 i(102144);	-- Kor'kron Cage Key

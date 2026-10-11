@@ -422,9 +422,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					ach(5057, {	-- Blackwing Lair Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
+					-- #if ANYCLASSIC
 					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
 						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
+					-- #endif
 					i(19003, {	-- Head of Nefarian (A)
 						["races"] = ALLIANCE_ONLY,
 					}),

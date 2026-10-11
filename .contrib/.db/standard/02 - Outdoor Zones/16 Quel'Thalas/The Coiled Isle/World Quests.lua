@@ -36,6 +36,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				}),
 				q(95794, {	-- De-cryption Process
 					["coord"] = { 77.0, 41.9, 2645 },	-- Kin's Rest
+					["qi"] = 276622,	-- De-cryption Amulet (QI!)
 				}),
 				q(94574, {	-- Egg Thief
 					["coord"] = { 63.2, 38.8, MAP.MIDNIGHT.THE_COILED_ISLE },

@@ -18771,7 +18771,7 @@ r(1301494,{awp=120100,learnedAt=60,questID=97227,requireSkill=186,skillID=2916})
 r(1225359,{learnedAt=100,questID=88484,requireSkill=186,skillID=2916}),
 r(1225351,{learnedAt=80,questID=88487,requireSkill=186,skillID=2916}),
 r(1225367,{learnedAt=100,questID=88488,requireSkill=186,skillID=2916}),
-r(1301495,{awp=120100,requireSkill=186,skillID=2916}),
+r(1301495,{awp=120100,providers={{"o",656001}},requireSkill=186,skillID=2916}),
 r(1225818,{requireSkill=186,skillID=2916}),
 r(1225817,{requireSkill=186,skillID=2916}),
 r(1225820,{requireSkill=186,skillID=2916}),

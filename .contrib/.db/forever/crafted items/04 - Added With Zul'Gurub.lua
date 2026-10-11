@@ -28,11 +28,13 @@ root(ROOTS.Craftables, {
 			i(20749),	-- Brilliant Wizard Oil
 		}),
 	}),
-	--]]
 	prof(ENGINEERING, {
-		i(19999),	-- Bloodvine Goggles
-		i(19998),	-- Bloodvine Lens
+		n(ARMOR, {
+			i(19999),	-- Bloodvine Goggles
+			i(19998),	-- Bloodvine Lens
+		}),
 	}),
+		--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {

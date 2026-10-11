@@ -572,6 +572,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if NOT ANYCLASSIC
 						i(6654, {	-- Torch of the Eternal Flame
 							["timeline"] = { REMOVED_4_0_3 },
+							collectible = true,	-- retroactively granted from old completed quest state
 						}),
 						-- #endif
 					},

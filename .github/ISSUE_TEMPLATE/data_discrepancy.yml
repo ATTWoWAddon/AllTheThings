@@ -1,0 +1,175 @@
+name: Data Discrepancy Report
+description: Report any mismatches between ATT's database and the actual in-game content.
+labels: ["type:data"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please [search existing issues](https://github.com/ATTWoWAddon/AllTheThings/issues) before reporting a discrepancy.
+        If you just updated ATT, fully close and reopen WoW before checking again, as noted in the [README](https://github.com/ATTWoWAddon/AllTheThings#problem-suggestion).
+
+  - type: dropdown
+    id: flavour
+    attributes:
+      label: "WoW Flavor"
+      description: "Select the WoW Flavor the data concerns. Use the environment field for PTR or Beta."
+      options:
+        - "Retail"
+        - "Classic Progression (MoP)"
+        - "Classic Era"
+        - "Classic Hardcore"
+        - "Classic Anniversary (TBC)"
+        - "Season of Discovery"
+        - "Forever"
+        - "Other / Unsure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "WoW Environment"
+      description: "Optional: specify whether the observation or source concerns Live, PTR, or Beta."
+      options:
+        - "Live"
+        - "PTR"
+        - "Beta"
+
+  - type: dropdown
+    id: region
+    attributes:
+      label: "Region"
+      description: "Optional: include the region if it affects availability or how the evidence should be interpreted."
+      options:
+        - "US"
+        - "EU"
+        - "KR"
+        - "CN"
+        - "TW"
+
+  - type: input
+    id: wow_build
+    attributes:
+      label: "WoW Client Build"
+      description: "Provide the client version and build number from `/dump GetBuildInfo()` or the login screen. For historical sources, give the relevant build if known, or state that it is unknown."
+      placeholder: "Client version and build number, or historical build/context"
+    validations:
+      required: true
+
+  - type: input
+    id: wow_event
+    attributes:
+      label: "Special Event or Game Mode"
+      description: "Optional: name any event, season, or special realm mode needed to interpret the data."
+      placeholder: "Event or mode name, if relevant"
+
+  - type: dropdown
+    id: wow_language
+    attributes:
+      label: "WoW Client Language"
+      description: "Optional: include the client language if names, localization, or search results are affected."
+      options:
+        - "enUS"
+        - "deDE"
+        - "esES"
+        - "esMX"
+        - "frFR"
+        - "itIT"
+        - "koKR"
+        - "ptBR"
+        - "ruRU"
+        - "zhCN"
+        - "zhTW"
+
+  - type: dropdown
+    id: att_version
+    attributes:
+      label: "ATT Release Channel"
+      description: "Select how ATT was installed; provide the exact version below."
+      options:
+        - "Release"
+        - "Alpha"
+        - "Git"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: input
+    id: att_build
+    attributes:
+      label: "Exact ATT Version"
+      description: "Copy `/dump ATTC.Version` or the version in addon info. Git installs may report `[Git]`; include your branch and commit SHA (`git branch --show-current` and `git rev-parse HEAD`)."
+      placeholder: "Exact release/alpha version, or [Git] with branch and commit SHA"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: data_type
+    attributes:
+      label: "Data Categories"
+      description: "Optional: select all categories affected by the discrepancy."
+      multiple: true
+      options:
+        - "Items"
+        - "Quests"
+        - "Achievements"
+        - "Creatures / NPCs"
+        - "Objects"
+        - "Spells"
+        - "Mounts"
+        - "Pets"
+        - "Decor"
+        - "Warband campsites"
+        - "Professions"
+        - "Illusions"
+        - "Appearances"
+        - "Drop sources"
+        - "Other / Unsure"
+
+  - type: input
+    id: data_reference
+    attributes:
+      label: "Affected Data"
+      description: "Prefer entity types and IDs (item, quest, NPC, object, spell, etc.). If IDs are unknown, provide names or direct links so we can identify the records."
+      placeholder: "ItemID 12345 / QuestID 9876, or names/direct links"
+    validations:
+      required: true
+
+  - type: textarea
+    id: discrepancy_description
+    attributes:
+      label: "Describe the Data Discrepancy"
+      description: "Describe what ATT currently shows, the expected or observed in-game behavior, and the correction you propose."
+      placeholder: "Current ATT data, expected/actual behavior, and proposed correction"
+    validations:
+      required: true
+
+  - type: textarea
+    id: data_evidence
+    attributes:
+      label: "Data Evidence / Sources"
+      description: |
+        Attach or link an in-game screenshot, an ATT Contribute export (`Contributor Report`), or a direct Wowhead page. Explain which entity/ID and correction each source supports; include location, observation date, and version context where relevant.
+        If evidence is unavailable, mark the affected correction "Unverified / pending verification" and obtain evidence before presenting the data change as ready for review. AI explanations or inferred values do not replace source evidence; see [AGENTS.md](https://github.com/ATTWoWAddon/AllTheThings/blob/master/AGENTS.md).
+      placeholder: "Drop screenshots/reports here or link sources; explain what each supports, or mark unverified/pending verification"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce_steps
+    attributes:
+      label: "Verification / Reproduction Context"
+      description: "Give steps, location, and relevant character or activity details. For intermittent, historical, removed, or currently unverifiable content, explain the circumstances and why it cannot be reproduced now."
+      placeholder: "Steps and conditions, or historical context and verification limits"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: |
+        Optional: ATT mode/filters, other addons and their versions, and any isolation testing with only ATT enabled ("Not tested" is fine).
+        If AI helped with related work or this report, add an `AI Assistance` section with the actual model name(s), what it helped with, and what you verified, per [AGENTS.md](https://github.com/ATTWoWAddon/AllTheThings/blob/master/AGENTS.md).
+      placeholder: "Settings, addon isolation results, or other relevant context"

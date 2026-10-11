@@ -11,6 +11,7 @@ local C_AddOns_GetAddOnMetadata
 	= C_AddOns.GetAddOnMetadata;
 local wipearray = app.wipearray
 
+--- Shared game tooltip extended with ATT icon, model, and reference display helpers.
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 local RETRIEVING_DATA = RETRIEVING_DATA;
@@ -1411,6 +1412,7 @@ local function CreateRow(container, rows, i)
 	i = tonumber(i)
 	if not i then return end
 
+	--- Interactive window row displaying an object, its icon, and collection progress.
 	---@class ATTRowClass: ATTButtonClass
 	local row = CreateFrame("Button", nil, container);
 	row.index = i - 1;
@@ -1458,6 +1460,7 @@ local function CreateRow(container, rows, i)
 	row.Background:SetTexture(136810);
 
 	-- Texture is the icon.
+	--- Object icon texture displayed in an ATT window row.
 	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
 	row.Texture:SetPoint("LEFT", row, "LEFT");
@@ -2302,23 +2305,11 @@ local ReservedFields = {
 	OnRebuild = true,
 	OnRefresh = true,
 	OnUpdate = true,
-	OnShow = true,
-	OnHide = true,
 	IgnoreQuestUpdates = true,
 	IgnorePetBattleEvents = true,
 	GetShouldAutomaticallyOpen = true,
 	SetShouldAutomaticallyOpen = true,
 };
-local PreCallShowSuffixes = {}
-local PrecallShow = true
-local function ShowPrecallShowWindows()
-	PrecallShow = nil
-	for k in pairs(PreCallShowSuffixes) do
-		-- app.PrintDebug("Precall Show",k)
-		app.Windows[k]:Show()
-	end
-end
-app.AddEventHandlerOnce("OnLoad", ShowPrecallShowWindows)
 local function SetupCommandsForDefinition(definition)
 	if not definition or definition.BuiltCommands then return end
 	definition.BuiltCommands = true
@@ -2360,6 +2351,7 @@ local function BuildWindow(suffix)
 	end
 
 	-- Create the window instance.
+	--- ATT content window with configurable behavior, scrolling rows, and saved display settings.
 	---@class ATTWindow: BackdropTemplate, ATTFrameClass
 	local window = CreateFrame("Frame", "ATTWindow"..suffix, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	window:SetClampedToScreen(true);
@@ -2430,28 +2422,23 @@ local function BuildWindow(suffix)
 	end
 
 	-- Register events to allow settings to be recorded.
-	local onHide, onShow = definition.OnHide, definition.OnShow;
 	window:SetScript("OnMouseDown", StartMovingOrSizing);
 	window:SetScript("OnMouseUp", StopMovingOrSizing);
 	window:SetScript("OnHide", function(self)
 		StopMovingOrSizing(self);
-		if onHide then onHide(self); end
+		if self.OnHide then self:OnHide() end
 		self:RecordSettings();
 	end);
 	window:SetScript("OnShow", function(self)
-		if PrecallShow then
-			-- app.PrintDebug("Window:OnShow:Early",self.Suffix)
-			PreCallShowSuffixes[self.Suffix] = true
-			self:Hide()
-			return
-		end
 		-- app.PrintDebug(self.Suffix,":OnShow",self.data)
-		if not self.data then
-			self:Rebuild();
-		else
-			self:Update();
+		if not app.__FirstRefresh then
+			if not self.data then
+				self:Rebuild();
+			else
+				self:Update();
+			end
 		end
-		if onShow then onShow(self); end
+		if self.OnShow then self:OnShow() end
 		self:RecordSettings();
 	end);
 
@@ -2701,6 +2688,7 @@ local function BuildWindow(suffix)
 	window.CloseButton = closeButton;
 
 	-- The Scroll Bar.
+	--- Slider controlling the first visible row in an ATT window.
 	---@class ATTWindowScrollBar: Slider
 	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
 	scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
@@ -2726,6 +2714,7 @@ local function BuildWindow(suffix)
 	window.Grip = grip;
 
 	-- The Row Container. This contains all of the row frames.
+	--- Frame holding lazily created display rows for an ATT window.
 	---@class ATTRowContainer: Frame
 	local container = CreateFrame("Frame", nil, window);
 	window.Container = container;

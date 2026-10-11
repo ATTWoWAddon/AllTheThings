@@ -1,11 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
-	n(QUESTS, sharedDataSelf({
-		["timeline"] = { REMOVED_4_0_3 },
-		["lvl"] = 40,
-	}, {
+profession(LEATHERWORKING, {
+	n(QUESTS, sharedData({ ["lvl"] = 40 }, {
 		q(5141, {	-- Dragonscale Leatherworking [A]
 			["altQuests"] = {
 				5144,	-- Elemental Leatherworking
@@ -105,4 +102,4 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			["races"] = HORDE_ONLY,
 		}),
 	})),
-})));
+});

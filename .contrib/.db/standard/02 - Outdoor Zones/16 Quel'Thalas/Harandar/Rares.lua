@@ -35,6 +35,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264534),	-- Bogvine Shoulderguards
 					i(264540),	-- Mirevine Wristguards
+					hqt_bonusRenown(94725, FACTION_HARATI),	-- Bonus Rep: Ahl'ua'huhi
 				},
 			}),
 			n(250358, {	-- Annulus the Worldshaker
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264614),	-- Fungal Cap Guard
 					i(264607),	-- Spore-Laden Choker
+					hqt_bonusRenown(94726, FACTION_HARATI),	-- Bonus Rep: Annulus the Worldshaker
 				},
 			}),
 			n(249844, {	-- Chironex
@@ -51,6 +53,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264544),	-- Grounded Death Cap
 					i(264538),	-- Translucent Membrane Slippers
+					hqt_bonusRenown(94713, FACTION_HARATI),	-- Bonus Rep: Chironex
 				},
 			}),
 			n(249997, {	-- Chlorokyll
@@ -59,6 +62,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264626),	-- Scepter of Radiant Conversion
 					i(264604),	-- Sludgy Verdant Signet
+					hqt_bonusRenown(94717, FACTION_HARATI),	-- Bonus Rep: Chlorokyll
 				},
 			}),
 			n(250231, {	-- Dracaena
@@ -67,6 +71,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264644),	-- Crawler's Mindscythe
 					i(264562),	-- Plated Grove Vest
+					hqt_bonusRenown(94721, FACTION_HARATI),	-- Bonus Rep: Dracaena
 				},
 			}),
 			n(249849, {	-- Ha'kalawe
@@ -75,6 +80,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264553),	-- Deepspore Leather Galoshes
 					i(264592),	-- Ha'kalawe's Flawless Wing
+					hqt_bonusRenown(94714, FACTION_HARATI),	-- Bonus Rep: Ha'kalawe
 				},
 			}),
 			n(250226, {	-- Mindrot
@@ -83,6 +89,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264550),	-- Fungal Stalker's Stockings
 					i(264649),	-- Mindrot Claw-Hammer
+					hqt_bonusRenown(94720, FACTION_HARATI),	-- Bonus Rep: Mindrot
 				},
 			}),
 			n(250317, {	-- Oro'ohna
@@ -91,6 +98,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264616),	-- Lightblighted Sapdrinker
 					i(264591),	-- Radiant Petalwing's Feather
+					hqt_bonusRenown(94723, FACTION_HARATI),	-- Bonus Rep: Oro'ohna
 				},
 			}),
 			n(250321, {	-- Pterrock
@@ -99,6 +107,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264567),	-- Rockscale Hood
 					i(264576),	-- Slatescale Grips
+					hqt_bonusRenown(94724, FACTION_HARATI),	-- Bonus Rep: Pterrock
 				},
 			}),
 			n(249962, {	-- Queen Lashtongue
@@ -107,6 +116,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264571),	-- Ironleaf Wristguards
 					i(264566),	-- Lashtongue's Leaffroggers
+					hqt_bonusRenown(94716, FACTION_HARATI),	-- Bonus Rep: Queen Lashtongue
 				},
 			}),
 			n(248741, {	-- Rhazul
@@ -115,6 +125,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264622),	-- Grimfang Shank
 					i(264530),	-- Grimfur Mittens
+					hqt_bonusRenown(94712, FACTION_HARATI),	-- Bonus Rep: Rhazul
 				},
 			}),
 			n(250180, {	-- Serrasa
@@ -123,6 +134,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264639),	-- Razorfang Hacker
 					i(264568),	-- Serrated Scale Gauntlets
+					hqt_bonusRenown(94719, FACTION_HARATI),	-- Bonus Rep: Serrasa
 				},
 			}),
 			n(250086, {	-- Stumpy
@@ -131,6 +143,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264635),	-- Stumpy's Stump
 					i(264578),	-- Stumpy's Terrorplate
+					hqt_bonusRenown(94718, FACTION_HARATI),	-- Bonus Rep: Stumpy
 				},
 			}),
 			n(249902, {	-- Tallcap the Truthspreader
@@ -139,6 +152,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264532),	-- Robes of Flowing Truths
 					i(264650),	-- Truthspreader's Truth Spreader
+					hqt_bonusRenown(94715, FACTION_HARATI),	-- Bonus Rep: Tallcap the Truthspreader
 				},
 			}),
 			n(250246, {	-- Treetop
@@ -147,62 +161,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = {
 					i(264581),	-- Bloombark Spaulders
 					i(264633),	-- Treetop Battlestave
+					hqt_bonusRenown(94722, FACTION_HARATI),	-- Bonus Rep: Treetop
 				},
 			}),
 		})),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.HARANDAR, {
-			n(RARES, {
-				q(94725, {	-- Weekly reputation: Ahl'ua'huhi
-					["name"] = "Ahl'ua'huhi weekly reputation obtained.",
-				}),
-				q(94726, {	-- Weekly reputation: Annulus the Worldshaker
-					["name"] = "Annulus the Worldshaker weekly reputation obtained.",
-				}),
-				q(94713, {	-- Weekly reputation: Chironex
-					["name"] = "Chironex weekly reputation obtained.",
-				}),
-				q(94717, {	-- Weekly reputation: Chlorokyll
-					["name"] = "Chlorokyll weekly reputation obtained.",
-				}),
-				q(94721, {	-- Weekly reputation: Dracaena
-					["name"] = "Dracaena weekly reputation obtained.",
-				}),
-				q(94714, {	-- Weekly reputation: Ha'kalawe
-					["name"] = "Ha'kalawe weekly reputation obtained.",
-				}),
-				q(94720, {	-- Weekly reputation: Mindrot
-					["name"] = "Mindrot weekly reputation obtained.",
-				}),
-				q(94723, {	-- Weekly reputation: Oro'ohna
-					["name"] = "Oro'ohna weekly reputation obtained.",
-				}),
-				q(94724, {	-- Weekly reputation: Pterrock
-					["name"] = "Pterrock weekly reputation obtained.",
-				}),
-				q(94716, {	-- Weekly reputation: Queen Lashtongue
-					["name"] = "Queen Lashtongue weekly reputation obtained.",
-				}),
-				q(94712, {	-- Weekly reputation: Rhazul
-					["name"] = "Rhazul weekly reputation obtained.",
-				}),
-				q(94719, {	-- Weekly reputation: Serrasa
-					["name"] = "Serrasa weekly reputation obtained.",
-				}),
-				q(94718, {	-- Weekly reputation: Stumpy
-					["name"] = "Stumpy weekly reputation obtained.",
-				}),
-				q(94715, {	-- Weekly reputation: Tallcap the Truthspreader
-					["name"] = "Tallcap the Truthspreader weekly reputation obtained.",
-				}),
-				q(94722, {	-- Weekly reputation: Treetop
-					["name"] = "Treetop weekly reputation obtained.",
-				}),
-			}),
-		}),
-	}),
-}));
+}))

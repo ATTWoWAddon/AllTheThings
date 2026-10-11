@@ -1,23 +1,19 @@
 name: Parser
 
-# Controls when the action will run.
-on:
-  # Triggers the workflow on each push event
-  push:
+on: # Controls automatic and manual workflow triggers
+  push: # Branch pushes must match both the branch and path filters
     branches:
-      - '*' # Trigger on all branches
+      - '**' # Trigger on all branches, including names containing '/'
     tags-ignore:
-      - '*' # Ignore all tags
-    paths:
-      - '.contrib/.db/**'
-      - '.github/workflows/Parser.yml'
-  # Triggers the workflow on each pull request event
-  pull_request:
-    paths:
-      - '.contrib/.db/**'
-      - '.github/workflows/Parser.yml'
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+      - '**' # Ignore all tags, including names containing '/'
+    paths: # Require at least one matching changed file; not evaluated for tag pushes
+      - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
+      - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
+  pull_request: # Trigger on opened, synchronize, or reopened events for any target branch
+    paths: # Require at least one matching file changed in the pull request
+      - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
+      - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
+  workflow_dispatch: # Run manually: Actions -> Parser -> Run workflow -> select a branch -> Run workflow (requires write access and this file on the default branch; no path filters)
 
 permissions:
   pull-requests: read

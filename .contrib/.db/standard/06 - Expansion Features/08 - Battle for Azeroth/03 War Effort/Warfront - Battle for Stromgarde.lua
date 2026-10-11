@@ -34,6 +34,17 @@ local function GenerateSharedRewardsSymlinkForModID(modID, ...)
 	end
 	return sym
 end
+-- Same as GenerateRewardsSymlinkForModID, but selects a single armor type filter (CLOTH/LEATHER/MAIL/PLATE) under the Faction Header
+local function GenerateArmorTypeRewardsSymlinkForModID(factionHeader, modID, armorType)
+	return {
+		SymSelector.select("BFA_WARFRONT_ARATHI_CBD"),	-- Find the Warfront/Arathi/Common Boss Drop Header.
+		{"find", "headerID", factionHeader},	-- Select the Faction Header.
+		{"pop"},
+		{"where", "filterID", armorType},	-- Select the Armor Type.
+		{"extract","sourceID"},	-- Extract Sources
+		{"modID", modID},	-- Apply specific modID
+	}
+end
 local ALLIANCE_WARFRONT_BACKS = {
 	i(163355, {	-- 7th Legionnaire's Bloody Drape
 		["classes"] = PLATE_CLASSES,
@@ -48,7 +59,7 @@ local ALLIANCE_WARFRONT_BACKS = {
 		["classes"] = CLOTH_CLASSES,
 	}),
 }
-local ALLIANCE_WARFRONT_ARMOR = {
+local ALLIANCE_WARFRONT_CLOTH = {
 	i(163339),	-- 7th Legionnaire's Hood
 	i(163337),	-- 7th Legionnaire's Amice
 	i(163248),	-- 7th Legionnaire's Robes
@@ -57,6 +68,8 @@ local ALLIANCE_WARFRONT_ARMOR = {
 	i(163342),	-- 7th Legionnaire's Cord
 	i(163264),	-- 7th Legionnaire's Legwraps
 	i(163253),	-- 7th Legionnaire's Slippers
+}
+local ALLIANCE_WARFRONT_LEATHER = {
 	i(163380),	-- 7th Legionnaire's Visage
 	i(163377),	-- 7th Legionnaire's Leather Mantle
 	i(163251),	-- 7th Legionnaire's Vest
@@ -65,6 +78,8 @@ local ALLIANCE_WARFRONT_ARMOR = {
 	i(163384),	-- 7th Legionnaire's Buckle
 	i(163266),	-- 7th Legionnaire's Britches
 	i(163383),	-- 7th Legionnaire's Boots
+}
+local ALLIANCE_WARFRONT_MAIL = {
 	i(163394),	-- 7th Legionnaire's Helm
 	i(163389),	-- 7th Legionnaire's Monnion
 	i(163398),	-- 7th Legionnaire's Chainmail
@@ -73,6 +88,8 @@ local ALLIANCE_WARFRONT_ARMOR = {
 	i(163401),	-- 7th Legionnaire's Cincture
 	i(163265),	-- 7th Legionnaire's Leggings
 	i(163400),	-- 7th Legionnaire's Sabatons
+}
+local ALLIANCE_WARFRONT_PLATE = {
 	i(163410),	-- 7th Legionnaire's Headpiece
 	i(163405),	-- 7th Legionnaire's Shoulderplates
 	i(163418),	-- 7th Legionnaire's Chestguard
@@ -114,7 +131,7 @@ local HORDE_WARFRONT_BACKS = {
 		["classes"] = MAIL_CLASSES,
 	}),
 }
-local HORDE_WARFRONT_ARMOR = {
+local HORDE_WARFRONT_CLOTH = {
 	i(163426),	-- Honorbound Artificer's Guise
 	i(163424),	-- Honorbound Artificer's Amice
 	i(163280),	-- Honorbound Artificer's Robes
@@ -123,6 +140,8 @@ local HORDE_WARFRONT_ARMOR = {
 	i(163430),	-- Honorbound Artificer's Cord
 	i(163296),	-- Honorbound Artificer's Legwraps
 	i(163285),	-- Honorbound Artificer's Sandals
+}
+local HORDE_WARFRONT_LEATHER = {
 	i(163435),	-- Honorbound Outrider's Headpiece
 	i(163432),	-- Honorbound Outrider's Shoulderguards
 	i(163283),	-- Honorbound Outrider's Tunic
@@ -131,6 +150,8 @@ local HORDE_WARFRONT_ARMOR = {
 	i(163439),	-- Honorbound Outrider's Buckle
 	i(163298),	-- Honorbound Outrider's Pants
 	i(163438),	-- Honorbound Outrider's Boots
+}
+local HORDE_WARFRONT_MAIL = {
 	i(163446),	-- Honorbound Vanguard's Skullguard
 	i(163441),	-- Honorbound Vanguard's Shoulderguards
 	i(163282),	-- Honorbound Vanguard's Chainmail
@@ -139,6 +160,8 @@ local HORDE_WARFRONT_ARMOR = {
 	i(163451),	-- Honorbound Vanguard's Clasp
 	i(163445),	-- Honorbound Vanguard's Leggings
 	i(163449),	-- Honorbound Vanguard's Sabatons
+}
+local HORDE_WARFRONT_PLATE = {
 	i(163456),	-- Honorbound Centurion's Greathelm
 	i(163453),	-- Honorbound Centurion's Shoulderplates
 	i(163459),	-- Honorbound Centurion's Breastplate
@@ -268,14 +291,22 @@ root(ROOTS.ExpansionFeatures,
 							142682,	-- Zalas Witherbark <Warband Leader>
 						},
 						["groups"] = {
-							-- Alliance
-							n(FACTION_HEADER_ALLIANCE, { n(BACK, clone(ALLIANCE_WARFRONT_BACKS))}),
-							n(FACTION_HEADER_ALLIANCE, { n(ARMOR, clone(ALLIANCE_WARFRONT_ARMOR))}),
-							n(FACTION_HEADER_ALLIANCE, { n(WEAPONS, clone(ALLIANCE_WARFRONT_WEAPONS))}),
-							-- Horde
-							n(FACTION_HEADER_HORDE, { n(BACK, clone(HORDE_WARFRONT_BACKS))}),
-							n(FACTION_HEADER_HORDE, { n(ARMOR, clone(HORDE_WARFRONT_ARMOR))}),
-							n(FACTION_HEADER_HORDE, { n(WEAPONS, clone(HORDE_WARFRONT_WEAPONS))}),
+							n(FACTION_HEADER_ALLIANCE, {
+								n(WEAPONS, clone(ALLIANCE_WARFRONT_WEAPONS)),
+								n(BACK, clone(ALLIANCE_WARFRONT_BACKS)),
+								filter(CLOTH, clone(ALLIANCE_WARFRONT_CLOTH)),
+								filter(LEATHER, clone(ALLIANCE_WARFRONT_LEATHER)),
+								filter(MAIL, clone(ALLIANCE_WARFRONT_MAIL)),
+								filter(PLATE, clone(ALLIANCE_WARFRONT_PLATE)),
+							}),
+							n(FACTION_HEADER_HORDE, {
+								n(WEAPONS, clone(HORDE_WARFRONT_WEAPONS)),
+								n(BACK, clone(HORDE_WARFRONT_BACKS)),
+								filter(CLOTH, clone(HORDE_WARFRONT_CLOTH)),
+								filter(LEATHER, clone(HORDE_WARFRONT_LEATHER)),
+								filter(MAIL, clone(HORDE_WARFRONT_MAIL)),
+								filter(PLATE, clone(HORDE_WARFRONT_PLATE)),
+							}),
 						},
 					}),
 					n(RARES, {
@@ -1119,8 +1150,17 @@ root(ROOTS.ExpansionFeatures,
 											n(BACK, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, BACK),
 											}),
-											n(ARMOR, {
-												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, ARMOR),
+											filter(CLOTH, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, CLOTH),
+											}),
+											filter(LEATHER, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, LEATHER),
+											}),
+											filter(MAIL, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, MAIL),
+											}),
+											filter(PLATE, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, PLATE),
 											}),
 											n(WEAPONS, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, WEAPONS),
@@ -1152,7 +1192,10 @@ root(ROOTS.ExpansionFeatures,
 											["modID"] = 6,
 											["groups"] = {
 												n(BACK, clone(ALLIANCE_WARFRONT_BACKS)),
-												n(ARMOR, clone(ALLIANCE_WARFRONT_ARMOR)),
+												filter(CLOTH, clone(ALLIANCE_WARFRONT_CLOTH)),
+												filter(LEATHER, clone(ALLIANCE_WARFRONT_LEATHER)),
+												filter(MAIL, clone(ALLIANCE_WARFRONT_MAIL)),
+												filter(PLATE, clone(ALLIANCE_WARFRONT_PLATE)),
 												n(WEAPONS, {
 													["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 6, WEAPONS),
 												}),
@@ -1384,8 +1427,17 @@ root(ROOTS.ExpansionFeatures,
 											n(BACK, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, BACK),
 											}),
-											n(ARMOR, {
-												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, ARMOR),
+											filter(CLOTH, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, CLOTH),
+											}),
+											filter(LEATHER, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, LEATHER),
+											}),
+											filter(MAIL, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, MAIL),
+											}),
+											filter(PLATE, {
+												["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, PLATE),
 											}),
 											n(WEAPONS, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, WEAPONS),
@@ -1421,7 +1473,10 @@ root(ROOTS.ExpansionFeatures,
 											["modID"] = 6,
 											["groups"] = {
 												n(BACK, clone(HORDE_WARFRONT_BACKS)),
-												n(ARMOR, clone(HORDE_WARFRONT_ARMOR)),
+												filter(CLOTH, clone(HORDE_WARFRONT_CLOTH)),
+												filter(LEATHER, clone(HORDE_WARFRONT_LEATHER)),
+												filter(MAIL, clone(HORDE_WARFRONT_MAIL)),
+												filter(PLATE, clone(HORDE_WARFRONT_PLATE)),
 												n(WEAPONS, {
 													["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 6, WEAPONS),
 												}),
@@ -1531,42 +1586,37 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(47283, {	-- Chop, Chop
 									["races"] = HORDE_ONLY,
-									["groups"] = {
-										i(156531),	-- Freshly-Chopped Wood (QI!)
-										i(156514),	-- Sturdy Axe (QI!)
+									["qis"] = {
+										156531,	-- Freshly-Chopped Wood (QI!)
+										156514,	-- Sturdy Axe (QI!)
 									},
 								}),
 								q(52118, {	-- Cutting Out the Competition
 									["qg"] = 139446,	-- Lumbering Leo
 									["coord"] = { 36.5, 59.6, 1044 },	-- Arathi Highlands
 									["races"] = ALLIANCE_ONLY,
-									["groups"] = {
-										i(156531),	-- Freshly-Chopped Wood (QI!)
-										i(161130),	-- Sturdy Axe (QI!)
+									["qis"] = {
+										156531,	-- Freshly-Chopped Wood (QI!)
+										161130,	-- Sturdy Axe (QI!)
 									},
 								}),
 								q(53678, {	-- Establishing a Connection
 									["races"] = ALLIANCE_ONLY,
+									["qi"] = 164622,	-- Grayson's Note (QI!)
 								}),
 								q(53668, {	-- Flightgineer's Network
 									["races"] = HORDE_ONLY,
-									["groups"] = {
-										i(164598),	-- Krazzle's Scribbled Note (QI!)
-									},
+									["qi"] = 164598,	-- Krazzle's Scribbled Note (QI!)
 								}),
 								q(52439, {	-- Iron Stores
 									["races"] = ALLIANCE_ONLY,
-									["groups"] = {
-										i(159728),	-- Heavy Iron Key (QI!)
-									},
+									["qi"] = 159728,	-- Heavy Iron Key (QI!)
 								}),
 								q(51082, {	-- Iron Stores
 									["qg"] = 131750,	-- Lug'ruk
 									["coord"] = { 61.4, 25.6, 943 },
 									["races"] = HORDE_ONLY,
-									["groups"] = {
-										i(159728),	-- Heavy Iron Key (QI!)
-									},
+									["qi"] = 159728,	-- Heavy Iron Key (QI!)
 								}),
 								q(53672, {	-- Ready for Battle
 									["qg"] = 139727,	-- Sergeant Matthew Walker
@@ -1635,7 +1685,10 @@ root(ROOTS.ExpansionFeatures,
 										["modID"] = 3,
 										["groups"] = {
 											n(BACK, clone(ALLIANCE_WARFRONT_BACKS)),
-											n(ARMOR, clone(ALLIANCE_WARFRONT_ARMOR)),
+											filter(CLOTH, clone(ALLIANCE_WARFRONT_CLOTH)),
+											filter(LEATHER, clone(ALLIANCE_WARFRONT_LEATHER)),
+											filter(MAIL, clone(ALLIANCE_WARFRONT_MAIL)),
+											filter(PLATE, clone(ALLIANCE_WARFRONT_PLATE)),
 											n(WEAPONS, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 6, WEAPONS),
 											}),
@@ -1645,7 +1698,10 @@ root(ROOTS.ExpansionFeatures,
 										["modID"] = 3,
 										["groups"] = {
 											n(BACK, clone(HORDE_WARFRONT_BACKS)),
-											n(ARMOR, clone(HORDE_WARFRONT_ARMOR)),
+											filter(CLOTH, clone(HORDE_WARFRONT_CLOTH)),
+											filter(LEATHER, clone(HORDE_WARFRONT_LEATHER)),
+											filter(MAIL, clone(HORDE_WARFRONT_MAIL)),
+											filter(PLATE, clone(HORDE_WARFRONT_PLATE)),
 											n(WEAPONS, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 6, WEAPONS),
 											}),

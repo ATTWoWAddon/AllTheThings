@@ -1997,6 +1997,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["provider"] = { "n", 14353 },	-- Mizzle the Crafty
 						["modelScale"] = 3,
 						["groups"] = {
+							-- maybe?
 							i(18655),	-- Schematic: Major Recombobulator (RECIPE!)
 							i(18499),	-- Barrier Shield
 							i(18479),	-- Carrion Scorpid Helm

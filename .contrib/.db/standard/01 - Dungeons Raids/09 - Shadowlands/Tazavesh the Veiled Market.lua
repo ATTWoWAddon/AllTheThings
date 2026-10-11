@@ -423,14 +423,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(182109),	-- Totemic Surge
 							-- Items
 							i(185801),	-- Anomalous Starlit Breeches
-							i(185785, {	-- Embrace of the Relicbinder
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
-							}),
+							i(185785),	-- Embrace of the Relicbinder
 							i(185819),	-- Event Horizon's
 							i(185799),	-- Hyperlight Leggings
-							i(185784, {	-- Novaburst Warplate
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
-							}),
+							i(185784),	-- Novaburst Warplate
 							i(185813),	-- Signet of Collapsing Stars
 							i(190958),	-- So'leah's Secret Technique
 							i(185822),	-- Staff of Fractured Spacetime

@@ -251,7 +251,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			i(265548),	-- Cuddly Emerald Grrgle (DECOR!)
 			i(265546),	-- Cuddly Fel Grrgle (DECOR!)
 			i(264682),	-- Cuddly Flaxen Grrgle (DECOR!)
-			i(263294),	-- Cuddly Gold-Colored Grrgle (DECOR!)
 			i(264684),	-- Cuddly Gumball Grrgle (DECOR!)
 			i(265398),	-- Cuddly Juniper Grrgle (DECOR!)
 			i(263292),	-- Cuddly Lavender Grrgle (DECOR!)
@@ -328,8 +327,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(1425),	-- [DNT] [AUTOGEN] 11WE_WildElves_Crafting_GrindingWheel02.m2
 			rawdecor(1426),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn01.m2
 			rawdecor(1427),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn02.m2
-			rawdecor(1429),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn01_Destroyed01.m2
-			rawdecor(1431),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn05.m2
 			rawdecor(1432),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn04_Destroyed01.m2
 			rawdecor(1433),	-- [DNT] [AUTOGEN] 12TR_Amani_Ritual_FuneraryUrn02_Destroyed01.m2
 			rawdecor(1441),	-- [DNT] Small String of Schmancy Goblin Lights - DO NOT USE - duplicate \\ [DNT] [AUTOGEN] 11GO_Goblin_Lighting_Stringlights02.m2
@@ -423,7 +420,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(8913),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Furniture_Table01.m2
 			rawdecor(8914),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight01.m2
 			rawdecor(8915),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight02.m2
-			rawdecor(8991),	-- [DNT] [AUTOGEN] 12TR_Amani_Cooking_Mug01.m2
 			rawdecor(9256),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight01_Unlit.m2
 			rawdecor(9257),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Lighting_HangingLight02_Unlit.m2
 			rawdecor(9258),	-- [DNT] [AUTOGEN] 12FN_Fungarian_Special_TargetDummy01.m2
@@ -565,7 +561,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(15498),	-- [DNT] [AUTOGEN] 12ESW_main_tree_cypressRed_a02.m2
 			rawdecor(15586),	-- [DNT] [AUTOGEN] 12PM_Primitive_Decor_KnickKnack12.M2
 			rawdecor(15587),	-- [DNT] [AUTOGEN] 11WE_WildElves_Decor_Plate01.m2
-			rawdecor(15749),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry05.m2
 			rawdecor(15750),	-- [DNT] [AUTOGEN] 12TR_Amani_Decor_WallTapestry06.m2
 			rawdecor(15751),	-- [DNT] [AUTOGEN] 12VDL_Arid_Tendril_Top_B01.m2
 			rawdecor(15752),	-- [DNT] [AUTOGEN] 12VDL_Main_Plant_JellyPod_B02.m2
@@ -580,7 +575,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(15896),	-- [DNT] [AUTOGEN] 12VE_VoidElf_Structure_Tent02.m2
 			rawdecor(15339),	-- DO NOT USE - new asset coming - Well-Lit Incontinental Couch
 			rawdecor(16093),	-- [DNT] [AUTOGEN] 12TR_Amani_Lighting_Hex_Brazier01.m2
-			rawdecor(16096),	-- [DNT] [AUTOGEN] 12TR_Amani_Navigation_Oar01.m2
 			rawdecor(16097),	-- Void Elf Bedroll \\ [DNT] [AUTOGEN] 12VE_VoidElf_Furniture_BedRoll01.m2
 			rawdecor(16317),	-- [DNT] [AUTOGEN] 12DU_MaisaraHills_Ritual_EncounterAltar01.M2
 			rawdecor(16963),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Decor_DraperySet05.m2

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
+profession(ENGINEERING, {
 	n(REWARDS, {
 		i(11423, {	-- Gnome Engineer's Renewal Gift
 			["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
@@ -22,4 +22,4 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			},
 		}),
 	}),
-})));
+});

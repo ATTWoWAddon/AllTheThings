@@ -4,24 +4,46 @@
 root(ROOTS.Character, {
 	cl(WARLOCK, {
 		n(DEMON_TRAINER, bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {
-			["maps"] = { IRONFORGE, ORGRIMMAR, STORMWIND_CITY, UNDERCITY, ORGRIMMAR },
-			["classes"] = { WARLOCK },
-			["crs"] = {
-				6374,	-- Cylina Darkheart <Demon Trainer>
-				6373,	-- Dane Winslow <Demon Trainer>
-				6328,	-- Dannie Fizzwizzle <Demon Trainer>
-				5750,	-- Gina Lang <Demon Trainer>
-				12807,	-- Greshka <Demon Master>
-				12776,	-- Hraug <Demon Trainer>
-				6382,	-- Jubahl Corpseseeker <Demon Trainer>
-				5749,	-- Kayla Smithe <Demon Trainer>
-				6027,	-- Kitha <Demon Trainer>
-				5815,	-- Kurgul <Demon Trainer>
-				5753,	-- Martha Strain <Demon Trainer>
-				5520,	-- Spackle Thornberry <Demon Trainer>
-				6376,	-- Wren Darkspring <Demon Trainer>
+			aqd = {
+				crs = {
+					6374,	-- Cylina Darkheart <Demon Trainer> [Elwynn Forest]
+					6373,	-- Dane Winslow <Demon Trainer> [Elwynn Forest]
+					6328,	-- Dannie Fizzwizzle <Demon Trainer> [Dun Morogh]
+					6382,	-- Jubahl Corpseseeker <Demon Trainer> [Ironforge]
+					5520,	-- Spackle Thornberry <Demon Trainer>	[Stormwind City]
+					6376,	-- Wren Darkspring <Demon Trainer>	[Dun Morogh]
+				},
+				coords = {
+					{ 44.4, 66.0, MAP.ELWYNN_FOREST },
+					{ 50.0, 42.6, MAP.ELWYNN_FOREST },
+					{ 47.2, 53.6, MAP.DUN_MOROGH },
+					{ 53.2, 7.6, MAP.IRONFORGE },
+					{ 25.8, 77.6, MAP.STORMWIND_CITY },
+					{ 28.8, 66.2, MAP.DUN_MOROGH },
+				},
 			},
-			["groups"] = {
+			hqd = {
+				crs = {
+					5750,	-- Gina Lang <Demon Trainer> [Tirisfal Glades]
+					12807,	-- Greshka <Demon Master>	[Swamp of Sorrows]
+					12776,	-- Hraug <Demon Trainer>	[Durotar]
+					5749,	-- Kayla Smithe <Demon Trainer>	[Tirisfal Glades]
+					6027,	-- Kitha <Demon Trainer>	[Durotar]
+					5815,	-- Kurgul <Demon Trainer>	[Orgrimmar]
+					5753,	-- Martha Strain <Demon Trainer>	[Undercity]
+				},
+				coords = {
+					{ 61.6, 52.6, MAP.TIRISFAL_GLADES },
+					{ 48.6, 55.4, MAP.SWAMP_OF_SORROWS },
+					{ 40.6, 68.4, MAP.DUROTAR },
+					{ 30.8, 66.4, MAP.TIRISFAL_GLADES },
+					{ 54.6, 41.4, MAP.DUROTAR },
+					{ 47.6, 57.6, MAP.ORGRIMMAR },
+					{ 85.8, 15.8, MAP.UNDERCITY },
+				},
+			},
+			classes = { WARLOCK },
+			groups = {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["itemID"] = 28071,	-- Grimoire of Anguish (Rank 1)
 					["spellID"] = 33698,	-- Anguish (Rank 1)

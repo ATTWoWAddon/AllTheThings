@@ -7959,7 +7959,7 @@ i(23437,{awp=20003})}})}})}}),
 inst(748,{coords={
 [102]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",mapID=332,savedInstanceID=548,g={
 h(-45,{
-q(10944,{coords={
+q(10944,{awp=20100,coords={
 [332]={{48,18.2}}},description="After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",lvl=30,maps={104},qgs={22820},sourceQuests={10708}})}),
 h(-63,{
 i(24368),
@@ -8088,7 +8088,7 @@ i(30018,{b=1,f=51}),
 i(30017,{b=1,f=51}),
 i(30007,{b=1,f=51}),
 i(30015,{b=1,f=51})}}),
-q(10946,{coords={
+q(10946,{awp=20100,coords={
 [104]={{58,48.2}}},crs={19514},lvl=30,qgs={21700},qis={31946},sourceQuests={10944}})}),
 h(-63,{
 r(36315,{b=1,itemID=30280,requireSkill=197,skillID=2539}),
@@ -11466,7 +11466,7 @@ i(42118,{b=1,f=52,lvl=30,modID=1}),
 i(42119,{b=1,f=52,lvl=30,modID=1})}}),
 e(1597,{npcID=31125,g={
 ach(1722,{pvp=1,g={
-crit(9765,{achID=1752,awp=30003,id=5,pvp=1})}}),
+crit(9765,{achID=1752,id=5,pvp=1})}}),
 s(19869,41085,{b=1,c={3},f=6,loc=42,lvl=30,modID=1}),
 s(20124,41659,{b=1,c={11},f=5,loc=42,lvl=30,modID=1}),
 s(19651,40781,{b=1,c={6},f=7,loc=42,lvl=30,modID=1}),
@@ -11971,7 +11971,7 @@ i(51336,{b=1,f=52,lvl=30,modID=1}),
 i(51358,{b=1,f=52,lvl=30,modID=1})}}),
 e(1597,{npcID=31125,g={
 ach(1721,{pvp=1,g={
-crit(9766,{achID=1752,awp=30003,id=6,pvp=1})}}),
+crit(9766,{achID=1752,id=6,pvp=1})}}),
 s(19870,41086,{b=1,c={3},f=6,loc=42,lvl=30,modID=1}),
 s(20125,41660,{b=1,c={11},f=5,loc=42,lvl=30,modID=1}),
 s(19654,40784,{b=1,c={6},f=7,loc=42,lvl=30,modID=1}),
@@ -52162,10 +52162,10 @@ cd(35,{b=1,c={10},itemID=181510,spellID=341427}),
 cd(175,{b=1,c={3},itemID=182480,spellID=341427}),
 cd(96,{b=1,c={7},itemID=182109,spellID=341427}),
 s(116681,185801,{b=1,f=5,loc=46,lvl=60}),
-s(116665,185785,{awp=90100,b=1,f=6,loc=42,lvl=60,rwp=110200,u=2}),
+s(116665,185785,{b=1,f=6,loc=42,lvl=60}),
 s(116697,185819,{b=1,f=35,lvl=60}),
 s(116679,185799,{b=1,f=4,loc=46,lvl=60}),
-s(116664,185784,{awp=90100,b=1,f=7,loc=42,lvl=60,rwp=110200,u=2}),
+s(116664,185784,{b=1,f=7,loc=42,lvl=60}),
 i(185813,{b=1,f=52,lvl=60}),
 i(190958,{b=1,f=53,lvl=60,spellID=368509}),
 s(116699,185822,{b=1,f=28,lvl=60})}})}}),

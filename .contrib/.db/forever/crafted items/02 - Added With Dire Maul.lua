@@ -7,7 +7,8 @@ root(ROOTS.Craftables, {
 		i(18254),	-- Runn Tum Tuber Surprise
 	}),
 	prof(ENGINEERING, {
-		filter(MISC, {
+		filter(TRINKET_F, {
+			-- Maybe??
 			i(18637),	-- Major Recombobulator
 		}),
 	}),

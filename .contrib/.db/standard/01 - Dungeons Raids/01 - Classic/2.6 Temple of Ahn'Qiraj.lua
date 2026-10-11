@@ -1567,9 +1567,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
+					-- #if ANYCLASSIC
 					ach(15334, {	-- Survivor of the Old God (Season of Mastery)
 						["timeline"] = { ADDED_1_14_2, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
+					-- #endif
 					i(21221),	-- Eye of C'Thun
 					applyclassicphase(PHASE_SIX, {
 						["itemID"] = 22734,	-- Base of Atiesh

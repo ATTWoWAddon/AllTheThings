@@ -2,6 +2,38 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+-- Builds a symlink to the Faction Header of the Warfront/Darkshore/Common Boss Drop Header, optionally limited to specific sub-headers, applying the given modID
+local function GenerateRewardsSymlinkForModID(factionHeader, modID, ...)
+	local sym = {
+		SymSelector.select("BFA_WARFRONT_DARKSHORE_CBD"),	-- Find the Warfront/Darkshore/Common Boss Drop Header.
+		{"find", "headerID", factionHeader},	-- Select the Faction Header.
+		{"extract", "sourceID"},				-- Extract Sources
+		{"modID", modID},						-- Apply specific modID
+	};
+
+	local valcount = select("#",...)
+
+	if valcount > 0 then
+		local symconditional = valcount == 1 and "where" or "whereany"
+		table.insert(sym, 3, {"pop"})
+		table.insert(sym, 4, {symconditional, "headerID",...})
+	end
+
+	return sym
+end
+
+-- Same as GenerateRewardsSymlinkForModID, but selects a single armor type filter (CLOTH/LEATHER/MAIL/PLATE) under the Faction Header
+local function GenerateArmorTypeRewardsSymlinkForModID(factionHeader, modID, armorType)
+	return {
+		SymSelector.select("BFA_WARFRONT_DARKSHORE_CBD"),	-- Find the Warfront/Darkshore/Common Boss Drop Header.
+		{"find", "headerID", factionHeader},	-- Select the Faction Header.
+		{"pop"},
+		{"where", "filterID", armorType},		-- Select the Armor Type.
+		{"extract", "sourceID"},				-- Extract Sources
+		{"modID", modID},						-- Apply specific modID
+	}
+end
+
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.BFA, {
 		n(WAR_EFFORT, {
@@ -65,6 +97,7 @@ root(ROOTS.ExpansionFeatures,
 					n(COMMON_BOSS_DROPS, bubbleDown({
 						["modID"] = 3,
 					},{
+						["symselector"] = SymSelector.BFA_WARFRONT_DARKSHORE_CBD,
 						["crs"] = {
 							149652,	-- Agathe Wyrmwood
 							148787,	-- Alashanir
@@ -104,148 +137,191 @@ root(ROOTS.ExpansionFeatures,
 							147664,	-- Zimkaga
 						},
 						["groups"] = {
-							n(WEAPONS, {
-								["description"] = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
-								["groups"] = {
-									-- Alliance
-									i(164966, { ["timeline"] = { CREATED_8_1_0 }}),	-- Glade Warden's Glaive
-									i(166898),	-- Sentinel's Blade
-									i(165628),	-- Sentinel's Branch
-									i(165637),	-- Sentinel's Bulwark
-									i(165624),	-- Sentinel's Crescent
-									i(165636),	-- Sentinel's Gavel
-									i(165632),	-- Sentinel's Greatblade
-									i(165627),	-- Sentinel's Halberd
-									i(165635);	-- Sentinel's Moonglaive
-									i(165623),	-- Sentinel's Recurve
-									i(165629),	-- Sentinel's Spellblade
-									i(166483),	-- Sentinel's Tomahawk
-									i(165625),	-- Sentinel's Warhammer
-									-- Horde
-									i(165614),	-- Apothecary Spellstaff
-									i(165608),	-- Blightspreader's Crescent
-									i(165622),	-- Deathguard's Blade
-									i(166897),	-- Deathguard's Gavel
-									i(163528),	-- Deathguard's Gladius
-									i(166482),	-- Deathguard's Greatsword
-									i(165620),	-- Deathguard's Warshield
-									i(165611),	-- Deathstalker's Headcracker
-									i(165619),	-- Deathstalker's Warglaive
-									i(165621),	-- Deadshot Handcannon
-									i(165610),	-- Plaguebringer's Dirk
-									i(165613),	-- Plaguebringer's Halberd
-									i(166802),	-- Plaguebringer's Spellblade
-								},
+							n(FACTION_HEADER_ALLIANCE, {
+								n(WEAPONS, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
+									["groups"] = {
+										i(164966, { ["timeline"] = { CREATED_8_1_0 }}),	-- Glade Warden's Glaive
+										i(166898),	-- Sentinel's Blade
+										i(165628),	-- Sentinel's Branch
+										i(165637),	-- Sentinel's Bulwark
+										i(165624),	-- Sentinel's Crescent
+										i(165636),	-- Sentinel's Gavel
+										i(165632),	-- Sentinel's Greatblade
+										i(165627),	-- Sentinel's Halberd
+										i(165635);	-- Sentinel's Moonglaive
+										i(165623),	-- Sentinel's Recurve
+										i(165629),	-- Sentinel's Spellblade
+										i(166483),	-- Sentinel's Tomahawk
+										i(165625),	-- Sentinel's Warhammer
+									},
+								}),
+								n(BACK, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166758),	-- Moonpriest's Cloak
+										i(166759),	-- Darkwood Sentinel's Drape
+										i(166760),	-- Kaldorei Archer's Greatcloak
+										i(166761),	-- Wardenguard's Drape
+									},
+								}),
+								filter(CLOTH, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166572),	-- Moonpriest's Visor
+										i(165435),	-- Moonpriest's Coronet
+										i(166558),	-- Moonpriest's Epaulets
+										i(165437),	-- Moonpriest's Mantle
+										i(166577),	-- Moonpriest's Garments
+										i(165460),	-- Moonpriest's Vestments
+										i(165439),	-- Moonpriest's Cuffs
+										i(165434),	-- Moonpriest's Handwraps
+										i(165438),	-- Moonpriest's Sash
+										i(165436),	-- Moonpriest's Legwraps
+										i(165433),	-- Moonpriest's Sandals
+									},
+								}),
+								filter(LEATHER, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166571),	-- Darkwood Sentinel's Guise
+										i(165443),	-- Darkwood Sentinel's Cowl
+										i(166557),	-- Darkwood Sentinel's Shoulderpads
+										i(165445),	-- Darkwood Sentinel's Monnions
+										i(165440),	-- Darkwood Sentinel's Tunic
+										i(166580),	-- Darkwood Sentinel's Jerkin
+										i(165447),	-- Darkwood Sentinel's Armguards
+										i(165442),	-- Darkwood Sentinel's Grips
+										i(165446),	-- Darkwood Sentinel's Cinch
+										i(165444),	-- Darkwood Sentinel's Breeches
+										i(165441),	-- Darkwood Sentinel's Footpads
+									},
+								}),
+								filter(MAIL, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166566),	-- Kaldorei Archer's Coif
+										i(165451),	-- Kaldorei Archer's Hood
+										i(165453),	-- Kaldorei Archer's Shoulderguards
+										i(166556),	-- Kaldorei Archer's Spaulders
+										i(166579),	-- Kaldorei Archer's Hauberk
+										i(165448),	-- Kaldorei Archer's Chainmail
+										i(165455),	-- Kaldorei Archer's Vambraces
+										i(165450),	-- Kaldorei Archer's Gauntlets
+										i(165454),	-- Kaldorei Archer's Belt
+										i(165452),	-- Kaldorei Archer's Legguards
+										i(165449),	-- Kaldorei Archer's Greaves
+									},
+								}),
+								filter(PLATE, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166565),	-- Wardenguard's Faceguard
+										i(165459),	-- Wardenguard's Greathelm
+										i(165462),	-- Wardenguard's Pauldrons
+										i(166555),	-- Wardenguard's Shoulderplates
+										i(165456),	-- Wardenguard's Chestplate
+										i(166578),	-- Wardenguard's Breastplate
+										i(165464),	-- Wardenguard's Wristguards
+										i(165458),	-- Wardenguard's Battlegloves
+										i(165463),	-- Wardenguard's Chain
+										i(165461),	-- Wardenguard's Legplates
+										i(165457),	-- Wardenguard's Warboots
+									},
+								}),
 							}),
-							n(BACK, {
-								["description"] = "Appearances from:\nDarkshore Rares/Treasures",
-								["groups"] = {
-									-- Alliance
-									i(166758),	-- Moonpriest's Cloak
-									i(166759),	-- Darkwood Sentinel's Drape
-									i(166760),	-- Kaldorei Archer's Greatcloak
-									i(166761),	-- Wardenguard's Drape
-									-- Horde
-									i(166762),	-- Plaguebringer's Drape
-									i(166763),	-- Deathstalker's Cloak
-									i(166764),	-- Blightguard's Cloak
-									i(166765),	-- Deathguard's Greatcloak
-								},
-							}),
-							n(ARMOR, {
-								["description"] = "Appearances from:\nDarkshore Rares/Treasures",
-								["groups"] = {
-									-- Alliance
-									i(166572),	-- Moonpriest's Visor
-									i(165435),	-- Moonpriest's Coronet
-									i(166558),	-- Moonpriest's Epaulets
-									i(165437),	-- Moonpriest's Mantle
-									i(166577),	-- Moonpriest's Garments
-									i(165460),	-- Moonpriest's Vestments
-									i(165439),	-- Moonpriest's Cuffs
-									i(165434),	-- Moonpriest's Handwraps
-									i(165438),	-- Moonpriest's Sash
-									i(165436),	-- Moonpriest's Legwraps
-									i(165433),	-- Moonpriest's Sandals
-									i(166571),	-- Darkwood Sentinel's Guise
-									i(165443),	-- Darkwood Sentinel's Cowl
-									i(166557),	-- Darkwood Sentinel's Shoulderpads
-									i(165445),	-- Darkwood Sentinel's Monnions
-									i(165440),	-- Darkwood Sentinel's Tunic
-									i(166580),	-- Darkwood Sentinel's Jerkin
-									i(165447),	-- Darkwood Sentinel's Armguards
-									i(165442),	-- Darkwood Sentinel's Grips
-									i(165446),	-- Darkwood Sentinel's Cinch
-									i(165444),	-- Darkwood Sentinel's Breeches
-									i(165441),	-- Darkwood Sentinel's Footpads
-									i(166566),	-- Kaldorei Archer's Coif
-									i(165451),	-- Kaldorei Archer's Hood
-									i(165453),	-- Kaldorei Archer's Shoulderguards
-									i(166556),	-- Kaldorei Archer's Spaulders
-									i(166579),	-- Kaldorei Archer's Hauberk
-									i(165448),	-- Kaldorei Archer's Chainmail
-									i(165455),	-- Kaldorei Archer's Vambraces
-									i(165450),	-- Kaldorei Archer's Gauntlets
-									i(165454),	-- Kaldorei Archer's Belt
-									i(165452),	-- Kaldorei Archer's Legguards
-									i(165449),	-- Kaldorei Archer's Greaves
-									i(166565),	-- Wardenguard's Faceguard
-									i(165459),	-- Wardenguard's Greathelm
-									i(165462),	-- Wardenguard's Pauldrons
-									i(166555),	-- Wardenguard's Shoulderplates
-									i(165456),	-- Wardenguard's Chestplate
-									i(166578),	-- Wardenguard's Breastplate
-									i(165464),	-- Wardenguard's Wristguards
-									i(165458),	-- Wardenguard's Battlegloves
-									i(165463),	-- Wardenguard's Chain
-									i(165461),	-- Wardenguard's Legplates
-									i(165457),	-- Wardenguard's Warboots
-									-- Horde
-									i(165467),	-- Plaguebringer's Cowl
-									i(166564),	-- Plaguebringer's Skullcap
-									i(166554),	-- Plaguebringer's Mantle
-									i(165469),	-- Plaguebringer's Shoulderguards
-									i(166573),	-- Plaguebringer's Vestments
-									i(165492),	-- Plaguebringer's Robe
-									i(165471),	-- Plaguebringer's Armwraps
-									i(165466),	-- Plaguebringer's Gloves
-									i(165470),	-- Plaguebringer's Cord
-									i(165468),	-- Plaguebringer's Legwraps
-									i(165465),	-- Plaguebringer's Boots
-									i(165475),	-- Deathstalker's Collar
-									i(166563),	-- Deathstalker's Mask
-									i(166553),	-- Deathstalker's Shoulderpads
-									i(165477),	-- Deathstalker's Shoulderguards
-									i(166576),	-- Deathstalker's Jerkin
-									i(165472),	-- Deathstalker's Chestpiece
-									i(165479),	-- Deathstalker's Bindings
-									i(165474),	-- Deathstalker's Grips
-									i(165478),	-- Deathstalker's Belt
-									i(165476),	-- Deathstalker's Leggings
-									i(165473),	-- Deathstalker's Treads
-									i(166562),	-- Blightguard's Casque
-									i(165483),	-- Blightguard's Helmet
-									i(166552),	-- Blightguard's Spaulders
-									i(165485),	-- Blightguard's Shoulderguards
-									i(166575),	-- Blightguard's Chainmail
-									i(165480),	-- Blightguard's Harness
-									i(165487),	-- Blightguard's Bracers
-									i(165486),	-- Blightguard's Girdle
-									i(165482),	-- Blightguard's Grasps
-									i(165484),	-- Blightguard's Legguards
-									i(165481),	-- Blightguard's Footguards
-									i(166561),	-- Deathguard's Casque
-									i(165491),	-- Deathguard's Helm
-									i(165494),	-- Deathguard's Pauldrons
-									i(166551),	-- Deathguard's Shoulderplates
-									i(166574),	-- Deathguard's Breastplate
-									i(165488),	-- Deathguard's Chestplate
-									i(165496),	-- Deathguard's Vambraces
-									i(165490),	-- Deathguard's Gauntlets
-									i(165495),	-- Deathguard's Waistplate
-									i(165493),	-- Deathguard's Greaves
-									i(165489),	-- Deathguard's Sabatons
-								},
+							n(FACTION_HEADER_HORDE, {
+								n(WEAPONS, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
+									["groups"] = {
+										i(165614),	-- Apothecary Spellstaff
+										i(165608),	-- Blightspreader's Crescent
+										i(165622),	-- Deathguard's Blade
+										i(166897),	-- Deathguard's Gavel
+										i(163528),	-- Deathguard's Gladius
+										i(166482),	-- Deathguard's Greatsword
+										i(165620),	-- Deathguard's Warshield
+										i(165611),	-- Deathstalker's Headcracker
+										i(165619),	-- Deathstalker's Warglaive
+										i(165621),	-- Deadshot Handcannon
+										i(165610),	-- Plaguebringer's Dirk
+										i(165613),	-- Plaguebringer's Halberd
+										i(166802),	-- Plaguebringer's Spellblade
+									},
+								}),
+								n(BACK, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166762),	-- Plaguebringer's Drape
+										i(166763),	-- Deathstalker's Cloak
+										i(166764),	-- Blightguard's Cloak
+										i(166765),	-- Deathguard's Greatcloak
+									},
+								}),
+								filter(CLOTH, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(165467),	-- Plaguebringer's Cowl
+										i(166564),	-- Plaguebringer's Skullcap
+										i(166554),	-- Plaguebringer's Mantle
+										i(165469),	-- Plaguebringer's Shoulderguards
+										i(166573),	-- Plaguebringer's Vestments
+										i(165492),	-- Plaguebringer's Robe
+										i(165471),	-- Plaguebringer's Armwraps
+										i(165466),	-- Plaguebringer's Gloves
+										i(165470),	-- Plaguebringer's Cord
+										i(165468),	-- Plaguebringer's Legwraps
+										i(165465),	-- Plaguebringer's Boots
+									},
+								}),
+								filter(LEATHER, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(165475),	-- Deathstalker's Collar
+										i(166563),	-- Deathstalker's Mask
+										i(166553),	-- Deathstalker's Shoulderpads
+										i(165477),	-- Deathstalker's Shoulderguards
+										i(166576),	-- Deathstalker's Jerkin
+										i(165472),	-- Deathstalker's Chestpiece
+										i(165479),	-- Deathstalker's Bindings
+										i(165474),	-- Deathstalker's Grips
+										i(165478),	-- Deathstalker's Belt
+										i(165476),	-- Deathstalker's Leggings
+										i(165473),	-- Deathstalker's Treads
+									},
+								}),
+								filter(MAIL, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166562),	-- Blightguard's Casque
+										i(165483),	-- Blightguard's Helmet
+										i(166552),	-- Blightguard's Spaulders
+										i(165485),	-- Blightguard's Shoulderguards
+										i(166575),	-- Blightguard's Chainmail
+										i(165480),	-- Blightguard's Harness
+										i(165487),	-- Blightguard's Bracers
+										i(165486),	-- Blightguard's Girdle
+										i(165482),	-- Blightguard's Grasps
+										i(165484),	-- Blightguard's Legguards
+										i(165481),	-- Blightguard's Footguards
+									},
+								}),
+								filter(PLATE, {
+									["description"] = "Appearances from:\nDarkshore Rares/Treasures",
+									["groups"] = {
+										i(166561),	-- Deathguard's Casque
+										i(165491),	-- Deathguard's Helm
+										i(165494),	-- Deathguard's Pauldrons
+										i(166551),	-- Deathguard's Shoulderplates
+										i(166574),	-- Deathguard's Breastplate
+										i(165488),	-- Deathguard's Chestplate
+										i(165496),	-- Deathguard's Vambraces
+										i(165490),	-- Deathguard's Gauntlets
+										i(165495),	-- Deathguard's Waistplate
+										i(165493),	-- Deathguard's Greaves
+										i(165489),	-- Deathguard's Sabatons
+									},
+								}),
 							}),
 							n(DECOR, sharedDataSelf({
 								["timeline"] = { ADDED_11_2_7 },
@@ -1340,70 +1416,27 @@ root(ROOTS.ExpansionFeatures,
 									["_drop"] = { "g" },	-- bad API data
 									["groups"] = {
 										i(166370, {	-- Sentinel Equipment Cache
-											["groups"] = bubbleDown({ ["modID"] = 23 }, {
-												un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
-												i(166898),	-- Sentinel's Blade
-												i(165628),	-- Sentinel's Branch
-												i(165637),	-- Sentinel's Bulwark
-												i(165624),	-- Sentinel's Crescent
-												i(165636),	-- Sentinel's Gavel
-												i(165632),	-- Sentinel's Greatblade
-												i(165627),	-- Sentinel's Halberd
-												i(165623),	-- Sentinel's Recurve
-												i(165629),	-- Sentinel's Spellblade
-												i(166483),	-- Sentinel's Tomahawk
-												i(165625),	-- Sentinel's Warhammer
-												i(166758),	-- Moonpriest's Cloak
-												i(166759),	-- Darkwood Sentinel's Drape
-												i(166760, {	-- Kaldorei Archer's Greatcloak
-													["description"] = "This might be only available as Mail class.",
+											["groups"] = {
+												n(WEAPONS, {
+													["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, WEAPONS),
 												}),
-												i(166761),	-- Wardenguard's Drape
-												i(166572),	-- Moonpriest's Visor
-												i(165435),	-- Moonpriest's Coronet
-												i(166558),	-- Moonpriest's Epaulets
-												i(165437),	-- Moonpriest's Mantle
-												i(166577),	-- Moonpriest's Garments
-												i(165460),	-- Moonpriest's Vestments
-												i(165439),	-- Moonpriest's Cuffs
-												i(165434),	-- Moonpriest's Handwraps
-												i(165438),	-- Moonpriest's Sash
-												i(165436),	-- Moonpriest's Legwraps
-												i(165433),	-- Moonpriest's Sandals
-												i(166571),	-- Darkwood Sentinel's Guise
-												i(165443),	-- Darkwood Sentinel's Cowl
-												i(166557),	-- Darkwood Sentinel's Shoulderpads
-												i(165445),	-- Darkwood Sentinel's Monnions
-												i(165440),	-- Darkwood Sentinel's Tunic
-												i(166580),	-- Darkwood Sentinel's Jerkin
-												i(165447),	-- Darkwood Sentinel's Armguards
-												i(165442),	-- Darkwood Sentinel's Grips
-												i(165446),	-- Darkwood Sentinel's Cinch
-												i(165444),	-- Darkwood Sentinel's Breeches
-												i(165441),	-- Darkwood Sentinel's Footpads
-												i(166566),	-- Kaldorei Archer's Coif
-												i(165451),	-- Kaldorei Archer's Hood
-												i(165453),	-- Kaldorei Archer's Shoulderguards
-												i(166556),	-- Kaldorei Archer's Spaulders
-												i(166579),	-- Kaldorei Archer's Hauberk
-												i(165448),	-- Kaldorei Archer's Chainmail
-												i(165455),	-- Kaldorei Archer's Vambraces
-												i(165450),	-- Kaldorei Archer's Gauntlets
-												i(165454),	-- Kaldorei Archer's Belt
-												i(165452),	-- Kaldorei Archer's Legguards
-												i(165449),	-- Kaldorei Archer's Greaves
-												i(166565),	-- Wardenguard's Faceguard
-												i(165459),	-- Wardenguard's Greathelm
-												i(165462),	-- Wardenguard's Pauldrons
-												i(166555),	-- Wardenguard's Shoulderplates
-												i(165456),	-- Wardenguard's Chestplate
-												i(166578),	-- Wardenguard's Breastplate
-												i(165464),	-- Wardenguard's Wristguards
-												i(165458),	-- Wardenguard's Battlegloves
-												i(165463),	-- Wardenguard's Chain
-												i(165461),	-- Wardenguard's Legplates
-												i(165457),	-- Wardenguard's Warboots
-											}),
+												n(BACK, {
+													["description"] = "Each cloak might only be available to classes that wear its matching armor type.",
+													["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, BACK),
+												}),
+												filter(CLOTH, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, CLOTH),
+												}),
+												filter(LEATHER, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, LEATHER),
+												}),
+												filter(MAIL, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, MAIL),
+												}),
+												filter(PLATE, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, PLATE),
+												}),
+											},
 										}),
 									},
 								}),
@@ -1415,72 +1448,85 @@ root(ROOTS.ExpansionFeatures,
 										i(166370, {	-- Sentinel Equipment Cache
 											["groups"] = bubbleDown({["modID"] = 6}, {
 												-- ALLIANCE SET --
-												un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
-												i(166898),	-- Sentinel's Blade
-												i(165628),	-- Sentinel's Branch
-												i(165637),	-- Sentinel's Bulwark
-												i(165624),	-- Sentinel's Crescent
-												i(165636),	-- Sentinel's Gavel
-												i(165632),	-- Sentinel's Greatblade
-												i(165627),	-- Sentinel's Halberd
-												i(165623),	-- Sentinel's Recurve
-												i(165629),	-- Sentinel's Spellblade
-												i(166483),	-- Sentinel's Tomahawk
-												i(165625),	-- Sentinel's Warhammer
-												i(166758),	-- Moonpriest's Cloak
-												i(166759, {	-- Darkwood Sentinel's Drape
-													["description"] = "This might be only available as Leather class.",
+												n(WEAPONS, {
+													un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
+													i(166898),	-- Sentinel's Blade
+													i(165628),	-- Sentinel's Branch
+													i(165637),	-- Sentinel's Bulwark
+													i(165624),	-- Sentinel's Crescent
+													i(165636),	-- Sentinel's Gavel
+													i(165632),	-- Sentinel's Greatblade
+													i(165627),	-- Sentinel's Halberd
+													i(165635),	-- Sentinel's Moonglaive
+													i(165623),	-- Sentinel's Recurve
+													i(165629),	-- Sentinel's Spellblade
+													i(166483),	-- Sentinel's Tomahawk
+													i(165625),	-- Sentinel's Warhammer
 												}),
-												i(166760, {	-- Kaldorei Archer's Greatcloak
-													["description"] = "This might be only available as Mail class.",
+												n(BACK, {
+													i(166758),	-- Moonpriest's Cloak
+													i(166759, {	-- Darkwood Sentinel's Drape
+														["description"] = "This might be only available as Leather class.",
+													}),
+													i(166760, {	-- Kaldorei Archer's Greatcloak
+														["description"] = "This might be only available as Mail class.",
+													}),
+													i(166761, {	-- Wardenguard's Drape
+														["description"] = "This might be only available as Plate class.",
+													}),
 												}),
-												i(166761, {	-- Wardenguard's Drape
-													["description"] = "This might be only available as Plate class.",
+												filter(CLOTH, {
+													i(166572),	-- Moonpriest's Visor
+													i(165435),	-- Moonpriest's Coronet
+													i(166558),	-- Moonpriest's Epaulets
+													i(165437),	-- Moonpriest's Mantle
+													i(166577),	-- Moonpriest's Garments
+													i(165460),	-- Moonpriest's Vestments
+													i(165439),	-- Moonpriest's Cuffs
+													i(165434),	-- Moonpriest's Handwraps
+													i(165438),	-- Moonpriest's Sash
+													i(165436),	-- Moonpriest's Legwraps
+													i(165433),	-- Moonpriest's Sandals
 												}),
-												i(166572),	-- Moonpriest's Visor
-												i(165435),	-- Moonpriest's Coronet
-												i(166558),	-- Moonpriest's Epaulets
-												i(165437),	-- Moonpriest's Mantle
-												i(166577),	-- Moonpriest's Garments
-												i(165460),	-- Moonpriest's Vestments
-												i(165439),	-- Moonpriest's Cuffs
-												i(165434),	-- Moonpriest's Handwraps
-												i(165438),	-- Moonpriest's Sash
-												i(165436),	-- Moonpriest's Legwraps
-												i(165433),	-- Moonpriest's Sandals
-												i(166571),	-- Darkwood Sentinel's Guise
-												i(165443),	-- Darkwood Sentinel's Cowl
-												i(166557),	-- Darkwood Sentinel's Shoulderpads
-												i(165445),	-- Darkwood Sentinel's Monnions
-												i(165440),	-- Darkwood Sentinel's Tunic
-												i(166580),	-- Darkwood Sentinel's Jerkin
-												i(165447),	-- Darkwood Sentinel's Armguards
-												i(165442),	-- Darkwood Sentinel's Grips
-												i(165446),	-- Darkwood Sentinel's Cinch
-												i(165444),	-- Darkwood Sentinel's Breeches
-												i(165441),	-- Darkwood Sentinel's Footpads
-												i(166566),	-- Kaldorei Archer's Coif
-												i(165451),	-- Kaldorei Archer's Hood
-												i(165453),	-- Kaldorei Archer's Shoulderguards
-												i(166556),	-- Kaldorei Archer's Spaulders
-												i(166579),	-- Kaldorei Archer's Hauberk
-												i(165448),	-- Kaldorei Archer's Chainmail
-												i(165455),	-- Kaldorei Archer's Vambraces
-												i(165450),	-- Kaldorei Archer's Gauntlets
-												i(165454),	-- Kaldorei Archer's Belt
-												i(165452),	-- Kaldorei Archer's Legguards
-												i(165449),	-- Kaldorei Archer's Greaves
-												i(166565),	-- Wardenguard's Faceguard
-												i(165459),	-- Wardenguard's Greathelm
-												i(165462),	-- Wardenguard's Pauldrons
-												i(166555),	-- Wardenguard's Shoulderplates
-												i(165456),	-- Wardenguard's Chestplate
-												i(166578),	-- Wardenguard's Breastplate
-												i(165464),	-- Wardenguard's Wristguards
-												i(165458),	-- Wardenguard's Battlegloves
-												i(165463),	-- Wardenguard's Chain
-												i(165461),	-- Wardenguard's Legplates
-												i(165457),	-- Wardenguard's Warboots
+												filter(LEATHER, {
+													i(166571),	-- Darkwood Sentinel's Guise
+													i(165443),	-- Darkwood Sentinel's Cowl
+													i(166557),	-- Darkwood Sentinel's Shoulderpads
+													i(165445),	-- Darkwood Sentinel's Monnions
+													i(165440),	-- Darkwood Sentinel's Tunic
+													i(166580),	-- Darkwood Sentinel's Jerkin
+													i(165447),	-- Darkwood Sentinel's Armguards
+													i(165442),	-- Darkwood Sentinel's Grips
+													i(165446),	-- Darkwood Sentinel's Cinch
+													i(165444),	-- Darkwood Sentinel's Breeches
+													i(165441),	-- Darkwood Sentinel's Footpads
+												}),
+												filter(MAIL, {
+													i(166566),	-- Kaldorei Archer's Coif
+													i(165451),	-- Kaldorei Archer's Hood
+													i(165453),	-- Kaldorei Archer's Shoulderguards
+													i(166556),	-- Kaldorei Archer's Spaulders
+													i(166579),	-- Kaldorei Archer's Hauberk
+													i(165448),	-- Kaldorei Archer's Chainmail
+													i(165455),	-- Kaldorei Archer's Vambraces
+													i(165450),	-- Kaldorei Archer's Gauntlets
+													i(165454),	-- Kaldorei Archer's Belt
+													i(165452),	-- Kaldorei Archer's Legguards
+													i(165449),	-- Kaldorei Archer's Greaves
+												}),
+												filter(PLATE, {
+													i(166565),	-- Wardenguard's Faceguard
+													i(165459),	-- Wardenguard's Greathelm
+													i(165462),	-- Wardenguard's Pauldrons
+													i(166555),	-- Wardenguard's Shoulderplates
+													i(165456),	-- Wardenguard's Chestplate
+													i(166578),	-- Wardenguard's Breastplate
+													i(165464),	-- Wardenguard's Wristguards
+													i(165458),	-- Wardenguard's Battlegloves
+													i(165463),	-- Wardenguard's Chain
+													i(165461),	-- Wardenguard's Legplates
+													i(165457),	-- Wardenguard's Warboots
+												}),
 											}),
 										}),
 									},
@@ -1628,78 +1674,27 @@ root(ROOTS.ExpansionFeatures,
 									["coord"] = { 52.9, 94.3, DAZARALOR },
 									["groups"] = {
 										i(166369, {	-- Deathguard Equipment Cache
-											["groups"] = bubbleDown({ ["modID"] = 23 }, {
-												i(165614),	-- Apothecary Spellstaff
-												i(165608),	-- Blightspreader's Crescent
-												i(165622),	-- Deathguard's Blade
-												i(166897),	-- Deathguard's Gavel
-												i(163528),	-- Deathguard's Gladius
-												i(166482),	-- Deathguard's Greatsword
-												i(165620),	-- Deathguard's Warshield
-												i(165611),	-- Deathstalker's Headcracker
-												i(165619),	-- Deathstalker's Warglaive
-												i(165621),	-- Deadshot Handcannon
-												i(165610),	-- Plaguebringer's Dirk
-												i(165613),	-- Plaguebringer's Halberd
-												i(166802),	-- Plaguebringer's Spellblade
-												i(166762, {	-- Plaguebringer's Drape
-													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
-													["description"] = "This might be only available as Cloth class.",
+											["groups"] = {
+												n(WEAPONS, {
+													["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, WEAPONS),
 												}),
-												i(166763, {	-- Deathstalker's Cloak
-													["description"] = "This might be only available as Leather class.",
+												n(BACK, {
+													["description"] = "Each cloak might only be available to classes that wear its matching armor type.",
+													["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, BACK),
 												}),
-												i(166764, {	-- Blightguard's Cloak
-													["description"] = "This might be only available as Mail class.",
+												filter(CLOTH, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, CLOTH),
 												}),
-												i(166765, {	-- Deathguard's Greatcloak
-													["description"] = "This might be only available as Plate class.",
+												filter(LEATHER, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, LEATHER),
 												}),
-												i(165467),	-- Plaguebringer's Cowl
-												i(166564),	-- Plaguebringer's Skullcap
-												i(166554),	-- Plaguebringer's Mantle
-												i(165469),	-- Plaguebringer's Shoulderguards
-												i(166573),	-- Plaguebringer's Vestments
-												i(165492),	-- Plaguebringer's Robe
-												i(165471),	-- Plaguebringer's Armwraps
-												i(165466),	-- Plaguebringer's Gloves
-												i(165470),	-- Plaguebringer's Cord
-												i(165468),	-- Plaguebringer's Legwraps
-												i(165465),	-- Plaguebringer's Boots
-												i(165475),	-- Deathstalker's Collar
-												i(166563),	-- Deathstalker's Mask
-												i(166553),	-- Deathstalker's Shoulderpads
-												i(165477),	-- Deathstalker's Shoulderguards
-												i(166576),	-- Deathstalker's Jerkin
-												i(165472),	-- Deathstalker's Chestpiece
-												i(165479),	-- Deathstalker's Bindings
-												i(165474),	-- Deathstalker's Grips
-												i(165478),	-- Deathstalker's Belt
-												i(165476),	-- Deathstalker's Leggings
-												i(165473),	-- Deathstalker's Treads
-												i(166562),	-- Blightguard's Casque
-												i(165483),	-- Blightguard's Helmet
-												i(166552),	-- Blightguard's Spaulders
-												i(165485),	-- Blightguard's Shoulderguards
-												i(166575),	-- Blightguard's Chainmail
-												i(165480),	-- Blightguard's Harness
-												i(165487),	-- Blightguard's Bracers
-												i(165486),	-- Blightguard's Girdle
-												i(165482),	-- Blightguard's Grasps
-												i(165484),	-- Blightguard's Legguards
-												i(165481),	-- Blightguard's Footguards
-												i(166561),	-- Deathguard's Casque
-												i(165491),	-- Deathguard's Helm
-												i(165494),	-- Deathguard's Pauldrons
-												i(166551),	-- Deathguard's Shoulderplates
-												i(166574),	-- Deathguard's Breastplate
-												i(165488),	-- Deathguard's Chestplate
-												i(165496),	-- Deathguard's Vambraces
-												i(165490),	-- Deathguard's Gauntlets
-												i(165495),	-- Deathguard's Waistplate
-												i(165493),	-- Deathguard's Greaves
-												i(165489),	-- Deathguard's Sabatons
-											}),
+												filter(MAIL, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, MAIL),
+												}),
+												filter(PLATE, {
+													["sym"] = GenerateArmorTypeRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, PLATE),
+												}),
+											},
 										}),
 									},
 								}),
@@ -1710,76 +1705,88 @@ root(ROOTS.ExpansionFeatures,
 										i(166369, {	-- Deathguard Equipment Cache
 											["groups"] = bubbleDown({["modID"] = 6}, {
 															-- HORDE SET --
-												i(165614),	-- Apothecary Spellstaff
-												i(165608),	-- Blightspreader's Crescent
-												i(165622),	-- Deathguard's Blade
-												i(166897),	-- Deathguard's Gavel
-												i(163528),	-- Deathguard's Gladius
-												i(166482),	-- Deathguard's Greatsword
-												i(165620),	-- Deathguard's Warshield
-												i(165611),	-- Deathstalker's Headcracker
-												i(165619),	-- Deathstalker's Warglaive
-												i(165621),	-- Deadshot Handcannon
-												i(165610),	-- Plaguebringer's Dirk
-												i(165613),	-- Plaguebringer's Halberd
-												i(166802),	-- Plaguebringer's Spellblade
-												i(166762, {	-- Plaguebringer's Drape
-													-- ["classes"] = { MAGE, PRIEST, WARLOCK },
-													["description"] = "This might be only available as Cloth class.",
+												n(WEAPONS, {
+													i(165614),	-- Apothecary Spellstaff
+													i(165608),	-- Blightspreader's Crescent
+													i(165622),	-- Deathguard's Blade
+													i(166897),	-- Deathguard's Gavel
+													i(163528),	-- Deathguard's Gladius
+													i(166482),	-- Deathguard's Greatsword
+													i(165620),	-- Deathguard's Warshield
+													i(165611),	-- Deathstalker's Headcracker
+													i(165619),	-- Deathstalker's Warglaive
+													i(165621),	-- Deadshot Handcannon
+													i(165610),	-- Plaguebringer's Dirk
+													i(165613),	-- Plaguebringer's Halberd
+													i(166802),	-- Plaguebringer's Spellblade
 												}),
-												i(166763, {	-- Deathstalker's Cloak
-													["description"] = "This might be only available as Leather class.",
+												n(BACK, {
+													i(166762, {	-- Plaguebringer's Drape
+														-- ["classes"] = { MAGE, PRIEST, WARLOCK },
+														["description"] = "This might be only available as Cloth class.",
+													}),
+													i(166763, {	-- Deathstalker's Cloak
+														["description"] = "This might be only available as Leather class.",
+													}),
+													i(166764, {	-- Blightguard's Cloak
+														["description"] = "This might be only available as Mail class.",
+													}),
+													i(166765, {	-- Deathguard's Greatcloak
+														["description"] = "This might be only available as Plate class.",
+													}),
 												}),
-												i(166764, {	-- Blightguard's Cloak
-													["description"] = "This might be only available as Mail class.",
+												filter(CLOTH, {
+													i(165467),	-- Plaguebringer's Cowl
+													i(166564),	-- Plaguebringer's Skullcap
+													i(166554),	-- Plaguebringer's Mantle
+													i(165469),	-- Plaguebringer's Shoulderguards
+													i(166573),	-- Plaguebringer's Vestments
+													i(165492),	-- Plaguebringer's Robe
+													i(165471),	-- Plaguebringer's Armwraps
+													i(165466),	-- Plaguebringer's Gloves
+													i(165470),	-- Plaguebringer's Cord
+													i(165468),	-- Plaguebringer's Legwraps
+													i(165465),	-- Plaguebringer's Boots
 												}),
-												i(166765, {	-- Deathguard's Greatcloak
-													["description"] = "This might be only available as Plate class.",
+												filter(LEATHER, {
+													i(165475),	-- Deathstalker's Collar
+													i(166563),	-- Deathstalker's Mask
+													i(166553),	-- Deathstalker's Shoulderpads
+													i(165477),	-- Deathstalker's Shoulderguards
+													i(166576),	-- Deathstalker's Jerkin
+													i(165472),	-- Deathstalker's Chestpiece
+													i(165479),	-- Deathstalker's Bindings
+													i(165474),	-- Deathstalker's Grips
+													i(165478),	-- Deathstalker's Belt
+													i(165476),	-- Deathstalker's Leggings
+													i(165473),	-- Deathstalker's Treads
 												}),
-												i(165467),	-- Plaguebringer's Cowl
-												i(166564),	-- Plaguebringer's Skullcap
-												i(166554),	-- Plaguebringer's Mantle
-												i(165469),	-- Plaguebringer's Shoulderguards
-												i(166573),	-- Plaguebringer's Vestments
-												i(165492),	-- Plaguebringer's Robe
-												i(165471),	-- Plaguebringer's Armwraps
-												i(165466),	-- Plaguebringer's Gloves
-												i(165470),	-- Plaguebringer's Cord
-												i(165468),	-- Plaguebringer's Legwraps
-												i(165465),	-- Plaguebringer's Boots
-												i(165475),	-- Deathstalker's Collar
-												i(166563),	-- Deathstalker's Mask
-												i(166553),	-- Deathstalker's Shoulderpads
-												i(165477),	-- Deathstalker's Shoulderguards
-												i(166576),	-- Deathstalker's Jerkin
-												i(165472),	-- Deathstalker's Chestpiece
-												i(165479),	-- Deathstalker's Bindings
-												i(165474),	-- Deathstalker's Grips
-												i(165478),	-- Deathstalker's Belt
-												i(165476),	-- Deathstalker's Leggings
-												i(165473),	-- Deathstalker's Treads
-												i(166562),	-- Blightguard's Casque
-												i(165483),	-- Blightguard's Helmet
-												i(166552),	-- Blightguard's Spaulders
-												i(165485),	-- Blightguard's Shoulderguards
-												i(166575),	-- Blightguard's Chainmail
-												i(165480),	-- Blightguard's Harness
-												i(165487),	-- Blightguard's Bracers
-												i(165486),	-- Blightguard's Girdle
-												i(165482),	-- Blightguard's Grasps
-												i(165484),	-- Blightguard's Legguards
-												i(165481),	-- Blightguard's Footguards
-												i(166561),	-- Deathguard's Casque
-												i(165491),	-- Deathguard's Helm
-												i(165494),	-- Deathguard's Pauldrons
-												i(166551),	-- Deathguard's Shoulderplates
-												i(166574),	-- Deathguard's Breastplate
-												i(165488),	-- Deathguard's Chestplate
-												i(165496),	-- Deathguard's Vambraces
-												i(165490),	-- Deathguard's Gauntlets
-												i(165495),	-- Deathguard's Waistplate
-												i(165493),	-- Deathguard's Greaves
-												i(165489),	-- Deathguard's Sabatons
+												filter(MAIL, {
+													i(166562),	-- Blightguard's Casque
+													i(165483),	-- Blightguard's Helmet
+													i(166552),	-- Blightguard's Spaulders
+													i(165485),	-- Blightguard's Shoulderguards
+													i(166575),	-- Blightguard's Chainmail
+													i(165480),	-- Blightguard's Harness
+													i(165487),	-- Blightguard's Bracers
+													i(165486),	-- Blightguard's Girdle
+													i(165482),	-- Blightguard's Grasps
+													i(165484),	-- Blightguard's Legguards
+													i(165481),	-- Blightguard's Footguards
+												}),
+												filter(PLATE, {
+													i(166561),	-- Deathguard's Casque
+													i(165491),	-- Deathguard's Helm
+													i(165494),	-- Deathguard's Pauldrons
+													i(166551),	-- Deathguard's Shoulderplates
+													i(166574),	-- Deathguard's Breastplate
+													i(165488),	-- Deathguard's Chestplate
+													i(165496),	-- Deathguard's Vambraces
+													i(165490),	-- Deathguard's Gauntlets
+													i(165495),	-- Deathguard's Waistplate
+													i(165493),	-- Deathguard's Greaves
+													i(165489),	-- Deathguard's Sabatons
+												}),
 											}),
 										}),
 									},
@@ -1808,130 +1815,152 @@ root(ROOTS.ExpansionFeatures,
 
 								["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 								["groups"] = bubbleDown({["modID"] = 3}, {
-									-- ALLIANCE SET --
-									un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
-									i(166898),	-- Sentinel's Blade
-									i(165628),	-- Sentinel's Branch
-									i(165637),	-- Sentinel's Bulwark
-									i(165624),	-- Sentinel's Crescent
-									i(165636),	-- Sentinel's Gavel
-									i(165632),	-- Sentinel's Greatblade
-									i(165627),	-- Sentinel's Halberd
-									i(165635);	-- Sentinel's Moonglaive
-									i(165623),	-- Sentinel's Recurve
-									i(165629),	-- Sentinel's Spellblade
-									i(166483),	-- Sentinel's Tomahawk
-									i(165625),	-- Sentinel's Warhammer
-									i(166758),	-- Moonpriest's Cloak
-									i(166759),	-- Darkwood Sentinel's Drape
-									i(166760),	-- Kaldorei Archer's Greatcloak
-									i(166761),	-- Wardenguard's Drape
-									i(166572),	-- Moonpriest's Visor
-									i(165435),	-- Moonpriest's Coronet
-									i(166558),	-- Moonpriest's Epaulets
-									i(165437),	-- Moonpriest's Mantle
-									i(166577),	-- Moonpriest's Garments
-									i(165460),	-- Moonpriest's Vestments
-									i(165439),	-- Moonpriest's Cuffs
-									i(165434),	-- Moonpriest's Handwraps
-									i(165438),	-- Moonpriest's Sash
-									i(165436),	-- Moonpriest's Legwraps
-									i(165433),	-- Moonpriest's Sandals
-									i(166571),	-- Darkwood Sentinel's Guise
-									i(165443),	-- Darkwood Sentinel's Cowl
-									i(166557),	-- Darkwood Sentinel's Shoulderpads
-									i(165445),	-- Darkwood Sentinel's Monnions
-									i(165440),	-- Darkwood Sentinel's Tunic
-									i(166580),	-- Darkwood Sentinel's Jerkin
-									i(165447),	-- Darkwood Sentinel's Armguards
-									i(165442),	-- Darkwood Sentinel's Grips
-									i(165446),	-- Darkwood Sentinel's Cinch
-									i(165444),	-- Darkwood Sentinel's Breeches
-									i(165441),	-- Darkwood Sentinel's Footpads
-									i(166566),	-- Kaldorei Archer's Coif
-									i(165451),	-- Kaldorei Archer's Hood
-									i(165453),	-- Kaldorei Archer's Shoulderguards
-									i(166556),	-- Kaldorei Archer's Spaulders
-									i(166579),	-- Kaldorei Archer's Hauberk
-									i(165448),	-- Kaldorei Archer's Chainmail
-									i(165455),	-- Kaldorei Archer's Vambraces
-									i(165450),	-- Kaldorei Archer's Gauntlets
-									i(165454),	-- Kaldorei Archer's Belt
-									i(165452),	-- Kaldorei Archer's Legguards
-									i(165449),	-- Kaldorei Archer's Greaves
-									i(166565),	-- Wardenguard's Faceguard
-									i(165459),	-- Wardenguard's Greathelm
-									i(165462),	-- Wardenguard's Pauldrons
-									i(166555),	-- Wardenguard's Shoulderplates
-									i(165456),	-- Wardenguard's Chestplate
-									i(166578),	-- Wardenguard's Breastplate
-									i(165464),	-- Wardenguard's Wristguards
-									i(165458),	-- Wardenguard's Battlegloves
-									i(165463),	-- Wardenguard's Chain
-									i(165461),	-- Wardenguard's Legplates
-									i(165457),	-- Wardenguard's Warboots
-									-- HORDE SET --
-									i(165614),	-- Apothecary Spellstaff
-									i(165608),	-- Blightspreader's Crescent
-									i(165622),	-- Deathguard's Blade
-									i(166897),	-- Deathguard's Gavel
-									i(163528),	-- Deathguard's Gladius
-									i(166482),	-- Deathguard's Greatsword
-									i(165620),	-- Deathguard's Warshield
-									i(165611),	-- Deathstalker's Headcracker
-									i(165619),	-- Deathstalker's Warglaive
-									i(165621),	-- Deadshot Handcannon
-									i(165610),	-- Plaguebringer's Dirk
-									i(165613),	-- Plaguebringer's Halberd
-									i(166802),	-- Plaguebringer's Spellblade
-									i(166762),	-- Plaguebringer's Drape
-									i(166763),	-- Deathstalker's Cloak
-									i(166764),	-- Blightguard's Cloak
-									i(166765),	-- Deathguard's Greatcloak
-									i(165467),	-- Plaguebringer's Cowl
-									i(166564),	-- Plaguebringer's Skullcap
-									i(166554),	-- Plaguebringer's Mantle
-									i(165469),	-- Plaguebringer's Shoulderguards
-									i(166573),	-- Plaguebringer's Vestments
-									i(165492),	-- Plaguebringer's Robe
-									i(165471),	-- Plaguebringer's Armwraps
-									i(165466),	-- Plaguebringer's Gloves
-									i(165470),	-- Plaguebringer's Cord
-									i(165468),	-- Plaguebringer's Legwraps
-									i(165465),	-- Plaguebringer's Boots
-									i(165475),	-- Deathstalker's Collar
-									i(166563),	-- Deathstalker's Mask
-									i(166553),	-- Deathstalker's Shoulderpads
-									i(165477),	-- Deathstalker's Shoulderguards
-									i(166576),	-- Deathstalker's Jerkin
-									i(165472),	-- Deathstalker's Chestpiece
-									i(165479),	-- Deathstalker's Bindings
-									i(165474),	-- Deathstalker's Grips
-									i(165478),	-- Deathstalker's Belt
-									i(165476),	-- Deathstalker's Leggings
-									i(165473),	-- Deathstalker's Treads
-									i(166562),	-- Blightguard's Casque
-									i(165483),	-- Blightguard's Helmet
-									i(166552),	-- Blightguard's Spaulders
-									i(165485),	-- Blightguard's Shoulderguards
-									i(166575),	-- Blightguard's Chainmail
-									i(165480),	-- Blightguard's Harness
-									i(165487),	-- Blightguard's Bracers
-									i(165486),	-- Blightguard's Girdle
-									i(165482),	-- Blightguard's Grasps
-									i(165484),	-- Blightguard's Legguards
-									i(165481),	-- Blightguard's Footguards
-									i(166561),	-- Deathguard's Casque
-									i(165491),	-- Deathguard's Helm
-									i(165494),	-- Deathguard's Pauldrons
-									i(166551),	-- Deathguard's Shoulderplates
-									i(166574),	-- Deathguard's Breastplate
-									i(165488),	-- Deathguard's Chestplate
-									i(165496),	-- Deathguard's Vambraces
-									i(165490),	-- Deathguard's Gauntlets
-									i(165495),	-- Deathguard's Waistplate
-									i(165493),	-- Deathguard's Greaves
-									i(165489),	-- Deathguard's Sabatons
+									n(WEAPONS, {
+										-- Alliance
+										un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
+										i(166898),	-- Sentinel's Blade
+										i(165628),	-- Sentinel's Branch
+										i(165637),	-- Sentinel's Bulwark
+										i(165624),	-- Sentinel's Crescent
+										i(165636),	-- Sentinel's Gavel
+										i(165632),	-- Sentinel's Greatblade
+										i(165627),	-- Sentinel's Halberd
+										i(165635);	-- Sentinel's Moonglaive
+										i(165623),	-- Sentinel's Recurve
+										i(165629),	-- Sentinel's Spellblade
+										i(166483),	-- Sentinel's Tomahawk
+										i(165625),	-- Sentinel's Warhammer
+										-- Horde
+										i(165614),	-- Apothecary Spellstaff
+										i(165608),	-- Blightspreader's Crescent
+										i(165622),	-- Deathguard's Blade
+										i(166897),	-- Deathguard's Gavel
+										i(163528),	-- Deathguard's Gladius
+										i(166482),	-- Deathguard's Greatsword
+										i(165620),	-- Deathguard's Warshield
+										i(165611),	-- Deathstalker's Headcracker
+										i(165619),	-- Deathstalker's Warglaive
+										i(165621),	-- Deadshot Handcannon
+										i(165610),	-- Plaguebringer's Dirk
+										i(165613),	-- Plaguebringer's Halberd
+										i(166802),	-- Plaguebringer's Spellblade
+									}),
+									n(BACK, {
+										-- Alliance
+										i(166758),	-- Moonpriest's Cloak
+										i(166759),	-- Darkwood Sentinel's Drape
+										i(166760),	-- Kaldorei Archer's Greatcloak
+										i(166761),	-- Wardenguard's Drape
+										-- Horde
+										i(166762),	-- Plaguebringer's Drape
+										i(166763),	-- Deathstalker's Cloak
+										i(166764),	-- Blightguard's Cloak
+										i(166765),	-- Deathguard's Greatcloak
+									}),
+									filter(CLOTH, {
+										-- Alliance
+										i(166572),	-- Moonpriest's Visor
+										i(165435),	-- Moonpriest's Coronet
+										i(166558),	-- Moonpriest's Epaulets
+										i(165437),	-- Moonpriest's Mantle
+										i(166577),	-- Moonpriest's Garments
+										i(165460),	-- Moonpriest's Vestments
+										i(165439),	-- Moonpriest's Cuffs
+										i(165434),	-- Moonpriest's Handwraps
+										i(165438),	-- Moonpriest's Sash
+										i(165436),	-- Moonpriest's Legwraps
+										i(165433),	-- Moonpriest's Sandals
+										-- Horde
+										i(165467),	-- Plaguebringer's Cowl
+										i(166564),	-- Plaguebringer's Skullcap
+										i(166554),	-- Plaguebringer's Mantle
+										i(165469),	-- Plaguebringer's Shoulderguards
+										i(166573),	-- Plaguebringer's Vestments
+										i(165492),	-- Plaguebringer's Robe
+										i(165471),	-- Plaguebringer's Armwraps
+										i(165466),	-- Plaguebringer's Gloves
+										i(165470),	-- Plaguebringer's Cord
+										i(165468),	-- Plaguebringer's Legwraps
+										i(165465),	-- Plaguebringer's Boots
+									}),
+									filter(LEATHER, {
+										-- Alliance
+										i(166571),	-- Darkwood Sentinel's Guise
+										i(165443),	-- Darkwood Sentinel's Cowl
+										i(166557),	-- Darkwood Sentinel's Shoulderpads
+										i(165445),	-- Darkwood Sentinel's Monnions
+										i(165440),	-- Darkwood Sentinel's Tunic
+										i(166580),	-- Darkwood Sentinel's Jerkin
+										i(165447),	-- Darkwood Sentinel's Armguards
+										i(165442),	-- Darkwood Sentinel's Grips
+										i(165446),	-- Darkwood Sentinel's Cinch
+										i(165444),	-- Darkwood Sentinel's Breeches
+										i(165441),	-- Darkwood Sentinel's Footpads
+										-- Horde
+										i(165475),	-- Deathstalker's Collar
+										i(166563),	-- Deathstalker's Mask
+										i(166553),	-- Deathstalker's Shoulderpads
+										i(165477),	-- Deathstalker's Shoulderguards
+										i(166576),	-- Deathstalker's Jerkin
+										i(165472),	-- Deathstalker's Chestpiece
+										i(165479),	-- Deathstalker's Bindings
+										i(165474),	-- Deathstalker's Grips
+										i(165478),	-- Deathstalker's Belt
+										i(165476),	-- Deathstalker's Leggings
+										i(165473),	-- Deathstalker's Treads
+									}),
+									filter(MAIL, {
+										-- Alliance
+										i(166566),	-- Kaldorei Archer's Coif
+										i(165451),	-- Kaldorei Archer's Hood
+										i(165453),	-- Kaldorei Archer's Shoulderguards
+										i(166556),	-- Kaldorei Archer's Spaulders
+										i(166579),	-- Kaldorei Archer's Hauberk
+										i(165448),	-- Kaldorei Archer's Chainmail
+										i(165455),	-- Kaldorei Archer's Vambraces
+										i(165450),	-- Kaldorei Archer's Gauntlets
+										i(165454),	-- Kaldorei Archer's Belt
+										i(165452),	-- Kaldorei Archer's Legguards
+										i(165449),	-- Kaldorei Archer's Greaves
+										-- Horde
+										i(166562),	-- Blightguard's Casque
+										i(165483),	-- Blightguard's Helmet
+										i(166552),	-- Blightguard's Spaulders
+										i(165485),	-- Blightguard's Shoulderguards
+										i(166575),	-- Blightguard's Chainmail
+										i(165480),	-- Blightguard's Harness
+										i(165487),	-- Blightguard's Bracers
+										i(165486),	-- Blightguard's Girdle
+										i(165482),	-- Blightguard's Grasps
+										i(165484),	-- Blightguard's Legguards
+										i(165481),	-- Blightguard's Footguards
+									}),
+									filter(PLATE, {
+										-- Alliance
+										i(166565),	-- Wardenguard's Faceguard
+										i(165459),	-- Wardenguard's Greathelm
+										i(165462),	-- Wardenguard's Pauldrons
+										i(166555),	-- Wardenguard's Shoulderplates
+										i(165456),	-- Wardenguard's Chestplate
+										i(166578),	-- Wardenguard's Breastplate
+										i(165464),	-- Wardenguard's Wristguards
+										i(165458),	-- Wardenguard's Battlegloves
+										i(165463),	-- Wardenguard's Chain
+										i(165461),	-- Wardenguard's Legplates
+										i(165457),	-- Wardenguard's Warboots
+										-- Horde
+										i(166561),	-- Deathguard's Casque
+										i(165491),	-- Deathguard's Helm
+										i(165494),	-- Deathguard's Pauldrons
+										i(166551),	-- Deathguard's Shoulderplates
+										i(166574),	-- Deathguard's Breastplate
+										i(165488),	-- Deathguard's Chestplate
+										i(165496),	-- Deathguard's Vambraces
+										i(165490),	-- Deathguard's Gauntlets
+										i(165495),	-- Deathguard's Waistplate
+										i(165493),	-- Deathguard's Greaves
+										i(165489),	-- Deathguard's Sabatons
+									}),
 								}),
 							}),
 						},

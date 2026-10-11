@@ -140,7 +140,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(276104, {	-- Aspiring Preyhunter's Chest
 							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
 						}),
+						-- Bonus roll
+						i(280131, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Prey
 					}),
+					-- Weekly Bonus Reputations
+					-- Season 2 Prey
+					hqt_bonusRenown_weekly(98547, 2808, {timeline={ADDED_12_1_0,REMOVED_12_2_0}}),	-- 1st per week
+					hqt_bonusRenown_weekly(98548, 2808, {timeline={ADDED_12_1_0,REMOVED_12_2_0}}),	-- 2nd per week
+					hqt_bonusRenown_weekly(98549, 2808, {timeline={ADDED_12_1_0,REMOVED_12_2_0}}),	-- 3rd per week
+					hqt_bonusRenown_weekly(98550, 2808, {timeline={ADDED_12_1_0,REMOVED_12_2_0}}),	-- 4th per week
 				}),
 				n(FACTIONS, {
 					faction(2808),	-- Prey: Season 2

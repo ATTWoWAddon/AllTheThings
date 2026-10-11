@@ -727,6 +727,14 @@ local function UpdateRawIDs(field, ids, updateFunc)
 	end
 end
 app.UpdateRawIDs = UpdateRawIDs
+-- Pulls all cached fields for the field/ids and passes the results into UpdateSearchResults
+local function UpdateRawGroups(groups, updateFunc)
+	-- app.PrintDebug("UpdateRawGroups",groups and #groups)
+	if groups and #groups > 0 then
+		UpdateSearchResults(groups, updateFunc)
+	end
+end
+app.UpdateRawGroups = UpdateRawGroups
 
 
 ---- Group Handling Functionality (creation/merging/nesting) ----

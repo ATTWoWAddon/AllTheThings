@@ -687,6 +687,34 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(162745, {	-- Schematic: Precision Attitude Adjuster [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
+					i(162533, {	-- Scouting Report: Hillcrest Pasture
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(162535, {	-- Scouting Report: Mudfisher Cove
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(162531, {	-- Scouting Report: Stonefist Watch
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(162534, {	-- Scouting Report: Stonetusk Watch
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(162536, {	-- Scouting Report: Swiftwind Post
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(162532, {	-- Scouting Report: Windfall Cavern
+						["cost"] = { { "c", 1560, 100 } },	-- 100x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(162530, {	-- Scouting Report: Wolf's Den
+						["cost"] = { { "c", 1560, 50 } },	-- 50x War Resources
+						["races"] = HORDE_ONLY,
+					}),
 					i(161512, {	-- Silent Stalker Belt
 						["cost"] = 14000000,	-- 1,400g
 					}),
@@ -695,6 +723,18 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					i(161509, {	-- Tranquil Health Weavers
 						["cost"] = 19000000,	-- 1,900g
+					}),
+					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway (CI!)
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["races"] = HORDE_ONLY,
+					}),
+					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins (CI!)
+						["cost"] = { { "c", 1560, 500 } },	-- 500x War Resources
+						["races"] = HORDE_ONLY,
 					}),
 					i(161501, {	-- Witch Doctor's Slippers
 						["cost"] = 19000000,	-- 1,900g

@@ -48,6 +48,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				mission(2122, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
 					["provider"] = { "i", 166242 },	-- A Shady Message [H]
 					["groups"] = {
+						i(166243),	-- Investigation Results
 						q(54447, {	-- A Shady Character
 							["pb"] = true,
 							["pvp"] = true,

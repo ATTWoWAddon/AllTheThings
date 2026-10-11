@@ -476,39 +476,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				["groups"] = {
 					n(DECOR, {
 						-- Season 1 Rewards
-						-- Exo Note: Season 1 rewards get their prices halved at the start of Season 2
-						anguish(800, i(265794)),	-- Preyseeker's Plinth (DECOR!)
-						anguish(1200, i(265795)),	-- Preyseeker's Ornate Plinth (DECOR!)
-						anguish(800, i(265700)),	-- Preyseeker's Amani Bust (DECOR!)
-						anguish(1200, i(265685)),	-- Preyseeker's Amani Effigy (DECOR!)
-						anguish(800, i(265699)),	-- Preyseeker's Breaker Bust (DECOR!)
-						anguish(1200, i(265684)),	-- Preyseeker's Breaker Effigy (DECOR!)
-						anguish(800, i(265703)),	-- Preyseeker's Consul Bust (DECOR!)
-						anguish(1200, i(265688)),	-- Preyseeker's Consul Effigy (DECOR!)
-						anguish(800, i(265704)),	-- Preyseeker's Executor Bust (DECOR!)
-						anguish(1200, i(265689)),	-- Preyseeker's Executor Effigy (DECOR!)
-						anguish(800, i(265698)),	-- Preyseeker's Ethereal Bust (DECOR!)
-						anguish(1200, i(265683)),	-- Preyseeker's Ethereal Effigy (DECOR!)
-						anguish(800, i(265799)),	-- Preyseeker's Farstrider Bust (DECOR!)
-						anguish(1200, i(265797)),	-- Preyseeker's Farstrider Effigy (DECOR!)
-						anguish(800, i(265705)),	-- Preyseeker's Knight-Errant Bust (DECOR!)
-						anguish(1200, i(265690)),	-- Preyseeker's Knight-Errant Effigy (DECOR!)
-						anguish(800, i(265696)),	-- Preyseeker's Magister Bust (DECOR!)
-						anguish(1200, i(265681)),	-- Preyseeker's Magister Effigy (DECOR!)
-						anguish(800, i(265798)),	-- Preyseeker's Ren'dorei Bust (DECOR!)
-						anguish(1200, i(265796)),	-- Preyseeker's Ren'dorei Effigy (DECOR!)
-						anguish(800, i(265701)),	-- Preyseeker's Rutaani Bust (DECOR!)
-						anguish(1200, i(265686)),	-- Preyseeker's Rutaani Effigy (DECOR!)
-						anguish(800, i(265707)),	-- Preyseeker's Thornspeaker Bust (DECOR!)
-						anguish(1200, i(265692)),	-- Preyseeker's Thornspeaker Effigy (DECOR!)
-						anguish(800, i(265697)),	-- Preyseeker's Tinker Bust (DECOR!)
-						anguish(1200, i(265682)),	-- Preyseeker's Tinker Effigy (DECOR!)
-						anguish(800, i(265708)),	-- Preyseeker's Twilight Bust (DECOR!)
-						anguish(1200, i(265694)),	-- Preyseeker's Twilight Effigy (DECOR!)
-						anguish(800, i(265702)),	-- Preyseeker's Vindicator Bust (DECOR!)
-						anguish(1200, i(265687)),	-- Preyseeker's Vindicator Effigy (DECOR!)
-						anguish(800, i(265706)),	-- Preyseeker's Wretched Bust (DECOR!)
-						anguish(1200, i(265691)),	-- Preyseeker's Wretched Effigy (DECOR!)
+						anguish(400, i(265794)),	-- Preyseeker's Plinth (DECOR!)
+						anguish(600, i(265795)),	-- Preyseeker's Ornate Plinth (DECOR!)
+						anguish(400, i(265700)),	-- Preyseeker's Amani Bust (DECOR!)
+						anguish(600, i(265685)),	-- Preyseeker's Amani Effigy (DECOR!)
+						anguish(400, i(265699)),	-- Preyseeker's Breaker Bust (DECOR!)
+						anguish(600, i(265684)),	-- Preyseeker's Breaker Effigy (DECOR!)
+						anguish(400, i(265703)),	-- Preyseeker's Consul Bust (DECOR!)
+						anguish(600, i(265688)),	-- Preyseeker's Consul Effigy (DECOR!)
+						anguish(400, i(265704)),	-- Preyseeker's Executor Bust (DECOR!)
+						anguish(600, i(265689)),	-- Preyseeker's Executor Effigy (DECOR!)
+						anguish(400, i(265698)),	-- Preyseeker's Ethereal Bust (DECOR!)
+						anguish(600, i(265683)),	-- Preyseeker's Ethereal Effigy (DECOR!)
+						anguish(400, i(265799)),	-- Preyseeker's Farstrider Bust (DECOR!)
+						anguish(600, i(265797)),	-- Preyseeker's Farstrider Effigy (DECOR!)
+						anguish(400, i(265705)),	-- Preyseeker's Knight-Errant Bust (DECOR!)
+						anguish(600, i(265690)),	-- Preyseeker's Knight-Errant Effigy (DECOR!)
+						anguish(400, i(265696)),	-- Preyseeker's Magister Bust (DECOR!)
+						anguish(600, i(265681)),	-- Preyseeker's Magister Effigy (DECOR!)
+						anguish(400, i(265798)),	-- Preyseeker's Ren'dorei Bust (DECOR!)
+						anguish(600, i(265796)),	-- Preyseeker's Ren'dorei Effigy (DECOR!)
+						anguish(400, i(265701)),	-- Preyseeker's Rutaani Bust (DECOR!)
+						anguish(600, i(265686)),	-- Preyseeker's Rutaani Effigy (DECOR!)
+						anguish(400, i(265707)),	-- Preyseeker's Thornspeaker Bust (DECOR!)
+						anguish(600, i(265692)),	-- Preyseeker's Thornspeaker Effigy (DECOR!)
+						anguish(400, i(265697)),	-- Preyseeker's Tinker Bust (DECOR!)
+						anguish(600, i(265682)),	-- Preyseeker's Tinker Effigy (DECOR!)
+						anguish(400, i(265708)),	-- Preyseeker's Twilight Bust (DECOR!)
+						anguish(600, i(265694)),	-- Preyseeker's Twilight Effigy (DECOR!)
+						anguish(400, i(265702)),	-- Preyseeker's Vindicator Bust (DECOR!)
+						anguish(600, i(265687)),	-- Preyseeker's Vindicator Effigy (DECOR!)
+						anguish(400, i(265706)),	-- Preyseeker's Wretched Bust (DECOR!)
+						anguish(600, i(265691)),	-- Preyseeker's Wretched Effigy (DECOR!)
 						-- Season 2 Rewards
 						anguish(100, i(278123, { ["timeline"] = { ADDED_12_1_0 } })),	-- Sturdy Silvermoon Crate Lid (DECOR!)
 						anguish(100, i(278126, { ["timeline"] = { ADDED_12_1_0 } })),	-- Mysterious Sin'dorei Candlestick (DECOR!)
@@ -772,12 +771,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
-			-- 1k seasonal journey lockout, weekly
-			q(95000, name(HEADERS.Faction, 2764)),	-- 1st per week
-			q(95001, name(HEADERS.Faction, 2764)),	-- 2nd per week
-			q(95002, name(HEADERS.Faction, 2764)),	-- 3rd per week
-			q(95003, name(HEADERS.Faction, 2764)),	-- 4th per week
-
 			q(93872),	-- Prey completed, 1st per week
 			q(93873),	-- Prey completed, 2nd per week
 			q(93874),	-- Prey completed, 3rd per week
@@ -798,10 +791,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(97115),	-- First Preference Killing of the week
 
 			-- 12.1
-			q(98547, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 1st per week
-			q(98548, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 2nd per week
-			q(98549, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 3rd per week
-			q(98550, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 4th per week
 			--q(98507),	-- prey completion, nightmare, 1st of week, eversong woods
 			--q(98508),	-- prey completion, nightmare, 1st of week, coiled isle
 		})),

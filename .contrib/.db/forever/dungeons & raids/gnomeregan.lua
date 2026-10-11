@@ -184,15 +184,6 @@ root(ROOTS.Instances, {
 					["description"] = "These can drop from any mechanical unit in Gnomeregan.",
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #if AFTER 3.1.0
-				i(11827, {	-- Schematic: Lil' Smoky (RECIPE!)
-					["crs"] = {
-						6232,	-- Arcane Nullifier X-21
-						6229,	-- Crowd Pummeler 9-60
-						6230,	-- Peacekeeper Security Suit
-					},
-				}),
-				-- #endif
 				i(9486, {	-- Supercharger Battle Axe
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
@@ -642,7 +633,7 @@ root(ROOTS.Instances, {
 					i(7560),	-- Schematic: Gnomish Universal Remote (RECIPE!)
 					i(7561),	-- Schematic: Goblin Jumper Cables (RECIPE!)
 					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
-					i(7192),	-- Schematic: Goblin Rocket Boots
+					i(7192),	-- Schematic: Goblin Rocket Boots (RECIPE!)
 					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
 					i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
 					i(4412),	-- Schematic: Moonsight Rifle (RECIPE!)

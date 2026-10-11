@@ -45,7 +45,7 @@ local SpellQuestOverrides = setmetatable({}, { __index = function(t,key)
 	return saved
 end})
 -- Consolidates some spell checking
----@param spellID number
+---@param spellID number Spell ID to check for knowledge or linked quest completion.
 ---@return boolean isKnown
 local IsSpellKnownHelper
 -- In 11.2 some spell checking was consolidated

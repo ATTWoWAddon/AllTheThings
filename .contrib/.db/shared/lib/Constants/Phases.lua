@@ -2532,7 +2532,7 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "对于所有还没拥有影之哀伤的人来说。",
+		cn = "获取影之哀伤者可将其提供给尚未拥有该物品的玩家。",
 		-- TODO: tw = "",
 	},
 	lore = {
@@ -2680,7 +2680,7 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "元素动乱预资料片事件？",
+		cn = "元素动乱前夕事件？",
 		-- TODO: tw = "",
 	},
 });

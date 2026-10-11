@@ -340,6 +340,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["maps"] = ALL_REGULAR_DELVES_MID,
 				}),
 			}),
+			n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 }}, {
+				i(280562),	-- Ascendant Venomstone
+			})),
 			mapped(n(TREASURES, {
 				o(656489, {	-- Azta'rec Cache
 					["questID"] = 92887,

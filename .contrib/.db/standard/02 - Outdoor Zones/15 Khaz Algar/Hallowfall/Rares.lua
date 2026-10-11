@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(RARES, sharedData({
@@ -22,6 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(223006),	-- Signet of Dark Horizons (dupe from Coalesced Monstrosity - elementals rares share?)
 					i(223315),	-- Beledar's Spawn (MOUNT!)
+					hqt_bonusRenown_weekly(85164, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Beledar's Spawn
 				},
 			}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
@@ -32,6 +32,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(225997),	-- Earthen Adventurer's Spaulders
 					i(223921),	-- Ever-Oozing Signet
 					i(223920),	-- Slime Deflecting Stopper
+					hqt_bonusRenown_weekly(85165, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Deathtide
 				},
 			}),
 			n(221668, {	-- Horror of the Shallows
@@ -48,6 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221248),	-- Deep Terror Carver
 					i(221211),	-- Grasp of the Shallows
 					i(221255),	-- Sharpened Scalepiercer
+					hqt_bonusRenown_weekly(84065, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Horror of the Shallows
 				},
 			}),
 			n(221534, {	-- Lytfang the Lost
@@ -56,6 +58,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221207),	-- Den Mother's Chestpiece
 					i(221246),	-- Fierce Beast Staff
+					hqt_bonusRenown_weekly(84063, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Lytfang the Lost
 				},
 			}),
 			n(221786, {	-- Pride of Beledar
@@ -67,6 +70,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221251),	-- Bestial Underground Cleaver
 					i(221246),	-- Fierce Beast Staff
 					i(223007),	-- Lance of Beledar's Pride
+					hqt_bonusRenown_weekly(84068, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Pride of Beledar
 				},
 			}),
 			n(221708, {	-- Sir Alastair Purefire
@@ -75,6 +79,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221241),	-- Priestly Agent's Knife
 					i(221245),	-- Righteous Path Treads
+					hqt_bonusRenown_weekly(84067, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Sir Alastair Purefire
 				},
 			}),
 			n(215805, {	-- Sloshmuck
@@ -86,6 +91,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221264),	-- Fungarian Mystic's Cluster
 					i(221255),	-- Sharpened Scalepiercer
+					hqt_bonusRenown_weekly(84062, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Sloshmuck
 				},
 			}),
 			n(221690, {	-- Strength of Beledar
@@ -96,6 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221216),	-- Bruin Strength Legplates
 					i(221246),	-- Fierce Beast Staff
 					i(221508),	-- Pelt of Beledar's Strength
+					hqt_bonusRenown_weekly(84066, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Strength of Beledar
 				},
 			}),
 			n(221648, {	-- The Perchfather
@@ -104,6 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221246),	-- Fierce Beast Staff
 					i(221229),	-- Perchfather's Cuffs
+					hqt_bonusRenown_weekly(84064, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: The Perchfather
 				},
 			}),
 			n(218444, {	-- The Taskmaker
@@ -112,6 +120,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221240),	-- Nerubian Stagshell Gouger
 					i(221215),	-- Taskmaster's Mining Cap
+					hqt_bonusRenown_weekly(84061, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: The Taskmaker
 				},
 			}),
 
@@ -176,43 +185,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 		}),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(KHAZ_ALGAR, {
-		m(HALLOWFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-			n(RARES, {
-				q(85164, {	-- Weekly reputation: Beledar's Spawn
-					["name"] = "Beledar's Spawn weekly reputation obtained.",
-				}),
-				q(85165, {	-- Weekly reputation: Deathtide
-					["name"] = "Deathtide weekly reputation obtained.",
-				}),
-				q(84065, {	-- Weekly reputation: Horror of the Shallows
-					["name"] = "Horror of the Shallows weekly reputation obtained.",
-				}),
-				q(84063, {	-- Weekly reputation: Lytfang the Lost
-					["name"] = "Lytfang the Lost weekly reputation obtained.",
-				}),
-				q(84068, {	-- Weekly reputation: Pride of Beledar
-					["name"] = "Pride of Beledar weekly reputation obtained.",
-				}),
-				q(84067, {	-- Weekly reputation: Sir Alastair Purefire
-					["name"] = "Sir Alastair Purefire weekly reputation obtained.",
-				}),
-				q(84062, {	-- Weekly reputation: Sloshmuck
-					["name"] = "Sloshmuck weekly reputation obtained.",
-				}),
-				q(84066, {	-- Weekly reputation: Strength of Beledar
-					["name"] = "Strength of Beledar weekly reputation obtained.",
-				}),
-				q(84064, {	-- Weekly reputation: The Perchfather
-					["name"] = "The Perchfather weekly reputation obtained.",
-				}),
-				q(84061, {	-- Weekly reputation: The Taskmaker
-					["name"] = "The Taskmaker weekly reputation obtained.",
-				}),
-			}),
-		})),
-	}),
-}));
+}))

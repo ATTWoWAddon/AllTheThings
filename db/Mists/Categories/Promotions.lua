@@ -137,10 +137,10 @@ h(-542,{u=1,g={
 ach(8345,{providers={{"s",142073}},u=1}),
 mnt(142073,{b=1,itemID=98618,lvl=20,q=4,u=1})}}),
 h(-546,{awp=11201,u=2,g={
-p(757,{b=1,itemID=19055,npcID=14755,q=1,spellID=23531,u=2}),
 p(124,{b=1,itemID=22781,npcID=16456,q=1,spellID=28505,u=2}),
-p(758,{b=1,itemID=19054,npcID=14756,q=1,spellID=23530,u=2}),
-p(1073,{b=1,itemID=22780,npcID=16445,q=3,spellID=28487,u=2})}}),
+p(1073,{b=1,itemID=22780,npcID=16445,q=3,spellID=28487,u=2}),
+p(757,{b=1,itemID=19055,npcID=14755,q=1,spellID=23531,u=2}),
+p(758,{b=1,itemID=19054,npcID=14756,q=1,spellID=23530,u=2})}}),
 h(-547,{
 s(129974,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=2,u=2}),
 p(244,{b=1,description="Granted to players that attach an authenticator to their account.",itemID=49646,npcID=36871,q=3,spellID=69452,u=1}),

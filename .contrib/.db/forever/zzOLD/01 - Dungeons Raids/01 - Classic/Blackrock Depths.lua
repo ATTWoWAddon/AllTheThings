@@ -1329,10 +1329,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cr"] = 8920,	-- Weapon Technician
 				}),
 				i(16053, {	-- Schematic: Master Engineer's Goggles
-					-- #if AFTER 2.0.1
-					["description"] = "This is now learned from the trainer.",
-					-- #endif
-					["timeline"] = { REMOVED_2_0_1 },
 					["cr"] = 8900,	-- Doomforge Arcanasmith
 				}),
 				i(18661, {	-- Schematic: World Enlarger (RECIPE!)

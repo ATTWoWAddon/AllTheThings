@@ -18,11 +18,30 @@ local LIBRARY_BOOKS_HEADER = createHeader({
 		-- TODO: tw = "",
 	},
 });
+local allBookSourceQuests = {
+	78145,	-- Arcanic Systems Manual
+	79091,	-- Archmage Antonidas: The Unabridged Autobiography
+	79092,	-- Archmage Theocritus's Research Journal
+	79096,	-- Ataeric: On Arcane Curiosities
+	79097,	-- Baxtan: On Destructive Magics
+	78142,	-- Bewitchments and Glamours
+	78147,	-- Crimes Against Anatomy
+	78149,	-- Fury of the Land
+	78146,	-- Goaz Scrolls
+	78124,	-- Nar'thalas Almanac
+	79093,	-- Rumi of Gnomeregan: The Collected Works
+	78148,	-- Runes of the Sorceror-Kings
+	78143,	-- Secrets of the Dreamers
+	79095,	-- The Apothecary's Metaphysical Primer
+	78127,	-- The Dalaran Digest
+	79094,	-- The Lessons of Ta'zo
+	-- TODO: Need to add more book quests
+};
 root(ROOTS.ExpansionFeatures, {
 	n(LIBRARY_BOOKS_HEADER, {	-- Library Books
 		aqd = {
 			qg = 211033,	-- Garion Wendell <Librarian>
-			coord = { 37.8, 80.2, STORMWIND_CITY },
+			coord = { 49.0, 86.4, STORMWIND_CITY },
 		},
 		hqd = {
 			qg = 211022,	-- Owen Thadd <Librarian>
@@ -80,24 +99,7 @@ root(ROOTS.ExpansionFeatures, {
 				},
 			}),
 			q(78150, {	-- Friend of the Library
-				["sourceQuests"] = {
-					78145,	-- Arcanic Systems Manual
-					79091,	-- Archmage Antonidas: The Unabridged Autobiography
-					79092,	-- Archmage Theocritus's Research Journal
-					79096,	-- Ataeric: On Arcane Curiosities
-					79097,	-- Baxtan: On Destructive Magics
-					78142,	-- Bewitchments and Glamours
-					78147,	-- Crimes Against Anatomy
-					78149,	-- Fury of the Land
-					78146,	-- Goaz Scrolls
-					78124,	-- Nar'thalas Almanac
-					79093,	-- Rumi of Gnomeregan: The Collected Works
-					78148,	-- Runes of the Sorceror-Kings
-					78143,	-- Secrets of the Dreamers
-					79095,	-- The Apothecary's Metaphysical Primer
-					78127,	-- The Dalaran Digest
-					79094,	-- The Lessons of Ta'zo
-				},
+				["sourceQuests"] = allBookSourceQuests,
 				["sourceQuestNumRequired"] = 10,
 				["groups"] = {
 					i(277203),	-- Scholarly Pendant
@@ -118,33 +120,23 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
-			q(79536, {	-- Greater Friend of the Library
-				["qg"] = 211033,	-- Garion Wendell <Librarian>
-				["sourceQuests"] = {
-					78145,	-- Arcanic Systems Manual
-					79091,	-- Archmage Antonidas: The Unabridged Autobiography
-					79092,	-- Archmage Theocritus's Research Journal
-					79096,	-- Ataeric: On Arcane Curiosities
-					79097,	-- Baxtan: On Destructive Magics
-					78142,	-- Bewitchments and Glamours
-					78147,	-- Crimes Against Anatomy
-					78149,	-- Fury of the Land
-					78146,	-- Goaz Scrolls
-					78124,	-- Nar'thalas Almanac
-					79093,	-- Rumi of Gnomeregan: The Collected Works
-					78148,	-- Runes of the Sorceror-Kings
-					78143,	-- Secrets of the Dreamers
-					79095,	-- The Apothecary's Metaphysical Primer
-					78127,	-- The Dalaran Digest
-					79094,	-- The Lessons of Ta'zo
-					-- TODO: Need to add more book quests
-				},
+			q(79536, {	-- Greater Friend of the Library (1/2)
+				["sourceQuests"] = allBookSourceQuests,
 				["sourceQuestNumRequired"] = 20,
-				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
 				["groups"] = {
 					i(281634),	-- Field Researcher's Loop
 					i(281635),	-- Philanthropist's Ring
+				},
+			}),
+			q(82208, {	-- Greater Friend of the Library (2/2)
+				["sourceQuests"] = allBookSourceQuests,
+				["sourceQuestNumRequired"] = 25,
+				["lvl"] = 30,
+				["groups"] = {
+					i(277254),	-- Truthseeker's Bow
+					i(277258),	-- Crest of Elucidation
+					i(277260),	-- Researcher's Night Light
 				},
 			}),
 			q(78124, {	-- Nar'thalas Almanac

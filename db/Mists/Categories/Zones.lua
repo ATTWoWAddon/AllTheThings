@@ -2907,7 +2907,7 @@ q(2752,{coords={
 [85]={{76.2,37.4}}},cost={{"i",7956,4},{"i",7958,4}},description="This questline begins with the quest 'Barbaric Battlements', which requires Classic Blacksmithing skill level 140.",learnedAt=140,lvl=32,qgs={7790},r=1,requireSkill=164,sourceQuests={2751},g={
 r(9811,{description="This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",itemID=7978,learnedAt=160,q=2,requireSkill=164})}}),
 q(25275,{awp=40003,coords={
-[85]={{48.6,71}}},qgs={3144},races={9}}),
+[85]={{48.6,71}}},qgs={3144},races={9},sourceQuests={25267}}),
 q(26840,{awp=40001,coords={
 [85]={{48.6,71}}},qgs={3144},r=1,sourceQuests={26830}}),
 q(10794,{awp=20003,c={4},coords={
@@ -6460,7 +6460,7 @@ s(203057,53405,{b=1,f=5,loc=42,q=2}),
 s(203077,53427,{b=1,f=6,loc=44,q=2})}}),
 q(14340,{awp=40003,coords={
 [76]={{42.6,25.1}}},qgs={36210},r=1,sourceQuests={14345},g={
-i(49201,{loc=40,q=1})}}),
+s(202314,49201,{collectible=false,f=104,loc=40,q=1})}}),
 q(14390,{awp=40003,coords={
 [76]={{27.8,41}}},r=1,sourceQuests={14389}}),
 q(14480,{awp=40003,coords={
@@ -6559,7 +6559,8 @@ qo(1,{crs={36680},providers={{"i",49540}}}),
 s(203075,53425,{b=1,f=3,q=2}),
 s(203063,53412,{b=1,f=5,loc=44,q=2})}}),
 q(3141,{coords={
-[76]={{60.8,66.4}}},lvl=45,qgs={7783},rwp=40003,sourceQuests={2744},u=2}),
+[76]={{60.8,66.4}}},lvl=45,qgs={7783},rwp=40003,sourceQuests={2744},u=2,g={
+qo(1,{providers={{"n",7783}},u=2})}}),
 q(3562,{coords={
 [88]={{70.2,30.8}}},lvl=45,qgs={4046},qis={10678},r=1,rwp=40003,sourceQuests={3518},u=2}),
 q(8250,_.ResolveQuestData({aqd=
@@ -17520,7 +17521,7 @@ qo(1,{coords={
 q(3161,{coords={
 [71]={{52.6,45.8}}},lvl=43,qgs={7771},rwp=40003,u=2,g={
 qo(1,{providers={{"i",8443},{"o",140971}},u=2}),
-i(9978,{loc=40,q=1,u=2}),
+s(123334,9978,{collectible=false,f=104,loc=40,q=1,u=2}),
 s(124017,10827,{b=1,f=5,loc=42,q=2,u=2}),
 s(124016,10826,{b=1,f=28,q=2,u=2})}}),
 q(25522,{awp=40003,coords={
@@ -26934,10 +26935,12 @@ qo(3,{providers={{"n",2555},{"n",51633}}})}}),
 q(635,{description="If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",lvl=30,qss={4614},rwp=40003,u=2}),
 q(667,{coords={
 [14]={{32.2,81.6}}},lvl=35,qgs={2610},rwp=40003,sourceQuests={670},u=2,g={
+qo(1,{providers={{"n",2610},{"n",2775}},u=2}),
 i(4550,{b=1,f=52,q=2,u=2}),
 i(4549,{b=1,f=52,q=2,u=2})}}),
 q(26628,{awp=40003,coords={
 [14]={{25.9,83.8}}},qgs={2610},sourceQuests={26052},g={
+qo(1,{providers={{"n",2610},{"n",2775}}}),
 s(206321,59212,{b=1,f=4,loc=42,q=2}),
 s(206322,59213,{b=1,f=5,loc=46,q=2}),
 s(206323,59214,{b=1,f=5,loc=43,q=2}),
@@ -27131,13 +27134,15 @@ qo(1,{coords={
 [14]={{62.6,34.6}}},crs={2755},providers={{"i",4472},{"i",4473},{"o",138492}},u=2}),
 i(4743,{b=1,f=51,q=3,u=2})}}),
 q(665,{coords={
-[14]={{33.8,80.6}}},lvl=35,qgs={2768},rwp=40003,u=2}),
+[14]={{33.8,80.6}}},lvl=35,qgs={2768},rwp=40003,u=2,g={
+qo(1,{providers={{"n",2768}},u=2})}}),
 q(666,{coords={
-[14]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4491},rwp=40003,sourceQuests={665},u=2,g={
+[14]={{33.8,80.4}}},lvl=35,qgs={2774},rwp=40003,sourceQuests={665},u=2,g={
 qo(1,{coords={
 [14]={{23.6,87.4}}},providers={{"i",4492},{"o",2712}},u=2}),
 s(119699,4547,{b=1,f=27,q=2,u=2}),
-s(119700,4548,{b=1,f=24,q=2,u=2})}}),
+s(119700,4548,{b=1,f=24,q=2,u=2}),
+s(119645,4491,{collectible=false,f=104,loc=40,q=1,u=2})}}),
 q(668,{coords={
 [14]={{33.8,80.4}}},lvl=35,qgs={2774},qis={4493},rwp=40003,sourceQuests={666},u=2}),
 q(669,{coords={
@@ -27145,11 +27150,12 @@ q(669,{coords={
 q(670,{coords={
 [224]={{27.2,77}}},lvl=35,qgs={2487},qis={4494},rwp=40003,sourceQuests={669},u=2}),
 q(26051,{awp=40003,coords={
-[14]={{27.5,82.9}}},qgs={2774},qis={4491},sourceQuests={26050},g={
+[14]={{27.5,82.9}}},qgs={2774},sourceQuests={26050},g={
 qo(1,{coords={
 [14]={{16.1,91.5}}},providers={{"i",4492},{"o",2712}}}),
 s(206310,59199,{b=1,f=5,loc=47,q=2}),
-s(206311,59200,{b=1,f=29,q=2})}}),
+s(206311,59200,{b=1,f=29,q=2}),
+s(119645,4491,{collectible=false,f=104,loc=40,q=1})}}),
 q(640,{coords={
 [14]={{73.8,33.8}}},lvl=32,qgs={2703},r=1,rwp=40003,sourceQuests={639},u=2,g={
 qo(1,{crs={2583,2584,2585},providers={{"i",4450}},u=2})}}),
@@ -30395,7 +30401,7 @@ qo(1,{crs={930,45582},providers={{"i",60207}}})}}),
 q(66,{coords={
 [47]={{75.8,45.3}}},lvl=22,qgs={265},r=2,rwp=40003,u=2}),
 q(67,{coords={
-[47]={{72.6,46.9}}},lvl=22,qgs={267},r=2,rwp=40003,sourceQuests={66},u=2}),
+[47]={{72.6,46.9}}},lvl=22,maps={52},qgs={267},r=2,rwp=40003,sourceQuests={66},u=2}),
 q(68,{coords={
 [52]={{41.5,66.7}}},lvl=22,providers={{"o",3643}},qis={889},r=2,rwp=40003,sourceQuests={67},u=2}),
 q(69,{coords={
@@ -38464,7 +38470,8 @@ h(-45,{
 q(2801,_.ResolveQuestData({aqd=
 {sourceQuests={2783},u=2},coords={
 [51]={{34.3,66.2}}},hqd=
-{sourceQuests={2623},u=2},lvl=45,qgs={7572},rwp=40003,u=2})),
+{sourceQuests={2623},u=2},lvl=45,qgs={7572},rwp=40003,u=2,g={
+qo(1,{providers={{"n",7572}},u=2})}})),
 q(8417,_.ResolveQuestData({aqd=
 {coords={
 [84]={{78.8,45.6}},
@@ -38542,7 +38549,8 @@ qo(1,{providers={{"n",1084}},u=2}),
 qo(2,{providers={{"n",858}},u=2}),
 qo(3,{providers={{"n",767}},u=2})}}),
 q(2784,{coords={
-[51]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,rwp=40003,u=2}),
+[51]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,rwp=40003,u=2,g={
+qo(1,{providers={{"n",7572}},u=2})}}),
 q(1430,{coords={
 [51]={{44.8,57.2}}},lvl=35,qgs={5591},r=1,rwp=40003,u=2,g={
 qo(1,{crs={1088},providers={{"i",6184}},u=2}),
@@ -38718,7 +38726,8 @@ s(209135,64602,{b=1,f=5,loc=42,q=2}),
 s(209143,64611,{b=1,f=6,loc=40,q=2}),
 s(209150,64619,{b=1,f=7,loc=45,q=2})}}),
 q(2744,{coords={
-[51]={{34.3,66.2}}},lvl=45,maps={76},qgs={7572},rwp=40003,sourceQuests={2743},u=2}),
+[51]={{34.3,66.2}}},lvl=45,maps={76},qgs={7572},rwp=40003,sourceQuests={2743},u=2,g={
+qo(1,{providers={{"n",7783}},u=2})}}),
 q(2621,{coords={
 [51]={{34.3,66.2}}},lvl=45,qgs={7572},r=1,rwp=40003,sourceQuests={2784},u=2}),
 q(27869,{awp=40003,coords={
@@ -43917,7 +43926,8 @@ s(206121,58920,{b=1,f=6,loc=46,q=2}),
 s(206119,58918,{b=1,f=27,q=2}),
 s(206120,58919,{b=1,f=5,loc=46,q=2})}}),
 q(103,{coords={
-[52]={{30,86}}},cost={{"i",814,5}},lvl=10,qgs={392},rwp=40003,u=2}),
+[52]={{30,86}}},lvl=10,qgs={392},rwp=40003,u=2,g={
+qo(1,{cost={{"i",814,5}},u=2})}}),
 q(26347,{awp=40003,coords={
 [52]={{30.5,85.6}}},qgs={392},r=2,g={
 qo(1,{coords={
@@ -46621,7 +46631,7 @@ s(141831,31485,{b=1,f=4,loc=46,q=2,u=17}),
 s(141833,31487,{b=1,f=6,loc=40,q=2,u=17})}}),
 q(10819,{coords={
 [105]={{62.6,40.2}}},lvl=65,qgs={22127},sourceQuests={10812},u=17,g={
-i(31366,{collectible=false,loc=40,lvl=65,q=1,u=17})}}),
+s(201437,31366,{collectible=false,f=104,loc=40,lvl=65,q=1,u=17})}}),
 q(10911,{coords={
 [105]={{63.5,35.5}}},description="Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",lvl=65,qgs={22423},sourceQuests={10904},u=17,g={
 qo(1,{providers={{"i",31807},{"n",22443}},u=17}),

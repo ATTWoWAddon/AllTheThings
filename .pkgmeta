@@ -6,6 +6,7 @@ externals:
 ignore: # Files and directories beginning with a dot (such as .git) are automatically ignored, as is the pgkmeta file itself.
   - _config.yml
   - setup.cfg
+  - tests
   - *.bat
   - *.sh
   - *.md

@@ -16,10 +16,10 @@ p(93,{awp=11101,b=1,itemID=13584,petTypeID=6,q=1,spellID=17708,u=3}),
 p(92,{awp=11101,b=1,itemID=13583,petTypeID=8,q=1,spellID=17707,u=3}),
 p(94,{awp=11101,b=1,itemID=13582,petTypeID=5,q=1,spellID=17709,u=3})}})}})}})}}),
 h(-546,{awp=11201,u=2,g={
-p(757,{b=1,itemID=19055,petTypeID=2,q=1,spellID=23531,u=2}),
 p(124,{b=1,itemID=22781,petTypeID=8,q=1,spellID=28505,u=2}),
-p(758,{b=1,itemID=19054,petTypeID=2,q=1,spellID=23530,u=2}),
-p(1073,{b=1,itemID=22780,petTypeID=1,q=1,spellID=28487,u=2})}}),
+p(1073,{b=1,itemID=22780,petTypeID=1,q=1,spellID=28487,u=2}),
+p(757,{b=1,itemID=19055,petTypeID=2,q=1,spellID=23531,u=2}),
+p(758,{b=1,itemID=19054,petTypeID=2,q=1,spellID=23530,u=2})}}),
 h(-547,{
 s(163830,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=1,u=2}),
 p(1168,{awp=20100,b=1,description="Reward from a Korean Promotional Event (Korea Only)",itemID=20651,petTypeID=1,q=1,spellID=25018,u=1}),

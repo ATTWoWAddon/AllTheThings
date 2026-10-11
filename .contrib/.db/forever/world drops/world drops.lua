@@ -3600,7 +3600,6 @@ root(ROOTS.WorldDrops, {
 			i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 			i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer (RECIPE!)
 		}),
-		--[[ Until profession complete
 		prof(ENGINEERING, {
 			i(16055),	-- Schematic: Arcane Bomb (RECIPE!)
 			i(10601),	-- Schematic: Bright-Eye Goggles (RECIPE!)
@@ -3609,29 +3608,22 @@ root(ROOTS.WorldDrops, {
 			i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 			i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
 			i(16044),	-- Schematic: Lifelike Mechanical Toad (RECIPE!)
-			i(4408),	-- Schematic: Mechanical Squirrel Box [Wrath+] / Schematic: Mechanical Squirrel (RECIPE!)
-			i(10604),	-- Schematic: Mithril Heavy-Bore Rifle [CATA+] / Schematic: Mithril Heavy-bore Rifle (RECIPE!)
+			i(4408),	-- Schematic: Mechanical Squirrel (RECIPE!)
+			i(10604),	-- Schematic: Mithril Heavy-bore Rifle (RECIPE!)
 			i(4412),	-- Schematic: Moonsight Rifle (RECIPE!)
 			i(10606),	-- Schematic: Parachute Cloak (RECIPE!)
 			i(4414),	-- Schematic: Portable Bronze Mortar (RECIPE!)
 			i(4410),	-- Schematic: Shadow Goggles (RECIPE!)
 			i(4409),	-- Schematic: Small Seaforium Charge (RECIPE!)
 			i(10608),	-- Schematic: Sniper Scope (RECIPE!)
-			i(10605, {	-- Schematic: Spellpower Goggles Xtreme (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(16043, {	-- Schematic: Thorium Rifle (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
-			}),
-			i(16051, {	-- Schematic: Thorium Shells (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3, REMOVED_4_0_1 },	-- Taught by trainer
-			}),
+			i(10605),	-- Schematic: Spellpower Goggles Xtreme (RECIPE!)
+			i(16043),	-- Schematic: Thorium Rifle (RECIPE!)
+			i(16051),	-- Schematic: Thorium Shells (RECIPE!)
 		}),
 		prof(FIRST_AID, {
-			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
-				["timeline"] = { REMOVED_8_0_1 },
-			}),
+			i(6454),	-- Manual: Strong Anti-Venom (RECIPE!)
 		}),
+		--[[ Until profession complete
 		prof(LEATHERWORKING, {
 			-- Moved to Leatherworking
 			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)

@@ -96,6 +96,7 @@ if C_TooltipInfo_GetHyperlink then
 		end
 	end)
 else
+	--- Hidden Retail tooltip used to retrieve and cache NPC names and titles.
 	---@class ATTNPCHarvesterForRetail: GameTooltip
 	local ATTCNPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate")
 	ATTCNPCHarvester.AllTheThingsIgnored = true;

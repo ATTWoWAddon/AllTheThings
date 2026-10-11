@@ -17560,7 +17560,7 @@ q(80018,{coords={
 [371]={{65.2,37.2}}},e=437,lvl=10,qgs={218469},sourceQuests={80017},u=2}),
 q(80349,{coords={
 [371]={{65.2,37.2}}},e=437,lvl=10,qgs={218469},sourceQuests={80018},u=2}),
-q(79489,{e=437,lvl=10,sourceQuests={79440},u=2}),
+q(79489,{e=437,lvl=10,qss={210714},sourceQuests={79440},u=2}),
 q(80196,{e=437,lvl=10,sourceQuests={79489},u=2,g={
 i(210714,{spellID=436535,u=2})}}),
 q(80197,{e=437,lvl=10,sourceQuests={80196},u=2}),

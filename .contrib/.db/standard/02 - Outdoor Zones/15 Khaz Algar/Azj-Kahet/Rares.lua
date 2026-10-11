@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(RARES, sharedData({
@@ -14,6 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221212),	-- Death Burrower Handguards
 					i(221237),	-- Lamentable Vagrant's Lantern
+					hqt_bonusRenown_weekly(84073, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Cha'tak
 				},
 			}),
 			n(222624, {	-- Deepcrawler Tx'kesh
@@ -24,6 +24,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223917),	-- Nerubian Covert's Cloak
 					i(223916),	-- Nerubian Cutthroat's Reach
 					i(223915),	-- Nerubian Orator's Stiletto
+					hqt_bonusRenown_weekly(84081, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Deepcrawler Tx'kesh
 				},
 			}),
 			n(216045, {	-- Enduring Gutterface
@@ -32,6 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221248),	-- Deep Terror Carver
 					i(221243),	-- Slippers of Delirium (alpha data)
+					hqt_bonusRenown_weekly(84076, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Enduring Gutterface
 				},
 			}),
 			n(216050, {	-- Harverster Qixt
@@ -47,6 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223941),	-- Nerubian Cultivator's Girdle
 					i(223916),	-- Nerubian Cutthroat's Reach
 					i(223915),	-- Nerubian Orator's Stiletto
+					hqt_bonusRenown_weekly(84079, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Harverster Qixt
 				},
 			}),
 			n(216048, {	-- Jix'ak the Crazed
@@ -58,6 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223917),	-- Nerubian Covert's Cloak
 					i(223916),	-- Nerubian Cutthroat's Reach
 					i(223915),	-- Nerubian Orator's Stiletto
+					hqt_bonusRenown_weekly(84077, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Jix'ak the Crazed
 				},
 			}),
 			n(221327, {	-- Kaheti Silk Hauler
@@ -71,6 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221240),	-- Nerubian Stagshell Gouger
 					i(221206),	-- Reinforced Chitin Chestpiece
+					hqt_bonusRenown_weekly(84071, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Kaheti Silk Hauler
 				},
 			}),
 			n(216044, {	-- Maddened Siegebomber
@@ -81,6 +86,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221217),	-- Nerubian Bomber's Leggings
 					i(221252),	-- Nerubian Slayer's Claymore
 					i(221263),	-- Nerubian Venom-Tipped Dart
+					hqt_bonusRenown_weekly(84075, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Maddened Siegebomber
 				},
 			}),
 			n(216043, {	-- Monstrous Lasharoth
@@ -90,6 +96,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221250),	-- Creeping Lasher Machete
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221227),	-- Monstrous Fungal Cord
+					hqt_bonusRenown_weekly(84074, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Monstrous Lasharoth
 				},
 			}),
 			n(216052, {	-- Skrimisher Sa'zryk
@@ -104,6 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223917),	-- Nerubian Covert's Cloak
 					i(223916),	-- Nerubian Cutthroat's Reach
 					i(223915),	-- Nerubian Orator's Stiletto
+					hqt_bonusRenown_weekly(84082, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Skrimisher Sa'zryk
 				},
 			}),
 			n(216038, {	-- The Groundskeeper
@@ -112,6 +120,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221214),	-- Chitin Chain Headpiece
 					i(221252),	-- Nerubian Slayer's Claymore
+					hqt_bonusRenown_weekly(84069, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: The Groundskeeper
 				},
 			}),
 			n(216047, {	-- The One Left
@@ -123,6 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221265),	-- Charm of the Underground Beast
 					i(225998),	-- Earthen Adventurer's Cloak
 					i(221246),	-- Fierce Beast Staff
+					hqt_bonusRenown_weekly(85167, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: The One Left
 				},
 			}),
 			n(216049, {	-- The Oozekhan
@@ -130,6 +140,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["coord"] = { 61.7, 89.4, AZJ_KAHET_LOWER },
 				["groups"] = {
 					i(223931),	-- Black Blood Cowl
+					hqt_bonusRenown_weekly(84078, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: The Oozekhan
 				},
 			}),
 			n(216046, {	-- Tka'ktath
@@ -140,6 +151,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221240),	-- Nerubian Stagshell Gouger
 					i(221263),	-- Nerubian Venom-Tipped Dart
 					i(225952),	-- Vial of Tka'ktath's Blood (QS!)
+					hqt_bonusRenown_weekly(85166, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Tka'ktath
 				},
 			}),
 			n(216051, {	-- Umbraclaw Matra
@@ -149,6 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223930),	-- Monstrous Chain Pincers
 					i(221252),	-- Nerubian Slayer's Claymore
 					i(221240),	-- Nerubian Stagshell Gouger
+					hqt_bonusRenown_weekly(84080, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Umbraclaw Matra
 				},
 			}),
 			n(216039, {	-- Xishorr
@@ -158,6 +171,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221506),	-- Arachnid's Web-Sown Guise
 					i(221239),	-- Spider Blasting Blunderbuss
 					i(221221),	-- Venomous Lurker's Shoulderplates
+					hqt_bonusRenown_weekly(84070, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Xishorr
 				},
 			}),
 			n(216034, {	-- XT-Minecrusher 8700
@@ -166,6 +180,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221232),	-- Polished Goblin Bling
 					i(221231),	-- Steam-Powered Wristwatch
+					hqt_bonusRenown_weekly(84072, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: XT-Minecrusher 8700
 				},
 			}),
 		})),
@@ -222,61 +237,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 		}),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(KHAZ_ALGAR, {
-		m(AZJ_KAHET, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-			n(RARES, {
-				q(84073, {	-- Weekly reputation: Cha'tak
-					["name"] = "Cha'tak weekly reputation obtained.",
-				}),
-				q(84081, {	-- Weekly reputation: Deepcrawler Tx'kesh
-					["name"] = "Deepcrawler Tx'kesh weekly reputation obtained.",
-				}),
-				q(84076, {	-- Weekly reputation: Enduring Gutterface
-					["name"] = "Enduring Gutterface weekly reputation obtained.",
-				}),
-				q(84079, {	-- Weekly reputation: Harverster Qixt
-					["name"] = "Harverster Qixt weekly reputation obtained.",
-				}),
-				q(84077, {	-- Weekly reputation: Jix'ak the Crazed
-					["name"] = "Jix'ak the Crazed weekly reputation obtained.",
-				}),
-				q(84071, {	-- Weekly reputation: Kaheti Silk Hauler
-					["name"] = "Kaheti Silk Hauler weekly reputation obtained.",
-				}),
-				q(84075, {	-- Weekly reputation: Maddened Siegebomber
-					["name"] = "Maddened Siegebomber weekly reputation obtained.",
-				}),
-				q(84074, {	-- Weekly reputation: Monstrous Lasharoth
-					["name"] = "Monstrous Lasharoth weekly reputation obtained.",
-				}),
-				q(84082, {	-- Weekly reputation: Skrimisher Sa'zryk
-					["name"] = "Skrimisher Sa'zryk weekly reputation obtained.",
-				}),
-				q(84069, {	-- Weekly reputation: The Groundskeeper
-					["name"] = "The Groundskeeper weekly reputation obtained.",
-				}),
-				q(85167, {	-- Weekly reputation: The One Left
-					["name"] = "The One Left weekly reputation obtained.",
-				}),
-				q(84078, {	-- Weekly reputation: The Oozekhan
-					["name"] = "The Oozekhan weekly reputation obtained.",
-				}),
-				q(85166, {	-- Weekly reputation: Tka'ktath
-					["name"] = "Tka'ktath weekly reputation obtained.",
-				}),
-				q(84080, {	-- Weekly reputation: Umbraclaw Matra
-					["name"] = "Umbraclaw Matra weekly reputation obtained.",
-				}),
-				q(84070, {	-- Weekly reputation: Xishorr
-					["name"] = "Xishorr weekly reputation obtained.",
-				}),
-				q(84072, {	-- Weekly reputation: XT-Minecrusher 8700
-					["name"] = "XT-Minecrusher 8700 weekly reputation obtained.",
-				}),
-			}),
-		})),
-	}),
-}));
+}))

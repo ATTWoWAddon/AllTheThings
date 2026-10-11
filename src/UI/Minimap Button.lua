@@ -8,6 +8,7 @@ local ButtonName = "AllTheThings"
 -- Global locals
 local math_floor = math.floor;
 
+--- Shared game tooltip extended with ATT icon, model, and reference display helpers.
 ---@class ATTGameTooltip
 local GameTooltip = GameTooltip;
 
@@ -58,6 +59,7 @@ function AllTheThings_MinimapButtonOnLeave()
 end
 local function CreateMinimapButton()
 	-- Create the Button for the Minimap frame. Create a local and non-local copy.
+	--- Minimap launcher for ATT windows, collection refresh, and settings.
 	---@class ATTMinimapButton: Button
 	local button = CreateFrame("Button", appName .. "-Minimap", Minimap);
 	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));

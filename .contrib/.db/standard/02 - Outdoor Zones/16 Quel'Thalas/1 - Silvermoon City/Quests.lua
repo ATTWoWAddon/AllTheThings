@@ -146,6 +146,33 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_1_0 },
 				["qi"] = 265695,	-- Elementary Voidcore Shard (QI!)
 			}),
+			q(97981, {	-- Umbral Blessings of the Catalyst
+				["sourceQuest"] = 97978,	-- Prismatic Potential
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+			}),
+			q(98016, {	-- Nebulous Voidcores: Gold
+				["sourceQuest"] = 97981,	-- Umbral Blessings of the Catalyst
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+				["repeatable"] = true,
+			}),
+			q(98012, {	-- Nebulous Voidcores: Veteran Mistcrest
+				["sourceQuest"] = 97981,	-- Umbral Blessings of the Catalyst
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+				["repeatable"] = true,
+			}),
+			q(98015, {	-- Nebulous Voidcores: Voidlight Marl
+				["sourceQuest"] = 97981,	-- Umbral Blessings of the Catalyst
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_0 },
+				["repeatable"] = true,
+			}),
 		}),
 		-- PVP 4 Part Quest
 		n(QUESTS, sharedData({
@@ -270,6 +297,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(94410),	-- After turning in Unity Against the Void? Spark lockout?
 				q(93742, name(HEADERS.Currency, 3378, {["timeline"] = { ADDED_12_0_1_SEASONSTART }})),	-- Looted Dawnlight Manaflux after Midnight Season 1: Catalyst Unbound
 				q(96662, {["timeline"] = { ADDED_12_1_0 }}),	-- Accepting 96649 to do crest downgrade
+				q(98541, { ["timeline"] = { ADDED_12_1_0 } }),	-- Triggered when choosing to skip 'Legacy of the Amani' at Orweyna after 'The Preparations Are Complete' (92897); also completes every quest in the chapter
 			}),
 		}),
 	}),

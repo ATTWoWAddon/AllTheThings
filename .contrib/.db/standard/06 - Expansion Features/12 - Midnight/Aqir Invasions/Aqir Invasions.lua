@@ -36,6 +36,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			}),
 			n(EVENT_COMPLETION, {
 				i(277283),	-- Aqir Research Satchel
+				i(286563),	-- Aqir Research Token
 			}),
 			header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
 				["lore"] = "Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",
@@ -107,6 +108,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 										["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
 									}),
 								},
+							}),
+						}),
+						n(266905, {	-- Matildeux Osril <Renown Catch-Up>
+							["coord"] = { 39.4, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+							["groups"] = sharedData({
+								["cost"] = { { "i", 286563, 1 } },	-- 1x Aqir Research Token
+							}, {	-- Exo Note: Not sure if these will be turned into items or will these remain as spells
+								spell(1320744),	-- Amani Tribe Voucher
+								spell(1320745),	-- Hara'ti Voucher
+								spell(1320747),	-- Silvermoon Court Voucher
+								spell(1320729),	-- Singularity Voucher
+								spell(1320749),	-- Zul'jara's Forces Voucher
 							}),
 						}),
 					}),

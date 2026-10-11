@@ -87,17 +87,27 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 					}),
 				}),
 				prof(ENGINEERING, {
-					n(11017, {	-- Roxxik <Engineering Trainer>
-						["coord"] = { 56.8, 56.4, MAP.ORGRIMMAR },
+					n(3412, {	-- Nogg <Expert Engineer>
+						["coord"] = { 75.8, 25.2, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_CATA_ENGINEERING,
+						["groups"] = ENGINEERING_RECIPES.JOURNEYMAN,
+					}),
+					n(11017, {	-- Roxxik <Artisan Engineer>
+						["coord"] = { 76.0, 25.0, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = ENGINEERING_RECIPES.EXPERT,
+					}),
+					n(2857, {	-- Thund <Journeyman Engineer>
+						["coord"] = { 75.8, 24.6, MAP.ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["groups"] = ENGINEERING_RECIPES.APPRENTICE,
 					}),
 				}),
 				prof(FIRST_AID, {
 					n(3373, {	-- Arnok <First Aid Trainer>
 						["coord"] = { 34.0, 84.4, MAP.ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_FIRST_AID,
+						["groups"] = FIRST_AID_RECIPES.APPRENTICE_JOURNEYMAN,
 					}),
 				}),
 				prof(FISHING, {
@@ -384,16 +394,6 @@ root(ROOTS.Zones, m(MAP.KALIMDOR, {
 							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
 							["rank"] = 1,
 						},
-					},
-				}),
-				q(93739, {	-- Exploring the Horde
-					["sourceQuest"] = 95350,	-- Welcome to Azeroth
-					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32.0, 37.8, MAP.ORGRIMMAR },
-					["races"] = { SKYBORNE_HORDE },
-					["lvl"] = 7,
-					["groups"] = {
-						i(286426),	-- Honorbound Cloak
 					},
 				}),
 				q(5726, {	-- Hidden Enemies (1/5)

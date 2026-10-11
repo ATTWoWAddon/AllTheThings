@@ -230,7 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(1198, {	-- In Search of Thaelrid
-					-- #if AFTER TBC
+					-- #if AFTER 3.1.0
 					["races"] = ALLIANCE_ONLY,
 					-- #else
 					["description"] = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",

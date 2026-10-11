@@ -37,6 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				q(10946, {	-- Ruse of the Ashtongue
 					["sourceQuest"] = 10944,	-- The Secret Compromised
 					["qg"] = 21700,	-- Akama
+					["timeline"] = { ADDED_2_1_0 },
 					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
 					["groups"] = {
 						objective(1, {

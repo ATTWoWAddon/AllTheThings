@@ -1173,10 +1173,12 @@ s(163434)/i(18164),	-- 13% Test Speed Boots
 s(163435)/i(18165),	-- 15% Test Speed Boots
 s(163436)/i(18166),	-- Monster - Shield, Royal Dreadguard
 s(163437)/i(18167),	-- Monster - Sword, Machete C01
+s(163438)/i(18168),	-- Force Reactive Disk
 s(163439)/i(18202),	--
 s(163440)/i(18203),	--
 s(163441)/i(18204),	--
 s(163442)/i(18208),	--
+s(163446)/i(18282),	-- Core Marksman Rifle
 s(163447)/i(18293),	-- Monster - Glaive - 2 Blade B03 Green
 s(163452)/i(18303),	--
 s(163453)/i(18304),	--
@@ -1304,6 +1306,8 @@ s(164097)/i(19986),	-- Pirate's Eye Patch
 s(164098)/i(19987),	-- Monster - Dagger, Vulture Black
 s(164099)/i(19988),	-- Monster - Mace2H, Horde C01 Steel (Green)
 s(164100)/i(19989),	-- Tome of Devouring Shadows
+s(164102)/i(19998),	-- Bloodvine Lens
+s(164103)/i(19999),	-- Bloodvine Goggles
 s(164104)/i(20003),	-- Devilsaur Claws
 s(164105)/i(20005),	-- Devilsaur Claws
 s(164111)/i(20039),	-- Dark Iron Boots
@@ -5661,7 +5665,6 @@ s(298376)/i(251769),	--
 s(298377)/i(251770),	--
 s(298378)/i(251771),	--
 s(298448)/i(251960),	-- Yngwe's Axe
-s(298449)/i(251962),	--
 s(298450)/i(251963),	--
 s(298452)/i(251965),	--
 s(298555)/i(252605),	-- Black Dragonscale Helm
@@ -6058,13 +6061,10 @@ s(304875)/i(270020),	-- Gnollhide Pants
 s(304877)/i(270022),	-- Archaeologist's Gown
 s(304878)/i(270023),	--
 s(304879)/i(270024),	--
-s(304881)/i(270027),	--
 s(304882)/i(270028),	-- Harpy Bangles
 s(304883)/i(270029),	--
 s(304884)/i(270030),	--
 s(304886)/i(270032),	--
-s(304887)/i(270033),	-- Demonhide Bracers
-s(304888)/i(270034),	-- Shadow Gauntlets
 s(304889)/i(270035),	-- Reclaimer's Robes
 s(304890)/i(270036),	--
 s(304891)/i(270037),	-- Smouldering Leggings
@@ -6150,11 +6150,7 @@ s(305110)/i(270429),	-- Monster - Glaive - Demonhunter Illidan Offhand
 s(306247)/i(270931),	-- Monster - Mace, Thrall's Hammer (Doomhammer)
 s(306391)/i(271090),	--
 s(307612)/i(271618),	-- Rejected Roses
-s(307619)/i(271664),	-- Hornbeam Heft
-s(307622)/i(271667),	-- Ironwood Destroyer
-s(307651)/i(271716),	-- Explorer's League Dustcover
 s(307652)/i(271718),	--
-s(307653)/i(271719),	-- Furs of the Earthen Ring
 s(307654)/i(271720),	-- Crocolisk Skin Gaiter
 s(307655)/i(271722),	-- Shen'dorei Magister's Belt
 s(307656)/i(271723),	-- Shen'dorei Magister's Boots
@@ -6165,7 +6161,6 @@ s(307660)/i(271727),	-- Shen'dorei Magister's Helm
 s(307661)/i(271728),	-- Shen'dorei Magister's Leggings
 s(307662)/i(271729),	-- Shen'dorei Magister's Vest
 s(307663)/i(271730),	-- Shen'dorei Magister's Pauldrons
-s(307664)/i(271732),	-- Dirt-Heavy Bracers
 s(307665)/i(271733),	-- Shen'dorei Peacekeeper's Belt
 s(307666)/i(271734),	-- Shen'dorei Peacekeeper's Boots
 s(307667)/i(271735),	-- Shen'dorei Peacekeeper's Cloak
@@ -6173,7 +6168,6 @@ s(307668)/i(271736),	-- Shen'dorei Peacekeeper's Robe
 s(307669)/i(271737),	-- Shen'dorei Peacekeeper's Gloves
 s(307670)/i(271738),	-- Shen'dorei Peacekeeper's Helm
 s(307671)/i(271739),	-- Shen'dorei Peacekeeper's Leggings
-s(307672)/i(271740),	-- Knife-Polishing Rag
 s(307673)/i(271742),	-- Shen'dorei Peacekeeper's Vest
 s(307674)/i(271743),	-- Shen'dorei Peacekeeper's Pauldrons
 s(307675)/i(271746),	-- Shen'dorei Skyseer's Belt
@@ -6194,10 +6188,6 @@ s(307689)/i(271761),	-- Al'Aketh Zealot's Helm
 s(307690)/i(271762),	-- Al'Aketh Zealot's Leggings
 s(307691)/i(271763),	-- Al'Aketh Zealot's Vest
 s(307692)/i(271764),	-- Al'Aketh Zealot's Pauldrons
-s(307693)/i(271766),	-- Heavehammer
-s(307694)/i(271767),	-- Healer's Staff
-s(307695)/i(271768),	--
-s(307696)/i(271769),	-- Daewyn's Girdle
 s(307699)/i(271794),	-- Centaur Spear
 s(307700)/i(271795),	-- Wanderer's Broadsword
 s(307701)/i(271796),	-- Blade of the Magram Clan
@@ -6716,14 +6706,6 @@ s(308372)/i(272864),	--
 s(308373)/i(272865),	--
 s(308374)/i(272957),	--
 s(308375)/i(272958),	--
-s(308386)/i(273022),	--
-s(308387)/i(273023),	--
-s(308388)/i(273024),	--
-s(308389)/i(273025),	--
-s(308390)/i(273026),	--
-s(308391)/i(273027),	--
-s(308392)/i(273028),	--
-s(308393)/i(273029),	--
 s(308394)/i(273033),	--
 s(308395)/i(273034),	--
 s(308396)/i(273035),	--
@@ -6866,12 +6848,7 @@ s(308568)/i(273448),	-- Premier Mooncloth Robes
 s(308569)/i(273449),	-- Premier Mooncloth Cord
 s(308570)/i(273450),	-- Premier Silken Cuffs
 s(308577)/i(273654),	-- Crystal Thread Cloak
-s(308600)/i(273807),	--
-s(308604)/i(273811),	--
-s(308608)/i(273815),	-- Airy Windseeker's Shirt
 s(308609)/i(273816),	-- Apprentice's Blouse
-s(308610)/i(273817),	--
-s(308611)/i(273819),	--
 s(308612)/i(273822),	-- Vengeance
 s(308616)/i(273828),	--
 s(308618)/i(273830),	--
@@ -7671,7 +7648,6 @@ s(311063)/i(279267),	-- Mana-infused Cord
 s(311064)/i(279268),	-- Rime-encrusted Boots
 s(311065)/i(279269),	-- Fel Cape
 s(311066)/i(279270),	-- Cloak of Earth and Sky
-s(311067)/i(279273),	-- Hyper Deluxe Sniper Rifle Mk XVII
 s(311072)/i(279388),	--
 s(311073)/i(279391),	-- Taurajo Headband
 s(311074)/i(279392),	-- Glimmer
@@ -7786,14 +7762,7 @@ s(311452)/i(280304),	--
 s(311453)/i(279912),	--
 s(311454)/i(279905),	--
 s(311455)/i(279906),	--
-s(311456)/i(280306),	-- Whimsical Waistwrap
-s(311457)/i(280307),	-- Gizmo Girdle
-s(311458)/i(280308),	-- Clanking Cord
 s(311459)/i(280309),	--
-s(311462)/i(280310),	-- Floppy Goggles
-s(311463)/i(280311),	-- Bent Goggles
-s(311464)/i(280312),	-- Stuckbutton Goggles
-s(311465)/i(280313),	-- Dented Goggles
 s(311466)/i(280317),	-- Frying Pan
 s(311467)/i(279880),	--
 s(311468)/i(279881),	--
@@ -7828,7 +7797,6 @@ s(311515)/i(279879),	--
 s(311516)/i(279836),	--
 s(311517)/i(280470),	--
 s(311518)/i(279846),	--
-s(311519)/i(279849),	--
 s(311520)/i(279838),	--
 s(311521)/i(279848),	--
 s(311522)/i(279847),	--
@@ -7845,7 +7813,6 @@ s(311555)/i(280607),	-- Lightning's Grasp
 s(311559)/i(280623),	-- Veteran Adventurer's Rucksack
 s(311568)/i(280696),	-- Elementalist's Guard
 s(311584)/i(280729),	-- Shen'dorei Tabard
-s(311589)/i(280805),	--
 s(311591)/i(280872),	--
 s(311592)/i(280875),	--
 s(311593)/i(280876),	--
@@ -7963,8 +7930,6 @@ s(311708)/i(281060),	-- Replica Ironforge Air Rifle
 s(311844)/i(281332),	--
 s(311845)/i(281250),	-- Forest Oracle's Cloak
 s(311846)/i(281251),	-- Courier's Wristguards
-s(311849)/i(281256),	-- Repurposed Hair Band
-s(311850)/i(281257),	-- Daggerfang's Daggerfang
 s(311851)/i(281259),	-- Stonard Stompers
 s(311852)/i(281260),	-- Ancestral Waistcord
 s(311853)/i(281261),	-- Crystal-flecked Cord
@@ -8011,7 +7976,6 @@ s(311901)/i(281314),	-- Subdued Dragon's Fang
 s(311902)/i(281315),	-- Foulfur Gloves
 s(311903)/i(281316),	-- Glimmerchain Trousers
 s(311904)/i(281317),	-- Redstone Boots
-s(311905)/i(281318),	-- Bouquet of Auberdine Flowers
 s(311906)/i(281319),	-- Golem War Cloak
 s(311908)/i(281323),	-- Spirit-buckle Belt
 s(311909)/i(281324),	-- Sailing Tunic

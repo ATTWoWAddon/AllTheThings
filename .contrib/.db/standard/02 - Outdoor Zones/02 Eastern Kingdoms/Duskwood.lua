@@ -1387,6 +1387,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 267,	-- Clerk Daltry
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { MAP.WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),

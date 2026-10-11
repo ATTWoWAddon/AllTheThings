@@ -1496,6 +1496,11 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 51.6, 67.6, MAP.TIRISFAL_GLADES },
 					["cr"] = 1662,	-- Captain Perrine
 				}),
+				i(277470, {	-- Schematic: Harvester Override Signalcaster (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					cr = 276061,	-- Decrepit Harvester
+					coord = { 53.8, 56.2, MAP.TIRISFAL_GLADES },
+				}),
 				i(3319, {	-- Short Sabre
 					["coords"] = {
 						{ 78.6, 60.6, MAP.TIRISFAL_GLADES },

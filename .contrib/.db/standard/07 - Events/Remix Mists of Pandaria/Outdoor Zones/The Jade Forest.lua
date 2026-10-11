@@ -126,7 +126,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				q(78893, {	-- A Scrap of Bronze
 					["sourceQuests"] = { 79440 },	-- Recalling the War
-					["provider"] = { "i", 210526 },	-- Unraveling Tunic (QI!)
+					["qs"] = 210526,	-- Unraveling Tunic (QS!)
 					["groups"] = {
 						i(217174),	-- Bronze (QI!)
 					},

@@ -1,10 +1,9 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
+profession(BLACKSMITHING, {
 	n(QUESTS, sharedData({
 		["lvl"] = 40,
-		["timeline"] = { REMOVED_4_0_3 },
 	}, {
 		q(5283, {	-- The Art of the Armorsmith [A]
 			["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
@@ -83,4 +82,4 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["races"] = HORDE_ONLY,
 		}),
 	})),
-})));
+});

@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 	m(WINTERGRASP_BG, {
 		["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
 		["icon"] = 135836,
-		["timeline"] = { ADDED_3_0_3 },
+		["timeline"] = { ADDED_3_0_2 },
 		["maps"] = { WINTERGRASP },
 		["groups"] = {
 			n(ACHIEVEMENTS, {

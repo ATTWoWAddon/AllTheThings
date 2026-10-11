@@ -203,11 +203,4 @@ i(20012, 24366);	-- Greater Dreamless Sleep Potion
 i(20011, 24365);	-- Mageblood Elixir
 i(20013, 24367);	-- Living Action Potion
 i(20014, 24368);	-- Major Troll's Blood Elixir
--- First aid
-i(0, 2330);			-- Minor Healing Potion --> First Aid
-i(13480, 17556);	-- Major Healing Potion [TRAINER: 2.0.1]
-i(0, 7181);			-- Greater Healing Potion
-i(0, 3447);			-- Healing Potion
-i(0, 2337);			-- Lesser Healing Potion
-i(0, 11457);		-- Superior Healing Potion
 --]]

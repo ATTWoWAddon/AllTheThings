@@ -466,7 +466,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if not key then return; end
 	id = reference[key];
 	if not id then return; end
-	
+
 	if key == "achievementID" then
 		-- Prior to Cata, Achievements were not tracked account wide
 		for guid,character in pairs(ATTCharacterData) do
@@ -1885,7 +1885,7 @@ settings.CreateInformationType("LinkSourceID", {
 	Process = function(t, data, tooltipInfo)
 		local link, source = data.link or data.silentLink or data.rawlink, data.sourceID
 		local rowSource = app.ActiveRowReference and app.ActiveRowReference.sourceID
-		if not link then return; end
+		if not link or not data.itemID then return; end
 		local itemName = GetItemInfo(link)
 		-- If it doesn't, the source ID will need to be harvested.
 		local sourceID, success = app.GetSourceID(link);

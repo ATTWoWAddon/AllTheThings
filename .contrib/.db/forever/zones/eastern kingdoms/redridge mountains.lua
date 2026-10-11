@@ -393,6 +393,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						cr = 397,	-- Morganth
 					}),
 					i(5274),	-- Rose Mantle
+					i(270033, {	-- Demonhide Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270034, {	-- Shadow Gauntlets
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(150, {	-- Murloc Poachers
@@ -827,6 +833,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
+				["sym"] = {{"select","itemID",
+					236,	-- Cured Leather Armor
+					1849,	-- Cured Leather Belt
+					238,	-- Cured Leather Boots
+					1850,	-- Cured Leather Bracers
+					239,	-- Cured Leather Gloves
+					237,	-- Cured Leather Pants
+				}},
 				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
@@ -1156,101 +1170,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 10.4, 74.4, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				groups = bubbleDownClassicRep(2586, {	-- Azeroth Commerce Authority
-					{	-- Neutral
-						i(271625, {	-- Engineering Certification
-							cost = { { "c", 3402, 1000 } },	-- x1000 Merchant's Favor
-						}),
-						i(264205, {	-- Schematic: EZ-Thro Copper Bomb XL (RECIPE!)
-							cost = { { "c", 3402, 45 } },	-- x45 Merchant's Favor
-						}),
-						i(264204, {	-- Schematic: EZ-Thro Wrap (RECIPE!)
-							cost = { { "c", 3402, 45 } },	-- x45 Merchant's Favor
-						}),
-						i(264206, {	-- Schematic: No Slip SAF-T Padding (RECIPE!)
-							cost = { { "c", 3402, 45 } },	-- x45 Merchant's Favor
-						}),
-						i(264203, {	-- Schematic: SAF-T Copper Bomb (RECIPE!)
-							cost = { { "c", 3402, 45 } },	-- x45 Merchant's Favor
-						}),
-						i(264202, {	-- Schematic: SAF-T Dynamite (RECIPE!)
-							cost = { { "c", 3402, 45 } },	-- x45 Merchant's Favor
-						}),
-						i(264201, {	-- Schematic: SAF-T Tabs (RECIPE!)
-							cost = { { "c", 3402, 45 } },	-- x45 Merchant's Favor
-						}),
-						i(285285, {	-- Schematic: Satchel of Copper Bombs (RECIPE!)
-							cost = { { "c", 3402, 45 } },	-- x45 Merchant's Favor
-						}),
-					}, {	-- Friendly
-						i(280326, {	-- Schematic: Bent Goggles (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(280323, {	-- Schematic: Clanking Cord (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(280328, {	-- Schematic: Dented Goggles (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(264211, {	-- Schematic: EZ-Thro Fireproof Fuse (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(280325, {	-- Schematic: Floppy Goggles (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(280322, {	-- Schematic: Gizmo Girdle (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(264209, {	-- Schematic: SAF-T Bell (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(285286, {	-- Schematic: Satchel of Bronze Bombs (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(280327, {	-- Schematic: Stuckbutton Goggles (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-						i(280321, {	-- Schematic: Whimsical Waistwrap (RECIPE!)
-							cost = { { "c", 3402, 180 } },	-- x180 Merchant's Favor
-						}),
-					}, {	-- Honored
-						i(264217, {	-- Schematic: Compact Critter Carrier (RECIPE!)
-							cost = { { "c", 3402, 270 } },	-- x270 Merchant's Favor
-						}),
-						i(264216, {	-- Schematic: Emergency Field Cloak 270 (RECIPE!)
-							cost = { { "c", 3402, 270 } },	-- x270 Merchant's Favor
-						}),
-						i(264221, {	-- Schematic: Gnomish Army Knife (RECIPE!)
-							cost = { { "c", 3402, 270 } },	-- x270 Merchant's Favor
-						}),
-						i(264234, {	-- Schematic: Gnomish Poultryizer (RECIPE!)
-							cost = { { "c", 3402, 360 } },	-- x360 Merchant's Favor
-						}),
-						i(264222, {	-- Schematic: Loot-A-Rang (RECIPE!)
-							cost = { { "c", 3402, 270 } },	-- x270 Merchant's Favor
-						}),
-						i(264220, {	-- Schematic: SAF-T Disposable Parachute (RECIPE!)
-							cost = { { "c", 3402, 270 } },	-- x270 Merchant's Favor
-						}),
-						i(285288, {	-- Schematic: Satchel of Dark Iron Bombs (RECIPE!)
-							cost = { { "c", 3402, 270 } },	-- x270 Merchant's Favor
-						}),
-						i(285287, {	-- Schematic: Satchel of Iron Bombs (RECIPE!)
-							cost = { { "c", 3402, 270 } },	-- x270 Merchant's Favor
-						}),
-						i(264237, {	-- Schematic: Stealthman 52 (RECIPE!)
-							cost = { { "c", 3402, 360 } },	-- x360 Merchant's Favor
-						}),
-						i(264235, {	-- Schematic: Ultralight Goblin Glider (RECIPE!)
-							cost = { { "c", 3402, 360 } },	-- x360 Merchant's Favor
-						}),
-						i(264232, {	-- Schematic: Ultrasafe Rechargeable Battery (RECIPE!)
-							cost = { { "c", 3402, 360 } },	-- x360 Merchant's Favor
-						}),
-					}, {	-- Revered
-					}, {	-- Exalted
-					},
-				}),
+				groups = ENGINEERING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(3085, {	-- Gloria Femmel <Cooking Supplies>
 				coord = { 21.5, 43.4, MAP.REDRIDGE_MOUNTAINS },

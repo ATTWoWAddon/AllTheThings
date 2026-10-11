@@ -25,6 +25,19 @@ root(ROOTS.Instances, {
 					},
 				}),
 				]]--
+				q(92489, {	-- Power Overwhelming
+					qg = 5694,	-- High Sorcerer Andromath
+					coord = { 48.7, 87.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 24,
+					groups = {
+						objective(1, {	-- 0/1 Mana Elemental slain
+							["provider"] = { "n", 246016 },	-- Mana Elemental
+						}),
+						i(251962),	-- Violet Sash
+						i(279849),	-- Runebound Gloves
+					},
+				}),
 			}),
 			n(RARES, {
 				e(3310, {	-- Lyn the Ignored

@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,campsite,cq,crit,cu,de,en,exp,faction,flt,fp,h,hqt,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,campsite,cq,crit,cu,de,en,exp,faction,flt,fp,h,hqt,hqtbr,i,m,mm,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateWarbandScene,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDecor,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateHQT,_.CreateHQTBonusRep,_.CreateItem,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Delves=
 h(-204,{SortPriority=2,g={
 x(11,{awp=110002,g={
@@ -273,8 +273,7 @@ ach(40538,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,234
 crit(68808,{achID=40438,id=7})}}),
 ach(40635,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},g={
 crit(111233,{achID=40438,id=7})}}),
-ach(42676,{awp=110200,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484},g={
-crit(105820,{achID=42676,id=1,questID=88967})}}),
+ach(42676,{awp=110200,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
 ach(61342,{awp=110200,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
 ach(41723,{awp=110100,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
 ach(41537,{awp=110100,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2348,2396,2420,2425,2452,2484}}),
@@ -937,6 +936,8 @@ hqt(86989,{awp=110100}),
 hqt(86990,{awp=110100}),
 hqt(86991,{awp=110100}),
 hqt(86992,{awp=110100}),
+hqt(86993,{awp=110100,g={
+crit(103602,{achID=41723,id=1})}}),
 hqt(88948,{awp=110200}),
 hqt(88949,{awp=110200}),
 hqt(88950,{awp=110200}),
@@ -956,7 +957,9 @@ hqt(88962,{awp=110200}),
 hqt(88963,{awp=110200}),
 hqt(88964,{awp=110200}),
 hqt(88965,{awp=110200}),
-hqt(88966,{awp=110200})}),
+hqt(88966,{awp=110200}),
+hqt(88967,{awp=110200,g={
+crit(105820,{achID=42676,id=1})}})}),
 h(-45,{
 q(84370,{isWeekly=1,lvl=70,qss={227794}}),
 q(84519,{lvl=70,maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452},qss={228560},rwp=110100,u=2,g={
@@ -973,7 +976,7 @@ q(81593,{coords={
 q(81595,{coords={
 [2339]={{47.4,44.4}}},lvl=80,qgs={206017},rwp=110100,sourceQuests={81510,84365},sqreq=1,u=2}),
 q(84224,{coords={
-[2339]={{47.4,44.4}}},lvl=80,rwp=110100,u=2}),
+[2339]={{47.4,44.4}}},lvl=80}),
 q(81596,{coords={
 [2339]={{47.8,44.5}}},lvl=70,qgs={226763},rwp=110100,sourceQuests={81595},u=2}),
 q(83500,{coords={
@@ -1850,14 +1853,18 @@ i(246053,{spellID=1240570})}),
 h(-56,{
 o(455498,{coords={
 [2454]={{62.1,38.2}},
-[2455]={{47.9,24.6}}},description="Use Waygate on the 1st Level.",questID=83692}),
+[2455]={{47.9,24.6}}},description="Use Waygate on the 1st Level.",questID=83692,g={
+crit(105903,{achID=42679,id=2})}}),
 o(455518,{coords={
-[2455]={{62,11.1}}},questID=83673}),
+[2455]={{62,11.1}}},questID=83673,g={
+crit(105905,{achID=42679,id=4})}}),
 o(455535,{coords={
-[2455]={{49.7,92.6}}},description="Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",questID=92573}),
+[2455]={{49.7,92.6}}},description="Use |cFFFFFFFFPhase Cutter|r ability to penetrate the barrier.",questID=92573,g={
+crit(109146,{achID=42679,id=1})}}),
 o(539785,{coords={
 [2455]={{43.9,64.7}},
-[2476]={{43.3,65.7}}},questID=90839})})}}),
+[2476]={{43.3,65.7}}},questID=90839,g={
+crit(105904,{achID=42679,id=3})}})})}}),
 m(2269,{coords={
 [2248]={{38.6,73.9}}},icon=_.asset("Delves_Nerubian"),g={
 h(-12,{
@@ -2779,6 +2786,8 @@ q(96612,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635,2647}
 q(96615,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635,2647},qss={274970}}),
 q(97616,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635,2647},qss={277506}}),
 q(97910,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635,2647},qss={279012}})}),
+h(-47,{awp=120105,g={
+i(280562,{f=55,spellID=1309282})}}),
 h(-56,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635,2647},g={
 o(656489,{cost={{"i",275910,1}},isWeekly=1,questID=92887,sym={{"select","itemID",262391,264971,264970,265368,265366,265367}}})}}),
 h(-58,{
@@ -3098,7 +3107,12 @@ i(254869,{b=1,f=55,spellID=1258805}),
 s(303844,265366,{f=21})}}),
 o(581922,{providers={{"i",252415},{"i",265714}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(506498),
-o(658855,{awp=120100})})}}),
+o(658855,{awp=120100})}),
+hqtbr(93819,{isWeekly=1,maxReputation={2696,20}}),
+hqtbr(93820,{isWeekly=1,maxReputation={2699,20}}),
+hqtbr(93821,{isWeekly=1,maxReputation={2710,20}}),
+hqtbr(93822,{isWeekly=1,maxReputation={2704,20}}),
+hqtbr(99222,{awp=120100,isWeekly=1,maxReputation={2772,20}})}}),
 h(-31,{
 faction(2744)}),
 h(-35,{
@@ -3187,7 +3201,8 @@ hqt(95871,{awp=120100}),
 hqt(95872,{awp=120100}),
 hqt(95873,{awp=120100}),
 hqt(95874,{awp=120100}),
-hqt(95875,{awp=120100})}),
+hqt(95875,{awp=120100,g={
+crit(115824,{achID=41723,id=2})}})}),
 h(-39,{
 i(258738,{b=1,description="Mailed to you after your first death in a delve."})}),
 h(-45,{
@@ -3284,12 +3299,22 @@ s(300846,249631,{b=1,f=4,loc=44,lvl={78}}),
 s(300851,249636,{b=1,f=4,loc=43,lvl={78}})}}),
 s(303516,264849,{cost={{"c",2803,2500}},f=3}),
 s(303519,264853,{cost={{"c",2803,2500}},f=2,loc=41}),
+s(316036,284055,{awp=120105,cost={{"c",2803,2500}},f=2,loc=41}),
 s(309593,276165,{awp=120100,cost={{"c",2803,2500}},f=3}),
+s(316037,284056,{awp=120105,cost={{"c",2803,2500}},f=3}),
 s(303525,264860,{cost={{"c",2803,2500}},f=2,loc=40}),
 s(303522,264856,{cost={{"c",2803,2000}},f=2,loc=40})}),
 h(-679,{
+de(26385,{awp=120105,cost={{"c",2803,150}},itemID=284355,spellID=1315977}),
+de(8991,{awp=120105,cost={{"c",2803,150}},itemID=252043,spellID=1254108}),
+de(29117,{awp=120105,cost={{"c",2803,500}},itemID=284353,spellID=1315975}),
+de(1429,{awp=120105,cost={{"c",2803,150}},itemID=244346,spellID=1237025}),
+de(1431,{awp=120105,cost={{"c",2803,150}},itemID=244348,spellID=1237029}),
+de(15749,{awp=120105,cost={{"c",2803,500}},itemID=264485,spellID=1272048}),
 de(2503,{cost={{"c",2803,500}},itemID=246779,spellID=1243761}),
 de(7780,{cost={{"c",2803,500}},itemID=250770,spellID=1251353}),
+de(23552,{awp=120105,cost={{"c",2803,1000}},itemID=284362,spellID=1315984}),
+de(16096,{awp=120105,cost={{"c",2803,150}},itemID=264719,spellID=1272515}),
 de(25296,{awp=120100,cost={{"c",2803,500}},itemID=275853,spellID=1298012}),
 de(24765,{awp=120100,cost={{"c",2803,500}},itemID=275857,spellID=1298016})}),
 flt(50,{
@@ -3332,6 +3357,7 @@ s(302618,262990,{cost={{"c",3316,2600}},f=1})}),
 flt(50,{
 i(276536,{awp=120100,cost={{"c",3316,10}},f=55,questID=96976,spellID=1304693}),
 i(275936,{awp=120100,cost={{"c",3316,10}},questID=96961,spellID=1298345}),
+i(286558,{awp=120105,cost={{"c",3316,10}},questID=99231,spellID=1320592}),
 i(275986,{awp=120100,f=55,questID=98848,spellID=1316982,type="ihqt"}),
 cq(93869,{b=1,cost={{"c",3316,2000}},itemID=262963,spellID=1269618})}),
 flt(100,{
@@ -3682,8 +3708,6 @@ ach(63720,{coords={
 [2647]={{18.4,20.5},{50.3,85.3},{88.4,53.9}}},providers={{"o",672624},{"o",672785},{"o",672788}}}),
 ach(63717,{
 title(797),
-crit(117165,{achID=63717,id=3,questID=98605,u=1}),
-crit(117166,{achID=63717,id=4,questID=98606,u=1}),
 crit(117169,{achID=63717,id=7,questID=98609,u=1}),
 crit(117170,{achID=63717,id=8,questID=98610,u=1}),
 crit(117173,{achID=63717,id=11,questID=98613,u=1}),
@@ -3714,9 +3738,9 @@ ach(63724,{providers={{"s",1315026}}}),
 ach(63715,{
 mnt(1314715,{itemID=283363})}),
 ach(63718,{coords={
-[2647]={{59.3,26.9}}},cost={{"i",282402,1}}}),
+[2647]={{50.4,78.5},{59.3,26.9}}},cost={{"i",282402,1}}}),
 ach(63719,{coords={
-[2647]={{59.3,26.9}}},cost={{"i",282402,20}},g={
+[2647]={{50.4,78.5},{59.3,26.9}}},cost={{"i",282402,20}},g={
 title(798)}}),
 ach(63723),
 ach(63716,{
@@ -3741,7 +3765,8 @@ ach(63722,{providers={{"s",1314979}},g={
 title(799)}})}),
 h(-24,{
 i(285807),
-i(285875)}),
+i(285875),
+i(285876)}),
 h(-31,{
 faction(2836)}),
 h(-32,{
@@ -3788,7 +3813,9 @@ q(98834,{coords={
 [2647]={{35.6,64.8}}},qgs={248567},sourceQuests={98833}}),
 q(98836,{coords={
 [2647]={{44.4,84.6}}},qgs={248567},sourceQuests={98834},g={
-toy(286643)}})}),
+toy(286643)}}),
+flt(50,{
+i(271156,{spellID=1288723})})}),
 h(-47,{
 i(285801,{spellID=1318437}),
 i(279284)}),
@@ -3843,13 +3870,23 @@ o(676663,{coords={
 crit(117195,{achID=63717,id=33})}}),
 o(676760,{coords={
 [2647]={{47.7,42.7}}},questID=98649,g={
-crit(117199,{achID=63717,id=37})}})}}),
+crit(117199,{achID=63717,id=37})}}),
+o(676622,{coords={
+[2647]={{38.8,83.4}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98605,g={
+i(282424,{f=55,spellID=1313862}),
+de(25129,{itemID=284359,spellID=1315982}),
+crit(117165,{achID=63717,id=3})}}),
+o(676623,{coords={
+[2647]={{38,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98606,g={
+s(316078,284181,{f=3}),
+crit(117166,{achID=63717,id=4})}})}}),
 o(676583,{crs={273788},description="Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",g={
 i(282402,{spellID=1313734})}}),
 o(696116,{coords={
 [2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),
 o(676747,{description="Spawns randomly throughout the Labyrinth."}),
-o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
+o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
+o(705955,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
 h(-64,{
 de(8992,{itemID=252044,spellID=1254109}),
 de(15748,{itemID=264484,spellID=1272047}),

@@ -6,8 +6,8 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     labels:
-      - "type:dependencies"
-      - "area:github-actions"
+      - "type:maintenance"
+      - "area:ci"
     schedule:
       interval: "daily"
     cooldown:

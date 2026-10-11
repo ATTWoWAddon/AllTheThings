@@ -707,7 +707,14 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				}),
 				n(266727, {	-- Secret Souvenir (54)
 					["description"] = "On a turtle who may waddle around a bit...",
-					["coord"] = { 60.3, 52.5, FOUNDERS_POINT },
+					["cr"] = 270576,
+					["coords"] = {
+						{ 48.0, 53.8, FOUNDERS_POINT },
+						{ 48.2, 57.8, FOUNDERS_POINT },
+						{ 52.6, 61.6, FOUNDERS_POINT },
+						{ 61.0, 55.4, FOUNDERS_POINT },
+						{ 64.8, 56.2, FOUNDERS_POINT },
+					},
 				}),
 				n(266728, {	-- Secret Souvenir (55)
 					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",

@@ -67,6 +67,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(98190, {	-- A Friend of the Family (1/2)
+				["sourceQuest"] = 98189,	-- Return the Statuette (2/2)
+				["qg"] = 2104,	-- Captain Stoutfist
+				["qi"] = 279595,	-- Menethil Statuette
+				["coord"] = { 9.8, 57.4, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+			}),
+			q(98191, {	-- A Friend of the Family (2/2)
+				["sourceQuest"] = 98190,	-- A Friend of the Family (1/2)
+				["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				["qi"] = 269598,	-- Menethil Statuette
+				["coord"] = { 80.0, 38.6, MAP.STORMWIND_CITY },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+				["groups"] = {
+					i(281296),	-- Knight's Lance
+					i(281297),	-- Royal Dagger
+				},
+			}),
 			q(304, {	-- A Grim Task
 				["qg"] = 1071,	-- Longbraid the Grim
 				["coord"] = { 49.8, 18.3, MAP.WETLANDS },
@@ -84,6 +107,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 					i(2916),	-- Gold Lion Shield
 					i(2917),	-- Tranquil Ring
+					i(270050, {	-- Fury Ring
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
+			}),
+			q(98282, {	-- Alchemical Hazards
+				["qg"] = 1480,	-- Caitlin Grassman
+				["coord"] = { 11.9, 58.8, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+				["groups"] = {
+					objective(1, {	-- 0/1 Unruptured Stalker Gland
+						["provider"] = { "i", 280319 },	-- Unruptured Stalker Gland
+						["crs"] = { 1111, 4040 },	-- Leech Stalker, Cave Stalker
+						["coords"] = {
+							{ 52.7, 63.0, MAP.WETLANDS },	-- Leech Stalker
+							{ 48.5, 60.3, MAP.WETLANDS },	-- Cave Stalker
+						},
+					}),
+					i(6453),	-- x5 Strong Anti-Venom
 				},
 			}),
 			q(471, {	-- Apprentice's Duties
@@ -117,6 +161,48 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(2263),	-- Phytoblade
 				},
 			}),
+			q(98208, {	-- Bloom of the Heavens (1/2)
+				["qg"] = 270844,	-- Sylessa Duskwhisper
+				["coord"] = { 8.0, 55.9, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 22,
+				["groups"] = {
+					objective(1, {	-- Nord'el
+						["providers"] = {
+							{ "i", 279915 },	-- Nord'el
+							{ "o", 670962 },	-- Nord'el
+						},
+						["coord"] = { 12.2, 63.8, MAP.WETLANDS },
+					}),
+					i(281318),	-- Bouquet of Auberdine Flowers
+				},
+			}),
+			q(98209, {	-- Bloom of the Heavens (2/2)
+				["sourceQuest"] = 98208,	-- Bloom of the Heavens (1/2)
+				["qg"] = 270844,	-- Sylessa Duskwhisper
+				["qi"] = 279924,	-- Nord'el
+				["coord"] = { 8.0, 55.9, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.DARKSHORE },
+				["lvl"] = 22,
+			}),
+			q(88756, {	-- Bring Back a Bang
+				["qg"] = 1073,	-- Ashlan Stonesmirk
+				["coord"] = { 50.0, 18.2, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 27,
+				["groups"] = {
+					objective(1, {	-- 0/3 Stolen Explosives
+						["providers"] = {
+							{ "i", 280806 },	-- Stolen Explosives
+							{ "o", 673206 },	-- Stolen Explosives
+						},
+						["coord"] = { 62.5, 28.2, MAP.WETLANDS },
+					}),
+					i(6714),	-- Ez-Thro Dynamite
+				},
+			}),
 			q(279, {	-- Claws from the Deep
 				["qg"] = 1242,	-- Karl Boran
 				["coord"] = { 8.3, 58.5, MAP.WETLANDS },
@@ -144,12 +230,57 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(2943),	-- Eye of Paleth
 				},
 			}),
+			q(98072, {	-- Crocs of the Sky
+				["sourceQuest"] = 471,	-- Apprentice's Duties
+				["qg"] = 2094,	-- James Halloran
+				["coord"] = { 8.5, 55.7, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 19,
+				["groups"] = {
+					objective(1, {	-- 0/8 Pristine Crimson Scale
+						["provider"] = { "i", 279385 },	-- Pristine Crimson Scale
+						["coords"] = {
+							{ 61.8, 31.2, MAP.WETLANDS },
+							{ 65.4, 43.0, MAP.WETLANDS },
+							{ 68.8, 45.6, MAP.WETLANDS },
+						},
+						["crs"] = {
+							1044,	-- Flamesnorting Whelp
+							1043,	-- Lost Whelp
+							1069,	-- Crimson Whelp
+							1042,	-- Red Whelp
+						},
+					}),
+				},
+			}),
 			q(469, {	-- Daily Delivery
 				["qg"] = 2093,	-- Einar Stonegrip
 				["qi"] = 3347,	-- Bundle of Crocolisk Skins
 				["coord"] = { 49.8, 39.4, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 18,
+			}),
+			q(98291, {	-- Death to the Dragonmaw
+				["qg"] = 270637,	-- Howin Kindfeather
+				["coord"] = { 49.3, 42.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 22,
+				["groups"] = {
+					objective(1, {	-- 0/8 Dragonmaw Reclaimer slain
+						["provider"] = { "n", 271351 },	-- Dragonmaw Reclaimer
+						["coord"] = { 59.7, 44.9, MAP.WETLANDS },
+					}),
+					objective(2, {	-- 0/5 Dragonmaw Soulbinder slain
+						["provider"] = { "n", 271348 },	-- Dragonmaw Soulbinder
+						["coord"] = { 62.1, 43.8, MAP.WETLANDS },
+					}),
+					objective(3, {	-- 0/3 Dragonmaw Infiltrator slain
+						["provider"] = { "n", 271346 },	-- Dragonmaw Infiltrator
+						["coord"] = { 58.7, 47.3, MAP.WETLANDS },
+					}),
+				},
 			}),
 			q(474, {	-- Defeat Nek'rosh
 				["sourceQuest"] = 465,	-- Nek'rosh's Gambit
@@ -209,6 +340,93 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 							1011,	-- Mosshide Trapper
 						},
 					}),
+				},
+			}),
+			q(98313, {	-- For Further Study
+				["sourceQuest"] = 98310,	-- Gleaning Our Future
+				["qg"] = 1077,	-- Prospector Whelgar
+				["qi"] = 280403,	-- Whelgar Relic Package (PQI!)
+				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 24,
+			}),
+			q(98293, {	-- Forced Disarmament
+				["provider"] = { "o", 672330 },	-- Dragonmaw Armaments
+				["coord"] = { 58.8, 45.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 22,
+				["groups"] = {
+					objective(1, {	-- 0/30 Dragonmaw Armaments
+						["providers"] = {
+							{ "i", 280369 },	-- Dragonmaw Armaments
+							{ "o", 672336 },	-- Dragonmaw Armaments
+							{ "o", 672334 },	-- Dragonmaw Armaments
+							{ "o", 672337 },	-- Dragonmaw Armaments
+						},
+						["coord"] = { 64.8, 46.2, MAP.WETLANDS },
+					}),
+				},
+			}),
+			q(98221, {	-- From the Ashes
+				["qg"] = 2104,	-- Captain Stoutfist
+				["coord"] = { 9.9, 57.4, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 23,
+				["groups"] = {
+					objective(1, {	-- Attack Plan: Menethil Harbor destroyed
+						["provider"] = { "o", 671481 },
+						["coord"] = { 45.4, 42.7, MAP.WETLANDS },
+					}),
+					objective(2, {	-- Attack Plan: Thelsamar destroyed
+						["provider"] = { "o", 671486 },
+						["coord"] = { 49.3, 46.8, MAP.WETLANDS },
+					}),
+					objective(3, {	-- Attack Plan: Southshore destroyed
+						["provider"] = { "o", 671483 },
+						["coord"] = { 45.3, 45.6, MAP.WETLANDS },
+					}),
+					objective(4, {	-- Attack Plan: Ironforge destroyed
+						["provider"] = { "o", 671487 },
+						["coord"] = { 38.6, 46.2, MAP.WETLANDS },
+					}),
+				},
+			}),
+			q(98310, {	-- Gleaning Our Future
+				["sourceQuest"] = 98216,	-- Understanding Our Present
+				["qg"] = 1077,	-- Prospector Whelgar
+				["qi"] = 280394,	-- Goaz Stone (PQI!)
+				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 24,
+				["groups"] = {
+					objective(1, {	-- 0/1 Heart of Ados
+						["provider"] = { "i", 280395 },	-- Heart of Ados
+						["coord"] = { 77.2, 47.4, MAP.WETLANDS },
+						["cr"] = 271338,	-- Ados
+					}),
+					objective(2, {	-- 0/1 Heart of Modr
+						["provider"] = { "i", 280396 },	-- Heart of Modr
+						["coord"] = { 51.6, 17.2, MAP.WETLANDS },
+						["cr"] = 271460,	-- Modr
+					}),
+					objective(3, {	-- 0/1 Heart of Golm
+						["provider"] = { "i", 280397 },	-- Heart of Golm
+						["coord"] = { 67.6, 71.8, MAP.WETLANDS },
+						["cr"] = 271462,	-- Golm
+					}),
+					objective(4, {	-- 0/1 Heart of Neru
+						["provider"] = { "i", 280398 },	-- Heart of Neru
+						["coord"] = { 60.9, 21.7, MAP.WETLANDS },
+						["cr"] = 271458,	-- Neru
+					}),
+					i(281319),	-- Golem War Cloak
+					i(281320),	-- Rune-Etched Ring
+					i(281321),	-- Giantstone Medallion
 				},
 			}),
 			q(305, {	-- In Search of The Excavation Team (1/2)
@@ -271,6 +489,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 23,
 			}),
+			q(98223, {	-- Old Habits
+				["provider"] = { "o", 671518 },	-- Tattered Spellbook
+				["qi"] = 280042,	-- Tattered Spellbook (PQI!)
+				["coord"] = { 53.5, 54.5, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 23,
+				["groups"] = {
+					i(281306),	-- Flamescarred Spellbook
+					i(281307),	-- Dragonmaw Buckler
+				},
+			}),
 			q(294, {	-- Ormer's Revenge (1/3)
 				["qg"] = 1078,	-- Ormer Ironbraid
 				["coord"] = { 38.0, 51.2, MAP.WETLANDS },
@@ -316,6 +546,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(3566),	-- Raptorbane Armor
 					i(5246),	-- Excavation Rod
 					i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+					i(270039, {	-- Raptorclaw Shoulders
+						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(634, {	-- Plea To The Alliance
@@ -324,6 +557,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["coord"] = { 49.9, 18.2, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 28,
+			}),
+			q(98245, {	-- Razormaw Needling
+				["qg"] = 270637,	-- Howin Kindfeather
+				["coord"] = { 49.3, 42.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 21,
+				["groups"] = {
+					objective(1, {	-- 0/10 Razormaw Incisor
+						["provider"] = { "i", 280103 },	-- Razormaw Incisor
+						["coord"] = { 69.6, 33.5, MAP.WETLANDS },
+						["crs"] = {
+							1018,	-- Highland Razormaw
+							1019,	-- Elder Razormaw
+						},
+					}),
+				},
 			}),
 			q(281, {	-- Reclaiming Goods
 				["sourceQuest"] = 279,	-- Claws from the Deep
@@ -340,12 +590,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 23,
 			}),
-			q(286, {	-- Return the Statuette
+			q(286, {	-- Return the Statuette (1/2)
 				["sourceQuest"] = 285,	-- Search More Hovels
-				["providers"] = {
-					{ "o", 259 },	-- Half-buried Barrel
-					{ "i", 2625 },	-- Menethil Statuette
-				},
+				["provider"] = { "o", 259 },	-- Half-buried Barrel
+				["qi"] = 2625,	-- Menethil Statuette
 				["coord"] = { 14.0, 34.8, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
@@ -354,12 +602,61 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(2949),	-- Mariner Boots
 				},
 			}),
+			q(98189, {	-- Return the Statuette (2/2)
+				["sourceQuest"] = 286,	-- Return the Statuette (1/2)
+				["qg"] = 1242,	-- Karl Boran
+				["qi"] = 279589,	-- Menethil Statuette
+				["coord"] = { 8.4, 58.6, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+			}),
 			q(285, {	-- Search More Hovels
 				["sourceQuest"] = 284,	-- The Search Continues
 				["provider"] = { "o", 142151 },	-- Sealed Barrel
 				["coord"] = { 13.6, 38.2, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
+			}),
+			q(98197, {	-- Spoils of War
+				["qg"] = 2086,	-- Valstag Ironjaw
+				["coord"] = { 10.1, 56.8, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 18,
+				["groups"] = {
+					objective(1, {	-- 0/6 Khaz Modan Timber
+						["providers"] = {
+							{ "i", 279821 },	-- Khaz Modan Timber
+							{ "o", 670771 },	-- Khaz Modan Timber
+						},
+						["coord"] = { 6.1, 61.8, MAP.WETLANDS },
+					}),
+					objective(2, {	-- 0/30 Khaz Modan Iron
+						["providers"] = {
+							{ "i", 279822 },	-- Khaz Modan Iron
+							{ "o", 670774 },	-- Khaz Modan Iron
+						},
+						["coord"] = { 4.9, 52.6, MAP.WETLANDS },
+					}),
+				},
+			}),
+			q(98297, {	-- Stopping the Cycle
+				["sourceQuest"] = 98291,	-- Death to the Dragonmaw
+				["qg"] = 270637,	-- Howin Kindfeather
+				["coord"] = { 49.3, 42.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 24,
+				["groups"] = {
+					objective(1, {	-- 0/1 Subdued Dragonspawn slain
+						["provider"] = { "n", 271373 },	-- Subdued Dragonspawn
+						["coord"] = { 77.2, 46.6, MAP.WETLANDS },
+					}),
+					i(281312),	-- Fallen Dragon's Scepter
+					i(281313),	-- Trusty Sword
+					i(281314),	-- Subdued Dragon's Fang
+				},
 			}),
 			q(943, {	-- The Absent Minded Prospector (5/5)
 				["sourceQuest"] = 942,	-- The Absent Minded Prospector (4/5) (Darnassus)
@@ -493,6 +790,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
 			}),
+			q(98219, {	-- The Shamed Lieutenant
+				["sourceQuest"] = 98191,	-- A Friend of the Family (2/2)
+				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.HILLSBRAD_FOOTHILLS },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 20,
+			}),
 			q(631, {	-- The Thandol Span (1/3)
 				["qg"] = 1075,	-- Rhag Garmason
 				["coord"] = { 49.9, 18.2, MAP.WETLANDS },
@@ -538,6 +844,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
+			q(98230, {	-- This Land Was Their Land
+				["sourceQuest"] = 474,	-- Defeat Nek'rosh
+				["qg"] = 2104,	-- Captain Stoutfist
+				["coord"] = { 9.8, 57.4, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 22,
+			}),
 			q(276, {	-- Tramping Paws
 				["sourceQuest"] = 463,	-- The Greenwarden
 				["qg"] = 1244,	-- Rethiel the Greenwarden
@@ -553,12 +867,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
+			q(98246, {	-- Trying Times
+				["qg"] = 270637,	-- Howin Kindfeather
+				["coord"] = { 49.3, 42.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 21,
+				["groups"] = {
+					objective(1, {	-- 0/12 Perfect Razormaw Egg
+						["providers"] = {
+							{ "i", 280132 },	-- Perfect Razormaw Egg
+							{ "o", 671892 },	-- Razormaw Eggs
+							{ "o", 671931 },	-- Razormaw Egg
+						},
+						["coord"] = { 35.5, 20.2, MAP.WETLANDS },
+					}),
+				},
+			}),
 			q(299, {	-- Uncovering the Past
 				["description"] = "The quest items spawn randomly in the dig site below.",
 				["qg"] = 1077,	-- Prospector Whelgar
 				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 25,
+				["lvl"] = 22,
 				["groups"] = {
 					objective(1, {	-- 0/1 Ados Fragment
 						["providers"] = {
@@ -587,6 +918,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(2913),	-- Silk Mantle of Gamn
 				},
 			}),
+			q(98216, {	-- Understanding Our Present
+				["sourceQuest"] = 299,	-- Uncovering the Past
+				["qg"] = 1077,	-- Prospector Whelgar
+				["qi"] = 279996,	-- Goaz Stone (PQI!)
+				["coord"] = { 38.8, 52.2, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 23,
+				["groups"] = {
+					objective(1, {	-- 0/1 Ados Fragment
+						["provider"] = { "i", 279993 },	-- Titanic Keystone
+						["coord"] = { 35.3, 47.0, MAP.WETLANDS },
+						["cr"] = 270892,	-- Goaz Warder
+					}),
+					i(281304),	-- Prospector's Signet
+					i(281305),	-- Excavation Cloak
+				},
+			}),
 			q(464, {	-- War Banners
 				["sourceQuest"] = 473,	-- Report to Captain Stoutfist
 				["qg"] = 2104,	-- Captain Stoutfist
@@ -607,6 +956,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						},
 					}),
 				},
+			}),
+			q(98300, {	-- Word to Ironforge
+				["sourceQuest"] = 98297,	-- Stopping the Cycle
+				["qg"] = 270637,	-- Howin Kindfeather
+				["qi"] = 280392,	-- Howin's Missive (PQI!)
+				["coord"] = { 49.3, 42.1, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["maps"] = { MAP.IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 24,
 			}),
 			q(484, {	-- Young Crocolisk Skins
 				["qg"] = 2094,	-- James Halloran
@@ -965,6 +1324,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 				["coord"] = { 15.6, 23.4, MAP.WETLANDS },
 				["cr"] = 1160,	-- Captain Halyndor
+			}),
+			i(250187, {	-- Recipe: Tasty Raptor Bites (RECIPE!)
+				["coord"] = { 27.8, 44.6, MAP.WETLANDS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["cr"] = 1020,	-- Mottled Raptor
 			}),
 			i(3076, {	-- Smoldering Boots
 				["coords"] = {

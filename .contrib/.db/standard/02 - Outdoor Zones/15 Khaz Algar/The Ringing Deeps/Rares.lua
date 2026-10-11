@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221238),	-- Pillar of Constructs
 					i(221218),	-- Reinforced Construct's Greaves
+					hqt_bonusRenown_weekly(84046, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Automaxor
 				},
 			}),
 			n(220267, {	-- Charmonger
@@ -21,6 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221209),	-- Flame Trader's Gloves
 					i(221249),	-- Kobold Rodent Squasher
+					hqt_bonusRenown_weekly(84044, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Charmonger
 				},
 			}),
 			n(220266, {	-- Coalesced Monstrosity
@@ -29,6 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(223006),	-- Signet of Dark Horizons
 					i(221226),	-- Voidtouched Waistguard
+					hqt_bonusRenown_weekly(84045, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Coalesced Monstrosity
 				},
 			}),
 			n(220269, {	-- Cragmund <Guardian of the River>
@@ -37,6 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221254),	-- Earthshatter Lance
 					i(221205),	-- Vest of the River
+					hqt_bonusRenown_weekly(84042, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Cragmund
 				},
 			}),
 			n(220286, {	-- Deepflayer Broodmother
@@ -53,6 +57,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221507),	-- Earth Golem's Wrap
 					i(225999),	-- Earthen Adventurer's Tabard
 					i(221254),	-- Earthshatter Lance
+					hqt_bonusRenown_weekly(85162, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Deepflayer Broodmother
 				},
 			}),
 			n(218393, {	-- Disturbed Earthgorger
@@ -62,6 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223943),	-- Cord of the Earthbreaker
 					i(223926),	-- Earthgorger's Chain Bib
 					i(221237),	-- Lamentable Vagrant's Lantern
+					hqt_bonusRenown_weekly(84050, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Disturbed Earthgorger
 				},
 			}),
 			n(221199, {	-- Hungerer of the Deeps
@@ -69,6 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["questID"] = 81648,
 				["groups"] = {
 					i(223949),	-- Dark Depth Stompers
+					hqt_bonusRenown_weekly(84048, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Hungerer of the Deeps
 				},
 			}),
 			n(220287, {	-- Kelpmire
@@ -80,6 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221264),	-- Fungarian Mystic's Cluster
 					i(221204),	-- Spore Giant's Stompers
 					i(223005),	-- String of Fungal Fruits
+					hqt_bonusRenown_weekly(84047, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Kelpmire
 				},
 			}),
 			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
@@ -99,6 +107,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223501),	-- Ol' Mole Rufus (MOUNT!)
 					i(221255),	-- Sharpened Scalepiercer
 					i(221234),	-- Tidal Pendant
+					hqt_bonusRenown_weekly(85163, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Lurker of the Deeps
 				},
 			}),
 			n(221217, {	-- Spore-Infused Shalewing
@@ -114,6 +123,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223919),	-- Abducted Lawman's Gavel
 					i(223918),	-- Specter Stalker's Shotgun
 					i(223942),	-- Spore-Encrusted Ribbon
+					hqt_bonusRenown_weekly(84049, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Spore-Infused Shalewing
 				},
 			}),
 			n(220271, {	-- Terror of the Forge
@@ -122,6 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221242),	-- Forgeborn Helm
 					i(221255),	-- Sharpened Scalepiercer
+					hqt_bonusRenown_weekly(84040, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Terror of Forge
 				},
 			}),
 			n(220268, {	-- Trungal
@@ -133,6 +144,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221228),	-- Infested Fungal Wristwraps
 					i(223005),	-- String of Fungal Fruits
+					hqt_bonusRenown_weekly(84043, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Trungal
 				},
 			}),
 			n(220270, {	-- Zilthara <The Deepflayer Devourer>
@@ -141,6 +153,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221220),	-- Basilisk Scale Pauldrons
 					i(221247),	-- Cavernous Critter Shooter
+					hqt_bonusRenown_weekly(84041, FACTION_THE_ASSEMBLY_OF_THE_DEEPS),	-- Bonus Rep: Zilthara
 				},
 			}),
 		})),
@@ -195,52 +208,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 		}),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(KHAZ_ALGAR, {
-		m(THE_RINGING_DEEPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-			n(RARES, {
-				q(84046, {	-- Weekly reputation: Automaxor
-					["name"] = "Automaxor weekly reputation obtained.",
-				}),
-				q(84044, {	-- Weekly reputation: Charmonger
-					["name"] = "Charmonger weekly reputation obtained.",
-				}),
-				q(84045, {	-- Weekly reputation: Coalesced Monstrosity
-					["name"] = "Coalesced Monstrosity weekly reputation obtained.",
-				}),
-				q(84042, {	-- Weekly reputation: Cragmund
-					["name"] = "Cragmund weekly reputation obtained.",
-				}),
-				q(85162, {	-- Weekly reputation: Deepflayer Broodmother
-					["name"] = "Deepflayer Broodmother weekly reputation obtained.",
-				}),
-				q(84050, {	-- Weekly reputation: Disturbed Earthgorger
-					["name"] = "Disturbed Earthgorger weekly reputation obtained.",
-				}),
-				q(84048, {	-- Weekly reputation: Hungerer of the Deeps
-					["name"] = "Hungerer of the Deeps weekly reputation obtained.",
-				}),
-				q(84047, {	-- Weekly reputation: Kelpmire
-					["name"] = "Kelpmire weekly reputation obtained.",
-				}),
-				q(85163, {	-- Weekly reputation: Lurker of the Deeps
-					["name"] = "Lurker of the Deeps weekly reputation obtained.",
-				}),
-				q(84049, {	-- Weekly reputation: Spore-Infused Shalewing
-					["name"] = "Spore-Infused Shalewing weekly reputation obtained.",
-				}),
-				q(84040, {	-- Weekly reputation: Terror of Forge
-					["name"] = "Terror of Forge weekly reputation obtained.",
-				}),
-				q(84043, {	-- Weekly reputation: Trungal
-					["name"] = "Trungal weekly reputation obtained.",
-				}),
-				q(84041, {	-- Weekly reputation: Zilthara
-					["name"] = "Zilthara weekly reputation obtained.",
-				}),
-			}),
-		})),
-	}),
-}));
+}))

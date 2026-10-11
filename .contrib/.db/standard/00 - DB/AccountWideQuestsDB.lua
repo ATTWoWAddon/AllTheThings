@@ -1907,6 +1907,7 @@ local AccountWideQuestsDB = {
 	85161,	-- Rotfist weekly reputation
 	85162,	-- Deepflayer Broodmother weekly reputation
 	85163,	-- Lurker of the Deeps weekly reputation
+	85164,	-- Beledar's Spawn Bonus Reputation
 	85165,	-- Deathtide weekly reputation
 	85166,	-- Tka'ktath weekly reputation
 	85167,	-- The One Left weekly reputation
@@ -2915,6 +2916,7 @@ local AccountWideQuestsDB = {
 	97111,	-- ??
 	97115,	-- First Preference Killing of the week
 	97116,	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+	97131,	-- Ancient Chest [The Labyrinth of Kindo'jan]
 	97383,	-- Spirit Corrosion
 	97616,	-- Corrosive Gifts: Corrosive Power
 	97640,	-- Vaults of Atal'Utek: One Coin Too Many
@@ -2948,12 +2950,36 @@ local AccountWideQuestsDB = {
 	98406,	-- A Curated Gift
 	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
 	98515,	-- Vaults of Atal'Utek: A Toxic Tour
+	98602,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98605,	-- Sturdy Chest [The Labyrinth of Kindo'jan]
+	98606,	-- Sturdy Chest [The Labyrinth of Kindo'jan]
+	98607,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98608,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98611,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98612,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98620,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98621,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98625,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98628,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98629,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98633,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98634,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98637,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98638,	-- Ancient Chest [The Labyrinth of Kindo'jan]
+	98649,	-- Ancient Chest [The Labyrinth of Kindo'jan]
 	98740,	-- Unlock Auction House [Sporebearer Fungal Strider]
 	98741,	-- Sporebearer Fungal Strider
 	98742,	-- (Related to Sporebearer Fungal Strider)
 	98743,	-- Unlock Transmogrifier [Sporebearer Fungal Strider]
 	98787,	-- Quest #98787*
+	98831,	-- The Labyrinth
+	98832,	-- Dangers Untold and Hardships Unnumbered
+	98833,	-- You Remind Me of the Bird
+	98834,	-- The Way Forward...
+	98836,	-- ...Is Sometimes the Way Back
 	98848,	-- Delver's Cosmetic Surprise Bag
+	99222,	-- Bonus Reputation: Zul'jarra's Forces [Delve Completion]
+	99306,	-- The Labyrinth of Kindo'jan
 
 	-- Weird partial cases... ??
 	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)

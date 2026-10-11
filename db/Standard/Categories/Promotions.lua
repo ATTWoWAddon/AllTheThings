@@ -116,8 +116,8 @@ mnt(153489,{b=1,itemID=107951,lvl=10,u=2}),
 p(4690,{itemID=232519,npcID=233481,spellID=470914,u=2})}}),
 ach(62387,{description="Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",rwp=120001,u=2,g={
 de(14467,{itemID=260785,sourceAchievements={62387},spellID=1266894,u=2})}}),
-de(15668,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",itemID=264396,rwp=120100,spellID=1271935}),
-de(15669,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nClick on 'Explore Homes'\n\nFlip between Alliance and Horde until you see 'Greener's Plant Nursery' advertisement\n\nClick on 'Free Sample' and authorize the Account connection.",itemID=264397,rwp=120100,spellID=1271936}),
+de(15668,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",itemID=264396,rwp=120100,spellID=1271935,u=2}),
+de(15669,{awp=120001,description="Visit |cFFFFD700zillow.com/warcraft|r\n\nClick on 'Explore Homes'\n\nFlip between Alliance and Horde until you see 'Greener's Plant Nursery' advertisement\n\nClick on 'Free Sample' and authorize the Account connection.",itemID=264397,rwp=120100,spellID=1271936,u=2}),
 ach(62400,{awp=120001,description="Open Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.\n\nNote: If any sort of Parental Controls have been set up on your account, this will not be visible in the Options menu unless they are fully removed via Battle Net support ticket.",g={
 toy(268695)}}),
 de(15148,{awp=120001,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between February 26th, 10:00 a.m. & March 24th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263298,rwp=120001,spellID=1270366,u=2}),
@@ -149,7 +149,7 @@ mnt(1292356,{awp=120007,description="Obtained if you set up a 6-Month WoW Subscr
 en(257974,{awp=120100,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",questID=93324,rwp=120100,spellID=1262585,tmogSetID=5340,u=2,g={
 s(301329,257782,{f=3}),
 s(301311,257762,{f=2,loc=40})}}),
-s(297815,250293,{awp=120100,description="McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",f=3,rwp=120100,u=3}),
+s(297815,250293,{awp=120100,description="McDonald's Australia promotion. Available until 22nd January 2027.\n\nItem is redeemable for 2000 points in the McDonald's Australia app.",f=3,rwp=120107,u=3}),
 p(4893,{awp=120100,description="Available with the purchase of an Emrrrgl Murloc Funko Pop from the Blizzard Gear Store to a US/UK mailing address. The code will be emailed and can be redeemed on Battle.net or the launcher.",itemID=251038,npcID=250776,spellID=1251934,u=3}),
 s(302524,262840,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=45,rwp=120100,u=3}),
 s(302506,262822,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=46,rwp=120100,u=3}),
@@ -297,7 +297,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -527,16 +527,16 @@ s(295506,248384,{f=2,loc=42}),
 s(295509,248387,{f=2,loc=43})}})}}),
 h(-523,{description="These rewards were made available to anyone who purchased Midnight Epic Edition.",u=3,g={
 ach(61402,{providers={{"s",1239138}},u=3}),
-de(9151,{awp=110207,itemID=252668,spellID=1254915,u=3}),
-de(9149,{awp=110207,itemID=252666,spellID=1254913,u=3}),
-de(9150,{awp=110207,itemID=252667,spellID=1254914,u=3}),
-de(9152,{awp=110207,itemID=252669,spellID=1254916,u=3}),
+de(9151,{awp=110207,itemID=252668,sourceAchievements={61402},spellID=1254915,u=3}),
+de(9149,{awp=110207,itemID=252666,sourceAchievements={61402},spellID=1254913,u=3}),
+de(9150,{awp=110207,itemID=252667,sourceAchievements={61402},spellID=1254914,u=3}),
+de(9152,{awp=110207,itemID=252669,sourceAchievements={61402},spellID=1254916,u=3}),
 p(4812,{itemID=243063,npcID=244146,spellID=1234591,u=3}),
 p(4811,{itemID=243062,npcID=244145,spellID=1234588,u=3}),
-de(1458,{awp=110207,itemID=244668,spellID=1237798,u=3}),
-de(2231,{awp=110207,itemID=246414,spellID=1242068,u=3}),
-de(1894,{awp=110207,itemID=245939,spellID=1240036,u=3}),
-de(4843,{awp=110207,itemID=248809,spellID=1247795,u=3}),
+de(1458,{awp=110207,itemID=244668,sourceAchievements={61402},spellID=1237798,u=3}),
+de(2231,{awp=110207,itemID=246414,sourceAchievements={61402},spellID=1242068,u=3}),
+de(1894,{awp=110207,itemID=245939,sourceAchievements={61402},spellID=1240036,u=3}),
+de(4843,{awp=110207,itemID=248809,sourceAchievements={61402},spellID=1247795,u=3}),
 mnt(1239138,{itemID=245610,lvl=10,u=3}),
 mnt(1234303,{itemID=243019,lvl=10,u=3}),
 en(248974,{questID=91953,spellID=1248235,tmogSetID=5164,u=3,g={
@@ -893,7 +893,7 @@ s(187932,206275,{f=1,u=2}),
 s(187933,206276,{f=24,u=2}),
 s(187750,206005,{f=23,u=2})}})}),
 h(-541,{awp=110002,g={
-s(230544,233053,{awp=110005,description="Quest is only available with an US IP. Codes are useable worldwide.\n\nIn the bottom left of your Discord Server list, click Discover & there click on the Quests tab to start the Quest for the Reward.\n\nStream World of Warcraft in Discord to a friend for 15 minutes.\n\nOnce you're in a Direct Message, Groupchat, or Server, simply choose 'Go Live' to stream World of Warcraft for 15 minutes - you'll have a progress bar that indicates how close you are to earning your transmog.\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.' From there, it's a quick copy and paste until the Crown of the Violet Rose is yours!\n\nPromotion is available from December 2nd, 2024 until December 9th, 2024 (11:59PM UTC).",f=2,loc=40,rwp=110005,u=2}),
+s(230544,233053,{awp=110005,f=2,loc=40,rwp=110005,u=2}),
 p(4615,{itemID=228758,npcID=229846,rwp=110002,spellID=463079,u=2}),
 s(297814,250292,{awp=120000,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from January 27th, 2026 until February 2nd, 2026 (11:59PM UTC).",f=3,rwp=120000,u=2}),
 p(4975,{awp=120001,description="At the top of your Direct messages tab on Discord, click the Quests tab to start the Quest for the Reward.\n\nPlay the game for 15 minutes with Discord running.\n\nUpon completion of the quest, you'll be given a code to redeem - head to the Battle.net launcher, click your profile in the top right, and choose 'Redeem Code.'\n\nPromotion is available from March 2nd, 2026 until March 16th, 2026.",itemID=264366,npcID=257493,rwp=120001,spellID=1271843,u=2})}}),
@@ -995,10 +995,10 @@ p(1639,{awp=60102,b=1,itemID=118518,npcID=91226,sharedDescription="Obtained by p
 ach(11425,{awp=70200,sharedDescription="Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",u=2}),
 mnt(232405,{awp=70200,b=1,itemID=143631,lvl=10,sharedDescription="Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",u=2})})}}),
 h(-546,{awp=11201,u=2,g={
-p(757,{b=1,itemID=19055,npcID=14755,spellID=23531,u=2}),
 p(124,{b=1,itemID=22781,npcID=16456,spellID=28505,u=2}),
-p(758,{b=1,itemID=19054,npcID=14756,spellID=23530,u=2}),
-p(1073,{itemID=22780,npcID=16445,spellID=28487,u=2})}}),
+p(1073,{itemID=22780,npcID=16445,spellID=28487,u=2}),
+p(757,{b=1,itemID=19055,npcID=14755,spellID=23531,u=2}),
+p(758,{b=1,itemID=19054,npcID=14756,spellID=23530,u=2})}}),
 h(-547,{
 s(7628,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,u=2}),
 p(244,{awp=30300,b=1,description="Granted to players that attach an authenticator to their account.",itemID=49646,npcID=36871,spellID=69452,u=3}),
@@ -1606,7 +1606,7 @@ toy(202862,{b=1}),
 toy(202865,{b=1})}})}}),
 q(72809,{cost={{"i",202162,1}},repeatable=1,g={
 i(202163,{spellID=398642})}}),
-q(75223,{repeatable=1,g={
+q(75223,{qss={202395},repeatable=1,g={
 i(202395,{spellID=405852})}}),
 q(73171,{cost={{"i",202395,1}},providers={{"o",384744}},g={
 crit(57983,{achID=17360,id=1})}}),

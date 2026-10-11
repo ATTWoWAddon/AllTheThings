@@ -4,6 +4,7 @@ local _, app = ...;
 -- Global locals
 local pairs, ipairs, math_floor, tonumber, pi, MODELFRAME_DEFAULT_ROTATION
 	= pairs, ipairs, math.floor, tonumber, math.pi, MODELFRAME_DEFAULT_ROTATION;
+--- Shared game tooltip extended with ATT icon, model, and reference display helpers.
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
@@ -16,10 +17,12 @@ else
 end
 
 -- Game Tooltip Icon
+--- Frame holding the icon shown beside the shared game tooltip.
 ---@class ATTGameTooltipIcon: Frame
 local GameTooltipIcon = CreateFrame("Frame", nil, GameTooltip);
 GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 GameTooltipIcon:SetSize(72, 72);
+--- Tooltip icon texture with attached background and border textures.
 ---@class ATTGameTooltipIconTexture: Texture
 GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
 GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
@@ -33,6 +36,7 @@ GameTooltipIcon.icon.Border:Show();
 GameTooltipIcon:Hide();
 
 -- Model is used to display the model of an NPC/Encounter.
+--- Container for model previews displayed beside the game tooltip.
 ---@class ATTGameTooltipModelFrame: BackdropTemplate, Frame
 local GameTooltipModel, model, fi = CreateFrame("Frame", nil, GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
 GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
@@ -57,6 +61,7 @@ GameTooltipModelModel:Hide();
 
 local MAX_CREATURES_PER_ENCOUNTER, Models = 9, {};
 for i=1,MAX_CREATURES_PER_ENCOUNTER do
+	--- Individual creature model in the tooltip's multi-model preview.
 	---@class ATTGameTooltipModel: PlayerModel
 	model = CreateFrame("PlayerModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
 	model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4);

@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["description"] = "Walking around in the area.",
 				["coord"] = { 55.6, 27.0, ISLE_OF_DORN},	-- old coords: 80.3, 35.1 / 79.1, 34.2 / 64.0, 39.2
 				["questID"] = 81920,
+				["groups"] = {
+					hqt_bonusRenown_weekly(84036, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Clawbreaker K'zithix
+				}
 			}),
 			n(219266, {	-- Escaped Cutthroat
 				["coord"] = { 25.8, 45.1, ISLE_OF_DORN },
@@ -26,6 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221235),	-- Dark Agent's Cloak
 					i(221208),	-- Unseen Cutthroat's Tunic
+					hqt_bonusRenown_weekly(84029, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Escaped Cutthroat
 				},
 			}),
 			n(219279, {	-- Flamekeeper Graz
@@ -39,6 +43,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221244),	-- Flamekeeper's Footpads
 					i(221249),	-- Kobold Rodent Squasher
+					hqt_bonusRenown_weekly(84034, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Flamekeeper Graz
 				},
 			}),
 			n(219268, {	-- Gar'loc
@@ -48,6 +53,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221248),	-- Deep Terror Carver
 					i(221255),	-- Sharpened Scalepiercer
 					i(221222),	-- Water-Imbued Spaulders
+					hqt_bonusRenown_weekly(84028, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Gar'loc
 				},
 			}),
 			n(222378, {	-- Kereke
@@ -57,6 +63,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(226111),	-- Arakkoan Ritual Staff
 					i(226113),	-- Kereke's Flourishing Sabre
 					i(226114),	-- Windslicer's Lance
+					hqt_bonusRenown_weekly(85160, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Kereke
 				},
 			}),
 			n(219270, {	-- Kronolith, Might of the Mountain
@@ -66,6 +73,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221507),	-- Earth Golem's Wrap
 					i(221254),	-- Earthshatter Lance
 					i(221210),	-- Grips of the Earth
+					hqt_bonusRenown_weekly(84031, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Kronolith, Might of the Mountain
 				},
 			}),
 			n(220890, {	-- Matriarch Charfuria
@@ -75,6 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221247),	-- Cavernous Critter Shooter
 					i(223948),	-- Stubborn Wolf's Greathelm
+					hqt_bonusRenown_weekly(84039, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Matriarch Charfuria
 				},
 			}),
 			n(219267, {	-- Plaguehart
@@ -84,6 +93,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221247),	-- Cavernous Critter Shooter
 					i(221246),	-- Fierce Beast Staff
 					i(221213),	-- Shawl of the Plagued
+					hqt_bonusRenown_weekly(84026, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Plaguehart
 				},
 			}),
 			n(222380, {	-- Rotfist
@@ -93,6 +103,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(226116),	-- Coagulating Phlegm Churner
 					i(226115),	-- Contaminating Cleaver
 					i(226112),	-- Rotfist Flesh Carver
+					hqt_bonusRenown_weekly(85161, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Rotfist
 				},
 			}),
 			n(219278, {	-- Shallowshell the Clacker
@@ -101,6 +112,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221224),	-- Bouldershell Waistguard
 					i(221255),	-- Sharpened Scalepiercer
+					hqt_bonusRenown_weekly(84032, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Shallowshell the Clacker
 				},
 			}),
 			n(220883, {	-- Sweetspark the Oozeful
@@ -110,6 +122,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(223921),	-- Ever-Oozing Signet
 					i(223929),	-- Honey Sweetener's Squeezers
 					i(223920),	-- Slime Deflecting Stopper
+					hqt_bonusRenown_weekly(84038, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Sweetspark the Oozeful
 				},
 			}),
 			n(219269, {	-- Tempest Lord Incarnus
@@ -118,6 +131,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(221230),	-- Storm Bindings
 					i(221236),	-- Stormbreaker's Shield
+					hqt_bonusRenown_weekly(84030, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Tempest Lord Incarnus
 				},
 			}),
 			n(221126, {	-- Tephratennae
@@ -127,6 +141,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["groups"] = {
 					i(223922),	-- Cinder Pollen Cloak
 					i(223937),	-- Honey Deliverer's Leggings
+					hqt_bonusRenown_weekly(84037, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Tephratennae
 				},
 			}),
 			n(219271, {	-- Twice-Stinger the Wretched
@@ -136,6 +151,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(221506),	-- Arachnid's Web-Sown Guise
 					i(221219),	-- Silkwing Trousers
 					i(221239),	-- Spider Blasting Blunderbuss (dupe)
+					hqt_bonusRenown_weekly(84033, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Twice-Stinger the Wretched
 				},
 			}),
 			n(219284, {	-- Zovex
@@ -145,6 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					i(226118),	-- Arcane Prisoner's Puncher
 					i(226119),	-- Arcane Sharpshooter's Crossbow
 					i(226117),	-- Dalaran Guardian's Arcanotool
+					hqt_bonusRenown_weekly(85159, FACTION_COUNCIL_OF_DORNOGAL),	-- Bonus Rep: Zovex
 				},
 			}),
 		})),
@@ -232,58 +249,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 		}),
 	}),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	m(KHAZ_ALGAR, {
-		m(ISLE_OF_DORN, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-			n(RARES, {
-				q(84036, {	-- Weekly reputation: Clawbreaker K'zithix
-					["name"] = "Clawbreaker K'zithix weekly reputation obtained.",
-				}),
-				q(84029, {	-- Weekly reputation: Escaped Cutthroat
-					["name"] = "Escaped Cutthroat weekly reputation obtained.",
-				}),
-				q(84034, {	-- Weekly reputation: Flamekeeper Graz
-					["name"] = "Flamekeeper Graz weekly reputation obtained.",
-				}),
-				q(84028, {	-- Weekly reputation: Gar'loc
-					["name"] = "Gar'loc weekly reputation obtained.",
-				}),
-				q(85160, {	-- Weekly reputation: Kereke
-					["name"] = "Kereke weekly reputation obtained.",
-				}),
-				q(84031, {	-- Weekly reputation: Kronolith, Might of the Mountain
-					["name"] = "Kronolith, Might of the Mountain weekly reputation obtained.",
-				}),
-				q(84039, {	-- Weekly reputation: Matriarch Charfuria
-					["name"] = "Matriarch Charfuria weekly reputation obtained.",
-				}),
-				q(84026, {	-- Weekly reputation: Plaguehart
-					["name"] = "Plaguehart weekly reputation obtained.",
-				}),
-				q(85161, {	-- Weekly reputation: Rotfist
-					["name"] = "Rotfist weekly reputation obtained.",
-				}),
-				q(84032, {	-- Weekly reputation: Shallowshell the Clacker
-					["name"] = "Shallowshell the Clacker weekly reputation obtained.",
-				}),
-				q(84038, {	-- Weekly reputation: Sweetspark the Oozeful
-					["name"] = "Sweetspark the Oozeful weekly reputation obtained.",
-				}),
-				q(84030, {	-- Weekly reputation: Tempest Lord Incarnus
-					["name"] = "Tempest Lord Incarnus weekly reputation obtained.",
-				}),
-				q(84037, {	-- Weekly reputation: Tephratennae
-					["name"] = "Tephratennae weekly reputation obtained.",
-				}),
-				q(84033, {	-- Weekly reputation: Twice-Stinger the Wretched
-					["name"] = "Twice-Stinger the Wretched weekly reputation obtained.",
-				}),
-				q(85159, {	-- Weekly reputation: Zovex
-					["name"] = "Zovex weekly reputation obtained.",
-				}),
-			}),
-		})),
-	}),
-}));
+}))

@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				mission(2121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
 					["provider"] = { "i", 165944 },	-- A Shady Message [A]
 					["groups"] = {
+						i(165945),	-- Investigation Results
 						q(54424, {	-- A Shady Character
 							["pb"] = true,
 							["pvp"] = true,

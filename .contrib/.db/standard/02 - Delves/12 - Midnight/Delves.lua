@@ -804,6 +804,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				-- contains a user-chosen option based on Dundun dialog (Decor/Marl/Undercoin/XP) so no reason to list specifically
 			}),
 		}),
+		-- Weekly Bonus Reputation Triggers
+		hqt_bonusRenown_weekly(93819, FACTION_AMANI_TRIBE),	-- Amani Rep
+		hqt_bonusRenown_weekly(93820, FACTION_THE_SINGULARITY),	-- The Singularity Rep
+		hqt_bonusRenown_weekly(93821, FACTION_SILVERMOON_COURT),	-- Silvermoon Court Rep
+		hqt_bonusRenown_weekly(93822, FACTION_HARATI),	-- Hara'ti Rep
+		hqt_bonusRenown_weekly(99222, FACTION_ZULJARRAS_FORCES, {timeline = { ADDED_12_1_0 }}),	-- Zul'Jarra's Forces Rep
 	})),
 	n(FACTIONS, {
 		faction(2744),	-- Valeera Sanguinar
@@ -1050,6 +1056,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
+					i(284055, {	-- Hexbinder's Spaulders (COSMETIC!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
 					i(276165, {	-- Ophidian Patagia (COSMETIC!)
 						["timeline"] = { ADDED_12_1_0 },
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
@@ -1065,6 +1075,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
 					-- #endif
+					i(284056, {	-- Spirit Effigy (COSMETIC!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 2500 } },
+					}),
 					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
 						["cost"] = { { "c", UNDERCOIN, 2500 } },
 					}),
@@ -1073,11 +1087,43 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					}),
 				}),
 				n(DECOR, {
+					i(284355, {	-- Amani Hex Candle (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(252043, {	-- Amani Horn Beaker (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(284353, {	-- Amani Open Fire Grill (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(244346, {	-- Broken Amani Ritual Urn (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(244348, {	-- Cracked Amani Funerary Urn (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
+					}),
+					i(264485, {	-- Green Amani Tapestry (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
 					i(246779, {	-- Hanging Mana Brazier (DECOR!)
 						["cost"] = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
 						["cost"] = { { "c", UNDERCOIN, 500 } },
+					}),
+					i(284362, {	-- Tusked Amani Canoe (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 1000 } },
+					}),
+					i(264719, {	-- Worn Amani Oar (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", UNDERCOIN, 150 } },
 					}),
 					i(275853, {	-- Zul'Aman Burning Pinecone (DECOR!)
 						["timeline"] = { ADDED_12_1_0 },
@@ -1263,6 +1309,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 					}),
 					i(275936, {	-- Delve-O-Bot 7001: Midnight Software Update Chip (CI!)
 						["timeline"] = { ADDED_12_1_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+					}),
+					i(286558, {	-- Delve-O-Bot 7001: The Labyrinth of Kindo'jan Software Update Chip (CI!)
+						["timeline"] = { ADDED_12_1_5 },
 						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
 					}),
 					i(275986, {	-- Delver's Cosmetic Surprise Bag (CI!)
@@ -1776,10 +1826,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(92444, name(HEADERS.Map, THE_DARKWAY)),	-- The Darkway
 			q(91182, name(HEADERS.Map, PARHELION_PLAZA)),	-- Parhelion Plaza
 		})),
-		q(93819, name(HEADERS.Faction, FACTION_AMANI_TRIBE, {isWeekly=true})),	-- Amani Rep
-		q(93820, name(HEADERS.Faction, FACTION_THE_SINGULARITY, {isWeekly=true})),	-- The Singularity Rep
-		q(93821, name(HEADERS.Faction, FACTION_SILVERMOON_COURT, {isWeekly=true})),	-- Silvermoon Court Rep
-		q(93822, name(HEADERS.Faction, FACTION_HARATI, {isWeekly=true})),	-- Hara'ti Rep
 		q(93935, {isWeekly=true}),	-- 1st weekly bonus Hero item from Bountiful chest
 		q(93936, {isWeekly=true}),	-- 2nd weekly bonus Hero item from Bountiful chest
 		q(93937, {isWeekly=true}),	-- 3rd weekly bonus Hero item from Bountiful chest
@@ -1798,6 +1844,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(97637),	-- Looted Tormented Soul
 			q(98501, name(HEADERS.Object, 584514, {isWeekly=true})),	-- First Bountiful Coffer of the week
 		})),
-		q(99222, name(HEADERS.Faction, FACTION_ZULJARRAS_FORCES, {isWeekly=true})),	-- Zul'Jarra's Forces Rep
 	})),
 }));

@@ -116,10 +116,10 @@ h(-534,{description="These rewards are available to anyone who purchases Starcra
 ach(4824,{providers={{"i",56806}},u=1}),
 p(258,{b=1,itemID=56806,npcID=42078,petTypeID=10,q=3,spellID=78381,u=1})}})}}),
 h(-546,{awp=11201,u=2,g={
-p(757,{b=1,itemID=19055,npcID=14755,petTypeID=2,q=1,spellID=23531,u=2}),
 p(124,{b=1,itemID=22781,npcID=16456,petTypeID=8,q=1,spellID=28505,u=2}),
-p(758,{b=1,itemID=19054,npcID=14756,petTypeID=2,q=1,spellID=23530,u=2}),
-p(1073,{b=1,itemID=22780,npcID=16445,petTypeID=1,q=3,spellID=28487,u=2})}}),
+p(1073,{b=1,itemID=22780,npcID=16445,petTypeID=1,q=3,spellID=28487,u=2}),
+p(757,{b=1,itemID=19055,npcID=14755,petTypeID=2,q=1,spellID=23531,u=2}),
+p(758,{b=1,itemID=19054,npcID=14756,petTypeID=2,q=1,spellID=23530,u=2})}}),
 h(-547,{
 s(129974,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=1,u=2}),
 p(244,{b=1,description="Granted to players that attach an authenticator to their account.",itemID=49646,npcID=36871,petTypeID=7,q=3,spellID=69452,u=1}),

@@ -81,11 +81,11 @@ root(ROOTS.Promotions, {
 			}),
 			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
 				["description"] = "Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",
-				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
+				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.69933" },
 			}),
 			i(264397, {	-- Simply Adorned Vase and Flowers (DECOR!)
 				["description"] = "Visit |cFFFFD700zillow.com/warcraft|r\n\nClick on 'Explore Homes'\n\nFlip between Alliance and Horde until you see 'Greener's Plant Nursery' advertisement\n\nClick on 'Free Sample' and authorize the Account connection.",
-				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.99999" },	-- TODO: Timeline out. Available through September 30, 2026.
+				["timeline"] = { "added 12.0.1.65899", "removed 12.1.0.69933" },
 			}),
 			ach(62400, {	-- Craft Your World
 				["description"] = "Open Options\n\nGo to Gameplay -> Social\n\nCheck Connect to Pinterest\n\nSign in through the in-game browser and authorize the connection.\n\nNote: If any sort of Parental Controls have been set up on your account, this will not be visible in the Options menu unless they are fully removed via Battle Net support ticket.",
@@ -180,8 +180,13 @@ root(ROOTS.Promotions, {
 			}),
 			-- Season 2
 			i(250293, {	-- Red Hot Portable Bakery (COSMETIC!)
-				["description"] = "McDonald's UK exclusive promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",
-				["timeline"] = { "added 12.1.0.69465", "removed 12.1.0.99999" },	-- Removed 28th September 2026
+				["description"] =
+					-- #if BEFORE 12.1.0.69933
+					"McDonald's UK promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",
+					-- #else
+					"McDonald's Australia promotion. Available until 22nd January 2027.\n\nItem is redeemable for 2000 points in the McDonald's Australia app.",
+					-- #endif
+				["timeline"] = { "added 12.1.0.69465", "removed 12.1.0.69933", "added 12.1.0.69933", "removed 12.1.7.99999" },
 				["u"] = REAL_MONEY,
 			}),
 			i(251038, {	-- Emerrrgl (PET!)
@@ -203,6 +208,10 @@ root(ROOTS.Promotions, {
 				["description"] = "Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",
 				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },	-- Removed 12th October 2026
 				["u"] = REAL_MONEY,
+			}),
+			i(263294, {	-- Cuddly Gold-Colored Grrgle (DECOR!)
+				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 13th, 10:00 a.m. & November 3rd, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_12_1_5, "removed 12.1.5.99999" },
 			}),
 			-- Season 3
 

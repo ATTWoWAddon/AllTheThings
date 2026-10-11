@@ -10,6 +10,7 @@ local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagent
 	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
 	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked;
+--- Shared game tooltip extended with ATT icon, model, and reference display helpers.
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
@@ -528,6 +529,7 @@ app:CreateWindow("Tradeskills", {
 		if TSM_API and TSMAPI_FOUR then
 			if not self.cachedTSMFrame then
 				for _,child in ipairs({UIParent:GetChildren()}) do
+					--- Enumerated UI frame inspected to locate and hook the TradeSkillMaster crafting window.
 					---@class ATTFrameEnumerator: Frame
 					local f = child;
 					---@diagnostic disable-next-line: undefined-field

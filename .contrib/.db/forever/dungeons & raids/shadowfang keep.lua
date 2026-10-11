@@ -140,6 +140,9 @@ root(ROOTS.Instances, {
 			e(98, {	-- Commander Springvale
 				["creatureID"] = 4278,
 				["groups"] = {
+					i(273105, {	-- Blueprint: Toxin Study (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(3191),	-- Arced War Axe
 					i(6320),	-- Commander's Crest
 					i(6341),	-- Eerie Stable Lantern

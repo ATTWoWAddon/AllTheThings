@@ -17,7 +17,7 @@ end]];
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ARATHI_BASIN, {
-        ["timeline"] = { ADDED_1_11_1 },
+        ["timeline"] = { ADDED_1_7_0 },
 		-- #if AFTER 3.2.0
 		["lore"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 		-- #else
@@ -188,6 +188,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.0, 45.2, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 8.0.1.26812
@@ -207,6 +210,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.0, 45.2, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 8.0.1.26812
@@ -827,6 +833,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 73.4, 29.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 8.0.1.26812
@@ -846,6 +855,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 73.4, 29.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					-- #IF ANYCLASSIC
+					["timeline"] = { REMOVED_2_5_1 },
+					-- #endif
 					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 8.0.1.26812

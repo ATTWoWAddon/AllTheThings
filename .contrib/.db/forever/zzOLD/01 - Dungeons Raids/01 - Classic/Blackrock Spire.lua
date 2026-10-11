@@ -2334,9 +2334,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector (RECIPE!)
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(18657),	-- Schematic: Hyper-Radiant Flame Reflector (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(226741, {	-- Devout Mantle
 							["timeline"] = { ADDED_1_15_3 },

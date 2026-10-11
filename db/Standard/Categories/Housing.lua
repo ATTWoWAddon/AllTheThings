@@ -1325,7 +1325,7 @@ crit(118085,{achID=63605,id=52})}}),
 n(266726,{crs={242053},description="This Souvenir can be found in the back of Kirt's Public Carriage.",maps={2352},g={
 crit(118086,{achID=63605,id=53})}}),
 n(266727,{coords={
-[2352]={{60.3,52.5}}},description="On a turtle who may waddle around a bit...",g={
+[2352]={{48,53.8},{48.2,57.8},{52.6,61.6},{61,55.4},{64.8,56.2}}},crs={270576},description="On a turtle who may waddle around a bit...",g={
 crit(118087,{achID=63605,id=54})}}),
 n(266728,{coords={
 [2352]={{36.8,46.8}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",g={

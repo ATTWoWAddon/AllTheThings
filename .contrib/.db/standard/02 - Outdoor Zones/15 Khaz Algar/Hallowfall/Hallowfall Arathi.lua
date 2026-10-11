@@ -621,6 +621,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									i(223935),	-- Cabbage Harvester's Pantaloons
 									i(223928),	-- Crop Cutter's Gauntlets
 									i(221238),	-- Pillar of Constructs
+									hqt_bonusRenown_weekly(84052, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Crazed Cabbage Smacker
 								},
 							}),
 							n(214757, {	-- Croakit
@@ -631,6 +632,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = {
 									i(221247),	-- Cavernous Critter Shooter
 									i(223938),	-- Marsh Hopper's Spaulders
+									hqt_bonusRenown_weekly(84054, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Croakit
 								},
 							}),
 							n(206184, {	-- Deathpetal
@@ -640,6 +642,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									i(221253),	-- Cultivator's Plant Puncher
 									i(223005),	-- String of Fungal Fruits
 									i(223927),	-- Vinewrapped Leather Tunic
+									hqt_bonusRenown_weekly(84053, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Deathpetal
 								},
 							}),
 							n(221179, {	-- Duskshadow
@@ -649,6 +652,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									i(223919),	-- Abducted Lawman's Gavel (dupe)
 									i(223936),	-- Shadow Bog Trousers
 									i(223918),	-- Specter Stalker's Shotgun
+									hqt_bonusRenown_weekly(84056, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Duskshadow
 								},
 							}),
 							n(207780, {	-- Finclaw Bloodtide
@@ -658,6 +662,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = {
 									i(223925),	-- Blood Hungerer's Chestplate
 									i(221234),	-- Tidal Pendant
+									hqt_bonusRenown_weekly(84059, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Finclaw Bloodtide
 								},
 							}),
 							n(206203, {	-- Moth'ethk
@@ -666,6 +671,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = {
 									i(223924),	-- Chitin-Inscribed Vest
 									i(221240),	-- Nerubian Stagshell Gouger
+									hqt_bonusRenown_weekly(84051, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Moth'ethk
 								},
 							}),
 							n(220771, {	-- Murkspike
@@ -673,6 +679,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["questID"] = 82565,
 								["groups"] = {
 									i(223934),	-- Makrura's Foreboding Legplates
+									hqt_bonusRenown_weekly(84060, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Murkspike
 								},
 							}),
 							n(206977, {	-- Parasidious
@@ -690,6 +697,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = {
 									i(221250),	-- Creeping Lasher Machete
 									i(223940),	-- Deranged Fungarian's Epaulets
+									hqt_bonusRenown_weekly(84057, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Parasidious
 								},
 							}),
 							n(207826, {	-- Ravageant
@@ -698,6 +706,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								["groups"] = {
 									i(221240),	-- Nerubian Stagshell Gouger
 									i(223932),	-- Scarab's Carapace Cap
+									hqt_bonusRenown_weekly(84058, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Ravageant
 								},
 							}),
 							n(207803, {	-- Toadstomper
@@ -707,6 +716,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 									i(223921),	-- Ever-Oozing Signet
 									i(223920),	-- Slime Deflecting Stopper
 									i(223933),	-- Slime Goliath's Cap
+									hqt_bonusRenown_weekly(84055, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Toadstomper
 								},
 							}),
 						})),
@@ -1520,37 +1530,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		m(HALLOWFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			header(HEADERS.Faction, FACTION_HALLOWFALL_ARATHI, {
 				header(HEADERS.Quest, 76586, {	-- Spreading The Light
-					--	Rares
-					q(84052, {	-- Weekly reputation: Crazed Cabbage Smacker
-						["name"] = "Crazed Cabbage Smacker weekly reputation obtained.",
-					}),
-					q(84054, {	-- Weekly reputation: Croakit
-						["name"] = "Croakit weekly reputation obtained.",
-					}),
-					q(84053, {	-- Weekly reputation: Deathpetal
-						["name"] = "Deathpetal weekly reputation obtained.",
-					}),
-					q(84056, {	-- Weekly reputation: Duskshadow
-						["name"] = "Duskshadow weekly reputation obtained.",
-					}),
-					q(84059, {	-- Weekly reputation: Finclaw Bloodtide
-						["name"] = "Finclaw Bloodtide weekly reputation obtained.",
-					}),
-					q(84051, {	-- Weekly reputation: Moth'ethk
-						["name"] = "Moth'ethk weekly reputation obtained.",
-					}),
-					q(84060, {	-- Weekly reputation: Murkspike
-						["name"] = "Murkspike weekly reputation obtained.",
-					}),
-					q(84057, {	-- Weekly reputation: Parasidious
-						["name"] = "Parasidious weekly reputation obtained.",
-					}),
-					q(84058, {	-- Weekly reputation: Ravageant
-						["name"] = "Ravageant weekly reputation obtained.",
-					}),
-					q(84055, {	-- Weekly reputation: Toadstomper
-						["name"] = "Toadstomper weekly reputation obtained.",
-					}),
 					-- Hidden stuff in area, that require different light buffs
 					-- isDaily
 					--

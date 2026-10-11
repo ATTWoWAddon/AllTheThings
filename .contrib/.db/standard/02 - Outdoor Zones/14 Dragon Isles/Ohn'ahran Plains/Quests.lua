@@ -1129,6 +1129,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197684),	-- Argali Shearing Blade
 						i(197703),	-- Ceeqa's Toothpick
 						i(197699),	-- Nokhud Skullcrusher
+						i(269988),	-- Peacekeeper's Axe
 						i(197677),	-- Plainswalking Stick
 						i(197679),	-- Rockfang Uppercut
 						i(197904),	-- Shikaar Hunting Knife
