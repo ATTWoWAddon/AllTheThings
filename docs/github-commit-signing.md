@@ -1,6 +1,6 @@
 # GitHub Commit Signing Guide
 
-**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make authentication or commit signing post-quantum. See the post-quantum cryptography (PQC) policy below; keep platform-compatible keys until a supported migration is verified.
+**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make authentication or commit signing post-quantum. See the [post-quantum cryptography (PQC) appendix](#appendix--post-quantum-cryptography-pqc); keep platform-compatible keys until a supported migration is verified.
 
 **Step-by-step draft · macOS and Windows 11 · Official documentation checked October 10, 2026**
 
@@ -10,7 +10,7 @@ Signing verifies commit/tag content and its signing identity; it does not grant 
 
 **Recommendation — Use separate SSH key pairs (linked public and private keys) for authentication/login and commit signing.** Separate keys let you revoke and rotate each independently and manage permissions and intended uses separately. This is a recommendation, not a GitHub requirement. The examples use `id_ed25519_github` for authentication and `id_ed25519_signing` for signing; apply the same separation when choosing existing keys or manager-held keys. GitHub also allows the same public key for both purposes, but register it separately as an **Authentication key** and a **Signing key** ([GitHub key registration](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)).
 
-This is a draft procedure, not a record of changes made. No keys were generated, accounts/configuration changed, or commits signed/pushed while preparing it. Commands were checked against official documentation but not tested on your computers. Replace every uppercase placeholder before running a command. See the [shared terminology appendix](#appendix--shared-terminology) for definitions.
+This is a draft procedure, not a record of changes made. No keys were generated, accounts/configuration changed, or commits signed/pushed while preparing it. Commands were checked against official documentation but not tested on your computers. Replace every uppercase placeholder before running a command. See the [commit signing terminology appendix](#appendix--commit-signing-terminology) for definitions.
 
 ## Flow — Choose a signing method and one key source
 
@@ -107,21 +107,7 @@ Check the actual installation with `gpg --version` and `gpg --with-colons --list
 
 Sources: [OpenPGP algorithm roles](https://www.rfc-editor.org/rfc/rfc9580.html#section-9.1), [GnuPG key management and available algorithms](https://gnupg.org/documentation/manuals/gnupg/OpenPGP-Key-Management.html), [GnuPG curve parameters](https://www.gnupg.org/documentation/manuals/gcrypt/ECC-key-parameters.html).
 
-Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the policy below.
-
-## Policy — Post-quantum cryptography (PQC)
-
-**Checked 10 October 2026.** This is a policy recommendation, not an extra required workflow step.
-
-Distinguish SSH transport **key exchange**, SSH **host/user authentication signatures**, and **Git commit signatures**. Hybrid PQ key exchange protects transport; it does not make RSA, ECDSA, or Ed25519 signatures post-quantum. Ed25519 is the current compatibility recommendation, not a quantum-resistance claim.
-
-A key-encapsulation mechanism (KEM) establishes a shared secret. Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) is a post-quantum KEM; Module-Lattice-Based Digital Signature Algorithm (ML-DSA) creates post-quantum signatures, a different task.
-
-GitHub announced `sntrup761x25519-sha512` hybrid KEX for github.com and non-US data-residency regions, effective 17 September 2025 ([rollout](https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/)). GitHub schedules `mlkem768x25519-sha256` for **14 October 2026** on these endpoints; rollout remains future at this check ([schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). No endpoint negotiation was tested while preparing this guide.
-
-[OpenSSH 10.6](https://www.openssh.org/txt/release-10.6), released 6 October 2026, enables hybrid `ssh-mldsa44-ed25519` signatures. The sources checked here do not establish GitHub acceptance of that key type for authentication or commit signing; client capability alone is insufficient evidence.
-
-**Recommended policy:** use maintained SSH/Git clients, prefer compatible hybrid PQ KEX defaults, and confirm the actual endpoint's negotiated algorithm. Keep host-key verification and signature checks; do not globally suppress PQ warnings. Manage transport, authentication, and signing migrations separately. Before adopting PQ signatures, require explicit support from GitHub, clients, agents/hardware, and verifiers, then test recovery, revocation, and historical-signature verification.
+Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the [PQC appendix](#appendix--post-quantum-cryptography-pqc).
 
 ## Route A — Required workflow for the SSH key source you choose
 
@@ -468,9 +454,23 @@ Sources: [amend](https://git-scm.com/docs/git-commit), [rebase signing](https://
 
 Before publishing, verify every commit newly introduced to the target branch, including merged history. Investigate missing/unverifiable signatures first. Check the exact remote and branch, keep private keys and passphrases out of Git, and ensure public commit name/email are appropriate to disclose.
 
-## Appendix — Shared terminology
+## Appendix — Post-quantum cryptography (PQC)
 
-This shared reference explains terms used across both guides. It adds no required steps or tools.
+**Checked 10 October 2026.** This is a policy recommendation, not an extra required workflow step.
+
+Distinguish SSH transport **key exchange**, SSH **host/user authentication signatures**, and **Git commit signatures**. Hybrid PQ key exchange protects transport; it does not make RSA, ECDSA, or Ed25519 signatures post-quantum. Ed25519 is the current compatibility recommendation, not a quantum-resistance claim.
+
+A key-encapsulation mechanism (KEM) establishes a shared secret. Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) is a post-quantum KEM; Module-Lattice-Based Digital Signature Algorithm (ML-DSA) creates post-quantum signatures, a different task.
+
+GitHub announced `sntrup761x25519-sha512` hybrid KEX for github.com and non-US data-residency regions, effective 17 September 2025 ([rollout](https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/)). GitHub schedules `mlkem768x25519-sha256` for **14 October 2026** on these endpoints; rollout remains future at this check ([schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). No endpoint negotiation was tested while preparing this guide.
+
+[OpenSSH 10.6](https://www.openssh.org/txt/release-10.6), released 6 October 2026, enables hybrid `ssh-mldsa44-ed25519` signatures. The sources checked here do not establish GitHub acceptance of that key type for authentication or commit signing; client capability alone is insufficient evidence.
+
+**Recommended policy:** use maintained SSH/Git clients, prefer compatible hybrid PQ KEX defaults, and confirm the actual endpoint's negotiated algorithm. Keep host-key verification and signature checks; do not globally suppress PQ warnings. Manage transport, authentication, and signing migrations separately. Before adopting PQ signatures, require explicit support from GitHub, clients, agents/hardware, and verifiers, then test recovery, revocation, and historical-signature verification.
+
+## Appendix — Commit signing terminology
+
+This reference explains terms used in this commit signing guide. It adds no required steps or tools.
 
 | Term | Plain-English meaning |
 | --- | --- |
@@ -480,7 +480,6 @@ This shared reference explains terms used across both guides. It adds no require
 | Passphrase | A secret that unlocks a protected private key. It is separate from a GitHub account password. |
 | Fingerprint | A short digest identifying a public key. Compare it through a trusted source before trusting the key. |
 | Authentication | Proving which account a connection belongs to. GitHub SSH authentication does not provide website login or a remote shell. |
-| Authorization | Permission to access a repository or perform an action. Authentication alone does not grant this permission. |
 | Signing / signature | Using a private key to attach a cryptographic check to specific data, such as a commit or tag. |
 | Verification | Checking a signature with its public key and applicable identity/trust rules. It does not assess code safety or intent. |
 | Verified badge | GitHub accepted the signature under its verification rules. This does not prove safe/correct code or the signer's good intentions. |
@@ -513,12 +512,11 @@ This shared reference explains terms used across both guides. It adds no require
 | ML-KEM | Module-Lattice-Based Key-Encapsulation Mechanism: a post-quantum KEM used in the named hybrid SSH key exchange. |
 | ML-DSA | Module-Lattice-Based Digital Signature Algorithm: a post-quantum signature scheme. OpenSSH client support does not establish GitHub acceptance. |
 | NIST | National Institute of Standards and Technology: the U.S. standards body publishing the cited cryptography standards and guidance. |
-| SSO / IP | Single sign-on connects organization login to an identity provider. Internet Protocol addresses may also be subject to access restrictions. |
-| CLI / IDE / GUI | Command-line interface / integrated development environment / graphical user interface: different ways to run tools; they may select different clients. |
+| IDE / GUI | Integrated development environment / graphical user interface: different ways to run tools; they may select different clients. |
 | WSL | Windows Subsystem for Linux: a Linux environment on Windows that can have its own clients and agents. |
 | UTF-8 / UTF-16 / ASCII | Text encodings: 8-bit or 16-bit Unicode Transformation Format, and American Standard Code for Information Interchange. Use the encoding required by the trust-file instructions. |
-| PR / CI | Pull request: a proposed change for review. Continuous integration: automated checks that repository events may trigger. |
-| URL / ID | Uniform Resource Locator: an address. ID: an identifier. |
+| PR | Pull request: a proposed change for review. |
+| ID | An identifier. |
 | TTY / terminal | TTY comes from teletype and names a terminal device. `GPG_TTY` identifies the terminal for GnuPG's passphrase interaction. |
 
 Standards terminology: [NIST ML-KEM](https://csrc.nist.gov/pubs/fips/203/final), [NIST ML-DSA](https://csrc.nist.gov/pubs/fips/204/final).

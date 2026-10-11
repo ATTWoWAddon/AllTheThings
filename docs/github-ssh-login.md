@@ -2,7 +2,7 @@
 
 This guide helps you connect to GitHub with an SSH key so you can clone, pull, and push repositories.
 
-**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make SSH authentication post-quantum. See the post-quantum cryptography (PQC) policy below; keep platform-compatible keys until a supported migration is verified.
+**Quantum computing (QC) risk notice.** A sufficiently large, fault-tolerant quantum computer could break classical signature schemes: RSA (Rivest–Shamir–Adleman), DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), and Ed25519 (an Edwards-curve signature scheme). This does not mean they are currently broken ([National Institute of Standards and Technology (NIST) analysis, draft](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf)). Hybrid post-quantum (PQ) key exchange (KEX, agreeing on connection secrets) does not make SSH authentication post-quantum. See the [post-quantum cryptography (PQC) appendix](#appendix--post-quantum-cryptography-pqc); keep platform-compatible keys until a supported migration is verified.
 
 **Step-by-step draft · macOS and Windows 11 · Official documentation checked October 10, 2026**
 
@@ -82,21 +82,7 @@ Strength estimates: [NIST SP 800-57 Part 1 Rev. 5, §5.6 and Table 2](https://nv
 
 RSA 4096 offers additional classical margin at the cost of larger keys and slower key operations. Choose ECDSA P-256 when its baseline strength meets your needs; choose P-384 or P-521 for a higher required strength and compatible tools. OpenSSH accepts only the three listed ECDSA sizes and ignores `-b` for Ed25519. Keep the dedicated filenames and subsequent path substitutions in your selected generation route. [OpenSSH size options](https://man.openbsd.org/ssh-keygen.1#b).
 
-Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the policy below.
-
-## Policy — Post-quantum cryptography (PQC)
-
-**Checked 10 October 2026.** This is a policy recommendation, not an extra required workflow step.
-
-Distinguish SSH transport **key exchange** from SSH **host/user authentication signatures**. Hybrid PQ key exchange protects transport; it does not make RSA, ECDSA, or Ed25519 signatures post-quantum. Ed25519 is the current compatibility recommendation, not a quantum-resistance claim.
-
-A key-encapsulation mechanism (KEM) establishes a shared secret. Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) is a post-quantum KEM; Module-Lattice-Based Digital Signature Algorithm (ML-DSA) creates post-quantum signatures, a different task.
-
-GitHub announced `sntrup761x25519-sha512` hybrid KEX for github.com and non-US data-residency regions, effective 17 September 2025 ([rollout](https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/)). GitHub schedules `mlkem768x25519-sha256` for **14 October 2026** on these endpoints; rollout remains future at this check ([schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). No endpoint negotiation was tested while preparing this guide.
-
-[OpenSSH 10.6](https://www.openssh.org/txt/release-10.6), released 6 October 2026, enables hybrid `ssh-mldsa44-ed25519` signatures. The sources checked here do not establish GitHub acceptance of that key type for SSH authentication; client capability alone is insufficient evidence.
-
-**Recommended policy:** use maintained SSH/Git clients, prefer compatible hybrid PQ KEX defaults, and confirm the actual endpoint's negotiated algorithm. Keep host-key verification and signature checks; do not globally suppress PQ warnings. Manage transport and authentication migrations separately. Before adopting PQ authentication signatures, require explicit support from GitHub, clients, and agents/hardware, then test host/user authentication, recovery, and revocation.
+Increasing RSA or elliptic-curve key size does not make signatures post-quantum; see the [PQC appendix](#appendix--post-quantum-cryptography-pqc).
 
 ## Required workflow — Follow only your chosen key-source branch
 
@@ -366,6 +352,20 @@ Sources: [GitHub SSH troubleshooting](https://docs.github.com/en/authentication/
 - Give keys clear device/purpose names. Revoke and replace affected keys if a device is lost or a key may be compromised.
 - Treat authentication, commit signing, repository authorization, and permission to publish as separate checks.
 
+## Appendix — Post-quantum cryptography (PQC)
+
+**Checked 10 October 2026.** This is a policy recommendation, not an extra required workflow step.
+
+Distinguish SSH transport **key exchange** from SSH **host/user authentication signatures**. Hybrid PQ key exchange protects transport; it does not make RSA, ECDSA, or Ed25519 signatures post-quantum. Ed25519 is the current compatibility recommendation, not a quantum-resistance claim.
+
+A key-encapsulation mechanism (KEM) establishes a shared secret. Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) is a post-quantum KEM; Module-Lattice-Based Digital Signature Algorithm (ML-DSA) creates post-quantum signatures, a different task.
+
+GitHub announced `sntrup761x25519-sha512` hybrid KEX for github.com and non-US data-residency regions, effective 17 September 2025 ([rollout](https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/)). GitHub schedules `mlkem768x25519-sha256` for **14 October 2026** on these endpoints; rollout remains future at this check ([schedule](https://github.blog/changelog/2026-09-22-security-improvements-for-ssh/)). No endpoint negotiation was tested while preparing this guide.
+
+[OpenSSH 10.6](https://www.openssh.org/txt/release-10.6), released 6 October 2026, enables hybrid `ssh-mldsa44-ed25519` signatures. The sources checked here do not establish GitHub acceptance of that key type for SSH authentication; client capability alone is insufficient evidence.
+
+**Recommended policy:** use maintained SSH/Git clients, prefer compatible hybrid PQ KEX defaults, and confirm the actual endpoint's negotiated algorithm. Keep host-key verification and signature checks; do not globally suppress PQ warnings. Manage transport and authentication migrations separately. Before adopting PQ authentication signatures, require explicit support from GitHub, clients, and agents/hardware, then test host/user authentication, recovery, and revocation.
+
 ## Appendix — SSH login terminology
 
 This reference explains terms used in this SSH login guide. It adds no required steps or tools.
@@ -400,7 +400,6 @@ This reference explains terms used in this SSH login guide. It adds no required 
 | KEM | Key-encapsulation mechanism: public-key algorithms that let two parties establish a shared secret. It is not a digital signature. |
 | ML-KEM | Module-Lattice-Based Key-Encapsulation Mechanism: a post-quantum KEM used in the named hybrid SSH key exchange. |
 | ML-DSA | Module-Lattice-Based Digital Signature Algorithm: a post-quantum signature scheme. OpenSSH client support does not establish GitHub acceptance. |
-| NIST | National Institute of Standards and Technology: the U.S. standards body publishing the cited cryptography standards and guidance. |
 | SSO / IP | Single sign-on connects organization login to an identity provider. Internet Protocol addresses may also be subject to access restrictions. |
 | CLI / GUI | Command-line interface / graphical user interface: different ways to run tools; they may select different clients. |
 | WSL | Windows Subsystem for Linux: a Linux environment on Windows that can have its own clients and agents. |
