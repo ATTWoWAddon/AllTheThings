@@ -14,6 +14,19 @@ These are setup instructions, not a record of changes to your keys or account se
 
 Choose once. Read the key-choice guidance and check the tools below, then open only your selected route, complete it in order, and continue to the shared completion steps. Native ssh-agent (a background program that handles key-use requests), macOS Keychain (the system's protected credential store), global defaults, and GitHub's command-line interface (CLI) are optional conveniences.
 
+```mermaid
+flowchart TD
+  Start[Review key choice and check tools] --> Source{Choose one key source}
+  Source -->|New local key| New[Route A: prepare, register, configure]
+  Source -->|Existing local key| Existing[Route B: confirm, register, configure]
+  Source -->|1Password| Manager[Route C: select, register, configure integration]
+  New --> Verify[Shared Step 1: verify host and account]
+  Existing --> Verify
+  Manager --> Verify
+  Verify --> Read[Step 2: confirm URL and test read access]
+  Read --> Publish[Step 3: push only when you intend to publish]
+```
+
 | Your key source | Follow this route |
 | --- | --- |
 | You need a new local key pair. | [Route A — New local key](#route-a--new-local-key) |
