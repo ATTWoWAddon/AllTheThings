@@ -308,6 +308,19 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 		}),
 		n(QUESTS, {
+			q(96294, {	-- A Darker Truth
+				["provider"] = { "i", 273658 },	-- Bloody Parchment (quest starter)
+				["qg"] = 259118,	-- Muln Earthfury (quest recipient)
+				["coord"] = { 33.4, 22.4, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 23,	-- Required level; quest level 30.
+				["groups"] = {
+					objective(1, {	-- 0/1 Bloody Parchment
+						["provider"] = { "i", 273659 },	-- Bloody Parchment (delivery item)
+					}),
+				},
+			}),
 			q(833, {	-- A Sacred Burial
 				["qg"] = 3233,	-- Lorekeeper Raintotem
 				["coord"] = { 59.8, 25.6, MAP.MULGORE },
@@ -481,6 +494,21 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 							2962,	-- Windfury Harpy
 							2963,	-- Windfury Wind Witch
 						},
+					}),
+				},
+			}),
+			q(96259, {	-- Defending the Dead
+				["qg"] = 259118,	-- Muln Earthfury
+				["coord"] = { 33.4, 22.4, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 23,	-- Required level; quest level 30.
+				["groups"] = {
+					objective(1, {	-- 0/10 Gloomrise Hatchling slain
+						["provider"] = { "n", 264079 },	-- Gloomrise Hatchling
+					}),
+					objective(2, {	-- 0/5 Gloomrise Soldier slain
+						["provider"] = { "n", 264083 },	-- Gloomrise Soldier
 					}),
 				},
 			}),
@@ -697,6 +725,22 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					i(4960),	-- Flash Pellet
 				},
 			}),
+			q(96260, {	-- Stronger than Steel
+				["qg"] = 264072,	-- Yorn Grimtotem
+				["coord"] = { 32.4, 20.0, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 23,	-- Required level; quest level 30.
+				["groups"] = {
+					objective(1, {	-- 0/3 Crystalline Silk
+						["provider"] = { "i", 273181 },	-- Crystalline Silk
+						["cr"] = 264081,	-- Gloomrise Spinner
+					}),
+					i(276892),	-- Spidersilk Sack
+					i(276891),	-- Spidersilk Pouch
+					i(273654),	-- Crystal Thread Cloak
+				},
+			}),
 			q(765, {	-- Supervisor Fizsprocket
 				["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
 				["qg"] = 2988,	-- Morin Cloudstalker
@@ -725,6 +769,21 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 							2970,	-- Swoop
 							2969,	-- Wiry Swoop
 						},
+					}),
+				},
+			}),
+			q(96241, {	-- Talkin' bout Toxins, Mon
+				["qg"] = 264074,	-- Mazu'kon
+				["qi"] = 273015,	-- Toxin Extractor
+				["coord"] = { 32.4, 20.6, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 23,	-- Required level; quest level 30.
+				["groups"] = {
+					objective(1, {	-- 0/5 Gloomrise Toxin Sample
+						["description"] = "Use the provided Toxin Extractor on Gnawed Corpses at Gloomrise.",
+						["provider"] = { "i", 273001 },	-- Gloomrise Toxin Sample
+						["cr"] = 264096,	-- Gnawed Corpse
 					}),
 				},
 			}),
@@ -781,6 +840,23 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					recipe(883),	-- Call Pet
 					recipe(2641),	-- Dismiss Pet
 					recipe(1515),	-- Tame Beast
+				},
+			}),
+			q(96261, {	-- The Broodmother
+				["qg"] = 259118,	-- Muln Earthfury
+				["coord"] = { 33.4, 22.4, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 23,	-- Required level; level 31 elite quest.
+				["groups"] = {
+					objective(1, {	-- 0/1 Broodmother Valraxx slain
+						["provider"] = { "n", 264082 },	-- Broodmother Valraxx
+						["coords"] = {
+							{ 33.6, 6.8, MAP.MULGORE },
+							{ 33.4, 7.2, MAP.MULGORE },
+						},
+					}),
+					i(276895),	-- Transformative Cocoon
 				},
 			}),
 			q(770, {	-- The Demon Scarred Cloak
@@ -1204,6 +1280,17 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				["groups"] = {
 					i(5484),	-- Recipe: Roasted Kodo Meat (RECIPE!)
 				},
+			}),
+		}),
+		n(ZONE_DROPS, {
+			i(273658, {	-- Bloody Parchment
+				["cr"] = 264082,	-- Broodmother Valraxx
+				["coords"] = {
+					{ 33.6, 6.8, MAP.MULGORE },
+					{ 33.4, 7.2, MAP.MULGORE },
+				},
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["lvl"] = 23,
 			}),
 		}),
 	},
