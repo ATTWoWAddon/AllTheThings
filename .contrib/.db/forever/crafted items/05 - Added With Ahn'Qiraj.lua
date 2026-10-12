@@ -42,23 +42,23 @@ root(ROOTS.Craftables, {
 	prof(MINING, {
 		spell(2575, {	-- Mining
 			i(22203, {	-- Large Obsidian Shard
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.RUINS_OF_AHNQIRAJ,
 					MAP.TEMPLE_OF_AHNQIRAJ,
 					MAP.SILITHUS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 181069 },	-- Large Obsidian Chunk
 					{ "o", 181068 },	-- Small Obsidian Chunk
 				},
 			}),
 			i(22202, {	-- Small Obsidian Shard
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.RUINS_OF_AHNQIRAJ,
 					MAP.TEMPLE_OF_AHNQIRAJ,
 					MAP.SILITHUS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 181069 },	-- Large Obsidian Chunk
 					{ "o", 181068 },	-- Small Obsidian Chunk
 				},
