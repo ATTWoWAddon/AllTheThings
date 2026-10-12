@@ -420,6 +420,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 266881,	-- Pa'zula
 				coord = { 56.6, 73.6, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = ENCHANTING,
 				races = HORDE_ONLY,
 				lvl = 5,
 				groups = {
@@ -482,6 +483,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 5811,	-- Kamari
 				coord = { 63.0, 45.0, MAP.ORGRIMMAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = LEATHERWORKING,
 				races = HORDE_ONLY,
 				lvl = 6,
 				groups = {
@@ -1256,8 +1258,14 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 10,
 			}),
 			q(96825, {	-- This Fruit Could Bite Back
-				qg = 3191,	-- Cook Torka
-				coord = { 51.11, 42.45, MAP.DUROTAR },
+				qgs = {
+					3191,	-- Cook Torka
+					3881,	-- Grimtak
+				},
+				coords = {
+					{ 51.11, 42.45, MAP.DUROTAR },
+					{ 51.2, 42.6, MAP.DUROTAR },
+				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 3,
@@ -1274,6 +1282,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 10266,	-- Ug'thok
 				coord = { 80.6, 23.4, MAP.ORGRIMMAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				requireSkill = BLACKSMITHING,
 				races = HORDE_ONLY,
 				lvl = 6,
 				groups = {
@@ -1291,6 +1300,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(99049, {	-- Threat from Below
+				sourceQuest = 99048,	-- A Missing Hand
 				qg = 275657,	-- Heglan Shadeeye
 				coord = { 58.6, 45.6, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1318,6 +1328,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(99051, {	-- Threat from Below
+				sourceQuest = 99049,	-- Threat from Below
 				qg = 3142,	-- Orgnil Soulscar
 				coord = { 52.2, 43.2, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1334,6 +1345,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(99052, {	-- Threat from Below
+				sourceQuest = 99051,	-- Threat from Below
 				qg = 3142,	-- Orgnil Soulscar
 				coord = { 52.2, 43.2, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },

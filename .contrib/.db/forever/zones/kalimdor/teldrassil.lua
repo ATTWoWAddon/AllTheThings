@@ -544,6 +544,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(98046, {	-- Crown of the Earth (1/2) [Forever]
+				sourceQuest = 935,	-- Crown of the Earth (6/6) / The Waters of Teldrassil [CATA+]
 				qg = 3516,	-- Arch Druid Fandral Staghelm
 				qi = 279291,	-- Drained Vessel
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
@@ -620,7 +621,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 3519,	-- Sentinel Arynia Cloudsbreak
 				coord = { 38.2, 34.4, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/1 Hatescreech's Amulet
@@ -698,7 +699,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qi = 286069,	-- Lashwater Salve
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
 			q(1684, {	-- Elanaria
@@ -749,7 +750,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 275744,	-- Sentinel Lynessa Duskblossom
 				coord = { 44.6, 58.9, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
 				lvl = 4,
 				groups = {
 					objective(1, {	-- Escort Lynessa Duskblossom out of Ban'ethil
@@ -847,7 +848,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 275683,	-- Sentinel Eralya Leafshadow
 				coord = { 37.6, 36.8, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
 			q(2499, {	-- Oakenscowl
@@ -999,9 +1000,15 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(940, {	-- Teldrassil
 				sourceQuest = 98398,	-- The Oracle Tree
-				qg = 3519,	-- Sentinel Arynia Cloudsbreak
+				providers = {
+					{ "n", 3519 },	-- Sentinel Arynia Cloudsbreak
+					{ "o", 673378 },	-- Oracle Tree Bark
+				},
 				qi = 5219,	-- Inscribed Bark
-				coord = { 38.2, 34.4, MAP.TELDRASSIL },
+				coords = {
+					{ 38.2, 34.4, MAP.TELDRASSIL },
+					{ 37.0, 34.1, MAP.TELDRASSIL },
+				},
 				races = ALLIANCE_ONLY,
 				lvl = 6,
 			}),
@@ -1087,7 +1094,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 6094,	-- Byancie
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/6 Dewy Lasher Frond
@@ -1150,7 +1157,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 2081,	-- Sentinel Kyra Starsong
 				coord = { 56.0, 59.4, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
 				lvl = 4,
 			}),
 			q(927, {	-- The Moss-twined Heart
@@ -1165,7 +1173,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 3519,	-- Sentinel Arynia Cloudsbreak
 				coord = { 38.2, 34.4, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
 				lvl = 6,
 				groups = {
 					objective(1, {	-- Find the Oracle Tree Bark
@@ -1338,7 +1346,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 3567,	-- Tallonkai Swiftroot
 				coord = { 55.4, 56.8, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { NIGHTELF },
+				races = ALLIANCE_ONLY,
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/8 Befouled Webwood slain

@@ -1308,6 +1308,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 68.8, 55.8, MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { WARRIOR, PALADIN, SHAMAN },
+				requireSkill = BLACKSMITHING,
 				races = { DWARF, GNOME, SKYBORNE_ALLIANCE },
 				lvl = 7,
 				groups = {
