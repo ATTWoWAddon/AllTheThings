@@ -14,10 +14,10 @@ ExportDB.OnTooltipDB.ForArathiBasin = [[~function(t, tooltipInfo)
 end]];
 
 battleground(MAP.ARATHI_BASIN, {
-	["lore"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
-	["timeline"] = { TIMELINE.ADDED_1_60_1 },
-	["icon"] = 236385,
-	["groups"] = {
+	lore = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
+	timeline = { TIMELINE.ADDED_1_60_1 },
+	icon = 236385,
+	groups = {
 		n(ACHIEVEMENTS, {
 			-- CRIEVE NOTE: Not sure which one is which.
 			ach(62047, {	-- Master of Arathi Basin
@@ -29,49 +29,49 @@ battleground(MAP.ARATHI_BASIN, {
 		}),
 		n(FACTIONS, {
 			faction(FACTION_THE_DEFILERS, {	-- The Defilers
-				["icon"] = 237568,
-				["OnTooltip"] = [[_.OnTooltipDB.ForArathiBasin]],
-				["races"] = HORDE_ONLY,
+				icon = 237568,
+				OnTooltip = [[_.OnTooltipDB.ForArathiBasin]],
+				races = HORDE_ONLY,
 			}),
 			faction(FACTION_THE_LEAGUE_OF_ARATHOR, {	-- The League of Arathor
-				["icon"] = 132351,
-				["OnTooltip"] = [[_.OnTooltipDB.ForArathiBasin]],
-				["races"] = ALLIANCE_ONLY,
+				icon = 132351,
+				OnTooltip = [[_.OnTooltipDB.ForArathiBasin]],
+				races = ALLIANCE_ONLY,
 			}),
 		}),
 		n(QUESTS, {
 			q(8262, {	-- Arathor Advanced Care Package
-				["qg"] = 15127,	-- Samuel Hawke
-				["coord"] = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 45,
-				["groups"] = {
+				qg = 15127,	-- Samuel Hawke
+				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
 					i(20231),	-- Arathor Advanced Care Package
 				},
 			}),
 			q(8260, {	-- Arathor Basic Care Package
-				["qg"] = 15127,	-- Samuel Hawke
-				["coord"] = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 25, 34 },
-				["groups"] = {
+				qg = 15127,	-- Samuel Hawke
+				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				races = ALLIANCE_ONLY,
+				lvl = { 25, 34 },
+				groups = {
 					i(20233),	-- Arathor Basic Care Package
 				},
 			}),
 			q(8261, {	-- Arathor Standard Care Package
-				["qg"] = 15127,	-- Samuel Hawke
-				["coord"] = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 35, 44 },
-				["groups"] = {
+				qg = 15127,	-- Samuel Hawke
+				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				races = ALLIANCE_ONLY,
+				lvl = { 35, 44 },
+				groups = {
 					i(20236),	-- Arathor Standard Care Package
 				},
 			}),
 			q(8374, {	-- Claiming Arathi Basin [Level 20]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -83,14 +83,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 20, 29 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8384, {	-- Claiming Arathi Basin [Level 20]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -102,14 +102,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 20, 29 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8391, {	-- Claiming Arathi Basin [Level 30]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -121,14 +121,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 30, 39 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8393, {	-- Claiming Arathi Basin [Level 30]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -140,14 +140,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 30, 39 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8392, {	-- Claiming Arathi Basin [Level 40]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -159,14 +159,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 40, 49 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8394, {	-- Claiming Arathi Basin [Level 40]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -178,14 +178,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 40, 49 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8395, {	-- Claiming Arathi Basin [Level 50]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -197,14 +197,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 50, 59 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 50, 59 },
 			}),
 			q(8397, {	-- Claiming Arathi Basin [Level 50]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -216,14 +216,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 50, 59 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 50, 59 },
 			}),
 			q(8396, {	-- Claiming Arathi Basin [Level 60]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -235,14 +235,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 60, 69 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 60, 69 },
 			}),
 			q(8398, {	-- Claiming Arathi Basin [Level 60]
-				["altQuests"] = {
+				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
 					8384,	-- Claiming Arathi Basin [Level 20]
 					8391,	-- Claiming Arathi Basin [Level 30]
@@ -254,14 +254,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8396,	-- Claiming Arathi Basin [Level 60]
 					8398,	-- Claiming Arathi Basin [Level 60]
 				},
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coords"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 60, 69 },
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 60, 69 },
 			}),
 			q(8370, {	-- Conquering Arathi Basin [Level 20]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -273,14 +273,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 20, 29 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8390, {	-- Conquering Arathi Basin [Level 20]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -292,14 +292,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 20, 29 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8436, {	-- Conquering Arathi Basin [Level 30]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -311,14 +311,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 30, 39 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8440, {	-- Conquering Arathi Basin [Level 30]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -330,14 +330,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 30, 39 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8437, {	-- Conquering Arathi Basin [Level 40]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -349,14 +349,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 40, 49 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8441, {	-- Conquering Arathi Basin [Level 40]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -368,14 +368,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 40, 49 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8438, {	-- Conquering Arathi Basin [Level 50]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -387,14 +387,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 50, 59 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 50, 59 },
 			}),
 			q(8442, {	-- Conquering Arathi Basin [Level 50]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -406,14 +406,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 50, 59 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 50, 59 },
 			}),
 			q(8439, {	-- Conquering Arathi Basin [Level 60]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -425,14 +425,14 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 60, 69 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 60, 69 },
 			}),
 			q(8443, {	-- Conquering Arathi Basin [Level 60]
-				["altQuests"] = {
+				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
 					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
@@ -444,185 +444,185 @@ battleground(MAP.ARATHI_BASIN, {
 					8439,	-- Conquering Arathi Basin [Level 60]
 					8443,	-- Conquering Arathi Basin [Level 60]
 				},
-				["qg"] = 15350,	-- Horde Warbringer
-				["coords"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 60, 69 },
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 60, 69 },
 			}),
 			q(8115, {	-- Control Five Bases (Alliance)
-				["sourceQuest"] = 8114,	-- Control Four Bases (Alliance)
-				["qg"] = 14983,	-- Field Marshal Oslight
-				["coord"] = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
-				["groups"] = {
+				sourceQuest = 8114,	-- Control Four Bases (Alliance)
+				qg = 14983,	-- Field Marshal Oslight
+				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
+				races = ALLIANCE_ONLY,
+				lvl = 60,
+				groups = {
 					i(20132),	-- Arathor Battle Tabard
 				},
 			}),
 			q(8114, {	-- Control Four Bases (Alliance)
-				["sourceQuests"] = {
+				sourceQuests = {
 					8168,	-- The Battle for Arathi Basin! [Level 20]
 					8167,	-- The Battle for Arathi Basin! [Level 30]
 					8166,	-- The Battle for Arathi Basin! [Level 40]
 					8105,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 14983,	-- Field Marshal Oslight
-				["coord"] = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				qg = 14983,	-- Field Marshal Oslight
+				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(8265, {	-- Defiler's Advanced Care Package
-				["qg"] = 15126,	-- Rutherford Twing
-				["coord"] = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
-				["races"] = HORDE_ONLY,
-				["lvl"] = 45,
-				["groups"] = {
+				qg = 15126,	-- Rutherford Twing
+				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
 					i(20228),	-- Defiler's Advanced Care Package
 				},
 			}),
 			q(8263, {	-- Defiler's Basic Care Package
-				["qg"] = 15126,	-- Rutherford Twing
-				["coord"] = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 25, 34 },
-				["groups"] = {
+				qg = 15126,	-- Rutherford Twing
+				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				races = HORDE_ONLY,
+				lvl = { 25, 34 },
+				groups = {
 					i(20229),	-- Defiler's Basic Care Package
 				},
 			}),
 			q(8264, {	-- Defiler's Standard Care Package
-				["qg"] = 15126,	-- Rutherford Twing
-				["coord"] = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 35, 44 },
-				["groups"] = {
+				qg = 15126,	-- Rutherford Twing
+				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				races = HORDE_ONLY,
+				lvl = { 35, 44 },
+				groups = {
 					i(20230),	-- Defiler's Standard Care Package
 				},
 			}),
 			q(8122, {	-- Take Five Bases (Horde)
-				["sourceQuest"] = 8121,	-- Take Four Bases (Horde)
-				["qg"] = 15021,	-- Deathmaster Dwire
-				["coord"] = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
-				["races"] = HORDE_ONLY,
-				["lvl"] = 60,
-				["groups"] = {
+				sourceQuest = 8121,	-- Take Four Bases (Horde)
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
+				races = HORDE_ONLY,
+				lvl = 60,
+				groups = {
 					i(20131),	-- Battle Tabard of the Defilers
 				},
 			}),
 			q(8121, {	-- Take Four Bases (Horde)
-				["sourceQuests"] = {
+				sourceQuests = {
 					8171,	-- The Battle for Arathi Basin! [Level 20]
 					8170,	-- The Battle for Arathi Basin! [Level 30]
 					8169,	-- The Battle for Arathi Basin! [Level 40]
 					8120,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 15021,	-- Deathmaster Dwire
-				["coord"] = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
-				["races"] = HORDE_ONLY,
-				["lvl"] = 60,
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				races = HORDE_ONLY,
+				lvl = 60,
 			}),
 			q(8168, {	-- The Battle for Arathi Basin! [Level 20] (Alliance)
-				["altQuests"] = {
+				altQuests = {
 					8168,	-- The Battle for Arathi Basin! [Level 20]
 					8167,	-- The Battle for Arathi Basin! [Level 30]
 					8166,	-- The Battle for Arathi Basin! [Level 40]
 					8105,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 14983,	-- Field Marshal Oslight
-				["coord"] = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 20, 29 },
+				qg = 14983,	-- Field Marshal Oslight
+				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8167, {	-- The Battle for Arathi Basin! [Level 30] (Alliance)
-				["altQuests"] = {
+				altQuests = {
 					8168,	-- The Battle for Arathi Basin! [Level 20]
 					8167,	-- The Battle for Arathi Basin! [Level 30]
 					8166,	-- The Battle for Arathi Basin! [Level 40]
 					8105,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 14983,	-- Field Marshal Oslight
-				["coord"] = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 30, 39 },
+				qg = 14983,	-- Field Marshal Oslight
+				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8166, {	-- The Battle for Arathi Basin! [Level 40] (Alliance)
-				["altQuests"] = {
+				altQuests = {
 					8168,	-- The Battle for Arathi Basin! [Level 20]
 					8167,	-- The Battle for Arathi Basin! [Level 30]
 					8166,	-- The Battle for Arathi Basin! [Level 40]
 					8105,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 14983,	-- Field Marshal Oslight
-				["coord"] = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 40, 49 },
+				qg = 14983,	-- Field Marshal Oslight
+				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8105, {	-- The Battle for Arathi Basin! [Level 50] (Alliance)
-				["altQuests"] = {
+				altQuests = {
 					8168,	-- The Battle for Arathi Basin! [Level 20]
 					8167,	-- The Battle for Arathi Basin! [Level 30]
 					8166,	-- The Battle for Arathi Basin! [Level 40]
 					8105,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 14983,	-- Field Marshal Oslight
-				["coord"] = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				qg = 14983,	-- Field Marshal Oslight
+				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(8171, {	-- The Battle for Arathi Basin! [Level 20] (Horde)
-				["altQuests"] = {
+				altQuests = {
 					8171,	-- The Battle for Arathi Basin! [Level 20]
 					8170,	-- The Battle for Arathi Basin! [Level 30]
 					8169,	-- The Battle for Arathi Basin! [Level 40]
 					8120,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 15021,	-- Deathmaster Dwire
-				["coord"] = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 20, 29 },
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8170, {	-- The Battle for Arathi Basin! [Level 30] (Horde)
-				["altQuests"] = {
+				altQuests = {
 					8171,	-- The Battle for Arathi Basin! [Level 20]
 					8170,	-- The Battle for Arathi Basin! [Level 30]
 					8169,	-- The Battle for Arathi Basin! [Level 40]
 					8120,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 15021,	-- Deathmaster Dwire
-				["coord"] = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 30, 39 },
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8169, {	-- The Battle for Arathi Basin! [Level 40] (Horde)
-				["altQuests"] = {
+				altQuests = {
 					8171,	-- The Battle for Arathi Basin! [Level 20]
 					8170,	-- The Battle for Arathi Basin! [Level 30]
 					8169,	-- The Battle for Arathi Basin! [Level 40]
 					8120,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 15021,	-- Deathmaster Dwire
-				["coord"] = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 40, 49 },
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8120, {	-- The Battle for Arathi Basin! [Level 50] (Horde)
-				["altQuests"] = {
+				altQuests = {
 					8171,	-- The Battle for Arathi Basin! [Level 20]
 					8170,	-- The Battle for Arathi Basin! [Level 30]
 					8169,	-- The Battle for Arathi Basin! [Level 40]
 					8120,	-- The Battle for Arathi Basin! [Level 50]
 				},
-				["qg"] = 15021,	-- Deathmaster Dwire
-				["coord"] = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 		}),
 		n(REWARDS, {
@@ -630,9 +630,9 @@ battleground(MAP.ARATHI_BASIN, {
 		}),
 		n(VENDORS, {
 			n(15126, {	-- Rutherford Twing
-				["coord"] = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				groups = {
 					-- Weapons & Cloak
 					i(20220),	-- Ironbark Staff
 					i(20214),	-- Mindfang
@@ -723,9 +723,9 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			n(15127, {	-- Samuel Hawke <League of Arathor Supply Officer>
-				["coord"] = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					-- Weapons & Cloak
 					i(20069),	-- Ironbark Staff
 					i(20070),	-- Sageclaw
