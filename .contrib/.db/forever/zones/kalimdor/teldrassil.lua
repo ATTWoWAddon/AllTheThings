@@ -543,6 +543,21 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
 			}),
+			q(98046, {	-- Crown of the Earth (1/2) [Forever]
+				["qg"] = 3516,	-- Arch Druid Fandral Staghelm
+				["qi"] = 279291,	-- Drained Vessel
+				["coord"] = { 34.8, 8.8, MAP.DARNASSUS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF },
+			}),
+			q(98065, {	-- Crown of the Earth (2/2) [Forever]
+				["sourceQuest"] = 98046,	-- Crown of the Earth (1/2) [Forever]
+				["qg"] = 4092,	-- Lariia
+				["qi"] = 279331,	-- Moonwell Remnants
+				["coord"] = { 40.2, 88.2, MAP.DARNASSUS },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF },
+			}),
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				["sourceQuest"] = 928,	-- Crown of the Earth (2/6)
 				["qg"] = 3515,	-- Corithras Moonrage
@@ -600,6 +615,31 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					i(5595),	-- Thicket Hammer
 				},
 			}),
+			q(98392, {	-- Darkness in the Glade
+				["sourceQuest"] = 937,	-- The Enchanted Glade
+				["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
+				["coord"] = { 38.2, 34.4, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 6,
+				["groups"] = {
+					objective(1, {	-- 0/1 Hatescreech's Amulet
+						["provider"] = { "i", 280831 },	-- Hatescreech's Amulet
+						["coord"] = { 35.0, 38.6, MAP.TELDRASSIL },
+						["cr"] = 272034,	-- Hatescreech
+					}),
+					objective(2, {	-- 0/1 Windmistress Gaedress' Amulet
+						["provider"] = { "i", 280832 },	-- Windmistress Gaedress' Amulet
+						["coord"] = { 33.2, 36.0, MAP.TELDRASSIL },
+						["cr"] = 272044,	-- Windmistress Gaedress
+					}),
+					objective(3, {	-- 0/1 Witchmother Arysa's Amulet
+						["provider"] = { "i", 280834 },	-- Witchmother Arysa's Amulet
+						["coord"] = { 34.2, 27.9, MAP.TELDRASSIL },
+						["cr"] = 272046,	-- Witchmother Arysa
+					}),
+				},
+			}),
 			q(997, {	-- Denalan's Earth
 				["qg"] = 2083,	-- Syral Bladeleaf
 				["qi"] = 5391,	-- Rare Earth
@@ -652,6 +692,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 				},
 			}),
+			q(99073, {	-- Easing Suffering
+				["qg"] = 6094,	-- Byancie
+				["qi"] = 286069,	-- Lashwater Salve
+				["coord"] = { 55.2, 56.8, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 4,
+			}),
 			q(1684, {	-- Elanaria
 				["altQuests"] = {
 					1638,	-- A Warrior's Training
@@ -695,6 +743,20 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				["classes"] = { ROGUE },
 				["isBreadcrumb"] = true,
 				["lvl"] = 16,
+			}),
+			q(99053, {	-- Escaping Ban'ethil
+				["qg"] = 275744,	-- Sentinel Lynessa Duskblossom
+				["coord"] = { 44.6, 58.9, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- Escort Lynessa Duskblossom out of Ban'ethil
+						["provider"] = { "n", 275744 },	-- Sentinel Lynessa Duskblossom
+					}),
+					i(286734),	-- Ban'ethil Quiver
+					i(286735),	-- Sentinel's Slasher
+				},
 			}),
 			q(3661, {	-- Favored of Elune?
 				["qg"] = 7916,	-- Erelas Ambersky
@@ -779,6 +841,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					i(5618),	-- Scout's Cloak
 				},
 			}),
+			q(99047, {	-- Not Dead Yet
+				["sourceQuest"] = 99046,	-- The Lost Runner
+				["qg"] = 275683,	-- Sentinel Eralya Leafshadow
+				["coord"] = { 37.6, 36.8, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 4,
+			}),
 			q(2499, {	-- Oakenscowl
 				["sourceQuest"] = 2498,	-- Return to Denalan
 				["qg"] = 2080,	-- Denalan
@@ -855,6 +925,20 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 				},
 			}),
+			q(87288, {	-- Soft Saber Pelts
+				["qg"] = 3608,	-- Aldia
+				["coord"] = { 55.4, 57.2, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 0/6 Soft Nightsaber Pelt
+						["provider"] = { "i", 280087 },	-- Soft Nightsaber Pelt
+						["cr"] = 2042,	-- Nightsaber
+					}),
+					i(280088),	-- Soft Saber Sack
+				},
+			}),
 			q(6063, {	-- Taming the Beast (1/3)
 				["sourceQuests"] = {
 					6071,	-- The Hunter's Path [Darnassus]
@@ -913,7 +997,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(940, {	-- Teldrassil
-				["sourceQuest"] = 937,	-- The Enchanted Glade
+				["sourceQuest"] = 98398,	-- The Oracle Tree
 				["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
 				["qi"] = 5219,	-- Inscribed Bark
 				["coord"] = { 38.2, 34.4, MAP.TELDRASSIL },
@@ -997,6 +1081,30 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 			}),
+			q(99050, {	-- The Great Tree Provides
+				["sourceQuest"] = 99047,	-- Not Dead Yet
+				["qg"] = 6094,	-- Byancie
+				["coord"] = { 55.2, 56.8, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 0/6 Dewy Lasher Frond
+						["provider"] = { "i", 286017 },	-- Dewy Lasher Frond
+						["crs"] = {
+							275703,	-- Lasher Sproutling
+							275708,	-- Blooming Lasher
+							276099,	-- Wrathvine
+						},
+					}),
+					objective(2, {	-- 0/1 Empty Vial
+						["provider"] = { "i", 3371 },	-- Empty Vial
+					}),
+					objective(3, {	-- 0/1 Refreshing Spring Water
+						["provider"] = { "i", 159 },	-- Refreshing Spring Water
+					}),
+				},
+			}),
 			q(6071, {	-- The Hunter's Path [Darnassus]
 				["qg"] = 4146,	-- Jocaste <Hunter Trainer>
 				["coord"] = { 40.2, 8.8, MAP.DARNASSUS },
@@ -1037,12 +1145,33 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 10,
 			}),
+			q(99046, {	-- The Lost Runner
+				["qg"] = 2081,	-- Sentinel Kyra Starsong
+				["coord"] = { 56.0, 59.4, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 4,
+			}),
 			q(927, {	-- The Moss-twined Heart
 				["provider"] = { "i", 5179 },	-- Moss-twined Heart
 				["coord"] = { 52.0, 63.6, MAP.DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
 				["cr"] = 3535,	-- Blackmoss the Fetid
 				["lvl"] = 5,
+			}),
+			q(98398, {	-- The Oracle Tree
+				["sourceQuest"] = 98392,	-- Darkness in the Glade
+				["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
+				["coord"] = { 38.2, 34.4, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["lvl"] = 6,
+				["groups"] = {
+					objective(1, {	-- Find the Oracle Tree Bark
+						["provider"] = { "o", 673378 },	-- Oracle Tree Bark
+						["coord"] = { 37.0, 34.1, MAP.TELDRASSIL },
+					}),
+				},
 			}),
 			q(483, {	-- The Relics of Wakening
 				["sourceQuest"] = 476,	-- Gnarlpine Corruption
@@ -1201,6 +1330,26 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					i(5419),	-- Feral Bracers
 					i(2571),	-- Viny Wrappings
+				},
+			}),
+			q(98403, {	-- Twisted Hatred (2/2)
+				["sourceQuest"] = 932,	-- Twisted Hatred
+				["qg"] = 3567,	-- Tallonkai Swiftroot
+				["coord"] = { 55.4, 56.8, MAP.TELDRASSIL },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { NIGHTELF },
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 0/8 Befouled Webwood slain
+						["provider"] = { "n", 272096 },	-- Befouled Webwood
+						["coord"] = { 48.4, 50.2, MAP.TELDRASSIL },
+					}),
+					objective(2, {	-- 0/1 Mature Fel Moss
+						["provider"] = { "i", 281023 },	-- Mature Fel Moss
+						["coord"] = { 51.3, 45.4, MAP.TELDRASSIL },
+						["cr"] = 272116,	-- Xethorr the Wicked
+					}),
+					i(282284),	-- Webwood Slicer
 				},
 			}),
 			q(486, {	-- Ursal the Mauler
