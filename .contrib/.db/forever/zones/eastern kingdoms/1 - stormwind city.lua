@@ -3,174 +3,174 @@
 ---------------------------------------------------
 
 maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
-	["lore"] = "Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",
+	lore = "Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest.\n\nDuring the First War, the Kingdom of Azeroth, including its capital, Stormwind Keep, was utterly destroyed by the Horde and its survivors fled to Lordaeron. After the orcs were defeated at the Dark Portal at the end of the Second War, it was decided that the city would be rebuilt. The nobles of Stormwind assembled a team of the most skilled and ingenious stonemasons and architects they could find--which later turned sour and led to the rise of the Defias.\n\nWith the fall of the northern kingdoms, Stormwind is by far the most populated city in the world. It serves in many ways as the cultural and trade center of the Alliance, even with remote access to the sea. It is home to the Academy of Arcane Sciences, the only wizarding school in Eastern Kingdoms, as well as SI:7, a rogue intelligence organization.",
 	["zone-text-areas"] = {
 		1519,	-- Stormwind City
 		2918,	-- Champions' Hall
 	},
-	["icon"] = 255130,
-	["isRaid"] = true,
-	["groups"] = {
+	icon = 255130,
+	isRaid = true,
+	groups = {
 		n(FACTIONS, {
 			faction(FACTION_STORMWIND, {	-- Stormwind
-				["icon"] = 236447,
-				["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
-				["races"] = ALLIANCE_ONLY,
+				icon = 236447,
+				OnTooltip = [[_.OnTooltipDB.RuneclothTurnIns]],
+				races = ALLIANCE_ONLY,
 			}),
 		}),
 		n(FLIGHT_PATHS, {
 			fp(2, {	-- Stormwind City, Elwynn
-				["cr"] = 352,	-- Dungar Longdrink <Gryphon Master>
-				["coord"] = { 71.0, 72.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
+				cr = 352,	-- Dungar Longdrink <Gryphon Master>
+				coord = { 71.0, 72.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
 			}),
 		}),
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				n(5499, {	-- Lilyssia Nightbreeze <Expert Alchemist>
-					["coord"] = { 55.6, 85.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = ALCHEMY_RECIPES.JOURNEYMAN,
+					coord = { 55.6, 85.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = ALCHEMY_RECIPES.JOURNEYMAN,
 				}),
 				n(5500, {	-- Tel'Athir <Journeyman Alchemist>
-					["coord"] = { 55.6, 85.6, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = ALCHEMY_RECIPES.APPRENTICE,
+					coord = { 55.6, 85.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = ALCHEMY_RECIPES.APPRENTICE,
 				}),
 			}),
 			prof(BLACKSMITHING, {
 				n(957, {	-- Dane Lindgren <Journeyman Blacksmith>
-					["coord"] = { 64.0, 37.2, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = BLACKSMITHING_RECIPES.APPRENTICE
+					coord = { 64.0, 37.2, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = BLACKSMITHING_RECIPES.APPRENTICE
 				}),
 				n(5511, {	-- Therum Deepforge <Expert Blacksmith>
-					["coord"] = { 63.8, 37.6, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = BLACKSMITHING_RECIPES.JOURNEYMAN
+					coord = { 63.8, 37.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = BLACKSMITHING_RECIPES.JOURNEYMAN
 				}),
 			}),
 			prof(COOKING, {
 				n(5482, {	-- Stephen Ryback <Cooking Trainer>
-					["coord"] = { 78.2, 53.0, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_COOKING,
+					coord = { 78.2, 53.0, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_CATA_COOKING,
 				}),
 			}),
 			prof(ENCHANTING, {
 				n(11068, {	-- Betty Quin <Journeyman Enchanter>
-					["coord"] = { 53.0, 73.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = ENCHANTING_RECIPES.APPRENTICE,
+					coord = { 53.0, 73.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = ENCHANTING_RECIPES.APPRENTICE,
 				}),
 				n(1317, {	-- Lucan Cordell <Expert Enchanter>
-					["coord"] = { 53.0, 74.2, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = ENCHANTING_RECIPES.JOURNEYMAN,
+					coord = { 53.0, 74.2, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = ENCHANTING_RECIPES.JOURNEYMAN,
 				}),
 			}),
 			prof(ENGINEERING, {
 				n(5518, {	-- Lilliam Sparkspindle <Expert Engineer>
-					["coord"] = { 62.2, 30.6, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = ENGINEERING_RECIPES.JOURNEYMAN,
+					coord = { 62.2, 30.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = ENGINEERING_RECIPES.JOURNEYMAN,
 				}),
 				n(11026, {	-- Sprite Jumpsprocket <Journeyman Engineer>
-					["coord"] = { 62.0, 30.6, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = ENGINEERING_RECIPES.APPRENTICE,
+					coord = { 62.0, 30.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = ENGINEERING_RECIPES.APPRENTICE,
 				}),
 			}),
 			prof(FIRST_AID, {
 				n(2327, {	-- Shaina Fuller <First Aid Trainer>
-					["coord"] = { 52.8, 44.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = FIRST_AID_RECIPES.APPRENTICE_JOURNEYMAN,
+					coord = { 52.8, 44.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = FIRST_AID_RECIPES.APPRENTICE_JOURNEYMAN,
 				}),
 			}),
 			prof(FISHING, {
 				n(5493, {	-- Arnold Leland <Fishing Trainer>
-					["coord"] = { 55.0, 69.6, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_FISHING,
+					coord = { 55.0, 69.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_CATA_FISHING,
 				}),
 			}),
 			prof(HERBALISM, {
 				n(5566, {	-- Tannysa <Herbalism Trainer>
-					["coord"] = { 44.8, 77.0, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_HERBALISM,
+					coord = { 44.8, 77.0, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_CATA_HERBALISM,
 				}),
 			}),
 			prof(LEATHERWORKING, {
 				n(5564, {	-- Simon Tanner <Expert Leatherworker>
-					["coord"] = { 71.8, 62.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
+					coord = { 71.8, 62.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_CATA_LEGION_LEATHERWORKING,
 				}),
 			}),
 			prof(MINING, {
 				n(5513, {	-- Gelman Stonehand <Mining Trainer>
-					["coord"] = { 59.2, 37.6, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_MINING,
+					coord = { 59.2, 37.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_CATA_MINING,
 				}),
 			}),
 			prof(POISONS, {
 				n(13283, {	-- Lord Tony Romano <Rogue Trainer>
-					["coord"] = { 80.2, 68.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_POISONS,
+					coord = { 80.2, 68.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_POISONS,
 				}),
 			}),
 			prof(SKINNING, {
 				n(1292, {	-- Maris Granger <Skinning Trainer>
-					["coord"] = { 72.6, 62.0, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_CATA_SKINNING,
+					coord = { 72.6, 62.0, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_CATA_SKINNING,
 				}),
 			}),
 			prof(TAILORING, {
 				n(1346, {	-- Georgio Bolero <Tailoring Trainer>
-					["coord"] = { 53.2, 81.6, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = CLASSIC_TAILORING,
+					coord = { 53.2, 81.6, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = CLASSIC_TAILORING,
 				}),
 				n(9584, {	-- Jalane Ayrole <Master Shadoweave Tailor>
-					["coord"] = { 40.6, 83.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = SHADOWEAVE_TAILORING_CLASSIC,
+					coord = { 40.6, 83.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					groups = SHADOWEAVE_TAILORING_CLASSIC,
 				}),
 			}),
 		}),
 		n(QUESTS, {
 			q(7794, {	-- A Donation of Mageweave
-				["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-				["coord"] = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				["cost"] = {{ "i", 4338, 60 }},	-- Mageweave Cloth
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 40,
+				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
+				cost = {{ "i", 4338, 60 }},	-- Mageweave Cloth
+				races = ALLIANCE_ONLY,
+				lvl = 40,
 			}),
 			q(7795, {	-- A Donation of Runecloth
-				["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-				["coord"] = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				["cost"] = {{ "i", 14047, 60 }},	-- Runecloth
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
+				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(7793, {	-- A Donation of Silk
-				["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-				["coord"] = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				["cost"] = {{ "i", 4306, 60 }},	-- Silk Cloth
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 26,
+				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
+				cost = {{ "i", 4306, 60 }},	-- Silk Cloth
+				races = ALLIANCE_ONLY,
+				lvl = 26,
 			}),
 			q(7791, {	-- A Donation of Wool
-				["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-				["coord"] = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				["cost"] = {{ "i", 2592, 60 }},	-- Wool Cloth
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 12,
+				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
+				cost = {{ "i", 2592, 60 }},	-- Wool Cloth
+				races = ALLIANCE_ONLY,
+				lvl = 12,
 			}),
 			q(92749, {	-- A Dynamite Plan
 				sourceQuest = 92748,	-- Explosive Consultation (1/2)
@@ -182,248 +182,248 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 9,
 			}),
 			q(5645, {	-- A Lack of Fear
-				["altQuests"] = {
+				altQuests = {
 					5647,	-- A Lack of Fear [Darnassus]
 					5641,	-- A Lack of Fear [Ironforge]
 				},
-				["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-				["coord"] = { 38.8, 26.4, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.IRONFORGE },
-				["classes"] = { PRIEST },
-				["races"] = { DWARF },
-				["lvl"] = 20,
-				["groups"] = {
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
+				maps = { MAP.IRONFORGE },
+				classes = { PRIEST },
+				races = { DWARF },
+				lvl = 20,
+				groups = {
 					recipe(6346),	-- Fear Ward
 				},
 			}),
 			q(212, {	-- A Meal Served Cold
-				["qg"] = 1141,	-- Angus Stern
-				["coord"] = { 51.8, 93.7, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.STRANGLETHORN_VALE },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 35,
-				["groups"] = {
+				qg = 1141,	-- Angus Stern
+				coord = { 51.8, 93.7, MAP.STORMWIND_CITY },
+				maps = { MAP.STRANGLETHORN_VALE },
+				races = ALLIANCE_ONLY,
+				lvl = 35,
+				groups = {
 					objective(1, {	-- 0/1 Chilled Basilisk Haunch
-						["provider"] = { "i", 2476 },	-- Chilled Basilisk Haunch
-						["cr"] = 690,	-- Cold Eye Basilisk
+						provider = { "i", 2476 },	-- Chilled Basilisk Haunch
+						cr = 690,	-- Cold Eye Basilisk
 					}),
 				},
 			}),
 			q(335, {	-- A Noble Brew (1/2)
-				["qg"] = 1435,	-- Zardeth of the Black Claw
-				["coord"] = { 40.1, 85.3, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.DUSKWOOD, MAP.WETLANDS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 25,
-				["groups"] = {
+				qg = 1435,	-- Zardeth of the Black Claw
+				coord = { 40.1, 85.3, MAP.STORMWIND_CITY },
+				maps = { MAP.DUSKWOOD, MAP.WETLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 25,
+				groups = {
 					objective(1, {	-- 0/1 Tear of Tilloa
-						["providers"] = {
+						providers = {
 							{ "i", 2779 },	-- Tear of Tilloa
 							{ "o", 321 },	-- Tear of Tilloa
 						},
-						["coord"] = { 78.5, 36.0, MAP.DUSKWOOD },
+						coord = { 78.5, 36.0, MAP.DUSKWOOD },
 					}),
 					objective(2, {	-- 0/1 Musquash Root
-						["providers"] = {
+						providers = {
 							{ "i", 2784 },	-- Musquash Root
 							{ "o", 2084 },	-- Musquash Root
 						},
-						["coord"] = { 64.7, 75.5, MAP.WETLANDS },
+						coord = { 64.7, 75.5, MAP.WETLANDS },
 					}),
 				},
 			}),
 			q(336, {	-- A Noble Brew (2/2)
-				["sourceQuest"] = 335,	-- A Noble Brew (1/2)
-				["qg"] = 1435,	-- Zardeth of the Black Claw
-				["qi"] = 2788,	-- Black Claw Stout
-				["coord"] = { 40.1, 85.3, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 25,
+				sourceQuest = 335,	-- A Noble Brew (1/2)
+				qg = 1435,	-- Zardeth of the Black Claw
+				qi = 2788,	-- Black Claw Stout
+				coord = { 40.1, 85.3, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 25,
 			}),
 			q(1638, {	-- A Warrior's Training
-				["altQuests"] = {
+				altQuests = {
 					1684,	-- Elanaria
 					1679,	-- Muren Stormpike
 					1678,	-- Vejrek
 				},
-				["qgs"] = {
+				qgs = {
 					913,	-- Lyria Du Lac <Warrior Trainer>
 					5480,	-- Ilsa Corbin <Warrior Trainer>
 				},
-				["coords"] = {
+				coords = {
 					{ 41.0, 65.8, MAP.ELWYNN_FOREST },
 					{ 80.4, 59.8, MAP.STORMWIND_CITY },
 				},
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARRIOR },
-				["lvl"] = 10,
+				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				lvl = 10,
 			}),
 			q(7796, {	-- Additional Runecloth [Stormwind]
-				["sourceQuest"] = 7795,	-- A Donation of Runecloth
-				["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-				["coord"] = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				["maxReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
-				["cost"] = {{ "i", 14047, 20 }},	-- Runecloth
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = 50,
+				sourceQuest = 7795,	-- A Donation of Runecloth
+				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
+				maxReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				cost = {{ "i", 14047, 20 }},	-- Runecloth
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = 50,
 			}),
 			q(396, {	-- An Audience with the King
-				["sourceQuest"] = 395,	-- Brotherhood's End
-				["qg"] = 1646,	-- Baros Alexston <City Architect>
-				["qi"] = 2956,	-- Report on the Defias Brotherhood
-				["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
-				["groups"] = {
+				sourceQuest = 395,	-- Brotherhood's End
+				qg = 1646,	-- Baros Alexston <City Architect>
+				qi = 2956,	-- Report on the Defias Brotherhood
+				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
+				groups = {
 					i(2933),	-- Seal of Wrynn
 				},
 			}),
 			q(7643, {	-- Ancient Equine Spirit
-				["sourceQuest"] = 7642,	-- Collection of Goods
-				["providers"] = {
+				sourceQuest = 7642,	-- Collection of Goods
+				providers = {
 					{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					{ "i", 18753 },	-- Arcanite Barding
 					{ "n", 14566 },	-- Ancient Equine Spirit
 				},
-				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.DIRE_MAUL, MAP.HILLSBRAD_FOOTHILLS },
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
-				["groups"] = {
+				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				maps = { MAP.DIRE_MAUL, MAP.HILLSBRAD_FOOTHILLS },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
+				groups = {
 					q(7645, {	-- Ancient Equine Spirit
-						["qg"] = 2357,	-- Merideth Carlson <Horse Breeder>
-						["coord"] = { 52.0, 55.6, MAP.HILLSBRAD_FOOTHILLS },
-						["cost"] = {
+						qg = 2357,	-- Merideth Carlson <Horse Breeder>
+						coord = { 52.0, 55.6, MAP.HILLSBRAD_FOOTHILLS },
+						cost = {
 							{ "i", 13724, 20 },	-- Enriched Manna Biscuit
 							{ "g", 500000 },	-- 50g
 						},
-						["repeatable"] = true,
-						["groups"] = {
+						repeatable = true,
+						groups = {
 							objective(1, {	-- 0/1 Manna-Enriched Horse Feed
-								["questID"] = 7643,	-- Ancient Equine Spirit
-								["provider"] = { "i", 18775 },	-- Manna-Enriched Horse Feed
+								questID = 7643,	-- Ancient Equine Spirit
+								provider = { "i", 18775 },	-- Manna-Enriched Horse Feed
 							}),
 						},
 					}),
 				},
 			}),
 			q(5676, {	-- Arcane Feedback [Stormwind City]
-				["altQuests"] = {
+				altQuests = {
 					5677,	-- Arcane Feedback [Ironforge]
 					5678,	-- Arcane Feedback [Darnassus]
 				},
-				["qgs"] = {
+				qgs = {
 					11406,	-- High Priest Rohan <Priest Trainer>
 					376,	-- High Priestess Laurena <Priest Trainer>
 					11401,	-- Priestess Alathea <Priest Trainer>
 				},
-				["coords"] = {
+				coords = {
 					{ 26.4, 7.6, MAP.IRONFORGE },
 					{ 38.8, 26.6, MAP.STORMWIND_CITY },
 					{ 40.0, 80.0, MAP.DARNASSUS },
 				},
-				["races"] = { HUMAN },
-				["classes"] = { PRIEST },
-				["lvl"] = 20,
-				["groups"] = {
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 20,
+				groups = {
 					r(13896, {	-- Feedback (Rank 1)
-						["rank"] = 1,
+						rank = 1,
 					}),
 				},
 			}),
 			q(1942, {	-- Astral Knot Garment
-				["sourceQuest"] = 1940,	-- Pristine Spider Silk
-				["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
-				["coord"] = { 52.0, 83.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { MAGE },
-				["lvl"] = 26,
-				["groups"] = {
+				sourceQuest = 1940,	-- Pristine Spider Silk
+				qg = 1309,	-- Wynne Larson <Robe Merchant>
+				coord = { 52.0, 83.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { MAGE },
+				lvl = 26,
+				groups = {
 					i(9516),	-- Astral Knot Blouse
 					i(7511),	-- Astral Knot Robe
 				},
 			}),
 			q(1639, {	-- Bartleby the Drunk
-				["sourceQuests"] = {
+				sourceQuests = {
 					1638,	-- A Warrior's Training
 					1684,	-- Elanaria
 					1679,	-- Muren Stormpike
 				},
-				["qg"] = 6089,	-- Harry Burlguard
-				["coord"] = { 77.1, 53.3, MAP.STORMWIND_CITY },
-				["classes"] = { WARRIOR },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				qg = 6089,	-- Harry Burlguard
+				coord = { 77.1, 53.3, MAP.STORMWIND_CITY },
+				classes = { WARRIOR },
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(1665, {	-- Bartleby's Mug
-				["sourceQuest"] = 1640,	-- Beat Bartleby
-				["altQuests"] = {
+				sourceQuest = 1640,	-- Beat Bartleby
+				altQuests = {
 					-- 1665,	-- Bartleby's Mug
 					1678,	-- Vejrek
 					1683,	-- Vorlus Vilehoof
 				},
-				["qg"] = 6090,	-- Bartleby
-				["qi"] = 6781,	-- Bartleby's Mug
-				["coord"] = { 76.8, 52.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARRIOR },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 6090,	-- Bartleby
+				qi = 6781,	-- Bartleby's Mug
+				coord = { 76.8, 52.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				lvl = 10,
+				groups = {
 					recipe(71),	-- Defensive Stance
 					recipe(7386),	-- Sunder Armor
 					recipe(355),	-- Taunt
 				},
 			}),
 			q(1640, {	-- Beat Bartleby
-				["sourceQuest"] = 1639,	-- Bartleby the Drunk
-				["qg"] = 6090,	-- Bartleby
-				["coord"] = { 76.8, 52.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARRIOR },
-				["lvl"] = 10,
+				sourceQuest = 1639,	-- Bartleby the Drunk
+				qg = 6090,	-- Bartleby
+				coord = { 76.8, 52.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				lvl = 10,
 			}),
 			q(7644, {	-- Blessed Arcanite Barding
-				["sourceQuest"] = 7643,	-- Ancient Equine Spirit
-				["providers"] = {
+				sourceQuest = 7643,	-- Ancient Equine Spirit
+				providers = {
 					{ "n", 14566 },	-- Ancient Equine Spirit
 					{ "i", 18792 },	-- Blessed Arcanite Barding
 					{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				},
-				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.DIRE_MAUL },
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				maps = { MAP.DIRE_MAUL },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(344, {	-- Brother Paxton
-				["sourceQuest"] = 343,	-- Speaking of Fortitude
-				["qg"] = 1440,	-- Milton Sheaf
-				["coord"] = { 77.1, 30.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
+				sourceQuest = 343,	-- Speaking of Fortitude
+				qg = 1440,	-- Milton Sheaf
+				coord = { 77.1, 30.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
 			}),
 			q(395, {	-- Brotherhood's End
-				["sourceQuest"] = 394,	-- The Head of the Beast
-				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
+				sourceQuest = 394,	-- The Head of the Beast
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
 			}),
 			q(1705, {	-- Burning Blood
-				["sourceQuest"] = 1700,	-- Grimand Elmore
-				["qg"] = 1416,	-- Grimand Elmore
-				["coord"] = { 59.7, 33.8, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.DUSKWOOD },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARRIOR },
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 1700,	-- Grimand Elmore
+				qg = 1416,	-- Grimand Elmore
+				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
+				maps = { MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				lvl = 20,
+				groups = {
 					objective(1, {	-- 0/20 Burning Blood
-						["provider"] = { "i", 6844 },	-- Burning Blood
-						["coord"] = { 74.2, 77.8, MAP.DUSKWOOD },
-						["crs"] = {
+						provider = { "i", 6844 },	-- Burning Blood
+						coord = { 74.2, 77.8, MAP.DUSKWOOD },
+						crs = {
 							205,	-- Nightbane Dark Runner
 							533,	-- Nightbane Shadow Weaver
 							920,	-- Nightbane Tainted One
@@ -432,9 +432,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						},
 					}),
 					objective(2, {	-- 0/1 Burning Rock
-						["provider"] = { "i", 6845 },	-- Burning Rock
-						["coord"] = { 74.2, 77.8, MAP.DUSKWOOD },
-						["cr"] = 6170,	-- Gutspill
+						provider = { "i", 6845 },	-- Burning Rock
+						coord = { 74.2, 77.8, MAP.DUSKWOOD },
+						cr = 6170,	-- Gutspill
 					}),
 				},
 			}),
@@ -447,23 +447,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 13,
 			}),
 			q(7642, {	-- Collection of Goods
-				["sourceQuest"] = 7641,	-- The Work of Grimand Elmore
-				["qg"] = 1416,	-- Grimand Elmore
-				["coord"] = { 59.7, 33.8, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.STRATHOLME },
-				["cost"] = {
+				sourceQuest = 7641,	-- The Work of Grimand Elmore
+				qg = 1416,	-- Grimand Elmore
+				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
+				maps = { MAP.STRATHOLME },
+				cost = {
 					{ "i", 13180, 5 },	-- Stratholme Holy Water
 					{ "i", 8836, 10 },	-- Arthas' Tears
 					{ "i", 14047, 40 },	-- Runecloth
 					{ "i", 12360, 6 },	-- Arcanite Bar
 					{ "g", 1500000 },	-- 150g
 				},
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(5634, {	-- Desperate Prayer
-				["altQuests"] = {
+				altQuests = {
 					5635,	-- Desperate Prayer [Elwynn Forest]
 					5636,	-- Desperate Prayer [Teldrassil]
 					5637,	-- Desperate Prayer [Dun Morogh]
@@ -471,19 +471,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					5639,	-- Desperate Prayer [Ironforge]
 					5640,	-- Desperate Prayer [Darnassus]
 				},
-				["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-				["coord"] = { 38.8, 26.6, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN, DWARF },
-				["classes"] = { PRIEST },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.6, MAP.STORMWIND_CITY },
+				races = { HUMAN, DWARF },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
 					r(13908, {	-- Desperate Prayer (Rank 1)
-						["rank"] = 1,
+						rank = 1,
 					}),
 				},
 			}),
 			q(5638, {	-- Desperate Prayer
-				["altQuests"] = {
+				altQuests = {
 					5634,	-- Desperate Prayer [Stormwind City #1]
 					5635,	-- Desperate Prayer [Elwynn Forest]
 					5636,	-- Desperate Prayer [Teldrassil]
@@ -491,14 +491,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					5639,	-- Desperate Prayer [Ironforge]
 					5640,	-- Desperate Prayer [Darnassus]
 				},
-				["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
-				["coord"] = { 20.8, 50.2, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN, DWARF },
-				["classes"] = { PRIEST },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 11397,	-- Nara Meideros <Priest Trainer>
+				coord = { 20.8, 50.2, MAP.STORMWIND_CITY },
+				races = { HUMAN, DWARF },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
 					r(13908, {	-- Desperate Prayer (Rank 1)
-						["rank"] = 1,
+						rank = 1,
 					}),
 				},
 			}),
@@ -520,41 +520,41 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 9,
 			}),
 			q(6261, {	-- Dungar Longdrink
-				["sourceQuest"] = 6281,	-- Continue to Stormwind
-				["qg"] = 1323,	-- Osric Strang
-				["qi"] = 16115,	-- Osric's Crate (PQI!)
-				["coord"] = { 77.0, 61.2, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["lvl"] = 10,
+				sourceQuest = 6281,	-- Continue to Stormwind
+				qg = 1323,	-- Osric Strang
+				qi = 16115,	-- Osric's Crate (PQI!)
+				coord = { 77.0, 61.2, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				lvl = 10,
 			}),
 			q(5673, {	-- Elune's Grace [Stormwind City]
-				["altQuests"] = {
+				altQuests = {
 					5672,	-- Elune's Grace [Darnassus]
 					5675,	-- Elune's Grace [Ironforge]
 				},
-				["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-				["coord"] = { 38.8, 26.6, MAP.STORMWIND_CITY },
-				["classes"] = { PRIEST },
-				["races"] = { NIGHTELF },
-				["lvl"] = 20,
-				["groups"] = {
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.6, MAP.STORMWIND_CITY },
+				classes = { PRIEST },
+				races = { NIGHTELF },
+				lvl = 20,
+				groups = {
 					r(2651, {	-- Elune's Grace (Rank 1)
-						["rank"] = 1,
+						rank = 1,
 					}),
 				},
 			}),
 			q(7637, {	-- Emphasis on Sacrifice
-				["sourceQuests"] = {
+				sourceQuests = {
 					7670,	-- Lord Grayson Shadowbreaker [Ironforge]
 					7638,	-- Lord Grayson Shadowbreaker [Stormwind City]
 				},
-				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.IRONFORGE },
-				["cost"] = 1500000,	-- 150g
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				maps = { MAP.IRONFORGE },
+				cost = 1500000,	-- 150g
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(92752, {	-- Explosive Consultation (2/2)
 				sourceQuests = {
@@ -570,52 +570,52 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 9,
 			}),
 			q(7640, {	-- Exorcising Terrordale
-				["sourceQuest"] = 7639,	-- To Show Due Judgment
-				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-				["qi"] = 18752,	-- Exorcism Censer
-				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.EASTERN_PLAGUELANDS },
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
-				["groups"] = {
+				sourceQuest = 7639,	-- To Show Due Judgment
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				qi = 18752,	-- Exorcism Censer
+				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				maps = { MAP.EASTERN_PLAGUELANDS },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
+				groups = {
 					objective(1, {	-- 0/25 Terrordale Spirit slain
-						["provider"] = { "n", 14564 },	-- Terrordale Spirit
-						["coord"] = { 16.4, 31.8, MAP.EASTERN_PLAGUELANDS },
+						provider = { "n", 14564 },	-- Terrordale Spirit
+						coord = { 16.4, 31.8, MAP.EASTERN_PLAGUELANDS },
 					}),
 				},
 			}),
 			q(1701, {	-- Fire Hardened Mail
-				["sourceQuest"] = 1702,	-- The Shieldsmith
-				["qg"] = 5413,	-- Furen Longbeard
-				["qi"] = 6842,	-- Furen's Instructions
-				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.RAZORFEN_KRAUL, MAP.WETLANDS, MAP.STONETALON_MOUNTAINS },
-				["classes"] = { WARRIOR },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 1702,	-- The Shieldsmith
+				qg = 5413,	-- Furen Longbeard
+				qi = 6842,	-- Furen's Instructions
+				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
+				maps = { MAP.RAZORFEN_KRAUL, MAP.WETLANDS, MAP.STONETALON_MOUNTAINS },
+				classes = { WARRIOR },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
 					objective(1, {	-- 0/50 Scorched Spider Fang
-						["provider"] = { "i", 6838 },	-- Scorched Spider Fang
-						["crs"] = {
+						provider = { "i", 6838 },	-- Scorched Spider Fang
+						crs = {
 							4040,	-- Cave Stalker
 							1111,	-- Leech Stalker
 						},
 					}),
 					objective(2, {	-- 0/12 Charred Horn
-						["provider"] = { "i", 6839 },	-- Charred Horn
-						["crs"] = {
+						provider = { "i", 6839 },	-- Charred Horn
+						crs = {
 							4031,	-- Fledgling Chimaera
 							4032,	-- Young Chimaera
 						},
 					}),
 					objective(3, {	-- 0/1 Galvanized Horn
-						["provider"] = { "i", 6840 },	-- Galvanized Horn
-						["cr"] = 6167,	-- Chimaera Matriarch
+						provider = { "i", 6840 },	-- Galvanized Horn
+						cr = 6167,	-- Chimaera Matriarch
 					}),
 					objective(4, {	-- 0/1 Vial of Phlogiston
-						["provider"] = { "i", 6841 },	-- Vial of Phlogiston
-						["cr"] = 6168,	-- Roogug
+						provider = { "i", 6841 },	-- Vial of Phlogiston
+						cr = 6168,	-- Roogug
 					}),
 				},
 			}),
@@ -635,46 +635,46 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(98021, {	-- Journey to Sentinel Hill
-				["qg"] = 1748,	-- Highlord Bolvar Fordragon
-				["coord"] = { 80.1, 38.4, MAP.STORMWIND_CITY },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["maps"] = { MAP.WESTFALL },
-				["races"] = { SKYBORNE_ALLIANCE },
+				qg = 1748,	-- Highlord Bolvar Fordragon
+				coord = { 80.1, 38.4, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.WESTFALL },
+				races = { SKYBORNE_ALLIANCE },
 			}),
 			q(6184, {	-- Flint Shadowmore
-				["sourceQuest"] = 6183,	-- Honor the Dead
-				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 56,
+				sourceQuest = 6183,	-- Honor the Dead
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 56,
 			}),
 			q(1782, {	-- Furen's Armor
-				["sourceQuest"] = 1701,	-- Fire Hardened Mail
-				["qg"] = 5413,	-- Furen Longbeard
-				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARRIOR },
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 1701,	-- Fire Hardened Mail
+				qg = 5413,	-- Furen Longbeard
+				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				lvl = 20,
+				groups = {
 					i(6972),	-- Fire Hardened Hauberk
 				},
 			}),
 			q(1685, {	-- Gakin's Summons (Voidwalker)
-				["altQuests"] = { 1715 },	-- The Slaughtered Lamb
-				["qg"] = 6121,	-- Remen Marcot
-				["coord"] = { 44.4, 66.2, MAP.ELWYNN_FOREST },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { WARLOCK },
-				["isBreadcrumb"] = true,
-				["lvl"] = 10,
+				altQuests = { 1715 },	-- The Slaughtered Lamb
+				qg = 6121,	-- Remen Marcot
+				coord = { 44.4, 66.2, MAP.ELWYNN_FOREST },
+				races = { HUMAN, GNOME },
+				classes = { WARLOCK },
+				isBreadcrumb = true,
+				lvl = 10,
 			}),
 			q(1717, {	-- Gakin's Summons (Succubus)
-				["qg"] = 6120,	-- Lago Blackwrench
-				["coord"] = { 47.6, 9.6, MAP.IRONFORGE },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { WARLOCK },
-				["isBreadcrumb"] = true,
-				["lvl"] = 20,
+				qg = 6120,	-- Lago Blackwrench
+				coord = { 47.6, 9.6, MAP.IRONFORGE },
+				races = { HUMAN, GNOME },
+				classes = { WARLOCK },
+				isBreadcrumb = true,
+				lvl = 20,
 			}),
 			q(97222, {	-- Gatehouse Goods
 				sourceQuest = 97220,	-- Philmor's Favor
@@ -692,26 +692,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(1921, {	-- Gathering Materials
-				["sourceQuest"] = 1920,	-- Investigate the Blue Recluse
-				["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
-				["coord"] = { 49.5, 85.8, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.LOCH_MODAN },
-				["cost"] = {{ "i", 2589, 10 }},	-- Linen Cloth
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { MAGE },
-				["lvl"] = 15,
-				["groups"] = {
+				sourceQuest = 1920,	-- Investigate the Blue Recluse
+				qg = 5497,	-- Jennea Cannon <Mage Trainer>
+				coord = { 49.5, 85.8, MAP.STORMWIND_CITY },
+				maps = { MAP.LOCH_MODAN },
+				cost = {{ "i", 2589, 10 }},	-- Linen Cloth
+				races = { HUMAN, GNOME },
+				classes = { MAGE },
+				lvl = 15,
+				groups = {
 					objective(2, {	-- 0/6 Charged Rift Gem
-						["providers"] = {
+						providers = {
 							{ "i", 7249 },	-- Charged Rift Gem
 							{ "o", 271 },	-- Miners' League Crates
 						},
-						["coord"] = { 35.0, 27.0, MAP.LOCH_MODAN },
+						coord = { 35.0, 27.0, MAP.LOCH_MODAN },
 					}),
 				},
 			}),
 			q(3630, {	-- Gnome Engineering [A]
-				["altQuests"] = {
+				altQuests = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
 					-- 3630,	-- Gnome Engineering
@@ -722,16 +722,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},
-				["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
-				["qi"] = 10789,	-- Manual of Engineering Disciplines
-				["coord"] = { 55.0, 8.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["requireSkill"] = ENGINEERING,
-				["learnedAt"] = 200,
-				["lvl"] = 30,
+				qg = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
+				qi = 10789,	-- Manual of Engineering Disciplines
+				coord = { 55.0, 8.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				requireSkill = ENGINEERING,
+				learnedAt = 200,
+				lvl = 30,
 			}),
 			q(3629, {	-- Goblin Engineering [A]
-				["altQuests"] = {
+				altQuests = {
 					3526,	-- Goblin Engineering
 					-- 3629,	-- Goblin Engineering
 					3630,	-- Gnome Engineering
@@ -742,248 +742,248 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},
-				["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
-				["qi"] = 10789,	-- Manual of Engineering Disciplines
-				["coord"] = { 55.0, 8.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["requireSkill"] = ENGINEERING,
-				["learnedAt"] = 200,
-				["lvl"] = 30,
+				qg = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
+				qi = 10789,	-- Manual of Engineering Disciplines
+				coord = { 55.0, 8.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				requireSkill = ENGINEERING,
+				learnedAt = 200,
+				lvl = 30,
 			}),
 			q(1700, {	-- Grimand Elmore
-				["sourceQuest"] = 1701,	-- Fire Hardened Mail
-				["qg"] = 5413,	-- Furen Longbeard
-				["qi"] = 6926,	-- Furen's Notes
-				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARRIOR },
-				["isBreadcrumb"] = true,
-				["lvl"] = 20,
+				sourceQuest = 1701,	-- Fire Hardened Mail
+				qg = 5413,	-- Furen Longbeard
+				qi = 6926,	-- Furen's Notes
+				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				isBreadcrumb = true,
+				lvl = 20,
 			}),
 			q(1706, {	-- Grimand's Armor
-				["sourceQuest"] = 1705,	-- Burning Blood
-				["qg"] = 1416,	-- Grimand Elmore
-				["coord"] = { 59.7, 33.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARRIOR },
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 1705,	-- Burning Blood
+				qg = 1416,	-- Grimand Elmore
+				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				lvl = 20,
+				groups = {
 					i(6971),	-- Fire Hardened Coif
 				},
 			}),
 			q(7648, {	-- Grimand's Finest Work
-				["sourceQuest"] = 7642,	-- Collection of Goods
-				["qg"] = 1416,	-- Grimand Elmore
-				["qi"] = 18753,	-- Arcanite Barding
-				["coord"] = { 59.7, 33.8, MAP.STORMWIND_CITY },
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				sourceQuest = 7642,	-- Collection of Goods
+				qg = 1416,	-- Grimand Elmore
+				qi = 18753,	-- Arcanite Barding
+				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(333, {	-- Harlan Needs a Resupply
-				["qg"] = 1427,	-- Harlan Bagley
-				["qi"] = 2724,	-- Cloth Request (PQI!)
-				["coord"] = { 62.3, 67.9, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
+				qg = 1427,	-- Harlan Bagley
+				qi = 2724,	-- Cloth Request (PQI!)
+				coord = { 62.3, 67.9, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
 			}),
 			q(1939, {	-- High Sorcerer Andromath
-				["qgs"] = {
+				qgs = {
 					5144,	-- Bink <Mage Trainer>
 					5497,	-- Jennea Cannon <Mage Trainer>
 				},
-				["coords"] = {
+				coords = {
 					{ 27.0, 8.2, MAP.IRONFORGE },
 					{ 49.5, 85.8, MAP.STORMWIND_CITY },
 				},
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { MAGE },
-				["isBreadcrumb"] = true,
-				["lvl"] = 26,
+				races = { HUMAN, GNOME },
+				classes = { MAGE },
+				isBreadcrumb = true,
+				lvl = 26,
 			}),
 			q(6183, {	-- Honor the Dead
-				["sourceQuest"] = 6182,	-- The First and the Last
-				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 56,
+				sourceQuest = 6182,	-- The First and the Last
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 56,
 			}),
 			q(399, {	-- Humble Beginnings
-				["qg"] = 1646,	-- Baros Alexston <City Architect>
-				["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.WESTFALL },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 1646,	-- Baros Alexston <City Architect>
+				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
+				maps = { MAP.WESTFALL },
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
 					objective(1, {	-- 0/1 A Simple Compass
-						["providers"] = {
+						providers = {
 							{ "i", 2998 },	-- A Simple Compass
 							{ "o", 1166 },	-- Alexston's Chest
 						},
-						["coord"] = { 36.3, 54.6, MAP.WESTFALL },
+						coord = { 36.3, 54.6, MAP.WESTFALL },
 					}),
 				},
 			}),
 			q(2759, {	-- In Search of Galvan
-				["sourceQuest"] = 2758,	-- The Origins of Smithing
-				["qg"] = 7798,	-- Hank the Hammer
-				["qi"] = 8663,	-- Mithril Insignia
-				["coord"] = { 63.0, 36.4, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.STRANGLETHORN_VALE },
-				["requireSkill"] = BLACKSMITHING,
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 40,
+				sourceQuest = 2758,	-- The Origins of Smithing
+				qg = 7798,	-- Hank the Hammer
+				qi = 8663,	-- Mithril Insignia
+				coord = { 63.0, 36.4, MAP.STORMWIND_CITY },
+				maps = { MAP.STRANGLETHORN_VALE },
+				requireSkill = BLACKSMITHING,
+				races = ALLIANCE_ONLY,
+				lvl = 40,
 			}),
 			q(1448, {	-- In Search of The Temple
-				["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
-				["coord"] = { 69.5, 40.4, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 38,
+				qg = 5384,	-- Brohann Caskbelly <Explorers' League>
+				coord = { 69.5, 40.4, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 38,
 			}),
 			q(2745, {	-- Infiltrating the Castle
-				["sourceQuest"] = 350,	-- Look to an Old Friend
-				["qg"] = 482,	-- Elling Trias <Master of Cheese>
-				["coord"] = { 66.0, 74.1, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
+				sourceQuest = 350,	-- Look to an Old Friend
+				qg = 482,	-- Elling Trias <Master of Cheese>
+				coord = { 66.0, 74.1, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
 			}),
 			q(1920, {	-- Investigate the Blue Recluse
-				["sourceQuest"] = 1919,	-- Report to Jennea
-				["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
-				["coord"] = { 49.5, 85.8, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { MAGE },
-				["lvl"] = 15,
-				["groups"] = {
+				sourceQuest = 1919,	-- Report to Jennea
+				qg = 5497,	-- Jennea Cannon <Mage Trainer>
+				coord = { 49.5, 85.8, MAP.STORMWIND_CITY },
+				races = { HUMAN, GNOME },
+				classes = { MAGE },
+				lvl = 15,
+				groups = {
 					objective(1, {	-- 0/3 Filled Containment Coffer
-						["providers"] = {
+						providers = {
 							{ "i",   7292 },	-- Filled Containment Coffer
 							{ "o", 103574 },	-- Filled Containment Coffer
 							{ "i",   7247 },	-- Chest of Containment Coffers
 							{ "i",   7308 },	-- Cantation of Manifestation
 						},
-						["coord"] = { 51.0, 95.0, MAP.STORMWIND_CITY },
-						["cr"] = 6492,	-- Rift Spawn
+						coord = { 51.0, 95.0, MAP.STORMWIND_CITY },
+						cr = 6492,	-- Rift Spawn
 					}),
 					objective(2, {	-- 0/1 Chest of Containment Coffers
-						["providers"] = {
+						providers = {
 							{ "i",   7247 },	-- Chest of Containment Coffers
 							{ "o", 105174 },	-- Chest of Containment Coffers
 						},
-						["coord"] = { 49.6, 85.4, MAP.STORMWIND_CITY },
+						coord = { 49.6, 85.4, MAP.STORMWIND_CITY },
 					}),
 					objective(3, {	-- 0/1 Cantation of Manifestation
-						["providers"] = {
+						providers = {
 							{ "i",   7308 },	-- Cantation of Manifestation
 							{ "o", 105175 },	-- Cantation of Manifestation
 						},
-						["coord"] = { 49.6, 85.4, MAP.STORMWIND_CITY },
+						coord = { 49.6, 85.4, MAP.STORMWIND_CITY },
 					}),
 				},
 			}),
 			q(2746, {	-- Items of Some Consequence
-				["sourceQuest"] = 2745,	-- Infiltrating the Castle
-				["qg"] = 7766,	-- Tyrion
-				["coord"] = { 73.2, 35.7, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ELWYNN_FOREST },
-				["cost"] = {{ "i", 4306, 3 }},	-- Silk Cloth
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
-				["groups"] = {
+				sourceQuest = 2745,	-- Infiltrating the Castle
+				qg = 7766,	-- Tyrion
+				coord = { 73.2, 35.7, MAP.STORMWIND_CITY },
+				maps = { MAP.ELWYNN_FOREST },
+				cost = {{ "i", 4306, 3 }},	-- Silk Cloth
+				races = ALLIANCE_ONLY,
+				lvl = 16,
+				groups = {
 					objective(2, {	-- 0/2 Clara's Fresh Apple
-						["providers"] = {
+						providers = {
 							{ "i",   8683 },	-- Clara's Fresh Apple
 							{ "o", 142076 },	-- Clara's Fresh Apples
 						},
-						["coord"] = { 34.0, 57.2, MAP.ELWYNN_FOREST },
+						coord = { 34.0, 57.2, MAP.ELWYNN_FOREST },
 					}),
 				},
 			}),
 			q(1704, {	-- Klockmort Spannerspan
-				["sourceQuest"] = 1701,	-- Fire Hardened Mail
-				["qg"] = 5413,	-- Furen Longbeard
-				["qi"] = 6926,	-- Furen's Notes
-				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
-				["classes"] = { WARRIOR },
-				["races"] = { DWARF, GNOME },
-				["isBreadcrumb"] = true,
-				["lvl"] = 20,
+				sourceQuest = 1701,	-- Fire Hardened Mail
+				qg = 5413,	-- Furen Longbeard
+				qi = 6926,	-- Furen's Notes
+				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
+				classes = { WARRIOR },
+				races = { DWARF, GNOME },
+				isBreadcrumb = true,
+				lvl = 20,
 			}),
 			q(7670, {	-- Lord Grayson Shadowbreaker [Ironforge]
-				["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-				["coord"] = { 23.4, 6.2, MAP.IRONFORGE },
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["isBreadcrumb"] = true,
-				["lvl"] = 60,
+				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+				coord = { 23.4, 6.2, MAP.IRONFORGE },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 60,
 			}),
 			q(7638, {	-- Lord Grayson Shadowbreaker [Stormwind City]
-				["qg"] = 6171,	-- Duthorian Rall
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["isBreadcrumb"] = true,
-				["lvl"] = 60,
+				qg = 6171,	-- Duthorian Rall
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 60,
 			}),
 			q(350, {	-- Look to an Old Friend
-				["sourceQuest"] = 393,	-- Shadow of the Past
-				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
+				sourceQuest = 393,	-- Shadow of the Past
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
 			}),
 			q(1941, {	-- Manaweave Robe
-				["sourceQuest"] = 1921,	-- Gathering Materials
-				["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
-				["coord"] = { 52.0, 83.6, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { MAGE },
-				["lvl"] = 15,
-				["groups"] = {
+				sourceQuest = 1921,	-- Gathering Materials
+				qg = 1309,	-- Wynne Larson <Robe Merchant>
+				coord = { 52.0, 83.6, MAP.STORMWIND_CITY },
+				races = { HUMAN, GNOME },
+				classes = { MAGE },
+				lvl = 15,
+				groups = {
 					i(7509),	-- Manaweave Robe
 				},
 			}),
 			q(1666, {	-- Marshal Haggard
-				["sourceQuest"] = 1665,	-- Bartleby's Mug
-				["qg"] = 6089,	-- Harry Burlguard
-				["coord"] = { 77.1, 53.3, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ELWYNN_FOREST },
-				["classes"] = { WARRIOR },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				sourceQuest = 1665,	-- Bartleby's Mug
+				qg = 6089,	-- Harry Burlguard
+				coord = { 77.1, 53.3, MAP.STORMWIND_CITY },
+				maps = { MAP.ELWYNN_FOREST },
+				classes = { WARRIOR },
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(2360, {	-- Mathias and the Defias
-				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { ROGUE },
-				["lvl"] = 20,
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { ROGUE },
+				lvl = 20,
 			}),
 			q(1703, {	-- Mathiel
-				["sourceQuest"] = 1701,	-- Fire Hardened Mail
-				["qg"] = 5413,	-- Furen Longbeard
-				["qi"] = 6926,	-- Furen's Notes
-				["coord"] = { 64.6, 37.2, MAP.STORMWIND_CITY },
-				["classes"] = { WARRIOR },
-				["races"] = { NIGHTELF },
-				["isBreadcrumb"] = true,
-				["lvl"] = 20,
+				sourceQuest = 1701,	-- Fire Hardened Mail
+				qg = 5413,	-- Furen Longbeard
+				qi = 6926,	-- Furen's Notes
+				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
+				classes = { WARRIOR },
+				races = { NIGHTELF },
+				isBreadcrumb = true,
+				lvl = 20,
 			}),
 			q(1363, {	-- Mazen's Behest (1/2)
-				["qg"] = 338,	-- Mazen Mac'Nadir
-				["coord"] = { 51.8, 74.3, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 37,
+				qg = 338,	-- Mazen Mac'Nadir
+				coord = { 51.8, 74.3, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 37,
 			}),
 			q(1364, {	-- Mazen's Behest (2/2)
-				["sourceQuest"] = 1363,	-- Mazen's Behest (1/2)
-				["qg"] = 5386,	-- Acolyte Dellis
-				["coord"] = { 51.4, 73.8, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.SWAMP_OF_SORROWS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 37,
-				["groups"] = {
+				sourceQuest = 1363,	-- Mazen's Behest (1/2)
+				qg = 5386,	-- Acolyte Dellis
+				coord = { 51.4, 73.8, MAP.STORMWIND_CITY },
+				maps = { MAP.SWAMP_OF_SORROWS },
+				races = ALLIANCE_ONLY,
+				lvl = 37,
+				groups = {
 					objective(1, {	-- 0/1 Khadgar's Essays on Dimensional Convergence
-						["provider"] = { "i", 6065 },	-- Khadgar's Essays on Dimensional Convergence
-						["crs"] = {
+						provider = { "i", 6065 },	-- Khadgar's Essays on Dimensional Convergence
+						crs = {
 							1081,	-- Mire Lord
 							14448,	-- Molt Thorn
 							764,	-- Swampwalker
@@ -996,37 +996,37 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(1861, {	-- Mirror Lake
-				["sourceQuest"] = 1860,	-- Speak with Jennea
-				["altQuests"] = { 1880 },	-- Mage-tastic Gizmonitor
-				["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
-				["coord"] = { 49.5, 85.8, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ELWYNN_FOREST },
-				["classes"] = { MAGE },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
-				["groups"] = {
+				sourceQuest = 1860,	-- Speak with Jennea
+				altQuests = { 1880 },	-- Mage-tastic Gizmonitor
+				qg = 5497,	-- Jennea Cannon <Mage Trainer>
+				coord = { 49.5, 85.8, MAP.STORMWIND_CITY },
+				maps = { MAP.ELWYNN_FOREST },
+				classes = { MAGE },
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
 					objective(1, {	-- 0/1 Mirror Lake Water Sample
-						["providers"] = {
+						providers = {
 							{ "i", 7206 },	-- Mirror Lake Water Sample
 							{ "i", 7207 },	-- Jennea's Flask
 						},
-						["coord"] = { 28.0, 62.0, MAP.ELWYNN_FOREST },
+						coord = { 28.0, 62.0, MAP.ELWYNN_FOREST },
 					}),
 					i(7508),	-- Ley Orb
 					i(9513),	-- Ley Staff
 				},
 			}),
 			q(6187, {	-- Order Must Be Restored
-				["sourceQuest"] = 6186,	-- The Blightcaller Cometh
-				["qg"] = 1748,	-- Highlord Bolvar Fordragon
-				["coord"] = { 79.8, 38.6, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.EASTERN_PLAGUELANDS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 56,
-				["groups"] = {
+				sourceQuest = 6186,	-- The Blightcaller Cometh
+				qg = 1748,	-- Highlord Bolvar Fordragon
+				coord = { 79.8, 38.6, MAP.STORMWIND_CITY },
+				maps = { MAP.EASTERN_PLAGUELANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 56,
+				groups = {
 					objective(1, {	-- 0/1 Nathanos Blightcaller slain
-						["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
-						["coord"] = { 26.6, 74.8, MAP.EASTERN_PLAGUELANDS },
+						provider = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+						coord = { 26.6, 74.8, MAP.EASTERN_PLAGUELANDS },
 					}),
 					i(16996),	-- Gorewood Bow
 					i(16997),	-- Stormrager
@@ -1034,10 +1034,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(334, {	-- Package for Thurman
-				["qg"] = 1428,	-- Rema Schneider
-				["coord"] = { 58.1, 67.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["qi"] = 2760,	-- Thurman's Sewing Kit
+				qg = 1428,	-- Rema Schneider
+				coord = { 58.1, 67.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				qi = 2760,	-- Thurman's Sewing Kit
 			}),
 			q(97220, {	-- Philmor's Favor
 				qg = 268511,	-- Manifest Clerk Philmor
@@ -1048,17 +1048,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 9,
 			}),
 			q(1940, {	-- Pristine Spider Silk
-				["sourceQuest"] = 1938,	-- Ur's Treatise on Shadow Magic
-				["qg"] = 5694,	-- High Sorcerer Andromath
-				["coord"] = { 48.7, 87.6, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.DUSKWOOD },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { MAGE },
-				["lvl"] = 26,
-				["groups"] = {
+				sourceQuest = 1938,	-- Ur's Treatise on Shadow Magic
+				qg = 5694,	-- High Sorcerer Andromath
+				coord = { 48.7, 87.6, MAP.STORMWIND_CITY },
+				maps = { MAP.DUSKWOOD },
+				races = { HUMAN, GNOME },
+				classes = { MAGE },
+				lvl = 26,
+				groups = {
 					objective(1, {	-- 0/8 Pristine Spider Silk
-						["provider"] = { "i", 7267 },	-- Pristine Spider Silk
-						["crs"] = {
+						provider = { "i", 7267 },	-- Pristine Spider Silk
+						crs = {
 							949,	-- Carrion Recluse
 							930,	-- Black Widow Hatchling
 						},
@@ -1074,36 +1074,36 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 13,
 			}),
 			q(2281, {	-- Redridge Rendezvous
-				["sourceQuests"] = {
+				sourceQuests = {
 					2260,	-- Erion's Behest(Darnassus)
 					2298,	-- Kingly Shakedown(Ironforge)
 					2300,	-- SI:7(Elwynn Forest)
 				},
-				["qg"] = 6946,	-- Renzik "The Shiv" <SI:7 Operative>
-				["coord"] = { 78.8, 70.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { ROGUE },
-				["lvl"] = 16,
+				qg = 6946,	-- Renzik "The Shiv" <SI:7 Operative>
+				coord = { 78.8, 70.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { ROGUE },
+				lvl = 16,
 			}),
 			q(1919, {	-- Report to Jennea
-				["qg"] = 7312,	-- Dink <Mage Trainer>
-				["coord"] = { 26.8, 8.6, MAP.IRONFORGE },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { MAGE },
-				["isBreadcrumb"] = true,
-				["lvl"] = 15,
+				qg = 7312,	-- Dink <Mage Trainer>
+				coord = { 26.8, 8.6, MAP.IRONFORGE },
+				races = { HUMAN, GNOME },
+				classes = { MAGE },
+				isBreadcrumb = true,
+				lvl = 15,
 			}),
 			q(6285, {	-- Return to Lewis
-				["sourceQuest"] = 6261,	-- Dungar Longdrink
-				["qg"] = 352,	-- Dungar Longdrink <Gryphon Master>
-				["qi"] = 16115,	-- Osric's Crate (PQI!)
-				["coord"] = { 71.0, 72.5, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.WESTFALL },
-				["races"] = { HUMAN },
-				["lvl"] = 10,
+				sourceQuest = 6261,	-- Dungar Longdrink
+				qg = 352,	-- Dungar Longdrink <Gryphon Master>
+				qi = 16115,	-- Osric's Crate (PQI!)
+				coord = { 71.0, 72.5, MAP.STORMWIND_CITY },
+				maps = { MAP.WESTFALL },
+				races = { HUMAN },
+				lvl = 10,
 			}),
 			q(5631, {	-- Returning Home [Stormwind City]
-				["altQuests"] = {
+				altQuests = {
 					5627,	-- Returning Home [Darnassus]
 					5628,	-- Returning Home [Elwynn Forest]
 					5629,	-- Returning Home [Teldrassil]
@@ -1111,19 +1111,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					5632,	-- Returning Home [Stormwind City]
 					5633,	-- Returning Home [Ironforge]
 				},
-				["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
-				["coord"] = { 38.6, 26.8, MAP.STORMWIND_CITY },
-				["classes"] = { PRIEST },
-				["races"] = { NIGHTELF },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 5489,	-- Brother Joshua <Priest Trainer>
+				coord = { 38.6, 26.8, MAP.STORMWIND_CITY },
+				classes = { PRIEST },
+				races = { NIGHTELF },
+				lvl = 10,
+				groups = {
 					r(10797, {	-- Starshards (Rank 1)
-						["rank"] = 1,
+						rank = 1,
 					}),
 				},
 			}),
 			q(5632, {	-- Returning Home [Stormwind City]
-				["altQuests"] = {
+				altQuests = {
 					5627,	-- Returning Home [Darnassus]
 					5628,	-- Returning Home [Elwynn Forest]
 					5629,	-- Returning Home [Teldrassil]
@@ -1131,24 +1131,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					5631,	-- Returning Home [Stormwind City]
 					5633,	-- Returning Home [Ironforge]
 				},
-				["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
-				["coord"] = { 20.8, 50.2, MAP.STORMWIND_CITY },
-				["classes"] = { PRIEST },
-				["races"] = { NIGHTELF },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 11397,	-- Nara Meideros <Priest Trainer>
+				coord = { 20.8, 50.2, MAP.STORMWIND_CITY },
+				classes = { PRIEST },
+				races = { NIGHTELF },
+				lvl = 10,
+				groups = {
 					r(10797, {	-- Starshards (Rank 1)
-						["rank"] = 1,
+						rank = 1,
 					}),
 				},
 			}),
 			q(393, {	-- Shadow of the Past
-				["sourceQuest"] = 392,	-- The Curious Visitor
-				["qg"] = 1646,	-- Baros Alexston <City Architect>
-				["qi"] = 8687,	-- Sealed Description of Thredd's Visitor
-				["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
+				sourceQuest = 392,	-- The Curious Visitor
+				qg = 1646,	-- Baros Alexston <City Architect>
+				qi = 8687,	-- Sealed Description of Thredd's Visitor
+				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
 			}),
 			q(97237, {	-- Shelf Picked
 				sourceQuest = 97234,	-- Reading Room
@@ -1191,566 +1191,566 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(2206, {	-- Snatch and Grab
-				["sourceQuest"] = 2205,	-- Seek out SI:7
-				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ELWYNN_FOREST },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { ROGUE },
-				["lvl"] = 10,
-				["groups"] = {
+				sourceQuest = 2205,	-- Seek out SI:7
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				maps = { MAP.ELWYNN_FOREST },
+				races = ALLIANCE_ONLY,
+				classes = { ROGUE },
+				lvl = 10,
+				groups = {
 					objective(1, {	-- 0/1 Defias Shipping Schedule
-						["provider"] = { "i", 7675 },	-- Defias Shipping Schedule
-						["coord"] = { 48.2, 87.6, MAP.ELWYNN_FOREST },
-						["cr"] = 6846,	-- Defias Dockmaster
+						provider = { "i", 7675 },	-- Defias Shipping Schedule
+						coord = { 48.2, 87.6, MAP.ELWYNN_FOREST },
+						cr = 6846,	-- Defias Dockmaster
 					}),
 					i(7298),	-- Blade of Cunning
 				},
 			}),
 			q(343, {	-- Speaking of Fortitude
-				["qg"] = 1444,	-- Brother Kristoff
-				["coord"] = { 55.0, 54.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
+				qg = 1444,	-- Brother Kristoff
+				coord = { 55.0, 54.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
 			}),
 			q(353, {	-- Stormpike's Delivery
-				["sourceQuest"] = 1097,	-- Elmore's Task
-				["qg"] = 1416,	-- Grimand Elmore
-				["qi"] = 2806,	-- Package for Stormpike (PQI!)
-				["coord"] = { 59.7, 33.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
+				sourceQuest = 1097,	-- Elmore's Task
+				qg = 1416,	-- Grimand Elmore
+				qi = 2806,	-- Package for Stormpike (PQI!)
+				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
 			}),
 			q(579, {	-- Stormwind Library
-				["qg"] = 2504,	-- Donyal Tovald <Librarian>
-				["qi"] = 3898,	-- Library Scrip
-				["coord"] = { 84.6, 24.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["groups"] = {
+				qg = 2504,	-- Donyal Tovald <Librarian>
+				qi = 3898,	-- Library Scrip
+				coord = { 84.6, 24.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				groups = {
 					i(3899),	-- Legends of the Gurubashi, Volume 3
 					i(2154),	-- The Story of Morgan Ladimore
 				},
 			}),
 			q(1688, {	-- Surena Caledon
-				["sourceQuests"] = {
+				sourceQuests = {
 					1685,	-- Gakin's Summons (Voidwalker)
 					1715,	-- The Slaughtered Lamb
 				},
-				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ELWYNN_FOREST },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { WARLOCK },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 6122,	-- Gakin the Darkbinder
+				coord = { 39.2, 85.2, MAP.STORMWIND_CITY },
+				maps = { MAP.ELWYNN_FOREST },
+				races = { HUMAN, GNOME },
+				classes = { WARLOCK },
+				lvl = 10,
+				groups = {
 					objective(1, {	-- Surena's Choker
-						["provider"] = { "i", 6810 },	-- Surena's Choker
-						["coord"] = { 71.0, 80.6, MAP.ELWYNN_FOREST },
-						["cr"] = 881,	-- Surena Caledon
+						provider = { "i", 6810 },	-- Surena's Choker
+						coord = { 71.0, 80.6, MAP.ELWYNN_FOREST },
+						cr = 881,	-- Surena Caledon
 					}),
 				},
 			}),
 			q(434, {	-- The Attack!
-				["sourceQuest"] = 2746,	-- Items of Some Consequence
-				["qg"] = 7766,	-- Tyrion
-				["coord"] = { 73.2, 35.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
-				["groups"] = {
+				sourceQuest = 2746,	-- Items of Some Consequence
+				qg = 7766,	-- Tyrion
+				coord = { 73.2, 35.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
+				groups = {
 					objective(1, {	-- 0/1 Lord Gregor Lescovar slain
-						["provider"] = { "n", 1754 },	-- Lord Gregor Lescovar
+						provider = { "n", 1754 },	-- Lord Gregor Lescovar
 					}),
 					objective(2, {	-- 0/1 Marzon the Silent Blade slain
-						["provider"] = { "n", 1755 },	-- Marzon the Silent Blade
+						provider = { "n", 1755 },	-- Marzon the Silent Blade
 					}),
 				},
 			}),
 			q(65603, {	-- The Binding (Incubus) [Stormwind City]
-				["sourceQuest"] = 65602,	-- What Is Love?
-				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
-				["classes"] = { WARLOCK },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 65602,	-- What Is Love?
+				qg = 6122,	-- Gakin the Darkbinder
+				coord = { 39.2, 85.2, MAP.STORMWIND_CITY },
+				classes = { WARLOCK },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
-						["provider"] = { "n", 185335 },	-- Summoned Incubus
-						["cost"] = { { "i", 190186, 1 } },	-- Wooden Figurine
+						provider = { "n", 185335 },	-- Summoned Incubus
+						cost = { { "i", 190186, 1 } },	-- Wooden Figurine
 					}),
 					recipe(713),	-- Summon Incubus
 					i(22243),	-- Small Soul Pouch
 				},
 			}),
 			q(1739, {	-- The Binding (Succubus) [Stormwind City]
-				["sourceQuest"] = 1738,	-- Heartswood
-				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { WARLOCK },
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 1738,	-- Heartswood
+				qg = 6122,	-- Gakin the Darkbinder
+				coord = { 39.2, 85.2, MAP.STORMWIND_CITY },
+				races = { HUMAN, GNOME },
+				classes = { WARLOCK },
+				lvl = 20,
+				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
-						["provider"] = { "n", 5677 },	-- Summoned Succubus
-						["cost"] = { { "i", 6913, 1 } },	-- Heartswood Core
+						provider = { "n", 5677 },	-- Summoned Succubus
+						cost = { { "i", 6913, 1 } },	-- Heartswood Core
 					}),
 					recipe(712),	-- Summon Succubus
 					i(22243),	-- Small Soul Pouch
 				},
 			}),
 			q(1689, {	-- The Binding (Voidwalker) [Stormwind City]
-				["sourceQuest"] = 1688,	-- Surena Caledon
-				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN, GNOME },
-				["classes"] = { WARLOCK },
-				["lvl"] = 10,
-				["groups"] = {
+				sourceQuest = 1688,	-- Surena Caledon
+				qg = 6122,	-- Gakin the Darkbinder
+				coord = { 39.2, 85.2, MAP.STORMWIND_CITY },
+				races = { HUMAN, GNOME },
+				classes = { WARLOCK },
+				lvl = 10,
+				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
-						["provider"] = { "n", 5676 },	-- Summoned Voidwalker
-						["cost"] = { { "i", 6928, 1 } },	-- Bloodstone Choker
+						provider = { "n", 5676 },	-- Summoned Voidwalker
+						cost = { { "i", 6928, 1 } },	-- Bloodstone Choker
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
 			}),
 			q(392, {	-- The Curious Visitor
-				["sourceQuest"] = 391,	-- The Stockage Riots
-				["qg"] = 1719,	-- Warden Thelwater
-				["qi"] = 8687,	-- Sealed Description of Thredd's Visitor
-				["coord"] = { 51.6, 69.4, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
+				sourceQuest = 391,	-- The Stockage Riots
+				qg = 1719,	-- Warden Thelwater
+				qi = 8687,	-- Sealed Description of Thredd's Visitor
+				coord = { 51.6, 69.4, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
 			}),
 			q(7646, {	-- The Divination Scryer
-				["sourceQuest"] = 7644,	-- Blessed Arcanite Barding
-				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				["cost"] = {
+				sourceQuest = 7644,	-- Blessed Arcanite Barding
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				cost = {
 					{ "i", 12800, 1 },	-- Azerothian Diamond
 					{ "i", 18335, 1 },	-- Pristine Black Diamond
 				},
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(6182, {	-- The First and the Last
-				["qg"] = 1748,	-- Highlord Bolvar Fordragon
-				["coord"] = { 79.8, 38.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 56,
+				qg = 1748,	-- Highlord Bolvar Fordragon
+				coord = { 79.8, 38.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 56,
 			}),
 			q(394, {	-- The Head of the Beast
-				["sourceQuest"] = 434,	-- The Attack!
-				["qg"] = 482,	-- Elling Trias <Master of Cheese>
-				["coord"] = { 66.0, 74.1, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 16,
+				sourceQuest = 434,	-- The Attack!
+				qg = 482,	-- Elling Trias <Master of Cheese>
+				coord = { 66.0, 74.1, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
 			}),
 			q(1274, {	-- The Missing Diplomat (1/17)
-				["qg"] = 4982,	-- Thomas <Altar Boy>
-				["coord"] = { 49.6, 44.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				qg = 4982,	-- Thomas <Altar Boy>
+				coord = { 49.6, 44.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1241, {	-- The Missing Diplomat (2/17)
-				["sourceQuest"] = 1274,	-- The Missing Diplomat (1/17)
-				["qg"] = 4960,	-- Bishop DeLavey
-				["qi"] = 5948,	-- Letter to Jorgen
-				["coord"] = { 80.3, 44.1, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				sourceQuest = 1274,	-- The Missing Diplomat (1/17)
+				qg = 4960,	-- Bishop DeLavey
+				qi = 5948,	-- Letter to Jorgen
+				coord = { 80.3, 44.1, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1242, {	-- The Missing Diplomat (3/17)
-				["sourceQuest"] = 1241,	-- The Missing Diplomat (2/17)
-				["qg"] = 4959,	-- Jorgen
-				["qi"] = 5946,	-- Sealed Note to Elling
-				["coord"] = { 76.3, 85.1, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				sourceQuest = 1241,	-- The Missing Diplomat (2/17)
+				qg = 4959,	-- Jorgen
+				qi = 5946,	-- Sealed Note to Elling
+				coord = { 76.3, 85.1, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1243, {	-- The Missing Diplomat (4/17)
-				["sourceQuest"] = 1242,	-- The Missing Diplomat (3/17)
-				["qg"] = 482,	-- Elling Trias <Master of Cheese>
-				["qi"] = 5960,	-- Sealed Note to Watcher Backus
-				["coord"] = { 66.0, 74.1, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.DUSKWOOD },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				sourceQuest = 1242,	-- The Missing Diplomat (3/17)
+				qg = 482,	-- Elling Trias <Master of Cheese>
+				qi = 5960,	-- Sealed Note to Watcher Backus
+				coord = { 66.0, 74.1, MAP.STORMWIND_CITY },
+				maps = { MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1244, {	-- The Missing Diplomat (5/17)
-				["sourceQuest"] = 1243,	-- The Missing Diplomat (4/17)
-				["qg"] = 840,	-- Watcher Backus
-				["coord"] = { 73.21, 38.81, MAP.DUSKWOOD },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
-				["groups"] = {
+				sourceQuest = 1243,	-- The Missing Diplomat (4/17)
+				qg = 840,	-- Watcher Backus
+				coord = { 73.21, 38.81, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+				groups = {
 					objective(1, {	-- 0/1 Defias Docket
-						["providers"] = {
+						providers = {
 							{ "o", 21052 },	-- Defias Strongbox
 							{ "i", 5947 },	-- Defias Docket
 						},
-						["coord"] = { 24.0, 72.1, MAP.DUSKWOOD },
+						coord = { 24.0, 72.1, MAP.DUSKWOOD },
 					}),
 				},
 			}),
 			q(1245, {	-- The Missing Diplomat (6/17)
-				["sourceQuest"] = 1244,	-- The Missing Diplomat (5/17)
-				["qg"] = 840,	-- Watcher Backus
-				["qi"] = 5947,	-- Defias Docket
-				["coord"] = { 73.21, 38.81, MAP.DUSKWOOD },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				sourceQuest = 1244,	-- The Missing Diplomat (5/17)
+				qg = 840,	-- Watcher Backus
+				qi = 5947,	-- Defias Docket
+				coord = { 73.21, 38.81, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1246, {	-- The Missing Diplomat (7/17)
-				["sourceQuest"] = 1245,	-- The Missing Diplomat (6/17)
-				["qg"] = 482,	-- Elling Trias <Master of Cheese>
-				["coord"] = { 66.0, 74.1, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				sourceQuest = 1245,	-- The Missing Diplomat (6/17)
+				qg = 482,	-- Elling Trias <Master of Cheese>
+				coord = { 66.0, 74.1, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1447, {	-- The Missing Diplomat (8/17)
-				["description"] = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
-				["sourceQuest"] = 1246,	-- The Missing Diplomat (7/17)
-				["qg"] = 4961,	-- Dashel Stonefist
-				["coord"] = { 74.3, 59.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				description = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
+				sourceQuest = 1246,	-- The Missing Diplomat (7/17)
+				qg = 4961,	-- Dashel Stonefist
+				coord = { 74.3, 59.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1247, {	-- The Missing Diplomat (9/17)
-				["sourceQuest"] = 1447,	-- The Missing Diplomat (8/17)
-				["qg"] = 4961,	-- Dashel Stonefist
-				["coord"] = { 74.3, 59.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				sourceQuest = 1447,	-- The Missing Diplomat (8/17)
+				qg = 4961,	-- Dashel Stonefist
+				coord = { 74.3, 59.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(1248, {	-- The Missing Diplomat (10/17)
-				["sourceQuest"] = 1247,	-- The Missing Diplomat (9/17)
-				["qg"] = 482,	-- Elling Trias <Master of Cheese>
-				["coord"] = { 66.0, 74.1, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 28,
+				sourceQuest = 1247,	-- The Missing Diplomat (9/17)
+				qg = 482,	-- Elling Trias <Master of Cheese>
+				coord = { 66.0, 74.1, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
 			}),
 			q(2758, {	-- The Origins of Smithing
-				["qg"] = 7798,	-- Hank the Hammer
-				["coord"] = { 63.0, 36.4, MAP.STORMWIND_CITY },
-				["cost"] = {{ "i", 6040, 6 }},	-- Golden Scale Bracers
-				["requireSkill"] = BLACKSMITHING,
-				["learnedAt"] = 210,
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 40,
-				["groups"] = {
+				qg = 7798,	-- Hank the Hammer
+				coord = { 63.0, 36.4, MAP.STORMWIND_CITY },
+				cost = {{ "i", 6040, 6 }},	-- Golden Scale Bracers
+				requireSkill = BLACKSMITHING,
+				learnedAt = 210,
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+				groups = {
 					i(9367, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
-						["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+						description = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 					}),
 				},
 			}),
 			q(543, {	-- The Perenolde Tiara
-				["qg"] = 2285,	-- Count Remington Ridgewell
-				["coord"] = { 76.9, 47.8, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ALTERAC_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 30,
-				["groups"] = {
+				qg = 2285,	-- Count Remington Ridgewell
+				coord = { 76.9, 47.8, MAP.STORMWIND_CITY },
+				maps = { MAP.ALTERAC_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				groups = {
 					objective(1, {	-- 0/1 Perenolde Tiara
-						["provider"] = { "i", 3684 },	-- Perenolde Tiara
-						["coord"] = { 39.6, 52.8, MAP.ALTERAC_MOUNTAINS },
-						["cr"] = 2417,	-- Grel'borg the Miser
+						provider = { "i", 3684 },	-- Perenolde Tiara
+						coord = { 39.6, 52.8, MAP.ALTERAC_MOUNTAINS },
+						cr = 2417,	-- Grel'borg the Miser
 					}),
 				},
 			}),
 			q(2998, {	-- The Tome of Divinity (1a/10)
-				["altQuests"] = {
+				altQuests = {
 					3681,	-- The Tome of Divinity (1b/10)
 					1787,	-- The Tome of Divinity (8)
 				},
-				["qg"] = 927,	-- Brother Wilhelm
-				["coord"] = { 41.0, 66.0, MAP.ELWYNN_FOREST },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				qg = 927,	-- Brother Wilhelm
+				coord = { 41.0, 66.0, MAP.ELWYNN_FOREST },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(3681, {	-- The Tome of Divinity (1b/10)
-				["altQuests"] = {
+				altQuests = {
 					2998,	-- The Tome of Divinity (1a/10)
 					1787,	-- The Tome of Divinity (8)
 				},
-				["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-				["coord"] = { 23.4, 6.2, MAP.IRONFORGE },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+				coord = { 23.4, 6.2, MAP.IRONFORGE },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(1641, {	-- The Tome of Divinity (2/10)
-				["sourceQuests"] = {
+				sourceQuests = {
 					2998,	-- The Tome of Divinity (1a/10)
 					3681,	-- The Tome of Divinity (1b/10)
 				},
-				["altQuests"] = { 1787 },	-- The Tome of Divinity (8)
-				["qg"] = 6171,	-- Duthorian Rall
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				altQuests = { 1787 },	-- The Tome of Divinity (8)
+				qg = 6171,	-- Duthorian Rall
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(1642, {	-- The Tome of Divinity (3/10)
-				["sourceQuest"] = 1641,	-- The Tome of Divinity (2/10)
-				["qg"] = 6171,	-- Duthorian Rall
-				["qi"] = 6775,	-- Tome of Divinity
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				sourceQuest = 1641,	-- The Tome of Divinity (2/10)
+				qg = 6171,	-- Duthorian Rall
+				qi = 6775,	-- Tome of Divinity
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(1643, {	-- The Tome of Divinity (4/10)
-				["sourceQuest"] = 1642,	-- The Tome of Divinity (3/10)
-				["qg"] = 6171,	-- Duthorian Rall
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				sourceQuest = 1642,	-- The Tome of Divinity (3/10)
+				qg = 6171,	-- Duthorian Rall
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(1644, {	-- The Tome of Divinity (5/10)
-				["sourceQuest"] = 1643,	-- The Tome of Divinity (4/10)
-				["qg"] = 6174,	-- Stephanie Turner
-				["coord"] = { 63.8, 72.2, MAP.STORMWIND_CITY },
-				["cost"] = {{ "i", 2589, 10 }},	-- Linen Cloth
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				sourceQuest = 1643,	-- The Tome of Divinity (4/10)
+				qg = 6174,	-- Stephanie Turner
+				coord = { 63.8, 72.2, MAP.STORMWIND_CITY },
+				cost = {{ "i", 2589, 10 }},	-- Linen Cloth
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(1780, {	-- The Tome of Divinity (6/10)
-				["sourceQuest"] = 1644,	-- The Tome of Divinity (5/10)
-				["qg"] = 6174,	-- Stephanie Turner
-				["coord"] = { 63.8, 72.2, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				sourceQuest = 1644,	-- The Tome of Divinity (5/10)
+				qg = 6174,	-- Stephanie Turner
+				coord = { 63.8, 72.2, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(1781, {	-- The Tome of Divinity (7/10)
-				["sourceQuest"] = 1780,	-- The Tome of Divinity (6/10)
-				["qg"] = 6171,	-- Duthorian Rall
-				["qi"] = 6866,	-- Symbol of Life
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
+				sourceQuest = 1780,	-- The Tome of Divinity (6/10)
+				qg = 6171,	-- Duthorian Rall
+				qi = 6866,	-- Symbol of Life
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
 			}),
 			q(1786, {	-- The Tome of Divinity (8/10)
-				["sourceQuest"] = 1781,	-- The Tome of Divinity (7/10)
-				["qg"] = 6173,	-- Gazin Tenorm
-				["coord"] = { 49.5, 44.9, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
-				["groups"] = {
+				sourceQuest = 1781,	-- The Tome of Divinity (7/10)
+				qg = 6173,	-- Gazin Tenorm
+				coord = { 49.5, 44.9, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
+				groups = {
 					q(1790, {	-- The Symbol of Life
-						["qg"] = 6171,	-- Duthorian Rall
-						["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-						["repeatable"] = true,
-						["groups"] = {
+						qg = 6171,	-- Duthorian Rall
+						coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+						repeatable = true,
+						groups = {
 							objective(1, {	-- 0/1 Symbol of Life
-								["questID"] = 1786,	-- The Tome of Divinity (8/10)
-								["provider"] = { "i", 6866 },	-- Symbol of Life
+								questID = 1786,	-- The Tome of Divinity (8/10)
+								provider = { "i", 6866 },	-- Symbol of Life
 							}),
 						},
 					}),
 				},
 			}),
 			q(1787, {	-- The Tome of Divinity (9/10)
-				["sourceQuest"] = 1786,	-- The Tome of Divinity (8/10)
-				["qg"] = 6172,	-- Henze Faulk
-				["coord"] = { 72.6, 51.6, MAP.ELWYNN_FOREST },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
-				["groups"] = {
+				sourceQuest = 1786,	-- The Tome of Divinity (8/10)
+				qg = 6172,	-- Henze Faulk
+				coord = { 72.6, 51.6, MAP.ELWYNN_FOREST },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
+				groups = {
 					objective(1, {	-- 0/1 Defias Script
-						["provider"] = { "i", 6846 },	-- Defias Script
-						["cr"] = 474,	-- Defias Rogue Wizard
+						provider = { "i", 6846 },	-- Defias Script
+						cr = 474,	-- Defias Rogue Wizard
 					}),
 				},
 			}),
 			q(1788, {	-- The Tome of Divinity (10/10)
-				["sourceQuest"] = 1787,	-- The Tome of Divinity (9/10)
-				["qg"] = 6173,	-- Gazin Tenorm
-				["coord"] = { 49.5, 44.9, MAP.STORMWIND_CITY },
-				["races"] = { HUMAN },
-				["classes"] = { PALADIN },
-				["lvl"] = 12,
-				["groups"] = {
+				sourceQuest = 1787,	-- The Tome of Divinity (9/10)
+				qg = 6173,	-- Gazin Tenorm
+				coord = { 49.5, 44.9, MAP.STORMWIND_CITY },
+				races = { HUMAN },
+				classes = { PALADIN },
+				lvl = 12,
+				groups = {
 					recipe(7328),	-- Redemption [Rank 1]
 				},
 			}),
 			q(4485, {	-- The Tome of Nobility (Stormwind City)
-				["qg"] = 5491,	-- Arthur the Faithful <Paladin Trainer>
-				["coord"] = { 49.6, 49.9, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { PALADIN },
-				["isBreadcrumb"] = true,
-				["lvl"] = 40,
+				qg = 5491,	-- Arthur the Faithful <Paladin Trainer>
+				coord = { 49.6, 49.9, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { PALADIN },
+				isBreadcrumb = true,
+				lvl = 40,
 			}),
 			q(4486, {	-- The Tome of Nobility (Ironforge)
-				["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-				["coord"] = { 23.6, 6.6, MAP.IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { PALADIN },
-				["isBreadcrumb"] = true,
-				["lvl"] = 40,
+				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+				coord = { 23.6, 6.6, MAP.IRONFORGE },
+				races = ALLIANCE_ONLY,
+				classes = { PALADIN },
+				isBreadcrumb = true,
+				lvl = 40,
 			}),
 			q(1661, {	-- The Tome of Nobility
-				["sourceQuests"] = {
+				sourceQuests = {
 					4485,	-- The Tome of Nobility (Stormwind City)
 					4486,	-- The Tome of Nobility (Ironforge)
 				},
-				["qg"] = 6171,	-- Duthorian Rall
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { PALADIN },
-				["lvl"] = 40,
-				["groups"] = {
+				qg = 6171,	-- Duthorian Rall
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { PALADIN },
+				lvl = 40,
+				groups = {
 					mount(13819),	-- Summon Warhorse
 				},
 			}),
 			q(1794, {	-- The Tome of Valor [Dwarf]
-				["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-				["coord"] = { 23.6, 6.4, MAP.IRONFORGE },
-				["classes"] = { PALADIN },
-				["races"] = { DWARF },
-				["repeatable"] = true,
-				["lvl"] = 20,
+				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+				coord = { 23.6, 6.4, MAP.IRONFORGE },
+				classes = { PALADIN },
+				races = { DWARF },
+				repeatable = true,
+				lvl = 20,
 			}),
 			q(1793, {	-- The Tome of Valor [Human]
-				["qg"] = 6171,	-- Duthorian Rall
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["classes"] = { PALADIN },
-				["races"] = { HUMAN },
-				["repeatable"] = true,
-				["lvl"] = 20,
+				qg = 6171,	-- Duthorian Rall
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				classes = { PALADIN },
+				races = { HUMAN },
+				repeatable = true,
+				lvl = 20,
 			}),
 			q(1649, {	-- The Tome of Valor (1/4)
-				["sourceQuests"] = {
+				sourceQuests = {
 					1794,	-- The Tome of Valor [Dwarf]
 					1793,	-- The Tome of Valor [Human]
 				},
-				["qg"] = 6171,	-- Duthorian Rall
-				["qi"] = 6776,	-- Tome of Valor
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { PALADIN },
-				["lvl"] = 20,
+				qg = 6171,	-- Duthorian Rall
+				qi = 6776,	-- Tome of Valor
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { PALADIN },
+				lvl = 20,
 			}),
 			q(1650, {	-- The Tome of Valor (2/4)
-				["sourceQuest"] = 1649,	-- The Tome of Valor (1/4)
-				["qg"] = 6171,	-- Duthorian Rall
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { PALADIN },
-				["lvl"] = 20,
+				sourceQuest = 1649,	-- The Tome of Valor (1/4)
+				qg = 6171,	-- Duthorian Rall
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { PALADIN },
+				lvl = 20,
 			}),
 			q(1651, {	-- The Tome of Valor (3/4)
-				["sourceQuest"] = 1650,	-- The Tome of Valor (2/4)
-				["qg"] = 6182,	-- Daphne Stilwell
-				["coord"] = { 42.4, 88.4, MAP.WESTFALL },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { PALADIN },
-				["lvl"] = 20,
+				sourceQuest = 1650,	-- The Tome of Valor (2/4)
+				qg = 6182,	-- Daphne Stilwell
+				coord = { 42.4, 88.4, MAP.WESTFALL },
+				races = ALLIANCE_ONLY,
+				classes = { PALADIN },
+				lvl = 20,
 			}),
 			q(1652, {	-- The Tome of Valor (4/4)
-				["sourceQuest"] = 1651,	-- The Tome of Valor (3/4)
-				["qg"] = 6171,	-- Duthorian Rall
-				["coord"] = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { PALADIN },
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 1651,	-- The Tome of Valor (3/4)
+				qg = 6171,	-- Duthorian Rall
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { PALADIN },
+				lvl = 20,
+				groups = {
 					recipe(5502),	-- Sense Undead
 					i(9607),	-- Bastion of Stormwind
 				},
 			}),
 			q(2607, {	-- The Touch of Zanzil (1/3)
-				["sourceQuest"] = 2359,	-- Klaven's Tower
-				["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				["coord"] = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { ROGUE },
-				["lvl"] = 20,
+				sourceQuest = 2359,	-- Klaven's Tower
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { ROGUE },
+				lvl = 20,
 			}),
 			q(2608, {	-- The Touch of Zanzil (2/3)
-				["sourceQuest"] = 2607,	-- The Touch of Zanzil (1/3)
-				["qg"] = 7207,	-- Doc Mixilpixil
-				["coord"] = { 80.1, 69.9, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { ROGUE },
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 2607,	-- The Touch of Zanzil (1/3)
+				qg = 7207,	-- Doc Mixilpixil
+				coord = { 80.1, 69.9, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { ROGUE },
+				lvl = 20,
+				groups = {
 					objective(1, {	-- Diagnosis Complete
-						["description"] = "Type /lay to lie down to be examined.",
+						description = "Type /lay to lie down to be examined.",
 					}),
 				},
 			}),
 			q(2609, {	-- The Touch of Zanzil (3/3)
-				["sourceQuest"] = 2608,	-- The Touch of Zanzil (2/3)
-				["qg"] = 7207,	-- Doc Mixilpixil
-				["coord"] = { 80.1, 69.9, MAP.STORMWIND_CITY },
-				["cost"] = {
+				sourceQuest = 2608,	-- The Touch of Zanzil (2/3)
+				qg = 7207,	-- Doc Mixilpixil
+				coord = { 80.1, 69.9, MAP.STORMWIND_CITY },
+				cost = {
 					{ "i", 3372, 1 },	-- Leaded Vial
 					{ "i", 4371, 1 },	-- Bronze Tube
 				},
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { ROGUE },
-				["lvl"] = 20,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				classes = { ROGUE },
+				lvl = 20,
+				groups = {
 					objective(1, {	-- 0/1 Simple Wildflowers
-						["provider"] = { "i", 3421 },	-- Simple Wildflowers
-						["coord"] = { 69.6, 71.6, MAP.STORMWIND_CITY },
-						["crs"] = {
+						provider = { "i", 3421 },	-- Simple Wildflowers
+						coord = { 69.6, 71.6, MAP.STORMWIND_CITY },
+						crs = {
 							1302,	-- Bernard Gump <Florist>
 							1303,	-- Felicia Gump <Herbalism Supplies>
 						},
 					}),
 					objective(4, {	-- 0/1 Spool of Light Chartreuse Silk Thread
-						["providers"] = {
+						providers = {
 							{ "i",   8431 },	-- Spool of Light Chartreuse Silk Thread
 							{ "o", 140911 },	-- Spool of Light Chartreuse Silk Thread
 						},
-						["coord"] = { 50.4, 60.2, MAP.STORMWIND_CITY },
+						coord = { 50.4, 60.2, MAP.STORMWIND_CITY },
 					}),
 					i(8432),	-- Eau de Mixilpixil
 				},
 			}),
 			q(7641, {	-- The Work of Grimand Elmore
-				["sourceQuest"] = 7640,	-- Exorcising Terrordale
-				["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-				["coord"] = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				sourceQuest = 7640,	-- Exorcising Terrordale
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(7639, {	-- To Show Due Judgment
-				["sourceQuest"] = 7637,	-- Emphasis on Sacrifice
-				["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
-				["qi"] = 18819,	-- Rohan's Exorcism Censer
-				["coord"] = { 25.0, 8.2, MAP.IRONFORGE },
-				["classes"] = { PALADIN },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
+				sourceQuest = 7637,	-- Emphasis on Sacrifice
+				qg = 11406,	-- High Priest Rohan <Priest Trainer>
+				qi = 18819,	-- Rohan's Exorcism Censer
+				coord = { 25.0, 8.2, MAP.IRONFORGE },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
 			}),
 			q(1449, {	-- To The Hinterlands
-				["sourceQuest"] = 1448,	-- In Search of The Temple
-				["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
-				["coord"] = { 69.5, 40.4, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.THE_HINTERLANDS },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 38,
+				sourceQuest = 1448,	-- In Search of The Temple
+				qg = 5384,	-- Brohann Caskbelly <Explorers' League>
+				coord = { 69.5, 40.4, MAP.STORMWIND_CITY },
+				maps = { MAP.THE_HINTERLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 38,
 			}),
 			q(1938, {	-- Ur's Treatise on Shadow Magic
-				["sourceQuest"] = 1939,	-- High Sorcerer Andromath
-				["qg"] = 5694,	-- High Sorcerer Andromath
-				["coord"] = { 48.7, 87.6, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.REDRIDGE_MOUNTAINS },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { MAGE },
-				["lvl"] = 26,
-				["groups"] = {
+				sourceQuest = 1939,	-- High Sorcerer Andromath
+				qg = 5694,	-- High Sorcerer Andromath
+				coord = { 48.7, 87.6, MAP.STORMWIND_CITY },
+				maps = { MAP.REDRIDGE_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				classes = { MAGE },
+				lvl = 26,
+				groups = {
 					objective(1, {	-- 0/1 Ur's Treatise on Shadow Magic
 						providers = {
 							{ "i",   7266 },	-- Ur's Treatise on Shadow Magic
@@ -1762,16 +1762,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(65602, {	-- What Is Love?
-				["sourceQuest"] = 1716,	-- Devourer of Souls [Stormwind City]
-				["qg"] = 6122,	-- Gakin the Darkbinder
-				["coord"] = { 39.2, 85.2, MAP.STORMWIND_CITY },
-				["maps"] = { MAP.ASHENVALE },
-				["classes"] = { WARLOCK },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				sourceQuest = 1716,	-- Devourer of Souls [Stormwind City]
+				qg = 6122,	-- Gakin the Darkbinder
+				coord = { 39.2, 85.2, MAP.STORMWIND_CITY },
+				maps = { MAP.ASHENVALE },
+				classes = { WARLOCK },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
 					objective(1, {	-- 0/1 Wooden Figurine
-						["providers"] = {
+						providers = {
 							{ "i", 190309 },	-- Wooden Figurine
 							{ "o", 375544 },	-- Wooden Figurine
 							{ "o", createCustomObject({	-- Archaeologist's Cart [Couldn't find the proper objectID, so I faked it.]
@@ -1791,12 +1791,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 								},
 							}) },
 						},
-						["coord"] = { 26.0, 22.0, MAP.ASHENVALE },
-						["cost"] = {{ "i", 190308, 1 }},	-- Burning Torch
+						coord = { 26.0, 22.0, MAP.ASHENVALE },
+						cost = {{ "i", 190308, 1 }},	-- Burning Torch
 					}),
 					i(190308, {	-- 0/1 Burning Torch
-						["description"] = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
-						["providers"] = {
+						description = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
+						providers = {
 							{ "i", 190307 },	-- Unlit Torch
 							{ "o", createCustomObject({	-- Unlit Torch [Couldn't find the proper objectID, so I faked it.]
 								readable = "Unlit Torch",
@@ -1817,7 +1817,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 								},
 							}) },
 						},
-						["coords"] = {
+						coords = {
 							{ 26.79, 22.42, MAP.ASHENVALE },
 							{ 15.0, 31.0, MAP.ASHENVALE },
 						},
@@ -1826,20 +1826,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(332, {	-- Wine Shop Advert
 				--["sourceQuest"] = 61,	-- Shipment to Stormwind
-				["qg"] = 1432,	-- Renato Gallina
-				["coord"] = { 63.8, 73.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["qi"] = 2722,	-- Wine Ticket (PQI!)
-				["groups"] = { i(2723) },	-- Bottle of Dalaran Noir
+				qg = 1432,	-- Renato Gallina
+				coord = { 63.8, 73.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				qi = 2722,	-- Wine Ticket (PQI!)
+				groups = { i(2723) },	-- Bottle of Dalaran Noir
 			}),
 			q(397, {	-- You Have Served Us Well
-				["sourceQuest"] = 336,	-- A Noble Brew (2/2)
-				["qg"] = 1435,	-- Zardeth of the Black Claw
-				["coord"] = { 40.1, 85.3, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARLOCK },
-				["lvl"] = 25,
-				["groups"] = {
+				sourceQuest = 336,	-- A Noble Brew (2/2)
+				qg = 1435,	-- Zardeth of the Black Claw
+				coord = { 40.1, 85.3, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { WARLOCK },
+				lvl = 25,
+				groups = {
 					i(3556),	-- Dread Mage Hat
 				},
 			}),
@@ -1869,9 +1869,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 		}),
 		n(VENDORS, {
 			n(1301, {	-- Julia Gallina
-				["coord"] = { 59.8, 77.4, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 59.8, 77.4, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(2723),	-- Bottle of Dalaran Noir
 					i(2593),	-- Flask of Stormwind Tawny
 					i(2596),	-- Skin of Dwarven Stout
@@ -1880,18 +1880,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(258568, {	-- Antonio Bolero
-				["coord"] = { 53.5, 81.8, MAP.STORMWIND_CITY },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 53.5, 81.8, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(253665),	-- Pattern: Linen Reagent Bag (RECIPE!)
 					i(253668),	-- Pattern: Woolen Reagent Bag (RECIPE!)
 				},
 			}),
 			n(1310, {	-- Evan Larson
-				["coord"] = { 52.5, 83.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 52.5, 83.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					3889,	-- Russet Hat
 					3890,	-- Studded Hat
 					3891,	-- Augmented Chain Helm
@@ -1901,29 +1901,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}},
 			}),
 			n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
-				["coord"] = { 53.2, 81.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 53.2, 81.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 				},
 			}),
 			n(1315, {	-- Allan Hafgan <Staves Merchant>
-				["coord"] = { 52.9, 75.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 52.9, 75.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(2527),	-- Battle Staff
 					i(2535),	-- War Staff
 				},
 			}),
 			n(1312, {	-- Ardwyn Cailen <Wand Merchant>
-				["coord"] = { 52.8, 75.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 52.8, 75.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(5239),	-- Blackbone Wand
 					i(5210),	-- Burning Wand
 					i(5236),	-- Combustible Wand
@@ -1935,9 +1935,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(1349, {	-- Agustus Moulaine <Mail Armor Merchant>
-				["coord"] = { 53.6, 57.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 53.6, 57.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -1974,9 +1974,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}},
 			}),
 			n(1302, {	-- Bernard Gump <Florist>
-				["coord"] = { 69.6, 71.4, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 69.6, 71.4, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(3422),	-- Beautiful Wildflowers
 					i(3420),	-- Black Rose
 					i(3424),	-- Bouquet Of Black Roses
@@ -1986,14 +1986,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(5514, {	-- Brooke Stonebraid <Mining Supplies>
-				["coord"] = { 59.2, 37.5, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
+				coord = { 59.2, 37.5, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
 			}),
 			n(1319, {	-- Bryan Cross <Shield Merchant>
-				["coord"] = { 69.6, 57.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 69.6, 57.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2451,	-- Crested Heater Shield
 					2448,	-- Heavy Pavise
 					2446,	-- Kite Shield
@@ -2001,21 +2001,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					17190,	-- Ornate Buckler
 					17192,	-- Reinforced Targe
 				}},
-				["groups"] = {
+				groups = {
 					i(2445),	-- Large Metal Shield
 					i(17188),	-- Ringed Buckler
 				},
 			}),
 			n(12777, {	-- Captain Dirgehammer <Armor Quartermaster>
-				["description"] = "Found within the Champion's Hall.",
-				["sym"] = {	-- Grand Marshal Armor
+				description = "Found within the Champion's Hall.",
+				sym = {	-- Grand Marshal Armor
 					SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 					{ "pop" },
 					{ "exclude", "headerID", WEAPONS },
 					{ "exclude", "f", TRINKET_F, NECK_F },
 				},
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = pvp({
+				races = ALLIANCE_ONLY,
+				groups = pvp({
 					i(272738, { -- Premier Plate Helm
 						cost = {
 							{ "i", 20560, 15 }, -- x15 Alterac Valley Mark of Honor
@@ -2107,14 +2107,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
-				["description"] = "Found within the Champion's Hall.",
-				["sym"] = {
+				description = "Found within the Champion's Hall.",
+				sym = {
 					SymSelector.select("CLASSIC_PVP_ALLIANCE"),
 					{ "find", "headerID", WEAPONS },	-- Grand Marshal Weapons
 					{ "pop" },
 				},
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = pvp({
+				races = ALLIANCE_ONLY,
+				groups = pvp({
 					i(272858, { -- Premier Grand Marshal's Demolisher
 						cost = {
 							{ "i", 20560, 20 }, -- x20 Alterac Valley Mark of Honor
@@ -2250,9 +2250,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			n(1291, {	-- Carla Granger <Cloth Armor Merchant>
-				["coord"] = { 62.2, 67.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 62.2, 67.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(16059),	-- Common Brown Shirt
 					i(3428),	-- Common Grey Shirt
 					i(16060),	-- Common White Shirt
@@ -2277,51 +2277,51 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(5494, {	-- Catherine Leland <Fishing Supplier>
-				["coord"] = { 55.0, 69.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 55.0, 69.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 				},
 			}),
 			n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
-				["coord"] = { 44.8, 86.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 44.8, 86.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(4824, {	-- Blurred Axe
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(4825, {	-- Callous Axe
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(4829, {	-- Dreamer's Belt
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(4826, {	-- Marauder Axe
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(4828, {	-- Nightwind Belt
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(4827, {	-- Wizard's Belt
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 				},
 			}),
 			n(1304, {	-- Darian Singh <Fireworks Vendor>
-				["coord"] = { 42.6, 76.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 42.6, 76.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(18649, {	-- Schematic: Blue Firework (RECIPE!)
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 				},
 			}),
 			n(1314, {	-- Duncan Cullen <Light Armor Merchant>
-				["coord"] = { 53.2, 81.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 53.2, 81.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(2142),	-- Cuirboulli Belt
 					i(2143),	-- Cuirboulli Boots
 					i(2144),	-- Cuirboulli Bracers
@@ -2365,9 +2365,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(483, {	-- Elaine Trias <Mistress of Cheese>
-				["coord"] = { 66.6, 73.4, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 66.6, 73.4, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(8932),	-- Alterac Swiss
 					i(414),	-- Dalaran Sharp
 					i(2070),	-- Darnassian Bleu
@@ -2377,22 +2377,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(5503, {	-- Eldraeith <Herbalism Supplier>
-				["coord"] = { 55.6, 85.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
+				coord = { 55.6, 85.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
 			}),
 			n(5483, {	-- Erika Tate <Cooking Supplier>
-				["coord"] = { 77.6, 53.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 77.6, 53.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
 			n(1303, {	-- Felicia Gump <Herbalism Supplier>
-				["coord"] = { 64.2, 60.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 64.2, 60.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					3422,	-- Beautiful Wildflowers
 					3420,	-- Black Rose
 					3424,	-- Bouquet Of Black Roses
@@ -2402,28 +2402,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}},
 			}),
 			n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
-				["coord"] = { 58.6, 69.0, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 58.6, 69.0, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				}},
-				["groups"] = {
+				groups = {
 					i(11303, {	-- Fine Shortbow
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(11307, {	-- Massive Longbow
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 					i(11306, {	-- Sturdy Recurve
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 				},
 			}),
 			n(1333, {	-- Gerik Koen <Two Handed Weapon Merchant>
-				["coord"] = { 73.2, 57.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 73.2, 57.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(2523),	-- Bullova
 					i(2521),	-- Flamberge
 					i(2531),	-- Great Axe
@@ -2433,9 +2433,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(1348, {	-- Gregory Ardus <Staff & Mace Merchant>
-				["coord"] = { 48.2, 54.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 48.2, 54.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -2446,15 +2446,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					854,	-- Quarter Staff
 					2026,	-- Rock Hammer
 				}},
-				["groups"] = {
+				groups = {
 					i(2492),	-- Cudgel
 					i(2493),	-- Wooden Mallet
 				},
 			}),
 			n(1289, {	-- Gunther Weller <Weapons Merchant>
-				["coord"] = { 64.0, 68.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 64.0, 68.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(926),	-- Battle Axe
 					i(2025),	-- Bearded Axe
 					i(1198),	-- Claymore
@@ -2484,9 +2484,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(1324, {	-- Heinrich Stone <Blade Merchant>
-				["coord"] = { 77.0, 57.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 77.0, 57.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(2520),	-- Broadsword
 					i(2528),	-- Falchion
 					i(2526),	-- Main Gauche
@@ -2494,35 +2494,35 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(1318, {	-- Jessara Cordell <Enchanting Supplies>
-				["coord"] = { 53.0, 74.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = ENCHANTING_RECIPES.COMMON_RECIPES,
+				coord = { 53.0, 74.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = ENCHANTING_RECIPES.COMMON_RECIPES,
 			}),
 			n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
-				["coord"] = { 63.2, 37.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 63.2, 37.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 				},
 			}),
 			n(5509, {	-- Kathrum Axehand <Axe Merchant>
-				["coord"] = { 59.6, 34.0, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 59.6, 34.0, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2523,	-- Bullova
 					2531,	-- Great Axe
 				}},
-				["groups"] = {
+				groups = {
 					i(2522),	-- Crescent Axe
 					i(2530),	-- Francisca
 				},
 			}),
 			n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
-				["coord"] = { 76.4, 53.0, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 76.4, 53.0, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 					i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					i(2698),	-- Recipe: Cooked Crab Claw (RECIPE!)
@@ -2539,9 +2539,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(1295, {	-- Lara Moore <Leather Armor Merchant>
-				["coord"] = { 62.2, 67.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 62.2, 67.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(236),	-- Cured Leather Armor
 					i(1849),	-- Cured Leather Belt
 					i(238),	-- Cured Leather Boots
@@ -2563,9 +2563,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(12783, {	-- Lieutenant Karter <Mount Vendor>
-				["description"] = "Found within the Champion's Hall.",
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = pvp({
+				description = "Found within the Champion's Hall.",
+				races = ALLIANCE_ONLY,
+				groups = pvp({
 					i(18243),	-- Black Battlestrider (MOUNT!)
 					i(18244),	-- Black War Ram (MOUNT!)
 					i(18241),	-- Black War Steed (MOUNT!)
@@ -2573,28 +2573,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			n(8666, {	-- Lil Timmy <Boy with kittens>
-				["coord"] = { 64.0, 38.0, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 64.0, 38.0, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(8489, {	-- White Kitten (PET!)
-						["isLimited"] = true,
+						isLimited = true,
 					}),
 				},
 			}),
 			n(8118, {	-- Lillian Singh <Holiday Fireworks Vendor>
-				["coord"] = { 62.6, 70.0, MAP.STORMWIND_CITY },
-				["description"] = "This NPC is only available on July 4th.",
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 62.6, 70.0, MAP.STORMWIND_CITY },
+				description = "This NPC is only available on July 4th.",
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(8626),	-- Blue Sparkler
 					i(8625),	-- White Sparkler
 					i(8624),	-- Red Sparkler
 				},
 			}),
 			n(1297, {	-- Lina Stover <Bow & Gun Merchant>
-				["coord"] = { 58.6, 68.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 58.6, 68.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(3024),	-- Bkp 2700 Enforcer
 					i(3027),	-- Heavy Recurve Bow
 					i(2506),	-- Hornwood Recurve Bow
@@ -2608,9 +2608,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(1299, {	-- Lisbeth Schneider <Clothier>
-				["coord"] = { 58.2, 67.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 58.2, 67.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(3426),	-- Bold Yellow Shirt
 					i(3428),	-- Common Grey Shirt
 					i(3427),	-- Stylish Black Shirt
@@ -2620,9 +2620,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(1287, {	-- Marda Weller <Weapons Merchant>
-				["coord"] = { 64.0, 68.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 64.0, 68.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
@@ -2645,23 +2645,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					2026,	-- Rock Hammer
 					2027,	-- Scimitar
 				}},
-				["groups"] = {
+				groups = {
 					i(15808),	-- Fine Light Crossbow
 					i(15809),	-- Heavy Crossbow
 					i(15807),	-- Light Crossbow
 				},
 			}),
 			n(1313, {	-- Maria Lumere <Alchemy Supplies>
-				["coord"] = { 55.6, 85.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(9301, {["isLimited"] = true}),	-- Recipe: Elixir of Shadow Power (RECIPE!)
+				coord = { 55.6, 85.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(9301, {isLimited = true}),	-- Recipe: Elixir of Shadow Power (RECIPE!)
 				},
 			}),
 			n(12781, {	-- Master Sergeant Biggins <Officer Accessories Quartermaster>
-				["description"] = "Found within the Champion's Hall.",
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = pvp({
+				description = "Found within the Champion's Hall.",
+				races = ALLIANCE_ONLY,
+				groups = pvp({
 					i(18606),	-- Alliance Battle Standard
 					i(18839),	-- Combat Healing Potion
 					i(18841),	-- Combat Mana Potion
@@ -2694,36 +2694,36 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}),
 			}),
 			n(12805, {	-- Officer Areyn <Accessories Quartermaster>
-				["coord"] = { 76.8, 65.8, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 76.8, 65.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(18664),	-- A Treatise on Military Ranks
 					i(15196, {	-- Private's Tabard
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(18854, {	-- Insignia of the Alliance
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 					i(18857, {	-- Insignia of the Alliance
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					i(18862, {	-- Insignia of the Alliance
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					i(18859, {	-- Insignia of the Alliance
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					i(18858, {	-- Insignia of the Alliance
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					i(18863, {	-- Insignia of the Alliance
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					i(18864, {	-- Insignia of the Alliance
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					i(18856, {	-- Insignia of the Alliance
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					i(16342),	-- Sergeant's Cape (58)
 					i(18440),	-- Sergeant's Cape (45)
@@ -2732,41 +2732,41 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(18444),	-- Master Sergeant's Insignia (45)
 					i(18442),	-- Master Sergeant's Insignia (30)
 					i(18449, {	-- Sergeant Major's Chain Armguards (45)
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					i(18455, {	-- Sergeant Major's Dragonhide Armsplints (45)
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					i(18453, {	-- Sergeant Major's Leather Armsplints (45)
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					i(18447, {	-- Sergeant Major's Plate Wristguards (45)
-						["classes"] = { PALADIN, WARRIOR },
+						classes = { PALADIN, WARRIOR },
 					}),
 					i(18457, {	-- Sergeant Major's Silk Cuffs (45)
-						["classes"] = { MAGE, PRIEST, WARLOCK },
+						classes = { MAGE, PRIEST, WARLOCK },
 					}),
 					i(18448, {	-- Sergeant Major's Chain Armguards (58)
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					i(18454, {	-- Sergeant Major's Dragonhide Armsplints (58)
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					i(18452, {	-- Sergeant Major's Leather Armsplints (58)
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					i(18445, {	-- Sergeant Major's Plate Wristguards (58)
-						["classes"] = { PALADIN, WARRIOR },
+						classes = { PALADIN, WARRIOR },
 					}),
 					i(18456, {	-- Sergeant Major's Silk Cuffs (58)
-						["classes"] = { MAGE, PRIEST, WARLOCK },
+						classes = { MAGE, PRIEST, WARLOCK },
 					}),
 				},
 			}),
 			n(1323, {	-- Osric Strang <Heavy Armor Merchant>
-				["coord"] = { 77.0, 61.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 77.0, 61.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -2803,23 +2803,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}},
 			}),
 			n(5193, {	-- Rebecca Laughlin <Tabard Designer>
-				["coord"] = { 64.0, 77.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 64.0, 77.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(5976),	-- Guild Tabard
 				},
 			}),
 			n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
-				["coord"] = { 59.4, 77.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 59.4, 77.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(1941),	-- Cask of Merlot
 				},
 			}),
 			n(1320, {	-- Seoman Griffith <Leather Armor Merchant>
-				["coord"] = { 72.0, 62.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 72.0, 62.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2471,	-- Reinforced Leather Belt
 					2473,	-- Reinforced Leather Boots
 					2474,	-- Reinforced Leather Bracers
@@ -2837,9 +2837,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}},
 			}),
 			n(1350, {	-- Theresa Moulaine <Robe Vendor>
-				["coord"] = { 53.4, 58.0, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 53.4, 58.0, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(2617),	-- Burning Robes
 					i(2615),	-- Chromatic Robe
 					i(2613),	-- Double-Stitched Robes
@@ -2850,19 +2850,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			n(5510, {	-- Thulman Flintcrag <Guns Vendor>
-				["coord"] = { 61.8, 36.2, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 61.8, 36.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2509,	-- Ornate Blunderbuss
 				}},
-				["groups"] = {
+				groups = {
 					i(2510),	-- Solid Blunderbuss
 				},
 			}),
 			n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
-				["coord"] = { 77.2, 61.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 77.2, 61.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2148,	-- Polished Scale Belt
 					2149,	-- Polished Scale Boots
 					2150,	-- Polished Scale Bracers
@@ -2878,9 +2878,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				}},
 			}),
 			n(1309, {	-- Wynne Larson <Robe Merchant>
-				["coord"] = { 52.0, 83.6, MAP.STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				coord = { 52.0, 83.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				sym = {{"select","itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
