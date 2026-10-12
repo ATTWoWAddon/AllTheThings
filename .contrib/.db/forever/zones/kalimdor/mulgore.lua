@@ -3,157 +3,157 @@
 ---------------------------------------------------
 
 maproot(MAP.KALIMDOR, MAP.MULGORE, {
-	["lore"] = "A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",
-	["icon"] = 236809,
-	["groups"] = {
+	lore = "A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",
+	icon = 236809,
+	groups = {
 		m(CAMP_NARACHE, {
-			["lore"] = "Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",
-			["icon"] = 236454,
+			lore = "Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",
+			icon = 236454,
 			["zone-text-areas"] = {
 				221,	-- Camp Narache
 			},
-			["groups"] = {
+			groups = {
 				n(QUESTS, {
 					q(752, {	-- A Humble Task (1/2)
-						["qg"] = 2981,	-- Chief Hawkwind
-						["coord"] = { 44.2, 76.0, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 2981,	-- Chief Hawkwind
+						coord = { 44.2, 76.0, MAP.MULGORE },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(753, {	-- A Humble Task (2/2)
-						["sourceQuest"] = 752,	-- A Humble Task (1/2)
-						["qg"] = 2991,	-- Greatmother Hawkwind
-						["coord"] = { 50.0, 81.0, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 752,	-- A Humble Task (1/2)
+						qg = 2991,	-- Greatmother Hawkwind
+						coord = { 50.0, 81.0, MAP.MULGORE },
+						races = HORDE_ONLY,
+						groups = {
 							objective(1, {	-- 0/1 Water Pitcher
-								["providers"] = {
+								providers = {
 									{ "i", 4755 },	-- Water Pitcher
 									{ "o", 2907 },	-- Water Pitcher
 								},
-								["coord"] = { 50.2, 81.3, MAP.MULGORE },
+								coord = { 50.2, 81.3, MAP.MULGORE },
 							}),
 						},
 					}),
 					q(781, {	-- Attack on Camp Narache
-						["providers"] = {
+						providers = {
 							{ "i", 4851 },	-- Dirt-stained Map
 							{ "o", 3076 },	-- Dirt-stained Map
 							{ "i", 4850 },	-- Bristleback Attack Plans
 						},
-						["coord"] = { 63.3, 82.6, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						coord = { 63.3, 82.6, MAP.MULGORE },
+						races = HORDE_ONLY,
+						groups = {
 							i(4911),	-- Thick Bark Buckler
 						},
 					}),
 					q(3376, {	-- Break Sharptusk!
-						["qg"] = 3209,	-- Brave Windfeather
-						["coord"] = { 44.8, 76.6, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 3,
-						["groups"] = {
+						qg = 3209,	-- Brave Windfeather
+						coord = { 44.8, 76.6, MAP.MULGORE },
+						races = HORDE_ONLY,
+						lvl = 3,
+						groups = {
 							objective(1, {	-- 0/1 Chief Sharptusk Thornmantle's Head
-								["provider"] = { "i", 10459 },	-- Chief Sharptusk Thornmantle's Head
-								["coord"] = { 64.6, 77.8, MAP.MULGORE },
-								["cr"] = 8554,	-- Chief Sharptusk Thornmantle
+								provider = { "i", 10459 },	-- Chief Sharptusk Thornmantle's Head
+								coord = { 64.6, 77.8, MAP.MULGORE },
+								cr = 8554,	-- Chief Sharptusk Thornmantle
 							}),
 							i(10635),	-- Painted Chain Leggings
 							i(10636),	-- Nomadic Gloves
 						},
 					}),
 					q(1519, {	-- Call of Earth (1/3)
-						["altQuests"] = { 1516 },	-- Call of Earth (1/3 Durotar)
-						["qg"] = 5888,	-- Seer Ravenfeather
-						["coord"] = { 44.8, 76.2, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["classes"] = { SHAMAN },
-						["lvl"] = 4,
-						["groups"] = {
+						altQuests = { 1516 },	-- Call of Earth (1/3 Durotar)
+						qg = 5888,	-- Seer Ravenfeather
+						coord = { 44.8, 76.2, MAP.MULGORE },
+						races = HORDE_ONLY,
+						classes = { SHAMAN },
+						lvl = 4,
+						groups = {
 							objective(1, {	-- 0/2 Ritual Salve
-								["provider"] = { "i", 6634 },	-- Ritual Salve
-								["cr"] = 2953,	-- Bristleback Shaman
+								provider = { "i", 6634 },	-- Ritual Salve
+								cr = 2953,	-- Bristleback Shaman
 							}),
 						},
 					}),
 					q(1520, {	-- Call of Earth (2/3)
-						["sourceQuest"] = 1519,	-- Call of Earth (1/3)
-						["altQuests"] = { 1517 },	-- Call of Earth (2/3 Durotar)
-						["qg"] = 5888,	-- Seer Ravenfeather
-						["qi"] = 6635,	-- Earth Sapta
-						["coord"] = { 44.8, 76.2, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["classes"] = { SHAMAN },
-						["lvl"] = 4,
+						sourceQuest = 1519,	-- Call of Earth (1/3)
+						altQuests = { 1517 },	-- Call of Earth (2/3 Durotar)
+						qg = 5888,	-- Seer Ravenfeather
+						qi = 6635,	-- Earth Sapta
+						coord = { 44.8, 76.2, MAP.MULGORE },
+						races = HORDE_ONLY,
+						classes = { SHAMAN },
+						lvl = 4,
 					}),
 					q(1521, {	-- Call of Earth (3/3)
-						["sourceQuest"] = 1520,	-- Call of Earth (2/3)
-						["altQuests"] = { 1518 },	-- Call of Earth (3/3 Durotar)
-						["qg"] = 5891,	-- Minor Manifestation of Earth
-						["qi"] = 6656,	-- Rough Quartz
-						["coord"] = { 53.8, 80.4, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["classes"] = { SHAMAN },
-						["lvl"] = 4,
-						["groups"] = {
+						sourceQuest = 1520,	-- Call of Earth (2/3)
+						altQuests = { 1518 },	-- Call of Earth (3/3 Durotar)
+						qg = 5891,	-- Minor Manifestation of Earth
+						qi = 6656,	-- Rough Quartz
+						coord = { 53.8, 80.4, MAP.MULGORE },
+						races = HORDE_ONLY,
+						classes = { SHAMAN },
+						lvl = 4,
+						groups = {
 							recipe(8071),	-- Stoneskin Totem
 							i(5175, {	-- Earth Totem
-								["description"] = "You must keep this in your bags forever.",
+								description = "You must keep this in your bags forever.",
 							}),
 						},
 					}),
 					q(1462, {	-- Earth Sapta
-						["sourceQuest"] = 1519,	-- Call of Earth (1/3)
-						["altQuests"] = { 1463 },	-- Earth Sapta (Durotar)
-						["qg"] = 5888,	-- Seer Ravenfeather
-						["coord"] = { 44.8, 76.2, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["classes"] = { SHAMAN },
-						["repeatable"] = true,
-						["lvl"] = 4,
-						["groups"] = {
+						sourceQuest = 1519,	-- Call of Earth (1/3)
+						altQuests = { 1463 },	-- Earth Sapta (Durotar)
+						qg = 5888,	-- Seer Ravenfeather
+						coord = { 44.8, 76.2, MAP.MULGORE },
+						races = HORDE_ONLY,
+						classes = { SHAMAN },
+						repeatable = true,
+						lvl = 4,
+						groups = {
 							i(6635),	-- Earth Sapta
 						},
 					}),
 					q(3092, {	-- Etched Note
-						["sourceQuest"] = 747,	-- The Hunt Begins
-						["qg"] = 2980,	-- Grull Hawkwind
-						["qi"] = 9565,	-- Etched Note
-						["coord"] = { 44.9, 77.1, MAP.MULGORE },
-						["races"] = { TAUREN },
-						["classes"] = { HUNTER },
+						sourceQuest = 747,	-- The Hunt Begins
+						qg = 2980,	-- Grull Hawkwind
+						qi = 9565,	-- Etched Note
+						coord = { 44.9, 77.1, MAP.MULGORE },
+						races = { TAUREN },
+						classes = { HUNTER },
 					}),
 					q(95805, {	-- Grace of An'she and Mu'sha
-						["qg"] = 2982,	-- Seer Graytongue
-						["coord"] = { 42.5, 90.1, MAP.MULGORE },
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 2982,	-- Seer Graytongue
+						coord = { 42.5, 90.1, MAP.MULGORE },
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = HORDE_ONLY,
+						groups = {
 							objective(1, {	-- Use Pouch of Smoldering Incense at the Ritual Fire
-								["providers"] = {
+								providers = {
 									{ "i", 277199 },	-- Pouch of Smoldering Incense
 									{ "o", 660739 },	-- Ritual Fire
 								},
-								["coord"] = { 56.6, 88.7, MAP.MULGORE },
+								coord = { 56.6, 88.7, MAP.MULGORE },
 							}),
 							i(277200),	-- Scorched Leather Pouch
 						},
 					}),
 					q(757, {	-- Rite of Strength
-						["sourceQuest"] = 755,	-- Rites of the Earthmother (1/3)
-						["qg"] = 2982,	-- Seer Graytongue
-						["coord"] = { 42.6, 92.0, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 755,	-- Rites of the Earthmother (1/3)
+						qg = 2982,	-- Seer Graytongue
+						coord = { 42.6, 92.0, MAP.MULGORE },
+						races = HORDE_ONLY,
+						groups = {
 							objective(1, {	-- 0/12 Bristleback Belt
-								["provider"] = { "i", 4770 },	-- Bristleback Belt
-								["crs"] = {
+								provider = { "i", 4770 },	-- Bristleback Belt
+								crs = {
 									2952,	-- Bristleback Quilboar
 									2953,	-- Bristleback Shaman
 								},
 							}),
 							i(12448, {	-- Light Hunting Rifle
-								["timeline"] = { REMOVED_1_7_0 },	-- CRIEVE NOTE: Might want to check this one.
+								timeline = { REMOVED_1_7_0 },	-- CRIEVE NOTE: Might want to check this one.
 							}),
 							i(1382),	-- Rock Mace
 							i(1383),	-- Stone Tomahawk
@@ -163,59 +163,59 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						},
 					}),
 					q(755, {	-- Rites of the Earthmother (1/3)
-						["sourceQuest"] = 753,	-- A Humble Task (2/2)
-						["qg"] = 2981,	-- Chief Hawkwind
-						["coord"] = { 44.2, 76.1, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 753,	-- A Humble Task (2/2)
+						qg = 2981,	-- Chief Hawkwind
+						coord = { 44.2, 76.1, MAP.MULGORE },
+						races = HORDE_ONLY,
 					}),
 					q(763, {	-- Rites of the Earthmother (2/3)
-						["sourceQuest"] = 757,	-- Rite of Strength
-						["qg"] = 2981,	-- Chief Hawkwind
-						["qi"] = 4783,	-- Totem of Hawkwind
-						["coord"] = { 44.2, 76.1, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 757,	-- Rite of Strength
+						qg = 2981,	-- Chief Hawkwind
+						qi = 4783,	-- Totem of Hawkwind
+						coord = { 44.2, 76.1, MAP.MULGORE },
+						races = HORDE_ONLY,
 					}),
 					q(3093, {	-- Rune-Inscribed Note
-						["sourceQuest"] = 747,	-- The Hunt Begins
-						["qg"] = 2980,	-- Grull Hawkwind
-						["qi"] = 9552,	-- Rune-Inscribed Note
-						["coords"] = { 44.9, 77.1, MAP.MULGORE },
-						["races"] = { TAUREN },
-						["classes"] = { SHAMAN },
+						sourceQuest = 747,	-- The Hunt Begins
+						qg = 2980,	-- Grull Hawkwind
+						qi = 9552,	-- Rune-Inscribed Note
+						coords = { 44.9, 77.1, MAP.MULGORE },
+						races = { TAUREN },
+						classes = { SHAMAN },
 					}),
 					q(3091, {	-- Simple Note
-						["sourceQuest"] = 747,	-- The Hunt Begins
-						["qg"] = 2980,	-- Grull Hawkwind
-						["qi"] = 9547,	-- Simple Note
-						["coords"] = { 44.9, 77.1, MAP.MULGORE },
-						["races"] = { TAUREN },
-						["classes"] = { WARRIOR },
+						sourceQuest = 747,	-- The Hunt Begins
+						qg = 2980,	-- Grull Hawkwind
+						qi = 9547,	-- Simple Note
+						coords = { 44.9, 77.1, MAP.MULGORE },
+						races = { TAUREN },
+						classes = { WARRIOR },
 					}),
 					q(96659, {	-- The Adventurer [Mulgore]
 						--["sourceQuest"] = ,	-- 
-						["qg"] = 2981,	-- Chief Hawkwind
-						["qi"] = 275019,	-- Supply Bundle (PQI!)
-						["coord"] = { 44.2, 76.0, MAP.MULGORE },
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 4,
+						qg = 2981,	-- Chief Hawkwind
+						qi = 275019,	-- Supply Bundle (PQI!)
+						coord = { 44.2, 76.0, MAP.MULGORE },
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = HORDE_ONLY,
+						lvl = 4,
 					}),
 					q(780, {	-- The Battleboars
-						["sourceQuest"] = 750,	-- The Hunt Continues
-						["qg"] = 2980,	-- Grull Hawkwind
-						["coord"] = { 44.9, 77.1, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 750,	-- The Hunt Continues
+						qg = 2980,	-- Grull Hawkwind
+						coord = { 44.9, 77.1, MAP.MULGORE },
+						races = HORDE_ONLY,
+						groups = {
 							objective(1, {	-- 0/8 Battleboar Snout
-								["provider"] = { "i", 4848 },	-- Battleboar Snout
-								["crs"] = {
+								provider = { "i", 4848 },	-- Battleboar Snout
+								crs = {
 									2966,	-- Battleboar
 									2954,	-- Bristleback Battleboar
 								},
 							}),
 							objective(2, {	-- 0/8 Battleboar Flank
-								["provider"] = { "i", 4849 },	-- Battleboar Flank
-								["crs"] = {
+								provider = { "i", 4849 },	-- Battleboar Flank
+								crs = {
 									2966,	-- Battleboar
 									2954,	-- Bristleback Battleboar
 								},
@@ -224,54 +224,54 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						},
 					}),
 					q(747, {	-- The Hunt Begins
-						["qg"] = 2980,	-- Grull Hawkwind
-						["coord"] = { 44.9, 77.1, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 2980,	-- Grull Hawkwind
+						coord = { 44.9, 77.1, MAP.MULGORE },
+						races = HORDE_ONLY,
+						groups = {
 							objective(1, {	-- 0/7 Plainstrider Meat
-								["provider"] = { "i", 4739 },	-- Plainstrider Meat
-								["cr"] = 2955,	-- Plainstrider
+								provider = { "i", 4739 },	-- Plainstrider Meat
+								cr = 2955,	-- Plainstrider
 							}),
 							objective(2, {	-- 0/7 Plainstrider Feather
-								["provider"] = { "i", 4740 },	-- Plainstrider Feather
-								["cr"] = 2955,	-- Plainstrider
+								provider = { "i", 4740 },	-- Plainstrider Feather
+								cr = 2955,	-- Plainstrider
 							}),
 							i(4954),	-- Nomadic Belt
 							i(4910),	-- Painted Chain Gloves
 						},
 					}),
 					q(750, {	-- The Hunt Continues
-						["sourceQuest"] = 747,	-- The Hunt Begins
-						["qg"] = 2980,	-- Grull Hawkwind
-						["coord"] = { 44.9, 77.1, MAP.MULGORE },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 747,	-- The Hunt Begins
+						qg = 2980,	-- Grull Hawkwind
+						coord = { 44.9, 77.1, MAP.MULGORE },
+						races = HORDE_ONLY,
+						groups = {
 							objective(1, {	-- 0/10 Mountain Cougar Pelt
-								["provider"] = { "i", 4742 },	-- Mountain Cougar Pelt
-								["cr"] = 2961,	-- Mountain Cougar
+								provider = { "i", 4742 },	-- Mountain Cougar Pelt
+								cr = 2961,	-- Mountain Cougar
 							}),
 							i(4908),	-- Nomadic Bracers
 							i(4913),	-- Painted Chain Belt
 						},
 					}),
 					q(3094, {	-- Verdant Note
-						["sourceQuest"] = 747,	-- The Hunt Begins
-						["qg"] = 2980,	-- Grull Hawkwind
-						["qi"] = 9581,	-- Verdant Note
-						["coord"] = { 44.9, 77.1, MAP.MULGORE },
-						["races"] = { TAUREN },
-						["classes"] = { DRUID },
+						sourceQuest = 747,	-- The Hunt Begins
+						qg = 2980,	-- Grull Hawkwind
+						qi = 9581,	-- Verdant Note
+						coord = { 44.9, 77.1, MAP.MULGORE },
+						races = { TAUREN },
+						classes = { DRUID },
 					}),
 				}),
 				n(ZONE_DROPS, {
 					i(1388, {	-- Crooked Staff
-						["cr"] = 2953,	-- Bristleback Shaman
+						cr = 2953,	-- Bristleback Shaman
 					}),
 					i(1384, {	-- Dull Blade
-						["cr"] = 2952,	-- Bristleback Quilboar
+						cr = 2952,	-- Bristleback Quilboar
 					}),
 					i(4951, {	-- Squealer's Belt
-						["cr"] = 3229,	-- "Squealer" Thornmantle
+						cr = 3229,	-- "Squealer" Thornmantle
 					}),
 				}),
 			},
@@ -309,46 +309,46 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 		}),
 		n(QUESTS, {
 			q(96294, {	-- A Darker Truth
-				["provider"] = { "i", 273658 },	-- Bloody Parchment (quest starter)
-				["qg"] = 259118,	-- Muln Earthfury (quest recipient)
-				["coord"] = { 33.4, 22.4, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 23,	-- Required level; quest level 30.
-				["groups"] = {
+				provider = { "i", 273658 },	-- Bloody Parchment (quest starter)
+				qg = 259118,	-- Muln Earthfury (quest recipient)
+				coord = { 33.4, 22.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 23,	-- Required level; quest level 30.
+				groups = {
 					objective(1, {	-- 0/1 Bloody Parchment
-						["provider"] = { "i", 273659 },	-- Bloody Parchment (delivery item)
+						provider = { "i", 273659 },	-- Bloody Parchment (delivery item)
 					}),
 				},
 			}),
 			q(99196, {	-- A Donation of Wool
-				["qg"] = 276171,	-- Oura Stormspinner
-				["coord"] = { 34.2, 22.4, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 12,
-				["groups"] = {
+				qg = 276171,	-- Oura Stormspinner
+				coord = { 34.2, 22.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 12,
+				groups = {
 					objective(1, {	-- 0/60 Wool Cloth
-						["provider"] = { "i", 2592 },	-- Wool Cloth
+						provider = { "i", 2592 },	-- Wool Cloth
 					}),
 				},
 			}),
 			q(833, {	-- A Sacred Burial
-				["qg"] = 3233,	-- Lorekeeper Raintotem
-				["coord"] = { 59.8, 25.6, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 7,
-				["groups"] = {
+				qg = 3233,	-- Lorekeeper Raintotem
+				coord = { 59.8, 25.6, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 7,
+				groups = {
 					objective(1, {	-- 0/8 Bristleback Interloper slain
-						["provider"] = { "n", 3232 },	-- Bristleback Interloper
+						provider = { "n", 3232 },	-- Bristleback Interloper
 					}),
 				},
 			}),
 			q(1656, {	-- A Task Unfinished
-				["qg"] = 6775,	-- Antur Fallow
-				["qi"] = 7626,	-- Bundle of Furs
-				["coord"] = { 38.6, 81.6, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
+				qg = 6775,	-- Antur Fallow
+				qi = 7626,	-- Bundle of Furs
+				coord = { 38.6, 81.6, MAP.MULGORE },
+				races = HORDE_ONLY,
 			}),
 			q(97927, {	-- Camping 101: Alchemy [Mulgore]
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
@@ -495,31 +495,31 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(98427, {	-- Ceasing Operations
-				["sourceQuest"] = 98424,	-- Fizsprocket's Notes
-				["qg"] = 2988,	-- Morin Cloudstalker
-				["coord"] = { 54.4, 60.4, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = { UNDEAD, TAUREN },
-				["lvl"] = 5,
-				["groups"] = {
+				sourceQuest = 98424,	-- Fizsprocket's Notes
+				qg = 2988,	-- Morin Cloudstalker
+				coord = { 54.4, 60.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { UNDEAD, TAUREN },
+				lvl = 5,
+				groups = {
 					objective(1, {	-- 0/1 Clearcutter Key
-						["provider"] = { "i", 281048 },	-- Clearcutter Key
-						["coord"] = { 56.8, 43.0, MAP.MULGORE },
-						["cr"] = 272173,	-- Venture Co. Clearclutter
+						provider = { "i", 281048 },	-- Clearcutter Key
+						coord = { 56.8, 43.0, MAP.MULGORE },
+						cr = 272173,	-- Venture Co. Clearclutter
 					}),
 					i(281059),	-- Loose Clearcutter Blade
 					i(282285),	-- Clearcutter Key
 				},
 			}),
 			q(743, {	-- Dangers of the Windfury
-				["qg"] = 2985,	-- Ruul Eagletalon
-				["coord"] = { 47.4, 62.0, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
+				qg = 2985,	-- Ruul Eagletalon
+				coord = { 47.4, 62.0, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
 					objective(1, {	-- 0/8 Windfury Talon
-						["provider"] = { "i", 4751 },	-- Windfury Talon
-						["crs"] = {
+						provider = { "i", 4751 },	-- Windfury Talon
+						crs = {
 							2962,	-- Windfury Harpy
 							2963,	-- Windfury Wind Witch
 						},
@@ -527,31 +527,31 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96259, {	-- Defending the Dead
-				["qg"] = 259118,	-- Muln Earthfury
-				["coord"] = { 33.4, 22.4, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 23,	-- Required level; quest level 30.
-				["groups"] = {
+				qg = 259118,	-- Muln Earthfury
+				coord = { 33.4, 22.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 23,	-- Required level; quest level 30.
+				groups = {
 					objective(1, {	-- 0/10 Gloomrise Hatchling slain
-						["provider"] = { "n", 264079 },	-- Gloomrise Hatchling
+						provider = { "n", 264079 },	-- Gloomrise Hatchling
 					}),
 					objective(2, {	-- 0/5 Gloomrise Soldier slain
-						["provider"] = { "n", 264083 },	-- Gloomrise Soldier
+						provider = { "n", 264083 },	-- Gloomrise Soldier
 					}),
 				},
 			}),
 			q(746, {	-- Dwarven Digging
-				["qg"] = 2993,	-- Baine Bloodhoof
-				["coord"] = { 47.5, 60.2, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 6,
-				["groups"] = {
+				qg = 2993,	-- Baine Bloodhoof
+				coord = { 47.5, 60.2, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
 					objective(1, {	-- 0/6 Broken Tools
-						["provider"] = { "i", 4703 },	-- Broken Tools
-						["cost"] = { { "i", 4702, 1 } },	-- Prospector's Pick
-						["coord"] = { 34.0, 46.0, MAP.MULGORE },
-						["crs"] = {
+						provider = { "i", 4703 },	-- Broken Tools
+						cost = { { "i", 4702, 1 } },	-- Prospector's Pick
+						coord = { 34.0, 46.0, MAP.MULGORE },
+						crs = {
 							2990,	-- Bael'dun Appraiser
 							2989,	-- Bael'dun Digger
 						},
@@ -561,77 +561,77 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(98424, {	-- Fizsprocket's Notes
-				["provider"] = { "i", 281031 },	-- Mulgore Expansion Plans
-				["cr"] = 3051,	-- Supervisor Fizsprocket
-				["coord"] = { 64.4, 43.6, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
+				provider = { "i", 281031 },	-- Mulgore Expansion Plans
+				cr = 3051,	-- Supervisor Fizsprocket
+				coord = { 64.4, 43.6, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
 					objective(1, {	-- 0/1 Shredder Operation Instructions
-						["providers"] = {
+						providers = {
 							{ "i", 281035 },	-- Shredder Operation Instructions
 							{ "o", 673494 },	-- Shredder Operation Instructions
 						},
 					}),
 					objective(2, {	-- 0/1 Barrens Operations Best Practices
-						["providers"] = {
+						providers = {
 							{ "i", 281036 },	-- Barrens Operations Best Practices
 							{ "o", 673496 },	-- Barrens Operations Best Practices
 						},
 					}),
 					objective(3, {	-- 0/1 One "Gerenzo", of Stonetalon
-						["providers"] = {
+						providers = {
 							{ "i", 281037 },	-- One "Gerenzo", of Stonetalon
 							{ "o", 673497 },	-- One "Gerenzo", of Stonetalon
 						},
 					}),
 					objective(4, {	-- 0/1 Mulgore Expansion Plans
-						["provider"] = { "i", 281031 },	-- Mulgore Expansion Plans
+						provider = { "i", 281031 },	-- Mulgore Expansion Plans
 					}),
 				},
 			}),
 			q(5655, {	-- Hex of Weakness [Mulgore]
-				["altQuests"] = {
+				altQuests = {
 					5652,	-- Hex of Weakness [Orgrimmar]
 					5654,	-- Hex of Weakness [Durotar]
 					5656,	-- Hex of Weakness [Thunder Bluff]
 					5657,	-- Hex of Weakness [Undercity]
 				},
-				["qg"] = 11407,	-- Var'jun
-				["coord"] = { 47.0, 58.8, MAP.MULGORE },
-				["classes"] = { PRIEST },
-				["races"] = { TROLL },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 11407,	-- Var'jun
+				coord = { 47.0, 58.8, MAP.MULGORE },
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 10,
+				groups = {
 					{
-						["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
-						["rank"] = 1,
+						recipeID = 9035,	-- Hex of Weakness (Rank 1)
+						rank = 1,
 					},
 				},
 			}),
 			q(775, {	-- Journey into Thunder Bluff
-				["sourceQuest"] = 773,	-- Rite of Wisdom
-				["qg"] = 2994,	-- Ancestral Spirit
-				["coord"] = { 61.4, 21.0, MAP.MULGORE },
-				["maps"] = { MAP.THUNDER_BLUFF },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 3,
+				sourceQuest = 773,	-- Rite of Wisdom
+				qg = 2994,	-- Ancestral Spirit
+				coord = { 61.4, 21.0, MAP.MULGORE },
+				maps = { MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				lvl = 3,
 			}),
 			q(99411, {	-- Kyle's Gone Missing!
-				["qg"] = 277182,	-- Ahab Wheathoof
-				["coord"] = { 47.2, 57.6, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
+				qg = 277182,	-- Ahab Wheathoof
+				coord = { 47.2, 57.6, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
 					objective(1, {	-- 0/1 Kyle Fed
-						["providers"] = {
+						providers = {
 							{ "n", 277154 },	-- Kyle the Frenzied
 							{ "i", 287505 },	-- Tender Strider Meat
 						},
-						["coord"] = { 46.2, 63.2, MAP.MULGORE },
-						["crs"] = {
+						coord = { 46.2, 63.2, MAP.MULGORE },
+						crs = {
 							2956,	-- Adult Plainstrider
 							2957,	-- Elder Plainstrider
 							3068,	-- Mazzranache
@@ -640,34 +640,34 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(766, {	-- Mazzranache
-				["qg"] = 3055,	-- Maur Raincaller
-				["coord"] = { 47.0, 57.0, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
+				qg = 3055,	-- Maur Raincaller
+				coord = { 47.0, 57.0, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
 					objective(1, {	-- 0/1 Prairie Wolf Heart
-						["provider"] = { "i", 4804 },	-- Prairie Wolf Heart
-						["crs"] = {
+						provider = { "i", 4804 },	-- Prairie Wolf Heart
+						crs = {
 							2959,	-- Prairie Stalker
 							2958,	-- Prairie Wolf
 							2960,	-- Prairie Wolf Alpha
 						},
 					}),
 					objective(2, {	-- 0/1 Flatland Cougar Femur
-						["provider"] = { "i", 4805 },	-- Flatland Cougar Femur
-						["cr"] = 3035,	-- Flatland Cougar
+						provider = { "i", 4805 },	-- Flatland Cougar Femur
+						cr = 3035,	-- Flatland Cougar
 					}),
 					objective(3, {	-- 0/1 Plainstrider Scale
-						["provider"] = { "i", 4806 },	-- Plainstrider Scale
-						["crs"] = {
+						provider = { "i", 4806 },	-- Plainstrider Scale
+						crs = {
 							2956,	-- Adult Plainstrider
 							2957,	-- Elder Plainstrider
 							3068,	-- Mazzranache
 						},
 					}),
 					objective(4, {	-- 0/1 Swoop Gizzard
-						["provider"] = { "i", 4807 },	-- Swoop Gizzard
-						["crs"] = {
+						provider = { "i", 4807 },	-- Swoop Gizzard
+						crs = {
 							2970,	-- Swoop
 							2971,	-- Taloned Swoop
 							2969,	-- Wiry Swoop
@@ -678,22 +678,22 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(748, {	-- Poison Water
-				["qg"] = 2948,	-- Mull Thunderhorn
-				["coord"] = { 48.5, 60.4, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 2948,	-- Mull Thunderhorn
+				coord = { 48.5, 60.4, MAP.MULGORE },
+				races = { TAUREN },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- 0/6 Prairie Wolf Paw
-						["provider"] = { "i", 4758 },	-- Prairie Wolf Paw
-						["crs"] = {
+						provider = { "i", 4758 },	-- Prairie Wolf Paw
+						crs = {
 							2959,	-- Prairie Stalker
 							2958,	-- Prairie Wolf
 							2960,	-- Prairie Wolf Alpha
 						},
 					}),
 					objective(2, {	-- 0/4 Plainstrider Talon
-						["provider"] = { "i", 4759 },	-- Plainstrider Talon
-						["crs"] = {
+						provider = { "i", 4759 },	-- Plainstrider Talon
+						crs = {
 							2956,	-- Adult Plainstrider
 							2957,	-- Elder Plainstrider
 							3068,	-- Mazzranache
@@ -702,45 +702,45 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(744, {	-- Preparation for Ceremony
-				["qg"] = 2987,	-- Eyahn Eagletalon
-				["coord"] = { 37.6, 59.8, MAP.THUNDER_BLUFF },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 7,
-				["groups"] = {
+				qg = 2987,	-- Eyahn Eagletalon
+				coord = { 37.6, 59.8, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				lvl = 7,
+				groups = {
 					objective(1, {	-- 0/6 Azure Feather
-						["provider"] = { "i", 4752 },	-- Azure Feather
-						["cr"] = 2964,	-- Windfury Sorceress
+						provider = { "i", 4752 },	-- Azure Feather
+						cr = 2964,	-- Windfury Sorceress
 					}),
 					objective(2, {	-- 0/6 Bronze Feather
-						["provider"] = { "i", 4753 },	-- Bronze Feather
-						["cr"] = 2965,	-- Windfury Matriarch
+						provider = { "i", 4753 },	-- Bronze Feather
+						cr = 2965,	-- Windfury Matriarch
 					}),
 					i(4968),	-- Bound Harness
 					i(4967),	-- Tribal Warrior's Shield
 				},
 			}),
 			q(767, {	-- Rite of Vision (1/3)
-				["sourceQuest"] = 763,	-- Rites of the Earthmother (2/3)
-				["qg"] = 2993,	-- Baine Bloodhoof
-				["coord"] = { 47.5, 60.2, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 3,
+				sourceQuest = 763,	-- Rites of the Earthmother (2/3)
+				qg = 2993,	-- Baine Bloodhoof
+				coord = { 47.5, 60.2, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 3,
 			}),
 			q(771, {	-- Rite of Vision (2/3)
-				["sourceQuest"] = 767,	-- Rite of Vision (1/3)
-				["qg"] = 3054,	-- Zarlman Two-Moons
-				["coord"] = { 47.8, 57.5, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 3,
-				["groups"] = {
+				sourceQuest = 767,	-- Rite of Vision (1/3)
+				qg = 3054,	-- Zarlman Two-Moons
+				coord = { 47.8, 57.5, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 3,
+				groups = {
 					objective(1, {	-- 0/2 Well Stone
-						["providers"] = {
+						providers = {
 							{ "i", 4808 },	-- Well Stone
 							{ "o", 2910 },	-- Well Stone
 						},
 					}),
 					objective(2, {	-- 0/2 Ambercorn
-						["providers"] = {
+						providers = {
 							{ "i", 4809 },	-- Ambercorn
 							{ "o", 2912 },	-- Ambercorn
 						},
@@ -748,34 +748,34 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(772, {	-- Rite of Vision (3/3)
-				["sourceQuest"] = 771,	-- Rite of Vision (2/3)
-				["qg"] = 3054,	-- Zarlman Two-Moons
-				["qi"] = 4823,	-- Water of the Seers
-				["coord"] = { 47.8, 57.5, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 3,
-				["groups"] = {
+				sourceQuest = 771,	-- Rite of Vision (2/3)
+				qg = 3054,	-- Zarlman Two-Moons
+				qi = 4823,	-- Water of the Seers
+				coord = { 47.8, 57.5, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 3,
+				groups = {
 					i(4906),	-- Rainwalker Boots
 					i(4958),	-- Sun-beaten Cloak
 				},
 			}),
 			q(773, {	-- Rite of Wisdom
-				["sourceQuest"] = 772,	-- Rite of Vision (3/3)
-				["qgs"] = 2984,	-- Seer Wiserunner
-				["coord"] = { 32.8, 36.0, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 3,
+				sourceQuest = 772,	-- Rite of Vision (3/3)
+				qgs = 2984,	-- Seer Wiserunner
+				coord = { 32.8, 36.0, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 3,
 			}),
 			q(776, {	-- Rites of the Earthmother (3/3)
-				["sourceQuest"] = 775,	-- Journey into Thunder Bluff
-				["qg"] = 3057,	-- Cairne Bloodhoof <High Chieftain>
-				["coord"] = { 59.8, 51.6, MAP.THUNDER_BLUFF },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 3,
-				["groups"] = {
+				sourceQuest = 775,	-- Journey into Thunder Bluff
+				qg = 3057,	-- Cairne Bloodhoof <High Chieftain>
+				coord = { 59.8, 51.6, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				lvl = 3,
+				groups = {
 					objective(1, {	-- 0/1 Horn of Arra'chea
-						["provider"] = { "i", 4841 },	-- Horn of Arra'chea
-						["coords"] = {
+						provider = { "i", 4841 },	-- Horn of Arra'chea
+						coords = {
 							{ 48.4, 15.6, MAP.MULGORE },
 							{ 53.0, 13.2, MAP.MULGORE },
 							{ 55.0, 22.0, MAP.MULGORE },
@@ -784,84 +784,84 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 							{ 51.0, 25.8, MAP.MULGORE },
 							{ 49.6, 20.8, MAP.MULGORE },
 						},
-						["cr"] = 3058,	-- Arra'chea
+						cr = 3058,	-- Arra'chea
 					}),
 					i(4909),	-- Kodo Hunter's Leggings
 				},
 			}),
 			q(745, {	-- Sharing the Land
-				["qg"] = 2993,	-- Baine Bloodhoof
-				["coord"] = { 47.5, 60.2, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				qg = 2993,	-- Baine Bloodhoof
+				coord = { 47.5, 60.2, MAP.MULGORE },
+				races = HORDE_ONLY,
+				groups = {
 					objective(1, {	-- 0/10 Palemane Tanner slain
-						["provider"] = { "n", 2949 },	-- Palemane Tanner
+						provider = { "n", 2949 },	-- Palemane Tanner
 					}),
 					objective(2, {	-- 0/8 Palemane Skinner slain
-						["provider"] = { "n", 2950 },	-- Palemane Skinner
+						provider = { "n", 2950 },	-- Palemane Skinner
 					}),
 					objective(3, {	-- 0/5 Palemane Poacher slain
-						["provider"] = { "n", 2951 },	-- Palemane Poacher
+						provider = { "n", 2951 },	-- Palemane Poacher
 					}),
 					i(4960),	-- Flash Pellet
 				},
 			}),
 			q(76156, {	-- Stalk With The Earthmother
-				["qg"] = 205729,	-- Boarton Shadetotem
-				["qi"] = 206159,	-- Venture Co Disguise
-				["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = { ORC, TAUREN, TROLL },
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 205729,	-- Boarton Shadetotem
+				qi = 206159,	-- Venture Co Disguise
+				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, TAUREN, TROLL },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- 0/5 Seaforium Mining Charge
-						["provider"] = { "i", 206157 },	-- Seaforium Mining Charge
+						provider = { "i", 206157 },	-- Seaforium Mining Charge
 					}),
 				},
 			}),
 			q(76160, {	-- Stalk With The Earthmother
-				["qg"] = 205729,	-- Boarton Shadetotem
-				["qi"] = 206176,	-- Mortar and Pestle
-				["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = { ORC, TAUREN, TROLL },
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 205729,	-- Boarton Shadetotem
+				qi = 206176,	-- Mortar and Pestle
+				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, TAUREN, TROLL },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- 0/1 Pine Salve
-						["provider"] = { "i", 206175 },	-- Pine Salve
+						provider = { "i", 206175 },	-- Pine Salve
 					}),
 					objective(2, {	-- 0/8 Windfury Cone
-						["provider"] = { "i", 206170 },	-- Windfury Cone
+						provider = { "i", 206170 },	-- Windfury Cone
 					}),
 					i(206177),	-- Pine Nut Butter
 				},
 			}),
 			q(76240, {	-- Stalk With The Earthmother
-				["qg"] = 205729,	-- Boarton Shadetotem
-				["qi"] = 206344,	-- Knife Set
-				["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["classes"] = { HUNTER, SHAMAN, DRUID },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 205729,	-- Boarton Shadetotem
+				qi = 206344,	-- Knife Set
+				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { HUNTER, SHAMAN, DRUID },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
-						["provider"] = { "i", 206345 },	-- Fish Chunks
+						provider = { "i", 206345 },	-- Fish Chunks
 					}),
 					i(277988),	-- Hoof-Holstered Blade
 					i(278002),	-- Valley Cosh
 				},
 			}),
 			q(96260, {	-- Stronger than Steel
-				["qg"] = 264072,	-- Yorn Grimtotem
-				["coord"] = { 32.4, 20.0, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 23,	-- Required level; quest level 30.
-				["groups"] = {
+				qg = 264072,	-- Yorn Grimtotem
+				coord = { 32.4, 20.0, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 23,	-- Required level; quest level 30.
+				groups = {
 					objective(1, {	-- 0/3 Crystalline Silk
-						["provider"] = { "i", 273181 },	-- Crystalline Silk
-						["cr"] = 264081,	-- Gloomrise Spinner
+						provider = { "i", 273181 },	-- Crystalline Silk
+						cr = 264081,	-- Gloomrise Spinner
 					}),
 					i(276892),	-- Spidersilk Sack
 					i(276891),	-- Spidersilk Pouch
@@ -869,30 +869,30 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(765, {	-- Supervisor Fizsprocket
-				["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
-				["qg"] = 2988,	-- Morin Cloudstalker
-				["coord"] = { 54.4, 60.4, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
+				sourceQuest = 751,	-- The Ravaged Caravan (2/2)
+				qg = 2988,	-- Morin Cloudstalker
+				coord = { 54.4, 60.4, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
 					objective(1, {	-- 0/1 Fizsprocket's Clipboard
-						["provider"] = { "i", 4819 },	-- Fizsprocket's Clipboard
-						["coord"] = { 64.8, 43.4, MAP.MULGORE },
-						["cr"] = 3051,	-- Supervisor Fizsprocket
+						provider = { "i", 4819 },	-- Fizsprocket's Clipboard
+						coord = { 64.8, 43.4, MAP.MULGORE },
+						cr = 3051,	-- Supervisor Fizsprocket
 					}),
 					i(4974),	-- Compact Fighting Knife
 					i(4964),	-- Goblin Smasher
 				},
 			}),
 			q(761, {	-- Swoop Hunting
-				["qg"] = 2947,	-- Harken Windtotem
-				["coord"] = { 48.7, 59.3, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(4, 4, 1),
-				["groups"] = {
+				qg = 2947,	-- Harken Windtotem
+				coord = { 48.7, 59.3, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = lvlsquish(4, 4, 1),
+				groups = {
 					objective(1, {	-- 0/8 Trophy Swoop Quill
-						["provider"] = { "i", 4769 },	-- Swoop Hunting
-						["crs"] = {
+						provider = { "i", 4769 },	-- Swoop Hunting
+						crs = {
 							2970,	-- Swoop
 							2969,	-- Wiry Swoop
 						},
@@ -900,34 +900,34 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96241, {	-- Talkin' bout Toxins, Mon
-				["qg"] = 264074,	-- Mazu'kon
-				["qi"] = 273015,	-- Toxin Extractor
-				["coord"] = { 32.4, 20.6, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 23,	-- Required level; quest level 30.
-				["groups"] = {
+				qg = 264074,	-- Mazu'kon
+				qi = 273015,	-- Toxin Extractor
+				coord = { 32.4, 20.6, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 23,	-- Required level; quest level 30.
+				groups = {
 					objective(1, {	-- 0/5 Gloomrise Toxin Sample
-						["description"] = "Use the provided Toxin Extractor on Gnawed Corpses at Gloomrise.",
-						["provider"] = { "i", 273001 },	-- Gloomrise Toxin Sample
-						["cr"] = 264096,	-- Gnawed Corpse
+						description = "Use the provided Toxin Extractor on Gnawed Corpses at Gloomrise.",
+						provider = { "i", 273001 },	-- Gloomrise Toxin Sample
+						cr = 264096,	-- Gnawed Corpse
 					}),
 				},
 			}),
 			q(6061, {	-- Taming the Beast (1/3)
-				["sourceQuests"] = {
+				sourceQuests = {
 					6065,	-- The Hunter's Path [Thunder Bluff]
 					6066,	-- The Hunter's Path [Mulgore]
 					6067,	-- The Hunter's Path [Durotar]
 				},
-				["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-				["coord"] = { 47.8, 55.6, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["classes"] = { HUNTER },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 3065,	-- Yaw Sharpmane <Hunter Trainer>
+				coord = { 47.8, 55.6, MAP.MULGORE },
+				races = { TAUREN },
+				classes = { HUNTER },
+				lvl = 10,
+				groups = {
 					objective(1, {	-- Tame an Adult Plainstrider
-						["providers"] = {
+						providers = {
 							{ "n", 2956 },	-- Adult Plainstrider
 							{ "i", 15914 },	-- Taming Rod
 						},
@@ -935,15 +935,15 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(6087, {	-- Taming the Beast (2/3)
-				["sourceQuest"] = 6061,	-- Taming the Beast (1/3)
-				["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-				["coord"] = { 47.8, 55.6, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["classes"] = { HUNTER },
-				["lvl"] = 10,
-				["groups"] = {
+				sourceQuest = 6061,	-- Taming the Beast (1/3)
+				qg = 3065,	-- Yaw Sharpmane <Hunter Trainer>
+				coord = { 47.8, 55.6, MAP.MULGORE },
+				races = { TAUREN },
+				classes = { HUNTER },
+				lvl = 10,
+				groups = {
 					objective(1, {	-- Tame a Prairie Stalker
-						["providers"] = {
+						providers = {
 							{ "n", 2959 },	-- Prairie Stalker
 							{ "i", 15915 },	-- Taming Rod
 						},
@@ -951,15 +951,15 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(6088, {	-- Taming the Beast (3/3)
-				["sourceQuest"] = 6087,	-- Taming the Beast (2/3)
-				["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-				["coord"] = { 47.8, 55.6, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["classes"] = { HUNTER },
-				["lvl"] = 10,
-				["groups"] = {
+				sourceQuest = 6087,	-- Taming the Beast (2/3)
+				qg = 3065,	-- Yaw Sharpmane <Hunter Trainer>
+				coord = { 47.8, 55.6, MAP.MULGORE },
+				races = { TAUREN },
+				classes = { HUNTER },
+				lvl = 10,
+				groups = {
 					objective(1, {	-- Tame a Swoop
-						["providers"] = {
+						providers = {
 							{ "n", 2970 },	-- Swoop
 							{ "i", 15916 },	-- Taming Rod
 						},
@@ -970,15 +970,15 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96261, {	-- The Broodmother
-				["qg"] = 259118,	-- Muln Earthfury
-				["coord"] = { 33.4, 22.4, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 23,	-- Required level; level 31 elite quest.
-				["groups"] = {
+				qg = 259118,	-- Muln Earthfury
+				coord = { 33.4, 22.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 23,	-- Required level; level 31 elite quest.
+				groups = {
 					objective(1, {	-- 0/1 Broodmother Valraxx slain
-						["provider"] = { "n", 264082 },	-- Broodmother Valraxx
-						["coords"] = {
+						provider = { "n", 264082 },	-- Broodmother Valraxx
+						coords = {
 							{ 33.6, 6.8, MAP.MULGORE },
 							{ 33.4, 7.2, MAP.MULGORE },
 						},
@@ -987,320 +987,320 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(770, {	-- The Demon Scarred Cloak
-				["provider"] = { "i", 4854 },	-- Demon Scarred Cloak
-				["races"] = HORDE_ONLY,
-				["lvl"] = 6,
-				["groups"] = {
+				provider = { "i", 4854 },	-- Demon Scarred Cloak
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
 					i(4971),	-- Skorn's Hammer
 					i(3079),	-- Skorn's Rifle
 				},
 			}),
 			q(96605, {	-- The Great Outdoors [Mulgore]
-				["sourceQuest"] = 96659,	-- The Adventurer [Mulgore]
-				["qg"] = 265810,	-- Kaga Wildhoof <Adventurer>
-				["coord"] = { 46.2, 67.2, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
+				sourceQuest = 96659,	-- The Adventurer [Mulgore]
+				qg = 265810,	-- Kaga Wildhoof <Adventurer>
+				coord = { 46.2, 67.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
 			}),
 			q(6065, {	-- The Hunter's Path [Thunder Bluff]
-				["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
-				["coord"] = { 58.4, 88.0, MAP.THUNDER_BLUFF },
-				["races"] = { TAUREN },
-				["classes"] = { HUNTER },
-				["isBreadcrumb"] = true,
-				["lvl"] = 10,
+				qg = 3038,	-- Kary Thunderhorn <Hunter Trainer>
+				coord = { 58.4, 88.0, MAP.THUNDER_BLUFF },
+				races = { TAUREN },
+				classes = { HUNTER },
+				isBreadcrumb = true,
+				lvl = 10,
 			}),
 			q(6066, {	-- The Hunter's Path [Mulgore]
-				["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
-				["coord"] = { 44.3, 75.7, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["classes"] = { HUNTER },
-				["isBreadcrumb"] = true,
-				["lvl"] = 10,
+				qg = 3061,	-- Lanka Farshot <Hunter Trainer>
+				coord = { 44.3, 75.7, MAP.MULGORE },
+				races = { TAUREN },
+				classes = { HUNTER },
+				isBreadcrumb = true,
+				lvl = 10,
 			}),
 			q(6067, {	-- The Hunter's Path [Durotar]
-				["qg"] = 3171,	-- Thotar <Hunter Trainer>
-				["coord"] = { 51.9, 43.5, MAP.DUROTAR },
-				["races"] = { TAUREN },
-				["classes"] = { HUNTER },
-				["isBreadcrumb"] = true,
-				["lvl"] = 10,
+				qg = 3171,	-- Thotar <Hunter Trainer>
+				coord = { 51.9, 43.5, MAP.DUROTAR },
+				races = { TAUREN },
+				classes = { HUNTER },
+				isBreadcrumb = true,
+				lvl = 10,
 			}),
 			q(861, {	-- The Hunter's Way
-				["altQuests"] = {
+				altQuests = {
 					860,	-- Sergra Darkthorn
 					844,	-- Plainstrider Menace
 				},
-				["qg"] = 3052,	-- Skorn Whitecloud
-				["coord"] = { 46.76, 60.22, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 3052,	-- Skorn Whitecloud
+				coord = { 46.76, 60.22, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 10,
+				groups = {
 					objective(1, {	-- 0/4 Flatland Prowler Claw
-						["provider"] = { "i", 5203 },	-- Flatland Prowler Claw
-						["cr"] = 3566,	-- Flatland Prowler
+						provider = { "i", 5203 },	-- Flatland Prowler Claw
+						cr = 3566,	-- Flatland Prowler
 					}),
 				},
 			}),
 			q(98430, {	-- The Longwalkers
-				["qg"] = 272203,	-- Perith Stormhoof
-				["coord"] = { 33.0, 65.8, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = { UNDEAD, TAUREN },
-				["groups"] = {
+				qg = 272203,	-- Perith Stormhoof
+				coord = { 33.0, 65.8, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { UNDEAD, TAUREN },
+				groups = {
 					objective(1, {	-- Escort Perith Stormhoof out of Palemane Rock
-						["provider"] = { "n", 272203 },	-- Perith Stormhoof
+						provider = { "n", 272203 },	-- Perith Stormhoof
 					}),
 				},
 			}),
 			q(749, {	-- The Ravaged Caravan (1/2)
-				["qg"] = 2988,	-- Morin Cloudstalker
-				["coord"] = { 54.4, 60.4, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
+				qg = 2988,	-- Morin Cloudstalker
+				coord = { 54.4, 60.4, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 5,
 			}),
 			q(751, {	-- The Ravaged Caravan (2/2)
-				["sourceQuest"] = 749,	-- The Ravaged Caravan (1/2)
-				["provider"] = { "o", 2908 },	-- Sealed Supply Crate
-				["qi"] = 4834,	-- Venture Co. Documents (QI!)
-				["coords"] = { 53.8, 48.3, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
+				sourceQuest = 749,	-- The Ravaged Caravan (1/2)
+				provider = { "o", 2908 },	-- Sealed Supply Crate
+				qi = 4834,	-- Venture Co. Documents (QI!)
+				coords = { 53.8, 48.3, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 5,
 			}),
 			q(764, {	-- The Venture Co.
-				["sourceQuest"] = 751,	-- The Ravaged Caravan (2/2)
-				["qg"] = 2988,	-- Morin Cloudstalker
-				["coord"] = { 54.4, 60.4, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
+				sourceQuest = 751,	-- The Ravaged Caravan (2/2)
+				qg = 2988,	-- Morin Cloudstalker
+				coord = { 54.4, 60.4, MAP.MULGORE },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
 					objective(1, {	-- 0/14 Venture Co. Worker slain
-						["provider"] = { "n", 2978 },	-- Venture Co. Worker
+						provider = { "n", 2978 },	-- Venture Co. Worker
 					}),
 					objective(2, {	-- 0/6 Venture Co. Supervisor slain
-						["provider"] = { "n", 2979 },	-- Venture Co. Supervisor
+						provider = { "n", 2979 },	-- Venture Co. Supervisor
 					}),
 				},
 			}),
 			q(758, {	-- Thunderhorn Cleansing
-				["sourceQuest"] = 756,	-- Thunderhorn Totem
-				["qg"] = 2948,	-- Mull Thunderhorn
-				["coord"] = { 48.5, 60.4, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuest = 756,	-- Thunderhorn Totem
+				qg = 2948,	-- Mull Thunderhorn
+				coord = { 48.5, 60.4, MAP.MULGORE },
+				races = { TAUREN },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- Cleanse the Thunderhorn Water Well
-						["provider"] = { "i", 5415 },	-- Thunderhorn Cleansing Totem
-						["coord"] = { 44.0, 45.0, MAP.MULGORE },
+						provider = { "i", 5415 },	-- Thunderhorn Cleansing Totem
+						coord = { 44.0, 45.0, MAP.MULGORE },
 					}),
 					i(4963),	-- Thunderhorn Cloak
 				},
 			}),
 			q(756, {	-- Thunderhorn Totem
-				["sourceQuest"] = 754,	-- Winterhoof Cleansing
-				["qg"] = 2948,	-- Mull Thunderhorn
-				["coord"] = { 48.5, 60.4, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuest = 754,	-- Winterhoof Cleansing
+				qg = 2948,	-- Mull Thunderhorn
+				coord = { 48.5, 60.4, MAP.MULGORE },
+				races = { TAUREN },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- 0/6 Stalker Claws
-						["provider"] = { "i", 4801 },	-- Stalker Claws
-						["cr"] = 2959,	-- Prairie Stalker
+						provider = { "i", 4801 },	-- Stalker Claws
+						cr = 2959,	-- Prairie Stalker
 					}),
 					objective(2, {	-- 0/6 Cougar Claws
-						["provider"] = { "i", 4802 },	-- Cougar Claws
-						["cr"] = 3035,	-- Flatland Cougar
+						provider = { "i", 4802 },	-- Cougar Claws
+						cr = 3035,	-- Flatland Cougar
 					}),
 				},
 			}),
 			q(98435, {	-- Thunderhorn's Report
-				["sourceQuest"] = 760,	-- Wildmane Cleansing
-				["qg"] = 2948,	-- Mull Thunderhorn
-				["qi"] = 281139,	-- Thunderhorn's Report
-				["coord"] = { 48.5, 60.4, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = { UNDEAD, TAUREN },
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuest = 760,	-- Wildmane Cleansing
+				qg = 2948,	-- Mull Thunderhorn
+				qi = 281139,	-- Thunderhorn's Report
+				coord = { 48.5, 60.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { UNDEAD, TAUREN },
+				lvl = 4,
+				groups = {
 					i(3443),	-- Ceremonial Tomahawk
 					i(4961),	-- Dreamwatcher Staff
 				},
 			}),
 			q(5661, {	-- Touch of Weakness [Mulgore]
-				["altQuests"] = {
+				altQuests = {
 					5658,	-- Touch of Weakness [Undercity]
 					5660,	-- Touch of Weakness [Durotar]
 					5662,	-- Touch of Weakness [Orgrimmar]
 					5663,	-- Touch of Weakness [Thunder Bluff]
 				},
-				["qg"] = 11407,	-- Var'jun
-				["coord"] = { 47.0, 58.8, MAP.MULGORE },
-				["classes"] = { PRIEST },
-				["races"] = { UNDEAD },
-				["lvl"] = 10,
-				["groups"] = {
+				qg = 11407,	-- Var'jun
+				coord = { 47.0, 58.8, MAP.MULGORE },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 10,
+				groups = {
 					{
-						["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)
-						["rank"] = 1,
+						recipeID = 2652,	-- Touch of Weakness (Rank 1)
+						rank = 1,
 					},
 				},
 			}),
 			q(6089, {	-- Training the Beast
-				["sourceQuest"] = 6088,	-- Taming the Beast (3/3)
-				["qg"] = 3065,	-- Yaw Sharpmane <Hunter Trainer>
-				["coord"] = { 47.8, 55.6, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["classes"] = { HUNTER },
-				["lvl"] = 10,
-				["groups"] = {
+				sourceQuest = 6088,	-- Taming the Beast (3/3)
+				qg = 3065,	-- Yaw Sharpmane <Hunter Trainer>
+				coord = { 47.8, 55.6, MAP.MULGORE },
+				races = { TAUREN },
+				classes = { HUNTER },
+				lvl = 10,
+				groups = {
 					recipe(6991),	-- Feed Pet
 					recipe(982),	-- Revive Pet
 				},
 			}),
 			q(760, {	-- Wildmane Cleansing
-				["sourceQuest"] = 759,	-- Wildmane Totem
-				["qg"] = 2948,	-- Mull Thunderhorn
-				["coord"] = { 48.5, 60.4, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuest = 759,	-- Wildmane Totem
+				qg = 2948,	-- Mull Thunderhorn
+				coord = { 48.5, 60.4, MAP.MULGORE },
+				races = { TAUREN },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- Cleanse the Wildmane Well
-						["provider"] = { "i", 5416 },	-- Wildmane Cleansing Totem
-						["coord"] = { 43.0, 14.0, MAP.MULGORE },
+						provider = { "i", 5416 },	-- Wildmane Cleansing Totem
+						coord = { 43.0, 14.0, MAP.MULGORE },
 					}),
 					i(3443),	-- Ceremonial Tomahawk
 					i(4961),	-- Dreamwatcher Staff
 				},
 			}),
 			q(759, {	-- Wildmane Totem
-				["sourceQuest"] = 758,	-- Thunderhorn Cleansing
-				["qg"] = 2948,	-- Mull Thunderhorn
-				["coord"] = { 48.5, 60.4, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuest = 758,	-- Thunderhorn Cleansing
+				qg = 2948,	-- Mull Thunderhorn
+				coord = { 48.5, 60.4, MAP.MULGORE },
+				races = { TAUREN },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- 0/8 Prairie Alpha Tooth
-						["provider"] = { "i", 4803 },	-- Prairie Alpha Tooth
-						["cr"] = 2960,	-- Prairie Wolf Alpha
+						provider = { "i", 4803 },	-- Prairie Alpha Tooth
+						cr = 2960,	-- Prairie Wolf Alpha
 					}),
 				},
 			}),
 			q(754, {	-- Winterhoof Cleansing
-				["sourceQuest"] = 748,	-- Poison Water
-				["qg"] = 2948,	-- Mull Thunderhorn
-				["coord"] = { 48.5, 60.4, MAP.MULGORE },
-				["races"] = { TAUREN },
-				["lvl"] = 4,
-				["groups"] = {
+				sourceQuest = 748,	-- Poison Water
+				qg = 2948,	-- Mull Thunderhorn
+				coord = { 48.5, 60.4, MAP.MULGORE },
+				races = { TAUREN },
+				lvl = 4,
+				groups = {
 					objective(1, {	-- Cleanse the Winterhoof Water Well
-						["provider"] = { "i", 5411 },	-- Winterhoof Cleansing Totem
-						["coord"] = { 53.0, 66.0, MAP.MULGORE },
+						provider = { "i", 5411 },	-- Winterhoof Cleansing Totem
+						coord = { 53.0, 66.0, MAP.MULGORE },
 					}),
 				},
 			}),
 			q(96130, { -- Chakuyak
-				["qg"] = 3065, -- Yaw Sharpmane
-				["coord"] = { 46.9, 59.6, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 5,
-				["groups"] = {
+				qg = 3065, -- Yaw Sharpmane
+				coord = { 46.9, 59.6, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
 					objective(1, { -- Chakuyak's Pelt
-						["provider"] = { "i", 270302 }, -- Chakuyak's Pelt
-						["cr"] = 268558, -- Chakuyak
-						["coord"] = { 38.5, 63.1, MAP.MULGORE },
+						provider = { "i", 270302 }, -- Chakuyak's Pelt
+						cr = 268558, -- Chakuyak
+						coord = { 38.5, 63.1, MAP.MULGORE },
 					}),
 				},
 			}),
 			q(99079, { -- Longwalker Malah
-				["qg"] = 3222, -- Brave Wildrunner
-				["coord"] = { 46.6, 63.0, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 3222, -- Brave Wildrunner
+				coord = { 46.6, 63.0, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
 					objective(1, { -- Find Longwalker Malah
-						["provider"] = { "n", 275789 }, -- Malah Longwind
-						["coord"] = { 57.6, 63.2, MAP.MULGORE },
+						provider = { "n", 275789 }, -- Malah Longwind
+						coord = { 57.6, 63.2, MAP.MULGORE },
 					}),
 				},
 			}),
 			q(99080, { -- Drive Them Out
-				["qg"] = 2993, -- Baine Bloodhoof
-				["coord"] = { 47.4, 60.2, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 2993, -- Baine Bloodhoof
+				coord = { 47.4, 60.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
 					objective(1, { -- Galak Centaur slain
-						["provider"] = { "n", 2967 }, -- Galak Centaur
-						["coord"] = { 59.3, 57.3, MAP.MULGORE },
+						provider = { "n", 2967 }, -- Galak Centaur
+						coord = { 59.3, 57.3, MAP.MULGORE },
 					}),
 					objective(2, { -- Galak Outrunner slain
-						["provider"] = { "n", 2968 }, -- Galak Outrunner
-						["coord"] = { 59.8, 59.4, MAP.MULGORE },
+						provider = { "n", 2968 }, -- Galak Outrunner
+						coord = { 59.8, 59.4, MAP.MULGORE },
 					}),
 					objective(3, { -- Herak's Head
-						["provider"] = { "i", 286075 }, -- Herak's Head
-						["cr"] = 275767, -- Herak the Pillager
-						["coord"] = { 60.5, 59.7, MAP.MULGORE },
+						provider = { "i", 286075 }, -- Herak's Head
+						cr = 275767, -- Herak the Pillager
+						coord = { 60.5, 59.7, MAP.MULGORE },
 					}),
 				},
 			}),
 			q(99081, { -- Grim Tidings
-				["qg"] = 275789, -- Malah Longwind
-				["qi"] = 286104, -- Longwalker Malah's Report
-				["coord"] = { 57.6, 63.2, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
+				qg = 275789, -- Malah Longwind
+				qi = 286104, -- Longwalker Malah's Report
+				coord = { 57.6, 63.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
 			}),
 			q(99082, { -- The High Chieftain
-				["qg"] = 2993, -- Baine Bloodhoof
-				["coord"] = { 47.4, 60.2, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 2993, -- Baine Bloodhoof
+				coord = { 47.4, 60.2, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
 					i(286740), -- Proud Brave's Guard
 					i(286741), -- Centaur Skull Basher
 				},
 			}),
 			q(99101, { -- Our Ancient Enemy
-				["qg"] = 3222, -- Brave Wildrunner
-				["qi"] = 286104, -- Longwalker Malah's Report
-				["coord"] = { 46.6, 63.0, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 3222, -- Brave Wildrunner
+				qi = 286104, -- Longwalker Malah's Report
+				coord = { 46.6, 63.0, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
 					objective(1, { -- Bring Longwalker Malah's Report to Baine Bloodhoof
-						["provider"] = { "n", 2993 }, -- Baine Bloodhoof
-						["coord"] = { 47.4, 60.2, MAP.MULGORE },
+						provider = { "n", 2993 }, -- Baine Bloodhoof
+						coord = { 47.4, 60.2, MAP.MULGORE },
 					}),
 				},
 			}),
 			q(99108, { -- Sparring Match
-				["qg"] = 3063, -- Krang Stonehoof
-				["coord"] = { 49.4, 60.4, MAP.MULGORE },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = 4,
-				["groups"] = {
+				qg = 3063, -- Krang Stonehoof
+				coord = { 49.4, 60.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
 					objective(1, { -- Novice Warrior slain
-						["provider"] = { "n", 10721 }, -- Novice Warrior
-						["coord"] = { 49.0, 62.0, MAP.MULGORE },
+						provider = { "n", 10721 }, -- Novice Warrior
+						coord = { 49.0, 62.0, MAP.MULGORE },
 					}),
 				},
 			}),
 		}),
 		n(RARES, {
 			n(5787, {	-- Enforcer Emilgund
-				["coord"] = { 40.6, 15.8, MAP.MULGORE },
+				coord = { 40.6, 15.8, MAP.MULGORE },
 			}),
 			n(3056, {	-- Ghost Howl
-				["coords"] = {
+				coords = {
 					{ 50.6, 15.0, MAP.MULGORE },
 					{ 39.6, 13.8, MAP.MULGORE },
 					{ 37.4, 17.8, MAP.MULGORE },
@@ -1310,86 +1310,86 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					{ 37.0, 42.6, MAP.MULGORE },
 					{ 44.2, 41.2, MAP.MULGORE },
 				},
-				["groups"] = {
+				groups = {
 					i(4854, {	-- Demon Scarred Cloak
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 				},
 			}),
 			n(3068, {	-- Mazzranache
-				["coords"] = {
+				coords = {
 					{ 34.8, 42.2, MAP.MULGORE },
 					{ 39.4, 44.2, MAP.MULGORE },
 					{ 44.4, 42.9, MAP.MULGORE },
 					{ 51.2, 43.6, MAP.MULGORE },
 					{ 56.6, 44.0, MAP.MULGORE },
 				},
-				["groups"] = {
+				groups = {
 					i(4861),	-- Sleek Feathered Tunic
 				},
 			}),
 			n(5785, {	-- Sister Hatelash
-				["coords"] = {
+				coords = {
 					{ 30.6, 21.6, MAP.MULGORE },
 					{ 36.6, 11.6, MAP.MULGORE },
 					{ 55.6, 12.0, MAP.MULGORE },
 				},
-				["groups"] = {
+				groups = {
 					i(4772),	-- Warm Cloak
 				},
 			}),
 			n(5786, {	-- Snagglespear
-				["coords"] = {
+				coords = {
 					{ 48.2, 68.0, MAP.MULGORE },
 					{ 50.6, 71.4, MAP.MULGORE },
 					{ 55.2, 72.2, MAP.MULGORE },
 				},
 			}),
 			n(5807, {	-- The Rake
-				["coords"] = {
+				coords = {
 					{ 50.6, 26.6, MAP.MULGORE },
 					{ 55.6, 24.4, MAP.MULGORE },
 					{ 54.4, 20.2, MAP.MULGORE },
 					{ 49.6, 22.8, MAP.MULGORE },
 				},
-				["groups"] = {
+				groups = {
 					i(17922),	-- Lionfur Armor
 				},
 			}),
 		}),
 		n(RIDING_TRAINER, {
 			n(3690, {	-- Kar Stormsinger <Kodo Riding Instructor>
-				["coord"] = { 47.6, 58.4, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
+				coord = { 47.6, 58.4, MAP.MULGORE },
+				races = HORDE_ONLY,
 				-- Available to Tauren without faction requirements.
-				["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-				["OnInit"] = [[function(t)
+				minReputation = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
+				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. TAUREN .. [[ then
 						t.minReputation = nil;
 					end
 					return t;
 				end]],
-				["groups"] = {
+				groups = {
 					recipe(18995, {	-- Kodo Riding
-						["cost"] = 200000,
-						["lvl"] = 40,
+						cost = 200000,
+						lvl = 40,
 					}),
 				},
 			}),
 		}),
 		n(VENDORS, {
 			n(3685, {	-- Harb Clawhoof <Kodo Mounts>
-				["coord"] = { 47.6, 58.4, MAP.MULGORE },
+				coord = { 47.6, 58.4, MAP.MULGORE },
 				-- Available to Tauren without faction requirements.
-				["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
-				["OnInit"] = [[function(t)
+				minReputation = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
+				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. TAUREN .. [[ then
 						t.minReputation = nil;
 					end
 					return t;
 				end]],
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(15277),	-- Gray Kodo (MOUNT!)
 					i(15290),	-- Brown Kodo (MOUNT!)
 					i(18793),	-- Great White Kodo (MOUNT!)
@@ -1398,9 +1398,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			n(5940, {	-- Harn Longcast <Fishing Supplies>
-				["coords"] = { 47.6, 55.0, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				coords = { 47.6, 55.0, MAP.MULGORE },
+				races = HORDE_ONLY,
+				groups = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 				},
@@ -1426,22 +1426,22 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				}),
 			}),
 			n(3081, {	-- Wunna Darkmane <Trade Goods>
-				["coord"] = { 46.2, 58.2, MAP.MULGORE },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				coord = { 46.2, 58.2, MAP.MULGORE },
+				races = HORDE_ONLY,
+				groups = {
 					i(5484),	-- Recipe: Roasted Kodo Meat (RECIPE!)
 				},
 			}),
 		}),
 		n(ZONE_DROPS, {
 			i(273658, {	-- Bloody Parchment
-				["cr"] = 264082,	-- Broodmother Valraxx
-				["coords"] = {
+				cr = 264082,	-- Broodmother Valraxx
+				coords = {
 					{ 33.6, 6.8, MAP.MULGORE },
 					{ 33.4, 7.2, MAP.MULGORE },
 				},
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["lvl"] = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 23,
 			}),
 		}),
 	},
