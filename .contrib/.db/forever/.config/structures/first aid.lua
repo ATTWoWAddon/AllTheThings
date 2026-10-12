@@ -4,12 +4,12 @@
 FIRST_AID_RECIPES = {
 	APPRENTICE_JOURNEYMAN = {
 		r(3273, {	-- First Aid (Apprentice)
-			["lvl"] = 5,
-			["rank"] = 1,
+			lvl = 5,
+			rank = 1,
 		}),
 		r(3274, {	-- First Aid (Journeyman)
-			["lvl"] = 10,
-			["rank"] = 2,
+			lvl = 10,
+			rank = 2,
 		}),
 		r(3275),	-- Linen Bandage
 		r(3276),	-- Heavy Linen Bandage
@@ -25,8 +25,8 @@ FIRST_AID_RECIPES = {
 	};
 	EXPERT = {
 		i(16084, {	-- Expert First Aid - Under Wraps (RECIPE!)
-			["lvl"] = 20,
-			["rank"] = 3,
+			lvl = 20,
+			rank = 3,
 		}),
 		i(16112),	-- Manual: Heavy Silk Bandage (RECIPE!)
 		i(16113),	-- Manual: Mageweave Bandage (RECIPE!)
