@@ -2,7 +2,7 @@
 -- Run from the repository root: lua tests/character-whispers.lua [repository-root]
 --
 -- Test architecture:
--- Account Management supplies the production transport, ACK/event handlers,
+-- Account Management supplies the production transport, check/ACK/event handlers,
 -- and queue-building, progress, and cancellation callbacks loaded here.
 -- Probe handlers expose reassembled payloads and queued replies to assertions.
 -- Each fixture selects a client mode and independently mocks regional-name
@@ -14,7 +14,8 @@
 -- Scenarios send messages, deliver chunks/ACKs through production event
 -- handlers, and inspect queue data before updating or cancelling it.
 -- Assertions cover complete native names, unchanged logical links, progress,
--- sender filtering, numeric Battle.net keys, and message-size boundaries.
+-- first-sync accented names without cached identity, sender filtering, numeric
+-- Battle.net keys, and message-size boundaries.
 -- PASS means all assertions in that scenario completed in the mocked environment;
 -- an assertion or error stops the run. No messages are sent over the network.
 
@@ -121,7 +122,7 @@
 ---@field target fun(identifier: ATTAccountTransportKey): ATTAccountTransportKey Resolve regionally unique native full names.
 ---@field normalize fun(identifier: string|number|nil, ...: string|nil): string?, string? Build a logical identifier and return its normalized complete name.
 ---@field events ATTWhisperTestEvents Filtered addon-message event callbacks.
----@field handlers table<string, ATTWhisperTestMessageHandler> Command callbacks, including the extracted ACK handler and test probes.
+---@field handlers table<string, ATTWhisperTestMessageHandler> Command callbacks, including the extracted check/ACK handlers and test probes.
 ---@field queueOption ATTWhisperTestQueueOption Extracted queue section and its item builder.
 ---@field sending table<ATTAccountTransportKey, table<integer, ATTWhisperTestSendChunks>> Outgoing sequences indexed by recipient and UID.
 ---@field receiving table<ATTAccountTransportKey, table<integer, ATTWhisperTestReceiveChunks>> Incoming sequences indexed by sender and UID.
@@ -169,7 +170,7 @@ local file = assert(io.open(root .. "/src/UI/Windows/Account Management.lua", "r
 local source = file:read("*a"):gsub("\r\n", "\n");
 file:close();
 local transport = assert(source:match("(local AddonMessagePrefix, MESSAGE_HANDLERS, EnableBattleNet.-)%-%- Account Wide Data handlers"));
-local ack = assert(source:match("(MESSAGE_HANDLERS%.ack = function.-)\nMESSAGE_HANDLERS%.check"));
+local messages = assert(source:match("(MESSAGE_HANDLERS%.ack = function.-)\nMESSAGE_HANDLERS%.char ="));
 local events = assert(source:match("(handlers%.BN_CHAT_MSG_ADDON = function.-)\n\t\tlocal options ="));
 local cancel = assert(source:match("(local function OnClickForSyncQueue.-)local function OnTooltipForCharacter"));
 local progress = assert(source:match("(local function OnTooltipForSyncQueue.-)%-%- Implementation"));
@@ -186,7 +187,7 @@ local UNKNOWN = "Unknown";
 ---@generic K, V
 ---@param t table<K, V> Mutable collection to empty.
 local wipe = function(t) for k in pairs(t) do t[k] = nil; end end;
-]] .. transport .. "\n" .. ack .. "\n" .. cancel .. "\n" .. progress .. [[
+]] .. transport .. "\n" .. messages .. "\n" .. cancel .. "\n" .. progress .. [[
 ---@type ATTWhisperTestEvents
 local eventHandlers = {};
 do
@@ -376,6 +377,44 @@ for _,apiAvailable in ipairs({true,false}) do
 		h:chat(logicalTarget,"ack,"..id..",1"); assert(data.acks[1],"Original realm-qualified sender must remain authorized");
 	end);
 end
+
+test("First sync preserves an uncached accented native sender", function()
+	local h=fixture("retail",true);
+	local native="Émily Star";
+	local logical=assert(h.api.normalize(native));
+	h.linked[logical]=true;
+	-- Enough unrelated saved GUIDs make the actual check handler generate multiple chunks.
+	-- None has the sender's name cached, so transport must preserve the incoming spelling.
+	for i=1,20 do h.characters["Player-0001-000000"..i]={lastPlayed=1000}; end
+	h:chat("Other Surname","check,Player-0001-99999999,1");
+	assert(next(h.api.responses)==nil,"An unlinked check sender must not receive a reply");
+	h:chat(native,"check,Player-0001-99999999,1");
+	assert(h.api.responses[native],"The normalized logical link must authorize the native sender");
+	h:step(); h:step();
+	local _,data=pending(h,native);
+	assert(data.target==native and #data.chunks>1,"The real check reply must queue multiple chunks under the native spelling");
+	assert(data.chunks[1]:sub(1,6)=="chars,","The actual check handler must generate the character-list reply");
+	assert(h.api.sending[logical]==nil,"Logical identity must not become the transport queue key");
+	acknowledgeAll(h,native,native,false);
+	for _,message in ipairs(h.outgoing) do assert(message.target==native,"The reply target must preserve the original accented name"); end
+	assert(next(h.api.responses)==nil,"The first-sync response queue must finish");
+	assert(h.linked[logical] and h.linked[native]==nil and next(h.linked)==logical,"First sync must preserve the original logical link key");
+end);
+test("Uncached accented name-realm input preserves native transport", function()
+	local h=fixture("retail",true);
+	local native="Émily Star";
+	local logical=assert(h.api.normalize(native));
+	local target=native.."-Remote Realm";
+	h.linked[logical]=true;
+	assert(next(h.characters)==nil,"This route must resolve without a saved character name");
+	h.api.send(target,"first sync",string.rep("x",600));
+	local _,data=pending(h,native);
+	assert(h.api.target(target)==native and data.target==native and #data.chunks>1);
+	assert(h.api.sending[target]==nil and h.api.sending[logical]==nil);
+	acknowledgeAll(h,native,native,false);
+	for _,message in ipairs(h.outgoing) do assert(message.target==native,"Removing the realm must not change native spelling"); end
+	assert(h.linked[logical] and h.linked[native]==nil and next(h.linked)==logical,"Native transport must not rewrite the logical link key");
+end);
 
 test("Forever immediate sends use native full names", function()
 	local h=fixture("forever");

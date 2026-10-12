@@ -354,14 +354,14 @@ local function NormalizeLinkedCharacterIdentifier(identifier, ...)
 	if realm == "" then return; end
 	return name .. "-" .. realm:gsub("%s+", ""), name;
 end
---- Maps logical identifiers to regionally unique native full names, preserving exact known names.
+--- Maps logical identifiers to regionally unique native full names, preserving native spelling.
 --- Without regional unique names, identifiers pass through unchanged; numeric IDs always pass through.
 ---@param identifier ATTAccountTransportKey Native full name, ATT name-realm identifier, or Battle.net game-account ID.
----@return ATTAccountTransportKey target Whisper recipient after regional name resolution; numeric IDs pass through.
+---@return ATTAccountTransportKey target Whisper recipient with original native spelling; numeric IDs pass through.
 GetCharacterWhisperTarget = function(identifier)
 	if not HasRegionalUniqueNames or type(identifier) ~= "string" then return identifier; end
 	identifier = TrimString(identifier);
-	local normalizedIdentifier, name = NormalizeLinkedCharacterIdentifier(identifier);
+	local normalizedIdentifier = NormalizeLinkedCharacterIdentifier(identifier);
 	local knownName;
 	for _,character in pairs(CharacterData) do
 		if type(character.name) == "string" and character.name ~= "" then
@@ -373,7 +373,8 @@ GetCharacterWhisperTarget = function(identifier)
 			end
 		end
 	end
-	-- Regionally unique whispers use the full name without ATT's internal realm suffix.
+	-- Preserve native spelling before a saved character record is available.
+	local name = TrimString(identifier:match("^[^-]+"));
 	return knownName or name or identifier;
 end
 local function AddCharacterLookup(characterByInfo, character)
