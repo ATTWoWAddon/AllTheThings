@@ -3,7 +3,7 @@
 --
 -- Test architecture:
 -- Account Management supplies the production transport, check/ACK/event handlers,
--- and queue-building, progress, and cancellation callbacks loaded here.
+-- and linked-character popup, queue, progress, and cancellation callbacks loaded here.
 -- Probe handlers expose reassembled payloads and queued replies to assertions.
 -- Each fixture selects a client mode and independently mocks regional-name
 -- capability, with fresh characters, linked senders, messages, and queues.
@@ -121,6 +121,7 @@
 ---@field bnet fun(target: number, detail: string?, message: string|string[]) Send to a numeric Battle.net game-account ID.
 ---@field target fun(identifier: ATTAccountTransportKey): ATTAccountTransportKey Resolve regionally unique native full names.
 ---@field normalize fun(identifier: string|number|nil, ...: string|nil): string?, string? Build a logical identifier and return its normalized complete name.
+---@field link fun(input: string) Add a logical link through the actual popup callback and send its initial request.
 ---@field events ATTWhisperTestEvents Filtered addon-message event callbacks.
 ---@field handlers table<string, ATTWhisperTestMessageHandler> Command callbacks, including the extracted check/ACK handlers and test probes.
 ---@field queueOption ATTWhisperTestQueueOption Extracted queue section and its item builder.
@@ -175,6 +176,8 @@ local events = assert(source:match("(handlers%.BN_CHAT_MSG_ADDON = function.-)\n
 local cancel = assert(source:match("(local function OnClickForSyncQueue.-)local function OnTooltipForCharacter"));
 local progress = assert(source:match("(local function OnTooltipForSyncQueue.-)%-%- Implementation"));
 local queueOption = assert(source:match("(app.CreateRawText%(L%.ACCOUNT_MANAGEMENT_SYNC_QUEUE,.-\n\t\t\t%}%)),"));
+local linkPopup = source:sub((assert(source:find("app:ShowPopupDialogWithEditBox(L.ACCOUNT_MANAGEMENT_LINK_CHARACTER_POPUP", 1, true))));
+local linkCallback = assert(linkPopup:match("(function%(cmd%).-self:Rebuild%(%)%;%s*end%s*end)"));
 local program = [[
 ---@type ATTWhisperTestApp, ATTWhisperTestChatAPI, fun(target: number, prefix: string, message: string), ATTNameTestCharacter, table<string, ATTNameTestCharacter>, table<ATTAccountTransportKey, boolean>, ATTWhisperTestLocale, fun(): number, (fun(): boolean)?
 local app, C_ChatInfo, BNSendGameData, CurrentCharacter, CharacterData, LinkedCharacters, L, time, RegionalUniqueNamesEnabled = ...;
@@ -196,8 +199,13 @@ do
 end
 ---@type ATTWhisperTestQueueOption
 local queueOption = ]] .. queueOption .. [[
+---@type ATTWhisperTestWindow
+local self = app:GetWindow("Account Management");
+--- Store the popup's normalized logical link and initiate its production link request.
+---@type fun(input: string)
+local link = ]] .. linkCallback .. "\n" .. [[
 return {
-	send = SendAddonMessage, bnet = SendBattleNetMessage, target = GetCharacterWhisperTarget, normalize = NormalizeLinkedCharacterIdentifier,
+	send = SendAddonMessage, bnet = SendBattleNetMessage, target = GetCharacterWhisperTarget, normalize = NormalizeLinkedCharacterIdentifier, link = link,
 	events = eventHandlers, handlers = MESSAGE_HANDLERS, queueOption = queueOption,
 	sending = pendingSendChunksForUser, receiving = pendingReceiveChunksForUser, responses = pendingSendResponsesForUser,
 }
@@ -400,20 +408,39 @@ test("First sync preserves an uncached accented native sender", function()
 	assert(next(h.api.responses)==nil,"The first-sync response queue must finish");
 	assert(h.linked[logical] and h.linked[native]==nil and next(h.linked)==logical,"First sync must preserve the original logical link key");
 end);
-test("Uncached accented name-realm input preserves native transport", function()
+test("An explicit remote link authorizes an uncached accented native sender", function()
 	local h=fixture("retail",true);
 	local native="Émily Star";
-	local logical=assert(h.api.normalize(native));
 	local target=native.."-Remote Realm";
+	local logical=assert(h.api.normalize(target));
+	h.api.link(target);
+	assert(logical=="ÉMily Star-RemoteRealm" and h.linked[logical] and next(h.linked)==logical,"The actual popup must store the explicit remote logical key");
+	assert(next(h.characters)==nil,"No saved native spelling may assist this authorization");
+	local initialRequests=#h.outgoing;
+	-- Generate a real multi-chunk check response without caching this sender's identity.
+	for i=1,20 do h.characters["Player-0001-000000"..i]={lastPlayed=1000}; end
+	h.linked[logical]=false;
+	h:chat(native,"check,Player-0001-99999999,1");
+	assert(next(h.api.responses)==nil,"A disabled remote link must not authorize its native sender");
 	h.linked[logical]=true;
-	assert(next(h.characters)==nil,"This route must resolve without a saved character name");
-	h.api.send(target,"first sync",string.rep("x",600));
-	local _,data=pending(h,native);
-	assert(h.api.target(target)==native and data.target==native and #data.chunks>1);
+	h:chat("Other Surname","check,Player-0001-99999999,1");
+	assert(next(h.api.responses)==nil,"An unrelated native sender must not match the remote link");
+	h:chat(native,"check,Player-0001-99999999,1");
+	assert(h.api.responses[native],"The explicit remote logical link must authorize the original accented native sender");
+	h:step(); h:step();
+	local id,data=pending(h,native);
+	assert(data.target==native and #data.chunks>1 and data.chunks[1]:sub(1,6)=="chars,");
 	assert(h.api.sending[target]==nil and h.api.sending[logical]==nil);
+	h.linked[logical]=false;
+	h:chat(native,"ack,"..id..",1");
+	assert(data.acks[1]==nil,"A disabled remote link must not authorize an ACK");
+	h.linked[logical]=true;
+	h:chat("Other Surname","ack,"..id..",1");
+	assert(data.acks[1]==nil,"An unrelated sender must not acknowledge the native queue");
 	acknowledgeAll(h,native,native,false);
-	for _,message in ipairs(h.outgoing) do assert(message.target==native,"Removing the realm must not change native spelling"); end
-	assert(h.linked[logical] and h.linked[native]==nil and next(h.linked)==logical,"Native transport must not rewrite the logical link key");
+	for i=initialRequests+1,#h.outgoing do assert(h.outgoing[i].target==native,"Replies must retain the original native sender spelling"); end
+	assert(next(h.api.responses)==nil,"The remote first-sync response queue must finish");
+	assert(h.linked[logical] and h.linked[native]==nil and next(h.linked)==logical,"Native transport must not rewrite the explicit remote link");
 end);
 
 test("Forever immediate sends use native full names", function()
@@ -492,6 +519,20 @@ for _,name in ipairs({"Solo", "Dash-Name", "Milo River-Song"}) do
 		assert(character.name==name and character.realm=="Remote Realm" and character.Identifier=="unchanged" and character.Spells[123],"Transport lookup must not mutate saved identity or collection data");
 	end);
 end
+test("Known hyphenated native names do not authorize a different suffix", function()
+	local h=fixture("retail",true);
+	local native="Milo River-Song";
+	h.characters.known={name=native,realm="Remote Realm"};
+	local logical=assert(h.api.normalize(native,"Remote Realm"));
+	h.linked[logical]=true;
+	h.api.send(logical,"chunks",string.rep("x",600));
+	local id,data=pending(h,native);
+	h:chat("Milo River-Stone","ack,"..id..",1");
+	assert(data.acks[1]==nil,"Authorization must compare the entire native name, including its hyphenated suffix");
+	h:chat("Milo River-Stone","check,Player-0001-99999999,1");
+	assert(next(h.api.responses)==nil,"A different hyphenated native name must not receive a check reply");
+	acknowledgeAll(h,native,native,false);
+end);
 test("Disabled logical links do not authorize ACKs", function()
 	local h=fixture("forever"); h.linked[logicalTarget]=false;
 	h.api.send(logicalTarget,"big",string.rep("x",600));local id,data=pending(h,nativeTarget);

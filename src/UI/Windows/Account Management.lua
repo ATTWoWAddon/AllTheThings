@@ -387,7 +387,7 @@ local function AddCharacterLookup(characterByInfo, character)
 	end
 end
 --- Checks whether a sender is allowed by the explicit or implicit linked-character entries.
---- Regionally unique senders also match the native whisper name of an allowed logical identifier.
+--- Regionally unique senders match allowed native names using the logical links' normalization.
 ---@param identifier ATTAccountTransportKey Character sender name or Battle.net game-account ID.
 ---@return boolean linked
 local function IsLinkedCharacter(identifier)
@@ -395,8 +395,9 @@ local function IsLinkedCharacter(identifier)
 	local fullIdentifier, shortIdentifier = NormalizeLinkedCharacterIdentifier(identifier);
 	if (fullIdentifier and LinkedCharacters[fullIdentifier]) or (shortIdentifier and LinkedCharacters[shortIdentifier]) then return true; end
 	if HasRegionalUniqueNames and type(identifier) == "string" then
+		local nativeName = CamelCaseName(identifier);
 		for linked,allowed in pairs(LinkedCharacters) do
-			if allowed and type(linked) == "string" and GetCharacterWhisperTarget(linked) == identifier then return true; end
+			if allowed and type(linked) == "string" and CamelCaseName(GetCharacterWhisperTarget(linked)) == nativeName then return true; end
 		end
 	end
 	return false;
