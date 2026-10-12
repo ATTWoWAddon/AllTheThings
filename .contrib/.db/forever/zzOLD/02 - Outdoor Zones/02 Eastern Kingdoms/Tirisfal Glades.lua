@@ -493,6 +493,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(96896, {	-- A Righteous Cause
+					["sourceQuest"] = 96899,	-- Bandarion Keep
+					["qg"] = 267008,	-- Leonid Barthalomew the Revered
+					["coord"] = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+				}),
 				q(1821, {	-- Agamand Heirlooms
 					["sourceQuest"] = 1820,	-- Speak with Coleman
 					["qg"] = 1500,	-- Coleman Farthing
@@ -528,6 +536,23 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 								{ "o", 105169 },	-- Agamand Weapon Rack
 							},
 							["coord"] = { 52.6, 25.9, MAP.TIRISFAL_GLADES },
+						}),
+					},
+				}),
+				q(99152, {	-- As Above, So Below
+					["qg"] = 246389,	-- Hilda the Breaker
+					["coord"] = { 22.0, 47.2, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/6 Faintly Glowing Bone
+							["provider"] = { "i", 286259 },	-- Faintly Glowing Bone
+							["crs"] = {
+								260428,	-- Shadowvale Lurcher
+								260430,	-- Shadowvale Mystic
+								260432,	-- Shadowvale Mystic
+							},
 						}),
 					},
 				}),
@@ -594,6 +619,13 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(3445),	-- Ceremonial Knife
 						i(3071),	-- Striking Hatchet
 					},
+				}),
+				q(96899, {	-- Bandarion Keep
+					["qg"] = 267009,	-- Hadric Harlson
+					["coord"] = { 65.8, 61.0, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { ORC, UNDEAD },
+					["lvl"] = 10,
 				}),
 				q(97951, {	-- Camping 101: Alchemy [Tirisfal Glades]
 					sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
@@ -893,6 +925,53 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(7118),	-- Heirloom Sword
 					},
 				}),
+				q(97558, {	-- Hides for the Forsaken
+					["qg"] = 3549,	-- Shelene Rhobart
+					["coord"] = { 65.4, 60.0, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { ORC, UNDEAD },
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/8 Duskbat Wing Membrane
+							["provider"] = { "i", 278242 },	-- Duskbat Wing Membrane
+							["crs"] = {
+								1553,	-- Greater Duskbat
+								1554,	-- Vampiric Duskbat
+							},
+						}),
+						objective(2, {	-- 0/6 Darkhound Hide
+							["provider"] = { "i", 278243 },	-- Darkhound Hide
+							["crs"] = {
+								1547,	-- Decrepit Darkhound
+								1548,	-- Cursed Darkhound
+							},
+						}),
+						objective(3, {	-- 0/3 Vile Fin Murloc Skin
+							["provider"] = { "i", 278244 },	-- Vile Fin Murloc Skin
+							["crs"] = {
+								1544,	-- Vile Fin Minor Oracle
+								1545,	-- Vile Fin Muckdweller
+							},
+						}),
+						i(281283),	-- Patchwing Pants
+						i(281284),	-- Howlhide Vest
+						i(281285),	-- Finscale Soles
+					},
+				}),
+				q(98545, {	-- Leonid's Letter
+					["sourceQuest"] = 96896,	-- A Righteous Cause
+					["qg"] = 267008,	-- Leonid Barthalomew the Revered
+					["qi"] = 282065,	-- Sealed Letter
+					["coord"] = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					["groups"] = {
+						i(282064),	-- Tim's Lost Rib
+						i(277247),	-- Mug of Muddled Memories
+						i(277255),	-- Misplaced Shooter
+					},
+				}),
 				q(374, {	-- Proof of Demise
 					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1652,	-- Deathguard Burgess
@@ -970,6 +1049,44 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(99156, {	-- Rear Guard Patrol (2/2)
+					["sourceQuest"] = 356,	-- Rear Guard Patrol
+					["qg"] = 1495,	-- Deathguard Linnea
+					["coord"] = { 65.4, 60.2, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { ORC, UNDEAD },
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/1 Riptear's Heart
+							["provider"] = { "i", 286326 },	-- Riptear's Heart
+							["coord"] = { 83.9, 44.0, MAP.TIRISFAL_GLADES },
+							["cr"] = 276020,	-- Riptear
+						}),
+						i(286742),	-- Riptear's Cleaver
+						i(286743),	-- Riptear's Spare Arm
+						i(286744),	-- Thrice-Stitched Flesh
+					},
+				}),
+				q(96898, {	-- Remnants of War
+					["qg"] = 267009,	-- Hadric Harlson
+					["coord"] = { 65.8, 61.0, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/12 Necrotic Crystal Fragment
+							["providers"] = {
+								{ "i", 275851 },	-- Necrotic Crystal Fragment
+								{ "o", 656366 },	-- Naxxramas Crystal Fragment
+							},
+							["coord"] = { 69.2, 66.0, MAP.TIRISFAL_GLADES },
+							["crs"] = {
+								267006,	-- Dark Neophyte
+								275437,	-- Dark Enforcer
+							},
+						}),
+					},
+				}),
 				q(366, {	-- Return the Book
 					["sourceQuest"] = 357,	-- The Lich's Identity
 					["providers"] = {
@@ -986,6 +1103,18 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 65.4, 60.2, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
+				}),
+				q(99144, {	-- Seeking Refuge
+					["qg"] = 275954,	-- Bareth Dawnstone
+					["coord"] = { 32.0, 46.2, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { UNDEAD },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Escort Bareth Dawnstone out of Crusader's Outpost
+							["provider"] = { "n", 275954 },	-- Bareth Dawnstone
+						}),
+					},
 				}),
 				q(1820, {	-- Speak with Coleman
 					["sourceQuest"] = 1819,	-- Ulag the Cleaver
@@ -1010,6 +1139,30 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["coord"] = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
+				}),
+				q(96895, {	-- The Argent Emissary
+					["qg"] = 1738,	-- Deathguard Terrence
+					["coord"] = { 61.4, 53.4, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
+				}),
+				q(96897, {	-- The Cult of the Damned
+					["qg"] = 267009,	-- Hadric Harlson
+					["coord"] = { 65.8, 61.0, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/8 Dark Neophyte slain
+							["provider"] = { "n", 267006 },	-- Dark Neophyte
+							["coord"] = { 68.8, 64.6, MAP.TIRISFAL_GLADES },
+						}),
+						objective(2, {	-- 0/8 Dark Enforcer slain
+							["provider"] = { "n", 275437 },	-- Dark Enforcer
+							["coord"] = { 68.0, 64.6, MAP.TIRISFAL_GLADES },
+						}),
+					},
 				}),
 				q(96607, {	-- The Great Outdoors [Tirisfal Glades]
 					["sourceQuest"] = 96656,	-- The Adventurer [Tirisfal Glades]
@@ -1205,6 +1358,21 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(3834),	-- Sturdy Cloth Trousers
 					},
 				}),
+				q(99153, {	-- The One That Got Away
+					["qg"] = 259190,	-- Ephram Barbaro
+					["coord"] = { 20.2, 46.4, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { UNDEAD },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/1 Glowing Crystal Fragment
+							["providers"] = {
+								{ "i", 286269 },	-- Glowing Crystal Fragment
+								{ "o", 694895 },	-- Glowing Crystal Fragment
+							},
+						}),
+					},
+				}),
 				q(405, {	-- The Prodigal Lich
 					["providers"] = {
 						{ "n", 1499 },	-- Magistrate Sevren
@@ -1225,6 +1393,18 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 					["lvl"] = 5,
 					["groups"] = {
 						i(5940),	-- Bone Buckler
+					},
+				}),
+				q(99142, {	-- Tomb Weed
+					["qg"] = 10665,	-- Junior Apothecary Holland
+					["coord"] = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = { UNDEAD },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- 0/5 Tomb Weed
+							["provider"] = { "i", 286204 },	-- Tomb Weed
+						}),
 					},
 				}),
 				q(1819, {	-- Ulag the Cleaver
@@ -1256,6 +1436,14 @@ root(ROOTS.Zones, m(MAP.EASTERN_KINGDOMS, {
 						i(5941),	-- Brass Scale Pants
 						i(3444),	-- Tiller's Vest
 					},
+				}),
+				q(95328, {	-- Whispering Horror Residue
+					["provider"] = { "i", 268812 },	-- Whispering Horror Residue
+					["cr"] = 260396,	-- Whispering Horror
+					["coord"] = { 8.6, 60.2, MAP.TIRISFAL_GLADES },
+					["timeline"] = { TIMELINE.ADDED_1_60_1 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 7,
 				}),
 			}),
 			n(RARES, {
