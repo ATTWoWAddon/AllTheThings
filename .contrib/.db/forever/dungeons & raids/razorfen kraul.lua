@@ -4,22 +4,22 @@
 
 root(ROOTS.Instances, {
 	inst(234, {	-- Razorfen Kraul
-		["lore"] = "Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",
-		["icon"] = 136353,
+		lore = "Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",
+		icon = 136353,
 		["zone-text-areaID"] = 491,	-- Razorfen Kraul
-		["mapID"] = MAP.RAZORFEN_KRAUL,
-		["coord"] = { 40.94, 94.55, MAP.THE_BARRENS },
-		["lvl"] = 17,
-		["groups"] = {
+		mapID = MAP.RAZORFEN_KRAUL,
+		coord = { 40.94, 94.55, MAP.THE_BARRENS },
+		lvl = 17,
+		groups = {
 			n(QUESTS, {
 				q(1102, {	-- A Vengeful Fate
-					["qg"] = 4451,	-- Auld Stonespire
-					["coord"] = { 36.2, 59.8, MAP.THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 29,
-					["groups"] = {
+					qg = 4451,	-- Auld Stonespire
+					coord = { 36.2, 59.8, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					lvl = 29,
+					groups = {
 						objective(1, {	-- 0/1 Razorflank's Heart
-							["provider"] = { "i", 5793 },	-- Razorflank's Heart
+							provider = { "i", 5793 },	-- Razorflank's Heart
 						}),
 						i(6725),	-- Marbled Buckler
 						i(4197),	-- Berylline Pads
@@ -27,45 +27,45 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(6522, {	-- An Unholy Alliance (1/2)
-					["provider"] = { "i", 17008 },	-- Small Scroll
-					["maps"] = { MAP.UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 28,
+					provider = { "i", 17008 },	-- Small Scroll
+					maps = { MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					lvl = 28,
 				}),
 				q(1221, {	-- Blueleaf Tubers
-					["qg"] = 3446,	-- Mebok Mizzyrix
-					["coord"] = { 62.4, 37.6, MAP.THE_BARRENS },
-					["lvl"] = 20,
-					["groups"] = {
+					qg = 3446,	-- Mebok Mizzyrix
+					coord = { 62.4, 37.6, MAP.THE_BARRENS },
+					lvl = 20,
+					groups = {
 						objective(1, {	-- 0/6 Blueleaf Tuber
-							["providers"] = {
+							providers = {
 								{ "i", 5876 },	-- Blueleaf Tuber
 								{ "o", 20920 },	-- Blueleaf Tuber
 								{ "i", 5880 },	-- Crate With Holes
 								{ "i", 6684 },	-- Snufflenose Command Stick
 							},
-							["cr"] = 4781,	-- Snufflenose Gopher
+							cr = 4781,	-- Snufflenose Gopher
 						}),
 						objective(2, {	-- 0/1 Crate With Holes
-							["providers"] = {
+							providers = {
 								{ "i", 5880 },	-- Crate With Holes
 								{ "o", 21277 },	-- Crate With Holes
 							},
-							["coord"] = { 62.3, 37.6, MAP.THE_BARRENS },
+							coord = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						objective(3, {	-- 0/1 Snufflenose Owner's Manual
-							["providers"] = {
+							providers = {
 								{ "i", 5897 },	-- Snufflenose Owner's Manual
 								{ "o", 21530 },	-- Snufflenose Owner's Manual
 							},
-							["coord"] = { 62.3, 37.6, MAP.THE_BARRENS },
+							coord = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						objective(4, {	-- 0/1 Snufflenose Command Stick
-							["providers"] = {
+							providers = {
 								{ "i", 6684 },	-- Snufflenose Command Stick
 								{ "o", 68865 },	-- Snufflenose Command Stick
 							},
-							["coord"] = { 62.3, 37.6, MAP.THE_BARRENS },
+							coord = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						i(6755, {	-- A Small Container of Gems
 							i(6756),	-- Jewelry Box
@@ -73,47 +73,47 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(1109, {	-- Going, Going, Guano!
-					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
-					["coord"] = { 49.0, 69.8, MAP.UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-					["groups"] = {
+					qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
+					coord = { 49.0, 69.8, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					lvl = 30,
+					groups = {
 						objective(1, {	-- 0/1 Kraul Guano
-							["provider"] = { "i", 5801 },	-- Kraul Guano
+							provider = { "i", 5801 },	-- Kraul Guano
 						}),
 					},
 				}),
 				q(1100, {	-- Lonebrow's Journal
-					["provider"] = { "o", 19861 },	-- Henrig Lonebrow's Journal
-					["qs"] = 5791,	-- Henrig Lonebrow's Journal (QS!)
-					["qi"] = 5790,	-- Henrig Lonebrow's Journal (PQI!)
-					["coord"] = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 29,
+					provider = { "o", 19861 },	-- Henrig Lonebrow's Journal
+					qs = 5791,	-- Henrig Lonebrow's Journal (QS!)
+					qi = 5790,	-- Henrig Lonebrow's Journal (PQI!)
+					coord = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
+					races = ALLIANCE_ONLY,
+					lvl = 29,
 				}),
 				q(1142, {	-- Mortality Wanes
-					["qg"] = 4510,	-- Heralath Fallowbrook
-					["coord"] = { 69.4, 67.6, MAP.DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-					["groups"] = {
+					qg = 4510,	-- Heralath Fallowbrook
+					coord = { 69.4, 67.6, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					lvl = 25,
+					groups = {
 						objective(1, {	-- 0/1 Treshala's Pendant
-							["provider"] = { "i", 5825 },	-- Treshala's Pendant
-							["description"] = "Drops from any creature in the Dungeon.",
+							provider = { "i", 5825 },	-- Treshala's Pendant
+							description = "Drops from any creature in the Dungeon.",
 						}),
 						i(6751),	-- Mourning Shawl
 						i(6752),	-- Lancer Boots
 					},
 				}),
 				q(1101, {	-- The Crone of the Kraul
-					["sourceQuest"] = 1100,	-- Lonebrow's Journal
-					["qg"] = 4048,	-- Falfindel Waywarder
-					["coord"] = { 89.6, 46.6, MAP.FERALAS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 29,
-					["groups"] = {
+					sourceQuest = 1100,	-- Lonebrow's Journal
+					qg = 4048,	-- Falfindel Waywarder
+					coord = { 89.6, 46.6, MAP.FERALAS },
+					races = ALLIANCE_ONLY,
+					lvl = 29,
+					groups = {
 						objective(1, {	-- 0/1 Razorflank's Medallion
-							["provider"] = { "i", 5792 },	-- Razorflank's Medallion
+							provider = { "i", 5792 },	-- Razorflank's Medallion
 						}),
 						i(6725),	-- Marbled Buckler
 						i(4197),	-- Berylline Pads
@@ -122,9 +122,9 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(1144, {	-- Willix the Importer
-					["qg"] = 4508,	-- Willix the Importer
-					["lvl"] = 22,
-					["groups"] = {
+					qg = 4508,	-- Willix the Importer
+					lvl = 22,
+					groups = {
 						i(6748),	-- Monkey Ring
 						i(6750),	-- Snake Hoop
 						i(6749),	-- Tiger Band
@@ -133,14 +133,14 @@ root(ROOTS.Instances, {
 			}),
 			n(ZONE_DROPS, {
 				i(3172, {	-- Boar Intestines
-					["crs"] = {
+					crs = {
 						4512,	-- Rotting Agam'ar
 						4514,	-- Raging Agam'ar
 						4511,	-- Agam'ar
 					},
 				}),
 				i(5801, {	-- Kraul Guano
-					["crs"] = {
+					crs = {
 						4539,	-- Greater Kraul Bat
 						4538,	-- Kraul Bat
 					},
@@ -155,13 +155,13 @@ root(ROOTS.Instances, {
 				i(1727),	-- Sword of Decay
 				i(776),	-- Vendetta
 				i(3569, {	-- Vicar's Robe
-					["cr"] = 4517,	-- Death's Head Priest
+					cr = 4517,	-- Death's Head Priest
 				}),
 				i(1978),	-- Wolfclaw Gloves
 			}),
 			n(6168, {	-- Roogug
-				["description"] = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
-				["groups"] = {
+				description = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
+				groups = {
 					i(274155, {	-- Geomancer Headdress
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
@@ -193,15 +193,15 @@ root(ROOTS.Instances, {
 				i(6686),	-- Tusken Helm
 			}),
 			n(4842, {	-- Earthcaller Halmgar
-				["description"] = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
-				["groups"] = {
+				description = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
+				groups = {
 					i(6689),	-- Wind Spirit Staff
 					i(6688),	-- Whisperwind Headdress
 				},
 			}),
 			n(4425, {	-- Blind Hunter
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
-				["groups"] = {
+				description = "This is a Rare Creature and, as such, is not always present.",
+				groups = {
 					i(6696),	-- Nightstalker Bow
 					i(6695),	-- Stygian Bone Amulet
 					i(6697),	-- Batwing Mantle
@@ -215,8 +215,8 @@ root(ROOTS.Instances, {
 				i(6690),	-- Ferine Leggings
 			}),
 			e(901, {	-- Charlga Razorflank
-				["creatureID"] = 4421,	-- Charlga Razorflank
-				["groups"] = {
+				creatureID = 4421,	-- Charlga Razorflank
+				groups = {
 					i(5793),	-- Razorflank's Heart
 					i(5792),	-- Razorflank's Medallion
 					i(17008),	-- Small Scroll
