@@ -26,16 +26,16 @@ root(ROOTS.Holidays, {
 			tw = "季節性魚類：夏日鱸魚",
 		},
 	}), {
-		["maps"] = {
+		maps = {
 			MAP.AZSHARA,
 			MAP.TANARIS,
 			MAP.THE_HINTERLANDS,
 			MAP.FERALAS,
 			MAP.STRANGLETHORN_VALE,
 		},
-		["groups"] = {
+		groups = {
 			i(13756, {	-- Raw Summer Bass
-				["description"] = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",
+				description = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 20th March to 22nd September.",
 			}),
 		},
 	})),
@@ -62,16 +62,16 @@ root(ROOTS.Holidays, {
 			tw = "季節性魚類：冬魷魚",
 		},
 	}), {
-		["maps"] = {
+		maps = {
 			MAP.AZSHARA,
 			MAP.TANARIS,
 			MAP.THE_HINTERLANDS,
 			MAP.FERALAS,
 			MAP.STRANGLETHORN_VALE,
 		},
-		["groups"] = {
+		groups = {
 			i(13755, {	-- Winter Squid
-				["description"] = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",
+				description = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",
 			}),
 		},
 	})),
