@@ -693,6 +693,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(99073, {	-- Easing Suffering
+				["sourceQuest"] = 99050,	-- The Great Tree Provides
 				["qg"] = 6094,	-- Byancie
 				["qi"] = 286069,	-- Lashwater Salve
 				["coord"] = { 55.2, 56.8, MAP.TELDRASSIL },
@@ -929,7 +930,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				["qg"] = 3608,	-- Aldia
 				["coord"] = { 55.4, 57.2, MAP.TELDRASSIL },
 				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = { NIGHTELF, SKYBORNE_ALLIANCE },
+				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 4,
 				["groups"] = {
 					objective(1, {	-- 0/6 Soft Nightsaber Pelt
