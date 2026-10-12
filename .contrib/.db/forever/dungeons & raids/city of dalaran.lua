@@ -33,7 +33,7 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Fel Infused Blossom
-							["provider"] = { "i", 251983 },	-- Fel Infused Blossom
+							provider = { "i", 251983 },	-- Fel Infused Blossom
 						}),
 						i(279835),	-- Vine Pruner's Cloak
 						i(279836),	-- Thorn Protecting Girdle
@@ -79,8 +79,8 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
-							["provider"] = { "i", 251961 },	-- Arcane Mote
-							["cr"] = 246020,	-- Shade of the Archmage
+							provider = { "i", 251961 },	-- Arcane Mote
+							cr = 246020,	-- Shade of the Archmage
 						}),
 						i(279839),	-- Spellguard Pauldrons
 						i(279840),	-- Renewing Footpads
@@ -97,8 +97,8 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
-							["provider"] = { "i", 251961 },	-- Arcane Mote
-							["cr"] = 246020,	-- Shade of the Archmage
+							provider = { "i", 251961 },	-- Arcane Mote
+							cr = 246020,	-- Shade of the Archmage
 						}),
 						i(279842),	-- Battle Spaulders
 						i(279843),	-- Enchanted Sandals
@@ -114,7 +114,7 @@ root(ROOTS.Instances, {
 					lvl = 30,
 					groups = {
 						objective(1, {	-- 0/1 Grimy Key
-							["provider"] = { "i", 279469 },	-- Grimy Key
+							provider = { "i", 279469 },	-- Grimy Key
 						}),
 					},
 				}),
@@ -125,7 +125,7 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 The Founding of Dalaran
-							["provider"] = { "i", 275996 },	-- The Founding of Dalaran
+							provider = { "i", 275996 },	-- The Founding of Dalaran
 						}),
 						i(279845),	-- Solid Gold Band
 						i(279846),	-- Larcenist's Belt
@@ -138,7 +138,7 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Mana Elemental slain
-							["provider"] = { "n", 246016 },	-- Mana Elemental
+							provider = { "n", 246016 },	-- Mana Elemental
 						}),
 						i(251962),	-- Violet Sash
 						i(279849),	-- Runebound Gloves
@@ -161,8 +161,8 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/6 Cracked Sentry Core
-							["provider"] = { "i", 275997 },	-- Cracked Sentry Core
-							["cr"] = 246664,	-- Fragmented Sentry
+							provider = { "i", 275997 },	-- Cracked Sentry Core
+							cr = 246664,	-- Fragmented Sentry
 						}),
 						i(279847),	-- Unstable Power Core
 						i(279848),	-- Construct Cloak
@@ -177,13 +177,13 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/8 Seeking Remnant slain
-							["provider"] = { "n", 247003 },	-- Seeking Remnant
+							provider = { "n", 247003 },	-- Seeking Remnant
 						}),
 						objective(2, {	-- 0/8 Saturated Remnant slain
-							["provider"] = { "n", 247001 },	-- Saturated Remnant
+							provider = { "n", 247001 },	-- Saturated Remnant
 						}),
 						objective(3, {	-- 0/8 Mana Echo slain
-							["provider"] = { "n", 246600 },	-- Mana Echo
+							provider = { "n", 246600 },	-- Mana Echo
 						}),
 						i(279837),	-- Fallen Guard's Pendant
 						i(279838),	-- Arcane Infused Rod
@@ -197,7 +197,7 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Atrexis the Grave Knight slain
-							["provider"] = { "n", 247126 },	-- Atrexis the Grave Knight
+							provider = { "n", 247126 },	-- Atrexis the Grave Knight
 						}),
 						i(251963),	-- Gravewalker Boots
 						i(251965),	-- Undead Knight's Bracers
