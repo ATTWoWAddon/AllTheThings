@@ -885,8 +885,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 10,
 				groups = {
 					{
-						["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
-						["rank"] = 1,
+						recipeID = 13908,	-- Desperate Prayer (Rank 1)
+						rank = 1,
 					},
 				},
 			}),
@@ -998,7 +998,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					i(1191, {	-- Bag of Marbles
-						["description"] = "One of the single best PvE defensive cooldowns. Choose your targets wisely... Save for Patchwerk!",
+						description = "One of the single best PvE defensive cooldowns. Choose your targets wisely... Save for Patchwerk!",
 					}),
 				},
 			}),
@@ -1163,8 +1163,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 10,
 				groups = {
 					{
-						["recipeID"] = 10797,	-- Starshards (Rank 1)
-						["rank"] = 1,
+						recipeID = 10797,	-- Starshards (Rank 1)
+						rank = 1,
 					},
 				},
 			}),
@@ -1692,7 +1692,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			i(778, {	-- Kobold Excavation Pick
-				["cr"] = 476,	-- Kobold Geomancer
+				cr = 476,	-- Kobold Geomancer
 			}),
 			i(1389, {	-- Kobold Mining Mallet
 				coords = {
@@ -1700,7 +1700,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					{ 64.6, 56.4, MAP.ELWYNN_FOREST },
 					{ 41.6, 80.0, MAP.ELWYNN_FOREST },
 				},
-				["cr"] = 40,	-- Kobold Miner
+				cr = 40,	-- Kobold Miner
 			}),
 			i(1195, {	-- Kobold Mining Shovel
 				coords = {
@@ -1708,10 +1708,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					{ 40.0, 83.8, MAP.ELWYNN_FOREST },
 					{ 38.0, 87.0, MAP.ELWYNN_FOREST },
 				},
-				["cr"] = 475,	-- Kobold Tunneler
+				cr = 475,	-- Kobold Tunneler
 			}),
 			i(1399, {	-- Magic Candle
-				["cr"] = 476,	-- Kobold Geomancer
+				cr = 476,	-- Kobold Geomancer
 			}),
 			i(781, {	-- Stone Gnoll Hammer
 				coords = {
@@ -1726,7 +1726,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			i(1972, {	-- Westfall Deed (QS!)
-				["crs"] = {
+				crs = {
 					116,	-- Defias Bandit
 					6866,	-- Defias Bodyguard
 					6846,	-- Defias Dockmaster
