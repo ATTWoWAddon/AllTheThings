@@ -479,8 +479,8 @@ else
 end
 
 -- Determine the player's name and class information.
-local name, realm = UnitName("player");
-if not realm then realm = GetRealmName(); end
+local name = GetUnitName("player");
+local realm = GetRealmName();
 local className, classFile, classID = UnitClass("player");
 local classColorPrefix = "|c".. (RAID_CLASS_COLORS[classFile].colorStr or "ff1eff00");
 app.Me = classColorPrefix .. name .. "-" .. realm .. "|r";

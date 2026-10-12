@@ -10,7 +10,8 @@ local GetPatchString = app.Modules.Color.GetPatchString;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
 local wipearray = app.wipearray
-local GetRealmName = GetRealmName
+local GetRealmName = GetRealmName;
+local GetNormalizedRealmName = GetNormalizedRealmName;
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
@@ -234,15 +235,72 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 local knownBy = {};
+--- Left and right text, color, and wrapping options for one appended tooltip row.
+--- Used by collection information processors and synchronization queue tooltips.
+---@class ATTTooltipLine
+---@field left? string Left-column text.
+---@field right? string Right-column text.
+---@field color? string Eight-digit ARGB hexadecimal color.
+---@field wrap? boolean Whether the left text wraps.
+---@field r? number Red color component.
+---@field g? number Green color component.
+---@field b? number Blue color component.
+---@field a? number Alpha color component.
+
+--- Collection type, ID, character cache, and tracking flags supplied to KnownBy.
+--- Selects which saved collection records the character-list processor consults.
+---@class ATTKnownByReference
+---@field knownByID? number Collection ID overriding the spell ID.
+---@field spellID? SpellID Spell to find in character collection caches.
+---@field key? string Primary field identifying the collection type.
+---@field __type? string ATT object type used for account-wide filtering.
+---@field perCharacter? boolean Whether this thing is tracked per character.
+---@field CACHE? string Saved character cache containing this collection.
+
+--- Identifier, localized label, and display priority for a registered information type.
+--- Used by the Interface Information page to configure and order tooltip information.
+---@class ATTInformationType
+---@field informationTypeID string Registered information type identifier.
+---@field text? string Localized label for the information type.
+---@field priority? number Display sort order.
+
+--- Shortens local realm suffixes in saved UI text while preserving colors and quantities.
+---@param character ATTCharacterIdentity? Saved UI text and actual realm to format; nil yields "???".
+---@param realmName string Exact local realm name returned by GetRealmName.
+---@param normalizedRealmName string Normalized local realm name returned by GetNormalizedRealmName.
+---@return string displayName Saved UI text with a matching local realm suffix omitted.
+local function GetCharacterDisplayName(character, realmName, normalizedRealmName)
+	if not character then return "???"; end
+	local text = character.text or "???";
+	local realm = character.realm;
+	if not realm or realm == "" or (realm ~= realmName and realm ~= normalizedRealmName) then return text; end
+	local ending = text:match(" %(x%d+%)$") or "";
+	local display = text:sub(1, #text - #ending);
+	if display:sub(-2) == "|r" then
+		display = display:sub(1, -3);
+		ending = "|r" .. ending;
+	end
+	-- Compare suffixes literally so spaces and realm punctuation retain their meaning.
+	local suffix = "-" .. realmName;
+	if display:sub(-#suffix) ~= suffix then suffix = "-" .. normalizedRealmName; end
+	if suffix ~= "-" and display:sub(-#suffix) == suffix then
+		return display:sub(1, -#suffix - 1) .. ending;
+	end
+	return text;
+end
+--- Appends cached character names to the tooltip using the supplied format.
+---@param tooltipInfo ATTTooltipLine[] Mutable array receiving appended tooltip lines.
+---@param kind string? Localized format with %s for the character list; nil skips output.
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
 	if #knownBy > 0 and kind then
 		app.Sort(knownBy, app.SortDefaults.name);
 		local desc = "";
+		local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
 		for i,character in ipairs(knownBy) do
 			if i > 1 then desc = desc .. ", "; end
-			desc = desc .. (character.text or "???");
+			desc = desc .. GetCharacterDisplayName(character, realmName, normalizedRealmName);
 		end
-		tinsert(tooltipInfo, { left = kind:format(desc:gsub("-" .. GetRealmName(), "")), wrap = true, color = app.Colors.TooltipDescription });
+		tinsert(tooltipInfo, { left = kind:format(desc), wrap = true, color = app.Colors.TooltipDescription });
 		wipearray(knownBy);
 	end
 end
@@ -379,6 +437,10 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		end
 	end
 end
+--- Adds known-character entries and Classic profession ranks to the tooltip.
+---@param t ATTInformationType? Information type descriptor (unused).
+---@param reference ATTKnownByReference Collection, spell, and cache fields used to find known characters.
+---@param tooltipInfo ATTTooltipLine[] Mutable array receiving appended tooltip lines.
 local function ProcessForKnownBy(t, reference, tooltipInfo)
 	-- This is to show which characters have this profession.
 	local id = reference.knownByID or reference.spellID
@@ -398,11 +460,12 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 					left = L.KNOWN_BY:format(""),
 					color = app.Colors.TooltipDescription,
 				});
+				local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
 					tinsert(tooltipInfo, {
 						---@diagnostic disable-next-line: undefined-field
-						left = ("  " .. (character and character.text or "???"):gsub("-" .. GetRealmName(), "")),
+						left = "  " .. GetCharacterDisplayName(character, realmName, normalizedRealmName),
 						right = data[2] .. " / " .. data[3],
 					});
 				end

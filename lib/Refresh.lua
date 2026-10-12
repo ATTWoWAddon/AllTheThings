@@ -101,6 +101,15 @@ app.AddEventHandler("OnAfterSavedVariablesAvailable", function()
 end)
 end
 
+--- Clears saved identifiers derived before complete character names were preserved.
+-- TODO: Remove after Forever's official launch once legacy identifiers are rebuilt.
+---@type fun()
+OneTimeFixFunctions.ResetSavedCharacterIdentifiers = function()
+	---@type table<string, ATTAccountCharacter>
+	local characterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true)
+	for _,character in pairs(characterData) do character.Identifier = nil; end
+end
+
 -- ref. 1 represents account-wide completion, so all old data needs to be wiped initially to allow proper re-caching
 OneTimeFixFunctions.PreATT5_0_14AWQuests = function(currentCharacter, accountWideData)
 	local quests = accountWideData.Quests
