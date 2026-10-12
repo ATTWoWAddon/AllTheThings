@@ -335,12 +335,13 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			q(833, {	-- A Sacred Burial
 				qg = 3233,	-- Lorekeeper Raintotem
-				coord = { 59.8, 25.6, MAP.MULGORE },
+				coord = { 57.0, 34.6, MAP.MULGORE },
 				races = HORDE_ONLY,
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/8 Bristleback Interloper slain
 						provider = { "n", 3232 },	-- Bristleback Interloper
+						coord = { 58.8, 29.8, MAP.MULGORE },
 					}),
 				},
 			}),
