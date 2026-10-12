@@ -5,12 +5,12 @@
 root(ROOTS.Instances, {
 	inst(2999, {	-- Ruins of Lordaeron
 		-- ["lore"] = "",
-		["icon"] = [[~_.asset("ruinsoflordaeron")]],
+		icon = [[~_.asset("ruinsoflordaeron")]],
 		["zone-text-areaID"] = 16611,	-- Ruins of Lordaeron
-		["coord"] = { 50.0, 50.0, MAP.TIRISFAL_GLADES },
-		["timeline"] = { TIMELINE.ADDED_1_60_1 },
-		["lvl"] = 15,
-		["groups"] = {
+		coord = { 50.0, 50.0, MAP.TIRISFAL_GLADES },
+		timeline = { TIMELINE.ADDED_1_60_1 },
+		lvl = 15,
+		groups = {
 			n(QUESTS, {
 				q(92401, {	-- A Frightened Request
 					qg = 250686,	-- Tabitha Heartweaver
