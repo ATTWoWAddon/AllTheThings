@@ -30,7 +30,7 @@ root(ROOTS.PVP, {
 				i(23453),	-- Grand Marshal's Tome of Restoration
 				i(23454),	-- Grand Marshal's Warhammer
 			}),
-			cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
+			cl(DRUID, bubbleDownSelf({ classes = { DRUID } }, {
 				-- Epic set
 				i(16451),	-- Field Marshal's Dragonhide Helmet
 				i(16449),	-- Field Marshal's Dragonhide Spaulders
@@ -46,7 +46,7 @@ root(ROOTS.PVP, {
 				i(23295),	-- Knight-Captain's Dragonhide Leggings
 				i(23281),	-- Knight-Lieutenant's Dragonhide Treads
 			}));
-			cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
+			cl(HUNTER, bubbleDownSelf({ classes = { HUNTER } }, {
 				-- Epic set
 				i(16465),	-- Field Marshal's Chain Helm
 				i(16468),	-- Field Marshal's Chain Spaulders
@@ -62,7 +62,7 @@ root(ROOTS.PVP, {
 				i(23293),	-- Knight-Captain's Chain Legguards
 				i(23278),	-- Knight-Lieutenant's Chain Greaves
 			})),
-			cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
+			cl(MAGE, bubbleDownSelf({ classes = { MAGE } }, {
 				-- Epic set
 				i(16441),	-- Field Marshal's Coronet
 				i(16444),	-- Field Marshal's Silk Spaulders
@@ -78,7 +78,7 @@ root(ROOTS.PVP, {
 				i(23304),	-- Knight-Captain's Silk Legguards
 				i(23291),	-- Knight-Lieutenant's Silk Walkers
 			}));
-			cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
+			cl(PALADIN, bubbleDownSelf({ classes = { PALADIN } }, {
 				-- Epic set
 				i(16474),	-- Field Marshal's Lamellar Faceguard
 				i(16476),	-- Field Marshal's Lamellar Pauldrons
@@ -94,7 +94,7 @@ root(ROOTS.PVP, {
 				i(23273),	-- Knight-Captain's Lamellar Leggings
 				i(23275),	-- Knight-Lieutenant's Lamellar Sabatons
 			}));
-			cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
+			cl(PRIEST, bubbleDownSelf({ classes = { PRIEST } }, {
 				-- Epic set
 				i(17602),	-- Field Marshal's Headdress
 				i(17604),	-- Field Marshal's Satin Mantle
@@ -110,7 +110,7 @@ root(ROOTS.PVP, {
 				i(23302),	-- Knight-Captain's Satin Legguards
 				i(23289),	-- Knight-Lieutenant's Satin Walkers
 			}));
-			cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
+			cl(ROGUE, bubbleDownSelf({ classes = { ROGUE } }, {
 				-- Epic set
 				i(16455),	-- Field Marshal's Leather Mask
 				i(16457),	-- Field Marshal's Leather Epaulets
@@ -126,7 +126,7 @@ root(ROOTS.PVP, {
 				i(23299),	-- Knight-Captain's Leather Legguards
 				i(23285),	-- Knight-Lieutenant's Leather Walkers
 			})),
-			cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
+			cl(SHAMAN, bubbleDownSelf({ classes = { SHAMAN } }, {
 				-- Epic set
 				i(29610),	-- Field Marshal's Mail Helm
 				i(29611),	-- Field Marshal's Mail Spaulders
@@ -142,7 +142,7 @@ root(ROOTS.PVP, {
 				i(29597),	-- Knight-Captain's Mail Legguards
 				i(29594),	-- Knight-Lieutenant's Mail Greaves
 			}));
-			cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
+			cl(WARLOCK, bubbleDownSelf({ classes = { WARLOCK } }, {
 				-- Epic set
 				i(17578),	-- Field Marshal's Coronal
 				i(17580),	-- Field Marshal's Dreadweave Shoulders
@@ -158,7 +158,7 @@ root(ROOTS.PVP, {
 				i(23296),	-- Knight-Captain's Dreadweave Legguards
 				i(23283),	-- Knight-Lieutenant's Dreadweave Walkers
 			}));
-			cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
+			cl(WARRIOR, bubbleDownSelf({ classes = { WARRIOR } }, {
 				-- Epic set
 				i(16478),	-- Field Marshal's Plate Helm
 				i(16480),	-- Field Marshal's Plate Shoulderguards
@@ -182,34 +182,34 @@ root(ROOTS.PVP, {
 
 			-- Wrist
 			i(18448, {	-- Sergeant Major's Chain Armguards (58)
-				["classes"] = { HUNTER, SHAMAN },
+				classes = { HUNTER, SHAMAN },
 			}),
 			i(18449, {	-- Sergeant Major's Chain Armguards (45)
-				["classes"] = { HUNTER, SHAMAN },
+				classes = { HUNTER, SHAMAN },
 			}),
 			i(18454, {	-- Sergeant Major's Dragonhide Armsplints (58)
-				["classes"] = { DRUID },
+				classes = { DRUID },
 			}),
 			i(18455, {	-- Sergeant Major's Dragonhide Armsplints (45)
-				["classes"] = { DRUID },
+				classes = { DRUID },
 			}),
 			i(18452, {	-- Sergeant Major's Leather  (58)
-				["classes"] = { ROGUE },
+				classes = { ROGUE },
 			}),
 			i(18453, {	-- Sergeant Major's Leather Armsplints (45)
-				["classes"] = { ROGUE },
+				classes = { ROGUE },
 			}),
 			i(18445, {	-- Sergeant Major's Plate Wristguards (58)
-				["classes"] = { PALADIN, WARRIOR },
+				classes = { PALADIN, WARRIOR },
 			}),
 			i(18447, {	-- Sergeant Major's Plate Wristguards (45)
-				["classes"] = { PALADIN, WARRIOR },
+				classes = { PALADIN, WARRIOR },
 			}),
 			i(18456, {	-- Sergeant Major's Silk Cuffs (58)
-				["classes"] = { MAGE, PRIEST, WARLOCK },
+				classes = { MAGE, PRIEST, WARLOCK },
 			}),
 			i(18457, {	-- Sergeant Major's Silk Cuffs (45)
-				["classes"] = { MAGE, PRIEST, WARLOCK },
+				classes = { MAGE, PRIEST, WARLOCK },
 			}),
 
 			-- Necks
@@ -218,14 +218,14 @@ root(ROOTS.PVP, {
 			i(18442),	-- Master Sergeant's Insignia (30)
 
 			-- Trinkets
-			i(18863, { ["classes"] = { DRUID }   }),	-- Insignia of the Alliance
-			i(18856, { ["classes"] = { HUNTER }  }),	-- Insignia of the Alliance
-			i(18859, { ["classes"] = { MAGE }    }),	-- Insignia of the Alliance
-			i(18864, { ["classes"] = { PALADIN } }),	-- Insignia of the Alliance
-			i(18862, { ["classes"] = { PRIEST }  }),	-- Insignia of the Alliance
-			i(18857, { ["classes"] = { ROGUE }   }),	-- Insignia of the Alliance
-			i(18858, { ["classes"] = { WARLOCK } }),	-- Insignia of the Alliance
-			i(18854, { ["classes"] = { WARRIOR } }),	-- Insignia of the Alliance
+			i(18863, { classes = { DRUID }   }),	-- Insignia of the Alliance
+			i(18856, { classes = { HUNTER }  }),	-- Insignia of the Alliance
+			i(18859, { classes = { MAGE }    }),	-- Insignia of the Alliance
+			i(18864, { classes = { PALADIN } }),	-- Insignia of the Alliance
+			i(18862, { classes = { PRIEST }  }),	-- Insignia of the Alliance
+			i(18857, { classes = { ROGUE }   }),	-- Insignia of the Alliance
+			i(18858, { classes = { WARLOCK } }),	-- Insignia of the Alliance
+			i(18854, { classes = { WARRIOR } }),	-- Insignia of the Alliance
 		},
 	}),
 	n(FACTION_HEADER_HORDE, {
@@ -255,7 +255,7 @@ root(ROOTS.PVP, {
 				i(23469),	-- High Warlord's Tome of Mending
 				i(18874),	-- High Warlord's War Staff
 			}),
-			cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
+			cl(DRUID, bubbleDownSelf({ classes = { DRUID } }, {
 				-- Epic set
 				i(16550),	-- Warlord's Dragonhide Helmet
 				i(16551),	-- Warlord's Dragonhide Epaulets
@@ -271,7 +271,7 @@ root(ROOTS.PVP, {
 				i(22878),	-- Legionnaire's Dragonhide Leggings
 				i(22852),	-- Blood Guard's Dragonhide Treads
 			}));
-			cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
+			cl(HUNTER, bubbleDownSelf({ classes = { HUNTER } }, {
 				-- Epic set
 				i(16566),	-- Warlord's Chain Helmet
 				i(16568),	-- Warlord's Chain Shoulders
@@ -287,7 +287,7 @@ root(ROOTS.PVP, {
 				i(22875),	-- Legionnaire's Chain Legguards
 				i(22843),	-- Blood Guard's Chain Greaves
 			})),
-			cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
+			cl(MAGE, bubbleDownSelf({ classes = { MAGE } }, {
 				-- Epic set
 				i(16533),	-- Warlord's Silk Cowl
 				i(16536),	-- Warlord's Silk Amice
@@ -303,7 +303,7 @@ root(ROOTS.PVP, {
 				i(22883),	-- Legionnaire's Silk Legguards
 				i(22860),	-- Blood Guard's Silk Walkers
 			}));
-			cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
+			cl(PALADIN, bubbleDownSelf({ classes = { PALADIN } }, {
 				-- Epic set
 				i(29616),	-- Warlord's Lamellar Faceguard
 				i(29617),	-- Warlord's Lamellar Pauldrons
@@ -319,7 +319,7 @@ root(ROOTS.PVP, {
 				i(29603),	-- Legionnaire's Lamellar Leggings
 				i(29601),	-- Blood Guard's Lamellar Sabatons
 			})),
-			cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
+			cl(PRIEST, bubbleDownSelf({ classes = { PRIEST } }, {
 				-- Epic set
 				i(17623),	-- Warlord's Satin Cowl
 				i(17622),	-- Warlord's Satin Mantle
@@ -335,7 +335,7 @@ root(ROOTS.PVP, {
 				i(22882),	-- Legionnaire's Satin Legguards
 				i(22859),	-- Blood Guard's Satin Walkers
 			}));
-			cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
+			cl(ROGUE, bubbleDownSelf({ classes = { ROGUE } }, {
 				-- Epic set
 				i(16561),	-- Warlord's Leather Helm
 				i(16562),	-- Warlord's Leather Spaulders
@@ -351,7 +351,7 @@ root(ROOTS.PVP, {
 				i(22880),	-- Legionnaire's Leather Legguards
 				i(22856),	-- Blood Guard's Leather Walkers
 			})),
-			cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
+			cl(SHAMAN, bubbleDownSelf({ classes = { SHAMAN } }, {
 				-- Epic set
 				i(16578),	-- Warlord's Mail Helm
 				i(16580),	-- Warlord's Mail Spaulders
@@ -367,7 +367,7 @@ root(ROOTS.PVP, {
 				i(22887),	-- Legionnaire's Mail Legguards
 				i(22857),	-- Blood Guard's Mail Greaves
 			}));
-			cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
+			cl(WARLOCK, bubbleDownSelf({ classes = { WARLOCK } }, {
 				-- Epic set
 				i(17591),	-- Warlord's Dreadweave Hood
 				i(17590),	-- Warlord's Dreadweave Mantle
@@ -383,7 +383,7 @@ root(ROOTS.PVP, {
 				i(22881),	-- Legionnaire's Dreadweave Legguards
 				i(22855),	-- Blood Guard's Dreadweave Walkers
 			}));
-			cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
+			cl(WARRIOR, bubbleDownSelf({ classes = { WARRIOR } }, {
 				-- Epic set
 				i(16542),	-- Warlord's Plate Headpiece
 				i(16544),	-- Warlord's Plate Shoulders
@@ -406,16 +406,16 @@ root(ROOTS.PVP, {
 			i(18427),	-- Sergeant's Cloak (30)
 
 			-- Wrist
-			i(18434, { ["classes"] = { DRUID }					}),	-- First Sergeant's Dragonhide Armguards (58)
-			i(18436, { ["classes"] = { DRUID }					}),	-- First Sergeant's Dragonhide Armguards (45)
-			i(16497, { ["classes"] = { ROGUE }					}),	-- First Sergeant's Leather Armguards (58)
-			i(18435, { ["classes"] = { ROGUE }					}),	-- First Sergeant's Leather Armguards (45)
-			i(16532, { ["classes"] = { HUNTER, SHAMAN }			}),	-- First Sergeant's Mail Wristguards (58)
-			i(18432, { ["classes"] = { HUNTER, SHAMAN }			}),	-- First Sergeant's Mail Wristguards (45)
-			i(18429, { ["classes"] = { PALADIN, WARRIOR }		}),	-- First Sergeant's Plate Bracers (58)
-			i(18430, { ["classes"] = { PALADIN, WARRIOR }		}),	-- First Sergeant's Plate Bracers (45)
-			i(16486, { ["classes"] = { MAGE, PRIEST, WARLOCK }	}),	-- First Sergeant's Silk Cuffs (58)
-			i(18437, { ["classes"] = { MAGE, PRIEST, WARLOCK }	}),	-- First Sergeant's Silk Cuffs (45)
+			i(18434, { classes = { DRUID }					}),	-- First Sergeant's Dragonhide Armguards (58)
+			i(18436, { classes = { DRUID }					}),	-- First Sergeant's Dragonhide Armguards (45)
+			i(16497, { classes = { ROGUE }					}),	-- First Sergeant's Leather Armguards (58)
+			i(18435, { classes = { ROGUE }					}),	-- First Sergeant's Leather Armguards (45)
+			i(16532, { classes = { HUNTER, SHAMAN }			}),	-- First Sergeant's Mail Wristguards (58)
+			i(18432, { classes = { HUNTER, SHAMAN }			}),	-- First Sergeant's Mail Wristguards (45)
+			i(18429, { classes = { PALADIN, WARRIOR }		}),	-- First Sergeant's Plate Bracers (58)
+			i(18430, { classes = { PALADIN, WARRIOR }		}),	-- First Sergeant's Plate Bracers (45)
+			i(16486, { classes = { MAGE, PRIEST, WARLOCK }	}),	-- First Sergeant's Silk Cuffs (58)
+			i(18437, { classes = { MAGE, PRIEST, WARLOCK }	}),	-- First Sergeant's Silk Cuffs (45)
 
 			-- Necks
 			i(16335),	-- Senior Sergeant's Insignia (58)
@@ -423,14 +423,14 @@ root(ROOTS.PVP, {
 			i(15200),	-- Senior Sergeant's Insignia (30)
 
 			-- Trinkets
-			i(18853, { ["classes"] = { DRUID }	}),	-- Insignia of the Horde
-			i(18846, { ["classes"] = { HUNTER }	}),	-- Insignia of the Horde
-			i(18850, { ["classes"] = { MAGE }	}),	-- Insignia of the Horde
-			i(18851, { ["classes"] = { PRIEST }	}),	-- Insignia of the Horde
-			i(18849, { ["classes"] = { ROGUE }	}),	-- Insignia of the Horde
-			i(18845, { ["classes"] = { SHAMAN }	}),	-- Insignia of the Horde
-			i(18852, { ["classes"] = { WARLOCK }	}),	-- Insignia of the Horde
-			i(18834, { ["classes"] = { WARRIOR }	}),	-- Insignia of the Horde
+			i(18853, { classes = { DRUID }	}),	-- Insignia of the Horde
+			i(18846, { classes = { HUNTER }	}),	-- Insignia of the Horde
+			i(18850, { classes = { MAGE }	}),	-- Insignia of the Horde
+			i(18851, { classes = { PRIEST }	}),	-- Insignia of the Horde
+			i(18849, { classes = { ROGUE }	}),	-- Insignia of the Horde
+			i(18845, { classes = { SHAMAN }	}),	-- Insignia of the Horde
+			i(18852, { classes = { WARLOCK }	}),	-- Insignia of the Horde
+			i(18834, { classes = { WARRIOR }	}),	-- Insignia of the Horde
 		},
 	}),
 });
