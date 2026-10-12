@@ -434,7 +434,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/5 Rethban Ore
-						["providers"] = {
+						providers = {
 							{ "i", 2798 },	-- Rethban Ore
 							{ "n", 580 },	-- Redridge Drudger
 							{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
@@ -722,10 +722,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 		}),
 		n(RARES, {
 			n(14273, {	-- Boulderheart
-				["coord"] = { 88.8, 67.0, MAP.REDRIDGE_MOUNTAINS },
+				coord = { 88.8, 67.0, MAP.REDRIDGE_MOUNTAINS },
 			}),
 			n(616, {	-- Chatter
-				["coords"] = {
+				coords = {
 					{ 51.2, 37.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 56.0, 41.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 58.6, 41.0, MAP.REDRIDGE_MOUNTAINS },
@@ -733,25 +733,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 53.6, 48.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 49.2, 41.8, MAP.REDRIDGE_MOUNTAINS },
 				},
-				["groups"] = {
+				groups = {
 					i(3229),	-- Tarantula Silk Sash
 				},
 			}),
 			n(584, {	-- Kazon
-				["coords"] = {
+				coords = {
 					{ 33.0,  6.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 36.0,  8.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 36.6, 11.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 38.4, 13.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 42.4, 15.4, MAP.REDRIDGE_MOUNTAINS },
 				},
-				["groups"] = {
+				groups = {
 					i(3231),	-- Cutthroat Pauldrons
 					i(2058),	-- Kazon's Maul
 				},
 			}),
 			n(14271, {	-- Ribchaser
-				["coords"] = {
+				coords = {
 					{ 16.2, 60.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 14.0, 64.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 18.8, 64.8, MAP.REDRIDGE_MOUNTAINS },
@@ -762,7 +762,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			n(947, {	-- Rohh the Silent
-				["coords"] = {
+				coords = {
 					{ 76.0, 29.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 76.0, 34.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 73.0, 41.6, MAP.REDRIDGE_MOUNTAINS },
@@ -773,13 +773,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 83.2, 51.0, MAP.REDRIDGE_MOUNTAINS },
 					{ 83.4, 57.6, MAP.REDRIDGE_MOUNTAINS },
 				},
-				["groups"] = {
+				groups = {
 					i(4446),	-- Blackvenom Blade
 					i(4447),	-- Cloak of Night
 				},
 			}),
 			n(14269, {	-- Seeker Aqualon
-				["coords"] = {
+				coords = {
 					{ 46.2, 59.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 50.2, 61.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 28.2, 58.2, MAP.REDRIDGE_MOUNTAINS },
@@ -788,12 +788,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 75.8, 67.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 73.2, 71.2, MAP.REDRIDGE_MOUNTAINS },
 				},
-				["groups"] = {
+				groups = {
 					i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 				},
 			}),
 			n(14272, {	-- Snarlflare
-				["coords"] = {
+				coords = {
 					{ 36.4, 66.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 43.4, 30.0, MAP.REDRIDGE_MOUNTAINS },
 					{ 49.2, 33.0, MAP.REDRIDGE_MOUNTAINS },
@@ -801,7 +801,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			n(14270, {	-- Squiddic
-				["coords"] = {
+				coords = {
 					{ 42.8, 52.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 39.0, 60.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 46.0, 63.4, MAP.REDRIDGE_MOUNTAINS },
@@ -833,7 +833,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				["sym"] = {{"select","itemID",
+				sym = {{"select","itemID",
 					236,	-- Cured Leather Armor
 					1849,	-- Cured Leather Belt
 					238,	-- Cured Leather Boots
@@ -1488,68 +1488,68 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 		}),
 		n(ZONE_DROPS, {
 			i(1446, {	-- Blackrock Boots
-				["crs"] = {
+				crs = {
 					440,	-- Blackrock Grunt
 				},
-				["coords"] = {
+				coords = {
 					{ 41.4, 39.8, MAP.REDRIDGE_MOUNTAINS },	-- Blackrock Grunt
 					{ 62.0, 44.0, MAP.REDRIDGE_MOUNTAINS },	-- Blackrock Grunt
 					{ 74.8, 78.8, MAP.REDRIDGE_MOUNTAINS },	-- Blackrock Grunt
 				},
 			}),
 			i(1455, {	-- Blackrock Champion's Axe
-				["crs"] = {
+				crs = {
 					435,	-- Blackrock Champion
 					4464,	-- Blackrock Gladiator
 				},
-				["coords"] = {
+				coords = {
 					{ 35.6, 9.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 28.6, 14.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 69.6, 57.4, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1448, {	-- Blackrock Gauntlets
-				["crs"] = {
+				crs = {
 					4064,	-- Blackrock Scout
 					485,	-- Blackrock Outrunner
 				},
-				["coords"] = {
+				coords = {
 					{ 65.6, 48.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 67.0, 59.0, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1296, {	-- Blackrock Mace
-				["crs"] = {
+				crs = {
 					437,	-- Blackrock Renegade
 					4065,	-- Blackrock Sentry
 				},
-				["coords"] = {
+				coords = {
 					{ 78.6, 71.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 62.6, 45.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 46.0, 18.4, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1445, {	-- Blackrock Pauldrons
-				["coords"] = {
+				coords = {
 					{ 39.4, 14.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 35.4,  8.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 28.6, 14.4, MAP.REDRIDGE_MOUNTAINS },
 				},
-				["crs"] = {
+				crs = {
 					615,	-- Blackrock Tracker
 					4462,	-- Blackrock Hunter
 				},
 			}),
 			i(1287, {	-- Giant Tarantula Fang
-				["cr"] = 442,	-- Tarantula
-				["coords"] = {
+				cr = 442,	-- Tarantula
+				coords = {
 					{ 28.4, 78.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 15.2, 76.2, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1962, {	-- Glowing Shadowhide Pendant
-				["races"] = ALLIANCE_ONLY,
-				["crs"] = {
+				races = ALLIANCE_ONLY,
+				crs = {
 					703,	-- Lieutenant Fangore
 					434,	-- Rabid Shadowhide Gnoll
 					947,	-- Rohh the Silent
@@ -1563,18 +1563,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			i(723),	-- Goretusk Liver
 			i(1213, {	-- Gnoll Kindred Bracers
-				["cr"] = 712,	-- Redridge Thrasher
-				["coords"] = {
+				cr = 712,	-- Redridge Thrasher
+				coords = {
 					{ 17.8, 59.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 28.8, 81.6, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1214, {	-- Gnoll Punisher
-				["crs"] = {
+				crs = {
 					14271,	-- Ribchaser
 					426,	-- Redridge Brute
 				},
-				["coords"] = {
+				coords = {
 					{ 17.4, 64.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 31.0, 82.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 39.0, 33.0, MAP.REDRIDGE_MOUNTAINS },
@@ -1582,8 +1582,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			i(1440, {	-- Gnoll Skull Basher
-				["cr"] = 446,	-- Redridge Basher
-				["coords"] = {
+				cr = 446,	-- Redridge Basher
+				coords = {
 					{ 38.2, 31.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 27.2, 36.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 21.6, 35.0, MAP.REDRIDGE_MOUNTAINS },
@@ -1593,56 +1593,56 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			i(1211, {	-- Gnoll War Harness
-				["cr"] = 423,	-- Redridge Mongrel
-				["coords"] = {
+				cr = 423,	-- Redridge Mongrel
+				coords = {
 					{ 30.6, 62.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 30.0, 71.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 17.8, 57.8, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(2296, {	-- Great Goretusk Snout
-				["crs"] = {
+				crs = {
 					345,	-- Bellygrub
 					547,	-- Great Goretusk
 				},
 			}),
 			i(1218, {	-- Heavy Gnoll War Club
-				["crs"] = {
+				crs = {
 					445,	-- Redridge Alpha
 				},
-				["coords"] = {
+				coords = {
 					{ 28.6, 22.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 18.6, 16.4, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1299, {	-- Lesser Belt of the Spire
-				["crs"] = {
+				crs = {
 					436,	-- Blackrock Shadowcaster
 				},
-				["coords"] = {
+				coords = {
 					{ 59.2, 43.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 60.0, 50.6, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1300, {	-- Lesser Staff of the Spire
-				["crs"] = {
+				crs = {
 					436,	-- Blackrock Shadowcaster
 				},
-				["coords"] = {
+				coords = {
 					{ 59.2, 43.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 60.0, 50.6, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1220, {	-- Lupine Axe
-				["cr"] = 580,	-- Redridge Drudger
-				["coords"] = {
+				cr = 580,	-- Redridge Drudger
+				coords = {
 					{ 23.0, 19.0, MAP.REDRIDGE_MOUNTAINS },
 					{ 20.0, 23.8, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1406, {	-- Pearl-encrusted Spear / Pearl-Encrusted Spear
-				["cr"] = 544,	-- Murloc Nightcrawler
-				["coords"] = {
+				cr = 544,	-- Murloc Nightcrawler
+				coords = {
 					{ 80.4, 58.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 81.0, 70.0, MAP.REDRIDGE_MOUNTAINS },
 				},
@@ -1656,39 +1656,39 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				cr = 428,	-- Dire Condor
 			}),
 			i(1219, {	-- Redridge Machete
-				["cr"] = 424,	-- Redridge Poacher
-				["coords"] = {
+				cr = 424,	-- Redridge Poacher
+				coords = {
 					{ 44.0, 72.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 32.2, 82.6, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1462, {	-- Ring of the Shadow
-				["cr"] = 429,	-- Shadowhide Darkweaver
-				["coords"] = {
+				cr = 429,	-- Shadowhide Darkweaver
+				coords = {
 					{ 76.6, 43.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 80.0, 49.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 82.4, 55.2, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1473, {	-- Riverside Staff
-				["cr"] = 545,	-- Murloc Tidecaller
-				["coords"] = {
+				cr = 545,	-- Murloc Tidecaller
+				coords = {
 					{ 56.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
 					{ 81.0, 63.6, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(2566, {	-- Sacrificial Robes
-				["crs"] = {
+				crs = {
 					397,	-- Morganth / Grand Magus Doane [CATA+]
 				},
-				["coord"] = { 80.0, 49.6, MAP.REDRIDGE_MOUNTAINS },	-- Morganth
+				coord = { 80.0, 49.6, MAP.REDRIDGE_MOUNTAINS },	-- Morganth
 			}),
 			i(1469, {	-- Scimitar of Atun
-				["crs"] = {
+				crs = {
 					578,	-- Murloc Scout
 					14270,	-- Squiddic
 				},
-				["coords"] = {
+				coords = {
 					{ 32.8, 41.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 31.4, 43.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 52.8, 51.8, MAP.REDRIDGE_MOUNTAINS },
@@ -1696,46 +1696,46 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			i(2175, {	-- Shadowhide Battle Axe
-				["cr"] = 568,	-- Shadowhide Warrior
-				["coords"] = {
+				cr = 568,	-- Shadowhide Warrior
+				coords = {
 					{ 81.8, 38.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 77.8, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1457, {	-- Shadowhide Mace
-				["cr"] = 433,	-- Shadowhide Gnoll
-				["coords"] = {
+				cr = 433,	-- Shadowhide Gnoll
+				coords = {
 					{ 66.8, 48.2, MAP.REDRIDGE_MOUNTAINS },
 					{ 68.6, 44.4, MAP.REDRIDGE_MOUNTAINS },
 					{ 66.2, 41.6, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1458, {	-- Shadowhide Maul
-				["cr"] = 432,	-- Shadowhide Brute
-				["coords"] = {
+				cr = 432,	-- Shadowhide Brute
+				coords = {
 					{ 82.0, 38.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 75.4, 46.0, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1459, {	-- Shadowhide Scalper
-				["crs"] = {
+				crs = {
 					579,	-- Shadowhide Assassin
 				},
-				["coords"] = {
+				coords = {
 					{ 80.6, 48.8, MAP.REDRIDGE_MOUNTAINS },
 					{ 79.2, 40.6, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1460, {	-- Shadowhide Two-handed Sword / Shadowhide Two-Handed Sword
-				["cr"] = 434,	-- Rabid Shadowhide Gnoll
-				["coords"] = {
+				cr = 434,	-- Rabid Shadowhide Gnoll
+				coords = {
 					{ 74.2, 44.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 72.6, 51.2, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
 			i(1461, {	-- Slayer's Battle Axe
-				["cr"] = 431,	-- Shadowhide Slayer
-				["coords"] = {
+				cr = 431,	-- Shadowhide Slayer
+				coords = {
 					{ 81.6, 48.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 78.4, 38.2, MAP.REDRIDGE_MOUNTAINS },
 				},
