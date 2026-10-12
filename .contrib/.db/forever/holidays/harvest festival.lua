@@ -31,41 +31,41 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(createHeader({
 	}),
 	n(QUESTS, {
 		q(8149, {	-- Honoring a Hero (A)
-			["qg"] = 15011,	-- Wagner Hammerstrike
-			["coord"] = { 52.6, 36.0, MAP.DUN_MOROGH },
-			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
-			["maps"] = { MAP.WESTERN_PLAGUELANDS },
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 30,
-			["groups"] = {
+			qg = 15011,	-- Wagner Hammerstrike
+			coord = { 52.6, 36.0, MAP.DUN_MOROGH },
+			maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
+			maps = { MAP.WESTERN_PLAGUELANDS },
+			races = ALLIANCE_ONLY,
+			isYearly = true,
+			lvl = 30,
+			groups = {
 				objective(1, {	-- Uther's Tribute
-					["provider"] = { "i", 19850 },	-- Uther's Tribute
-					["coord"] = { 51.0, 82.0, MAP.WESTERN_PLAGUELANDS },
+					provider = { "i", 19850 },	-- Uther's Tribute
+					coord = { 51.0, 82.0, MAP.WESTERN_PLAGUELANDS },
 				}),
 				i(20009),	-- For the Light!
 			},
 		}),
 		q(8150, {	-- Honoring a Hero (H)
-			["qg"] = 15012,	-- Javnir Nashak
-			["coord"] = { 46.0, 13.6, MAP.DUROTAR },
-			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
-			["maps"] = { MAP.ASHENVALE },
-			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 30,
-			["groups"] = {
+			qg = 15012,	-- Javnir Nashak
+			coord = { 46.0, 13.6, MAP.DUROTAR },
+			maxReputation = { 67, EXALTED },	-- Horde, Exalted.
+			maps = { MAP.ASHENVALE },
+			races = HORDE_ONLY,
+			isYearly = true,
+			lvl = 30,
+			groups = {
 				objective(1, {	-- Grom's Tribute
-					["provider"] = { "i", 19851 },	-- Grom's Tribute
-					["coord"] = { 83.0, 79.0, MAP.ASHENVALE },
+					provider = { "i", 19851 },	-- Grom's Tribute
+					coord = { 83.0, 79.0, MAP.ASHENVALE },
 				}),
 				i(20010),	-- The Horde's Hellscream
 			},
 		}),
 	}),
 	n(REWARDS, {
-		["description"] = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
-		["groups"] = {
+		description = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
+		groups = {
 			i(19995),	-- Harvest Boar
 			i(19696),	-- Harvest Bread
 			i(19996),	-- Harvest Fish
@@ -74,11 +74,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(createHeader({
 		},
 	}),
 	n(VENDORS, {
-		["crs"] = {
+		crs = {
 			15012,	-- Javnir Nashak
 			15011,	-- Wagner Hammerstrike
 		},
-		["groups"] = {
+		groups = {
 			i(9312),	-- Blue Firework
 			i(9313);	-- Green Firework
 			i(9318);	-- Red Firework
