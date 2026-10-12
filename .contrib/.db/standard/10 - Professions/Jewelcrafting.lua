@@ -5536,7 +5536,6 @@ itemrecipe("Design: Radiant Seaspray Emerald", 35254, 39740);
 itemrecipe("Design: Radiant Talasite", 24218, 31111);
 itemrecipe("Design: Reckless Pyrestone", 35762, 47055);
 itemrecipe("Design: Reckless Pyrestone", 35767, 47055);
-itemrecipe("Design: Regal Talasite", 35708, 46803);
 itemrecipe("Design: Relentless Earthstorm Diamond", 33622, 39961);
 itemrecipe("Design: Ring of Arcane Shielding", 30826, 37855);
 itemrecipe("Design: Ring of Bitter Shadows", 21954, 26910);
