@@ -321,6 +321,18 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
+			q(99196, {	-- A Donation of Wool
+				["qg"] = 276171,	-- Oura Stormspinner
+				["coord"] = { 34.2, 22.4, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 12,
+				["groups"] = {
+					objective(1, {	-- 0/60 Wool Cloth
+						["provider"] = { "i", 2592 },	-- Wool Cloth
+					}),
+				},
+			}),
 			q(833, {	-- A Sacred Burial
 				["qg"] = 3233,	-- Lorekeeper Raintotem
 				["coord"] = { 59.8, 25.6, MAP.MULGORE },
@@ -482,6 +494,23 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
 			}),
+			q(98427, {	-- Ceasing Operations
+				["sourceQuest"] = 98424,	-- Fizsprocket's Notes
+				["qg"] = 2988,	-- Morin Cloudstalker
+				["coord"] = { 54.4, 60.4, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { UNDEAD, TAUREN },
+				["lvl"] = 5,
+				["groups"] = {
+					objective(1, {	-- 0/1 Clearcutter Key
+						["provider"] = { "i", 281048 },	-- Clearcutter Key
+						["coord"] = { 56.8, 43.0, MAP.MULGORE },
+						["cr"] = 272173,	-- Venture Co. Clearclutter
+					}),
+					i(281059),	-- Loose Clearcutter Blade
+					i(282285),	-- Clearcutter Key
+				},
+			}),
 			q(743, {	-- Dangers of the Windfury
 				["qg"] = 2985,	-- Ruul Eagletalon
 				["coord"] = { 47.4, 62.0, MAP.MULGORE },
@@ -529,6 +558,37 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 					i(4969),	-- Fortified Bindings
 					i(4970),	-- Rough-hewn Kodo Leggings
+				},
+			}),
+			q(98424, {	-- Fizsprocket's Notes
+				["provider"] = { "i", 281031 },	-- Mulgore Expansion Plans
+				["cr"] = 3051,	-- Supervisor Fizsprocket
+				["coord"] = { 64.4, 43.6, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 5,
+				["groups"] = {
+					objective(1, {	-- 0/1 Shredder Operation Instructions
+						["providers"] = {
+							{ "i", 281035 },	-- Shredder Operation Instructions
+							{ "o", 673494 },	-- Shredder Operation Instructions
+						},
+					}),
+					objective(2, {	-- 0/1 Barrens Operations Best Practices
+						["providers"] = {
+							{ "i", 281036 },	-- Barrens Operations Best Practices
+							{ "o", 673496 },	-- Barrens Operations Best Practices
+						},
+					}),
+					objective(3, {	-- 0/1 One "Gerenzo", of Stonetalon
+						["providers"] = {
+							{ "i", 281037 },	-- One "Gerenzo", of Stonetalon
+							{ "o", 673497 },	-- One "Gerenzo", of Stonetalon
+						},
+					}),
+					objective(4, {	-- 0/1 Mulgore Expansion Plans
+						["provider"] = { "i", 281031 },	-- Mulgore Expansion Plans
+					}),
 				},
 			}),
 			q(5655, {	-- Hex of Weakness [Mulgore]
@@ -746,6 +806,52 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					i(4960),	-- Flash Pellet
 				},
 			}),
+			q(76156, {	-- Stalk With The Earthmother
+				["qg"] = 205729,	-- Boarton Shadetotem
+				["qi"] = 206159,	-- Venture Co Disguise
+				["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { ORC, TAUREN, TROLL },
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 0/5 Seaforium Mining Charge
+						["provider"] = { "i", 206157 },	-- Seaforium Mining Charge
+					}),
+				},
+			}),
+			q(76160, {	-- Stalk With The Earthmother
+				["qg"] = 205729,	-- Boarton Shadetotem
+				["qi"] = 206176,	-- Mortar and Pestle
+				["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { ORC, TAUREN, TROLL },
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 0/1 Pine Salve
+						["provider"] = { "i", 206175 },	-- Pine Salve
+					}),
+					objective(2, {	-- 0/8 Windfury Cone
+						["provider"] = { "i", 206170 },	-- Windfury Cone
+					}),
+					i(206177),	-- Pine Nut Butter
+				},
+			}),
+			q(76240, {	-- Stalk With The Earthmother
+				["qg"] = 205729,	-- Boarton Shadetotem
+				["qi"] = 206344,	-- Knife Set
+				["coord"] = { 39.6, 65.6, MAP.THUNDER_BLUFF },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["classes"] = { HUNTER, SHAMAN, DRUID },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 4,
+				["groups"] = {
+					objective(1, {	-- 0/1 Fish Chunks
+						["provider"] = { "i", 206345 },	-- Fish Chunks
+					}),
+					i(277988),	-- Hoof-Holstered Blade
+					i(278002),	-- Valley Cosh
+				},
+			}),
 			q(96260, {	-- Stronger than Steel
 				["qg"] = 264072,	-- Yorn Grimtotem
 				["coord"] = { 32.4, 20.0, MAP.MULGORE },
@@ -937,6 +1043,17 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
+			q(98430, {	-- The Longwalkers
+				["qg"] = 272203,	-- Perith Stormhoof
+				["coord"] = { 33.0, 65.8, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { UNDEAD, TAUREN },
+				["groups"] = {
+					objective(1, {	-- Escort Perith Stormhoof out of Palemane Rock
+						["provider"] = { "n", 272203 },	-- Perith Stormhoof
+					}),
+				},
+			}),
 			q(749, {	-- The Ravaged Caravan (1/2)
 				["qg"] = 2988,	-- Morin Cloudstalker
 				["coord"] = { 54.4, 60.4, MAP.MULGORE },
@@ -995,6 +1112,19 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						["provider"] = { "i", 4802 },	-- Cougar Claws
 						["cr"] = 3035,	-- Flatland Cougar
 					}),
+				},
+			}),
+			q(98435, {	-- Thunderhorn's Report
+				["sourceQuest"] = 760,	-- Wildmane Cleansing
+				["qg"] = 2948,	-- Mull Thunderhorn
+				["qi"] = 281139,	-- Thunderhorn's Report
+				["coord"] = { 48.5, 60.4, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = { UNDEAD, TAUREN },
+				["lvl"] = 4,
+				["groups"] = {
+					i(3443),	-- Ceremonial Tomahawk
+					i(4961),	-- Dreamwatcher Staff
 				},
 			}),
 			q(5661, {	-- Touch of Weakness [Mulgore]
