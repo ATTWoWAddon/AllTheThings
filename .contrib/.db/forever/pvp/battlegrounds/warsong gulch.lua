@@ -47,10 +47,10 @@ ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 end]];
 
 battleground(MAP.WARSONG_GULCH, {
-	["lore"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",
-	["timeline"] = { TIMELINE.ADDED_1_60_1 },
-	["icon"] = 236350,
-	["groups"] = {
+	lore = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",
+	timeline = { TIMELINE.ADDED_1_60_1 },
+	icon = 236350,
+	groups = {
 		n(ACHIEVEMENTS, {
 			-- CRIEVE NOTE: Not sure which one is which.
 			ach(62048, {	-- Master of Warsong Gulch
@@ -62,292 +62,292 @@ battleground(MAP.WARSONG_GULCH, {
 		}),
 		n(FACTIONS, {
 			faction(FACTION_SILVERWING_SENTINELS, {	-- Silverwing Sentinels
-				["icon"] = 132279,
-				["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
-				["maps"] = { MAP.ASHENVALE },
-				["races"] = ALLIANCE_ONLY,
+				icon = 132279,
+				OnTooltip = [[_.OnTooltipDB.ForWarsongGulch]],
+				maps = { MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
 			}),
 			faction(FACTION_WARSONG_OUTRIDERS, {	-- Warsong Outriders
-				["icon"] = 132366,
-				["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
-				["maps"] = { MAP.ASHENVALE },
-				["races"] = HORDE_ONLY,
+				icon = 132366,
+				OnTooltip = [[_.OnTooltipDB.ForWarsongGulch]],
+				maps = { MAP.ASHENVALE },
+				races = HORDE_ONLY,
 			}),
 		}),
 		n(QUESTS, {
 			q(8368, {	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 10, 19 },
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 10, 19 },
 			}),
 			q(8426, {	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 20, 29 },
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8427, {	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 30, 39 },
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8428, {	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 40, 49 },
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8429, {	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 50, 59 },
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 50, 59 },
 			}),
 			q(8430, {	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 60, 69 },
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 60, 69 },
 			}),
 			q(8389, {	-- Battle of Warsong Gulch
-				["sourceQuest"] = 8368,	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 10, 19 },
+				sourceQuest = 8368,	-- Battle of Warsong Gulch
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = { 10, 19 },
 			}),
 			q(8431, {	-- Battle of Warsong Gulch
-				["sourceQuest"] = 8426,	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 20, 29 },
+				sourceQuest = 8426,	-- Battle of Warsong Gulch
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = { 20, 29 },
 			}),
 			q(8432, {	-- Battle of Warsong Gulch
-				["sourceQuest"] = 8427,	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 30, 39 },
+				sourceQuest = 8427,	-- Battle of Warsong Gulch
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = { 30, 39 },
 			}),
 			q(8433, {	-- Battle of Warsong Gulch
-				["sourceQuest"] = 8428,	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 40, 49 },
+				sourceQuest = 8428,	-- Battle of Warsong Gulch
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = { 40, 49 },
 			}),
 			q(8434, {	-- Battle of Warsong Gulch
-				["sourceQuest"] = 8429,	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 50, 59 },
+				sourceQuest = 8429,	-- Battle of Warsong Gulch
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = { 50, 59 },
 			}),
 			q(8435, {	-- Battle of Warsong Gulch
-				["sourceQuest"] = 8430,	-- Battle of Warsong Gulch
-				["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-				["qg"] = 15350,	-- Horde Warbringer
-				["coord"] = HORDE_WARBRINGER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 60, 69 },
+				sourceQuest = 8430,	-- Battle of Warsong Gulch
+				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
+				qg = 15350,	-- Horde Warbringer
+				coord = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = { 60, 69 },
 			}),
 			q(8372, {	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 10, 19 },
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 10, 19 },
 			}),
 			q(8399, {	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 20, 29 },
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 20, 29 },
 			}),
 			q(8400, {	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 30, 39 },
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 30, 39 },
 			}),
 			q(8401, {	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 40, 49 },
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 40, 49 },
 			}),
 			q(8402, {	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 50, 59 },
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 50, 59 },
 			}),
 			q(8403, {	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 60, 69 },
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 60, 69 },
 			}),
 			q(8386, {	-- Fight for Warsong Gulch
-				["sourceQuest"] = 8372,	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 10, 19 },
+				sourceQuest = 8372,	-- Fight for Warsong Gulch
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = { 10, 19 },
 			}),
 			q(8404, {	-- Fight for Warsong Gulch
-				["sourceQuest"] = 8399,	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 20, 29 },
+				sourceQuest = 8399,	-- Fight for Warsong Gulch
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = { 20, 29 },
 			}),
 			q(8405, {	-- Fight for Warsong Gulch
-				["sourceQuest"] = 8400,	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 30, 39 },
+				sourceQuest = 8400,	-- Fight for Warsong Gulch
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = { 30, 39 },
 			}),
 			q(8406, {	-- Fight for Warsong Gulch
-				["sourceQuest"] = 8401,	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 40, 49 },
+				sourceQuest = 8401,	-- Fight for Warsong Gulch
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = { 40, 49 },
 			}),
 			q(8407, {	-- Fight for Warsong Gulch
-				["sourceQuest"] = 8402,	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 50, 59 },
+				sourceQuest = 8402,	-- Fight for Warsong Gulch
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = { 50, 59 },
 			}),
 			q(8408, {	-- Fight for Warsong Gulch
-				["sourceQuest"] = 8403,	-- Fight for Warsong Gulch
-				["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-				["qg"] = 15351,	-- Alliance Brigadier General
-				["coord"] = ALLIANCE_BRIGADIER_COORDS,
-				["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = { 60, 69 },
+				sourceQuest = 8403,	-- Fight for Warsong Gulch
+				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
+				qg = 15351,	-- Alliance Brigadier General
+				coord = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = { 60, 69 },
 			}),
 			q(7868, {	-- Outrider Advanced Care Package
-				["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
-				["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
-				["races"] = HORDE_ONLY,
-				["lvl"] = 45,
-				["groups"] = {
+				qg = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+				coord = { 46.6, 8.4, MAP.THE_BARRENS },
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
 					i(19153),	-- Outrider Advanced Care Package
 				},
 			}),
 			q(7866, {	-- Outrider Basic Care Package
-				["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
-				["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 25, 34 },
-				["groups"] = {
+				qg = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+				coord = { 46.6, 8.4, MAP.THE_BARRENS },
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				races = HORDE_ONLY,
+				lvl = { 25, 34 },
+				groups = {
 					i(19154),	-- Outrider Basic Care Package
 				},
 			}),
 			q(7867, {	-- Outrider Standard Care Package
-				["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
-				["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
-				["races"] = HORDE_ONLY,
-				["lvl"] = { 35, 44 },
-				["groups"] = {
+				qg = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+				coord = { 46.6, 8.4, MAP.THE_BARRENS },
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				races = HORDE_ONLY,
+				lvl = { 35, 44 },
+				groups = {
 					i(19155),	-- Outrider Standard Care Package
 				},
 			}),
 			q(7865, {	-- Sentinel Advanced Care Package
-				["qg"] = 14753,	-- Illiyana Moonblaze
-				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
-				["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 45,
-				["groups"] = {
+				qg = 14753,	-- Illiyana Moonblaze
+				coord = { 61.6, 83.8, MAP.ASHENVALE },
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
 					i(19152),	-- Sentinel Advanced Care Package
 				},
 			}),
 			q(7863, {	-- Sentinel Basic Care Package
-				["qg"] = 14753,	-- Illiyana Moonblaze
-				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
-				["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 25, 34 },
-				["groups"] = {
+				qg = 14753,	-- Illiyana Moonblaze
+				coord = { 61.6, 83.8, MAP.ASHENVALE },
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				races = ALLIANCE_ONLY,
+				lvl = { 25, 34 },
+				groups = {
 					i(19150),	-- Sentinel Basic Care Package
 				},
 			}),
 			q(7864, {	-- Sentinel Standard Care Package
-				["qg"] = 14753,	-- Illiyana Moonblaze
-				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
-				["minReputation"] = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = { 35, 44 },
-				["groups"] = {
+				qg = 14753,	-- Illiyana Moonblaze
+				coord = { 61.6, 83.8, MAP.ASHENVALE },
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				races = ALLIANCE_ONLY,
+				lvl = { 35, 44 },
+				groups = {
 					i(19151),	-- Sentinel Standard Care Package
 				},
 			}),
@@ -357,9 +357,9 @@ battleground(MAP.WARSONG_GULCH, {
 		}),
 		n(VENDORS, {
 			n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
-				["coord"] = { 46.6, 8.4, MAP.THE_BARRENS },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				coord = { 46.6, 8.4, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				groups = {
 					i(19505),	-- Warsong Battle Tabard
 					i(19566),	-- Advisor's Gnarled Staff
 					i(19567),	-- Advisor's Gnarled Staff
@@ -427,9 +427,9 @@ battleground(MAP.WARSONG_GULCH, {
 				},
 			}),
 			n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
-				["coord"] = { 61.6, 83.8, MAP.ASHENVALE },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				coord = { 61.6, 83.8, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(19506),	-- Silverwing Battle Tabard
 					i(19570),	-- Lorekeeper's Staff
 					i(19571),	-- Lorekeeper's Staff
