@@ -4,8 +4,8 @@
 ENCHANTING_RECIPES = {
 	APPRENTICE = {
 		r(7411, {	-- Enchanting (Apprentice)
-			["lvl"] = 5,
-			["rank"] = 1,
+			lvl = 5,
+			rank = 1,
 		}),
 		r(13262),	-- Disenchant
 		n(ARMOR_ENCHANTMENTS, {
@@ -26,13 +26,13 @@ ENCHANTING_RECIPES = {
 		n(WEAPONS, {
 			r(14807),	-- Greater Magic Wand
 			r(14293),	-- Lesser Magic Wand
-			r(1245321, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Novice's Practice Wand
+			r(1245321, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Novice's Practice Wand
 		}),
 	};
 	JOURNEYMAN = {
 		r(7412, {	-- Enchanting (Journeyman)
-			["lvl"] = 10,
-			["rank"] = 2,
+			lvl = 10,
+			rank = 2,
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			r(7863),	-- Enchant Boots - Minor Stamina
@@ -62,8 +62,8 @@ ENCHANTING_RECIPES = {
 	};
 	EXPERT = {
 		r(7413, {	-- Enchanting (Expert)
-			["lvl"] = 20,
-			["rank"] = 3,
+			lvl = 20,
+			rank = 3,
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			r(13637),	-- Enchant Boots - Lesser Agility
@@ -102,8 +102,8 @@ ENCHANTING_RECIPES = {
 	};
 	ARTISAN = {
 		r(13920, {	-- Enchanting (Artisan)
-			["lvl"] = 35,
-			["rank"] = 4,
+			lvl = 35,
+			rank = 4,
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			r(13935),	-- Enchant Boots - Agility
@@ -124,7 +124,7 @@ ENCHANTING_RECIPES = {
 	};
 	COMMON_RECIPES = {
 		i(6342, {	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
-			["isLimited"] = true,
+			isLimited = true,
 		}),
 		i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 		i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
