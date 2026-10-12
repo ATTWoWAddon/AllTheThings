@@ -6,7 +6,7 @@ root(ROOTS.Craftables, {
 	prof(MINING, {
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(17771, {	-- Enchanted / Elementium Bar
-				["cost"] = ClassicCost({
+				cost = ClassicCost({
 					{ "i", 18562, 1 },	-- Elementium Ore
 					{ "i", 12360, 10 },	-- Arcanite Bar
 					{ "i", 17010, 1 },	-- Fiery Core
