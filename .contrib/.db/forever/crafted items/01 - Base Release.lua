@@ -329,9 +329,9 @@ root(ROOTS.Craftables, {
 	}),
 	prof(COOKING, {
 		n(COMMON_VENDOR_ITEMS, {
-			["groups"] = appendAllGroups(
+			groups = appendAllGroups(
 				sharedData({	-- Vanilla cooking reagents
-					["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
+					description = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
 				}, {
 					i(159),	-- Refreshing Spring Water
 					i(2678),	-- Mild Spices
@@ -339,7 +339,7 @@ root(ROOTS.Craftables, {
 					i(3713),	-- Soothing Spices
 				}),
 				sharedData({
-					["providers"] = {
+					providers = {
 						{ "n", 1328 },	-- Elly Langston <Barmaid>
 						{ "n", 5611 },	-- Barkeep Morag
 					},
@@ -351,7 +351,7 @@ root(ROOTS.Craftables, {
 				}),
 				{
 					i(1179, {	-- Ice Cold Milk
-						["description"] = "Can be bought from bartenders, innkeepers and general goods vendors.",
+						description = "Can be bought from bartenders, innkeepers and general goods vendors.",
 					}),
 				}
 			),
@@ -444,75 +444,75 @@ root(ROOTS.Craftables, {
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			-- Dust:
 			i(11176, {	-- Dream Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
+				description = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",
 			}),
 			i(16204, {	-- Illusion Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",
+				description = "Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",
 			}),
 			i(11083, {	-- Soul Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-35.",
+				description = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-35.",
 			}),
 			i(10940, {	-- Strange Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 10-25.",
+				description = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 10-25.",
 			}),
 			i(11137, {	-- Vision Dust
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 36-45.",
+				description = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 36-45.",
 			}),
 			-- Essences:
 			i(11082, {	-- Greater Astral Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-30.",
+				description = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 26-30.",
 			}),
 			i(10998, {	-- Lesser Astral Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 21-25.",
+				description = "Obtained from disenchanting uncommon (green) quality garments, amulets, rings, shields and off-hand frills within the ilvl bracket 21-25.",
 			}),
 			i(16203, {	-- Greater Eternal Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 56-65, except shields and off-hand frills.",
+				description = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 56-65, except shields and off-hand frills.",
 			}),
 			i(16202, {	-- Lesser Eternal Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 51-55.",
+				description = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 51-55.",
 			}),
 			i(10939, {	-- Greater Magic Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 16-30, except shields and off-hand frills.",
+				description = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 16-30, except shields and off-hand frills.",
 			}),
 			i(10938, {	-- Lesser Magic Essence
-				["description"] = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
+				description = "Obtained from disenchanting uncommon (green) quality weapons within the ilvl bracket 11-15, except shields and off-hand frills.",
 			}),
 			i(11135, {	-- Greater Mystic Essence 
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
+				description = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 36-40.",
 			}),
 			i(11134, {	-- Lesser Mystic Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 31-35.",
+				description = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 31-35.",
 			}),
 			i(11175, {	-- Greater Nether Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 46-50.",
+				description = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 46-50.",
 			}),
 			i(11174, {	-- Lesser Nether Essence
-				["description"] = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 41-45.",
+				description = "Obtained from disenchanting all uncommon (green) quality gear within the ilvl bracket 41-45.",
 			}),
 			-- Shards and crystals:
 			i(14344, {	-- Large Brilliant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 56-71.",
+				description = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 56-71.",
 			}),
 			i(14343, {	-- Small Brilliant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 51-55.",
+				description = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 51-55.",
 			}),
 			i(11084, {	-- Large Glimmering Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 26-30.",
+				description = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 26-30.",
 			}),
 			i(10978, {	-- Small Glimmering Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 20-25.",
+				description = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 20-25.",
 			}),
 			i(11139, {	-- Large Glowing Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 36-40.",
+				description = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 36-40.",
 			}),
 			i(11138, {	-- Small Glowing Shard
-				["description"] = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
+				description = "Obtained from disenchanting all rare (blue) quality gear within the ilvl bracket 31-35.",
 			}),
 			i(11178, {	-- Large Radiant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
+				description = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 46-50.",
 			}),
 			i(11177, {	-- Small Radiant Shard
-				["description"] = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 41-45.",
+				description = "Obtained from disenchanting all rare (blue) and epic (purple) quality gear within the ilvl bracket 41-45.",
 			}),
 		}),
 		filter(MISC, {
@@ -550,7 +550,7 @@ root(ROOTS.Craftables, {
 		prof(GNOMISH_ENGINEERING, {
 			n(ARMOR, {
 				i(10545, {	-- Gnomish Goggles
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GNOMISH_ENGINEERING,	-- (BOP - Required)
 				}),
 				i(10721),	-- Gnomish Harm Prevention Belt
 				i(10726),	-- Gnomish Mind Control Cap
@@ -562,25 +562,25 @@ root(ROOTS.Craftables, {
 			filter(MISC, {
 				i(18645),	-- Gnomish Alarm-o-Bot
 				i(18986, {	-- Ultrasafe Transporter: Gadgetzan
-					["requireSkill"] = GNOMISH_ENGINEERING,
+					requireSkill = GNOMISH_ENGINEERING,
 				}),
 			}),
 			filter(RECIPES, {
 				i(10713, {	-- Plans: Inlaid Mithril Cylinder (RECIPE!)
-					["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
+					description = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
 				}),
 			}),
 			filter(TOYS, {
 				i(18660, {	-- World Enlarger (TOY!)
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GNOMISH_ENGINEERING,	-- (BOP - Required)
 				}),
 			}),
 			filter(TRINKET_F, {
 				i(10725, {	-- Gnomish Battle Chicken
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GNOMISH_ENGINEERING,	-- (BOP - Required)
 				}),
 				i(10645, {	-- Gnomish Death Ray
-					["requireSkill"] = GNOMISH_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GNOMISH_ENGINEERING,	-- (BOP - Required)
 				}),
 				i(10720),	-- Gnomish Net-o-Matic Projector
 				i(10716),	-- Gnomish Shrink Ray
@@ -589,10 +589,10 @@ root(ROOTS.Craftables, {
 		prof(GOBLIN_ENGINEERING, {
 			n(ARMOR, {
 				i(10543, {	-- Goblin Construction Helmet
-					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GOBLIN_ENGINEERING,	-- (BOP - Required)
 				}),
 				i(10542, {	-- Goblin Mining Helmet
-					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GOBLIN_ENGINEERING,	-- (BOP - Required)
 				}),
 				i(7189),	-- Goblin Rocket Boots
 				i(10588),	-- Goblin Rocket Helmet
@@ -602,22 +602,22 @@ root(ROOTS.Craftables, {
 			}),
 			filter(MISC, {
 				i(18984, {	-- Dimensional Ripper - Everlook (TOY!)
-					["requireSkill"] = GOBLIN_ENGINEERING,
+					requireSkill = GOBLIN_ENGINEERING,
 				}),
 				i(10646),	-- Goblin Sapper Charge
 				i(10586),	-- The Big One
 			}),
 			filter(RECIPES, {
 				i(10644, {	-- Recipe: Goblin Rocket Fuel (RECIPE!)
-					["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
+					description = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
 				}),
 			}),
 			filter(TRINKET_F, {
 				i(10587, {	-- Goblin Bomb Dispenser
-					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GOBLIN_ENGINEERING,	-- (BOP - Required)
 				}),
 				i(10727, {	-- Goblin Dragon Gun
-					["requireSkill"] = GOBLIN_ENGINEERING,	-- (BOP - Required)
+					requireSkill = GOBLIN_ENGINEERING,	-- (BOP - Required)
 				}),
 				i(18587),	-- Goblin Jumper Cables XL
 			}),
@@ -805,7 +805,7 @@ root(ROOTS.Craftables, {
 	}),
 	prof(FISHING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
+			description = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 			--[[["coords"] = {
 				{ 47.8, 6.6, MAP.IRONFORGE },
@@ -824,13 +824,13 @@ root(ROOTS.Craftables, {
 				{ "n", 4222 },	-- Voloren <Fishing Supplies>
 			},]]
 		}, {
-			i(6533, {["isLimited"] = true, }),	-- Aquadynamic Fish Attractor
+			i(6533, {isLimited = true, }),	-- Aquadynamic Fish Attractor
 			i(6532),	-- Bright Baubles
 			i(6256),	-- Fishing Pole
 			i(6530),	-- Nightcrawlers
 			i(6529),	-- Shiny Bauble
 			i(6365, {	-- Strong Fishing Pole
-				["isLimited"] = true,
+				isLimited = true,
 			}),
 			i(273636, {	-- Chef's Knife
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -838,8 +838,8 @@ root(ROOTS.Craftables, {
 		})),
 		filter(ONE_HANDED_MACES, {
 			i(6360, {	-- Steelscale Crushfish
-				["description"] = "Can be caught in open water in the given zones.",
-				["maps_disp"] = {
+				description = "Can be caught in open water in the given zones.",
+				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.HILLSBRAD_FOOTHILLS,
 					MAP.WETLANDS,
@@ -848,10 +848,10 @@ root(ROOTS.Craftables, {
 		}),
 		filter(FINGER_F, {
 			i(8350, {	-- The 1 Ring
-				["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+				description = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
 			}),
 		}),
-		filter(HELD_IN_OFF_HAND, sharedData({ ["collectible"] = false, }, {
+		filter(HELD_IN_OFF_HAND, sharedData({ collectible = false, }, {
 			i(6292),	-- 10 Pound Mud Snapper
 			i(6294),	-- 12 Pound Mud Snapper
 			i(6295),	-- 15 Pound Mud Snapper
@@ -916,7 +916,7 @@ root(ROOTS.Craftables, {
 			i(6351),	-- Dented Crate
 			i(13874),	-- Heavy Crate
 			i(21150, {	-- Iron Bound Trunk
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.ASHENVALE,
 					MAP.AZSHARA,
@@ -936,7 +936,7 @@ root(ROOTS.Craftables, {
 					MAP.WESTFALL,
 					MAP.WETLANDS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 180901 },	-- Bloodsail Wreckage
 					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180683 },	-- Greater Sagefish School
@@ -954,13 +954,13 @@ root(ROOTS.Craftables, {
 			}),
 			i(6307),	-- Message in a Bottle
 			i(21228, {	-- Mitril Bound Trunk
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.BLASTED_LANDS,
 					MAP.EASTERN_PLAGUELANDS,
 					MAP.SWAMP_OF_SORROWS,
 					MAP.TANARIS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 180751 },	-- Floating Wreckage
 					{ "o", 180712 },	-- Stonescale Eel Swarm
 				},
@@ -976,7 +976,7 @@ root(ROOTS.Craftables, {
 			i(13918),	-- Reinforced Locked Chest
 			i(6357),	-- Sealed Crate
 			i(20708, {	-- Tightly Sealed Trunk
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.DUSKWOOD,
 					MAP.REDRIDGE_MOUNTAINS,
@@ -984,7 +984,7 @@ root(ROOTS.Craftables, {
 					MAP.WESTFALL,
 					MAP.THE_BARRENS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 180655 },	-- Floating Debris
 					{ "o", 180658 },	-- School of Deviate Fish
 				},
@@ -999,13 +999,13 @@ root(ROOTS.Craftables, {
 			}),
 			i(6352),	-- Waterlogged Crate
 			i(21113, {	-- Watertight Trunk
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.HILLSBRAD_FOOTHILLS,
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 				},
 				--[[["groups"] = {
@@ -1019,7 +1019,7 @@ root(ROOTS.Craftables, {
 			}),
 			-- Consumables:
 			i(21151, {	-- Rumsey Rum Black Label
-				["providers"] = {
+				providers = {
 					{ "o", 180901 },	-- Bloodsail Wreckage
 					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180655 },	-- Floating Debris
@@ -1035,7 +1035,7 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			i(20709, {	-- Rumsey Rum Light
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.DUSKWOOD,
 					MAP.REDRIDGE_MOUNTAINS,
@@ -1043,15 +1043,15 @@ root(ROOTS.Craftables, {
 					MAP.WESTFALL,
 					MAP.THE_BARRENS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 180655 },	-- Floating Debris
 				},
 			}),
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(6366, {	-- Darkwood Fishing Pole
-				["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Stranglethorn Vale, Redridge Mountains and Wetlands.",
-				["maps_disp"] = {
+				description = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Stranglethorn Vale, Redridge Mountains and Wetlands.",
+				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.ARATHI_HIGHLANDS,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -1064,23 +1064,23 @@ root(ROOTS.Craftables, {
 		-- Danny Donkey: The post Cata data for fish and school locations is accurate for viability in retail and might deviate from Cata+ classic. Pre Cata data is also not validated in-game.
 		-- Fish:
 		i(13888, {	-- Darkclaw Lobster
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				MAP.AZSHARA,
 			},
 		}),
 		i(6522, {	-- Deviate Fish
-			["_allowObjectProvider"] = true,
-			["coords"] = {
+			_allowObjectProvider = true,
+			coords = {
 				{ 56.0, 43.0, MAP.THE_BARRENS },	-- The Stagnant Oasis
 				{ 46.0, 38.0, MAP.THE_BARRENS },	-- Lushwater Oasis
 				{ 45.0, 22.0, MAP.THE_BARRENS },	-- The Forgotten Oasis
 			},
-			["provider"] = { "o", 180658 },	-- School of Deviate Fish
+			provider = { "o", 180658 },	-- School of Deviate Fish
 		}),
 		i(6359, {	-- Firefin Snapper
-			["description"] = "Schools can be found on the seaside.",
-			["maps_disp"] = {
+			description = "Schools can be found on the seaside.",
+			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
 				MAP.AZSHARA,
@@ -1099,20 +1099,20 @@ root(ROOTS.Craftables, {
 				MAP.WESTFALL,
 				MAP.WETLANDS,
 			},
-			["providers"] = {
+			providers = {
 				{ "o", 180683 },	-- Firefin Snapper School
 			},
 		}),
 		i(13893, {	-- Large Raw Mightfish
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				MAP.AZSHARA,
 			},
 		}),
 		i(13757, {	-- Lightening Eel
-			["coord"] = { 60.6, 71.7, MAP.SILITHUS },
-			["description"] = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
-			["maps_disp"] = {
+			coord = { 60.6, 71.7, MAP.SILITHUS },
+			description = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
+			maps_disp = {
 				MAP.BURNING_STEPPES,
 				MAP.EASTERN_PLAGUELANDS,
 				MAP.DEADWIND_PASS,
@@ -1120,8 +1120,8 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6358, {	-- Oily Blackmouth
-			["description"] = "Schools can be found on the seaside.",
-			["maps_disp"] = {
+			description = "Schools can be found on the seaside.",
+			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
 				MAP.AZSHARA,
@@ -1140,13 +1140,13 @@ root(ROOTS.Craftables, {
 				MAP.WESTFALL,
 				MAP.WETLANDS,
 			},
-			["providers"] = {
+			providers = {
 				{ "o", 180682 },	-- Oily Blackmouth School
 			},
 		}),
 		i(6291, {	-- Raw Brilliant Smallfish
-			["description"] = "Can be caught in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waters and waterways.",
+			maps_disp = {
 				MAP.DUN_MOROGH,
 				MAP.ELWYNN_FOREST,
 				MAP.MULGORE,
@@ -1154,8 +1154,8 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6308, {	-- Raw Bristle Whisker Catfish
-			["description"] = "Can be caught in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waters and waterways.",
+			maps_disp = {
 				MAP.ASHENVALE,
 				MAP.DUSKWOOD,
 				MAP.REDRIDGE_MOUNTAINS,
@@ -1163,8 +1163,8 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13754, {	-- Raw Glossy Mightfish
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
 				MAP.FERALAS,
@@ -1172,20 +1172,20 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(21153, {	-- Raw Greater Sagefish
-			["description"] = "Schools can be found in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Schools can be found in inland waters and waterways.",
+			maps_disp = {
 				MAP.ALTERAC_MOUNTAINS,
 				MAP.STRANGLETHORN_VALE,
 			},
-			["provider"] = { "o", 180684 },	-- Greater Sagefish School
+			provider = { "o", 180684 },	-- Greater Sagefish School
 		}),
 		i(6317, {	-- Raw Loch Frenzy
-			["description"] = "Can be caught in The Loch.",
-			["maps_disp"] = { MAP.LOCH_MODAN },
+			description = "Can be caught in The Loch.",
+			maps_disp = { MAP.LOCH_MODAN },
 		}),
 		i(6289, {	-- Raw Longjaw Mud Snapper
-			["description"] = "Can be caught in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waters and waterways.",
+			maps_disp = {
 				MAP.DARNASSUS,
 				MAP.ORGRIMMAR,
 				MAP.STORMWIND_CITY,
@@ -1193,15 +1193,15 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(8365, {	-- Raw Mithril Head Trout
-			["description"] = "Can be caught in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waters and waterways.",
+			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.THOUSAND_NEEDLES,
 			},
 		}),
 		i(13759, {	-- Raw Nightfin Snapper
-			["description"] = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",
+			maps_disp = {
 				MAP.DEADWIND_PASS,
 				MAP.MOONGLADE,
 				MAP.WESTERN_PLAGUELANDS,
@@ -1213,8 +1213,8 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6361, {	-- Raw Rainbow Fin Albacore
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.SILVERPINE_FOREST,
@@ -1225,8 +1225,8 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13758, {	-- Raw Redgill
-			["description"] = "Can be caught in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waters and waterways.",
+			maps_disp = {
 				MAP.FELWOOD,
 				MAP.MOONGLADE,
 				MAP.UNGORO_CRATER,
@@ -1234,38 +1234,38 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6362, {	-- Raw Rockscale Cod
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				MAP.DUSTWALLOW_MARSH,
 				MAP.SWAMP_OF_SORROWS,
 			},
 		}),
 		i(21071, {	-- Raw Sagefish
-			["coords"] = {
+			coords = {
 				{ 50.0, 40.0, MAP.STONETALON_MOUNTAINS },	-- Mirkfallon Lake
 			},
-			["description"] = "Schools can be found in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Schools can be found in inland waters and waterways.",
+			maps_disp = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.LOCH_MODAN,
 				MAP.SILVERPINE_FOREST,
 			},
-			["providers"] = {
+			providers = {
 				{ "o", 180663 },	-- Sagefish School
 				{ "o", 180656 },	-- Sagefish School
 			},
 		}),
 		i(6303, {	-- Raw Slitherskin Mackerel
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				MAP.DUROTAR,
 				MAP.TELDRASSIL,
 			},
 		}),
 		i(4603, {	-- Raw Spotted Yellowtail
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				MAP.TANARIS,
 				MAP.SWAMP_OF_SORROWS,
 				MAP.THE_HINTERLANDS,
@@ -1273,12 +1273,12 @@ root(ROOTS.Craftables, {
 		}),
 		-- i(13756),	-- Raw Summer Bass: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 		i(13760, {	-- Raw Sunscale Salmon
-			["description"] = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
-			["coord"] = { 60.6, 71.7, MAP.SILITHUS },
+			description = "Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",
+			coord = { 60.6, 71.7, MAP.SILITHUS },
 		}),
 		i(13889, {	-- Raw Whitescale Salmon
-			["description"] = "Can be caught in inland waters and waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waters and waterways.",
+			maps_disp = {
 				MAP.DEADWIND_PASS,
 				MAP.EASTERN_PLAGUELANDS,
 				MAP.SILITHUS,
@@ -1286,21 +1286,21 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13422, {	-- Stonescale Eel
-			["description"] = "Schools can be found on the seaside.",
-			["maps_disp"] = {
+			description = "Schools can be found on the seaside.",
+			maps_disp = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
 				MAP.FERALAS,
 				MAP.THE_HINTERLANDS,
 				MAP.STRANGLETHORN_VALE,
 			},
-			["provider"] = { "o", 180712 },	-- Stonescale Eel Swarm
+			provider = { "o", 180712 },	-- Stonescale Eel Swarm
 		}),
 		-- i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 		-- Fish schools:
 		o(180683, {	-- Firefin Snapper School
-			["description"] = "Can be found on the seaside.",
-			["maps"] = {
+			description = "Can be found on the seaside.",
+			maps = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
 				MAP.AZSHARA,
@@ -1325,15 +1325,15 @@ root(ROOTS.Craftables, {
 		o(180752),	-- Firefin Snapper School 4
 		o(180902),	-- Firefin Snapper School 5
 		o(180684, {	-- Greater Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
-			["maps"] = {
+			description = "Can be found in inland waters and waterways.",
+			maps = {
 				MAP.ALTERAC_MOUNTAINS,
 				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180682, {	-- Oily Blackmouth School
-			["description"] = "Can be found on the seaside.",
-			["maps_disp"] = {
+			description = "Can be found on the seaside.",
+			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
 				MAP.AZSHARA,
@@ -1354,14 +1354,14 @@ root(ROOTS.Craftables, {
 		}),
 		-- The following pre-5.1.0 Sagefish school IDs needs to be confirmed in game.
 		o(180656, {	-- Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
+			description = "Can be found in inland waters and waterways.",
 		}),
 		o(180663, {	-- Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
+			description = "Can be found in inland waters and waterways.",
 		}),
 		o(216764, {	-- Sagefish School
-			["description"] = "Can be found in inland waters and waterways.",
-			["maps"] = {
+			description = "Can be found in inland waters and waterways.",
+			maps = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.LOCH_MODAN,
@@ -1370,18 +1370,18 @@ root(ROOTS.Craftables, {
 				MAP.REDRIDGE_MOUNTAINS,
 				MAP.WETLANDS,
 			},
-			["timeline"] = { ADDED_5_1_0 },
+			timeline = { ADDED_5_1_0 },
 		}),
 		o(180658, {	-- School of Deviate Fish
-			["coords"] = {
+			coords = {
 				{ 56.0, 43.0, MAP.THE_BARRENS },	-- The Stagnant Oasis
 				{ 46.0, 38.0, MAP.THE_BARRENS },	-- Lushwater Oasis
 				{ 45.0, 22.0, MAP.THE_BARRENS },	-- The Forgotten Oasis
 			},
 		}),
 		o(180712, {	-- Stonescale Eel Swarm
-			["description"] = "Can be found on the seaside.",
-			["maps"] = {
+			description = "Can be found on the seaside.",
+			maps = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
 				MAP.FERALAS,
@@ -1391,14 +1391,14 @@ root(ROOTS.Craftables, {
 		}),
 		-- Wreckages:
 		o(180901, {	-- Bloodsail Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
-			["maps"] = {
+			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			maps = {
 				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180655, {	-- Floating Debris
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
-			["maps"] = {
+			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			maps = {
 				MAP.DARKSHORE,
 				MAP.DUSKWOOD,
 				MAP.REDRIDGE_MOUNTAINS,
@@ -1408,8 +1408,8 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180751, {	-- Floating Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
-			["maps"] = {
+			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			maps = {
 				MAP.BLASTED_LANDS,
 				MAP.EASTERN_PLAGUELANDS,
 				MAP.SWAMP_OF_SORROWS,
@@ -1417,8 +1417,8 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180662, {	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
-			["maps"] = {
+			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			maps = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
 				MAP.STONETALON_MOUNTAINS,
@@ -1426,19 +1426,19 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180685, {	-- Waterlogged Wreckage / Pre WotLK: Floating Wreckage
-			["description"] = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
-			["maps"] = {
+			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			maps = {
 				MAP.TANARIS,
 				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 	}),
 	prof(HERBALISM, {
-		header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ ["requireSkill"] = HERBALISM, }, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ requireSkill = HERBALISM, }, {	-- Herb Gathering
 			-- Nodes:
 			o(142141, {	-- Arthas' Tears (Scourge)
-				["learnedAt"] = 220,
-				["maps"] = {
+				learnedAt = 220,
+				maps = {
 					MAP.EASTERN_PLAGUELANDS,
 					MAP.RAZORFEN_DOWNS,
 					MAP.STRATHOLME,
@@ -1446,13 +1446,13 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			o(176642, {	-- Arthas' Tears (Felwood)
-				["learnedAt"] = 220,
-				["maps"] = { MAP.FELWOOD },
+				learnedAt = 220,
+				maps = { MAP.FELWOOD },
 			}),
 			o(176589, {	-- Black Lotus
-				["description"] = "Black Lotus is a rare spawn, and can spawn in place of other herbs.",
-				["learnedAt"] = 300,
-				["maps"] = {
+				description = "Black Lotus is a rare spawn, and can spawn in place of other herbs.",
+				learnedAt = 300,
+				maps = {
 					MAP.SILITHUS,
 					MAP.BURNING_STEPPES,
 					MAP.EASTERN_PLAGUELANDS,
@@ -1460,13 +1460,13 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			o(142143, {	-- Blindweed
-				["maps"] = { MAP.SWAMP_OF_SORROWS },
-				["learnedAt"] = 235,
-				["description"] = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
+				maps = { MAP.SWAMP_OF_SORROWS },
+				learnedAt = 235,
+				description = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
 			}),
 			o(1621, {	-- Briarthorn
-				["learnedAt"] = 70,
-				["maps"] = {
+				learnedAt = 70,
+				maps = {
 					MAP.DARKSHORE,
 					MAP.DUSKWOOD,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -1476,18 +1476,18 @@ root(ROOTS.Craftables, {
 					MAP.REDRIDGE_MOUNTAINS,
 					MAP.SILVERPINE_FOREST,
 				},
-				["description"] = "Usually found near trees.",
+				description = "Usually found near trees.",
 			}),
 			o(3729, {	-- Briarthorn (The Barrens)
 				-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
-				["learnedAt"] = 70,
-				["maps"] = {
+				learnedAt = 70,
+				maps = {
 					MAP.THE_BARRENS
 				},
 			}),
 			o(1622, {	-- Bruiseweed
-				["learnedAt"] = 100,
-				["maps"] = {
+				learnedAt = 100,
+				maps = {
 					MAP.ASHENVALE,
 					MAP.DUSKWOOD,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -1496,22 +1496,22 @@ root(ROOTS.Craftables, {
 					MAP.THOUSAND_NEEDLES,
 					MAP.WETLANDS,
 				},
-				["description"] = "Usually found near hillsides, buildings and structures.",
+				description = "Usually found near hillsides, buildings and structures.",
 			}),
 			o(3730, {	-- Bruiseweed (The Barrens/Stonetalon Mountains)
 				-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
-				["learnedAt"] = 100,
-				["maps"] = {
+				learnedAt = 100,
+				maps = {
 					MAP.THE_BARRENS
 				},
 			}),
 			o(2044, {	-- Dragon's Teeth [CATA+] / Wintersbite
-				["maps"] = { MAP.ALTERAC_MOUNTAINS },
-				["learnedAt"] = 195,
+				maps = { MAP.ALTERAC_MOUNTAINS },
+				learnedAt = 195,
 			}),
 			o(176584, {	-- Dreamfoil
-				["learnedAt"] = 270,
-				["maps"] = {
+				learnedAt = 270,
+				maps = {
 					MAP.BURNING_STEPPES,
 					MAP.SILITHUS,
 					MAP.AZSHARA,
@@ -1519,15 +1519,15 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				["description"] = "Can usually be found on flat open spaces.",
+				description = "Can usually be found on flat open spaces.",
 			}),
 			o(176693, {	-- Dreamfoil (Felwood)
-				["learnedAt"] = 270,
-				["maps"] = { MAP.FELWOOD },
+				learnedAt = 270,
+				maps = { MAP.FELWOOD },
 			}),
 			o(1619, {	-- Earthroot
-				["learnedAt"] = 15,
-				["maps"] = {
+				learnedAt = 15,
+				maps = {
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
 					MAP.ELWYNN_FOREST,
@@ -1539,45 +1539,45 @@ root(ROOTS.Craftables, {
 					MAP.DARKSHORE,
 					MAP.REDRIDGE_MOUNTAINS,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(3726, {	-- Earthroot (The Barrens)
 				-- Note: This node get replaced by o(1619) at an unknown point between MOP and TWW.
-				["maps"] = { MAP.THE_BARRENS },
-				["learnedAt"] = 15,
+				maps = { MAP.THE_BARRENS },
+				learnedAt = 15,
 			}),
 			o(2042, {	-- Fadeleaf
-				["learnedAt"] = 160,
-				["maps"] = {
+				learnedAt = 160,
+				maps = {
 					MAP.ALTERAC_MOUNTAINS,
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.STRANGLETHORN_VALE,
 				},
-				["description"] = "Can be found in fertile terrain and fields.",
+				description = "Can be found in fertile terrain and fields.",
 			}),
 			o(2866, {	-- Firebloom
-				["learnedAt"] = 205,
-				["maps"] = {
+				learnedAt = 205,
+				maps = {
 					MAP.BADLANDS,
 					MAP.SEARING_GORGE,
 					MAP.TANARIS,
 					MAP.BLASTED_LANDS,
 				},
-				["description"] = "Can be found on hot deserts.",
+				description = "Can be found on hot deserts.",
 			}),
 			o(142144, {	-- Ghost Mushroom
-				["coords"] = {
+				coords = {
 					{ 58.0, 41.2, MAP.THE_HINTERLANDS },
 					{ 55.8, 68.1, MAP.THE_HINTERLANDS },
 					{ 57.0, 81.0, MAP.THE_HINTERLANDS },
 				},
-				["description"] = "Can be found inside caves.",
-				["learnedAt"] = 245,
+				description = "Can be found inside caves.",
+				learnedAt = 245,
 			}),
 			o(176583, {	-- Golden Sansam
-				["learnedAt"] = 260,
-				["maps"] = {
+				learnedAt = 260,
+				maps = {
 					MAP.SILITHUS,
 					MAP.UNGORO_CRATER,
 					MAP.AZSHARA,
@@ -1586,15 +1586,15 @@ root(ROOTS.Craftables, {
 					MAP.FERALAS,
 					MAP.THE_HINTERLANDS,
 				},
-				["description"] = "Can be found by trees and other natural structures.",
+				description = "Can be found by trees and other natural structures.",
 			}),
 			o(176638, {	-- Golden Sansam (Felwood)
-				["learnedAt"] = 260,
-				["maps"] = { MAP.FELWOOD },
+				learnedAt = 260,
+				maps = { MAP.FELWOOD },
 			}),
 			o(2046, {	-- Goldthorn
-				["learnedAt"] = 170,
-				["maps"] = {
+				learnedAt = 170,
+				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.FERALAS,
@@ -1603,37 +1603,37 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(1628, {	-- Grave Moss
-				["coords"] = {
+				coords = {
 					{ 20.0, 40.0, MAP.DUSKWOOD },	-- Raven Hill Cemetery
 					{ 50.0, 58.0, MAP.DESOLACE },
 					{ 80.0, 71.0, MAP.DUSKWOOD },
 				},
-				["description"] = "Can be found on graves.",
-				["learnedAt"] = 120,
+				description = "Can be found on graves.",
+				learnedAt = 120,
 			}),
 			o(142145, {	-- Gromsblood
-				["coords"] = {
+				coords = {
 					{ 84.1, 71.65, MAP.ASHENVALE },	-- Felfire Hill
 					{ 53.5, 46.5, MAP.BLASTED_LANDS },
 					{ 50.0, 80.0, MAP.DESOLACE },
 				},
-				["description"] = "Found in locations corrupted by the Burning Legion.",
-				["learnedAt"] = 250,
+				description = "Found in locations corrupted by the Burning Legion.",
+				learnedAt = 250,
 			}),
 			o(176637, {	-- Gromsblood (Felwood)
-				["learnedAt"] = 250,
-				["maps"] = { MAP.FELWOOD },
+				learnedAt = 250,
+				maps = { MAP.FELWOOD },
 			}),
 			o(176588, {	-- Icecap
-				["learnedAt"] = 290,
-				["maps"] = { MAP.WINTERSPRING },
+				learnedAt = 290,
+				maps = { MAP.WINTERSPRING },
 			}),
 			o(2043, {	-- Khadgar's Whisker
-				["learnedAt"] = 185,
-				["maps"] = {
+				learnedAt = 185,
+				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.FERALAS,
@@ -1643,11 +1643,11 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				["description"] = "Can be found near trees.",
+				description = "Can be found near trees.",
 			}),
 			o(1624, {	-- Kingsblood
-				["learnedAt"] = 125,
-				["maps"] = {
+				learnedAt = 125,
+				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSKWOOD,
 					MAP.WETLANDS,
@@ -1662,11 +1662,11 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.THOUSAND_NEEDLES,
 				},
-				["description"] = "Can be found in the woods.",
+				description = "Can be found in the woods.",
 			}),
 			o(2041, {	-- Liferoot
-				["learnedAt"] = 150,
-				["maps"] = {
+				learnedAt = 150,
+				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.THE_HINTERLANDS,
@@ -1679,11 +1679,11 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				["description"] = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
+				description = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 			}),
 			o(1620, {	-- Mageroyal
-				["learnedAt"] = 50,
-				["maps"] = {
+				learnedAt = 50,
+				maps = {
 					MAP.DARKSHORE,
 					MAP.LOCH_MODAN,
 					MAP.SILVERPINE_FOREST,
@@ -1696,14 +1696,14 @@ root(ROOTS.Craftables, {
 			}),
 			o(3727, {	-- Mageroyal (The Barrens)
 				-- Note: This node get replaced by o(1620) at an unknown point between MOP and TWW.
-				["learnedAt"] = 50,
-				["maps"] = {
+				learnedAt = 50,
+				maps = {
 					MAP.THE_BARRENS
 				},
 			}),
 			o(176586, {	-- Mountain Silversage
-				["learnedAt"] = 280,
-				["maps"] = {
+				learnedAt = 280,
+				maps = {
 					MAP.AZSHARA,
 					MAP.BURNING_STEPPES,
 					MAP.EASTERN_PLAGUELANDS,
@@ -1711,14 +1711,14 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WINTERSPRING,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(176640, {	-- Mountain Silversage (Felwood)
-				["learnedAt"] = 280,
-				["maps"] = { MAP.FELWOOD },
+				learnedAt = 280,
+				maps = { MAP.FELWOOD },
 			}),
 			o(1618, {	-- Peacebloom
-				["maps"] = {
+				maps = {
 					MAP.DARKSHORE,
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
@@ -1733,23 +1733,23 @@ root(ROOTS.Craftables, {
 			}),
 			o(3724, {	-- Peacebloom (The Barrens)
 				-- Note: This node get replaced by o(1618) at an unknown point between MOP and TWW.
-				["maps"] = {
+				maps = {
 					MAP.THE_BARRENS
 				},
 			}),
 			o(142140, {	-- Purple Lotus
-				["maps"] = {
+				maps = {
 					MAP.AZSHARA,
 					MAP.FERALAS,
 					MAP.STRANGLETHORN_VALE,
 					MAP.TANARIS,
 					MAP.THE_HINTERLANDS,
 				},
-				["description"] = "Can be found in elven or troll ruins.",
-				["learnedAt"] = 210,
+				description = "Can be found in elven or troll ruins.",
+				learnedAt = 210,
 			}),
 			o(1617, {	-- Silverleaf
-				["maps"] = {
+				maps = {
 					MAP.DARKSHORE,
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
@@ -1764,24 +1764,24 @@ root(ROOTS.Craftables, {
 			}),
 			o(3725, {	-- Silverleaf (The Barrens)
 				-- Note: This node get replaced by o(1617) at an unknown point between MOP and TWW.
-				["maps"] = {
+				maps = {
 					MAP.THE_BARRENS
 				},
 			}),
 			o(176587, {	-- Sorrowmoss [CATA+] / Plaguebloom
-				["learnedAt"] = 285,
-				["maps"] = {
+				learnedAt = 285,
+				maps = {
 					MAP.EASTERN_PLAGUELANDS,
 					MAP.WESTERN_PLAGUELANDS,
 				},
 			}),
 			o(176641, {	-- Plaguebloom (Felwood)
-				["learnedAt"] = 285,
-				["maps"] = { MAP.FELWOOD },
+				learnedAt = 285,
+				maps = { MAP.FELWOOD },
 			}),
 			o(2045, {	-- Stranglekelp
-				["learnedAt"] = 85,
-				["maps"] = {
+				learnedAt = 85,
+				maps = {
 					MAP.ASHENVALE,
 					MAP.DARKSHORE,
 					MAP.DUSTWALLOW_MARSH,
@@ -1796,11 +1796,11 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THE_BARRENS,
 				},
-				["description"] = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
+				description = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
 			}),
 			o(142142, {	-- Sungrass
-				["learnedAt"] = 230,
-				["maps"] = {
+				learnedAt = 230,
+				maps = {
 					MAP.AZSHARA,
 					MAP.BLASTED_LANDS,
 					MAP.FERALAS,
@@ -1811,48 +1811,48 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			o(176636, {	-- Sungrass (Felwood)
-				["learnedAt"] = 230,
-				["maps"] = { MAP.FELWOOD },
+				learnedAt = 230,
+				maps = { MAP.FELWOOD },
 			}),
 			o(1623, {	-- Wild Steelbloom
-				["learnedAt"] = 115,
-				["maps"] = {
+				learnedAt = 115,
+				maps = {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THOUSAND_NEEDLES,
 					MAP.ARATHI_HIGHLANDS,
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				["description"] = "Can be found on uneven terrain and mountain sides.",
+				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 		}),
 		{	-- Herbs:
 			i(8836, {	-- Arthas' Tears
-				["providers"] = {
+				providers = {
 					{ "o", 142141 },	-- Arthas' Tears (Scourge)
 					{ "o", 176642 },	-- Arthas' Tears (Felwood)
 				},
 			}),
 			i(13468, {	-- Black Lotus
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.SILITHUS,
 					MAP.BURNING_STEPPES,
 					MAP.EASTERN_PLAGUELANDS,
 					MAP.WINTERSPRING,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 176589 },	-- Black Lotus
 					{ "o", 253069 },	-- Blacker Lotus
 				},
 			}),
 			i(8839, {	-- Blindweed
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.SWAMP_OF_SORROWS,
 				},
-				["provider"] = { "o", 142143 },	-- Blindweed
+				provider = { "o", 142143 },	-- Blindweed
 			}),
 			i(2450, {	-- Briarthorn
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.DUSKWOOD,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -1863,13 +1863,13 @@ root(ROOTS.Craftables, {
 					MAP.SILVERPINE_FOREST,
 					MAP.THE_BARRENS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 1621 },	-- Briarthorn
 					{ "o", 3729 },	-- Briarthorn (The Barrens)
 				},
 			}),
 			i(2453, {	-- Bruiseweed
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.DUSKWOOD,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -1878,19 +1878,19 @@ root(ROOTS.Craftables, {
 					MAP.THOUSAND_NEEDLES,
 					MAP.WETLANDS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 1622 },	-- Bruiseweed
 					{ "o", 3730 },	-- Bruiseweed (The Barrens/Stonetalon Mountains)
 				},
 			}),
 			i(3819, {	-- Dragon's Teeth [CATA+] / Wintersbite
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ALTERAC_MOUNTAINS,
 				},
-				["provider"] = { "o", 2044 },	-- Dragon's Teeth [CATA+] / Wintersbite
+				provider = { "o", 2044 },	-- Dragon's Teeth [CATA+] / Wintersbite
 			}),
 			i(13463, {	-- Dreamfoil
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.BURNING_STEPPES,
 					MAP.FELWOOD,
 					MAP.SILITHUS,
@@ -1900,14 +1900,14 @@ root(ROOTS.Craftables, {
 					MAP.WESTERN_PLAGUELANDS,
 					MAP.ZULGURUB,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 176584 },	-- Dreamfoil
 					{ "o", 176693 },	-- Dreamfoil (Felwood)
 					{ "o", 180168 },	-- Dreamfoil (Zul'Gurub)
 				},
 			}),
 			i(2449, {	-- Earthroot
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
 					MAP.ELWYNN_FOREST,
@@ -1920,37 +1920,37 @@ root(ROOTS.Craftables, {
 					MAP.REDRIDGE_MOUNTAINS,
 					MAP.THE_BARRENS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 1619 },	-- Earthroot
 					{ "o", 3726 },	-- Earthroot (The Barrens)
 				},
 			}),
 			i(3818, {	-- Fadeleaf
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ALTERAC_MOUNTAINS,
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.STRANGLETHORN_VALE,
 				},
-				["provider"] = { "o", 2042 },	-- Fadeleaf
+				provider = { "o", 2042 },	-- Fadeleaf
 			}),
 			i(4625, {	-- Firebloom
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.BADLANDS,
 					MAP.SEARING_GORGE,
 					MAP.TANARIS,
 					MAP.BLASTED_LANDS,
 				},
-				["provider"] = { "o", 2866 },	-- Firebloom
+				provider = { "o", 2866 },	-- Firebloom
 			}),
 			i(8845, {	-- Ghost Mushroom
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.THE_HINTERLANDS,
 				},
-				["provider"] = { "o", 142144 },	-- Ghost Mushroom
+				provider = { "o", 142144 },	-- Ghost Mushroom
 			}),
 			i(13464, {	-- Golden Sansam
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.FELWOOD,
 					MAP.SILITHUS,
 					MAP.UNGORO_CRATER,
@@ -1961,14 +1961,14 @@ root(ROOTS.Craftables, {
 					MAP.THE_HINTERLANDS,
 					MAP.ZULGURUB,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 176583 },	-- Golden Sansam
 					{ "o", 176638 },	-- Golden Sansam (Felwood)
 					{ "o", 180167 },	-- Golden Sansam (Zul'Gurub)
 				},
 			}),
 			i(3821, {	-- Goldthorn
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.FERALAS,
@@ -1977,32 +1977,32 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				["provider"] = { "o", 2046 },	-- Goldthorn
+				provider = { "o", 2046 },	-- Goldthorn
 			}),
 			i(3369, {	-- Grave Moss
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DESOLACE,
 					MAP.DUSKWOOD,
 				},
-				["provider"] = { "o", 1628 },	-- Grave Moss
+				provider = { "o", 1628 },	-- Grave Moss
 			}),
 			i(8846, {	-- Gromsblood
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.BLASTED_LANDS,
 					MAP.DESOLACE,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 142145 },	-- Gromsblood
 					{ "o", 176637 },	-- Gromsblood
 				},
 			}),
 			i(13467, {	-- Icecap
-				["maps_disp"] = { MAP.WINTERSPRING },
-				["provider"] = { "o", 176588 },	-- Icecap
+				maps_disp = { MAP.WINTERSPRING },
+				provider = { "o", 176588 },	-- Icecap
 			}),
 			i(3358, {	-- Khadgar's Whisker
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.FERALAS,
@@ -2012,10 +2012,10 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				["provider"] = { "o", 2043 },	-- Khadgar's Whisker
+				provider = { "o", 2043 },	-- Khadgar's Whisker
 			}),
 			i(3356, {	-- Kingsblood
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSKWOOD,
 					MAP.WETLANDS,
@@ -2030,10 +2030,10 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.THOUSAND_NEEDLES,
 				},
-				["provider"] = { "o", 1624 },	-- Kingsblood
+				provider = { "o", 1624 },	-- Kingsblood
 			}),
 			i(3357, {	-- Liferoot
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.THE_HINTERLANDS,
@@ -2046,10 +2046,10 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				["provider"] = { "o", 2041 },	-- Liferoot
+				provider = { "o", 2041 },	-- Liferoot
 			}),
 			i(785, {	-- Mageroyal
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.LOCH_MODAN,
 					MAP.SILVERPINE_FOREST,
@@ -2059,13 +2059,13 @@ root(ROOTS.Craftables, {
 					MAP.ASHENVALE,
 					MAP.REDRIDGE_MOUNTAINS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 1620 },	-- Mageroyal
 					{ "o", 3727 },	-- Mageroyal (The Barrens)
 				},
 			}),
 			i(13465, {	-- Mountain Silversage
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.AZSHARA,
 					MAP.BURNING_STEPPES,
 					MAP.EASTERN_PLAGUELANDS,
@@ -2075,14 +2075,14 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WINTERSPRING,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 176586 },	-- Mountain Silversage
 					{ "o", 176640 },	-- Mountain Silversage (Felwood)
 					{ "o", 180166 },	-- Mountain Silversage (Zul'Gurub)
 				},
 			}),
 			i(2447, {	-- Peacebloom
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
@@ -2094,13 +2094,13 @@ root(ROOTS.Craftables, {
 					MAP.TIRISFAL_GLADES,
 					MAP.WESTFALL,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 1618 },	-- Peacebloom
 					{ "o", 3724 },	-- Peacebloom (The Barrens)
 				},
 			}),
 			i(8831, {	-- Purple Lotus
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.AZSHARA,
 					MAP.FERALAS,
 					MAP.STRANGLETHORN_VALE,
@@ -2108,13 +2108,13 @@ root(ROOTS.Craftables, {
 					MAP.THE_HINTERLANDS,
 					MAP.ZULGURUB,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 142140 },	-- Purple Lotus
 					{ "o", 180165 },	-- Purple Lotus (Zul'Gurub)
 				},
 			}),
 			i(765, {	-- Silverleaf
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
@@ -2126,24 +2126,24 @@ root(ROOTS.Craftables, {
 					MAP.TIRISFAL_GLADES,
 					MAP.WESTFALL,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 1617 },	-- Silverleaf
 					{ "o", 3725 },	-- Silverleaf (The Barrens)
 				},
 			}),
 			i(13466, {	-- Sorrowmoss [CATA+] / Plaguebloom
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.EASTERN_PLAGUELANDS,
 					MAP.FELWOOD,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 176587 },	-- Sorrowmoss [CATA+] / Plaguebloom
 					{ "o", 176641 },	-- Plaguebloom (Felwood)
 				},
 			}),
 			i(3820, {	-- Stranglekelp
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.DARKSHORE,
 					MAP.DUSTWALLOW_MARSH,
@@ -2158,10 +2158,10 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THE_BARRENS,
 				},
-				["provider"] = { "o", 2045 },	-- Stranglekelp
+				provider = { "o", 2045 },	-- Stranglekelp
 			}),
 			i(8838, {	-- Sungrass
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.AZSHARA,
 					MAP.BLASTED_LANDS,
 					MAP.FERALAS,
@@ -2170,14 +2170,14 @@ root(ROOTS.Craftables, {
 					MAP.WESTERN_PLAGUELANDS,
 					MAP.EASTERN_PLAGUELANDS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 142142 },	-- Sungrass
 					{ "o", 176636 },	-- Sungrass (Felwood)
 					{ "o", 180164 },	-- Sungrass (Zul'Gurub)
 				},
 			}),
 			i(2452, {	-- Swiftthistle
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.DUSKWOOD,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -2191,7 +2191,7 @@ root(ROOTS.Craftables, {
 					MAP.REDRIDGE_MOUNTAINS,
 					MAP.THE_BARRENS,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 1621 },	-- Briarthorn
 					{ "o", 1620 },	-- Mageroyal
 					{ "o", 3729 },	-- Briarthorn (The Barrens)
@@ -2199,26 +2199,26 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			i(3355, {	-- Wild Steelbloom
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THOUSAND_NEEDLES,
 					MAP.ARATHI_HIGHLANDS,
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				["provider"] = { "o", 1623 },	-- Wild Steelbloom
+				provider = { "o", 1623 },	-- Wild Steelbloom
 			}),
 			i(8153, {	-- Wildvine
-				["provider"] = { "o", 142140 },	-- Purple Lotus
+				provider = { "o", 142140 },	-- Purple Lotus
 			}),
 		})),
 		filter(MISC, {
 			i(11020, {	-- Evergreen Pouch
-				["cost"] = {
+				cost = {
 					{ "i", 11018, 2 },	-- Un'Goro Soil
 					{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
 				},
-				["groups"] = {
+				groups = {
 					i(11024, {	-- Evergreen Herb Casing
 						i(11040),	-- Morrowgrain
 					}),
@@ -2228,10 +2228,10 @@ root(ROOTS.Craftables, {
 	}),
 	prof(LEATHERWORKING, {
 		n(COMMON_VENDOR_ITEMS, {
-			["groups"] = appendAllGroups(
+			groups = appendAllGroups(
 				{
 					i(4289, {	-- Salt
-						["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+						description = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
 						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 						--[[["providers"] = {
 							{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
@@ -2244,7 +2244,7 @@ root(ROOTS.Craftables, {
 					}),
 				},
 				sharedData({
-					["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+					description = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[["providers"] = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
@@ -2411,10 +2411,10 @@ root(ROOTS.Craftables, {
 				i(7285),	-- Nimble Leather Gloves
 				i(7358),	-- Pilferer's Gloves
 				i(4456, {	-- Raptor Hide Belt
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				i(4455, {	-- Raptor Hide Harness
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				i(7284),	-- Red Whelp Gloves
 				i(7280),	-- Rugged Leather Pants
@@ -2499,11 +2499,11 @@ root(ROOTS.Craftables, {
 	}),
 	prof(MINING, {
 		spell(2575, {	-- Mining
-			["groups"] = appendAllGroups(
-				sharedData({ ["requireSkill"] = MINING, }, {	-- Nodes:
+			groups = appendAllGroups(
+				sharedData({ requireSkill = MINING, }, {	-- Nodes:
 					-- Copper
 					o(1731, {	-- Copper Vein
-						["maps"] = {
+						maps = {
 							MAP.DARKSHORE,
 							MAP.DUN_MOROGH,
 							MAP.DUROTAR,
@@ -2518,23 +2518,23 @@ root(ROOTS.Craftables, {
 					}),
 					o(2055, {	-- Copper Vein (Redridge Mountains - Rethban Ore)
 					-- Note: This node reportedly was replaced by o(1731) with Cata during retail, but the same is not happening on classic Cata+
-						["coord"] = { 20.7, 27.0, MAP.REDRIDGE_MOUNTAINS },	-- Rethban Caverns
+						coord = { 20.7, 27.0, MAP.REDRIDGE_MOUNTAINS },	-- Rethban Caverns
 					}),
 					o(103713, {	-- Copper Vein (The Barrens - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
-						["coord"] = { 47.9, 87.2, MAP.THE_BARRENS },	-- Bael Modan Excavation
-						["races"] = HORDE_ONLY,
+						coord = { 47.9, 87.2, MAP.THE_BARRENS },	-- Bael Modan Excavation
+						races = HORDE_ONLY,
 					}),
 					o(3763, {	-- Copper Vein (The Barrens - Blood Shard)
 						-- Note: This node get replaced by o(1731) at an unknown point between MOP and TWW.
-						["maps"] = {
+						maps = {
 							MAP.THE_BARRENS,
 						},
 					}),
 					-- Dark Iron Ore
 					o(165658, {	-- Dark Iron Deposit
-						["learnedAt"] = 230,
-						["maps"] = {
+						learnedAt = 230,
+						maps = {
 							MAP.BLACKROCK_DEPTHS,
 							MAP.MOLTEN_CORE,
 							MAP.BURNING_STEPPES,
@@ -2544,9 +2544,9 @@ root(ROOTS.Craftables, {
 					-- ____________________________________________
 					-- Gold
 					o(1734, {	-- Gold Vein
-						["description"] = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
-						["learnedAt"] = 155,
-						["maps"] = {
+						description = "Gold Vein is a rare spawn in place of Iron Deposits and Mithril Deposits.",
+						learnedAt = 155,
+						maps = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
@@ -2563,28 +2563,28 @@ root(ROOTS.Craftables, {
 					}),
 					o(150080, {	-- Gold Vein (Blasted Lands - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
-						["coord"] = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
-						["learnedAt"] = 155,
-						["races"] = HORDE_ONLY,
+						coord = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
+						learnedAt = 155,
+						races = HORDE_ONLY,
 					}),
 					o(181109, {	-- Gold Vein (Felwood)
 						-- Note: This node get replaced by o(1734) at an unknown point between MOP and TWW.
-						["learnedAt"] = 155,
-						["maps"] = { MAP.FELWOOD },
+						learnedAt = 155,
+						maps = { MAP.FELWOOD },
 					}),
 					o(73941, {	-- Ooze Covered Gold Vein
-						["coords"] = {
+						coords = {
 							{ 76.8, 61.5, MAP.FERALAS },	-- The Writhing Deep - west
 							{ 73.5, 63.5, MAP.FERALAS },	-- The Writhing Deep - east
 							{ 66.1, 86.2, MAP.THOUSAND_NEEDLES },	-- Sunken Dig Site.
 						},
-						["learnedAt"] = 155,
+						learnedAt = 155,
 					}),
 					-- ____________________________________________
 					-- Iron
 					o(1735, {	-- Iron Deposit
-						["learnedAt"] = 125,
-						["maps"] = {
+						learnedAt = 125,
+						maps = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.DESOLACE,
@@ -2596,8 +2596,8 @@ root(ROOTS.Craftables, {
 					-- ____________________________________________
 					-- Mithril
 					o(2040, {	-- Mithril Deposit
-						["learnedAt"] = 175,
-						["maps"] = {
+						learnedAt = 175,
+						maps = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
@@ -2609,36 +2609,36 @@ root(ROOTS.Craftables, {
 					}),
 					o(150079, {	-- Mithril Deposit (Blasted Lands - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
-						["coord"] = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
-						["learnedAt"] = 175,
-						["races"] = HORDE_ONLY,
+						coord = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
+						learnedAt = 175,
+						races = HORDE_ONLY,
 					}),
 					o(176645, {	-- Mithril Deposit (Felwood)
 						-- Note: This node get replaced by o(2040) at an unknown point between MOP and TWW.
-						["learnedAt"] = 175,
-						["maps"] = { MAP.FELWOOD },
+						learnedAt = 175,
+						maps = { MAP.FELWOOD },
 					}),
 					o(123310, {	-- Ooze Covered Mithril Deposit
-						["coords"] = {
+						coords = {
 							{ 76.8, 61.5, MAP.FERALAS },	-- The Writhing Deep - west
 							{ 73.5, 63.5, MAP.FERALAS },	-- The Writhing Deep - east
 							{ 66.1, 86.2, MAP.THOUSAND_NEEDLES },	-- Sunken Dig Site.
 						},
-						["learnedAt"] = 175,
+						learnedAt = 175,
 					}),
 					-- ____________________________________________
 					-- Obsidian Chunk
 					o(181069, {	-- Large Obsidian Chunk
-						["learnedAt"] = 305,
-						["maps"] = {
+						learnedAt = 305,
+						maps = {
 							MAP.RUINS_OF_AHNQIRAJ,
 							MAP.TEMPLE_OF_AHNQIRAJ,
 							MAP.SILITHUS,
 						},
 					}),
 					o(181068, {	-- Small Obsidian Chunk
-						["learnedAt"] = 305,
-						["maps"] = {
+						learnedAt = 305,
+						maps = {
 							MAP.RUINS_OF_AHNQIRAJ,
 							MAP.TEMPLE_OF_AHNQIRAJ,
 							MAP.SILITHUS,
@@ -2647,12 +2647,12 @@ root(ROOTS.Craftables, {
 					-- ____________________________________________
 					-- Silver
 					o(73940, {	-- Ooze Covered Silver Vein
-						["learnedAt"] = 75,
-						["coord"] = { 66.1, 86.2, MAP.THOUSAND_NEEDLES },	-- Sunken Dig Site.
+						learnedAt = 75,
+						coord = { 66.1, 86.2, MAP.THOUSAND_NEEDLES },	-- Sunken Dig Site.
 					}),
 					o(1733, {	-- Silver Vein
-						["learnedAt"] = 75,
-						["maps"] = {
+						learnedAt = 75,
+						maps = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.ASHENVALE,
 							MAP.BADLANDS,
@@ -2669,26 +2669,26 @@ root(ROOTS.Craftables, {
 					}),
 					o(105569, {	-- Siler Vein (The Barrens/Hillsbrad Foothills - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
-						["coords"] = {
+						coords = {
 							{ 27.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine
 							{ 47.9, 87.2, MAP.THE_BARRENS },	-- Bael Modan Excavation
 						},
-						["learnedAt"] = 75,
-						["races"] = HORDE_ONLY,
+						learnedAt = 75,
+						races = HORDE_ONLY,
 					}),
 					-- ____________________________________________
 					-- Thorium
 					o(177388, {	-- Ooze Covered Rich Thorium Vein
-						["learnedAt"] = 275,
-						["maps"] = { MAP.SILITHUS },
+						learnedAt = 275,
+						maps = { MAP.SILITHUS },
 					}),
 					o(123848, {	-- Ooze Covered Thorium Vein
-						["learnedAt"] = 245,
-						["coord"] = { 50.0, 81.2, MAP.UNGORO_CRATER },	-- The Slithering Scar
+						learnedAt = 245,
+						coord = { 50.0, 81.2, MAP.UNGORO_CRATER },	-- The Slithering Scar
 					}),
 					o(175404, {	-- Rich Thorium Vein
-						["learnedAt"] = 275,
-						["maps"] = {
+						learnedAt = 275,
+						maps = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -2697,8 +2697,8 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					o(324, {	-- Small Thorium Vein
-						["learnedAt"] = 245,
-						["maps"] = {
+						learnedAt = 245,
+						maps = {
 							MAP.SILITHUS,
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
@@ -2710,20 +2710,20 @@ root(ROOTS.Craftables, {
 					}),
 					o(150082, {	-- Small Thorium Vein (Blasted Lands - Horde only)
 						-- Note: This node get replaced by o(324) at an unknown point between MOP and TWW.
-						["learnedAt"] = 245,
-						["maps"] = { MAP.BLASTED_LANDS },
-						["races"] = HORDE_ONLY,
+						learnedAt = 245,
+						maps = { MAP.BLASTED_LANDS },
+						races = HORDE_ONLY,
 					}),
 					o(176643, {	-- Small Thorium Vein (Felwood)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
-						["learnedAt"] = 245,
-						["maps"] = { MAP.FELWOOD },
+						learnedAt = 245,
+						maps = { MAP.FELWOOD },
 					}),
 					-- ____________________________________________
 					-- Tin
 					o(1732, {	-- Tin Vein
-						["learnedAt"] = 65,
-						["maps"] = {
+						learnedAt = 65,
+						maps = {
 							MAP.ASHENVALE,
 							MAP.HILLSBRAD_FOOTHILLS,
 							MAP.STONETALON_MOUNTAINS,
@@ -2734,39 +2734,39 @@ root(ROOTS.Craftables, {
 					}),
 					o(103711, {	-- Tin Vein (The Barrens/Hillsbrad Foothills - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
-						["coords"] = {
+						coords = {
 							{ 27.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine
 							{ 47.9, 87.2, MAP.THE_BARRENS },	-- Bael Modan Excavation
 						},
-						["learnedAt"] = 65,
-						["races"] = HORDE_ONLY,
+						learnedAt = 65,
+						races = HORDE_ONLY,
 					}),
 					o(2054, {	-- Tin Vein (Redridge Mountains - Rethban Ore)
 						-- Note: This node get replaced by o(1732) at an unknown point between MOP and TWW.
-						["coord"] = { 20.7, 27.0, MAP.REDRIDGE_MOUNTAINS },	-- Rethban Caverns
-						["learnedAt"] = 65,
+						coord = { 20.7, 27.0, MAP.REDRIDGE_MOUNTAINS },	-- Rethban Caverns
+						learnedAt = 65,
 					}),
 					o(3764, {	-- Tin Vein (The Barrens - Blood Shard)
 						-- Note: This node get replaced by o(1732) at an unknown point between MOP and TWW.
-						["learnedAt"] = 65,
-						["maps"] = {
+						learnedAt = 65,
+						maps = {
 							MAP.THE_BARRENS,
 						},
 					}),
 					-- ____________________________________________
 					-- Truesilver
 					o(123309, {	-- Ooze Covered Truesilver Deposit
-						["coords"] = {
+						coords = {
 							{ 76.8, 61.5, MAP.FERALAS },	-- The Writhing Deep - west
 							{ 73.5, 63.5, MAP.FERALAS },	-- The Writhing Deep - east
 							{ 50.0, 81.2, MAP.UNGORO_CRATER },	-- The Slithering Scar
 						},
-						["learnedAt"] = 230,
-						["maps"] = { MAP.SILITHUS },
+						learnedAt = 230,
+						maps = { MAP.SILITHUS },
 					}),
 					o(2047, {	-- Truesilver Deposit
-						["learnedAt"] = 230,
-						["maps"] = {
+						learnedAt = 230,
+						maps = {
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
 							MAP.EASTERN_PLAGUELANDS,
@@ -2780,21 +2780,21 @@ root(ROOTS.Craftables, {
 					}),
 					o(150081, {	-- Truesilver Deposit (Blasted Lands - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
-						["coord"] = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
-						["learnedAt"] = 230,
-						["races"] = HORDE_ONLY,
+						coord = { 50.4, 10.3, MAP.BLASTED_LANDS },	-- Nethergarde Mine
+						learnedAt = 230,
+						races = HORDE_ONLY,
 					}),
 					o(181108, {	-- Truesilver Deposit (Felwood)
 						-- Note: This node get replaced by o(2047) at an unknown point between MOP and TWW.
-						["learnedAt"] = 230,
-						["maps"] = { MAP.FELWOOD },
+						learnedAt = 230,
+						maps = { MAP.FELWOOD },
 					}),
 				}),
 				{
 					-- ____________________________________________
 					-- Ores
 					i(2770, {	-- Copper Ore
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.DARKSHORE,
 							MAP.DUN_MOROGH,
 							MAP.DUROTAR,
@@ -2807,19 +2807,19 @@ root(ROOTS.Craftables, {
 							MAP.THE_BARRENS,
 							MAP.ZEPHRAS_ISLE
 						},
-						["provider"] = { "o", 1731 },	-- Copper Vein
+						provider = { "o", 1731 },	-- Copper Vein
 					}),
 					i(11370, {	-- Dark Iron Ore
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.BLACKROCK_DEPTHS,
 							MAP.MOLTEN_CORE,
 							MAP.BURNING_STEPPES,
 							MAP.SEARING_GORGE,
 						},
-						["provider"] = { "o", 165658 },	-- Dark Iron Deposit
+						provider = { "o", 165658 },	-- Dark Iron Deposit
 					}),
 					i(2776, {	-- Gold Ore
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
@@ -2833,13 +2833,13 @@ root(ROOTS.Craftables, {
 							MAP.AZSHARA,
 							MAP.STRANGLETHORN_VALE,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 1734 },	-- Gold Vein
 							{ "o", 73941 },	-- Ooze Covered Gold Vein
 						},
 					}),
 					i(2772, {	-- Iron Ore
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.DESOLACE,
@@ -2847,10 +2847,10 @@ root(ROOTS.Craftables, {
 							MAP.STRANGLETHORN_VALE,
 							MAP.THOUSAND_NEEDLES,
 						},
-						["provider"] = { "o", 1735 },	-- Iron Deposit
+						provider = { "o", 1735 },	-- Iron Deposit
 					}),
 					i(3858, {	-- Mithril Ore
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
 							MAP.FELWOOD,
@@ -2859,10 +2859,10 @@ root(ROOTS.Craftables, {
 							MAP.TANARIS,
 							MAP.AZSHARA,
 						},
-						["provider"] = { "o", 2040 },	-- Mithril Deposit
+						provider = { "o", 2040 },	-- Mithril Deposit
 					}),
 					i(249391, {	-- Pyrite
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.DARKSHORE,
 							MAP.DUN_MOROGH,
 							MAP.DUROTAR,
@@ -2875,12 +2875,12 @@ root(ROOTS.Craftables, {
 							MAP.THE_BARRENS,
 							MAP.ZEPHRAS_ISLE
 						},
-						["provider"] = { "o", 1731 },	-- Copper Vein
-						["timeline"] = { TIMELINE.ADDED_1_60_1 },
+						provider = { "o", 1731 },	-- Copper Vein
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(2775, {	-- Silver Ore
-						["description"] = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
-						["maps_disp"] = {
+						description = "Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",
+						maps_disp = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.ASHENVALE,
 							MAP.BADLANDS,
@@ -2896,13 +2896,13 @@ root(ROOTS.Craftables, {
 							MAP.THE_HINTERLANDS,
 							MAP.WESTERN_PLAGUELANDS,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 73940 },	-- Ooze Covered Silver Vein
 							{ "o", 1733 },	-- Silver Vein
 						},
 					}),
 					i(10620, {	-- Thorium Ore
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -2911,7 +2911,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
 							{ "o", 123848 },	-- Ooze Covered Thorium Vein
@@ -2920,7 +2920,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(2771, {	-- Tin Ore
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ASHENVALE,
 							MAP.HILLSBRAD_FOOTHILLS,
 							MAP.STONETALON_MOUNTAINS,
@@ -2928,11 +2928,11 @@ root(ROOTS.Craftables, {
 							MAP.THOUSAND_NEEDLES,
 							MAP.WETLANDS,
 						},
-						["provider"] = { "o", 1732 },	-- Tin Vein
+						provider = { "o", 1732 },	-- Tin Vein
 					}),
 					i(7911, {	-- Truesilver Ore
-						["description"] = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
-						["maps_disp"] = {
+						description = "Truesilver Deposits is a rare spawn in place of Mithril Deposits and Thorium Veins.",
+						maps_disp = {
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
 							MAP.EASTERN_PLAGUELANDS,
@@ -2944,7 +2944,7 @@ root(ROOTS.Craftables, {
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 123309 },	-- Ooze Covered Truesilver Deposit
 							{ "o", 2047 },	-- Truesilver Deposit
 						},
@@ -2952,7 +2952,7 @@ root(ROOTS.Craftables, {
 					-- ____________________________________________
 					-- Stones:
 					i(2836, {	-- Coarse Stone
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ASHENVALE,
 							MAP.DUSKWOOD,
 							MAP.HILLSBRAD_FOOTHILLS,
@@ -2961,10 +2961,10 @@ root(ROOTS.Craftables, {
 							MAP.THOUSAND_NEEDLES,
 							MAP.WETLANDS,
 						},
-						["provider"] = { "o", 1732 },	-- Tin Vein
+						provider = { "o", 1732 },	-- Tin Vein
 					}),
 					i(12365, {	-- Dense Stone
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -2973,7 +2973,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
 							{ "o", 123848 },	-- Ooze Covered Thorium Vein
@@ -2982,7 +2982,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(2838, {	-- Heavy Stone
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.DESOLACE,
@@ -2990,10 +2990,10 @@ root(ROOTS.Craftables, {
 							MAP.STRANGLETHORN_VALE,
 							MAP.THOUSAND_NEEDLES,
 						},
-						["provider"] = { "o", 1735 },	-- Iron Deposit
+						provider = { "o", 1735 },	-- Iron Deposit
 					}),
 					i(2835, {	-- Rough Stone
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.DARKSHORE,
 							MAP.DUN_MOROGH,
 							MAP.DUROTAR,
@@ -3005,10 +3005,10 @@ root(ROOTS.Craftables, {
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
 						},
-						["provider"] = { "o", 1731 },	-- Copper Vein
+						provider = { "o", 1731 },	-- Copper Vein
 					}),
 					i(7912, {	-- Solid Stone
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -3017,7 +3017,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["provider"] = { "o", 2040 },	-- Mithril Deposit
+						provider = { "o", 2040 },	-- Mithril Deposit
 					}),
 					-- ____________________________________________
 					--
@@ -3028,8 +3028,8 @@ root(ROOTS.Craftables, {
 					-- i(7076),	-- Essence of Earth
 					-- Misc:
 					i(12363, {	-- Arcane Crystal
-						["description"] = "Arcane Crystal is most reliably obtainable from mining Rich Thorium Veins, although the droprate is low.",
-						["maps_disp"] = {
+						description = "Arcane Crystal is most reliably obtainable from mining Rich Thorium Veins, although the droprate is low.",
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -3038,7 +3038,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
 							{ "o", 123848 },	-- Ooze Covered Thorium Vein
@@ -3046,24 +3046,24 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(9262, {	-- Black Vitriol
-						["description"] = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
-						["providers"] = {
+						description = "This gem is most reliably obtained from mining veins, although the droprate is 1%.",
+						providers = {
 							{ "o", 2040 },	-- Mithril Deposit
 							{ "o", 324 },	-- Small Thorium Vein
 						},
 					}),
 					i(11382, {	-- Blood of the Mountain
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.BLACKROCK_DEPTHS,
 							MAP.MOLTEN_CORE,
 							MAP.BURNING_STEPPES,
 							MAP.SEARING_GORGE,
 						},
-						["provider"] = { "o", 165658 },	-- Dark Iron Deposit
+						provider = { "o", 165658 },	-- Dark Iron Deposit
 					}),
 					i(8150, {	-- Deeprock Salt
-						["description"] = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
-						["maps_disp"] = {
+						description = "Can drop from any highlevel earth elemental and construct creatures, and miners can get additional yield from mining the corpse.",
+						maps_disp = {
 							MAP.BLACKROCK_DEPTHS,
 							MAP.MARAUDON,
 							MAP.ULDAMAN,
@@ -3074,10 +3074,10 @@ root(ROOTS.Craftables, {
 				-- Gems (obtainable from prospecting):
 				-- Note: The gems are linked to respective ores with provider for prospecting in JEWELCRAFTING > Prospecting.
 				sharedData({
-					["description"] = "This gem is most reliably obtained from mining veins, although the droprate is low.",
+					description = "This gem is most reliably obtained from mining veins, although the droprate is low.",
 				}, {
 					i(7909, {	-- Aquamarine
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
 							MAP.FELWOOD,
@@ -3086,13 +3086,13 @@ root(ROOTS.Craftables, {
 							MAP.TANARIS,
 							MAP.AZSHARA,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 2040 },	-- Mithril Deposit
 							{ "o", 2047 },	-- Truesilver Deposit
 						},
 					}),
 					i(12800, {	-- Azerothian Diamond
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -3101,7 +3101,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
 							{ "o", 123848 },	-- Ooze Covered Thorium Vein
@@ -3110,7 +3110,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(12361, {	-- Blue Sapphire
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -3119,7 +3119,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
 							{ "o", 123848 },	-- Ooze Covered Thorium Vein
@@ -3128,7 +3128,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(3864, {	-- Citrine
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
@@ -3142,7 +3142,7 @@ root(ROOTS.Craftables, {
 							MAP.AZSHARA,
 							MAP.STRANGLETHORN_VALE,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 1735 },	-- Iron Deposit
 							{ "o", 2040 },	-- Mithril Deposit
 							{ "o", 1734 },	-- Gold Vein
@@ -3150,7 +3150,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(12364, {	-- Huge Emerald
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -3159,7 +3159,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
 							{ "o", 123848 },	-- Ooze Covered Thorium Vein
@@ -3168,7 +3168,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(1529, {	-- Jade
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.BADLANDS,
 							MAP.DESOLACE,
@@ -3176,13 +3176,13 @@ root(ROOTS.Craftables, {
 							MAP.STRANGLETHORN_VALE,
 							MAP.THOUSAND_NEEDLES,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 1735 },	-- Iron Deposit
 							{ "o", 1734 },	-- Gold Vein
 						},
 					}),
 					i(12799, {	-- Large Opal
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.UNGORO_CRATER,
 							MAP.WINTERSPRING,
 							MAP.AZSHARA,
@@ -3191,7 +3191,7 @@ root(ROOTS.Craftables, {
 							MAP.FELWOOD,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
 							{ "o", 123848 },	-- Ooze Covered Thorium Vein
@@ -3200,7 +3200,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(1705, {	-- Lesser Moonstone
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ARATHI_HIGHLANDS,
 							MAP.ASHENVALE,
 							MAP.BADLANDS,
@@ -3214,7 +3214,7 @@ root(ROOTS.Craftables, {
 							MAP.STRANGLETHORN_VALE,
 							MAP.THOUSAND_NEEDLES,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 1732 },	-- Tin Vein
 							{ "o", 1735 },	-- Iron Deposit
 							{ "o", 1733 },	-- Silver Vein
@@ -3222,7 +3222,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(774, {	-- Malachite
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.DARKSHORE,
 							MAP.DUN_MOROGH,
 							MAP.DUROTAR,
@@ -3234,10 +3234,10 @@ root(ROOTS.Craftables, {
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
 						},
-						["provider"] = { "o", 1731 },	-- Copper Vein
+						provider = { "o", 1731 },	-- Copper Vein
 					}),
 					i(1206, {	-- Moss Agate
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.ASHENVALE,
 							MAP.DUSKWOOD,
 							MAP.HILLSBRAD_FOOTHILLS,
@@ -3246,13 +3246,13 @@ root(ROOTS.Craftables, {
 							MAP.THOUSAND_NEEDLES,
 							MAP.WETLANDS,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 1732 },	-- Tin Vein
 							{ "o", 1733 },	-- Silver Vein
 						},
 					}),
 					i(1210, {	-- Shadowgem
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.DARKSHORE,
 							MAP.DUN_MOROGH,
 							MAP.DUROTAR,
@@ -3271,14 +3271,14 @@ root(ROOTS.Craftables, {
 							MAP.THOUSAND_NEEDLES,
 							MAP.WETLANDS,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 1731 },	-- Copper Vein
 							{ "o", 1732 },	-- Tin Vein
 							{ "o", 1733 },	-- Silver Vein
 						},
 					}),
 					i(7910, {	-- Star Ruby
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.BADLANDS,
 							MAP.BURNING_STEPPES,
 							MAP.FELWOOD,
@@ -3291,7 +3291,7 @@ root(ROOTS.Craftables, {
 							MAP.EASTERN_PLAGUELANDS,
 							MAP.ZULGURUB,
 						},
-						["providers"] = {
+						providers = {
 							{ "o", 2040 },	-- Mithril Deposit
 							{ "o", 180215 },	-- Hakkari Thorium Vein
 							{ "o", 177388 },	-- Ooze Covered Rich Thorium Vein
@@ -3302,7 +3302,7 @@ root(ROOTS.Craftables, {
 						},
 					}),
 					i(818, {	-- Tigerseye
-						["maps_disp"] = {
+						maps_disp = {
 							MAP.DARKSHORE,
 							MAP.DUN_MOROGH,
 							MAP.DUROTAR,
@@ -3314,14 +3314,14 @@ root(ROOTS.Craftables, {
 							MAP.WESTFALL,
 							MAP.THE_BARRENS,
 						},
-						["provider"] = { "o", 1731 },	-- Copper Vein
+						provider = { "o", 1731 },	-- Copper Vein
 					}),
 				})
 			),
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(2901, {	-- Mining Pick
-				["description"] = createLocalizationString({
+				description = createLocalizationString({
 					readable = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
 					constant = "MINING_PICK_DESCRIPTION",
 					export = true,
@@ -3343,44 +3343,44 @@ root(ROOTS.Craftables, {
 		}),
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(2841, {	-- Bronze Bar
-				["cost"] = ClassicCost({
+				cost = ClassicCost({
 					{ "i", 2840, 1 },	-- Copper Bar
 					{ "i", 3576, 1 },	-- Tin Bar
 				}),
 			}),
 			i(2840, {	-- Copper Bar
-				["cost"] = ClassicCost({ { "i", 2770, 1 } }),	-- Copper Ore
+				cost = ClassicCost({ { "i", 2770, 1 } }),	-- Copper Ore
 			}),
 			i(11371, {	-- Dark Iron Bar
-				["cost"] = ClassicCost({ { "i", 11370, 8 } }),	-- Dark Iron Ore
-				["description"] = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
+				cost = ClassicCost({ { "i", 11370, 8 } }),	-- Dark Iron Ore
+				description = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
 			}),
 			i(3577, {	-- Gold Bar
-				["cost"] = ClassicCost({ { "i", 2776, 1 } }),	-- Gold Ore
+				cost = ClassicCost({ { "i", 2776, 1 } }),	-- Gold Ore
 			}),
 			i(3575, {	-- Iron Bar
-				["cost"] = ClassicCost({ { "i", 2772, 1 } }),	-- Iron Ore
+				cost = ClassicCost({ { "i", 2772, 1 } }),	-- Iron Ore
 			}),
 			i(3860, {	-- Mithril Bar
-				["cost"] = ClassicCost({ { "i", 3858, 1 } }),	-- Mithril Ore
+				cost = ClassicCost({ { "i", 3858, 1 } }),	-- Mithril Ore
 			}),
 			i(2842, {	-- Silver Bar
-				["cost"] = ClassicCost({ { "i", 2775, 1 } }),	-- Silver Ore
+				cost = ClassicCost({ { "i", 2775, 1 } }),	-- Silver Ore
 			}),
 			i(3859, {	-- Steel Bar
-				["cost"] = ClassicCost({
+				cost = ClassicCost({
 					{ "i", 3575, 1 },	-- Iron Bar
 					{ "i", 3857, 1 },	-- Coal
 				}),
 			}),
 			i(12359, {	-- Thorium Bar
-				["cost"] = ClassicCost({ { "i", 10620, 1 } }),	-- Thorium Ore
+				cost = ClassicCost({ { "i", 10620, 1 } }),	-- Thorium Ore
 			}),
 			i(3576, {	-- Tin Bar
-				["cost"] = ClassicCost({ { "i", 2771, 1 } }),	-- Tin Ore
+				cost = ClassicCost({ { "i", 2771, 1 } }),	-- Tin Ore
 			}),
 			i(6037, {	-- Truesilver Bar
-				["cost"] = ClassicCost({ { "i", 7911, 1 } }),	-- Truesilver Ore
+				cost = ClassicCost({ { "i", 7911, 1 } }),	-- Truesilver Ore
 			}),
 		}),
 	}),
@@ -3409,7 +3409,7 @@ root(ROOTS.Craftables, {
 	prof(SKINNING, {
 		n(COMMON_VENDOR_ITEMS, {
 			i(7005, {	-- Skinning Knife
-				["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+				description = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
 			}),
 			i(277114, {	-- Apprentice's Skinning Satchel
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3418,14 +3418,14 @@ root(ROOTS.Craftables, {
 		spell(8613, {	-- Skinning
 			-- Base leathers:
 			i(4234, {	-- Heavy Leather
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DUSTWALLOW_MARSH,
 					MAP.TANARIS,
 					MAP.THE_HINTERLANDS,
 				},
 			}),
 			i(2318, {	-- Light Leather
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.LOCH_MODAN,
 					MAP.SILVERPINE_FOREST,
@@ -3433,18 +3433,18 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			i(2319, {	-- Medium Leather
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.STONETALON_MOUNTAINS,
 				},
 			}),
 			i(8170, {	-- Rugged Leather
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.BLASTED_LANDS,
 				},
 			}),
 			i(2934, {	-- Ruined Leather Scraps
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
 					MAP.ELWYNN_FOREST,
@@ -3454,7 +3454,7 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			i(4304, {	-- Thick Leather
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.BADLANDS,
 					MAP.FELWOOD,
 					MAP.THOUSAND_NEEDLES,
@@ -3464,16 +3464,16 @@ root(ROOTS.Craftables, {
 			}),
 			-- Base hides:
 			i(4235, {	-- Heavy Hide
-				["description"] = "Is a rare drop in place of Heavy Leather.",
-				["maps_disp"] = {
+				description = "Is a rare drop in place of Heavy Leather.",
+				maps_disp = {
 					MAP.DUSTWALLOW_MARSH,
 					MAP.TANARIS,
 					MAP.THE_HINTERLANDS,
 				},
 				}),
 			i(783, {	-- Light Hide
-				["description"] = "Is a rare drop in place of Light Leather.",
-				["maps_disp"] = {
+				description = "Is a rare drop in place of Light Leather.",
+				maps_disp = {
 					MAP.DARKSHORE,
 					MAP.LOCH_MODAN,
 					MAP.SILVERPINE_FOREST,
@@ -3481,21 +3481,21 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			i(4232, {	-- Medium Hide
-				["description"] = "Is a rare drop in place of Medium Leather.",
-				["maps_disp"] = {
+				description = "Is a rare drop in place of Medium Leather.",
+				maps_disp = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.STONETALON_MOUNTAINS,
 				},
 			}),
 			i(8171, {	-- Rugged Hide
-				["description"] = "Is a rare drop in place of Rugged Leather.",
-				["maps_disp"] = {
+				description = "Is a rare drop in place of Rugged Leather.",
+				maps_disp = {
 					MAP.BLASTED_LANDS,
 				},
 			}),
 			i(8169, {	-- Thick Hide
-				["description"] = "Is a rare drop in place of Thick Leather.",
-				["maps_disp"] = {
+				description = "Is a rare drop in place of Thick Leather.",
+				maps_disp = {
 					MAP.BADLANDS,
 					MAP.FELWOOD,
 					MAP.THOUSAND_NEEDLES,
@@ -3505,7 +3505,7 @@ root(ROOTS.Craftables, {
 			}),
 			-- Special leathers
 			i(15423, {	-- Chimera Leather
-				["crs"] = {
+				crs = {
 					10807,	-- Brumeran
 					7448,	-- Chillwind Chimaera
 					7449,	-- Chillwind Ravager
@@ -3513,22 +3513,22 @@ root(ROOTS.Craftables, {
 					8764,	-- Mistwing Ravager
 					8763,	-- Mistwing Rogue
 				},
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.AZSHARA,
 					MAP.WINTERSPRING,
 				},
 			}),
 			i(17012, {	-- Core Leather
-				["crs"] = {
+				crs = {
 					11673,	-- Ancient Core Hound (Molten Core) [Retail, namechanged sometimes between MOP and BfA] / Core Hound [Classic iterations]
 					11982,	-- Magmadar
 				},
-				["maps_disp"] = {
+				maps_disp = {
 					MAP.MOLTEN_CORE,
 				},
 			}),
 			i(15419, {	-- Warbear Leather
-				["crs"] = {
+				crs = {
 					7446,	-- Rabid Shardtooth
 					7443,	-- Shardtooth Mauler
 					8957,	-- Angerclaw Grizzly
@@ -3537,33 +3537,33 @@ root(ROOTS.Craftables, {
 					7445,	-- Elder Shardtooth
 					7444,	-- Shardtooth Mauler
 				},
-				["description"] = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
-				["coords"] = {
+				description = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
+				coords = {
 					{ 55.1, 37.8, MAP.WINTERSPRING },
 					{ 58.1, 89.4, MAP.WINTERSPRING },
 				},
 			}),
 			-- Special hides
 			i(7428, {	-- Shadowcat Hide
-				["crs"] = {
+				crs = {
 					1713,	-- Elder Shadowmaw Panther
 					768,	-- Shadow Panther
 					684,	-- Shadowmaw Panther
 				},
-				["description"] = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
-				["maps_disp"] = {
+				description = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
+				maps_disp = {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
 			}),
 			i(8368, {	-- Thick Wolfhide
-				["description"] = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
-				["maps_disp"] = { MAP.BURNING_STEPPES },
+				description = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
+				maps_disp = { MAP.BURNING_STEPPES },
 			}),
 			-- Scales
 			i(15416, {	-- Black Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Black Dragonflight.",
-				["maps_disp"] = {
+				description = "Can be skinned from elite creatures of the Black Dragonflight.",
+				maps_disp = {
 					MAP.BLACKWING_LAIR,
 					MAP.BLACKROCK_SPIRE,
 					MAP.BURNING_STEPPES,
@@ -3571,41 +3571,41 @@ root(ROOTS.Craftables, {
 			}),
 			i(7286),	-- Black Whelp Scale (Sourced in Wetlands [CATA+] / Redridge Mountains)
 			i(15415, {	-- Blue Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
-				["coords"] = {
+				description = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
+				coords = {
 					{ 57.2, 65.9, MAP.WINTERSPRING },	-- Mazthoril
 					{ 38.0, 75.0, MAP.AZSHARA },	-- Lake Mennar
 				},
 			}),
 			i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
 			i(15412, {	-- Green Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
-				["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
+				description = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
+				maps_disp = { MAP.TEMPLE_OF_ATALHAKKAR },
 			}),
 			i(15408, {	-- Heavy Scorpid Scale
-				["description"] = "Can be skinned from scorpids in the level bracket 50-60.",
-				["maps_disp"] = {
+				description = "Can be skinned from scorpids in the level bracket 50-60.",
+				maps_disp = {
 					MAP.BURNING_STEPPES,
 					MAP.SILITHUS
 				},
 			}),
 			i(15414, {	-- Red Dragonscale
-				["description"] = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
-				["coord"] = { 80.0, 48.0, MAP.WETLANDS },
+				description = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
+				coord = { 80.0, 48.0, MAP.WETLANDS },
 			}),
 			i(8154, {	-- Scorpid Scale
-				["maps_disp"] = { MAP.TANARIS },
-				["description"] = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
+				maps_disp = { MAP.TANARIS },
+				description = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
 			}),
 			i(8167, {	-- Turtle Scale
-				["description"] = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
-				["maps_disp"] = {
+				description = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
+				maps_disp = {
 					MAP.DUSTWALLOW_MARSH,
 				},
 			}),
 			i(8165, {	-- Worn Dragonscale
-				["description"] = "Can be skinned from elite creatures of any Dragonflights around the world.",
-				["maps_disp"] = { MAP.TEMPLE_OF_ATALHAKKAR },
+				description = "Can be skinned from elite creatures of any Dragonflights around the world.",
+				maps_disp = { MAP.TEMPLE_OF_ATALHAKKAR },
 			}),
 		}),
 	}),
@@ -3733,15 +3733,15 @@ root(ROOTS.Craftables, {
 			i(4315),	-- Reinforced Woolen Shoulders
 			i(4335),	-- Rich Purple Silk Shirt
 			i(7054, {	-- Robe of Power
-				["requireSkill"] = TAILORING,
+				requireSkill = TAILORING,
 			}),
 			i(14152, {	-- Robe of the Archmage
-				["classes"] = { MAGE },
-				["requireSkill"] = TAILORING,
+				classes = { MAGE },
+				requireSkill = TAILORING,
 			}),
 			i(14153, {	-- Robe of the Void
-				["classes"] = { WARLOCK },
-				["requireSkill"] = TAILORING,
+				classes = { WARLOCK },
+				requireSkill = TAILORING,
 			}),
 			i(14136),	-- Robe of Winter Night
 			i(5770),	-- Robes of Arcana
@@ -3777,8 +3777,8 @@ root(ROOTS.Craftables, {
 			i(4330),	-- Stylish Red Shirt
 			i(7049),	-- Truefaith Gloves
 			i(14154, {	-- Truefaith Vestments
-				["classes"] = { PRIEST },
-				["requireSkill"] = TAILORING,
+				classes = { PRIEST },
+				requireSkill = TAILORING,
 			}),
 			i(10036),	-- Tuxedo Jacket
 			i(10035),	-- Tuxedo Pants
@@ -3814,7 +3814,7 @@ root(ROOTS.Craftables, {
 			i(4240),	-- Woolen Bag
 		}),
 		n(COMMON_VENDOR_ITEMS, {
-			["groups"] = appendAllGroups(
+			groups = appendAllGroups(
 				{	-- Danny Donkey: These are shared with Leatherworking.
 					i(2325),	-- Black Dye
 					i(6260),	-- Blue Dye
@@ -3829,7 +3829,7 @@ root(ROOTS.Craftables, {
 					i(14341),	-- Rune Thread
 				},
 				sharedData({
-					["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+					description = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[["providers"] = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
@@ -3855,8 +3855,8 @@ root(ROOTS.Craftables, {
 			i(4305),	-- Bolt of Silk Cloth
 			i(2997),	-- Bolt of Woolen Cloth
 			i(14342, {	-- Mooncloth
-				["description"] = "Coordinates are for select Moonwells around the world.",
-				["coords"] = {
+				description = "Coordinates are for select Moonwells around the world.",
+				coords = {
 					{ 43.10, 80.27, MAP.DARNASSUS },	-- Temple of the Moon
 					{ 21.0, 53.0, MAP.STORMWIND_CITY },	-- The Park
 					{ 60.0, 72.0, MAP.ASHENVALE },	-- Moonwell of Cleansing
