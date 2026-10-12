@@ -3,22 +3,22 @@
 -----------------------------------------------------
 root(ROOTS.Instances, {
 	inst(63, {	-- Deadmines
-		["lore"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
+		lore = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
 		["zone-text-areaID"] = 1581,	-- "The Deadmines" now points to the Deadmines.
-		["mapID"] = MAP.DEADMINES,
-		["coord"] = { 42.2, 82.6, MAP.WESTFALL },
-		["icon"] = 136332,
-		["lvl"] = 10,
-		["groups"] = {
+		mapID = MAP.DEADMINES,
+		coord = { 42.2, 82.6, MAP.WESTFALL },
+		icon = 136332,
+		lvl = 10,
+		groups = {
 			n(QUESTS, {
 				q(168, {	-- Collecting Memories
-					["qg"] = 656,	-- Wilder Thistlenettle
-					["coord"] = { 70.2, 40.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
-					["groups"] = {
+					qg = 656,	-- Wilder Thistlenettle
+					coord = { 70.2, 40.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
+					groups = {
 						objective(1, {	-- 0/4 Miners' Union Card
-							["provider"] = { "i", 1894 },	-- Miners' Union Card
+							provider = { "i", 1894 },	-- Miners' Union Card
 						}),
 						i(2036),	-- Dusty Mining Gloves
 						i(2037),	-- Tunneler's Boots
@@ -45,13 +45,13 @@ root(ROOTS.Instances, {
 					lvl = 9,
 				}),
 				q(167, {	-- Oh Brother. . .
-					["qg"] = 656,	-- Wilder Thistlenettle
-					["coord"] = { 70.2, 40.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					qg = 656,	-- Wilder Thistlenettle
+					coord = { 70.2, 40.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/1 Thistlenettle's Badge
-							["provider"] = { "i", 1875 },	-- Thistlenettle's Badge
+							provider = { "i", 1875 },	-- Thistlenettle's Badge
 						}),
 						i(1893),	-- Miner's Revenge
 						i(270012, {	-- Miner's Workgloves
@@ -63,19 +63,19 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(214, {	-- Red Silk Bandanas
-					["sourceQuests"] = {
+					sourceQuests = {
 						153,	-- Red Leather Bandanas
 						155,	-- The Defias Brotherhood
 					},
-					["qg"] = 820,	-- Scout Riell <The People's Militia>
-					["coord"] = { 56.7, 47.4, MAP.WESTFALL },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
-					["groups"] = {
+					qg = 820,	-- Scout Riell <The People's Militia>
+					coord = { 56.7, 47.4, MAP.WESTFALL },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
+					groups = {
 						objective(1, {	-- 0/10 Red Silk Bandana
-							["provider"] = { "i", 915 },	-- Red Silk Bandana
-							["description"] = "Can also drop from any Defias mob in the Deadmines.",
-							["crs"] = {
+							provider = { "i", 915 },	-- Red Silk Bandana
+							description = "Can also drop from any Defias mob in the Deadmines.",
+							crs = {
 								619,	-- Defias Conjurer
 								824,	-- Defias Digger
 								594,	-- Defias Henchman
@@ -90,14 +90,14 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(166, {	-- The Defias Brotherhood (7/7)
-					["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
-					["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
-					["coord"] = { 56.3, 47.5, MAP.WESTFALL },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
-					["groups"] = {
+					sourceQuest = 155,	-- The Defias Brotherhood (6/7)
+					qg = 234,	-- Gryan Stoutmantle <The People's Militia>
+					coord = { 56.3, 47.5, MAP.WESTFALL },
+					races = ALLIANCE_ONLY,
+					lvl = 14,
+					groups = {
 						objective(1, {	-- 0/1 Head of VanCleef
-							["provider"] = { "i", 3637 },	-- Head of VanCleef
+							provider = { "i", 3637 },	-- Head of VanCleef
 						}),
 						i(6087),	-- Chausses of Westfall
 						i(2042),	-- Staff of Westfall
@@ -105,22 +105,22 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(373, {	-- The Unsent Letter
-					["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
-					["qs"] = 2874,	-- An Unsent Letter (QS!)
-					["cr"] = 1646,	-- Baros Alexston <City Architect>
-					["coord"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 16,
+					description = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
+					qs = 2874,	-- An Unsent Letter (QS!)
+					cr = 1646,	-- Baros Alexston <City Architect>
+					coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 16,
 				}),
 				q(2040, {	-- Underground Assault
-					["sourceQuest"] = 2041,	-- Speak with Shoni
-					["qg"] = 6579,	-- Shoni the Shilent
-					["coord"] = { 62.8, 34.8, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 15,
-					["groups"] = {
+					sourceQuest = 2041,	-- Speak with Shoni
+					qg = 6579,	-- Shoni the Shilent
+					coord = { 62.8, 34.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 15,
+					groups = {
 						objective(1, {	-- 0/1 Gnoam Sprecklesprocket
-							["provider"] = { "i", 7365 },	-- Gnoam Sprecklesprocket
+							provider = { "i", 7365 },	-- Gnoam Sprecklesprocket
 						}),
 						i(7607),	-- Sable Wand
 						i(7606),	-- Polar Gauntlets
@@ -135,17 +135,17 @@ root(ROOTS.Instances, {
 			}),
 			n(RARES, {
 				n(596, {	-- Brainwashed Noble
-					["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-					["coord"] = { 44.0, 78.3, MAP.WESTFALL },
-					["groups"] = {
+					description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+					coord = { 44.0, 78.3, MAP.WESTFALL },
+					groups = {
 						i(3902),	-- Staff of Nobles
 						i(5967),	-- Girdle of Nobility
 					},
 				}),
 				n(626, {	-- Foreman Thistlenettle
-					["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-					["coord"] = { 42.2, 82.6, MAP.WESTFALL },
-					["groups"] = {
+					description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+					coord = { 42.2, 82.6, MAP.WESTFALL },
+					groups = {
 						i(1875),	-- Thistlenettle's Badge
 						i(2167),	-- Foreman's Gloves
 						i(2166),	-- Foreman's Leggings
@@ -153,9 +153,9 @@ root(ROOTS.Instances, {
 					},
 				}),
 				n(599, {	-- Marisa du'Paige
-					["description"] = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
-					["coord"] = { 42.2, 79.9, MAP.WESTFALL },
-					["groups"] = {
+					description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+					coord = { 42.2, 79.9, MAP.WESTFALL },
+					groups = {
 						i(3019),	-- Noble's Robe
 						i(4660),	-- Walking Boots
 					},
@@ -163,92 +163,92 @@ root(ROOTS.Instances, {
 			}),
 			n(ZONE_DROPS, {
 				i(10402, {	-- Blackened Defias Boots
-					["cr"] = 4416,	-- Defias Strip Miner
+					cr = 4416,	-- Defias Strip Miner
 				}),
 				i(10401, {	-- Blackened Defias Gloves
-					["crs"] = {
+					crs = {
 						634,	-- Defias Overseer
 						4417,	-- Defias Taskmaster
 					},
 				}),
 				i(10400, {	-- Blackened Defias Leggings
-					["crs"] = {
+					crs = {
 						634,	-- Defias Overseer
 						4417,	-- Defias Taskmaster
 					},
 				}),
 				i(1951, {	-- Blackwater Cutlass
-					["crs"] = {
+					crs = {
 						657,	-- Defias Pirate
 						1732,	-- Defias Squallshaper
 					},
 				}),
 				i(1959, {	-- Cold Iron Pick
-					["cr"] = 623,	-- Skeletal Miner
+					cr = 623,	-- Skeletal Miner
 				}),
 				i(1927, {	-- Deadmines Cleaver
-					["cr"] = 594,	-- Defias Henchman
+					cr = 594,	-- Defias Henchman
 				}),
 				i(1928, {	-- Defias Mage Staff
-					["cr"] = 1726,	-- Defias Magician
+					cr = 1726,	-- Defias Magician
 				}),
 				i(1925, {	-- Defias Rapier
-					["cr"] = 1725,	-- Defias Watchman
+					cr = 1725,	-- Defias Watchman
 				}),
 				i(1943, {	-- Goblin Mail Leggings
-					["cr"] = 3947,	-- Goblin Shipbuilder
+					cr = 3947,	-- Goblin Shipbuilder
 				}),
 				i(1936, {	-- Goblin Screwdriver
-					["cr"] = 622,	-- Goblin Engineer
+					cr = 622,	-- Goblin Engineer
 				}),
 				i(1944, {	-- Metalworking Gloves
-					["cr"] = 1731,	-- Goblin Craftsman
+					cr = 1731,	-- Goblin Craftsman
 				}),
 				i(1894, {	-- Miners' Union Card
-					["crs"] = {
+					crs = {
 						623,	-- Skeletal Miner
 						625,	-- Undead Dynamiter
 						624,	-- Undead Excavator
 					},
 				}),
 				i(8492, {	-- Green Wing Macaw (PET!)
-					["cr"] = 657,	-- Defias Pirate
+					cr = 657,	-- Defias Pirate
 				}),
 				i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
-					["cr"] = 657,	-- Defias Pirate
+					cr = 657,	-- Defias Pirate
 				}),
 				i(1958, {	-- Petrified Shinbone
-					["cr"] = 625,	-- Undead Dynamiter
+					cr = 625,	-- Undead Dynamiter
 				}),
 				i(7997, {	-- Red Defias Mask
-					["description"] = "Can drop in Westfall and The Deadmines.",
+					description = "Can drop in Westfall and The Deadmines.",
 				}),
 				i(915),	-- Red Silk Bandana
 				i(1929, {	-- Silk-threaded Trousers
-					["crs"] = {
+					crs = {
 						1729,	-- Defias Evoker
 						4418,	-- Defias Wizard
 					},
 				}),
 				i(4676, {	-- Skeletal Gauntlets
-					["cr"] = 624,	-- Undead Excavator
+					cr = 624,	-- Undead Excavator
 				}),
 				i(1930, {	-- Stonemason Cloak
-					["cr"] = 598,	-- Defias Miner
+					cr = 598,	-- Defias Miner
 				}),
 				i(1934, {	-- Stonemason Trousers [Classic] / Hogger's Trousers [CATA+]
-					["cr"] = 636,	-- Defias Blackguard
+					cr = 636,	-- Defias Blackguard
 				}),
 				i(1926, {	-- Weighted Sap
-					["cr"] = 824,	-- Defias Digger
+					cr = 824,	-- Defias Digger
 				}),
 				i(1945, {	-- Woodworking Gloves
-					["cr"] = 641,	-- Goblin Woodcarver
+					cr = 641,	-- Goblin Woodcarver
 				}),
 			}),
 			n(3586, {	-- Miner Johnson
-				["description"] = "This is a Rare Creature and, as such, is not always present.",
-				["groups"] = {
+				description = "This is a Rare Creature and, as such, is not always present.",
+				groups = {
 					i(5443),	-- Gold-plated Buckler
 					i(5444),	-- Miner's Cape
 				},
