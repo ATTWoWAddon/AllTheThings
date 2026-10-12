@@ -4,8 +4,8 @@
 ENGINEERING_RECIPES = {
 	APPRENTICE = {
 		r(4036, {	-- Engineering (Apprentice)
-			["lvl"] = 5,
-			["rank"] = 1,
+			lvl = 5,
+			rank = 1,
 		}),
 		filter(AMMO, {
 			r(3920),	-- Crafted Light Shot
@@ -22,8 +22,8 @@ ENGINEERING_RECIPES = {
 		filter(REAGENTS, {
 			r(3918),	-- Rough Blasting Powder
 			r(3922),	-- Handful of Copper Bolts
-			r(3924, {["timeline"] = {REMOVED_4_3_0}}),	-- Copper Tube
-			r(3926, {["timeline"] = {REMOVED_4_3_0}}),	-- Copper Modulator
+			r(3924, {timeline = {REMOVED_4_3_0}}),	-- Copper Tube
+			r(3926, {timeline = {REMOVED_4_3_0}}),	-- Copper Modulator
 			r(3929),	-- Coarse Blasting Powder
 		}),
 		n(WEAPONS, {
@@ -35,8 +35,8 @@ ENGINEERING_RECIPES = {
 	};
 	JOURNEYMAN = {
 		r(4037, {	-- Engineering (Journeyman)
-			["lvl"] = 10,
-			["rank"] = 2,
+			lvl = 10,
+			rank = 2,
 		}),
 		filter(AMMO, {
 			r(3947),	-- Crafted Solid Shot
@@ -76,8 +76,8 @@ ENGINEERING_RECIPES = {
 	};
 	EXPERT = {
 		r(4038, {	-- Engineering (Expert)
-			["lvl"] = 20,
-			["rank"] = 3,
+			lvl = 20,
+			rank = 3,
 		}),
 		filter(AMMO, {
 			r(12596),	-- Hi-Impact Mithril Slugs
@@ -104,7 +104,7 @@ ENGINEERING_RECIPES = {
 			r(3958),	-- Iron Strut
 			r(12599),	-- Mithril Casing
 			r(12589),	-- Mithril Tube
-			r(1249634, {["timeline"] = {TIMELINE.ADDED_1_60_1}}),	-- Sandpaper
+			r(1249634, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Sandpaper
 			r(12585),	-- Solid Blasting Powder
 			r(12591),	-- Unstable Trigger
 		}),
@@ -114,8 +114,8 @@ ENGINEERING_RECIPES = {
 	};
 	ARTISAN = {
 		r(12656, {	-- Engineering (Artisan)
-			["lvl"] = 35,
-			["rank"] = 4,
+			lvl = 35,
+			rank = 4,
 		}),
 		filter(AMMO, {
 			r(12621),	-- Mithril Gyro-Shot
