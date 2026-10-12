@@ -1303,6 +1303,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				},
 			}),
+			q(95217, {	-- The Quarry's Smith
+				["qg"] = 1698,	-- Frast Dokner
+				["coord"] = { 68.8, 55.8, MAP.DUN_MOROGH },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["classes"] = { WARRIOR, PALADIN, SHAMAN },
+				["races"] = { DWARF, GNOME, SKYBORNE_ALLIANCE },
+				["lvl"] = 7,
+				["groups"] = {
+					objective(1, {	-- 0/12 Copper Bar
+						["provider"] = { "i", 2840 },	-- Copper Bar
+					}),
+					objective(2, {	-- 0/4 Toughened Boar Hide
+						["provider"] = { "i", 267416 },	-- Toughened Boar Hide
+						["coord"] = { 81.4, 53.0, MAP.DUN_MOROGH },
+						["cr"] = 1689,	-- Scarred Crag Boar
+					}),
+					i(277673),	-- Plans: Rough Copper Chain Boots
+				},
+			}),
 			q(291, {	-- The Reports
 				["sourceQuest"] = 287,	-- Frostmane Hold
 				["qg"] = 1252,	-- Senir Whitebeard
