@@ -558,6 +558,27 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 3,
 			}),
+			q(99411, {	-- Kyle's Gone Missing!
+				["qg"] = 277182,	-- Ahab Wheathoof
+				["coord"] = { 47.2, 57.6, MAP.MULGORE },
+				["timeline"] = { TIMELINE.ADDED_1_60_1 },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 5,
+				["groups"] = {
+					objective(1, {	-- 0/1 Kyle Fed
+						["providers"] = {
+							{ "n", 277154 },	-- Kyle the Frenzied
+							{ "i", 287505 },	-- Tender Strider Meat
+						},
+						["coord"] = { 46.2, 63.2, MAP.MULGORE },
+						["crs"] = {
+							2956,	-- Adult Plainstrider
+							2957,	-- Elder Plainstrider
+							3068,	-- Mazzranache
+						},
+					}),
+				},
+			}),
 			q(766, {	-- Mazzranache
 				["qg"] = 3055,	-- Maur Raincaller
 				["coord"] = { 47.0, 57.0, MAP.MULGORE },
