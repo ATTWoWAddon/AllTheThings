@@ -26,11 +26,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(createHeader({
 		tw = "貴族花園",
 	},
 }), {
-	["timeline"] = { TIMELINE.ADDED_1_60_1 },
-	["groups"] = {
+	timeline = { TIMELINE.ADDED_1_60_1 },
+	groups = {
 		o_repeated({	-- Brightly Colored Egg
-			["description"] = "These eggs can be found spread out in all of the starting zones.",
-			["maps"] = {
+			description = "These eggs can be found spread out in all of the starting zones.",
+			maps = {
 				MAP.DUROTAR,
 				MAP.MULGORE,
 				MAP.TIRISFAL_GLADES,
@@ -38,7 +38,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(createHeader({
 				MAP.ELWYNN_FOREST,
 				MAP.TELDRASSIL,
 			},
-			["groups"] = {
+			groups = {
 				-- Objects
 				o(113768),
 				o(113769),
