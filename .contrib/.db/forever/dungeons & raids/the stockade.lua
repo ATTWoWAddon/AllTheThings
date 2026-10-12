@@ -4,32 +4,32 @@
 
 root(ROOTS.Instances, {
 	inst(238, {	-- The Stockade
-		["lore"] = "The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",
-		["icon"] = 136358,
+		lore = "The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",
+		icon = 136358,
 		["zone-text-areaID"] = 717,	-- The Stockade
 		["zone-text-names"] = {
 			"Stormwind Stockade",	-- enUS
 		},
-		["mapID"] = MAP.THE_STOCKADE,
-		["coord"] = { 51.6, 69.4, MAP.STORMWIND_CITY },
-		["lvl"] = 15,
-		["groups"] = {
+		mapID = MAP.THE_STOCKADE,
+		coord = { 51.6, 69.4, MAP.STORMWIND_CITY },
+		lvl = 15,
+		groups = {
 			n(QUESTS, {
 				q(389, {	-- Bazil Thredd
-					["sourceQuest"] = 373,	-- The Unsent Letter
-					["qg"] = 1646,	-- Baros Alexston
-					["coords"] = { 57.7, 47.9, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 16,
+					sourceQuest = 373,	-- The Unsent Letter
+					qg = 1646,	-- Baros Alexston
+					coords = { 57.7, 47.9, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 16,
 				}),
 				q(377, {	-- Crime and Punishment
-					["qg"] = 270,	-- Councilman Millstipe
-					["coord"] = { 72.0, 46.8, MAP.DUSKWOOD },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 24,
-					["groups"] = {
+					qg = 270,	-- Councilman Millstipe
+					coord = { 72.0, 46.8, MAP.DUSKWOOD },
+					races = ALLIANCE_ONLY,
+					lvl = 24,
+					groups = {
 						objective(1, {	-- 0/1 Hand of Dextren Ward
-							["provider"] = { "i", 3628 },	-- Hand of Dextren Ward
+							provider = { "i", 3628 },	-- Hand of Dextren Ward
 						}),
 						i(2906),	-- Darkshire Mail Leggings
 						i(2033),	-- Ambassador's Boots
@@ -39,20 +39,20 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(387, {	-- Quell The Uprising
-					["qg"] = 1719,	-- Warden Thelwater
-					["coord"] = { 51.6, 69.4, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 22,
+					qg = 1719,	-- Warden Thelwater
+					coord = { 51.6, 69.4, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 22,
 				}),
 				q(388, {	-- The Color of Blood
-					["qg"] = 1721,	-- Nikova Raskol
-					["coord"] = { 76.6, 60.4, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 22,
-					["groups"] = {
+					qg = 1721,	-- Nikova Raskol
+					coord = { 76.6, 60.4, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 22,
+					groups = {
 						objective(1, {	-- 0/10 Red Wool Bandana
-							["provider"] = { "i", 2909 },	-- Red Wool Bandana
-							["crs"] = {
+							provider = { "i", 2909 },	-- Red Wool Bandana
+							crs = {
 								1716,	-- Bazil Thredd
 								1720,	-- Bruegal Ironknuckle
 								1707,	-- Defias Captive
@@ -66,14 +66,14 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(378, {	-- The Fury Runs Deep
-					["sourceQuest"] = 303,	-- The Dark Iron War
-					["qg"] = 1074,	-- Motley Garmason
-					["coord"] = { 49.8, 18.2, MAP.WETLANDS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-					["groups"] = {
+					sourceQuest = 303,	-- The Dark Iron War
+					qg = 1074,	-- Motley Garmason
+					coord = { 49.8, 18.2, MAP.WETLANDS },
+					races = ALLIANCE_ONLY,
+					lvl = 25,
+					groups = {
 						objective(1, {	-- 0/1 Head of Deepfury
-							["provider"] = { "i", 3640 },	-- Head of Deepfury
+							provider = { "i", 3640 },	-- Head of Deepfury
 						}),
 						i(1264),	-- Headbasher
 						i(3562),	-- Belt of Vindication
@@ -83,25 +83,25 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(391, {	-- The Stockade Riots
-					["sourceQuest"] = 389,	-- Bazil Thredd
-					["qg"] = 1719,	-- Warden Thelwater
-					["coord"] = { 51.6, 69.4, MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 16,
-					["groups"] = {
+					sourceQuest = 389,	-- Bazil Thredd
+					qg = 1719,	-- Warden Thelwater
+					coord = { 51.6, 69.4, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					lvl = 16,
+					groups = {
 						objective(1, {	-- 0/1 Head of Bazil Thredd
-							["provider"] = { "i", 2926 },	-- Head of Bazil Thredd
+							provider = { "i", 2926 },	-- Head of Bazil Thredd
 						}),
 					},
 				}),
 				q(386, {	-- What Comes Around...
-					["qg"] = 859,	-- Guard Berton
-					["coord"] = { 21.2, 46.6, MAP.REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 22,
-					["groups"] = {
+					qg = 859,	-- Guard Berton
+					coord = { 21.2, 46.6, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					lvl = 22,
+					groups = {
 						objective(1, {	-- 0/1 Head of Targorr
-							["provider"] = { "i", 3630 },	-- Head of Targorr
+							provider = { "i", 3630 },	-- Head of Targorr
 						}),
 						i(1317),	-- Hardened Root Staff
 						i(3400),	-- Lucine Longsword
@@ -118,8 +118,8 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
-				["description"] = "This is a rare that was not always present.",
-				["groups"] = {
+				description = "This is a rare that was not always present.",
+				groups = {
 					i(2942),	-- Iron Knuckles
 					i(3228),	-- Jimmied Handcuffs
 					i(2941),	-- Prison Shank
