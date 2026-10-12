@@ -1228,6 +1228,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(99080, {	-- Drive Them Out
+				sourceQuests = {
+					99101,	-- Our Ancient Enemy
+				},
 				qg = 2993,	-- Baine Bloodhoof
 				coord = { 47.4, 60.2, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1250,6 +1253,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(99081, {	-- Grim Tidings
+				sourceQuests = {
+					99079,	-- Longwalker Malah
+				},
 				qg = 275789,	-- Malah Longwind
 				qi = 286104,	-- Longwalker Malah's Report
 				coord = { 57.6, 63.2, MAP.MULGORE },
@@ -1258,6 +1264,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 			}),
 			q(99082, {	-- The High Chieftain
+				sourceQuests = {
+					99080,	-- Drive Them Out
+				},
 				qg = 2993,	-- Baine Bloodhoof
 				coord = { 47.4, 60.2, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1269,6 +1278,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(99101, {	-- Our Ancient Enemy
+				sourceQuests = {
+					99081,	-- Grim Tidings
+				},
 				qg = 3222,	-- Brave Wildrunner
 				qi = 286104,	-- Longwalker Malah's Report
 				coord = { 46.6, 63.0, MAP.MULGORE },
