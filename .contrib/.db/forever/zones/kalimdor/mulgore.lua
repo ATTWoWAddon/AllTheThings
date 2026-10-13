@@ -821,6 +821,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(76160, {	-- Stalk With The Earthmother
+				sourceQuest = 76156,	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem
 				qi = 206176,	-- Mortar and Pestle
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
@@ -838,6 +839,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(76240, {	-- Stalk With The Earthmother
+				sourceQuest = 76160,	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem
 				qi = 206344,	-- Knife Set
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
