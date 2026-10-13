@@ -26,7 +26,7 @@ permissions:
 
 jobs:
   regression:
-    runs-on: ubuntu-24.04 # Linux runner with an explicit Lua 5.1 package
+    runs-on: ubuntu-26.04 # Linux runner with an explicit Lua 5.1 package
     timeout-minutes: 10
     defaults:
       run:
