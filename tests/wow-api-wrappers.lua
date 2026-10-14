@@ -185,6 +185,31 @@ do
 end
 
 do
+	-- Buff identities can be used only when the client discloses spellId.
+	local secret, aura = {}, {spellId = 123}
+	local buffs = initialize({
+		C_UnitAuras = {GetBuffDataByIndex = function(unit, index, filter)
+			equal(unit, "player"); equal(index, 2); equal(filter, "HELPFUL"); return aura
+		end},
+		UnitBuff = rejectLegacy,
+		issecretvalue = function(value) return value == secret end,
+	})
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), aura)
+	aura = {spellId = secret}
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), nil, "secret spell ID not exposed to callbacks")
+	aura = secret
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), nil, "secret aura not inspected")
+	aura = nil
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), nil)
+	local nativeBuffs = initialize({UnitBuff = function(unit, index)
+		if index > 1 then return end
+		return "Buff", nil, nil, nil, nil, nil, nil, nil, nil, 321
+	end}, 20506)
+	equal(nativeBuffs.GetBuffDataByIndex("player", 1).spellId, 321, "native tenth return converted to spellId")
+	equal(nativeBuffs.GetBuffDataByIndex("player", 2), nil)
+end
+
+do
 	local modernInfo = function() return 123 end
 	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
 	equal(modern.GetSpecializationInfo, modernInfo)

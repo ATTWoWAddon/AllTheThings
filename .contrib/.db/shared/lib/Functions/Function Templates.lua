@@ -8,7 +8,8 @@ FUNCTION_TEMPLATES = {
 				t.ShouldExcludeFromTooltipHelper = function(t)
 					local target = UnitExists("mouseover") and "mouseover" or "target";
 					for i=1,10,1 do
-						local id = select(10, UnitBuff(target,i));
+						local aura = _.WOWAPI.GetBuffDataByIndex(target, i);
+						local id = aura and aura.spellId;
 						if id then
 							if buffs[id] then return false; end
 						else
