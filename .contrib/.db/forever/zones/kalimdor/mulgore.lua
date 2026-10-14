@@ -1313,6 +1313,14 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
+			q(94911, {	-- Child of Nature
+				qg = 259118,	-- Muln Earthfury
+				coord = { 33.4, 22.5, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_HORDE },
+				classes = { DRUID },
+				lvl = 10,
+			}),
 		}),
 		n(RARES, {
 			n(5787, {	-- Enforcer Emilgund
