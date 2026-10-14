@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此窗口显示了所有已从游戏移除的内容。",
-		-- TODO: tw = "",
+		tw = "此視窗顯示所有已從遊戲中移除的內容。",
 	},
 })

@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Требуется",
 		ko = "필요 전문화",
 		cn = "需要",
-		-- TODO: tw = "",
+		tw = "需要",
 	},
 })

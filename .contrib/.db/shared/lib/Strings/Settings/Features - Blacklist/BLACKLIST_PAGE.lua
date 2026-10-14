@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "黑名单",
-		-- TODO: tw = "",
+		tw = "黑名單",
 	},
 })

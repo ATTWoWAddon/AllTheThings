@@ -13,7 +13,7 @@ EVENT_COMPLETION = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "事件完成",
-		-- TODO: tw = "",
+		tw = "活動完成",
 	},
 	description = {
 		en = "Contains things that are rewarded upon completing that event.",
@@ -26,6 +26,6 @@ EVENT_COMPLETION = createHeader({
 		-- TODO: pt = "",
 		ru = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
 		cn = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
-		-- TODO: tw = "",
+		tw = "包含完成該活動時可獲得的獎勵。",
 	},
 });

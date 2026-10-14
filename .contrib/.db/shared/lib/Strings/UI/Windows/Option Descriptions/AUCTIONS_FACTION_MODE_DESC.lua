@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "点击此按钮可切换阵营模式，显示你所在阵营的所有内容！",
-		-- TODO: tw = "",
+		tw = "點擊此按鈕切換陣營模式，顯示你所屬陣營的所有內容！",
 	},
 })

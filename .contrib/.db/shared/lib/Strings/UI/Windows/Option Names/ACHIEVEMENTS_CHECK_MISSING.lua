@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "检查缺失的成就",
-		-- TODO: tw = "",
+		tw = "檢查缺少的成就",
 	},
 })

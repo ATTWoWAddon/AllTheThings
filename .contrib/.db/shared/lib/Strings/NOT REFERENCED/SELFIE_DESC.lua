@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Сделайте селфи, используя вашу ",
 		-- TODO: ko = "",
 		cn = "使用您的自拍 ",
-		-- TODO: tw = "",
+		tw = "拍攝自拍照：使用你的 ",
 	},
 })

@@ -16,7 +16,7 @@ local GRAND_HUNTS = createHeader({
 		-- TODO: pt = "",
 		ru = "Великая охота",
 		cn = "洪荒狩猎",
-		-- TODO: tw = "",
+		tw = "大狩獵",
 	},
 });
 

@@ -27,6 +27,7 @@ root(ROOTS.Holidays, {
 		description = {
 			en = "The festival is held only on Sunday night from 9 PM to 11 PM (PST(US)/CEST(EU)/AEST(OCE). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
 			cn = "该节日仅在周日晚上9点至11点举行（太平洋时间（美服）／中欧夏令时（欧服）／澳大利亚东部夏令时（大洋洲））。节日期间，水面上会出现漂浮的灯笼，熊猫人 NPC 会漫步到海滩上燃起篝火并燃放烟花。不久之后，云游节雏龙便会出现。",
+			tw = "此節慶只在週日晚上 9 點至 11 點舉行（美服為太平洋標準時間／歐服為中歐夏令時間／大洋洲為澳洲東部標準時間）。節慶期間，水面上會出現漂浮燈籠，熊貓人 NPC 會走到海灘上生起營火並施放煙火。不久之後，Wanderer's Festival Hatchlings 便會出現。",	-- TODO: verify it.
 		},
 	}), {
 		providers = {

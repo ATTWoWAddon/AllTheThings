@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "还原按钮 %s",
-		-- TODO: tw = "",
+		tw = "還原按鈕 %s",
 	},
 })

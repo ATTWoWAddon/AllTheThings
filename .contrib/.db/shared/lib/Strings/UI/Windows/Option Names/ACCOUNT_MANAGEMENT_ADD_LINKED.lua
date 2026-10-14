@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "添加关联角色",
-		-- TODO: tw = "",
+		tw = "新增已連結角色",
 	},
 })

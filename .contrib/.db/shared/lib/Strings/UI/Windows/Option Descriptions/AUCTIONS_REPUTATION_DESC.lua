@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此处显示了所有可用于提升你尚未收集的阵营声望的物品。",
-		-- TODO: tw = "",
+		tw = "此處會顯示所有可用來提升你尚未收集之陣營聲望的物品。",
 	},
 })

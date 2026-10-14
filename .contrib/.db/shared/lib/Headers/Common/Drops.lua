@@ -15,6 +15,6 @@ DROPS = createHeader({
 		-- TODO: pt = "",
 		ru = [[~BATTLE_PET_SOURCE_1]],	-- In English, this is "Drop"
 		cn = "掉落",
-		-- TODO: tw = "",
+		tw = "掉落",
 	},
 });

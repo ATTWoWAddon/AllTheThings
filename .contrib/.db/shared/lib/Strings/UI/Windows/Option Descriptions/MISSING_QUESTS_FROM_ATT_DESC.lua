@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "以下任务在 ATT 中缺失，但在 Questie 数据库或你的存档变量中找到了！",
-		-- TODO: tw = "",
+		tw = "以下任務不在 ATT 中，但在 Questie 資料庫或你的已儲存變數中找到！",
 	},
 })

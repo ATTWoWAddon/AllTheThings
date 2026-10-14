@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "如果只想查看可获得的共享外观，请启用此选项。",
-		-- TODO: tw = "",
+		tw = "若只想查看可取得的共享外觀，請啟用此選項。",
 	},
 })

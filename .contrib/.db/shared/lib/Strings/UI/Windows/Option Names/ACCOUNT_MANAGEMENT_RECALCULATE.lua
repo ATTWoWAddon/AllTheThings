@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "重新计算账号通用数据",
-		-- TODO: tw = "",
+		tw = "重新計算帳號共用資料",
 	},
 })

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "当前不支持此数据类型。",
-		-- TODO: tw = "",
+		tw = "目前不支援此資料類型。",
 	},
 })

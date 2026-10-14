@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "同步所有角色",
-		-- TODO: tw = "",
+		tw = "同步所有角色",
 	},
 })

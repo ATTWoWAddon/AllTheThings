@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "请输入新的最高 RWP",
-		-- TODO: tw = "",
+		tw = "請輸入新的最高 RWP",
 	},
 })

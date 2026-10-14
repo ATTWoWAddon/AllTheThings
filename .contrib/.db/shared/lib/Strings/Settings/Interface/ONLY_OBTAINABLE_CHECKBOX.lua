@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "仅可获得",
-		-- TODO: tw = "",
+		tw = "僅顯示可取得項目",
 	},
 })

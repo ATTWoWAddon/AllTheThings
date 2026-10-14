@@ -9,5 +9,6 @@ createLocalizationString({
 		es = "Catalizador",
 		mx = "Catalizador",
 		cn = "化生台",
+		tw = "催化器",
 	},
 })

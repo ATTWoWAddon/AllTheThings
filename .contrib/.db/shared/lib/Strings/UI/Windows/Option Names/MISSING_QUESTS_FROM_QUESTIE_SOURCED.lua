@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "来自 Questie（含 ATT 来源）",
-		-- TODO: tw = "",
+		tw = "來自 Questie（含 ATT 資料來源）",
 	},
 })

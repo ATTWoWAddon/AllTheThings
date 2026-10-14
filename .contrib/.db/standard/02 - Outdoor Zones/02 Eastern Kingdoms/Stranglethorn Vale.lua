@@ -2536,7 +2536,7 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				-- TODO: pt = "",
 				-- TODO: ru = "",
 				cn = "这是一个在荆棘谷举行的自由对战 PvP 活动，每3小时从服务器时间午夜开始持续30分钟。\n\n击杀玩家以获得可叠加的鲜血之月增益效果——献给血之洛阿的鲜血。该效果最多可叠加255次。\n每次击杀可获得5层鲜血。\n死亡会失去鲜血。\n前往鲜血祭坛 |cffffffff（地图上的红色旗帜）|r，将献给血之洛阿的鲜血兑换为铜质鲜血硬币、银质鲜血硬币和金质鲜血硬币。只需走到祭坛旁，硬币就会自动出现在你的背包中。\n\n你可以通过与赞达拉使者交谈来选择退出该活动。",
-				-- TODO: tw = "",
+				tw = "這是一項在荊棘谷舉行的自由混戰 PvP 事件，每 3 小時（從伺服器時間午夜起算）舉辦一次，持續 30 分鐘。\n\n擊殺玩家可獲得可堆疊的 Blood for the Blood Loa 增益效果，最多可累積 255 層。\n每次擊殺獲得 5 層。\n死亡時可能會失去層數。\n前往鮮血祭壇 |cffffffff（地圖上的紅旗）|r，將 Blood for the Blood Loa 層數兌換成 Copper Blood Coin、Silver Blood Coin 或 Gold Blood Coin。走近祭壇後，硬幣會自動出現在背包中。\n\n可與 Zandalarian Emissary 交談以退出事件。",	-- TODO: verify it.
 			},
 		}), {
 			i(213168, {	-- Copper Blood Coin

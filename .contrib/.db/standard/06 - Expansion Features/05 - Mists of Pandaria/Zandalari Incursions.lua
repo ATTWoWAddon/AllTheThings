@@ -29,7 +29,7 @@ local ZANDALARI_INCURSIONS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "赞达拉部族对潘达利亚大陆的入侵始于雷神岛的开放。战争使者遍布整个大陆，拥有难度各异的单人挑战机制及可获取的坐骑！与好友一同刷取这些奖励吧。",
-		-- TODO: tw = "",
+		tw = "The Zandalari Incursions 於雷王島開放後開始進入潘達利亞大陸。Warbringers 分布在整片大陸，各自有不同難度的單人挑戰機制，並可取得坐騎。揪朋友一起挑戰吧！",	-- TODO: verify it.
 	},
 });
 

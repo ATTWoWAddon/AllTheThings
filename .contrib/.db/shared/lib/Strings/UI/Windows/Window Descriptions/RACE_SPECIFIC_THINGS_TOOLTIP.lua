@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此窗口显示了所有种族的种族专属内容。",
-		-- TODO: tw = "",
+		tw = "此視窗顯示所有種族的專屬內容。",
 	},
 })

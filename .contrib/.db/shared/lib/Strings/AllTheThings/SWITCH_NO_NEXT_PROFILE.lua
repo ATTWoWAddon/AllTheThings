@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "没有可切换的下一个配置文件。",
-		-- TODO: tw = "",
+		tw = "沒有可切換的下一個設定檔。",
 	},
 })

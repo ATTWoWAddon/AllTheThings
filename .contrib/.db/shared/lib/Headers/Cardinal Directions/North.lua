@@ -13,7 +13,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		ru = "Север",
 		cn = "北部",
-		-- tw = "北部",
+		tw = "北部",
 	},
 });
 NORTH = createHeader({

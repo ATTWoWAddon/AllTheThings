@@ -22,7 +22,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 				pt = "Caçadores Amadores",
 				ru = "Охотники-любители",
 				cn = "业余猎人",
-				-- TODO: tw = "",
+				tw = "業餘獵人",
 			},
 			description = {
 				en = "Three hunters have surrounded Mara Swiftmane. Engage them in combat, and a Battered Chest will spawn near Mara Swiftmane. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
@@ -35,7 +35,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 				pt = "Três caçadores cercaram Mara Crinaveloz. Envolva-os em combate e um Baú Desgastado aparecerá perto de Mara Crinaveloz. Assim que a batalha terminar, Mara agradecerá e deixará você com o Baú Desgastado.",
 				ru = "Трое охотников окружили Мару Стремительную Гриву. Вступите с ними в бой, и рядом с Марой Стремительной Гривой появится Побитый сундук. Как только битва закончится, Мара поблагодарит вас и оставит Побитый сундук.",
 				cn = "三名猎人包围了玛拉·斯威夫迈恩。与他们交战，玛拉·迅鬃附近会生成一个破烂的宝箱。战斗结束后，玛拉会感谢你，并给你留下破损的宝箱。",
-				-- TODO: tw = "",
+				tw = "三名獵人包圍了 Mara Swiftmane。與他們交戰後，她附近會出現一個 Battered Chest。戰鬥結束後，Mara 會向你道謝，並留下這個箱子。",	-- TODO: verify it.
 			},
 		}), {
 			questID = 40413,	-- Amateur Hunters

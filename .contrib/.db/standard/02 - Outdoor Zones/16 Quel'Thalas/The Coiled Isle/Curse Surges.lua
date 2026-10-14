@@ -21,6 +21,7 @@ local CURSE_SURGES = createHeader({
 	description = {
 		en = "Curse Surges are outdoor events that require players to complete an activity in order to summon a Rare Elite enemy.",
 		cn = "诅咒狂潮是户外事件，玩家需要完成一项活动才能召唤出一名稀有精英敌人。",
+		tw = "Curse Surges 是戶外事件，玩家必須完成一項活動，才能召喚稀有精英敵人。",	-- TODO: verify it.
 	},
 });
 

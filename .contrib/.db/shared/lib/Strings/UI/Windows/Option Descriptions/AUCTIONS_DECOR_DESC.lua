@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此处显示了所有你尚未收集的装饰。",
-		-- TODO: tw = "",
+		tw = "此處會顯示你尚未收集的所有裝飾。",
 	},
 })

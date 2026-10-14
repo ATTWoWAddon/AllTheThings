@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "点击此按钮以可读字符串格式导出所有数据。",
-		-- TODO: tw = "",
+		tw = "點選此處以易讀字串格式匯出所有資料。",
 	},
 })

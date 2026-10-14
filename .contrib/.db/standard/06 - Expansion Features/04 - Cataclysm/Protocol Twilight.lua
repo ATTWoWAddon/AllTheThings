@@ -13,6 +13,7 @@ local OBSIDIAN_FRAGMENT_EXCHANGE_VENDOR = createHeader({
 	text = {
 		en = "Obsidian Fragment Exchange",
 		cn = "黑曜碎片",
+		tw = "Obsidian Fragment Exchange",	-- TODO: verify it.
 	},
 });
 local PROTOCOL_MAPS = {

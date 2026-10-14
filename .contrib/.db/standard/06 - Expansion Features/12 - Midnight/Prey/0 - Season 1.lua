@@ -16,7 +16,7 @@ local PREY_MID_S1 = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "至暗之夜狩猎第一季",
-		-- TODO: tw = "",
+		tw = "Prey《至暗之夜》第 1 季",	-- TODO: verify it.
 	},
 });
 

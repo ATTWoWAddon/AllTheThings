@@ -12,6 +12,6 @@ QUALITY_ELITE = createHeader({
 		-- TODO: pt = "",
 		ru = "Элитный",
 		cn = "精英",
-		-- TODO: tw = "",
+		tw = [[~ELITE]],
 	},
 });

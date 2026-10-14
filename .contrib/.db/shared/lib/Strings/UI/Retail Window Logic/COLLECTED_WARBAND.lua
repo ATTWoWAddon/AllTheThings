@@ -9,5 +9,6 @@ createLocalizationString({
 		es = "Recolectado en el futuro por la Banda de guerra",
 		mx = "Coleccionado en el futuro por la Tropa",
 		cn = "未来战团已收集",
+		tw = "已持有（未來可供戰隊收集）",
 	},
 })

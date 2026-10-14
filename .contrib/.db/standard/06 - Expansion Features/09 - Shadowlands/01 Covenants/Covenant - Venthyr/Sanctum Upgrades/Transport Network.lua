@@ -16,7 +16,7 @@ local BROKEN_MIRROR_INFO = {
 		pt = "Espelho Quebrado",
 		ru = "Разбитое зеркало",
 		cn = "残破的镜子",
-		-- TODO: tw = "",
+		tw = "Broken Mirror",	-- TODO: verify it.
 	},
 };
 

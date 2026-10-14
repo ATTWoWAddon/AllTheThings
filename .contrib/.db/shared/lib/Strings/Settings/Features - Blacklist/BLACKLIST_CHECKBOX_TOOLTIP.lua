@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "这下总算能藏住那些懒得收集的东西了吧…",
-		-- TODO: tw = "",
+		tw = "這樣你就能把那些懶得收集的項目隱藏起來了……",
 	},
 })

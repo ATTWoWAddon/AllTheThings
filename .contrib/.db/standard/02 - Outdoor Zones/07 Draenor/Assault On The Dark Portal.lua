@@ -16,11 +16,12 @@ local ASSAULT_ON_THE_DARK_PORTAL = createHeader({
 		pt = "Ataque ao Portal Negro",
 		ru = "Атака на Темный портал",
 		cn = "进攻黑暗之门",
-		-- TODO: tw = "",
+		tw = "襲擊黑暗之門",
 	},
 	description = {
 		en = "The Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similar to Plaguelands: The Scarlet Enclave for death knights.",
 		cn = "进攻黑暗之门是塔纳安谷的副本版本，塔纳安谷是塔纳安丛林的子区域，也是《德拉诺之王》开场体验的场景之一。开场完成后，玩家将无法再返回该区域，这与死亡骑士的瘟疫之地：血色领地类似。",
+		tw = "「襲擊黑暗之門」是塔南山谷的副本版本；塔南山谷是塔南森林的子區域，也是《德拉諾之霸》開場內容的地點。完成開場任務後，玩家便無法再回到該區，情況類似死亡騎士專屬的瘟疫之地：血色領區。",
 	},
 });
 

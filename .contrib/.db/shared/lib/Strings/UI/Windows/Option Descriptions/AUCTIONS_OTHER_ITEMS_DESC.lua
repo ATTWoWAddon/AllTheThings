@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此处显示了所有可用于非幻化用途（例如成就）的物品。",
-		-- TODO: tw = "",
+		tw = "此處會顯示所有可用於非塑形用途（例如成就）的物品。",
 	},
 })

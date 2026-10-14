@@ -27,6 +27,7 @@ local MAIN_GATE = createHeader({
 		es = "Stratholme está dividida en dos lados.\n\nEste lado se conoce comúnmente como el lado \"Vivo\" o \"Escarlata\", que ha sido tomado por la Cruzada Escarlata.",
 		mx = "Stratholme está dividida en dos partes.\n\nEsta parte se conoce comúnmente como la parte \"Viva\" o \"Escarlata\", que ha sido tomado por la Cruzada Escarlata.",
 		cn = "斯坦索姆分为两侧。\n\n这一侧通常被称为“活人”侧或“血色”侧，现已被血色十字军占据。",
+		tw = "斯坦索姆分為兩側。\n\n這一側通常被稱為「活人」側或「血色」側，現已被血色十字軍佔據。",
 	},
 });
 local SERVICE_ENTRANCE = createHeader({
@@ -54,6 +55,7 @@ local SERVICE_ENTRANCE = createHeader({
 		es = "Stratholme está dividida en dos lados.\n\nEste lado se conoce comúnmente como el lado de los 'Muertos' o del 'Azote', que el Azote ha tomado.",
 		mx = "Stratholme está dividida en dos partes.\n\nEste lado se conoce comúnmente como la parte de los 'No Muertos' o de la 'Plaga', que la Plaga ha tomado.",
 		cn = "斯坦索姆分为两侧。\n\n这一侧通常被称为“亡灵”侧或“天灾”侧，现已被天灾军团占据。",
+		tw = "斯坦索姆分為兩側。\n\n這一側通常被稱為「不死」側或「天譴」側，現已被天譴軍團佔據。",
 	},
 });
 

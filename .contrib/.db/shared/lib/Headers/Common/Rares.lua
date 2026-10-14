@@ -15,7 +15,7 @@ RARES = createHeader({
 		-- TODO: pt = "",
 		ru = "Редкие",
 		cn = "稀有",
-		-- TODO: tw = "",
+		tw = [[~MAP_LEGEND_RARE]],
 		-- #else
 		en = [[~BATTLE_PET_BREED_QUALITY4]],
 		-- TODO: de = "",
@@ -27,7 +27,7 @@ RARES = createHeader({
 		-- TODO: pt = "",
 		ru = "Редкие",
 		cn = "稀有",
-		-- TODO: tw = "",
+		tw = "稀有生物",
 		-- #endif
 	},
 });

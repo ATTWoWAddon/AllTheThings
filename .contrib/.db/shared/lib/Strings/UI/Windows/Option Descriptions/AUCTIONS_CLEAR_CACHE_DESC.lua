@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "点击此按钮以清除所有已缓存的拍卖数据。",
-		-- TODO: tw = "",
+		tw = "點擊此按鈕即可清除所有已快取的拍賣資料。",
 	},
 })

@@ -5,5 +5,6 @@ createLocalizationString({
 	text = {
 		en = "Exploration",
         cn = "探索",
+		tw = "探索",
 	},
 })

@@ -13,10 +13,12 @@ local CN_PROMOTIONS_RETAIL = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		cn = "中国促销（正式服）",
+		tw = "中國促銷活動（正式版）",
 	},
 	description = {
 		en = "These promotions are limited to the Chinese Realms.",
 		cn = "这些促销活动仅限于中国服务器。",
+		tw = "這些促銷活動僅限中國伺服器。",
 	},
 });
 

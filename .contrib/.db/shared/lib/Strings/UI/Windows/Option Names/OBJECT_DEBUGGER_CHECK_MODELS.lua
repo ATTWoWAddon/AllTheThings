@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "检查模型",
-		-- TODO: tw = "",
+		tw = "檢查模型",
 	},
 })

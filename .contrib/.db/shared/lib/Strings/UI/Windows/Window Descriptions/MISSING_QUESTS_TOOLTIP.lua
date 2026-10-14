@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此窗口显示了 ATT 中缺失、但存在于 Questie 或你的存档变量中的所有任务。",
-		-- TODO: tw = "",
+		tw = "此視窗顯示 ATT 中缺少、但存在於 Questie 或你的已儲存變數中的所有任務。",
 	},
 })

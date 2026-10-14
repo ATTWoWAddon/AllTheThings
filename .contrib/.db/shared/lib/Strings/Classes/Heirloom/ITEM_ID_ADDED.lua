@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "%s (%d) добавлен в Вашу коллекцию.",
 		-- TODO: ko = "",
 		cn = "%s (%d) 已加入收藏。",
-		-- TODO: tw = "",
+		tw = "%s (%d) 已加入你的收藏。",
 	},
 })

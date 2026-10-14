@@ -2670,7 +2670,7 @@ maproot(KALIMDOR, THE_BARRENS, {
 					pt = "Fale com o Grizzby",
 					ru = "Поговорите с Grizzby",
 					cn = "与灰熊交谈",
-					-- TODO: tw = "",
+					tw = "與 Grizzby 交談",	-- TODO: verify it.
 				},
 			}), {
 				questID = 78284,	-- Grizzby HQT
@@ -2693,7 +2693,7 @@ maproot(KALIMDOR, THE_BARRENS, {
 					pt = "Fale com o N'ora",
 					ru = "Поговорите с Н'ора",
 					cn = "与奈奥拉谈",
-					-- TODO: tw = "",
+					tw = "與 N'ora 交談",	-- TODO: verify it.
 				},
 			}), {
 				providers = {

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "仅此角色独有的数据。如果你不想丢失这些内容，请不要删除此角色。",
-		-- TODO: tw = "",
+		tw = "僅限此角色的專屬資料。若不想遺失這些資料，請勿在 ATT 中移除此角色。",
 	},
 })

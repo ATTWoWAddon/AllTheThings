@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "清除已采集物品数据库",
-		-- TODO: tw = "",
+		tw = "清除已採集物品資料庫",
 	},
 })

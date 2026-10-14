@@ -22,7 +22,7 @@ local BLACK_MARKET_AUCTION_HOUSE = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "与普通拍卖行不同，黑市拍卖行的物品由 NPC 生成并列出。物品仅列出一天。出售的物品从变得无法获得的物品到稀有掉落和 TCG 物品不等。所有物品都很少列出，因此，这不应该被视为一种可靠的刷稀有物品的方法。\n\n坐骑的起始竞价为20,000金，某些例外情况除外。\n宠物的起始竞价在1金和20,000金之间，具体取决于原始来源以及获取难度。\n外观/杂项物品的起始竞价在10,000金和15,000金之间。\n\n竞价与普通拍卖行一样工作。没有直接购买价格。当与其他玩家竞争最终竞价时，价格上不封顶（甚至可以到金币上限）。成功购买后，物品将通过邮件发送。正常的拾取绑定规则适用，因此您必须在正确的角色上进行竞价。\n\n物品供应基于服务器。每个服务器在任何时候都会有不同的出售物品，并且价格可能会因服务器而异。\n\n如果为空，物品窗口将显示“目前没有物品。请稍后再来查看。”",
-		-- TODO: tw = "",
+		tw = "與一般拍賣場向其他玩家購買物品不同，黑市拍賣場的商品由 NPC 產生並上架。物品只會上架一天。販售商品包括已無法取得的物品、稀有掉落物與 TCG 物品。所有物品都不常上架，因此不應將黑市視為穩定刷取稀有收藏的途徑。\n\n  坐騎起標價為 20,000 金，少數例外除外。\n  夥伴寵物的起標價介於 1 金至 20,000 金，視原始來源與取得難度而定。\n  外觀／雜項物品的起標價介於 10,000 金至 15,000 金。\n\n競標方式與一般拍賣場相同，但沒有直購價。與其他玩家爭奪最終得標時，價格只受你的財力（或金幣上限）限制。成功購買後，物品會透過郵件寄送。一般的拾取綁定規則依然適用，因此你必須使用正確的角色競標。\n\n商品供應以伺服器為單位。各伺服器同一時間販售的商品各不相同，價格也可能有極大差異。\n\n若沒有商品，物品視窗會顯示「目前沒有物品，請稍後再來查看。」",
 		-- #else
 		en = "Instead of buying items from other players like the regular Auction House, items on the Black Market are generated and listed by NPCs. The items are listed for one day only. The items for sale vary from items that were made unobtainable, to rare drops and TCG items. All items are listed infrequently, so it should not be seen as a reliable way to farm rarities.\n\n  Mount bids start at 20,000g, with some exceptions.\n  Companion bids start between 1g and 20,000g, depending on the original source and how hard it is to get.\n  Vanity/misc items start between 10,000g and 15,000g.\n\nBidding works like the regular Auction House. There is no buyout price. The sky (or the gold cap) is the limit when competing with other players for the final bid. With a successful purchase, the item is sent in the mail. \n\nThe supply of items is realm-based. Each realm will have different items for sale at any one time and prices are likely to vary wildly from server to server.\n\nIf empty, the item window will list \"There are no items at this time. Please check back later.\"",
 		-- TODO: de = "",
@@ -34,7 +34,7 @@ local BLACK_MARKET_AUCTION_HOUSE = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "与普通拍卖行不同，黑市拍卖行的物品由 NPC 生成并列出。物品仅列出一天。出售的物品从变得无法获得的物品到稀有掉落和 TCG 物品不等。所有物品都很少列出，因此，这不应该被视为一种可靠的刷稀有物品的方法。\n\n坐骑的起始竞价为20,000金，某些例外情况除外。\n宠物的起始竞价在1金和20,000金之间，具体取决于原始来源以及获取难度。\n外观/杂项物品的起始竞价在10,000金和15,000金之间。\n\n竞价与普通拍卖行一样工作。没有直接购买价格。当与其他玩家竞争最终竞价时，价格上不封顶（甚至可以到金币上限）。成功购买后，物品将通过邮件发送。\n\n物品供应基于服务器。每个服务器在任何时候都会有不同的出售物品，并且价格可能会因服务器而异。\n\n如果为空，物品窗口将显示“目前没有物品。请稍后再来查看。”",
-		-- TODO: tw = "",
+		tw = "與一般拍賣場向其他玩家購買物品不同，黑市拍賣場的商品由 NPC 產生並上架。物品只會上架一天。販售商品包括已無法取得的物品、稀有掉落物與 TCG 物品。所有物品都不常上架，因此不應將黑市視為穩定刷取稀有收藏的途徑。\n\n  坐騎起標價為 20,000 金，少數例外除外。\n  夥伴寵物的起標價介於 1 金至 20,000 金，視原始來源與取得難度而定。\n  外觀／雜項物品的起標價介於 10,000 金至 15,000 金。\n\n競標方式與一般拍賣場相同，但沒有直購價。與其他玩家爭奪最終得標時，價格只受你的財力（或金幣上限）限制。成功購買後，物品會透過郵件寄送。\n\n商品供應以伺服器為單位。各伺服器同一時間販售的商品各不相同，價格也可能有極大差異。\n\n若沒有商品，物品視窗會顯示「目前沒有物品，請稍後再來查看。」",
 		-- #endif
 	},
 });

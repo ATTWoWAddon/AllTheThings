@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "待处理同步队列",
-		-- TODO: tw = "",
+		tw = "待同步佇列",
 	},
 })

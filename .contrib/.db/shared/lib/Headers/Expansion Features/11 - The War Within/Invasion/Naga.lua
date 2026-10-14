@@ -12,6 +12,6 @@ INVASION_NAGA = createHeader({
 		-- TODO: pt = "",
 		ru = "Вторжение: Наги",
 		cn = "入侵：娜迦",
-		-- TODO: tw = "",
+		tw = "入侵：納迦",
 	},
 });

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "符文熔炉能量 ID",
-		-- TODO: tw = "",
+		tw = "符文熔爐之力 ID",
 	},
 })

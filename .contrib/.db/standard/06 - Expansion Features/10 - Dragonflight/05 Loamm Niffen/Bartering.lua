@@ -29,7 +29,7 @@ local BARTERING = createHeader({
 		pt = "Pechincha",
 		ru = "Обмен",
 		cn = "以物易物",
-		-- TODO: tw = "",
+		tw = "以物易物",
 	},
 });
 

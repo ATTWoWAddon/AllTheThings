@@ -20,7 +20,7 @@ local DF_RARE_ROTATION = createHeader({
 		-- TODO: pt = "",
 		ru = "Редкие DF по расписанию",
 		cn = "巨龙时代稀有轮换",
-		-- TODO: tw = "",
+		tw = "《巨龍崛起》稀有怪物輪替",
 	},
 });
 

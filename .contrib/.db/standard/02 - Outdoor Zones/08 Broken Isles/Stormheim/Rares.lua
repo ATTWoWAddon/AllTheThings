@@ -75,7 +75,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				pt = "Esquadrão da Morte Abandonado",
 				ru = "Отрекшийся отряд смерти",
 				cn = "被遗忘者敢死队",
-				-- TODO: tw = "",
+				tw = "被遺忘者死亡小隊",
 			},
 			description = {
 				en = "There is an ongoing 4x4 battle. Assist the Alliance by defeating the Forsaken Deathsquad.",
@@ -88,7 +88,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				pt = "Há uma batalha 4x4 em andamento. Ajude a Aliança derrotando o Esquadrão da Morte Abandonado.",
 				ru = "Идет продолжающаяся битва четыре на четыре. Помогите Альянсу, победив Отрекшихся Отряд Смерти.",
 				cn = "正在进行一场四对四的战斗。协助联盟击败被遗忘者敢死队。",
-				-- TODO: tw = "",
+				tw = "此處正在進行一場四對四的戰鬥。擊敗被遺忘者死亡小隊，協助聯盟。",
 			},
 		}), {
 			providers = {
@@ -272,7 +272,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				pt = "Perseguidores Worgens",
 				ru = "Воргены-сталкеры",
 				cn = "狼人追猎者",
-				-- TODO: tw = "",
+				tw = "狼人潛獵者",
 			},
 			description = {
 				en = "There is an ongoing 4x4 battle. Assist the Horde by defeating the Worgen Stalkers.",
@@ -285,7 +285,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				pt = "Há uma batalha 4x4 em andamento. Ajude a Horda derrotando os Worgen Stalkers.",
 				ru = "Идет продолжающаяся битва четыре на четыре. Помогите Орде, победив воргенов-сталкеров.",
 				cn = "正在进行一场四对四的战斗。击败狼人追猎者，协助部落。",
-				-- TODO: tw = "",
+				tw = "此處正在進行一場四對四的戰鬥。擊敗狼人潛獵者，協助部落。",
 			},
 		}), {
 			providers = {

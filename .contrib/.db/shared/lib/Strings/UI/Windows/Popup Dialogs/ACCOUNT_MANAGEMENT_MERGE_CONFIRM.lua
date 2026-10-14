@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "\n \n确定要合并吗？",
-		-- TODO: tw = "",
+		tw = "\n \n確定要合併此項目嗎？",
 	},
 })

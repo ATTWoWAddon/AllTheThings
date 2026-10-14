@@ -23,7 +23,7 @@ local LOST_AREA = createHeader({
 		-- TODO: pt = "",
 		ru = "Захваченная область",
 		cn = "失落区域",
-		-- TODO: tw = "",
+		tw = "失落區域",
 	},
 });
 local CORRUPTED_AREA = createHeader({
@@ -40,7 +40,7 @@ local CORRUPTED_AREA = createHeader({
 		-- TODO: pt = "",
 		ru = "Заражённая область",
 		cn = "腐化区域",
-		-- TODO: tw = "",
+		tw = "腐化區域",
 	},
 });
 

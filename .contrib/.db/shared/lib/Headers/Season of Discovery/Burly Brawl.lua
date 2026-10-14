@@ -12,7 +12,7 @@ BURLY_BRAWL = createHeader({	-- Burly Brawl
 		pt = "Briga Corpulenta",
 		ru = "Крепкая драка",
 		cn = "魁梧斗殴",
-		-- TODO: tw = "",
+		tw = "Burly Brawl",	-- TODO: verify it.
 	},
 	description = {
 		en = "Only the person who gets the final hit on the drunk will get credit, regardless of who tapped the target first. There is no group credit for this.",
@@ -25,6 +25,6 @@ BURLY_BRAWL = createHeader({	-- Burly Brawl
 		pt = "Somente a pessoa que acertar o golpe final no bêbado receberá o crédito, independentemente de quem bateu primeiro no alvo. Não há crédito de grupo para isso.",
 		ru = "Зачет получит только тот, кто нанесет последний удар по пьяному, независимо от того, кто первым нанес удар по цели. Для этого не существует группового кредита.",
 		cn = "无论谁先击中目标，只有最终击中醉汉的人才会获得荣誉。对此没有团体信用。",
-		-- TODO: tw = "",
+		tw = "無論誰先攻擊目標，只有對醉漢造成最後一擊的人會取得此項目標的進度；此項目不提供團隊共同進度。",
 	},
 });

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此设置允许你选择新的队长分配者。",
-		-- TODO: tw = "",
+		tw = "此設定可讓你選擇新的隊長分配者。",
 	},
 })

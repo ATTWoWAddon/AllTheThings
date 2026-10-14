@@ -22,6 +22,6 @@ HEIRLOOMS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = [[~ITEM_QUALITY7_DESC]],
-		-- TODO: tw = "",
+		tw = [[~HEIRLOOMS]],
 	},
 });

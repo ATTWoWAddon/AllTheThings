@@ -40,13 +40,14 @@ local STEELSERIES = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "赛睿",
-		-- TODO: tw = "",
+		tw = "SteelSeries",
 	},
 	description = {
 		en = "Promotion for SteelSeries World of Warcraft Limited Edition Collection.",
 		es = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
 		mx = "Promoción de la colección de edición limitada SteelSeries World of Warcraft.",
 		cn = "赛睿《魔兽世界》限量版系列促销活动。",
+		tw = "SteelSeries《魔獸世界》限量版系列促銷活動。",
 	},
 });
 local RAZER = createHeader({
@@ -63,13 +64,14 @@ local RAZER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "雷蛇",
-		-- TODO: tw = "",
+		tw = "Razer",
 	},
 	description = {
 		en = "Promotion for Razer Gaming Peripherals World of Warcraft Collection. Purchasing any item will award all three promotional codes.",
 		es = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
 		mx = "Promoción de periféricos Razer Gaming de la colección World of Warcraft. Al comprar cualquier artículo, recibirás los tres códigos promocionales.",
 		cn = "雷蛇《魔兽世界》系列游戏外设促销：购买任意一件，即可获赠全部三个促销兑换码。",
+		tw = "Razer《魔獸世界》系列電競周邊促銷活動。購買任一商品即可獲得全部三組促銷兌換碼。",
 	},
 });
 

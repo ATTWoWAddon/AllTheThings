@@ -32,12 +32,14 @@ local RAZER = createHeader({
 	text = {
 		en = "Razer",
 		cn = "雷蛇",
+		tw = "Razer",
 	},
 	description = {
 		en = "Razer x World of Warcraft Mount Giveaway. Starts on January 21 2025 at 10:00AM PST and ends on January 31, 2026 at 11:59PM PST. No purchase necessary.",
 		es = "Sorteo de montura Razer x World of Warcraft. Comienza el 21 de enero de 2025 a las 10:00 a. m. PST y finaliza el 31 de enero de 2026 a las 11:59 p. m. PST. No es necesario realizar ninguna compra.",
 		mx = "Sorteo de montura Razer x World of Warcraft. Comienza el 21 de enero de 2025 a las 10:00 a. m. PST y finaliza el 31 de enero de 2026 a las 11:59 p. m. PST. No es necesario comprar nada.",
 		cn = "雷蛇 ×《魔兽世界》坐骑抽奖活动，活动时间：2025年1月21日太平洋时间上午10:00至2026年1月31日太平洋时间晚上11:59，无需购买即可参与。",
+		tw = "Razer x《魔獸世界》坐騎抽獎活動。活動從 2025 年 1 月 21 日太平洋標準時間上午 10:00 開始，至 2026 年 1 月 31 日太平洋標準時間晚上 11:59 結束。無須購買即可參加。",
 	},
 });
 local FANTA = createHeader({
@@ -46,12 +48,14 @@ local FANTA = createHeader({
 	text = {
 		en = "Fanta",
 		cn = "芬达",
+		tw = "Fanta",
 	},
 	description = {
 		en = "Go to https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, play a short game and get 1 reward per week. Sweepstakes starts on April 1, 2026 and ends at 11:59 pm ET on July 30, 2026 or once all rewards have been claimed, whichever occurs first. 2392 of each reward available per week. Resets at 12:00 am ET weekly. No purchase necessary.",
 		es = "Visita https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, juega un mini juego y consigue 1 premio por semana. El sorteo comienza el 1 de abril de 2026 y finaliza a las 23:59 (hora del este) del 30 de julio de 2026 o cuando se hayan reclamado todos los premios, lo que ocurra primero. Hay 2392 premios de cada tipo disponibles por semana. Se reinicia semanalmente a las 00:00 (ET). No es necesario realizar ninguna compra.",
 		mx = "Visita https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, juega un minijuego y consigue 1 premio por semana. El sorteo empieza el 1 de abril de 2026 y acaba a las 23:59 (hora del este) del 30 de julio de 2026 o cuando se hayan reclamado todos los premios, lo que ocurra primero. Hay 2392 premios de cada tipo disponibles por semana. Se reinicia semanalmente a las 00:00 (ET). No es necesario realizar ninguna compra.",
 		cn = "前往 https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it，玩一个小游戏，每周可获得1份奖励。抽奖活动自2026年4月1日开始，至2026年7月30日美国东部时间晚上11:59结束，或直至所有奖励被领取完毕，以先到者为准。每周每种奖励提供2392份。每周在美国东部时间凌晨12:00重置。无需购买。",
+		tw = "前往 https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it ，遊玩一個小遊戲，每週可獲得 1 份獎勵。抽獎活動從 2026 年 4 月 1 日開始，至 2026 年 7 月 30 日美東時間晚上 11:59，或所有獎勵領取完畢時結束，以先到者為準。每週每種獎勵各有 2392 份。每週美東時間凌晨 12:00 重置。無須購買即可參加。",
 	},
 });
 

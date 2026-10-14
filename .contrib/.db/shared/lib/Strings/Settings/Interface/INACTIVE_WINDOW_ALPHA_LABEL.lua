@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "非活动窗口透明度",
-		-- TODO: tw = "",
+		tw = "非作用中視窗不透明度",
 	},
 })

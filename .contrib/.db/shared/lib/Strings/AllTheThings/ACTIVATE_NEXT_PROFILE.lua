@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "激活下一个配置文件",
-		-- TODO: tw = "",
+		tw = "啟用下一個設定檔",
 	},
 })

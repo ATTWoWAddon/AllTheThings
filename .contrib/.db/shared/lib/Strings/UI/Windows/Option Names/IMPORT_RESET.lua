@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "重置导入",
-		-- TODO: tw = "",
+		tw = "重設匯入資料",
 	},
 })

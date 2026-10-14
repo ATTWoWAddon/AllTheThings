@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "切换拾取模式",
-		-- tw = "切换拾取模式",
+		tw = "切換拾取模式",
 	},
 })

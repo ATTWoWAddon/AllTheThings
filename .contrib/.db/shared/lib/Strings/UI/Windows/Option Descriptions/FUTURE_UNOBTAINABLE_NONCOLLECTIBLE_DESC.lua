@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "按此按钮可切换是否排除不可收集的物品，例如投掷武器和圣物。",
-		-- TODO: tw = "",
+		tw = "按此按鈕可切換是否排除非收藏品，例如投擲武器和聖物。",
 	},
 })

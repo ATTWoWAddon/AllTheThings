@@ -247,7 +247,7 @@ maproot(KALIMDOR, ASHENVALE, {
 					pt = "Derrote um Tenente",
 					ru = "Победить лейтенанта",
 					cn = "击败一名中尉",
-					-- TODO: tw = "",
+					tw = "擊敗一名中尉",
 				},
 			}), {
 				aqd = {
@@ -301,7 +301,7 @@ maproot(KALIMDOR, ASHENVALE, {
 					pt = "Ganhe a Batalha",
 					ru = "Выиграй битву",
 					cn = "赢得战斗",
-					-- TODO: tw = "",
+					tw = "贏得戰鬥",
 				},
 			}), {
 				aqd = {
@@ -2687,7 +2687,7 @@ maproot(KALIMDOR, ASHENVALE, {
 					pt = "Fale com os Mortos",
 					ru = "Поговорите с мертвыми",
 					cn = "与死者交谈",
-					-- TODO: tw = "",
+					tw = "與死者交談",
 				},
 			}), {
 				questID = 78907,	-- Dead Twilight Cultist HQT

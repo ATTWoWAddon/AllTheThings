@@ -12,6 +12,6 @@ INVASION_VRYKUL = createHeader({
 		-- TODO: pt = "",
 		ru = "Вторжение: Врайкулы",
 		cn = "入侵：维库人",
-		-- TODO: tw = "",
+		tw = "入侵：維酷人",
 	},
 });

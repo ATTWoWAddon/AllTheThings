@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "最高价格",
-		-- TODO: tw = "",
+		tw = "最高價格",
 	},
 })

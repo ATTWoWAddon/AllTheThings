@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这是一个供贡献者使用的调试工具，并不面向大多数玩家。",
-		-- TODO: tw = "",
+		tw = "這是供貢獻者使用的除錯工具，並非供大多數玩家使用。",
 	},
 })

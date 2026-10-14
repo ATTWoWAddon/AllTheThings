@@ -21,10 +21,12 @@ local IRON_INVASION = createHeader({
 	description = {
 		en = "If you are phased into the Invasion Blasted Lands and need to go to the pre-Invasion Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
 		cn = "如果你被位面分到了入侵版的诅咒之地，而需要前往入侵前的诅咒之地，则需与希多尔米交谈。她站在从悲伤沼泽进入该区域的入口附近的一座小山上。",
+		tw = "如果你被切換到「入侵中的詛咒之地」，但需要前往入侵前的詛咒之地，請與悲傷沼澤入口附近小山丘上的 Zidormi 交談。",	-- TODO: verify it.
 	},
 	lore = {
 		en = "The Iron Horde have activated their Dark Portal and have begun streaming through it in the Blasted Lands. They've made it all the way to Blackrock Spire and have designs on the rest of Azeroth. In the Blasted Lands, Nethergarde Keep has fallen, Okril'lon Hold (previously Dreadmaul Hold) has been taken over, and the Dreadmaul tribe have taken up with the Iron Horde as endless numbers of orcs stream from the Dark Portal.",
 		cn = "钢铁部落已激活他们的黑暗之门，并开始源源不断地涌入诅咒之地。他们一路推进到黑石塔，并觊觎着艾泽拉斯的其余土地。在诅咒之地，守望堡已经陷落，欧卡里隆要塞（原巨槌要塞）已被占领，随着无穷无尽的兽人从黑暗之门涌出，巨槌氏族也投靠了钢铁部落。",
+		tw = "鋼鐵部落啟動了黑暗之門，開始從詛咒之地大量湧入。它們已一路攻至黑石塔，並企圖進一步征服艾澤拉斯。在詛咒之地，守望堡已陷落，歐克里隆堡（原為巨槌要塞）也已遭到佔領；巨槌氏族加入鋼鐵部落，無數獸人正源源不絕地穿過黑暗之門。",
 	},
 });
 

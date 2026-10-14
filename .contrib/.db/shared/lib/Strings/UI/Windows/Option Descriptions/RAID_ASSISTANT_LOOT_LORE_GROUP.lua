@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "队伍拾取，普通物品轮流分配，特殊物品掷骰决定。",
-		-- TODO: tw = "",
+		tw = "隊伍分配：一般物品採輪流拾取，特殊物品則以擲骰決定。",
 	},
 })

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "同步过程中发生了解析错误。",
-		-- TODO: tw = "",
+		tw = "同步過程中發生解析錯誤。",
 	},
 })

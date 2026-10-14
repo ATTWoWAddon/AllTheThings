@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "请稍候，正在等待服务器响应。",
-		-- TODO: tw = "",
+		tw = "請稍候，等待伺服器回應。",
 	},
 })

@@ -16,7 +16,7 @@ SECRETS = createHeader({
 		-- TODO: pt = "",
 		ru = "Секреты",
 		cn = "解密",
-		-- TODO: tw = "",
+		tw = "謎題",
 	},
 	description = {
 		en = "The Mind-Seekers are an enigmatic cult of meta-puzzle architects who test Adventurers through obscure clues hidden in forgotten corners of the world.\nThey are neither benevolent nor malevolent; rather, they seem to derive sustenance from the collective effort, frustration, and eventual triumph of those who pursue their riddles. Solving their elaborate challenges proves one's mastery of Azeroth's deepest secrets.\n\nHere you will find records of currently available riddles they have scattered throughout Azeroth, challenging the denizens to solve them and, in time, join their ranks.",
@@ -29,6 +29,6 @@ SECRETS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "寻心者是一个神秘的教派，由一群元谜题的设计者组成，他们用隐藏在世界各个被遗忘角落里的晦涩线索来考验冒险者。\n他们既非善良也非邪恶；相反，他们似乎从追寻其谜题之人的共同努力、挫败感乃至最终的胜利中汲取养分。解开他们精心设计的挑战，即证明了你已掌握艾泽拉斯最深邃的秘密。\n\n在这里，你可以找到他们散布在艾泽拉斯的当前可用谜题的记录，他们以此挑战当地居民去解开谜题，并最终加入他们的行列。",
-		-- TODO: tw = "",
+		tw = "Mind-Seekers 是一個神祕教派，由擅長設計元謎題的成員組成。他們以隱藏在世界遺忘角落的晦澀線索考驗冒險者。\n他們既非善亦非惡，似乎從追尋謎題者的共同努力、挫折與最終勝利中汲取養分。解開精心設計的挑戰，便能證明自己掌握艾澤拉斯深處的秘密。\n\n此處收錄他們散布在艾澤拉斯、目前仍可解的謎題，挑戰居民解謎，並在日後加入他們。",	-- TODO: verify it.
 	},
 });

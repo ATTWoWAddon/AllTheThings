@@ -14,6 +14,6 @@ createLocalizationString({
 		ru = "В качестве примера, использование |cff00FF98/att achievement:9547|r покажет вам что-то потрясающее!",
 		-- TODO: ko = "",
 		cn = "例如，输入 |cff00FF98/att achievement:9547|r，就能看到超酷的内容！",
-		-- TODO: tw = "",
+		tw = "舉例來說，輸入 |cff00FF98/att achievement:9547|r，就會看到很棒的內容！",
 	},
 })

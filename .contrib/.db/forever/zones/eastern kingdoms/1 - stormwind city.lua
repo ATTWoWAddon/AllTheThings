@@ -2021,7 +2021,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 									pt = "Tocha Apagada",
 									ru = "Незажженный факел",
 									cn = "未点燃的火把",
-									-- TODO: tw = "",
+									tw = "未點燃的火把",
 								},
 							}) },
 						},

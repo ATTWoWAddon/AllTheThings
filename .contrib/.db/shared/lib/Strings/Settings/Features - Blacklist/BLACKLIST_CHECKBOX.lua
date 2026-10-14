@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "启用 ATT 中的黑名单功能！",
-		-- TODO: tw = "",
+		tw = "在 ATT 中啟用黑名單功能！",
 	},
 })

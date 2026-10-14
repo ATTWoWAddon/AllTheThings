@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "未找到幻象。",
-		-- TODO: tw = "",
+		tw = "找不到任何幻象。",
 	},
 })

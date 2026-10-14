@@ -8,10 +8,12 @@ local AMAZON_PRIME_GAMING = createHeader({
 	text = {
 		en = "Amazon Prime Gaming",
 		cn = "亚马逊 Prime Gaming",
+		tw = "Amazon Prime Gaming",
 	},
 	description = {
 		en = "Amazon Prime Gaming offers in-game content for World of Warcraft Retail. Depending on your country, Amazon Prime (which includes Gaming) costs between 4-16 $/€ per month with the occasional monthly free trial available.\n\nCreate a Twitch account & connect it with your Prime Account. Next connect your B.Net Account with your Twitch Account. Lastly claim your monthly reward under 'gaming.amazon.com/loot/wow'.\n\nAmazon Prime also comes with a free Twitch subscription which you can use to support AllTheThings.\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",
 		cn = "亚马逊 Prime Gaming 为《魔兽世界》正式服提供游戏内内容。根据你所在的国家 / 地区，包含 Prime Gaming 权益的亚马逊 Prime 会员每月费用在4–16美元 / 欧元 之间，偶尔也会提供月度免费试用。\n\n创建一个 Twitch 账号，并将其绑定你的亚马逊 Prime 账号。\n\n接下来将你的战网账号与 Twitch 账号绑定。\n\n最后前往 gaming.amazon.com/loot/wow 领取每月专属奖励。\n\n亚马逊 Prime 会员还附带免费的 Twitch 订阅资格，你可以用它来支持 AllTheThings。\n\n推荐主播：\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",
+		tw = "Amazon Prime Gaming 為《魔獸世界》正式版提供遊戲內內容。依你所在的國家而定，Amazon Prime（包含 Gaming）每月費用為 4 至 16 美元／歐元，偶爾也提供一個月的免費試用。\n\n建立 Twitch 帳號並與你的 Prime 帳號連結。接著，將你的 Battle.net 帳號與 Twitch 帳號連結。最後，前往「gaming.amazon.com/loot/wow」領取每月獎勵。\n\nAmazon Prime 也提供一次免費的 Twitch 訂閱，你可以用來支持 AllTheThings。\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",
 	},
 });
 

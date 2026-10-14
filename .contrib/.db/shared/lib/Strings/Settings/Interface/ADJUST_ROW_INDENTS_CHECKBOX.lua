@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "调整行缩进",
-		-- TODO: tw = "",
+		tw = "調整列縮排",
 	},
 })

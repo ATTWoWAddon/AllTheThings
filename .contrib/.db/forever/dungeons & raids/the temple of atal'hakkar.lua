@@ -20,6 +20,7 @@ local ATALAI_DEFENDERS = createHeader({
 	description = {
 		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 		cn = "你必须击杀大厅周围的全部6名小首领，才能解锁通往预言者迦玛兰的道路。",
+		tw = "你必須擊殺房間周圍全部 6 名小首領，才能開啟通往預言者迦瑪蘭的路徑。",
 	},
 });
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)

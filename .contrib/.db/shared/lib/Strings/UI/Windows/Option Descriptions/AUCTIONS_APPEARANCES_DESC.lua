@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此处列出了所有可学习用于幻化的物品。",
-		-- TODO: tw = "",
+		tw = "此處列出所有可學來塑形的物品。",
 	},
 })

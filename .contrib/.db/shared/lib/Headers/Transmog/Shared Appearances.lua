@@ -32,6 +32,6 @@ SHARED_APPEARANCES = createHeader({
 		pt = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
 		ru = "Предметы из данного списка - общие облики для предмета выше. Для Режима Уникальных Обликов, этот список может помочь Вам разобраться, почему определённый предмт отмечен как Получен или нет.",
 		cn = "此列表中的物品是以下物品的共享外观。在唯一外观模式下，此列表可帮助了解特定物品被标记为已收藏的原因。",
-		-- TODO: tw = "",
+		tw = "此清單中的物品與上方物品共用外觀。在「獨特外觀模式」中，這份清單可協助你了解特定物品為何會或不會被標記為「已收藏」。",
 	},
 });

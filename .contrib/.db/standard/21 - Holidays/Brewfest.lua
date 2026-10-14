@@ -29,7 +29,7 @@ local BREWFEST_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "美酒节",
-		-- TODO: tw = "",
+		tw = "啤酒節",
 		-- #endif
 	},
 });
@@ -48,7 +48,7 @@ local BREWFEST_BANQUET = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "美酒节宴会",
-		-- TODO: tw = "",
+		tw = "啤酒節盛宴",
 	},
 });
 -- Developer note: Use the BREWFEST_TOKEN constant in place of the reward.

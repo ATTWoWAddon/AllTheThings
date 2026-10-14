@@ -16,11 +16,12 @@ CAPTAINS = createHeader({
 		-- TODO: pt = "",
 		ru = "Капитаны",
 		cn = "船长",
-		-- TODO: tw = "",
+		tw = "隊長",
 	},
 	lore = {
 		en = "These can be farmed infinitely by resetting the boss.",
 		cn = "这些物品可以通过重置首领无限刷取。",
+		tw = "可透過重置首領來無限刷取這些物品。",
 	},
 });
 

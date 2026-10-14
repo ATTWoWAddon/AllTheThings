@@ -4,5 +4,6 @@ TRAINING_GROUNDS = createHeader({
 	text = {
 		en = "Training Grounds",
 		cn = "训练场",
+		tw = "訓練場",
 	},
 });

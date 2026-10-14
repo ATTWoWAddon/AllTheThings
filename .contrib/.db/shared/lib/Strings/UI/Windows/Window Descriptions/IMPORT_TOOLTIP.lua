@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "使用对象 ID 导入对象，以逗号分隔。",
-		-- TODO: tw = "",
+		tw = "使用物件 ID 匯入物件，並以逗號分隔。",
 	},
 })

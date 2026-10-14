@@ -139,6 +139,7 @@ local FLEXIBLE_BEFORE_WOD = createHeader({
 		es = "Esta versión de la instancia era el modo de dificultad Flexible original. El botín tenía ID de objeto únicos para cada nivel de dificultad, así como sus variantes Forjado por la guerra, de forma similar a como se hacía en SdT. Blizzard cambió su filosofía de diseño para mejor con el parche 6.0 y optó por reutilizar el identificador de un objeto y aplicar un identificador adicional en lugar de crear un identificador de objeto completamente nuevo con las mismas estadísticas base.",
 		mx = "Esta versión de la instancia era el modo de dificultad Flexible original. El botín tenía ID de objeto únicos para cada nivel de dificultad, así como sus variantes Forjas de la guerra, de forma similar a como se hacía en SdT. Blizzard cambió su filosofía de diseño para mejor con el parche 6.0 y optó por reutilizar el identificador de un objeto y aplicar un identificador adicional en lugar de crear un identificador de objeto completamente nuevo con las mismas estadísticas base.",
 		cn = "该副本的这一版本是最初的弹性难度模式。其战利品在每个难度层级都有独立物品 ID，并各自拥有战火版本，与雷电王座当时的做法类似。暴雪在6.0补丁中改进了设计思路，选择复用物品 ID 并附加奖励 ID，而不再为相同基础属性的物品创建全新的物品 ID。",
+		tw = "此副本版本是最初的彈性難度模式。其戰利品在各難度層級及各自的戰鑄版本都有獨立的物品 ID，類似雷霆王座當時的做法。暴雪在 6.0 更新檔中改善了設計理念，選擇重複使用物品 ID 並套用獎勵 ID，而不再為基礎屬性相同的物品建立全新的物品 ID。",
 	},
 });
 -- #endif

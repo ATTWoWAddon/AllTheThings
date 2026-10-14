@@ -12,6 +12,6 @@ RANK_ONE = createHeader({
 		-- TODO: pt = "",
 		ru = "Ранг 1",
 		cn = "等级1",
-		-- TODO: tw = "",
+		tw = "等級1",
 	},
 });

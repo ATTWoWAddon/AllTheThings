@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "%s / %s 数据块",
-		-- TODO: tw = "",
+		tw = "%s / %s 個區塊",
 	},
 })

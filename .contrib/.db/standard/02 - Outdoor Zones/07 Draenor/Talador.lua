@@ -2250,7 +2250,7 @@ maproot(DRAENOR, TALADOR, {
 					pt = "Conselho de Guerra Sargerei",
 					ru = "Саргерайский военный совет",
 					cn = "萨格雷战争议会",
-					-- TODO: tw = "",
+					tw = "Sargerei War Council",	-- TODO: verify it.
 				},
 				description = {
 					en = "Patrols the area in roughly a circle.",
@@ -2263,7 +2263,7 @@ maproot(DRAENOR, TALADOR, {
 					pt = "Patrulha a área aproximadamente em círculo.",
 					ru = "Патрулирует территорию примерно по кругу.",
 					cn = "大致绕一圈巡逻。",
-					-- TODO: tw = "",
+					tw = "大致沿著環狀路線在此區域巡邏。",
 				},
 			}), {
 				questID = 37337,

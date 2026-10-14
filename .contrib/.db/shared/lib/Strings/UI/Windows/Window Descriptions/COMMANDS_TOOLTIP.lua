@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "所有可用的 ATT 命令列表。",
-		-- TODO: tw = "",
+		tw = "所有可用 ATT 指令的清單。",
 	},
 })

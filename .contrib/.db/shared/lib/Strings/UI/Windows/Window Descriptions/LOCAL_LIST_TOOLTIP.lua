@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此窗口显示了本地地图上的所有内容。\n\n与其说是功能，不如说是个调试工具。",
-		-- TODO: tw = "",
+		tw = "此視窗顯示目前地圖的所有內容。\n\n這主要是除錯工具。",
 	},
 })

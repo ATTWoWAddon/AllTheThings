@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "本地列表",
-		-- TODO: tw = "",
+		tw = "目前地圖清單",
 	},
 })

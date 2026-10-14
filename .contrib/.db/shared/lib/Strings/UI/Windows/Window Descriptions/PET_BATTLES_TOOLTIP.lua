@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此列表显示了所有宠物对战内容，以及 ATT 数据库中获取战斗宠物的来源。",
-		-- TODO: tw = "",
+		tw = "此清單顯示所有寵物對戰內容，以及 ATT 資料庫中戰寵的取得方式。",
 	},
 })

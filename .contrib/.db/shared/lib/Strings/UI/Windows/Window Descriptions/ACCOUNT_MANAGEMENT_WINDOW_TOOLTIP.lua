@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此列表显示了与帐号数据管理相关的所有功能。",
-		-- TODO: tw = "",
+		tw = "此清單顯示所有帳號資料管理功能。",
 	},
 })

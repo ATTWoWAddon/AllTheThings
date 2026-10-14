@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "合并角色数据：\n%s，",
-		-- TODO: tw = "",
+		tw = "合併角色資料：\n%s，",
 	},
 })

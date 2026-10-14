@@ -9,10 +9,12 @@ local CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
 	text = {
 		en = "Crieve's Never Implemented List",
 		cn = "Crieve 的未实装清单",
+		tw = "Crieve 的從未實裝清單",
 	},
 	description = {
 		en = "If the following are sorted somewhere, please delete them from this list. Thanks.",
 		cn = "如果以下内容已在别处归类整理，请将它们从本清单中删除。谢谢。",
+		tw = "如果下列內容已在其他地方分類，請將它們從此清單中刪除。謝謝。",
 	},
 });
 

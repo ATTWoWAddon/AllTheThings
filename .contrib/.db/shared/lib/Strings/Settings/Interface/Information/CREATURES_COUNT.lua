@@ -7,5 +7,6 @@ createLocalizationString({
 		es = "[%s Criaturas]",
 		ru = "[%s Существ]",
 		cn = "[%s 生物]",
+		tw = "[%s 隻生物]",
 	},
 })

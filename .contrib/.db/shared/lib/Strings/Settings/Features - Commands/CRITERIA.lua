@@ -6,5 +6,6 @@ createLocalizationString({
 		en = "Criteria",
 		ru = "Критерия",
         cn = "条件",
+		tw = "條件",
 	},
 })

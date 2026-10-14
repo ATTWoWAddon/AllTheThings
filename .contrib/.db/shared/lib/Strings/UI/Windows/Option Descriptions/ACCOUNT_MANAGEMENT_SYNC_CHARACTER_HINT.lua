@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "左键点击同步此角色",
-		-- TODO: tw = "",
+		tw = "按左鍵同步此角色",
 	},
 })

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "点击更改过滤器",
-		-- TODO: tw = "",
+		tw = "點選以變更篩選條件",
 	},
 })

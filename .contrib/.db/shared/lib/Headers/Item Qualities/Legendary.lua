@@ -25,6 +25,6 @@ LEGENDARIES = createHeader({
 		-- TODO: pt = "",
 		ru = "Легендарные предметы",
 		cn = [[~ITEM_QUALITY5_DESC]],
-		-- TODO: tw = "",
+		tw = [[~LOOT_JOURNAL_LEGENDARIES]],
 	},
 });

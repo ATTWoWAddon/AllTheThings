@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "角色独有数据",
-		-- TODO: tw = "",
+		tw = "角色專屬資料",
 	},
 })

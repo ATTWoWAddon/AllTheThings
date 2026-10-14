@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "点击执行完整扫描",
-		-- TODO: tw = "",
+		tw = "點選以執行完整掃描",
 	},
 })

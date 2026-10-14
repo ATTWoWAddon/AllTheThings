@@ -16,7 +16,7 @@ BOUNTY = createHeader({
 		pt = "Recompensa",
 		ru = "Премия",
 		cn = "赏金任务",
-		-- TODO: tw = "",
+		tw = "懸賞",
 	},
 });
 SLAYERS_RISE = createHeader({
@@ -25,6 +25,7 @@ SLAYERS_RISE = createHeader({
 	text = {
 		en = "Slayer's Rise",
 		cn = "屠戮者高地",
+		tw = "殺戮者高地",
 	},
 });
 WORLD_PVP = createHeader({
@@ -41,7 +42,7 @@ WORLD_PVP = createHeader({
 		-- TODO: pt = "",
 		ru = "Мировое PvP",
 		cn = "世界PvP",
-		-- TODO: tw = "",
+		tw = "世界 PvP",
 	},
 });
 

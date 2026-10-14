@@ -12,6 +12,6 @@ LORE = createHeader({
 		-- TODO: pt = "",
 		ru = "История",
 		cn = "剧情",
-		-- TODO: tw = "",
+		tw = "背景故事",
 	},
 });

@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = " ШТУЧКА ДО ",
 		-- TODO: ko = "",
 		cn = " 事物到 ",
-		-- TODO: tw = "",
+		tw = " 個項目後可達 ",
 	},
 })

@@ -12,6 +12,6 @@ RANK_FOUR = createHeader({
 		-- TODO: pt = "",
 		ru = "Ранг 4",
 		cn = "等级4",
-		-- TODO: tw = "",
+		tw = "等級4",
 	},
 });

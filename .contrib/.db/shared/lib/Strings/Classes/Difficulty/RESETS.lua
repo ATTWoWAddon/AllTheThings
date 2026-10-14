@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "重置",
-		-- TODO: tw = "",
+		tw = "重置時間",
 	},
 })

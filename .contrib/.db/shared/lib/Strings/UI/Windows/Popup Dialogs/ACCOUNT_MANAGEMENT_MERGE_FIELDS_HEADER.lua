@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "\n \n以下字段将被合并：\n ",
-		-- TODO: tw = "",
+		tw = "\n \n下列欄位將會合併：\n ",
 	},
 })

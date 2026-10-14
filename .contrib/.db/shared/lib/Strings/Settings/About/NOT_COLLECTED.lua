@@ -12,5 +12,6 @@ createLocalizationString({
 		fr = "Pas Collecté",
 		ru = "Не Собрано",
 		cn = "未收藏",
+		tw = "未收集",
 	},
 })

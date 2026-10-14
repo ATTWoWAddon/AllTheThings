@@ -3327,7 +3327,7 @@ root(ROOTS.Craftables, {
 						-- TODO: pt = "",
 						-- TODO: ru = "",
 						-- TODO: cn = "",
-						-- TODO: tw = "",
+						tw = "可向採礦供應商及世界各地部分貿易商人購買。",	-- TODO: verify it.
 					},
 				}),
 			}),

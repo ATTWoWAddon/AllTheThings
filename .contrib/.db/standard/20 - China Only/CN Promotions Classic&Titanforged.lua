@@ -17,6 +17,7 @@ local TITANFORGED_PROMOTIONS = createHeader({
 	--	ru = "Промо Midnight",
 		cn = "泰坦重铸促销",
 	--	tw = "《至暗之夜》季節性促銷",
+		tw = "Titanforged 促銷活動",	-- TODO: verify it.
 	},
 	--description = {
 	--	en = "These promotions happened during the time Midnight was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
@@ -36,10 +37,12 @@ local CN_PROMOTIONS_CLASSIC = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		cn = "中国促销（经典）",
+		tw = "中國促銷活動（經典版）",
 	},
 	description = {
 		en = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
 		cn = "这些促销活动仅限于经典与泰坦重铸中国服务器。",
+		tw = "這些促銷活動僅限中國的經典版與 Titanforged 伺服器。",	-- TODO: verify it.
 	},
 });
 root(ROOTS.Promotions, {

@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Кроме НИП",
 		-- TODO: ko = "",
 		cn = "排除 NPC",
-		-- TODO: tw = "",
+		tw = "NPC 除外",
 	},
 })

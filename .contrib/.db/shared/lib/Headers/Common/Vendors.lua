@@ -14,6 +14,6 @@ VENDORS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "商人",	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
-		-- TODO: tw = "",
+		tw = "商人",
 	},
 });

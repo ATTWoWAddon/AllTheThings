@@ -11,6 +11,6 @@ KRASARANG_WILDS_CAMPAIGN = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "卡桑琅丛林战役",
-		-- TODO: tw = "",
+		tw = "喀撒朗蠻荒戰役",
 	},
 });

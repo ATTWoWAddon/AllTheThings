@@ -21,6 +21,7 @@ local ATALAI_DEFENDERS = createHeader({
 	description = {
 		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 		cn = "你必须击杀大厅周围的全部6名小首领，才能解锁通往预言者迦玛兰的道路。",
+		tw = "你必須擊殺大廳周圍的全部6名小首領，才能解鎖通往預言者迦瑪蘭的道路。",
 	},
 });
 
@@ -777,10 +778,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							text = {
 								en = "Aura of Paralyzing Dread",
 								cn = "痹体恐惧氛围",
+								tw = "Aura of Paralyzing Dread",	-- TODO: verify it.
 							},
 							description = {
 								en = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
 								cn = "你需要被梦魇融合体施加负面效果才能触发此任务。（不要与它交战，直接跑开即可）",
+								tw = "需要先受到 Nightmare Amalgam 施加的減益效果，才能觸發這項任務。（不要與它交戰，直接跑開即可。）",	-- TODO: verify it.
 							},
 						}), {
 							qg = 222198,	-- Nightmare Amalgamation
@@ -868,6 +871,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							text = {
 								en = "Emotional Damage",
 								cn = "心理创伤",
+								tw = "Emotional Damage",	-- TODO: verify it.
 							},
 						}), {
 							qg = 221477,	-- Field Captain Hannalah

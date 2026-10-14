@@ -8,10 +8,12 @@ local DIVERGENT = createHeader({
 	text = {
 		en = "Divergent",
 		cn = "歧路",
+		tw = "Divergent",	-- TODO: verify it.
 	},
 	description = {
 		en = "Low Drop Chance",
 		cn = "低掉率",
+		tw = "低掉落機率",
 	},
 });
 

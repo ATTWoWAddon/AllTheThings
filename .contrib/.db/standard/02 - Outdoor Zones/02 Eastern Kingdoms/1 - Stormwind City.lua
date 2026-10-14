@@ -3021,7 +3021,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					pt = "Fale com o Irmão Romulus",
 					ru = "Поговорите с Брат Ромул",
 					cn = "与罗穆卢斯修士交谈",
-					-- TODO: tw = "",
+					tw = "與 Brother Romulus 交談",	-- TODO: verify it.
 				},
 			}), {
 				questID = 75939,	-- Brother Romulus HQT
@@ -4263,7 +4263,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 									pt = "Tocha Apagada",
 									ru = "Незажженный факел",
 									cn = "未点燃的火把",
-									-- TODO: tw = "",
+									tw = "未點燃的火炬",
 								},
 							}) },
 						},

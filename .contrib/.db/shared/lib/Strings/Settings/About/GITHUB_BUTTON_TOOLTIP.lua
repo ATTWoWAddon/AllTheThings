@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "点击按钮复制 URL 到 All The Things GitHub 地址。\n\n您可以直接克隆软件源代码，而无需使用第三方插件管理器！",
-		-- TODO: tw = "",
+		tw = "點擊此按鈕，複製前往 All The Things GitHub 專案的網址。\n\n你可以直接複製此儲存庫，不必使用第三方插件管理器！",
 	},
 })

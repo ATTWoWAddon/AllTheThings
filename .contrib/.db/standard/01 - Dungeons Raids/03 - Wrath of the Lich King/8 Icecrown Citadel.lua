@@ -16,7 +16,7 @@ local STORMING_THE_CITADEL = createHeader({
 		pt = "Invasão da Cidadela",
 		ru = "Штурм цитадели",
 		cn = "进攻堡垒",
-		-- TODO: tw = "",
+		tw = "直搗城塞",
 	},
 });
 local THE_PLAGUEWORKS = createHeader({
@@ -33,7 +33,7 @@ local THE_PLAGUEWORKS = createHeader({
 		pt = "Antro da Peste",
 		ru = "Чумодельня",
 		cn = "天灾工厂",
-		-- TODO: tw = "",
+		tw = "瘟疫工坊",
 	},
 });
 local THE_CRIMSON_HALLS = createHeader({
@@ -57,7 +57,7 @@ local THE_FROSTWING_HALLS = createHeader({
 		pt = "Salões da Asa Gélida",
 		ru = "Залы Ледокрылых",
 		cn = "霜翼大厅",
-		-- TODO: tw = "",
+		tw = "霜翼大廳",
 	},
 });
 

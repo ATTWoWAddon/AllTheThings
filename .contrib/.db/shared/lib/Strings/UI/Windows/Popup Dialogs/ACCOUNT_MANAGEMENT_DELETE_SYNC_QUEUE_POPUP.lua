@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "同步队列：%s\n \n确定要删除吗？",
-		-- TODO: tw = "",
+		tw = "同步佇列：%s\n \n確定要刪除此項目嗎？",
 	},
 })

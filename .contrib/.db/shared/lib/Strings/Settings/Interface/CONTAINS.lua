@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Содержит:",
 		-- TODO: ko = "",
 		cn = "包含：",
-		-- TODO: tw = "",
+		tw = "包含：",
 	},
 })

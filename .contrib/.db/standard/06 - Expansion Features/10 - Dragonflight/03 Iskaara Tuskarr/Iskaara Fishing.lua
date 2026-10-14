@@ -16,7 +16,7 @@ local ISKAARA_FISHING = createHeader({
 		-- TODO: pt = "",
 		ru = "Искарское рыболовство",
 		cn = "伊斯卡拉渔具",
-		-- TODO: tw = "",
+		tw = "伊斯凱拉釣魚",
 	},
 });
 

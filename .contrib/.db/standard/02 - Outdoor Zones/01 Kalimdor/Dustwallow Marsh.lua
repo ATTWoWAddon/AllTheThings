@@ -29,7 +29,7 @@ local ALCAZ_ISLAND = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "回到奥卡兹岛，揭开维维尔博士邪恶计划最深处的秘密，也许你还能带一些精美的纪念品回家。",
-		-- TODO: tw = "",
+		tw = "返回奧卡茲島，揭開 Dr. Weavil 的陰謀；說不定還能帶件不錯的紀念品回家。",	-- TODO: verify it.
 	},
 });
 

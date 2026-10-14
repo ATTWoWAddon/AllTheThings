@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Персонажей не найдено.",
 		-- TODO: ko = "",
 		cn = "未找到角色。",
-		-- tw = "未找到角色。",
+		tw = "找不到角色。",
 	},
 })

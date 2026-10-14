@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "点击此按钮将原始数据导入调试器。请勿导入可读数据。",
-		-- TODO: tw = "",
+		tw = "點選此處將原始資料匯入除錯工具。請勿匯入易讀資料。",
 	},
 })

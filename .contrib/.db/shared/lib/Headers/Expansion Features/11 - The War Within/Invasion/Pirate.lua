@@ -12,6 +12,6 @@ INVASION_PIRATE = createHeader({
 		-- TODO: pt = "",
 		ru = "Вторжение: Пираты",
 		cn = "入侵：海盗",
-		-- TODO: tw = "",
+		tw = "入侵：海盜",
 	},
 });

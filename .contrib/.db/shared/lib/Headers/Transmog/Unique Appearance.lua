@@ -32,6 +32,6 @@ UNIQUE_APPEARANCE = createHeader({
 		pt = "Este item tem uma aparência única. Você deve coletar este item especificamente para ganhar a aparência.",
 		ru = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 		cn = "此列表中的物品是独特外观。你必须专门收藏这个物品以获得外观。",
-		-- TODO: tw = "",
+		tw = "此物品具有獨特外觀。必須取得這件物品本身，才能收藏該外觀。",
 	},
 });

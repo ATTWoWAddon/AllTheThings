@@ -23,6 +23,7 @@ local ELEMENTAL_UNREST = createHeader({
 		es = "La Inestabilidad elemental fue un evento mundial que anunció el Cataclismo. El evento culminó con el ataque de los elementales a Ventormenta, Orgrimmar, Forjaz y Cima del Trueno. Los jugadores que derrotaran a estos elementales y liberaran a los ciudadanos atrapados en toda su ciudad obtenían acceso a dos encuentros especiales con jefes.",
 		mx = "La Inestabilidad elemental fue un evento mundial que anunció el Cataclismo. El evento termino con el ataque de los elementales a Ventormenta, Orgrimmar, Forjaz y Cima del Trueno. Los jugadores que derrotaran a estos elementales y liberaran a los ciudadanos atrapados en toda su ciudad ganaban acceso a dos peleas especiales con jefes.",
 		cn = "元素动荡是一场预示着大灾变来临的世界事件。该事件最终以元素生物袭击暴风城、奥格瑞玛、铁炉堡和雷霆崖达到高潮。玩家若能击败这些元素生物，并解救城中被困的市民，就可获得挑战两个特殊首领的机会。",
+		tw = "Elemental Unrest 是預告《浩劫與重生》到來的世界事件。事件高潮時，元素生物襲擊暴風城、奧格瑪、鐵爐堡與雷霆崖。玩家擊敗元素生物並解救各城市受困居民後，即可挑戰兩個特殊首領。",	-- TODO: verify it.
 	},
 });
 

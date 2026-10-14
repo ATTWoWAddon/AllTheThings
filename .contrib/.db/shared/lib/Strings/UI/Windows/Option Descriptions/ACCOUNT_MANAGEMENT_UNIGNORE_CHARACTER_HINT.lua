@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "Alt+右键点击取消忽略此角色",
-		-- TODO: tw = "",
+		tw = "按住 Alt 並按右鍵即可取消忽略此角色。",
 	},
 })

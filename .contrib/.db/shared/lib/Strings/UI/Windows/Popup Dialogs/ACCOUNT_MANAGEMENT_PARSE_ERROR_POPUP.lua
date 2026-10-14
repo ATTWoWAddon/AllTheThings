@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "与其把你的内存撑爆，Crieve 决定让你把这串数据报告给他来修复。\n\n给你带来不便，敬请谅解。\n\n%s",
-		-- TODO: tw = "",
+		tw = "與其讓你的記憶體爆掉，Crieve 決定改請你將這串資料回報給他，以便修正。\n\n造成不便，敬請見諒。\n\n%s",
 	},
 })

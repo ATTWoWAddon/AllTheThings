@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "粘贴 %s ID 或全局引用，例如 [ATTC.CurrentCharacter.Quests]。",
-		-- TODO: tw = "",
+		tw = "貼上 %s ID 或全域參照，例如 [ATTC.CurrentCharacter.Quests] 等。",
 	},
 })

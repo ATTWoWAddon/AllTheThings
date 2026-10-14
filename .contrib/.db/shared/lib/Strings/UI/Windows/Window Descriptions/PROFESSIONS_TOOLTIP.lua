@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此列表显示了你可以为你的专业收集的所有配方。",
-		-- TODO: tw = "",
+		tw = "此清單顯示你可以為專業技能收集的所有配方。",
 	},
 })

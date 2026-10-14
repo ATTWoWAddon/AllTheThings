@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "此窗口显示您当前角色的开门任务进度。",
-		-- TODO: tw = "",
+		tw = "此視窗會顯示目前角色的副本前置條件進度。",
 	},
 })

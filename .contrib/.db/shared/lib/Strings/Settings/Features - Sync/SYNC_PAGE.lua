@@ -11,6 +11,6 @@ createLocalizationString({
 		ru = "Синхронизация",
 		-- TODO: ko = "",
 		cn = "同步",
-		-- TODO: tw = "",
+		tw = "同步",
 	},
 })

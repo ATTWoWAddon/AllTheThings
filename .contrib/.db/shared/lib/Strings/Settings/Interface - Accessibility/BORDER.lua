@@ -5,5 +5,6 @@ createLocalizationString({
 	text = {
 		en = [[~EMBLEM_BORDER]],
 		ru = "Рамка",
+		tw = [[~EMBLEM_BORDER]],
 	},
 })

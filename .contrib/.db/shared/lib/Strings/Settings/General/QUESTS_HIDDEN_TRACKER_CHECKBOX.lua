@@ -12,6 +12,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- tw = "+HQT",
+		tw = "+HQT",
 	},
 })

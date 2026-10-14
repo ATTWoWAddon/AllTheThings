@@ -28,6 +28,7 @@ local COMMUNITY_CLUES_HEADER = createHeader({
 	text = {
 		en = "Community Clues",
 		cn = "社区线索",
+		tw = "社群線索",
 	},
 });
 -- TODO:

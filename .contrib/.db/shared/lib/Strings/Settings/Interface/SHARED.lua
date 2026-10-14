@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Все Сложности",
 		-- TODO: ko = "",
 		cn = "共享",
-		-- TODO: tw = "",
+		tw = "共用",
 	},
 })

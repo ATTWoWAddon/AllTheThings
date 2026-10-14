@@ -20,7 +20,7 @@ local SPIRIT_OF_COMPETITION = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "竞争之魂",
-		-- TODO: tw = "",
+		tw = "競賽之靈",
 		-- #endif
 	},
 	description = {
@@ -34,7 +34,7 @@ local SPIRIT_OF_COMPETITION = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这是一个以战场为基础的活动，与夏季奥运会的开始同时进行。唯一一次庆祝是在2008年，以配合北京奥运会，虽然似乎有意图重复这个活动，但它从未回归。",
-		-- TODO: tw = "",
+		tw = "這是一項以戰場為主、配合夏季奧運開幕而舉辦的事件。此事件只在 2008 年為了配合北京奧運而舉辦過一次，雖然似乎曾有意再次舉辦，但之後再也沒有回歸。",
 	},
 });
 

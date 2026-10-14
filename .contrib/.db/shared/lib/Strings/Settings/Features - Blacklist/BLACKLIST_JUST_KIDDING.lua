@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "愚人节快乐！ATT 里可没法拉黑东西哦。",
-		-- TODO: tw = "",
+		tw = "愚人節快樂！！你無法在 ATT 中將項目加入黑名單。",
 	},
 })

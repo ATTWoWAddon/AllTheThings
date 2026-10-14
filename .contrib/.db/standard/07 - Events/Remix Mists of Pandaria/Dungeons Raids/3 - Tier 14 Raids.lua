@@ -10,6 +10,7 @@ local TIER_14_RAIDS = createHeader({
 	text = {
 		en = "Tier 14 Raids",
 		cn = "T14 团队副本",
+		tw = "T14 團隊副本",
 	},
 });
 

@@ -36,6 +36,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							--ru = "Manaforge Translocators",
 							cn = "法力熔炉传送器",
 							--tw = "Manaforge Translocators",
+							tw = "法力熔爐移位裝置",
 						},
 						description = {
 							en = "Manaforge Translocators are teleporters used to instantly move around Naigtal.",
@@ -48,7 +49,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							-- TODO: pt = "",
 							-- TODO: ru = "",
 							cn = "法力熔炉传送器是一种传送装置，可让你在奈格塔尔各地瞬间移动。",
-							-- TODO: tw = "",
+							tw = "法力熔爐移位裝置是可讓你在奈格塔各處瞬間移動的傳送裝置。",
 						},
 					}), {
 						groups = sharedData({

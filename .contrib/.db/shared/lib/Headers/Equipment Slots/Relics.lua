@@ -19,7 +19,7 @@ RELICS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "圣物",
-		-- TODO: tw = "",
+		tw = "聖物",
 		-- #endif
 	},
 });

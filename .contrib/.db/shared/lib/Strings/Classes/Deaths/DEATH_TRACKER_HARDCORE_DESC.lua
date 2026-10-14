@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "ATT 众神的需求必须得到满足。去吧，凡人，去尝试升级吧！\n\n“活着！死去！再试一次！”\n",
-		-- TODO: tw = "",
+		tw = "ATT 諸神必須得到滿足。前進吧，凡人，試著升級！\n\n 「活著！死去！再試一次！」\n",
 	},
 })

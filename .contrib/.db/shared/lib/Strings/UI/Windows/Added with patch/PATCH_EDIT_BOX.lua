@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "请输入新补丁",
-		-- TODO: tw = "",
+		tw = "請輸入新的版本",
 	},
 })

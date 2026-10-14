@@ -5,5 +5,6 @@ createLocalizationString({
 	text = {
 		en = [[~"%s " .. READY]],
 		ru = "%s загрузились",
+		tw = [[~"%s " .. READY]],
 	},
 })

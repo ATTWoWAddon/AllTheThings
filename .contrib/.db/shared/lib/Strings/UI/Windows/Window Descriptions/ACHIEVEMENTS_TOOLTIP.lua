@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此列表显示了所有你可以收集的成就。",
-		-- TODO: tw = "",
+		tw = "此清單顯示你可以收集的所有成就。",
 	},
 })

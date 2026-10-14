@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Может быть выполнено ежегодно.",
 		-- TODO: ko = "",
 		cn = "可以每年完成",
-		-- TODO: tw = "",
+		tw = "每年可完成",
 	},
 })

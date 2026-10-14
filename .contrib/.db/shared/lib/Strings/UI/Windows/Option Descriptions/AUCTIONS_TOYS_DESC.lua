@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "所有被 ATT 判定为未来玩具、或被游戏当前判定为玩具的物品。",
-		-- TODO: tw = "",
+		tw = "所有目前由遊戲判定為玩具，或由 ATT 預先列為玩具的物品。",
 	},
 })

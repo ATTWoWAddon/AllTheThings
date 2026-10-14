@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "显示在该物品可用前必须获得的所有成就",
-		-- TODO: tw = "",
+		tw = "顯示此項目開放前必須取得的所有成就",
 	},
 })

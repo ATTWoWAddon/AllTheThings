@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "Shift+左键点击打开角色独有数据窗口。",
-		-- TODO: tw = "",
+		tw = "按住 Shift 並按左鍵即可開啟角色專屬資料視窗。",
 	},
 })

@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Воспроизвести звуковой эффект",
 		-- TODO: ko = "",
 		cn = "播放音效",
-		-- TODO: tw = "",
+		tw = "播放音效",
 	},
 })

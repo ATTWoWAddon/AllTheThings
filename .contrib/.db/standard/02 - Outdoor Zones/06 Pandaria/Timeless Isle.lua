@@ -22,7 +22,7 @@ local BURDEN_OF_ETERNITY = createHeader({
 		-- TODO: pt = "",
 		ru = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
 		cn = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
-		-- TODO: tw = "",
+		tw = "對 Timeless Armor Token 使用 Burden of Eternity，即可製作下列物品，享受雙倍的毫無意義隨機性。",	-- TODO: verify it.
 	},
 });
 
@@ -1744,11 +1744,12 @@ maproot(PANDARIA, {
 						pt = "Baú de Kukuru",
 						ru = "клада Кукуру",
 						cn = "库库鲁的宝箱",
-						-- TODO: tw = "",
+						tw = "Kukuru's Cache",	-- TODO: verify it.
 					},
 					description = {
 						en = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
 						cn = "购买库库鲁的宝箱钥匙即可开启。有极低几率开出不朽之责，更常见的是宠物邦卡斯。",
+						tw = "購買 Kukuru's Cache Key 即可開啟。內容物有極低機率包含 Burden of Eternity；較常見的獎勵則是 Bonkers 寵物。",	-- TODO: verify it.
 					},
 				}), {
 					providers = {

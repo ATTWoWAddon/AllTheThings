@@ -177,7 +177,7 @@ local MECHAGON_JUNKYARD = createHeader({
 		pt = "Ferro-velho",
 		ru = "Свалка",
 		cn = "垃圾场",
-		-- TODO: tw = "",
+		tw = "廢料場",
 	},
 });
 local MECHAGON_WORKSHOP = createHeader({

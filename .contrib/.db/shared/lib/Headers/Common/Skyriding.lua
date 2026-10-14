@@ -28,6 +28,6 @@ DRIVE_RACING = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "疾飙竞速",
-		-- TODO: tw = "",
+		tw = "D.R.I.V.E. 競速",
 	},
 });

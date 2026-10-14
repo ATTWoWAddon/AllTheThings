@@ -14,7 +14,7 @@ HONOR_TITLES = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = [[~HONOR .. PAPERDOLL_SIDEBAR_TITLES]],
-		-- TODO: tw = "",
+		tw = [[~HONOR .. PAPERDOLL_SIDEBAR_TITLES]],
 		-- #else
 		en = [[~HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES]],
 		es = "Titulos de honor",
@@ -26,7 +26,7 @@ HONOR_TITLES = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = [[~HONOR .. PAPERDOLL_SIDEBAR_TITLES]],
-		-- TODO: tw = "",
+		tw = [[~HONOR .. PAPERDOLL_SIDEBAR_TITLES]],
 		-- #endif
 	},
 });

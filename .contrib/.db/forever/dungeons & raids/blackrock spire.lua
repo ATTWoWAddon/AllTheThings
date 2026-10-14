@@ -12,6 +12,7 @@ local LOWER_BLACKROCK_SPIRE = createHeader({
 		es = "También conocida como 'Cumbre de Roca inferior'.",
 		mx = "También conocida como 'Cumbre de Roca inferior'.",
 		cn = "又称黑石塔下层。",
+		tw = "又稱「黑石塔下層」。",
 	},
 });
 local UPPER_BLACKROCK_SPIRE = createHeader({
@@ -25,6 +26,7 @@ local UPPER_BLACKROCK_SPIRE = createHeader({
 		es = "Un miembro de tu grupo debe haber completado la cadena de misiones del Sello de Ascensión para que se enciendan las hogueras y se abra la puerta a esta parte de la instancia. También conocida como la Cumbre de Roca Negra superior.",
 		mx = "Un miembro de tu grupo debe haber completado la cadena de misiones del Sello de Ascensión para que se prendan las hogueras y se abra la puerta a esta parte de la instancia. También conocida como la Cumbre de Roca Negra superior.",
 		cn = "你的队伍中必须有一名成员完成 “升腾之印（Seal of Ascension）” 任务链，才能点燃火焰并打开通往副本这一部分的门，即黑石塔上层（Upper Blackrock Spire）",
+		tw = "隊伍中必須有一名成員完成晉升印章任務線，才能點燃火焰並開啟通往此副本區域的門。此處也稱為「黑石塔上層」。",
 	},
 });
 

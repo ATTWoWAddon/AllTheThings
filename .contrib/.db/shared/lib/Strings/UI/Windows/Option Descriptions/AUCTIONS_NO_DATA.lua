@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "尚未缓存拍卖数据，正在等待拍卖数据。",
-		-- TODO: tw = "",
+		tw = "尚無拍賣資料快取，正在等待拍賣資料。",
 	},
 })

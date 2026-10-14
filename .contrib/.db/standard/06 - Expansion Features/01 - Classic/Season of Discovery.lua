@@ -1136,6 +1136,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 		description = {
 			en = "This event focuses on the portals found across Azeroth, typically hosting an Emerald Dragon World Boss. These new events are PvE focused, asking players to complete quests around and inside the portals.\n\nThe event is intended to provide both endgame content and variation, with a new faction, the Emerald Wardens as well as new items and sets, but also to supplement the leveling experience. As early as level 25, players will be able to start doing Nightmare Incursions for experience and reputation.\n\nIncursions are also intended to be done in a group, with quests being shareable to up to 4 other players. Some quests will also require killing boss-type enemies, or require you to utilize gathering professions. This doesn't mean that you can't do them solo, it is just unlikely to be very efficient.",
 			cn = "该事件围绕遍布艾泽拉斯的传送门展开，通常会出现一个翡翠巨龙世界首领。这些新事件以 PvE 为核心，要求玩家在传送门周围及其内部完成任务。\n\n该事件旨在提供终局内容与变化，带来新阵营翡翠守望者以及新物品和套装，同时也补充升级体验。玩家最早在25级就可以开始进行梦魇进犯，以获取经验和声望。\n\n梦魇进犯也设计为组队进行，任务最多可分享给另外4名玩家。部分任务还会要求击杀首领类敌人，或要求你使用采集专业。这并不意味着你不能单人完成，只是效率很可能不高。",
+			tw = "此事件以遍布艾澤拉斯的傳送門為核心，傳送門通常會出現 Emerald Dragon World Boss。這些新事件著重 PvE，要求玩家在傳送門周圍或內部完成任務。\n\n事件旨在提供滿等玩法與更多變化，包括新陣營 Emerald Wardens、新物品與套裝，也豐富升級過程。角色最早從 25 級起即可參加 Nightmare Incursions，取得經驗值與聲望。\n\nNightmare Incursions 也以組隊玩法為設計方向，每項任務最多可分享給另外 4 名玩家。有些任務要求擊敗首領級敵人或運用採集專業技能。這不代表無法單人完成，只是效率可能較低。",	-- TODO: verify it.
 		},
 	}), {
 		timeline = { REMOVED_2_0_1 },
@@ -3431,12 +3432,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			es = "Entrenamiento de escudero",
 			mx = "Entrenamiento de escudero",
 			cn = "侍从训练",
+			tw = "侍從訓練",
 		},
 		description = {
 			en = "Starting at level 50, Paladins can complete a quest chain in Western Plaguelands that will give them a Relic that calls forth their own personal Squire. This Squire can level up by fighting in combat as well as by being healed by the Paladin's spells. (Get into combat and just spam rank 1 Flash of Light while he attacks the mobs.)",
 			es = "A partir del nivel 50, los paladines pueden completar una cadena de misiones en las Tierras de la Peste del Oeste que les otorgará una reliquia que invoca a su propio escudero. Este escudero puede subir de nivel luchando en combate y curándose con los hechizos del paladín. (Entra en combate y simplemente usa Destello de Luz de rango 1 mientras ataca a los enemigos).",
 			mx = "A partir del nivel 50, los paladines pueden completar una cadena de misiones en las Tierras de la Peste del Oeste que les otorgará una reliquia que invoca a su propio escudero. Este escudero puede subir de nivel luchando en combate y curándose con los hechizos del paladín. (Entra en combate y simplemente usa Destello de Luz de rango 1 mientras ataca a los enemigos).",
 			cn = "从50级开始，圣骑士可以在西瘟疫之地完成一条任务链，获得一件可以召唤专属侍从的遗物。该侍从可以通过参与战斗以及被圣骑士的法术治疗来升级。（进入战斗后，在他攻击怪物时不停刷1级圣光术即可。）",
+			tw = "從 50 級開始，聖騎士可以在西瘟疫之地完成一系列任務，獲得一件能召喚專屬侍從的聖物。這名侍從可以透過參與戰鬥，以及接受聖騎士法術的治療來升級。（進入戰鬥後，在他攻擊怪物時不斷施放等級 1 的聖光閃現即可。）",	-- TODO: verify it.
 		},
 	}), {
 		sourceQuest = 83936,	-- Dalton's Quest
@@ -3452,12 +3455,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 					es = "Inspiración Rango 1",
 					mx = "Inspiración Rango 1",
 					cn = "启迪等级一",
+					tw = "Inspiration Rank One",	-- TODO: verify it.
 				},
 				description = {
 					en = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
 					es = "Después de recibir a tu escudero, invócalo usando la Reliquia y luego súbelo de nivel entrando en combate y manteniéndolo con vida.",
 					mx = "Después de recibir a tu escudero, invócalo usando la Reliquia y luego súbelo de nivel entrando en combate y manteniéndolo con vida.",
 					cn = "获得侍从后，使用遗物将其召唤出来，然后通过进入战斗并保证他存活来为他升级。",
+					tw = "獲得侍從後，使用聖物將他召喚出來，再透過進入戰鬥並維持他的生命來讓他升級。",
 				},
 			}), {
 				providers = {
@@ -3484,6 +3489,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 					es = "Inspiración Rango 2",
 					mx = "Inspiración Rango 2",
 					cn = "启迪等级二",
+					tw = "Inspiration Rank Two",	-- TODO: verify it.
 				},
 			}), {
 				providers = {
@@ -3563,6 +3569,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			es = "Encantamientos de hombros para conjuntos de niveles",
 			mx = "Encantamientos de hombros para conjuntos de niveles",
 			cn = "套装肩部附魔",
+			tw = "套裝肩部附魔",
 		},
 	}), {
 		timeline = { REMOVED_2_0_1 },

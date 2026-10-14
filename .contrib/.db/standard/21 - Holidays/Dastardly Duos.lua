@@ -17,7 +17,7 @@ DASTARDLY_DUOS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "卑鄙双雄",
-		-- TODO: tw = "",
+		tw = "Dastardly Duos",	-- TODO: verify it.
 	},
 	description = {
 		en = "Hello, fight fans. The world's meanest villains are teamed up and back for revenge! Meet in Stormwind, Orgrimmar or Dornogal to fight against villainous bosses from Azeroth's past.",
@@ -30,7 +30,7 @@ DASTARDLY_DUOS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "战斗迷们，大家好。世界上最邪恶的反派们联手归来，誓要复仇！前往暴风城、奥格瑞玛或多诺加尔，与艾泽拉斯过去的邪恶首领们一决高下。",
-		-- TODO: tw = "",
+		tw = "各位格鬥迷，大家好。世界上最邪惡的反派聯手回歸，前來復仇了！前往暴風城、奧格瑪或多恩諾加，對抗艾澤拉斯過往的邪惡首領。",
 	},
 });
 

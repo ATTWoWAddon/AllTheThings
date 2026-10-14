@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此窗口显示了所有职业的职业专属内容。",
-		-- TODO: tw = "",
+		tw = "此視窗顯示所有職業的專屬內容。",
 	},
 })

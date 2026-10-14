@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Доступность",
 		-- TODO: ko = "",
 		cn = "可用性",
-		-- TODO: tw = "",
+		tw = "可取得性",
 	},
 })

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "角色数据：%s\n \n确定要删除吗？",
-		-- TODO: tw = "",
+		tw = "角色資料：%s\n \n確定要刪除此資料嗎？",
 	},
 })

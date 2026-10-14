@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "@CRIEVE：此成就尚未提供来源信息。",
-		-- TODO: tw = "",
+		tw = "@CRIEVE：此成就尚未補上資料來源。",
 	},
 })

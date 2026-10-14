@@ -11,6 +11,7 @@ local OPERATION_GNOMEREGAN = createHeader({
 	description = {
 		en = "Operation: Gnomeregan was the name of Gelbin Mekkatorque's plan for the retaking of the surface of Gnomeregan. Only Alliance players between level 75 and 80 were able to serve during the operation, but lower level players helped by motivating other gnomes or by turning in items.",
 		cn = "夺回诺莫瑞根行动是格尔宾・梅卡托克为夺回诺莫瑞根地表制定的计划名称。只有75到80级的联盟玩家能够参与此次行动，但较低等级的玩家可以通过鼓舞其他侏儒或上交物品来提供帮助。",
+		tw = "「行動:諾姆瑞根」是傑爾賓‧梅卡托克為奪回諾姆瑞根地表而制定的計畫名稱。只有 75 至 80 級的聯盟玩家能參與這次行動，不過較低等級的玩家也能透過鼓舞其他地精或繳交物品來提供協助。",
 	},
 });
 

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "已收集来源",
-		-- TODO: tw = "",
+		tw = "已收集來源",
 	},
 })

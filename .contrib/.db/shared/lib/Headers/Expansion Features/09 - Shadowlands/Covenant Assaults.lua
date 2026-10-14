@@ -12,6 +12,6 @@ COVENANT_ASSAULTS = createHeader({
 		pt = "Ataques Pactos",
 		ru = "Нападения Ковенантов",
 		cn = "盟约突袭",
-		-- TODO: tw = "",
+		tw = "誓盟突襲",
 	},
 });

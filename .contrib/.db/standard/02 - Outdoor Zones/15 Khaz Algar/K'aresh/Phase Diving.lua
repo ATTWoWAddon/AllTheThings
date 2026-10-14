@@ -17,6 +17,7 @@ local PHASE_CONDUITS = createHeader({
 		--ru = "Phase Conduits",
 		cn = "相位导管",
 		--tw = "Phase Conduits",
+		tw = "Phase Conduits",	-- TODO: verify it.
 	},
 	description = {
 		en = "Phase Conduits are teleporters used to enter, exit, and instantly move around the Untethered Space (Phase Diving). All but two locations (on Vanquisher's Wake) are connected with each other.",
@@ -29,7 +30,7 @@ local PHASE_CONDUITS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "相位导管是用于进入、退出和在无拘之域（相位潜行）中瞬间移动的传送器。除了两个位置（在征服者之痕）外，所有位置都相互连接。",
-		-- TODO: tw = "",
+		tw = "Phase Conduits 是用來進出 Untethered Space，以及在其中各處瞬間移動的傳送裝置（Phase Diving）。除了 Vanquisher's Wake 的兩個地點外，其餘地點彼此相連。",	-- TODO: verify it.
 	},
 });
 

@@ -47,7 +47,7 @@ local ALLIANCE_BONFIRE_OBJECT_DATA = {
 		pt = "Fogueira da Aliança",
 		ru = "Большой костер Альянса",
 		cn = "联盟篝火",
-		-- TODO: tw = "",
+		tw = "聯盟篝火",
 	},
 };
 local HORDE_BONFIRE_OBJECT_DATA = {
@@ -67,7 +67,7 @@ local HORDE_BONFIRE_OBJECT_DATA = {
 		pt = "Fogueira da Horda",
 		ru = "Большой костер Орды",
 		cn = "部落篝火",
-		-- TODO: tw = "",
+		tw = "部落篝火",
 	},
 };
 

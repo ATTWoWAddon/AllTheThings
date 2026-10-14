@@ -10,5 +10,6 @@ createLocalizationString({
 		mx = "Guardado",
 		ru = "Сохранено",
 		cn = "已保存",
+		tw = "已儲存",
 	},
 })

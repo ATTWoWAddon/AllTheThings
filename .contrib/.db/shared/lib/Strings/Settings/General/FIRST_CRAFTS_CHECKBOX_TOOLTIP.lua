@@ -15,6 +15,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "启用此选项以跟踪首次制作完成情况。",
-		-- TODO: tw = "",
+		tw = "啟用此選項以追蹤首次製作的完成狀態。",
 	},
 })

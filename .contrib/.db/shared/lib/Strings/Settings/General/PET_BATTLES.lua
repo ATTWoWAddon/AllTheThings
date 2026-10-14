@@ -5,5 +5,6 @@ createLocalizationString({
 	text = {
 		en = [[~SHOW_PET_BATTLES_ON_MAP_TEXT]],
 		cn = "战斗宠物",
+		tw = [[~SHOW_PET_BATTLES_ON_MAP_TEXT]],
 	},
 })

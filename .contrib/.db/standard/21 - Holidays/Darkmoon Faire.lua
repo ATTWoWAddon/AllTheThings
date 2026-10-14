@@ -29,7 +29,7 @@ local MINIGAMES_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "以下小游戏每次游玩需要消耗一枚暗月游戏代币，并且每天都有一个任务可以获得奖券以及一些相关的成就。",
-		-- TODO: tw = "",
+		tw = "下列小遊戲每次遊玩需花費一枚暗月遊戲代幣，並各有一個每日任務可獲得獎券，以及若干相關成就。",
 	},
 });
 local DARKMOON_DANCE_HEADER = createHeader({
@@ -46,7 +46,7 @@ local DARKMOON_DANCE_HEADER = createHeader({
 		pt = "Feira de Negraluna Jogo da Dança",
 		ru = "Ярмарка Новолуния состязании танцоров",
 		cn = "暗月马戏团跳舞游戏",
-		-- TODO: tw = "",
+		tw = "暗月馬戲團熱舞競賽",
 	},
 	description = {
 		en = "To play the Darkmoon Faire Dance game, talk to Simon Sezdans in front of the South Pavillion. Each attempt at the Darkmoon Faire Dance game costs one Darkmoon Game Token. Talking to Simon will also set the difficulty for your dance game:\n  Just something fun and easygoing! (Easy)\n  I'd like a little challenge! (Medium)\n  Show me your moves, don't hold back! (Hard)\n\nDarkmoon Dance Master is not a rhythm game like most dance games are, but a memory game instead. You will have a dancer next to you in the dancing arena, who will start a sequence of moves highlighted by runes in front of him. Easy games will have a sequence of 3 runes at a time, Medium games 4 runes, and Hard games 5 runes.\n\nThere are three possible runes: Chicken Dance (Yellow), Power Spin (Purple) and Fist Pump (Blue). Once the opponent finishes their sequence, you have 5 seconds to match the exact sequence used by the dancer. There is no punishment for taking your time to complete the sequence, as long as you do it in time and don't miss any steps.\n\nThe game ends after 5 rounds (if you complete all steps successfully), but can end prematurely if you miss too many steps. Missing no steps will grant you a perfect score.",
@@ -59,7 +59,7 @@ local DARKMOON_DANCE_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "要玩暗月马戏团跳舞游戏，请与南部亭子前的西蒙·塞兹丹斯交谈。每次尝试暗月马戏团跳舞游戏都需要一枚暗月游戏代币。与西蒙交谈还将为您的舞蹈游戏设置难度：\n  只是一些有趣和轻松的东西！（简单）\n  我想要一些挑战！（中等）\n  展示你的动作，不要退缩！（困难）\n\n暗月舞蹈大师不是像大多数舞蹈游戏那样的节奏游戏，而是记忆游戏。你将在舞蹈竞技场旁边有一个舞者，他将开始一系列由他面前的符文突出显示的动作。简单的游戏每次有3个符文的序列，中等游戏4个符文，困难游戏5个符文。\n\n有三种可能的符文：鸡舞（黄色）、强力旋转（紫色）和拳头泵（蓝色）。一旦对手完成他们的序列，你有5秒钟的时间来匹配舞者使用的确切序列。只要你及时完成并且没有错过任何步骤，就不会因为花时间完成序列而受到惩罚。\n\n如果您成功完成所有步骤，游戏将在5轮后结束，但如果您错过太多步骤，游戏可能会提前结束。没有错过任何步骤将为您带来完美的分数。",
-		-- TODO: tw = "",
+		tw = "若要遊玩暗月馬戲團熱舞競賽，請與 South Pavilion 前的 Simon Sezdans 交談。每次遊玩需花費一枚暗月遊戲代幣。與 Simon 交談時，也能設定難度：\n  只想輕鬆玩點有趣的！（簡單）\n  我想要一點挑戰！（中等）\n  讓我見識你的舞步，別手下留情！（困難）\n\n暗月舞蹈大師不是節奏遊戲，而是記憶遊戲。舞池中會有一名舞者在你身旁示範一串以符文提示的動作。簡單、中等、困難難度每次分別有 3、4、5 個符文。\n\n符文共有三種：Chicken Dance（黃色）、Power Spin（紫色）和 Fist Pump（藍色）。對手完成動作後，你有 5 秒鐘依照完全相同的順序重現動作。只要在時間內完成且沒有漏步，作答過程不會受到處罰。\n\n成功完成所有步驟時，遊戲會在 5 回合後結束；若漏掉太多步驟，也可能提前結束。全程沒有漏步即可獲得滿分。",	-- TODO: verify it.
 	},
 });
 local FIREBIRDS_CHALLENGE_HEADER = createHeader({
@@ -76,7 +76,7 @@ local FIREBIRDS_CHALLENGE_HEADER = createHeader({
 		pt = "Desafio da Ave Flamejante",
 		ru = "Вызов огнекрыла",
 		cn = "不死鸟大挑战",
-		-- TODO: tw = "",
+		tw = "火鳥的挑戰",
 	},
 	description = {
 		en = "Roughly 60 floating rings appear all over the island, but most are not over the Faire area proper and are found in the woods. Players start with ten seconds of flight time and flying through a ring will refresh the buff. Work out a route in such a way that the next ring is always within 10 seconds of the one that is getting flown through, as there are many ways to get cut off.",
@@ -89,7 +89,7 @@ local FIREBIRDS_CHALLENGE_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "整个岛上大约会出现60个漂浮的环，但大多数不在马戏团区域内，而是在树林中。玩家开始时有十秒的飞行时间，飞过一个环会刷新这个增益效果。规划一条路线，使下一个环始终在即将飞过的环的10秒内，因为有很多方法可以被切断。",
-		-- TODO: tw = "",
+		tw = "整座島嶼上會出現約 60 個漂浮的圓環，但大多數位於樹林中，而非馬戲團的主要場地上方。玩家起初有 10 秒的飛行時間，穿過圓環就會刷新增益效果。請規劃一條路線，確保從目前穿過的圓環到下一個圓環都能在 10 秒內抵達，因為很容易遇到沒有後續圓環可接的情況。",
 	},
 });
 local SHOOTING_GALLERY_HEADER = createHeader({
@@ -106,7 +106,7 @@ local SHOOTING_GALLERY_HEADER = createHeader({
 		pt = "Galeria de tiro",
 		ru = "Тир",
 		cn = "射击场",
-		-- TODO: tw = "",
+		tw = "打靶場",
 	},
 	description = {
 		en = "In order to maximize your score, wait for the current mark to disappear then aim towards the middle target. As soon as any green mark appear, press 1 immediately and during the short cast time, move your gun to point at the left or right target if necessary.",
@@ -119,7 +119,7 @@ local SHOOTING_GALLERY_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "为了最大化你的得分，等待当前的标记消失，然后瞄准中间的目标。只要出现任何绿色标记，立即按1，在短暂的施法时间内，如果有必要，将你的枪移动到指向左侧或右侧目标的位置。",
-		-- TODO: tw = "",
+		tw = "若要盡可能提高分數，請先等待目前的標記消失，再瞄準中間的標靶。任何綠色標記出現時，都立刻按下 1，並在短暫的施法時間內，視需要將槍口移向左側或右側的標靶。",
 	},
 });
 local WHACK_A_GNOLL_HEADER = createHeader({
@@ -136,7 +136,7 @@ local WHACK_A_GNOLL_HEADER = createHeader({
 		pt = "Pancada-no-Gnoll",
 		ru = "Гноллобой",
 		cn = "打豺狼人",
-		-- TODO: tw = "",
+		tw = "痛扁豺狼人",
 	},
 	description = {
 		en = "Located near the entrance, guests receive a mallet to whack some stuffed gnolls that pop out of nine barrels in the area. Players will have 60 seconds to earn 30 points. The gnolls come in three types: normal, Hogger, and baby, awarding 1 point, 3 points, or a knockdown, respectively.",
@@ -149,7 +149,7 @@ local WHACK_A_GNOLL_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "位于入口附近，游客们会收到一个大锤，用来敲打从该区域的九个桶中弹出的填充豺狼人。玩家将有60秒的时间来获得30分。豺狼人有三种类型：普通的、霍格和婴儿，分别奖励1分、3分或一次击倒。",
-		-- TODO: tw = "",
+		tw = "這項遊戲位於入口附近。遊客會拿到一把槌子，敲打從附近九個桶子中冒出的填充豺狼人。玩家必須在 60 秒內取得 30 分。豺狼人有三種類型：普通、霍格和幼豺狼人，分別得 1 分、3 分，或使你遭到擊倒。",
 	},
 });
 

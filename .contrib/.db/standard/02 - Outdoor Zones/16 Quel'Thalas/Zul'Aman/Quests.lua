@@ -1664,7 +1664,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 				-- pt = "",
 				-- ru = "",
 				cn = "往日火冲",
-				-- tw = "",
+				tw = "A Fiery Blast from the Past",	-- TODO: verify it.
 			},
 		}), {
 			description = "With the return of Jan’alai, Loa of Fire comes a return to past traditions. She’s ready to bring a new clutch of eggs into the world but Loa Speaker Brek requires assistance with the ceremony and with ensuring all the Loa’s young are released safely from their eggs. Be a part of welcoming the first of her offspring and protecting them as they take their first steps.",

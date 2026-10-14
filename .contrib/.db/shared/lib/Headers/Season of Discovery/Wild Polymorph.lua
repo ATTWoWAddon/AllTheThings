@@ -12,7 +12,7 @@ WILD_POLYMORPH = createHeader({	-- Wild Polymorph
 		pt = "Polimorfo Selvagem",
 		ru = "Дикий полиморф",
 		cn = "野生多晶型物",
-		-- TODO: tw = "",
+		tw = "Wild Polymorph",	-- TODO: verify it.
 	},
 	description = {
 		en = "Cast Polymorph on critters afflicted by Wild Polymorph to turn them back into apprentices. Each one will give you a note. Collect 6 notes to learn the rune.",
@@ -25,6 +25,6 @@ WILD_POLYMORPH = createHeader({	-- Wild Polymorph
 		pt = "Lance Polymorph em criaturas afetadas por Wild Polymorph para transformá-las novamente em aprendizes. Cada um lhe dará uma nota. Colete 6 notas para aprender a runa.",
 		ru = "Примените «Превращение» к существам, пораженным «Диким превращением», чтобы снова превратить их в учеников. Каждый даст вам записку. Соберите 6 нот, чтобы выучить руну.",
 		cn = "对受到野生变形术影响的小动物施放变形术，将它们变回学徒。每个人都会给你一张纸条。收集6个笔记来学习符文。",
-		-- TODO: tw = "",
+		tw = "對受到 Wild Polymorph 影響的小動物施放變形術，使牠們恢復為學徒。每個學徒都會給你一張筆記；收集 6 張即可學會符文。",	-- TODO: verify it.
 	},
 });

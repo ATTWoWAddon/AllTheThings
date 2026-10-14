@@ -11,6 +11,7 @@ local MISCELLANEOUS_PROMOTIONS = createHeader({
 	description = {
 		en = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 		cn = "本板块用于收录现实中开展的各类杂项促销活动，以及与账号管理相关的内容。",
+		tw = "此分類收錄現實世界中舉辦的各種促銷活動，以及與帳號管理相關的內容。",
 	},
 });
 

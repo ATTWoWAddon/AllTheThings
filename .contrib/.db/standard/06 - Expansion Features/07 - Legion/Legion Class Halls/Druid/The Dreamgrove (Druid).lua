@@ -17,7 +17,7 @@ local DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 		pt = "Lista de Eventos",
 		ru = "Ролл События",
 		cn = "事件掷骰",
-		-- TODO: tw = "",
+		tw = "事件隨機判定",
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
@@ -30,7 +30,7 @@ local DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "若该任务旁有勾选标记，请查看下方哪块石头处于激活状态。若所有石头均未勾选，则意味着今日无法与任何猫头鹰石互动，请明日再来。",
-		-- TODO: tw = "",
+		tw = "如果此任務旁顯示勾選標記，請查看下方哪一塊石頭處於啟動狀態。如果都沒有勾選，代表今天無法與任何 Owlcat Stone 互動，請明天再來。",	-- TODO: verify it.
 	},
 });
 local DUSKWOOD_ACTIVE = createHeader({
@@ -48,7 +48,7 @@ local DUSKWOOD_ACTIVE = createHeader({
 		-- TODO: pt = "",
 		ru = "Сумеречный лес - активен",
 		cn = "激活",
-		-- TODO: tw = "",
+		tw = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(133137),	-- TODO: verify it.
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then that means the stone is active.",
@@ -61,7 +61,7 @@ local DUSKWOOD_ACTIVE = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "若该任务旁显示勾选标记，则表明此石头已激活。",
-		-- TODO: tw = "",
+		tw = "如果此任務旁顯示勾選標記，就代表這塊石頭已啟動。",
 	},
 });
 local FERALAS_ACTIVE = createHeader({
@@ -79,7 +79,7 @@ local FERALAS_ACTIVE = createHeader({
 		-- TODO: pt = "",
 		ru = "Фералас - активен",
 		cn = "激活",
-		-- TODO: tw = "",
+		tw = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(133137),	-- TODO: verify it.
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then that means the stone is active.",
@@ -92,7 +92,7 @@ local FERALAS_ACTIVE = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "若该任务旁显示勾选标记，则表明此石头已激活。",
-		-- TODO: tw = "",
+		tw = "如果此任務旁顯示勾選標記，就代表這塊石頭已啟動。",
 	},
 });
 local THE_HINTERLANDS_ACTIVE = createHeader({
@@ -110,7 +110,7 @@ local THE_HINTERLANDS_ACTIVE = createHeader({
 		-- TODO: pt = "",
 		ru = "Внутренние земли - активен",
 		cn = "激活",
-		-- TODO: tw = "",
+		tw = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(133137),	-- TODO: verify it.
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then that means the stone is active.",
@@ -123,7 +123,7 @@ local THE_HINTERLANDS_ACTIVE = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "若该任务旁显示勾选标记，则表明此石头已激活。",
-		-- TODO: tw = "",
+		tw = "如果此任務旁顯示勾選標記，就代表這塊石頭已啟動。",
 	},
 });
 local DUSKWOOD_ACTIVATED = createHeader({
@@ -141,7 +141,7 @@ local DUSKWOOD_ACTIVATED = createHeader({
 		-- TODO: pt = "",
 		ru = "Сумеречный лес - активирован",
 		cn = "已激活",
-		-- TODO: tw = "",
+		tw = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(78741),	-- TODO: verify it.
 	},
 	description = {
 		en = "This quest indicates if you have activated the Duskwood Owlcat Stone.",
@@ -154,7 +154,7 @@ local DUSKWOOD_ACTIVATED = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "该任务用于提示你是否已激活暮色森林的猫头鹰石。",
-		-- TODO: tw = "",
+		tw = "此任務會顯示你是否已啟動暮色森林的 Owlcat Stone。",	-- TODO: verify it.
 	},
 });
 local FERALAS_ACTIVATED = createHeader({
@@ -172,7 +172,7 @@ local FERALAS_ACTIVATED = createHeader({
 		-- TODO: pt = "",
 		ru = "Фералас - активирован",
 		cn = "已激活",
-		-- TODO: tw = "",
+		tw = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(78741),	-- TODO: verify it.
 	},
 	description = {
 		en = "This quest indicates if you have activated the Feralas Owlcat Stone.",
@@ -185,7 +185,7 @@ local FERALAS_ACTIVATED = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "该任务用于提示你是否已激活菲拉斯的猫头鹰石。",
-		-- TODO: tw = "",
+		tw = "此任務會顯示你是否已啟動菲拉斯的 Owlcat Stone。",	-- TODO: verify it.
 	},
 });
 local THE_HINTERLANDS_ACTIVATED = createHeader({
@@ -203,7 +203,7 @@ local THE_HINTERLANDS_ACTIVATED = createHeader({
 		-- TODO: pt = "",
 		ru = "Внутренние земли - активирован",
 		cn = "已激活",
-		-- TODO: tw = "",
+		tw = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(78741),	-- TODO: verify it.
 	},
 	description = {
 		en = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
@@ -216,7 +216,7 @@ local THE_HINTERLANDS_ACTIVATED = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "该任务用于提示你是否已激活辛特兰的猫头鹰石。",
-		-- TODO: tw = "",
+		tw = "此任務會顯示你是否已啟動辛特蘭的 Owlcat Stone。",	-- TODO: verify it.
 	},
 });
 

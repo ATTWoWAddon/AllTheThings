@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "最高补丁版本",
-		-- TODO: tw = "",
+		tw = "最高版本",
 	},
 })

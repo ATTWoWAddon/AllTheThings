@@ -16,7 +16,7 @@ local ZSKERA_VAULTS = createHeader({
 		pt = "Câmaras de Zskera",
 		ru = "Зкерские хранилища",
 		cn = "兹斯克拉宝库",
-		-- TODO: tw = "",
+		tw = "澤斯克拉密庫",
 	},
 });
 

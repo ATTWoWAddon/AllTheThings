@@ -15,7 +15,7 @@ local LIBRARY_BOOKS_HEADER = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "图书馆藏书",
-		-- TODO: tw = "",
+		tw = "圖書館藏書",
 	},
 });
 local allBookSourceQuests = {

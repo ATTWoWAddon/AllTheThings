@@ -15,6 +15,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "首次制作",
-		-- TODO: tw = "",
+		tw = "首次製作",
 	},
 })

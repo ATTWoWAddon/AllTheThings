@@ -18,7 +18,7 @@ local WHELP_DAYCARE = createHeader({
 		-- TODO: pt = "",
 		ru = "Драконьи ясли",
 		cn = "幼鳞日托所",
-		-- TODO: tw = "",
+		tw = "幼鱗托育所",
 	},
 });
 

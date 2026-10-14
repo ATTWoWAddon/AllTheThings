@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "该玩家当前是队长分配者。",
-		-- TODO: tw = "",
+		tw = "此玩家目前負責隊長分配。",
 	},
 })

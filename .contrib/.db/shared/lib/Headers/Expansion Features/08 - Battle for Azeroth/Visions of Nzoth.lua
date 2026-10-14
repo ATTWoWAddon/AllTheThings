@@ -15,7 +15,7 @@ VISIONS_OF_NZOTH = createHeader({
 		-- TODO: pt = "",
 		ru = "Видения Н'Зота",
 		cn = "恩佐斯的幻象",
-		-- TODO: tw = "",
+		tw = "恩若司的幻象",
 		-- #endif
 	},
 });

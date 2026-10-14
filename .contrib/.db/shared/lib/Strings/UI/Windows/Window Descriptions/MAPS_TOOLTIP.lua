@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此窗口有助于调试插件中缺失的地图 ID。",
-		-- TODO: tw = "",
+		tw = "此視窗可協助除錯外掛程式中缺少的地圖 ID。",
 	},
 })

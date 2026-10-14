@@ -912,7 +912,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						-- TODO: pt = "",
 						-- TODO: ru = "",
 						cn = "哈提的后裔",
-						-- TODO: tw = "",
+						tw = "Hati's Aftermath",	-- TODO: verify it.
 					},
 				}), {
 					n(QUESTS, {

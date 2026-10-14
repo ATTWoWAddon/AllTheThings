@@ -21,6 +21,7 @@ local ELEMENTAL_BONDS = createHeader({
 	description = {
 		en = "The Elemental Bonds questline is an epic series of quests to restore Thrall to his former self after Majordomo Staghelm splits him into 4 essences of elements.",
 		cn = "元素誓约任务线是一系列史诗任务，旨在让被管理者鹿盔分裂成4种元素化身的萨尔恢复原貌。",
+		tw = "The Elemental Bonds 是一系列史詩任務。在管理者鹿盔將索爾分成四種元素精魄後，玩家需要完成任務，讓他恢復原狀。",	-- TODO: verify it.
 	},
 });
 

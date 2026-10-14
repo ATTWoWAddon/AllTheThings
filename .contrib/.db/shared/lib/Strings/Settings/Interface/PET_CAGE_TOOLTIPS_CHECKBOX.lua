@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Клетки для питомцев",
 		-- TODO: ko = "",
 		cn = "宠物笼",
-		-- TODO: tw = "",
+		tw = "寵物籠",
 	},
 })

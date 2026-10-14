@@ -20,6 +20,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "所有已从游戏移除、但你大概仍能花点小钱收集到的物品。\n\n另外，如果你在这里发现了什么，欢迎在 ATT Discord 的 " .. discordChannel .. " 频道发帖！我相信有些人会想找到这些东西。",
-		-- TODO: tw = "",
+		tw = "所有已從遊戲中移除、但你大概仍能以……象徵性的費用收集到的物品。\n\n另外，如果你在這裡找到物品，歡迎到 ATT Discord 的 " .. discordChannel .. " 頻道發文！我想一定也有人想找到它們。",
 	},
 })

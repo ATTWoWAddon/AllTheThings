@@ -11,6 +11,7 @@ local SALTHERILS_HAVEN = createHeader({
 	text = {
 		en = "Saltheril's Soiree",
 		cn = "萨瑟利尔的聚会",
+		tw = "Saltheril's Soiree",	-- TODO: verify it.
 	},
 });
 

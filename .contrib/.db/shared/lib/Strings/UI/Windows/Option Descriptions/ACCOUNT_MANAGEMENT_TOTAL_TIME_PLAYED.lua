@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "总游戏时间（账号）",
-		-- TODO: tw = "",
+		tw = "總遊戲時間（帳號）",
 	},
 })

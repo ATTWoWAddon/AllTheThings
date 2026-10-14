@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "右键点击删除此同步目标",
-		-- TODO: tw = "",
+		tw = "按右鍵刪除此同步目標",
 	},
 })

@@ -23,6 +23,7 @@ local DISCORD_PROMOTION = createHeader({
 		es = "Promociones de misiones de Discord",
 		mx = "Promociones de misiones de Discord",
 		cn = "Discord 任务促销活动。",
+		tw = "Discord 任務促銷活動。",
 	},
 });
 

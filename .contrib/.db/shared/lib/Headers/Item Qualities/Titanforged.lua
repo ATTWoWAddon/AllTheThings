@@ -15,7 +15,7 @@ TITANFORGED = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "泰坦造物",
-		-- TODO: tw = "",
+		tw = "Titanforged",	-- TODO: verify it.
 		-- #endif
 	},
 });

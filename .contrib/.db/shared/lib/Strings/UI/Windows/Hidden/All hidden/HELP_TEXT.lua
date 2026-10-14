@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "提供一个命令来在单个窗口中打开所有隐藏内容",
-		-- TODO: tw = "",
+		tw = "提供一個指令，在同一個視窗中開啟所有隱藏項目。",
 	},
 })

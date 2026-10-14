@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "此处显示了你的角色可以学习的所有法术或任务。",
-		-- TODO: tw = "",
+		tw = "此處會顯示角色可學習的所有法術或任務。",
 	},
 })

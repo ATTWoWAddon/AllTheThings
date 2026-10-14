@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "点击此行以切换模型检查",
-		-- TODO: tw = "",
+		tw = "點選此列以切換模型檢查",
 	},
 })

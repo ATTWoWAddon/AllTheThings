@@ -12,7 +12,7 @@ STARTER_GEAR = createHeader({
 		--pt = "",
 		--ru = "",
 		cn = "起始装备",
-		--tw = "",
+		tw = "起始裝備",
 	},
 	description = {
 		en = "The following contains gear that can be acquired by creating a brand new character of a given class and race.",
@@ -25,6 +25,6 @@ STARTER_GEAR = createHeader({
 		--pt = "",
 		--ru = "",
 		cn = "以下装备可通过创建对应种族与职业的全新角色获取。",
-		--tw = "",
+		tw = "以下列出依指定職業與種族建立全新角色時可取得的裝備。",
 	},
 });

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "请输入你想合并到当前角色中的角色数据编号：\n ",
-		-- TODO: tw = "",
+		tw = "請輸入要合併至目前角色的角色資料索引：\n ",
 	},
 })

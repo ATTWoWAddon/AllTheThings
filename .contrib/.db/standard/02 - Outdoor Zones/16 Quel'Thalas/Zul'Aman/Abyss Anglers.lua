@@ -8,6 +8,7 @@ local ABYSS_ANGLERS = createHeader({
 	text = {
 		en = "Abyss Anglers",
 		cn = "深渊钓客",
+		tw = "深淵釣手",
 	},
 });
 

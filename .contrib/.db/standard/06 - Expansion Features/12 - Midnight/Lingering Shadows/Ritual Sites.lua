@@ -111,7 +111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									-- pt = "",
 									-- ru = "",
 									cn = "湿漉漉的巢穴",
-									-- tw = "",
+									tw = "Soggy Nest",	-- TODO: verify it.
 								},
 							}), {
 								coord = { 30.0, 63.1, DAGGERSPINE_POINT },

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这会显示同步队列的内容。",
-		-- TODO: tw = "",
+		tw = "此處會顯示同步佇列的內容。",
 	},
 })

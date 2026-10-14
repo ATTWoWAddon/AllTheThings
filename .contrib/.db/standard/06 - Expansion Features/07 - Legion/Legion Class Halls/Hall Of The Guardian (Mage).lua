@@ -16,11 +16,12 @@ local DAILY_EVENT_ROLL = createHeader({
 		pt = "Lista de Eventos",
 		ru = "Ролл События",
 		cn = "事件掷骰",
-		-- TODO: tw = "",
+		tw = "事件隨機判定",
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
 		cn = "如果此任务旁边有勾选标记，请查看下方以确认你是否有资格使用场景传送门。如果没有，则说明你需要明天再来。",
+		tw = "如果此任務旁顯示勾選標記，請查看下方，確認你是否符合使用事件傳送門的資格。如果沒有，就代表你應該明天再來。",
 	},
 });
 

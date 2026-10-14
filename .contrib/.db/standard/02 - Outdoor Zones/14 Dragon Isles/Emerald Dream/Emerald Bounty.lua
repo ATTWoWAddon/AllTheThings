@@ -17,7 +17,7 @@ local EMERALD_BOUNTY = createHeader({
 		-- TODO: pt = "",
 		ru = "Изумрудный дар",
 		cn = "翡翠奖赏",
-		-- TODO: tw = "",
+		tw = "翡翠恩惠",
 	},
 });
 

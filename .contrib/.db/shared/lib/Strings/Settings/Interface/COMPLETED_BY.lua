@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Выполнено На: %s",
 		-- TODO: ko = "",
 		cn = "完成：%s",
-		-- TODO: tw = "",
+		tw = "完成角色：%s",
 	},
 })

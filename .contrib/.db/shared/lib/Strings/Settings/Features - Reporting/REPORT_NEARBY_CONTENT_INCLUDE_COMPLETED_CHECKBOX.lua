@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Включить завершённые",
 		-- TODO: ko = "",
 		cn = "包含已完成",
-		-- TODO: tw = "",
+		tw = "包含已完成項目",
 	},
 })

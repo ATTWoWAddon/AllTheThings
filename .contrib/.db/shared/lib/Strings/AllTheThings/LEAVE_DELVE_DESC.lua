@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "点击这里离开地下堡。",
-		-- TODO: tw = "",
+		tw = "點擊此處離開探究。",
 	},
 })

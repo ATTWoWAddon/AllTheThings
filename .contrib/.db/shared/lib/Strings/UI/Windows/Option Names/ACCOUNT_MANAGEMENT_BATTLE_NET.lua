@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "启用战网",
-		-- TODO: tw = "",
+		tw = "啟用 Battle.net",
 	},
 })

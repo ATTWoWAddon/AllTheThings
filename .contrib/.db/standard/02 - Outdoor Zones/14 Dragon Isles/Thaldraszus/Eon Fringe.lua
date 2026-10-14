@@ -16,7 +16,7 @@ local EON_FRINGE = createHeader({
 		pt = "Orla do Eon",
         ru = "Грань Эпохи",
         cn = "纪元边界",
-		-- TODO: tw = "",
+		tw = "紀元邊境",
 	},
 });
 

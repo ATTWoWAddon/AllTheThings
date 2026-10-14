@@ -16,7 +16,7 @@ local CLAN_AYLAAG = createHeader({
 		pt = "Clã Aylaag",
 		ru = "Клан Айлааг",
 		cn = "艾拉格氏族",
-		-- TODO: tw = "",
+		tw = "Clan Aylaag",	-- TODO: verify it.
 	},
 });
 

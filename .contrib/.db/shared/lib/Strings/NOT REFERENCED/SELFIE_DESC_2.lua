@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = " с |cffff8000",
 		-- TODO: ko = "",
 		cn = " 和 |cffff8000",
-		-- TODO: tw = "",
+		tw = "，與 |cffff8000",
 	},
 })

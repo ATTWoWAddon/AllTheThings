@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "“%s”对象类型的容器。",
-		-- TODO: tw = "",
+		tw = "「%s」物件類型的容器。",
 	},
 })

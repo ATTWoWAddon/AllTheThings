@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "选择新的拾取门槛。",
-		-- TODO: tw = "",
+		tw = "選擇新的拾取門檻。",
 	},
 })

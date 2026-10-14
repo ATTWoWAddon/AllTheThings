@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "请输入新的最高价格\n（也接受 all / cap / warband）",
-		-- TODO: tw = "",
+		tw = "請輸入新的最高價格\n（也可輸入 all / cap / warband）",
 	},
 })

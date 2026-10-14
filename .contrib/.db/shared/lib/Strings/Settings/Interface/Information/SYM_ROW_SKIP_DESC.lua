@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "关联内容仅显示在该对象的提示中。",
-		-- TODO: tw = "",
+		tw = "連結的內容只會顯示在此物件的工具提示中。",
 	},
 })

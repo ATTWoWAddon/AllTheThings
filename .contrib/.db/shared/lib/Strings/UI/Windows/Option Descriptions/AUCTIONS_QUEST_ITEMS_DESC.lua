@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "所有可以触发非角色解锁任务的物品。",
-		-- TODO: tw = "",
+		tw = "所有可觸發非角色解鎖任務的物品。",
 	},
 })

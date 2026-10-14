@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "已关联账号：%s\n \n确定要删除吗？",
-		-- TODO: tw = "",
+		tw = "已連結帳號：%s\n \n確定要刪除此連結嗎？",
 	},
 })

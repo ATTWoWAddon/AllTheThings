@@ -18,7 +18,7 @@ UI_BOUNTY_WINDOW = createHeader({
 		pt = "Recompensa",
 		ru = "Премия",
 		cn = "赏金任务",
-		-- TODO: tw = "",
+		tw = "懸賞",
 	},
 	description = {
 		en = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
@@ -31,6 +31,6 @@ UI_BOUNTY_WINDOW = createHeader({
 		pt = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
 		ru = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 		cn = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
-		-- TODO: tw = "",
+		tw = "此清單列出 ATT Discord 回報為錯誤、且暴雪尚未修正的無法取得物品。\n\n注意：為了方便查看，此清單會忽略所有篩選條件。清單只收錄因疏失而從遊戲中移除的物品，不包含被巨大噴火龍摧毀的物品。\n\n致暴雪開發人員：請修正下列物品與遭遇。",
 	},
 });

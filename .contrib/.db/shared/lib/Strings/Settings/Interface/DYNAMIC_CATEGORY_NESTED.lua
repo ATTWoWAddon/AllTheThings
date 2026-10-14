@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Вложенные",
 		-- TODO: ko = "",
 		cn = "嵌套",
-		-- TODO: tw = "",
+		tw = "巢狀",
 	},
 })

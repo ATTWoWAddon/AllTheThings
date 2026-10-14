@@ -8,6 +8,7 @@ local ENDEAVOR = createHeader({
 	text = {
 		en = "Endeavor",
 		cn = "文化节",
+		tw = "睦鄰活動",
 	},
 });
 local AMANI_ENDEAVOR = createHeader({
@@ -16,6 +17,7 @@ local AMANI_ENDEAVOR = createHeader({
 	text = {
 		en = "Amani Endeavor",
 		cn = "阿曼尼文化",
+		tw = "阿曼尼睦鄰活動",
 	},
 });
 local DRACONIC_ENDEAVOR = createHeader({
@@ -24,6 +26,7 @@ local DRACONIC_ENDEAVOR = createHeader({
 	text = {
 		en = "Draconic Endeavor",
 		cn = "巨龙文化",
+		tw = "巨龍睦鄰活動",
 	},
 });
 local GRUMMLE_ENDEAVOR = createHeader({
@@ -32,6 +35,7 @@ local GRUMMLE_ENDEAVOR = createHeader({
 	text = {
 		en = "Grummle Endeavor",
 		cn = "土地精文化",
+		tw = "咕嚕摩睦鄰活動",
 	},
 });
 local KARESHI_ENDEAVOR = createHeader({
@@ -40,6 +44,7 @@ local KARESHI_ENDEAVOR = createHeader({
 	text = {
 		en = "K'areshi Endeavor",
 		cn = "卡雷什文化",
+		tw = "凱瑞西睦鄰活動",
 	},
 });
 local KOBOLD_ENDEAVOR = createHeader({
@@ -48,6 +53,7 @@ local KOBOLD_ENDEAVOR = createHeader({
 	text = {
 		en = "Kobold Endeavor",
 		cn = "狗头人文化",
+		tw = "狗頭人睦鄰活動",
 	},
 });
 local MARUUKAI_ENDEAVOR = createHeader({
@@ -56,6 +62,7 @@ local MARUUKAI_ENDEAVOR = createHeader({
 	text = {
 		en = "Maruukai Endeavor",
 		cn = "马鲁凯文化",
+		tw = "莫魯凱睦鄰活動",
 	},
 });
 local MECHAGNOME_ENDEAVOR = createHeader({
@@ -64,6 +71,7 @@ local MECHAGNOME_ENDEAVOR = createHeader({
 	text = {
 		en = "Mechagnome Endeavor",
 		cn = "机械侏儒文化",
+		tw = "機械地精睦鄰活動",
 	},
 });
 local NIFFEN_ENDEAVOR = createHeader({
@@ -72,6 +80,7 @@ local NIFFEN_ENDEAVOR = createHeader({
 	text = {
 		en = "Niffen Endeavor",
 		cn = "鼹鼠人文化",
+		tw = "鼴鼠人睦鄰活動",
 	},
 });
 local SINDOREI_ENDEAVOR = createHeader({
@@ -79,7 +88,8 @@ local SINDOREI_ENDEAVOR = createHeader({
 	icon = 7301737,
 	text = {
 		en = "Sin'dorei Endeavor",
-		cn = "辛多雷文化"
+		cn = "辛多雷文化",
+		tw = "辛多雷睦鄰活動",
 	},
 });
 local TORTOLLAN_ENDEAVOR = createHeader({
@@ -88,6 +98,7 @@ local TORTOLLAN_ENDEAVOR = createHeader({
 	text = {
 		en = "Tortollan Endeavor",
 		cn = "始祖龟文化",
+		tw = "托爾托人睦鄰活動",
 	},
 });
 

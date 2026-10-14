@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "允许使用指定的样式导出当前活动窗口的数据。",
-		-- TODO: tw = "",
+		tw = "可使用指定樣式匯出目前作用中視窗的資料。",
 	},
 })

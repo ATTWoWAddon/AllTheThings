@@ -4,6 +4,7 @@ local ARCHAEOLOGY_ARAKKOA = createHeader({
 	text = {
 		en = "Archaeology: Arakkoa",
 		cn = "考古学：鸦人",
+		tw = "考古學：阿拉卡",
 	},
 });
 local ARCHAEOLOGY_DEMONIC = createHeader({
@@ -12,6 +13,7 @@ local ARCHAEOLOGY_DEMONIC = createHeader({
 	text = {
 		en = "Archaeology: Demonic",
 		cn = "考古学：恶魔",
+		tw = "考古學：惡魔",
 	},
 });
 local ARCHAEOLOGY_DRAENORCLANS = createHeader({
@@ -20,6 +22,7 @@ local ARCHAEOLOGY_DRAENORCLANS = createHeader({
 	text = {
 		en = "Archaeology: Draenor Clans",
 		cn = "考古学：德拉诺氏族",
+		tw = "考古學：德拉諾氏族",
 	},
 });
 local ARCHAEOLOGY_DRUST = createHeader({
@@ -28,6 +31,7 @@ local ARCHAEOLOGY_DRUST = createHeader({
 	text = {
 		en = "Archaeology: Drust",
 		cn = "考古学：德鲁斯特",
+		tw = "考古學：佐司特",
 	},
 });
 local ARCHAEOLOGY_HIGHBORNE = createHeader({
@@ -36,6 +40,7 @@ local ARCHAEOLOGY_HIGHBORNE = createHeader({
 	text = {
 		en = "Archaeology: Highborne",
 		cn = "考古学：上层精灵",
+		tw = "考古學：Highborne",	-- TODO: verify it.
 	},
 });
 local ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
@@ -44,6 +49,7 @@ local ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
 	text = {
 		en = "Archaeology: Highmountain",
 		cn = "考古学：至高岭牛头人",
+		tw = "考古學：高嶺",
 	},
 });
 local ARCHAEOLOGY_MANTID = createHeader({
@@ -52,6 +58,7 @@ local ARCHAEOLOGY_MANTID = createHeader({
 	text = {
 		en = "Archaeology: Mantid",
 		cn = "考古学：螳螂妖",
+		tw = "考古學：螳螂人",
 	},
 });
 local ARCHAEOLOGY_MOGU = createHeader({
@@ -60,6 +67,7 @@ local ARCHAEOLOGY_MOGU = createHeader({
 	text = {
 		en = "Archaeology: Mogu",
 		cn = "考古学：魔古",
+		tw = "考古學：魔古",
 	},
 });
 local ARCHAEOLOGY_OGRE = createHeader({
@@ -68,6 +76,7 @@ local ARCHAEOLOGY_OGRE = createHeader({
 	text = {
 		en = "Archaeology: Ogre",
 		cn = "考古学：食人魔",
+		tw = "考古學：巨魔",
 	},
 });
 local ARCHAEOLOGY_PANDAREN = createHeader({
@@ -76,6 +85,7 @@ local ARCHAEOLOGY_PANDAREN = createHeader({
 	text = {
 		en = "Archaeology: Pandaren",
 		cn = "考古学：熊猫人",
+		tw = "考古學：熊貓人",
 	},
 });
 local ARCHAEOLOGY_ZANDALARI = createHeader({
@@ -84,6 +94,7 @@ local ARCHAEOLOGY_ZANDALARI = createHeader({
 	text = {
 		en = "Archaeology: Zandalari",
 		cn = "考古学：赞达拉巨魔",
+		tw = "考古學：Zandalari",	-- TODO: verify it.
 	},
 });
 local RESTORED_ARTIFACT = 87399;
