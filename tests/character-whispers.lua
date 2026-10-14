@@ -133,6 +133,7 @@
 ---@class ATTWhisperTestApp
 ---@field IsForever boolean # Whether the fixture represents Forever, independently of regional-name capability.
 ---@field IsRetail boolean # Retail flag used by the selected fixture mode.
+---@field WOWAPI { SendGameData: fun(target: number, prefix: string, message: string) } # Battle.net send wrapper mock.
 ---@field print fun(...: ATTWhisperTestPrintedValue) # Discard addon chat output.
 ---@field asset fun(name: string): string # Return the requested mock asset name unchanged.
 ---@field GetWindow fun(self: ATTWhisperTestApp, name: string?): ATTWhisperTestWindow # Return the shared mock window.
@@ -170,6 +171,7 @@ local root = arg[1] or ".";
 local file = assert(io.open(root .. "/src/UI/Windows/Account Management.lua", "rb"));
 local source = file:read("*a"):gsub("\r\n", "\n");
 file:close();
+local sendGameDataCache = assert(source:match('(local SendGameData = app%.WOWAPI%.SendGameData%;)'));
 local transport = assert(source:match("(local AddonMessagePrefix, MESSAGE_HANDLERS, EnableBattleNet.-)%-%- Account Wide Data handlers"));
 local messages = assert(source:match("(MESSAGE_HANDLERS%.ack = function.-)\nMESSAGE_HANDLERS%.char ="));
 local events = assert(source:match("(handlers%.BN_CHAT_MSG_ADDON = function.-)\n\t\tlocal options ="));
@@ -179,8 +181,8 @@ local queueOption = assert(source:match("(app.CreateRawText%(L%.ACCOUNT_MANAGEME
 local linkPopup = source:sub((assert(source:find("app:ShowPopupDialogWithEditBox(L.ACCOUNT_MANAGEMENT_LINK_CHARACTER_POPUP", 1, true))));
 local linkCallback = assert(linkPopup:match("(function%(cmd%).-self:Rebuild%(%)%;%s*end%s*end)"));
 local program = [[
----@type ATTWhisperTestApp, ATTWhisperTestChatAPI, fun(target: number, prefix: string, message: string), ATTNameTestCharacter, table<string, ATTNameTestCharacter>, table<ATTAccountTransportKey, boolean>, ATTWhisperTestLocale, fun(): number, (fun(): boolean)?
-local app, C_ChatInfo, SendGameData, CurrentCharacter, CharacterData, LinkedCharacters, L, time, RegionalUniqueNamesEnabled = ...;
+---@type ATTWhisperTestApp, ATTWhisperTestChatAPI, ATTNameTestCharacter, table<string, ATTNameTestCharacter>, table<ATTAccountTransportKey, boolean>, ATTWhisperTestLocale, fun(): number, (fun(): boolean)?
+local app, C_ChatInfo, CurrentCharacter, CharacterData, LinkedCharacters, L, time, RegionalUniqueNamesEnabled = ...;
 --- Discard production debug messages in the isolated module.
 ---@type fun(...: ATTWhisperTestPrintedValue)
 local DebugPrint = function() end;
@@ -190,7 +192,7 @@ local UNKNOWN = "Unknown";
 ---@generic K, V
 ---@param t table<K, V> Mutable collection to empty.
 local wipe = function(t) for k in pairs(t) do t[k] = nil; end end;
-]] .. transport .. "\n" .. messages .. "\n" .. cancel .. "\n" .. progress .. [[
+]] .. sendGameDataCache .. "\n" .. transport .. "\n" .. messages .. "\n" .. cancel .. "\n" .. progress .. [[
 ---@type ATTWhisperTestEvents
 local eventHandlers = {};
 do
@@ -211,7 +213,7 @@ return {
 }
 ]];
 --- Load extracted production code with the fixture's services and identity tables.
----@type fun(app: ATTWhisperTestApp, chat: ATTWhisperTestChatAPI, bnet: fun(target: number, prefix: string, message: string), current: ATTNameTestCharacter, characters: table<string, ATTNameTestCharacter>, linked: table<ATTAccountTransportKey, boolean>, locale: ATTWhisperTestLocale, clock: fun(): number, regionalNames: (fun(): boolean)?): ATTWhisperTestAPI
+---@type fun(app: ATTWhisperTestApp, chat: ATTWhisperTestChatAPI, current: ATTNameTestCharacter, characters: table<string, ATTNameTestCharacter>, linked: table<ATTAccountTransportKey, boolean>, locale: ATTWhisperTestLocale, clock: fun(): number, regionalNames: (fun(): boolean)?): ATTWhisperTestAPI
 local chunk = assert((loadstring or load)(program, "@actual-account-whisper-transport"));
 local logicalTarget, nativeTarget = "First Last-Remote Realm", "First Last";
 --- Create independent transport state, API mocks, and coroutine controls for one client mode.
@@ -262,6 +264,7 @@ local function fixture(mode, regionalNames, regionalAPIAvailable)
 	---@param prefix string # Registered addon-message prefix.
 	---@param message string # Encoded payload to capture.
 	local bnet = function(target, prefix, message) h.battleNet[#h.battleNet+1] = {target=target,prefix=prefix,message=message}; end;
+	app.WOWAPI = { SendGameData = bnet };
 	---@type ATTWhisperTestLocale
 	local locale = setmetatable({ ACCOUNT_MANAGEMENT_CHUNK_PROGRESS = "%d/%d", ACCOUNT_MANAGEMENT_DELETE_SYNC_QUEUE_POPUP = "%s" }, {__index=
 		--- Echo untranslated keys so queue labels remain available without the locale database.
@@ -278,7 +281,7 @@ local function fixture(mode, regionalNames, regionalAPIAvailable)
 		---@return boolean enabled # Whether this fixture uses regionally unique native names.
 		regionalAPI = function() return regionalNames == nil and mode == "forever" or regionalNames == true; end;
 	end
-	h.api = chunk(app, chat, bnet, current, h.characters, h.linked, locale,
+	h.api = chunk(app, chat, current, h.characters, h.linked, locale,
 		--- Read the fixture clock without advancing it during production cooldown checks.
 		---@return number now # Current simulated time.
 		function() return h.now; end, regionalAPI);
