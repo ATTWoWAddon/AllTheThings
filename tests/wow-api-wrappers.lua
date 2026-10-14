@@ -120,6 +120,21 @@ do
 end
 
 do
+    local current = {recordID = 123, entryType = 1, totalNumStored = 2, totalNumPlaced = 3, remainingRedeemable = 4}
+    local housing = initialize({C_HousingCatalog = {
+        GetCatalogEntryInfo = function(entry) equal(entry.recordID, 123); return current end,
+    }})
+    equal(housing.GetHousingCatalogEntryInfo({recordID = 123}), current, "current housing table retained")
+    local old = {entryID = {recordID = 321, entryType = 1}, quantity = 2, numPlaced = 3, remainingRedeemable = 4}
+    local normalized = housing.NormalizeHousingCatalogEntryInfo(old)
+    equal(normalized.recordID, 321); equal(normalized.entryType, 1)
+    equal(normalized.totalNumStored, 2); equal(normalized.totalNumPlaced, 3)
+    equal(normalized.remainingRedeemable, 4)
+    equal(old.recordID, nil, "Blizzard-owned old table not modified")
+    equal(housing.NormalizeHousingCatalogEntryInfo(nil), nil)
+end
+
+do
 	local modernInfo = function() return 123 end
 	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
 	equal(modern.GetSpecializationInfo, modernInfo)
