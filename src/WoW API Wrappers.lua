@@ -257,6 +257,28 @@ AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, Get
 local ChatFrameUtil = ChatFrameUtil;
 lib.InsertChatLink = false; -- Optional when the client has no chat insertion API.
 AssignAPIWrapper("InsertChatLink", ChatFrameUtil and ChatFrameUtil.InsertLink, ChatEdit_InsertLink);
+
+-- The Blizzard event handler calls the native entry point directly.
+local function WrapLegacyDisplayTimePlayed(handler)
+	local original = ChatFrame_DisplayTimePlayed;
+	if not original then return false; end
+	ChatFrame_DisplayTimePlayed = function(...)
+		return handler(original, ...);
+	end;
+	return true;
+end;
+
+AssignAPIWrapper("WrapDisplayTimePlayed",
+	ChatFrameUtil and function(handler)
+		local original = ChatFrameUtil.DisplayTimePlayed;
+		if not original then return WrapLegacyDisplayTimePlayed(handler); end
+		ChatFrameUtil.DisplayTimePlayed = function(chatFrame, totalTime, levelTime)
+			return handler(original, chatFrame, totalTime, levelTime);
+		end;
+		return true;
+	end,
+	WrapLegacyDisplayTimePlayed);
+
 -- Merchant information uses the modern table contract on every client.
 AssignAPIWrapper("GetMerchantItemInfo",
 	C_MerchantFrame and C_MerchantFrame.GetItemInfo,
