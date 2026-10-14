@@ -1478,6 +1478,24 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(4940),	-- Veiled Grips
 				},
 			}),
+			q(98575, {	-- Tainted Tablet
+				qg = 3143,	-- Gornek
+				coord = { 42.06, 68.33, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { TROLL },
+				classes = { WARLOCK },
+				qi = 282346,	-- Tainted Tablet
+				lvl = 1,
+			}),
+			q(98576, {	-- Glyphic Parchment
+				qg = 3143,	-- Gornek
+				coord = { 42.06, 68.33, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC },
+				classes = { MAGE },
+				qi = 282380,	-- Glyphic Parchment
+				lvl = 1,
+			}),
 		}),
 		n(RARES, {
 			n(5824, {	-- Captain Flat Tusk <Captain of the Battleguard>
