@@ -240,4 +240,7 @@ AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, Get
 local C_BattleNet = C_BattleNet;
 lib.SendGameData = false; -- Optional when the client has no game-data transport.
 AssignAPIWrapper("SendGameData", C_BattleNet and C_BattleNet.SendGameData, BNSendGameData);
+local ChatFrameUtil = ChatFrameUtil;
+lib.InsertChatLink = false; -- Optional when the client has no chat insertion API.
+AssignAPIWrapper("InsertChatLink", ChatFrameUtil and ChatFrameUtil.InsertLink, ChatEdit_InsertLink);
 ---@diagnostic enable: deprecated

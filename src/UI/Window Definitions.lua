@@ -1,6 +1,7 @@
 -- App locals
 local _, app = ...;
 local L = app.L
+local InsertChatLink = app.WOWAPI.InsertChatLink;
 
 -- Global locals
 local coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe,tonumber
@@ -1053,7 +1054,7 @@ local function HandleLeftClickShift(self, reference, window)
 		-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 		local link = reference.link or reference.silentLink;
 		if link then
-			if app.HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
+			if app.HandleModifiedItemClick(link) or (InsertChatLink and InsertChatLink(link)) then return true; end
 			local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
 			if dialog then
 				local editBox = dialog.editBox or dialog.EditBox or (dialog.GetEditBox and dialog:GetEditBox())
