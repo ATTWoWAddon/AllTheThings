@@ -256,4 +256,16 @@ AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, Get
 local ChatFrameUtil = ChatFrameUtil;
 lib.InsertChatLink = false; -- Optional when the client has no chat insertion API.
 AssignAPIWrapper("InsertChatLink", ChatFrameUtil and ChatFrameUtil.InsertLink, ChatEdit_InsertLink);
+-- Merchant information uses the modern table contract on every client.
+AssignAPIWrapper("GetMerchantItemInfo",
+	C_MerchantFrame and C_MerchantFrame.GetItemInfo,
+	GetMerchantItemInfo and function(index)
+		local name, texture, price, stackCount, numAvailable, isPurchasable, isUsable, hasExtendedCost = GetMerchantItemInfo(index);
+		return {
+			name = name, texture = texture, price = price, stackCount = stackCount,
+			numAvailable = numAvailable, isPurchasable = isPurchasable,
+			isUsable = isUsable, hasExtendedCost = hasExtendedCost,
+		};
+	end);
+
 ---@diagnostic enable: deprecated
