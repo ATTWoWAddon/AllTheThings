@@ -4,6 +4,7 @@
 ---
 
 local _, app = ...
+local InsertChatLink = app.WOWAPI.InsertChatLink;
 
 local ipairs,math_floor,type
 	= ipairs,math.floor,type
@@ -55,7 +56,7 @@ hooksecurefunc("SetItemRef", function(link, text)
 			if IsShiftKeyDown() then
 				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 				local link = group.link or group.silentLink;
-				if (app.HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link) then return true; end
+				if app.HandleModifiedItemClick(link) or (InsertChatLink and InsertChatLink(link)) then return true; end
 			end
 
 			app:CreateMiniListForGroup(group);
