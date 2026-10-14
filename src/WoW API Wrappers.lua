@@ -275,4 +275,19 @@ AssignAPIWrapper("GetMerchantItemInfo",
 		};
 	end);
 
+-- ATT's remaining-time label uses abbreviated units, at most two terms,
+-- and truncates fractional seconds, matching its former SecondsToTime use.
+local RemainingTimeFormatter;
+AssignAPIWrapper("SecondsToTime",
+	SecondsFormatter and SecondsFormatterMixin and CreateFromMixins and function(seconds)
+		seconds = math.floor(seconds);
+		if seconds <= 0 then return ""; end
+		if not RemainingTimeFormatter then
+			RemainingTimeFormatter = CreateFromMixins(SecondsFormatterMixin);
+			RemainingTimeFormatter:Init(0, SecondsFormatter.Abbreviation.Truncate, false, false, false);
+		end
+		return RemainingTimeFormatter:Format(seconds);
+	end,
+	SecondsToTime);
+
 ---@diagnostic enable: deprecated

@@ -12,8 +12,9 @@ local L = app.L;
 -- Encapsulates the functionality for handling and interacting with colors in the addon, which are typically represented in Text
 
 -- Global locals
-local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime
-	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime;
+local abs, ceil, floor, max, min, tonumber, tostring
+	= abs, ceil, floor, max, min, tonumber, tostring;
+local SecondsToTime = app.WOWAPI.SecondsToTime;
 
 -- Module locals
 local CS = CreateFrame("ColorSelect", nil, app.frame);

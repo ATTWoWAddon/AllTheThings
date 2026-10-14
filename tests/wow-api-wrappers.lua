@@ -101,4 +101,21 @@ do
 	equal(item.isUsable, false)
 	equal(item.hasExtendedCost, true)
 end
+
+do
+	-- Modern formatting receives whole seconds and keeps ATT's abbreviated label.
+	local formatter = {}
+	function formatter:Init(_, abbreviation) equal(abbreviation, 2); self.units = 2 end
+	function formatter:Format(seconds) equal(seconds, 65); return "1 min 5 sec" end
+	local times = initialize({
+		SecondsFormatter = {Abbreviation = {Truncate = 2}},
+		SecondsFormatterMixin = formatter,
+		CreateFromMixins = function(mixin) return setmetatable({}, {__index = mixin}) end,
+		SecondsToTime = rejectLegacy,
+	})
+	equal(times.SecondsToTime(65.9), "1 min 5 sec")
+	equal(times.SecondsToTime(0.9), "")
+	local nativeTimes = initialize({SecondsToTime = function(seconds) return "legacy " .. seconds end}, 11509)
+	equal(nativeTimes.SecondsToTime(65), "legacy 65")
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
