@@ -1506,6 +1506,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 			}),
+			q(94465, {	-- Call of Fire
+				qg = 257597,	-- Bruegs Kindleborn
+				coord = { 87.94, 44.8, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				qi = 6653,	-- Torch of the Dormant Flame
+				lvl = 10,
+			}),
+			q(94824, {	-- Confounding Flash
+				qg = 1226,	-- Maxan Anvol
+				coord = { 47.34, 52.19, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+			}),
+			q(98574, {	-- Hallowed Memorandum
+				sourceQuest = 179,
+				qg = 658,	-- Sten Stoutarm
+				coord = { 29.93, 71.2, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				qi = 282338,	-- Hallowed Memorandum
+				lvl = 1,
+			}),
 		}),
 		n(RARES, {
 			n(1130, {	-- Bjarn
