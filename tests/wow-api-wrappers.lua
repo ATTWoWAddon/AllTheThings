@@ -135,6 +135,11 @@ do
 end
 
 do
+    local housing = initialize({C_HousingCatalog = {CreateCatalogSearcher = function() return sentinel end}})
+    equal(housing.CreateHousingCatalogSearcher(), sentinel)
+end
+
+do
 	local modernInfo = function() return 123 end
 	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
 	equal(modern.GetSpecializationInfo, modernInfo)
