@@ -729,6 +729,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					}),
 				},
 			}),
+			q(94495, {	-- Call of Water
+				qg = 258043,	-- Norric Lochthane
+				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+			}),
 		}),
 		n(RARES, {
 			n(1398, {	-- Boss Galgosh <Stonesplinter Chieftain>
