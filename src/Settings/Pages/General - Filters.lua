@@ -84,8 +84,6 @@ app.EquipmentFilters = {
 	[8] = true,   -- Shields
 	[1] = true,   -- Held in Off-Hand
 
-	[11] = true,  -- Artifacts
-
 	[4] = true,   -- Cloth
 	[5] = true,   -- Leather
 	[6] = true,   -- Mail
@@ -112,6 +110,9 @@ app.EquipmentFilters = {
 
 	[57] = true,  -- Profession Equipment
 }
+if app.GameBuildVersion >= 70000 then
+	app.EquipmentFilters[11] = true; -- Artifacts
+end
 
 for i, filterID in ipairs({
 	21, 22, 23, 24, 25, 26, -- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
@@ -122,7 +123,7 @@ for i, filterID in ipairs({
 	57                      -- Profession Equipment
 }) do
 	local name = itemFilterNames[filterID];
-	if name then
+	if name and (filterID ~= 11 or app.GameBuildVersion >= 70000) then
 		local filter = child:CreateCheckBox(name, ItemFilterOnRefresh, ItemFilterOnClick)
 		-- Start
 		if filterID == 21 then
