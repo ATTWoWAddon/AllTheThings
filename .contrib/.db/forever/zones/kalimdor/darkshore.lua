@@ -1006,6 +1006,62 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(15400),	-- Clamshell Bracers
 				},
 			}),
+			q(87760, {	-- Holy Diver
+				qg = 10219,	-- Gwennyth Bly'Leggonde
+				coord = { 36.62, 45.59, MAP.DARKSHORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 15,
+				groups = {
+					objective(1, {	-- Rod of Deep Dominion
+						provider = { "i", 280686 },
+					}),
+					i(5996),	-- Elixir of Water Breathing
+					i(6372),	-- Swim Speed Potion
+				},
+			}),
+			q(98013, {	-- Swelling Forces
+				qg = 270269,	-- Arbal
+				coord = { 43.71, 76.51, MAP.DARKSHORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { DWARF, NIGHTELF, GNOME, SKYBORNE_ALLIANCE },
+				lvl = 12,
+				groups = {
+					objective(1, {	-- Stormscale Myrmidon
+						provider = { "n", 2181 },
+					}),
+					objective(2, {	-- Stormscale Sorceress
+						provider = { "n", 2182 },
+					}),
+					objective(3, {	-- Stormscale Warrior
+						provider = { "n", 2183 },
+					}),
+				},
+			}),
+			q(98028, {	-- Baron Marinous
+				provider = { "i", 279275 },	-- Clouded Water Globe
+				coord = { 59.01, 22.91, MAP.DARKSHORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				qi = 279275,	-- Clouded Water Globe
+				lvl = 17,
+				groups = {
+					i(281291),	-- Mathystra Channeling Orb
+					i(281292),	-- Onu's Patience
+				},
+			}),
+			q(98042, {	-- It's All Fun and Games Until...
+				provider = { "o", 12666 },	-- Twilight Tome
+				coord = { 38.54, 86.05, MAP.DARKSHORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 12,
+				groups = {
+					objective(1, {	-- Peerless Eye
+						provider = { "i", 279279 },
+					}),
+				},
+			}),
 		}),
 		n(RARES, {
 			n(2186, {	-- Carnivous the Breaker
