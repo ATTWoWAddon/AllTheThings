@@ -230,6 +230,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(86585, {	-- Banner of the Fallen
+				lvl = 10,
 				qg = 269153,	-- Mountaineer Ylva
 				qi = 253247,	-- Banner of Ironforge
 				coord = { 31.8, 86.2, MAP.LOCH_MODAN },
@@ -568,7 +569,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 50.6, 53.4, MAP.LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				lvl = 12,
+				lvl = 13,
 				groups = {
 					i(281256),	-- Repurposed Hair Band
 				},

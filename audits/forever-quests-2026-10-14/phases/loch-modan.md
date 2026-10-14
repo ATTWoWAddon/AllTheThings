@@ -67,13 +67,20 @@ The original audit files remain separate from this phase. Questie is the primary
 
 | Quest ID | Field | Disposition |
 |---|---|---|
-| 86585 | `requiredLevel` | Pending source and inherited-field reconciliation. |
-| 86614 | `requiredLevel` | Pending source and inherited-field reconciliation. |
+| 86585 | `requiredLevel` | Corrected: lvl = 10. Effective Questie and cached Wowhead fields agree. |
+| 86614 | `requiredLevel` | Corrected: lvl = 13. Effective Questie and cached Wowhead fields agree. |
 | 86758 | `requiredRaces` | Pending source and inherited-field reconciliation. |
 | 86776 | `requiredRaces` | Pending source and inherited-field reconciliation. |
 
+## Implemented field corrections
+
+| Quest | Fields | Evidence |
+|---|---|---|
+| 86585 | `{"lvl": "10"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=86585); effective Questie registry at revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 86614 | `{"lvl": "13"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=86614); effective Questie registry at revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+
 ## Verification
 
-The current addition phase passed Lua 5.1.5 contributor-record checks using the production quest/objective constructors, source-provider and map checks, minimum level and restriction checks, objective ordering, and fixed/choice reward inventory checks. Before the additions, the same checks failed because the requested quest declarations were absent. Lua 5.1.5 syntax checks and `git diff --check` passed.
+Lua 5.1.5 checks using production contributor constructors failed for the expected fields before the correction and passed afterward. Scoped contributor syntax checks and `git diff --check` passed. Earlier additions retain their reviewed checks.
 
 The Windows Forever parser and live in-game checks are unavailable on this macOS host. These checks do not establish a successful full addon build or live quest availability. No runtime files were changed.
