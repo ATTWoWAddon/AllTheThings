@@ -191,6 +191,7 @@ AssignAPIWrapper("IsTradeSkillLinked", C_TradeSkillUI and C_TradeSkillUI.IsTrade
 -- Specialization APIs
 local C_SpecializationInfo = C_SpecializationInfo
 AssignAPIWrapper("GetSpecialization", C_SpecializationInfo and C_SpecializationInfo.GetSpecialization, GetSpecialization or GetActiveTalentGroup);
+lib.GetSpecializationInfo = false; -- Optional on clients without specialization data.
 AssignAPIWrapper("GetSpecializationInfo", C_SpecializationInfo and C_SpecializationInfo.GetSpecializationInfo, GetSpecializationInfo);
 
 -- Spell APIs

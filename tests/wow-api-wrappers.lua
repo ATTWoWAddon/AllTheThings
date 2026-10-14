@@ -74,4 +74,13 @@ do
 	equal(item.isUsable, false)
 	equal(item.hasExtendedCost, true)
 end
+
+do
+	local modernInfo = function() return 123 end
+	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
+	equal(modern.GetSpecializationInfo, modernInfo)
+	local nativeInfo = function() return 321 end
+	equal(initialize({GetSpecializationInfo = nativeInfo}, 50504).GetSpecializationInfo, nativeInfo)
+	equal(initialize({}).GetSpecializationInfo, false, "missing specialization data remains unavailable")
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
