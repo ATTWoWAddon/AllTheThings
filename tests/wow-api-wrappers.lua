@@ -42,4 +42,15 @@ do
 	equal(modernCalls.bnet[3], "payload")
 	equal(initialize({}).SendGameData, false, "missing transport remains unavailable")
 end
+
+do
+	local modernCalls = {}
+	local api = initialize({
+		ChatFrameUtil = {InsertLink = function(link) modernCalls.link = link; return true end},
+		ChatEdit_InsertLink = rejectLegacy,
+	})
+	equal(api.InsertChatLink("item:1"), true)
+	equal(modernCalls.link, "item:1")
+	equal(initialize({}).InsertChatLink, false, "missing chat insertion remains unavailable")
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")

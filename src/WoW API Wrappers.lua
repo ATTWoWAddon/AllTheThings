@@ -252,4 +252,8 @@ AssignAPIWrapper("GetPlayerAuraBySpellID",
 local C_AddOns = C_AddOns;
 AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, GetAddOnMetadata);
 
+-- Chat UI APIs
+local ChatFrameUtil = ChatFrameUtil;
+lib.InsertChatLink = false; -- Optional when the client has no chat insertion API.
+AssignAPIWrapper("InsertChatLink", ChatFrameUtil and ChatFrameUtil.InsertLink, ChatEdit_InsertLink);
 ---@diagnostic enable: deprecated
