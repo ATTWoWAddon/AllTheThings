@@ -21,10 +21,10 @@ local VALE_SOO_ONUPDATE = [[function(t)
 end]];
 -- Wouter NOTE: hacky way to force collect other Challenge Mode mounts after getting one; they're character specific and you can only get 1 achievement per character
 local PHOENIX_MOUNT_ONUPDATE = [[function(t)
-	if 	IsPlayerSpell(132117) and not (t.itemID == 90710) or
-		IsPlayerSpell(128552) and not (t.itemID == 89154) or
-		IsPlayerSpell(132118) and not (t.itemID == 90711) or
-		IsPlayerSpell(132119) and not (t.itemID == 90712) then
+	if 	_.WOWAPI.IsPlayerSpell(132117) and not (t.itemID == 90710) or
+		_.WOWAPI.IsPlayerSpell(128552) and not (t.itemID == 89154) or
+		_.WOWAPI.IsPlayerSpell(132118) and not (t.itemID == 90711) or
+		_.WOWAPI.IsPlayerSpell(132119) and not (t.itemID == 90712) then
 		t.collectible = false;
 	end
 end]];
