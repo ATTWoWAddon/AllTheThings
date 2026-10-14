@@ -719,6 +719,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				isBreadcrumb = true,
 				lvl = 20,
 			}),
+			q(91899, {	-- A Sealed Crate
+				qgs = { 256390, 256386 },
+				coords = { { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS }, { 50.15, 29.35, MAP.THE_BARRENS } },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 1,
+				groups = {
+					objective(1, {	-- Sealed Apprentice Crate
+						provider = { "i", 248765 },
+					}),
+				},
+			}),
+			q(91900, {	-- A Sealed Crate
+				qg = 256390,	-- Marcy Baker
+				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 1,
+				groups = {
+					objective(1, {	-- Sealed Journeyman Crate
+						provider = { "i", 248766 },
+					}),
+				},
+			}),
 		}),
 		n(RARES, {
 			n(14273, {	-- Boulderheart
