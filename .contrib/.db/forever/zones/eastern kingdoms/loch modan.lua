@@ -784,6 +784,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(5176),	-- Fire Totem
 				},
 			}),
+			q(94502, {	-- Call of Water
+				qg = 258043,	-- Norric Lochthane
+				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				qi = 7811,	-- Remaining Drops of Purest Water
+				lvl = 20,
+				groups = {
+					objective(1, {	-- Corrupt Manifestation's Bracers
+						provider = { "i", 7812 },
+					}),
+				},
+			}),
 		}),
 		n(RARES, {
 			n(1398, {	-- Boss Galgosh <Stonesplinter Chieftain>
