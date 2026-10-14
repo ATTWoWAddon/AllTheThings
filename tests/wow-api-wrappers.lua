@@ -255,4 +255,38 @@ do
 	end
 end
 
+do
+	-- Every current client registers root and nested categories through Settings.
+	for _, interface in ipairs({11509, 16001, 20506, 38002, 50504, 120105}) do
+		local order, rootCategory, childCategory = {}, {ID=10}, {ID=11};
+		local rootFrame, childFrame = {}, {};
+		local options = initialize({
+			Settings = {
+				RegisterCanvasLayoutCategory = function(frame, name)
+					equal(frame, rootFrame, "root frame identity");
+					order[#order+1] = "root:" .. name;
+					return rootCategory;
+				end,
+				RegisterAddOnCategory = function(category)
+					equal(category, rootCategory, "register returned root category");
+					order[#order+1] = "addon";
+				end,
+				RegisterCanvasLayoutSubcategory = function(parent, frame, name)
+					equal(parent, rootCategory, "subcategory parent identity");
+					equal(frame, childFrame, "subcategory frame identity");
+					order[#order+1] = "child:" .. name;
+					return childCategory;
+				end,
+			},
+			InterfaceOptions_AddCategory = function() error("removed category registration API selected") end,
+		}, interface);
+		local category, categoryID = options.RegisterOptionsCategory(rootFrame, "ATT");
+		equal(category, rootCategory);
+		equal(categoryID, 10);
+		category, categoryID = options.RegisterOptionsCategory(childFrame, "Audio", rootCategory, "ATT");
+		equal(category, childCategory);
+		equal(categoryID, 11);
+		equal(table.concat(order, ","), "root:ATT,addon,child:Audio", "root-before-child registration on interface " .. interface);
+	end
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
