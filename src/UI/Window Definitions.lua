@@ -7,8 +7,7 @@ local coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe
 	= coroutine,ipairs,pairs,pcall,math,rawget,select,tostring,type,tremove,wipe,tonumber
 local CreateFrame,GetCursorPosition,IsModifierKeyDown
 	= CreateFrame,GetCursorPosition,IsModifierKeyDown;
-local C_AddOns_GetAddOnMetadata
-	= C_AddOns.GetAddOnMetadata;
+local GetAddOnMetadata = app.WOWAPI.GetAddOnMetadata;
 local wipearray = app.wipearray
 
 --- Shared game tooltip extended with ATT icon, model, and reference display helpers.
@@ -2950,14 +2949,14 @@ function app:CreateWindow(suffix, definition)
 	SetupCommandsForDefinition(definition)
 end
 function app:CreateWindowForAddon(addonName, definition)
-	local title = C_AddOns_GetAddOnMetadata(addonName, "Title");
+	local title = GetAddOnMetadata(addonName, "Title");
 	if title then
 		local titleSplit = { (":"):split(title) };
 		definition.Title = titleSplit[#titleSplit]:trim();
 	end
-	definition.Notes = C_AddOns_GetAddOnMetadata(addonName, "Notes");
-	definition.IconTexture = C_AddOns_GetAddOnMetadata(addonName, "IconTexture");
-	local cmdStr = C_AddOns_GetAddOnMetadata(addonName, "X-Commands");
+	definition.Notes = GetAddOnMetadata(addonName, "Notes");
+	definition.IconTexture = GetAddOnMetadata(addonName, "IconTexture");
+	local cmdStr = GetAddOnMetadata(addonName, "X-Commands");
 	if cmdStr then
 		local commands = definition.Commands;
 		if not commands then
@@ -2968,7 +2967,7 @@ function app:CreateWindowForAddon(addonName, definition)
 			tinsert(commands, cmd:trim());
 		end
 	end
-	return app:CreateWindow(C_AddOns_GetAddOnMetadata(addonName, "X-Suffix") or addonName, definition);
+	return app:CreateWindow(GetAddOnMetadata(addonName, "X-Suffix") or addonName, definition);
 end
 function app:GetWindow(suffix, passive)
 	return app.Windows[suffix] or (not passive and BuildWindow(suffix))
