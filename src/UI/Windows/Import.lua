@@ -123,7 +123,6 @@ app:CreateWindow("Import", {
 		local initialButtons = {
 			{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
 			{ id = "sourceID", name = WARDROBE, icon = 135276 },
-			{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
 			{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 			{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
 			{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
@@ -139,6 +138,10 @@ app:CreateWindow("Import", {
 			{ id = "spellID", name = SPELLS, icon = 135736 },
 			{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },
 		}
+
+		if app.GameBuildVersion >= 70000 then
+			tinsert(initialButtons, 3, { id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") });
+		end
 
 		for _, info in ipairs(initialButtons) do
 			IMPORT_TYPES[info.id:lower()] = info.id

@@ -51,7 +51,6 @@ end
 
 local stringsOne = {
 	{ title = L.ACHIEVEMENT, command = "achievement" },
-	{ title = L.ARTIFACT, command = "artifact" },
 	{ title = L.AZERITE_ESSENCE, command = "azeriteessence" },
 	{ title = L.BATTLE_PET, command = "battlepet" },
 	{ title = L.CATEGORY, command = "category" },
@@ -68,6 +67,9 @@ local stringsOne = {
 	{ title = L.FLIGHT_PATHS, command = "flightpath" },
 	{ title = L.FOLLOWER, command = "follower" },
 }
+if app.GameBuildVersion >= 70000 then
+	table.insert(stringsOne, 2, { title = L.ARTIFACT, command = "artifact" });
+end
 local stringsTwo = {
 	{ title = L.HEADER, command = "header" },
 	{ title = L.HEIRLOOM, command = "heirloomid" },

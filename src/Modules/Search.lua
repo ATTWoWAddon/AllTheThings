@@ -124,7 +124,7 @@ local function SearchByItemLink(link)
 	local itemModifierIndex = 15 + bonusCount
 	local itemModifierCount = tonumber(linkData[itemModifierIndex]) or 0
 	local artifactID
-	if itemModifierCount > 0 then
+	if app.GameBuildVersion >= 70000 and itemModifierCount > 0 then
 		for i=itemModifierIndex + 1,itemModifierIndex + (2 * itemModifierCount),2 do
 			if linkData[i] == "8" then
 				artifactID = tonumber(linkData[i + 1])
