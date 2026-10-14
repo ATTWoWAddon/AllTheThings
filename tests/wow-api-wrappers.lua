@@ -30,4 +30,16 @@ do
 	equal(modernCalls.metadata[1], "ATT")
 	equal(modernCalls.metadata[2], "Version")
 end
+
+do
+	local modernCalls = {}
+	local api = initialize({
+		C_BattleNet = {SendGameData = function(account, prefix, message) modernCalls.bnet = {account, prefix, message}; return true end},
+		BNSendGameData = rejectLegacy,
+	})
+	equal(api.SendGameData(42, "ATT", "payload"), true)
+	equal(modernCalls.bnet[1], 42)
+	equal(modernCalls.bnet[3], "payload")
+	equal(initialize({}).SendGameData, false, "missing transport remains unavailable")
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
