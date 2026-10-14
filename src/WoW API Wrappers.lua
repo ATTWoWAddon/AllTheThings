@@ -323,4 +323,8 @@ if app.GameBuildVersion >= 110207 and C_HousingCatalog and C_HousingCatalog.GetC
 		return lib.NormalizeHousingCatalogEntryInfo(C_HousingCatalog.GetCatalogEntryInfo(entryID));
 	end;
 end
+if app.GameBuildVersion >= 110207 and C_HousingCatalog and C_HousingCatalog.CreateCatalogSearcher then
+	lib.CreateHousingCatalogSearcher = C_HousingCatalog.CreateCatalogSearcher;
+end
+
 ---@diagnostic enable: deprecated
