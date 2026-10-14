@@ -394,4 +394,12 @@ do
 	end
 end
 
+-- The public combat-log payload is available to Classic addons.
+-- Retail and Forever do not expose a public replacement; never use SecureOnly APIs.
+lib.CombatLogGetCurrentEventInfo = false;
+if not app.IsRetail then
+	local C_CombatLog = C_CombatLog;
+	lib.CombatLogGetCurrentEventInfo = C_CombatLog and C_CombatLog.GetCurrentEventInfo or CombatLogGetCurrentEventInfo or false;
+end
+
 ---@diagnostic enable: deprecated

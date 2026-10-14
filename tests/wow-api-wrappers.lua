@@ -217,4 +217,26 @@ do
 	equal(initialize({GetSpecializationInfo = nativeInfo}, 50504).GetSpecializationInfo, nativeInfo)
 	equal(initialize({}).GetSpecializationInfo, false, "missing specialization data remains unavailable")
 end
+
+do
+	-- Combat-log access remains limited to clients with a public payload API.
+	for _, interface in ipairs({11509, 20506, 38002, 50504}) do
+		local combat = initialize({
+			C_CombatLog = {GetCurrentEventInfo = function() return 1, "UNIT_DIED", 3 end},
+			CombatLogGetCurrentEventInfo = rejectLegacy,
+		}, interface)
+		local _, event = combat.CombatLogGetCurrentEventInfo()
+		equal(event, "UNIT_DIED", "Classic uses public combat-log API")
+	end
+	for _, interface in ipairs({120105, 16001}) do
+		local combat = initialize({
+			C_CombatLogSecure = {GetCurrentEventInfo = function() error("SecureOnly API accessed") end},
+			CombatLogGetCurrentEventInfo = function() error("unavailable public payload fallback accessed") end,
+		}, interface)
+		equal(combat.CombatLogGetCurrentEventInfo, false, "Retail/Forever payload unavailable")
+	end
+	local nativeCombat = initialize({CombatLogGetCurrentEventInfo = function() return "native" end}, 11509)
+	equal(nativeCombat.CombatLogGetCurrentEventInfo(), "native")
+	equal(initialize({}, 11509).CombatLogGetCurrentEventInfo, false, "Classic without public payload remains unavailable")
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
