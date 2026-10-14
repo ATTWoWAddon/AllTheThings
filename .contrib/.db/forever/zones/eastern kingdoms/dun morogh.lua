@@ -1533,6 +1533,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qi = 282338,	-- Hallowed Memorandum
 				lvl = 1,
 			}),
+			q(94449, {	-- Call of Fire
+				qgs = { 258098, 258113 },
+				coords = { { 47.14, 13.52, MAP.IRONFORGE }, { 47.58, 51.95, MAP.DUN_MOROGH } },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+			}),
 		}),
 		n(RARES, {
 			n(1130, {	-- Bjarn

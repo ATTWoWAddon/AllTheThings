@@ -8,16 +8,25 @@ The original audit files remain separate from this phase. Questie is the primary
 
 | Quest | Disposition | Reason |
 |---|---|---|
-| [94449 Call of Fire](https://www.wowhead.com/forever/quest=94449) | Deferred | Missing or multiple start providers need acquisition reconciliation. |
-| [94465 Call of Fire](https://www.wowhead.com/forever/quest=94465) | Added | Reconciled Questie and cached Wowhead record. |
+| [94449 Call of Fire](https://www.wowhead.com/forever/quest=94449) | Added | Added in Dun Morogh. Reconciled Questie and cached Wowhead record. |
+| [94465 Call of Fire](https://www.wowhead.com/forever/quest=94465) | Added | Added in Dun Morogh. Reconciled Questie and cached Wowhead record. |
 | [94472 Earth Sapta](https://www.wowhead.com/forever/quest=94472) | Deferred | Additional availability requirements need behavioral translation. |
-| [94824 Confounding Flash](https://www.wowhead.com/forever/quest=94824) | Added | Reconciled Questie and cached Wowhead record. |
-| [98574 Hallowed Memorandum](https://www.wowhead.com/forever/quest=98574) | Added | Reconciled Questie and cached Wowhead record. |
+| [94824 Confounding Flash](https://www.wowhead.com/forever/quest=94824) | Added | Added in Dun Morogh. Reconciled Questie and cached Wowhead record. |
+| [98574 Hallowed Memorandum](https://www.wowhead.com/forever/quest=98574) | Added | Added in Dun Morogh. Reconciled Questie and cached Wowhead record. |
+
+### 94449: Call of Fire
+
+- [Wowhead quest](https://www.wowhead.com/forever/quest=94449), fetched 2026-09-25T06:31:37+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 258098], ['n', 258113]]`; finishers: NPC 257597; minimum level 10.
+- Objective source text: ["Find Bruegs Kindleborn in Dun Morogh."].
+- Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
+- Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
+- Starting-item and provided-item IDs are distinct fields. Provided item: `none`.
 
 ### 94465: Call of Fire
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=94465), fetched 2026-09-25T06:31:57+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 257597]`; finishers: NPC 257808; minimum level 10.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 257597]]`; finishers: NPC 257808; minimum level 10.
 - Objective source text: ["Bring the Torch of the Dormant Flame to Braldir Ashmantle in Loch Modan."].
 - Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -26,7 +35,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 94824: Confounding Flash
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=94824), fetched 2026-09-25T06:36:15+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 1226]`; finishers: NPC 258785; minimum level 10.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 1226]]`; finishers: NPC 258785; minimum level 10.
 - Objective source text: ["Speak to High Priestess Mims in Ironforge."].
 - Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -35,7 +44,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 98574: Hallowed Memorandum
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=98574), fetched 2026-09-25T07:05:52+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 658]`; finishers: NPC 837; minimum level 1.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 658]]`; finishers: NPC 837; minimum level 1.
 - Objective source text: ["Read the Hallowed Memorandum and speak to Branstock Khalder in Anvilmar."].
 - Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
