@@ -2741,6 +2741,88 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				repeatable = true,
 				lvl = 14,
 			}),
+			q(95494, {	-- Bruised Pride and Lion Hides
+				qg = 3682,	-- Vrang Wildgore
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				lvl = 14,
+				groups = {
+					objective(1, {	-- Savannah Lion Hide
+						provider = { "i", 269715 },
+					}),
+				},
+			}),
+			q(95495, {	-- The Hermit Tanner
+				qg = 3682,	-- Vrang Wildgore
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				qi = 269718,	-- Bundle of Hides
+				lvl = 14,
+			}),
+			q(95507, {	-- Vrang's Game
+				qg = 3682,	-- Vrang Wildgore
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				lvl = 14,
+				groups = {
+					objective(1, {	-- Trapped Game
+						provider = { "i", 269719 },
+					}),
+				},
+			}),
+			q(95621, {	-- Trouble in the Valley
+				qg = 261366,	-- Walton
+				coord = { 42.01, 11.44, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				lvl = 14,
+				groups = {
+					objective(1, {	-- Benedict's Orders
+						provider = { "i", 270151 },
+					}),
+				},
+			}),
+			q(95774, {	-- Her Name Is Olgra
+				qg = 3432,	-- Mankrik
+				coord = { 51.95, 31.58, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				lvl = 14,
+				groups = {
+					objective(1, {	-- Olgra's Adornments
+						provider = { "i", 277277 },
+					}),
+				},
+			}),
+			q(97250, {	-- Wrongly Blamed, Justly Corrected
+				qg = 5911,	-- Grunt Logmar
+				coord = { 44.62, 59.27, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				lvl = 18,
+				groups = {
+					objective(1, {	-- Encroaching Soldier
+						provider = { "n", 268622 },
+					}),
+					objective(2, {	-- Outraged Pillager
+						provider = { "n", 268623 },
+					}),
+					i(277286),	-- Encroacher's Claim
+					i(277288),	-- Pathfinder's Clearway
+					i(277289),	-- Traveler's Shawl
+				},
+			}),
+			q(98024, {	-- Journey to the Crossroads
+				sourceQuest = 95350,
+				qg = 4949,	-- Thrall
+				coord = { 31.73, 37.82, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_HORDE },
+				lvl = 7,
+			}),
 		}),
 		n(RARES, {
 			n(THE_BARRENS_ALLIANCE_OUTRUNNERS, {	-- Alliance Outrunners
