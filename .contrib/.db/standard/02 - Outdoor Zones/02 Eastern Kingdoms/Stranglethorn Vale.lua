@@ -48,7 +48,8 @@ local OnTooltipForBloodsail = [[function(t, tooltipInfo)
 			});
 			if not t.eventful then
 				t.eventful = true;
-				if DBM then
+				local CombatLogGetCurrentEventInfo = _.WOWAPI.CombatLogGetCurrentEventInfo;
+				if DBM and CombatLogGetCurrentEventInfo then
 					local f = CreateFrame("FRAME", nil, UIParent);
 					f:SetScript("OnEvent", function(self, e, ...)
 						(rawget(self, e) or print)(CombatLogGetCurrentEventInfo());
