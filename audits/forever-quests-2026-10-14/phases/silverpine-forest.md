@@ -8,9 +8,9 @@ The original audit files remain separate from this phase. Questie is the primary
 
 | Quest | Disposition | Reason |
 |---|---|---|
-| [78261 The Horn of Xelthos](https://www.wowhead.com/forever/quest=78261) | Deferred | Updated Wowhead baseline rewards need effective Forever reconciliation. Missing or multiple start providers need acquisition reconciliation. Missing or multiple finish providers need completion reconciliation. Missing minimum level. Minimum level conflicts with cached Wowhead detail. Explicit Questie and Wowhead class restrictions conflict. |
+| [78261 The Horn of Xelthos](https://www.wowhead.com/forever/quest=78261) | Deferred | Updated Wowhead baseline rewards need effective Forever reconciliation. Missing or multiple start providers need acquisition reconciliation. Missing finish provider needs completion reconciliation. Missing minimum level. Minimum level conflicts with cached Wowhead detail. Explicit Questie and Wowhead class restrictions conflict. |
 | [91859 A Curious Pair](https://www.wowhead.com/forever/quest=91859) | Added | Added in Silverpine Forest. Reconciled Questie and cached Wowhead record. |
-| [91860 A Grim Fate](https://www.wowhead.com/forever/quest=91860) | Deferred | Missing or multiple finish providers need completion reconciliation. No structured objectives or independently verified objective-free completion. |
+| [91860 A Grim Fate](https://www.wowhead.com/forever/quest=91860) | Deferred | No structured objectives or independently verified objective-free completion. |
 | [91862 Lumina Windsinger](https://www.wowhead.com/forever/quest=91862) | Added | Added in Silverpine Forest. Reconciled Questie and cached Wowhead record. |
 | [91920 Wild Eyes](https://www.wowhead.com/forever/quest=91920) | Added | Added in Silverpine Forest. Reconciled Questie and cached Wowhead record. |
 | [91921 Return to Quinn (Again)](https://www.wowhead.com/forever/quest=91921) | Added | Added in Silverpine Forest. Reconciled Questie and cached Wowhead record. |
@@ -19,8 +19,8 @@ The original audit files remain separate from this phase. Questie is the primary
 | [95036 A Moon-Kissed Blade](https://www.wowhead.com/forever/quest=95036) | Deferred | Explicit Questie and Wowhead race restrictions conflict. Wowhead prerequisite references require source reconciliation. |
 | [95111 An Underrated Talent](https://www.wowhead.com/forever/quest=95111) | Added | Added in Silverpine Forest. Reconciled Questie and cached Wowhead record. |
 | [95140 Old Fire-Eye](https://www.wowhead.com/forever/quest=95140) | Deferred | No structured objectives or independently verified objective-free completion. |
-| [95883 The Tortured Soul](https://www.wowhead.com/forever/quest=95883) | Deferred | Missing or multiple start providers need acquisition reconciliation. Missing or multiple finish providers need completion reconciliation. |
-| [95884 The Offering Stone](https://www.wowhead.com/forever/quest=95884) | Deferred | Missing or multiple finish providers need completion reconciliation. |
+| [95883 The Tortured Soul](https://www.wowhead.com/forever/quest=95883) | Deferred | Missing or multiple start providers need acquisition reconciliation. |
+| [95884 The Offering Stone](https://www.wowhead.com/forever/quest=95884) | Added | Added in Silverpine Forest. Reconciled Questie and cached Wowhead record. |
 | [95885 The Offering of Blood](https://www.wowhead.com/forever/quest=95885) | Deferred | No structured objectives or independently verified objective-free completion. |
 | [95981 Watching the Roads](https://www.wowhead.com/forever/quest=95981) | Added | Added in Silverpine Forest. Reconciled Questie and cached Wowhead record. |
 | [96204 The Windshaper's Wrath](https://www.wowhead.com/forever/quest=96204) | Deferred | No structured objectives or independently verified objective-free completion. Wowhead prerequisite references require source reconciliation. |
@@ -30,7 +30,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 91859: A Curious Pair
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=91859), fetched 2026-09-25T06:00:46+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 248840]`; finishers: NPC 259611; minimum level 18.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 248840]]`; finishers: NPC 259611; minimum level 18.
 - Objective source text: ["Speak with Deathguard Baldren about the mysterious Earthen Ring travelers who recently passed through The Sepulcher."].
 - Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -39,7 +39,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 91862: Lumina Windsinger
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=91862), fetched 2026-09-25T06:01:01+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 248755]`; finishers: NPC 248755; minimum level 18.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 248755]]`; finishers: NPC 248755; minimum level 18.
 - Objective source text: ["Retrieve the Fenris Isle Key from the Rot Hide Gnolls and use it to free Lumina Windsinger."].
 - Structured objective groups: `{"3": [[267412]]}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -48,7 +48,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 91920: Wild Eyes
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=91920), fetched 2026-09-25T06:01:42+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 1951]`; finishers: NPC 1937; minimum level 10.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 1951]]`; finishers: NPC 1937; minimum level 10.
 - Objective source text: ["Gather 3 murloc eyes and bring them to Apothecary Renferrel at the Sepulcher."].
 - Structured objective groups: `{"3": [[730]]}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[[4597, 1], [4596, 1]]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -57,7 +57,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 91921: Return to Quinn (Again)
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=91921), fetched 2026-09-25T06:01:47+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 1937]`; finishers: NPC 1951; minimum level 10.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 1937]]`; finishers: NPC 1951; minimum level 10.
 - Objective source text: ["Bring Quinn's potion to Quinn Yorick at the Ivar Patch, north of the Sepulcher."].
 - Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -66,7 +66,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 94505: Call of Water
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=94505), fetched 2026-09-25T06:34:09+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 5895]`; finishers: NPC 258043; minimum level 20.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 5895]]`; finishers: NPC 258043; minimum level 20.
 - Objective source text: ["Bring the Shard of Water to Norric Lochthane in Loch Modan."].
 - Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[[5177, 1]]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -75,16 +75,26 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 95111: An Underrated Talent
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=95111), fetched 2026-09-25T06:38:31+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 248840]`; finishers: NPC 3539; minimum level 20.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 248840]]`; finishers: NPC 3539; minimum level 20.
 - Objective source text: ["Speak with Ott and ask him to forge your blade."].
 - Structured objective groups: `{}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
 - Starting-item and provided-item IDs are distinct fields. Provided item: `268192`.
 
+### 95884: The Offering Stone
+
+- [Wowhead quest](https://www.wowhead.com/forever/quest=95884), fetched 2026-09-25T06:41:32+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['i', 271343]]`; finishers: Object 645153; minimum level 20.
+- Completion provider filled from cached Wowhead quest-end infobox: [[], [645153]].
+- Objective source text: ["Find the Offering Stone in Beren's Peril in Silverpine Forest."].
+- Structured objective groups: `{"3": [[271343]]}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
+- Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
+- Starting-item and provided-item IDs are distinct fields. Provided item: `none`.
+
 ### 95981: Watching the Roads
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=95981), fetched 2026-09-25T06:41:42+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 2121]`; finishers: NPC 2121; minimum level 10.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 2121]]`; finishers: NPC 2121; minimum level 10.
 - Objective source text: ["Slay 8 Dalaran Wizards and 8 Dalaran Watchers for Shadow Priest Allister in the Sepulcher."].
 - Structured objective groups: `[[[1888], [1889]]]`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[[281265, 1]]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -93,7 +103,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 98298: Arugal's Folly
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=98298), fetched 2026-09-25T07:02:10+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 1938]`; finishers: NPC 1938; minimum level 9.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 1938]]`; finishers: NPC 1938; minimum level 9.
 - Objective source text: ["Bring 6 Worgen Bits to Dalar Dawnweaver in The Sepulcher."].
 - Structured objective groups: `{"3": [[280375]]}`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[[281315, 1]]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.
@@ -102,7 +112,7 @@ The original audit files remain separate from this phase. Questie is the primary
 ### 98299: Stop the Spread
 
 - [Wowhead quest](https://www.wowhead.com/forever/quest=98299), fetched 2026-09-25T07:02:15+00:00. The cached catalog identifies Forever content; rewards were read from its fixed and choice lists.
-- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Provider `['n', 1938]`; finishers: NPC 1938; minimum level 9.
+- Questie: [effective static provider registry](https://github.com/Questie/QuestieDB/blob/cd4ac42468061cad65db3bf39163e5a2375e21f4/src/config.lua), including generated base, traces, and authored Forever corrections. Providers `[['n', 1938]]`; finishers: NPC 1938; minimum level 9.
 - Objective source text: ["Slay 5 Sickly Refugees and 5 Haggard Refugees for Dalar Dawnweaver in The Sepulcher."].
 - Structured objective groups: `[[[2053], [2054]]]`. An absent group with an explicit dialogue/delivery instruction is represented by the quest itself, following existing ATT dialogue-quest conventions.
 - Fixed item rewards: `[]`; choice item rewards: `[]`. Reward counts are retained here; ATT catalogs each reward item using its existing quest-reward convention.

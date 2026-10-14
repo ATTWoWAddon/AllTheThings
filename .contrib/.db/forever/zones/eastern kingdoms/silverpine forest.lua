@@ -113,6 +113,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 				},
 			}),
+			q(95884, {	-- The Offering Stone
+				provider = { "i", 271343 },	-- Note Scrap
+				coord = { 57.12, 71.02, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				lvl = 20,
+				groups = {
+					objective(1, {	-- Note Scrap
+						provider = { "i", 271343 },
+					}),
+				},
+			}),
 		}),
 	},
 });
