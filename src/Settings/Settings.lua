@@ -1555,10 +1555,10 @@ settings.Helpers = {
 }
 
 local OptionsPages, AddOnCategoryID, RootCategoryID = {}, appName, nil;
-local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
+local OpenOptionsCategory = app.WOWAPI.OpenOptionsCategory;
 settings.Open = function(self)
 	if InCombatLockdown() then return end
-	openToCategory(RootCategoryID or AddOnCategoryID)
+	OpenOptionsCategory(RootCategoryID or AddOnCategoryID)
 end
 settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory)
 	--- Settings page frame registered as an options category or subcategory.

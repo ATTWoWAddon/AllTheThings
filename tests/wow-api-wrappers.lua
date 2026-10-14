@@ -239,4 +239,19 @@ do
 	equal(nativeCombat.CombatLogGetCurrentEventInfo(), "native")
 	equal(initialize({}, 11509).CombatLogGetCurrentEventInfo, false, "Classic without public payload remains unavailable")
 end
+
+do
+	local opened;
+	local modern = initialize({
+		Settings = {OpenToCategory = function(id) opened = id end},
+		InterfaceOptionsFrame_OpenToCategory = function() error("legacy options API selected despite Settings") end,
+	});
+	modern.OpenOptionsCategory(17);
+	equal(opened, 17, "modern options category ID");
+	local legacy = initialize({
+		InterfaceOptionsFrame_OpenToCategory = function(id) opened = id end,
+	}, 11509);
+	legacy.OpenOptionsCategory("ATT");
+	equal(opened, "ATT", "legacy options category name");
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
