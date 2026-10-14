@@ -59,7 +59,7 @@ if app.GameBuildVersion >= 110200 then
 		end
 	end
 else
-	local IsPlayerSpell = IsPlayerSpell;
+	local IsPlayerSpell = app.WOWAPI.IsPlayerSpell;
 	IsSpellKnownHelper = function(spellID)
 		if IsPlayerSpell(spellID)
 			or IsSpellKnown(spellID)

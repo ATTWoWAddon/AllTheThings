@@ -364,4 +364,14 @@ do
 	end
 end
 
+-- Player spell knowledge includes the active override, matching IsPlayerSpell.
+do
+	local C_SpellBook = C_SpellBook;
+	local SpellBank = Enum and Enum.SpellBookSpellBank;
+	AssignAPIWrapper("IsPlayerSpell",
+		C_SpellBook and C_SpellBook.IsSpellKnown and SpellBank and
+		function(spellID) return C_SpellBook.IsSpellKnown(spellID, SpellBank.Player); end,
+		IsPlayerSpell, app.ReturnFalse or function() return false; end);
+end
+
 ---@diagnostic enable: deprecated
