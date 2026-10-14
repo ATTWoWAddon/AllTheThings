@@ -428,4 +428,20 @@ do
 		return category, category.ID;
 	end;
 end
+
+do
+	local SetLegacyDropdownWidth = UIDropDownMenu_SetWidth;
+
+	---@param name string|nil Global frame name.
+	---@param parent Frame Parent frame.
+	---@param width number Width of the displayed selection.
+	---@return Frame dropdown
+	---@return number leftOffset Horizontal offset aligning the selection with its label.
+	lib.CreateDropdown = function(name, parent, width)
+		local dropdown = CreateFrame("Frame", name, parent, "UIDropDownMenuTemplate");
+		SetLegacyDropdownWidth(dropdown, width);
+		return dropdown, -15;
+	end;
+
+end
 ---@diagnostic enable: deprecated
