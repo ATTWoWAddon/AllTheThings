@@ -236,4 +236,8 @@ AssignAPIWrapper("GetPlayerAuraBySpellID",
 local C_AddOns = C_AddOns;
 AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, GetAddOnMetadata);
 
+-- Battle.net and chat UI APIs
+local C_BattleNet = C_BattleNet;
+lib.SendGameData = false; -- Optional when the client has no game-data transport.
+AssignAPIWrapper("SendGameData", C_BattleNet and C_BattleNet.SendGameData, BNSendGameData);
 ---@diagnostic enable: deprecated
