@@ -431,6 +431,7 @@ do
 	local SetLegacyDropdownText = UIDropDownMenu_SetText;
 	local CreateLegacyDropdownInfo = UIDropDownMenu_CreateInfo;
 	local AddLegacyDropdownButton = UIDropDownMenu_AddButton;
+	local InitializeLegacyDropdown = UIDropDownMenu_Initialize;
 
 	---@param name string|nil Global frame name.
 	---@param parent Frame Parent frame.
@@ -438,6 +439,12 @@ do
 	---@return Frame dropdown
 	---@return number leftOffset Horizontal offset aligning the selection with its label.
 	lib.CreateDropdown = function(name, parent, width)
+		if DropdownButtonMixin and DropdownButtonMixin.SetupMenu and WowStyle1DropdownMixin then
+			local dropdown = CreateFrame("DropdownButton", name, parent, "WowStyle1DropdownTemplate");
+			dropdown.__ATTModernDropdown = true;
+			dropdown:SetWidth(width);
+			return dropdown, 0;
+		end
 		local dropdown = CreateFrame("Frame", name, parent, "UIDropDownMenuTemplate");
 		SetLegacyDropdownWidth(dropdown, width);
 		return dropdown, -15;
@@ -456,7 +463,31 @@ do
 		end
 	end;
 
-	lib.CreateDropdownInfo = CreateLegacyDropdownInfo;
-	lib.AddDropdownButton = AddLegacyDropdownButton;
+	---@param dropdown Frame
+	---@param getOptions fun():string[] Current choices, in display order.
+	---@param isSelected fun(value:string):boolean
+	---@param onSelect fun(value:string)
+	lib.SetupDropdownMenu = function(dropdown, getOptions, isSelected, onSelect)
+		if dropdown.__ATTModernDropdown then
+			dropdown:SetupMenu(function(_, rootDescription)
+				for _, value in ipairs(getOptions()) do
+					rootDescription:CreateRadio(value, isSelected, onSelect, value);
+				end
+			end);
+		else
+			local function OnClick(_, value)
+				onSelect(value);
+			end
+			InitializeLegacyDropdown(dropdown, function()
+				for _, value in ipairs(getOptions()) do
+					local info = CreateLegacyDropdownInfo();
+					info.text, info.arg1 = value, value;
+					info.checked = isSelected(value);
+					info.func = OnClick;
+					AddLegacyDropdownButton(info);
+				end
+			end);
+		end
+	end;
 end
 ---@diagnostic enable: deprecated
