@@ -441,6 +441,7 @@ do
 	local SetLegacyDropdownWidth = UIDropDownMenu_SetWidth;
 	local SetLegacyDropdownText = UIDropDownMenu_SetText;
 	local CreateLegacyDropdownInfo = UIDropDownMenu_CreateInfo;
+	local AddLegacyDropdownButton = UIDropDownMenu_AddButton;
 
 	---@param name string|nil Global frame name.
 	---@param parent Frame Parent frame.
@@ -467,5 +468,6 @@ do
 	end;
 
 	lib.CreateDropdownInfo = CreateLegacyDropdownInfo;
+	lib.AddDropdownButton = AddLegacyDropdownButton;
 end
 ---@diagnostic enable: deprecated
