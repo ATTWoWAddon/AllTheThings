@@ -175,7 +175,7 @@ function WPDropDownDemo_Menu(frame, level, menuList)
 	end
 	table.sort(soundPacks);
 
-	local info = UIDropDownMenu_CreateInfo()
+	local info = WOWAPI.CreateDropdownInfo()
 	info.func = WPDropDownDemo_OnClick
 	for i, name in ipairs(soundPacks) do
 		info.text, info.arg1 = name, name
