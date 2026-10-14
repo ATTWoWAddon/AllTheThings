@@ -291,4 +291,23 @@ AssignAPIWrapper("SecondsToTime",
 	end,
 	SecondsToTime);
 
+-- Housing catalog data switched from compound entryID and quantity fields
+-- to recordID, entryType, totalNumStored and totalNumPlaced in 12.0.5.
+-- Normalize older clients without modifying Blizzard-owned entry tables.
+lib.NormalizeHousingCatalogEntryInfo = function(info)
+	if not info or info.recordID ~= nil or not info.entryID then return info; end
+	local normalized = {};
+	for key, value in pairs(info) do normalized[key] = value; end
+	normalized.recordID = info.entryID.recordID;
+	normalized.entryType = info.entryID.entryType;
+	normalized.totalNumStored = info.totalNumStored or info.quantity or 0;
+	normalized.totalNumPlaced = info.totalNumPlaced or info.numPlaced or 0;
+	return normalized;
+end;
+local C_HousingCatalog = C_HousingCatalog;
+if C_HousingCatalog and C_HousingCatalog.GetCatalogEntryInfo then
+	lib.GetHousingCatalogEntryInfo = function(entryID)
+		return lib.NormalizeHousingCatalogEntryInfo(C_HousingCatalog.GetCatalogEntryInfo(entryID));
+	end;
+end
 ---@diagnostic enable: deprecated

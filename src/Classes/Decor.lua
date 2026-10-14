@@ -12,8 +12,10 @@ if not C_HousingCatalog or app.GameBuildVersion < 110000 then
 	return
 end
 
-local C_HousingCatalog_GetCatalogEntryInfo,C_HouseEditor_IsHouseEditorActive,C_TooltipInfo_GetOwnedItemByID
-	= C_HousingCatalog.GetCatalogEntryInfo,C_HouseEditor.IsHouseEditorActive,C_TooltipInfo.GetOwnedItemByID
+local GetHousingCatalogEntryInfo = app.WOWAPI.GetHousingCatalogEntryInfo
+local NormalizeHousingCatalogEntryInfo = app.WOWAPI.NormalizeHousingCatalogEntryInfo
+local C_HouseEditor_IsHouseEditorActive,C_TooltipInfo_GetOwnedItemByID
+	= C_HouseEditor.IsHouseEditorActive,C_TooltipInfo.GetOwnedItemByID
 
 -- TODO: test other APIs
 -- this is non-parameterized, returns the max decor that can be owned
@@ -38,7 +40,7 @@ local LineTypeNone = Enum.TooltipDataLineType.None
 local function HowManyDecor(entryInfo, checkItemFallback)
 	if not entryInfo then return 0 end
 
-	local sum = (entryInfo.numPlaced or 0) + (entryInfo.quantity or 0) + (entryInfo.remainingRedeemable or 0)
+	local sum = (entryInfo.totalNumPlaced or 0) + (entryInfo.totalNumStored or 0) + (entryInfo.remainingRedeemable or 0)
 	-- if sum == 0 then
 	-- 	app.PrintDebug("NOT OWNED DECOR")
 	-- 	app.PrintTable(entryInfo)
@@ -79,13 +81,13 @@ do
 			entry = entries[i]
 			-- only checking for new collected decor because Blizzard
 			if not IsAccountCached(CACHE, entry.recordID) then
-				local info = C_HousingCatalog_GetCatalogEntryInfo(entry)
-				if info and info.entryID.entryType == DecorType then
+				local info = GetHousingCatalogEntryInfo(entry)
+				if info and info.entryType == DecorType then
 					local qty = HowManyDecor(info)
 
 					-- qty can sometimes be 4294967295
 					if qty > 0 and qty < 1000000 then
-						-- app.PrintDebug("Decor Collected",entry.recordID,qty,info.numPlaced,info.numStored,info.quantity)
+						-- app.PrintDebug("Decor Collected",entry.recordID,qty,info.totalNumPlaced,info.totalNumStored)
 						saved[entry.recordID] = true
 						added[#added + 1] = entry
 					-- still ignoring removing destroyed decor from cache since it continues to be inconsistent from Blizzard
@@ -123,13 +125,10 @@ do
 
 		if not entryFrame then return end
 
-		local entryInfo = entryFrame.entryInfo
+		local entryInfo = NormalizeHousingCatalogEntryInfo(entryFrame.entryInfo)
 		if not entryInfo then return end
 
-		local entryID = entryInfo.entryID
-		if not entryID then return end
-
-		local decorID = entryID.recordID
+		local decorID = entryInfo.recordID
 		if not decorID then return end
 
 		app.SearchAndOpen("decor:"..decorID)
@@ -145,13 +144,10 @@ do
 
 		if not entryFrame then return end
 
-		local entryInfo = entryFrame.entryInfo
+		local entryInfo = NormalizeHousingCatalogEntryInfo(entryFrame.entryInfo)
 		if not entryInfo then return end
 
-		local entryID = entryInfo.entryID
-		if not entryID then return end
-
-		local decorID = entryID.recordID
+		local decorID = entryInfo.recordID
 		if not decorID then return end
 
 		-- hopefully a temp workaround until Blizzard makes their APIs work correctly
