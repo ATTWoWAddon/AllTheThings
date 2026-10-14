@@ -490,8 +490,9 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 end
 
 -- Specialization Requirements
-local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
-	= GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+local GetNumSpecializations, GetSpecializationInfoByID
+	= GetNumSpecializations, GetSpecializationInfoByID
+local GetSpecializationInfo = app.WOWAPI.GetSpecializationInfo;
 -- Filters a specs table to only those which the current Character class can choose
 local function FilterSpecs(specs)
 	if specs and #specs > 0 then

@@ -118,4 +118,13 @@ do
 	local nativeTimes = initialize({SecondsToTime = function(seconds) return "legacy " .. seconds end}, 11509)
 	equal(nativeTimes.SecondsToTime(65), "legacy 65")
 end
+
+do
+	local modernInfo = function() return 123 end
+	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
+	equal(modern.GetSpecializationInfo, modernInfo)
+	local nativeInfo = function() return 321 end
+	equal(initialize({GetSpecializationInfo = nativeInfo}, 50504).GetSpecializationInfo, nativeInfo)
+	equal(initialize({}).GetSpecializationInfo, false, "missing specialization data remains unavailable")
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
