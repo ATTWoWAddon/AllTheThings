@@ -13,6 +13,7 @@ if not C_HousingCatalog or app.GameBuildVersion < 110000 then
 end
 
 local GetHousingCatalogEntryInfo = app.WOWAPI.GetHousingCatalogEntryInfo
+local CreateHousingCatalogSearcher = app.WOWAPI.CreateHousingCatalogSearcher
 local NormalizeHousingCatalogEntryInfo = app.WOWAPI.NormalizeHousingCatalogEntryInfo
 local C_HouseEditor_IsHouseEditorActive,C_TooltipInfo_GetOwnedItemByID
 	= C_HouseEditor.IsHouseEditorActive,C_TooltipInfo.GetOwnedItemByID
@@ -103,7 +104,7 @@ do
 	end
 	local function RefreshDecorCollection()
 		if not HousingSearcher then
-			HousingSearcher = C_HousingCatalog.CreateCatalogSearcher()
+			HousingSearcher = CreateHousingCatalogSearcher()
 		end
 		HousingSearcher:SetAutoUpdateOnParamChanges(false)
 		HousingSearcher:SetResultsUpdatedCallback(HousingSearcherResultsCallback)

@@ -310,4 +310,8 @@ if C_HousingCatalog and C_HousingCatalog.GetCatalogEntryInfo then
 		return lib.NormalizeHousingCatalogEntryInfo(C_HousingCatalog.GetCatalogEntryInfo(entryID));
 	end;
 end
+if C_HousingCatalog and C_HousingCatalog.CreateCatalogSearcher then
+	lib.CreateHousingCatalogSearcher = C_HousingCatalog.CreateCatalogSearcher;
+end
+
 ---@diagnostic enable: deprecated
