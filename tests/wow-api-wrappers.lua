@@ -170,6 +170,21 @@ do
 end
 
 do
+	-- Player spell knowledge selects the explicit Player bank.
+	local knownBank
+	local spells = initialize({
+		Enum = {SpellBookSpellBank = {Player = 0, Pet = 1}},
+		C_SpellBook = {
+			IsSpellKnown = function(id, bank) knownBank = bank; return id == 123 end,
+		},
+		IsPlayerSpell = rejectLegacy,
+	})
+	equal(spells.IsPlayerSpell(123), true)
+	equal(knownBank, 0, "player bank explicitly selected")
+	equal(spells.IsPlayerSpell(999), false)
+end
+
+do
 	local modernInfo = function() return 123 end
 	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
 	equal(modern.GetSpecializationInfo, modernInfo)
