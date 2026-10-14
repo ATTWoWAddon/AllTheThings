@@ -213,8 +213,7 @@ AssignAPIWrapper("GetSpellName",
 -- GetSpellRank was removed in 11.0
 AssignAPIWrapper("GetSpellRank", GetSpellRank, app.EmptyFunction)
 
--- These two functions behave drastically-differently. They are not a direct swap without proper handling
--- AssignAPIWrapper("GetSpellInfo", C_Spell and C_Spell.GetSpellInfo, GetSpellInfo)
+-- GetSpellInfo below adapts the modern result to the legacy tuple and spellbook-index forms.
 
 -- SpellBook APIs
 local C_SpellBook = C_SpellBook
@@ -312,6 +311,44 @@ if C_HousingCatalog and C_HousingCatalog.GetCatalogEntryInfo then
 end
 if C_HousingCatalog and C_HousingCatalog.CreateCatalogSearcher then
 	lib.CreateHousingCatalogSearcher = C_HousingCatalog.CreateCatalogSearcher;
+end
+
+-- Spell information retains the legacy tuple and spellbook-index forms.
+do
+	local NativeGetSpellInfo = GetSpellInfo;
+	local C_Spell = C_Spell;
+	local C_SpellBook = C_SpellBook;
+	local SpellBank = Enum and Enum.SpellBookSpellBank;
+	if C_Spell and C_Spell.GetSpellInfo then
+		lib.GetSpellInfo = function(spellIdentifier, bookTypeOrRank)
+			local subtext;
+			if bookTypeOrRank ~= nil then
+				-- Classic's native API preserves spellbook indexing and rank lookup.
+				if NativeGetSpellInfo then
+					return NativeGetSpellInfo(spellIdentifier, bookTypeOrRank);
+				end
+				if bookTypeOrRank == "spell" or bookTypeOrRank == "pet" then
+					if not C_SpellBook or not C_SpellBook.GetSpellBookItemInfo or not SpellBank then return; end
+					local bank = bookTypeOrRank == "pet" and SpellBank.Pet or SpellBank.Player;
+					local item = C_SpellBook.GetSpellBookItemInfo(spellIdentifier, bank);
+					if not item or not item.spellID then return; end
+					spellIdentifier = item.spellID;
+					subtext = item.subName;
+				elseif type(spellIdentifier) == "string" and bookTypeOrRank ~= "" then
+					spellIdentifier = spellIdentifier .. "(" .. bookTypeOrRank .. ")";
+				end
+			end
+			local info = C_Spell.GetSpellInfo(spellIdentifier);
+			if not info then return; end
+			if subtext == nil and C_Spell.GetSpellSubtext then
+				subtext = C_Spell.GetSpellSubtext(spellIdentifier);
+			end
+			return info.name, subtext or "", info.iconID, info.castTime,
+				info.minRange, info.maxRange, info.spellID, info.originalIconID;
+		end;
+	else
+		AssignAPIWrapper("GetSpellInfo", NativeGetSpellInfo, app.EmptyFunction);
+	end
 end
 
 ---@diagnostic enable: deprecated

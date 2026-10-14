@@ -237,7 +237,7 @@ do
 		if app.IsClassic and GetSpellTabInfo then
 			local lastSpellName, currentSpellRank, lastSpellRank = "", 1, 1;
 			local GetSpellRank = app.WOWAPI.GetSpellRank
-			local GetSpellInfo = GetSpellInfo
+			local GetSpellInfo = app.WOWAPI.GetSpellInfo
 			for spellTabIndex=1,GetNumSpellTabs() do
 				local offset, numSlots = select(3, GetSpellTabInfo(spellTabIndex));
 				for spellIndex=offset+1,offset+numSlots do
