@@ -106,7 +106,7 @@ FUNCTION_TEMPLATES = {
 			local n = _.WOWAPI.GetSpellName(s) or RETRIEVING_DATA
 			local remaining = (start and start > 0 and duration) and (start + duration - GetTime()) or 0
 			if remaining > 0 then
-				tooltipInfo[#tooltipInfo+1] = { left = n, right = SecondsToTime(remaining), r = 1, g = 0.5, b = 0.5 }
+				tooltipInfo[#tooltipInfo+1] = { left = n, right = _.WOWAPI.SecondsToTime(remaining), r = 1, g = 0.5, b = 0.5 }
 			else
 				tooltipInfo[#tooltipInfo+1] = { left = n, right = "Ready", r = 0.5, g = 1, b = 0.5 }
 			end
