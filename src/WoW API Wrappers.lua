@@ -428,6 +428,7 @@ end
 
 do
 	local SetLegacyDropdownWidth = UIDropDownMenu_SetWidth;
+	local SetLegacyDropdownText = UIDropDownMenu_SetText;
 
 	---@param name string|nil Global frame name.
 	---@param parent Frame Parent frame.
@@ -438,6 +439,19 @@ do
 		local dropdown = CreateFrame("Frame", name, parent, "UIDropDownMenuTemplate");
 		SetLegacyDropdownWidth(dropdown, width);
 		return dropdown, -15;
+	end;
+
+	lib.SetDropdownText = function(dropdown, text)
+		if dropdown.__ATTModernDropdown then
+			-- The active value can change outside the menu, including when packs
+			-- are added or reloaded. Keep its text and an open menu in sync.
+			dropdown:OverrideText(text);
+			if dropdown:IsMenuOpen() then
+				dropdown:GenerateMenu();
+			end
+		else
+			SetLegacyDropdownText(dropdown, text);
+		end
 	end;
 
 end

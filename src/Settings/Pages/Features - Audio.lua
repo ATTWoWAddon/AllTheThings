@@ -157,13 +157,13 @@ dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", dropdownLeftO
 
 -- Set the dropdown's current text to the active soundpack
 app.Audio:RegisterForSoundPackEvents(function(event, soundPack)
-	UIDropDownMenu_SetText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
+	WOWAPI.SetDropdownText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
 end)
 
 -- Change the active soundpack based on user selection
 local function WPDropDownDemo_OnClick(self, arg1)
 	app.Audio:ActivateSoundPack(arg1)
-	UIDropDownMenu_SetText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
+	WOWAPI.SetDropdownText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
 	app.Audio:PlayFanfare()
 end
 
