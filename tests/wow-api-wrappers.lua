@@ -80,4 +80,25 @@ do
 	equal(first, "chat")
 	equal(initialize({}).WrapDisplayTimePlayed(function() end), false, "missing chat entry point")
 end
+
+do
+	local api = initialize({
+		C_MerchantFrame = {GetItemInfo = function(index) equal(index, 3); return sentinel end},
+		GetMerchantItemInfo = rejectLegacy,
+	})
+	equal(api.GetMerchantItemInfo(3), sentinel, "modern merchant result identity")
+	-- The legacy branch normalizes native Classic merchant tuples.
+	local legacy = initialize({
+		GetMerchantItemInfo = function(index)
+			equal(index, 2)
+			return "Item", 10, 250, 5, -1, true, false, true
+		end,
+	}, 11509)
+	local item = legacy.GetMerchantItemInfo(2)
+	equal(item.price, 250)
+	equal(item.stackCount, 5)
+	equal(item.numAvailable, -1)
+	equal(item.isUsable, false)
+	equal(item.hasExtendedCost, true)
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")

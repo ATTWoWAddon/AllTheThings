@@ -22,6 +22,7 @@ local issecretvalue = app.WOWAPI.issecretvalue;
 local GetItemLinkByGUID = app.WOWAPI.GetItemLinkByGUID;
 local GetMerchantNumItems = app.WOWAPI.GetMerchantNumItems;
 local GetMerchantItemLink = app.WOWAPI.GetMerchantItemLink;
+local GetMerchantItemInfo = app.WOWAPI.GetMerchantItemInfo;
 
 local CloneArray, CloneClassInstance, GetRelativeValue, MergeObject
 	= app.CloneArray, app.CloneClassInstance, app.GetRelativeValue, app.MergeObject;
@@ -804,16 +805,6 @@ app:CreateWindow("Debugger", {
 			end
 		end);
 		
-		local GetMerchantItemInfoX = C_MerchantFrame.GetItemInfo;
-		if not GetMerchantItemInfoX then
-			GetMerchantItemInfoX = function(i)
-				local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
-				return {
-					price = cost,
-					hasExtendedCost = extendedCost
-				};
-			end
-		end
 		local function LoadMerchant(self)
 			local guid = UnitGUID("npc");
 			local ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
@@ -833,7 +824,7 @@ app:CreateWindow("Debugger", {
 				for i=1,numItems,1 do
 					local link = GetMerchantItemLink(i);
 					if link then
-						local merchItemInfo = GetMerchantItemInfoX(i);
+						local merchItemInfo = GetMerchantItemInfo(i);
 						local cost = merchItemInfo.price;
 						if merchItemInfo.hasExtendedCost then
 							cost = {};
