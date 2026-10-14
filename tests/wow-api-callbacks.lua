@@ -101,4 +101,79 @@ do
 	achievementCallback(achievementTarget)
 	check(#auraQueries == 0, "Soul of Iron collectible guard preserved")
 end
+
+do
+	-- WoW adds a split method to strings; emulate that contract for the death GUID.
+	local function combatAPI(globals, interface)
+		local env = setmetatable(globals or {}, {__index = _G})
+		env._G = env
+		env.GetBuildInfo = function() return "fixture", "fixture", "fixture", interface end
+		local app = {print = function() end}
+		local module = assert(loadstring(read("src/WoW API Wrappers.lua"), "@actual-combat-wrapper"))
+		setfenv(module, env)("AllTheThings", app)
+		return app.WOWAPI
+	end
+	local originalSplit = string.split
+	string.split = function(separator, text)
+		local values = {}
+		for value in (text .. separator):gmatch("(.-)" .. separator) do values[#values + 1] = value end
+		return unpack(values)
+	end
+	for _, path in ipairs({
+		".contrib/.db/standard/02 - Outdoor Zones/02 Eastern Kingdoms/Stranglethorn Vale.lua",
+		".contrib/.db/forever/zones/eastern kingdoms/stranglethorn vale.lua",
+	}) do
+		local source = read(path)
+		local declaration = assert(source:match("local OnTooltipForBloodsail = (.-);%s*local OnTooltipForBootyBay"))
+		local created, registered, getterCalls, timers = 0, 0, 0, {}
+		local frame
+		local deathGUID = "Creature-0-0-0-0-9179"
+		local tooltipEnv = {
+			HATED = -42000, tinsert = table.insert, UIParent = {},
+			DBM = { CreatePizzaTimer = function(self, seconds, label) timers[#timers + 1] = { seconds, label } end },
+			_ = { WOWAPI = combatAPI({}, 16001), Modules = { FactionData = { AddReputationTooltipInfo = function() return 5, 10 end } } },
+			CreateFrame = function()
+				created = created + 1
+				frame = {
+					SetScript = function(self, event, handler) self[event] = handler end,
+					RegisterEvent = function(self, event) check(event == "COMBAT_LOG_EVENT_UNFILTERED", "timer event retained"); registered = registered + 1 end,
+					SetPoint = function() end, SetSize = function() end, Hide = function() end,
+				}
+				return frame
+			end,
+		}
+		local code = compile(declaration, tooltipEnv)
+		local callback = compile(code, tooltipEnv)
+		for _, interface in ipairs({11509, 20506, 50504, 120105, 16001}) do
+			tooltipEnv._.WOWAPI = combatAPI({
+				C_CombatLogSecure = {GetCurrentEventInfo = function() error("SecureOnly API accessed") end},
+			}, interface)
+			check(tooltipEnv._.WOWAPI.CombatLogGetCurrentEventInfo == false, "public payload unavailable: " .. interface)
+			callback({ collectible = true, reputation = 30000 }, {})
+			check(created == 0 and registered == 0, "public combat-log absence skips timer: " .. path)
+		end
+		check(not pcall(function() return tooltipEnv._.WOWAPI.UnregisteredTestAPI end), "unknown wrapper still throws")
+		tooltipEnv._.WOWAPI = combatAPI({
+			C_CombatLog = {GetCurrentEventInfo = function()
+				getterCalls = getterCalls + 1
+				return 0, "UNIT_DIED", false, "source", "sourceName", 0, 0, deathGUID
+			end},
+			CombatLogGetCurrentEventInfo = function() error("legacy combat API selected despite modern API") end,
+		}, 11509)
+		local bloodsail = { collectible = true, reputation = 30000 }
+		callback(bloodsail, {})
+		check(created == 1 and registered == 1, "available Classic combat log registers one timer frame: " .. path)
+		callback(bloodsail, {})
+		check(created == 1, "repeated tooltip avoids duplicate listener: " .. path)
+		frame:OnEvent("COMBAT_LOG_EVENT_UNFILTERED")
+		check(getterCalls == 1 and #timers == 2 and timers[1][1] == 320 and timers[2][1] == 510, "Jazzrik death preserves both respawn timers: " .. path)
+		deathGUID = "Creature-0-0-0-0-12345"
+		frame:OnEvent("COMBAT_LOG_EVENT_UNFILTERED")
+		check(#timers == 2, "another NPC does not create Jazzrik timers: " .. path)
+		tooltipEnv.DBM = nil
+		callback({ collectible = true, reputation = 30000 }, {})
+		check(created == 1, "DBM absence skips listener: " .. path)
+	end
+	string.split = originalSplit
+end
 print("WoW API callback checks passed: " .. checks)
