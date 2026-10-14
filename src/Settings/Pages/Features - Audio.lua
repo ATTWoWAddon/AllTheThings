@@ -151,9 +151,9 @@ local textSoundpack = child:CreateTextLabel("|cffFFFFFF"..L.SOUNDPACK)
 textSoundpack:SetPoint("LEFT", headerCelebrations, 0, 0)
 textSoundpack:SetPoint("TOP", checkboxPlayDeathSound, "BOTTOM", 0, -8)
 
-local dropdownSoundpack = CreateFrame("Frame", "dropdownSoundpack", child, "UIDropDownMenuTemplate")
-dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", -15, 0)
-UIDropDownMenu_SetWidth(dropdownSoundpack, 270) -- Use in place of dropDown:SetWidth
+local WOWAPI = app.WOWAPI
+local dropdownSoundpack, dropdownLeftOffset = WOWAPI.CreateDropdown("dropdownSoundpack", child, 270)
+dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", dropdownLeftOffset, 0)
 
 -- Set the dropdown's current text to the active soundpack
 app.Audio:RegisterForSoundPackEvents(function(event, soundPack)
