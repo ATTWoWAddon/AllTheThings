@@ -1141,7 +1141,6 @@ local InformationTypes = {
 	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
 
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
-	CreateInformationType("artifactID", { text = L.ARTIFACT_ID }),
 	CreateInformationType("azeriteessenceID", { text = L.AZERITE_ESSENCE_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
@@ -1497,6 +1496,9 @@ local InformationTypes = {
 		end,
 	}),
 };
+if app.GameBuildVersion >= 70000 then
+	tinsert(InformationTypes, CreateInformationType("artifactID", { text = L.ARTIFACT_ID }));
+end
 settings.InformationTypes = InformationTypes;
 
 --[[

@@ -191,7 +191,7 @@ app.DetermineItemLink = function(sourceID)
 	if found and checkID == sourceID then return link; end
 
 	-- Artifact quality Items, try making an Artifact-style link....
-	if sourceInfo.quality == 6 then
+	if app.GameBuildVersion >= 70000 and sourceInfo.quality == 6 then
 		-- Main hand first
 		-- itemFormat = "item:"..itemID.."::::::::"..app.Level..":::9::1:8:%d:";
 		itemFormat = "item:"..itemID.."::::::::"..app.Level..":::::1:8:%d:";
