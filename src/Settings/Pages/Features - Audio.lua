@@ -179,7 +179,7 @@ function WPDropDownDemo_Menu(frame, level, menuList)
 	info.func = WPDropDownDemo_OnClick
 	for i, name in ipairs(soundPacks) do
 		info.text, info.arg1 = name, name
-		UIDropDownMenu_AddButton(info)
+		WOWAPI.AddDropdownButton(info)
 	end
 end
 UIDropDownMenu_Initialize(dropdownSoundpack, WPDropDownDemo_Menu)
