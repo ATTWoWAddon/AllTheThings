@@ -1556,6 +1556,7 @@ settings.Helpers = {
 
 local OptionsPages, AddOnCategoryID, RootCategoryID = {}, appName, nil;
 local OpenOptionsCategory = app.WOWAPI.OpenOptionsCategory;
+local RegisterOptionsCategory = app.WOWAPI.RegisterOptionsCategory;
 settings.Open = function(self)
 	if InCombatLockdown() then return end
 	OpenOptionsCategory(RootCategoryID or AddOnCategoryID)
@@ -1570,23 +1571,21 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	self:RegisterObject(subcategory);
 	subcategory:SetAllPoints();
 
-	if Settings and Settings.RegisterCanvasLayoutCategory then
-		local category;
-		if text == appName then
-			category = Settings.RegisterCanvasLayoutCategory(subcategory, text)
-			Settings.RegisterAddOnCategory(category);
-			AddOnCategoryID = category.ID;
-		else
-			parentCategory = OptionsPages[parentCategory or appName];
-			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory.category, subcategory, text)
-			if isRootCategory then RootCategoryID = category.ID; end
-		end
+	local parentName;
+	if text ~= appName then
+		parentName = parentCategory or appName;
+		parentCategory = OptionsPages[parentName];
+	end
+	local category, categoryID = RegisterOptionsCategory(subcategory, text,
+		parentName and parentCategory.category, parentName);
+	if text == appName then
+		AddOnCategoryID = categoryID;
+	elseif isRootCategory and category then
+		RootCategoryID = categoryID;
+	end
+	if category then
 		subcategory:Hide();
 		subcategory.category = category;
-	else
-		subcategory.name = text;
-		if text ~= appName then subcategory.parent = parentCategory or appName; end
-		InterfaceOptions_AddCategory(subcategory);
 	end
 	OptionsPages[text] = subcategory;
 

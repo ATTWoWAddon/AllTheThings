@@ -394,6 +394,7 @@ end
 do
 	local Settings = Settings;
 	local OpenLegacyCategory = InterfaceOptionsFrame_OpenToCategory;
+	local AddLegacyCategory = InterfaceOptions_AddCategory;
 
 	lib.OpenOptionsCategory = function(categoryID)
 		if Settings and Settings.OpenToCategory then
@@ -402,5 +403,26 @@ do
 		return OpenLegacyCategory(categoryID);
 	end;
 
+	---@param frame Frame Options page to register.
+	---@param name string Display name of the options page.
+	---@param parentCategory table|nil Modern category of the parent page.
+	---@param parentName string|nil Name of the parent page; nil for a root category.
+	---@return table|nil category Modern category, or nil for the legacy UI.
+	---@return number|string categoryID Identifier accepted by OpenOptionsCategory.
+	lib.RegisterOptionsCategory = function(frame, name, parentCategory, parentName)
+		if Settings and Settings.RegisterCanvasLayoutCategory then
+			local category;
+			if parentName then
+				category = Settings.RegisterCanvasLayoutSubcategory(parentCategory, frame, name);
+			else
+				category = Settings.RegisterCanvasLayoutCategory(frame, name);
+				Settings.RegisterAddOnCategory(category);
+			end
+			return category, category.ID;
+		end
+		frame.name, frame.parent = name, parentName;
+		AddLegacyCategory(frame);
+		return nil, name;
+	end;
 end
 ---@diagnostic enable: deprecated

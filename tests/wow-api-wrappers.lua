@@ -254,4 +254,42 @@ do
 	legacy.OpenOptionsCategory("ATT");
 	equal(opened, "ATT", "legacy options category name");
 end
+
+do
+	local order, rootCategory, childCategory = {}, {ID=10}, {ID=11};
+	local modern = initialize({
+		Settings = {
+			RegisterCanvasLayoutCategory = function(frame, name)
+				order[#order+1] = "root:" .. name;
+				return rootCategory;
+			end,
+			RegisterAddOnCategory = function(category)
+				equal(category, rootCategory, "register returned root category");
+				order[#order+1] = "addon";
+			end,
+			RegisterCanvasLayoutSubcategory = function(parent, frame, name)
+				equal(parent, rootCategory, "subcategory parent identity");
+				order[#order+1] = "child:" .. name;
+				return childCategory;
+			end,
+		},
+		InterfaceOptions_AddCategory = function() error("legacy registration selected despite Settings") end,
+	});
+	local category, categoryID = modern.RegisterOptionsCategory({}, "ATT");
+	equal(category, rootCategory);
+	equal(categoryID, 10);
+	category, categoryID = modern.RegisterOptionsCategory({}, "Audio", rootCategory, "ATT");
+	equal(category, childCategory);
+	equal(categoryID, 11);
+	equal(table.concat(order, ","), "root:ATT,addon,child:Audio", "root-before-child registration");
+	local added;
+	local legacy = initialize({InterfaceOptions_AddCategory = function(frame) added = frame end}, 11509);
+	local frame = {};
+	category, categoryID = legacy.RegisterOptionsCategory(frame, "Audio", nil, "ATT");
+	equal(category, nil);
+	equal(categoryID, "Audio");
+	equal(added, frame);
+	equal(frame.name, "Audio");
+	equal(frame.parent, "ATT");
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
