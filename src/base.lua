@@ -18,8 +18,7 @@ end
 SetCVar("taintLog","0");
 
 -- Generate the version identifier.
----@diagnostic disable-next-line: deprecated
-local v = (C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata)(appName, "Version");
+local v = app.WOWAPI.GetAddOnMetadata(appName, "Version");
 if v:match("version") then
 	app.Version = "[Git]";
 	app.IsGit = true;

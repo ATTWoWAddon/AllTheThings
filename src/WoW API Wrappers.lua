@@ -10,7 +10,7 @@ app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 -- This file was created because Blizzard likes to give Crieve heart attacks with all their API changes.
 -- In the future, ATT will reference all its global APIs provided by Blizzard through our WOWAPI lib.
 
--- Currently, there are three flavors of World of Warcraft in operation: the Retail flavor, the Cataclysm Classic flavor, and the Classic flavor.
+-- ATT supports Retail, Classic clients and Forever through the same API abstraction.
 -- Blizzard often restructures APIs in the Retail flavor of World of Warcraft first, and then introduces these changes to other flavors.
 -- These restructuring alters function names, parameters, and adds prefixes, resulting in significant maintenance work for addons across different flavors.
 -- This file was created to alleviate the burden of API conversion and to provide a stable abstraction layer.
@@ -244,5 +244,12 @@ AssignAPIWrapper("GetPlayerAuraBySpellID",
 	C_UnitAuras and C_UnitAuras.GetPlayerAuraBySpellID,
 	GetPlayerAuraBySpellID,
 	app.EmptyFunction);
+
+---@diagnostic enable: deprecated
+
+---@diagnostic disable: deprecated
+-- AddOn metadata APIs
+local C_AddOns = C_AddOns;
+AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, GetAddOnMetadata);
 
 ---@diagnostic enable: deprecated
