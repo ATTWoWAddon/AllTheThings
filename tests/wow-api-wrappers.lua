@@ -140,6 +140,36 @@ do
 end
 
 do
+	-- Modern spell records retain ATT's tuple contract and unknown-spell nils.
+	local spells = initialize({
+		Enum = {SpellBookSpellBank = {Player = 0, Pet = 1}},
+		C_Spell = {
+			GetSpellInfo = function(id)
+				if id == 999 then return end
+				equal(id, 123)
+				return {name = "Spell", iconID = 10, castTime = 1500, minRange = 0, maxRange = 40, spellID = id, originalIconID = 11}
+			end,
+			GetSpellSubtext = function() return "Rank 2" end,
+		},
+		C_SpellBook = {
+			GetSpellBookItemInfo = function(index, bank)
+				equal(index, 4); equal(bank, 1, "pet spellbook bank"); return {spellID = 123}
+			end,
+		},
+	})
+	local name, rank, icon, castTime, minRange, maxRange, id, originalIcon = spells.GetSpellInfo(123)
+	equal(name, "Spell"); equal(rank, "Rank 2"); equal(icon, 10); equal(castTime, 1500)
+	equal(minRange, 0); equal(maxRange, 40); equal(id, 123); equal(originalIcon, 11)
+	equal(select("#", spells.GetSpellInfo(999)), 0, "unknown spell returns no values")
+	equal(select(7, spells.GetSpellInfo(4, "pet")), 123, "spellbook index translated to spell ID")
+	local classicSpells = initialize({
+		C_Spell = {GetSpellInfo = function() error("spellbook index sent to spell-ID API") end},
+		GetSpellInfo = function(index, bookType) equal(index, 4); equal(bookType, "spell"); return "Ranked Spell", "Rank 3", 7, 8, 9, 10, 321 end,
+	}, 50504)
+	equal(select(7, classicSpells.GetSpellInfo(4, "spell")), 321, "native Classic spellbook lookup preserved")
+end
+
+do
 	local modernInfo = function() return 123 end
 	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
 	equal(modern.GetSpecializationInfo, modernInfo)
