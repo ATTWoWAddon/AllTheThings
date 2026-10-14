@@ -46,4 +46,59 @@ do
 		check(phoenixTarget.collectible == false, "other Phoenix mounts become noncollectible: " .. pair[1])
 	end
 end
+
+do
+	local template = read(".contrib/.db/shared/lib/Functions/Function Templates.lua")
+	local generatorText = assert(template:match("GenerateShouldExcludeFromTooltipForBuffs = (.-),%s*ClassORRaceRequirements"))
+	local templateEnv = { ExportDB = { OnInitDB = {} } }
+	local generator = compile(generatorText, templateEnv)
+	generator(123)
+	local callbackText = assert(templateEnv.ExportDB.OnInitDB.ShouldExcludeFromTooltipForBuffs_123):sub(2)
+	local auraQueries, fixtureAuras, mouseoverExists = {}, {}, false
+	local api = {
+		GetBuffDataByIndex = function(unit, index)
+			auraQueries[#auraQueries + 1] = { unit, index }
+			return fixtureAuras[index]
+		end,
+	}
+	local callbackEnv = { _ = { WOWAPI = api }, UnitExists = function(unit) return unit == "mouseover" and mouseoverExists end }
+	local init = compile(callbackText, callbackEnv)
+	local target = init({})
+	fixtureAuras = { { spellId = 111 }, { spellId = 123 } }
+	check(target.ShouldExcludeFromTooltipHelper(target) == false, "matching buff permits tooltip")
+	check(#auraQueries == 2 and auraQueries[1][1] == "target" and auraQueries[2][2] == 2, "buff scan preserves index progression and target fallback")
+	mouseoverExists, auraQueries = true, {}
+	check(target.ShouldExcludeFromTooltipHelper(target) == false and auraQueries[1][1] == "mouseover", "mouseover remains first choice")
+	fixtureAuras, auraQueries = {}, {}
+	check(target.ShouldExcludeFromTooltipHelper(target) == true and #auraQueries == 1, "missing or undisclosed aura stops scan")
+	fixtureAuras, auraQueries = {}, {}
+	for i = 1, 11 do fixtureAuras[i] = { spellId = i == 11 and 123 or 111 } end
+	check(target.ShouldExcludeFromTooltipHelper(target) == true and #auraQueries == 10, "tooltip scan retains ten-buff limit")
+
+	local achievement = read(".contrib/.db/standard/11 - Character/Achievements.lua")
+	local start = assert(achievement:find('applyclassicphase%(SOM_PHASE_ONE, ach%(16433'))
+	local achievementText = assert(achievement:sub(start):match('%["OnUpdate"%] = %[%[(.-)%]%]'))
+	local collected
+	local achievementEnv = { _ = { Level = 60, WOWAPI = api } }
+	local achievementCallback = compile(achievementText, achievementEnv)
+	local achievementTarget = {
+		collectible = true, achievementID = 16433,
+		SetAchievementCollected = function(self, id, value)
+			check(id == 16433, "Soul of Iron achievement ID retained")
+			collected = value
+		end,
+	}
+	fixtureAuras, auraQueries = { { spellId = 111 }, { spellId = 364001 } }, {}
+	check(achievementCallback(achievementTarget) == false and collected == true, "Soul of Iron found beyond first buff")
+	check(#auraQueries == 2 and auraQueries[1][1] == "player", "Soul of Iron reads player buffs sequentially")
+	fixtureAuras, auraQueries = {}, {}
+	achievementCallback(achievementTarget)
+	check(collected == false and #auraQueries == 1, "missing Soul of Iron buff clears collection")
+	achievementEnv._.Level, auraQueries = 59, {}
+	achievementCallback(achievementTarget)
+	check(#auraQueries == 0, "Soul of Iron level guard preserved")
+	achievementEnv._.Level, achievementTarget.collectible = 60, false
+	achievementCallback(achievementTarget)
+	check(#auraQueries == 0, "Soul of Iron collectible guard preserved")
+end
 print("WoW API callback checks passed: " .. checks)

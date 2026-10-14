@@ -361,4 +361,24 @@ do
 		IsPlayerSpell, app.ReturnFalse or function() return false; end);
 end
 
+-- Buff lookup returns AuraData, or nil when the client cannot disclose it.
+do
+	local C_UnitAuras = C_UnitAuras;
+	local NativeUnitBuff = UnitBuff;
+	local GetBuffData = C_UnitAuras and C_UnitAuras.GetBuffDataByIndex;
+	if GetBuffData then
+		lib.GetBuffDataByIndex = function(unit, index, filter)
+			local aura = GetBuffData(unit, index, filter);
+			if not aura or lib.issecretvalue(aura) or lib.issecretvalue(aura.spellId) then return; end
+			return aura;
+		end;
+	else
+		AssignAPIWrapper("GetBuffDataByIndex", NativeUnitBuff and function(unit, index, filter)
+			local name, _, _, _, _, _, _, _, _, spellID = NativeUnitBuff(unit, index, filter);
+			if not name or lib.issecretvalue(spellID) then return; end
+			return { name = name, spellId = spellID };
+		end, app.EmptyFunction);
+	end
+end
+
 ---@diagnostic enable: deprecated
