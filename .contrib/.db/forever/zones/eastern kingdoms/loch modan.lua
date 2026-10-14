@@ -737,6 +737,53 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				classes = { SHAMAN },
 				lvl = 20,
 			}),
+			q(94466, {	-- Call of Fire
+				sourceQuest = 94465,
+				qg = 257808,	-- Braldir Ashmantle
+				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- Fire Tar
+						provider = { "i", 5026 },
+					}),
+					objective(2, {	-- Reagent Pouch
+						provider = { "i", 6652 },
+					}),
+					i(6636),	-- Fire Sapta
+				},
+			}),
+			q(94467, {	-- Call of Fire
+				sourceQuest = 94466,
+				qg = 257808,	-- Braldir Ashmantle
+				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				qi = 6653,	-- Torch of the Dormant Flame
+				lvl = 10,
+				groups = {
+					objective(1, {	-- Glowing Ember
+						provider = { "i", 6655 },
+					}),
+					i(6654),	-- Torch of the Eternal Flame
+				},
+			}),
+			q(94468, {	-- Call of Fire
+				sourceQuest = 94467,
+				provider = { "o", 61934 },	-- Brazier of the Dormant Flame
+				coord = { 31.79, 64.52, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				qi = 6654,	-- Torch of the Eternal Flame
+				lvl = 10,
+				groups = {
+					i(5176),	-- Fire Totem
+				},
+			}),
 		}),
 		n(RARES, {
 			n(1398, {	-- Boss Galgosh <Stonesplinter Chieftain>
