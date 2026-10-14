@@ -243,4 +243,24 @@ AssignAPIWrapper("SendGameData", C_BattleNet and C_BattleNet.SendGameData, BNSen
 local ChatFrameUtil = ChatFrameUtil;
 lib.InsertChatLink = false; -- Optional when the client has no chat insertion API.
 AssignAPIWrapper("InsertChatLink", ChatFrameUtil and ChatFrameUtil.InsertLink, ChatEdit_InsertLink);
+AssignAPIWrapper("DisplayTimePlayed", ChatFrameUtil and ChatFrameUtil.DisplayTimePlayed, ChatFrame_DisplayTimePlayed);
+
+-- Replace the client entry point as well as the wrapper so Blizzard's own
+-- TIME_PLAYED_MSG handler observes ATT's suppression of programmatic requests.
+lib.WrapDisplayTimePlayed = function(handler)
+	local owner, key;
+	if ChatFrameUtil and ChatFrameUtil.DisplayTimePlayed then
+		owner, key = ChatFrameUtil, "DisplayTimePlayed";
+	elseif ChatFrame_DisplayTimePlayed then
+		owner, key = _G, "ChatFrame_DisplayTimePlayed";
+	else
+		return false;
+	end
+	local original = owner[key];
+	local wrapped = function(...) return handler(original, ...); end;
+	owner[key] = wrapped;
+	lib.DisplayTimePlayed = wrapped;
+	return true;
+end;
+
 ---@diagnostic enable: deprecated

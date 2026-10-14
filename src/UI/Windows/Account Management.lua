@@ -13,25 +13,13 @@ local BNGetInfo, C_BattleNet, C_ChatInfo, RequestTimePlayed =
 -- Suppress the user-visible time played chat print when we request it programmatically.
 -- Inspired by Broker_PlayedTime addon
 local suppressTimePlayed = false;
-if ChatFrameUtil and ChatFrameUtil.DisplayTimePlayed then
-	local _orig_DisplayTimePlayed = ChatFrameUtil.DisplayTimePlayed
-	function ChatFrameUtil.DisplayTimePlayed(chatFrame, totalTime, levelTime)
-		if suppressTimePlayed then
-			suppressTimePlayed = false
-			return
-		end
-		return _orig_DisplayTimePlayed(chatFrame, totalTime, levelTime)
+app.WOWAPI.WrapDisplayTimePlayed(function(original, ...)
+	if suppressTimePlayed then
+		suppressTimePlayed = false
+		return
 	end
-else
-	local _orig_ChatFrame_DisplayTimePlayed = ChatFrame_DisplayTimePlayed
-	ChatFrame_DisplayTimePlayed = function(...)
-		if suppressTimePlayed then
-			suppressTimePlayed = false
-			return
-		end
-		return _orig_ChatFrame_DisplayTimePlayed(...)
-	end
-end
+	return original(...)
+end)
 
 -- Temporary cache variables (these get replaced in OnLoad!)
 local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, OnlineAccounts, SilentlyLinkedCharacters = {}, {}, {}, {}, {}, {}

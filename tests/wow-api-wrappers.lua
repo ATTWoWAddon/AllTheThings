@@ -53,4 +53,31 @@ do
 	equal(modernCalls.link, "item:1")
 	equal(initialize({}).InsertChatLink, false, "missing chat insertion remains unavailable")
 end
+
+do
+	local modernCalls = {}
+	local api, env = initialize({
+		ChatFrameUtil = {DisplayTimePlayed = function(frame, totalTime, levelTime) modernCalls.played = {frame, totalTime, levelTime}; return "displayed" end},
+		ChatFrame_DisplayTimePlayed = rejectLegacy,
+	})
+	-- Intercept Blizzard's real entry point, preserving ordinary chat output.
+	local suppress = true
+	equal(api.WrapDisplayTimePlayed(function(original, ...)
+		if suppress then suppress = false; return end
+		return original(...)
+	end), true)
+	equal(env.ChatFrameUtil.DisplayTimePlayed("chat", 100, 10), nil)
+	equal(modernCalls.played, nil, "programmatic time-played request suppressed")
+	equal(env.ChatFrameUtil.DisplayTimePlayed("chat", 200, 20), "displayed")
+	equal(modernCalls.played[2], 200)
+	equal(api.DisplayTimePlayed, env.ChatFrameUtil.DisplayTimePlayed, "wrapper follows intercepted entry point")
+	local legacy, legacyEnv = initialize({
+		ChatFrame_DisplayTimePlayed = function(...) return select("#", ...), ... end,
+	}, 11509)
+	equal(legacy.WrapDisplayTimePlayed(function(original, ...) return original(...) end), true)
+	local count, first = legacyEnv.ChatFrame_DisplayTimePlayed("chat", 1, 2)
+	equal(count, 3, "legacy time-played arguments retained")
+	equal(first, "chat")
+	equal(initialize({}).WrapDisplayTimePlayed(function() end), false, "missing chat entry point")
+end
 print("WoW API wrapper tests passed: " .. total .. " assertions")
