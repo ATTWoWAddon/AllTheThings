@@ -303,6 +303,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						classes = { WARLOCK },
 					}),
 					q(96628, {	-- The Adventurer [Dun Morogh]
+						nextQuests = { 96608 },
+						isBreadcrumb = true,
+						altQuests = { 96627, 96630, 96638, 96652, 96656, 96659 },
 						sourceQuest = 218,	-- The Stolen Journal
 						qg = 1965,	-- Mountaineer Thalos
 						qi = 275019,	-- Supply Bundle (PQI!)
@@ -497,6 +500,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96408, {	-- A Vistor to Dun Morogh
+				nextQuests = { 96392 },
+				isBreadcrumb = true,
 				qg = 1376,	-- Beldin Steelgrill
 				coord = { 50.4, 49.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
@@ -581,6 +586,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96045, {	-- Camping 101: Alchemy [Dun Morogh]
+				altQuests = { 97899, 97915, 97927, 97938, 97951, 97963 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -594,6 +600,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96044, {	-- Camping 101: Blacksmithing [Dun Morogh]
+				altQuests = { 97900, 97916, 97928, 97939, 97952, 97964 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -606,6 +613,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96629, {	-- Camping 101: Cooking [Dun Morogh]
+				altQuests = { 96626, 96634, 96646, 96655, 96658, 96661 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -614,6 +622,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				lvl = 4,
 			}),
 			q(96059, {	-- Camping 101: Enchanting [Dun Morogh]
+				altQuests = { 97901, 97917, 97929, 97940, 97953, 98284, 98286 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -626,6 +635,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96058, {	-- Camping 101: Engineering [Dun Morogh]
+				altQuests = { 97902, 97918, 97930, 97941, 97954, 98285, 98287 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -638,6 +648,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96047, {	-- Camping 101: First Aid [Dun Morogh]
+				altQuests = { 97903, 97919, 97931, 97942, 97955, 97965 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -650,6 +661,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96050, {	-- Camping 101: Fishing [Dun Morogh]
+				altQuests = { 97904, 97920, 97932, 97943, 97956, 97967 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -662,6 +674,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96055, {	-- Camping 101: Herbalism [Dun Morogh]
+				altQuests = { 97905, 97921, 97933, 97944, 97957, 97968 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -675,6 +688,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96031, {	-- Camping 101: Leatherworking [Dun Morogh]
+				altQuests = { 97906, 97922, 97934, 97946, 97958, 97969 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -688,6 +702,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96046, {	-- Camping 101: Mining [Dun Morogh]
+				altQuests = { 97907, 97923, 97935, 97948, 97959, 97970 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -700,6 +715,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96056, {	-- Camping 101: Skinning [Dun Morogh]
+				altQuests = { 97908, 97924, 97936, 97949, 97960, 97971 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -713,6 +729,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96057, {	-- Camping 101: Tailoring [Dun Morogh]
+				altQuests = { 96102, 97925, 97937, 97950, 97961, 97972, 97973 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
@@ -726,6 +743,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(99158, {	-- Dawn in the Mountains
+				nextQuests = { 99159 },
+				isBreadcrumb = true,
 				qg = 1226,	-- Maxan Anvol <Priest Trainer>
 				qi = 286355,	-- Crate of Candles (QI!)
 				coord = { 47.3, 52.2, MAP.DUN_MOROGH },
@@ -1209,6 +1228,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96608, {	-- The Great Outdoors [Dun Morogh]
+				altQuests = { 95998, 96101, 96604, 96605, 96606, 96607 },
 				sourceQuest = 96628,	-- The Adventurer [Dun Morogh]
 				qg = 265813,	-- Eric Birghthammer
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },

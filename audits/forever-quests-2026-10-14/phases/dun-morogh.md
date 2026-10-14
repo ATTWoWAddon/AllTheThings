@@ -54,48 +54,48 @@ The original audit files remain separate from this phase. Questie is the primary
 
 | Quest ID | Field | Disposition |
 |---|---|---|
-| 95214 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96031 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96031 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 95214 | `preQuestSingle` | Deferred: conflicting prerequisite IDs require direct evidence before replacing existing metadata. |
+| 96031 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96031 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96031 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96044 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96044 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96044 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96044 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96044 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96045 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96045 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96045 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96045 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96045 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96046 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96046 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96046 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96046 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96046 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96047 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96047 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96047 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96047 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96047 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96050 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96050 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96050 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96050 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96050 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96055 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96055 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96055 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96055 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96055 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96056 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96056 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96056 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96056 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96056 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96057 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96057 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96057 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96057 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96057 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96058 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96058 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96058 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96058 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96058 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96059 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96059 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
+| 96059 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96059 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
 | 96059 | `requiredSpell` | Pending source and inherited-field reconciliation. |
-| 96408 | `breadcrumbForQuestId` | Pending source and inherited-field reconciliation. |
-| 96608 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
-| 96628 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96628 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
-| 96628 | `breadcrumbForQuestId` | Pending source and inherited-field reconciliation. |
-| 96629 | `preQuestSingle` | Pending source and inherited-field reconciliation. |
-| 96629 | `exclusiveTo` | Pending source and inherited-field reconciliation. |
-| 99158 | `breadcrumbForQuestId` | Pending source and inherited-field reconciliation. |
+| 96408 | `breadcrumbForQuestId` | Corrected: optional introduction uses isBreadcrumb and nextQuests; no mandatory follow-up prerequisite was added. |
+| 96608 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
+| 96628 | `preQuestSingle` | Deferred: conflicting prerequisite IDs require direct evidence before replacing existing metadata. |
+| 96628 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
+| 96628 | `breadcrumbForQuestId` | Corrected: optional introduction uses isBreadcrumb and nextQuests; no mandatory follow-up prerequisite was added. |
+| 96629 | `preQuestSingle` | Already satisfied after local Great Outdoors altQuests correction: native alternative completion accepts another starting-zone introduction without a cross-faction count bypass. |
+| 96629 | `exclusiveTo` | Corrected: explicit alternative quest completions are represented with altQuests. |
+| 99158 | `breadcrumbForQuestId` | Corrected: optional introduction uses isBreadcrumb and nextQuests; no mandatory follow-up prerequisite was added. |
 | 95041 | `wowheadPrerequisites` | Pending source and inherited-field reconciliation. |
 | 95212 | `wowheadPrerequisites` | Pending source and inherited-field reconciliation. |
 | 95214 | `wowheadPrerequisites` | Pending source and inherited-field reconciliation. |
@@ -104,8 +104,29 @@ The original audit files remain separate from this phase. Questie is the primary
 | 99159 | `requiredRaces` | Pending source and inherited-field reconciliation. |
 | 99162 | `requiredRaces` | Pending source and inherited-field reconciliation. |
 
+## Implemented field corrections
+
+| Quest | Fields | Evidence |
+|---|---|---|
+| 96031 | `{"altQuests": "{ 97906, 97922, 97934, 97946, 97958, 97969 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96031); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96044 | `{"altQuests": "{ 97900, 97916, 97928, 97939, 97952, 97964 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96044); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96045 | `{"altQuests": "{ 97899, 97915, 97927, 97938, 97951, 97963 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96045); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96046 | `{"altQuests": "{ 97907, 97923, 97935, 97948, 97959, 97970 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96046); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96047 | `{"altQuests": "{ 97903, 97919, 97931, 97942, 97955, 97965 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96047); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96050 | `{"altQuests": "{ 97904, 97920, 97932, 97943, 97956, 97967 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96050); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96055 | `{"altQuests": "{ 97905, 97921, 97933, 97944, 97957, 97968 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96055); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96056 | `{"altQuests": "{ 97908, 97924, 97936, 97949, 97960, 97971 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96056); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96057 | `{"altQuests": "{ 96102, 97925, 97937, 97950, 97961, 97972, 97973 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96057); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96058 | `{"altQuests": "{ 97902, 97918, 97930, 97941, 97954, 98285, 98287 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96058); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96059 | `{"altQuests": "{ 97901, 97917, 97929, 97940, 97953, 98284, 98286 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96059); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96408 | `{"isBreadcrumb": "true", "nextQuests": "{ 96392 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96408); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96608 | `{"altQuests": "{ 95998, 96101, 96604, 96605, 96606, 96607 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96608); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96628 | `{"altQuests": "{ 96627, 96630, 96638, 96652, 96656, 96659 }", "isBreadcrumb": "true", "nextQuests": "{ 96608 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96628); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 96629 | `{"altQuests": "{ 96626, 96634, 96646, 96655, 96658, 96661 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=96629); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+| 99158 | `{"isBreadcrumb": "true", "nextQuests": "{ 99159 }"}` | [Wowhead Forever](https://www.wowhead.com/forever/quest=99158); Questie is primary for relationships and exclusions. Cached Wowhead supports identity and available detail, but does not independently establish every gate. Effective registry revision `cd4ac42468061cad65db3bf39163e5a2375e21f4`. |
+
 ## Verification
 
-The current addition phase passed Lua 5.1.5 contributor-record checks using the production quest/objective constructors, source-provider and map checks, minimum level and restriction checks, objective ordering, and fixed/choice reward inventory checks. Before the additions, the same checks failed because the requested quest declarations were absent. Lua 5.1.5 syntax checks and `git diff --check` passed.
+Lua 5.1.5 checks using production contributor constructors failed for the expected fields before the correction and passed afterward. Scoped contributor syntax checks and `git diff --check` passed. Earlier additions retain their reviewed checks. Native alternative-completion and breadcrumb scenarios passed where applicable; breadcrumb cache refresh follows the quest-update lifecycle. Normal profession and recipe-lock scenarios were tested separately. Native prerequisite display treats active source quests as satisfied; no runtime change was made.
 
 The Windows Forever parser and live in-game checks are unavailable on this macOS host. These checks do not establish a successful full addon build or live quest availability. No runtime files were changed.
