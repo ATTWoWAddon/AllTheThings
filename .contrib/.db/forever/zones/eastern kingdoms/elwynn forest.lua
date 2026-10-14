@@ -1389,6 +1389,67 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				lvl = 5,
 			}),
+			q(94774, {	-- Divine Grace
+				qg = 377,	-- Priestess Josetta
+				coord = { 43.28, 65.72, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+			}),
+			q(94792, {	-- Taming the Beast
+				qg = 251507,	-- Josephine Carson
+				coord = { 41.14, 66.32, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { HUNTER },
+				qi = 266158,	-- Taming Rod
+				lvl = 10,
+				groups = {
+					objective(1, {	-- Rockhide Boar
+						provider = { "n", 524 },
+					}),
+				},
+			}),
+			q(94863, {	-- Taming the Beast
+				sourceQuest = 94792,
+				qg = 251507,	-- Josephine Carson
+				coord = { 41.14, 66.32, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { HUNTER },
+				qi = 266253,	-- Taming Rod
+				lvl = 10,
+				groups = {
+					objective(1, {	-- Gray Forest Wolf
+						provider = { "n", 1922 },
+					}),
+				},
+			}),
+			q(94864, {	-- Taming the Beast
+				sourceQuest = 94863,
+				qg = 251507,	-- Josephine Carson
+				coord = { 41.14, 66.32, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { HUNTER },
+				qi = 266254,	-- Taming Rod
+				lvl = 10,
+				groups = {
+					objective(1, {	-- Young Forest Bear
+						provider = { "n", 822 },
+					}),
+				},
+			}),
+			q(94793, {	-- Training the Beast
+				sourceQuest = 94864,
+				qg = 251507,	-- Josephine Carson
+				coord = { 41.14, 66.32, MAP.ELWYNN_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { HUNTER },
+				lvl = 10,
+			}),
 		}),
 		n(RARES, {
 			n(276180, {	-- Elder Finseer
