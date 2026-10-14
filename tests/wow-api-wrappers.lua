@@ -239,4 +239,20 @@ do
 	equal(nativeCombat.CombatLogGetCurrentEventInfo(), "native")
 	equal(initialize({}, 11509).CombatLogGetCurrentEventInfo, false, "Classic without public payload remains unavailable")
 end
+
+do
+	-- Every current client opens categories through Settings.
+	for _, interface in ipairs({11509, 16001, 20506, 38002, 50504, 120105}) do
+		local opened;
+		local options = initialize({
+			Settings = {OpenToCategory = function(id) opened = id; return sentinel end},
+			InterfaceOptionsFrame_OpenToCategory = function() error("removed options API selected") end,
+		}, interface);
+		equal(options.OpenOptionsCategory(17), sentinel, "Settings opening return value");
+		equal(opened, 17, "numeric options category ID on interface " .. interface);
+		equal(options.OpenOptionsCategory("ATT"), sentinel, "Settings opening return value");
+		equal(opened, "ATT", "string options category ID on interface " .. interface);
+	end
+end
+
 print("WoW API wrapper tests passed: " .. total .. " assertions")

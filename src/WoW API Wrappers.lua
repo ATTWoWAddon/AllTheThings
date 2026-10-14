@@ -402,4 +402,14 @@ if not app.IsRetail then
 	lib.CombatLogGetCurrentEventInfo = C_CombatLog and C_CombatLog.GetCurrentEventInfo or CombatLogGetCurrentEventInfo or false;
 end
 
+-- Options categories and dropdowns use the current UI first, with legacy UI only
+-- on clients which do not provide the replacement framework.
+do
+	local Settings = Settings;
+
+	lib.OpenOptionsCategory = function(categoryID)
+		return Settings.OpenToCategory(categoryID);
+	end;
+
+end
 ---@diagnostic enable: deprecated
