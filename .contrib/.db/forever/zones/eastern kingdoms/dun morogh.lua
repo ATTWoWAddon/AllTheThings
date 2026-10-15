@@ -1572,6 +1572,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				classes = { SHAMAN },
 				lvl = 10,
 			}),
+			q(94472, {	-- Earth Sapta
+				sourceQuest = 94373,
+				qg = 257446,	-- Teo Hammerstorm
+				coord = { 28.79, 66.18, MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lockCriteria = { 1, "questID", 94374 },
+				repeatable = true,
+				lvl = 4,
+				groups = {
+					i(6635),	-- Earth Sapta
+				},
+			}),
 		}),
 		n(RARES, {
 			n(1130, {	-- Bjarn
