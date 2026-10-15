@@ -1176,23 +1176,26 @@ local checkboxNoSeasonalFilter = child:CreateCheckBox("|T"..app.asset("Category_
 checkboxNoSeasonalFilter:SetATTTooltip(L.SHOW_ALL_SEASONAL_TOOLTIP)
 checkboxNoSeasonalFilter:AlignBelow(checkboxShowAllLearnableQuestRewards or checkboxNoSkillLevelFilter or checkboxNoLevelFilter)
 
-local checkboxShowPetBattles = child:CreateCheckBox("|T"..app.asset("Category_PetBattles")..":0|t |c" .. app.DefaultColors.Insane .. L.SHOW_PET_BATTLES_CHECKBOX,
-function(self)
-	self:SetChecked(settings:Get("Show:PetBattles"))
-	if app.MODE_DEBUG then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:Set("Show:PetBattles", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxShowPetBattles:SetATTTooltip(L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP)
-checkboxShowPetBattles:AlignBelow(checkboxNoSeasonalFilter)
+local checkboxShowPetBattles
+if app.GameBuildVersion >= 50004 or app.IsForever then
+	checkboxShowPetBattles = child:CreateCheckBox("|T"..app.asset("Category_PetBattles")..":0|t |c" .. app.DefaultColors.Insane .. L.SHOW_PET_BATTLES_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:Get("Show:PetBattles"))
+		if app.MODE_DEBUG then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:Set("Show:PetBattles", self:GetChecked())
+		settings:UpdateMode(1)
+	end)
+	checkboxShowPetBattles:SetATTTooltip(L.SHOW_PET_BATTLES_CHECKBOX_TOOLTIP)
+	checkboxShowPetBattles:AlignBelow(checkboxNoSeasonalFilter)
+end
 
 local checkboxShowPvP = child:CreateCheckBox("|T"..app.asset("Category_PvP")..":0|t |c" .. app.DefaultColors.Insane .. L.SHOW_PVP_CHECKBOX,
 function(self)
@@ -1210,7 +1213,7 @@ function(self)
 	settings:UpdateMode(1)
 end)
 checkboxShowPvP:SetATTTooltip(L.SHOW_PVP_CHECKBOX_TOOLTIP)
-checkboxShowPvP:AlignBelow(checkboxShowPetBattles)
+checkboxShowPvP:AlignBelow(checkboxShowPetBattles or checkboxNoSeasonalFilter)
 
 if app.GameBuildVersion > 50000 and app.GameBuildVersion <= 70000 then
 	local checkboxShowChallengeMaster = child:CreateCheckBox("|TInterface\\Icons\\achievement_challengemode_platinum:0|t " .. L.SHOW_CHALLENGE_MASTER_CHECKBOX,
