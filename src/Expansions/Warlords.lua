@@ -107,7 +107,7 @@ do
 end
 
 -- Talents
-do
+if app.GameBuildVersion >= 70000 and C_Garrison.GetTalentInfo then
 	local C_Garrison_GetTalentInfo = C_Garrison.GetTalentInfo;
 	local GarrisonTalentInfoMeta = { __index = function(t, key)
 		local info = C_Garrison_GetTalentInfo(t.garrisonTalentID);
@@ -140,6 +140,8 @@ do
 			return C_Garrison_GetTalentInfo(t.garrisonTalentID).researched;
 		end,
 	});
+else
+	app.CreateGarrisonTalent = app.CreateUnimplementedClass("GarrisonTalent", "garrisonTalentID");
 end
 
 -- Followers (Not Warlords exclusive, but the API originally was added with Warlords!)
