@@ -49,7 +49,7 @@ root(ROOTS.Instances, {
 						objective(2, {	-- 0/1 Crate With Holes
 							providers = {
 								{ "i", 5880 },	-- Crate With Holes (QI!)
-								{ "o", 21277 },	-- Crate With Holes
+								{ "o", 21277 },	-- Crate with Holes
 							},
 							coord = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
@@ -63,7 +63,7 @@ root(ROOTS.Instances, {
 						objective(4, {	-- 0/1 Snufflenose Command Stick
 							providers = {
 								{ "i", 6684 },	-- Snufflenose Command Stick (QI!)
-								{ "o", 68865 },	-- Snufflenose Command Stick
+								{ "o", 68865 },	-- Snufflenose Command Sticks
 							},
 							coord = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),

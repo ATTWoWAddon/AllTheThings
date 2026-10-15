@@ -60,7 +60,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				}),
 			}),
 			prof(FISHING, {
-				o(180685),	-- Waterlogged Wreckage
+				o(180685),	-- Floating Wreckage
 			}),
 			prof(LEATHERWORKING, {
 				n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>

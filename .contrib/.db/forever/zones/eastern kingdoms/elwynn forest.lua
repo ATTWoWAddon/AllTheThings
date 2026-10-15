@@ -481,7 +481,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					objective(1, {	-- 0/7 Half-Eaten Fish
 						providers = {
 							{ "i", 286205 },	-- Half-Eaten Fish
-							{ "o", 694772 },	-- Fishing Net
+							{ "o", 694772 },	-- Fishing Trap
 						},
 						coord = { 49.9, 66.7, MAP.ELWYNN_FOREST },
 					}),

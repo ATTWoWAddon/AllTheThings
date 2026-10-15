@@ -49,7 +49,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 		}),
 		n(PROFESSIONS, {
 			prof(FISHING, {
-				o(180662),	-- Schooner Wreckage
+				o(180662),	-- Floating Wreckage
 			}),
 			prof(MINING, {
 				i(3340, {	-- Incendicite Ore

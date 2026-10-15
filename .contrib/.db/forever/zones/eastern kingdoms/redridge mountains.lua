@@ -176,8 +176,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						providers = {
 							{ "i", 280839 },	-- Blackrock Supplies (QI!)
 							{ "o", 673384 },	-- Water Barrel
-							{ "o", 673385 },	-- Grain Sack
-							{ "o", 673399 },	-- Meat Haunch
+							{ "o", 673385 },	-- Blackrock Supplies
+							{ "o", 673399 },	-- Stolen Weapon
 						},
 						coords = {
 							{ 66.1, 73.6, MAP.REDRIDGE_MOUNTAINS },
@@ -676,7 +676,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			q(95999, {	-- WANTED: Incinerator Gar'im
-				provider = { "o", 649051 },	-- Wanted: Insinerator Gar'im
+				provider = { "o", 649051 },	-- Wanted: Incinerator Gar'im
 				coord = { 24.3, 46.2, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
