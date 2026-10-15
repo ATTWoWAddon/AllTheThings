@@ -3027,6 +3027,10 @@ q(4001,{lvl=48,qgs={9020},r=1,rwp=40003,sourceQuests={3982},g={
 qo(1,{providers={{"n",9021}}})}}),
 q(4324,{coords={
 [1446]={{67,24}}},isBreadcrumb=1,lvl=48,nextQuests={4136},qgs={9706},rwp=40003})}),
+h(-56,{
+r(15293,{b=1,description="|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",itemID=11614,learnedAt=270,providers={{"o",173232}},q=2,requireSkill=164}),
+r(15295,{b=1,description="|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",itemID=11615,learnedAt=280,providers={{"o",173232}},q=2,requireSkill=164}),
+r(22704,{description="On the floor next to Golem Lord Argelmach.",itemID=18235,learnedAt=300,providers={{"o",179552}},q=1,requireSkill=202})}),
 h(-58,{
 n(12944,{
 i(18628,{b=1,cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=60,minReputation={59,0},q=4}),
@@ -3071,12 +3075,9 @@ i(11129,{q=1}),
 i(11269,{crs={8905,8906,8907,8908},q=1}),
 r(19107,{crs={8903},itemID=15781,learnedAt=300,q=3,requireSkill=165}),
 r(19094,{crs={8898},itemID=15770,learnedAt=300,q=3,requireSkill=165}),
-r(15293,{b=1,description="|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",itemID=11614,learnedAt=270,providers={{"o",173232}},q=2,requireSkill=164}),
-r(15295,{b=1,description="|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",itemID=11615,learnedAt=280,providers={{"o",173232}},q=2,requireSkill=164}),
 r(15294,{crs={9554,10043},itemID=11611,learnedAt=275,q=3,requireSkill=164}),
 r(19799,{crs={8920},itemID=16049,learnedAt=285,q=2,requireSkill=202}),
 r(19796,{crs={8897},itemID=16048,learnedAt=275,q=2,requireSkill=202}),
-r(22704,{description="On the floor next to Golem Lord Argelmach.",itemID=18235,learnedAt=300,providers={{"o",179552}},q=1,requireSkill=202}),
 r(23096,{crs={8920},itemID=18654,learnedAt=265,q=2,requireSkill=20219}),
 r(19825,{crs={8900},description="This is now learned from the trainer.",itemID=16053,learnedAt=290,q=2,requireSkill=202,rwp=20001,u=2}),
 r(23129,{crs={8920},itemID=18661,learnedAt=260,q=2,requireSkill=20219}),
@@ -7731,7 +7732,9 @@ s(134528,24150,{b=1,f=3,lvl=60,q=3,u=17}),
 s(134441,24063,{b=1,f=5,loc=45,lvl=60,q=3,u=17}),
 s(134533,24155,{b=1,f=28,lvl=60,q=3,u=17}),
 i(24154,{b=1,f=52,lvl=60,q=3,u=17})}})}}),
-d(2,{cost={{"i",265826,1},{"i",265830,1},{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,_.ResolveQuestData({aqd=
+{cost={{"i",265830,1},{"i",30622,1}}},description="You need to have a key to the instance in order to access this mode.",hqd=
+{cost={{"i",265826,1},{"i",30637,1}}},lvl=70,u=17,g={
 h(-19,{crs={17306,17307,17308},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30593,{b=1,q=4,u=17}),
@@ -7777,7 +7780,7 @@ i(27460,{b=1,f=52,lvl=70,q=3,u=17}),
 s(139610,29264,{b=1,f=5,loc=45,lvl=70,q=4,u=17}),
 s(137806,27459,{b=1,f=7,loc=43,lvl=70,q=3,u=17}),
 s(137801,27454,{b=1,f=6,loc=41,lvl=70,q=3,u=17}),
-s(142423,32077,{b=1,f=6,loc=44,lvl=70,q=4,u=17})}})}})}}),
+s(142423,32077,{b=1,f=6,loc=44,lvl=70,q=4,u=17})}})}}))}}),
 inst(249,{awp=20400,coords={
 [1957]={{61.23,30.94}}},lore="Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",lvl=65,mapID=348,maps={349},savedInstanceID=585,u=21,zoneTextAreaID=4095,g={
 h(-45,{u=21,g={

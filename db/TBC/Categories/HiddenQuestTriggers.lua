@@ -8,6 +8,7 @@ h(-61,{
 hqt(78650)}),
 inst(760,{isRaid=1,savedInstanceID=249,g={
 hqt(76175)}}),
+hqt(934,{description="This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",r=2,rwp=10700,u=2}),
 m(1414,{maps={1464},g={
 m(1413,{
 hqt(55296)})}}),

@@ -17706,6 +17706,22 @@ L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch
 localize(_.CategoryNames, {
 	[2] = "Verbrauchsgegenstand",
 	[3] = "Tarotkarten",
+	[106] = "Karte",
+	[168] = "Materialien",
+	[224] = "Beinkleider",
+	[857] = "Blaue Edelsteine",
+	[858] = "Grüne Edelsteine",
+	[859] = "Orangefarbene Edelsteine",
+	[860] = "Violette Edelsteine",
+	[861] = "Rote Edelsteine",
+	[862] = "Gelbe Edelsteine",
+	[863] = "Metaedelsteine",
+	[864] = "Halsketten",
+	[865] = "Ringe",
+	[866] = "Schmuckstücke",
+	[867] = "Prismen und Statuen",
+	[868] = "Reagenzien",
+	[869] = "Kronen",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Neuer Charakter",
@@ -21421,9 +21437,24 @@ L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour
 L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
 localize(_.CategoryNames, {
-	[2] = "consommable",
+	[2] = "Consommable",
 	[3] = "Jeu de tarot",
-	[106] = "Carte",
+	[106] = "Cartes",
+	[168] = "Matériaux",
+	[224] = "Jambes",
+	[857] = "Gemmes bleues",
+	[858] = "Gemmes vertes",
+	[859] = "Gemmes orange",
+	[860] = "Gemmes violettes",
+	[861] = "Gemmes rouges",
+	[862] = "Gemmes jaunes",
+	[863] = "Méta-gemmes",
+	[864] = "Colliers",
+	[865] = "Anneaux",
+	[866] = "Bijoux",
+	[867] = "Prismes et statues",
+	[868] = "Composants",
+	[869] = "Couronnes",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Nouveau personnage",
@@ -24945,7 +24976,21 @@ L.TITLES_CHECKBOX = "Titoli"
 localize(_.CategoryNames, {
 	[2] = "Consumabile",
 	[3] = "Mazzo di Tarocchi",
-	[106] = "Carta",
+	[106] = "Carte",
+	[224] = "Gambe",
+	[857] = "Gemme Blu",
+	[858] = "Gemme Verdi",
+	[859] = "Gemme Arancioni",
+	[860] = "Gemme Viola",
+	[861] = "Gemme Rosse",
+	[862] = "Gemme Gialle",
+	[863] = "Gemme Meta",
+	[864] = "Collane",
+	[865] = "Anelli",
+	[866] = "Monili",
+	[867] = "Prismi e Statue",
+	[868] = "Reagenti",
+	[869] = "Corone",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Nuovo personaggio",
@@ -25834,6 +25879,21 @@ localize(_.CategoryNames, {
 	[2] = "Consumível",
 	[3] = "Baralho de Tarô",
 	[106] = "Carta",
+	[168] = "Materiais",
+	[224] = "Pernas",
+	[857] = "Gemas Azuis",
+	[858] = "Gemas Verdes",
+	[859] = "Gemas Laranja",
+	[860] = "Gemas Roxas",
+	[861] = "Gemas Vermelhas",
+	[862] = "Gemas Amarelas",
+	[863] = "Metagemas",
+	[864] = "Colares",
+	[865] = "Anéis",
+	[866] = "Berloques",
+	[867] = "Prismas e Estátuas",
+	[868] = "Reagentes",
+	[869] = "Coroas",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Novo personagem",
@@ -29854,7 +29914,22 @@ L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!"
 L.ZONE_DESC = "Нажмите эту кнопку для выбора случайной локации, основываясь на несобранных Штучках."
 localize(_.CategoryNames, {
 	[3] = "карт Таро",
-	[106] = "Карты",
+	[106] = "Карта",
+	[168] = "Материалы",
+	[224] = "Поножи",
+	[857] = "Синие самоцветы",
+	[858] = "Зеленые самоцветы",
+	[859] = "Оранжевые самоцветы",
+	[860] = "Фиолетовые самоцветы",
+	[861] = "Красные самоцветы",
+	[862] = "Желтые самоцветы",
+	[863] = "Особые самоцветы",
+	[864] = "Ожерелья",
+	[865] = "Кольца",
+	[866] = "Аксессуары",
+	[867] = "Призмы и статуэтки",
+	[868] = "Реагенты",
+	[869] = "Короны",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "Новый персонаж",
@@ -33509,14 +33584,23 @@ L.TITLES_CHECKBOX = "칭호"
 localize(_.CategoryNames, {
 	[2] = "소모품",
 	[3] = "카드 묶음",
+	[106] = "카드",
 	[167] = "머리",
 	[168] = "재료",
-	[224] = "다리",
-	[864] = "목",
-	[865] = "손가락",
-	[866] = "장비",
+	[224] = "다리보호구",
+	[857] = "푸른색 보석",
+	[858] = "녹색 보석",
+	[859] = "주황색 보석",
+	[860] = "보라색 보석",
+	[861] = "붉은색 보석",
+	[862] = "노란색 보석",
+	[863] = "얼개 보석",
+	[864] = "목걸이",
+	[865] = "반지",
+	[866] = "장신구",
+	[867] = "수수께끼의 보석과 조각상",
 	[868] = "재료",
-	[869] = "머리",
+	[869] = "관",
 })
 localize(L.HEADER_NAMES, {
 	[-11] = "새로운 캐릭터",
@@ -37788,7 +37872,7 @@ L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basad
 localize(_.CategoryNames, {
 	[2] = "Consumible",
 	[3] = "Baraja de Tarot",
-	[106] = "Carta",
+	[106] = "Tarot",
 	[167] = "Coronas",
 	[168] = "Materiales",
 	[224] = "Piernas",
@@ -37797,7 +37881,7 @@ localize(_.CategoryNames, {
 	[859] = "Gemas naranjas",
 	[860] = "Gemas moradas",
 	[861] = "Gemas rojas",
-	[862] = "Gemas meta",
+	[862] = "Gemas amarillas",
 	[863] = "Gemas meta",
 	[864] = "Collares",
 	[865] = "Anillos",
@@ -41619,7 +41703,6 @@ L.WAGO_BUTTON_TOOLTIP = "Haz click en este botón para copiar el enlace del addo
 L.WARN_REMOVED_CHECKBOX = "Cosas eliminadas activan un Aviso"
 L.ZONE_DESC = "Haz click en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(_.CategoryNames, {
-	[2] = "Objeto Consumible",
 	[3] = "Naipe de Tarot",
 })
 localize(L.HEADER_NAMES, {
@@ -48794,7 +48877,18 @@ L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按�
 L.WRONG_FACTION = "可能需要在另一個陣營中查看此內容。"
 L.ZONE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機地區。"
 localize(_.CategoryNames, {
-	[106] = "卡片",
+	[168] = "材料",
+	[857] = "藍色寶石",
+	[858] = "綠色寶石",
+	[859] = "橘色寶石",
+	[860] = "紫色寶石",
+	[861] = "紅色寶石",
+	[862] = "黃色寶石",
+	[863] = "變換寶石",
+	[864] = "項鍊",
+	[866] = "飾品",
+	[867] = "稜光與雕像",
+	[869] = "皇冠",
 })
 localize(L.HEADER_NAMES, {
 	[-17] = "職業試玩",
