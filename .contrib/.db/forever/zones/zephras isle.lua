@@ -359,6 +359,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(97963, {	-- Camping 101: Alchemy
+				lockCriteria = { 1, "spellID", 1230564 },
 				altQuests = { 96045, 97899, 97915, 97927, 97938, 97951 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -368,6 +369,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230564), },
 			}),
 			q(97964, {	-- Camping 101: Blacksmithing
+				lockCriteria = { 1, "spellID", 1230171 },
 				altQuests = { 96044, 97900, 97916, 97928, 97939, 97952 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -384,6 +386,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(98284, {	-- Camping 101: Enchanting
+				lockCriteria = { 1, "spellID", 1230643 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 96059, 97901, 97917, 97929, 97940, 97953, 98286 },
 				qg = 263664,	-- Raan Wildwind
@@ -394,6 +397,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230643), },
 			}),
 			q(98286, {	-- Camping 101: Enchanting
+				lockCriteria = { 1, "spellID", 1230643 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 96059, 97901, 97917, 97929, 97940, 97953, 98284 },
 				qg = 263664,	-- Raan Wildwind
@@ -404,6 +408,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230643), },
 			}),
 			q(98285, {	-- Camping 101: Engineering
+				lockCriteria = { 1, "spellID", 1230656 },
 				altQuests = { 96058, 97902, 97918, 97930, 97941, 97954, 98287 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -413,6 +418,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230656), },
 			}),
 			q(97965, {	-- Camping 101: First Aid
+				lockCriteria = { 1, "spellID", 1230117 },
 				altQuests = { 96047, 97903, 97919, 97931, 97942, 97955 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -422,6 +428,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230117), },
 			}),
 			q(97967, {	-- Camping 101: Fishing
+				lockCriteria = { 1, "spellID", 1229745 },
 				altQuests = { 96050, 97904, 97920, 97932, 97943, 97956 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -431,6 +438,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229745), },
 			}),
 			q(97968, {	-- Camping 101: Herbalism
+				lockCriteria = { 1, "spellID", 1229705 },
 				altQuests = { 96055, 97905, 97921, 97933, 97944, 97957 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -440,6 +448,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229705), },
 			}),
 			q(97969, {	-- Camping 101: Leatherworking
+				lockCriteria = { 1, "spellID", 1229432 },
 				altQuests = { 96031, 97906, 97922, 97934, 97946, 97958 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -449,6 +458,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229432), },
 			}),
 			q(97970, {	-- Camping 101: Mining
+				lockCriteria = { 1, "spellID", 1230161 },
 				altQuests = { 96046, 97907, 97923, 97935, 97948, 97959 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -458,6 +468,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1230161), },
 			}),
 			q(97971, {	-- Camping 101: Skinning
+				lockCriteria = { 1, "spellID", 1229517 },
 				altQuests = { 96056, 97908, 97924, 97936, 97949, 97960 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				qg = 263664,	-- Raan Wildwind
@@ -467,6 +478,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = { recipe(1229517), },
 			}),
 			q(97972, {	-- Camping 101: Tailoring
+				lockCriteria = { 1, "spellID", 1229504 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 96057, 96102, 97925, 97937, 97950, 97961, 97973 },
 				qg = 263664,	-- Raan Wildwind
@@ -479,6 +491,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(97973, {	-- Camping 101: Tailoring
+				lockCriteria = { 1, "spellID", 1263425 },
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 96057, 96102, 97925, 97937, 97950, 97961, 97972 },
 				qg = 263664,	-- Raan Wildwind
