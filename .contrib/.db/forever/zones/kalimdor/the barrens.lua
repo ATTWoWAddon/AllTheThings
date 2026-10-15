@@ -2823,6 +2823,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = { SKYBORNE_HORDE },
 				lvl = 7,
 			}),
+			q(98094, {	-- Scout Support
+				qg = 2215,	-- High Executor Darthalia
+				coord = { 62.33, 20.45, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				qi = 279394,	-- Darthalia's Orders
+				lvl = 19,
+			}),
 		}),
 		n(RARES, {
 			n(THE_BARRENS_ALLIANCE_OUTRUNNERS, {	-- Alliance Outrunners
