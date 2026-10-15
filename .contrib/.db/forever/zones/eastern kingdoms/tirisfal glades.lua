@@ -31,14 +31,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					i(246165),	-- Driftwood Smasher
 				},
 			}),
-			q(91294, {	-- Touring the Grounds
-				qg = 246349,	-- Breton Samuels
-				coord = { 21.85, 45.31, MAP.TIRISFAL_GLADES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { UNDEAD },
-				classes = { PALADIN },
-				lvl = 8,
-			}),
+
 			q(91316, {	-- Making Repairs
 				qg = 246393,	-- Jorin Croge
 				coord = { 22.65, 44.77, MAP.TIRISFAL_GLADES },
