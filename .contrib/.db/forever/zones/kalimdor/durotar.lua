@@ -500,7 +500,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					objective(2, {	-- 0/2 Cured Light Hide
 						provider = { "i", 4231 },	-- Cured Light Hide
 					}),
-					i(277716),	-- Pattern: Light Leather Reagent Bag
+					i(277716),	-- Pattern: Light Leather Reagent Bag (RECIPE!)
 				},
 			}),
 			q(97223, {	-- Bloodtalon Matriarch
@@ -1299,7 +1299,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					objective(2, {	-- 0/5 Rough Grinding Stone
 						provider = { "i", 3470 },	-- Rough Grinding Stone
 					}),
-					i(277673),	-- Plans: Rough Copper Chain Boots
+					i(277673),	-- Plans: Rough Copper Chain Boots (RECIPE!)
 				},
 			}),
 			q(99049, {	-- Threat from Below

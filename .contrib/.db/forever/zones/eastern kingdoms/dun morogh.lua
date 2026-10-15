@@ -1310,7 +1310,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 81.4, 53.0, MAP.DUN_MOROGH },
 						cr = 1689,	-- Scarred Crag Boar
 					}),
-					i(277673),	-- Plans: Rough Copper Chain Boots
+					i(277673),	-- Plans: Rough Copper Chain Boots (RECIPE!)
 				},
 			}),
 			q(291, {	-- The Reports
@@ -1836,7 +1836,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					{ 67.0, 50.2, MAP.DUN_MOROGH },
 				},
 			}),
-			i(249879, {	-- Recipe: Peace Tea
+			i(249879, {	-- Recipe: Peace Tea (RECIPE!)
 				cr = 1397,	-- Frostmane Seer
 				coords = {
 					{ 49.8, 37.2, MAP.DUN_MOROGH },

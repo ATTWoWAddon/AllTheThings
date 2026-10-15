@@ -849,7 +849,7 @@ root(ROOTS.Instances, {
 				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot (RECIPE!)
 					cr = 8920,	-- Weapon Technician
 				}),
-				i(16053, {	-- Schematic: Master Engineer's Goggles
+				i(16053, {	-- Schematic: Master Engineer's Goggles (RECIPE!)
 					cr = 8900,	-- Doomforge Arcanasmith
 				}),
 				i(18661, {	-- Schematic: World Enlarger (RECIPE!)
