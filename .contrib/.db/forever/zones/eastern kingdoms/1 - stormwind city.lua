@@ -1513,7 +1513,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = { HUMAN },
 				classes = { PALADIN },
 				lvl = 12,
-				qi = 6775,	-- Tome of Divinity (QI!)
+				qi = 6775,	-- Tome of Divinity (QS!)
 			}),
 			q(1643, {	-- The Tome of Divinity (4/10)
 				sourceQuest = 1642,	-- The Tome of Divinity (3/10)
@@ -1651,7 +1651,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
 				lvl = 20,
-				qi = 6776,	-- Tome of Valor (QI!)
+				qi = 6776,	-- Tome of Valor (QS!)
 			}),
 			q(1650, {	-- The Tome of Valor (2/4)
 				sourceQuest = 1649,	-- The Tome of Valor (1/4)
