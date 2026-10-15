@@ -125,7 +125,7 @@ app:CreateWindow("Import", {
 			{ id = "sourceID", name = WARDROBE, icon = 135276 },
 			{ minBuild = 80200, id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 			{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
-			{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
+			{ minBuild = 110100, id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 			{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
 			{ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
 			{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },

@@ -92,6 +92,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- Campsites
 			app.CreateDynamicHeader("campsiteID", {
+				minBuild = 110100,
 				name = WARBAND_SCENES,
 				icon = app.asset("Category_Campsites")
 			}),
