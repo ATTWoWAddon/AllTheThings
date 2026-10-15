@@ -4,15 +4,15 @@
 
 local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	description = "This is located outside of the instance just to the north of both the elevator or the transporter.",
+	cost = { { "i", 9279, 1 } },	-- 1x White Punch Card
 	timeline = { REMOVED_5_0_4 },	-- guessed from WH comments
-	cost = { { "i", 9279, 1 } },	-- White Punch Card
 	groups = {
 		i(9280),	-- Yellow Punch Card
 	},
 });
 local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
 	description = "This is located in the bottom of the Dormitories.",
-	cost = { { "i", 9280, 1 } },	-- Yellow Punch Card
+	cost = { { "i", 9280, 1 } },	-- 1x Yellow Punch Card
 	groups = {
 		i(9282),	-- Blue Punch Card
 		i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
@@ -22,14 +22,14 @@ local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
 });
 local MATRIX_PUNCHOGRAPH_C = o(142476, {	-- Matrix Punchograph 3005-C
 	description = "This is located at the bottom of the platform in the Engineering Labs.",
-	cost = { { "i", 9282, 1 } },	-- Blue Punch Card
+	cost = { { "i", 9282, 1 } },	-- 1x Blue Punch Card
 	groups = {
 		i(9281),	-- Red Punch Card
 	},
 });
 local MATRIX_PUNCHOGRAPH_D = o(142696, {	-- Matrix Punchograph 3005-D
 	description = "This is located in the Workshop below Crowd Pummeler.",
-	cost = { { "i", 9281, 1 } },	-- Red Punch Card
+	cost = { { "i", 9281, 1 } },	-- 1x Red Punch Card
 	groups = {
 		i(9316),	-- Prismatic Punch Card
 		i(4413, {	-- Schematic: Discombobulator Ray (RECIPE!)
@@ -84,18 +84,18 @@ root(ROOTS.Instances, {
 				}),
 				i(9308),	-- Grime-Encrusted Object
 				i(9326, {	-- Grime-Encrusted Ring
+					cr = 6212,	-- Dark Iron Agent
 					-- #if SEASON_OF_DISCOVERY
 					timeline = { REMOVED_1_15_1 },
 					-- #endif
-					cr = 6212,	-- Dark Iron Agent
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(216661, {	-- Grime-Encrusted Ring
-					timeline = { ADDED_1_15_1, REMOVED_2_0_1 },
 					crs = {
 						6212,	-- Dark Iron Agent
 						6228,	-- Dark Iron Ambassador
 					},
+					timeline = { ADDED_1_15_1, REMOVED_2_0_1 },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(216661, { timeline = { ADDED_1_15_1, REMOVED_2_0_1 } })),	-- Grime-Encrusted Salvage
 				applyclassicphase(SOD_PHASE_TWO, i(215430, { timeline = { ADDED_1_15_1, REMOVED_2_0_1 } })),	-- Gnomeregan Fallout
@@ -230,11 +230,10 @@ root(ROOTS.Instances, {
 					timeline = { REMOVED_5_0_4 },	-- guessed from WH comments
 				}),
 				i(140781, {	-- X-87 Battle Circuit
-					timeline = { ADDED_7_0_3 },
 					crs = {
 						6229,	-- Crowd Pummeler 9-60
 						6235,	-- Electrocutioner 6000
-						7800,	-- Mekgineer Thermaplug
+						7800,	-- Mekgineer Thermaplugg
 						6232,	-- Arcane Nullifier X-21
 						6234,	-- Mechanized Guardian
 						6233,	-- Mechanized Sentry
@@ -243,26 +242,27 @@ root(ROOTS.Instances, {
 						6225,	-- Mechano-Tank
 						6230,	-- Peacekeeper Security Suit
 					},
+					timeline = { ADDED_7_0_3 },
 				}),
 			}),
 			n(QUESTS, {
 				header(HEADERS.Object, 142487, {	-- The Sparklematic 5200
 					q(2951, {	-- The Sparklematic 5200!
 						provider = { "o", 142487 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 					}),
 					q(4601, {	-- The Sparklematic 5200!
 						provider = { "o", 15084 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 					}),
 					q(4602, {	-- The Sparklematic 5200!
 						provider = { "o", 15085 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 					}),
 					q(2952, {	-- The Sparklematic 5200!
 						sourceQuest = 2951,	-- The Sparklematic 5200!
 						provider = { "o", 142487 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
@@ -270,7 +270,7 @@ root(ROOTS.Instances, {
 					q(4605, {	-- The Sparklematic 5200!
 						sourceQuest = 4601,	-- The Sparklematic 5200!
 						provider = { "o", 15084 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
@@ -278,7 +278,7 @@ root(ROOTS.Instances, {
 					q(4606, {	-- The Sparklematic 5200!
 						sourceQuest = 4602,	-- The Sparklematic 5200!
 						provider = { "o", 15085 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
@@ -286,7 +286,7 @@ root(ROOTS.Instances, {
 					q(2953, {	-- More Sparklematic Action
 						sourceQuest = 2952,	-- The Sparklematic 5200!
 						provider = { "o", 142487 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						repeatable = true,
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
@@ -295,7 +295,7 @@ root(ROOTS.Instances, {
 					q(4603, {	-- More Sparklematic Action
 						sourceQuest = 4605,	-- The Sparklematic 5200!
 						provider = { "o", 15084 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						repeatable = true,
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
@@ -304,7 +304,7 @@ root(ROOTS.Instances, {
 					q(4604, {	-- More Sparklematic Action
 						sourceQuest = 4606,	-- The Sparklematic 5200!
 						provider = { "o", 15085 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						repeatable = true,
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
@@ -327,8 +327,8 @@ root(ROOTS.Instances, {
 					qg = 4077,	-- Gaxim Rustfizzle
 					coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 25,
+					isBreadcrumb = true,
 				}),
 				q(2842, {	-- Chief Engineer Scooty
 					description = "Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
@@ -346,7 +346,7 @@ root(ROOTS.Instances, {
 					lvl = 25,
 					groups = {
 						objective(1, {	-- 0/1 Prismatic Punch Card
-							provider = { "i", 9316 },	-- Prismatic Punch Card
+							provider = { "i", 9316 },	-- Prismatic Punch Card (QI!)
 						}),
 						i(9604),	-- Mechanic's Pipehammer
 						i(9605),	-- Repairman's Cape
@@ -361,7 +361,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/12 Essential Artificial
 							providers = {
-								{ "i",   9278 },	-- Essential Artificial
+								{ "i",   9278 },	-- Essential Artificial (QI!)
 								{ "o", 142344 },	-- Artificial Extrapolator
 							},
 							description = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
@@ -376,8 +376,8 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/1 Full Leaden Collection Phial
-							provider = { "i", 9284 },	-- Full Leaden Collection Phial
-							cost = { { "i", 9283, 1 } },	-- Empty Leaden Collection Phial
+							provider = { "i", 9284 },	-- Full Leaden Collection Phial (QI!)
+							cost = { { "i", 9283, 1 } },	-- 1x Empty Leaden Collection Phial (QI!)
 							cr = 6329,	-- Irradiated Pillager
 						}),
 					},
@@ -387,9 +387,9 @@ root(ROOTS.Instances, {
 					qg = 6826,	-- Talvash del Kissel
 					coord = { 36.2, 3.8, MAP.IRONFORGE },
 					cost = {
-						{ "i", 9362, 1 },	-- Brilliant Gold Ring
-						{ "i", 2842, 1 },	-- Silver Bar
-						{ "i", 1206, 1 },	-- Moss Agate
+						{ "i", 9362, 1 },	-- 1x Brilliant Gold Ring
+						{ "i", 1206, 1 },	-- 1x Moss Agate
+						{ "i", 2842, 1 },	-- 1x Silver Bar
 						{ "g", 3000 },	-- 30s
 					},
 					races = ALLIANCE_ONLY,
@@ -425,7 +425,7 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/24 Robo-mechanical Guts
-							provider = { "i", 9309 },	-- Robo-mechanical Guts
+							provider = { "i", 9309 },	-- Robo-mechanical Guts (QI!)
 						}),
 						i(9608),	-- Shoni's Disarming Tool
 						i(9609),	-- Shilly Mitts
@@ -438,17 +438,17 @@ root(ROOTS.Instances, {
 					qg = 6142,	-- Mathiel
 					coord = { 59.2, 45.2, MAP.DARNASSUS },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 24,
+					isBreadcrumb = true,
 				}),
 				q(2950, {	-- Nogg's Ring Redo
 					sourceQuest = 2949,	-- Return of the Ring [Horde]
 					qg = 3412,	-- Nogg <Expert Engineer>
 					coord = { 75.8, 25.2, MAP.ORGRIMMAR },
 					cost = {
-						{ "i", 9362, 1 },	-- Brilliant Gold Ring
-						{ "i", 2842, 1 },	-- Silver Bar
-						{ "i", 1206, 1 },	-- Moss Agate
+						{ "i", 9362, 1 },	-- 1x Brilliant Gold Ring
+						{ "i", 1206, 1 },	-- 1x Moss Agate
+						{ "i", 2842, 1 },	-- 1x Silver Bar
 						{ "g", 3000 },	-- 30s
 					},
 					races = HORDE_ONLY,
@@ -481,17 +481,17 @@ root(ROOTS.Instances, {
 					qg = 3412,	-- Nogg <Expert Engineer>
 					coord = { 75.8, 25.2, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					lockCriteria = { 1, "questID", 2842 },	-- Chief Engineer Scooty
 					lvl = 25,
+					lockCriteria = { 1, "questID", 2842 },	-- Chief Engineer Scooty
 					groups = {
 						objective(1, {	-- 0/1 Rig Blueprints
 							providers = {
-								{ "i",   9153 },	-- Rig Blueprints
+								{ "i",   9153 },	-- Rig Blueprints (QI!)
 								{ "o", 142477 },	-- Thermaplugg's Safe
 							},
 						}),
 						objective(2, {	-- 0/1 Thermaplugg's Safe Combination
-							provider = { "i", 9299 },	-- Thermaplugg's Safe Combination
+							provider = { "i", 9299 },	-- Thermaplugg's Safe Combination (QI!)
 							cr = 7800,	-- Mekgineer Thermaplugg
 						}),
 						i(9623),	-- Civinad Robes
@@ -507,7 +507,7 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/1 Techbot's Memory Core
-							provider = { "i", 9277 },	-- Techbot's Memory Core
+							provider = { "i", 9277 },	-- Techbot's Memory Core (QI!)
 						}),
 					},
 				}),
@@ -515,8 +515,8 @@ root(ROOTS.Instances, {
 					qg = 6569,	-- Gnoarn
 					coord = { 69.6, 50.6, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 20,
+					isBreadcrumb = true,
 				}),
 				q(2929, {	-- The Grand Betrayal
 					qg = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
@@ -540,8 +540,8 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/1 High Potency Radioactive Fallout
-							provider = { "i", 9365 },	-- High Potency Radioactive Fallout
-							cost = { { "i", 9364, 1 } },	-- Heavy Leaden Collection Phial
+							provider = { "i", 9365 },	-- High Potency Radioactive Fallout (QI!)
+							cost = { { "i", 9364, 1 } },	-- 1x Heavy Leaden Collection Phial (QI!)
 							cr = 6219,	-- Corrosive Lurker
 						}),
 					},
@@ -551,8 +551,8 @@ root(ROOTS.Instances, {
 					coord = { 51.6, 48.6, MAP.STORMWIND_CITY },
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 20,
+					isBreadcrumb = true,
 				}),
 			}),
 			n(REWARDS, {
@@ -635,7 +635,7 @@ root(ROOTS.Instances, {
 					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 					i(7192),	-- Schematic: Goblin Rocket Boots (RECIPE!)
 					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
-					i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
+					i(4408),	-- Schematic: Mechanical Squirrel (RECIPE!)
 					i(4412),	-- Schematic: Moonsight Rifle (RECIPE!)
 					i(4414),	-- Schematic: Portable Bronze Mortar (RECIPE!)
 					i(4410),	-- Schematic: Shadow Goggles (RECIPE!)

@@ -134,126 +134,126 @@ ENCHANTING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_ALLIANCE = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 		{	-- Neutral
 			i(271624, {	-- Enchanting Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(249479, {	-- Formula: Enchant Weapon - Insight (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249480, {	-- Formula: Enchant Weapon - Recovery (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249481, {	-- Formula: Enchant Weapon - Revelation (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249482, {	-- Formula: Glimmering Staff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249476, {	-- Formula: Mystic Mushroom (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249484, {	-- Formula: Orb of Mystic Insight (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249485, {	-- Formula: Orb of Souls (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249478, {	-- Formula: Polished Driftwood Icon (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249483, {	-- Formula: Soulstaff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249477, {	-- Formula: Tenets of the Silver Hand (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 		}, {	-- Friendly
 			i(249510, {	-- Formula: Enchant Chest - Absorption (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249504, {	-- Formula: Enchant Necklace - Agility (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249505, {	-- Formula: Enchant Necklace - Deflection (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249503, {	-- Formula: Enchant Necklace - Healing Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249502, {	-- Formula: Enchant Necklace - Spell Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249496, {	-- Formula: Enchant Necklace - Strength (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249507, {	-- Formula: Dreamstaff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249494, {	-- Formula: Libram of Invocation (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249506, {	-- Formula: Radiant Staff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249493, {	-- Formula: Talons of Wrath (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249495, {	-- Formula: Totem of Ancestral Protection (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249508, {	-- Formula: Truesilver Conduit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249509, {	-- Formula: Twisting Essence Jar (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 		}, {	-- Honored
 			i(249537, {	-- Formula: Brilliant Wand (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(249526, {	-- Formula: Enchant 2H Weapon - Mighty Healing Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249525, {	-- Formula: Enchant 2H Weapon - Mighty Spell Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274394, {	-- Formula: Enchant 2H Weapon - Spellblasting (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274399, {	-- Formula: Enchant Cloak - Agility (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274401, {	-- Formula: Enchant Bracer - Greater Spellpower (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249539, {	-- Formula: Enchant Bracer - Superior Deflection (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249538, {	-- Formula: Enchant Bracer - Superior Intellect (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249534, {	-- Formula: Enchant Gloves - Arcane Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249536, {	-- Formula: Enchant Gloves - Holy Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249535, {	-- Formula: Enchant Gloves - Natural Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274398, {	-- Formula: Enchant Gloves - Superior Strength (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
-			i(274393, {	-- Formula: Enchant Off-Hand - Wisdom (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+			i(274393, {	-- Formula: Enchant Off Hand - Wisdom (RECIPE!)
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249529, {	-- Formula: Idol of the Dream (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249530, {	-- Formula: Libram of Holy Alacrity (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249532, {	-- Formula: Totem of Thunder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted
@@ -262,126 +262,126 @@ ENCHANTING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_HORDE = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 		{	-- Neutral
 			i(271624, {	-- Enchanting Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(249479, {	-- Formula: Enchant Weapon - Insight (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249480, {	-- Formula: Enchant Weapon - Recovery (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249481, {	-- Formula: Enchant Weapon - Revelation (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249482, {	-- Formula: Glimmering Staff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249476, {	-- Formula: Mystic Mushroom (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249484, {	-- Formula: Orb of Mystic Insight (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249485, {	-- Formula: Orb of Souls (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249478, {	-- Formula: Polished Driftwood Icon (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249483, {	-- Formula: Soulstaff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(249477, {	-- Formula: Tenets of the Silver Hand (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 		}, {	-- Friendly
 			i(249510, {	-- Formula: Enchant Chest - Absorption (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249504, {	-- Formula: Enchant Necklace - Agility (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249505, {	-- Formula: Enchant Necklace - Deflection (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249503, {	-- Formula: Enchant Necklace - Healing Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249502, {	-- Formula: Enchant Necklace - Spell Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249496, {	-- Formula: Enchant Necklace - Strength (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249507, {	-- Formula: Dreamstaff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249494, {	-- Formula: Libram of Invocation (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249506, {	-- Formula: Radiant Staff (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249493, {	-- Formula: Talons of Wrath (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249495, {	-- Formula: Totem of Ancestral Protection (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249508, {	-- Formula: Truesilver Conduit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(249509, {	-- Formula: Twisting Essence Jar (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 		}, {	-- Honored
 			i(249537, {	-- Formula: Brilliant Wand (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(249526, {	-- Formula: Enchant 2H Weapon - Mighty Healing Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249525, {	-- Formula: Enchant 2H Weapon - Mighty Spell Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274394, {	-- Formula: Enchant 2H Weapon - Spellblasting (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274399, {	-- Formula: Enchant Cloak - Agility (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274401, {	-- Formula: Enchant Bracer - Greater Spellpower (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249539, {	-- Formula: Enchant Bracer - Superior Deflection (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249538, {	-- Formula: Enchant Bracer - Superior Intellect (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249534, {	-- Formula: Enchant Gloves - Arcane Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249536, {	-- Formula: Enchant Gloves - Holy Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249535, {	-- Formula: Enchant Gloves - Natural Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(274398, {	-- Formula: Enchant Gloves - Superior Strength (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
-			i(274393, {	-- Formula: Enchant Off-Hand - Wisdom (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+			i(274393, {	-- Formula: Enchant Off Hand - Wisdom (RECIPE!)
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249529, {	-- Formula: Idol of the Dream (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249530, {	-- Formula: Libram of Holy Alacrity (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249532, {	-- Formula: Totem of Thunder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted

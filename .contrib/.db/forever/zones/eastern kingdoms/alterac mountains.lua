@@ -39,7 +39,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			faction(FACTION_SYNDICATE, {	-- Syndicate
 				description = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
 				minReputation = { FACTION_SYNDICATE, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
-				maxReputation = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
+				maxReputation = { FACTION_SYNDICATE, NEUTRAL },
 			}),
 		}),
 		lockpicking({
@@ -70,7 +70,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 		}),
 		n(PROFESSIONS, {
 			prof(FISHING, {
-				o(180685),	-- Waterlogged Wreckage
+				o(180685),	-- Floating Wreckage
 			}),
 		}),
 		n(QUESTS, {
@@ -98,8 +98,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					},
 				},
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(522, {	-- Assassin's Contract
 				provider = { "i", 3668 },	-- Assassin's Contract
@@ -114,7 +114,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Head of Baron Vardus
-						provider = { "i", 3626 },	-- Head of Baron Vardus
+						provider = { "i", 3626 },	-- Head of Baron Vardus (QI!)
 						coord = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2306,	-- Baron Vardus
 					}),
@@ -134,7 +134,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/9 Dirty Knucklebones
-						provider = { "i", 2843 },	-- Dirty Knucklebones
+						provider = { "i", 2843 },	-- Dirty Knucklebones (QI!)
 						crs = {
 							2253,	-- Crushridge Brute
 							2256,	-- Crushridge Enforcer
@@ -165,15 +165,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(1712, {	-- Cyclonian
 				sourceQuest = 1791,	-- The Windwatcher
 				qg = 6176,	-- Bath'rah the Windwatcher
-				qi = 6929,	-- Bath'rah's Parchment
 				coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 3357, 8 } },	-- Liferoot
+				cost = { { "i", 3357, 8 } },	-- 8x Liferoot
 				classes = { WARRIOR },
 				lvl = 30,
+				qi = 6929,	-- Bath'rah's Parchment (QI!)
 				groups = {
 					objective(2, {	-- 0/30 Bloodscalp Tusk
-						provider = { "i", 3901 },	-- Bloodscalp Tusk
+						provider = { "i", 3901 },	-- Bloodscalp Tusk (QI!)
 						crs = {
 							694,	-- Bloodscalp Axe Thrower
 							699,	-- Bloodscalp Beastmaster
@@ -193,17 +193,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						qg = 6176,	-- Bath'rah the Windwatcher
 						coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 						cost = {
-							{ "i", 4479, 8 },	-- Burning Charm
-							{ "i", 4481, 8 },	-- Cresting Charm
-							{ "i", 4480, 8 },	-- Thundering Charm
+							{ "i", 4479, 8 },	-- 8x Burning Charm
+							{ "i", 4481, 8 },	-- 8x Cresting Charm
+							{ "i", 4480, 8 },	-- 8x Thundering Charm
 						},
 						classes = { WARRIOR },
-						repeatable = true,
 						lvl = 30,
+						repeatable = true,
 						groups = {
 							objective(3, {	-- 0/1 Essence of the Exile
 								questID = 1712,	-- Cyclonian
-								provider = { "i", 6851 },	-- Essence of the Exile
+								provider = { "i", 6851 },	-- Essence of the Exile (QI!)
 							}),
 						},
 					}),
@@ -220,7 +220,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						provider = { "n", 2318 },	-- Argus Shadow Mage
 					}),
 					objective(2, {	-- 0/1 Head of Nagaz
-						provider = { "i", 3672 },	-- Head of Nagaz
+						provider = { "i", 3672 },	-- Head of Nagaz (QI!)
 						coord = { 39.6, 15.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2320,	-- Nagaz
 					}),
@@ -228,20 +228,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(8410, {	-- Elemental Mastery
 				qgs = {
-					5892,	-- Searn Firewarder <Shaman Trainer>
+					5892,	-- Searn Firewarder
 					3032,	-- Beram Skychaser <Shaman Trainer>
 				},
 				coords = {
 					{ 38.0, 37.8, MAP.ORGRIMMAR },	-- Searn Firewarder
 					{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 				},
-				races = HORDE_ONLY,
 				cost = {
-					{ "i", 7067, 1 },	-- Elemental Earth
-					{ "i", 7068, 1 },	-- Elemental Fire
-					{ "i", 7069, 1 },	-- Elemental Air
-					{ "i", 7070, 1 },	-- Elemental Water
+					{ "i", 7069, 1 },	-- 1x Elemental Air
+					{ "i", 7067, 1 },	-- 1x Elemental Earth
+					{ "i", 7068, 1 },	-- 1x Elemental Fire
+					{ "i", 7070, 1 },	-- 1x Elemental Water
 				},
+				races = HORDE_ONLY,
 				classes = { SHAMAN },
 				lvl = 50,
 			}),
@@ -253,7 +253,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/10 Encoded Fragment
-						provider = { "i", 20023 },	-- Encoded Fragment
+						provider = { "i", 20023 },	-- Encoded Fragment (QI!)
 						cr = 8766,	-- Forest Ooze
 					}),
 				},
@@ -285,11 +285,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(525, {	-- Further Mysteries
 				sourceQuest = 514,	-- Letter to Stormpike
 				qg = 1356,	-- Prospector Stormpike
-				qi = 3518,	-- Decrypted Letter
 				coord = { 74.4, 12.0, MAP.IRONFORGE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 3518,	-- Decrypted Letter (QI!)
 			}),
 			q(503, {	-- Gol'dir
 				sourceQuest = 533,	-- Infiltration
@@ -299,7 +299,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Rusted Iron Key
-						provider = { "i", 3704 },	-- Rusted Iron Key
+						provider = { "i", 3704 },	-- Rusted Iron Key (QI!)
 						coord = { 61.8, 40.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 2431,	-- Jailor Borhuin
 					}),
@@ -313,7 +313,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Syndicate Missive
-						provider = { "i", 3601 },	-- Syndicate Missive
+						provider = { "i", 3601 },	-- Syndicate Missive (QI!)
 						description = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
 						crs = {
 							2240,	-- Syndicate Footpad
@@ -325,10 +325,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(8249, {	-- Junkboxes Needed
 				qg = 6707,	-- Fahrad <Grand Master Rogue>
 				coord = { 84.4, 80.3, MAP.ALTERAC_MOUNTAINS },
-				maxReputation = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
-				cost = {{ "i", 16885, 5 }},	-- Heavy Junkbox
-				repeatable = true,
+				maxReputation = { FACTION_RAVENHOLDT, EXALTED },
+				cost = { { "i", 16885, 5 } },	-- 5x Heavy Junkbox
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(20086),	-- Dusksteel Throwing Knife
 				},
@@ -336,10 +336,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(514, {	-- Letter to Stormpike
 				sourceQuest = 511,	-- Encrypted Letter
 				qg = 2277,	-- Loremaster Dibbs
-				qi = 3521,	-- Cleverly Encrypted Letter
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 3521,	-- Cleverly Encrypted Letter (QI!)
 			}),
 			q(507, {	-- Lord Aliden Perenolde
 				sourceQuest = 506,	-- Blackmoore's Legacy
@@ -362,7 +362,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/7 Alterac Signet Ring
-						provider = { "i", 3505 },	-- Alterac Signet Ring
+						provider = { "i", 3505 },	-- Alterac Signet Ring (QI!)
 						crs = {
 							14221,	-- Gravis Slipknot
 							2246,	-- Syndicate Assassin
@@ -384,7 +384,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Sealed Azure Bag
-						provider = { "i", 19775 },	-- Sealed Azure Bag
+						provider = { "i", 19775 },	-- Sealed Azure Bag (QI!)
 						coord = { 43.5, 25.4, MAP.AZSHARA },
 						cr = 6188,	-- Timbermaw Shaman
 					}),
@@ -400,7 +400,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/8 Bloodshot Spider Eye
-						provider = { "i", 20610 },	-- Bloodshot Spider Eye
+						provider = { "i", 20610 },	-- Bloodshot Spider Eye (QI!)
 						crs = {
 							1821,	-- Carrion Lurker
 							1809,	-- Carrion Vulture
@@ -409,7 +409,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						},
 					}),
 					objective(2, {	-- 0/8 Thick Black Claw
-						provider = { "i", 20611 },	-- Thick Black Claw
+						provider = { "i", 20611 },	-- Thick Black Claw (QI!)
 						crs = {
 							1809,	-- Carrion Vulture
 							1815,	-- Diseased Black Bear
@@ -421,10 +421,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(554, {	-- Stormpike's Deciphering
 				sourceQuest = 551,	-- The Ensorcelled Parchment
 				qg = 2277,	-- Loremaster Dibbs
-				qi = 3706,	-- Ensorcelled Parchment
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				qi = 3706,	-- Ensorcelled Parchment (QI!)
 			}),
 			q(505, {	-- Syndicate Assassins
 				qg = 2276,	-- Magistrate Henry Maleb
@@ -446,19 +446,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				sourceQuest = 6681,	-- The Manor, Ravenholdt
 				qg = 6766,	-- Ravenholdt Guard <Assassin's League>
 				coord = { 85.2, 79.4, MAP.ALTERAC_MOUNTAINS },
-				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
-				cost = {{ "i", 17124, 1 }},	-- Syndicate Emblem
+				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },
+				cost = { { "i", 17124, 1 } },	-- 1x Syndicate Emblem
 				classes = { ROGUE },
-				repeatable = true,
 				lvl = 24,
+				repeatable = true,
 			}),
 			q(508, {	-- Taretha's Gift
 				sourceQuest = 507,	-- Lord Aliden Perenolde
 				qg = 2317,	-- Elysa
-				qi = 3498,	-- Taretha's Necklace
 				coord = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 29,
+				qi = 3498,	-- Taretha's Necklace (QI!)
 				groups = {
 					i(3765),	-- Brigand's Pauldrons
 					i(3764),	-- Mantis Boots
@@ -469,8 +469,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 57.60, 93.84, MAP.UNDERCITY },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 34,
+				isBreadcrumb = true,
 			}),
 			q(518, {	-- The Crown of Will (2/5)
 				sourceQuest = 495,	-- The Crown of Will (1/5)
@@ -492,17 +492,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/1 Targ's Head
-						provider = { "i", 3550 },	-- Targ's Head
+						provider = { "i", 3550 },	-- Targ's Head (QI!)
 						coord = { 39.6, 53.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2420,	-- Targ
 					}),
 					objective(2, {	-- 0/1 Muckrake's Head
-						provider = { "i", 3551 },	-- Muckrake's Head
+						provider = { "i", 3551 },	-- Muckrake's Head (QI!)
 						coord = { 38.8, 47.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2421,	-- Muckrake
 					}),
 					objective(3, {	-- 0/1 Glommus's Head
-						provider = { "i", 3552 },	-- Glommus's Head
+						provider = { "i", 3552 },	-- Glommus's Head (QI!)
 						coord = { 39.4, 41.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2422,	-- Glommus
 					}),
@@ -516,12 +516,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/1 Mug'thol's Head
-						provider = { "i", 3553 },	-- Mug'thol's Head
+						provider = { "i", 3553 },	-- Mug'thol's Head (QI!)
 						coord = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2257,	-- Mug'thol
 					}),
 					objective(2, {	-- 0/1 Crown of Will
-						provider = { "i", 3554 },	-- Mug'thol's Head
+						provider = { "i", 3554 },	-- Crown of Will (QI!)
 						coord = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2257,	-- Mug'thol
 					}),
@@ -530,10 +530,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(521, {	-- The Crown of Will (5/5)
 				sourceQuest = 520,	-- The Crown of Will (4/5)
 				qg = 2278,	-- Melisara
-				qi = 3554,	-- Crown of Will
 				coord = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 34,
+				qi = 3554,	-- Crown of Will (QI!)
 				groups = {
 					i(4430),	-- Ethereal Talisman
 				},
@@ -552,7 +552,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				description = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 				providers = {
 					{ "i", 17125 },	-- Seal of Ravenholdt
-					{ "i", 17126 },	-- Seal of Ravenholdt
+					{ "i", 17126 },	-- Elegant Letter
 				},
 				classes = { ROGUE },
 				lvl = 24,
@@ -565,7 +565,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Whirlwind Heart
-						provider = { "i", 6894 },	-- Whirlwind Heart
+						provider = { "i", 6894 },	-- Whirlwind Heart (QI!)
 						coord = { 80.6, 62.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 6239,	-- Cyclonian
 					}),
@@ -575,7 +575,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				altQuests = { 533 },	-- Infiltration (Can only be completed while on this quest)
 				qg = 2333,	-- Henchman Valik
 				coord = { 57.15, 69.50, MAP.ALTERAC_MOUNTAINS },
-				cost = { { "i", 3703, 1 } },	-- Southshore Stout
+				cost = { { "i", 3703, 1 } },	-- 1x Southshore Stout
 				races = HORDE_ONLY,
 				lvl = 29,
 				groups = {
@@ -590,7 +590,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Head of Baron Vardus
-						provider = { "i", 3626 },	-- Head of Baron Vardus
+						provider = { "i", 3626 },	-- Head of Baron Vardus (QI!)
 						coord = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2306,	-- Baron Vardus
 					}),
@@ -610,18 +610,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 			q(94912, {	-- Child of Nature
-				qg = 270459,	-- Alfina Nightgaze
+				qg = 270459,	-- Alfina Nightgaze <Druid Trainer>
 				coord = { 11.8, 56.6, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99191, {	-- A Donation of Wool
-				qg = 276170,	-- Belanaa Windveil
+				qg = 276170,	-- Belanaa Windveil <High Order Cloth Quartermaster>
 				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/60 Wool Cloth
 						provider = { "i", 2592 },	-- Wool Cloth
@@ -736,7 +736,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
-			n(6777, {	-- Zan Shivsproket <Speciality Engineer>
+			n(6777, {	-- Zan Shivsproket <Specialty Engineer>
 				coord = { 86.0, 80.0, MAP.ALTERAC_MOUNTAINS },
 				groups = {
 					i(7742, {	-- Schematic: Gnomish Cloaking Device (RECIPE!)
@@ -749,7 +749,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			i(3711, {	-- Belamoore's Research Journal
 				cr = 2415,	-- Warden Belamoore
 			}),
-			i(8491, {	-- Black Tabby Cat (PET!)
+			i(8491, {	-- Cat Carrier (Black Tabby) (PET!)
 				races = HORDE_ONLY,
 				crs = {
 					2271,	-- Dalaran Shield Guard

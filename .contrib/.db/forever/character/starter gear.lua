@@ -27,20 +27,20 @@ root(ROOTS.Character, {
 				--description = "Starter Gear for Tauren Druid",
 				races_disp = { TAUREN },
 			}),
-			i(271665, {	-- Thendral Survivalist's Boots
+			i(271665, {	-- Thendal Survivalist's Boots
 				--description = "Starter Gear for Skyborne (A) Hunter, Skyborne (A) Druid, Skyborne (H) Hunter, Skyborne (H) Druid",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271666, {	-- Thendral Survivalist's Pants
+			i(271666, {	-- Thendal Survivalist's Pants
 				--description = "Starter Gear for Skyborne (A) Hunter, Skyborne (A) Druid, Skyborne (H) Hunter, Skyborne (H) Druid",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271668, {	-- Thendral Survivalist's Shirt
+			i(271668, {	-- Thendal Survivalist's Shirt
 				--description = "Starter Gear for Skyborne (A) Hunter, Skyborne (A) Druid, Skyborne (H) Hunter, Skyborne (H) Druid",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	}),
@@ -62,20 +62,20 @@ root(ROOTS.Character, {
 				--description = "Starter Gear for Human Hunter, Dwarf Hunter, Night Elf Hunter",
 				races_disp = { HUMAN, DWARF, NIGHTELF },
 			}),
-			i(271665, {	-- Thendral Survivalist's Boots
+			i(271665, {	-- Thendal Survivalist's Boots
 				--description = "Starter Gear for Skyborne (A) Hunter, Skyborne (A) Druid, Skyborne (H) Hunter, Skyborne (H) Druid",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271666, {	-- Thendral Survivalist's Pants
+			i(271666, {	-- Thendal Survivalist's Pants
 				--description = "Starter Gear for Skyborne (A) Hunter, Skyborne (A) Druid, Skyborne (H) Hunter, Skyborne (H) Druid",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271668, {	-- Thendral Survivalist's Shirt
+			i(271668, {	-- Thendal Survivalist's Shirt
 				--description = "Starter Gear for Skyborne (A) Hunter, Skyborne (A) Druid, Skyborne (H) Hunter, Skyborne (H) Druid",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(6127, {	-- Trapper's Boots
 				--description = "Starter Gear for Orc Hunter",
@@ -133,20 +133,20 @@ root(ROOTS.Character, {
 				--description = "Starter Gear for Human Mage, Gnome Mage, Orc Mage, Undead Mage, Tauren Druid, Troll Mage, Skyborne (A) Mage",
 				races_disp = { HUMAN, GNOME, ORC, UNDEAD, TROLL, SKYBORNE_ALLIANCE },
 			}),
-			i(271659, {	-- Thendral Apprentice's Boots
+			i(271659, {	-- Thendal Apprentice's Boots
 				--description = "Starter Gear for Skyborne (A) Mage",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271658, {	-- Thendral Apprentice's Pants
+			i(271658, {	-- Thendal Apprentice's Pants
 				--description = "Starter Gear for Skyborne (A) Mage",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271655, {	-- Thendral Apprentice's Shirt
+			i(271655, {	-- Thendal Apprentice's Shirt
 				--description = "Starter Gear for Skyborne (A) Mage",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	}),
@@ -241,18 +241,18 @@ root(ROOTS.Character, {
 			}),
 			i(271673, {	-- Grove Scoundrel's Boots
 				--description = "Starter Gear for Skyborne (A) Rogue, Skyborne (H) Rogue",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(271674, {	-- Grove Scoundrel's Pants
 				--description = "Starter Gear for Skyborne (A) Rogue, Skyborne (H) Rogue",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(271675, {	-- Grove Scoundrel's Shirt
 				--description = "Starter Gear for Skyborne (A) Rogue, Skyborne (H) Rogue",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2947, {	-- Small Throwing Knife
 				--description = "Starter Gear for Human Rogue, Night Elf Rogue, Gnome Rogue, Undead Rogue, Skyborne (A) Rogue, Skyborne (H) Rogue",
@@ -305,25 +305,25 @@ root(ROOTS.Character, {
 				--description = "Starter Gear for Troll Shaman",
 				races_disp = { TROLL },
 			}),
-			i(271661, {	-- Thendral Novice's Boots
+			i(271661, {	-- Thendal Novice's Boots
 				--description = "Starter Gear for Skyborne (H) Shaman",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271662, {	-- Thendral Novice's Pants
+			i(271662, {	-- Thendal Novice's Pants
 				--description = "Starter Gear for Skyborne (H) Shaman",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271663, {	-- Thendral Novice's Shirt
+			i(271663, {	-- Thendal Novice's Shirt
 				--description = "Starter Gear for Skyborne (H) Shaman",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(280400, {	-- Worn Bludgeon
 				--description = "Starter Gear for Skyborne (H) Shaman",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(36, {	-- Worn Mace
 				--description = "Starter Gear for Human Priest, Dwarf Priest, Dwarf Shaman, Night Elf Priest, Gnome Priest, Orc Shaman, Undead Priest, Tauren Shaman, Troll Priest, Troll Shaman",
@@ -381,8 +381,8 @@ root(ROOTS.Character, {
 			}),
 			i(280399, {	-- Damaged Scimitar
 				--description = "Starter Gear for Skyborne (A) Warrior, Skyborne (H) Warrior",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(40, {	-- Recruit's Boots
 				--description = "Starter Gear for Human Warrior, Dwarf Warrior, Gnome Warrior",
@@ -408,20 +408,20 @@ root(ROOTS.Character, {
 				--description = "Starter Gear for Night Elf Warrior",
 				races_disp = { NIGHTELF },
 			}),
-			i(271671, {	-- Thendral Warrior's Boots
+			i(271671, {	-- Thendal Warrior's Boots
 				--description = "Starter Gear for Skyborne (A) Warrior, Skyborne (H) Warrior",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271672, {	-- Thendral Warrior's Pants
+			i(271672, {	-- Thendal Warrior's Pants
 				--description = "Starter Gear for Skyborne (A) Warrior, Skyborne (H) Warrior",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			i(271669, {	-- Thendral Warrior's Shirt
+			i(271669, {	-- Thendal Warrior's Shirt
 				--description = "Starter Gear for Skyborne (A) Warrior, Skyborne (H) Warrior",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(37, {	-- Worn Axe
 				--description = "Starter Gear for Dwarf Hunter, Orc Hunter, Tauren Hunter, Troll Warrior, Troll Hunter",
@@ -438,8 +438,8 @@ root(ROOTS.Character, {
 			i(876, {	-- Worn Wooden Buckler
 				-- CRIEVE NOTE: This is interesting because this was originally a NYI item in Retail.
 				--description = "Starter Gear for Skyborne (A) Warrior, Skyborne (H) Warrior",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races_disp = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2362, {	-- Worn Wooden Shield
 				description = "Starter Gear for Human Warrior, Night Elf Warrior, Gnome Warrior, Undead Warrior, Troll Warrior",

@@ -8,8 +8,8 @@ root(ROOTS.Instances, {
 		icon = [[~_.asset("hallofthanes")]],
 		zoneTextAreaID = 16919,	-- Hall of Thanes
 		coord = { 50.0, 50.0, MAP.IRONFORGE },
-		timeline = { TIMELINE.ADDED_1_60_1 },
 		lvl = 13,
+		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
 			n(QUESTS, {
 				q(96395, {	-- An Ancient Grudge
@@ -78,7 +78,7 @@ root(ROOTS.Instances, {
 					lvl = 9,
 					groups = {
 						objective(1, {	-- Deliver the Treaty of Understanding to Magni Bronzebeard
-							provider = { "n", 2784 },	-- King Magni Bronzebeard
+							provider = { "n", 2784 },	-- King Magni Bronzebeard <Lord of Ironforge>
 							coord = { 39.3, 56.0, MAP.IRONFORGE },
 						}),
 					},

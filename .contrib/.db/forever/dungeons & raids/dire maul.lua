@@ -154,32 +154,32 @@ root(ROOTS.Instances, {
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					description = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
-					cost = {
-						{ "i", 15994, 1 },	-- Thorium Widget
-						{ "i", 3829, 1 },	-- Frost Oil
-					},
 					provider = { "o", 179485 },	-- Broken Trap
 					maps = GORDOK_COMMONS_MAPS,
-					repeatable = true,
+					cost = {
+						{ "i", 3829, 1 },	-- 1x Frost Oil
+						{ "i", 15994, 1 },	-- 1x Thorium Widget
+					},
 					lvl = 56,
+					repeatable = true,
 				}),
-				q(27118, {	-- A Broken Trap
+				q(27118, {	-- A Broken Trap (TODO: verify quest name)
 					description = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
 					provider = { "o", 179485 },	-- Broken Trap
 					maps = GORDOK_COMMONS_MAPS,
-					repeatable = true,
 					lvl = 42,
+					repeatable = true,
 				}),
 				q(5527, {	-- A Reliquary of Purity
+					description = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					qg = 11801,	-- Rabine Saturna
 					coord = { 51.7, 45.1, MAP.MOONGLADE },
-					description = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					maps = { MAP.SILITHUS },
 					lvl = 56,
 					groups = {
 						objective(1, {	-- 0/1 Reliquary of Purity
 							providers = {
-								{ "i", 22201 },	-- Reliquary of Purity
+								{ "i", 22201 },	-- Reliquary of Purity (QI!)
 								{ "o", 179565 },	-- Dusty Reliquary
 							},
 							coord = { 63.2, 55.4, MAP.SILITHUS },
@@ -193,7 +193,7 @@ root(ROOTS.Instances, {
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Hydrospawn Essence
-							provider = { "i", 18299 },	-- Hydrospawn Essence
+							provider = { "i", 18299 },	-- Hydrospawn Essence (QI!)
 						}),
 						recipe(10140),	-- Conjure Water (Rank 7)
 					},
@@ -211,8 +211,8 @@ root(ROOTS.Instances, {
 					},
 					maps = { MAP.FERALAS },
 					races = HORDE_ONLY,
-					isBreadcrumb = true,
 					lvl = 54,
+					isBreadcrumb = true,
 				}),
 				q(7499, {	-- Codex of Defense
 					providers = {
@@ -333,25 +333,25 @@ root(ROOTS.Instances, {
 					},
 					maps = { MAP.FERALAS },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 54,
+					isBreadcrumb = true,
 				}),
 				q(5525, {	-- Free Knot!
 					description = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					qg = 14338,	-- Knot Thimblejack
-					cost = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					maps = GORDOK_COMMONS_MAPS,
+					cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 					lvl = 54,
 				}),
 				q(7429, {	-- Free Knot! (Repeatable)
 					description = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					sourceQuest = 5525,	-- Free Knot!
 					qg = 14338,	-- Knot Thimblejack
-					cost = { { "i", 18250, 1 } },	-- Gordok Shackle Key
-					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					maps = GORDOK_COMMONS_MAPS,
-					repeatable = true,
+					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
+					cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 					lvl = 54,
+					repeatable = true,
 				}),
 				q(7505, {	-- Frost Shock and You
 					providers = {
@@ -410,7 +410,7 @@ root(ROOTS.Instances, {
 					lvl = 54,
 					groups = {
 						objective(1, {	-- 0/1 Lethtendris's Web
-							provider = { "i", 18426 },	-- Lethtendris's Web
+							provider = { "i", 18426 },	-- Lethtendris's Web (QI!)
 						}),
 						i(18491),	-- Lorespinner
 					},
@@ -424,7 +424,7 @@ root(ROOTS.Instances, {
 					lvl = 54,
 					groups = {
 						objective(1, {	-- 0/1 Lethtendris's Web
-							provider = { "i", 18426 },	-- Lethtendris's Web
+							provider = { "i", 18426 },	-- Lethtendris's Web (QI!)
 						}),
 						i(18491),	-- Lorespinner
 					},
@@ -435,16 +435,16 @@ root(ROOTS.Instances, {
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
-						{ "i", 18333, 1 },	-- Libram of Focus
-						{ "i", 18335, 1 },	-- Pristine Black Diamond
-						{ "i", 14344, 4 },	-- Large Brilliant Shard
-						{ "i", 12753, 2 },	-- Skin of Shadow
+						{ "i", 14344, 4 },	-- 4x Large Brilliant Shard
+						{ "i", 18333, 1 },	-- 1x Libram of Focus
+						{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
+						{ "i", 12753, 2 },	-- 2x Skin of Shadow
 					},
-					repeatable = true,
 					lvl = 57,
+					repeatable = true,
 					groups = {
 						i(18330),	-- Arcanum of Focus
 					},
@@ -455,16 +455,16 @@ root(ROOTS.Instances, {
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
-						{ "i", 18334, 1 },	-- Libram of Protection
-						{ "i", 18335, 1 },	-- Pristine Black Diamond
-						{ "i", 14344, 2 },	-- Large Brilliant Shard
-						{ "i", 12735, 1 },	-- Frayed Abomination Stitching
+						{ "i", 12735, 1 },	-- 1x Frayed Abomination Stitching
+						{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
+						{ "i", 18334, 1 },	-- 1x Libram of Protection
+						{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
 					},
-					repeatable = true,
 					lvl = 57,
+					repeatable = true,
 					groups = {
 						i(18331),	-- Arcanum of Protection
 					},
@@ -475,16 +475,16 @@ root(ROOTS.Instances, {
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
-						{ "i", 18332, 1 },	-- Libram of Rapidity
-						{ "i", 18335, 1 },	-- Pristine Black Diamond
-						{ "i", 14344, 2 },	-- Large Brilliant Shard
-						{ "i", 12938, 2 },	-- Blood of Heroes
+						{ "i", 12938, 2 },	-- 2x Blood of Heroes
+						{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
+						{ "i", 18332, 1 },	-- 1x Libram of Rapidity
+						{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
 					},
-					repeatable = true,
 					lvl = 57,
+					repeatable = true,
 					groups = {
 						i(18329),	-- Arcanum of Rapidity
 					},
@@ -496,7 +496,7 @@ root(ROOTS.Instances, {
 					lvl = 54,
 					groups = {
 						objective(1, {	-- 0/1 Book of Incantations
-							provider = { "i", 18261 },	-- Book of Incantations
+							provider = { "i", 18261 },	-- Book of Incantations (QI!)
 						}),
 						i(18410),	-- Sprinter's Sword
 						i(18411),	-- Spry Boots
@@ -509,10 +509,10 @@ root(ROOTS.Instances, {
 					lvl = 56,
 					groups = {
 						objective(1, {	-- 0/1 Sealed Reliquary of Purity
-							provider = { "i", 18540 },	-- Sealed Reliquary of Purity
+							provider = { "i", 18540 },	-- Sealed Reliquary of Purity (QI!)
 							cost = {
-								{ "i", 18539, 1 },	-- Reliquary of Purity
-								{ "i", 18501, 1 },	-- Felvine Shard
+								{ "i", 18501, 1 },	-- 1x Felvine Shard (QI!)
+								{ "i", 18539, 1 },	-- 1x Reliquary of Purity (QI!)
 							},
 						}),
 						i(18535),	-- Milli's Shield
@@ -547,10 +547,10 @@ root(ROOTS.Instances, {
 					qg = 14338,	-- Knot Thimblejack
 					maps = GORDOK_COMMONS_MAPS,
 					cost = {
-						{ "i", 14048, 4 },	-- Bolt of Runecloth
-						{ "i", 8170, 8 },	-- Rugged Leather
-						{ "i", 14341, 2 },	-- Rune Thread
-						{ "i", 18240, 1 },	-- Ogre Tannin
+						{ "i", 14048, 4 },	-- 4x Bolt of Runecloth
+						{ "i", 18240, 1 },	-- 1x Ogre Tannin
+						{ "i", 8170, 8 },	-- 8x Rugged Leather
+						{ "i", 14341, 2 },	-- 2x Rune Thread
 					},
 					lvl = 56,
 					groups = {
@@ -570,16 +570,16 @@ root(ROOTS.Instances, {
 				q(5519, {	-- The Gordok Ogre Suit (Repeatable)
 					sourceQuest = 5518,	-- The Gordok Ogre Suit
 					qg = 14338,	-- Knot Thimblejack
-					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 					maps = GORDOK_COMMONS_MAPS,
 					cost = {
-						{ "i", 14048, 4 },	-- Bolt of Runecloth
-						{ "i", 8170, 8 },	-- Rugged Leather
-						{ "i", 14341, 2 },	-- Rune Thread
-						{ "i", 18240, 1 },	-- Ogre Tannin
+						{ "i", 14048, 4 },	-- 4x Bolt of Runecloth
+						{ "i", 18240, 1 },	-- 1x Ogre Tannin
+						{ "i", 8170, 8 },	-- 8x Rugged Leather
+						{ "i", 14341, 2 },	-- 2x Rune Thread
 					},
-					repeatable = true,
 					lvl = 56,
+					repeatable = true,
 					groups = {
 						i(18258),	-- Gordok Ogre Suit
 					},
@@ -652,7 +652,7 @@ root(ROOTS.Instances, {
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Gauntlet of Gordok Might
-							provider = { "i", 18336 },	-- Gauntlet of Gordok Might
+							provider = { "i", 18336 },	-- Gauntlet of Gordok Might (QI!)
 						}),
 						i(18367),	-- Gordok's Gauntlets
 						i(18368),	-- Gordok's Gloves
@@ -710,7 +710,7 @@ root(ROOTS.Instances, {
 			o(179547, {	-- A Dusty Tome
 				maps = ALL_DIREMAUL_MAPS,
 				groups = {
-					i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+					i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Extreme' Anglin."
 						lore = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
 						description = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
 					}),
@@ -819,16 +819,16 @@ root(ROOTS.Instances, {
 					}),
 					n(16097, {	-- Isalien
 						description = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
-						cost = {{ "i", 22050, 1 }},	-- Brazier of Beckoning [Isalien]
 						provider = { "i", 22057 },	-- Brazier of Invocation
+						cost = { { "i", 22050, 1 } },	-- 1x Brazier of Beckoning [Isalien]
 						groups = {
 							objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								questID = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
-								provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+								provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 							}),
 							objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
 								questID = 8990,	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
-								provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
+								provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet (QI!)
 							}),
 							i(22472),	-- Boots of Ferocity
 							i(22315),	-- Hammer of Revitalization
@@ -861,7 +861,7 @@ root(ROOTS.Instances, {
 			DIREMAUL_SUBMAP(235, GORDOK_COMMONS, {		-- Gordok Commons (North)
 				coord = { 62.48, 24.48, MAP.FERALAS },	-- Dire Maul [North]
 				maps = GORDOK_COMMONS_MAPS,
-				cost = {{ "i", 18249, 1 }},	-- Crescent Key
+				cost = { { "i", 18249, 1 } },	-- 1x Crescent Key
 				groups = {
 					n(ZONE_DROPS, {
 						i(18250, {	-- Gordok Shackle Key
@@ -946,7 +946,7 @@ root(ROOTS.Instances, {
 					}),
 					o(179501, {	-- Knot Thimblejack's Cache
 						sourceQuest = 5525,	-- Free Knot!
-						cost = {{ "i", 18250, 1 }},	-- Gordok Shackle Key
+						cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 						groups = {
 							i(18240),	-- Ogre Tannin
 							--[[ Commented out until confirmed
@@ -974,8 +974,8 @@ root(ROOTS.Instances, {
 						creatureID = 14325,
 						description = "In order to get to this boss, you must use the Inner Door Key or have an engineer open the door using a Seaforium Charge.\n\nUse the Gordok Ogre Suit to skip him. (talk to him)",
 						cost = {
-							{ "i", 18268, 1 },	-- Gordok Inner Door Key
-							{ "i", 18258, 1 },	-- Gordok Ogre Suit
+							{ "i", 18268, 1 },	-- 1x Gordok Inner Door Key
+							{ "i", 18258, 1 },	-- 1x Gordok Ogre Suit
 						},
 						groups = {
 							i(18507),	-- Boots of the Full Moon
@@ -1043,7 +1043,7 @@ root(ROOTS.Instances, {
 			DIREMAUL_SUBMAP(236, CAPITAL_GARDENS, {		-- Capital Gardens (West)
 				coord = { 60.32, 30.17, MAP.FERALAS },	-- Dire Maul [West]
 				maps = CAPITAL_GARDENS_MAPS,
-				cost = {{ "i", 18249, 1 }},	-- Crescent Key
+				cost = { { "i", 18249, 1 } },	-- 1x Crescent Key
 				groups = {
 					n(VENDORS, {
 						n(14371, {	-- Shen'dralar Provisioner
@@ -1167,9 +1167,9 @@ root(ROOTS.Instances, {
 						description = "|cff3399ffSTEP 1:|r Find a Warlock that is on or has completed Dreadsteed of Xoroth.\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs, Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 12.4, 31.6)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",
 						sourceQuest = 7631,	-- Dreadsteed of Xoroth
 						cost = {
-							{ "i", 18670, 1 },	-- Xorothian Glyphs
-							{ "i", 18629, 1 },	-- Black Lodestone
-							{ "i", 18663, 1 },	-- J'eevee's Jar
+							{ "i", 18629, 1 },	-- 1x Black Lodestone
+							{ "i", 18663, 1 },	-- 1x J'eevee's Jar
+							{ "i", 18670, 1 },	-- 1x Xorothian Glyphs
 						},
 						groups = {
 							i(18757),	-- Diabolic Mantle
@@ -1178,7 +1178,7 @@ root(ROOTS.Instances, {
 							i(18755),	-- Xorothian Firestick
 						},
 					}),
-					n(16032, {	-- Falrin Treeshaper <House of Shen'dralar>
+					n(16032, {	-- Falrin Treeshaper
 						description = "Found in the Dire Maul Library.",
 						groups = {
 							n(SPECIAL, {

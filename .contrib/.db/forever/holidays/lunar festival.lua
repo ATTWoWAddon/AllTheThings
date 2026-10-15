@@ -141,8 +141,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 				coord = { 53.8, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21737),	-- Schematic: Cluster Launcher (RECIPE!)
@@ -152,8 +152,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 				coord = { 53.8, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21741, {	-- Cluster Rocket Recipes
@@ -168,8 +168,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				sourceQuest = 8883,	-- Valadar Starsong
 				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				_drop = { "g" },
 				groups = {
 					objective(1, {	-- 0/1 Receive Elune's Blessing
@@ -180,18 +180,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8862, {	-- Elune's Candle
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21713),	-- Elune's Candle
 				},
 			}),
 			q(8863, {	-- Festival Dumplings
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 1 } },
 				repeatable = true,
@@ -200,7 +200,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8864, {	-- Festive Lunar Dresses
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
 				repeatable = true,
@@ -212,7 +212,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8865, {	-- Festive Lunar Pant Suits
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
 				isYearly = true,
@@ -227,8 +227,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 				coord = { 53.8, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21722),	-- Pattern: Festival Dress (RECIPE!)
@@ -239,8 +239,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 				coord = { 53.8, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21738),	-- Schematic: Firework Launcher (RECIPE!)
@@ -250,8 +250,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 				coord = { 53.8, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21743, {	-- Large Cluster Rocket Recipes
@@ -265,8 +265,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 				coord = { 53.8, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				repeatable = true,
 				lvl = 35,
+				repeatable = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21742, {	-- Large Rocket Recipes
@@ -303,8 +303,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 				coord = { 53.8, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
-				repeatable = true,
 				lvl = 25,
+				repeatable = true,
 				groups = {
 					i(21640),	-- Lunar Festival Fireworks Pack
 					i(21740, {	-- Small Rocket Recipes
@@ -318,43 +318,43 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				qg = 15892,	-- Lunar Festival Emissary
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				isYearly = true,
+				isBreadcrumb = true,
 			}),
 			q(8871, {	-- The Lunar Festival (A)
 				qg = 15892,	-- Lunar Festival Emissary
 				maps = { MAP.STORMWIND_CITY, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				isYearly = true,
+				isBreadcrumb = true,
 			}),
 			q(8872, {	-- The Lunar Festival (A)
 				qg = 15892,	-- Lunar Festival Emissary
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				isYearly = true,
+				isBreadcrumb = true,
 			}),
 			q(8873, {	-- The Lunar Festival (H)
 				qg = 15891,	-- Lunar Festival Herald
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				isYearly = true,
+				isBreadcrumb = true,
 			}),
 			q(8874, {	-- The Lunar Festival (H)
 				qg = 15891,	-- Lunar Festival Herald
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				isYearly = true,
+				isBreadcrumb = true,
 			}),
 			q(8875, {	-- The Lunar Festival (H)
 				qg = 15891,	-- Lunar Festival Herald
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				isYearly = true,
+				isBreadcrumb = true,
 			}),
 			q(8883, {	-- Valadar Starsong
 				description = "Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",
@@ -368,8 +368,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					{ 49.1, 55.8, MAP.ORGRIMMAR },
 					{ 38.6, 30.3, MAP.DARNASSUS },
 				},
-				isBreadcrumb = true,
 				isYearly = true,
+				isBreadcrumb = true,
 			}),
 			preWrathEldersHeader(ELDERS_OF_THE_ALLIANCE, {	-- Elders of the Alliance
 				q(8718, {	-- Bladeswift the Elder
@@ -377,8 +377,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					coord = { 33.5, 14.3, MAP.DARNASSUS },
 				}),
 				q(8866, {	-- Bronzebeard the Elder
-					coord = { 29.1, 17.0, MAP.IRONFORGE },	-- The Mystic Ward
 					qg = 15871,	-- Elder Bronzebeard
+					coord = { 29.1, 17.0, MAP.IRONFORGE },	-- The Mystic Ward
 				}),
 				q(8646, {	-- Hammershout the Elder
 					qg = 15562,	-- Elder Hammershout
@@ -391,12 +391,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					coord = { 66.6, 38.2, MAP.UNDERCITY },
 				}),
 				q(8677, {	-- Darkhorn the Elder
-					coord = { 40.9, 33.9, MAP.ORGRIMMAR },
 					qg = 15579,	-- Elder Darkhorn
+					coord = { 40.9, 33.9, MAP.ORGRIMMAR },
 				}),
 				q(8678, {	-- Wheathoof the Elder [Wrath+] / Proudhorn the Elder [Classic]
-					coord = { 73.0, 23.4, MAP.THUNDER_BLUFF },	-- The Elder Rise
 					qg = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
+					coord = { 73.0, 23.4, MAP.THUNDER_BLUFF },	-- The Elder Rise
 				}),
 			}),
 			preWrathEldersHeader(ELDERS_OF_EASTERN_KINGDOMS, {	-- Elders of Eastern Kingdoms
@@ -425,8 +425,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					coord = { 21.3, 79.0, MAP.SEARING_GORGE },
 				}),
 				q(8722, {	-- Meadowrun the Elder
-					coord = { 66.0, 47.8, MAP.WESTERN_PLAGUELANDS },
 					qg = 15602,	-- Elder Meadowrun
+					coord = { 66.0, 47.8, MAP.WESTERN_PLAGUELANDS },
 				}),
 				q(8714, {	-- Moonstrike the Elder
 					qg = 15594,	-- Elder Moonstrike
@@ -558,8 +558,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 			preWrathEldersHeader(ELDERS_OF_THE_DUNGEONS, {	-- Elders of the Dungeons
 				q(8727, {	-- Farwhisper the Elder
 					description = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
-					coord = { 48.1, 21.9, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
 					qg = 15607,	-- Elder Farwhisper
+					coord = { 48.1, 21.9, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
 					maps = { MAP.STRATHOLME },
 				}),
 				q(8619, {	-- Morndeep the Elder
@@ -576,8 +576,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				}),
 				q(8713, {	-- Starsong the Elder
 					description = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
-					coord = { 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 					qg = 15593,	-- Elder Starsong
+					coord = { 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 					maps = { MAP.TEMPLE_OF_ATALHAKKAR },
 				}),
 				q(8644, {	-- Stonefort the Elder

@@ -63,7 +63,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Ryedol's Lucky Pick
-						provider = { "i", 4616 },	-- Ryedol's Lucky Pick
+						provider = { "i", 4616 },	-- Ryedol's Lucky Pick (QI!)
 						crs = {
 							2742,	-- Shadowforge Chanter
 							2744,	-- Shadowforge Commander
@@ -97,7 +97,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Hammertoe's Amulet
-						provider = { "i", 4635 },	-- Hammertoe's Amulet
+						provider = { "i", 4635 },	-- Hammertoe's Amulet (QI!)
 						coord = { 38.0, 92.6, MAP.LOCH_MODAN },
 						cr = 2932,	-- Magregan Deepshadow
 					}),
@@ -111,7 +111,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Ambassador Infernus' Bracer
-						provider = { "i", 4621 },	-- Ambassador Infernus' Bracer
+						provider = { "i", 4621 },	-- Ambassador Infernus' Bracer (QI!)
 						coord = { 42.1, 28.9, MAP.BADLANDS },
 						qg = 2745,	-- Ambassador Infernus
 					}),
@@ -125,7 +125,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/5 Buzzard Gizzard
-						provider = { "i", 7847 },	-- Buzzard Gizzard
+						provider = { "i", 7847 },	-- Buzzard Gizzard (QI!)
 						crs = {
 							2830,	-- Buzzard
 							2831,	-- Giant Buzzard
@@ -133,7 +133,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 						},
 					}),
 					objective(2, {	-- 0/10 Crag Coyote Fang
-						provider = { "i", 7846 },	-- Crag Coyote Fang
+						provider = { "i", 7846 },	-- Crag Coyote Fang (QI!)
 						crs = {
 							2727,	-- Crag Coyote
 							2729,	-- Elder Crag Coyote
@@ -142,7 +142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 						},
 					}),
 					objective(3, {	-- 0/5 Rock Elemental Shard
-						provider = { "i", 7848 },	-- Rock Elemental Shard
+						provider = { "i", 7848 },	-- Rock Elemental Shard (QI!)
 						crs = {
 							2745,	-- Ambassador Infernus
 							2791,	-- Enraged Rock Elemental
@@ -166,8 +166,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/3 Vessel of Dragon's Blood
-						provider = { "i", 7867 },	-- Vessel of Dragon's Blood
-						cost = {{ "i", 7866, 1 }},	-- Empty Thaumaturgy Vessel
+						provider = { "i", 7867 },	-- Vessel of Dragon's Blood (QI!)
+						cost = { { "i", 7866, 1 } },	-- 1x Empty Thaumaturgy Vessel (QI!)
 						cr = 2726,	-- Scorched Guardian
 					}),
 					i(7870, {	-- Thaumaturgy Vessel Lockbox
@@ -179,7 +179,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(703, {	-- Barbecued Buzzard Wings
 				qg = 2817,	-- Rigglefuzz
 				coord = { 42.39, 52.93, MAP.BADLANDS },
-				cost = { { "i", 3404, 4 } },	-- Buzzard Wing
+				cost = { { "i", 3404, 4 } },	-- 4x Buzzard Wing
 				lvl = 33,
 				groups = {
 					i(4457),	-- Barbecued Buzzard Wing
@@ -193,7 +193,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Sign of the Earth
-						provider = { "i", 4640 },	-- Sign of the Earth
+						provider = { "i", 4640 },	-- Sign of the Earth (QI!)
 					}),
 				},
 			}),
@@ -205,10 +205,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Blacklash's Bindings
-						provider = { "i", 4615 },	-- Blacklash's Bindings
+						provider = { "i", 4615 },	-- Blacklash's Bindings (QI!)
 					}),
 					objective(2, {	-- 0/1 Chains of Hematus
-						provider = { "i", 4645 },	-- Chains of Hematus
+						provider = { "i", 4645 },	-- Chains of Hematus (QI!)
 					}),
 					i(11193),	-- Blazewind Breastplate
 					i(11196),	-- Mindburst Medallion
@@ -219,7 +219,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(713, {	-- Coolant Heads Prevail
 				qg = 2921,	-- Lotwil Veriatus
 				coord = { 26.0, 44.9, MAP.BADLANDS },
-				cost = {{ "i", 3829, 1 }},	-- Frost Oil
+				cost = { { "i", 3829, 1 } },	-- 1x Frost Oil
 				lvl = 35,
 			}),
 			q(1419, {	-- Coyote Thieves
@@ -229,7 +229,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/30 Coyote Jawbone
-						provider = { "i", 6166 },	-- Coyote Jawbone
+						provider = { "i", 6166 },	-- Coyote Jawbone (QI!)
 						crs = {
 							2727,	-- Crag Coyote
 							2729,	-- Elder Crag Coyote
@@ -240,7 +240,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 			}),
 			q(3821, {	-- Dreadmaul Rock
-				qg = 9082,	-- Thal'trak Proudtusk
+				qg = 9082,	-- Thal'trak Proudtusk <Kargath Expeditionary Force>
 				coord = { 3.4, 48.0, MAP.BADLANDS },
 				races = HORDE_ONLY,
 				lvl = 48,
@@ -252,7 +252,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- Black Drake's Heart
-						provider = { "i", 4612 },	-- Black Drake's Heart
+						provider = { "i", 4612 },	-- Black Drake's Heart (QI!)
 						crs = {
 							2726,	-- Scorched Guardian
 							2725,	-- Scalding Whelp
@@ -274,15 +274,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(737, {	-- Forbidden Knowledge
 				allianceQuestData = {
 					qg = 2786,	-- Gerrig Bonegrip
-					qi = 4647,	-- Yagyin's Digest
 					sourceQuest = 735,	-- The Star, the Hand and the Heart [A]
 					coord = { 50.8, 5.6, MAP.IRONFORGE },
+					qi = 4647,	-- Yagyin's Digest (QI!)
 				},
 				hordeQuestData = {
 					qg = 2934,	-- Keeper Bel'dugur
-					qi = 4647,	-- Yagyin's Digest
 					sourceQuest = 736,	-- The Star, the Hand and the Heart [H]
 					coord = { 53.7, 54.5, MAP.UNDERCITY },
+					qi = 4647,	-- Yagyin's Digest (QI!)
 				},
 				lvl = 30,
 				groups = {
@@ -293,7 +293,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				sourceQuest = 713,	-- Coolant Heads Prevail
 				qg = 2921,	-- Lotwil Veriatus
 				coord = { 26.0, 44.9, MAP.BADLANDS },
-				cost = { { "i", 4389, 1 } },	-- Gyrochronatom
+				cost = { { "i", 4389, 1 } },	-- 1x Gyrochronatom
 				lvl = 35,
 			}),
 			q(1108, {	-- Indurium
@@ -303,7 +303,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/10 Indurium Flake
-						provider = { "i", 5797 },	-- Indurium Flake
+						provider = { "i", 5797 },	-- Indurium Flake (QI!)
 						crs = {
 							6733,	-- Stonevault Basher
 							2893,	-- Stonevault Bonesnapper
@@ -321,8 +321,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2920,	-- Lucien Tosselwrench
 				coord = { 25.8, 44.2, MAP.BADLANDS },
 				cost = {
-					{ "i", 929, 1 },	-- Healing Potion
-					{ "i", 3823, 1 },	-- Lesser Invisibility Potion
+					{ "i", 929, 1 },	-- 1x Healing Potion
+					{ "i", 3823, 1 },	-- 1x Lesser Invisibility Potion
 				},
 				lvl = 35,
 				groups = {
@@ -338,7 +338,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Supply Crate
 						providers = {
-							{ "i", 4629 },	-- Supply Crate
+							{ "i", 4629 },	-- Supply Crate (QI!)
 							{ "o", 2867 },	-- Excavation Supply Crate
 						},
 						coord = { 66.5, 31.6, MAP.BADLANDS },
@@ -375,10 +375,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(725, {	-- Passing Word of a Threat (1/2)
 				sourceQuest = 724,	-- Prospect of Faith (2/2)
 				qg = 2916,	-- Historian Karnik
-				qi = 4622,	-- Sealed Note to Advisor Belgrum
 				coord = { 77.5, 11.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
+				qi = 4622,	-- Sealed Note to Advisor Belgrum (QI!)
 			}),
 			q(726, {	-- Passing Word of a Threat (2/2)
 				sourceQuest = 725,	-- Passing Word of a Threat (1/2)
@@ -391,7 +391,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2817,	-- Rigglefuzz
 				coord = { 42.39, 52.93, MAP.BADLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
-				cost = {{ "i", 4611, 9 }},	-- Blue Pearl
+				cost = { { "i", 4611, 9 } },	-- 9x Blue Pearl
 				lvl = 30,
 				groups = {
 					i(4086),	-- Flash Rifle
@@ -406,7 +406,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/8 Dentrium Power Stone
-						provider = { "i", 8009 },	-- Dentrium Power Stone
+						provider = { "i", 8009 },	-- Dentrium Power Stone (QI!)
 						crs = {
 							4844,	-- Shadowforge Surveyor
 							4845,	-- Shadowforge Ruffian
@@ -420,7 +420,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 						},
 					}),
 					objective(2, {	-- 0/8 An'Alleum Power Stone
-						provider = { "i", 8052 },	-- An'Alleum Power Stone
+						provider = { "i", 8052 },	-- An'Alleum Power Stone (QI!)
 						crs = {
 							4844,	-- Shadowforge Surveyor
 							4845,	-- Shadowforge Ruffian
@@ -441,18 +441,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(723, {	-- Prospect of Faith (1/2)
 				sourceQuest = 722,	-- Amulet of Secrets
 				qg = 2909,	-- Hammertoe Grez
-				qi = 4635,	-- Hammertoe's Amulet
 				coord = { 37.94, 10.53, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
+				qi = 4635,	-- Hammertoe's Amulet (QI!)
 			}),
 			q(724, {	-- Prospect of Faith (2/2)
 				sourceQuest = 723,	-- Prospect of Faith (1/2)
-				qg = 2910,	-- Prospector Ryedol
-				qi = 4635,	-- Hammertoe's Amulet
+				qg = 2910,	-- Prospector Ryedol <Explorers' League>
 				coord = { 53.4, 43.2, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
+				qi = 4635,	-- Hammertoe's Amulet (QI!)
 			}),
 			q(1360, {	-- Reclaimed Treasures
 				qg = 6294,	-- Krom Stoutarm
@@ -463,7 +463,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Krom Stoutarm's Treasure
 						providers = {
-							{ "i", 8027 },		-- Krom Stoutarm's Treasure
+							{ "i", 8027 },		-- Krom Stoutarm's Treasure (QI!)
 							{ "o", 124389 },	-- Krom Stoutarm's Chest
 						},
 						coord = { 35.2, 97.4, MAP.LOCH_MODAN },
@@ -479,7 +479,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Garrett Family Treasure
 						providers = {
-							{ "i", 8026 },		-- Garrett Family Treasure
+							{ "i", 8026 },		-- Garrett Family Treasure (QI!)
 							{ "o", 124388 },	-- Garrett Family Chest
 						},
 						coord = { 33.9, 93.0, MAP.LOCH_MODAN },
@@ -489,11 +489,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(1420, {	-- Report to Helgrum
 				sourceQuest = 1418,	-- Neeka Bloodscar
 				qg = 5394,	-- Neeka Bloodscar
-				qi = 6167,	-- Neeka's Report
 				coord = { 6.5, 47.2, MAP.BADLANDS },
 				maps = { MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
 				lvl = 30,
+				qi = 6167,	-- Neeka's Report (QI!)
 			}),
 			q(733, {	-- Scrounging
 				sourceQuest = 718,	-- Mirages
@@ -503,7 +503,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/7 Scrap Metal
-						provider = { "i", 4630 },	-- Scrap Metal
+						provider = { "i", 4630 },	-- Scrap Metal (QI!)
 						crs = {
 							2715,	-- Dustbelcher Brute
 							2719,	-- Dustbelcher Lord
@@ -528,8 +528,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					{ "i", 4844 },	-- Opal Runestone
 					{ "i", 4843 },	-- Amethyst Runestone
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 				groups = {
 					i(4615, {	-- Blacklash's Bindings
 						coord = { 82.6, 48.8, MAP.BADLANDS },
@@ -549,8 +549,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					{ "i", 4844 },	-- Opal Runestone
 					{ "i", 4843 },	-- Amethyst Runestone
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 				groups = {
 					i(4615, {	-- Blacklash's Bindings
 						coord = { 82.6, 48.8, MAP.BADLANDS },
@@ -569,7 +569,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet of Ryun'eh
 						providers = {
-							{ "i", 4631 },	-- Tablet of Ryun'eh
+							{ "i", 4631 },	-- Tablet of Ryun'eh (QI!)
 							{ "o", 126260 },	-- Ancient Chest
 						},
 						coord = { 39.3, 18.8, MAP.BADLANDS },
@@ -584,7 +584,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 				qg = 2920,	-- Lucien Tosselwrench
 				coord = { 25.8, 44.4, MAP.BADLANDS },
-				cost = { { "i", 2868, 1 } },	-- Patterned Bronze Bracers
+				cost = { { "i", 2868, 1 } },	-- 1x Patterned Bronze Bracers
 				lvl = 35,
 				groups = {
 					i(4979),	-- Enchanted Stonecloth Bracers
@@ -596,7 +596,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/10 Small Stone Shard
-						provider = { "i", 4626 },	-- Small Stone Shard
+						provider = { "i", 4626 },	-- Small Stone Shard (QI!)
 						cr = 2735,	-- Lesser Rock Elemental
 					}),
 				},
@@ -608,7 +608,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/3 Large Stone Slab
-						provider = { "i", 4627 },	-- Large Stone Slab
+						provider = { "i", 4627 },	-- Large Stone Slab (QI!)
 						cr = 92,	-- Rock Elemental
 					}),
 				},
@@ -620,7 +620,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/5 Bracers of Rock Binding
-						provider = { "i", 4628 },	-- Bracers of Rock Binding
+						provider = { "i", 4628 },	-- Bracers of Rock Binding (QI!)
 						cr = 2736,	-- Greater Rock Elemental
 					}),
 				},
@@ -632,15 +632,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Torn Scroll Fragment
-						provider = { "i", 4518 },	-- Torn Scroll Fragment
+						provider = { "i", 4518 },	-- Torn Scroll Fragment (QI!)
 						cr = 2791,	-- Enraged Rock Elemental
 					}),
 					objective(2, {	-- 0/1 Crumpled Scroll Fragment
-						provider = { "i", 4519 },	-- Crumpled Scroll Fragment
+						provider = { "i", 4519 },	-- Crumpled Scroll Fragment (QI!)
 						cr = 2791,	-- Enraged Rock Elemental
 					}),
 					objective(3, {	-- 0/1 Singed Scroll Fragment
-						provider = { "i", 4520 },	-- Singed Scroll Fragment
+						provider = { "i", 4520 },	-- Singed Scroll Fragment (QI!)
 						cr = 2791,	-- Enraged Rock Elemental
 					}),
 				},
@@ -648,24 +648,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(735, {	-- The Star, the Hand and the Heart [A]
 				sourceQuest = 727,	-- To Ironforge for Yagyin's Digest
 				qg = 2786,	-- Gerrig Bonegrip
-				qi = 4649,	-- Bonegrip's Note
 				coord = { 50.8, 5.6, MAP.IRONFORGE },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
 				lvl = 30,
+				qi = 4649,	-- Bonegrip's Note (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
-						provider = { "i", 4646 },	-- Star of Xil'yeh
+						provider = { "i", 4646 },	-- Star of Xil'yeh (QI!)
 						coord = { 39.6, 51.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2417,	-- Grel'borg the Miser
 					}),
 					objective(2, {	-- 0/1 Hand of Dagun
-						provider = { "i", 4641 },	-- Hand of Dagun
+						provider = { "i", 4641 },	-- Hand of Dagun (QI!)
 						coord = { 60.4, 12.2, MAP.DUSTWALLOW_MARSH },
-						cost = { { "i", 4639, 1 } },	-- Enchanted Sea Kelp
+						cost = { { "i", 4639, 1 } },	-- 1x Enchanted Sea Kelp (QI!)
 						cr = 2937,	-- Dagun the Ravenous
 					}),
 					objective(3, {	-- 0/1 The Legacy Heart
-						provider = { "i", 4644 },	-- The Legacy Heart
+						provider = { "i", 4644 },	-- The Legacy Heart (QI!)
 						coord = { 47.6, 44.2, MAP.STRANGLETHORN_VALE },
 						cr = 1060,	-- Mogh the Undying <Skullsplitter Clan Witchdoctor>
 					}),
@@ -674,24 +674,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(736, {	-- The Star, the Hand and the Heart [H]
 				sourceQuest = 728,	-- To the Undercity for Yagyin's Digest
 				qg = 2934,	-- Keeper Bel'dugur
-				qi = 4650,	-- Bel'dugur's Note
 				coord = { 53.7, 54.5, MAP.UNDERCITY },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
 				lvl = 30,
+				qi = 4650,	-- Bel'dugur's Note (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
-						provider = { "i", 4646 },	-- Star of Xil'yeh
+						provider = { "i", 4646 },	-- Star of Xil'yeh (QI!)
 						coord = { 39.6, 51.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2417,	-- Grel'borg the Miser
 					}),
 					objective(2, {	-- 0/1 Hand of Dagun
-						provider = { "i", 4641 },	-- Hand of Dagun
+						provider = { "i", 4641 },	-- Hand of Dagun (QI!)
 						coord = { 60.4, 12.2, MAP.DUSTWALLOW_MARSH },
-						cost = { { "i", 4639, 1 } },	-- Enchanted Sea Kelp
+						cost = { { "i", 4639, 1 } },	-- 1x Enchanted Sea Kelp (QI!)
 						cr = 2937,	-- Dagun the Ravenous
 					}),
 					objective(3, {	-- 0/1 The Legacy Heart
-						provider = { "i", 4644 },	-- The Legacy Heart
+						provider = { "i", 4644 },	-- The Legacy Heart (QI!)
 						coord = { 47.6, 44.2, MAP.STRANGLETHORN_VALE },
 						cr = 1060,	-- Mogh the Undying <Skullsplitter Clan Witchdoctor>
 					}),
@@ -709,9 +709,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(777, {	-- This Is Going to Be Hard (2/3)
 				sourceQuest = 734,	-- This Is Going to Be Hard (1/3)
 				qg = 2920,	-- Lucien Tosselwrench
-				qi = 4846,	-- Cog #5
 				coord = { 25.8, 44.4, MAP.BADLANDS },
 				lvl = 35,
+				qi = 4846,	-- Cog #5 (QI!)
 			}),
 			q(778, {	-- This Is Going to Be Hard (3/3)
 				sourceQuest = 777,	-- This Is Going to Be Hard (2/3)
@@ -720,7 +720,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Lotwil's Shackles of Elemental Binding
-						provider = { "i", 4847 },	-- Lotwil's Shackles of Elemental Binding
+						provider = { "i", 4847 },	-- Lotwil's Shackles of Elemental Binding (QI!)
 						coord = { 26.0, 46.6, MAP.BADLANDS },
 						cr = 2919,	-- Fam'retor Guardian
 					}),
@@ -730,18 +730,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(727, {	-- To Ironforge for Yagyin's Digest
 				sourceQuest = 709,	-- Solution to Doom
 				qg = 2785,	-- Theldurin the Lost
-				qi = 4648,	-- Sigil of the Hammer
 				coord = { 51.4, 76.9, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 4648,	-- Sigil of the Hammer (QI!)
 			}),
 			q(728, {	-- To the Undercity for Yagyin's Digest
 				sourceQuest = 709,	-- Solution to Doom
 				qg = 2785,	-- Theldurin the Lost
-				qi = 4648,	-- Sigil of the Hammer
 				coord = { 51.4, 76.9, MAP.BADLANDS },
 				races = HORDE_ONLY,
 				lvl = 30,
+				qi = 4648,	-- Sigil of the Hammer (QI!)
 			}),
 			q(732, {	-- Tremors of the Earth (1/2)
 				sourceQuest = 718,	-- Mirages
@@ -751,7 +751,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Sign of the Earth
-						provider = { "i", 4640 },	-- Sign of the Earth
+						provider = { "i", 4640 },	-- Sign of the Earth (QI!)
 					}),
 				},
 			}),
@@ -763,10 +763,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Blacklash's Bindings
-						provider = { "i", 4615 },	-- Blacklash's Bindings
+						provider = { "i", 4615 },	-- Blacklash's Bindings (QI!)
 					}),
 					objective(2, {	-- 0/1 Chains of Hematus
-						provider = { "i", 4645 },	-- Chains of Hematus
+						provider = { "i", 4645 },	-- Chains of Hematus (QI!)
 					}),
 					i(11193),	-- Blazewind Breastplate
 					i(11194),	-- Prismscale Hauberk
@@ -784,13 +784,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/12 Magenta Fungus Cap
 						providers = {
-							{ "i",   8047 },	-- Magenta Fungus Cap
+							{ "i",   8047 },	-- Magenta Fungus Cap (QI!)
 							{ "o", 126049 },	-- Magenta Cap Clusters
 						},
 					}),
 				},
 			}),
-			q(9439, {	-- Unclaimed Baggage
+			q(9439, {	-- Unclaimed Baggage (TODO: verify quest name)
 				qg = 17097,	-- Advisor Sarophas
 				coord = { 5.8, 48.0, MAP.BADLANDS },
 				races = HORDE_ONLY,
@@ -798,14 +798,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Advisor's Pack
 						providers = {
-							{ "i",  23658 },	-- Advisor's Pack
+							{ "i",  23658 },	-- Advisor's Pack (QI!)
 							{ "o", 181628 },	-- Empty Barrel
 						},
 						coord = { 41.0, 29.2, MAP.BADLANDS },
 					}),
 					objective(2, {	-- 0/1 Advisor's Rapier
 						providers = {
-							{ "i",  23660 },	-- Advisor's Rapier
+							{ "i",  23660 },	-- Advisor's Rapier (QI!)
 							{ "o", 181627 },	-- Weapon Rack
 						},
 						coord = { 41.7, 26.8, MAP.BADLANDS },
@@ -892,22 +892,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 		}),
 		n(TREASURES, {
 			o(2842, {	-- Pillar of Diamond
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
 				coord = { 83.5, 32.9, MAP.BADLANDS },
+				cost = { { "i", 4640, 1 } },	-- 1x Sign of the Earth
 				groups = {
 					i(4845),	-- Diamond Runestone
 				},
 			}),
 			o(2848, {	-- Pillar of Opal
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
 				coord = { 72.38, 66.94, MAP.BADLANDS },
+				cost = { { "i", 4640, 1 } },	-- 1x Sign of the Earth
 				groups = {
 					i(4844),	-- Opal Runestone
 				},
 			}),
 			o(2858, {	-- Pillar of Amethyst
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
 				coord = { 81.27, 64.29, MAP.BADLANDS },
+				cost = { { "i", 4640, 1 } },	-- 1x Sign of the Earth
 				groups = {
 					i(4843),	-- Amethyst Runestone
 				},

@@ -8,9 +8,9 @@ root(ROOTS.Instances, {
 		icon = 409547,
 		--zoneTextAreaID = ,	-- Barrow Deeps
 		--coord = { , MAP.AZSHARA },
-		timeline = { TIMELINE.ADDED_1_60_1 },
 		isRaid = true,
 		lvl = 60,
+		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(62035),	-- Conqueror of the Deeps

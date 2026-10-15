@@ -85,96 +85,96 @@ ALCHEMY_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_ALLIANCE = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 		{	-- Neutral
 			i(271621, {	-- Alchemy Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(250388, {	-- Recipe: Elixir of Lesser Intellect (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250381, {	-- Recipe: Elixir of Lesser Spirit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250984, {	-- Recipe: Frenzy Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250378, {	-- Recipe: Lesser Arcane Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250367, {	-- Recipe: Lesser Cleric's Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250376, {	-- Recipe: Lesser Mageblood Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250990, {	-- Recipe: Mender's Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250978, {	-- Recipe: Spellblasting Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 		}, {	-- Friendly
 			i(250996, {	-- Recipe: Disorienting Smog Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250371, {	-- Recipe: Elixir of Greater Fortitude (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250383, {	-- Recipe: Elixir of Greater Spirit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250997, {	-- Recipe: Dragonfire Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250369, {	-- Recipe: Greater Cleric's Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250377, {	-- Recipe: Greater Mageblood Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 		}, {	-- Honored
 			i(250995, {	-- Recipe: Caustic Smog Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250364, {	-- Recipe: Elixir of Cunning (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250386, {	-- Recipe: Elixir of Ferocity (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250379, {	-- Recipe: Elixir of Nature Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250374, {	-- Recipe: Elixir of Sages (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250387, {	-- Recipe: Elixir of the Grizzly (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(250373, {	-- Recipe: Elixir of the Owl (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250365, {	-- Recipe: Elixir of the Phalanx (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250384, {	-- Recipe: Elixir of the Whale (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250372, {	-- Recipe: Elixir of Wicked Regeneration (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250987, {	-- Recipe: Major Frenzy Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(250993, {	-- Recipe: Major Mender's Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250981, {	-- Recipe: Major Spellblasting Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
-			i(250998, {	-- Recipe: Potion of Elemental Siphoning (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+			i(250998, {	-- Recipe: Potion of Elemental Purging (RECIPE!)
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250994, {	-- Recipe: Potion of Venomous Blood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted
@@ -183,96 +183,96 @@ ALCHEMY_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_HORDE = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 		{	-- Neutral
 			i(271621, {	-- Alchemy Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(250388, {	-- Recipe: Elixir of Lesser Intellect (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250381, {	-- Recipe: Elixir of Lesser Spirit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250984, {	-- Recipe: Frenzy Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250378, {	-- Recipe: Lesser Arcane Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250367, {	-- Recipe: Lesser Cleric's Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250376, {	-- Recipe: Lesser Mageblood Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250990, {	-- Recipe: Mender's Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(250978, {	-- Recipe: Spellblasting Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 		}, {	-- Friendly
 			i(250996, {	-- Recipe: Disorienting Smog Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250371, {	-- Recipe: Elixir of Greater Fortitude (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250383, {	-- Recipe: Elixir of Greater Spirit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250997, {	-- Recipe: Dragonfire Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250369, {	-- Recipe: Greater Cleric's Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(250377, {	-- Recipe: Greater Mageblood Elixir (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 		}, {	-- Honored
 			i(250995, {	-- Recipe: Caustic Smog Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250364, {	-- Recipe: Elixir of Cunning (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250386, {	-- Recipe: Elixir of Ferocity (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250379, {	-- Recipe: Elixir of Nature Power (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250374, {	-- Recipe: Elixir of Sages (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250387, {	-- Recipe: Elixir of the Grizzly (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(250373, {	-- Recipe: Elixir of the Owl (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250365, {	-- Recipe: Elixir of the Phalanx (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250384, {	-- Recipe: Elixir of the Whale (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250372, {	-- Recipe: Elixir of Wicked Regeneration (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250987, {	-- Recipe: Major Frenzy Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(250993, {	-- Recipe: Major Mender's Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250981, {	-- Recipe: Major Spellblasting Potion (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
-			i(250998, {	-- Recipe: Potion of Elemental Siphoning (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+			i(250998, {	-- Recipe: Potion of Elemental Purging (RECIPE!)
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250994, {	-- Recipe: Potion of Venomous Blood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted

@@ -4,8 +4,8 @@
 
 battleground(MAP.DARKSPEAR_ISLANDS, {
 	--["lore"] = "",
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 441150,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(62049, {	-- Master of Darkspear Islands
@@ -27,14 +27,14 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			q(98888, {	-- Conflict at Darkspear Islands [Level 30]
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				cost = { { "i", 274895, 3 } },	-- 3x Darkspear Islands Mark of Honor
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
 			q(98895, {	-- Darkspear Islands Clash [Level 30]
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				cost = { { "i", 274895, 3 } },	-- 3x Darkspear Islands Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
@@ -129,9 +129,9 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 					i(271932),	-- Insurgent's Manifesto
 					i(271933),	-- Insurgent's Manifesto
 					i(271934),	-- Insurgent's Manifesto
-					i(271936),	-- Guerilla's Jagged Mace
-					i(271937),	-- Guerilla's Jagged Mace
-					i(271938),	-- Guerilla's Jagged Mace
+					i(271936),	-- Guerrilla's Jagged Mace
+					i(271937),	-- Guerrilla's Jagged Mace
+					i(271938),	-- Guerrilla's Jagged Mace
 					i(271940),	-- Theramore Gauntlets
 					i(271941),	-- Theramore Gauntlets
 					i(271945),	-- Theramore Handwraps

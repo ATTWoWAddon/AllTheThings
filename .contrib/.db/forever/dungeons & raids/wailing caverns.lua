@@ -49,7 +49,7 @@ root(ROOTS.Instances, {
 						lvl = 13,
 						groups = {
 							objective(1, {	-- 0/20 Deviate Hide
-								provider = { "i", 6443 },	-- Deviate Hide
+								provider = { "i", 6443 },	-- Deviate Hide (QI!)
 							}),
 							i(6480),	-- Slick Deviate Leggings
 							i(918),	-- Deviate Hide Pack
@@ -58,10 +58,10 @@ root(ROOTS.Instances, {
 					q(1489, {	-- Hamuul Runetotem
 						sourceQuest = 880,	-- Altered Beings
 						qg = 3448,	-- Tonga Runetotem
-						qi = 10414,	-- Sample Snapjaw Shell
 						coord = { 52.3, 31.9, MAP.THE_BARRENS },
 						races = HORDE_ONLY,
 						lvl = 10,
+						qi = 10414,	-- Sample Snapjaw Shell (QI!)
 					}),
 					q(3370, {	-- In Nightmares [A]
 						description = "She lives in a house on top of the mountain.",
@@ -72,7 +72,7 @@ root(ROOTS.Instances, {
 						lvl = 15,
 						groups = {
 							objective(1, {
-								provider = { "i", 10649 },	-- Nightmare Shard
+								provider = { "i", 10649 },	-- Nightmare Shard (QI!)
 							}),
 							i(10657),	-- Talbar Mantle
 							i(10658),	-- Quagmire Galoshes
@@ -87,7 +87,7 @@ root(ROOTS.Instances, {
 						lvl = 15,
 						groups = {
 							objective(1, {
-								provider = { "i", 10649 },	-- Nightmare Shard
+								provider = { "i", 10649 },	-- Nightmare Shard (QI!)
 							}),
 							i(10657),	-- Talbar Mantle
 							i(10658),	-- Quagmire Galoshes
@@ -101,16 +101,16 @@ root(ROOTS.Instances, {
 						lvl = 10,
 						groups = {
 							objective(1, {	-- 0/1 Gem of Cobrahn
-								provider = { "i", 9738 },	-- Gem of Cobrahn
+								provider = { "i", 9738 },	-- Gem of Cobrahn (QI!)
 							}),
 							objective(2, {	-- 0/1 Gem of Anacondra
-								provider = { "i", 9739 },	-- Gem of Anacondra
+								provider = { "i", 9739 },	-- Gem of Anacondra (QI!)
 							}),
 							objective(3, {	-- 0/1 Gem of Pythas
-								provider = { "i", 9740 },	-- Gem of Pythas
+								provider = { "i", 9740 },	-- Gem of Pythas (QI!)
 							}),
 							objective(4, {	-- 0/1 Gem of Serpentis
-								provider = { "i", 9741 },	-- Gem of Serpentis
+								provider = { "i", 9741 },	-- Gem of Serpentis (QI!)
 							}),
 							i(6505),	-- Crescent Staff
 							i(6504),	-- Wingblade
@@ -134,7 +134,7 @@ root(ROOTS.Instances, {
 						groups = {
 							objective(1, {	-- 0/10 Serpentbloom
 								providers = {
-									{ "i", 5339 },	-- Serpentbloom
+									{ "i", 5339 },	-- Serpentbloom (QI!)
 									{ "o", 13891 },	-- Serpentbloom
 								},
 							}),
@@ -154,7 +154,7 @@ root(ROOTS.Instances, {
 						lvl = 13,
 						groups = {
 							objective(1, {	-- 0/6 Wailing Essence
-								provider = { "i", 6464 },	-- Wailing Essence
+								provider = { "i", 6464 },	-- Wailing Essence (QI!)
 								crs = {
 									3638,	-- Devouring Ectoplasm
 									3640,	-- Evolving Ectoplasm
@@ -293,8 +293,8 @@ root(ROOTS.Instances, {
 				creatureID = 3654,
 				groups = {
 					i(10441),	-- Glowing Shard
-					i(6461),	-- Slime-Encrusted Pads
-					i(6627),	-- Mutant Breastplate
+					i(6461),	-- Slime-encrusted Pads
+					i(6627),	-- Mutant Scale Breastplate
 					i(6463),	-- Deep Fathom Ring
 				},
 			}),

@@ -15,8 +15,8 @@ end]];
 
 battleground(MAP.ARATHI_BASIN, {
 	lore = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 236385,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(ACHIEVEMENTS, {
 			-- CRIEVE NOTE: Not sure which one is which.
@@ -41,9 +41,9 @@ battleground(MAP.ARATHI_BASIN, {
 		}),
 		n(QUESTS, {
 			q(8262, {	-- Arathor Advanced Care Package
-				qg = 15127,	-- Samuel Hawke
+				qg = 15127,	-- Samuel Hawke <League of Arathor Supply Officer>
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = 45,
 				groups = {
@@ -51,9 +51,9 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8260, {	-- Arathor Basic Care Package
-				qg = 15127,	-- Samuel Hawke
+				qg = 15127,	-- Samuel Hawke <League of Arathor Supply Officer>
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -61,9 +61,9 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8261, {	-- Arathor Standard Care Package
-				qg = 15127,	-- Samuel Hawke
+				qg = 15127,	-- Samuel Hawke <League of Arathor Supply Officer>
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 35, 44 },
 				groups = {
@@ -85,7 +85,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -104,7 +104,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -123,7 +123,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -142,7 +142,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -161,7 +161,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -180,7 +180,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -199,7 +199,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -218,7 +218,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -237,7 +237,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -256,7 +256,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -275,7 +275,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -294,7 +294,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -313,7 +313,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -332,7 +332,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -351,7 +351,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -370,7 +370,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -389,7 +389,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -408,7 +408,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -427,7 +427,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -446,7 +446,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -454,7 +454,7 @@ battleground(MAP.ARATHI_BASIN, {
 				sourceQuest = 8114,	-- Control Four Bases (Alliance)
 				qg = 14983,	-- Field Marshal Oslight
 				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				groups = {
@@ -470,14 +470,14 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 14983,	-- Field Marshal Oslight
 				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 			}),
 			q(8265, {	-- Defiler's Advanced Care Package
-				qg = 15126,	-- Rutherford Twing
+				qg = 15126,	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = 45,
 				groups = {
@@ -485,9 +485,9 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8263, {	-- Defiler's Basic Care Package
-				qg = 15126,	-- Rutherford Twing
+				qg = 15126,	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -495,9 +495,9 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8264, {	-- Defiler's Standard Care Package
-				qg = 15126,	-- Rutherford Twing
+				qg = 15126,	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 35, 44 },
 				groups = {
@@ -508,7 +508,7 @@ battleground(MAP.ARATHI_BASIN, {
 				sourceQuest = 8121,	-- Take Four Bases (Horde)
 				qg = 15021,	-- Deathmaster Dwire
 				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
+				minReputation = { FACTION_THE_DEFILERS, EXALTED },
 				races = HORDE_ONLY,
 				lvl = 60,
 				groups = {
@@ -524,7 +524,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15021,	-- Deathmaster Dwire
 				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = 60,
 			}),
@@ -629,7 +629,7 @@ battleground(MAP.ARATHI_BASIN, {
 			i(20559),	-- Arathi Basin Mark of Honor
 		}),
 		n(VENDORS, {
-			n(15126, {	-- Rutherford Twing
+			n(15126, {	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				groups = {

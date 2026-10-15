@@ -18,7 +18,7 @@ root(ROOTS.Instances, {
 					lvl = 14,
 					groups = {
 						objective(1, {	-- 0/4 Miners' Union Card
-							provider = { "i", 1894 },	-- Miners' Union Card
+							provider = { "i", 1894 },	-- Miners' Union Card (QI!)
 						}),
 						i(2036),	-- Dusty Mining Gloves
 						i(2037),	-- Tunneler's Boots
@@ -30,28 +30,28 @@ root(ROOTS.Instances, {
 				q(92753, {	-- Destruction in Deadmines (1/2)
 					sourceQuest = 92752,	-- Explosive Consultation
 					qg = 253092,	-- Alba Fairmoon
-					qi = 254553,	-- Extra-Destructive Explosives (PQI!)
 					coord = { 52.5, 53.0, MAP.WESTFALL },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
 					lvl = 9,
+					timeline = { TIMELINE.ADDED_1_60_1 },
+					qi = 254553,	-- Extra-Destructive Explosives (QI!)
 				}),
 				q(92819, {	-- Destruction in Deadmines (2/2)
 					sourceQuest = 92753,	-- Destruction in Deadmines (1/2)
 					qg = 253279,	-- Alba Fairmoon
 					coord = { 52.5, 53.0, MAP.WESTFALL },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
 					lvl = 9,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
-				q(167, {	-- Oh Brother. . .
+				q(167, {	-- Oh Brother...
 					qg = 656,	-- Wilder Thistlenettle
 					coord = { 70.2, 40.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
 					lvl = 15,
 					groups = {
 						objective(1, {	-- 0/1 Thistlenettle's Badge
-							provider = { "i", 1875 },	-- Thistlenettle's Badge
+							provider = { "i", 1875 },	-- Thistlenettle's Badge (QI!)
 						}),
 						i(1893),	-- Miner's Revenge
 						i(270012, {	-- Miner's Workgloves
@@ -73,7 +73,7 @@ root(ROOTS.Instances, {
 					lvl = 14,
 					groups = {
 						objective(1, {	-- 0/10 Red Silk Bandana
-							provider = { "i", 915 },	-- Red Silk Bandana
+							provider = { "i", 915 },	-- Red Silk Bandana (QI!)
 							description = "Can also drop from any Defias mob in the Deadmines.",
 							crs = {
 								619,	-- Defias Conjurer
@@ -97,7 +97,7 @@ root(ROOTS.Instances, {
 					lvl = 14,
 					groups = {
 						objective(1, {	-- 0/1 Head of VanCleef
-							provider = { "i", 3637 },	-- Head of VanCleef
+							provider = { "i", 3637 },	-- Head of VanCleef (QI!)
 						}),
 						i(6087),	-- Chausses of Westfall
 						i(2042),	-- Staff of Westfall
@@ -120,7 +120,7 @@ root(ROOTS.Instances, {
 					lvl = 15,
 					groups = {
 						objective(1, {	-- 0/1 Gnoam Sprecklesprocket
-							provider = { "i", 7365 },	-- Gnoam Sprecklesprocket
+							provider = { "i", 7365 },	-- Gnoam Sprecklesprocket (QI!)
 						}),
 						i(7607),	-- Sable Wand
 						i(7606),	-- Polar Gauntlets
@@ -211,7 +211,7 @@ root(ROOTS.Instances, {
 						624,	-- Undead Excavator
 					},
 				}),
-				i(8492, {	-- Green Wing Macaw (PET!)
+				i(8492, {	-- Parrot Cage (Green Wing Macaw) (PET!)
 					cr = 657,	-- Defias Pirate
 				}),
 				i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
@@ -268,7 +268,7 @@ root(ROOTS.Instances, {
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 			}),
-			n(643, {	-- Sneed
+			n(643, {	-- Sneed <Lumbermaster>
 				i(273092, {	-- Blueprint: Repair Bot (RECIPE!)
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
@@ -310,7 +310,7 @@ root(ROOTS.Instances, {
 				i(10399),	-- Blackened Defias Armor
 			}),
 			n(645, {	-- Cookie <The Ship's Cook>
-				i(8490),	-- Siamese Cat (PET!)
+				i(8490),	-- Cat Carrier (Siamese) (PET!)
 				i(5198),	-- Cookie's Stirring Rod
 				i(5197),	-- Cookie's Tenderizer
 				i(273298, {	-- Lookie's Spyglass

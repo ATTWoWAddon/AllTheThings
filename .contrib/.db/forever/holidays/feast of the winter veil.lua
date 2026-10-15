@@ -67,8 +67,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				i(17712, {	-- Winter Veil Disguise Kit (TOY!)
 					description = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
 					sourceQuests = {
-						7045,	-- A Smokywood Pastures Thank You! (Alliance)
-						6984,	-- A Smokywood Pastures Thank You! (Horde)
+						7045,	-- A Smokywood Pastures' Thank You! (Alliance)
+						6984,	-- A Smokywood Pastures' Thank You! (Horde)
 					},
 				}),
 			},
@@ -98,8 +98,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					{ 33.6, 66.1, MAP.IRONFORGE },
 					{ 49.6, 77.7, MAP.ORGRIMMAR },
 				},
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				_drop = { "g" },
 				groups = { i(21328) },	-- Wand of Holiday Cheer
 			}),
@@ -112,14 +112,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					{ 33.6, 66.3, MAP.IRONFORGE },
 					{ 49.6, 78.2, MAP.ORGRIMMAR },
 				},
-				isYearly = true,
 				lvl = 20,
+				isYearly = true,
 				_drop = { "g" },
 				groups = {
-					i(21301),	-- Father Winter's Helper (PET!)
-					i(21308),	-- Winter Reindeer (PET!)
-					i(21305),	-- Winter's Little Helper (PET!)
-					i(21309),	-- Tiny Snowman (PET!)
+					i(21301),	-- Green Helper Box (PET!)
+					i(21308),	-- Jingling Bell (PET!)
+					i(21305),	-- Red Helper Box (PET!)
+					i(21309),	-- Snowman Kit (PET!)
 				},
 			}),
 			q(8767, {	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
@@ -159,8 +159,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					{ 33.6, 66.5, MAP.IRONFORGE },
 					{ 49.5, 78.7, MAP.ORGRIMMAR },
 				},
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				_drop = { "g" },
 				groups = {
 					i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
@@ -204,44 +204,44 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(7023, {	-- Greatfather Winter is Here! (Alliance)
-				qg = 13435,	-- Khole Jinglepocket
+				qg = 13435,	-- Khole Jinglepocket <Smokywood Pastures>
 				coord = { 62.8, 70.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(6961, {	-- Great-father Winter is Here! (Horde)
 				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(7021, {	-- Great-father Winter is Here! (Horde)
 				qg = 13431,	-- Whulwert Copperpinch <Smokywood Pastures>
 				coord = { 43.8, 58.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(7024, {	-- Great-father Winter is Here! (Horde)
 				qg = 13429,	-- Nardstrum Copperpinch <Smokywood Pastures>
 				coord = { 68.0, 39.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(8762, {	-- Metzen the Reindeer (Alliance)
 				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				maps = { MAP.SEARING_GORGE, MAP.TANARIS },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Find Metzen the Reindeer and rescue him
 						provider = { "n", 15664 },	-- Metzen the Reindeer
@@ -251,11 +251,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 						},
 					}),
 					objective(2, {	-- 0/1 Pouch of Raindeer Dust
-						provider = { "i", 21211 },	-- Pouch of Raindeer Dust
+						provider = { "i", 21211 },	-- Pouch of Reindeer Dust (QI!)
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
-						i(21211),	-- Pouch of Raindeer Dust
+						i(21211),	-- Pouch of Reindeer Dust
 					}),
 					i(21213),	-- Preserved Holly
 				},
@@ -265,8 +265,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				maps = { MAP.SEARING_GORGE, MAP.TANARIS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Find Metzen the Reindeer and rescue him
 						provider = { "n", 15664 },	-- Metzen the Reindeer
@@ -276,11 +276,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 						},
 					}),
 					objective(2, {	-- 0/1 Pouch of Raindeer Dust
-						provider = { "i", 21211 },	-- Pouch of Raindeer Dust
+						provider = { "i", 21211 },	-- Pouch of Reindeer Dust (QI!)
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
-						i(21211),	-- Pouch of Raindeer Dust
+						i(21211),	-- Pouch of Reindeer Dust
 					}),
 					i(21213),	-- Preserved Holly
 				},
@@ -302,7 +302,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				isYearly = true,
 				groups = {
 					objective(1, {	-- 0/1 Smokywood Supplies
-						provider = { "i", 21545 },	-- Smokywood Supplies
+						provider = { "i", 21545 },	-- Smokywood Supplies (QI!)
 					}),
 				},
 			}),
@@ -323,7 +323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				isYearly = true,
 				groups = {
 					objective(1, {	-- 0/1 Smokywood Supplies
-						provider = { "i", 21545 },	-- Smokywood Supplies
+						provider = { "i", 21545 },	-- Smokywood Supplies (QI!)
 					}),
 				},
 			}),
@@ -332,34 +332,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 			}),
 			q(6963, {	-- Stolen Winter Veil Treats (Horde)
 				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 			}),
 			q(7063, {	-- The Feast of Winter Veil (Alliance)
 				sourceQuest = 7062,	-- The Reason for the Season (Alliance)
 				qg = 2916,	-- Historian Karnik
-				qi = 17735,	-- The Feast of Winter Veil (QI!)
 				coord = { 77.2, 11.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
+				qi = 17735,	-- The Feast of Winter Veil (QI!)
 			}),
 			q(7061, {	-- The Feast of Winter Veil (Horde)
 				sourceQuest = 6964,	-- The Reason for the Season (Horde)
 				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-				qi = 17735,	-- The Feast of Winter Veil (QI!)
 				coord = { 38.6, 36.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
+				qi = 17735,	-- The Feast of Winter Veil (QI!)
 			}),
 			q(8763, {	-- The Hero of the Day (Alliance)
 				description = 'Requires Cooking Skill Level 300',
@@ -367,13 +367,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				cost = {
-					{ "i", 8150, 1 },	-- Deeprock Salt
+					{ "i", 8150, 1 },	-- 1x Deeprock Salt
 					{ "g", 50000 },	-- 5g
 				},
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = { i(21213) },	-- Preserved Holly
 			}),
 			q(8799, {	-- The Hero of the Day (Horde)
@@ -382,29 +382,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				cost = {
-					{ "i", 8150, 1 },	-- Deeprock Salt
+					{ "i", 8150, 1 },	-- 1x Deeprock Salt
 					{ "g", 50000 },	-- 5g
 				},
 				requireSkill = COOKING,
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = { i(21213) },	-- Preserved Holly
 			}),
 			q(7062, {	-- The Reason for the Season (Alliance)
 				qg = 1365,	-- Goli Krumn
 				coord = { 30.2, 59.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = { i(17735) },	-- The Feast of Winter Veil (QI!)
 			}),
 			q(6964, {	-- The Reason for the Season (Horde)
 				qg = 9550,	-- Furmund
 				coord = { 51.0, 71.1, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = { i(17735) },	-- The Feast of Winter Veil (QI!)
 			}),
 			{	-- Treats for Greatfather Winter
@@ -428,8 +428,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					races = HORDE_ONLY,
 				}),
 				cost = {
-					{ "i", 17197, 5 },	-- Gingerbread Cookie
-					{ "i", 1179, 1 },	-- Ice Cold Milk
+					{ "i", 17197, 5 },	-- 5x Gingerbread Cookie
+					{ "i", 1179, 1 },	-- 1x Ice Cold Milk
 				},
 				isYearly = true,
 				lvl = 10,
@@ -491,7 +491,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Stolen Treats
-						provider = { "i", 17662 },	-- Stolen Treats
+						provider = { "i", 17662 },	-- Stolen Treats (QI!)
 						cr = 13602,	-- The Abominable Greench
 					}),
 				},
@@ -503,7 +503,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				crs = {
 					13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 					13420,	-- Penney Copperpinch <Smokywood Pastures>
-					13432,	-- Seersa Jinglepocket <Smokywood Pastures>
+					13432,	-- Seersa Copperpinch <Smokywood Pastures>
 					13429,	-- Nardstrum Copperpinch <Smokywood Pastures>
 				},
 				maps = {
@@ -535,7 +535,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				coord = { 53.0, 66.0, MAP.ORGRIMMAR },
 				groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 			}),
-			n(13432, {	-- Seersa Jinglepocket <Smokywood Pastures>
+			n(13432, {	-- Seersa Copperpinch <Smokywood Pastures>
 				coord = { 43.8, 59.2, MAP.THUNDER_BLUFF },
 				groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 			}),

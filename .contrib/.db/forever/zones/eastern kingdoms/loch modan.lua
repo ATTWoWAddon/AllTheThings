@@ -50,19 +50,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(161, {	-- A Dark Threat Looms (3/7)
 				sourceQuest = 199,	-- A Dark Threat Looms (2/7)
 				qg = 1093,	-- Chief Engineer Hinderweir VII
-				qi = 2563,	-- Strange Smelling Powder
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				qi = 2563,	-- Strange Smelling Powder (QI!)
 			}),
 			q(274, {	-- A Dark Threat Looms (4/7)
 				sourceQuest = 161,	-- A Dark Threat Looms (3/7)
 				qg = 1073,	-- Ashlan Stonesmirk
-				qi = 2609,	-- Disarming Colloid
 				coord = { 50.0, 18.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				qi = 2609,	-- Disarming Colloid (QI!)
 			}),
 			q(278, {	-- A Dark Threat Looms (5/7)
 				sourceQuest = 274,	-- A Dark Threat Looms (4/7)
@@ -72,7 +72,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Lurker Venom
-						provider = { "i", 2606 },	-- Lurker Venom
+						provider = { "i", 2606 },	-- Lurker Venom (QI!)
 						crs = {
 							1184,	-- Cliff Lurker
 							1195,	-- Forest Lurker
@@ -81,7 +81,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(2, {	-- 0/1 Mo'grosh Crystal
-						provider = { "i", 2607 },	-- Mo'grosh Crystal
+						provider = { "i", 2607 },	-- Mo'grosh Crystal (QI!)
 						crs = {
 							14267,	-- Emogg the Crusher
 							1180,	-- Mo'grosh Brute
@@ -92,7 +92,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(3, {	-- 0/1 Crocolisk Tear
-						provider = { "i", 2939 },	-- Crocolisk Tear
+						provider = { "i", 2939 },	-- Crocolisk Tear (QI!)
 						crs = {
 							2476,	-- Large Loch Crocolisk
 							1693,	-- Loch Crocolisk
@@ -103,10 +103,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(280, {	-- A Dark Threat Looms (6/7)
 				sourceQuest = 278,	-- A Dark Threat Looms (5/7)
 				qg = 1093,	-- Chief Engineer Hinderweir VII
-				qi = 2610,	-- Disarming Mixture
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				qi = 2610,	-- Disarming Mixture (QI!)
 			}),
 			q(283, {	-- A Dark Threat Looms (7/7)
 				sourceQuest = 280,	-- A Dark Threat Looms (6/7)
@@ -163,7 +163,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/4 Carved Stone Urn
 						providers = {
-							{ "i", 4610 },	-- Carved Stone Urn
+							{ "i", 4610 },	-- Carved Stone Urn (QI!)
 							{ "o", 2743 },	-- Carved Stone Urn
 						},
 						description = "Can be found in the outdoor section of Uldaman.",
@@ -172,13 +172,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(2500, {	-- Badlands Reagent Run
-				qg = 1470,	-- Ghak Healtouch
+				qg = 1470,	-- Ghak Healtouch <Journeyman Alchemist>
 				coord = { 37.07, 49.38, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/5 Buzzard Gizzard
-						provider = { "i", 7847 },	-- Buzzard Gizzard
+						provider = { "i", 7847 },	-- Buzzard Gizzard (QI!)
 						crs = {
 							2830,	-- Buzzard
 							2831,	-- Giant Buzzard
@@ -186,7 +186,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(2, {	-- 0/10 Crag Coyote Fang
-						provider = { "i", 7846 },	-- Crag Coyote Fang
+						provider = { "i", 7846 },	-- Crag Coyote Fang (QI!)
 						crs = {
 							2727,	-- Crag Coyote
 							2729,	-- Elder Crag Coyote
@@ -195,7 +195,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(3, {	-- 0/5 Rock Elemental Shard
-						provider = { "i", 7848 },	-- Rock Elemental Shard
+						provider = { "i", 7848 },	-- Rock Elemental Shard (QI!)
 						crs = {
 							2745,	-- Ambassador Infernus
 							2791,	-- Enraged Rock Elemental
@@ -211,7 +211,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(2501, {	-- Badlands Reagent Run II
 				sourceQuest = 17,	-- Uldaman Reagent Run
-				qg = 1470,	-- Ghak Healtouch
+				qg = 1470,	-- Ghak Healtouch <Journeyman Alchemist>
 				coord = { 37.07, 49.38, MAP.LOCH_MODAN },
 				maps = { MAP.BADLANDS },
 				requireSkill = ALCHEMY,
@@ -219,8 +219,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/3 Vessel of Dragon's Blood
-						provider = { "i", 7867 },	-- Vessel of Dragon's Blood
-						cost = {{ "i", 7866, 1 }},	-- Empty Thaumaturgy Vessel
+						provider = { "i", 7867 },	-- Vessel of Dragon's Blood (QI!)
+						cost = { { "i", 7866, 1 } },	-- 1x Empty Thaumaturgy Vessel (QI!)
 						cr = 2726,	-- Scorched Guardian
 					}),
 					i(7870, {	-- Thaumaturgy Vessel Lockbox
@@ -231,10 +231,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(86585, {	-- Banner of the Fallen
 				qg = 269153,	-- Mountaineer Ylva
-				qi = 253247,	-- Banner of Ironforge
 				coord = { 31.8, 86.2, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 253247,	-- Banner of Ironforge (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Headsplitter slain
 						provider = { "n", 269185 },	-- Headsplitter
@@ -252,28 +252,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/1 Bingles' Wrench
 						providers = {
-							{ "i", 7343 },		-- Bingles' Wrench
+							{ "i", 7343 },		-- Bingles' Wrench (QI!)
 							{ "o", 104564 },	-- Bingles's Toolbucket
 						},
 						coord = { 48.8, 30.0, MAP.LOCH_MODAN },
 					}),
 					objective(2, {	-- 0/1 Bingles' Screwdriver
 						providers = {
-							{ "i", 7345 },		-- Bingles' Screwdriver
+							{ "i", 7345 },		-- Bingles' Screwdriver (QI!)
 							{ "o", 104569 },	-- Bingles's Toolbucket
 						},
 						coord = { 48.5, 20.6, MAP.LOCH_MODAN },
 					}),
 					objective(3, {	-- 0/1 Bingles' Hammer
 						providers = {
-							{ "i", 7346 },		-- Bingles' Hammer
+							{ "i", 7346 },		-- Bingles' Hammer (QI!)
 							{ "o", 104574 },	-- Bingles's Toolbucket
 						},
 						coord = { 51.8, 24.3, MAP.LOCH_MODAN },
 					}),
 					objective(4, {	-- 0/1 Bingles' Blastencapper
 						providers = {
-							{ "i", 7376 },		-- Bingles' Blastencapper
+							{ "i", 7376 },		-- Bingles' Blastencapper (QI!)
 							{ "o", 104575 },	-- Bingles's Blastencapper
 						},
 						coord = { 54.3, 26.5, MAP.LOCH_MODAN },
@@ -288,7 +288,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Crocolisk Meat
-						cost = {{ "i", 2924, 5 }},	-- Crocolisk Meat
+						cost = { { "i", 2924, 5 } },	-- 5x Crocolisk Meat
 						crs = {
 							5053,	-- Deviate Crocolisk
 							2476,	-- Large Loch Crocolisk
@@ -296,7 +296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(2, {	-- 0/6 Crocolisk Skin
-						provider = { "i", 2925 },	-- Crocolisk Skin
+						provider = { "i", 2925 },	-- Crocolisk Skin (QI!)
 						crs = {
 							2476,	-- Large Loch Crocolisk
 							1693,	-- Loch Crocolisk
@@ -310,16 +310,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuest = 79974,	-- Wet Job
 				provider = { "o", 424007 },	-- Carved Figurine
 				coord = { 49.5, 12.8, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(298, {	-- Excavation Progress Report
 				qg = 1344,	-- Prospector Ironband
-				qi = 2637,	-- Ironbrand's Progress Report
 				coord = { 65.9, 65.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				qi = 2637,	-- Ironband's Progress Report (QI!)
 			}),
 			q(307, {	-- Filthy Paws
 				qg = 1343,	-- Mountaineer Stormpike
@@ -329,7 +329,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/4 Miners' Gear
 						providers = {
-							{ "i", 2640 },	-- Miners' Gear
+							{ "i", 2640 },	-- Miners' Gear (QI!)
 							{ "o", 271 },	-- Miners' League Crates
 						},
 					}),
@@ -358,7 +358,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/8 Carved Stone Idol
-						provider = { "i", 2636 },	-- Carved Stone Idol
+						provider = { "i", 2636 },	-- Carved Stone Idol (QI!)
 						crs = {
 							1393,	-- Berserk Trogg
 							1167,	-- Stonesplinter Digger
@@ -371,11 +371,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(6387, {	-- Honor Students
-				qg = 1681,	-- Brock Stoneseeker
-				qi = 16310,	-- Brock's List (PQI!)
+				qg = 1681,	-- Brock Stoneseeker <Mining Trainer>
 				coord = { 37.0, 47.8, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
 				lvl = 10,
+				qi = 16310,	-- Brock's List (QI!)
 			}),
 			q(224, {	-- In Defense of the King's Lands (1/4)
 				qg = 1089,	-- Mountaineer Cobbleflint
@@ -453,21 +453,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				-- CRIEVE NOTE: This might be a mining exclusive quest
 				qg = 167,	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
-				cost = {{ "i", 2841, 10 }},	-- Bronze Bar
+				cost = { { "i", 2841, 10 } },	-- 10x Bronze Bar
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(3576),	-- Tin Bar
 				},
 			}),
 			q(436, {	-- Ironband's Excavation
-				qg = 1105,	-- Jern Hornhelm
+				qg = 1105,	-- Jern Hornhelm <Explorers' League>
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 13,
+				isBreadcrumb = true,
 			}),
 			q(255, {	-- Mercenaries
 				qg = 1139,	-- Magistrate Bluntnose
@@ -490,8 +490,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1340,	-- Mountaineer Kadrell
 				coord = { 34.8, 47.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 9,
+				isBreadcrumb = true,
 			}),
 			q(302, {	-- Powder to Ironband
 				sourceQuest = 301,	-- Report to Ironforge
@@ -518,7 +518,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/12 Tunnel Rat Ear
-						provider = { "i", 3110 },	-- Tunnel Rat Ear
+						provider = { "i", 3110 },	-- Tunnel Rat Ear (QI!)
 						crs = {
 							1175,	-- Tunnel Rat Digger
 							1176,	-- Tunnel Rat Forager
@@ -534,41 +534,41 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(301, {	-- Report to Ironforge
 				sourceQuest = 298,	-- Excavation Progress Report
-				qg = 1105,	-- Jern Hornhelm
-				qi = 2637,	-- Ironbrand's Progress Report
+				qg = 1105,	-- Jern Hornhelm <Explorers' League>
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				qi = 2637,	-- Ironband's Progress Report (QI!)
 			}),
 			q(468, {	-- Report to Mountaineer Rockgar
 				qg = 1340,	-- Mountaineer Kadrell
 				coord = { 34.8, 47.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 19,
+				isBreadcrumb = true,
 			}),
 			q(273, {	-- Resupplying the Excavation
 				sourceQuest = 302,	-- Powder to Ironband
-				qg = 1105,	-- Jern Hornhelm
+				qg = 1105,	-- Jern Hornhelm <Explorers' League>
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 			}),
 			q(6391, {	-- Ride to Ironforge
 				sourceQuest = 6387,	-- Honor Students
-				qg = 1572,	-- Thorgrum Borrelson
-				qi = 16310,	-- Brock's List
+				qg = 1572,	-- Thorgrum Borrelson <Gryphon Master>
 				coord = { 33.9, 50.9, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
 				lvl = 10,
+				qi = 16310,	-- Brock's List (QI!)
 			}),
 			q(86614, {	-- Silver of the Waves
 				provider = { "o", 665289 },	-- Discarded Fishing Toolbox
-				qi = 278051,	-- Monogrammed Silver Hair Clip
 				coord = { 50.6, 53.4, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 278051,	-- Monogrammed Silver Hair Clip (QI!)
 				groups = {
 					i(281256),	-- Repurposed Hair Band
 				},
@@ -576,9 +576,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(86667, {	-- Snowbound
 				qg = 49808,	-- Grenhild Darktalon
 				coord = { 36.4, 48.2, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Jar of Snow
 						providers = {
@@ -592,11 +592,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(1338, {	-- Stormpike's Order
 				sourceQuest = 1339,	-- Mountaineer Stormpike's Task
 				qg = 1343,	-- Mountaineer Stormpike
-				qi = 5998,	-- Stormpike's Request
 				coord = { 24.7, 18.3, MAP.LOCH_MODAN },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				qi = 5998,	-- Stormpike's Request (QI!)
 			}),
 			q(455, {	-- The Algaz Gauntlet
 				sourceQuest = 468,	-- Report to Mountaineer Rockgar
@@ -621,7 +621,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Trogg Stone Tooth
-						provider = { "i", 2536 },	-- Trogg Stone Tooth
+						provider = { "i", 2536 },	-- Trogg Stone Tooth (QI!)
 						crs = {
 							1164,	-- Stonesplinter Bonesnapper
 							1167,	-- Stonesplinter Digger
@@ -639,9 +639,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1963,	-- Vidra Hearthstove
 				coord = { 34.8, 49.3, MAP.LOCH_MODAN },
 				cost = {
-					{ "i", 3172, 3 },	-- Boar Intestines
-					{ "i", 3173, 3 },	-- Bear Meat
-					{ "i", 3174, 3 },	-- Spider Ichor
+					{ "i", 3173, 3 },	-- 3x Bear Meat
+					{ "i", 3172, 3 },	-- 3x Boar Intestines
+					{ "i", 3174, 3 },	-- 3x Spider Ichor
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 7,
@@ -653,9 +653,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(86758, {	-- Twisting the Knife
 				qg = 1154,	-- Marek Ironheart
 				coord = { 81.8, 61.8, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Marek's Croc-Hunting Knife
 						provider = { "i", 279591 },	-- Marek's Croc-Hunting Knife
@@ -667,7 +667,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(17, {	-- Uldaman Reagent Run
 				sourceQuest = 2500,	-- Badlands Reagent Run
-				qg = 1470,	-- Ghak Healtouch
+				qg = 1470,	-- Ghak Healtouch <Journeyman Alchemist>
 				coord = { 37.07, 49.38, MAP.LOCH_MODAN },
 				maps = { MAP.BADLANDS, MAP.ULDAMAN },
 				races = ALLIANCE_ONLY,
@@ -675,7 +675,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/12 Magenta Fungus Cap
 						providers = {
-							{ "i", 8047 },		-- Magenta Fungus Cap
+							{ "i", 8047 },		-- Magenta Fungus Cap (QI!)
 							{ "o", 126049 },	-- Magenta Cap Clusters
 						},
 					}),
@@ -689,7 +689,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/1 Ol' Sooty's Head
-						provider = { "i", 2713 },	-- Ol' Sooty's Head
+						provider = { "i", 2713 },	-- Ol' Sooty's Head (QI!)
 						coord = { 37.6, 62.6, MAP.LOCH_MODAN },
 						cr = 1225,	-- Ol' Sooty
 					}),
@@ -698,10 +698,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(531, {	-- Vyrin's Revenge (2/2)
 				sourceQuest = 271,	-- Vyrin's Revenge (1/2)
 				qg = 1187,	-- Daryl the Youngling
-				qi = 2713,	-- Ol' Sooty's Head
 				coord = { 83.4, 65.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				qi = 2713,	-- Ol' Sooty's Head (QI!)
 				groups = {
 					i(3574),	-- Hunting Ammo Sack
 					i(3573),	-- Hunting Quiver
@@ -717,7 +717,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 17,
 				groups = {
 					objective(1, {	-- 0/1 Chok'sul's Head
-						provider = { "i", 2561 },	-- Chok'sul's Head
+						provider = { "i", 2561 },	-- Chok'sul's Head (QI!)
 						coord = { 79.6, 14.2, MAP.LOCH_MODAN },
 						cr = 1210,	-- Chok'sul
 					}),

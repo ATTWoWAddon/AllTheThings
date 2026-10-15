@@ -58,11 +58,11 @@ local OnTooltipForDarkmoonFaire = [[function(t, tooltipInfo)
 end]];
 
 root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, {
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = {
 		MAP.ELWYNN_FOREST,
 		MAP.MULGORE,
 	},
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(FACTIONS, {
 			faction(FACTION_DARKMOON_FAIRE, {	-- Darkmoon Faire
@@ -77,9 +77,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 5 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
+				cost = { { "i", 19182, 5 } },	-- 5x Tattered Darkmoon Faire Prize Ticket
 				lvl = 6,
+				repeatable = true,
 				groups = {
 					i(19295),	-- Darkmoon Flower
 				},
@@ -90,9 +90,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 5 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
+				cost = { { "i", 19182, 5 } },	-- 5x Tattered Darkmoon Faire Prize Ticket
 				lvl = 15,
+				repeatable = true,
 				groups = {
 					i(19298, {	-- Minor Darkmoon Prize
 						description = "Contains a level 15-25 (usually uncommon quality) item.",
@@ -105,7 +105,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 10 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 10 } },	-- 10x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
 					i(19292),	-- Last Month's Mutton
@@ -117,7 +117,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 12 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 12 } },	-- 12x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
 					i(19297, {	-- Lesser Darkmoon Prize
@@ -131,7 +131,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 40 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 40 } },	-- 40x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
 					i(19296, {	-- Greater Darkmoon Prize
@@ -145,9 +145,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				timeline = { CREATED_1_10_0, ADDED_2_0_3 },	-- This was not in WoW Classic.
-				cost = { { "i", 19182, 40 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 40 } },	-- 40x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
+				timeline = { CREATED_1_10_0, ADDED_2_0_3 },	-- This was not in WoW Classic.
 				groups = {
 					i(22729),	-- Schematic: Steam Tonk Controller (RECIPE!)
 				},
@@ -158,7 +158,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 50 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 50 } },	-- 50x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
 					i(19291),	-- Darkmoon Storage Box
@@ -170,7 +170,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 50 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 50 } },	-- 50x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
 					i(19293),	-- Last Year's Mutton
@@ -182,7 +182,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 1200 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 1200 } },	-- 1200x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
 					i(19491),	-- Amulet of the Darkmoon
@@ -194,7 +194,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				cost = { { "i", 19182, 1200 } },	-- Tattered Darkmoon Faire Prize Ticket
+				cost = { { "i", 19182, 1200 } },	-- 1200x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
 					i(19426),	-- Orb of the Darkmoon
@@ -207,7 +207,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.2, 35.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_FIVE_MAX_REPUTATION,
-				cost = { { "i", 15564, 8 } },	-- Rugged Armor Kit
+				cost = { { "i", 15564, 8 } },	-- 8x Rugged Armor Kit
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -221,7 +221,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.8, 39.8, MAP.MULGORE },
 				},
 				maxReputation = TIER_FOUR_MAX_REPUTATION,
-				cost = { { "i", 7945, 1 } },	-- Big Black Mace
+				cost = { { "i", 7945, 1 } },	-- 1x Big Black Mace
 				lvl = 30,
 				repeatable = true,
 				groups = {
@@ -235,7 +235,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.2, 35.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_ONE_MAX_REPUTATION,
-				cost = { { "i", 2309, 3 } },	-- Embossed Leather Boots
+				cost = { { "i", 2309, 3 } },	-- 3x Embossed Leather Boots
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -248,7 +248,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.2, 35.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_TWO_MAX_REPUTATION,
-				cost = { { "i", 2314, 3 } },	-- Toughened Leather Armor
+				cost = { { "i", 2314, 3 } },	-- 3x Toughened Leather Armor
 				lvl = 10,
 				repeatable = true,
 				groups = {
@@ -262,7 +262,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.8, 39.8, MAP.MULGORE },
 				},
 				maxReputation = TIER_ONE_MAX_REPUTATION,
-				cost = { { "i", 3240, 10 } },	-- Coarse Weightstone
+				cost = { { "i", 3240, 10 } },	-- 10x Coarse Weightstone
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -275,7 +275,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.1, 37.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_ONE_MAX_REPUTATION,
-				cost = { { "i", 4363, 5 } },	-- Copper Modulator
+				cost = { { "i", 4363, 5 } },	-- 5x Copper Modulator
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -288,7 +288,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.2, 35.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_FOUR_MAX_REPUTATION,
-				cost = { { "i", 8185, 1 } },	-- Turtle Scale Leggings
+				cost = { { "i", 8185, 1 } },	-- 1x Turtle Scale Leggings
 				lvl = 30,
 				repeatable = true,
 				groups = {
@@ -302,7 +302,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				maxReputation = TIER_FIVE_MAX_REPUTATION,
-				cost = { { "i", 11404, 10 } },	-- Evil Bat Eye
+				cost = { { "i", 11404, 10 } },	-- 10x Evil Bat Eye
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -316,7 +316,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				maxReputation = TIER_FIVE_MAX_REPUTATION,
-				cost = { { "i", 19933, 10 } },	-- Glowing Scorpid Blood
+				cost = { { "i", 19933, 10 } },	-- 10x Glowing Scorpid Blood
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -330,7 +330,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.1, 37.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_THREE_MAX_REPUTATION,
-				cost = { { "i", 9313, 36 } },	-- Green Firework
+				cost = { { "i", 9313, 36 } },	-- 36x Green Firework
 				lvl = 20,
 				repeatable = true,
 				groups = {
@@ -344,7 +344,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.8, 39.8, MAP.MULGORE },
 				},
 				maxReputation = TIER_THREE_MAX_REPUTATION,
-				cost = { { "i", 3835, 3 } },	-- Green Iron Bracers
+				cost = { { "i", 3835, 3 } },	-- 3x Green Iron Bracers
 				lvl = 20,
 				repeatable = true,
 				groups = {
@@ -358,7 +358,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.8, 39.8, MAP.MULGORE },
 				},
 				maxReputation = TIER_TWO_MAX_REPUTATION,
-				cost = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
+				cost = { { "i", 3486, 7 } },	-- 7x Heavy Grinding Stone
 				lvl = 10,
 				repeatable = true,
 				groups = {
@@ -372,7 +372,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.1, 37.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_FOUR_MAX_REPUTATION,
-				cost = { { "i", 11590, 6 } },	-- Mechanical Repair Kit
+				cost = { { "i", 11590, 6 } },	-- 6x Mechanical Repair Kit
 				lvl = 30,
 				repeatable = true,
 				groups = {
@@ -386,7 +386,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 43.5, 71.1, MAP.ELWYNN_FOREST },
 					{ 36.2, 35.2, MAP.MULGORE },
 				},
-				cost = { { "i", 15564, 8 } },	-- Rugged Armor Kit
+				cost = { { "i", 15564, 8 } },	-- 8x Rugged Armor Kit
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -400,7 +400,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
-				cost = { { "i", 11404, 10 } },	-- Evil Bat Eye
+				cost = { { "i", 11404, 10 } },	-- 10x Evil Bat Eye
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -414,7 +414,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 40.5, 69.9, MAP.ELWYNN_FOREST },
 					{ 37.8, 39.8, MAP.MULGORE },
 				},
-				cost = { { "i", 12644, 8 } },	-- Dense Grinding Stone
+				cost = { { "i", 12644, 8 } },	-- 8x Dense Grinding Stone
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -428,7 +428,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 40.2, 69.7, MAP.ELWYNN_FOREST },
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
-				cost = { { "i", 19933, 10 } },	-- Glowing Scorpid Blood
+				cost = { { "i", 19933, 10 } },	-- 10x Glowing Scorpid Blood
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -442,7 +442,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 41.7, 70.7, MAP.ELWYNN_FOREST },
 					{ 37.1, 37.2, MAP.MULGORE },
 				},
-				cost = { { "i", 15994, 6 } },	-- Thorium Widget
+				cost = { { "i", 15994, 6 } },	-- 6x Thorium Widget
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -456,7 +456,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.8, 39.8, MAP.MULGORE },
 				},
 				maxReputation = TIER_FIVE_MAX_REPUTATION,
-				cost = { { "i", 12644, 8 } },	-- Dense Grinding Stone
+				cost = { { "i", 12644, 8 } },	-- 8x Dense Grinding Stone
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -470,7 +470,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				maxReputation = TIER_ONE_MAX_REPUTATION,
-				cost = { { "i", 5134, 5 } },	-- Small Furry Paw
+				cost = { { "i", 5134, 5 } },	-- 5x Small Furry Paw
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -483,7 +483,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				maxReputation = TIER_THREE_MAX_REPUTATION,
-				cost = { { "i", 4582, 5 } },	-- Soft Bushy Tail
+				cost = { { "i", 4582, 5 } },	-- 5x Soft Bushy Tail
 				lvl = 20,
 				repeatable = true,
 				groups = {
@@ -497,31 +497,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 43.3, 70.3, MAP.ELWYNN_FOREST },
 					{ 35.9, 35.3, MAP.MULGORE },
 				},
-				cost = { { "i", 11325, 2 } },	-- Dark Iron Ale Mug
-				isMonthly = true,
+				cost = { { "i", 11325, 2 } },	-- 2x Dark Iron Ale Mug
 				lvl = 10,
+				isMonthly = true,
 				groups = {
 					i(19462, {	-- Unhatched Jubling Egg
-						i(19450),	-- Jubling (PET!)
+						i(19450),	-- A Jubling's Tiny Home (PET!)
 					}),
 				},
 			}),
 			q(7905, {	-- The Darkmoon Faire [A]
 				qg = 14842,	-- Melnan Darkstone <Darkmoon Faire Barker>
-				qi = 19338,	-- Free Ticket Voucher
 				coord = { 29.2, 68.4, MAP.IRONFORGE },
-				lvl = 6,
 				races = ALLIANCE_ONLY,
+				lvl = 6,
+				qi = 19338,	-- Free Ticket Voucher (QI!)
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
 			q(7926, {	-- The Darkmoon Faire [H]
 				qg = 14843,	-- Kruban Darkblade <Darkmoon Faire Barker>
-				qi = 19338,	-- Free Ticket Voucher
 				coord = { 52.2, 66.0, MAP.ORGRIMMAR },
-				lvl = 6,
 				races = HORDE_ONLY,
+				lvl = 6,
+				qi = 19338,	-- Free Ticket Voucher (QI!)
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
@@ -533,7 +533,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.2, 35.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_THREE_MAX_REPUTATION,
-				cost = { { "i", 5739, 3 } },	-- Barbaric Harness
+				cost = { { "i", 5739, 3 } },	-- 3x Barbaric Harness
 				lvl = 20,
 				repeatable = true,
 				groups = {
@@ -547,7 +547,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.1, 37.2, MAP.MULGORE },
 				},
 				maxReputation = TIER_FIVE_MAX_REPUTATION,
-				cost = { { "i", 15994, 6 } },	-- Thorium Widget
+				cost = { { "i", 15994, 6 } },	-- 6x Thorium Widget
 				lvl = 40,
 				repeatable = true,
 				groups = {
@@ -561,7 +561,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				maxReputation = TIER_TWO_MAX_REPUTATION,
-				cost = { { "i", 11407, 5 } },	-- Torn Bear Pelt
+				cost = { { "i", 11407, 5 } },	-- 5x Torn Bear Pelt
 				lvl = 10,
 				repeatable = true,
 				groups = {
@@ -575,7 +575,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MAP.MULGORE },
 				},
 				maxReputation = TIER_FOUR_MAX_REPUTATION,
-				cost = { { "i", 5117, 5 } },	-- Vibrant Plume
+				cost = { { "i", 5117, 5 } },	-- 5x Vibrant Plume
 				lvl = 30,
 				repeatable = true,
 				groups = {
@@ -589,7 +589,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.0, 37.4, MAP.MULGORE },
 				},
 				maxReputation = TIER_TWO_MAX_REPUTATION,
-				cost = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
+				cost = { { "i", 4375, 7 } },	-- 7x Whirring Bronze Gizmo
 				lvl = 10,
 				repeatable = true,
 				groups = {
@@ -602,8 +602,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180024 },	-- Mysterious Deadmines Chest
 				},
 				maps = { MAP.DEADMINES },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},
@@ -614,8 +614,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180025 },	-- Mysterious Eastvale Haystack
 				},
 				coord = { 84.7, 64.4, MAP.ELWYNN_FOREST },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},
@@ -626,8 +626,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180056 },	-- Mysterious Tree Stump
 				},
 				coord = { 35.0, 61.5, MAP.MULGORE },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},
@@ -638,8 +638,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180055 },	-- Mysterious Wailing Caverns Chest
 				},
 				maps = { MAP.WAILING_CAVERNS },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},
@@ -698,8 +698,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				groups = {
 					HEAVY_LEATHER_BALL,
-					i(11026),	-- Tree Frog (PET!)
-					i(11027, {	-- Wood Frog (PET!)
+					i(11026),	-- Tree Frog Box (PET!)
+					i(11027, {	-- Wood Frog Box (PET!)
 						isLimited = true,
 					}),
 				},
@@ -720,7 +720,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					SLYVAN_SHORTBOW,
 				},
 			}),
-			n(14845, {	-- Stamp Thunderhorn <Food Vendor>
+			n(14845, {	-- Stamp Thunderhorn <Darkmoon Faire Food Vendor>
 				coords = {
 					{ 36.6, 38.2, MAP.MULGORE },
 					{ 42.0, 70.0, MAP.ELWYNN_FOREST },
@@ -734,7 +734,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(19304),	-- Spiced Beef Jerky
 				},
 			}),
-			n(14844, {	-- Sylannia <Drink Vendor>
+			n(14844, {	-- Sylannia <Darkmoon Faire Drink Vendor>
 				coords = {
 					{ 36.6, 38.2, MAP.MULGORE },
 					{ 42.0, 70.0, MAP.ELWYNN_FOREST },
@@ -750,50 +750,50 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		category(3, {	-- Tarot Decks
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19228, {	-- Beasts Deck
 				cost = {
-					{ "i", 19227, 1 },	-- Ace of Beasts
-					{ "i", 19230, 1 },	-- Two of Beasts
-					{ "i", 19231, 1 },	-- Three of Beasts
-					{ "i", 19232, 1 },	-- Four of Beasts
-					{ "i", 19233, 1 },	-- Five of Beasts
-					{ "i", 19234, 1 },	-- Six of Beasts
-					{ "i", 19235, 1 },	-- Seven of Beasts
-					{ "i", 19236, 1 },	-- Eight of Beasts
+					{ "i", 19227, 1 },	-- 1x Ace of Beasts
+					{ "i", 19236, 1 },	-- 1x Eight of Beasts
+					{ "i", 19233, 1 },	-- 1x Five of Beasts
+					{ "i", 19232, 1 },	-- 1x Four of Beasts
+					{ "i", 19235, 1 },	-- 1x Seven of Beasts
+					{ "i", 19234, 1 },	-- 1x Six of Beasts
+					{ "i", 19231, 1 },	-- 1x Three of Beasts
+					{ "i", 19230, 1 },	-- 1x Two of Beasts
 				},
 			})),
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19267, {	-- Elementals Deck
 				cost = {
-					{ "i", 19268, 1 },	-- Ace of Elementals
-					{ "i", 19269, 1 },	-- Two of Elementals
-					{ "i", 19270, 1 },	-- Three of Elementals
-					{ "i", 19271, 1 },	-- Four of Elementals
-					{ "i", 19272, 1 },	-- Five of Elementals
-					{ "i", 19273, 1 },	-- Six of Elementals
-					{ "i", 19274, 1 },	-- Seven of Elementals
-					{ "i", 19275, 1 },	-- Eight of Elementals
+					{ "i", 19268, 1 },	-- 1x Ace of Elementals
+					{ "i", 19275, 1 },	-- 1x Eight of Elementals
+					{ "i", 19272, 1 },	-- 1x Five of Elementals
+					{ "i", 19271, 1 },	-- 1x Four of Elementals
+					{ "i", 19274, 1 },	-- 1x Seven of Elementals
+					{ "i", 19273, 1 },	-- 1x Six of Elementals
+					{ "i", 19270, 1 },	-- 1x Three of Elementals
+					{ "i", 19269, 1 },	-- 1x Two of Elementals
 				},
 			})),
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19277, {	-- Portals Deck
 				cost = {
-					{ "i", 19276, 1 },	-- Ace of Portals
-					{ "i", 19278, 1 },	-- Two of Portals
-					{ "i", 19279, 1 },	-- Three of Portals
-					{ "i", 19280, 1 },	-- Four of Portals
-					{ "i", 19281, 1 },	-- Five of Portals
-					{ "i", 19282, 1 },	-- Six of Portals
-					{ "i", 19283, 1 },	-- Seven of Portals
-					{ "i", 19284, 1 },	-- Eight of Portals
+					{ "i", 19276, 1 },	-- 1x Ace of Portals
+					{ "i", 19284, 1 },	-- 1x Eight of Portals
+					{ "i", 19281, 1 },	-- 1x Five of Portals
+					{ "i", 19280, 1 },	-- 1x Four of Portals
+					{ "i", 19283, 1 },	-- 1x Seven of Portals
+					{ "i", 19282, 1 },	-- 1x Six of Portals
+					{ "i", 19279, 1 },	-- 1x Three of Portals
+					{ "i", 19278, 1 },	-- 1x Two of Portals
 				},
 			})),
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19257, {	-- Warlords Deck
 				cost = {
-					{ "i", 19258, 1 },	-- Ace of Warlords
-					{ "i", 19259, 1 },	-- Two of Warlords
-					{ "i", 19260, 1 },	-- Three of Warlords
-					{ "i", 19261, 1 },	-- Four of Warlords
-					{ "i", 19262, 1 },	-- Five of Warlords
-					{ "i", 19263, 1 },	-- Six of Warlords
-					{ "i", 19264, 1 },	-- Seven of Warlords
-					{ "i", 19265, 1 },	-- Eight of Warlords
+					{ "i", 19258, 1 },	-- 1x Ace of Warlords
+					{ "i", 19265, 1 },	-- 1x Eight of Warlords
+					{ "i", 19262, 1 },	-- 1x Five of Warlords
+					{ "i", 19261, 1 },	-- 1x Four of Warlords
+					{ "i", 19264, 1 },	-- 1x Seven of Warlords
+					{ "i", 19263, 1 },	-- 1x Six of Warlords
+					{ "i", 19260, 1 },	-- 1x Three of Warlords
+					{ "i", 19259, 1 },	-- 1x Two of Warlords
 				},
 			})),
 		}),
