@@ -18,12 +18,12 @@ root(ROOTS.Instances, {
 						9001,	-- Saving the Best for Last [A] (Mage)
 						9014,	-- Saving the Best for Last [H] (Mage)
 						9002,	-- Saving the Best for Last [A] (Paladin)
-						10499,	-- Saving the Best for Last [H] (Paladin)
+						10499,	-- Saving the Best for Last [H] (Paladin) (TODO: verify quest name)
 						9003,	-- Saving the Best for Last [A] (Priest)
 						9009,	-- Saving the Best for Last [H] (Priest)
 						9004,	-- Saving the Best for Last [A] (Rogue)
 						9010,	-- Saving the Best for Last [H] (Rogue)
-						10498,	-- Saving the Best for Last [A] (Shaman)
+						10498,	-- Saving the Best for Last [A] (Shaman) (TODO: verify quest name)
 						9011,	-- Saving the Best for Last [H] (Shaman)
 						9005,	-- Saving the Best for Last [A] (Warlock)
 						9012,	-- Saving the Best for Last [H] (Warlock)
@@ -396,7 +396,7 @@ root(ROOTS.Instances, {
 						},
 						-- #endif
 					}),
-					hordeQuestData = q(10493, {	-- An Earnest Proposition [H]
+					hordeQuestData = q(10493, {	-- An Earnest Proposition [H] (TODO: verify quest name)
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
@@ -425,7 +425,7 @@ root(ROOTS.Instances, {
 				},
 				{	-- Anthion's Parting Words
 					allianceQuestData = q(8954),	-- Anthion's Parting Words [A]
-					hordeQuestData = q(10497),	-- Anthion's Parting Words [H]
+					hordeQuestData = q(10497),	-- Anthion's Parting Words [H] (TODO: verify quest name)
 					qg = 16016,	-- Anthion Harmon
 					sourceQuest = 9015,	-- The Challenge
 					coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
@@ -452,7 +452,7 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
-					hordeQuestData = q(10495, {	-- Just Compensation [H]
+					hordeQuestData = q(10495, {	-- Just Compensation [H] (TODO: verify quest name)
 						sourceQuest = 8978,	-- Return to Mokvar
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
@@ -475,7 +475,7 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 					}),
-					hordeQuestData = q(10499, {	-- Saving the Best for Last [H]
+					hordeQuestData = q(10499, {	-- Saving the Best for Last [H] (TODO: verify quest name)
 						sourceQuest = 8998,	-- Back to the Beginning [HORDE]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
@@ -729,7 +729,7 @@ root(ROOTS.Instances, {
 			}),
 			cl(SHAMAN, {
 				{	-- An Earnest Proposition
-					allianceQuestData = q(10492, {	-- An Earnest Proposition [A]
+					allianceQuestData = q(10492, {	-- An Earnest Proposition [A] (TODO: verify quest name)
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
@@ -769,7 +769,7 @@ root(ROOTS.Instances, {
 					groups = { i(22095) },	-- Bindings of The Five Thunders
 				},
 				{	-- Anthion's Parting Words
-					allianceQuestData = q(10496),	-- Anthion's Parting Words [A]
+					allianceQuestData = q(10496),	-- Anthion's Parting Words [A] (TODO: verify quest name)
 					hordeQuestData = q(8957),	-- Anthion's Parting Words [H]
 					qg = 16016,	-- Anthion Harmon
 					sourceQuest = 9015,	-- The Challenge
@@ -792,7 +792,7 @@ root(ROOTS.Instances, {
 					},
 				},
 				{	-- Just Compensation
-					allianceQuestData = q(10494, {	-- Just Compensation [A]
+					allianceQuestData = q(10494, {	-- Just Compensation [A] (TODO: verify quest name)
 						sourceQuest = 8977,	-- Return to Deliana
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
@@ -817,7 +817,7 @@ root(ROOTS.Instances, {
 					},
 				},
 				{	-- Saving the Best for Last
-					allianceQuestData = q(10498, {	-- Saving the Best for Last [A]
+					allianceQuestData = q(10498, {	-- Saving the Best for Last [A] (TODO: verify quest name)
 						sourceQuest = 8997,	-- Back to the Beginning [ALLIANCE]
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
@@ -1099,14 +1099,14 @@ root(ROOTS.Instances, {
 					allianceQuestData = q(8922, {	-- A Supernatural Device [A]
 						sourceQuests = {
 							-- #if SEASON_OF_DISCOVERY
-							84147,	-- An Earnest Proposition
-							84148,	-- An Earnest Proposition
-							84149,	-- An Earnest Proposition
-							84150,	-- An Earnest Proposition
-							84151,	-- An Earnest Proposition
-							84152,	-- An Earnest Proposition
-							84153,	-- An Earnest Proposition
-							84154,	-- An Earnest Proposition
+							84147,	-- An Earnest Proposition (TODO: verify quest name)
+							84148,	-- An Earnest Proposition (TODO: verify quest name)
+							84149,	-- An Earnest Proposition (TODO: verify quest name)
+							84150,	-- An Earnest Proposition (TODO: verify quest name)
+							84151,	-- An Earnest Proposition (TODO: verify quest name)
+							84152,	-- An Earnest Proposition (TODO: verify quest name)
+							84153,	-- An Earnest Proposition (TODO: verify quest name)
+							84154,	-- An Earnest Proposition (TODO: verify quest name)
 							-- #else
 							8905,	-- An Earnest Proposition [DRUID]
 							8906,	-- An Earnest Proposition [HUNTER]
@@ -1115,7 +1115,7 @@ root(ROOTS.Instances, {
 							8909,	-- An Earnest Proposition [PRIEST]
 							8910,	-- An Earnest Proposition [ROGUE]
 							-- #if AFTER TBC
-							10492,	-- An Earnest Proposition [SHAMAN]
+							10492,	-- An Earnest Proposition [SHAMAN] (TODO: verify quest name)
 							-- #endif
 							8911,	-- An Earnest Proposition [WARLOCK]
 							8912,	-- An Earnest Proposition [WARRIOR]
@@ -1128,20 +1128,20 @@ root(ROOTS.Instances, {
 					hordeQuestData = q(8923, {	-- A Supernatural Device [H]
 						sourceQuests = {
 							-- #if SEASON_OF_DISCOVERY
-							84155,	-- An Earnest Proposition
-							84156,	-- An Earnest Proposition
-							84157,	-- An Earnest Proposition
-							84158,	-- An Earnest Proposition
-							84159,	-- An Earnest Proposition
-							84160,	-- An Earnest Proposition
-							84161,	-- An Earnest Proposition
-							84162,	-- An Earnest Proposition
+							84155,	-- An Earnest Proposition (TODO: verify quest name)
+							84156,	-- An Earnest Proposition (TODO: verify quest name)
+							84157,	-- An Earnest Proposition (TODO: verify quest name)
+							84158,	-- An Earnest Proposition (TODO: verify quest name)
+							84159,	-- An Earnest Proposition (TODO: verify quest name)
+							84160,	-- An Earnest Proposition (TODO: verify quest name)
+							84161,	-- An Earnest Proposition (TODO: verify quest name)
+							84162,	-- An Earnest Proposition (TODO: verify quest name)
 							-- #else
 							8913,	-- An Earnest Proposition [DRUID]
 							8914,	-- An Earnest Proposition [HUNTER]
 							8915,	-- An Earnest Proposition [MAGE]
 							-- #if AFTER TBC
-							10493,	-- An Earnest Proposition [PALADIN]
+							10493,	-- An Earnest Proposition [PALADIN] (TODO: verify quest name)
 							-- #endif
 							8916,	-- An Earnest Proposition [PRIEST]
 							8917,	-- An Earnest Proposition [ROGUE]
@@ -1198,14 +1198,14 @@ root(ROOTS.Instances, {
 					allianceQuestData = q(8960, {	-- Bodley's Unfortunate Fate [A]
 						sourceQuests = {
 							-- #if SEASON_OF_DISCOVERY
-							84179,	-- Anthion's Parting Words
-							84180,	-- Anthion's Parting Words
-							84181,	-- Anthion's Parting Words
-							84182,	-- Anthion's Parting Words
-							84183,	-- Anthion's Parting Words
-							84184,	-- Anthion's Parting Words
-							84185,	-- Anthion's Parting Words
-							84186,	-- Anthion's Parting Words
+							84179,	-- Anthion's Parting Words (TODO: verify quest name)
+							84180,	-- Anthion's Parting Words (TODO: verify quest name)
+							84181,	-- Anthion's Parting Words (TODO: verify quest name)
+							84182,	-- Anthion's Parting Words (TODO: verify quest name)
+							84183,	-- Anthion's Parting Words (TODO: verify quest name)
+							84184,	-- Anthion's Parting Words (TODO: verify quest name)
+							84185,	-- Anthion's Parting Words (TODO: verify quest name)
+							84186,	-- Anthion's Parting Words (TODO: verify quest name)
 							-- #else
 							8951,	-- Anthion's Parting Words [ALLIANCE]
 							8952,	-- Anthion's Parting Words [ALLIANCE]
@@ -1216,7 +1216,7 @@ root(ROOTS.Instances, {
 							8958,	-- Anthion's Parting Words [ALLIANCE]
 							8959,	-- Anthion's Parting Words [ALLIANCE]
 							-- #if AFTER TBC
-							10496,	-- Anthion's Parting Words [ALLIANCE]
+							10496,	-- Anthion's Parting Words [ALLIANCE] (TODO: verify quest name)
 							-- #endif
 							-- #endif
 						},
@@ -1226,14 +1226,14 @@ root(ROOTS.Instances, {
 					hordeQuestData = q(9032, {	-- Bodley's Unfortunate Fate [H]
 						sourceQuests = {
 							-- #if SEASON_OF_DISCOVERY
-							84187,	-- Anthion's Parting Words
-							84188,	-- Anthion's Parting Words
-							84189,	-- Anthion's Parting Words
-							84190,	-- Anthion's Parting Words
-							84191,	-- Anthion's Parting Words
-							84192,	-- Anthion's Parting Words
-							84193,	-- Anthion's Parting Words
-							84194,	-- Anthion's Parting Words
+							84187,	-- Anthion's Parting Words (TODO: verify quest name)
+							84188,	-- Anthion's Parting Words (TODO: verify quest name)
+							84189,	-- Anthion's Parting Words (TODO: verify quest name)
+							84190,	-- Anthion's Parting Words (TODO: verify quest name)
+							84191,	-- Anthion's Parting Words (TODO: verify quest name)
+							84192,	-- Anthion's Parting Words (TODO: verify quest name)
+							84193,	-- Anthion's Parting Words (TODO: verify quest name)
+							84194,	-- Anthion's Parting Words (TODO: verify quest name)
 							-- #else
 							9016,	-- Anthion's Parting Words [HORDE]
 							9017,	-- Anthion's Parting Words [HORDE]
@@ -1244,7 +1244,7 @@ root(ROOTS.Instances, {
 							9021,	-- Anthion's Parting Words [HORDE]
 							9022,	-- Anthion's Parting Words [HORDE]
 							-- #if AFTER TBC
-							10497,	-- Anthion's Parting Words [HORDE]
+							10497,	-- Anthion's Parting Words [HORDE] (TODO: verify quest name)
 							-- #endif
 							-- #endif
 						},
@@ -1453,14 +1453,14 @@ root(ROOTS.Instances, {
 					allianceQuestData = q(8929, {	-- In Search of Anthion [A]
 						sourceQuests = {
 							-- #if SEASON_OF_DISCOVERY
-							84163,	-- Just Compensation
-							84164,	-- Just Compensation
-							84165,	-- Just Compensation
-							84166,	-- Just Compensation
-							84167,	-- Just Compensation
-							84168,	-- Just Compensation
-							84169,	-- Just Compensation
-							84170,	-- Just Compensation
+							84163,	-- Just Compensation (TODO: verify quest name)
+							84164,	-- Just Compensation (TODO: verify quest name)
+							84165,	-- Just Compensation (TODO: verify quest name)
+							84166,	-- Just Compensation (TODO: verify quest name)
+							84167,	-- Just Compensation (TODO: verify quest name)
+							84168,	-- Just Compensation (TODO: verify quest name)
+							84169,	-- Just Compensation (TODO: verify quest name)
+							84170,	-- Just Compensation (TODO: verify quest name)
 							-- #else
 							8926,	-- Just Compensation [ALLIANCE]
 							8931,	-- Just Compensation [ALLIANCE]
@@ -1471,7 +1471,7 @@ root(ROOTS.Instances, {
 							8936,	-- Just Compensation [ALLIANCE]
 							8937,	-- Just Compensation [ALLIANCE]
 							-- #if AFTER TBC
-							10494,	-- Just Compensation [ALLIANCE]
+							10494,	-- Just Compensation [ALLIANCE] (TODO: verify quest name)
 							-- #endif
 							-- #endif
 						},
@@ -1481,14 +1481,14 @@ root(ROOTS.Instances, {
 					hordeQuestData = q(8930, {	-- In Search of Anthion [H]
 						sourceQuests = {
 							-- #if SEASON_OF_DISCOVERY
-							84171,	-- Just Compensation
-							84172,	-- Just Compensation
-							84173,	-- Just Compensation
-							84174,	-- Just Compensation
-							84175,	-- Just Compensation
-							84176,	-- Just Compensation
-							84177,	-- Just Compensation
-							84178,	-- Just Compensation
+							84171,	-- Just Compensation (TODO: verify quest name)
+							84172,	-- Just Compensation (TODO: verify quest name)
+							84173,	-- Just Compensation (TODO: verify quest name)
+							84174,	-- Just Compensation (TODO: verify quest name)
+							84175,	-- Just Compensation (TODO: verify quest name)
+							84176,	-- Just Compensation (TODO: verify quest name)
+							84177,	-- Just Compensation (TODO: verify quest name)
+							84178,	-- Just Compensation (TODO: verify quest name)
 							-- #else
 							8927,	-- Just Compensation [HORDE]
 							8938,	-- Just Compensation [HORDE]
@@ -1499,7 +1499,7 @@ root(ROOTS.Instances, {
 							8943,	-- Just Compensation [HORDE]
 							8944,	-- Just Compensation [HORDE]
 							-- #if AFTER TBC
-							10495,	-- Just Compensation [HORDE]
+							10495,	-- Just Compensation [HORDE] (TODO: verify quest name)
 							-- #endif
 							-- #endif
 						},

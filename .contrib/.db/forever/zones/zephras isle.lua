@@ -1902,7 +1902,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(93463, {	-- Triggered when turning in 'The High Order', likely a shared quest flag for either faction having completed their initial introduction quest.
+	q(93463, {	-- Triggered when turning in 'The High Order', likely a shared quest flag for either faction having completed their initial introduction quest. (TODO: verify quest name)
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
 });
