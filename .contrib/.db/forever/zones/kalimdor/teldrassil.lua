@@ -138,6 +138,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97977, {	-- Nature's Call
+						sourceQuest = 458,
 						qg = 1992,	-- Tarindrella
 						coord = { 57.8, 45.0, MAP.TELDRASSIL },
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -188,6 +189,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						races = ALLIANCE_ONLY,
 					}),
 					q(96630, {	-- The Adventurer [Teldrassil]
+						nextQuests = { 96606 },
+						isBreadcrumb = true,
+						altQuests = { 96627, 96628, 96638, 96652, 96656, 96659 },
+						sourceQuest = 921,
 						--["sourceQuest"] = ,	-- 
 						provider = { "o", 654846 },	-- Lost Journal
 						coord = { 59.1, 39.49, MAP.TELDRASSIL },
@@ -228,6 +233,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97979, {	-- The Goddess Provides
+						sourceQuest = 456,
 						qg = 3595,	-- Shanda <Priest Trainer>
 						coord = { 59.2, 40.4, MAP.TELDRASSIL },
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -427,7 +433,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97938, {	-- Camping 101: Alchemy [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96045, 97899, 97915, 97927, 97951, 97963 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -439,7 +446,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97939, {	-- Camping 101: Blacksmithing [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96044, 97900, 97916, 97928, 97952, 97964 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -452,7 +460,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(96634, {	-- Camping 101: Cooking [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96626, 96629, 96646, 96655, 96658, 96661 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -460,7 +469,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 			}),
 			q(97940, {	-- Camping 101: Enchanting [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96059, 97901, 97917, 97929, 97953, 98284, 98286 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -472,7 +482,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97941, {	-- Camping 101: Engineering [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96058, 97902, 97918, 97930, 97954, 98285, 98287 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -485,7 +496,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97942, {	-- Camping 101: First Aid [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96047, 97903, 97919, 97931, 97955, 97965 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -497,7 +509,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97943, {	-- Camping 101: Fishing [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96050, 97904, 97920, 97932, 97956, 97967 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -510,7 +523,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97944, {	-- Camping 101: Herbalism [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96055, 97905, 97921, 97933, 97957, 97968 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -522,7 +536,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97946, {	-- Camping 101: Leatherworking [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96031, 97906, 97922, 97934, 97958, 97969 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -534,7 +549,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97948, {	-- Camping 101: Mining [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96046, 97907, 97923, 97935, 97959, 97970 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -547,7 +563,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97949, {	-- Camping 101: Skinning [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96056, 97908, 97924, 97936, 97960, 97971 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -559,7 +576,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97950, {	-- Camping 101: Tailoring [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				altQuests = { 96057, 96102, 97925, 97937, 97961, 97972, 97973 },
+				sourceQuest = 96606,
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1114,6 +1132,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 			}),
 			q(96606, {	-- The Great Outdoors [Teldrassil]
+				altQuests = { 95998, 96101, 96604, 96605, 96607, 96608 },
 				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
