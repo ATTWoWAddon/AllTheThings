@@ -103,7 +103,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 			}),
 
 			-- Conduits
-			app.CreateDynamicHeader("conduitID", SimpleHeaderGroup(app.HeaderConstants.CONDUITS, {suffix=EXPANSION_NAME8})),
+			app.CreateDynamicHeader("conduitID", SimpleHeaderGroup(app.HeaderConstants.CONDUITS, {minBuild = 90000, suffix=EXPANSION_NAME8})),
 
 			-- Currencies
 			app.CreateDynamicHeaderByValue("currencyID", {

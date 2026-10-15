@@ -57,7 +57,7 @@ local stringsOne = {
 	{ title = L.BATTLE_PET, command = "battlepet" },
 	{ title = L.CATEGORY, command = "category" },
 	{ title = L.CLASSES, command = "class" },
-	{ title = L.CONDUIT, command = "conduit" },
+	{ minBuild = 90000, title = L.CONDUIT, command = "conduit" },
 	{ title = L.CREATURE, command = "creature" },
 	{ title = L.CRITERIA, command = "criteriaid" },
 	{ title = L.CURRENCY, command = "currency" },
