@@ -626,15 +626,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						},
 					}),
 					objective(2, {	-- Speak with High Tinker Mekkatorque
-						provider = { "n", 7937 },
+						provider = { "n", 7937 },	-- High Tinker Mekkatorque
 						coord = { 69.2, 49.2, MAP.IRONFORGE },
 					}),
 					objective(3, {	-- Speak with King Magni Bronzebeard
-						provider = { "n", 2784 },
+						provider = { "n", 2784 },	-- King Magni Bronzebeard
 						coord = { 39.4, 55.8, MAP.IRONFORGE },
 					}),
 					objective(4, {	-- Speak with Tyrande Whisperwind
-						provider = { "n", 7999 },
+						provider = { "n", 7999 },	-- Tyrande Whisperwind
 						coord = { 43.0, 77.8, MAP.DARNASSUS },
 					}),
 					i(286427),	-- Cloak of the Honored Guest

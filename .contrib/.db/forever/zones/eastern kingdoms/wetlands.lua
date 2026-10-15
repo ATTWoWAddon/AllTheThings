@@ -378,19 +378,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 23,
 				groups = {
 					objective(1, {	-- Attack Plan: Menethil Harbor destroyed
-						provider = { "o", 671481 },
+						provider = { "o", 671481 },	-- Attack Plan: Menethil Harbor destroyed
 						coord = { 45.4, 42.7, MAP.WETLANDS },
 					}),
 					objective(2, {	-- Attack Plan: Thelsamar destroyed
-						provider = { "o", 671486 },
+						provider = { "o", 671486 },	-- Attack Plan: Thelsamar destroyed
 						coord = { 49.3, 46.8, MAP.WETLANDS },
 					}),
 					objective(3, {	-- Attack Plan: Southshore destroyed
-						provider = { "o", 671483 },
+						provider = { "o", 671483 },	-- Attack Plan: Southshore destroyed
 						coord = { 45.3, 45.6, MAP.WETLANDS },
 					}),
 					objective(4, {	-- Attack Plan: Ironforge destroyed
-						provider = { "o", 671487 },
+						provider = { "o", 671487 },	-- Attack Plan: Ironforge destroyed
 						coord = { 38.6, 46.2, MAP.WETLANDS },
 					}),
 				},
