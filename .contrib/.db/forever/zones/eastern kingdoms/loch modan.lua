@@ -220,7 +220,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/3 Vessel of Dragon's Blood
 						provider = { "i", 7867 },	-- Vessel of Dragon's Blood
-						cost = {{ "i", 7866, 1 }},	-- Empty Thaumaturgy Vessel
+						cost = { { "i", 7866, 1 } },	-- Empty Thaumaturgy Vessel
 						cr = 2726,	-- Scorched Guardian
 					}),
 					i(7870, {	-- Thaumaturgy Vessel Lockbox
@@ -288,7 +288,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Crocolisk Meat
-						cost = {{ "i", 2924, 5 }},	-- Crocolisk Meat
+						cost = { { "i", 2924, 5 } },	-- Crocolisk Meat
 						crs = {
 							5053,	-- Deviate Crocolisk
 							2476,	-- Large Loch Crocolisk
@@ -455,7 +455,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 34.0, 46.6, LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
-				cost = {{ "i", 2841, 10 }},	-- Bronze Bar
+				cost = { { "i", 2841, 10 } },	-- Bronze Bar
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 				groups = {

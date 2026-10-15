@@ -162,28 +162,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(7794, {	-- A Donation of Mageweave
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 4338, 60 }},	-- Mageweave Cloth
+				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7795, {	-- A Donation of Runecloth
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				cost = { { "i", 14047, 60 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7793, {	-- A Donation of Silk
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 4306, 60 }},	-- Silk Cloth
+				cost = { { "i", 4306, 60 } },	-- Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7791, {	-- A Donation of Wool
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 2592, 60 }},	-- Wool Cloth
+				cost = { { "i", 2592, 60 } },	-- Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
@@ -278,7 +278,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
 				maxReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
-				cost = {{ "i", 14047, 20 }},	-- Runecloth
+				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 50,
@@ -711,7 +711,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 5497,	-- Jennea Cannon <Mage Trainer>
 				coord = { 49.5, 85.8, MAP.STORMWIND_CITY },
 				maps = { MAP.LOCH_MODAN },
-				cost = {{ "i", 2589, 10 }},	-- Linen Cloth
+				cost = { { "i", 2589, 10 } },	-- Linen Cloth
 				races = { HUMAN, GNOME },
 				classes = { MAGE },
 				lvl = 15,
@@ -900,7 +900,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 7766,	-- Tyrion
 				coord = { 73.2, 35.7, MAP.STORMWIND_CITY },
 				maps = { MAP.ELWYNN_FOREST },
-				cost = {{ "i", 4306, 3 }},	-- Silk Cloth
+				cost = { { "i", 4306, 3 } },	-- Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 16,
 				groups = {
@@ -1447,7 +1447,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(2758, {	-- The Origins of Smithing
 				qg = 7798,	-- Hank the Hammer
 				coord = { 63.0, 36.4, MAP.STORMWIND_CITY },
-				cost = {{ "i", 6040, 6 }},	-- Golden Scale Bracers
+				cost = { { "i", 6040, 6 } },	-- Golden Scale Bracers
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
 				races = ALLIANCE_ONLY,
@@ -1527,7 +1527,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 1643,	-- The Tome of Divinity (4/10)
 				qg = 6174,	-- Stephanie Turner
 				coord = { 63.8, 72.2, MAP.STORMWIND_CITY },
-				cost = {{ "i", 2589, 10 }},	-- Linen Cloth
+				cost = { { "i", 2589, 10 } },	-- Linen Cloth
 				races = { HUMAN },
 				classes = { PALADIN },
 				lvl = 12,
@@ -1807,7 +1807,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 							}) },
 						},
 						coord = { 26.0, 22.0, MAP.ASHENVALE },
-						cost = {{ "i", 190308, 1 }},	-- Burning Torch
+						cost = { { "i", 190308, 1 } },	-- Burning Torch
 					}),
 					i(190308, {	-- 0/1 Burning Torch
 						description = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",

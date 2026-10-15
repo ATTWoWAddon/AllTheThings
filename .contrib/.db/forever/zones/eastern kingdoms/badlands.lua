@@ -167,7 +167,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/3 Vessel of Dragon's Blood
 						provider = { "i", 7867 },	-- Vessel of Dragon's Blood
-						cost = {{ "i", 7866, 1 }},	-- Empty Thaumaturgy Vessel
+						cost = { { "i", 7866, 1 } },	-- Empty Thaumaturgy Vessel
 						cr = 2726,	-- Scorched Guardian
 					}),
 					i(7870, {	-- Thaumaturgy Vessel Lockbox
@@ -219,7 +219,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(713, {	-- Coolant Heads Prevail
 				qg = 2921,	-- Lotwil Veriatus
 				coord = { 26.0, 44.9, MAP.BADLANDS },
-				cost = {{ "i", 3829, 1 }},	-- Frost Oil
+				cost = { { "i", 3829, 1 } },	-- Frost Oil
 				lvl = 35,
 			}),
 			q(1419, {	-- Coyote Thieves
@@ -391,7 +391,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2817,	-- Rigglefuzz
 				coord = { 42.39, 52.93, MAP.BADLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
-				cost = {{ "i", 4611, 9 }},	-- Blue Pearl
+				cost = { { "i", 4611, 9 } },	-- Blue Pearl
 				lvl = 30,
 				groups = {
 					i(4086),	-- Flash Rifle
@@ -893,21 +893,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 		n(TREASURES, {
 			o(2842, {	-- Pillar of Diamond
 				coord = { 83.5, 32.9, MAP.BADLANDS },
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
+				cost = { { "i", 4640, 1 } },	-- Sign of the Earth
 				groups = {
 					i(4845),	-- Diamond Runestone
 				},
 			}),
 			o(2848, {	-- Pillar of Opal
 				coord = { 72.38, 66.94, MAP.BADLANDS },
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
+				cost = { { "i", 4640, 1 } },	-- Sign of the Earth
 				groups = {
 					i(4844),	-- Opal Runestone
 				},
 			}),
 			o(2858, {	-- Pillar of Amethyst
 				coord = { 81.27, 64.29, MAP.BADLANDS },
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
+				cost = { { "i", 4640, 1 } },	-- Sign of the Earth
 				groups = {
 					i(4843),	-- Amethyst Runestone
 				},

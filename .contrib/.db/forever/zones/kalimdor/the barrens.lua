@@ -103,7 +103,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					i(7968, {	-- Southsea Treasure
 						description = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
-						cost = {{ "i", 7970, 1 }},	-- E.C.A.C.
+						cost = { { "i", 7970, 1 } },	-- E.C.A.C.
 						cr = 7168,	-- Polly
 					}),
 				},

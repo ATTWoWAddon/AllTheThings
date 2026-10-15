@@ -56,56 +56,56 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(7809, {	-- A Donation of Mageweave
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = {{ "i", 4338, 60 }},	-- Mageweave Cloth
+				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7804, {	-- A Donation of Mageweave
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = {{ "i", 4338, 60 }},	-- Mageweave Cloth
+				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7811, {	-- A Donation of Runecloth
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				cost = { { "i", 14047, 60 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7805, {	-- A Donation of Runecloth
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				cost = { { "i", 14047, 60 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7808, {	-- A Donation of Silk
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = {{ "i", 4306, 60 }},	-- Silk Cloth
+				cost = { { "i", 4306, 60 } },	-- Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7803, {	-- A Donation of Silk
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = {{ "i", 4306, 60 }},	-- Silk Cloth
+				cost = { { "i", 4306, 60 } },	-- Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7802, {	-- A Donation of Wool
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = {{ "i", 2592, 60 }},	-- Wool Cloth
+				cost = { { "i", 2592, 60 } },	-- Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
 			q(7807, {	-- A Donation of Wool
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = {{ "i", 2592, 60 }},	-- Wool Cloth
+				cost = { { "i", 2592, 60 } },	-- Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
@@ -208,7 +208,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
 				maxReputation = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
-				cost = {{ "i", 14047, 20 }},	-- Runecloth
+				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 50,
@@ -218,7 +218,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				maxReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-				cost = {{ "i", 14047, 20 }},	-- Runecloth
+				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 50,
@@ -317,7 +317,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(7342, {	-- Arrows Are For Sissies
 				qg = 14183,	-- Artilleryman Sheldonore
 				coord = { 19.6, 52.2, MAP.IRONFORGE },
-				cost = {{ "i", 15997, 200 }},	-- Thorium Shells
+				cost = { { "i", 15997, 200 } },	-- Thorium Shells
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 52,
@@ -590,7 +590,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 3641,	-- Show Your Work
 				qg = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 				coord = { 69.8, 50.2, MAP.IRONFORGE },
-				cost = {{ "g", 20000 }},	-- 2g
+				cost = { { "g", 20000 } },	-- 2g
 				races = ALLIANCE_ONLY,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
@@ -719,7 +719,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Overspark's Signed Pledge
 						provider = { "i", 11283 },	-- Overspark's Signed Pledge
-						cost = {{ "i", 10793, 1 }},	-- Overspark's Pledge of Secrecy
+						cost = { { "i", 10793, 1 } },	-- Overspark's Pledge of Secrecy
 					}),
 				},
 			}),
@@ -791,7 +791,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 1647,	-- The Tome of Divinity (2/8)
 				qg = 6175,	-- John Turner
 				coord = { 27.6, 70.6, MAP.IRONFORGE },
-				cost = {{ "i", 2589, 10 }},	-- Linen Cloth
+				cost = { { "i", 2589, 10 } },	-- Linen Cloth
 				races = { DWARF },
 				classes = { PALADIN },
 				lvl = 12,

@@ -82,7 +82,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 249713,	-- Odd Child
 				coord = { 41., 79.0, MAP.WESTFALL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
+				cost = { { "i", 730, 3 } },	-- 3x Murloc Eye
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 				groups = {

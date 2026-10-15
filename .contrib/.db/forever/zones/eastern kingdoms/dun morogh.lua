@@ -559,7 +559,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(308, {	-- Distracting Jarven
 						qg = 1373,	-- Jarven Thunderbrew
 						coord = { 47.6, 52.6, MAP.DUN_MOROGH },
-						cost = {{ "i", 2686, 1 }},	-- Thunder Ale
+						cost = { { "i", 2686, 1 } },	-- Thunder Ale
 						races = ALLIANCE_ONLY,
 						repeatable = true,
 						groups = {
@@ -1033,7 +1033,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1377,	-- Pilot Stonegear
 				coord = { 49.6, 48.4, MAP.DUN_MOROGH },
 				maps = { WETLANDS },
-				cost = {{ "i", 3340, 6 }},	-- Incendicite Ore
+				cost = { { "i", 3340, 6 } },	-- Incendicite Ore
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
@@ -1090,7 +1090,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(317, {	-- Stocking Jetsteam
 				qg = 1378,	-- Pilot Bellowfiz
 				coord = { 49.4, 48.4, MAP.DUN_MOROGH },
-				cost = {{ "i", 769, 4 }},	-- Chunk of Boar Meat
+				cost = { { "i", 769, 4 } },	-- Chunk of Boar Meat
 				races = ALLIANCE_ONLY,
 				lvl = 2,
 				groups = {

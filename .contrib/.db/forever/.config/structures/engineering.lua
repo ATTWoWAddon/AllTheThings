@@ -174,93 +174,93 @@ ENGINEERING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_ALLIANCE = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 		{	-- Neutral
 			i(271625, {	-- Engineering Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(264205, {	-- Schematic: EZ-Thro Copper Bomb XL (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264204, {	-- Schematic: EZ-Thro Wrap (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264206, {	-- Schematic: No Slip SAF-T Padding (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264203, {	-- Schematic: SAF-T Copper Bomb (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264202, {	-- Schematic: SAF-T Dynamite (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264201, {	-- Schematic: SAF-T Tabs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(285285, {	-- Schematic: Satchel of Copper Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 		}, {	-- Friendly
 			i(280326, {	-- Schematic: Bent Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280323, {	-- Schematic: Clanking Cord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280328, {	-- Schematic: Dented Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(264211, {	-- Schematic: EZ-Thro Fireproof Fuse (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280325, {	-- Schematic: Floppy Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280322, {	-- Schematic: Gizmo Girdle (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(264209, {	-- Schematic: SAF-T Bell (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(285286, {	-- Schematic: Satchel of Bronze Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280327, {	-- Schematic: Stuckbutton Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280321, {	-- Schematic: Whimsical Waistwrap (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 		}, {	-- Honored
 			i(264217, {	-- Schematic: Compact Critter Carrier (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264216, {	-- Schematic: Emergency Field Cloak 270 (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264221, {	-- Schematic: Gnomish Army Knife (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264234, {	-- Schematic: Gnomish Poultryizer (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 			i(264222, {	-- Schematic: Loot-A-Rang (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264220, {	-- Schematic: SAF-T Disposable Parachute (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(285288, {	-- Schematic: Satchel of Dark Iron Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(285287, {	-- Schematic: Satchel of Iron Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264237, {	-- Schematic: Stealthman 52 (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 			i(264235, {	-- Schematic: Ultralight Goblin Glider (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 			i(264232, {	-- Schematic: Ultrasafe Rechargeable Battery (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted
@@ -269,93 +269,93 @@ ENGINEERING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_HORDE = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 				{	-- Neutral
 			i(271625, {	-- Engineering Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(264205, {	-- Schematic: EZ-Thro Copper Bomb XL (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264204, {	-- Schematic: EZ-Thro Wrap (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264206, {	-- Schematic: No Slip SAF-T Padding (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264203, {	-- Schematic: SAF-T Copper Bomb (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264202, {	-- Schematic: SAF-T Dynamite (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(264201, {	-- Schematic: SAF-T Tabs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 			i(285285, {	-- Schematic: Satchel of Copper Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 45 }},
+				cost = { { "c", MERCHANTS_FAVOR, 45 } },
 			}),
 		}, {	-- Friendly
 			i(280326, {	-- Schematic: Bent Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280323, {	-- Schematic: Clanking Cord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280328, {	-- Schematic: Dented Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(264211, {	-- Schematic: EZ-Thro Fireproof Fuse (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280325, {	-- Schematic: Floppy Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280322, {	-- Schematic: Gizmo Girdle (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(264209, {	-- Schematic: SAF-T Bell (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(285286, {	-- Schematic: Satchel of Bronze Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280327, {	-- Schematic: Stuckbutton Goggles (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(280321, {	-- Schematic: Whimsical Waistwrap (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 		}, {	-- Honored
 			i(264217, {	-- Schematic: Compact Critter Carrier (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264216, {	-- Schematic: Emergency Field Cloak 270 (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264221, {	-- Schematic: Gnomish Army Knife (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264234, {	-- Schematic: Gnomish Poultryizer (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 			i(264222, {	-- Schematic: Loot-A-Rang (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264220, {	-- Schematic: SAF-T Disposable Parachute (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(285288, {	-- Schematic: Satchel of Dark Iron Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(285287, {	-- Schematic: Satchel of Iron Bombs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 270 }},
+				cost = { { "c", MERCHANTS_FAVOR, 270 } },
 			}),
 			i(264237, {	-- Schematic: Stealthman 52 (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 			i(264235, {	-- Schematic: Ultralight Goblin Glider (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 			i(264232, {	-- Schematic: Ultrasafe Rechargeable Battery (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 360 }},
+				cost = { { "c", MERCHANTS_FAVOR, 360 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted

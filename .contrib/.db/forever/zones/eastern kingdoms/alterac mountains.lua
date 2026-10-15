@@ -326,7 +326,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 6707,	-- Fahrad <Grand Master Rogue>
 				coord = { 84.4, 80.3, MAP.ALTERAC_MOUNTAINS },
 				maxReputation = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
-				cost = {{ "i", 16885, 5 }},	-- Heavy Junkbox
+				cost = { { "i", 16885, 5 } },	-- Heavy Junkbox
 				repeatable = true,
 				lvl = 50,
 				groups = {
@@ -447,7 +447,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 6766,	-- Ravenholdt Guard <Assassin's League>
 				coord = { 85.2, 79.4, MAP.ALTERAC_MOUNTAINS },
 				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
-				cost = {{ "i", 17124, 1 }},	-- Syndicate Emblem
+				cost = { { "i", 17124, 1 } },	-- Syndicate Emblem
 				classes = { ROGUE },
 				repeatable = true,
 				lvl = 24,

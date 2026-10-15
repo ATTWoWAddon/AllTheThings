@@ -506,7 +506,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/3 Luminous Residue
 						provider = { "i", 247884 },	-- Luminous Residue
-						cost = {{ "i", 247883, 3 }},	-- Crude Wax Effigy
+						cost = { { "i", 247883, 3 } },	-- Crude Wax Effigy
 					}),
 				},
 			}),

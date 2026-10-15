@@ -170,192 +170,192 @@ BLACKSMITHING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_ALLIANCE = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 		{	-- Neutral
 			i(271622, {	-- Blacksmithing Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(251358, {	-- Plans: Acolyte's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251368, {	-- Plans: Acolyte's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251363, {	-- Plans: Acolyte's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251383, {	-- Plans: Acolyte's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251378, {	-- Plans: Acolyte's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251373, {	-- Plans: Acolyte's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251369, {	-- Plans: Crusader's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251359, {	-- Plans: Crusader's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251364, {	-- Plans: Crusader's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251384, {	-- Plans: Crusader's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251379, {	-- Plans: Crusader's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251374, {	-- Plans: Crusader's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251356, {	-- Plans: Guard's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251366, {	-- Plans: Guard's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251361, {	-- Plans: Guard's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251381, {	-- Plans: Guard's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251376, {	-- Plans: Guard's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251371, {	-- Plans: Guard's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251357, {	-- Plans: Protector's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251367, {	-- Plans: Protector's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251362, {	-- Plans: Protector's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251382, {	-- Plans: Protector's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251377, {	-- Plans: Protector's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251372, {	-- Plans: Protector's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251355, {	-- Plans: Veteran's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251365, {	-- Plans: Veteran's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251360, {	-- Plans: Veteran's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251380, {	-- Plans: Veteran's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251375, {	-- Plans: Veteran's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251370, {	-- Plans: Veteran's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 		}, {	-- Friendly
 			i(251422, {	-- Plans: Justicar's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251432, {	-- Plans: Justicar's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251418, {	-- Plans: Officer's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251428, {	-- Plans: Officer's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251421, {	-- Plans: Prefect's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251431, {	-- Plans: Prefect's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251419, {	-- Plans: Sentinel's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251429, {	-- Plans: Sentinel's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251420, {	-- Plans: Warder's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251430, {	-- Plans: Warder's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 		}, {	-- Honored
 			i(251447, {	-- Plans: Enriched Thorium Breastplate (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251449, {	-- Plans: Enriched Thorium Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251448, {	-- Plans: Enriched Thorium Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251417, {	-- Plans: Justicar's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251427, {	-- Plans: Justicar's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251437, {	-- Plans: Justicar's Wristguards (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251471, {	-- Plans: Legionite Glaive (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251413, {	-- Plans: Officer's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251423, {	-- Plans: Officer's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251433, {	-- Plans: Officer's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251416, {	-- Plans: Prefect's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251426, {	-- Plans: Prefect's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251436, {	-- Plans: Prefect's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251414, {	-- Plans: Sentinel's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251424, {	-- Plans: Sentinel's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251434, {	-- Plans: Sentinel's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251466, {	-- Plans: Thorium Cestus (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251465, {	-- Plans: Thorium Greatmace (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251415, {	-- Plans: Warder's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251425, {	-- Plans: Warder's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251435, {	-- Plans: Warder's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted
@@ -364,192 +364,192 @@ BLACKSMITHING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_HORDE = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 		{	-- Neutral
 			i(271622, {	-- Blacksmithing Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(251358, {	-- Plans: Acolyte's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251368, {	-- Plans: Acolyte's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251363, {	-- Plans: Acolyte's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251383, {	-- Plans: Acolyte's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251378, {	-- Plans: Acolyte's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251373, {	-- Plans: Acolyte's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251369, {	-- Plans: Crusader's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251359, {	-- Plans: Crusader's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251364, {	-- Plans: Crusader's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251384, {	-- Plans: Crusader's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251379, {	-- Plans: Crusader's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251374, {	-- Plans: Crusader's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251356, {	-- Plans: Guard's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251366, {	-- Plans: Guard's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251361, {	-- Plans: Guard's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251381, {	-- Plans: Guard's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251376, {	-- Plans: Guard's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251371, {	-- Plans: Guard's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251357, {	-- Plans: Protector's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251367, {	-- Plans: Protector's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251362, {	-- Plans: Protector's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251382, {	-- Plans: Protector's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251377, {	-- Plans: Protector's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251372, {	-- Plans: Protector's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251355, {	-- Plans: Veteran's Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251365, {	-- Plans: Veteran's Chain Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251360, {	-- Plans: Veteran's Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251380, {	-- Plans: Veteran's Silvered Chain Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251375, {	-- Plans: Veteran's Silvered Chain Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(251370, {	-- Plans: Veteran's Silvered Chain Shirt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 		}, {	-- Friendly
 			i(251422, {	-- Plans: Justicar's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251432, {	-- Plans: Justicar's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251418, {	-- Plans: Officer's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251428, {	-- Plans: Officer's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251421, {	-- Plans: Prefect's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251431, {	-- Plans: Prefect's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251419, {	-- Plans: Sentinel's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251429, {	-- Plans: Sentinel's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251420, {	-- Plans: Warder's Gauntlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(251430, {	-- Plans: Warder's Pauldrons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 		}, {	-- Honored
 			i(251447, {	-- Plans: Enriched Thorium Breastplate (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251449, {	-- Plans: Enriched Thorium Helm (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251448, {	-- Plans: Enriched Thorium Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251417, {	-- Plans: Justicar's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251427, {	-- Plans: Justicar's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251437, {	-- Plans: Justicar's Wristguards (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251471, {	-- Plans: Legionite Glaive (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 120 }},
+				cost = { { "c", MERCHANTS_FAVOR, 120 } },
 			}),
 			i(251413, {	-- Plans: Officer's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251423, {	-- Plans: Officer's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251433, {	-- Plans: Officer's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251416, {	-- Plans: Prefect's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251426, {	-- Plans: Prefect's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251436, {	-- Plans: Prefect's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251414, {	-- Plans: Sentinel's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251424, {	-- Plans: Sentinel's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251434, {	-- Plans: Sentinel's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251466, {	-- Plans: Thorium Cestus (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251465, {	-- Plans: Thorium Greatmace (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251415, {	-- Plans: Warder's Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251425, {	-- Plans: Warder's Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(251435, {	-- Plans: Warder's Wristguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted

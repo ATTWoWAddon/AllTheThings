@@ -142,252 +142,252 @@ LEATHERWORKING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_ALLIANCE = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 		{	-- Neutral
 			i(271626, {	-- Leatherworking Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(252765, {	-- Pattern: Brawler's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252786, {	-- Pattern: Brawler's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252777, {	-- Pattern: Brawler's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252798, {	-- Pattern: Brawler's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252820, {	-- Pattern: Brawler's Leather Legguards (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252805, {	-- Pattern: Brawler's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252767, {	-- Pattern: Defender's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252788, {	-- Pattern: Defender's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252779, {	-- Pattern: Defender's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252800, {	-- Pattern: Defender's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252822, {	-- Pattern: Defender's Leather Kilt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252807, {	-- Pattern: Defender's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252769, {	-- Pattern: Stormrider's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252790, {	-- Pattern: Stormrider's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252781, {	-- Pattern: Stormrider's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252802, {	-- Pattern: Stormrider's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252824, {	-- Pattern: Stormrider's Leather Kilt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252809, {	-- Pattern: Stormrider's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252768, {	-- Pattern: Totemic Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252789, {	-- Pattern: Totemic Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252780, {	-- Pattern: Totemic Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252801, {	-- Pattern: Totemic Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252823, {	-- Pattern: Totemic Leather Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252808, {	-- Pattern: Totemic Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252767, {	-- Pattern: Trapper's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252787, {	-- Pattern: Trapper's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252778, {	-- Pattern: Trapper's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252799, {	-- Pattern: Trapper's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252821, {	-- Pattern: Trapper's Leather Legguards (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252806, {	-- Pattern: Trapper's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252803, {	-- Pattern: Wisdom's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252782, {	-- Pattern: Wisdom's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252825, {	-- Pattern: Wisdom's Leather Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252770, {	-- Pattern: Wisdom's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252791, {	-- Pattern: Wisdom's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252810, {	-- Pattern: Wisdom's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 		}, {	-- Friendly
 			i(252834, {	-- Pattern: Forceful Thick Armor Kit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252842, {	-- Pattern: Mender's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252852, {	-- Pattern: Mender's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252903, {	-- Pattern: Mender's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252836, {	-- Pattern: Prowler's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252848, {	-- Pattern: Prowler's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252840, {	-- Pattern: Skirmisher's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252902, {	-- Pattern: Skirmisher's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252841, {	-- Pattern: Skycaller's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252851, {	-- Pattern: Skycaller's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252901, {	-- Pattern: Skycaller's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252837, {	-- Pattern: Skulker's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252849, {	-- Pattern: Skulker's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252838, {	-- Pattern: Stalker's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252900, {	-- Pattern: Stalker's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252839, {	-- Pattern: Warden's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252850, {	-- Pattern: Warden's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 		}, {	-- Honored
 			i(252864, {	-- Pattern: Mender's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252857, {	-- Pattern: Mender's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252876, {	-- Pattern: Mender's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252925, {	-- Pattern: Mender's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252907, {	-- Pattern: Mender's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252913, {	-- Pattern: Mender's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252941, {	-- Pattern: Mystic Rugged Armor Kit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252860, {	-- Pattern: Prowler's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252853, {	-- Pattern: Prowler's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252872, {	-- Pattern: Prowler's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252863, {	-- Pattern: Skycaller's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252856, {	-- Pattern: Skycaller's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252875, {	-- Pattern: Skycaller's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252923, {	-- Pattern: Skycaller's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252905, {	-- Pattern: Skycaller's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252911, {	-- Pattern: Skycaller's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252924, {	-- Pattern: Skirmisher's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252906, {	-- Pattern: Skirmisher's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252912, {	-- Pattern: Skirmisher's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252861, {	-- Pattern: Skulker's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252854, {	-- Pattern: Skulker's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252873, {	-- Pattern: Skulker's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252922, {	-- Pattern: Stalker's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252904, {	-- Pattern: Stalker's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252910, {	-- Pattern: Stalker's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252862, {	-- Pattern: Warden's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252855, {	-- Pattern: Warden's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252874, {	-- Pattern: Warden's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted
@@ -396,249 +396,249 @@ LEATHERWORKING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_HORDE = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 		{	-- Neutral
 			i(271626, {	-- Leatherworking Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 			i(252765, {	-- Pattern: Brawler's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252786, {	-- Pattern: Brawler's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252777, {	-- Pattern: Brawler's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252798, {	-- Pattern: Brawler's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252820, {	-- Pattern: Brawler's Leather Legguards (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252805, {	-- Pattern: Brawler's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252767, {	-- Pattern: Defender's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252788, {	-- Pattern: Defender's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252779, {	-- Pattern: Defender's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252800, {	-- Pattern: Defender's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252822, {	-- Pattern: Defender's Leather Kilt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252807, {	-- Pattern: Defender's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252769, {	-- Pattern: Stormrider's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252790, {	-- Pattern: Stormrider's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252781, {	-- Pattern: Stormrider's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252802, {	-- Pattern: Stormrider's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252824, {	-- Pattern: Stormrider's Leather Kilt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252809, {	-- Pattern: Stormrider's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252768, {	-- Pattern: Totemic Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252789, {	-- Pattern: Totemic Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252780, {	-- Pattern: Totemic Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252801, {	-- Pattern: Totemic Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252823, {	-- Pattern: Totemic Leather Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252808, {	-- Pattern: Totemic Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252767, {	-- Pattern: Trapper's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252787, {	-- Pattern: Trapper's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252778, {	-- Pattern: Trapper's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252799, {	-- Pattern: Trapper's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252821, {	-- Pattern: Trapper's Leather Legguards (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252806, {	-- Pattern: Trapper's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252803, {	-- Pattern: Wisdom's Leather Hood (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252782, {	-- Pattern: Wisdom's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252825, {	-- Pattern: Wisdom's Leather Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252770, {	-- Pattern: Wisdom's Leather Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252810, {	-- Pattern: Wisdom's Leather Tunic (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 		}, {	-- Friendly
 			i(252834, {	-- Pattern: Forceful Thick Armor Kit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252842, {	-- Pattern: Mender's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252852, {	-- Pattern: Mender's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252903, {	-- Pattern: Mender's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252836, {	-- Pattern: Prowler's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252848, {	-- Pattern: Prowler's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252840, {	-- Pattern: Skirmisher's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252902, {	-- Pattern: Skirmisher's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252841, {	-- Pattern: Skycaller's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252851, {	-- Pattern: Skycaller's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252901, {	-- Pattern: Skycaller's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252837, {	-- Pattern: Skulker's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252849, {	-- Pattern: Skulker's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252838, {	-- Pattern: Stalker's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252900, {	-- Pattern: Stalker's Mail Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252839, {	-- Pattern: Warden's Leather Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(252850, {	-- Pattern: Warden's Leather Shoulder (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 		}, {	-- Honored
 			i(252864, {	-- Pattern: Mender's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252857, {	-- Pattern: Mender's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252876, {	-- Pattern: Mender's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252925, {	-- Pattern: Mender's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252907, {	-- Pattern: Mender's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252913, {	-- Pattern: Mender's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252941, {	-- Pattern: Mystic Rugged Armor Kit (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252860, {	-- Pattern: Prowler's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252853, {	-- Pattern: Prowler's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252872, {	-- Pattern: Prowler's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252863, {	-- Pattern: Skycaller's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252856, {	-- Pattern: Skycaller's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252875, {	-- Pattern: Skycaller's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252923, {	-- Pattern: Skycaller's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252905, {	-- Pattern: Skycaller's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252911, {	-- Pattern: Skycaller's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252924, {	-- Pattern: Skirmisher's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252906, {	-- Pattern: Skirmisher's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252912, {	-- Pattern: Skirmisher's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252861, {	-- Pattern: Skulker's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252854, {	-- Pattern: Skulker's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252873, {	-- Pattern: Skulker's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252922, {	-- Pattern: Stalker's Mail Belt (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252904, {	-- Pattern: Stalker's Mail Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252910, {	-- Pattern: Stalker's Mail Sabatons (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252862, {	-- Pattern: Warden's Leather Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252855, {	-- Pattern: Warden's Leather Bracers (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(252874, {	-- Pattern: Warden's Leather Waistguard (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted
