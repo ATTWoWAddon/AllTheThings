@@ -630,6 +630,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				["lvl"] = 10,
 			}),
 			q(97951, {	-- Camping 101: Alchemy [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1230564 },
 				altQuests = { 96045, 97899, 97915, 97927, 97938, 97963 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -643,6 +644,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97952, {	-- Camping 101: Blacksmithing [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1230171 },
 				altQuests = { 96044, 97900, 97916, 97928, 97939, 97964 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -672,6 +674,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97953, {	-- Camping 101: Enchanting [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1230643 },
 				altQuests = { 96059, 97901, 97917, 97929, 97940, 98284, 98286 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -685,6 +688,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97954, {	-- Camping 101: Engineering [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1230656 },
 				altQuests = { 96058, 97902, 97918, 97930, 97941, 98285, 98287 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -699,6 +703,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97955, {	-- Camping 101: First Aid [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1230117 },
 				altQuests = { 96047, 97903, 97919, 97931, 97942, 97965 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -712,6 +717,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97956, {	-- Camping 101: Fishing [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1229745 },
 				altQuests = { 96050, 97904, 97920, 97932, 97943, 97967 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -725,6 +731,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97957, {	-- Camping 101: Herbalism [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1229705 },
 				altQuests = { 96055, 97905, 97921, 97933, 97944, 97968 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -738,6 +745,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97958, {	-- Camping 101: Leatherworking [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1229432 },
 				altQuests = { 96031, 97906, 97922, 97934, 97946, 97969 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -751,6 +759,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97959, {	-- Camping 101: Mining [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1230161 },
 				altQuests = { 96046, 97907, 97923, 97935, 97948, 97970 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -765,6 +774,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97960, {	-- Camping 101: Skinning [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1229517 },
 				altQuests = { 96056, 97908, 97924, 97936, 97949, 97971 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
@@ -778,6 +788,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97961, {	-- Camping 101: Tailoring [Tirisfal Glades]
+				lockCriteria = { 1, "spellID", 1229504 },
 				altQuests = { 96057, 96102, 97925, 97937, 97950, 97972, 97973 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
