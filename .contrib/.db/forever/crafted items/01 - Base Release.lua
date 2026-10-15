@@ -899,10 +899,12 @@ root(ROOTS.Craftables, {
 			i(13880),	-- 68 Pound Yellowtail
 			-- Bloated fish:
 			i(6646),	-- Bloated Albacore
+			i(6643),	-- Bloated Brilliant Smallfish
 			i(6647),	-- Bloated Bristle Whisker Catfish
 			i(21163),	-- Bloated Firefin Snapper
-			i(6644),	-- Bloated Mackerel
 			i(21243),	-- Bloated Glossy Mightfish
+			i(6644),	-- Bloated Mackerel
+			i(8366),	-- Bloated Mithril Head Trout
 			i(6645),	-- Bloated Mud Snapper
 			i(21162),	-- Bloated Oily Blackmouth
 			i(13881, {	-- Bloated Redgill
@@ -916,8 +918,6 @@ root(ROOTS.Craftables, {
 				i(1705),	-- Lesser Moonstone
 			}),
 			i(13891),	-- Bloated Whitescale Salmon
-			i(6643),	-- Bloated Brilliant Smallfish
-			i(8366),	-- Bloated Mithril Head Trout
 			-- Containers:
 			i(6351),	-- Dented Crate
 			i(13874),	-- Heavy Crate
@@ -943,11 +943,11 @@ root(ROOTS.Craftables, {
 					MAP.WETLANDS,
 				},
 				providers = {
+					{ "o", 180683 },	-- Firefin Snapper School
+					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180901 },	-- Floating Wreckage
-					{ "o", 180683 },	-- Firefin Snapper School
-					{ "o", 180683 },	-- Firefin Snapper School
-					{ "o", 180682 },	-- Oily Blackmouth School
 					{ "o", 180685 },	-- Floating Wreckage
+					{ "o", 180682 },	-- Oily Blackmouth School
 				},
 				--[[["groups"] = {
 					i(4339),	-- Bolt of Mageweave
@@ -1024,18 +1024,18 @@ root(ROOTS.Craftables, {
 			-- Consumables:
 			i(21151, {	-- Rumsey Rum Black Label
 				providers = {
-					{ "o", 180901 },	-- Floating Wreckage
+					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180655 },	-- Floating Debris
+					{ "o", 180901 },	-- Floating Wreckage
 					{ "o", 180751 },	-- Floating Wreckage
-					{ "o", 180683 },	-- Firefin Snapper School
+					{ "o", 180685 },	-- Floating Wreckage
 					{ "o", 180682 },	-- Oily Blackmouth School
+					{ "o", 180663 },	-- Sagefish School
+					{ "o", 180656 },	-- Sagefish School
 					{ "o", 180658 },	-- School of Deviate Fish
 					{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 					{ "o", 180712 },	-- Stonescale Eel Swarm
-					{ "o", 180685 },	-- Floating Wreckage
-					{ "o", 180663 },	-- Sagefish School
-					{ "o", 180656 },	-- Sagefish School
 				},
 			}),
 			i(20709, {	-- Rumsey Rum Light
@@ -1388,12 +1388,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		-- Wreckages:
-		o(180901, {	-- Floating Wreckage
-			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
-			maps = {
-				MAP.STRANGLETHORN_VALE,
-			},
-		}),
 		o(180655, {	-- Floating Debris
 			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
@@ -1403,6 +1397,12 @@ root(ROOTS.Craftables, {
 				MAP.SILVERPINE_FOREST,
 				MAP.WESTFALL,
 				MAP.THE_BARRENS,
+			},
+		}),
+		o(180901, {	-- Floating Wreckage
+			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			maps = {
+				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180751, {	-- Floating Wreckage
@@ -2230,8 +2230,8 @@ root(ROOTS.Craftables, {
 			i(6260),	-- Blue Dye
 			i(2320),	-- Coarse Thread
 			i(2321),	-- Fine Thread
-			i(2605),	-- Green Dye
 			i(4340),	-- Gray Dye
+			i(2605),	-- Green Dye
 			i(8343),	-- Heavy Silken Thread
 			i(4342),	-- Purple Dye
 			i(2604),	-- Red Dye
@@ -3599,8 +3599,8 @@ root(ROOTS.Craftables, {
 			i(6260),	-- Blue Dye
 			i(2320),	-- Coarse Thread
 			i(2321),	-- Fine Thread
-			i(2605),	-- Green Dye
 			i(4340),	-- Gray Dye
+			i(2605),	-- Green Dye
 			i(8343),	-- Heavy Silken Thread
 			i(6261),	-- Orange Dye
 			i(10290),	-- Pink Dye
