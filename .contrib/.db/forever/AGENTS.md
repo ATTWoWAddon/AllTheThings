@@ -31,8 +31,8 @@ classes
 lvl
 [flags, then lockCriteria]
 customCollect
-qi
 timeline
+qi/qis
 groups
 ```
 
@@ -51,6 +51,7 @@ classes
 lvl
 [flags, then lockCriteria]
 timeline
+qi/qis
 groups
 ```
 
@@ -70,6 +71,7 @@ classes
 lvl
 [flags, then lockCriteria]
 timeline
+qi/qis
 groups
 ```
 
@@ -80,7 +82,7 @@ Apply these shared rules to all applicable tables, including other constructors 
 - Put `cost` after `coord`/`coords` and before the race/class/level block when those fields coexist.
 - Keep the restriction fields together in the order `races`, `classes`, `lvl`; omit absent fields.
 - Keep `isX` flags and `repeatable` together. Preserve their existing relative order except that `isBreadcrumb` is the last flag. Put `lockCriteria` immediately below that flag block when present.
-- Put `timeline` at the end of metadata, immediately before `groups`; without `groups`, make it the final field. This includes moving it below metadata that is not listed in the complete orders.
+- Put the final fields in this order: `timeline`, the `qi`/`qis` group, then `groups`; omit absent fields. Preserve the existing relative order within the `qi`/`qis` group. Place this tail after all other metadata, including fields not listed in the complete orders.
 - Do not invent an order for unlisted fields. Preserve their relative order, although a field covered by an explicit rule may move across them.
 
 Do not change function-call evaluation order or move fields across independent comments or Parser boundaries without inspecting their context. If a field is wrapped in Parser directives, move its complete conditional block only after verifying that every affected field retains exactly the same conditions. Preserve the directive text and directive order.
