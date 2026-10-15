@@ -359,6 +359,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				races = HORDE_ONLY,
 			}),
 			q(97927, {	-- Camping 101: Alchemy [Mulgore]
+				lockCriteria = { 1, "spellID", 1230564 },
 				altQuests = { 96045, 97899, 97915, 97938, 97951, 97963 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -373,6 +374,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97928, {	-- Camping 101: Blacksmithing [Mulgore]
+				lockCriteria = { 1, "spellID", 1230171 },
 				altQuests = { 96044, 97900, 97916, 97939, 97952, 97964 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -396,6 +398,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 			}),
 			q(97929, {	-- Camping 101: Enchanting [Mulgore]
+				lockCriteria = { 1, "spellID", 1230643 },
 				altQuests = { 96059, 97901, 97917, 97940, 97953, 98284, 98286 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -409,6 +412,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97930, {	-- Camping 101: Engineering [Mulgore]
+				lockCriteria = { 1, "spellID", 1230656 },
 				altQuests = { 96058, 97902, 97918, 97941, 97954, 98285, 98287 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -422,6 +426,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97931, {	-- Camping 101: First Aid [Mulgore]
+				lockCriteria = { 1, "spellID", 1230117 },
 				altQuests = { 96047, 97903, 97919, 97942, 97955, 97965 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -435,6 +440,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97932, {	-- Camping 101: Fishing [Mulgore]
+				lockCriteria = { 1, "spellID", 1229745 },
 				altQuests = { 96050, 97904, 97920, 97943, 97956, 97967 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -448,6 +454,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97933, {	-- Camping 101: Herbalism [Mulgore]
+				lockCriteria = { 1, "spellID", 1229705 },
 				altQuests = { 96055, 97905, 97921, 97944, 97957, 97968 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -462,6 +469,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97934, {	-- Camping 101: Leatherworking [Mulgore]
+				lockCriteria = { 1, "spellID", 1229432 },
 				altQuests = { 96031, 97906, 97922, 97946, 97958, 97969 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -475,6 +483,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97935, {	-- Camping 101: Mining [Mulgore]
+				lockCriteria = { 1, "spellID", 1230161 },
 				altQuests = { 96046, 97907, 97923, 97948, 97959, 97970 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -489,6 +498,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97936, {	-- Camping 101: Skinning [Mulgore]
+				lockCriteria = { 1, "spellID", 1229517 },
 				altQuests = { 96056, 97908, 97924, 97949, 97960, 97971 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -502,6 +512,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97937, {	-- Camping 101: Tailoring [Mulgore]
+				lockCriteria = { 1, "spellID", 1229504 },
 				altQuests = { 96057, 96102, 97925, 97950, 97961, 97972, 97973 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
@@ -827,6 +838,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(76156, {	-- Stalk With The Earthmother
+				classes = { WARRIOR, SHAMAN, DRUID },
 				qg = 205729,	-- Boarton Shadetotem
 				qi = 206159,	-- Venture Co Disguise
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
@@ -863,7 +875,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qi = 206344,	-- Knife Set
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				classes = { HUNTER, SHAMAN, DRUID },
+				classes = { SHAMAN },
 				races = HORDE_ONLY,
 				lvl = 4,
 				groups = {
