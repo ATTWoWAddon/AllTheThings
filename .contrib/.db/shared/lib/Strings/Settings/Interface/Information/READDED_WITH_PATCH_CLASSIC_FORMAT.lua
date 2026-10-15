@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "This gets re-added with patch %s",
+	readable = "This gets readded with patch %s",
 	constant = "READDED_WITH_PATCH_CLASSIC_FORMAT",
 	export = true,
 	text = {
-		en = "This gets re-added with patch %s",
+		en = "This gets readded with patch %s",
 		-- TODO: de = "",
 		es = "Esto se vuelve a agregar con el parche %s",
 		mx = "Esto se vuelve a agregar con el parche %s",

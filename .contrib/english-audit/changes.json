@@ -3,10 +3,10 @@
   "branch": "codex/english-flavor-audit",
   "date": "2026-10-15",
   "timezone": "Asia/Taipei",
-  "changed_source_files": 242,
-  "changed_source_lines": 427,
+  "changed_source_files": 240,
+  "changed_source_lines": 423,
   "cross_verified_source_lines": 34,
-  "editorial_source_lines": 393,
+  "editorial_source_lines": 389,
   "two_source_policy": "Count distinct source providers. Wowhead page and tooltip count as one provider. Editorial language changes make no new gameplay claim and have zero external WoW sources.",
   "changes": [
     {
@@ -927,42 +927,6 @@
       ],
       "scope": "shared",
       "change_id": "EN-0052"
-    },
-    {
-      "path": ".contrib/.db/shared/lib/Strings/Settings/Interface/Information/READDED_WITH_PATCH_CLASSIC_FORMAT.lua",
-      "line": 2,
-      "before": "\treadable = \"This gets readded with patch %s\",",
-      "after": "\treadable = \"This gets re-added with patch %s\",",
-      "flavor": "Shared Classic timeline text",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Hyphenate re-added for clarity."
-      ],
-      "scope": "shared",
-      "change_id": "EN-0053"
-    },
-    {
-      "path": ".contrib/.db/shared/lib/Strings/Settings/Interface/Information/READDED_WITH_PATCH_CLASSIC_FORMAT.lua",
-      "line": 6,
-      "before": "\t\ten = \"This gets readded with patch %s\",",
-      "after": "\t\ten = \"This gets re-added with patch %s\",",
-      "flavor": "Shared Classic timeline text",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Hyphenate re-added for clarity."
-      ],
-      "scope": "shared",
-      "change_id": "EN-0054"
     },
     {
       "path": ".contrib/.db/shared/lib/Strings/Settings/Interface/NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP.lua",
@@ -6687,24 +6651,6 @@
       "change_id": "EN-0343"
     },
     {
-      "path": ".contrib/src/Parser/FieldTypes/Timeline.cs",
-      "line": 184,
-      "before": "                        // If the first entry here is removed/deleted, we want to check if it is eventually readded",
-      "after": "                        // If the first entry here is removed/deleted, we want to check if it is eventually re-added",
-      "flavor": "Contributor tools; all configured flavors",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Editorial correction of repository English; no gameplay claim changed."
-      ],
-      "scope": "tools",
-      "change_id": "EN-0344"
-    },
-    {
       "path": ".contrib/src/Parser/Framework/Framework.Items.cs",
       "line": 75,
       "before": "            /// All of the items in the database witout any references.",
@@ -7117,24 +7063,6 @@
       ],
       "scope": "tools",
       "change_id": "EN-0367"
-    },
-    {
-      "path": ".contrib/src/Parser/Framework/Framework.Processing.cs",
-      "line": 5010,
-      "before": "            // NOTE: If it's not the last entry, that means it might have been readded later?",
-      "after": "            // NOTE: If it's not the last entry, that means it might have been re-added later?",
-      "flavor": "Contributor tools; all configured flavors",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Editorial correction of repository English; no gameplay claim changed."
-      ],
-      "scope": "tools",
-      "change_id": "EN-0368"
     },
     {
       "path": ".contrib/src/Parser/Framework/HierarchicalFieldAdjustments.cs",

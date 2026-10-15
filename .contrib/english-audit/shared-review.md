@@ -11,7 +11,7 @@ Date: 2026-10-15 (Asia/Taipei). Branch: `codex/english-flavor-audit`. Changes ar
 - Wago attempt: `https://wago.tools/db2/GameObjects?build=12.0.1.65818` was inaccessible through browsing; this build was an attempted query only, never treated as verified source evidence. No edit relies on it.
 - Source counts below count independent publishers: Wowhead page plus Wowhead tooltip count as one. Editorial grammar changes have 0 gameplay sources because no game fact changes. Game names/headers require at least 2 sources.
 
-Existing `logout` and `login` strings are retained; spacing-only proposals for these words are omitted.
+Existing `logout`, `login` and `readded` strings are retained; spacing and hyphenation proposals for these words are omitted.
 
 ## Applied changes
 
@@ -132,14 +132,6 @@ Existing `logout` and `login` strings are retained; spacing-only proposals for t
 - After: `profession node completion`
 - Flavor/context: Shared (Retail and Classic, when the feature is included).
 - Reason: Use singular node as an attributive noun.
-- Independent gameplay sources: 0.
-- Source marking: English editorial correction, verified against the exact original wording in this file; no WoW factual change.
-
-### 18. `.contrib/.db/shared/lib/Strings/Settings/Interface/Information/READDED_WITH_PATCH_CLASSIC_FORMAT.lua` lines 2, 6
-- Before: `readded`
-- After: `re-added`
-- Flavor/context: Shared Classic timeline text.
-- Reason: Hyphenate re-added for clarity.
 - Independent gameplay sources: 0.
 - Source marking: English editorial correction, verified against the exact original wording in this file; no WoW factual change.
 
@@ -407,5 +399,5 @@ Existing `logout` and `login` strings are retained; spacing-only proposals for t
 ## Validation
 
 - Every write used byte-preserving replacements; original CRLF and total line counts were checked.
-- `git diff --check` passed for the shared subtree. Compared all 37 changed files (68 final changed source lines) against the HEAD baseline after applying Git checkout filters: translated locale assignments, format placeholders, total line counts, and CRLF were unchanged.
+- `git diff --check` passed for the shared subtree. Compared all 36 changed files (66 final changed source lines) against the HEAD baseline after applying Git checkout filters: translated locale assignments, format placeholders, total line counts, and CRLF were unchanged.
 - Lua 5.1 validation is coordinated by root. This subagent has not claimed game runtime testing.
