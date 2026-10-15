@@ -94,7 +94,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				isYearly = true,
 			}),
 			q(172, {	-- Children's Week [Horde - Orc - START]
-				qg = 14451,	-- Orphan Matron Battlewall
+				qg = 14451,	-- Orphan Matron Battlewail
 				coord = { 70.8, 25.6, MAP.ORGRIMMAR },	-- Orphan Matron Battlewail
 				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				races = HORDE_ONLY,

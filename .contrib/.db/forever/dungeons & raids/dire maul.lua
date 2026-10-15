@@ -1178,7 +1178,7 @@ root(ROOTS.Instances, {
 							i(18755),	-- Xorothian Firestick
 						},
 					}),
-					n(16032, {	-- Falrin Treeshaper <House of Shen'dralar>
+					n(16032, {	-- Falrin Treeshaper
 						description = "Found in the Dire Maul Library.",
 						groups = {
 							n(SPECIAL, {

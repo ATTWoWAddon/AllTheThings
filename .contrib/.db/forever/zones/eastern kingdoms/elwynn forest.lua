@@ -24,7 +24,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					q(92124, {	-- Book Inventory
 						sourceQuest = 91741,	-- Nibbled-On Book
-						qg = 951,	-- Brother Paxton
+						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -131,7 +131,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					q(345, {	-- Ink Supplies
 						sourceQuest = 344,	-- Brother Paxton (quest in Stormwind)
-						qg = 951,	-- Brother Paxton
+						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						lvl = 20,
@@ -181,7 +181,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					q(91745, {	-- Mining Consultant
 						sourceQuest = 91743,	-- Rascally Rodents
-						qg = 951,	-- Brother Paxton
+						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -197,7 +197,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					q(91743, {	-- Rascally Rodents
 						sourceQuest = 92124,	-- Book Inventory
-						qg = 951,	-- Brother Paxton
+						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -231,7 +231,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					q(346, {	-- Return to Kristoff
 						sourceQuest = 347,	-- Rethban Ore (quest in Redridge Mountains)
-						qg = 951,	-- Brother Paxton
+						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						lvl = 20,
@@ -242,7 +242,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					q(91772, {	-- Shhh! We're Hunting Kobolds
 						sourceQuest = 91758,	-- Follow That Kobold!
-						qg = 248415,	-- Tordrin Sternblade
+						qg = 248415,	-- Tordrin Sternblade <Hunter Trainer>
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -293,7 +293,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					q(91752, {	-- The Big Picture
 						sourceQuest = 91745,	-- Mining Consultant
-						qg = 247226,	-- Kelsey Fargo
+						qg = 247226,	-- Kelsey Fargo <Junior Mining Trainer>
 						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -639,7 +639,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97915, {	-- Camping 101: Alchemy [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
@@ -651,7 +651,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97916, {	-- Camping 101: Blacksmithing [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = BLACKSMITHING,
 				races = ALLIANCE_ONLY,
@@ -663,7 +663,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(96626, {	-- Camping 101: Cooking [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
@@ -671,7 +671,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97917, {	-- Camping 101: Enchanting [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = ENCHANTING,
 				races = ALLIANCE_ONLY,
@@ -683,7 +683,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97918, {	-- Camping 101: Engineering [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = ENGINEERING,
 				races = ALLIANCE_ONLY,
@@ -695,7 +695,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97919, {	-- Camping 101: First Aid [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = FIRST_AID,
 				races = ALLIANCE_ONLY,
@@ -707,7 +707,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97920, {	-- Camping 101: Fishing [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
@@ -719,7 +719,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97921, {	-- Camping 101: Herbalism [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = HERBALISM,
 				races = ALLIANCE_ONLY,
@@ -731,7 +731,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97922, {	-- Camping 101: Leatherworking [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = LEATHERWORKING,
 				races = ALLIANCE_ONLY,
@@ -743,7 +743,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97923, {	-- Camping 101: Mining [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = MINING,
 				races = ALLIANCE_ONLY,
@@ -755,7 +755,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97924, {	-- Camping 101: Skinning [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = SKINNING,
 				races = ALLIANCE_ONLY,
@@ -767,7 +767,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(97925, {	-- Camping 101: Tailoring [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				requireSkill = TAILORING,
 				races = ALLIANCE_ONLY,
@@ -934,7 +934,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(1097, {	-- Elmore's Task
 				qgs = {
-					514,	-- Smith Argus
+					514,	-- Smith Argus <Journeyman Blacksmith>
 					415,	-- Verner Osgood
 				},
 				coords = {
@@ -1235,7 +1235,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(2205, {	-- Seek out SI: 7
-				qg = 917,	-- Keryn Sylvius
+				qg = 917,	-- Keryn Sylvius <Rogue Trainer>
 				coord = { 43.9, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -1259,7 +1259,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(2300, {	-- SI:7
 				sourceQuest = 2205,	-- Seek out SI: 7
-				qg = 917,	-- Keryn Sylvius
+				qg = 917,	-- Keryn Sylvius <Rogue Trainer>
 				coord = { 43.8, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -1338,7 +1338,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(95998, {	-- The Great Outdoors [Elwynn Forest]
 				sourceQuest = 96627,	-- The Adventurer [Elwynn Forest]
-				qg = 263399,	-- Sam Sarsaparilla
+				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 4,

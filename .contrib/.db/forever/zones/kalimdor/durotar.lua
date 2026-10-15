@@ -167,7 +167,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						qi = 9561,	-- Hallowed Tablet (QI!)
 					}),
 					q(5649, {	-- In Favor of Spirituality
-						qg = 3707,	-- Ken'jai
+						qg = 3707,	-- Ken'jai <Priest Trainer>
 						coord = { 42.4, 68.8, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { PRIEST },
@@ -420,7 +420,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(96873, {	-- A Pain in the Neck
-				qg = 266881,	-- Pa'zula
+				qg = 266881,	-- Pa'zula <Journeyman Enchanter>
 				coord = { 56.6, 73.6, MAP.DUROTAR },
 				requireSkill = ENCHANTING,
 				races = HORDE_ONLY,
@@ -483,7 +483,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 4,
 			}),
 			q(96875, {	-- Beasts of Thunder Ridge
-				qg = 5811,	-- Kamari
+				qg = 5811,	-- Kamari <Journeyman Leatherworker>
 				coord = { 63.0, 45.0, MAP.ORGRIMMAR },
 				requireSkill = LEATHERWORKING,
 				races = HORDE_ONLY,
@@ -504,7 +504,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(97223, {	-- Bloodtalon Matriarch
-				qg = 7953,	-- Xar'Ti
+				qg = 7953,	-- Xar'Ti <Raptor Riding Trainer>
 				coord = { 55.2, 75.4, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				lvl = 5,
@@ -852,7 +852,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(5648, {	-- Garments of Spirituality
 				sourceQuest = 5649,	-- In Favor of Spirituality
-				qg = 3706,	-- Tai'jin
+				qg = 3706,	-- Tai'jin <Priest Trainer>
 				coord = { 54.2, 42.8, MAP.DUROTAR },
 				races = { TROLL },
 				classes = { PRIEST },
@@ -935,7 +935,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(99123, {	-- Lost in the Shadows
-				qg = 275811,	-- Pal'juh
+				qg = 275811,	-- Pal'juh <Shadow Hunter Trainee>
 				coord = { 46.2, 78.6, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				lvl = 4,
@@ -1062,7 +1062,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(835, {	-- Securing the Lines
 				sourceQuest = 834,	-- Winds in the Desert
-				qg = 3293,	-- Rezlak
+				qg = 3293,	-- Rezlak <Tinkers' Union>
 				coord = { 46.4, 23.0, MAP.DUROTAR },
 				--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
@@ -1117,7 +1117,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(97282, {	-- Stormy Potential
 				sourceQuest = 97281,	-- A Simmering Storm
-				qg = 3293,	-- Rezlak
+				qg = 3293,	-- Rezlak <Tinkers' Union>
 				coord = { 46.4, 23.0, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				lvl = 7,
@@ -1253,7 +1253,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				isBreadcrumb = true,
 			}),
 			q(1859, {	-- Therzok
-				qg = 3170,	-- Kaplak
+				qg = 3170,	-- Kaplak <Rogue Trainer>
 				coord = { 51.98, 43.70, MAP.DUROTAR },
 				races = { ORC, TROLL },
 				classes = { ROGUE },
@@ -1263,7 +1263,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(96825, {	-- This Fruit Could Bite Back
 				qgs = {
 					3191,	-- Cook Torka
-					3881,	-- Grimtak
+					3881,	-- Grimtak <Butcher>
 				},
 				coords = {
 					{ 51.11, 42.45, MAP.DUROTAR },
@@ -1282,7 +1282,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(96874, {	-- This Is Spinal Axe
-				qg = 10266,	-- Ug'thok
+				qg = 10266,	-- Ug'thok <Journeyman Blacksmith>
 				coord = { 80.6, 23.4, MAP.ORGRIMMAR },
 				requireSkill = BLACKSMITHING,
 				races = HORDE_ONLY,
@@ -1443,7 +1443,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(834, {	-- Winds in the Desert
-				qg = 3293,	-- Rezlak
+				qg = 3293,	-- Rezlak <Tinkers' Union>
 				coord = { 46.4, 23.0, MAP.DUROTAR },
 				--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
@@ -1565,7 +1565,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 		}),
 		n(VENDORS, {
-			n(3881, {	-- Grimtak
+			n(3881, {	-- Grimtak <Butcher>
 				coord = { 51.2, 42.6, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1610,7 +1610,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			i(5466, {	-- Scorpid Stinger
 				maps = { MAP.DUROTAR },
 				crs = {
-					3126,	-- Armoured Scorpid
+					3126,	-- Armored Scorpid
 					3125,	-- Clattering Scorpid
 					3226,	-- Corrupted Scorpid
 					5823,	-- Death Flayer

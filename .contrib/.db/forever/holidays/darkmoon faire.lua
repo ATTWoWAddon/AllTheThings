@@ -720,7 +720,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					SLYVAN_SHORTBOW,
 				},
 			}),
-			n(14845, {	-- Stamp Thunderhorn <Food Vendor>
+			n(14845, {	-- Stamp Thunderhorn <Darkmoon Faire Food Vendor>
 				coords = {
 					{ 36.6, 38.2, MAP.MULGORE },
 					{ 42.0, 70.0, MAP.ELWYNN_FOREST },
@@ -734,7 +734,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(19304),	-- Spiced Beef Jerky
 				},
 			}),
-			n(14844, {	-- Sylannia <Drink Vendor>
+			n(14844, {	-- Sylannia <Darkmoon Faire Drink Vendor>
 				coords = {
 					{ 36.6, 38.2, MAP.MULGORE },
 					{ 42.0, 70.0, MAP.ELWYNN_FOREST },

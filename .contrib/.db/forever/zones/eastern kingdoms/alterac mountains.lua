@@ -228,7 +228,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(8410, {	-- Elemental Mastery
 				qgs = {
-					5892,	-- Searn Firewarder <Shaman Trainer>
+					5892,	-- Searn Firewarder
 					3032,	-- Beram Skychaser <Shaman Trainer>
 				},
 				coords = {
@@ -610,14 +610,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 			q(94912, {	-- Child of Nature
-				qg = 270459,	-- Alfina Nightgaze
+				qg = 270459,	-- Alfina Nightgaze <Druid Trainer>
 				coord = { 11.8, 56.6, MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99191, {	-- A Donation of Wool
-				qg = 276170,	-- Belanaa Windveil
+				qg = 276170,	-- Belanaa Windveil <High Order Cloth Quartermaster>
 				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
@@ -736,7 +736,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
-			n(6777, {	-- Zan Shivsproket <Speciality Engineer>
+			n(6777, {	-- Zan Shivsproket <Specialty Engineer>
 				coord = { 86.0, 80.0, MAP.ALTERAC_MOUNTAINS },
 				groups = {
 					i(7742, {	-- Schematic: Gnomish Cloaking Device (RECIPE!)

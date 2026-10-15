@@ -81,14 +81,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			q(129, {	-- A Free Lunch
-				qg = 379,	-- Darcy
+				qg = 379,	-- Darcy <Waitress>
 				coord = { 22.0, 45.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 				qi = 5534,	-- Parker's Lunch (QI!)
 			}),
 			q(94, {	-- A Watchful Eye
-				qg = 313,	-- Theocritus
+				qg = 313,	-- Theocritus <Mage of Tower Azora>
 				coord = { 65.2, 69.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
@@ -326,7 +326,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(146, {	-- Messenger to Darkshire (2/2)
 				sourceQuest = 145,	-- Messenger to Darkshire (1/2)
-				qg = 263,	-- Lord Ello Ebonlocke
+				qg = 263,	-- Lord Ello Ebonlocke <Mayor of Darkshire>
 				coord = { 72.0, 46.6, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
@@ -341,7 +341,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(121, {	-- Messenger to Stormwind (2/2)
 				sourceQuest = 120,	-- Messenger to Stormwind (1/2)
-				qg = 466,	-- General Marcus Jonathan
+				qg = 466,	-- General Marcus Jonathan <High Commander of Stormwind Defense>
 				coord = { 63.8, 75.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
@@ -357,7 +357,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(144, {	-- Messenger to Westfall (2/2)
 				sourceQuest = 143,	-- Messenger to Westfall (1/2)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.2, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
@@ -445,7 +445,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(119, {	-- Return to Verner
 				sourceQuest = 118,	-- The Price of Shoes
-				qg = 514,	-- Smith Argus
+				qg = 514,	-- Smith Argus <Journeyman Blacksmith>
 				coord = { 41.7, 65.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 13,

@@ -325,7 +325,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(6124, {	-- Curing the Sick (A)
 				sourceQuest = 6123,	-- Gathering the Cure
-				qg = 3702,	-- Alanndarian Nightsong
+				qg = 3702,	-- Alanndarian Nightsong <Pet Trainer>
 				coord = { 37.6, 40.6, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
@@ -339,7 +339,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(982, {	-- Deep Ocean, Vast Sea
-				qg = 6301,	-- Gorbold Steelhand
+				qg = 6301,	-- Gorbold Steelhand <General Trade Supplier>
 				coord = { 38.1, 41.2, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
@@ -363,7 +363,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(2178, {	-- Easy Strider Living
-				qg = 3702,	-- Alanndarian Nightsong
+				qg = 3702,	-- Alanndarian Nightsong <Pet Trainer>
 				coord = { 37.7, 40.7, MAP.DARKSHORE },
 				cost = { { "i", 5469, 5 } },	-- 5x Strider Meat
 				requireSkill = COOKING,
@@ -470,7 +470,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(6123, {	-- Gathering the Cure (A)
 				sourceQuest = 6122,	-- The Principal Source [A]
-				qg = 3702,	-- Alanndarian Nightsong
+				qg = 3702,	-- Alanndarian Nightsong <Pet Trainer>
 				coord = { 37.6, 40.6, MAP.DARKSHORE },
 				cost = { { "i", 2449, 5 } },	-- 5x Earthroot
 				races = ALLIANCE_ONLY,
@@ -570,7 +570,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(951, {	-- Mathystra Relics
 				sourceQuest = 950,	-- Return to Onu
-				qg = 3616,	-- Onu
+				qg = 3616,	-- Onu <Ancient of Lore>
 				coord = { 43.5, 76.3, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
@@ -602,7 +602,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(960, {	-- Onu is Meditating
 				description = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 				sourceQuest = 944,	-- The Master's Glaive
-				qg = 3616,	-- Onu
+				qg = 3616,	-- Onu <Ancient of Lore>
 				coord = { 43.5, 76.3, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -613,7 +613,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(961, {	-- Onu is Meditating
 				description = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 				sourceQuest = 949,	-- The Twilight Camp
-				qg = 3616,	-- Onu
+				qg = 3616,	-- Onu <Ancient of Lore>
 				coord = { 43.5, 76.3, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -673,21 +673,21 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(729, {	-- The Absent Minded Prospector (1/5)
 				sourceQuest = 730,	-- Trouble In Darkshore?
-				qg = 2913,	-- Archaeologist Hollee
+				qg = 2913,	-- Archaeologist Hollee <Explorers' League>
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 			}),
 			q(731, {	-- The Absent Minded Prospector (2/5)
 				sourceQuest = 729,	-- The Absent Minded Prospector (1/5)
-				qg = 2917,	-- Prospector Remtravel
+				qg = 2917,	-- Prospector Remtravel <Explorers' League>
 				coord = { 35.7, 83.7, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 			}),
 			q(741, {	-- The Absent Minded Prospector (3/5)
 				sourceQuest = 731,	-- The Absent Minded Prospector (2/5)
-				qg = 2913,	-- Archaeologist Hollee
+				qg = 2913,	-- Archaeologist Hollee <Explorers' League>
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
@@ -821,7 +821,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 12,
 			}),
 			q(5321, {	-- The Sleeper Has Awakened
-				qg = 11218,	-- Kerlonian Evershade
+				qg = 11218,	-- Kerlonian Evershade <Druid of the Claw>
 				coord = { 44.4, 76.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 17,

@@ -26,7 +26,7 @@ root(ROOTS.Instances, {
 				}),
 				]]-- 
 				q(92456, {	-- A Green Sample
-					qg = 5502,	-- Shylamiir
+					qg = 5502,	-- Shylamiir <Herbalism Trainer>
 					coord = { 31.4, 63.0, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
 					lvl = 24,
@@ -40,7 +40,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(92432, {	-- An Alarming Request
-					qg = 247264,	-- Emissary Jacques
+					qg = 247264,	-- Emissary Jacques <Kirin Tor>
 					coord = { 48.3, 60.1, MAP.HILLSBRAD_FOOTHILLS },
 					maps = { MAP.SILVERPINE_FOREST },
 					races = ALLIANCE_ONLY,
@@ -154,7 +154,7 @@ root(ROOTS.Instances, {
 					qi = 251961,	-- Arcane Mote (QI!)
 				}),
 				q(96988, {	-- Source of Power
-					qg = 11044,	-- Doctor Martin Felben
+					qg = 11044,	-- Doctor Martin Felben <Journeyman Alchemist Trainer>
 					coord = { 46.6, 74.4, MAP.UNDERCITY },
 					races = HORDE_ONLY,
 					lvl = 24,

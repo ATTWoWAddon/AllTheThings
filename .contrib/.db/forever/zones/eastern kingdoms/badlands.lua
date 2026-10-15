@@ -240,7 +240,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 			}),
 			q(3821, {	-- Dreadmaul Rock
-				qg = 9082,	-- Thal'trak Proudtusk
+				qg = 9082,	-- Thal'trak Proudtusk <Kargath Expeditionary Force>
 				coord = { 3.4, 48.0, MAP.BADLANDS },
 				races = HORDE_ONLY,
 				lvl = 48,
@@ -448,7 +448,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			}),
 			q(724, {	-- Prospect of Faith (2/2)
 				sourceQuest = 723,	-- Prospect of Faith (1/2)
-				qg = 2910,	-- Prospector Ryedol
+				qg = 2910,	-- Prospector Ryedol <Explorers' League>
 				coord = { 53.4, 43.2, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 35,

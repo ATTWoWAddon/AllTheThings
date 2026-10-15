@@ -21,7 +21,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 		n(QUESTS, {
 			q(93746, {	-- A Firm Response
 				sourceQuest = 93738,	-- The Broken Construct
-				qg = 251968,	-- Ayessa Dawnsinger
+				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
@@ -32,14 +32,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92708, {	-- A Grand Adventure
 				sourceQuest = 92700,	-- The Grand Skyseer
-				qg = 251968,	-- Ayessa Dawnsinger
+				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 7,
 			}),
 			q(92709, {	-- A Grand Adventure
 				sourceQuest = 92699,	-- The Supreme Magister
-				qg = 252475,	-- Elaadrin Evengale
+				qg = 252475,	-- Elaadrin Evengale <Supreme Magister of The High Order>
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
@@ -76,7 +76,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					93461,	-- Welcome to Shen'dar Village (A)
 				},
 				sourceQuestNumRequired = 1,
-				qg = 251991,	-- Taleen Shimmerthread
+				qg = 251991,	-- Taleen Shimmerthread <Tailor>
 				coord = { 44.8, 44.2, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				groups = {
@@ -87,7 +87,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94413, {	-- A Magical Affront
 				sourceQuest = 92596,	-- The High Order
-				qg = 251903,	-- Rathiril Sunlance
+				qg = 251903,	-- Rathiril Sunlance <Elder of the High Order>
 				coord = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
@@ -100,7 +100,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94493, {	-- A Sacrifice in Vain
-				qg = 257944,	-- Elegael Thornpaw
+				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 			}),
@@ -128,7 +128,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92473, {	-- Aggressive Encroachment
 				sourceQuest = 92471,	-- Aetheen of the Gales
-				qg = 257551,	-- Valreaa Valewind
+				qg = 257551,	-- Valreaa Valewind <Rangers of Thendal Grove>
 				coord = { 42.4, 25.2, MAP.ZEPHRAS_ISLE },
 				lvl = 3,
 				groups = {
@@ -156,7 +156,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94896, {	-- Aid For The Refugees
-				qg = 259012,	-- Ealaane Nimbuswalker
+				qg = 259012,	-- Ealaane Nimbuswalker <Ban'aethal Refugee>
 				coord = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				groups = {
@@ -170,12 +170,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(98512, {	-- Al'Aketh Assassins
-				qg = 273017,	-- Fendaal Windstone
+				qg = 273017,	-- Fendaal Windstone <Peacekeeper>
 				coord = { 56.8, 61.0, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 			}),
 			q(92544, {	-- Al'Aketh Thugs
-				qg = 252095,	-- Hanaa Nightwind
+				qg = 252095,	-- Hanaa Nightwind <Rangers of Thendal Grove>
 				coord = { 38.2, 30.2, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 				groups = {
@@ -211,7 +211,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92834, {	-- Avenged Tenfold
 				sourceQuest = 92840,	-- Catching Wind
-				qg = 252475,	-- Elaadrin Evengale
+				qg = 252475,	-- Elaadrin Evengale <Supreme Magister of The High Order>
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 6,
@@ -234,7 +234,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93740, {	-- Blood for Blood
 				sourceQuest = 93746,	-- A Firm Response
-				qg = 251968,	-- Ayessa Dawnsinger
+				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 6,
@@ -255,7 +255,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93797, {	-- Boughs in the Wind
-				qg = 256507,	-- Belann Windwood
+				qg = 256507,	-- Belann Windwood <Staff Merchant>
 				coord = { 62.8, 77.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				classes = { MAGE },
@@ -267,7 +267,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92645, {	-- Breaking the Breaker
 				sourceQuest = 93320,	-- Tower Defense
-				qg = 252378,	-- Yorana Windyreed
+				qg = 252378,	-- Yorana Windyreed <Peacekeeper>
 				coord = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 				groups = {
@@ -282,7 +282,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93949, {	-- Bugged
 				sourceQuest = 93948,	-- Deliver the Signet
-				qg = 252383,	-- Valennia Stormfist
+				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 				groups = {
@@ -296,7 +296,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92466, {	-- Call of Earth
-				qg = 251374,	-- Windshaper Boro
+				qg = 251374,	-- Windshaper Boro <Shaman Trainer>
 				coord = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				classes = { SHAMAN },
@@ -304,7 +304,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92467, {	-- Call of Earth
 				sourceQuest = 92466,	-- Call of Earth
-				qg = 251374,	-- Windshaper Boro
+				qg = 251374,	-- Windshaper Boro <Shaman Trainer>
 				coord = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				classes = { SHAMAN },
@@ -322,7 +322,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(97243, {	-- Call of Fire
-				qg = 252382,	-- Sessaria Skystride
+				qg = 252382,	-- Sessaria Skystride <Shaman Trainer>
 				coord = { 58.2, 78.4, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },
@@ -330,7 +330,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97244, {	-- Call of Fire
 				sourceQuest = 97243,	-- Call of Fire
-				qg = 268592,	-- Olariaan Swiftburn
+				qg = 268592,	-- Olariaan Swiftburn <Windshapers>
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },
@@ -338,7 +338,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97245, {	-- Call of Fire
 				sourceQuest = 97244,	-- Call of Fire
-				qg = 268592,	-- Olariaan Swiftburn
+				qg = 268592,	-- Olariaan Swiftburn <Windshapers>
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },
@@ -346,7 +346,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97257, {	-- Call of Fire
 				sourceQuest = 97245,	-- Call of Fire
-				qg = 268592,	-- Olariaan Swiftburn
+				qg = 268592,	-- Olariaan Swiftburn <Windshapers>
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },
@@ -357,7 +357,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97963, {	-- Camping 101: Alchemy
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ALCHEMY,
 				lvl = 4,
@@ -365,7 +365,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97964, {	-- Camping 101: Blacksmithing
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = BLACKSMITHING,
 				lvl = 4,
@@ -373,14 +373,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(96646, {	-- Camping 101: Cooking
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 			}),
 			q(98284, {	-- Camping 101: Enchanting
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 98286 },
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENCHANTING,
 				races = HORDE_ONLY,
@@ -390,7 +390,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(98286, {	-- Camping 101: Enchanting
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 98284 },
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENCHANTING,
 				races = ALLIANCE_ONLY,
@@ -399,7 +399,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(98285, {	-- Camping 101: Engineering
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENGINEERING,
 				lvl = 4,
@@ -407,7 +407,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97965, {	-- Camping 101: First Aid
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = FIRST_AID,
 				lvl = 4,
@@ -415,7 +415,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97967, {	-- Camping 101: Fishing
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = FISHING,
 				lvl = 4,
@@ -423,7 +423,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97968, {	-- Camping 101: Herbalism
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = HERBALISM,
 				lvl = 4,
@@ -431,7 +431,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97969, {	-- Camping 101: Leatherworking
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = LEATHERWORKING,
 				lvl = 4,
@@ -439,7 +439,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97970, {	-- Camping 101: Mining
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = MINING,
 				lvl = 4,
@@ -447,7 +447,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(97971, {	-- Camping 101: Skinning
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = SKINNING,
 				lvl = 4,
@@ -456,7 +456,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(97972, {	-- Camping 101: Tailoring
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 97973 },	-- Camping 101: Tailoring
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = TAILORING,
 				races = HORDE_ONLY,
@@ -468,7 +468,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(97973, {	-- Camping 101: Tailoring
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = { 97972 },	-- Camping 101: Tailoring
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = TAILORING,
 				races = ALLIANCE_ONLY,
@@ -479,7 +479,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92840, {	-- Catching Wind
 				sourceQuest = 99260,	-- Fillion's Mission
-				qg = 252475,	-- Elaadrin Evengale
+				qg = 252475,	-- Elaadrin Evengale <Supreme Magister of The High Order>
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
@@ -494,7 +494,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92460, {	-- Coming of Age
-				qg = 251362,	-- Ailee Farheart
+				qg = 251362,	-- Ailee Farheart <Rangers of Thendal Grove>
 				coord = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(264908),	-- Ancient Heirloom
@@ -502,7 +502,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92646, {	-- Confront Lorthuna
 				sourceQuest = 93958,	-- The Inner Sanctum
-				qg = 252383,	-- Valennia Stormfist
+				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 7,
@@ -516,8 +516,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93835, {	-- Confront Lorthuna
 				sourceQuest = 93958,	-- The Inner Sanctum
 				qgs = {
-					252383,	-- Valennia Stormfist
-					253590,	-- Valennia Stormfist
+					252383,	-- Valennia Stormfist <Peacekeeper Captain>
+					253590,	-- Valennia Stormfist <Peacekeeper Captain>
 				},
 				coord = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
@@ -530,7 +530,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(93317, {	-- Crab Season
-				qg = 257006,	-- Nyalah Brightfire
+				qg = 257006,	-- Nyalah Brightfire <Cook>
 				coord = { 60.6, 72.6, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				groups = {
@@ -556,7 +556,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93948, {	-- Deliver the Signet
 				sourceQuest = 92550,	-- Havoc in the Highlands
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 				qi = 263491,	-- Shadowsong Family Signet (QI!)
@@ -569,7 +569,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92640, {	-- Desperate Times
 				sourceQuest = 94568,	-- The Cult's True Plans
-				qg = 252476,	-- Talaanis Shadowsong
+				qg = 252476,	-- Talaanis Shadowsong <High Elder of Zephras Isle>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 				groups = {
@@ -580,7 +580,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92642, {	-- Disrupting Logistics
 				sourceQuest = 93320,	-- Tower Defense
-				qg = 252378,	-- Yorana Windyreed
+				qg = 252378,	-- Yorana Windyreed <Peacekeeper>
 				coord = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 				groups = {
@@ -619,7 +619,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = {
 					objective(1, {	-- Receive Instructions from Randal Emerson
 						provider = { "i", 285356 },	-- Advisor Emerson's Instructions (QI!)
-						cr = 275491,	-- Randal Emerson
+						cr = 275491,	-- Randal Emerson <Royal Advisor>
 						coords = {
 							{ 79.0, 44.8, MAP.STORMWIND_CITY },
 							{ 79.2, 44.2, MAP.STORMWIND_CITY },
@@ -653,19 +653,19 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92529, {	-- Falaath Village
 				sourceQuest = 93036,	-- Infiltrating the Cult
-				qg = 251904,	-- Sania Silverstream
+				qg = 251904,	-- Sania Silverstream <Al'Aketh Missionary>
 				coord = { 44.8, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
 			}),
 			q(92474, {	-- Falling With Style
-				qg = 263113,	-- Myriaal Mistwake
+				qg = 263113,	-- Myriaal Mistwake <Rangers of Thendal Grove>
 				coord = { 43.6, 24.0, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				lvl = 2,
 			}),
 			q(94486, {	-- Feathers for Binding
 				sourceQuest = 94484,	-- Unnerving Silence
-				qg = 257944,	-- Elegael Thornpaw
+				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				qi = 265140,	-- Pristine Shriekling Feather (QI!)
@@ -698,7 +698,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92470, {	-- Foul Matriarch
 				sourceQuest = 92471,	-- Aetheen of the Gales
-				qg = 251366,	-- Aetheen of the Gales
+				qg = 251366,	-- Aetheen of the Gales <Elder of Zephras Isle>
 				coord = { 42.8, 23.7, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 				groups = {
@@ -764,7 +764,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92550, {	-- Havoc in the Highlands
 				sourceQuest = 92528,	-- Among the Faithful
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
 				qi = 252661,	-- Commander Cyclas's Head (QI!)
@@ -786,21 +786,21 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92860, {	-- In Service of Zephras
 				sourceQuest = 92834,	-- Avenged Tenfold
-				qg = 252475,	-- Elaadrin Evengale
+				qg = 252475,	-- Elaadrin Evengale <Supreme Magister of The High Order>
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 6,
 			}),
 			q(92871, {	-- In Service of Zephras
 				sourceQuest = 93746,	-- A Firm Response
-				qg = 251968,	-- Ayessa Dawnsinger
+				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 6,
 			}),
 			q(92462, {	-- Infestation Investigation
 				sourceQuest = 92460,	-- Coming of Age
-				qg = 251368,	-- Elatrell Featherlight
+				qg = 251368,	-- Elatrell Featherlight <Rangers of Thendal Grove>
 				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
 				groups = {
 					objective(1, {	-- 0/8 Pesky Cirrusfly
@@ -810,7 +810,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93036, {	-- Infiltrating the Cult
 				sourceQuest = 92517,	-- The Criminal Element
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
 			}),
@@ -837,15 +837,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92947, {	-- Making Our Move
 				sourceQuest = 93065,	-- Prepare for Battle
 				qgs = {
-					252383,	-- Valennia Stormfist
-					253844,	-- Valennia Stormfist
+					252383,	-- Valennia Stormfist <Peacekeeper Captain>
+					253844,	-- Valennia Stormfist <Peacekeeper Captain>
 				},
 				coord = { 61.2, 71.0, MAP.ZEPHRAS_ISLE },
 				lvl = 7,
 			}),
 			q(94411, {	-- Meddlesome Mages
 				sourceQuest = 92595,	-- The Windshapers
-				qg = 251902,	-- Illaya Amberwind
+				qg = 251902,	-- Illaya Amberwind <Elder Windshaper>
 				coord = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
@@ -904,12 +904,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93065, {	-- Prepare for Battle
 				sourceQuest = 92640,	-- Desperate Times
-				qg = 252383,	-- Valennia Stormfist
+				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 7,
 			}),
 			q(92597, {	-- Reading the Ley Lines
-				qg = 251371,	-- Falorne Fallwind
+				qg = 251371,	-- Falorne Fallwind <High Order>
 				coord = { 43.3, 24.9, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE },
 				lvl = 2,
@@ -920,7 +920,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					93461,	-- Welcome to Shen'dar Village (A)
 				},
 				sourceQuestNumRequired = 1,
-				qg = 251905,	-- Zerril Softbreeze
+				qg = 251905,	-- Zerril Softbreeze <Cook>
 				coord = { 43.8, 43.8, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				groups = {
@@ -943,7 +943,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					92642,	-- Disrupting Logistics
 					92645,	-- Breaking the Breaker
 				},
-				qg = 252378,	-- Yorana Windyreed
+				qg = 252378,	-- Yorana Windyreed <Peacekeeper>
 				coord = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 				groups = {
@@ -959,7 +959,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 9,
 			}),
 			q(93791, {	-- Speak with Belann
-				qg = 252373,	-- Anathamaas Aetherwind
+				qg = 252373,	-- Anathamaas Aetherwind <Mage Trainer>
 				coord = { 65.8, 80.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				classes = { MAGE },
@@ -984,7 +984,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92551, {	-- Stolen Supplies
 				sourceQuest = 92528,	-- Among the Faithful
-				qg = 252172,	-- Danarii Bellowveil
+				qg = 252172,	-- Danarii Bellowveil <Advisor>
 				coord = { 45.2, 45.2, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
 				groups = {
@@ -995,7 +995,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94638, {	-- Strength and Mercy
 				sourceQuest = 92840,	-- Catching Wind
-				qg = 255853,	-- Urs'endris
+				qg = 255853,	-- Urs'endris <The Great Windborne Bear Spirit>
 				coord = { 69.8, 61.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { DRUID },
@@ -1008,28 +1008,28 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94007, {	-- Taming the Beast
-				qg = 254084,	-- Elayaa Easewind
+				qg = 254084,	-- Elayaa Easewind <Hunter Trainer>
 				coord = { 45.2, 44.2, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
 				lvl = 10,
 			}),
 			q(94013, {	-- Taming the Beast
-				qg = 252389,	-- Quel'ana Quickgale
+				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
 				lvl = 10,
 			}),
 			q(94978, {	-- Taming the Beast
-				qg = 252389,	-- Quel'ana Quickgale
+				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
 				lvl = 10,
 			}),
 			q(94979, {	-- Taming the Beast
-				qg = 252389,	-- Quel'ana Quickgale
+				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
@@ -1037,7 +1037,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94485, {	-- Tears of the Lady
 				sourceQuest = 94484,	-- Unnerving Silence
-				qg = 257944,	-- Elegael Thornpaw
+				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				groups = {
@@ -1048,39 +1048,39 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(96638, {	-- The Adventurer [Zephras Isle]
 				sourceQuest = 92470,	-- Foul Matriarch
-				qg = 251366,	-- Aetheen of the Gales
+				qg = 251366,	-- Aetheen of the Gales <Elder of Zephras Isle>
 				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 			}),
 			q(94414, {	-- The Anchors of Zephras
-				qg = 257554,	-- Halaan Hawk-Eye
+				qg = 257554,	-- Halaan Hawk-Eye <Rangers of Thendal Grove>
 				coord = { 43.8, 24.0, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 			}),
 			q(93735, {	-- The Broken Construct
 				sourceQuest = 92700,	-- The Grand Skyseer
-				qg = 251968,	-- Ayessa Dawnsinger
+				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(93737, {	-- The Broken Construct
 				sourceQuest = 93735,	-- The Broken Construct
-				qg = 256083,	-- Riaani Nightwind
+				qg = 256083,	-- Riaani Nightwind <Windshaper Artisan>
 				coord = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(93738, {	-- The Broken Construct
 				sourceQuest = 93737,	-- The Broken Construct
-				qg = 256083,	-- Riaani Nightwind
+				qg = 256083,	-- Riaani Nightwind <Windshaper Artisan>
 				coord = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(92463, {	-- The Cirrusfly Queen
 				sourceQuest = 92462,	-- Infestation Investigation
-				qg = 251368,	-- Elatrell Featherlight
+				qg = 251368,	-- Elatrell Featherlight <Rangers of Thendal Grove>
 				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 				groups = {
@@ -1098,7 +1098,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					93461,	-- Welcome to Shen'dar Village (A)
 					92514,	-- Welcome to Shen'dar Village (H)
 				},
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				groups = {
@@ -1117,46 +1117,46 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94568, {	-- The Cult's True Plans
 				sourceQuest = 92644,	-- Unfortunate News
-				qg = 252476,	-- Talaanis Shadowsong
+				qg = 252476,	-- Talaanis Shadowsong <High Elder of Zephras Isle>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 			}),
 			q(95349, {	-- The Earthen Ring
 				sourceQuest = 93090,	-- What Comes Next
-				qg = 251968,	-- Ayessa Dawnsinger
+				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 7,
 			}),
 			q(94897, {	-- The Fate of a Loved One
-				qg = 259012,	-- Ealaane Nimbuswalker
+				qg = 259012,	-- Ealaane Nimbuswalker <Ban'aethal Refugee>
 				coord = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/1 Heirloom
 						provider = { "i", 266434 },	-- Resaan's Heirloom
-						cr = 259013,	-- Resaan Nimbuswalker
+						cr = 259013,	-- Resaan Nimbuswalker <Ban'aethal Citizen>
 						coord = { 57.0, 29.5, MAP.ZEPHRAS_ISLE },
 					}),
 				},
 			}),
 			q(94491, {	-- The Fate of the Den
 				sourceQuest = 94490,	-- Ripped Missive
-				qg = 257944,	-- Elegael Thornpaw
+				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				qi = 265782,	-- Mysterious Orders (QI!)
 			}),
 			q(93836, {	-- The Fate of Zephras
 				sourceQuest = 92646,	-- Confront Lorthuna
-				qg = 251968,	-- Ayessa Dawnsinger
+				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 7,
 			}),
 			q(94369, {	-- The Fate of Zephras
 				sourceQuest = 93835,	-- Confront Lorthuna
-				qg = 252475,	-- Elaadrin Evengale
+				qg = 252475,	-- Elaadrin Evengale <Supreme Magister of The High Order>
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
@@ -1173,26 +1173,26 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(92598, {	-- The Gift of Skysight
-				qg = 251487,	-- Ventaari Brightwish
+				qg = 251487,	-- Ventaari Brightwish <Windshapers>
 				coord = { 42.6, 24.4, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_HORDE },
 				lvl = 2,
 			}),
 			q(92700, {	-- The Grand Skyseer
 				sourceQuest = 92579,	-- To Valanaar
-				qg = 252383,	-- Valennia Stormfist
+				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(96101, {	-- The Great Outdoors [Zephras Isle]
 				sourceQuest = 96638,	-- The Adventurer [Zephras Isle]
-				qg = 263664,	-- Raan Wildwind
+				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 			}),
 			q(94006, {	-- The Great Ursera Spirit
-				qg = 252359,	-- Lotheluum Starbreeze
+				qg = 252359,	-- Lotheluum Starbreeze <Druid Trainer>
 				coord = { 64.0, 75.0, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { DRUID },
@@ -1200,13 +1200,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92881, {	-- The High Elder's Request
 				sourceQuest = 92880,	-- Return to Valanaar
-				qg = 252383,	-- Valennia Stormfist
+				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 			}),
 			q(92596, {	-- The High Order
 				sourceQuest = 92472,	-- The Next Step
-				qg = 251903,	-- Rathiril Sunlance
+				qg = 251903,	-- Rathiril Sunlance <Elder of the High Order>
 				coord = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
@@ -1231,13 +1231,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93958, {	-- The Inner Sanctum
 				sourceQuest = 92947,	-- Making Our Move
-				qg = 253576,	-- Hyusaa Quickbreeze
+				qg = 253576,	-- Hyusaa Quickbreeze <Peacekeeper>
 				coord = { 63.8, 50.4, MAP.ZEPHRAS_ISLE },
 				lvl = 7,
 			}),
 			q(94946, {	-- The Magical City of Dalaran
 				sourceQuest = 93089,	-- What Comes Next
-				qg = 252475,	-- Elaadrin Evengale
+				qg = 252475,	-- Elaadrin Evengale <Supreme Magister of The High Order>
 				coord = { 66.6, 79.9, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
@@ -1282,7 +1282,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92472, {	-- The Next Step
 				sourceQuest = 92470,	-- Foul Matriarch
-				qg = 251366,	-- Aetheen of the Gales
+				qg = 251366,	-- Aetheen of the Gales <Elder of Zephras Isle>
 				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
 				lvl = 3,
 			}),
@@ -1292,7 +1292,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					93461,	-- Welcome to Shen'dar Village (A)
 				},
 				sourceQuestNumRequired = 1,
-				qg = 251993,	-- Indari Sunseam
+				qg = 251993,	-- Indari Sunseam <Leatherworker>
 				coord = { 44.6, 44.4, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				qi = 252670,	-- Prideclaw Pelt (QI!)
@@ -1301,7 +1301,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94003, {	-- The Skybreaker Bulwark
-				qg = 252377,	-- Seena Skybreaker
+				qg = 252377,	-- Seena Skybreaker <Warrior Trainer>
 				coord = { 59.8, 72.8, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { WARRIOR },
@@ -1318,20 +1318,20 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92699, {	-- The Supreme Magister
 				sourceQuest = 92701,	-- To Valanaar
-				qg = 252383,	-- Valennia Stormfist
+				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
 			q(94488, {	-- The Ties That Bind
-				qg = 257944,	-- Elegael Thornpaw
+				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				qi = 265475,	-- Commander Haalien's Severed Head (QI!)
 			}),
 			q(92643, {	-- The Turncoat
 				sourceQuest = 92881,	-- The High Elder's Request
-				qg = 252476,	-- Talaanis Shadowsong
+				qg = 252476,	-- Talaanis Shadowsong <High Elder of Zephras Isle>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 			}),
@@ -1351,24 +1351,24 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93926, {	-- The Western Watch
 				sourceQuest = 92528,	-- Among the Faithful
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
 			}),
 			q(92595, {	-- The Windshapers
-				qg = 251902,	-- Illaya Amberwind
+				qg = 251902,	-- Illaya Amberwind <Elder Windshaper>
 				coord = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(94489, {	-- The Wounds of Betrayal
-				qg = 257944,	-- Elegael Thornpaw
+				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 			}),
 			q(92579, {	-- To Valanaar
 				sourceQuest = 92550,	-- Havoc in the Highlands
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 6,
@@ -1381,7 +1381,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92701, {	-- To Valanaar
 				sourceQuest = 92550,	-- Havoc in the Highlands
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 6,
@@ -1399,7 +1399,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					92871,	-- In Service of Zephras
 				},
 				sourceQuestNumRequired = 1,
-				qg = 252383,	-- Valennia Stormfist
+				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
 				groups = {
@@ -1409,7 +1409,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94050, {	-- Training the Beast
-				qg = 252389,	-- Quel'ana Quickgale
+				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
@@ -1428,13 +1428,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94484, {	-- Unnerving Silence
-				qg = 252359,	-- Lotheluum Starbreeze
+				qg = 252359,	-- Lotheluum Starbreeze <Druid Trainer>
 				coord = { 64.0, 75.0, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 			}),
 			q(94487, {	-- Unwanted and Unworthy
 				sourceQuest = 94484,	-- Unnerving Silence
-				qg = 257944,	-- Elegael Thornpaw
+				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				qi = 265141,	-- Bloody Heirloom (QI!)
@@ -1448,7 +1448,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92741, {	-- Unwelcome Visitors
 				sourceQuest = 92699,	-- The Supreme Magister
-				qg = 253004,	-- Iaadaria Bitterwind
+				qg = 253004,	-- Iaadaria Bitterwind <Alchemist>
 				coord = { 66.2, 79.6, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 8,
@@ -1482,40 +1482,40 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94947, {	-- Welcome to Azeroth
 				--sourceQuest = 94946,	-- The Magical City of Dalaran
-				qg = 259084,	-- Denaaris Stargale
+				qg = 259084,	-- Denaaris Stargale <High Order>
 				coord = { 12.3, 56.4, MAP.ALTERAC_MOUNTAINS },
 				races = SKYBORNE_ALLIANCE,
 				lvl = 7,
 			}),
 			q(95350, {	-- Welcome to Azeroth
 				sourceQuest = 95349,	-- The Earthen Ring
-				qg = 259119,	-- Alaana Stormwalker
+				qg = 259119,	-- Alaana Stormwalker <Windshapers>
 				coord = { 33.4, 22.4, MAP.MULGORE },
 				races = { SKYBORNE_HORDE },
 				lvl = 7,
 			}),
 			q(93461, {	-- Welcome to Shen'dar Village (A)
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
 			q(92514, {	-- Welcome to Shen'dar Village (H)
-				qg = 251523,	-- Constable Aonda
+				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(93089, {	-- What Comes Next
 				sourceQuest = 94369,	-- The Fate of Zephras
-				qg = 252476,	-- Talaanis Shadowsong
+				qg = 252476,	-- Talaanis Shadowsong <High Elder of Zephras Isle>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
 			q(93090, {	-- What Comes Next
 				sourceQuest = 93836,	-- The Fate of Zephras
-				qg = 252476,	-- Talaanis Shadowsong
+				qg = 252476,	-- Talaanis Shadowsong <High Elder of Zephras Isle>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 7,
@@ -1630,7 +1630,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}),
 				},
 			}),
-			n(251364, {	-- Destin Thriceforged
+			n(251364, {	-- Destin Thriceforged <Weapon Merchant>
 				coord = { 43.5, 23.6, MAP.ZEPHRAS_ISLE },
 				sym = {{ "select", "itemID",
 					1194,	-- Bastard Sword
@@ -1643,7 +1643,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2131,	-- Shortsword
 				}},
 			}),
-			n(271478, {	-- Elaria Anvilwind
+			n(271478, {	-- Elaria Anvilwind <Artisan Armorsmith>
 				coord = { 59.5, 76.1, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(277083),	-- Zephrali Chain
@@ -1654,7 +1654,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(277081),	-- Zephrali Wristguards
 				},
 			}),
-			n(271483, {	-- Ergaan Eastwind
+			n(271483, {	-- Ergaan Eastwind <Artisan Leather Goods>
 				coord = { 59.7, 75.9, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(277093),	-- Zephrali Armguards
@@ -1671,7 +1671,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(277090),	-- Zephrali Trousers
 				},
 			}),
-			n(271465, {	-- Falfaan Halfwind
+			n(271465, {	-- Falfaan Halfwind <Artisan Weapon Crafter>
 				coord = { 59.4, 75.8, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(277105),	-- Zephrali Blade
@@ -1684,7 +1684,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(277106),	-- Zephrali Smasher
 				},
 			}),
-			n(251965, {	-- Fevrath Skyhammer
+			n(251965, {	-- Fevrath Skyhammer <Armorer & Shieldcrafter>
 				coord = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },
 				sym = {{ "select", "itemID",
 					2129,	-- Large Round Shield
@@ -1697,7 +1697,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2379,	-- Tarnished Chain Vest
 				}},
 			}),
-			n(265756, {	-- Genn Fairweather
+			n(265756, {	-- Genn Fairweather <Stablemaster and Riding Trainer>
 				coord = { 53.8, 81.2, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(269681),	-- Empyrean Galestrider (MOUNT!)
@@ -1708,7 +1708,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(274930),	-- Umber Galestrider (MOUNT!)
 				},
 			}),
-			n(251365, {	-- Jolee Brightmeadows
+			n(251365, {	-- Jolee Brightmeadows <Cloth & Leather Armor>
 				coord = { 43.5, 23.7, MAP.ZEPHRAS_ISLE },
 				sym = {{ "select", "itemID",
 					2122,	-- Cracked Leather Belt
@@ -1729,7 +1729,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 60.8, 44.2, MAP.ZEPHRAS_ISLE },
 				groups = ENCHANTING_RECIPES.COMMON_RECIPES,
 			}),
-			n(257006, {	-- Nyalah Brightfire
+			n(257006, {	-- Nyalah Brightfire <Cook>
 				coord = { 60.7, 72.7, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
@@ -1737,7 +1737,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 				},
 			}),
-			n(257422, {	-- Railee Thriceforged
+			n(257422, {	-- Railee Thriceforged <Weapon Merchant>
 				coord = { 59.0, 75.5, MAP.ZEPHRAS_ISLE },
 				sym = {{ "select", "itemID",
 					2488,	-- Gladius
@@ -1856,7 +1856,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					},
 				}),
 			}),
-			n(251905, {	-- Fimbo Greasemitz <Cook>
+			n(251905, {	-- Zerril Softbreeze <Cook>
 				coord = { 43.9, 43.8, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)

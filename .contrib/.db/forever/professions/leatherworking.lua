@@ -22,7 +22,7 @@ profession(LEATHERWORKING, {
 				5144,	-- Elemental Leatherworking
 				5143,	-- Tribal Leatherworking
 			},
-			qg = 7866,	-- Peter Galen
+			qg = 7866,	-- Peter Galen <Master Dragonscale Leatherworker>
 			coord = { 37.4, 65.4, MAP.AZSHARA },
 			cost = {
 				{ "i", 8203, 2 },	-- 2x Tough Scorpid Breastplate
@@ -36,7 +36,7 @@ profession(LEATHERWORKING, {
 				5146,	-- Elemental Leatherworking
 				5148,	-- Tribal Leatherworking
 			},
-			qg = 7867,	-- Thorkaf Dragoneye
+			qg = 7867,	-- Thorkaf Dragoneye <Master Dragonscale Leatherworker>
 			coord = { 62.6, 57.4, MAP.BADLANDS },
 			cost = {
 				{ "i", 8203, 2 },	-- 2x Tough Scorpid Breastplate
@@ -50,7 +50,7 @@ profession(LEATHERWORKING, {
 				5141,	-- Dragonscale Leatherworking
 				5143,	-- Tribal Leatherworking
 			},
-			qg = 7868,	-- Sarah Tanner
+			qg = 7868,	-- Sarah Tanner <Master Elemental Leatherworker>
 			coord = { 63.6, 76.0, MAP.SEARING_GORGE },
 			cost = {
 				{ "i", 7081, 2 },	-- 2x Breath of Wind
@@ -65,7 +65,7 @@ profession(LEATHERWORKING, {
 				5145,	-- Dragonscale Leatherworking
 				5148,	-- Tribal Leatherworking
 			},
-			qg = 7869,	-- Brumn Winterhoof
+			qg = 7869,	-- Brumn Winterhoof <Master Elemental Leatherworker>
 			coord = { 28.2, 45.0, MAP.ARATHI_HIGHLANDS },
 			cost = {
 				{ "i", 7081, 2 },	-- 2x Breath of Wind
@@ -81,7 +81,7 @@ profession(LEATHERWORKING, {
 				5141,	-- Dragonscale Leatherworking
 				5144,	-- Elemental Leatherworking
 			},
-			qg = 7870,	-- Caryssia Moonhunter
+			qg = 7870,	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
 			coord = { 89.4, 46.5, MAP.FERALAS },
 			cost = {
 				{ "i", 8214, 1 },	-- 1x Wild Leather Helmet
@@ -95,7 +95,7 @@ profession(LEATHERWORKING, {
 				5145,	-- Dragonscale Leatherworking
 				5146,	-- Elemental Leatherworking
 			},
-			qg = 7871,	-- Se'Jib
+			qg = 7871,	-- Se'Jib <Master Tribal Leatherworker>
 			coord = { 36.6, 34.2, MAP.STRANGLETHORN_VALE },
 			cost = {
 				{ "i", 8214, 1 },	-- 1x Wild Leather Helmet

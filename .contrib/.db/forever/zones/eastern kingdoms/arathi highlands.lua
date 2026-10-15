@@ -203,7 +203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(662, {	-- Deep Sea Salvage
 				sourceQuest = 663,	-- Land Ho!
-				qg = 2767,	-- First Mate Nilzlix
+				qg = 2767,	-- First Mate Nilzlix <Blackwater Raiders>
 				coord = { 32.6, 81.4, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
 				groups = {
@@ -239,7 +239,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(664, {	-- Drowned Sorrows
-				qg = 2769,	-- Captain Steelgut
+				qg = 2769,	-- Captain Steelgut <Blackwater Raiders>
 				coord = { 33.8, 80.8, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
 				groups = {
@@ -369,7 +369,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(6623, {	-- Horde Trauma
-				qg = 3373,	-- Arnok
+				qg = 3373,	-- Arnok <First Aid Trainer>
 				coord = { 34.0, 84.6, MAP.ORGRIMMAR },
 				requireSkill = FIRST_AID,
 				learnedAt = 225,
@@ -378,7 +378,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				isBreadcrumb = true,
 			}),
 			q(663, {	-- Land Ho!
-				qg = 2766,	-- Lolo the Lookout
+				qg = 2766,	-- Lolo the Lookout <Blackwater Raiders>
 				coord = { 31.6, 82.6, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
 			}),
@@ -597,7 +597,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(665, {	-- Sunken Treasure (1/5)
-				qg = 2768,	-- Professor Phizzlethorpe
+				qg = 2768,	-- Professor Phizzlethorpe <Blackwater Raiders>
 				coord = { 33.8, 80.6, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
 				groups = {
@@ -608,7 +608,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(666, {	-- Sunken Treasure (2/5)
 				sourceQuest = 665,	-- Sunken Treasure (1/5)
-				qg = 2774,	-- Doctor Draxlegauge
+				qg = 2774,	-- Doctor Draxlegauge <Blackwater Raiders>
 				coord = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
 				groups = {
@@ -626,14 +626,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(668, {	-- Sunken Treasure (3/5)
 				sourceQuest = 666,	-- Sunken Treasure (2/5)
-				qg = 2774,	-- Doctor Draxlegauge
+				qg = 2774,	-- Doctor Draxlegauge <Blackwater Raiders>
 				coord = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
 				qi = 4493,	-- Elven Gems (QI!)
 			}),
 			q(669, {	-- Sunken Treasure (4/5)
 				sourceQuest = 668,	-- Sunken Treasure (3/5)
-				qg = 2610,	-- Shakes O'Breen
+				qg = 2610,	-- Shakes O'Breen <Blackwater Raiders>
 				coord = { 32.2, 81.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
@@ -757,7 +757,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(6622, {	-- Triage (H)
 				description ="Needs a minimum of 225 skill in First Aid.",
 				sourceQuest = 6623,	-- Horde Trauma
-				qg = 12920,	-- Doctor Gregory Victor
+				qg = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
 				coord = { 68.5, 37.8, MAP.ARATHI_HIGHLANDS },
 				requireSkill = FIRST_AID,
 				races = HORDE_ONLY,

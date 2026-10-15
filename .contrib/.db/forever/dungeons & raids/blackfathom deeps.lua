@@ -36,7 +36,7 @@ root(ROOTS.Instances, {
 				}),
 				q(6565, {	-- Allegiance to the Old Gods (2/2)
 					sourceQuest = 6564,	-- Allegiance to the Old Gods (1/2)
-					qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 					coord = { 11.6, 34.3, MAP.ASHENVALE },
 					races = HORDE_ONLY,
 					lvl = 17,
@@ -49,7 +49,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(908, {	-- Amongst the Ruins -- Might not exist //Braghe
-					qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 					coord = { 11.6, 34.3, MAP.ASHENVALE },
 					races = HORDE_ONLY,
 					lvl = 21,
@@ -60,7 +60,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(6921, {	-- Amongst the Ruins
-					qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 					coord = { 11.6, 34.3, MAP.ASHENVALE },
 					races = HORDE_ONLY,
 					lvl = 21,
@@ -177,7 +177,7 @@ root(ROOTS.Instances, {
 				}),
 				q(6563, {	-- The Essence of Aku'Mai
 					sourceQuest = 6562,	-- Trouble in the Deeps
-					qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 					coord = { 11.6, 34.3, MAP.ASHENVALE },
 					races = HORDE_ONLY,
 					lvl = 17,

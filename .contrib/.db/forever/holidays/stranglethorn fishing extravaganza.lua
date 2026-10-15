@@ -25,7 +25,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 	groups = {
 		n(QUESTS, {
 			q(8194, {	-- Apprentice Angler
-				qg = 15078,	-- Jang <Fishmaster Apprentice>
+				qg = 15078,	-- Jang <Fishing Extravaganza Prizes>
 				coord = { 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 19807, 5 } },	-- 5x Speckled Tastyfish
 				requireSkill = FISHING,

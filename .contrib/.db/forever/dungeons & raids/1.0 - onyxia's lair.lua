@@ -64,7 +64,7 @@ root(ROOTS.Instances, {
 				}),
 				q(7491, {	-- For All To See
 					sourceQuest = 7490,	-- Victory for the Horde
-					qg = 4949,	-- Thrall
+					qg = 4949,	-- Thrall <Warchief>
 					coord = { 32.0, 37.8, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
 					lvl = 60,

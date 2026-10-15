@@ -233,7 +233,7 @@ root(ROOTS.Instances, {
 					crs = {
 						6229,	-- Crowd Pummeler 9-60
 						6235,	-- Electrocutioner 6000
-						7800,	-- Mekgineer Thermaplug
+						7800,	-- Mekgineer Thermaplugg
 						6232,	-- Arcane Nullifier X-21
 						6234,	-- Mechanized Guardian
 						6233,	-- Mechanized Sentry

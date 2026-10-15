@@ -24,7 +24,7 @@ profession(BLACKSMITHING, {
 				5284,	-- The Way of the Weaponsmith [A]
 				5302,	-- The Way of the Weaponsmith [H]
 			},
-			qg = 5164,	-- Grumnus Steelshaper
+			qg = 5164,	-- Grumnus Steelshaper <Armor Crafter>
 			coord = { 50.2, 42.6, MAP.IRONFORGE },
 			cost = {
 				{ "i", 7936, 2 },	-- 2x Ornate Mithril Boots
@@ -40,7 +40,7 @@ profession(BLACKSMITHING, {
 				5284,	-- The Way of the Weaponsmith [A]
 				5302,	-- The Way of the Weaponsmith [H]
 			},
-			qg = 11177,	-- Okothos Ironrager
+			qg = 11177,	-- Okothos Ironrager <Armorsmith>
 			coord = { 79.8, 23.8, MAP.ORGRIMMAR },
 			cost = {
 				{ "i", 7936, 2 },	-- 2x Ornate Mithril Boots
@@ -56,7 +56,7 @@ profession(BLACKSMITHING, {
 				5301,	-- The Art of the Armorsmith [H]
 				5302,	-- The Way of the Weaponsmith [H]
 			},
-			qg = 11146,	-- Ironus Coldsteel
+			qg = 11146,	-- Ironus Coldsteel <Special Weapon Crafter>
 			coord = { 49.8, 45.0, MAP.IRONFORGE },
 			cost = {
 				{ "i", 7945, 2 },	-- 2x Big Black Mace
@@ -73,7 +73,7 @@ profession(BLACKSMITHING, {
 				5301,	-- The Art of the Armorsmith [H]
 				5284,	-- The Way of the Weaponsmith [A]
 			},
-			qg = 11178,	-- Borgosh Corebender
+			qg = 11178,	-- Borgosh Corebender <Weaponsmith>
 			coord = { 79.6, 23.6, MAP.ORGRIMMAR },
 			cost = {
 				{ "i", 7945, 2 },	-- 2x Big Black Mace

@@ -146,7 +146,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(16047),	-- Schematic: Thorium Tube (RECIPE!)
 				},
 			}),
-			n(260560, {	-- Fimbo Greasemitz <Poison Vendor>
+			n(260560, {	-- Krikshank <Poison Vendor>
 				coord = { 76.8, 51.1, MAP.RIVERGLADES },
 				groups = {
 					i(271654),	-- Expired Poison
@@ -194,7 +194,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(248820),	-- Torbernite
 				},
 			}),
-			n(259861, {	-- Paige Armstrong
+			n(259861, {	-- Paige Armstrong <Weaponsmith & Armorcrafter>
 				coord = { 64.3, 82.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",

@@ -212,7 +212,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(212, {	-- A Meal Served Cold
-				qg = 1141,	-- Angus Stern
+				qg = 1141,	-- Angus Stern <Head Chef>
 				coord = { 51.8, 93.7, MAP.STORMWIND_CITY },
 				maps = { MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
@@ -379,7 +379,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					1678,	-- Vejrek
 					1683,	-- Vorlus Vilehoof
 				},
-				qg = 6090,	-- Bartleby
+				qg = 6090,	-- Bartleby <Drunk>
 				coord = { 76.8, 52.5, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
@@ -393,7 +393,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1640, {	-- Beat Bartleby
 				sourceQuest = 1639,	-- Bartleby the Drunk
-				qg = 6090,	-- Bartleby
+				qg = 6090,	-- Bartleby <Drunk>
 				coord = { 76.8, 52.5, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
@@ -414,7 +414,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(344, {	-- Brother Paxton
 				sourceQuest = 343,	-- Speaking of Fortitude
-				qg = 1440,	-- Milton Sheaf
+				qg = 1440,	-- Milton Sheaf <Librarian>
 				coord = { 77.1, 30.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
@@ -536,7 +536,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(6261, {	-- Dungar Longdrink
 				sourceQuest = 6281,	-- Continue to Stormwind
-				qg = 1323,	-- Osric Strang
+				qg = 1323,	-- Osric Strang <Heavy Armor Merchant>
 				coord = { 77.0, 61.2, MAP.STORMWIND_CITY },
 				races = { HUMAN },
 				lvl = 10,
@@ -840,7 +840,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(2759, {	-- In Search of Galvan
 				sourceQuest = 2758,	-- The Origins of Smithing
-				qg = 7798,	-- Hank the Hammer
+				qg = 7798,	-- Hank the Hammer <The Mithril Order>
 				coord = { 63.0, 36.4, MAP.STORMWIND_CITY },
 				maps = { MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
@@ -983,7 +983,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qi = 6926,	-- Furen's Notes (QI!)
 			}),
 			q(1363, {	-- Mazen's Behest (1/2)
-				qg = 338,	-- Mazen Mac'Nadir
+				qg = 338,	-- Mazen Mac'Nadir <Academy of Arcane Arts and Sciences>
 				coord = { 51.8, 74.3, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 37,
@@ -1393,7 +1393,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1244, {	-- The Missing Diplomat (5/17)
 				sourceQuest = 1243,	-- The Missing Diplomat (4/17)
-				qg = 840,	-- Watcher Backus
+				qg = 840,	-- Watcher Backus <The Night Watch>
 				coord = { 73.21, 38.81, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
@@ -1409,7 +1409,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1245, {	-- The Missing Diplomat (6/17)
 				sourceQuest = 1244,	-- The Missing Diplomat (5/17)
-				qg = 840,	-- Watcher Backus
+				qg = 840,	-- Watcher Backus <The Night Watch>
 				coord = { 73.21, 38.81, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
@@ -1445,7 +1445,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 28,
 			}),
 			q(2758, {	-- The Origins of Smithing
-				qg = 7798,	-- Hank the Hammer
+				qg = 7798,	-- Hank the Hammer <The Mithril Order>
 				coord = { 63.0, 36.4, MAP.STORMWIND_CITY },
 				cost = { { "i", 6040, 6 } },	-- 6x Golden Scale Bracers
 				requireSkill = BLACKSMITHING,
@@ -1459,7 +1459,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(543, {	-- The Perenolde Tiara
-				qg = 2285,	-- Count Remington Ridgewell
+				qg = 2285,	-- Count Remington Ridgewell <House of Nobles>
 				coord = { 76.9, 47.8, MAP.STORMWIND_CITY },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -1477,7 +1477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					3681,	-- Tome of Divinity (1b/10)
 					1787,	-- The Tome of Divinity (8)
 				},
-				qg = 927,	-- Brother Wilhelm
+				qg = 927,	-- Brother Wilhelm <Paladin Trainer>
 				coord = { 41.0, 66.0, MAP.ELWYNN_FOREST },
 				races = { HUMAN },
 				classes = { PALADIN },
@@ -1719,7 +1719,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						coord = { 69.6, 71.6, MAP.STORMWIND_CITY },
 						crs = {
 							1302,	-- Bernard Gump <Florist>
-							1303,	-- Felicia Gump <Herbalism Supplies>
+							1303,	-- Felicia Gump <Herbalism Supplier>
 						},
 					}),
 					objective(4, {	-- 0/1 Spool of Light Chartreuse Silk Thread
@@ -1883,7 +1883,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 		}),
 		n(VENDORS, {
-			n(258568, {	-- Antonio Bolero
+			n(258568, {	-- Antonio Bolero <Tailoring Recipes>
 				coord = { 53.5, 81.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1892,7 +1892,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(253668),	-- Pattern: Woolen Reagent Bag (RECIPE!)
 				},
 			}),
-			n(1310, {	-- Evan Larson
+			n(1310, {	-- Evan Larson <Hatter>
 				coord = { 52.5, 83.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1989,7 +1989,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(3421),	-- Simple Wildflowers
 				},
 			}),
-			n(5514, {	-- Brooke Stonebraid <Mining Supplies>
+			n(5514, {	-- Brooke Stonebraid <Mining Supplier>
 				coord = { 59.2, 37.5, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				sym = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
@@ -2498,7 +2498,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
-			n(1301, {	-- Julia Gallina
+			n(1301, {	-- Julia Gallina <Wine Vendor>
 				coord = { 59.8, 77.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -2702,7 +2702,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(272695),	-- Knight's Colors
 				}),
 			}),
-			n(12805, {	-- Officer Areyn <Accessories Quartermaster>
+			n(12805, {	-- Officer Areyn
 				coord = { 76.8, 65.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -2811,7 +2811,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					17192,	-- Reinforced Targe
 				}},
 			}),
-			n(5193, {	-- Rebecca Laughlin <Tabard Designer>
+			n(5193, {	-- Rebecca Laughlin <Tabard Vendor>
 				coord = { 64.0, 77.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				groups = {
