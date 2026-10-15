@@ -1,9 +1,9 @@
 {
   "baseline": "1235e7bc841adb11530dd291b7b8083080c7de98",
   "lua_version": "Lua 5.1.5  Copyright (C) 1994-2012 Lua.org, PUC-Rio",
-  "changed_files": 244,
-  "changed_lua": 222,
-  "syntax_current_pass": 222,
+  "changed_files": 242,
+  "changed_lua": 220,
+  "syntax_current_pass": 220,
   "baseline_parse_exceptions": [],
   "comment_only_bytecode_identical": 130,
   "failures": [],
@@ -230,18 +230,6 @@
       "current_sha256": "e187f846393397b5b82e90ce9abc606e066c06b651f8eb10d509bfca786b18e9"
     },
     {
-      "path": ".contrib/.db/shared/lib/Strings/Classes/Ensemble/RELOG_REQUIRED.lua",
-      "newline_preserved": true,
-      "bom_preserved": true,
-      "code_tokens_equal": true,
-      "string_count_equal": true,
-      "changed_lookup_keys": [],
-      "preprocessor_lines_equal": true,
-      "baseline_syntax_ok": true,
-      "current_syntax_ok": true,
-      "current_sha256": "a33c41ba47802daecf44259d92c92b1c28de7c726f2a37d6964029ef7929c684"
-    },
-    {
       "path": ".contrib/.db/shared/lib/Strings/Classes/Title/TITLES_DESC.lua",
       "newline_preserved": true,
       "bom_preserved": true,
@@ -288,18 +276,6 @@
       "baseline_syntax_ok": true,
       "current_syntax_ok": true,
       "current_sha256": "895db02cf3e1a599a691923552a655db82beaff7b5a873ef363e07858e77aeb7"
-    },
-    {
-      "path": ".contrib/.db/shared/lib/Strings/Settings/Features/AUTO_MAIN_LIST_CHECKBOX_TOOLTIP.lua",
-      "newline_preserved": true,
-      "bom_preserved": true,
-      "code_tokens_equal": true,
-      "string_count_equal": true,
-      "changed_lookup_keys": [],
-      "preprocessor_lines_equal": true,
-      "baseline_syntax_ok": true,
-      "current_syntax_ok": true,
-      "current_sha256": "32d72ce5745b0d45374b9bc498f835899d7353362cf54adc33875983bb4b1c5f"
     },
     {
       "path": ".contrib/.db/shared/lib/Strings/Settings/General/ACCOUNT_WIDE_DEATHS_TOOLTIP.lua",

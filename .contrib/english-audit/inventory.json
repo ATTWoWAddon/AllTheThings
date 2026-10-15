@@ -5397,7 +5397,7 @@
     {
       "path": ".contrib/.db/shared/lib/Strings/Classes/Ensemble/RELOG_REQUIRED.lua",
       "category": "maintained-source",
-      "bytes": 973,
+      "bytes": 969,
       "lines": 18,
       "automated_spelling_scan": true
     },
@@ -7252,7 +7252,7 @@
     {
       "path": ".contrib/.db/shared/lib/Strings/Settings/Features/AUTO_MAIN_LIST_CHECKBOX_TOOLTIP.lua",
       "category": "maintained-source",
-      "bytes": 2370,
+      "bytes": 2368,
       "lines": 18,
       "automated_spelling_scan": true
     },

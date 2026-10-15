@@ -3,10 +3,10 @@
   "branch": "codex/english-flavor-audit",
   "date": "2026-10-15",
   "timezone": "Asia/Taipei",
-  "changed_source_files": 244,
-  "changed_source_lines": 431,
+  "changed_source_files": 242,
+  "changed_source_lines": 427,
   "cross_verified_source_lines": 34,
-  "editorial_source_lines": 397,
+  "editorial_source_lines": 393,
   "two_source_policy": "Count distinct source providers. Wowhead page and tooltip count as one provider. Editorial language changes make no new gameplay claim and have zero external WoW sources.",
   "changes": [
     {
@@ -531,42 +531,6 @@
       "change_id": "EN-0026"
     },
     {
-      "path": ".contrib/.db/shared/lib/Strings/Classes/Ensemble/RELOG_REQUIRED.lua",
-      "line": 2,
-      "before": "\treadable = \"After using this, it is typically required to logout & login to collect all the items correctly on the game servers.\",",
-      "after": "\treadable = \"After using this, it is typically required to log out & log in to collect all the items correctly on the game servers.\",",
-      "flavor": "Shared (Retail and Classic, when the feature is included)",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Use the two-word verb phrases."
-      ],
-      "scope": "shared",
-      "change_id": "EN-0027"
-    },
-    {
-      "path": ".contrib/.db/shared/lib/Strings/Classes/Ensemble/RELOG_REQUIRED.lua",
-      "line": 6,
-      "before": "\t\ten = \"After using this, it is typically required to logout & login to collect all the items correctly on the game servers.\",",
-      "after": "\t\ten = \"After using this, it is typically required to log out & log in to collect all the items correctly on the game servers.\",",
-      "flavor": "Shared (Retail and Classic, when the feature is included)",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Use the two-word verb phrases."
-      ],
-      "scope": "shared",
-      "change_id": "EN-0028"
-    },
-    {
       "path": ".contrib/.db/shared/lib/Strings/Classes/Title/TITLES_DESC.lua",
       "line": 2,
       "before": "\treadable = \"Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.\",",
@@ -711,42 +675,6 @@
       ],
       "scope": "shared",
       "change_id": "EN-0036"
-    },
-    {
-      "path": ".contrib/.db/shared/lib/Strings/Settings/Features/AUTO_MAIN_LIST_CHECKBOX_TOOLTIP.lua",
-      "line": 2,
-      "before": "\treadable = \"Enable this option if you want to automatically open the Main List when you login.\\n\\nYou can also bind this setting to a Key:\\n\\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\\n\\nShortcut Command: /att\",",
-      "after": "\treadable = \"Enable this option if you want to automatically open the Main List when you log in.\\n\\nYou can also bind this setting to a Key:\\n\\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\\n\\nShortcut Command: /att\",",
-      "flavor": "Shared (Retail and Classic, when the feature is included)",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Use log in as a verb."
-      ],
-      "scope": "shared",
-      "change_id": "EN-0037"
-    },
-    {
-      "path": ".contrib/.db/shared/lib/Strings/Settings/Features/AUTO_MAIN_LIST_CHECKBOX_TOOLTIP.lua",
-      "line": 6,
-      "before": "\t\ten = \"Enable this option if you want to automatically open the Main List when you login.\\n\\nYou can also bind this setting to a Key:\\n\\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\\n\\nShortcut Command: /att\",",
-      "after": "\t\ten = \"Enable this option if you want to automatically open the Main List when you log in.\\n\\nYou can also bind this setting to a Key:\\n\\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\\n\\nShortcut Command: /att\",",
-      "flavor": "Shared (Retail and Classic, when the feature is included)",
-      "content_context": "",
-      "verified_flavor": "",
-      "independent_source_count": 0,
-      "source_providers": [],
-      "sources": [],
-      "status": "editorial English only",
-      "reasons": [
-        "Use log in as a verb."
-      ],
-      "scope": "shared",
-      "change_id": "EN-0038"
     },
     {
       "path": ".contrib/.db/shared/lib/Strings/Settings/General/ACCOUNT_WIDE_DEATHS_TOOLTIP.lua",

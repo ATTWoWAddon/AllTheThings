@@ -1,6 +1,6 @@
 # Shared English audit
 
-Date: 2026-10-15 (Asia/Taipei). Branch: `codex/english-flavor-audit`. Changes remain local; no push, merge, or pull request was performed.
+Date: 2026-10-15 (Asia/Taipei). Branch: `codex/english-flavor-audit`. Changes are proposed in [PR 2678](https://github.com/ATTWoWAddon/AllTheThings/pull/2678).
 
 ## Coverage
 
@@ -10,6 +10,8 @@ Date: 2026-10-15 (Asia/Taipei). Branch: `codex/english-flavor-audit`. Changes re
 - Coverage limit: this is a full-subtree candidate scan plus contextual UI/header/candidate review. It is not a semantic verification of all 28,296 English records or every historical flavor/build. No live game client, screenshots, or Contributor Report was available. The source pages/tooltip endpoints expose current live English data; no exact game-client build was observed.
 - Wago attempt: `https://wago.tools/db2/GameObjects?build=12.0.1.65818` was inaccessible through browsing; this build was an attempted query only, never treated as verified source evidence. No edit relies on it.
 - Source counts below count independent publishers: Wowhead page plus Wowhead tooltip count as one. Editorial grammar changes have 0 gameplay sources because no game fact changes. Game names/headers require at least 2 sources.
+
+Existing `logout` and `login` strings are retained; spacing-only proposals for these words are omitted.
 
 ## Applied changes
 
@@ -26,14 +28,6 @@ Date: 2026-10-15 (Asia/Taipei). Branch: `codex/english-flavor-audit`. Changes re
 - After: `QuestIDs`
 - Flavor/context: Shared (Retail and Classic, when the feature is included).
 - Reason: Use a plural, without a possessive apostrophe.
-- Independent gameplay sources: 0.
-- Source marking: English editorial correction, verified against the exact original wording in this file; no WoW factual change.
-
-### 3. `.contrib/.db/shared/lib/Strings/Classes/Ensemble/RELOG_REQUIRED.lua` lines 2, 6
-- Before: `to logout & login`
-- After: `to log out & log in`
-- Flavor/context: Shared (Retail and Classic, when the feature is included).
-- Reason: Use the two-word verb phrases.
 - Independent gameplay sources: 0.
 - Source marking: English editorial correction, verified against the exact original wording in this file; no WoW factual change.
 
@@ -58,14 +52,6 @@ Date: 2026-10-15 (Asia/Taipei). Branch: `codex/english-flavor-audit`. Changes re
 - After: `try my best to answer them, even if they are`
 - Flavor/context: Shared (Retail and Classic, when the feature is included).
 - Reason: Agree with plural questions.
-- Independent gameplay sources: 0.
-- Source marking: English editorial correction, verified against the exact original wording in this file; no WoW factual change.
-
-### 7. `.contrib/.db/shared/lib/Strings/Settings/Features/AUTO_MAIN_LIST_CHECKBOX_TOOLTIP.lua` lines 2, 6
-- Before: `when you login.`
-- After: `when you log in.`
-- Flavor/context: Shared (Retail and Classic, when the feature is included).
-- Reason: Use log in as a verb.
 - Independent gameplay sources: 0.
 - Source marking: English editorial correction, verified against the exact original wording in this file; no WoW factual change.
 
@@ -421,5 +407,5 @@ Date: 2026-10-15 (Asia/Taipei). Branch: `codex/english-flavor-audit`. Changes re
 ## Validation
 
 - Every write used byte-preserving replacements; original CRLF and total line counts were checked.
-- `git diff --check` passed for the shared subtree. Compared all 39 changed files (72 final changed source lines) against the HEAD baseline after applying Git checkout filters: translated locale assignments, format placeholders, total line counts, and CRLF were unchanged.
+- `git diff --check` passed for the shared subtree. Compared all 37 changed files (68 final changed source lines) against the HEAD baseline after applying Git checkout filters: translated locale assignments, format placeholders, total line counts, and CRLF were unchanged.
 - Lua 5.1 validation is coordinated by root. This subagent has not claimed game runtime testing.
