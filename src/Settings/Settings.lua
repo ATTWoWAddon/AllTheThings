@@ -82,7 +82,7 @@ settings.ForceAccountWide = {
 -- INSANE MODE
 settings.RequiredForInsaneMode = {
 	Achievements = true,
-	AzeriteEssences = app.GameBuildVersion >= 80000,
+	AzeriteEssences = app.GameBuildVersion >= 80200,
 	BattlePets = true,
 	Campsites = app.GameBuildVersion >= 110100,
 	CharacterUnlocks = true,
@@ -288,7 +288,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Toys"] = true,
 		["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
-		["Thing:AzeriteEssences"] = app.GameBuildVersion >= 80000,
+		["Thing:AzeriteEssences"] = app.GameBuildVersion >= 80200,
 		["Thing:BattlePets"] = true,
 		["Thing:Campsites"] = app.GameBuildVersion >= 110100,
 		["Thing:CharacterUnlocks"] = true,
