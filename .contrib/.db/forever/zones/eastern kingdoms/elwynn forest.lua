@@ -284,6 +284,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						classes = { WARLOCK },
 					}),
 					q(96627, {	-- The Adventurer [Elwynn Forest]
+						nextQuests = { 95998 },
+						isBreadcrumb = true,
+						altQuests = { 96628, 96630, 96638, 96652, 96656, 96659 },
 						sourceQuest = 21,	-- Skirmish at Echo Ridge
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
@@ -638,6 +641,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97915, {	-- Camping 101: Alchemy [Elwynn Forest]
+				altQuests = { 96045, 97899, 97927, 97938, 97951, 97963 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -650,6 +654,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97916, {	-- Camping 101: Blacksmithing [Elwynn Forest]
+				altQuests = { 96044, 97900, 97928, 97939, 97952, 97964 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -662,6 +667,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(96626, {	-- Camping 101: Cooking [Elwynn Forest]
+				altQuests = { 96629, 96634, 96646, 96655, 96658, 96661 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -670,6 +676,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 4,
 			}),
 			q(97917, {	-- Camping 101: Enchanting [Elwynn Forest]
+				altQuests = { 96059, 97901, 97929, 97940, 97953, 98284, 98286 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -682,6 +689,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97918, {	-- Camping 101: Engineering [Elwynn Forest]
+				altQuests = { 96058, 97902, 97930, 97941, 97954, 98285, 98287 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -694,6 +702,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97919, {	-- Camping 101: First Aid [Elwynn Forest]
+				altQuests = { 96047, 97903, 97931, 97942, 97955, 97965 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -706,6 +715,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97920, {	-- Camping 101: Fishing [Elwynn Forest]
+				altQuests = { 96050, 97904, 97932, 97943, 97956, 97967 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -718,6 +728,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97921, {	-- Camping 101: Herbalism [Elwynn Forest]
+				altQuests = { 96055, 97905, 97933, 97944, 97957, 97968 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -730,6 +741,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97922, {	-- Camping 101: Leatherworking [Elwynn Forest]
+				altQuests = { 96031, 97906, 97934, 97946, 97958, 97969 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -742,6 +754,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97923, {	-- Camping 101: Mining [Elwynn Forest]
+				altQuests = { 96046, 97907, 97935, 97948, 97959, 97970 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -754,6 +767,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97924, {	-- Camping 101: Skinning [Elwynn Forest]
+				altQuests = { 96056, 97908, 97936, 97949, 97960, 97971 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -766,6 +780,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97925, {	-- Camping 101: Tailoring [Elwynn Forest]
+				altQuests = { 96057, 96102, 97937, 97950, 97961, 97972, 97973 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
@@ -1337,6 +1352,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 4,
 			}),
 			q(95998, {	-- The Great Outdoors [Elwynn Forest]
+				altQuests = { 96101, 96604, 96605, 96606, 96607, 96608 },
 				sourceQuest = 96627,	-- The Adventurer [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },
