@@ -389,11 +389,10 @@ if not app.IsRetail then
 	lib.CombatLogGetCurrentEventInfo = C_CombatLog and C_CombatLog.GetCurrentEventInfo or CombatLogGetCurrentEventInfo or false;
 end
 
--- Options categories and dropdowns use the current UI first, with legacy UI only
--- on clients which do not provide the replacement framework.
+-- Options categories use Settings on every current client.
+-- Dropdowns retain the legacy UI for clients without the replacement framework.
 do
 	local Settings = Settings;
-	local AddLegacyCategory = InterfaceOptions_AddCategory;
 
 	lib.OpenOptionsCategory = function(categoryID)
 		return Settings.OpenToCategory(categoryID);
@@ -403,22 +402,17 @@ do
 	---@param name string Display name of the options page.
 	---@param parentCategory table|nil Modern category of the parent page.
 	---@param parentName string|nil Name of the parent page; nil for a root category.
-	---@return table|nil category Modern category, or nil for the legacy UI.
+	---@return table category Modern category.
 	---@return number|string categoryID Identifier accepted by OpenOptionsCategory.
 	lib.RegisterOptionsCategory = function(frame, name, parentCategory, parentName)
-		if Settings and Settings.RegisterCanvasLayoutCategory then
-			local category;
-			if parentName then
-				category = Settings.RegisterCanvasLayoutSubcategory(parentCategory, frame, name);
-			else
-				category = Settings.RegisterCanvasLayoutCategory(frame, name);
-				Settings.RegisterAddOnCategory(category);
-			end
-			return category, category.ID;
+		local category;
+		if parentName then
+			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory, frame, name);
+		else
+			category = Settings.RegisterCanvasLayoutCategory(frame, name);
+			Settings.RegisterAddOnCategory(category);
 		end
-		frame.name, frame.parent = name, parentName;
-		AddLegacyCategory(frame);
-		return nil, name;
+		return category, category.ID;
 	end;
 end
 

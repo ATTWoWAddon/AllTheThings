@@ -68,32 +68,24 @@ local function runUIFixture(modern)
 		env.UIDropDownMenu_AddButton = function(info) legacyButtons[#legacyButtons+1] = info end
 		env.UIDropDownMenu_Initialize = function(frame, generator) frame.generator = generator end
 	end
-	if modern then
-		env.Settings = {
-			OpenToCategory = function(id) opened = id end,
-			RegisterCanvasLayoutCategory = function(frame, name)
-				registrations[#registrations+1] = "root:" .. name
-				return { ID = 10 }
-			end,
-			RegisterAddOnCategory = function(category)
-				expect(category.ID == 10, "root AddOn registration must use returned category")
-				registrations[#registrations+1] = "addon"
-			end,
-			RegisterCanvasLayoutSubcategory = function(parent, frame, name)
-				expect(parent.ID == 10, "subcategory parent must be actual category")
-				registrations[#registrations+1] = "child:" .. name
-				return { ID = 11 }
-			end,
-		}
-		env.InterfaceOptionsFrame_OpenToCategory = function() error("legacy options opened") end
-		env.InterfaceOptions_AddCategory = function() error("legacy category registered") end
-	else
-		env.Settings = {OpenToCategory = function(id) opened = id end}
-		env.InterfaceOptionsFrame_OpenToCategory = function() error("legacy options opened") end
-		env.InterfaceOptions_AddCategory = function(frame)
-			registrations[#registrations+1] = frame.name
-		end
-	end
+	env.Settings = {
+		OpenToCategory = function(id) opened = id end,
+		RegisterCanvasLayoutCategory = function(frame, name)
+			registrations[#registrations+1] = "root:" .. name
+			return { ID = 10 }
+		end,
+		RegisterAddOnCategory = function(category)
+			expect(category.ID == 10, "root AddOn registration must use returned category")
+			registrations[#registrations+1] = "addon"
+		end,
+		RegisterCanvasLayoutSubcategory = function(parent, frame, name)
+			expect(parent.ID == 10, "subcategory parent must be actual category")
+			registrations[#registrations+1] = "child:" .. name
+			return { ID = 11 }
+		end,
+	}
+	env.InterfaceOptionsFrame_OpenToCategory = function() error("legacy options opened") end
+	env.InterfaceOptions_AddCategory = function() error("legacy category registered") end
 	env.GetBuildInfo = function() return "fixture", "fixture", "fixture", modern and 120105 or 11509 end
 	env._G = env
 	local wrapperApp = {print = function() end}
@@ -102,19 +94,12 @@ local function runUIFixture(modern)
 	chunk("ATT", wrapperApp)
 	lib = wrapperApp.WOWAPI
 
-	-- Category identifiers and root-before-child registration survive either UI.
+	-- Category registration uses Settings with either dropdown framework.
 	local rootFrame, childFrame = {}, {}
 	local rootCategory, rootID = lib.RegisterOptionsCategory(rootFrame, "ATT")
 	local childCategory, childID = lib.RegisterOptionsCategory(childFrame, "Audio", rootCategory, "ATT")
-	if modern then
-		expect(rootID == 10 and childID == 11, "modern category IDs not preserved")
-		expect(table.concat(registrations, ",") == "root:ATT,addon,child:Audio", "modern category registration order changed")
-	else
-		expect(rootCategory == nil and childCategory == nil, "legacy registration fabricated modern category")
-		expect(rootID == "ATT" and childID == "Audio", "legacy category identifiers not preserved")
-		expect(childFrame.parent == "ATT", "legacy parent category name lost")
-		expect(table.concat(registrations, ",") == "ATT,Audio", "legacy category order changed")
-	end
+	expect(rootID == 10 and childID == 11, "modern category IDs not preserved")
+	expect(table.concat(registrations, ",") == "root:ATT,addon,child:Audio", "modern category registration order changed")
 	lib.OpenOptionsCategory(childID)
 	expect(opened == childID, "opening options category changed its ID")
 
