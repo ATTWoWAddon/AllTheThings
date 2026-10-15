@@ -680,7 +680,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 24.3, 46.2, MAP.REDRIDGE_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				lvl = 15,
+				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Broken Staff of Incinerator Gar'im
 						provider = { "i", 271872 },	-- Broken Staff of Incinerator Gar'im (QI!)
