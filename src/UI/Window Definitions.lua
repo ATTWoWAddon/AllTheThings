@@ -2766,7 +2766,7 @@ local function BuildWindow(suffix)
 		end;
 		handlers.QUEST_LOG_UPDATE = delayedUpdate;
 	end
-	if not definition.IgnorePetBattleEvents and app.GameBuildVersion > 50000 then
+	if not definition.IgnorePetBattleEvents and (app.GameBuildVersion >= 50004 or app.IsForever) then
 		-- Pet Battles were added with MOP and we want all of our windows to hide when participating.
 		local WasHiddenByPetBattle;
 		handlers.PET_BATTLE_OPENING_START = function()
