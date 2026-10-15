@@ -304,7 +304,7 @@ lib.NormalizeHousingCatalogEntryInfo = function(info)
 	return normalized;
 end;
 local C_HousingCatalog = C_HousingCatalog;
-if C_HousingCatalog and C_HousingCatalog.GetCatalogEntryInfo then
+if app.GameBuildVersion >= 110207 and C_HousingCatalog and C_HousingCatalog.GetCatalogEntryInfo then
 	lib.GetHousingCatalogEntryInfo = function(entryID)
 		return lib.NormalizeHousingCatalogEntryInfo(C_HousingCatalog.GetCatalogEntryInfo(entryID));
 	end;
