@@ -1104,7 +1104,7 @@ local InformationTypes = {
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
 	CreateInformationType("campsiteID", { text = L.CAMPSITE_ID, priority = 7 }),
 	CreateInformationType("decorID", { text = L.DECOR_ID, priority = 7 }),
-	CreateInformationType("professionnodeID", { text = L.PROFESSION_NODE_ID, priority = 7 }),
+	CreateInformationType("professionnodeID", { minBuild = 100000, text = L.PROFESSION_NODE_ID, priority = 7 }),
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayInExternalTooltips = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 
