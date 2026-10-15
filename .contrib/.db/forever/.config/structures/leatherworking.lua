@@ -216,7 +216,7 @@ LEATHERWORKING_RECIPES = {
 			i(252808, {	-- Pattern: Totemic Leather Tunic (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
-			i(252767, {	-- Pattern: Defender's Leather Belt (RECIPE!)
+			i(252766, {	-- Pattern: Trapper's Leather Belt (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252787, {	-- Pattern: Trapper's Leather Boots (RECIPE!)
@@ -470,7 +470,7 @@ LEATHERWORKING_RECIPES = {
 			i(252808, {	-- Pattern: Totemic Leather Tunic (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
-			i(252767, {	-- Pattern: Defender's Leather Belt (RECIPE!)
+			i(252766, {	-- Pattern: Trapper's Leather Belt (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(252787, {	-- Pattern: Trapper's Leather Boots (RECIPE!)
