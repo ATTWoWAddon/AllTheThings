@@ -1,5 +1,5 @@
 VISIONS_OF_NZOTH = createHeader({
-	readable = "Visions of Nzoth",
+	readable = "Visions of N'Zoth",
 	icon = 535594,
 	text = {
 		-- #if AFTER 10.1.5

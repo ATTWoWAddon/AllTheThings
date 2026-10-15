@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
+	readable = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjunction with the Leave Group option.",
 	constant = "RAID_ASSISTANT_CREATE_GROUP_DESC",
 	export = true,
 	text = {
-		en = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
+		en = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjunction with the Leave Group option.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Click this button to select a random decor based on what you're missing.",
+	readable = "Click this button to select a random piece of decor based on what you're missing.",
 	constant = "DECOR_DESC",
 	export = true,
 	text = {
-		en = "Click this button to select a random decor based on what you're missing.",
+		en = "Click this button to select a random piece of decor based on what you're missing.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

@@ -258118,10 +258118,10 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[357771] = {
-		readable = "Burried Cache",
+		readable = "Buried Cache",
 		model = 3522548,
 		text = {
-			en = "Burried Cache",
+			en = "Buried Cache",
 			es = "Alijo enterrado",
 			de = "Vergrabene Truhe",
 			fr = "Cache enfouie",
@@ -258207,10 +258207,10 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[357937] = {
-		readable = "Burried Cache",
+		readable = "Buried Cache",
 		model = 3597238,
 		text = {
-			en = "Burried Cache",
+			en = "Buried Cache",
 			es = "Alijo enterrado",
 			de = "Vergrabene Truhe",
 			fr = "Cache enfouie",

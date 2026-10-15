@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.",
+	readable = "Titles are tracked across your account; however, your individual character must qualify for certain titles to be usable on that character.",
 	constant = "TITLES_DESC",
 	export = true,
 	text = {
-		en = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.",
+		en = "Titles are tracked across your account; however, your individual character must qualify for certain titles to be usable on that character.",
 		de = "Titel werden zwar auf dem ganzen Account verfolgt, aber Euer Charakter muss sich für bestimmte Titel selbst qualifizieren, um diese nutzen zu können.",
 		es = "Los títulos se rastrean en toda tu cuenta, sin embargo, tu personaje individual debe calificar para ciertos títulos para poder usarse en ese personaje.",
 		mx = "Los títulos se rastrean en toda tu cuenta, sin embargo, tu personaje individual debe calificar para ciertos títulos para poder usarlos en ese personaje.",
