@@ -80,7 +80,7 @@ root(ROOTS.Instances, {
 					altQuests = { 4023 },	-- A Taste of Flame
 					qg = 9459,	-- Cyrus Therepentous
 					coord = { 95.09, 31.56, MAP.BURNING_STEPPES },
-					cost = { { "i", 10575, 1 } },	-- Black Dragonflight Molt
+					cost = { { "i", 10575, 1 } },	-- 1x Black Dragonflight Molt
 					lvl = 52,
 				}),
 				q(4023, {	-- A Taste of Flame (1/2) (B)
@@ -106,7 +106,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/1 Encased Fiery Essence
 							provider = { "i", 11230 },	-- Encased Fiery Essence
-							cost = { { "i", 11231, 1 } },	-- Altered Black Dragonflight Molt
+							cost = { { "i", 11231, 1 } },	-- 1x Altered Black Dragonflight Molt
 							cr = 9016,	-- Bael'Gar
 						}),
 						i(12066),	-- Shaleskin Cape
@@ -208,35 +208,35 @@ root(ROOTS.Instances, {
 				q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					cost = { { "i", 11382, 1 } },	-- Blood of the Mountain
+					cost = { { "i", 11382, 1 } },	-- 1x Blood of the Mountain
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					cost = { { "i", 17012, 2 } },	-- Core Leather
+					cost = { { "i", 17012, 2 } },	-- 2x Core Leather
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					cost = { { "i", 11370, 10 } },	-- Dark Iron Ore
+					cost = { { "i", 11370, 10 } },	-- 10x Dark Iron Ore
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					cost = { { "i", 17010, 1 } },	-- Fiery Core
+					cost = { { "i", 17010, 1 } },	-- 1x Fiery Core
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					cost = { { "i", 17011, 1 } },	-- Lava Core
+					cost = { { "i", 17011, 1 } },	-- 1x Lava Core
 					repeatable = true,
 					lvl = 60,
 				}),
@@ -425,7 +425,7 @@ root(ROOTS.Instances, {
 				}),
 				q(4295, {	-- Rocknot's Ale
 					qg = 9503,	-- Private Rocknot
-					cost = { { "i", 11325, 2 } },	-- Dark Iron Ale Mug
+					cost = { { "i", 11325, 2 } },	-- 2x Dark Iron Ale Mug
 					repeatable = true,
 				}),
 				q(6402, {	-- Stormwind Rendezvous
@@ -533,7 +533,7 @@ root(ROOTS.Instances, {
 						}),
 						objective(3, {	-- 0/1 Nagmara's Filled Vial
 							provider = { "i", 11413 },	-- Nagmara's Filled Vial
-							cost = { { "i", 11412, 1 } },	-- Nagmara's Vial
+							cost = { { "i", 11412, 1 } },	-- 1x Nagmara's Vial
 							coord = { 31.0, 49.0, MAP.UNGORO_CRATER },
 						}),
 						i(11962),	-- Manacle Cuffs
@@ -1017,7 +1017,7 @@ root(ROOTS.Instances, {
 				}),
 				n(9476, {	-- Watchman Doomgrip
 					description = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
-					cost = { { "i", 11078, 12 } },	-- Relic Coffer Key
+					cost = { { "i", 11078, 12 } },	-- 12x Relic Coffer Key
 					groups = {
 						o(160836, {	-- Relic Coffer
 							description = "Relic Coffer Keys can drop from any Dark Iron mob in the instance.",
@@ -1064,7 +1064,7 @@ root(ROOTS.Instances, {
 					groups = {
 						o(160845, {	-- Dark Coffer
 							sharedDescription = "Is used to turn in Librams.",
-							cost = { { "i", 11197, 1 } },	-- Dark Keeper Key
+							cost = { { "i", 11197, 1 } },	-- 1x Dark Keeper Key
 							groups = {
 								i(11752),	-- Black Blood of the Tormented
 								i(11751),	-- Burning Essence

@@ -167,7 +167,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 					{ 55.6, 69.9, MAP.TIRISFAL_GLADES },
 					{ 51.4, 59.0, MAP.HILLSBRAD_FOOTHILLS },
 				},
-				cost = { { "i", 20605, 1 } },	-- Rotten Eggs
+				cost = { { "i", 20605, 1 } },	-- 1x Rotten Eggs
 				races = HORDE_ONLY,
 				isYearly = true,
 				lvl = 30,

@@ -79,7 +79,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 10, 19 },
 			}),
@@ -87,7 +87,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -95,7 +95,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -103,7 +103,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -111,7 +111,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -119,7 +119,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_1,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -128,7 +128,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = { 10, 19 },
@@ -138,7 +138,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = { 20, 29 },
@@ -148,7 +148,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = { 30, 39 },
@@ -158,7 +158,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = { 40, 49 },
@@ -168,7 +168,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = { 50, 59 },
@@ -178,7 +178,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = HORDE_BATTLE_FOR_WSG_TIER_2,
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = { 60, 69 },
@@ -187,7 +187,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 10, 19 },
 			}),
@@ -195,7 +195,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -203,7 +203,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -211,7 +211,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -219,7 +219,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -227,7 +227,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -236,7 +236,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = { 10, 19 },
@@ -246,7 +246,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = { 20, 29 },
@@ -256,7 +256,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = { 30, 39 },
@@ -266,7 +266,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = { 40, 49 },
@@ -276,7 +276,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = { 50, 59 },
@@ -286,7 +286,7 @@ battleground(MAP.WARSONG_GULCH, {
 				altQuests = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+				cost = { { "i", 20558, 3 } },	-- 3x Warsong Gulch Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = { 60, 69 },

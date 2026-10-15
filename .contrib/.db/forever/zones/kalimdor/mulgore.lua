@@ -554,7 +554,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				groups = {
 					objective(1, {	-- 0/6 Broken Tools
 						provider = { "i", 4703 },	-- Broken Tools
-						cost = { { "i", 4702, 1 } },	-- Prospector's Pick
+						cost = { { "i", 4702, 1 } },	-- 1x Prospector's Pick
 						coord = { 34.0, 46.0, MAP.MULGORE },
 						crs = {
 							2990,	-- Bael'dun Appraiser

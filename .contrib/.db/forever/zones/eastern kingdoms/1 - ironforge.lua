@@ -56,56 +56,56 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(7809, {	-- A Donation of Mageweave
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
+				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7804, {	-- A Donation of Mageweave
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
+				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7811, {	-- A Donation of Runecloth
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = { { "i", 14047, 60 } },	-- Runecloth
+				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7805, {	-- A Donation of Runecloth
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = { { "i", 14047, 60 } },	-- Runecloth
+				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7808, {	-- A Donation of Silk
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = { { "i", 4306, 60 } },	-- Silk Cloth
+				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7803, {	-- A Donation of Silk
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = { { "i", 4306, 60 } },	-- Silk Cloth
+				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7802, {	-- A Donation of Wool
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				cost = { { "i", 2592, 60 } },	-- Wool Cloth
+				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
 			q(7807, {	-- A Donation of Wool
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				cost = { { "i", 2592, 60 } },	-- Wool Cloth
+				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
@@ -166,12 +166,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/6 Filled Cursed Ooze Jar
 						provider = { "i", 11947 },	-- Filled Cursed Ooze Jar
-						cost = { { "i", 11914, 1 } },	-- Empty Cursed Ooze Jar
+						cost = { { "i", 11914, 1 } },	-- 1x Empty Cursed Ooze Jar
 						cr = 7086,	-- Cursed Ooze
 					}),
 					objective(2, {	-- 0/6 Filled Tainted Ooze Jar
 						provider = { "i", 11949 },	-- Filled Tainted Ooze Jar
-						cost = { { "i", 11948, 1 } },	-- Empty Tainted Ooze Jar
+						cost = { { "i", 11948, 1 } },	-- 1x Empty Tainted Ooze Jar
 						cr = 7092,	-- Tainted Ooze
 					}),
 					i(11912, {	-- Package of Empty Ooze Containers
@@ -190,7 +190,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/10 Filled Pure Sample Jar
 						provider = { "i", 11954 },	-- Filled Pure Sample Jar
-						cost = { { "i", 11953, 1 } },	-- Empty Pure Sample Jar
+						cost = { { "i", 11953, 1 } },	-- 1x Empty Pure Sample Jar
 						crs = {
 							6556,	-- Muculent Slime
 							6557,	-- Primal Ooze
@@ -208,7 +208,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
 				maxReputation = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
-				cost = { { "i", 14047, 20 } },	-- Runecloth
+				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 50,
@@ -218,7 +218,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				maxReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-				cost = { { "i", 14047, 20 } },	-- Runecloth
+				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 50,
@@ -317,7 +317,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(7342, {	-- Arrows Are For Sissies
 				qg = 14183,	-- Artilleryman Sheldonore
 				coord = { 19.6, 52.2, MAP.IRONFORGE },
-				cost = { { "i", 15997, 200 } },	-- Thorium Shells
+				cost = { { "i", 15997, 200 } },	-- 200x Thorium Shells
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 52,
@@ -390,8 +390,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 48.6, 43.0, MAP.IRONFORGE },
 				maps = { MAP.REDRIDGE_MOUNTAINS },
 				cost = {
-					{ "i", 2857, 4 },	-- Runed Copper Belt
-					{ "i", 6214, 4 },	-- Heavy Copper Maul
+					{ "i", 2857, 4 },	-- 4x Runed Copper Belt
+					{ "i", 6214, 4 },	-- 4x Heavy Copper Maul
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 60,
@@ -487,8 +487,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 71.9, 51.9, MAP.IRONFORGE },
 				maps = { MAP.STONETALON_MOUNTAINS },
 				cost = {
-					{ "i", 2455, 4 },	-- Minor Mana Potion
-					{ "i", 2458, 2 },	-- Elixir of Minor Fortitude
+					{ "i", 2455, 4 },	-- 4x Minor Mana Potion
+					{ "i", 2458, 2 },	-- 2x Elixir of Minor Fortitude
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 17,
@@ -661,9 +661,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 				coord = { 69.8, 50.2, MAP.IRONFORGE },
 				cost = {
-					{ "i", 4392, 2 },	-- Advanced Target Dummy
-					{ "i", 4407, 1 },	-- Accurate Scope
-					{ "i", 10559, 6 },	-- Mithril Tube
+					{ "i", 4392, 2 },	-- 2x Advanced Target Dummy
+					{ "i", 4407, 1 },	-- 1x Accurate Scope
+					{ "i", 10559, 6 },	-- 6x Mithril Tube
 				},
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
@@ -693,8 +693,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 48.5, 43.0, MAP.IRONFORGE },
 				maps = { MAP.LOCH_MODAN },
 				cost = {
-					{ "i", 2845, 6 },	-- Copper Axe
-					{ "i", 2851, 6 },	-- Copper Chain Belt
+					{ "i", 2845, 6 },	-- 6x Copper Axe
+					{ "i", 2851, 6 },	-- 6x Copper Chain Belt
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 30,
@@ -719,7 +719,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Overspark's Signed Pledge
 						provider = { "i", 11283 },	-- Overspark's Signed Pledge
-						cost = { { "i", 10793, 1 } },	-- Overspark's Pledge of Secrecy
+						cost = { { "i", 10793, 1 } },	-- 1x Overspark's Pledge of Secrecy
 					}),
 				},
 			}),
@@ -791,7 +791,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 1647,	-- The Tome of Divinity (2/8)
 				qg = 6175,	-- John Turner
 				coord = { 27.6, 70.6, MAP.IRONFORGE },
-				cost = { { "i", 2589, 10 } },	-- Linen Cloth
+				cost = { { "i", 2589, 10 } },	-- 10x Linen Cloth
 				races = { DWARF },
 				classes = { PALADIN },
 				lvl = 12,

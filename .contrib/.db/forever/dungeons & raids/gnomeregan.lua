@@ -4,7 +4,7 @@
 
 local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	description = "This is located outside of the instance just to the north of both the elevator or the transporter.",
-	cost = { { "i", 9279, 1 } },	-- White Punch Card
+	cost = { { "i", 9279, 1 } },	-- 1x White Punch Card
 	timeline = { REMOVED_5_0_4 },	-- guessed from WH comments
 	groups = {
 		i(9280),	-- Yellow Punch Card
@@ -12,7 +12,7 @@ local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 });
 local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
 	description = "This is located in the bottom of the Dormitories.",
-	cost = { { "i", 9280, 1 } },	-- Yellow Punch Card
+	cost = { { "i", 9280, 1 } },	-- 1x Yellow Punch Card
 	groups = {
 		i(9282),	-- Blue Punch Card
 		i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
@@ -22,14 +22,14 @@ local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
 });
 local MATRIX_PUNCHOGRAPH_C = o(142476, {	-- Matrix Punchograph 3005-C
 	description = "This is located at the bottom of the platform in the Engineering Labs.",
-	cost = { { "i", 9282, 1 } },	-- Blue Punch Card
+	cost = { { "i", 9282, 1 } },	-- 1x Blue Punch Card
 	groups = {
 		i(9281),	-- Red Punch Card
 	},
 });
 local MATRIX_PUNCHOGRAPH_D = o(142696, {	-- Matrix Punchograph 3005-D
 	description = "This is located in the Workshop below Crowd Pummeler.",
-	cost = { { "i", 9281, 1 } },	-- Red Punch Card
+	cost = { { "i", 9281, 1 } },	-- 1x Red Punch Card
 	groups = {
 		i(9316),	-- Prismatic Punch Card
 		i(4413, {	-- Schematic: Discombobulator Ray (RECIPE!)
@@ -249,20 +249,20 @@ root(ROOTS.Instances, {
 				header(HEADERS.Object, 142487, {	-- The Sparklematic 5200
 					q(2951, {	-- The Sparklematic 5200!
 						provider = { "o", 142487 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 					}),
 					q(4601, {	-- The Sparklematic 5200!
 						provider = { "o", 15084 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 					}),
 					q(4602, {	-- The Sparklematic 5200!
 						provider = { "o", 15085 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 					}),
 					q(2952, {	-- The Sparklematic 5200!
 						sourceQuest = 2951,	-- The Sparklematic 5200!
 						provider = { "o", 142487 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
@@ -270,7 +270,7 @@ root(ROOTS.Instances, {
 					q(4605, {	-- The Sparklematic 5200!
 						sourceQuest = 4601,	-- The Sparklematic 5200!
 						provider = { "o", 15084 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
@@ -278,7 +278,7 @@ root(ROOTS.Instances, {
 					q(4606, {	-- The Sparklematic 5200!
 						sourceQuest = 4602,	-- The Sparklematic 5200!
 						provider = { "o", 15085 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
@@ -286,7 +286,7 @@ root(ROOTS.Instances, {
 					q(2953, {	-- More Sparklematic Action
 						sourceQuest = 2952,	-- The Sparklematic 5200!
 						provider = { "o", 142487 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						repeatable = true,
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
@@ -295,7 +295,7 @@ root(ROOTS.Instances, {
 					q(4603, {	-- More Sparklematic Action
 						sourceQuest = 4605,	-- The Sparklematic 5200!
 						provider = { "o", 15084 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						repeatable = true,
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
@@ -304,7 +304,7 @@ root(ROOTS.Instances, {
 					q(4604, {	-- More Sparklematic Action
 						sourceQuest = 4606,	-- The Sparklematic 5200!
 						provider = { "o", 15085 },	-- The Sparklematic 5200
-						cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+						cost = { { "i", 9308, 1 } },	-- 1x Grime-Encrusted Object
 						repeatable = true,
 						groups = {
 							i(9363),	-- Sparklematic-Wrapped Box
@@ -377,7 +377,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/1 Full Leaden Collection Phial
 							provider = { "i", 9284 },	-- Full Leaden Collection Phial
-							cost = { { "i", 9283, 1 } },	-- Empty Leaden Collection Phial
+							cost = { { "i", 9283, 1 } },	-- 1x Empty Leaden Collection Phial
 							cr = 6329,	-- Irradiated Pillager
 						}),
 					},
@@ -387,9 +387,9 @@ root(ROOTS.Instances, {
 					qg = 6826,	-- Talvash del Kissel
 					coord = { 36.2, 3.8, MAP.IRONFORGE },
 					cost = {
-						{ "i", 9362, 1 },	-- Brilliant Gold Ring
-						{ "i", 2842, 1 },	-- Silver Bar
-						{ "i", 1206, 1 },	-- Moss Agate
+						{ "i", 9362, 1 },	-- 1x Brilliant Gold Ring
+						{ "i", 2842, 1 },	-- 1x Silver Bar
+						{ "i", 1206, 1 },	-- 1x Moss Agate
 						{ "g", 3000 },	-- 30s
 					},
 					races = ALLIANCE_ONLY,
@@ -446,9 +446,9 @@ root(ROOTS.Instances, {
 					qg = 3412,	-- Nogg <Expert Engineer>
 					coord = { 75.8, 25.2, MAP.ORGRIMMAR },
 					cost = {
-						{ "i", 9362, 1 },	-- Brilliant Gold Ring
-						{ "i", 2842, 1 },	-- Silver Bar
-						{ "i", 1206, 1 },	-- Moss Agate
+						{ "i", 9362, 1 },	-- 1x Brilliant Gold Ring
+						{ "i", 2842, 1 },	-- 1x Silver Bar
+						{ "i", 1206, 1 },	-- 1x Moss Agate
 						{ "g", 3000 },	-- 30s
 					},
 					races = HORDE_ONLY,
@@ -541,7 +541,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/1 High Potency Radioactive Fallout
 							provider = { "i", 9365 },	-- High Potency Radioactive Fallout
-							cost = { { "i", 9364, 1 } },	-- Heavy Leaden Collection Phial
+							cost = { { "i", 9364, 1 } },	-- 1x Heavy Leaden Collection Phial
 							cr = 6219,	-- Corrosive Lurker
 						}),
 					},

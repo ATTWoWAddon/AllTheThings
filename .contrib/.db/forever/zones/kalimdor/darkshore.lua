@@ -69,7 +69,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					objective(1, {	-- 0/1 Moonwell Water Tube
 						provider = { "i", 14339 },	-- Moonwell Water Tube
 						coord = { 37.0, 43.0, MAP.DARKSHORE },
-						cost = { { "i", 14338, 1 } },	-- Empty Water Tube
+						cost = { { "i", 14338, 1 } },	-- 1x Empty Water Tube
 					}),
 				},
 			}),
@@ -365,7 +365,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(2178, {	-- Easy Strider Living
 				qg = 3702,	-- Alanndarian Nightsong
 				coord = { 37.7, 40.7, MAP.DARKSHORE },
-				cost = { { "i", 5469, 5 } },	-- Strider Meat
+				cost = { { "i", 5469, 5 } },	-- 5x Strider Meat
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -472,7 +472,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 6122,	-- The Principal Source [A]
 				qg = 3702,	-- Alanndarian Nightsong
 				coord = { 37.6, 40.6, MAP.DARKSHORE },
-				cost = { { "i", 2449, 5 } },	-- Earthroot
+				cost = { { "i", 2449, 5 } },	-- 5x Earthroot
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
 				lvl = 14,
@@ -712,10 +712,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 						},
 						coord = { 52.5, 33.5, MAP.DARKSHORE },
 						cost = {
-							{ "i", 12347, 1 },	-- Filled Cleansing Bowl
-							{ "i", 12341, 1 },	-- Blackwood Fruit Sample
-							{ "i", 12342, 1 },	-- Blackwood Grain Sample
-							{ "i", 12343, 1 },	-- Blackwood Nut Sample
+							{ "i", 12347, 1 },	-- 1x Filled Cleansing Bowl
+							{ "i", 12341, 1 },	-- 1x Blackwood Fruit Sample
+							{ "i", 12342, 1 },	-- 1x Blackwood Grain Sample
+							{ "i", 12343, 1 },	-- 1x Blackwood Nut Sample
 						},
 						cr = 10373,	-- Xabraxxis
 					}),
@@ -753,7 +753,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					objective(1, {	-- 0/1 Cliffspring River Sample
 						provider = { "i", 12349 },	-- Cliffspring River Sample
 						coord = { 50.76, 25.56, MAP.DARKSHORE },
-						cost = { { "i", 12350, 1 } },	-- Empty Sampling Tube
+						cost = { { "i", 12350, 1 } },	-- 1x Empty Sampling Tube
 					}),
 				},
 			}),
@@ -777,7 +777,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				description = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
 				qg = 10216,	-- Gubber Blump
 				coord = { 36.1, 44.9, MAP.DARKSHORE },
-				cost = { { "i", 12238, 6 } },	-- Darkshore Grouper
+				cost = { { "i", 12238, 6 } },	-- 6x Darkshore Grouper
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
 				lvl = 10,

@@ -987,7 +987,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						lvl = 7,
 						groups = {
 							objective(1, {	-- 0/4 Venomtail Poison Sac
-								cost = { { "i", 4886, 4 } },	-- Venomtail Poison Sac
+								cost = { { "i", 4886, 4 } },	-- 4x Venomtail Poison Sac
 								crs = {
 									3226,	-- Corrupted Scorpid
 									5823,	-- Death Flayer
@@ -1558,7 +1558,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 		n(TREASURES, {
 			o(3239, {	-- Benedict's Chest
 				coord = { 59.3, 57.7, MAP.DUROTAR },
-				cost = { { "i", 4882, 1 } },	-- Benedict's Key
+				cost = { { "i", 4882, 1 } },	-- 1x Benedict's Key
 				groups = {
 					i(4881),	-- Aged Envelope
 				},

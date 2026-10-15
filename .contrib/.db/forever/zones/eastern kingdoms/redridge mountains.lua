@@ -253,10 +253,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					MAP.WESTFALL,
 				},
 				cost = {
-					{ "i", 1942, 1 },	-- Bottle of Moonshine
-					{ "i", 1941, 1 },	-- Cask of Merlot
-					{ "i", 1262, 1 },	-- Keg of Thunderbrew
-					{ "i", 1939, 1 },	-- Skin of Sweet Rum
+					{ "i", 1942, 1 },	-- 1x Bottle of Moonshine
+					{ "i", 1941, 1 },	-- 1x Cask of Merlot
+					{ "i", 1262, 1 },	-- 1x Keg of Thunderbrew
+					{ "i", 1939, 1 },	-- 1x Skin of Sweet Rum
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 12,
@@ -404,7 +404,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(150, {	-- Murloc Poachers
 				qg = 381,	-- Dockmaster Baren
 				coord = { 22.6, 47.4, MAP.REDRIDGE_MOUNTAINS },
-				cost = { { "i", 1468, 8 } },	-- Murloc Fin
+				cost = { { "i", 1468, 8 } },	-- 8x Murloc Fin
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
@@ -415,9 +415,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 343,	-- Chef Breanna
 				coord = { 17.6, 43.8, MAP.REDRIDGE_MOUNTAINS },
 				cost = {
-					{ "i", 2296, 5 },	-- Great Goretusk Snout
-					{ "i", 1080, 5 },	-- Tough Condor Meat
-					{ "i", 1081, 5 },	-- Crisp Spider Meat
+					{ "i", 2296, 5 },	-- 5x Great Goretusk Snout
+					{ "i", 1080, 5 },	-- 5x Tough Condor Meat
+					{ "i", 1081, 5 },	-- 5x Crisp Spider Meat
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 15,
@@ -964,26 +964,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					i(249888, {	-- Recipe: Calcified Smoothie (RECIPE!)
 						minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
-						cost = { { "c", 3402, 60 } },	-- x60 Merchant's Favor
+						cost = { { "c", 3402, 60 } },	-- 60x Merchant's Favor
 					}),
 					i(249887, {	-- Recipe: Mrrggl Smrrthle (RECIPE!)
-						cost = { { "c", 3402, 30 } },	-- x30 Merchant's Favor
+						cost = { { "c", 3402, 30 } },	-- 30x Merchant's Favor
 					}),
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(249886, {	-- Recipe: Slimy Smoothie (RECIPE!)
-						cost = { { "c", 3402, 30 } },	-- x30 Merchant's Favor
+						cost = { { "c", 3402, 30 } },	-- 30x Merchant's Favor
 					}),
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					i(249889, {	-- Recipe: Spicy Smoothie (RECIPE!)
 						minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
-						cost = { { "c", 3402, 60 } },	-- x60 Merchant's Favor
+						cost = { { "c", 3402, 60 } },	-- 60x Merchant's Favor
 					}),
 					i(249885, {	-- Recipe: Venomous Smoothie (RECIPE!)
-						cost = { { "c", 3402, 30 } },	-- x30 Merchant's Favor
+						cost = { { "c", 3402, 30 } },	-- 30x Merchant's Favor
 					}),
 					i(249890, {	-- Recipe: Wicked Smoothie (RECIPE!)
 						minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
-						cost = { { "c", 3402, 90 } },	-- x90 Merchant's Favor
+						cost = { { "c", 3402, 90 } },	-- 90x Merchant's Favor
 					}),
 				},
 			}),
@@ -1012,15 +1012,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					i(270888, {	-- Advertising License Application
 						minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
-						cost = { { "c", 3402, 1200 } },	-- x1200 Merchant's Favor
+						cost = { { "c", 3402, 1200 } },	-- 1200x Merchant's Favor
 					}),
 					i(262765, {	-- Azeroth Commerce Authority Tabard
 						minReputation = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
-						cost = { { "c", 3402, 200 } },	-- x200 Merchant's Favor
+						cost = { { "c", 3402, 200 } },	-- 200x Merchant's Favor
 					}),
 					i(284664, {	-- Packmule Treat
 						minReputation = { 2586, REVERED },	-- Azeroth Commerce Authority, Revered.
-						cost = { { "c", 3402, 1500 } },	-- x1500 Merchant's Favor
+						cost = { { "c", 3402, 1500 } },	-- 1500x Merchant's Favor
 					}),
 				},
 			}),
