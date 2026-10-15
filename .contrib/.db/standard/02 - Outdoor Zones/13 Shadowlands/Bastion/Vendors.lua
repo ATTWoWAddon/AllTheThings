@@ -9,6 +9,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 52.2, 47.0, BASTION },
 				["groups"] = bubbleDownClassicRep(FACTION_THE_ASCENDED, {
 					{		-- Neutral
+						i(284538, {	-- Anima-Powered Kyrian Oven (DECOR!)
+							["cost"] = { { "c", ANIMA, 200 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
 						i(190644, {	-- Vessel of Profound Possibilities (CI!)
 							["sourceAchievement"] = 14834,	-- Bound with Purpose
 							["timeline"] = { ADDED_9_2_0 },
@@ -47,12 +51,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}, {	-- Revered
 						i(184410),	-- Aspirant's Stretcher (TOY!)
 						i(184734),	-- Bracers of Regret
+						i(284548, {	-- Ceremonial Kyrian Standard (DECOR!)
+							["cost"] = { { "c", ANIMA, 200 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
 						i(180857, {	-- Goldenpaw Kit (PET!)
 							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
 						i(184732),	-- Manacles of Burden
 						i(183243, {	-- Memory of the Arbiter's Judgment
 							["modID"] = 14,
+						}),
+						i(284550, {	-- Ornate Kyrian Glass Platform (DECOR!)
+							["cost"] = { { "c", ANIMA, 500 } },
+							["timeline"] = { ADDED_12_1_5 },
 						}),
 						i(183103),	-- Technique: Contract: The Ascended (RECIPE!)
 						i(184733),	-- Wristclamps of Remorse
@@ -72,6 +84,75 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(175574, {	-- Angler Danica <Fishing Supplies>
 				["coord"] = { 49.6, 63.2, BASTION },
 				["groups"] = { i(180136) },	-- The Brokers Angle'r
+			}),
+			n(274668, {	-- Curator Ilaros <Decor Specialist>
+				["coord"] = { 52.4, 47.0, BASTION },
+				["timeline"] = { ADDED_12_1_5 },
+				["groups"] = {
+					i(284548, {	-- Ceremonial Kyrian Standard (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284524, {	-- Elysian Bulbflower (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284510, {	-- Elysian Heart-Lotus (DECOR!)
+						["cost"] = { { "c", ANIMA, 500 } },
+					}),
+					i(284536, {	-- Elysian Skyfrond (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284520, {	-- Hanging Elysian Skyvy (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284542, {	-- Kyrian Steward Effigy (DECOR!)
+						["cost"] = { { "c", ANIMA, 300 } },
+					}),
+					i(284544, {	-- Kyrian Waymarker (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284460, {	-- Kyrian Waymarker Plaque (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284522, {	-- Lush Elysian Bellflower Bush (DECOR!)
+						["cost"] = { { "c", ANIMA, 500 } },
+					}),
+					i(284526, {	-- Lush Elysian Lily (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284508, {	-- Lush Elysian Lotus (DECOR!)
+						["cost"] = { { "c", ANIMA, 500 } },
+					}),
+					i(284540, {	-- Narrow Kyrian Drapes (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284532, {	-- Radiant Elysian Water Lily (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284546, {	-- Runic Kyrian Reliquary (DECOR!)
+						["cost"] = { { "c", ANIMA, 500 } },
+					}),
+					i(284514, {	-- Sparse Elysian Pondweed (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284512, {	-- Verdant Elysian Crownblossom (DECOR!)
+						["cost"] = { { "c", ANIMA, 500 } },
+					}),
+					i(284534, {	-- Windswept Elysian Grass (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284518, {	-- Windswept Elysian Shrub (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284516, {	-- Windswept Elysian Skyplume (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+					i(284528, {	-- Windswept Elysian Willow (DECOR!)
+						["cost"] = { { "c", ANIMA, 500 } },
+					}),
+					i(284530, {	-- Winged Elysian Spiralbloom (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+					}),
+				},
 			}),
 			n(171526, {	-- Kobri <Refreshments>
 				["coord"] = { 52.6, 47.4, BASTION },

@@ -6,7 +6,7 @@ local VEILED_ARGUNITE = 1508;
 
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+		m(ARGUS, {
 			m(THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
 				["icon"] = 1586383,
 				["lore"] = "For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.",
@@ -199,9 +199,7 @@ root(ROOTS.Zones, {
 							["sourceQuests"] = { 49143 },	-- Essence of the Light Mother
 							["provider"] = { "n", 126307 },	-- Prophet Velen
 							["coord"] = { 46.0, 36.7, THE_VINDICAAR_KROKUUN_UPPER },
-							["groups"] = {
-								i(152593),	-- Essence of Light (QI!)
-							},
+							["qi"] = 152593,	-- Essence of Light (QI!)
 						}),
 						q(48560, {	-- An Offering of Shadow
 							["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
@@ -215,7 +213,7 @@ root(ROOTS.Zones, {
 								{ 52.0, 51.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
 							},
-							["groups"] = { i(152594) },	-- Essence of Shadow (QI!)
+							["qi"] = 152594,	-- Essence of Shadow (QI!)
 						}),
 						q(49143, {	-- Essence of the Light Mother
 							["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
@@ -259,7 +257,7 @@ root(ROOTS.Zones, {
 								{ 39.4, 25.1, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 							["isWeekly"] = true,
-							["groups"] = { i(153014) },	-- Pristine Argunite (QI!)
+							["qi"] = 153014,	-- Pristine Argunite (QI!)
 						}),
 						q(48636, {	-- Fueling the Antoran Campaign
 							["sourceQuests"] = { 48912 },	-- Supplying the Antoran Campaign
@@ -328,9 +326,7 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 							["coord"] = { 43.3, 23.2, THE_VINDICAAR_KROKUUN_UPPER },
 							["lvl"] = 45,
-							["groups"] = {
-								i(147906),	-- Fel Heart of Argus (QI!)
-							},
+							["qi"] = 147906,	-- Fel Heart of Argus (QI!)
 						}),
 						q(46815, {	-- Eredath, Jewel of Argus
 							["sourceQuests"] = { 48081 },	-- A Floating Ruin
@@ -369,7 +365,8 @@ root(ROOTS.Zones, {
 								{ 50.7, 51.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
 							},
-							["groups"] = { i(151090) },	-- The Crest of Knowledge (QI!)
+							["qi"] = 151090,	-- The Crest of Knowledge (QI!)
+							["groups"] = { i(282148, { ["timeline"] = { ADDED_12_1_5 } }) },	-- Replica Crown of the Triumvirate (DECOR!)
 						}),
 						q(48200, {	-- Securing a Foothold
 							["sourceQuests"] = { 48199 },	-- The Burning Heart
@@ -523,6 +520,62 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(VENDORS, {
+						n(127518, {	-- Adjutant Vortus <Decor Specialist>
+							["coords"] = {
+								{ 32.2, 66.6, THE_VINDICAAR_KROKUUN_UPPER },
+								{ 34.9, 57.5, THE_VINDICAAR_EREDATH_UPPER },
+								{ 56.3, 77.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+							},
+							["groups"] = sharedData({
+								["timeline"] = { ADDED_12_1_5 },
+							}, {
+								i(282154, {	-- Amethyst Argunite Crystal (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+								}),
+								i(282138, {	-- Carved Argunite Supply (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+								}),
+								i(282152, {	-- Celadon Argunite Crystal (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+								}),
+								i(282162, {	-- Ceremonial Lightforged Standard (DECOR!)
+									["cost"] = {
+										{ "g", 1000 },	-- 1000g
+										{ "c", ORDER_RESOURCES, 500 },
+									},
+								}),
+								i(282024, {	-- Decorative Lightforged Holo-Screen (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+								}),
+								i(282150, {	-- Golden Argunite Crystal (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+								}),
+								i(282115, {	-- Lightforged Holo-Barricade (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+								}),
+								i(282117, {	-- Lightforged Holo-Parapet (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+								}),
+								i(282119, {	-- Lightforged Holo-Shield (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+								}),
+								i(282113, {	-- Lightforged Holo-Tower (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+								}),
+								i(282136, {	-- Raw Argunite Supply (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+								}),
+								i(282148, {	-- Replica Crown of the Triumvirate (DECOR!)
+									["cost"] = { { "c", ORDER_RESOURCES, 500 } },
+								}),
+								i(281682, {	-- Shielded Lightforged Pylon (DECOR!)
+									["cost"] = {
+										{ "g", 700 },	-- 700g
+										{ "c", ORDER_RESOURCES, 900 },
+									},
+								}),
+							}),
+						}),
 						n(129674, {	-- Maras <Primal Sargerite Trader>
 							["coords"] = {
 								{ 57.0, 66.0, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
@@ -557,6 +610,62 @@ root(ROOTS.Zones, {
 							},
 							["groups"] = bubbleDownClassicRep(FACTION_ARMY_OF_THE_LIGHT, {
 								{		-- Neutral
+									i(282134, {	-- Argunite Crystal Storage (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 700 },	-- 700g
+											{ "c", ORDER_RESOURCES, 300 },
+										},
+									}),
+									i(282128, {	-- Argunite Sconce (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 500 },	-- 500g
+											{ "c", ORDER_RESOURCES, 250 },
+										},
+									}),
+									i(282122, {	-- Gilded Stonework Altar (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 1000 },	-- 1000g
+											{ "c", ORDER_RESOURCES, 500 },
+										},
+									}),
+									i(282142, {	-- Gleaming Lightforged Grindstone (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 500 },	-- 500g
+											{ "c", ORDER_RESOURCES, 250 },
+										},
+									}),
+									i(282111, {	-- Hanging Lightforged Standard (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 1000 },	-- 1000g
+											{ "c", ORDER_RESOURCES, 500 },
+										},
+									}),
+									i(282146, {	-- Lightforged Control Console (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 700 },	-- 700g
+											{ "c", ORDER_RESOURCES, 300 },
+										},
+									}),
+									i(282156, {	-- Reinforced Empyrium Tile (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 300 },	-- 300g
+											{ "c", ORDER_RESOURCES, 200 },
+										},
+									}),
+									i(282130, {	-- Standing Argunite Lamp (DECOR!)
+										["timeline"] = { ADDED_12_1_5 },
+										["cost"] = {
+											{ "g", 300 },	-- 300g
+											{ "c", ORDER_RESOURCES, 200 },
+										},
+									}),
 								}, {	-- Friendly
 									i(152726),	-- Design: Mass Prospect Empyrium (RECIPE!)
 									i(153032),	-- Technique: Glyph of the Lightspawn (RECIPE!)
@@ -575,7 +684,9 @@ root(ROOTS.Zones, {
 								}, {	-- Exalted
 									i(152399),	-- Army of the Light Tabard
 									i(153023),	-- Lightforged Augment Rune
-									i(152788),	-- Lightforged Warframe (MOUNT!)
+									i(152788, {	-- Lightforged Warframe (MOUNT!)
+										["cost"] = 5000000000,	-- 500,000g
+									}),
 								},
 							}),
 						}),
@@ -764,7 +875,7 @@ root(ROOTS.Zones, {
 					}),
 				},
 			}),
-		})),
+		}),
 	}),
 });
 

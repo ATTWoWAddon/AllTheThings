@@ -2040,7 +2040,7 @@ q(958,{coords={
 qo(1,{crs={2176,2177,2178},providers={{"i",5360}}}),
 s(158219,5612,{b=1,f=5,loc=43})}}),
 q(990,{coords={
-[1439]={{39.3,43.5}}},description="The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",lvl=15,maps={1440},qgs={3694},r=2,sourceQuests={994,995}}),
+[1439]={{39.3,43.5}}},description="The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",lvl=15,maps={1440},qgs={3694},r=2}),
 q(4740,{coords={
 [1439]={{37.2,44.2}}},lvl=15,providers={{"o",175320}},r=2,g={
 qo(1,{coords={

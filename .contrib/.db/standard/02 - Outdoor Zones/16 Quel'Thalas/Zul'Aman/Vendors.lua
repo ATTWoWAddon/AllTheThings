@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["groups"] = sharedData({
 					["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
 				}, {
+					i(264718, { ["timeline"] = { ADDED_12_1_5 } }),	-- Amani Fishing Canoe (DECOR!)
 					i(256925),	-- Amani Spearhunter's Spit (DECOR!)
 					i(264255),	-- Amani Trophy Frame (DECOR!)
 					i(264334),	-- Amani War Drum (DECOR!)
@@ -21,9 +22,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(264480),	-- Greenvine Amani Tapestry (DECOR!)
 					i(253469),	-- Ritual-Cursed Sarcophagus (DECOR!)
 					i(264479),	-- Skyweave Amani Tapestry (DECOR!)
-					i(278691, {	-- Twilight Brazier (DECOR!)
-						["timeline"] = { ADDED_12_1_0 },
+					i(279067, {	-- Symbol of Halazzi, Loa of the Hunt (DECOR!)
+						["timeline"] = { ADDED_12_1_5 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),
+					i(278691, { ["timeline"] = { ADDED_12_1_0 } }),	-- Twilight Brazier (DECOR!)
 					i(255648, {	-- Zul'Aman Ancestral Fountain (DECOR!)
 						["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
 					}),

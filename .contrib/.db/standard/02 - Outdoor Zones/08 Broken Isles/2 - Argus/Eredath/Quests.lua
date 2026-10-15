@@ -11,9 +11,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 47219 },	-- A Vessel Made Ready
 						["provider"] = { "n", 121230 },	-- Alleria Windrunner
 						["coord"] = { 28.3, 47.0, EREDATH },
-						["groups"] = {
-							i(152602),	-- Remnant of Nhal'athoth (QI!)
-						},
+						["qi"] = 152602,	-- Remnant of Nhal'athoth (QI!)
 					}),
 					q(47856, {	-- Across the Universe
 						["sourceQuests"] = { 47855 },
@@ -50,9 +48,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 47238 },	-- The Seat of the Triumvirate
 						["provider"] = { "o", 271103 },	-- Prayer Effigy
 						["coord"] = { 46.7, 68.8, EREDATH },
-						["groups"] = {
-							i(147763),	-- Fragmented Prayers (QI!)
-						},
+						["qi"] = 147763,	-- Fragmented Prayers (QI!)
 					}),
 					q(47219, {	-- A Vessel Made Ready
 						["sourceQuests"] = {
@@ -88,16 +84,14 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 47686 },	-- Not-So-Humble Beginnings
 						["provider"] = { "n", 123413 },	-- Archmage Y'mera
 						["coord"] = { 59.5, 50.5, EREDATH },
-						["groups"] = {
-							i(151624),	-- Y'mera's Arcanocrystal (QI!)
-						},
+						["qi"] = 151624,	-- Y'mera's Arcanocrystal (QI!)
 					}),
 					q(46818, {	-- Defenseless and Afraid
 						["sourceQuests"] = { 46815 },	-- Eredath, Jewel of Argus
 						["provider"] = { "n", 120533 },	-- Prophet Velen
 						["coord"] = { 54.5, 78.0, EREDATH },
+						["qi"] = 152408,	-- Stolen Pylon Core (QI!)
 						["groups"] = {
-							i(152408),	-- Stolen Pylon Core (QI!)
 							i(153052),	-- Depleted Pylon Core
 						},
 					}),
@@ -167,17 +161,13 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 47686 },	-- Not-So-Humble Beginnings
 						["provider"] = { "n", 123413 },	-- Archmage Y'mera
 						["coord"] = { 59.5, 50.5, EREDATH },
-						["groups"] = {
-							i(151366),	-- Partially Digested Arcana (QI!)
-						},
+						["qi"] = 151366,	-- Partially Digested Arcana (QI!)
 					}),
 					q(46834, {	-- Khazaduum, First of His Name
 						["sourceQuests"] = { 46815 },	-- Eredath, Jewel of Argus
 						["provider"] = { "n", 120533 },	-- Prophet Velen
 						["coord"] = { 54.5, 78.0, EREDATH },
-						["groups"] = {
-							i(152407),	-- Argunite Keystone (QI!)
-						},
+						["qi"] = 152407,	-- Argunite Keystone (QI!)
 					}),
 					q(48668, {	-- Lightforged Beacon: City Center
 						["qg"] = 127083,	-- Artificer Andaara
@@ -284,9 +274,7 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = { "n", 121230 },	-- Alleria Windrunner
 						["coord"] = { 43.5, 67.5, EREDATH },
-						["groups"] = {
-							i(151563),	-- Hallowed Prayer Effigy (QI!)
-						},
+						["qi"] = 151563,	-- Hallowed Prayer Effigy (QI!)
 					}),
 					q(48445, {	-- The Ruins of Oronaar
 						["sourceQuests"] = { 48443 },	-- Supplying Krokuun

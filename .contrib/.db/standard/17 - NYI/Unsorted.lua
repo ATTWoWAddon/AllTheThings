@@ -5,9 +5,7 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
-			i(244349),	-- Ruined Amani Ritual Urn
 			i(244350),	-- Shattered Amani Ritual Urn
-			i(264486),	-- Brown Amani Tapestry
 			i(265331),	-- Draenei Holo-Junction
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
@@ -19,21 +17,14 @@ root(ROOTS.Unsorted, {
 			i(275733),	-- A Rat-Sized Portion of Mushroom
 			i(275734),	-- A Rat-Sized Portion of Honey
 			i(275756),	-- Living Heartsbane Cauldron
-			i(277876),	-- Sacrosanct Thirstspire
 			i(277879),	-- Whisperthorn Ritual Knife
 			i(277880),	-- Runic Moonbrand
 			i(277882),	-- Feral Gloombranch
 			i(277883),	-- Duskmantle Spiteglass
-			i(277885),	-- Veilweaver Trousers
-			i(277888),	-- Veil of the Feral Rite
 			i(277889),	-- Fanged Riftrazor
 			i(277890),	-- Wildwarden's Guise
-			i(277891),	-- Leviathan Bracerbands
 			i(277893),	-- Emberveil Ritual Knife
-			i(277895),	-- Veilweaver's Shadowgown
 			i(277896),	-- Bloodtide Hauberk
-			i(277898),	-- Duskhallow Vanguard Greaves
-			i(277899),	-- Fangwarden's Shardspine Bow
 			i(279396),	-- Timelost Saddle
 			i(280820),	-- Loa-Blessed Victory
 			i(280821),	-- Trail of Halazzi
@@ -81,7 +72,6 @@ root(ROOTS.Unsorted, {
 			i(281219),	-- Ensemble: Sauce Chef's Uniform
 			i(281220),	-- Ensemble: Head Chef's Uniform
 			i(281670),	-- Anima-Infused Dreamcatcher
-			i(282024),	-- Decorative Lightforged Holo-Screen
 			i(282051),	-- Simple Hallow's End Candle
 			i(282072),	-- Enchanted Hallow's End Candle
 			i(282075),	-- Heartsbane Candle
@@ -94,29 +84,11 @@ root(ROOTS.Unsorted, {
 			i(282095),	-- Ominous Heartsbane Banner
 			i(282098),	-- Elaborate Heartsbane Doom Catcher
 			i(282100),	-- Heartsbane Doom Catcher
-			i(282111),	-- Hanging Lightforged Standard
-			i(282113),	-- Lightforged Holo-Tower
-			i(282115),	-- Lightforged Holo-Barricade
-			i(282117),	-- Lightforged Holo-Parapet
-			i(282119),	-- Lightforged Holo-Shield
-			i(282122),	-- Gilded Stonework Altar
 			i(282124),	-- Gleaming Lightforge
 			i(282126),	-- Hanging Argunite Lamp
-			i(282128),	-- Argunite Sconce
-			i(282130),	-- Standing Argunite Lamp
 			i(282132),	-- Eredath Artisan's Workbench
-			i(282134),	-- Argunite Crystal Storage
-			i(282136),	-- Raw Argunite Supply
-			i(282138),	-- Carved Argunite Supply
 			i(282140),	-- Shimmering Lightforged Canister
-			i(282142),	-- Gleaming Lightforged Grindstone
 			i(282144),	-- Lightforged Recall Beacon
-			i(282146),	-- Lightforged Control Console
-			i(282148),	-- Replica Crown of the Triumvirate
-			i(282150),	-- Golden Argunite Crystal
-			i(282152),	-- Celadon Argunite Crystal
-			i(282154),	-- Amethyst Argunite Crystal
-			i(282156),	-- Reinforced Empyrium Tile
 			i(282158),	-- Decorative Lightweave Bolt
 			i(282164),	-- Eredath Worktable
 			i(282184),	-- Spidery Witch Hat
@@ -199,30 +171,22 @@ root(ROOTS.Unsorted, {
 			i(283271),	-- Blooming Celestial Dreamleaf
 			i(283273),	-- Fae Moonbough Table
 			i(283275),	-- Small Shimmering Moonvine
-			i(283277),	-- Wooden Vulpera Caravan
-			i(283279),	-- Damaged Nomad's Makeshift Barricade
 			i(283281),	-- Wildgrove Leaf Pile
 			i(283283),	-- Fae Moonbough Cocoon
 			i(283285),	-- Lush Wildgrove Fern
 			i(283287),	-- Nomad's Warped Water Gourd
-			i(283289),	-- Nomad's Steel Lantern
 			i(283291),	-- Nomad's Campfire Grill
 			i(283293),	-- Nomad's Serving Sundries
 			i(283295),	-- Long Red Vulpera Cushion
-			i(283297),	-- Vulpera Postbox
 			i(283299),	-- Nomad's Round Cushion
 			i(283301),	-- Fae Moonbough Scroll
 			i(283303),	-- Nomad's Steel Forge
-			i(283305),	-- Fortified Nomad's Makeshift Barricade
 			i(283307),	-- Nomad's Mortar and Pestle
 			i(283309),	-- Nomad's Covered Serving Bowl
 			i(283311),	-- Nomad's Serving Bowl
 			i(283313),	-- Nomad's Stone Pitcher
 			i(283315),	-- Nomad's Bowl Set
-			i(283317),	-- Reinforced Nomad's Makeshift Barricade
-			i(283319),	-- Vacant Buzzard Roost
 			i(283321),	-- Closed Vulpera Scroll
-			i(283323),	-- Nomad's Wooden Lamppost
 			i(283325),	-- Nomad's Worn Water Gourd
 			i(283327),	-- Nomad's Water Gourd
 			i(283329),	-- Nomad's Wooden Table
@@ -234,7 +198,6 @@ root(ROOTS.Unsorted, {
 			i(283341),	-- Dormant Wildseed
 			i(283343),	-- Ornate Vulpera Caravan
 			i(283345),	-- Hanging Wildseed
-			i(283365),	-- Caravan Smith's Anvil
 			i(283370),	-- Fae Moonbough Gate
 			i(283376),	-- Leaning Wildgrove Tree
 			i(283379),	-- Hanging Wildgrove Ivy
@@ -293,10 +256,6 @@ root(ROOTS.Unsorted, {
 			i(284032),	-- Frost Revenant's Gloves
 			i(284033),	-- Frost Revenant's Cloak
 			i(284034),	-- Ensemble: Frost Revenant's Guise of the Wight
-			i(284051),	-- Hexbearer's Pauldrons
-			i(284052),	-- Amani Effigy
-			i(284054),	-- Hexdrinker's Shoulders
-			i(284057),	-- Effigy of Corrosion
 			i(284106),	-- Nagrand Clover Cluster
 			i(284108),	-- Nagrand Wild Wheat
 			i(284110),	-- Young Sentinel Tree
@@ -312,13 +271,11 @@ root(ROOTS.Unsorted, {
 			i(284130),	-- Nagrand Heart Ivy
 			i(284132),	-- Skysong Sentinel Tree
 			i(284134),	-- Incineratus Grass Patch
-			i(284180),	-- Loa-Touched Deltoid
 			i(284182),	-- Loa-Touched Visage
 			i(284194),	-- Everbloom Forest Floor
 			i(284212),	-- Technique: Apple Bobbing Bucket
 			i(284213),	-- Pattern: Spidery Witch Hat
 			i(284216),	-- Mysterious Imported Piranha
-			i(284219),	-- Granite Ritual Cuirass
 			i(284223),	-- "Pride of Stormwind" Statue
 			i(284233),	-- Baker's Sapphire Tray
 			i(284234),	-- Baker's Emerald Tray
@@ -339,10 +296,8 @@ root(ROOTS.Unsorted, {
 			i(284260),	-- Overflowing Voidspire
 			i(284263),	-- Pattern: Beloved Murloc Plushie
 			i(284264),	-- "Gnoma Lisa" Painting
-			i(284357),	-- Ancient Amani Mural
 			i(284384),	-- Boralus Swill Bottle
 			i(284402),	-- Valdrakken Resupply Coin
-			i(284460),	-- Kyrian Waymarker Plaque
 			i(284462),	-- Arching Crimson Ivy
 			i(284464),	-- Twisted Crimson Root
 			i(284466),	-- Drustvar Glowcap Cluster
@@ -366,27 +321,6 @@ root(ROOTS.Unsorted, {
 			i(284502),	-- Maldraxxi Horned Beast Skull
 			i(284504),	-- Levitating Lich Library
 			i(284506),	-- Suspended Lich Scroll
-			i(284508),	-- Lush Elysian Lotus
-			i(284510),	-- Elysian Heart-Lotus
-			i(284512),	-- Verdant Elysian Crownblossom
-			i(284514),	-- Sparse Elysian Pondweed
-			i(284516),	-- Windswept Elysian Skyplume
-			i(284518),	-- Windswept Elysian Shrub
-			i(284520),	-- Hanging Elysian Skyvy
-			i(284522),	-- Lush Elysian Bellflower Bush
-			i(284524),	-- Elysian Bulbflower
-			i(284526),	-- Lush Elysian Lily
-			i(284528),	-- Windswept Elysian Willow
-			i(284530),	-- Winged Elysian Spiralbloom
-			i(284532),	-- Radiant Elysian Water Lily
-			i(284534),	-- Windswept Elysian Grass
-			i(284536),	-- Elysian Skyfrond
-			i(284538),	-- Anima-Powered Kyrian Oven
-			i(284540),	-- Narrow Kyrian Drapes
-			i(284542),	-- Kyrian Steward Effigy
-			i(284544),	-- Kyrian Waymarker
-			i(284548),	-- Ceremonial Kyrian Standard
-			i(284550),	-- Ornate Kyrian Glass Platform
 			i(284552),	-- Venthyr Alchemy Rack
 			i(284554),	-- Confessor's Anima Jar
 			i(284556),	-- Sinfall Arched Bookcase
@@ -397,8 +331,6 @@ root(ROOTS.Unsorted, {
 			i(284566),	-- Venthyr Fencepost
 			i(284568),	-- Sinfall Dining Table
 			i(284570),	-- Small Darkhaven Window
-			i(284576),	-- Chitin Plate
-			i(284578),	-- Preserved Stinger
 			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament

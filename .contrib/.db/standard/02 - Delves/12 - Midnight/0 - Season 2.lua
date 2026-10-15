@@ -267,6 +267,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				filter(QUEST_ITEMS, {
 					-- Currently unaware of objectIDs so treated just as reward
+					i(287078, { ["timeline"] = { ADDED_12_1_5 } }),	-- Ancient Amani Tablet (QS!)
 					i(274965),	-- Ancient Curio (Combat) (QI!/QS!)
 					i(274970),	-- Ancient Curio (Utility) (QI!/QS!)
 					i(277506),	-- Codex of the Soul Coilers (QS!)

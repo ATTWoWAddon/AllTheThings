@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=1.60.1.70338
+SET BUILD=1.60.1.70374
 
 @REM Download new file versions
 call :download Achievement
@@ -37,7 +37,7 @@ if not exist "%1.%BUILD%.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&useHotfixes"
 )
 exit /b
 
@@ -61,7 +61,7 @@ if not exist "%1.%BUILD%.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&useHotfixes"
 )
 exit /b
 
@@ -71,7 +71,7 @@ if not exist "%1.%2.%BUILD%.csv" (
 	if exist "%1.%2*.csv" (
 		del /Q "%1.%2*.csv"
 	)
-	curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&locale=%2"
+	curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&locale=%2&useHotfixes"
 )
 exit /b
 
@@ -81,7 +81,7 @@ if not exist "%1.%BUILD%.csv" (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%&useHotfixes"
 )
 exit /b
 

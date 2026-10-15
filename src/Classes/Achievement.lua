@@ -483,7 +483,9 @@ do
 				name = select(2, GetAchievementInfo(achievementID)) or "#"..criteriaID
 			end
 		end
-		app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID,name)
+		if app.Debugging then
+			app.report("Failed to retrieve criteria name",achievementID,t.criteriaID,name)
+		end
 		if not t.CanRetry then
 			return name or UNKNOWN
 		end

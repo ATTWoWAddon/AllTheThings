@@ -15,11 +15,35 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						i(163211, {	-- Akunda's Firesticks (TOY!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
+						i(283365, {	-- Caravan Smith's Anvil (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 150 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
+						i(283279, {	-- Damaged Nomad's Makeshift Barricade (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
 						i(159753, {	-- Desert Flute (TOY!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(160529, {	-- Dune Shroud
 							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(283305, {	-- Fortified Nomad's Makeshift Barricade (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
+						i(283289, {	-- Nomad's Steel Lantern (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 50 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
+						i(283323, {	-- Nomad's Wooden Lamppost (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
+						i(283317, {	-- Reinforced Nomad's Makeshift Barricade (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
 						}),
 						i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
@@ -96,6 +120,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 						i(161507, {	-- Silent Scavenger Leggings
 							["timeline"] = { CREATED_8_0_1 },	-- (Was in beta, not there on 9/16/18)
+						}),
+						i(283319, {	-- Vacant Buzzard Roost (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
+						i(283297, {	-- Vulpera Postbox (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
+						i(283277, {	-- Wooden Vulpera Caravan (DECOR!)
+							["cost"] = { { "c", WAR_RESOURCES, 400 } },
+							["timeline"] = { ADDED_12_1_5 },
 						}),
 					}, {	-- Exalted
 						i(161531, {	-- Akunda's Grounding Boots

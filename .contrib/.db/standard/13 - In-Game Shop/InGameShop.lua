@@ -525,6 +525,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 
+		iensemble(283360, { ["timeline"] = { ADDED_12_1_5 } }),	-- Ensemble: Rexxar's Fabled Attire
+
 		------ South Guard's Copper Raiment Collection ------
 		iensemble(258802, {	-- Ensemble: South Guard's Copper Raiment
 			["timeline"] = { ADDED_12_0_0, "removed 12.0.1.66198" },	-- Removed March 2nd, 2026
@@ -886,6 +888,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(263291, {["timeline"] = { ADDED_12_0_5 }}),	-- Spring Blossom Tree Pond (DECOR!)
 		i(258568),	-- Spring Blossom Window (DECOR!)
 		i(253547),	-- Spring Blossom Wreath (DECOR!)
+		i(281372, { ["timeline"] = { ADDED_12_1_5 } }),	-- Zhevraskin Rug (DECOR!)
 
 		-- Houses
 		i(272146, {["timeline"] = { ADDED_12_0_5 }}),	-- Lush Garden Treehouse
@@ -1326,6 +1329,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_5_5_0 },
 		}),
 		-- #endif
+		i(284572, { ["timeline"] = { ADDED_12_1_5 } }),	-- Rexxar's Companion Transformation (TOY!)
 		i(208883, {	-- Sandbox Storm Gryphon (TOY!)
 			["timeline"] = { ADDED_11_2_7 }
 		}),

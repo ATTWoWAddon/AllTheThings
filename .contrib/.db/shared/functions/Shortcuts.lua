@@ -88,7 +88,7 @@
 ---@field name? string Display name.
 ---@field readable? string Human-readable parser label.
 ---@field icon? string|FileID Icon path/file ID.
----@field model? integer Display/model ID.
+---@field model? FileID Model file data ID.
 ---@field displayID? integer Display ID.
 ---@field sourceID? SourceID Appearance/source ID.
 ---@field achievementCategoryID? AchievementCategoryID Achievement category ID.
@@ -154,6 +154,7 @@
 ---@field recipeID? RecipeID Crafting recipe spell ID.
 ---@field instanceID? JournalInstanceID Encounter Journal instance ID.
 ---@field savedInstanceID? MapID Internal instance map ID used to look up saved lockouts.
+---@field sharedLockout? boolean|integer Shared instance lockout across non-LFR difficulties; normalized to `isLockoutShared` by the parser (data commonly uses `1`).
 ---@field firstcraftID? RecipeID Recipe spell ID whose first craft is tracked.
 ---@field objectID? ObjectID Interactable world object ID, such as a chest.
 ---@field rank? integer Rank discriminator for ranked objects such as Azerite essences.
@@ -194,6 +195,7 @@
 ---@field isRaid? boolean Marks raid content for display and quest filtering.
 ---@field collectible? boolean Whether the object is collectible.
 ---@field repeatable? boolean Whether the object is repeatable.
+---@field isRepeatable? boolean Alias for `repeatable`.
 ---@field gender? integer Gender restriction/variant ID.
 ---@field pvp? boolean PvP requirement/filter flag.
 ---@field cm? boolean Challenge-mode requirement/filter flag.
@@ -201,6 +203,7 @@
 ---@field ignoreBonus? boolean Suppresses item modifier and bonus IDs during parser processing.
 ---@field autoname? string Type-and-ID string used to generate a name for supported object types.
 ---@field OnInit? string Lua function source applied to the constructed object during addon initialization.
+---@field OnClick? string Lua function source or function reference stored as a string; called with `(row, button)`, and a truthy return consumes the click.
 ---@field IgnoreWarnings? boolean Suppresses warnings when applying shared or bubbled fields.
 ---@field isLimited? boolean Limited quantity; ATT shows a limited-quantity tooltip line.
 ---@field altQuests? QuestID[] Alternate quest IDs that stand in for this quest.
@@ -209,7 +212,9 @@
 ---@field OnUpdate? string Lua source of a `function(t)` stored as a string, e.g. `[[function(t) ... end]]`. Run when the group updates.
 ---@field lore? string Lore text for the group.
 ---@field allianceQuestData? table Alliance-specific quest data (short form: aqd).
+---@field aqd? table Alias for `allianceQuestData`.
 ---@field hordeQuestData? table Horde-specific quest data (short form: hqd).
+---@field hqd? table Alias for `hordeQuestData`.
 ---@field maps_disp? UiMapID[] Maps shown in the information line when `maps` is not set.
 ---@field sourceAchievement? AchievementID Source achievement (cached as `sourceAchievementID`).
 ---@field modelScale? number Scale applied to the model preview camera distance in the tooltip.

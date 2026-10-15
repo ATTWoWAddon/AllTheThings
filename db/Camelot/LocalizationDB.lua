@@ -4162,6 +4162,7 @@ L.WRONG_FACTION = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um 
 L.ZONE_DESC = "Klick diesen Knopf um eine zufällige Zone auszuwählen, die Euch noch fehlt."
 localize(_.CategoryNames, {
 	[3] = "Tarotkarten",
+	[106] = "Karte",
 })
 localize(L.HEADER_NAMES, {
 	[-19] = "Gemeinsame Bossbeute",
@@ -5349,7 +5350,7 @@ L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !"
 L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque."
 localize(_.CategoryNames, {
 	[3] = "Jeu de tarot",
-	[106] = "Carte",
+	[106] = "Cartes",
 })
 localize(L.HEADER_NAMES, {
 	[-22] = "Objets communs des vendeurs",
@@ -6260,7 +6261,7 @@ L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t Condotti"
 L.TITLES_CHECKBOX = "Titoli"
 localize(_.CategoryNames, {
 	[3] = "Mazzo di Tarocchi",
-	[106] = "Carta",
+	[106] = "Carte",
 })
 localize(L.HEADER_NAMES, {
 	[-25] = "Istruttore dei Demoni",
@@ -8254,7 +8255,7 @@ L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!"
 L.ZONE_DESC = "Нажмите эту кнопку для выбора случайной локации, основываясь на несобранных Штучках."
 localize(_.CategoryNames, {
 	[3] = "карт Таро",
-	[106] = "Карты",
+	[106] = "Карта",
 })
 localize(L.HEADER_NAMES, {
 	[-19] = "Общая добыча с боссов",
@@ -9193,6 +9194,7 @@ L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 도관"
 L.TITLES_CHECKBOX = "칭호"
 localize(_.CategoryNames, {
 	[3] = "카드 묶음",
+	[106] = "카드",
 })
 localize(L.HEADER_NAMES, {
 	[-25] = "악마 훈련사",
@@ -10786,7 +10788,7 @@ L.YOU_DID_IT = "¡LO LOGRASTE! "
 L.ZONE_DESC = "Haz clic en este botón para seleccionar una zona aleatoria basado en lo que te falta."
 localize(_.CategoryNames, {
 	[3] = "Baraja de Tarot",
-	[106] = "Carta",
+	[106] = "Tarot",
 })
 localize(L.HEADER_NAMES, {
 	[-19] = "Botín común de jefe",
@@ -14633,9 +14635,6 @@ L.WORLDMAP_BUTTON_CHECKBOX = "顯示世界地圖按鈕"
 L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按鈕，請啟用此選項。使用此按鈕可以快速拜訪當前顯示區域的小列表。通常情況下，你需要親自前往該區域才能看到小列表上的內容，你可以通過在聊天框中鍵入'/att mini'來拜訪小列表。"
 L.WRONG_FACTION = "可能需要在另一個陣營中查看此內容。"
 L.ZONE_DESC = "點擊此按鈕可依據缺少的內容選擇隨機地區。"
-localize(_.CategoryNames, {
-	[106] = "卡片",
-})
 localize(L.HEADER_NAMES, {
 	[-19] = "首領共通掉落",
 	[-22] = "商人共通物品",

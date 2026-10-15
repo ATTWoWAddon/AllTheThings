@@ -272,6 +272,7 @@ en(255839,{awp=110205,spellID=1259484,tmogSetID=2291,u=3,g={
 s(165527,188135,{f=3}),
 s(115884,184828,{f=3}),
 s(165528,188136,{f=3})}}),
+en(283360,{awp=120105,u=3}),
 en(258802,{awp=120000,questID=93477,rwp=120001,spellID=1264011,tmogSetID=5379,u=2,g={
 s(301655,258798,{f=2,loc=47}),
 s(302163,260403,{f=2,loc=46}),
@@ -694,6 +695,7 @@ de(15140,{itemID=263290,spellID=1270358,u=3}),
 de(15141,{awp=120005,itemID=263291,spellID=1270359,u=3}),
 de(12172,{itemID=258568,spellID=1263500,u=3}),
 de(9444,{itemID=253547,spellID=1256615,u=3}),
+i(281372,{awp=120105,u=3}),
 i(272146,{awp=120005,spellID=1290352,u=3}),
 i(272992,{awp=120005,spellID=1291534,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 de(16098,{awp=120005,itemID=264721,spellID=1272517,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
@@ -799,6 +801,7 @@ toy(172179,{awp=100200,b=1,u=3}),
 toy(166778,{awp=80105,b=1,rwp=100100,u=2}),
 toy(166777,{awp=80105,b=1,rwp=100100,u=2}),
 toy(210467,{awp=100205,b=1,u=3}),
+i(284572,{awp=120105,u=3}),
 toy(208883,{awp=110207,b=1,u=3}),
 toy(193588,{awp=100200,b=1,u=3}),
 toy(166779,{awp=80105,b=1,u=3})}}),

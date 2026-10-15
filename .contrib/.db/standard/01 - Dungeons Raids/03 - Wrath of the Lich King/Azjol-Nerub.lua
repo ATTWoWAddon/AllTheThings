@@ -2,6 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local KRIKTHIR = 585;
+local HADRONOX = 586;
+local ANUBARAK = 587;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[KRIKTHIR] = { 28684 },	-- Krik'thir the Gatewatcher
+	[HADRONOX] = { 28921 },	-- Hadronox
+	[ANUBARAK] = { 29120 },	-- Anub'arak
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(272, {	-- Azjol-Nerub
 		["mapID"] = AZJOL_NERUB,
@@ -12,67 +29,79 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(480, {	-- Azjol-Nerub
+					-- #if AFTER 7.3.5
 					crit(5436, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { KRIKTHIR, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5437, {	-- Hadronox
-						["_encounter"] = { 586, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { HADRONOX, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					crit(5438, {	-- Anub'arak
+						["_encounter"] = { ANUBARAK, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					-- #else
+					crit(5436, {	-- Krik'thir the Gatewatcher
+						["_encounter"] = { KRIKTHIR, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5437, {	-- Hadronox
+						["_encounter"] = { HADRONOX, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5623, {	-- Anub'arak
-						["_encounter"] = { 587, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { ANUBARAK, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5438, {	-- Anub'arak
-						["_encounter"] = { 587, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { ANUBARAK, DIFFICULTY.DUNGEON.NORMAL },
 					}),
+					-- #endif
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17285, {	-- Defense Protocol Alpha: Azjol-Nerub
 					crit(57699, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { KRIKTHIR, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57697, {	-- Hadronox
-						["_encounter"] = { 586, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { HADRONOX, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57698, {	-- Anub'arak
-						["_encounter"] = { 587, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { ANUBARAK, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18592, {	-- Defense Protocol Beta: Azjol-Nerub
 					crit(60581, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { KRIKTHIR, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60579, {	-- Hadronox
-						["_encounter"] = { 586, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { HADRONOX, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60580, {	-- Anub'arak
-						["_encounter"] = { 587, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { ANUBARAK, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19429, {	-- Defense Protocol Gamma: Azjol-Nerub
 					crit(63328, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { KRIKTHIR, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63326, {	-- Hadronox
-						["_encounter"] = { 586, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { HADRONOX, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63327, {	-- Anub'arak
-						["_encounter"] = { 587, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { ANUBARAK, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(491, {	-- Heroic: Azjol-Nerub
 					crit(6848, {	-- Krik'thir the Gatewatcher
-						["_encounter"] = { 585, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { KRIKTHIR, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6849, {	-- Hadronox
-						["_encounter"] = { 586, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { HADRONOX, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5610, {	-- Anub'arak
-						["_encounter"] = { 587, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { ANUBARAK, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -149,9 +178,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
 				n(ZONE_DROPS, {
-					i(35664, {	-- Unknown Archaeologist's Hammer
+					i(37244, {	-- Fungi-Coated Boots
+						["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
 						-- #if AFTER 8.0.1
 						["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 						-- #endif
@@ -166,216 +197,188 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 						-- #endif
 					}),
+					i(37624, {	-- Stained-Glass Shard Ring
+						-- #if AFTER 8.0.1
+						["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
+						-- #endif
+					}),
+					i(37245, {	-- Tangled Web Bindings
+						["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
+						-- #if AFTER 8.0.1
+						["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
+						-- #endif
+					}),
+					i(37243, {	-- Treasure Seeker's Belt
+						-- #if AFTER 8.0.1
+						["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
+						-- #endif
+					}),
+					i(35664, {	-- Unknown Archaeologist's Hammer
+						-- #if AFTER 8.0.1
+						["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
+						-- #endif
+					}),
+					i(37625, {	-- Web Winder Gloves
+						-- #if AFTER 8.0.1
+						["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
+						-- #endif
+					}),
 				}),
-				e(585, {	-- Krik'thir the Gatewatcher
-					["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
-					["groups"] = {
-						i(35655),	-- Cobweb Machete
-						-- #if AFTER 7.3.5
-						i(37216),	-- Facade Shield of Glyphs (7.3.5 - Used to be only Heroic Mode)
-						i(157582, {	-- Nerubian Mantle
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-						i(37219),	-- Custodian's Chestpiece (7.3.5 - Used to be only Heroic Mode)
-						i(37217),	-- Golden Limb Bands (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35656),	-- Aura Focused Gauntlets
-						i(35657),	-- Exquisite Spider-Silk Footwraps
-						-- #if AFTER 7.3.5
-						i(37218),	-- Stone-Worn Footwraps (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(KRIKTHIR, {
+					i(35656),	-- Aura Focused Gauntlets
+					i(35655),	-- Cobweb Machete
+					i(37219),	-- Custodian's Chestpiece
+					i(35657),	-- Exquisite Spider-Silk Footwraps
+					i(37216),	-- Facade Shield of Glyphs
+					i(37217),	-- Golden Limb Bands
+					i(157582, { ["timeline"] = { ADDED_7_3_5 } }),	-- Nerubian Mantle
+					i(37218),	-- Stone-Worn Footwraps
 				}),
-				e(586, {	-- Hadronox
-					["creatureID"] = 28921,	-- Hadronox
-					["groups"] = {
-						i(35658),	-- Life-Staff of the Web Lair
-						i(35660),	-- Spinneret Epaulets
-						-- #if AFTER 7.3.5
-						i(37222),	-- Egg Sac Robes (7.3.5 - Used to be only Heroic Mode)
-						i(37230),	-- Grotto Mist Gloves (7.3.5 - Used to be only Heroic Mode)
-						i(157581, {	-- Skittering Gauntlets
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-						i(37221),	-- Hollowed Mandibles Legplates (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35659),	-- Treads of Aspiring Heights
-						-- #if AFTER 7.3.5
-						i(37220),	-- Essence of Gossamer (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(HADRONOX, {
+					i(37222),	-- Egg Sac Robes
+					i(37220),	-- Essence of Gossamer
+					i(37230),	-- Grotto Mist Gloves
+					i(37221),	-- Hollowed Mandibles Legplates
+					i(35658),	-- Life-Staff of the Web Lair
+					i(157581, { ["timeline"] = { ADDED_7_3_5 } }),	-- Skittering Gauntlets
+					i(35660),	-- Spinneret Epaulets
+					i(35659),	-- Treads of Aspiring Heights
 				}),
-				e(587, {	-- Anub'arak
-					["creatureID"] = 29120,	-- Anub'arak
-					["groups"] = {
-						-- #if AFTER 7.3.5
-						i(37235),	-- Crypt Lord's Deft Blade (7.3.5 - Used to be only Heroic Mode)
-						i(37238),	-- Rod of the Fallen Monarch (7.3.5 - Used to be only Heroic Mode)
-						i(37237),	-- Chitin Shell Greathelm (7.3.5 - Used to be only Heroic Mode)
-						i(37236),	-- Insect Vestments (7.3.5 - Used to be only Heroic Mode)
-						i(37240),	-- Flamebeard's Bracers (7.3.5 - Used to be only Heroic Mode)
-						i(37241),	-- Ancient Aligned Girdle (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35663),	-- Charmed Silken Cord
-						-- #if AFTER 7.3.5
-						i(37242),	-- Sash of the Servant (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35662),	-- Wing Cover Girdle
-						-- #if AFTER 7.3.5
-						i(37232),	-- Ring of the Traitor King (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35661),	-- Signet of Arachnathid Command
-					},
+				BossOnly(ANUBARAK, {
+					i(37241),	-- Ancient Aligned Girdle
+					i(35663),	-- Charmed Silken Cord
+					i(37237),	-- Chitin Shell Greathelm
+					i(37235),	-- Crypt Lord's Deft Blade
+					i(37240),	-- Flamebeard's Bracers
+					i(37236),	-- Insect Vestments
+					i(37232),	-- Ring of the Traitor King
+					i(37238),	-- Rod of the Fallen Monarch
+					i(37242),	-- Sash of the Servant
+					i(35661),	-- Signet of Arachnathid Command
+					i(35662),	-- Wing Cover Girdle
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
-					n(ZONE_DROPS, {
-						i(37624, {	-- Stained-Glass Shard Ring
-							-- #if AFTER 8.0.1
-							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
-							-- #endif
-						}),
-						i(37243, {	-- Treasure Seeker's Belt
-							-- #if AFTER 8.0.1
-							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
-							-- #endif
-						}),
-						i(37625, {	-- Web Winder Gloves
-							-- #if AFTER 8.0.1
-							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
-							-- #endif
-						}),
-						i(37244, {	-- Fungi-Coated Boots
-							["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
-							-- #if AFTER 8.0.1
-							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
-							-- #endif
-						}),
-						i(37245, {	-- Tangled Web Bindings
-							["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
-							-- #if AFTER 8.0.1
-							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
-							-- #endif
-						}),
-					}),
-					-- #if BEFORE CATA
-					n(COMMON_BOSS_DROPS, {
-						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-						}),
-					}),
-					-- #endif
-					e(585, {	-- Krik'thir the Gatewatcher
-						["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
-						["groups"] = {
-							ach(1296, {	-- Watch Him Die
-								["crs"] = {
-									28730,	-- Watcher Gashra
-									28729,	-- Watcher Narjil
-									28731,	-- Watcher Silthik
-								},
-							}),
-							-- #if AFTER 7.3.5
-							i(35655),	-- Cobweb Machete (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37216),	-- Facade Shield of Glyphs
-							i(157582, {	-- Nerubian Mantle
-								["timeline"] = { ADDED_7_3_5 },
-							}),
-							i(37219),	-- Custodian's Chestpiece
-							i(37217),	-- Golden Limb Bands
-							-- #if AFTER 7.3.5
-							i(35656),	-- Aura Focused Gauntlets (7.3.5 - Used to be only Normal Mode)
-							i(35657),	-- Exquisite Spider-Silk Footwraps (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37218),	-- Stone-Worn Footwraps
-						},
-					}),
-					e(586, {	-- Hadronox
-						["creatureID"] = 28921,	-- Hadronox
-						["groups"] = {
-							ach(1297),	-- Hadronox Denied
-							-- #if AFTER 7.3.5
-							i(35658),	-- Life-Staff of the Web Lair (7.3.5 - Used to be only Normal Mode)
-							i(35660),	-- Spinneret Epaulets (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37222),	-- Egg Sac Robes
-							i(37230),	-- Grotto Mist Gloves
-							i(157581, {	-- Skittering Gauntlets
-								["timeline"] = { ADDED_7_3_5 },
-							}),
-							i(37221),	-- Hollowed Mandibles Legplates
-							-- #if AFTER 7.3.5
-							i(35659),	-- Treads of Aspiring Heights (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37220),	-- Essence of Gossamer
-						},
-					}),
-					e(587, {	-- Anub'arak
-						["creatureID"] = 29120,	-- Anub'arak
-						["groups"] = {
-							ach(1860),	-- Gotta Go!
-							ach(5097, {	-- Heroic: Azjol-Nerub Guild Run
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH] (RECIPE!)
-								["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
-							}),
-							i(37235),	-- Crypt Lord's Deft Blade
-							i(37238),	-- Rod of the Fallen Monarch
-							i(37237),	-- Chitin Shell Greathelm
-							i(37236),	-- Insect Vestments
-							i(37240),	-- Flamebeard's Bracers
-							i(37241),	-- Ancient Aligned Girdle
-							-- #if AFTER 7.3.5
-							i(35663),	-- Charmed Silken Cord (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37242),	-- Sash of the Servant
-							-- #if AFTER 7.3.5
-							i(35662),	-- Wing Cover Girdle (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37232),	-- Ring of the Traitor King
-							-- #if AFTER 7.3.5
-							i(35661),	-- Signet of Arachnathid Command (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							-- #if BEFORE 4.0.1
-							i(43726),	-- The Idle Crown of Anub'arak
-							-- #endif
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				CommonBossDrops({
+					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(KRIKTHIR, {
+					ach(1296, {	-- Watch Him Die
+						["crs"] = {
+							28730,	-- Watcher Gashra
+							28729,	-- Watcher Narjil
+							28731,	-- Watcher Silthik
+						},
+					}),
+				}),
+				BossOnly(HADRONOX, {
+					ach(1297),	-- Hadronox Denied
+				}),
+				BossOnly(ANUBARAK, {
+					i(43726, { ["timeline"] = { REMOVED_4_0_1 } }),	-- The Idle Crown of Anub'arak (QI!)
+					--
+					ach(1860),	-- Gotta Go!
+					ach(5097, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Azjol-Nerub Guild Run
+					i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH] (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+					}),
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				n(ZONE_DROPS, {
+					i(35666),	-- Mark of the Spider
+					i(35665),	-- Soothing Lichen Wraps
+					i(35664),	-- Unknown Archaeologist's Hammer
+				}),
+				BossOnly(KRIKTHIR, {
+					i(35656),	-- Aura Focused Gauntlets
+					i(35655),	-- Cobweb Machete
+					i(35657),	-- Exquisite Spider-Silk Footwraps
+				}),
+				BossOnly(HADRONOX, {
+					i(35658),	-- Life-Staff of the Web Lair
+					i(35660),	-- Spinneret Epaulets
+					i(35659),	-- Treads of Aspiring Heights
+				}),
+				BossOnly(ANUBARAK, {
+					i(35663),	-- Charmed Silken Cord
+					i(35661),	-- Signet of Arachnathid Command
+					i(35662),	-- Wing Cover Girdle
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					i(37244, { ["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 } }),	-- Fungi-Coated Boots
+					i(37624),	-- Stained-Glass Shard Ring
+					i(37245, { ["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 } }),	-- Tangled Web Bindings
+					i(37243),	-- Treasure Seeker's Belt
+					i(37625),	-- Web Winder Gloves
+				}),
+				CommonBossDrops({
+					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(KRIKTHIR, {
+					ach(1296, {	-- Watch Him Die
+						["crs"] = {
+							28730,	-- Watcher Gashra
+							28729,	-- Watcher Narjil
+							28731,	-- Watcher Silthik
+						},
+					}),
+					i(37219),	-- Custodian's Chestpiece
+					i(37216),	-- Facade Shield of Glyphs
+					i(37217),	-- Golden Limb Bands
+					i(37218),	-- Stone-Worn Footwraps
+				}),
+				BossOnly(HADRONOX, {
+					ach(1297),	-- Hadronox Denied
+					i(37222),	-- Egg Sac Robes
+					i(37220),	-- Essence of Gossamer
+					i(37230),	-- Grotto Mist Gloves
+					i(37221),	-- Hollowed Mandibles Legplates
+				}),
+				BossOnly(ANUBARAK, {
+					i(43726, { ["timeline"] = { REMOVED_4_0_1 } }),	-- The Idle Crown of Anub'arak (QI!)
+					--
+					ach(1860),	-- Gotta Go!
+					ach(5097, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Azjol-Nerub Guild Run
+					i(37241),	-- Ancient Aligned Girdle
+					i(37237),	-- Chitin Shell Greathelm
+					i(37235),	-- Crypt Lord's Deft Blade
+					i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH] (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+					}),
+					i(37240),	-- Flamebeard's Bracers
+					i(37236),	-- Insect Vestments
+					i(37232),	-- Ring of the Traitor King
+					i(37238),	-- Rod of the Fallen Monarch
+					i(37242),	-- Sash of the Servant
+				}),
+			}),
+			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394437, 412470, 424201),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(585, {	-- Krik'thir the Gatewatcher
-						["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
-						["groups"] = {
-							i(39257),	-- Loatheb's Shadow
-							i(39267),	-- Abomination Shoulderblades
-							i(39259),	-- Fungi-Stained Coverings
-						},
+					BossOnly(KRIKTHIR, {
+						i(39267),	-- Abomination Shoulderblades
+						i(39259),	-- Fungi-Stained Coverings
+						i(39257),	-- Loatheb's Shadow
 					}),
-					e(586, {	-- Hadronox
-						["creatureID"] = 28921,	-- Hadronox
-						["groups"] = {
-							i(39256),	-- Sulfur Stave
-							i(39252),	-- Preceptor's Bindings
-							i(39262),	-- Gauntlets of Combined Strength
-							i(39261),	-- Tainted Girdle of Mending
-						},
+					BossOnly(HADRONOX, {
+						i(39262),	-- Gauntlets of Combined Strength
+						i(39252),	-- Preceptor's Bindings
+						i(39256),	-- Sulfur Stave
+						i(39261),	-- Tainted Girdle of Mending
 					}),
-					e(587, {	-- Anub'arak
-						["creatureID"] = 29120,	-- Anub'arak
-						["groups"] = {
-							i(39419),	-- Nerubian Conqueror
-							i(43994),	-- Belabored Legplates
-							i(39425),	-- Cloak of the Dying
-						},
+					BossOnly(ANUBARAK, {
+						i(43994),	-- Belabored Legplates
+						i(39425),	-- Cloak of the Dying
+						i(39419),	-- Nerubian Conqueror
 					}),
 				},
 			})),
@@ -383,27 +386,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412470, 424201),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(585, {	-- Krik'thir the Gatewatcher
-						["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
-						["groups"] = {
-							i(45464),	-- Cowl of Icy Breaths
-							i(45874),	-- Signet of Winter
-						},
+					BossOnly(KRIKTHIR, {
+						i(45464),	-- Cowl of Icy Breaths
+						i(45874),	-- Signet of Winter
 					}),
-					e(586, {	-- Hadronox
-						["creatureID"] = 28921,	-- Hadronox
-						["groups"] = {
-							i(45316),	-- Armbraces of the Vibrant Flame
-							i(45458),	-- Stormedge
-						},
+					BossOnly(HADRONOX, {
+						i(45316),	-- Armbraces of the Vibrant Flame
+						i(45458),	-- Stormedge
 					}),
-					e(587, {	-- Anub'arak
-						["creatureID"] = 29120,	-- Anub'arak
-						["groups"] = {
-							i(45318),	-- Drape of Fuming Anger
-							i(45312),	-- Gloves of Smoldering Touch
-							i(45313),	-- Furnace Stone
-						},
+					BossOnly(ANUBARAK, {
+						i(45318),	-- Drape of Fuming Anger
+						i(45313),	-- Furnace Stone
+						i(45312),	-- Gloves of Smoldering Touch
 					}),
 				},
 			})),
@@ -411,24 +405,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424201),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(585, {	-- Krik'thir the Gatewatcher
-						["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
-						["groups"] = {
-
-						},
-					}),
-					e(586, {	-- Hadronox
-						["creatureID"] = 28921,	-- Hadronox
-						["groups"] = {
-
-						},
-					}),
-					e(587, {	-- Anub'arak
-						["creatureID"] = 29120,	-- Anub'arak
-						["groups"] = {
-
-						},
-					}),
+					BossOnly(KRIKTHIR),
+					BossOnly(HADRONOX),
+					BossOnly(ANUBARAK),
 				},
 			})),
 			-- #endif

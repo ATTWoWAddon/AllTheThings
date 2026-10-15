@@ -135,19 +135,27 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				fp(3329, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
 			}),
 			n(QUESTS, {
+				q(99312, {	-- On the Trail of Kindo'jan
+					["description"] = "This quest is obtained from Any Delve. In order not to lose Quest Completion, go back to the Labyrinth entrance and pick up the Quest from the Tablet.",
+					["provider"] = { "i", 287078 },	-- Ancient Amani Tablet (QS!)
+					["isBreadcrumb"] = true,
+				}),
 				q(99306, {	-- The Labyrinth of Kindo'jan
 					["provider"] = { "o", 701639 },	-- Amani Tablet
 					["coord"] = { 62.9, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["isBreadcrumb"] = true,
 				}),
 				q(98831, {	-- The Labyrinth
-					["sourceQuest"] = 99306,	-- The Labyrinth of Kindo'jan
+					["sourceQuests"] = {	-- There are 2 breadcrumb quests. One from the Labyrinth Entrance, One from the Delves (QS!) Item. Only 1 of them is required but, sourceQuestNumRequired is not used because we want to warn users of both of them.
+						99312,	-- On the Trail of Kindo'jan
+						99306,	-- The Labyrinth of Kindo'jan
+					},
 					["qgs"] = {
 						265173,	-- Kul'amara the Fierce
 						277031,	-- Kul'amara the Fierce
 					},
 					["coords"] = {
-						{ 33.4, 25.5, MAP.MIDNIGHT.ZULAMAN },
+						{ 33.2, 25.5, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 						{ 57.9, 46.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 					},
 				}),
@@ -157,8 +165,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 62.8, 72.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["groups"] = {
 						o(693668, {	-- Broken Tablet
-							-- Exo Note: This is here so that tooltip from object 294114 does not bleed onto this one. If someone has a better way to resolve it, please do.
-							-- IF that gets resolved and/or WHEN WoWhead gets the data for this object parsed, remove Kindo'jan TEMP.lua file from .db\shared\objects\Dynamic\
+							-- Exo Note: This is here so that tooltip from object 294114 does not bleed onto this one.
 							["coord"] = { 44.5, 68.8, LABYRINTH_KINDOJAN },
 						}),
 					},
@@ -183,6 +190,22 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["qg"] = 264886,	-- Wah'du <Servant of de Loa>
 					["coord"] = { 44.4, 79.4, LABYRINTH_KINDOJAN },
 					["groups"] = { i(285065) },	-- Mythical Soul Fragment
+				}),
+				q(97241, {	-- Voices of Stone
+					["providers"] = {
+						{ "o", 649924 },	-- Small Loa Figurine
+						{ "o", 649937 },	-- Small Loa Figurine
+						{ "o", 649938 },	-- Small Loa Figurine
+						{ "o", 649939 },	-- Small Loa Figurine
+						{ "o", 649940 },	-- Small Loa Figurine
+					},
+					["coords"] = {
+						{ 77.9, 62.7, LABYRINTH_KINDOJAN },
+						{ 79.7, 55.2, LABYRINTH_KINDOJAN },
+						{ 78.0, 51.4, LABYRINTH_KINDOJAN },
+						{ 84.3, 54.1, LABYRINTH_KINDOJAN },
+						{ 82.9, 65.6, LABYRINTH_KINDOJAN },
+					},
 				}),
 				filter(MISC, {
 					i(271135),	-- Dusty Loa Totem
@@ -266,6 +289,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676646, {	-- Ancient Chest
 						["coord"] = { 30.7, 15.6, LABYRINTH_KINDOJAN },
+						["questID"] = 98626,
 						["groups"] = { i(280823) },	-- Feathers of Akil'zon (TOY!)
 					}),
 					o(676632, {	-- Ancient Chest
@@ -277,10 +301,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
 						["coord"] = { 38.8, 83.4, LABYRINTH_KINDOJAN },
 						["questID"] = 98605,
-						["groups"] = {
-							i(282424),	-- Akil'zon's Swiftness
-							i(284359),	-- Corroded Amani Sconce (DECOR!)
-						},
+						["groups"] = { i(282424) },	-- Akil'zon's Swiftness
 					}),
 					o(676623, {	-- Sturdy Chest
 						["description"] = "Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",
@@ -294,19 +315,57 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676630, {	-- Sturdy Chest
 						["coord"] = { 27.4, 33.1, LABYRINTH_KINDOJAN },
-						["groups"] = { i(280825) },	-- Rite of Jan'alai's Flame
+						["questID"] = 98613,
+						["groups"] = { i(280825) },	-- Rite of Jan'alai's Flame (TOY!)
 					}),
 					o(676642, {	-- Sturdy Chest
 						["coord"] = { 22.9, 12.0, LABYRINTH_KINDOJAN },
+						["groups"] = { i(284180) },	-- Loa-Touched Deltoid (COSMETIC!)
 					}),
 					o(676641, {	-- Sturdy Chest
 						["coord"] = { 22.7, 12.2, LABYRINTH_KINDOJAN },
 					}),
+					o(676651, {	-- Sturdy Chest
+						["coord"] = { 61.2, 44.8, LABYRINTH_KINDOJAN },
+						["questID"] = 98631,
+					}),
+					o(676637, {	-- Sturdy Chest
+						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98619,
+						["groups"] = {
+							i(244349),	-- Ruined Amani Ritual Urn (DECOR!)
+							i(284357),	-- Ancient Amani Mural (DECOR!)
+							i(264486),	-- Brown Amani Tapestry (DECOR!)
+						},
+					}),
+					o(676621, {	-- Sturdy Chest
+						["coord"] = { 61.5, 44.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98619,
+					}),
+					-- o(???, {	-- Sturdy Chest (2nd from the left)
+					-- 	["coord"] = { 61.5, 43.6, LABYRINTH_KINDOJAN },
+					-- 	["questID"] = 98640,
+					-- }),
+					o(676631, {	-- Sturdy Chest
+						["coord"] = { 61.1, 43.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98614,
+					}),
+					o(676647, {	-- Sturdy Chest
+						["coord"] = { 30.6, 14.9, LABYRINTH_KINDOJAN },
+					}),
+				}),
+				o(689304, {	-- Ancestral Bounty
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
 					["description"] = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
 					["cr"] = 273788,	-- Keeper of the Key
 					["groups"] = { i(282402) },	-- Archaic Amani Key
+				}),
+				o(673143, {	-- Bountiful Heavy Trunk
+				}),
+				o(673144, {	-- Bountiful Heavy Trunk
+				}),
+				o(673138, {	-- Gilded Stash
 				}),
 				o(696116, {	-- Impressive Treasure Chest
 					["description"] = "Spawns after finishing 'Dundun' event.",
@@ -327,10 +386,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			--n(VENDORS, {
 			--}),
 			n(ZONE_REWARDS, {
-				-- From Ancient Chests AND Mislaid Treasures, drop chance random
+				-- From Ancient Chests, Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
+				i(284052),	-- Amani Effigy (COSMETIC!)
 				i(252044),	-- Amani Horn Cup (DECOR!)
 				i(264484),	-- Blue Amani Tapestry (DECOR!)
+				i(284359),	-- Corroded Amani Sconce (DECOR!)
+				i(284057),	-- Effigy of Corrosion (COSMETIC!)
 				i(263321),	-- Frayed Amani Offering Basket (DECOR!)
+				i(284051),	-- Hexbearer's Pauldrons (COSMETIC!)
+				i(284054),	-- Hexdrinker's Shoulders (COSMETIC!)
 				i(264256),	-- Wall-Mounted Amani Animal Trophy (DECOR!)
 			}),
 		},

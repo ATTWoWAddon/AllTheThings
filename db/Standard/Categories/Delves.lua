@@ -2747,6 +2747,7 @@ i(279290,{providers={{"o",584518}},questID=98043,spellID=1306485}),
 i(276548,{description="Use before starting your Prey quest to work properly.",f=55,spellID=1306916}),
 i(274374,{f=55,providers={{"o",584518},{"o",656489}},questID=86371,spellID=1293799})}),
 flt(104,{
+i(287078,{awp=120105}),
 i(274965),
 i(274970),
 i(277506),
@@ -3711,14 +3712,12 @@ ach(63717,{
 title(797),
 crit(117169,{achID=63717,id=7,questID=98609,u=1}),
 crit(117170,{achID=63717,id=8,questID=98610,u=1}),
-crit(117173,{achID=63717,id=11,questID=98613,u=1}),
 crit(117175,{achID=63717,id=13,questID=98616,u=1}),
 crit(117176,{achID=63717,id=14,questID=98617,u=1}),
 crit(117177,{achID=63717,id=15,questID=98618,u=1}),
 crit(117180,{achID=63717,id=18,questID=98622,u=1}),
 crit(117181,{achID=63717,id=19,questID=98623,u=1}),
 crit(117182,{achID=63717,id=20,questID=98624,u=1}),
-crit(117184,{achID=63717,id=22,questID=98626,u=1}),
 crit(117185,{achID=63717,id=23,questID=98627,u=1}),
 crit(117188,{achID=63717,id=26,questID=98630,u=1}),
 crit(117189,{achID=63717,id=27,questID=98632,u=1}),
@@ -3729,9 +3728,6 @@ crit(117197,{achID=63717,id=35,questID=98641,u=1}),
 crit(117198,{achID=63717,id=36,questID=98648,u=1}),
 crit(117200,{achID=63717,id=38,questID=98650,u=1}),
 crit(117437,{achID=63717,id=39,questID=98604,u=1}),
-crit(117436,{achID=63717,id=40,questID=98614,u=1}),
-crit(117438,{achID=63717,id=41,questID=98619,u=1}),
-crit(117439,{achID=63717,id=42,questID=98631,u=1}),
 crit(117440,{achID=63717,id=43,questID=98640,u=1}),
 crit(118145,{achID=63717,id=44,questID=98603,u=1})}),
 ach(63724,{providers={{"s",1315026}}}),
@@ -3800,11 +3796,12 @@ fp(3316,{collectible=false}),
 fp(3318,{collectible=false}),
 fp(3329,{collectible=false})}),
 h(-45,{
+q(99312,{description="This quest is obtained from Any Delve. In order not to lose Quest Completion, go back to the Labyrinth entrance and pick up the Quest from the Tablet.",isBreadcrumb=1,nextQuests={98831},qss={287078}}),
 q(99306,{coords={
 [2395]={{62.9,72}}},isBreadcrumb=1,nextQuests={98831},providers={{"o",701639}}}),
 q(98831,{coords={
-[2437]={{33.4,25.5}},
-[2512]={{57.9,46.7}}},qgs={265173,277031},sourceQuests={99306}}),
+[2512]={{57.9,46.7}},
+[2536]={{33.2,25.5}}},qgs={265173,277031},sourceQuests={99306,99312}}),
 q(98832,{coords={
 [2395]={{62.8,72}}},qgs={274915},sourceQuests={98831},g={
 o(693668,{coords={
@@ -3819,6 +3816,8 @@ toy(286643)}}),
 q(98951,{coords={
 [2647]={{44.4,79.4}}},qgs={264886},g={
 i(285065,{spellID=1317439})}}),
+q(97241,{coords={
+[2647]={{77.9,62.7},{78,51.4},{79.7,55.2},{82.9,65.6},{84.3,54.1}}},providers={{"o",649924},{"o",649937},{"o",649938},{"o",649939},{"o",649940}}}),
 flt(50,{
 i(271135),
 i(271156,{spellID=1288723})})}),
@@ -3877,8 +3876,9 @@ o(676760,{coords={
 [2647]={{47.7,42.7}}},questID=98649,g={
 crit(117199,{achID=63717,id=37})}}),
 o(676646,{coords={
-[2647]={{30.7,15.6}}},g={
-toy(280823)}}),
+[2647]={{30.7,15.6}}},questID=98626,g={
+toy(280823),
+crit(117184,{achID=63717,id=22})}}),
 o(676632,{coords={
 [2647]={{27.8,34.6}}},questID=98615,g={
 i(283996,{f=55,spellID=1315083}),
@@ -3886,7 +3886,6 @@ crit(117174,{achID=63717,id=12})}}),
 o(676622,{coords={
 [2647]={{38.8,83.4}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98605,g={
 i(282424,{f=55,spellID=1313862}),
-de(25129,{itemID=284359,spellID=1315982}),
 crit(117165,{achID=63717,id=3})}}),
 o(676623,{coords={
 [2647]={{38,83.5}}},description="Becomes available after unlocking Labyrinth Renown LVL3: Akil'zon's Favor.",questID=98606,g={
@@ -3896,14 +3895,37 @@ o(676658,{coords={
 [2647]={{89,77.7}}},g={
 i(280563,{f=55,spellID=1314402})}}),
 o(676630,{coords={
-[2647]={{27.4,33.1}}},g={
-toy(280825)}}),
+[2647]={{27.4,33.1}}},questID=98613,g={
+toy(280825),
+crit(117173,{achID=63717,id=11})}}),
 o(676642,{coords={
-[2647]={{22.9,12}}}}),
+[2647]={{22.9,12}}},g={
+s(316077,284180,{f=2,loc=41})}}),
 o(676641,{coords={
-[2647]={{22.7,12.2}}}})}}),
+[2647]={{22.7,12.2}}}}),
+o(676651,{coords={
+[2647]={{61.2,44.8}}},questID=98631,g={
+crit(117439,{achID=63717,id=42})}}),
+o(676637,{coords={
+[2647]={{61.5,44.7}}},questID=98619,g={
+de(1432,{itemID=244349,spellID=1237030}),
+de(27458,{itemID=284357,spellID=1315979}),
+de(15750,{itemID=264486,spellID=1272049}),
+crit(117438,{achID=63717,id=41})}}),
+o(676621,{coords={
+[2647]={{61.5,44.7}}},questID=98619,g={
+crit(117438,{achID=63717,id=41})}}),
+o(676631,{coords={
+[2647]={{61.1,43.5}}},questID=98614,g={
+crit(117436,{achID=63717,id=40})}}),
+o(676647,{coords={
+[2647]={{30.6,14.9}}}})}}),
+o(689304),
 o(676583,{crs={273788},description="Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",g={
 i(282402,{spellID=1313734})}}),
+o(673143),
+o(673144),
+o(673138),
 o(696116,{coords={
 [2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),
 o(676747,{description="Spawns randomly throughout the Labyrinth."}),
@@ -3911,9 +3933,14 @@ o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrin
 o(705929),
 o(705955,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
 h(-64,{
+s(316034,284052,{f=3}),
 de(8992,{itemID=252044,spellID=1254109}),
 de(15748,{itemID=264484,spellID=1272047}),
+de(25129,{itemID=284359,spellID=1315982}),
+s(316038,284057,{f=3}),
 de(15161,{itemID=263321,spellID=1270384}),
+s(316033,284051,{f=2,loc=41}),
+s(316035,284054,{f=2,loc=41}),
 de(15491,{itemID=264256,spellID=1271501})})}})}}),
 h(-12,{awp=110002,g={
 ach(40817,{maps={2249,2250,2251,2259,2269,2277,2299,2301,2302,2310,2312,2347,2396,2420,2452,2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},providers={{"s",460818}}}),

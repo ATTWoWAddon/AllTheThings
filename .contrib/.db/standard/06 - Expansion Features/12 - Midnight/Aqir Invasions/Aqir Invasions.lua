@@ -23,6 +23,10 @@ AQIR_INVASIONS = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(AQIR_INVASIONS, {
 		["timeline"] = { ADDED_12_1_5 },
+		["maps"] = {
+			MAP.MIDNIGHT.EVERSONG_WOODS,
+			MAP.MIDNIGHT.ZULAMAN,
+		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(63659, {	-- Bane of the Swarm
@@ -35,7 +39,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				}),
 			}),
 			n(EVENT_COMPLETION, {
-				i(277283),	-- Aqir Research Satchel
+				i(277283, {	-- Aqir Research Satchel
+					n(ARMOR, {
+						n(BACK, {
+						}),
+						filter(CLOTH, {
+							i(277885),	-- Veilweaver Trousers
+							i(277895),	-- Veilweaver's Shadowgown
+						}),
+						filter(FINGER_F, {
+						}),
+						filter(LEATHER, {
+							i(277888),	-- Veil of the Feral Rite
+						}),
+						filter(MAIL, {
+							i(277891),	-- Leviathan Bracerbands
+						}),
+						filter(NECK_F, {
+						}),
+						filter(PLATE, {
+							i(277898),	-- Duskhallow Vanguard Greaves
+							i(284219),	-- Granite Ritual Cuirass
+						}),
+						filter(TRINKET_F, {
+						}),
+					}),
+					n(WEAPONS, {
+						i(277899),	-- Fangwarden's Shardspine Bow
+						i(277876),	-- Sacrosanct Thirstspire
+					}),
+				}),
 				i(286563),	-- Aqir Research Token
 			}),
 			header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
@@ -128,7 +161,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				header(HEADERS.Achievement, 63519, {	-- The Promise of Tomorrow
 					header(HEADERS.AchCriteria, 63519.01, {	-- Sins of the Past
-						-- Exo Note: Ach 63519 currently has only 2 criteria but the campaign has 3 chapters. If things are as they look like, Ach should have 3 criteria with first of them named "What Slept Below", and "Sins of the Past" being second. Probably bugged with an update incoming in the next patch?
 						q(95533, {	-- The Aqir Swarm
 							["qg"] = 235787,	-- Lor'themar Theron
 							["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -231,9 +263,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["qg"] = 265961,	-- Lady Liadrin
 							["coord"] = { 55.8, 30.0, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 						}),
-						-- Exo Note: Quest chain ends here. Quest log shows that this quest completes the 1/3 Campaign Chapters. None of the friendly NPCs despawn and no new quest is offered. It's incomplete, probably because next quest leads into the Raid (I think).
-						-- Entrance to "The Unbinding of Kith'ix" is in The Underbelly at 73.3, 8.6
-						-- Actual "Sins of the Past" start. TODO: Fix header when the achCriteria gets updated!
 						q(95211, {	-- The Unbinding of Kith'ix
 							["sourceQuest"] = 96707,	-- In the Belly of the Beast
 							["qg"] = 275672,	-- Lady Liadrin
@@ -257,8 +286,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					header(HEADERS.AchCriteria, 63519.02, {	-- To the Faithful
 						q(95811, {	-- In Victory, Grief
 							["sourceQuest"] = 95211,	-- The Unbinding of Kith'ix
-							["maps"] = { 2669, 2670 },
-							["groups"] = { i(274937) },	-- Shield of the Blood Knight Matriarch (COSMETIC!)
+							["qg"] = 264992,	-- Lor'themar Theron
+							["coord"] = { 63.8, 32.2, MAP.MIDNIGHT.VAULTS_UNDERBELLY },	-- Can be accepted here if not accepted inside the raid
+							["maps"] = { 2669, 2670 },	-- The Unbinding of Kith'ix
+							["groups"] = {
+								i(274937, {	-- Shield of the Blood Knight Matriarch (COSMETIC!)
+									["sourceID"] = 309078,	-- TEMP: Until Wago gets updated!
+								}),
+							},
 						}),
 						q(95808, {	-- To the Faithful
 							["sourceQuest"] = 95811,	-- In Victory, Grief
@@ -270,13 +305,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["qg"] = 262758,	-- Zul'jarra
 							["coord"] = { 32.0, 69.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 						}),
-						q(95813, {	-- What the World sees
+						q(95813, {	-- What the World Sees
 							["sourceQuest"] = 95812,	-- Last Wishes
 							["qg"] = 262877,	-- Orweyna
 							["coord"] = { 27.6, 10.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-							["groups"] = { i(274934) },	-- Blade of the Blood Knight Matriarch (COSMETIC!)
+							["groups"] = {
+								i(274934, {	-- Blade of the Blood Knight Matriarch (COSMETIC!)
+									["sourceID"] = 309077,	-- TEMP: Until Wago gets updated!
+								}),
+							},
 						}),
-						--TODO: bugged questchain
 					}),
 				}),
 			}),

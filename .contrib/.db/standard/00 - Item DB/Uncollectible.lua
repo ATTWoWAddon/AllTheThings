@@ -2946,4 +2946,6 @@ i(279145);	-- Vial of Venom
 ------------------
 -- PATCH 12.1.5 --
 ------------------
+i(284576);	-- Cracked Mask
 i(284577);	-- Stinging Nettle
+i(284578);	-- Untainted Wicker
