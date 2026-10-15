@@ -5007,7 +5007,7 @@ namespace ATT
                 return false;   // Invalid entry
 
             // We don't want things that got deleted to be in the addon.
-            // NOTE: If it's not the last entry, that means it might have been re-added later?
+            // NOTE: If it's not the last entry, that means it might have been readded later?
             // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
             // Deleting it from the actual database is actually expected for the real builds,
             // so don't remove this. This is how I want it. Thanks!

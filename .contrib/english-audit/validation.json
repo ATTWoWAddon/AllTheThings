@@ -1,9 +1,9 @@
 {
   "baseline": "1235e7bc841adb11530dd291b7b8083080c7de98",
   "lua_version": "Lua 5.1.5  Copyright (C) 1994-2012 Lua.org, PUC-Rio",
-  "changed_files": 242,
-  "changed_lua": 220,
-  "syntax_current_pass": 220,
+  "changed_files": 240,
+  "changed_lua": 219,
+  "syntax_current_pass": 219,
   "baseline_parse_exceptions": [],
   "comment_only_bytecode_identical": 130,
   "failures": [],
@@ -360,18 +360,6 @@
       "baseline_syntax_ok": true,
       "current_syntax_ok": true,
       "current_sha256": "ab7ec211ff5cfa57bf410049fae8af973a761f8b354371984857cef751edf264"
-    },
-    {
-      "path": ".contrib/.db/shared/lib/Strings/Settings/Interface/Information/READDED_WITH_PATCH_CLASSIC_FORMAT.lua",
-      "newline_preserved": true,
-      "bom_preserved": true,
-      "code_tokens_equal": true,
-      "string_count_equal": true,
-      "changed_lookup_keys": [],
-      "preprocessor_lines_equal": true,
-      "baseline_syntax_ok": true,
-      "current_syntax_ok": true,
-      "current_sha256": "60cb05ec78b5258f0afefe3734762ffb3429e4124301ef00cbcaf82431af1c5f"
     },
     {
       "path": ".contrib/.db/shared/lib/Strings/Settings/Interface/NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP.lua",
@@ -2493,13 +2481,6 @@
       "current_sha256": "008150303c8422df5b02762f7f8e7fcb6c4c3a0a255eedb01520b6514c4b89fc"
     },
     {
-      "path": ".contrib/src/Parser/FieldTypes/Timeline.cs",
-      "newline_preserved": true,
-      "bom_preserved": true,
-      "noncomment_changes": [],
-      "current_sha256": "4835c05b7601b3e32050edd6c3dc86491c3fc93d683b8e758b6217cad253c834"
-    },
-    {
       "path": ".contrib/src/Parser/Framework/Framework.Items.cs",
       "newline_preserved": true,
       "bom_preserved": true,
@@ -2528,7 +2509,7 @@
         3646,
         3651
       ],
-      "current_sha256": "a281a206647ab31b5f6393ebb911f20690701693e1b96800405ea416b99848cc"
+      "current_sha256": "d9e096652ada9f45802b10678a1c10892babb7fd87368e4dbe68b91ee015d625"
     },
     {
       "path": ".contrib/src/Parser/Framework/HierarchicalFieldAdjustments.cs",

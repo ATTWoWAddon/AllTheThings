@@ -9520,7 +9520,7 @@
     {
       "path": ".contrib/.db/shared/lib/Strings/Settings/Interface/Information/READDED_WITH_PATCH_CLASSIC_FORMAT.lua",
       "category": "maintained-source",
-      "bytes": 544,
+      "bytes": 542,
       "lines": 18,
       "automated_spelling_scan": true
     },
@@ -32690,7 +32690,7 @@
     {
       "path": ".contrib/src/Parser/FieldTypes/Timeline.cs",
       "category": "maintained-source",
-      "bytes": 14098,
+      "bytes": 14097,
       "lines": 348,
       "automated_spelling_scan": true
     },
@@ -32746,7 +32746,7 @@
     {
       "path": ".contrib/src/Parser/Framework/Framework.Processing.cs",
       "category": "maintained-source",
-      "bytes": 281908,
+      "bytes": 281907,
       "lines": 5608,
       "automated_spelling_scan": true
     },

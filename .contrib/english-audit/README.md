@@ -1,6 +1,6 @@
 # ATT English audit
 
-The local branch `codex/english-flavor-audit` starts at master revision `1235e7bc841adb11530dd291b7b8083080c7de98`. This audit, dated 2026-10-15 in Asia/Taipei, proposes 427 changed source lines across 242 files. Of those lines, 34 have two independent WoW source providers and 393 are editorial spelling or grammar proposals.
+The local branch `codex/english-flavor-audit` starts at master revision `1235e7bc841adb11530dd291b7b8083080c7de98`. This audit, dated 2026-10-15 in Asia/Taipei, proposes 423 changed source lines across 240 files. Of those lines, 34 have two independent WoW source providers and 389 are editorial spelling or grammar proposals.
 
 [Every changed line](changes.json) records the original text, replacement, file and line, flavor context, rationale, source URLs, and independent source count. [WoW source comparisons](wow-sources.md) provides a shorter table of the changes supported by two providers.
 
@@ -45,18 +45,18 @@ Standard files serve multiple compilation targets. A file's expansion folder and
 
 [The validation snapshot](validation.json) records Lua 5.1.5 syntax checks and source comparisons against the baseline. Temporary compiler inputs remove an existing UTF-8 BOM when present; the repository BOMs are preserved.
 
-- All 220 changed Lua files pass Lua 5.1 syntax checks.
+- All 219 changed Lua files pass Lua 5.1 syntax checks.
 - All Lua code tokens outside display strings and comments, bracket lookup keys, numeric values, preprocessor directives, and checked formatting/control sequences match the baseline.
 - All 130 Lua files with comment-only changes produce identical stripped bytecode.
 - C# changes are comments except for two corrected diagnostic strings. The Python change is a docstring; the batch change is a status message.
-- Original line counts, CRLF/LF counts, and BOM presence are preserved in all 242 changed source files. The exact changed-line ledger covers the complete source diff.
+- Original line counts, CRLF/LF counts, and BOM presence are preserved in all 240 changed source files. The exact changed-line ledger covers the complete source diff.
 - `git diff --check` passes. No full Parser build or in-game test was run.
 
 The source corrections and audit evidence are grouped into separate commits for review in [PR 2678](https://github.com/ATTWoWAddon/AllTheThings/pull/2678).
 
 ## Retained candidates
 
-Existing `logout` and `login` wording is retained in English localization strings.
+Existing `logout`, `login` and `readded` spellings are retained.
 
 The review files and [held data candidates](held-data-candidates.json) include source counts and reasons for leaving uncertain text unchanged. Examples include the official spellings `Nagative Feedback`, `Customer Retrival Harpoons`, `Miniscule Diamond Ring`, and the Classic versus Retail difference `Emmisary Gormok` / `Emissary Gormok`.
 
