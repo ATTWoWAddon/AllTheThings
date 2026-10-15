@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "This window shows you all of the race specific things for all races.",
+	readable = "This window shows you all of the race-specific things for all races.",
 	constant = "RACE_SPECIFIC_THINGS_TOOLTIP",
 	export = true,
 	text = {
-		en = "This window shows you all of the race specific things for all races.",
+		en = "This window shows you all of the race-specific things for all races.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

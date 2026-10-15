@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "All decor that you have not collected yet are displayed here.",
+	readable = "All decor that you have not collected yet is displayed here.",
 	constant = "AUCTIONS_DECOR_DESC",
 	export = true,
 	text = {
-		en = "All decor that you have not collected yet are displayed here.",
+		en = "All decor that you have not collected yet is displayed here.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

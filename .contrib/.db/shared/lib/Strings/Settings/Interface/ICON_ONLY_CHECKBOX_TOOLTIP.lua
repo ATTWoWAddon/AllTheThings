@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips ...",
+	readable = "Enable this option if you only want to see the icon in the top right corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips ...",
 	constant = "ICON_ONLY_CHECKBOX_TOOLTIP",
 	export = true,
 	text = {
-		en = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips ...",
+		en = "Enable this option if you only want to see the icon in the top right corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips ...",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver sólo el icono en la esquina superior derecha en vez del icono y del texto Coleccionado/No Coleccionado.\n\nAlgunas personas prefieren ventanas emergentes más pequeñas ...",
 		mx = "Activa esta opción si quieres ver sólo el icono en la esquina superior derecha en vez del icono y del texto Coleccionado/No Coleccionado.\n\nAlgunas personas prefieren ventanas emergentes más pequeñas ...",

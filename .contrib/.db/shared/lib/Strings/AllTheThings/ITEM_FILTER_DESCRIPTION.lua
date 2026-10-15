@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "You can search the ATT Database by using a item filter.",
+	readable = "You can search the ATT Database by using an item filter.",
 	constant = "ITEM_FILTER_DESCRIPTION",
 	export = true,
 	text = {
-		en = "You can search the ATT Database by using a item filter.",
+		en = "You can search the ATT Database by using an item filter.",
 		de = "Ihr könnt die ATT Datenbank nach Gegenstandsfiltern durchsuchen.",
 		es = "Puedes buscar en la base de datos de ATT usando un filtro de objetos.",
 		mx = "Puedes buscar en la base de datos de ATT usando un filtro de objetos.",

@@ -2913,7 +2913,7 @@ a = function(t)	-- Flag as Alliance Only
 	end
 	return t;
 end
--- Adds an item which is convertable between itself and another subitem by way of a subitem amount and whether the
+-- Adds an item which is convertible between itself and another subitem by way of a subitem amount and whether the
 -- item to subitem is possible
 --- Creates an item with a conversion cost to another item and optional reverse-conversion child.
 ---@param itemID ItemID Item ID produced by converting the specified subitems.

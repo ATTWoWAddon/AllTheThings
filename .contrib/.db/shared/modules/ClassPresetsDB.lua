@@ -189,7 +189,7 @@ Presets.SHAMAN[TOTEMS] = true;
 
 -- Common Filter types (Class doesn't matter)
 -- Assign the Common Filter Types into each Preset
--- TODO: why do we have some filter types assigned if they cant have an impact on ATT filtering?
+-- TODO: why do we have some filter types assigned if they can't have an impact on ATT filtering?
 local CommonNonTransmogFilterTypes = {
 	MISC,
 	NECK_F,

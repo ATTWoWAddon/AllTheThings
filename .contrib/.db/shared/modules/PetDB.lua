@@ -1647,8 +1647,8 @@ n(62697, 530);		-- Oily Slimeling
 n(61313, 403);		-- Parrot
 n(63547, 726);		-- Plains Monitor
 n(61322, 409);		-- Polly
-n(61141, 386);		-- Prarie Dog
-n(59702, 727);		-- Prarie Mouse
+n(61141, 386);		-- Prairie Dog
+n(59702, 727);		-- Prairie Mouse
 n(62526, 513);		-- Qiraji Guardling
 n(61080, 378);		-- Rabbit
 n(62120, 472);		-- Rabid Nut Varmint 5000

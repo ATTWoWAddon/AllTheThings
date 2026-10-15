@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "All spells or quests than can be learned by your character are displayed here.",
+	readable = "All spells or quests that can be learned by your character are displayed here.",
 	constant = "AUCTIONS_SPELLS_DESC",
 	export = true,
 	text = {
-		en = "All spells or quests than can be learned by your character are displayed here.",
+		en = "All spells or quests that can be learned by your character are displayed here.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

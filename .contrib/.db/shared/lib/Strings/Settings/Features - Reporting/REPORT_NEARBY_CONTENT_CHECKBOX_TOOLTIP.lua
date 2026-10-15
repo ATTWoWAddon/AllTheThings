@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.",
+	readable = "Enable this option if you want to see nearby content such as vignettes in chat. This feature provides popouts and waypoints when used.",
 	constant = "REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP",
 	export = true,
 	text = {
-		en = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.",
+		en = "Enable this option if you want to see nearby content such as vignettes in chat. This feature provides popouts and waypoints when used.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver contenido cercano como viñetas en el chat. Esta funcionalidad añade ventanas emergentes y puntos de referencia cuando se usa.",
 		mx = "Activa esta opción si quieres ver contenido cercano como viñetas en el chat. Esta funcionalidad añade ventanas emergentes y puntos de referencia cuando se usa.",

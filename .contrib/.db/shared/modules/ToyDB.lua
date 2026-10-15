@@ -14,7 +14,7 @@ i(184871);	-- Dark Portal
 i(38233);	-- Path of Illidan
 
 -- Wrath Classic --
-i(40110);	-- Haunted Momento (Should be a toy...)
+i(40110);	-- Haunted Memento (Should be a toy...)
 i(198647);	-- Fishspeaker's Lucky Lure
 i(38506);	-- Don Carlos' Famous Hat	-- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
 
@@ -807,7 +807,7 @@ i(164373);	-- Enchanted Soup Stone
 i(163735);	-- Foul Belly
 i(161342);	-- Gem of Acquiescence
 i(164310);	-- Glorious Pennant
-i(163201);	-- Gnoll Targetting Barrel
+i(163201);	-- Gnoll Targeting Barrel
 i(162973);	-- Greatfather Winter's Heartstone
 i(159749);	-- Haw'li's Hot & Spicy Chili
 i(163045);	-- Headless Horseman's Hearthstone

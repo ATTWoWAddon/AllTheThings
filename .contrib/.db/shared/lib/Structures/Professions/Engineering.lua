@@ -805,7 +805,7 @@ COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData
 	i(118498, {	-- Schematic: Night-Vision Mechshades (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
 	}),
-	i(118477, {	-- Schematic: Oglethorpe's Missle Splitter (RECIPE!)
+	i(118477, {	-- Schematic: Oglethorpe's Missile Splitter (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
 	}),
 	i(118487, {	-- Schematic: Personal Hologram (RECIPE!)
