@@ -370,7 +370,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			}),
 		})),
 		ach(40107, {	-- Harbinger of the Weatherd
-			-- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if prefered but this is good enough.
+			-- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if preferred but this is good enough.
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40115, {	-- Harbinger of the Carved

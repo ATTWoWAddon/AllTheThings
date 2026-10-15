@@ -941,7 +941,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					}),
 					ach(14156),	-- The Rajani
 				}),
-				--[[	-- NOTE: looks like blizzard messed this one up. Commenting it out incase they fix their bug, but this is currently obtainable
+				--[[	-- NOTE: looks like blizzard messed this one up. Commenting it out in case they fix their bug, but this is currently obtainable
 				n(FLIGHT_PATHS, {
 					fp(2544, {	-- Mistfall Village
 						["lvl"] = 120,

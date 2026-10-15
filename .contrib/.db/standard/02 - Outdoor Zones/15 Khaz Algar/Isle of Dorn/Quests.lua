@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 			}),
 			------ Dagran & Brinthe ------
-			q(83081, {	-- Not Enought Minerals
+			q(83081, {	-- Not Enough Minerals
 				["sourceQuests"] = { 78536 },	-- Impossible Odds
 				["provider"] = { "n", 225451 },	-- Dagran Thaurissan II
 				["coord"] = { 44.8, 64.4, ISLE_OF_DORN },
@@ -1116,14 +1116,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			q(78465, {	-- Golgrin's Reach
 				["sourceQuests"] = {
-					83081,	-- Not Enought Minerals
+					83081,	-- Not Enough Minerals
 					83082,	-- The Opalfront
 				},
 				["provider"] = { "n", 225451 },	-- Dagran Thaurissan II
 				["coord"] = { 44.8, 64.4, ISLE_OF_DORN },
 			}),
 			q(78467, {	-- Charge for a Charge
-				["sourceQuests"] = { 78465 },	-- Not Enought Minerals
+				["sourceQuests"] = { 78465 },	-- Golgrin's Reach
 				["provider"] = { "n", 225478 },	-- Speaker Brinthe
 				["coord"] = { 61.7, 70.2, ISLE_OF_DORN },
 				["groups"] = {
@@ -1139,7 +1139,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			q(79716, {	-- The History Beneath Us
-				["sourceQuests"] = { 78465 },	-- Not Enought Minerals
+				["sourceQuests"] = { 78465 },	-- Golgrin's Reach
 				["provider"] = { "n", 225453 },	-- Dagran Thaurissan II
 				["coord"] = { 61.6, 70.2, ISLE_OF_DORN },
 				["groups"] = {

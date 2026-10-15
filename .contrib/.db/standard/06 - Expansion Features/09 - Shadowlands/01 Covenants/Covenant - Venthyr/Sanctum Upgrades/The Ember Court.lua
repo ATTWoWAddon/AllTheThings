@@ -2552,7 +2552,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 					q(61936),	-- Triggered after Restock: Surveillance
 					q(61940),	-- Triggered after Restock: Fine Cutlery (Unflagged)
 					q(61932),	-- Triggered after Restock: Unconventional Weapons
-					-- q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
+					-- q(61825),	-- During Ember Court after finishing Glimpse of the Wilds Niya's minigame
 					q(61941),	-- Flagged at start and unflagged at end of Ember Court
 					q(61926),	-- Maybe Revendreth Etiquette?
 					-- q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day

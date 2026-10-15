@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(85105, {	-- Skyrider Racing - The Heaps Leap
 					["coord"] = { 34.8, 75.3, UNDERMINE },
 				}),
-				-- Special Assigments
+				-- Special Assignments
 				q(85487, {	-- Special Assignment: Boom! Headshot!
 					["coord"] = { 38.4, 52.0, UNDERMINE },
 					["groups"] = {

@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			-- n(155176, {	-- Old Nasha // has no questID
-			-- Under Honeyback Hive as their drop requires the faction unlocked, which horde cant.
+			-- Under Honeyback Hive as their drop requires the faction unlocked, which horde can't.
 			n(141239, {	-- Osca the Bloodied
 				["questID"] = 52461,
 				["coord"] = { 42.2, 63.1, STORMSONG_VALLEY },

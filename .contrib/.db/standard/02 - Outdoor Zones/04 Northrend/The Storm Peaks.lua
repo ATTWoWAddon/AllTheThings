@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, {
 							{ 70.4, 59.8, THE_STORM_PEAKS },	-- Frostfield Lake
 						},
 						["description"] = "Everfrost Chip spawns can be hard to find due to their scarcity. They can spawn anywhere between Brunnhildar Village and Thunderfall.\n\nAlthough you can open these while being hated with The Sons of Hodir, you will NOT get any Everfrost Chips!",
-						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly. Propably? Does only provide grey powder when hated.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly. Probably? Does only provide grey powder when hated.
 						["groups"] = {
 							i(44724),	-- Everfrost Chip (for repeating quests)
 							i(44725),	-- Everfrost Chip (for initial quest)

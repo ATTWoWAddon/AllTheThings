@@ -417,16 +417,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(89284, name(HEADERS.Quest,89268,{isWeekly=true})),	-- Lost Legends (weekly AW lockout)
 				q(97163, name(HEADERS.Quest,89268,{isWeekly=true})),	-- After turning in the weekly -- TODO: Confirm accountwide
 				-- weekly per character choice
-				q(89266, name(HEADERS.NPC,241213,{isWeekly=true})),	-- Triggered after chosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
-				q(91049, name(HEADERS.NPC,243491,{isWeekly=true})),	-- Triggered after chosing 'Cauldron of Echoes' during 'Lost Legends' (89268)
-				q(91516, name(HEADERS.NPC,243540,{isWeekly=true})),	-- Triggered after chosing 'The Echoless Flame' during 'Lost Legends' (89268)
-				q(91517, name(HEADERS.NPC,243542,{isWeekly=true})),	-- Triggered after chosing 'Russula's Outreach' during 'Lost Legends' (89268)
-				q(91455, name(HEADERS.NPC,243514,{isWeekly=true})),	-- Triggered after chosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
-				q(91518, name(HEADERS.NPC,243544,{isWeekly=true})),	-- Triggered after chosing 'Root of the World' during 'Lost Legends' (89268)
-				q(91519, name(HEADERS.NPC,244728,{isWeekly=true})),	-- Triggered after chosing 'Sky's Hope' during 'Lost Legends' (89268)
+				q(89266, name(HEADERS.NPC,241213,{isWeekly=true})),	-- Triggered after choosing 'Wey'nan's Ward' during 'Lost Legends' (89268)
+				q(91049, name(HEADERS.NPC,243491,{isWeekly=true})),	-- Triggered after choosing 'Cauldron of Echoes' during 'Lost Legends' (89268)
+				q(91516, name(HEADERS.NPC,243540,{isWeekly=true})),	-- Triggered after choosing 'The Echoless Flame' during 'Lost Legends' (89268)
+				q(91517, name(HEADERS.NPC,243542,{isWeekly=true})),	-- Triggered after choosing 'Russula's Outreach' during 'Lost Legends' (89268)
+				q(91455, name(HEADERS.NPC,243514,{isWeekly=true})),	-- Triggered after choosing 'Aln'hara's Bloom' during 'Lost Legends' (89268)
+				q(91518, name(HEADERS.NPC,243544,{isWeekly=true})),	-- Triggered after choosing 'Root of the World' during 'Lost Legends' (89268)
+				q(91519, name(HEADERS.NPC,244728,{isWeekly=true})),	-- Triggered after choosing 'Sky's Hope' during 'Lost Legends' (89268)
 				-- one-time per character completions
-				q(91053, name(HEADERS.Quest,88993)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Wey'nan's Ward'
-				q(91054, name(HEADERS.Quest,88994)),	-- Triggered after turning in 'Lost Legends' (89268), after chosing 'Bubbling Haranir Cauldron'
+				q(91053, name(HEADERS.Quest,88993)),	-- Triggered after turning in 'Lost Legends' (89268), after choosing 'Wey'nan's Ward'
+				q(91054, name(HEADERS.Quest,88994)),	-- Triggered after turning in 'Lost Legends' (89268), after choosing 'Bubbling Haranir Cauldron'
 				q(91511, name(HEADERS.Quest,88996)),	-- The Echoless Flame completed
 				q(91512, name(HEADERS.Quest,88997)),	-- Russula's Outreach completed
 				q(91456, name(HEADERS.Quest,88995)),	-- Aln'hara's Bloom completed

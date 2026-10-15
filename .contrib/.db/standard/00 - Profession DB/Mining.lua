@@ -86,11 +86,11 @@ i(0, 53122);		-- Toughness [Rank 3] [REMOVED: 6.0.2]
 i(0, 53123);		-- Toughness [Rank 4] [REMOVED: 6.0.2]
 i(0, 53124);		-- Toughness [Rank 5] [REMOVED: 6.0.2]
 --- NYI ---
-i(0, 49253);		-- Unkown
-i(0, 49254);		-- Unkown
-i(0, 49255);		-- Unkown
-i(0, 49260);		-- Unkown
-i(0, 53417);		-- Unkown
+i(0, 49253);		-- Unknown
+i(0, 49254);		-- Unknown
+i(0, 49255);		-- Unknown
+i(0, 49260);		-- Unknown
+i(0, 53417);		-- Unknown
 
 -----------------
 -- PATCH 3.0.3 --

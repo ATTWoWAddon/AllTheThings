@@ -432,7 +432,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				i(151876),	-- Vorel's Design Book (QI!)
 			},
 		}),
-		q(48076, {	-- A Crowning Achievment
+		q(48076, {	-- A Crowning Achievement
 			["sourceQuests"] = { 48075 },	-- A Colorful Key
 			["provider"] = { "n", 125343 },	-- Vorel
 			["coord"] = { 44.5, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
@@ -1426,7 +1426,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			prof(JEWELCRAFTING, {
 				q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
 				q(40302),	-- FLAG - Prospecting 01 - triggered when completing a jewelcrafting world quest in Dalaran
-				q(40303),	-- FLAG - Prospecting 02 - triggered when completing a jewelcrafting world quest in Dalaran, triggered when openning 'Wyrmtongue Cache of Shiny Things' (itemID 153118)
+				q(40303),	-- FLAG - Prospecting 02 - triggered when completing a jewelcrafting world quest in Dalaran, triggered when opening 'Wyrmtongue Cache of Shiny Things' (itemID 153118)
 				q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
 			}),
 		}),

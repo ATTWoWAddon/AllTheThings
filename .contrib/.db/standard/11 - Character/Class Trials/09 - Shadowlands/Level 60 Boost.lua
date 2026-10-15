@@ -344,7 +344,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 						i(154013),	-- Felsoul Stone of Destruction
 					}),
 				}),
-				--[[	Warlock items need further confirmation, since blizz missplaced all IDs for Level 50 Boost before. 154k IDs would make sense in comparison to other sets, but 170k would be all in NYI then.
+				--[[	Warlock items need further confirmation, since blizz misplaced all IDs for Level 50 Boost before. 154k IDs would make sense in comparison to other sets, but 170k would be all in NYI then.
 				cl(WARLOCK, {
 					cl(WARLOCK, AFFLICTION, {
 						i(170742),	-- Felsoul Stave

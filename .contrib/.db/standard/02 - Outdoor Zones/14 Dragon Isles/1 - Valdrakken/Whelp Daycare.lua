@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["groups"] = {
-						i(205232),	-- Iggy (PET) [Didnt get item. Insta Learned him...]
+						i(205232),	-- Iggy (PET) [Didn't get item. Insta Learned him...]
 					},
 				}),
 				q(72461, {	-- Anatidaephobia

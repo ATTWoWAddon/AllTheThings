@@ -1016,7 +1016,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			}),
 			q(8677, {	-- Darkhorn the Elder
 				-- #if AFTER CATA
-				["description"] = "The Elder is on the southern end of the central upper platform in Orgrimmar near the flight master. A visual clue for flying Alliance players is to look for the towering gate seperating Valley of Strength and the Drag.",
+				["description"] = "The Elder is on the southern end of the central upper platform in Orgrimmar near the flight master. A visual clue for flying Alliance players is to look for the towering gate separating Valley of Strength and the Drag.",
 				-- #endif
 				["coords"] = {
 					-- #if AFTER CATA

@@ -1677,7 +1677,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13568, {	-- Spirit of the Moonstalker
-					["description"] = "Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefuly, you can get only 1 buff.",
+					["description"] = "Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefully, you can get only 1 buff.",
 					["sourceQuests"] = {
 						13566,	-- Ritual Materials
 						13565,	-- Twice Removed
@@ -1694,7 +1694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 				}),
 				q(13567, {	-- Spirit of the Stag
-					["description"] = "Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefuly, you can get only 1 buff.",
+					["description"] = "Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefully, you can get only 1 buff.",
 					["sourceQuests"] = {
 						13566,	-- Ritual Materials
 						13565,	-- Twice Removed
@@ -1711,7 +1711,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 				}),
 				q(13597, {	-- Spirit of the Thistle Bear
-					["description"] = "Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefuly, you can get only 1 buff.",
+					["description"] = "Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefully, you can get only 1 buff.",
 					["sourceQuests"] = {
 						13566,	-- Ritual Materials
 						13565,	-- Twice Removed
@@ -3149,7 +3149,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(TREASURES, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209836, {	-- Althalaxx Orb
-					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterrupted looting time.",
 					["provider"] = { "o", 409289 },	-- Strange Orb
 					["coord"] = { 56.2, 26.5, DARKSHORE },
 					["timeline"] = { REMOVED_2_0_1 },
@@ -3221,7 +3221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
 					["providers"] = {
-						{ "o", 414532 },	-- Clliffspring Chest (mispelled?!)
+						{ "o", 414532 },	-- Clliffspring Chest (misspelled?!)
 						{ "i", 211471 },	-- Cliffspring Key
 					},
 					["coord"] = { 56.3, 34.9, DARKSHORE },

@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sym"] = {{"select","objectID",375746}},	-- Protoform Schematic
 			}),
 			o(375382, {	-- Crushed Supply Crate
-				["description"] = "To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",
+				["description"] = "To open it you need to pick up a Jiro Hammer(189768). On top of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",
 				["coord"] = { 56.8, 64.2, ZERETH_MORTIS },
 				["questID"] = 65489,
 			}),
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			o(375405, {	-- Filched Artifact
-				["description"] = "Jumping Puzzle, ontop of the tree ring.",
+				["description"] = "Jumping Puzzle, on top of the tree ring.",
 				["coord"] = { 49.8, 87.3, ZERETH_MORTIS },
 				["questID"] = 65503,
 				["groups"] = {
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			o(375481, {	-- Pilfered Curio
-				["description"] = "You need flying/teleport to get here, ontop of the pillar.",
+				["description"] = "You need flying/teleport to get here, on top of the pillar.",
 				["coord"] = { 60.8, 42.9, ZERETH_MORTIS },
 				["questID"] = 65542,
 				["groups"] = {
@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			o(375485, {	-- Protoflora Harvester
-				["description"] = "Jumping Puzzle. Go around to get ontop of the rock behind the treasure and jump down.",
+				["description"] = "Jumping Puzzle. Go around to get on top of the rock behind the treasure and jump down.",
 				["coord"] = { 52.8, 71.4, ZERETH_MORTIS },
 				["questID"] = 65546,
 				["groups"] = {
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["questID"] = 65447,
 			}),
 			o(375483, {	-- Stolen Scroll
-				["description"] = "Jumping Puzzle, climb ontop of the slumbering vault in Haven.",
+				["description"] = "Jumping Puzzle, climb on top of the slumbering vault in Haven.",
 				["coord"] = { 34.0, 67.6, ZERETH_MORTIS },
 				["questID"] = 65543,
 				["groups"] = {
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			o(374976, {	-- Symphonic Vault
-				["description"] = "The Broken Automa next to chest will give you sound queues, press the remaning 4 Broken Consonoles in the correct order. With your back against the entrance:\nTOP RIGHT\nDOWN LEFT\nDOWN RIGHT\nTOP LEFT.",
+				["description"] = "The Broken Automa next to chest will give you sound cues, press the remaining 4 Broken Consoles in the correct order. With your back against the entrance:\nTOP RIGHT\nDOWN LEFT\nDOWN RIGHT\nTOP LEFT.",
 				["coord"] = { 52.7, 63.0, ZERETH_MORTIS },
 				["questID"] = 65270,
 				["groups"] = {
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			o(375974, {	-- Crystallized Echo of the First Song
-				["description"] = "Spawns in multple places.",
+				["description"] = "Spawns in multiple places.",
 				["coords"] = {
 					{ 77.5, 59.0, ZERETH_MORTIS },
 					{ 77.4, 45.4, ZERETH_MORTIS },
@@ -618,7 +618,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			o(375404, {	-- Sandworn Chest
-				["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",
+				["description"] = "Key fragments drop in the area from mobs Sandworn Chest Key Fragment(190198)",
 				["coords"] = {
 					{ 60.0, 25.8, ZERETH_MORTIS },
 					{ 60.9, 37.9, ZERETH_MORTIS },

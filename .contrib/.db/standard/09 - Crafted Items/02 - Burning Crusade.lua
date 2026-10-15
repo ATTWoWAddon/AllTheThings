@@ -2569,7 +2569,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 43.10, 80.27, DARNASSUS },	-- Temple of the Moon
 					-- #if BEFORE 4.0.3
 					{ 21.0, 53.0, STORMWIND_CITY },	-- The Park
-					{ 60.0, 72.0, ASHENVALE },	-- Moonwell of Cleansing (exists after 4.0.3, but reduntant on practicality.)
+					{ 60.0, 72.0, ASHENVALE },	-- Moonwell of Cleansing (exists after 4.0.3, but redundant on practicality.)
 					-- #else
 					{ 57.11, 37.52, WETLANDS },	-- Greenwarden's Grove
 					{ 48.05, 18.54, DARNASSUS },	-- The Howling Oak

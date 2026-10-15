@@ -3034,7 +3034,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(SPECIAL, {
 				hqt(53655, {	-- Speak to Wan'be underwater at Fizzle and Pozzik's Speedway
 					["name"] = "Speak to Wan'be underwater at Fizzle and Pozzik's Speedway",
-					["sourceQuest"] = 53654,	-- Speak to Wan'be infront of Zaladormu in the Caverns of Time
+					["sourceQuest"] = 53654,	-- Speak to Wan'be in front of Zaladormu in the Caverns of Time
 					["qg"] = 143129,	-- Wan'be <The Explorer>
 					["qi"] = 163213,	-- Ghostly Explorer's Skull
 					["coord"] = { 78.8, 77.0, THOUSAND_NEEDLES },

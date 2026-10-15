@@ -171,7 +171,7 @@ root(ROOTS.Zones, {
 						{ 68.3, 67.6, HOWLING_FJORD },	-- By the main road west of Baelgun's Excavation Site
 						{ 71.7, 43.2, HOWLING_FJORD },	-- East of the road east of Utgarde Keep
 						{ 73.55, 64.9, ICECROWN },	-- Between The Broken Front and Scourgeholme
-						{ 44.2, 33.6, ICECROWN },	-- Northen end of Ironwall Rampart
+						{ 44.2, 33.6, ICECROWN },	-- Northern end of Ironwall Rampart
 						{ 48.3, 87.1, ICECROWN },	-- The Court of Bones, southwest by the citadel wall
 						{ 36.9, 19.25, SHOLAZAR_BASIN },	-- Shelf above Spearborn Encampment
 						{ 58.3, 22.1, SHOLAZAR_BASIN },	-- Shelf north of the Bonefields

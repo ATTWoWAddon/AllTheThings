@@ -4526,7 +4526,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
 				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
 				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
-				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
+				{ 37.5, 56.2, BLASTED_LANDS },	-- Northern Tainted Forest
 				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
 				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
 				-- #endif
@@ -4575,7 +4575,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
 				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
 				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
-				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
+				{ 37.5, 56.2, BLASTED_LANDS },	-- Northern Tainted Forest
 				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
 				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
 				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
@@ -5003,7 +5003,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(3404, {	-- Buzzard Wing
 			["coords"] = {
-				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
+				{ 47.1, 42.0, TANARIS },	-- Northern Abyssal Sands
 				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
 			},
 			["crs"] = {
@@ -5185,7 +5185,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(12207, {	-- Giant Egg
 			["coords"] = {
-				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
+				{ 47.1, 42.0, TANARIS },	-- Northern Abyssal Sands
 				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
 			},
 			["crs"] = {

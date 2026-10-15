@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["questID"] = 92348,
 					["groups"] = { i(246299) },	-- Blade of Lost Hope (COSMETIC!)
 				}),
-				-- Groupping these together since they are all part of the same treasure
+				-- Grouping these together since they are all part of the same treasure
 				o(503363, {	-- Battered Book
 					["coord"] = { 66.6, 44.8, KARESH },
 					["questID"] = 86415,

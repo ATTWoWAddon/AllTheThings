@@ -489,7 +489,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 196806 },	-- Barst
 					["coord"] = { 1.2, 39.2, THE_AZURE_SPAN },
 				}),
-				q(71015, {	-- All Brawn, No Brains [BUG QUEST CANT COMPLETE]
+				q(71015, {	-- All Brawn, No Brains [BUG QUEST CAN'T COMPLETE]
 					["sourceQuests"] = { 71013 },	-- No Vengeance on an Empty Stomach
 					["provider"] = { "n", 196812 },	-- Old Grimtusk
 					["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
@@ -1498,7 +1498,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199976 },	-- Azuregos
 					["coord"] = { 22.5, 23.8, BOREAN_TUNDRA },
 				}),
-					-- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
+					-- Quests to select next zone (Blizzard made them incompletable. They disappear once you choose any of the zones)
 				q(72940, {	-- Where in the World is a Lost Blue Dragon?
 					["sourceQuests"] = {
 						72938,	-- Archival Arrival [First questchain part]

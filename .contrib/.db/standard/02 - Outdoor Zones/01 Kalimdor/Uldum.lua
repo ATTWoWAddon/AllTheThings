@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ 50.4, 21.8, ULDUM },	-- Sahket Wastes
 							{ 65.5, 33.4, ULDUM },	-- Obelisk of the Stars
 							{ 76.0, 55.7, ULDUM },	-- The Steps of Fate
-							{ 60.8, 72.7, ULDUM },	-- Lost City ofthe Tol'vir
+							{ 60.8, 72.7, ULDUM },	-- Lost City of the Tol'vir
 						},
 					}),
 					pet(545, {	-- Leopard Scorpid (PET!)

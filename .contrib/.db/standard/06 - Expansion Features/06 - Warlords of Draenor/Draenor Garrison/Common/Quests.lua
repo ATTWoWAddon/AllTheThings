@@ -1993,7 +1993,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(36100, {	-- Building For Professions
-				["description"] = "Becomes available after completing any seconday profession intro quest.",
+				["description"] = "Becomes available after completing any secondary profession intro quest.",
 				["sourceQuest"] = 34586,	-- Establish Your Garrison
 				["qg"] = 77209,	-- Baros Alexston
 				["coords"] = {
@@ -2004,7 +2004,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["DisablePartySync"] = true,
 			}),
 			q(37669, {	-- Building For Professions
-				["description"] = "Becomes available after completing any seconday profession intro quest.",
+				["description"] = "Becomes available after completing any secondary profession intro quest.",
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
 				["qg"] = 78466,	-- Gazlowe
 				["coords"] = {

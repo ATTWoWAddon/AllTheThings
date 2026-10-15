@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 53.0, 66.4, THE_WAKING_SHORES },
 				},
 				["questID"] = 73890,
-				["groups"] = {	-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
+				["groups"] = {	-- He "drops" 4 rare npcs upon dying, but they have no drops. CRS doesn't seem useful
 					n(192738),	-- Brundin the Dragonbane
 					n(192741),	-- Flamebreaker Grella
 					n(192744),	-- Scalemelter Dorbane

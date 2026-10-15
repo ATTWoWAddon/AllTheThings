@@ -1332,7 +1332,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					["description"] = "Fish in the waters of the Wellspring Atrium.",
 				}),
 				i(210784, {	-- Xena, the Whimsical Whiskerfish
-					["description"] = "First get the Attuned Angler Buff by returing 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
+					["description"] = "First get the Attuned Angler Buff by returning 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
 					["cost"] = {
 						{ "i", 210783, 10 },	-- Awakening Sunfish
 						{ "i", 210782, 10 },	-- Slumbering Moonfish

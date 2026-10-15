@@ -406,7 +406,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				--q(93882),	-- Restored Coffer Key (itemID 263188)
 				--q(93883),	-- Restored Coffer Key (itemID 263191)
 
-				--q(93686),	-- tiggered after a delve
+				--q(93686),	-- triggered after a delve
 				q(92888, name(HEADERS.NPC, 252892, {isWeekly=true})),	-- Nullaeus ? and ??
 			}),
 		},

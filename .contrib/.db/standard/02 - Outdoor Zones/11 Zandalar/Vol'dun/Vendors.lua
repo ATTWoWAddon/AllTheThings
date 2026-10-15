@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(138919, {	-- Tukuku <Ancient Scrolls>
 				["coord"] = { 62.0, 20.8, VOLDUN },
 				["groups"] = {
-					-- Common Vendor Item added here so theres at least one source for cost item same zone as the rare
+					-- Common Vendor Item added here so there's at least one source for cost item same zone as the rare
 					i(161128),	-- Seaside Leafy Greens Mix
 				},
 			}),

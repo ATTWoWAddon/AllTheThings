@@ -249,7 +249,7 @@ root(ROOTS.WorldEvents,
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MID, {
 		n(DECOR_DUEL, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
-			q(93914),	-- Triggered after interracting with Gamesmaster Fleurian during 'Edification of the Worthy' (93907)
+			q(93914),	-- Triggered after interacting with Gamesmaster Fleurian during 'Edification of the Worthy' (93907)
 		})),
 	}),
 });

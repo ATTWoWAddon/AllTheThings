@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(219760, {	-- Da'kash Grimledger <Quartermaster>
 				["coord"] = { 46.5, 45.1, VALDRAKKEN },
-				["timeline"] = { REMOVED_PLUNDERSTORM_END },	-- Was added at the end of Plunderstorm. Previously was only avaiable if you had Renown 5 or higher of the Keg Leg Faction.
+				["timeline"] = { REMOVED_PLUNDERSTORM_END },	-- Was added at the end of Plunderstorm. Previously was only available if you had Renown 5 or higher of the Keg Leg Faction.
 				["description"] = "Beware: Talking to this NPC will also unlock the Keg's Leg Faction, but there is no method to get reputation for it.",
 				["groups"] = {
 					i(216775, {	-- Deadly Dagger

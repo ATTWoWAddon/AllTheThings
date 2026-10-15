@@ -1557,8 +1557,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(175286),	-- Jambani Shoulderpads
 					azewrongItem(175278),	-- Zanchuli Cowl
 					azewrongItem(175288),	-- Zanchuli Mantle
-					-- i(175317),	-- Sea Raider's Helmet // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
-					-- i(175319),	-- Sea Raider's Spaulders  // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
+					-- i(175317),	-- Sea Raider's Helmet // Alliance appearance // Sourced under Proudmoore's Parley/Alliance Quest
+					-- i(175319),	-- Sea Raider's Spaulders  // Alliance appearance // Sourced under Proudmoore's Parley/Alliance Quest
 				},
 			}),
 			q(49814, {	-- The Scent for a Brutosaur
@@ -2027,7 +2027,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(175293),	-- Rastari Helmet
 					azewrongItem(175280),	-- Rastari Breastplate
 					-- i(175294),	-- Sea Raider's Greathelm // Alliance appearance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
-					-- i(175354),	-- Sea Raider's Breastplate // Alliance apperance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
+					-- i(175354),	-- Sea Raider's Breastplate // Alliance appearance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
 				},
 			}),
 			q(49276, {	-- The Thrill of Exploration

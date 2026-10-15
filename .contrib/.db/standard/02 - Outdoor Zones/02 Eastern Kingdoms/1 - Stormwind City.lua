@@ -5785,7 +5785,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"select", "npcID", 158061},					-- Select Historian Ma'di
-						{"pop"},										-- Discard Header and aquire their children
+						{"pop"},										-- Discard Header and acquire their children
 					},
 				}),
 				n(113404, {	-- Illidari Darkdealer

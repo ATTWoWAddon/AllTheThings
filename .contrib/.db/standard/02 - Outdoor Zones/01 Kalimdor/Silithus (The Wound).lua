@@ -407,7 +407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 36.0, 50.5, TWILIGHT_HIGHLANDS },
 							["timeline"] = { ADDED_8_2_0 },
 							["maps"] = {
-								1476,	-- Twilight Highlands (Szenario)
+								1476,	-- Twilight Highlands (Scenario)
 							},
 							["groups"] = {
 								i(168280),	-- Lost Scale of the Scarlet Broodmother (QI!)
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(58615, {	-- Whispers in the Dark
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
 							["qg"] = 161805,	-- Magni Bronzebeard
-							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },	-- technicaly 1604?
+							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },	-- technically 1604?
 							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(56185, {	-- Whispers of N'zoth (A)

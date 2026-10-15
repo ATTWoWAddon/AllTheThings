@@ -407,7 +407,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(39341, {	-- Vault of the Wardens: Demon's Bile
-			["description"] = "Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",
+			["description"] = "Need to bring a Skaggldrynk and drink in front of the boss door, located west section after Inquisitor Tormentorum.",
 			["sourceQuests"] = {
 				39339,	-- A Fragile Crucible
 				39340,	-- Lining the Crucible

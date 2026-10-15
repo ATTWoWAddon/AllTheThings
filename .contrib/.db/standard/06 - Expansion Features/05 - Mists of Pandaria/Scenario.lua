@@ -1340,8 +1340,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
 	n(SCENARIOS, {
 		q(31987, { ["timeline"] = { ADDED_5_0_4 } }),	-- LFGDungeons - Theramore Launch Event
-		q(32817),	-- Complete "Loyalty" Scenario - triggeres when turning in "The King and the Council"
-		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario - triggeres when turning in "The Warchief and the Darkness"
+		q(32817),	-- Complete "Loyalty" Scenario - triggers when turning in "The King and the Council"
+		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario - triggers when turning in "The Warchief and the Darkness"
 		q(32898),	-- Daily Scenario Random (1st) (Mists)
 		q(32899),	-- Daily Scenario Random (Nth) (Mists)
 		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth

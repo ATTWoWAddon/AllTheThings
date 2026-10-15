@@ -94,7 +94,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
 					["questID"] = 43760,
 					["coord"] = { 79.5, 89.3, EYE_OF_AZSHARA },
 					["sourceQuest"] = 43737,	-- Step 10: Hungering Orb
-					["description"] = "|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone. Head to |cFFFFFFFF79.52, 89.31|r. Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock throught the seaweed. Swim up and to the platform above and through the hole on right side. Now swim through the seaweed hole on left and down. Turn around and swim under the beam then through the seaweed to the left. Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",
+					["description"] = "|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone. Head to |cFFFFFFFF79.52, 89.31|r. Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock through the seaweed. Swim up and to the platform above and through the hole on right side. Now swim through the seaweed hole on left and down. Turn around and swim under the beam then through the seaweed to the left. Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",
 				}),
 				o(252434, {	-- Step 12: Hungering Orb
 					["model"] = 249664,

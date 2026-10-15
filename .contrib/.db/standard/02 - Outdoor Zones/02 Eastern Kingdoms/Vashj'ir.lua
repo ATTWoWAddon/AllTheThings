@@ -2799,7 +2799,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuests"] = {
 								25955,	-- A Better Vantage
 								25952,	-- Caught Off-Guard
-								25953,	-- Swift Approach (defintely required)
+								25953,	-- Swift Approach (definitely required)
 							},
 							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 51.6, 62.7, VASHJIR_SHIMMERING_EXPANSE },
