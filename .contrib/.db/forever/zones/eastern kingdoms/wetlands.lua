@@ -70,20 +70,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98190, {	-- A Friend of the Family (1/2)
 				sourceQuest = 98189,	-- Return the Statuette (2/2)
 				qg = 2104,	-- Captain Stoutfist
-				qi = 279595,	-- Menethil Statuette
 				coord = { 9.8, 57.4, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				qi = 279595,	-- Menethil Statuette
 				lvl = 20,
 			}),
 			q(98191, {	-- A Friend of the Family (2/2)
 				sourceQuest = 98190,	-- A Friend of the Family (1/2)
 				qg = 1748,	-- Highlord Bolvar Fordragon
-				qi = 269598,	-- Menethil Statuette
 				coord = { 80.0, 38.6, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 269598,	-- Menethil Statuette
 				lvl = 20,
 				groups = {
 					i(281296),	-- Knight's Lance
@@ -180,10 +180,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98209, {	-- Bloom of the Heavens (2/2)
 				sourceQuest = 98208,	-- Bloom of the Heavens (1/2)
 				qg = 270844,	-- Sylessa Duskwhisper
-				qi = 279924,	-- Nord'el
 				coord = { 8.0, 55.9, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
+				qi = 279924,	-- Nord'el
 				lvl = 22,
 			}),
 			q(88756, {	-- Bring Back a Bang
@@ -256,9 +256,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(469, {	-- Daily Delivery
 				qg = 2093,	-- Einar Stonegrip
-				qi = 3347,	-- Bundle of Crocolisk Skins
 				coord = { 49.8, 39.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				qi = 3347,	-- Bundle of Crocolisk Skins
 				lvl = 18,
 			}),
 			q(98291, {	-- Death to the Dragonmaw
@@ -345,11 +345,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98313, {	-- For Further Study
 				sourceQuest = 98310,	-- Gleaning Our Future
 				qg = 1077,	-- Prospector Whelgar
-				qi = 280403,	-- Whelgar Relic Package (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
+				qi = 280403,	-- Whelgar Relic Package (PQI!)
 				lvl = 24,
 			}),
 			q(98293, {	-- Forced Disarmament
@@ -398,10 +398,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98310, {	-- Gleaning Our Future
 				sourceQuest = 98216,	-- Understanding Our Present
 				qg = 1077,	-- Prospector Whelgar
-				qi = 280394,	-- Goaz Stone (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 280394,	-- Goaz Stone (PQI!)
 				lvl = 24,
 				groups = {
 					objective(1, {	-- 0/1 Heart of Ados
@@ -438,9 +438,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(306, {	-- In Search of The Excavation Team (2/2)
 				sourceQuest = 305,	-- In Search of The Excavation Team (1/2)
 				qg = 1076,	-- Merrin Rockweaver
-				qi = 2639,	-- Merrin's Letter
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				qi = 2639,	-- Merrin's Letter
 				lvl = 21,
 			}),
 			q(290, {	-- Lifting the Curse
@@ -484,17 +484,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(465, {	-- Nek'rosh's Gambit
 				sourceQuest = 464,	-- War Banners
 				qg = 2104,	-- Captain Stoutfist
-				qi = 3339,	-- Dwarven Tinder
 				coord = { 9.8, 57.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				qi = 3339,	-- Dwarven Tinder
 				lvl = 23,
 			}),
 			q(98223, {	-- Old Habits
 				provider = { "o", 671518 },	-- Tattered Spellbook
-				qi = 280042,	-- Tattered Spellbook (PQI!)
 				coord = { 53.5, 54.5, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 280042,	-- Tattered Spellbook (PQI!)
 				lvl = 23,
 				groups = {
 					i(281306),	-- Flamescarred Spellbook
@@ -593,9 +593,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(286, {	-- Return the Statuette (1/2)
 				sourceQuest = 285,	-- Search More Hovels
 				provider = { "o", 259 },	-- Half-buried Barrel
-				qi = 2625,	-- Menethil Statuette
 				coord = { 14.0, 34.8, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				qi = 2625,	-- Menethil Statuette
 				lvl = 20,
 				groups = {
 					i(2950),	-- Icicle Rod
@@ -605,10 +605,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98189, {	-- Return the Statuette (2/2)
 				sourceQuest = 286,	-- Return the Statuette (1/2)
 				qg = 1242,	-- Karl Boran
-				qi = 279589,	-- Menethil Statuette
 				coord = { 8.4, 58.6, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 279589,	-- Menethil Statuette
 				lvl = 20,
 			}),
 			q(285, {	-- Search More Hovels
@@ -928,10 +928,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98216, {	-- Understanding Our Present
 				sourceQuest = 299,	-- Uncovering the Past
 				qg = 1077,	-- Prospector Whelgar
-				qi = 279996,	-- Goaz Stone (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 279996,	-- Goaz Stone (PQI!)
 				lvl = 23,
 				groups = {
 					objective(1, {	-- 0/1 Ados Fragment
@@ -967,11 +967,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98300, {	-- Word to Ironforge
 				sourceQuest = 98297,	-- Stopping the Cycle
 				qg = 270637,	-- Howin Kindfeather
-				qi = 280392,	-- Howin's Missive (PQI!)
 				coord = { 49.3, 42.1, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
+				qi = 280392,	-- Howin's Missive (PQI!)
 				lvl = 24,
 			}),
 			q(484, {	-- Young Crocolisk Skins

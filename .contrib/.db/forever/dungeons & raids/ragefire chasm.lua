@@ -50,9 +50,9 @@ root(ROOTS.Instances, {
 				q(5724, {	-- Returning the Lost Satchel
 					sourceQuest = 5722,	-- Searching for the Lost Satchel
 					qg = 11834,	-- Maur Grimtotem
-					qi = 14381,	-- Grimtotem Satchel
 					maps = { MAP.THUNDER_BLUFF },
 					races = HORDE_ONLY,
+					qi = 14381,	-- Grimtotem Satchel
 					lvl = 9,
 					groups = {
 						i(15452),	-- Featherbead Bracers

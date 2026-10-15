@@ -150,8 +150,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 				qg = 11406,	-- High Priest Rohan <Priest Trainer>
 				coord = { 25.0, 8.2, MAP.IRONFORGE },
-				classes = { PRIEST },
 				races = { DWARF },
+				classes = { PRIEST },
 				lvl = 20,
 				groups = {
 					recipe(6346),	-- Fear Ward
@@ -332,8 +332,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 				qg = 11406,	-- High Priest Rohan <Priest Trainer>
 				coord = { 25.0, 8.2, MAP.IRONFORGE },
-				classes = { PRIEST },
 				races = { NIGHTELF },
+				classes = { PRIEST },
 				lvl = 20,
 				groups = {
 					r(2651, {	-- Elune's Grace (Rank 1)
@@ -344,9 +344,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(95041, {	-- Data Hoaders
 				qg = 11028,	-- Jemma Quikswitch
 				coord = { 67.7, 44.2, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
-				maps = { MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DUN_MOROGH },
+				races = ALLIANCE_ONLY,
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/7 Gnomeregan Archival Data
@@ -415,9 +415,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					4181,	-- Goblin Engineering
 				},
 				qg = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 68.8, 45.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
+				qi = 10789,	-- Manual of Engineering Disciplines
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				lvl = 30,
@@ -435,9 +435,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					--4181,	-- Goblin Engineering
 				},
 				qg = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 68.8, 45.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
+				qi = 10789,	-- Manual of Engineering Disciplines
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				lvl = 30,
@@ -446,8 +446,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 1681,	-- Ironband's Compound
 				qg = 6031,	-- Tormus Deepforge
 				coord = { 49.0, 42.6, MAP.IRONFORGE },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					i(6978),	-- Umbral Axe
@@ -459,9 +459,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(6388, {	-- Gryth Thurden
 				sourceQuest = 6391,	-- Ride to Ironforge
 				qg = 4256,	-- Golnir Bouldertoe
-				qi = 16311,	-- Honorary Picks
 				coord = { 51.0, 26.0, MAP.IRONFORGE },
 				races = { DWARF, GNOME },
+				qi = 16311,	-- Honorary Picks
 				lvl = 10,
 			}),
 			q(6609, {	-- I Got Nothin' Left!
@@ -496,10 +496,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(1074, {	-- Ineptitude + Chemicals = Fun (2/2)
 				sourceQuest = 1073,	-- Ineptitude + Chemicals = Fun (1/2)
 				qg = 4081,	-- Lomac Gearstrip
-				qi = 5732,	-- NG-5
 				coord = { 71.9, 51.9, MAP.IRONFORGE },
 				maps = { MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
+				qi = 5732,	-- NG-5
 				lvl = 17,
 			}),
 			q(1708, {	-- Iron Coral
@@ -507,8 +507,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 6169,	-- Klockmort Spannerspan
 				coord = { 68.2, 46.2, MAP.IRONFORGE },
 				maps = { MAP.WETLANDS },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/20 Searing Coral
@@ -532,8 +532,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 6031,	-- Tormus Deepforge
 				coord = { 49.0, 42.6, MAP.IRONFORGE },
 				maps = { MAP.DUN_MOROGH },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Umbral Ore
@@ -549,8 +549,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 2299,	-- To Hulfdan!
 				qg = 5165,	-- Hulfdan Blackbeard
 				coord = { 51.6, 14.8, MAP.IRONFORGE },
-				classes = { ROGUE },
 				races = ALLIANCE_ONLY,
+				classes = { ROGUE },
 				isBreadcrumb = true,
 				lvl = 16,
 			}),
@@ -558,8 +558,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 1708,	-- Iron Coral
 				qg = 6169,	-- Klockmort Spannerspan
 				coord = { 68.2, 46.2, MAP.IRONFORGE },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					i(6974),	-- Fire hardened Gauntlets
@@ -571,8 +571,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 5144,	-- Bink <Mage Trainer>
 				coord = { 27.3, 8.3, MAP.IRONFORGE },
 				maps = { MAP.DUN_MOROGH },
-				classes = { MAGE },
 				races = ALLIANCE_ONLY,
+				classes = { MAGE },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Mage-tastic Gizmonitor
@@ -590,8 +590,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 3641,	-- Show Your Work
 				qg = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 				coord = { 69.8, 50.2, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
 				cost = {{ "g", 20000 }},	-- 2g
+				races = ALLIANCE_ONLY,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				repeatable = true,
@@ -609,18 +609,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(6392, {	-- Return to Brock
 				sourceQuest = 6388,	-- Gryth Thurden
 				qg = 1573,	-- Gryth Thurden
-				qi = 16311,	-- Honorary Picks
 				coord = { 55.6, 48.0, MAP.IRONFORGE },
 				maps = { MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
+				qi = 16311,	-- Honorary Picks
 				lvl = 10,
 			}),
 			q(3461, {	-- Return to Tymor
 				sourceQuest = 3449,	-- Arcane Runes
 				qg = 8392,	-- Pilot Xiggs Fuselighter
-				qi = 10445,	-- Drawing Kit
 				coord = { 77.8, 91.4, MAP.AZSHARA },
 				races = ALLIANCE_ONLY,
+				qi = 10445,	-- Drawing Kit
 				lvl = 45,
 				groups = {
 					i(10707),	-- Steelsmith Greaves
@@ -638,8 +638,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 				qg = 5142,	-- Braenna Flintcrag <Priest Trainer>
 				coord = { 24.6, 9.2, MAP.IRONFORGE },
-				classes = { PRIEST },
 				races = { NIGHTELF },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					r(10797, {	-- Starshards (Rank 1)
@@ -650,9 +650,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(683, {	-- Sara Balloo's Plea
 				sourceQuest = 637,	-- Sully Balloo's Letter
 				qg = 2695,	-- Sara Balloo
-				qi = 4514,	-- Sara Balloo's Plea
 				coord = { 63.5, 67.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
+				qi = 4514,	-- Sara Balloo's Plea
 				lvl = 25,
 			}),
 			q(3641, {	-- Show Your Work
@@ -807,10 +807,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			q(1779, {	-- The Tome of Divinity (5/8)
 				sourceQuest = 1778,	-- The Tome of Divinity (4/8)
 				qg = 6179,	-- Tiza Battleforge
-				qi = 6866,	-- Symbol of Life
 				coord = { 27.4, 12.0, MAP.IRONFORGE },
 				races = { DWARF },
 				classes = { PALADIN },
+				qi = 6866,	-- Symbol of Life
 				lvl = 12,
 			}),
 			q(1783, {	-- The Tome of Divinity (6/8)
@@ -866,8 +866,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 1678,	-- Vejrek
 				qg = 6114,	-- Muren Stormpike
 				coord = { 70.6, 90.4, MAP.IRONFORGE },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
@@ -885,8 +885,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 6114,	-- Muren Stormpike
 				coord = { 70.6, 90.4, MAP.IRONFORGE },
 				maps = { MAP.DUN_MOROGH },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Vejrek's Head
@@ -901,10 +901,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(97263, {	-- Your Package Has Arrived
 				provider = { "o", 660964 },	-- Misplaced Packages
-				qi = 277505,	-- Misplaced Package
 				coord = { 72.6, 48.5, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				qi = 277505,	-- Misplaced Package
 			}),
 		}),
 		n(TREASURES, {
@@ -919,8 +919,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 		}),
 		n(VENDORS, {
 			n(7978, {	-- Bimble Longberry <Fruit Vendor>
-				coord = { 32.4, 21.2, MAP.IRONFORGE },
 				description = "Walks around The Mystic Ward.",
+				coord = { 32.4, 21.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(8953),	-- Deep Fried Plantains
@@ -1302,8 +1302,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			n(5109, {	-- Myra Tyrngaarde <Bread Vendor>
-				coord = { 29.8, 67.5, MAP.IRONFORGE },
 				description = "Walks around The Commons.",
+				coord = { 29.8, 67.5, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(4541),	-- Freshly Baked Bread
@@ -1403,8 +1403,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			n(5124, {	-- Sognar Cliffbeard <Meat Vendor>
-				coord = { 62.1, 72.0, MAP.IRONFORGE },
 				description = "Walks around The Military Ward.",
+				coord = { 62.1, 72.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(4599),	-- Cured Ham Steak
@@ -1428,8 +1428,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			n(9099, {	-- Sraaz <Pie Vendor>
-				coord = { 46.6, 47.2, MAP.IRONFORGE },
 				description = "Walks around The Great Forge.",
+				coord = { 46.6, 47.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(8950),	-- Homemade Cherry Pie
@@ -1482,9 +1482,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			n(8117, {	-- Wizbang Booms
-				coord = { 31.8, 63.4, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
 				description = "This NPC is only available on July 4th.",
+				races = ALLIANCE_ONLY,
+				coord = { 31.8, 63.4, MAP.IRONFORGE },
 				sym = {{ "select", "itemID",
 					8626,	-- Blue Sparkler
 					8625,	-- White Sparkler

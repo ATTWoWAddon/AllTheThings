@@ -53,20 +53,20 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						sourceQuest = 1516,	-- Call of Earth (1/3)
 						altQuests = { 1520 },	-- Call to Earth (2/3 Mulgore)
 						qg = 5887,	-- Canaga Earthcaller
-						qi = 6635,	-- Earth Sapta
 						coord = { 42.4, 69.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
+						qi = 6635,	-- Earth Sapta
 						lvl = 4,
 					}),
 					q(1518, {	-- Call of Earth (3/3)
 						sourceQuest = 1517,	-- Call of Earth (2/3)
 						altQuests = { 1521 },	-- Call to Earth (3/3 Mulgore)
 						qg = 5891,	-- Minor Manifestation of Earth
-						qi = 6656,	-- Rough Quartz
 						coord = { 44.0, 76.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
+						qi = 6656,	-- Rough Quartz
 						lvl = 4,
 						groups = {
 							recipe(8071),	-- Stoneskin Totem
@@ -103,34 +103,34 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					q(3088, {	-- Encrypted Parchment
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9560,	-- Encrypted Parchment
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { ROGUE },
+						qi = 9560,	-- Encrypted Parchment
 					}),
 					q(3083, {	-- Encrypted Tablet
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9554,	-- Encrypted Tablet
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { ROGUE },
+						qi = 9554,	-- Encrypted Tablet
 					}),
 					q(3087, {	-- Etched Parchment
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9553,	-- Etched Parchment
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { HUNTER },
+						qi = 9553,	-- Etched Parchment
 					}),
 					q(3082, {	-- Etched Tablet
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9564,	-- Etched Tablet
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { HUNTER },
+						qi = 9564,	-- Etched Tablet
 					}),
 					q(4402, {	-- Galgar's Cactus Apple Surprise
 						sourceQuest = 788,	-- Cutting Teeth
@@ -153,18 +153,18 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					q(3086, {	-- Glyphic Tablet
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9575,	-- Glyphic Tablet
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { MAGE },
+						qi = 9575,	-- Glyphic Tablet
 					}),
 					q(3085, {	-- Hallowed Tablet
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9561,	-- Hallowed Tablet
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { PRIEST },
+						qi = 9561,	-- Hallowed Tablet
 					}),
 					q(5649, {	-- In Favor of Spirituality
 						qg = 3707,	-- Ken'jai
@@ -194,18 +194,18 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					q(3089, {	-- Rune-Inscribed Parchment
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9568,	-- Rune-Inscribed Parchment
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { SHAMAN },
+						qi = 9568,	-- Rune-Inscribed Parchment
 					}),
 					q(3084, {	-- Rune-Inscribed Tablet
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9562,	-- Rune-Inscribed Tablet
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { SHAMAN },
+						qi = 9562,	-- Rune-Inscribed Tablet
 					}),
 					q(790, {	-- Sarkoth (1/2)
 						qg = 3287,	-- Hana'zua
@@ -232,18 +232,18 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					q(2383, {	-- Simple Parchment
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 12635,	-- Simple Parchment
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { WARRIOR },
+						qi = 12635,	-- Simple Parchment
 					}),
 					q(3065, {	-- Simple Tablet
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 6488,	-- Simple Tablet
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { WARRIOR },
+						qi = 6488,	-- Simple Tablet
 					}),
 					q(789, {	-- Sting of the Scorpid
 						sourceQuest = 788,	-- Cutting Teeth
@@ -265,10 +265,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					q(3090, {	-- Tainted Parchment
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
-						qi = 9579,	-- Tainted Parchment
 						coords = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC, TROLL },
 						classes = { WARLOCK },
+						qi = 9579,	-- Tainted Parchment
 					}),
 					q(6394, {	-- Thazz'ril's Pick
 						sourceQuest = 5441,	-- Lazy Peons
@@ -290,16 +290,16 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						--["sourceQuest"] = ,	-- 
 						provider = { "o", 654925 },	-- Lost Journal
 						coord = { 42.82, 69.14, MAP.DUROTAR },
-						qi = 275022,	-- Lost Journal (PQI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
+						qi = 275022,	-- Lost Journal (PQI!)
 						lvl = 4,
 					}),
 					q(792, {	-- Vile Familiars
 						qg = 3145,	-- Zureetha Fargaze
 						coord = { 42.85, 69.14, MAP.DUROTAR },
-						classes = exclude(WARLOCK, ALL_CLASSES),
 						races = HORDE_ONLY,
+						classes = exclude(WARLOCK, ALL_CLASSES),
 						lvl = 2,
 						groups = {
 							objective(1, {	-- 0/12 Vile Familiar
@@ -317,8 +317,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					q(1485, {	-- Vile Familiars (Part 1 - Warlocks only!)
 						qg = 5765,	-- Ruzan
 						coord = { 42.6, 69.0, MAP.DUROTAR },
-						classes = { WARLOCK },
 						races = HORDE_ONLY,
+						classes = { WARLOCK },
 						groups = {
 							objective(1, {	-- 0/8 Vile Familiar Head
 								provider = { "i", 6487 },	-- Vile Familiar Head
@@ -331,8 +331,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						sourceQuest = 1485,	-- Vile Familiars (Part 1 - Warlocks only!)
 						qg = 5765,	-- Ruzan
 						coord = { 42.6, 69.0, MAP.DUROTAR },
-						classes = { WARLOCK },
 						races = HORDE_ONLY,
+						classes = { WARLOCK },
 						groups = {
 							i(4925),	-- Primitive Hand Blade
 							i(5778),	-- Primitive Walking Stick
@@ -434,9 +434,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(2161, {	-- A Peon's Burden
 				qg = 6786,	-- Ukor
-				qi = 7629,	-- Ukor's Burden
 				coord = { 52.0, 68.2, MAP.DUROTAR },
 				races = HORDE_ONLY,
+				qi = 7629,	-- Ukor's Burden
 			}),
 			q(97281, {	-- A Simmering Storm
 				provider = { "i", 277661 },	-- Dull Storm Orb
@@ -720,18 +720,18 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(840, {	-- Conscript of the Horde
 				qg = 3336,	-- Takrin Pathseeker
-				qi = 4992,	-- Recruitment Letter
 				coord = { 50.8, 43.5, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
+				qi = 4992,	-- Recruitment Letter
 				lvl = 10,
 			}),
 			q(842, {	-- Crossroads Conscription
 				sourceQuest = 840,	-- Conscript of the Horde
 				qg = 3337,	-- Kargal Battlescar
-				qi = 4995,	-- Signed Recruitment Letter
 				coord = { 62.26, 19.37, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				qi = 4995,	-- Signed Recruitment Letter
 				lvl = 10,
 			}),
 			q(806, {	-- Dark Storms
@@ -1007,9 +1007,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(829, {	-- Neeru Fireblade
 				sourceQuest = 827,	-- Skull Rock
 				qg = 3208,	-- Margoz
-				qi = 6658,	-- Example Collar
 				coord = { 56.4, 20.0, MAP.DUROTAR },
 				races = HORDE_ONLY,
+				qi = 6658,	-- Example Collar
 				lvl = 4,
 			}),
 			q(817, {	-- Practical Prey
@@ -1189,9 +1189,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(831, {	-- The Admiral's Orders (2/2)
 				sourceQuest = 830,	-- The Admiral's Orders (1/2)
 				qg = 3139,	-- Gar'Thok
-				qi = 4883,	-- Admiral Proudmoore's Orders
 				coord = { 52.0, 43.4, MAP.DUROTAR },
 				races = HORDE_ONLY,
+				qi = 4883,	-- Admiral Proudmoore's Orders
 			}),
 			q(924, {	-- The Demon Seed
 				sourceQuest = 809,	-- Ak'Zeloth
@@ -1408,8 +1408,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 				qg = 3706,	-- Tai'jin <Priest Trainer>
 				coord = { 54.2, 42.8, MAP.DUROTAR },
-				classes = { PRIEST },
 				races = { UNDEAD },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{

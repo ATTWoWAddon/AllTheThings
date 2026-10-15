@@ -30,10 +30,10 @@ root(ROOTS.Instances, {
 				q(92753, {	-- Destruction in Deadmines (1/2)
 					sourceQuest = 92752,	-- Explosive Consultation
 					qg = 253092,	-- Alba Fairmoon
-					qi = 254553,	-- Extra-Destructive Explosives (PQI!)
 					coord = { 52.5, 53.0, MAP.WESTFALL },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
+					qi = 254553,	-- Extra-Destructive Explosives (PQI!)
 					lvl = 9,
 				}),
 				q(92819, {	-- Destruction in Deadmines (2/2)

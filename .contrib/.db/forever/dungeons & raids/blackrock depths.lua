@@ -658,17 +658,17 @@ root(ROOTS.Instances, {
 				q(4183, {	-- The True Masters (1/6)
 					sourceQuest = 4182,	-- Dragonkin Menace
 					qg = 9562,	-- Helendis Riverhorn
-					qi = 11366,	-- Helendis Riverhorn's Letter
 					coord = { 85.8, 69.0, MAP.BURNING_STEPPES },
 					races = ALLIANCE_ONLY,
+					qi = 11366,	-- Helendis Riverhorn's Letter
 					lvl = 48,
 				}),
 				q(4184, {	-- The True Masters (2/6)
 					sourceQuest = 4183,	-- The True Masters (1/6)
 					qg = 344,	-- Magistrate Solomon
-					qi = 11367,	-- Solomon's Plea to Bolvar
 					coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 					races = ALLIANCE_ONLY,
+					qi = 11367,	-- Solomon's Plea to Bolvar
 					lvl = 48,
 				}),
 				q(4185, {	-- The True Masters (3/6)

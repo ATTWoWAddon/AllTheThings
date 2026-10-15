@@ -1122,8 +1122,8 @@ root(ROOTS.Instances, {
 							-- #endif
 						},
 						qg = 16013,	-- Deliana
-						qi = 21985,	-- Sealed Blood Container
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
+						qi = 21985,	-- Sealed Blood Container
 					}),
 					hordeQuestData = q(8923, {	-- A Supernatural Device [H]
 						sourceQuests = {
@@ -1151,8 +1151,8 @@ root(ROOTS.Instances, {
 							-- #endif
 						},
 						qg = 16012,	-- Mokvar
-						qi = 22382,	-- Sealed Venom Container
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
+						qi = 22382,	-- Sealed Venom Container
 					}),
 					maps = { MAP.TANARIS },
 					lvl = 58,
@@ -1160,7 +1160,6 @@ root(ROOTS.Instances, {
 				q(8948, {	-- Anthion's Old Friend
 					sourceQuest = 8947,	-- Anthion's Strange Request
 					qg = 16016,	-- Anthion Harmon
-					qi = 21983,	-- Incomplete Banner of Provocation
 					coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 					maps = {
 						MAP.DIRE_MAUL,
@@ -1169,6 +1168,7 @@ root(ROOTS.Instances, {
 						237,	-- Court of the Highborne
 						238,	-- Prison of Immol'Thar
 					},
+					qi = 21983,	-- Incomplete Banner of Provocation
 					lvl = 58,
 				}),
 				q(8947, {	-- Anthion's Strange Request

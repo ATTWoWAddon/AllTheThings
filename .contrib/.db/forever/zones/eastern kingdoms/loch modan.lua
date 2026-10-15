@@ -50,18 +50,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(161, {	-- A Dark Threat Looms (3/7)
 				sourceQuest = 199,	-- A Dark Threat Looms (2/7)
 				qg = 1093,	-- Chief Engineer Hinderweir VII
-				qi = 2563,	-- Strange Smelling Powder
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				qi = 2563,	-- Strange Smelling Powder
 				lvl = 16,
 			}),
 			q(274, {	-- A Dark Threat Looms (4/7)
 				sourceQuest = 161,	-- A Dark Threat Looms (3/7)
 				qg = 1073,	-- Ashlan Stonesmirk
-				qi = 2609,	-- Disarming Colloid
 				coord = { 50.0, 18.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				qi = 2609,	-- Disarming Colloid
 				lvl = 16,
 			}),
 			q(278, {	-- A Dark Threat Looms (5/7)
@@ -103,9 +103,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(280, {	-- A Dark Threat Looms (6/7)
 				sourceQuest = 278,	-- A Dark Threat Looms (5/7)
 				qg = 1093,	-- Chief Engineer Hinderweir VII
-				qi = 2610,	-- Disarming Mixture
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
+				qi = 2610,	-- Disarming Mixture
 				lvl = 16,
 			}),
 			q(283, {	-- A Dark Threat Looms (7/7)
@@ -231,10 +231,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(86585, {	-- Banner of the Fallen
 				qg = 269153,	-- Mountaineer Ylva
-				qi = 253247,	-- Banner of Ironforge
 				coord = { 31.8, 86.2, MAP.LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 253247,	-- Banner of Ironforge
 				groups = {
 					objective(1, {	-- 0/1 Headsplitter slain
 						provider = { "n", 269185 },	-- Headsplitter
@@ -316,9 +316,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(298, {	-- Excavation Progress Report
 				qg = 1344,	-- Prospector Ironband
-				qi = 2637,	-- Ironbrand's Progress Report
 				coord = { 65.9, 65.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
+				qi = 2637,	-- Ironbrand's Progress Report
 				lvl = 10,
 			}),
 			q(307, {	-- Filthy Paws
@@ -372,9 +372,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(6387, {	-- Honor Students
 				qg = 1681,	-- Brock Stoneseeker
-				qi = 16310,	-- Brock's List (PQI!)
 				coord = { 37.0, 47.8, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
+				qi = 16310,	-- Brock's List (PQI!)
 				lvl = 10,
 			}),
 			q(224, {	-- In Defense of the King's Lands (1/4)
@@ -535,9 +535,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(301, {	-- Report to Ironforge
 				sourceQuest = 298,	-- Excavation Progress Report
 				qg = 1105,	-- Jern Hornhelm
-				qi = 2637,	-- Ironbrand's Progress Report
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
+				qi = 2637,	-- Ironbrand's Progress Report
 				lvl = 10,
 			}),
 			q(468, {	-- Report to Mountaineer Rockgar
@@ -557,17 +557,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(6391, {	-- Ride to Ironforge
 				sourceQuest = 6387,	-- Honor Students
 				qg = 1572,	-- Thorgrum Borrelson
-				qi = 16310,	-- Brock's List
 				coord = { 33.9, 50.9, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
+				qi = 16310,	-- Brock's List
 				lvl = 10,
 			}),
 			q(86614, {	-- Silver of the Waves
 				provider = { "o", 665289 },	-- Discarded Fishing Toolbox
-				qi = 278051,	-- Monogrammed Silver Hair Clip
 				coord = { 50.6, 53.4, MAP.LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 278051,	-- Monogrammed Silver Hair Clip
 				lvl = 12,
 				groups = {
 					i(281256),	-- Repurposed Hair Band
@@ -592,10 +592,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(1338, {	-- Stormpike's Order
 				sourceQuest = 1339,	-- Mountaineer Stormpike's Task
 				qg = 1343,	-- Mountaineer Stormpike
-				qi = 5998,	-- Stormpike's Request
 				coord = { 24.7, 18.3, MAP.LOCH_MODAN },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				qi = 5998,	-- Stormpike's Request
 				lvl = 9,
 			}),
 			q(455, {	-- The Algaz Gauntlet
@@ -698,9 +698,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(531, {	-- Vyrin's Revenge (2/2)
 				sourceQuest = 271,	-- Vyrin's Revenge (1/2)
 				qg = 1187,	-- Daryl the Youngling
-				qi = 2713,	-- Ol' Sooty's Head
 				coord = { 83.4, 65.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
+				qi = 2713,	-- Ol' Sooty's Head
 				lvl = 15,
 				groups = {
 					i(3574),	-- Hunting Ammo Sack

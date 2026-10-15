@@ -90,10 +90,10 @@ root(ROOTS.Instances, {
 				q(95161, {	-- Remember That I Love You (2/2)
 					sourceQuest = 92415,	-- Remember That I Love You (1/2)
 					qg = 14450,	-- Orphan Matron Nightingale
-					qi = 251522,	-- Blood-Stained Letter (QS!)
 					coord = { 56.2, 54.2, MAP.STORMWIND_CITY },
 					maps = { MAP.DUSKWOOD },
 					races = ALLIANCE_ONLY,
+					qi = 251522,	-- Blood-Stained Letter (QS!)
 					lvl = 15,
 					groups = {
 						i(279870),	-- Tarnished Locket
@@ -135,9 +135,9 @@ root(ROOTS.Instances, {
 				q(97289, {	-- Unending Torment (2/5)
 					sourceQuest = 97288,	-- Unending Torment (1/5)
 					qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
-					qi = 268518,	-- Head of the Baron (PQI!)
 					coord = { 48.4, 69.4, MAP.UNDERCITY },
 					races = HORDE_ONLY,
+					qi = 268518,	-- Head of the Baron (PQI!)
 					lvl = 16,
 				}),
 				q(97290, {	-- Unending Torment (3/5)

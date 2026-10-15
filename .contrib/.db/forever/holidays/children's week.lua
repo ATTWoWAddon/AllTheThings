@@ -43,11 +43,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					4822,	-- You Scream, I Scream... [Alliance - Human] (removed)
 				},
 				qg = 14305,	-- Human Orphan
-				qi = 18598,	-- Human Orphan Whistle
 				coord = { 56.3, 54.0, MAP.STORMWIND_CITY },	-- Orphan Matron Nightingale
-				maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 				races = ALLIANCE_ONLY,
+				maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 				isYearly = true,
+				qi = 18598,	-- Human Orphan Whistle
 				lvl = 10,
 				groups = WARDEN_OF_THE_GROUPS,
 			}),
@@ -57,11 +57,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					915,	-- You Scream, I Scream... [Horde - Orc] (removed)
 				},
 				qg = 14444,	-- Orcish Orphan
-				qi = 18597,	-- Orcish Orphan Whistle
 				coord = { 70.8, 25.6, MAP.ORGRIMMAR },	-- Orphan Matron Battlewail
-				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				races = HORDE_ONLY,
+				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				isYearly = true,
+				qi = 18597,	-- Orcish Orphan Whistle
 				lvl = 10,
 				groups = WARDEN_OF_THE_GROUPS,
 			}),
@@ -72,10 +72,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 				},
 				qg = 14444,	-- Orcish Orphan
-				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 18597,	-- Orcish Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Cairne's Hoofprint
@@ -107,10 +107,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			q(910, {	-- Down at the Docks [Horde - Orc] (removed)
 				sourceQuest = 172,	-- Children's Week [Horde - Orc]
 				qg = 14444,	-- Orcish Orphan
-				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 18597,	-- Orcish Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the docks of Ratchet in the Barrens.
@@ -122,10 +122,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			q(911, {	-- Gateway to the Frontier [Horde - Orc] (removed)
 				sourceQuest = 172,	-- Children's Week [Horde - Orc]
 				qg = 14444,	-- Orcish Orphan
-				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 18597,	-- Orcish Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
@@ -140,10 +140,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 				},
 				qg = 14305,	-- Human Orphan
-				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 18598,	-- Human Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Jaina's Autograph
@@ -156,10 +156,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			q(1800, {	-- Lordaeron Throne Room [Horde - Orc] (removed)
 				sourceQuest = 172,	-- Children's Week [Horde - Orc]
 				qg = 14444,	-- Orcish Orphan
-				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 18597,	-- Orcish Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the old Lordaeron Throne Room that lies just before descending into the Undercity.
@@ -170,10 +170,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			q(1687, {	-- Spooky Lighthouse [Alliance - Human] (removed)
 				sourceQuest = 1468,	-- Children's Week [Alliance - Human]
 				qg = 14305,	-- Human Orphan
-				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 18598,	-- Human Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the Westfall Lighthouse.
@@ -185,10 +185,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			q(1479, {	-- The Bough of the Eternals [Alliance - Human] (removed)
 				sourceQuest = 1468,	-- Children's Week [Alliance - Human]
 				qg = 14305,	-- Human Orphan
-				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 18598,	-- Human Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
@@ -199,10 +199,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 			q(1558, {	-- The Stonewrought Dam [Alliance - Human] (removed)
 				sourceQuest = 1468,	-- Children's Week [Alliance - Human]
 				qg = 14305,	-- Human Orphan
-				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 18598,	-- Human Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.
@@ -217,10 +217,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 				},
 				qg = 14305,	-- Human Orphan
-				qi = 18598,	-- Human Orphan Whistle
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 18598,	-- Human Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream
@@ -237,10 +237,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 					1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 				},
 				qg = 14444,	-- Orcish Orphan
-				qi = 18597,	-- Orcish Orphan Whistle
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 18597,	-- Orcish Orphan Whistle
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream

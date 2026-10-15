@@ -346,19 +346,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 			q(7063, {	-- The Feast of Winter Veil (Alliance)
 				sourceQuest = 7062,	-- The Reason for the Season (Alliance)
 				qg = 2916,	-- Historian Karnik
-				qi = 17735,	-- The Feast of Winter Veil (QI!)
 				coord = { 77.2, 11.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 17735,	-- The Feast of Winter Veil (QI!)
 				lvl = 10,
 			}),
 			q(7061, {	-- The Feast of Winter Veil (Horde)
 				sourceQuest = 6964,	-- The Reason for the Season (Horde)
 				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-				qi = 17735,	-- The Feast of Winter Veil (QI!)
 				coord = { 38.6, 36.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 17735,	-- The Feast of Winter Veil (QI!)
 				lvl = 10,
 			}),
 			q(8763, {	-- The Hero of the Day (Alliance)

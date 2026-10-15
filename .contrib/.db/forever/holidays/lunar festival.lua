@@ -377,8 +377,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					coord = { 33.5, 14.3, MAP.DARNASSUS },
 				}),
 				q(8866, {	-- Bronzebeard the Elder
-					coord = { 29.1, 17.0, MAP.IRONFORGE },	-- The Mystic Ward
 					qg = 15871,	-- Elder Bronzebeard
+					coord = { 29.1, 17.0, MAP.IRONFORGE },	-- The Mystic Ward
 				}),
 				q(8646, {	-- Hammershout the Elder
 					qg = 15562,	-- Elder Hammershout
@@ -391,12 +391,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					coord = { 66.6, 38.2, MAP.UNDERCITY },
 				}),
 				q(8677, {	-- Darkhorn the Elder
-					coord = { 40.9, 33.9, MAP.ORGRIMMAR },
 					qg = 15579,	-- Elder Darkhorn
+					coord = { 40.9, 33.9, MAP.ORGRIMMAR },
 				}),
 				q(8678, {	-- Wheathoof the Elder [Wrath+] / Proudhorn the Elder [Classic]
-					coord = { 73.0, 23.4, MAP.THUNDER_BLUFF },	-- The Elder Rise
 					qg = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
+					coord = { 73.0, 23.4, MAP.THUNDER_BLUFF },	-- The Elder Rise
 				}),
 			}),
 			preWrathEldersHeader(ELDERS_OF_EASTERN_KINGDOMS, {	-- Elders of Eastern Kingdoms
@@ -425,8 +425,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					coord = { 21.3, 79.0, MAP.SEARING_GORGE },
 				}),
 				q(8722, {	-- Meadowrun the Elder
-					coord = { 66.0, 47.8, MAP.WESTERN_PLAGUELANDS },
 					qg = 15602,	-- Elder Meadowrun
+					coord = { 66.0, 47.8, MAP.WESTERN_PLAGUELANDS },
 				}),
 				q(8714, {	-- Moonstrike the Elder
 					qg = 15594,	-- Elder Moonstrike
@@ -558,8 +558,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 			preWrathEldersHeader(ELDERS_OF_THE_DUNGEONS, {	-- Elders of the Dungeons
 				q(8727, {	-- Farwhisper the Elder
 					description = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
-					coord = { 48.1, 21.9, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
 					qg = 15607,	-- Elder Farwhisper
+					coord = { 48.1, 21.9, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
 					maps = { MAP.STRATHOLME },
 				}),
 				q(8619, {	-- Morndeep the Elder
@@ -576,8 +576,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				}),
 				q(8713, {	-- Starsong the Elder
 					description = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
-					coord = { 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 					qg = 15593,	-- Elder Starsong
+					coord = { 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 					maps = { MAP.TEMPLE_OF_ATALHAKKAR },
 				}),
 				q(8644, {	-- Stonefort the Elder

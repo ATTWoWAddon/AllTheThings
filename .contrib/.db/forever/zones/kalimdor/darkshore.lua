@@ -54,9 +54,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(993, {	-- A Lost Master (2/2)
 				sourceQuest = 986,	-- A Lost Master (1/2)
 				qg = 3693,	-- Terenthis
-				qi = 5387,	-- Enchanted Moonstalker Cloak
 				coord = { 39.4, 43.5, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
+				qi = 5387,	-- Enchanted Moonstalker Cloak
 				lvl = 10,
 			}),
 			q(4812, {	-- As Water Cascades
@@ -393,9 +393,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(994, {	-- Escape Through Force
-				altQuests = { 995 },	-- Escape Through Stealth
 				description = "This quest becomes unavailable if you complete Escape Through Stealth",
 				sourceQuest = 993,	-- A Lost Master (2/2)
+				altQuests = { 995 },	-- Escape Through Stealth
 				qg = 3692,	-- Volcor
 				coord = { 45.0, 85.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -405,9 +405,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(995, {	-- Escape Through Stealth
-				altQuests = { 994 },	-- Escape Through Force
 				description = "This quest becomes unavailable if you complete Escape Through Force",
 				sourceQuest = 993,	-- A Lost Master (2/2)
+				altQuests = { 994 },	-- Escape Through Force
 				qg = 3692,	-- Volcor
 				coord = { 45.0, 85.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -418,10 +418,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(97914, {	-- Expanding Horizons
 				qg = 3649,	-- Thundris Windweaver
-				qi = 279045,	-- Thundris' Letter (PQI!)
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
+				qi = 279045,	-- Thundris' Letter (PQI!)
 				lvl = 13,
 			}),
 			q(963, {	-- For Love Eternal
@@ -560,9 +560,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(97926, {	-- Making Do
 				sourceQuest = 97914,	-- Expanding Horizons
 				qg = 1646,	-- Baros Alexston <City Architect>
-				qi = 279048,	-- Alexston's Reply (PQI!)
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279048,	-- Alexston's Reply (PQI!)
 				lvl = 13,
 				groups = {
 					i(282286),	-- Shipwright's Satchel
@@ -688,10 +688,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(741, {	-- The Absent Minded Prospector (3/5)
 				sourceQuest = 731,	-- The Absent Minded Prospector (2/5)
 				qg = 2913,	-- Archaeologist Hollee
-				qi = 4654,	-- Mysterious Fossil
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
+				qi = 4654,	-- Mysterious Fossil
 				lvl = 15,
 				groups = {
 					i(5629),	-- Hammerfist Gloves
@@ -860,10 +860,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(967, {	-- The Tower of Althalaxx (3/9)
 				sourceQuest = 966,	-- The Tower of Althalaxx (2/9)
 				qg = 3661,	-- Balthule Shadowstrike
-				qi = 5354,	-- Letter to Delgren
 				coord = { 55.0, 24.9, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
+				qi = 5354,	-- Letter to Delgren
 				lvl = 13,
 			}),
 			q(1143, {	-- The Tower of Althalaxx (8/9)

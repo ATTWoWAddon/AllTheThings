@@ -84,11 +84,11 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(1100, {	-- Lonebrow's Journal
-					provider = { "o", 19861 },	-- Henrig Lonebrow's Journal
 					qs = 5791,	-- Henrig Lonebrow's Journal (QS!)
-					qi = 5790,	-- Henrig Lonebrow's Journal (PQI!)
+					provider = { "o", 19861 },	-- Henrig Lonebrow's Journal
 					coord = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
 					races = ALLIANCE_ONLY,
+					qi = 5790,	-- Henrig Lonebrow's Journal (PQI!)
 					lvl = 29,
 				}),
 				q(1142, {	-- Mortality Wanes

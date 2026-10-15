@@ -206,10 +206,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(623, {	-- Akiris by the Bundle (2/2)
 				sourceQuest = 617,	-- Akiris by the Bundle (1/2)
 				qg = 2494,	-- Privateer Bloads
-				qi = 4028,	-- Bundle of Akiris Reeds
 				coord = { 27.4, 76.8, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
+				qi = 4028,	-- Bundle of Akiris Reeds
 				lvl = 38,
 			}),
 			q(3721, {	-- An OOX of Your Own
@@ -767,9 +767,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(210, {	-- Krazek's Cookery
 				qg = 770,	-- Corporal Kaleb
-				qi = 4085,	-- Krazek's Crock Pot
 				coord = { 37.7, 3.3, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
+				qi = 4085,	-- Krazek's Crock Pot
 				lvl = 32,
 			}),
 			q(207, {	-- Kurzen's Mystery
@@ -814,9 +814,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(602, {	-- Magical Analysis
 				sourceQuest = 601,	-- Water Elementals
 				qg = 2496,	-- Baron Revilgaz
-				qi = 3960,	-- Bag of Water Elemental Bracers
 				coord = { 27.2, 76.8, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
+				qi = 3960,	-- Bag of Water Elemental Bracers
 				lvl = 32,
 			}),
 			q(206, {	-- Mai'Zoth
@@ -840,8 +840,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sourceQuest = 3643,	-- Show Your Work
 				qg = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 				coord = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
-				races = HORDE_ONLY,
 				cost = { { "g", 20000 } },	-- 2g
+				races = HORDE_ONLY,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				repeatable = true,
@@ -1052,9 +1052,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(622, {	-- Return to Corporal Kaleb
 				sourceQuest = 627,	-- Favor for Krazek
 				qg = 773,	-- Krazek
-				qi = 1987,	-- Krazek's Fixed Pot
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
+				qi = 1987,	-- Krazek's Fixed Pot
 				lvl = 32,
 				groups = {
 					i(4124),	-- Cap of Harmony
@@ -1063,8 +1063,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(607, {	-- Return to MacKinley
 				sourceQuest = 606,	-- Scaring Shaky
 				qg = 2502,	-- \"Shaky\" Phillipe
-				qi = 3922,	-- Shaky's Payment
 				coord = { 26.9, 73.6, MAP.STRANGLETHORN_VALE },
+				qi = 3922,	-- Shaky's Payment
 				lvl = 30,
 			}),
 			q(3626, {	-- Return to the Blasted Lands
@@ -1319,9 +1319,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(198, {	-- Supplies to Private Thorsen
 				qg = 773,	-- Krazek
-				qi = 2252,	-- Miscellaneous Goblin Supplies
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
+				qi = 2252,	-- Miscellaneous Goblin Supplies
 				lvl = 30,
 			}),
 			q(575, {	-- Supply and Demand
@@ -1576,8 +1576,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					2759,	-- In Search of Galvan
 				},
 				qg = 7794,	-- McGavan
-				qi = 8686,	-- Mithril Pendant
 				coord = { 28.8, 75.4, MAP.STRANGLETHORN_VALE },
+				qi = 8686,	-- Mithril Pendant
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
 				lvl = 40,
@@ -1645,9 +1645,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(578, {	-- The Stone of the Tides
 				sourceQuest = 616,	-- The Haunted Isle
 				qg = 2496,	-- Baron Revilgaz
-				qi = 3898,	-- Library Scrip
 				coord = { 27.2, 76.9, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
+				qi = 3898,	-- Library Scrip
 				lvl = 32,
 			}),
 			q(629, {	-- The Vile Reef

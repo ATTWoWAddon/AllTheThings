@@ -154,12 +154,12 @@ root(ROOTS.Instances, {
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					description = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
+					provider = { "o", 179485 },	-- Broken Trap
+					maps = GORDOK_COMMONS_MAPS,
 					cost = {
 						{ "i", 15994, 1 },	-- Thorium Widget
 						{ "i", 3829, 1 },	-- Frost Oil
 					},
-					provider = { "o", 179485 },	-- Broken Trap
-					maps = GORDOK_COMMONS_MAPS,
 					repeatable = true,
 					lvl = 56,
 				}),
@@ -171,9 +171,9 @@ root(ROOTS.Instances, {
 					lvl = 42,
 				}),
 				q(5527, {	-- A Reliquary of Purity
+					description = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					qg = 11801,	-- Rabine Saturna
 					coord = { 51.7, 45.1, MAP.MOONGLADE },
-					description = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 					maps = { MAP.SILITHUS },
 					lvl = 56,
 					groups = {
@@ -339,17 +339,17 @@ root(ROOTS.Instances, {
 				q(5525, {	-- Free Knot!
 					description = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					qg = 14338,	-- Knot Thimblejack
-					cost = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					maps = GORDOK_COMMONS_MAPS,
+					cost = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					lvl = 54,
 				}),
 				q(7429, {	-- Free Knot! (Repeatable)
 					description = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					sourceQuest = 5525,	-- Free Knot!
 					qg = 14338,	-- Knot Thimblejack
-					cost = { { "i", 18250, 1 } },	-- Gordok Shackle Key
-					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					maps = GORDOK_COMMONS_MAPS,
+					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+					cost = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					repeatable = true,
 					lvl = 54,
 				}),
@@ -819,8 +819,8 @@ root(ROOTS.Instances, {
 					}),
 					n(16097, {	-- Isalien
 						description = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
-						cost = {{ "i", 22050, 1 }},	-- Brazier of Beckoning [Isalien]
 						provider = { "i", 22057 },	-- Brazier of Invocation
+						cost = {{ "i", 22050, 1 }},	-- Brazier of Beckoning [Isalien]
 						groups = {
 							objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								questID = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]

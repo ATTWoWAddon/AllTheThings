@@ -53,29 +53,29 @@ root(ROOTS.Instances, {
 						93680,	-- Key to the City
 					},
 					qg = 2410,	-- Magus Wordeen Voidglare
-					qi = 279469,	-- Grimy Key
 					coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					maps = { MAP.ALTERAC_MOUNTAINS, MAP.SILVERPINE_FOREST },
 					races = HORDE_ONLY,
+					qi = 279469,	-- Grimy Key
 					lvl = 30,
 				}),
 				q(92459, {	-- Friend of the Kirin Tor
 					sourceQuest = 92458,	-- Heart of Disruption [Alliance]
 					qg = 269127,	-- Image of Archmage Modera
-					qi = 251961,	-- Arcane Mote
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
+					qi = 251961,	-- Arcane Mote
 					lvl = 24,
 				}),
 				q(92458, {	-- Heart of Disruption [Alliance]
 					sourceQuest = 92432,	-- An Alarming Request
 					qg = 269127,	-- Image of Archmage Modera
-					qi = 277507,	-- Dalaran Sewer Key
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
+					qi = 277507,	-- Dalaran Sewer Key
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
@@ -90,10 +90,10 @@ root(ROOTS.Instances, {
 				q(96984, {	-- Heart of Disruption [Horde]
 					sourceQuest = 92434,	-- Blood in the Streets
 					qg = 269127,	-- Image of Archmage Modera
-					qi = 277507,	-- Dalaran Sewer Key
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
+					qi = 277507,	-- Dalaran Sewer Key
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
@@ -147,10 +147,10 @@ root(ROOTS.Instances, {
 				q(97287, {	-- Shrewd Negotiations
 					sourceQuest = 96984,	-- Heart of Disruption [Horde]
 					qg = 2410,	-- Magus Wordeen Voidglare
-					qi = 251961,	-- Arcane Mote
 					coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
+					qi = 251961,	-- Arcane Mote
 					lvl = 24,
 				}),
 				q(96988, {	-- Source of Power

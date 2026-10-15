@@ -47,32 +47,32 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					q(928, {	-- Crown of the Earth (2/6)
 						sourceQuest = 921,	-- Crown of the Earth (1/6)
 						qg = 3514,	-- Tenaron Stormgrip
-						qi = 5186,	-- Partially Filled Vessel
 						coord = { 59.0, 39.4, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
+						qi = 5186,	-- Partially Filled Vessel
 					}),
 					q(2159, {	-- Dolanaar Delivery
 						qg = 6780,	-- Porthannius
-						qi = 7627,	-- Dolanaar Delivery
 						coord = { 61.2, 47.6, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
+						qi = 7627,	-- Dolanaar Delivery
 						_drop = { "g" },	-- Refreshing Spring Water
 					}),
 					q(3118, {	-- Encrypted Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
 						qg = 2079,	-- Conservator Ilthalaine
-						qi = 9551,	-- Encrypted Sigil
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { ROGUE },
+						qi = 9551,	-- Encrypted Sigil
 					}),
 					q(3117, {	-- Etched Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
 						qg = 2079,	-- Conservator Ilthalaine
-						qi = 9567,	-- Etched Sigil
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { HUNTER },
+						qi = 9567,	-- Etched Sigil
 					}),
 					q(97236, {	-- Fang of Githyiss
 						provider = { "i", 277190 },	-- Fang of Githyiss
@@ -83,10 +83,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					q(3119, {	-- Hallowed Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
 						qg = 2079,	-- Conservator Ilthalaine
-						qi = 9557,	-- Hallowed Sigil
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { PRIEST },
+						qi = 9557,	-- Hallowed Sigil
 					}),
 					q(5622, {	-- In Favor of Elune
 						qg = 3595,	-- Shanda <Priest Trainer>
@@ -128,9 +128,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					q(3522, {	-- Iverron's Antidote (2/2)
 						sourceQuest = 3522,	-- Iverron's Antidote (1/2)
 						qg = 8583,	-- Dirania Silvershine
-						qi = 10642,	-- Iverron's Antidote
 						coord = { 60.8, 42.0, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
+						qi = 10642,	-- Iverron's Antidote
 						lvl = 2,
 						groups = {
 							i(10655),	-- Sedgeweed Britches
@@ -163,8 +163,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 						qg = 3600,	-- Laurna Morninglight <Priest Trainer>
 						coord = { 55.6, 56.8, MAP.TELDRASSIL },
-						classes = { PRIEST },
 						races = { NIGHTELF },
+						classes = { PRIEST },
 						lvl = 10,
 						groups = {
 							{
@@ -176,10 +176,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					q(3116, {	-- Simple Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
 						qg = 2079,	-- Conservator Ilthalaine
-						qi = 9545,	-- Simple Sigil
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { WARRIOR },
+						qi = 9545,	-- Simple Sigil
 					}),
 					q(920, {	-- Tenaron's Summons
 						sourceQuest = 917,	-- Webwood Egg
@@ -191,9 +191,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						--["sourceQuest"] = ,	-- 
 						provider = { "o", 654846 },	-- Lost Journal
 						coord = { 59.1, 39.49, MAP.TELDRASSIL },
-						qi = 275022,	-- Lost Journal (PQI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						qi = 275022,	-- Lost Journal (PQI!)
 						lvl = 4,
 					}),
 					q(456, {	-- The Balance of Nature (1/2)
@@ -264,10 +264,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					q(3120, {	-- Verdant Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
 						qg = 2079,	-- Conservator Ilthalaine
-						qi = 9580,	-- Verdant Sigil
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { DRUID },
+						qi = 9580,	-- Verdant Sigil
 					}),
 					q(917, {	-- Webwood Egg
 						sourceQuest = 916,	-- Webwood Venom
@@ -574,18 +574,18 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(98046, {	-- Crown of the Earth (1/2) [Forever]
 				sourceQuest = 935,	-- Crown of the Earth (6/6) / The Waters of Teldrassil [CATA+]
 				qg = 3516,	-- Arch Druid Fandral Staghelm
-				qi = 279291,	-- Drained Vessel
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 279291,	-- Drained Vessel
 			}),
 			q(98065, {	-- Crown of the Earth (2/2) [Forever]
 				sourceQuest = 98046,	-- Crown of the Earth (1/2) [Forever]
 				qg = 4092,	-- Lariia
-				qi = 279331,	-- Moonwell Remnants
 				coord = { 40.2, 88.2, MAP.DARNASSUS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 279331,	-- Moonwell Remnants
 			}),
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				sourceQuest = 928,	-- Crown of the Earth (2/6)
@@ -635,9 +635,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(935, {	-- Crown of the Earth (6/6) / The Waters of Teldrassil [CATA+]
 				sourceQuest = 7383,	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
 				qg = 3515,	-- Corithras Moonrage
-				qi = 5188,	-- Filled Vessel
 				coord = { 56.2, 61.7, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
+				qi = 5188,	-- Filled Vessel
 				groups = {
 					i(5596),	-- Ashwood Bow
 					i(5595),	-- Thicket Hammer
@@ -670,9 +670,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(997, {	-- Denalan's Earth
 				qg = 2083,	-- Syral Bladeleaf
-				qi = 5391,	-- Rare Earth
 				coord = { 56.0, 57.8, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
+				qi = 5391,	-- Rare Earth
 				lvl = 4,
 			}),
 			q(5636, {	-- Desperate Prayer
@@ -723,10 +723,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(99073, {	-- Easing Suffering
 				sourceQuest = 99050,	-- The Great Tree Provides
 				qg = 6094,	-- Byancie
-				qi = 286069,	-- Lashwater Salve
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 286069,	-- Lashwater Salve
 				lvl = 4,
 			}),
 			q(1684, {	-- Elanaria
@@ -832,9 +832,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(6342, {	-- Flight to Auberdine / An Unexpected Gift [CATA+]
 				sourceQuest = 6341,	-- The Bounty of Teldrassil / To Darnassus [CATA+]
 				qg = 3838,	-- Vesprystus
-				qi = 16262,	-- Nessa's Collection
 				coord = { 58.4, 94.0, MAP.TELDRASSIL },
 				races = { NIGHTELF },
+				qi = 16262,	-- Nessa's Collection
 				lvl = 10,
 			}),
 			q(5621, {	-- Garments of the Moon
@@ -897,9 +897,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(941, {	-- Planting the Heart
 				sourceQuest = 927,	-- The Moss-twined Heart
 				qg = 2080,	-- Denalan
-				qi = 5217,	-- Tainted Heart
 				coord = { 60.8, 68.4, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
+				qi = 5217,	-- Tainted Heart
 				lvl = 9,
 				groups = {
 					i(5218),	-- Cleansed Timberling Heart
@@ -918,9 +918,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(922, {	-- Rellian Greenspyre
 				sourceQuest = 918,	-- Timberling Seeds
 				qg = 2080,	-- Denalan
-				qi = 5168,	-- Timberling Seed
 				coord = { 60.8, 68.4, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
+				qi = 5168,	-- Timberling Seed
 				lvl = 4,
 			}),
 			q(2498, {	-- Return to Denalan
@@ -933,10 +933,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(2943, {	-- Return to Troyas
 				sourceQuest = 2944,	-- The Super Snapper FX
 				qg = 7907,	-- Daryn Lightwind
-				qi = 9331,	-- Feralas: A History
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				maps = { MAP.FERALAS },
 				races = ALLIANCE_ONLY,
+				qi = 9331,	-- Feralas: A History
 				lvl = 42,
 			}),
 			q(489, {	-- Seek Redemption!
@@ -1031,12 +1031,12 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					{ "n", 3519 },	-- Sentinel Arynia Cloudsbreak
 					{ "o", 673378 },	-- Oracle Tree Bark
 				},
-				qi = 5219,	-- Inscribed Bark
 				coords = {
 					{ 38.2, 34.4, MAP.TELDRASSIL },
 					{ 37.0, 34.1, MAP.TELDRASSIL },
 				},
 				races = ALLIANCE_ONLY,
+				qi = 5219,	-- Inscribed Bark
 				lvl = 6,
 				groups = {
 					i(281250, {	-- Forest Oracle's Cloak
@@ -1046,26 +1046,26 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(2241, {	-- The Apple Falls
 				qg = 3599,	-- Jannok Breezesong
-				qi = 7735,	-- Jannok's Rose
 				coord = { 56.4, 60.1, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
+				qi = 7735,	-- Jannok's Rose
 				lvl = 10,
 			}),
 			q(2941, {	-- The Borrower
 				sourceQuest = 2940,	-- Feralas: A History
 				qg = 7907,	-- Daryn Lightwind
-				qi = 9329,	-- A Short Note
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
+				qi = 9329,	-- A Short Note
 				lvl = 42,
 			}),
 			q(6341, {	-- The Bounty of Teldrassil / To Darnassus [CATA+]
 				sourceQuest = 6344,	-- Nessa Shadowsong
 				qg = 10118,	-- Nessa Shadowsong
-				qi = 16262,	-- Nessa's Collection
 				coord = { 56.2, 92.4, MAP.TELDRASSIL },
 				races = { NIGHTELF },
+				qi = 16262,	-- Nessa's Collection
 				lvl = 10,
 			}),
 			q(2438, {	-- The Emerald Dreamcatcher

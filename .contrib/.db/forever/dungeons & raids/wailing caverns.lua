@@ -58,9 +58,9 @@ root(ROOTS.Instances, {
 					q(1489, {	-- Hamuul Runetotem
 						sourceQuest = 880,	-- Altered Beings
 						qg = 3448,	-- Tonga Runetotem
-						qi = 10414,	-- Sample Snapjaw Shell
 						coord = { 52.3, 31.9, MAP.THE_BARRENS },
 						races = HORDE_ONLY,
+						qi = 10414,	-- Sample Snapjaw Shell
 						lvl = 10,
 					}),
 					q(3370, {	-- In Nightmares [A]

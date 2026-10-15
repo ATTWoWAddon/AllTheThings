@@ -101,50 +101,50 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			}),
 			q(8897, {	-- Dearest Colara, [Stormwind City]
 				qg = 16005,	-- Lieutenant Jocryn Heldric
-				qi = 21921,	-- Carefully Penned Note
 				coord = { 57.0, 59.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 21921,	-- Carefully Penned Note
 			}),
 			q(8898, {	-- Dearest Colara, [Ironforge]
 				qg = 16009,	-- Tormek Stoneriver
-				qi = 21920,	-- Creased Letter
 				coord = { 32.4, 66.0, MAP.IRONFORGE },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 21920,	-- Creased Letter
 			}),
 			q(8899, {	-- Dearest Colara, [Darnassus]
 				qg = 16001,	-- Aldris Fourclouds
-				qi = 21925,	-- Immaculate Letter
 				coord = { 42.0, 42.0, MAP.DARNASSUS },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 21925,	-- Immaculate Letter
 			}),
 			q(8900, {	-- Dearest Elenia, [Orgrimmar]
 				qg = 16007,	-- Orok Deathbane
-				qi = 21926,	-- Slightly Creased Note
 				coord = { 51.2, 70.2, MAP.ORGRIMMAR },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 21926,	-- Slightly Creased Note
 			}),
 			q(8901, {	-- Dearest Elenia, [Thunder Bluff]
 				qg = 16008,	-- Temma of the Wells
-				qi = 22264,	-- Carefully Written Letter
 				coord = { 44.8, 59.6, MAP.THUNDER_BLUFF },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 22264,	-- Carefully Written Letter
 			}),
 			q(8902, {	-- Dearest Elenia, [Undercity]
 				qg = 16003,	-- Deathguard Tor
-				qi = 22265,	-- Lovingly Composed Letter
 				coord = { 60.6, 59.6, MAP.TIRISFAL_GLADES },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 22265,	-- Lovingly Composed Letter
 			}),
 			q(8979, {	-- Fenstad's Hunch
 				sourceQuest = 8904,	-- Dangerous Love (H)

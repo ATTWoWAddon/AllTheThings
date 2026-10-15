@@ -508,20 +508,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			q(7905, {	-- The Darkmoon Faire [A]
 				qg = 14842,	-- Melnan Darkstone <Darkmoon Faire Barker>
-				qi = 19338,	-- Free Ticket Voucher
 				coord = { 29.2, 68.4, MAP.IRONFORGE },
-				lvl = 6,
 				races = ALLIANCE_ONLY,
+				lvl = 6,
+				qi = 19338,	-- Free Ticket Voucher
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
 			q(7926, {	-- The Darkmoon Faire [H]
 				qg = 14843,	-- Kruban Darkblade <Darkmoon Faire Barker>
-				qi = 19338,	-- Free Ticket Voucher
 				coord = { 52.2, 66.0, MAP.ORGRIMMAR },
-				lvl = 6,
 				races = HORDE_ONLY,
+				lvl = 6,
+				qi = 19338,	-- Free Ticket Voucher
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},

@@ -84,20 +84,20 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						sourceQuest = 1519,	-- Call of Earth (1/3)
 						altQuests = { 1517 },	-- Call of Earth (2/3 Durotar)
 						qg = 5888,	-- Seer Ravenfeather
-						qi = 6635,	-- Earth Sapta
 						coord = { 44.8, 76.2, MAP.MULGORE },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
+						qi = 6635,	-- Earth Sapta
 						lvl = 4,
 					}),
 					q(1521, {	-- Call of Earth (3/3)
 						sourceQuest = 1520,	-- Call of Earth (2/3)
 						altQuests = { 1518 },	-- Call of Earth (3/3 Durotar)
 						qg = 5891,	-- Minor Manifestation of Earth
-						qi = 6656,	-- Rough Quartz
 						coord = { 53.8, 80.4, MAP.MULGORE },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
+						qi = 6656,	-- Rough Quartz
 						lvl = 4,
 						groups = {
 							recipe(8071),	-- Stoneskin Totem
@@ -122,10 +122,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					q(3092, {	-- Etched Note
 						sourceQuest = 747,	-- The Hunt Begins
 						qg = 2980,	-- Grull Hawkwind
-						qi = 9565,	-- Etched Note
 						coord = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { HUNTER },
+						qi = 9565,	-- Etched Note
 					}),
 					q(95805, {	-- Grace of An'she and Mu'sha
 						qg = 2982,	-- Seer Graytongue
@@ -175,33 +175,33 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					q(763, {	-- Rites of the Earthmother (2/3)
 						sourceQuest = 757,	-- Rite of Strength
 						qg = 2981,	-- Chief Hawkwind
-						qi = 4783,	-- Totem of Hawkwind
 						coord = { 44.2, 76.1, MAP.MULGORE },
 						races = HORDE_ONLY,
+						qi = 4783,	-- Totem of Hawkwind
 					}),
 					q(3093, {	-- Rune-Inscribed Note
 						sourceQuest = 747,	-- The Hunt Begins
 						qg = 2980,	-- Grull Hawkwind
-						qi = 9552,	-- Rune-Inscribed Note
 						coords = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { SHAMAN },
+						qi = 9552,	-- Rune-Inscribed Note
 					}),
 					q(3091, {	-- Simple Note
 						sourceQuest = 747,	-- The Hunt Begins
 						qg = 2980,	-- Grull Hawkwind
-						qi = 9547,	-- Simple Note
 						coords = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { WARRIOR },
+						qi = 9547,	-- Simple Note
 					}),
 					q(96659, {	-- The Adventurer [Mulgore]
 						--["sourceQuest"] = ,	-- 
 						qg = 2981,	-- Chief Hawkwind
-						qi = 275019,	-- Supply Bundle (PQI!)
 						coord = { 44.2, 76.0, MAP.MULGORE },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
+						qi = 275019,	-- Supply Bundle (PQI!)
 						lvl = 4,
 					}),
 					q(780, {	-- The Battleboars
@@ -261,10 +261,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					q(3094, {	-- Verdant Note
 						sourceQuest = 747,	-- The Hunt Begins
 						qg = 2980,	-- Grull Hawkwind
-						qi = 9581,	-- Verdant Note
 						coord = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { DRUID },
+						qi = 9581,	-- Verdant Note
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -351,9 +351,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			q(1656, {	-- A Task Unfinished
 				qg = 6775,	-- Antur Fallow
-				qi = 7626,	-- Bundle of Furs
 				coord = { 38.6, 81.6, MAP.MULGORE },
 				races = HORDE_ONLY,
+				qi = 7626,	-- Bundle of Furs
 			}),
 			q(97927, {	-- Camping 101: Alchemy [Mulgore]
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
@@ -605,8 +605,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 				qg = 11407,	-- Var'jun
 				coord = { 47.0, 58.8, MAP.MULGORE },
-				classes = { PRIEST },
 				races = { TROLL },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -755,9 +755,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			q(772, {	-- Rite of Vision (3/3)
 				sourceQuest = 771,	-- Rite of Vision (2/3)
 				qg = 3054,	-- Zarlman Two-Moons
-				qi = 4823,	-- Water of the Seers
 				coord = { 47.8, 57.5, MAP.MULGORE },
 				races = HORDE_ONLY,
+				qi = 4823,	-- Water of the Seers
 				lvl = 3,
 				groups = {
 					i(4906),	-- Rainwalker Boots
@@ -813,10 +813,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			q(76156, {	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem
-				qi = 206159,	-- Venture Co Disguise
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { ORC, TAUREN, TROLL },
+				qi = 206159,	-- Venture Co Disguise
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/5 Seaforium Mining Charge
@@ -827,10 +827,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			q(76160, {	-- Stalk With The Earthmother
 				sourceQuest = 76156,	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem
-				qi = 206176,	-- Mortar and Pestle
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { ORC, TAUREN, TROLL },
+				qi = 206176,	-- Mortar and Pestle
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Pine Salve
@@ -845,11 +845,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			q(76240, {	-- Stalk With The Earthmother
 				sourceQuest = 76160,	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem
-				qi = 206344,	-- Knife Set
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				classes = { HUNTER, SHAMAN, DRUID },
 				races = HORDE_ONLY,
+				classes = { HUNTER, SHAMAN, DRUID },
+				qi = 206344,	-- Knife Set
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
@@ -908,10 +908,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			q(96241, {	-- Talkin' bout Toxins, Mon
 				qg = 264074,	-- Mazu'kon
-				qi = 273015,	-- Toxin Extractor
 				coord = { 32.4, 20.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				qi = 273015,	-- Toxin Extractor
 				lvl = 23,	-- Required level; quest level 30.
 				groups = {
 					objective(1, {	-- 0/5 Gloomrise Toxin Sample
@@ -1070,9 +1070,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			q(751, {	-- The Ravaged Caravan (2/2)
 				sourceQuest = 749,	-- The Ravaged Caravan (1/2)
 				provider = { "o", 2908 },	-- Sealed Supply Crate
-				qi = 4834,	-- Venture Co. Documents (QI!)
 				coords = { 53.8, 48.3, MAP.MULGORE },
 				races = HORDE_ONLY,
+				qi = 4834,	-- Venture Co. Documents (QI!)
 				lvl = 5,
 			}),
 			q(764, {	-- The Venture Co.
@@ -1124,10 +1124,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			q(98435, {	-- Thunderhorn's Report
 				sourceQuest = 760,	-- Wildmane Cleansing
 				qg = 2948,	-- Mull Thunderhorn
-				qi = 281139,	-- Thunderhorn's Report
 				coord = { 48.5, 60.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { UNDEAD, TAUREN },
+				qi = 281139,	-- Thunderhorn's Report
 				lvl = 4,
 				groups = {
 					i(3443),	-- Ceremonial Tomahawk
@@ -1143,8 +1143,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 				qg = 11407,	-- Var'jun
 				coord = { 47.0, 58.8, MAP.MULGORE },
-				classes = { PRIEST },
 				races = { UNDEAD },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -1263,10 +1263,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					99079,	-- Longwalker Malah
 				},
 				qg = 275789,	-- Malah Longwind
-				qi = 286104,	-- Longwalker Malah's Report
 				coord = { 57.6, 63.2, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				qi = 286104,	-- Longwalker Malah's Report
 				lvl = 4,
 			}),
 			q(99082, {	-- The High Chieftain
@@ -1288,10 +1288,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					99081,	-- Grim Tidings
 				},
 				qg = 3222,	-- Brave Wildrunner
-				qi = 286104,	-- Longwalker Malah's Report
 				coord = { 46.6, 63.0, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				qi = 286104,	-- Longwalker Malah's Report
 				lvl = 4,
 				groups = {
 					objective(1, {	-- Bring Longwalker Malah's Report to Baine Bloodhoof

@@ -43,10 +43,10 @@ root(ROOTS.Instances, {
 				q(98823, {	-- Earthen Echo
 					sourceQuest = 95664,	-- Elder Knowledge
 					qg = 9087,	-- Bashana Runetotem
-					qi = 270866,	-- Titan Relic (H) (QS!)
 					coord = { 70.8, 33.8, MAP.THUNDER_BLUFF },
 					maps = { MAP.MULGORE },
 					races = HORDE_ONLY,
+					qi = 270866,	-- Titan Relic (H) (QS!)
 					lvl = 24,
 					groups = {
 						i(271766),	-- Heavehammer
@@ -74,8 +74,8 @@ root(ROOTS.Instances, {
 				q(95809, {	-- Heartwoven
 					sourceQuest = 95647,	-- Lost in the Thicket Things
 					qg = 262681,	-- Ardin Grassman
-					qi = 270901,	-- Reed-woven Heart
 					races = ALLIANCE_ONLY,
+					qi = 270901,	-- Reed-woven Heart
 					lvl = 24,
 					groups = {
 						i(280766),	-- Satchel of Potions
@@ -152,10 +152,10 @@ root(ROOTS.Instances, {
 				q(98824, {	-- Prehistoric Prism
 					sourceQuest = 95810,	-- Lost Relic Carry
 					qg = 1077,	-- Prospector Whelgar <Explorers' League>
-					qi = 270865,	-- Titan Relic (A) (PQI!)
 					coord = { 38.8, 52.2, MAP.WETLANDS },
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
+					qi = 270865,	-- Titan Relic (A) (PQI!)
 					lvl = 24,
 					groups = {
 						i(271766),	-- Heavehammer

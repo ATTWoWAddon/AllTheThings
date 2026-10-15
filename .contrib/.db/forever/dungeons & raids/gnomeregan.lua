@@ -4,8 +4,8 @@
 
 local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	description = "This is located outside of the instance just to the north of both the elevator or the transporter.",
-	timeline = { REMOVED_5_0_4 },	-- guessed from WH comments
 	cost = { { "i", 9279, 1 } },	-- White Punch Card
+	timeline = { REMOVED_5_0_4 },	-- guessed from WH comments
 	groups = {
 		i(9280),	-- Yellow Punch Card
 	},

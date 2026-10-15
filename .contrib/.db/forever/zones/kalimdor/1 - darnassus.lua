@@ -47,15 +47,15 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(7798, {	-- A Donation of Silk
 				qg = 14725,	-- Raedon Duskstriker
-				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
+				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7792, {	-- A Donation of Wool
 				qg = 14725,	-- Raedon Duskstriker
-				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
+				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
@@ -67,8 +67,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				qg = 11401,	-- Priestess Alathea <Priest Trainer>
 				coord = { 39.2, 81.0, MAP.DARNASSUS },
 				maps = { MAP.IRONFORGE },
-				classes = { PRIEST },
 				races = { DWARF },
+				classes = { PRIEST },
 				lvl = 20,
 				groups = {
 					recipe(6346),	-- Fear Ward
@@ -108,9 +108,9 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			q(4510, {	-- Calm Before the Storm (2/2)
 				sourceQuest = 4508,	-- Calm Before the Storm (1/2)
 				qg = 7740,	-- Gracina Spiritmight
-				qi = 11843,	-- Bank Voucher
 				coord = { 42.0, 85.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
+				qi = 11843,	-- Bank Voucher
 				lvl = 50,
 				groups = {
 					i(11870),	-- Oblivion Orb
@@ -164,8 +164,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				},
 				qg = 11401,	-- Priestess Alathea <Priest Trainer>
 				coord = { 39.2, 81.0, MAP.DARNASSUS },
-				classes = { PRIEST },
 				races = { NIGHTELF },
+				classes = { PRIEST },
 				lvl = 20,
 				groups = {
 					{
@@ -186,9 +186,9 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			q(952, {	-- Grove of the Ancients
 				sourceQuest = 940,	-- Teldrassil
 				qg = 3516,	-- Arch Druid Fandral Staghelm
-				qi = 5390,	-- Fandral's Message
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
+				qi = 5390,	-- Fandral's Message
 				lvl = 6,
 			}),
 			q(4493, {	-- March of the Silithid (A)
@@ -203,8 +203,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				sourceQuest = 1710,	-- Sunscorched Shells
 				qg = 6142,	-- Mathiel
 				coord = { 59.2, 45.4, MAP.DARNASSUS },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					i(6973),	-- Fire hardened Leggings
@@ -228,9 +228,9 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			q(3781, {	-- Morrowgrain Research (1/2)
 				sourceQuest = 3764,	-- Un'Goro Soil
 				qg = 3516,	-- Arch Druid Fandral Staghelm
-				qi = 11103,	-- Seed Voucher
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
+				qi = 11103,	-- Seed Voucher
 				lvl = 47,
 				groups = {
 					i(11022),	-- Packet of Tharlendris Seeds
@@ -284,10 +284,10 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			q(1692, {	-- Smith Mathiel
 				sourceQuest = 1686,	-- The Shade of Elura
 				qg = 4088,	-- Elanaria
-				qi = 6812,	-- Case of Elunite
 				coord = { 57.4, 34.8, MAP.DARNASSUS },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
+				qi = 6812,	-- Case of Elunite
 				lvl = 10,
 			}),
 			q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
@@ -317,8 +317,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					{ 38.6, 26.8, MAP.STORMWIND_CITY },
 					{ 20.8, 50.2, MAP.STORMWIND_CITY },
 				},
-				classes = { PRIEST },
 				races = { NIGHTELF },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -332,8 +332,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				qg = 6142,	-- Mathiel
 				coord = { 59.2, 45.4, MAP.DARNASSUS },
 				maps = { MAP.THOUSAND_NEEDLES },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/20 Sunscorched Shell
@@ -392,10 +392,10 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			q(942, {	-- The Absent Minded Prospector (4/5)
 				sourceQuest = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
 				qg = 2912,	-- Chief Archaeologist Greywhisker
-				qi = 6812,	-- Mysterious Fossil
 				coord = { 31.2, 84.2, MAP.DARNASSUS },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				qi = 6812,	-- Mysterious Fossil
 				lvl = 15,
 			}),
 			q(1039, {	-- The Barrens Port
@@ -411,8 +411,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				qg = 4088,	-- Elanaria
 				coord = { 57.8, 34.4, MAP.DARNASSUS },
 				maps = { MAP.DARKSHORE },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Elunite Ore
@@ -488,8 +488,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				qg = 4088,	-- Elanaria
 				coord = { 57.3, 34.6, MAP.DARNASSUS },
 				maps = { MAP.TELDRASSIL },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Horn of Vorlus
@@ -506,8 +506,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				sourceQuest = 1692,	-- Smith Mathiel
 				qg = 6142,	-- Mathiel
 				coord = { 59.2, 45.4, MAP.DARNASSUS },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					i(6966),	-- Elunite Axe

@@ -66,10 +66,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3101, {	-- Consecrated Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9570,	-- Consecrated Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
-						classes = { PALADIN },
 						races = { HUMAN },
+						classes = { PALADIN },
+						qi = 9570,	-- Consecrated Letter (PQI!)
 					}),
 					q(5261, {	-- Eagan Peltskinner
 						sourceQuest = 783,	-- A Threat Within
@@ -81,10 +81,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3102, {	-- Encrypted Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9555,	-- Encrypted Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { ROGUE },
+						qi = 9555,	-- Encrypted Letter (PQI!)
 					}),
 					q(91758, {	-- Follow That Kobold!
 						sourceQuest = 91752,	-- The Big Picture
@@ -96,17 +96,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3104, {	-- Glyphic Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9571,	-- Glyphic Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { MAGE },
+						qi = 9571,	-- Glyphic Letter (PQI!)
 					}),
 					q(3905, {	-- Grape Manifest
 						sourceQuest = 3904,	-- Milly's Harvest
 						qg = 9296,	-- Milly Osworth
-						qi = 11125,	-- Grape Manifest (PQI!)
 						coord = { 50.7, 39.3, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
+						qi = 11125,	-- Grape Manifest (PQI!)
 						lvl = 2,
 						groups = {
 							i(2690),	-- Latched Belt
@@ -116,10 +116,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3103, {	-- Hallowed Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9548,	-- Hallowed Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { PRIEST },
+						qi = 9548,	-- Hallowed Letter (PQI!)
 					}),
 					q(5623, {	-- In Favor of the Light
 						qg = 375,	-- Priestess Anetta <Priest Trainer>
@@ -217,9 +217,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(54, {	-- Report to Goldshire
 						sourceQuest = 21,	-- Skirmish at Echo Ridge
 						qg = 197,	-- Marshal McBride
-						qi = 745,	-- Marshal McBride's Documents (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
+						qi = 745,	-- Marshal McBride's Documents (PQI!)
 						groups = {
 							i(6078),	-- Pikeman Shield
 						},
@@ -232,9 +232,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(346, {	-- Return to Kristoff
 						sourceQuest = 347,	-- Rethban Ore (quest in Redridge Mountains)
 						qg = 951,	-- Brother Paxton
-						qi = 2795,	-- Book: Stresses of Iron (PQI!)
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
+						qi = 2795,	-- Book: Stresses of Iron (PQI!)
 						lvl = 20,
 						groups = {
 							i(6095),	-- Wandering Boots
@@ -243,10 +243,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(91772, {	-- Shhh! We're Hunting Kobolds
 						sourceQuest = 91758,	-- Follow That Kobold!
 						qg = 248415,	-- Tordrin Sternblade
-						qi = 247970,	-- Kobold Tracking Kit (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						qi = 247970,	-- Kobold Tracking Kit (PQI!)
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
 								provider = { "o", 563442 },	-- Kobold Tracks
@@ -256,10 +256,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3100, {	-- Simple Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9542,	-- Simple Letter (PQI!)
 						coord = { 48.8, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { WARRIOR },
+						qi = 9542,	-- Simple Letter (PQI!)
 					}),
 					q(21, {	-- Skirmish at Echo Ridge
 						sourceQuest = 15,	-- Investigate Echo Ridge
@@ -278,10 +278,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3105, {	-- Tainted Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9576,	-- Tainted Letter (PQI!)
 						coord = { 48.8, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { WARLOCK },
+						qi = 9576,	-- Tainted Letter (PQI!)
 					}),
 					q(96627, {	-- The Adventurer [Elwynn Forest]
 						sourceQuest = 21,	-- Skirmish at Echo Ridge
@@ -491,8 +491,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				sourceQuest = 91736,	-- Applejack Still
 				qg = 955,	-- Sergeant De Vries <Morale Officer>
 				coord = { 24.0, 73.0, MAP.ELWYNN_FOREST },
-				cost = { { "i", 247824, 1 } },	-- Thunder Applejack
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = { { "i", 247824, 1 } },	-- Thunder Applejack
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
@@ -547,10 +547,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(91736, {	-- Applejack Still
 				provider = { "o", 562131 },	-- Applejack Still
 				coord = { 24.6, 58.0, MAP.ELWYNN_FOREST },
-				cost = { { "i", 4536, 4 } },	-- Shiny Red Apple
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				repeatable = true,
+				cost = { { "i", 4536, 4 } },	-- Shiny Red Apple
 				races = ALLIANCE_ONLY,
+				repeatable = true,
 				lvl = 7,
 				groups = {
 					i(247824),	-- Thunder Applejack
@@ -559,9 +559,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(84, {	-- Back to Billy
 				sourceQuest = 86,	-- Pie for Billy
 				qg = 246,	-- "Auntie" Bernice Stonefield
-				qi = 962,	-- Pork Belly Pie (PQI!)
 				coord = { 34.5, 84.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				qi = 962,	-- Pork Belly Pie (PQI!)
 				lvl = 5,
 			}),
 			q(99131, {	-- Baited for Success
@@ -575,10 +575,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(91775, {	-- Book Return
 				sourceQuest = 91772,	-- Shhh! We're Hunting Kobolds
 				qg = 240,	-- Marshal Dughan
-				qi = 279935,	-- Book Bag (PQI!)
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				qi = 279935,	-- Book Bag (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Picture Book: Fun with Elementals
 						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals
@@ -780,9 +780,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(59, {	-- Cloth and Leather Armor
 				sourceQuest = 39,	-- Deliver Thomas' Report
 				qg = 240,	-- Marshal Dughan
-				qi = 748,	-- Stormwind Armor Marker (PQI!)
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				qi = 748,	-- Stormwind Armor Marker (PQI!)
 				lvl = 7,
 				groups = {
 					i(2237),	-- Patched Pants
@@ -815,8 +815,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				sourceQuest = 1666,	-- Marshal Haggard
 				qg = 294,	-- Marshal Haggard
 				coord = { 84.6, 69.4, MAP.ELWYNN_FOREST },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Marshal Haggard's Badge
@@ -1075,9 +1075,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(107, {	-- Note to William
 				sourceQuest = 111,	-- Speak with Gramma
 				qg = 248,	-- Gramma Stonefield
-				qi = 1252,	-- Gramma Stonefield's Note (PQI!)
 				coord = { 34.9, 83.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				qi = 1252,	-- Gramma Stonefield's Note (PQI!)
 				lvl = 5,
 			}),
 			q(86, {	-- Pie for Billy
@@ -1157,8 +1157,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 				qg = 377,	-- Priestess Josetta <Priest Trainer>
 				coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
-				classes = { PRIEST },
 				races = { NIGHTELF },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -1194,9 +1194,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(71, {	-- Report to Thomas
 				sourceQuest = 45,	-- Discover Rolf's Fate
 				provider = { "o",  56 },	-- Rolf's corpse
-				qi = 735,	-- Rolf and Malakai's Medallions (PQI!)
 				coord = { 79.8, 55.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				qi = 735,	-- Rolf and Malakai's Medallions (PQI!)
 				lvl = 7,
 			}),
 			q(11, {	-- Riverpaw Gnoll Bounty
@@ -1236,20 +1236,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(2205, {	-- Seek out SI: 7
 				qg = 917,	-- Keryn Sylvius
-				qi = 7674,	-- Delivery to Mathias (PQI!)
 				coord = { 43.9, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
 				isBreadcrumb = true,
+				qi = 7674,	-- Delivery to Mathias (PQI!)
 				lvl = 10,
 			}),
 			q(61, {	-- Shipment to Stormwind
 				sourceQuest = 47,	-- Gold Dust Exchange
 				qg = 253,	-- William Pestle
-				qi = 957,	-- William's Shipment (PQI!)
 				coord = { 43.2, 65.8, MAP.ELWYNN_FOREST },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				qi = 957,	-- William's Shipment (PQI!)
 				lvl = 3,
 				groups = {
 					i(2454),	-- Elixir of Minor Strength
@@ -1318,16 +1318,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(123, {	-- The Collector
 				qs = 1307,	-- Gold Pickup Schedule (QS!)
-				qi = 2223,	-- The Collector's Schedule (PQI!)
 				races = ALLIANCE_ONLY,
+				qi = 2223,	-- The Collector's Schedule (PQI!)
 				lvl = 7,
 			}),
 			q(114, {	-- The Escape
 				sourceQuest = 112,	-- Collecting Kelp
 				qg = 253,	-- William Pestle
-				qi = 1257,	-- Invisibility Liquor (PQI!)
 				coord = { 43.3, 65.7, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				qi = 1257,	-- Invisibility Liquor (PQI!)
 				lvl = 5,
 			}),
 			q(62, {	-- The Fargodeep Mine
@@ -1384,9 +1384,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(106, {	-- Young Lovers
 				qg = 251,	-- Maybell Maclure
-				qi = 1208,	-- Maybell's Love Letter (PQI!)
 				coord = { 43.2, 89.6, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				qi = 1208,	-- Maybell's Love Letter (PQI!)
 				lvl = 5,
 			}),
 		}),
