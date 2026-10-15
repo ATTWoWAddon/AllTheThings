@@ -132,7 +132,7 @@ app:CreateWindow("Import", {
 			{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 			{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
 			{ minBuild = 60000, id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
-			{ id = "illusionID", name = L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") },
+			{ minBuild = 70000, id = "illusionID", name = L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") },
 			{ id = "modItemID", name = ITEMS, icon = 135276 },
 			{ id = "questID", name = TRACKER_HEADER_QUESTS, icon = app.asset("Interface_Quest_header") },
 			{ id = "spellID", name = SPELLS, icon = 135736 },

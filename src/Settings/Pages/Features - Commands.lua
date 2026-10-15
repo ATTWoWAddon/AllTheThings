@@ -75,7 +75,7 @@ end
 local stringsTwo = {
 	{ title = L.HEADER, command = "header" },
 	{ title = L.HEIRLOOM, command = "heirloomid" },
-	{ title = L.ILLUSION, command = "illusion" },
+	{ minBuild = 70000, title = L.ILLUSION, command = "illusion" },
 	{ title = L.ITEM, command = "item" },
 	{ title = L.MAP, command = "map" },
 	{ title = L.MOUNT_SPELL, command = "mount" },
