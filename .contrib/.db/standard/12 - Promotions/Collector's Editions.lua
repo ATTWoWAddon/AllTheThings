@@ -1022,7 +1022,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					q(57686, {	-- The Eternal Traveler
 						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
 						["qg"] = 158635,	-- Xolartios <Eternal Traveler>
-						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
+						["timeline"] = { ADDED_8_3_7 },	-- Still available to players that have the mount, able to share quest with others etc.
 						["groups"] = {
 							i(172954),	-- Echo of Mortality (QI!)
 							--

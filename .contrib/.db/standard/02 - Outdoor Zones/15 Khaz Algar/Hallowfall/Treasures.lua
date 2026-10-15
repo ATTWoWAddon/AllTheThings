@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			o(453374, {	-- Shadowed Essence (Dark Ritual, event)
-				["description"] = "Inside the cave. Interract with the book and start the ritual. Survive the attack and kill the shadows.",
+				["description"] = "Inside the cave. Interact with the book and start the ritual. Survive the attack and kill the shadows.",
 				["provider"] = { "o", 453359 },	-- Dark Ritual (vignette)
 				["coord"] = { 59.5, 59.7, HALLOWFALL },
 				["questID"] = 83284,

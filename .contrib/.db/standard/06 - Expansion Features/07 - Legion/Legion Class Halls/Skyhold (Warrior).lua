@@ -334,7 +334,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 93823 },	-- Danica the Reclaimer
 						["coord"] = { 59.0, 29.7, SKYHOLD },
 					}),
-					-- Artifact Choosen
+					-- Artifact Chosen
 					q(40579, {	-- Weapons of Legend
 						["sourceQuest"] = 39654,	-- Odyn and the Valarjar
 						["provider"] = { "n", 96469 },	-- Odyn

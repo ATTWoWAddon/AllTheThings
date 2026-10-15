@@ -1067,7 +1067,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			})),
 			o(380763, {	-- Ancient Dragonweave Loom
-				["description"] = "Interact with the loom and complete the minigame to be awared this treasure.",
+				["description"] = "Interact with the loom and complete the minigame to be awarded this treasure.",
 				["questID"] = 70372,
 				["coord"] = { 58.6, 45.8, THALDRASZUS },
 				["groups"] = {

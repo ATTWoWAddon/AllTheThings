@@ -1930,7 +1930,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 			["groups"] = {
-				i(233281),	-- Delver's Cosmetic Surprise Bag (CI!) [cointains any unlearned cosmetic from delves]
+				i(233281),	-- Delver's Cosmetic Surprise Bag (CI!) [contains any unlearned cosmetic from delves]
 				i(233276),	-- Delver's Starter Kit (CI!)
 			},
 		}),
@@ -2106,7 +2106,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 			["groups"] = {
-				i(248127),	-- Delver's Cosmetic Surprise Bag (CI!) [cointains any unlearned cosmetic from delves]
+				i(248127),	-- Delver's Cosmetic Surprise Bag (CI!) [contains any unlearned cosmetic from delves]
 				i(248126),	-- Delver's Starter Kit (CI!)
 			},
 		}),
@@ -4242,7 +4242,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(455487, {	-- Sturdy Chest
-					["description"] = "Located ontop of pillar, accessible after killing last boss.",
+					["description"] = "Located on top of pillar, accessible after killing last boss.",
 					["coord"] = { 46.0, 46.1, THE_SPIRAL_WEAVE },
 					["questID"] = 83681,
 				}),

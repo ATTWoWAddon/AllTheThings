@@ -1441,7 +1441,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				-- During questing
 				--q(89196),	-- Zone Choice Made (spellID 1254861), same hqt as previously.
-				q(92712),	-- after turn in questID 86929 (The Council Assembles), could be some phase swtiches or faction renown?
+				q(92712),	-- after turn in questID 86929 (The Council Assembles), could be some phase switches or faction renown?
 				q(94046),	-- The Cradle - Boundary Catcher - Caught 03 - Teleport [DNT] (spellID 1266363), fly directly up into the glowing skybox (achievementID 61860 - From The Cradle to the Grave)
 				q(95146),	-- 12.0 Local 13 Q03a Accept Hannan Leaves (JKP) (spellID 1282413), after accepting O.K. Bloomer (questID 92739)
 			}),

@@ -979,7 +979,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["cost"] = { { "i", 141409, 1 } },	-- 1x Candrael's Charm
 							["groups"] = {
 								n(111110, {	-- Downfall
-									["description"] = "While near Downfall his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
+									["description"] = "While near Downfall his winds will keep you aloft while you fight him.\nHe will occasionally knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
 									["groups"] = {
 										i(139549, {	-- Guise of the Deathwalker
 											artifact(982),	-- Twinblades of the Deceiver [Main Hand]

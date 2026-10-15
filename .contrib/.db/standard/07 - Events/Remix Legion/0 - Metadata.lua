@@ -7,9 +7,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	--[[
 	Legion Remix phases open every two or three weeks starting from 7 October 2025 to 19 January 2026:
 	Phase 1 ( 7 Oct): Skies of Fire (7.0) — Open world, Withered Army Training, launch dungeons, Emerald Nightmare and Trial of Valor raids
-	Phase 2 (21 Oct): Rise of the Nightfallen (7.1) — Insurrection campaign, Return to Karazhan megaduneon, Nighthold raid
+	Phase 2 (21 Oct): Rise of the Nightfallen (7.1) — Insurrection campaign, Return to Karazhan megadungeon, Nighthold raid
 	Phase 3 ( 4 Nov): Legionfall (7.2) — Broken Shore storyline, Legion Assaults, Cathedral of Eternal Night dungeon, Tomb of Sargeras raid
 	Phase 4 (18 Dec): Argus Eternal (7.3) — Argus storyline, Seat of the Triumvirate dungeon, Antorus, the Burning Throne raid
-	Phase 5 ( 9 Dec): Infinite Echoes — Say your goodbyes and embrace the chaos for the final month of the remix as the timeline colapses
+	Phase 5 ( 9 Dec): Infinite Echoes — Say your goodbyes and embrace the chaos for the final month of the remix as the timeline collapses
 	--]]
 })))

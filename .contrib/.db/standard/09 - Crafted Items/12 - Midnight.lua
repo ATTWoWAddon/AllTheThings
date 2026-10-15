@@ -2466,7 +2466,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			--q(TODO),	-- 20/20 Synthesis Synergy
 		}),
 		prof(FISHING, {
-			-- Many 12.1 HQTs which flag and unflag for no discernable reason
+			-- Many 12.1 HQTs which flag and unflag for no discernible reason
 			q(97493, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97494, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97495, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??

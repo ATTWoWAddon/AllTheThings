@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
 						["groups"] = { i(136786) },	-- Uncrowned Insignia
 					}),
-					-- Artifact Choosen
+					-- Artifact Chosen
 					q(40840, {	-- A Worthy Blade
 						["sourceQuest"] = 40839,	-- The Final Shadow
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt

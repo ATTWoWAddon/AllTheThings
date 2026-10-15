@@ -1674,7 +1674,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Only available on Molten Heat difficulty.\n\nCan drop loot from any other Molten Core boss. It has no unique drops of its own.",
 				}),
 				spell(458843, {	-- Molten Heat [Heat Level 3]
-					["description"] = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' varients of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
+					["description"] = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' variants of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
 					["groups"] = {
 						i(228462, {	-- Aurastone Hammer [Molten]
 							["cr"] = 228432,	-- Garr

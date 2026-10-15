@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 				["coord"] = { 46.5, 70.6, AMIRDRASSIL },
 				["sym"] = {
 					{"select", "npcID", 50305 },	-- Select Moon Priestess Lasara <Darnassus Quartermaster>
-					{"pop"},						-- Discard Header and aquire their children
+					{"pop"},						-- Discard Header and acquire their children
 				},
 				["groups"] = {
 					i(210424, {	-- Darnassian Tabard

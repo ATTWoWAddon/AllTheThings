@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(QUESTS, {
 			-- TODO: shit that needs solving:
-			-- *someting* unlocks "into the darkness" other than the pre-nazmir questline that starts from the dazar'alor scouting map. it was already available with no prereqs when i was in the middle of questing through zuldazar. figure out what quest triggers its availability, and figure out if it makes the scouting map questline invalid/if those should all be marked as breadcrumbs or with altQuests.
+			-- *something* unlocks "into the darkness" other than the pre-nazmir questline that starts from the dazar'alor scouting map. it was already available with no prereqs when i was in the middle of questing through zuldazar. figure out what quest triggers its availability, and figure out if it makes the scouting map questline invalid/if those should all be marked as breadcrumbs or with altQuests.
 			-- figure out if "'til death do us part" is available any earlier than turning in "a tribute for death."  it wasn't available w/0 prereqs, just need to make sure we have the availability trigger correct.
 			-- verify SQ for "the forlorn soul" also, picked up at the same time as above. actual non-breadcrumb SQ seems to be "A Tribute for Death," but could be something else?
 			-- verify SQ for "a poisonous touch."  it wasn't available w/0 prereqs and i didn't see it until after turning in "staying hidden," but it may be available earlier.

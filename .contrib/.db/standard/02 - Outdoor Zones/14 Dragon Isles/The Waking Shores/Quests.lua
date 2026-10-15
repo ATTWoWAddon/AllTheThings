@@ -1152,7 +1152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			------ Miscellaneous ------
 			q(70179, {	-- A Two for One Deal
-				["sourceQuests"] = { 66001 },	-- A Last Hope,	-- TODO: Wasnt available when picking up 65997, but available before 66001....
+				["sourceQuests"] = { 66001 },	-- A Last Hope,	-- TODO: Wasn't available when picking up 65997, but available before 66001....
 				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren
 				["coord"] = { 54.4, 30.8, THE_WAKING_SHORES },
 				["groups"] = {
@@ -1536,7 +1536,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(66898),	-- triggered during 'The Shadow of His Wings' (65691)
 				q(70872),	-- Quack Weekly Trigger (spellID 390284)
 				q(70262),	-- triggered with 'Memories Revived' (70268)
-				q(72353),	-- triggeres during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player (spellID 394163)
+				q(72353),	-- triggers during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player (spellID 394163)
 				q(70767),	-- triggers when 'Tale of the Outsider' becomes available for Tarjin the Blind
 				q(70768),	-- triggers when 'Tale of the Outsider' completes (spellID 388144)
 				q(70770),	-- triggers when 'Tale of the Elders' becomes available for Tarjin the Blind

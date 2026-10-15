@@ -84,7 +84,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pet(747, {	-- Effervescent Glowfly (PET!)
-						["description"] = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",
+						["description"] = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occasional spawns through the Vale of Eternal Blossoms.",
 						["coords"] = {
 							{ 56.0, 89.0, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials
 							{ 53.7, 89.2, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials

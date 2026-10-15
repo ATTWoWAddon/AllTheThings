@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { ADDED_8_2_0 },
 					}),
 					pet(548, {	-- Wildhammer Gryphon Hatchling (PET!)
-						["description"] = "Found in the Alliance villages Kirthaven and Thundermar. Horde players CANNOT interact with the hatchlings to intitiate pet battle due to faction alignment, any attempts will only attack them. If you absolutely want to get this pet with a Horde character, they can appear as secondary pets near the villages.",
+						["description"] = "Found in the Alliance villages Kirthaven and Thundermar. Horde players CANNOT interact with the hatchlings to initiate pet battle due to faction alignment, any attempts will only attack them. If you absolutely want to get this pet with a Horde character, they can appear as secondary pets near the villages.",
 						["coords"] = {
 							{ 56.4, 15.8, TWILIGHT_HIGHLANDS },	-- Kirthaven
 							{ 48.4, 28.6, TWILIGHT_HIGHLANDS },	-- Thundermar
@@ -2064,7 +2064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(28107, {	-- Paving the Way (A)
-					["description"] = "Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",
+					["description"] = "Must be on |cFFFFD700If the Key Fits|r to receive this quest.",
 					["sourceQuest"] = 28108,	-- If the Key Fits
 					["qg"] = 47611,	-- Highbank Lieutenant
 					["coord"] = { 26.0, 38.9, TWILIGHT_HIGHLANDS },

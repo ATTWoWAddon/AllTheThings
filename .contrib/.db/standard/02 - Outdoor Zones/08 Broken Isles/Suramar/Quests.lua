@@ -2376,7 +2376,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 				q(40975),	-- Arluin Bribe Tracking - give Arluin 800 ancient mana during "If Words Don't Work..." (questID 42840)
 				q(42649),	-- Arluin Bribe Tracker 2 - give Arluin 1200 ancient mana during "Or Against Us" (questID 43311)
 				q(42443),	-- Arluin Wants In (Tracking Quest) - Arluin shows up at Shal'Aran after you turn in "Giving It All We've Got" (questID 43562) and completing the follow-up quests
-				q(41137),	-- Fall of the King - triggeres when killing Cora'kar
+				q(41137),	-- Fall of the King - triggers when killing Cora'kar
 				q(43703),	-- Hub Mana Tree Tracking - Stage 01
 				q(43704),	-- Hub Mana Tree Tracking - Stage 02
 				q(43706),	-- Hub Mana Tree Tracking - Stage 03 - triggered after turning in "Make Your Mark" (questID 42792)

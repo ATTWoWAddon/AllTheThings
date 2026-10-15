@@ -65,11 +65,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
 				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
-					r(49253),	-- Unkown
-					r(49254),	-- Unkown
-					r(49255),	-- Unkown
-					r(49260),	-- Unkown
-					r(53417),	-- Unkown
+					r(49253),	-- Unknown
+					r(49254),	-- Unknown
+					r(49255),	-- Unknown
+					r(49260),	-- Unknown
+					r(53417),	-- Unknown
 				})),
 			}),
 			expansion(EXPANSION.LEGION, {

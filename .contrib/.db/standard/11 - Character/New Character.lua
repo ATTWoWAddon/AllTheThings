@@ -2388,7 +2388,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 		n(NEW_CHARACTER, {
 			cl(EVOKER, {
-				q(74891),	-- Triggeres on the first use of 'Soar' spell after 10.0.7 to get the 'Aerial Halt' (spellID 403092)
+				q(74891),	-- Triggers on the first use of 'Soar' spell after 10.0.7 to get the 'Aerial Halt' (spellID 403092)
 			}),
 			cl(WARLOCK, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				n(QUESTS, {

@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(SPECIAL, {
-				hqt(53654, {	-- Speak to Wan'be infront of Zaladormu in the Caverns of Time
+				hqt(53654, {	-- Speak to Wan'be in front of Zaladormu in the Caverns of Time
 					["name"] = "Speak to Wan'be infront of Zaladormu in the Caverns of Time",
 					["sourceQuest"] = 53653,	-- Speak to Wan'be at Frostsaber Rock in Winterspring
 					["qg"] = 143129,	-- Wan'be <The Explorer>

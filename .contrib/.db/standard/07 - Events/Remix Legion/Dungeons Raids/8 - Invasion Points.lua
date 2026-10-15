@@ -140,7 +140,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		["groups"] = {
 			m(BROKEN_ISLES, {
 				m(ARGUS, {
-					q(92541, {["isDaily"] = true }),	-- Triggeres after killing any Greater Invasion Point boss
+					q(92541, {["isDaily"] = true }),	-- Triggers after killing any Greater Invasion Point boss
 				}),
 			}),
 		},

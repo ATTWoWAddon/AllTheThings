@@ -4114,7 +4114,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 				q(31969),	-- Priorities Tracking - triggers during "Priorities" (questID 31772)
 				q(29697),	-- Rivett TRACKING
 				q(29704),	-- Shokia TRACKING
-				q(29368),	-- Tracking - triggeres after completing the criteria for "Acid Rain" (questID 29827)
+				q(29368),	-- Tracking - triggers after completing the criteria for "Acid Rain" (questID 29827)
 				q(31829),	-- Tracking Event: Alliance Gunship Leaves — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)
 				q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
 				q(29884),	-- Tracking Event: Spies Leave — triggers after turning in "The Pearlfin Situation" and "Road Rations" (questID 29883 & 29885)

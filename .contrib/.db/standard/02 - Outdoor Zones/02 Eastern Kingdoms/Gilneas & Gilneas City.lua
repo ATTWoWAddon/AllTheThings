@@ -379,7 +379,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14293, {	-- Save Krennan Aranas
-							["sourceQuest"] = 14214,	-- Messsage to Greymane
+							["sourceQuest"] = 14214,	-- Message to Greymane
 							["qg"] = 35550,	-- King Genn Greymane
 							["coord"] = { 59.27, 83.80, GILNEAS_CITY },
 							["races"] = { WORGEN },

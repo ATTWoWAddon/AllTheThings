@@ -1653,7 +1653,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			n(QUESTS, {
 				-- During main story
 				q(85463),	-- [DNT] The Cartels of Undermine Renown Unlock (spellID 1213980)
-				-- Special Assigment Unlock trackers
+				-- Special Assignment Unlock trackers
 				q(85489, {["repeatable"]=true}),	-- Special Assignment: Capstone 1 - Unlock (for Special Assignment: Boom! Headshot! (questID 85487))
 				q(85490, {["repeatable"]=true}),	-- Special Assignment: Capstone 2 - Unlock (for Special Assignment: Security Detail (questID 85488))
 				-- ??

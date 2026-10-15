@@ -570,7 +570,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			n(QUESTS, {
 				q(72596),	-- After Open Orientation (spellID 396185)
 				q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937) (spellID 381859)
-				q(72011),	-- triggeres when accepting 'The Ruby Feast!' (questID 71238) (spellID 391778 & 377492)
+				q(72011),	-- triggers when accepting 'The Ruby Feast!' (questID 71238) (spellID 391778 & 377492)
 				q(72009),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492 & 377494 & 377495 & 377496 & 377497 & 377498 & 377499 & 391779)
 				q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression (spellID 393805)
 				q(67055),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492)

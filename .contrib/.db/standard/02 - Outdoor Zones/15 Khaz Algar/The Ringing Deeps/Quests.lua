@@ -1425,7 +1425,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
 				q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
 				-- Side quests
-				q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
+				q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speech during questID 80682 (One Last Story)
 				-- A Suit of Slime (80509) Choices
 				q(81927),	-- interact a things from table (left-ish one)
 				q(81925),	-- Choosing Flappy Bits

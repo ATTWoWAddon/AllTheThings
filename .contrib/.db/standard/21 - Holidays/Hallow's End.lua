@@ -1550,7 +1550,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(39657, {	-- Candy Bucket — Draenor Garrison (Frostwall or Lunarfall), Neutral
 					-- TODO: While it might seem weird, having this have coordinates at least will plot it on the map so folks don't forget.
-					-- Perhaps investigate a programatic solution? The garrison has different map IDs at different stages of creation.
+					-- Perhaps investigate a programmatic solution? The garrison has different map IDs at different stages of creation.
 					["provider"] = { "o", 243912 },	-- Candy Bucket, Draenor Garrison
 					["timeline"] = { ADDED_6_0_2 },
 					["maps"] = {

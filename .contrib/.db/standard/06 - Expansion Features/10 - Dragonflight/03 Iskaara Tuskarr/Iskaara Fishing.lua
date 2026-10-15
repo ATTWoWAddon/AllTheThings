@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						r(388250),	-- Seavine Harpoon Rope
 						r(387375),	-- Serevite Harpoon Head
 					})),
-					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
+					-- These "Recipes" show as learned, but when you have learned them, they disappear causing ATT to think you no longer have them learned.
 					-- Commented out spellID due to odd use case where players who completed the upgrades/crafting and could no longer open the crafting window can't re-cache.
 					i(199847, {	-- Braided Seavine Harpoon Rope (CI!)
 						-- ["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
@@ -500,7 +500,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							{ "o", 377938 },	-- Prismatic Leaper School
 							{ "o", 382180 },	-- Overheated Magma Thresher Pool
 							{ "n", 197596 },	-- Deep Ice Fishing Hole
-							--[[ Never got one from it and wowhead doesnt have data either. If confirmed, re-add them ~Gold Jan 2023
+							--[[ Never got one from it and wowhead doesn't have data either. If confirmed, re-add them ~Gold Jan 2023
 							{ "o", 382071 },	-- Full Fishing Net
 							{ "o", 379314 },	-- Full Fishing Net
 							{ "o", 381069 },	-- Full Fishing Net

@@ -431,7 +431,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(170145),	-- Cache of Palace Treasures
 			i(164774),	-- Decrypted Message Module
 			i(169081),	-- Holographic Combat Entity Data
-			i(175246),	-- N'lyeth, Sliver of N'Zoth (Unused verison)
+			i(175246),	-- N'lyeth, Sliver of N'Zoth (Unused version)
 		})),
 
 		-- 8.2.5

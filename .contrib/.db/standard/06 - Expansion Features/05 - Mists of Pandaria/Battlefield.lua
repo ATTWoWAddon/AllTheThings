@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 	-- #endif
 }, {
 	n(BATTLEFIELD_BARRENS, {
-		["description"] = "During 5.3 a big battle occured in Barrens.",
+		["description"] = "During 5.3 a big battle occurred in the Barrens.",
 		["maps"] = {
 			DUROTAR,
 			NORTHERN_BARRENS,

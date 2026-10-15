@@ -3187,8 +3187,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 				q(36712),	-- Mill Treasure 1 - triggers when looting Ancient Titan Chest (questID 35701)
 				q(36886),	-- Ogre Waygate
 				q(35946),	-- Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the Sparring Arena active (37.3, 70.7)
-				q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggeres with cinematic during "The Descent" (questID 34338)
-				q(36588),	-- Tracking - See Closed Chest — triggeres immediately after accepting "The Beating Heart" (questID 34410)
+				q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggers with cinematic during "The Descent" (questID 34338)
+				q(36588),	-- Tracking - See Closed Chest — triggers immediately after accepting "The Beating Heart" (questID 34410)
 				q(35064),	-- Sparring Arena
 				q(35149),	-- Sparring Arena - triggers if you choose to build the Sparring Arena for the first timeMgrAlarmEnabled
 			}),

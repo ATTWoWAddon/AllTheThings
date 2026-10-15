@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59253, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_4_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
+							["collectible"] = false,	-- Can't be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
 						i(59254, {	-- Spider Venom Leggings
 							["timeline"] = { ADDED_4_0_3 },
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131544, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_7_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
+							["collectible"] = false,	-- Can't be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
 						i(131545, {	-- Spider Venom Legguards
 							["timeline"] = { ADDED_7_0_3 },
@@ -466,7 +466,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59295, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_4_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
+							["collectible"] = false,	-- Can't be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
 						i(59296, {	-- Spider Venom Leggings
 							["timeline"] = { ADDED_4_0_3 },
@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131510, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_7_0_3 },
-							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
+							["collectible"] = false,	-- Can't be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
 						i(131511, {	-- Spider Venom Legguards
 							["timeline"] = { ADDED_7_0_3 },

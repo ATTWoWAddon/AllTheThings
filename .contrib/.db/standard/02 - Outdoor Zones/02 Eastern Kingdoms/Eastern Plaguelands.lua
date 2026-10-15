@@ -4855,7 +4855,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(27387, {	-- Villians of Darrowshire
+				q(27387, {	-- Villains of Darrowshire
 					["sourceQuest"] = 27386,	-- "A Strange Historian"
 					["qg"] = 10667,	-- Chromie
 					["coord"] = { 35.2, 68.1, EASTERN_PLAGUELANDS },

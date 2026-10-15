@@ -1468,7 +1468,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					o(410999, {	-- Memo from Apothecary Hummel
 						i(210417),	-- Memo from Apothecary Hummel (QI!) [book]
 					}),
-					i(213091),	-- Memo from Apothecary Hummel [book] (awared to player after turn in this quest)
+					i(213091),	-- Memo from Apothecary Hummel [book] (awarded to player after turn in this quest)
 					i(210332),	-- O.D.I.E.'s Remote Control (QI!)
 				},
 			}),
@@ -1550,7 +1550,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					o(410999, {	-- Memo from Apothecary Hummel
 						i(210417),	-- Memo from Apothecary Hummel (QI!) [book]
 					}),
-					i(213091),	-- Memo from Apothecary Hummel [book] (awared to player after turn in this quest)
+					i(213091),	-- Memo from Apothecary Hummel [book] (awarded to player after turn in this quest)
 					i(211778),	-- O.D.I.E.'s Remote Control (QI!)
 				},
 			}),
