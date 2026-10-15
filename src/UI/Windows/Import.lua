@@ -6,8 +6,8 @@ local L = app.L;
 if not app.IsRetail then return; end
 
 -- Global locals
-local ipairs, setmetatable, tonumber, tinsert, wipe
-	= ipairs, setmetatable, tonumber, tinsert, wipe
+local ipairs, setmetatable, tonumber, tinsert, tremove, wipe
+	= ipairs, setmetatable, tonumber, tinsert, tremove, wipe
 
 -- Local functions
 local IMPORT_TYPES = {}
@@ -131,7 +131,7 @@ app:CreateWindow("Import", {
 			{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },
 			{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 			{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
-			{ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
+			{ minBuild = 60000, id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
 			{ id = "illusionID", name = L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") },
 			{ id = "modItemID", name = ITEMS, icon = 135276 },
 			{ id = "questID", name = TRACKER_HEADER_QUESTS, icon = app.asset("Interface_Quest_header") },
@@ -141,6 +141,13 @@ app:CreateWindow("Import", {
 
 		if app.GameBuildVersion >= 70000 then
 			tinsert(initialButtons, 3, { id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") });
+		end
+
+		for i = #initialButtons, 1, -1 do
+			local minBuild = initialButtons[i].minBuild;
+			if minBuild and app.GameBuildVersion < minBuild then
+				tremove(initialButtons, i);
+			end
 		end
 
 		for _, info in ipairs(initialButtons) do
