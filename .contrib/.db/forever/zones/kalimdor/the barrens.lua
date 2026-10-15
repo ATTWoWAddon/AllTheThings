@@ -1479,8 +1479,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ "i", 2589, 40 },	-- 40x Linen Cloth
 					{ "i", 3371, 4 },	-- 4x Empty Vial
 				},
-				lockCriteria = { 1, "factionID", 470.4 },	-- Ratchet, Neutral
 				repeatable = true,
+				lockCriteria = { 1, "factionID", 470.4 },	-- Ratchet, Neutral
 				lvl = 10,
 			}),
 			q(896, {	-- Miner's Fortune
