@@ -454,6 +454,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(97894, {	-- Business in Auberdine
+				nextQuests = { 982 },
+				isBreadcrumb = true,
 				qg = 7232,	-- Borgus Steelhand <Weapon Crafter>
 				coord = { 59.6, 34.2, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -650,6 +652,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(98021, {	-- Journey to Sentinel Hill
+				lvl = 7,
+				sourceQuest = 94947,
 				qg = 1748,	-- Highlord Bolvar Fordragon
 				coord = { 80.1, 38.4, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
