@@ -79,7 +79,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 			app.CreateDynamicHeader("artifactID", SimpleHeaderGroup(app.HeaderConstants.ARTIFACTS)),
 
 			-- Azerite Essences
-			app.CreateDynamicHeader("azeriteessenceID", SimpleHeaderGroup(app.HeaderConstants.AZERITE_ESSENCES)),
+			app.CreateDynamicHeader("azeriteessenceID", SimpleHeaderGroup(app.HeaderConstants.AZERITE_ESSENCES, { minBuild = 80200 })),
 
 			-- Battle Pets
 			app.CreateDynamicHeader("speciesID", {
@@ -231,6 +231,12 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 		},
 	});
+	for i = #dynamicHeader.g, 1, -1 do
+		local minBuild = dynamicHeader.g[i].minBuild;
+		if minBuild and app.GameBuildVersion < minBuild then
+			table.remove(dynamicHeader.g, i);
+		end
+	end
 	local rootData = app.GetDatabaseRoot()
 	app.NestObject(rootData, dynamicHeader)
 	dynamicHeader.parent = rootData;

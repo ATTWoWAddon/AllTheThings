@@ -2,81 +2,85 @@
 local _,app = ...;
 
 -- BFA File
-if app.GameBuildVersion < 80000 or not C_AzeriteEssence then
+if app.GameBuildVersion < 80000 then
 	app.CreateAzeriteEssence = app.CreateUnimplementedClass("AzeriteEssence", "azeriteessenceID");
 	return
 end
 
 -- Azerite Essence Lib
-local KEY, CACHE, SETTING = "azeriteessenceID", "AzeriteEssenceRanks", "AzeriteEssences"
-local CLASSNAME = "AzeriteEssence"
-local C_AzeriteEssence_GetEssenceInfo, C_AzeriteEssence_GetEssenceHyperlink
-	= C_AzeriteEssence.GetEssenceInfo, C_AzeriteEssence.GetEssenceHyperlink;
-local AzeriteEssenceInfoCache = setmetatable({}, {
-	__index = function(t, id)
-		local info = C_AzeriteEssence_GetEssenceInfo(id) or app.EmptyTable
-		t[id] = info
-		return info
-	end
-})
-app.CreateAzeriteEssence = app.CreateClass(CLASSNAME, KEY, {
-	info = function(t)
-		return AzeriteEssenceInfoCache[t[KEY]]
-	end,
-	RefreshCollectionOnly = true,
-	collectible = function(t) return app.Settings.Collectibles[SETTING]; end,
-	collectibleAsCost = app.ReturnFalse,
-	collected = function(t)
-		local id = t[KEY];
-		local rank = t.rank
-		-- character collected
-		local charRank = app.IsCached(CACHE, id) or 0
-		if charRank >= rank then return 1; end
-		-- account-wide collected by rank
-		local acctRank = app.IsAccountTracked(CACHE, id, SETTING) or 0
-		if acctRank >= rank then return 2; end
-	end,
-	lvl = function(t)
-		return 50;
-	end,
-	icon = function(t)
-		return t.info.icon or 2065585;
-	end,
-	name = function(t)
-		return t.info.name;
-	end,
-	link = function(t)
-		local link = C_AzeriteEssence_GetEssenceHyperlink(t.azeriteessenceID, t.rank);
-		t.link = link;
-		return link;
-	end,
-	rank = function(t)
-		return t.info.rank or 0;
-	end,
-});
-
-app.AddGenericFieldConverter(KEY);
-app.AddEventHandler("OnRefreshCollections", function()
-	local state
-	local ranks = {[1]={},[2]={},[3]={},[4]={}}
-	wipe(AzeriteEssenceInfoCache)
-	for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-		state = AzeriteEssenceInfoCache[id]
-		if state.unlocked then
-			ranks[state.rank][id] = true
+if app.GameBuildVersion >= 80200 and C_AzeriteEssence then
+	local KEY, CACHE, SETTING = "azeriteessenceID", "AzeriteEssenceRanks", "AzeriteEssences"
+	local CLASSNAME = "AzeriteEssence"
+	local C_AzeriteEssence_GetEssenceInfo, C_AzeriteEssence_GetEssenceHyperlink
+		= C_AzeriteEssence.GetEssenceInfo, C_AzeriteEssence.GetEssenceHyperlink;
+	local AzeriteEssenceInfoCache = setmetatable({}, {
+		__index = function(t, id)
+			local info = C_AzeriteEssence_GetEssenceInfo(id) or app.EmptyTable
+			t[id] = info
+			return info
 		end
-	end
-	-- Cache rank value for each id
-	for rank,ids in ipairs(ranks) do
-		-- Character Cache
-		app.SetBatchCached(CACHE, ids, rank)
-	end
-end);
-app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
-	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
-end);
-app.AddSimpleCollectibleSwap(CLASSNAME, SETTING)
+	})
+	app.CreateAzeriteEssence = app.CreateClass(CLASSNAME, KEY, {
+		info = function(t)
+			return AzeriteEssenceInfoCache[t[KEY]]
+		end,
+		RefreshCollectionOnly = true,
+		collectible = function(t) return app.Settings.Collectibles[SETTING]; end,
+		collectibleAsCost = app.ReturnFalse,
+		collected = function(t)
+			local id = t[KEY];
+			local rank = t.rank
+			-- character collected
+			local charRank = app.IsCached(CACHE, id) or 0
+			if charRank >= rank then return 1; end
+			-- account-wide collected by rank
+			local acctRank = app.IsAccountTracked(CACHE, id, SETTING) or 0
+			if acctRank >= rank then return 2; end
+		end,
+		lvl = function(t)
+			return 50;
+		end,
+		icon = function(t)
+			return t.info.icon or 2065585;
+		end,
+		name = function(t)
+			return t.info.name;
+		end,
+		link = function(t)
+			local link = C_AzeriteEssence_GetEssenceHyperlink(t.azeriteessenceID, t.rank);
+			t.link = link;
+			return link;
+		end,
+		rank = function(t)
+			return t.info.rank or 0;
+		end,
+	});
+
+	app.AddGenericFieldConverter(KEY);
+	app.AddEventHandler("OnRefreshCollections", function()
+		local state
+		local ranks = {[1]={},[2]={},[3]={},[4]={}}
+		wipe(AzeriteEssenceInfoCache)
+		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+			state = AzeriteEssenceInfoCache[id]
+			if state.unlocked then
+				ranks[state.rank][id] = true
+			end
+		end
+		-- Cache rank value for each id
+		for rank,ids in ipairs(ranks) do
+			-- Character Cache
+			app.SetBatchCached(CACHE, ids, rank)
+		end
+	end);
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	end);
+	app.AddSimpleCollectibleSwap(CLASSNAME, SETTING)
+else
+	app.CreateAzeriteEssence = app.CreateUnimplementedClass("AzeriteEssence", "azeriteessenceID");
+end
 
 -- Subroutines
 local select = select;
@@ -232,5 +236,7 @@ app.AddEventHandler("OnLoad", function()
 	app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest_zonedrops", bfa_azerite_armor_chest_zonedrops);
 	app.RegisterSymlinkSubroutine("bfa_azerite_armor_chest", bfa_azerite_armor_chest);
 	app.RegisterSymlinkSubroutine("common_island_expedition_salvage", common_island_expedition_salvage);
-	app.AddDynamicCategoryHeader({ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") });
+	if app.GameBuildVersion >= 80200 and C_AzeriteEssence then
+		app.AddDynamicCategoryHeader({ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") });
+	end
 end);

@@ -53,7 +53,7 @@ end
 
 local stringsOne = {
 	{ title = L.ACHIEVEMENT, command = "achievement" },
-	{ title = L.AZERITE_ESSENCE, command = "azeriteessence" },
+	{ minBuild = 80200, title = L.AZERITE_ESSENCE, command = "azeriteessence" },
 	{ title = L.BATTLE_PET, command = "battlepet" },
 	{ title = L.CATEGORY, command = "category" },
 	{ title = L.CLASSES, command = "class" },

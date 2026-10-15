@@ -123,7 +123,7 @@ app:CreateWindow("Import", {
 		local initialButtons = {
 			{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
 			{ id = "sourceID", name = WARDROBE, icon = 135276 },
-			{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
+			{ minBuild = 80200, id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 			{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
 			{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 			{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
