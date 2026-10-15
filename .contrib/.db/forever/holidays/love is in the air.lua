@@ -321,8 +321,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			description = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
 			cost = {
 				{ "i", 21833, 1 },	-- 1x Cologne Bottle
-				{ "i", 21829, 1 },	-- 1x Perfume Bottle
 				{ "i", 21815, 1 },	-- 1x Love Token
+				{ "i", 21829, 1 },	-- 1x Perfume Bottle
 			},
 			groups = {
 				i(22262, {	-- Alliance Gift Collection
