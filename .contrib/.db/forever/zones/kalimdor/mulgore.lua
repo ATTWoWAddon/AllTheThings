@@ -196,6 +196,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						classes = { WARRIOR },
 					}),
 					q(96659, {	-- The Adventurer [Mulgore]
+						nextQuests = { 96605 },
+						isBreadcrumb = true,
+						altQuests = { 96627, 96628, 96630, 96638, 96652, 96656 },
 						--["sourceQuest"] = ,	-- 
 						qg = 2981,	-- Chief Hawkwind
 						qi = 275019,	-- Supply Bundle (PQI!)
@@ -356,6 +359,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				races = HORDE_ONLY,
 			}),
 			q(97927, {	-- Camping 101: Alchemy [Mulgore]
+				altQuests = { 96045, 97899, 97915, 97938, 97951, 97963 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -369,6 +373,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97928, {	-- Camping 101: Blacksmithing [Mulgore]
+				altQuests = { 96044, 97900, 97916, 97939, 97952, 97964 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -382,6 +387,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96661, {	-- Camping 101: Cooking [Mulgore]
+				altQuests = { 96626, 96629, 96634, 96646, 96655, 96658 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -390,6 +396,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 			}),
 			q(97929, {	-- Camping 101: Enchanting [Mulgore]
+				altQuests = { 96059, 97901, 97917, 97940, 97953, 98284, 98286 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -402,6 +409,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97930, {	-- Camping 101: Engineering [Mulgore]
+				altQuests = { 96058, 97902, 97918, 97941, 97954, 98285, 98287 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -414,6 +422,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97931, {	-- Camping 101: First Aid [Mulgore]
+				altQuests = { 96047, 97903, 97919, 97942, 97955, 97965 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -426,6 +435,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97932, {	-- Camping 101: Fishing [Mulgore]
+				altQuests = { 96050, 97904, 97920, 97943, 97956, 97967 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -438,6 +448,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97933, {	-- Camping 101: Herbalism [Mulgore]
+				altQuests = { 96055, 97905, 97921, 97944, 97957, 97968 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -451,6 +462,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97934, {	-- Camping 101: Leatherworking [Mulgore]
+				altQuests = { 96031, 97906, 97922, 97946, 97958, 97969 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -463,6 +475,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97935, {	-- Camping 101: Mining [Mulgore]
+				altQuests = { 96046, 97907, 97923, 97948, 97959, 97970 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -476,6 +489,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97936, {	-- Camping 101: Skinning [Mulgore]
+				altQuests = { 96056, 97908, 97924, 97949, 97960, 97971 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -488,6 +502,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(97937, {	-- Camping 101: Tailoring [Mulgore]
+				altQuests = { 96057, 96102, 97925, 97950, 97961, 97972, 97973 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
@@ -1003,6 +1018,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96605, {	-- The Great Outdoors [Mulgore]
+				altQuests = { 95998, 96101, 96604, 96606, 96607, 96608 },
 				sourceQuest = 96659,	-- The Adventurer [Mulgore]
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
