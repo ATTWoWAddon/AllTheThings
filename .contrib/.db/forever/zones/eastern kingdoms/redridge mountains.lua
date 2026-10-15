@@ -28,8 +28,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 		}),
 		n(FACTIONS, {
 			faction(2586, {	-- Azeroth Commerce Authority
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 		n(FLIGHT_PATHS, {
@@ -84,15 +84,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 379,	-- Darcy
 				coord = { 22.0, 45.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 5534,	-- Parker's Lunch (QI!)
 				lvl = 12,
+				qi = 5534,	-- Parker's Lunch (QI!)
 			}),
 			q(94, {	-- A Watchful Eye
 				qg = 313,	-- Theocritus
 				coord = { 65.2, 69.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1083,	-- Glyph of Azora (QI!)
 				lvl = 20,
+				qi = 1083,	-- Glyph of Azora (QI!)
 			}),
 			q(2282, {	-- Alther's Mill
 				sourceQuest = 2281,	-- Redridge Rendezvous
@@ -100,8 +100,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 23.0, 52.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				qi = 5060,	-- Thieves' Tools (QI!)
 				lvl = 16,
+				qi = 5060,	-- Thieves' Tools (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Token of Thievery
 						provider = { "i", 7871 },	-- Token of Thievery (QI!)
@@ -115,9 +115,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				sourceQuest = 89,	-- The Everstill Bridge
 				qg = 341,	-- Foreman Oslow
 				coord = { 27.0, 48.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/12 Greater Tarantula slain
 						providers = {
@@ -168,9 +168,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(98387, {	-- Blackrock Blockade
 				qg = 382,	-- Marshal Marris
 				coord = { 28.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Stolen Supplies
 						providers = {
@@ -237,8 +237,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 342,	-- Martie Jainrose
 				coord = { 16.8, 46.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1325,	-- Daffodil Bouquet (QI!)
 				lvl = 12,
+				qi = 1325,	-- Daffodil Bouquet (QI!)
 				groups = {
 					i(1326),	-- Sauteed Sunfish
 				},
@@ -313,55 +313,55 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 				coord = { 79.2, 46.7, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1083,	-- Glyph of Azora (QI!)
 				lvl = 20,
+				qi = 1083,	-- Glyph of Azora (QI!)
 			}),
 			q(145, {	-- Messenger to Darkshire (1/2)
 				sourceQuest = 144,	-- Messenger to Westfall (2/2)
 				qg = 344,	-- Magistrate Solomon
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1409,	-- Solomon's Plea to Darkshire (QI!)
 				lvl = 18,
+				qi = 1409,	-- Solomon's Plea to Darkshire (QI!)
 			}),
 			q(146, {	-- Messenger to Darkshire (2/2)
 				sourceQuest = 145,	-- Messenger to Darkshire (1/2)
 				qg = 263,	-- Lord Ello Ebonlocke
 				coord = { 72.0, 46.6, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				qi = 1410,	-- Ebonlocke's Response to Solomon (QI!)
 				lvl = 18,
+				qi = 1410,	-- Ebonlocke's Response to Solomon (QI!)
 			}),
 			q(120, {	-- Messenger to Stormwind (1/2)
 				qg = 344,	-- Magistrate Solomon
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1293,	-- The State of Lakeshire (QI!)
 				lvl = 14,
+				qi = 1293,	-- The State of Lakeshire (QI!)
 			}),
 			q(121, {	-- Messenger to Stormwind (2/2)
 				sourceQuest = 120,	-- Messenger to Stormwind (1/2)
 				qg = 466,	-- General Marcus Jonathan
 				coord = { 63.8, 75.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 1294,	-- The General's Response (QI!)
 				lvl = 14,
+				qi = 1294,	-- The General's Response (QI!)
 			}),
 			q(143, {	-- Messenger to Westfall (1/2)
 				sourceQuest = 121,	-- Messenger to Stormwind (2/2)
 				qg = 344,	-- Magistrate Solomon
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1407,	-- Solomon's Plea to Westfall (QI!)
 				lvl = 14,
+				qi = 1407,	-- Solomon's Plea to Westfall (QI!)
 			}),
 			q(144, {	-- Messenger to Westfall (2/2)
 				sourceQuest = 143,	-- Messenger to Westfall (1/2)
 				qg = 234,	-- Gryan Stoutmantle
 				coord = { 56.2, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
-				qi = 1408,	-- Stoutmantle's Response to Solomon (QI!)
 				lvl = 14,
+				qi = 1408,	-- Stoutmantle's Response to Solomon (QI!)
 			}),
 			q(219, {	-- Missing In Action
 				qg = 349,	-- Corporal Keeshan
@@ -448,8 +448,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 514,	-- Smith Argus
 				coord = { 41.7, 65.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1284,	-- Crate of Horseshoes (QI!)
 				lvl = 13,
+				qi = 1284,	-- Crate of Horseshoes (QI!)
 			}),
 			q(127, {	-- Selling Fish
 				qg = 381,	-- Dockmaster Baren
@@ -490,9 +490,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(98407, {	-- Show of Force
 				qg = 1070,	-- Deputy Feldon
 				coord = { 25.6, 60.0, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 11,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Spiked Collar
 						provider = { "i", 280911 },	-- Spiked Collar
@@ -509,9 +509,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qs = 280179,	-- Shipping Label (QS!)
 				qg = 256390,	-- Marcy Baker <Inventory Intake>
 				coord = { 9.6, 71.0, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					currency(3402),	-- Merchant's Favor x50
 				},
@@ -604,8 +604,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 415,	-- Verner Osgood
 				coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1283,	-- Verner's Notes (QI!)
 				lvl = 14,
+				qi = 1283,	-- Verner's Notes (QI!)
 			}),
 			q(1699, {	-- The Rethban Gauntlet
 				sourceQuest = 1698,	-- Yorus Barleybrew
@@ -621,8 +621,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 21.5, 44.7, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				qi = 6843,	-- Cask of Scalder (QI!)
 				lvl = 20,
+				qi = 6843,	-- Cask of Scalder (QI!)
 				groups = {
 					i(6970),	-- Furen's Favor
 				},
@@ -631,8 +631,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qs = 1962,	-- Glowing Shadowhide Pendant (QS!)
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1956,	-- Faded Shadowhide Pendant (QI!)
 				lvl = 15,
+				qi = 1956,	-- Faded Shadowhide Pendant (QI!)
 				groups = {
 					i(1970),	-- Restoring Balm
 				},
@@ -678,9 +678,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(95999, {	-- Wanted: Insinerator Gar'im
 				provider = { "o", 649051 },	-- Wanted: Insinerator Gar'im
 				coord = { 24.3, 46.2, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Broken Staff of Incinerator Gar'im
 						provider = { "i", 271872 },	-- Broken Staff of Incinerator Gar'im (QI!)
@@ -716,8 +716,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 		}),
 		n(RARES, {
@@ -826,8 +826,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256732, {	-- Alynsia <Enchanter>
 				coord = { 11.1, 71.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ENCHANTING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
@@ -879,8 +879,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256734, {	-- Daniel Stitchsong <Leatherworker>
 				coord = { 10.0, 72.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = LEATHERWORKING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(956, {	-- Dorin Songblade <Armorer>
@@ -918,8 +918,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256733, {	-- Fritz Fizzle <Engineer>
 				coord = { 10.4, 74.4, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ENGINEERING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(3085, {	-- Gloria Femmel <Cooking Supplies>
@@ -959,8 +959,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256731, {	-- Kalsey Sanden <Chef>
 				coord = { 10.8, 72.8, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(249888, {	-- Recipe: Calcified Smoothie (RECIPE!)
 						minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
@@ -989,26 +989,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256735, {	-- Mivin Shadowweave <Tailor>
 				coord = { 10.0, 72.8, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = TAILORING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(256729, {	-- Nina Surefire <Alchemist>
 				coord = { 10.8, 72.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(256730, {	-- Stondry Darkhammer <Blacksmith>
 				coord = { 10.4, 74.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = BLACKSMITHING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(256389, {	-- Tamelyn Aldridge <Supply Officer>
 				coord = { 10.5, 71.3, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(270888, {	-- Advertising License Application
 						minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
@@ -1191,8 +1191,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 46.4, 34.6, MAP.REDRIDGE_MOUNTAINS },	-- Northside
 					{ 56.4, 75.6, MAP.REDRIDGE_MOUNTAINS },	-- Southside
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 428,	-- Dire Condor
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1219, {	-- Redridge Machete
 				cr = 424,	-- Redridge Poacher

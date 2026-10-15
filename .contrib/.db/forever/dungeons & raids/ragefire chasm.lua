@@ -52,8 +52,8 @@ root(ROOTS.Instances, {
 					qg = 11834,	-- Maur Grimtotem
 					maps = { MAP.THUNDER_BLUFF },
 					races = HORDE_ONLY,
-					qi = 14381,	-- Grimtotem Satchel (QI!)
 					lvl = 9,
+					qi = 14381,	-- Grimtotem Satchel (QI!)
 					groups = {
 						i(15452),	-- Featherbead Bracers
 						i(15453),	-- Savannah Bracers

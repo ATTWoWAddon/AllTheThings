@@ -53,16 +53,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 2563,	-- Strange Smelling Powder (QI!)
 				lvl = 16,
+				qi = 2563,	-- Strange Smelling Powder (QI!)
 			}),
 			q(274, {	-- A Dark Threat Looms (4/7)
 				sourceQuest = 161,	-- A Dark Threat Looms (3/7)
 				qg = 1073,	-- Ashlan Stonesmirk
 				coord = { 50.0, 18.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 2609,	-- Disarming Colloid (QI!)
 				lvl = 16,
+				qi = 2609,	-- Disarming Colloid (QI!)
 			}),
 			q(278, {	-- A Dark Threat Looms (5/7)
 				sourceQuest = 274,	-- A Dark Threat Looms (4/7)
@@ -105,8 +105,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1093,	-- Chief Engineer Hinderweir VII
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2610,	-- Disarming Mixture (QI!)
 				lvl = 16,
+				qi = 2610,	-- Disarming Mixture (QI!)
 			}),
 			q(283, {	-- A Dark Threat Looms (7/7)
 				sourceQuest = 280,	-- A Dark Threat Looms (6/7)
@@ -232,9 +232,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(86585, {	-- Banner of the Fallen
 				qg = 269153,	-- Mountaineer Ylva
 				coord = { 31.8, 86.2, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				qi = 253247,	-- Banner of Ironforge (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Headsplitter slain
 						provider = { "n", 269185 },	-- Headsplitter
@@ -310,16 +310,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuest = 79974,	-- Wet Job
 				provider = { "o", 424007 },	-- Carved Figurine
 				coord = { 49.5, 12.8, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(298, {	-- Excavation Progress Report
 				qg = 1344,	-- Prospector Ironband
 				coord = { 65.9, 65.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2637,	-- Ironbrand's Progress Report (QI!)
 				lvl = 10,
+				qi = 2637,	-- Ironbrand's Progress Report (QI!)
 			}),
 			q(307, {	-- Filthy Paws
 				qg = 1343,	-- Mountaineer Stormpike
@@ -374,8 +374,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1681,	-- Brock Stoneseeker
 				coord = { 37.0, 47.8, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
-				qi = 16310,	-- Brock's List (QI!)
 				lvl = 10,
+				qi = 16310,	-- Brock's List (QI!)
 			}),
 			q(224, {	-- In Defense of the King's Lands (1/4)
 				qg = 1089,	-- Mountaineer Cobbleflint
@@ -453,11 +453,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				-- CRIEVE NOTE: This might be a mining exclusive quest
 				qg = 167,	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
 				cost = { { "i", 2841, 10 } },	-- 10x Bronze Bar
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(3576),	-- Tin Bar
 				},
@@ -466,8 +466,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1105,	-- Jern Hornhelm
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 13,
+				isBreadcrumb = true,
 			}),
 			q(255, {	-- Mercenaries
 				qg = 1139,	-- Magistrate Bluntnose
@@ -490,8 +490,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1340,	-- Mountaineer Kadrell
 				coord = { 34.8, 47.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 9,
+				isBreadcrumb = true,
 			}),
 			q(302, {	-- Powder to Ironband
 				sourceQuest = 301,	-- Report to Ironforge
@@ -537,15 +537,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1105,	-- Jern Hornhelm
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2637,	-- Ironbrand's Progress Report (QI!)
 				lvl = 10,
+				qi = 2637,	-- Ironbrand's Progress Report (QI!)
 			}),
 			q(468, {	-- Report to Mountaineer Rockgar
 				qg = 1340,	-- Mountaineer Kadrell
 				coord = { 34.8, 47.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 19,
+				isBreadcrumb = true,
 			}),
 			q(273, {	-- Resupplying the Excavation
 				sourceQuest = 302,	-- Powder to Ironband
@@ -559,16 +559,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1572,	-- Thorgrum Borrelson
 				coord = { 33.9, 50.9, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
-				qi = 16310,	-- Brock's List (QI!)
 				lvl = 10,
+				qi = 16310,	-- Brock's List (QI!)
 			}),
 			q(86614, {	-- Silver of the Waves
 				provider = { "o", 665289 },	-- Discarded Fishing Toolbox
 				coord = { 50.6, 53.4, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 278051,	-- Monogrammed Silver Hair Clip (QI!)
 				lvl = 12,
+				qi = 278051,	-- Monogrammed Silver Hair Clip (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(281256),	-- Repurposed Hair Band
 				},
@@ -576,9 +576,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(86667, {	-- Snowbound
 				qg = 49808,	-- Grenhild Darktalon
 				coord = { 36.4, 48.2, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Jar of Snow
 						providers = {
@@ -595,8 +595,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 24.7, 18.3, MAP.LOCH_MODAN },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 5998,	-- Stormpike's Request (QI!)
 				lvl = 9,
+				qi = 5998,	-- Stormpike's Request (QI!)
 			}),
 			q(455, {	-- The Algaz Gauntlet
 				sourceQuest = 468,	-- Report to Mountaineer Rockgar
@@ -653,9 +653,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(86758, {	-- Twisting the Knife
 				qg = 1154,	-- Marek Ironheart
 				coord = { 81.8, 61.8, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Marek's Croc-Hunting Knife
 						provider = { "i", 279591 },	-- Marek's Croc-Hunting Knife
@@ -700,8 +700,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1187,	-- Daryl the Youngling
 				coord = { 83.4, 65.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2713,	-- Ol' Sooty's Head (QI!)
 				lvl = 15,
+				qi = 2713,	-- Ol' Sooty's Head (QI!)
 				groups = {
 					i(3574),	-- Hunting Ammo Sack
 					i(3573),	-- Hunting Quiver

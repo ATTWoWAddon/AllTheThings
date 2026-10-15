@@ -76,9 +76,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					q(97236, {	-- Fang of Githyiss
 						provider = { "i", 277190 },	-- Fang of Githyiss
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						cr = 1994,	-- Githyiss the Vile
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(3119, {	-- Hallowed Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
@@ -93,8 +93,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 59.2, 40.4, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { PRIEST },
-						isBreadcrumb = true,
 						lvl = 5,
+						isBreadcrumb = true,
 					}),
 					q(3521, {	-- Iverron's Antidote (1/2)
 						sourceQuest = 3519,	-- A Friend in Need
@@ -130,8 +130,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						qg = 8583,	-- Dirania Silvershine
 						coord = { 60.8, 42.0, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
-						qi = 10642,	-- Iverron's Antidote (QI!)
 						lvl = 2,
+						qi = 10642,	-- Iverron's Antidote (QI!)
 						groups = {
 							i(10655),	-- Sedgeweed Britches
 							i(10656),	-- Barkmail Vest
@@ -140,8 +140,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					q(97977, {	-- Nature's Call
 						qg = 1992,	-- Tarindrella
 						coord = { 57.8, 45.0, MAP.TELDRASSIL },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/4 Gnarlpine Totem
 								providers = {
@@ -191,10 +191,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						--["sourceQuest"] = ,	-- 
 						provider = { "o", 654846 },	-- Lost Journal
 						coord = { 59.1, 39.49, MAP.TELDRASSIL },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						qi = 275022,	-- Lost Journal (QI!)
 						lvl = 4,
+						qi = 275022,	-- Lost Journal (QI!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(456, {	-- The Balance of Nature (1/2)
 						qg = 2079,	-- Conservator Ilthalaine
@@ -230,8 +230,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					q(97979, {	-- The Goddess Provides
 						qg = 3595,	-- Shanda <Priest Trainer>
 						coord = { 59.2, 40.4, MAP.TELDRASSIL },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { NIGHTELF },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(458, {	-- The Woodland Protector (1/2)
 						qg = 2077,	-- Melithar Staghelm
@@ -402,9 +402,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(490, {	-- Bounty: Gnarlpine Furbolg
 				qg = 2155,	-- Sentinel Shayla Nightbreeze
 				coord = { 38.4, 54.0, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/15 Gnarlpine Fang
 						provider = { "i", 5220 },	-- Gnarlpine Fang (QI!)
@@ -430,10 +430,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230564),	-- Alchemy: Mana Well
 				},
@@ -442,11 +442,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				requireSkill = BLACKSMITHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
 				},
@@ -455,18 +455,18 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(97940, {	-- Camping 101: Enchanting [Teldrassil]
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENCHANTING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
@@ -475,11 +475,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				requireSkill = ENGINEERING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
@@ -488,10 +488,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FIRST_AID,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230117),	-- First Aid: First Aid Kit
 				},
@@ -500,11 +500,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARNASSUS },
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229745),	-- Fishing: Fish Bowl
 				},
@@ -513,10 +513,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = HERBALISM,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229705),	-- Herbalism: Incense Candle
 				},
@@ -525,10 +525,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = LEATHERWORKING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229432),	-- Leatherworking: Camp Tent
 				},
@@ -537,11 +537,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				requireSkill = MINING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230161),	-- Mining: Lodestone
 				},
@@ -550,10 +550,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = SKINNING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229517),	-- Skinning: Camp Chair
 				},
@@ -562,11 +562,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARNASSUS },
 				requireSkill = TAILORING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
@@ -575,17 +575,17 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 935,	-- Crown of the Earth (6/6) / The Waters of Teldrassil [CATA+]
 				qg = 3516,	-- Arch Druid Fandral Staghelm
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				qi = 279291,	-- Drained Vessel (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98065, {	-- Crown of the Earth (2/2) [Forever]
 				sourceQuest = 98046,	-- Crown of the Earth (1/2) [Forever]
 				qg = 4092,	-- Lariia
 				coord = { 40.2, 88.2, MAP.DARNASSUS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				qi = 279331,	-- Moonwell Remnants (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				sourceQuest = 928,	-- Crown of the Earth (2/6)
@@ -647,9 +647,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 937,	-- The Enchanted Glade
 				qg = 3519,	-- Sentinel Arynia Cloudsbreak
 				coord = { 38.2, 34.4, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 6,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Hatescreech's Amulet
 						provider = { "i", 280831 },	-- Hatescreech's Amulet
@@ -672,8 +672,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 2083,	-- Syral Bladeleaf
 				coord = { 56.0, 57.8, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
-				qi = 5391,	-- Rare Earth (QI!)
 				lvl = 4,
+				qi = 5391,	-- Rare Earth (QI!)
 			}),
 			q(5636, {	-- Desperate Prayer
 				altQuests = {
@@ -713,8 +713,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					i(9598),	-- Sleeping Robes
 					i(18957),	-- Brushwood Blade
 					i(9602, {	-- Brushwood Blade
-						timeline = { REMOVED_1_11_1 },
 						collectible = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
+						timeline = { REMOVED_1_11_1 },
 						-- If anything, it should match the sourceID of the other item by that name. (7540)
 						-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
 					}),
@@ -724,10 +724,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 99050,	-- The Great Tree Provides
 				qg = 6094,	-- Byancie
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 286069,	-- Lashwater Salve (QI!)
 				lvl = 4,
+				qi = 286069,	-- Lashwater Salve (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(1684, {	-- Elanaria
 				altQuests = {
@@ -747,8 +747,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1581, {	-- Elixirs for the Bladeleafs
 				description = "This quest becomes available at Alchemy skill level 20 when the character level requirement is met.\n\nTODO: Check that this is true in Forever.",
@@ -770,15 +770,15 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 56.4, 60.1, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 16,
+				isBreadcrumb = true,
 			}),
 			q(99053, {	-- Escaping Ban'ethil
 				qg = 275744,	-- Sentinel Lynessa Duskblossom
 				coord = { 44.6, 58.9, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Escort Lynessa Duskblossom out of Ban'ethil
 						provider = { "n", 275744 },	-- Sentinel Lynessa Duskblossom
@@ -834,8 +834,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 3838,	-- Vesprystus
 				coord = { 58.4, 94.0, MAP.TELDRASSIL },
 				races = { NIGHTELF },
-				qi = 16262,	-- Nessa's Collection (QI!)
 				lvl = 10,
+				qi = 16262,	-- Nessa's Collection (QI!)
 			}),
 			q(5621, {	-- Garments of the Moon
 				sourceQuest = 5622,	-- In Favor of Elune
@@ -874,9 +874,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 99046,	-- The Lost Runner
 				qg = 275683,	-- Sentinel Eralya Leafshadow
 				coord = { 37.6, 36.8, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(2499, {	-- Oakenscowl
 				sourceQuest = 2498,	-- Return to Denalan
@@ -899,8 +899,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 2080,	-- Denalan
 				coord = { 60.8, 68.4, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
-				qi = 5217,	-- Tainted Heart (QI!)
 				lvl = 9,
+				qi = 5217,	-- Tainted Heart (QI!)
 				groups = {
 					i(5218),	-- Cleansed Timberling Heart
 				},
@@ -920,8 +920,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 2080,	-- Denalan
 				coord = { 60.8, 68.4, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
-				qi = 5168,	-- Timberling Seed (QI!)
 				lvl = 4,
+				qi = 5168,	-- Timberling Seed (QI!)
 			}),
 			q(2498, {	-- Return to Denalan
 				sourceQuest = 923,	-- Tumors / Mossy Tumors [CATA+]
@@ -936,8 +936,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				maps = { MAP.FERALAS },
 				races = ALLIANCE_ONLY,
-				qi = 9331,	-- Feralas: A History (QI!)
 				lvl = 42,
+				qi = 9331,	-- Feralas: A History (QI!)
 			}),
 			q(489, {	-- Seek Redemption!
 				sourceQuest = 488,	-- Zenn's Bidding
@@ -957,9 +957,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(87288, {	-- Soft Saber Pelts
 				qg = 3608,	-- Aldia
 				coord = { 55.4, 57.2, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Soft Nightsaber Pelt
 						provider = { "i", 280087 },	-- Soft Nightsaber Pelt
@@ -1036,8 +1036,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					{ 37.0, 34.1, MAP.TELDRASSIL },
 				},
 				races = ALLIANCE_ONLY,
-				qi = 5219,	-- Inscribed Bark (QI!)
 				lvl = 6,
+				qi = 5219,	-- Inscribed Bark (QI!)
 				groups = {
 					i(281250, {	-- Forest Oracle's Cloak
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1049,24 +1049,24 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 56.4, 60.1, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				qi = 7735,	-- Jannok's Rose (QI!)
 				lvl = 10,
+				qi = 7735,	-- Jannok's Rose (QI!)
 			}),
 			q(2941, {	-- The Borrower
 				sourceQuest = 2940,	-- Feralas: A History
 				qg = 7907,	-- Daryn Lightwind
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
-				qi = 9329,	-- A Short Note (QI!)
 				lvl = 42,
+				qi = 9329,	-- A Short Note (QI!)
 			}),
 			q(6341, {	-- The Bounty of Teldrassil / To Darnassus [CATA+]
 				sourceQuest = 6344,	-- Nessa Shadowsong
 				qg = 10118,	-- Nessa Shadowsong
 				coord = { 56.2, 92.4, MAP.TELDRASSIL },
 				races = { NIGHTELF },
-				qi = 16262,	-- Nessa's Collection (QI!)
 				lvl = 10,
+				qi = 16262,	-- Nessa's Collection (QI!)
 			}),
 			q(2438, {	-- The Emerald Dreamcatcher
 				qg = 3567,	-- Tallonkai Swiftroot
@@ -1117,17 +1117,17 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99050, {	-- The Great Tree Provides
 				sourceQuest = 99047,	-- Not Dead Yet
 				qg = 6094,	-- Byancie
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Dewy Lasher Frond
 						provider = { "i", 286017 },	-- Dewy Lasher Frond
@@ -1150,63 +1150,63 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 40.2, 8.8, MAP.DARNASSUS },
 				races = { NIGHTELF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6072, {	-- The Hunter's Path [Teldrassil]
 				qg = 3596,	-- Ayanna Everstride <Hunter Trainer>
 				coord = { 58.66, 40.45, MAP.TELDRASSIL },
 				races = { NIGHTELF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6073, {	-- The Hunter's Path [Darnassus]
 				qg = 4205,	-- Dorion <Hunter Trainer>
 				coord = { 42.2, 7.6, MAP.DARNASSUS },
 				races = { NIGHTELF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6721, {	-- The Hunter's Path [Ironforge]
 				qg = 5117,	-- Regnus Thundergranite <Hunter Trainer>
 				coord = { 69.8, 83.6, MAP.IRONFORGE },
 				races = { NIGHTELF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6722, {	-- The Hunter's Path [Dun Morogh]
 				qg = 1231,	-- Grif Wildheart <Hunter Trainer>
 				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { NIGHTELF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(99046, {	-- The Lost Runner
 				qg = 2081,	-- Sentinel Kyra Starsong
 				coord = { 56.0, 59.4, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 4,
+				isBreadcrumb = true,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(927, {	-- The Moss-twined Heart
 				provider = { "i", 5179 },	-- Moss-twined Heart
 				coord = { 52.0, 63.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				cr = 3535,	-- Blackmoss the Fetid
 				lvl = 5,
+				cr = 3535,	-- Blackmoss the Fetid
 			}),
 			q(98398, {	-- The Oracle Tree
 				sourceQuest = 98392,	-- Darkness in the Glade
 				qg = 3519,	-- Sentinel Arynia Cloudsbreak
 				coord = { 38.2, 34.4, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 6,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Find the Oracle Tree Bark
 						provider = { "o", 673378 },	-- Oracle Tree Bark
@@ -1276,11 +1276,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(98391, {	-- The Sisterhood of Elune
 				qg = 3600,	-- Laurna Morninglight <Priest Trainer>
 				coord = { 55.6, 56.8, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 5,
+				isBreadcrumb = true,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(2541, {	-- The Sleeping Druid
 				qg = 7317,	-- Oben Rageclaw
@@ -1386,9 +1386,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sourceQuest = 932,	-- Twisted Hatred
 				qg = 3567,	-- Tallonkai Swiftroot
 				coord = { 55.4, 56.8, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Befouled Webwood slain
 						provider = { "n", 272096 },	-- Befouled Webwood

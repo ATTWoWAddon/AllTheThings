@@ -31,8 +31,8 @@ root(ROOTS.Instances, {
 					sourceQuest = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
 					provider = { "i", 16790 },	-- Damp Note
 					races = HORDE_ONLY,
-					cr = 4802,	-- Blackfathom Tide Priestess
 					lvl = 17,
+					cr = 4802,	-- Blackfathom Tide Priestess
 				}),
 				q(6565, {	-- Allegiance to the Old Gods (2/2)
 					sourceQuest = 6564,	-- Allegiance to the Old Gods (1/2)
@@ -119,8 +119,8 @@ root(ROOTS.Instances, {
 					description = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
 					qg = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
 					coord = { 55.4, 25.0, MAP.DARNASSUS },
-					isBreadcrumb = true,
 					lvl = 18,
+					isBreadcrumb = true,
 				}),
 				q(971, {	-- Knowledge in the Deeps
 					sourceQuest = 968,	-- The Powers Below
@@ -172,8 +172,8 @@ root(ROOTS.Instances, {
 					coord = { 36.2, 67.6, MAP.STORMWIND_CITY },
 					maps = { MAP.DARKSHORE },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 20,
+					isBreadcrumb = true,
 				}),
 				q(6563, {	-- The Essence of Aku'Mai
 					sourceQuest = 6562,	-- Trouble in the Deeps
@@ -197,8 +197,8 @@ root(ROOTS.Instances, {
 					coord = { 47.3, 64.4, MAP.STONETALON_MOUNTAINS },
 					maps = { MAP.ASHENVALE },
 					races = HORDE_ONLY,
-					isBreadcrumb = true,
 					lvl = 17,
+					isBreadcrumb = true,
 				}),
 				q(1199, {	-- Twilight Falls
 					qg = 4784,	-- Argent Guard Manados <The Argent Dawn>

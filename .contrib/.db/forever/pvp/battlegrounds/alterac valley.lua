@@ -19,13 +19,13 @@ end]];
 
 battleground(MAP.ALTERAC_VALLEY, {
 	lore = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 236388,
 	lvl = 51,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(13419, {	-- Ivus the Forest Lord
-			isRaid = true,
 			races = HORDE_ONLY,
+			isRaid = true,
 			groups = sharedData({ timeline = { TIMELINE.CREATED_1_60_1 } }, {
 				i(19110),	-- Cold Forged Blade
 				i(19105),	-- Frost Runed Headdress
@@ -36,8 +36,8 @@ battleground(MAP.ALTERAC_VALLEY, {
 			}),
 		}),
 		n(13256, {	-- Lokholar the Ice Lord
-			isRaid = true,
 			races = ALLIANCE_ONLY,
+			isRaid = true,
 			groups = sharedData({ timeline = { TIMELINE.CREATED_1_60_1 } }, {
 				i(19110),	-- Cold Forged Blade
 				i(19105),	-- Frost Runed Headdress

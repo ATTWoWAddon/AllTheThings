@@ -33,8 +33,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 50.0, 57.2, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.SILVERPINE_FOREST, MAP.TIRISFAL_GLADES },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 25,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Scout out the Forsaken's Wickerman Festival.
 						provider = { "o", 181672 },	-- Wickerman Effigy
@@ -48,8 +48,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 56.6, 51.8, MAP.STORMWIND_CITY },
 				maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = {
 					q(8356, {	-- Flexing for Nougat (Alliance)
 						qg = 6740,	-- Innkeeper Allison <Innkeeper>
@@ -107,8 +107,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 71.2, 22.8, MAP.ORGRIMMAR },
 				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = {
 					q(8359, {	-- Flexing for Nougat (Horde)
 						qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
@@ -169,16 +169,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				},
 				cost = { { "i", 20605, 1 } },	-- 1x Rotten Eggs
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 			}),
 			q(8409, {	-- Ruined Kegs
 				sourceQuest = 8322,	-- Rotten Eggs
 				provider = { "o", 180570 },	-- Keg
 				coord = { 51.4, 59.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 				groups = {
 					i(20557),	-- Hallow's End Pumpkin Treat
 				},
@@ -188,8 +188,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 55.6, 69.9, MAP.TIRISFAL_GLADES },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 25,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Toss Stink Bomb into Southshore
 						provider = { "i", 20387 },	-- Forsaken Stink Bomb Cluster (QI!)
@@ -202,8 +202,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				qg = 15199,	-- Sergeant Hartman
 				coord = { 50.0, 57.2, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 25,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Clean up a stink bomb that's been dropped on Southshore!
 						provider = { "i", 20604 },	-- Stink Bomb Cleaner (QI!)

@@ -88,8 +88,8 @@ root(ROOTS.Instances, {
 					provider = { "o", 19861 },	-- Henrig Lonebrow's Journal
 					coord = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
 					races = ALLIANCE_ONLY,
-					qi = 5790,	-- Henrig Lonebrow's Journal (QI!)
 					lvl = 29,
+					qi = 5790,	-- Henrig Lonebrow's Journal (QI!)
 				}),
 				q(1142, {	-- Mortality Wanes
 					qg = 4510,	-- Heralath Fallowbrook

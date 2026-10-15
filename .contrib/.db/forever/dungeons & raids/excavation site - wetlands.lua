@@ -8,8 +8,8 @@ root(ROOTS.Instances, {
 		icon = [[~_.asset("excavationsite")]],
 		zoneTextAreaID = 17732,	-- Excavation Site: Wetlands
 		coord = { 48.1, 56.4, MAP.WETLANDS },
-		timeline = { TIMELINE.ADDED_1_60_1 },
 		lvl = 23,
+		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
 			n(QUESTS, {
 				q(95697, {	-- Changing Tastes
@@ -46,8 +46,8 @@ root(ROOTS.Instances, {
 					coord = { 70.8, 33.8, MAP.THUNDER_BLUFF },
 					maps = { MAP.MULGORE },
 					races = HORDE_ONLY,
-					qi = 270866,	-- Titan Relic (H) (QS!)
 					lvl = 24,
+					qi = 270866,	-- Titan Relic (H) (QS!)
 					groups = {
 						i(271766),	-- Heavehammer
 						i(271767),	-- Healer's Staff
@@ -75,8 +75,8 @@ root(ROOTS.Instances, {
 					sourceQuest = 95647,	-- Lost in the Thicket Things
 					qg = 262681,	-- Ardin Grassman
 					races = ALLIANCE_ONLY,
-					qi = 270901,	-- Reed-woven Heart (QI!)
 					lvl = 24,
+					qi = 270901,	-- Reed-woven Heart (QI!)
 					groups = {
 						i(280766),	-- Satchel of Potions
 						i(2459),	-- Swiftness Potion
@@ -155,8 +155,8 @@ root(ROOTS.Instances, {
 					coord = { 38.8, 52.2, MAP.WETLANDS },
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					qi = 270865,	-- Titan Relic (A) (QI!)
 					lvl = 24,
+					qi = 270865,	-- Titan Relic (A) (QI!)
 					groups = {
 						i(271766),	-- Heavehammer
 						i(271767),	-- Healer's Staff

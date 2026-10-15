@@ -56,8 +56,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.4, 69.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
-						qi = 6635,	-- Earth Sapta (QI!)
 						lvl = 4,
+						qi = 6635,	-- Earth Sapta (QI!)
 					}),
 					q(1518, {	-- Call of Earth (3/3)
 						sourceQuest = 1517,	-- Call of Earth (2/3)
@@ -66,8 +66,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 44.0, 76.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
-						qi = 6656,	-- Rough Quartz (QI!)
 						lvl = 4,
+						qi = 6656,	-- Rough Quartz (QI!)
 						groups = {
 							recipe(8071),	-- Stoneskin Totem
 							i(5175, {	-- Earth Totem
@@ -94,8 +94,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.4, 69.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
-						repeatable = true,
 						lvl = 4,
+						repeatable = true,
 						groups = {
 							i(6635),	-- Earth Sapta
 						},
@@ -290,10 +290,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						--["sourceQuest"] = ,	-- 
 						provider = { "o", 654925 },	-- Lost Journal
 						coord = { 42.82, 69.14, MAP.DUROTAR },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
-						qi = 275022,	-- Lost Journal (QI!)
 						lvl = 4,
+						qi = 275022,	-- Lost Journal (QI!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(792, {	-- Vile Familiars
 						qg = 3145,	-- Zureetha Fargaze
@@ -341,8 +341,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					q(97279, {	-- Wayward Weapons
 						qg = 3143,	-- Gornek
 						coord = { 42.0, 68.4, MAP.DUROTAR },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/6 Abandoned Training Weapon
 								providers = {
@@ -415,17 +415,17 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(99048, {	-- A Missing Hand
 				qg = 3142,	-- Orgnil Soulscar
 				coord = { 52.2, 43.2, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(96873, {	-- A Pain in the Neck
 				qg = 266881,	-- Pa'zula
 				coord = { 56.6, 73.6, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENCHANTING,
 				races = HORDE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/3 Luminous Residue
 						provider = { "i", 247884 },	-- Luminous Residue
@@ -444,9 +444,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					3118,	-- Dustwind Storm Witch
 					276194,	-- Dustwind Eggtender
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(818, {	-- A Solvent Spirit
 				qg = 3304,	-- Master Vornal
@@ -485,10 +485,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(96875, {	-- Beasts of Thunder Ridge
 				qg = 5811,	-- Kamari
 				coord = { 63.0, 45.0, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = LEATHERWORKING,
 				races = HORDE_ONLY,
 				lvl = 6,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Rough Lizard Hide
 						provider = { "i", 275720 },	-- Rough Lizard Hide
@@ -506,9 +506,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(97223, {	-- Bloodtalon Matriarch
 				qg = 7953,	-- Xar'Ti
 				coord = { 55.2, 75.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Bloodtalon Matriarch Eggs
 						provider = { "i", 277128 },	-- Bloodtalon Matriarch Eggs
@@ -548,18 +548,18 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				coord = { 51.78, 9.56, MAP.DUROTAR },
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				cr = 3204,	-- Gazz'uz
 				lvl = 4,
+				cr = 3204,	-- Gazz'uz
 			}),
 			q(97899, {	-- Camping 101: Alchemy [Durotar]
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = ALCHEMY,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230564),	-- Alchemy: Mana Well
 				},
@@ -568,10 +568,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = BLACKSMITHING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
 				},
@@ -580,19 +580,19 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(97901, {	-- Camping 101: Enchanting [Durotar]
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = ENCHANTING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
@@ -601,10 +601,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENGINEERING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
@@ -613,10 +613,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FIRST_AID,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230117),	-- First Aid: First Aid Kit
 				},
@@ -625,10 +625,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FISHING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229745),	-- Fishing: Fish Bowl
 				},
@@ -637,11 +637,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = HERBALISM,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229705),	-- Herbalism: Incense Candle
 				},
@@ -650,11 +650,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = LEATHERWORKING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229432),	-- Leatherworking: Camp Tent
 				},
@@ -663,10 +663,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = MINING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230161),	-- Mining: Lodestone
 				},
@@ -675,11 +675,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = SKINNING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229517),	-- Skinning: Camp Chair
 				},
@@ -688,11 +688,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = TAILORING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
@@ -722,17 +722,17 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 3336,	-- Takrin Pathseeker
 				coord = { 50.8, 43.5, MAP.DUROTAR },
 				races = HORDE_ONLY,
+				lvl = 10,
 				isBreadcrumb = true,
 				qi = 4992,	-- Recruitment Letter (QI!)
-				lvl = 10,
 			}),
 			q(842, {	-- Crossroads Conscription
 				sourceQuest = 840,	-- Conscript of the Horde
 				qg = 3337,	-- Kargal Battlescar
 				coord = { 62.26, 19.37, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 4995,	-- Signed Recruitment Letter (QI!)
 				lvl = 10,
+				qi = 4995,	-- Signed Recruitment Letter (QI!)
 			}),
 			q(806, {	-- Dark Storms
 				sourceQuest = 823,	-- Report to Orgnil
@@ -775,8 +775,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				coord = { 38.6, 58.8, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				classes = { SHAMAN },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(6636),	-- Fire Sapta
 				},
@@ -784,9 +784,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(96822, {	-- For Honor
 				qg = 266940,	-- Turroc
 				coord = { 54.0, 42.6, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 3,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Raider's Bow
 						providers = {
@@ -811,9 +811,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(97225, {	-- Forgotten Loa Idols
 				qg = 3304,	-- Master Vornal
 				coord = { 55.8, 74.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Forgotten Loa Idol
 						providers = {
@@ -864,9 +864,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(96877, {	-- Halikor's Hoof
 				provider = { "i", 275723 },	-- Halikor's Hoof
 				cr = 266852,	-- Halikor
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 6,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(5654, {	-- Hex of Weakness [Durotar]
 				altQuests = {
@@ -905,8 +905,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(96821, {	-- Legging It
 				qg = 3194,	-- Vel'rin Fang
 				coord = { 55.95, 73.92, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Ridgeshade Creeper slain
 						provider = { "n", 266850 },	-- Ridgeshade Creeper
@@ -937,9 +937,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(99123, {	-- Lost in the Shadows
 				qg = 275811,	-- Pal'juh
 				coord = { 46.2, 78.6, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Escort Pal'juh out of Kolkar Crag
 						provider = { "n", 275811 },	-- Pal'juh
@@ -983,8 +983,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						qg = 3189,	-- Kor'ghan
 						coord = { 47.0, 53.4, MAP.ORGRIMMAR },
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 7,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/4 Venomtail Poison Sac
 								cost = { { "i", 4886, 4 } },	-- 4x Venomtail Poison Sac (QI!)
@@ -1009,8 +1009,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 3208,	-- Margoz
 				coord = { 56.4, 20.0, MAP.DUROTAR },
 				races = HORDE_ONLY,
-				qi = 6658,	-- Example Collar (QI!)
 				lvl = 4,
+				qi = 6658,	-- Example Collar (QI!)
 			}),
 			q(817, {	-- Practical Prey
 				qg = 3194,	-- Vel'rin Fang
@@ -1112,16 +1112,16 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 				races = { UNDEAD, TROLL },
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(97282, {	-- Stormy Potential
 				sourceQuest = 97281,	-- A Simmering Storm
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Charged Thunder Lizard Organ
 						provider = { "i", 277665 },	-- Charged Thunder Lizard Organ
@@ -1224,41 +1224,41 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 96652,	-- The Adventurer [Durotar]
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6068, {	-- The Hunter's Path [Orgrimmar]
 				qg = 3407,	-- Sian'dur <Hunter Trainer>
 				coord = { 67.8, 17.8, MAP.ORGRIMMAR },
 				races = { ORC, UNDEAD, TROLL },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6069, {	-- The Hunter's Path [Durotar]
 				qg = 11814,	-- Kali Remik
 				coord = { 6.2, 74.2, MAP.DUROTAR },
 				races = { ORC, UNDEAD, TROLL },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6070, {	-- The Hunter's Path [Thunder Bluff]
 				qg = 3038,	-- Kary Thunderhorn <Hunter Trainer>
 				coord = { 58.4, 88.0, MAP.THUNDER_BLUFF },
 				races = { ORC, UNDEAD, TROLL },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1859, {	-- Therzok
 				qg = 3170,	-- Kaplak
 				coord = { 51.98, 43.70, MAP.DUROTAR },
 				races = { ORC, TROLL },
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(96825, {	-- This Fruit Could Bite Back
 				qgs = {
@@ -1269,9 +1269,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ 51.11, 42.45, MAP.DUROTAR },
 					{ 51.2, 42.6, MAP.DUROTAR },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 3,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Prickly Pear Fruit
 						providers = {
@@ -1284,10 +1284,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(96874, {	-- This Is Spinal Axe
 				qg = 10266,	-- Ug'thok
 				coord = { 80.6, 23.4, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = BLACKSMITHING,
 				races = HORDE_ONLY,
 				lvl = 6,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Weathered Spine
 						provider = { "i", 275719 },	-- Weathered Spine
@@ -1306,9 +1306,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 99048,	-- A Missing Hand
 				qg = 275657,	-- Heglan Shadeeye
 				coord = { 58.6, 45.6, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Orcish Dagger
 						providers = {
@@ -1334,9 +1334,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 99049,	-- Threat from Below
 				qg = 3142,	-- Orgnil Soulscar
 				coord = { 52.2, 43.2, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/9 Naga Spinefin
 						provider = { "i", 286008 },	-- Naga Spinefin
@@ -1351,9 +1351,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 99051,	-- Threat from Below
 				qg = 3142,	-- Orgnil Soulscar
 				coord = { 52.2, 43.2, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Aggor's Belt
 						provider = { "i", 286009 },	-- Aggor's Belt
@@ -1421,9 +1421,9 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(96876, {	-- Ukor's Lost Pack
 				provider = { "i", 275722 },	-- Ukor's Lost Pack
 				cr = 266851,	-- Ukorsbane
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(784, {	-- Vanquish the Betrayers
 				qg = 3139,	-- Gar'Thok

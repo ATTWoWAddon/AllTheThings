@@ -8,8 +8,8 @@ root(ROOTS.Instances, {
 		icon = [[~_.asset("hallofthanes")]],
 		zoneTextAreaID = 16919,	-- Hall of Thanes
 		coord = { 50.0, 50.0, MAP.IRONFORGE },
-		timeline = { TIMELINE.ADDED_1_60_1 },
 		lvl = 13,
+		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
 			n(QUESTS, {
 				q(96395, {	-- An Ancient Grudge

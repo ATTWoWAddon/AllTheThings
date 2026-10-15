@@ -191,10 +191,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 92748,	-- Explosive Consultation (1/2)
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = { { "i", 4358, 10 } },	-- 10x Rough Dynamite
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(5645, {	-- A Lack of Fear
 				altQuests = {
@@ -252,8 +252,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 1435,	-- Zardeth of the Black Claw
 				coord = { 40.1, 85.3, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 2788,	-- Black Claw Stout (QI!)
 				lvl = 25,
+				qi = 2788,	-- Black Claw Stout (QI!)
 			}),
 			q(1638, {	-- A Warrior's Training
 				altQuests = {
@@ -280,16 +280,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				maxReputation = { FACTION_STORMWIND, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(396, {	-- An Audience with the King
 				sourceQuest = 395,	-- Brotherhood's End
 				qg = 1646,	-- Baros Alexston <City Architect>
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 2956,	-- Report on the Defias Brotherhood (QI!)
 				lvl = 16,
+				qi = 2956,	-- Report on the Defias Brotherhood (QI!)
 				groups = {
 					i(2933),	-- Seal of Wrynn
 				},
@@ -383,8 +383,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 76.8, 52.5, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				qi = 6781,	-- Bartleby's Mug (QI!)
 				lvl = 10,
+				qi = 6781,	-- Bartleby's Mug (QI!)
 				groups = {
 					recipe(71),	-- Defensive Stance
 					recipe(7386),	-- Sunder Armor
@@ -456,10 +456,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(97894, {	-- Business in Auberdine
 				qg = 7232,	-- Borgus Steelhand <Weapon Crafter>
 				coord = { 59.6, 34.2, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(7642, {	-- Collection of Goods
 				sourceQuest = 7641,	-- The Work of Grimand Elmore
@@ -521,26 +521,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 92748,	-- Explosive Consultation (1/2)
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(92751, {	-- Detonation at a Distance (2/2)
 				sourceQuest = 92750,	-- Detonation at a Distance (1/2)
 				qg = 1325,	-- Jasper Fel <Shady Dealer>
 				coord = { 80.0, 70.0, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 254552,	-- Remote Detonator Kit (QI!)
 				lvl = 9,
+				qi = 254552,	-- Remote Detonator Kit (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6261, {	-- Dungar Longdrink
 				sourceQuest = 6281,	-- Continue to Stormwind
 				qg = 1323,	-- Osric Strang
 				coord = { 77.0, 61.2, MAP.STORMWIND_CITY },
 				races = { HUMAN },
-				qi = 16115,	-- Osric's Crate (QI!)
 				lvl = 10,
+				qi = 16115,	-- Osric's Crate (QI!)
 			}),
 			q(5673, {	-- Elune's Grace [Stormwind City]
 				altQuests = {
@@ -578,11 +578,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
-				qi = 254553,	-- Extra-Destructive Explosives (QI!)
 				lvl = 9,
+				qi = 254553,	-- Extra-Destructive Explosives (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(7640, {	-- Exorcising Terrordale
 				sourceQuest = 7639,	-- To Show Due Judgment
@@ -591,8 +591,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				maps = { MAP.EASTERN_PLAGUELANDS },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				qi = 18752,	-- Exorcism Censer (QI!)
 				lvl = 60,
+				qi = 18752,	-- Exorcism Censer (QI!)
 				groups = {
 					objective(1, {	-- 0/25 Terrordale Spirit slain
 						provider = { "n", 14564 },	-- Terrordale Spirit
@@ -607,8 +607,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				maps = { MAP.RAZORFEN_KRAUL, MAP.WETLANDS, MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				qi = 6842,	-- Furen's Instructions (QI!)
 				lvl = 20,
+				qi = 6842,	-- Furen's Instructions (QI!)
 				groups = {
 					objective(1, {	-- 0/50 Scorched Spider Fang
 						provider = { "i", 6838 },	-- Scorched Spider Fang (QI!)
@@ -637,13 +637,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(95065, {	-- Fishin' Time
 				qg = 267118,	-- Gilbert Gray
 				coord = { 26.2, 47.0, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = {
 					{ "i", 6529, 1 },	-- 1x Shiny Bauble
 					{ "i", 6530, 3 },	-- 3x Nightcrawlers
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(6290),	-- Brilliant Smallfish
 					i(5095),	-- Rainbow Fin Albacore
@@ -652,9 +652,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(98021, {	-- Journey to Sentinel Hill
 				qg = 1748,	-- Highlord Bolvar Fordragon
 				coord = { 80.1, 38.4, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.WESTFALL },
 				races = { SKYBORNE_ALLIANCE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6184, {	-- Flint Shadowmore
 				sourceQuest = 6183,	-- Honor the Dead
@@ -680,24 +680,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 44.4, 66.2, MAP.ELWYNN_FOREST },
 				races = { HUMAN, GNOME },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1717, {	-- Gakin's Summons (Succubus)
 				qg = 6120,	-- Lago Blackwrench
 				coord = { 47.6, 9.6, MAP.IRONFORGE },
 				races = { HUMAN, GNOME },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(97222, {	-- Gatehouse Goods
 				sourceQuest = 97220,	-- Philmor's Favor
 				qg = 483,	-- Elaine Trias <Mistress of Cheese>
 				coord = { 60.4, 63.4, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Gatehouse Shipment delivered
 						provider = { "i", 277198 },	-- Gatehouse Shipment
@@ -740,10 +740,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
 				coord = { 55.0, 8.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				lvl = 30,
 				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
 			}),
 			q(3629, {	-- Goblin Engineering [A]
 				altQuests = {
@@ -760,10 +760,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
 				coord = { 55.0, 8.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				lvl = 30,
 				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
 			}),
 			q(1700, {	-- Grimand Elmore
 				sourceQuest = 1701,	-- Fire Hardened Mail
@@ -771,9 +771,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
+				lvl = 20,
 				isBreadcrumb = true,
 				qi = 6926,	-- Furen's Notes (QI!)
-				lvl = 20,
 			}),
 			q(1706, {	-- Grimand's Armor
 				sourceQuest = 1705,	-- Burning Blood
@@ -792,8 +792,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				qi = 18753,	-- Arcanite Barding (QI!)
 				lvl = 60,
+				qi = 18753,	-- Arcanite Barding (QI!)
 			}),
 			q(333, {	-- Harlan Needs a Resupply
 				qg = 1427,	-- Harlan Bagley
@@ -812,8 +812,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 				races = { HUMAN, GNOME },
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 26,
+				isBreadcrumb = true,
 			}),
 			q(6183, {	-- Honor the Dead
 				sourceQuest = 6182,	-- The First and the Last
@@ -844,9 +844,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 63.0, 36.4, MAP.STORMWIND_CITY },
 				maps = { MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
+				lvl = 40,
 				requireSkill = BLACKSMITHING,
 				qi = 8663,	-- Mithril Insignia (QI!)
-				lvl = 40,
 			}),
 			q(1448, {	-- In Search of The Temple
 				qg = 5384,	-- Brohann Caskbelly <Explorers' League>
@@ -919,24 +919,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
 				races = { DWARF, GNOME },
 				classes = { WARRIOR },
+				lvl = 20,
 				isBreadcrumb = true,
 				qi = 6926,	-- Furen's Notes (QI!)
-				lvl = 20,
 			}),
 			q(7670, {	-- Lord Grayson Shadowbreaker [Ironforge]
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 				coord = { 23.4, 6.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				isBreadcrumb = true,
 				lvl = 60,
+				isBreadcrumb = true,
 			}),
 			q(7638, {	-- Lord Grayson Shadowbreaker [Stormwind City]
 				qg = 6171,	-- Duthorian Rall
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				isBreadcrumb = true,
 				lvl = 60,
+				isBreadcrumb = true,
 			}),
 			q(350, {	-- Look to an Old Friend
 				sourceQuest = 393,	-- Shadow of the Past
@@ -978,9 +978,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 64.6, 37.2, MAP.STORMWIND_CITY },
 				races = { NIGHTELF },
 				classes = { WARRIOR },
+				lvl = 20,
 				isBreadcrumb = true,
 				qi = 6926,	-- Furen's Notes (QI!)
-				lvl = 20,
 			}),
 			q(1363, {	-- Mazen's Behest (1/2)
 				qg = 338,	-- Mazen Mac'Nadir
@@ -1057,10 +1057,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(97220, {	-- Philmor's Favor
 				qg = 268511,	-- Manifest Clerk Philmor
 				coord = { 30.4, 29.0, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 277119,	-- Gatehouse Shipment (QI!)
 				lvl = 9,
+				qi = 277119,	-- Gatehouse Shipment (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(1940, {	-- Pristine Spider Silk
 				sourceQuest = 1938,	-- Ur's Treatise on Shadow Magic
@@ -1083,10 +1083,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(97234, {	-- Reading Room
 				qg = 268568,	-- Roy Lewells
 				coord = { 38.6, 62.0, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 277158,	-- Wrapped Reading Material (QI!)
 				lvl = 13,
+				qi = 277158,	-- Wrapped Reading Material (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(2281, {	-- Redridge Rendezvous
 				sourceQuests = {
@@ -1105,8 +1105,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 26.8, 8.6, MAP.IRONFORGE },
 				races = { HUMAN, GNOME },
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 15,
+				isBreadcrumb = true,
 			}),
 			q(6285, {	-- Return to Lewis
 				sourceQuest = 6261,	-- Dungar Longdrink
@@ -1114,8 +1114,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 71.0, 72.5, MAP.STORMWIND_CITY },
 				maps = { MAP.WESTFALL },
 				races = { HUMAN },
-				qi = 16115,	-- Osric's Crate (QI!)
 				lvl = 10,
+				qi = 16115,	-- Osric's Crate (QI!)
 			}),
 			q(5631, {	-- Returning Home [Stormwind City]
 				altQuests = {
@@ -1162,16 +1162,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 1646,	-- Baros Alexston <City Architect>
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 8687,	-- Sealed Description of Thredd's Visitor (QI!)
 				lvl = 16,
+				qi = 8687,	-- Sealed Description of Thredd's Visitor (QI!)
 			}),
 			q(97237, {	-- Shelf Picked
 				sourceQuest = 97234,	-- Reading Room
 				qg = 2504,	-- Donyal Tovald <Librarian>
 				coord = { 75.2, 30.2, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Field Accounts of Horde Razings
 						providers = {
@@ -1332,8 +1332,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 1719,	-- Warden Thelwater
 				coord = { 51.6, 69.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 8687,	-- Sealed Description of Thredd's Visitor (QI!)
 				lvl = 16,
+				qi = 8687,	-- Sealed Description of Thredd's Visitor (QI!)
 			}),
 			q(7646, {	-- The Divination Scryer
 				sourceQuest = 7644,	-- Blessed Arcanite Barding
@@ -1371,16 +1371,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 4960,	-- Bishop DeLavey
 				coord = { 80.3, 44.1, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 5948,	-- Letter to Jorgen (QI!)
 				lvl = 28,
+				qi = 5948,	-- Letter to Jorgen (QI!)
 			}),
 			q(1242, {	-- The Missing Diplomat (3/17)
 				sourceQuest = 1241,	-- The Missing Diplomat (2/17)
 				qg = 4959,	-- Jorgen
 				coord = { 76.3, 85.1, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 5946,	-- Sealed Note to Elling (QI!)
 				lvl = 28,
+				qi = 5946,	-- Sealed Note to Elling (QI!)
 			}),
 			q(1243, {	-- The Missing Diplomat (4/17)
 				sourceQuest = 1242,	-- The Missing Diplomat (3/17)
@@ -1388,8 +1388,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 66.0, 74.1, MAP.STORMWIND_CITY },
 				maps = { MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				qi = 5960,	-- Sealed Note to Watcher Backus (QI!)
 				lvl = 28,
+				qi = 5960,	-- Sealed Note to Watcher Backus (QI!)
 			}),
 			q(1244, {	-- The Missing Diplomat (5/17)
 				sourceQuest = 1243,	-- The Missing Diplomat (4/17)
@@ -1412,8 +1412,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 840,	-- Watcher Backus
 				coord = { 73.21, 38.81, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				qi = 5947,	-- Defias Docket (QI!)
 				lvl = 28,
+				qi = 5947,	-- Defias Docket (QI!)
 			}),
 			q(1246, {	-- The Missing Diplomat (7/17)
 				sourceQuest = 1245,	-- The Missing Diplomat (6/17)
@@ -1512,8 +1512,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				races = { HUMAN },
 				classes = { PALADIN },
-				qi = 6775,	-- Tome of Divinity (QI!)
 				lvl = 12,
+				qi = 6775,	-- Tome of Divinity (QI!)
 			}),
 			q(1643, {	-- The Tome of Divinity (4/10)
 				sourceQuest = 1642,	-- The Tome of Divinity (3/10)
@@ -1546,8 +1546,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				races = { HUMAN },
 				classes = { PALADIN },
-				qi = 6866,	-- Symbol of Life (QI!)
 				lvl = 12,
+				qi = 6866,	-- Symbol of Life (QI!)
 			}),
 			q(1786, {	-- The Tome of Divinity (8/10)
 				sourceQuest = 1781,	-- The Tome of Divinity (7/10)
@@ -1600,16 +1600,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 49.6, 49.9, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				isBreadcrumb = true,
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(4486, {	-- The Tome of Nobility (Ironforge)
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 				coord = { 23.6, 6.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				isBreadcrumb = true,
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(1661, {	-- The Tome of Nobility
 				sourceQuests = {
@@ -1630,16 +1630,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 23.6, 6.4, MAP.IRONFORGE },
 				races = { DWARF },
 				classes = { PALADIN },
-				repeatable = true,
 				lvl = 20,
+				repeatable = true,
 			}),
 			q(1793, {	-- The Tome of Valor [Human]
 				qg = 6171,	-- Duthorian Rall
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				races = { HUMAN },
 				classes = { PALADIN },
-				repeatable = true,
 				lvl = 20,
+				repeatable = true,
 			}),
 			q(1649, {	-- The Tome of Valor (1/4)
 				sourceQuests = {
@@ -1650,8 +1650,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				qi = 6776,	-- Tome of Valor (QI!)
 				lvl = 20,
+				qi = 6776,	-- Tome of Valor (QI!)
 			}),
 			q(1650, {	-- The Tome of Valor (2/4)
 				sourceQuest = 1649,	-- The Tome of Valor (1/4)
@@ -1746,8 +1746,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 25.0, 8.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				qi = 18819,	-- Rohan's Exorcism Censer (QI!)
 				lvl = 60,
+				qi = 18819,	-- Rohan's Exorcism Censer (QI!)
 			}),
 			q(1449, {	-- To The Hinterlands
 				sourceQuest = 1448,	-- In Search of The Temple
@@ -1885,8 +1885,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 		n(VENDORS, {
 			n(258568, {	-- Antonio Bolero
 				coord = { 53.5, 81.8, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(253665),	-- Pattern: Linen Reagent Bag (RECIPE!)
 					i(253668),	-- Pattern: Woolen Reagent Bag (RECIPE!)

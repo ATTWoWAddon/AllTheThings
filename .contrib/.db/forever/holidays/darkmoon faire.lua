@@ -58,11 +58,11 @@ local OnTooltipForDarkmoonFaire = [[function(t, tooltipInfo)
 end]];
 
 root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, {
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = {
 		MAP.ELWYNN_FOREST,
 		MAP.MULGORE,
 	},
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(FACTIONS, {
 			faction(FACTION_DARKMOON_FAIRE, {	-- Darkmoon Faire
@@ -78,8 +78,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
 				cost = { { "i", 19182, 5 } },	-- 5x Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
 				lvl = 6,
+				repeatable = true,
 				groups = {
 					i(19295),	-- Darkmoon Flower
 				},
@@ -91,8 +91,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
 				cost = { { "i", 19182, 5 } },	-- 5x Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
 				lvl = 15,
+				repeatable = true,
 				groups = {
 					i(19298, {	-- Minor Darkmoon Prize
 						description = "Contains a level 15-25 (usually uncommon quality) item.",
@@ -145,9 +145,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.3, 37.7, MAP.MULGORE },
 					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
 				},
-				timeline = { CREATED_1_10_0, ADDED_2_0_3 },	-- This was not in WoW Classic.
 				cost = { { "i", 19182, 40 } },	-- 40x Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
+				timeline = { CREATED_1_10_0, ADDED_2_0_3 },	-- This was not in WoW Classic.
 				groups = {
 					i(22729),	-- Schematic: Steam Tonk Controller (RECIPE!)
 				},
@@ -498,8 +498,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 35.9, 35.3, MAP.MULGORE },
 				},
 				cost = { { "i", 11325, 2 } },	-- 2x Dark Iron Ale Mug
-				isMonthly = true,
 				lvl = 10,
+				isMonthly = true,
 				groups = {
 					i(19462, {	-- Unhatched Jubling Egg
 						i(19450),	-- Jubling (PET!)
@@ -602,8 +602,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180024 },	-- Mysterious Deadmines Chest
 				},
 				maps = { MAP.DEADMINES },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},
@@ -614,8 +614,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180025 },	-- Mysterious Eastvale Haystack
 				},
 				coord = { 84.7, 64.4, MAP.ELWYNN_FOREST },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},
@@ -626,8 +626,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180056 },	-- Mysterious Tree Stump
 				},
 				coord = { 35.0, 61.5, MAP.MULGORE },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},
@@ -638,8 +638,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "o", 180055 },	-- Mysterious Wailing Caverns Chest
 				},
 				maps = { MAP.WAILING_CAVERNS },
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
 				groups = {
 					i(19425),	-- Mysterious Lockbox
 				},

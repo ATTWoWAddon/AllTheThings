@@ -377,8 +377,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2916,	-- Historian Karnik
 				coord = { 77.5, 11.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				qi = 4622,	-- Sealed Note to Advisor Belgrum (QI!)
 				lvl = 35,
+				qi = 4622,	-- Sealed Note to Advisor Belgrum (QI!)
 			}),
 			q(726, {	-- Passing Word of a Threat (2/2)
 				sourceQuest = 725,	-- Passing Word of a Threat (1/2)
@@ -443,16 +443,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2909,	-- Hammertoe Grez
 				coord = { 37.94, 10.53, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4635,	-- Hammertoe's Amulet (QI!)
 				lvl = 35,
+				qi = 4635,	-- Hammertoe's Amulet (QI!)
 			}),
 			q(724, {	-- Prospect of Faith (2/2)
 				sourceQuest = 723,	-- Prospect of Faith (1/2)
 				qg = 2910,	-- Prospector Ryedol
 				coord = { 53.4, 43.2, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4635,	-- Hammertoe's Amulet (QI!)
 				lvl = 35,
+				qi = 4635,	-- Hammertoe's Amulet (QI!)
 			}),
 			q(1360, {	-- Reclaimed Treasures
 				qg = 6294,	-- Krom Stoutarm
@@ -492,8 +492,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				coord = { 6.5, 47.2, MAP.BADLANDS },
 				maps = { MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
-				qi = 6167,	-- Neeka's Report (QI!)
 				lvl = 30,
+				qi = 6167,	-- Neeka's Report (QI!)
 			}),
 			q(733, {	-- Scrounging
 				sourceQuest = 718,	-- Mirages
@@ -528,8 +528,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					{ "i", 4844 },	-- Opal Runestone
 					{ "i", 4843 },	-- Amethyst Runestone
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 				groups = {
 					i(4615, {	-- Blacklash's Bindings
 						coord = { 82.6, 48.8, MAP.BADLANDS },
@@ -549,8 +549,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					{ "i", 4844 },	-- Opal Runestone
 					{ "i", 4843 },	-- Amethyst Runestone
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 				groups = {
 					i(4615, {	-- Blacklash's Bindings
 						coord = { 82.6, 48.8, MAP.BADLANDS },
@@ -650,8 +650,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2786,	-- Gerrig Bonegrip
 				coord = { 50.8, 5.6, MAP.IRONFORGE },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
-				qi = 4649,	-- Bonegrip's Note (QI!)
 				lvl = 30,
+				qi = 4649,	-- Bonegrip's Note (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
 						provider = { "i", 4646 },	-- Star of Xil'yeh (QI!)
@@ -676,8 +676,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2934,	-- Keeper Bel'dugur
 				coord = { 53.7, 54.5, MAP.UNDERCITY },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
-				qi = 4650,	-- Bel'dugur's Note (QI!)
 				lvl = 30,
+				qi = 4650,	-- Bel'dugur's Note (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
 						provider = { "i", 4646 },	-- Star of Xil'yeh (QI!)
@@ -710,8 +710,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				sourceQuest = 734,	-- This Is Going to Be Hard (1/3)
 				qg = 2920,	-- Lucien Tosselwrench
 				coord = { 25.8, 44.4, MAP.BADLANDS },
-				qi = 4846,	-- Cog #5 (QI!)
 				lvl = 35,
+				qi = 4846,	-- Cog #5 (QI!)
 			}),
 			q(778, {	-- This Is Going to Be Hard (3/3)
 				sourceQuest = 777,	-- This Is Going to Be Hard (2/3)
@@ -732,16 +732,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2785,	-- Theldurin the Lost
 				coord = { 51.4, 76.9, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4648,	-- Sigil of the Hammer (QI!)
 				lvl = 30,
+				qi = 4648,	-- Sigil of the Hammer (QI!)
 			}),
 			q(728, {	-- To the Undercity for Yagyin's Digest
 				sourceQuest = 709,	-- Solution to Doom
 				qg = 2785,	-- Theldurin the Lost
 				coord = { 51.4, 76.9, MAP.BADLANDS },
 				races = HORDE_ONLY,
-				qi = 4648,	-- Sigil of the Hammer (QI!)
 				lvl = 30,
+				qi = 4648,	-- Sigil of the Hammer (QI!)
 			}),
 			q(732, {	-- Tremors of the Earth (1/2)
 				sourceQuest = 718,	-- Mirages

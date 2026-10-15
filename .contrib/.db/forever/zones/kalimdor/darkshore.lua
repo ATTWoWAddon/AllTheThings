@@ -56,8 +56,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				qg = 3693,	-- Terenthis
 				coord = { 39.4, 43.5, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
-				qi = 5387,	-- Enchanted Moonstalker Cloak (QI!)
 				lvl = 10,
+				qi = 5387,	-- Enchanted Moonstalker Cloak (QI!)
 			}),
 			q(4812, {	-- As Water Cascades
 				sourceQuest = 4811,	-- The Red Crystal
@@ -419,10 +419,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(97914, {	-- Expanding Horizons
 				qg = 3649,	-- Thundris Windweaver
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
-				qi = 279045,	-- Thundris' Letter (QI!)
 				lvl = 13,
+				qi = 279045,	-- Thundris' Letter (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(963, {	-- For Love Eternal
 				qg = 3644,	-- Cerellean Whiteclaw
@@ -561,9 +561,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 97914,	-- Expanding Horizons
 				qg = 1646,	-- Baros Alexston <City Architect>
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279048,	-- Alexston's Reply (QI!)
 				lvl = 13,
+				qi = 279048,	-- Alexston's Reply (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(282286),	-- Shipwright's Satchel
 				},
@@ -691,8 +691,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				qi = 4654,	-- Mysterious Fossil (QI!)
 				lvl = 15,
+				qi = 4654,	-- Mysterious Fossil (QI!)
 				groups = {
 					i(5629),	-- Hammerfist Gloves
 					i(5630),	-- Windfelt Gloves
@@ -863,8 +863,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 55.0, 24.9, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
-				qi = 5354,	-- Letter to Delgren (QI!)
 				lvl = 13,
+				qi = 5354,	-- Letter to Delgren (QI!)
 			}),
 			q(1143, {	-- The Tower of Althalaxx (8/9)
 				sourceQuest = 1167,	-- The Tower of Althalaxx (7/9)
@@ -960,9 +960,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(98025, {	-- WANTED: Jai'vhanel
 				provider = { "o", 175320 },	-- WANTED: Murkdeep!
 				coord = { 37.2, 44.2, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Feather of Jai'vhanel
 						provider = { "i", 281038 },	-- Feather of Jai'vhanel
@@ -1133,11 +1133,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			i(3173),	-- Bear Meat
 			i(5352, {	-- Book: The Powers Below
 				races = ALLIANCE_ONLY,
+				lvl = 10,
 				crs = {
 					2339,	-- Twilight Thug
 					2338,	-- Twilight Disciple
 				},
-				lvl = 10,
 			}),
 			i(5839, {	-- Journal Page
 				cr = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>

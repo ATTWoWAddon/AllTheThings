@@ -85,8 +85,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2788,	-- Apprentice Kryten
 				coord = { 46.2, 47.8, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4529,	-- Enchanted Agate (QI!)
 				lvl = 30,
+				qi = 4529,	-- Enchanted Agate (QI!)
 			}),
 			q(696, {	-- Attack on the Tower
 				sourceQuest = 695,	-- An Apprentice's Enchantment
@@ -302,8 +302,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2706,	-- Tor'gan
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
-				qi = 4528,	-- Tor'gan's Orb (QI!)
 				lvl = 29,
+				qi = 4528,	-- Tor'gan's Orb (QI!)
 			}),
 			q(847, {	-- Guile of the Raptor (3/3)
 				sourceQuest = 702,	-- Guile of the Raptor (2/3)
@@ -374,8 +374,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				requireSkill = FIRST_AID,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(663, {	-- Land Ho!
 				qg = 2766,	-- Lolo the Lookout
@@ -387,15 +387,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 43.2, 92.6, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 4441,	-- MacKreel's Moonshine (QI!)
 				lvl = 28,
+				qi = 4441,	-- MacKreel's Moonshine (QI!)
 			}),
 			q(690, {	-- Malin's Request (1/2)
 				qg = 2708,	-- Archmage Malin
 				coord = { 50.6, 87.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(697, {	-- Malin's Request (2/2)
 				sourceQuest = 696,	-- Attack on the Tower
@@ -403,8 +403,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 46.6, 47.0, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 4533,	-- Sealed Letter to Archmage Malin (QI!)
 				lvl = 30,
+				qi = 4533,	-- Sealed Letter to Archmage Malin (QI!)
 				groups = {
 					i(4975),	-- Vigilant Buckler
 					i(15104),	-- Wingborne Boots
@@ -459,8 +459,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2706,	-- Tor'gan
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
-				qi = 4526,	-- Raptor Talon Amulet (QI!)
 				lvl = 29,
+				qi = 4526,	-- Raptor Talon Amulet (QI!)
 			}),
 			q(675, {	-- Raising Spirits (3/3)
 				sourceQuest = 674,	-- Raising Spirits (2/3)
@@ -505,8 +505,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2706,	-- Tor'gan
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
-				qi = 4453,	-- Sigil of Thoradin (QI!)
 				lvl = 32,
+				qi = 4453,	-- Sigil of Thoradin (QI!)
 			}),
 			q(644, {	-- Sigil of Trollbane
 				sourceQuest = 643,	-- Sigil of Arathor
@@ -628,23 +628,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				sourceQuest = 666,	-- Sunken Treasure (2/5)
 				qg = 2774,	-- Doctor Draxlegauge
 				coord = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
-				qi = 4493,	-- Elven Gems (QI!)
 				lvl = 35,
+				qi = 4493,	-- Elven Gems (QI!)
 			}),
 			q(669, {	-- Sunken Treasure (4/5)
 				sourceQuest = 668,	-- Sunken Treasure (3/5)
 				qg = 2610,	-- Shakes O'Breen
 				coord = { 32.2, 81.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
-				qi = 4502,	-- Sample Elven Gem (QI!)
 				lvl = 35,
+				qi = 4502,	-- Sample Elven Gem (QI!)
 			}),
 			q(670, {	-- Sunken Treasure (5/5)
 				sourceQuest = 669,	-- Sunken Treasure (4/5)
 				qg = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
 				coord = { 27.2, 77.0, MAP.STRANGLETHORN_VALE },
-				qi = 4494,	-- Seahorn's Sealed Letter (QI!)
 				lvl = 35,
+				qi = 4494,	-- Seahorn's Sealed Letter (QI!)
 			}),
 			q(640, {	-- The Broken Sigil
 				sourceQuest = 639,	-- Sigil of Strom
@@ -732,8 +732,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					{ "o", 424006 },	-- Hastily Rolled-Up Satchel
 				},
 				coord = { 22.5, 24.2, ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(211527),	-- Cozy Sleeping Bag
 					i(216619),	-- Student Fodder
@@ -743,9 +743,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				sourceQuest = 693,	-- Wand over Fist
 				qg = 2789,	-- Skuerto
 				coord = { 46.6, 47.0, MAP.ARATHI_HIGHLANDS },
-				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { REMOVED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/1 Azure Agate
 						provider = { "i", 4527 },	-- Azure Agate (QI!)
@@ -805,8 +805,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2497,	-- Nimboya
 				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 32,
+				isBreadcrumb = true,
 			}),
 			q(693, {	-- Wand over Fist
 				sourceQuest = 691,	-- Worth Its Weight in Gold
@@ -1124,9 +1124,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(255723, {	-- Manual: Greater Healing Potion (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 2589,	-- Syndicate Mercenary
 				coord = { 32.4, 30.8, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1993, {	-- Ogremind Ring
 				crs = {

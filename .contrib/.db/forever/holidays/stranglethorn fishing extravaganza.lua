@@ -36,8 +36,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				coord = { 28.2, 74.4, MAP.IRONFORGE },
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 35,
+				repeatable = true,
 				groups = {
 					i(19978),	-- Fishing Tournament!
 				},
@@ -47,8 +47,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				coord = { 52.4, 73.0, MAP.ORGRIMMAR },
 				requireSkill = FISHING,
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 35,
+				repeatable = true,
 				groups = {
 					i(19978),	-- Fishing Tournament!
 				},

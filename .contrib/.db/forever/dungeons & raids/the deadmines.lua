@@ -31,18 +31,18 @@ root(ROOTS.Instances, {
 					sourceQuest = 92752,	-- Explosive Consultation
 					qg = 253092,	-- Alba Fairmoon
 					coord = { 52.5, 53.0, MAP.WESTFALL },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
-					qi = 254553,	-- Extra-Destructive Explosives (QI!)
 					lvl = 9,
+					qi = 254553,	-- Extra-Destructive Explosives (QI!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				q(92819, {	-- Destruction in Deadmines (2/2)
 					sourceQuest = 92753,	-- Destruction in Deadmines (1/2)
 					qg = 253279,	-- Alba Fairmoon
 					coord = { 52.5, 53.0, MAP.WESTFALL },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
 					lvl = 9,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				q(167, {	-- Oh Brother. . .
 					qg = 656,	-- Wilder Thistlenettle

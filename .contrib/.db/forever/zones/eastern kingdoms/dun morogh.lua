@@ -74,11 +74,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { DWARF },
 						classes = { SHAMAN },
-						qi = 282400,	-- Archaic Rune (QI!)
 						lvl = 1,
+						qi = 282400,	-- Archaic Rune (QI!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(1599, {	-- Beginnings
 						altQuests = { 1598 },	-- The Stolen Tome
@@ -99,17 +99,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qg = 836,	-- Durnan Furcutter
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 10440,	-- Nori's Mug (QI!)
 						lvl = 4,
+						qi = 10440,	-- Nori's Mug (QI!)
 					}),
 					q(94373, {	-- Call of Earth (1/3)
 						sourceQuest = 98581,	-- Archaic Rune
 						qg = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						coord = { 28.8, 66.2, MAP.DUN_MOROGH },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { DWARF },
 						classes = { SHAMAN },
 						lvl = 4,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/2 Frostmane Bear Pendant
 								provider = { "i", 264356 },	-- Iceclaw Bear Pendant
@@ -121,21 +121,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 94373,	-- Call of Earth (1/3)
 						qg = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						coord = { 28.8, 66.2, MAP.DUN_MOROGH },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { DWARF },
 						classes = { SHAMAN },
-						qi = 6635,	-- Earth Sapta (QI!)
 						lvl = 4,
+						qi = 6635,	-- Earth Sapta (QI!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(94375, {	-- Call of Earth (3/3)
 						sourceQuest = 94374,	-- Call of Earth (2/3)
 						qg = 5891,	-- Minor Manifestation of Earth
 						coord = { 24.9, 61.9, MAP.DUN_MOROGH },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { DWARF },
 						classes = { SHAMAN },
-						qi = 6656,	-- Rough Quartz (QI!)
 						lvl = 4,
+						qi = 6656,	-- Rough Quartz (QI!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							i(5175, {	-- Earth Totem
 								description = "You must keep this in your bags forever.",
@@ -221,9 +221,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(97277, {	-- Grund and Gozwin
 						qg = 2756,	-- Grund Drokda
 						coord = { 28.7, 67.5, MAP.DUN_MOROGH },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/1 Gozwin's Mechanic's Log
 								providers = {
@@ -251,8 +251,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qg = 12738,	-- Nori Pridedrift
 						coord = { 25.0, 75.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 10439,	-- Durnan's Scalding Mornbrew (QI!)
 						lvl = 4,
+						qi = 10439,	-- Durnan's Scalding Mornbrew (QI!)
 					}),
 					q(282, {	-- Senir's Observations (1/2)
 						sourceQuest = 218,	-- The Stolen Journal
@@ -306,10 +306,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 218,	-- The Stolen Journal
 						qg = 1965,	-- Mountaineer Thalos
 						coord = { 33.4, 71.8, MAP.DUN_MOROGH },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						qi = 275019,	-- Supply Bundle (QI!)
 						lvl = 4,
+						qi = 275019,	-- Supply Bundle (QI!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(183, {	-- The Boar Hunter
 						qg = 714,	-- Talin Keeneye
@@ -484,8 +484,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				provider = { "o", 2059 },	-- A Dwarven Corpse
 				coord = { 79.7, 36.2, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 3117,	-- Hildelve's Journal (QI!)
 				lvl = 8,
+				qi = 3117,	-- Hildelve's Journal (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Mangy Claw
 						cr = 1961,	-- Mangeclaw
@@ -499,9 +499,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(96408, {	-- A Vistor to Dun Morogh
 				qg = 1376,	-- Beldin Steelgrill
 				coord = { 50.4, 49.1, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(5541, {	-- Ammo for Rumbleshot
 				qg = 1694,	-- Loslor Rudge
@@ -553,8 +553,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1375,	-- Marleth Barleybrew
 				coord = { 30.2, 45.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 2548,	-- Barrel of Barleybrew Scalder (QI!)
 				lvl = 2,
+				qi = 2548,	-- Barrel of Barleybrew Scalder (QI!)
 				groups = {
 					q(308, {	-- Distracting Jarven
 						qg = 1373,	-- Jarven Thunderbrew
@@ -568,8 +568,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 								provider = { "o", 270 },	-- Unguarded Thunder Ale Barrel
 								coord = { 47.7, 52.7, MAP.DUN_MOROGH },
 								races = ALLIANCE_ONLY,
-								qi = 2666,	-- Barrel of Thunder Ale (QI!)
 								lvl = 2,
+								qi = 2666,	-- Barrel of Thunder Ale (QI!)
 							}),
 						},
 					}),
@@ -584,11 +584,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230564),	-- Alchemy: Mana Well
 				},
@@ -597,10 +597,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = BLACKSMITHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
 				},
@@ -609,18 +609,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(96059, {	-- Camping 101: Enchanting [Dun Morogh]
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENCHANTING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
@@ -629,10 +629,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENGINEERING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
@@ -641,10 +641,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FIRST_AID,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230117),	-- First Aid: First Aid Kit
 				},
@@ -653,10 +653,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229745),	-- Fishing: Fish Bowl
 				},
@@ -665,11 +665,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = HERBALISM,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229705),	-- Herbalism: Incense Candle
 				},
@@ -678,11 +678,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = LEATHERWORKING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229432),	-- Leatherworking: Camp Tent
 				},
@@ -691,10 +691,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = MINING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230161),	-- Mining: Lodestone
 				},
@@ -703,11 +703,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = SKINNING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229517),	-- Skinning: Camp Chair
 				},
@@ -716,11 +716,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = TAILORING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
@@ -728,10 +728,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(99158, {	-- Dawn in the Mountains
 				qg = 1226,	-- Maxan Anvol <Priest Trainer>
 				coord = { 47.3, 52.2, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 286355,	-- Crate of Candles (QI!)
 				lvl = 5,
+				qi = 286355,	-- Crate of Candles (QI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(5637, {	-- Desperate Prayer
 				altQuests = {
@@ -764,17 +764,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96408,	-- A Vistor to Dun Morogh
 				qg = 264936,	-- Earthseer Farsen
 				coord = { 64.8, 58.4, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99159, {	-- Finding Warmth
 				sourceQuest = 99158,	-- Dawn in the Mountains
 				qg = 1253,	-- Father Gavin
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/14 Mostly Dry Firewood
 						providers = {
@@ -787,9 +787,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(98321, {	-- Flintfire's Shipment
 				qg = 1241,	-- Tognus Flintfire <Journeyman Blacksmith>
 				coord = { 45.3, 51.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Flintfire's Shipments
 						providers = {
@@ -802,9 +802,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(98326, {	-- Frosthowl
 				qg = 8508,	-- Gretta Ganter <Fisherman Supplies>
 				coord = { 31.5, 44.6, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Sack of Fish
 						provider = { "i", 280426 },	-- Sack of Fish
@@ -849,8 +849,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				maps = { MAP.COLDRIDGE_VALLEY },
 				races = { DWARF },
 				classes = { PRIEST },
-				isBreadcrumb = true,
 				lvl = 5,
+				isBreadcrumb = true,
 			}),
 			q(1679, {	-- Muren Stormpike
 				altQuests = {
@@ -867,9 +867,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(95212, {	-- Never Saddle on Quality
 				qg = 1265,	-- Rudra Amberstill
 				coord = { 63.1, 49.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6  Pristine Leopard Pelt
 						provider = { "i", 267414 },	-- Pristine Leopard Pelt
@@ -881,9 +881,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96392,	-- Farsen's Watch
 				qg = 264936,	-- Earthseer Farsen
 				coord = { 64.8, 58.4, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Dark Iron Spy slain
 						provider = { "n", 6123 },	-- Dark Iron Spy
@@ -896,8 +896,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 25.2, 44.4, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				qi = 7715,	-- Onin's Report (QI!)
 				lvl = 10,
+				qi = 7715,	-- Onin's Report (QI!)
 				groups = {
 					i(7298),	-- Blade of Cunning
 				},
@@ -953,8 +953,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					{ 46.0, 51.6, MAP.DUN_MOROGH },
 				},
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 8,
+				isBreadcrumb = true,
 				groups = {
 					i(3087),	-- Mug of Shimmer Stout
 				},
@@ -964,8 +964,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1374,	-- Rejold Barleybrew
 				coord = { 30.2, 45.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 2696,	-- Cask of Evershine (QI!)
 				lvl = 2,
+				qi = 2696,	-- Cask of Evershine (QI!)
 				groups = {
 					i(1011),	-- Sharp Axe
 					i(1010),	-- Gnarled Short Staff
@@ -996,9 +996,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 99159,	-- Finding Warmth
 				qg = 1253,	-- Father Gavin
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Minor Ice Elemental
 						provider = { "n", 276003 },	-- Minor Ice Elemental
@@ -1009,9 +1009,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 99160,	-- Rime's Wrath (1/2)
 				qg = 1253,	-- Father Gavin
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Avala's Core
 						provider = { "i", 286325 },	-- Avala's Core
@@ -1044,25 +1044,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 420,	-- Senir's Observations (2/2)
 				qg = 1252,	-- Senir Whitebeard
 				coord = { 46.8, 53.8, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98319, {	-- Secure the Mountain (2/3)
 				sourceQuest = 98322,	-- Secure the Mountain (1/3)
 				qg = 271546,	-- Mountaineer Gretchen
 				coord = { 44.1, 57.1, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98323, {	-- Secure the Mountain (3/3)
 				sourceQuest = 98319,	-- Secure the Mountain (2/3)
 				qg = 271546,	-- Mountaineer Gretchen
 				coord = { 44.1, 57.1, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(280430),	-- Mountaineer Gretchen's Report
 				},
@@ -1075,8 +1075,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1374,	-- Rejold Barleybrew
 				coord = { 30.2, 45.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 3085,	-- Barrel of Shimmer Stout (QI!)
 				lvl = 8,
+				qi = 3085,	-- Barrel of Shimmer Stout (QI!)
 			}),
 			q(1879, {	-- Speak with Bink
 				altQuests = { 1860 },	-- Speak with Jennea
@@ -1084,8 +1084,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 47.4, 52.0, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(317, {	-- Stocking Jetsteam
 				qg = 1378,	-- Pilot Bellowfiz
@@ -1114,16 +1114,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(95213, {	-- Stolen Blasting Powder (1/2)
 				qs = 268548,	-- Empty Powder Keg (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(95214, {	-- Stolen Blasting Powder (2/2)
 				qg = 1256,	-- Quarrymaster Thesten <Miners' League>
 				coord = { 69.0, 54.8, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/16 Stolen Blasting Powder
 						provider = { "i", 267415 },	-- Stolen Blasting Powder
@@ -1145,16 +1145,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					{ 72.4, 93.6, MAP.IRONFORGE },
 				},
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(414, {	-- Stout to Kadrell
 				sourceQuest = 413,	-- Shimmer Stout
 				qg = 1959,	-- Mountaineer Barleybrew
 				coord = { 86.2, 48.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 3086,	-- Cask of Shimmer Stout (QI!)
 				lvl = 8,
+				qi = 3086,	-- Cask of Shimmer Stout (QI!)
 			}),
 			q(6064, {	-- Taming the Beast (1/3)
 				sourceQuests = {
@@ -1166,8 +1166,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
-				qi = 15911,	-- Taming Rod (QI!)
 				lvl = 10,
+				qi = 15911,	-- Taming Rod (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Tame a Large Crag Boar
 						providers = { { "n", 1126 }, },	-- Large Crag Boar
@@ -1180,8 +1180,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
-				qi = 15913,	-- Taming Rod (QI!)
 				lvl = 10,
+				qi = 15913,	-- Taming Rod (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Tame a Snow Leopard
 						providers = { { "n", 1201 }, },	-- Snow Leopard
@@ -1194,8 +1194,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
-				qi = 15908,	-- Taming Rod (QI!)
 				lvl = 10,
+				qi = 15908,	-- Taming Rod (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Tame a Ice Claw Bear
 						providers = { { "n", 1196 }, },	-- Ice Claw Bear
@@ -1206,9 +1206,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 96628,	-- The Adventurer [Dun Morogh]
 				qg = 265813,	-- Eric Birghthammer
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(313, {	-- The Grizzled Den
 				qg = 1377,	-- Pilot Stonegear
@@ -1233,24 +1233,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 70.0, 84.6, MAP.IRONFORGE },
 				races = { DWARF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6075, {	-- The Hunter's Path [Dun Morogh]
 				qg = 11807,	-- Tristane Shadowstone
 				coord = { 30.6, 45.4, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6076, {	-- The Hunter's Path [Stormwind City]
 				qg = 5515,	-- Einris Brightspear <Hunter Trainer>
 				coord = { 67.6, 36.4, MAP.STORMWIND_CITY },
 				races = { DWARF },
 				classes = { HUNTER },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(419, {	-- The Lost Pilot
 				qg = 1960,	-- Pilot Hammerfoot
@@ -1283,8 +1283,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				provider = { "n", 1977 },	-- Senator Mehr Stonehallow
 				coord = { 68.6, 56.0, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 6,
+				isYearly = true,
 				-- Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
 				-- Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 				groups = {
@@ -1296,11 +1296,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(95217, {	-- The Quarry's Smith
 				qg = 1698,	-- Frast Dokner
 				coord = { 68.8, 55.8, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { DWARF, GNOME, SKYBORNE_ALLIANCE },
-				requireSkill = BLACKSMITHING,
 				classes = { WARRIOR, PALADIN, SHAMAN },
 				lvl = 7,
+				requireSkill = BLACKSMITHING,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/12 Copper Bar
 						provider = { "i", 2840 },	-- Copper Bar
@@ -1335,8 +1335,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				maps = { MAP.BLACKFATHOM_DEEPS, MAP.DARKSHORE, MAP.DEADMINES, MAP.LOCH_MODAN, MAP.SHADOWFANG_KEEP },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				qi = 6996,	-- Jordan's Weapon Notes (QI!)
 				lvl = 20,
+				qi = 6996,	-- Jordan's Weapon Notes (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Whitestone Oak Lumber
 						provider = { "i", 6994 },	-- Whitestone Oak Lumber (QI!)
@@ -1353,8 +1353,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 36.0, 45.0, MAP.LOCH_MODAN },
 						races = ALLIANCE_ONLY,
 						classes = { PALADIN },
-						repeatable = true,
 						lvl = 20,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Jordan's Ore Shipment
 								providers = {
@@ -1375,8 +1375,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 37.4, 40.2, MAP.DARKSHORE },
 						races = ALLIANCE_ONLY,
 						classes = { PALADIN },
-						repeatable = true,
 						lvl = 20,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Corrupted Kor Gem
 								provider = { "i", 6995 },	-- Corrupted Kor Gem (QI!)
@@ -1422,15 +1422,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 47.6, 52.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 16,
+				isBreadcrumb = true,
 			}),
 			q(400, {	-- Tools for Steelgrill
 				qg = 1872,	-- Tharek Blackstone
 				coord = { 46.0, 51.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 2999,	-- Steelgrill's Tools (QI!)
 				lvl = 2,
+				qi = 2999,	-- Steelgrill's Tools (QI!)
 			}),
 			q(6086, {	-- Training the Beast
 				sourceQuest = 6085,	-- Taming the Beast (3/3)
@@ -1449,9 +1449,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 99159,	-- Finding Warmth
 				qg = 1253,	-- Father Gavin
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Coalbeard's Rifle
 						providers = {
@@ -1496,9 +1496,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(96391, {	-- Underground Map
 				qs = 274268,	-- Dark Iron Map (QS!)
 				coord = { 77.4, 61.4, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 		n(RARES, {
@@ -1766,20 +1766,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 46.6, 59.8, MAP.DUN_MOROGH },
 			}),
 			i(274268, {	-- Dark Iron Map (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				coord = { 78.6, 62.0, MAP.DUN_MOROGH },
 				crs = {
 					6124,	-- Captain Beld <Dark Iron Captain>
 					6123,	-- Dark Iron Spy
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(268548, {	-- Empty Powder Keg (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				coord = { 72.6, 55.0, MAP.DUN_MOROGH },
 				crs = {
 					1118,	-- Rockjaw Backbreaker
 					1116,	-- Rockjaw Ambusher
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2067, {	-- Frostbit Staff
 				cr = 1117,	-- Rockjaw Bonesnapper

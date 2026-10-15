@@ -209,8 +209,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 27.4, 76.8, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
-				qi = 4028,	-- Bundle of Akiris Reeds (QI!)
 				lvl = 38,
+				qi = 4028,	-- Bundle of Akiris Reeds (QI!)
 			}),
 			q(3721, {	-- An OOX of Your Own
 				sourceQuests = {
@@ -261,8 +261,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2545,	-- "Pretty Boy" Duncan
 				coord = { 27.4, 69.4, MAP.STRANGLETHORN_VALE },
 				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
-				isBreadcrumb = true,
 				lvl = 55,
+				isBreadcrumb = true,
 			}),
 			q(204, {	-- Bad Medicine
 				qg = 733,	-- Sergeant Yohwa
@@ -628,8 +628,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2670,	-- Xizk Goodstitch <Tailoring Supplies>
 				coord = { 28.6, 76.8, MAP.STRANGLETHORN_VALE },
 				classes = { WARLOCK },
-				repeatable = true,
 				lvl = 31,
+				repeatable = true,
 				groups = {
 					i(12293),	-- Fine Gold Thread
 				},
@@ -769,8 +769,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 770,	-- Corporal Kaleb
 				coord = { 37.7, 3.3, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 4085,	-- Krazek's Crock Pot (QI!)
 				lvl = 32,
+				qi = 4085,	-- Krazek's Crock Pot (QI!)
 			}),
 			q(207, {	-- Kurzen's Mystery
 				qg = 739,	-- Brother Nimetz
@@ -816,8 +816,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2496,	-- Baron Revilgaz
 				coord = { 27.2, 76.8, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 3960,	-- Bag of Water Elemental Bracers (QI!)
 				lvl = 32,
+				qi = 3960,	-- Bag of Water Elemental Bracers (QI!)
 			}),
 			q(206, {	-- Mai'Zoth
 				sourceQuests = {
@@ -842,10 +842,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
 				cost = { { "g", 20000 } },	-- 2g
 				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				repeatable = true,
-				lvl = 30,
 				groups = {
 					i(10790),	-- Gnome Engineer Membership Card
 				},
@@ -1054,8 +1054,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 773,	-- Krazek
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 1987,	-- Krazek's Fixed Pot (QI!)
 				lvl = 32,
+				qi = 1987,	-- Krazek's Fixed Pot (QI!)
 				groups = {
 					i(4124),	-- Cap of Harmony
 				},
@@ -1064,8 +1064,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sourceQuest = 606,	-- Scaring Shaky
 				qg = 2502,	-- \"Shaky\" Phillipe
 				coord = { 26.9, 73.6, MAP.STRANGLETHORN_VALE },
-				qi = 3922,	-- Shaky's Payment (QI!)
 				lvl = 30,
+				qi = 3922,	-- Shaky's Payment (QI!)
 			}),
 			q(3626, {	-- Return to the Blasted Lands
 				sourceQuest = 3625,	-- Enchanted Azsharite Fel Weaponry
@@ -1303,8 +1303,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						qg = 1449,	-- Witch Doctor Unbagwa
 						coord = { 35.2, 60.4, MAP.STRANGLETHORN_VALE },
 						cost = { { "i", 2799, 10 } },	-- 10x Gorilla Fang
-						repeatable = true,
 						lvl = 32,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Heart of Mokk
 								questID = 348,	-- Stranglethorn Fever
@@ -1321,8 +1321,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 773,	-- Krazek
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 2252,	-- Miscellaneous Goblin Supplies (QI!)
 				lvl = 30,
+				qi = 2252,	-- Miscellaneous Goblin Supplies (QI!)
 			}),
 			q(575, {	-- Supply and Demand
 				qg = 2495,	-- Drizzlik
@@ -1577,10 +1577,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 				qg = 7794,	-- McGavan
 				coord = { 28.8, 75.4, MAP.STRANGLETHORN_VALE },
-				qi = 8686,	-- Mithril Pendant (QI!)
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
 				lvl = 40,
+				qi = 8686,	-- Mithril Pendant (QI!)
 			}),
 			q(8552, {	-- The Monogrammed Sash
 				altQuests = { 620 },	-- The Monogrammed Sash [Old]
@@ -1647,8 +1647,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2496,	-- Baron Revilgaz
 				coord = { 27.2, 76.9, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 3898,	-- Library Scrip (QI!)
 				lvl = 32,
+				qi = 3898,	-- Library Scrip (QI!)
 			}),
 			q(629, {	-- The Vile Reef
 				qg = 2519,	-- Kin'weelay
@@ -1723,8 +1723,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					{ "i", 4306, 40 },	-- 40x Silk Cloth
 					{ "i", 2604, 4 },	-- 4x Red Dye
 				},
-				repeatable = true,
 				lvl = 30,
+				repeatable = true,
 			}),
 			q(205, {	-- Troll Witchery
 				sourceQuest = 207,	-- Kurzen's Mystery

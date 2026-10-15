@@ -4,8 +4,8 @@
 
 battleground(MAP.DARKSPEAR_ISLANDS, {
 	--["lore"] = "",
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 441150,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(62049, {	-- Master of Darkspear Islands

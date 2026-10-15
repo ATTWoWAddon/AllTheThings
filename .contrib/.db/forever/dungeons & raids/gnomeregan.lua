@@ -84,18 +84,18 @@ root(ROOTS.Instances, {
 				}),
 				i(9308),	-- Grime-Encrusted Object
 				i(9326, {	-- Grime-Encrusted Ring
+					cr = 6212,	-- Dark Iron Agent
 					-- #if SEASON_OF_DISCOVERY
 					timeline = { REMOVED_1_15_1 },
 					-- #endif
-					cr = 6212,	-- Dark Iron Agent
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(216661, {	-- Grime-Encrusted Ring
-					timeline = { ADDED_1_15_1, REMOVED_2_0_1 },
 					crs = {
 						6212,	-- Dark Iron Agent
 						6228,	-- Dark Iron Ambassador
 					},
+					timeline = { ADDED_1_15_1, REMOVED_2_0_1 },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(216661, { timeline = { ADDED_1_15_1, REMOVED_2_0_1 } })),	-- Grime-Encrusted Salvage
 				applyclassicphase(SOD_PHASE_TWO, i(215430, { timeline = { ADDED_1_15_1, REMOVED_2_0_1 } })),	-- Gnomeregan Fallout
@@ -230,7 +230,6 @@ root(ROOTS.Instances, {
 					timeline = { REMOVED_5_0_4 },	-- guessed from WH comments
 				}),
 				i(140781, {	-- X-87 Battle Circuit
-					timeline = { ADDED_7_0_3 },
 					crs = {
 						6229,	-- Crowd Pummeler 9-60
 						6235,	-- Electrocutioner 6000
@@ -243,6 +242,7 @@ root(ROOTS.Instances, {
 						6225,	-- Mechano-Tank
 						6230,	-- Peacekeeper Security Suit
 					},
+					timeline = { ADDED_7_0_3 },
 				}),
 			}),
 			n(QUESTS, {
@@ -327,8 +327,8 @@ root(ROOTS.Instances, {
 					qg = 4077,	-- Gaxim Rustfizzle
 					coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 25,
+					isBreadcrumb = true,
 				}),
 				q(2842, {	-- Chief Engineer Scooty
 					description = "Although this quest is available from level 20, if you take or complete it, it makes it impossible to obtain the 'Rig Wars' quest, which is available at level 25. However, if you take 'Rig Wars' first, you can have both quest without problems.",
@@ -438,8 +438,8 @@ root(ROOTS.Instances, {
 					qg = 6142,	-- Mathiel
 					coord = { 59.2, 45.2, MAP.DARNASSUS },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 24,
+					isBreadcrumb = true,
 				}),
 				q(2950, {	-- Nogg's Ring Redo
 					sourceQuest = 2949,	-- Return of the Ring [Horde]
@@ -481,8 +481,8 @@ root(ROOTS.Instances, {
 					qg = 3412,	-- Nogg <Expert Engineer>
 					coord = { 75.8, 25.2, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					lockCriteria = { 1, "questID", 2842 },	-- Chief Engineer Scooty
 					lvl = 25,
+					lockCriteria = { 1, "questID", 2842 },	-- Chief Engineer Scooty
 					groups = {
 						objective(1, {	-- 0/1 Rig Blueprints
 							providers = {
@@ -515,8 +515,8 @@ root(ROOTS.Instances, {
 					qg = 6569,	-- Gnoarn
 					coord = { 69.6, 50.6, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 20,
+					isBreadcrumb = true,
 				}),
 				q(2929, {	-- The Grand Betrayal
 					qg = 7937,	-- High Tinker Mekkatorque <King of Gnomes>
@@ -551,8 +551,8 @@ root(ROOTS.Instances, {
 					coord = { 51.6, 48.6, MAP.STORMWIND_CITY },
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 20,
+					isBreadcrumb = true,
 				}),
 			}),
 			n(REWARDS, {

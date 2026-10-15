@@ -28,9 +28,9 @@ root(ROOTS.Instances, {
 				q(92456, {	-- A Green Sample
 					qg = 5502,	-- Shylamiir
 					coord = { 31.4, 63.0, MAP.STORMWIND_CITY },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
 					lvl = 24,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/1 Fel Infused Blossom
 							provider = { "i", 251983 },	-- Fel Infused Blossom
@@ -42,10 +42,10 @@ root(ROOTS.Instances, {
 				q(92432, {	-- An Alarming Request
 					qg = 247264,	-- Emissary Jacques
 					coord = { 48.3, 60.1, MAP.HILLSBRAD_FOOTHILLS },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					maps = { MAP.SILVERPINE_FOREST },
 					races = ALLIANCE_ONLY,
 					lvl = 30,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				q(92434, {	-- Blood in the Streets
 					sourceQuests = {
@@ -54,29 +54,29 @@ root(ROOTS.Instances, {
 					},
 					qg = 2410,	-- Magus Wordeen Voidglare
 					coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					maps = { MAP.ALTERAC_MOUNTAINS, MAP.SILVERPINE_FOREST },
 					races = HORDE_ONLY,
-					qi = 279469,	-- Grimy Key (QI!)
 					lvl = 30,
+					qi = 279469,	-- Grimy Key (QI!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				q(92459, {	-- Friend of the Kirin Tor
 					sourceQuest = 92458,	-- Heart of Disruption [Alliance]
 					qg = 269127,	-- Image of Archmage Modera
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
-					qi = 251961,	-- Arcane Mote (QI!)
 					lvl = 24,
+					qi = 251961,	-- Arcane Mote (QI!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				q(92458, {	-- Heart of Disruption [Alliance]
 					sourceQuest = 92432,	-- An Alarming Request
 					qg = 269127,	-- Image of Archmage Modera
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
-					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					lvl = 24,
+					qi = 277507,	-- Dalaran Sewer Key (QI!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
 							provider = { "i", 251961 },	-- Arcane Mote
@@ -91,10 +91,10 @@ root(ROOTS.Instances, {
 					sourceQuest = 92434,	-- Blood in the Streets
 					qg = 269127,	-- Image of Archmage Modera
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
-					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					lvl = 24,
+					qi = 277507,	-- Dalaran Sewer Key (QI!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
 							provider = { "i", 251961 },	-- Arcane Mote
@@ -108,10 +108,10 @@ root(ROOTS.Instances, {
 				q(93680, {	-- Key to the City
 					qg = 2410,	-- Magus Wordeen Voidglare
 					coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					maps = { MAP.ALTERAC_MOUNTAINS },
 					races = HORDE_ONLY,
 					lvl = 30,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/1 Grimy Key
 							provider = { "i", 279469 },	-- Grimy Key
@@ -120,9 +120,9 @@ root(ROOTS.Instances, {
 				}),
 				q(96987, {	-- Opportunistic Education
 					qg = 268743,	-- Rexxie Copperclutch
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
 					lvl = 24,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/1 The Founding of Dalaran
 							provider = { "i", 275996 },	-- The Founding of Dalaran
@@ -148,17 +148,17 @@ root(ROOTS.Instances, {
 					sourceQuest = 96984,	-- Heart of Disruption [Horde]
 					qg = 2410,	-- Magus Wordeen Voidglare
 					coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
-					qi = 251961,	-- Arcane Mote (QI!)
 					lvl = 24,
+					qi = 251961,	-- Arcane Mote (QI!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				q(96988, {	-- Source of Power
 					qg = 11044,	-- Doctor Martin Felben
 					coord = { 46.6, 74.4, MAP.UNDERCITY },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
 					lvl = 24,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/6 Cracked Sentry Core
 							provider = { "i", 275997 },	-- Cracked Sentry Core
@@ -172,9 +172,9 @@ root(ROOTS.Instances, {
 					sourceQuest = 92432,	-- An Alarming Request
 					qg = 269127,	-- Image of Archmage Modera
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
 					lvl = 24,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/8 Seeking Remnant slain
 							provider = { "n", 247003 },	-- Seeking Remnant
@@ -192,9 +192,9 @@ root(ROOTS.Instances, {
 				q(96986, {	-- The Grave Knight
 					qg = 2278,	-- Melisara
 					coord = { 62.6, 20.6, MAP.HILLSBRAD_FOOTHILLS },
-					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
 					lvl = 24,
+					timeline = { TIMELINE.ADDED_1_60_1 },
 					groups = {
 						objective(1, {	-- 0/1 Atrexis the Grave Knight slain
 							provider = { "n", 247126 },	-- Atrexis the Grave Knight

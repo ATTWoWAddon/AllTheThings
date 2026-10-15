@@ -209,36 +209,36 @@ root(ROOTS.Instances, {
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 11382, 1 } },	-- 1x Blood of the Mountain
-					repeatable = true,
 					lvl = 60,
+					repeatable = true,
 				}),
 				q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 17012, 2 } },	-- 2x Core Leather
-					repeatable = true,
 					lvl = 60,
+					repeatable = true,
 				}),
 				q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 11370, 10 } },	-- 10x Dark Iron Ore
-					repeatable = true,
 					lvl = 60,
+					repeatable = true,
 				}),
 				q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 17010, 1 } },	-- 1x Fiery Core
-					repeatable = true,
 					lvl = 60,
+					repeatable = true,
 				}),
 				q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
 					qg = 12944,	-- Lokhtos Darkbargainer
 					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 17011, 1 } },	-- 1x Lava Core
-					repeatable = true,
 					lvl = 60,
+					repeatable = true,
 				}),
 				q(4122, {	-- Grark Lorkrub
 					sourceQuests = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
@@ -406,8 +406,8 @@ root(ROOTS.Instances, {
 					coord = { 63.6, 20.6, MAP.BLASTED_LANDS },
 					maps = { MAP.DUN_MOROGH },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 50,
+					isBreadcrumb = true,
 				}),
 				q(4136, {	-- Ribbly Screwspigot
 					sourceQuest = 4324,	-- Yuka Screwspigot
@@ -533,8 +533,8 @@ root(ROOTS.Instances, {
 						}),
 						objective(3, {	-- 0/1 Nagmara's Filled Vial
 							provider = { "i", 11413 },	-- Nagmara's Filled Vial (QI!)
-							cost = { { "i", 11412, 1 } },	-- 1x Nagmara's Vial (QI!)
 							coord = { 31.0, 49.0, MAP.UNGORO_CRATER },
+							cost = { { "i", 11412, 1 } },	-- 1x Nagmara's Vial (QI!)
 						}),
 						i(11962),	-- Manacle Cuffs
 						i(11866),	-- Nagmara's Whipping Belt
@@ -660,16 +660,16 @@ root(ROOTS.Instances, {
 					qg = 9562,	-- Helendis Riverhorn
 					coord = { 85.8, 69.0, MAP.BURNING_STEPPES },
 					races = ALLIANCE_ONLY,
-					qi = 11366,	-- Helendis Riverhorn's Letter (QI!)
 					lvl = 48,
+					qi = 11366,	-- Helendis Riverhorn's Letter (QI!)
 				}),
 				q(4184, {	-- The True Masters (2/6)
 					sourceQuest = 4183,	-- The True Masters (1/6)
 					qg = 344,	-- Magistrate Solomon
 					coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 					races = ALLIANCE_ONLY,
-					qi = 11367,	-- Solomon's Plea to Bolvar (QI!)
 					lvl = 48,
+					qi = 11367,	-- Solomon's Plea to Bolvar (QI!)
 				}),
 				q(4185, {	-- The True Masters (3/6)
 					sourceQuest = 4184,	-- The True Masters (2/6)
@@ -717,8 +717,8 @@ root(ROOTS.Instances, {
 					qg = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 					coord = { 50.1, 68.0, MAP.UNDERCITY },
 					races = HORDE_ONLY,
-					isBreadcrumb = true,
 					lvl = 50,
+					isBreadcrumb = true,
 				}),
 				q(3982, {	-- What Is Going On? (1/2)
 					sourceQuest = 3981,	-- Commander Gor'shak
@@ -740,8 +740,8 @@ root(ROOTS.Instances, {
 				q(4324, {	-- Yuka Screwspigot
 					qg = 9706,	-- Yorba Screwspigot
 					coord = { 67.0, 24.0, MAP.TANARIS },
-					isBreadcrumb = true,
 					lvl = 48,
+					isBreadcrumb = true,
 				}),
 			}),
 			n(VENDORS, {

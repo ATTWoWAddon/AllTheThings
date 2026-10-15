@@ -5,8 +5,8 @@
 maproot(MAP.ZEPHRAS_ISLE, {
 	lore = "Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",
 	icon = [[~_.asset("zephrasisland")]],
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = { 2665 },	-- Zephras Isle (Flight Path Map)
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(EXPLORATION, {
 			exploration(16623),	-- Shen'dar Highlands
@@ -109,8 +109,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
-				qi = 282420,	-- Folder Parchment (QI!)
 				lvl = 2,
+				qi = 282420,	-- Folder Parchment (QI!)
 			}),
 			q(92481, {	-- A Student of the Arcane
 				sourceQuest = 92461,	-- Harmony in Balance
@@ -598,8 +598,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
-				isBreadcrumb = true,
 				lvl = 2,
+				isBreadcrumb = true,
 			}),
 			q(92484, {	-- Embracing the Elements
 				sourceQuest = 92461,	-- Harmony in Balance
@@ -870,8 +870,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93165,	-- Mercy Falls on Deaf Ears
 				qg = 254151,	-- Vayn Moongaze
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
-				repeatable = true,
 				lvl = 8,
+				repeatable = true,
 				qi = 258771,	-- Al'Alketh Cultist's Ear (QI!)
 			}),
 			q(92684, {	-- Ornery Ornery Galestriders

@@ -98,8 +98,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					},
 				},
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(522, {	-- Assassin's Contract
 				provider = { "i", 3668 },	-- Assassin's Contract
@@ -169,8 +169,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				maps = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 3357, 8 } },	-- 8x Liferoot
 				classes = { WARRIOR },
-				qi = 6929,	-- Bath'rah's Parchment (QI!)
 				lvl = 30,
+				qi = 6929,	-- Bath'rah's Parchment (QI!)
 				groups = {
 					objective(2, {	-- 0/30 Bloodscalp Tusk
 						provider = { "i", 3901 },	-- Bloodscalp Tusk (QI!)
@@ -198,8 +198,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 							{ "i", 4480, 8 },	-- 8x Thundering Charm
 						},
 						classes = { WARRIOR },
-						repeatable = true,
 						lvl = 30,
+						repeatable = true,
 						groups = {
 							objective(3, {	-- 0/1 Essence of the Exile
 								questID = 1712,	-- Cyclonian
@@ -288,8 +288,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 74.4, 12.0, MAP.IRONFORGE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 3518,	-- Decrypted Letter (QI!)
 				lvl = 30,
+				qi = 3518,	-- Decrypted Letter (QI!)
 			}),
 			q(503, {	-- Gol'dir
 				sourceQuest = 533,	-- Infiltration
@@ -327,8 +327,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 84.4, 80.3, MAP.ALTERAC_MOUNTAINS },
 				maxReputation = { FACTION_RAVENHOLDT, EXALTED },
 				cost = { { "i", 16885, 5 } },	-- 5x Heavy Junkbox
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(20086),	-- Dusksteel Throwing Knife
 				},
@@ -338,8 +338,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 3521,	-- Cleverly Encrypted Letter (QI!)
 				lvl = 30,
+				qi = 3521,	-- Cleverly Encrypted Letter (QI!)
 			}),
 			q(507, {	-- Lord Aliden Perenolde
 				sourceQuest = 506,	-- Blackmoore's Legacy
@@ -423,8 +423,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 3706,	-- Ensorcelled Parchment (QI!)
 				lvl = 28,
+				qi = 3706,	-- Ensorcelled Parchment (QI!)
 			}),
 			q(505, {	-- Syndicate Assassins
 				qg = 2276,	-- Magistrate Henry Maleb
@@ -449,16 +449,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },
 				cost = { { "i", 17124, 1 } },	-- 1x Syndicate Emblem
 				classes = { ROGUE },
-				repeatable = true,
 				lvl = 24,
+				repeatable = true,
 			}),
 			q(508, {	-- Taretha's Gift
 				sourceQuest = 507,	-- Lord Aliden Perenolde
 				qg = 2317,	-- Elysa
 				coord = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
-				qi = 3498,	-- Taretha's Necklace (QI!)
 				lvl = 29,
+				qi = 3498,	-- Taretha's Necklace (QI!)
 				groups = {
 					i(3765),	-- Brigand's Pauldrons
 					i(3764),	-- Mantis Boots
@@ -469,8 +469,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 57.60, 93.84, MAP.UNDERCITY },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 34,
+				isBreadcrumb = true,
 			}),
 			q(518, {	-- The Crown of Will (2/5)
 				sourceQuest = 495,	-- The Crown of Will (1/5)
@@ -532,8 +532,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 2278,	-- Melisara
 				coord = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				qi = 3554,	-- Crown of Will (QI!)
 				lvl = 34,
+				qi = 3554,	-- Crown of Will (QI!)
 				groups = {
 					i(4430),	-- Ethereal Talisman
 				},
@@ -612,16 +612,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(94912, {	-- Child of Nature
 				qg = 270459,	-- Alfina Nightgaze
 				coord = { 11.8, 56.6, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99191, {	-- A Donation of Wool
 				qg = 276170,	-- Belanaa Windveil
 				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/60 Wool Cloth
 						provider = { "i", 2592 },	-- Wool Cloth

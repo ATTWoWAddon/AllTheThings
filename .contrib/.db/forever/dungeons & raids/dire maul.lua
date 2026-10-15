@@ -160,15 +160,15 @@ root(ROOTS.Instances, {
 						{ "i", 15994, 1 },	-- 1x Thorium Widget
 						{ "i", 3829, 1 },	-- 1x Frost Oil
 					},
-					repeatable = true,
 					lvl = 56,
+					repeatable = true,
 				}),
 				q(27118, {	-- A Broken Trap
 					description = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
 					provider = { "o", 179485 },	-- Broken Trap
 					maps = GORDOK_COMMONS_MAPS,
-					repeatable = true,
 					lvl = 42,
+					repeatable = true,
 				}),
 				q(5527, {	-- A Reliquary of Purity
 					description = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
@@ -211,8 +211,8 @@ root(ROOTS.Instances, {
 					},
 					maps = { MAP.FERALAS },
 					races = HORDE_ONLY,
-					isBreadcrumb = true,
 					lvl = 54,
+					isBreadcrumb = true,
 				}),
 				q(7499, {	-- Codex of Defense
 					providers = {
@@ -333,8 +333,8 @@ root(ROOTS.Instances, {
 					},
 					maps = { MAP.FERALAS },
 					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
 					lvl = 54,
+					isBreadcrumb = true,
 				}),
 				q(5525, {	-- Free Knot!
 					description = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
@@ -350,8 +350,8 @@ root(ROOTS.Instances, {
 					maps = GORDOK_COMMONS_MAPS,
 					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 					cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
-					repeatable = true,
 					lvl = 54,
+					repeatable = true,
 				}),
 				q(7505, {	-- Frost Shock and You
 					providers = {
@@ -443,8 +443,8 @@ root(ROOTS.Instances, {
 						{ "i", 14344, 4 },	-- 4x Large Brilliant Shard
 						{ "i", 12753, 2 },	-- 2x Skin of Shadow
 					},
-					repeatable = true,
 					lvl = 57,
+					repeatable = true,
 					groups = {
 						i(18330),	-- Arcanum of Focus
 					},
@@ -463,8 +463,8 @@ root(ROOTS.Instances, {
 						{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
 						{ "i", 12735, 1 },	-- 1x Frayed Abomination Stitching
 					},
-					repeatable = true,
 					lvl = 57,
+					repeatable = true,
 					groups = {
 						i(18331),	-- Arcanum of Protection
 					},
@@ -483,8 +483,8 @@ root(ROOTS.Instances, {
 						{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
 						{ "i", 12938, 2 },	-- 2x Blood of Heroes
 					},
-					repeatable = true,
 					lvl = 57,
+					repeatable = true,
 					groups = {
 						i(18329),	-- Arcanum of Rapidity
 					},
@@ -578,8 +578,8 @@ root(ROOTS.Instances, {
 						{ "i", 14341, 2 },	-- 2x Rune Thread
 						{ "i", 18240, 1 },	-- 1x Ogre Tannin
 					},
-					repeatable = true,
 					lvl = 56,
+					repeatable = true,
 					groups = {
 						i(18258),	-- Gordok Ogre Suit
 					},

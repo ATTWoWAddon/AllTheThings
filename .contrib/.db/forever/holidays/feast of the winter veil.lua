@@ -98,8 +98,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					{ 33.6, 66.1, MAP.IRONFORGE },
 					{ 49.6, 77.7, MAP.ORGRIMMAR },
 				},
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				_drop = { "g" },
 				groups = { i(21328) },	-- Wand of Holiday Cheer
 			}),
@@ -112,8 +112,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					{ 33.6, 66.3, MAP.IRONFORGE },
 					{ 49.6, 78.2, MAP.ORGRIMMAR },
 				},
-				isYearly = true,
 				lvl = 20,
+				isYearly = true,
 				_drop = { "g" },
 				groups = {
 					i(21301),	-- Father Winter's Helper (PET!)
@@ -159,8 +159,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					{ 33.6, 66.5, MAP.IRONFORGE },
 					{ 49.5, 78.7, MAP.ORGRIMMAR },
 				},
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				_drop = { "g" },
 				groups = {
 					i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
@@ -204,44 +204,44 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(7023, {	-- Greatfather Winter is Here! (Alliance)
 				qg = 13435,	-- Khole Jinglepocket
 				coord = { 62.8, 70.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(6961, {	-- Great-father Winter is Here! (Horde)
 				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(7021, {	-- Great-father Winter is Here! (Horde)
 				qg = 13431,	-- Whulwert Copperpinch <Smokywood Pastures>
 				coord = { 43.8, 58.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(7024, {	-- Great-father Winter is Here! (Horde)
 				qg = 13429,	-- Nardstrum Copperpinch <Smokywood Pastures>
 				coord = { 68.0, 39.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 			}),
 			q(8762, {	-- Metzen the Reindeer (Alliance)
 				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				maps = { MAP.SEARING_GORGE, MAP.TANARIS },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Find Metzen the Reindeer and rescue him
 						provider = { "n", 15664 },	-- Metzen the Reindeer
@@ -265,8 +265,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				maps = { MAP.SEARING_GORGE, MAP.TANARIS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Find Metzen the Reindeer and rescue him
 						provider = { "n", 15664 },	-- Metzen the Reindeer
@@ -332,34 +332,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 			}),
 			q(6963, {	-- Stolen Winter Veil Treats (Horde)
 				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 			}),
 			q(7063, {	-- The Feast of Winter Veil (Alliance)
 				sourceQuest = 7062,	-- The Reason for the Season (Alliance)
 				qg = 2916,	-- Historian Karnik
 				coord = { 77.2, 11.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
+				lvl = 10,
 				isYearly = true,
 				qi = 17735,	-- The Feast of Winter Veil (QI!)
-				lvl = 10,
 			}),
 			q(7061, {	-- The Feast of Winter Veil (Horde)
 				sourceQuest = 6964,	-- The Reason for the Season (Horde)
 				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				coord = { 38.6, 36.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				lvl = 10,
 				isYearly = true,
 				qi = 17735,	-- The Feast of Winter Veil (QI!)
-				lvl = 10,
 			}),
 			q(8763, {	-- The Hero of the Day (Alliance)
 				description = 'Requires Cooking Skill Level 300',
@@ -372,8 +372,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = { i(21213) },	-- Preserved Holly
 			}),
 			q(8799, {	-- The Hero of the Day (Horde)
@@ -387,24 +387,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				},
 				requireSkill = COOKING,
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 40,
+				isYearly = true,
 				groups = { i(21213) },	-- Preserved Holly
 			}),
 			q(7062, {	-- The Reason for the Season (Alliance)
 				qg = 1365,	-- Goli Krumn
 				coord = { 30.2, 59.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = { i(17735) },	-- The Feast of Winter Veil (QI!)
 			}),
 			q(6964, {	-- The Reason for the Season (Horde)
 				qg = 9550,	-- Furmund
 				coord = { 51.0, 71.1, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = { i(17735) },	-- The Feast of Winter Veil (QI!)
 			}),
 			{	-- Treats for Greatfather Winter
