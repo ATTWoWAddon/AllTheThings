@@ -614,7 +614,7 @@ local function PartialSyncCharacterData(data, key)
 		end
 	end
 end
--- Used for data which has Rank-based collection where a higher rank supercedes/implies collection of any lower ranks
+-- Used for data which has Rank-based collection where a higher rank supersedes/implies collection of any lower ranks
 local function RankSyncCharacterData(data, key)
 	local characterData
 	wipe(data);
@@ -1293,7 +1293,7 @@ dser.numnumtbl = deserializeKV
 end
 local defaultDeserializer = function(field, currentValue, data)
 	if #data > 1 then
-		print("DEFAULT DESERIALIZER ENCOUNTERED MORE THAN ONE DATA FOR FIELD");
+		print("DEFAULT DESERIALIZER ENCOUNTERED MORE THAN ONE VALUE FOR FIELD");
 		print("  ", field, #data);
 		for i=1,#data,1 do
 			print("   ", data[i]);
@@ -1538,7 +1538,7 @@ local serializers = setmetatable({
 	Lockouts = function(field, value, timeStamp, lastUpdated)
 		local any, str = false, field;
 		for savedInstanceID,difficulties in pairs(value) do
-			-- Escape commas and colons from isntance names.
+			-- Escape commas and colons from instance names.
 			str = str .. ";" .. tostring(savedInstanceID):gsub(":", "%%3A"):gsub(",", "%%2C");
 			any = true;
 			for difficultyID,difficulty in pairs(difficulties) do
@@ -2629,7 +2629,7 @@ app:CreateWindow("Account Management", {
 		CurrentCharacter = app.CurrentCharacter;
 		EnableBattleNet = settings.EnableBattleNet;
 
-		-- Delete some things I thought were going to be useful but ARENT THANKS BLIZZARD.
+		-- Delete some things I thought were going to be useful but AREN'T THANKS BLIZZARD.
 		-- We do actually use gameAccountID, but its value changes between game sessions and is unreliable.
 		for guid,character in pairs(CharacterData) do
 			character.Identifier = NormalizeLinkedCharacterIdentifier(character.name, character.realm);

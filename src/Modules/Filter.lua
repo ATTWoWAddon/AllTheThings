@@ -412,7 +412,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 	DefineToggleFilter("ExpansionContent", AccountFilters,
 	function(item)
-		-- 'awp' is consolidated when parsed, meaning all common values flow upwards in hierachy
+		-- 'awp' is consolidated when parsed, meaning all common values flow upwards in hierarchy
 		-- so if a Thing has an explicit 'awp' we know that it and all sub-content match that awp
 		local awp = item.awp
 		if awp then

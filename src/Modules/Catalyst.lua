@@ -344,7 +344,7 @@ local function GetCatalysts(data)
 			-- app.PrintDebug("-->",bonusID)
 			-- use the mapped upgradeTrack for the bonusID
 			upgradeTrackID = PossibleCatalystBonusIDLookups.BonusUpgradeTracks[bonusID or remappedBonusID]
-			-- then we need to scan the current tooltip to determine whether the item showing an actual upgrade level above it's mapped
+			-- then we need to scan the current tooltip to determine whether the item is showing an actual upgrade level above its mapped
 			-- upgrade track ID because THANKS BLIZZARD clearly there's no reason I would want to actually KNOW that information from an API
 			-- which says "GetItemUpgradeInfo" just because the item cannot be upgraded "further", the "current" upgrade level is still
 			-- IMPORTANT to some game functionality... reeeee

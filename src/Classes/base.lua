@@ -395,7 +395,7 @@ app.ExtendBaseClassHandler = function(field, handler)
 	end
 end
 
--- Create a dictionary of classes by their classKey, for reference in generic object contructors.
+-- Create a dictionary of classes by their classKey, for reference in generic object constructors.
 local classesByKey = setmetatable({}, {
 	__newindex = function(t, key, value)
 		if rawget(t, key) then
@@ -1043,7 +1043,7 @@ app.CreateCache = function(idField, className)
 		--]]
 		_t = cache.GetCached(t);
 		if _t then
-			-- set a default provided cache value if any default function was provided and evalutes to a value
+			-- set a default provided cache value if any default function was provided and evaluates to a value
 			v = _t[field];
 			if v ~= nil then return v end
 

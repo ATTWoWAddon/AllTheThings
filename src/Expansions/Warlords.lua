@@ -233,7 +233,7 @@ local function common_wod_dungeon_drop(ResolveFunctions)
 		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.COMMON_DUNGEON_DROPS);	-- Common Dungeon Drops
 		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
 		where(finalized, searchResults, o, "where", "difficultyID", difficultyID);	-- Normal/Heroic/Mythic/Timewalking
-		pop(finalized, searchResults);	-- Discard the Diffculty Header and acquire all of their children.
+		pop(finalized, searchResults);	-- Discard the Difficulty Header and acquire all of their children.
 		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
 	end
 end

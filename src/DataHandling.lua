@@ -38,7 +38,7 @@ local SetGroupVisibility, SetThingVisibility, BaseSetGroupVisibility, BaseSetThi
 local function SetDefaultVisibility(parent, group)
 	group.visible = true
 end
--- Visibilty Checks
+-- Visibility Checks
 -- nil - the check doesn't result in a visible outcome
 -- true - the check resulted in a visible outcome
 -- 2 - the check resulted in a visible outcome and should force the parent to also persist visibility
@@ -212,7 +212,7 @@ local function UpdateGroup(group, parent)
 	local isCost = group.isCost
 	local valid = isCost or group.forceShow or group.wasFilled
 	-- if valid and debug then app.PrintDebug("Pre-valid group as from cost/forceShow/wasFilled/upgrade",group.isCost,group.forceShow,group.wasFilled,group.isUpgrade,app:SearchLink(group)) end
-	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
+	-- A group with a source parent means it has a different 'real' hierarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
 	if not valid then
 		if group.sourceParent then

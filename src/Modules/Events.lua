@@ -470,7 +470,7 @@ if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 		-- app.PrintDebug("F:TR",group.e,TimerunningSeasonEventID,group.__type,ThingKeys[group.key],group.e == TimerunningSeasonEventID)
 		if not ThingKeys[group.key] then return true end
 
-		-- Things which are NOT Timerunning need to recusrively see if they should be included due to nested Timerunning Things
+		-- Things which are NOT Timerunning need to recursively see if they should be included due to nested Timerunning Things
 		return CheckNestedTimerunning(group)
 	end
 	local function NotTimerunning(group)

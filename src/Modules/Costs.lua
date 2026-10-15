@@ -1097,7 +1097,7 @@ local function BuildCost(group)
 end
 
 local RefreshCollectorHooked
--- Begins an async operation using a Runner to progressively accummulate the entirety of the 'cost'/'provider'
+-- Begins an async operation using a Runner to progressively accumulate the entirety of the 'cost'/'provider'
 -- information contained by all groups within the provided 'group'
 -- and captures the information into trackable Cost groups under a 'Total Costs' header
 local function BuildTotalCost(group)

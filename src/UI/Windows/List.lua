@@ -374,7 +374,7 @@ app:CreateWindow("List", {
 		if data and data.OnUpdate then
 			data:OnUpdate()
 		end
-		-- requires Visibility filter to check .visibile for display of the group
+		-- requires Visibility filter to check .visible for display of the group
 		local filterVisible = app.Modules.Filter.Get.Visible();
 		app.Modules.Filter.Set.Visible(true);
 		self:DefaultUpdate(...);
