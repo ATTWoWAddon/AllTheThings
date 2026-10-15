@@ -1415,7 +1415,7 @@ local InformationTypes = {
 	CreateInformationType("flightpathID", { text = L.FLIGHT_PATH_ID }),
 	CreateInformationType("followerID", { minBuild = 60000, text = L.FOLLOWER_ID }),
 	CreateInformationType("headerID", { text = L.HEADER_ID }),
-	CreateInformationType("illusionID", { text = L.ILLUSION_ID }),
+	CreateInformationType("illusionID", { minBuild = 70000, text = L.ILLUSION_ID }),
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
