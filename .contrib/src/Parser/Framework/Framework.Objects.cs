@@ -2148,7 +2148,7 @@ end");
                             item[field] = newListOfLists;
                             break;
                         }
-                    // List O' List O' Objects Data Type Fields that could also be numberical values.
+                    // List O' List O' Objects Data Type Fields that could also be numerical values.
                     case Cost.Field:
                         Cost.Merge(item, value);
                         break;
@@ -2548,7 +2548,7 @@ end");
                     // For criteria, also keep track of the Item IDs to allow more than one per list.
                     if (data2.TryGetValue("itemID", out object fieldRef) && fieldRef.TryConvert(out decimal itemID))
                     {
-                        // The data we're merging has a Item ID. (we only want to merge them if they're the same!)
+                        // The data we're merging has an Item ID. (we only want to merge them if they're the same!)
                         return container.FindObject(mostSignificantID, id, "itemID", itemID);
                     }
                     else if (data2.TryGetValue("achID", out fieldRef) && fieldRef.TryConvert(out decimal achID))
@@ -2624,7 +2624,7 @@ end");
                 if (list != null)
                     return list;
 
-                // incase a single value is provided instead of a list
+                // in case a single value is provided instead of a list
                 bool found = false;
                 if (value is int valint)
                 {

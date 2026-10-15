@@ -72,7 +72,7 @@ namespace ATT
             }
 
             /// <summary>
-            /// All of the items in the database witout any references.
+            /// All of the items in the database without any references.
             /// </summary>
             public static IEnumerable<IDictionary<string, object>> AllItemsWithoutReferences
             {
@@ -1021,7 +1021,7 @@ namespace ATT
                         ItemModifiedAppearanceID = itemModifiedAppearance.ID;
                         if (itemModifiedAppearances.Count == 1)
                         {
-                            // If its the only one, ignore it. This is common for old items that don't conform to modID/bonusID.
+                            // If it's the only one, ignore it. This is common for old items that don't conform to modID/bonusID.
                             ItemAppearanceModifierID = itemModifiedAppearance.ItemAppearanceModifierID;
                         }
                     }
@@ -1121,7 +1121,7 @@ namespace ATT
                     var appearanceData = itemModifiedAppearances.FirstOrDefault();
                     itemID = appearanceData.ItemID;
 
-                    // Additonally, as of 11.2 we now have Ensembles which contain multiple Sources for the same ItemID, so we need
+                    // Additionally, as of 11.2 we now have Ensembles which contain multiple Sources for the same ItemID, so we need
                     // to try and determine the proper modID to generate accurate in-game tooltips for these ensemble-based items
                     var modID = appearanceData.ExpectedModID;
                     if (modID != 0)

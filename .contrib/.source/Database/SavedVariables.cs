@@ -247,7 +247,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Parse the Saved Variables into a more usuable format.
+        /// Parse the Saved Variables into a more usable format.
         /// </summary>
         /// <param name="root">The Saved Variables Root Folder for the Account.</param>
         /// <returns>The less raw data.</returns>

@@ -291,7 +291,7 @@ def read_file_in_order(file_path: str) -> list[str]:
 
 """Programme"""
 def check_build_difference() -> None:
-    """Check difference between two text files (dropdown options from wago and whats currently in Builds.txt)"""
+    """Check difference between two text files (dropdown options from wago and what's currently in Builds.txt)"""
     # Paths to your dropdown-options.txt and Builds.txt files
     dropdown_file_path = 'dropdown-options.txt'  # Adjust this path if needed
     builds_file_path = 'Builds.txt'              # Adjust this path if needed

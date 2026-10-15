@@ -96,7 +96,7 @@ namespace ATT
                 return;
             }
 
-            // If there is no most signficant type, then we write it generically.
+            // If there is no most significant type, then we write it generically.
             // Open Bracket for beginning of the Dictionary.
             builder.Append('{');
 

@@ -181,7 +181,7 @@ namespace ATT.FieldTypes
                         return null;
                     case ChangeType.DELETED:
                     case ChangeType.REMOVED:
-                        // If the first entry here is removed/deleted, we want to check if it is eventually readded
+                        // If the first entry here is removed/deleted, we want to check if it is eventually re-added
                         for (int i = 1; i < EntryCount; i++)
                         {
                             // If there is an added entry, we will use this as the second relevant entry
