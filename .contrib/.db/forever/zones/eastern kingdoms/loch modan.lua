@@ -53,7 +53,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 2563,	-- Strange Smelling Powder
+				qi = 2563,	-- Strange Smelling Powder (QI!)
 				lvl = 16,
 			}),
 			q(274, {	-- A Dark Threat Looms (4/7)
@@ -61,7 +61,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1073,	-- Ashlan Stonesmirk
 				coord = { 50.0, 18.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 2609,	-- Disarming Colloid
+				qi = 2609,	-- Disarming Colloid (QI!)
 				lvl = 16,
 			}),
 			q(278, {	-- A Dark Threat Looms (5/7)
@@ -105,7 +105,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1093,	-- Chief Engineer Hinderweir VII
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2610,	-- Disarming Mixture
+				qi = 2610,	-- Disarming Mixture (QI!)
 				lvl = 16,
 			}),
 			q(283, {	-- A Dark Threat Looms (7/7)
@@ -234,7 +234,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 31.8, 86.2, MAP.LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 253247,	-- Banner of Ironforge
+				qi = 253247,	-- Banner of Ironforge (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Headsplitter slain
 						provider = { "n", 269185 },	-- Headsplitter
@@ -318,7 +318,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1344,	-- Prospector Ironband
 				coord = { 65.9, 65.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2637,	-- Ironbrand's Progress Report
+				qi = 2637,	-- Ironbrand's Progress Report (QI!)
 				lvl = 10,
 			}),
 			q(307, {	-- Filthy Paws
@@ -374,7 +374,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1681,	-- Brock Stoneseeker
 				coord = { 37.0, 47.8, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
-				qi = 16310,	-- Brock's List (PQI!)
+				qi = 16310,	-- Brock's List (QI!)
 				lvl = 10,
 			}),
 			q(224, {	-- In Defense of the King's Lands (1/4)
@@ -537,7 +537,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1105,	-- Jern Hornhelm
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2637,	-- Ironbrand's Progress Report
+				qi = 2637,	-- Ironbrand's Progress Report (QI!)
 				lvl = 10,
 			}),
 			q(468, {	-- Report to Mountaineer Rockgar
@@ -559,7 +559,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1572,	-- Thorgrum Borrelson
 				coord = { 33.9, 50.9, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
-				qi = 16310,	-- Brock's List
+				qi = 16310,	-- Brock's List (QI!)
 				lvl = 10,
 			}),
 			q(86614, {	-- Silver of the Waves
@@ -567,7 +567,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 50.6, 53.4, MAP.LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 278051,	-- Monogrammed Silver Hair Clip
+				qi = 278051,	-- Monogrammed Silver Hair Clip (QI!)
 				lvl = 12,
 				groups = {
 					i(281256),	-- Repurposed Hair Band
@@ -595,7 +595,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 24.7, 18.3, MAP.LOCH_MODAN },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 5998,	-- Stormpike's Request
+				qi = 5998,	-- Stormpike's Request (QI!)
 				lvl = 9,
 			}),
 			q(455, {	-- The Algaz Gauntlet
@@ -700,7 +700,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1187,	-- Daryl the Youngling
 				coord = { 83.4, 65.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 2713,	-- Ol' Sooty's Head
+				qi = 2713,	-- Ol' Sooty's Head (QI!)
 				lvl = 15,
 				groups = {
 					i(3574),	-- Hunting Ammo Sack

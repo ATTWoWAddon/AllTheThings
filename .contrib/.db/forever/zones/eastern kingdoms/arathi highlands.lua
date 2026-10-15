@@ -85,7 +85,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2788,	-- Apprentice Kryten
 				coord = { 46.2, 47.8, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4529,	-- Enchanted Agate
+				qi = 4529,	-- Enchanted Agate (QI!)
 				lvl = 30,
 			}),
 			q(696, {	-- Attack on the Tower
@@ -302,7 +302,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2706,	-- Tor'gan
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
-				qi = 4528,	-- Tor'gan's Orb
+				qi = 4528,	-- Tor'gan's Orb (QI!)
 				lvl = 29,
 			}),
 			q(847, {	-- Guile of the Raptor (3/3)
@@ -387,7 +387,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 43.2, 92.6, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 4441,	-- MacKreel's Moonshine
+				qi = 4441,	-- MacKreel's Moonshine (QI!)
 				lvl = 28,
 			}),
 			q(690, {	-- Malin's Request (1/2)
@@ -403,7 +403,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 46.6, 47.0, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 4533,	-- Sealed Letter to Archmage Malin
+				qi = 4533,	-- Sealed Letter to Archmage Malin (QI!)
 				lvl = 30,
 				groups = {
 					i(4975),	-- Vigilant Buckler
@@ -459,7 +459,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2706,	-- Tor'gan
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
-				qi = 4526,	-- Raptor Talon Amulet
+				qi = 4526,	-- Raptor Talon Amulet (QI!)
 				lvl = 29,
 			}),
 			q(675, {	-- Raising Spirits (3/3)
@@ -505,7 +505,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2706,	-- Tor'gan
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
-				qi = 4453,	-- Sigil of Thoradin
+				qi = 4453,	-- Sigil of Thoradin (QI!)
 				lvl = 32,
 			}),
 			q(644, {	-- Sigil of Trollbane
@@ -628,7 +628,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				sourceQuest = 666,	-- Sunken Treasure (2/5)
 				qg = 2774,	-- Doctor Draxlegauge
 				coord = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
-				qi = 4493,	-- Elven Gems
+				qi = 4493,	-- Elven Gems (QI!)
 				lvl = 35,
 			}),
 			q(669, {	-- Sunken Treasure (4/5)
@@ -636,14 +636,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2610,	-- Shakes O'Breen
 				coord = { 32.2, 81.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
-				qi = 4502,	-- Sample Elven Gem
+				qi = 4502,	-- Sample Elven Gem (QI!)
 				lvl = 35,
 			}),
 			q(670, {	-- Sunken Treasure (5/5)
 				sourceQuest = 669,	-- Sunken Treasure (4/5)
 				qg = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
 				coord = { 27.2, 77.0, MAP.STRANGLETHORN_VALE },
-				qi = 4494,	-- Seahorn's Sealed Letter
+				qi = 4494,	-- Seahorn's Sealed Letter (QI!)
 				lvl = 35,
 			}),
 			q(640, {	-- The Broken Sigil

@@ -511,7 +511,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 29.2, 68.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 6,
-				qi = 19338,	-- Free Ticket Voucher
+				qi = 19338,	-- Free Ticket Voucher (QI!)
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
@@ -521,7 +521,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 52.2, 66.0, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 6,
-				qi = 19338,	-- Free Ticket Voucher
+				qi = 19338,	-- Free Ticket Voucher (QI!)
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},

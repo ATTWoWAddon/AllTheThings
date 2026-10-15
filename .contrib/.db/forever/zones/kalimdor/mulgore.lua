@@ -87,7 +87,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 44.8, 76.2, MAP.MULGORE },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
-						qi = 6635,	-- Earth Sapta
+						qi = 6635,	-- Earth Sapta (QI!)
 						lvl = 4,
 					}),
 					q(1521, {	-- Call of Earth (3/3)
@@ -97,7 +97,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 53.8, 80.4, MAP.MULGORE },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
-						qi = 6656,	-- Rough Quartz
+						qi = 6656,	-- Rough Quartz (QI!)
 						lvl = 4,
 						groups = {
 							recipe(8071),	-- Stoneskin Totem
@@ -125,7 +125,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { HUNTER },
-						qi = 9565,	-- Etched Note
+						qi = 9565,	-- Etched Note (QI!)
 					}),
 					q(95805, {	-- Grace of An'she and Mu'sha
 						qg = 2982,	-- Seer Graytongue
@@ -177,7 +177,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						qg = 2981,	-- Chief Hawkwind
 						coord = { 44.2, 76.1, MAP.MULGORE },
 						races = HORDE_ONLY,
-						qi = 4783,	-- Totem of Hawkwind
+						qi = 4783,	-- Totem of Hawkwind (QI!)
 					}),
 					q(3093, {	-- Rune-Inscribed Note
 						sourceQuest = 747,	-- The Hunt Begins
@@ -185,7 +185,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coords = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { SHAMAN },
-						qi = 9552,	-- Rune-Inscribed Note
+						qi = 9552,	-- Rune-Inscribed Note (QI!)
 					}),
 					q(3091, {	-- Simple Note
 						sourceQuest = 747,	-- The Hunt Begins
@@ -193,7 +193,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coords = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { WARRIOR },
-						qi = 9547,	-- Simple Note
+						qi = 9547,	-- Simple Note (QI!)
 					}),
 					q(96659, {	-- The Adventurer [Mulgore]
 						--["sourceQuest"] = ,	-- 
@@ -201,7 +201,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 44.2, 76.0, MAP.MULGORE },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
-						qi = 275019,	-- Supply Bundle (PQI!)
+						qi = 275019,	-- Supply Bundle (QI!)
 						lvl = 4,
 					}),
 					q(780, {	-- The Battleboars
@@ -264,7 +264,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 44.9, 77.1, MAP.MULGORE },
 						races = { TAUREN },
 						classes = { DRUID },
-						qi = 9581,	-- Verdant Note
+						qi = 9581,	-- Verdant Note (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -353,7 +353,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qg = 6775,	-- Antur Fallow
 				coord = { 38.6, 81.6, MAP.MULGORE },
 				races = HORDE_ONLY,
-				qi = 7626,	-- Bundle of Furs
+				qi = 7626,	-- Bundle of Furs (QI!)
 			}),
 			q(97927, {	-- Camping 101: Alchemy [Mulgore]
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
@@ -757,7 +757,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qg = 3054,	-- Zarlman Two-Moons
 				coord = { 47.8, 57.5, MAP.MULGORE },
 				races = HORDE_ONLY,
-				qi = 4823,	-- Water of the Seers
+				qi = 4823,	-- Water of the Seers (QI!)
 				lvl = 3,
 				groups = {
 					i(4906),	-- Rainwalker Boots
@@ -816,7 +816,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { ORC, TAUREN, TROLL },
-				qi = 206159,	-- Venture Co Disguise
+				qi = 206159,	-- Venture Co Disguise (QI!)
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/5 Seaforium Mining Charge
@@ -830,7 +830,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { ORC, TAUREN, TROLL },
-				qi = 206176,	-- Mortar and Pestle
+				qi = 206176,	-- Mortar and Pestle (QI!)
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Pine Salve
@@ -849,7 +849,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				classes = { HUNTER, SHAMAN, DRUID },
-				qi = 206344,	-- Knife Set
+				qi = 206344,	-- Knife Set (QI!)
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
@@ -911,7 +911,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 32.4, 20.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				qi = 273015,	-- Toxin Extractor
+				qi = 273015,	-- Toxin Extractor (QI!)
 				lvl = 23,	-- Required level; quest level 30.
 				groups = {
 					objective(1, {	-- 0/5 Gloomrise Toxin Sample
@@ -1127,7 +1127,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 48.5, 60.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { UNDEAD, TAUREN },
-				qi = 281139,	-- Thunderhorn's Report
+				qi = 281139,	-- Thunderhorn's Report (QI!)
 				lvl = 4,
 				groups = {
 					i(3443),	-- Ceremonial Tomahawk
@@ -1266,7 +1266,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 57.6, 63.2, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				qi = 286104,	-- Longwalker Malah's Report
+				qi = 286104,	-- Longwalker Malah's Report (QI!)
 				lvl = 4,
 			}),
 			q(99082, {	-- The High Chieftain
@@ -1291,7 +1291,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 46.6, 63.0, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				qi = 286104,	-- Longwalker Malah's Report
+				qi = 286104,	-- Longwalker Malah's Report (QI!)
 				lvl = 4,
 				groups = {
 					objective(1, {	-- Bring Longwalker Malah's Report to Baine Bloodhoof

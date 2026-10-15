@@ -56,7 +56,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				qg = 3693,	-- Terenthis
 				coord = { 39.4, 43.5, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
-				qi = 5387,	-- Enchanted Moonstalker Cloak
+				qi = 5387,	-- Enchanted Moonstalker Cloak (QI!)
 				lvl = 10,
 			}),
 			q(4812, {	-- As Water Cascades
@@ -421,7 +421,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
-				qi = 279045,	-- Thundris' Letter (PQI!)
+				qi = 279045,	-- Thundris' Letter (QI!)
 				lvl = 13,
 			}),
 			q(963, {	-- For Love Eternal
@@ -562,7 +562,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				qg = 1646,	-- Baros Alexston <City Architect>
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279048,	-- Alexston's Reply (PQI!)
+				qi = 279048,	-- Alexston's Reply (QI!)
 				lvl = 13,
 				groups = {
 					i(282286),	-- Shipwright's Satchel
@@ -691,7 +691,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				qi = 4654,	-- Mysterious Fossil
+				qi = 4654,	-- Mysterious Fossil (QI!)
 				lvl = 15,
 				groups = {
 					i(5629),	-- Hammerfist Gloves
@@ -863,7 +863,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 55.0, 24.9, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
-				qi = 5354,	-- Letter to Delgren
+				qi = 5354,	-- Letter to Delgren (QI!)
 				lvl = 13,
 			}),
 			q(1143, {	-- The Tower of Althalaxx (8/9)

@@ -137,7 +137,7 @@ root(ROOTS.Instances, {
 					qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					coord = { 48.4, 69.4, MAP.UNDERCITY },
 					races = HORDE_ONLY,
-					qi = 268518,	-- Head of the Baron (PQI!)
+					qi = 268518,	-- Head of the Baron (QI!)
 					lvl = 16,
 				}),
 				q(97290, {	-- Unending Torment (3/5)

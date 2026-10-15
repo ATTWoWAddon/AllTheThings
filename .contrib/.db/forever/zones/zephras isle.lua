@@ -109,7 +109,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
-				qi = 282420,	-- Folder Parchment (PQI!)
+				qi = 282420,	-- Folder Parchment (QI!)
 				lvl = 2,
 			}),
 			q(92481, {	-- A Student of the Arcane
@@ -483,7 +483,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
-				qi = 254584,	-- Index Esoteria (PQI!)
+				qi = 254584,	-- Index Esoteria (QI!)
 				groups = {
 					objective(1, {	-- 0/6 Gather Data on Elemental Currents
 						provider = { "o", 697118 },	-- Windstone Formation
@@ -559,7 +559,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
-				qi = 263491,	-- Shadowsong Family Signet (PQI!)
+				qi = 263491,	-- Shadowsong Family Signet (QI!)
 				groups = {
 					objective(1, {	-- Deliver the Shadowsong Family Signet to Talaanis Shadowsong in Valanaar.
 						provider = { "n", 252476 },	-- Talaanis Shadowsong
@@ -682,7 +682,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
-				qi = 253666,	-- Flutterfly Swatter (PQI!)
+				qi = 253666,	-- Flutterfly Swatter (QI!)
 				groups = {
 					objective(1, {	-- 0/5 Flutterfly Dust
 						providers = {
@@ -1145,7 +1145,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
-				qi = 265782,	-- Mysterious Orders (PQI!)
+				qi = 265782,	-- Mysterious Orders (QI!)
 			}),
 			q(93836, {	-- The Fate of Zephras
 				sourceQuest = 92646,	-- Confront Lorthuna
@@ -1372,7 +1372,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 6,
-				qi = 253152,	-- Aonda's Written Report (PQI!)
+				qi = 253152,	-- Aonda's Written Report (QI!)
 				groups = {
 					i(263414),	-- Traveler's Wraps
 					i(263417),	-- Adventurer's Cloak
@@ -1385,7 +1385,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 6,
-				qi = 253152,	-- Aonda's Written Report (PQI!)
+				qi = 253152,	-- Aonda's Written Report (QI!)
 				groups = {
 					objective(1, {	-- Deliver Aonda's Written Report to Valennia Stormfist in Valanaar.
 						provider = { "n", 252383 },	-- Valennia Stormfist
@@ -1420,7 +1420,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 253372,	-- Dead Cultist
 				coord = { 56.0, 58.8, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
-				qi = 273852,	-- Glowing Crystal (PQI!)
+				qi = 273852,	-- Glowing Crystal (QI!)
 				groups = {
 					i(263330),	-- Tracker's Pants
 					i(263332),	-- Elder's Tunic

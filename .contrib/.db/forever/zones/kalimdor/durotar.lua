@@ -56,7 +56,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.4, 69.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
-						qi = 6635,	-- Earth Sapta
+						qi = 6635,	-- Earth Sapta (QI!)
 						lvl = 4,
 					}),
 					q(1518, {	-- Call of Earth (3/3)
@@ -66,7 +66,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 44.0, 76.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						classes = { SHAMAN },
-						qi = 6656,	-- Rough Quartz
+						qi = 6656,	-- Rough Quartz (QI!)
 						lvl = 4,
 						groups = {
 							recipe(8071),	-- Stoneskin Totem
@@ -106,7 +106,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { ROGUE },
-						qi = 9560,	-- Encrypted Parchment
+						qi = 9560,	-- Encrypted Parchment (QI!)
 					}),
 					q(3083, {	-- Encrypted Tablet
 						sourceQuest = 788,	-- Cutting Teeth
@@ -114,7 +114,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { ROGUE },
-						qi = 9554,	-- Encrypted Tablet
+						qi = 9554,	-- Encrypted Tablet (QI!)
 					}),
 					q(3087, {	-- Etched Parchment
 						sourceQuest = 788,	-- Cutting Teeth
@@ -122,7 +122,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { HUNTER },
-						qi = 9553,	-- Etched Parchment
+						qi = 9553,	-- Etched Parchment (QI!)
 					}),
 					q(3082, {	-- Etched Tablet
 						sourceQuest = 788,	-- Cutting Teeth
@@ -130,7 +130,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { HUNTER },
-						qi = 9564,	-- Etched Tablet
+						qi = 9564,	-- Etched Tablet (QI!)
 					}),
 					q(4402, {	-- Galgar's Cactus Apple Surprise
 						sourceQuest = 788,	-- Cutting Teeth
@@ -156,7 +156,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { MAGE },
-						qi = 9575,	-- Glyphic Tablet
+						qi = 9575,	-- Glyphic Tablet (QI!)
 					}),
 					q(3085, {	-- Hallowed Tablet
 						sourceQuest = 788,	-- Cutting Teeth
@@ -164,7 +164,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { PRIEST },
-						qi = 9561,	-- Hallowed Tablet
+						qi = 9561,	-- Hallowed Tablet (QI!)
 					}),
 					q(5649, {	-- In Favor of Spirituality
 						qg = 3707,	-- Ken'jai
@@ -197,7 +197,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { SHAMAN },
-						qi = 9568,	-- Rune-Inscribed Parchment
+						qi = 9568,	-- Rune-Inscribed Parchment (QI!)
 					}),
 					q(3084, {	-- Rune-Inscribed Tablet
 						sourceQuest = 788,	-- Cutting Teeth
@@ -205,7 +205,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { SHAMAN },
-						qi = 9562,	-- Rune-Inscribed Tablet
+						qi = 9562,	-- Rune-Inscribed Tablet (QI!)
 					}),
 					q(790, {	-- Sarkoth (1/2)
 						qg = 3287,	-- Hana'zua
@@ -235,7 +235,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC },
 						classes = { WARRIOR },
-						qi = 12635,	-- Simple Parchment
+						qi = 12635,	-- Simple Parchment (QI!)
 					}),
 					q(3065, {	-- Simple Tablet
 						sourceQuest = 788,	-- Cutting Teeth
@@ -243,7 +243,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { WARRIOR },
-						qi = 6488,	-- Simple Tablet
+						qi = 6488,	-- Simple Tablet (QI!)
 					}),
 					q(789, {	-- Sting of the Scorpid
 						sourceQuest = 788,	-- Cutting Teeth
@@ -268,7 +268,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coords = { 42.0, 68.4, MAP.DUROTAR },
 						races = { ORC, TROLL },
 						classes = { WARLOCK },
-						qi = 9579,	-- Tainted Parchment
+						qi = 9579,	-- Tainted Parchment (QI!)
 					}),
 					q(6394, {	-- Thazz'ril's Pick
 						sourceQuest = 5441,	-- Lazy Peons
@@ -292,7 +292,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.82, 69.14, MAP.DUROTAR },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
-						qi = 275022,	-- Lost Journal (PQI!)
+						qi = 275022,	-- Lost Journal (QI!)
 						lvl = 4,
 					}),
 					q(792, {	-- Vile Familiars
@@ -436,7 +436,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 6786,	-- Ukor
 				coord = { 52.0, 68.2, MAP.DUROTAR },
 				races = HORDE_ONLY,
-				qi = 7629,	-- Ukor's Burden
+				qi = 7629,	-- Ukor's Burden (QI!)
 			}),
 			q(97281, {	-- A Simmering Storm
 				provider = { "i", 277661 },	-- Dull Storm Orb
@@ -723,7 +723,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				coord = { 50.8, 43.5, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
-				qi = 4992,	-- Recruitment Letter
+				qi = 4992,	-- Recruitment Letter (QI!)
 				lvl = 10,
 			}),
 			q(842, {	-- Crossroads Conscription
@@ -731,7 +731,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 3337,	-- Kargal Battlescar
 				coord = { 62.26, 19.37, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 4995,	-- Signed Recruitment Letter
+				qi = 4995,	-- Signed Recruitment Letter (QI!)
 				lvl = 10,
 			}),
 			q(806, {	-- Dark Storms
@@ -1009,7 +1009,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 3208,	-- Margoz
 				coord = { 56.4, 20.0, MAP.DUROTAR },
 				races = HORDE_ONLY,
-				qi = 6658,	-- Example Collar
+				qi = 6658,	-- Example Collar (QI!)
 				lvl = 4,
 			}),
 			q(817, {	-- Practical Prey
@@ -1191,7 +1191,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 3139,	-- Gar'Thok
 				coord = { 52.0, 43.4, MAP.DUROTAR },
 				races = HORDE_ONLY,
-				qi = 4883,	-- Admiral Proudmoore's Orders
+				qi = 4883,	-- Admiral Proudmoore's Orders (QI!)
 			}),
 			q(924, {	-- The Demon Seed
 				sourceQuest = 809,	-- Ak'Zeloth

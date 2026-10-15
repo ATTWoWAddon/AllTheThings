@@ -77,7 +77,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { DWARF },
 						classes = { SHAMAN },
-						qi = 282400,	-- Archaic Rune (PQI!)
+						qi = 282400,	-- Archaic Rune (QI!)
 						lvl = 1,
 					}),
 					q(1599, {	-- Beginnings
@@ -99,7 +99,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qg = 836,	-- Durnan Furcutter
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 10440,	-- Nori's Mug
+						qi = 10440,	-- Nori's Mug (QI!)
 						lvl = 4,
 					}),
 					q(94373, {	-- Call of Earth (1/3)
@@ -124,7 +124,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { DWARF },
 						classes = { SHAMAN },
-						qi = 6635,	-- Earth Sapta
+						qi = 6635,	-- Earth Sapta (QI!)
 						lvl = 4,
 					}),
 					q(94375, {	-- Call of Earth (3/3)
@@ -134,7 +134,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { DWARF },
 						classes = { SHAMAN },
-						qi = 6656,	-- Rough Quartz
+						qi = 6656,	-- Rough Quartz (QI!)
 						lvl = 4,
 						groups = {
 							i(5175, {	-- Earth Totem
@@ -147,14 +147,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qg = 658,	-- Sten Stoutarm
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 2187,	-- A Stack of Letters (PQI!)
+						qi = 2187,	-- A Stack of Letters (QI!)
 					}),
 					q(234, {	-- Coldridge Valley Mail Delivery (2/2)
 						sourceQuest = 233,	-- Coldridge Valley Mail Delivery (1/2)
 						qg = 714,	-- Talin Keeneye
 						coord = { 22.6, 71.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 2188,	-- A Letter to Grelin Whitebeard (PQI!)
+						qi = 2188,	-- A Letter to Grelin Whitebeard (QI!)
 						groups = {
 							i(247840),	-- Mining for Dummies
 							i(247841),	-- Wild Harvest
@@ -167,7 +167,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { PALADIN },
-						qi = 9563,	-- Consecrated Rune (PQI!)
+						qi = 9563,	-- Consecrated Rune (QI!)
 					}),
 					q(179, {	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
@@ -192,7 +192,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { ROGUE },
-						qi = 9558,	-- Encrypted Memorandum (PQI!)
+						qi = 9558,	-- Encrypted Memorandum (QI!)
 					}),
 					q(3109, {	-- Encrypted Rune
 						sourceQuest = 179,	-- Dwarven Outfitters
@@ -200,7 +200,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord ={ 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { ROGUE },
-						qi = 9550,	-- Encrypted Rune (PQI!)
+						qi = 9550,	-- Encrypted Rune (QI!)
 					}),
 					q(3108, {	-- Etched Rune
 						sourceQuest = 179,	-- Dwarven Outfitters
@@ -208,7 +208,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { HUNTER },
-						qi = 9566,	-- Etched Rune (PQI!)
+						qi = 9566,	-- Etched Rune (QI!)
 					}),
 					q(3114, {	-- Glyphic Memorandum
 						sourceQuest = 179,	-- Dwarven Outfitters
@@ -216,7 +216,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { MAGE },
-						qi = 9573,	-- Glyphic Memorandum (PQI!)
+						qi = 9573,	-- Glyphic Memorandum (QI!)
 					}),
 					q(97277, {	-- Grund and Gozwin
 						qg = 2756,	-- Grund Drokda
@@ -245,13 +245,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { PRIEST },
-						qi = 9556,	-- Hallowed Rune (PQI!)
+						qi = 9556,	-- Hallowed Rune (QI!)
 					}),
 					q(3364, {	-- Scalding Mornbrew Delivery
 						qg = 12738,	-- Nori Pridedrift
 						coord = { 25.0, 75.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 10439,	-- Durnan's Scalding Mornbrew (PQI!)
+						qi = 10439,	-- Durnan's Scalding Mornbrew (QI!)
 						lvl = 4,
 					}),
 					q(282, {	-- Senir's Observations (1/2)
@@ -260,7 +260,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qg = 786,	-- Grelin Whitebeard
 						coord = { 25.0, 75.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 2619,	-- Grelin's Report (PQI!)
+						qi = 2619,	-- Grelin's Report (QI!)
 					}),
 					q(420, {	-- Senir's Observations (2/2)
 						sourceQuest = 282,	-- Senir's Observations (1/2)
@@ -268,7 +268,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qg = 1965,	-- Mountaineer Thalos
 						coord = { 33.4, 71.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 2619,	-- Grelin's Report (PQI!)
+						qi = 2619,	-- Grelin's Report (QI!)
 					}),
 					q(3112, {	-- Simple Memorandum
 						sourceQuest = 179,	-- Dwarven Outfitters
@@ -276,7 +276,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { WARRIOR },
-						qi = 9544,	-- Simple Memorandum (PQI!)
+						qi = 9544,	-- Simple Memorandum (QI!)
 					}),
 					q(3106, {	-- Simple Rune
 						sourceQuest = 179,	-- Dwarven Outfitters
@@ -284,13 +284,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { WARRIOR },
-						qi = 9543,	-- Simple Rune (PQI!)
+						qi = 9543,	-- Simple Rune (QI!)
 					}),
 					q(2160, {	-- Supplies to Tannok
 						qg = 6782,	-- Hands Springsprocket
 						coord = { 33.8, 72.2, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						qi = 7646,	-- Crate of Inn Supplies (PQI!)
+						qi = 7646,	-- Crate of Inn Supplies (QI!)
 					}),
 					q(3115, {	-- Tainted Memorandum
 						sourceQuests = {
@@ -300,7 +300,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { WARLOCK },
-						qi = 9577,	-- Tainted Memorandum (PQI!)
+						qi = 9577,	-- Tainted Memorandum (QI!)
 					}),
 					q(96628, {	-- The Adventurer [Dun Morogh]
 						sourceQuest = 218,	-- The Stolen Journal
@@ -308,7 +308,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 33.4, 71.8, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						qi = 275019,	-- Supply Bundle (PQI!)
+						qi = 275019,	-- Supply Bundle (QI!)
 						lvl = 4,
 					}),
 					q(183, {	-- The Boar Hunter
@@ -484,7 +484,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				provider = { "o", 2059 },	-- A Dwarven Corpse
 				coord = { 79.7, 36.2, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 3117,	-- Hildelve's Journal (PQI!)
+				qi = 3117,	-- Hildelve's Journal (QI!)
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/1 Mangy Claw
@@ -553,7 +553,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1375,	-- Marleth Barleybrew
 				coord = { 30.2, 45.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 2548,	-- Barrel of Barleybrew Scalder (PQI!)
+				qi = 2548,	-- Barrel of Barleybrew Scalder (QI!)
 				lvl = 2,
 				groups = {
 					q(308, {	-- Distracting Jarven
@@ -896,7 +896,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 25.2, 44.4, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				qi = 7715,	-- Onin's Report (PQI!)
+				qi = 7715,	-- Onin's Report (QI!)
 				lvl = 10,
 				groups = {
 					i(7298),	-- Blade of Cunning
@@ -964,7 +964,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1374,	-- Rejold Barleybrew
 				coord = { 30.2, 45.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 2696,	-- Cask of Evershine (PQI!)
+				qi = 2696,	-- Cask of Evershine (QI!)
 				lvl = 2,
 				groups = {
 					i(1011),	-- Sharp Axe
@@ -1075,7 +1075,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1374,	-- Rejold Barleybrew
 				coord = { 30.2, 45.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 3085,	-- Barrel of Shimmer Stout (PQI!)
+				qi = 3085,	-- Barrel of Shimmer Stout (QI!)
 				lvl = 8,
 			}),
 			q(1879, {	-- Speak with Bink
@@ -1153,7 +1153,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1959,	-- Mountaineer Barleybrew
 				coord = { 86.2, 48.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 3086,	-- Cask of Shimmer Stout (PQI!)
+				qi = 3086,	-- Cask of Shimmer Stout (QI!)
 				lvl = 8,
 			}),
 			q(6064, {	-- Taming the Beast (1/3)
@@ -1166,7 +1166,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
-				qi = 15911,	-- Taming Rod (PQI!)
+				qi = 15911,	-- Taming Rod (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tame a Large Crag Boar
@@ -1180,7 +1180,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
-				qi = 15913,	-- Taming Rod (PQI!)
+				qi = 15913,	-- Taming Rod (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tame a Snow Leopard
@@ -1194,7 +1194,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
-				qi = 15908,	-- Taming Rod (PQI!)
+				qi = 15908,	-- Taming Rod (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tame a Ice Claw Bear
@@ -1318,7 +1318,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1252,	-- Senir Whitebeard
 				coord = { 46.6, 53.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 2628,	-- Senir's Report (PQI!)
+				qi = 2628,	-- Senir's Report (QI!)
 			}),
 			q(1653, {	-- The Test of Righteousness (1/3)
 				sourceQuest = 1652,	-- The Tome of Valor (4/4)
@@ -1335,7 +1335,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				maps = { MAP.BLACKFATHOM_DEEPS, MAP.DARKSHORE, MAP.DEADMINES, MAP.LOCH_MODAN, MAP.SHADOWFANG_KEEP },
 				races = ALLIANCE_ONLY,
 				classes = { PALADIN },
-				qi = 6996,	-- Jordan's Weapon Notes (PQI!)
+				qi = 6996,	-- Jordan's Weapon Notes (QI!)
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Whitestone Oak Lumber
@@ -1429,7 +1429,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1872,	-- Tharek Blackstone
 				coord = { 46.0, 51.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				qi = 2999,	-- Steelgrill's Tools (PQI!)
+				qi = 2999,	-- Steelgrill's Tools (QI!)
 				lvl = 2,
 			}),
 			q(6086, {	-- Training the Beast

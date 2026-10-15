@@ -209,7 +209,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 27.4, 76.8, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
-				qi = 4028,	-- Bundle of Akiris Reeds
+				qi = 4028,	-- Bundle of Akiris Reeds (QI!)
 				lvl = 38,
 			}),
 			q(3721, {	-- An OOX of Your Own
@@ -769,7 +769,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 770,	-- Corporal Kaleb
 				coord = { 37.7, 3.3, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 4085,	-- Krazek's Crock Pot
+				qi = 4085,	-- Krazek's Crock Pot (QI!)
 				lvl = 32,
 			}),
 			q(207, {	-- Kurzen's Mystery
@@ -816,7 +816,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2496,	-- Baron Revilgaz
 				coord = { 27.2, 76.8, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 3960,	-- Bag of Water Elemental Bracers
+				qi = 3960,	-- Bag of Water Elemental Bracers (QI!)
 				lvl = 32,
 			}),
 			q(206, {	-- Mai'Zoth
@@ -1054,7 +1054,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 773,	-- Krazek
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 1987,	-- Krazek's Fixed Pot
+				qi = 1987,	-- Krazek's Fixed Pot (QI!)
 				lvl = 32,
 				groups = {
 					i(4124),	-- Cap of Harmony
@@ -1064,7 +1064,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sourceQuest = 606,	-- Scaring Shaky
 				qg = 2502,	-- \"Shaky\" Phillipe
 				coord = { 26.9, 73.6, MAP.STRANGLETHORN_VALE },
-				qi = 3922,	-- Shaky's Payment
+				qi = 3922,	-- Shaky's Payment (QI!)
 				lvl = 30,
 			}),
 			q(3626, {	-- Return to the Blasted Lands
@@ -1321,7 +1321,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 773,	-- Krazek
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 2252,	-- Miscellaneous Goblin Supplies
+				qi = 2252,	-- Miscellaneous Goblin Supplies (QI!)
 				lvl = 30,
 			}),
 			q(575, {	-- Supply and Demand
@@ -1577,7 +1577,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 				qg = 7794,	-- McGavan
 				coord = { 28.8, 75.4, MAP.STRANGLETHORN_VALE },
-				qi = 8686,	-- Mithril Pendant
+				qi = 8686,	-- Mithril Pendant (QI!)
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
 				lvl = 40,
@@ -1647,7 +1647,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2496,	-- Baron Revilgaz
 				coord = { 27.2, 76.9, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
-				qi = 3898,	-- Library Scrip
+				qi = 3898,	-- Library Scrip (QI!)
 				lvl = 32,
 			}),
 			q(629, {	-- The Vile Reef

@@ -47,7 +47,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				races = ALLIANCE_ONLY,
 				maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 				isYearly = true,
-				qi = 18598,	-- Human Orphan Whistle
+				qi = 18598,	-- Human Orphan Whistle (QI!)
 				lvl = 10,
 				groups = WARDEN_OF_THE_GROUPS,
 			}),
@@ -61,7 +61,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				races = HORDE_ONLY,
 				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				isYearly = true,
-				qi = 18597,	-- Orcish Orphan Whistle
+				qi = 18597,	-- Orcish Orphan Whistle (QI!)
 				lvl = 10,
 				groups = WARDEN_OF_THE_GROUPS,
 			}),
@@ -75,7 +75,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 18597,	-- Orcish Orphan Whistle
+				qi = 18597,	-- Orcish Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Cairne's Hoofprint
@@ -110,7 +110,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 18597,	-- Orcish Orphan Whistle
+				qi = 18597,	-- Orcish Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the docks of Ratchet in the Barrens.
@@ -125,7 +125,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 18597,	-- Orcish Orphan Whistle
+				qi = 18597,	-- Orcish Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
@@ -143,7 +143,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 18598,	-- Human Orphan Whistle
+				qi = 18598,	-- Human Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Jaina's Autograph
@@ -159,7 +159,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 18597,	-- Orcish Orphan Whistle
+				qi = 18597,	-- Orcish Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the old Lordaeron Throne Room that lies just before descending into the Undercity.
@@ -173,7 +173,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 18598,	-- Human Orphan Whistle
+				qi = 18598,	-- Human Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the Westfall Lighthouse.
@@ -188,7 +188,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 18598,	-- Human Orphan Whistle
+				qi = 18598,	-- Human Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
@@ -202,7 +202,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 18598,	-- Human Orphan Whistle
+				qi = 18598,	-- Human Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.
@@ -220,7 +220,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 18598,	-- Human Orphan Whistle
+				qi = 18598,	-- Human Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream
@@ -240,7 +240,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 18597,	-- Orcish Orphan Whistle
+				qi = 18597,	-- Orcish Orphan Whistle (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tigule's Strawberry Ice Cream

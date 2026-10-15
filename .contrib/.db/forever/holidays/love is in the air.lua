@@ -104,7 +104,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				coord = { 57.0, 59.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 21921,	-- Carefully Penned Note
+				qi = 21921,	-- Carefully Penned Note (QI!)
 			}),
 			q(8898, {	-- Dearest Colara, [Ironforge]
 				qg = 16009,	-- Tormek Stoneriver
@@ -112,7 +112,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 21920,	-- Creased Letter
+				qi = 21920,	-- Creased Letter (QI!)
 			}),
 			q(8899, {	-- Dearest Colara, [Darnassus]
 				qg = 16001,	-- Aldris Fourclouds
@@ -120,7 +120,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
-				qi = 21925,	-- Immaculate Letter
+				qi = 21925,	-- Immaculate Letter (QI!)
 			}),
 			q(8900, {	-- Dearest Elenia, [Orgrimmar]
 				qg = 16007,	-- Orok Deathbane
@@ -128,7 +128,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 21926,	-- Slightly Creased Note
+				qi = 21926,	-- Slightly Creased Note (QI!)
 			}),
 			q(8901, {	-- Dearest Elenia, [Thunder Bluff]
 				qg = 16008,	-- Temma of the Wells
@@ -136,7 +136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 22264,	-- Carefully Written Letter
+				qi = 22264,	-- Carefully Written Letter (QI!)
 			}),
 			q(8902, {	-- Dearest Elenia, [Undercity]
 				qg = 16003,	-- Deathguard Tor
@@ -144,7 +144,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
-				qi = 22265,	-- Lovingly Composed Letter
+				qi = 22265,	-- Lovingly Composed Letter (QI!)
 			}),
 			q(8979, {	-- Fenstad's Hunch
 				sourceQuest = 8904,	-- Dangerous Love (H)

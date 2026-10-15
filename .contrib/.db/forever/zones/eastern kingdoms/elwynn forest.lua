@@ -69,7 +69,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { PALADIN },
-						qi = 9570,	-- Consecrated Letter (PQI!)
+						qi = 9570,	-- Consecrated Letter (QI!)
 					}),
 					q(5261, {	-- Eagan Peltskinner
 						sourceQuest = 783,	-- A Threat Within
@@ -84,7 +84,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { ROGUE },
-						qi = 9555,	-- Encrypted Letter (PQI!)
+						qi = 9555,	-- Encrypted Letter (QI!)
 					}),
 					q(91758, {	-- Follow That Kobold!
 						sourceQuest = 91752,	-- The Big Picture
@@ -99,14 +99,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { MAGE },
-						qi = 9571,	-- Glyphic Letter (PQI!)
+						qi = 9571,	-- Glyphic Letter (QI!)
 					}),
 					q(3905, {	-- Grape Manifest
 						sourceQuest = 3904,	-- Milly's Harvest
 						qg = 9296,	-- Milly Osworth
 						coord = { 50.7, 39.3, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
-						qi = 11125,	-- Grape Manifest (PQI!)
+						qi = 11125,	-- Grape Manifest (QI!)
 						lvl = 2,
 						groups = {
 							i(2690),	-- Latched Belt
@@ -119,7 +119,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { PRIEST },
-						qi = 9548,	-- Hallowed Letter (PQI!)
+						qi = 9548,	-- Hallowed Letter (QI!)
 					}),
 					q(5623, {	-- In Favor of the Light
 						qg = 375,	-- Priestess Anetta <Priest Trainer>
@@ -219,7 +219,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
-						qi = 745,	-- Marshal McBride's Documents (PQI!)
+						qi = 745,	-- Marshal McBride's Documents (QI!)
 						groups = {
 							i(6078),	-- Pikeman Shield
 						},
@@ -234,7 +234,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
-						qi = 2795,	-- Book: Stresses of Iron (PQI!)
+						qi = 2795,	-- Book: Stresses of Iron (QI!)
 						lvl = 20,
 						groups = {
 							i(6095),	-- Wandering Boots
@@ -246,7 +246,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
-						qi = 247970,	-- Kobold Tracking Kit (PQI!)
+						qi = 247970,	-- Kobold Tracking Kit (QI!)
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
 								provider = { "o", 563442 },	-- Kobold Tracks
@@ -259,7 +259,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.8, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { WARRIOR },
-						qi = 9542,	-- Simple Letter (PQI!)
+						qi = 9542,	-- Simple Letter (QI!)
 					}),
 					q(21, {	-- Skirmish at Echo Ridge
 						sourceQuest = 15,	-- Investigate Echo Ridge
@@ -281,7 +281,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						coord = { 48.8, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { WARLOCK },
-						qi = 9576,	-- Tainted Letter (PQI!)
+						qi = 9576,	-- Tainted Letter (QI!)
 					}),
 					q(96627, {	-- The Adventurer [Elwynn Forest]
 						sourceQuest = 21,	-- Skirmish at Echo Ridge
@@ -561,7 +561,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 246,	-- "Auntie" Bernice Stonefield
 				coord = { 34.5, 84.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 962,	-- Pork Belly Pie (PQI!)
+				qi = 962,	-- Pork Belly Pie (QI!)
 				lvl = 5,
 			}),
 			q(99131, {	-- Baited for Success
@@ -578,7 +578,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 279935,	-- Book Bag (PQI!)
+				qi = 279935,	-- Book Bag (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Picture Book: Fun with Elementals
 						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals
@@ -782,7 +782,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 240,	-- Marshal Dughan
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 748,	-- Stormwind Armor Marker (PQI!)
+				qi = 748,	-- Stormwind Armor Marker (QI!)
 				lvl = 7,
 				groups = {
 					i(2237),	-- Patched Pants
@@ -1077,7 +1077,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 248,	-- Gramma Stonefield
 				coord = { 34.9, 83.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1252,	-- Gramma Stonefield's Note (PQI!)
+				qi = 1252,	-- Gramma Stonefield's Note (QI!)
 				lvl = 5,
 			}),
 			q(86, {	-- Pie for Billy
@@ -1196,7 +1196,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				provider = { "o",  56 },	-- Rolf's corpse
 				coord = { 79.8, 55.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 735,	-- Rolf and Malakai's Medallions (PQI!)
+				qi = 735,	-- Rolf and Malakai's Medallions (QI!)
 				lvl = 7,
 			}),
 			q(11, {	-- Riverpaw Gnoll Bounty
@@ -1240,7 +1240,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
 				isBreadcrumb = true,
-				qi = 7674,	-- Delivery to Mathias (PQI!)
+				qi = 7674,	-- Delivery to Mathias (QI!)
 				lvl = 10,
 			}),
 			q(61, {	-- Shipment to Stormwind
@@ -1249,7 +1249,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 43.2, 65.8, MAP.ELWYNN_FOREST },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 957,	-- William's Shipment (PQI!)
+				qi = 957,	-- William's Shipment (QI!)
 				lvl = 3,
 				groups = {
 					i(2454),	-- Elixir of Minor Strength
@@ -1319,7 +1319,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(123, {	-- The Collector
 				qs = 1307,	-- Gold Pickup Schedule (QS!)
 				races = ALLIANCE_ONLY,
-				qi = 2223,	-- The Collector's Schedule (PQI!)
+				qi = 2223,	-- The Collector's Schedule (QI!)
 				lvl = 7,
 			}),
 			q(114, {	-- The Escape
@@ -1327,7 +1327,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 253,	-- William Pestle
 				coord = { 43.3, 65.7, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1257,	-- Invisibility Liquor (PQI!)
+				qi = 1257,	-- Invisibility Liquor (QI!)
 				lvl = 5,
 			}),
 			q(62, {	-- The Fargodeep Mine
@@ -1386,7 +1386,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 251,	-- Maybell Maclure
 				coord = { 43.2, 89.6, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1208,	-- Maybell's Love Letter (PQI!)
+				qi = 1208,	-- Maybell's Love Letter (QI!)
 				lvl = 5,
 			}),
 		}),

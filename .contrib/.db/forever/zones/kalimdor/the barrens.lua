@@ -188,7 +188,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 51.44, 30.15, MAP.THE_BARRENS },
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				qi = 5027,	-- Rendered Spores
+				qi = 5027,	-- Rendered Spores (QI!)
 				lvl = 10,
 				groups = {
 					i(2458),	-- Elixir of Minor Fortitude
@@ -227,7 +227,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 5072,	-- Lok's Skull
+				qi = 5072,	-- Lok's Skull (QI!)
 				lvl = 17,
 				groups = {
 					i(5316),	-- Barkshell Tunic
@@ -250,7 +250,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				cost = { { "i", 3575, 10 } },	-- Iron Bar
 				races = HORDE_ONLY,
 				classes = { WARRIOR },
-				qi = 7587,	-- Thun'grim's Instructions
+				qi = 7587,	-- Thun'grim's Instructions (QI!)
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/15 Smoky Iron Ingot
@@ -363,7 +363,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 38.6, 58.8, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				classes = { SHAMAN },
-				qi = 6653,	-- Torch of the Dormant Flame
+				qi = 6653,	-- Torch of the Dormant Flame (QI!)
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Glowing Ember
@@ -495,7 +495,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				classes = { SHAMAN },
-				qi = 7810,	-- Vial of Purest Water
+				qi = 7810,	-- Vial of Purest Water (QI!)
 				lvl = 20,
 				groups = {
 					i(6637),	-- Water Sapta
@@ -534,7 +534,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 38.6, 44.6, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				classes = { SHAMAN },
-				qi = 7813,	-- Shard of Water
+				qi = 7813,	-- Shard of Water (QI!)
 				lvl = 20,
 				groups = {
 					recipe(5394),	-- Healing Stream Totem
@@ -916,7 +916,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.6, 59.2, MAP.THE_BARRENS },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				qi = 6624,	-- Ken'zigla's Draught
+				qi = 6624,	-- Ken'zigla's Draught (QI!)
 				lvl = 20,
 			}),
 			q(6385, {	-- Doras the Wind Rider Master
@@ -924,7 +924,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 6929,	-- Innkeeper Gryshka
 				coord = { 54.09, 68.43, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
-				qi = 16307,	-- Gryshka's Letter
+				qi = 16307,	-- Gryshka's Letter (QI!)
 				lvl = 10,
 			}),
 			q(881, {	-- Echeyakee
@@ -1094,7 +1094,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3494,	-- Tinkerwiz <Journeyman Engineer>
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = ALLIANCE_ONLY,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				lvl = 30,
@@ -1114,7 +1114,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3494,	-- Tinkerwiz <Journeyman Engineer>
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				lvl = 30,
@@ -1134,7 +1134,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3494,	-- Tinkerwiz <Journeyman Engineer>
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				lvl = 30,
@@ -1421,7 +1421,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3449,	-- Darsok Swiftdagger
 				coord = { 51.62, 30.90, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 5594,	-- Letter to Jin'Zil
+				qi = 5594,	-- Letter to Jin'Zil (QI!)
 				lvl = 15,
 			}),
 			q(4921, {	-- Lost in Battle
@@ -1442,7 +1442,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 43.2, 47.8, MAP.THE_BARRENS },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				qi = 6625,	-- Dirt-caked Pendant
+				qi = 6625,	-- Dirt-caked Pendant (QI!)
 				lvl = 20,
 			}),
 			q(874, {	-- Mahren Skyseer
@@ -1456,7 +1456,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3489,	-- Zargh
 				coord = { 52.62, 29.84, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
-				qi = 16306,	-- Zargh's Meats
+				qi = 16306,	-- Zargh's Meats (QI!)
 				lvl = 10,
 			}),
 			q(3646, {	-- Membership Card Renewal
@@ -1745,7 +1745,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3310,	-- Doras
 				coord = { 45.21, 63.58, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
-				qi = 16307,	-- Gryshka's Letter
+				qi = 16307,	-- Gryshka's Letter (QI!)
 				lvl = 10,
 			}),
 			q(4976, {	-- Returning the Cleansed Orb
@@ -1753,7 +1753,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 6546,	-- Tabetha
 				coord = { 46.0, 57.0, MAP.DUSTWALLOW_MARSH },
 				classes = { WARLOCK },
-				qi = 12642,	-- Cleansed Infernal Orb
+				qi = 12642,	-- Cleansed Infernal Orb (QI!)
 				lvl = 35,
 			}),
 			q(846, {	-- Revenge of Gann (1/2)
@@ -1811,7 +1811,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3615,	-- Devrak
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
-				qi = 16306,	-- Zargh's Meats
+				qi = 16306,	-- Zargh's Meats (QI!)
 				lvl = 10,
 			}),
 			q(3923, {	-- Rilli Greasygob
@@ -1819,7 +1819,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 9316,	-- Wenikee Boltbucket
 				coord = { 49.05, 11.17, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 11146,	-- Broken and Battered Samophlange
+				qi = 11146,	-- Broken and Battered Samophlange (QI!)
 				lvl = 10,
 			}),
 			q(5045, {	-- Rising Spirit
@@ -1847,7 +1847,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(894, {	-- Samophlange (1/4)
 				qg = 3442,	-- Sputtervalve
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
-				qi = 5088,	-- Control Console Operating Manual
+				qi = 5088,	-- Control Console Operating Manual (QI!)
 				lvl = 10,
 			}),
 			q(900, {	-- Samophlange (2/4)
@@ -2410,14 +2410,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 887,	-- Southsea Freebooters
 				qg = 3391,	-- Gazlowe
 				coord = { 62.68, 36.24, MAP.THE_BARRENS },
-				qi = 5080,	-- Gazlowe's Ledger
+				qi = 5080,	-- Gazlowe's Ledger (QI!)
 				lvl = 9,
 			}),
 			q(892, {	-- The Missing Shipment (2/2)
 				sourceQuest = 890,	-- The Missing Shipment (1/2)
 				qg = 3453,	-- Wharfmaster Dizzywig
 				coord = { 63.35, 38.45, MAP.THE_BARRENS },
-				qi = 5080,	-- Gazlowe's Ledger
+				qi = 5080,	-- Gazlowe's Ledger (QI!)
 				lvl = 9,
 			}),
 			q(3513, {	-- The Runed Scroll
@@ -2543,13 +2543,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					sourceQuest = 1802,	-- Tome of the Cabal (2/3) (A)
 					qg = 6294,	-- Krom Stoutarm
 					coord = { 74.4, 9.4, MAP.IRONFORGE },
-					qi = 7006,	-- Reconstructed Tome
+					qi = 7006,	-- Reconstructed Tome (QI!)
 				}),
 				hordeQuestData = q(1805, {	-- Tome of the Cabal (3/3) (H)
 					sourceQuest = 1803,	-- Tome of the Cabal (2/3) (H)
 					qg = 6293,	-- Jorah Annison
 					coord = { 76.6, 36.8, MAP.UNDERCITY },
-					qi = 7006,	-- Reconstructed Tome
+					qi = 7006,	-- Reconstructed Tome (QI!)
 				}),
 				maps = { MAP.WETLANDS },
 				classes = { WARLOCK },
@@ -2722,14 +2722,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3442,	-- Sputtervalve
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 11142,	-- Broken Samophlange
+				qi = 11142,	-- Broken Samophlange (QI!)
 				lvl = 10,
 			}),
 			q(1492, {	-- Wharfmaster Dizzywig
 				qg = 3390,	-- Apothecary Helbrim
 				coord = { 51.44, 30.15, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				qi = 6462,	-- Secure Crate
+				qi = 6462,	-- Secure Crate (QI!)
 				lvl = 9,
 			}),
 			q(5044, {	-- Wisdom of Agamaggan

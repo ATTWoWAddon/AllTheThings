@@ -274,13 +274,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(737, {	-- Forbidden Knowledge
 				allianceQuestData = {
 					qg = 2786,	-- Gerrig Bonegrip
-					qi = 4647,	-- Yagyin's Digest
+					qi = 4647,	-- Yagyin's Digest (QI!)
 					sourceQuest = 735,	-- The Star, the Hand and the Heart [A]
 					coord = { 50.8, 5.6, MAP.IRONFORGE },
 				},
 				hordeQuestData = {
 					qg = 2934,	-- Keeper Bel'dugur
-					qi = 4647,	-- Yagyin's Digest
+					qi = 4647,	-- Yagyin's Digest (QI!)
 					sourceQuest = 736,	-- The Star, the Hand and the Heart [H]
 					coord = { 53.7, 54.5, MAP.UNDERCITY },
 				},
@@ -377,7 +377,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2916,	-- Historian Karnik
 				coord = { 77.5, 11.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				qi = 4622,	-- Sealed Note to Advisor Belgrum
+				qi = 4622,	-- Sealed Note to Advisor Belgrum (QI!)
 				lvl = 35,
 			}),
 			q(726, {	-- Passing Word of a Threat (2/2)
@@ -443,7 +443,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2909,	-- Hammertoe Grez
 				coord = { 37.94, 10.53, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4635,	-- Hammertoe's Amulet
+				qi = 4635,	-- Hammertoe's Amulet (QI!)
 				lvl = 35,
 			}),
 			q(724, {	-- Prospect of Faith (2/2)
@@ -451,7 +451,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2910,	-- Prospector Ryedol
 				coord = { 53.4, 43.2, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4635,	-- Hammertoe's Amulet
+				qi = 4635,	-- Hammertoe's Amulet (QI!)
 				lvl = 35,
 			}),
 			q(1360, {	-- Reclaimed Treasures
@@ -492,7 +492,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				coord = { 6.5, 47.2, MAP.BADLANDS },
 				maps = { MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
-				qi = 6167,	-- Neeka's Report
+				qi = 6167,	-- Neeka's Report (QI!)
 				lvl = 30,
 			}),
 			q(733, {	-- Scrounging
@@ -650,7 +650,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2786,	-- Gerrig Bonegrip
 				coord = { 50.8, 5.6, MAP.IRONFORGE },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
-				qi = 4649,	-- Bonegrip's Note
+				qi = 4649,	-- Bonegrip's Note (QI!)
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
@@ -676,7 +676,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2934,	-- Keeper Bel'dugur
 				coord = { 53.7, 54.5, MAP.UNDERCITY },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
-				qi = 4650,	-- Bel'dugur's Note
+				qi = 4650,	-- Bel'dugur's Note (QI!)
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
@@ -710,7 +710,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				sourceQuest = 734,	-- This Is Going to Be Hard (1/3)
 				qg = 2920,	-- Lucien Tosselwrench
 				coord = { 25.8, 44.4, MAP.BADLANDS },
-				qi = 4846,	-- Cog #5
+				qi = 4846,	-- Cog #5 (QI!)
 				lvl = 35,
 			}),
 			q(778, {	-- This Is Going to Be Hard (3/3)
@@ -732,7 +732,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2785,	-- Theldurin the Lost
 				coord = { 51.4, 76.9, MAP.BADLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 4648,	-- Sigil of the Hammer
+				qi = 4648,	-- Sigil of the Hammer (QI!)
 				lvl = 30,
 			}),
 			q(728, {	-- To the Undercity for Yagyin's Digest
@@ -740,7 +740,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2785,	-- Theldurin the Lost
 				coord = { 51.4, 76.9, MAP.BADLANDS },
 				races = HORDE_ONLY,
-				qi = 4648,	-- Sigil of the Hammer
+				qi = 4648,	-- Sigil of the Hammer (QI!)
 				lvl = 30,
 			}),
 			q(732, {	-- Tremors of the Earth (1/2)

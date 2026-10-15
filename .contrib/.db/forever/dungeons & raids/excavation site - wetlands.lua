@@ -75,7 +75,7 @@ root(ROOTS.Instances, {
 					sourceQuest = 95647,	-- Lost in the Thicket Things
 					qg = 262681,	-- Ardin Grassman
 					races = ALLIANCE_ONLY,
-					qi = 270901,	-- Reed-woven Heart
+					qi = 270901,	-- Reed-woven Heart (QI!)
 					lvl = 24,
 					groups = {
 						i(280766),	-- Satchel of Potions
@@ -155,7 +155,7 @@ root(ROOTS.Instances, {
 					coord = { 38.8, 52.2, MAP.WETLANDS },
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					qi = 270865,	-- Titan Relic (A) (PQI!)
+					qi = 270865,	-- Titan Relic (A) (QI!)
 					lvl = 24,
 					groups = {
 						i(271766),	-- Heavehammer

@@ -94,7 +94,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 491,	-- Quartermaster Lewis
 				coord = { 56.9, 47.2, MAP.WESTFALL },
 				races = { HUMAN },
-				qi = 15998,	-- Lewis' Note (PQI!)
+				qi = 15998,	-- Lewis' Note (QI!)
 				lvl = 10,
 			}),
 			q(136, {	-- Captain Sanders' Hidden Treasure (1/4)
@@ -105,14 +105,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				sourceQuest = 136,	-- Captain Sanders' Hidden Treasure (1/4)
 				provider = { "o", 35 },	-- Captain's Footlocker
 				coord = { 25.9, 47.77, MAP.WESTFALL },
-				qi = 1358,	-- A Clue to Sander's Treasure (PQI!)
+				qi = 1358,	-- A Clue to Sander's Treasure (QI!)
 				lvl = 10,
 			}),
 			q(139, {	-- Captain Sanders' Hidden Treasure (3/4)
 				sourceQuest = 138,	-- Captain Sanders' Hidden Treasure (2/4)
 				provider = { "o", 36 },	-- Broken Barrel
 				coord = { 40.50, 47.82, MAP.WESTFALL },
-				qi = 1361,	-- Another Clue to Sander's Treasure (PQI!)
+				qi = 1361,	-- Another Clue to Sander's Treasure (QI!)
 				lvl = 10,
 			}),
 			q(140, {	-- Captain Sanders' Hidden Treasure (4/4)
@@ -125,7 +125,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					{ 40.62, 17.01, MAP.WESTFALL },
 					{ 25.97, 16.90, MAP.WESTFALL },
 				},
-				qi = 1362,	-- Final Clue to Sanders' Treasure (PQI!)
+				qi = 1362,	-- Final Clue to Sanders' Treasure (QI!)
 				lvl = 10,
 				groups = {
 					i(270257, {	-- Captain Sander's Locker
@@ -170,7 +170,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 56.4, 52.6, MAP.WESTFALL },
 				maps = { MAP.STORMWIND_CITY },
 				races = { HUMAN },
-				qi = 15998,	-- Lewis' Note (PQI!)
+				qi = 15998,	-- Lewis' Note (QI!)
 				lvl = 10,
 			}),
 			q(1076, {	-- Devils in Westfall
@@ -213,7 +213,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qs = 1972,	-- Westfall Deed (QS!)
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1971,	-- Furlbrow's Deed (PQI!)
+				qi = 1971,	-- Furlbrow's Deed (QI!)
 				lvl = 8,
 				groups = {
 					i(5057),	-- Ripe Watermelon
@@ -287,7 +287,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 68.5, 70.2, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				qi = 8046,	-- Kearnen's Journal (PQI!)
+				qi = 8046,	-- Kearnen's Journal (QI!)
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Klaven Mortwake's Journal
@@ -529,7 +529,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 52.5, 53.0, MAP.WESTFALL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				qi = 254545,	-- Well Water Sample Kit (PQI!)
+				qi = 254545,	-- Well Water Sample Kit (QI!)
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Jansen Stead Water Sample
@@ -587,7 +587,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 266,	-- Wiley the Black
 				coord = { 21.4, 45.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1327,	-- Wiley's Note (PQI!)
+				qi = 1327,	-- Wiley's Note (QI!)
 				lvl = 14,
 			}),
 			q(135, {	-- The Defias Brotherhood (3/7)
@@ -595,7 +595,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 234,	-- Gryan Stoutmantle
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
-				qi = 1327,	-- Wiley's Note (PQI!)
+				qi = 1327,	-- Wiley's Note (QI!)
 				lvl = 14,
 			}),
 			q(141, {	-- The Defias Brotherhood (4/7)
@@ -603,7 +603,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 332,	-- Master Mathias Shaw
 				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 1353,	-- Shaw's Report (PQI!)
+				qi = 1353,	-- Shaw's Report (QI!)
 				lvl = 14,
 			}),
 			q(142, {	-- The Defias Brotherhood (5/7)
@@ -746,7 +746,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 238,	-- Verna Furlbrow
 				coord = { 60.0, 19.4, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
-				qi = 2832,	-- Verna's Westfall Stew Recipe (PQI!)
+				qi = 2832,	-- Verna's Westfall Stew Recipe (QI!)
 				lvl = 9,
 			}),
 			q(38, {	-- Westfall Stew (2/2)

@@ -110,7 +110,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				qg = 7740,	-- Gracina Spiritmight
 				coord = { 42.0, 85.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				qi = 11843,	-- Bank Voucher
+				qi = 11843,	-- Bank Voucher (QI!)
 				lvl = 50,
 				groups = {
 					i(11870),	-- Oblivion Orb
@@ -188,7 +188,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				qg = 3516,	-- Arch Druid Fandral Staghelm
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				qi = 5390,	-- Fandral's Message
+				qi = 5390,	-- Fandral's Message (QI!)
 				lvl = 6,
 			}),
 			q(4493, {	-- March of the Silithid (A)
@@ -230,7 +230,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				qg = 3516,	-- Arch Druid Fandral Staghelm
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				qi = 11103,	-- Seed Voucher
+				qi = 11103,	-- Seed Voucher (QI!)
 				lvl = 47,
 				groups = {
 					i(11022),	-- Packet of Tharlendris Seeds
@@ -287,7 +287,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				coord = { 57.4, 34.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				qi = 6812,	-- Case of Elunite
+				qi = 6812,	-- Case of Elunite (QI!)
 				lvl = 10,
 			}),
 			q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
@@ -395,7 +395,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				coord = { 31.2, 84.2, MAP.DARNASSUS },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				qi = 6812,	-- Mysterious Fossil
+				qi = 6812,	-- Mysterious Fossil (QI!)
 				lvl = 15,
 			}),
 			q(1039, {	-- The Barrens Port

@@ -169,7 +169,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				maps = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 3357, 8 } },	-- Liferoot
 				classes = { WARRIOR },
-				qi = 6929,	-- Bath'rah's Parchment
+				qi = 6929,	-- Bath'rah's Parchment (QI!)
 				lvl = 30,
 				groups = {
 					objective(2, {	-- 0/30 Bloodscalp Tusk
@@ -288,7 +288,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 74.4, 12.0, MAP.IRONFORGE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 3518,	-- Decrypted Letter
+				qi = 3518,	-- Decrypted Letter (QI!)
 				lvl = 30,
 			}),
 			q(503, {	-- Gol'dir
@@ -338,7 +338,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 3521,	-- Cleverly Encrypted Letter
+				qi = 3521,	-- Cleverly Encrypted Letter (QI!)
 				lvl = 30,
 			}),
 			q(507, {	-- Lord Aliden Perenolde
@@ -423,7 +423,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				qi = 3706,	-- Ensorcelled Parchment
+				qi = 3706,	-- Ensorcelled Parchment (QI!)
 				lvl = 28,
 			}),
 			q(505, {	-- Syndicate Assassins
@@ -457,7 +457,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 2317,	-- Elysa
 				coord = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
-				qi = 3498,	-- Taretha's Necklace
+				qi = 3498,	-- Taretha's Necklace (QI!)
 				lvl = 29,
 				groups = {
 					i(3765),	-- Brigand's Pauldrons
@@ -532,7 +532,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 2278,	-- Melisara
 				coord = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				qi = 3554,	-- Crown of Will
+				qi = 3554,	-- Crown of Will (QI!)
 				lvl = 34,
 				groups = {
 					i(4430),	-- Ethereal Talisman

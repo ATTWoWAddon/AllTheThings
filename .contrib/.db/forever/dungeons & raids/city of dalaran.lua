@@ -57,7 +57,7 @@ root(ROOTS.Instances, {
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					maps = { MAP.ALTERAC_MOUNTAINS, MAP.SILVERPINE_FOREST },
 					races = HORDE_ONLY,
-					qi = 279469,	-- Grimy Key
+					qi = 279469,	-- Grimy Key (QI!)
 					lvl = 30,
 				}),
 				q(92459, {	-- Friend of the Kirin Tor
@@ -66,7 +66,7 @@ root(ROOTS.Instances, {
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
-					qi = 251961,	-- Arcane Mote
+					qi = 251961,	-- Arcane Mote (QI!)
 					lvl = 24,
 				}),
 				q(92458, {	-- Heart of Disruption [Alliance]
@@ -75,7 +75,7 @@ root(ROOTS.Instances, {
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = ALLIANCE_ONLY,
-					qi = 277507,	-- Dalaran Sewer Key
+					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
@@ -93,7 +93,7 @@ root(ROOTS.Instances, {
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
-					qi = 277507,	-- Dalaran Sewer Key
+					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
@@ -150,7 +150,7 @@ root(ROOTS.Instances, {
 					coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
 					timeline = { TIMELINE.ADDED_1_60_1 },
 					races = HORDE_ONLY,
-					qi = 251961,	-- Arcane Mote
+					qi = 251961,	-- Arcane Mote (QI!)
 					lvl = 24,
 				}),
 				q(96988, {	-- Source of Power

@@ -84,14 +84,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 379,	-- Darcy
 				coord = { 22.0, 45.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 5534,	-- Parker's Lunch (PQI!)
+				qi = 5534,	-- Parker's Lunch (QI!)
 				lvl = 12,
 			}),
 			q(94, {	-- A Watchful Eye
 				qg = 313,	-- Theocritus
 				coord = { 65.2, 69.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1083,	-- Glyph of Azora (PQI!)
+				qi = 1083,	-- Glyph of Azora (QI!)
 				lvl = 20,
 			}),
 			q(2282, {	-- Alther's Mill
@@ -100,7 +100,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 23.0, 52.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				qi = 5060,	-- Thieves' Tools (PQI!)
+				qi = 5060,	-- Thieves' Tools (QI!)
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Token of Thievery
@@ -237,7 +237,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 342,	-- Martie Jainrose
 				coord = { 16.8, 46.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1325,	-- Daffodil Bouquet (PQI!)
+				qi = 1325,	-- Daffodil Bouquet (QI!)
 				lvl = 12,
 				groups = {
 					i(1326),	-- Sauteed Sunfish
@@ -321,7 +321,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 344,	-- Magistrate Solomon
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1409,	-- Solomon's Plea to Darkshire (PQI!)
+				qi = 1409,	-- Solomon's Plea to Darkshire (QI!)
 				lvl = 18,
 			}),
 			q(146, {	-- Messenger to Darkshire (2/2)
@@ -329,14 +329,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 263,	-- Lord Ello Ebonlocke
 				coord = { 72.0, 46.6, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				qi = 1410,	-- Ebonlocke's Response to Solomon (PQI!)
+				qi = 1410,	-- Ebonlocke's Response to Solomon (QI!)
 				lvl = 18,
 			}),
 			q(120, {	-- Messenger to Stormwind (1/2)
 				qg = 344,	-- Magistrate Solomon
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1293,	-- The State of Lakeshire (PQI!)
+				qi = 1293,	-- The State of Lakeshire (QI!)
 				lvl = 14,
 			}),
 			q(121, {	-- Messenger to Stormwind (2/2)
@@ -344,7 +344,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 466,	-- General Marcus Jonathan
 				coord = { 63.8, 75.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				qi = 1294,	-- The General's Response (PQI!)
+				qi = 1294,	-- The General's Response (QI!)
 				lvl = 14,
 			}),
 			q(143, {	-- Messenger to Westfall (1/2)
@@ -352,7 +352,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 344,	-- Magistrate Solomon
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1407,	-- Solomon's Plea to Westfall (PQI!)
+				qi = 1407,	-- Solomon's Plea to Westfall (QI!)
 				lvl = 14,
 			}),
 			q(144, {	-- Messenger to Westfall (2/2)
@@ -360,7 +360,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 234,	-- Gryan Stoutmantle
 				coord = { 56.2, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
-				qi = 1408,	-- Stoutmantle's Response to Solomon (PQI!)
+				qi = 1408,	-- Stoutmantle's Response to Solomon (QI!)
 				lvl = 14,
 			}),
 			q(219, {	-- Missing In Action
@@ -448,7 +448,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 514,	-- Smith Argus
 				coord = { 41.7, 65.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1284,	-- Crate of Horseshoes (PQI!)
+				qi = 1284,	-- Crate of Horseshoes (QI!)
 				lvl = 13,
 			}),
 			q(127, {	-- Selling Fish
@@ -604,7 +604,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 415,	-- Verner Osgood
 				coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				qi = 1283,	-- Verner's Notes
+				qi = 1283,	-- Verner's Notes (QI!)
 				lvl = 14,
 			}),
 			q(1699, {	-- The Rethban Gauntlet
@@ -621,7 +621,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 21.5, 44.7, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				qi = 6843,	-- Cask of Scalder (PQI!)
+				qi = 6843,	-- Cask of Scalder (QI!)
 				lvl = 20,
 				groups = {
 					i(6970),	-- Furen's Favor
@@ -631,7 +631,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qs = 1962,	-- Glowing Shadowhide Pendant (QS!)
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 1956,	-- Faded Shadowhide Pendant (PQI!)
+				qi = 1956,	-- Faded Shadowhide Pendant (QI!)
 				lvl = 15,
 				groups = {
 					i(1970),	-- Restoring Balm

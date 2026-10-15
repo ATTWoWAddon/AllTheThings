@@ -60,7 +60,7 @@ root(ROOTS.Instances, {
 						qg = 3448,	-- Tonga Runetotem
 						coord = { 52.3, 31.9, MAP.THE_BARRENS },
 						races = HORDE_ONLY,
-						qi = 10414,	-- Sample Snapjaw Shell
+						qi = 10414,	-- Sample Snapjaw Shell (QI!)
 						lvl = 10,
 					}),
 					q(3370, {	-- In Nightmares [A]
