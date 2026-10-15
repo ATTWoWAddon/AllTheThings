@@ -127,6 +127,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- First Crafts
 			app.CreateDynamicHeader("firstcraftID", {
+				minBuild = 100000,
 				name = L.FIRST_CRAFTS_CHECKBOX,
 				icon = app.asset("Category_Professions")	-- TODO: Make a new icon
 			}),

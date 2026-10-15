@@ -51,7 +51,7 @@ settings.Collectibles = {
 	Achievements = true,
 	BattlePets = true,
 	Exploration = true,
-	FirstCrafts = true,
+	FirstCrafts = app.GameBuildVersion >= 100000,
 	FlightPaths = true,
 	Heirlooms = true,
 	Illusions = true,
