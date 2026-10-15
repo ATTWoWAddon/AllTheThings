@@ -799,6 +799,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					}),
 				},
 			}),
+			q(94473, {	-- Fire Sapta
+				sourceQuest = 94466,
+				qg = 257808,	-- Braldir Ashmantle
+				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lockCriteria = { 1, "questID", 94467 },
+				repeatable = true,
+				lvl = 10,
+				groups = {
+					i(6636),	-- Fire Sapta
+				},
+			}),
 		}),
 		n(RARES, {
 			n(1398, {	-- Boss Galgosh <Stonesplinter Chieftain>
