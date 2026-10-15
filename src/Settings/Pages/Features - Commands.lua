@@ -84,7 +84,7 @@ local stringsTwo = {
 	{ title = L.PROFESSION, command = "profession" },
 	{ title = L.QUEST, command = "quest" },
 	{ title = L.RECIPE_SPELL, command = "recipe" },
-	{ title = L.RUNECARVING_POWER, command = "runeforgepower" },
+	{ minBuild = 90000, title = L.RUNECARVING_POWER, command = "runeforgepower" },
 	{ title = L.SOURCES, command = "source" },
 	{ title = L.SPELL, command = "spell" },
 	{ title = L.TITLE_COMMANDS_UI, command = "title" },
