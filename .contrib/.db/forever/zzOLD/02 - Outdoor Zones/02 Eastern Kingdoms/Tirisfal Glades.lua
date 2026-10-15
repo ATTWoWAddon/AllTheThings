@@ -184,6 +184,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						["classes"] = { WARLOCK },
 					}),
 					q(96656, {	-- The Adventurer [Tirisfal Glades]
+						nextQuests = { 96607 },
+						isBreadcrumb = true,
+						altQuests = { 96627, 96628, 96630, 96638, 96652, 96659 },
 						--["sourceQuest"] = ,	--
 						["qg"] = 1570,	-- Executor Arren
 						["coord"] = { 32.0, 66.0, MAP.TIRISFAL_GLADES },
@@ -627,6 +630,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				["lvl"] = 10,
 			}),
 			q(97951, {	-- Camping 101: Alchemy [Tirisfal Glades]
+				altQuests = { 96045, 97899, 97915, 97927, 97938, 97963 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -639,6 +643,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97952, {	-- Camping 101: Blacksmithing [Tirisfal Glades]
+				altQuests = { 96044, 97900, 97916, 97928, 97939, 97964 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -652,6 +657,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(96658, {	-- Camping 101: Cooking [Tirisfal Glades]
+				altQuests = { 96626, 96629, 96634, 96646, 96655, 96661 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
@@ -666,6 +672,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97953, {	-- Camping 101: Enchanting [Tirisfal Glades]
+				altQuests = { 96059, 97901, 97917, 97929, 97940, 98284, 98286 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -678,6 +685,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97954, {	-- Camping 101: Engineering [Tirisfal Glades]
+				altQuests = { 96058, 97902, 97918, 97930, 97941, 98285, 98287 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -691,6 +699,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97955, {	-- Camping 101: First Aid [Tirisfal Glades]
+				altQuests = { 96047, 97903, 97919, 97931, 97942, 97965 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -703,6 +712,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97956, {	-- Camping 101: Fishing [Tirisfal Glades]
+				altQuests = { 96050, 97904, 97920, 97932, 97943, 97967 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -715,6 +725,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97957, {	-- Camping 101: Herbalism [Tirisfal Glades]
+				altQuests = { 96055, 97905, 97921, 97933, 97944, 97968 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -727,6 +738,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97958, {	-- Camping 101: Leatherworking [Tirisfal Glades]
+				altQuests = { 96031, 97906, 97922, 97934, 97946, 97969 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -739,6 +751,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97959, {	-- Camping 101: Mining [Tirisfal Glades]
+				altQuests = { 96046, 97907, 97923, 97935, 97948, 97970 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -752,6 +765,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97960, {	-- Camping 101: Skinning [Tirisfal Glades]
+				altQuests = { 96056, 97908, 97924, 97936, 97949, 97971 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -764,6 +778,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(97961, {	-- Camping 101: Tailoring [Tirisfal Glades]
+				altQuests = { 96057, 96102, 97925, 97937, 97950, 97972, 97973 },
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },
@@ -1164,6 +1179,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(96607, {	-- The Great Outdoors [Tirisfal Glades]
+				altQuests = { 95998, 96101, 96604, 96605, 96606, 96608 },
 				["sourceQuest"] = 96656,	-- The Adventurer [Tirisfal Glades]
 				["qg"] = 265812,	-- Eleanor Shackleton <Adventurer>
 				["coord"] = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
