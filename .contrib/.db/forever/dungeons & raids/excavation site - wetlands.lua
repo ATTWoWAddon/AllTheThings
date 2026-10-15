@@ -47,7 +47,7 @@ root(ROOTS.Instances, {
 					maps = { MAP.MULGORE },
 					races = HORDE_ONLY,
 					lvl = 24,
-					qi = 270866,	-- Titan Relic (H) (QS!)
+					qi = 287958,	-- Titan Relic (H) (QI!)
 					groups = {
 						i(271766),	-- Heavehammer
 						i(271767),	-- Healer's Staff
@@ -156,7 +156,7 @@ root(ROOTS.Instances, {
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
 					lvl = 24,
-					qi = 270865,	-- Titan Relic (A) (QI!)
+					qi = 287959,	-- Titan Relic (A) (QI!)
 					groups = {
 						i(271766),	-- Heavehammer
 						i(271767),	-- Healer's Staff
