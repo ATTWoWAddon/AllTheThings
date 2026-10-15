@@ -1273,8 +1273,8 @@ if app.GameBuildVersion >= 60000 then
 	child:CreateTrackingCheckbox("FOLLOWERS", "Followers", true)
 		:AlignAfter(accwideCheckboxFollowers)
 
-	if app.GameBuildVersion >= 80000 then
-		-- Azerite Essences (BFA+)
+	if app.GameBuildVersion >= 80200 then
+		-- Azerite Essences (BFA 8.2+)
 		local accwideCheckboxAzeriteEssences =
 		child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
 			:AlignBelow(accwideCheckboxFollowers)

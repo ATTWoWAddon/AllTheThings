@@ -1339,7 +1339,7 @@ local InformationTypes = {
 	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
 
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
-	CreateInformationType("azeriteessenceID", { text = L.AZERITE_ESSENCE_ID }),
+	CreateInformationType("azeriteessenceID", { minBuild = 80200, text = L.AZERITE_ESSENCE_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
 	CreateInformationType("crs", { text = L.CREATURES_LIST, ShouldDisplayInExternalTooltips = false,
