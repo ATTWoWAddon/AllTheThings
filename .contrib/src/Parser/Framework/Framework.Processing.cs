@@ -539,7 +539,7 @@ namespace ATT
 
                         // merge any quest information from the quest DB so that field names in the questRef are accurate
                         Objects.Merge(entry, questRef);
-                        // dont bother adding quests which literally have nothing useful in them
+                        // don't bother adding quests which literally have nothing useful in them
                         if (entry.Count > 1)
                         {
                             Consolidate_lvl(entry);
@@ -919,7 +919,7 @@ namespace ATT
             if (!CheckTimeline(data, parentData))
                 return false;
 
-            // These validate functions require current heirarchy
+            // These validate functions require current hierarchy
             Validate_General(data);
             Validate_Encounter(data);
             Validate_Criteria(data, parentData);
@@ -962,7 +962,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Logic which incoporates conditional DB data into Objects and captures the extent of SOURCED fields for each Object
+        /// Logic which incorporates conditional DB data into Objects and captures the extent of SOURCED fields for each Object
         /// </summary>
         private static bool DataConditionalMerge(IDictionary<string, object> data, IDictionary<string, object> parentData = null)
         {
@@ -973,7 +973,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Logic which incoporates various DB data, and can move data between containers
+        /// Logic which incorporates various DB data, and can move data between containers
         /// </summary>
         private static bool DataIncorporation(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
@@ -996,7 +996,7 @@ namespace ATT
         /// <param name="data"></param>
         private static bool DataConsolidation(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
-            // eariler in the processing we may realize that data is not useful, and can mark it to be removed
+            // earlier in the processing we may realize that data is not useful, and can mark it to be removed
             if (data.TryGetValue("_remove", out bool remove) && remove)
                 return false;
 
@@ -1744,7 +1744,7 @@ namespace ATT
             Validate_IProcessedFields(data);
             Validate_achievement(data);
 
-            // dynamic config-driven validaton
+            // dynamic config-driven validation
             Validator.Validate(data);
 
             // Mark this item as having a reference since it exists in a processed container
@@ -1966,7 +1966,7 @@ namespace ATT
                 }
             }
 
-            // esnure Quest Items are referenced
+            // ensure Quest Items are referenced
             if (data.TryGetValue("qis", out List<object> qis))
             {
                 foreach (var qi in qis.AsTypedEnumerable<decimal>())
@@ -2391,7 +2391,7 @@ namespace ATT
             // Merge quest entry to AllQuest collection
             Objects.ReferenceQuestIDs(data);
 
-            // Classic-only AQD/HQD quest datas
+            // Classic-only AQD/HQD quest data
             if (data.TryGetValue("aqd", out IDictionary<string, object> aqd))
             {
                 Objects.ReferenceQuestIDs(aqd);
@@ -3190,13 +3190,13 @@ namespace ATT
                 var childTrees = criteriaTree.EnumerateChildren().ToList();
                 if (childTrees.Count > 0)
                 {
-                    // If an Achievement has a parent CriteriaTree which requires some arbitrary partial set of its Criterias to be completed,
+                    // If an Achievement has a parent CriteriaTree which requires some arbitrary partial set of its criteria to be completed,
                     // add a debug message that this Achievement may simply need to be a partial_achievement instead for simplicity
                     // TODO: this works technically but there's way more results than useful. Perhaps only report at the end based
                     // whether matching Criteria has been used under another Achievement
                     //if (criteriaTree.Operator == 8 && criteriaTree.Amount > 0 && criteriaTree.Amount < childTrees.Count)
                     //{
-                    //    LogDebug($"INFO: Achievement {achID} has a CriteriaTree requiring {criteriaTree.Amount} out of {childTrees.Count} Criterias. Perhaps it should be an `achpart` instead?", data);
+                    //    LogDebug($"INFO: Achievement {achID} has a CriteriaTree requiring {criteriaTree.Amount} out of {childTrees.Count} criteria. Perhaps it should be an `achpart` instead?", data);
                     //}
 
                     if (criteriaTree.IsAllianceOnlyFlags())
@@ -3267,7 +3267,7 @@ namespace ATT
                             }
                         }
 
-                        // more than 1 useful & non-ignored criteria tree to nest, but none had any incorporated data, so add basic criterias by index
+                        // more than 1 useful & non-ignored criteria tree to nest, but none had any incorporated data, so add basic criteria by index
                         if (!incorporated && !data.ContainsKey("achievement_criteria") && childTrees.Any(c => c.IsUseful() && !c.IsIgnoreFlags()))
                         {
                             extraData = extraData ?? new Dictionary<string, object>();
@@ -3643,12 +3643,12 @@ namespace ATT
                 {
                     if (!WagoData.TryGetTransmogSetAssociations(sameQuestTransmogSet.ID, out List<TransmogSetItem> additionalTmogSetItems) || additionalTmogSetItems.Count < 1)
                     {
-                        LogDebug($"INFO: Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
+                        LogDebug($"INFO: Ensemble {tmogSetID} missing additional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
                     }
                     else
                     {
                         allSourceIDs.AddRange(additionalTmogSetItems.Select(i => i.ItemModifiedAppearanceID));
-                        LogDebug($"INFO: Ensemble {tmogSetID} adding {additionalTmogSetItems.Count} addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}. Use _IgnoreSharedEnsembleByQuestID if this is unexpected.", data);
+                        LogDebug($"INFO: Ensemble {tmogSetID} adding {additionalTmogSetItems.Count} additional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}. Use _IgnoreSharedEnsembleByQuestID if this is unexpected.", data);
                     }
                 }
             }
@@ -4449,7 +4449,7 @@ namespace ATT
 
         private static void Consolidate_General(IDictionary<string, object> data)
         {
-            // dynamic config-driven validaton will perform clean up if any API data is weird and can't be fixed by contrib easily
+            // dynamic config-driven validation will perform clean up if any API data is weird and can't be fixed by contrib easily
             Validator.Validate(data);
 
             // validate any IProcessedField
@@ -4758,7 +4758,7 @@ namespace ATT
             {
                 LogError($"'criteriaID' {criteriaID} missing 'achID' under final Parent: [{ToJSON(parentData)}]", data);
             }
-            // Criteria nested under another Thing can never supercede that Thing's awp
+            // Criteria nested under another Thing can never supersede that Thing's awp
             if (parentData.TryGetValue("awp", out long parentAWP) && data.TryGetValue("awp", out long awp) && awp < parentAWP)
             {
                 LogDebug($"INFO: Removed Criteria AWP:{awp} which is before Parent AWP:{parentAWP}", data);
@@ -5007,7 +5007,7 @@ namespace ATT
                 return false;   // Invalid entry
 
             // We don't want things that got deleted to be in the addon.
-            // NOTE: If it's not the last entry, that means it might have been readded later?
+            // NOTE: If it's not the last entry, that means it might have been re-added later?
             // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
             // Deleting it from the actual database is actually expected for the real builds,
             // so don't remove this. This is how I want it. Thanks!

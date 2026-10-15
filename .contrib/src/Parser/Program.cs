@@ -46,7 +46,7 @@ namespace ATT
             // If criteria is defined, then attach the data for the criteria directly on the data package.
             if (criteriaTree.CriteriaID > 0 && WagoData.TryGetValue(criteriaTree.CriteriaID, out Criteria criteria))
             {
-                // Cache the criteriaID. We will be overriding this for Type 5 criterias.
+                // Cache the criteriaID. We will be overriding this for Type 5 criteria.
                 var criteriaID = criteria.ID;
 
                 // A handful of these criteria are semi-useless and can be merged with the logic of the achievement itself
@@ -101,7 +101,7 @@ namespace ATT
                 var subCriterias = new List<object>();
                 foreach (var criteriaChildRoot in criteriaTree.EnumerateChildren())
                 {
-                    // Determine if this criteria has its own criteriaID, if so, nest it.
+                    // Determine if this criterion has its own criteriaID, if so, nest it.
                     var subCriteriaData = ImportCriteriaData(criteriaChildRoot);
                     if (subCriteriaData.TryGetValue("criteriaID", out var subCriteriaID))
                     {
@@ -136,7 +136,7 @@ namespace ATT
 
             if (WagoData.TryGetValue(achievement.Criteria_tree, out CriteriaTree criteriaTree))
             {
-                // Determine if this criteria has its own criteriaID, if so, nest it.
+                // Determine if this criterion has its own criteriaID, if so, nest it.
                 var criteriaData = ImportCriteriaData(criteriaTree);
                 if (criteriaData.TryGetValue("criteriaID", out var criteriaID))
                 {

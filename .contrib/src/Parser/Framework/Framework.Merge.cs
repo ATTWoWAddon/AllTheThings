@@ -790,7 +790,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'spellID'/'recipeID'[long] key value
+        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing a 'spellID'/'recipeID'[long] key value
         /// </summary>
         public static void MergeRecipeDB(object rawDb)
         {
@@ -798,7 +798,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'spellID'[long] key value
+        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing a 'spellID'[long] key value
         /// </summary>
         public static void MergeSpellDB(object rawDb)
         {

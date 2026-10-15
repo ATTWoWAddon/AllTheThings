@@ -253,7 +253,7 @@ namespace ATT
             {
                 // save the current value
                 var keyVal = obj[replacement.Item1];
-                // remove the repalced key
+                // remove the replaced key
                 obj.Remove(replacement.Item1);
                 // apply the replacement
                 obj[replacement.Item2] = keyVal;
@@ -584,7 +584,7 @@ namespace ATT
                 catch { }
 
                 // Default, not sure how to parse this so assume difference
-                // dont need to spam this...
+                // don't need to spam this...
                 //Console.WriteLine("NOT SURE HOW TO PARSE THIS:");
                 //Console.Write(MiniJSON.Json.Serialize(oldValue));
                 //Console.Write(" (");

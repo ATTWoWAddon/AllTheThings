@@ -150,7 +150,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// For each of the <paramref name="groups"/> with an identical <paramref name="field"/> value to the the <paramref name="parent"/>,
+        /// For each of the <paramref name="groups"/> with an identical <paramref name="field"/> value to the <paramref name="parent"/>,
         /// that value will be removed
         /// A / A|A|A => A / _|_|_
         /// _ / A|A|A => _ / A|A|A
@@ -183,7 +183,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// If any of the <paramref name="groups"/> contains the same identical <paramref name="field"/> value, it will be copied to the the <paramref name="parent"/>
+        /// If any of the <paramref name="groups"/> contains the same identical <paramref name="field"/> value, it will be copied to the <paramref name="parent"/>
         /// A / A|A|_ => A / A|A|_
         /// _ / A|A|_ => A / A|A|_
         /// A / A|B|_ => A / A|B|_

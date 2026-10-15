@@ -48,12 +48,12 @@ namespace ATT
         }
 
         /// <summary>
-        /// Contruct an empty Property with the default value.
+        /// Construct an empty Property with the default value.
         /// </summary>
         public PropertyChanged() { }
 
         /// <summary>
-        /// Contruct an empty Property with a specific default value.
+        /// Construct an empty Property with a specific default value.
         /// </summary>
         /// <param name="defaultValue">The default value.</param>
         public PropertyChanged(T defaultValue)
