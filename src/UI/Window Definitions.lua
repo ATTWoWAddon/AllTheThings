@@ -576,7 +576,7 @@ local function ConditionallyExpandGroupsRecursively(group, expanded)
 		if not doSkipType or doSkipType == 1 then
 			group.expanded = expanded
 		else
-			-- a skip condition which should not propogate to sub-groups
+			-- a skip condition which should not propagate to sub-groups
 			group.expanded = nil
 			return
 		end
@@ -2315,7 +2315,7 @@ local function SetupCommandsForDefinition(definition)
 	definition.BuiltCommands = true
 
 	local suffix = definition.Suffix
-	-- direct /[command] accessbility
+	-- direct /[command] accessibility
 	if definition.Commands then
 		app.AddSlashCommands(definition.Commands, function(cmd, params)
 			local window = app:GetWindow(suffix)

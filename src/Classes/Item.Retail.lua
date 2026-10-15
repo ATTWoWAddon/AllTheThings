@@ -530,7 +530,7 @@ local CreateCostItem = app.CreateClass("CostItem", KEY, {
 		return GetItemCount(t.itemID, true, nil, true, true) or 0;
 	end,
 	collectible = app.ReturnFalse,
-	-- show a check when it is has matching quantity in your bags/reagent bank (bank/warband bank don't count at vendors)
+	-- show a check when it has a matching quantity in your bags/reagent bank (bank/warband bank don't count at vendors)
 	saved = function(t)
 		return GetItemCount(t.itemID, nil, nil, true) >= t.total;
 	end,

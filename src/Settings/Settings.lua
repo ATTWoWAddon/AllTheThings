@@ -899,7 +899,7 @@ settings.GetModeString = function(self)
 				thingActive = settings:Get(key);
 				if thingActive then
 					-- Heirloom Upgrades only count when Heirlooms are enabled
-					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
+					-- This prevents the heirloom upgrades and locked quests from being displayed as a mode.
 					-- Only 'Things' in General settings count towards the mode string
 					if (key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
 						and keyPrefix == "Thing"
@@ -1017,7 +1017,7 @@ settings.GetShortModeString = function(self)
 				thingActive = settings:Get(key);
 				if thingActive then
 					-- Heirloom Upgrades only count when Heirlooms are enabled
-					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
+					-- This prevents the heirloom upgrades and locked quests from being displayed as a mode.
 					if key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms") then
 						thingCount = thingCount + 1
 						things[#things + 1] = thingName

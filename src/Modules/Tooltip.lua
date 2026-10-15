@@ -777,7 +777,7 @@ app.AddEventHandler("OnRefreshComplete", function()
 end);
 
 -- Stores a cache of the 'tooltipInfo' for a given group
--- TODO: this isnt too effective right now since we have to clear the search cache as well
+-- TODO: this isn't too effective right now since we have to clear the search cache as well
 -- basically constantly. some tooltip information types rely on the 'Update' outcome of a group
 -- which is cached with the cached group
 -- perhaps will need to link the Update logic separately from the Search logic and use that

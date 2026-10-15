@@ -797,7 +797,7 @@ PrintQuestInfo = function(questID, new)
 
 		-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 		-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
-		-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
+		-- so when a quest flagged as HQT is accepted/completed directly, it will be easier to notice when it is incorrectly sourced
 		if hqt then
 			text = app:Linkify(text .. " [HQT]", app.Colors.ChatLinkHQT, "search:questID:" .. questID);
 		else
@@ -967,7 +967,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 				app.print(-1 * questDiff,"Quests Unflagged");
 			end
 		end
-		-- don't report quest completions if there's too many or we have yet to get initial quest completion
+		-- don't report quest completions if there are too many or we have yet to get initial quest completion
 		if manyQuests then
 			DoQuestPrints = nil
 		end
@@ -1871,7 +1871,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		end
 	end,
 	objectiveCost = function(t)
-		-- This is only used to calculate how many things are required for an objective when its using a provider.
+		-- This is only used to calculate how many things are required for an objective when it's using a provider.
 		local questID = t.questID;
 		if questID then
 			-- If the player isn't on that quest or has completed it, return.
@@ -2105,7 +2105,7 @@ app.AddEventHandler("OnLoad", function()
 						}
 						AddQuestInfoToTooltip(tooltipInfo, nextq, reference);
 					elseif not reference.DisablePartySync then
-						-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
+						-- The character won't be able to accept this quest without the help of a lower level character using Party Sync
 						tooltipInfo[#tooltipInfo + 1] = {
 							left = L.BREADCRUMB_PARTYSYNC_2,
 							color = app.Colors.LockedWarning,
@@ -2296,7 +2296,7 @@ local CreateNestedQuest = app.ExtendClass("Quest", "QuestNested", "questID", {
 			t.nestedSkipped = true
 			return
 		end
-		-- force collectible for normally un-collectible but trackable (repeatable) Quests to make sure it shows in list if the quest needs to be completed to progess
+		-- force collectible for normally un-collectible but trackable (repeatable) Quests to make sure it shows in list if the quest needs to be completed to progress
 		-- unless a quest is specifically set to be non-collectible directly
 		if t.trackable and rawget(t, "collectible") then
 			return
@@ -2656,7 +2656,7 @@ local function BuildSourceQuestChain(group)
 			skipContains = true,
 			SortPriority = 1.0,	-- follow any raw content in group
 			SortType = "Total",
-			-- copy any sourceQuests into the header incase the root is not actually a quest
+			-- copy any sourceQuests into the header in case the root is not actually a quest
 			sourceQuests = group.sourceQuests,
 		});
 		if useNested then

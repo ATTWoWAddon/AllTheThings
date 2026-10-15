@@ -488,7 +488,7 @@ app:CreateWindow("MiniList", {
 
 		-- Reset the minilist Runner before building new data
 		self:GetRunner().Reset()
-		-- Detatch the Window from the previous data (just in case)
+		-- Detach the Window from the previous data (just in case)
 		if self.data then
 			self.data.window = nil
 		end

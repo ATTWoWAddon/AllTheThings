@@ -150,7 +150,7 @@ app:CreateWindow("Tradeskills", {
 					-- Salvage Recipe harvest
 					if recipeInfo.isSalvageRecipe then
 						-- craftedItemID from salvage...
-						-- in some cases this is the 'actual' ouput of the salvage (TWW Cooking)
+						-- in some cases this is the 'actual' output of the salvage (TWW Cooking)
 						-- but in many other cases this is a 'fake item' representing 'multiple possible item outputs'
 						-- theoretically we could list this 'fake item' under Profession > Crafted > with all possible outputs
 						-- to allow driving crafting chains

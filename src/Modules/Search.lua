@@ -302,7 +302,7 @@ local __SearchValueCriteria = {
 local SearchValueCriteria = {}
 -- A set of Criteria functions which must all be valid for each search result to be included in the response
 local __ParentInclusionCriteria = {
-	-- Exclude heirarchical parents which don't exist, or specify '_nosearch' or are 'sourceIgnored'
+	-- Exclude hierarchical parents which don't exist, or specify '_nosearch' or are 'sourceIgnored'
 	function(parent)
 		-- check the parent to see if this parent chain will be excluded
 		if not parent then
@@ -430,7 +430,7 @@ local function BuildClonedHierarchy(sources)
 	for i=1,#sources do
 		source = sources[i]
 		if Eval_SearchCriteria(source) then
-			-- find/clone the expected parent group in hierachy
+			-- find/clone the expected parent group in hierarchy
 			parent = MatchOrCloneParentInHierarchy(source.parent);
 			if parent then
 				-- clone the Thing into the cloned parent
@@ -531,7 +531,7 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	end
 
 	SetRescursiveFilters();
-	-- add custom Criterias from external param
+	-- add custom Criteria from external param
 	ResetCriterias(criteria)
 	-- app.PrintDebug("BSR:",field,value)
 	-- app.PrintTable(DropFields)
