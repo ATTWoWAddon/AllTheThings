@@ -38,7 +38,7 @@ root(ROOTS.Instances, {
 						}),
 					},
 				}),
-				q(387, {	-- Quell The Uprising
+				q(387, {	-- Quell the Uprising
 					qg = 1719,	-- Warden Thelwater
 					coord = { 51.6, 69.4, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,

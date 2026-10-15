@@ -23,7 +23,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						races = ALLIANCE_ONLY,
 					}),
 					q(92124, {	-- Book Inventory
-						sourceQuest = 91741,	-- Nibbled on Book
+						sourceQuest = 91741,	-- Nibbled-On Book
 						qg = 951,	-- Brother Paxton
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
@@ -187,7 +187,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
-					q(91741, {	-- Nibbled on Book
+					q(91741, {	-- Nibbled-On Book
 						qs = 247834,	-- Nibbled on Book (QS!)
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1148,7 +1148,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(5628, {	-- Returning Home [Elwynn Forest]
 				altQuests = {
-					5627,	-- Returning Home [Darnassus]
+					5627,	-- Stars of Elune [Darnassus]
 					5629,	-- Returning Home [Teldrassil]
 					5630,	-- Returning Home [Dun Morogh]
 					5631,	-- Returning Home [Stormwind City]
@@ -1258,7 +1258,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(2300, {	-- SI:7
-				sourceQuest = 2205,	-- Seek out SI:7
+				sourceQuest = 2205,	-- Seek out SI: 7
 				qg = 917,	-- Keryn Sylvius
 				coord = { 43.8, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
@@ -1351,7 +1351,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
-			q(176, {	-- Wanted: "Hogger"
+			q(176, {	-- WANTED: "Hogger"
 				sourceQuest = 239,	-- Westbrook Garrison Needs Help!
 				provider = { "o", 68 },	-- Wanted Poster
 				coords = {

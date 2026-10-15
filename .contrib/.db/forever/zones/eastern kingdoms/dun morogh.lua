@@ -496,7 +496,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					i(1009),	-- Compact Hammer
 				},
 			}),
-			q(96408, {	-- A Vistor to Dun Morogh
+			q(96408, {	-- A Visitor to Dun Morogh
 				qg = 1376,	-- Beldin Steelgrill
 				coord = { 50.4, 49.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
@@ -761,7 +761,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				lvl = 2,
 			}),
 			q(96392, {	-- Farsen's Watch
-				sourceQuest = 96408,	-- A Vistor to Dun Morogh
+				sourceQuest = 96408,	-- A Visitor to Dun Morogh
 				qg = 264936,	-- Earthseer Farsen
 				coord = { 64.8, 58.4, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
@@ -974,7 +974,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(5630, {	-- Returning Home [Dun Morogh]
 				altQuests = {
-					5627,	-- Returning Home [Darnassus]
+					5627,	-- Stars of Elune [Darnassus]
 					5628,	-- Returning Home [Elwynn Forest]
 					5629,	-- Returning Home [Teldrassil]
 					5631,	-- Returning Home [Stormwind City]

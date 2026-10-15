@@ -196,10 +196,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 9,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			q(5645, {	-- A Lack of Fear
+			q(5645, {	-- Chastise
 				altQuests = {
-					5647,	-- A Lack of Fear [Darnassus]
-					5641,	-- A Lack of Fear [Ironforge]
+					5647,	-- Chastise [Darnassus]
+					5641,	-- Chastise [Ironforge]
 				},
 				qg = 376,	-- High Priestess Laurena <Priest Trainer>
 				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
@@ -307,7 +307,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				classes = { PALADIN },
 				lvl = 60,
 				groups = {
-					q(7645, {	-- Ancient Equine Spirit
+					q(7645, {	-- Manna-Enriched Horse Feed
 						qg = 2357,	-- Merideth Carlson <Horse Breeder>
 						coord = { 52.0, 55.6, MAP.HILLSBRAD_FOOTHILLS },
 						cost = {
@@ -1119,7 +1119,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(5631, {	-- Returning Home [Stormwind City]
 				altQuests = {
-					5627,	-- Returning Home [Darnassus]
+					5627,	-- Stars of Elune [Darnassus]
 					5628,	-- Returning Home [Elwynn Forest]
 					5629,	-- Returning Home [Teldrassil]
 					5630,	-- Returning Home [Dun Morogh]
@@ -1139,7 +1139,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(5632, {	-- Returning Home [Stormwind City]
 				altQuests = {
-					5627,	-- Returning Home [Darnassus]
+					5627,	-- Stars of Elune [Darnassus]
 					5628,	-- Returning Home [Elwynn Forest]
 					5629,	-- Returning Home [Teldrassil]
 					5630,	-- Returning Home [Dun Morogh]
@@ -1206,7 +1206,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(2206, {	-- Snatch and Grab
-				sourceQuest = 2205,	-- Seek out SI:7
+				sourceQuest = 2205,	-- Seek out SI: 7
 				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
 				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
 				maps = { MAP.ELWYNN_FOREST },
@@ -1328,7 +1328,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(392, {	-- The Curious Visitor
-				sourceQuest = 391,	-- The Stockage Riots
+				sourceQuest = 391,	-- The Stockade Riots
 				qg = 1719,	-- Warden Thelwater
 				coord = { 51.6, 69.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
@@ -1472,9 +1472,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
-			q(2998, {	-- The Tome of Divinity (1a/10)
+			q(2998, {	-- Tome of Divinity (1a/10)
 				altQuests = {
-					3681,	-- The Tome of Divinity (1b/10)
+					3681,	-- Tome of Divinity (1b/10)
 					1787,	-- The Tome of Divinity (8)
 				},
 				qg = 927,	-- Brother Wilhelm
@@ -1483,9 +1483,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				classes = { PALADIN },
 				lvl = 12,
 			}),
-			q(3681, {	-- The Tome of Divinity (1b/10)
+			q(3681, {	-- Tome of Divinity (1b/10)
 				altQuests = {
-					2998,	-- The Tome of Divinity (1a/10)
+					2998,	-- Tome of Divinity (1a/10)
 					1787,	-- The Tome of Divinity (8)
 				},
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
@@ -1496,8 +1496,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1641, {	-- The Tome of Divinity (2/10)
 				sourceQuests = {
-					2998,	-- The Tome of Divinity (1a/10)
-					3681,	-- The Tome of Divinity (1b/10)
+					2998,	-- Tome of Divinity (1a/10)
+					3681,	-- Tome of Divinity (1b/10)
 				},
 				altQuests = { 1787 },	-- The Tome of Divinity (8)
 				qg = 6171,	-- Duthorian Rall

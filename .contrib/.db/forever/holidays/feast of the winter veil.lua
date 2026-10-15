@@ -67,8 +67,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				i(17712, {	-- Winter Veil Disguise Kit (TOY!)
 					description = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
 					sourceQuests = {
-						7045,	-- A Smokywood Pastures Thank You! (Alliance)
-						6984,	-- A Smokywood Pastures Thank You! (Horde)
+						7045,	-- A Smokywood Pastures' Thank You! (Alliance)
+						6984,	-- A Smokywood Pastures' Thank You! (Horde)
 					},
 				}),
 			},

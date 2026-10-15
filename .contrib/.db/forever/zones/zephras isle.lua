@@ -774,7 +774,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(263426),	-- Ex Commander's Gauntlets
 				},
 			}),
-			q(92516, {	-- Hippogryph Harrassment
+			q(92516, {	-- Hippogryph Harassment
 				sourceQuests = {
 					92514,	-- Welcome to Shen'dar Village (H)
 					93461,	-- Welcome to Shen'dar Village (A)

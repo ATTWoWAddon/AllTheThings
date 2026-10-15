@@ -146,7 +146,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
 				},
 			}),
-			q(275, {	-- Blisters on The Land
+			q(275, {	-- Blisters on the Land
 				sourceQuest = 277,	-- Fire Taboo
 				qg = 1244,	-- Rethiel the Greenwarden
 				coord = { 56.3, 40.4, MAP.WETLANDS },
@@ -429,14 +429,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(281321),	-- Giantstone Medallion
 				},
 			}),
-			q(305, {	-- In Search of The Excavation Team (1/2)
+			q(305, {	-- In Search of the Excavation Team (1/2)
 				qg = 2096,	-- Tarrel Rockweaver
 				coord = { 11.5, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 21,
 			}),
-			q(306, {	-- In Search of The Excavation Team (2/2)
-				sourceQuest = 305,	-- In Search of The Excavation Team (1/2)
+			q(306, {	-- In Search of the Excavation Team (2/2)
+				sourceQuest = 305,	-- In Search of the Excavation Team (1/2)
 				qg = 1076,	-- Merrin Rockweaver
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
@@ -551,7 +551,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
-			q(634, {	-- Plea To The Alliance
+			q(634, {	-- Plea to the Alliance
 				sourceQuest = 633,	-- The Thandol Span (3/3)
 				qg = 1075,	-- Rhag Garmason
 				coord = { 49.9, 18.2, MAP.WETLANDS },

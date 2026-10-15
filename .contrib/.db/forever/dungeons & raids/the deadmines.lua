@@ -44,7 +44,7 @@ root(ROOTS.Instances, {
 					lvl = 9,
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
-				q(167, {	-- Oh Brother. . .
+				q(167, {	-- Oh Brother...
 					qg = 656,	-- Wilder Thistlenettle
 					coord = { 70.2, 40.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,

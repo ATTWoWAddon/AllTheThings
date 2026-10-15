@@ -154,7 +154,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					q(5629, {	-- Returning Home [Teldrassil]
 						altQuests = {
-							5627,	-- Returning Home [Darnassus]
+							5627,	-- Stars of Elune [Darnassus]
 							5628,	-- Returning Home [Elwynn Forest]
 							5630,	-- Returning Home [Dun Morogh]
 							5631,	-- Returning Home [Stormwind City]
@@ -427,7 +427,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97938, {	-- Camping 101: Alchemy [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				requireSkill = ALCHEMY,
@@ -439,7 +439,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97939, {	-- Camping 101: Blacksmithing [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				maps = { MAP.DARKSHORE },
@@ -452,7 +452,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(96634, {	-- Camping 101: Cooking [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
@@ -460,7 +460,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(97940, {	-- Camping 101: Enchanting [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				requireSkill = ENCHANTING,
@@ -472,7 +472,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97941, {	-- Camping 101: Engineering [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				maps = { MAP.DARKSHORE },
@@ -485,7 +485,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97942, {	-- Camping 101: First Aid [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				requireSkill = FIRST_AID,
@@ -497,7 +497,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97943, {	-- Camping 101: Fishing [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				maps = { MAP.DARNASSUS },
@@ -510,7 +510,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97944, {	-- Camping 101: Herbalism [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				requireSkill = HERBALISM,
@@ -522,7 +522,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97946, {	-- Camping 101: Leatherworking [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				requireSkill = LEATHERWORKING,
@@ -534,7 +534,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97948, {	-- Camping 101: Mining [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				maps = { MAP.DARKSHORE },
@@ -547,7 +547,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97949, {	-- Camping 101: Skinning [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				requireSkill = SKINNING,
@@ -559,7 +559,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97950, {	-- Camping 101: Tailoring [Teldrassil]
-				sourceQuest = 96630,	-- The Great Outdoors [Teldrassil]
+				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
 				maps = { MAP.DARNASSUS },

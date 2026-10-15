@@ -36,7 +36,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						},
 					}),
 					q(1516, {	-- Call of Earth (1/3)
-						altQuests = { 1519 },	-- Call to Earth (1/3 Mulgore)
+						altQuests = { 1519 },	-- Call of Earth (1/3 Mulgore)
 						qg = 5887,	-- Canaga Earthcaller
 						coord = { 42.4, 69.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
@@ -51,7 +51,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					}),
 					q(1517, {	-- Call of Earth (2/3)
 						sourceQuest = 1516,	-- Call of Earth (1/3)
-						altQuests = { 1520 },	-- Call to Earth (2/3 Mulgore)
+						altQuests = { 1520 },	-- Call of Earth (2/3 Mulgore)
 						qg = 5887,	-- Canaga Earthcaller
 						coord = { 42.4, 69.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
@@ -61,7 +61,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					}),
 					q(1518, {	-- Call of Earth (3/3)
 						sourceQuest = 1517,	-- Call of Earth (2/3)
-						altQuests = { 1521 },	-- Call to Earth (3/3 Mulgore)
+						altQuests = { 1521 },	-- Call of Earth (3/3 Mulgore)
 						qg = 5891,	-- Minor Manifestation of Earth
 						coord = { 44.0, 76.0, MAP.DUROTAR },
 						races = HORDE_ONLY,
@@ -76,7 +76,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						},
 					}),
 					q(788, {	-- Cutting Teeth
-						sourceQuest = 4641,	-- Your Place In The World
+						sourceQuest = 4641,	-- Your Place in the World
 						qg = 3143,	-- Gornek
 						coord = { 42.0, 68.4, MAP.DUROTAR },
 						races = HORDE_ONLY,
@@ -352,7 +352,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 							}),
 						},
 					}),
-					q(4641, {	-- Your Place In The World
+					q(4641, {	-- Your Place in the World
 						altQuests = { 787 },	-- The New Horde
 						qg = 10176,	-- Kaltunk
 						coord = { 43.2, 68.4, MAP.DUROTAR },
