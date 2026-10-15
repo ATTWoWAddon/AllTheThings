@@ -78,7 +78,7 @@ root(ROOTS.Instances, {
 					lvl = 9,
 					groups = {
 						objective(1, {	-- Deliver the Treaty of Understanding to Magni Bronzebeard
-							provider = { "n", 2784 },	-- King Magni Bronzebeard
+							provider = { "n", 2784 },	-- King Magni Bronzebeard <Lord of Ironforge>
 							coord = { 39.3, 56.0, MAP.IRONFORGE },
 						}),
 					},

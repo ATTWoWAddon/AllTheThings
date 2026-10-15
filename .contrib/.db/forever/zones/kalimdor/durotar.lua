@@ -942,7 +942,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Escort Pal'juh out of Kolkar Crag
-						provider = { "n", 275811 },	-- Pal'juh
+						provider = { "n", 275811 },	-- Pal'juh <Shadow Hunter Trainee>
 					}),
 					i(286728),	-- Kolkar Hammer
 					i(286729),	-- Kolkar Bow

@@ -45,7 +45,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/1 Listen to Elaadrin
-						provider = { "n", 252475 },	-- Elaadrin Evengale
+						provider = { "n", 252475 },	-- Elaadrin Evengale <Supreme Magister of The High Order>
 						coord = { 66.5, 79.8, MAP.ZEPHRAS_ISLE },
 					}),
 				},
@@ -272,7 +272,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/1 Commander Belguilos slain
-						provider = { "n", 252666 },	-- Commander Belguilos
+						provider = { "n", 252666 },	-- Commander Belguilos <The Breaker>
 						coord = { 65.6, 65.5, MAP.ZEPHRAS_ISLE },
 					}),
 					i(263335),	-- Hunter's Cord
@@ -562,7 +562,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qi = 263491,	-- Shadowsong Family Signet (QI!)
 				groups = {
 					objective(1, {	-- Deliver the Shadowsong Family Signet to Talaanis Shadowsong in Valanaar.
-						provider = { "n", 252476 },	-- Talaanis Shadowsong
+						provider = { "n", 252476 },	-- Talaanis Shadowsong <High Elder of Zephras Isle>
 						coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 					}),
 				},
@@ -626,15 +626,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						},
 					}),
 					objective(2, {	-- Speak with High Tinker Mekkatorque
-						provider = { "n", 7937 },	-- High Tinker Mekkatorque
+						provider = { "n", 7937 },	-- High Tinker Mekkatorque <King of Gnomes>
 						coord = { 69.2, 49.2, MAP.IRONFORGE },
 					}),
 					objective(3, {	-- Speak with King Magni Bronzebeard
-						provider = { "n", 2784 },	-- King Magni Bronzebeard
+						provider = { "n", 2784 },	-- King Magni Bronzebeard <Lord of Ironforge>
 						coord = { 39.4, 55.8, MAP.IRONFORGE },
 					}),
 					objective(4, {	-- Speak with Tyrande Whisperwind
-						provider = { "n", 7999 },	-- Tyrande Whisperwind
+						provider = { "n", 7999 },	-- Tyrande Whisperwind <High Priestess of Elune>
 						coord = { 43.0, 77.8, MAP.DARNASSUS },
 					}),
 					i(286427),	-- Cloak of the Honored Guest
@@ -1002,7 +1002,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Ur'endra slain
-						provider = { "n", 258443 },	-- Ur'endra
+						provider = { "n", 258443 },	-- Ur'endra <Mate of Urs'endris>
 						coord = { 53.9, 65.3, MAP.ZEPHRAS_ISLE },
 					}),
 				},
@@ -1388,7 +1388,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qi = 253152,	-- Aonda's Written Report (QI!)
 				groups = {
 					objective(1, {	-- Deliver Aonda's Written Report to Valennia Stormfist in Valanaar.
-						provider = { "n", 252383 },	-- Valennia Stormfist
+						provider = { "n", 252383 },	-- Valennia Stormfist <Peacekeeper Captain>
 						coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 					}),
 				},

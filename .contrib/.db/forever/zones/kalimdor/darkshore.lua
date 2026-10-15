@@ -639,7 +639,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(6343, {	-- Return to Nessa
 				sourceQuest = 6342,	-- Flight to Auberdine
 				providers = {
-					{ "n", 4200 },	-- Laird
+					{ "n", 4200 },	-- Laird <Fish Vendor>
 					{ "i", 16263 },	-- Laird's Response
 				},
 				coord = { 36.8, 44.2, MAP.DARKSHORE },
@@ -800,7 +800,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(944, {	-- The Master's Glaive
 				sourceQuest = 948,	-- Onu
 				providers = {
-					{ "n", 3616 },	-- Onu
+					{ "n", 3616 },	-- Onu <Ancient of Lore>
 					{ "i", 5251 },	-- Phial of Scrying
 					{ "o", 10076 },	-- Scrying Bowl
 				},

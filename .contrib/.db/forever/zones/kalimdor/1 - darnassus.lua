@@ -625,12 +625,12 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(22250, {	-- Herb Pouch
 						description = "Only select Herbalism Suppliers sells this pouch.",
 						providers = {
-							{ "n", 4216 },	-- Chardryn <Herbalism Supplies>
+							{ "n", 4216 },	-- Chardryn <Herbalism Supplier>
 							{ "n", 5503 },	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 							{ "n", 5138 },	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 							{ "n", 4615 },	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 							{ "n", 3548 },	-- Selina Weston <Alchemy & Herbalism Supplies>
-							{ "n", 3405 },	-- Zeal'aya <Herbalism Supplies>
+							{ "n", 3405 },	-- Zeal'aya <Herbalism Supplier>
 						},
 					}),
 				},

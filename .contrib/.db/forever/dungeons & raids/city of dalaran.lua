@@ -138,7 +138,7 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Mana Elemental slain
-							provider = { "n", 246016 },	-- Mana Elemental
+							provider = { "n", 246016 },	-- Arcanic Enigma
 						}),
 						i(251962),	-- Violet Sash
 						i(279849),	-- Runebound Gloves

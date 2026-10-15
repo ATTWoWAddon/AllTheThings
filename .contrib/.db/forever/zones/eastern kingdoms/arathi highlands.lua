@@ -602,7 +602,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Defend Professor Phizzlethorpe
-						provider = { "n", 2768 },	-- Professor Phizzlethorpe
+						provider = { "n", 2768 },	-- Professor Phizzlethorpe <Blackwater Raiders>
 					}),
 				},
 			}),

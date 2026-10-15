@@ -1057,7 +1057,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Escort Perith Stormhoof out of Palemane Rock
-						provider = { "n", 272203 },	-- Perith Stormhoof
+						provider = { "n", 272203 },	-- Perith Stormhoof <Longwalker>
 					}),
 				},
 			}),
