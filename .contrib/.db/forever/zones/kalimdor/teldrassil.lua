@@ -55,8 +55,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						qg = 6780,	-- Porthannius
 						coord = { 61.2, 47.6, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
-						qi = 7627,	-- Dolanaar Delivery (QI!)
 						_drop = { "g" },	-- Refreshing Spring Water
+						qi = 7627,	-- Dolanaar Delivery (QI!)
 					}),
 					q(3118, {	-- Encrypted Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
@@ -193,8 +193,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 59.1, 39.49, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
-						qi = 275022,	-- Lost Journal (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275022,	-- Lost Journal (QI!)
 					}),
 					q(456, {	-- The Balance of Nature (1/2)
 						qg = 2079,	-- Conservator Ilthalaine
@@ -576,16 +576,16 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 3516,	-- Arch Druid Fandral Staghelm
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				qi = 279291,	-- Drained Vessel (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279291,	-- Drained Vessel (QI!)
 			}),
 			q(98065, {	-- Crown of the Earth (2/2) [Forever]
 				sourceQuest = 98046,	-- Crown of the Earth (1/2) [Forever]
 				qg = 4092,	-- Lariia
 				coord = { 40.2, 88.2, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				qi = 279331,	-- Moonwell Remnants (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279331,	-- Moonwell Remnants (QI!)
 			}),
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				sourceQuest = 928,	-- Crown of the Earth (2/6)
@@ -726,8 +726,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
-				qi = 286069,	-- Lashwater Salve (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 286069,	-- Lashwater Salve (QI!)
 			}),
 			q(1684, {	-- Elanaria
 				altQuests = {

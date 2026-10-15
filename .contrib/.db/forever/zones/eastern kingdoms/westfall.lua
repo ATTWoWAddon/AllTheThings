@@ -529,8 +529,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 52.5, 53.0, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
-				qi = 254545,	-- Well Water Sample Kit (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 254545,	-- Well Water Sample Kit (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Jansen Stead Water Sample
 						provider = { "i", 254546 },	-- Jansen Stead Water Sample

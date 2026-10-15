@@ -33,8 +33,8 @@ root(ROOTS.Instances, {
 					coord = { 52.5, 53.0, MAP.WESTFALL },
 					races = ALLIANCE_ONLY,
 					lvl = 9,
-					qi = 254553,	-- Extra-Destructive Explosives (QI!)
 					timeline = { TIMELINE.ADDED_1_60_1 },
+					qi = 254553,	-- Extra-Destructive Explosives (QI!)
 				}),
 				q(92819, {	-- Destruction in Deadmines (2/2)
 					sourceQuest = 92753,	-- Destruction in Deadmines (1/2)

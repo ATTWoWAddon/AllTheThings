@@ -233,8 +233,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 269153,	-- Mountaineer Ylva
 				coord = { 31.8, 86.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				qi = 253247,	-- Banner of Ironforge (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 253247,	-- Banner of Ironforge (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Headsplitter slain
 						provider = { "n", 269185 },	-- Headsplitter
@@ -567,8 +567,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 50.6, 53.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
-				qi = 278051,	-- Monogrammed Silver Hair Clip (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 278051,	-- Monogrammed Silver Hair Clip (QI!)
 				groups = {
 					i(281256),	-- Repurposed Hair Band
 				},

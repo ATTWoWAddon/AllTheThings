@@ -274,15 +274,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(737, {	-- Forbidden Knowledge
 				allianceQuestData = {
 					qg = 2786,	-- Gerrig Bonegrip
-					qi = 4647,	-- Yagyin's Digest (QI!)
 					sourceQuest = 735,	-- The Star, the Hand and the Heart [A]
 					coord = { 50.8, 5.6, MAP.IRONFORGE },
+					qi = 4647,	-- Yagyin's Digest (QI!)
 				},
 				hordeQuestData = {
 					qg = 2934,	-- Keeper Bel'dugur
-					qi = 4647,	-- Yagyin's Digest (QI!)
 					sourceQuest = 736,	-- The Star, the Hand and the Heart [H]
 					coord = { 53.7, 54.5, MAP.UNDERCITY },
+					qi = 4647,	-- Yagyin's Digest (QI!)
 				},
 				lvl = 30,
 				groups = {

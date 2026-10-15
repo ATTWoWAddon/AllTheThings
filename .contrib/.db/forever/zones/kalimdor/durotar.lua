@@ -292,8 +292,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.82, 69.14, MAP.DUROTAR },
 						races = HORDE_ONLY,
 						lvl = 4,
-						qi = 275022,	-- Lost Journal (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275022,	-- Lost Journal (QI!)
 					}),
 					q(792, {	-- Vile Familiars
 						qg = 3145,	-- Zureetha Fargaze

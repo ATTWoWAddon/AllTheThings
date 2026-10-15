@@ -531,8 +531,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 80.0, 70.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
-				qi = 254552,	-- Remote Detonator Kit (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 254552,	-- Remote Detonator Kit (QI!)
 			}),
 			q(6261, {	-- Dungar Longdrink
 				sourceQuest = 6281,	-- Continue to Stormwind
@@ -581,8 +581,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				maps = { MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
-				qi = 254553,	-- Extra-Destructive Explosives (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 254553,	-- Extra-Destructive Explosives (QI!)
 			}),
 			q(7640, {	-- Exorcising Terrordale
 				sourceQuest = 7639,	-- To Show Due Judgment
@@ -741,9 +741,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 55.0, 8.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(3629, {	-- Goblin Engineering [A]
 				altQuests = {
@@ -761,9 +761,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 55.0, 8.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(1700, {	-- Grimand Elmore
 				sourceQuest = 1701,	-- Fire Hardened Mail
@@ -1059,8 +1059,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 30.4, 29.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
-				qi = 277119,	-- Gatehouse Shipment (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277119,	-- Gatehouse Shipment (QI!)
 			}),
 			q(1940, {	-- Pristine Spider Silk
 				sourceQuest = 1938,	-- Ur's Treatise on Shadow Magic
@@ -1085,8 +1085,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 38.6, 62.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
-				qi = 277158,	-- Wrapped Reading Material (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277158,	-- Wrapped Reading Material (QI!)
 			}),
 			q(2281, {	-- Redridge Rendezvous
 				sourceQuests = {

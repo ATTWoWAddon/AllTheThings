@@ -1095,9 +1095,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(3637, {	-- Gnome Engineering [H]
 				altQuests = {
@@ -1115,9 +1115,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 30,
-				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(3633, {	-- Goblin Engineering [H]
 				altQuests = {
@@ -1135,9 +1135,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 30,
-				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(875, {	-- Harpy Lieutenants
 				sourceQuest = 867,	-- Harpy Raiders

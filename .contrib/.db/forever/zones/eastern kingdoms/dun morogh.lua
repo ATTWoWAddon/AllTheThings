@@ -77,8 +77,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						races = { DWARF },
 						classes = { SHAMAN },
 						lvl = 1,
-						qi = 282400,	-- Archaic Rune (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 282400,	-- Archaic Rune (QI!)
 					}),
 					q(1599, {	-- Beginnings
 						altQuests = { 1598 },	-- The Stolen Tome
@@ -124,8 +124,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						races = { DWARF },
 						classes = { SHAMAN },
 						lvl = 4,
-						qi = 6635,	-- Earth Sapta (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 6635,	-- Earth Sapta (QI!)
 					}),
 					q(94375, {	-- Call of Earth (3/3)
 						sourceQuest = 94374,	-- Call of Earth (2/3)
@@ -134,8 +134,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						races = { DWARF },
 						classes = { SHAMAN },
 						lvl = 4,
-						qi = 6656,	-- Rough Quartz (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 6656,	-- Rough Quartz (QI!)
 						groups = {
 							i(5175, {	-- Earth Totem
 								description = "You must keep this in your bags forever.",
@@ -308,8 +308,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 33.4, 71.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
-						qi = 275019,	-- Supply Bundle (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275019,	-- Supply Bundle (QI!)
 					}),
 					q(183, {	-- The Boar Hunter
 						qg = 714,	-- Talin Keeneye
@@ -730,8 +730,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 47.3, 52.2, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
-				qi = 286355,	-- Crate of Candles (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 286355,	-- Crate of Candles (QI!)
 			}),
 			q(5637, {	-- Desperate Prayer
 				altQuests = {

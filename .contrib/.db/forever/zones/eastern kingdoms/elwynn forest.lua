@@ -190,10 +190,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(91741, {	-- Nibbled on Book
 						qs = 247834,	-- Nibbled on Book (QS!)
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						qis = {
 							247857,	-- Nibbled on Book
 						},
-						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(91743, {	-- Rascally Rodents
 						sourceQuest = 92124,	-- Book Inventory
@@ -245,8 +245,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qg = 248415,	-- Tordrin Sternblade
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
-						qi = 247970,	-- Kobold Tracking Kit (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 247970,	-- Kobold Tracking Kit (QI!)
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
 								provider = { "o", 563442 },	-- Kobold Tracks
@@ -577,8 +577,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 240,	-- Marshal Dughan
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				qi = 279935,	-- Book Bag (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279935,	-- Book Bag (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Picture Book: Fun with Elementals
 						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals

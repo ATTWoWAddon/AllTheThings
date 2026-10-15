@@ -418,9 +418,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 68.8, 45.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(4181, {	-- Goblin Engineering [A]
 				altQuests = {
@@ -438,9 +438,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 68.8, 45.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(1682, {	-- Grey Iron Weapons
 				sourceQuest = 1681,	-- Ironband's Compound
@@ -903,8 +903,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				provider = { "o", 660964 },	-- Misplaced Packages
 				coord = { 72.6, 48.5, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				qi = 277505,	-- Misplaced Package (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277505,	-- Misplaced Package (QI!)
 			}),
 		}),
 		n(TREASURES, {

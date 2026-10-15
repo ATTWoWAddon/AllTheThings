@@ -57,8 +57,8 @@ root(ROOTS.Instances, {
 					maps = { MAP.ALTERAC_MOUNTAINS, MAP.SILVERPINE_FOREST },
 					races = HORDE_ONLY,
 					lvl = 30,
-					qi = 279469,	-- Grimy Key (QI!)
 					timeline = { TIMELINE.ADDED_1_60_1 },
+					qi = 279469,	-- Grimy Key (QI!)
 				}),
 				q(92459, {	-- Friend of the Kirin Tor
 					sourceQuest = 92458,	-- Heart of Disruption [Alliance]
@@ -66,8 +66,8 @@ root(ROOTS.Instances, {
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					races = ALLIANCE_ONLY,
 					lvl = 24,
-					qi = 251961,	-- Arcane Mote (QI!)
 					timeline = { TIMELINE.ADDED_1_60_1 },
+					qi = 251961,	-- Arcane Mote (QI!)
 				}),
 				q(92458, {	-- Heart of Disruption [Alliance]
 					sourceQuest = 92432,	-- An Alarming Request
@@ -75,8 +75,8 @@ root(ROOTS.Instances, {
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					races = ALLIANCE_ONLY,
 					lvl = 24,
-					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					timeline = { TIMELINE.ADDED_1_60_1 },
+					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
 							provider = { "i", 251961 },	-- Arcane Mote
@@ -93,8 +93,8 @@ root(ROOTS.Instances, {
 					coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
 					races = HORDE_ONLY,
 					lvl = 24,
-					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					timeline = { TIMELINE.ADDED_1_60_1 },
+					qi = 277507,	-- Dalaran Sewer Key (QI!)
 					groups = {
 						objective(1, {	-- 0/1 Arcane Mote
 							provider = { "i", 251961 },	-- Arcane Mote
@@ -150,8 +150,8 @@ root(ROOTS.Instances, {
 					coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
 					races = HORDE_ONLY,
 					lvl = 24,
-					qi = 251961,	-- Arcane Mote (QI!)
 					timeline = { TIMELINE.ADDED_1_60_1 },
+					qi = 251961,	-- Arcane Mote (QI!)
 				}),
 				q(96988, {	-- Source of Power
 					qg = 11044,	-- Doctor Martin Felben

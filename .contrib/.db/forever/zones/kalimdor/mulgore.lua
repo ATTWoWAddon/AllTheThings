@@ -201,8 +201,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 44.2, 76.0, MAP.MULGORE },
 						races = HORDE_ONLY,
 						lvl = 4,
-						qi = 275019,	-- Supply Bundle (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275019,	-- Supply Bundle (QI!)
 					}),
 					q(780, {	-- The Battleboars
 						sourceQuest = 750,	-- The Hunt Continues
@@ -816,8 +816,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				races = { ORC, TAUREN, TROLL },
 				lvl = 4,
-				qi = 206159,	-- Venture Co Disguise (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 206159,	-- Venture Co Disguise (QI!)
 				groups = {
 					objective(1, {	-- 0/5 Seaforium Mining Charge
 						provider = { "i", 206157 },	-- Seaforium Mining Charge (QI!)
@@ -830,8 +830,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				races = { ORC, TAUREN, TROLL },
 				lvl = 4,
-				qi = 206176,	-- Mortar and Pestle (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 206176,	-- Mortar and Pestle (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Pine Salve
 						provider = { "i", 206175 },	-- Pine Salve (QI!)
@@ -849,8 +849,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				races = HORDE_ONLY,
 				classes = { HUNTER, SHAMAN, DRUID },
 				lvl = 4,
-				qi = 206344,	-- Knife Set (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 206344,	-- Knife Set (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
 						provider = { "i", 206345 },	-- Fish Chunks (QI!)
@@ -911,8 +911,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 32.4, 20.6, MAP.MULGORE },
 				races = HORDE_ONLY,
 				lvl = 23,	-- Required level; quest level 30.
-				qi = 273015,	-- Toxin Extractor (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 273015,	-- Toxin Extractor (QI!)
 				groups = {
 					objective(1, {	-- 0/5 Gloomrise Toxin Sample
 						description = "Use the provided Toxin Extractor on Gnawed Corpses at Gloomrise.",
@@ -1127,8 +1127,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 48.5, 60.4, MAP.MULGORE },
 				races = { UNDEAD, TAUREN },
 				lvl = 4,
-				qi = 281139,	-- Thunderhorn's Report (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 281139,	-- Thunderhorn's Report (QI!)
 				groups = {
 					i(3443),	-- Ceremonial Tomahawk
 					i(4961),	-- Dreamwatcher Staff
@@ -1266,8 +1266,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 57.6, 63.2, MAP.MULGORE },
 				races = HORDE_ONLY,
 				lvl = 4,
-				qi = 286104,	-- Longwalker Malah's Report (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 286104,	-- Longwalker Malah's Report (QI!)
 			}),
 			q(99082, {	-- The High Chieftain
 				sourceQuests = {
@@ -1291,8 +1291,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 46.6, 63.0, MAP.MULGORE },
 				races = HORDE_ONLY,
 				lvl = 4,
-				qi = 286104,	-- Longwalker Malah's Report (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 286104,	-- Longwalker Malah's Report (QI!)
 				groups = {
 					objective(1, {	-- Bring Longwalker Malah's Report to Baine Bloodhoof
 						provider = { "n", 2993 },	-- Baine Bloodhoof

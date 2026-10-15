@@ -421,8 +421,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
 				maps = { MAP.STORMWIND_CITY },
 				lvl = 13,
-				qi = 279045,	-- Thundris' Letter (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279045,	-- Thundris' Letter (QI!)
 			}),
 			q(963, {	-- For Love Eternal
 				qg = 3644,	-- Cerellean Whiteclaw
@@ -562,8 +562,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				qg = 1646,	-- Baros Alexston <City Architect>
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				lvl = 13,
-				qi = 279048,	-- Alexston's Reply (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279048,	-- Alexston's Reply (QI!)
 				groups = {
 					i(282286),	-- Shipwright's Satchel
 				},

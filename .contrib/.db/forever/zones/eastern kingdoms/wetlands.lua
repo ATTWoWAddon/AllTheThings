@@ -74,8 +74,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 279595,	-- Menethil Statuette (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279595,	-- Menethil Statuette (QI!)
 			}),
 			q(98191, {	-- A Friend of the Family (2/2)
 				sourceQuest = 98190,	-- A Friend of the Family (1/2)
@@ -83,8 +83,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 80.0, 38.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 269598,	-- Menethil Statuette (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 269598,	-- Menethil Statuette (QI!)
 				groups = {
 					i(281296),	-- Knight's Lance
 					i(281297),	-- Royal Dagger
@@ -183,8 +183,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 8.0, 55.9, MAP.WETLANDS },
 				maps = { MAP.DARKSHORE },
 				lvl = 22,
-				qi = 279924,	-- Nord'el (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279924,	-- Nord'el (QI!)
 			}),
 			q(88756, {	-- Bring Back a Bang
 				qg = 1073,	-- Ashlan Stonesmirk
@@ -349,8 +349,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
-				qi = 280403,	-- Whelgar Relic Package (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280403,	-- Whelgar Relic Package (QI!)
 			}),
 			q(98293, {	-- Forced Disarmament
 				provider = { "o", 672330 },	-- Dragonmaw Armaments
@@ -401,8 +401,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
-				qi = 280394,	-- Goaz Stone (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280394,	-- Goaz Stone (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Heart of Ados
 						provider = { "i", 280395 },	-- Heart of Ados
@@ -494,8 +494,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 53.5, 54.5, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
-				qi = 280042,	-- Tattered Spellbook (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280042,	-- Tattered Spellbook (QI!)
 				groups = {
 					i(281306),	-- Flamescarred Spellbook
 					i(281307),	-- Dragonmaw Buckler
@@ -608,8 +608,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 8.4, 58.6, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 279589,	-- Menethil Statuette (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279589,	-- Menethil Statuette (QI!)
 			}),
 			q(285, {	-- Search More Hovels
 				sourceQuest = 284,	-- The Search Continues
@@ -931,8 +931,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
-				qi = 279996,	-- Goaz Stone (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279996,	-- Goaz Stone (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Ados Fragment
 						provider = { "i", 279993 },	-- Titanic Keystone
@@ -971,8 +971,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
-				qi = 280392,	-- Howin's Missive (QI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280392,	-- Howin's Missive (QI!)
 			}),
 			q(484, {	-- Young Crocolisk Skins
 				qg = 2094,	-- James Halloran
