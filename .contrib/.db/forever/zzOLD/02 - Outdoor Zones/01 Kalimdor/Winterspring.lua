@@ -1090,7 +1090,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 			i(21383, {	-- Winterfall Spirit Beads
 				["description"] =
-					"Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
+					"Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
 				["crs"] = {
 					10738,	-- High Chief Winterfall
 					7440,	-- Winterfall Den Watcher
