@@ -157,7 +157,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 			}),
 
 			-- Mount Mods
-			app.CreateDynamicHeader("mountmodID", SimpleHeaderGroup(app.HeaderConstants.MOUNT_MODS)),
+			app.CreateDynamicHeader("mountmodID", SimpleHeaderGroup(app.HeaderConstants.MOUNT_MODS, { minBuild = 100000 })),
 
 			-- Pet Battles
 			app.CreateDynamicHeader("pb", SimpleHeaderGroup(app.HeaderConstants.PET_BATTLES, {dynamic_withsubgroups = true})),
