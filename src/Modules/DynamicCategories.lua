@@ -172,6 +172,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- Profession Nodes
 			app.CreateDynamicHeader("professionnodeID", {
+				minBuild = 100000,
 				name = L.PROFESSION_NODES_CHECKBOX,
 				icon = app.asset("Category_Professions")	-- TODO: Make a new icon
 			}),
