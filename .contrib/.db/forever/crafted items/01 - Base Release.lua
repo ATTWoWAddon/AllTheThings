@@ -1011,9 +1011,7 @@ root(ROOTS.Craftables, {
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				providers = {
-					{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
-				},
+				providers = { { "o", 180662 }, },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 				--[[["groups"] = {
 					i(4305),	-- Bolt of Silk Cloth
 					i(2997),	-- Bolt of Woolen Cloth
@@ -1049,9 +1047,7 @@ root(ROOTS.Craftables, {
 					MAP.WESTFALL,
 					MAP.THE_BARRENS,
 				},
-				providers = {
-					{ "o", 180655 },	-- Floating Debris
-				},
+				providers = { { "o", 180655 }, },	-- Floating Debris
 			}),
 		}),
 		filter(PROFESSION_EQUIPMENT, {
@@ -1105,9 +1101,7 @@ root(ROOTS.Craftables, {
 				MAP.WESTFALL,
 				MAP.WETLANDS,
 			},
-			providers = {
-				{ "o", 180683 },	-- Firefin Snapper School
-			},
+			providers = { { "o", 180683 }, },	-- Firefin Snapper School
 		}),
 		i(13893, {	-- Large Raw Mightfish
 			description = "Can be caught on the seaside.",
@@ -1146,9 +1140,7 @@ root(ROOTS.Craftables, {
 				MAP.WESTFALL,
 				MAP.WETLANDS,
 			},
-			providers = {
-				{ "o", 180682 },	-- Oily Blackmouth School
-			},
+			providers = { { "o", 180682 }, },	-- Oily Blackmouth School
 		}),
 		i(6291, {	-- Raw Brilliant Smallfish
 			description = "Can be caught in inland waters and waterways.",
