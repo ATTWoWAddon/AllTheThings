@@ -898,7 +898,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = lvlsquish(4, 4, 1),
 				groups = {
 					objective(1, {	-- 0/8 Trophy Swoop Quill
-						provider = { "i", 4769 },	-- Swoop Hunting (QI!)
+						provider = { "i", 4769 },	-- Trophy Swoop Quill (QI!)
 						crs = {
 							2970,	-- Swoop
 							2969,	-- Wiry Swoop

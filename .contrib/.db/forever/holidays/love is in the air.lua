@@ -279,7 +279,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			},
 			description = "These items are contained within the Gifts and Pledges of Adoration.",
 			groups = {
-				i(21813, {	-- Bag of Heart Candies
+				i(21813, {	-- Bag of Candies
 					i(21816),	-- Heart Candy (Be Mine!)
 					i(21817),	-- Heart Candy (I LOVE YOU)
 					i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
@@ -299,7 +299,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(22261),	-- Love Fool
 				i(22279),	-- Lovely Black Dress
 				i(22200),	-- Silver Shafted Arrow
-				i(22235),	-- Peddlefeet (PET!)
+				i(22235),	-- Truesilver Shafted Arrow (PET!)
 				i(22259),	-- Unbestowed Friendship Bracelet
 			},
 		}),
@@ -312,7 +312,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(21829, {	-- Perfume Bottle
 					_drop = { "f", "spellID" },
 				}),
-				i(21815, {	-- Wrinkled Love Token
+				i(21815, {	-- Love Token
 					_drop = { "f" },
 				}),
 			},
@@ -322,7 +322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			cost = {
 				{ "i", 21833, 1 },	-- 1x Cologne Bottle
 				{ "i", 21829, 1 },	-- 1x Perfume Bottle
-				{ "i", 21815, 1 },	-- 1x Wrinkled Love Token
+				{ "i", 21815, 1 },	-- 1x Love Token
 			},
 			groups = {
 				i(22262, {	-- Alliance Gift Collection

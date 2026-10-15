@@ -188,11 +188,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
 					q(91741, {	-- Nibbled-On Book
-						qs = 247834,	-- Nibbled on Book (QS!)
+						qs = 247834,	-- Nibbled-On Book (QS!)
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						qis = {
-							247857,	-- Nibbled on Book
+							247857,	-- Nibbled-On Book
 						},
 					}),
 					q(91743, {	-- Rascally Rodents
@@ -389,7 +389,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(2057, {	-- Pitted Defias Shortsword
 						cr = 38,	-- Defias Thug
 					}),
-					i(247834, {	-- Nibbled on Book
+					i(247834, {	-- Nibbled-On Book
 						cr = 6,	-- Kobold Vermin
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
@@ -1069,7 +1069,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						cr = 473,	-- Morgan the Collector
 					}),
 					i(1183),	-- Elastic Wristguards
-					i(1360),	-- Stormwind Plate Gloves
+					i(1360),	-- Stormwind Chain Gloves
 				},
 			}),
 			q(107, {	-- Note to William
@@ -1562,10 +1562,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 44.2, 53.2, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(8485),	-- Bombay Cat (PET!)
-					i(8486),	-- Cornish Rex Cat (PET!)
-					i(8487),	-- Orange Tabby Cat (PET!)
-					i(8488),	-- Silver Tabby Cat (PET!)
+					i(8485),	-- Cat Carrier (Bombay) (PET!)
+					i(8486),	-- Cat Carrier (Cornish Rex) (PET!)
+					i(8487),	-- Cat Carrier (Orange Tabby) (PET!)
+					i(8488),	-- Cat Carrier (Silver Tabby) (PET!)
 				},
 			}),
 			n(1250, {	-- Drake Lindgren <General & Trade Supplies>
@@ -1589,9 +1589,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				end]],
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(5656),	-- Brown Horse (MOUNT!)
-					i(5655),	-- Chestnut Mare (MOUNT!)
-					i(2414),	-- Pinto (MOUNT!)
+					i(5656),	-- Brown Horse Bridle (MOUNT!)
+					i(5655),	-- Chestnut Mare Bridle (MOUNT!)
+					i(2414),	-- Pinto Bridle (MOUNT!)
 					i(18777),	-- Swift Brown Steed (MOUNT!)
 					i(18776),	-- Swift Palomino (MOUNT!)
 					i(18778),	-- Swift White Steed (MOUNT!)

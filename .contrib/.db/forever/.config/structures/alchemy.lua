@@ -170,7 +170,7 @@ ALCHEMY_RECIPES = {
 			i(250981, {	-- Recipe: Major Spellblasting Potion (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
-			i(250998, {	-- Recipe: Potion of Elemental Siphoning (RECIPE!)
+			i(250998, {	-- Recipe: Potion of Elemental Purging (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250994, {	-- Recipe: Potion of Venomous Blood (RECIPE!)
@@ -268,7 +268,7 @@ ALCHEMY_RECIPES = {
 			i(250981, {	-- Recipe: Major Spellblasting Potion (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
-			i(250998, {	-- Recipe: Potion of Elemental Siphoning (RECIPE!)
+			i(250998, {	-- Recipe: Potion of Elemental Purging (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 180 } },
 			}),
 			i(250994, {	-- Recipe: Potion of Venomous Blood (RECIPE!)

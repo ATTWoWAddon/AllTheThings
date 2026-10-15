@@ -46,7 +46,7 @@ root(ROOTS.Instances, {
 							},
 							description = "Can be found on a bookshelf in the circular room with Fenrus.",
 						}),
-						i(4534),	-- Steel-Clasped Bracers
+						i(4534),	-- Steel-clasped Bracers
 						i(6335),	-- Grizzled Boots
 					},
 				}),

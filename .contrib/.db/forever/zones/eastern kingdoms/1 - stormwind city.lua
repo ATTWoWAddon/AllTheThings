@@ -1983,8 +1983,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					i(3422),	-- Beautiful Wildflowers
 					i(3420),	-- Black Rose
-					i(3424),	-- Bouquet Of Black Roses
-					i(3423),	-- Bouquet Of White Roses
+					i(3424),	-- Bouquet of Black Roses
+					i(3423),	-- Bouquet of White Roses
 					i(3419),	-- Red Rose
 					i(3421),	-- Simple Wildflowers
 				},
@@ -2242,7 +2242,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(16059),	-- Common Brown Shirt
-					i(3428),	-- Common Grey Shirt
+					i(3428),	-- Common Gray Shirt
 					i(16060),	-- Common White Shirt
 					i(837),	-- Heavy Weave Armor
 					i(3589),	-- Heavy Weave Belt
@@ -2579,15 +2579,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = pvp({
 					i(18243),	-- Black Battlestrider (MOUNT!)
 					i(18244),	-- Black War Ram (MOUNT!)
-					i(18241),	-- Black War Steed (MOUNT!)
-					i(18242),	-- Black War Tiger (MOUNT!)
+					i(18241),	-- Black War Steed Bridle (MOUNT!)
+					i(18242),	-- Reins of the Black War Tiger (MOUNT!)
 				}),
 			}),
 			n(8666, {	-- Lil Timmy <Boy with kittens>
 				coord = { 64.0, 38.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(8489, {	-- White Kitten (PET!)
+					i(8489, {	-- Cat Carrier (White Kitten) (PET!)
 						isLimited = true,
 					}),
 				},
@@ -2606,7 +2606,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 58.6, 68.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(3024),	-- Bkp 2700 Enforcer
+					i(3024),	-- BKP 2700 "Enforcer"
 					i(3027),	-- Heavy Recurve Bow
 					i(2506),	-- Hornwood Recurve Bow
 					i(2511),	-- Hunter's Boomstick
@@ -2623,7 +2623,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(3426),	-- Bold Yellow Shirt
-					i(3428),	-- Common Grey Shirt
+					i(3428),	-- Common Gray Shirt
 					i(3427),	-- Stylish Black Shirt
 					i(13896),	-- Dark Green Wedding Hanbok
 					i(13898),	-- Royal Dangui

@@ -635,7 +635,7 @@ root(ROOTS.Instances, {
 					i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 					i(7192),	-- Schematic: Goblin Rocket Boots (RECIPE!)
 					i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
-					i(4408),	-- Schematic: Mechanical Squirrel Box (RECIPE!)
+					i(4408),	-- Schematic: Mechanical Squirrel (RECIPE!)
 					i(4412),	-- Schematic: Moonsight Rifle (RECIPE!)
 					i(4414),	-- Schematic: Portable Bronze Mortar (RECIPE!)
 					i(4410),	-- Schematic: Shadow Goggles (RECIPE!)

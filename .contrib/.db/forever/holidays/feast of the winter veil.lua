@@ -116,10 +116,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				isYearly = true,
 				_drop = { "g" },
 				groups = {
-					i(21301),	-- Father Winter's Helper (PET!)
-					i(21308),	-- Winter Reindeer (PET!)
-					i(21305),	-- Winter's Little Helper (PET!)
-					i(21309),	-- Tiny Snowman (PET!)
+					i(21301),	-- Green Helper Box (PET!)
+					i(21308),	-- Jingling Bell (PET!)
+					i(21305),	-- Red Helper Box (PET!)
+					i(21309),	-- Snowman Kit (PET!)
 				},
 			}),
 			q(8767, {	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
@@ -251,11 +251,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 						},
 					}),
 					objective(2, {	-- 0/1 Pouch of Raindeer Dust
-						provider = { "i", 21211 },	-- Pouch of Raindeer Dust (QI!)
+						provider = { "i", 21211 },	-- Pouch of Reindeer Dust (QI!)
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
-						i(21211),	-- Pouch of Raindeer Dust
+						i(21211),	-- Pouch of Reindeer Dust
 					}),
 					i(21213),	-- Preserved Holly
 				},
@@ -276,11 +276,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 						},
 					}),
 					objective(2, {	-- 0/1 Pouch of Raindeer Dust
-						provider = { "i", 21211 },	-- Pouch of Raindeer Dust (QI!)
+						provider = { "i", 21211 },	-- Pouch of Reindeer Dust (QI!)
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
-						i(21211),	-- Pouch of Raindeer Dust
+						i(21211),	-- Pouch of Reindeer Dust
 					}),
 					i(21213),	-- Preserved Holly
 				},

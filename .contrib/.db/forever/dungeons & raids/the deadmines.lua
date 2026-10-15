@@ -211,7 +211,7 @@ root(ROOTS.Instances, {
 						624,	-- Undead Excavator
 					},
 				}),
-				i(8492, {	-- Green Wing Macaw (PET!)
+				i(8492, {	-- Parrot Cage (Green Wing Macaw) (PET!)
 					cr = 657,	-- Defias Pirate
 				}),
 				i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
@@ -310,7 +310,7 @@ root(ROOTS.Instances, {
 				i(10399),	-- Blackened Defias Armor
 			}),
 			n(645, {	-- Cookie <The Ship's Cook>
-				i(8490),	-- Siamese Cat (PET!)
+				i(8490),	-- Cat Carrier (Siamese) (PET!)
 				i(5198),	-- Cookie's Stirring Rod
 				i(5197),	-- Cookie's Tenderizer
 				i(273298, {	-- Lookie's Spyglass

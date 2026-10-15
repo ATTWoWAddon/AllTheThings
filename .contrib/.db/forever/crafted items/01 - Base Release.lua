@@ -79,7 +79,7 @@ root(ROOTS.Craftables, {
 			i(3382),	-- Minor Troll's Blood Elixir
 			i(6052),	-- Nature Protection Potion
 			i(8956),	-- Oil of Immolation
-			i(9224),	-- Potion of Demonslaying
+			i(9224),	-- Potion of Demon Slaying
 			i(3386),	-- Potion of Poison Cleansing
 			i(13462),	-- Purification Potion
 			i(5631),	-- Rage Potion
@@ -104,7 +104,7 @@ root(ROOTS.Craftables, {
 	}),
 	prof(BLACKSMITHING, {
 		n(COMMON_VENDOR_ITEMS, {
-			i(5956),	-- Blacksmithing Hammer
+			i(5956),	-- Blacksmith Hammer
 			i(3857),	-- Coal
 			i(18567),	-- Elemental Flux
 			i(3466),	-- Strong Flux
@@ -529,7 +529,7 @@ root(ROOTS.Craftables, {
 		filter(PROFESSION_EQUIPMENT, {
 			i(16207),	-- Runed Arcanite Rod
 			i(6218),	-- Runed Copper Rod
-			i(11130),	-- Runed Gold Rod
+			i(11130),	-- Runed Golden Rod
 			i(6339),	-- Runed Silver Rod
 			i(11145),	-- Runed Truesilver Rod
 		}),
@@ -566,7 +566,7 @@ root(ROOTS.Craftables, {
 				i(11826),	-- Lil' Smoky (PET!)
 			}),
 			filter(MISC, {
-				i(18645),	-- Gnomish Alarm-o-Bot
+				i(18645),	-- Gnomish Alarm-O-Bot
 				i(18986, {	-- Ultrasafe Transporter: Gadgetzan
 					requireSkill = GNOMISH_ENGINEERING,
 				}),
@@ -653,8 +653,8 @@ root(ROOTS.Craftables, {
 			i(15999),	-- Spellpower Goggles Xtreme Plus
 		}),
 		filter(BATTLE_PETS, {
-			i(15996),	-- Lifelike Toad (PET!)
-			i(4401),	-- Mechanical Squirrel (PET!)
+			i(15996),	-- Lifelike Mechanical Toad (PET!)
+			i(4401),	-- Mechanical Squirrel Box (PET!)
 			i(21277),	-- Tranquil Mechanical Yeti (PET!)
 		}),
 		filter(MISC, {
@@ -666,8 +666,8 @@ root(ROOTS.Craftables, {
 			i(16005),	-- Dark Iron Bomb
 			i(18641),	-- Dense Dynamite
 			i(4384),	-- Explosive Sheep
-			i(6714),	-- EZ-Thro Dynamite
-			i(18588),	-- EZ-Thro Dynamite II
+			i(6714),	-- Ez-Thro Dynamite
+			i(18588),	-- Ez-Thro Dynamite II
 			i(4395),	-- Goblin Land Mine
 			i(4378),	-- Heavy Dynamite
 			i(10562),	-- Hi-Explosive Bomb
@@ -775,10 +775,10 @@ root(ROOTS.Craftables, {
 			i(16007),	-- Flawless Arcanite Rifle
 			i(4372),	-- Lovingly Crafted Boomstick
 			i(10508),	-- Mithril Blunderbuss
-			i(10510),	-- Mithril Heavy-Bore Rifle
+			i(10510),	-- Mithril Heavy-bore Rifle
 			i(4383),	-- Moonsight Rifle
 			i(4362),	-- Rough Boomstick
-			i(4379),	-- Silver-Plated Shotgun
+			i(4379),	-- Silver-plated Shotgun
 			i(15995),	-- Thorium Rifle
 		}),
 		n(WEAPON_ENCHANTMENTS, {
@@ -892,17 +892,17 @@ root(ROOTS.Craftables, {
 			i(13911),	-- 19 Pound Lobster
 			i(13912),	-- 21 Pound Lobster
 			i(13913),	-- 22 Pound Lobster
-			i(13876),	-- 40 Pound Grouper
-			i(13877),	-- 47 Pound Grouper
-			i(13878),	-- 53 Pound Grouper
-			i(13879),	-- 59 Pound Grouper
-			i(13880),	-- 68 Pound Grouper
+			i(13876),	-- 40 Pound Yellowtail
+			i(13877),	-- 47 Pound Yellowtail
+			i(13878),	-- 53 Pound Yellowtail
+			i(13879),	-- 59 Pound Yellowtail
+			i(13880),	-- 68 Pound Yellowtail
 			-- Bloated fish:
 			i(6646),	-- Bloated Albacore
-			i(6647),	-- Bloated Catfish
-			i(21163),	-- Bloated Firefin
+			i(6647),	-- Bloated Bristle Whisker Catfish
+			i(21163),	-- Bloated Firefin Snapper
 			i(6644),	-- Bloated Mackerel
-			i(21243),	-- Bloated Mightfish
+			i(21243),	-- Bloated Glossy Mightfish
 			i(6645),	-- Bloated Mud Snapper
 			i(21162),	-- Bloated Oily Blackmouth
 			i(13881, {	-- Bloated Redgill
@@ -915,9 +915,9 @@ root(ROOTS.Craftables, {
 				i(1529),	-- Jade
 				i(1705),	-- Lesser Moonstone
 			}),
-			i(13891),	-- Bloated Salmon
-			i(6643),	-- Bloated Smallfish
-			i(8366),	-- Bloated Trout
+			i(13891),	-- Bloated Whitescale Salmon
+			i(6643),	-- Bloated Brilliant Smallfish
+			i(8366),	-- Bloated Mithril Head Trout
 			-- Containers:
 			i(6351),	-- Dented Crate
 			i(13874),	-- Heavy Crate
@@ -959,7 +959,7 @@ root(ROOTS.Craftables, {
 				},]]
 			}),
 			i(6307),	-- Message in a Bottle
-			i(21228, {	-- Mitril Bound Trunk
+			i(21228, {	-- Mithril Bound Trunk
 				maps_disp = {
 					MAP.BLASTED_LANDS,
 					MAP.EASTERN_PLAGUELANDS,
@@ -1109,7 +1109,7 @@ root(ROOTS.Craftables, {
 				MAP.AZSHARA,
 			},
 		}),
-		i(13757, {	-- Lightening Eel
+		i(13757, {	-- Lightning Eel
 			coord = { 60.6, 71.7, MAP.SILITHUS },
 			description = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
 			maps_disp = {
@@ -2231,7 +2231,7 @@ root(ROOTS.Craftables, {
 			i(2320),	-- Coarse Thread
 			i(2321),	-- Fine Thread
 			i(2605),	-- Green Dye
-			i(4340),	-- Grey Dye
+			i(4340),	-- Gray Dye
 			i(8343),	-- Heavy Silken Thread
 			i(4342),	-- Purple Dye
 			i(2604),	-- Red Dye
@@ -2251,7 +2251,7 @@ root(ROOTS.Craftables, {
 				i(15045),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046),	-- Green Dragonscale Leggings
-				i(15047),	-- Red Dragonscale Breastplate'
+				i(15047),	-- Red Dragonscale Breastplate
 				--[[BRD
 				i(15050),	-- Black Dragonscale Breastplate
 				i(16984),	-- Black Dragonscale Boots
@@ -2361,7 +2361,7 @@ root(ROOTS.Craftables, {
 				i(5958),	-- Fine Leather Pants
 				i(4243),	-- Fine Leather Tunic
 				i(7348),	-- Fletcher's Gloves
-				i(4262),	-- Gem-Studded Leather Belt
+				i(4262),	-- Gem-studded Leather Belt
 				i(17721),	-- Gloves of the Greatfather
 				i(4255),	-- Green Leather Armor
 				i(4257),	-- Green Leather Belt
@@ -2429,7 +2429,7 @@ root(ROOTS.Craftables, {
 			filter(MAIL, {
 				i(15082),	-- Heavy Scorpid Belt
 				i(15077),	-- Heavy Scorpid Bracers
-				i(15078),	-- Heavy Scorpid Gauntlets
+				i(15078),	-- Heavy Scorpid Gauntlet
 				i(15080),	-- Heavy Scorpid Helm
 				i(15079),	-- Heavy Scorpid Leggings
 				i(15081),	-- Heavy Scorpid Shoulders
@@ -3381,9 +3381,9 @@ root(ROOTS.Craftables, {
 		i(8926),	-- Instant Poison IV
 		i(8927),	-- Instant Poison V
 		i(8928),	-- Instant Poison VI
-		i(5237),	-- Mind-Numbing Poison
-		i(6951),	-- Mind-Numbing Poison II
-		i(9186),	-- Mind-Numbing Poison III
+		i(5237),	-- Mind-numbing Poison
+		i(6951),	-- Mind-numbing Poison II
+		i(9186),	-- Mind-numbing Poison III
 		i(10918),	-- Wound Poison
 		i(10920),	-- Wound Poison II
 		i(10921),	-- Wound Poison III
@@ -3600,7 +3600,7 @@ root(ROOTS.Craftables, {
 			i(2320),	-- Coarse Thread
 			i(2321),	-- Fine Thread
 			i(2605),	-- Green Dye
-			i(4340),	-- Grey Dye
+			i(4340),	-- Gray Dye
 			i(8343),	-- Heavy Silken Thread
 			i(6261),	-- Orange Dye
 			i(10290),	-- Pink Dye
@@ -3630,7 +3630,7 @@ root(ROOTS.Craftables, {
 				i(4327),	-- Icy Cloak
 				i(2570),	-- Linen Cloak
 				i(4326),	-- Long Silken Cloak
-				i(5542),	-- Pearl-Clasped Cloak
+				i(5542),	-- Pearl-clasped Cloak
 				i(2580),	-- Reinforced Linen Cape
 				i(13860),	-- Runecloth Cloak
 				i(2584),	-- Woolen Cape
@@ -3678,7 +3678,7 @@ root(ROOTS.Craftables, {
 				i(7059),	-- Crimson Silk Shoulders
 				i(7058),	-- Crimson Silk Vest
 				i(4333),	-- Dark Silk Shirt
-				i(4314),	-- Double-stitched Woolen Shoulders
+				i(4314),	-- Double-Stitched Woolen Shoulders
 				i(10041),	-- Dreamweave Circlet
 				i(10019),	-- Dreamweave Gloves
 				i(10021),	-- Dreamweave Vest
@@ -3767,7 +3767,7 @@ root(ROOTS.Craftables, {
 				i(10047),	-- Simple Kilt
 				i(10046),	-- Simple Linen Boots
 				i(10045),	-- Simple Linen Pants
-				i(4312),	-- Soft-Soled Linen Boots
+				i(4312),	-- Soft-soled Linen Boots
 				i(4328),	-- Spider Belt
 				i(4321),	-- Spider Silk Slippers
 				i(4320),	-- Spidersilk Boots

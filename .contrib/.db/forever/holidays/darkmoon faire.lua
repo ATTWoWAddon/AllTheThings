@@ -502,7 +502,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				isMonthly = true,
 				groups = {
 					i(19462, {	-- Unhatched Jubling Egg
-						i(19450),	-- Jubling (PET!)
+						i(19450),	-- A Jubling's Tiny Home (PET!)
 					}),
 				},
 			}),
@@ -698,8 +698,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				groups = {
 					HEAVY_LEATHER_BALL,
-					i(11026),	-- Tree Frog (PET!)
-					i(11027, {	-- Wood Frog (PET!)
+					i(11026),	-- Tree Frog Box (PET!)
+					i(11027, {	-- Wood Frog Box (PET!)
 						isLimited = true,
 					}),
 				},

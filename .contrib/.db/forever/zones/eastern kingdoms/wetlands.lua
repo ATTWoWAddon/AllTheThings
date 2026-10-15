@@ -1211,10 +1211,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				end]],
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(2411),	-- Black Stallion (MOUNT!)
-					i(5656),	-- Brown Horse (MOUNT!)
-					i(5655),	-- Chestnut Mare (MOUNT!)
-					i(2414),	-- Pinto (MOUNT!)
+					i(2411),	-- Black Stallion Bridle (MOUNT!)
+					i(5656),	-- Brown Horse Bridle (MOUNT!)
+					i(5655),	-- Chestnut Mare Bridle (MOUNT!)
+					i(2414),	-- Pinto Bridle (MOUNT!)
 				},
 			}),
 			n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>

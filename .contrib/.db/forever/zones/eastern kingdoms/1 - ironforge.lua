@@ -562,7 +562,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
-					i(6974),	-- Fire hardened Gauntlets
+					i(6974),	-- Fire Hardened Gauntlets
 				},
 			}),
 			q(1880, {	-- Mage-tastic Gizmonitor
@@ -1053,7 +1053,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(2131),	-- Shortsword
 					i(2494),	-- Stiletto
 					i(2490),	-- Tomahawk
-					i(2489),	-- Two-Handed Sword
+					i(2489),	-- Two-handed Sword
 					i(2495),	-- Walking Stick
 				},
 			}),
@@ -1419,7 +1419,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 66.6, 54.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(13478, {	-- Recipe: Elixir of Greater Defense (RECIPE!)
+					i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 						isLimited = true,
 					}),
 					i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
@@ -1458,11 +1458,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					2509,	-- Ornate Blunderbuss
 				}},
 				groups = {
-					i(15904),	-- Deadly Fist Blades
+					i(15904),	-- Right-Handed Blades
 					i(15906),	-- Left-Handed Brass Knuckles
 					i(15909),	-- Left-Handed Blades
 					i(15907),	-- Left-Handed Claw
-					i(15903),	-- Slicing Claw
+					i(15903),	-- Right-Handed Claw
 				},
 			}),
 			n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>

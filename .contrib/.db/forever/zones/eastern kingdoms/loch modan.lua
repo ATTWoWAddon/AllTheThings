@@ -319,7 +319,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 65.9, 65.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
-				qi = 2637,	-- Ironbrand's Progress Report (QI!)
+				qi = 2637,	-- Ironband's Progress Report (QI!)
 			}),
 			q(307, {	-- Filthy Paws
 				qg = 1343,	-- Mountaineer Stormpike
@@ -538,7 +538,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
-				qi = 2637,	-- Ironbrand's Progress Report (QI!)
+				qi = 2637,	-- Ironband's Progress Report (QI!)
 			}),
 			q(468, {	-- Report to Mountaineer Rockgar
 				qg = 1340,	-- Mountaineer Kadrell

@@ -243,7 +243,7 @@ ENCHANTING_RECIPES = {
 			i(274398, {	-- Formula: Enchant Gloves - Superior Strength (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
-			i(274393, {	-- Formula: Enchant Off-Hand - Wisdom (RECIPE!)
+			i(274393, {	-- Formula: Enchant Off Hand - Wisdom (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249529, {	-- Formula: Idol of the Dream (RECIPE!)
@@ -371,7 +371,7 @@ ENCHANTING_RECIPES = {
 			i(274398, {	-- Formula: Enchant Gloves - Superior Strength (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
-			i(274393, {	-- Formula: Enchant Off-Hand - Wisdom (RECIPE!)
+			i(274393, {	-- Formula: Enchant Off Hand - Wisdom (RECIPE!)
 				cost = { { "c", MERCHANTS_FAVOR, 240 } },
 			}),
 			i(249529, {	-- Formula: Idol of the Dream (RECIPE!)

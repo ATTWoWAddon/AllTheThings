@@ -233,22 +233,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 			i(20413),	-- Hallowed Wand - Random
 			i(20411),	-- Hallowed Wand - Skeleton
 			i(20414),	-- Hallowed Wand - Wisp
-			i(20562),	-- Dwarf Female Mask
-			i(20561),	-- Dwarf Male Mask
-			i(20392),	-- Gnome Female Mask
-			i(20391),	-- Gnome Male Mask
-			i(20565),	-- Human Female Mask
-			i(20566),	-- Human Male Mask
-			i(20563),	-- Night Elf Female Mask
-			i(20564),	-- Night Elf Male Mask
-			i(20569),	-- Orc Female Mask
-			i(20570),	-- Orc Male Mask
-			i(20571),	-- Tauren Female Mask
-			i(20572),	-- Tauren Male Mask
-			i(20567),	-- Troll Female Mask
-			i(20568),	-- Troll Male Mask
-			i(20574),	-- Undead Female Mask
-			i(20573),	-- Undead Male Mask
+			i(20562),	-- Flimsy Female Dwarf Mask
+			i(20561),	-- Flimsy Male Dwarf Mask
+			i(20392),	-- Flimsy Female Gnome Mask
+			i(20391),	-- Flimsy Male Gnome Mask
+			i(20565),	-- Flimsy Female Human Mask
+			i(20566),	-- Flimsy Male Human Mask
+			i(20563),	-- Flimsy Female Night Elf Mask
+			i(20564),	-- Flimsy Male Night Elf Mask
+			i(20569),	-- Flimsy Female Orc Mask
+			i(20570),	-- Flimsy Male Orc Mask
+			i(20571),	-- Flimsy Female Tauren Mask
+			i(20572),	-- Flimsy Male Tauren Mask
+			i(20567),	-- Flimsy Female Troll Mask
+			i(20568),	-- Flimsy Male Troll Mask
+			i(20574),	-- Flimsy Female Undead Mask
+			i(20573),	-- Flimsy Male Undead Mask
 		}),
 		n(ZONE_DROPS, {
 			i(20400),	-- Pumpkin Bag

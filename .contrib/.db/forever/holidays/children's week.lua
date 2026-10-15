@@ -4,9 +4,9 @@
 
 -- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
 local WARDEN_OF_THE_GROUPS = {
-	i(23007),	-- Mr. Wiggles (PET!)
-	i(23015),	-- Whiskers the Rat (PET!)
-	i(23002),	-- Speedy (PET!)
+	i(23007),	-- Piglet's Collar (PET!)
+	i(23015),	-- Rat Cage (PET!)
+	i(23002),	-- Turtle Box (PET!)
 	i(23022),	-- Curmudgeon's Payoff
 };
 

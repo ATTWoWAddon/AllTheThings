@@ -521,7 +521,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						cr = 2257,	-- Mug'thol
 					}),
 					objective(2, {	-- 0/1 Crown of Will
-						provider = { "i", 3554 },	-- Mug'thol's Head (QI!)
+						provider = { "i", 3554 },	-- Crown of Will (QI!)
 						coord = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2257,	-- Mug'thol
 					}),
@@ -552,7 +552,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				description = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 				providers = {
 					{ "i", 17125 },	-- Seal of Ravenholdt
-					{ "i", 17126 },	-- Seal of Ravenholdt
+					{ "i", 17126 },	-- Elegant Letter
 				},
 				classes = { ROGUE },
 				lvl = 24,
@@ -749,7 +749,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			i(3711, {	-- Belamoore's Research Journal
 				cr = 2415,	-- Warden Belamoore
 			}),
-			i(8491, {	-- Black Tabby Cat (PET!)
+			i(8491, {	-- Cat Carrier (Black Tabby) (PET!)
 				races = HORDE_ONLY,
 				crs = {
 					2271,	-- Dalaran Shield Guard

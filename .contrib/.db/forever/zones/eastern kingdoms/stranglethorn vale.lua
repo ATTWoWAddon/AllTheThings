@@ -1341,7 +1341,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
 					{ "i", 3864, 4 },	-- 4x Citrine
-					{ "i", 3860, 40 },	-- 40x Iron Bar
+					{ "i", 3860, 40 },	-- 40x Mithril Bar
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -1508,7 +1508,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 7802,	-- Galvan the Ancient
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 3860, 40 },	-- 40x Iron Bar
+					{ "i", 3860, 40 },	-- 40x Mithril Bar
 					{ "i", 6037, 5 },	-- 5x Truesilver Bar
 				},
 				requireSkill = BLACKSMITHING,
@@ -2019,7 +2019,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						i(274747),	-- Soggy Boots
 					}, {	-- Honored
 						i(274748),	-- Booty Bay Bruiser's Buckshot
-						i(274749),	-- Souvenier Sea Shell
+						i(274749),	-- Souvenir Sea Shell
 					}, {	-- Revered
 						i(274022),	-- Tough Guy's Eyepatch
 					}, {	-- Exalted
@@ -2117,8 +2117,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			n(2663, {	-- Narkk <Pirate Supplies>
 				coord = { 28.1, 74.4, MAP.STRANGLETHORN_VALE },
 				groups = {
-					i(8496),	-- Cockatiel (PET!)
-					i(8495),	-- Senegal (PET!)
+					i(8496),	-- Parrot Cage (Cockatiel) (PET!)
+					i(8495),	-- Parrot Cage (Senegal) (PET!)
 					i(10728, {	-- Pattern: Black Swashbuckler's Shirt (RECIPE!)
 						isLimited = true,
 					}),
@@ -2269,7 +2269,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			n(2699, {	-- Rikqiz <Leatherworking Supplies>
 				coords = { 28.4, 76.0, MAP.STRANGLETHORN_VALE },
 				groups = {
-					i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
+					i(14635, {	-- Pattern: Gem-studded Leather Belt (RECIPE!)
 						isLimited = true,
 					}),
 					i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
@@ -2388,7 +2388,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			i(5755, {	-- Onyx Shredder Plate
 				cr = 4260,	-- Venture Co. Shredder
 			}),
-			i(8494, {	-- Hyacinth Macaw (PET!)
+			i(8494, {	-- Parrot Cage (Hyacinth Macaw) (PET!)
 				crs = {
 					4505,	-- Bloodsail Deckhand
 					1653,	-- Bloodsail Elder Magus

@@ -293,8 +293,8 @@ root(ROOTS.Instances, {
 				creatureID = 3654,
 				groups = {
 					i(10441),	-- Glowing Shard
-					i(6461),	-- Slime-Encrusted Pads
-					i(6627),	-- Mutant Breastplate
+					i(6461),	-- Slime-encrusted Pads
+					i(6627),	-- Mutant Scale Breastplate
 					i(6463),	-- Deep Fathom Ring
 				},
 			}),
