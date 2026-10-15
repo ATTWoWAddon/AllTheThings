@@ -306,6 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["aqd"] = {
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 30622, 1 },    -- Flamewrought Key [A]
 						-- #if CLASSIC_ANNIVERSARY
@@ -314,6 +315,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				},
 				["hqd"] = {
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 30637, 1 },    -- Flamewrought Key [H]
 						-- #if CLASSIC_ANNIVERSARY
