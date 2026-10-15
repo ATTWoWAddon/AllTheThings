@@ -207,35 +207,35 @@ root(ROOTS.Instances, {
 				}),
 				q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
 					qg = 12944,	-- Lokhtos Darkbargainer
-					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 11382, 1 } },	-- 1x Blood of the Mountain
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
 					qg = 12944,	-- Lokhtos Darkbargainer
-					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 17012, 2 } },	-- 2x Core Leather
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
 					qg = 12944,	-- Lokhtos Darkbargainer
-					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 11370, 10 } },	-- 10x Dark Iron Ore
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
 					qg = 12944,	-- Lokhtos Darkbargainer
-					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 17010, 1 } },	-- 1x Fiery Core
 					repeatable = true,
 					lvl = 60,
 				}),
 				q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
 					qg = 12944,	-- Lokhtos Darkbargainer
-					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 					cost = { { "i", 17011, 1 } },	-- 1x Lava Core
 					repeatable = true,
 					lvl = 60,

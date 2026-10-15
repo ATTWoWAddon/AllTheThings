@@ -78,7 +78,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				sourceQuest = 7800,	-- A Donation of Runecloth
 				qg = 14725,	-- Raedon Duskstriker
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
-				maxReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+				maxReputation = { FACTION_DARNASSUS, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -523,7 +523,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				races = ALLIANCE_ONLY,
 
 				-- Available to Night Elves without faction requirements.
-				minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+				minReputation = { FACTION_DARNASSUS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 						t.minReputation = nil;
@@ -853,7 +853,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4730, {	-- Lelanai <Saber Handler>
 				coord = { 38.3, 15.3, MAP.DARNASSUS },
 				-- Available to Night Elves without faction requirements.
-				minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+				minReputation = { FACTION_DARNASSUS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 						t.minReputation = nil;

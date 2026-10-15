@@ -294,7 +294,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(7868, {	-- Outrider Advanced Care Package
 				qg = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
 				coord = { 46.6, 8.4, MAP.THE_BARRENS },
-				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = 45,
 				groups = {
@@ -304,7 +304,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(7866, {	-- Outrider Basic Care Package
 				qg = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
 				coord = { 46.6, 8.4, MAP.THE_BARRENS },
-				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -314,7 +314,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(7867, {	-- Outrider Standard Care Package
 				qg = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
 				coord = { 46.6, 8.4, MAP.THE_BARRENS },
-				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 35, 44 },
 				groups = {
@@ -324,7 +324,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(7865, {	-- Sentinel Advanced Care Package
 				qg = 14753,	-- Illiyana Moonblaze
 				coord = { 61.6, 83.8, MAP.ASHENVALE },
-				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = 45,
 				groups = {
@@ -334,7 +334,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(7863, {	-- Sentinel Basic Care Package
 				qg = 14753,	-- Illiyana Moonblaze
 				coord = { 61.6, 83.8, MAP.ASHENVALE },
-				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -344,7 +344,7 @@ battleground(MAP.WARSONG_GULCH, {
 			q(7864, {	-- Sentinel Standard Care Package
 				qg = 14753,	-- Illiyana Moonblaze
 				coord = { 61.6, 83.8, MAP.ASHENVALE },
-				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 35, 44 },
 				groups = {

@@ -207,7 +207,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 7805,	-- A Donation of Runecloth
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				maxReputation = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
+				maxReputation = { FACTION_IRONFORGE, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -217,7 +217,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sourceQuest = 7811,	-- A Donation of Runecloth
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
-				maxReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
+				maxReputation = { FACTION_GNOMEREGAN, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,

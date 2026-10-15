@@ -1202,7 +1202,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1460, {	-- Unger Statforth <Horse Breeder>
 				coord = { 8.6, 54.4, MAP.WETLANDS },
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;

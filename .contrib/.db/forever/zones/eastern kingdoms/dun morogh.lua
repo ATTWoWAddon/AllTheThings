@@ -1585,7 +1585,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 49.2, 48.0, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				-- Available to Gnomes without faction requirements.
-				minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
+				minReputation = { FACTION_GNOMEREGAN, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. GNOME .. [[ then
 						t.minReputation = nil;
@@ -1603,7 +1603,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 63.8, 50.2, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				-- Available to Dwarves without faction requirements.
-				minReputation = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
+				minReputation = { FACTION_IRONFORGE, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. DWARF .. [[ then
 						t.minReputation = nil;
@@ -1701,7 +1701,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
 				coord = { 49.0, 48.0, MAP.DUN_MOROGH },
 				-- Available to Gnomes without faction requirements.
-				minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
+				minReputation = { FACTION_GNOMEREGAN, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. GNOME .. [[ then
 						t.minReputation = nil;
@@ -1722,7 +1722,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1261, {	-- Veron Amberstill <Ram Breeder>
 				coord = { 63.4, 50.6, MAP.DUN_MOROGH },
 				-- Available to Dwarves without faction requirements.
-				minReputation = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
+				minReputation = { FACTION_IRONFORGE, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. DWARF .. [[ then
 						t.minReputation = nil;

@@ -277,7 +277,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 7795,	-- A Donation of Runecloth
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				maxReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				maxReputation = { FACTION_STORMWIND, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,

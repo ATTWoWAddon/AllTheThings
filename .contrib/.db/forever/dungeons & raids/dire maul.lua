@@ -348,7 +348,7 @@ root(ROOTS.Instances, {
 					sourceQuest = 5525,	-- Free Knot!
 					qg = 14338,	-- Knot Thimblejack
 					maps = GORDOK_COMMONS_MAPS,
-					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 					cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 					repeatable = true,
 					lvl = 54,
@@ -435,7 +435,7 @@ root(ROOTS.Instances, {
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
 						{ "i", 18333, 1 },	-- 1x Libram of Focus
@@ -455,7 +455,7 @@ root(ROOTS.Instances, {
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
 						{ "i", 18334, 1 },	-- 1x Libram of Protection
@@ -475,7 +475,7 @@ root(ROOTS.Instances, {
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
 						{ "i", 18332, 1 },	-- 1x Libram of Rapidity
@@ -570,7 +570,7 @@ root(ROOTS.Instances, {
 				q(5519, {	-- The Gordok Ogre Suit (Repeatable)
 					sourceQuest = 5518,	-- The Gordok Ogre Suit
 					qg = 14338,	-- Knot Thimblejack
-					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 					maps = GORDOK_COMMONS_MAPS,
 					cost = {
 						{ "i", 14048, 4 },	-- 4x Bolt of Runecloth
