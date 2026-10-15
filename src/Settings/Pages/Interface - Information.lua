@@ -1413,7 +1413,7 @@ local InformationTypes = {
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
 	CreateInformationType("flightpathID", { text = L.FLIGHT_PATH_ID }),
-	CreateInformationType("followerID", { text = L.FOLLOWER_ID }),
+	CreateInformationType("followerID", { minBuild = 60000, text = L.FOLLOWER_ID }),
 	CreateInformationType("headerID", { text = L.HEADER_ID }),
 	CreateInformationType("illusionID", { text = L.ILLUSION_ID }),
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
@@ -1697,6 +1697,12 @@ local InformationTypes = {
 };
 if app.GameBuildVersion >= 70000 then
 	tinsert(InformationTypes, CreateInformationType("artifactID", { text = L.ARTIFACT_ID }));
+end
+for i = #InformationTypes, 1, -1 do
+	local minBuild = InformationTypes[i].minBuild;
+	if minBuild and app.GameBuildVersion < minBuild then
+		tremove(InformationTypes, i);
+	end
 end
 settings.InformationTypes = InformationTypes;
 

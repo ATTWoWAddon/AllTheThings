@@ -38,10 +38,12 @@ local function createColumn(stringTable, color, columnNo)
 
 	local stringText = color
 	for _, text in ipairs(stringTable) do
-		if columnNo == 1 or columnNo == 3 then
-			stringText = stringText .. text.title .. "\n"
-		else
-			stringText = stringText .. "/att " .. text.command .. ":ID\n"
+		if not text.minBuild or app.GameBuildVersion >= text.minBuild then
+			if columnNo == 1 or columnNo == 3 then
+				stringText = stringText .. text.title .. "\n"
+			else
+				stringText = stringText .. "/att " .. text.command .. ":ID\n"
+			end
 		end
 	end
 	string:SetText(stringText)
@@ -65,7 +67,7 @@ local stringsOne = {
 	{ title = L.EXPLORATION, command = "exploration" },
 	{ title = L.FACTION, command = "faction" },
 	{ title = L.FLIGHT_PATHS, command = "flightpath" },
-	{ title = L.FOLLOWER, command = "follower" },
+	{ minBuild = 60000, title = L.FOLLOWER, command = "follower" },
 }
 if app.GameBuildVersion >= 70000 then
 	table.insert(stringsOne, 2, { title = L.ARTIFACT, command = "artifact" });
