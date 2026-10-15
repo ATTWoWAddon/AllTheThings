@@ -4363,7 +4363,7 @@ root(ROOTS.WorldDrops, {
 		}),
 		i(3404, {	-- Buzzard Wing
 			coords = {
-				{ 47.1, 42.0, MAP.TANARIS },	-- Northen Abyssal Sands
+				{ 47.1, 42.0, MAP.TANARIS },	-- Northern Abyssal Sands
 				{ 36.5, 61.2, MAP.TANARIS },	-- Southern Abyssal Sands
 			},
 			crs = {
@@ -4470,7 +4470,7 @@ root(ROOTS.WorldDrops, {
 		}),
 		i(12207, {	-- Giant Egg
 			coords = {
-				{ 47.1, 42.0, MAP.TANARIS },	-- Northen Abyssal Sands
+				{ 47.1, 42.0, MAP.TANARIS },	-- Northern Abyssal Sands
 				{ 36.5, 61.2, MAP.TANARIS },	-- Southern Abyssal Sands
 			},
 			crs = {
