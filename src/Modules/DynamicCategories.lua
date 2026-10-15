@@ -115,6 +115,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- Decor
 			app.CreateDynamicHeader("decorID", {
+				minBuild = 110207,
 				name = CATALOG_SHOP_TYPE_DECOR,
 				icon = app.asset("Category_Housing")
 			}),
