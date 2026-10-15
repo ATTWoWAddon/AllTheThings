@@ -53,9 +53,11 @@ app.ResolveQuestData = function(t)
 		local questData, otherQuestData;
 		if app.FactionID == HORDE_FACTION_ID then
 			questData = hqd;
+			questData.races = HORDE_ONLY;
 			otherQuestData = aqd;
 		else
 			questData = aqd;
+			questData.races = ALLIANCE_ONLY
 			otherQuestData = hqd;
 		end
 
