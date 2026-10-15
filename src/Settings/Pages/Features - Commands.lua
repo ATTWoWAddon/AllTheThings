@@ -61,7 +61,7 @@ local stringsOne = {
 	{ title = L.CREATURE, command = "creature" },
 	{ title = L.CRITERIA, command = "criteriaid" },
 	{ title = L.CURRENCY, command = "currency" },
-	{ title = L.DECOR, command = "decor" },
+	{ minBuild = 110207, title = L.DECOR, command = "decor" },
 	{ title = L.DIFFICULTY, command = "difficulty" },
 	{ title = L.ENCOUNTER, command = "encounter" },
 	{ title = L.EXPLORATION, command = "exploration" },

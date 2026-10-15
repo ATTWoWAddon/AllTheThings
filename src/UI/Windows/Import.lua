@@ -127,7 +127,7 @@ app:CreateWindow("Import", {
 			{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
 			{ minBuild = 110100, id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 			{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
-			{ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
+			{ minBuild = 110207, id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
 			{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },
 			{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 			{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
