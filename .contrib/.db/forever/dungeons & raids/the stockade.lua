@@ -29,7 +29,7 @@ root(ROOTS.Instances, {
 					lvl = 24,
 					groups = {
 						objective(1, {	-- 0/1 Hand of Dextren Ward
-							provider = { "i", 3628 },	-- Hand of Dextren Ward
+							provider = { "i", 3628 },	-- Hand of Dextren Ward (QI!)
 						}),
 						i(2906),	-- Darkshire Mail Leggings
 						i(2033),	-- Ambassador's Boots
@@ -51,7 +51,7 @@ root(ROOTS.Instances, {
 					lvl = 22,
 					groups = {
 						objective(1, {	-- 0/10 Red Wool Bandana
-							provider = { "i", 2909 },	-- Red Wool Bandana
+							provider = { "i", 2909 },	-- Red Wool Bandana (QI!)
 							crs = {
 								1716,	-- Bazil Thredd
 								1720,	-- Bruegal Ironknuckle
@@ -73,7 +73,7 @@ root(ROOTS.Instances, {
 					lvl = 25,
 					groups = {
 						objective(1, {	-- 0/1 Head of Deepfury
-							provider = { "i", 3640 },	-- Head of Deepfury
+							provider = { "i", 3640 },	-- Head of Deepfury (QI!)
 						}),
 						i(1264),	-- Headbasher
 						i(3562),	-- Belt of Vindication
@@ -90,7 +90,7 @@ root(ROOTS.Instances, {
 					lvl = 16,
 					groups = {
 						objective(1, {	-- 0/1 Head of Bazil Thredd
-							provider = { "i", 2926 },	-- Head of Bazil Thredd
+							provider = { "i", 2926 },	-- Head of Bazil Thredd (QI!)
 						}),
 					},
 				}),
@@ -101,7 +101,7 @@ root(ROOTS.Instances, {
 					lvl = 22,
 					groups = {
 						objective(1, {	-- 0/1 Head of Targorr
-							provider = { "i", 3630 },	-- Head of Targorr
+							provider = { "i", 3630 },	-- Head of Targorr (QI!)
 						}),
 						i(1317),	-- Hardened Root Staff
 						i(3400),	-- Lucine Longsword

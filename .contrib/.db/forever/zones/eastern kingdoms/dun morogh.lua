@@ -1358,13 +1358,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						groups = {
 							objective(1, {	-- 0/1 Jordan's Ore Shipment
 								providers = {
-									{ "i", 6992 },	-- Jordan's Ore Shipment
+									{ "i", 6992 },	-- Jordan's Ore Shipment (QI!)
 									{ "o", 92420 },	-- Bailor's Ore
 								},
 								coord = { 71.6, 21.4, LOCH_MODAN },
 							}),
 							objective(2, {	-- 0/1 Jordan's Refined Ore Shipment
-								provider = { "i", 6993 },	-- Jordan's Refined Ore Shipment
+								provider = { "i", 6993 },	-- Jordan's Refined Ore Shipment (QI!)
 								questID = 1654,	-- The Test of Righteousness (2/3)
 							}),
 						},
@@ -1379,7 +1379,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						lvl = 20,
 						groups = {
 							objective(1, {	-- 0/1 Corrupted Kor Gem
-								provider = { "i", 6995 },	-- Corrupted Kor Gem
+								provider = { "i", 6995 },	-- Corrupted Kor Gem (QI!)
 								crs = {
 									4803,	-- Blackfathom Oracle
 									4805,	-- Blackfathom Sea Witch
@@ -1387,7 +1387,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 								},
 							}),
 							objective(4, {	-- 0/1 Purified Kor Gem
-								provider = { "i", 7083 },	-- Purified Kor Gem
+								provider = { "i", 7083 },	-- Purified Kor Gem (QI!)
 								questID = 1654,	-- The Test of Righteousness (2/3)
 							}),
 						},

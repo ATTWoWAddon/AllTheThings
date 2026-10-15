@@ -32,7 +32,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						groups = {
 							objective(1, {	-- 0/1 Water Pitcher
 								providers = {
-									{ "i", 4755 },	-- Water Pitcher
+									{ "i", 4755 },	-- Water Pitcher (QI!)
 									{ "o", 2907 },	-- Water Pitcher
 								},
 								coord = { 50.2, 81.3, MAP.MULGORE },
@@ -58,7 +58,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						lvl = 3,
 						groups = {
 							objective(1, {	-- 0/1 Chief Sharptusk Thornmantle's Head
-								provider = { "i", 10459 },	-- Chief Sharptusk Thornmantle's Head
+								provider = { "i", 10459 },	-- Chief Sharptusk Thornmantle's Head (QI!)
 								coord = { 64.6, 77.8, MAP.MULGORE },
 								cr = 8554,	-- Chief Sharptusk Thornmantle
 							}),
@@ -75,7 +75,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						lvl = 4,
 						groups = {
 							objective(1, {	-- 0/2 Ritual Salve
-								provider = { "i", 6634 },	-- Ritual Salve
+								provider = { "i", 6634 },	-- Ritual Salve (QI!)
 								cr = 2953,	-- Bristleback Shaman
 							}),
 						},
@@ -150,7 +150,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- 0/12 Bristleback Belt
-								provider = { "i", 4770 },	-- Bristleback Belt
+								provider = { "i", 4770 },	-- Bristleback Belt (QI!)
 								crs = {
 									2952,	-- Bristleback Quilboar
 									2953,	-- Bristleback Shaman
@@ -211,14 +211,14 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- 0/8 Battleboar Snout
-								provider = { "i", 4848 },	-- Battleboar Snout
+								provider = { "i", 4848 },	-- Battleboar Snout (QI!)
 								crs = {
 									2966,	-- Battleboar
 									2954,	-- Bristleback Battleboar
 								},
 							}),
 							objective(2, {	-- 0/8 Battleboar Flank
-								provider = { "i", 4849 },	-- Battleboar Flank
+								provider = { "i", 4849 },	-- Battleboar Flank (QI!)
 								crs = {
 									2966,	-- Battleboar
 									2954,	-- Bristleback Battleboar
@@ -233,11 +233,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- 0/7 Plainstrider Meat
-								provider = { "i", 4739 },	-- Plainstrider Meat
+								provider = { "i", 4739 },	-- Plainstrider Meat (QI!)
 								cr = 2955,	-- Plainstrider
 							}),
 							objective(2, {	-- 0/7 Plainstrider Feather
-								provider = { "i", 4740 },	-- Plainstrider Feather
+								provider = { "i", 4740 },	-- Plainstrider Feather (QI!)
 								cr = 2955,	-- Plainstrider
 							}),
 							i(4954),	-- Nomadic Belt
@@ -251,7 +251,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- 0/10 Mountain Cougar Pelt
-								provider = { "i", 4742 },	-- Mountain Cougar Pelt
+								provider = { "i", 4742 },	-- Mountain Cougar Pelt (QI!)
 								cr = 2961,	-- Mountain Cougar
 							}),
 							i(4908),	-- Nomadic Bracers
@@ -523,7 +523,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/8 Windfury Talon
-						provider = { "i", 4751 },	-- Windfury Talon
+						provider = { "i", 4751 },	-- Windfury Talon (QI!)
 						crs = {
 							2962,	-- Windfury Harpy
 							2963,	-- Windfury Wind Witch
@@ -553,8 +553,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/6 Broken Tools
-						provider = { "i", 4703 },	-- Broken Tools
-						cost = { { "i", 4702, 1 } },	-- 1x Prospector's Pick
+						provider = { "i", 4703 },	-- Broken Tools (QI!)
+						cost = { { "i", 4702, 1 } },	-- 1x Prospector's Pick (QI!)
 						coord = { 34.0, 46.0, MAP.MULGORE },
 						crs = {
 							2990,	-- Bael'dun Appraiser
@@ -651,7 +651,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/1 Prairie Wolf Heart
-						provider = { "i", 4804 },	-- Prairie Wolf Heart
+						provider = { "i", 4804 },	-- Prairie Wolf Heart (QI!)
 						crs = {
 							2959,	-- Prairie Stalker
 							2958,	-- Prairie Wolf
@@ -659,11 +659,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						},
 					}),
 					objective(2, {	-- 0/1 Flatland Cougar Femur
-						provider = { "i", 4805 },	-- Flatland Cougar Femur
+						provider = { "i", 4805 },	-- Flatland Cougar Femur (QI!)
 						cr = 3035,	-- Flatland Cougar
 					}),
 					objective(3, {	-- 0/1 Plainstrider Scale
-						provider = { "i", 4806 },	-- Plainstrider Scale
+						provider = { "i", 4806 },	-- Plainstrider Scale (QI!)
 						crs = {
 							2956,	-- Adult Plainstrider
 							2957,	-- Elder Plainstrider
@@ -671,7 +671,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						},
 					}),
 					objective(4, {	-- 0/1 Swoop Gizzard
-						provider = { "i", 4807 },	-- Swoop Gizzard
+						provider = { "i", 4807 },	-- Swoop Gizzard (QI!)
 						crs = {
 							2970,	-- Swoop
 							2971,	-- Taloned Swoop
@@ -689,7 +689,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/6 Prairie Wolf Paw
-						provider = { "i", 4758 },	-- Prairie Wolf Paw
+						provider = { "i", 4758 },	-- Prairie Wolf Paw (QI!)
 						crs = {
 							2959,	-- Prairie Stalker
 							2958,	-- Prairie Wolf
@@ -697,7 +697,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						},
 					}),
 					objective(2, {	-- 0/4 Plainstrider Talon
-						provider = { "i", 4759 },	-- Plainstrider Talon
+						provider = { "i", 4759 },	-- Plainstrider Talon (QI!)
 						crs = {
 							2956,	-- Adult Plainstrider
 							2957,	-- Elder Plainstrider
@@ -713,11 +713,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/6 Azure Feather
-						provider = { "i", 4752 },	-- Azure Feather
+						provider = { "i", 4752 },	-- Azure Feather (QI!)
 						cr = 2964,	-- Windfury Sorceress
 					}),
 					objective(2, {	-- 0/6 Bronze Feather
-						provider = { "i", 4753 },	-- Bronze Feather
+						provider = { "i", 4753 },	-- Bronze Feather (QI!)
 						cr = 2965,	-- Windfury Matriarch
 					}),
 					i(4968),	-- Bound Harness
@@ -740,13 +740,13 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				groups = {
 					objective(1, {	-- 0/2 Well Stone
 						providers = {
-							{ "i", 4808 },	-- Well Stone
+							{ "i", 4808 },	-- Well Stone (QI!)
 							{ "o", 2910 },	-- Well Stone
 						},
 					}),
 					objective(2, {	-- 0/2 Ambercorn
 						providers = {
-							{ "i", 4809 },	-- Ambercorn
+							{ "i", 4809 },	-- Ambercorn (QI!)
 							{ "o", 2912 },	-- Ambercorn
 						},
 					}),
@@ -779,7 +779,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 3,
 				groups = {
 					objective(1, {	-- 0/1 Horn of Arra'chea
-						provider = { "i", 4841 },	-- Horn of Arra'chea
+						provider = { "i", 4841 },	-- Horn of Arra'chea (QI!)
 						coords = {
 							{ 48.4, 15.6, MAP.MULGORE },
 							{ 53.0, 13.2, MAP.MULGORE },
@@ -820,7 +820,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/5 Seaforium Mining Charge
-						provider = { "i", 206157 },	-- Seaforium Mining Charge
+						provider = { "i", 206157 },	-- Seaforium Mining Charge (QI!)
 					}),
 				},
 			}),
@@ -834,10 +834,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Pine Salve
-						provider = { "i", 206175 },	-- Pine Salve
+						provider = { "i", 206175 },	-- Pine Salve (QI!)
 					}),
 					objective(2, {	-- 0/8 Windfury Cone
-						provider = { "i", 206170 },	-- Windfury Cone
+						provider = { "i", 206170 },	-- Windfury Cone (QI!)
 					}),
 					i(206177),	-- Pine Nut Butter
 				},
@@ -853,7 +853,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
-						provider = { "i", 206345 },	-- Fish Chunks
+						provider = { "i", 206345 },	-- Fish Chunks (QI!)
 					}),
 					i(277988),	-- Hoof-Holstered Blade
 					i(278002),	-- Valley Cosh
@@ -883,7 +883,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/1 Fizsprocket's Clipboard
-						provider = { "i", 4819 },	-- Fizsprocket's Clipboard
+						provider = { "i", 4819 },	-- Fizsprocket's Clipboard (QI!)
 						coord = { 64.8, 43.4, MAP.MULGORE },
 						cr = 3051,	-- Supervisor Fizsprocket
 					}),
@@ -898,7 +898,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = lvlsquish(4, 4, 1),
 				groups = {
 					objective(1, {	-- 0/8 Trophy Swoop Quill
-						provider = { "i", 4769 },	-- Swoop Hunting
+						provider = { "i", 4769 },	-- Swoop Hunting (QI!)
 						crs = {
 							2970,	-- Swoop
 							2969,	-- Wiry Swoop
@@ -936,7 +936,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					objective(1, {	-- Tame an Adult Plainstrider
 						providers = {
 							{ "n", 2956 },	-- Adult Plainstrider
-							{ "i", 15914 },	-- Taming Rod
+							{ "i", 15914 },	-- Taming Rod (QI!)
 						},
 					}),
 				},
@@ -952,7 +952,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					objective(1, {	-- Tame a Prairie Stalker
 						providers = {
 							{ "n", 2959 },	-- Prairie Stalker
-							{ "i", 15915 },	-- Taming Rod
+							{ "i", 15915 },	-- Taming Rod (QI!)
 						},
 					}),
 				},
@@ -968,7 +968,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					objective(1, {	-- Tame a Swoop
 						providers = {
 							{ "n", 2970 },	-- Swoop
-							{ "i", 15916 },	-- Taming Rod
+							{ "i", 15916 },	-- Taming Rod (QI!)
 						},
 					}),
 					recipe(883),	-- Call Pet
@@ -1045,7 +1045,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/4 Flatland Prowler Claw
-						provider = { "i", 5203 },	-- Flatland Prowler Claw
+						provider = { "i", 5203 },	-- Flatland Prowler Claw (QI!)
 						cr = 3566,	-- Flatland Prowler
 					}),
 				},
@@ -1098,7 +1098,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- Cleanse the Thunderhorn Water Well
-						provider = { "i", 5415 },	-- Thunderhorn Cleansing Totem
+						provider = { "i", 5415 },	-- Thunderhorn Cleansing Totem (QI!)
 						coord = { 44.0, 45.0, MAP.MULGORE },
 					}),
 					i(4963),	-- Thunderhorn Cloak
@@ -1112,11 +1112,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/6 Stalker Claws
-						provider = { "i", 4801 },	-- Stalker Claws
+						provider = { "i", 4801 },	-- Stalker Claws (QI!)
 						cr = 2959,	-- Prairie Stalker
 					}),
 					objective(2, {	-- 0/6 Cougar Claws
-						provider = { "i", 4802 },	-- Cougar Claws
+						provider = { "i", 4802 },	-- Cougar Claws (QI!)
 						cr = 3035,	-- Flatland Cougar
 					}),
 				},
@@ -1173,7 +1173,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- Cleanse the Wildmane Well
-						provider = { "i", 5416 },	-- Wildmane Cleansing Totem
+						provider = { "i", 5416 },	-- Wildmane Cleansing Totem (QI!)
 						coord = { 43.0, 14.0, MAP.MULGORE },
 					}),
 					i(3443),	-- Ceremonial Tomahawk
@@ -1188,7 +1188,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/8 Prairie Alpha Tooth
-						provider = { "i", 4803 },	-- Prairie Alpha Tooth
+						provider = { "i", 4803 },	-- Prairie Alpha Tooth (QI!)
 						cr = 2960,	-- Prairie Wolf Alpha
 					}),
 				},
@@ -1201,7 +1201,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- Cleanse the Winterhoof Water Well
-						provider = { "i", 5411 },	-- Winterhoof Cleansing Totem
+						provider = { "i", 5411 },	-- Winterhoof Cleansing Totem (QI!)
 						coord = { 53.0, 66.0, MAP.MULGORE },
 					}),
 				},

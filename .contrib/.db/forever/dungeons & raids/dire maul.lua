@@ -179,7 +179,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/1 Reliquary of Purity
 							providers = {
-								{ "i", 22201 },	-- Reliquary of Purity
+								{ "i", 22201 },	-- Reliquary of Purity (QI!)
 								{ "o", 179565 },	-- Dusty Reliquary
 							},
 							coord = { 63.2, 55.4, MAP.SILITHUS },
@@ -193,7 +193,7 @@ root(ROOTS.Instances, {
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Hydrospawn Essence
-							provider = { "i", 18299 },	-- Hydrospawn Essence
+							provider = { "i", 18299 },	-- Hydrospawn Essence (QI!)
 						}),
 						recipe(10140),	-- Conjure Water (Rank 7)
 					},
@@ -410,7 +410,7 @@ root(ROOTS.Instances, {
 					lvl = 54,
 					groups = {
 						objective(1, {	-- 0/1 Lethtendris's Web
-							provider = { "i", 18426 },	-- Lethtendris's Web
+							provider = { "i", 18426 },	-- Lethtendris's Web (QI!)
 						}),
 						i(18491),	-- Lorespinner
 					},
@@ -424,7 +424,7 @@ root(ROOTS.Instances, {
 					lvl = 54,
 					groups = {
 						objective(1, {	-- 0/1 Lethtendris's Web
-							provider = { "i", 18426 },	-- Lethtendris's Web
+							provider = { "i", 18426 },	-- Lethtendris's Web (QI!)
 						}),
 						i(18491),	-- Lorespinner
 					},
@@ -496,7 +496,7 @@ root(ROOTS.Instances, {
 					lvl = 54,
 					groups = {
 						objective(1, {	-- 0/1 Book of Incantations
-							provider = { "i", 18261 },	-- Book of Incantations
+							provider = { "i", 18261 },	-- Book of Incantations (QI!)
 						}),
 						i(18410),	-- Sprinter's Sword
 						i(18411),	-- Spry Boots
@@ -509,10 +509,10 @@ root(ROOTS.Instances, {
 					lvl = 56,
 					groups = {
 						objective(1, {	-- 0/1 Sealed Reliquary of Purity
-							provider = { "i", 18540 },	-- Sealed Reliquary of Purity
+							provider = { "i", 18540 },	-- Sealed Reliquary of Purity (QI!)
 							cost = {
-								{ "i", 18539, 1 },	-- 1x Reliquary of Purity
-								{ "i", 18501, 1 },	-- 1x Felvine Shard
+								{ "i", 18539, 1 },	-- 1x Reliquary of Purity (QI!)
+								{ "i", 18501, 1 },	-- 1x Felvine Shard (QI!)
 							},
 						}),
 						i(18535),	-- Milli's Shield
@@ -652,7 +652,7 @@ root(ROOTS.Instances, {
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Gauntlet of Gordok Might
-							provider = { "i", 18336 },	-- Gauntlet of Gordok Might
+							provider = { "i", 18336 },	-- Gauntlet of Gordok Might (QI!)
 						}),
 						i(18367),	-- Gordok's Gauntlets
 						i(18368),	-- Gordok's Gloves
@@ -824,11 +824,11 @@ root(ROOTS.Instances, {
 						groups = {
 							objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								questID = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
-								provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+								provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 							}),
 							objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
 								questID = 8990,	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
-								provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
+								provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet (QI!)
 							}),
 							i(22472),	-- Boots of Ferocity
 							i(22315),	-- Hammer of Revitalization

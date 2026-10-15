@@ -635,7 +635,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Furlbrow's Pocket Watch
 						providers = {
-							{ "i", 841 },	-- Furlbrow's Pocket Watch (PQI!)
+							{ "i", 841 },	-- Furlbrow's Pocket Watch (QI!)
 							{ "o", 290 },	-- Furlbrow's Wardrobe
 						},
 						coord = { 49.3, 19.5, MAP.WESTFALL },

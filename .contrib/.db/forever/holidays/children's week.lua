@@ -79,7 +79,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Cairne's Hoofprint
-						provider = { "i", 18643 },	-- Cairne's Hoofprint
+						provider = { "i", 18643 },	-- Cairne's Hoofprint (QI!)
 						coord = { 59.8, 51.6, MAP.THUNDER_BLUFF },
 						cr = 3057,	-- Cairne Bloodhoof <High Chieftain>
 					}),
@@ -147,7 +147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Jaina's Autograph
-						provider = { "i", 18642 },	-- Jaina's Autograph
+						provider = { "i", 18642 },	-- Jaina's Autograph (QI!)
 						coord = { 66.2, 49.0, MAP.DUSTWALLOW_MARSH },
 						cr = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					}),

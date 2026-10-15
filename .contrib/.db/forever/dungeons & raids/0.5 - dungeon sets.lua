@@ -42,7 +42,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -54,7 +54,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -160,7 +160,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -172,7 +172,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -276,7 +276,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -288,7 +288,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -391,7 +391,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -403,7 +403,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -505,7 +505,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -517,7 +517,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -623,7 +623,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -635,7 +635,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -736,7 +736,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -748,7 +748,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -852,7 +852,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -864,7 +864,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -963,7 +963,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
-								provider = { "i", 21928 },	-- Winterspring Blood Sample
+								provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 							}),
 						},
 						-- #endif
@@ -975,7 +975,7 @@ root(ROOTS.Instances, {
 						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
-								provider = { "i", 22381 },	-- Silithus Venom Sample
+								provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 								crs = {
 									11739,	-- Rock Stalker
 									11738,	-- Sand Skitterer
@@ -1081,7 +1081,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Magma Core
-							provider = { "i", 21938 },	-- Magma Core
+							provider = { "i", 21938 },	-- Magma Core (QI!)
 							coord = { 36.0, 56.4, MAP.BURNING_STEPPES },
 							cr = 16043,	-- Magma Lord Bokk
 						}),
@@ -1268,7 +1268,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Druidical Remains
-							provider = { "i", 22226 },	-- Druidical Remains
+							provider = { "i", 22226 },	-- Druidical Remains (QI!)
 							crs = {
 								11730,	-- Hive'Regal Ambusher
 								11731,	-- Hive'Regal Burrower
@@ -1288,7 +1288,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Starbreeze Village Relic
-							provider = { "i", 22227 },	-- Starbreeze Village Relic
+							provider = { "i", 22227 },	-- Starbreeze Village Relic (QI!)
 							crs = {
 								7428,	-- Frostmaul Giant
 								7429,	-- Frostmaul Preserver
@@ -1305,7 +1305,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
-							provider = { "i", 22228 },	-- Brilliant Sword of Zealotry
+							provider = { "i", 22228 },	-- Brilliant Sword of Zealotry (QI!)
 							cr = 9448,	-- Scarlet Praetorian
 						}),
 					},
@@ -1319,7 +1319,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Soul Ashes of the Banished
-							provider = { "i", 22229 },	-- Soul Ashes of the Banished
+							provider = { "i", 22229 },	-- Soul Ashes of the Banished (QI!)
 						}),
 					},
 				}),
@@ -1348,7 +1348,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/25 Ogre Warbeads
-							provider = { "i", 21982 },	-- Ogre Warbeads
+							provider = { "i", 21982 },	-- Ogre Warbeads (QI!)
 						}),
 						i(22150),	-- Beads of Ogre Might
 						i(22149),	-- Beads of Ogre Mojo
@@ -1373,7 +1373,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/40 Blackrock Bracer
-							provider = { "i", 22138 },	-- Blackrock Bracer
+							provider = { "i", 22138 },	-- Blackrock Bracer (QI!)
 						}),
 					},
 				}),
@@ -1385,29 +1385,29 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/12 Scorched Ectoplasm
-							provider = { "i", 21937 },	-- Scorched Ectoplasm
+							provider = { "i", 21937 },	-- Scorched Ectoplasm (QI!)
 							crs = {
 								12178,	-- Tortured Druid
 								12179,	-- Tortured Sentinel
 							},
 							cost = {
-								{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller
+								{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller (QI!)
 								{ "i", 9061, 1 },	-- 1x Goblin Rocket Fuel
 							},
 						}),
 						objective(2, {	-- 0/12 Frozen Ectoplasm
-							provider = { "i", 21936 },	-- Frozen Ectoplasm
+							provider = { "i", 21936 },	-- Frozen Ectoplasm (QI!)
 							crs = {
 								7524,	-- Anguished Highborne
 								7523,	-- Suffering Highborne
 							},
 							cost = {
-								{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller
+								{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller (QI!)
 								{ "i", 9061, 1 },	-- 1x Goblin Rocket Fuel
 							},
 						}),
 						objective(3, {	-- 0/12 Stable Ectoplasm
-							provider = { "i", 21935 },	-- Stable Ectoplasm
+							provider = { "i", 21935 },	-- Stable Ectoplasm (QI!)
 							crs = {
 								8542,	-- Death Singer
 								8539,	-- Eyeless Watcher
@@ -1416,7 +1416,7 @@ root(ROOTS.Instances, {
 								8538,	-- Unseen Servant
 							},
 							cost = {
-								{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller
+								{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller (QI!)
 								{ "i", 9061, 1 },	-- 1x Goblin Rocket Fuel
 							},
 						}),
@@ -1435,7 +1435,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/20 Bloodkelp
 							providers = {
-								{ "i",  22094 },	-- Bloodkelp
+								{ "i",  22094 },	-- Bloodkelp (QI!)
 								{ "o", 181053 },	-- Basket of Bloodkelp
 							},
 							crs = {
@@ -1533,7 +1533,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Starbreeze Village Relic
-							provider = { "i", 22227 },	-- Starbreeze Village Relic
+							provider = { "i", 22227 },	-- Starbreeze Village Relic (QI!)
 							crs = {
 								7428,	-- Frostmaul Giant
 								7429,	-- Frostmaul Preserver
@@ -1552,7 +1552,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Druidical Remains
-							provider = { "i", 22226 },	-- Druidical Remains
+							provider = { "i", 22226 },	-- Druidical Remains (QI!)
 							crs = {
 								11730,	-- Hive'Regal Ambusher
 								11731,	-- Hive'Regal Burrower
@@ -1574,7 +1574,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
-							provider = { "i", 22228 },	-- Brilliant Sword of Zealotry
+							provider = { "i", 22228 },	-- Brilliant Sword of Zealotry (QI!)
 							cr = 9448,	-- Scarlet Praetorian
 						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
@@ -1590,7 +1590,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Soul Ashes of the Banished
-							provider = { "i", 22229 },	-- Soul Ashes of the Banished
+							provider = { "i", 22229 },	-- Soul Ashes of the Banished (QI!)
 							crs = {
 								7071,	-- Cursed Paladin
 								7072,	-- Cursed Justicar
@@ -1655,10 +1655,10 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- Theldren's Team Defeated
-							provider = { "i", 21986 },	-- Banner of Provocation
+							provider = { "i", 21986 },	-- Banner of Provocation (QI!)
 						}),
 						objective(2, {	-- Top Piece of Lord Valthalak's Amulet
-							provider = { "i", 22047 },	-- Top Piece of Lord Valthalak's Amulet
+							provider = { "i", 22047 },	-- Top Piece of Lord Valthalak's Amulet (QI!)
 						}),
 						{
 							itemID = 21986,	-- Banner of Provocation
@@ -1684,7 +1684,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(4, {	-- 0/25 Volcanic Ash
 							providers = {
-								{ "i",  22338 },	-- Volcanic Ash
+								{ "i",  22338 },	-- Volcanic Ash (QI!)
 								{ "o", 181098 },	-- Volcanic Ash
 							},
 							cr = 10078,	-- Terrorspark
@@ -1710,7 +1710,7 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Jeering Spectre's Essence
-							provider = { "i", 22224 },	-- Jeering Spectre's Essence
+							provider = { "i", 22224 },	-- Jeering Spectre's Essence (QI!)
 						}),
 					},
 				}),
@@ -1732,7 +1732,7 @@ root(ROOTS.Instances, {
 							provider = { "n", 16080 },	-- Mor Grayhoof
 						}),
 						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 						}),
 					},
 				}),
@@ -1755,7 +1755,7 @@ root(ROOTS.Instances, {
 							provider = { "n", 16097 },	-- Isalien
 						}),
 						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 						}),
 					},
 				}),
@@ -1777,7 +1777,7 @@ root(ROOTS.Instances, {
 							provider = { "n", 16102 },	-- Sothos
 						}),
 						objective(3, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 						}),
 					},
 				}),
@@ -1796,7 +1796,7 @@ root(ROOTS.Instances, {
 							provider = { "n", 16118 },	-- Kormok
 						}),
 						objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 						}),
 					},
 				}),
@@ -1819,11 +1819,11 @@ root(ROOTS.Instances, {
 							provider = { "n", 16097 },	-- Isalien
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
-							provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+							provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 							cost = {
-								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
-								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
 							},
 						}),
 					},
@@ -1846,11 +1846,11 @@ root(ROOTS.Instances, {
 							provider = { "n", 16080 },	-- Mor Grayhoof
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
-							provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+							provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 							cost = {
-								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
-								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
 							},
 						}),
 					},
@@ -1873,11 +1873,11 @@ root(ROOTS.Instances, {
 							provider = { "n", 16102 },	-- Sothos
 						}),
 						objective(3, {	-- 0/1 Lord Valthalak's Amulet
-							provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+							provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 							cost = {
-								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
-								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
 							},
 						}),
 					},
@@ -1897,11 +1897,11 @@ root(ROOTS.Instances, {
 							provider = { "n", 16118 },	-- Kormok
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
-							provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+							provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 							cost = {
-								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
-								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+								{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+								{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
 							},
 						}),
 					},
@@ -1925,16 +1925,16 @@ root(ROOTS.Instances, {
 					lvl = 58,
 					groups = {
 						objective(1, {	-- 0/1 Incendicite of Incendius
-							provider = { "i", 21987 },	-- Incendicite of Incendius
+							provider = { "i", 21987 },	-- Incendicite of Incendius (QI!)
 						}),
 						objective(2, {	-- 0/1 Ember of Emberseer
-							provider = { "i", 21988 },	-- Ember of Emberseer
+							provider = { "i", 21988 },	-- Ember of Emberseer (QI!)
 						}),
 						objective(3, {	-- 0/1 Cinder of Cynders
-							provider = { "i", 21989 },	-- Cinder of Cynders
+							provider = { "i", 21989 },	-- Cinder of Cynders (QI!)
 						}),
 						objective(4, {	-- 0/1 Hallowed Brazier
-							provider = { "i", 22014 },	-- Hallowed Brazier
+							provider = { "i", 22014 },	-- Hallowed Brazier (QI!)
 						}),
 					},
 				}),

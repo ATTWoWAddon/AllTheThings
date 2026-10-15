@@ -435,7 +435,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/5 Rethban Ore
 						providers = {
-							{ "i", 2798 },	-- Rethban Ore
+							{ "i", 2798 },	-- Rethban Ore (QI!)
 							{ "n", 580 },	-- Redridge Drudger
 							{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
 							{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)

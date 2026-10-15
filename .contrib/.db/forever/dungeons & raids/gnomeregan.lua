@@ -346,7 +346,7 @@ root(ROOTS.Instances, {
 					lvl = 25,
 					groups = {
 						objective(1, {	-- 0/1 Prismatic Punch Card
-							provider = { "i", 9316 },	-- Prismatic Punch Card
+							provider = { "i", 9316 },	-- Prismatic Punch Card (QI!)
 						}),
 						i(9604),	-- Mechanic's Pipehammer
 						i(9605),	-- Repairman's Cape
@@ -361,7 +361,7 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/12 Essential Artificial
 							providers = {
-								{ "i",   9278 },	-- Essential Artificial
+								{ "i",   9278 },	-- Essential Artificial (QI!)
 								{ "o", 142344 },	-- Artificial Extrapolator
 							},
 							description = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
@@ -376,8 +376,8 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/1 Full Leaden Collection Phial
-							provider = { "i", 9284 },	-- Full Leaden Collection Phial
-							cost = { { "i", 9283, 1 } },	-- 1x Empty Leaden Collection Phial
+							provider = { "i", 9284 },	-- Full Leaden Collection Phial (QI!)
+							cost = { { "i", 9283, 1 } },	-- 1x Empty Leaden Collection Phial (QI!)
 							cr = 6329,	-- Irradiated Pillager
 						}),
 					},
@@ -425,7 +425,7 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/24 Robo-mechanical Guts
-							provider = { "i", 9309 },	-- Robo-mechanical Guts
+							provider = { "i", 9309 },	-- Robo-mechanical Guts (QI!)
 						}),
 						i(9608),	-- Shoni's Disarming Tool
 						i(9609),	-- Shilly Mitts
@@ -486,12 +486,12 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/1 Rig Blueprints
 							providers = {
-								{ "i",   9153 },	-- Rig Blueprints
+								{ "i",   9153 },	-- Rig Blueprints (QI!)
 								{ "o", 142477 },	-- Thermaplugg's Safe
 							},
 						}),
 						objective(2, {	-- 0/1 Thermaplugg's Safe Combination
-							provider = { "i", 9299 },	-- Thermaplugg's Safe Combination
+							provider = { "i", 9299 },	-- Thermaplugg's Safe Combination (QI!)
 							cr = 7800,	-- Mekgineer Thermaplugg
 						}),
 						i(9623),	-- Civinad Robes
@@ -507,7 +507,7 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/1 Techbot's Memory Core
-							provider = { "i", 9277 },	-- Techbot's Memory Core
+							provider = { "i", 9277 },	-- Techbot's Memory Core (QI!)
 						}),
 					},
 				}),
@@ -540,8 +540,8 @@ root(ROOTS.Instances, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/1 High Potency Radioactive Fallout
-							provider = { "i", 9365 },	-- High Potency Radioactive Fallout
-							cost = { { "i", 9364, 1 } },	-- 1x Heavy Leaden Collection Phial
+							provider = { "i", 9365 },	-- High Potency Radioactive Fallout (QI!)
+							cost = { { "i", 9364, 1 } },	-- 1x Heavy Leaden Collection Phial (QI!)
 							cr = 6219,	-- Corrosive Lurker
 						}),
 					},

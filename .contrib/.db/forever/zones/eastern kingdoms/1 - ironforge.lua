@@ -126,7 +126,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/5 Alterac Granite
 						providers = {
-							{ "i", 4521 },	-- Alterac Granite
+							{ "i", 4521 },	-- Alterac Granite (QI!)
 							{ "o", 2714 },	-- Alterac Granite
 						},
 						coord = { 43.2, 27.9, MAP.HILLSBRAD_FOOTHILLS },
@@ -165,12 +165,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/6 Filled Cursed Ooze Jar
-						provider = { "i", 11947 },	-- Filled Cursed Ooze Jar
+						provider = { "i", 11947 },	-- Filled Cursed Ooze Jar (QI!)
 						cost = { { "i", 11914, 1 } },	-- 1x Empty Cursed Ooze Jar
 						cr = 7086,	-- Cursed Ooze
 					}),
 					objective(2, {	-- 0/6 Filled Tainted Ooze Jar
-						provider = { "i", 11949 },	-- Filled Tainted Ooze Jar
+						provider = { "i", 11949 },	-- Filled Tainted Ooze Jar (QI!)
 						cost = { { "i", 11948, 1 } },	-- 1x Empty Tainted Ooze Jar
 						cr = 7092,	-- Tainted Ooze
 					}),
@@ -189,7 +189,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Filled Pure Sample Jar
-						provider = { "i", 11954 },	-- Filled Pure Sample Jar
+						provider = { "i", 11954 },	-- Filled Pure Sample Jar (QI!)
 						cost = { { "i", 11953, 1 } },	-- 1x Empty Pure Sample Jar
 						crs = {
 							6556,	-- Muculent Slime
@@ -259,33 +259,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Rubbing: Rune of Beth'Amara
 						providers = {
-							{ "i",  10563 },	-- Rubbing: Rune of Beth'Amara
+							{ "i",  10563 },	-- Rubbing: Rune of Beth'Amara (QI!)
 							{ "o", 149481 },	-- Rune of Beth'Amara
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i",  10445 },	-- Drawing Kit (QI!)
 						},
 						coord = { 36.0, 53.0, MAP.AZSHARA },
 					}),
 					objective(2, {	-- 0/1 Rubbing: Rune of Jin'yael
 						providers = {
-							{ "i",  10564 },	-- Rubbing: Rune of Jin'yael
+							{ "i",  10564 },	-- Rubbing: Rune of Jin'yael (QI!)
 							{ "o", 149480 },	-- Rune of Jin'yael
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i",  10445 },	-- Drawing Kit (QI!)
 						},
 						coord = { 39.0, 50.0, MAP.AZSHARA },
 					}),
 					objective(3, {	-- 0/1 Rubbing: Rune of Markri
 						providers = {
-							{ "i",  10565 },	-- Rubbing: Rune of Markri
+							{ "i",  10565 },	-- Rubbing: Rune of Markri (QI!)
 							{ "o", 149482 },	-- Rune of Markri
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i",  10445 },	-- Drawing Kit (QI!)
 						},
 						coord = { 39.0, 55.0, MAP.AZSHARA },
 					}),
 					objective(4, {	-- 0/1 Rubbing: Rune of Sael'hai
 						providers = {
-							{ "i",  10566 },	-- Rubbing: Rune of Sael'hai
+							{ "i",  10566 },	-- Rubbing: Rune of Sael'hai (QI!)
 							{ "o", 149483 },	-- Rune of Sael'hai
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i",  10445 },	-- Drawing Kit (QI!)
 						},
 						coord = { 42.0, 64.0, MAP.AZSHARA },
 					}),
@@ -298,7 +298,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						groups = {
 							objective(5, {	-- 0/1 Standard Issue Flare Gun
 								questID = 3449,	-- Arcane Runes
-								provider = { "i", 10444 },	-- Standard Issue Flare Gun
+								provider = { "i", 10444 },	-- Standard Issue Flare Gun (QI!)
 								description = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
 								coord = { 77.0, 91.0, MAP.AZSHARA },
 							}),
@@ -513,7 +513,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/20 Searing Coral
 						providers = {
-							{ "i", 6848 },	-- Searing Coral
+							{ "i", 6848 },	-- Searing Coral (QI!)
 							{ "o", 89634 },	-- Iron Coral
 						},
 						coord = { 9.0, 69.2, MAP.WETLANDS },
@@ -538,7 +538,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Umbral Ore
 						providers = {
-							{ "i", 6800 },	-- Umbral Ore
+							{ "i", 6800 },	-- Umbral Ore (QI!)
 							{ "o", 85562 },	-- Ironband's Strongbox
 						},
 						coord = { 77.9, 62.2, MAP.DUN_MOROGH },
@@ -577,7 +577,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Mage-tastic Gizmonitor
 						providers = {
-							{ "i",   7226 },	-- Mage-tastic Gizmonitor
+							{ "i",   7226 },	-- Mage-tastic Gizmonitor (QI!)
 							{ "o", 102984 },	-- Bink's Toolbox
 						},
 						coord = { 27.7, 36.4, MAP.DUN_MOROGH },
@@ -718,8 +718,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Overspark's Signed Pledge
-						provider = { "i", 11283 },	-- Overspark's Signed Pledge
-						cost = { { "i", 10793, 1 } },	-- 1x Overspark's Pledge of Secrecy
+						provider = { "i", 11283 },	-- Overspark's Signed Pledge (QI!)
+						cost = { { "i", 10793, 1 } },	-- 1x Overspark's Pledge of Secrecy (QI!)
 					}),
 				},
 			}),
@@ -828,7 +828,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						groups = {
 							objective(1, {	-- 0/1 Symbol of Life
 								questID = 1783,	-- The Tome of Divinity (5/8)
-								provider = { "i", 6866 },	-- Symbol of Life
+								provider = { "i", 6866 },	-- Symbol of Life (QI!)
 							}),
 						},
 					}),
@@ -843,7 +843,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 12,
 				groups = {
 					objective(1, {	-- 0/1 Dark Iron Script
-						provider = { "i", 6847 },	-- Dark Iron Script
+						provider = { "i", 6847 },	-- Dark Iron Script (QI!)
 						coord = { 78.2, 59.8, MAP.DUN_MOROGH },
 						cr = 6123,	-- Dark Iron Spy
 					}),
@@ -890,7 +890,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Vejrek's Head
-						provider = { "i", 6799 },	-- Vejrek's Head
+						provider = { "i", 6799 },	-- Vejrek's Head (QI!)
 						coord = { 27.8, 57.4, MAP.DUN_MOROGH },
 						cr = 6113,	-- Vejrek
 					}),

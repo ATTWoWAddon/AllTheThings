@@ -172,7 +172,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				isYearly = true,
 				groups = {
 					objective(1, {	-- 0/1 Alliance Gift Collection
-						provider = { "i", 22262 },	-- Alliance Gift Collection
+						provider = { "i", 22262 },	-- Alliance Gift Collection (QI!)
 					}),
 					i(21812),	-- Box of Chocolates
 					i(22218),	-- Handful of Rose Petals
@@ -190,7 +190,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				isYearly = true,
 				groups = {
 					objective(1, {	-- 0/1 Horde Gift Collection
-						provider = { "i", 22263 },	-- Horde Gift Collection
+						provider = { "i", 22263 },	-- Horde Gift Collection (QI!)
 					}),
 					i(21812),	-- Box of Chocolates
 					i(22218),	-- Handful of Rose Petals

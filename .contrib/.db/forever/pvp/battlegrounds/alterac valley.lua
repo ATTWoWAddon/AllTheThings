@@ -239,7 +239,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/1 Ram Collared and Returned
-						provider = { "i", 17689 },	-- Stormpike Training Collar
+						provider = { "i", 17689 },	-- Stormpike Training Collar (QI!)
 						cr = 10990,	-- Alterac Ram
 					}),
 				},
@@ -252,7 +252,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Muzzled and Returned
-						provider = { "i", 17626 },	-- Frostwolf Muzzle
+						provider = { "i", 17626 },	-- Frostwolf Muzzle (QI!)
 						cr = 10981,	-- Frostwolf
 					}),
 				},
@@ -428,7 +428,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Stormpike Banner
-						provider = { "i", 17849 },	-- Stormpike Banner
+						provider = { "i", 17849 },	-- Stormpike Banner (QI!)
 						coord = { 41.9, 36.1, MAP.ALTERAC_VALLEY },
 					}),
 					i(17691),	-- Stormpike Insignia Rank 1
@@ -442,7 +442,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Banner
-						provider = { "i", 17850 },	-- Frostwolf Banner
+						provider = { "i", 17850 },	-- Frostwolf Banner (QI!)
 						coord = { 50.7, 93.3, MAP.ALTERAC_VALLEY },
 					}),
 					i(17690),	-- Frostwolf Insignia Rank 1

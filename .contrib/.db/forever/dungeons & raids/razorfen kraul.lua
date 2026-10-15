@@ -19,7 +19,7 @@ root(ROOTS.Instances, {
 					lvl = 29,
 					groups = {
 						objective(1, {	-- 0/1 Razorflank's Heart
-							provider = { "i", 5793 },	-- Razorflank's Heart
+							provider = { "i", 5793 },	-- Razorflank's Heart (QI!)
 						}),
 						i(6725),	-- Marbled Buckler
 						i(4197),	-- Berylline Pads
@@ -39,30 +39,30 @@ root(ROOTS.Instances, {
 					groups = {
 						objective(1, {	-- 0/6 Blueleaf Tuber
 							providers = {
-								{ "i", 5876 },	-- Blueleaf Tuber
+								{ "i", 5876 },	-- Blueleaf Tuber (QI!)
 								{ "o", 20920 },	-- Blueleaf Tuber
-								{ "i", 5880 },	-- Crate With Holes
-								{ "i", 6684 },	-- Snufflenose Command Stick
+								{ "i", 5880 },	-- Crate With Holes (QI!)
+								{ "i", 6684 },	-- Snufflenose Command Stick (QI!)
 							},
 							cr = 4781,	-- Snufflenose Gopher
 						}),
 						objective(2, {	-- 0/1 Crate With Holes
 							providers = {
-								{ "i", 5880 },	-- Crate With Holes
+								{ "i", 5880 },	-- Crate With Holes (QI!)
 								{ "o", 21277 },	-- Crate With Holes
 							},
 							coord = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						objective(3, {	-- 0/1 Snufflenose Owner's Manual
 							providers = {
-								{ "i", 5897 },	-- Snufflenose Owner's Manual
+								{ "i", 5897 },	-- Snufflenose Owner's Manual (QI!)
 								{ "o", 21530 },	-- Snufflenose Owner's Manual
 							},
 							coord = { 62.3, 37.6, MAP.THE_BARRENS },
 						}),
 						objective(4, {	-- 0/1 Snufflenose Command Stick
 							providers = {
-								{ "i", 6684 },	-- Snufflenose Command Stick
+								{ "i", 6684 },	-- Snufflenose Command Stick (QI!)
 								{ "o", 68865 },	-- Snufflenose Command Stick
 							},
 							coord = { 62.3, 37.6, MAP.THE_BARRENS },
@@ -79,7 +79,7 @@ root(ROOTS.Instances, {
 					lvl = 30,
 					groups = {
 						objective(1, {	-- 0/1 Kraul Guano
-							provider = { "i", 5801 },	-- Kraul Guano
+							provider = { "i", 5801 },	-- Kraul Guano (QI!)
 						}),
 					},
 				}),
@@ -98,7 +98,7 @@ root(ROOTS.Instances, {
 					lvl = 25,
 					groups = {
 						objective(1, {	-- 0/1 Treshala's Pendant
-							provider = { "i", 5825 },	-- Treshala's Pendant
+							provider = { "i", 5825 },	-- Treshala's Pendant (QI!)
 							description = "Drops from any creature in the Dungeon.",
 						}),
 						i(6751),	-- Mourning Shawl
@@ -113,7 +113,7 @@ root(ROOTS.Instances, {
 					lvl = 29,
 					groups = {
 						objective(1, {	-- 0/1 Razorflank's Medallion
-							provider = { "i", 5792 },	-- Razorflank's Medallion
+							provider = { "i", 5792 },	-- Razorflank's Medallion (QI!)
 						}),
 						i(6725),	-- Marbled Buckler
 						i(4197),	-- Berylline Pads

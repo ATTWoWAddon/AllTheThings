@@ -149,7 +149,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Sethir's Journal
-						provider = { "i", 7737 },	-- Sethir's Journal
+						provider = { "i", 7737 },	-- Sethir's Journal (QI!)
 						description = "This item can only be pickpocketed.",
 						coord = { 37.6, 22.2, MAP.TELDRASSIL },
 						cr = 6909,	-- Sethir the Ancient
@@ -275,7 +275,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- Offer the sacrifice at the fountain
-						provider = { "i", 8155 },	-- Sathrah's Sacrifice
+						provider = { "i", 8155 },	-- Sathrah's Sacrifice (QI!)
 					}),
 					i(9600),	-- Lace Pants
 					i(9601),	-- Cushioned Boots
@@ -338,7 +338,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				groups = {
 					objective(1, {	-- 0/20 Sunscorched Shell
 						providers = {
-							{ "i", 6849 },	-- Sunscorched Shell
+							{ "i", 6849 },	-- Sunscorched Shell (QI!)
 							{ "o", 89635 },	-- Sunscorched Shell
 						},
 						coord = { 11.7, 37.1, MAP.THOUSAND_NEEDLES },
@@ -379,7 +379,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/1 Silvery Spinnerets
-						provider = { "i", 8344 },	-- Silvery Spinnerets
+						provider = { "i", 8344 },	-- Silvery Spinnerets (QI!)
 						cr = 7319,	-- Lady Sathrah
 						coords = {
 							{ 38.8, 26.0, MAP.TELDRASSIL },
@@ -417,13 +417,13 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				groups = {
 					objective(1, {	-- 0/8 Elunite Ore
 						providers = {
-							{ "i", 6808 },	-- Elunite Ore
+							{ "i", 6808 },	-- Elunite Ore (QI!)
 							{ "o", 86492 },	-- Crate of Elunite
 						},
 						coord = { 33.1, 46.3, MAP.DARKSHORE },
 					}),
 					objective(2, {	-- 0/1 Elura's Medallion
-						provider = { "i", 6809 },	-- Elura's Medallion
+						provider = { "i", 6809 },	-- Elura's Medallion (QI!)
 						coord = { 31.6, 44.8, MAP.DARKSHORE },
 						cr = 6133,	-- Shade of Elura
 					}),
@@ -466,9 +466,9 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				groups = {
 					objective(1, {	-- 0/1 Velinde's Journal
 						providers = {
-							{ "i", 5520 },	-- Velinde's Journal
+							{ "i", 5520 },	-- Velinde's Journal (QI!)
 							{ "o", 19877 },	-- Velinde's Locker
-							{ "i", 5521 },	-- Velinde's Key
+							{ "i", 5521 },	-- Velinde's Key (QI!)
 						},
 						coord = { 62.5, 83.1, MAP.DARNASSUS },
 					}),
@@ -493,7 +493,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Horn of Vorlus
-						provider = { "i", 6805 },	-- Horn of Vorlus
+						provider = { "i", 6805 },	-- Horn of Vorlus (QI!)
 						coord = { 47.2, 63.6, MAP.TELDRASSIL },
 						cr = 6128,	-- Vorlus Vilehoof
 					}),

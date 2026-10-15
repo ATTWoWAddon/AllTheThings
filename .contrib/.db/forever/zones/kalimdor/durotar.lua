@@ -26,7 +26,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- 0/1 Burning Blade Medallion
-								provider = { "i", 4859 },	-- Burning Blade Medallion
+								provider = { "i", 4859 },	-- Burning Blade Medallion (QI!)
 								coord = { 42.8, 52.6, MAP.DUROTAR },
 								cr = 3183,	-- Yarrog Baneshadow
 							}),
@@ -44,7 +44,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						lvl = 4,
 						groups = {
 							objective(1, {	-- 0/2 Felstalker Hoof
-								provider = { "i", 6640 },	-- Felstalker Hoof
+								provider = { "i", 6640 },	-- Felstalker Hoof (QI!)
 								cr = 3102,	-- Felstalker
 							}),
 						},
@@ -140,7 +140,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						groups = {
 							objective(1, {	-- 0/10 Cactus Apple
 								providers = {
-									{ "i",  11583 },	-- Cactus Apple
+									{ "i",  11583 },	-- Cactus Apple (QI!)
 									{ "o", 171938 },	-- Cactus Apple
 								},
 							}),
@@ -180,7 +180,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						lvl = 3,
 						groups = {
 							objective(1, {	-- 0/5 Peons Awoken
-								provider = { "i", 16114 },	-- Foreman's Blackjack
+								provider = { "i", 16114 },	-- Foreman's Blackjack (QI!)
 								cr = 10556,	-- Lazy Peon
 							}),
 						},
@@ -213,7 +213,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- 0/1 Sarkoth's Mangled Claw
-								provider = { "i", 4905 },	-- Sarkoth's Mangled Claw
+								provider = { "i", 4905 },	-- Sarkoth's Mangled Claw (QI!)
 								coord = { 40.6, 66.6, MAP.DUROTAR },
 								cr = 3281,	-- Sarkoth
 							}),
@@ -252,7 +252,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- 0/10 Scorpid Worker Tail
-								provider = { "i", 4862 },	-- Scorpid Worker Tail
+								provider = { "i", 4862 },	-- Scorpid Worker Tail (QI!)
 								crs = {
 									3281,	-- Sarkoth
 									3124,	-- Scorpid Worker
@@ -279,7 +279,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						groups = {
 							objective(1, {	-- 0/1 Thazz'ril's Pick
 								providers = {
-									{ "i",  16332 },	-- Thazz'ril's Pick
+									{ "i",  16332 },	-- Thazz'ril's Pick (QI!)
 									{ "o", 178087 },	-- Thazz'ril's Pick
 								},
 								coord = { 43.8, 53.8, MAP.DUROTAR },
@@ -321,7 +321,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						classes = { WARLOCK },
 						groups = {
 							objective(1, {	-- 0/8 Vile Familiar Head
-								provider = { "i", 6487 },	-- Vile Familiar Head
+								provider = { "i", 6487 },	-- Vile Familiar Head (QI!)
 								cr = 3101,	-- Vile Familiar
 							}),
 							recipe(688),	-- Summon Imp
@@ -455,7 +455,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/4 Intact Makrura Eye
-						provider = { "i", 4887 },	-- Intact Makrura Eye
+						provider = { "i", 4887 },	-- Intact Makrura Eye (QI!)
 						crs = {
 							3103,	-- Makrura Clacker
 							3104,	-- Makrura Shellhide
@@ -464,7 +464,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						},
 					}),
 					objective(2, {	-- 0/8 Crawler Mucus
-						provider = { "i", 4888 },	-- Crawler Mucus
+						provider = { "i", 4888 },	-- Crawler Mucus (QI!)
 						crs = {
 							3228,	-- Corrupted Surf Crawler
 							3108,	-- Encrusted Surf Crawler
@@ -526,7 +526,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				groups = {
 					objective(1, {	-- 0/3 Taillasher Egg
 						providers = {
-							{ "i", 4890 },	-- Taillasher Egg
+							{ "i", 4890 },	-- Taillasher Egg (QI!)
 							{ "o", 3240 },	-- Taillasher Eggs
 						},
 					}),
@@ -704,7 +704,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/8 Canvas Scraps
-						provider = { "i", 4870 },	-- Canvas Scraps
+						provider = { "i", 4870 },	-- Canvas Scraps (QI!)
 						crs = {
 							3119,	-- Kolkar Drudge
 							3120,	-- Kolkar Outrunner
@@ -742,7 +742,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Fizzle's Claw
-						provider = { "i", 4869 },	-- Fizzle's Claw
+						provider = { "i", 4869 },	-- Fizzle's Claw (QI!)
 						coord = { 42.6, 26.4, MAP.DUROTAR },
 						cr = 3203,	-- Fizzle Darkstorm
 					}),
@@ -833,7 +833,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				groups = {
 					objective(1, {	-- 0/3 Gnomish Tools
 						providers = {
-							{ "i", 4863 },	-- Gnomish Tools
+							{ "i", 4863 },	-- Gnomish Tools (QI!)
 							{ "o", 3236 },	-- Gnomish Toolbox
 						},
 					}),
@@ -925,7 +925,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/1 Kron's Amulet
-						provider = { "i", 4891 },	-- Kron's Amulet
+						provider = { "i", 4891 },	-- Kron's Amulet (QI!)
 						crs = {
 							3231,	-- Corrupted Dreadmaw Crocolisk
 							3110,	-- Dreadmaw Crocolisk
@@ -964,7 +964,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				groups = {
 					objective(1, {	-- 0/1 Minshina's Skull
 						providers = {
-							{ "i", 4864 },	-- Minshina's Skull
+							{ "i", 4864 },	-- Minshina's Skull (QI!)
 							{ "o", 3237 },	-- Imprisoned Darkspear
 						},
 						coord = { 67.4, 87.7, MAP.DUROTAR },
@@ -987,7 +987,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						lvl = 7,
 						groups = {
 							objective(1, {	-- 0/4 Venomtail Poison Sac
-								cost = { { "i", 4886, 4 } },	-- 4x Venomtail Poison Sac
+								cost = { { "i", 4886, 4 } },	-- 4x Venomtail Poison Sac (QI!)
 								crs = {
 									3226,	-- Corrupted Scorpid
 									5823,	-- Death Flayer
@@ -996,7 +996,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 							}),
 							objective(1, {	-- 0/1 Venomtail Antidote
 								questID = 812,	-- Need for a Cure
-								provider = { "i", 4904 },	-- Venomtail Antidote
+								provider = { "i", 4904 },	-- Venomtail Antidote (QI!)
 							}),
 						},
 					}),
@@ -1019,7 +1019,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/4 Durotar Tiger Fur
-						provider = { "i", 4892 },	-- Durotar Tiger Fur
+						provider = { "i", 4892 },	-- Durotar Tiger Fur (QI!)
 						cr = 3121,	-- Durotar Tiger
 					}),
 				},
@@ -1041,7 +1041,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/7 Uncloven Satyr Hoof
-						provider = { "i", 7128 },	-- Uncloven Satyr Hoof
+						provider = { "i", 7128 },	-- Uncloven Satyr Hoof (QI!)
 						crs = {
 							3771,	-- Bleakheart Hellcaller
 							3770,	-- Bleakheart Shadowstalker
@@ -1086,7 +1086,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/6 Searing Collar
-						provider = { "i", 4871 },	-- Searing Collar
+						provider = { "i", 4871 },	-- Searing Collar (QI!)
 						crs = {
 							3198,	-- Burning Blade Apprentice
 							3199,	-- Burning Blade Cultist
@@ -1146,7 +1146,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Tame a Dire Mottled Boar
-						provider = { "i", 15917 },	-- Taming Rod
+						provider = { "i", 15917 },	-- Taming Rod (QI!)
 						cr = 3099,	-- Dire Mottled Boar
 					}),
 				},
@@ -1160,7 +1160,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Tame a Surf Crawler
-						provider = { "i", 15919 },	-- Taming Rod
+						provider = { "i", 15919 },	-- Taming Rod (QI!)
 						cr = 3107,	-- Surf Crawler
 					}),
 				},
@@ -1174,7 +1174,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Tame an Armored Scorpid
-						provider = { "i", 15920 },	-- Taming Rod
+						provider = { "i", 15920 },	-- Taming Rod (QI!)
 						cr = 3126,	-- Armored Scorpid
 					}),
 					recipe(883),	-- Call Pet
@@ -1211,7 +1211,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 								questID = 924,	-- The Demon Seed
 								providers = {
 									{ "o", 3525 },	-- The Altar of Fire
-									{ "i", 4986 },	-- Flawed Power Stone
+									{ "i", 4986 },	-- Flawed Power Stone (QI!)
 								},
 								coord = { 47.0, 19.0, MAP.THE_BARRENS },
 							}),
@@ -1450,7 +1450,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				groups = {
 					objective(1, {	-- 0/5 Sack of Supplies
 						providers = {
-							{ "i", 4918 },	-- Sack of Supplies
+							{ "i", 4918 },	-- Sack of Supplies (QI!)
 							{ "o", 3290 },	-- Stolen Supply Sack
 						},
 					}),
@@ -1470,7 +1470,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						provider = { "n", 3206 },	-- Voodoo Troll
 					}),
 					objective(3, {	-- 0/1 Zalazane's Head
-						provider = { "i", 4866 },	-- Zalazane's Head
+						provider = { "i", 4866 },	-- Zalazane's Head (QI!)
 						coord = { 67.6, 87.8, MAP.DUROTAR },
 						cr = 3205,	-- Zalazane
 					}),

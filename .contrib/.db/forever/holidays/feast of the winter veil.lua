@@ -251,7 +251,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 						},
 					}),
 					objective(2, {	-- 0/1 Pouch of Raindeer Dust
-						provider = { "i", 21211 },	-- Pouch of Raindeer Dust
+						provider = { "i", 21211 },	-- Pouch of Raindeer Dust (QI!)
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
@@ -276,7 +276,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 						},
 					}),
 					objective(2, {	-- 0/1 Pouch of Raindeer Dust
-						provider = { "i", 21211 },	-- Pouch of Raindeer Dust
+						provider = { "i", 21211 },	-- Pouch of Raindeer Dust (QI!)
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
@@ -302,7 +302,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				isYearly = true,
 				groups = {
 					objective(1, {	-- 0/1 Smokywood Supplies
-						provider = { "i", 21545 },	-- Smokywood Supplies
+						provider = { "i", 21545 },	-- Smokywood Supplies (QI!)
 					}),
 				},
 			}),
@@ -323,7 +323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				isYearly = true,
 				groups = {
 					objective(1, {	-- 0/1 Smokywood Supplies
-						provider = { "i", 21545 },	-- Smokywood Supplies
+						provider = { "i", 21545 },	-- Smokywood Supplies (QI!)
 					}),
 				},
 			}),
@@ -491,7 +491,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Stolen Treats
-						provider = { "i", 17662 },	-- Stolen Treats
+						provider = { "i", 17662 },	-- Stolen Treats (QI!)
 						cr = 13602,	-- The Abominable Greench
 					}),
 				},

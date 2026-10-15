@@ -114,7 +114,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Head of Baron Vardus
-						provider = { "i", 3626 },	-- Head of Baron Vardus
+						provider = { "i", 3626 },	-- Head of Baron Vardus (QI!)
 						coord = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2306,	-- Baron Vardus
 					}),
@@ -134,7 +134,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/9 Dirty Knucklebones
-						provider = { "i", 2843 },	-- Dirty Knucklebones
+						provider = { "i", 2843 },	-- Dirty Knucklebones (QI!)
 						crs = {
 							2253,	-- Crushridge Brute
 							2256,	-- Crushridge Enforcer
@@ -173,7 +173,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(2, {	-- 0/30 Bloodscalp Tusk
-						provider = { "i", 3901 },	-- Bloodscalp Tusk
+						provider = { "i", 3901 },	-- Bloodscalp Tusk (QI!)
 						crs = {
 							694,	-- Bloodscalp Axe Thrower
 							699,	-- Bloodscalp Beastmaster
@@ -203,7 +203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						groups = {
 							objective(3, {	-- 0/1 Essence of the Exile
 								questID = 1712,	-- Cyclonian
-								provider = { "i", 6851 },	-- Essence of the Exile
+								provider = { "i", 6851 },	-- Essence of the Exile (QI!)
 							}),
 						},
 					}),
@@ -220,7 +220,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						provider = { "n", 2318 },	-- Argus Shadow Mage
 					}),
 					objective(2, {	-- 0/1 Head of Nagaz
-						provider = { "i", 3672 },	-- Head of Nagaz
+						provider = { "i", 3672 },	-- Head of Nagaz (QI!)
 						coord = { 39.6, 15.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2320,	-- Nagaz
 					}),
@@ -253,7 +253,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/10 Encoded Fragment
-						provider = { "i", 20023 },	-- Encoded Fragment
+						provider = { "i", 20023 },	-- Encoded Fragment (QI!)
 						cr = 8766,	-- Forest Ooze
 					}),
 				},
@@ -299,7 +299,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Rusted Iron Key
-						provider = { "i", 3704 },	-- Rusted Iron Key
+						provider = { "i", 3704 },	-- Rusted Iron Key (QI!)
 						coord = { 61.8, 40.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 2431,	-- Jailor Borhuin
 					}),
@@ -313,7 +313,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Syndicate Missive
-						provider = { "i", 3601 },	-- Syndicate Missive
+						provider = { "i", 3601 },	-- Syndicate Missive (QI!)
 						description = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
 						crs = {
 							2240,	-- Syndicate Footpad
@@ -362,7 +362,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/7 Alterac Signet Ring
-						provider = { "i", 3505 },	-- Alterac Signet Ring
+						provider = { "i", 3505 },	-- Alterac Signet Ring (QI!)
 						crs = {
 							14221,	-- Gravis Slipknot
 							2246,	-- Syndicate Assassin
@@ -384,7 +384,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Sealed Azure Bag
-						provider = { "i", 19775 },	-- Sealed Azure Bag
+						provider = { "i", 19775 },	-- Sealed Azure Bag (QI!)
 						coord = { 43.5, 25.4, MAP.AZSHARA },
 						cr = 6188,	-- Timbermaw Shaman
 					}),
@@ -400,7 +400,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/8 Bloodshot Spider Eye
-						provider = { "i", 20610 },	-- Bloodshot Spider Eye
+						provider = { "i", 20610 },	-- Bloodshot Spider Eye (QI!)
 						crs = {
 							1821,	-- Carrion Lurker
 							1809,	-- Carrion Vulture
@@ -409,7 +409,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						},
 					}),
 					objective(2, {	-- 0/8 Thick Black Claw
-						provider = { "i", 20611 },	-- Thick Black Claw
+						provider = { "i", 20611 },	-- Thick Black Claw (QI!)
 						crs = {
 							1809,	-- Carrion Vulture
 							1815,	-- Diseased Black Bear
@@ -492,17 +492,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/1 Targ's Head
-						provider = { "i", 3550 },	-- Targ's Head
+						provider = { "i", 3550 },	-- Targ's Head (QI!)
 						coord = { 39.6, 53.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2420,	-- Targ
 					}),
 					objective(2, {	-- 0/1 Muckrake's Head
-						provider = { "i", 3551 },	-- Muckrake's Head
+						provider = { "i", 3551 },	-- Muckrake's Head (QI!)
 						coord = { 38.8, 47.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2421,	-- Muckrake
 					}),
 					objective(3, {	-- 0/1 Glommus's Head
-						provider = { "i", 3552 },	-- Glommus's Head
+						provider = { "i", 3552 },	-- Glommus's Head (QI!)
 						coord = { 39.4, 41.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2422,	-- Glommus
 					}),
@@ -516,12 +516,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/1 Mug'thol's Head
-						provider = { "i", 3553 },	-- Mug'thol's Head
+						provider = { "i", 3553 },	-- Mug'thol's Head (QI!)
 						coord = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2257,	-- Mug'thol
 					}),
 					objective(2, {	-- 0/1 Crown of Will
-						provider = { "i", 3554 },	-- Mug'thol's Head
+						provider = { "i", 3554 },	-- Mug'thol's Head (QI!)
 						coord = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2257,	-- Mug'thol
 					}),
@@ -565,7 +565,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Whirlwind Heart
-						provider = { "i", 6894 },	-- Whirlwind Heart
+						provider = { "i", 6894 },	-- Whirlwind Heart (QI!)
 						coord = { 80.6, 62.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 6239,	-- Cyclonian
 					}),
@@ -590,7 +590,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Head of Baron Vardus
-						provider = { "i", 3626 },	-- Head of Baron Vardus
+						provider = { "i", 3626 },	-- Head of Baron Vardus (QI!)
 						coord = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2306,	-- Baron Vardus
 					}),

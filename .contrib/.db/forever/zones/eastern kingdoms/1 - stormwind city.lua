@@ -219,7 +219,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Chilled Basilisk Haunch
-						provider = { "i", 2476 },	-- Chilled Basilisk Haunch
+						provider = { "i", 2476 },	-- Chilled Basilisk Haunch (QI!)
 						cr = 690,	-- Cold Eye Basilisk
 					}),
 				},
@@ -233,14 +233,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Tear of Tilloa
 						providers = {
-							{ "i", 2779 },	-- Tear of Tilloa
+							{ "i", 2779 },	-- Tear of Tilloa (QI!)
 							{ "o", 706187 },	-- Tear of Tilloa
 						},
 						coord = { 78.5, 36.0, MAP.DUSKWOOD },
 					}),
 					objective(2, {	-- 0/1 Musquash Root
 						providers = {
-							{ "i", 2784 },	-- Musquash Root
+							{ "i", 2784 },	-- Musquash Root (QI!)
 							{ "o", 2084 },	-- Musquash Root
 						},
 						coord = { 64.7, 75.5, MAP.WETLANDS },
@@ -318,7 +318,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						groups = {
 							objective(1, {	-- 0/1 Manna-Enriched Horse Feed
 								questID = 7643,	-- Ancient Equine Spirit
-								provider = { "i", 18775 },	-- Manna-Enriched Horse Feed
+								provider = { "i", 18775 },	-- Manna-Enriched Horse Feed (QI!)
 							}),
 						},
 					}),
@@ -436,7 +436,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/20 Burning Blood
-						provider = { "i", 6844 },	-- Burning Blood
+						provider = { "i", 6844 },	-- Burning Blood (QI!)
 						coord = { 74.2, 77.8, MAP.DUSKWOOD },
 						crs = {
 							205,	-- Nightbane Dark Runner
@@ -447,7 +447,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						},
 					}),
 					objective(2, {	-- 0/1 Burning Rock
-						provider = { "i", 6845 },	-- Burning Rock
+						provider = { "i", 6845 },	-- Burning Rock (QI!)
 						coord = { 74.2, 77.8, MAP.DUSKWOOD },
 						cr = 6170,	-- Gutspill
 					}),
@@ -611,25 +611,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/50 Scorched Spider Fang
-						provider = { "i", 6838 },	-- Scorched Spider Fang
+						provider = { "i", 6838 },	-- Scorched Spider Fang (QI!)
 						crs = {
 							4040,	-- Cave Stalker
 							1111,	-- Leech Stalker
 						},
 					}),
 					objective(2, {	-- 0/12 Charred Horn
-						provider = { "i", 6839 },	-- Charred Horn
+						provider = { "i", 6839 },	-- Charred Horn (QI!)
 						crs = {
 							4031,	-- Fledgling Chimaera
 							4032,	-- Young Chimaera
 						},
 					}),
 					objective(3, {	-- 0/1 Galvanized Horn
-						provider = { "i", 6840 },	-- Galvanized Horn
+						provider = { "i", 6840 },	-- Galvanized Horn (QI!)
 						cr = 6167,	-- Chimaera Matriarch
 					}),
 					objective(4, {	-- 0/1 Vial of Phlogiston
-						provider = { "i", 6841 },	-- Vial of Phlogiston
+						provider = { "i", 6841 },	-- Vial of Phlogiston (QI!)
 						cr = 6168,	-- Roogug
 					}),
 				},
@@ -718,7 +718,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(2, {	-- 0/6 Charged Rift Gem
 						providers = {
-							{ "i", 7249 },	-- Charged Rift Gem
+							{ "i", 7249 },	-- Charged Rift Gem (QI!)
 							{ "o", 271 },	-- Miners' League Crates
 						},
 						coord = { 35.0, 27.0, MAP.LOCH_MODAN },
@@ -831,7 +831,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 A Simple Compass
 						providers = {
-							{ "i", 2998 },	-- A Simple Compass
+							{ "i", 2998 },	-- A Simple Compass (QI!)
 							{ "o", 1166 },	-- Alexston's Chest
 						},
 						coord = { 36.3, 54.6, MAP.WESTFALL },
@@ -871,24 +871,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/3 Filled Containment Coffer
 						providers = {
-							{ "i",   7292 },	-- Filled Containment Coffer
+							{ "i",   7292 },	-- Filled Containment Coffer (QI!)
 							{ "o", 103574 },	-- Filled Containment Coffer
-							{ "i",   7247 },	-- Chest of Containment Coffers
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i",   7247 },	-- Chest of Containment Coffers (QI!)
+							{ "i",   7308 },	-- Cantation of Manifestation (QI!)
 						},
 						coord = { 51.0, 95.0, MAP.STORMWIND_CITY },
 						cr = 6492,	-- Rift Spawn
 					}),
 					objective(2, {	-- 0/1 Chest of Containment Coffers
 						providers = {
-							{ "i",   7247 },	-- Chest of Containment Coffers
+							{ "i",   7247 },	-- Chest of Containment Coffers (QI!)
 							{ "o", 105174 },	-- Chest of Containment Coffers
 						},
 						coord = { 49.6, 85.4, MAP.STORMWIND_CITY },
 					}),
 					objective(3, {	-- 0/1 Cantation of Manifestation
 						providers = {
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i",   7308 },	-- Cantation of Manifestation (QI!)
 							{ "o", 105175 },	-- Cantation of Manifestation
 						},
 						coord = { 49.6, 85.4, MAP.STORMWIND_CITY },
@@ -906,7 +906,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(2, {	-- 0/2 Clara's Fresh Apple
 						providers = {
-							{ "i",   8683 },	-- Clara's Fresh Apple
+							{ "i",   8683 },	-- Clara's Fresh Apple (QI!)
 							{ "o", 142076 },	-- Clara's Fresh Apples
 						},
 						coord = { 34.0, 57.2, MAP.ELWYNN_FOREST },
@@ -997,7 +997,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/1 Khadgar's Essays on Dimensional Convergence
-						provider = { "i", 6065 },	-- Khadgar's Essays on Dimensional Convergence
+						provider = { "i", 6065 },	-- Khadgar's Essays on Dimensional Convergence (QI!)
 						crs = {
 							1081,	-- Mire Lord
 							14448,	-- Molt Thorn
@@ -1022,8 +1022,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Mirror Lake Water Sample
 						providers = {
-							{ "i", 7206 },	-- Mirror Lake Water Sample
-							{ "i", 7207 },	-- Jennea's Flask
+							{ "i", 7206 },	-- Mirror Lake Water Sample (QI!)
+							{ "i", 7207 },	-- Jennea's Flask (QI!)
 						},
 						coord = { 28.0, 62.0, MAP.ELWYNN_FOREST },
 					}),
@@ -1072,7 +1072,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/8 Pristine Spider Silk
-						provider = { "i", 7267 },	-- Pristine Spider Silk
+						provider = { "i", 7267 },	-- Pristine Spider Silk (QI!)
 						crs = {
 							949,	-- Carrion Recluse
 							930,	-- Black Widow Hatchling
@@ -1215,7 +1215,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Defias Shipping Schedule
-						provider = { "i", 7675 },	-- Defias Shipping Schedule
+						provider = { "i", 7675 },	-- Defias Shipping Schedule (QI!)
 						coord = { 48.2, 87.6, MAP.ELWYNN_FOREST },
 						cr = 6846,	-- Defias Dockmaster
 					}),
@@ -1259,7 +1259,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Surena's Choker
-						provider = { "i", 6810 },	-- Surena's Choker
+						provider = { "i", 6810 },	-- Surena's Choker (QI!)
 						coord = { 71.0, 80.6, MAP.ELWYNN_FOREST },
 						cr = 881,	-- Surena Caledon
 					}),
@@ -1290,7 +1290,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
 						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190186, 1 } },	-- 1x Wooden Figurine
+						cost = { { "i", 190186, 1 } },	-- 1x Wooden Figurine (QI!)
 					}),
 					recipe(713),	-- Summon Incubus
 					i(22243),	-- Small Soul Pouch
@@ -1306,7 +1306,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
 						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6913, 1 } },	-- 1x Heartswood Core
+						cost = { { "i", 6913, 1 } },	-- 1x Heartswood Core (QI!)
 					}),
 					recipe(712),	-- Summon Succubus
 					i(22243),	-- Small Soul Pouch
@@ -1322,7 +1322,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
 						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 6928, 1 } },	-- 1x Bloodstone Choker
+						cost = { { "i", 6928, 1 } },	-- 1x Bloodstone Choker (QI!)
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
@@ -1401,7 +1401,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					objective(1, {	-- 0/1 Defias Docket
 						providers = {
 							{ "o", 21052 },	-- Defias Strongbox
-							{ "i", 5947 },	-- Defias Docket
+							{ "i", 5947 },	-- Defias Docket (QI!)
 						},
 						coord = { 24.0, 72.1, MAP.DUSKWOOD },
 					}),
@@ -1466,7 +1466,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Perenolde Tiara
-						provider = { "i", 3684 },	-- Perenolde Tiara
+						provider = { "i", 3684 },	-- Perenolde Tiara (QI!)
 						coord = { 39.6, 52.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2417,	-- Grel'borg the Miser
 					}),
@@ -1564,7 +1564,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						groups = {
 							objective(1, {	-- 0/1 Symbol of Life
 								questID = 1786,	-- The Tome of Divinity (8/10)
-								provider = { "i", 6866 },	-- Symbol of Life
+								provider = { "i", 6866 },	-- Symbol of Life (QI!)
 							}),
 						},
 					}),
@@ -1579,7 +1579,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 12,
 				groups = {
 					objective(1, {	-- 0/1 Defias Script
-						provider = { "i", 6846 },	-- Defias Script
+						provider = { "i", 6846 },	-- Defias Script (QI!)
 						cr = 474,	-- Defias Rogue Wizard
 					}),
 				},
@@ -1724,7 +1724,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 					objective(4, {	-- 0/1 Spool of Light Chartreuse Silk Thread
 						providers = {
-							{ "i",   8431 },	-- Spool of Light Chartreuse Silk Thread
+							{ "i",   8431 },	-- Spool of Light Chartreuse Silk Thread (QI!)
 							{ "o", 140911 },	-- Spool of Light Chartreuse Silk Thread
 						},
 						coord = { 50.4, 60.2, MAP.STORMWIND_CITY },
@@ -1768,7 +1768,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Ur's Treatise on Shadow Magic
 						providers = {
-							{ "i",   7266 },	-- Ur's Treatise on Shadow Magic
+							{ "i",   7266 },	-- Ur's Treatise on Shadow Magic (QI!)
 							{ "o", 103628 },	-- Ur's Treatise on Shadow Magic
 						},
 						coord = { 70.6, 37.6, MAP.REDRIDGE_MOUNTAINS },
@@ -1787,7 +1787,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Wooden Figurine
 						providers = {
-							{ "i", 190309 },	-- Wooden Figurine
+							{ "i", 190309 },	-- Wooden Figurine (QI!)
 							{ "o", 375544 },	-- Wooden Figurine
 							{ "o", createCustomObject({	-- Archaeologist's Cart [Couldn't find the proper objectID, so I faked it.]
 								readable = "Archaeologist's Cart",
@@ -1807,7 +1807,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 							}) },
 						},
 						coord = { 26.0, 22.0, MAP.ASHENVALE },
-						cost = { { "i", 190308, 1 } },	-- 1x Burning Torch
+						cost = { { "i", 190308, 1 } },	-- 1x Burning Torch (QI!)
 					}),
 					i(190308, {	-- 0/1 Burning Torch
 						description = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",

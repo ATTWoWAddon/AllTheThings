@@ -824,7 +824,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							{ "i",  6782 },	-- Marshal Haggard's Badge (QI!)
 							{ "o", 85563 },	-- Dead-tooth's Strongbox
 						},
-						cost = { { "i", 6783, 1 } },	-- 1x Dead-tooth's Key
+						cost = { { "i", 6783, 1 } },	-- 1x Dead-tooth's Key (QI!)
 						coord = { 89.2, 80.6, MAP.ELWYNN_FOREST },
 						cr = 6093,	-- Dead-Tooth Jack
 					}),

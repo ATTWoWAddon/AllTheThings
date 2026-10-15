@@ -72,7 +72,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Lurker Venom
-						provider = { "i", 2606 },	-- Lurker Venom
+						provider = { "i", 2606 },	-- Lurker Venom (QI!)
 						crs = {
 							1184,	-- Cliff Lurker
 							1195,	-- Forest Lurker
@@ -81,7 +81,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(2, {	-- 0/1 Mo'grosh Crystal
-						provider = { "i", 2607 },	-- Mo'grosh Crystal
+						provider = { "i", 2607 },	-- Mo'grosh Crystal (QI!)
 						crs = {
 							14267,	-- Emogg the Crusher
 							1180,	-- Mo'grosh Brute
@@ -92,7 +92,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(3, {	-- 0/1 Crocolisk Tear
-						provider = { "i", 2939 },	-- Crocolisk Tear
+						provider = { "i", 2939 },	-- Crocolisk Tear (QI!)
 						crs = {
 							2476,	-- Large Loch Crocolisk
 							1693,	-- Loch Crocolisk
@@ -163,7 +163,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/4 Carved Stone Urn
 						providers = {
-							{ "i", 4610 },	-- Carved Stone Urn
+							{ "i", 4610 },	-- Carved Stone Urn (QI!)
 							{ "o", 2743 },	-- Carved Stone Urn
 						},
 						description = "Can be found in the outdoor section of Uldaman.",
@@ -178,7 +178,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/5 Buzzard Gizzard
-						provider = { "i", 7847 },	-- Buzzard Gizzard
+						provider = { "i", 7847 },	-- Buzzard Gizzard (QI!)
 						crs = {
 							2830,	-- Buzzard
 							2831,	-- Giant Buzzard
@@ -186,7 +186,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(2, {	-- 0/10 Crag Coyote Fang
-						provider = { "i", 7846 },	-- Crag Coyote Fang
+						provider = { "i", 7846 },	-- Crag Coyote Fang (QI!)
 						crs = {
 							2727,	-- Crag Coyote
 							2729,	-- Elder Crag Coyote
@@ -195,7 +195,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(3, {	-- 0/5 Rock Elemental Shard
-						provider = { "i", 7848 },	-- Rock Elemental Shard
+						provider = { "i", 7848 },	-- Rock Elemental Shard (QI!)
 						crs = {
 							2745,	-- Ambassador Infernus
 							2791,	-- Enraged Rock Elemental
@@ -219,8 +219,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/3 Vessel of Dragon's Blood
-						provider = { "i", 7867 },	-- Vessel of Dragon's Blood
-						cost = { { "i", 7866, 1 } },	-- 1x Empty Thaumaturgy Vessel
+						provider = { "i", 7867 },	-- Vessel of Dragon's Blood (QI!)
+						cost = { { "i", 7866, 1 } },	-- 1x Empty Thaumaturgy Vessel (QI!)
 						cr = 2726,	-- Scorched Guardian
 					}),
 					i(7870, {	-- Thaumaturgy Vessel Lockbox
@@ -252,28 +252,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/1 Bingles' Wrench
 						providers = {
-							{ "i", 7343 },		-- Bingles' Wrench
+							{ "i", 7343 },		-- Bingles' Wrench (QI!)
 							{ "o", 104564 },	-- Bingles's Toolbucket
 						},
 						coord = { 48.8, 30.0, MAP.LOCH_MODAN },
 					}),
 					objective(2, {	-- 0/1 Bingles' Screwdriver
 						providers = {
-							{ "i", 7345 },		-- Bingles' Screwdriver
+							{ "i", 7345 },		-- Bingles' Screwdriver (QI!)
 							{ "o", 104569 },	-- Bingles's Toolbucket
 						},
 						coord = { 48.5, 20.6, MAP.LOCH_MODAN },
 					}),
 					objective(3, {	-- 0/1 Bingles' Hammer
 						providers = {
-							{ "i", 7346 },		-- Bingles' Hammer
+							{ "i", 7346 },		-- Bingles' Hammer (QI!)
 							{ "o", 104574 },	-- Bingles's Toolbucket
 						},
 						coord = { 51.8, 24.3, MAP.LOCH_MODAN },
 					}),
 					objective(4, {	-- 0/1 Bingles' Blastencapper
 						providers = {
-							{ "i", 7376 },		-- Bingles' Blastencapper
+							{ "i", 7376 },		-- Bingles' Blastencapper (QI!)
 							{ "o", 104575 },	-- Bingles's Blastencapper
 						},
 						coord = { 54.3, 26.5, MAP.LOCH_MODAN },
@@ -296,7 +296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						},
 					}),
 					objective(2, {	-- 0/6 Crocolisk Skin
-						provider = { "i", 2925 },	-- Crocolisk Skin
+						provider = { "i", 2925 },	-- Crocolisk Skin (QI!)
 						crs = {
 							2476,	-- Large Loch Crocolisk
 							1693,	-- Loch Crocolisk
@@ -329,7 +329,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/4 Miners' Gear
 						providers = {
-							{ "i", 2640 },	-- Miners' Gear
+							{ "i", 2640 },	-- Miners' Gear (QI!)
 							{ "o", 271 },	-- Miners' League Crates
 						},
 					}),
@@ -358,7 +358,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/8 Carved Stone Idol
-						provider = { "i", 2636 },	-- Carved Stone Idol
+						provider = { "i", 2636 },	-- Carved Stone Idol (QI!)
 						crs = {
 							1393,	-- Berserk Trogg
 							1167,	-- Stonesplinter Digger
@@ -518,7 +518,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/12 Tunnel Rat Ear
-						provider = { "i", 3110 },	-- Tunnel Rat Ear
+						provider = { "i", 3110 },	-- Tunnel Rat Ear (QI!)
 						crs = {
 							1175,	-- Tunnel Rat Digger
 							1176,	-- Tunnel Rat Forager
@@ -621,7 +621,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Trogg Stone Tooth
-						provider = { "i", 2536 },	-- Trogg Stone Tooth
+						provider = { "i", 2536 },	-- Trogg Stone Tooth (QI!)
 						crs = {
 							1164,	-- Stonesplinter Bonesnapper
 							1167,	-- Stonesplinter Digger
@@ -675,7 +675,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/12 Magenta Fungus Cap
 						providers = {
-							{ "i", 8047 },		-- Magenta Fungus Cap
+							{ "i", 8047 },		-- Magenta Fungus Cap (QI!)
 							{ "o", 126049 },	-- Magenta Cap Clusters
 						},
 					}),
@@ -689,7 +689,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/1 Ol' Sooty's Head
-						provider = { "i", 2713 },	-- Ol' Sooty's Head
+						provider = { "i", 2713 },	-- Ol' Sooty's Head (QI!)
 						coord = { 37.6, 62.6, MAP.LOCH_MODAN },
 						cr = 1225,	-- Ol' Sooty
 					}),
@@ -717,7 +717,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 17,
 				groups = {
 					objective(1, {	-- 0/1 Chok'sul's Head
-						provider = { "i", 2561 },	-- Chok'sul's Head
+						provider = { "i", 2561 },	-- Chok'sul's Head (QI!)
 						coord = { 79.6, 14.2, MAP.LOCH_MODAN },
 						cr = 1210,	-- Chok'sul
 					}),

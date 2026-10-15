@@ -59,7 +59,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(1, {	-- 0/1 Stormwind Nougat
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20492 },	-- Stormwind Nougat
+								provider = { "i", 20492 },	-- Stormwind Nougat (QI!)
 							}),
 						},
 					}),
@@ -71,7 +71,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(2, {	-- 0/1 Gnomeregan Gumdrop
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20494 },	-- Gnomeregan Gumdrop
+								provider = { "i", 20494 },	-- Gnomeregan Gumdrop (QI!)
 							}),
 						},
 					}),
@@ -83,7 +83,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(3, {	-- 0/1 Ironforge Mint
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20490 },	-- Ironforge Mint
+								provider = { "i", 20490 },	-- Ironforge Mint (QI!)
 							}),
 						},
 					}),
@@ -95,7 +95,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(4, {	-- 0/1 Darnassus Marzipan
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20496 },	-- Darnassus Marzipan
+								provider = { "i", 20496 },	-- Darnassus Marzipan (QI!)
 							}),
 						},
 					}),
@@ -118,7 +118,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(1, {	-- 0/1 Orgrimmar Nougat
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20493 },	-- Orgrimmar Nougat
+								provider = { "i", 20493 },	-- Orgrimmar Nougat (QI!)
 							}),
 						},
 					}),
@@ -130,7 +130,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(2, {	-- 0/1 Darkspear Gumdrop
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20495 },	-- Darkspear Gumdrop
+								provider = { "i", 20495 },	-- Darkspear Gumdrop (QI!)
 							}),
 						},
 					}),
@@ -142,7 +142,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(3, {	-- 0/1 Undercity Mint
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20491 },	-- Undercity Mint
+								provider = { "i", 20491 },	-- Undercity Mint (QI!)
 							}),
 						},
 					}),
@@ -154,7 +154,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(4, {	-- 0/1 Thunder Bluff Marzipan
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20497 },	-- Thunder Bluff Marzipan
+								provider = { "i", 20497 },	-- Thunder Bluff Marzipan (QI!)
 							}),
 						},
 					}),
@@ -192,7 +192,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				lvl = 25,
 				groups = {
 					objective(1, {	-- Toss Stink Bomb into Southshore
-						provider = { "i", 20387 },	-- Forsaken Stink Bomb Cluster
+						provider = { "i", 20387 },	-- Forsaken Stink Bomb Cluster (QI!)
 						coord = { 49.8, 57.9, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -206,7 +206,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				lvl = 25,
 				groups = {
 					objective(1, {	-- Clean up a stink bomb that's been dropped on Southshore!
-						provider = { "i", 20604 },	-- Stink Bomb Cleaner
+						provider = { "i", 20604 },	-- Stink Bomb Cleaner (QI!)
 					}),
 					i(20557),	-- Hallow's End Pumpkin Treat
 				},

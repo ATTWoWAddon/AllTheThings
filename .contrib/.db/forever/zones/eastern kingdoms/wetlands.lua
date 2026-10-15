@@ -97,7 +97,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/1 Ear of Balgaras
-						provider = { "i", 3639 },	-- Ear of Balgaras
+						provider = { "i", 3639 },	-- Ear of Balgaras (QI!)
 						cr = 1364,	-- Balgaras the Foul
 						coords = {
 							{ 47.4, 15.0, MAP.WETLANDS },
@@ -138,7 +138,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/6 Giant Crocolisk Skin
-						provider = { "i", 3348 },	-- Giant Crocolisk Skin
+						provider = { "i", 3348 },	-- Giant Crocolisk Skin (QI!)
 						cr = 2089,	-- Giant Wetlands Crocolisk
 					}),
 					i(2545),	-- Malleable Chain Leggings
@@ -213,7 +213,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						provider = { "n", 1024 },	-- Bluegill Murloc
 					}),
 					objective(2, {	-- 0/1 Gobbler's Head
-						provider = { "i", 3618 },	-- Gobbler's Head
+						provider = { "i", 3618 },	-- Gobbler's Head (QI!)
 						coord = { 17.4, 40.4, MAP.WETLANDS },
 						cr = 1259,	-- Gobbler
 					}),
@@ -290,7 +290,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 23,
 				groups = {
 					objective(1, {	-- 0/1 Nek'rosh's Head
-						provider = { "i", 3625 },	-- Nek'rosh's Head
+						provider = { "i", 3625 },	-- Nek'rosh's Head (QI!)
 						coord = { 54.2, 54.2, MAP.WETLANDS },
 						cr = 2091,	-- Chieftain Nek'rosh
 					}),
@@ -305,7 +305,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 19,
 				groups = {
 					objective(1, {	-- 0/1 Sida's Bag
-						provider = { "i", 3349 },	-- Sida's Bag
+						provider = { "i", 3349 },	-- Sida's Bag (QI!)
 						crs = {
 							1032,	-- Black Ooze
 							1031,	-- Crimson Ooze
@@ -329,7 +329,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/9 Crude Flint
-						provider = { "i", 2611 },	-- Crude Flint
+						provider = { "i", 2611 },	-- Crude Flint (QI!)
 						crs = {
 							14425,	-- Gnawbone
 							1014,	-- Mosshide Alpha
@@ -451,7 +451,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/1 Intrepid Strongbox Key
-						provider = { "i", 2629 },	-- Intrepid Strongbox Key
+						provider = { "i", 2629 },	-- Intrepid Strongbox Key (QI!)
 						coord = { 15.6, 23.4, MAP.WETLANDS },
 						cr = 1160,	-- Captain Halyndor
 					}),
@@ -476,7 +476,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/5 Lightforge Ingot
-						provider = { "i", 2702 },	-- Lightforge Ingot
+						provider = { "i", 2702 },	-- Lightforge Ingot (QI!)
 						cr = 1418,	-- Bluegill Raider
 					}),
 				},
@@ -538,7 +538,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/1 Sarltooth's Talon
-						provider = { "i", 3638 },	-- Sarltooth's Talon
+						provider = { "i", 3638 },	-- Sarltooth's Talon (QI!)
 						coord = { 33.0, 51.4, MAP.WETLANDS },
 						cr = 1353,	-- Sarltooth
 					}),
@@ -673,7 +673,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/1 Stone of Relu
-						provider = { "i", 5233 },	-- Stone of Relu
+						provider = { "i", 5233 },	-- Stone of Relu (QI!)
 						crs = {
 							1020,	-- Mottled Raptor
 							1023,	-- Mottled Razormaw
@@ -683,7 +683,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 					objective(2, {	-- 0/1 Flagongut's Fossil
 						providers = {
-							{ "i", 5234 },	-- Flagongut's Fossil
+							{ "i", 5234 },	-- Flagongut's Fossil (QI!)
 							{ "o", 9630 },	-- Flagongut's Fossil
 						},
 						coord = { 38.8, 52.2, MAP.WETLANDS },
@@ -706,7 +706,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						provider = { "n", 1158 },	-- Cursed Marine
 					}),
 					objective(3, {	-- 0/1 Snellig's Snuffbox
-						provider = { "i", 3619 },	-- Snellig's Snuffbox
+						provider = { "i", 3619 },	-- Snellig's Snuffbox (QI!)
 						coord = { 14.0, 30.6, MAP.WETLANDS },
 						cr = 1159,	-- First Mate Snellig
 					}),
@@ -758,7 +758,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/5 Lightforge Ingot
-						provider = { "i", 2702 },	-- Lightforge Ingot
+						provider = { "i", 2702 },	-- Lightforge Ingot (QI!)
 						cr = 1418,	-- Bluegill Raider
 					}),
 				},
@@ -900,25 +900,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Ados Fragment
 						providers = {
-							{ "i", 2658 },	-- Ados Fragment
+							{ "i", 2658 },	-- Ados Fragment (QI!)
 							{ "o", 35252 },	-- Ancient Relic
 						},
 					}),
 					objective(2, {	-- 0/1 Modr Fragment
 						providers = {
-							{ "i", 2659 },	-- Modr Fragment
+							{ "i", 2659 },	-- Modr Fragment (QI!)
 							{ "o", 334 },	-- Ancient Relic
 						},
 					}),
 					objective(3, {	-- 0/1 Golm Fragment
 						providers = {
-							{ "i", 2660 },	-- Golm Fragment
+							{ "i", 2660 },	-- Golm Fragment (QI!)
 							{ "o", 333 },	-- Ancient Relic
 						},
 					}),
 					objective(4, {	-- 0/1 Neru Fragment
 						providers = {
-							{ "i", 2661 },	-- Neru Fragment
+							{ "i", 2661 },	-- Neru Fragment (QI!)
 							{ "o", 331 },	-- Loose Soil
 						},
 					}),
@@ -951,7 +951,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 23,
 				groups = {
 					objective(1, {	-- 0/8 Dragonmaw War Banner
-						provider = { "i", 3337 },	-- Dragonmaw War Banner
+						provider = { "i", 3337 },	-- Dragonmaw War Banner (QI!)
 						crs = {
 							2091,	-- Chieftain Nek'rosh
 							1037,	-- Dragonmaw Battlemaster
@@ -981,7 +981,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/4 Young Crocolisk Skin
-						provider = { "i", 3397 },	-- Young Crocolisk Skin
+						provider = { "i", 3397 },	-- Young Crocolisk Skin (QI!)
 						cr = 1417,	-- Young Wetlands Crocolisk
 					}),
 				},

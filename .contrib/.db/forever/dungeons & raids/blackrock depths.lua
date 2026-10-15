@@ -67,10 +67,10 @@ root(ROOTS.Instances, {
 					lvl = 50,
 					groups = {
 						objective(1, {	-- 0/1 Marshal Windsor's Lost Information
-							provider = { "i", 11464 },	-- Marshal Windsor's Lost Information
+							provider = { "i", 11464 },	-- Marshal Windsor's Lost Information (QI!)
 						}),
 						objective(2, {	-- 0/1 Marshal Windsor's Lost Information
-							provider = { "i", 11465 },	-- Marshal Windsor's Lost Information
+							provider = { "i", 11465 },	-- Marshal Windsor's Lost Information (QI!)
 						}),
 					},
 				}),
@@ -105,8 +105,8 @@ root(ROOTS.Instances, {
 					coord = { 95.09, 31.56, MAP.BURNING_STEPPES },
 					groups = {
 						objective(1, {	-- 0/1 Encased Fiery Essence
-							provider = { "i", 11230 },	-- Encased Fiery Essence
-							cost = { { "i", 11231, 1 } },	-- 1x Altered Black Dragonflight Molt
+							provider = { "i", 11230 },	-- Encased Fiery Essence (QI!)
+							cost = { { "i", 11231, 1 } },	-- 1x Altered Black Dragonflight Molt (QI!)
 							cr = 9016,	-- Bael'Gar
 						}),
 						i(12066),	-- Shaleskin Cape
@@ -147,7 +147,7 @@ root(ROOTS.Instances, {
 					lvl = 48,
 					groups = {
 						objective(1, {	-- 0/1 Ironfel
-							provider = { "i", 10999 },	-- Ironfel
+							provider = { "i", 10999 },	-- Ironfel (QI!)
 							cr = 9056,	-- Fineous Darkvire <Chief Architect>
 						}),
 						i(11000),	-- Shadowforge Key
@@ -176,7 +176,7 @@ root(ROOTS.Instances, {
 							provider = { "n", 9017 },	-- Lord Incendius
 						}),
 						objective(2, {	-- 0/1 Tablet of Kurniya
-							provider = { "i", 11126 },	-- Tablet of Kurniya
+							provider = { "i", 11126 },	-- Tablet of Kurniya (QI!)
 						}),
 						i(12112),	-- Crypt Demon Bracers
 						i(12114),	-- Nightfall Gloves
@@ -258,7 +258,7 @@ root(ROOTS.Instances, {
 					lvl = 50,
 					groups = {
 						objective(1, {	-- 0/1 Lost Thunderbrew Recipe
-							provider = { "i", 11312 },	-- Lost Thunderbrew Recipe
+							provider = { "i", 11312 },	-- Lost Thunderbrew Recipe (QI!)
 						}),
 						i(12000),	-- Limb Cleaver
 						i(11964),	-- Swiftstrike Cudgel
@@ -348,7 +348,7 @@ root(ROOTS.Instances, {
 					lvl = 50,
 					groups = {
 						objective(1, {	-- 0/1 Lost Thunderbrew Recipe
-							provider = { "i", 11312 },	-- Lost Thunderbrew Recipe
+							provider = { "i", 11312 },	-- Lost Thunderbrew Recipe (QI!)
 						}),
 						i(12000),	-- Limb Cleaver
 						i(11964),	-- Swiftstrike Cudgel
@@ -394,10 +394,10 @@ root(ROOTS.Instances, {
 					lvl = 52,
 					groups = {
 						objective(1, {	-- 0/1 Thorium Shackles
-							provider = { "i", 11286 },	-- Thorium Shackles
+							provider = { "i", 11286 },	-- Thorium Shackles (QI!)
 						}),
 						objective(2, {	-- Prisoner Transport
-							provider = { "i", 11286 },	-- Thorium Shackles
+							provider = { "i", 11286 },	-- Thorium Shackles (QI!)
 						}),
 					},
 				}),
@@ -416,7 +416,7 @@ root(ROOTS.Instances, {
 					lvl = 48,
 					groups = {
 						objective(1, {	-- 0/1 Ribbly's Head
-							provider = { "i", 11313 },	-- Ribbly's Head
+							provider = { "i", 11313 },	-- Ribbly's Head (QI!)
 						}),
 						i(11963),	-- Penance Spaulders
 						i(12049),	-- Splintsteel Armor
@@ -486,7 +486,7 @@ root(ROOTS.Instances, {
 					lvl = 50,
 					groups = {
 						objective(1, {	-- 0/20 Dark Iron Fanny Pack
-							provider = { "i", 11468 },	-- Dark Iron Fanny Pack
+							provider = { "i", 11468 },	-- Dark Iron Fanny Pack (QI!)
 						}),
 						i(11883),	-- A Dingy Fanny Pack
 					},
@@ -497,7 +497,7 @@ root(ROOTS.Instances, {
 					lvl = 50,
 					groups = {
 						objective(1, {	-- 0/1 The Heart of the Mountain
-							provider = { "i", 11309 },	-- The Heart of the Mountain
+							provider = { "i", 11309 },	-- The Heart of the Mountain (QI!)
 						}),
 					},
 				}),
@@ -509,7 +509,7 @@ root(ROOTS.Instances, {
 					lvl = 50,
 					groups = {
 						objective(1, {	-- 0/10 Essence of the Elements
-							provider = { "i", 11129 },	-- Essence of the Elements
+							provider = { "i", 11129 },	-- Essence of the Elements (QI!)
 						}),
 						i(12038),	-- Lagrave's Seal
 					},
@@ -523,7 +523,7 @@ root(ROOTS.Instances, {
 							provider = { "i", 8846 },	-- Gromsblood
 						}),
 						objective(2, {	-- 0/10 Giant Silver Vein
-							provider = { "i", 11405 },	-- Giant Silver Vein
+							provider = { "i", 11405 },	-- Giant Silver Vein (QI!)
 							coord = { 68.0, 17.0, MAP.AZSHARA },
 							crs = {
 								6146,	-- Cliff Breaker
@@ -532,8 +532,8 @@ root(ROOTS.Instances, {
 							},
 						}),
 						objective(3, {	-- 0/1 Nagmara's Filled Vial
-							provider = { "i", 11413 },	-- Nagmara's Filled Vial
-							cost = { { "i", 11412, 1 } },	-- 1x Nagmara's Vial
+							provider = { "i", 11413 },	-- Nagmara's Filled Vial (QI!)
+							cost = { { "i", 11412, 1 } },	-- 1x Nagmara's Vial (QI!)
 							coord = { 31.0, 49.0, MAP.UNGORO_CRATER },
 						}),
 						i(11962),	-- Manacle Cuffs
@@ -570,7 +570,7 @@ root(ROOTS.Instances, {
 					lvl = 52,
 					groups = {
 						objective(1, {	-- 0/10 Fractured Elemental Shard
-							provider = { "i", 11266 },	-- Fractured Elemental Shard
+							provider = { "i", 11266 },	-- Fractured Elemental Shard (QI!)
 							crs = {
 								7032,	-- Greater Obsidian Elemental
 								8981,	-- Malfunctioning Reaver
@@ -597,10 +597,10 @@ root(ROOTS.Instances, {
 					lvl = 52,
 					groups = {
 						objective(1, {	-- 0/1 Head of Argelmach
-							provider = { "i", 11268 },	-- Head of Argelmach
+							provider = { "i", 11268 },	-- Head of Argelmach (QI!)
 						}),
 						objective(2, {	-- 0/10 Intact Elemental Core
-							provider = { "i", 11269 },	-- Intact Elemental Core
+							provider = { "i", 11269 },	-- Intact Elemental Core (QI!)
 						}),
 						i(12110),	-- Raincaster Drape
 						i(12109),	-- Azure Moon Amice

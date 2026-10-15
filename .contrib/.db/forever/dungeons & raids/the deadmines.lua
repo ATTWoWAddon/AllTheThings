@@ -18,7 +18,7 @@ root(ROOTS.Instances, {
 					lvl = 14,
 					groups = {
 						objective(1, {	-- 0/4 Miners' Union Card
-							provider = { "i", 1894 },	-- Miners' Union Card
+							provider = { "i", 1894 },	-- Miners' Union Card (QI!)
 						}),
 						i(2036),	-- Dusty Mining Gloves
 						i(2037),	-- Tunneler's Boots
@@ -51,7 +51,7 @@ root(ROOTS.Instances, {
 					lvl = 15,
 					groups = {
 						objective(1, {	-- 0/1 Thistlenettle's Badge
-							provider = { "i", 1875 },	-- Thistlenettle's Badge
+							provider = { "i", 1875 },	-- Thistlenettle's Badge (QI!)
 						}),
 						i(1893),	-- Miner's Revenge
 						i(270012, {	-- Miner's Workgloves
@@ -73,7 +73,7 @@ root(ROOTS.Instances, {
 					lvl = 14,
 					groups = {
 						objective(1, {	-- 0/10 Red Silk Bandana
-							provider = { "i", 915 },	-- Red Silk Bandana
+							provider = { "i", 915 },	-- Red Silk Bandana (QI!)
 							description = "Can also drop from any Defias mob in the Deadmines.",
 							crs = {
 								619,	-- Defias Conjurer
@@ -97,7 +97,7 @@ root(ROOTS.Instances, {
 					lvl = 14,
 					groups = {
 						objective(1, {	-- 0/1 Head of VanCleef
-							provider = { "i", 3637 },	-- Head of VanCleef
+							provider = { "i", 3637 },	-- Head of VanCleef (QI!)
 						}),
 						i(6087),	-- Chausses of Westfall
 						i(2042),	-- Staff of Westfall
@@ -120,7 +120,7 @@ root(ROOTS.Instances, {
 					lvl = 15,
 					groups = {
 						objective(1, {	-- 0/1 Gnoam Sprecklesprocket
-							provider = { "i", 7365 },	-- Gnoam Sprecklesprocket
+							provider = { "i", 7365 },	-- Gnoam Sprecklesprocket (QI!)
 						}),
 						i(7607),	-- Sable Wand
 						i(7606),	-- Polar Gauntlets

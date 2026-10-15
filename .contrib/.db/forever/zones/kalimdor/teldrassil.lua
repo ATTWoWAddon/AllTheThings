@@ -37,8 +37,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						groups = {
 							objective(1, {	-- 0/1 Filled Crystal Phial
 								providers = {
-									{ "i", 5184 },	-- Filled Crystal Phial
-									{ "i", 5185 },	-- Crystal Phial
+									{ "i", 5184 },	-- Filled Crystal Phial (QI!)
+									{ "i", 5185 },	-- Crystal Phial (QI!)
 								},
 								coord = { 59.94, 33.07, MAP.TELDRASSIL },
 							}),
@@ -105,7 +105,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						groups = {
 							objective(1, {	-- 0/7 Hyacinth Mushroom
 								providers = {
-									{ "i",  10639 },	-- Hyacinth Mushroom
+									{ "i",  10639 },	-- Hyacinth Mushroom (QI!)
 									{ "o", 152094 },	-- Hyacinth Mushroom
 								},
 								crs = {
@@ -115,12 +115,12 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							}),
 							objective(2, {	-- 0/4 Moonpetal Lily
 								providers = {
-									{ "i", 10641 },	-- Moonpetal Lily
+									{ "i", 10641 },	-- Moonpetal Lily (QI!)
 									{ "o", 152095 },	-- Moonpetal Lily
 								},
 							}),
 							objective(3, {	-- 0/1 Webwood Ichor
-								provider = { "i", 10640 },	-- Webwood Ichor
+								provider = { "i", 10640 },	-- Webwood Ichor (QI!)
 								cr = 1986,	-- Webwood Spider
 							}),
 						},
@@ -250,7 +250,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						races = ALLIANCE_ONLY,
 						groups = {
 							objective(1, {	-- 0/8 Fel Moss
-								provider = { "i", 3297 },	-- Fel Moss
+								provider = { "i", 3297 },	-- Fel Moss (QI!)
 								crs = {
 									1988,	-- Grell
 									1989,	-- Grellkin
@@ -277,7 +277,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						groups = {
 							objective(1, {	-- 0/1 Webwood Egg
 								providers = {
-									{ "i", 5167 },	-- Webwood Egg
+									{ "i", 5167 },	-- Webwood Egg (QI!)
 									{ "o", 4406 },	-- Webwood Eggs
 								},
 								coord = { 56.6, 26.5, MAP.TELDRASSIL },
@@ -294,7 +294,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						lvl = 3,
 						groups = {
 							objective(1, {	-- 0/10 Webwood Venom Sac
-								provider = { "i", 5166 },	-- Webwood Venom Sac
+								provider = { "i", 5166 },	-- Webwood Venom Sac (QI!)
 								cr = 1986,	-- Webwood Spider
 							}),
 							i(10544),	-- Thistlewood Maul
@@ -407,7 +407,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/15 Gnarlpine Fang
-						provider = { "i", 5220 },	-- Gnarlpine Fang
+						provider = { "i", 5220 },	-- Gnarlpine Fang (QI!)
 						crs = {
 							2006,	-- Gnarlpine Ursa
 							2007,	-- Gnarlpine Gardener
@@ -595,8 +595,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Jade Phial
 						providers = {
-							{ "i", 5639 },	-- Filled Jade Phial
-							{ "i", 5619 },	-- Jade Phial
+							{ "i", 5639 },	-- Filled Jade Phial (QI!)
+							{ "i", 5619 },	-- Jade Phial (QI!)
 						},
 						coord = { 63.0, 58.0, MAP.TELDRASSIL },
 					}),
@@ -610,8 +610,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Tourmaline Phial
 						providers = {
-							{ "i", 5645 },	-- Filled Tourmaline Phial
-							{ "i", 5621 },	-- Tourmaline Phial
+							{ "i", 5645 },	-- Filled Tourmaline Phial (QI!)
+							{ "i", 5621 },	-- Tourmaline Phial (QI!)
 						},
 						coord = { 42.0, 67.0, MAP.TELDRASSIL },
 					}),
@@ -625,8 +625,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Amethyst Phial
 						providers = {
-							{ "i", 18151 },	-- Filled Amethyst Phial
-							{ "i", 18152 },	-- Amethyst Phial
+							{ "i", 18151 },	-- Filled Amethyst Phial (QI!)
+							{ "i", 18152 },	-- Amethyst Phial (QI!)
 						},
 						coord = { 38.0, 34.0, MAP.TELDRASSIL },
 					}),
@@ -706,7 +706,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Release Oben Rageclaw's spirit
 						providers = {
 							{ "n", 7318 },	-- Rageclaw
-							{ "i", 8149 },	-- Voodoo Charm
+							{ "i", 8149 },	-- Voodoo Charm (QI!)
 						},
 						coord = { 45.6, 59.6, MAP.TELDRASSIL },
 					}),
@@ -796,7 +796,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/15 Wildkin Feather
 						providers = {
-							{ "i",  10819 },	-- Wildkin Feather
+							{ "i",  10819 },	-- Wildkin Feather (QI!)
 							{ "o", 153239 },	-- Wildkin Feather
 						},
 						description = "Scattered on the ground around the Hinterlands.",
@@ -821,9 +821,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					objective(2, {	-- 0/1 Tallonkai's Jewel
 						providers = {
-							{ "i", 8050 },	-- Tallonkai's Jewel
+							{ "i", 8050 },	-- Tallonkai's Jewel (QI!)
 							{ "n", 7234 },	-- Ferocitas the Dream Eater
-							{ "i", 8049 },	-- Gnarlpine Necklace
+							{ "i", 8049 },	-- Gnarlpine Necklace (QI!)
 						},
 						coord = { 69.2, 53.4, MAP.TELDRASSIL },
 					}),
@@ -886,7 +886,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Gargantuan Tumor
-						provider = { "i", 8136 },	-- Gargantuan Tumor
+						provider = { "i", 8136 },	-- Gargantuan Tumor (QI!)
 						coord = { 53.6, 75.0, MAP.TELDRASSIL },
 						cr = 2166,	-- Oakenscowl
 					}),
@@ -948,7 +948,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/3 Fel Cone
 						providers = {
-							{ "i", 3418 },	-- Fel Cone
+							{ "i", 3418 },	-- Fel Cone (QI!)
 							{ "o", 1673 },	-- Fel Cone
 						},
 					}),
@@ -985,7 +985,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Tame a Webwood Lurker
 						providers = {
 							{ "n", 1998 },	-- Webwood Lurker
-							{ "i", 15921 },	-- Taming Rod
+							{ "i", 15921 },	-- Taming Rod (QI!)
 						},
 					}),
 				},
@@ -1001,7 +1001,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Tame a Nightsaber Stalker
 						providers = {
 							{ "n", 2043 },	-- Nightsaber Stalker
-							{ "i", 15922 },	-- Taming Rod
+							{ "i", 15922 },	-- Taming Rod (QI!)
 						},
 					}),
 				},
@@ -1017,7 +1017,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Tame a Strigid Screecher
 						providers = {
 							{ "n", 1996 },	-- Strigid Screecher
-							{ "i", 15923 },	-- Taming Rod
+							{ "i", 15923 },	-- Taming Rod (QI!)
 						},
 					}),
 					recipe(883),	-- Call Pet
@@ -1075,7 +1075,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Emerald Dreamcatcher
 						providers = {
-							{ "i", 8048 },	-- Emerald Dreamcatcher
+							{ "i", 8048 },	-- Emerald Dreamcatcher (QI!)
 							{ "o", 126158 },	-- Tallonkai's Dresser
 						},
 						coord = { 68.0, 59.6, MAP.TELDRASSIL },
@@ -1089,7 +1089,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/6 Bloodfeather Belt
-						provider = { "i", 5204 },	-- Bloodfeather Belt
+						provider = { "i", 5204 },	-- Bloodfeather Belt (QI!)
 						crs = {
 							2019,	-- Bloodfeather Fury
 							2015,	-- Bloodfeather Harpy
@@ -1223,28 +1223,28 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Raven Claw Talisman
 						providers = {
-							{ "i", 3405 },	-- Raven Claw Talisman
+							{ "i", 3405 },	-- Raven Claw Talisman (QI!)
 							{ "o", 2740 },	-- Chest of the Raven Claw
 						},
 						coord = { 45.7, 57.5, MAP.TELDRASSIL },
 					}),
 					objective(2, {	-- 0/1 Black Feather Quill
 						providers = {
-							{ "i", 3406 },	-- Black Feather Quill
+							{ "i", 3406 },	-- Black Feather Quill (QI!)
 							{ "o", 2739 },	-- Chest of the Black Feather
 						},
 						coord = { 43.8, 61.2, MAP.TELDRASSIL },
 					}),
 					objective(3, {	-- 0/1 Sapphire of Sky
 						providers = {
-							{ "i", 3407 },	-- Sapphire of Sky
+							{ "i", 3407 },	-- Sapphire of Sky (QI!)
 							{ "o", 2741 },	-- Chest of the Sky
 						},
 						coord = { 44.6, 62.5, MAP.TELDRASSIL },
 					}),
 					objective(4, {	-- 0/1 Rune of Nesting
 						providers = {
-							{ "i", 3408 },	-- Rune of Nesting
+							{ "i", 3408 },	-- Rune of Nesting (QI!)
 							{ "o", 2742 },	-- Chest of Nesting
 						},
 						coord = { 44.5, 60.6, MAP.TELDRASSIL },
@@ -1289,7 +1289,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 3,
 				groups = {
 					objective(1, {	-- Shaman Voodoo Charm
-						provider = { "i", 8363 },	-- Shaman Voodoo Charm
+						provider = { "i", 8363 },	-- Shaman Voodoo Charm (QI!)
 						cr = 2009,	-- Gnarlpine Shaman
 					}),
 				},
@@ -1309,7 +1309,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/8 Timberling Seed
-						provider = { "i", 5168 },	-- Timberling Seed
+						provider = { "i", 5168 },	-- Timberling Seed (QI!)
 						crs = {
 							2030,	-- Elder Timberling
 							2166,	-- Oakenscowl
@@ -1329,7 +1329,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/12 Timberling Seed
 						providers = {
-							{ "i", 5169 },	-- Timberling Sprout
+							{ "i", 5169 },	-- Timberling Sprout (QI!)
 							{ "o", 4608 },	-- Timberling Sprout
 						},
 					}),
@@ -1357,7 +1357,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/5 Mossy Tumor
-						provider = { "i", 5170 },	-- Mossy Tumor
+						provider = { "i", 5170 },	-- Mossy Tumor (QI!)
 						crs = {
 							2030,	-- Elder Timberling
 							2029,	-- Timberling Mire Beast
@@ -1374,7 +1374,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {
-						provider = { "i", 5221 },	-- Melenas' Head
+						provider = { "i", 5221 },	-- Melenas' Head (QI!)
 						coord = { 51.6, 51.6, MAP.TELDRASSIL },
 						cr = 2038,	-- Lord Melenas
 					}),
@@ -1436,7 +1436,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/3 Nightsaber Fang
-						provider = { "i", 3409 },	-- Nightsaber Fang
+						provider = { "i", 3409 },	-- Nightsaber Fang (QI!)
 						crs = {
 							14430,	-- Duskstalker
 							2042,	-- Nightsaber
@@ -1444,14 +1444,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					objective(2, {	-- 0/3 Strigid Owl Feather
-						provider = { "i", 3411 },	-- Strigid Owl Feather
+						provider = { "i", 3411 },	-- Strigid Owl Feather (QI!)
 						crs = {
 							1995,	-- Strigid Owl
 							1996,	-- Strigid Screecher
 						},
 					}),
 					objective(3, {	-- 0/3 Webwood Spider Silk
-						provider = { "i", 3412 },	-- Webwood Spider Silk
+						provider = { "i", 3412 },	-- Webwood Spider Silk (QI!)
 						crs = {
 							1998,	-- Webwood Lurker
 							2000,	-- Webwood Silkspinner

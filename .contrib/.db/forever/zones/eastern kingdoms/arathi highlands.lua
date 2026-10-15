@@ -97,21 +97,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Trelane's Phylactery
 						providers = {
-							{ "i", 4530 },	-- Trelane's Phylactery
+							{ "i", 4530 },	-- Trelane's Phylactery (QI!)
 							{ "o", 2717 },	-- Trelane's Footlocker
 						},
 						coord = { 18.2, 68.2, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(2, {	-- 0/1 Trelane's Orb
 						providers = {
-							{ "i", 4531 },	-- Trelane's Orb
+							{ "i", 4531 },	-- Trelane's Orb (QI!)
 							{ "o", 2716 },	-- Trelane's Chest
 						},
 						coord = { 18.1, 69.1, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(3, {	-- 0/1 Trelane's Ember Agate
 						providers = {
-							{ "i", 4532 },	-- Trelane's Ember Agate
+							{ "i", 4532 },	-- Trelane's Ember Agate (QI!)
 							{ "o", 2718 },	-- Trelane's Lockbox
 						},
 						coord = { 18.0, 67.9, MAP.ARATHI_HIGHLANDS },
@@ -125,7 +125,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Rod of Order
-						provider = { "i", 4469 },	-- Rod of Order
+						provider = { "i", 4469 },	-- Rod of Order (QI!)
 						cr = 2611,	-- Fozruk
 					}),
 				},
@@ -209,28 +209,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Maiden's Folly Charts
 						providers = {
-							{ "i", 4487 },	-- Maiden's Folly Charts
+							{ "i", 4487 },	-- Maiden's Folly Charts (QI!)
 							{ "o", 2707 },	-- Maiden's Folly Charts
 						},
 						coord = { 23.0, 84.5, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(2, {	-- 0/1 Maiden's Folly Log
 						providers = {
-							{ "i", 4489 },	-- Maiden's Folly Log
+							{ "i", 4489 },	-- Maiden's Folly Log (QI!)
 							{ "o", 2709 },	-- Maiden's Folly Log
 						},
 						coord = { 23.5, 85.1, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(3, {	-- 0/1 Spirit of Silverpine Charts
 						providers = {
-							{ "i", 4488 },	-- Spirit of Silverpine Charts
+							{ "i", 4488 },	-- Spirit of Silverpine Charts (QI!)
 							{ "o", 2708 },	-- Spirit of Silverpine Charts
 						},
 						coord = { 20.5, 85.5, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(4, {	-- 0/1 Spirit of Silverpine Log
 						providers = {
-							{ "i", 4490 },	-- Spirit of Silverpine Log
+							{ "i", 4490 },	-- Spirit of Silverpine Log (QI!)
 							{ "o", 2710 },	-- Spirit of Silverpine Log
 						},
 						coord = { 20.7, 85.1, MAP.ARATHI_HIGHLANDS },
@@ -259,7 +259,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Bloodstone Amulet
-						provider = { "i", 4495 },	-- Bloodstone Amulet
+						provider = { "i", 4495 },	-- Bloodstone Amulet (QI!)
 						crs = {
 							2586,	-- Syndicate Highwayman
 							2589,	-- Syndicate Mercenary
@@ -276,7 +276,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Befouled Bloodstone Orb
-						provider = { "i", 4510 },	-- Befouled Bloodstone Orb
+						provider = { "i", 4510 },	-- Befouled Bloodstone Orb (QI!)
 						coord = { 29.0, 64.0, MAP.ARATHI_HIGHLANDS },
 						cr = 2783,	-- Marez Cowl
 					}),
@@ -292,7 +292,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/12 Raptor Heart
-						provider = { "i", 4513 },	-- Raptor Heart
+						provider = { "i", 4513 },	-- Raptor Heart (QI!)
 						cr = 2561,	-- Highland Fleshstalker
 					}),
 				},
@@ -336,7 +336,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Sealed Folder
-						provider = { "i", 4482 },	-- Sealed Folder
+						provider = { "i", 4482 },	-- Sealed Folder (QI!)
 						coord = { 52.6, 61.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2714,	-- Forsaken Courier
 					}),
@@ -446,7 +446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/10 Highland Raptor Eye
-						provider = { "i", 4512 },	-- Highland Raptor Eye
+						provider = { "i", 4512 },	-- Highland Raptor Eye (QI!)
 						crs = {
 							2559,	-- Highland Strider
 							2560,	-- Highland Thrasher
@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Sigil of Arathor
-						provider = { "i", 4458 },	-- Sigil of Arathor
+						provider = { "i", 4458 },	-- Sigil of Arathor (QI!)
 						cr = 2612,	-- Lieutenant Valorcall
 					}),
 				},
@@ -490,7 +490,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Sigil of Strom
-						provider = { "i", 4440 },	-- Sigil of Strom
+						provider = { "i", 4440 },	-- Sigil of Strom (QI!)
 						coord = { 27.6, 63.4, MAP.ARATHI_HIGHLANDS },
 						crs = {
 							2590,	-- Syndicate Conjuror
@@ -516,7 +516,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Sigil of Trollbane
-						provider = { "i", 4466 },	-- Sigil of Trollbane
+						provider = { "i", 4466 },	-- Sigil of Trollbane (QI!)
 						cr = 2607,	-- Prince Galen Trollbane
 					}),
 				},
@@ -529,21 +529,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Burning Key
 						providers = {
-							{ "i", 4483 },	-- Burning Key
+							{ "i", 4483 },	-- Burning Key (QI!)
 							{ "o", 2689 },	-- Stone of West Binding
 						},
 						coord = { 25.5, 30.2, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(2, {	-- 0/1 Cresting Key
 						providers = {
-							{ "i", 4484 },	-- Cresting Key
+							{ "i", 4484 },	-- Cresting Key (QI!)
 							{ "o", 2691 },	-- Stone of East Binding
 						},
 						coord = { 66.7, 29.8, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(3, {	-- 0/1 Thundering Key
 						providers = {
-							{ "i", 4485 },	-- Thundering Key
+							{ "i", 4485 },	-- Thundering Key (QI!)
 							{ "o", 2690 },	-- Stone of Outer Binding
 						},
 						coord = { 52.1, 50.7, MAP.ARATHI_HIGHLANDS },
@@ -558,7 +558,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/15 Stromgarde Badge
-						provider = { "i", 4506 },	-- Stromgarde Badge
+						provider = { "i", 4506 },	-- Stromgarde Badge (QI!)
 						crs = {
 							2590,	-- Syndicate Conjuror
 							2591,	-- Syndicate Magus
@@ -586,8 +586,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Eldritch Shackles
 						providers = {
-							{ "i", 4473 },	-- Eldritch Shackles
-							{ "i", 4472 },	-- Scroll of Myzrael
+							{ "i", 4473 },	-- Eldritch Shackles (QI!)
+							{ "i", 4472 },	-- Scroll of Myzrael (QI!)
 							{ "o", 138492 },	-- Shards of Myzrael
 						},
 						coord = { 62.6, 34.6, MAP.ARATHI_HIGHLANDS },
@@ -614,7 +614,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/10 Elven Gem
 						providers = {
-							{ "i", 4492 },	-- Elven Gem
+							{ "i", 4492 },	-- Elven Gem (QI!)
 							{ "o", 2712 },	-- Calcified Elven Gem
 						},
 						coord = { 23.6, 87.4, MAP.ARATHI_HIGHLANDS },
@@ -654,7 +654,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/11 Sigil Fragment
-						provider = { "i", 4450 },	-- Sigil Fragment
+						provider = { "i", 4450 },	-- Sigil Fragment (QI!)
 						crs = {
 							2584,	-- Stromgarde Defender
 							2583,	-- Stromgarde Troll Hunter
@@ -685,7 +685,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/12 Mote of Myzrael
-						provider = { "i", 4435 },	-- Mote of Myzrael
+						provider = { "i", 4435 },	-- Mote of Myzrael (QI!)
 						coord = { 83.6, 33.4, MAP.ARATHI_HIGHLANDS },
 						crs = {
 							2574,	-- Drywhisker Digger
@@ -703,7 +703,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Or'Kalar's Head
-						provider = { "i", 4551 },	-- Or'Kalar's Head
+						provider = { "i", 4551 },	-- Or'Kalar's Head (QI!)
 						coord = { 20.8, 65.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2773,	-- Or'Kalar
 					}),
@@ -748,7 +748,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Azure Agate
-						provider = { "i", 4527 },	-- Azure Agate
+						provider = { "i", 4527 },	-- Azure Agate (QI!)
 						coord = { 19.8, 66.4, MAP.ARATHI_HIGHLANDS },
 						cr = 2570,	-- Boulderfist Shaman
 					}),
@@ -764,7 +764,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/15 Patients Saved!
-						provider = { "i", 16991 },	-- Triage Bandage
+						provider = { "i", 16991 },	-- Triage Bandage (QI!)
 						crs = {
 							12923,	-- Injured Soldier
 							12924,	-- Badly Injured Soldier
@@ -816,7 +816,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Trelane's Wand of Invocation
-						provider = { "i", 4525 },	-- Trelane's Wand of Invocation
+						provider = { "i", 4525 },	-- Trelane's Wand of Invocation (QI!)
 						coord = { 54.6, 81.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2793,	-- Kor'gresh Coldrage
 					}),
@@ -829,7 +829,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Marez's Head
-						provider = { "i", 4515 },	-- Marez's Head
+						provider = { "i", 4515 },	-- Marez's Head (QI!)
 						coord = { 29.0, 64.0, MAP.ARATHI_HIGHLANDS },
 						cr = 2783,	-- Marez Cowl
 					}),
@@ -843,12 +843,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Otto's Head
-						provider = { "i", 4516 },	-- Otto's Head
+						provider = { "i", 4516 },	-- Otto's Head (QI!)
 						coord = { 26.0, 65.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2599,	-- Otto <Bodyguard>
 					}),
 					objective(2, {	-- 0/1 Falconcrest's Head
-						provider = { "i", 4517 },	-- Falconcrest's Head
+						provider = { "i", 4517 },	-- Falconcrest's Head (QI!)
 						coord = { 26.0, 65.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2597,	-- Lord Falconcrest <Syndicate Leader>
 					}),
@@ -864,7 +864,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Witherbark Tusk
-						provider = { "i", 4503 },	-- Witherbark Tusk
+						provider = { "i", 4503 },	-- Witherbark Tusk (QI!)
 						crs = {
 							2554,	-- Witherbark Axe Thrower
 							2558,	-- Witherbark Berserker
@@ -877,11 +877,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						},
 					}),
 					objective(2, {	-- 0/4 Witherbark Medicine Pouch
-						provider = { "i", 4522 },	-- Witherbark Medicine Pouch
+						provider = { "i", 4522 },	-- Witherbark Medicine Pouch (QI!)
 						cr = 2555,	-- Witherbark Witch Doctor
 					}),
 					objective(3, {	-- 0/1 Shadow Hunter Knife
-						provider = { "i", 5040 },	-- Shadow Hunter Knife
+						provider = { "i", 5040 },	-- Shadow Hunter Knife (QI!)
 						cr = 2557,	-- Witherbark Shadow Hunter
 					}),
 				},

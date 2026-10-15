@@ -73,7 +73,7 @@ root(ROOTS.Instances, {
 					lvl = 9,
 					groups = {
 						objective(1, {	-- 0/1 Taragaman the Hungerer's Heart
-							provider = { "i", 14540 },	-- Taragaman the Hungerer's Heart
+							provider = { "i", 14540 },	-- Taragaman the Hungerer's Heart (QI!)
 						}),
 					},
 				}),
@@ -98,10 +98,10 @@ root(ROOTS.Instances, {
 					lvl = 9,
 					groups = {
 						objective(1, {	-- 0/1 Spells of Shadow
-							provider = { "i", 14395 },	-- Spells of Shadow
+							provider = { "i", 14395 },	-- Spells of Shadow (QI!)
 						}),
 						objective(2, {	-- 0/1 Incantations from the Nether
-							provider = { "i", 14396 },	-- Incantations from the Nether
+							provider = { "i", 14396 },	-- Incantations from the Nether (QI!)
 						}),
 						i(15450),	-- Dredgemire Leggings
 						i(15451),	-- Gargoyle Leggings

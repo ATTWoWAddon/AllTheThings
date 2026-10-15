@@ -185,7 +185,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Catelyn's Blade
-						provider = { "i", 4027 },	-- Catelyn's Blade
+						provider = { "i", 4027 },	-- Catelyn's Blade (QI!)
 						coord = { 27.6, 69.6, MAP.STRANGLETHORN_VALE },
 						cr = 2545,	-- "Pretty Boy" Duncan
 					}),
@@ -197,7 +197,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/10 Akiris Reed
-						provider = { "i", 4029 },	-- Akiris Reed
+						provider = { "i", 4029 },	-- Akiris Reed (QI!)
 						cr = 1907,	-- Naga Explorer
 					}),
 					i(4117),	-- Scorching Sash
@@ -273,7 +273,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					objective(2, {	-- 0/1 Venom Fern Extract
 						providers = {
-							{ "i", 2634 },	-- Venom Fern Extract
+							{ "i", 2634 },	-- Venom Fern Extract (QI!)
 							{ "o", 263 },	-- Kurzen Supplies
 							{ "o", 264 },	-- Kurzen Supplies
 						},
@@ -294,7 +294,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/1 Head of Bangalash
-						provider = { "i", 3880 },	-- Head of Bangalash
+						provider = { "i", 3880 },	-- Head of Bangalash (QI!)
 						coord = { 38.6, 35.6, MAP.STRANGLETHORN_VALE },
 						cr = 731,	-- King Bangalash
 					}),
@@ -310,12 +310,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Gan'zulah's Head
-						provider = { "i", 3904 },	-- Gan'zulah's Head
+						provider = { "i", 3904 },	-- Gan'zulah's Head (QI!)
 						coord = { 23.8, 8.6, MAP.STRANGLETHORN_VALE },
 						cr = 1061,	-- Gan'zulah <Bloodscalp Chief>
 					}),
 					objective(2, {	-- 0/1 Nezzliok's Head
-						provider = { "i", 3905 },	-- Nezzliok's Head
+						provider = { "i", 3905 },	-- Nezzliok's Head (QI!)
 						coord = { 23.6, 9.6, MAP.STRANGLETHORN_VALE },
 						cr = 1062,	-- Nezzliok the Dire <Bloodscalp Clan Witchdoctor>
 					}),
@@ -327,7 +327,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/15 Bloodscalp Ear
-						provider = { "i", 1519 },	-- Bloodscalp Ear
+						provider = { "i", 1519 },	-- Bloodscalp Ear (QI!)
 						crs = {
 							694,	-- Bloodscalp Axe Thrower
 							699,	-- Bloodscalp Beastmaster
@@ -352,7 +352,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/25 Bloody Bone Necklace
-						provider = { "i", 3915 },	-- Bloody Bone Necklace
+						provider = { "i", 3915 },	-- Bloody Bone Necklace (QI!)
 						crs = {
 							694,	-- Bloodscalp Axe Thrower
 							699,	-- Bloodscalp Beastmaster
@@ -446,7 +446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						provider = { "n", 978 },	-- Kurzen Subchief
 					}),
 					objective(3, {	-- 0/1 Kurzen's Head
-						provider = { "i", 3615 },	-- Kurzen's Head
+						provider = { "i", 3615 },	-- Kurzen's Head (QI!)
 						coord = { 49.6, 4.0, MAP.STRANGLETHORN_VALE },
 						cr = 813,	-- Colonel Kurzen
 					}),
@@ -496,7 +496,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Maury's Key
-						provider = { "i", 3930 },	-- Maury's Key
+						provider = { "i", 3930 },	-- Maury's Key (QI!)
 						crs = {
 							723,	-- Mosh'Ogg Butcher
 							680,	-- Mosh'Ogg Lord
@@ -517,7 +517,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Speck of Dream Dust
-						provider = { "i", 5803 },	-- Speck of Dream Dust
+						provider = { "i", 5803 },	-- Speck of Dream Dust (QI!)
 						crs = {
 							740,	-- Adolescent Whelp
 							741,	-- Dreaming Whelp
@@ -565,7 +565,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 31,
 				groups = {
 					objective(1, {	-- 0/1 Elder Crocolisk Skin
-						provider = { "i", 4105 },	-- Elder Crocolisk Skin
+						provider = { "i", 4105 },	-- Elder Crocolisk Skin (QI!)
 						cr = 2635,	-- Elder Saltwater Crocolisk
 					}),
 					i(4109),	-- Excelsior Boots
@@ -607,7 +607,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						groups = {
 							objective(1, {	-- 0/1 Smotts' Cutlass
 								questID = 8554,	-- Facing Negolash
-								provider = { "i", 3935 },	-- Smotts' Cutlass
+								provider = { "i", 3935 },	-- Smotts' Cutlass (QI!)
 								coord = { 32.5, 81.9, MAP.STRANGLETHORN_VALE },
 								cr = 1494,	-- Negolash
 							}),
@@ -654,11 +654,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- Place the grim message.
-						provider = { "i", 9319 },	-- Nimboya's Laden Pike
+						provider = { "i", 9319 },	-- Nimboya's Laden Pike (QI!)
 						coord = { 32.0, 58.0, MAP.THE_HINTERLANDS },
 						cost = {
-							{ "i", 15002, 1 },	-- 1x Nimboya's Pike
-							{ "i", 9320, 20 },	-- 20x Witherbark Skull
+							{ "i", 15002, 1 },	-- 1x Nimboya's Pike (QI!)
+							{ "i", 9320, 20 },	-- 20x Witherbark Skull (QI!)
 						},
 					}),
 					i(9320, {	-- Witherbark Skull
@@ -681,7 +681,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/20 Shrunken Head
-						provider = { "i", 1532 },	-- Shrunken Head
+						provider = { "i", 1532 },	-- Shrunken Head (QI!)
 						cr = 671,	-- Bloodscalp Headhunter
 					}),
 					i(4133),	-- Darkspear Cuffs
@@ -694,7 +694,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 31,
 				groups = {
 					objective(1, {	-- Tumbled Crystal
-						provider = { "i", 4106 },	-- Tumbled Crystal
+						provider = { "i", 4106 },	-- Tumbled Crystal (QI!)
 						cr = 1096,	-- Venture Co. Geologist
 					}),
 					i(4121),	-- Gemmed Gloves
@@ -707,7 +707,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/9 Bloodscalp Tusk
-						provider = { "i", 3901 },	-- Bloodscalp Tusk
+						provider = { "i", 3901 },	-- Bloodscalp Tusk (QI!)
 						crs = {
 							694,	-- Bloodscalp Axe Thrower
 							699,	-- Bloodscalp Beastmaster
@@ -743,7 +743,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 37,
 				groups = {
 					objective(1, {	-- Dizzy's Eye
-						provider = { "i", 3897 },	-- Dizzy's Eye
+						provider = { "i", 3897 },	-- Dizzy's Eye (QI!)
 						crs = {
 							2545,	-- "Pretty Boy" Duncan
 							4505,	-- Bloodsail Deckhand
@@ -780,14 +780,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					objective(1, {	-- 0/1 The First Troll Legend
 						providers = {
-							{ "i", 2005 },	-- The First Troll Legend
+							{ "i", 2005 },	-- The First Troll Legend (QI!)
 							{ "o", 57 },	-- Moon Over the Vale
 						},
 						coord = { 29.5, 19.2, MAP.STRANGLETHORN_VALE },
 					}),
 					objective(2, {	-- 0/1 The Second Troll Legend
 						providers = {
-							{ "i", 2006 },	-- The Second Troll Legend
+							{ "i", 2006 },	-- The Second Troll Legend (QI!)
 							{ "o", 58 },	-- Gri'lek the Wanderer
 						},
 						coords = {
@@ -797,14 +797,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					objective(3, {	-- 0/1 The Third Troll Legend
 						providers = {
-							{ "i", 2007 },	-- The Third Troll Legend
+							{ "i", 2007 },	-- The Third Troll Legend (QI!)
 							{ "o", 52 },	-- Fall of Gurubashi
 						},
 						coord = { 23.0, 12.0, MAP.STRANGLETHORN_VALE },
 					}),
 					objective(4, {	-- 0/1 The Fourth Troll Legend
 						providers = {
-							{ "i", 2008 },	-- The Fourth Troll Legend
+							{ "i", 2008 },	-- The Fourth Troll Legend (QI!)
 							{ "o", 54 },	-- The Emperor's Tomb
 						},
 						coord = { 23.7, 9.0, MAP.STRANGLETHORN_VALE },
@@ -830,7 +830,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Mind's Eye
-						provider = { "i", 3616 },	-- Mind's Eye
+						provider = { "i", 3616 },	-- Mind's Eye (QI!)
 						cr = 818,	-- Mai'Zoth
 					}),
 					i(4125),	-- Tranquil Orb
@@ -861,7 +861,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 42,
 				groups = {
 					objective(1, {	-- 0/1 Shackle Key
-						provider = { "i", 4103 },	-- Shackle Key
+						provider = { "i", 4103 },	-- Shackle Key (QI!)
 						coord = { 40.8, 83.2, MAP.STRANGLETHORN_VALE },
 						cr = 1559,	-- King Mukla
 					}),
@@ -875,14 +875,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 33,
 				groups = {
 					objective(1, {	-- 0/8 Shadowmaw Claw
-						provider = { "i", 3838 },	-- Shadowmaw Claw
+						provider = { "i", 3838 },	-- Shadowmaw Claw (QI!)
 						crs = {
 							1713,	-- Elder Shadowmaw Panther
 							684,	-- Shadowmaw Panther
 						},
 					}),
 					objective(2, {	-- 0/1 Pristine Tigress Fang
-						provider = { "i", 3839 },	-- Pristine Tigress Fang
+						provider = { "i", 3839 },	-- Pristine Tigress Fang (QI!)
 						cr = 772,	-- Stranglethorn Tigress
 					}),
 				},
@@ -895,7 +895,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 33,
 				groups = {
 					objective(1, {	-- 0/10 Jungle Stalker Feather
-						provider = { "i", 3863 },	-- Jungle Stalker Feather
+						provider = { "i", 3863 },	-- Jungle Stalker Feather (QI!)
 						cr = 687,	-- Jungle Stalker
 					}),
 				},
@@ -908,7 +908,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 33,
 				groups = {
 					objective(1, {	-- 0/1 Aged Gorilla Sinew
-						provider = { "i", 3862 },	-- Aged Gorilla Sinew
+						provider = { "i", 3862 },	-- Aged Gorilla Sinew (QI!)
 						cr = 1557,	-- Elder Mistvale Gorilla
 					}),
 				},
@@ -925,7 +925,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					objective(2, {	-- 0/1 Holy Spring Water
 						providers = {
-							{ "i", 737 },	-- Holy Spring Water
+							{ "i", 737 },	-- Holy Spring Water (QI!)
 							{ "o", 759 },	-- The Holy Spring
 						},
 						coord = { 28.9, 62.0, MAP.STRANGLETHORN_VALE },
@@ -951,7 +951,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/1 Fang of Bhag'thera
-						provider = { "i", 3876 },	-- Fang of Bhag'thera
+						provider = { "i", 3876 },	-- Fang of Bhag'thera (QI!)
 						coords = {
 							{ 49.0, 20.6, MAP.STRANGLETHORN_VALE },
 							{ 49.8, 24.6, MAP.STRANGLETHORN_VALE },
@@ -1009,7 +1009,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/1 Talon of Tethis
-						provider = { "i", 3877 },	-- Talon of Tethis
+						provider = { "i", 3877 },	-- Talon of Tethis (QI!)
 						coord = { 29.6, 44.8, MAP.STRANGLETHORN_VALE },
 						cr = 730,	-- Tethis
 					}),
@@ -1089,7 +1089,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						groups = {
 							objective(1, {	-- 0/1 Filled Soul Gem
 								questID = 592,	-- Saving Yenniku
-								provider = { "i", 3913 },	-- Filled Soul Gem
+								provider = { "i", 3913 },	-- Filled Soul Gem (QI!)
 							}),
 						},
 					}),
@@ -1103,7 +1103,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/5 Mistvale Giblets
-						provider = { "i", 3919 },	-- Mistvale Giblets
+						provider = { "i", 3919 },	-- Mistvale Giblets (QI!)
 						cr = 1557,	-- Elder Mistvale Gorilla
 					}),
 				},
@@ -1132,7 +1132,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Singing Crystal Shard
-						provider = { "i", 3918 },	-- Singing Crystal Shard
+						provider = { "i", 3918 },	-- Singing Crystal Shard (QI!)
 						crs = {
 							690,	-- Cold Eye Basilisk
 							689,	-- Crystal Spine Basilisk
@@ -1150,7 +1150,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/18 Skullsplitter Tusk
-						provider = { "i", 1524 },	-- Skullsplitter Tusk
+						provider = { "i", 1524 },	-- Skullsplitter Tusk (QI!)
 						crs = {
 							1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
 							696,	-- Skullsplitter Axe Thrower
@@ -1188,7 +1188,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 31,
 				groups = {
 					objective(1, {	-- 0/5 Snapjaw Crocolisk Skin
-						provider = { "i", 4104 },	-- Snapjaw Crocolisk Skin
+						provider = { "i", 4104 },	-- Snapjaw Crocolisk Skin (QI!)
 						cr = 1152,	-- Snapjaw Crocolisk
 					}),
 				},
@@ -1210,7 +1210,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						provider = { "n", 783 },	-- Skullsplitter Berserker
 					}),
 					objective(4, {	-- 0/1 Broken Armor of Ana'thek
-						provider = { "i", 3909 },	-- Broken Armor of Ana'thek
+						provider = { "i", 3909 },	-- Broken Armor of Ana'thek (QI!)
 						coord = { 44.6, 44.2, MAP.STRANGLETHORN_VALE },
 						cr = 1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
 					}),
@@ -1225,21 +1225,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					objective(1, {	-- 0/1 Balia'mah Trophy
 						providers = {
-							{ "i", 3906 },	-- Balia'mah Trophy
+							{ "i", 3906 },	-- Balia'mah Trophy (QI!)
 							{ "o", 2891 },	-- Balia'mah Trophy Skulls
 						},
 						coord = { 46.1, 32.4, MAP.STRANGLETHORN_VALE },
 					}),
 					objective(2, {	-- 0/1 Ziata'jai Trophy
 						providers = {
-							{ "i", 3907 },	-- Ziata'jai Trophy
+							{ "i", 3907 },	-- Ziata'jai Trophy (QI!)
 							{ "o", 2892 },	-- Ziata'jai Trophy Skulls
 						},
 						coord = { 42.2, 36.1, MAP.STRANGLETHORN_VALE },
 					}),
 					objective(3, {	-- 0/1 Zul'Mamwe Trophy
 						providers = {
-							{ "i", 3908 },	-- Zul'Mamwe Trophy
+							{ "i", 3908 },	-- Zul'Mamwe Trophy (QI!)
 							{ "o", 2893 },	-- Zul'Mamwe Trophy Skulls
 						},
 						coord = { 47.6, 39.5, MAP.STRANGLETHORN_VALE },
@@ -1275,7 +1275,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/25 Split Bone Necklace
-						provider = { "i", 3916 },	-- Split Bone Necklace
+						provider = { "i", 3916 },	-- Split Bone Necklace (QI!)
 						crs = {
 							1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
 							696,	-- Skullsplitter Axe Thrower
@@ -1308,7 +1308,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						groups = {
 							objective(1, {	-- 0/1 Heart of Mokk
 								questID = 348,	-- Stranglethorn Fever
-								provider = { "i", 2797 },	-- Heart of Mokk
+								provider = { "i", 2797 },	-- Heart of Mokk (QI!)
 								coord = { 35.2, 60.4, MAP.STRANGLETHORN_VALE },
 								cr = 1514,	-- Mokk the Savage
 							}),
@@ -1330,7 +1330,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/2 Large River Crocolisk Skin
-						provider = { "i", 4053 },	-- Large River Crocolisk Skin
+						provider = { "i", 4053 },	-- Large River Crocolisk Skin (QI!)
 						cr = 1150,	-- River Crocolisk
 					}),
 				},
@@ -1378,7 +1378,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					objective(2, {	-- 0/1 Bloodsail Charts
 						providers = {
-							{ "i", 3920 },	-- Bloodsail Charts
+							{ "i", 3920 },	-- Bloodsail Charts (QI!)
 							{ "o", 2086 },	-- Bloodsail Charts
 						},
 						coords = {
@@ -1388,7 +1388,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					objective(3, {	-- 0/1 Bloodsail Orders
 						providers = {
-							{ "i", 3921 },	-- Bloodsail Orders
+							{ "i", 3921 },	-- Bloodsail Orders (QI!)
 							{ "o", 2087 },	-- Bloodsail Orders
 						},
 						coords = {
@@ -1426,7 +1426,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Smotts' Chest
-						provider = { "i", 3932 },	-- Smotts' Chest
+						provider = { "i", 3932 },	-- Smotts' Chest (QI!)
 						coord = { 36.6, 69.6, MAP.STRANGLETHORN_VALE },
 						cr = 1492,	-- Gorlash
 					}),
@@ -1456,8 +1456,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					objective(1, {	-- 0/1 Stone of the Tides
 						providers = {
-							{ "i", 4034 },	-- Stone of the Tides
-							{ "i", 4027 },	-- Catelyn's Blade
+							{ "i", 4034 },	-- Stone of the Tides (QI!)
+							{ "i", 4027 },	-- Catelyn's Blade (QI!)
 							{ "o", 2576 },	-- Altar of the Tides
 						},
 						coord = { 25.0, 23.6, MAP.STRANGLETHORN_VALE },
@@ -1565,7 +1565,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Mind's Eye
-						provider = { "i", 3616 },	-- Mind's Eye
+						provider = { "i", 3616 },	-- Mind's Eye (QI!)
 						cr = 818,	-- Mai'Zoth
 					}),
 				},
@@ -1602,8 +1602,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					objective(1, {	-- 0/1 Oglethorpe's Signed Pledge
 						providers = {
-							{ "i", 11282 },	-- Oglethorpe's Signed Pledge
-							{ "i", 10794 },	-- Oglethorpe's Pledge of Secrecy
+							{ "i", 11282 },	-- Oglethorpe's Signed Pledge (QI!)
+							{ "i", 10794 },	-- Oglethorpe's Pledge of Secrecy (QI!)
 						},
 					}),
 				},
@@ -1627,7 +1627,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Pulsing Blue Shard
-						provider = { "i", 3911 },	-- Pulsing Blue Shard
+						provider = { "i", 3911 },	-- Pulsing Blue Shard (QI!)
 						cr = 1551,	-- Ironjaw Basilisk
 					}),
 				},
@@ -1658,7 +1658,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet Shard
 						providers = {
-							{ "i", 4094 },	-- Tablet Shard
+							{ "i", 4094 },	-- Tablet Shard (QI!)
 							{ "o", 58 },	-- Gri'lek the Wanderer
 						},
 						coords = {
@@ -1686,7 +1686,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/1 Paw of Sin'Dall
-						provider = { "i", 3879 },	-- Paw of Sin'Dall
+						provider = { "i", 3879 },	-- Paw of Sin'Dall (QI!)
 						coord = { 32.6, 17.2, MAP.STRANGLETHORN_VALE },
 						cr = 729,	-- Sin'Dall
 					}),
@@ -1734,7 +1734,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/4 Skullsplitter Fetish
-						provider = { "i", 2466 },	-- Skullsplitter Fetish
+						provider = { "i", 2466 },	-- Skullsplitter Fetish (QI!)
 						crs = {
 							780,	-- Skullsplitter Mystic
 							670,	-- Skullsplitter Witch Doctor
@@ -1749,7 +1749,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/15 Snuff
-						provider = { "i", 3910 },	-- Snuff
+						provider = { "i", 3910 },	-- Snuff (QI!)
 						crs = {
 							2545,	-- "Pretty Boy" Duncan
 							4505,	-- Bloodsail Deckhand
@@ -1777,7 +1777,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Singing Blue Crystal
-						provider = { "i", 3917 },	-- Singing Blue Crystal
+						provider = { "i", 3917 },	-- Singing Blue Crystal (QI!)
 						crs = {
 							4723,	-- Foreman Cozzle
 							675,	-- Venture Co. Foreman
@@ -1798,17 +1798,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- Maury's Clubbed Foot
-						provider = { "i", 3924 },	-- Maury's Clubbed Foot
+						provider = { "i", 3924 },	-- Maury's Clubbed Foot (QI!)
 						coord = { 35.2, 51.0, MAP.STRANGLETHORN_VALE },
 						cr = 2535,	-- Maury "Club Foot" Wilkins
 					}),
 					objective(2, {	-- Jon-Jon's Golden Spyglass
-						provider = { "i", 3925 },	-- Jon-Jon's Golden Spyglass
+						provider = { "i", 3925 },	-- Jon-Jon's Golden Spyglass (QI!)
 						coord = { 34.8, 51.8, MAP.STRANGLETHORN_VALE },
 						cr = 2536,	-- Jon-Jon the Crow
 					}),
 					objective(3, {	-- Chucky's Huge Ring
-						provider = { "i", 3926 },	-- Chucky's Huge Ring
+						provider = { "i", 3926 },	-- Chucky's Huge Ring (QI!)
 						coord = { 40.2, 58.6, MAP.STRANGLETHORN_VALE },
 						cr = 2537,	-- Chucky "Ten Thumbs"
 					}),
@@ -1822,7 +1822,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/6 Water Elemental Bracers
-						provider = { "i", 3923 },	-- Water Elemental Bracers
+						provider = { "i", 3923 },	-- Water Elemental Bracers (QI!)
 						cr = 691,	-- Lesser Water Elemental
 					}),
 				},
@@ -1840,7 +1840,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					objective(1, {	-- 0/12 Pupellyverbos Port
 						providers = {
-							{ "i", 3900 },	-- Pupellyverbos Port
+							{ "i", 3900 },	-- Pupellyverbos Port (QI!)
 							{ "o", 2068 },	-- Pupellyverbos Port
 						},
 						coords = {
@@ -1860,7 +1860,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/12 Zanzil's Mixture
-						provider = { "i", 4016 },	-- Zanzil's Mixture
+						provider = { "i", 4016 },	-- Zanzil's Mixture (QI!)
 						crs = {
 							2537,	-- Chucky "Ten Thumbs"
 							2536,	-- Jon-Jon the Crow
