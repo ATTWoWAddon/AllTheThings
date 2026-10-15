@@ -1420,7 +1420,7 @@ local InformationTypes = {
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
 	CreateInformationType("raceID", { text = L.RACE_ID }),
-	CreateInformationType("runeforgepowerID", { text = L.RUNEFORGE_POWER_ID }),
+	CreateInformationType("runeforgepowerID", { minBuild = 90000, text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("savedInstanceID", { text = L.SAVED_INSTANCE_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
