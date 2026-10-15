@@ -14,8 +14,12 @@ end
 local ipairs, pairs, table_concat
 	= ipairs, pairs, table.concat
 
-local C_TradeSkillUI_IsRecipeFirstCraft, C_TradeSkillUI_GetRecipeInfo
-	= C_TradeSkillUI.IsRecipeFirstCraft, C_TradeSkillUI.GetRecipeInfo
+local C_TradeSkillUI_GetRecipeInfo = C_TradeSkillUI.GetRecipeInfo
+local C_TradeSkillUI_IsRecipeFirstCraft = C_TradeSkillUI.IsRecipeFirstCraft
+	or function(recipeID)
+		local info = C_TradeSkillUI_GetRecipeInfo(recipeID)
+		return info and info.firstCraft
+	end
 
 -- Mount Mod Lib
 do
