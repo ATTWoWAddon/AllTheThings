@@ -641,6 +641,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97915, {	-- Camping 101: Alchemy [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1230564 },
 				altQuests = { 96045, 97899, 97927, 97938, 97951, 97963 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -654,6 +655,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97916, {	-- Camping 101: Blacksmithing [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1230171 },
 				altQuests = { 96044, 97900, 97928, 97939, 97952, 97964 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -676,6 +678,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 4,
 			}),
 			q(97917, {	-- Camping 101: Enchanting [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1230643 },
 				altQuests = { 96059, 97901, 97929, 97940, 97953, 98284, 98286 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -689,6 +692,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97918, {	-- Camping 101: Engineering [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1230656 },
 				altQuests = { 96058, 97902, 97930, 97941, 97954, 98285, 98287 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -702,6 +706,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97919, {	-- Camping 101: First Aid [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1230117 },
 				altQuests = { 96047, 97903, 97931, 97942, 97955, 97965 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -715,6 +720,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97920, {	-- Camping 101: Fishing [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1229745 },
 				altQuests = { 96050, 97904, 97932, 97943, 97956, 97967 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -728,6 +734,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97921, {	-- Camping 101: Herbalism [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1229705 },
 				altQuests = { 96055, 97905, 97933, 97944, 97957, 97968 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -741,6 +748,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97922, {	-- Camping 101: Leatherworking [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1229432 },
 				altQuests = { 96031, 97906, 97934, 97946, 97958, 97969 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -754,6 +762,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97923, {	-- Camping 101: Mining [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1230161 },
 				altQuests = { 96046, 97907, 97935, 97948, 97959, 97970 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -767,6 +776,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97924, {	-- Camping 101: Skinning [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1229517 },
 				altQuests = { 96056, 97908, 97936, 97949, 97960, 97971 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
@@ -780,6 +790,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(97925, {	-- Camping 101: Tailoring [Elwynn Forest]
+				lockCriteria = { 1, "spellID", 1229504 },
 				altQuests = { 96057, 96102, 97937, 97950, 97961, 97972, 97973 },
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				qg = 263399,	-- Sam Sarsaparilla
