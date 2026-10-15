@@ -390,8 +390,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 48.6, 43.0, MAP.IRONFORGE },
 				maps = { MAP.REDRIDGE_MOUNTAINS },
 				cost = {
-					{ "i", 2857, 4 },	-- 4x Runed Copper Belt
 					{ "i", 6214, 4 },	-- 4x Heavy Copper Maul
+					{ "i", 2857, 4 },	-- 4x Runed Copper Belt
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 60,
@@ -487,8 +487,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 71.9, 51.9, MAP.IRONFORGE },
 				maps = { MAP.STONETALON_MOUNTAINS },
 				cost = {
-					{ "i", 2455, 4 },	-- 4x Minor Mana Potion
 					{ "i", 2458, 2 },	-- 2x Elixir of Minor Fortitude
+					{ "i", 2455, 4 },	-- 4x Minor Mana Potion
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 17,
@@ -661,8 +661,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 				coord = { 69.8, 50.2, MAP.IRONFORGE },
 				cost = {
-					{ "i", 4392, 2 },	-- 2x Advanced Target Dummy
 					{ "i", 4407, 1 },	-- 1x Accurate Scope
+					{ "i", 4392, 2 },	-- 2x Advanced Target Dummy
 					{ "i", 10559, 6 },	-- 6x Mithril Tube
 				},
 				requireSkill = ENGINEERING,

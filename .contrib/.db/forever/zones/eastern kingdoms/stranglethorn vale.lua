@@ -1114,8 +1114,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 				coord = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 4392, 2 },	-- 2x Advanced Target Dummy
 					{ "i", 4407, 1 },	-- 1x Accurate Scope
+					{ "i", 4392, 2 },	-- 2x Advanced Target Dummy
 					{ "i", 10559, 6 },	-- 6x Mithril Tube
 				},
 				requireSkill = ENGINEERING,
@@ -1340,8 +1340,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 7802,	-- Galvan the Ancient
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 3860, 40 },	-- 40x Iron Bar
 					{ "i", 3864, 4 },	-- 4x Citrine
+					{ "i", 3860, 40 },	-- 40x Iron Bar
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -1720,8 +1720,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 31.8, 70.9, MAP.STRANGLETHORN_VALE },
 				maxReputation = { FACTION_BOOTY_BAY, NEUTRAL },
 				cost = {
-					{ "i", 4306, 40 },	-- 40x Silk Cloth
 					{ "i", 2604, 4 },	-- 4x Red Dye
+					{ "i", 4306, 40 },	-- 40x Silk Cloth
 				},
 				lvl = 30,
 				repeatable = true,

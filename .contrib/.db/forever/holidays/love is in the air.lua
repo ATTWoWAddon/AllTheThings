@@ -350,8 +350,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(22133, {	-- Darnassus Gift Collection
 					cost = {
 						{ "i", 22291, 1 },	-- 1x Box of Woodcrafts
-						{ "i", 22289, 1 },	-- 1x Stack of Cards
 						{ "i", 22290, 1 },	-- 1x Darnassus Pledge Collection
+						{ "i", 22289, 1 },	-- 1x Stack of Cards
 					},
 					maps = { MAP.DARNASSUS },
 					_drop = { "f", "spellID" },
@@ -407,8 +407,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(22132, {	-- Ironforge Gift Collection
 					cost = {
 						{ "i", 22288, 1 },	-- 1x Case of Homebrew
-						{ "i", 22287, 1 },	-- 1x Parcel of Cards
 						{ "i", 22286, 1 },	-- 1x Ironforge Pledge Collection
+						{ "i", 22287, 1 },	-- 1x Parcel of Cards
 					},
 					maps = { MAP.IRONFORGE },
 					_drop = { "f", "spellID" },
@@ -463,8 +463,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				-- Stormwind City
 				i(22131, {	-- Stormwind Gift Collection
 					cost = {
-						{ "i", 22283, 1 },	-- 1x Sack of Homemade Bread
 						{ "i", 22284, 1 },	-- 1x Bundle of Cards
+						{ "i", 22283, 1 },	-- 1x Sack of Homemade Bread
 						{ "i", 22285, 1 },	-- 1x Stormwind Pledge Collection
 					},
 					maps = { MAP.STORMWIND_CITY },
@@ -521,8 +521,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(22136, {	-- Orgrimmar Gift Collection
 					cost = {
 						{ "i", 22292, 1 },	-- 1x Box of Fresh Pies
-						{ "i", 22293, 1 },	-- 1x Package of Cards
 						{ "i", 22294, 1 },	-- 1x Orgrimmar Pledge Collection
+						{ "i", 22293, 1 },	-- 1x Package of Cards
 					},
 					maps = { MAP.ORGRIMMAR },
 					_drop = { "f", "spellID" },

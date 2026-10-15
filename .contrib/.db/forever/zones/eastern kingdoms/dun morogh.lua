@@ -526,8 +526,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1267,	-- Ragnar Thunderbrew
 				coord = { 46.8, 52.4, MAP.DUN_MOROGH },
 				cost = {
-					{ "i", 2894, 1 },	-- 1x Rhapsody Malt
 					{ "i", 2886, 6 },	-- 6x Crag Boar Rib
+					{ "i", 2894, 1 },	-- 1x Rhapsody Malt
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 5,

@@ -1476,8 +1476,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 16418,	-- Mupsi Shacklefridd
 				coord = { 61.22, 37.86, MAP.THE_BARRENS },
 				cost = {
-					{ "i", 2589, 40 },	-- 40x Linen Cloth
 					{ "i", 3371, 4 },	-- 4x Empty Vial
+					{ "i", 2589, 40 },	-- 40x Linen Cloth
 				},
 				lvl = 10,
 				repeatable = true,

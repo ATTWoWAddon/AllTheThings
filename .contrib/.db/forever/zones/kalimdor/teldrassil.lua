@@ -755,8 +755,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 2083,	-- Syral Bladeleaf
 				coord = { 56.0, 57.8, MAP.TELDRASSIL },
 				cost = {
-					{ "i", 2454, 6 },	-- 6x Elixir of Minor Strength
 					{ "i", 5997, 2 },	-- 2x Elixir of Minor Defense
+					{ "i", 2454, 6 },	-- 6x Elixir of Minor Strength
 				},
 				learnedAt = 20,
 				requireSkill = ALCHEMY,

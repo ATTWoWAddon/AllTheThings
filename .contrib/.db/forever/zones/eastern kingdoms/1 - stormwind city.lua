@@ -467,10 +467,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
 				maps = { MAP.STRATHOLME },
 				cost = {
-					{ "i", 13180, 5 },	-- 5x Stratholme Holy Water
+					{ "i", 12360, 6 },	-- 6x Arcanite Bar
 					{ "i", 8836, 10 },	-- 10x Arthas' Tears
 					{ "i", 14047, 40 },	-- 40x Runecloth
-					{ "i", 12360, 6 },	-- 6x Arcanite Bar
+					{ "i", 13180, 5 },	-- 5x Stratholme Holy Water
 					{ "g", 1500000 },	-- 150g
 				},
 				races = ALLIANCE_ONLY,
@@ -638,8 +638,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 267118,	-- Gilbert Gray
 				coord = { 26.2, 47.0, MAP.STORMWIND_CITY },
 				cost = {
-					{ "i", 6529, 1 },	-- 1x Shiny Bauble
 					{ "i", 6530, 3 },	-- 3x Nightcrawlers
+					{ "i", 6529, 1 },	-- 1x Shiny Bauble
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 7,
@@ -1707,8 +1707,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 7207,	-- Doc Mixilpixil
 				coord = { 80.1, 69.9, MAP.STORMWIND_CITY },
 				cost = {
-					{ "i", 3372, 1 },	-- 1x Leaded Vial
 					{ "i", 4371, 1 },	-- 1x Bronze Tube
+					{ "i", 3372, 1 },	-- 1x Leaded Vial
 				},
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },

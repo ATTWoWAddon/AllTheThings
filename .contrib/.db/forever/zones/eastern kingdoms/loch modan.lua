@@ -639,8 +639,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1963,	-- Vidra Hearthstove
 				coord = { 34.8, 49.3, MAP.LOCH_MODAN },
 				cost = {
-					{ "i", 3172, 3 },	-- 3x Boar Intestines
 					{ "i", 3173, 3 },	-- 3x Bear Meat
+					{ "i", 3172, 3 },	-- 3x Boar Intestines
 					{ "i", 3174, 3 },	-- 3x Spider Ichor
 				},
 				races = ALLIANCE_ONLY,

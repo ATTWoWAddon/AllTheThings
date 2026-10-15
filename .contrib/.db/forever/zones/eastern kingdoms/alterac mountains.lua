@@ -236,9 +236,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 				},
 				cost = {
+					{ "i", 7069, 1 },	-- 1x Elemental Air
 					{ "i", 7067, 1 },	-- 1x Elemental Earth
 					{ "i", 7068, 1 },	-- 1x Elemental Fire
-					{ "i", 7069, 1 },	-- 1x Elemental Air
 					{ "i", 7070, 1 },	-- 1x Elemental Water
 				},
 				races = HORDE_ONLY,
