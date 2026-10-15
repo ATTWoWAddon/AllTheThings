@@ -138,17 +138,17 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97977, {	-- Nature's Call
-						sourceQuest = 458,
+						sourceQuest = 458,	-- The Woodland Protector (1/2)
 						qg = 1992,	-- Tarindrella
 						coord = { 57.8, 45.0, MAP.TELDRASSIL },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/4 Gnarlpine Totem
 								providers = {
-									{ "i", 279082 },	-- Gnarlpine Totem
-									{ "o", 668482 },	-- Ellena Starlight
-									{ "o", 668493 },	-- (unnamed object that gave a Gnarlpine Totem)
+									{ "i", 279082 },	-- Gnarlpine Totem (QI!)
+									{ "o", 668482 },	-- Gnarlpine Totem
+									{ "o", 668493 },	-- Gnarlpine Totem
 								},
 							}),
 						},
@@ -189,17 +189,22 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						races = ALLIANCE_ONLY,
 					}),
 					q(96630, {	-- The Adventurer [Teldrassil]
-						nextQuests = { 96606 },
-						isBreadcrumb = true,
-						altQuests = { 96627, 96628, 96638, 96652, 96656, 96659 },
-						sourceQuest = 921,
-						--["sourceQuest"] = ,	-- 
+						sourceQuest = 921,	-- Crown of the Earth (1/6)
+						altQuests = {
+							96627,	-- The Adventurer [Elwynn Forest]
+							96628,	-- The Adventurer [Dun Morogh]
+							96638,	-- The Adventurer [Zephras Isle]
+							96652,	-- The Adventurer [Durotar]
+							96656,	-- The Adventurer [Tirisfal Glades]
+							96659,	-- The Adventurer [Mulgore]
+						},
 						provider = { "o", 654846 },	-- Lost Journal
 						coord = { 59.1, 39.49, MAP.TELDRASSIL },
-						qi = 275022,	-- Lost Journal (PQI!)
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
+						isBreadcrumb = true,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275022,	-- Lost Journal (QI!)
 					}),
 					q(456, {	-- The Balance of Nature (1/2)
 						qg = 2079,	-- Conservator Ilthalaine
@@ -233,11 +238,11 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(97979, {	-- The Goddess Provides
-						sourceQuest = 456,
+						sourceQuest = 456,	-- The Balance of Nature (1/2)
 						qg = 3595,	-- Shanda <Priest Trainer>
 						coord = { 59.2, 40.4, MAP.TELDRASSIL },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { NIGHTELF },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(458, {	-- The Woodland Protector (1/2)
 						qg = 2077,	-- Melithar Staghelm
@@ -433,169 +438,256 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(97938, {	-- Camping 101: Alchemy [Teldrassil]
-				lockCriteria = { 1, "spellID", 1230564 },
-				altQuests = { 96045, 97899, 97915, 97927, 97951, 97963 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96045,	-- Camping 101: Alchemy [Dun Morogh]
+					97899,	-- Camping 101: Alchemy [Durotar]
+					97915,	-- Camping 101: Alchemy [Elwynn Forest]
+					97927,	-- Camping 101: Alchemy [Mulgore]
+					97951,	-- Camping 101: Alchemy [Tirisfal Glades]
+					97963,	-- Camping 101: Alchemy
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230564 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230564),	-- Alchemy: Mana Well
 				},
 			}),
 			q(97939, {	-- Camping 101: Blacksmithing [Teldrassil]
-				lockCriteria = { 1, "spellID", 1230171 },
-				altQuests = { 96044, 97900, 97916, 97928, 97952, 97964 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96044,	-- Camping 101: Blacksmithing [Dun Morogh]
+					97900,	-- Camping 101: Blacksmithing [Durotar]
+					97916,	-- Camping 101: Blacksmithing [Elwynn Forest]
+					97928,	-- Camping 101: Blacksmithing [Mulgore]
+					97952,	-- Camping 101: Blacksmithing [Tirisfal Glades]
+					97964,	-- Camping 101: Blacksmithing
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				requireSkill = BLACKSMITHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230171 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
 				},
 			}),
 			q(96634, {	-- Camping 101: Cooking [Teldrassil]
-				altQuests = { 96626, 96629, 96646, 96655, 96658, 96661 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96626,	-- Camping 101: Cooking [Elwynn Forest]
+					96629,	-- Camping 101: Cooking [Dun Morogh]
+					96646,	-- Camping 101: Cooking
+					96655,	-- Camping 101: Cooking [Durotar]
+					96658,	-- Camping 101: Cooking [Tirisfal Glades]
+					96661,	-- Camping 101: Cooking [Mulgore]
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(97940, {	-- Camping 101: Enchanting [Teldrassil]
-				lockCriteria = { 1, "spellID", 1230643 },
-				altQuests = { 96059, 97901, 97917, 97929, 97953, 98284, 98286 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96059,	-- Camping 101: Enchanting [Dun Morogh]
+					97901,	-- Camping 101: Enchanting [Durotar]
+					97917,	-- Camping 101: Enchanting [Elwynn Forest]
+					97929,	-- Camping 101: Enchanting [Mulgore]
+					97953,	-- Camping 101: Enchanting [Tirisfal Glades]
+					98284,	-- Camping 101: Enchanting
+					98286,	-- Camping 101: Enchanting
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENCHANTING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230643 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
 			}),
 			q(97941, {	-- Camping 101: Engineering [Teldrassil]
-				lockCriteria = { 1, "spellID", 1230656 },
-				altQuests = { 96058, 97902, 97918, 97930, 97954, 98285, 98287 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96058,	-- Camping 101: Engineering [Dun Morogh]
+					97902,	-- Camping 101: Engineering [Durotar]
+					97918,	-- Camping 101: Engineering [Elwynn Forest]
+					97930,	-- Camping 101: Engineering [Mulgore]
+					97954,	-- Camping 101: Engineering [Tirisfal Glades]
+					98285,	-- Camping 101: Engineering
+					98287,
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				requireSkill = ENGINEERING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230656 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
 			}),
 			q(97942, {	-- Camping 101: First Aid [Teldrassil]
-				lockCriteria = { 1, "spellID", 1230117 },
-				altQuests = { 96047, 97903, 97919, 97931, 97955, 97965 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96047,	-- Camping 101: First Aid [Dun Morogh]
+					97903,	-- Camping 101: First Aid [Durotar]
+					97919,	-- Camping 101: First Aid [Elwynn Forest]
+					97931,	-- Camping 101: First Aid [Mulgore]
+					97955,	-- Camping 101: First Aid [Tirisfal Glades]
+					97965,	-- Camping 101: First Aid
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FIRST_AID,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230117 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230117),	-- First Aid: First Aid Kit
 				},
 			}),
 			q(97943, {	-- Camping 101: Fishing [Teldrassil]
-				lockCriteria = { 1, "spellID", 1229745 },
-				altQuests = { 96050, 97904, 97920, 97932, 97956, 97967 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96050,	-- Camping 101: Fishing [Dun Morogh]
+					97904,	-- Camping 101: Fishing [Durotar]
+					97920,	-- Camping 101: Fishing [Elwynn Forest]
+					97932,	-- Camping 101: Fishing [Mulgore]
+					97956,	-- Camping 101: Fishing [Tirisfal Glades]
+					97967,	-- Camping 101: Fishing
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARNASSUS },
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229745 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229745),	-- Fishing: Fish Bowl
 				},
 			}),
 			q(97944, {	-- Camping 101: Herbalism [Teldrassil]
-				lockCriteria = { 1, "spellID", 1229705 },
-				altQuests = { 96055, 97905, 97921, 97933, 97957, 97968 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96055,	-- Camping 101: Herbalism [Dun Morogh]
+					97905,	-- Camping 101: Herbalism [Durotar]
+					97921,	-- Camping 101: Herbalism [Elwynn Forest]
+					97933,	-- Camping 101: Herbalism [Mulgore]
+					97957,	-- Camping 101: Herbalism [Tirisfal Glades]
+					97968,	-- Camping 101: Herbalism
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = HERBALISM,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229705 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229705),	-- Herbalism: Incense Candle
 				},
 			}),
 			q(97946, {	-- Camping 101: Leatherworking [Teldrassil]
-				lockCriteria = { 1, "spellID", 1229432 },
-				altQuests = { 96031, 97906, 97922, 97934, 97958, 97969 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96031,	-- Camping 101: Leatherworking [Dun Morogh]
+					97906,	-- Camping 101: Leatherworking [Durotar]
+					97922,	-- Camping 101: Leatherworking [Elwynn Forest]
+					97934,	-- Camping 101: Leatherworking [Mulgore]
+					97958,	-- Camping 101: Leatherworking [Tirisfal Glades]
+					97969,	-- Camping 101: Leatherworking
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = LEATHERWORKING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229432 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229432),	-- Leatherworking: Camp Tent
 				},
 			}),
 			q(97948, {	-- Camping 101: Mining [Teldrassil]
-				lockCriteria = { 1, "spellID", 1230161 },
-				altQuests = { 96046, 97907, 97923, 97935, 97959, 97970 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96046,	-- Camping 101: Mining [Dun Morogh]
+					97907,	-- Camping 101: Mining [Durotar]
+					97923,	-- Camping 101: Mining [Elwynn Forest]
+					97935,	-- Camping 101: Mining [Mulgore]
+					97959,	-- Camping 101: Mining [Tirisfal Glades]
+					97970,	-- Camping 101: Mining
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				requireSkill = MINING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230161 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230161),	-- Mining: Lodestone
 				},
 			}),
 			q(97949, {	-- Camping 101: Skinning [Teldrassil]
-				lockCriteria = { 1, "spellID", 1229517 },
-				altQuests = { 96056, 97908, 97924, 97936, 97960, 97971 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96056,	-- Camping 101: Skinning [Dun Morogh]
+					97908,	-- Camping 101: Skinning [Durotar]
+					97924,	-- Camping 101: Skinning [Elwynn Forest]
+					97936,	-- Camping 101: Skinning [Mulgore]
+					97960,	-- Camping 101: Skinning [Tirisfal Glades]
+					97971,	-- Camping 101: Skinning
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = SKINNING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229517 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229517),	-- Skinning: Camp Chair
 				},
 			}),
 			q(97950, {	-- Camping 101: Tailoring [Teldrassil]
-				lockCriteria = { 1, "spellID", 1229504 },
-				altQuests = { 96057, 96102, 97925, 97937, 97961, 97972, 97973 },
-				sourceQuest = 96606,
+				sourceQuest = 96606,	-- The Great Outdoors [Teldrassil]
+				altQuests = {
+					96057,	-- Camping 101: Tailoring [Dun Morogh]
+					96102,	-- Camping 101: Tailoring [Durotar]
+					97925,	-- Camping 101: Tailoring [Elwynn Forest]
+					97937,	-- Camping 101: Tailoring [Mulgore]
+					97961,	-- Camping 101: Tailoring [Tirisfal Glades]
+					97972,	-- Camping 101: Tailoring
+					97973,	-- Camping 101: Tailoring
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARNASSUS },
 				requireSkill = TAILORING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229504 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
@@ -1143,13 +1235,20 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 			}),
 			q(96606, {	-- The Great Outdoors [Teldrassil]
-				altQuests = { 95998, 96101, 96604, 96605, 96607, 96608 },
 				sourceQuest = 96630,	-- The Adventurer [Teldrassil]
+				altQuests = {
+					95998,	-- The Great Outdoors [Elwynn Forest]
+					96101,	-- The Great Outdoors [Zephras Isle]
+					96604,	-- The Great Outdoors [Durotar]
+					96605,	-- The Great Outdoors [Mulgore]
+					96607,	-- The Great Outdoors [Tirisfal Glades]
+					96608,	-- The Great Outdoors [Dun Morogh]
+				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99050, {	-- The Great Tree Provides
 				sourceQuest = 99047,	-- Not Dead Yet

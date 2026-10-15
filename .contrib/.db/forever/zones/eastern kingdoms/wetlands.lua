@@ -112,6 +112,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
+			q(98459, {	-- A Lack of Virtue
+				qg = 254078,	-- Tom "Half-fish" Wilson
+				coord = { 50.53, 70.01, MAP.HILLSBRAD_FOOTHILLS },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 281240,	-- Tom's Gift (QI!)
+			}),
 			q(98282, {	-- Alchemical Hazards
 				qg = 1480,	-- Caitlin Grassman
 				coord = { 11.9, 58.8, MAP.WETLANDS },
@@ -202,6 +210,58 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 					i(6714),	-- Ez-Thro Dynamite
 				},
+			}),
+			q(94497, {	-- Call of Water
+				qg = 258203,	-- Hervdana Saegrund
+				coord = { 65.73, 76.43, MAP.WETLANDS },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 265732,	-- Unfilled Brown Waterskin (QI!)
+				groups = {
+					objective(1, {	-- Full Brown Waterskin
+						provider = { "i", 265734 },	-- Full Brown Waterskin (QI!)
+					}),
+				},
+			}),
+			q(94499, {	-- Call of Water
+				qg = 258203,	-- Hervdana Saegrund
+				coord = { 65.73, 76.43, MAP.WETLANDS },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 265747,	-- Unfilled Red Waterskin (QI!)
+				groups = {
+					objective(1, {	-- Full Red Waterskin
+						provider = { "i", 265748 },	-- Full Red Waterskin (QI!)
+					}),
+				},
+			}),
+			q(94500, {	-- Call of Water
+				qg = 258203,	-- Hervdana Saegrund
+				coord = { 65.73, 76.43, MAP.WETLANDS },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 265772,	-- Unfilled Blue Waterskin (QI!)
+				groups = {
+					objective(1, {	-- Full Blue Waterskin
+						provider = { "i", 265773 },	-- Full Blue Waterskin (QI!)
+					}),
+				},
+			}),
+			q(94501, {	-- Call of Water
+				qg = 258203,	-- Hervdana Saegrund
+				coord = { 65.73, 76.43, MAP.WETLANDS },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 7810,	-- Vial of Purest Water (QI!)
+				groups = { i(6637) },	-- Water Sapta (QI!)
 			}),
 			q(279, {	-- Claws from the Deep
 				qg = 1242,	-- Karl Boran
@@ -943,6 +1003,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(281305),	-- Excavation Cloak
 				},
 			}),
+			q(98461, {	-- Unrequited Love
+				qg = 2913,	-- Archaeologist Hollee <Explorers' League>
+				coord = { 37.44, 41.84, MAP.DARKSHORE },
+				races = { DWARF, NIGHTELF, GNOME, SKYBORNE_ALLIANCE },
+				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 281243,	-- Hollee's Note (QI!)
+			}),
 			q(464, {	-- War Banners
 				sourceQuest = 473,	-- Report to Captain Stoutfist
 				qg = 2104,	-- Captain Stoutfist
@@ -985,76 +1053,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						cr = 1417,	-- Young Wetlands Crocolisk
 					}),
 				},
-			}),
-			q(94497, {	-- Call of Water
-				qg = 258203,	-- Hervdana Saegrund
-				coord = { 65.73, 76.43, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 265732,	-- Unfilled Brown Waterskin
-				lvl = 20,
-				groups = {
-					objective(1, {	-- Full Brown Waterskin
-						provider = { "i", 265734 },
-					}),
-				},
-			}),
-			q(94499, {	-- Call of Water
-				qg = 258203,	-- Hervdana Saegrund
-				coord = { 65.73, 76.43, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 265747,	-- Unfilled Red Waterskin
-				lvl = 20,
-				groups = {
-					objective(1, {	-- Full Red Waterskin
-						provider = { "i", 265748 },
-					}),
-				},
-			}),
-			q(94500, {	-- Call of Water
-				qg = 258203,	-- Hervdana Saegrund
-				coord = { 65.73, 76.43, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 265772,	-- Unfilled Blue Waterskin
-				lvl = 20,
-				groups = {
-					objective(1, {	-- Full Blue Waterskin
-						provider = { "i", 265773 },
-					}),
-				},
-			}),
-			q(94501, {	-- Call of Water
-				qg = 258203,	-- Hervdana Saegrund
-				coord = { 65.73, 76.43, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 7810,	-- Vial of Purest Water
-				lvl = 20,
-				groups = {
-					i(6637),	-- Water Sapta
-				},
-			}),
-			q(98459, {	-- A Lack of Virtue
-				qg = 254078,	-- Tom "Half-fish" Wilson
-				coord = { 50.53, 70.01, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				qi = 281240,	-- Tom's Gift
-				lvl = 18,
-			}),
-			q(98461, {	-- Unrequited Love
-				qg = 2913,	-- Archaeologist Hollee
-				coord = { 37.44, 41.84, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { DWARF, NIGHTELF, GNOME, SKYBORNE_ALLIANCE },
-				qi = 281243,	-- Hollee's Note
-				lvl = 18,
 			}),
 		}),
 		n(RARES, {

@@ -454,14 +454,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(97894, {	-- Business in Auberdine
-				nextQuests = { 982 },
-				isBreadcrumb = true,
 				qg = 7232,	-- Borgus Steelhand <Weapon Crafter>
 				coord = { 59.6, 34.2, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				isBreadcrumb = true,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(7642, {	-- Collection of Goods
 				sourceQuest = 7641,	-- The Work of Grimand Elmore
@@ -652,13 +651,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(98021, {	-- Journey to Sentinel Hill
-				lvl = 7,
-				sourceQuest = 94947,
+				sourceQuest = 94947,	-- Welcome to Azeroth
 				qg = 1748,	-- Highlord Bolvar Fordragon
 				coord = { 80.1, 38.4, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.WESTFALL },
 				races = { SKYBORNE_ALLIANCE },
+				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6184, {	-- Flint Shadowmore
 				sourceQuest = 6183,	-- Honor the Dead

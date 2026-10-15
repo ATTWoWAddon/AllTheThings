@@ -73,6 +73,18 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					}),
 				},
 			}),
+			q(98028, {	-- Baron Marinous
+				provider = { "i", 279275 },	-- Clouded Water Globe (QS!)
+				coord = { 59.01, 22.91, MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				lvl = 17,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279275,	-- Clouded Water Globe (QS!)
+				groups = {
+					i(281291),	-- Mathystra Channeling Orb
+					i(281292),	-- Onu's Patience
+				},
+			}),
 			q(954, {	-- Bashal'Aran (1/4)
 				qg = 3649,	-- Thundris Windweaver
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
@@ -339,6 +351,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(982, {	-- Deep Ocean, Vast Sea
+				sourceQuest = 97894,	-- Business in Auberdine
 				qg = 6301,	-- Gorbold Steelhand
 				coord = { 38.1, 41.2, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -536,6 +549,18 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(5996),	-- Draught of Water Breathing
 				},
 			}),
+			q(87760, {	-- Holy Diver
+				qg = 10219,	-- Gwennyth Bly'Leggonde
+				coord = { 36.62, 45.59, MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Rod of Deep Dominion
+						provider = { "i", 280686 },	-- Rod of Deep Dominion (QI!)
+					}),
+				},
+			}),
 			q(984, {	-- How Big a Threat? (1/2)
 				qg = 3693,	-- Terenthis
 				coord = { 39.4, 43.5, MAP.DARKSHORE },
@@ -554,6 +579,18 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					}),
 					objective(2, {	-- 0/5 Blackwood Windtalker slain
 						provider = { "n", 2324 },	-- Blackwood Windtalker
+					}),
+				},
+			}),
+			q(98042, {	-- It's All Fun and Games Until...
+				provider = { "o", 12666 },	-- Twilight Tome
+				coord = { 38.54, 86.05, MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Peerless Eye
+						provider = { "i", 279279 },	-- Peerless Eye (QI!)
 					}),
 				},
 			}),
@@ -655,6 +692,24 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 38.7, 86.1, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+			}),
+			q(98013, {	-- Swelling Forces
+				qg = 270269,	-- Arbal <Ancient of War>
+				coord = { 43.71, 76.51, MAP.DARKSHORE },
+				races = { DWARF, NIGHTELF, GNOME, SKYBORNE_ALLIANCE },
+				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Stormscale Myrmidon
+						provider = { "n", 2181 },	-- Stormscale Myrmidon
+					}),
+					objective(2, {	-- Stormscale Sorceress
+						provider = { "n", 2182 },	-- Stormscale Sorceress
+					}),
+					objective(3, {	-- Stormscale Warrior
+						provider = { "n", 2183 },	-- Stormscale Warrior
+					}),
+				},
 			}),
 			q(2139, {	-- Tharnariun's Hope
 				sourceQuest = 2138,	-- Cleansing of the Infected
@@ -1004,62 +1059,6 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(15398),	-- Sandcomber Boots
 					i(15399),	-- Dryweed Belt
 					i(15400),	-- Clamshell Bracers
-				},
-			}),
-			q(87760, {	-- Holy Diver
-				qg = 10219,	-- Gwennyth Bly'Leggonde
-				coord = { 36.62, 45.59, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 15,
-				groups = {
-					objective(1, {	-- Rod of Deep Dominion
-						provider = { "i", 280686 },
-					}),
-					i(5996),	-- Elixir of Water Breathing
-					i(6372),	-- Swim Speed Potion
-				},
-			}),
-			q(98013, {	-- Swelling Forces
-				qg = 270269,	-- Arbal
-				coord = { 43.71, 76.51, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { DWARF, NIGHTELF, GNOME, SKYBORNE_ALLIANCE },
-				lvl = 12,
-				groups = {
-					objective(1, {	-- Stormscale Myrmidon
-						provider = { "n", 2181 },
-					}),
-					objective(2, {	-- Stormscale Sorceress
-						provider = { "n", 2182 },
-					}),
-					objective(3, {	-- Stormscale Warrior
-						provider = { "n", 2183 },
-					}),
-				},
-			}),
-			q(98028, {	-- Baron Marinous
-				provider = { "i", 279275 },	-- Clouded Water Globe
-				coord = { 59.01, 22.91, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				qi = 279275,	-- Clouded Water Globe
-				lvl = 17,
-				groups = {
-					i(281291),	-- Mathystra Channeling Orb
-					i(281292),	-- Onu's Patience
-				},
-			}),
-			q(98042, {	-- It's All Fun and Games Until...
-				provider = { "o", 12666 },	-- Twilight Tome
-				coord = { 38.54, 86.05, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 12,
-				groups = {
-					objective(1, {	-- Peerless Eye
-						provider = { "i", 279279 },
-					}),
 				},
 			}),
 		}),

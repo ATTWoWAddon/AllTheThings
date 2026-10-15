@@ -230,12 +230,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(86585, {	-- Banner of the Fallen
-				lvl = 10,
 				qg = 269153,	-- Mountaineer Ylva
-				qi = 253247,	-- Banner of Ironforge
 				coord = { 31.8, 86.2, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 253247,	-- Banner of Ironforge (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Headsplitter slain
 						provider = { "n", 269185 },	-- Headsplitter
@@ -280,6 +280,73 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						coord = { 54.3, 26.5, MAP.LOCH_MODAN },
 					}),
 					i(12522),	-- Bingles' Flying Gloves
+				},
+			}),
+			q(94466, {	-- Call of Fire
+				sourceQuest = 94465,	-- Call of Fire
+				qg = 257808,	-- Braldir Ashmantle
+				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Fire Tar
+						provider = { "i", 5026 },	-- Fire Tar (QI!)
+					}),
+					objective(2, {	-- Reagent Pouch
+						provider = { "i", 6652 },	-- Reagent Pouch (QI!)
+					}),
+					i(6636),	-- Fire Sapta (QI!)
+				},
+			}),
+			q(94467, {	-- Call of Fire
+				sourceQuest = 94466,	-- Call of Fire
+				qg = 257808,	-- Braldir Ashmantle
+				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 6653,	-- Torch of the Dormant Flame (QI!)
+				groups = {
+					objective(1, {	-- Glowing Ember
+						provider = { "i", 6655 },	-- Glowing Ember (QI!)
+					}),
+					i(6654),	-- Torch of the Eternal Flame (QI!)
+				},
+			}),
+			q(94468, {	-- Call of Fire
+				sourceQuest = 94467,	-- Call of Fire
+				provider = { "o", 61934 },	-- Brazier of the Dormant Flame
+				coord = { 31.79, 64.52, MAP.LOCH_MODAN },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 6654,	-- Torch of the Eternal Flame (QI!)
+				groups = { i(5176) },	-- Fire Totem
+			}),
+			q(94495, {	-- Call of Water
+				qg = 258043,	-- Norric Lochthane
+				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(94502, {	-- Call of Water
+				qg = 258043,	-- Norric Lochthane
+				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 7811,	-- Remaining Drops of Purest Water (QI!)
+				groups = {
+					objective(1, {	-- Corrupt Manifestation's Bracers
+						provider = { "i", 7812 },	-- Corrupt Manifestation's Bracers (QI!)
+					}),
 				},
 			}),
 			q(385, {	-- Crocolisk Hunting
@@ -350,6 +417,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(2776),	-- Gold Ore
 					i(1529),	-- Jade
 				},
+			}),
+			q(94473, {	-- Fire Sapta
+				sourceQuest = 94466,	-- Call of Fire
+				qg = 257808,	-- Braldir Ashmantle
+				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+				repeatable = true,
+				lockCriteria = { 1, "questID", 94467 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = { i(6636) },	-- Fire Sapta (QI!)
 			}),
 			q(297, {	-- Gathering Idols
 				sourceQuest = 436,	-- Ironband's Excavation
@@ -565,14 +644,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(86614, {	-- Silver of the Waves
 				provider = { "o", 665289 },	-- Discarded Fishing Toolbox
-				qi = 278051,	-- Monogrammed Silver Hair Clip
 				coord = { 50.6, 53.4, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
-				groups = {
-					i(281256),	-- Repurposed Hair Band
-				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 278051,	-- Monogrammed Silver Hair Clip (QI!)
+				groups = { i(281256) },	-- Repurposed Hair Band
 			}),
 			q(86667, {	-- Snowbound
 				qg = 49808,	-- Grenhild Darktalon
@@ -728,89 +805,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(270019, {	-- Loch Walkers
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-				},
-			}),
-			q(94495, {	-- Call of Water
-				qg = 258043,	-- Norric Lochthane
-				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				lvl = 20,
-			}),
-			q(94466, {	-- Call of Fire
-				sourceQuest = 94465,
-				qg = 257808,	-- Braldir Ashmantle
-				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- Fire Tar
-						provider = { "i", 5026 },
-					}),
-					objective(2, {	-- Reagent Pouch
-						provider = { "i", 6652 },
-					}),
-					i(6636),	-- Fire Sapta
-				},
-			}),
-			q(94467, {	-- Call of Fire
-				sourceQuest = 94466,
-				qg = 257808,	-- Braldir Ashmantle
-				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 6653,	-- Torch of the Dormant Flame
-				lvl = 10,
-				groups = {
-					objective(1, {	-- Glowing Ember
-						provider = { "i", 6655 },
-					}),
-					i(6654),	-- Torch of the Eternal Flame
-				},
-			}),
-			q(94468, {	-- Call of Fire
-				sourceQuest = 94467,
-				provider = { "o", 61934 },	-- Brazier of the Dormant Flame
-				coord = { 31.79, 64.52, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 6654,	-- Torch of the Eternal Flame
-				lvl = 10,
-				groups = {
-					i(5176),	-- Fire Totem
-				},
-			}),
-			q(94502, {	-- Call of Water
-				qg = 258043,	-- Norric Lochthane
-				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 7811,	-- Remaining Drops of Purest Water
-				lvl = 20,
-				groups = {
-					objective(1, {	-- Corrupt Manifestation's Bracers
-						provider = { "i", 7812 },
-					}),
-				},
-			}),
-			q(94473, {	-- Fire Sapta
-				sourceQuest = 94466,
-				qg = 257808,	-- Braldir Ashmantle
-				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				lockCriteria = { 1, "questID", 94467 },
-				repeatable = true,
-				lvl = 10,
-				groups = {
-					i(6636),	-- Fire Sapta
 				},
 			}),
 		}),

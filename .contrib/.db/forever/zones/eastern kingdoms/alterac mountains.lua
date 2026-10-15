@@ -610,12 +610,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 			q(94912, {	-- Child of Nature
-				classes = { DRUID },
-				qg = 270459,	-- Alfina Nightgaze
+				qg = 270459,	-- Alfina Nightgaze <Druid Trainer>
 				coord = { 11.8, 56.6, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
+				classes = { DRUID },
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99191, {	-- A Donation of Wool
 				qg = 276170,	-- Belanaa Windveil

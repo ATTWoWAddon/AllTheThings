@@ -2564,6 +2564,54 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			},
+			q(95494, {	-- Bruised Pride and Lion Hides
+				qg = 3682,	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Savannah Lion Hide
+						provider = { "i", 269715 },	-- Savannah Lion Hide (QI!)
+					}),
+				},
+			}),
+			q(95774, {	-- Her Name Is Olgra
+				qg = 3432,	-- Mankrik
+				coord = { 51.95, 31.58, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Olgra's Adornments
+						provider = { "i", 277277 },	-- Olgra's Adornments (QI!)
+					}),
+				},
+			}),
+			q(98024, {	-- Journey to the Crossroads
+				sourceQuest = 95350,	-- Welcome to Azeroth
+				qg = 4949,	-- Thrall <Warchief>
+				coord = { 31.73, 37.82, MAP.ORGRIMMAR },
+				races = { SKYBORNE_HORDE },
+				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(98094, {	-- Scout Support
+				qg = 2215,	-- High Executor Darthalia
+				coord = { 62.33, 20.45, MAP.HILLSBRAD_FOOTHILLS },
+				races = HORDE_ONLY,
+				lvl = 19,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279394,	-- Darthalia's Orders (QI!)
+			}),
+			q(95495, {	-- The Hermit Tanner
+				qg = 3682,	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 269718,	-- Bundle of Hides (QI!)
+			}),
 			q(1824, {	-- Trial at the Field of Giants
 				sourceQuest = 1823,	-- Speak with Ruga
 				qg = 6394,	-- Ruga Ragetotem
@@ -2615,6 +2663,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			q(95621, {	-- Trouble in the Valley
+				qg = 261366,	-- Walton <Tanner>
+				coord = { 42.01, 11.44, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Benedict's Orders
+						provider = { "i", 270151 },	-- Benedict's Orders (QI!)
+					}),
+				},
+			}),
 			q(1839, {	-- Ula'elek and the Brutal Gauntlets
 				sourceQuest = 1838,	-- Brutal Armor
 				qg = 5878,	-- Thun'grim Firegaze
@@ -2653,6 +2713,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_ONLY,
 				classes = { WARRIOR },
 				lvl = 10,
+			}),
+			q(95507, {	-- Vrang's Game
+				qg = 3682,	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Trapped Game
+						provider = { "i", 269719 },	-- Trapped Game (QI!)
+					}),
+				},
 			}),
 			q(895, {	-- WANTED: Baron Longshore
 				provider = { "o", 3972 },	-- WANTED
@@ -2741,95 +2813,23 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				repeatable = true,
 				lvl = 14,
 			}),
-			q(95494, {	-- Bruised Pride and Lion Hides
-				qg = 3682,	-- Vrang Wildgore
-				coord = { 43.8, 12.21, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
-				lvl = 14,
-				groups = {
-					objective(1, {	-- Savannah Lion Hide
-						provider = { "i", 269715 },
-					}),
-				},
-			}),
-			q(95495, {	-- The Hermit Tanner
-				qg = 3682,	-- Vrang Wildgore
-				coord = { 43.8, 12.21, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
-				qi = 269718,	-- Bundle of Hides
-				lvl = 14,
-			}),
-			q(95507, {	-- Vrang's Game
-				qg = 3682,	-- Vrang Wildgore
-				coord = { 43.8, 12.21, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
-				lvl = 14,
-				groups = {
-					objective(1, {	-- Trapped Game
-						provider = { "i", 269719 },
-					}),
-				},
-			}),
-			q(95621, {	-- Trouble in the Valley
-				qg = 261366,	-- Walton
-				coord = { 42.01, 11.44, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
-				lvl = 14,
-				groups = {
-					objective(1, {	-- Benedict's Orders
-						provider = { "i", 270151 },
-					}),
-				},
-			}),
-			q(95774, {	-- Her Name Is Olgra
-				qg = 3432,	-- Mankrik
-				coord = { 51.95, 31.58, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
-				lvl = 14,
-				groups = {
-					objective(1, {	-- Olgra's Adornments
-						provider = { "i", 277277 },
-					}),
-				},
-			}),
 			q(97250, {	-- Wrongly Blamed, Justly Corrected
 				qg = 5911,	-- Grunt Logmar
 				coord = { 44.62, 59.27, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
+				races = HORDE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Encroaching Soldier
-						provider = { "n", 268622 },
+						provider = { "n", 268622 },	-- Encroaching Soldier
 					}),
 					objective(2, {	-- Outraged Pillager
-						provider = { "n", 268623 },
+						provider = { "n", 268623 },	-- Outraged Pillager
 					}),
 					i(277286),	-- Encroacher's Claim
 					i(277288),	-- Pathfinder's Clearway
 					i(277289),	-- Traveler's Shawl
 				},
-			}),
-			q(98024, {	-- Journey to the Crossroads
-				sourceQuest = 95350,
-				qg = 4949,	-- Thrall
-				coord = { 31.73, 37.82, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { SKYBORNE_HORDE },
-				lvl = 7,
-			}),
-			q(98094, {	-- Scout Support
-				qg = 2215,	-- High Executor Darthalia
-				coord = { 62.33, 20.45, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC, UNDEAD, TAUREN, TROLL, SKYBORNE_HORDE },
-				qi = 279394,	-- Darthalia's Orders
-				lvl = 19,
 			}),
 		}),
 		n(RARES, {

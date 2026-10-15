@@ -196,16 +196,21 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						classes = { WARRIOR },
 					}),
 					q(96659, {	-- The Adventurer [Mulgore]
-						nextQuests = { 96605 },
-						isBreadcrumb = true,
-						altQuests = { 96627, 96628, 96630, 96638, 96652, 96656 },
-						--["sourceQuest"] = ,	-- 
+						altQuests = {
+							96627,	-- The Adventurer [Elwynn Forest]
+							96628,	-- The Adventurer [Dun Morogh]
+							96630,	-- The Adventurer [Teldrassil]
+							96638,	-- The Adventurer [Zephras Isle]
+							96652,	-- The Adventurer [Durotar]
+							96656,	-- The Adventurer [Tirisfal Glades]
+						},
 						qg = 2981,	-- Chief Hawkwind
-						qi = 275019,	-- Supply Bundle (PQI!)
 						coord = { 44.2, 76.0, MAP.MULGORE },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
 						lvl = 4,
+						isBreadcrumb = true,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275019,	-- Supply Bundle (QI!)
 					}),
 					q(780, {	-- The Battleboars
 						sourceQuest = 750,	-- The Hunt Continues
@@ -359,168 +364,255 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				races = HORDE_ONLY,
 			}),
 			q(97927, {	-- Camping 101: Alchemy [Mulgore]
-				lockCriteria = { 1, "spellID", 1230564 },
-				altQuests = { 96045, 97899, 97915, 97938, 97951, 97963 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96045,	-- Camping 101: Alchemy [Dun Morogh]
+					97899,	-- Camping 101: Alchemy [Durotar]
+					97915,	-- Camping 101: Alchemy [Elwynn Forest]
+					97938,	-- Camping 101: Alchemy [Teldrassil]
+					97951,	-- Camping 101: Alchemy [Tirisfal Glades]
+					97963,	-- Camping 101: Alchemy
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.THUNDER_BLUFF },
 				requireSkill = ALCHEMY,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230564 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230564),	-- Alchemy: Mana Well
 				},
 			}),
 			q(97928, {	-- Camping 101: Blacksmithing [Mulgore]
-				lockCriteria = { 1, "spellID", 1230171 },
-				altQuests = { 96044, 97900, 97916, 97939, 97952, 97964 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96044,	-- Camping 101: Blacksmithing [Dun Morogh]
+					97900,	-- Camping 101: Blacksmithing [Durotar]
+					97916,	-- Camping 101: Blacksmithing [Elwynn Forest]
+					97939,	-- Camping 101: Blacksmithing [Teldrassil]
+					97952,	-- Camping 101: Blacksmithing [Tirisfal Glades]
+					97964,	-- Camping 101: Blacksmithing
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.THUNDER_BLUFF },
 				requireSkill = BLACKSMITHING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230171 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
 				},
 			}),
 			q(96661, {	-- Camping 101: Cooking [Mulgore]
-				altQuests = { 96626, 96629, 96634, 96646, 96655, 96658 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96626,	-- Camping 101: Cooking [Elwynn Forest]
+					96629,	-- Camping 101: Cooking [Dun Morogh]
+					96634,	-- Camping 101: Cooking [Teldrassil]
+					96646,	-- Camping 101: Cooking
+					96655,	-- Camping 101: Cooking [Durotar]
+					96658,	-- Camping 101: Cooking [Tirisfal Glades]
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(97929, {	-- Camping 101: Enchanting [Mulgore]
-				lockCriteria = { 1, "spellID", 1230643 },
-				altQuests = { 96059, 97901, 97917, 97940, 97953, 98284, 98286 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96059,	-- Camping 101: Enchanting [Dun Morogh]
+					97901,	-- Camping 101: Enchanting [Durotar]
+					97917,	-- Camping 101: Enchanting [Elwynn Forest]
+					97940,	-- Camping 101: Enchanting [Teldrassil]
+					97953,	-- Camping 101: Enchanting [Tirisfal Glades]
+					98284,	-- Camping 101: Enchanting
+					98286,	-- Camping 101: Enchanting
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENCHANTING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230643 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
 			}),
 			q(97930, {	-- Camping 101: Engineering [Mulgore]
-				lockCriteria = { 1, "spellID", 1230656 },
-				altQuests = { 96058, 97902, 97918, 97941, 97954, 98285, 98287 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96058,	-- Camping 101: Engineering [Dun Morogh]
+					97902,	-- Camping 101: Engineering [Durotar]
+					97918,	-- Camping 101: Engineering [Elwynn Forest]
+					97941,	-- Camping 101: Engineering [Teldrassil]
+					97954,	-- Camping 101: Engineering [Tirisfal Glades]
+					98285,	-- Camping 101: Engineering
+					98287,
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENGINEERING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230656 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
 			}),
 			q(97931, {	-- Camping 101: First Aid [Mulgore]
-				lockCriteria = { 1, "spellID", 1230117 },
-				altQuests = { 96047, 97903, 97919, 97942, 97955, 97965 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96047,	-- Camping 101: First Aid [Dun Morogh]
+					97903,	-- Camping 101: First Aid [Durotar]
+					97919,	-- Camping 101: First Aid [Elwynn Forest]
+					97942,	-- Camping 101: First Aid [Teldrassil]
+					97955,	-- Camping 101: First Aid [Tirisfal Glades]
+					97965,	-- Camping 101: First Aid
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FIRST_AID,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230117 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230117),	-- First Aid: First Aid Kit
 				},
 			}),
 			q(97932, {	-- Camping 101: Fishing [Mulgore]
-				lockCriteria = { 1, "spellID", 1229745 },
-				altQuests = { 96050, 97904, 97920, 97943, 97956, 97967 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96050,	-- Camping 101: Fishing [Dun Morogh]
+					97904,	-- Camping 101: Fishing [Durotar]
+					97920,	-- Camping 101: Fishing [Elwynn Forest]
+					97943,	-- Camping 101: Fishing [Teldrassil]
+					97956,	-- Camping 101: Fishing [Tirisfal Glades]
+					97967,	-- Camping 101: Fishing
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FISHING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229745 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229745),	-- Fishing: Fish Bowl
 				},
 			}),
 			q(97933, {	-- Camping 101: Herbalism [Mulgore]
-				lockCriteria = { 1, "spellID", 1229705 },
-				altQuests = { 96055, 97905, 97921, 97944, 97957, 97968 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96055,	-- Camping 101: Herbalism [Dun Morogh]
+					97905,	-- Camping 101: Herbalism [Durotar]
+					97921,	-- Camping 101: Herbalism [Elwynn Forest]
+					97944,	-- Camping 101: Herbalism [Teldrassil]
+					97957,	-- Camping 101: Herbalism [Tirisfal Glades]
+					97968,	-- Camping 101: Herbalism
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.THUNDER_BLUFF },
 				requireSkill = HERBALISM,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229705 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229705),	-- Herbalism: Incense Candle
 				},
 			}),
 			q(97934, {	-- Camping 101: Leatherworking [Mulgore]
-				lockCriteria = { 1, "spellID", 1229432 },
-				altQuests = { 96031, 97906, 97922, 97946, 97958, 97969 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96031,	-- Camping 101: Leatherworking [Dun Morogh]
+					97906,	-- Camping 101: Leatherworking [Durotar]
+					97922,	-- Camping 101: Leatherworking [Elwynn Forest]
+					97946,	-- Camping 101: Leatherworking [Teldrassil]
+					97958,	-- Camping 101: Leatherworking [Tirisfal Glades]
+					97969,	-- Camping 101: Leatherworking
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = LEATHERWORKING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229432 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229432),	-- Leatherworking: Camp Tent
 				},
 			}),
 			q(97935, {	-- Camping 101: Mining [Mulgore]
-				lockCriteria = { 1, "spellID", 1230161 },
-				altQuests = { 96046, 97907, 97923, 97948, 97959, 97970 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96046,	-- Camping 101: Mining [Dun Morogh]
+					97907,	-- Camping 101: Mining [Durotar]
+					97923,	-- Camping 101: Mining [Elwynn Forest]
+					97948,	-- Camping 101: Mining [Teldrassil]
+					97959,	-- Camping 101: Mining [Tirisfal Glades]
+					97970,	-- Camping 101: Mining
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.THUNDER_BLUFF },
 				requireSkill = MINING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230161 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230161),	-- Mining: Lodestone
 				},
 			}),
 			q(97936, {	-- Camping 101: Skinning [Mulgore]
-				lockCriteria = { 1, "spellID", 1229517 },
-				altQuests = { 96056, 97908, 97924, 97949, 97960, 97971 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96056,	-- Camping 101: Skinning [Dun Morogh]
+					97908,	-- Camping 101: Skinning [Durotar]
+					97924,	-- Camping 101: Skinning [Elwynn Forest]
+					97949,	-- Camping 101: Skinning [Teldrassil]
+					97960,	-- Camping 101: Skinning [Tirisfal Glades]
+					97971,	-- Camping 101: Skinning
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = SKINNING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229517 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229517),	-- Skinning: Camp Chair
 				},
 			}),
 			q(97937, {	-- Camping 101: Tailoring [Mulgore]
-				lockCriteria = { 1, "spellID", 1229504 },
-				altQuests = { 96057, 96102, 97925, 97950, 97961, 97972, 97973 },
 				sourceQuest = 96605,	-- The Great Outdoors [Mulgore]
+				altQuests = {
+					96057,	-- Camping 101: Tailoring [Dun Morogh]
+					96102,	-- Camping 101: Tailoring [Durotar]
+					97925,	-- Camping 101: Tailoring [Elwynn Forest]
+					97950,	-- Camping 101: Tailoring [Teldrassil]
+					97961,	-- Camping 101: Tailoring [Tirisfal Glades]
+					97972,	-- Camping 101: Tailoring
+					97973,	-- Camping 101: Tailoring
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = TAILORING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229504 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
@@ -541,6 +633,14 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					i(281059),	-- Loose Clearcutter Blade
 					i(282285),	-- Clearcutter Key
 				},
+			}),
+			q(94911, {	-- Child of Nature
+				qg = 259118,	-- Muln Earthfury <Earthen Ring>
+				coord = { 33.4, 22.5, MAP.MULGORE },
+				races = { SKYBORNE_HORDE },
+				classes = { DRUID },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(743, {	-- Dangers of the Windfury
 				qg = 2985,	-- Ruul Eagletalon
@@ -838,16 +938,16 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(76156, {	-- Stalk With The Earthmother
-				classes = { WARRIOR, SHAMAN, DRUID },
-				qg = 205729,	-- Boarton Shadetotem
-				qi = 206159,	-- Venture Co Disguise
+				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { ORC, TAUREN, TROLL },
+				classes = { WARRIOR, SHAMAN, DRUID },
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 206159,	-- Venture Co Disguise (QI!)
 				groups = {
 					objective(1, {	-- 0/5 Seaforium Mining Charge
-						provider = { "i", 206157 },	-- Seaforium Mining Charge
+						provider = { "i", 206157 },	-- Seaforium Mining Charge (QI!)
 					}),
 				},
 			}),
@@ -871,16 +971,16 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			q(76240, {	-- Stalk With The Earthmother
 				sourceQuest = 76160,	-- Stalk With The Earthmother
-				qg = 205729,	-- Boarton Shadetotem
-				qi = 206344,	-- Knife Set
+				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				classes = { SHAMAN },
 				races = HORDE_ONLY,
+				classes = { SHAMAN },
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 206344,	-- Knife Set (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
-						provider = { "i", 206345 },	-- Fish Chunks
+						provider = { "i", 206345 },	-- Fish Chunks (QI!)
 					}),
 					i(277988),	-- Hoof-Holstered Blade
 					i(278002),	-- Valley Cosh
@@ -1030,13 +1130,20 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96605, {	-- The Great Outdoors [Mulgore]
-				altQuests = { 95998, 96101, 96604, 96606, 96607, 96608 },
 				sourceQuest = 96659,	-- The Adventurer [Mulgore]
+				altQuests = {
+					95998,	-- The Great Outdoors [Elwynn Forest]
+					96101,	-- The Great Outdoors [Zephras Isle]
+					96604,	-- The Great Outdoors [Durotar]
+					96606,	-- The Great Outdoors [Teldrassil]
+					96607,	-- The Great Outdoors [Tirisfal Glades]
+					96608,	-- The Great Outdoors [Dun Morogh]
+				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6065, {	-- The Hunter's Path [Thunder Bluff]
 				qg = 3038,	-- Kary Thunderhorn <Hunter Trainer>
@@ -1340,14 +1447,6 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 49.0, 62.0, MAP.MULGORE },
 					}),
 				},
-			}),
-			q(94911, {	-- Child of Nature
-				qg = 259118,	-- Muln Earthfury
-				coord = { 33.4, 22.5, MAP.MULGORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { SKYBORNE_HORDE },
-				classes = { DRUID },
-				lvl = 10,
 			}),
 		}),
 		n(RARES, {

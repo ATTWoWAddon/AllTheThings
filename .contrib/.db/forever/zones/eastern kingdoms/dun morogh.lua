@@ -186,6 +186,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 							i(2547),	-- Boar Handler Gloves
 						},
 					}),
+					q(94472, {	-- Earth Sapta
+						sourceQuest = 94373,	-- Call of Earth (1/3)
+						qg = 257446,	-- Teo Hammerstorm <Shaman Trainer>
+						coord = { 28.79, 66.18, MAP.DUN_MOROGH },
+						races = ALLIANCE_ONLY,
+						classes = { SHAMAN },
+						lvl = 4,
+						repeatable = true,
+						lockCriteria = { 1, "questID", 94374 },
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						groups = { i(6635) },	-- Earth Sapta (QI!)
+					}),
 					q(3113, {	-- Encrypted Memorandum
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
@@ -238,6 +250,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 							}),
 							i(277977),	-- Canvas Latchbag
 						},
+					}),
+					q(98574, {	-- Hallowed Memorandum
+						sourceQuest = 179,	-- Dwarven Outfitters
+						qg = 658,	-- Sten Stoutarm
+						coord = { 29.93, 71.2, MAP.DUN_MOROGH },
+						races = { GNOME },
+						classes = { PRIEST },
+						lvl = 1,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 282338,	-- Hallowed Memorandum (QI!)
 					}),
 					q(3110, {	-- Hallowed Rune
 						sourceQuest = 179,	-- Dwarven Outfitters
@@ -303,16 +325,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						classes = { WARLOCK },
 					}),
 					q(96628, {	-- The Adventurer [Dun Morogh]
-						nextQuests = { 96608 },
-						isBreadcrumb = true,
-						altQuests = { 96627, 96630, 96638, 96652, 96656, 96659 },
 						sourceQuest = 218,	-- The Stolen Journal
+						altQuests = {
+							96627,	-- The Adventurer [Elwynn Forest]
+							96630,	-- The Adventurer [Teldrassil]
+							96638,	-- The Adventurer [Zephras Isle]
+							96652,	-- The Adventurer [Durotar]
+							96656,	-- The Adventurer [Tirisfal Glades]
+							96659,	-- The Adventurer [Mulgore]
+						},
 						qg = 1965,	-- Mountaineer Thalos
-						qi = 275019,	-- Supply Bundle (PQI!)
 						coord = { 33.4, 71.8, MAP.DUN_MOROGH },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
+						isBreadcrumb = true,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275019,	-- Supply Bundle (QI!)
 					}),
 					q(183, {	-- The Boar Hunter
 						qg = 714,	-- Talin Keeneye
@@ -500,13 +528,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96408, {	-- A Vistor to Dun Morogh
-				nextQuests = { 96392 },
-				isBreadcrumb = true,
 				qg = 1376,	-- Beldin Steelgrill
 				coord = { 50.4, 49.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 10,
+				isBreadcrumb = true,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(5541, {	-- Ammo for Rumbleshot
 				qg = 1694,	-- Loslor Rudge
@@ -586,182 +613,268 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96045, {	-- Camping 101: Alchemy [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1230564 },
-				altQuests = { 97899, 97915, 97927, 97938, 97951, 97963 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97899,	-- Camping 101: Alchemy [Durotar]
+					97915,	-- Camping 101: Alchemy [Elwynn Forest]
+					97927,	-- Camping 101: Alchemy [Mulgore]
+					97938,	-- Camping 101: Alchemy [Teldrassil]
+					97951,	-- Camping 101: Alchemy [Tirisfal Glades]
+					97963,	-- Camping 101: Alchemy
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230564 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230564),	-- Alchemy: Mana Well
 				},
 			}),
 			q(96044, {	-- Camping 101: Blacksmithing [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1230171 },
-				altQuests = { 97900, 97916, 97928, 97939, 97952, 97964 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97900,	-- Camping 101: Blacksmithing [Durotar]
+					97916,	-- Camping 101: Blacksmithing [Elwynn Forest]
+					97928,	-- Camping 101: Blacksmithing [Mulgore]
+					97939,	-- Camping 101: Blacksmithing [Teldrassil]
+					97952,	-- Camping 101: Blacksmithing [Tirisfal Glades]
+					97964,	-- Camping 101: Blacksmithing
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = BLACKSMITHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230171 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
 				},
 			}),
 			q(96629, {	-- Camping 101: Cooking [Dun Morogh]
-				altQuests = { 96626, 96634, 96646, 96655, 96658, 96661 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					96626,	-- Camping 101: Cooking [Elwynn Forest]
+					96634,	-- Camping 101: Cooking [Teldrassil]
+					96646,	-- Camping 101: Cooking
+					96655,	-- Camping 101: Cooking [Durotar]
+					96658,	-- Camping 101: Cooking [Tirisfal Glades]
+					96661,	-- Camping 101: Cooking [Mulgore]
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(96059, {	-- Camping 101: Enchanting [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1230643 },
-				altQuests = { 97901, 97917, 97929, 97940, 97953, 98284, 98286 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97901,	-- Camping 101: Enchanting [Durotar]
+					97917,	-- Camping 101: Enchanting [Elwynn Forest]
+					97929,	-- Camping 101: Enchanting [Mulgore]
+					97940,	-- Camping 101: Enchanting [Teldrassil]
+					97953,	-- Camping 101: Enchanting [Tirisfal Glades]
+					98284,	-- Camping 101: Enchanting
+					98286,	-- Camping 101: Enchanting
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENCHANTING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230643 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
 			}),
 			q(96058, {	-- Camping 101: Engineering [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1230656 },
-				altQuests = { 97902, 97918, 97930, 97941, 97954, 98285, 98287 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97902,	-- Camping 101: Engineering [Durotar]
+					97918,	-- Camping 101: Engineering [Elwynn Forest]
+					97930,	-- Camping 101: Engineering [Mulgore]
+					97941,	-- Camping 101: Engineering [Teldrassil]
+					97954,	-- Camping 101: Engineering [Tirisfal Glades]
+					98285,	-- Camping 101: Engineering
+					98287,
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENGINEERING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230656 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
 			}),
 			q(96047, {	-- Camping 101: First Aid [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1230117 },
-				altQuests = { 97903, 97919, 97931, 97942, 97955, 97965 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97903,	-- Camping 101: First Aid [Durotar]
+					97919,	-- Camping 101: First Aid [Elwynn Forest]
+					97931,	-- Camping 101: First Aid [Mulgore]
+					97942,	-- Camping 101: First Aid [Teldrassil]
+					97955,	-- Camping 101: First Aid [Tirisfal Glades]
+					97965,	-- Camping 101: First Aid
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FIRST_AID,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230117 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230117),	-- First Aid: First Aid Kit
 				},
 			}),
 			q(96050, {	-- Camping 101: Fishing [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1229745 },
-				altQuests = { 97904, 97920, 97932, 97943, 97956, 97967 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97904,	-- Camping 101: Fishing [Durotar]
+					97920,	-- Camping 101: Fishing [Elwynn Forest]
+					97932,	-- Camping 101: Fishing [Mulgore]
+					97943,	-- Camping 101: Fishing [Teldrassil]
+					97956,	-- Camping 101: Fishing [Tirisfal Glades]
+					97967,	-- Camping 101: Fishing
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229745 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229745),	-- Fishing: Fish Bowl
 				},
 			}),
 			q(96055, {	-- Camping 101: Herbalism [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1229705 },
-				altQuests = { 97905, 97921, 97933, 97944, 97957, 97968 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97905,	-- Camping 101: Herbalism [Durotar]
+					97921,	-- Camping 101: Herbalism [Elwynn Forest]
+					97933,	-- Camping 101: Herbalism [Mulgore]
+					97944,	-- Camping 101: Herbalism [Teldrassil]
+					97957,	-- Camping 101: Herbalism [Tirisfal Glades]
+					97968,	-- Camping 101: Herbalism
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = HERBALISM,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229705 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229705),	-- Herbalism: Incense Candle
 				},
 			}),
 			q(96031, {	-- Camping 101: Leatherworking [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1229432 },
-				altQuests = { 97906, 97922, 97934, 97946, 97958, 97969 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97906,	-- Camping 101: Leatherworking [Durotar]
+					97922,	-- Camping 101: Leatherworking [Elwynn Forest]
+					97934,	-- Camping 101: Leatherworking [Mulgore]
+					97946,	-- Camping 101: Leatherworking [Teldrassil]
+					97958,	-- Camping 101: Leatherworking [Tirisfal Glades]
+					97969,	-- Camping 101: Leatherworking
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = LEATHERWORKING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229432 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229432),	-- Leatherworking: Camp Tent
 				},
 			}),
 			q(96046, {	-- Camping 101: Mining [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1230161 },
-				altQuests = { 97907, 97923, 97935, 97948, 97959, 97970 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97907,	-- Camping 101: Mining [Durotar]
+					97923,	-- Camping 101: Mining [Elwynn Forest]
+					97935,	-- Camping 101: Mining [Mulgore]
+					97948,	-- Camping 101: Mining [Teldrassil]
+					97959,	-- Camping 101: Mining [Tirisfal Glades]
+					97970,	-- Camping 101: Mining
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = MINING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230161 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230161),	-- Mining: Lodestone
 				},
 			}),
 			q(96056, {	-- Camping 101: Skinning [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1229517 },
-				altQuests = { 97908, 97924, 97936, 97949, 97960, 97971 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					97908,	-- Camping 101: Skinning [Durotar]
+					97924,	-- Camping 101: Skinning [Elwynn Forest]
+					97936,	-- Camping 101: Skinning [Mulgore]
+					97949,	-- Camping 101: Skinning [Teldrassil]
+					97960,	-- Camping 101: Skinning [Tirisfal Glades]
+					97971,	-- Camping 101: Skinning
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = SKINNING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229517 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229517),	-- Skinning: Camp Chair
 				},
 			}),
 			q(96057, {	-- Camping 101: Tailoring [Dun Morogh]
-				lockCriteria = { 1, "spellID", 1229504 },
-				altQuests = { 96102, 97925, 97937, 97950, 97961, 97972, 97973 },
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
+				altQuests = {
+					96102,	-- Camping 101: Tailoring [Durotar]
+					97925,	-- Camping 101: Tailoring [Elwynn Forest]
+					97937,	-- Camping 101: Tailoring [Mulgore]
+					97950,	-- Camping 101: Tailoring [Teldrassil]
+					97961,	-- Camping 101: Tailoring [Tirisfal Glades]
+					97972,	-- Camping 101: Tailoring
+					97973,	-- Camping 101: Tailoring
+				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				requireSkill = TAILORING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229504 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
 			}),
 			q(99158, {	-- Dawn in the Mountains
-				nextQuests = { 99159 },
-				isBreadcrumb = true,
 				qg = 1226,	-- Maxan Anvol <Priest Trainer>
-				qi = 286355,	-- Crate of Candles (QI!)
 				coord = { 47.3, 52.2, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				isBreadcrumb = true,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 286355,	-- Crate of Candles (QI!)
 			}),
 			q(5637, {	-- Desperate Prayer
 				altQuests = {
@@ -1239,13 +1352,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(96608, {	-- The Great Outdoors [Dun Morogh]
-				altQuests = { 95998, 96101, 96604, 96605, 96606, 96607 },
 				sourceQuest = 96628,	-- The Adventurer [Dun Morogh]
-				qg = 265813,	-- Eric Birghthammer
+				altQuests = {
+					95998,	-- The Great Outdoors [Elwynn Forest]
+					96101,	-- The Great Outdoors [Zephras Isle]
+					96604,	-- The Great Outdoors [Durotar]
+					96605,	-- The Great Outdoors [Mulgore]
+					96606,	-- The Great Outdoors [Teldrassil]
+					96607,	-- The Great Outdoors [Tirisfal Glades]
+				},
+				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(313, {	-- The Grizzled Den
 				qg = 1377,	-- Pilot Stonegear
@@ -1431,6 +1551,37 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				},
 			}),
+			q(94449, {	-- Call of Fire
+				qgs = {
+					258098,	-- Eldrun Stormbreaker <Shaman Trainer>
+					258113,	-- Ingrid Dunwald <Shaman Trainer>
+				},
+				coords = {
+					{ 47.14, 13.52, MAP.IRONFORGE },
+					{ 47.58, 51.95, MAP.DUN_MOROGH },
+				},
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(94465, {	-- Call of Fire
+				qg = 257597,	-- Bruegs Kindleborn
+				coord = { 87.94, 44.8, MAP.DUN_MOROGH },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 6653,	-- Torch of the Dormant Flame (QI!)
+			}),
+			q(94824, {	-- Confounding Flash
+				qg = 1226,	-- Maxan Anvol <Priest Trainer>
+				coord = { 47.34, 52.19, MAP.DUN_MOROGH },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(1806, {	-- The Test of Righteousness (3/3)
 				sourceQuest = 1654,	-- The Test of Righteousness (2/3)
 				qg = 6181,	-- Jordan Stilwell
@@ -1536,55 +1687,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
-			}),
-			q(94465, {	-- Call of Fire
-				qg = 257597,	-- Bruegs Kindleborn
-				coord = { 87.94, 44.8, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				qi = 6653,	-- Torch of the Dormant Flame
-				lvl = 10,
-			}),
-			q(94824, {	-- Confounding Flash
-				qg = 1226,	-- Maxan Anvol
-				coord = { 47.34, 52.19, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { GNOME },
-				classes = { PRIEST },
-				lvl = 10,
-			}),
-			q(98574, {	-- Hallowed Memorandum
-				sourceQuest = 179,
-				qg = 658,	-- Sten Stoutarm
-				coord = { 29.93, 71.2, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { GNOME },
-				classes = { PRIEST },
-				qi = 282338,	-- Hallowed Memorandum
-				lvl = 1,
-			}),
-			q(94449, {	-- Call of Fire
-				qgs = { 258098, 258113 },
-				coords = { { 47.14, 13.52, MAP.IRONFORGE }, { 47.58, 51.95, MAP.DUN_MOROGH } },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				lvl = 10,
-			}),
-			q(94472, {	-- Earth Sapta
-				sourceQuest = 94373,
-				qg = 257446,	-- Teo Hammerstorm
-				coord = { 28.79, 66.18, MAP.DUN_MOROGH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				classes = { SHAMAN },
-				lockCriteria = { 1, "questID", 94374 },
-				repeatable = true,
-				lvl = 4,
-				groups = {
-					i(6635),	-- Earth Sapta
-				},
 			}),
 		}),
 		n(RARES, {

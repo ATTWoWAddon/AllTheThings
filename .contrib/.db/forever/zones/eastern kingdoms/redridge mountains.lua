@@ -87,6 +87,34 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
+			q(91899, {	-- A Sealed Crate
+				qgs = {
+					256390,	-- Marcy Baker <Inventory Intake>
+					256386,	-- Dokimi <Inventory Intake>
+				},
+				coords = {
+					{ 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
+					{ 50.15, 29.35, MAP.THE_BARRENS },
+				},
+				lvl = 1,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Sealed Apprentice Crate
+						provider = { "i", 248765 },	-- Sealed Apprentice Crate (QI!)
+					}),
+				},
+			}),
+			q(91900, {	-- A Sealed Crate
+				qg = 256390,	-- Marcy Baker <Inventory Intake>
+				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
+				lvl = 1,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Sealed Journeyman Crate
+						provider = { "i", 248766 },	-- Sealed Journeyman Crate (QI!)
+					}),
+				},
+			}),
 			q(94, {	-- A Watchful Eye
 				qg = 313,	-- Theocritus
 				qi = 1083,	-- Glyph of Azora (PQI!)
@@ -676,11 +704,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			q(95999, {	-- Wanted: Insinerator Gar'im
-				provider = { "o", 649051 },	-- Wanted: Insinerator Gar'im
+				provider = { "o", 649051 },	-- Wanted: Incinerator Gar'im
 				coord = { 24.3, 46.2, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Broken Staff of Incinerator Gar'im
 						provider = { "i", 271872 },	-- Broken Staff of Incinerator Gar'im (QI!)
@@ -718,28 +746,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				classes = { WARRIOR },
 				isBreadcrumb = true,
 				lvl = 20,
-			}),
-			q(91899, {	-- A Sealed Crate
-				qgs = { 256390, 256386 },
-				coords = { { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS }, { 50.15, 29.35, MAP.THE_BARRENS } },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 1,
-				groups = {
-					objective(1, {	-- Sealed Apprentice Crate
-						provider = { "i", 248765 },
-					}),
-				},
-			}),
-			q(91900, {	-- A Sealed Crate
-				qg = 256390,	-- Marcy Baker
-				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 1,
-				groups = {
-					objective(1, {	-- Sealed Journeyman Crate
-						provider = { "i", 248766 },
-					}),
-				},
 			}),
 		}),
 		n(RARES, {

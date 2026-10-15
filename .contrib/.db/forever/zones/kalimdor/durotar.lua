@@ -150,6 +150,15 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 							i(11584),	-- Cactus Apple Surprise
 						},
 					}),
+					q(98576, {	-- Glyphic Parchment
+						qg = 3143,	-- Gornek
+						coord = { 42.06, 68.33, MAP.DUROTAR },
+						races = { ORC },
+						classes = { MAGE },
+						lvl = 1,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 282380,	-- Glyphic Parchment (QI!)
+					}),
 					q(3086, {	-- Glyphic Tablet
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
@@ -270,6 +279,15 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						races = { ORC, TROLL },
 						classes = { WARLOCK },
 					}),
+					q(98575, {	-- Tainted Tablet
+						qg = 3143,	-- Gornek
+						coord = { 42.06, 68.33, MAP.DUROTAR },
+						races = { TROLL },
+						classes = { WARLOCK },
+						lvl = 1,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 282346,	-- Tainted Tablet (QI!)
+					}),
 					q(6394, {	-- Thazz'ril's Pick
 						sourceQuest = 5441,	-- Lazy Peons
 						qg = 11378,	-- Foreman Thazz'ril
@@ -287,17 +305,22 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						},
 					}),
 					q(96652, {	-- The Adventurer [Durotar]
-						nextQuests = { 96604 },
-						isBreadcrumb = true,
-						altQuests = { 96627, 96628, 96630, 96638, 96656, 96659 },
-						sourceQuest = 794,
-						--["sourceQuest"] = ,	-- 
+						sourceQuest = 794,	-- Burning Blade Medallion
+						altQuests = {
+							96627,	-- The Adventurer [Elwynn Forest]
+							96628,	-- The Adventurer [Dun Morogh]
+							96630,	-- The Adventurer [Teldrassil]
+							96638,	-- The Adventurer [Zephras Isle]
+							96656,	-- The Adventurer [Tirisfal Glades]
+							96659,	-- The Adventurer [Mulgore]
+						},
 						provider = { "o", 654925 },	-- Lost Journal
 						coord = { 42.82, 69.14, MAP.DUROTAR },
-						qi = 275022,	-- Lost Journal (PQI!)
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
 						lvl = 4,
+						isBreadcrumb = true,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 275022,	-- Lost Journal (QI!)
 					}),
 					q(792, {	-- Vile Familiars
 						qg = 3145,	-- Zureetha Fargaze
@@ -556,170 +579,257 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 4,
 			}),
 			q(97899, {	-- Camping 101: Alchemy [Durotar]
-				lockCriteria = { 1, "spellID", 1230564 },
-				altQuests = { 96045, 97915, 97927, 97938, 97951, 97963 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96045,	-- Camping 101: Alchemy [Dun Morogh]
+					97915,	-- Camping 101: Alchemy [Elwynn Forest]
+					97927,	-- Camping 101: Alchemy [Mulgore]
+					97938,	-- Camping 101: Alchemy [Teldrassil]
+					97951,	-- Camping 101: Alchemy [Tirisfal Glades]
+					97963,	-- Camping 101: Alchemy
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = ALCHEMY,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230564 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230564),	-- Alchemy: Mana Well
 				},
 			}),
 			q(97900, {	-- Camping 101: Blacksmithing [Durotar]
-				lockCriteria = { 1, "spellID", 1230171 },
-				altQuests = { 96044, 97916, 97928, 97939, 97952, 97964 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96044,	-- Camping 101: Blacksmithing [Dun Morogh]
+					97916,	-- Camping 101: Blacksmithing [Elwynn Forest]
+					97928,	-- Camping 101: Blacksmithing [Mulgore]
+					97939,	-- Camping 101: Blacksmithing [Teldrassil]
+					97952,	-- Camping 101: Blacksmithing [Tirisfal Glades]
+					97964,	-- Camping 101: Blacksmithing
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = BLACKSMITHING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230171 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
 				},
 			}),
 			q(96655, {	-- Camping 101: Cooking [Durotar]
-				altQuests = { 96626, 96629, 96634, 96646, 96658, 96661 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96626,	-- Camping 101: Cooking [Elwynn Forest]
+					96629,	-- Camping 101: Cooking [Dun Morogh]
+					96634,	-- Camping 101: Cooking [Teldrassil]
+					96646,	-- Camping 101: Cooking
+					96658,	-- Camping 101: Cooking [Tirisfal Glades]
+					96661,	-- Camping 101: Cooking [Mulgore]
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(97901, {	-- Camping 101: Enchanting [Durotar]
-				lockCriteria = { 1, "spellID", 1230643 },
-				altQuests = { 96059, 97917, 97929, 97940, 97953, 98284, 98286 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96059,	-- Camping 101: Enchanting [Dun Morogh]
+					97917,	-- Camping 101: Enchanting [Elwynn Forest]
+					97929,	-- Camping 101: Enchanting [Mulgore]
+					97940,	-- Camping 101: Enchanting [Teldrassil]
+					97953,	-- Camping 101: Enchanting [Tirisfal Glades]
+					98284,	-- Camping 101: Enchanting
+					98286,	-- Camping 101: Enchanting
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = ENCHANTING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230643 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
 			}),
 			q(97902, {	-- Camping 101: Engineering [Durotar]
-				lockCriteria = { 1, "spellID", 1230656 },
-				altQuests = { 96058, 97918, 97930, 97941, 97954, 98285, 98287 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96058,	-- Camping 101: Engineering [Dun Morogh]
+					97918,	-- Camping 101: Engineering [Elwynn Forest]
+					97930,	-- Camping 101: Engineering [Mulgore]
+					97941,	-- Camping 101: Engineering [Teldrassil]
+					97954,	-- Camping 101: Engineering [Tirisfal Glades]
+					98285,	-- Camping 101: Engineering
+					98287,
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = ENGINEERING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230656 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
 			}),
 			q(97903, {	-- Camping 101: First Aid [Durotar]
-				lockCriteria = { 1, "spellID", 1230117 },
-				altQuests = { 96047, 97919, 97931, 97942, 97955, 97965 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96047,	-- Camping 101: First Aid [Dun Morogh]
+					97919,	-- Camping 101: First Aid [Elwynn Forest]
+					97931,	-- Camping 101: First Aid [Mulgore]
+					97942,	-- Camping 101: First Aid [Teldrassil]
+					97955,	-- Camping 101: First Aid [Tirisfal Glades]
+					97965,	-- Camping 101: First Aid
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FIRST_AID,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230117 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230117),	-- First Aid: First Aid Kit
 				},
 			}),
 			q(97904, {	-- Camping 101: Fishing [Durotar]
-				lockCriteria = { 1, "spellID", 1229745 },
-				altQuests = { 96050, 97920, 97932, 97943, 97956, 97967 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96050,	-- Camping 101: Fishing [Dun Morogh]
+					97920,	-- Camping 101: Fishing [Elwynn Forest]
+					97932,	-- Camping 101: Fishing [Mulgore]
+					97943,	-- Camping 101: Fishing [Teldrassil]
+					97956,	-- Camping 101: Fishing [Tirisfal Glades]
+					97967,	-- Camping 101: Fishing
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = FISHING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229745 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229745),	-- Fishing: Fish Bowl
 				},
 			}),
 			q(97905, {	-- Camping 101: Herbalism [Durotar]
-				lockCriteria = { 1, "spellID", 1229705 },
-				altQuests = { 96055, 97921, 97933, 97944, 97957, 97968 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96055,	-- Camping 101: Herbalism [Dun Morogh]
+					97921,	-- Camping 101: Herbalism [Elwynn Forest]
+					97933,	-- Camping 101: Herbalism [Mulgore]
+					97944,	-- Camping 101: Herbalism [Teldrassil]
+					97957,	-- Camping 101: Herbalism [Tirisfal Glades]
+					97968,	-- Camping 101: Herbalism
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = HERBALISM,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229705 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229705),	-- Herbalism: Incense Candle
 				},
 			}),
 			q(97906, {	-- Camping 101: Leatherworking [Durotar]
-				lockCriteria = { 1, "spellID", 1229432 },
-				altQuests = { 96031, 97922, 97934, 97946, 97958, 97969 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96031,	-- Camping 101: Leatherworking [Dun Morogh]
+					97922,	-- Camping 101: Leatherworking [Elwynn Forest]
+					97934,	-- Camping 101: Leatherworking [Mulgore]
+					97946,	-- Camping 101: Leatherworking [Teldrassil]
+					97958,	-- Camping 101: Leatherworking [Tirisfal Glades]
+					97969,	-- Camping 101: Leatherworking
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = LEATHERWORKING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229432 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229432),	-- Leatherworking: Camp Tent
 				},
 			}),
 			q(97907, {	-- Camping 101: Mining [Durotar]
-				lockCriteria = { 1, "spellID", 1230161 },
-				altQuests = { 96046, 97923, 97935, 97948, 97959, 97970 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96046,	-- Camping 101: Mining [Dun Morogh]
+					97923,	-- Camping 101: Mining [Elwynn Forest]
+					97935,	-- Camping 101: Mining [Mulgore]
+					97948,	-- Camping 101: Mining [Teldrassil]
+					97959,	-- Camping 101: Mining [Tirisfal Glades]
+					97970,	-- Camping 101: Mining
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				requireSkill = MINING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230161 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230161),	-- Mining: Lodestone
 				},
 			}),
 			q(97908, {	-- Camping 101: Skinning [Durotar]
-				lockCriteria = { 1, "spellID", 1229517 },
-				altQuests = { 96056, 97924, 97936, 97949, 97960, 97971 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96056,	-- Camping 101: Skinning [Dun Morogh]
+					97924,	-- Camping 101: Skinning [Elwynn Forest]
+					97936,	-- Camping 101: Skinning [Mulgore]
+					97949,	-- Camping 101: Skinning [Teldrassil]
+					97960,	-- Camping 101: Skinning [Tirisfal Glades]
+					97971,	-- Camping 101: Skinning
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = SKINNING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229517 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1229517),	-- Skinning: Camp Chair
 				},
 			}),
 			q(96102, {	-- Camping 101: Tailoring [Durotar]
-				lockCriteria = { 1, "spellID", 1229504 },
-				altQuests = { 96057, 97925, 97937, 97950, 97961, 97972, 97973 },
 				sourceQuest = 96604,	-- The Great Outdoors [Durotar]
+				altQuests = {
+					96057,	-- Camping 101: Tailoring [Dun Morogh]
+					97925,	-- Camping 101: Tailoring [Elwynn Forest]
+					97937,	-- Camping 101: Tailoring [Mulgore]
+					97950,	-- Camping 101: Tailoring [Teldrassil]
+					97961,	-- Camping 101: Tailoring [Tirisfal Glades]
+					97972,	-- Camping 101: Tailoring
+					97973,	-- Camping 101: Tailoring
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ORGRIMMAR },
 				requireSkill = TAILORING,
 				races = HORDE_ONLY,
 				lvl = 4,
+				lockCriteria = { 1, "spellID", 1229504 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
@@ -1248,13 +1358,20 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(96604, {	-- The Great Outdoors [Durotar]
-				altQuests = { 95998, 96101, 96605, 96606, 96607, 96608 },
 				sourceQuest = 96652,	-- The Adventurer [Durotar]
+				altQuests = {
+					95998,	-- The Great Outdoors [Elwynn Forest]
+					96101,	-- The Great Outdoors [Zephras Isle]
+					96605,	-- The Great Outdoors [Mulgore]
+					96606,	-- The Great Outdoors [Teldrassil]
+					96607,	-- The Great Outdoors [Tirisfal Glades]
+					96608,	-- The Great Outdoors [Dun Morogh]
+				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6068, {	-- The Hunter's Path [Orgrimmar]
 				qg = 3407,	-- Sian'dur <Hunter Trainer>
@@ -1505,24 +1622,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(4946),	-- Lightweight Boots
 					i(4940),	-- Veiled Grips
 				},
-			}),
-			q(98575, {	-- Tainted Tablet
-				qg = 3143,	-- Gornek
-				coord = { 42.06, 68.33, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { TROLL },
-				classes = { WARLOCK },
-				qi = 282346,	-- Tainted Tablet
-				lvl = 1,
-			}),
-			q(98576, {	-- Glyphic Parchment
-				qg = 3143,	-- Gornek
-				coord = { 42.06, 68.33, MAP.DUROTAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { ORC },
-				classes = { MAGE },
-				qi = 282380,	-- Glyphic Parchment
-				lvl = 1,
 			}),
 		}),
 		n(RARES, {
