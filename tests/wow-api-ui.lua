@@ -88,7 +88,8 @@ local function runUIFixture(modern)
 		env.InterfaceOptionsFrame_OpenToCategory = function() error("legacy options opened") end
 		env.InterfaceOptions_AddCategory = function() error("legacy category registered") end
 	else
-		env.InterfaceOptionsFrame_OpenToCategory = function(id) opened = id end
+		env.Settings = {OpenToCategory = function(id) opened = id end}
+		env.InterfaceOptionsFrame_OpenToCategory = function() error("legacy options opened") end
 		env.InterfaceOptions_AddCategory = function(frame)
 			registrations[#registrations+1] = frame.name
 		end

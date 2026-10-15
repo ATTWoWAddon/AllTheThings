@@ -241,18 +241,18 @@ do
 end
 
 do
-	local opened;
-	local modern = initialize({
-		Settings = {OpenToCategory = function(id) opened = id end},
-		InterfaceOptionsFrame_OpenToCategory = function() error("legacy options API selected despite Settings") end,
-	});
-	modern.OpenOptionsCategory(17);
-	equal(opened, 17, "modern options category ID");
-	local legacy = initialize({
-		InterfaceOptionsFrame_OpenToCategory = function(id) opened = id end,
-	}, 11509);
-	legacy.OpenOptionsCategory("ATT");
-	equal(opened, "ATT", "legacy options category name");
+	-- Every current client opens categories through Settings.
+	for _, interface in ipairs({11509, 16001, 20506, 38002, 50504, 120105}) do
+		local opened;
+		local options = initialize({
+			Settings = {OpenToCategory = function(id) opened = id; return sentinel end},
+			InterfaceOptionsFrame_OpenToCategory = function() error("removed options API selected") end,
+		}, interface);
+		equal(options.OpenOptionsCategory(17), sentinel, "Settings opening return value");
+		equal(opened, 17, "numeric options category ID on interface " .. interface);
+		equal(options.OpenOptionsCategory("ATT"), sentinel, "Settings opening return value");
+		equal(opened, "ATT", "string options category ID on interface " .. interface);
+	end
 end
 
 do

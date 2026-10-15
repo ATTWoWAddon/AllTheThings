@@ -393,14 +393,10 @@ end
 -- on clients which do not provide the replacement framework.
 do
 	local Settings = Settings;
-	local OpenLegacyCategory = InterfaceOptionsFrame_OpenToCategory;
 	local AddLegacyCategory = InterfaceOptions_AddCategory;
 
 	lib.OpenOptionsCategory = function(categoryID)
-		if Settings and Settings.OpenToCategory then
-			return Settings.OpenToCategory(categoryID);
-		end
-		return OpenLegacyCategory(categoryID);
+		return Settings.OpenToCategory(categoryID);
 	end;
 
 	---@param frame Frame Options page to register.
