@@ -78,6 +78,21 @@ Whatever we choose, the test cases and fixtures should not be unnecessarily coup
 
 Assertion and analysis tools cover narrower needs: [luassert](https://github.com/lunarmodules/luassert) supplies assertions, spies, and stubs; [LuaCov](https://github.com/lunarmodules/luacov) measures executed-code coverage; [Luacheck](https://github.com/lunarmodules/luacheck) performs static analysis. They can complement a framework, but each needs its own integration and configuration.
 
+### Examples from existing WoW addons
+
+The following examples were reviewed on **2026-10-17**. Links are pinned to the reviewed source revisions. They demonstrate actual addon tests and loading arrangements; they do not establish that the same setup will work for ATT. Third-party tests were not executed locally during this review.
+
+| Framework | Addon | Production-code loading and fixtures | Test and runner evidence |
+| --- | --- | --- | --- |
+| **Busted** | **Questie** | A shared bootstrap supplies WoW API, frame, and event substitutes. The player suite loads the complete production `QuestiePlayer.lua` file before each case, then obtains the module through `QuestieLoader`. | [Player tests](https://github.com/Questie/Questie/blob/ef1241ccf348fcab3e98fb41ccb91143b6edd141/Modules/QuestiePlayer.test.lua), [bootstrap](https://github.com/Questie/Questie/blob/ef1241ccf348fcab3e98fb41ccb91143b6edd141/setupTests.lua), and [Lua 5.1 CI](https://github.com/Questie/Questie/blob/ef1241ccf348fcab3e98fb41ccb91143b6edd141/.github/workflows/ci.yml). |
+| **Busted** | **RCLootCouncil** | Its loader supplies WoW API substitutes and can load production Lua, TOC, and XML files. Tests range from a small table utility to loading the addon and simulating login before exercising its methods. | [Utility tests](https://github.com/evil-morfar/RCLootCouncil2/blob/ba8a53ae96903cc5fda083f5d3f497cde3e8f55c/.specs/Classes/Utils/TempTable.spec.lua), [addon loader](https://github.com/evil-morfar/RCLootCouncil2/blob/ba8a53ae96903cc5fda083f5d3f497cde3e8f55c/.specs/AddonLoader.lua), [integration test](https://github.com/evil-morfar/RCLootCouncil2/blob/ba8a53ae96903cc5fda083f5d3f497cde3e8f55c/.specs/Integration/Core/GetIlvlDifference.spec.lua), and [Lua 5.1 CI](https://github.com/evil-morfar/RCLootCouncil2/blob/ba8a53ae96903cc5fda083f5d3f497cde3e8f55c/.github/workflows/busted.yml). |
+| **Busted** | **DisenchantBuddy** | Tests construct an addon table and the required API substitutes, then load complete production files. A focused module suite supplies client-flavor inputs and checks the returned disenchant materials. | [Module tests](https://github.com/BreakBB/DisenchantBuddy/blob/95dd2a1723c18359130513610512027376723e48/DisenchantResults/Rare.test.lua), [addon tests](https://github.com/BreakBB/DisenchantBuddy/blob/95dd2a1723c18359130513610512027376723e48/DisenchantBuddy.test.lua), and [Lua 5.1 CI](https://github.com/BreakBB/DisenchantBuddy/blob/95dd2a1723c18359130513610512027376723e48/.github/workflows/ci.yml). |
+| **LuaUnit** | **AddonProfiles** | The entry point loads WoW API stubs, actual Ace3 libraries, and production Core, AddonManager, and ProfileManager modules. Suites cover initialization, data migration, and profile management with setup/teardown. | [Test entry point](https://github.com/jmervine/AddonProfiles/blob/fc3ac5829243e84a815098a0aaf70b1f998dcfb7/test/test.lua), [Core tests](https://github.com/jmervine/AddonProfiles/blob/fc3ac5829243e84a815098a0aaf70b1f998dcfb7/test/core_test.lua), [CI](https://github.com/jmervine/AddonProfiles/blob/fc3ac5829243e84a815098a0aaf70b1f998dcfb7/.github/workflows/main.yml), and [test image](https://github.com/jmervine/AddonProfiles/blob/fc3ac5829243e84a815098a0aaf70b1f998dcfb7/Dockerfile.test). The image uses an unpinned Lua `latest` tag, so it is not evidence of Lua 5.1 CI compatibility. |
+
+For **Experiment A**, DisenchantBuddy is a useful reference for a small, complete-file loading boundary; RCLootCouncil illustrates a broader TOC/XML loader if a representative ATT module requires more startup context. In each case, the addon supplies its own loading and WoW fixtures alongside the assertion framework. Evaluate the amount of setup ATT actually needs before adopting a shared loader or mock library.
+
+This review did not find a verified WoW addon adoption example for **Lunatest**, **lunit/lunitx**, or **Telescope**. They remain general Lua candidates; this search result does not establish that no addons use them.
+
 ## Parser testing
 
 The Parser is a separate execution environment: **C# targeting .NET Framework 4.8**, using **NLua / Lua 5.4**. Runtime Lua 5.1 tests cannot substitute for testing the actual Parser.
@@ -147,6 +162,16 @@ These address the addon execution environment or in-game testing and should be e
 | --- | --- | --- |
 | **[Wowless](https://github.com/wowless/wowless)** | Headless WoW Lua/FrameXML environment using Elune, a WoW-aware Lua 5.1 fork. | Can exercise broader addon loading and UI/API interactions. Its project describes itself as pre-alpha; failures may come from the emulator, and setup/diagnosis costs need evaluation. |
 | **[WoWUnit](https://github.com/Jaliborc/WoWUnit)** | Test addon running inside WoW, with monitoring UI and startup/event-driven execution. | Supports assertions and temporary global/table substitutions against a live-client environment. Requires in-game addon integration; it is a different execution path from the current standalone Linux CLI suites. |
+
+### Examples of WoW-specific integration
+
+These examples use different execution environments from the standalone Lua suites above. The same source-review date and third-party execution limits apply.
+
+| Option | Addon | Actual integration and checked behavior |
+| --- | --- | --- |
+| **WoWUnit** | **Scrap** | Its [TOC](https://github.com/Jaliborc/Scrap/blob/c768db5539b2cd52c01c89af46b4562bbd169a31/Scrap.toc) declares WoWUnit as an optional dependency, and [XML](https://github.com/Jaliborc/Scrap/blob/c768db5539b2cd52c01c89af46b4562bbd169a31/addons/main/main.xml) loads tests after production files. The [tests](https://github.com/Jaliborc/Scrap/blob/c768db5539b2cd52c01c89af46b4562bbd169a31/addons/main/tests.lua) run in-game when WoWUnit is present, temporarily replace settings and the junk list, and call the real `Scrap:IsJunk()` method for specific item IDs. |
+| **WoWUnit** | **PetTracker** | The production [XML loader](https://github.com/Jaliborc/PetTracker/blob/9a4cfef00c6a6275ff114c09d384e53e34cbe1e8/addons/main/main.xml) includes a [test XML file](https://github.com/Jaliborc/PetTracker/blob/9a4cfef00c6a6275ff114c09d384e53e34cbe1e8/addons/main/tests/tests.xml). Its [search tests](https://github.com/Jaliborc/PetTracker/blob/9a4cfef00c6a6275ff114c09d384e53e34cbe1e8/addons/main/tests/search.lua) use real species/rival objects and the addon's search method; quality cases temporarily replace a pet-collection query. |
+| **Wowless** | **ArcUI (`Jinxit/arcui-fork` repository)** | A [CI workflow](https://github.com/Jinxit/arcui-fork/blob/88afb1dc4cf23f49ad80fb35db3c69d5bfa5dc66/.github/workflows/wowless.yml) mounts the addon into a prebuilt Wowless container and loads it in the headless environment. A separate error matcher compares captured errors with an accepted-error baseline and determines failure. This demonstrates addon-loading checks; it does not replace focused behavioral assertions or live-client verification. |
 
 A WoW emulator or in-game framework remains an optional evaluation for problems that justify the additional environment and maintenance work.
 
