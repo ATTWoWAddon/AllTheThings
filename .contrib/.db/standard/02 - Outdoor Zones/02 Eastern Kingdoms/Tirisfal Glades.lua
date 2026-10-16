@@ -2651,7 +2651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				o(240624, {	-- Faerie Dragon Nest
-					["description"] = "Rougly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",
+					["description"] = "Roughly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",
 					["sourceQuests"] = {
 						38356,	-- Bringing the Bass [A]
 						37961,	-- Bringing the Bass [H]

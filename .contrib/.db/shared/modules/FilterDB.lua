@@ -2,7 +2,7 @@
 --     F I L T E R   D A T A B A S E   M O D U L E     --
 ---------------------------------------------------------
 -- NOTE: This file is here instead of in the DB folder because it generates the new
--- FilterConstants contants table. Refer to the individual filters for more information.
+-- FilterConstants constants table. Refer to the individual filters for more information.
 local FilterDB = FilterDB; FilterConstants = {};
 for filterID,filterData in pairs({
 	-- Armor Types

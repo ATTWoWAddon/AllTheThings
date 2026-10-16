@@ -41,7 +41,7 @@ echo Found target folder: %MatchedDir%
 goto :do_links
 
 :NotFound
-echo Target folder "%TargetName%" not found in folder heirarchy above this file
+echo Target folder "%TargetName%" not found in folder hierarchy above this file
 goto :do_links
 
 :do_links

@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(259112),	-- Dark Gold Dye
 			i(259130),	-- Nightsong Lilac Dye
 			--[[ Keeping these for a while in case they get introduced back. When we get too deep into expansion cycle and these do not get added back, I think it's safe to remove the section.
-			o(539042, {	-- Ruz'avalt's Prized Tackle	-- TODO: Present but un-interactable on Early Acces, Removed at Full Launch.
+			o(539042, {	-- Ruz'avalt's Prized Tackle	-- TODO: Present but un-interactable on Early Access, Removed at Full Launch.
 				["coord"] = { 44.3, 56.2, MAP.MIDNIGHT.ZULAMAN },
 				--["questID"] = ?????,
 			}),

@@ -129,7 +129,7 @@ root(ROOTS.Zones, {
 						pet(515, {	-- Sporeling Sprout (PET!)
 							["description"] =
 								-- #if AFTER 5.3.0
-								"Found only in Sporeggar.",	-- The reputation requirement got removed in a late MoP patch, but can't find any confirmation on which one. Working assumption is 5.3.0 which brough battle pets to TBC raids.
+								"Found only in Sporeggar.",	-- The reputation requirement got removed in a late MoP patch, but can't find any confirmation on which one. Working assumption is 5.3.0 which brought battle pets to TBC raids.
 								-- #else
 								"Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
 								-- #endif

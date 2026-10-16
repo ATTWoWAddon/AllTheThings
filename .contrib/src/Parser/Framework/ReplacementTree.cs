@@ -7,7 +7,7 @@ using System.Text;
 namespace ATT
 {
     /// <summary>
-    /// Represents a collection of replacment string values which can be efficiently replaced in a single pass against
+    /// Represents a collection of replacement string values which can be efficiently replaced in a single pass against
     /// a StringBuilder
     /// </summary>
     public class ReplacementTree

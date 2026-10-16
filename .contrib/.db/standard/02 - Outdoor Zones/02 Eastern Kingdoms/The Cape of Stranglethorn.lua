@@ -930,7 +930,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 43255 },	-- Zanzil the Outcast
 							},
 							["coord"] = { 78.0, 43.8, NORTHERN_STRANGLETHORN },
-							["description"] = "Attack Zanzil first to interupt the cast.",
+							["description"] = "Attack Zanzil first to interrupt the cast.",
 						}),
 					},
 				},

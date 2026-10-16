@@ -1782,7 +1782,7 @@ i(206162, 407555);	-- Tarecgosa's Visage
 i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
-i(206167, 397406);	-- Wonderous Wavewhisker
+i(206167, 397406);	-- Wondrous Wavewhisker
 
 ------------------
 -- PATCH 10.1.5 --

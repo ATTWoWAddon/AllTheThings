@@ -118,7 +118,7 @@ app.AddEventHandler("OnReady", function()
 	local Register = app.RegisterFuncEvent
 	for event,func in pairs(OnReadyEventRegistrations) do
 		-- app.PrintDebug("RegisterFuncEvent",event,func)
-		-- safely attempt to register the event incase it is not available in a game version
+		-- safely attempt to register the event in case it is not available in a game version
 		if not pcall(Register, app, event, func) then
 			app.report("Invalid Event Registration",event)
 		end
@@ -131,7 +131,7 @@ app.AddEventHandler("OnReady", function()
 			return
 		end
 		CheckDuplicateRootEventRegistration(event)
-		-- safely attempt to register the event incase it is not available in a game version
+		-- safely attempt to register the event in case it is not available in a game version
 		if not pcall(Register, app, event, func) then
 			app.report("Invalid Event Registration",event)
 		end
@@ -427,7 +427,7 @@ end
 -- Performs the logic needed to integrate the Handlers of a given Event into the current Event flow such that they
 -- are processed in the proper sequence and timing in conjunction with other events
 local function HandleEvent(eventName, ...)
-	-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
+	-- getting to the point where there's noticeable stutter again during refresh due to the number of handlers added
 	-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
 	-- the Event Runner so that they execute in the expected sequence

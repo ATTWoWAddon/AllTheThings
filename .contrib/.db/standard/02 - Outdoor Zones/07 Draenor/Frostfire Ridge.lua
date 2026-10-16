@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, {
 						-- Share Quest = 'You have completed that quest'
 						-- Party Sync + Share Quest = 'You have completed that quest'
 						-- Party Sync + WoD Chromie Time + Share Quest = 'You have completed that quest'
-						-- If anyone actually has a verifed way of obtaining this quest on a character which has already established their Garrison, please update this
+						-- If anyone actually has a verified way of obtaining this quest on a character which has already established their Garrison, please update this
 						-- It's reported you can somehow find this quest on the Warboard simply by being in WoD Chromie Time, but this was not the case for a new lvl 10
 						-- Taking the initial quest to the Dark Portal, then returning to Orgrimmar to access the Warboard also did not help
 						-- Additionally, it can be shared to a character who has not established their Garrison without any known pre-requisites being completed
@@ -1945,7 +1945,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 				q(34510),	-- Tracking Event: Catapuls 'n' Clefthoof - triggers after riding the wolf down Bladespire Citadel during "Moving In" (questID 33657)
 				q(34453),	-- Tracking Event: Gazlowe Arrived
 				q(34511),	-- Tracking Event: Ogre Drag - triggers after riding the wolf down Bladespire Citadel during "Moving In" (questID 33657)
-				q(34715),	-- Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog (questID 33816)
+				q(34715),	-- Tracking Flag: Shamanstone Summons - approach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog (questID 33816)
 			}),
 			n(RARES, {
 				q(34519),	-- Vignette: Brotoculus - tertiary trigger for g'lok the Frozen rare

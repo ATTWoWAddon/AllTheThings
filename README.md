@@ -65,7 +65,7 @@ Thank you to the contributors for the work they do and the users who have submit
 - AmiYuy -- Has helped many times with different aspects of the addon.
 - Sweetlie -- Helped with models for the addon.
 - Gello -- Helped us to get NPC localization.
-- Breanni -- Allowing us to use notes from [WarcraftPets website](https://www.warcraftpets.com).
+- Breanni -- Allowing us to use notes from [the WarcraftPets website](https://www.warcraftpets.com).
 - DeadSerious -- Winner of our Logo Contest, Primary Artist for all Branding for ATT & Crieve's Twitch channel.
 - BigBlaris - Verifying drops, testing.
 - Kawna -- Does artwork to help out with the project.

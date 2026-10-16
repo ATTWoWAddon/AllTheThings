@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "A parsing error occured during the sync process.",
+	readable = "A parsing error occurred during the sync process.",
 	constant = "ACCOUNT_MANAGEMENT_PARSE_ERROR_TITLE",
 	export = true,
 	text = {
-		en = "A parsing error occured during the sync process.",
+		en = "A parsing error occurred during the sync process.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

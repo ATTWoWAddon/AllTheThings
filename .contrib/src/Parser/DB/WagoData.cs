@@ -1191,7 +1191,7 @@ namespace ATT.DB
             /// </summary>
             /// <param name="content">The content of the CSV.</param>
             /// <param name="locale">The locale of the content within the CSV.</param>
-            /// <returns>The data contained witin the CSV.</returns>
+            /// <returns>The data contained within the CSV.</returns>
             /// <exception cref="InvalidProgramException"></exception>
             public static void LoadFromCSV(string content, string locale)
             {

@@ -127,7 +127,7 @@ local function SearchForFieldRecursively(group, field, value)
 						first[#first + 1] = data;
 					end
 				else
-					-- Cool! (This should be the most common occurance)
+					-- Cool! (This should be the most common occurrence)
 					first = g;
 				end
 			end

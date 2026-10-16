@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "This window shows you all of the class specific things for all classes.",
+	readable = "This window shows you all of the class-specific things for all classes.",
 	constant = "CLASS_SPECIFIC_THINGS_TOOLTIP",
 	export = true,
 	text = {
-		en = "This window shows you all of the class specific things for all classes.",
+		en = "This window shows you all of the class-specific things for all classes.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

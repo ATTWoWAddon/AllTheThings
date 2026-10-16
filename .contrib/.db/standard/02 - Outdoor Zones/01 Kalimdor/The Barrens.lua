@@ -2406,7 +2406,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78680, {	-- Rumors Abound
-					["description"] = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["description"] = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterrupted looting time.",
 					["sourceQuest"] = 1740,	-- The Orb of Soran'ruk
 					["qg"] = 6247,	-- Doan Karhan
 					["coord"] = { 49.2, 57.2, THE_BARRENS },
@@ -5077,7 +5077,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208765, {	-- Helping Hand (Closed)
 					["provider"] = { "i", 208766 },	-- Helping Hand (Open)
-					["description"] = "The hand will open when you ressurect another player.",
+					["description"] = "The hand will open when you resurrect another player.",
 					["coord"] = { 55.6, 27.2, THE_BARRENS },
 					["classes"] = { PRIEST },
 					["crs"] = {

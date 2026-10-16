@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)",
+	readable = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, tracking purposes, etc)",
 	constant = "REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP",
 	export = true,
 	text = {
-		en = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)",
+		en = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, tracking purposes, etc)",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver el misión ID para cualquier misión que aceptes o completes justo después de que pase. (Para notificar errores, propósitos de rastreo, etc)",
 		mx = "Activa esta opción si quieres ver el ID de misión para cualquier misión que aceptes o completes justo después de que pase. (Para notificar errores, propósitos de rastreo, etc)",

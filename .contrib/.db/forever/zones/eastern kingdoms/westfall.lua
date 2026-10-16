@@ -143,7 +143,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(3861, {	-- CLUCK!
-				description = "Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
+				description = "Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targeted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
 				qg = 620,	-- Chicken
 				maps = {
 					MAP.DUSKWOOD,

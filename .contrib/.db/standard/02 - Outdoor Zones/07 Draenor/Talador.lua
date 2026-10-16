@@ -2832,7 +2832,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 				-- q(34760),	-- Treasure: Warchest of Kull'krosh - secondary quest trigger for Rusted Lockbox treasure
 				q(34562),	-- Trigger Teron'gor Defense Spawns - triggers in a cave with Soulbind Nyami at Gul'Rok
 				q(34047),	-- Tuurem Explosion Tracker
-				q(34574),	-- Unused - triggeres when choosing the Arcane Sanctum building
+				q(34574),	-- Unused - triggers when choosing the Arcane Sanctum building
 				q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
 				q(34199),	-- Vignette: Anchorite's Sojourn
 				q(34101),	-- Vignette: Aruumel's Worn Mace - triggers when looting "Lightbearer"

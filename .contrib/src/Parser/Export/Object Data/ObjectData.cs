@@ -21,7 +21,7 @@ namespace ATT
             private static readonly List<ObjectData> ALL_OBJECTS = new List<ObjectData>();
 
             /// <summary>
-            /// All of the object contructors used by the exporter ordered by export priority.
+            /// All of the object constructors used by the exporter ordered by export priority.
             /// </summary>
             private static readonly IDictionary<string, ObjectData> OBJECT_CONSTRUCTORS = new Dictionary<string, ObjectData>();
 
@@ -113,7 +113,7 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data.</param>
             /// <param name="objectData">The object data container.</param>
-            /// <returns>Whether or not the most signficant object type was found.</returns>
+            /// <returns>Whether or not the most significant object type was found.</returns>
             public static bool TryGetMostSignificantObjectType(IDictionary<string, object> data, out ObjectData objectData, out object objKeyValue)
             {
                 foreach (var objectType in ALL_OBJECTS)

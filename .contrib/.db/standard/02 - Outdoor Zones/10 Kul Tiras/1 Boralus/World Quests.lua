@@ -135,13 +135,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 			}),
-			q(52375, {	-- Supplies Neeeded: Great Sea Catfish
+			q(52375, {	-- Supplies Needed: Great Sea Catfish
 				["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 				["coord"] = { 73.21, 11.01, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 			}),
-			q(51033, {	-- Supplies Neeeded: Mistscale
+			q(51033, {	-- Supplies Needed: Mistscale
 				["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 				["coord"] = { 73.21, 11.01, BORALUS },
 				["races"] = ALLIANCE_ONLY,

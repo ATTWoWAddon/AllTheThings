@@ -1442,7 +1442,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 				lvl = 6,
-				-- Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
+				-- Danny Donkey: Molkree says this quest probably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests reset 15/01.
 				-- Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 				groups = {
 					objective(1, {	-- 0/10 Rockjaw Bonesnapper slain

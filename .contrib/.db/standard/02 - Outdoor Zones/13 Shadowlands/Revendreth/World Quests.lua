@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59855),	-- Major Mirror Disruptions
 			q(62203),	-- Major Mirror Disruptions
 			q(62204),	-- Major Mirror Disruptions
-			q(61538, {	-- Mining: Menacing Sinvyr Cluser
+			q(61538, {	-- Mining: Menacing Sinvyr Cluster
 				["requireSkill"] = MINING,
 				["groups"] = {
 					i(181720),	-- Menacing Sinvyr Ore (QI!)

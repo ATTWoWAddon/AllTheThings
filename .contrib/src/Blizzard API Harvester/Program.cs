@@ -83,7 +83,7 @@ namespace ATT
 
         static void Main(string[] args)
         {
-            // can tell harvester to only parse existing datas for a certain date
+            // can tell harvester to only parse existing data for a certain date
             string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
 
             if (parseOnlyDate != null)
@@ -161,7 +161,7 @@ namespace ATT
                 HarvestItems();
             }
 
-            // dont switch to quest harvest until items are done
+            // don't switch to quest harvest until items are done
             while (APIRequests.Count > 0 || APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
 
             if (ProcessObjects[ObjType.quest] && parseOnlyDate == null)
@@ -354,7 +354,7 @@ namespace ATT
                         // authorization ran out
                         else if (response.StatusCode == HttpStatusCode.Unauthorized)
                         {
-                            // dont worry about auth errors i suppose...
+                            // don't worry about auth errors i suppose...
                             Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED @" + API_ExpectedThrottle + ":" + APIResults.Count);
                         }
                         else
@@ -413,7 +413,7 @@ namespace ATT
         private static void QueueAPIRequestForID(int i, bool retry = false)
         {
             // maximum API limits is 100/sec so throttle to that at least
-            // dont allow more than 50 simultaneous requests
+            // don't allow more than 50 simultaneous requests
             // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
 
             // if retrying, increment the expected throttle slightly

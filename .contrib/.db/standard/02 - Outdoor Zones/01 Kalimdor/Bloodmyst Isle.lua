@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
+					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this disappear? [Not required for Alien Predators, Discord 2023-07-29]
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9683, {	-- Ending the Bloodcurse

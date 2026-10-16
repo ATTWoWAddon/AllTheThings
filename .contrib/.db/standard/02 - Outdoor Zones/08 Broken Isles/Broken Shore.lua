@@ -49,7 +49,7 @@ root(ROOTS.Zones, {
 						crit(36608, {	-- Intolerable Infestation
 							["sourceQuests"] = { 46252 },	-- Intolerable Infestation
 						}),
-						crit(36609, {	-- Relieved of Thier Valuables
+						crit(36609, {	-- Relieved of Their Valuables
 							["sourceQuests"] = { 46769 },	-- Relieved of Their Valuables
 						}),
 						crit(36610, {	-- Take Out the Head...

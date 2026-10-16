@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 			}),
-			q(52382, {	-- Supplies Neeeded: Great Sea Catfish
+			q(52382, {	-- Supplies Needed: Great Sea Catfish
 				["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 				["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 			}),
-			q(51049, {	-- Supplies Neeeded: Mistscale
+			q(51049, {	-- Supplies Needed: Mistscale
 				["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 				["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,

@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 42.0, SIREN_ISLE },
-				-- TODO: I'm still not sure what exactly trigger it. It could be first filled bar for special assigment?
+				-- TODO: I'm still not sure what exactly trigger it. It could be first filled bar for special assignment?
 			}),
 			q(85653, {	-- Dipping a Toe
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
@@ -454,7 +454,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				-- q(85670),	-- Undersea Overseer's Citrine
 				-- q(85671),	-- Squall Sailor's Citrine
 				--
-				q(85070),	-- when Special Assigment npc unlocked for storm phase (pop talking head)
+				q(85070),	-- when Special Assignment npc unlocked for storm phase (pop talking head)
 				-- Snapdragon timer after quest
 				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
 				--

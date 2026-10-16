@@ -4406,7 +4406,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(171754),	-- Obsidian Arborweave Cover
 						i(171744),	-- Obsidian Arborweave Headpiece
 						i(171749),	-- Obsidian Arborweave Helm
-						-- This version requires confirmation, only the wierd one tagged as heroic timewalking might have made it in.
+						-- This version requires confirmation, only the weird one tagged as heroic timewalking might have made it in.
 						i(171732, { ["timeline"] = { CREATED_8_2_5}}),	-- Sho'ravon, Greatstaff of Annihilation
 						i(171731),	-- Sho'ravon, Greatstaff of Annihilation (Heroic, confirmed drop from 15th Anniversary event)
 						i(171724),	-- Sulfuras, the Extinguished Hand

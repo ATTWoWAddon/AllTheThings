@@ -96,7 +96,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Class contructor.
+        /// Class constructor.
         /// </summary>
         static MainForm()
         {

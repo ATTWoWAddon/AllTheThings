@@ -2881,9 +2881,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(21383, {	-- Winterfall Spirit Beads
 					["description"] =
 						-- #if AFTER CATA
-						"Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The inital turn in requires 10 Winterfall Spirit Beads, and all following requires 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
+						"Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The initial turn in requires 10 Winterfall Spirit Beads, and all subsequent turn-ins require 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
 						-- #else
-						"Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
+						"Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",
 						-- #endif
 					["crs"] = {
 						10738,	-- High Chief Winterfall

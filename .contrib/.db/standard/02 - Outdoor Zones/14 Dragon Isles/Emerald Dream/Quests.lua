@@ -682,7 +682,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(209048),	-- Singed Leaflet (QI!)
 				},
 			}),
-			--[[ Rewards moved into two previouse quests and this one removed?
+			--[[ Rewards moved into two previous quests and this one removed?
 			q(78096, {	-- A Silver Lining
 				["sourceQuests"] = { 77948 },	-- Burning Out
 				["provider"] = { "n", 210251 },	-- Kery'nael Thorngale

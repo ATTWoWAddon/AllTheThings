@@ -5,7 +5,7 @@ local L = app.L;
 -- This window is not currently supported by Classic!
 if not app.IsRetail then return; end
 
--- World Quests weren't even a thing until... Was it WOD? Or was it Legion?
+-- World Quests were introduced in Legion.
 if app.GameBuildVersion < 70000 then return; end
 
 -- Global locals
@@ -84,7 +84,7 @@ app:CreateWindow("WorldQuests", {
 			},
 		})
 		self:SetData(data);
-		-- Build the initial heirarchy
+		-- Build the initial hierarchy
 		self:AssignChildren();
 		local emissaryMapIDs = {
 			{ 619, 650 },	-- Broken Isles, Highmountain
@@ -546,7 +546,7 @@ app:CreateWindow("WorldQuests", {
 			app.EnsureObject(temp)
 			-- put all the things into the window data, turning them into objects as well
 			NestObjects(self.data, temp);
-			-- Build the heirarchy
+			-- Build the hierarchy
 			self:AssignChildren();
 			-- Fill up the window
 			app.FillGroups(self.data)

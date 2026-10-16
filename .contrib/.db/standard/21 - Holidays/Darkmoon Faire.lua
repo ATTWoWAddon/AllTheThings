@@ -3031,7 +3031,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(29434, {	-- Tonk Commander
-				["qg"] = 54605,	-- Finaly Coolshot
+				["qg"] = 54605,	-- Finlay Coolshot
 				["coord"] = { 50.7, 65.1, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_4_3_0 },
 				["isDaily"] = true,

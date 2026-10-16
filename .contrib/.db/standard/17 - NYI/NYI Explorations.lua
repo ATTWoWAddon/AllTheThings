@@ -6,7 +6,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 	-- There is no reliable way to mark them as collected within the addon.
 	-- This file may include many collectible explorations that cannot be detected.
 	n(SPECIAL, {
-		--- These are used by Achievement Criterias ---
+		--- These are used by Achievement Criteria ---
 		--- Remove them from here when added correctly ---
 		exploration(11526),	-- Zovaal's Cauldron
 		exploration(8729),	-- The Sliver

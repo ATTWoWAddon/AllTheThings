@@ -1062,7 +1062,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					}),
 					-- leading clues https://www.wowhead.com/item=209781/second-booster-part#comments:id=5680742:reply=1637897
 					n(210398, {	-- Enigma Ward
-						["description"] = "Requries 3 people with Torch of Pyrreth to summon.",
+						["description"] = "Requires 3 people with Torch of Pyrreth to summon.",
 						["questID"] = 78098,
 						["coord"] = { 58.9, 78.1, THE_CAPE_OF_STRANGLETHORN },
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth

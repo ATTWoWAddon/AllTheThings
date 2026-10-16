@@ -33,7 +33,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Initialize the Tracer instance by triggering the class contructor.
+        /// Initialize the Tracer instance by triggering the class constructor.
         /// </summary>
         public static void Initialize()
         {

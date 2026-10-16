@@ -522,7 +522,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 					},
 				}),
 				o(616681, {	-- Hidden Footlocker
-					["description"] = "In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",
+					["description"] = "In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having possession of the Spare Key.",
 					["providers"] = {
 						{ "i", 260533 },	-- Oddsight Focus
 						{ "i", 228966 },	-- Starry-Eyed Goggles

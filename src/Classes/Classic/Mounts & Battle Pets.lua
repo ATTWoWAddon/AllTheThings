@@ -53,7 +53,7 @@ app.CreateMount = app.CreateClass("Mount", KEY, {
 		return (t.parent and t.parent.b) or 1;
 	end,
 },
-"WithItem", {	-- This is a conditional contructor.
+"WithItem", {	-- This is a conditional constructor.
 	link = function(t)
 		return select(2, GetItemInfo(t.itemID)) or GetSpellLink(t[KEY]);
 	end,

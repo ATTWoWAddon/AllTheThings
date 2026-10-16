@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ ["timeline"] = { ADDED_8_0_1 } }, 
 							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = { { "c", WAR_RESOURCES,  75 } },
 						}),
-						i(163201, {	-- Gnoll Targetting Barrel (TOY!)
+						i(163201, {	-- Gnoll Targeting Barrel (TOY!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(160534, {	-- Navy Blue Boat Cloak

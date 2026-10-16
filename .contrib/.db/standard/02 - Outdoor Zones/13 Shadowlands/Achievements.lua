@@ -680,7 +680,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		ach(14758, {	-- The World Beyond (mostly automated)
 			-- this one criteria is actually triggered from one of many possible ZM Puzzle WQs
 			crit(53446, {
-				-- TOOD: use new sources tech eventually
+				-- TODO: use new sources tech eventually
 				["_quests"] = {
 					65406,	-- Connecting It All
 					65417,	-- Connecting It All

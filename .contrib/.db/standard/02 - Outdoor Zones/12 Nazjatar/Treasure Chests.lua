@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				o(326401, {	-- Arcane Chest
 					["questID"] = 55950,
 					["coord"] = { 38.7, 74.4, NAZJATAR },
-					["description"] = "Use a |cFFFFD700Goblin Glider|r, |cFFFFD700Deepcoral Pod|r, or fly ontop of the rocks.",
+					["description"] = "Use a |cFFFFD700Goblin Glider|r, |cFFFFD700Deepcoral Pod|r, or fly on top of the rocks.",
 				}),
 				o(326418, {	-- Arcane Chest
 					["questID"] = 55943,

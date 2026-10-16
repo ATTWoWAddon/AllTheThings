@@ -324,7 +324,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(60874),	-- secondary quest trigger on Skyward Bell (not sure which one)
 				q(62847),	-- secondary quest trigger on Gift of Agthia
 				q(62842),	-- secondary quest trigger on Gift of Devos
-				q(60625),	-- Triggerd when looting chest at 41,67
+				q(60625),	-- Triggered when looting chest at 41,67
 				q(58292),	-- looting Purians
 				q(58293),	-- placing first Purian in the bowl
 				q(58294),	-- placing second Purian in the bowl

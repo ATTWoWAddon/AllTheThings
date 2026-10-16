@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							162304,	-- Formula: Enchant Ring - Pact of Mastery [Rank 3] (RECIPE!)
 							162317,	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3] (RECIPE!)
 							162316,	-- Formula: Enchant Weapon - Siphoning [Rank 3] (RECIPE!)
-							163201,	-- Gnoll Targetting Barrel (TOY!)
+							163201,	-- Gnoll Targeting Barrel (TOY!)
 							161568,	-- Maritime Spellweaver's Leggings
 							161569,	-- Master-At-Arms Wristguards
 							160534,	-- Navy Blue Boat Cloak

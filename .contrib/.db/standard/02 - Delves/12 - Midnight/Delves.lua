@@ -1839,7 +1839,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		}, {
 			q(95715, name(HEADERS.Map, GNARLDOR_ISLE)),	-- Gnarldor Isle
 			q(95716, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory
-			q(97064, name(HEADERS.Object, 658087, {isWeekly=true})),	-- Abundantly Bountiful Heavy Trunk spwaned
+			q(97064, name(HEADERS.Object, 658087, {isWeekly=true})),	-- Abundantly Bountiful Heavy Trunk spawned
 			q(97628),	-- Looted Afflicted Soul
 			q(97637),	-- Looted Tormented Soul
 			q(98044, name(HEADERS.Item, 268969, {isWeekly=true})),	-- Nebulous Voidcache: Delver's Trove

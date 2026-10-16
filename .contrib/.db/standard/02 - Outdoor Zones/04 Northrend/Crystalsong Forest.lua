@@ -67,7 +67,7 @@ root(ROOTS.Zones, {
 				}),
 				n(SPECIAL, {
 					applyclassicphase(WRATH_PHASE_TWO, i(45000, {	-- Winter Hyacinth
-						["description"] = "Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",
+						["description"] = "Can be found beneath the Ironwall Dam separating Icecrown from Crystalsong Forest.",
 						["provider"] = { "o", 194213 },	-- Winter Hyacinth
 						["coords"] = {
 							{ 18.5, 15.7, CRYSTALSONG_FOREST },
