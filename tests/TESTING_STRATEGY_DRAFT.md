@@ -66,10 +66,17 @@ There is no requirement to rewrite every module for testability. If a module req
 | **Plain Lua 5.1 + `assert`** | No dependencies; simple CI; already proven by #2673. | Test discovery, setup/teardown, assertions, and reporting remain our responsibility. |
 | **[LuaUnit](https://github.com/bluebird75/luaunit)** | Lightweight; richer assertions and test organization; can be vendored. | Mock/spy utilities and most runtime fixtures still need to be supplied. |
 | **[Busted](https://github.com/lunarmodules/busted)** | Mature test structure, assertions, spies/stubs, setup/teardown; also used by Questie. | Additional dependencies and tooling complexity; does not solve ATT module loading by itself. |
+| **[Lunatest](https://github.com/silentbicycle/lunatest)** | xUnit-style cases plus randomized tests; supports fixed seeds and replaying known regression inputs. | Optional random/time libraries; control seeds and trial counts for reproducibility. ATT loading and fixtures still need to be supplied. |
+| **[lunit / lunitx](https://github.com/dcurrie/lunit/blob/master/README.lunitx)** | Small xUnit-style framework with named cases, assertions, setup/teardown, and test selection. | Its documented Lua 5.1 style uses `module()` and test environments; evaluate interaction with ATT globals and fixture isolation. |
+| **[Telescope](https://github.com/norman/telescope)** | BDD-style nested contexts, before/after hooks, custom assertions, and reporters. | Requires conversion to its test registration and runner conventions; optional coverage integration is separate from test assertions. |
 
-**Open question:** Is Busted's extra functionality worth the dependency cost, or would LuaUnit/plain Lua cover ATT's foreseeable needs?
+The additional candidates declare Lua 5.1 compatibility in their package specifications: [Lunatest](https://github.com/silentbicycle/lunatest/blob/master/rockspecs/lunatest-0.9.5-0.rockspec), [lunitx](https://github.com/dcurrie/lunit/blob/master/rockspecs/lunitx-0.8-2.rockspec), and [Telescope](https://github.com/norman/telescope/blob/master/rockspecs/telescope-0.6.0-1.rockspec). These are documentation-based candidates; ATT integration has not been tested. Pin the selected version and verify its dependencies, loading behavior, and failure reporting under Lua 5.1 during a small trial.
+
+**Open question:** Which features would justify changing the plain-Lua baseline: richer assertions, fixture lifecycle, spies/stubs, randomized cases, or structured reports? Compare those needs with each candidate's dependency and migration costs.
 
 Whatever we choose, the test cases and fixtures should not be unnecessarily coupled to framework-specific helpers.
+
+Assertion and analysis tools cover narrower needs: [luassert](https://github.com/lunarmodules/luassert) supplies assertions, spies, and stubs; [LuaCov](https://github.com/lunarmodules/luacov) measures executed-code coverage; [Luacheck](https://github.com/lunarmodules/luacheck) performs static analysis. They can complement a framework, but each needs its own integration and configuration.
 
 ## Parser testing
 
@@ -86,7 +93,21 @@ Potential first targets:
 
 The preferred approach is to run **real Parser code against small input fixtures**, rather than make a test-only implementation of its rules. Ideally, these fixtures would avoid loading the entire database.
 
-[NUnit](https://nunit.org/) is a candidate for C# unit/component tests because of its fixture and parameterized-test support. However, selecting a C# test framework should follow a small experiment: can the relevant Parser operations be exercised in isolation without extensive refactoring or hidden global-state leakage?
+### C# framework candidates
+
+The following choices can target .NET Framework 4.8 according to their current documentation/package targets. Compatibility was checked on **2026-10-16**; framework, adapter, test SDK, and runtime versions still need to be selected and verified together in an ATT trial.
+
+| Choice | Useful features for Parser fixtures | Compatibility and trade-offs |
+| --- | --- | --- |
+| **[NUnit](https://www.nuget.org/packages/NUnit/5.0.0)** | Per-test and one-time setup/teardown; `TestCase` and `TestCaseSource` for input/flavor matrices. | NUnit 5 targets .NET Framework 4.6.2+, covering 4.8. Select a compatible runner or [NUnit3TestAdapter](https://docs.nunit.org/articles/vs-test-adapter/Index.html); the adapter supports NUnit 3, 4, and 5. |
+| **[xUnit.net v3](https://xunit.net/docs/getting-started/v3/getting-started)** | Facts/theories, a fresh test-class instance per test, and shared fixtures for expensive setup. | Supports .NET Framework 4.7.2+, covering 4.8. Requires an [SDK-style test project](https://xunit.net/docs/getting-started/v3/migration) that builds as an executable; choose and configure its Microsoft.Testing.Platform or VSTest integration. |
+| **[MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-intro)** | Assembly/class/test lifecycle, `DataRow`/`DynamicData`, and Microsoft test-tool integration. | Supports .NET Framework 4.6.2+, covering 4.8. Choose framework/adapter/test-SDK packages or [MSTest.Sdk](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-sdk), whose default runner is Microsoft.Testing.Platform; account for the selected project's CI/reporting configuration. |
+
+The test project's SDK and runner requirements are separate from the Parser's production target. An SDK-style test project can still target .NET Framework 4.8. Keep the real Parser's .NET Framework/NLua/native Lua dependencies in the experiment, initially on Windows with matching process/native-library architecture. Framework compatibility alone does not establish Parser portability.
+
+Treat [xUnit v2](https://www.nuget.org/packages/xunit) as a legacy option: its package is marked deprecated and receives security fixes only. Evaluate v3's requirements explicitly for a new test project.
+
+Selecting a C# test framework should follow a small experiment: can the relevant Parser operations be exercised in isolation without extensive refactoring or hidden global-state leakage? Check fixture cleanup and repeatability as well as assertion syntax and test discovery.
 
 **Important:** A CI job intended to validate Parser C# source changes must build and test that source. Running only a checked-in `Parser.exe` would not validate modifications to the C# implementation.
 
@@ -118,7 +139,16 @@ Observed API values / events: <result>
 
 That observation can inform an offline test fixture. It does **not** guarantee the same behavior on other builds, flavors, or scenarios. Fixtures should be reviewed when their underlying API assumptions change.
 
-We should not require a WoW emulator or in-game test framework as part of the initial CI design. Tools such as Wowless or WoWUnit can be evaluated later for specific problems that justify their overhead.
+### WoW-specific options
+
+These address the addon execution environment or in-game testing and should be evaluated against a specific need:
+
+| Option | Environment | Useful scope and trade-offs |
+| --- | --- | --- |
+| **[Wowless](https://github.com/wowless/wowless)** | Headless WoW Lua/FrameXML environment using Elune, a WoW-aware Lua 5.1 fork. | Can exercise broader addon loading and UI/API interactions. Its project describes itself as pre-alpha; failures may come from the emulator, and setup/diagnosis costs need evaluation. |
+| **[WoWUnit](https://github.com/Jaliborc/WoWUnit)** | Test addon running inside WoW, with monitoring UI and startup/event-driven execution. | Supports assertions and temporary global/table substitutions against a live-client environment. Requires in-game addon integration; it is a different execution path from the current standalone Linux CLI suites. |
+
+A WoW emulator or in-game framework remains an optional evaluation for problems that justify the additional environment and maintenance work.
 
 ## CI implications
 
@@ -164,17 +194,18 @@ The outcome of these experiments should inform framework selection and any share
 
 ## Decisions to make with maintainers
 
-1. **Runtime framework:** Stay with plain Lua, adopt LuaUnit, or adopt Busted? Which missing features justify a new dependency?
+1. **Runtime framework:** Which candidate adds enough value over plain Lua 5.1 to justify its dependencies and migration cost?
 2. **Runtime load boundary:** Can we test complete ATT modules with small fixtures, or are some parts too tightly coupled to startup and WoW APIs?
 3. **Mocking policy:** What should remain a local fixture, and when is a shared mock justified?
 4. **Parser entry point:** Is an isolated, small-fixture execution path feasible without substantial Parser changes?
-5. **Merge policy:** Which checks are reliable enough to block a PR, and which should remain advisory or manual?
-6. **Ownership:** Who maintains fixture assumptions when Blizzard APIs or flavor behavior change?
+5. **C# framework and runner:** Which NUnit, xUnit.net v3, or MSTest configuration works best with the isolated Parser fixture and its .NET Framework/native dependencies?
+6. **Merge policy:** Which checks are reliable enough to block a PR, and which should remain advisory or manual?
+7. **Ownership:** Who maintains fixture assumptions when Blizzard APIs or flavor behavior change?
 
 ## Tentative recommendation
 
 Start with a **minimal, framework-agnostic testing boundary** and the two experiments above. Do not build a general WoW API emulator, a large shared fixture system, or a full-database snapshot suite up front.
 
-Busted and NUnit are reasonable leading candidates for Lua and C# respectively, but neither should be adopted solely for consistency or feature count. We should choose them when they demonstrably reduce the total maintenance cost of useful, trustworthy tests.
+Compare the framework candidates against these experiments before choosing one. Select a framework when it demonstrably reduces the total maintenance cost of useful, trustworthy tests; consistency or feature count alone should not decide the outcome.
 
 **The intended outcome is a small test system that can grow when needed—not a second implementation of ATT or WoW.**
