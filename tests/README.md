@@ -5,6 +5,9 @@ production files from the current checkout, provide the game APIs and saved data
 that the code needs, and check the results. This lets us catch regressions in
 names, tooltips, identifiers, and account synchronization without starting the game.
 
+The [testing strategy draft](TESTING_STRATEGY_DRAFT.md) proposes future directions
+for runtime, Parser, and generated-data testing. It is a proposal for review.
+
 ## Run a suite locally
 
 Use **Lua 5.1**. No LuaRocks packages or separate test framework are required.
