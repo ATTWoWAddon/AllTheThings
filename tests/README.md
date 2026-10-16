@@ -6,6 +6,11 @@ that the code needs, and check the results. This lets us catch regressions in
 character data, collection tooltips, API compatibility, sorting, and window
 setup without starting the game.
 
+The [testing strategy draft](TESTING_STRATEGY_DRAFT.md) walks through one existing
+regression and proposes the next small step. Detailed [framework comparisons and
+addon examples](TESTING_REFERENCES.md) are optional reading. Framework choices
+remain open for review.
+
 ## Run a suite locally
 
 Use **Lua 5.1**. No LuaRocks packages or separate test framework are required.
