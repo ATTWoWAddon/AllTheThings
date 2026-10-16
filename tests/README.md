@@ -5,8 +5,10 @@ production files from the current checkout, provide the game APIs and saved data
 that the code needs, and check the results. This lets us catch regressions in
 names, tooltips, identifiers, and account synchronization without starting the game.
 
-The [testing strategy draft](TESTING_STRATEGY_DRAFT.md) proposes future directions
-for runtime, Parser, and generated-data testing. It is a proposal for review.
+The [testing strategy draft](TESTING_STRATEGY_DRAFT.md) walks through one existing
+regression and proposes the next small step. Detailed [framework comparisons and
+addon examples](TESTING_REFERENCES.md) are optional reading. Framework choices
+remain open for review.
 
 ## Run a suite locally
 
