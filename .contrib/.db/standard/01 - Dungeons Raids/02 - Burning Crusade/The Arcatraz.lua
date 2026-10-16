@@ -246,8 +246,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = { { "i", 30634, 1 } },	-- Warpforged Key
+				["description"] = "You need to have 2 keys to the instance in order to access this mode.",
+				["cost"] = {
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265847, 1 },	-- Communal Warpforged Key
+					-- #endif
+					{ "i", 31084, 1 },	-- Key to the Arcatraz
+					{ "i", 30634, 1 },	-- Warpforged Key
+				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {

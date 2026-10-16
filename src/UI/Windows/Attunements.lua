@@ -132,6 +132,10 @@ app:CreateWindow("Attunements", {
 		};
 		if app.GameBuildVersion > 20501 then
 			local tbcAttunements = {
+				app.CreateDifficulty(1, {	-- Normal [The Black Morass]
+					sourceParent = app.CreateMap(273),
+					attunementQuestID = 10296,	-- The Black Morass
+				}),
 				app.CreateDifficulty(1, {	-- Normal [The Arcatraz]
 					sourceParent = app.CreateMap(269),
 					attunementKeys = { 31084 },	-- Key to the Arcatraz

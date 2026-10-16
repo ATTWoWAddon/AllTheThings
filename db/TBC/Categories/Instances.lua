@@ -8072,7 +8072,7 @@ s(137781,27434,{b=1,f=5,loc=41,lvl=66,q=3,u=17}),
 s(137780,27433,{b=1,f=4,loc=41,lvl=66,q=3,u=17}),
 i(27432,{b=1,f=52,lvl=66,q=3,u=17}),
 r(31078,{b=1,itemID=24173,learnedAt=370,q=4,requireSkill=755,u=17})}})}}),
-d(2,{cost={{"i",30635,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",30635,1},{"i",265849,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17848,17862,18096},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30589,{b=1,q=4,u=17}),
@@ -8300,7 +8300,7 @@ s(138255,27908,{b=1,f=5,loc=46,lvl=70,q=3,u=17}),
 s(138256,27909,{b=1,f=6,loc=46,lvl=70,q=3,u=17}),
 s(138249,27902,{b=1,f=4,loc=47,lvl=70,q=3,u=17}),
 r(31452,{b=1,itemID=24309,learnedAt=375,q=4,requireSkill=197,u=17})}})}}),
-d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",27991,1},{"i",265845,1},{"i",30633,1}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={18667,18708,18731,18732},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30559,{b=1,q=4,u=17}),
@@ -8418,7 +8418,7 @@ s(138577,28231,{b=1,f=6,loc=42,lvl=70,q=3,u=17}),
 s(138752,28406,{b=1,f=4,loc=47,lvl=70,q=3,u=17}),
 i(28407,{b=1,f=52,lvl=70,q=3,u=17}),
 i(28418,{b=1,f=53,lvl=70,q=3,u=17})}})}}),
-d(2,{cost={{"i",30634,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",30634,1},{"i",31084,1},{"i",265847,1}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={20870,20885,20886,20912},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30582,{b=1,q=4,u=17}),
@@ -8465,7 +8465,7 @@ i(28418,{b=1,f=53,lvl=70,q=3,u=17}),
 i(23572,{b=1,q=3,u=17}),
 i(33861,{q=1,u=17})}})}})}}),
 inst(255,{coords={
-[75]={{37.2,83.3}}},lore="The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",lvl=65,mapID=273,savedInstanceID=269,u=17,zoneTextAreaID=2366,g={
+[75]={{37.2,83.3}}},description="You must have obtained the quest \"The Black Morass\" in order to enter.",lore="The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",lvl=65,mapID=273,savedInstanceID=269,sourceQuests={10296},u=17,zoneTextAreaID=2366,g={
 h(-45,{u=17,g={
 q(10298,{lvl=66,qgs={20201},rwp=40300,sourceQuests={10297},u=17,g={
 i(29320,{b=1,f=52,q=3,u=17}),
@@ -8514,7 +8514,7 @@ s(138324,27977,{b=1,f=7,loc=46,lvl=68,q=3,u=17}),
 s(138186,27839,{b=1,f=7,loc=46,lvl=70,q=3,u=17}),
 s(138220,27873,{b=1,f=5,loc=46,lvl=70,q=3,u=17}),
 i(28190,{b=1,f=53,lvl=70,q=3,u=17})}})}}),
-d(2,{cost={{"i",30635,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",30635,1},{"i",265849,1}},description="You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",lvl=70,sourceQuests={10296},u=17,g={
 h(-19,{crs={17879,17880,17881},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30558,{b=1,q=4,u=17}),
@@ -8604,7 +8604,9 @@ s(134775,24398,{b=1,f=5,loc=41,lvl=61,q=3,u=17}),
 s(134774,24397,{b=1,f=4,loc=42,lvl=61,q=3,u=17}),
 s(134773,24396,{b=1,f=5,loc=42,lvl=61,q=3,u=17}),
 s(134772,24395,{b=1,f=4,loc=45,lvl=61,q=3,u=17})}})}}),
-d(2,{cost={{"i",265826,1},{"i",265830,1},{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,_.ResolveQuestData({aqd=
+{cost={{"i",265830,1},{"i",30622,1}}},description="You need to have a key to the instance in order to access this mode.",hqd=
+{cost={{"i",265826,1},{"i",30637,1}}},lvl=70,u=17,g={
 h(-19,{crs={17377,17380,17381},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30601,{b=1,q=4,u=17}),
@@ -8641,7 +8643,7 @@ i(28121,{b=1,f=53,lvl=70,q=3,u=17}),
 s(137869,27522,{b=1,f=6,loc=43,lvl=70,q=3,u=17}),
 s(137841,27494,{b=1,f=6,loc=43,lvl=70,q=3,u=17}),
 i(23572,{b=1,q=3,u=17}),
-i(33814,{q=1,u=17})}})}})}}),
+i(33814,{q=1,u=17})}})}}))}}),
 inst(257,{coords={
 [1953]={{71.74,54.95}}},lore="Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",lvl=65,mapID=266,savedInstanceID=553,u=17,zoneTextAreaID=3847,g={
 h(-45,{u=17,g={
@@ -8697,7 +8699,7 @@ s(138693,28347,{b=1,f=5,loc=46,lvl=70,q=3,u=17}),
 s(138687,28341,{b=1,f=28,lvl=70,q=3,u=17}),
 r(31454,{b=1,itemID=24311,learnedAt=375,q=4,requireSkill=197,u=17}),
 i(31085,{q=1,u=17})}})}}),
-d(2,{cost={{"i",30634,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",30634,1},{"i",265847,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={17975,17976,17977,17978,17980},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30574,{b=1,q=4,u=17}),
@@ -8803,7 +8805,7 @@ s(138632,28286,{b=1,f=31,lvl=70,q=3,u=17}),
 s(138550,28204,{b=1,f=5,loc=42,lvl=70,q=3,u=17}),
 r(26784,{b=1,itemID=21907,learnedAt=370,q=2,requireSkill=197,u=17}),
 i(31086,{q=1,u=17})}})}}),
-d(2,{cost={{"i",30634,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,{cost={{"i",30634,1},{"i",265847,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
 h(-19,{crs={19219,19220,19221},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30566,{b=1,q=4,u=17}),
@@ -8947,7 +8949,9 @@ s(137821,27474,{b=1,f=6,loc=44,lvl=70,q=3,u=17}),
 i(27529,{b=1,f=53,lvl=70,q=3,u=17}),
 s(137883,27536,{b=1,f=4,loc=44,lvl=70,q=3,u=17}),
 s(137881,27534,{b=1,f=1,lvl=70,q=3,u=17})}})}}),
-d(2,{cost={{"i",265826,1},{"i",265830,1},{"i",30637,1},{"i",30622,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,u=17,g={
+d(2,_.ResolveQuestData({aqd=
+{cost={{"i",28395,1},{"i",265830,1},{"i",30622,1}}},description="You need to have 2 keys to the instance in order to access this mode.",hqd=
+{cost={{"i",28395,1},{"i",265826,1},{"i",30637,1}}},lvl=70,u=17,g={
 h(-19,{crs={16807,16808,16809,20923},u=17,g={
 i(29434,{b=1,lvl=70,q=4,u=17}),
 i(30547,{b=1,q=4,u=17}),
@@ -8998,7 +9002,7 @@ s(139609,29263,{b=1,f=5,loc=43,lvl=70,q=4,u=17}),
 s(137883,27536,{b=1,f=4,loc=44,lvl=70,q=3,u=17}),
 s(137881,27534,{b=1,f=1,lvl=70,q=3,u=17})}}),
 n(17301,{u=17,g={
-i(31716,{q=1,u=17})}})}})}}),
+i(31716,{q=1,u=17})}})}}))}}),
 inst(260,{coords={
 [1946]={{48.95,35.84}}},lore="The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",lvl=59,mapID=265,savedInstanceID=547,u=17,zoneTextAreaID=3717,g={
 h(-45,{u=17,g={

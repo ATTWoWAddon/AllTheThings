@@ -1675,6 +1675,16 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
 							}, {	-- Revered
 								i(29180),	-- Blessed Scale Girdle
+								-- #if CLASSIC_ANNIVERSARY
+								i(265848, {	-- Communal Warpforged Pouch
+									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									["groups"] = {
+										i(265847, {	-- Communal Warpforged Key
+											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+										}),
+									},
+								}),
+								-- #endif
 								i(33159, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Blood of Amber (RECIPE!)
 								i(24182),	-- Design: Talasite Owl (RECIPE!)
 								applyclassicphase(TBC_PHASE_TWO, i(35359)),	-- Dragonhide Spaulders
@@ -2347,6 +2357,13 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35378)),	-- Stalker's Chain Helm
 								applyclassicphase(TBC_PHASE_TWO, i(35373)),	-- Wyrmhide Legguards
 							}, {	-- Revered
+								i(30633, {	-- Auchenai Key
+									["timeline"] = { REMOVED_4_2_0 },
+									-- #if ANYCLASSIC
+									["OnTooltip"] = [[_.OnTooltipDB.ShowHonoredKeyComparison]],
+									["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185691),
+									-- #endif
+								}),
 								-- #if CLASSIC_ANNIVERSARY
 								i(265846, {	-- Communal Auchenai Pouch
 									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
@@ -2357,13 +2374,6 @@ root(ROOTS.Zones, {
 									},
 								}),
 								-- #endif
-								i(30633, {	-- Auchenai Key
-									["timeline"] = { REMOVED_4_2_0 },
-									-- #if ANYCLASSIC
-									["OnTooltip"] = [[_.OnTooltipDB.ShowHonoredKeyComparison]],
-									["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185691),
-									-- #endif
-								}),
 								i(33157, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Falling Star (RECIPE!)
 								i(24179),	-- Design: Felsteel Boar (RECIPE!)
 								i(24175),	-- Design: Pendant of Thawing (RECIPE!)

@@ -176,6 +176,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(TBC_PHASE_TWO, i(35376)),	-- Stalker's Chain Armor
 							applyclassicphase(TBC_PHASE_TWO, i(35372)),	-- Wyrmhide Helm
 						}, {	-- Revered
+							-- #if CLASSIC_ANNIVERSARY
+							i(265850, {	-- Communal Time Pouch
+								["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+								["groups"] = {
+									i(265849, {	-- Communal Key of Time
+										["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
+									}),
+								},
+							}),
+							-- #endif
 							i(29185),	-- Continuum Blade
 							i(24181),	-- Design: Living Ruby Serpent (RECIPE!)
 							i(24174),	-- Design: Pendant of Frozen Flame (RECIPE!)

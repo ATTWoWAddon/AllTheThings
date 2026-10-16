@@ -255,13 +255,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
-					{ "i", 30622, 1 },	-- Flamewrought Key [A]
-					{ "i", 30637, 1 },	-- Flamewrought Key [H]
-					-- #if CLASSIC_ANNIVERSARY
-					{ "i", 265830, 1 },	-- Communal Flamewrought Key [A]
-					{ "i", 265826, 1 },	-- Communal Flamewrought Key [H]
-					-- #endif
+				["aqd"] = {
+					["cost"] = {
+						{ "i", 30622, 1 },    -- Flamewrought Key [A]
+						-- #if CLASSIC_ANNIVERSARY
+						{ "i", 265830, 1 },    -- Communal Flamewrought Key [A]
+						-- #endif
+					},
+				},
+				["hqd"] = {
+					["cost"] = {
+						{ "i", 30637, 1 },    -- Flamewrought Key [H]
+						-- #if CLASSIC_ANNIVERSARY
+						{ "i", 265826, 1 },    -- Communal Flamewrought Key [H]
+						-- #endif
+					},
 				},
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),

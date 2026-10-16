@@ -10,6 +10,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #endif
 		["mapID"] = CAVERNS_OF_TIME_BLACK_MORASS,
 		["coord"] = { 37.2, 83.3, CAVERNS_OF_TIME },
+		-- #if BEFORE 4.2.0
+		["description"] = "You must have obtained the quest \"The Black Morass\" in order to enter.",
+		["sourceQuest"] = 10296,	-- The Black Morass
+		-- #endif
 		["lvl"] = lvlsquish(65, 65, 25),
 		["groups"] = {
 			n(QUESTS, {
@@ -164,8 +168,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = { { "i", 30635, 1 } },	-- Key of Time
+				["description"] = "You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",
+				["cost"] = {
+					-- #if CLASSIC_ANNIVERSARY
+					{ "i", 265849, 1 },	-- Communal Key of Time
+					-- #endif
+					{ "i", 30635, 1 },	-- Key of Time
+				},
+				["sourceQuest"] = 10296,	-- The Black Morass
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {

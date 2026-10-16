@@ -3521,6 +3521,8 @@ s(145128,35390,{b=1,c={7},f=6,loc=41,lvl=70,minReputation={989,9000},q=3,u=18}),
 s(145131,35393,{b=1,c={7},f=6,loc=40,lvl=70,minReputation={989,9000},q=3,u=18}),
 s(145114,35376,{b=1,c={3},f=6,loc=42,lvl=70,minReputation={989,9000},q=3,u=18}),
 s(145110,35372,{b=1,c={11},f=5,loc=40,lvl=70,minReputation={989,9000},q=3,u=18}),
+i(265850,{awp=20505,minReputation={989,21000},rwp=40200,u=17,g={
+i(265849,{minReputation={989,21000},u=17})}}),
 s(139531,29185,{b=1,f=25,lvl=70,minReputation={989,21000},q=3,u=17}),
 r(31081,{b=1,itemID=24181,learnedAt=370,minReputation={989,21000},q=3,requireSkill=755,u=17}),
 r(31062,{b=1,itemID=24174,learnedAt=360,minReputation={989,21000},q=3,requireSkill=755,u=17}),
@@ -15135,6 +15137,8 @@ n(959,{coords={
 n(1198,{coords={
 [1429]={{83.2,66}}},r=2,g={
 s(124210,11303,{f=32,isLimited=1,lvl=11,q=2})}}),
+n(955,{coords={
+[1429]={{24,73}}}}),
 n(66,{coords={
 [1429]={{41.8,67}}},r=2,g={
 r(7630,{isLimited=1,itemID=6270,learnedAt=55,q=1,requireSkill=197}),
@@ -21221,6 +21225,8 @@ s(145133,35395,{b=1,c={7},f=6,loc=41,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(145118,35380,{b=1,c={3},f=6,loc=41,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(145113,35375,{b=1,c={11},f=5,loc=42,lvl=70,minReputation={935,9000},q=3,u=18}),
 s(139526,29180,{b=1,f=6,loc=45,lvl=70,minReputation={935,21000},q=3,u=17}),
+i(265848,{awp=20505,minReputation={935,21000},rwp=40200,u=17,g={
+i(265847,{minReputation={935,21000},u=17})}}),
 r(42592,{awp=20200,b=1,itemID=33159,learnedAt=360,minReputation={935,21000},q=1,requireSkill=755,u=17}),
 r(31082,{b=1,itemID=24182,learnedAt=370,minReputation={935,21000},q=3,requireSkill=755,u=17}),
 s(145097,35359,{b=1,c={11},f=5,loc=41,lvl=70,minReputation={935,21000},q=3,u=18}),
@@ -22125,10 +22131,10 @@ s(145120,35382,{b=1,c={7},f=6,loc=44,lvl=70,minReputation={1011,9000},q=3,u=18})
 s(145127,35389,{b=1,c={7},f=6,loc=46,lvl=70,minReputation={1011,9000},q=3,u=18}),
 s(145129,35391,{b=1,c={7},f=6,loc=42,lvl=70,minReputation={1011,9000},q=3,u=18}),
 s(145116,35378,{b=1,c={3},f=6,loc=40,lvl=70,minReputation={1011,9000},q=3,u=18}),
-s(145111,35373,{b=1,c={11},f=5,loc=46,lvl=70,minReputation={1011,9000},q=3,u=18}),
-i(265846,{awp=20505,minReputation={1011,21000},rwp=40200,u=17,g={
-i(265845,{minReputation={1011,21000},u=17})}}),(_.OnInitDB.GenerateCompareOtherKey_185691)(
+s(145111,35373,{b=1,c={11},f=5,loc=46,lvl=70,minReputation={1011,9000},q=3,u=18}),(_.OnInitDB.GenerateCompareOtherKey_185691)(
 i(30633,{b=1,minReputation={1011,21000},OnTooltip=_.OnTooltipDB.ShowHonoredKeyComparison,q=1,rwp=40200,u=17})),
+i(265846,{awp=20505,minReputation={1011,21000},rwp=40200,u=17,g={
+i(265845,{minReputation={1011,21000},u=17})}}),
 r(42590,{awp=20200,b=1,itemID=33157,learnedAt=360,minReputation={1011,21000},q=1,requireSkill=755,u=17}),
 r(31079,{b=1,itemID=24179,learnedAt=370,minReputation={1011,21000},q=3,requireSkill=755,u=17}),
 r(31063,{b=1,itemID=24175,learnedAt=360,minReputation={1011,21000},q=3,requireSkill=755,u=17}),
