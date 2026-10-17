@@ -512,18 +512,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
-			q(7221, {	-- Speak with Prospector Stonehewer
-				lvl = 51,
-				races = ALLIANCE_ONLY,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(7222, {	-- Speak with Voggah Deathgrip
-				lvl = 51,
-				races = HORDE_ONLY,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
 			q(7141, {	-- The Battle of Alterac (Alliance)
-				["sourceQuests"] = { 7221 },	-- Speak with Prospector Stonehewer
 				qg = 13816,	-- Prospector Stonehewer
 				coord = { 41.0, 79.6, MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -535,7 +524,6 @@ battleground(MAP.ALTERAC_VALLEY, {
 				},
 			}),
 			q(7142, {	-- The Battle for Alterac (Horde)
-				["sourceQuests"] = { 7222 },	-- Speak with Voggah Deathgrip
 				qg = 13817,	-- Voggah Deathgrip
 				coord = { 63.6, 60.4, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
