@@ -1157,6 +1157,21 @@ if app.GameBuildVersion >= 50000 then
 	checkboxShowAllLearnableQuestRewards:AlignBelow(checkboxNoLevelFilter)
 end
 
+---@type ATTSettingsCheckButton
+local checkboxQuestRewardConsumables = child:CreateCheckBox(L.SHOW_QUEST_REWARD_CONSUMABLES_CHECKBOX,
+	---@param self ATTSettingsCheckButton Checkbox whose checkmark follows the independent display setting.
+	---@return nil
+	function(self)
+		self:SetChecked(settings:Get("Show:QuestRewardConsumables"))
+	end,
+	---@param self ATTSettingsCheckButton Checkbox carrying the newly selected display state.
+	---@return nil
+	function(self)
+		settings:Set("Show:QuestRewardConsumables", self:GetChecked())
+	end)
+checkboxQuestRewardConsumables:SetATTTooltip(L.SHOW_QUEST_REWARD_CONSUMABLES_CHECKBOX_TOOLTIP)
+checkboxQuestRewardConsumables:AlignBelow(checkboxShowAllLearnableQuestRewards or checkboxNoSkillLevelFilter or checkboxNoLevelFilter)
+
 local checkboxNoSeasonalFilter = child:CreateCheckBox("|T"..app.asset("Category_Holidays")..":0|t |c" .. app.DefaultColors.Insane .. L.SHOW_ALL_SEASONAL,
 	function(self)
 		self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
@@ -1174,7 +1189,7 @@ local checkboxNoSeasonalFilter = child:CreateCheckBox("|T"..app.asset("Category_
 	end
 )
 checkboxNoSeasonalFilter:SetATTTooltip(L.SHOW_ALL_SEASONAL_TOOLTIP)
-checkboxNoSeasonalFilter:AlignBelow(checkboxShowAllLearnableQuestRewards or checkboxNoSkillLevelFilter or checkboxNoLevelFilter)
+checkboxNoSeasonalFilter:AlignBelow(checkboxQuestRewardConsumables)
 
 local checkboxShowPetBattles = child:CreateCheckBox("|T"..app.asset("Category_PetBattles")..":0|t |c" .. app.DefaultColors.Insane .. L.SHOW_PET_BATTLES_CHECKBOX,
 function(self)

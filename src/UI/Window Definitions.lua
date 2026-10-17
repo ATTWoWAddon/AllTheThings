@@ -837,6 +837,7 @@ local function SetRowData(self, row, data)
 	end
 end
 -- Allow re-attempting the RowOnEnter logic for a row
+---@return nil
 local function RedrawRowTooltip()
 	-- app.PrintDebug("RedrawRowTooltip",GameTooltip and GameTooltip:IsVisible(),GameTooltip and GameTooltip:GetOwner())
 	if GameTooltip and GameTooltip:IsVisible() then
@@ -851,6 +852,8 @@ local function RedrawRowTooltip()
 		end
 	end
 end
+-- Rebuild an active ATT row tooltip without recalculating its collection window.
+app.AddEventHandler("QuestRewardConsumablesChanged", RedrawRowTooltip)
 local function StopMovingOrSizing(self)
 	self:StopMovingOrSizing();
 	self.isMoving = false;

@@ -83,6 +83,7 @@ src\Modules\Filter.lua
 src\Modules\Inventory.lua
 src\Modules\Model.lua
 src\Modules\Reagent.lua
+src\Modules\QuestRewardVisibility.lua
 src\Modules\Search.lua
 src\Modules\Social.lua
 src\Modules\Symlink.lua
