@@ -336,6 +336,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(94502, {	-- Call of Water
+				["sourceQuests"] = { 94501 },	-- Call of Water
 				qg = 258043,	-- Norric Lochthane
 				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,

@@ -1566,6 +1566,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(94465, {	-- Call of Fire
+				["sourceQuests"] = { 94449 },	-- Call of Fire
 				qg = 257597,	-- Bruegs Kindleborn
 				coord = { 87.94, 44.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,

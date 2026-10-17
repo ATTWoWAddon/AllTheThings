@@ -78,6 +78,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(3388),	-- Strong Troll's Blood Potion
 				},
 			}),
+			q(92109, {	-- My First Alchemy Set
+				qg = 249713,	-- Odd Child
+				coord = { 41.0, 79.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {
+					{ "i", 3371, 5 },	-- Empty Vial
+					{ "i", 765, 5 },	-- Silverleaf
+					{ "i", 2447, 5 },	-- Peacebloom
+				},
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+			}),
 			q(92110, {	-- My First Real Potion
 				qg = 249713,	-- Odd Child
 				coord = { 41., 79.0, MAP.WESTFALL },

@@ -513,6 +513,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				isBreadcrumb = true,
 			}),
 			q(7141, {	-- The Battle of Alterac (Alliance)
+				["sourceQuests"] = { 7221 },	-- Speak with Prospector Stonehewer
 				qg = 13816,	-- Prospector Stonehewer
 				coord = { 41.0, 79.6, MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -524,6 +525,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				},
 			}),
 			q(7142, {	-- The Battle for Alterac (Horde)
+				["sourceQuests"] = { 7222 },	-- Speak with Voggah Deathgrip
 				qg = 13817,	-- Voggah Deathgrip
 				coord = { 63.6, 60.4, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,

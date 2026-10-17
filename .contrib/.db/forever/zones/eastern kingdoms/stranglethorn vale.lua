@@ -617,6 +617,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(627, {	-- Favor for Krazek
+				["sourceQuests"] = { 210 },	-- Krazek's Cookery
 				qg = 773,	-- Krazek
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.ARATHI_HIGHLANDS },

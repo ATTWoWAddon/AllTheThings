@@ -1371,7 +1371,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 10,
 			}),
 			q(61, {	-- Shipment to Stormwind
-				sourceQuest = 47,	-- Gold Dust Exchange
+				["sourceQuests"] = { 60 },	-- Kobold Candles
 				qg = 253,	-- William Pestle
 				qi = 957,	-- William's Shipment (PQI!)
 				coord = { 43.2, 65.8, MAP.ELWYNN_FOREST },

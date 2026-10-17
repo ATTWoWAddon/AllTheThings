@@ -521,7 +521,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(100, {	-- Call of Water (8/9)
-				sourceQuest = 1534,	-- Call of Water (7/9)
+				["sourceQuests"] = { 63 },	-- Call of Water (7/9)
 				provider = { "o", 113791 },	-- Brazier of Everfount
 				coord = { 38.3, 44.6, MAP.SILVERPINE_FOREST },
 				classes = { SHAMAN },
@@ -1949,7 +1949,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 30,
 			}),
 			q(876, {	-- Serena Bloodfeather
-				sourceQuest = 867,	-- Harpy Raiders
+				["sourceQuests"] = { 875 },	-- Harpy Lieutenants
 				qg = 3449,	-- Darsok Swiftdagger
 				coord = { 51.62, 30.90, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
@@ -2577,6 +2577,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(95774, {	-- Her Name Is Olgra
+				["sourceQuests"] = { 4921 },	-- Lost in Battle
 				qg = 3432,	-- Mankrik
 				coord = { 51.95, 31.58, MAP.THE_BARRENS },
 				races = HORDE_ONLY,

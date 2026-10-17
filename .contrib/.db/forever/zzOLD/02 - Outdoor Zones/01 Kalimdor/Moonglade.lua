@@ -383,7 +383,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				},
 			}),
 			q(6127, {	-- The Principal Source [H]
-				["sourceQuest"] = 6121,	-- Lessons Anew [H]
+				["sourceQuests"] = { 6126 },	-- Lessons Anew [H]
 				["qg"] = 11802,	-- Dendrite Starblaze
 				["coord"] = { 56.2, 30.4, MAP.MOONGLADE },
 				["maps"] = { MAP.THE_BARRENS },

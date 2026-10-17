@@ -478,7 +478,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(1445, {	-- The Temple of Atal'Hakkar
-					["sourceQuest"] = 1424,	-- Pool of Tears
+					["sourceQuests"] = { 1444 },	-- Return to Fel'Zerul
 					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },

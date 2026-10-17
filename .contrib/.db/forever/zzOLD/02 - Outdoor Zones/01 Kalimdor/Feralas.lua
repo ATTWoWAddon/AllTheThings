@@ -990,7 +990,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				},
 			}),
 			q(4131, {	-- The Woodpaw Gnolls
-				["sourceQuest"] = 4129,	-- Psychometric Reading
+				["sourceQuests"] = { 4130 },	-- Psychometric Reading
 				["qg"] = 7880,	-- Ginro Hearthkindle
 				["coord"] = { 31.9, 45.1, MAP.FERALAS },
 				["races"] = ALLIANCE_ONLY,

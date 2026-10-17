@@ -41,6 +41,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(91209, {	-- Continue Your Training
+						["sourceQuests"] = { 91208 },	-- Coming to Terms
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
@@ -55,6 +56,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						},
 					}),
 					q(90902, {	-- Rediscovering the Light
+						["sourceQuests"] = { 91282 },	-- A Second Home
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
@@ -96,7 +98,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			q(94435, {	-- A Lesson in Divinity
+				qg = 257648,	-- Tanis Alderwood
+				coord = { 65.6, 37.8, MAP.UNDERCITY },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(94436, {	-- A Lesson in Divinity
+				["sourceQuests"] = { 94435 },	-- A Lesson in Divinity
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
@@ -104,7 +115,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			q(94438, {	-- A Lesson in Divinity
+				["sourceQuests"] = { 94436 },	-- A Lesson in Divinity
+				qg = 257655,	-- Deathguard Billmuth
+				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+				traces = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(94440, {	-- A Lesson in Divinity
+				["sourceQuests"] = { 94438 },	-- A Lesson in Divinity
 				qg = 257663,	-- Deathguard Falgan
 				coord = { 86.64, 47.63, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
@@ -118,6 +139,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(94441, {	-- A Lesson in Divinity
+				["sourceQuests"] = { 94440 },	-- A Lesson in Divinity
 				qg = 257655,	-- Deathguard Billmuth
 				coord = { 21.95, 44.5, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },

@@ -32,6 +32,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					}),
 				},
 			}),
+			q(98393, {	-- The Great Cat Spirit
+				qg = 4217,	-- Mathrengyl Bearwalker
+				coord = { 35.2, 8.0, MAP.DARNASSUS },
+				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				classes = { DRUID },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(98394, {	-- The Great Cat Spirit
 				qg = 11802,	-- Dendrite Starblaze
 				coord = { 56.21, 30.64, MAP.MOONGLADE },
@@ -41,6 +49,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98396, {	-- The Great Cat Spirit
+				["sourceQuests"] = { 98394 },	-- The Great Cat Spirit
 				qg = 11957,	-- Great Cat Spirit
 				coord = { 58.39, 73.52, MAP.MOONGLADE },
 				races = { NIGHTELF },
@@ -84,6 +93,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 						provider = { "i", 280680 },	-- Relic of the Silent Shadow (QI!)
 					}),
 				},
+			}),
+			q(98731, {	-- Blessings of the Great Cat Spirit
+				qg = 11957,	-- Great Cat Spirit
+				coord = { 54.5, 74.8, MAP.MOONGLADE },
+				races = { NIGHTELF },
+				classes = { DRUID },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98397, {	-- To Darnassus
 				qg = 11802,	-- Dendrite Starblaze
