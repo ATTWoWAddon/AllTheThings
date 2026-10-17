@@ -1,0 +1,92 @@
+name: Lua Regression Tests
+
+on: # Run when addon code, tests, or this workflow changes
+  push:
+    branches:
+      - '**' # Include branch names containing '/'
+    tags-ignore:
+      - '**' # Branch CI only; ignore all tags
+    paths:
+      - 'AllTheThings.lua'
+      - 'src/**'
+      - 'lib/**'
+      - 'tests/**'
+      - '.github/workflows/LuaRegression.yml'
+  pull_request:
+    paths:
+      - 'AllTheThings.lua'
+      - 'src/**'
+      - 'lib/**'
+      - 'tests/**'
+      - '.github/workflows/LuaRegression.yml'
+  workflow_dispatch: # Actions -> Lua Regression Tests -> Run workflow -> select a branch (requires this file on the default branch)
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-26.04 # Linux runner with an explicit Lua 5.1 package
+    timeout-minutes: 10
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install Lua 5.1
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends lua5.1
+          lua5.1 -v
+          lua5.1 -e 'assert(_VERSION == "Lua 5.1", "Lua 5.1 is required")'
+
+      - name: Run Lua regression tests sequentially
+        id: tests
+        run: |
+          # Discover nested suites and sort paths consistently without splitting spaces.
+          find tests -type f -name '*.lua' -print0 | LC_ALL=C sort -z > "$RUNNER_TEMP/lua-regression-files"
+          total=0
+          failed=0
+          printf '## Lua 5.1 regression tests\n\n| Test | Result | Exit code |\n| --- | --- | --- |\n' >> "$GITHUB_STEP_SUMMARY"
+
+          # Each suite gets a fresh Lua process; failures do not stop later suites.
+          while IFS= read -r -d '' test_file; do
+            total=$((total + 1))
+            printf '::group::%s\n' "$test_file"
+            if lua5.1 "$test_file" .; then
+              result=PASS
+              exit_code=0
+            else
+              exit_code=$?
+              result=FAIL
+              failed=$((failed + 1))
+            fi
+            printf '::endgroup::\n'
+            printf '%s: %s (exit %s)\n' "$test_file" "$result" "$exit_code"
+            printf '| `%s` | %s | %s |\n' "$test_file" "$result" "$exit_code" >> "$GITHUB_STEP_SUMMARY"
+          done < "$RUNNER_TEMP/lua-regression-files"
+
+          printf '\nSuites: %s; passed: %s; failed: %s.\n' "$total" "$((total - failed))" "$failed" >> "$GITHUB_STEP_SUMMARY"
+          printf 'total=%s\nfailed=%s\n' "$total" "$failed" >> "$GITHUB_OUTPUT"
+
+      - name: Full Success Check
+        if: always() # Validate only after every discovered suite has run
+        env:
+          TEST_OUTCOME: ${{ steps.tests.outcome }}
+          TOTAL: ${{ steps.tests.outputs.total }}
+          FAILED: ${{ steps.tests.outputs.failed }}
+        run: |
+          if [[ "$TEST_OUTCOME" != success || -z "$TOTAL" || "$TOTAL" == 0 ]]; then
+            echo '::error::Lua regression tests did not complete or no test files were found.'
+            exit 1
+          fi
+          if [[ "$FAILED" != 0 ]]; then
+            printf '::error::%s of %s Lua regression suites failed.\n' "$FAILED" "$TOTAL"
+            exit 1
+          fi
+          printf 'All %s Lua regression suites passed.\n' "$TOTAL"
