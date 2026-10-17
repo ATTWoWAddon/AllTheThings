@@ -78,6 +78,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(3388),	-- Strong Troll's Blood Potion
 				},
 			}),
+			q(94503, {	-- Call of Water
+				sourceQuests = { 94502 },	-- Call of Water
+				provider = { "o", 619896 },	-- Forgotten Shrine
+				coord = { 45.6, 59.9, MAP.WESTFALL },
+				races = ALLIANCE_ONLY,
+				classes = { SHAMAN },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(92109, {	-- My First Alchemy Set
 				qg = 249713,	-- Odd Child
 				coord = { 41.0, 79.0, MAP.WESTFALL },

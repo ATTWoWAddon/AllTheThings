@@ -1511,7 +1511,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(786, {	-- Thwarting Kolkar Aggression
 				["sourceQuests"] = { 785 },	-- A Strategic Alliance
-				--["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
 				qg = 3140,	-- Lar Prowltusk
 				coord = { 54.52, 75.20, MAP.DUROTAR },
 				races = HORDE_ONLY,

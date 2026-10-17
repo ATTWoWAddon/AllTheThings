@@ -211,15 +211,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(6714),	-- Ez-Thro Dynamite
 				},
 			}),
-			q(94503, {	-- Call of Water
-				["provider"] = { "o", 619896 },	-- Forgotten Shrine
-				["sourceQuests"] = { 94502 },	-- Call of Water
-				["coord"] = { 45.6, 59.9, MAP.WETLANDS },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { SHAMAN },
-				["lvl"] = 20,
-			}),
 			q(94497, {	-- Call of Water
 				["sourceQuests"] = { 94495 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
@@ -304,13 +295,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 			q(98240, {	-- Crimson Crate Delivery
-				["sourceQuests"] = { 98072 },	-- Crocs of the Sky
-				["provider"] = { "n", 2094 },	-- James Halloran
-				["qi"] = 280099,	-- Crimson Crate (QI!)
-				["coord"] = { 8.6, 55.6, MAP.WETLANDS },
-				["timeline"] = { TIMELINE.ADDED_1_60_1 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 19,
+				sourceQuests = { 98072 },	-- Crocs of the Sky
+				qg = 2094,	-- James Halloran
+				coord = { 8.6, 55.6, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 19,
+				qi = 280099,	-- Crimson Crate (QI!)
 			}),
 			q(98072, {	-- Crocs of the Sky
 				sourceQuest = 471,	-- Apprentice's Duties
