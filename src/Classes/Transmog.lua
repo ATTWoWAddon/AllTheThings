@@ -784,29 +784,39 @@ local function CollectUniqueAppearances()
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then DetermineMaxATTSourceID() end
 	CurrentCharacterFilterIDSet = app.Presets[app.Class]
+	-- same known sources in the same ascending order, split across frames when on the events Runner (was ~1.2s in one frame)
+	local knownSourceIDs = {}
 	for sourceID=1,app.MaxSourceID do
 		-- for each known source
+		if AccountSources[sourceID] == 1 then
+			knownSourceIDs[#knownSourceIDs + 1] = sourceID
+		end
+	end
+	app.RunSpread(#knownSourceIDs, function(i)
+		-- still known? (a source can be removed between slices)
+		local sourceID = knownSourceIDs[i]
 		if AccountSources[sourceID] == 1 then
 			-- collect shared visual sources
 			MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly)
 		end
-	end
-	local brokenUniqueSources = ATTAccountWideData.BrokenUniqueSources;
-	if brokenUniqueSources then
-		for sourceID,_ in pairs(brokenUniqueSources) do
-			-- special reverse-check-logic for unknown SourceID's whose VisualID does not return
-			-- the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
-			-- and haven't already been marked as unique-collected
-			if not AccountSources[sourceID] then
-				local sInfo = C_TransmogCollection_GetSourceInfo(sourceID)
-				if ItemSourceFilter(sInfo) then
-					-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
-					AccountUniqueSources_ADD(sourceID)
+	end, function()
+		local brokenUniqueSources = ATTAccountWideData.BrokenUniqueSources;
+		if brokenUniqueSources then
+			for sourceID,_ in pairs(brokenUniqueSources) do
+				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return
+				-- the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
+				-- and haven't already been marked as unique-collected
+				if not AccountSources[sourceID] then
+					local sInfo = C_TransmogCollection_GetSourceInfo(sourceID)
+					if ItemSourceFilter(sInfo) then
+						-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
+						AccountUniqueSources_ADD(sourceID)
+					end
 				end
 			end
 		end
-	end
-	-- app.PrintDebug("Unique Refresh done")
+		-- app.PrintDebug("Unique Refresh done")
+	end)
 end
 local function RefreshAppearanceSources()
 	-- app.PrintDebug("RefreshAppearanceSources")
