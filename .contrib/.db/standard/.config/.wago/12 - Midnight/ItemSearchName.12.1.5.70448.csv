@@ -100604,6 +100604,17 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 285958,"Frost Revenant's Bell-Crook",2,-3,0,0,-1,1,0,0,0,1,134250496,143360,8388608,65536,0,-1,-1
 285959,"Embered Bell-Crook",2,-3,0,0,-1,1,0,0,0,1,134250496,143360,8388608,65536,0,-1,-1
 280457,"Shark Attack Pack",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283351,"Rexxar's Fabled Chestguard",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283352,"Rexxar's Fabled Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283353,"Rexxar's Fabled Boots",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283354,"Rexxar's Fabled Gloves",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283355,"Rexxar's Fabled Cowl",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283356,"Rexxar's Fabled Leggings",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283357,"Rexxar's Fabled Spiked Shoulders",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283358,"Rexxar's Fabled Padded Shoulders",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+283359,"Rexxar's Fabled Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+274934,"Blade of the Blood Knight Matriarch",4,11,0,0,-1,90,0,0,0,1,134250496,159744,8388608,65536,0,-1,-1
+274937,"Shield of the Blood Knight Matriarch",4,11,0,0,-1,90,0,0,0,1,134250496,159744,8388608,65536,0,-1,-1
 275999,"Flowering Mantle",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
 269786,"Azshara's Darkscale Helm",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,0,65536,0,-1,-1
 269787,"Azshara's Darkscale Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,0,65536,0,-1,-1
@@ -100653,6 +100664,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 271728,"Shen'dorei Magister's Leggings",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
 271729,"Shen'dorei Magister's Vest",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
 271730,"Shen'dorei Magister's Pauldrons",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
+23477,"Squire's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 271733,"Shen'dorei Peacekeeper's Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
 271734,"Shen'dorei Peacekeeper's Boots",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
 271735,"Shen'dorei Peacekeeper's Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,155648,8388608,65536,0,-1,-1
@@ -100694,7 +100706,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 23475,"Recruit's Boots",1,0,0,0,-1,0,0,0,0,1,0,8192,0,0,0,-1,-1
 52533,"Squire's Boots",1,0,0,0,-1,0,0,0,0,1,0,8192,0,0,0,-1,-1
 6118,"Squire's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
-23477,"Squire's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
 6117,"Squire's Shirt",2,0,0,0,-1,0,0,0,0,1,32768,8192,8388608,0,0,-1,-1
 23476,"Squire's Shirt",2,0,0,0,-1,0,0,0,0,1,32768,8192,8388608,0,0,-1,-1
 52680,"Neophyte's Pants",1,0,0,0,-1,1,0,0,0,1,0,8192,0,0,0,-1,-1
@@ -101361,6 +101372,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 70619,"Vicious Gladiator's Ornamented Spaulders",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70618,"Vicious Gladiator's Ornamented Legplates",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70617,"Vicious Gladiator's Ornamented Headcover",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
+66043,"Tribute Gun",3,0,0,0,-1,0,0,0,0,25,65536,8192,0,0,0,-1,-1
 70616,"Vicious Gladiator's Ornamented Gloves",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70615,"Vicious Gladiator's Ornamented Chestguard",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70601,"Vicious Gladiator's Mail Spaulders",4,3,0,0,64,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
@@ -101479,7 +101491,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 66037,"Cookie's Table Cloth",3,0,0,0,-1,0,0,0,0,10,65536,8192,0,0,0,-1,-1
 66038,"Breastplate of the Terrible Price",3,0,0,0,-1,0,0,0,0,13,65536,8192,0,0,0,-1,-1
 66039,"Shield Against the Evil Presence",3,0,0,0,-1,0,0,0,0,18,65536,8192,0,0,0,-1,-1
-66043,"Tribute Gun",3,0,0,0,-1,0,0,0,0,25,65536,8192,0,0,0,-1,-1
 66046,"Interrogator's Shackles",3,0,0,0,-1,0,0,0,0,18,65536,8192,8388608,0,0,-1,-1
 82892,"Ragefire Leggings",3,0,0,0,-1,0,0,0,0,11,65536,8192,0,0,0,-1,-1
 82893,"Hide Vest of the Shaman",3,0,0,0,-1,0,0,0,0,11,65536,8192,0,0,0,-1,-1
@@ -101848,7 +101859,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91514,"Malevolent Gladiator's Dragonhide Legguards",4,4,0,0,1024,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91506,"Malevolent Gladiator's Dreadplate Legguards",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91614,"Malevolent Gladiator's Copperskin Legguards",4,4,0,6,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
-87043,"Bindings of Ancient Spirits",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 91581,"Malevolent Gladiator's Chain Leggings",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91589,"Malevolent Gladiator's Silk Trousers",4,4,0,0,128,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91789,"Malevolent Gladiator's Plate Legguards",4,4,0,0,1,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101887,7 +101897,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91508,"Malevolent Gladiator's Dreadplate Shoulders",4,4,0,0,32,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91606,"Malevolent Gladiator's Ironskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91616,"Malevolent Gladiator's Copperskin Spaulders",4,4,0,0,512,35,0,0,0,39,4096,8192,0,0,0,-1,-1
-87040,"Circuit of the Frail Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073766400,0,0,0,-1,-1
 91583,"Malevolent Gladiator's Chain Spaulders",4,4,0,0,4,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91791,"Malevolent Gladiator's Plate Shoulders",4,4,0,0,1,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91781,"Malevolent Gladiator's Felweave Amice",4,4,0,0,256,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -101966,6 +101975,8 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 87033,"Netherrealm Shoulderpads",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87039,"Eye of the Ancient Spirit",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87037,"Sandals of the Severed Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
+87043,"Bindings of Ancient Spirits",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
+87040,"Circuit of the Frail Soul",4,4,0,0,-1,35,0,0,0,39,4096,1073766400,0,0,0,-1,-1
 87041,"Spaulders of the Divided Mind",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87042,"Leggings of Imprisoned Will",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87038,"Shadowsummoner Spaulders",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
@@ -102036,6 +102047,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 89266,"Chest of the Shadowy Protector",4,0,0,0,581,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89264,"Chest of the Shadowy Vanquisher",4,0,0,0,1192,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89271,"Gauntlets of the Shadowy Conqueror",4,0,0,0,274,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
+90896,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 89272,"Gauntlets of the Shadowy Protector",4,0,0,0,581,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89270,"Gauntlets of the Shadowy Vanquisher",4,0,0,0,1192,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89268,"Leggings of the Shadowy Conqueror",4,0,0,0,274,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
@@ -102077,7 +102089,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 90373,"Landfall Plate Boots",2,4,0,0,-1,0,0,0,0,37,65536,8192,0,0,0,-1,-1
 90894,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 90895,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
-90896,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 99767,"Tyrannical Gladiator's Bonegrinder",4,4,0,0,-1,35,0,0,0,39,4096,8194,8388608,0,0,-1321907123,1427461461
 99773,"Tyrannical Gladiator's Cape of Cruelty",4,4,0,0,1612,35,0,0,0,39,4096,8194,0,0,0,-1321907123,1427461461
 99774,"Tyrannical Gladiator's Cape of Prowess",4,4,0,0,1612,35,0,0,0,39,4096,8194,0,0,0,-1321907123,1427461461

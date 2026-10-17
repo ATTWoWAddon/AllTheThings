@@ -114696,8 +114696,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224983,,224974,1,0,113535,8,16
 224984,"Give a treat to Fei Fei",0,0,4,0,0,4096
 224985,,224984,0,0,113536,0,0
-224986,"12.1.5 Labyrinth - Chamber 3b - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-224987,"Sha'Kuro slain",224986,1,0,113490,0,0
+224986,"12.1.5 Labyrinth - Chamber 3b - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+224987,"Sha'Kuro slain",224986,1,0,119153,0,0
 224989,"World Quests completed",224988,5,0,113538,0,1
 224990,"Cursed Surge bosses slain",0,0,4,0,0,0
 224991,"Cursed Surge bosses slain",224990,5,0,113539,0,1
@@ -114873,8 +114873,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225288,"[DNT] Research Sites: Collection - Hawkstrider Pet",0,1,8,0,0,0
 225289,"[DNT] Research Sites: Collection - Hawkstrider Pet",225288,0,0,113656,0,2
 225290,Chick,225288,0,0,113657,1,2
-225291,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C",0,1,8,0,0,0
-225292,"Sha'Kuro slain",225291,1,0,117411,0,0
+225291,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C",0,1,4,0,0,0
+225292,"Sha'Kuro slain",225291,1,0,119153,0,0
 225293,"Deliver one of each of the following offerings to the Summoning Ritual event in the Vaults of Atal'Utek.",0,0,4,0,0,0
 225294,"Petrified Egg",225293,1,0,113658,0,0
 225295,"Venomous Ooze",225293,1,0,113659,1,0
@@ -115041,8 +115041,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225557,,225556,2,0,113795,0,2
 225558,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 3",0,0,4,0,0,0
 225559,"Relics returned",225558,3,0,113798,0,1
-225560,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 4",0,0,4,0,0,0
-225561,"Vilebranch Necromancer defeated",225560,1,0,113799,0,0
+225560,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 4",0,1,4,0,0,0
+225561,"Vilebranch Necromancer defeated",225560,1,0,119154,0,0
 225562,"Workshop Begun",0,0,4,0,0,3
 225563,"Workshop Ready!",225562,1,0,113800,0,3
 225568,"New Criteria Tree",0,100,9,0,0,4096
@@ -117324,7 +117324,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229065,"Zan'ji's Wheel of Cheese Recovered",229061,1,0,114567,3,0
 229066,"Rujak's Very Large Onion Recovered",229061,1,0,114568,4,0
 229067,"Jindara's Favorite Mushroom Recovered",229061,1,0,114569,5,0
-229068,"Chamber 2b - Scenario B - Defeat the Looter Excavator",0,0,4,0,0,0
+229068,"Chamber 2b - Scenario B - Defeat the Looter Excavator",0,1,4,0,0,0
 229069,"Drill Sergeant slain",229068,1,0,114817,0,0
 229070,"Chamber 2b - Scenario B - Run through and collect as much as you can before time runs out",0,0,4,0,0,0
 229071,"Run through and collect as much as you can before time runs out",229070,1,0,114903,0,0
@@ -118291,8 +118291,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230840,"To the Faithful",230838,1,0,116097,1,16
 230844,"Rage Specters defeated",0,0,4,0,0,0
 230845,"Rage Specters defeated",230844,6,0,116102,0,0
-230846,"Defeat the King of Souls",0,0,4,0,0,0
-230847,"King of Souls defeated",230846,1,0,116103,0,0
+230846,"Defeat the King of Souls",0,1,4,0,0,0
+230847,"King of Souls defeated",230846,1,0,119156,0,0
 230848,"Academic Antitoxin",220588,0,0,116104,3,16
 230849,"Infiltrate and Ameliorate",220576,0,0,116105,3,16
 230850,"Caustic Crush",220600,0,0,116106,3,16
@@ -119117,36 +119117,36 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232223,,232222,0,0,116934,0,0
 232235,"Defeat Hexbound Defenders 1a-I",0,0,4,0,0,0
 232236,"Defeat Hexbound Defenders",232235,6,0,116095,0,0
-232237,"Defeat the King of Souls 1a-I",0,0,4,0,0,0
-232238,"King of Souls defeated",232237,1,0,116103,0,0
+232237,"Defeat the King of Souls 1a-I",0,1,4,0,0,0
+232238,"King of Souls defeated",232237,1,0,119156,0,0
 232239,"Defeat Hexbound Defenders 2a-G",0,0,4,0,0,0
 232240,"Defeat Hexbound Defenders",232239,6,0,116095,0,0
-232241,"Defeat the King of Souls 2a-G",0,0,4,0,0,0
-232242,"King of Souls defeated",232241,1,0,116103,0,0
+232241,"Defeat the King of Souls 2a-G",0,1,4,0,0,0
+232242,"King of Souls defeated",232241,1,0,119156,0,0
 232243,"Defeat Hexbound Defenders 2b-G",0,0,4,0,0,0
 232244,"Defeat Hexbound Defenders",232243,6,0,116095,0,0
-232245,"Defeat the King of Souls 2b-G",0,0,4,0,0,0
-232246,"King of Souls defeated",232245,1,0,116103,0,0
+232245,"Defeat the King of Souls 2b-G",0,1,4,0,0,0
+232246,"King of Souls defeated",232245,1,0,119156,0,0
 232247,"Defeat Hexbound Defenders 2c-G",0,0,4,0,0,0
 232248,"Defeat Hexbound Defenders",232247,6,0,116095,0,0
-232249,"Defeat the King of Souls 2c-G",0,0,4,0,0,0
-232250,"King of Souls defeated",232249,1,0,116103,0,0
+232249,"Defeat the King of Souls 2c-G",0,1,4,0,0,0
+232250,"King of Souls defeated",232249,1,0,119156,0,0
 232251,"Defeat Hexbound Defenders 3b-I",0,0,4,0,0,0
 232252,"Defeat Hexbound Defenders",232251,6,0,116095,0,0
-232253,"Defeat the King of Souls 3b-I",0,0,4,0,0,0
-232254,"King of Souls defeated",232253,1,0,116103,0,0
+232253,"Defeat the King of Souls 3b-I",0,1,4,0,0,0
+232254,"King of Souls defeated",232253,1,0,119156,0,0
 232255,"Defeat Hexbound Defenders 3c-G",0,0,4,0,0,0
 232256,"Defeat Hexbound Defenders",232255,6,0,116095,0,0
-232257,"Defeat the King of Souls 3c-G",0,0,4,0,0,0
-232258,"King of Souls defeated",232257,1,0,116103,0,0
+232257,"Defeat the King of Souls 3c-G",0,1,4,0,0,0
+232258,"King of Souls defeated",232257,1,0,119156,0,0
 232259,"Defeat Hexbound Defenders 3d-I",0,0,4,0,0,0
 232260,"Defeat Hexbound Defenders",232259,6,0,116095,0,0
-232261,"Defeat the King of Souls 3d-I",0,0,4,0,0,0
-232262,"King of Souls defeated",232261,1,0,116103,0,0
+232261,"Defeat the King of Souls 3d-I",0,1,4,0,0,0
+232262,"King of Souls defeated",232261,1,0,119156,0,0
 232263,"Defeat Hexbound Defenders 3e-H",0,0,4,0,0,0
 232264,"Defeat Hexbound Defenders",232263,6,0,116095,0,0
-232265,"Defeat the King of Souls 3e-H",0,0,4,0,0,0
-232266,"King of Souls defeated",232265,1,0,116103,0,0
+232265,"Defeat the King of Souls 3e-H",0,1,4,0,0,0
+232266,"King of Souls defeated",232265,1,0,119156,0,0
 232275,,66554,7,0,116947,8,0
 232276,,66554,16,0,116948,9,0
 232277,,66554,7,0,116949,10,0
@@ -119256,36 +119256,36 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232417,,232413,2,0,113638,3,0
 232418,"12.1.5 Labyrinth - Chamber 1a - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232419,"Stolen Artifacts collected",232418,10,0,113537,0,0
-232420,"12.1.5 Labyrinth - Chamber 1a - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232421,"Cynthra Buttonsmasher slain",232420,1,0,118125,0,0
+232420,"12.1.5 Labyrinth - Chamber 1a - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232421,"Cynthra Buttonsmasher slain",232420,1,0,119152,0,0
 232422,"12.1.5 Labyrinth - Chamber 2a - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232423,"Stolen Artifacts collected",232422,10,0,113537,0,0
-232424,"12.1.5 Labyrinth - Chamber 2a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232425,"Sha'Kuro slain",232424,1,0,113490,0,0
+232424,"12.1.5 Labyrinth - Chamber 2a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232425,"Sha'Kuro slain",232424,1,0,119153,0,0
 232426,"12.1.5 Labyrinth - Chamber 2b - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232427,"Stolen Artifacts collected",232426,10,0,113537,0,0
-232428,"12.1.5 Labyrinth - Chamber 2b - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232429,"Cynthra Buttonsmasher slain",232428,1,0,118125,0,0
+232428,"12.1.5 Labyrinth - Chamber 2b - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232429,"Cynthra Buttonsmasher slain",232428,1,0,119152,0,0
 232430,"12.1.5 Labyrinth - Chamber 2c - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232431,"Stolen Artifacts collected",232430,10,0,113537,0,0
-232432,"12.1.5 Labyrinth - Chamber 2c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232433,"Cynthra Buttonsmasher slain",232432,1,0,118125,0,0
+232432,"12.1.5 Labyrinth - Chamber 2c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232433,"Cynthra Buttonsmasher slain",232432,1,0,119152,0,0
 232434,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232435,"Stolen Artifacts collected",232434,10,0,113537,0,0
-232436,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232437,"Sullied Revenant slain",232436,1,0,117896,0,0
+232436,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232437,"Sullied Revenant slain",232436,1,0,117044,0,0
 232438,"12.1.5 Labyrinth - Chamber 3c - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232439,"Stolen Artifacts collected",232438,10,0,113537,0,0
-232440,"12.1.5 Labyrinth - Chamber 3c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232441,"Cynthra Buttonsmasher slain",232440,1,0,118125,0,0
+232440,"12.1.5 Labyrinth - Chamber 3c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232441,"Cynthra Buttonsmasher slain",232440,1,0,119152,0,0
 232442,"12.1.5 Labyrinth - Chamber 3d - Looters - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232443,"Stolen Artifacts collected",232442,10,0,113537,0,0
-232444,"12.1.5 Labyrinth - Chamber 3d - Looters - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232445,"Cynthra Buttonsmasher slain",232444,1,0,118125,0,0
+232444,"12.1.5 Labyrinth - Chamber 3d - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232445,"Cynthra Buttonsmasher slain",232444,1,0,119152,0,0
 232446,"12.1.5 Labyrinth - Chamber 3e - Vilebranch - Generic Activity 01 (BAK)",0,0,4,0,0,0
 232447,"Stolen Artifacts collected",232446,10,0,113537,0,0
-232448,"12.1.5 Labyrinth - Chamber 3e - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,0,4,0,0,0
-232449,"Jun'ala slain",232448,1,0,113799,0,0
+232448,"12.1.5 Labyrinth - Chamber 3e - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232449,"Jun'ala slain",232448,1,0,119154,0,0
 232450,,58604,1,0,116985,73,0
 232451,,58604,1,0,116986,74,0
 232452,"Kill Elites",225794,1,0,116987,6,0
@@ -119347,24 +119347,24 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232656,,219113,1,0,117078,1,0
 232661,"[DND] Earn Achievement ""A Frightening Friend""",0,0,4,0,0,0
 232662,,232661,0,0,117081,0,0
-232685,"12.1.5 Labyrinth - Chamber 1a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232686,"Grukk slain",232685,1,0,117464,0,0
-232687,"12.1.5 Labyrinth - Chamber 2a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232688,"Grukk slain",232687,1,0,117464,0,0
-232689,"12.1.5 Labyrinth - Chamber 2b - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232690,"Grukk slain",232689,1,0,117464,0,0
-232691,"12.1.5 Labyrinth - Chamber 2c - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232692,"Grukk slain",232691,1,0,117464,0,0
-232693,"12.1.5 Labyrinth - Chamber 3a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232694,"Grukk slain",232693,1,0,117464,0,0
-232695,"12.1.5 Labyrinth - Chamber 3b - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232696,"Grukk slain",232695,1,0,117464,0,0
-232697,"12.1.5 Labyrinth - Chamber 3c - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232698,"Grukk slain",232697,1,0,117464,0,0
-232699,"12.1.5 Labyrinth - Chamber 3d - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232700,"Grukk slain",232699,1,0,117464,0,0
-232701,"12.1.5 Labyrinth - Chamber 3e - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,0,4,0,0,0
-232702,"Grukk slain",232701,1,0,117464,0,0
+232685,"12.1.5 Labyrinth - Chamber 1a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232686,"Grukk slain",232685,1,0,119150,0,0
+232687,"12.1.5 Labyrinth - Chamber 2a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232688,"Grukk slain",232687,1,0,119150,0,0
+232689,"12.1.5 Labyrinth - Chamber 2b - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232690,"Grukk slain",232689,1,0,119150,0,0
+232691,"12.1.5 Labyrinth - Chamber 2c - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232692,"Grukk slain",232691,1,0,119150,0,0
+232693,"12.1.5 Labyrinth - Chamber 3a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232694,"Grukk slain",232693,1,0,119150,0,0
+232695,"12.1.5 Labyrinth - Chamber 3b - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,2
+232696,"Grukk slain",232695,1,0,119150,0,0
+232697,"12.1.5 Labyrinth - Chamber 3c - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232698,"Grukk slain",232697,1,0,119150,0,0
+232699,"12.1.5 Labyrinth - Chamber 3d - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232700,"Grukk slain",232699,1,0,119150,0,0
+232701,"12.1.5 Labyrinth - Chamber 3e - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232702,"Grukk slain",232701,1,0,119150,0,0
 232752,,224224,35,0,115538,21,0
 232753,,66460,30,0,117124,32,0
 232894,"Flames of Jan'alai lit 1a",0,1,4,0,0,0
@@ -119389,8 +119389,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232930,"Rage Specters defeated",232929,6,0,116102,0,0
 232931,"Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party, before the end of Midnight Season 2.",0,0,4,0,0,0
 232932,,232931,1,0,117156,0,2
-232935,"12.1.5 Labyrinth - Chamber 1a - Scenario F - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232936,"Sullied Revenant slain",232935,1,0,117896,0,0
+232935,"12.1.5 Labyrinth - Chamber 1a - Scenario F - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232936,"Sullied Revenant slain",232935,1,0,117044,0,0
 232937,"Ritual items fixed 3a",0,0,4,0,0,0
 232938,"Ritual items fixed",232937,3,0,116869,0,0
 232939,"Ritual completed 3a",0,1,8,0,0,0
@@ -119398,24 +119398,24 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232941,"(Hidden) Shaman takes enough damage to lose concentration",232939,1,0,116579,1,2
 232942,"Enraged Death Steward slain 3a",0,0,4,0,0,0
 232943,"Enraged Death Steward slain",232942,1,0,116627,0,0
-232944,"12.1.5 Labyrinth - Chamber 2a - Scenario C - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232945,"Sullied Revenant slain",232944,1,0,117896,0,0
+232944,"12.1.5 Labyrinth - Chamber 2a - Scenario C - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232945,"Sullied Revenant slain",232944,1,0,117044,0,0
 232946,"Enraged Ancestral Shaman slain 3a",0,0,4,0,0,0
 232947,"Enraged Ancestral Shaman slain",232946,1,0,116626,0,0
-232948,"12.1.5 Labyrinth - Chamber 2b - Scenario A - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232949,"Sullied Revenant slain",232948,1,0,117896,0,0
-232950,"12.1.5 Labyrinth - Chamber 2c - Scenario A - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232951,"Sullied Revenant slain",232950,1,0,117896,0,0
-232952,"12.1.5 Labyrinth - Chamber 3a - Scenario D - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232953,"Sullied Revenant slain",232952,1,0,117896,0,0
-232954,"12.1.5 Labyrinth - Chamber 3b - Scenario D - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232955,"Sullied Revenant slain",232954,1,0,117896,0,0
-232956,"12.1.5 Labyrinth - Chamber 3c - Scenario C - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232957,"Sullied Revenant slain",232956,1,0,117896,0,0
-232958,"12.1.5 Labyrinth - Chamber 3d - Scenario E - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232959,"Sullied Revenant slain",232958,1,0,117896,0,0
-232960,"12.1.5 Labyrinth - Chamber 3e - Scenario D - Vilebranch Bar Fill Boss - TSH",0,0,4,0,0,0
-232961,"Sullied Revenant Slain",232960,1,0,117896,0,0
+232948,"12.1.5 Labyrinth - Chamber 2b - Scenario A - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232949,"Sullied Revenant slain",232948,1,0,117044,0,0
+232950,"12.1.5 Labyrinth - Chamber 2c - Scenario A - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232951,"Sullied Revenant slain",232950,1,0,117044,0,0
+232952,"12.1.5 Labyrinth - Chamber 3a - Scenario D - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232953,"Sullied Revenant slain",232952,1,0,117044,0,0
+232954,"12.1.5 Labyrinth - Chamber 3b - Scenario D - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232955,"Sullied Revenant slain",232954,1,0,117044,0,0
+232956,"12.1.5 Labyrinth - Chamber 3c - Scenario C - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232957,"Sullied Revenant slain",232956,1,0,117044,0,0
+232958,"12.1.5 Labyrinth - Chamber 3d - Scenario E - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232959,"Sullied Revenant slain",232958,1,0,117044,0,0
+232960,"12.1.5 Labyrinth - Chamber 3e - Scenario D - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232961,"Sullied Revenant Slain",232960,1,0,117044,0,0
 232962,"Ritual items fixed 3b",0,0,4,0,0,0
 232963,"Ritual items fixed",232962,3,0,116869,0,0
 232964,"Ritual completed 3b",0,1,8,0,0,0
@@ -119479,12 +119479,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233036,,233000,1,0,117198,35,2
 233037,,233000,1,0,117199,36,2
 233038,,233000,1,0,117200,37,2
-233039,"12.1.5 Labyrinth - Chamber 1a - Scenario G - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233040,"Drill Sergeant slain",233039,1,0,117895,0,0
-233045,"12.1.5 Labyrinth - Chamber 2b - Scenario D - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233046,"Drill Sergeant slain",233045,1,0,117895,0,0
+233039,"12.1.5 Labyrinth - Chamber 1a - Scenario G - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233040,"Drill Sergeant slain",233039,1,0,114817,0,0
+233045,"12.1.5 Labyrinth - Chamber 2b - Scenario D - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233046,"Drill Sergeant slain",233045,1,0,114817,0,0
 233047,"12.1.5 Labyrinth - Chamber 2a - Scenario D - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233048,"Drill Sergeant slain",233047,1,0,117895,0,0
+233048,"Drill Sergeant slain",233047,1,0,114817,0,0
 233049,"Open the locked door hidden within Kindo'jan's Labyrinth.",0,1,8,0,0,0
 233050,,233049,1,0,117202,0,2
 233051,,233049,1,0,117203,1,2
@@ -119497,18 +119497,18 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233058,,233055,1,0,117202,2,2
 233059,,233055,1,0,117205,3,2
 233060,,233055,1,0,117206,4,2
-233061,"12.1.5 Labyrinth - Chamber 2c - Scenario B - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233062,"Drill Sergeant slain",233061,1,0,117895,0,0
-233063,"12.1.5 Labyrinth - Chamber 3a - Scenario E - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233064,"Drill Sergeant slain",233063,1,0,117895,0,0
-233065,"12.1.5 Labyrinth - Chamber 3b - Scenario E - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233066,"Drill Sergeant slain",233065,1,0,117895,0,0
-233067,"12.1.5 Labyrinth - Chamber 3c - Scenario D - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233068,"Drill Sergeant slain",233067,1,0,117895,0,0
+233061,"12.1.5 Labyrinth - Chamber 2c - Scenario B - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233062,"Drill Sergeant slain",233061,1,0,114817,0,0
+233063,"12.1.5 Labyrinth - Chamber 3a - Scenario E - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233064,"Drill Sergeant slain",233063,1,0,114817,0,0
+233065,"12.1.5 Labyrinth - Chamber 3b - Scenario E - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233066,"Drill Sergeant slain",233065,1,0,114817,0,0
+233067,"12.1.5 Labyrinth - Chamber 3c - Scenario D - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233068,"Drill Sergeant slain",233067,1,0,114817,0,0
 233069,"12.1.5 Labyrinth - Chamber 3d - Scenario F - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233070,"Drill Sergeant slain",233069,1,0,117895,0,0
-233071,"12.1.5 Labyrinth - Chamber 3e - Scenario E - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
-233072,"Drill Sergeant slain",233071,1,0,117895,0,0
+233070,"Drill Sergeant slain",233069,1,0,114817,0,0
+233071,"12.1.5 Labyrinth - Chamber 3e - Scenario E - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233072,"Drill Sergeant slain",233071,1,0,114817,0,0
 233073,"Gather all 3 Elemental Hexmasks while within Kindo'jan's Labyrinth.",0,1,8,0,0,0
 233074,,233073,0,0,117207,0,2
 233075,,233073,0,0,117208,1,2
@@ -119529,25 +119529,25 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233095,,233094,1,0,117212,0,0
 233096,"Total Kindo'jan Kills",0,0,4,0,0,0
 233097,,233096,0,0,117162,0,0
-233098,"12.1.5 Labyrinth - Chamber 1a - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233099,"Undead Trollbunal slain",233098,1,0,117099,0,0
-233100,"12.1.5 Labyrinth - Chamber 2a - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233101,"Undead Trollbunal slain",233100,1,0,117099,0,0
-233663,"Kith'ix defeated",233662,1,0,117530,0,0
-233102,"12.1.5 Labyrinth - Chamber 2b - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233103,"Undead Trollbunal slain",233102,1,0,117099,0,0
-233104,"12.1.5 Labyrinth - Chamber 2c - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233105,"Undead Trollbunal slain",233104,1,0,117099,0,0
-233106,"12.1.5 Labyrinth - Chamber 3a - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233107,"Undead Trollbunal slain",233106,1,0,117099,0,0
-233108,"12.1.5 Labyrinth - Chamber 3b - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233109,"Undead Trollbunal slain",233108,1,0,117099,0,0
-233110,"12.1.5 Labyrinth - Chamber 3c - Scenario H - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233111,"Undead Trollbunal slain",233110,1,0,117099,0,0
-233112,"12.1.5 Labyrinth - Chamber 3d - Scenario J - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233113,"Undead Trollbunal slain",233112,1,0,117099,0,0
-233114,"12.1.5 Labyrinth - Chamber 3e - Scenario I - Spirit Bar Fill Boss - TSH",0,0,4,0,0,0
-233115,"Undead Trollbunal slain",233114,1,0,117099,0,0
+233098,"12.1.5 Labyrinth - Chamber 1a - Scenario J - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233099,"Undead Trollbunal slain",233098,1,0,119149,0,0
+233100,"12.1.5 Labyrinth - Chamber 2a - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233101,"Undead Trollbunal slain",233100,1,0,119149,0,0
+233667,,233666,0,0,117531,0,2
+233102,"12.1.5 Labyrinth - Chamber 2b - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233103,"Undead Trollbunal slain",233102,1,0,119149,0,0
+233104,"12.1.5 Labyrinth - Chamber 2c - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233105,"Undead Trollbunal slain",233104,1,0,119149,0,0
+233106,"12.1.5 Labyrinth - Chamber 3a - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233107,"Undead Trollbunal slain",233106,1,0,119149,0,0
+233108,"12.1.5 Labyrinth - Chamber 3b - Scenario J - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233109,"Undead Trollbunal slain",233108,1,0,119149,0,0
+233110,"12.1.5 Labyrinth - Chamber 3c - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233111,"Undead Trollbunal slain",233110,1,0,119149,0,0
+233112,"12.1.5 Labyrinth - Chamber 3d - Scenario J - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233113,"Undead Trollbunal slain",233112,1,0,119149,0,0
+233114,"12.1.5 Labyrinth - Chamber 3e - Scenario I - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233115,"Undead Trollbunal slain",233114,1,0,119149,0,0
 233135,"Venom Tornado",230454,1,8,0,6,8192
 233136,,233135,4,0,117226,0,0
 233137,"Dusty Totem",230454,1,8,0,7,8192
@@ -119577,10 +119577,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233429,"Head Ritualist Zol'go slain",233425,1,0,113671,2,32
 233430,"12.1.5 - Labyrinth Event - Generic Scenario 2 - Kill Named NPC - 3c",0,0,4,0,0,0
 233431,"Head Ritualist Malakk slain",233430,1,0,113680,0,0
-233432,"12.1.5 - Labyrinth Event - Generic Scenario 2 -  Kill Boss - 3c",0,1,8,0,0,0
-233433,"Sha'Kuro slain",233432,1,0,117411,0,0
-233460,,233432,1,0,113490,1,2
-233461,,225291,1,0,113490,1,2
+233432,"12.1.5 - Labyrinth Event - Generic Scenario 2 -  Kill Boss - 3c",0,1,4,0,0,0
+233433,"Sha'Kuro slain",233432,1,0,119153,0,0
 233467,"Kindo'jan defeated",233466,1,0,114815,0,0
 233469,"Kinduru spoken to",233468,1,0,117410,0,0
 233470,"12.1.5 - Labyrinth Event- Generic Activity 2 (CTR) - 3a",0,0,4,0,0,1
@@ -119590,9 +119588,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233474,"Head Ritualist Zol'go slain",233470,1,0,113671,2,32
 233475,"12.1.5 - Labyrinth Event- Kill Named NPC - 3D - Scenario C - 3a",0,0,4,0,0,0
 233476,"Head Ritualist Malakk slain",233475,1,0,113680,0,0
-233477,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C -3a",0,1,8,0,0,0
-233478,"Sha'Kuro slain",233477,1,0,117411,0,0
-233479,,233477,1,0,113490,1,2
+233477,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C -3a",0,1,4,0,0,0
+233478,"Sha'Kuro slain",233477,1,0,119153,0,0
 233492,"Obtain a Sporebearer Fungal Strider",0,1,4,0,0,0
 233493,,233492,0,0,117426,0,2
 233519,,233000,1,0,117437,38,2
@@ -119607,8 +119604,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233637,"12.1.5 Kithix - Campaign - Ch 1 - Player IN Kith'ix Raid (AOC)",0,0,4,0,0,4096
 233638,,233637,0,0,117516,0,0
 233662,"12.1.5 Raid - Kithix - LFR",0,0,4,0,0,0
+233663,"Kith'ix defeated",233662,1,0,117530,0,0
 233666,"Statistic - 12.1.5 Raid - Kithix - LFR",0,0,4,0,0,0
-233667,,233666,0,0,117531,0,2
 233668,"Statistic - 12.1.5 Raid - Kithix - Normal",0,0,4,0,0,0
 233669,,233668,0,0,117532,0,2
 233670,"Statistic - 12.1.5 Raid - Kithix - Heroic",0,0,4,0,0,0
@@ -119737,8 +119734,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234558,"Clues investigated",234557,4,0,117912,0,0
 234559,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 03 - TSH",0,0,4,0,0,0
 234560,"Examine the Effigy",234559,1,0,117913,0,0
-234561,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 04 - TSH",0,0,4,0,0,0
-234562,"Jun'ala slain",234561,1,0,113799,0,0
+234561,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 04 - TSH",0,1,4,0,0,0
+234562,"Jun'ala slain",234561,1,0,119154,0,0
 234563,"Ride a Delivery Broom",0,0,4,0,0,4096
 234564,,234563,1,0,117915,0,0
 234587,"Equip Ghost Gear",0,0,4,0,0,12288
@@ -119925,7 +119922,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235108,"True vessel found",235107,1,0,117036,0,0
 235109,"Vessel found 3c",0,0,4,0,0,0
 235110,"Vessel found",235109,1,0,117035,0,0
-4834,,0,0,4,0,0,0
 235115,"Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.",0,0,4,0,0,0
 235116,,235115,0,0,118247,0,2
 235187,"Open 20 locked doors hidden within Kindo'jan's Labyrinth.",0,20,5,0,0,1
@@ -119992,6 +119988,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 2527,,0,0,4,0,0,0
 4712,,0,0,4,0,0,0
 4814,,0,0,4,0,0,0
+4834,,0,0,4,0,0,0
 5233,,0,0,4,0,0,0
 5236,,0,0,4,0,0,0
 6775,,0,0,4,0,0,0
