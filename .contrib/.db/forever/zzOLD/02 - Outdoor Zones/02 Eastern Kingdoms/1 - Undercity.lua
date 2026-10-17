@@ -809,7 +809,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				},
 			}),
 			q(5658, {	-- Touch of Weakness [Undercity]
-				["sourceQuests"] = { 5659 },	-- Touch of Weakness
 				["altQuests"] = {
 					5660,	-- Touch of Weakness [Durotar]
 					5661,	-- Touch of Weakness [Mulgore]

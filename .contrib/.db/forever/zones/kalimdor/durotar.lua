@@ -1533,6 +1533,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(6062),	-- Heavy Cord Bracers
 				},
 			}),
+			q(785, {	-- A Strategic Alliance
+				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(6081, {	-- Training the Beast
 				sourceQuest = 6082,	-- Taming the Beast (3/3)
 				qg = 3171,	-- Thotar <Hunter Trainer>
