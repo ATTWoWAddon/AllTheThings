@@ -34,14 +34,47 @@
 
 - `DataPhase="WRATH"` 會使 `#if WRATH` 成立，即使標籤未列出 `WRATH` 也是如此。一般 Wrath ItemDB 資料與遊戲版本專屬規則必須明確排除 `TITAN_REFORGED`。
 - 不要直接複製 Wrath 的例外條件，例如 `NAXX_10MAN_DROPS_25MAN_LOOT`；每項例外都需要 Titan 證據。
-- 目前 Parser 為 Wrath 設定 `MAX_PHASE_ID=39`。不要只新增數值更大的 Titan `u` 值，也不要為所有遊戲版本一併提高全域上限。
 - `#if AFTER TRANSMOG` 比較的是現有階段編號；加入同名的能力標籤不會改變這項比較。
 
-獨立表達 Titan 的團隊副本階段。例如，官方路線圖將 Ulduar、Karazhan、BWL 與 ICC 安排在不同 Titan 階段，並非依舊資料片順序開放。[官方更新預覽](https://wow.blizzard.cn/news/20260913/43790_1313712.html)
+只有在局部條件無法可靠處理衝突時，才評估將 `ClientBuild` 與 `TimelinePatch` 分離。初期實作不全面重寫時間軸，也不新增 `DataPhase="TITAN"`；目前階段名稱由固定表格管理。以下「初期實作」指 ATT 的首次交付，並非 Titan Phase 1。
 
-第一個可用版本可使用累加式建置標籤控制已解鎖內容。如果尚未開放的內容必須在遊戲內透過階段選擇器顯示，則新增 Titan 專屬階段定義、Parser 保留／驗證政策與設定頁面；實作前先決定這些項目是否納入第一階段。不要對所有歷史階段套用映射，否則可能錯置共用某個階段的商人、貨幣與副本。
+#### 討論：Titan Phase 代表什麼？
 
-只有在局部條件無法可靠處理衝突時，才評估將 `ClientBuild` 與 `TimelinePatch` 分離。第一階段不全面重寫時間軸，也不新增 `DataPhase="TITAN"`；目前階段名稱由固定表格管理。
+Ulduar 可以說明問題：ATT 的歷史 Wrath 階段為 `WRATH_PHASE_TWO`，Titan 卻將 Ulduar 放在 Phase 6，更早的 Karazhan 則在 Phase 7。客戶端／資料快照、Parser 的歷史相容基礎，以及 Titan 解鎖進程，必須分開處理。[官方路線圖](https://wow.blizzard.cn/news/20260913/43790_1313712.html)
+
+[Chrono Wiki](https://warcraft.wiki.gg/wiki/Titan_Reforged_-_Chrono) 可作為討論索引，但不是已確認的階段清單。2026-10-19 直接存取回傳 403；搜尋索引中的開放清單將 Ruins of Ahn'Qiraj 列在 Phase 9，官方路線圖則列在 Phase 8。匯入對照前，應以附日期的證據釐清這類差異；路線圖中的未來項目仍屬預定內容。
+
+日期也可能代表不同事件：[Phase 6 公告](https://wow.blizzard.cn/news/20260924/43790_1315082.html) 顯示發布日為 2026-09-25，內文卻安排於 2026-10-08 開放階段、2026-10-12 開放挑戰榜。[Ulduar 已實裝調整](https://wow.blizzard.cn/news/trr/20261009/43039_1316105.html) 支持至遲於 2026-10-09 已運作，但不是第二份確認確切開門時間的紀錄。發布日、生效日與觀察日應分別記錄。
+
+透過官方文字索引核對的[官方進程規則](https://wow.blizzard.cn/news/20251031/40565_1268140.html) 說明，後續階段開放後，先前團隊副本仍可進入。因此，Phase 6 基準應保留仍適用的早期來源。這不代表每筆舊掉落都維持不變；副本開放、個別獎勵、升級花費與限時活動仍須分別取得證據。
+
+#### 討論：實作選項
+
+現有機制具有以下限制：
+
+- 在 Wrath 的 `MAX_PHASE_ID=39` 下，Parser 的階段上限檢查允許 `u <= 39` 或 `1000 <= u < 4000` 通過；通過的階段定義仍須驗證。超界節點及其子節點可能在輸出前被移除，遊戲內設定無法恢復未輸出的資料。不要為所有遊戲版本一併提高全域上限。
+- `u=1` 與 `u=2` 已分別表示從未實裝與已移除，其他小編號也已被使用。不能直接以 Titan 階段數字當作 ID。時間軸處理先於階段檢查，而且可能覆寫 `u`，因此單一欄位不會自動同時保留解鎖階段與移除狀態。
+- 現有設定是逐 ID 的 `Unobtainable[u]` 顯示開關，使用歷史組建／日期預設值及寫死的資料片頁面，並非單一目前階段選擇器。新增定義不會自動建立 Titan 頁面；穩定 ID 必須保留既有儲存選項。
+- 套用外層階段無法處理所有巢狀規則：`applyclassicphase` 通常只補缺值，執行階段的遞迴過濾則會檢查祖先節點。強制覆寫可能抹去子節點的不可取得狀態。Ulduar 的 `ach(17341)` 規則還會直接讀取 `WRATH_PHASE_THREE` 並改變自身 `u`，這類規則須逐項審查。這是程式回歸案例，不能證明該成就在 Titan 存在。
+
+| 選項 | 適用範圍 | 取捨與必要檢查 |
+| --- | --- | --- |
+| A. 累積建置標籤 | 首次發布只包含已驗證的開放內容。 | 使用已支援的布林標籤；數值型 `#if PHASE > 5` 仍是 TODO。每次進程變動都須重新建置；未輸出的未來內容無法透過遊戲內設定預覽。 |
+| B. Titan 專用 `u` ID | 保留未來內容，並沿用現有階段顯示控制。 | 選擇唯一且穩定的 ID；驗證 Parser 保留行為、來源對照、父節點限制、Titan UI／預設值與儲存設定。C# 改動視條件而定：符合既有政策的 ID 可能不需修改。須證明階段與不可取得狀態仍然正確。 |
+| C. 獨立進程資料欄位 | 具體案例需要獨立的階段與可取得狀態，且選項 B 無法忠實表達。 | 設計驗證、輸出、繼承、過濾、來源合併、計數、顯示與設定。欄位名稱及結構尚未決定；這是較大的改動，不代表需要全面重寫時間軸。 |
+
+討論起點：首次交付只需已開放內容時可用 A；需要顯示未來內容時評估 B。若有證據支持的需求無法以 B 安全表達，再考慮 C。本文件未選定任何方案、階段 ID 或資料結構，也不對歷史階段進行全域重新對照。
+
+#### 實作前需要決定的事項
+
+1. **顯示範圍：** 僅已開放內容，還是包含未來內容預覽？定義控制項選擇的是累積基準或歷史快照；選擇 Phase 6 不應默默變成「只顯示 Phase 6」。計數與完成度必須區分預覽來源和目前可取得來源。
+2. **判定依據與未知狀態：** 維護經審查、獨立於 `DataPatch` 的階段清單，記錄穩定階段鍵值／名稱、來源範圍、預定／已開放／未驗證狀態、發布與生效日期、區域／時區、觀察到的組建及證據。伺服器實際進程與使用者顯示選項應分開。沒有已驗證的對照時，不得從介面版本、語系、日曆或 `C_Seasons.GetActiveSeason()` 推定進程。未知進程必須明確保留，不得預設為最高階段。
+3. **對照粒度：** 逐取得來源判斷，涵蓋首領／難度、商人、任務獎勵、貨幣／花費與活動期間。同一物品可能有多種來源，且可取得狀態不同。副本開放不代表每項獎勵或升級也於同日開放；後續階段也不會自動移除先前來源。
+4. **歷史規則與偏好設定：** 審查內嵌 Wrath 條件、父子過濾與多來源合併。依實際觀察到的 SavedVariables 行為決定預設值及必要遷移，並保留一般 Wrath 設定。不要假設階段 ID 的數值順序就是 Titan 進程。
+
+新增資料前，請使用者提供一份目前階段及仍可進入之早期副本／來源的客戶端觀察，附日期／時區、伺服器、組建、ATT 版本，以及截圖或 Contributor Report；如有尚未開放的來源或獨立活動期間，也一併提供。不要要求使用者猜測階段 API 數值。官方概要可用於架構討論，但不能取代下文要求的逐筆記錄證據。
+
+未來驗證矩陣須涵蓋 Phase 5 到 Phase 6 的累積行為、副本／活動各別日期、未知進程、ID 衝突與保留邊界、階段與移除狀態共存、巢狀及合併來源，以及非 Titan 設定保留。使用同組建／不同階段的固定測試案例驗證獨立性；這些是合成案例，不代表引用的實際階段轉換共用同一組建。
 
 ### 原始資料與同一 ID 的差異
 
@@ -88,10 +121,10 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 
 | 順序 | 工作 | 完成條件 |
 | --- | --- | --- |
-| 1 | 收集下一節的客戶端資訊。確認已安裝的 `[Game]` 路徑、完整客戶端版本／組建編號、確切的 `GetBuildInfo()` 回傳值組合、專案識別資訊，以及首次發布的內容／階段範圍。記錄非 Titan 版本的基準。 | 證據能識別實際載入路徑與執行階段數值；尚未釐清的客戶端特定項目仍須明確標示。 |
+| 1 | 收集下方客戶端資訊。確認已安裝的 `[Game]` 路徑、完整客戶端版本／組建編號、確切的 `GetBuildInfo()` 回傳值組合、專案識別資訊與首次發布的內容範圍。決定僅顯示已開放內容或納入未來內容，記錄階段證據基準及非 Titan 基準。 | 證據能識別執行階段數值與載入路徑；階段假設與所選方案明確，未知的客戶端特定項目仍須保留。 |
 | 2 | 新增 Titan 資料案例之前，先加入無法確認時維持未啟用的 Titan 判定器與共用 Wrath 載入路由。新增 Titan 設定檔與建置／除錯入口；將 `../Titan/Database.xml` 放入一般 Wrath 設定檔的 `extra-database-files`，讓 Wrath 的 `DataRequirements` 排除 Titan，而 Titan 的 `DataRequirements` 納入 Titan。加入範圍受限的執行階段 ReferenceDB 守衛與早期 Titan 參照檔案，並隔離建置階段的 ItemDB 輸入。優先使用 DBContext 與設定檔標籤。 | 固定測試案例涵蓋判定邊界及所有反例；身分未知或無效時，Titan 必須維持未啟用。Wrath 與 Titan 使用共用 Wrath 路由，Era 與 SoD 則保留 Vanilla 路由。兩個 XML 路徑都可能被列舉，但只有符合條件與執行階段守衛時才允許賦值與註冊。設定有效，且建置階段的 ItemDB 資料互斥。 |
 | 3 | 使用一筆證據完整的 Titan 專屬記錄，串接 Parser、完整獨立輸出、早期參照資料與客戶端載入的端到端流程。 | Titan 啟用該記錄及其參照資料；一般 Wrath 不啟用 Titan 資料；每次登入恰使用一套完整資料庫。 |
-| 4 | 加入獨立階段政策與有證據支持的內容差異；處理必要的塑形、成就、難度與設定相容性。 | 每個 Titan 階段進入正確分支；來源新增、取代與移除均符合預期，既有共用來源仍可使用。 |
+| 4 | 實作選定的階段政策與有證據支持的內容差異；處理必要的塑形、成就、難度與設定相容性。 | 累積解鎖、未知進程、來源新增／取代／移除、活動期間與儲存選項符合審查結果；既有有效來源仍可使用。 |
 | 5 | 在 Contributor Report 加入版本與設定檔資訊，並新增 Titan 問題回報版本選項。 | 報告可識別 Titan、完整客戶端版本／組建編號／介面版本號、ATT 版本與觀察情境。 |
 | 6 | 接上 CI、Release 與產物檢查；完成跨遊戲版本回歸測試與遊戲內驗證。 | Titan 失敗會使整體檢查失敗；全新安裝、發布壓縮檔及適用的 db-sync 流程均包含正確產物。 |
 
@@ -105,7 +138,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | 版本邊界 | 使用現有 Titan 促銷與 ICC 競速稱號作為條件案例；測試 `3.80.0` 前後及移除邊界。 | 程式行為符合已審查的條件；資料的遊戲證據另行驗證。 |
 | Titan 識別 | 使用固定測試案例：Titan 為 `(11, 38002)`、一般 Wrath 為 `(11, 30405)`、SoD 為 `(2, 11509, SeasonOfDiscovery=2)`、Era 為 `(2, 11509)`、TBC Anniversary 為 `(5, 20506)`。另測試專案 `11` 在介面版本號 `37999`、`38000`、`38999` 與 `39000` 的情況，以及其他專案、缺少全域值、nil 回傳值與錯誤型別。 | 只有數值型 Wrath 專案 ID 搭配位於 `[38000, 39000)` 的數值型介面版本號才判定為 Titan；邊界結果依序為 false／true／true／false。識別資訊缺失或無效時維持未啟用。這些介面數值是附件提供的固定測試案例，不是對目前客戶端組建的主張。 |
 | 載入與隔離 | 透過共用 Wrath 路由測試 Titan 與一般 Wrath；透過既有 Vanilla 路由測試 Era 與 SoD。檢查 XML 列舉、DataRequirements、早期參照資料順序、本地化賦值、分類註冊及參照資料的副作用。 | XML 可以列舉兩個資料庫路徑，但未啟用遊戲版本的資料不進行任何賦值或註冊。Titan 專屬與 Wrath 專屬的參照資料／本地化／分類互斥；現有 Era／SoD 參照資料及 SoD 行為維持不變。不得將執行階段守衛視為阻止檔案／程式區塊載入。 |
-| 階段 | 在相同 Titan 更新版本下切換內容階段，涵蓋 Ulduar、Karazhan、BWL 與 ICC。 | 解鎖進程不受歷史資料片順序誤導，Wrath 上限不會移除新階段。 |
+| 階段 | 使用同組建／不同階段的合成測試案例，涵蓋 Phase 5 到 Phase 6 的累積行為、未來預覽、未知進程、ID 衝突／保留邊界、階段與移除共存、巢狀／合併來源，以及副本／活動各別日期。審查內嵌的 `ach(17341)` Wrath 規則。 | 保留有效的早期來源；預覽不代表目前可取得；沒有非預期裁剪或移除狀態覆寫；父節點限制與多來源行為明確；一般 Wrath 設定維持不變。 |
 | 合併與來源 | 使用固定樣本，涵蓋同 ID 不同值、缺少記錄、陣列欄位，以及同一物品具有多個來源。 | 明確處理衝突；取代或移除單一來源不影響其他來源；結果不依賴偶然的檔案順序。 |
 | 原始資料 | 檢查快照版本、語系、hotfix 記錄與選取設定；測試遊戲版本／組建不符的輸入。 | 明確拒絕或回報不符的輸入，不能默默將其標為成功的 Titan 建置。 |
 | 產物 | 在乾淨的輸出位置檢查 ReferenceDB、LocalizationDB、Database.xml、Categories，以及 XML 引用的檔案。 | 必要檔案齊全，設定檔一致，建置不依賴前次執行殘留的檔案。 |
@@ -129,6 +162,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | 產品與安裝位置 | Battle.net 選取的產品／版本，以及實際遊戲資料夾與 `Interface/AddOns/AllTheThings` 路徑。可遮蔽個人目錄名稱。 | 確認實際產品與插件位置；不要猜測 `_titan_` 等資料夾名稱。 |
 | 遊戲環境 | 區域、介面語言、伺服器名稱，以及正式或測試環境。 | 建立判定正例與反例，區分 Titan、一般中國區 Wrath 及語言設定。 |
 | ATT 狀態 | ATT 版本／來源或 commit、目前是否能載入，以及第一個 Lua 錯誤的完整文字（如有）。 | 識別目前產物與相容性；沒有錯誤時直接註明。 |
+| 階段觀察 | 目前階段與一個仍可進入的早期副本／來源；如有尚未開放來源或獨立活動期間，也請提供。附日期／時區、伺服器、組建、ATT 版本，以及截圖或 Contributor Report。 | 區分累積可取得狀態、活動日期與客戶端版本；不要由可進入副本推定每項獎勵。 |
 | 一項代表性差異 | 一個 Titan 專屬或與 Wrath 不同的物品／任務／NPC／物件 ID，附 Contributor Report、截圖或直接的 Wowhead 連結。說明預期與目前的顯示結果。 | 選擇最小端到端案例，避免用猜測的資料驗證架構。 |
 | 收藏與副本樣本 | 如有，提供一個已收藏與一個未收藏外觀及相關 item／sourceID，另附重製副本的難度、首領與掉落樣本。不要猜測未知 ID。 | 驗證收藏、難度與來源差異，且不將持有物品等同於已收藏外觀。 |
 | 原始資料匯出 | 若已有 Titan ItemDB 或其他收藏匯出，提供原始檔案及收集工具、版本、日期與語系。沒有時請註明。 | 評估可用輸入、資料缺口與收集方式。 |
@@ -170,7 +204,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | 檔案或目錄 | 類型 | 規劃內容 |
 | --- | --- | --- |
 | `.contrib/src/Parser/Framework/Framework.cs` | 修改 | 對生成的 Wrath 與 Titan ReferenceDB 輸出加入範圍受限的執行階段返回守衛，避免未啟用遊戲版本的參照資料賦值生效。保留既有 Era／SoD 參照資料；階段設定變更仍取決於選定的階段模型。 |
-| `.contrib/src/Parser/Framework/Framework.Processing.cs` | 視條件 | 只有首次發布需要遊戲內階段支援時，才新增 Titan 階段保留／驗證政策與設定檔檢查；建置標籤已足夠時則延後。 |
+| `.contrib/src/Parser/Framework/Framework.Processing.cs` | 視條件 | 驗證所選階段模型的保留上限及時間軸交互作用。只有既有規則無法保留並驗證所需表達方式時才修改；遊戲內階段 UI 本身不代表需要 C# 改動。 |
 | `.contrib/src/Parser/DB/WagoData.cs`, `.contrib/src/Parser/DataValidator.cs` | 視條件 | 在適當層級檢查來源版本、遊戲版本與同 ID 衝突；先確定快照中繼資料格式與錯誤行為。 |
 | `.contrib/src/Parser/Program.cs`, `CustomConfiguration.cs`（同目錄） | 視條件 | 檢查設定檔載入順序與陣列取代；只有需要新的驗證入口或生成路由時才變更。現有 `db-relative` 已可選擇獨立輸出。 |
 | `.contrib/src/Parser/Framework/Framework.Objects.cs` | 視條件 | 重用現有 XML 引入與分類守衛。只有透過可變參數存取插件資料表無法支援既有早期守衛時，才調整生成檔頭順序。 |
@@ -187,7 +221,8 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | --- | --- | --- |
 | `AllTheThings.toc`, `src/WoW API Wrappers.lua` | 修改 | 新增無法確認時維持未啟用的共用 Titan 判定，並在通用 `db/[Game]/ReferenceDB.lua` 之後、`base.lua` 之前引入早期 Titan 參照資料；保留共用 Wrath TOC 遊戲類型。確定生成路徑前先確認實際 `[Game]` 解析結果。 |
 | `db/Wrath/ReferenceDB.lua`, `db/Titan/ReferenceDB.lua`, `db/Wrath/Database.xml`, `db/Titan/Database.xml`，以及兩個目錄下的 `LocalizationDB.lua` 與 `Categories/` | 生成 | 將 Titan 保留為透過 XML 引用的完整獨立資料集。一般 Wrath 設定檔將 `../Titan/Database.xml` 加入 `extra-database-files`；各設定檔的 `DataRequirements` 與執行階段守衛控制賦值／註冊，而非 XML 列舉。生成互斥的 Wrath／Titan ReferenceDB 賦值，並在 TOC 早期引入 Titan 參照檔案。根據已安裝的 `[Game]` 目錄確認確切輸出路徑。 |
-| `src/Settings/Pages/Phases.lua` | 修改／視條件 | Titan 階段顯示與選取；首次發布沒有階段 UI 時延後。 |
+| `src/Settings/Pages/Phases.lua` | 視條件 | 選擇 B 或 C 時加入 Titan 階段控制與預設值，區分實際進程及顯示選項；首次發布沒有階段 UI 時延後。 |
+| `src/Modules/Filter.lua`, `src/DataHandling.lua`, `src/Settings/Settings.lua` | 視條件 | 審查父子過濾、依階段狀態合併來源、儲存的數字 ID 與預設值。僅依所選模型或已證實的遷移需求修改，保留非 Titan 選項。 |
 | `src/Classes/Transmog.lua`, `src/Settings/Settings.lua`, `src/Settings/Pages/General.lua` | 視條件 | 檢查外觀收藏與設定中的版本限制；依已驗證能力更新。 |
 | `src/Classes/Achievement.lua`, `Achievement.Classic.lua`, `Difficulty.lua`（同目錄）, `src/UI/Windows/Illusions.lua` | 視條件 | 僅調整測試顯示不相容的成就、難度或功能分支。 |
 | `src/Modules/Contributor.lua`, `src/UI/Windows/Debugger.lua` | 修改 | 在報告中加入設定檔、完整版本／組建編號／介面版本號、語系與必要環境資訊；明確記錄未知值。 |
@@ -198,6 +233,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | 檔案 | 類型 | 規劃內容 |
 | --- | --- | --- |
 | `tests/titan-flavor-loading.lua` | 新增 | 遵循既有獨立 `tests/` 慣例；使用 Lua 5.1 測試實際判定器與生成的載入守衛，包含語系／分類／參照資料副作用，以及客戶端反例的固定測試案例。不要建立新框架。 |
+| `tests/titan-phases.lua` | 新增／視條件 | 預計以 Lua 5.1 固定測試案例驗證所選執行階段模型，涵蓋來源過濾／合併、不可取得狀態、未知進程與儲存設定。Parser 裁剪檢查保留在支援的 Parser 流程中，不以模擬結果證明完整 Parser 行為。 |
 
 ### 建置交付與文件
 
@@ -229,3 +265,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | [Framework.cs](../src/Parser/Framework/Framework.cs), 2105–2114, 3601–3606, 3654–3673；[Framework.Objects.cs](../src/Parser/Framework/Framework.Objects.cs), 1312–1317, 1381–1387, 1391–1420；[Vanilla Database.xml](../../db/Vanilla/Database.xml), 17 | 既有多檔 XML 引入、本地化／分類守衛，以及尚未生成 ReferenceDB 守衛的現況。 |
 | [base.lua](../../src/base.lua), 493–496, 551–555；[FactionData.lua](../../src/Modules/FactionData.lua), 24–32 | 早期使用 ReferenceDB 的程式，需要在 base 初始化前取得 Titan 參照資料。 |
 | [TOC](../../AllTheThings.toc), 6, 37–40, 96；[Contributor](../../src/Modules/Contributor.lua), 76–84, 262 | 介面宣告、資料載入入口與報告版本資訊。 |
+| [階段常數](../.db/shared/lib/Constants/Phases.lua), 41–53, 84–122, 2366–2402；[Shortcuts](../.db/shared/functions/Shortcuts.lua), 681–695, 1264–1265 | 已占用 ID、Wrath 階段定義，以及補缺值和強制套用階段的差異。 |
+| [Framework.Processing.cs](../src/Parser/Framework/Framework.Processing.cs), 919–942, 5002–5062；[Program.cs](../src/Parser/Program.cs), 965–970 | 時間軸裁剪／覆寫先於階段保留檢查；數值型階段預處理仍是 TODO。 |
+| [階段設定](../../src/Settings/Pages/Phases.lua), 21–68, 95–191；[Settings](../../src/Settings/Settings.lua), 589–620, 1171–1176 | 逐 ID 顯示、歷史預設值、寫死的頁面與儲存選項。 |
+| [Filter](../../src/Modules/Filter.lua), 575–580, 617–624；[DataHandling](../../src/DataHandling.lua), 803–831, 932–955；[Ulduar](<../.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/5 Ulduar.lua>), 643–655 | 父鏈過濾、來源合併，以及需要審查的內嵌 Wrath 成就階段規則。 |
