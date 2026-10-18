@@ -34,7 +34,7 @@ For every targeted reference, record its path and source anchor, owning record/q
 | Locally rebound helper | Follow the local binding. An `i` bound to `GetRecipeHelperForProfession(...)` is a recipe helper; its label can describe the spell or product rather than the pattern item. |
 | `provider` / `providers` tuple | The tuple tag determines the entity kind. Resolve its ID or constant in that domain. |
 | Quest-reference field | Interpret `sourceQuest(s)`, `altQuests`, `questID`, and tagged quest criteria according to their schema. Counts such as `sourceQuestNumRequired` are not IDs. |
-| NPC/item field | `qg`/`qgs` identify NPCs; `qi`/`qis` and `qs` identify items. Their field location supplies context, not independent proof of identity or item role. |
+| NPC/item field | `qg`/`qgs` identify NPCs; `qi`/`qis` and `qs`/`qss` identify items. Their field location supplies context, not independent proof of identity or item role. |
 | Symbolic value | Resolve an existing definition and its applicable conditions. Leave unresolved bindings classified as unknown. |
 
 Parse strings, comments, and Lua syntax before locating punctuation or identifiers. Keep commented-out source separate from executable source references. Classify comments using section 6.4.
@@ -138,13 +138,25 @@ A repeated ID can be legitimate in different contexts or conditions. A collision
 
 Use the type's complete order below and the shared constraints in this section. The complete Quest/Rare/Treasure examples in [Standard.lua](../../Standard.lua) supply the reference structure; the confirmed Forever policies here define the resulting order. Preserve the current field keys.
 
-Aliases share an ordering slot, without renaming: `sourceQuest`/`sourceQuests`; `qg`/`qgs`/`provider`/`providers`; `coord`/`coords`; `race`/`raceID`/`races`; `class`/`classID`/`classes`; `level`/`lvl`. Retain the relative order of fields sharing a slot.
+Classify singular and plural spellings as members of the same field family. Each family shares its semantic rules and ordering slot; a plural value applies the relevant rules to each entry. Preserve existing key spellings and scalar/list shapes.
+
+| Field family | Members | Ordering slot |
+| --- | --- | --- |
+| Quest giver | `qg`, `qgs` | Source block. |
+| Quest item | `qi`, `qis` | Tail, after `timeline` and before `groups`. |
+| Quest starter | `qs`, `qss` | Quest-starter slot before the source block. |
+| Provider | `provider`, `providers` | Source block. |
+| Coordinate | `coord`, `coords` | Coordinate slot before `cost`. |
+
+The quest-giver and provider families share the existing source-block slot while retaining their distinct field semantics. Preserve relative order among all fields sharing a slot; singular/plural spelling does not introduce a separate position or authorize merging fields.
+
+Other aliases also share a slot without renaming: `sourceQuest`/`sourceQuests`; `race`/`raceID`/`races`; `class`/`classID`/`classes`; `level`/`lvl`. The complete schemas below expand these families and aliases wherever their slot appears.
 
 | Record type | Recognized fields in order |
 | --- | --- |
-| Quest | `name` -> `description` -> `sourceQuests` -> `sourceQuestNumRequired` -> `altQuests` -> `qs` -> `provider` -> `coord` -> `maps` -> `cost` -> restrictions -> flags/lock -> `customCollect` -> tail. |
-| NPC | `description` -> `crs` -> `provider` -> `coord` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
-| Object | `description` -> `crs` -> `sourceQuests` -> `provider` -> `coord` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
+| Quest | `name` -> `description` -> `sourceQuests` -> `sourceQuestNumRequired` -> `altQuests` -> `qs`/`qss` -> source block -> `coord`/`coords` -> `maps` -> `cost` -> restrictions -> flags/lock -> `customCollect` -> tail. |
+| NPC | `description` -> `crs` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
+| Object | `description` -> `crs` -> `sourceQuests` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
 
 Apply a complete schema only to its classified entity record. For other constructors, category headers, and plain keyed tables, use applicable shared constraints:
 
