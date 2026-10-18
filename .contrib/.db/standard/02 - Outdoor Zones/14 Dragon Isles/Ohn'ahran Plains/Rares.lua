@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- },
 			}),
 			n(196350, {	-- Old Stormhide
-				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outlook to Aylaag Outpost.",
+				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				-- ["groups"] = {
