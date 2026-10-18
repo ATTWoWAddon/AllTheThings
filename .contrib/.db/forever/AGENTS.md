@@ -142,6 +142,7 @@ Classify singular and plural spellings as members of the same field family. Each
 
 | Field family | Members | Ordering slot |
 | --- | --- | --- |
+| Prerequisite quest | `sourceQuest`, `sourceQuests` | Prerequisite slot in the record schema. |
 | Quest giver | `qg`, `qgs` | Source block. |
 | Quest item | `qi`, `qis` | Tail, after `timeline` and before `groups`. |
 | Quest starter | `qs`, `qss` | Quest-starter slot before the source block. |
@@ -150,13 +151,13 @@ Classify singular and plural spellings as members of the same field family. Each
 
 The quest-giver and provider families share the existing source-block slot while retaining their distinct field semantics. Preserve relative order among all fields sharing a slot; singular/plural spelling does not introduce a separate position or authorize merging fields.
 
-Other aliases also share a slot without renaming: `sourceQuest`/`sourceQuests`; `race`/`raceID`/`races`; `class`/`classID`/`classes`; `level`/`lvl`. The complete schemas below expand these families and aliases wherever their slot appears.
+Other aliases also share a slot without renaming: `race`/`raceID`/`races`; `class`/`classID`/`classes`; `level`/`lvl`. The complete schemas below expand these families and aliases wherever their slot appears.
 
 | Record type | Recognized fields in order |
 | --- | --- |
-| Quest | `name` -> `description` -> `sourceQuests` -> `sourceQuestNumRequired` -> `altQuests` -> `qs`/`qss` -> source block -> `coord`/`coords` -> `maps` -> `cost` -> restrictions -> flags/lock -> `customCollect` -> tail. |
+| Quest | `name` -> `description` -> `sourceQuest`/`sourceQuests` -> `sourceQuestNumRequired` -> `altQuests` -> `qs`/`qss` -> source block -> `coord`/`coords` -> `maps` -> `cost` -> restrictions -> flags/lock -> `customCollect` -> tail. |
 | NPC | `description` -> `crs` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
-| Object | `description` -> `crs` -> `sourceQuests` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
+| Object | `description` -> `crs` -> `sourceQuest`/`sourceQuests` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
 
 Apply a complete schema only to its classified entity record. For other constructors, category headers, and plain keyed tables, use applicable shared constraints:
 
