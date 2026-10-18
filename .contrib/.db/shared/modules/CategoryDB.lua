@@ -1,7 +1,17 @@
+-- Source builds (snapshot: 2026-10-18):
+-- RETAIL: 12.1.5.70448
+-- RETAIL PTR: 12.1.7.70424
+-- CLASSIC ERA / SEASON OF DISCOVERY: 1.15.9.70003
+-- TBC PTR / TBC ANNIVERSARY: 2.5.6.70006
+-- MOP CLASSIC: 5.5.4.70449
+-- FOREVER BETA: 1.60.1.70450
+-- TITAN BETA (source-only): 3.80.2.70372
+-- Historical source only (not a current flavor): RETAIL HISTORICAL: 10.0.0.46597 (Categories 404, 653 only)
 ---------------------------------------------------------
 --   C A T E G O R Y   D A T A B A S E   M O D U L E   --
 ---------------------------------------------------------
 local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-1
 	[1] = {
 		readable = "Bullets",
 		icon = 132383,
@@ -19,6 +29,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "子彈",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-2
 	[2] = {
 		readable = "Consumable",
 		icon = 132108,
@@ -50,6 +61,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "消耗品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-3
 	[3] = {
 		readable = "Tarot Decks",
 		icon = 134492,
@@ -67,6 +79,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗月塔羅牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-58
 	[58] = {
 		readable = "Holiday Cooking",
 		icon = 134018,
@@ -84,6 +97,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "節慶烹飪",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-63
 	[63] = {
 		readable = "Everyday Cooking",
 		icon = 133968,
@@ -101,6 +115,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "日常烹飪",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-64
 	[64] = {
 		readable = "Way of the Grill",
 		icon = 629054,
@@ -108,6 +123,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = WOWAPI_GetSpellName(124694),
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-65
 	[65] = {
 		readable = "Way of the Wok",
 		icon = 629059,
@@ -115,6 +131,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = WOWAPI_GetSpellName(125584),
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-66
 	[66] = {
 		readable = "Way of the Pot",
 		icon = 629056,
@@ -122,6 +139,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = WOWAPI_GetSpellName(125586),
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-67
 	[67] = {
 		readable = "Way of the Steamer",
 		icon = 629057,
@@ -129,6 +147,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = WOWAPI_GetSpellName(125587),
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-68
 	[68] = {
 		readable = "Way of the Oven",
 		icon = 629055,
@@ -136,6 +155,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = WOWAPI_GetSpellName(125588),
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-69
 	[69] = {
 		readable = "Way of the Brew",
 		icon = 629058,
@@ -143,6 +163,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = WOWAPI_GetSpellName(125589),
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-70
 	[70] = {
 		readable = "Unusual Delights",
 		icon = 133168,
@@ -160,6 +181,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "不尋常的點心",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-71
 	[71] = {
 		readable = "Weapon Skills",
 		icon = 135580,
@@ -189,6 +211,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器技能",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-72
 	[72] = {
 		readable = "Old World Recipes",
 		text = {
@@ -205,6 +228,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "舊世界食譜",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-73
 	[73] = {
 		readable = "Outlandish Dishes",
 		icon = 134493,
@@ -234,6 +258,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-74
 	[74] = {
 		readable = "Recipes of the Cold North",
 		text = {
@@ -250,6 +275,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寒冷北方的食譜",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-75
 	[75] = {
 		readable = "Cataclysm Recipes",
 		text = {
@@ -274,6 +300,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-90
 	[90] = {
 		readable = "Pandaren Cuisine",
 		text = {
@@ -294,6 +321,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "熊貓人菜餚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0001-0099.md#category-91
 	[91] = {
 		readable = "Glyphs",
 		icon = 254299,
@@ -351,6 +379,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-103
 	[103] = {
 		readable = "Off-hand",
 		text = {
@@ -367,6 +396,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-104
 	[104] = {
 		readable = "Ink",
 		icon = 237070,
@@ -384,6 +414,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "墨水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-105
 	[105] = {
 		readable = "Clear Mind",
 		text = {
@@ -400,6 +431,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "清心",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-106
 	[106] = {
 		readable = "Card",
 		icon = 134492,
@@ -417,6 +449,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-107
 	[107] = {
 		readable = "Scrolls",
 		icon = 134939,
@@ -474,6 +507,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-108
 	[108] = {
 		readable = "Research",
 		icon = 134331,
@@ -495,6 +529,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-114
 	[114] = {
 		readable = "Other",
 		text = {
@@ -515,6 +550,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-119
 	[119] = {
 		readable = "Shoulder Inscription",
 		text = {
@@ -531,6 +567,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "肩膀銘文",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-165
 	[165] = {
 		readable = "Fist Weapons",
 		icon = 135599,
@@ -548,6 +585,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "拳套",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-167
 	[167] = {
 		readable = "Crowns",
 		icon = 132769,
@@ -605,6 +643,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-168
 	[168] = {
 		readable = "Materials",
 		icon = 133237,
@@ -626,6 +665,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-171
 	[171] = {
 		readable = "Necklaces",
 		icon = 133294,
@@ -643,6 +683,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-176
 	[176] = {
 		readable = "Rings",
 		icon = 133397,
@@ -660,6 +701,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-178
 	[178] = {
 		readable = "Statues",
 		icon = 134451,
@@ -677,6 +719,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕像",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-180
 	[180] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -694,6 +737,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-183
 	[183] = {
 		readable = "Parts",
 		icon = 133006,
@@ -711,6 +755,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "零件",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-184
 	[184] = {
 		readable = "Explosives",
 		icon = 133711,
@@ -728,6 +773,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸藥",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-185
 	[185] = {
 		readable = "Goggles",
 		icon = 133149,
@@ -745,6 +791,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-188
 	[188] = {
 		readable = "Devices",
 		icon = 132766,
@@ -762,6 +809,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-189
 	[189] = {
 		readable = "Guns & Bows",
 		icon = 135612,
@@ -783,6 +831,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "槍與弓",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-190
 	[190] = {
 		readable = "Scopes",
 		icon = 134442,
@@ -804,6 +853,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "瞄準鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-191
 	[191] = {
 		readable = "Tools",
 		icon = 134520,
@@ -821,6 +871,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0100-0199.md#category-194
 	[194] = {
 		readable = "Fireworks",
 		icon = 135815,
@@ -838,6 +889,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "煙火",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-215
 	[215] = {
 		readable = "Materials",
 		icon = 135247,
@@ -859,6 +911,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-216
 	[216] = {
 		readable = "Weapon Mods",
 		icon = 135250,
@@ -880,6 +933,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-217
 	[217] = {
 		readable = "Armor Mods",
 		icon = 133597,
@@ -901,6 +955,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-218
 	[218] = {
 		readable = "Helms",
 		icon = 133127,
@@ -908,6 +963,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HEADSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-219
 	[219] = {
 		readable = "Shoulders",
 		icon = 135053,
@@ -915,6 +971,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-220
 	[220] = {
 		readable = "Chest",
 		icon = 132624,
@@ -922,6 +979,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~INVTYPE_CHEST]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-221
 	[221] = {
 		readable = "Gauntlets",
 		icon = 132938,
@@ -939,6 +997,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-222
 	[222] = {
 		readable = "Bracers",
 		icon = 132616,
@@ -946,6 +1005,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-223
 	[223] = {
 		readable = "Belts",
 		icon = 132516,
@@ -953,6 +1013,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-224
 	[224] = {
 		readable = "Legs",
 		icon = 134584,
@@ -970,6 +1031,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "腿部",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-225
 	[225] = {
 		readable = "Boots",
 		icon = 132535,
@@ -977,6 +1039,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-226
 	[226] = {
 		readable = "Shields",
 		icon = 134952,
@@ -994,6 +1057,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護盾",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-227
 	[227] = {
 		readable = "Weapons",
 		icon = 135580,
@@ -1001,6 +1065,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-228
 	[228] = {
 		readable = "Skeleton Keys",
 		icon = 134245,
@@ -1022,6 +1087,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "骷髏鑰匙",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-230
 	[230] = {
 		readable = "Materials",
 		icon = 132907,
@@ -1043,6 +1109,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-233
 	[233] = {
 		readable = "Bags",
 		icon = 133652,
@@ -1064,6 +1131,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-234
 	[234] = {
 		readable = "Hats & Hoods",
 		icon = 133133,
@@ -1085,6 +1153,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帽子與兜帽",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-235
 	[235] = {
 		readable = "Shoulders",
 		icon = 135033,
@@ -1092,6 +1161,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-236
 	[236] = {
 		readable = "Robes & Tunics",
 		icon = 132659,
@@ -1113,6 +1183,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長袍與外套",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-237
 	[237] = {
 		readable = "Bracers",
 		icon = 132606,
@@ -1120,6 +1191,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-238
 	[238] = {
 		readable = "Belts",
 		icon = 132503,
@@ -1127,6 +1199,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-239
 	[239] = {
 		readable = "Gloves",
 		icon = 132940,
@@ -1134,6 +1207,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-240
 	[240] = {
 		readable = "Pants",
 		icon = 134586,
@@ -1141,6 +1215,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-241
 	[241] = {
 		readable = "Boots",
 		icon = 132539,
@@ -1148,6 +1223,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-242
 	[242] = {
 		readable = "Cloaks",
 		icon = 133768,
@@ -1165,6 +1241,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-243
 	[243] = {
 		readable = "Shirts",
 		icon = 135029,
@@ -1182,6 +1259,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "襯衣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-246
 	[246] = {
 		readable = "Special",
 		text = {
@@ -1198,6 +1276,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "特殊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-247
 	[247] = {
 		readable = "Materials",
 		icon = 134252,
@@ -1219,6 +1298,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-249
 	[249] = {
 		readable = "Armor Kits",
 		icon = 133611,
@@ -1236,6 +1316,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲片",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-250
 	[250] = {
 		readable = "Bags",
 		icon = 133628,
@@ -1257,6 +1338,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-251
 	[251] = {
 		readable = "Helms",
 		icon = 133076,
@@ -1264,6 +1346,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HEADSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-252
 	[252] = {
 		readable = "Shoulders",
 		icon = 135032,
@@ -1271,6 +1354,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-253
 	[253] = {
 		readable = "Chest",
 		icon = 132635,
@@ -1278,6 +1362,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~INVTYPE_CHEST]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-254
 	[254] = {
 		readable = "Bracers",
 		icon = 132607,
@@ -1285,6 +1370,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-255
 	[255] = {
 		readable = "Gloves",
 		icon = 132939,
@@ -1292,6 +1378,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-256
 	[256] = {
 		readable = "Belts",
 		icon = 132513,
@@ -1299,6 +1386,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-257
 	[257] = {
 		readable = "Pants",
 		icon = 134592,
@@ -1306,6 +1394,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-258
 	[258] = {
 		readable = "Boots",
 		icon = 132544,
@@ -1313,6 +1402,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-259
 	[259] = {
 		readable = "Cloaks",
 		icon = 133755,
@@ -1330,6 +1420,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-260
 	[260] = {
 		readable = "Special",
 		text = {
@@ -1346,6 +1437,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "特殊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-264
 	[264] = {
 		readable = "Smelting",
 		text = {
@@ -1402,6 +1494,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			-- #endif
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0200-0299.md#category-265
 	[265] = {
 		readable = "Elemental",
 		text = {
@@ -1418,6 +1511,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "元素",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-332
 	[332] = {
 		readable = "Alchemy of Draenor",
 		text = {
@@ -1434,6 +1528,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-333
 	[333] = {
 		readable = "Reagents and Research",
 		icon = 134331,
@@ -1451,6 +1546,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-334
 	[334] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -1468,6 +1564,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-335
 	[335] = {
 		readable = "Potions and Elixirs",
 		icon = 134831,
@@ -1485,6 +1582,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥水與藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-336
 	[336] = {
 		readable = "Trinkets and Trinket Upgrades",
 		icon = 135443,
@@ -1502,6 +1600,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品與飾品升級",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-342
 	[342] = {
 		readable = "Food of Draenor",
 		text = {
@@ -1518,6 +1617,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾食物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-343
 	[343] = {
 		readable = "Meat Dishes",
 		text = {
@@ -1534,6 +1634,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "肉類餐點",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-344
 	[344] = {
 		readable = "Fish Dishes",
 		text = {
@@ -1550,6 +1651,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "魚類餐點",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-345
 	[345] = {
 		readable = "Feasts",
 		text = {
@@ -1566,6 +1668,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "筵席",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-346
 	[346] = {
 		readable = "Delicacies",
 		text = {
@@ -1582,6 +1685,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "佳餚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-347
 	[347] = {
 		readable = "Draenor Engineering",
 		text = {
@@ -1598,6 +1702,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-348
 	[348] = {
 		readable = "Draenor Enchanting",
 		text = {
@@ -1614,6 +1719,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-349
 	[349] = {
 		readable = "Cloak",
 		icon = 133770,
@@ -1631,6 +1737,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-350
 	[350] = {
 		readable = "Neck",
 		icon = 133294,
@@ -1648,6 +1755,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "頸部",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-351
 	[351] = {
 		readable = "Ring",
 		icon = 133397,
@@ -1665,6 +1773,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-352
 	[352] = {
 		readable = "Weapon",
 		icon = 135792,
@@ -1682,6 +1791,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-354
 	[354] = {
 		readable = "Other",
 		text = {
@@ -1698,6 +1808,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-361
 	[361] = {
 		readable = "Item Enhancers",
 		text = {
@@ -1714,6 +1825,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "物品強化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-362
 	[362] = {
 		readable = "Tailoring Patterns",
 		text = {
@@ -1730,6 +1842,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裁縫圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-363
 	[363] = {
 		readable = "Armor",
 		text = {
@@ -1746,6 +1859,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-364
 	[364] = {
 		readable = "Dyes and Thread",
 		text = {
@@ -1762,6 +1876,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "染料與針線",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-366
 	[366] = {
 		readable = "Reagents and Research",
 		icon = 134331,
@@ -1779,6 +1894,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-367
 	[367] = {
 		readable = "Other",
 		text = {
@@ -1795,6 +1911,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-369
 	[369] = {
 		readable = "Draenor Patterns",
 		text = {
@@ -1811,6 +1928,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-372
 	[372] = {
 		readable = "Jewelcrafting Designs",
 		text = {
@@ -1827,6 +1945,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "珠寶設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-373
 	[373] = {
 		readable = "Draenor Designs",
 		text = {
@@ -1843,6 +1962,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-374
 	[374] = {
 		readable = "Reagents and Research",
 		icon = 134331,
@@ -1860,6 +1980,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-375
 	[375] = {
 		readable = "Jewelry Enhancers",
 		text = {
@@ -1876,6 +1997,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "珠寶強化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-376
 	[376] = {
 		readable = "Jewelry",
 		text = {
@@ -1892,6 +2014,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "珠寶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-377
 	[377] = {
 		readable = "Gems",
 		text = {
@@ -1908,6 +2031,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-378
 	[378] = {
 		readable = "Other",
 		text = {
@@ -1924,6 +2048,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-379
 	[379] = {
 		readable = "Leatherworking Patterns",
 		text = {
@@ -1940,6 +2065,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "製皮圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-380
 	[380] = {
 		readable = "Draenor Patterns",
 		text = {
@@ -1956,6 +2082,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-381
 	[381] = {
 		readable = "Reagents and Research",
 		icon = 134331,
@@ -1973,6 +2100,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399.md#category-382
 	[382] = {
 		readable = "Leather Armor",
 		text = {
@@ -1989,6 +2117,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皮甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-383
 	[383] = {
 		readable = "Mail Armor",
 		text = {
@@ -2005,6 +2134,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鎖甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-384
 	[384] = {
 		readable = "Armor Enhancers",
 		text = {
@@ -2021,6 +2151,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲強化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-385
 	[385] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -2038,6 +2169,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-386
 	[386] = {
 		readable = "Bags",
 		icon = 133646,
@@ -2055,6 +2187,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-388
 	[388] = {
 		readable = "Other",
 		text = {
@@ -2071,6 +2204,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-389
 	[389] = {
 		readable = "Draenor Plans",
 		text = {
@@ -2087,6 +2221,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-390
 	[390] = {
 		readable = "Reagents and Research",
 		icon = 134331,
@@ -2104,6 +2239,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-391
 	[391] = {
 		readable = "Item Enhancers",
 		text = {
@@ -2120,6 +2256,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "物品強化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-392
 	[392] = {
 		readable = "Armor",
 		text = {
@@ -2136,6 +2273,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-393
 	[393] = {
 		readable = "Weapons and Shields",
 		icon = 135792,
@@ -2153,6 +2291,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器與盾牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-394
 	[394] = {
 		readable = "Other",
 		text = {
@@ -2169,6 +2308,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0300-0399-2.md#category-399
 	[399] = {
 		readable = "Illusions",
 		icon = 237174,
@@ -2186,6 +2326,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "幻象",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-400
 	[400] = {
 		readable = "Battle Standards",
 		text = {
@@ -2202,6 +2343,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戰旗",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-402
 	[402] = {
 		readable = "Tents",
 		text = {
@@ -2218,6 +2360,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帳篷",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-403
 	[403] = {
 		readable = "Merchant Orders",
 		text = {
@@ -2234,6 +2377,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "貿易訂單",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-404
 	[404] = {
 		readable = "Removal",
 		text = {
@@ -2250,6 +2394,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "移除",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-407
 	[407] = {
 		readable = "Reagents and Research",
 		icon = 134331,
@@ -2267,6 +2412,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-409
 	[409] = {
 		readable = "Reagents and Research",
 		icon = 1003586,
@@ -2284,6 +2430,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-410
 	[410] = {
 		readable = "Draenor Inscription",
 		text = {
@@ -2300,6 +2447,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-411
 	[411] = {
 		readable = "Staves & Wands",
 		text = {
@@ -2316,6 +2464,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法杖與魔杖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-412
 	[412] = {
 		readable = "Card",
 		text = {
@@ -2332,6 +2481,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-413
 	[413] = {
 		readable = "Off-hand",
 		text = {
@@ -2348,6 +2498,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-414
 	[414] = {
 		readable = "Reagents and Research",
 		icon = 134331,
@@ -2365,6 +2516,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-415
 	[415] = {
 		readable = "Inscription",
 		text = {
@@ -2381,6 +2533,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "艾澤拉斯銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-416
 	[416] = {
 		readable = "Goggles",
 		icon = 133023,
@@ -2398,6 +2551,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-417
 	[417] = {
 		readable = "Robotics",
 		text = {
@@ -2414,6 +2568,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "機器人",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-418
 	[418] = {
 		readable = "Devices",
 		text = {
@@ -2430,6 +2585,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-419
 	[419] = {
 		readable = "Engineering",
 		text = {
@@ -2446,6 +2602,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-420
 	[420] = {
 		readable = "Tools",
 		text = {
@@ -2462,6 +2619,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "小工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-423
 	[423] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -2479,6 +2637,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-424
 	[424] = {
 		readable = "Training",
 		icon = 134331,
@@ -2496,6 +2655,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-425
 	[425] = {
 		readable = "Legion Mining",
 		text = {
@@ -2512,6 +2672,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-426
 	[426] = {
 		readable = "Legion Plans",
 		text = {
@@ -2528,6 +2689,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-427
 	[427] = {
 		readable = "Armor",
 		text = {
@@ -2544,6 +2706,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-428
 	[428] = {
 		readable = "Other",
 		text = {
@@ -2560,6 +2723,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-429
 	[429] = {
 		readable = "Reagents",
 		text = {
@@ -2576,6 +2740,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-430
 	[430] = {
 		readable = "Legion Patterns",
 		text = {
@@ -2592,6 +2757,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-431
 	[431] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -2609,6 +2775,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-432
 	[432] = {
 		readable = "Training",
 		icon = 134331,
@@ -2626,6 +2793,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-433
 	[433] = {
 		readable = "Alchemy of the Broken Isles",
 		text = {
@@ -2642,6 +2810,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "破碎群島鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-434
 	[434] = {
 		readable = "Combat Potions",
 		text = {
@@ -2658,6 +2827,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戰鬥藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-435
 	[435] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -2675,6 +2845,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-436
 	[436] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -2692,6 +2863,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-437
 	[437] = {
 		readable = "Utility Potions",
 		text = {
@@ -2708,6 +2880,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "輔助藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-438
 	[438] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -2725,6 +2898,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-439
 	[439] = {
 		readable = "Cauldrons",
 		text = {
@@ -2741,6 +2915,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大鍋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499.md#category-440
 	[440] = {
 		readable = "Mass Milling",
 		text = {
@@ -2757,6 +2932,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大量研磨",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-443
 	[443] = {
 		readable = "Legion Enchanting",
 		text = {
@@ -2773,6 +2949,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-444
 	[444] = {
 		readable = "Neck Enchantments",
 		icon = 133294,
@@ -2790,6 +2967,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-445
 	[445] = {
 		readable = "Ring Enchantments",
 		icon = 133397,
@@ -2807,6 +2985,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-446
 	[446] = {
 		readable = "Cloak Enchantments",
 		icon = 133770,
@@ -2824,6 +3003,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-447
 	[447] = {
 		readable = "Shoulder Enchantments",
 		text = {
@@ -2840,6 +3020,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "肩部附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-448
 	[448] = {
 		readable = "Glove Enchantments",
 		icon = 132938,
@@ -2857,6 +3038,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手套附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-449
 	[449] = {
 		readable = "Toys, Pets, and Mounts",
 		text = {
@@ -2873,6 +3055,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "玩具，寵物與坐騎",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-450
 	[450] = {
 		readable = "Legion Inscription",
 		text = {
@@ -2889,6 +3072,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-451
 	[451] = {
 		readable = "Cards",
 		text = {
@@ -2905,6 +3089,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-453
 	[453] = {
 		readable = "Vantus Runes",
 		icon = 1392953,
@@ -2922,6 +3107,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "梵陀符文",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-454
 	[454] = {
 		readable = "Books & Scrolls",
 		icon = 134939,
@@ -2939,6 +3125,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "書籍與卷軸",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-456
 	[456] = {
 		readable = "Legion Herbalism",
 		text = {
@@ -2955,6 +3142,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-459
 	[459] = {
 		readable = "Legion Skinning",
 		text = {
@@ -2971,6 +3159,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-460
 	[460] = {
 		readable = "Legion Patterns",
 		text = {
@@ -2987,6 +3176,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-461
 	[461] = {
 		readable = "Leather Armor",
 		text = {
@@ -3003,6 +3193,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皮甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-462
 	[462] = {
 		readable = "Mail Armor",
 		text = {
@@ -3019,6 +3210,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鎖甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-463
 	[463] = {
 		readable = "Other",
 		text = {
@@ -3035,6 +3227,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-464
 	[464] = {
 		readable = "Legion Designs",
 		text = {
@@ -3051,6 +3244,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-465
 	[465] = {
 		readable = "Rings",
 		icon = 133397,
@@ -3068,6 +3262,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-466
 	[466] = {
 		readable = "Gems",
 		text = {
@@ -3084,6 +3279,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-467
 	[467] = {
 		readable = "Other",
 		text = {
@@ -3100,6 +3296,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-468
 	[468] = {
 		readable = "Training",
 		icon = 134331,
@@ -3117,6 +3314,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "基本訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-469
 	[469] = {
 		readable = "Legion Engineering",
 		text = {
@@ -3133,6 +3331,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-470
 	[470] = {
 		readable = "Goggles",
 		icon = 133023,
@@ -3150,6 +3349,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-471
 	[471] = {
 		readable = "Combat Tools",
 		text = {
@@ -3166,6 +3366,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戰鬥工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-472
 	[472] = {
 		readable = "Devices",
 		text = {
@@ -3182,6 +3383,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-474
 	[474] = {
 		readable = "Robotics",
 		text = {
@@ -3198,6 +3400,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "機器人",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-475
 	[475] = {
 		readable = "Food of the Broken Isles",
 		text = {
@@ -3214,6 +3417,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "破碎群島食物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-476
 	[476] = {
 		readable = "Snacks",
 		text = {
@@ -3230,6 +3434,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "點心",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-477
 	[477] = {
 		readable = "Light Meals",
 		text = {
@@ -3246,6 +3451,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "輕食",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-478
 	[478] = {
 		readable = "Large Meals",
 		text = {
@@ -3262,6 +3468,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大餐",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-479
 	[479] = {
 		readable = "Delicacies",
 		text = {
@@ -3278,6 +3485,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "佳餚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-480
 	[480] = {
 		readable = "Feasts",
 		text = {
@@ -3294,6 +3502,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "筵席",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-484
 	[484] = {
 		readable = "Material Preparation",
 		text = {
@@ -3310,6 +3519,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料準備訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-2.md#category-485
 	[485] = {
 		readable = "Tanning",
 		text = {
@@ -3326,6 +3536,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鞣製訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-486
 	[486] = {
 		readable = "Shaping",
 		text = {
@@ -3342,6 +3553,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塑造訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-487
 	[487] = {
 		readable = "Stitching",
 		text = {
@@ -3358,6 +3570,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "縫製訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-488
 	[488] = {
 		readable = "Relics",
 		icon = 1003601,
@@ -3375,6 +3588,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "聖物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-489
 	[489] = {
 		readable = "Relics",
 		icon = 1003601,
@@ -3392,6 +3606,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "聖物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-490
 	[490] = {
 		readable = "Relics",
 		icon = 1003601,
@@ -3409,6 +3624,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "聖物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-491
 	[491] = {
 		readable = "Relics",
 		icon = 1003601,
@@ -3426,6 +3642,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "聖物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-492
 	[492] = {
 		readable = "Mass Milling",
 		text = {
@@ -3442,6 +3659,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大量研磨",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-495
 	[495] = {
 		readable = "Cloth Armor",
 		text = {
@@ -3458,6 +3676,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "布甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-496
 	[496] = {
 		readable = "Reagents",
 		text = {
@@ -3474,6 +3693,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0400-0499-3.md#category-497
 	[497] = {
 		readable = "Other",
 		text = {
@@ -3490,6 +3710,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-505
 	[505] = {
 		readable = "Mass Prospecting",
 		text = {
@@ -3506,6 +3727,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大量勘探",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-506
 	[506] = {
 		readable = "Disenchant",
 		text = {
@@ -3522,6 +3744,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "分解",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-507
 	[507] = {
 		readable = "Necklaces",
 		icon = 133294,
@@ -3539,6 +3762,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-535
 	[535] = {
 		readable = "Crowns",
 		icon = 132767,
@@ -3556,6 +3780,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皇冠",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-536
 	[536] = {
 		readable = "Training",
 		icon = 134331,
@@ -3573,6 +3798,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-542
 	[542] = {
 		readable = "Zandalari Plans",
 		text = {
@@ -3589,6 +3815,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-547
 	[547] = {
 		readable = "Armor",
 		text = {
@@ -3605,6 +3832,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-548
 	[548] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -3612,6 +3840,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-549
 	[549] = {
 		readable = "Other",
 		text = {
@@ -3628,6 +3857,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-550
 	[550] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -3644,6 +3874,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-553
 	[553] = {
 		readable = "Pandaren Plans",
 		text = {
@@ -3660,6 +3891,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-554
 	[554] = {
 		readable = "Helms",
 		icon = 133076,
@@ -3667,6 +3899,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HEADSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-555
 	[555] = {
 		readable = "Shoulders",
 		icon = 135032,
@@ -3674,6 +3907,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-556
 	[556] = {
 		readable = "Materials",
 		text = {
@@ -3690,6 +3924,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-557
 	[557] = {
 		readable = "Equipment Mods",
 		text = {
@@ -3706,6 +3941,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝備加工",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-559
 	[559] = {
 		readable = "Chest",
 		icon = 132635,
@@ -3713,6 +3949,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~INVTYPE_CHEST]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-560
 	[560] = {
 		readable = "Gauntlets",
 		icon = 132938,
@@ -3730,6 +3967,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-561
 	[561] = {
 		readable = "Bracers",
 		icon = 132607,
@@ -3737,6 +3975,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-562
 	[562] = {
 		readable = "Belts",
 		icon = 132513,
@@ -3744,6 +3983,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-563
 	[563] = {
 		readable = "Legs",
 		icon = 134584,
@@ -3761,6 +4001,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "多腳",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-564
 	[564] = {
 		readable = "Boots",
 		icon = 132539,
@@ -3768,6 +4009,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-565
 	[565] = {
 		readable = "Shields",
 		icon = 134952,
@@ -3785,6 +4027,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護盾",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-566
 	[566] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -3792,6 +4035,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-567
 	[567] = {
 		readable = "Skeleton Keys",
 		icon = 134245,
@@ -3809,6 +4053,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "骷髏鑰匙",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-569
 	[569] = {
 		readable = "Cataclysm Plans",
 		text = {
@@ -3825,6 +4070,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-570
 	[570] = {
 		readable = "Armor",
 		text = {
@@ -3841,6 +4087,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-571
 	[571] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -3848,6 +4095,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-572
 	[572] = {
 		readable = "Materials",
 		text = {
@@ -3864,6 +4112,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-573
 	[573] = {
 		readable = "Shields",
 		icon = 134952,
@@ -3881,6 +4130,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護盾",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-574
 	[574] = {
 		readable = "Equipment Mods",
 		text = {
@@ -3897,6 +4147,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝備加工",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-575
 	[575] = {
 		readable = "Skeleton Keys",
 		icon = 134245,
@@ -3914,6 +4165,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "骷髏鑰匙",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-577
 	[577] = {
 		readable = "Northrend Plans",
 		text = {
@@ -3930,6 +4182,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-578
 	[578] = {
 		readable = "Equipment Mods",
 		text = {
@@ -3946,6 +4199,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝備加工",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-579
 	[579] = {
 		readable = "Armor",
 		text = {
@@ -3962,6 +4216,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-580
 	[580] = {
 		readable = "Shields",
 		icon = 134952,
@@ -3979,6 +4234,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護盾",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-581
 	[581] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -3986,6 +4242,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-582
 	[582] = {
 		readable = "Skeleton Keys",
 		icon = 134245,
@@ -4003,6 +4260,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "骷髏鑰匙",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-584
 	[584] = {
 		readable = "Outland Plans",
 		text = {
@@ -4019,6 +4277,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-585
 	[585] = {
 		readable = "Equipment Mods",
 		text = {
@@ -4035,6 +4294,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝備加工",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-586
 	[586] = {
 		readable = "Armor",
 		text = {
@@ -4051,6 +4311,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-588
 	[588] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -4058,6 +4319,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599.md#category-590
 	[590] = {
 		readable = "Blackmithing Plans",
 		text = {
@@ -4074,6 +4336,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鍛造設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599-2.md#category-592
 	[592] = {
 		readable = "Zandalari Alchemy",
 		text = {
@@ -4090,6 +4353,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599-2.md#category-596
 	[596] = {
 		readable = "Alchemy of Pandaria",
 		text = {
@@ -4106,6 +4370,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0500-0599-2.md#category-598
 	[598] = {
 		readable = "Alchemy of the Cataclysm",
 		text = {
@@ -4122,6 +4387,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-600
 	[600] = {
 		readable = "Alchemy of Northrend",
 		text = {
@@ -4138,6 +4404,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-602
 	[602] = {
 		readable = "Alchemy of Outland",
 		text = {
@@ -4154,6 +4421,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-604
 	[604] = {
 		readable = "Alchemy",
 		text = {
@@ -4170,6 +4438,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-605
 	[605] = {
 		readable = "Combat Potions",
 		text = {
@@ -4186,6 +4455,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戰鬥藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-606
 	[606] = {
 		readable = "Utility Potions",
 		text = {
@@ -4202,6 +4472,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "輔助藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-607
 	[607] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -4219,6 +4490,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-608
 	[608] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -4236,6 +4508,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-609
 	[609] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -4253,6 +4526,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-610
 	[610] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -4269,6 +4543,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-611
 	[611] = {
 		readable = "Potions",
 		icon = 134831,
@@ -4286,6 +4561,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-612
 	[612] = {
 		readable = "Elixirs",
 		icon = 134836,
@@ -4303,6 +4579,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-613
 	[613] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -4320,6 +4597,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-614
 	[614] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -4337,6 +4615,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-615
 	[615] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -4354,6 +4633,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-616
 	[616] = {
 		readable = "Oils",
 		icon = 134723,
@@ -4371,6 +4651,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塗劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-617
 	[617] = {
 		readable = "Cauldrons",
 		text = {
@@ -4387,6 +4668,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大鍋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-618
 	[618] = {
 		readable = "Potions",
 		icon = 134831,
@@ -4404,6 +4686,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-619
 	[619] = {
 		readable = "Elixirs",
 		icon = 134836,
@@ -4421,6 +4704,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-620
 	[620] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -4438,6 +4722,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-621
 	[621] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -4455,6 +4740,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-622
 	[622] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -4472,6 +4758,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-623
 	[623] = {
 		readable = "Oils",
 		icon = 134723,
@@ -4489,6 +4776,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塗劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-624
 	[624] = {
 		readable = "Mounts",
 		icon = 133236,
@@ -4506,6 +4794,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-625
 	[625] = {
 		readable = "Research",
 		icon = 134331,
@@ -4523,6 +4812,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-626
 	[626] = {
 		readable = "Potions",
 		icon = 134831,
@@ -4540,6 +4830,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-627
 	[627] = {
 		readable = "Elixirs",
 		icon = 134836,
@@ -4557,6 +4848,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-628
 	[628] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -4574,6 +4866,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-629
 	[629] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -4591,6 +4884,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-630
 	[630] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -4608,6 +4902,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-631
 	[631] = {
 		readable = "Oils",
 		icon = 134723,
@@ -4625,6 +4920,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塗劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-632
 	[632] = {
 		readable = "Cauldrons",
 		text = {
@@ -4641,6 +4937,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大鍋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-633
 	[633] = {
 		readable = "Potions",
 		icon = 134831,
@@ -4658,6 +4955,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-634
 	[634] = {
 		readable = "Elixirs",
 		icon = 134836,
@@ -4675,6 +4973,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-635
 	[635] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -4692,6 +4991,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-636
 	[636] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -4709,6 +5009,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699.md#category-637
 	[637] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -4726,6 +5027,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-638
 	[638] = {
 		readable = "Potions",
 		icon = 134831,
@@ -4743,6 +5045,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-639
 	[639] = {
 		readable = "Elixirs",
 		icon = 134836,
@@ -4760,6 +5063,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-640
 	[640] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -4777,6 +5081,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-641
 	[641] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -4794,6 +5099,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-642
 	[642] = {
 		readable = "Trinkets",
 		icon = 134333,
@@ -4811,6 +5117,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-643
 	[643] = {
 		readable = "Oils",
 		icon = 132799,
@@ -4828,6 +5135,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塗劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-644
 	[644] = {
 		readable = "Materials",
 		icon = 132621,
@@ -4845,6 +5153,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-645
 	[645] = {
 		readable = "Special",
 		text = {
@@ -4861,6 +5170,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "特殊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-647
 	[647] = {
 		readable = "Zandalari Enchanting",
 		text = {
@@ -4877,6 +5187,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-650
 	[650] = {
 		readable = "Glove Enchantments",
 		icon = 132938,
@@ -4894,6 +5205,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手套附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-651
 	[651] = {
 		readable = "Ring Enchantments",
 		icon = 133397,
@@ -4911,6 +5223,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-652
 	[652] = {
 		readable = "Weapon Enchantments",
 		icon = 135792,
@@ -4928,6 +5241,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-653
 	[653] = {
 		readable = "Illusions",
 		icon = 237174,
@@ -4945,6 +5259,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "幻象",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-654
 	[654] = {
 		readable = "Reagents",
 		icon = 463518,
@@ -4962,6 +5277,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-656
 	[656] = {
 		readable = "Pandaria Enchanting",
 		text = {
@@ -4978,6 +5294,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-657
 	[657] = {
 		readable = "Armor Enchantments",
 		text = {
@@ -4994,6 +5311,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-658
 	[658] = {
 		readable = "Weapon Enchantments",
 		icon = 135792,
@@ -5011,6 +5329,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-659
 	[659] = {
 		readable = "Shield and Off-Hand Enchantments",
 		icon = 134952,
@@ -5028,6 +5347,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "盾牌與副手附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-661
 	[661] = {
 		readable = "Cataclysm Enchanting",
 		text = {
@@ -5044,6 +5364,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-663
 	[663] = {
 		readable = "Northrend Enchanting",
 		text = {
@@ -5060,6 +5381,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-665
 	[665] = {
 		readable = "Outland Enchanting",
 		text = {
@@ -5076,6 +5398,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-667
 	[667] = {
 		readable = "Enchanting",
 		text = {
@@ -5092,6 +5415,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-668
 	[668] = {
 		readable = "Armor Enchantments",
 		text = {
@@ -5108,6 +5432,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-669
 	[669] = {
 		readable = "Weapon Enchantments",
 		icon = 135792,
@@ -5125,6 +5450,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-670
 	[670] = {
 		readable = "Shield and Off-Hand Enchantments",
 		icon = 134952,
@@ -5142,6 +5468,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "盾牌與副手附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-671
 	[671] = {
 		readable = "Pets",
 		text = {
@@ -5158,6 +5485,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寵物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-672
 	[672] = {
 		readable = "Reagents",
 		icon = 237013,
@@ -5175,6 +5503,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-673
 	[673] = {
 		readable = "Boot Enchantments",
 		icon = 132535,
@@ -5192,6 +5521,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長靴附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-674
 	[674] = {
 		readable = "Glove Enchantments",
 		icon = 132938,
@@ -5209,6 +5539,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手套附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-675
 	[675] = {
 		readable = "Chest Enchantments",
 		icon = 132624,
@@ -5226,6 +5557,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "胸部附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-676
 	[676] = {
 		readable = "Cloak Enchantments",
 		icon = 133770,
@@ -5243,6 +5575,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-677
 	[677] = {
 		readable = "Bracer Enchantments",
 		icon = 132616,
@@ -5260,6 +5593,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護腕附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-678
 	[678] = {
 		readable = "Weapon Enchantments",
 		icon = 135792,
@@ -5277,6 +5611,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-679
 	[679] = {
 		readable = "Shield Enchantments",
 		icon = 134951,
@@ -5294,6 +5629,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "盾牌附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-2.md#category-680
 	[680] = {
 		readable = "Reagents",
 		icon = 132881,
@@ -5311,6 +5647,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-681
 	[681] = {
 		readable = "Boot Enchantments",
 		icon = 132535,
@@ -5328,6 +5665,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長靴附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-682
 	[682] = {
 		readable = "Bracer Enchantments",
 		icon = 132616,
@@ -5345,6 +5683,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護腕附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-683
 	[683] = {
 		readable = "Chest Enchantments",
 		icon = 132624,
@@ -5362,6 +5701,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "胸部附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-684
 	[684] = {
 		readable = "Cloak Enchantments",
 		icon = 133770,
@@ -5379,6 +5719,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-685
 	[685] = {
 		readable = "Glove Enchantments",
 		icon = 132938,
@@ -5396,6 +5737,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手套附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-686
 	[686] = {
 		readable = "Weapon Enchantments",
 		icon = 135792,
@@ -5413,6 +5755,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-687
 	[687] = {
 		readable = "Shield Enchantments",
 		icon = 134951,
@@ -5430,6 +5773,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "盾牌附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-688
 	[688] = {
 		readable = "Oils",
 		icon = 134723,
@@ -5447,6 +5791,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塗劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-689
 	[689] = {
 		readable = "Other",
 		icon = 132886,
@@ -5464,6 +5809,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-690
 	[690] = {
 		readable = "Boot Enchantments",
 		icon = 132535,
@@ -5481,6 +5827,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長靴附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-691
 	[691] = {
 		readable = "Bracer Enchantments",
 		icon = 132616,
@@ -5498,6 +5845,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護腕附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-692
 	[692] = {
 		readable = "Chest Enchantments",
 		icon = 132624,
@@ -5515,6 +5863,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "胸部附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-693
 	[693] = {
 		readable = "Cloak Enchantments",
 		icon = 133770,
@@ -5532,6 +5881,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-694
 	[694] = {
 		readable = "Glove Enchantments",
 		icon = 132938,
@@ -5549,6 +5899,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手套附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-695
 	[695] = {
 		readable = "Weapon Enchantments",
 		icon = 135792,
@@ -5566,6 +5917,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-696
 	[696] = {
 		readable = "Shield Enchantments",
 		icon = 134951,
@@ -5583,6 +5935,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "盾牌附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-697
 	[697] = {
 		readable = "Rods",
 		icon = 135138,
@@ -5600,6 +5953,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手杖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-698
 	[698] = {
 		readable = "Wands",
 		icon = 135468,
@@ -5617,6 +5971,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "魔杖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0600-0699-3.md#category-699
 	[699] = {
 		readable = "Oils",
 		icon = 134711,
@@ -5634,6 +5989,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塗劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-700
 	[700] = {
 		readable = "Trinkets",
 		icon = 134084,
@@ -5651,6 +6007,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-701
 	[701] = {
 		readable = "Reagents",
 		icon = 133229,
@@ -5668,6 +6025,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-702
 	[702] = {
 		readable = "Illusions",
 		icon = 237174,
@@ -5685,6 +6043,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "幻象",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-703
 	[703] = {
 		readable = "Illusions",
 		icon = 237174,
@@ -5702,6 +6061,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "幻象",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-704
 	[704] = {
 		readable = "Illusions",
 		icon = 237174,
@@ -5719,6 +6079,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "幻象",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-705
 	[705] = {
 		readable = "Illusions",
 		icon = 237174,
@@ -5736,6 +6097,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "幻象",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-706
 	[706] = {
 		readable = "Illusions",
 		icon = 237174,
@@ -5753,6 +6115,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "幻象",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-707
 	[707] = {
 		readable = "Reagents",
 		icon = 463517,
@@ -5770,6 +6133,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-709
 	[709] = {
 		readable = "Zandalari Engineering",
 		text = {
@@ -5786,6 +6150,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-713
 	[713] = {
 		readable = "Pandaria Engineering",
 		text = {
@@ -5802,6 +6167,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-715
 	[715] = {
 		readable = "Cataclysm Engineering",
 		text = {
@@ -5818,6 +6184,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-717
 	[717] = {
 		readable = "Northrend Engineering",
 		text = {
@@ -5834,6 +6201,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-719
 	[719] = {
 		readable = "Outland Engineering",
 		text = {
@@ -5850,6 +6218,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-721
 	[721] = {
 		readable = "Bombs",
 		text = {
@@ -5866,6 +6235,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸彈",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-722
 	[722] = {
 		readable = "Devices",
 		text = {
@@ -5882,6 +6252,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-723
 	[723] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -5889,6 +6260,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-724
 	[724] = {
 		readable = "Mounts & Pets",
 		icon = 133236,
@@ -5906,6 +6278,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎與寵物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-725
 	[725] = {
 		readable = "Fireworks",
 		icon = 135815,
@@ -5923,6 +6296,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "煙火",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-726
 	[726] = {
 		readable = "Explosives",
 		icon = 133711,
@@ -5940,6 +6314,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸藥",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-727
 	[727] = {
 		readable = "Fireworks",
 		icon = 135815,
@@ -5957,6 +6332,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "煙火",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-728
 	[728] = {
 		readable = "Devices",
 		text = {
@@ -5973,6 +6349,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-729
 	[729] = {
 		readable = "Reagents",
 		text = {
@@ -5989,6 +6366,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-730
 	[730] = {
 		readable = "Goggles",
 		icon = 133023,
@@ -6006,6 +6384,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-731
 	[731] = {
 		readable = "Guns",
 		icon = 135612,
@@ -6023,6 +6402,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "槍械",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-732
 	[732] = {
 		readable = "Scopes",
 		icon = 134442,
@@ -6040,6 +6420,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "瞄準鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-733
 	[733] = {
 		readable = "Mounts",
 		icon = 133236,
@@ -6057,6 +6438,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-734
 	[734] = {
 		readable = "Cogwheels",
 		text = {
@@ -6073,6 +6455,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "榫輪",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-735
 	[735] = {
 		readable = "Tinkers",
 		text = {
@@ -6089,6 +6472,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "組件",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-736
 	[736] = {
 		readable = "Reagents",
 		text = {
@@ -6105,6 +6489,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-737
 	[737] = {
 		readable = "Explosives",
 		icon = 133711,
@@ -6122,6 +6507,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸藥",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-738
 	[738] = {
 		readable = "Goggles",
 		icon = 133023,
@@ -6139,6 +6525,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-739
 	[739] = {
 		readable = "Devices",
 		text = {
@@ -6155,6 +6542,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-740
 	[740] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -6162,6 +6550,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-741
 	[741] = {
 		readable = "Scopes",
 		icon = 134442,
@@ -6179,6 +6568,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "瞄準鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-742
 	[742] = {
 		readable = "Tinkers",
 		text = {
@@ -6195,6 +6585,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "組件",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-743
 	[743] = {
 		readable = "Reagents",
 		text = {
@@ -6211,6 +6602,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799.md#category-744
 	[744] = {
 		readable = "Explosives",
 		icon = 133711,
@@ -6228,6 +6620,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸藥",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-745
 	[745] = {
 		readable = "Goggles",
 		icon = 133023,
@@ -6245,6 +6638,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-746
 	[746] = {
 		readable = "Devices",
 		text = {
@@ -6261,6 +6655,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-747
 	[747] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -6268,6 +6663,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-748
 	[748] = {
 		readable = "Scopes",
 		icon = 134442,
@@ -6285,6 +6681,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "瞄準鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-749
 	[749] = {
 		readable = "Mounts",
 		icon = 133236,
@@ -6302,6 +6699,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-750
 	[750] = {
 		readable = "Reagents",
 		text = {
@@ -6318,6 +6716,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-751
 	[751] = {
 		readable = "Explosives",
 		icon = 133711,
@@ -6335,6 +6734,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸藥",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-752
 	[752] = {
 		readable = "Goggles",
 		icon = 133023,
@@ -6352,6 +6752,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-753
 	[753] = {
 		readable = "Devices",
 		text = {
@@ -6368,6 +6769,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-754
 	[754] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -6375,6 +6777,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-755
 	[755] = {
 		readable = "Scopes",
 		icon = 134442,
@@ -6392,6 +6795,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "瞄準鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-756
 	[756] = {
 		readable = "Mounts",
 		icon = 133236,
@@ -6409,6 +6813,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-757
 	[757] = {
 		readable = "Fireworks",
 		icon = 135815,
@@ -6426,6 +6831,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "煙火",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-759
 	[759] = {
 		readable = "Zandalari Inscription",
 		text = {
@@ -6442,6 +6848,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-763
 	[763] = {
 		readable = "Pandaria Inscription",
 		text = {
@@ -6458,6 +6865,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-765
 	[765] = {
 		readable = "Cataclysm Inscription",
 		text = {
@@ -6474,6 +6882,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-767
 	[767] = {
 		readable = "Northrend Inscription",
 		text = {
@@ -6490,6 +6899,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-769
 	[769] = {
 		readable = "Outland Inscription",
 		text = {
@@ -6506,6 +6916,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-771
 	[771] = {
 		readable = "Books & Scrolls",
 		icon = 134939,
@@ -6523,6 +6934,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "書籍與卷軸",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-772
 	[772] = {
 		readable = "Contracts",
 		text = {
@@ -6539,6 +6951,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "合約",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-773
 	[773] = {
 		readable = "Trinkets",
 		icon = 134495,
@@ -6556,6 +6969,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-774
 	[774] = {
 		readable = "Off-Hands",
 		text = {
@@ -6572,6 +6986,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-775
 	[775] = {
 		readable = "Mass Milling",
 		text = {
@@ -6588,6 +7003,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大量研磨",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-776
 	[776] = {
 		readable = "Vantus Runes",
 		icon = 1392953,
@@ -6605,6 +7021,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "梵陀符文",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-777
 	[777] = {
 		readable = "Glyphs",
 		text = {
@@ -6621,6 +7038,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕紋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-778
 	[778] = {
 		readable = "Staves & Off-Hands",
 		text = {
@@ -6637,6 +7055,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法杖與副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-779
 	[779] = {
 		readable = "Inks",
 		icon = 237070,
@@ -6654,6 +7073,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "墨水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-780
 	[780] = {
 		readable = "Cards",
 		text = {
@@ -6670,6 +7090,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-781
 	[781] = {
 		readable = "Scrolls & Research",
 		icon = 134331,
@@ -6687,6 +7108,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卷軸與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-782
 	[782] = {
 		readable = "Quest",
 		text = {
@@ -6703,6 +7125,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-783
 	[783] = {
 		readable = "Toys & Pets",
 		text = {
@@ -6719,6 +7142,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "玩具與寵物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-784
 	[784] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -6736,6 +7160,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-785
 	[785] = {
 		readable = "Inks",
 		icon = 237070,
@@ -6753,6 +7178,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "墨水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-786
 	[786] = {
 		readable = "Glyphs",
 		text = {
@@ -6769,6 +7195,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕紋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-787
 	[787] = {
 		readable = "Scrolls & Research",
 		icon = 134331,
@@ -6786,6 +7213,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卷軸與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-788
 	[788] = {
 		readable = "Cards",
 		text = {
@@ -6802,6 +7230,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-2.md#category-789
 	[789] = {
 		readable = "Shoulder Inscription",
 		text = {
@@ -6818,6 +7247,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "肩膀銘文",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-790
 	[790] = {
 		readable = "Weapons & Off-Hands",
 		icon = 135792,
@@ -6835,6 +7265,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器與副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-791
 	[791] = {
 		readable = "Quest",
 		text = {
@@ -6851,6 +7282,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-792
 	[792] = {
 		readable = "Toys",
 		text = {
@@ -6867,6 +7299,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "玩具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-793
 	[793] = {
 		readable = "Inks",
 		icon = 237070,
@@ -6884,6 +7317,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "墨水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-794
 	[794] = {
 		readable = "Glyphs",
 		text = {
@@ -6900,6 +7334,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕紋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-795
 	[795] = {
 		readable = "Scrolls & Research",
 		icon = 134331,
@@ -6917,6 +7352,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卷軸與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-796
 	[796] = {
 		readable = "Cards",
 		text = {
@@ -6933,6 +7369,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-797
 	[797] = {
 		readable = "Off-Hands",
 		text = {
@@ -6949,6 +7386,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-798
 	[798] = {
 		readable = "Shoulder Inscription",
 		text = {
@@ -6965,6 +7403,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "肩膀銘文",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0700-0799-3.md#category-799
 	[799] = {
 		readable = "Inks",
 		icon = 237070,
@@ -6982,6 +7421,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "墨水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-800
 	[800] = {
 		readable = "Glyphs",
 		text = {
@@ -6998,6 +7438,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕紋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-801
 	[801] = {
 		readable = "Cards",
 		text = {
@@ -7014,6 +7455,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-802
 	[802] = {
 		readable = "Scrolls & Research",
 		icon = 134331,
@@ -7031,6 +7473,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卷軸與研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-803
 	[803] = {
 		readable = "Off-Hands",
 		text = {
@@ -7047,6 +7490,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-805
 	[805] = {
 		readable = "Zandalari Designs",
 		text = {
@@ -7063,6 +7507,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-809
 	[809] = {
 		readable = "Pandaria Designs",
 		text = {
@@ -7079,6 +7524,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-811
 	[811] = {
 		readable = "Cataclysm Designs",
 		text = {
@@ -7095,6 +7541,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-813
 	[813] = {
 		readable = "Northrend Designs",
 		text = {
@@ -7111,6 +7558,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-815
 	[815] = {
 		readable = "Outland Designs",
 		text = {
@@ -7127,6 +7575,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-817
 	[817] = {
 		readable = "Gems",
 		text = {
@@ -7143,6 +7592,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-818
 	[818] = {
 		readable = "Mass Prospecting",
 		text = {
@@ -7159,6 +7609,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大量勘探",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-819
 	[819] = {
 		readable = "Rings",
 		icon = 133397,
@@ -7176,6 +7627,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-820
 	[820] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -7183,6 +7635,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-821
 	[821] = {
 		readable = "Blue Gems",
 		icon = 133244,
@@ -7200,6 +7653,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藍色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-822
 	[822] = {
 		readable = "Green Gems",
 		icon = 133263,
@@ -7217,6 +7671,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "綠色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-823
 	[823] = {
 		readable = "Orange Gems",
 		icon = 133260,
@@ -7234,6 +7689,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "橘色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-824
 	[824] = {
 		readable = "Purple Gems",
 		icon = 133265,
@@ -7251,6 +7707,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紫色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-825
 	[825] = {
 		readable = "Red Gems",
 		icon = 133238,
@@ -7268,6 +7725,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紅色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-827
 	[827] = {
 		readable = "Meta Gems",
 		icon = 134098,
@@ -7285,6 +7743,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "變換寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-828
 	[828] = {
 		readable = "Necklaces",
 		icon = 133294,
@@ -7302,6 +7761,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-829
 	[829] = {
 		readable = "Rings",
 		icon = 133397,
@@ -7319,6 +7779,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-830
 	[830] = {
 		readable = "Mounts",
 		icon = 133236,
@@ -7336,6 +7797,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-831
 	[831] = {
 		readable = "Research",
 		icon = 134331,
@@ -7353,6 +7815,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-832
 	[832] = {
 		readable = "Toys & Pets",
 		icon = 133247,
@@ -7370,6 +7833,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "玩具與寵物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-833
 	[833] = {
 		readable = "Yellow Gems",
 		icon = 133248,
@@ -7387,6 +7851,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "黃色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-834
 	[834] = {
 		readable = "Blue Gems",
 		icon = 133244,
@@ -7404,6 +7869,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藍色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-835
 	[835] = {
 		readable = "Green Gems",
 		icon = 133263,
@@ -7421,6 +7887,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "綠色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-836
 	[836] = {
 		readable = "Orange Gems",
 		icon = 133260,
@@ -7438,6 +7905,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "橘色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-837
 	[837] = {
 		readable = "Purple Gems",
 		icon = 133265,
@@ -7455,6 +7923,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紫色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-838
 	[838] = {
 		readable = "Red Gems",
 		icon = 133238,
@@ -7472,6 +7941,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紅色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-839
 	[839] = {
 		readable = "Yellow Gems",
 		icon = 133248,
@@ -7489,6 +7959,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "黃色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-840
 	[840] = {
 		readable = "Meta Gems",
 		icon = 134098,
@@ -7506,6 +7977,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "變換寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-841
 	[841] = {
 		readable = "Necklaces",
 		icon = 133294,
@@ -7523,6 +7995,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-842
 	[842] = {
 		readable = "Rings",
 		icon = 133397,
@@ -7540,6 +8013,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-843
 	[843] = {
 		readable = "Crowns",
 		icon = 132767,
@@ -7557,6 +8031,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皇冠",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899.md#category-844
 	[844] = {
 		readable = "Fist Weapons",
 		icon = 135599,
@@ -7574,6 +8049,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "拳套",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-845
 	[845] = {
 		readable = "Toys & Prisms",
 		icon = 134128,
@@ -7591,6 +8067,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "玩具與稜光",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-846
 	[846] = {
 		readable = "Blue Gems",
 		icon = 133244,
@@ -7608,6 +8085,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藍色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-847
 	[847] = {
 		readable = "Green Gems",
 		icon = 133263,
@@ -7625,6 +8103,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "綠色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-848
 	[848] = {
 		readable = "Orange Gems",
 		icon = 133260,
@@ -7642,6 +8121,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "橘色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-849
 	[849] = {
 		readable = "Purple Gems",
 		icon = 133265,
@@ -7659,6 +8139,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紫色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-850
 	[850] = {
 		readable = "Red Gems",
 		icon = 133238,
@@ -7676,6 +8157,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紅色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-851
 	[851] = {
 		readable = "Yellow Gems",
 		icon = 133248,
@@ -7693,6 +8175,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "黃色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-852
 	[852] = {
 		readable = "Meta Gems",
 		icon = 134098,
@@ -7710,6 +8193,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "變換寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-853
 	[853] = {
 		readable = "Necklaces",
 		icon = 133294,
@@ -7727,6 +8211,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-854
 	[854] = {
 		readable = "Rings",
 		icon = 133397,
@@ -7744,6 +8229,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-855
 	[855] = {
 		readable = "Prismatic Gems",
 		icon = 237370,
@@ -7761,6 +8247,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "稜彩寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-856
 	[856] = {
 		readable = "Pets and Projects",
 		icon = 134095,
@@ -7778,6 +8265,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寵物及工藝品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-857
 	[857] = {
 		readable = "Blue Gems",
 		icon = 133244,
@@ -7795,6 +8283,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藍色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-858
 	[858] = {
 		readable = "Green Gems",
 		icon = 133263,
@@ -7812,6 +8301,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "綠色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-859
 	[859] = {
 		readable = "Orange Gems",
 		icon = 133260,
@@ -7829,6 +8319,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "橘色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-860
 	[860] = {
 		readable = "Purple Gems",
 		icon = 133265,
@@ -7846,6 +8337,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紫色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-861
 	[861] = {
 		readable = "Red Gems",
 		icon = 133238,
@@ -7863,6 +8355,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "紅色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-862
 	[862] = {
 		readable = "Yellow Gems",
 		icon = 133248,
@@ -7880,6 +8373,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "黃色寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-863
 	[863] = {
 		readable = "Meta Gems",
 		icon = 134098,
@@ -7897,6 +8391,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "變換寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-864
 	[864] = {
 		readable = "Necklaces",
 		icon = 133294,
@@ -7914,6 +8409,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-865
 	[865] = {
 		readable = "Rings",
 		icon = 133397,
@@ -7931,6 +8427,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-866
 	[866] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -7948,6 +8445,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-867
 	[867] = {
 		readable = "Prisms & Statues",
 		icon = 134096,
@@ -7965,6 +8463,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "稜光與雕像",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-868
 	[868] = {
 		readable = "Reagents",
 		icon = 135732,
@@ -7982,6 +8481,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-869
 	[869] = {
 		readable = "Crowns",
 		icon = 132767,
@@ -7999,6 +8499,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皇冠",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-871
 	[871] = {
 		readable = "Zandalari Patterns",
 		text = {
@@ -8015,6 +8516,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-876
 	[876] = {
 		readable = "Pandaria Patterns",
 		text = {
@@ -8031,6 +8533,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-878
 	[878] = {
 		readable = "Cataclysm Patterns",
 		text = {
@@ -8047,6 +8550,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-880
 	[880] = {
 		readable = "Northrend Patterns",
 		text = {
@@ -8063,6 +8567,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-882
 	[882] = {
 		readable = "Outland Patterns",
 		text = {
@@ -8079,6 +8584,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-883
 	[883] = {
 		readable = "Leather Armor",
 		text = {
@@ -8095,6 +8601,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皮甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-884
 	[884] = {
 		readable = "Mail Armor",
 		text = {
@@ -8111,6 +8618,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鎖甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-885
 	[885] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -8118,6 +8626,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-886
 	[886] = {
 		readable = "Other",
 		text = {
@@ -8134,6 +8643,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-887
 	[887] = {
 		readable = "Materials",
 		text = {
@@ -8150,6 +8660,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-2.md#category-888
 	[888] = {
 		readable = "Embossments",
 		text = {
@@ -8166,6 +8677,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "浮雕",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-889
 	[889] = {
 		readable = "Armor Kits",
 		icon = 133611,
@@ -8183,6 +8695,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲片",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-890
 	[890] = {
 		readable = "Bags",
 		icon = 133646,
@@ -8200,6 +8713,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-891
 	[891] = {
 		readable = "Helms",
 		icon = 133076,
@@ -8207,6 +8721,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HEADSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-892
 	[892] = {
 		readable = "Shoulders",
 		icon = 135032,
@@ -8214,6 +8729,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-893
 	[893] = {
 		readable = "Chest",
 		icon = 132635,
@@ -8221,6 +8737,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~INVTYPE_CHEST]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-894
 	[894] = {
 		readable = "Bracers",
 		icon = 132607,
@@ -8228,6 +8745,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-895
 	[895] = {
 		readable = "Gloves",
 		icon = 132939,
@@ -8235,6 +8753,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-896
 	[896] = {
 		readable = "Belts",
 		icon = 132513,
@@ -8242,6 +8761,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-897
 	[897] = {
 		readable = "Pants",
 		icon = 134592,
@@ -8249,6 +8769,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-898
 	[898] = {
 		readable = "Boots",
 		icon = 132539,
@@ -8256,6 +8777,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0800-0899-3.md#category-899
 	[899] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -8273,6 +8795,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-900
 	[900] = {
 		readable = "Drums",
 		icon = 133841,
@@ -8290,6 +8813,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鼓",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-901
 	[901] = {
 		readable = "Research",
 		icon = 134331,
@@ -8307,6 +8831,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "研究",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-902
 	[902] = {
 		readable = "Materials",
 		text = {
@@ -8323,6 +8848,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-903
 	[903] = {
 		readable = "Armor Kits",
 		icon = 133611,
@@ -8340,6 +8866,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲片",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-904
 	[904] = {
 		readable = "Bags",
 		icon = 133646,
@@ -8357,6 +8884,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-905
 	[905] = {
 		readable = "Helms",
 		icon = 133076,
@@ -8364,6 +8892,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HEADSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-906
 	[906] = {
 		readable = "Shoulders",
 		icon = 135032,
@@ -8371,6 +8900,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-907
 	[907] = {
 		readable = "Chest",
 		icon = 132635,
@@ -8378,6 +8908,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~INVTYPE_CHEST]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-908
 	[908] = {
 		readable = "Bracers",
 		icon = 132607,
@@ -8385,6 +8916,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-909
 	[909] = {
 		readable = "Gloves",
 		icon = 132939,
@@ -8392,6 +8924,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-910
 	[910] = {
 		readable = "Belts",
 		icon = 132513,
@@ -8399,6 +8932,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-911
 	[911] = {
 		readable = "Pants",
 		icon = 134592,
@@ -8406,6 +8940,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-912
 	[912] = {
 		readable = "Boots",
 		icon = 132539,
@@ -8413,6 +8948,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-913
 	[913] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -8430,6 +8966,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-914
 	[914] = {
 		readable = "Materials",
 		text = {
@@ -8446,6 +8983,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-915
 	[915] = {
 		readable = "Armor Kits",
 		icon = 133611,
@@ -8463,6 +9001,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲片",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-916
 	[916] = {
 		readable = "Bags",
 		icon = 133646,
@@ -8480,6 +9019,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-917
 	[917] = {
 		readable = "Helms",
 		icon = 133076,
@@ -8487,6 +9027,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HEADSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-918
 	[918] = {
 		readable = "Shoulders",
 		icon = 135032,
@@ -8494,6 +9035,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-919
 	[919] = {
 		readable = "Chests",
 		text = {
@@ -8510,6 +9052,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "胸甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-920
 	[920] = {
 		readable = "Bracers",
 		icon = 132607,
@@ -8517,6 +9060,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-921
 	[921] = {
 		readable = "Gloves",
 		icon = 132939,
@@ -8524,6 +9068,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-922
 	[922] = {
 		readable = "Belts",
 		icon = 132513,
@@ -8531,6 +9076,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-923
 	[923] = {
 		readable = "Pants",
 		icon = 134592,
@@ -8538,6 +9084,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-924
 	[924] = {
 		readable = "Boots",
 		icon = 132539,
@@ -8545,6 +9092,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-925
 	[925] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -8562,6 +9110,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-926
 	[926] = {
 		readable = "Drums",
 		icon = 133841,
@@ -8579,6 +9128,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鼓",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-927
 	[927] = {
 		readable = "Materials",
 		text = {
@@ -8595,6 +9145,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-928
 	[928] = {
 		readable = "Armor Kits",
 		icon = 133611,
@@ -8612,6 +9163,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲片",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-929
 	[929] = {
 		readable = "Bags",
 		icon = 133646,
@@ -8629,6 +9181,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-930
 	[930] = {
 		readable = "Helms",
 		icon = 133076,
@@ -8636,6 +9189,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HEADSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-931
 	[931] = {
 		readable = "Shoulders",
 		icon = 135032,
@@ -8643,6 +9197,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-932
 	[932] = {
 		readable = "Chest",
 		icon = 132635,
@@ -8650,6 +9205,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~INVTYPE_CHEST]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-933
 	[933] = {
 		readable = "Bracers",
 		icon = 132607,
@@ -8657,6 +9213,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-934
 	[934] = {
 		readable = "Gloves",
 		icon = 132939,
@@ -8664,6 +9221,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-935
 	[935] = {
 		readable = "Belts",
 		icon = 132513,
@@ -8671,6 +9229,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-936
 	[936] = {
 		readable = "Pants",
 		icon = 134592,
@@ -8678,6 +9237,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-937
 	[937] = {
 		readable = "Boots",
 		icon = 132539,
@@ -8685,6 +9245,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-938
 	[938] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -8702,6 +9263,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-939
 	[939] = {
 		readable = "Special",
 		text = {
@@ -8718,6 +9280,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "特殊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-940
 	[940] = {
 		readable = "Drums",
 		icon = 133841,
@@ -8735,6 +9298,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鼓",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-942
 	[942] = {
 		readable = "Zandalari Patterns",
 		text = {
@@ -8751,6 +9315,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-943
 	[943] = {
 		readable = "Bags",
 		icon = 133646,
@@ -8768,6 +9333,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-944
 	[944] = {
 		readable = "Armor",
 		text = {
@@ -8784,6 +9350,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-945
 	[945] = {
 		readable = "Battle Flags",
 		text = {
@@ -8800,6 +9367,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戰鬥旗幟",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-946
 	[946] = {
 		readable = "Other",
 		text = {
@@ -8816,6 +9384,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-950
 	[950] = {
 		readable = "Pandaria Patterns",
 		text = {
@@ -8832,6 +9401,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-952
 	[952] = {
 		readable = "Cataclysm Patterns",
 		text = {
@@ -8848,6 +9418,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-954
 	[954] = {
 		readable = "Northrend Patterns",
 		text = {
@@ -8864,6 +9435,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999.md#category-956
 	[956] = {
 		readable = "Outland Patterns",
 		text = {
@@ -8880,6 +9452,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-958
 	[958] = {
 		readable = "Materials",
 		text = {
@@ -8896,6 +9469,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-959
 	[959] = {
 		readable = "Embroidery",
 		text = {
@@ -8912,6 +9486,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "刺繡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-960
 	[960] = {
 		readable = "Spellthreads",
 		text = {
@@ -8928,6 +9503,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法術絲線",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-961
 	[961] = {
 		readable = "Bags",
 		icon = 133646,
@@ -8945,6 +9521,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-962
 	[962] = {
 		readable = "Hats & Hoods",
 		icon = 133133,
@@ -8962,6 +9539,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帽子與兜帽",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-963
 	[963] = {
 		readable = "Shoulders",
 		icon = 135033,
@@ -8969,6 +9547,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-964
 	[964] = {
 		readable = "Robes & Tunics",
 		icon = 132659,
@@ -8986,6 +9565,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長袍與外套",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-965
 	[965] = {
 		readable = "Bracers",
 		icon = 132616,
@@ -8993,6 +9573,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-966
 	[966] = {
 		readable = "Belts",
 		icon = 132516,
@@ -9000,6 +9581,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-967
 	[967] = {
 		readable = "Gloves",
 		icon = 132940,
@@ -9007,6 +9589,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-968
 	[968] = {
 		readable = "Pants",
 		icon = 134586,
@@ -9014,6 +9597,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-969
 	[969] = {
 		readable = "Boots",
 		icon = 132535,
@@ -9021,6 +9605,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-970
 	[970] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -9038,6 +9623,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-972
 	[972] = {
 		readable = "Materials",
 		text = {
@@ -9054,6 +9640,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-973
 	[973] = {
 		readable = "Spellthreads",
 		text = {
@@ -9070,6 +9657,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法術絲線",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-974
 	[974] = {
 		readable = "Bags",
 		icon = 133646,
@@ -9087,6 +9675,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-975
 	[975] = {
 		readable = "Hats & Hoods",
 		icon = 133133,
@@ -9104,6 +9693,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帽子與兜帽",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-976
 	[976] = {
 		readable = "Shoulders",
 		icon = 135033,
@@ -9111,6 +9701,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-977
 	[977] = {
 		readable = "Robes & Tunics",
 		icon = 132659,
@@ -9128,6 +9719,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長袍與外套",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-978
 	[978] = {
 		readable = "Bracers",
 		icon = 132616,
@@ -9135,6 +9727,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-979
 	[979] = {
 		readable = "Belts",
 		icon = 132516,
@@ -9142,6 +9735,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-980
 	[980] = {
 		readable = "Gloves",
 		icon = 132940,
@@ -9149,6 +9743,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-981
 	[981] = {
 		readable = "Pants",
 		icon = 134586,
@@ -9156,6 +9751,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-982
 	[982] = {
 		readable = "Boots",
 		icon = 132535,
@@ -9163,6 +9759,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-983
 	[983] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -9180,6 +9777,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-984
 	[984] = {
 		readable = "Nets",
 		text = {
@@ -9196,6 +9794,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "網子",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-985
 	[985] = {
 		readable = "Materials",
 		text = {
@@ -9212,6 +9811,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-986
 	[986] = {
 		readable = "Spellthread",
 		text = {
@@ -9228,6 +9828,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法術絲線",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-987
 	[987] = {
 		readable = "Bags",
 		icon = 133646,
@@ -9245,6 +9846,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-988
 	[988] = {
 		readable = "Hats & Hoods",
 		icon = 133133,
@@ -9262,6 +9864,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帽子與兜帽",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-989
 	[989] = {
 		readable = "Shoulders",
 		icon = 135033,
@@ -9269,6 +9872,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-990
 	[990] = {
 		readable = "Robes & Tunics",
 		icon = 132659,
@@ -9286,6 +9890,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長袍與外套",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-991
 	[991] = {
 		readable = "Bracers",
 		icon = 132616,
@@ -9293,6 +9898,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-992
 	[992] = {
 		readable = "Belts",
 		icon = 132516,
@@ -9300,6 +9906,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-993
 	[993] = {
 		readable = "Gloves",
 		icon = 132940,
@@ -9307,6 +9914,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-994
 	[994] = {
 		readable = "Pants",
 		icon = 134586,
@@ -9314,6 +9922,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-995
 	[995] = {
 		readable = "Boots",
 		icon = 132535,
@@ -9321,6 +9930,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-996
 	[996] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -9338,6 +9948,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-997
 	[997] = {
 		readable = "Shirts",
 		text = {
@@ -9354,6 +9965,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "襯衣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-998
 	[998] = {
 		readable = "Mounts",
 		icon = 133236,
@@ -9371,6 +9983,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/0900-0999-2.md#category-999
 	[999] = {
 		readable = "Nets",
 		text = {
@@ -9387,6 +10000,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "網子",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1000
 	[1000] = {
 		readable = "Materials",
 		text = {
@@ -9403,6 +10017,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1001
 	[1001] = {
 		readable = "Spellthreads",
 		text = {
@@ -9419,6 +10034,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法術絲線",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1002
 	[1002] = {
 		readable = "Bags",
 		icon = 133646,
@@ -9436,6 +10052,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "背包",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1003
 	[1003] = {
 		readable = "Hats & Hoods",
 		icon = 133133,
@@ -9453,6 +10070,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帽子與兜帽",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1004
 	[1004] = {
 		readable = "Shoulders",
 		icon = 135033,
@@ -9460,6 +10078,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~SHOULDERSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1005
 	[1005] = {
 		readable = "Robes & Tunics",
 		icon = 132659,
@@ -9477,6 +10096,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長袍與外套",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1006
 	[1006] = {
 		readable = "Bracers",
 		icon = 132616,
@@ -9484,6 +10104,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WRISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1007
 	[1007] = {
 		readable = "Belts",
 		icon = 132516,
@@ -9491,6 +10112,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~WAISTSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1008
 	[1008] = {
 		readable = "Gloves",
 		icon = 132940,
@@ -9498,6 +10120,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~HANDSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1009
 	[1009] = {
 		readable = "Pants",
 		icon = 134586,
@@ -9505,6 +10128,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~LEGSSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1010
 	[1010] = {
 		readable = "Boots",
 		icon = 132535,
@@ -9512,6 +10136,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~FEETSLOT]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1011
 	[1011] = {
 		readable = "Cloaks",
 		icon = 133770,
@@ -9529,6 +10154,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1012
 	[1012] = {
 		readable = "Nets",
 		text = {
@@ -9545,6 +10171,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "網子",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1013
 	[1013] = {
 		readable = "Food of Draenor",	-- Header
 		text = {
@@ -9561,6 +10188,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾食物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1020
 	[1020] = {
 		readable = "Everyday Cooking",
 		icon = 133968,
@@ -9578,6 +10206,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "日常烹飪",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1021
 	[1021] = {
 		readable = "Delightful Drinks",
 		text = {
@@ -9594,6 +10223,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "迷人的飲料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1022
 	[1022] = {
 		readable = "Lures",
 		icon = 970852,
@@ -9611,6 +10241,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "釣餌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1023
 	[1023] = {
 		readable = "Everyday Cooking",
 		icon = 133968,
@@ -9628,6 +10259,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "日常烹飪",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1024
 	[1024] = {
 		readable = "Everyday Cooking",
 		icon = 133968,
@@ -9645,6 +10277,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "日常烹飪",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1025
 	[1025] = {
 		readable = "Everyday Cooking",
 		icon = 133968,
@@ -9662,6 +10295,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "日常烹飪",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1026
 	[1026] = {
 		readable = "Inks",
 		icon = 237070,
@@ -9679,6 +10313,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "墨水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1027
 	[1027] = {
 		readable = "Scopes & Ammo",
 		icon = 134442,
@@ -9696,6 +10331,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "瞄準鏡與彈藥",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1029
 	[1029] = {
 		readable = "Zandalari Herbalism",
 		text = {
@@ -9712,6 +10348,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1030
 	[1030] = {
 		readable = "Gathering Techniques",
 		text = {
@@ -9728,6 +10365,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "採集技術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1032
 	[1032] = {
 		readable = "Gathering Techniques",
 		text = {
@@ -9744,6 +10382,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "採集技術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1034
 	[1034] = {
 		readable = "Draenor Herbalism",
 		text = {
@@ -9760,6 +10399,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1036
 	[1036] = {
 		readable = "Pandaria Herbalism",
 		text = {
@@ -9776,6 +10416,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1038
 	[1038] = {
 		readable = "Cataclysm Herbalism",
 		text = {
@@ -9792,6 +10433,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1040
 	[1040] = {
 		readable = "Northrend Herbalism",
 		text = {
@@ -9808,6 +10450,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1042
 	[1042] = {
 		readable = "Outland Herbalism",
 		text = {
@@ -9824,6 +10467,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1044
 	[1044] = {
 		readable = "Herbalism",
 		text = {
@@ -9840,6 +10484,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "草藥學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1046
 	[1046] = {
 		readable = "Zandalari Skinning",
 		text = {
@@ -9856,6 +10501,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1050
 	[1050] = {
 		readable = "Draenor Skinning",
 		text = {
@@ -9872,6 +10518,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1052
 	[1052] = {
 		readable = "Pandaria Skinning",
 		text = {
@@ -9888,6 +10535,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1054
 	[1054] = {
 		readable = "Cataclysm Skinning",
 		text = {
@@ -9904,6 +10552,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1056
 	[1056] = {
 		readable = "Northrend Skinning",
 		text = {
@@ -9920,6 +10569,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1058
 	[1058] = {
 		readable = "Outland Skinning",
 		text = {
@@ -9936,6 +10586,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099.md#category-1060
 	[1060] = {
 		readable = "Skinning",
 		text = {
@@ -9952,6 +10603,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "剝皮",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1061
 	[1061] = {
 		readable = "Skinning Techniques",
 		text = {
@@ -9968,6 +10620,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "剝皮技術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1062
 	[1062] = {
 		readable = "Skinning Techniques",
 		text = {
@@ -9984,6 +10637,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "剝皮技術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1065
 	[1065] = {
 		readable = "Zandalari Mining",
 		text = {
@@ -10000,6 +10654,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1068
 	[1068] = {
 		readable = "Draenor Mining",
 		text = {
@@ -10016,6 +10671,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1070
 	[1070] = {
 		readable = "Pandaria Mining",
 		text = {
@@ -10032,6 +10688,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1072
 	[1072] = {
 		readable = "Cataclysm Mining",
 		text = {
@@ -10048,6 +10705,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1074
 	[1074] = {
 		readable = "Northrend Mining",
 		text = {
@@ -10064,6 +10722,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1076
 	[1076] = {
 		readable = "Outland Mining",
 		text = {
@@ -10080,6 +10739,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1078
 	[1078] = {
 		readable = "Mining",
 		text = {
@@ -10096,6 +10756,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "採礦",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1079
 	[1079] = {
 		readable = "Mining Techniques",
 		text = {
@@ -10112,6 +10773,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "採礦技術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1080
 	[1080] = {
 		readable = "Mining Techniques",
 		text = {
@@ -10128,6 +10790,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "採礦技術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1081
 	[1081] = {
 		readable = "Smelting",
 		text = {
@@ -10144,6 +10807,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "熔煉",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1082
 	[1082] = {
 		readable = "Smelting",
 		text = {
@@ -10160,6 +10824,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "熔煉",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1083
 	[1083] = {
 		readable = "Smelting",
 		text = {
@@ -10176,6 +10841,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "熔煉",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1084
 	[1084] = {
 		readable = "Smelting",
 		text = {
@@ -10192,6 +10858,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "熔煉",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1085
 	[1085] = {
 		readable = "Mount Equipment",
 		text = {
@@ -10208,6 +10875,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1086
 	[1086] = {
 		readable = "Bandages",
 		icon = 133690,
@@ -10225,6 +10893,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "繃帶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1087
 	[1087] = {
 		readable = "Cures of Draenor",
 		text = {
@@ -10241,6 +10910,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾的藥品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1088
 	[1088] = {
 		readable = "Cures of the Broken Isles",
 		text = {
@@ -10257,6 +10927,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "破碎群島的藥品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1089
 	[1089] = {
 		readable = "Bandages",
 		icon = 133690,
@@ -10274,6 +10945,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "繃帶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1090
 	[1090] = {
 		readable = "Bandages",
 		icon = 133690,
@@ -10291,6 +10963,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "繃帶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1091
 	[1091] = {
 		readable = "Bandages",
 		icon = 133690,
@@ -10308,6 +10981,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "繃帶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1092
 	[1092] = {
 		readable = "Bandages",
 		icon = 133690,
@@ -10325,6 +10999,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "繃帶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1093
 	[1093] = {
 		readable = "Bandages",
 		icon = 133690,
@@ -10342,6 +11017,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "繃帶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1096
 	[1096] = {
 		readable = "Belt Attachments",
 		text = {
@@ -10358,6 +11034,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "腰部配件",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1097
 	[1097] = {
 		readable = "Wands",
 		icon = 135468,
@@ -10375,6 +11052,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "魔杖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1000-1099-2.md#category-1098
 	[1098] = {
 		readable = "Wrist Enchantments",
 		icon = 132616,
@@ -10392,6 +11070,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手腕附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1100
 	[1100] = {
 		readable = "Fishing",
 		text = {
@@ -10408,6 +11087,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "釣魚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1102
 	[1102] = {
 		readable = "Outland Fishing",
 		text = {
@@ -10424,6 +11104,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "外域釣魚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1104
 	[1104] = {
 		readable = "Northrend Fishing",
 		text = {
@@ -10440,6 +11121,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "北裂境釣魚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1106
 	[1106] = {
 		readable = "Cataclysm Fishing",
 		text = {
@@ -10456,6 +11138,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大災變釣魚"
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1108
 	[1108] = {
 		readable = "Pandaria Fishing",
 		text = {
@@ -10472,6 +11155,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "潘達利亞釣魚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1110
 	[1110] = {
 		readable = "Draenor Fishing",
 		text = {
@@ -10488,6 +11172,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "德拉諾釣魚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1112
 	[1112] = {
 		readable = "Legion Fishing",
 		text = {
@@ -10504,6 +11189,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "軍團釣魚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1114
 	[1114] = {
 		readable = "Kul Tiran Fishing",
 		text = {
@@ -10520,6 +11206,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "庫爾提拉斯釣魚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1115
 	[1115] = {
 		readable = "Cloth Goggles",
 		icon = 133023,
@@ -10537,6 +11224,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "布甲護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1116
 	[1116] = {
 		readable = "Embroidery",
 		text = {
@@ -10553,6 +11241,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "刺繡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1118
 	[1118] = {
 		readable = "Zandalari Cuisine",
 		text = {
@@ -10569,6 +11258,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "贊達拉菜餚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1119
 	[1119] = {
 		readable = "Desserts",
 		text = {
@@ -10585,6 +11275,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "甜點",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1120
 	[1120] = {
 		readable = "Light Meals",
 		text = {
@@ -10601,6 +11292,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "輕食",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1121
 	[1121] = {
 		readable = "Large Meals",
 		text = {
@@ -10617,6 +11309,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大餐",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1122
 	[1122] = {
 		readable = "Feasts",
 		text = {
@@ -10633,6 +11326,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "筵席",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1123
 	[1123] = {
 		readable = "Cures & Tonics",
 		text = {
@@ -10649,6 +11343,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "藥品與藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1124
 	[1124] = {
 		readable = "Anti-Venoms",
 		text = {
@@ -10665,6 +11360,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "抗毒藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1126
 	[1126] = {
 		readable = "Glyphs",
 		text = {
@@ -10681,6 +11377,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕紋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1127
 	[1127] = {
 		readable = "Glyphs",
 		text = {
@@ -10697,6 +11394,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕紋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1100-1199.md#category-1130
 	[1130] = {
 		readable = "Glyphs",
 		text = {
@@ -10713,6 +11411,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "雕紋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1228
 	[1228] = {
 		readable = "Cauldrons",
 		text = {
@@ -10729,6 +11428,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大鍋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1229
 	[1229] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10745,6 +11445,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1230
 	[1230] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10761,6 +11462,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1231
 	[1231] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10777,6 +11479,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1232
 	[1232] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10793,6 +11496,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1233
 	[1233] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10809,6 +11513,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1234
 	[1234] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10825,6 +11530,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1235
 	[1235] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10841,6 +11547,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1236
 	[1236] = {
 		readable = "Follower Equipment",
 		text = {
@@ -10857,6 +11564,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "追隨者裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1237
 	[1237] = {
 		readable = "Pets",
 		text = {
@@ -10873,6 +11581,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寵物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1238
 	[1238] = {
 		readable = "Conversions",
 		text = {
@@ -10889,6 +11598,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1239
 	[1239] = {
 		readable = "Conversions",
 		text = {
@@ -10905,6 +11615,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1240
 	[1240] = {
 		readable = "Conversions",
 		text = {
@@ -10921,6 +11632,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1241
 	[1241] = {
 		readable = "Conversions",
 		text = {
@@ -10937,6 +11649,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1242
 	[1242] = {
 		readable = "Conversions",
 		text = {
@@ -10953,6 +11666,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1243
 	[1243] = {
 		readable = "Conversions",
 		text = {
@@ -10969,6 +11683,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1244
 	[1244] = {
 		readable = "Conversions",
 		text = {
@@ -10985,6 +11700,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1245
 	[1245] = {
 		readable = "Conversions",
 		text = {
@@ -11001,6 +11717,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1246
 	[1246] = {
 		readable = "Leather Goggles",
 		icon = 133023,
@@ -11018,6 +11735,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皮甲護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1247
 	[1247] = {
 		readable = "Mail Goggles",
 		icon = 133023,
@@ -11035,6 +11753,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鎖甲護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1248
 	[1248] = {
 		readable = "Plate Goggles",
 		icon = 133023,
@@ -11052,6 +11771,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鎧甲護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1249
 	[1249] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -11068,6 +11788,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1250
 	[1250] = {
 		readable = "Training",
 		icon = 134331,
@@ -11085,6 +11806,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1251
 	[1251] = {
 		readable = "Disenchants",
 		text = {
@@ -11101,6 +11823,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "分解",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1254
 	[1254] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -11117,6 +11840,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1255
 	[1255] = {
 		readable = "Training",
 		icon = 134331,
@@ -11134,6 +11858,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "訓練",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1256
 	[1256] = {
 		readable = "Explosives",
 		icon = 133711,
@@ -11151,6 +11876,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸藥",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1257
 	[1257] = {
 		readable = "Junkyard Tinkering",
 		text = {
@@ -11167,6 +11893,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "廢料場工程",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1259
 	[1259] = {
 		readable = "Components & Tools",
 		text = {
@@ -11183,6 +11910,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "零件和工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1261
 	[1261] = {
 		readable = "Other",
 		text = {
@@ -11199,6 +11927,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1262
 	[1262] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -11215,6 +11944,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1266
 	[1266] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -11231,6 +11961,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1267
 	[1267] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -11247,6 +11978,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1276
 	[1276] = {
 		readable = "Blood Contracts",
 		text = {
@@ -11263,6 +11995,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鮮血合約",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299.md#category-1278
 	[1278] = {
 		readable = "Tool of the Trade",
 		text = {
@@ -11279,6 +12012,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交易工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1280
 	[1280] = {
 		readable = "Gadgets",
 		text = {
@@ -11295,6 +12029,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "零件工具行",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1281
 	[1281] = {
 		readable = "Resources",
 		text = {
@@ -11311,6 +12046,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "資源",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1282
 	[1282] = {
 		readable = "***[UNAUTHORIZED ACCESS]***",
 		text = {
@@ -11327,6 +12063,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "***[未經授權]***",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1283
 	[1283] = {
 		readable = "Equipment",
 		text = {
@@ -11343,6 +12080,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1285
 	[1285] = {
 		readable = "Transportation",
 		text = {
@@ -11359,6 +12097,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "交通工具",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1288
 	[1288] = {
 		readable = "Mount Equipment",
 		text = {
@@ -11375,6 +12114,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1289
 	[1289] = {
 		readable = "Mounts Equipment",
 		text = {
@@ -11391,6 +12131,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1290
 	[1290] = {
 		readable = "Mount Equipment",
 		text = {
@@ -11407,6 +12148,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1291
 	[1291] = {
 		readable = "Robots",
 		text = {
@@ -11423,6 +12165,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "機器人",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1294
 	[1294] = {
 		readable = "Shadowlands Alchemy",
 		text = {
@@ -11439,6 +12182,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境鍊金術",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1295
 	[1295] = {
 		readable = "Cauldrons",
 		text = {
@@ -11455,6 +12199,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大鍋",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1296
 	[1296] = {
 		readable = "Combat Potions",
 		text = {
@@ -11471,6 +12216,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戰鬥藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1297
 	[1297] = {
 		readable = "Oils and Extracts",
 		text = {
@@ -11487,6 +12233,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "塗劑與萃取物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1298
 	[1298] = {
 		readable = "Flasks",
 		icon = 134821,
@@ -11504,6 +12251,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精煉藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1200-1299-2.md#category-1299
 	[1299] = {
 		readable = "Optional Reagents",
 		text = {
@@ -11520,6 +12268,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1300
 	[1300] = {
 		readable = "Transmutation",
 		icon = 135830,
@@ -11537,6 +12286,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "轉化",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1301
 	[1301] = {
 		readable = "Trinkets",
 		icon = 135443,
@@ -11554,6 +12304,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "飾品",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1302
 	[1302] = {
 		readable = "Utility Potions",
 		text = {
@@ -11570,6 +12321,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "輔助藥水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1303
 	[1303] = {
 		readable = "Anti-Venoms",
 		text = {
@@ -11586,6 +12338,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "抗毒藥劑",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1304
 	[1304] = {
 		readable = "Focus",
 		text = {
@@ -11602,6 +12355,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法器",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1305
 	[1305] = {
 		readable = "Focus",
 		text = {
@@ -11618,6 +12372,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法器",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1306
 	[1306] = {
 		readable = "Focus",
 		text = {
@@ -11634,6 +12389,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法器",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1307
 	[1307] = {
 		readable = "Focus",
 		text = {
@@ -11650,6 +12406,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法器",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1308
 	[1308] = {
 		readable = "Focus",
 		text = {
@@ -11666,6 +12423,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法器",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1309
 	[1309] = {
 		readable = "Focus",
 		text = {
@@ -11682,6 +12440,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法器",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1311
 	[1311] = {
 		readable = "Shadowlands Plans",
 		text = {
@@ -11698,6 +12457,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1312
 	[1312] = {
 		readable = "Armor",
 		text = {
@@ -11714,6 +12474,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1313
 	[1313] = {
 		readable = "Other",
 		text = {
@@ -11730,6 +12491,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1314
 	[1314] = {
 		readable = "Specialized Armor",
 		text = {
@@ -11746,6 +12508,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精製護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1315
 	[1315] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -11753,6 +12516,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1316
 	[1316] = {
 		readable = "Weapons Mods",
 		text = {
@@ -11769,6 +12533,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器加工",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1317
 	[1317] = {
 		readable = "Reagents",
 		text = {
@@ -11785,6 +12550,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1318
 	[1318] = {
 		readable = "Optional Reagents",
 		text = {
@@ -11801,6 +12567,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1323
 	[1323] = {
 		readable = "Shadowlands Cuisine",
 		text = {
@@ -11817,6 +12584,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境菜餚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1324
 	[1324] = {
 		readable = "Light Meals",
 		text = {
@@ -11833,6 +12601,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "輕食",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1325
 	[1325] = {
 		readable = "Large Meals",
 		text = {
@@ -11849,6 +12618,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大餐",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1326
 	[1326] = {
 		readable = "Feasts",
 		text = {
@@ -11865,6 +12635,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "筵席",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1327
 	[1327] = {
 		readable = "Soul Food",
 		text = {
@@ -11881,6 +12652,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "靈魂食物",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1334
 	[1334] = {
 		readable = "Shadowlands Patterns",
 		text = {
@@ -11897,6 +12669,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1335
 	[1335] = {
 		readable = "Other",
 		text = {
@@ -11913,6 +12686,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1336
 	[1336] = {
 		readable = "Leather Armor",
 		text = {
@@ -11929,6 +12703,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "皮甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1337
 	[1337] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -11936,6 +12711,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1338
 	[1338] = {
 		readable = "Materials",
 		text = {
@@ -11952,6 +12728,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1339
 	[1339] = {
 		readable = "Mail Armor",
 		text = {
@@ -11968,6 +12745,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "鎖甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1364
 	[1364] = {
 		readable = "Shadowlands Enchanting",
 		text = {
@@ -11984,6 +12762,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1365
 	[1365] = {
 		readable = "Boot Enchantments",
 		icon = 132535,
@@ -12001,6 +12780,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "長靴附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1366
 	[1366] = {
 		readable = "Chest Enchantments",
 		icon = 132624,
@@ -12018,6 +12798,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "胸部附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1367
 	[1367] = {
 		readable = "Cloak Enchantments",
 		icon = 133770,
@@ -12035,6 +12816,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "披風附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1368
 	[1368] = {
 		readable = "Glove Enchantments",
 		icon = 132938,
@@ -12052,6 +12834,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "手套附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1369
 	[1369] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12068,6 +12851,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1370
 	[1370] = {
 		readable = "Bracer Enchantments",
 		icon = 132616,
@@ -12085,6 +12869,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護腕附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399.md#category-1371
 	[1371] = {
 		readable = "Reagents",
 		text = {
@@ -12101,6 +12886,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1372
 	[1372] = {
 		readable = "Ring Enchantments",
 		icon = 133397,
@@ -12118,6 +12904,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1373
 	[1373] = {
 		readable = "Shatters",
 		text = {
@@ -12134,6 +12921,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "粉碎材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1374
 	[1374] = {
 		readable = "Wands",
 		icon = 135468,
@@ -12151,6 +12939,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "魔杖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1375
 	[1375] = {
 		readable = "Weapon Enchantments",
 		icon = 135792,
@@ -12168,6 +12957,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "武器附魔",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1381
 	[1381] = {
 		readable = "Shadowlands Engineering",
 		text = {
@@ -12184,6 +12974,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境工程學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1382
 	[1382] = {
 		readable = "Belt Attachments",
 		text = {
@@ -12200,6 +12991,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "腰部配件",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1383
 	[1383] = {
 		readable = "Bombs",
 		text = {
@@ -12216,6 +13008,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "炸彈",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1384
 	[1384] = {
 		readable = "Devices",
 		text = {
@@ -12232,6 +13025,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "裝置",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1385
 	[1385] = {
 		readable = "Goggles",
 		icon = 133023,
@@ -12249,6 +13043,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護目鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1386
 	[1386] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12265,6 +13060,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1387
 	[1387] = {
 		readable = "Parts",
 		text = {
@@ -12281,6 +13077,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "零件",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1388
 	[1388] = {
 		readable = "Scopes",
 		icon = 134442,
@@ -12298,6 +13095,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "瞄準鏡",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1389
 	[1389] = {
 		readable = "Weapons",
 		icon = 135792,
@@ -12305,6 +13103,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			en = [[~AUCTION_CATEGORY_WEAPONS]],
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1395
 	[1395] = {
 		readable = "Shadowlands Patterns",
 		text = {
@@ -12321,6 +13120,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境圖樣",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1300-1399-2.md#category-1396
 	[1396] = {
 		readable = "Armor",
 		text = {
@@ -12337,6 +13137,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1401
 	[1401] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12353,6 +13154,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1403
 	[1403] = {
 		readable = "Bandages",
 		icon = 133690,
@@ -12370,6 +13172,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "繃帶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1406
 	[1406] = {
 		readable = "Shadowlands Inscription",
 		text = {
@@ -12386,6 +13189,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境銘文學",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1407
 	[1407] = {
 		readable = "Off-Hands",
 		text = {
@@ -12402,6 +13206,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "副手",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1408
 	[1408] = {
 		readable = "Ink",
 		icon = 237070,
@@ -12419,6 +13224,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "墨水",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1409
 	[1409] = {
 		readable = "Books & Scrolls",
 		icon = 134939,
@@ -12436,6 +13242,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "書籍與卷軸",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1410
 	[1410] = {
 		readable = "Contracts",
 		text = {
@@ -12452,6 +13259,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "合約",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1411
 	[1411] = {
 		readable = "Cards",
 		text = {
@@ -12468,6 +13276,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "卡牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1412
 	[1412] = {
 		readable = "Mass Milling",
 		text = {
@@ -12484,6 +13293,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "大量研磨",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1415
 	[1415] = {
 		readable = "Staves",
 		text = {
@@ -12500,6 +13310,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "法杖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1416
 	[1416] = {
 		readable = "Vantus Runes",
 		icon = 1392953,
@@ -12517,6 +13328,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "梵陀符文",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1418
 	[1418] = {
 		readable = "Shadowlands Designs",
 		text = {
@@ -12533,6 +13345,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "暗影之境設計圖",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1419
 	[1419] = {
 		readable = "Gems",
 		text = {
@@ -12549,6 +13362,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "寶石",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1420
 	[1420] = {
 		readable = "Mass Prospecting",
 		text = {
@@ -12565,6 +13379,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "勘探",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1421
 	[1421] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12581,6 +13396,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1422
 	[1422] = {
 		readable = "Necklaces",
 		icon = 133294,
@@ -12598,6 +13414,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "項鍊",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1424
 	[1424] = {
 		readable = "Rings",
 		icon = 133397,
@@ -12615,6 +13432,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "戒指",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1449
 	[1449] = {
 		readable = "Delicacies",
 		text = {
@@ -12631,6 +13449,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "佳餚",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1471
 	[1471] = {
 		readable = "Armor Kits",
 		icon = 133611,
@@ -12648,6 +13467,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "護甲片",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1472
 	[1472] = {
 		readable = "Specialized Armor",
 		text = {
@@ -12664,6 +13484,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精製護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1474
 	[1474] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12680,6 +13501,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1476
 	[1476] = {
 		readable = "Mount Equipment",
 		text = {
@@ -12696,6 +13518,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "坐騎裝備",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1484
 	[1484] = {
 		readable = "Specialized Jewelry",
 		text = {
@@ -12712,6 +13535,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精製珠寶",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1487
 	[1487] = {
 		readable = "Shields",
 		icon = 134952,
@@ -12729,6 +13553,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "盾牌",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1488
 	[1488] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12745,6 +13570,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1489
 	[1489] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12761,6 +13587,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1490
 	[1490] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12777,6 +13604,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1491
 	[1491] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12793,6 +13621,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1492
 	[1492] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12809,6 +13638,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1493
 	[1493] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12825,6 +13655,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1494
 	[1494] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12841,6 +13672,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1495
 	[1495] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12857,6 +13689,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1496
 	[1496] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12873,6 +13706,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1497
 	[1497] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12889,6 +13723,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499.md#category-1498
 	[1498] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12905,6 +13740,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1400-1499-2.md#category-1499
 	[1499] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12921,6 +13757,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1500
 	[1500] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12937,6 +13774,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1501
 	[1501] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12953,6 +13791,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1502
 	[1502] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12969,6 +13808,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1503
 	[1503] = {
 		readable = "Optional Reagents",
 		text = {
@@ -12985,6 +13825,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1504
 	[1504] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13001,6 +13842,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1505
 	[1505] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13017,6 +13859,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1506
 	[1506] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13033,6 +13876,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1507
 	[1507] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13049,6 +13893,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1508
 	[1508] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13065,6 +13910,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1509
 	[1509] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13081,6 +13927,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1510
 	[1510] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13097,6 +13944,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1511
 	[1511] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13113,6 +13961,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1512
 	[1512] = {
 		readable = "Robotics",
 		text = {
@@ -13129,6 +13978,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "機器人",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1513
 	[1513] = {
 		readable = "Specialized Armor",
 		text = {
@@ -13145,6 +13995,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "精製護甲",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1517
 	[1517] = {
 		readable = "Other",
 		text = {
@@ -13161,6 +14012,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "其他",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1519
 	[1519] = {
 		readable = "Hats",
 		text = {
@@ -13177,6 +14029,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帽子",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1520
 	[1520] = {
 		readable = "Hats",
 		text = {
@@ -13193,6 +14046,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "帽子",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1521
 	[1521] = {
 		readable = "Optional Reagents",
 		text = {
@@ -13209,6 +14063,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "額外材料",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1522
 	[1522] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13225,6 +14080,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1525
 	[1525] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13241,6 +14097,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1526
 	[1526] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13257,6 +14114,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1527
 	[1527] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13273,6 +14131,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1528
 	[1528] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13289,6 +14148,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1529
 	[1529] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13305,6 +14165,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1530
 	[1530] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13321,6 +14182,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1531
 	[1531] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13337,6 +14199,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1532
 	[1532] = {
 		readable = "Quest Recipes",
 		text = {
@@ -13353,6 +14216,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			tw = "任務配方",
 		},
 	},
+	-- Audit: ../../../CategoryDB-Audit/categories/1500-1599.md#category-1538
 	[1538] = {
 		readable = "Bags",
 		icon = 133646,
