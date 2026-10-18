@@ -4,7 +4,7 @@
 
 root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 	header(HEADERS.Item, 201933, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Black Dragon's Challenge Dummy
-		["description"] = "***Debugg Mode enabled is required to see all the steps.***\n\nFollow the steps as ordered in the descriptions.",
+		["description"] = "***Debug Mode must be enabled to see all the steps.***\n\nFollow the steps as ordered in the descriptions.",
 		["modelScale"] = 1.6,
 		["displayID"] = 110513,
 		["groups"] = {

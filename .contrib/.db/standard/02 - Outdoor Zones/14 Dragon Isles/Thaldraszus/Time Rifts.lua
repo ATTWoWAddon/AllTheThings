@@ -838,7 +838,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 										i(206875),	-- Jingoist's Pauldrons
 									},
 								}),
-								------ Feets/Waist ------
+								------ Feet/Waist ------
 								i(207071, {	-- Jingoist's Cloth Gear Bag
 									["cost"] = { { "c", PARACAUSAL_FLAKES, 1150 } },
 									["groups"] = {
@@ -985,7 +985,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 										i(206882),	-- Warmonger's Pauldrons
 									},
 								}),
-								------ Feets/Waist ------
+								------ Feet/Waist ------
 								i(207073, {	-- Warmonger's Cloth Equipment Bag
 									["cost"] = { { "c", PARACAUSAL_FLAKES, 1150 } },
 									["groups"] = {

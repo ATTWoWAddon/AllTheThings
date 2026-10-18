@@ -1394,7 +1394,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 172225 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should been removed earlier?
+			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1786,7 +1786,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 172224 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should been removed earlier?
+			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["lvl"] = 10,
 			["_drop"] = { "g" },

@@ -2407,7 +2407,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			FirstCraft(90072, 1228995);	-- Thalassian Competitor's Cloth Shoulderpads
 			FirstCraft(90073, 1228996);	-- Thalassian Competitor's Cloth Treads
 			FirstCraft(90074, 1228997);	-- Thalassian Competitor's Cloth Tunic
-			-- Wardrobe Enchancements
+			-- Wardrobe Enhancements
 			fc(1280545),	-- Blood-Tempered Cape
 			fc(1280544),	-- Farstrider's Embroidered Cover
 			fc(1280543),	-- Scout's Cape
@@ -2466,7 +2466,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			--q(TODO),	-- 20/20 Synthesis Synergy
 		}),
 		prof(FISHING, {
-			-- Many 12.1 HQTs which flag and unflag for no discernible reason
+			-- Many 12.1 HQTs which flag and unflag for no discernable reason
 			q(97493, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97494, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97495, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??

@@ -209,7 +209,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 			}),
 			i(141049),	-- Technique: Glyph of the Hook (RECIPE!)
 			i(141051, {	-- Technique: Glyph of the Trident (RECIPE!)
-				["description"] = "Drops from naga in any Broken Isles zone. Recommended to farm the naga before the first Boss in the Eye of Azshara Dungeon.",
+				["description"] = "Drops Nagas in any Broken Isles zone. Recommended to farm the Nagas before the first Boss in the Eye of Azshara Dungeon.",
 			}),
 			i(141064),	-- Technique: Grimoire of the Shivarra (RECIPE!)
 		}),

@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfulls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfulls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handfull of Mud, and 3 Spools of Thread.\n\n",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfuls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfuls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handful of Mud, and 3 Spools of Thread.\n\n",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handful of Mud\n3 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfuls of Mud\n4 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -367,7 +367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfuls of Mud\n1 Spool of Thread",
 					-- #endif
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -391,7 +391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfulls of Mud\n2 Spools of Thread",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfuls of Mud\n2 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -415,7 +415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handful of Mud\n3 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -439,7 +439,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfuls of Mud\n4 Spools of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -463,7 +463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
-					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfuls of Mud\n1 Spool of Thread",
 					-- #endif
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["qg"] = 48001,	-- Thelaron Direneedle

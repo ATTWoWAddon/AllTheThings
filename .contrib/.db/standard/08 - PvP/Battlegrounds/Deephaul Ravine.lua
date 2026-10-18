@@ -30,7 +30,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 				}),
-				-- INFO: Verified 2024-10-04, shows a criteria without achraw
+				-- INFO: Verified 2024-10-04, shows a criterion without achraw
 				achraw(40613),	-- Resilient Runner
 				ach(40608),	-- Running in the Ravine
 				ach(40612, {	-- Sprinting in the Ravine

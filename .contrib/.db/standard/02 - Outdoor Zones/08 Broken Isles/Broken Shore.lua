@@ -1994,7 +1994,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 				-- q(47021),	-- 7.2 Broken Shore - Buildings - Command Center - Buff - Follower Token - Tracking
 				q(46283),	-- 7.2 Broken Shore - Buildings - Mage Tower - Personal Reward Received
 				q(46793),	-- 7.2 Broken Shore - Buildings - Mage Tower - Buff Activation - Tracking Quest
-				q(46871),	-- 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activiation - Tracking Quest
+				q(46871),	-- 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activation - Tracking Quest
 				q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" (questID 47137) during the Legionfall Campaign
 				q(46735),	-- Contribute to Command Center - during "Begin Construction" quest, not sure if that matters
 				q(46277),	-- Contribute to Mage Tower

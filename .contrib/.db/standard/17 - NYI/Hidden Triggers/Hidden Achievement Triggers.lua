@@ -4,7 +4,7 @@
 
 root(ROOTS.HiddenAchievementTriggers, {
 	-- Note!! Here is where we can put all the hidden Achievement triggers in the game that don't exactly fit anywhere.
-	-- When adding a Achievement trigger be sure to put a description of how it triggered
+	-- When adding an Achievement trigger be sure to put a description of how it triggered
 	-- #if ANYCLASSIC
 	expansion(EXPANSION.CLASSIC, {
 		-- 1.14.1.40666
@@ -1802,7 +1802,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(14104),	-- Dark Inquisitor Xanesh kills (Heroic Ny'alotha, the Waking City)
 			ach(14105),	-- Dark Inquisitor Xanesh kills (Mythic Ny'alotha, the Waking City)
 			ach(14107),	-- The Hivemind kills (Raid Finder Ny'alotha, the Waking City)
-			ach(14108),	-- The Hivemind kills (Nomral Ny'alotha, the Waking City)
+			ach(14108),	-- The Hivemind kills (Normal Ny'alotha, the Waking City)
 			ach(14109),	-- The Hivemind kills (Heroic Ny'alotha, the Waking City)
 			ach(14110),	-- The Hivemind kills (Mythic Ny'alotha, the Waking City)
 			ach(14111),	-- Shad'har the Insatiable kills (Raid Finder Ny'alotha, the Waking City)

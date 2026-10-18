@@ -269,7 +269,7 @@ root(ROOTS.Zones, {
 				}),
 				header(HEADERS.Faction, FACTION_TALONS_VENGENCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
 					hqt(45029, {	-- Talon's Vengeance - Intro Complete
-						["description"] = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengence faction.",
+						["description"] = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengeance faction.",
 						["qg"] = 97925,	-- Aviana
 						["coord"] = { 32.2, 66.8, HIGHMOUNTAIN },
 					}),

@@ -453,7 +453,7 @@ local function RelicCofferKeyPurchase(itemID)
 	return item
 end
 
--- Template for Anniversay groups to help separate one-time and recurring content
+-- Template for Anniversary groups to help separate one-time and recurring content
 --[[
 	n(WOW_ANNIVERSARY_N, {
 		["timeline"] = { ADDED },

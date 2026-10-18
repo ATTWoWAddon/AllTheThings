@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["cost"] = { { "i", 173939, 1 } },	-- Enticing Anima
 				["groups"] = {
 					i(180583, {	-- Impressionable Gorger Spawn
-						["description"] = "To have a chance for this item to drop, you may need to complete the The Endmire Quest (/ATT quest:60480). Better safe than sorry, the Quest only takes 1 minute to do.",
+						["description"] = "To have a chance for this item to drop, you may need to complete The Endmire Quest (/ATT quest:60480). Better safe than sorry, the Quest only takes 1 minute to do.",
 					}),
 				},
 			}),

@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 								},
 							}),
 							q(79469, {	-- Lurking Below
-								["description"] = "Duskrise Acerage Keyflame.",
+								["description"] = "Duskrise Acreage Keyflame.",
 								["coord"] = { 61.9, 32.0, HALLOWFALL },
 								["groups"] = {
 									i(215467),	-- Dirt-Cracker Pick (QI!)

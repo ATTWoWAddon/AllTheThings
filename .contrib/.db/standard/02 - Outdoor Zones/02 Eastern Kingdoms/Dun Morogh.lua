@@ -3998,7 +3998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						n(1977, {	-- Senator Mehr Stonehallow
 						-- #if AFTER 9.1.5
-						-- Danny Donkey: This have probably applied for all iterations of WoW, but oldest reports are from 9.1.5 and first iterations of Classic.
+						-- Danny Donkey: This has probably applied for all iterations of WoW, but oldest reports are from 9.1.5 and first iterations of Classic.
 						["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
 						-- #endif
 						}),

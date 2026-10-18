@@ -498,7 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					})),
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 						ach(6129, {	-- Taste the Rainbow!
-							["description"] = "The oozes you need for the achievement spawns through the boss fight. Four colours will spawn each time, and the remaining oozes becomes immune when the first is killed. This is fine, just make sure two of the remaining oozes matches a criteria.",
+							["description"] = "The oozes you need for the achievement spawn through the boss fight. Four colours will spawn each time, and the remaining oozes become immune when the first is killed. This is fine, just make sure two of the remaining oozes match a criterion.",
 							["groups"] = {
 								crit(18495, {	-- Black and Yellow
 									["crs"] = {

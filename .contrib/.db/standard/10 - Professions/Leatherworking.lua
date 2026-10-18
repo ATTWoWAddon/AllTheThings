@@ -1697,7 +1697,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 		n(PROFESSIONS, {
 			prof(LEATHERWORKING, {
-				q(55628),	-- Tracking Quest - 15-minute timer for receiving 'Spirit of the Bested' from other rare kill again (itemID 168138) (resets every 00,15,30,45 minutes of the hour)
+				q(55628),	-- Tracking Quest - 15 minutes timer for receiving 'Spirit of the Bested' from other rare kill again (itemID 168138) (resets every 00,15,30,45 minutes of hour)
 			}),
 		}),
 	})),

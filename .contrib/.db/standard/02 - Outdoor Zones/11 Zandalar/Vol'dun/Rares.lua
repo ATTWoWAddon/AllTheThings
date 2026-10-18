@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(VOLDUN, {
 		n(RARES, {
-			-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not. This is because killing it on one character would auto-complete it for your alts. What we want to do is instead place it as a reward. This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
+			-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not. This is because once you kill it on one character, it would auto-complete your alts. What we want to do is instead place it as a reward. This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 			n(135852, {	-- Ak'tar
 				["questID"] = 51058,
 				["coord"] = { 49.78, 79.40, VOLDUN },

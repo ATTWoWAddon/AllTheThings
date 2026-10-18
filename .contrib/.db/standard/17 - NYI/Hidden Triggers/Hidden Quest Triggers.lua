@@ -315,7 +315,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47699),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 		q(44483),	-- Vendor Beckon Trigger - triggers all classes
 		q(44484),	-- Vendor Beckon Trigger - triggers all classes
-		q(45773, { ["timeline"] = { ADDED_7_2_0 } }),	-- 7.2 Class Hall - Maximillian of Northshire - Aqcuisition - Track Mail Sent
+		q(45773, { ["timeline"] = { ADDED_7_2_0 } }),	-- 7.2 Class Hall - Maximillian of Northshire - Acquisition - Track Mail Sent
 
 		-- Random	-- TODO -Darkal
 

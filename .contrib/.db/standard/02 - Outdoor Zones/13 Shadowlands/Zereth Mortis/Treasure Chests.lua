@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			o(375493, {	-- Ripened Protopear
-				["description"] = "Available inside the Blooming Foundary (63.2, 73.1) during Glimmercanes Questline (Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs (Green Clouds).",
+				["description"] = "Available inside the Blooming Foundry (63.2, 73.1) during Glimmercanes Questline (Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs (Green Clouds).",
 				["coord"] = { 65.4, 47.1, 2027 },
 				["questID"] = 65566,
 				["groups"] = {

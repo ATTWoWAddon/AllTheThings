@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			fp(2558, {	-- The Spearhead, Maldraxxus
 				["coord"] = { 39.0, 55.2, MALDRAXXUS },
 			}),
-			fp(2564, {	-- Theather of Pain, Maldraxxus
+			fp(2564, {	-- Theater of Pain, Maldraxxus
 				["coord"] = { 49.8, 53.2, MALDRAXXUS },
 			}),
 		}),

@@ -502,7 +502,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(63319),	-- Venthyr
 			-- Maw adventures
 			q(63449),	-- i believe this was Topple the Giants
-			-- Misson Table
+			-- Mission Table
 			q(60635),	-- Night Fae Mission Table / Unknown Venthyr
 		}),
 		n(RENOWN, {
