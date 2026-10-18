@@ -1567,12 +1567,12 @@ honor = function(cost, item)							-- Assign an Honor cost to an item. (modern)
 	if cost > 0 then applycost(item, { "c", HONOR, cost }); end
 	return item;
 end
---- Assign a Honor cost to an item with proper timeline requirements. (pre-Cata costs).
+--- Assign an Honor cost to an item with proper timeline requirements. (pre-Cata costs).
 ---@generic T: ATTObject
 ---@param cost number Intended pre-Cataclysm Honor amount; currently unused by this unimplemented helper.
 ---@param item T Object returned unchanged while this helper is unimplemented.
 ---@return T
-honorpoints = function(cost, item)						-- Assign a Honor cost to an item with proper timeline requirements. (pre-Cata costs)
+honorpoints = function(cost, item)						-- Assign an Honor cost to an item with proper timeline requirements. (pre-Cata costs)
 	-- #if BEFORE CATA
 	-- TODO: Add the before Cata Honor System
 	--applycost(item, { "c", , cost });	-- Honor

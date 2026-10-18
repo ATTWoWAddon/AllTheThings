@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old-fashioned way by turning this off!",
+	readable = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
 	constant = "ACCOUNT_MANAGEMENT_BATTLE_NET_DESC",
 	export = true,
 	text = {
-		en = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old-fashioned way by turning this off!",
+		en = "Click here to toggle allowing Battle.net. Sometimes BNET breaks. If it does, you can enable sending messages the old fashioned way by turning this off!",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

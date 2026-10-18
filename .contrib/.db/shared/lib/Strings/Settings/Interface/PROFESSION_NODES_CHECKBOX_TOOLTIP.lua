@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Enable this option to track profession node completion.",
+	readable = "Enable this option to track profession nodes completion.",
 	constant = "PROFESSION_NODES_CHECKBOX_TOOLTIP",
 	export = true,
 	text = {
-		en = "Enable this option to track profession node completion.",
+		en = "Enable this option to track profession nodes completion.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

@@ -427,7 +427,7 @@ end
 -- Performs the logic needed to integrate the Handlers of a given Event into the current Event flow such that they
 -- are processed in the proper sequence and timing in conjunction with other events
 local function HandleEvent(eventName, ...)
-	-- getting to the point where there's noticeable stutter again during refresh due to the number of handlers added
+	-- getting to the point where there's noticeable stutter again during refresh due to the amount of handlers added
 	-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
 	-- the Event Runner so that they execute in the expected sequence

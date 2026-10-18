@@ -797,7 +797,7 @@ PrintQuestInfo = function(questID, new)
 
 		-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 		-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
-		-- so when a quest flagged as HQT is accepted/completed directly, it will be easier to notice when it is incorrectly sourced
+		-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticeable when it is incorrectly sourced
 		if hqt then
 			text = app:Linkify(text .. " [HQT]", app.Colors.ChatLinkHQT, "search:questID:" .. questID);
 		else
@@ -967,7 +967,7 @@ if C_QuestLog_GetAllCompletedQuestIDs then
 				app.print(-1 * questDiff,"Quests Unflagged");
 			end
 		end
-		-- don't report quest completions if there are too many or we have yet to get initial quest completion
+		-- don't report quest completions if there's too many or we have yet to get initial quest completion
 		if manyQuests then
 			DoQuestPrints = nil
 		end
@@ -2478,7 +2478,7 @@ local function NestSourceQuests(questChainRoot, group)
 					-- Create a Quest Object.
 					sourceQuest = createQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true });
 				else
-					-- Create a NPC Object.
+					-- Create an NPC Object.
 					sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true });
 				end
 

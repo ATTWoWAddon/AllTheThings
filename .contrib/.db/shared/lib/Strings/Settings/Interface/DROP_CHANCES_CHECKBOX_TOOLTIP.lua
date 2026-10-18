@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Enable this option to calculate various drop chances in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.",
+	readable = "Enable this option to calculate various pieces of drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.",
 	constant = "DROP_CHANCES_CHECKBOX_TOOLTIP",
 	export = true,
 	text = {
-		en = "Enable this option to calculate various drop chances in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.",
+		en = "Enable this option to calculate various pieces of drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.",
 		-- TODO: de = "",
 		es = "Activa esta opción para calcular la información de probabilidades de botín en la ventana emergente de un objeto en la ventana de ATT.\nPuede ser útil para saber que especialización de botín debes usar cuando usas una Tirada de Bonificación en un objeto.",
 		mx = "Activa esta opción para calcular la información de probabilidades de botín en la ventana emergente de un objeto en la ventana de ATT.\nPuede ser útil para saber que especialización de botín debes usar cuando usas una Tirada de Bonificación en un objeto.",

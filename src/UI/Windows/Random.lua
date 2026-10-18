@@ -194,7 +194,7 @@ app:CreateWindow("Random", {
 		settings.SearchFilter = SearchFilter;
 	end,
 	__Reroll = function(self)
-		-- Rebuild all the datas
+		-- Rebuild all the data
 		for i=#self.data.g,#self.data.options + 1,-1 do
 			tremove(self.data.g, i);
 		end

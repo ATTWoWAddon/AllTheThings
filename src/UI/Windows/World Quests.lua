@@ -5,7 +5,7 @@ local L = app.L;
 -- This window is not currently supported by Classic!
 if not app.IsRetail then return; end
 
--- World Quests were introduced in Legion.
+-- World Quests weren't even a thing until... Was it WOD? Or was it Legion?
 if app.GameBuildVersion < 70000 then return; end
 
 -- Global locals

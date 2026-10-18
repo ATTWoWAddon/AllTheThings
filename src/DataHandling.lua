@@ -986,7 +986,7 @@ local function CreateObject(t, rootOnly)
 		-- 	app.PrintTable(t)
 		-- end
 		-- app.PrintDebug("Merge done",result.key,result[result.key], t, result);
-	-- is it an array of raw datas which needs to be turned into an array of usable objects
+	-- is it an array of raw data which needs to be turned into an array of usable objects
 	elseif t[1] then
 		local result = {};
 		-- array
@@ -1023,7 +1023,7 @@ app.__CreateObject = CreateObject;
 local function EnsureObject(t)
 	-- app.PrintDebug("EO",t)
 	if not t then return end
-	-- is it an array of raw datas which needs to be turned into an array of usable objects
+	-- is it an array of raw data which needs to be turned into an array of usable objects
 	if t[1] then
 		-- array
 		-- app.PrintDebug("EO.[]","=>",t)

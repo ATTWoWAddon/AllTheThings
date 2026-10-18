@@ -614,7 +614,7 @@ local function PartialSyncCharacterData(data, key)
 		end
 	end
 end
--- Used for data which has Rank-based collection where a higher rank supersedes/implies collection of any lower ranks
+-- Used for data which has Rank-based collection where a higher rank supercedes/implies collection of any lower ranks
 local function RankSyncCharacterData(data, key)
 	local characterData
 	wipe(data);
@@ -1293,7 +1293,7 @@ dser.numnumtbl = deserializeKV
 end
 local defaultDeserializer = function(field, currentValue, data)
 	if #data > 1 then
-		print("DEFAULT DESERIALIZER ENCOUNTERED MORE THAN ONE VALUE FOR FIELD");
+		print("DEFAULT DESERIALIZER ENCOUNTERED MORE THAN ONE DATUM FOR FIELD");
 		print("  ", field, #data);
 		for i=1,#data,1 do
 			print("   ", data[i]);
