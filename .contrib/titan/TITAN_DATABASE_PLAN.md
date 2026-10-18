@@ -1,14 +1,16 @@
 # Titan Reforged Dedicated Database Plan
 
+[English](TITAN_DATABASE_PLAN.md) | [繁體中文](TITAN_DATABASE_PLAN.zh-TW.md) | [简体中文](TITAN_DATABASE_PLAN.zh-CN.md)
+
 Status: Draft; not implemented. Updated: 2026-10-19.
 
 This plan covers Parser configuration, data sources, in-game loading, Contributor Reports, and build and release delivery for China-region Titan Reforged (the Chrono realm). The goal is to give Titan its own database artifacts while retaining confirmed reusable `standard/shared` sources and avoiding impact on regular Wrath and other flavors.
 
-The exploration baseline is `master` at `a4f9c0c1cd27e8dbad8eb952f3da5d72e56b2e2a`; the planning branch is `codex/titan-database-plan`. This follow-up updates only this plan. The file list, tests, and implementation steps below remain future work; no Parser execution or implementation is included.
+The exploration baseline is `master` at `a4f9c0c1cd27e8dbad8eb952f3da5d72e56b2e2a`; the planning branch is `codex/titan-database-plan`. These documents cover planning only. The file list, tests, and implementation steps below remain future work; no Parser execution or implementation is included.
 
 ## Understand the Problem Through Existing Data
 
-[CN promotion data](<.db/standard/20 - China Only/CN Promotions Classic&Titanforged.lua>) already contains `mount(1280400)`, with `added 3.80.0` and `removed 3.80.10` expressing its version range. By contrast, the [ICC speedrun titles](<.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/8 Icecrown Citadel.lua>) `title(673)`, `title(674)`, and `title(675)` are inside conditions for `AFTER 3.4.5` and `BEFORE 3.80.0`.
+[CN promotion data](<../.db/standard/20 - China Only/CN Promotions Classic&Titanforged.lua>) already contains `mount(1280400)`, with `added 3.80.0` and `removed 3.80.10` expressing its version range. By contrast, the [ICC speedrun titles](<../.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/8 Icecrown Citadel.lua>) `title(673)`, `title(674)`, and `title(675)` are inside conditions for `AFTER 3.4.5` and `BEFORE 3.80.0`.
 
 If Titan directly reuses the current Wrath profile's `DataPatch = 3.4.5.63697`, both groups of data will take the wrong version branch. A separate Titan profile can preserve the existing version conditions, but it also needs the correct raw data, content unlock phases, and an output location the client can load.
 
@@ -55,7 +57,7 @@ Use the shared Wrath route as the planning basis. The following evidence support
 
 - The community-hosted mirror of Blizzard-authored UI exports at SHA `65729e5e6fee59b5ced83eb7f9120e1e412ea2a7` records `3.80.2.70372` in [version.txt](https://github.com/Gethe/wow-ui-source/blob/65729e5e6fee59b5ced83eb7f9120e1e412ea2a7/version.txt). Its [export workflow](https://github.com/Gethe/wow-ui-source/blob/65729e5e6fee59b5ced83eb7f9120e1e412ea2a7/.github/workflows/export.yml) identifies product `wow_classic_titan`, region `cn`. The public [Blizzard version endpoint](https://us.version.battle.net/wow_classic_titan/versions) also returned CN version `3.80.2.70372`, build `70372`, when checked on 2026-10-19. These observations do not establish the user's installed build or interface number.
 - In that Titan snapshot, [Wrath constants](https://github.com/Gethe/wow-ui-source/blob/65729e5e6fee59b5ced83eb7f9120e1e412ea2a7/Interface/AddOns/Blizzard_FrameXMLBase/Wrath/Constants.lua#L118-L124) define `WOW_PROJECT_WRATH_CLASSIC = 11` and assign that project to `WOW_PROJECT_ID`. The [FrameXMLBase Wrath TOC](https://github.com/Gethe/wow-ui-source/blob/65729e5e6fee59b5ced83eb7f9120e1e412ea2a7/Interface/AddOns/Blizzard_FrameXMLBase/Blizzard_FrameXMLBase_Wrath.toc#L1-L17) declares `AllowLoadGameType: wrath` and loads those constants. This supports the Wrath-family route; it does not directly prove runtime `[Game]` or `[Family]` substitution.
-- ATT's [API wrappers](<../src/WoW API Wrappers.lua>) already store the fourth `GetBuildInfo()` return as `GameBuildVersion`. ATT's [TOC](../AllTheThings.toc) declares interface `38002` and uses generic `db\[Game]\ReferenceDB.lua` and `db\[Game]\Database.xml` paths. These are repository observations. Capture the complete Titan return tuple and the actual resolved paths before treating them as client observations.
+- ATT's [API wrappers](<../../src/WoW API Wrappers.lua>) already store the fourth `GetBuildInfo()` return as `GameBuildVersion`. ATT's [TOC](../../AllTheThings.toc) declares interface `38002` and uses generic `db\[Game]\ReferenceDB.lua` and `db\[Game]\Database.xml` paths. These are repository observations. Capture the complete Titan return tuple and the actual resolved paths before treating them as client observations.
 
 For the current 3.80.x branch, the candidate detector requires a numeric project ID matching a numeric `WOW_PROJECT_WRATH_CLASSIC` constant and a numeric interface value in `[38000, 39000)`. This is a version-range heuristic, not an official permanent Titan identifier. Reassess it when the client family changes; if another client shares both inputs, obtain an observed discriminator before extending the rule. Do not infer identity from locale, region, or realm name alone.
 
@@ -218,12 +220,12 @@ Recheck these locations before implementation; line numbers refer to the explora
 
 | Reference | Related mechanism |
 | --- | --- |
-| [Program.cs](src/Parser/Program.cs), 247–283, 292–349, 434–528, 914–964 | Configuration composition, independent output, raw-data and Lua loading, and tag/phase checks. |
-| [CustomConfiguration.cs](src/Parser/CustomConfiguration.cs), 212–239 | Configuration-object merge and whole-array replacement. |
-| [Framework.cs](src/Parser/Framework/Framework.cs), 59–99, 804–829; [Framework.Processing.cs](src/Parser/Framework/Framework.Processing.cs), around 927 | Fixed phase table, DataPatch/DataPhase, and phase limit. |
-| [WagoData.cs](src/Parser/DB/WagoData.cs), 160–176, 1225–1233; [shared initialization](.db/shared/.main.lua), 49–89 | CSV source parsing and same-ID cache; Lua container merge behavior. |
-| [Wrath profile](<.db/standard/.config/classic/03 - Wrath.config>); [Era profile](<.db/standard/.config/classic/01 - Classic Era.config>); [SoD profile](<.db/standard/.config/classic/01 - Classic SOD.config>) | Existing version settings and a precedent for producing different flavors from the same source tree. |
-| [Item Database Consolidator](<.source/Item Database Consolidator/Program.cs>), 15–47 | Raw ItemDB conversion, output paths, and preprocessing-condition generation. |
-| [Framework.cs](src/Parser/Framework/Framework.cs), 2105–2114, 3601–3606, 3654–3673; [Framework.Objects.cs](src/Parser/Framework/Framework.Objects.cs), 1312–1317, 1381–1387, 1391–1420; [Vanilla Database.xml](../db/Vanilla/Database.xml), 17 | Existing multi-file XML include, localization/category guards, and the absence of generated ReferenceDB guards. |
-| [base.lua](../src/base.lua), 493–496, 551–555; [FactionData.lua](../src/Modules/FactionData.lua), 24–32 | Early ReferenceDB consumers that require Titan reference data before base initialization. |
-| [TOC](../AllTheThings.toc), 6, 37–40, 96; [Contributor](../src/Modules/Contributor.lua), 76–84, 262 | Interface declaration, data-loading entry point, and report version information. |
+| [Program.cs](../src/Parser/Program.cs), 247–283, 292–349, 434–528, 914–964 | Configuration composition, independent output, raw-data and Lua loading, and tag/phase checks. |
+| [CustomConfiguration.cs](../src/Parser/CustomConfiguration.cs), 212–239 | Configuration-object merge and whole-array replacement. |
+| [Framework.cs](../src/Parser/Framework/Framework.cs), 59–99, 804–829; [Framework.Processing.cs](../src/Parser/Framework/Framework.Processing.cs), around 927 | Fixed phase table, DataPatch/DataPhase, and phase limit. |
+| [WagoData.cs](../src/Parser/DB/WagoData.cs), 160–176, 1225–1233; [shared initialization](../.db/shared/.main.lua), 49–89 | CSV source parsing and same-ID cache; Lua container merge behavior. |
+| [Wrath profile](<../.db/standard/.config/classic/03 - Wrath.config>); [Era profile](<../.db/standard/.config/classic/01 - Classic Era.config>); [SoD profile](<../.db/standard/.config/classic/01 - Classic SOD.config>) | Existing version settings and a precedent for producing different flavors from the same source tree. |
+| [Item Database Consolidator](<../.source/Item Database Consolidator/Program.cs>), 15–47 | Raw ItemDB conversion, output paths, and preprocessing-condition generation. |
+| [Framework.cs](../src/Parser/Framework/Framework.cs), 2105–2114, 3601–3606, 3654–3673; [Framework.Objects.cs](../src/Parser/Framework/Framework.Objects.cs), 1312–1317, 1381–1387, 1391–1420; [Vanilla Database.xml](../../db/Vanilla/Database.xml), 17 | Existing multi-file XML include, localization/category guards, and the absence of generated ReferenceDB guards. |
+| [base.lua](../../src/base.lua), 493–496, 551–555; [FactionData.lua](../../src/Modules/FactionData.lua), 24–32 | Early ReferenceDB consumers that require Titan reference data before base initialization. |
+| [TOC](../../AllTheThings.toc), 6, 37–40, 96; [Contributor](../../src/Modules/Contributor.lua), 76–84, 262 | Interface declaration, data-loading entry point, and report version information. |
