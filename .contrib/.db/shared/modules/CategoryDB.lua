@@ -1,3 +1,12 @@
+-- Source builds (snapshot: 2026-10-18):
+-- RETAIL: 12.1.5.70448
+-- RETAIL PTR: 12.1.7.70424
+-- CLASSIC ERA / SEASON OF DISCOVERY: 1.15.9.70003
+-- TBC PTR / TBC ANNIVERSARY: 2.5.6.70006
+-- MOP CLASSIC: 5.5.4.70449
+-- FOREVER BETA: 1.60.1.70450
+-- TITAN BETA (source-only): 3.80.2.70372
+-- Historical source only (not a current flavor): RETAIL HISTORICAL: 10.0.0.46597 (Categories 404, 653 only)
 ---------------------------------------------------------
 --   C A T E G O R Y   D A T A B A S E   M O D U L E   --
 ---------------------------------------------------------
@@ -24,14 +33,28 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132108,
 		text = {
 			en = "Consumable",
-			de = "Verbrauchsgegenstand",
+			-- #if AFTER 12.0.0
+			de = "Verbrauchbares",
+			-- #else
+			de = "Verbrauchbar",
+			-- #endif
 			es = "Consumible",
 			mx = "Consumible",
 			fr = "Consommable",
-			it = "Consumabile",
-			ko = "소모품",
+			it = "Consumabili",
+			-- #if BEFORE 2.0.0
+			ko = "소비 용품",
+			-- #else
+			ko = "소비용품",
+			-- #endif
 			pt = "Consumível",
-			-- TODO: ru = "",
+			-- #if BEFORE 2.0.0
+			ru = "Расходуемые",
+			-- #elseif BEFORE 12.0.0
+			ru = "Расход. предметы",
+			-- #else
+			ru = "Расходуемые",
+			-- #endif
 			cn = "消耗品",
 			tw = "消耗品",
 		},
@@ -41,16 +64,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134492,
 		text = {
 			en = "Tarot Decks",
-			de = "Tarotkarten",
-			es = "Baraja de Tarot",
-			mx = "Naipe de Tarot",
-			fr = "Jeu de tarot",
-			it = "Mazzo di Tarocchi",
-			ko = "카드 묶음",
-			pt = "Baralho de Tarô",
-			ru = "карт Таро",
+			de = "Dunkelmond-Tarotkarten",
+			es = "cartas del tarot de la Luna Negra",
+			mx = "cartas del tarot de la Luna Negra",
+			fr = "Cartes de tarot de Sombrelune",
+			it = "Carte dei Tarocchi di Lunacupa",
+			ko = "다크문 타로 카드",
+			pt = "Cartas de Tarô de Negraluna",
+			ru = "карты Новолуния",
 			cn = "塔罗牌",
-			-- TODO: tw = "",
+			tw = "暗月塔羅牌",
 		},
 	},
 	[58] = {
@@ -152,10 +175,22 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Weapon Skills",
 			de = "Waffenfertigkeiten",
-			es = "Habilidad en armas",
+			-- #if BEFORE 2.0.0
+			es = "Habilidad con las armas",
+			-- #elseif BEFORE 3.0.0
+			es = "Armas disponibles",
+			-- #else
+			es = "Habilidades con armas",
+			-- #endif
 			mx = "Habilidades con armas",
-			-- TODO: fr = "",
-			-- TODO: it = "",
+			-- #if BEFORE 2.0.0
+			fr = "Compétences d’armes",
+			-- #elseif BEFORE 12.0.0
+			fr = "Compétences d'armes",
+			-- #else
+			fr = "Compétences d’armes",
+			-- #endif
+			it = "Competenza nelle armi",
 			ko = "무기 기술",
 			pt = "Perícias com Armas",
 			ru = "Оружейные навыки",
@@ -184,16 +219,28 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134493,
 		text = {
 			en = "Outlandish Dishes",
-			-- TODO: de = "",
+			-- #if MOP
+			de = "Scherbenweltküche",
+			-- #else
+			de = "Küche der Scherbenwelt",
+			-- #endif
 			es = "Platos extravagantes",
 			mx = "Platos extravagantes",
 			fr = "Plats d’Outreterre",
-			-- TODO: it = "",
+			it = "Ricette delle Terre Esterne",
 			ko = "아웃랜드 요리법",
 			pt = "Pratos de Terralém",
-			-- TODO: ru = "",
+			-- #if MOP
+			ru = "Чужеземные блюда",
+			-- #else
+			ru = "Блюда Запределья",
+			-- #endif
 			cn = "外域菜肴",
-			-- TODO: tw = "",
+			-- #if MOP
+			tw = "異國風味的菜餚",
+			-- #else
+			tw = "外域風味菜餚",
+			-- #endif
 		},
 	},
 	[74] = {
@@ -220,23 +267,35 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Recetas de Cataclysm",
 			mx = "Recetas de Cataclysm",
 			fr = "Recettes de Cataclysm",
-			-- TODO: it = "",
+			it = "Ricette di Cataclysm",
 			ko = "대격변 요리법",
 			pt = "Receitas do Cataclismo",
-			-- TODO: ru = "",
+			-- #if MOP
+			ru = "Рецепты Cataclysm",
+			-- #else
+			ru = "Рецепты времен Катаклизма",
+			-- #endif
 			cn = "大地的裂变配方",
-			-- TODO: tw = "",
+			-- #if MOP
+			tw = "浩劫與重生食譜",
+			-- #else
+			tw = "大災變食譜",
+			-- #endif
 		},
 	},
 	[90] = {
 		readable = "Pandaren Cuisine",
 		text = {
 			en = "Pandaren Cuisine",
-			-- TODO: de = "",
+			-- #if MOP
+			de = "Pandarenküche",
+			-- #else
+			de = "Küche von Pandaria",
+			-- #endif
 			es = "Cocina pandaren",
 			mx = "Cocina pandaren",
 			fr = "Cuisine pandarène",
-			-- TODO: it = "",
+			it = "Cucina di Pandaria",
 			ko = "판다렌 요리법",
 			pt = "Cuisine Pandarênica",
 			ru = "Пандаренские деликатесы",
@@ -248,17 +307,57 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Glyphs",
 		icon = 254299,
 		text = {
+			-- #if MOP
+			en = "Glyph - Death Knight",
+			-- #else
 			en = "Glyphs",
-			de = "Glyphe",
+			-- #endif
+			-- #if MOP
+			de = "Glyphe - Todesritter",
+			-- #else
+			de = "Glyphen",
+			-- #endif
+			-- #if MOP
+			es = "Glifo: caballero de la Muerte",
+			-- #else
 			es = "Glifos",
+			-- #endif
+			-- #if MOP
+			mx = "Glifo: caballero de la Muerte",
+			-- #else
 			mx = "Glifos",
-			fr = "Glyphe",
-			it = "Glifo",
+			-- #endif
+			-- #if MOP
+			fr = "Glyphe - Chevalier de la mort",
+			-- #else
+			fr = "Glyphes",
+			-- #endif
+			it = "Glifi",
+			-- #if MOP
+			ko = "문양: 죽음의 기사",
+			-- #else
 			ko = "문양",
-			pt = "Glifo",
-			ru = "Символ",
+			-- #endif
+			-- #if MOP
+			pt = "Glifo - Cavaleiro da Morte",
+			-- #else
+			pt = "Glifos",
+			-- #endif
+			-- #if MOP
+			ru = "Символ - рыцарь смерти",
+			-- #else
+			ru = "Символы",
+			-- #endif
+			-- #if MOP
+			cn = "雕文 - 死亡骑士",
+			-- #else
 			cn = "雕文",
-			-- TODO: tw = "",
+			-- #endif
+			-- #if MOP
+			tw = "雕紋 - 死亡騎士",
+			-- #else
+			tw = "雕紋",
+			-- #endif
 		},
 	},
 	[103] = {
@@ -331,17 +430,57 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Scrolls",
 		icon = 134939,
 		text = {
+			-- #if MOP
+			en = "Attribute Enhancement",
+			-- #else
 			en = "Scrolls",
-			-- TODO: de = "",
+			-- #endif
+			-- #if MOP
+			de = "Werterhöhung",
+			-- #else
+			de = "Schriftrollen",
+			-- #endif
+			-- #if MOP
+			es = "Mejora de atributo",
+			-- #else
 			es = "Pergaminos",
+			-- #endif
+			-- #if MOP
+			mx = "Mejora de atributo",
+			-- #else
 			mx = "Pergaminos",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			-- TODO: ko = "",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
+			-- #endif
+			-- #if MOP
+			fr = "Amélioration d’attribut",
+			-- #else
+			fr = "Parchemins",
+			-- #endif
+			it = "Pergamene",
+			-- #if MOP
+			ko = "능력치 향상",
+			-- #else
+			ko = "두루마리",
+			-- #endif
+			-- #if MOP
+			pt = "Aperfeiçoamento de Atributos",
+			-- #else
+			pt = "Pergaminhos",
+			-- #endif
+			-- #if MOP
+			ru = "Улучшение характеристик",
+			-- #else
+			ru = "Свитки",
+			-- #endif
+			-- #if MOP
+			cn = "属性附魔",
+			-- #else
 			cn = "卷轴",
-			-- TODO: tw = "",
+			-- #endif
+			-- #if MOP
+			tw = "屬性增強",
+			-- #else
+			tw = "卷軸",
+			-- #endif
 		},
 	},
 	[108] = {
@@ -357,7 +496,11 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			ko = "연구",
 			pt = "Pesquisa",
 			ru = "Исследование",
+			-- #if MOP
+			cn = "搜索",
+			-- #else
 			cn = "研究",
+			-- #endif
 			tw = "研究",
 		},
 	},
@@ -368,8 +511,12 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			de = "Sonstiges",
 			es = "Otro",
 			mx = "Otro",
-			-- TODO: fr = "",
-			-- TODO: it = "",
+			-- #if MOP
+			fr = "Autre",
+			-- #else
+			fr = "Autres",
+			-- #endif
+			it = "Altro",
 			ko = "기타",
 			pt = "Outro",
 			ru = "Другое",
@@ -414,17 +561,57 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Crowns",
 		icon = 132769,
 		text = {
+			-- #if MOP
 			en = "Crowns",
-			-- TODO: de = "",
+			-- #else
+			en = "Crowns & Accessories",
+			-- #endif
+			-- #if MOP
+			de = "Kronen",
+			-- #else
+			de = "Kronen & Accessoires",
+			-- #endif
+			-- #if MOP
 			es = "Coronas",
+			-- #else
+			es = "Coronas y accesorios",
+			-- #endif
+			-- #if MOP
 			mx = "Coronas",
-			-- TODO: fr = "",
-			-- TODO: it = "",
-			ko = "머리",
-			-- TODO: pt = "",
-			-- TODO: ru = "",
+			-- #else
+			mx = "Coronas y accesorios",
+			-- #endif
+			-- #if MOP
+			fr = "Couronnes",
+			-- #else
+			fr = "Couronnes et accessoires",
+			-- #endif
+			it = "Corone e Accessori",
+			-- #if MOP
+			ko = "왕관",
+			-- #else
+			ko = "왕관과 장신구",
+			-- #endif
+			-- #if MOP
+			pt = "Coroas",
+			-- #else
+			pt = "Coroas e Acessórios",
+			-- #endif
+			-- #if MOP
+			ru = "Короны",
+			-- #else
+			ru = "Короны и аксессуары",
+			-- #endif
+			-- #if MOP
+			cn = "头冠",
+			-- #else
 			cn = "头冠和配饰",
-			-- TODO: tw = "",
+			-- #endif
+			-- #if MOP
+			tw = "皇冠",
+			-- #else
+			tw = "頭冠與飾品",
+			-- #endif
 		},
 	},
 	[168] = {
@@ -436,11 +623,15 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Materiales",
 			mx = "Materiales",
 			fr = "Matériaux",
-			-- TODO: it = "",
+			it = "Materiali",
 			ko = "재료",
 			pt = "Materiais",
 			ru = "Материалы",
+			-- #if MOP
+			cn = "材料",
+			-- #else
 			cn = "原料",
+			-- #endif
 			tw = "材料",
 		},
 	},
@@ -588,8 +779,12 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			de = "Schusswaffen & Bögen",
 			es = "Pistolas y arcos",
 			mx = "Pistolas y arcos",
-			-- TODO: fr = "",
-			-- TODO: it = "",
+			-- #if MOP
+			fr = "Carabines & arcs",
+			-- #else
+			fr = "Carabines et arcs",
+			-- #endif
+			it = "Armi da Fuoco e Archi",
 			ko = "총과 활",
 			pt = "Armas de Fogo & Arcos",
 			ru = "Ружья и луки",
@@ -605,8 +800,12 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			de = "Zielfernrohre",
 			es = "Miras",
 			mx = "Miras",
+			-- #if MOP
 			fr = "Lunette",
-			it = "Mirino",
+			-- #else
+			fr = "Lunettes de visée",
+			-- #endif
+			it = "Mirini",
 			ko = "조준경",
 			pt = "Miras",
 			ru = "Прицелы",
@@ -657,11 +856,15 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Materiales",
 			mx = "Materiales",
 			fr = "Matériaux",
-			-- TODO: it = "",
+			it = "Materiali",
 			ko = "재료",
 			pt = "Materiais",
 			ru = "Материалы",
+			-- #if MOP
+			cn = "材料",
+			-- #else
 			cn = "原料",
+			-- #endif
 			tw = "材料",
 		},
 	},
@@ -674,12 +877,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Modificadores de armas",
 			mx = "Modificadores de armas",
 			fr = "Modifications d’arme",
-			-- TODO: it = "",
+			it = "Modifiche alle Armi",
 			ko = "무기 보강",
 			pt = "Modificações de Arma",
 			ru = "Улучшения для оружия",
 			cn = "武器模组",
-			-- TODO: tw = "",
+			-- #if MOP
+			tw = "武器外型",
+			-- #else
+			tw = "武器加工",
+			-- #endif
 		},
 	},
 	[217] = {
@@ -691,12 +898,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Modificadores de armadura",
 			mx = "Modificadores de armadura",
 			fr = "Modifications d’armure",
-			-- TODO: it = "",
+			it = "Modifiche alle Armature",
 			ko = "방어구 보강",
 			pt = "Modificações de Armadura",
 			ru = "Улучшения для брони",
 			cn = "护甲强化",
-			-- TODO: tw = "",
+			-- #if MOP
+			tw = "護甲外型",
+			-- #else
+			tw = "護甲加工",
+			-- #endif
 		},
 	},
 	[218] = {
@@ -808,11 +1019,15 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Llaves esqueleto",
 			mx = "Llaves esqueleto",
 			fr = "Passe-partout",
-			it = "Chiave Universale",
+			it = "Chiavi Universali",
 			ko = "해골 열쇠",
 			pt = "Chaves-mestras",
 			ru = "Отмычки",
+			-- #if MOP
+			cn = "骷髅钥匙",
+			-- #else
 			cn = "万能钥匙",
+			-- #endif
 			tw = "骷髏鑰匙",
 		},
 	},
@@ -825,11 +1040,15 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Materiales",
 			mx = "Materiales",
 			fr = "Matériaux",
-			-- TODO: it = "",
+			it = "Materiali",
 			ko = "재료",
 			pt = "Materiais",
 			ru = "Материалы",
+			-- #if MOP
+			cn = "材料",
+			-- #else
 			cn = "原料",
+			-- #endif
 			tw = "材料",
 		},
 	},
@@ -842,11 +1061,15 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Bolsas",
 			mx = "Bolsas",
 			fr = "Sacs",
-			-- TODO: it = "",
+			it = "Sacche",
 			ko = "가방",
 			pt = "Bolsas",
 			ru = "Сумки",
+			-- #if MOP
+			cn = "包裹",
+			-- #else
 			cn = "背包",
+			-- #endif
 			tw = "背包",
 		},
 	},
@@ -858,8 +1081,12 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			de = "Hüte & Kapuzen",
 			es = "Sombreros y caperuzas",
 			mx = "Sombreros y caperuzas",
-			-- TODO: fr = "",
-			-- TODO: it = "",
+			-- #if MOP
+			fr = "Chapeaux & Chaperons",
+			-- #else
+			fr = "Chapeaux et Chaperons",
+			-- #endif
+			it = "Cappelli e Cappucci",
 			ko = "모자와 두건",
 			pt = "Chapéu & Capuz",
 			ru = "Шляпы и капюшоны",
@@ -882,8 +1109,12 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			de = "Roben & Tuniken",
 			es = "Togas y guerreras",
 			mx = "Togas y guerreras",
-			-- TODO: fr = "",
-			-- TODO: it = "",
+			-- #if MOP
+			fr = "Robes & tuniques",
+			-- #else
+			fr = "Robes et tuniques",
+			-- #endif
+			it = "Vesti e Giubbe",
 			ko = "로브와 튜닉",
 			pt = "Vestes & Túnicas",
 			ru = "Платья и мундиры",
@@ -985,11 +1216,15 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Materiales",
 			mx = "Materiales",
 			fr = "Matériaux",
-			-- TODO: it = "",
+			it = "Materiali",
 			ko = "재료",
 			pt = "Materiais",
 			ru = "Материалы",
+			-- #if MOP
+			cn = "材料",
+			-- #else
 			cn = "原料",
+			-- #endif
 			tw = "材料",
 		},
 	},
@@ -1019,11 +1254,15 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			es = "Bolsas",
 			mx = "Bolsas",
 			fr = "Sacs",
-			-- TODO: it = "",
+			it = "Sacche",
 			ko = "가방",
 			pt = "Bolsas",
 			ru = "Сумки",
+			-- #if MOP
+			cn = "包裹",
+			-- #else
 			cn = "背包",
+			-- #endif
 			tw = "背包",
 		},
 	},
@@ -1119,17 +1358,57 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 	[264] = {
 		readable = "Smelting",
 		text = {
+			-- #if MOP
+			en = "Metal",
+			-- #else
 			en = "Smelting",
+			-- #endif
+			-- #if MOP
+			de = "Metall",
+			-- #else
 			de = "Verhüttung",
-			es = "Fundiendo",
+			-- #endif
+			-- #if MOP
+			es = "Metal",
+			-- #else
+			es = "Fundir",
+			-- #endif
+			-- #if MOP
+			mx = "Metal",
+			-- #else
 			mx = "Fundición",
-			fr = "Fondre",
-			-- TODO: it = "",
+			-- #endif
+			-- #if MOP
+			fr = "Métal",
+			-- #else
+			fr = "Fontes",
+			-- #endif
+			it = "Fonditura",
+			-- #if MOP
+			ko = "금속",
+			-- #else
 			ko = "제련술",
+			-- #endif
+			-- #if MOP
+			pt = "Metal",
+			-- #else
 			pt = "Fundição",
+			-- #endif
+			-- #if MOP
+			ru = "Металл",
+			-- #else
 			ru = "Выплавка металлов",
+			-- #endif
+			-- #if MOP
+			cn = "金属",
+			-- #else
 			cn = "熔炼",
+			-- #endif
+			-- #if MOP
+			tw = "金屬",
+			-- #else
 			tw = "熔煉",
+			-- #endif
 		},
 	},
 	[265] = {
