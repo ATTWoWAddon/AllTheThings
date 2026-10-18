@@ -629,6 +629,26 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 24,
 			}),
+			q(98070, {	-- Stop the Screeching
+				["qg"] = 4877,	-- Jandia
+				["coord"] = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 31,
+				["groups"] = {
+					objective(1, {	-- 0/5 Screeching Harpy slain
+						["provider"] = { "n", 4100 },	-- Screeching Harpy
+						["coord"] = { 26.2, 52.6, MAP.THOUSAND_NEEDLES },
+					}),
+					objective(2, {	-- 0/5 Screeching Roguefeather slain
+						["provider"] = { "n", 4101 },	-- Screeching Roguefeather
+						["coord"] = { 26.0, 55.6, MAP.THOUSAND_NEEDLES },
+					}),
+					objective(3, {	-- 0/5 Screeching Windcaller slain
+						["provider"] = { "n", 4104 },	-- Screeching Windcaller
+						["coord"] = { 26.2, 52.6, MAP.THOUSAND_NEEDLES },
+					}),
+				},
+			}),
 			q(1150, {	-- Test of Endurance
 				["sourceQuest"] = 1149,	-- Test of Faith
 				["qg"] = 2986,	-- Dorn Plainstalker
