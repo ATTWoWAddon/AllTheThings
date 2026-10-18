@@ -138,33 +138,50 @@ A repeated ID can be legitimate in different contexts or conditions. A collision
 
 Use the type's complete order below and the shared constraints in this section. The complete Quest/Rare/Treasure examples in [Standard.lua](../../Standard.lua) supply the reference structure; the confirmed Forever policies here define the resulting order. Preserve the current field keys.
 
-Classify singular and plural spellings as members of the same field family. Each family shares its semantic rules and ordering slot; a plural value applies the relevant rules to each entry. Preserve existing key spellings and scalar/list shapes.
+Classify singular and plural spellings as members of the same field family. Each family shares its semantic rules and ordering slot; a plural value applies the relevant rules to each entry. Preserve existing key spellings and scalar/list shapes. Resolve membership from the [Parser field configuration](../shared/.config/root.config) and [name conversions](../../src/Parser/Framework/Framework.cs); the [runtime area converters](../../../src/Cache.lua) establish the area-text family.
 
 | Field family | Members | Ordering slot |
 | --- | --- | --- |
+| Prerequisite achievement | `sourceAchievement`, `sourceAchievements` | Unlisted-field policy until the record schema assigns a slot. |
 | Prerequisite quest | `sourceQuest`, `sourceQuests` | Prerequisite slot in the record schema. |
+| Alternative quest | `altQuestID`, `altQuests` | Alternative-quest slot in the record schema. |
 | Quest giver | `qg`, `qgs` | Source block. |
 | Quest item | `qi`, `qis` | Tail, after `timeline` and before `groups`. |
 | Quest starter | `qs`, `qss` | Quest-starter slot before the source block. |
+| Creature source | `cr`, `crs` | Creature-source slot in the record schema. |
+| Point of interest | `poiID`, `poiIDs` | Unlisted-field policy until the record schema assigns a slot. |
 | Provider | `provider`, `providers` | Source block. |
 | Coordinate | `coord`, `coords` | Coordinate slot before `cost`. |
+| Area text | `zoneTextAreaID`, `zoneTextAreaIDs` | Unlisted-field policy until the record schema assigns a slot. |
 
 The quest-giver and provider families share the existing source-block slot while retaining their distinct field semantics. Preserve relative order among all fields sharing a slot; singular/plural spelling does not introduce a separate position or authorize merging fields.
 
-Other aliases also share a slot without renaming: `race`/`raceID`/`races`; `class`/`classID`/`classes`; `level`/`lvl`. The complete schemas below expand these families and aliases wherever their slot appears.
+Resolve name aliases to their Parser field before selecting a family or slot. These spellings share the indicated classification while retaining their existing values and keys:
+
+| Name aliases | Classification and ordering |
+| --- | --- |
+| `group`, `groups`, `g` | Children field; the tail's `groups` slot. All are names for a children collection, rather than different cardinalities. |
+| `coordID`, `coordIDs` | Coordinate family: map to `coord` and `coords`, respectively. |
+| `sourceQuestID`, `sourceQuestIDs` | Prerequisite-quest family: both map to `sourceQuests`. |
+| `level`, `lvl`, `reqlvl`, `reqlvls`, `reqLvl`, `reqLvls` | Level-requirement field; the restriction block's level slot. The plural-looking aliases do not introduce another slot. |
+| `classes`, `classIDs`, `c` | Class-restriction collection; the restriction block's class slot. |
+
+The complete schemas below expand these families and aliases wherever their slot appears. Classify remaining names by the owning schema and actual Parser/runtime behavior. Entity identifiers such as `classID`, `raceID`, `mapID`, and `difficultyID` are not interchangeable with restriction or association collections merely because they describe the same domain. `class` can also mean an item classification. Keep these roles distinct when applying the race/class/level restriction layout.
+
+Family membership does not authorize sorting its elements. During family or metadata-layout operations, preserve collection order, including fields declared in the Parser's `NON_SORTED_FIELDS`. Any collection permutation needs its own policy and authorized plan under sections 2.2 and 7.
 
 | Record type | Recognized fields in order |
 | --- | --- |
-| Quest | `name` -> `description` -> `sourceQuest`/`sourceQuests` -> `sourceQuestNumRequired` -> `altQuests` -> `qs`/`qss` -> source block -> `coord`/`coords` -> `maps` -> `cost` -> restrictions -> flags/lock -> `customCollect` -> tail. |
-| NPC | `description` -> `crs` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
-| Object | `description` -> `crs` -> `sourceQuest`/`sourceQuests` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
+| Quest | `name` -> `description` -> `sourceQuest`/`sourceQuests` -> `sourceQuestNumRequired` -> `altQuestID`/`altQuests` -> `qs`/`qss` -> source block -> `coord`/`coords` -> `maps` -> `cost` -> restrictions -> flags/lock -> `customCollect` -> tail. |
+| NPC | `description` -> `cr`/`crs` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
+| Object | `description` -> `cr`/`crs` -> `sourceQuest`/`sourceQuests` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
 
 Apply a complete schema only to its classified entity record. For other constructors, category headers, and plain keyed tables, use applicable shared constraints:
 
 | Block | Constraint |
 | --- | --- |
 | Cost and restrictions | `coord(s)` precedes `cost`; `cost` precedes the race/class/level block when present. |
-| Restrictions | Keep race, class, and level together in that order; omit absent fields. |
+| Restrictions | Keep race restrictions, class restrictions, and level requirements together in that order; omit absent fields. Identify restrictions by schema rather than by an identifier's name alone. |
 | Flags and lock | Keep `isX` flags and `repeatable` together. Preserve their relative order, place `isBreadcrumb` last, then put `lockCriteria` immediately below the block. |
 | Tail | Put all other metadata before `timeline`, then the `qi`/`qis` group, then `groups`. Omit absent fields and preserve the relative order within `qi`/`qis`. |
 | Unlisted fields | Preserve their order relative to one another. Listed fields may cross them to satisfy the declared constraints; do not invent a complete schema for them. |
