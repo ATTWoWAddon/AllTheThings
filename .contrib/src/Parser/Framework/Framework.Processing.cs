@@ -3190,13 +3190,13 @@ namespace ATT
                 var childTrees = criteriaTree.EnumerateChildren().ToList();
                 if (childTrees.Count > 0)
                 {
-                    // If an Achievement has a parent CriteriaTree which requires some arbitrary partial set of its criteria to be completed,
+                    // If an Achievement has a parent CriteriaTree which requires some arbitrary partial set of its Criteria to be completed,
                     // add a debug message that this Achievement may simply need to be a partial_achievement instead for simplicity
                     // TODO: this works technically but there's way more results than useful. Perhaps only report at the end based
                     // whether matching Criteria has been used under another Achievement
                     //if (criteriaTree.Operator == 8 && criteriaTree.Amount > 0 && criteriaTree.Amount < childTrees.Count)
                     //{
-                    //    LogDebug($"INFO: Achievement {achID} has a CriteriaTree requiring {criteriaTree.Amount} out of {childTrees.Count} criteria. Perhaps it should be an `achpart` instead?", data);
+                    //    LogDebug($"INFO: Achievement {achID} has a CriteriaTree requiring {criteriaTree.Amount} out of {childTrees.Count} Criteria. Perhaps it should be an `achpart` instead?", data);
                     //}
 
                     if (criteriaTree.IsAllianceOnlyFlags())
@@ -4758,7 +4758,7 @@ namespace ATT
             {
                 LogError($"'criteriaID' {criteriaID} missing 'achID' under final Parent: [{ToJSON(parentData)}]", data);
             }
-            // Criteria nested under another Thing can never supersede that Thing's awp
+            // Criteria nested under another Thing can never supercede that Thing's awp
             if (parentData.TryGetValue("awp", out long parentAWP) && data.TryGetValue("awp", out long awp) && awp < parentAWP)
             {
                 LogDebug($"INFO: Removed Criteria AWP:{awp} which is before Parent AWP:{parentAWP}", data);

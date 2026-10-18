@@ -412,7 +412,7 @@ namespace ATT
 
         private static void QueueAPIRequestForID(int i, bool retry = false)
         {
-            // maximum API limits is 100/sec so throttle to that at least
+            // maximum API limit is 100/sec so throttle to that at least
             // don't allow more than 50 simultaneous requests
             // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
 

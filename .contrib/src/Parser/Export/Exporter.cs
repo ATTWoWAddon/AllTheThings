@@ -22,7 +22,7 @@ namespace ATT
         public IDictionary<string, int> STRUCTURE_COUNTS = new Dictionary<string, int>();
 
         /// <summary>
-        /// All of the shortcuts and the function that that they shorten.
+        /// All of the shortcuts and the function that they shorten.
         /// </summary>
         public IDictionary<string, string> FUNCTION_SHORTCUTS = new Dictionary<string, string>();
 

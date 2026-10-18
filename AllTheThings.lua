@@ -1167,7 +1167,7 @@ local function BuildSourceParent(group)
 						end
 					end
 				end
-				-- Things which are a Item output of one or more Crafting Recipes should show those Recipes as a Source
+				-- Things which are an Item output of one or more Crafting Recipes should show those Recipes as a Source
 				if thing.itemID then
 					local recipes = GetCraftingOutputRecipes(thing)
 					if recipes then

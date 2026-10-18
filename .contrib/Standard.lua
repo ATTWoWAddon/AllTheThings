@@ -1,8 +1,8 @@
 --[[
 -- NEW FILE AND ROOT()
-At the start of a new file, we always have 3 lines that explain which kind of "Module" (i.e., main category) it belongs to.
-The root() function follows immediately, with no blank line, and encapsulates most of the file.
-In the root() functions, we use ROOTS constants followed by the next header and a bubbleDown for the main timeline (when the content of the file first became available).
+At the start of a new file we always have 3 rows that explain which kind of "Module" (i.e. main category) it belongs to.
+Thereafter, the root() function follows with no space and will encapsulate most of the file.
+In the root() functions we use ROOTS constants followed by the next header and a bubbleDown for the main timeline(when this file first started to be used) of the file.
 
 Some examples
 ---------------------------------------------------
@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	}),
 })));
 
-There can, of course, be exceptions to this, with bubbleDownSelf on the next header, like this.
+There could of course be an exception to this, and you could put the bubbleDownSelf on the next header like this.
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
@@ -58,7 +58,7 @@ q(questID, {	-- Quest Name
 
 Discussion Points
 1] The use of sourceQuest and sourceQuests.
-	using ["sourceQuest"] will only be able to take one quest and does not use brackets i.e ["sourceQuest"] = questID,
+	using ["sourceQuest"] will only be able to take one quest and does not use brackets i.e. ["sourceQuest"] = questID,
 	using ["sourceQuests"] can use multiple quests and uses brackets ["sourceQuests"] = { questID },
 
 	Braghe: I only use ["sourceQuests"] because I believe it's a lot easier to use just one field and the extra brackets don't matter. It's also easy to add multiple quests
@@ -68,14 +68,14 @@ Discussion Points
 	}, since this is the usual quest form it also looks uniform
 
 2] The use of qg and provider.
-	The field ["qg"] is used by some and it stands for questgiver and usually in the form ["qg"] = npcID, but can be expanded to ["qgs"] = { npcID1, npcID2 }.
+	The field ["qg"] is used by some and it stands for questgiver and is usually in the form ["qg"] = npcID, but can be expanded to ["qgs"] = { npcID1, npcID2 }.
 	Others use ["provider"] = { "n", npcID } or for multiple
 	["providers"] = {
 		{ "n", npcID1 },
 		{ "n", npcID2 },
 	}
 
-	Braghe: Since parser converts providers with "n" to qg. We can just use providers since they are used anyway when the quest starts from an item or object. ["provider"] = { "i", itemID } or ["provider"] = { "o", objectID }
+	Braghe: Since parser converts providers with "n" to qg, we can just use providers since they are used anyway when the quest starts from an item or object. ["provider"] = { "i", itemID } or ["provider"] = { "o", objectID }
 
 3] The use of coord and coords.
 	I don't think anyone uses ["coords"] for single coords....
@@ -132,7 +132,7 @@ OnTooltip
 groups
 
 
-Braghe: I don't think we ever use mapID (i.e one maps), altQuest (one altQuests), classID, raceID etc... so it's kinda weird to do it to sourceQuests.
+Braghe: I don't think we ever use mapID (i.e. one map), altQuest (one altQuest), classID, raceID etc... so it's kinda weird to do it to sourceQuests.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------
