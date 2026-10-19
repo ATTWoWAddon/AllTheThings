@@ -3,6 +3,8 @@
 ---------------------------------------------------
 
 maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
+	lore = "On the northern coast of Lordaeron lies the eerie Tirisfal Glades. The unofficial kingdom to the Forsaken, servants of the Banshee Queen Sylvanas Windrunner, the wooded hills are seeped through with the curse of the Lich King's plague. The sky over Tirisfal is eternally gloomy and tinted a blighted green, and the trees and other flora desperately cling to their last shreds of life.\n\nAlthough tainted and melancholy, Tirisfal still very much has its own unique, haunting beauty, particularly in such areas as the stony North Coast, the village of Brill, and the deep atmosphere of the ruined Agamand Mills.\n\nTirisfal Glades is home not only to the Forsaken, but to their enemies as well. The Scarlet Crusade has several outposts here, including the seat of their religious faith, the Scarlet Monastery. The minions of the Scourge are also ever present, tainting the derelict farmsteads and dilapidated mills with their foul presence.",
+	icon = 236849,
 	groups = {
 		m(DEATHKNELL, {
 			lore = "Deathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.",
@@ -12,23 +14,255 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			},
 			groups = {
 				n(QUESTS, {
-					q(98601, {	-- A Difficult Path
+					q(8, {	-- A Rogue's Deal (1/2)
+						qg = 6784,
+						qi = 7628,
+						coord = { 38.2, 56.6, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						groups = {
+							objective(1, {	-- Deliver the Nondescript Letter to Innkeeper Renee
+								provider = { "n", 5688 },	-- Innkeeper Renee
+								coord = { 61.7, 52.1, MAP.TIRISFAL_GLADES },
+							}),
+						},
+					}),
+					q(363, {	-- Rude Awakening
+						qg = 1568,	-- Undertaker Mordo
+						coord = { 30.2, 71.6, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						isBreadcrumb = true
+					}),
+					q(364, {	-- The Mindless Ones
+						sourceQuest = 363,	-- Rude Awakening
 						qg = 1569,	-- Shadow Priest Sarvis
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
-						races = { UNDEAD },
-						classes = { PALADIN },
-						lvl = 1,
-						timeline = { TIMELINE.ADDED_1_60_1 },
-						qi = 282423,	-- Consecrated Scroll (QI!)
+						races = HORDE_ONLY,
 						groups = {
+							objective(1, {	-- 0/8 Mindless Zombie slain
+								provider = { "n", 1501 },	-- Mindless Zombie
+							}),
+							objective(2, {	-- 0/8 Wretched Zombie slain
+								provider = { "n", 1502 },	-- Wretched Zombie
+							}),
+							i(3275),	-- Flax Gloves
+							i(11847),	-- Battered Cloak
+						},
+					}),
+					q(376, {	-- The Damned
+						qg = 1661,	-- Novice Elreth
+						coord = { 30.9, 66.1, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 2,
+						groups = {
+							objective(1, {	-- 0/6 Scavenger Paw
+								provider = { "i", 3265 },	-- Scavenger Paw
+								crs = {
+									1509,	-- Ragged Scavenger
+									1508,	-- Young Scavenger
+								},
+							}),
+							objective(2, {	-- 0/6 Duskbat Wing
+								provider = { "i", 3264 },	-- Duskbat Wing
+								crs = {
+									1512,	-- Duskbat
+									1553,	-- Greater Duskbat
+									1513,	-- Mangy Duskbat
+								},
+							}),
 							i(6060),	-- Flax Bracers
 							i(2173),	-- Old Leather Belt
 						},
 					}),
-					q(98389, {	-- A Light in the Darkness
+					q(380, {	-- Night Web's Hollow
+						sourceQuest = 376,	-- The Damned
+						qg = 1570,	-- Executor Arren
+						coord = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 2,
+						groups = {
+							objective(1, {	-- 0/10 Young Night Web Spider slain
+								provider = { "n", 1504 },	-- Young Night Web Spider
+							}),
+							objective(2, {	-- 0/8 Night Web Spider slain
+								provider = { "n", 1505 },	-- Night Web Spider
+							}),
+							i(3270),	-- Flax Vest
+							i(3273),	-- Rugged Mail Vest / Rugged Plate Vest [7.0.3+]
+							i(3272),	-- Zombie Skin Leggings
+						},
+					}),
+					q(381, {	-- The Scarlet Crusade
+						sourceQuest = 380,	-- Night Web's Hollow
+						qg = 1570,	-- Executor Arren
+						coord = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 2,
+						groups = {
+							objective(1, {	-- 0/12 Scarlet Armband
+								provider = { "i", 3266 },	-- Scarlet Armband
+								crs = {
+									1507,	-- Scarlet Initiate
+									1506,	-- Scarlet Convert
+									1667,	-- Meven Korgal
+								},
+							}),
+							i(3268),	-- Forsaken Dagger
+							i(3269),	-- Forsaken Maul
+							i(3267),	-- Forsaken Shortsword
+							i(5779),	-- Forsaken Bastard Sword
+						},
+					}),
+					q(382, {	-- The Red Messenger
+						sourceQuest = 381,	-- The Scarlet Crusade
+						qg = 1570,	-- Executor Arren
+						coord = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 2,
+						groups = {
+							objective(1, {	-- 0/1 Scarlet Crusade Documents
+								provider = { "i", 2885 },	-- Scarlet Crusade Documents
+								coord = { 36.6, 68.6, MAP.TIRISFAL_GLADES },
+								cr = 1667,	-- Meven Korgal
+							}),
+							i(3277),	-- Executor Staff
+							i(3276),	-- Deathguard Buckler
+						},
+					}),
+					q(383, {	-- Vital Intelligence
+						sourceQuest = 382,	-- The Red Messenger
+						qg = 1570,
+						qi = 2885,
+						coord = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 2,
+					}),
+					q(590, {	-- A Rogue's Deal (2/2)
+						sourceQuest = 8,	-- A Rogue's Deal (1/2)
+						qg = 6784,	-- Calvin Montague
+						coord = { 38.2, 56.6, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+					}),
+					q(1470, {	-- Piercing the Veil
+						qg = 5667,	-- Venya Marthand
+						coord = { 31.0, 66.4, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { WARLOCK },
+						groups = {
+							objective(1, {	-- 0/3 Rattlecage Skull
+								provider = { "i", 6281 },	-- Rattlecage Skull
+								cr = 1890,	-- Rattlecage Skeleton
+							}),
+							recipe(688),	-- Summon Imp
+						},
+					}),
+					q(3095, {	-- Simple Scroll
+						sourceQuest = 364,	-- The Mindless Ones
+						qg = 1569,
+						qi = 9546,
+						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { WARRIOR },
+					}),
+					q(3096, {	-- Encrypted Scroll
+						sourceQuest = 364,	-- The Mindless Ones
+						qg = 1569,
+						qi = 9559,
+						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { ROGUE },
+					}),
+					q(3097, {	-- Hallowed Scroll
+						sourceQuest = 364,	-- The Mindless Ones
+						qg = 1569,
+						qi = 9569,
+						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { PRIEST },
+					}),
+					q(3098, {	-- Glyphic Scroll
+						sourceQuest = 364,	-- The Mindless Ones
+						qg = 1569,
+						qi = 9574,
+						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { MAGE },
+					}),
+					q(3099, {	-- Tainted Scroll
+						sourceQuest = 364,	-- The Mindless Ones
+						qg = 1569,
+						qi = 9578,
+						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { WARLOCK },
+					}),
+					q(3901, {	-- Rattling the Rattlecages
+						sourceQuest = 364,	-- The Mindless Ones
+						qg = 1569,	-- Shadow Priest Sarvis
+						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						groups = {
+							objective(1, {	-- 0/12 Rattlecage Skeleton slain
+								provider = { "n", 1890 },	-- Rattlecage Skeleton
+							}),
+							i(3274),	-- Flax Boots
+							i(11851),	-- Scavenger Tunic
+							i(11852),	-- Roamer's Leggings
+						},
+					}),
+					q(3902, {	-- Scavenging Deathknell
+						sourceQuest = 376,	-- The Damned
+						qg = 1740,	-- Deathguard Saltain
+						coord = { 31.6, 65.6, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 2,
+						groups = {
+							objective(1, {	-- 0/6 Scavenged Goods
+								providers = {
+									{ "i",  11127 },	-- Scavenged Goods
+									{ "o", 164662 },	-- Equipment Boxes
+								},
+							}),
+							i(11848),	-- Flax Belt
+							i(11849),	-- Rustmetal Bracers
+							i(11850),	-- Short Duskbat Cape
+						},
+					}),
+					q(5651, {	-- In Favor of Darkness
+						qg = 2123,	-- Dark Cleric Duesten <Priest Trainer>
+						coord = { 31.0, 66.0, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { PRIEST },
+						lvl = 5,
+					}),
+					q(6395, {	-- Marla's Last Wish
+						sourceQuest = 376,	-- The Damned
+						qg = 1661,	-- Novice Elreth
+						coord = { 30.9, 66.1, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 3,
+						groups = {
+							objective(1, {	-- Samuel's Remains Buried
+								providers = {
+									{ "i",  16333 },	-- Samuel's Remains
+									{ "o", 178090 },	-- Marla's Grave
+								},
+								coords = {
+									{ 36.6, 61.6, MAP.TIRISFAL_GLADES },
+									{ 31.0, 65.0, MAP.TIRISFAL_GLADES },
+								},
+								cr = 1919,	-- Samuel Fipps
+							}),
+							i(247840),	-- Mining for Dummies
+							i(247841),	-- Wild Harvest
+							i(247846),	-- Pelt Collecting for Beginners
+						},
+					}),
+					q(90902, {	-- Rediscovering the Light
+						["sourceQuests"] = { 91282 },	-- A Second Home
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
-						races = HORDE_ONLY,
+						races = { UNDEAD },
+						classes = { PALADIN },
 						lvl = 2,
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
@@ -55,15 +289,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 							}),
 						},
 					}),
-					q(90902, {	-- Rediscovering the Light
-						["sourceQuests"] = { 91282 },	-- A Second Home
-						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
-						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
-						races = { UNDEAD },
-						classes = { PALADIN },
-						lvl = 2,
-						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
 					q(96656, {	-- The Adventurer [Tirisfal Glades]
 						altQuests = {
 							96627,	-- The Adventurer [Elwynn Forest]
@@ -86,10 +311,768 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 							}),
 						},
 					}),
+					q(98389, {	-- A Light in the Darkness
+						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
+						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						lvl = 2,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					q(98601, {	-- A Difficult Path
+						qg = 1569,	-- Shadow Priest Sarvis
+						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
+						races = { UNDEAD },
+						classes = { PALADIN },
+						lvl = 1,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 282423,	-- Consecrated Scroll (QI!)
+						groups = {
+							i(6060),	-- Flax Bracers
+							i(2173),	-- Old Leather Belt
+						},
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(3295, {	-- Deadman Blade
+						coord = { 36.6, 61.6, MAP.TIRISFAL_GLADES },
+						cr = 1919,	-- Samuel Fipps
+					}),
+					i(3293, {	-- Deadman Cleaver
+						coord = { 36.6, 61.8, MAP.TIRISFAL_GLADES },
+						cr = 1917,	-- Daniel Ulfman
+					}),
+					i(3294, {	-- Deadman Club
+						coord = { 36.6, 61.6, MAP.TIRISFAL_GLADES },
+						cr = 1918,	-- Karrel Grayves
+					}),
+					i(3296, {	-- Deadman Dagger
+						coord = { 36.6, 61.6, MAP.TIRISFAL_GLADES },
+						cr = 1916,	-- Stephen Bhartec
+					}),
+					i(3262, {	-- Putrid Wooden Hammer
+						coord = { 33.0, 63.6, MAP.TIRISFAL_GLADES },
+						cr = 1890,	-- Rattlecage Skeleton
+					}),
+					i(3260, {	-- Scarlet Initiate Robes
+						coord = { 37.4, 68.0, MAP.TIRISFAL_GLADES },
+						cr = 1507,	-- Scarlet Initiate
+					}),
+					i(2754, {	-- Tarnished Bastard Sword
+						coord = { 36.8, 68.0, MAP.TIRISFAL_GLADES },
+						crs = {
+							1506,	-- Scarlet Convert
+						},
+					}),
+					i(3263, {	-- Webbed Pants
+						coord = { 27.6, 59.2, MAP.TIRISFAL_GLADES },
+						cr = 1505,	-- Night Web Spider
+					}),
 				}),
 			},
 		}),
+		n(ACHIEVEMENTS, {
+			ach(768),	-- Explore Tirisfal Glades
+		}),
+		explorationHeader({
+			groups = {
+				exploration(157),	-- Agamand Mills
+				exploration(165),	-- Balnir Farmstead
+				exploration(162),	-- Brightwater Lake
+				exploration(159),	-- Brill
+				exploration(166),	-- Cold Hearth Manor
+				exploration(167),	-- Crusader Outpost
+				exploration(154),	-- Deathknell
+				exploration(164),	-- Garren's Haunt
+				exploration(811),	-- Nightmare Vale
+				exploration(459),	-- Scarlet Watch Post
+				exploration(156),	-- Solliden Farmstead
+				exploration(810),	-- Stillwater Pond
+				exploration(161),	-- Terrace of Repose
+				exploration(152),	-- The Bulwark
+				exploration(812),	-- Venomweb Vale
+				exploration(160),	-- Whispering Gardens
+				exploration(1497),	-- Undercity
+				--[[
+				exploration(158),	-- Agamand Family Crypt
+				exploration(2118),	-- Brill Town Hall
+				exploration(173),	-- Faol's Rest
+				exploration(2119),	-- Gallows' End Tavern
+				exploration(155),	-- Night Web's Hollow
+				exploration(2117),	-- Shadow Grave
+				exploration(2399),	-- The Great Sea
+				exploration(168),	-- The North Coast
+				exploration(169),	-- Whispering Shore
+				]]--
+			},
+		}),
 		n(QUESTS, {
+			q(354, {	-- Deaths in the Family
+				qg = 1500,	-- Coleman Farthing
+				coord = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/1 Gregor's Remains
+						provider = { "i", 2829 },	-- Gregor's Remains
+						coord = { 46.8, 29.6, MAP.TIRISFAL_GLADES },
+						cr = 1654,	-- Gregor Agamand
+					}),
+					objective(2, {	-- 0/1 Nissa's Remains
+						provider = { "i", 2828 },	-- Nissa's Remains
+						coord = { 49.6, 36.2, MAP.TIRISFAL_GLADES },
+						cr = 1655,	-- Nissa Agamand
+					}),
+					objective(3, {	-- 0/1 Thurman's Remains
+						provider = { "i", 2830 },	-- Thurman's Remains
+						coord = { 44.0, 33.4, MAP.TIRISFAL_GLADES },
+						cr = 1656,	-- Thurman Agamand
+					}),
+				},
+			}),
+			q(355, {	-- Speak with Sevren
+				qg = 1500,	-- Coleman Farthing
+				coord = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 7,
+			}),
+			q(356, {	-- Rear Guard Patrol
+				qg = 1495,	-- Deathguard Linnea
+				coord = { 65.4, 60.2, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
+					objective(1, {	-- 0/8 Bleeding Horror slain
+						provider = { "n", 1529 },	-- Bleeding Horror
+					}),
+					objective(2, {	-- 0/8 Wandering Spirit slain
+						provider = { "n", 1532 },	-- Wandering Spirit
+					}),
+				},
+			}),
+			q(357, {	-- The Lich's Identity
+				sourceQuest = 405,	-- The Prodigal Lich
+				qg = 1498,	-- Bethor Iceshard
+				coord = { 84.2, 17.4, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/1 The Lich's Spellbook
+						provider = { "i", 2833 },	-- The Lich's Spellbook
+						coord = { 68.0, 42.1, MAP.TIRISFAL_GLADES },
+					}),
+				},
+			}),
+			q(358, {	-- Graverobbers
+				qg = 1499,	-- Magistrate Sevren
+				coord = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/8 Rot Hide Graverobber
+						provider = { "n", 1941 },	-- Rot Hide Graverobber
+					}),
+					objective(2, {	-- 0/5 Rot Hide Mongrel
+						provider = { "n", 1675 },	-- Rot Hide Mongrel
+					}),
+					objective(3, {	-- 0/8 Embalming Ichor
+						provider = { "i", 2834 },	-- Embalming Ichor
+						crs = {
+							1674,	-- Rot Hide Gnoll
+							1941,	-- Rot Hide Graverobber
+							1675,	-- Rot Hide Mongrel
+						},
+					}),
+					i(6063),	-- Cold Steel Gauntlets
+					i(3439),	-- Zombie Skin Boots
+				},
+			}),
+			q(359, {	-- Forsaken Duties
+				qg = 1499,	-- Magistrate Sevren
+				coord = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+			}),
+			q(360, {	-- Return to the Magistrate
+				sourceQuest = 359,	-- Forsaken Duties
+				qg = 1495,	-- Deathguard Linnea
+				coord = { 65.4, 60.2, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+			}),
+			q(361, {	-- A Letter Undelivered
+				providers = {
+					{ "i", 2839 },	-- A Letter to Yvette
+					{ "i", 2837 },	-- Thurman's Letter
+				},
+				coord = { 61.6, 52.6, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+			}),
+			q(362, {	-- The Haunted Mills
+				qg = 1500,	-- Coleman Farthing
+				coord = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/1 Devlin's Remains
+						provider = { "i", 2831 },	-- Devlin's Remains
+						coord = { 47.6, 40.2, MAP.TIRISFAL_GLADES },
+						cr = 1657,	-- Devlin Agamand
+					}),
+				},
+			}),
+			q(365, {	-- Fields of Grief (1/2)
+				qg = 1519,	-- Deathguard Simmer
+				coord = { 40.9, 54.2, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/10 Tirisfal Pumpkin
+						providers = {
+							{ "i", 2846 },	-- Tirisfal Pumpkin
+							{ "o", 375 },	-- Tirisfal Pumpkin
+						},
+						coords = {
+							{ 35.5, 52.5, MAP.TIRISFAL_GLADES },
+							{ 36.1, 52.0, MAP.TIRISFAL_GLADES },
+						},
+					}),
+				},
+			}),
+			q(366, {	-- Return the Book
+				sourceQuest = 357,	-- The Lich's Identity
+				qg = 1498,
+				qi = 3016,
+				coord = { 84.2, 17.4, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				lvl = 5,
+			}),
+			q(367, {	-- A New Plague (1/4)
+				qg = 1518,	-- Apothecary Johaan
+				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
+					objective(1, {	-- 0/5 Darkhound Blood
+						provider = { "i", 2858 },	-- Darkhound Blood
+						crs = {
+							1548,	-- Cursed Darkhound
+							1547,	-- Decrepit Darkhound
+						},
+					}),
+					i(3382),	-- Minor Troll's Blood Elixir (RECIPE!)
+				},
+			}),
+			q(368, {	-- A New Plague (2/4)
+				sourceQuest = 367,	-- A New Plague (1/4)
+				qg = 1518,	-- Apothecary Johaan
+				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
+					objective(1, {	-- 0/5 Vile Fin Scale
+						provider = { "i", 2859 },	-- Vile Fin Scale
+						crs = {
+							1544,	-- Vile Fin Minor Oracle
+							1545,	-- Vile Fin Muckdweller
+							1543,	-- Vile Fin Puddlejumper
+						},
+					}),
+					i(3434),	-- Slumber Sand
+				},
+			}),
+			q(369, {	-- A New Plague (3/4)
+				sourceQuest = 368,	-- A New Plague (2/4)
+				qg = 1518,	-- Apothecary Johaan
+				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
+					objective(1, {	-- 0/4 Vicious Night Web Spider Venom
+						provider = { "i", 2872 },	-- Vicious Night Web Spider Venom
+						cr = 1555,	-- Vicious Night Web Spider
+					}),
+					i(3442),	-- Apprentice Sash
+				},
+			}),
+			q(370, {	-- At War With The Scarlet Crusade (2/4)
+				sourceQuest = 427,	-- At War With The Scarlet Crusade (1/4)
+				qg = 1515,	-- Executor Zygand
+				coord = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/1 Captain Perrine slain
+						provider = { "n", 1662 },	-- Captain Perrine
+						coord = { 51.8, 67.4, MAP.TIRISFAL_GLADES },
+					}),
+					objective(2, {	-- 0/3 Scarlet Zealot slain
+						provider = { "n", 1537 },	-- Scarlet Zealot
+					}),
+					objective(3, {	-- 0/3 Scarlet Missionary slain
+						provider = { "n", 1536 },	-- Scarlet Missionary
+					}),
+				},
+			}),
+			q(371, {	-- At War With The Scarlet Crusade (3/4)
+				sourceQuest = 370,	-- At War With The Scarlet Crusade (2/4)
+				qg = 1515,	-- Executor Zygand
+				coord = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/1 Captain Vachon slain
+						provider = { "n", 1664 },	-- Captain Vachon
+						coord = { 79.6, 55.8, MAP.TIRISFAL_GLADES },
+					}),
+					objective(2, {	-- 0/5 Scarlet Friar slain
+						provider = { "n", 1538 },	-- Scarlet Friar
+					}),
+				},
+			}),
+			q(372, {	-- At War With The Scarlet Crusade (4/4)
+				sourceQuest = 371,	-- At War With The Scarlet Crusade (3/4)
+				qg = 1515,	-- Executor Zygand
+				coord = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/1 Captain Melrache slain
+						provider = { "n", 1665 },	-- Captain Melrache
+						coord = { 79.6, 26.8, MAP.TIRISFAL_GLADES },
+					}),
+					objective(2, {	-- 0/2 Scarlet Bodyguard slain
+						provider = { "n", 1660 },	-- Scarlet Bodyguard
+					}),
+					i(3445),	-- Ceremonial Knife
+					i(3071),	-- Striking Hatchet
+				},
+			}),
+			q(374, {	-- Proof of Demise
+				sourceQuest = 427,	-- At War With The Scarlet Crusade (1/4)
+				qg = 1652,	-- Deathguard Burgess
+				coord = { 60.8, 52.0, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/10 Scarlet Insignia Ring
+						provider = { "i", 2875 },	-- Scarlet Insignia Ring
+						crs = {
+							1665,	-- Captain Melrache
+							1662,	-- Captain Perrine
+							1664,	-- Captain Vachon
+							1660,	-- Scarlet Bodyguard
+							1538,	-- Scarlet Friar
+							1536,	-- Scarlet Missionary
+							1539,	-- Scarlet Neophyte
+							1540,	-- Scarlet Vanguard
+							1535,	-- Scarlet Warrior
+							1537,	-- Scarlet Zealot
+						},
+					}),
+					i(3435),	-- Zombie Skin Bracers
+					i(3437),	-- Clasped Belt
+					i(12299),	-- Netted Gloves
+				},
+			}),
+			q(375, {	-- The Chill of Death
+				qg = 1521,	-- Gretchen Dedmar
+				coord = { 61.9, 52.7, MAP.TIRISFAL_GLADES },
+				cost = { { "i", 2320, 1 } },	-- Coarse Thread
+				races = HORDE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/5 Duskbat Pelt
+						provider = { "i", 2876 },	-- Duskbat Pelt
+						crs = {
+							1553,	-- Greater Duskbat
+							1554,	-- Vampiric Duskbat
+						},
+					}),
+					i(3833),	-- Adept's Cloak
+					i(5939),	-- Sewing Gloves
+				},
+			}),
+			q(398, {	-- Wanted: Maggot Eye
+				provider = { "o", 711 },	-- Wanted!
+				coord = { 60.7, 51.5, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
+					objective(1, {	-- 0/1 Maggot Eye's Paw
+						provider = { "i", 3635 },	-- Maggot Eye's Paw
+						coord = { 58.6, 31.6, MAP.TIRISFAL_GLADES },
+						cr = 1753,	-- Maggot Eye
+					}),
+					i(5941),	-- Brass Scale Pants
+					i(3444),	-- Tiller's Vest
+				},
+			}),
+			q(404, {	-- A Putrid Task
+				qg = 1496,	-- Deathguard Dillinger
+				coord = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+				groups = {
+					objective(1, {	-- 0/7 Putrid Claw
+						provider = { "i", 2855 },	-- Putrid Claw
+						crs = {
+							1526,	-- Ravaged Corpse
+							1525,	-- Rotting Dead
+						},
+					}),
+				},
+			}),
+			q(405, {	-- The Prodigal Lich
+				qg = 1499,
+				qi = 3017,
+				coord = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+			}),
+			q(407, {	-- Fields of Grief (2/2)
+				sourceQuest = 365,	-- Fields of Grief (1/2)
+				qg = 1518,
+				qi = 3035,
+				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+			}),
+			q(408, {	-- The Family Crypt
+				sourceQuest = 355,	-- Speak with Sevren
+				qg = 1499,	-- Magistrate Sevren
+				coord = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 7,
+				groups = {
+					objective(1, {	-- 0/8 Wailing Ancestor slain
+						provider = { "n", 1534 },	-- Wailing Ancestor
+					}),
+					objective(2, {	-- 0/8 Rotting Ancestor slain
+						provider = { "n", 1530 },	-- Rotting Ancestor
+					}),
+					objective(3, {	-- 0/1 Dargol's Skull
+						provider = { "i", 3082 },	-- Dargol's Skull
+						coord = { 52.6, 26.4, MAP.TIRISFAL_GLADES },
+						cr = 1658,	-- Captain Dargol
+					}),
+					i(3446),	-- Darkwood Staff
+					i(3440),	-- Bonecracker
+				},
+			}),
+			q(409, {	-- Proving Allegiance
+				sourceQuest = 366,	-- Return the Book
+				qg = 1497,	-- Gunther Arcanus
+				coord = { 68.2, 42.0, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					q(431, {	-- Candles of Beckoning
+						provider = { "o", 1586 },	-- Crate of Candles
+						coord = { 68.1, 42.0, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						repeatable = true,
+						lvl = 5,
+						groups = {
+							i(3080),	-- Candle of Beckoning
+						},
+					}),
+					q(410, {	-- The Dormant Shade
+						providers = {
+							{ "i", 3080 },	-- Candle of Beckoning
+							{ "o", 1557 },	-- Lillith's Dinner Table
+						},
+						coord = { 66.6, 44.8, MAP.TIRISFAL_GLADES },
+						races = HORDE_ONLY,
+						repeatable = true,
+						lvl = 5,
+						groups = {
+							objective(1, {	-- 0/1 Lillith Nefara slain
+								questID = 409,	-- Proving Allegiance
+								provider = { "n", 1946 },	-- Lillith Nefara
+								coord = { 66.6, 44.8, MAP.TIRISFAL_GLADES },
+							}),
+						},
+					}),
+				},
+			}),
+			q(411, {	-- The Prodigal Lich Returns
+				sourceQuest = 409,	-- Proving Allegiance
+				qg = 1497,
+				qi = 3081,
+				coord = { 68.2, 42.0, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					i(5940),	-- Bone Buckler
+				},
+			}),
+			q(426, {	-- The Mills Overrun
+				sourceQuest = 404,	-- A Putrid Task
+				qg = 1496,	-- Deathguard Dillinger
+				coord = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+				groups = {
+					objective(1, {	-- 0/5 Notched Rib
+						provider = { "i", 3162 },	-- Notched Rib
+						crs = {
+							1523,	-- Cracked Skull Soldier
+							1520,	-- Rattlecage Soldier
+						},
+					}),
+					objective(2, {	-- 0/3 Blackened Skull
+						provider = { "i", 3163 },	-- Blackened Skull
+						cr = 1522,	-- Darkeye Bonecaster
+					}),
+					i(3447),	-- Cryptwalker Boots
+					i(3834),	-- Sturdy Cloth Trousers
+				},
+			}),
+			q(427, {	-- At War With The Scarlet Crusade (1/4)
+				qg = 1515,	-- Executor Zygand
+				coord = { 60.6, 51.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/10 Scarlet Warrior slain
+						provider = { "n", 1535 },	-- Scarlet Warrior
+					}),
+				},
+			}),
+			q(445, {	-- Delivery to Silverpine Forest
+				qg = 1518,
+				qi = 3238,
+				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 9,
+			}),
+			q(492, {	-- A New Plague (4/4)
+				sourceQuest = 369,	-- A New Plague (3/4)
+				qg = 1518,
+				qi = 3460,
+				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 6,
+			}),
+			q(1818, {	-- Speak with Dillinger
+				altQuests = { 1502 },	-- Thun'grim Firegaze
+				qg = 2131,	-- Austil de Mon
+				coord = { 61.84, 52.53, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				classes = { WARRIOR },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(1819, {	-- Ulag the Cleaver
+				sourceQuest = 1818,	-- Speak with Dillinger
+				altQuests = { 1502 },	-- Thun'grim Firegaze
+				qg = 1496,	-- Deathguard Dillinger
+				coord = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				classes = { WARRIOR },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Ulag the Cleaver slain
+						provider = { "n", 6390 },	-- Ulag the Cleaver
+						coord = { 59.2, 48.6, MAP.TIRISFAL_GLADES },
+					}),
+				},
+			}),
+			q(1820, {	-- Speak with Coleman
+				sourceQuest = 1819,	-- Ulag the Cleaver
+				qg = 1496,	-- Deathguard Dillinger
+				coord = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				classes = { WARRIOR },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(1821, {	-- Agamand Heirlooms
+				sourceQuest = 1820,	-- Speak with Coleman
+				qg = 1500,	-- Coleman Farthing
+				coord = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				classes = { WARRIOR },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Agamand Family Axe
+						providers = {
+							{ "i",   7567 },	-- Agamand Family Axe
+							{ "o", 105170 },	-- Agamand Weapon Rack
+						},
+						coord = { 51.7, 25.7, MAP.TIRISFAL_GLADES },
+					}),
+					objective(2, {	-- 0/1 Agamand Family Dagger
+						providers = {
+							{ "i",   7568 },	-- Agamand Family Dagger
+							{ "o", 105172 },	-- Agamand Weapon Rack
+						},
+						coord = { 52.6, 26.9, MAP.TIRISFAL_GLADES },
+					}),
+					objective(3, {	-- 0/1 Agamand Family Mace
+						providers = {
+							{ "i",   7569 },	-- Agamand Family Mace
+							{ "o", 105171 },	-- Agamand Weapon Rack
+						},
+						coord = { 51.9, 27.1, MAP.TIRISFAL_GLADES },
+					}),
+					objective(4, {	-- 0/1 Agamand Family Sword
+						providers = {
+							{ "i",   7566 },	-- Agamand Family Sword
+							{ "o", 105169 },	-- Agamand Weapon Rack
+						},
+						coord = { 52.6, 25.9, MAP.TIRISFAL_GLADES },
+					}),
+				},
+			}),
+			q(1822, {	-- Heirloom Weapon
+				sourceQuest = 1821,	-- Agamand Heirlooms
+				qg = 1500,	-- Coleman Farthing
+				coord = { 61.73, 52.30, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				classes = { WARRIOR },
+				lvl = 10,
+				groups = {
+					i(7115),	-- Heirloom Axe
+					i(7117),	-- Heirloom Hammer
+					i(7116),	-- Heirloom Dagger
+					i(7118),	-- Heirloom Sword
+				},
+			}),
+			q(5481, {	-- Gordo's Task
+				qg = 10666,	-- Gordo
+				coord = { 55.8, 52.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/3 Gloom Weed
+						providers = {
+							{ "i",  12737 },	-- Gloom Weed
+							{ "o", 175566 },	-- Gloom Weed
+						},
+						coords = {
+							{ 49.7, 54.9, MAP.TIRISFAL_GLADES },
+							{ 44.4, 57.3, MAP.TIRISFAL_GLADES },
+						},
+					}),
+				},
+			}),
+			q(5482, {	-- Doom Weed
+				sourceQuest = 5481,	-- Gordo's Task
+				qg = 10665,	-- Junior Apothecary Holland
+				coord = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/10 Doom Weed
+						provider = { "i", 13702 },	-- Doom Weed
+					}),
+				},
+			}),
+			q(5650, {	-- Garments of Darkness
+				sourceQuest = 5651,	-- In Favor of Darkness
+				qg = 2129,	-- Dark Cleric Beryl <Priest Trainer>
+				coord = { 61.6, 52.2, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				classes = { PRIEST },
+				lvl = 5,
+				groups = {
+					objective(1, {	-- Heal and fortify Deathguard Kel
+						provider = { "n", 12428 },	-- Deathguard Kel
+						coord = { 59.2, 46.4, MAP.TIRISFAL_GLADES },
+					}),
+					i(16607),	-- Acolyte's Sacrificial Robes
+				},
+			}),
+			q(86784, {	-- Sticks and Bones
+				qg = 1742,	-- Deathguard Bartholomew
+				coord = { 58.3, 50.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279937,	-- Collecting Basket (QI!)
+				groups = {
+					objective(1, {	-- Dry Branch
+						providers = {
+							{ "i", 279991 },	-- Dry Branch (QI!)
+							{ "o", 671154 },	-- Dry Branch
+						},
+					}),
+					objective(2, {	-- Deliver Dry Branches to Eleanor Shackleton
+						provider = { "n", 265812 },	-- Eleanor Shackleton <Adventurer>
+						coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
+					}),
+					i(279939),	-- Collecting Basket
+				},
+			}),
+			q(91282, {	-- A Second Home
+				qg = 246152,	-- Shari Stilwell <Paladin Trainer>
+				coord = { 60.25, 52.63, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 8,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(91285, {	-- Murlocs at the Gates
+				qg = 246349,	-- Breton Samuels
+				coord = { 21.85, 45.31, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Vile Fin Attacker
+						provider = { "n", 250283 },	-- Vile Fin Attacker
+					}),
+					objective(2, {	-- Vile Fin Seer
+						provider = { "n", 250282 },	-- Vile Fin Seer
+					}),
+					i(246164),	-- Skullthumper
+					i(246165),	-- Driftwood Smasher
+				},
+			}),
+			q(91316, {	-- Making Repairs
+				qg = 246393,	-- Jorin Croge
+				coord = { 22.65, 44.77, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 8,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Sturdy Lumber
+						provider = { "i", 246213 },	-- Sturdy Lumber (QI!)
+					}),
+					i(246265),	-- Salvaged Wooden Tower Shield
+				},
+			}),
+			q(91317, {	-- The Tarnished
+				qg = 246378,	-- Danitha Morr
+				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Tarnished Drudge
+						provider = { "n", 259434 },	-- Tarnished Drudge
+					}),
+					objective(2, {	-- Tarnished Zealot
+						provider = { "n", 259433 },	-- Tarnished Zealot
+					}),
+					objective(3, {	-- Rudolph Gelhardt's Head
+						provider = { "i", 270435 },	-- Rudolph Gelhardt's Head (QI!)
+					}),
+				},
+			}),
+			q(91858, {	-- Diplomatic Incident
+				qg = 246378,	-- Danitha Morr
+				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(94427, {	-- A Lesson in Divinity
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
@@ -147,20 +1130,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			q(96896, {	-- A Righteous Cause
-				sourceQuest = 96899,	-- Bandarion Keep
-				qg = 267008,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-				coord = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				lvl = 10,
+			q(95314, {	-- That Shadowvale Green Elixir
+				qg = 2132,	-- Carolai Anise <Journeyman Alchemist>
+				coord = { 59.4, 52.3, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 7,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Bottle of Whispering Elixir
+						providers = {
+							{ "i", 268801 },	-- Bottle of Whispering Elixir (QI!)
+							{ "o", 630871 },	-- Bottle
+							{ "o", 630885 },	-- Bottle
+						},
+					}),
+				},
 			}),
-			q(91282, {	-- A Second Home
-				qg = 246152,	-- Shari Stilwell <Paladin Trainer>
-				coord = { 60.25, 52.63, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				classes = { PALADIN },
-				lvl = 8,
+			q(95328, {	-- Whispering Horror Residue
+				provider = { "i", 268812 },	-- Whispering Horror Residue (QS!)
+				cr = 260396,	-- Whispering Horror
+				coord = { 8.6, 60.2, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 7,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(95803, {	-- A Token of Good Faith
@@ -172,19 +1163,92 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 270436,	-- Rudolph Gelhardt's Head (QI!)
 			}),
-			q(99152, {	-- As Above, So Below
-				qg = 246389,	-- Hilda the Breaker <Paladin Trainer>
-				coord = { 22.0, 47.2, MAP.TIRISFAL_GLADES },
+			q(96607, {	-- The Great Outdoors [Tirisfal Glades]
+				sourceQuest = 96656,	-- The Adventurer [Tirisfal Glades]
+				altQuests = {
+					95998,	-- The Great Outdoors [Elwynn Forest]
+					96101,	-- The Great Outdoors [Zephras Isle]
+					96604,	-- The Great Outdoors [Durotar]
+					96605,	-- The Great Outdoors [Mulgore]
+					96606,	-- The Great Outdoors [Teldrassil]
+					96608,	-- The Great Outdoors [Dun Morogh]
+				},
+				qg = 265812,	-- Eleanor Shackleton <Adventurer>
+				coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(96658, {	-- Camping 101: Cooking [Tirisfal Glades]
+				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
+				altQuests = {
+					96626,	-- Camping 101: Cooking [Elwynn Forest]
+					96629,	-- Camping 101: Cooking [Dun Morogh]
+					96634,	-- Camping 101: Cooking [Teldrassil]
+					96646,	-- Camping 101: Cooking
+					96655,	-- Camping 101: Cooking [Durotar]
+					96661,	-- Camping 101: Cooking [Mulgore]
+				},
+				qg = 265812,	-- Eleanor Shackleton <Adventurer>
+				coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Learn Cooking from William Pickman
+						provider = { "n", 265944 },	-- William Pickman <Cooking Trainer>
+						coord = { 61.8, 51.5, MAP.TIRISFAL_GLADES },
+					}),
+				},
+			}),
+			q(96895, {	-- The Argent Emissary
+				qg = 1738,	-- Deathguard Terrence
+				coord = { 61.4, 53.4, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(96896, {	-- A Righteous Cause
+				sourceQuest = 96899,	-- Bandarion Keep
+				qg = 267008,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+				coord = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(96897, {	-- The Cult of the Damned
+				qg = 267009,	-- Hadric Harlson <The Argent Dawn>
+				coord = { 65.8, 61.0, MAP.TIRISFAL_GLADES },
+				races = { ORC, UNDEAD, TROLL },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- 0/6 Faintly Glowing Bone
-						provider = { "i", 286259 },	-- Faintly Glowing Bone (QI!)
+					objective(1, {	-- 0/8 Dark Neophyte slain
+						provider = { "n", 267006 },	-- Dark Neophyte <Cult of the Damned>
+						coord = { 68.8, 64.6, MAP.TIRISFAL_GLADES },
+					}),
+					objective(2, {	-- 0/8 Dark Enforcer slain
+						provider = { "n", 275437 },	-- Dark Enforcer <Cult of the Damned>
+						coord = { 68.0, 64.6, MAP.TIRISFAL_GLADES },
+					}),
+				},
+			}),
+			q(96898, {	-- Remnants of War
+				qg = 267009,	-- Hadric Harlson <The Argent Dawn>
+				coord = { 65.8, 61.0, MAP.TIRISFAL_GLADES },
+				races = { ORC, UNDEAD, TROLL },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- 0/12 Necrotic Crystal Fragment
+						providers = {
+							{ "i", 275851 },	-- Necrotic Crystal Fragment (QI!)
+							{ "o", 656366 },	-- Naxxramas Crystal Fragment
+						},
+						coord = { 69.2, 66.0, MAP.TIRISFAL_GLADES },
 						crs = {
-							260428,	-- Shadowvale Lurcher
-							260430,	-- Shadowvale Mystic
-							260432,	-- Shadowvale Mystic
+							267006,	-- Dark Neophyte
+							275437,	-- Dark Enforcer
 						},
 					}),
 				},
@@ -195,6 +1259,39 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				races = { ORC, UNDEAD },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(97558, {	-- Hides for the Forsaken
+				qg = 3549,	-- Shelene Rhobart <Journeyman Leatherworker>
+				coord = { 65.4, 60.0, MAP.TIRISFAL_GLADES },
+				races = { ORC, UNDEAD },
+				lvl = 6,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- 0/8 Duskbat Wing Membrane
+						provider = { "i", 278242 },	-- Duskbat Wing Membrane (QI!)
+						crs = {
+							1553,	-- Greater Duskbat
+							1554,	-- Vampiric Duskbat
+						},
+					}),
+					objective(2, {	-- 0/6 Darkhound Hide
+						provider = { "i", 278243 },	-- Darkhound Hide (QI!)
+						crs = {
+							1547,	-- Decrepit Darkhound
+							1548,	-- Cursed Darkhound
+						},
+					}),
+					objective(3, {	-- 0/3 Vile Fin Murloc Skin
+						provider = { "i", 278244 },	-- Vile Fin Murloc Skin (QI!)
+						crs = {
+							1544,	-- Vile Fin Minor Oracle
+							1545,	-- Vile Fin Muckdweller
+						},
+					}),
+					i(281283),	-- Patchwing Pants
+					i(281284),	-- Howlhide Vest
+					i(281285),	-- Finscale Soles
+				},
 			}),
 			q(97951, {	-- Camping 101: Alchemy [Tirisfal Glades]
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
@@ -237,28 +1334,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230171),	-- Blacksmithing: Sharpening Wheel
-				},
-			}),
-			q(96658, {	-- Camping 101: Cooking [Tirisfal Glades]
-				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
-				altQuests = {
-					96626,	-- Camping 101: Cooking [Elwynn Forest]
-					96629,	-- Camping 101: Cooking [Dun Morogh]
-					96634,	-- Camping 101: Cooking [Teldrassil]
-					96646,	-- Camping 101: Cooking
-					96655,	-- Camping 101: Cooking [Durotar]
-					96661,	-- Camping 101: Cooking [Mulgore]
-				},
-				qg = 265812,	-- Eleanor Shackleton <Adventurer>
-				coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
-				races = HORDE_ONLY,
-				lvl = 4,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Learn Cooking from William Pickman
-						provider = { "n", 265944 },	-- William Pickman <Cooking Trainer>
-						coord = { 61.8, 51.5, MAP.TIRISFAL_GLADES },
-					}),
 				},
 			}),
 			q(97953, {	-- Camping 101: Enchanting [Tirisfal Glades]
@@ -455,13 +1530,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
 			}),
-			q(91858, {	-- Diplomatic Incident
-				qg = 246378,	-- Danitha Morr
-				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
+			q(98545, {	-- Leonid's Letter
+				sourceQuest = 96896,	-- A Righteous Cause
+				qg = 267008,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+				coord = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
-				classes = { PALADIN },
-				lvl = 18,
+				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 282065,	-- Sealed Letter (QI!)
+				groups = {
+					i(282064),	-- Tim's Lost Rib
+					i(277247),	-- Mug of Muddled Memories
+					i(277255),	-- Misplaced Shooter
+				},
 			}),
 			q(99134, {	-- Discipline
 				qg = 1515,	-- Executor Zygand
@@ -494,85 +1575,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					}),
 				},
 			}),
-			q(97558, {	-- Hides for the Forsaken
-				qg = 3549,	-- Shelene Rhobart <Journeyman Leatherworker>
-				coord = { 65.4, 60.0, MAP.TIRISFAL_GLADES },
-				races = { ORC, UNDEAD },
-				lvl = 6,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- 0/8 Duskbat Wing Membrane
-						provider = { "i", 278242 },	-- Duskbat Wing Membrane (QI!)
-						crs = {
-							1553,	-- Greater Duskbat
-							1554,	-- Vampiric Duskbat
-						},
-					}),
-					objective(2, {	-- 0/6 Darkhound Hide
-						provider = { "i", 278243 },	-- Darkhound Hide (QI!)
-						crs = {
-							1547,	-- Decrepit Darkhound
-							1548,	-- Cursed Darkhound
-						},
-					}),
-					objective(3, {	-- 0/3 Vile Fin Murloc Skin
-						provider = { "i", 278244 },	-- Vile Fin Murloc Skin (QI!)
-						crs = {
-							1544,	-- Vile Fin Minor Oracle
-							1545,	-- Vile Fin Muckdweller
-						},
-					}),
-					i(281283),	-- Patchwing Pants
-					i(281284),	-- Howlhide Vest
-					i(281285),	-- Finscale Soles
-				},
-			}),
-			q(98545, {	-- Leonid's Letter
-				sourceQuest = 96896,	-- A Righteous Cause
-				qg = 267008,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-				coord = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 282065,	-- Sealed Letter (QI!)
-				groups = {
-					i(282064),	-- Tim's Lost Rib
-					i(277247),	-- Mug of Muddled Memories
-					i(277255),	-- Misplaced Shooter
-				},
-			}),
-			q(91316, {	-- Making Repairs
-				qg = 246393,	-- Jorin Croge
-				coord = { 22.65, 44.77, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				classes = { PALADIN },
-				lvl = 8,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Sturdy Lumber
-						provider = { "i", 246213 },	-- Sturdy Lumber (QI!)
-					}),
-					i(246265),	-- Salvaged Wooden Tower Shield
-				},
-			}),
-			q(91285, {	-- Murlocs at the Gates
-				qg = 246349,	-- Breton Samuels
-				coord = { 21.85, 45.31, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				classes = { PALADIN },
-				lvl = 7,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Vile Fin Attacker
-						provider = { "n", 250283 },	-- Vile Fin Attacker
-					}),
-					objective(2, {	-- Vile Fin Seer
-						provider = { "n", 250282 },	-- Vile Fin Seer
-					}),
-					i(246164),	-- Skullthumper
-					i(246165),	-- Driftwood Smasher
-				},
-			}),
 			q(99141, {	-- Patience
 				qg = 1515,	-- Executor Zygand
 				coord = { 60.6, 51.7, MAP.TIRISFAL_GLADES },
@@ -603,6 +1605,62 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					}),
 				},
 			}),
+			q(99142, {	-- Tomb Weed
+				qg = 10665,	-- Junior Apothecary Holland <Royal Apothecary Society>
+				coord = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- 0/5 Tomb Weed
+						provider = { "i", 286204 },	-- Tomb Weed (QI!)
+					}),
+				},
+			}),
+			q(99144, {	-- Seeking Refuge
+				qg = 275954,	-- Bareth Dawnstone
+				coord = { 32.0, 46.2, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Escort Bareth Dawnstone out of Crusader's Outpost
+						provider = { "n", 275954 },	-- Bareth Dawnstone
+					}),
+				},
+			}),
+			q(99152, {	-- As Above, So Below
+				qg = 246389,	-- Hilda the Breaker <Paladin Trainer>
+				coord = { 22.0, 47.2, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- 0/6 Faintly Glowing Bone
+						provider = { "i", 286259 },	-- Faintly Glowing Bone (QI!)
+						crs = {
+							260428,	-- Shadowvale Lurcher
+							260430,	-- Shadowvale Mystic
+							260432,	-- Shadowvale Mystic
+						},
+					}),
+				},
+			}),
+			q(99153, {	-- The One That Got Away
+				qg = 259190,	-- Ephram Barbaro <Stable Master>
+				coord = { 20.2, 46.4, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- 0/1 Glowing Crystal Fragment
+						providers = {
+							{ "i", 286269 },	-- Glowing Crystal Fragment (QI!)
+							{ "o", 694895 },	-- Glowing Crystal Fragment
+						},
+					}),
+				},
+			}),
 			q(99156, {	-- Rear Guard Patrol (2/2)
 				sourceQuest = 356,	-- Rear Guard Patrol
 				qg = 1495,	-- Deathguard Linnea
@@ -621,168 +1679,317 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					i(286744),	-- Thrice-Stitched Flesh
 				},
 			}),
-			q(96898, {	-- Remnants of War
-				qg = 267009,	-- Hadric Harlson <The Argent Dawn>
-				coord = { 65.8, 61.0, MAP.TIRISFAL_GLADES },
-				races = { ORC, UNDEAD, TROLL },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
+		}),
+		n(RARES, {
+			n(10356, {	-- Bayne
+				coords = {
+					{ 40.8, 43.2, MAP.TIRISFAL_GLADES },
+					{ 57.6, 41.6, MAP.TIRISFAL_GLADES },
+					{ 42.0, 52.6, MAP.TIRISFAL_GLADES },
+					{ 45.0, 54.0, MAP.TIRISFAL_GLADES },
+					{ 50.0, 50.8, MAP.TIRISFAL_GLADES },
+					{ 51.4, 52.2, MAP.TIRISFAL_GLADES },
+				},
+			}),
+			n(1911, {	-- Deeb
+				coords = {
+					{ 58.8, 27.2, MAP.TIRISFAL_GLADES },
+					{ 62.6, 28.6, MAP.TIRISFAL_GLADES },
+				},
 				groups = {
-					objective(1, {	-- 0/12 Necrotic Crystal Fragment
-						providers = {
-							{ "i", 275851 },	-- Necrotic Crystal Fragment (QI!)
-							{ "o", 656366 },	-- Naxxramas Crystal Fragment
-						},
-						coord = { 69.2, 66.0, MAP.TIRISFAL_GLADES },
-						crs = {
-							267006,	-- Dark Neophyte
-							275437,	-- Dark Enforcer
-						},
+					i(4303),	-- Cranial Thumper
+				},
+			}),
+			n(1936, {	-- Farmer Solliden
+				coords = {
+					{ 34.2, 52.6, MAP.TIRISFAL_GLADES },
+					{ 38.0, 49.8, MAP.TIRISFAL_GLADES },
+				},
+				groups = {
+					i(3334),	-- Farmer's Shovel
+					i(4261),	-- Solliden's Trousers
+					i(2091),	-- Magic Dust
+				},
+			}),
+			n(10358, {	-- Fellicent's Shade
+				coords = {
+					{ 74.6, 63.8, MAP.TIRISFAL_GLADES },
+					{ 77.8, 63.2, MAP.TIRISFAL_GLADES },
+					{ 76.4, 57.4, MAP.TIRISFAL_GLADES },
+					{ 74.6, 59.6, MAP.TIRISFAL_GLADES },
+					{ 74.8, 60.6, MAP.TIRISFAL_GLADES },
+				},
+			}),
+			n(1531, {	-- Lost Soul
+				coords = {
+					{ 48.6, 36.2, MAP.TIRISFAL_GLADES },
+					{ 53.6, 48.6, MAP.TIRISFAL_GLADES },
+				},
+				groups = {
+					i(3322),	-- Wispy Cloak
+				},
+			}),
+			n(1910, {	-- Muad
+				coord = { 35.8, 43.0, MAP.TIRISFAL_GLADES },
+				groups = {
+					i(4302),	-- Small Green Dagger
+				},
+			}),
+			n(10357, {	-- Ressan the Needler
+				coords = {
+					{ 43.6, 67.0, MAP.TIRISFAL_GLADES },
+					{ 47.0, 65.0, MAP.TIRISFAL_GLADES },
+					{ 50.2, 64.4, MAP.TIRISFAL_GLADES },
+					{ 52.4, 63.8, MAP.TIRISFAL_GLADES },
+					{ 55.6, 60.0, MAP.TIRISFAL_GLADES },
+					{ 56.2, 63.6, MAP.TIRISFAL_GLADES },
+				},
+			}),
+			n(10359, {	-- Sri'skulk
+				coords = {
+					{ 83.0, 55.8, MAP.TIRISFAL_GLADES },
+					{ 85.2, 49.4, MAP.TIRISFAL_GLADES },
+					{ 89.4, 40.2, MAP.TIRISFAL_GLADES },
+					{ 90.2, 47.6, MAP.TIRISFAL_GLADES },
+					{ 88.8, 53.6, MAP.TIRISFAL_GLADES },
+				},
+			}),
+			n(1533, {	-- Tormented Spirit
+				coord = { 46.0, 35.4, MAP.TIRISFAL_GLADES },
+				groups = {
+					i(3323),	-- Ghostly Bracers
+				},
+			}),
+		}),
+		n(RIDING_TRAINER, {
+			n(4773, {	-- Velma Warnam <Undead Horse Riding Instructor>
+				coord = { 60.0, 52.6, MAP.TIRISFAL_GLADES },
+				races = { ORC, TROLL, UNDEAD },
+
+				-- Available to Undead without faction requirements.
+				minReputation = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
+				OnInit = [[function(t)
+					if _.RaceIndex == ]] .. UNDEAD .. [[ then
+						t.minReputation = nil;
+					end
+					return t;
+				end]],
+				groups = {
+					recipe(10906, {	-- Undead Horsemanship
+						cost = 200000,
+						lvl = 40,
 					}),
 				},
 			}),
-			q(99144, {	-- Seeking Refuge
-				qg = 275954,	-- Bareth Dawnstone
-				coord = { 32.0, 46.2, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				lvl = 5,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Escort Bareth Dawnstone out of Crusader's Outpost
-						provider = { "n", 275954 },	-- Bareth Dawnstone
-					}),
-				},
-			}),
-			q(86784, {	-- Sticks and Bones
-				qg = 1742,	-- Deathguard Bartholomew
-				coord = { 58.3, 50.4, MAP.TIRISFAL_GLADES },
+		}),
+		n(VENDORS, {
+			n(2118, {	-- Abigail Shiel <Trade Supplies>
+				coord = { 61.0, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
-				lvl = 4,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279937,	-- Collecting Basket (QI!)
 				groups = {
-					objective(1, {	-- Dry Branch
-						providers = {
-							{ "i", 279991 },	-- Dry Branch (QI!)
-							{ "o", 671154 },	-- Dry Branch
-						},
-					}),
-					objective(2, {	-- Deliver Dry Branches to Eleanor Shackleton
-						provider = { "n", 265812 },	-- Eleanor Shackleton <Adventurer>
-						coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
-					}),
-					i(279939),	-- Collecting Basket
+					i(12226),	-- Recipe: Crispy Bat Wing (RECIPE!)
 				},
 			}),
-			q(95314, {	-- That Shadowvale Green Elixir
-				qg = 2132,	-- Carolai Anise <Journeyman Alchemist>
-				coord = { 59.4, 52.3, MAP.TIRISFAL_GLADES },
+			n(11057, {	-- Apothecary Dithers
+				coord = { 83.2, 69.2, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
-				lvl = 7,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- Bottle of Whispering Elixir
-						providers = {
-							{ "i", 268801 },	-- Bottle of Whispering Elixir (QI!)
-							{ "o", 630871 },	-- Bottle
-							{ "o", 630885 },	-- Bottle
-						},
-					}),
+					i(13320),	-- Arcane Quickener
+					i(13370),	-- Vitreous Focuser
 				},
 			}),
-			q(96895, {	-- The Argent Emissary
-				qg = 1738,	-- Deathguard Terrence
-				coord = { 61.4, 53.4, MAP.TIRISFAL_GLADES },
+			n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
+				coord = { 83.2, 68.2, MAP.TIRISFAL_GLADES },
+				sym = {{ "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
+			}),
+			n(2116, {	-- Blacksmith Rand <Apprentice Armorer>
+				coord = { 32.4, 66.2, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(96897, {	-- The Cult of the Damned
-				qg = 267009,	-- Hadric Harlson <The Argent Dawn>
-				coord = { 65.8, 61.0, MAP.TIRISFAL_GLADES },
-				races = { ORC, UNDEAD, TROLL },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- 0/8 Dark Neophyte slain
-						provider = { "n", 267006 },	-- Dark Neophyte <Cult of the Damned>
-						coord = { 68.8, 64.6, MAP.TIRISFAL_GLADES },
-					}),
-					objective(2, {	-- 0/8 Dark Enforcer slain
-						provider = { "n", 275437 },	-- Dark Enforcer <Cult of the Damned>
-						coord = { 68.0, 64.6, MAP.TIRISFAL_GLADES },
-					}),
+					i(2386),	-- Rusted Chain Vest
+					i(2387),	-- Rusted Chain Belt
+					i(2388),	-- Rusted Chain Leggings
+					i(2389),	-- Rusted Chain Boots
+					i(2390),	-- Rusted Chain Bracers
+					i(2391),	-- Rusted Chain Gloves
+					i(17183),	-- Dented Buckler
+					i(1200),	-- Large Wooden Shield
 				},
 			}),
-			q(96607, {	-- The Great Outdoors [Tirisfal Glades]
-				sourceQuest = 96656,	-- The Adventurer [Tirisfal Glades]
-				altQuests = {
-					95998,	-- The Great Outdoors [Elwynn Forest]
-					96101,	-- The Great Outdoors [Zephras Isle]
-					96604,	-- The Great Outdoors [Durotar]
-					96605,	-- The Great Outdoors [Mulgore]
-					96606,	-- The Great Outdoors [Teldrassil]
-					96608,	-- The Great Outdoors [Dun Morogh]
-				},
-				qg = 265812,	-- Eleanor Shackleton <Adventurer>
-				coord = { 57.3, 55.5, MAP.TIRISFAL_GLADES },
+			n(3522, {	-- Constance Brisboise <Apprentice Clothier>
+				coord = { 52.6, 55.6, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
-				lvl = 4,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(99153, {	-- The One That Got Away
-				qg = 259190,	-- Ephram Barbaro <Stable Master>
-				coord = { 20.2, 46.4, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- 0/1 Glowing Crystal Fragment
-						providers = {
-							{ "i", 286269 },	-- Glowing Crystal Fragment (QI!)
-							{ "o", 694895 },	-- Glowing Crystal Fragment
-						},
+					i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
+						isLimited = true,
 					}),
 				},
 			}),
-			q(91317, {	-- The Tarnished
-				qg = 246378,	-- Danitha Morr
-				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				classes = { PALADIN },
-				lvl = 9,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Tarnished Drudge
-						provider = { "n", 259434 },	-- Tarnished Drudge
-					}),
-					objective(2, {	-- Tarnished Zealot
-						provider = { "n", 259433 },	-- Tarnished Zealot
-					}),
-					objective(3, {	-- Rudolph Gelhardt's Head
-						provider = { "i", 270435 },	-- Rudolph Gelhardt's Head (QI!)
-					}),
-				},
-			}),
-			q(99142, {	-- Tomb Weed
-				qg = 10665,	-- Junior Apothecary Holland <Royal Apothecary Society>
-				coord = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				lvl = 5,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- 0/5 Tomb Weed
-						provider = { "i", 286204 },	-- Tomb Weed (QI!)
-					}),
-				},
-			}),
-			q(95328, {	-- Whispering Horror Residue
-				provider = { "i", 268812 },	-- Whispering Horror Residue (QS!)
-				cr = 260396,	-- Whispering Horror
-				coord = { 8.6, 60.2, MAP.TIRISFAL_GLADES },
+			n(3550, {	-- Martine Tramblay <Fishing Supplies>
+				coord = { 65.8, 59.6, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
-				lvl = 7,
+				groups = {
+					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
+				},
+			}),
+			n(3548, {	-- Selina Weston <Alchemy & Herbalism Supplies>
+				coord = { 61.8, 50.0, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+			}),
+			n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
+				coord = { 83.2, 69.6, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				groups = {
+					i(15741, {	-- Pattern: Stormshroud Pants (RECIPE!)
+						isLimited = true,
+					}),
+					i(15725, {	-- Pattern: Wicked Leather Gauntlets (RECIPE!)
+						isLimited = true,
+					}),
+				},
+			}),
+			n(4731, {	-- Zachariah Post <Undead Horse Merchant>
+				coord = { 59.8, 52.6, MAP.TIRISFAL_GLADES },
+				-- Available to Undead without faction requirements.
+				minReputation = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
+				OnInit = [[function(t)
+					if _.RaceIndex == ]] .. UNDEAD .. [[ then
+						t.minReputation = nil;
+					end
+					return t;
+				end]],
+				races = HORDE_ONLY,
+				groups = {
+					i(13332),	-- Blue Skeletal Horse (MOUNT!)
+					i(13333),	-- Brown Skeletal Horse (MOUNT!)
+					i(13334),	-- Green Skeletal Warhorse (MOUNT!)
+					i(18791),	-- Purple Skeletal Warhorse (MOUNT!)
+					i(13331),	-- Red Skeletal Horse (MOUNT!)
+				},
+			}),
+		}),
+		n(ZONE_DROPS, {
+			i(2839, {	-- A Letter to Yvette
+				crs = {
+					1523,	-- Cracked Skull Soldier
+					1522,	-- Darkeye Bonecaster
+					1520,	-- Rattlecage Soldier
+				},
+			}),
+			-- Added to Dargol in Tirisfall via Pickpocket (not trolling)
+			i(3330, {	-- Dargol's Hauberk
+				coord = { 52.6, 26.2, MAP.TIRISFAL_GLADES },
+				cr = 1658,	-- Captain Dargol
+			}),
+			i(3335, {	-- Farmer's Broom
+				coords = {
+					{ 40.6, 51.8, MAP.TIRISFAL_GLADES },
+					{ 36.8, 51.6, MAP.TIRISFAL_GLADES },
+				},
+				cr = 1935,	-- Tirisfal Farmhand
+			}),
+			i(3334, {	-- Farmer's Shovel
+				coords = {
+					{ 38.2, 50.0, MAP.TIRISFAL_GLADES },
+					{ 34.6, 51.6, MAP.TIRISFAL_GLADES },
+					{ 44.6, 33.2, MAP.TIRISFAL_GLADES },
+					{ 36.2, 50.4, MAP.TIRISFAL_GLADES },
+					{ 40.6, 51.8, MAP.TIRISFAL_GLADES },
+					{ 34.4, 49.0, MAP.TIRISFAL_GLADES },
+				},
+				crs = {
+					1936,	-- Farmer Solliden
+					1934,	-- Tirisfal Farmer
+				},
+			}),
+			i(255007, {	-- Golem Isospring
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				coord = { 54.0, 57.4, MAP.TIRISFAL_GLADES },
+				crs = {
+					276061,	-- Decrepit Harvester
+				},
+			}),
+			i(3321, {	-- Gray Fur Booties
+				coords = {
+					{ 86.0, 38.2, MAP.TIRISFAL_GLADES },
+					{ 80.4, 42.2, MAP.TIRISFAL_GLADES },
+					{ 79.8, 49.0, MAP.TIRISFAL_GLADES },
+					{ 82.8, 51.0, MAP.TIRISFAL_GLADES },
+					{ 88.2, 49.6, MAP.TIRISFAL_GLADES },
+					{ 89.6, 43.6, MAP.TIRISFAL_GLADES },
+					{ 86.0, 46.2, MAP.TIRISFAL_GLADES },
+				},
+				cr = 1549,	-- Ravenous Darkhound
+			}),
+			i(3331, {	-- Melrache's Cape
+				coord = { 79.4, 26.0, MAP.TIRISFAL_GLADES },
+				cr = 1665,	-- Captain Melrache
+				-- This item was given an description about how the NPC it drops from is friendly to the Alliance in pre-cata iterations of the game.
+				-- That information is incorrect unless someone can point to a specific patch where it would have merit. //Danny Donkey
+			}),
+			i(3332, {	-- Perrine's Boots
+				coord = { 51.6, 67.6, MAP.TIRISFAL_GLADES },
+				cr = 1662,	-- Captain Perrine
+			}),
+			i(277470, {	-- Schematic: Harvester Override Signalcaster (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 276061,	-- Decrepit Harvester
+				coord = { 53.8, 56.2, MAP.TIRISFAL_GLADES },
+			}),
+			i(3319, {	-- Short Sabre
+				coords = {
+					{ 78.6, 60.6, MAP.TIRISFAL_GLADES },
+					{ 75.0, 61.6, MAP.TIRISFAL_GLADES },
+				},
+				cr = 1529,	-- Bleeding Horror
+			}),
+			i(3328, {	-- Spider Web Robe
+				coord = { 86.6, 53.8, MAP.TIRISFAL_GLADES },
+				cr = 1555,	-- Vicious Night Web Spider
+			}),
+			i(3329, {	-- Spiked Wooden Plank
+				coords = {
+					{ 58.6, 31.0, MAP.TIRISFAL_GLADES },
+					{ 58.8, 31.6, MAP.TIRISFAL_GLADES },
+				},
+				cr = 1753,	-- Maggot Eye
+			}),
+			i(4263, {	-- Standard Issue Shield
+				coords = {
+					{ 79.6, 26.8, MAP.TIRISFAL_GLADES },
+					{ 78.8, 33.0, MAP.TIRISFAL_GLADES },
+					{ 78.4, 36.8, MAP.TIRISFAL_GLADES },
+				},
+				cr = 1660,	-- Scarlet Bodyguard
+			}),
+			i(3325, {	-- Vile Fin Battle Axe
+				coords = {
+					{ 36.6, 38.6, MAP.TIRISFAL_GLADES },
+					{ 34.8, 44.8, MAP.TIRISFAL_GLADES },
+					{ 62.8, 29.6, MAP.TIRISFAL_GLADES },
+					{ 27.8, 38.0, MAP.TIRISFAL_GLADES },
+					{ 27.6, 46.6, MAP.TIRISFAL_GLADES },
+				},
+				cr = 1545,	-- Vile Fin Muckdweller
+			}),
+			i(3327, {	-- Vile Fin Oracle Staff
+				coords = {
+					{ 36.6, 38.6, MAP.TIRISFAL_GLADES },
+					{ 34.8, 44.8, MAP.TIRISFAL_GLADES },
+					{ 62.8, 29.6, MAP.TIRISFAL_GLADES },
+				},
+				cr = 1544,	-- Vile Fin Minor Oracle
+			}),
+			i(3261, {	-- Webbed Cloak
+				coords = {
+					{ 23.8, 58.4, MAP.TIRISFAL_GLADES },
+					{ 86.2, 53.4, MAP.TIRISFAL_GLADES },
+				},
+				crs = {
+					1688,	-- Night Web Matriarch
+					1555,	-- Vicious Night Web Spiders
+				},
 			}),
 		}),
 	},
