@@ -1483,11 +1483,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10955,	-- Morthis Whisperwing
 						["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
-						["timeline"] = { REMOVED_4_0_1 },
-						["cost"] = {
-							{ "i", 22790, 10 },	-- Ancient Lichen
-							{ "i", 22786, 10 },	-- Dreaming Glory
-						},
+						["timeline"] = { ADDED_2_1_0, REMOVED_4_0_1 },
+						["maps"] = { AUCHINDOUN_SETHEKK_HALLS },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
 						["groups"] = {
@@ -1502,6 +1499,12 @@ root(ROOTS.Zones, {
 									{ 65.8, 74.5, ZANGARMARSH },
 									{ 80.9, 77.5, ZANGARMARSH },
 								},
+							}),
+							objective(2, {	-- 0/10 Ancient Lichen
+								["cost"] = {{ "i", 22790, 10 }},	-- Ancient Lichen
+							}),
+							objective(3, {	-- 0/10 Ancient Lichen
+								["cost"] = {{ "i", 22786, 10 }},	-- Dreaming Glory
 							}),
 						},
 					})),

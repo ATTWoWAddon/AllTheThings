@@ -356,7 +356,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10955, {	-- Morthis Whisperwing
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.5, 40.6, MOONGLADE },
-					["timeline"] = { REMOVED_4_0_1 },
+					["maps"] = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						ZANGARMARSH,
+					},
+					["timeline"] = { ADDED_2_1_0, REMOVED_4_0_1 },
+					["description"] = "Requires Learn the artisan riding skill (280%)",
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
