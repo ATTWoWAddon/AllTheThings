@@ -30,7 +30,7 @@ Finally, **assertions** compare the resulting saved fields with the expected val
 
 The [test README](README.md#how-the-tests-connect-to-att-code) shows the loading steps and a runnable fixture example. It also maps the other suites to their production units. For day-to-day commands and failure diagnosis, start there.
 
-In [PR #2673](https://github.com/ATTWoWAddon/AllTheThings/pull/2673), CI automates these existing suites on Ubuntu 26.04 with Lua 5.1. It discovers Lua files recursively, sorts their paths, runs each in a fresh process, continues after failures, and accepts or rejects the run only after all suites finish. That establishes a working execution path for these tests; the broader architecture remains open.
+The workflow proposed in [PR #2673](https://github.com/ATTWoWAddon/AllTheThings/pull/2673) automates these existing suites on Ubuntu 26.04 with Lua 5.1. It discovers Lua files recursively, sorts their paths, runs each in a fresh process, continues after failures, and accepts or rejects the run only after all suites finish. That establishes a working execution path for these tests; the broader architecture remains open.
 
 ## Improve how the code is loaded
 

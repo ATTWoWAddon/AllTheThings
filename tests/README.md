@@ -3,7 +3,8 @@
 These tests run selected ATT code outside World of Warcraft. They read the
 production files from the current checkout, provide the game APIs and saved data
 that the code needs, and check the results. This lets us catch regressions in
-names, tooltips, identifiers, and account synchronization without starting the game.
+names, tooltips, identifiers, profession ranks, and account synchronization without
+starting the game.
 
 The [testing strategy draft](TESTING_STRATEGY_DRAFT.md) walks through one existing
 regression and proposes the next small step. Detailed [framework comparisons and
@@ -59,8 +60,10 @@ The connection works as follows:
    values, saved records, tooltip rows, or calls recorded by the mocks.
 
 The suites load selected regions rather than starting the entire addon.
-`player-names.lua` also executes the complete
+`player-names.lua` and `retail-profession-ranks.lua` also execute the complete
 [WoW API Wrappers.lua](../src/WoW%20API%20Wrappers.lua) file with fixture APIs.
+The profession-rank suite additionally loads the complete
+[Callback.lua](../lib/Callback.lua) scheduler.
 
 ### A concrete example: login data becomes tooltip input
 
@@ -102,12 +105,17 @@ additional services needed by its own units.
 | [character-names.lua](character-names.lua) | The Known By / Completed By functions and shared formatter in [Interface - Information.lua](../src/Settings/Pages/Interface%20-%20Information.lua), plus Summary serialization/deserialization in [Account Management.lua](../src/UI/Windows/Account%20Management.lua). | Local realm suffixes are hidden correctly; foreign realms, surnames, colors, custom text, and quantities survive; Summary updates preserve identity or invalidate its cache as appropriate. |
 | [linked-character-identifiers.lua](linked-character-identifiers.lua) | Identifier helpers, SavedVariables initialization, sync identity, and window `OnLoad` in [Account Management.lua](../src/UI/Windows/Account%20Management.lua); one-time fix registration and execution in [Refresh.lua](../lib/Refresh.lua). | Identifiers are normalized correctly; old caches are cleared once; window loading rebuilds identifiers after identity changes and before AutoSync; collection data survives. |
 | [character-whispers.lua](character-whispers.lua) | Transport, message/event handlers, link-popup callback, and queue progress/cancellation callbacks in [Account Management.lua](../src/UI/Windows/Account%20Management.lua). | Native targets, logical links, chunks, acknowledgements, sender authorization, message-size boundaries, and queue cancellation remain consistent. |
+| [character-tooltip.lua](character-tooltip.lua) | Known By / Completed By / Useful For processors and the shared formatter in [Interface - Information.lua](../src/Settings/Pages/Interface%20-%20Information.lua), ProfessionRanks serialization in [Account Management.lua](../src/UI/Windows/Account%20Management.lua), and SkillDB from [ReferenceDB.lua](../db/Standard/ReferenceDB.lua). | Realm/faction grouping and counts, identity formatting, collection and recipe eligibility across flavor fixtures, and numeric profession-rank round trips including stale-rank removal. |
+| [retail-profession-ranks.lua](retail-profession-ranks.lua) | Complete [API wrappers](../src/WoW%20API%20Wrappers.lua) and [callback scheduler](../lib/Callback.lua), plus rank initialization before the window is created in [Retail/Tradeskills.lua](../src/UI/Windows/Retail/Tradeskills.lua). | Personal base/expansion ranks, foreign profession views, profession removal, coalesced refreshes, timestamps and search-cache invalidation, and modern/legacy/missing API variants. |
 
 The name fixtures provide fake name, realm, class, race, and GUID APIs and count
-calls to them. The tooltip fixtures provide saved characters, collection state,
-item quantities, and localization labels. The identifier fixtures retain saved
-records across simulated logins. The whisper fixtures record chat/Battle.net
-calls and control time and coroutine progress; they do not send network messages.
+calls to them. The tooltip fixtures provide saved characters, grouping settings,
+collection state, recipe metadata, inventory, and localization labels. The
+identifier fixtures retain saved records across simulated logins. The whisper
+fixtures record chat/Battle.net calls and control time and coroutine progress;
+they do not send network messages. The profession-rank fixtures provide fresh
+caches and profession APIs, then manually flush timer callbacks recorded by the
+real scheduler; they do not deliver live game events or load the profession UI.
 
 A pass establishes the checked behavior under those fixture conditions. Live game
 API behavior, server delivery, and rendered in-game UI still need game validation.
@@ -120,20 +128,22 @@ API behavior, server delivery, and rendered in-game UI still need game validatio
 - An assertion failure means the selected code ran but produced a result or side
   effect that did not match the case's expectation. Read the case name and error
   message to find the input and the differing value.
-- `player-names.lua` and `character-names.lua` continue after individual case
-  failures and exit with status 1 after reporting them. The identifier and whisper
-  suites stop at their first failed assertion or error.
+- `player-names.lua`, `character-names.lua`, and `character-tooltip.lua` continue
+  after individual case failures and exit with status 1 after reporting them.
+  The identifier, whisper, and Retail profession-rank suites stop at their first
+  failed assertion or error.
 
 When production code is refactored, check that the extraction still selects the
 intended unit and its required helpers before changing the expected results.
 
 ## How CI runs the suites
 
-[LuaRegression.yml](../.github/workflows/LuaRegression.yml) runs on Ubuntu 26.04
-and explicitly installs Lua 5.1. It starts automatically for matching addon,
-test, and workflow changes in branch pushes and pull requests. Once the workflow
-is on the default branch, it can also be started through **Actions → Lua Regression
-Tests → Run workflow**.
+The workflow proposed in [PR #2673](https://github.com/ATTWoWAddon/AllTheThings/pull/2673),
+[LuaRegression.yml](https://github.com/ATTWoWAddon/AllTheThings/blob/2e8e4f0b963cf3db0027345055e3f74bc47a8af1/.github/workflows/LuaRegression.yml),
+runs on Ubuntu 26.04 and explicitly installs Lua 5.1. It starts automatically for
+matching addon, test, and workflow changes in branch pushes and pull requests.
+Once the workflow is on the default branch, it can also be started through
+**Actions → Lua Regression Tests → Run workflow**.
 
 CI recursively finds every `.lua` file under `tests/`, sorts paths with the `C`
 locale, and runs them **sequentially in separate Lua processes**. A failed suite
