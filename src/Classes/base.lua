@@ -513,6 +513,7 @@ local function CloneClassInstance(object, ignoreChildren)
 		return clone;
 	else
 		-- Clone the object.
+		if app.ProgressionProfile then app.Modules.Progression.CloneSources(object, clone); end
 		for key,value in pairs(object) do
 			clone[key] = value;
 		end
@@ -546,6 +547,7 @@ local function CloneClassInstance(object, ignoreChildren)
 end
 local function CloneObject(object, ignoreChildren)
 	local clone = setmetatable({}, getmetatable(object));
+	if app.ProgressionProfile then app.Modules.Progression.CloneSources(object, clone); end
 	for key,value in pairs(object) do
 		clone[key] = value;
 	end
