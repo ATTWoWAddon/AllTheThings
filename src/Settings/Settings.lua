@@ -104,7 +104,7 @@ settings.RequiredForInsaneMode = {
 	RuneforgeLegendaries = app.GameBuildVersion >= 90000,
 	Titles = true,
 	Toys = true,
-	Transmog = app.GameBuildVersion >= 40000 or app.IsForever,
+	Transmog = app.GameBuildVersion >= 40000 or app.IsForever or app.IsTitanTransmogSupported(),
 	-- Expansion Filters
 	Classic = true,
 	TBC = app.GameBuildVersion >= 20000,
@@ -133,7 +133,7 @@ settings.RequiredForRankedMode = {
 	Reputations = true,
 	Titles = true,
 	Toys = true,
-	Transmog = app.GameBuildVersion >= 40000 or app.IsForever,
+	Transmog = app.GameBuildVersion >= 40000 or app.IsForever or app.IsTitanTransmogSupported(),
 	-- Expansion Filters
 	Classic = true,
 	TBC = app.GameBuildVersion >= 20000,
@@ -158,7 +158,7 @@ settings.RequiredForCoreMode = {
 	Illusions = app.GameBuildVersion >= 70000,
 	Mounts = true,
 	Toys = true,
-	Transmog = app.GameBuildVersion >= 40000 or app.IsForever,
+	Transmog = app.GameBuildVersion >= 40000 or app.IsForever or app.IsTitanTransmogSupported(),
 	-- Expansion Filters
 	Classic = true,
 	TBC = app.GameBuildVersion >= 20000,
@@ -312,7 +312,7 @@ local GeneralSettingsBase = {
 		["Thing:RuneforgeLegendaries"] = app.GameBuildVersion >= 90000,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
-		["Thing:Transmog"] = app.GameBuildVersion >= 40000 or app.IsForever,
+		["Thing:Transmog"] = app.GameBuildVersion >= 40000 or app.IsForever or app.IsTitanTransmogSupported(),
 		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
@@ -516,6 +516,7 @@ local function SetupRawSettings()
 	if not RawSettings.General then RawSettings.General = {} end
 	if not RawSettings.Tooltips then RawSettings.Tooltips = {} end
 	if not RawSettings.Unobtainable then RawSettings.Unobtainable = {} end
+	if app.ProgressionProfile and not RawSettings.ReleasePhases then RawSettings.ReleasePhases = {} end
 	if not RawSettings.Filters then RawSettings.Filters = {} end
 	setmetatable(RawSettings.General, GeneralSettingsBase)
 	setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
@@ -601,6 +602,7 @@ settings.NewProfile = function(self, key)
 			Tooltips = {},
 			Seasonal = {},
 			Unobtainable = {},
+			ReleasePhases = app.ProgressionProfile and {} or nil,
 			Filters = {},
 		}
 		AllTheThingsProfiles.Profiles[key] = raw
@@ -623,6 +625,10 @@ settings.CopyProfile = function(self, key, copyKey)
 				rawcopy(copy.General, raw.General)
 				rawcopy(copy.Tooltips, raw.Tooltips)
 				rawcopy(copy.Unobtainable, raw.Unobtainable)
+			if copy.ReleasePhases then
+				raw.ReleasePhases = {};
+				rawcopy(copy.ReleasePhases, raw.ReleasePhases);
+			end
 				rawcopy(copy.Filters, raw.Filters)
 			end
 		end
@@ -693,7 +699,7 @@ settings.SetupProfiles = function()
 		-- Unobtainable Filters
 		if AllTheThingsSettings.Unobtainable then
 			for k,v in pairs(AllTheThingsSettings.Unobtainable) do
-				default.Unobtainable[k] = v and true or nil;
+				default.Unobtainable[k] = v and true or false;
 			end
 		end
 	end
@@ -1174,10 +1180,34 @@ settings.SetTooltipSetting = function(self, setting, value)
 	self:Refresh();
 end
 settings.GetUnobtainableFilter = function(self, u)
+	local key = u and app.Modules.Progression.GetLegacyKey(u);
+	if key then return self:GetReleasePhaseFilter(key); end
 	return not u or RawSettings.Unobtainable[u];
 end
 settings.SetUnobtainableFilter = function(self, u, value)
+	local key = app.Modules.Progression.GetLegacyKey(u);
+	if key and RawSettings.ReleasePhases then RawSettings.ReleasePhases[key] = nil; end
 	self:SetValue("Unobtainable", u, value)
+	self:UpdateMode(1);
+end
+
+-- Flat namespaced release choices leave existing numeric Unobtainable settings intact.
+settings.GetReleasePhaseFilter = function(self, key)
+	local progression = app.Modules.Progression;
+	local phase = progression.GetPhase(key);
+	if not phase then return false; end
+	local release = RawSettings.ReleasePhases;
+	local value = release and rawget(release, key);
+	if value ~= nil then return value == true; end
+	if phase.legacyU and RawSettings.Unobtainable then
+		value = rawget(RawSettings.Unobtainable, phase.legacyU);
+		if value ~= nil then return value == true; end
+	end
+	return progression.GetDefault(key);
+end
+settings.SetReleasePhaseFilter = function(self, key, value)
+	if not app.Modules.Progression.GetPhase(key) then return; end
+	self:SetValue("ReleasePhases", key, value);
 	self:UpdateMode(1);
 end
 
@@ -1895,6 +1925,7 @@ settings.UpdateMode = function(self, doRefresh)
 		end
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
+	filterSet.ReleasePhase(app.ProgressionProfile ~= nil and not self:Get("DebugMode"));
 	app.HandleEvent("OnUpdateModeFilters", self)
 
 	if self:Get("Show:CompletedGroups") then

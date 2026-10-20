@@ -55,6 +55,7 @@ lib\Callback.lua
 src\base.lua
 src\Events.lua
 src\Commands.lua
+src\Modules\Progression.lua
 src\DataHandling.lua
 
 # Not really a lib concept...

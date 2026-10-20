@@ -771,6 +771,7 @@ local MergeSkipFields = {
 	-- 1 -> only when cloning
 	e = 1,
 	u = 1,
+	releasePhases = 1,
 	c = 1,
 	up = 1,
 	pb = 1,
@@ -913,6 +914,7 @@ end
 -- Additionally can specify that the object is being cloned so as to skip special merge restrictions
 local function MergeProperties(g, t, noReplace, clone)
 	if not g or not t then return end
+	if app.ProgressionProfile then app.Modules.Progression.MergeSources(g, t); end
 	if g ~= t then
 		g.__merge = t.__merge or t
 	end
