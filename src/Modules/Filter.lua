@@ -156,10 +156,18 @@ api.Filters.InGame = FilterInGame;
 RawCharacterFilters.InGame = api.Filters.InGame
 
 -- Unobtainable
-DefineToggleFilter("Unobtainable", AccountFilters,
-function(item)
+local function FilterUnobtainable(item)
 	local u = item.u
+	if u and app.ProgressionProfile then return app.Settings:GetUnobtainableFilter(u); end
 	return not u or SettingsUnobtainable[u];
+end
+DefineToggleFilter("Unobtainable", AccountFilters, function(item)
+	if app.Modules.Progression.HasControlledSources(item) then return true; end
+	return FilterUnobtainable(item);
+end);
+DefineToggleFilter("ReleasePhase", AccountFilters, function(item)
+	return app.Modules.Progression.Filter(item, AccountFilters.Unobtainable and FilterUnobtainable,
+		AccountFilters.Event and app.Modules.Events.FilterIsEventActive);
 end);
 
 -- Phase (shares the Unobtainable settings container, keyed by phase ID)
@@ -245,7 +253,10 @@ end)
 
 -- Event
 -- Filters defined in other Modules... maybe link them dynamically somehow instead
-DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
+DefineToggleFilter("Event", AccountFilters, function(item)
+	if app.Modules.Progression.HasControlledSources(item) then return true; end
+	return app.Modules.Events.FilterIsEventActive(item);
+end);
 
 -- ItemUnbound
 ---@type function
@@ -686,9 +697,10 @@ app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFil
 api.Filters.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter
 local function RecursiveUnobtainableFilter(group)
 	local Unobtainable, Phase, Event = AccountFilters.Unobtainable or NoFilter, AccountFilters.Phase or NoFilter, AccountFilters.Event or NoFilter
+	local ReleasePhase = AccountFilters.ReleasePhase or NoFilter
 	while group do
 		---@diagnostic disable-next-line: redundant-parameter
-		if not (Unobtainable(group) and Phase(group) and Event(group)) then return; end
+		if not (Unobtainable(group) and Phase(group) and Event(group) and ReleasePhase(group)) then return; end
 		group = group.parent;
 	end
 	return true;

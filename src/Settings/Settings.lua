@@ -1934,6 +1934,7 @@ settings.UpdateMode = function(self, doRefresh)
 		end
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
+	filterSet.ReleasePhase(app.ProgressionProfile ~= nil and not self:Get("DebugMode"));
 	app.HandleEvent("OnUpdateModeFilters", self)
 
 	if self:Get("Show:CompletedGroups") then
