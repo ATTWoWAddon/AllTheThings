@@ -1,19 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 --[=[
 local TOME_OF_POLYMORPH_TURTLE = i(22739);
-local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
-	["timeline"] = { ADDED_3_2_0 },
-	["cr"] = 14821,	-- Razzashi Raptor
-});
 
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR, {
-	inst(76, bubbleDownSelf({ ["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 } }, {	-- Zul'Gurub
+root(ROOTS.Instances, {
+	inst(76, {	-- Zul'Gurub
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
-		-- #if BEFORE WRATH
 		zoneTextAreaID = 19,	-- Zul'Gurub
-		-- #endif
 		["mapID"] = MAP.ZULGURUB,
 		["isRaid"] = true,
 		["lvl"] = 58,
@@ -30,9 +25,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				}),
 			}),
 			n(QUESTS,
-			-- #if SEASON_OF_DISCOVERY
-			bubbleDown({ ["timeline"] = { REMOVED_1_15_4 } },
-			-- #endif
 			{
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID }, ["lvl"] = 58 }, {
 					q(8192, {	-- Animist's Caress [Druid]
@@ -668,27 +660,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						i(19949),	-- Zandalarian Hero Medallion
 					},
 				}),
-				applyclassicphase(PHASE_SIX, q(9210, {	-- The Savage Guard - Arcanum of Focus
+				 q(9210, {	-- The Savage Guard - Arcanum of Focus
 					["qg"] = 15042,	-- Zanza the Restless
 					["cost"] = { { "i", 18330, 1 } },	-- Arcanum of Focus
 					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = { i(22635) },	-- Savage Guard
-				})),
-				applyclassicphase(PHASE_SIX, q(9208, {	-- The Savage Guard - Arcanum of Protection
+				}),
+				 q(9208, {	-- The Savage Guard - Arcanum of Protection
 					["qg"] = 15042,	-- Zanza the Restless
 					["cost"] = { { "i", 18331, 1 } },	-- Arcanum of Protection
 					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = { i(22635) },	-- Savage Guard
-				})),
-				applyclassicphase(PHASE_SIX, q(9209, {	-- The Savage Guard - Arcanum of Rapidity
+				}),
+				 q(9209, {	-- The Savage Guard - Arcanum of Rapidity
 					["qg"] = 15042,	-- Zanza the Restless
 					["cost"] = { { "i", 18329, 1 } },	-- Arcanum of Rapidity
 					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = { i(22635) },	-- Savage Guard
-				})),
+				}),
 				q(8243, {	-- Zanza's Potent Potables
 					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, MAP.STRANGLETHORN_VALE },
@@ -715,21 +707,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					["groups"] = { i(19858) },	-- Zandalar Honor Token
 				}),
 			}
-			-- #if SEASON_OF_DISCOVERY
-			)
-			-- #endif
 			),
 			n(VENDORS, {
 				n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
-						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil (RECIPE!)
-						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(232610, {	-- Formula: Magnificent Trollshine
-							["timeline"] = { ADDED_1_15_5 },
-						})),
-						-- #endif
+						 i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
+						 i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
 						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
 						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
 						i(19766),	-- Pattern: Bloodvine Boots (RECIPE!)
@@ -754,11 +738,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #if BEFORE 4.0.3
 				i(12662, {	-- Demonic Rune
 					["cr"] = 15111,	-- Mad Servant
 				}),
-				-- #endif
 				i(20263),	-- Gurubashi Helm
 				i(19908),	-- Sceptre of Smiting
 				i(20261),	-- Shadow Panther Hide Belt
@@ -783,9 +765,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(19702),	-- Vilebranch Coin
 				i(19703),	-- Witherbark Coin
 				i(19698),	-- Zulian Coin
-				-- #if BEFORE CATA
-				RAZZASHI_HATCHLING,
-				-- #endif
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(22721, {	-- Band of Servitude
@@ -1016,29 +995,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					["cost"] = { { "i", 19727, 1 } },	-- Blood Scythe
 				}),
 				o(180168, {	-- Dreamfoil (Zul'Gurub)
-					-- #if BEFORE 6.0.0
 					["learnedAt"] = 270,
-					-- #endif
 				}),
 				o(180167, {	-- Golden Sansam (Zul'Gurub)
-					-- #if BEFORE 6.0.0
 					["learnedAt"] = 260,
-					-- #endif
 				}),
 				o(180166, {	-- Mountain Silversage (Zul'Gurub)
-					-- #if BEFORE 6.0.0
 					["learnedAt"] = 280,
-					-- #endif
 				}),
 				o(180165, {	-- Purple Lotus (Zul'Gurub)
-					-- #if BEFORE 6.0.0
 					["learnedAt"] = 210,
-					-- #endif
 				}),
 				o(180164, {	-- Sungrass (Zul'Gurub)
-					-- #if BEFORE 6.0.0
 					["learnedAt"] = 230,
-					-- #endif
 				}),
 			}),
 			prof(MINING, {
@@ -1061,10 +1030,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
-			d(DIFFICULTY.LEGACY_RAID.PLAYER20, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
-			-- #endif
 			o(180229, {	-- Jinxed Hoodoo Pile
 				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
 				["groups"] = {
@@ -1093,7 +1058,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(19920),	-- Primalist's Band
 			}),
 			n(14507, {	-- High Priest Venoxis
-				applyclassicphase(PHASE_FIVE, i(22216)),	-- Venoxis's Venom Sac
+				 i(22216),	-- Venoxis's Venom Sac
 				i(19903),	-- Fang of Venoxis
 				i(19900),	-- Zulian Stone Axe
 				i(19907),	-- Zulian Tigerhide Cloak
@@ -1112,11 +1077,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			n(11382, {	-- Bloodlord Mandokir
 				ach(881, {	-- Swift Razzashi Raptor
 					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
-					["timeline"] = { REMOVED_4_0_3 },
 					["filterID"] = MOUNTS,
 				}),
 				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
-					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(19867),	-- Bloodlord's Defender
 				i(19874),	-- Halberd of Smiting
@@ -1252,11 +1215,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			n(14509, {	-- High Priest Thekal
 				ach(880, {	-- Swift Zulian Tiger
 					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
-					["timeline"] = { REMOVED_4_0_3 },
 					["filterID"] = MOUNTS,
 				}),
 				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
-					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				i(19896),	-- Thekal's Grasp
 				i(19901),	-- Zulian Slicer
@@ -1274,9 +1235,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
 				["groups"] = {
-					ach(560, {	-- Deadliest Catch
-						["timeline"] = { ADDED_3_0_2, REMOVED_4_1_0 },
-					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
@@ -1329,10 +1287,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(19855),	-- Bloodsoaked Legplates
 			}),
 		},
-	})),
-})));
+	}),
+});
 
 -- The tome was added to Cataclysm Fishing Pools after being removed from ZG.
 TOME_OF_POLYMORPH_TURTLE.timeline = nil;
-RAZZASHI_HATCHLING.u = nil;
 --]=]
