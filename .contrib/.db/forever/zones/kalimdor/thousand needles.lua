@@ -783,40 +783,6 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					}),
 				},
 			}),
-			q(9431, {	-- A Different Approach
-				qg = 17093,	-- Magistrix Elosai
-				coord = { 46.0, 50.4, MAP.THOUSAND_NEEDLES },
-				races = HORDE_ONLY,
-				lvl = 24,
-				groups = {
-					objective(1, {	-- 0/2 Purifying Earth
-						provider = { "i", 23643 },	-- Purifying Earth
-						cr = 4120,	-- Thundering Boulderkin
-					}),
-				},
-			}),
-			q(9433, {	-- A Dip in the Moonwell
-				sourceQuest = 9431,	-- A Different Approach
-				qg = 10941,	-- Wizlo Bearingshiner
-				coord = { 21.4, 32.4, MAP.THOUSAND_NEEDLES },
-				races = HORDE_ONLY,
-				lvl = 24,
-				groups = {
-					objective(1, {	-- 0/1 Thalanaar Moonwell Water
-						provider = { "i", 23670 },	-- Thalanaar Moonwell Water
-						cost = { { "i", 23675, 1 } },	-- Robotron Control Unit
-						coord = { 9.45, 18.71, MAP.THOUSAND_NEEDLES },
-					}),
-				},
-			}),
-			q(9434, {	-- Testing the Tonic
-				sourceQuest = 9433,	-- A Dip in the Moonwell
-				qg = 10941,	-- Wizlo Bearingshiner
-				qi = 23644,	-- Crate of Reagents
-				coord = { 21.4, 32.4, MAP.THOUSAND_NEEDLES },
-				races = HORDE_ONLY,
-				lvl = 24,
-			}),
 			q(98070, {	-- Stop the Screeching
 				qg = 4877,	-- Jandia
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },

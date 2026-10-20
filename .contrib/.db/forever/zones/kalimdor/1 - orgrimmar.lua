@@ -1896,20 +1896,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(850),	-- Chainmail Gloves
 					i(848),	-- Chainmail Pants
 					i(2451),	-- Crested Heater Shield
-					i(62260),	-- Grunts Chain Belt
-					i(62261),	-- Grunts Chain Boots
-					i(62262),	-- Grunts Chain Bracers
-					i(62266),	-- Grunts Chain Circlet
-					i(62263),	-- Grunts Chain Gloves
-					i(62264),	-- Grunts Chain Leggings
-					i(62265),	-- Grunts Chain Vest
-					i(62253),	-- Grunts Plate Armor
-					i(62254),	-- Grunts Plate Belt
-					i(62255),	-- Grunts Plate Boots
-					i(62256),	-- Grunts Plate Bracers
-					i(62257),	-- Grunts Plate Gloves
-					i(62259),	-- Grunts Plate Helm
-					i(62258),	-- Grunts Plate Leggings
 					i(2448),	-- Heavy Pavise
 					i(2446),	-- Kite Shield
 					i(2392),	-- Light Mail Armor

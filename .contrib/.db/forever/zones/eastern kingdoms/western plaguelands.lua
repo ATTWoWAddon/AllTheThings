@@ -384,19 +384,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				repeatable = true,
 				lvl = 50,
 			}),
-			q(9444, {	-- Defiling Uther's Tomb
-				sourceQuest = 9443,	-- The So-Called Mark of the Lightbringer
-				qg = 17099,	-- Mehlar Dawnblade
-				coord = { 26.6, 58.5, MAP.WESTERN_PLAGUELANDS },
-				races = HORDE_ONLY,
-				lvl = 55,
-				groups = {
-					objective(1, {	-- 0/1 Uther's Tomb Defiled
-						provider = { "i", 23691 },	-- Corrupted Mark of the Lightbringer
-						coord = { 52.1, 83.5, MAP.WESTERN_PLAGUELANDS },
-					}),
-				},
-			}),
 			q(8414, {	-- Dispelling Evil
 				sourceQuest = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 				qg = 10838,	-- Commander Ashlam Valorfist
@@ -832,21 +819,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				races = HORDE_ONLY,
 				lvl = 50,
 			}),
-			q(9474, {	-- The Mark of the Lightbringer
-				qg = 17238,	-- Anchorite Truuen
-				coord = { 42.9, 84.5, MAP.WESTERN_PLAGUELANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 55,
-				groups = {
-					objective(1, {	-- 0/1 Mark of the Lightbringer
-						providers = {
-							{ "i",  23661 },	-- Mark of the Lightbringer
-							{ "o", 181629 },	-- Holy Coffer
-						},
-						coord = { 53.8, 24.4, MAP.WESTERN_PLAGUELANDS },
-					}),
-				},
-			}),
 			{	-- The Scourge Cauldrons
 				allianceQuestData = q(5215, {	-- The Scourge Cauldrons [A]
 					sourceQuest = 5092,	-- Clear the Way
@@ -860,21 +832,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				lvl = 50,
 			},
-			q(9443, {	-- The So-Called Mark of the Lightbringer
-				qg = 17099,	-- Mehlar Dawnblade
-				coord = { 26.6, 58.5, MAP.WESTERN_PLAGUELANDS },
-				races = HORDE_ONLY,
-				lvl = 55,
-				groups = {
-					objective(1, {	-- 0/1 Mark of the Lightbringer
-						providers = {
-							{ "i",  23661 },	-- Mark of the Lightbringer
-							{ "o", 181629 },	-- Holy Coffer
-						},
-						coord = { 53.8, 24.4, MAP.WESTERN_PLAGUELANDS },
-					}),
-				},
-			}),
 			q(4984, {	-- The Wildlife Suffers Too (1/2)
 				qg = 10739,	-- Mulgris Deepriver
 				coord = { 53.6, 64.6, MAP.WESTERN_PLAGUELANDS },

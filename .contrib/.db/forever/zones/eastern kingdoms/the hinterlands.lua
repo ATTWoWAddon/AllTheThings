@@ -71,22 +71,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			}),
 		}),
 		n(QUESTS, {
-			q(9470, {	-- A Gesture of Goodwill
-				qg = 17223,	-- Ambassador Rualeth
-				coord = { 15.1, 47.2, MAP.THE_HINTERLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 41,
-				groups = {
-					objective(1, {	-- 0/1 Witch Doctor Mai'jin slain
-						provider = { "n", 17235 },	-- Witch Doctor Mai'jin
-						coord = { 24.6, 65.4, MAP.THE_HINTERLANDS },
-					}),
-					objective(2, {	-- 0/1 Tcha'kaz slain
-						provider = { "n", 17236 },	-- Tcha'kaz
-						coord = { 24.8, 65.6, MAP.THE_HINTERLANDS },
-					}),
-				},
-			}),
 			q(77, {	-- A Sticky Situation
 				sourceQuest = 650,	-- Ripple Recovery (2/2)
 				qg = 7801,	-- Gilveradin Sunchaser
@@ -134,7 +118,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 37,
 				groups = {
 					i(11474, {	-- Sprite Darter Egg (PET!)
-						timeline = { ADDED_1_11_1 },
 						races = ALLIANCE_ONLY,
 					}),
 				},
@@ -177,12 +160,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					}),
 					i(19118),	-- Nature's Breath
 				},
-			}),
-			q(9469, {	-- Featherbeard's Endorsement
-				qg = 17223,	-- Ambassador Rualeth
-				coord = { 15.1, 47.2, MAP.THE_HINTERLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 42,
 			}),
 			q(485, {	-- Find OOX-09/HL!
 				description = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
@@ -238,13 +215,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 						provider = { "n", 2929 },	-- Savage Owlbeast
 					}),
 				},
-			}),
-			q(9476, {	-- In Pursuit of Featherbeard
-				sourceQuest = 9469,	-- Featherbeard's Endorsement
-				provider = { "o", 181649 },	-- Featherbeard's Journal
-				coord = { 13.4, 55.2, MAP.THE_HINTERLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 42,
 			}),
 			q(7862, {	-- Job Opening: Guard Captain of Revantusk Village
 				provider = { "o", 179913 },	-- Call to Arms!
@@ -306,45 +276,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					}),
 					objective(4, {	-- 0/(15 / 2 (Wrath)) Highvale Marksman slain
 						provider = { "n", 2693 },	-- Highvale Marksman
-					}),
-				},
-			}),
-			q(9471, {	-- Preying on the Predators
-				qg = 17223,	-- Ambassador Rualeth
-				coord = { 15.1, 47.2, MAP.THE_HINTERLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 39,
-				groups = {
-					objective(1, {	-- 0/10 Mangy Silvermane slain
-						provider = { "n", 2923 },	-- Mangy Silvermane
-					}),
-					objective(2, {	-- 0/10 Silvermane Wolf slain
-						provider = { "n", 2924 },	-- Silvermane Wolf
-					}),
-				},
-			}),
-			q(9475, {	-- Reclaiming the Eggs
-				sourceQuest = 9476,	-- In Pursuit of Featherbeard
-				providers = {
-					{ "o", 181643 },	-- Featherbeard's Remains
-					{ "i",  23695 },	-- Featherbeard's Map
-				},
-				coord = { 37.1, 71.5, MAP.THE_HINTERLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 42,
-				groups = {
-					objective(1, {	-- 0/5 Gryphon Egg
-						providers = {
-							{ "i",  23694 },	-- Gryphon Egg
-							{ "o", 181645 },	-- Gryphon Egg
-						},
-						coords = {
-							{ 39.9, 66.0, MAP.THE_HINTERLANDS },
-							{ 36.7, 71.2, MAP.THE_HINTERLANDS },
-							{ 35.9, 72.7, MAP.THE_HINTERLANDS },
-							{ 34.2, 72.8, MAP.THE_HINTERLANDS },
-							{ 33.7, 75.0, MAP.THE_HINTERLANDS },
-						},
 					}),
 				},
 			}),

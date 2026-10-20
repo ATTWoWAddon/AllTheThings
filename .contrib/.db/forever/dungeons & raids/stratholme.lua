@@ -58,9 +58,6 @@ root(ROOTS.Instances, {
 		["lvl"] =
 			48,
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(646),	-- Stratholme
-			}),
 			n(QUESTS, {
 				q(5263, {	-- Above and Beyond
 					["sourceQuest"] = 5262,	-- The Truth Comes Crashing Down
@@ -653,7 +650,7 @@ root(ROOTS.Instances, {
 							{ "i", 22057 },	-- Brazier of Invocation
 							{ "o", 181083 },	-- Sothos and Jarien's Heirlooms
 						},
-						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								["questID"] = 8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
@@ -823,10 +820,6 @@ root(ROOTS.Instances, {
 						},
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
-							ach(729, {	-- Deathcharger's Reins
-								["provider"] = { "i", 13335 },	-- Rivendare's Deathcharger (MOUNT!)
-								["f"] = MOUNTS,
-							}),
 							i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 							i(13505, {	-- Runeblade of Baron Rivendare
 							}),

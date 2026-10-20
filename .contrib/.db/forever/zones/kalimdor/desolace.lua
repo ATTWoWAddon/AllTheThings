@@ -792,7 +792,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 						},
 					}),
 					i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
-						timeline = { ADDED_1_11_1 },
 					}),
 					i(3464),	-- Feathered Arrow
 					i(3465),	-- Exploding Shot

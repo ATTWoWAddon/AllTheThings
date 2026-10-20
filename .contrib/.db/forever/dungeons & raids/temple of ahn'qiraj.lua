@@ -39,10 +39,6 @@ root(ROOTS.Instances, {
 				achWithRep(956, FACTION_BROOD_OF_NOZDORMU, {	-- Brood of Nozdormu
 					["maps"] = { CAVERNS_OF_TIME, MAP.SILITHUS },
 				}),
-				ach(424, {	-- Why? Because It's Red
-					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
-					["filterID"] = MOUNTS,
-				}),
 			}),
 			n(FACTIONS, {
 				faction(FACTION_BROOD_OF_NOZDORMU, {	-- Brood of Nozdormu
@@ -1212,7 +1208,6 @@ root(ROOTS.Instances, {
 				i(21230),	-- Ancient Qiraji Artifact
 				i(21762, {	-- Greater Scarab Coffer Key
 					["timeline"] = {
-						ADDED_1_13_0,
 						DELETED_4_2_2
 					},
 				}),
@@ -1451,10 +1446,6 @@ root(ROOTS.Instances, {
 			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
 				["groups"] = {
-					ach(687),	-- Temple of Ahn'Qiraj
-					ach(15334, {	-- Survivor of the Old God (Season of Mastery)
-						["timeline"] = { ADDED_1_14_2, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
-					}),
 					i(21221),	-- Eye of C'Thun
 					 {
 						["itemID"] = 22734,	-- Base of Atiesh

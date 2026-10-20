@@ -669,7 +669,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ 19.4, 36.6, MAP.SEARING_GORGE },
 					{ 25.4, 25.4, MAP.SEARING_GORGE },
 				},
-				timeline = { ADDED_1_11_1 },
 				cr = 5861,	-- Twilight Fire Guard
 			}),
 			i(21547, {	-- Recipe: Elixir of Holy Power (RECIPE!)
@@ -681,7 +680,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ 63.6, 59.0, MAP.SEARING_GORGE },
 					{ 65.4, 65.6, MAP.SEARING_GORGE },
 				},
-				timeline = { ADDED_1_11_1 },
 				crs = {
 					5844,	-- Dark Iron Slaver
 					5846,	-- Dark Iron Taskmaster

@@ -512,7 +512,6 @@ root(ROOTS.Instances, {
 				}),
 				i(21761, {	-- Scarab Coffer Key
 					["timeline"] = {
-						ADDED_1_13_0,
 						DELETED_4_2_2
 					},
 				}),
@@ -741,7 +740,6 @@ root(ROOTS.Instances, {
 				["groups"] = {
 					i(22217, {	-- Kurinnaxx's Venom Sac
 						["timeline"] = {
-							ADDED_1_13_0,
 							DELETED_4_2_2
 						},
 					}),
@@ -821,10 +819,8 @@ root(ROOTS.Instances, {
 						["description"] = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
 						["races"] = HORDE_ONLY,
 						["timeline"] = {
-							ADDED_1_13_0,
 							REMOVED_2_0_1,	-- Classic WoWHead shows 0 new drops in WotLK since Classic. (902 recorded drops in both versions, which goes to show that this item no longer exists on the drop table)
 							-- REMOVED_4_2_2,
-							ADDED_10_1_7,
 						},
 					}),
 					i(21483),	-- Ring of the Desert Winds
@@ -852,7 +848,6 @@ root(ROOTS.Instances, {
 			e(1542, {	-- Ossirian the Unscarred
 				["creatureID"] = 15339,
 				["groups"] = {
-					ach(689),	-- Ruins of Ahn'Qiraj
 					i(21220),	-- Head of Ossirian the Unscarred
 					i(21452),	-- Staff of the Ruins
 					i(21715),	-- Sand Polished Hammer

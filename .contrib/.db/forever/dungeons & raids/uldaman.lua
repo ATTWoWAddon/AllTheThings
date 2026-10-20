@@ -403,16 +403,16 @@ root(ROOTS.Instances, {
 				n(7057, {	-- Digmaster Shovelphlange
 					["description"] =
 						"This guy spawns outside of the instance in the cave leading to the instance.",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(9378, {	-- Shovelphlange's Mining Axe
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9375, {	-- Expert Goldminer's Helmet
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9382, {	-- Tromping Miner's Boots
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -509,7 +509,7 @@ root(ROOTS.Instances, {
 				["coord"] = { 50.7, 73.9, MAP.ULDAMAN },
 				["cost"] = { { "i", 7733, 1 } },	-- Staff of Prehistoria
 				["groups"] = {
-					objective(1, {	-- Explore the Hidden Chamger
+					objective(1, {	-- Explore the Hidden Chamber
 						["questID"] = 2240,	-- The Hidden Chamber
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -557,7 +557,6 @@ root(ROOTS.Instances, {
 			e(473, {	-- Archaedas
 				["creatureID"] = 2748,
 				["groups"] = {
-					ach(638),	-- Uldaman
 					i(7672),	-- Shattered Necklace Power Source
 					i(9418),	-- Stoneslayer
 					i(9413),	-- The Rockpounder

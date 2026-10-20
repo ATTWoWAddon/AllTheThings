@@ -14,7 +14,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					coord = { 77.6, 17.0, MAP.DUSTWALLOW_MARSH },
 					groups = {
 						i(21103, {	-- Draconic for Dummies [Chapter I]
-							timeline = { ADDED_1_9_0 },
 						}),
 						i(21130),	-- Diary of Weavil
 					},
@@ -70,7 +69,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				}),
 			}),
 			prof(FISHING, {
-				o(207724),	-- Shipwreck Debris
 				o(180685),	-- Waterlogged Wreckage
 			}),
 			prof(TAILORING, {

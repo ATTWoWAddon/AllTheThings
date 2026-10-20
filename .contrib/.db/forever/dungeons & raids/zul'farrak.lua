@@ -285,7 +285,6 @@ root(ROOTS.Instances, {
 			e(489, {	-- Chief Ukorz Sandscalp
 				["creatureID"] = 7267,
 				["groups"] = {
-					ach(639),	-- Zul'Farrak
 					i(11086),	-- Jang'thraze the Protector
 					i(9478),	-- Ripsaw
 					i(9477),	-- The Chief's Enforcer

@@ -52,15 +52,6 @@ root(ROOTS.Instances, {
 						["maps"] = { CAVERNS_OF_TIME },
 						["isRaid"] = true,
 						["groups"] = {
-							ach(425, {	-- Atiesh, Greatstaff of the Guardian
-								["providers"] = {
-									{ "i", 22631 },	-- Atiesh, Greatstaff of the Guardian (Priest)
-									{ "i", 22589 },	-- Atiesh, Greatstaff of the Guardian (Mage)
-									{ "i", 22630 },	-- Atiesh, Greatstaff of the Guardian (Warlock)
-									{ "i", 22632 },	-- Atiesh, Greatstaff of the Guardian (Druid)
-								},
-								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
-							}),
 							q(9251, {	-- Atiesh, the Befouled Greatstaff
 								["sourceQuest"] = 9250,	-- Frame of Atiesh
 								["qg"] = 15192,	-- Anachronos
@@ -1895,7 +1886,6 @@ root(ROOTS.Instances, {
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 								["lore"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
-								["timeline"] = { ADDED_1_11_1 },
 								["groups"] = {
 									i(22719, {	-- Omarion's Handbook
 										["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
@@ -1985,7 +1975,6 @@ root(ROOTS.Instances, {
 									i(22350),	-- Desecrated Tunic
 									i(13262, {	-- Ashbringer
 										["lore"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
-										["timeline"] = { CREATED_1_11_1 },
 										["collectible"] = false,
 									}),
 									i(22691),	-- Corrupted Ashbringer
@@ -2052,10 +2041,6 @@ root(ROOTS.Instances, {
 									i(23048),	-- Sapphiron's Right Eye
 									i(23050),	-- Cloak of the Necropolis
 									i(23045),	-- Shroud of Dominion
-									i(23072, {	-- Fists of the Unrelenting
-										["description"] = "These were made available after the TBC Prepatch.",
-										["timeline"] = { CREATED_1_11_1, ADDED_2_0_1, REMOVED_3_0_2 },
-									}),
 									i(23047),	-- Eye of the Dead
 									i(23040),	-- Glyph of Deflection
 									i(23041),	-- Slayer's Crest
@@ -2067,9 +2052,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 							n(15990, {	-- Kel'Thuzad
-								ach(15335, {	-- Survivor of the Damned (Season of Mastery)
-									["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
-								}),
 								i(22520),	-- The Phylactery of Kel'Thuzad
 								i(22733, {	-- Staff Head of Atiesh
 									["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },

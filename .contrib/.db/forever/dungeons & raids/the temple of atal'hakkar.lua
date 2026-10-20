@@ -568,7 +568,6 @@ root(ROOTS.Instances, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					ach(641),	-- Sunken Temple
 					i(10454, {	-- Essence of Eranikus
 					}),
 					i(10828),	-- Dire Nail

@@ -408,7 +408,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				},
 			}),
 			i(21104, {	-- Draconic for Dummies [Chapter II]
-				timeline = { ADDED_1_9_0 },
 				coord = { 44.6, 56.0, MAP.BLASTED_LANDS },
 				crs = {
 					12396,	-- Doomguard Commander

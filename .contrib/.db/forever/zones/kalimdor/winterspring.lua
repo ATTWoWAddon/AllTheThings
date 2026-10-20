@@ -919,7 +919,6 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				},
 			}),
 			i(21105, {	-- Draconic for Dummies [Chapter III]
-				timeline = { ADDED_1_9_0 },
 				coords = {
 					{ 65.0, 80.2, MAP.WINTERSPRING },
 					{ 51.6, 84.4, MAP.WINTERSPRING },
@@ -1024,7 +1023,6 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				crs = {
 					7428,	-- Frostmaul Giant
 				},
-				timeline = { ADDED_1_11_1 },	-- ATT Discord 05.09.2023
 			}),
 			i(16054, {	-- Schematic: Arcanite Dragonling (RECIPE!)
 				coord = { 59.6, 49.0, MAP.WINTERSPRING },

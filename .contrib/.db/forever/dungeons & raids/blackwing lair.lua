@@ -61,7 +61,7 @@ root(ROOTS.Instances, {
 			),
 			n(TREASURES, {
 				 o(180667, {	-- Draconic for Dummies
-					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
 					["coord"] = { 32.0, 42.9, MAP.BLACKWING_LAIR },
 					["groups"] = {
@@ -309,10 +309,6 @@ root(ROOTS.Instances, {
 					10162,	-- Lord Victor Nefarius
 				},
 				["groups"] = {
-					ach(685),	-- Blackwing Lair
-					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
-						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
-					}),
 					i(19003, {	-- Head of Nefarian (A)
 						["races"] = ALLIANCE_ONLY,
 					}),

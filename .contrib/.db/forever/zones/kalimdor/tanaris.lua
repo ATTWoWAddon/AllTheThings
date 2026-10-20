@@ -95,7 +95,6 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(7652, {	-- A Blue Light Bargain
 				qg = 14567,	-- Derotain Mudsipper
 				coord = { 51.4, 28.7, MAP.TANARIS },
-				timeline = { ADDED_1_11_1 },
 				requireSkill = BLACKSMITHING,
 				learnedAt = 265,
 				lvl = 50,
@@ -1241,7 +1240,6 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 							8977,	-- Return to Deliana
 						},
 						sourceQuestNumRequired = 1,
-						timeline = { ADDED_1_11_1 },
 						u_sqs = true,	-- remove the u flag if sourcequests are completed
 						groups = {
 							i(22115),	-- Extra-Dimensional Ghost Revealer

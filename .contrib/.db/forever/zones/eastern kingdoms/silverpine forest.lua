@@ -41,9 +41,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 63.7, 65.2, MAP.SILVERPINE_FOREST },
 				requireSkill = LOCKPICKING,
 				learnedAt = 1,
-				groups = {
-					i(309),	-- Dalaran Status Report (QI!)
-				},
 			}),
 		}),
 		n(PROFESSIONS, {
@@ -709,7 +706,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				groups = {
 					i(8491, {	-- Black Tabby Cat (PET!)
 						description = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-						timeline = { ADDED_1_11_1 },
 					}),
 					i(4437, {	-- Channeler's Staff
 						description = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",

@@ -218,13 +218,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					i(6828),	-- Visionary Buckler
 				},
 			}),
-			q(9609, {	-- Help Watcher Biggs
-				qg = 17127,	-- Anchorite Avuun
-				coord = { 25.8, 31.8, MAP.SWAMP_OF_SORROWS },
-				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
-				lvl = 30,
-			}),
 			q(2702, {	-- Heroes of Old (1/2)
 				sourceQuest = 2681,	-- The Stones That Bind Us
 				qg = 7572,	-- Fallen Hero of the Horde
@@ -275,40 +268,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					objective(1, {	-- 0/6 Sawtooth Snapper Claw
 						provider = { "i", 6168 },	-- Sawtooth Snapper Claw
 						cr = 1087,	-- Sawtooth Snapper
-					}),
-				},
-			}),
-			q(9440, {	-- Little Morsels
-				qg = 17109,	-- Cersei Dusksinger
-				coord = { 47.8, 54.9, MAP.DUSTWALLOW_MARSH },
-				races = HORDE_ONLY,
-				lvl = 35,
-				groups = {
-					objective(1, {	-- Captured Crocolisk Fed
-						provider = { "i", 23659 },	-- Fel-Tainted Morsels
-						coord = { 60.6, 22.4, MAP.DUSTWALLOW_MARSH },
-						cr = 17113,	-- Captured Crocolisk
-					}),
-					objective(2, {	-- Captured Jaguar Fed
-						provider = { "i", 23659 },	-- Fel-Tainted Morsels
-						coord = { 65.4, 23.0, MAP.DUSTWALLOW_MARSH },
-						cr = 17111,	-- Captured Jaguar
-					}),
-					objective(3, {	-- Captured Tarantula Fed
-						provider = { "i", 23659 },	-- Fel-Tainted Morsels
-						coord = { 62.4, 23.4, MAP.DUSTWALLOW_MARSH },
-						cr = 17112,	-- Captured Tarantula
-					}),
-				},
-			}),
-			q(9448, {	-- Mercy for the Cursed
-				qg = 17127,	-- Anchorite Avuun
-				coord = { 25.8, 31.8, MAP.SWAMP_OF_SORROWS },
-				races = ALLIANCE_ONLY,
-				lvl = 35,
-				groups = {
-					objective(1, {	-- 0/3 Cursed Lost Ones
-						provider = { "n", 17115 },	-- Cursed Lost One
 					}),
 				},
 			}),
