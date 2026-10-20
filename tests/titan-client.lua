@@ -165,4 +165,10 @@ do
 	assert(reads() == 1, "Reports reuse the captured client tuple");
 end
 
+-- The generic runtime module is available before merge/filter/settings consumers.
+local toc = ReadFile("AllTheThings.toc");
+local progression = assert(toc:find("src\\Modules\\Progression.lua", 1, true));
+assert(progression < assert(toc:find("src\\DataHandling.lua", 1, true)));
+assert(progression < assert(toc:find("src\\Modules\\Filter.lua", 1, true)));
+assert(progression < assert(toc:find("src\\Settings\\Settings.xml", 1, true)));
 print("PASS: actual Titan detector, malformed identities, diagnostics, and transmog settings/capability fallback");

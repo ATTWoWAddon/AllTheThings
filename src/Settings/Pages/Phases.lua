@@ -18,6 +18,40 @@ DescriptionLabel:Show();
 -- Temporary stuff
 local UnobtainableSettingsBase = settings.__UnobtainableSettingsBase;
 
+local progression = app.Modules.Progression;
+local profile = progression.GetProfile();
+local mappedLegacy = {};
+if profile then
+	for key,phase in pairs(profile.phases) do
+		if phase.legacyU then mappedLegacy[phase.legacyU] = key; end
+	end
+	DescriptionLabel:SetText(progression.Localize({
+		en = "Choose which releases are visible in this flavor. These choices control display and do not identify the actual server phase. Unconfirmed sources are hidden by default.",
+		tw = "選擇此遊戲版本要顯示的開放階段。這些選項控制顯示，不代表伺服器的實際進程。尚未確認的來源預設隱藏。",
+		cn = "选择此游戏分支要显示的开放阶段。这些选项控制显示，不代表服务器的实际进度。尚未确认的来源默认隐藏。",
+	}));
+	local keys = {};
+	for key in pairs(profile.phases) do keys[#keys + 1] = key; end
+	table.sort(keys, function(a, b)
+		local pa, pb = profile.phases[a], profile.phases[b];
+		if (pa.status == "unknown") ~= (pb.status == "unknown") then return pb.status == "unknown"; end
+		if (pa.order or math.huge) ~= (pb.order or math.huge) then return (pa.order or math.huge) < (pb.order or math.huge); end
+		return a < b;
+	end);
+	local last = DescriptionLabel;
+	for _,key in ipairs(keys) do
+		local phaseKey = key;
+		local checkbox = child:CreateCheckBox(progression.GetName(phaseKey), function(self)
+			self:SetChecked(settings:GetReleasePhaseFilter(phaseKey));
+			if app.MODE_DEBUG then self:Disable(); self:SetAlpha(0.2);
+			else self:Enable(); self:SetAlpha(1); end
+		end, function(self) settings:SetReleasePhaseFilter(phaseKey, self:GetChecked()); end);
+		checkbox:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4);
+		checkbox:SetATTTooltip(progression.GetName(phaseKey) .. "\n\n" .. phaseKey);
+		last = checkbox;
+	end
+end
+
 local phases = L.PHASES;
 local UnobtainableFilterOnClick = function(self)
 	local checked = self:GetChecked();
@@ -53,7 +87,9 @@ end;
 -- Update the default unobtainable states based on build version.
 local now = time();
 for u,phase in pairs(phases) do
-	if phase.minimumBuildVersion then
+	if mappedLegacy[u] then
+		UnobtainableSettingsBase.__index[u] = progression.GetDefault(mappedLegacy[u]);
+	elseif phase.minimumBuildVersion then
 		if app.GameBuildVersion >= phase.minimumBuildVersion then
 			if phase.buildVersion and app.GameBuildVersion >= phase.buildVersion and (not phase.release or phase.release <= now) then
 				UnobtainableSettingsBase.__index[u] = true;
@@ -65,7 +101,7 @@ for u,phase in pairs(phases) do
 		end
 	end
 end
-UnobtainableSettingsBase.__index[11] = true;
+if not mappedLegacy[11] then UnobtainableSettingsBase.__index[11] = true; end
 
 function CreateExpansionPage(expansionID)
 	local expansion = app.CreateExpansion(expansionID);
@@ -99,7 +135,7 @@ for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacin
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local phase = phases[u];
-	if phase then
+	if phase and not mappedLegacy[u] then
 		local filter = page:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 		filter:SetATTTooltip(GeneratePhaseTooltip(phase, u))
 		filter:SetPoint("LEFT", page.Label, "LEFT", o[2], 0);
@@ -118,7 +154,7 @@ if app.GameBuildVersion > 20000 then
 		local u = o[1];
 		yoffset = o[3] or 6;
 		local phase = phases[u];
-		if phase then
+		if phase and not mappedLegacy[u] then
 			local filter = page:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 			filter:SetATTTooltip(GeneratePhaseTooltip(phase, u))
 			filter:SetPoint("LEFT", page.Label, "LEFT", o[2], 0);
@@ -138,7 +174,7 @@ if app.GameBuildVersion > 30000 then
 		local u = o[1];
 		yoffset = o[3] or 6;
 		local phase = phases[u];
-		if phase then
+		if phase and not mappedLegacy[u] then
 			local filter = page:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 			filter:SetATTTooltip(GeneratePhaseTooltip(phase, u))
 			filter:SetPoint("LEFT", page.Label, "LEFT", o[2], 0);
@@ -158,7 +194,7 @@ if app.GameBuildVersion > 40000 then
 		local u = o[1];
 		yoffset = o[3] or 6;
 		local phase = phases[u];
-		if phase then
+		if phase and not mappedLegacy[u] then
 			local filter = page:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 			filter:SetATTTooltip(GeneratePhaseTooltip(phase, u))
 			filter:SetPoint("LEFT", page.Label, "LEFT", o[2], 0);
@@ -178,7 +214,7 @@ if app.GameBuildVersion > 50000 then
 		local u = o[1];
 		yoffset = o[3] or 6;
 		local phase = phases[u];
-		if phase then
+		if phase and not mappedLegacy[u] then
 			local filter = page:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 			filter:SetATTTooltip(GeneratePhaseTooltip(phase, u))
 			filter:SetPoint("LEFT", page.Label, "LEFT", o[2], 0);
