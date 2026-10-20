@@ -56,158 +56,158 @@ end]];
 maproot(MAP.KALIMDOR, {
 	n(TIMBERMAW_HOLD, {
 		zoneTextAreaID = 1769,
-		["maps"] = { MAP.FELWOOD, MAP.WINTERSPRING },
-		["groups"] = {
+		maps = { MAP.FELWOOD, MAP.WINTERSPRING },
+		groups = {
 			n(FACTIONS, {
 				faction(FACTION_TIMBERMAW_HOLD, {	-- Timbermaw Hold
-					["icon"] = 236696,
-					["OnTooltip"] = [[_.OnTooltipDB.ForTimbermawHold]],
+					icon = 236696,
+					OnTooltip = [[_.OnTooltipDB.ForTimbermawHold]],
 				}),
 			}),
 			n(QUESTS, {
 				q(8469, {	-- Beads for Salfa
-					["sourceQuest"] = 8464,	-- Winterfall Activity
-					["qg"] = 11556,	-- Salfa
-					["coord"] = { 27.8, 34.6, MAP.WINTERSPRING },
-					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					["repeatable"] = true,
-					["lvl"] = 50,
+					sourceQuest = 8464,	-- Winterfall Activity
+					qg = 11556,	-- Salfa
+					coord = { 27.8, 34.6, MAP.WINTERSPRING },
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					cost = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
+					repeatable = true,
+					lvl = 50,
 				}),
 				q(8461, {	-- Deadwood of the North
-					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, MAP.FELWOOD },
-					["lvl"] = 45,
-					["groups"] = {
+					qg = 15395,	-- Nafien
+					coord = { 64.8, 8.2, MAP.FELWOOD },
+					lvl = 45,
+					groups = {
 						i(21317),	-- Helm of the Pathfinder
 						i(21316),	-- Leggings of the Ursa
 					},
 				}),
 				q(8470, {	-- Deadwood Ritual Totem
-					["provider"] = { "i", 20741 },	-- Deadwood Ritual Totem
-					["minReputation"] = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["crs"] = {
+					qi = 20741,	-- Deadwood Ritual Totem
+					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold, Neutral.
+					crs = {
 						7157,	-- Deadwood Avenger
 						7156,	-- Deadwood Den Watcher
 						7158,	-- Deadwood Shaman
 					},
-					["lvl"] = 45,
+					lvl = 45,
 				}),
 				q(8466, {	-- Feathers for Grazle
-					["sourceQuest"] = 8460,	-- Timbermaw Ally
-					["qg"] = 11554,	-- Grazle
-					["coord"] = { 50.9, 85.0, MAP.FELWOOD },
-					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
-					["repeatable"] = true,
-					["lvl"] = 45,
+					sourceQuest = 8460,	-- Timbermaw Ally
+					qg = 11554,	-- Grazle
+					coord = { 50.9, 85.0, MAP.FELWOOD },
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
+					repeatable = true,
+					lvl = 45,
 				}),
 				q(8467, {	-- Feathers for Nafien
-					["sourceQuest"] = 8460,	-- Timbermaw Ally
-					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, MAP.FELWOOD },
-					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
-					["repeatable"] = true,
-					["lvl"] = 45,
+					sourceQuest = 8460,	-- Timbermaw Ally
+					qg = 15395,	-- Nafien
+					coord = { 64.8, 8.2, MAP.FELWOOD },
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
+					repeatable = true,
+					lvl = 45,
 				}),
 				q(6031, {	-- Runecloth
-					["qg"] = 11557,	-- Meilosh
-					["coord"] = { 65.6, 2.8, MAP.FELWOOD },
-					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = { { "i", 14047, 30 } },	-- Runecloth
-					["lvl"] = 40,
-					["groups"] = {
+					qg = 11557,	-- Meilosh
+					coord = { 65.6, 2.8, MAP.FELWOOD },
+					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
+					cost = { { "i", 14047, 30 } },	-- Runecloth
+					lvl = 40,
+					groups = {
 						i(15822),	-- Shadowskin Spaulders
 						i(15823),	-- Bricksteel Gauntlets
 					},
 				}),
 				q(6032, {	-- Sacred Cloth
-					["qg"] = 11557,	-- Meilosh
-					["coord"] = { 65.6, 2.8, MAP.FELWOOD },
-					["minReputation"] = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = { { "i", 14342, 2 } },	-- Mooncloth
-					["requireSkill"] = TAILORING,
-					["lvl"] = 40,
-					["groups"] = {
+					qg = 11557,	-- Meilosh
+					coord = { 65.6, 2.8, MAP.FELWOOD },
+					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
+					cost = { { "i", 14342, 2 } },	-- Mooncloth
+					requireSkill = TAILORING,
+					lvl = 40,
+					groups = {
 						recipe(19435),	-- Mooncloth Boots
 					},
 				}),
 				q(8462, {	-- Speak to Nafien
-					["sourceQuest"] = 8460,	-- Timbermaw Ally
-					["qg"] = 11554,	-- Grazle
-					["coord"] = { 50.9, 85.0, MAP.FELWOOD },
-					["lvl"] = 45,
+					sourceQuest = 8460,	-- Timbermaw Ally
+					qg = 11554,	-- Grazle
+					coord = { 50.9, 85.0, MAP.FELWOOD },
+					lvl = 45,
 				}),
 				q(8465, {	-- Speak to Salfa
-					["sourceQuest"] = 8461,	-- Deadwood of the North
-					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, MAP.FELWOOD },
-					["lvl"] = 45,
+					sourceQuest = 8461,	-- Deadwood of the North
+					qg = 15395,	-- Nafien
+					coord = { 64.8, 8.2, MAP.FELWOOD },
+					lvl = 45,
 				}),
 				{	-- The Brokering of Peace
-					["allianceQuestData"] = q(8484, {	-- The Brokering of Peace (A)
-						["maps"] = { MAP.IRONFORGE },
+					allianceQuestData = q(8484, {	-- The Brokering of Peace (A)
+						maps = { MAP.IRONFORGE },
 					}),
-					["hordeQuestData"] = q(8485, {	-- The Brokering of Peace (H)
-						["maps"] = { MAP.ORGRIMMAR },
+					hordeQuestData = q(8485, {	-- The Brokering of Peace (H)
+						maps = { MAP.ORGRIMMAR },
 					}),
-					["providers"] = {
+					providers = {
 						{ "n", 11555 },	-- Gorn One Eye
 						{ "i", 21155 },	-- Timbermaw Offering of Peace
 					},
-					["coord"] = { 65.2, 2.6, MAP.FELWOOD },
-					["minReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["lvl"] = 45,
+					coord = { 65.2, 2.6, MAP.FELWOOD },
+					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					lvl = 45,
 				},
 				q(8481, {	-- The Root of All Evil
-					["qg"] = 11555,	-- Gorn One Eye
-					["coord"] = { 65.2, 2.6, MAP.FELWOOD },
-					["minReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["maps"] = { MAP.WINTERSPRING },
-					["lvl"] = 45,
-					["groups"] = {
+					qg = 11555,	-- Gorn One Eye
+					coord = { 65.2, 2.6, MAP.FELWOOD },
+					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maps = { MAP.WINTERSPRING },
+					lvl = 45,
+					groups = {
 						objective(1, {	-- 0/1 Essence of Xandivious
-							["provider"] = { "i", 21145 },	-- Essence of Xandivious
-							["coord"] = { 68.0, 37.6, MAP.WINTERSPRING },
-							["cost"] = { { "i", 21144, 1 } },	-- Demon Summoning Torch
-							["cr"] = 15623,	-- Xandivious
+							provider = { "i", 21145 },	-- Essence of Xandivious
+							coord = { 68.0, 37.6, MAP.WINTERSPRING },
+							cost = { { "i", 21144, 1 } },	-- Demon Summoning Torch
+							cr = 15623,	-- Xandivious
 						}),
 						i(21326),	-- Defender of the Timbermaw
 					},
 				}),
 				q(8460, {	-- Timbermaw Ally
-					["altQuests"] = { 6131 },	-- Timbermaw Ally (old version, deprecated)
-					["qg"] = 11554,	-- Grazle
-					["coord"] = { 50.9, 85.0, MAP.FELWOOD },
-					["lvl"] = 45,
-					["groups"] = {
+					altQuests = { 6131 },	-- Timbermaw Ally (old version, deprecated)
+					qg = 11554,	-- Grazle
+					coord = { 50.9, 85.0, MAP.FELWOOD },
+					lvl = 45,
+					groups = {
 						objective(1, {	-- 0/6 Deadwood Warrior slain
-							["provider"] = { "n", 7153 },	-- Deadwood Warrior
+							provider = { "n", 7153 },	-- Deadwood Warrior
 						}),
 						objective(2, {	-- 0/6 Deadwood Pathfinder slain
-							["provider"] = { "n", 7155 },	-- Deadwood Pathfinder
+							provider = { "n", 7155 },	-- Deadwood Pathfinder
 						}),
 						objective(3, {	-- 0/6 Deadwood Gardener slain
-							["provider"] = { "n", 7154 },	-- Deadwood Gardener
+							provider = { "n", 7154 },	-- Deadwood Gardener
 						}),
 						i(21311),	-- Earth Warder's Vest
 						i(21312),	-- Belt of the Den Watcher
 					},
 				}),
 				q(8464, {	-- Winterfall Activity
-					["qg"] = 11556,	-- Salfa
-					["coord"] = { 27.8, 34.6, MAP.WINTERSPRING },
-					["lvl"] = 45,
-					["groups"] = {
+					qg = 11556,	-- Salfa
+					coord = { 27.8, 34.6, MAP.WINTERSPRING },
+					lvl = 45,
+					groups = {
 						objective(1, {	-- 0/8 Winterfall Shaman slain
-							["provider"] = { "n", 7439 },	-- Winterfall Shaman
+							provider = { "n", 7439 },	-- Winterfall Shaman
 						}),
 						objective(2, {	-- 0/8 Winterfall Den Watcher slain
-							["provider"] = { "n", 7440 },	-- Winterfall Den Watcher
+							provider = { "n", 7440 },	-- Winterfall Den Watcher
 						}),
 						objective(3, {	-- 0/8 Winterfall Ursa slain
-							["provider"] = { "n", 7438 },	-- Winterfall Ursa
+							provider = { "n", 7438 },	-- Winterfall Ursa
 						}),
 						i(21318),	-- Earth Warder's Gloves
 						i(21319),	-- Gloves of the Pathfinder
@@ -216,9 +216,9 @@ maproot(MAP.KALIMDOR, {
 					},
 				}),
 				q(8471, {	-- Winterfall Ritual Totem
-					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
-					["minReputation"] = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold
-					["crs"] = {
+					qi = 20742,	-- Winterfall Ritual Totem
+					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold
+					crs = {
 						10738,	-- High Chief Winterfall
 						7440,	-- Winterfall Den Watcher
 						7442,	-- Winterfall Pathfinder
@@ -227,21 +227,21 @@ maproot(MAP.KALIMDOR, {
 						7441,	-- Winterfall Totemic
 						7438,	-- Winterfall Ursa
 					},
-					["lvl"] = 50,
+					lvl = 50,
 				}),
 			}),
 			n(VENDORS, {
 				n(11555, {	-- Gorn One Eye
-					["coord"] = { 65.2, 2.6, MAP.FELWOOD },
-					["minReputation"] = { FACTION_TIMBERMAW_HOLD, HONORED },	-- Timbermaw Hold, Honored.
-					["groups"] = {
+					coord = { 65.2, 2.6, MAP.FELWOOD },
+					minReputation = { FACTION_TIMBERMAW_HOLD, HONORED },	-- Timbermaw Hold, Honored.
+					groups = {
 						i(16768),	-- Furbolg Medicine Pouch
 						i(16769),	-- Furbolg Medicine Totem
 					},
 				}),
 				n(11557, {	-- Meilosh
-					["coord"] = { 65.6, 2.8, MAP.FELWOOD },
-					["groups"] = bubbleDownClassicRep(FACTION_TIMBERMAW_HOLD, {
+					coord = { 65.6, 2.8, MAP.FELWOOD },
+					groups = bubbleDownClassicRep(FACTION_TIMBERMAW_HOLD, {
 						{	-- Neutral
 						}, {	-- Friendly
 							--i(22392),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
