@@ -2,11 +2,13 @@
 
 [English](TITAN_DATABASE_PLAN.md) | [繁體中文](TITAN_DATABASE_PLAN.zh-TW.md) | [简体中文](TITAN_DATABASE_PLAN.zh-CN.md)
 
-狀態：草案；尚未實作。更新日期：2026-10-19。
+狀態：草案；尚未實作。更新日期：2026-10-20。
 
 本規劃涵蓋中國區 Titan Reforged（泰坦重鑄，Chrono 伺服器）的 Parser 設定、資料來源、遊戲內載入、Contributor Report，以及建置與發布交付流程。目標是為 Titan 提供獨立的資料庫產物，同時保留已確認可重用的 `standard/shared` 來源，並避免影響一般 Wrath 與其他遊戲版本。
 
-探索基準為 `master` 的 `a4f9c0c1cd27e8dbad8eb952f3da5d72e56b2e2a`；規劃分支為 `codex/titan-database-plan`。這些文件僅涵蓋規劃。以下檔案清單、測試與實作步驟均屬後續工作；本次不包含執行 Parser 或進行實作。
+儲存庫複核基準為 `upstream/master` 的 `5eb0692ad09ef1ad77bf630f8ff9d681dac7be0a`；規劃分支為 `codex/titan-database-plan`。已於 2026-10-20 重新核對儲存庫假設與程式碼參照。這些文件僅涵蓋規劃，不包含執行 Parser 或實作 Titan。
+
+此基準的三份問題表單已提供 `Titan` 選項，既有 Lua 回歸測試流程也會自動探索獨立測試套件；後續應依下文沿用這些能力。Titan 專屬設定檔、資料庫產物、判定與階段政策仍為預計工作。外部客戶端與路線圖觀察保留原始日期；本次儲存庫複核不代表取得新的客戶端觀察。
 
 ## 從現有資料理解問題
 
@@ -125,7 +127,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | 2 | 新增 Titan 資料案例之前，先加入無法確認時維持未啟用的 Titan 判定器與共用 Wrath 載入路由。新增 Titan 設定檔與建置／除錯入口；將 `../Titan/Database.xml` 放入一般 Wrath 設定檔的 `extra-database-files`，讓 Wrath 的 `DataRequirements` 排除 Titan，而 Titan 的 `DataRequirements` 納入 Titan。加入範圍受限的執行階段 ReferenceDB 守衛與早期 Titan 參照檔案，並隔離建置階段的 ItemDB 輸入。優先使用 DBContext 與設定檔標籤。 | 固定測試案例涵蓋判定邊界及所有反例；身分未知或無效時，Titan 必須維持未啟用。Wrath 與 Titan 使用共用 Wrath 路由，Era 與 SoD 則保留 Vanilla 路由。兩個 XML 路徑都可能被列舉，但只有符合條件與執行階段守衛時才允許賦值與註冊。設定有效，且建置階段的 ItemDB 資料互斥。 |
 | 3 | 使用一筆證據完整的 Titan 專屬記錄，串接 Parser、完整獨立輸出、早期參照資料與客戶端載入的端到端流程。 | Titan 啟用該記錄及其參照資料；一般 Wrath 不啟用 Titan 資料；每次登入恰使用一套完整資料庫。 |
 | 4 | 實作選定的階段政策與有證據支持的內容差異；處理必要的塑形、成就、難度與設定相容性。 | 累積解鎖、未知進程、來源新增／取代／移除、活動期間與儲存選項符合審查結果；既有有效來源仍可使用。 |
-| 5 | 在 Contributor Report 加入版本與設定檔資訊，並新增 Titan 問題回報版本選項。 | 報告可識別 Titan、完整客戶端版本／組建編號／介面版本號、ATT 版本與觀察情境。 |
+| 5 | 在 Contributor Report 加入版本與設定檔資訊；沿用既有問題表單的 `Titan` 選項及相關版本／情境欄位。 | 報告可識別 Titan、完整客戶端版本／組建編號／介面版本號、ATT 版本與觀察情境；不重複新增遊戲版本選項。 |
 | 6 | 接上 CI、Release 與產物檢查；完成跨遊戲版本回歸測試與遊戲內驗證。 | Titan 失敗會使整體檢查失敗；全新安裝、發布壓縮檔及適用的 db-sync 流程均包含正確產物。 |
 
 每項遊戲資料新增或修正，都應列出受影響 ID、遊戲版本、客戶端組建編號、ATT 版本、區域、觀察日期與來源。依 `AGENTS.md` 附上遊戲內截圖、Contributor Report 或直接的 Wowhead 連結。也應記錄遊戲內容主張的獨立來源數；只有至少兩個獨立來源支持時，才標為已交叉驗證。官方概覽可支持架構背景，但不能取代個別掉落、獎勵或 ID 的證據。
@@ -142,13 +144,15 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | 合併與來源 | 使用固定樣本，涵蓋同 ID 不同值、缺少記錄、陣列欄位，以及同一物品具有多個來源。 | 明確處理衝突；取代或移除單一來源不影響其他來源；結果不依賴偶然的檔案順序。 |
 | 原始資料 | 檢查快照版本、語系、hotfix 記錄與選取設定；測試遊戲版本／組建不符的輸入。 | 明確拒絕或回報不符的輸入，不能默默將其標為成功的 Titan 建置。 |
 | 產物 | 在乾淨的輸出位置檢查 ReferenceDB、LocalizationDB、Database.xml、Categories，以及 XML 引用的檔案。 | 必要檔案齊全，設定檔一致，建置不依賴前次執行殘留的檔案。 |
-| Lua 行為 | 遵循既有獨立 `tests/` 慣例，以 Lua 5.1 固定測試案例檢驗實際判定器、生成守衛、語系／分類註冊與參照資料副作用；不要新增測試框架，也不要只複製純判定函式進行測試。 | 所有新增或受影響的 Lua 測試僅使用 Lua 5.1；固定測試案例不能取代遊戲內相容性驗證。 |
+| Lua 行為 | 遵循既有獨立 `tests/` 慣例，以 Lua 5.1 固定測試案例檢驗實際判定器、生成守衛、語系／分類註冊與參照資料副作用。既有流程會自動探索巢狀套件；不要新增註冊清單、框架，或只複製純判定函式進行測試。 | 所有新增或受影響的 Lua 測試僅使用 Lua 5.1；每個套件在新的處理程序執行，失敗會傳至整體檢查。固定測試案例不能取代遊戲內相容性驗證。 |
 | 完整 Parser | 在受支援的 Parser 建置環境執行資料流程，保留設定、輸入快照與錯誤記錄。 | 完整建置成功。將此記錄為工具整合驗證，並與 Lua 5.1 插件測試分開。 |
 | 跨遊戲版本回歸 | 使用相同工具、快照與設定，比較 Retail、Era、SoD、TBC、Wrath、Cata、MoP 與 Forever。共用變更影響 PTR／Beta 時也納入。 | 除了事先列明的合理差異外，非 Titan 產物保持不變。差異可追溯；不得藉由忽略整個檔案來隱藏差異。 |
 | 遊戲內 | 在 Titan 與一般 Wrath 登入／重新載入；測試資料搜尋、階段設定、實際副本難度、已收藏與未收藏外觀，以及 Contributor Report。必要時檢查帳號同步。 | 正確資料庫載入且沒有 Lua 錯誤，收藏狀態符合實際情況。非 Titan 的 CN 或 zhCN 客戶端不會被誤判。 |
 | CI 與交付 | 刻意讓 Titan 步驟失敗，以測試整體檢查；檢查發布 zip、全新工作副本、缺少或過時的檔案，以及適用的 db-sync 雜湊檢查／本機 db 變更保護。 | `continue-on-error` 無法掩蓋失敗；交付產物包含完整 Titan 輸出。 |
 
 完整 Parser 測試必須使用其支援的執行環境。本規劃不取代 Parser 的 NLua／原生 Lua 相依元件。分別記錄測試工具、資料快照、預期結果與實際結果；Lua 固定測試案例成功，不代表完整 Parser 或客戶端已通過驗證。
+
+既有 [Lua 回歸測試流程](../../.github/workflows/LuaRegression.yml) 會遞迴探索 `tests/**/*.lua`，依路徑排序，並為每個套件啟動新的 `lua5.1` 處理程序。目前路徑篩選涵蓋 `AllTheThings.lua`、`src/**`、`lib/**`、`tests/**` 與流程本身。當 Titan 測試案例檢驗 TOC 載入或生成守衛時，應視需要將相關的 `AllTheThings.toc`、`db/**` 或 `.contrib/**` 相依路徑納入觸發條件；目前僅修改這些路徑不會觸發此流程。應同時驗證套件探索與整體失敗回報。本次文件更新未執行這些套件。
 
 ## 需要提供的 Titan 客戶端資訊
 
@@ -183,7 +187,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 
 ## 預計變更的檔案
 
-以下路徑均相對於儲存庫根目錄。「新增」表示尚不存在的規劃路徑；「視條件」表示變更需要調查或測試支持；「生成」表示由工具產生、不手動修補。目錄項目代表一組檔案；選定範圍與快照後再確定其內容。
+以下路徑均相對於儲存庫根目錄。「新增」表示尚不存在的預計路徑；「視條件」表示改動需要調查或測試支持；「生成」表示由工具產生，不手動修補；「沿用／驗證」表示既有能力，除非發現缺口，否則不預計修改。目錄項目代表一組檔案；選定範圍與快照後再確定完整內容。
 
 ### 設定與原始資料
 
@@ -240,9 +244,10 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | 檔案或目錄 | 類型 | 規劃內容 |
 | --- | --- | --- |
 | `.github/workflows/Parser.yml` | 修改 | Titan 呼叫、觸發／驗證策略、整體成功檢查與必要產物檢查；C# 原始碼變更也需要對應驗證。 |
+| `.github/workflows/LuaRegression.yml` | 視條件 | 沿用自動探索預計 Titan 套件的能力與整體檢查。僅針對測試案例實際檢驗的 TOC、生成資料庫或 Parser／來源相依項目擴充觸發條件；不需要手動套件註冊清單。 |
 | `.github/workflows/Release.yml`, `Parser_Objective.yml`（同目錄） | 修改 | 將 Titan 納入 Release 與手動全版本建置。 |
 | `.github/workflows/Parser_with_new_CD.yml` | 視條件 | 若保留此交付路由，更新其遊戲版本集合與整體檢查。在探索基準中，它以 `forever-beta` 為目標，不視為 master 上已啟用的正式 CD 工作流程。 |
-| `.github/ISSUE_TEMPLATE/data_discrepancy.yml`, `bug_report.yml`, `feature_request.yml`（同目錄） | 修改 | 新增 Titan 遊戲版本選項，重用既有版本與情境欄位。 |
+| `.github/ISSUE_TEMPLATE/data_discrepancy.yml`, `bug_report.yml`, `feature_request.yml`（同目錄） | 沿用／驗證 | 三份表單皆已包含 `Titan`。沿用既有選項與相關版本／情境欄位；僅在報告整合發現具體缺口時修改。 |
 | `.pkgmeta`, `.contrib/db-sync/sync_db.py`, `.contrib/db-sync/README.md` | 視條件 | 驗證既有通用打包與同步是否能涵蓋 Titan；僅修正必要缺口，並讓文件與選定流程一致。 |
 | `Link ATT to WoW.bat` | 視條件 | 確認實際產品資料夾後，評估是否需要新的安裝路徑。 |
 
@@ -252,7 +257,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 
 ## 主要程式碼參照
 
-實作前重新確認這些位置；行號以探索基準為準。
+實作前重新確認這些位置；行號以上述儲存庫複核基準為準。
 
 | 參照 | 相關機制 |
 | --- | --- |
@@ -267,5 +272,7 @@ Blizzard 已確認 Titan 具備塑形與收藏系統，ATT 也已有部分依 AP
 | [TOC](../../AllTheThings.toc), 6, 37–40, 96；[Contributor](../../src/Modules/Contributor.lua), 76–84, 262 | 介面宣告、資料載入入口與報告版本資訊。 |
 | [階段常數](../.db/shared/lib/Constants/Phases.lua), 41–53, 84–122, 2366–2402；[Shortcuts](../.db/shared/functions/Shortcuts.lua), 681–695, 1264–1265 | 已占用 ID、Wrath 階段定義，以及補缺值和強制套用階段的差異。 |
 | [Framework.Processing.cs](../src/Parser/Framework/Framework.Processing.cs), 919–942, 5002–5062；[Program.cs](../src/Parser/Program.cs), 965–970 | 時間軸裁剪／覆寫先於階段保留檢查；數值型階段預處理仍是 TODO。 |
-| [階段設定](../../src/Settings/Pages/Phases.lua), 21–68, 95–191；[Settings](../../src/Settings/Settings.lua), 589–620, 1171–1176 | 逐 ID 顯示、歷史預設值、寫死的頁面與儲存選項。 |
+| [階段設定](../../src/Settings/Pages/Phases.lua), 21–68, 95–191；[Settings](../../src/Settings/Settings.lua), 591–623, 1174–1180 | 逐 ID 顯示、歷史預設值、寫死的頁面與儲存選項。 |
 | [Filter](../../src/Modules/Filter.lua), 575–580, 617–624；[DataHandling](../../src/DataHandling.lua), 803–831, 932–955；[Ulduar](<../.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/5 Ulduar.lua>), 643–655 | 父鏈過濾、來源合併，以及需要審查的內嵌 Wrath 成就階段規則。 |
+| [資料差異表單](../../.github/ISSUE_TEMPLATE/data_discrepancy.yml), 25；[錯誤回報表單](../../.github/ISSUE_TEMPLATE/bug_report.yml), 25；[功能提案表單](../../.github/ISSUE_TEMPLATE/feature_request.yml), 26 | 應沿用的既有 Titan 選項。 |
+| [LuaRegression.yml](../../.github/workflows/LuaRegression.yml), 3–22, 51–61, 77–92 | 目前路徑篩選、自動套件探索、新的 Lua 5.1 處理程序與整體失敗檢查。 |
