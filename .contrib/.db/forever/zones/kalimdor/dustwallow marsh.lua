@@ -13,8 +13,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				n(15552, {	-- Dr. Weavil
 					coord = { 77.6, 17.0, MAP.DUSTWALLOW_MARSH },
 					groups = {
-						i(21103, {	-- Draconic for Dummies [Chapter I]
-						}),
+						i(21103),	-- Draconic for Dummies [Chapter I]
 						i(21130),	-- Diary of Weavil
 					},
 				}),
@@ -105,8 +104,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			q(6625, {	-- Alliance Trauma
 				qg = 5150,	-- Nissa Firestone
 				coord = { 54.8, 58.6, MAP.IRONFORGE },
-				requireSkill =
-					FIRST_AID,
+				requireSkill = FIRST_AID,
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -861,13 +859,11 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 30,
 			}),
 			q(6624, {	-- Triage [A]
-				description =
-					"Needs a minimum of 225 skill in First Aid.",
 				sourceQuest = 6625,	-- Alliance Trauma
 				qg = 12939,	-- Doctor Gustaf VanHowzen
 				coord = { 67.7, 48.9, MAP.DUSTWALLOW_MARSH },
-				requireSkill =
-					FIRST_AID,
+				requireSkill = FIRST_AID,
+				learnedAt = 225,
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 				groups = {

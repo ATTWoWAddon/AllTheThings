@@ -124,9 +124,6 @@ root(ROOTS.Instances, {
 							}),
 						},
 					}),
-
-					n(ACHIEVEMENTS, {
-																	}),
 					n(QUESTS, {
 						cl(WARRIOR, {
 							q(9037, {	-- Dreadnaught Helmet

@@ -1158,7 +1158,7 @@ root(ROOTS.Instances, inst(229, {	-- Blackrock Spire
 					i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact (RECIPE!)
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 					}),
-					i(24102, {	-- Manual of Eviscerate IX //Maybe??
+					i(24102, {	-- Manual of Eviscerate IX
 						["spellID"] = 31016,	-- Eviscerate IX
 						["classes"] = { ROGUE },
 						["rank"] = 9,
@@ -1174,7 +1174,7 @@ root(ROOTS.Instances, inst(229, {	-- Blackrock Spire
 					i(12927),	-- Truestrike Shoulders
 					i(16672),	-- Gauntlets of Elements
 					i(12926),	-- Flaming Band
-					i(23320, {	-- Tablet of Flame Shock VI //Maybe?
+					i(23320, {	-- Tablet of Flame Shock VI
 						["spellID"] = 29228,	-- Flame Shock VI
 						["classes"] = { SHAMAN },
 						["rank"] = 6,
@@ -1244,14 +1244,15 @@ root(ROOTS.Instances, inst(229, {	-- Blackrock Spire
 				}),
 				n(10430, {	-- The Beast
 					i(12731, {	-- Pristine Hide of the Beast
-						["description"] = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Pip's Skinner.",
+						["description"] = "This can only be accomplished with the Zulian Slicer or Pip's Skinner.",
 						["requireSkill"] = SKINNING,
+						["learnedAt"] = 315,
 						["cost"] = {
 							{ "i", 12709, 1 },	-- Pip's Skinner
 							{ "i", 19901, 1 },	-- Zulian Slicer
 						},
 					}),
-					i(24101, {	-- Book of Ferocious Bite V //Maybe?
+					i(24101, {	-- Book of Ferocious Bite V
 						["spellID"] = 31018,	-- Ferocious Bite V
 						["classes"] = { DRUID },
 						["rank"] = 5,
@@ -1266,7 +1267,7 @@ root(ROOTS.Instances, inst(229, {	-- Blackrock Spire
 					i(12965),	-- Spiritshroud Leggings
 					i(12964),	-- Tristam Legguards
 					i(22311),	-- Ironweave Boots
-					i(19227),	-- Ace of Beasts //Maybe?
+					i(19227),	-- Ace of Beasts
 				}),
 				n(16042, {	-- Lord Valthalak
 					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",

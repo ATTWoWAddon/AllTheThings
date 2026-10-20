@@ -55,8 +55,7 @@ root(ROOTS.Instances, {
 		zoneTextAreaID = 2017,	-- Stratholme
 		["mapID"] = MAP.STRATHOLME,
 		["maps"] = { 318 },	-- Stratholme (OLD)
-		["lvl"] =
-			48,
+		["lvl"] = 48,
 		["groups"] = {
 			n(QUESTS, {
 				q(5263, {	-- Above and Beyond
@@ -75,10 +74,8 @@ root(ROOTS.Instances, {
 					["qg"] = 10917,	-- Aurius
 					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["groups"] = {
-						i(17044, {	-- Will of the Martyr
-						}),
-						i(17045, {	-- Blood of the Martyr
-						}),
+						i(17044),	-- Will of the Martyr
+						i(17045),	-- Blood of the Martyr
 					},
 				}),
 				q(5861, {	-- Find Myranda
@@ -97,10 +94,8 @@ root(ROOTS.Instances, {
 					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 					["lvl"] = 55,
 					["groups"] = {
-						i(13216, {	-- Crown of the Penitent
-						}),
-						i(13217, {	-- Band of the Penitent
-						}),
+						i(13216),	-- Crown of the Penitent
+						i(13217),	-- Band of the Penitent
 						i(6149),	-- Greater Mana Potion
 						i(3928),	-- Superior Healing Potion
 					},
@@ -111,16 +106,11 @@ root(ROOTS.Instances, {
 					["coord"] = { 42.0, 14.8, MAP.WESTERN_PLAGUELANDS },
 					["lvl"] = 52,
 					["groups"] = {
-						i(15418, {	-- Shimmering Platinum Warhammer
-						}),
-						i(15411, {	-- Mark of Fordring
-						}),
-						i(15421, {	-- Shroud of the Exile
-						}),
-						i(15413, {	-- Ornate Adamantium Breastplate
-						}),
-						i(16058, {	-- Fordring's Seal
-						}),
+						i(15418),	-- Shimmering Platinum Warhammer
+						i(15411),	-- Mark of Fordring
+						i(15421),	-- Shroud of the Exile
+						i(15413),	-- Ornate Adamantium Breastplate
+						i(16058),	-- Fordring's Seal
 					},
 				}),
 				q(5264, {	-- Lord Maxwell Tyrosus
@@ -191,10 +181,8 @@ root(ROOTS.Instances, {
 							["provider"] = { "i", 15880 },	-- Head of Ramstein the Gorger
 							["cr"] = 10439,	-- Ramstein the Gorger
 						}),
-						i(18022, {	-- Royal Seal of Alexis
-						}),
-						i(17001, {	-- Elemental Circle
-						}),
+						i(18022),	-- Royal Seal of Alexis
+						i(17001),	-- Elemental Circle
 					},
 				}),
 				q(5742, {	-- Redemption
@@ -228,10 +216,8 @@ root(ROOTS.Instances, {
 								{ "o", 176249 },	-- Scourge Data
 							},
 						}),
-						i(19812, {	-- Rune of the Dawn
-						}),
-						i(13209, {	-- Seal of the Dawn
-						}),
+						i(19812),	-- Rune of the Dawn
+						i(13209),	-- Seal of the Dawn
 					},
 				}),
 				q(5251, {	-- The Archivist
@@ -256,12 +242,9 @@ root(ROOTS.Instances, {
 					["coord"] = { 81.6, 58.0, MAP.EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
 					["groups"] = {
-						i(13246, {	-- Argent Avenger
-						}),
-						i(13249, {	-- Argent Crusader
-						}),
-						i(13243, {	-- Argent Defender
-						}),
+						i(13246),	-- Argent Avenger
+						i(13249),	-- Argent Crusader
+						i(13243),	-- Argent Defender
 					},
 				}),
 				q(5212, {	-- The Flesh Does Not Lie
@@ -283,8 +266,7 @@ root(ROOTS.Instances, {
 							["provider"] = { "i", 13172 },	-- Grimm's Premium Tobacco
 							["cr"] = 11058,	-- Ezra Grimm
 						}),
-						i(13171, {	-- Smokey's Lighter
-						}),
+						i(13171),	-- Smokey's Lighter
 					},
 				}),
 				q(5122, {	-- The Medallion of Faith
@@ -311,8 +293,7 @@ root(ROOTS.Instances, {
 								11122,	-- Restless Soul
 							},
 						}),
-						i(13315, {	-- Testament of Hope
-						}),
+						i(13315),	-- Testament of Hope
 					},
 				}),
 				q(5262, {	-- The Truth Comes Crashing Down
@@ -327,7 +308,7 @@ root(ROOTS.Instances, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				 i(22526),	-- Bone Fragments
+				i(22526),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
@@ -337,8 +318,7 @@ root(ROOTS.Instances, {
 				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					["description"] = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
-				i(13174, {	-- Plagued Flesh Sample
-				}),
+				i(13174),	-- Plagued Flesh Sample
 				i(12735, {	-- Frayed Abomination Stitching
 					-- NOTE: Not removed from game, but no longer useful for anything.
 					["crs"] = {
@@ -350,11 +330,9 @@ root(ROOTS.Instances, {
 				}),
 				i(18743),	-- Gracious Cape
 				i(17061),	-- Juno's Shadow
-				i(18741, {	-- Morlune's Bracer
-				}),
+				i(18741),	-- Morlune's Bracer
 				i(18744),	-- Plaguebat Fur Gloves
-				i(18736, {	-- Plaguehound Leggings
-				}),
+				i(18736),	-- Plaguehound Leggings
 				i(18745),	-- Sacred Cloth Leggings
 				i(18742),	-- Stratholme Militia Shoulderguard
 
@@ -467,18 +445,12 @@ root(ROOTS.Instances, {
 					n(11082, {	-- Stratholme Courier
 						["description"] = "Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",
 						["groups"] = {
-							i(13303, {	-- Crusaders' Square Postbox Key
-							}),
-							i(13305, {	-- Elders' Square Postbox Key
-							}),
-							i(13304, {	-- Festival Lane Postbox Key
-							}),
-							i(13307, {	-- Fras Siabi's Postbox Key
-							}),
-							i(13306, {	-- King's Square Postbox Key
-							}),
-							i(13302, {	-- Market Row Postbox Key
-							}),
+							i(13303),	-- Crusaders' Square Postbox Key
+							i(13305),	-- Elders' Square Postbox Key
+							i(13304),	-- Festival Lane Postbox Key
+							i(13307),	-- Fras Siabi's Postbox Key
+							i(13306),	-- King's Square Postbox Key
+							i(13302),	-- Market Row Postbox Key
 						},
 					}),
 					n(11143, {	-- Postmaster Malown
@@ -494,57 +466,41 @@ root(ROOTS.Instances, {
 						},
 						["groups"] = {
 							i(13393),	-- Malown's Slam
-							i(13390, {	-- The Postmaster's Band
-							}),
-							i(13388, {	-- The Postmaster's Tunic
-							}),
-							i(13389, {	-- The Postmaster's Trousers
-							}),
-							i(13391, {	-- The Postmaster's Treads
-							}),
-							i(13392, {	-- The Postmaster's Seal
-							}),
+							i(13390),	-- The Postmaster's Band
+							i(13388),	-- The Postmaster's Tunic
+							i(13389),	-- The Postmaster's Trousers
+							i(13391),	-- The Postmaster's Treads
+							i(13392),	-- The Postmaster's Seal
 						},
 					}),
 					e(443, {	-- Hearthsinger Forresten
 						["creatureID"] = 10558,	-- Hearthsinger Forresten
 						["groups"] = {
-							i(13379, {	-- Piccolo of the Flaming Fire
-							}),
-							i(13378, {	-- Songbird Blouse
-							}),
-							i(13384, {	-- Rainbow Girdle
-							}),
-							i(13383, {	-- Woollies of the Prancing Minstrel
-							}),
-							i(16682, {	-- Magister's Boots
-							}),
+							i(13379),	-- Piccolo of the Flaming Fire
+							i(13378),	-- Songbird Blouse
+							i(13384),	-- Rainbow Girdle
+							i(13383),	-- Woollies of the Prancing Minstrel
+							i(16682),	-- Magister's Boots
 						},
 					}),
 					e(450, {	-- The Unforgiven
 						["creatureID"] = 10516,	-- The Unforgiven
 						["groups"] = {
 							i(13408),	-- Soul Breaker
-							i(13404, {	-- Mask of the Unforgiven
-							}),
+							i(13404),	-- Mask of the Unforgiven
 							i(13405),	-- Wailing Nightbane Pauldrons
 							i(13409),	-- Tearfall Bracers
-							i(16717, {	-- Wildheart Gloves
-							}),
+							i(16717),	-- Wildheart Gloves
 						},
 					}),
 					e(445, {	-- Timmy the Cruel
 						["creatureID"] = 10808,	-- Timmy the Cruel
 						["groups"] = {
 							i(13401),	-- The Cruel Hand of Timmy
-							i(13400, {	-- Vambraces of the Sadist
-							}),
-							i(16724, {	-- Lightforge Gauntlets
-							}),
-							i(13403, {	-- Grimgore Noose
-							}),
-							i(13402, {	-- Timmy's Galoshes
-							}),
+							i(13400),	-- Vambraces of the Sadist
+							i(16724),	-- Lightforge Gauntlets
+							i(13403),	-- Grimgore Noose
+							i(13402),	-- Timmy's Galoshes
 						},
 					}),
 					n(11032, {	-- Malor the Zealous [Classic] / Commander Malor [CATA+]
@@ -557,10 +513,8 @@ root(ROOTS.Instances, {
 						["provider"] = { "o", 176325 },	-- Blacksmithing Plans
 						["description"] = "Found in the Hoard on the way to Cannon Master Willey.",
 						["groups"] = {
-							i(18781, {	-- Bottom Half of Advanced Armorsmithing: Volume II
-							}),
-							i(13351, {	-- Crimson Hammersmith's Apron
-							}),
+							i(18781),	-- Bottom Half of Advanced Armorsmithing: Volume II
+							i(13351),	-- Crimson Hammersmith's Apron
 							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
 							}),
@@ -570,22 +524,17 @@ root(ROOTS.Instances, {
 						["creatureID"] = 10997,	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]
 						["groups"] = {
 							i(12839),	-- Plans: Heartseeker (RECIPE!)
-							 i(22406),	-- Redemption
-							 i(22404),	-- Willey's Back Scratcher
-							i(13380, {	-- Willey's Portable Howitzer
-							}),
-							 i(22407),	-- Helm of the New Moon
-							 i(22403, {	-- Nacreous Shell Necklace
-							}),
-							 i(22405),	-- Mantle of the Scarlet Crusade
-							i(16708, {	-- Shadowcraft Spaulders
-							}),
+							i(22406),	-- Redemption
+							i(22404),	-- Willey's Back Scratcher
+							i(13380),	-- Willey's Portable Howitzer
+							i(22407),	-- Helm of the New Moon
+							i(22403),	-- Nacreous Shell Necklace
+							i(22405),	-- Mantle of the Scarlet Crusade
+							i(16708),	-- Shadowcraft Spaulders
 							i(18721),	-- Barrage Girdle
 							i(13381),	-- Master Cannoneer Boots
-							i(13382, {	-- Cannonball Runner
-							}),
-							i(13377, {	-- Miniature Cannon Balls
-							}),
+							i(13382),	-- Cannonball Runner
+							i(13377),	-- Miniature Cannon Balls
 						},
 					}),
 					e(448, {	-- Archivist Galford [Classic] / Instructor Galford [CATA+]
@@ -594,16 +543,14 @@ root(ROOTS.Instances, {
 							i(14679, {	-- Of Love and Family
 								["description"] = "Found on the wall near Archivist Galford.",
 							}),
-							 {
-								["itemID"] = 22897,	-- Tome of Conjure Food VII
+							i(22897, {	-- Tome of Conjure Food VII
 								["classes"] = { MAGE },
 								["spellID"] = 28612,	-- Conjure Food VII
 								["rank"] = 7,
-							},
+							}),
 							i(13385),	-- Tome of Knowledge
 							i(13386),	-- Archivist Cape
-							i(16692, {	-- Devout Gloves
-							}),
+							i(16692),	-- Devout Gloves
 							i(13387),	-- Foresight Girdle
 							i(18716),	-- Ash Covered Boots
 						},
@@ -616,27 +563,19 @@ root(ROOTS.Instances, {
 							i(14512),	-- Pattern: Truefaith Vestments (RECIPE!)
 							i(13520),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
 							i(13348),	-- Demonshear
-							i(18717, {	-- Hammer of the Grand Crusader
-							}),
-							i(13360, {	-- Gift of the Elven Magi
-							}),
-							i(13353, {	-- Book of the Dead
-							}),
-							i(13359, {	-- Crown of Tyranny
-							}),
-							i(18718, {	-- Grand Crusader's Helm
-							}),
-							i(12103, {	-- Star of Mystaria
-							}),
-							i(18720, {	-- Shroud of the Nathrezim
-							}),
+							i(18717),	-- Hammer of the Grand Crusader
+							i(13360),	-- Gift of the Elven Magi
+							i(13353),	-- Book of the Dead
+							i(13359),	-- Crown of Tyranny
+							i(18718),	-- Grand Crusader's Helm
+							i(12103),	-- Star of Mystaria
+							i(18720),	-- Shroud of the Nathrezim
 							i(13358),	-- Wyrmtongue Shoulders
 							i(13369),	-- Fire Striders
-							i(16725, {	-- Lightforge Boots
-							}),
+							i(16725),	-- Lightforge Boots
 						},
 					}),
-					 n_conditional(16102, {	-- Sothos
+					n_conditional(16102, {	-- Sothos
 						["crs"] = {
 							16101,	-- Jarien
 						},
@@ -650,7 +589,6 @@ root(ROOTS.Instances, {
 							{ "i", 22057 },	-- Brazier of Invocation
 							{ "o", 181083 },	-- Sothos and Jarien's Heirlooms
 						},
-						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								["questID"] = 8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
@@ -660,16 +598,14 @@ root(ROOTS.Instances, {
 								["questID"] = 8991,	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
 								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
 							}),
-							i(22329, {	-- Scepter of Interminable Focus
-							}),
+							i(22329),	-- Scepter of Interminable Focus
 							i(22327),	-- Amulet of the Redeemed
-							i(22301, {	-- Ironweave Robe
-							}),
+							i(22301),	-- Ironweave Robe
 							i(22328),	-- Legplates of Vigilance
 							i(22334),	-- Band of Mending
 						},
 					}),
-					 n(16387, {	-- Atiesh <Hand of Sargeras>
+					n(16387, {	-- Atiesh <Hand of Sargeras>
 						["description"] = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
 						["groups"] = {
 							i(22736, {	-- Andonisus, Reaper of Souls
@@ -717,13 +653,10 @@ root(ROOTS.Instances, {
 							i(13529),	-- Husk of Nerub'enkan
 							i(13533),	-- Acid-Etched Pauldrons
 							i(13532),	-- Darkspinner Claws
-							i(18740, {	-- Thuzadin Sash
-							}),
-							i(18739, {	-- Chitinous Plate Legguards
-							}),
+							i(18740),	-- Thuzadin Sash
+							i(18739),	-- Chitinous Plate Legguards
 							i(13531),	-- Crypt Stalker Leggings
-							i(16675, {	-- Beaststalker's Boots
-							}),
+							i(16675),	-- Beaststalker's Boots
 							i(13530),	-- Fangdrip Runners
 							i(13508),	-- Eye of Arachnida
 						},
@@ -736,10 +669,8 @@ root(ROOTS.Instances, {
 						},
 						["description"] = "Found outside of Baroness Anastari's ziggurat.",
 						["groups"] = {
-							i(18783, {	-- Bottom Half of Advanced Armorsmithing: Volume III
-							}),
-							i(13350, {	-- Insignia of the Black Guard
-							}),
+							i(18783),	-- Bottom Half of Advanced Armorsmithing: Volume III
+							i(13350),	-- Insignia of the Black Guard
 							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
 							}),
@@ -755,10 +686,8 @@ root(ROOTS.Instances, {
 							i(13535),	-- Coldtouch Phantom Wraps
 							i(13537),	-- Chillhide Bracers
 							i(13539),	-- Banshee's Touch
-							i(18730, {	-- Shadowy Laced Handwraps
-							}),
-							i(16704, {	-- Dreadmist Sandals
-							}),
+							i(18730),	-- Shadowy Laced Handwraps
+							i(16704),	-- Dreadmist Sandals
 							i(13514, {	-- Wail of the Banshee
 								["description"] = "This can be used on raid bosses and in PVP... Probably not a bad idea to keep on you.",
 							}),
@@ -768,15 +697,13 @@ root(ROOTS.Instances, {
 						["creatureID"] = 10438,	-- Maleki the Pallid
 						["groups"] = {
 							i(12833),	-- Plans: Hammer of the Titans (RECIPE!)
-							i(18737, {	-- Bone Slicing Hatchet
-							}),
+							i(18737),	-- Bone Slicing Hatchet
 							i(13524),	-- Skull of Burning Shadows
 							i(18734),	-- Pale Moon Cloak
 							i(13528),	-- Twilight Void Bracers
 							i(13525),	-- Darkbind Fingers
 							i(13526),	-- Flamescarred Girdle
-							i(16691, {	-- Devout Sandals
-							}),
+							i(16691),	-- Devout Sandals
 							i(13527),	-- Lavawalker Greaves
 							i(18735),	-- Maleki's Footwraps
 							i(13509),	-- Clutch of Foresight
@@ -787,16 +714,12 @@ root(ROOTS.Instances, {
 						["description"] = "If you enter from the Main Gate side, you can fight this boss first, otherwise he runs to the Slaughter House.",
 						["groups"] = {
 							i(12382),	-- Key to the City
-							i(18725, {	-- Peacemaker
-							}),
+							i(18725),	-- Peacemaker
 							i(18727),	-- Crimson Felt Hat
-							i(13376, {	-- Royal Tribunal Cloak
-							}),
-							i(18726, {	-- Magistrate's Cuffs
-							}),
+							i(13376),	-- Royal Tribunal Cloak
+							i(18726),	-- Magistrate's Cuffs
 							i(18722),	-- Death Grips
-							 i(23198, {	-- Idol of Brutality
-							}),
+							i(23198),	-- Idol of Brutality
 						},
 					}),
 					e(455, {	-- Ramstein the Gorger
@@ -806,10 +729,8 @@ root(ROOTS.Instances, {
 							i(13372),	-- Slavedriver's Cane
 							i(13375),	-- Crest of Retribution
 							i(18723),	-- Animated Chain Necklace
-							i(13374, {	-- Soulstealer Mantle
-							}),
-							i(16737, {	-- Gauntlets of Valor
-							}),
+							i(13374),	-- Soulstealer Mantle
+							i(16737),	-- Gauntlets of Valor
 							i(13373),	-- Band of Flesh
 							i(13515),	-- Ramstein's Lightning Bolts
 						},
@@ -821,50 +742,34 @@ root(ROOTS.Instances, {
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
 							i(13335),	-- Rivendare's Deathcharger (MOUNT!)
-							i(13505, {	-- Runeblade of Baron Rivendare
-							}),
+							i(13505),	-- Runeblade of Baron Rivendare
 							i(13368),	-- Bonescraper
-							 i(22408),	-- Ritssyn's Wand of Bad Mojo
+							i(22408),	-- Ritssyn's Wand of Bad Mojo
 							i(13349),	-- Scepter of the Unholy
-							i(13361, {	-- Skullforge Reaver
-							}),
-							 i(22411, {	-- Helm of the Executioner
-							}),
-							 i(22412),	-- Thuzadin Mantle
+							i(13361),	-- Skullforge Reaver
+							i(22411),	-- Helm of the Executioner
+							i(22412),	-- Thuzadin Mantle
 							i(13340),	-- Cape of the Black Baron
 							i(13346),	-- Robes of the Exalted
-							 i(22409, {	-- Tunic of the Crescent Moon
-							}),
-							i(13344, {	-- Dracorian Gauntlets
-							}),
-							 i(22410, {	-- Gauntlets of Deftness
-							}),
-							i(13345, {	-- Seal of Rivendare
-							}),
+							i(22409),	-- Tunic of the Crescent Moon
+							i(13344),	-- Dracorian Gauntlets
+							i(22410),	-- Gauntlets of Deftness
+							i(13345),	-- Seal of Rivendare
 						},
 					}),
 					n(10440, {	-- Baron Rivendare
 						-- NOTE: This will merge the data with the encounter object and push the removed T0 pieces to the bottom of the list.
 						["encounterID"] = 456,	-- Baron Rivendare
 						["groups"] = {
-							i(16678, {	-- Beaststalker's Pants
-							}),
-							i(16694, {	-- Devout Skirt
-							}),
-							i(16699, {	-- Dreadmist Leggings
-							}),
-							i(16668, {	-- Kilt of Elements
-							}),
-							i(16732, {	-- Legplates of Valor
-							}),
-							i(16728, {	-- Lightforge Legplates
-							}),
-							i(16687, {	-- Magister's Leggings
-							}),
-							i(16709, {	-- Shadowcraft Pants
-							}),
-							i(16719, {	-- Wildheart Kilt
-							}),
+							i(16678),	-- Beaststalker's Pants
+							i(16694),	-- Devout Skirt
+							i(16699),	-- Dreadmist Leggings
+							i(16668),	-- Kilt of Elements
+							i(16732),	-- Legplates of Valor
+							i(16728),	-- Lightforge Legplates
+							i(16687),	-- Magister's Leggings
+							i(16709),	-- Shadowcraft Pants
+							i(16719),	-- Wildheart Kilt
 						},
 					}),
 				},

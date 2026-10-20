@@ -60,8 +60,7 @@ root(ROOTS.Instances, {
 			}
 			),
 			n(TREASURES, {
-				 o(180667, {	-- Draconic for Dummies
-					["timeline"] = { REMOVED_4_0_3 },
+				o(180667, {	-- Draconic for Dummies
 					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
 					["coord"] = { 32.0, 42.9, MAP.BLACKWING_LAIR },
 					["groups"] = {

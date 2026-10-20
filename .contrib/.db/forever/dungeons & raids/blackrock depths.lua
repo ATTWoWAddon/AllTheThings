@@ -649,6 +649,7 @@ root(ROOTS.Instances, {
 						{ "i", 6037, 10 },	-- 10x Truesilver Bar
 					},
 					["requireSkill"] = MINING,
+					["learnedAt"] = 230,
 					["cr"] = 9037,	-- Gloom'rel
 					["lvl"] = 40,
 					["groups"] = {

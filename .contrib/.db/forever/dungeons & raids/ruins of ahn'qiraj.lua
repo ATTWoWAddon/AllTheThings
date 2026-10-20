@@ -510,11 +510,7 @@ root(ROOTS.Instances, {
 					["cr"] = 15335,	-- Flesh Hunter
 					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
-				i(21761, {	-- Scarab Coffer Key
-					["timeline"] = {
-						DELETED_4_2_2
-					},
-				}),
+				i(21761),	-- Scarab Coffer Key
 			}),
 			filter(RECIPES, {
 				["crs"] = {
@@ -738,11 +734,7 @@ root(ROOTS.Instances, {
 			e(1537, {	-- Kurinnaxx
 				["creatureID"] = 15348,
 				["groups"] = {
-					i(22217, {	-- Kurinnaxx's Venom Sac
-						["timeline"] = {
-							DELETED_4_2_2
-						},
-					}),
+					i(22217),	-- Kurinnaxx's Venom Sac
 					i(21498),	-- Qiraji Sacrificial Dagger
 					i(21499),	-- Vestments of the Shifting Sands
 					i(21502),	-- Sand Reaver Wristguards
@@ -818,10 +810,6 @@ root(ROOTS.Instances, {
 					i(21482, {	-- Boots of the Fiery Sands
 						["description"] = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
 						["races"] = HORDE_ONLY,
-						["timeline"] = {
-							REMOVED_2_0_1,	-- Classic WoWHead shows 0 new drops in WotLK since Classic. (902 recorded drops in both versions, which goes to show that this item no longer exists on the drop table)
-							-- REMOVED_4_2_2,
-						},
 					}),
 					i(21483),	-- Ring of the Desert Winds
 				},

@@ -565,10 +565,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				classes = { ROGUE },
 				lvl = 20,
 				groups = {
-					recipe(8681, {	-- Instant Poison
-					}),
-					recipe(2842, {	-- Poisons
-					}),
+					recipe(8681),	-- Instant Poison
+					recipe(2842),	-- Poisons
 					i(8095),	-- Hinott's Oil
 				},
 			}),

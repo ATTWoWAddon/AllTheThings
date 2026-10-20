@@ -755,11 +755,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(6622, {	-- Triage (H)
-				description ="Needs a minimum of 225 skill in First Aid.",
 				sourceQuest = 6623,	-- Horde Trauma
 				qg = 12920,	-- Doctor Gregory Victor
 				coord = { 68.5, 37.8, MAP.ARATHI_HIGHLANDS },
 				requireSkill = FIRST_AID,
+				learnedAt = 225,
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {

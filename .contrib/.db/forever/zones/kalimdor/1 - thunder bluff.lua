@@ -188,11 +188,10 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				},
 			}),
 			q(769, {	-- Kodo Hide Bag
-				description =
-					"This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
 				qg = 3050,	-- Veren Tallstrider
 				coord = { 44.0, 44.6, MAP.THUNDER_BLUFF },
 				requireSkill = LEATHERWORKING,
+				learnedAt = 10,
 				races = HORDE_ONLY,
 				lvl = 5,
 				groups = {

@@ -88,7 +88,7 @@ root(ROOTS.Instances, {
 		["lvl"] = 45,
 		["groups"] = {
 			n(QUESTS, {
-				 q(9053, {	-- A Better Ingredient
+				q(9053, {	-- A Better Ingredient
 					["sourceQuest"] = 9051,	-- Toxic Test
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, MAP.UNGORO_CRATER },
@@ -98,15 +98,12 @@ root(ROOTS.Instances, {
 						objective(1, {	-- 0/1 Putrid Vine
 							["provider"] = { "i", 22444 },	-- Putrid Vine
 						}),
-						i(22458, {	-- Moonshadow Stave
-						}),
-						i(22272, {	-- Forest's Embrace
-						}),
-						i(22274, {	-- Grizzled Pelt
-						}),
+						i(22458),	-- Moonshadow Stave
+						i(22272),	-- Forest's Embrace
+						i(22274),	-- Grizzled Pelt
 					},
 				}),
-				 q(8257, {	-- Blood of Morphaz
+				q(8257, {	-- Blood of Morphaz
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
 					["qg"] = 8405,	-- Ogtinc
 					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
@@ -117,15 +114,12 @@ root(ROOTS.Instances, {
 							["provider"] = { "i", 20025 },	-- Blood of Morphaz
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(19990, {	-- Blessed Prayer Beads
-						}),
-						i(20006, {	-- Circle of Hope
-						}),
-						i(20082, {	-- Woestave
-						}),
+						i(19990),	-- Blessed Prayer Beads
+						i(20006),	-- Circle of Hope
+						i(20082),	-- Woestave
 					},
 				}),
-				 q(8413, {	-- Da Voodoo
+				q(8413, {	-- Da Voodoo
 					["sourceQuest"] = 8412,	-- Spirit Totem
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["coord"] = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
@@ -142,15 +136,12 @@ root(ROOTS.Instances, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20369, {	-- Azurite Fists
-						}),
-						i(20503, {	-- Enamored Water Spirit
-						}),
-						i(20556, {	-- Wildstaff
-						}),
+						i(20369),	-- Azurite Fists
+						i(20503),	-- Enamored Water Spirit
+						i(20556),	-- Wildstaff
 					},
 				}),
-				 q(8253, {	-- Destroy Morphaz
+				q(8253, {	-- Destroy Morphaz
 					["sourceQuest"] = 8252,	-- The Siren's Coral
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
@@ -161,15 +152,12 @@ root(ROOTS.Instances, {
 							["provider"] = { "i", 20085 },	-- Arcane Shard
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(20035, {	-- Glacial Spike
-						}),
-						i(20036, {	-- Fire Ruby
-						}),
-						i(20037, {	-- Arcane Crystal Pendant
-						}),
+						i(20035),	-- Glacial Spike
+						i(20036),	-- Fire Ruby
+						i(20037),	-- Arcane Crystal Pendant
 					},
 				}),
-				 q(8418, {	-- Forging the Mightstone
+				q(8418, {	-- Forging the Mightstone
 					["sourceQuest"] = 8416,	-- Inert Scourgestones
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["coord"] = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
@@ -186,14 +174,10 @@ root(ROOTS.Instances, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20504, {	-- Lightforged Blade
-						}),
-						i(20505, {	-- Chivalrous Signet
-						}),
-						i(20512, {	-- Sanctified Orb
-						}),
-						i(20620, {	-- Holy Mightstone
-						}),
+						i(20504),	-- Lightforged Blade
+						i(20505),	-- Chivalrous Signet
+						i(20512),	-- Sanctified Orb
+						i(20620),	-- Holy Mightstone
 					},
 				}),
 				q(4143, {	-- Haze of Evil
@@ -242,8 +226,7 @@ root(ROOTS.Instances, {
 							},
 							["description"] = "Scattered around the inside and outside of the instance.",
 						}),
-						i(1490, {	-- Guardian Talisman
-						}),
+						i(1490),	-- Guardian Talisman
 					},
 				}),
 				q(1446, {	-- Jammal'an the Prophet
@@ -254,13 +237,11 @@ root(ROOTS.Instances, {
 						objective(1, {	-- 0/1 Head of Jammal'an
 							["provider"] = { "i", 6212 },	-- Head of Jammal'an
 						}),
-						i(11124, {	-- Helm of Exile
-						}),
-						i(11123, {	-- Rainstrider Leggings
-						}),
+						i(11124),	-- Helm of Exile
+						i(11123),	-- Rainstrider Leggings
 					},
 				}),
-				 q(8236, {	-- The Azure Key
+				q(8236, {	-- The Azure Key
 					["sourceQuest"] = 8235,	-- Encoded Fragments
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, MAP.AZSHARA },
@@ -272,12 +253,9 @@ root(ROOTS.Instances, {
 							["provider"] = { "i", 20022 },	-- Azure Key
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(19982, {	-- Duskbat Drape
-						}),
-						i(19984, {	-- Ebon Mask
-						}),
-						i(20255, {	-- Whisperwalk Boots
-						}),
+						i(19982),	-- Duskbat Drape
+						i(19984),	-- Ebon Mask
+						i(20255),	-- Whisperwalk Boots
 					},
 				}),
 				q(3373, {	-- The Essence of Eranikus
@@ -288,8 +266,7 @@ root(ROOTS.Instances, {
 					},
 					["lvl"] = 48,
 					["groups"] = {
-						i(10455, {	-- Chained Essence of Eranikus
-						}),
+						i(10455),	-- Chained Essence of Eranikus
 					},
 				}),
 				q(3374, {	-- The Essence of Eranikus [Part 2]
@@ -316,15 +293,12 @@ root(ROOTS.Instances, {
 								{ "i", 10663, 1 },	-- Essence of Hakkar
 							},
 						}),
-						i(10749, {	-- Avenguard Helm
-						}),
-						i(10750, {	-- Lifeforce Dirk
-						}),
-						i(10751, {	-- Gemburst Circlet
-						}),
+						i(10749),	-- Avenguard Helm
+						i(10750),	-- Lifeforce Dirk
+						i(10751),	-- Gemburst Circlet
 					},
 				}),
-				 q(8232, {	-- The Green Drake
+				q(8232, {	-- The Green Drake
 					["sourceQuest"] = 8231,	-- Wavethrashing
 					["qg"] = 8405,	-- Ogtinc
 					["coord"] = { 42.2, 42.6, MAP.AZSHARA },
@@ -335,12 +309,9 @@ root(ROOTS.Instances, {
 							["provider"] = { "i", 20019 },	-- Tooth of Morphaz
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(19991, {	-- Devilsaur Eye
-						}),
-						i(19992, {	-- Devilsaur Tooth
-						}),
-						i(20083, {	-- Hunting Spear
-						}),
+						i(19991),	-- Devilsaur Eye
+						i(19992),	-- Devilsaur Tooth
+						i(20083),	-- Hunting Spear
 					},
 				}),
 				q(1445, {	-- The Temple of Atal'Hakkar
@@ -353,11 +324,10 @@ root(ROOTS.Instances, {
 						objective(1, {	-- 0/20 Fetish of Hakkar
 							["provider"] = { "i", 6181 },	-- Fetish of Hakkar
 						}),
-						i(1490, {	-- Guardian Talisman
-						}),
+						i(1490),	-- Guardian Talisman
 					},
 				}),
-				 q(8422, {	-- Trolls of a Feather
+				q(8422, {	-- Trolls of a Feather
 					["sourceQuest"] = 8421,	-- The Wrong Stuff
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["coord"] = { 41.6, 45.0, MAP.FELWOOD },
@@ -373,15 +343,12 @@ root(ROOTS.Instances, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20534, {	-- Abyss Shard
-						}),
-						i(20530, {	-- Robes of Servitude
-						}),
-						i(20536, {	-- Soul Harvester
-						}),
+						i(20534),	-- Abyss Shard
+						i(20530),	-- Robes of Servitude
+						i(20536),	-- Soul Harvester
 					},
 				}),
-				 q(8425, {	-- Voodoo Feathers
+				q(8425, {	-- Voodoo Feathers
 					["sourceQuest"] = 8424,	-- War on the Shadowsworn
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
@@ -397,12 +364,9 @@ root(ROOTS.Instances, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20130, {	-- Diamond Flask
-						}),
-						i(20517, {	-- Razorsteel Shoulders
-						}),
-						i(20521, {	-- Fury Visor
-						}),
+						i(20130),	-- Diamond Flask
+						i(20517),	-- Razorsteel Shoulders
+						i(20521),	-- Fury Visor
 					},
 				}),
 				q(4146, {	-- Zapper Fuel
@@ -444,10 +408,8 @@ root(ROOTS.Instances, {
 			}),
 			n(5708, {	-- Spawn of Hakkar
 				["groups"] = {
-					i(10801, {	-- Slitherscale Boots
-					}),
-					i(10802, {	-- Wingveil Cloak
-					}),
+					i(10801),	-- Slitherscale Boots
+					i(10802),	-- Wingveil Cloak
 				},
 			}),
 			o(148832, {	-- Atal'ai Statue
@@ -464,12 +426,9 @@ root(ROOTS.Instances, {
 						["groups"] = {
 							i(10773, {	-- Hakkari Urn
 								["groups"] = {
-									i(10781, {	-- Hakkari Breastplate
-									}),
-									i(10782, {	-- Hakkari Shroud
-									}),
-									i(10780, {	-- Mark of Hakkar
-									}),
+									i(10781),	-- Hakkari Breastplate
+									i(10782),	-- Hakkari Shroud
+									i(10780),	-- Mark of Hakkar
 								},
 							}),
 						},
@@ -477,14 +436,10 @@ root(ROOTS.Instances, {
 					n(8580, {	-- Atal'alarion
 						["description"] = "Summoned by activating the Atal'ai Statues in the proper order.",
 						["groups"] = {
-							i(22444, {	-- Putrid Vine
-							}),
-							i(10799, {	-- Headspike
-							}),
-							i(10800, {	-- Darkwater Bracers
-							}),
-							i(10798, {	-- Atal'alarion Tusk Ring
-							}),
+							i(22444),	-- Putrid Vine
+							i(10799),	-- Headspike
+							i(10800),	-- Darkwater Bracers
+							i(10798),	-- Atal'alarion Tusk Ring
 						},
 					}),
 				},
@@ -499,18 +454,12 @@ root(ROOTS.Instances, {
 					{ "n", 5716 },	-- Zul'Lor
 				},
 				["groups"] = {
-					i(10783, {	-- Atal'ai Spaulders
-					}),
-					i(10787, {	-- Atal'ai Gloves
-					}),
-					i(10784, {	-- Atal'ai Breastplate
-					}),
-					i(10788, {	-- Atal'ai Girdle
-					}),
-					i(10785, {	-- Atal'ai Leggings
-					}),
-					i(10786, {	-- Atal'ai Boots
-					}),
+					i(10783),	-- Atal'ai Spaulders
+					i(10787),	-- Atal'ai Gloves
+					i(10784),	-- Atal'ai Breastplate
+					i(10788),	-- Atal'ai Girdle
+					i(10785),	-- Atal'ai Leggings
+					i(10786),	-- Atal'ai Boots
 				},
 			}),
 			e(457, {	-- Avatar of Hakkar
@@ -568,8 +517,7 @@ root(ROOTS.Instances, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					i(10454, {	-- Essence of Eranikus
-					}),
+					i(10454),	-- Essence of Eranikus
 					i(10828),	-- Dire Nail
 					i(10847),	-- Dragon's Call
 					i(10837),	-- Tooth of Eranikus

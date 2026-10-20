@@ -791,8 +791,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 							{ "o", 22245 },	-- Sack of Meat
 						},
 					}),
-					i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
-					}),
+					i(3463),	-- Silver Star [Classic] / Broken Silver Star [TBC]
 					i(3464),	-- Feathered Arrow
 					i(3465),	-- Exploding Shot
 				},

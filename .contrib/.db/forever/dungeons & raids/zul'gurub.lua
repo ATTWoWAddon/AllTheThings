@@ -660,21 +660,21 @@ root(ROOTS.Instances, {
 						i(19949),	-- Zandalarian Hero Medallion
 					},
 				}),
-				 q(9210, {	-- The Savage Guard - Arcanum of Focus
+				q(9210, {	-- The Savage Guard - Arcanum of Focus
 					["qg"] = 15042,	-- Zanza the Restless
 					["cost"] = { { "i", 18330, 1 } },	-- Arcanum of Focus
 					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = { i(22635) },	-- Savage Guard
 				}),
-				 q(9208, {	-- The Savage Guard - Arcanum of Protection
+				q(9208, {	-- The Savage Guard - Arcanum of Protection
 					["qg"] = 15042,	-- Zanza the Restless
 					["cost"] = { { "i", 18331, 1 } },	-- Arcanum of Protection
 					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = { i(22635) },	-- Savage Guard
 				}),
-				 q(9209, {	-- The Savage Guard - Arcanum of Rapidity
+				q(9209, {	-- The Savage Guard - Arcanum of Rapidity
 					["qg"] = 15042,	-- Zanza the Restless
 					["cost"] = { { "i", 18329, 1 } },	-- Arcanum of Rapidity
 					["repeatable"] = true,
@@ -712,8 +712,8 @@ root(ROOTS.Instances, {
 				n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, MAP.STRANGLETHORN_VALE },
 					["groups"] = {
-						 i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
-						 i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
+						i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
+						i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
 						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
 						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
 						i(19766),	-- Pattern: Bloodvine Boots (RECIPE!)
@@ -1058,7 +1058,7 @@ root(ROOTS.Instances, {
 				i(19920),	-- Primalist's Band
 			}),
 			n(14507, {	-- High Priest Venoxis
-				 i(22216),	-- Venoxis's Venom Sac
+				i(22216),	-- Venoxis's Venom Sac
 				i(19903),	-- Fang of Venoxis
 				i(19900),	-- Zulian Stone Axe
 				i(19907),	-- Zulian Tigerhide Cloak
@@ -1075,8 +1075,7 @@ root(ROOTS.Instances, {
 				i(19871),	-- Talisman of Protection
 			}),
 			n(11382, {	-- Bloodlord Mandokir
-				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
-				}),
+				i(19872),	-- Swift Razzashi Raptor (MOUNT!)
 				i(19867),	-- Bloodlord's Defender
 				i(19874),	-- Halberd of Smiting
 				i(20038),	-- Mandokir's Sting
@@ -1092,8 +1091,8 @@ root(ROOTS.Instances, {
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			o(180368, {	-- Tablet of Madness
-				["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
 				["requireSkill"] = ALCHEMY,
+				["learnedAt"] = 300,
 				["groups"] = { recipe(24266) },	-- Gurubashi Mojo Madness
 			}),
 			filter(TRINKET_F, {
@@ -1203,8 +1202,7 @@ root(ROOTS.Instances, {
 				i(19993),	-- Hoodoo Hunting Bow
 			}),
 			n(14509, {	-- High Priest Thekal
-				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
-				}),
+				i(19902),	-- Swift Zulian Tiger (MOUNT!)
 				i(19896),	-- Thekal's Grasp
 				i(19901),	-- Zulian Slicer
 				i(20266),	-- Peacekeeper Leggings

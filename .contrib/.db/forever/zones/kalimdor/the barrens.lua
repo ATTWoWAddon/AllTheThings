@@ -1832,10 +1832,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 14,
 			}),
 			q(866, {	-- Root Samples
-				description = "To access this quest, you must have at least 40 skill in Herbalism.",
 				qg = 3446,	-- Mebok Mizzyrix
 				coord = { 62.4, 37.6, MAP.THE_BARRENS },
 				requireSkill = HERBALISM,
+				learnedAt = 40,
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/8 Root Sample

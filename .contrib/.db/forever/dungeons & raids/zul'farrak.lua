@@ -21,10 +21,8 @@ root(ROOTS.Instances, {
 						objective(1, {	-- 0/1 Divino-matic Rod
 							["provider"] = { "i", 8548 },	-- Divino-matic Rod
 						}),
-						i(9534, {	-- Engineer's Guild Headpiece
-						}),
-						i(9533, {	-- Masons Fraternity Ring
-						}),
+						i(9534),	-- Engineer's Guild Headpiece
+						i(9533),	-- Masons Fraternity Ring
 					},
 				}),
 				q(2770, {	-- Gahz'rilla
@@ -151,10 +149,8 @@ root(ROOTS.Instances, {
 						objective(1, {	-- 0/1 Tiara of the Deep
 							["provider"] = { "i", 9234 },	-- Tiara of the Deep
 						}),
-						i(9527, {	-- Spellshifter Rod
-						}),
-						i(9531, {	-- Gemshale Pauldrons
-						}),
+						i(9527),	-- Spellshifter Rod
+						i(9531),	-- Gemshale Pauldrons
 					},
 				}),
 				q(3042, {	-- Troll Temper
@@ -243,8 +239,7 @@ root(ROOTS.Instances, {
 			n(10081, {	-- Dustwraith
 				["description"] = "This is a Rare Creature and, as such, is not always present.",
 				["groups"] = {
-					i(12471, {	-- Desertwalker Cane
-					}),
+					i(12471),	-- Desertwalker Cane
 				},
 			}),
 			n(7796, {	-- Nekrum Gutchewer

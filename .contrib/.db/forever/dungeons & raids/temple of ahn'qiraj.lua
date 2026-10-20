@@ -707,14 +707,10 @@ root(ROOTS.Instances, {
 					},
 					["repeatable"] = true,
 					["groups"] = {
-						i(21242, {	-- Blessed Qiraji War Axe
-						}),
-						i(21269, {	-- Blessed Qiraji Bulwark
-						}),
-						i(21272, {	-- Blessed Qiraji Musket
-						}),
-						i(21244, {	-- Blessed Qiraji Pugio
-						}),
+						i(21242),	-- Blessed Qiraji War Axe
+						i(21269),	-- Blessed Qiraji Bulwark
+						i(21272),	-- Blessed Qiraji Musket
+						i(21244),	-- Blessed Qiraji Pugio
 					},
 				}),
 				q(8790, {	-- Imperial Qiraji Regalia
@@ -1206,11 +1202,7 @@ root(ROOTS.Instances, {
 				i(20860),	-- Silver Scarab
 				i(20858),	-- Stone Scarab
 				i(21230),	-- Ancient Qiraji Artifact
-				i(21762, {	-- Greater Scarab Coffer Key
-					["timeline"] = {
-						DELETED_4_2_2
-					},
-				}),
+				i(21762),	-- Greater Scarab Coffer Key
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(21232, {	-- Imperial Qiraji Armaments
@@ -1279,8 +1271,7 @@ root(ROOTS.Instances, {
 			e(1543, {	-- The Prophet Skeram
 				["creatureID"] = 15263,
 				["groups"] = {
-					i(22222, {	-- Plans: Thick Obsidian Breastplate (RECIPE!)
-					}),
+					i(22222),	-- Plans: Thick Obsidian Breastplate (RECIPE!)
 					i(21703),	-- Hammer of Ji'zhi
 					i(21128),	-- Staff of the Qiraji Prophets
 					i(21702),	-- Amulet of Foul Warding
@@ -1373,10 +1364,8 @@ root(ROOTS.Instances, {
 					i(21651),	-- Scaled Sand Reaver Leggings
 					i(21645),	-- Hive Tunneler's Boots
 					i(21647),	-- Fetish of the Sand Reaver
-					i(22402, {	-- Libram of Grace
-					}),
-					i(22396, {	-- Totem of Life
-					}),
+					i(22402),	-- Libram of Grace
+					i(22396),	-- Totem of Life
 				},
 			}),
 			e(1548, {	-- Viscidus
@@ -1392,8 +1381,7 @@ root(ROOTS.Instances, {
 					i(21626),	-- Slime-Coated Leggings
 					i(21677),	-- Ring of Qiraji Fury
 					i(21625),	-- Scarab Brooch
-					i(22399, {	-- Idol of Health
-					}),
+					i(22399),	-- Idol of Health
 				},
 			}),
 			e(1546, {	-- Princess Huhuran
@@ -1447,10 +1435,7 @@ root(ROOTS.Instances, {
 				["creatureID"] = 15727,
 				["groups"] = {
 					i(21221),	-- Eye of C'Thun
-					 {
-						["itemID"] = 22734,	-- Base of Atiesh
-						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
-					},
+					i(22734),	-- Base of Atiesh
 					i(20929),	-- Carapace of the Old God
 					i(20933),	-- Husk of the Old God
 					i(21134),	-- Dark Edge of Insanity

@@ -379,8 +379,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 20,
 			}),
 			q(2751, {	-- Barbaric Battlements
-				description =
-					"Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
 				qg = 7790,	-- Orokk Omosh
 				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
 				cost = {
@@ -399,8 +397,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 			}),
 			q(2752, {	-- On Iron Pauldrons
-				description =
-					"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 				sourceQuest = 2751,	-- Barbaric Battlements
 				qg = 7790,	-- Orokk Omosh
 				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -419,8 +415,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 			}),
 			q(2753, {	-- Trampled Under Foot
-				description =
-					"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 				sourceQuest = 2752,	-- On Iron Pauldrons
 				qg = 7790,	-- Orokk Omosh
 				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -441,7 +435,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2754, {	-- Horns of Frenzy
 				description =
-					"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
+					"Plans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
 				sourceQuest = 2753,	-- Trampled Under Foot
 				qg = 7790,	-- Orokk Omosh
 				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -461,8 +455,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 			}),
 			q(2755, {	-- Joys of Omosh
-				description =
-					"This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 				sourceQuest = 2754,	-- Horns of Frenzy
 				qg = 7790,	-- Orokk Omosh
 				coord = { 79.4, 22.4, MAP.ORGRIMMAR },

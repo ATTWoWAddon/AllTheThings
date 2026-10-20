@@ -3818,7 +3818,6 @@ root(ROOTS.Craftables, {
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
-			-- maybe?
 			i(21341),	-- Felcloth Bag
 		}),
 		filter(REAGENTS, {

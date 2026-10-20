@@ -465,10 +465,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 10,
 			}),
 			q(6609, {	-- I Got Nothin' Left!
-				description = "Requires 225 Fishing to start this quest.",
 				qg = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
 				coord = { 48.2, 6.6, MAP.IRONFORGE },
 				requireSkill = FISHING,
+				learnedAt = 225,
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 35,

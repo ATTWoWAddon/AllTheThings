@@ -598,10 +598,11 @@ root(ROOTS.Instances, {
 				i(13523),	-- Blood of Innocents
 				i(13725),	-- Krastinov's Bag of Horrors
 				o(180794, {	-- Journal of Jandice Barov
-					["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
+					["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag.",
 					["groups"] = {
-						r(26086, {	-- Felcloth Bag	\\Maybe?
+						r(26086, {	-- Felcloth Bag
 							["requireSkill"] = TAILORING,
+							["learnedAt"] = 285,
 						}),
 					},
 				}),
@@ -758,7 +759,7 @@ root(ROOTS.Instances, {
 					i(13950),	-- Detention Strap
 					i(13398),	-- Boots of the Shrieker
 					i(22433),	-- Don Mauricio's Band of Domination
-					i(19276),	-- Ace of Portals \\Maybe?
+					i(19276),	-- Ace of Portals
 				},
 			}),
 		},

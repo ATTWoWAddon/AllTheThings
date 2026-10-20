@@ -872,14 +872,13 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 10,
 			}),
 			q(1581, {	-- Elixirs for the Bladeleafs
-				description = "This quest becomes available at Alchemy skill level 20 when the character level requirement is met.\n\nTODO: Check that this is true in Forever.",
 				qg = 2083,	-- Syral Bladeleaf
 				coord = { 56.0, 57.8, MAP.TELDRASSIL },
 				cost = {
 					{ "i", 2454, 6 },	-- Elixir of Minor Strength
 					{ "i", 5997, 2 },	-- Elixir of Minor Defense
 				},
-				learnedAt = 20,
+				learnedAt = 20,	-- TODO: Check that this is true in Forever.
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
