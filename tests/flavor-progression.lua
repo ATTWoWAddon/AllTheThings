@@ -2,8 +2,10 @@
 -- These fixtures do not establish live release dates, loot, or instance difficulty behavior.
 assert(_VERSION == "Lua 5.1");
 local root = arg[1] or ".";
-local function Read(path)
-	local f = assert(io.open(root .. "/" .. path, "rb"));
+local function Read(path, optional)
+	local f, reason, code = io.open(root .. "/" .. path, "rb");
+	if optional and not f and code == 2 then return; end -- ENOENT only; other read failures remain fatal.
+	assert(f, reason);
 	local s = f:read("*a"):gsub("^\239\187\191", ""):gsub("\r\n", "\n"); f:close(); return s;
 end
 local function Compile(source, name, env)
@@ -248,28 +250,39 @@ end
 
 -- Source callbacks changing one field keep the other field paired with their own origin.
 do
-	local app = MakeApp(Profile("titan", 6, 10));
-	local callback = function(group) app.Modules.Progression.SetSourceAvailability(group, "u", nil); end;
-	local source = Item({ releasePhases = { "titan:6" }, u = 2, e = 2, OnUpdate = callback });
-	local merged = app.MergedObject({ source, Item({ releasePhases = { "titan:7" }, e = 1 }) }, true);
-	app.UpdateGroups(nil, { merged });
-	assert(not merged.visible, "A u callback cannot borrow the active event of another route");
-	-- Actual source visibility installs a wrapper after merging on current master.
-	local questModule = Read("src/Modules/QuestRewardVisibility.lua");
-	local wrapper = assert(questModule:match('(source.OnUpdate = function%(row, parent, updateGroup%).-\n\t\t\tend)'));
-	local context = { source = merged, hash = "fixture", onUpdate = callback,
-		self = { IsHidden = function() return false; end } };
-	setmetatable(context, { __index = _G });
-	Compile(wrapper, "QuestRewardVisibility.lua actual callback wrapper", context)();
-	app.UpdateGroups(nil, { merged });
-	assert(not merged.visible, "A post-merge UI callback wrapper must retain the source event condition");
-	-- Repeat the actual wrapper with an obtainable event: its delegate must clear the original u.
-	local eligible = Item({ releasePhases = { "titan:6" }, u = 2, e = 1, OnUpdate = callback });
-	local display = app.MergedObject({ eligible, Item({ releasePhases = { "titan:7" } }) }, true);
-	context.source = display;
-	Compile(wrapper, "QuestRewardVisibility.lua actual callback wrapper", context)();
-	app.UpdateGroups(nil, { display });
-	assert(display.visible and eligible.u == 2, "The wrapped callback must update the displayed origin without mutating its source");
+	local function CheckCallbackWrapper(install, label)
+		local app = MakeApp(Profile("titan", 6, 10));
+		local callback = function(group) app.Modules.Progression.SetSourceAvailability(group, "u", nil); end;
+		local source = Item({ releasePhases = { "titan:6" }, u = 2, e = 2, OnUpdate = callback });
+		local merged = app.MergedObject({ source, Item({ releasePhases = { "titan:7" }, e = 1 }) }, true);
+		app.UpdateGroups(nil, { merged });
+		assert(not merged.visible, "A u callback cannot borrow the active event of another route");
+		install(merged, callback);
+		app.UpdateGroups(nil, { merged });
+		assert(not merged.visible, label .. " must retain the source event condition");
+		local eligible = Item({ releasePhases = { "titan:6" }, u = 2, e = 1, OnUpdate = callback });
+		local display = app.MergedObject({ eligible, Item({ releasePhases = { "titan:7" } }) }, true);
+		install(display, callback);
+		app.UpdateGroups(nil, { display });
+		assert(display.visible and eligible.u == 2, label .. " must update the displayed origin without mutating its source");
+	end
+	-- Always test callback composition, independently of optional addon features.
+	CheckCallbackWrapper(function(source, callback)
+		source.OnUpdate = function(row, parent, updateGroup) return callback(row, parent, updateGroup); end;
+	end, "A generic post-merge wrapper");
+	-- Check the actual feature wrapper too when this checkout includes that module.
+	local questModule = Read("src/Modules/QuestRewardVisibility.lua", true);
+	if questModule then
+		local wrapper = assert(questModule:match('(source.OnUpdate = function%(row, parent, updateGroup%).-\n\t\t\tend)'));
+		CheckCallbackWrapper(function(source, callback)
+			local context = { source = source, hash = "fixture", onUpdate = callback,
+				self = { IsHidden = function() return false; end } };
+			setmetatable(context, { __index = _G });
+			Compile(wrapper, "QuestRewardVisibility.lua actual callback wrapper", context)();
+		end, "The actual QuestRewardVisibility wrapper");
+	else
+		print("SKIP: optional QuestRewardVisibility wrapper is absent from this checkout");
+	end
 end
 
 -- Explicit nil overrides change one field while the other still follows the live source.

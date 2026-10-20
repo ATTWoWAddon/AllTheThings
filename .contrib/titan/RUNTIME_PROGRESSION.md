@@ -57,7 +57,7 @@ app.Modules.Progression.SetSourceAvailability(group, "e", eventID)
 
 Only `"u"` and `"e"` are accepted. The helper changes the displayed field and the retained callback origin's corresponding condition. Explicit `nil` is distinct from no override; untouched fields keep reading the live source. It does not borrow fields from another alternative or change generic callback dispatch. Existing callback wrappers can delegate without changing the source identity.
 
-The standalone regression uses synthetic adapter callbacks through actual runtime merge/clone/filter code, including the existing quest-reward visibility wrapper. The six authored Ulduar adapters and their source-to-generated-output verification remain part of the paused integration; they are not included in these runtime commits.
+The standalone regression uses synthetic adapter callbacks through actual runtime merge/clone/filter code, including an unconditional delegating-wrapper fixture and an additional integration check when the optional quest-reward visibility module is present. The six authored Ulduar adapters and their source-to-generated-output verification remain part of the paused integration; they are not included in these runtime commits.
 
 ## Candidate Titan checks and reports
 
@@ -77,7 +77,7 @@ lua5.1 tests/flavor-progression.lua .
 lua5.1 .contrib/titan/benchmark-progression.lua . 5000
 ```
 
-The existing Lua regression workflow discovers the two new suites alongside the seven existing suites. The standalone tests do not read generated databases or authored Parser inputs. Published-tree verification must run all nine suites against only the selected commit contents, so held Parser files cannot satisfy an accidental dependency.
+The existing Lua regression workflow discovers the two new suites alongside the existing suites. The standalone tests do not read generated databases or authored Parser inputs. Published-tree verification must run every discovered suite against only the selected commit contents, so held Parser files cannot satisfy an accidental dependency. Verify the pull-request merge tree separately when its base has changed; the available suite count may differ from the branch.
 
 The benchmark compares opted-in and legacy runtime paths using synthetic inputs and actual runtime functions. It reports process CPU time and Lua heap measurements, including clone cleanup; ending heap size is not peak memory. It does not establish live WoW performance.
 
