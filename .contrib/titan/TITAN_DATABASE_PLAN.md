@@ -2,11 +2,13 @@
 
 [English](TITAN_DATABASE_PLAN.md) | [繁體中文](TITAN_DATABASE_PLAN.zh-TW.md) | [简体中文](TITAN_DATABASE_PLAN.zh-CN.md)
 
-Status: Draft; not implemented. Updated: 2026-10-19.
+Status: Draft; not implemented. Updated: 2026-10-20.
 
 This plan covers Parser configuration, data sources, in-game loading, Contributor Reports, and build and release delivery for China-region Titan Reforged (the Chrono realm). The goal is to give Titan its own database artifacts while retaining confirmed reusable `standard/shared` sources and avoiding impact on regular Wrath and other flavors.
 
-The exploration baseline is `master` at `a4f9c0c1cd27e8dbad8eb952f3da5d72e56b2e2a`; the planning branch is `codex/titan-database-plan`. These documents cover planning only. The file list, tests, and implementation steps below remain future work; no Parser execution or implementation is included.
+The repository review baseline is `upstream/master` at `5eb0692ad09ef1ad77bf630f8ff9d681dac7be0a`; the planning branch is `codex/titan-database-plan`. The repository assumptions and code references were rechecked on 2026-10-20. These documents cover planning only; no Parser execution or Titan implementation is included.
+
+At this baseline, all three issue forms already offer `Titan`, and the existing Lua regression workflow discovers standalone suites automatically. Reuse those capabilities as described below. The dedicated Titan profile, database artifacts, detection, and phase policy remain proposed work. External client and roadmap observations retain their original dates; this repository refresh does not establish new client observations.
 
 ## Understand the Problem Through Existing Data
 
@@ -125,7 +127,7 @@ Each step should be an independently reviewable change. Separate behavior, data 
 | 2 | Add the fail-closed Titan detector and shared Wrath loading route before adding a Titan data case. Add the Titan profile and build/debug entry points; put `../Titan/Database.xml` in the ordinary Wrath profile's `extra-database-files`, with Wrath `DataRequirements` excluding Titan and Titan `DataRequirements` including it. Add narrow runtime ReferenceDB guards and the early Titan reference file, and isolate build-time ItemDB inputs. Prioritize DBContext and profile tags. | Fixtures cover detector boundaries and all negative cases; unknown or invalid identity must leave Titan inactive. Wrath and Titan use the shared Wrath route, while Era and SoD retain the Vanilla route. Both XML paths may be enumerated, but only matching requirements and runtime guards allow assignments and registrations. Configuration is valid and build-time ItemDB data is mutually exclusive. |
 | 3 | Use one Titan-specific record with complete supporting evidence to connect the Parser, complete independent output, early reference data, and client loading end to end. | Titan activates that record and its references; ordinary Wrath does not activate Titan data; each login uses exactly one complete database. |
 | 4 | Implement the selected phase policy and evidenced content differences; address required transmog, achievement, difficulty, and settings compatibility. | Cumulative unlocks, unknown progression, source additions/replacements/removals, event windows, and saved choices behave as reviewed; existing valid sources remain available. |
-| 5 | Add version and profile information to Contributor Reports, and add a Titan issue flavor option. | Reports can identify Titan, the full client version/build/interface, ATT version, and observation context. |
+| 5 | Add version and profile information to Contributor Reports; reuse the existing `Titan` issue-form choices and relevant version/context fields. | Reports can identify Titan, the full client version/build/interface, ATT version, and observation context; no duplicate flavor option is added. |
 | 6 | Connect CI, Release, and artifact checks; complete cross-flavor regression and in-game validation. | A Titan failure fails the overall check; clean installs, release archives, and applicable db-sync pipelines contain the correct artifacts. |
 
 For each game-data addition or correction, list affected IDs, flavor, client build, ATT version, region, observation date, and sources. Under `AGENTS.md`, attach an in-game screenshot, Contributor Report, or direct Wowhead link. Also record the number of independent sources for gameplay claims; mark a claim cross-verified only when at least two independent sources support it. Official overviews can support architectural context, but do not replace evidence for individual drops, rewards, or IDs.
@@ -142,13 +144,15 @@ For each game-data addition or correction, list affected IDs, flavor, client bui
 | Merge and sources | Use fixed samples with different values for the same ID, missing records, array fields, and multiple sources for one item. | Conflicts are handled explicitly; replacing or removing one source does not affect others; results do not depend on accidental file ordering. |
 | Raw data | Check snapshot version, locale, hotfix records, and selection settings; test input with the wrong flavor/build. | Mismatched input is explicitly rejected or reported and cannot silently be marked as a successful Titan build. |
 | Artifacts | In a clean output location, inspect ReferenceDB, LocalizationDB, Database.xml, Categories, and files referenced by XML. | Required files are present, profiles are consistent, and the build does not rely on leftover files from a previous run. |
-| Lua behavior | Follow existing standalone `tests/` conventions with a Lua 5.1 fixture that exercises the actual detector, generated guards, locale/category registration, and reference side effects; do not add a test framework or duplicate only the pure predicate. | All added or affected Lua tests use Lua 5.1 only; fixtures do not replace in-game compatibility validation. |
+| Lua behavior | Follow existing standalone `tests/` conventions with a Lua 5.1 fixture that exercises the actual detector, generated guards, locale/category registration, and reference side effects. The existing workflow discovers nested suites automatically; do not add a registry, a framework, or a copy of only the pure predicate. | All added or affected Lua tests use Lua 5.1 only; each suite runs in a fresh process and failures reach the aggregate gate. Fixtures do not replace in-game compatibility validation. |
 | Full Parser | Run the data pipeline in the supported Parser build environment, retaining configuration, input snapshot, and error records. | The full build succeeds. Record this as tool-integration validation, separately from Lua 5.1 AddOn tests. |
 | Cross-flavor regression | With the same tools, snapshots, and settings, compare Retail, Era, SoD, TBC, Wrath, Cata, MoP, and Forever. Include PTR/Beta when shared changes affect them. | Non-Titan artifacts remain unchanged except for reasonable differences listed in advance. Differences are traceable; do not hide them by ignoring an entire file. |
 | In game | Log in/reload on Titan and ordinary Wrath; test data search, phase settings, actual instance difficulty, collected and uncollected appearances, and Contributor Reports. Check account synchronization when needed. | The correct database loads without Lua errors, and collection status matches actual state. CN or zhCN clients that are not Titan are not misidentified. |
 | CI and delivery | Intentionally fail the Titan step to test the overall gate; inspect release zip, clean checkout, missing and stale files, and applicable db-sync hash/dirty-db protection. | `continue-on-error` cannot swallow a failure; delivered artifacts contain the complete Titan output. |
 
 Full Parser tests must use its supported execution environment. This plan does not replace the Parser's NLua/native Lua dependency. Record test tools, data snapshots, expected results, and actual results separately; a successful Lua fixture does not establish that the full Parser or client has been validated.
+
+The existing [Lua regression workflow](../../.github/workflows/LuaRegression.yml) runs recursively discovered `tests/**/*.lua` suites in sorted order with a fresh `lua5.1` process per suite. Its current path filters cover `AllTheThings.lua`, `src/**`, `lib/**`, `tests/**`, and the workflow itself. When Titan fixtures exercise TOC loading or generated guards, include the relevant `AllTheThings.toc`, `db/**`, or `.contrib/**` dependencies in those triggers as needed; changes confined to those paths do not currently trigger this workflow. Test both suite discovery and aggregate failure reporting. This document refresh does not execute these suites.
 
 ## Titan Client Information to Provide
 
@@ -183,7 +187,7 @@ Also decide the first release's content scope: start with loading and a small am
 
 ## Planned File Changes
 
-All paths below are relative to the repository root. “Add” means a proposed path that does not exist yet; “Conditional” means a change requires supporting investigation or testing; “Generated” means produced by tools and not patched by hand. Directory entries represent file sets; finalize their exact contents after selecting the scope and snapshot.
+All paths below are relative to the repository root. “Add” means a proposed path that does not exist yet; “Conditional” means a change requires supporting investigation or testing; “Generated” means produced by tools and not patched by hand; “Reuse/verify” means an existing capability with no planned edit unless a gap is found. Directory entries represent file sets; finalize their exact contents after selecting the scope and snapshot.
 
 ### Configuration and Raw Data
 
@@ -240,9 +244,10 @@ All paths below are relative to the repository root. “Add” means a proposed 
 | File or directory | Type | Planned content |
 | --- | --- | --- |
 | `.github/workflows/Parser.yml` | Modify | Titan invocation, trigger/validation strategy, overall success check, and required artifact checks; C# source changes also need corresponding validation. |
+| `.github/workflows/LuaRegression.yml` | Conditional | Reuse automatic discovery of the proposed Titan suites and the aggregate gate. Expand triggers only for TOC, generated database, or Parser/source dependencies the fixtures actually exercise; no manual suite registry is needed. |
 | `.github/workflows/Release.yml`, `Parser_Objective.yml` (same directory) | Modify | Include Titan in Release and manual all-version builds. |
 | `.github/workflows/Parser_with_new_CD.yml` | Conditional | If this delivery route is retained, update its flavor set and overall check. At the baseline, it targets `forever-beta` and is not treated as an active production CD workflow on master. |
-| `.github/ISSUE_TEMPLATE/data_discrepancy.yml`, `bug_report.yml`, `feature_request.yml` (same directory) | Modify | Add a Titan flavor option and reuse the existing version and context fields. |
+| `.github/ISSUE_TEMPLATE/data_discrepancy.yml`, `bug_report.yml`, `feature_request.yml` (same directory) | Reuse/verify | All three already include `Titan`. Reuse the existing choice and relevant version/context fields; change only if the report integration reveals a specific gap. |
 | `.pkgmeta`, `.contrib/db-sync/sync_db.py`, `.contrib/db-sync/README.md` | Conditional | Verify that existing generic packaging and sync can carry Titan; fix only required gaps and align documentation with the selected pipeline. |
 | `Link ATT to WoW.bat` | Conditional | After confirming the actual product folder, assess whether a new installation path is needed. |
 
@@ -252,7 +257,7 @@ The first phase does not add a separate `.contrib/.db/titan/` root. If that phys
 
 ## Primary Code References
 
-Recheck these locations before implementation; line numbers refer to the exploration baseline.
+Recheck these locations before implementation; line numbers refer to the repository review baseline above.
 
 | Reference | Related mechanism |
 | --- | --- |
@@ -267,5 +272,7 @@ Recheck these locations before implementation; line numbers refer to the explora
 | [TOC](../../AllTheThings.toc), 6, 37–40, 96; [Contributor](../../src/Modules/Contributor.lua), 76–84, 262 | Interface declaration, data-loading entry point, and report version information. |
 | [Phase constants](../.db/shared/lib/Constants/Phases.lua), 41–53, 84–122, 2366–2402; [Shortcuts](../.db/shared/functions/Shortcuts.lua), 681–695, 1264–1265 | Occupied IDs, Wrath phase definitions, and missing-value versus forced phase application. |
 | [Framework.Processing.cs](../src/Parser/Framework/Framework.Processing.cs), 919–942, 5002–5062; [Program.cs](../src/Parser/Program.cs), 965–970 | Timeline pruning/overwrites precede phase retention; numeric phase preprocessing remains a TODO. |
-| [Phase settings](../../src/Settings/Pages/Phases.lua), 21–68, 95–191; [Settings](../../src/Settings/Settings.lua), 589–620, 1171–1176 | Per-ID visibility, historical defaults, hardcoded pages, and saved choices. |
+| [Phase settings](../../src/Settings/Pages/Phases.lua), 21–68, 95–191; [Settings](../../src/Settings/Settings.lua), 591–623, 1174–1180 | Per-ID visibility, historical defaults, hardcoded pages, and saved choices. |
 | [Filter](../../src/Modules/Filter.lua), 575–580, 617–624; [DataHandling](../../src/DataHandling.lua), 803–831, 932–955; [Ulduar](<../.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/5 Ulduar.lua>), 643–655 | Parent-chain filtering, source merging, and an embedded Wrath achievement phase rule requiring review. |
+| [Data discrepancy form](../../.github/ISSUE_TEMPLATE/data_discrepancy.yml), 25; [Bug report form](../../.github/ISSUE_TEMPLATE/bug_report.yml), 25; [Feature request form](../../.github/ISSUE_TEMPLATE/feature_request.yml), 26 | Existing Titan choices to reuse. |
+| [LuaRegression.yml](../../.github/workflows/LuaRegression.yml), 3–22, 51–61, 77–92 | Current path filters, automatic suite discovery, fresh Lua 5.1 processes, and aggregate failure gate. |
