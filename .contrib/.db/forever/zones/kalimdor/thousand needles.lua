@@ -783,6 +783,13 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					}),
 				},
 			}),
+			q(98069, {	-- Stolen Freewind Supplies
+				qg = 4877,	-- Jandia
+				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 31,
+			}),
 			q(98070, {	-- Stop the Screeching
 				qg = 4877,	-- Jandia
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },

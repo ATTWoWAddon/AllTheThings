@@ -276,7 +276,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						qg = 3143,	-- Gornek
 						qi = 9579,	-- Tainted Parchment
 						coords = { 42.0, 68.4, MAP.DUROTAR },
-						races = { ORC, TROLL },
+						races = { ORC },
 						classes = { WARLOCK },
 					}),
 					q(98575, {	-- Tainted Tablet
