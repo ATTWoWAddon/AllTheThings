@@ -378,6 +378,16 @@ do
 	end
 end
 
+--- Existing tooltip rows and the marker used to avoid duplicate source sections.
+---@class ATTQuestSourceTooltipInfo
+---@field [integer] ATTTooltipLine Formatted source rows in display order.
+---@field hasSourceLocations? boolean Whether a source section was appended.
+
+--- Appends source paths after per-occurrence display and existing tooltip filters.
+---@param tooltipInfo ATTQuestSourceTooltipInfo Existing information rows to append to.
+---@param paramA string Thing key selecting the existing source searcher.
+---@param paramB number Thing identifier, including encoded modItemID values.
+---@return true|nil working True while a source name is still being retrieved.
 local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- Create a list of sources
 	-- app.PrintDebug("SourceLocations",paramA,paramB,SourceLocationSettingsKey[paramA])
@@ -403,9 +413,13 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	for i=1,#allReferences do
 		j = allReferences[i]
 		parent = directSources and j or j.parent
+		local rewardVisibility
+		if paramA == "itemID" and not directSources then
+			rewardVisibility = app.Modules.QuestRewardVisibility.GetSourceVisibility(j)
+		end
 		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j))
-		if parent and parent.parent and (showCompleted or not app.IsComplete(j))
-		then
+		if parent and parent.parent and rewardVisibility ~= false
+			and (rewardVisibility or showCompleted or not app.IsComplete(j)) then
 			text = GenerateSourcePath(parent, parent.objectiveID and 0 or 1);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
 			if showUnsorted or issecretvalue(text) or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
@@ -1000,7 +1014,9 @@ local function GetCraftingOutputRecipes(thing)
 	return recipeIDs
 end
 
--- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
+--- Builds the existing Sources group from original occurrences and acquisition metadata.
+---@param group? ATTQuestSourceView Popout root whose sources are being assembled.
+---@return nil
 local function BuildSourceParent(group)
 	-- only show sources for Things or specific of other types
 	if not group or not group.key then return; end
@@ -1020,6 +1036,7 @@ local function BuildSourceParent(group)
 
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
+	local sourceVisibility = groupKey == "itemID" and app.Modules.QuestRewardVisibility.CreateSourceFilter(group)
 	local isDirectSources
 	local things = specificSource and { group }
 	if not things then
@@ -1038,6 +1055,9 @@ local function BuildSourceParent(group)
 	if things then
 		local groupHash = group.hash;
 		local parents = {};
+		--- Candidate copies obtained from containment, separate from additional acquisition sources.
+		---@type { [ATTQuestSourceView]: boolean }
+		local hierarchySources = {}
 		local isAchievement = groupKey == "achievementID";
 		local parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
@@ -1064,6 +1084,7 @@ local function BuildSourceParent(group)
 							-- add the parent for display later
 							parent = CreateObject(parent, true)
 							parents[#parents + 1] = parent
+							hierarchySources[parent] = true
 							-- achievement criteria can nest inside their Source for clarity
 							if isAchievement and KeepSourced[thing.key] then
 								NestObject(parent, thing, true)
@@ -1118,7 +1139,7 @@ local function BuildSourceParent(group)
 					for _,p in ipairs(thing.providers) do
 						type, id = p[1], p[2];
 						-- app.PrintDebug("Root Provider",type,id);
-						---@type any
+						---@type ATTQuestSourceView|false|nil
 						local pRef = (type == "i" and SearchForObject("itemID", id, "field"))
 								or   (type == "o" and SearchForObject("objectID", id, "field"))
 								or   (type == "n" and SearchForObject("npcID", id, "field"))
@@ -1218,11 +1239,13 @@ local function BuildSourceParent(group)
 			IgnorePopout=true,
 		})
 		for _,parent in ipairs(parents) do
+			if sourceVisibility then sourceVisibility:Add(parent, hierarchySources[parent]) end
 			-- if there's nothing nested under the parent, then force it to be visible
 			-- otherwise the visibility can be driven by the nested thing
 			parent.OnSetVisibility = not parent.g and app.AlwaysShowUpdate or nil	-- TODO: filter actual unobtainable sources...
 		end
 		PriorityNestObjects(sourceGroup, parents, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
+		if sourceVisibility then sourceVisibility:Apply(sourceGroup) end
 		NestObject(group, sourceGroup, nil, 1);
 	end
 end
