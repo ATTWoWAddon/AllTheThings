@@ -69,21 +69,24 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, {
-			m(ANTORAN_WASTES, {
-				n(QUESTS, {
-					q(48984, {	-- Triggers when combining the Smashed Portal Generator and other parts to make Vishax's Portal Generator
-						["name"] = "Vishax's Portal Generator repaired",
+		["timeline"] = { ADDED_7_3_0 },
+		["groups"] = {
+			m(ARGUS, {
+				m(ANTORAN_WASTES, {
+					n(QUESTS, {
+						q(48984, {	-- Triggers when combining the Smashed Portal Generator and other parts to make Vishax's Portal Generator
+							["name"] = "Vishax's Portal Generator repaired",
+						}),
+						q(49162),	-- Triggers when completing 'Sizing Up The Opposition' (questID 48929) (spellID 254549)
 					}),
-					q(49162),	-- Triggers when completing 'Sizing Up The Opposition' (questID 48929) (spellID 254549)
-				}),
-				n(TREASURES, {
-					q(49023),	-- Triggers when looting Ancient Legion War Cache. Probably achievement criteria as chests have their own questIDs
-					q(49024),	-- Triggers when looting Fel-Bound Chest. Probably achievement criteria as chests have their own questIDs
+					n(TREASURES, {
+						q(49023),	-- Triggers when looting Ancient Legion War Cache. Probably achievement criteria as chests have their own questIDs
+						q(49024),	-- Triggers when looting Fel-Bound Chest. Probably achievement criteria as chests have their own questIDs
+					}),
 				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

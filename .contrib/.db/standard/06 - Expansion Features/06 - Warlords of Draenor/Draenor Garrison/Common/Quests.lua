@@ -3301,7 +3301,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	n(GARRISONS, {
 		n(QUESTS, {
 			n(GARRISON_CAMPAIGN, {
@@ -3356,4 +3356,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 			q(39829, { ["timeline"] = { ADDED_6_2_2 } }),	-- Sleigh and Guards Shared Criteria - Winter Veil
 		}),
 	}),
-})));
+}));

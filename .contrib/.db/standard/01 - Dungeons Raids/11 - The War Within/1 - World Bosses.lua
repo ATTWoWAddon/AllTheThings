@@ -87,7 +87,7 @@ InstanceHelper.Boss, InstanceHelper.BossWorldQuest
 
 InstanceHelper.Coords = EncounterCoords
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["groups"] = bubbleDownFiltered({
@@ -145,11 +145,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(WORLD_BOSSES, {
-		q(89401),	-- First weekly Gobfather account kill for warbound loot
-		q(90783),	-- First weekly Reshanor account kill for warbound loot
+		["timeline"] = { ADDED_11_1_0_SEASONSTART },
+		["groups"] = {
+			q(89401),	-- First weekly Gobfather account kill for warbound loot
+			q(90783),	-- First weekly Reshanor account kill for warbound loot
+		},
 	}),
-})));
+}));

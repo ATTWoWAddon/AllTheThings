@@ -398,17 +398,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(AZERITE_ESSENCES, {
-		q(56951),	-- triggered when making r2 of the Eternal Palace HoA essence
-		q(56944),	-- triggered when making r2 of the Eternal Palace HoA essence
-		q(57033),	-- R1 Anima of Life and Death
-		q(57044),	-- R2 Anima of Life and Death
-		q(57032),	-- R1 Converging Lens of the Focusing Iris
-		q(62688),	-- R1 Converging Lens of the Focusing Iris
-		q(57035),	-- R1 Bursting Seed of Life
-		q(57036),	-- R2 Magnifying Lens of the Focusing Iris
-		q(62689),	-- R2 Magnifying Lens of the Focusing
-		q(57034),	-- R2 Replicating Seed of Abundance
+		["timeline"] = { ADDED_8_2_0 },
+		["groups"] = {
+			q(56951),	-- triggered when making r2 of the Eternal Palace HoA essence
+			q(56944),	-- triggered when making r2 of the Eternal Palace HoA essence
+			q(57033),	-- R1 Anima of Life and Death
+			q(57044),	-- R2 Anima of Life and Death
+			q(57032),	-- R1 Converging Lens of the Focusing Iris
+			q(62688),	-- R1 Converging Lens of the Focusing Iris
+			q(57035),	-- R1 Bursting Seed of Life
+			q(57036),	-- R2 Magnifying Lens of the Focusing Iris
+			q(62689),	-- R2 Magnifying Lens of the Focusing
+			q(57034),	-- R2 Replicating Seed of Abundance
+		},
 	}),
-})));
+}));

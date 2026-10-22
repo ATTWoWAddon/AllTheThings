@@ -712,7 +712,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ ["timeline"
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(TORGHAST, {	-- Torghast
 	-- Various Triggers
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
@@ -784,4 +784,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 		q(65298, { ["timeline"] = { ADDED_9_2_0 } }),	-- Unlocking Layer 5-8
 		q(65681, { ["timeline"] = { ADDED_9_2_0 } }),	-- Unlocking 'Unity' Legendary power (spellID 367716)
 	}),
-})));
+}));

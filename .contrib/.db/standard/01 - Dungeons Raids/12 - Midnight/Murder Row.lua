@@ -33,7 +33,7 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1304, {	-- Murder Row
 		InRetailSeason=InRetailSeason,
 		["coord"] = { 56.8, 61.1, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -173,4 +173,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));

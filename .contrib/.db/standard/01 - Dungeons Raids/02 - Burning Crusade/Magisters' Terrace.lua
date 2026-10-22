@@ -400,9 +400,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(249, {
 		q(35531),	-- Magisters' Terrace Reward Quest - Normal completion
 		q(35532),	-- Magisters' Terrace Reward Quest - Heroic completion
 	}),
-})));
+}));

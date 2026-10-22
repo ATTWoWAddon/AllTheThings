@@ -1489,20 +1489,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(KALIMDOR, {
-		n(SILITHUS_THE_WOUND, {
-			m(CHAMBER_OF_HEART, {
-				q(59133),	-- Upgrading Ashjra'kamas from 122 -> 125 corruption
-				q(59553),	-- Entering the Chamber of Heart for the first time
-				q(57244),	-- triggered when turning in #55618, "The Heart Forge"
+		["timeline"] = { ADDED_8_3_0 },
+		["groups"] = {
+			n(SILITHUS_THE_WOUND, {
+				m(CHAMBER_OF_HEART, {
+					q(59133),	-- Upgrading Ashjra'kamas from 122 -> 125 corruption
+					q(59553),	-- Entering the Chamber of Heart for the first time
+					q(57244),	-- triggered when turning in #55618, "The Heart Forge"
+				}),
+				n(EMISSARY_QUESTS, {
+					q(54611),	-- Paragon of the Champions of Azeroth
+				}),
+				n(RARES, {
+					q(50225),	-- first kill of Ogmot the Mad
+				}),
 			}),
-			n(EMISSARY_QUESTS, {
-				q(54611),	-- Paragon of the Champions of Azeroth
-			}),
-			n(RARES, {
-				q(50225),	-- first kill of Ogmot the Mad
-			}),
-		}),
+		},
 	}),
-})));
+}));

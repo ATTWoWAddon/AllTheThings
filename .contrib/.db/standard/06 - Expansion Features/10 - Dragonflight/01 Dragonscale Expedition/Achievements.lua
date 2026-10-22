@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		faction(FACTION_DRAGONSCALE_EXPEDITION, {
 			["icon"] = 4687628,
@@ -45,4 +45,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		})),
 	}),
-})));
+}));

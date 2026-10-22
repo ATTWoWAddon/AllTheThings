@@ -529,63 +529,69 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
+	expansion(EXPANSION.DF, {
 		n(PLUNDERSTORM, {
-			q(80110),	-- First WQ of the Day
-			q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
-			q(81657),	-- Renown 16 - Marveouls Multi-Shot unlocked in Plunderstorm
-			q(80263),	-- Renown 17 - Snazzy Swabbie outfit unlocked in Plunderstorm
-			q(80264),	-- Renown 37 - Strapping Swabbie outfit unlocked in Plunderstorm
+			["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END },
+			["groups"] = {
+				q(80110),	-- First WQ of the Day
+				q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
+				q(81657),	-- Renown 16 - Marveouls Multi-Shot unlocked in Plunderstorm
+				q(80263),	-- Renown 17 - Snazzy Swabbie outfit unlocked in Plunderstorm
+				q(80264),	-- Renown 37 - Strapping Swabbie outfit unlocked in Plunderstorm
 
-			-- Hard or impossible to find out what exactly these HQTs are for
-			q(81676),	-- Dieing
-			q(81677),	-- Dieing
-			q(81678),	-- ?
-			q(81679),	-- Killed rare elite
-			q(81680),	-- Killed rare elite
-			q(81681),	-- Did a World Quest and killed 30 creatures
+				-- Hard or impossible to find out what exactly these HQTs are for
+				q(81676),	-- Dieing
+				q(81677),	-- Dieing
+				q(81678),	-- ?
+				q(81679),	-- Killed rare elite
+				q(81680),	-- Killed rare elite
+				q(81681),	-- Did a World Quest and killed 30 creatures
 
-			-- Probably some rare elite kills (unconfirmed)
-			-- q(79254),	-- Everspout
-			-- q(79315),	-- Lord Harlbrand
-			-- q(79316),	-- Malfunctioning Harvester
-			-- q(79317),	-- Morkus Grimlock
-			-- q(79318),	-- Narla Thunderhoof
-			-- q(79319),	-- Frenzied Owlbeast
-			-- q(79320),	-- Gorthak Grimtusk
+				-- Probably some rare elite kills (unconfirmed)
+				-- q(79254),	-- Everspout
+				-- q(79315),	-- Lord Harlbrand
+				-- q(79316),	-- Malfunctioning Harvester
+				-- q(79317),	-- Morkus Grimlock
+				-- q(79318),	-- Narla Thunderhoof
+				-- q(79319),	-- Frenzied Owlbeast
+				-- q(79320),	-- Gorthak Grimtusk
 
-			-- Probably some renown HQTs (unconfirmed)
-			-- q(79462),	-- [DNT] Renown Reward 001
-			-- q(79464),	-- [DNT] Renown Reward 002
-			-- q(79465),	-- [DNT] Renown Reward 003
-			-- q(79466),	-- [DNT] Renown Reward 004
+				-- Probably some renown HQTs (unconfirmed)
+				-- q(79462),	-- [DNT] Renown Reward 001
+				-- q(79464),	-- [DNT] Renown Reward 002
+				-- q(79465),	-- [DNT] Renown Reward 003
+				-- q(79466),	-- [DNT] Renown Reward 004
+			},
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PLUNDERSTORM, {
-			n(PLUNDERSTORE, {
-				q(86212),	-- Purchased Swabbie's Shovel
-				q(86213),	-- Purchased Swabbie's Oar
-				q(86218),	-- Purchased Plunderlord's Stormridden Neck-Severer
-				q(86219),	-- Purchased Plunderlord's Stormridden Rapier
-				q(86220),	-- Purchased Plunderlord's Stormridden Cutlass
-				q(86221),	-- Purchased Plunderlord's Stormridden Sigil
-				q(86225),	-- Purchased Plunderlord's Hand Cannon
-				q(86228),	-- Purchased First Mate's Dashing Cap
-				q(86229),	-- Purchased First Mate's Dashing Headgear
-				q(86231),	-- Purchased Plunderlord's Stormridden Tricorne
-				q(86232),	-- Purchased Plunderlord's Old Eye Patch
-				q(86233),	-- Purchased Plunderlord's Old Hat
-				q(86236),	-- Purchased Plunderlord's Stormridden Spaulders
-				q(86241),	-- Purchased Plunderlord's Stormridden Drapery
-				q(86244),	-- Purchased Plunderlord's Stormridden Waistcoat
-				q(86246),	-- Purchased Plunderlord's Stormridden Cuffs
-				q(86250),	-- Purchased Plunderlord's Stormridden Pilferers
-				q(86252),	-- Purchased Plunderlord's Stormridden Cinch
-				q(86256),	-- Purchased Plunderlord's Stormridden Trousers
-				q(86260),	-- Purchased Plunderlord's Stormridden Trousers
-			}),
-			q(89346),	-- Opening Storm-Singed Plunder
+			["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 },
+			["groups"] = {
+				n(PLUNDERSTORE, {
+					q(86212),	-- Purchased Swabbie's Shovel
+					q(86213),	-- Purchased Swabbie's Oar
+					q(86218),	-- Purchased Plunderlord's Stormridden Neck-Severer
+					q(86219),	-- Purchased Plunderlord's Stormridden Rapier
+					q(86220),	-- Purchased Plunderlord's Stormridden Cutlass
+					q(86221),	-- Purchased Plunderlord's Stormridden Sigil
+					q(86225),	-- Purchased Plunderlord's Hand Cannon
+					q(86228),	-- Purchased First Mate's Dashing Cap
+					q(86229),	-- Purchased First Mate's Dashing Headgear
+					q(86231),	-- Purchased Plunderlord's Stormridden Tricorne
+					q(86232),	-- Purchased Plunderlord's Old Eye Patch
+					q(86233),	-- Purchased Plunderlord's Old Hat
+					q(86236),	-- Purchased Plunderlord's Stormridden Spaulders
+					q(86241),	-- Purchased Plunderlord's Stormridden Drapery
+					q(86244),	-- Purchased Plunderlord's Stormridden Waistcoat
+					q(86246),	-- Purchased Plunderlord's Stormridden Cuffs
+					q(86250),	-- Purchased Plunderlord's Stormridden Pilferers
+					q(86252),	-- Purchased Plunderlord's Stormridden Cinch
+					q(86256),	-- Purchased Plunderlord's Stormridden Trousers
+					q(86260),	-- Purchased Plunderlord's Stormridden Trousers
+				}),
+				q(89346),	-- Opening Storm-Singed Plunder
+			},
 		}),
-	})),
+	}),
 });

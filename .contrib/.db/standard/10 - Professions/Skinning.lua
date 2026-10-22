@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18834, {	-- Broken Isles Skinning Techniques
 				crit(61485, {	-- Felhide
@@ -312,8 +312,8 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18835, {	-- Fourth War Skinning Techniques
 				crit(61493, {	-- Cragscale
@@ -514,8 +514,8 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 }, ["requireSkill"] = SKINNING }, {
+	}),
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18831, sharedData({	-- Elusive Beasts of the Dragon Isles (15)
 				["cost"] = {{"i",193906,1}},	-- Elusive Creature Bait
@@ -686,45 +686,68 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.SKINNING, 1 }}
 		},{
-			pn(34759),	-- Bait Crafter
-			pn(34757),	-- Elemental Infusion
-			pn(34729),	-- Harvesting
-			pn(34688),	-- Leather Mastery
-			pn(34728),	-- Lure Crafter
-			pn(34758),	-- Mastery
-			pn(34727),	-- Meat Carver
-			pn(34687),	-- Scale Mastery
-			pn(34689),	-- Tanning
-			pn(34726),	-- Trophy Collector
+			pn(34759, {	-- Bait Crafter
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34757, {	-- Elemental Infusion
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34729, {	-- Harvesting
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34688, {	-- Leather Mastery
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34728, {	-- Lure Crafter
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34758, {	-- Mastery
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34727, {	-- Meat Carver
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34687, {	-- Scale Mastery
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34689, {	-- Tanning
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			pn(34726, {	-- Trophy Collector
+				["timeline"] = { ADDED_10_0_2 },
+			}),
 		})),
 		n(QUESTS, {
-			q(70363, {	-- Dragon Isles Skinning
-				["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
-				["provider"] = { "n", 192558 },	-- Toninaar
-				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
-			}),
-			q(70034, {	-- Artisan's Supply: Salamanther Scale
-				["provider"] = { "n", 192558 },	-- Toninaar
-				["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
-				["cost"] = { { "i", 193252, 3 }, },	-- 3x Salamanther Scales
-				["_drop"] = { "g" },
-			}),
-			q(70259, {	-- Hidden Profession Master Skinning
-				["name"] = "Hidden Profession Master: Skinning",
-				["provider"] = { "n", 194844 },	-- Zenzi
-				["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
-			}),
-			q(70193, {	-- Specialized Secrets: Skinning
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-				["isRepeatable"] = true,
-				["groups"] = {
-					i(190456),	-- Artisan's Mettle
-				},
-			}),
+			["timeline"] = { ADDED_10_0_2 },
+			["groups"] = {
+				q(70363, {	-- Dragon Isles Skinning
+					["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
+					["provider"] = { "n", 192558 },	-- Toninaar
+					["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
+					["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
+				}),
+				q(70034, {	-- Artisan's Supply: Salamanther Scale
+					["provider"] = { "n", 192558 },	-- Toninaar
+					["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
+					["cost"] = { { "i", 193252, 3 }, },	-- 3x Salamanther Scales
+					["_drop"] = { "g" },
+				}),
+				q(70259, {	-- Hidden Profession Master Skinning
+					["name"] = "Hidden Profession Master: Skinning",
+					["provider"] = { "n", 194844 },	-- Zenzi
+					["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
+				}),
+				q(70193, {	-- Specialized Secrets: Skinning
+					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+					["provider"] = { "n", 193110 },	-- Khadin
+					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+					["isRepeatable"] = true,
+					["groups"] = {
+						i(190456),	-- Artisan's Mettle
+					},
+				}),
+			},
 		}),
 		n(QUESTS, sharedData({
 			["sharedDescription"] = "Requires 25 Skill.",
@@ -736,13 +759,22 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				i(199128),	-- Skinning Field Notes
 			},
 		},{
-			q(72158),	-- A Dense Delivery
-			q(70619),	-- A Study of Leather
-			q(72159),	-- Scaling Down
-			q(70620),	-- Scaling Up
+			q(72158, {	-- A Dense Delivery
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			q(70619, {	-- A Study of Leather
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			q(72159, {	-- Scaling Down
+				["timeline"] = { ADDED_10_0_2 },
+			}),
+			q(70620, {	-- Scaling Up
+				["timeline"] = { ADDED_10_0_2 },
+			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
+			["timeline"] = { ADDED_10_0_2 },
 			["groups"] = sharedData({ ["cost"] = { { "c", PROFESSION_KNOWLEDGE.DF.SKINNING, 1 } }, }, {
 				r(383090),	-- Aileron Seamoth Lure
 				r(383128),	-- Bottled Pheromones
@@ -770,39 +802,48 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				currency(PROFESSION_KNOWLEDGE.DF.SKINNING),
 			},
 		},{
-			i(199128),	-- Skinning Field Notes
+			i(199128, {	-- Skinning Field Notes
+				["timeline"] = { ADDED_10_0_2 },
+			}),
 			q(74114, {	-- DF Inscription Order: Skinning
 				["name"] = "DF Inscription Order: Skinning",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 201023 },	-- Draconic Treatise on Skinning
+				["timeline"] = { ADDED_10_0_2 },
 			}),
 			q(70381, {	-- DF Weekly Skinning Knowledgepoint #1
 				["name"] = "DF Weekly Skinning Knowledgepoint #1",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+				["timeline"] = { ADDED_10_0_2 },
 			}),
 			q(70383, {	-- DF Weekly Skinning Knowledgepoint #2
 				["name"] = "DF Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+				["timeline"] = { ADDED_10_0_2 },
 			}),
 			q(70384, {	-- DF Weekly Skinning Knowledgepoint #3
 				["name"] = "DF Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+				["timeline"] = { ADDED_10_0_2 },
 			}),
 			q(70385, {	-- DF Weekly Skinning Knowledgepoint #4
 				["name"] = "DF Weekly Skinning Knowledgepoint #4",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+				["timeline"] = { ADDED_10_0_2 },
 			}),
 			q(70386, {	-- DF Weekly Skinning Knowledgepoint #5
 				["name"] = "DF Weekly Skinning Knowledgepoint #5",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+				["timeline"] = { ADDED_10_0_2 },
 			}),
 			q(70389, {	-- DF Weekly Skinning Knowledgepoint #6
 				["name"] = "DF Weekly Skinning Knowledgepoint #6",
 				["provider"] = { "i", 198841 },	-- Large Sample of Curious Hide
+				["timeline"] = { ADDED_10_0_2 },
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.SKINNING, 1 }}
 		},{
@@ -951,7 +992,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42790, {	-- Skinning at Midnight
 				i(264173),	-- Midnight Skinner's Shop Sign (DECOR!)
@@ -1091,5 +1132,5 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINN
 				["provider"] = { "i", 238626 },	-- Mana-Infused Bone
 			}),
 		})),
-	})),
+	}),
 })));

@@ -171,7 +171,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			["timeline"] = { ADDED_3_0_2 },
 		})),
 	}),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 		ach(125),	-- Grand Master Cook / Northrend Cook [8.0.1+]
 		ach(1781, {	-- Critter Gitter
 			["cost"] = {{"i", 43004, 10}},	-- 10x Critter Bites
@@ -191,8 +191,8 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		achpart(1777, 1779),	-- The Northrend Gourmet (15)
 		achpart(1778, 1779),	-- The Northrend Gourmet (30)
 		ach(1779),	-- The Northrend Gourmet (45)
-	}))),
-	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	})),
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 		ach(4916),	-- Illustrious Grand Master Cook / Cataclysmic Cook [8.0.1+]
 		ach(5845, {	-- A Bunch of Lunch (A)
 			-- Meta Achievement
@@ -231,8 +231,8 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 		achpart(5472, 5473),	-- The Cataclysmic Gourmet (15)
 		ach(5473),	-- The Cataclysmic Gourmet (30)
-	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	})),
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 		ach(6365),	-- Zen Master Cook / Pandaria Cook [8.0.1+]
 		ach(7306, {	-- Master of Pandaren Cooking (automated)
 			title(202),	-- <Name>, Master of the Ways
@@ -515,13 +515,13 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				}),
 			}))),
 		}),
-	}))),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	})),
+	expansion(EXPANSION.WOD, {
 		ach(9500),	-- Draenor Cook
 		ach(9502),	-- Draenor Cuisine
 		ach(9501),	-- The Draenor Gourmet
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, {
 			ach(10589),	-- Legion Cook
 			ach(10593, {	-- Everything Tastes Better
@@ -573,8 +573,8 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, {
 			ach(12742, {	-- Kul Tiran Cook [A]
 				["races"] = ALLIANCE_ONLY,
@@ -620,11 +620,11 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["races"] = HORDE_ONLY,
 			}),
 		}),
-	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.SL, {
 		ach(14332),	-- Shadowlands Cook
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, {
 			ach(16631),	-- Dragon Isles Cook
 			ach(17736, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- The Gift of Cheese
@@ -654,25 +654,25 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
 			}),
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(19414),	-- Algari Cook
 		}),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42795, {	-- Cooking at Midnight
 				i(263999),	-- Midnight Cook's Shop Sign (DECOR!)
 			}),
 		}),
-	})),
+	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(PROFESSIONS, {
 		prof(COOKING, {
 			q(45341),	-- Tracking Quest - after obtaining the Chef's Hat toy (itemID 134020)
 		}),
 	}),
-})));
+}));

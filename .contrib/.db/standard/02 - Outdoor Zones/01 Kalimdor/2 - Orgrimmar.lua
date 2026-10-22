@@ -5395,7 +5395,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(KALIMDOR, {
 		m(ORGRIMMAR, {
 			q(51766),	-- cinematic during Horde BFA intro scenario quest
@@ -5404,4 +5404,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

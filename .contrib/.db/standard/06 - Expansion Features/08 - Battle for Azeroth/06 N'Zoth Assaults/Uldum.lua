@@ -2,13 +2,14 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		["icon"] = 3196264,
 		["crs"] = {
 			162419,	-- Zidormi
 		},
 		["lvl"] = { 50 },
+		["timeline"] = { ADDED_8_3_0 },
 		["groups"] = {
 			n(WORLD_BOSSES, {
 				["isRaid"] = true,
@@ -1662,36 +1663,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
-		n(NZOTH_ASSAULTS, {
-			n(TREASURES, {
-				q(55689),	-- Uldum - Amathet cache
-				q(55690),	-- Uldum - Amathet cache
-				q(55691),	-- Uldum - Amathet cache
-				q(55692),	-- Uldum - Amathet Reliquary (requires tol'vir relic to open)
-				q(55698),	-- Uldum - Amathet cache
-				q(55699),	-- Uldum - Amathet cache
-				q(55700),	-- Uldum - Amathet cache
-				q(57623),	-- Uldum - Black Empire Cache
-				q(57624),	-- Uldum - Black Empire Cache
-				q(57625),	-- Uldum - Black Empire Cache
-				q(57626),	-- Uldum - Black Empire Cache
-				q(57627),	-- Uldum - Black Empire Cache
-				q(57635),	-- Uldum - Black Empire Cache
-				q(57628),	-- Uldum - Black Empire Coffer
-				q(58138),	-- Uldum - Infested Cache
-				q(58142),	-- Uldum - Infested Cache
+		["timeline"] = { ADDED_8_3_0 },
+		["groups"] = {
+			n(NZOTH_ASSAULTS, {
+				n(TREASURES, {
+					q(55689),	-- Uldum - Amathet cache
+					q(55690),	-- Uldum - Amathet cache
+					q(55691),	-- Uldum - Amathet cache
+					q(55692),	-- Uldum - Amathet Reliquary (requires tol'vir relic to open)
+					q(55698),	-- Uldum - Amathet cache
+					q(55699),	-- Uldum - Amathet cache
+					q(55700),	-- Uldum - Amathet cache
+					q(57623),	-- Uldum - Black Empire Cache
+					q(57624),	-- Uldum - Black Empire Cache
+					q(57625),	-- Uldum - Black Empire Cache
+					q(57626),	-- Uldum - Black Empire Cache
+					q(57627),	-- Uldum - Black Empire Cache
+					q(57635),	-- Uldum - Black Empire Cache
+					q(57628),	-- Uldum - Black Empire Coffer
+					q(58138),	-- Uldum - Infested Cache
+					q(58142),	-- Uldum - Infested Cache
+				}),
+				n(QUESTS, {
+					q(59060),	-- choosing "Bitey McStabface' as the name for your Aqir Hatchling
+					q(59062),	-- choosing "Spike" as the name for your Aqir Hatchling
+					q(59059),	-- choosing "Yu'gaz" as the name for your Aqir Hatchling
+					q(59061),	-- hatching Shadowbarb drone after the first phase
+					q(59073),	-- Triggers when turning in "Match the Hatch" for the Shadowbarb Drone. Probably a daily trigger ID so players can't do the entire chain in one day
+				}),
 			}),
-			n(QUESTS, {
-				q(59060),	-- choosing "Bitey McStabface' as the name for your Aqir Hatchling
-				q(59062),	-- choosing "Spike" as the name for your Aqir Hatchling
-				q(59059),	-- choosing "Yu'gaz" as the name for your Aqir Hatchling
-				q(59061),	-- hatching Shadowbarb drone after the first phase
-				q(59073),	-- Triggers when turning in "Match the Hatch" for the Shadowbarb Drone. Probably a daily trigger ID so players can't do the entire chain in one day
-			}),
-		}),
+		},
 	}),
-})));
+}));

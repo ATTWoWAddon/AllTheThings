@@ -129,20 +129,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 }))));
 
 root(ROOTS.HiddenQuestTriggers, {
-	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.MOP, {
 		n(PROVING_GROUNDS, {
-			q(33089),	-- FLAG - Proving Grounds - Damage Bronze
-			q(33091),	-- FLAG - Proving Grounds - Damage Gold
-			q(33090),	-- FLAG - Proving Grounds - Damage Silver
-			q(33095),	-- FLAG - Proving Grounds - Healer Bronze
-			q(33097),	-- FLAG - Proving Grounds - Healer Gold
-			q(33096),	-- FLAG - Proving Grounds - Healer Silver
-			q(33092),	-- FLAG - Proving Grounds - Tank Bronze
-			q(33094),	-- FLAG - Proving Grounds - Tank Gold
-			q(33093),	-- FLAG - Proving Grounds - Tank Silver
+			["timeline"] = { ADDED_5_4_0 },
+			["groups"] = {
+				q(33089),	-- FLAG - Proving Grounds - Damage Bronze
+				q(33091),	-- FLAG - Proving Grounds - Damage Gold
+				q(33090),	-- FLAG - Proving Grounds - Damage Silver
+				q(33095),	-- FLAG - Proving Grounds - Healer Bronze
+				q(33097),	-- FLAG - Proving Grounds - Healer Gold
+				q(33096),	-- FLAG - Proving Grounds - Healer Silver
+				q(33092),	-- FLAG - Proving Grounds - Tank Bronze
+				q(33094),	-- FLAG - Proving Grounds - Tank Gold
+				q(33093),	-- FLAG - Proving Grounds - Tank Silver
+			},
 		}),
-	}))),
-	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	})),
+	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.WOD, {
 		n(PROVING_GROUNDS, {
 			q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 			q(37214),	-- FLAG - Proving Grounds - Damage Gold
@@ -154,5 +157,5 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(37217),	-- FLAG - Proving Grounds - Tank Gold
 			q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		}),
-	}))),
+	})),
 });

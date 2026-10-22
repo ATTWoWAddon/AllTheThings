@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	n(ACHIEVEMENTS, {
 		ach(40138, {	-- Algari Dungeoneer
 			-- Meta Achievement
@@ -39,4 +39,4 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			["timeline"] = { ADDED_12_0_0 },
 		}),
 	}),
-})));
+}));

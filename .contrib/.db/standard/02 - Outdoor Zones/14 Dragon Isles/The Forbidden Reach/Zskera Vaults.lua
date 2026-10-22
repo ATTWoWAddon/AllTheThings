@@ -1253,102 +1253,105 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		m(THE_FORBIDDEN_REACH, {
-			n(ZSKERA_VAULTS, {
-				-- Accepted??
-				q(72510),
-				q(72675),
-				q(72677),
-				q(72678),
-				q(72699),
-				q(74444),
-				q(74445),
-				q(74468),
-				q(74471),	-- Triggered after accepting Zskera Vault: Az
-				q(74784),
-				q(72897),
-				q(72896),
-				q(72895),
-				q(72894),
-				q(72893),
-				q(72891),
-				q(72898),
-				q(72899),
-				q(74510),
-				q(74297),
-				q(74298),
-				q(74296),
-				q(74299),
-				q(74301),
-				q(74302),
-				q(74303),
-				q(74304),
-				q(74311),
-				q(74313),
-				q(74315),
-				q(74319),
-				q(74320),
-				q(74323),
-				q(74324),
-				q(75125, {	-- Every Door, Everywhere, All At Once (Hidden Achievement Trigger)
-					["isWeekly"] = true,
+		["timeline"] = { ADDED_10_0_7 },
+		["groups"] = {
+			m(THE_FORBIDDEN_REACH, {
+				n(ZSKERA_VAULTS, {
+					-- Accepted??
+					q(72510),
+					q(72675),
+					q(72677),
+					q(72678),
+					q(72699),
+					q(74444),
+					q(74445),
+					q(74468),
+					q(74471),	-- Triggered after accepting Zskera Vault: Az
+					q(74784),
+					q(72897),
+					q(72896),
+					q(72895),
+					q(72894),
+					q(72893),
+					q(72891),
+					q(72898),
+					q(72899),
+					q(74510),
+					q(74297),
+					q(74298),
+					q(74296),
+					q(74299),
+					q(74301),
+					q(74302),
+					q(74303),
+					q(74304),
+					q(74311),
+					q(74313),
+					q(74315),
+					q(74319),
+					q(74320),
+					q(74323),
+					q(74324),
+					q(75125, {	-- Every Door, Everywhere, All At Once (Hidden Achievement Trigger)
+						["isWeekly"] = true,
+					}),
+					q(74327),
+					q(74496),
+					q(75032),
+					-- Completed
+					q(74432),	-- (spellID 400632)
+					q(74472),
+					q(74474),
+					q(74475),
+					q(74497),
+					q(74498),
+					q(74528),
+					q(74755),
+					q(74756),
+					q(74867),
+					q(74499),
+					q(75160),
+
+					q(74513),	-- When using Stone Dissolver to Open Shattered Crystals (spellID 401095)
+					q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az (spellID 400630)
+					q(74473),	-- Triggered when accepting 'The Scary Vault of Ur'
+					q(74748),	-- Triggered when looting Recipe Rat along with 74509
+					q(75490),	-- Triggered when fishing up Dormant Primordial Fragment from Disgusting Vat
+					q(75159),	-- Triggered when fishing up Neltharion Gift Token from Disgusting Vat
+					q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat
+					q(75158),	-- Triggered when fishing up Prismatic Fragment from Disgusting Vat
+					q(75489),	-- Triggered when fishing up Dormant Primordial Fragment #2 from Disgusting Vat
+					q(75130),	-- Triggered after firing the Irontide Cannon (spellID 402977)
+					q(74486),	-- Triggered after clicking the Perfumed Censer (spellID 400835)
+					q(75046),	-- Triggered after looting Dormant Primordial Fragment from Consumed Gem
+
+
+					-- TODO: See if these need to be associated with treasures
+					q(74611),	-- Research Volume Spawn (201953)
+					q(75014),	-- Touch big slime?
+					-- Chains
+					q(75173),	-- Pulled Chain First Floor (spellID 405401)
+					q(75172),	-- Pulled Chain Second Floor (spellID 405400)
+					q(75170),	-- Pulled Chain Third Floor (spellID 405379 & 405384)
+					q(75171),	-- Pulled Chain Fourth Floor (spellID 405387)
+					q(75174),	-- Pulled Chain Third Floor (spellID 405403)
+					-- Stone Dissolver
+					q(75069),	-- On Primordial Earth Cache 389789 (spellID 404836)
+					q(75070),	-- On Primordial Earth Cache 389902 (spellID 404835)
+
+					q(74970),	-- During 'Verbal Archaeology' (questID 74447)
+					q(74971),	-- During 'Second Time Is The Charm' (questID 74493)
+					q(74997),	-- During 'A Difficult Legacy' (questID 74996)
+					q(74998),	-- During 'A Difficult Legacy' (questID 74996)
+					q(74999),	-- During 'A Difficult Legacy' (questID 74996)
+					q(75000),	-- During 'A Difficult Legacy' (questID 74996)
+					q(75001),	-- During 'A Difficult Legacy' (questID 74996)
+					q(75002),	-- During 'A Difficult Legacy' (questID 74996)
+					q(75003),	-- During 'A Difficult Legacy' (questID 74996)
 				}),
-				q(74327),
-				q(74496),
-				q(75032),
-				-- Completed
-				q(74432),	-- (spellID 400632)
-				q(74472),
-				q(74474),
-				q(74475),
-				q(74497),
-				q(74498),
-				q(74528),
-				q(74755),
-				q(74756),
-				q(74867),
-				q(74499),
-				q(75160),
-
-				q(74513),	-- When using Stone Dissolver to Open Shattered Crystals (spellID 401095)
-				q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az (spellID 400630)
-				q(74473),	-- Triggered when accepting 'The Scary Vault of Ur'
-				q(74748),	-- Triggered when looting Recipe Rat along with 74509
-				q(75490),	-- Triggered when fishing up Dormant Primordial Fragment from Disgusting Vat
-				q(75159),	-- Triggered when fishing up Neltharion Gift Token from Disgusting Vat
-				q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat
-				q(75158),	-- Triggered when fishing up Prismatic Fragment from Disgusting Vat
-				q(75489),	-- Triggered when fishing up Dormant Primordial Fragment #2 from Disgusting Vat
-				q(75130),	-- Triggered after firing the Irontide Cannon (spellID 402977)
-				q(74486),	-- Triggered after clicking the Perfumed Censer (spellID 400835)
-				q(75046),	-- Triggered after looting Dormant Primordial Fragment from Consumed Gem
-
-
-				-- TODO: See if these need to be associated with treasures
-				q(74611),	-- Research Volume Spawn (201953)
-				q(75014),	-- Touch big slime?
-				-- Chains
-				q(75173),	-- Pulled Chain First Floor (spellID 405401)
-				q(75172),	-- Pulled Chain Second Floor (spellID 405400)
-				q(75170),	-- Pulled Chain Third Floor (spellID 405379 & 405384)
-				q(75171),	-- Pulled Chain Fourth Floor (spellID 405387)
-				q(75174),	-- Pulled Chain Third Floor (spellID 405403)
-				-- Stone Dissolver
-				q(75069),	-- On Primordial Earth Cache 389789 (spellID 404836)
-				q(75070),	-- On Primordial Earth Cache 389902 (spellID 404835)
-
-				q(74970),	-- During 'Verbal Archaeology' (questID 74447)
-				q(74971),	-- During 'Second Time Is The Charm' (questID 74493)
-				q(74997),	-- During 'A Difficult Legacy' (questID 74996)
-				q(74998),	-- During 'A Difficult Legacy' (questID 74996)
-				q(74999),	-- During 'A Difficult Legacy' (questID 74996)
-				q(75000),	-- During 'A Difficult Legacy' (questID 74996)
-				q(75001),	-- During 'A Difficult Legacy' (questID 74996)
-				q(75002),	-- During 'A Difficult Legacy' (questID 74996)
-				q(75003),	-- During 'A Difficult Legacy' (questID 74996)
 			}),
-		}),
+		},
 	}),
-})));
+}));

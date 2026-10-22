@@ -1048,7 +1048,7 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(NECROLORD,  bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 		n(QUESTS, {
 			-- Campaign quests
@@ -1075,4 +1075,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			-- q(60873),	-- Flying around in necrolord base
 		}),
 	})),
-})));
+}));

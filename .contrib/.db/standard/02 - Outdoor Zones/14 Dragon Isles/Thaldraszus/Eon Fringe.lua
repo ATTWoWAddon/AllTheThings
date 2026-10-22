@@ -359,14 +359,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		m(THALDRASZUS, {
-			n(EON_FRINGE, {
-				q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
-				q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> kill, keep pop with 76170 on every kill
-				q(78094),	-- when toy Investi-gator's Pocketwatch (itemID 206993) was looted
+		["timeline"] = { ADDED_10_1_5 },
+		["groups"] = {
+			m(THALDRASZUS, {
+				n(EON_FRINGE, {
+					q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
+					q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> kill, keep pop with 76170 on every kill
+					q(78094),	-- when toy Investi-gator's Pocketwatch (itemID 206993) was looted
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

@@ -42,24 +42,34 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 		}),
 		-- #endif
 	}))),
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 } }, {
-		ach(4918),	-- Illustrious Grand Master Medic
+	expansion(EXPANSION.CATA, {
+		ach(4918, {	-- Illustrious Grand Master Medic
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 },
+		}),
 		-- #if BEFORE BFA
 		ach(5480, {	-- Preparing for Disaster
 			["provider"] = { "i", 53051 },	-- Dense Embersilk Bandage
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 },
 		}),
 		-- #endif
-	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 } }, {
-		ach(6838),	-- Zen Master Medic
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 } }, {
-		ach(9505),	-- Draenor Medic
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 } }, {
-		ach(10599),	-- Legion Medic
+	}),
+	expansion(EXPANSION.MOP, {
+		ach(6838, {	-- Zen Master Medic
+			["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
+		}),
+	}),
+	expansion(EXPANSION.WOD, {
+		ach(9505, {	-- Draenor Medic
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 },
+		}),
+	}),
+	expansion(EXPANSION.LEGION, {
+		ach(10599, {	-- Legion Medic
+			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+		}),
 		ach(11139, {	-- Field Medic!
 			["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 			["groups"] = {
 				title(340),	-- Field Medic <Name>
 				i(139534, {	-- Bloody Letter
@@ -160,11 +170,13 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 				}),
 			},
 		}),
-		achpart(11138, 11139),	-- Is There a Medic in the Zone?
-	})),
+		achpart(11138, 11139, {	-- Is There a Medic in the Zone?
+			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+		}),
+	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(PROFESSIONS, {
 		prof(FIRST_AID, {
 			-- First Aid (these used to be actual quests... when Legion Classic rolls around someone will have to make them real quests...)
@@ -186,4 +198,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(42340, { ["name"] = "DEPRECATED: Singed Plea", }),	-- DEPRECATED: Singed Plea
 		}),
 	}),
-})));
+}));

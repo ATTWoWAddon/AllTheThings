@@ -315,7 +315,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	m(THE_MAELSTROM, {
 		m(KEZAN, {
 			n(QUESTS, {
@@ -326,4 +326,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["tim
 			}),
 		}),
 	}),
-})));
+}));

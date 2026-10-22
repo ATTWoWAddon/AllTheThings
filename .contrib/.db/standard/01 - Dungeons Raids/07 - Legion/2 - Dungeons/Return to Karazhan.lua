@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(860, {	-- Return to Karazhan
 		["coord"] = { 46.7, 70.1, DEADWIND_PASS },
 		["maps"] = {
@@ -10,6 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			809, 810, 811, 812, 813, 814,	-- Lower
 		},
 		["lvl"] = 110,
+		["timeline"] = { ADDED_7_1_0 },
 		["groups"] = {
 			n(QUESTS, {
 				q(44684, {	-- Corruption Runs Deep
@@ -609,13 +610,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	inst(860, {
-		q(45393),	-- Moroes cutscene
-		q(45394),	-- Maiden of Virtue Kill
-		q(45395),	-- Shade of Medivh Kill
-		q(45396),	-- Mana Devourer Kill
+		["timeline"] = { ADDED_7_1_0 },
+		["groups"] = {
+			q(45393),	-- Moroes cutscene
+			q(45394),	-- Maiden of Virtue Kill
+			q(45395),	-- Shade of Medivh Kill
+			q(45396),	-- Mana Devourer Kill
+		},
 	}),
-})));
+}));

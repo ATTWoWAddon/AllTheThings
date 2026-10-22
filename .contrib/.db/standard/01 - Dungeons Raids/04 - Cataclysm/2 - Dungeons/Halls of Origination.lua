@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(70, {	-- Halls of Origination
 		["mapID"] = 297,
 		["coord"] = { 71.81, 52.16, ULDUM },	-- Halls of Origination
@@ -347,13 +347,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #endif
 		},
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(70, {
 		q(35415),	-- Halls of Origination Reward Quest
 		q(35424),	-- Halls of Origination Reward Quest
 		q(35420),	-- Halls of Origination Bonus Rewards
 		q(35426),	-- Halls of Origination Bonus Rewards
 	}),
-})));
+}));

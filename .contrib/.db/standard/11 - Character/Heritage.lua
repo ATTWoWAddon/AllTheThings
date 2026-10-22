@@ -1854,77 +1854,92 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+	expansion(EXPANSION.BFA, {
 		n(HERITAGE, {
-			n(QUESTS, {
-				q(54868),	-- During Heritage for Taurens in the End
-				q(54867),	-- Triggered when doing "When Spirits Whisper"
-				q(54866),	-- Completes with 54759 "When Spirits Whisper"
-			}),
-			q(54869),	-- Starting Heritage for Taurens.
+			["timeline"] = { ADDED_8_2_0 },
+			["groups"] = {
+				n(QUESTS, {
+					q(54868),	-- During Heritage for Taurens in the End
+					q(54867),	-- Triggered when doing "When Spirits Whisper"
+					q(54866),	-- Completes with 54759 "When Spirits Whisper"
+				}),
+				q(54869),	-- Starting Heritage for Taurens.
+			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(HERITAGE, {
-			n(QUESTS, {
-				q(74894),	-- Triggers after the scene ends after 'Go with Honor, Friend' (questID 72452) (spellID 403652)
-				q(73705),	-- Triggers right after accepting 'The Kosh'harg' (questID 72464) (spellID 399758)
-				q(74541),	-- Triggers when you find a 'Mysterious Orc' during 'The Kosh'harg' (questID 72464) (spellID 401231)
-				q(73394),	-- 'Saurfang had a message for you' dialog with Durak during 'A Worthy Offering' (questID 74415) (spellID 399298)
-				q(73396),	-- 'Saurfang had a message for you' dialog with Thrall during 'Honor and Glory' (questID 72478) (spellID 399303)
-				q(73397),	-- 'Saurfang had a message for you' dialog with Eitrigg during 'Aka'magosh' (questID 72479) (spellID 399305)
-				q(72468),	-- Choosing Thrall (Forstworlf clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398639)
-				q(72470),	-- Choosing Eitrigg (Blackrock clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398644)
-				q(72472),	-- Choosing Jorin Deadeye (Bleeding Hollow clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398648)
-				q(72469),	-- Choosing Gorgonna (Warsong clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398662)
-				q(72473),	-- Choosing Gorfax Angerfang (Dragonmaw clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398670)
-				q(72471),	-- Choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398674)
-			}),
+			["timeline"] = { ADDED_10_0_7 },
+			["groups"] = {
+				n(QUESTS, {
+					q(74894),	-- Triggers after the scene ends after 'Go with Honor, Friend' (questID 72452) (spellID 403652)
+					q(73705),	-- Triggers right after accepting 'The Kosh'harg' (questID 72464) (spellID 399758)
+					q(74541),	-- Triggers when you find a 'Mysterious Orc' during 'The Kosh'harg' (questID 72464) (spellID 401231)
+					q(73394),	-- 'Saurfang had a message for you' dialog with Durak during 'A Worthy Offering' (questID 74415) (spellID 399298)
+					q(73396),	-- 'Saurfang had a message for you' dialog with Thrall during 'Honor and Glory' (questID 72478) (spellID 399303)
+					q(73397),	-- 'Saurfang had a message for you' dialog with Eitrigg during 'Aka'magosh' (questID 72479) (spellID 399305)
+					q(72468),	-- Choosing Thrall (Forstworlf clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398639)
+					q(72470),	-- Choosing Eitrigg (Blackrock clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398644)
+					q(72472),	-- Choosing Jorin Deadeye (Bleeding Hollow clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398648)
+					q(72469),	-- Choosing Gorgonna (Warsong clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398662)
+					q(72473),	-- Choosing Gorfax Angerfang (Dragonmaw clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398670)
+					q(72471),	-- Choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398674)
+				}),
 
-			-- New Heritage questline start HQTs
-			q(75246),	-- Human Heritage (spellID 406118)
-			q(75247),	-- Orc Heritage (spellID 406119)
-			q(75248),	-- Goblin Heritage (spellID 406121)
-			q(75249),	-- Worgen Heritage (spellID 406122)
-			q(75250),	-- Tauren Heritage (spellID 406123)
-			q(75251),	-- Gnome Heritage (spellID 406126)
-			q(75252),	-- Blood Elf Heritage (spellID 406127)
-			q(75253),	-- Dwarf Heritage (spellID 406128)
+				-- New Heritage questline start HQTs
+				q(75246),	-- Human Heritage (spellID 406118)
+				q(75247),	-- Orc Heritage (spellID 406119)
+				q(75248),	-- Goblin Heritage (spellID 406121)
+				q(75249),	-- Worgen Heritage (spellID 406122)
+				q(75250),	-- Tauren Heritage (spellID 406123)
+				q(75251),	-- Gnome Heritage (spellID 406126)
+				q(75252),	-- Blood Elf Heritage (spellID 406127)
+				q(75253),	-- Dwarf Heritage (spellID 406128)
+			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(HERITAGE, {
-			q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891) (spellID 415206)
-			q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203) (spellID 422467)
-			-- q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
-			-- q(77654),	-- Ensemble: Forsaken Champion's Attire (itemID 208475) (spellID 422437)
-			q(77796),	-- Choosing Angellene during 'Fear is Our Weapon' (questID 72860) (spellID 421083)
-			q(77797),	-- Choosing Emalora during 'Fear is Our Weapon' (questID 72860) (spellID 421086)
-			q(77798),	-- Choosing Margix during 'Fear is Our Weapon' (questID 72860) (spellID 421087)
+			["timeline"] = { ADDED_10_1_7 },
+			["groups"] = {
+				q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891) (spellID 415206)
+				q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203) (spellID 422467)
+				-- q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
+				-- q(77654),	-- Ensemble: Forsaken Champion's Attire (itemID 208475) (spellID 422437)
+				q(77796),	-- Choosing Angellene during 'Fear is Our Weapon' (questID 72860) (spellID 421083)
+				q(77797),	-- Choosing Emalora during 'Fear is Our Weapon' (questID 72860) (spellID 421086)
+				q(77798),	-- Choosing Margix during 'Fear is Our Weapon' (questID 72860) (spellID 421087)
 
-			-- New Heritage questline start HQTs
-			q(76457),	-- Undead Heritage (spellID 414546)
-			q(76458),	-- Night Elf Heritage (spellID 414550)
+				-- New Heritage questline start HQTs
+				q(76457),	-- Undead Heritage (spellID 414546)
+				q(76458),	-- Night Elf Heritage (spellID 414550)
+			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(HERITAGE, {
-			-- New Heritage questline start HQTs
-			q(78548),	-- Draenei Heritage (spellID 426497)
-			q(78549),	-- Troll Heritage (spellID 426505)
+			["timeline"] = { ADDED_10_2_7 },
+			["groups"] = {
+				-- New Heritage questline start HQTs
+				q(78548),	-- Draenei Heritage (spellID 426497)
+				q(78549),	-- Troll Heritage (spellID 426505)
+			},
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(HERITAGE, {
 			q(82788),	-- Arsenal: Earthen Weaponry
 			q(82789),	-- Popped on turn in of Stranger in a Strange Land [A] (81887)
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_7 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(HERITAGE, {
-			q(85049, {races={PANDAREN_HORDE}}),	-- Pandaren Horde trigger for 'Invitation to the Spirit Festival' (84444)
-			q(85050, {races={PANDAREN_ALLIANCE}}),	-- Pandaren Alliance trigger for 'Invitation to the Spirit Festival' (84442)
-			q(93888),	-- New HQT after complete Blood elf heritage quest 'The Fall of the Sunwell' (54096)
+			["timeline"] = { ADDED_11_2_7 },
+			["groups"] = {
+				q(85049, {races={PANDAREN_HORDE}}),	-- Pandaren Horde trigger for 'Invitation to the Spirit Festival' (84444)
+				q(85050, {races={PANDAREN_ALLIANCE}}),	-- Pandaren Alliance trigger for 'Invitation to the Spirit Festival' (84442)
+				q(93888),	-- New HQT after complete Blood elf heritage quest 'The Fall of the Sunwell' (54096)
+			},
 		}),
-	})),
+	}),
 });

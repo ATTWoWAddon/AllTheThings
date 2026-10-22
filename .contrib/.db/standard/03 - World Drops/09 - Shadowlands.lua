@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.SL, {
 	filter(MISC, {
 		i(158932, {	-- Secretest Fish
 			["description"] = "Can be found in any Shadowlands zone when wearing the googles.",
@@ -208,4 +208,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADD
 		i(184799),	-- Wolf-Fanged Fist
 		i(184797),	-- Zink's Subtle Shank
 	}),
-})));
+}));

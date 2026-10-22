@@ -2087,49 +2087,52 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {
+	expansion(EXPANSION.WOD, {
 		m(DRAENOR, {
-			m(TANAAN_JUNGLE, {
-				n(QUESTS, {
-					q(38836),	-- Aktar's Post - Aktar's Post visited
-					q(39306),	-- Call to Arms - chosen during "Bring the Reinforcements"
-					-- q(39183),	-- FLAG - Immaculate Critical Strike Taladite - learning Immaculate Critical Strike Taladite at an Apexis Gemcutter
-					-- q(39184),	-- FLAG - Immaculate Haste Taladite - learning Immaculate Haste Taladite at an Apexis Gemcutter
-					-- q(39185),	-- FLAG - Immaculate Mastery Taladite - learning Immaculate Mastery Taladite at an Apexis Gemcutter
-					q(39186),	-- FLAG - Immaculate Multistrike Taladite - learning Immaculate Multistrike Taladite at an Apexis Gemcutter
-					-- q(39187),	-- FLAG - Immaculate Stamina Taladite - learning Immaculate Stamina Taladite at an Apexis Gemcutter
-					q(37886),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (A)
-					q(37946),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (H)
-					q(38583),	-- Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (A)
-					q(38584),	-- Max-level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (H)
-					q(37939),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (A)
-					q(38010),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (H)
-					q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (A)
-					q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (H)
-					q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (A)
-					q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (H)
-					q(38039),	-- Max-level CHoice Tracker: Tanaan 6.2 - The Iron Front (A)
-					q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
-					q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
-					q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
-					q(39375, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #1
-					q(39376, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #2
-					q(39377, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #3
-					q(39378, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #4
-					q(39416),	-- Skoller's Bag o' Squirrel Treats - triggers after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
-					q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
-					q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
-					q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
-					q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
-					q(38234),	-- Tracking Event: Inscribed Ruin Found - triggers during quest "Get a Clue" (questID 38213), clue #3
-					q(38236),	-- Tracking Event: Note Found - triggers during quest "Get a Clue" (questID 38213), clue #1
-					q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
-					-- q(39564),	-- Vignette: Murktide Alpha - learning Saberstalker's Teachings: Trailblazer (automated)
+			["timeline"] = { ADDED_6_2_0 },
+			["groups"] = {
+				m(TANAAN_JUNGLE, {
+					n(QUESTS, {
+						q(38836),	-- Aktar's Post - Aktar's Post visited
+						q(39306),	-- Call to Arms - chosen during "Bring the Reinforcements"
+						-- q(39183),	-- FLAG - Immaculate Critical Strike Taladite - learning Immaculate Critical Strike Taladite at an Apexis Gemcutter
+						-- q(39184),	-- FLAG - Immaculate Haste Taladite - learning Immaculate Haste Taladite at an Apexis Gemcutter
+						-- q(39185),	-- FLAG - Immaculate Mastery Taladite - learning Immaculate Mastery Taladite at an Apexis Gemcutter
+						q(39186),	-- FLAG - Immaculate Multistrike Taladite - learning Immaculate Multistrike Taladite at an Apexis Gemcutter
+						-- q(39187),	-- FLAG - Immaculate Stamina Taladite - learning Immaculate Stamina Taladite at an Apexis Gemcutter
+						q(37886),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (A)
+						q(37946),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (H)
+						q(38583),	-- Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (A)
+						q(38584),	-- Max-level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (H)
+						q(37939),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (A)
+						q(38010),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (H)
+						q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (A)
+						q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (H)
+						q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (A)
+						q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (H)
+						q(38039),	-- Max-level CHoice Tracker: Tanaan 6.2 - The Iron Front (A)
+						q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
+						q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
+						q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
+						q(39375, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #1
+						q(39376, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #2
+						q(39377, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #3
+						q(39378, {["isDaily"]=true}),	-- Short-Supply Reward - Daily Rare/Treasure #4
+						q(39416),	-- Skoller's Bag o' Squirrel Treats - triggers after talking to Skoller and getting his toy (Skoller's Bag of Squirrel Treats)
+						q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
+						q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
+						q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
+						q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
+						q(38234),	-- Tracking Event: Inscribed Ruin Found - triggers during quest "Get a Clue" (questID 38213), clue #3
+						q(38236),	-- Tracking Event: Note Found - triggers during quest "Get a Clue" (questID 38213), clue #1
+						q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
+						-- q(39564),	-- Vignette: Murktide Alpha - learning Saberstalker's Teachings: Trailblazer (automated)
+					}),
 				}),
-			}),
+			},
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		m(DRAENOR, {
 			m(TANAAN_JUNGLE, {
 				n(QUESTS, {
@@ -2137,5 +2140,5 @@ root(ROOTS.HiddenQuestTriggers, {
 				}),
 			}),
 		}),
-	})),
+	}),
 });

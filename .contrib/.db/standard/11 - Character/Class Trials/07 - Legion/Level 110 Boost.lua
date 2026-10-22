@@ -2,12 +2,13 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.LEGION, bubbleDown({["timeline"] = { ADDED_7_3_5, REMOVED_8_2_5 }}, {
+	expansion(EXPANSION.LEGION, {
 		header(HEADERS.Achievement, 10671, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
 			["description"] = "These are gained by boosting a character to Level 110. Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 110,
+			["timeline"] = { ADDED_7_3_5, REMOVED_8_2_5 },
 			["groups"] = {
 				n(RELICS, {
 					un(REMOVED_FROM_GAME, i(156805)),	-- Bloodtotem Band
@@ -352,5 +353,5 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 			},
 		}),
-	})),
+	}),
 }));

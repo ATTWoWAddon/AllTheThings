@@ -604,10 +604,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 	},
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, {
 		q(53613),	-- Trial of Style: Using a Letter from an Admirer the 1st time
 		q(53614),	-- Trial of Style: Using a Letter from an Admirer the 2nd time
 		q(53615),	-- Trial of Style: Using a Letter from an Admirer the 3rd time
 	})),
-})));
+}));

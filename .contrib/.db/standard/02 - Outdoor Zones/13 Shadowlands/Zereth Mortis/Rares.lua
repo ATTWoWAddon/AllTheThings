@@ -406,17 +406,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(ZERETH_MORTIS, {
-			n(RARES, {
-				q(65707),	-- Triggered when killing Phalangax, the Final Grasp
-				q(65558),	-- Triggered when killing Edra, the Will Grazer
-				-- q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
-				-- q(65631),	-- Triggered when killing Akkaris
-				-- q(65629),	-- Triggered when killing Akkaris
-				-- q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
+		["timeline"] = { ADDED_9_2_0 },
+		["groups"] = {
+			m(ZERETH_MORTIS, {
+				n(RARES, {
+					q(65707),	-- Triggered when killing Phalangax, the Final Grasp
+					q(65558),	-- Triggered when killing Edra, the Will Grazer
+					-- q(65637),	-- Triggered when killing General Zarathura <Army of the Endless>
+					-- q(65631),	-- Triggered when killing Akkaris
+					-- q(65629),	-- Triggered when killing Akkaris
+					-- q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

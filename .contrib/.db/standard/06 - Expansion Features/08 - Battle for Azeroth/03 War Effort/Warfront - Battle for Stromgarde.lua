@@ -1716,7 +1716,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(WAR_EFFORT, {
 		n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 			n(GROUP_FINDER, {
@@ -1726,4 +1726,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(52212),	-- Battle for Stormgarde - triggered after defeating Rokhan on Heroic difficulty
 		}),
 	}),
-})));
+}));

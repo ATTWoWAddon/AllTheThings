@@ -196,7 +196,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
 		}),
 	}))),
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(EXPANSION.CATA, {
 		n(ACHIEVEMENTS, {
 			ach(4917),	-- Cataclysmic Fisherman
 			ach(5851, {	-- Gone Fishin' (A)
@@ -240,8 +240,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				i(67388),	-- String of Alligator Teeth
 			},
 		}),
-	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	}),
+	expansion(EXPANSION.MOP, {
 		n(ACHIEVEMENTS, {
 			ach(6839),	-- Zen Master Fisherman
 			ach(7611, {	-- Pandarian Angler
@@ -259,8 +259,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				-- #endif
 			})),
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		n(ACHIEVEMENTS, {
 			ach(9503),	-- Draenor Fisherman
 			ach(9462),	-- Draenor Angler
@@ -275,8 +275,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(9460),	-- Jawless Skulker Angler
 			ach(9461),	-- Sea Scorpion Angler
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, {
 			ach(10594),	-- Legion Fisherman
 			ach(10595, {	-- A Cast Above the Rest
@@ -591,8 +591,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, {
 			ach(12753, {	-- Kul Tiran Fisherman [A]
 				["races"] = ALLIANCE_ONLY,
@@ -752,13 +752,13 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				i(7188),	-- Stormwind Guard Shield
 			},
 		}),
-	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.SL, {
 		n(ACHIEVEMENTS, {
 			ach(14333),	-- Shadowlands Fisherman
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, {
 			ach(16632),	-- Dragon Isles Fisherman
 			ach(17207, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Discombobberlated
@@ -789,8 +789,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
 			}),
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(40494, {	-- 10 Algari Anglerthread
 				["cost"] = {{"i", 225770, 10}},	-- 10x Algari Anglerthread
@@ -862,8 +862,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			}),
 			i(225768),	-- Crusty Darkmoon Card
 		}),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42797, {	-- Fishing at Midnight
 				["cost"] = {
@@ -892,5 +892,5 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["maps"] = { MAP.MIDNIGHT.QUELTHALAS },
 			}),
 		}),
-	})),
+	}),
 })));

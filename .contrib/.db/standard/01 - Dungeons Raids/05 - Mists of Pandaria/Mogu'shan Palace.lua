@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(321, {	-- Mogu'shan Palace
 		["coord"] = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = {
@@ -526,21 +526,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, {
 		inst(321, {
 			q(31634),	-- Mogu'shan Palace Challenge Mode - Bronze Addition (Nth)
 			q(31627),	-- Mogu'shan Palace Challenge Mode - Consolation (Nth)
 			q(31648),	-- Mogu'shan Palace Challenge Mode - Gold Addition (Nth)
 			q(31641),	-- Mogu'shan Palace Challenge Mode - Silver Addition (Nth)
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		inst(321, {
 			q(35318),	-- Mogu'shan Palace Reward Quest - Normal completion
 			q(35321),	-- Mogu'shan Palace Reward Quest - Heroic completion
 		}),
-	})),
+	}),
 });

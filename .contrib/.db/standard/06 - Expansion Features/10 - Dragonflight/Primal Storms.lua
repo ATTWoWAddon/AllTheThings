@@ -11,7 +11,7 @@ end
 
 local ELEMENTAL_OVERFLOW = 2118;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(PRIMAL_STORMS, {
 		["maps"] = { VALDRAKKEN },
 		["groups"] = {
@@ -1123,4 +1123,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		},
 	}),
-})));
+}));

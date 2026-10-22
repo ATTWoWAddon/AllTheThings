@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 	filter(REAGENTS, {
 		i(190450),	-- Awakened Ire
 		i(190451),	-- Rousing Ire
@@ -42,4 +42,4 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		-- #endif
 	}),
-}))));
+})));

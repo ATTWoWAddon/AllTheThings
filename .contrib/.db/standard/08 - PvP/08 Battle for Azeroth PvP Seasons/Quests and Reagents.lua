@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(QUESTS, sharedData({
 		["providers"] = {
 			{ "n", 143560 },	-- Marshal Gabriel
@@ -75,4 +75,4 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED
 		i(172898),	-- Warlord's Trophy Corrupted Duelist
 		i(172899),	-- Warlord's Trophy Corrupted Elite
 	})),
-}))));
+})));

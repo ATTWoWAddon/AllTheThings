@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1267, {	-- Priory of the Sacred Flame
 		["coord"] = { 41.3, 49.3, HALLOWFALL },
 		["maps"] = {
@@ -99,4 +99,4 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			})),
 		},
 	}),
-})));
+}));

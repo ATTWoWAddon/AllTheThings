@@ -555,9 +555,12 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	expansion(EXPANSION.TWW, {
 		m(ARATHI_HIGHLANDS_CATCHUP, {
-			q(93382),	-- Pardon the Interruption
+			["timeline"] = { ADDED_11_2_7 },
+			["groups"] = {
+				q(93382),	-- Pardon the Interruption
+			},
 		}),
-	}));
+	});
 });

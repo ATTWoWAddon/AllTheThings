@@ -879,32 +879,35 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, {
-			m(THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
-				n(FACTIONS, {
-					n(EMISSARY_QUESTS, {
-						q(48973),	-- Paragon of Argussian Reach
-						q(48974),	-- Paragon of the Army of the Light
+		["timeline"] = { ADDED_7_3_0 },
+		["groups"] = {
+			m(ARGUS, {
+				m(THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
+					n(FACTIONS, {
+						n(EMISSARY_QUESTS, {
+							q(48973),	-- Paragon of Argussian Reach
+							q(48974),	-- Paragon of the Army of the Light
+						}),
 					}),
+					n(QUESTS, {
+						q(47888),	-- Triggers when turning in "Alone in the Abyss" (questID 46938)
+						q(47869),	-- Triggers when turning in "Light's Exodus" (questID 47223)
+						q(49161),	-- Triggers when turning in "Where They Least Expect It" (questID 48461)
+						------ Stay awhile and listen ------
+						hqt(49164),	-- Silgryn and Liadrin
+					}),
+					q(49383),	-- Changing specialization: Arms/Balance/Elemental/...
+					q(49384),	-- Changing specialization: Fury/Feral/Enhance/...
+					q(49385),	-- Changing specialization: Prot(War)/Guardian/Resto(Sham)/...
+					q(49386),	-- Changing specialization: Restoration(Druid)
+					-- Vindicaar Matrix Abilities
+					q(48449),	-- Shroud of Arcane Echoes/Warframe
+					q(48450),	-- Shroud of Arcane Echoes/Fel Heart
+					q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
 				}),
-				n(QUESTS, {
-					q(47888),	-- Triggers when turning in "Alone in the Abyss" (questID 46938)
-					q(47869),	-- Triggers when turning in "Light's Exodus" (questID 47223)
-					q(49161),	-- Triggers when turning in "Where They Least Expect It" (questID 48461)
-					------ Stay awhile and listen ------
-					hqt(49164),	-- Silgryn and Liadrin
-				}),
-				q(49383),	-- Changing specialization: Arms/Balance/Elemental/...
-				q(49384),	-- Changing specialization: Fury/Feral/Enhance/...
-				q(49385),	-- Changing specialization: Prot(War)/Guardian/Resto(Sham)/...
-				q(49386),	-- Changing specialization: Restoration(Druid)
-				-- Vindicaar Matrix Abilities
-				q(48449),	-- Shroud of Arcane Echoes/Warframe
-				q(48450),	-- Shroud of Arcane Echoes/Fel Heart
-				q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
 			}),
-		}),
+		},
 	}),
-})));
+}));

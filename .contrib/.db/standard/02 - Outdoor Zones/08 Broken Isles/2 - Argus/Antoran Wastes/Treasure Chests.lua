@@ -213,17 +213,20 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, {
-			m(ANTORAN_WASTES, {
-				n(TREASURES, {
-					q(48613),	-- clearing the rubble in front of "Eredar Treasure Cache" (object id: 276223)
-					q(48742),	-- clearing the rubble in front of "Students Surprising Surplus" (object id: 276225)
-					q(48746),	-- clearing the rubble in front of "Void Tinged Chest" (object id: 276226)
-					q(48741),	-- clearing the rubble in front of "Chest of Ill-Gotten Gains" (object: 276224)
+		["timeline"] = { ADDED_7_3_0 },
+		["groups"] = {
+			m(ARGUS, {
+				m(ANTORAN_WASTES, {
+					n(TREASURES, {
+						q(48613),	-- clearing the rubble in front of "Eredar Treasure Cache" (object id: 276223)
+						q(48742),	-- clearing the rubble in front of "Students Surprising Surplus" (object id: 276225)
+						q(48746),	-- clearing the rubble in front of "Void Tinged Chest" (object id: 276226)
+						q(48741),	-- clearing the rubble in front of "Chest of Ill-Gotten Gains" (object: 276224)
+					}),
 				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

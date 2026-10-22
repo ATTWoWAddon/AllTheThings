@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	n(ACHIEVEMENTS, {
 		ach(62193),	-- Midnight Dungeon Damage Dealer
 		ach(62194),	-- Midnight Dungeon Healer
@@ -18,4 +18,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			i(260887),	-- Tenebrous Harrower (MOUNT!)
 		}),
 	}),
-})));
+}));

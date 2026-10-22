@@ -42,7 +42,7 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	}))),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(EXPANSION.WOD, {
 		n(QUESTS, {
 			q(34774, {	-- Blingtron 5000
 				["qg"] = 77789,	-- Blingtron 5000
@@ -74,8 +74,8 @@ root(ROOTS.Craftables, {
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		n(QUESTS, {
 			q(40753, {	-- Blingtron 6000
 				["qg"] = 101527,	-- Blingtron 6000
@@ -94,28 +94,31 @@ root(ROOTS.Craftables, {
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(QUESTS, {
-			q(56042, {	-- Blingtron 7000
-				["qg"] = 153897,	-- Blingtron 7000
-				["isDaily"] = true,
-				["groups"] = {
-					i(168740, {	-- Blingtron 7000 Gift Package
-						["sym"] = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
-						["groups"] = {
-							i(170060, {	-- Encrypted Message
-								i(170055),	-- Decrypted Message 001-322
-								i(170056),	-- Decrypted Message 001-346
-								i(170057),	-- Decrypted Message 001-372
-								i(170058),	-- Decrypted Message 001-398
-								i(170059),	-- Decrypted Message 002-001
-							}),
-							i(168790),	-- Sack of Fish Bones
-						},
-					}),
-				},
-			}),
+			["timeline"] = { ADDED_8_2_0 },
+			["groups"] = {
+				q(56042, {	-- Blingtron 7000
+					["qg"] = 153897,	-- Blingtron 7000
+					["isDaily"] = true,
+					["groups"] = {
+						i(168740, {	-- Blingtron 7000 Gift Package
+							["sym"] = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
+							["groups"] = {
+								i(170060, {	-- Encrypted Message
+									i(170055),	-- Decrypted Message 001-322
+									i(170056),	-- Decrypted Message 001-346
+									i(170057),	-- Decrypted Message 001-372
+									i(170058),	-- Decrypted Message 001-398
+									i(170059),	-- Decrypted Message 002-001
+								}),
+								i(168790),	-- Sack of Fish Bones
+							},
+						}),
+					},
+				}),
+			},
 		}),
-	})),
+	}),
 });

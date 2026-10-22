@@ -1393,7 +1393,7 @@ root(ROOTS.Zones, {
 		}),
 	})),
 });
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(PANDARIA, {
 		m(THE_WANDERING_ISLE_STARTING_ZONE, {
 			n(QUESTS, {
@@ -1403,4 +1403,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

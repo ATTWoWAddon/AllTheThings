@@ -1917,7 +1917,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
 			header(HEADERS.Faction, FACTION_SHADO_PAN, {
@@ -1946,4 +1946,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			-- #endif
 		}),
 	}),
-})));
+}));

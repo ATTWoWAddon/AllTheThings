@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, {
 	n(ARMOR, {
 		filter(CLOTH, {
 			i(121390),	-- Anund's Bandages
@@ -236,4 +236,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 			i(138001),	-- Pattern: Imbued Silkweave Shade [Rank 3] (RECIPE!)
 		}),
 	}),
-})));
+}));

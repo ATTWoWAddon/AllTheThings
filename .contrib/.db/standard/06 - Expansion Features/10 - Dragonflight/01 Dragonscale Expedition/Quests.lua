@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(RENOWN, {
 			n(QUESTS, bubbleDownRep(FACTION_DRAGONSCALE_EXPEDITION, {
@@ -840,9 +840,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		i(192055),	-- Dragon Isles Artifact [BoP]
 		i(200443),	-- Dragon Isles Artifact [BoA]
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(QUESTS, {
 			q(72401),	-- Triggered immediately after reaching renown 13
@@ -855,4 +855,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(64764),	-- triggers after turn in questID 72708 (Dragon Isles Supplies) (spellID 396726)
 		}),
 	}),
-})));
+}));

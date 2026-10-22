@@ -462,121 +462,124 @@ local WARCRAFT_FOREVER_COLLECTION = createHeader({
 });
 
 root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_6 } }, {
+	expansion(EXPANSION.CLASSIC, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
 		["groups"] = {
 			n(QUESTS, {
-				-- #if NOT ANYCLASSIC
-				q(8547, {	-- Welcome! (Blood Elf)
-					["provider"] = { "i", 20938 },	-- Falconwing Square [Wrath+] / Sunstrider Isle Gift Voucher
-					["timeline"] = { ADDED_2_0_3 },
-					["maps"] = { EVERSONG_WOODS },
-					["races"] = { BLOODELF },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(12781, {	-- Welcome! (Death Knight)
-					["provider"] = { "i", 39713 },	-- Ebon Hold Gift Voucher
-					["timeline"] = { ADDED_3_0_2 },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["classes"] = { DEATHKNIGHT },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(9278, {	-- Welcome! (Draenei)
-					["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
-					["timeline"] = { ADDED_2_0_3 },
-					["maps"] = { AZUREMYST_ISLE },
-					["classes"] = { DRAENEI },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(5841, {	-- Welcome! (Dwarf, Gnome)
-					["provider"] = { "i", 14647 },	-- Kharanos [Wrath+] / Coldridge Valley Gift Voucher
-					["maps"] = { DUN_MOROGH },
-					["races"] = { DWARF, GNOME },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(5805, {	-- Welcome! (Human)
-					["provider"] = { "i", 14646 },	-- Goldshire [Wrath+] / Northshire Gift Voucher
-					["maps"] = { ELWYNN_FOREST },
-					["races"] = { HUMAN },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(5842, {	-- Welcome! (Night Elf)
-					["provider"] = { "i", 14648 },	-- Dolanaar [Wrath+] / Shadowglen Gift Voucher
-					["maps"] = { TELDRASSIL },
-					["races"] = { NIGHTELF },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(5843, {	-- Welcome! (Orc & Troll)
-					["provider"] = { "i", 14649 },	-- Razor Hill [Wrath+] / Valley of Trials Gift Voucher
-					["maps"] = { DUROTAR },
-					["races"] = { ORC, TROLL },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(5844, {	-- Welcome! (Tauren)
-					["provider"] = { "i", 14650 },	-- Bloodhoof Village [Wrath+] / Camp Narache Gift Voucher
-					["maps"] = { MULGORE },
-					["races"] = { TAUREN },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				q(5847, {	-- Welcome! (Undead)
-					["provider"] = { "i", 14651 },	-- Brill [Wrath+] / Deathknell Gift Voucher
-					["maps"] = { TIRISFAL_GLADES },
-					["races"] = { UNDEAD },
-					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
-				}),
-				-- #else
-				q(91888, {	-- A Special Delivery
-					["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 },
-					["description"] = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
-					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
-					["coords"] = { 28.2, 75.8, STRANGLETHORN_VALE },
-					["maps"] = {
-						IRONFORGE,
-						STORMWIND_CITY,
-						UNDERCITY,
-						THUNDER_BLUFF,
-						ORGRIMMAR,
-						-- #if AFTER TBC
-						THE_EXODAR,
-						SILVERMOON_CITY,
-						SHATTRATH_CITY,
-						-- #endif
-					},
-					["crs"] = {
-						5111,	-- Innkeeper Firebrew <Innkeeper>
-						6740,	-- Innkeeper Allison <Innkeeper>
-						6741,	-- Innkeeper Norman <Innkeeper>
-						6746,	-- Innkeeper Pala <Innkeeper>
-						6929,	-- Innkeeper Gryshka <Innkeeper>
-						-- #if AFTER TBC
-						16618,	-- Innkeeper Velandra <Innkeeper>
-						16739,	-- Caregiver Breel <Innkeeper>
-						19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
-						19046,	-- Minalei (ALDOR)
-						-- #endif
-					},
-					["groups"] = {
-						ach(662, {	-- Collector's Edition: Mini-Diablo
-							["timeline"] = { ADDED_3_0_2 },
-						}),
-						ach(663, {	-- Collector's Edition: Panda
-							["timeline"] = { ADDED_3_0_2 },
-						}),
-						ach(664, {	-- Collector's Edition: Zergling
-							["timeline"] = { ADDED_3_0_2 },
-						}),
-						i(13584, {	-- Mini Diablo (PET!)
-							["timeline"] = { ADDED_1_11_1 },
-						}),
-						i(13583, {	-- Panda Cub (PET!)
-							["timeline"] = { ADDED_1_11_1 },
-						}),
-						i(13582, {	-- Zergling (PET!)
-							["timeline"] = { ADDED_1_11_1 },
-						}),
-					},
-				}),
-				-- #endif
+				["timeline"] = { REMOVED_4_0_6 },
+				["groups"] = {
+					-- #if NOT ANYCLASSIC
+					q(8547, {	-- Welcome! (Blood Elf)
+						["provider"] = { "i", 20938 },	-- Falconwing Square [Wrath+] / Sunstrider Isle Gift Voucher
+						["timeline"] = { ADDED_2_0_3 },
+						["maps"] = { EVERSONG_WOODS },
+						["races"] = { BLOODELF },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(12781, {	-- Welcome! (Death Knight)
+						["provider"] = { "i", 39713 },	-- Ebon Hold Gift Voucher
+						["timeline"] = { ADDED_3_0_2 },
+						["maps"] = { EASTERN_PLAGUELANDS },
+						["classes"] = { DEATHKNIGHT },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(9278, {	-- Welcome! (Draenei)
+						["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
+						["timeline"] = { ADDED_2_0_3 },
+						["maps"] = { AZUREMYST_ISLE },
+						["classes"] = { DRAENEI },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(5841, {	-- Welcome! (Dwarf, Gnome)
+						["provider"] = { "i", 14647 },	-- Kharanos [Wrath+] / Coldridge Valley Gift Voucher
+						["maps"] = { DUN_MOROGH },
+						["races"] = { DWARF, GNOME },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(5805, {	-- Welcome! (Human)
+						["provider"] = { "i", 14646 },	-- Goldshire [Wrath+] / Northshire Gift Voucher
+						["maps"] = { ELWYNN_FOREST },
+						["races"] = { HUMAN },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(5842, {	-- Welcome! (Night Elf)
+						["provider"] = { "i", 14648 },	-- Dolanaar [Wrath+] / Shadowglen Gift Voucher
+						["maps"] = { TELDRASSIL },
+						["races"] = { NIGHTELF },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(5843, {	-- Welcome! (Orc & Troll)
+						["provider"] = { "i", 14649 },	-- Razor Hill [Wrath+] / Valley of Trials Gift Voucher
+						["maps"] = { DUROTAR },
+						["races"] = { ORC, TROLL },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(5844, {	-- Welcome! (Tauren)
+						["provider"] = { "i", 14650 },	-- Bloodhoof Village [Wrath+] / Camp Narache Gift Voucher
+						["maps"] = { MULGORE },
+						["races"] = { TAUREN },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					q(5847, {	-- Welcome! (Undead)
+						["provider"] = { "i", 14651 },	-- Brill [Wrath+] / Deathknell Gift Voucher
+						["maps"] = { TIRISFAL_GLADES },
+						["races"] = { UNDEAD },
+						["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
+					}),
+					-- #else
+					q(91888, {	-- A Special Delivery
+						["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 },
+						["description"] = "These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+						["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+						["coords"] = { 28.2, 75.8, STRANGLETHORN_VALE },
+						["maps"] = {
+							IRONFORGE,
+							STORMWIND_CITY,
+							UNDERCITY,
+							THUNDER_BLUFF,
+							ORGRIMMAR,
+							-- #if AFTER TBC
+							THE_EXODAR,
+							SILVERMOON_CITY,
+							SHATTRATH_CITY,
+							-- #endif
+						},
+						["crs"] = {
+							5111,	-- Innkeeper Firebrew <Innkeeper>
+							6740,	-- Innkeeper Allison <Innkeeper>
+							6741,	-- Innkeeper Norman <Innkeeper>
+							6746,	-- Innkeeper Pala <Innkeeper>
+							6929,	-- Innkeeper Gryshka <Innkeeper>
+							-- #if AFTER TBC
+							16618,	-- Innkeeper Velandra <Innkeeper>
+							16739,	-- Caregiver Breel <Innkeeper>
+							19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+							19046,	-- Minalei (ALDOR)
+							-- #endif
+						},
+						["groups"] = {
+							ach(662, {	-- Collector's Edition: Mini-Diablo
+								["timeline"] = { ADDED_3_0_2 },
+							}),
+							ach(663, {	-- Collector's Edition: Panda
+								["timeline"] = { ADDED_3_0_2 },
+							}),
+							ach(664, {	-- Collector's Edition: Zergling
+								["timeline"] = { ADDED_3_0_2 },
+							}),
+							i(13584, {	-- Mini Diablo (PET!)
+								["timeline"] = { ADDED_1_11_1 },
+							}),
+							i(13583, {	-- Panda Cub (PET!)
+								["timeline"] = { ADDED_1_11_1 },
+							}),
+							i(13582, {	-- Zergling (PET!)
+								["timeline"] = { ADDED_1_11_1 },
+							}),
+						},
+					}),
+					-- #endif
+				},
 			}),
 			-- #if NOT ANYCLASSIC
 			n(REWARDS, {
@@ -596,6 +599,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 					5844,	-- Welcome! (Tauren)
 					5847,	-- Welcome! (Undead)
 				},
+				["timeline"] = { REMOVED_4_0_6 },
 				["groups"] = {
 					ach(662, {	-- Collector's Edition: Mini-Diablo
 						["timeline"] = { ADDED_3_0_2 },
@@ -619,20 +623,23 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			}),
 			-- #endif
 		},
-	})),
+	}),
 	-- #if NOT ANYCLASSIC
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 } }, {
+	expansion(EXPANSION.TBC, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["groups"] = {
 			ach(665, {	-- Collector's Edition: Netherwhelp
 				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
-			i(25535),	-- Netherwhelp (PET!)
+			i(25535, {	-- Netherwhelp (PET!)
+				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
+			}),
 			euONLY(i(30360, {	-- Lurky (PET!)
 				["description"] = "This was only available in the EU.",
+				["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 			})),
 		},
-	})),
+	}),
 	-- #else
 	q(63865, {	-- A Special Thank
 		["timeline"] = { ADDED_2_5_1, REMOVED_3_4_0 },
@@ -790,13 +797,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		},
 	})),
 	-- #endif
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
+	expansion(EXPANSION.WRATH, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["groups"] = {
-			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
-			i(39286),	-- Frosty (PET!)
+			ach(683, {	-- Collector's Edition: Frost Wyrm Whelp
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 },
+			}),
+			i(39286, {	-- Frosty (PET!)
+				["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 },
+			}),
 		},
-	})),
+	}),
 	-- #if ANYCLASSIC
 	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_0_1 } }, {
 		n(HEROIC_EDITION, {
@@ -848,13 +859,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_3_2 } }, {
+	expansion(EXPANSION.CATA, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["groups"] = {
-			ach(5377),	-- Collector's Edition: Lil' Deathwing
-			i(62540),	-- Lil' Deathwing (PET!)
+			ach(5377, {	-- Collector's Edition: Lil' Deathwing
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_2 },
+			}),
+			i(62540, {	-- Lil' Deathwing (PET!)
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_2 },
+			}),
 		},
-	})),
+	}),
 	-- #if ANYCLASSIC
 	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_4_2 } }, {
 		n(HEROIC_EDITION, {
@@ -928,15 +943,23 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
+	expansion(EXPANSION.MOP, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
 		["groups"] = {
-			ach(6849),	-- Collector's Edition: Imperial Quilen
-			ach(6848),	-- Collector's Edition: Lucky Quilen Cub
-			i(85870),	-- Imperial Quilen (MOUNT!)
-			i(85871),	-- Lucky Quilen Cub (PET!)
+			ach(6849, {	-- Collector's Edition: Imperial Quilen
+				["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 },
+			}),
+			ach(6848, {	-- Collector's Edition: Lucky Quilen Cub
+				["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 },
+			}),
+			i(85870, {	-- Imperial Quilen (MOUNT!)
+				["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 },
+			}),
+			i(85871, {	-- Lucky Quilen Cub (PET!)
+				["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 },
+			}),
 		},
-	})),
+	}),
 	-- #if ANYCLASSIC
 	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ ["timeline"] = { ADDED_4_4_2, REMOVED_6_0_2 } }, {
 		n(HEROIC_EDITION, {
@@ -990,29 +1013,50 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			i(109013),	-- Dread Raven (MOUNT!)
 		},
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 } }, {
+	expansion(EXPANSION.LEGION, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
 		["groups"] = {
-			ach(10320),	-- Collector's Edition: Illidari Felstalker
-			ach(10321),	-- Collector's Edition: Nibbles
-			i(128425),	-- Illidari Felstalker (MOUNT!)
-			i(128426),	-- Nibbles (PET!)
+			ach(10320, {	-- Collector's Edition: Illidari Felstalker
+				["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 },
+			}),
+			ach(10321, {	-- Collector's Edition: Nibbles
+				["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 },
+			}),
+			i(128425, {	-- Illidari Felstalker (MOUNT!)
+				["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 },
+			}),
+			i(128426, {	-- Nibbles (PET!)
+				["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 },
+			}),
 		},
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
 		["groups"] = {
-			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
-			a(ach(12229)),	-- Collector's Edition: Seabraid Stallion
-			ach(12232),	-- Collector's Edition: Tottle
-			h(i(153540)),	-- Gilded Ravasaur (MOUNT!)
-			a(i(153539)),	-- Seabraid Stallion (MOUNT!)
-			i(153541),	-- Tottle (PET!)
+			h(ach(12230, {	-- Collector's Edition: Gilded Ravasaur
+				["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 },
+			})),
+			a(ach(12229, {	-- Collector's Edition: Seabraid Stallion
+				["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 },
+			})),
+			ach(12232, {	-- Collector's Edition: Tottle
+				["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 },
+			}),
+			h(i(153540, {	-- Gilded Ravasaur (MOUNT!)
+				["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 },
+			})),
+			a(i(153539, {	-- Seabraid Stallion (MOUNT!)
+				["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 },
+			})),
+			i(153541, {	-- Tottle (PET!)
+				["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 },
+			}),
 		},
-	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 } }, {
+	}),
+	expansion(EXPANSION.SL, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",
+			["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 },
 			["groups"] = {
 				ach(14283, {	-- Heroic Edition: Ensorcelled Everwyrm
 					-- ["provider"] = { "s", }	-- TODO maybe have a spell provider?
@@ -1042,6 +1086,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Shadowlands Epic Edition.",
+			["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 },
 			["groups"] = {
 				-- #if AFTER 11.2.5
 				i(248091),	-- Anima Wyrmling (PET!)
@@ -1052,10 +1097,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(172177),	-- Illusion: Wraithchill (ILLUSION!)
 			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
+			["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 },
 			["groups"] = {
 				ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 				ach(17305, {	-- Trading Post: Dragonflight
@@ -1075,6 +1121,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Epic Edition.",
+			["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 },
 			["groups"] = {
 				i(193588),	-- Timewalker's Hearthstone (TOY!)
 				-- #if AFTER 11.2.5
@@ -1089,10 +1136,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(193610),	-- Diadem of the Spell-Keeper (COSMETIC!)
 			},
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_11_2_0 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
+			["timeline"] = { ADDED_10_1_7, REMOVED_11_2_0 },
 			["groups"] = {
 				ach(19027),	-- Heroic Edition: Algarian Stormrider
 				iensemble(209336),	-- Ensemble: Stormrider's Attire (COSMETIC!)
@@ -1282,6 +1330,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
+			["timeline"] = { ADDED_10_1_7, REMOVED_11_2_0 },
 			["groups"] = {
 				ach(19030),	-- Squally
 				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
@@ -1297,7 +1346,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				})),
 			},
 		}),
-	})),
+	}),
 	expansion(EXPANSION.MID, {
 		["forcetimeline"] = { ADDED_11_2_0 },
 		["groups"] = {
@@ -1511,38 +1560,51 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 
 root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
 	-- #if ANYCLASSIC
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 } }, {
-			q(91889),	-- A Special Thanks (Innkeepers)
-	}));
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
-			q(63770),	-- A Special Thanks (Innkeepers)
-	}));
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
+	expansion(EXPANSION.CLASSIC, {
+			q(91889, {	-- A Special Thanks (Innkeepers)
+				["timeline"] = { ADDED_1_15_5, REMOVED_3_0_2 },
+			}),
+	});
+	expansion(EXPANSION.TBC, {
+			q(63770, {	-- A Special Thanks (Innkeepers)
+				["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 },
+			}),
+	});
+	expansion(EXPANSION.TBC, {
 		n(TBC_CLASSIC_DELUXE_EDITION, {
-			q(63448),	-- A Deluxe Delivery (Innkeepers)
+			["timeline"] = { ADDED_2_5_1, REMOVED_3_0_2 },
+			["groups"] = {
+				q(63448),	-- A Deluxe Delivery (Innkeepers)
+			},
 		}),
-	}));
+	});
 	-- #endif
 	-- #if CLASSIC_ANNIVERSARY
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_5, REMOVED_3_0_2 } }, {
+	expansion(EXPANSION.TBC, {
 		n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, {
-			q(93823),	-- A Deluxe Delivery (Innkeepers)
+			["timeline"] = { ADDED_2_5_5, REMOVED_3_0_2 },
+			["groups"] = {
+				q(93823),	-- A Deluxe Delivery (Innkeepers)
+			},
 		}),
-	}));
+	});
 	-- #endif
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+	expansion(EXPANSION.TWW, {
 		n(HEROIC_EDITION, {
-			q(81991),	-- 3 Ensembles tints tied to single HQT
-						-- Ensemble: Champion Stormrider's Attire
-						-- Ensemble: Deep Stormrider's Attire
-						-- Ensemble: Shining Stormrider's Attire
-			q(81992),	-- 3 Ensembles tints tied to single HQT
-						-- Ensemble: Frenzied Stormrider's Attire
-						-- Ensemble: Shocking Stormrider's Attire
-						-- Ensemble: Sparking Stormrider's Attire
-			q(81995),	-- During Gryphons of a Feather (82809)
-			q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993) [Dragon Isle Version]
-			q(84825),	-- triggered when accepting "The Stormrider's Bond" (83024) [Khaz Algar Version]
+			["timeline"] = { ADDED_11_0_0 },
+			["groups"] = {
+				q(81991),	-- 3 Ensembles tints tied to single HQT
+							-- Ensemble: Champion Stormrider's Attire
+							-- Ensemble: Deep Stormrider's Attire
+							-- Ensemble: Shining Stormrider's Attire
+				q(81992),	-- 3 Ensembles tints tied to single HQT
+							-- Ensemble: Frenzied Stormrider's Attire
+							-- Ensemble: Shocking Stormrider's Attire
+							-- Ensemble: Sparking Stormrider's Attire
+				q(81995),	-- During Gryphons of a Feather (82809)
+				q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993) [Dragon Isle Version]
+				q(84825),	-- triggered when accepting "The Stormrider's Bond" (83024) [Khaz Algar Version]
+			},
 		}),
-	}));
+	});
 })));

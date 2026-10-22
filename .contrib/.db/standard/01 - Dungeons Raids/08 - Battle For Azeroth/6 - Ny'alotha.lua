@@ -204,7 +204,7 @@ InstanceHelper.LFRQueueNPC = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1180, {	-- Ny'alotha
 		["coords"] = {
 			{ 55.1, 43.8, NZOTH_ASSAULT_ULDUM },
@@ -225,6 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 		},
 		["isRaid"] = true,
 		["lvl"] = { 50 },
+		["timeline"] = { ADDED_8_3_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14058),	-- All Eyes On Me (Ny'alotha)
@@ -530,49 +531,52 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	inst(1180, {	-- Ny'alotha
-		q(58550),	-- Mythic: Prophet Skitra
-		q(58542),	-- Mythic: Vexiona
-		q(58546),	-- Mythic: Ra-den
-		q(58538),	-- Mythic: Il'gynoth
-		q(58534),	-- Mythic: N'zoth
-		q(59557),	-- kill wrathion
-		q(59558),	-- kill Maut
-		q(58547),	-- kill skitra - probably triggers when first wing clears?
-		q(58548),	-- kill skitra - probably triggers when first wing clears?
-		q(58549),	-- kill skitra on heroic?
-		q(59559),	-- kill skitra - kill credit
-		q(59136),	-- after coming up the elevator after first wing. Likely the RP and respawn point reset
-		q(59561),	-- kill dark inquisitor xanesh
-		q(58539),	-- kill vexiona - probably triggers when the right wing is cleared
-		q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
-		q(58541),	-- looted Dragon Heart from vexiona on heroic. May be different ID for different difficulties
-		q(59562),	-- kill vexiona - kill credit
-		q(59563),	-- kill shad'har
-		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
-		q(59047),	-- kill Sanguimar, big add with 200 Mementos as loot
-		q(59048),	-- kill Deresh of the Nothingness, big add with 200 Mementos as loot
-		q(59566),	-- kill drest'agath
-		q(59560),	-- kill hivemind
-		q(58535),	-- Il'gynoth wing clear. probably triggers the azerite beacon
-		q(58536),	-- Il'gynoth wing clear. triggers dialog?
-		q(58537),	-- looted eye of prophecy from il'gynoth on heroic. May be different ID for different difficulties
-		q(59564),	-- kill Il'gynoth
-		q(59565),	-- kill ra-den
-		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
-		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
-		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
-		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
-		q(59568),	-- N'Zoth killed on Heroic. Possibly the same for other difficulties?
-		q(58531),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
-		q(58533),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
-		q(58532),	-- triggered when killing N'Zoth in LFR
-		q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
-		q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
-		q(59533),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
-		q(59134),	-- my guess is that it triggers after getting Malefic Core from N'Zoth. I got it on heroic and it wasn't present on my previous heroic kills
+		["timeline"] = { ADDED_8_3_0 },
+		["groups"] = {
+			q(58550),	-- Mythic: Prophet Skitra
+			q(58542),	-- Mythic: Vexiona
+			q(58546),	-- Mythic: Ra-den
+			q(58538),	-- Mythic: Il'gynoth
+			q(58534),	-- Mythic: N'zoth
+			q(59557),	-- kill wrathion
+			q(59558),	-- kill Maut
+			q(58547),	-- kill skitra - probably triggers when first wing clears?
+			q(58548),	-- kill skitra - probably triggers when first wing clears?
+			q(58549),	-- kill skitra on heroic?
+			q(59559),	-- kill skitra - kill credit
+			q(59136),	-- after coming up the elevator after first wing. Likely the RP and respawn point reset
+			q(59561),	-- kill dark inquisitor xanesh
+			q(58539),	-- kill vexiona - probably triggers when the right wing is cleared
+			q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
+			q(58541),	-- looted Dragon Heart from vexiona on heroic. May be different ID for different difficulties
+			q(59562),	-- kill vexiona - kill credit
+			q(59563),	-- kill shad'har
+			q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
+			q(59047),	-- kill Sanguimar, big add with 200 Mementos as loot
+			q(59048),	-- kill Deresh of the Nothingness, big add with 200 Mementos as loot
+			q(59566),	-- kill drest'agath
+			q(59560),	-- kill hivemind
+			q(58535),	-- Il'gynoth wing clear. probably triggers the azerite beacon
+			q(58536),	-- Il'gynoth wing clear. triggers dialog?
+			q(58537),	-- looted eye of prophecy from il'gynoth on heroic. May be different ID for different difficulties
+			q(59564),	-- kill Il'gynoth
+			q(59565),	-- kill ra-den
+			q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
+			q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
+			q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
+			q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
+			q(59568),	-- N'Zoth killed on Heroic. Possibly the same for other difficulties?
+			q(58531),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
+			q(58533),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
+			q(58532),	-- triggered when killing N'Zoth in LFR
+			q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+			q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+			q(59533),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+			q(59134),	-- my guess is that it triggers after getting Malefic Core from N'Zoth. I got it on heroic and it wasn't present on my previous heroic kills
+		},
 	}),
-})));
+}));

@@ -327,7 +327,7 @@ InstanceHelper.LFRQueueNPC = {
 	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(946, {	-- Antorus, the Burning Throne
 		["coord"] = { 54.9, 62.3, ANTORAN_WASTES },
 		["maps"] = {
@@ -346,6 +346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		},
 		["isRaid"] = true,
 		["lvl"] = { 45 },
+		["timeline"] = { ADDED_7_3_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(42032, {	-- Antorus, the Burning Throne (automated)
@@ -676,52 +677,58 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+	expansion(EXPANSION.LEGION, {
 		inst(946, {
-			q(45460),	-- Garothi Worldbreaker
-			q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
-			q(45461),	-- Felhounds of Sargeras
-			q(48422),	-- Felhounds of Sargeras (triggered at the same time as above)
-			q(45462),	-- Antoran High Command
-			q(48423),	-- Antoran High Command (triggered at the same time as above)
-			q(45464),	-- Eonar
-			q(48425),	-- Eonar (triggered at the same time as above)
-			q(49357),	-- Eonar (triggered at the same time as above)
-			q(49358),	-- Invasion battle - first kill
-			q(49359),	-- Eonar - triggered after kill
-			q(49360),	-- Eonar Mythic - first Kill
-			q(45463),	-- Portal Keeper Hasabel
-			q(48424),	-- Portal Keeper Hasabel (triggered at the same time as above)
-			q(45465),	-- Imonar
-			q(48426),	-- Imonar (triggered at the same time as above)
-			q(45466),	-- Kingaroth
-			q(48427),	-- Kingaroth (triggered at the same time as above)
-			q(45467),	-- Varimathras
-			q(48428),	-- Varimathras (triggered at the same time as above)
-			q(45468),	-- The Coven of Shivarra
-			q(48429),	-- The Coven of Shivarra (triggered at the same time as above)
-			q(45469),	-- Aggramar
-			q(48430),	-- Aggramar (triggered at the same time as above)
-			q(49180),	-- Aggramar (triggered at the same time as above)
-			q(48431),	-- Argus
-			q(49184),	-- Argus (triggered at the same time as above)
-			q(49361),	-- Argus (triggered at the same time as above)
-			q(49363),	-- Argus Heroic
-			q(49475),	-- Argus Heroic (triggered at the same time as above)
-			q(49364),	-- Argus Mythic - first kill
-			q(49717),	-- Argus Mythic - first kill
-			q(49771),	-- Argus Mythic - first kill?
-			q(49718),	-- Argus - first kill - received "Khaz'goroth's Courage" (itemID 154176 / "Aggramar's Conviction" (itemID 154173))
-			q(49362),	-- full raid cleared
-			q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
+			["timeline"] = { ADDED_7_3_0 },
+			["groups"] = {
+				q(45460),	-- Garothi Worldbreaker
+				q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
+				q(45461),	-- Felhounds of Sargeras
+				q(48422),	-- Felhounds of Sargeras (triggered at the same time as above)
+				q(45462),	-- Antoran High Command
+				q(48423),	-- Antoran High Command (triggered at the same time as above)
+				q(45464),	-- Eonar
+				q(48425),	-- Eonar (triggered at the same time as above)
+				q(49357),	-- Eonar (triggered at the same time as above)
+				q(49358),	-- Invasion battle - first kill
+				q(49359),	-- Eonar - triggered after kill
+				q(49360),	-- Eonar Mythic - first Kill
+				q(45463),	-- Portal Keeper Hasabel
+				q(48424),	-- Portal Keeper Hasabel (triggered at the same time as above)
+				q(45465),	-- Imonar
+				q(48426),	-- Imonar (triggered at the same time as above)
+				q(45466),	-- Kingaroth
+				q(48427),	-- Kingaroth (triggered at the same time as above)
+				q(45467),	-- Varimathras
+				q(48428),	-- Varimathras (triggered at the same time as above)
+				q(45468),	-- The Coven of Shivarra
+				q(48429),	-- The Coven of Shivarra (triggered at the same time as above)
+				q(45469),	-- Aggramar
+				q(48430),	-- Aggramar (triggered at the same time as above)
+				q(49180),	-- Aggramar (triggered at the same time as above)
+				q(48431),	-- Argus
+				q(49184),	-- Argus (triggered at the same time as above)
+				q(49361),	-- Argus (triggered at the same time as above)
+				q(49363),	-- Argus Heroic
+				q(49475),	-- Argus Heroic (triggered at the same time as above)
+				q(49364),	-- Argus Mythic - first kill
+				q(49717),	-- Argus Mythic - first kill
+				q(49771),	-- Argus Mythic - first kill?
+				q(49718),	-- Argus - first kill - received "Khaz'goroth's Courage" (itemID 154176 / "Aggramar's Conviction" (itemID 154173))
+				q(49362),	-- full raid cleared
+				q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
+			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		inst(946, {
-			q(77246, {["timeline"]={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
+			["timeline"] = { ADDED_10_1_5 },
+			["groups"] = {
+				q(77246, {["timeline"]={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
+			},
 		}),
-	})),
+	}),
 });

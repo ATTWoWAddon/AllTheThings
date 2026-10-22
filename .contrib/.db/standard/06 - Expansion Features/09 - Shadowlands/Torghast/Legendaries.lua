@@ -2,7 +2,7 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	m(TORGHAST, {
 		SL_Legendaries({
 			["description"] = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
@@ -102,4 +102,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			},
 		}),
 	}),
-})));
+}));

@@ -2584,18 +2584,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, {
 		inst(246, {
 			q(31635),	-- Scholomance Challenge Mode - Bronze Addition (Nth)
 			q(31628),	-- Scholomance Challenge Mode - Consolation (Nth)
 			q(31649),	-- Scholomance Challenge Mode - Gold Addition (Nth)
 			q(31642),	-- Scholomance Challenge Mode - Silver Addition (Nth)
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		inst(246, {
 			q(35594),	-- Scholomance Reward Quest - Normal completion
 			q(35595),	-- Scholomance Reward Quest - Heroic completion
 		}),
-	})),
+	}),
 });

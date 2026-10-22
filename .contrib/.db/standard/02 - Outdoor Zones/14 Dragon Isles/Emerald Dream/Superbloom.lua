@@ -173,44 +173,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		m(EMERALD_DREAM, {
-			header(HEADERS.Quest, 78203, {	-- Superbloom
-				q(78203),	-- Superbloom
-				--
-				q(78553),	-- pop if you loot any seed from Veriann Timbercrush (daily/weekly?)
-				-- q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
-				q(79082, {["repeatable"]=true}),	-- 'The Superbloom Event'
-				q(78866),	-- 'Superbloom: Step 2 Right Path'
-				q(78867),	-- 'Superbloom: Step 3 Right Path'
-				q(78868),	-- 'Superbloom: Step 4 Right Path'
-				q(78869),	-- 'Superbloom: Step 2 Left Path'
-				q(78870),	-- 'Superbloom: Step 3 Left Path'
-				q(78871),	-- 'Superbloom: Step 4 Left Path'
-				q(78892),	-- 'Superbloom: Final Step'
-				-- spells for achievement Fruit of the Bloom ach(19310)
-				-- q(78751),	-- Arachnid Annihilation (spellID 428203)
-				-- q(78487),	-- Basket of Explosive Acorns (spellID 424568)
-				-- q(78488),	-- Bubble Blowgun (spellID 414636)
-				-- q(78482),	-- Dream Gatherer (spellID 418100)
-				-- q(78730),	-- Fae Lens (spellID 428124)
-				-- q(78483),	-- Feral Overflow (spellID 424822)
-				-- q(78492),	-- Flower Trail (spellID 414584)
-				-- q(78484),	-- Lifesurger (spellID 418166)
-				-- q(78494),	-- Memory of L'ghorek (spellID 424231)
-				-- q(78495),	-- Memory of Ursoc (spellID 424273)
-				-- q(78491),	-- Mighty Roar (spellID 416868)
-				-- q(78489),	-- Moonkin Jump (spellID 415185)
-				-- q(78486),	-- Moonkin Mayhem (spellID 415147)
-				-- q(78723),	-- Nae'dra Nibbles (spellID 428110)
-				-- q(78498),	-- Potent Lullaby (spellID 418754)
-				-- q(78490),	-- Putrid Propulsion (spellID 424560)
-				-- q(78485),	-- Sack of Talontreats (spellID 424341)
-				-- q(78496),	-- Star Shower (spellID 417790)
-				-- q(78497),	-- The Superb Loom (spellID 425196)
-				-- q(78493),	-- Wake Up! (spellID 415174)
+		["timeline"] = { ADDED_10_2_0 },
+		["groups"] = {
+			m(EMERALD_DREAM, {
+				header(HEADERS.Quest, 78203, {	-- Superbloom
+					q(78203),	-- Superbloom
+					--
+					q(78553),	-- pop if you loot any seed from Veriann Timbercrush (daily/weekly?)
+					-- q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
+					q(79082, {["repeatable"]=true}),	-- 'The Superbloom Event'
+					q(78866),	-- 'Superbloom: Step 2 Right Path'
+					q(78867),	-- 'Superbloom: Step 3 Right Path'
+					q(78868),	-- 'Superbloom: Step 4 Right Path'
+					q(78869),	-- 'Superbloom: Step 2 Left Path'
+					q(78870),	-- 'Superbloom: Step 3 Left Path'
+					q(78871),	-- 'Superbloom: Step 4 Left Path'
+					q(78892),	-- 'Superbloom: Final Step'
+					-- spells for achievement Fruit of the Bloom ach(19310)
+					-- q(78751),	-- Arachnid Annihilation (spellID 428203)
+					-- q(78487),	-- Basket of Explosive Acorns (spellID 424568)
+					-- q(78488),	-- Bubble Blowgun (spellID 414636)
+					-- q(78482),	-- Dream Gatherer (spellID 418100)
+					-- q(78730),	-- Fae Lens (spellID 428124)
+					-- q(78483),	-- Feral Overflow (spellID 424822)
+					-- q(78492),	-- Flower Trail (spellID 414584)
+					-- q(78484),	-- Lifesurger (spellID 418166)
+					-- q(78494),	-- Memory of L'ghorek (spellID 424231)
+					-- q(78495),	-- Memory of Ursoc (spellID 424273)
+					-- q(78491),	-- Mighty Roar (spellID 416868)
+					-- q(78489),	-- Moonkin Jump (spellID 415185)
+					-- q(78486),	-- Moonkin Mayhem (spellID 415147)
+					-- q(78723),	-- Nae'dra Nibbles (spellID 428110)
+					-- q(78498),	-- Potent Lullaby (spellID 418754)
+					-- q(78490),	-- Putrid Propulsion (spellID 424560)
+					-- q(78485),	-- Sack of Talontreats (spellID 424341)
+					-- q(78496),	-- Star Shower (spellID 417790)
+					-- q(78497),	-- The Superb Loom (spellID 425196)
+					-- q(78493),	-- Wake Up! (spellID 415174)
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

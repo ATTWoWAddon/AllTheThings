@@ -28,7 +28,7 @@ local ORSTUS_AND_SOTIROS = n(156340, {	-- Larionrider Orstus
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641395,
@@ -168,7 +168,7 @@ for _,t in ipairs({WINGFLAYTER_THE_CRUEL,ORSTUS_AND_SOTIROS,GRATEFUL_CURRENCY,RE
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(KYRIAN,  bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 		n(SANCTUM_UPGRADES, {
 			n(ANIMA_CONDUCTOR, {
@@ -178,4 +178,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			}),
 		}),
 	})),
-})));
+}));

@@ -1003,9 +1003,12 @@ root(ROOTS.NeverImplemented, {
 });
 -- #endif
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(PET_BATTLES, {
-		q(81957),	-- Complete the Blackrock Pet Battle Dungeon for the first time.
-		q(81958),	-- Joining their team
+		["timeline"] = { ADDED_8_3_0 },
+		["groups"] = {
+			q(81957),	-- Complete the Blackrock Pet Battle Dungeon for the first time.
+			q(81958),	-- Joining their team
+		},
 	})
-})));
+}));

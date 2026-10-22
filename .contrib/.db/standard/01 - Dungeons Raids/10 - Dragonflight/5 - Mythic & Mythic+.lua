@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	n(MYTHIC_PLUS, {
 		i(201471),	-- Story of a Spectacular Victory
 		i(200686, {	-- Primal Focus
@@ -228,4 +228,4 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		})),
 		m(2266),	-- Millenia's Threshold
 	}),
-})));
+}));

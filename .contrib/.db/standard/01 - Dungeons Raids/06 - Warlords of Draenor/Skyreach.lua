@@ -61,7 +61,7 @@ InRetailSeason = {DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICUL
 InRetailSeason = nil
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 	inst(476, {	-- Skyreach
 		["coord"] = { 35.5, 33.6, SPIRES_OF_ARAK },
 		["maps"] = { 601, 602 },
@@ -317,9 +317,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			})),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(476, {
 		q(35961),	-- Skyreach Reward Quest
 		q(34542),	-- Spires of Arak Challenge Mode - Bronze Addition (Nth)
@@ -327,4 +327,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 		q(34544),	-- Spires of Arak Challenge Mode - Gold Addition (Nth)
 		q(34543),	-- Spires of Arak Challenge Mode - Silver Addition (Nth)
 	}),
-})));
+}));

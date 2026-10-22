@@ -6,11 +6,12 @@
 -- InstanceHelper.BossObjects = {
 -- 	[MPLUS] = { 546729 },	-- Treasure Chest
 -- }
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(945, {	-- Seat of the Triumvirate
 		["mapID"] = 903,
 		["coord"] = { 22.2, 55.9, EREDATH },
 		["lvl"] = 110,
+		["timeline"] = { ADDED_7_3_0 },
 		["groups"] = {
 			n(TREASURES, {
 				o(277384, {	-- Abandoned Treasure
@@ -303,4 +304,4 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 		},
 	}),
-})));
+}));

@@ -302,24 +302,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		m(THE_FORBIDDEN_REACH, {
-			n(RARES, {
-				q(74926),	-- Tectonus secondary kill questID
-				q(74927),	-- Manathema secondary kill questID
-				q(74928),	-- Snarfang secondary kill questID
-				q(74929),	-- Gareed secondary kill questID
-				q(74930),	-- Faunos <Lord of Fleece> secondary kill questID
-				q(74931),	-- Tidesmith Zarviss secondary kill questID
-				q(74932),	-- Arcantrix secondary kill questID
-				q(74933),	-- Kangalo secondary kill questID
-				q(74934),	-- Fimbol secondary kill questID
-				q(74935),	-- Agni Blazehoof secondary kill questID
-				q(74936),	-- Amephyst secondary kill questID
-				q(74937),	-- Sir Pinchalot secondary kill questID
-				q(74938),	-- Luttrok secondary kill questID
+		["timeline"] = { ADDED_10_0_7 },
+		["groups"] = {
+			m(THE_FORBIDDEN_REACH, {
+				n(RARES, {
+					q(74926),	-- Tectonus secondary kill questID
+					q(74927),	-- Manathema secondary kill questID
+					q(74928),	-- Snarfang secondary kill questID
+					q(74929),	-- Gareed secondary kill questID
+					q(74930),	-- Faunos <Lord of Fleece> secondary kill questID
+					q(74931),	-- Tidesmith Zarviss secondary kill questID
+					q(74932),	-- Arcantrix secondary kill questID
+					q(74933),	-- Kangalo secondary kill questID
+					q(74934),	-- Fimbol secondary kill questID
+					q(74935),	-- Agni Blazehoof secondary kill questID
+					q(74936),	-- Amephyst secondary kill questID
+					q(74937),	-- Sir Pinchalot secondary kill questID
+					q(74938),	-- Luttrok secondary kill questID
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

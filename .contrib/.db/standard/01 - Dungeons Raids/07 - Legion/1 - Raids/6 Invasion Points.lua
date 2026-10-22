@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(959, {	-- Invasion Points
 		-- ["sourceQuests"] = { },	-- TODO pretty sure a quest is required to unlock these
 		["coords"] = {
@@ -12,6 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			-- then remove the maps for Krokuun and Antoran Wastes once coords added
 		},
 		["isRaid"] = true,
+		["timeline"] = { ADDED_7_3_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(12028, {	-- Envision Invasion Eradication
@@ -436,35 +437,38 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	inst(959, {
-			-- secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
-			-- secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
-		q(49195),	-- Greater Invasion Point: Occularus - weekly completion
-		q(49176),	-- Greater Invasion Point: Occularus - bonus roll used
-		q(49196),	-- Greater Invasion Point: Pit Lord Vilemus - weekly completion
-		q(49174),	-- Greater Invasion Point: Pit Lord Vilemus - bonus roll used
-		q(49197),	-- Greater Invasion Point: Sotanathor - weekly completion
-		q(49177),	-- Greater Invasion Point: Sotanathor - bonus roll used
-		q(49198),	-- Greater Invasion Point: Inquisitor Meto - weekly completion
-		q(49172),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
-		q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
-		q(49175),	-- Greater Invasion Point: Matron Folnuna - bonus roll used
-		q(48620),	-- Greater Invasion Point: Mistress Alluradel - weekly completion
-		q(49173),	-- Greater Invasion Point: Mistress Alluradel - bonus roll used
-		q(48671),	-- Lockout Tracking - Normal - Fire - Cen'gar first completion
-		q(48672),	-- Lockout Tracking - Normal - Ice - Val first completion
-		q(48673),	-- Lockout Tracking - Normal - Blood - Sangua first completion
-		q(48674),	-- Lockout Tracking - Normal - Islands - Aurinor first completion
-		q(48675),	-- Lockout Tracking - Normal - Marsh - Naigtal first completion
-		q(48676),	-- Lockout Tracking - Normal - Forest - Bonich first completion
-		q(49210),	-- triggered upon completing Val, but not the official quest
-		q(49211),	-- triggered upon completing Cen'gar, but not the official quest
-		q(49212),	-- triggered upon completing Sangua, but not the official quest
-		q(49213),	-- triggered upon completing Aurinor, but not the official quest
-		q(49214),	-- triggered upon completing Naigtal, but not the official quest
-		q(49215),	-- triggered upon completing Bonich, but not the official quest
+		["timeline"] = { ADDED_7_3_0 },
+		["groups"] = {
+				-- secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
+				-- secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
+			q(49195),	-- Greater Invasion Point: Occularus - weekly completion
+			q(49176),	-- Greater Invasion Point: Occularus - bonus roll used
+			q(49196),	-- Greater Invasion Point: Pit Lord Vilemus - weekly completion
+			q(49174),	-- Greater Invasion Point: Pit Lord Vilemus - bonus roll used
+			q(49197),	-- Greater Invasion Point: Sotanathor - weekly completion
+			q(49177),	-- Greater Invasion Point: Sotanathor - bonus roll used
+			q(49198),	-- Greater Invasion Point: Inquisitor Meto - weekly completion
+			q(49172),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
+			q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
+			q(49175),	-- Greater Invasion Point: Matron Folnuna - bonus roll used
+			q(48620),	-- Greater Invasion Point: Mistress Alluradel - weekly completion
+			q(49173),	-- Greater Invasion Point: Mistress Alluradel - bonus roll used
+			q(48671),	-- Lockout Tracking - Normal - Fire - Cen'gar first completion
+			q(48672),	-- Lockout Tracking - Normal - Ice - Val first completion
+			q(48673),	-- Lockout Tracking - Normal - Blood - Sangua first completion
+			q(48674),	-- Lockout Tracking - Normal - Islands - Aurinor first completion
+			q(48675),	-- Lockout Tracking - Normal - Marsh - Naigtal first completion
+			q(48676),	-- Lockout Tracking - Normal - Forest - Bonich first completion
+			q(49210),	-- triggered upon completing Val, but not the official quest
+			q(49211),	-- triggered upon completing Cen'gar, but not the official quest
+			q(49212),	-- triggered upon completing Sangua, but not the official quest
+			q(49213),	-- triggered upon completing Aurinor, but not the official quest
+			q(49214),	-- triggered upon completing Naigtal, but not the official quest
+			q(49215),	-- triggered upon completing Bonich, but not the official quest
+		},
 	}),
-})));
+}));

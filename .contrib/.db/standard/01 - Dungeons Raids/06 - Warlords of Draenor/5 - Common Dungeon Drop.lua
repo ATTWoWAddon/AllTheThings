@@ -95,7 +95,7 @@ local function HEADER_FINGER(g)
 	})
 end
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 	n(COMMON_DUNGEON_DROPS, {
 		["description"] = "The following items can be obtained in the mentioned dungeons.",
 		["groups"] = {
@@ -885,4 +885,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));

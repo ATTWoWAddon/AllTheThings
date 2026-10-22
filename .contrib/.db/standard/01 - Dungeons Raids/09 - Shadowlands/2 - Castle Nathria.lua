@@ -263,7 +263,7 @@ InstanceHelper.LFRQueueNPC = {	-- Queue NPC
 }
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	inst(1190, {	-- Castle Nathria
 		["coord"] = { 46.1, 41.5, REVENDRETH },
 		["maps"] = {
@@ -1036,9 +1036,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	inst(1190, {	-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed
 		q(62949),	-- Sire Denathrius Slain (spellID 345481)
@@ -1075,4 +1075,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 		q(70469),	-- Sire Denthrius
 		q(70470),	-- Sire Denthrius
 	}),
-})));
+}));

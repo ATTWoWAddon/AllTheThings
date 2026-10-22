@@ -205,9 +205,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+	expansion(EXPANSION.MID, {
 		n(ABYSS_ANGLERS, {
-			q(89044, { ["isRepeatable"] = true }),	-- Constantly triggers. Usually flags as completed when you dive, unflags when you surface
+			["timeline"] = { ADDED_12_0_5 },
+			["groups"] = {
+				q(89044, { ["isRepeatable"] = true }),	-- Constantly triggers. Usually flags as completed when you dive, unflags when you surface
+			},
 		}),
-	})),
+	}),
 });

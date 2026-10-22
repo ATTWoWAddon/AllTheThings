@@ -48,11 +48,12 @@ local HORRIFIC_ORGRIMMAR = 1469;
 local HORRIFIC_STORMWIND = 1470;
 local SPARK_OF_UNWAVERING_STRENGTH = 174287;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(HORRIFIC_VISIONS, {
 		["maps"] = {
 			REPAIRED_CHAMBER_OF_HEART,
 		},
+		["timeline"] = { ADDED_8_3_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14173),	-- A Mountain of Mementos
@@ -355,59 +356,62 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(HORRIFIC_VISIONS, {
-		m(HORRIFIC_ORGRIMMAR, {
-			q(58581),	-- first horrific vision cleared as horde
-			q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
-			q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
-			q(57029),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
-			q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
-			q(57001),	-- Valley of Strength cleansed (Orgrimmar)
-			q(57372),	-- The Drag cleansed (Orgrimmar)
-			q(57028),	-- The Drag cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
-			q(58577),	-- The Drag cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
-			q(58895),	-- got this instead of 58577 after clearing The Drag
-			q(58969),	-- horrific vision of orgimmar
-			q(58891),	-- completed a wing
-			q(58580),	-- completed a wing
-			q(58972),	-- completed a wing
-			q(58892),	-- completed a wing
-			q(57031),	-- looted the chest from cleansing Valley of Wisdom at the end of the scenario
-			q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
-			q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
-			q(59044),	-- completed all objectives
-			q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
-			q(58963),	-- triggered while fighting Thrall after two corrupted areas/triggered before boss in The Drag
-			q(58973),	-- triggered after fighting Rexxar
-		}),
-		m(HORRIFIC_STORMWIND, {
-			q(58968),	-- 3rd wing clear
-			q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
-			q(57153),	-- Dwarven District cleansed (Stormwind)
-			q(58970),	-- triggered when detonating explosives in Dwarven District
-			q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
-			q(58964),	-- taking portal from Dwarven District back to Cathedral
-			q(57216),	-- Old Town cleansed (Stormwind)
-			q(58967),	-- probably defeating Slavemaster Ul'rok in Trade District
-			q(57271),	-- Trade District cleansed (Stormwind)
-			q(58897),	-- triggered together with 57271
-			q(58890),	-- Dwarven district
-			q(58893),	-- cleared mage quarter
-			q(57282),	-- cleared mage quarter
-			-- q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
-			-- TODO:  Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
-			q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
-			q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
-		}),
-		q(58971),	-- killing Mail Muncher
-		--[[
-		q(57845)	-- probably triggers after clearing two corrupted areas + boss
-		58840	-- looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
-		58581	-- triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
-		Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
-		]]--
+		["timeline"] = { ADDED_8_3_0 },
+		["groups"] = {
+			m(HORRIFIC_ORGRIMMAR, {
+				q(58581),	-- first horrific vision cleared as horde
+				q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
+				q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
+				q(57029),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
+				q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
+				q(57001),	-- Valley of Strength cleansed (Orgrimmar)
+				q(57372),	-- The Drag cleansed (Orgrimmar)
+				q(57028),	-- The Drag cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
+				q(58577),	-- The Drag cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
+				q(58895),	-- got this instead of 58577 after clearing The Drag
+				q(58969),	-- horrific vision of orgimmar
+				q(58891),	-- completed a wing
+				q(58580),	-- completed a wing
+				q(58972),	-- completed a wing
+				q(58892),	-- completed a wing
+				q(57031),	-- looted the chest from cleansing Valley of Wisdom at the end of the scenario
+				q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
+				q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
+				q(59044),	-- completed all objectives
+				q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
+				q(58963),	-- triggered while fighting Thrall after two corrupted areas/triggered before boss in The Drag
+				q(58973),	-- triggered after fighting Rexxar
+			}),
+			m(HORRIFIC_STORMWIND, {
+				q(58968),	-- 3rd wing clear
+				q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
+				q(57153),	-- Dwarven District cleansed (Stormwind)
+				q(58970),	-- triggered when detonating explosives in Dwarven District
+				q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
+				q(58964),	-- taking portal from Dwarven District back to Cathedral
+				q(57216),	-- Old Town cleansed (Stormwind)
+				q(58967),	-- probably defeating Slavemaster Ul'rok in Trade District
+				q(57271),	-- Trade District cleansed (Stormwind)
+				q(58897),	-- triggered together with 57271
+				q(58890),	-- Dwarven district
+				q(58893),	-- cleared mage quarter
+				q(57282),	-- cleared mage quarter
+				-- q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
+				-- TODO:  Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
+				q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
+				q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
+			}),
+			q(58971),	-- killing Mail Muncher
+			--[[
+			q(57845)	-- probably triggers after clearing two corrupted areas + boss
+			58840	-- looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
+			58581	-- triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
+			Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
+			]]--
+		},
 	}),
-})));
+}));

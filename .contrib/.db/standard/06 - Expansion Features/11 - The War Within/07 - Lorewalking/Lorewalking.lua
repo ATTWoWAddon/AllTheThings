@@ -415,17 +415,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(LOREWALKING, {
-		q(91025),	-- After completing Lorewalking: Blade's Bane
-		q(91027),	-- After completing Lorewalking: The Lich King
-		q(91028),	-- After completing Lorewalking: Ethereal Wisdom
+		["timeline"] = { ADDED_11_1_7 },
+		["groups"] = {
+			q(91025),	-- After completing Lorewalking: Blade's Bane
+			q(91027),	-- After completing Lorewalking: The Lich King
+			q(91028),	-- After completing Lorewalking: Ethereal Wisdom
+		},
 	}),
-})));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(LOREWALKING, {
-		q(96552),	-- Triggered during Lorewalking: The Loa, after the cinematic where Rezan was turned into an undead
-		q(96556),	-- Triggered during Lorewalking: The Loa, after accepting 'My Prophet, My Enemy' (12646)
-		q(96657),	-- After completing Lorewalking: The Loa
+		["timeline"] = { ADDED_12_0_7 },
+		["groups"] = {
+			q(96552),	-- Triggered during Lorewalking: The Loa, after the cinematic where Rezan was turned into an undead
+			q(96556),	-- Triggered during Lorewalking: The Loa, after accepting 'My Prophet, My Enemy' (12646)
+			q(96657),	-- After completing Lorewalking: The Loa
+		},
 	}),
-})));
+}));

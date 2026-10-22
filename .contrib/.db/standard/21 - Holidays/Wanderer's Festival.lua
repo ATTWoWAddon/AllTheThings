@@ -46,7 +46,7 @@ root(ROOTS.Holidays, {
 	})),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(PANDARIA, {
 		m(KRASARANG_WILDS, {
 			n(QUESTS, {
@@ -54,4 +54,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

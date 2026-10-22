@@ -516,10 +516,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(275, {
 		q(35456),	-- Halls of Lightning Reward Quest - Normal completion
 		q(35457),	-- Halls of Lightning Reward Quest - ?
 		q(35458),	-- Halls of Lightning Reward Quest - Heroic completion
 	}),
-})));
+}));

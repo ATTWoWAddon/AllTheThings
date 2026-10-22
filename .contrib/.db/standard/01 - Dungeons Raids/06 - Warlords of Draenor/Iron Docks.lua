@@ -64,7 +64,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 	inst(558, {	-- Iron Docks
 		["mapID"] = 595,
 		["coord"] = { 45.36, 13.52, GORGROND },
@@ -156,9 +156,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(558, {
 		q(34536),	-- Iron Docks Challenge Mode - Bronze Addition (Nth)
 		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)
@@ -166,4 +166,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 		q(34537),	-- Iron Docks Challenge Mode - Silver Addition (Nth)
 		q(35958),	-- Iron Docks Reward Quest
 	}),
-})));
+}));

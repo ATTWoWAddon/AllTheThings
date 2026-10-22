@@ -106,7 +106,7 @@ InstanceHelper.Boss, InstanceHelper.BossWorldQuest
 
 InstanceHelper.Coords = EncounterCoords
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["groups"] = bubbleDownFiltered({
@@ -144,4 +144,4 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		}),
 	}),
-})));
+}));

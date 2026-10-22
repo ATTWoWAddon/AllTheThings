@@ -4,12 +4,13 @@
 
 -- Everything in this section should be common to both Vale and Uldum N'Zoth
 -- assault and tagged with location information
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(NZOTH_ASSAULTS, {
 		["maps"] = {
 			NZOTH_ASSAULT_ULDUM,
 			NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
 		},
+		["timeline"] = { ADDED_8_3_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40959, {	-- Black Empire State of Mind
@@ -723,4 +724,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			}),
 		},
 	}),
-})));
+}));

@@ -10,7 +10,7 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1041, {	-- Kings' Rest
 		InRetailSeason=InRetailSeason,
 		["coord"] = { 37.6, 39.4, ZULDAZAR },
@@ -140,4 +140,4 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));

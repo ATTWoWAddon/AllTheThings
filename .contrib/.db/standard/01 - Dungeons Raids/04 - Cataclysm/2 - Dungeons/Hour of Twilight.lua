@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(186, {	-- Hour of Twilight
 		["mapID"] = 399,
 		["coords"] = {
@@ -10,6 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
 		["maps"] = { 400 },
+		["timeline"] = ADDED_4_3_0,
 		["groups"] = {
 			n(QUESTS, {
 				q(30103, {	-- To Wyrmrest!
@@ -126,10 +127,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 		},
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(186, {
 		q(35439),	-- Hour of Twilight Quest Reward - Heroic completion
 	}),
-})));
+}));

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(68, {	-- The Vortex Pinnacle
 		["mapID"] = 325,
 		["coord"] = { 76.76, 84.44, ULDUM },	-- Vortex Pinnacle
@@ -277,11 +277,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			})),
 		},
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(68, {
 		q(35401),	-- The Vortex Pinnacle Reward Quest
 		q(35403),	-- The Vortex Pinnacle Reward Quest
 	}),
-})));
+}));

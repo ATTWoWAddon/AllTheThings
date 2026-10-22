@@ -4626,15 +4626,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 -- Remove the holiday flag.
 SPECTRAL_GROG.u = nil;
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
-		q(77221),	-- Obtain The Scarlet Key (ID 208485)
-		q(78474),	-- Killing Headless Horseman (needs more details)
-		q(78478),	-- Killing Headless Horseman (needs more details)
-		q(78826),	-- Killing Headless Horseman (needs more details)
-		q(99132, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Triggers on depositing candy to your neighborhood Piniata
-		q(97219, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
-		q(98421, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
-		q(98422, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
+		["timeline"] = { ADDED_10_1_5 },
+		["groups"] = {
+			q(77221),	-- Obtain The Scarlet Key (ID 208485)
+			q(78474),	-- Killing Headless Horseman (needs more details)
+			q(78478),	-- Killing Headless Horseman (needs more details)
+			q(78826),	-- Killing Headless Horseman (needs more details)
+			q(99132, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Triggers on depositing candy to your neighborhood Piniata
+			q(97219, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
+			q(98421, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
+			q(98422, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
+		},
 	})),
-})));
+}));

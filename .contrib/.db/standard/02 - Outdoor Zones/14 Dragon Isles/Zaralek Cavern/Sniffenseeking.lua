@@ -343,68 +343,71 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		m(ZARALEK_CAVERN, {
-			n(SNIFFENSEEKING, {
-				q(75241),	-- Flag Niffen Cave Account Tracking (spellID 407744)
-				q(75747),	-- Completing a Sniffenseeking quest
-				q(75748),	-- Completing a Sniffenseeking quest
-				q(75749),	-- Completing a Sniffenseeking quest
-				q(75997),	-- Completing Heart of Iron Sniffenseeking Quest
-				q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
-				q(75883),	-- 3rd charge (map) for adventure / unflagged when 3rd map completed
-				q(76109),	-- Salverun (spellID 411721) [Summon Salverun as a battle pet]
+		["timeline"] = { ADDED_10_1_0 },
+		["groups"] = {
+			m(ZARALEK_CAVERN, {
+				n(SNIFFENSEEKING, {
+					q(75241),	-- Flag Niffen Cave Account Tracking (spellID 407744)
+					q(75747),	-- Completing a Sniffenseeking quest
+					q(75748),	-- Completing a Sniffenseeking quest
+					q(75749),	-- Completing a Sniffenseeking quest
+					q(75997),	-- Completing Heart of Iron Sniffenseeking Quest
+					q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
+					q(75883),	-- 3rd charge (map) for adventure / unflagged when 3rd map completed
+					q(76109),	-- Salverun (spellID 411721) [Summon Salverun as a battle pet]
 
-				q(75904),	-- Unknown [When going to Those Rascally Wroms (75397)] /Unflagged after complete
-				q(75880),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
-				q(75928),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
+					q(75904),	-- Unknown [When going to Those Rascally Wroms (75397)] /Unflagged after complete
+					q(75880),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
+					q(75928),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
 
-				q(75916),	-- Unknown [When Going to Frostfire Finesse (76084)] /Unflagged After Complete
-				q(75880),	-- Completed Frostfire Finesse (76084),			This Might Be Achievement Tracker/Daily/weekly etc..
-				q(75993),	-- Completed Frostfire Finesse (76084),			This Might Be Achievement Tracker/Daily/weekly etc..
+					q(75916),	-- Unknown [When Going to Frostfire Finesse (76084)] /Unflagged After Complete
+					q(75880),	-- Completed Frostfire Finesse (76084),			This Might Be Achievement Tracker/Daily/weekly etc..
+					q(75993),	-- Completed Frostfire Finesse (76084),			This Might Be Achievement Tracker/Daily/weekly etc..
 
-				q(75910),	-- Unknown [When Going to Thieving Critters (75619)] /Unflagged After Complete
-				q(75930),	-- Completed Thieving Critters (75619),			This Might Be Achievement Tracker/Daily/weekly etc..
-				q(75882),	-- Completed Thieving Critters (75619),			/unflagged?
+					q(75910),	-- Unknown [When Going to Thieving Critters (75619)] /Unflagged After Complete
+					q(75930),	-- Completed Thieving Critters (75619),			This Might Be Achievement Tracker/Daily/weekly etc..
+					q(75882),	-- Completed Thieving Critters (75619),			/unflagged?
 
-				q(75892),	-- Unknown [When Going to Vertical Anomaly (75390)] /Unflagged After Complete
-				q(75924),	-- Completed Vertical Anomaly (75390),			This Might Be Achievement Tracker/Daily/weekly etc..
-				q(75882),	-- Completed Vertical Anomaly (75390),			/unflagged?
+					q(75892),	-- Unknown [When Going to Vertical Anomaly (75390)] /Unflagged After Complete
+					q(75924),	-- Completed Vertical Anomaly (75390),			This Might Be Achievement Tracker/Daily/weekly etc..
+					q(75882),	-- Completed Vertical Anomaly (75390),			/unflagged?
 
-				q(75908),	-- Starting The Living Drill (76016)
-				q(76000),	-- Completed The Living Drill (76016)
+					q(75908),	-- Starting The Living Drill (76016)
+					q(76000),	-- Completed The Living Drill (76016)
 
-				q(75913),	-- Accepting Living Statue (76014)
-				q(75994),	-- Completed Living Statue (76014)
+					q(75913),	-- Accepting Living Statue (76014)
+					q(75994),	-- Completed Living Statue (76014)
 
-				q(75875),	-- Started Making Scents (75393) /Unflagged after map was completed
-				q(75876),	-- Completed Making Scents (75393)
+					q(75875),	-- Started Making Scents (75393) /Unflagged after map was completed
+					q(75876),	-- Completed Making Scents (75393)
 
-				q(75906),	-- Started Your Weight in Gold (75996) /Unflagged after map was completed
-				q(76003),	-- Completed Your Weight in Gold (75996)
+					q(75906),	-- Started Your Weight in Gold (75996) /Unflagged after map was completed
+					q(76003),	-- Completed Your Weight in Gold (75996)
 
-				q(75915),	-- Started Liars in Light (75620) /Unflagged after map was completed
-				q(75931),	-- Completed Liars in Light (75620)
+					q(75915),	-- Started Liars in Light (75620) /Unflagged after map was completed
+					q(75931),	-- Completed Liars in Light (75620)
 
-				q(75901),	-- Started Successful Interventions (75516) /Unflagged after map was completed
-				q(75927),	-- Completed Successful Interventions (75516)
+					q(75901),	-- Started Successful Interventions (75516) /Unflagged after map was completed
+					q(75927),	-- Completed Successful Interventions (75516)
 
-				q(75895),	-- Started Scratch and Sniff (75234) /Unflagged after map was completed
-				q(75925),	-- Completed Scratch and Sniff (75234)
+					q(75895),	-- Started Scratch and Sniff (75234) /Unflagged after map was completed
+					q(75925),	-- Completed Scratch and Sniff (75234)
 
-				q(75898),	-- Started Element Whispers (75621) /Unflagged after map was completed
-				q(75926),	-- Completed Element Whispers (75621)
+					q(75898),	-- Started Element Whispers (75621) /Unflagged after map was completed
+					q(75926),	-- Completed Element Whispers (75621)
 
-				q(75907),	-- Started Sneak and Sniff (75517) /Unflagged after map was completed
-				q(75929),	-- Completed Sneak and Sniff (75517)
+					q(75907),	-- Started Sneak and Sniff (75517) /Unflagged after map was completed
+					q(75929),	-- Completed Sneak and Sniff (75517)
 
-				q(75917),	-- Started Liars of Spirit (76081) /Unflagged after map was completed
-				q(75992),	-- Completed Liars of Spirit (76081)
+					q(75917),	-- Started Liars of Spirit (76081) /Unflagged after map was completed
+					q(75992),	-- Completed Liars of Spirit (76081)
 
-				q(75893),	-- Started Flapping and Screaming (76027) /Unflagged after map was completed
-				q(76011),	-- Completed Flapping and Screaming (76027)
+					q(75893),	-- Started Flapping and Screaming (76027) /Unflagged after map was completed
+					q(76011),	-- Completed Flapping and Screaming (76027)
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

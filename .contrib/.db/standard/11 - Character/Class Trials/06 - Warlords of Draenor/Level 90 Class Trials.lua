@@ -2,12 +2,13 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.WOD, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 } }, {
+	expansion(EXPANSION.WOD, bubbleDown({ ["u"] = REAL_MONEY, }, {
 		header(HEADERS.Achievement, 6193, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does reward this gear instead]
 			-- Note: [As of --Date--(when this became class trial) you obtain the old Level 90 Boost Gear]
 			["description"] = "These were obtained by creating a Level 90 Class Trial or boosting a character to Level 90 for each class and specialization.",
 			["lvl"] = 90,
+			["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 			["groups"] = {
 				cl(DEATHKNIGHT, {
 					cl(DEATHKNIGHT, UNHOLY, {

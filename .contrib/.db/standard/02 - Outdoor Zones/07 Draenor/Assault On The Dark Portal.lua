@@ -416,7 +416,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	m(DRAENOR, {
 		n(ASSAULT_ON_THE_DARK_PORTAL, {
 			["timeline"] = { ADDED_6_0_2 },
@@ -446,4 +446,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 			},
 		}),
 	}),
-})));
+}));

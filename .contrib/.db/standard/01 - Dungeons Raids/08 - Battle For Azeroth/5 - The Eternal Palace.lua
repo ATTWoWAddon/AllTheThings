@@ -196,7 +196,7 @@ InstanceHelper.LFRQueueNPC = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1179, {	-- The Eternal Palace
 		["coord"] = { 50.5, 11.9, NAZJATAR },
 		["maps"] = {
@@ -210,6 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1520,	-- The Last Prison
 		},
 		["isRaid"] = true,
+		["timeline"] = { ADDED_8_2_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(13718, {	-- The Grand Reception
@@ -460,32 +461,35 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	inst(1179, {	-- The Eternal Palace
-		-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
-		q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID
-		q(56962),	-- Radiance of Azshara Aqueous Reliquary NHC? LootID
-		q(56964),	-- Radiance of Azshara Aqueous Reliquary HC? LootID
-		q(56965),	-- Queen's Court Aqueous Reliquary LFR? LootID
-		q(56966),	-- Queen's Court Aqueous Reliquary NHC? LootID
-		q(56968),	-- Queen's Court Aqueous Reliquary HC? LootID
-		q(56963),	-- Radiance of Azshara Aqueous Reliquary Mythic? LootID
-		q(56948),	-- creating rank 1 Condensed Life-Force from Aqueous Reliquaries
-		q(56949),	-- creating rank 2 Condensed Life-Force from Aqueous Reliquaries
-		q(56525),	-- Killing heroic Azshara
-		q(56967),	-- Mythic: The Queen's Court
-		q(55754),	-- Abyssal Commander Sivara HC LootID
-		q(55757),	-- Blackwater Behemoth HC LootID
-		q(55755),	-- Radiance of Azshara HC LootID
-		q(55758),	-- Lady Ashvane HC LootID
-		q(55756),	-- Orgozoa HC LootID
-		q(55760),	-- Queen's Court HC LootID
-		q(55759),	-- Za'qul post-encounter RP
-		q(56527),	-- Queen Azshara killed (LFR)
-		q(56526),	-- Queen Azshara killed (Normal)
-		q(55761),	-- Queen Azshara killed (Heroic)
-		q(56524),	-- Queen Azshara killed (Mythic)
+		["timeline"] = { ADDED_8_2_0 },
+		["groups"] = {
+			-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
+			q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID
+			q(56962),	-- Radiance of Azshara Aqueous Reliquary NHC? LootID
+			q(56964),	-- Radiance of Azshara Aqueous Reliquary HC? LootID
+			q(56965),	-- Queen's Court Aqueous Reliquary LFR? LootID
+			q(56966),	-- Queen's Court Aqueous Reliquary NHC? LootID
+			q(56968),	-- Queen's Court Aqueous Reliquary HC? LootID
+			q(56963),	-- Radiance of Azshara Aqueous Reliquary Mythic? LootID
+			q(56948),	-- creating rank 1 Condensed Life-Force from Aqueous Reliquaries
+			q(56949),	-- creating rank 2 Condensed Life-Force from Aqueous Reliquaries
+			q(56525),	-- Killing heroic Azshara
+			q(56967),	-- Mythic: The Queen's Court
+			q(55754),	-- Abyssal Commander Sivara HC LootID
+			q(55757),	-- Blackwater Behemoth HC LootID
+			q(55755),	-- Radiance of Azshara HC LootID
+			q(55758),	-- Lady Ashvane HC LootID
+			q(55756),	-- Orgozoa HC LootID
+			q(55760),	-- Queen's Court HC LootID
+			q(55759),	-- Za'qul post-encounter RP
+			q(56527),	-- Queen Azshara killed (LFR)
+			q(56526),	-- Queen Azshara killed (Normal)
+			q(55761),	-- Queen Azshara killed (Heroic)
+			q(56524),	-- Queen Azshara killed (Mythic)
+		},
 	}),
-})));
+}));

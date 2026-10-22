@@ -200,13 +200,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(KORTHIA, {
-			n(ZONE_DROPS, {
-				q(64534),	-- triggered when looting Korthian Relic - i(187311), "Azgoth's Tattered Maps"
-				q(64535, name(HEADERS.Item, 187333)),	-- looting Core of an Unknown Titan
+		["timeline"] = { ADDED_9_1_0 },
+		["groups"] = {
+			m(KORTHIA, {
+				n(ZONE_DROPS, {
+					q(64534),	-- triggered when looting Korthian Relic - i(187311), "Azgoth's Tattered Maps"
+					q(64535, name(HEADERS.Item, 187333)),	-- looting Core of an Unknown Titan
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

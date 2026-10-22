@@ -338,14 +338,17 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, {
-			m(EREDATH, {
-				n(QUESTS, {
-					q(49204),	-- Arriving in Eredath
+		["timeline"] = { ADDED_7_3_0 },
+		["groups"] = {
+			m(ARGUS, {
+				m(EREDATH, {
+					n(QUESTS, {
+						q(49204),	-- Arriving in Eredath
+					}),
 				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

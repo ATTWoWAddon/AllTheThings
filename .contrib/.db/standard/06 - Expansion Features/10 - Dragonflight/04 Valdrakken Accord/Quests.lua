@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_VALDRAKKEN_ACCORD, {
 		n(RENOWN, {
 			n(QUESTS, bubbleDownRep(FACTION_VALDRAKKEN_ACCORD, {
@@ -1305,9 +1305,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		i(199906),	-- Titan Relic [BoP]
 		i(200450),	-- Titan Relic [BoA]
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_VALDRAKKEN_ACCORD, {
 		n(QUESTS, {
 			q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
@@ -1328,4 +1328,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(77820, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Title 516?
 		}),
 	}),
-})));
+}));

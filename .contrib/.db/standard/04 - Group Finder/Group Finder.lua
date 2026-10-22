@@ -815,23 +815,26 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 }
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
+	expansion(EXPANSION.BFA, {
 		q(51370, {	-- Short-Supply Reward
 			["repeatable"] = true,
+			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 },
 			["groups"] = {
 				i(160054),	-- War-Torn Satchel of Cooperation
 			},
 		}),
-	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }, {
-		i(184522),	-- Veiled Satchel of Cooperation
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.SL, {
+		i(184522, {	-- Veiled Satchel of Cooperation
+			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 },
+		}),
+	}),
+	expansion(EXPANSION.DF, {
 		i(201326, {	-- Draconic Satchel of Cooperation
 			i(201325),	-- Draconic Augment Rune
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		q(83023, {	-- Short-Supply Reward
 			["repeatable"] = true,
 			["groups"] = {
@@ -840,22 +843,25 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		i(259086, {	-- Void-Touched Satchel of Cooperation
 			i(259085),	-- Void-Touched Augment Rune
 		}),
-	})),
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0 } }, {
+	expansion(EXPANSION.WRATH, {
 		n(GROUP_FINDER, {
-			q(24887),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
-			q(24895),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
+			["timeline"] = { ADDED_3_3_0 },
+			["groups"] = {
+				q(24887),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
+				q(24895),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
+			},
 		}),
-	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	}),
+	expansion(EXPANSION.MOP, {
 		n(GROUP_FINDER, {
 			q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
 			q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
@@ -864,34 +870,37 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(32097),	-- Short-Supply Reward
 			q(33233),	-- Short-Supply Reward
 		}),
-	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	}),
+	expansion(EXPANSION.MOP, {
 		n(GROUP_FINDER, {
-			q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
-			q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
-			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
-			q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
-			q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
-			q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
-			q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
-			q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
-			q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
-			q(36143),	-- LFGDungeons - Lich King - Dungeon Normal 1st
-			q(36149),	-- LFGDungeons - Lich King - Dungeon Normal Nth
-			q(31618),	-- LFGDungeons - Mists - Normal Random - 1st
-			q(31619),	-- LFGDungeons - Mists - Normal Random - Nth
-			q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
-			q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
-			q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
-			q(36144),	-- LFG WLK 75-80
-			q(36150),	-- LFG WLK 75-80
-			q(37648),	-- Short-Supply Reward
-			q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
-			q(36277),	-- Warlords Max Level Dungeon Bonus Reward
-			q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+			["timeline"] = { ADDED_6_0_2 },
+			["groups"] = {
+				q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+				q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+				q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
+				q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
+				q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
+				q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
+				q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
+				q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
+				q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
+				q(36143),	-- LFGDungeons - Lich King - Dungeon Normal 1st
+				q(36149),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+				q(31618),	-- LFGDungeons - Mists - Normal Random - 1st
+				q(31619),	-- LFGDungeons - Mists - Normal Random - Nth
+				q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+				q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+				q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+				q(36144),	-- LFG WLK 75-80
+				q(36150),	-- LFG WLK 75-80
+				q(37648),	-- Short-Supply Reward
+				q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
+				q(36277),	-- Warlords Max Level Dungeon Bonus Reward
+				q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+			},
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		n(GROUP_FINDER, {
 			q(41710),	-- Legion 110 A
 			q(41712),	-- Legion 110 A
@@ -957,8 +966,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(42559),	-- WOD 100 H
 			q(42560),	-- WOD 100 H
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(GROUP_FINDER, {
 			q(53379),	-- BFA 120 E
 			q(53380),	-- BFA 120 E
@@ -1011,8 +1020,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(52051),	-- LFGDungeons - BFA - Raid Finder - 1st
 			q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
 		}),
-	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.SL, {
 		n(GROUP_FINDER, {
 			q(62642),	-- LFGDungeons - SL - Heroic Random - 1st
 			q(62643),	-- LFGDungeons - SL - Heroic Random - Nth
@@ -1070,8 +1079,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(60029),	-- Shadowlands 60 E
 			q(60030),	-- Shadowlands 60 E
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(GROUP_FINDER, {
 			q(72187),	-- LFGDungeons - DF - Heroic Random - 1st
 			q(72188),	-- LFGDungeons - DF - Heroic Random - Nth
@@ -1142,8 +1151,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72820),	-- Shadowlands (60) E
 			q(72821),	-- Shadowlands (60) E
 		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(GROUP_FINDER, {
 			q(39751, {["timeline"] = { ADDED_11_0_5 }}),	-- Classic Timewalking LFG completion
 			q(83707),	-- LFGDungeons - 11.0 The War Within - Raid Finder - 1st
@@ -1212,8 +1221,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(82624),	-- The War Within (80) E
 			q(82625),	-- The War Within (80) E
 		}),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(GROUP_FINDER, {
 			q(93522),	-- LFGDungeons - 12.x Midnight - Raid Finder - 1st
 			q(93520),	-- LFGDungeons - 12.x Midnight - Raid Finder - Nth
@@ -1295,6 +1304,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(94786),	-- Midnight (90) E
 			q(94787),	-- Midnight (90) E
 		}),
-	})),
+	}),
 });
 -- #endif

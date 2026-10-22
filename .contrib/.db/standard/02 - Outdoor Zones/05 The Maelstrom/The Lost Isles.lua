@@ -741,7 +741,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	m(THE_MAELSTROM, {
 		m(THE_LOST_ISLES, {
 			n(QUESTS, {
@@ -753,7 +753,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["tim
 			}),
 		}),
 	}),
-})));
+}));
 
 -- #if AFTER 4.0.3
 -- These quests never made it in.

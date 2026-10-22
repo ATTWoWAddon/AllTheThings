@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["groups"] = sharedData({
@@ -1448,8 +1448,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}))),
 		}),
 	}),
-})));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(PANDARIA, {
 		m(ISLE_OF_GIANTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {
 			n(WORLD_BOSSES, {
@@ -1479,4 +1479,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

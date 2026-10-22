@@ -133,7 +133,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	n(GARRISONS, {
 		n(BUILDINGS, {	-- Buildings
 			garrisonBuilding(28, {	-- Barracks
@@ -147,4 +147,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

@@ -2459,7 +2459,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			q(90720),	-- 5/20 Synthesis Synergy
@@ -2552,4 +2552,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(89461),	-- 20/20 Sunfire Expertise
 		}),
 	}),
-})));
+}));

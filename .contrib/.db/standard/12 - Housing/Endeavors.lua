@@ -1061,15 +1061,18 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, {
 		n(ENDEAVOR, {
-			n(QUESTS, {
-				q(94450),	-- Twenty Five Percent Completed
-				q(94451),	-- Fifty Percent Completed
-				q(94452),	-- Seventy Five Percent Completed
-				q(94453),	-- One Hundred Percent Completed
-				q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
-			}),
+			["timeline"] = { ADDED_12_0_0 },
+			["groups"] = {
+				n(QUESTS, {
+					q(94450),	-- Twenty Five Percent Completed
+					q(94451),	-- Fifty Percent Completed
+					q(94452),	-- Seventy Five Percent Completed
+					q(94453),	-- One Hundred Percent Completed
+					q(95040),	-- Obtain Pollinic Incense from Krobbin <Endeavor Engagement>
+				}),
+			},
 		}),
-	})),
+	}),
 });

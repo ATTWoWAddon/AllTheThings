@@ -2,13 +2,14 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_AZEROTHIAN_ARCHIVES, {
 		["maps"] = {
 			THE_AZURE_SPAN,
 			THALDRASZUS,
 			2262,	-- Traitor's Rest
 		},
+		["timeline"] = { ADDED_10_2_5 },
 		["groups"] = {
 			faction(FACTION_AZEROTHIAN_ARCHIVES, {
 				["icon"] = 441139,
@@ -540,66 +541,69 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_AZEROTHIAN_ARCHIVES, {
-		n(ACHIEVEMENTS, {
-			-- "Just One More Thing" trackers
-			q(79601),	-- Lost Atheneum first completion
-			q(79600),	-- Lost Atheneum second completion
-			-- q(79599),	-- Lost Atheneum third completion
-			q(79596),	-- The Riverbed first completion
-			q(79597),	-- The Riverbed second completion
-			-- q(79598),	-- The Riverbed third completion
-			q(79604),	-- Igira's Watch first completion
-			q(79603),	-- Igira's Watch second completion
-			-- q(79602),	-- Igira's Watch third completion
-			q(79607),	-- Gaze of Neltharion first completion
-			q(79606),	-- Gaze of Neltharion second completion
-			-- q(79605),	-- Gaze of Neltharion third completion
-			q(79610),	-- Concord Observatory first completion
-			q(79609),	-- Concord Observatory second completion
-			-- q(79608),	-- Concord Observatory third completion
-			q(79613),	-- Winglord's Perch first completion
-			q(79612),	-- Winglord's Perch second completion
-			-- q(79611),	-- Winglord's Perch third completion
-		}),
-		n(QUESTS, {
-			q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
-			q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)
-			q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
-			q(79997),	-- After completing 'The Scale of it All' (questID 77425) (spellID 436778) (WQ unlock - Igira's Watch, Zaralek Cavern Site)
-			q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
-			-- didn't pop on 2nd week, probably removed or attached only for certain WQs?
-			q(79661),	-- After completing ZC world quest for Azerothian Archive
-			q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
-			q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
-			-- weekly 'wrapper'
-			-- seems like constantly fire, but other two is different per week?
-			q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
-			-- a (spellID 434934 (434928 & 434198))
-			q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
-			q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
-			-- b (spellID 434936 (434929 & 434197))
-			q(79617),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434197)
-			q(79671),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434929) (fire same quest 2 times?)
-			-- c (spellID 434937 (434930 & 434199))
-			q(79618),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434199)
-			q(79672),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434930)
-			-- d (spellID 434938 (434931 & 434200))
-			q(79619),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434200)
-			q(79674),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434931)
-			-- e (spellID 434939 (434932 & 434201))
-			q(79620),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434201)
-			q(79675),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434932)
-			-- f (spellID 434940 (434750 (this spellID abandon qIDs 79616 - 79621) & 434933))
-			-- q(79621),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
-			q(79684),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
-			-- q(79676),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434933)
-			-- TODO: figure out what 2nd qids are for and what this 2 spells is doing (rotation, may be?)
-			-- 434945 (434203 & 434944 (this spellID didn't have any attached qid to it atm))
-			-- odd 434203 (434196 (missing in wowhead db?) & 434198 & 434197 & 434199 & 434200 & 434201 & 434202 (this spellID didn't have any attached qid to it atm))
-		}),
+		["timeline"] = { ADDED_10_2_5 },
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				-- "Just One More Thing" trackers
+				q(79601),	-- Lost Atheneum first completion
+				q(79600),	-- Lost Atheneum second completion
+				-- q(79599),	-- Lost Atheneum third completion
+				q(79596),	-- The Riverbed first completion
+				q(79597),	-- The Riverbed second completion
+				-- q(79598),	-- The Riverbed third completion
+				q(79604),	-- Igira's Watch first completion
+				q(79603),	-- Igira's Watch second completion
+				-- q(79602),	-- Igira's Watch third completion
+				q(79607),	-- Gaze of Neltharion first completion
+				q(79606),	-- Gaze of Neltharion second completion
+				-- q(79605),	-- Gaze of Neltharion third completion
+				q(79610),	-- Concord Observatory first completion
+				q(79609),	-- Concord Observatory second completion
+				-- q(79608),	-- Concord Observatory third completion
+				q(79613),	-- Winglord's Perch first completion
+				q(79612),	-- Winglord's Perch second completion
+				-- q(79611),	-- Winglord's Perch third completion
+			}),
+			n(QUESTS, {
+				q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
+				q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)
+				q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
+				q(79997),	-- After completing 'The Scale of it All' (questID 77425) (spellID 436778) (WQ unlock - Igira's Watch, Zaralek Cavern Site)
+				q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
+				-- didn't pop on 2nd week, probably removed or attached only for certain WQs?
+				q(79661),	-- After completing ZC world quest for Azerothian Archive
+				q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
+				q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
+				-- weekly 'wrapper'
+				-- seems like constantly fire, but other two is different per week?
+				q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
+				-- a (spellID 434934 (434928 & 434198))
+				q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
+				q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
+				-- b (spellID 434936 (434929 & 434197))
+				q(79617),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434197)
+				q(79671),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434929) (fire same quest 2 times?)
+				-- c (spellID 434937 (434930 & 434199))
+				q(79618),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434199)
+				q(79672),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434930)
+				-- d (spellID 434938 (434931 & 434200))
+				q(79619),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434200)
+				q(79674),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434931)
+				-- e (spellID 434939 (434932 & 434201))
+				q(79620),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434201)
+				q(79675),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434932)
+				-- f (spellID 434940 (434750 (this spellID abandon qIDs 79616 - 79621) & 434933))
+				-- q(79621),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
+				q(79684),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
+				-- q(79676),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434933)
+				-- TODO: figure out what 2nd qids are for and what this 2 spells is doing (rotation, may be?)
+				-- 434945 (434203 & 434944 (this spellID didn't have any attached qid to it atm))
+				-- odd 434203 (434196 (missing in wowhead db?) & 434198 & 434197 & 434199 & 434200 & 434201 & 434202 (this spellID didn't have any attached qid to it atm))
+			}),
+		},
 	}),
-})));
+}));

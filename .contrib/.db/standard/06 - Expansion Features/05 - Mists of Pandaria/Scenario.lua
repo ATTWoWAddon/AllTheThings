@@ -33,7 +33,7 @@ local REMOVED_WITH_ESCALATION_ONUPDATE = [[function(t)
 end]];
 -- #endif
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, n(SCENARIOS, {
 		-- #if AFTER 6.0.1
 		["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
@@ -1335,21 +1335,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			})),
 		},
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	n(SCENARIOS, {
-		q(31987, { ["timeline"] = { ADDED_5_0_4 } }),	-- LFGDungeons - Theramore Launch Event
-		q(32817),	-- Complete "Loyalty" Scenario - triggers when turning in "The King and the Council"
-		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario - triggers when turning in "The Warchief and the Darkness"
-		q(32898),	-- Daily Scenario Random (1st) (Mists)
-		q(32899),	-- Daily Scenario Random (Nth) (Mists)
-		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
-		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
-		q(32874),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
-		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
-		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
-		q(31616),	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
-		q(31617),	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
+		["timeline"] = { ADDED_5_3_0 },
+		["groups"] = {
+			q(31987, { ["timeline"] = { ADDED_5_0_4 } }),	-- LFGDungeons - Theramore Launch Event
+			q(32817),	-- Complete "Loyalty" Scenario - triggers when turning in "The King and the Council"
+			q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario - triggers when turning in "The Warchief and the Darkness"
+			q(32898),	-- Daily Scenario Random (1st) (Mists)
+			q(32899),	-- Daily Scenario Random (Nth) (Mists)
+			q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
+			q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
+			q(32874),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+			q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
+			q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
+			q(31616),	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
+			q(31617),	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
+		},
 	}),
-})));
+}));

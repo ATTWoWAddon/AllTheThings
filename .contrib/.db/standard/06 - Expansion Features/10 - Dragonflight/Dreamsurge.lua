@@ -18,7 +18,7 @@ DREAMSURGE_CHRYSALIS = 208153;
 DREAMSURGE_CHRYSALIS = 210254;
 -- #endif
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
 			q(77423, {	-- Surging Dreams
@@ -373,11 +373,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		}),
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(DREAMSURGE, {
-		q(78276),	-- 1st kill day / weekly
-		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event
+		["timeline"] = { ADDED_10_1_7 },
+		["groups"] = {
+			q(78276),	-- 1st kill day / weekly
+			q(77794),	-- after 'some' boss kills for 'Birth of Flames' event
+		},
 	}),
-})));
+}));

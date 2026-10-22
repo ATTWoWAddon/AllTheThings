@@ -112,7 +112,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 	}))),
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
+	expansion(EXPANSION.WRATH, {
 		-- #if AFTER BFA
 		ach(137, {	-- Stocking Up
 			["provider"] = { "i", 34722 },	-- Heavy Frostweave Bandage
@@ -127,8 +127,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			},
 		}),
 		-- #endif
-	})),
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.CATA, {
 		n(ACHIEVEMENTS, {
 			-- #if AFTER BFA
 			ach(5480, {	-- Preparing for Disaster
@@ -143,8 +143,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				crit(61337),	-- Dream of Azshara
 			})),
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		n(QUESTS, {
 			q(36236, {	-- The Cryptic Tome of Tailoring
 				["description"] = "This item can drop from any Draenor mob.",
@@ -177,7 +177,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["races"] = HORDE_ONLY,
 			}),
 		}),
-	})),
+	}),
 	expansion(EXPANSION.LEGION, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(38944, {	-- Sew It Begins
 			["provider"] = { "n", 93542 },	-- Tanithria
@@ -624,7 +624,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			},
 		}),
 	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18774),	-- Synchronous Thread (automated)
 			ach(18896, {	-- United as Three
@@ -850,8 +850,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18902, {	-- Uncertified Nurse
 				crit(61745, {
@@ -1215,8 +1215,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.TAILORING, 1 }}
 		},{
@@ -1367,8 +1367,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["provider"] =  { "i", 225221 },	-- Spool of Webweave
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42794, {	-- Tailoring at Midnight
 				i(264174),	-- Midnight Tailor's Shop Sign (DECOR!)
@@ -1533,11 +1533,11 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["provider"] =  { "i", 259202 },	-- Embroidered Memento
 			}),
 		})),
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(PROFESSIONS, {
 			prof(TAILORING, {
 				q(38976),	-- FLAG: Undying Silkweave Bracers
@@ -1551,12 +1551,15 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(47093),	-- Broken Shore - Choice: Tailoring
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(PROFESSIONS, {
-			prof(TAILORING, {
-				q(55239),	-- During quest objective of Seam Stress (55214)
-			}),
+			["timeline"] = { ADDED_8_1_5 },
+			["groups"] = {
+				prof(TAILORING, {
+					q(55239),	-- During quest objective of Seam Stress (55214)
+				}),
+			},
 		}),
-	})),
+	}),
 });

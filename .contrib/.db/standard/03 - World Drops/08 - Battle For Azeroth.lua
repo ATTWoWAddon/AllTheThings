@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, {
 	n(ARMOR, {
 		filter(CLOTH, {
 			i(163940),	-- Extra-Light Light Emitting Cord
@@ -264,4 +264,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 			}),
 		}),
 	}),
-})));
+}));

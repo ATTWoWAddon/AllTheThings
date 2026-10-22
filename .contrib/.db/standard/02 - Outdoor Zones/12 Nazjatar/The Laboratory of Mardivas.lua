@@ -143,51 +143,54 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NAZJATAR, {
-		n(RARES, {
-			q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
-			q(55198),	-- Small Water
-			-- q(56478),	-- Greater Benthic (Blue) ?? maybe
-			q(56428),	-- Summoned Arcane Amalgamation
-			q(55144),	-- Summoned Dusty Amalgamation
-			q(55205),	-- Summoned Moghiea
-			q(55206),	-- Summoned Ungormath
-			q(55203),	-- Summoned Salgos, the Eternal
-			q(55201),	-- Summoned Spawn of Salgos
-			q(55204),	-- Summoned Xue
-			q(55199),	-- Summoned Zomera
-			q(55200),	-- Summoned Omus
-			q(55143),	-- Killed Watery Amalgamation (first time)
-			q(56477),	-- Killed Watery Amalgamation (first time)
-			q(56720),	-- Killed Watery Amalgamation (first time)
-			q(56476),	-- Killed Arcane Amalgamation
-			q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
-			q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
-			q(55145),	-- Killed Burning Amalgamation
-			q(56481),	-- Killed Burning Amalgamation
-			q(56725),	-- Killed Burning Amalgamation
-			q(56891),	-- Killed Burning Amalgamation, Moghiea, Salgos the Eternal, Spawn of Salgos, and Xue
-			q(56485),	-- Killed Dusty Amalgamation
-			q(56730),	-- First kill of Dusty Amalgamation
-			q(56488),	-- Killed Herald of Salgos
-			q(56733),	-- First kill of Herald of Salgos
-			q(56484),	-- Killed Moghiea
-			q(56728),	-- killed Moghiea (first time)
-			q(56479),	-- Killed Omus
-			q(56722),	-- Killed Omus
-			q(56483),	-- Killed Ungormath
-			q(56487),	-- Killed Salgos, the Eternal
-			q(56732),	-- Killed Salgos, the Eternal
-			q(56486),	-- Killed Spawn of Salgos
-			q(56731),	-- Killed Spawn of Salgos
-			q(56482),	-- Killed Xue
-			q(56726),	-- Killed Xue
-			q(56480),	-- Killed Zomera
-			q(56723),	-- Killed Zomera
-			q(56721),	-- Killed Osgen
-			q(56478),	-- Killed Osgen (first time)
-			q(56727),	-- Killed Ungormath
-		}),
+		["timeline"] = { ADDED_8_2_0 },
+		["groups"] = {
+			n(RARES, {
+				q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
+				q(55198),	-- Small Water
+				-- q(56478),	-- Greater Benthic (Blue) ?? maybe
+				q(56428),	-- Summoned Arcane Amalgamation
+				q(55144),	-- Summoned Dusty Amalgamation
+				q(55205),	-- Summoned Moghiea
+				q(55206),	-- Summoned Ungormath
+				q(55203),	-- Summoned Salgos, the Eternal
+				q(55201),	-- Summoned Spawn of Salgos
+				q(55204),	-- Summoned Xue
+				q(55199),	-- Summoned Zomera
+				q(55200),	-- Summoned Omus
+				q(55143),	-- Killed Watery Amalgamation (first time)
+				q(56477),	-- Killed Watery Amalgamation (first time)
+				q(56720),	-- Killed Watery Amalgamation (first time)
+				q(56476),	-- Killed Arcane Amalgamation
+				q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
+				q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
+				q(55145),	-- Killed Burning Amalgamation
+				q(56481),	-- Killed Burning Amalgamation
+				q(56725),	-- Killed Burning Amalgamation
+				q(56891),	-- Killed Burning Amalgamation, Moghiea, Salgos the Eternal, Spawn of Salgos, and Xue
+				q(56485),	-- Killed Dusty Amalgamation
+				q(56730),	-- First kill of Dusty Amalgamation
+				q(56488),	-- Killed Herald of Salgos
+				q(56733),	-- First kill of Herald of Salgos
+				q(56484),	-- Killed Moghiea
+				q(56728),	-- killed Moghiea (first time)
+				q(56479),	-- Killed Omus
+				q(56722),	-- Killed Omus
+				q(56483),	-- Killed Ungormath
+				q(56487),	-- Killed Salgos, the Eternal
+				q(56732),	-- Killed Salgos, the Eternal
+				q(56486),	-- Killed Spawn of Salgos
+				q(56731),	-- Killed Spawn of Salgos
+				q(56482),	-- Killed Xue
+				q(56726),	-- Killed Xue
+				q(56480),	-- Killed Zomera
+				q(56723),	-- Killed Zomera
+				q(56721),	-- Killed Osgen
+				q(56478),	-- Killed Osgen (first time)
+				q(56727),	-- Killed Ungormath
+			}),
+		},
 	}),
-})));
+}));

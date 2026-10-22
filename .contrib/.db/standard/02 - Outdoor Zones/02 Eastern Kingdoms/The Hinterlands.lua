@@ -2253,7 +2253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
+	expansion(EXPANSION.CATA, {
 		m(EASTERN_KINGDOMS, {
 			m(THE_HINTERLANDS, {
 				n(QUESTS, {
@@ -2261,14 +2261,17 @@ root(ROOTS.HiddenQuestTriggers, {
 				}),
 			}),
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		m(EASTERN_KINGDOMS, {
-			m(THE_HINTERLANDS, {
-				n(QUESTS, {
-					q(38931),	-- Hero's Call: The Hinterlands! - completed with q:26542
+			["timeline"] = { ADDED_6_2_2 },
+			["groups"] = {
+				m(THE_HINTERLANDS, {
+					n(QUESTS, {
+						q(38931),	-- Hero's Call: The Hinterlands! - completed with q:26542
+					}),
 				}),
-			}),
+			},
 		}),
-	})),
+	}),
 });

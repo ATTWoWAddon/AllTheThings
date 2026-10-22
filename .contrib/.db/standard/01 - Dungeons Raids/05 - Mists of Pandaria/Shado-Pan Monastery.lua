@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(312, {	-- Shado-Pan Monastery
 		["coord"] = { 36.8 ,47.7, KUN_LAI_SUMMIT},
 		["maps"] = {
@@ -517,21 +517,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, {
 		inst(312, {
 			q(31632),	-- Shado-Pan Monastery Challenge Mode - Bronze Addition (Nth)
 			q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
 			q(31646),	-- Shado-Pan Monastery Challenge Mode - Gold Addition (Nth)
 			q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		inst(312, {
 			q(35319),	-- Shado-Pan Monastery Reward Quest - Normal completion
 			q(35320),	-- Shado-Pan Monastery Reward Quest - Heroic completion
 		}),
-	})),
+	}),
 });

@@ -122,13 +122,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NAZJATAR, {
-		n(SPECIAL, {
-			q(55470, { ["name"] = "South Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (55.1, 48.8)
-			q(55471, { ["name"] = "East Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (71.7, 25.7)
-			q(55472, { ["name"] = "North Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (45.7, 24.1)
-			q(55473, { ["name"] = "West Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (32.9, 39.8)
-		}),
+		["timeline"] = { ADDED_8_2_0 },
+		["groups"] = {
+			n(SPECIAL, {
+				q(55470, { ["name"] = "South Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (55.1, 48.8)
+				q(55471, { ["name"] = "East Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (71.7, 25.7)
+				q(55472, { ["name"] = "North Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (45.7, 24.1)
+				q(55473, { ["name"] = "West Slimy Cocoon Spawned", ["isWeekly"] = true }),	-- Ravenous Slime fed 5x to spawn the Slimy Cocoon (32.9, 39.8)
+			}),
+		},
 	}),
-})));
+}));

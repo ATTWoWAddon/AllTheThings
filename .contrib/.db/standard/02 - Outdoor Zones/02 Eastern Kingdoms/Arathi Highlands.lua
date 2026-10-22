@@ -2614,10 +2614,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(EASTERN_KINGDOMS, {
 		m(ARATHI_HIGHLANDS, {
 			q(52781),	-- Triggers when speaking with Zidormi in Arathi Highlands to travel back in time
 		}),
 	}),
-})));
+}));

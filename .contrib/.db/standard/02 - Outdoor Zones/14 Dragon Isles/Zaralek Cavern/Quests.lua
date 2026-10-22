@@ -958,50 +958,53 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		m(ZARALEK_CAVERN, {
-			n(QUESTS, {
-				-- Various
-				q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion (spellID 411772)
-				q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
-				q(75658, {["name"] = "Zaralek Cavern Unlocked [Account]"}),	-- Zaralek Cavern World Quests (spellID 408876)
-				q(75511),	-- Tracking Quest (that's the name)
-				q(75764, {repeatable=true}),	-- Current Patch - Login Video - Watched (spellID 409608)
-				q(76013),	-- Complete Ch 5 and Delay for Ch 6 after 'Stopping Sakareth' (questID 72930) (spellID 411104)
+		["timeline"] = { ADDED_10_1_0 },
+		["groups"] = {
+			m(ZARALEK_CAVERN, {
+				n(QUESTS, {
+					-- Various
+					q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion (spellID 411772)
+					q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
+					q(75658, {["name"] = "Zaralek Cavern Unlocked [Account]"}),	-- Zaralek Cavern World Quests (spellID 408876)
+					q(75511),	-- Tracking Quest (that's the name)
+					q(75764, {repeatable=true}),	-- Current Patch - Login Video - Watched (spellID 409608)
+					q(76013),	-- Complete Ch 5 and Delay for Ch 6 after 'Stopping Sakareth' (questID 72930) (spellID 411104)
 
-				-- Talk to npc during Respite (73041)
-				q(75425),	-- Tellywin Sharpfizzle (spellID 407079)
-				q(75424),	-- Chef Butterfingers (spellID 407078)
-				q(75423),	-- Earthmender Narvra (spellID 407083)
-				q(75422),	-- Rupert (spellID 407084)
-				q(75421),	-- Veritistrasz (spellID 407076)
-				q(75420),	-- Voraxian (spellID 407075)
+					-- Talk to npc during Respite (73041)
+					q(75425),	-- Tellywin Sharpfizzle (spellID 407079)
+					q(75424),	-- Chef Butterfingers (spellID 407078)
+					q(75423),	-- Earthmender Narvra (spellID 407083)
+					q(75422),	-- Rupert (spellID 407084)
+					q(75421),	-- Veritistrasz (spellID 407076)
+					q(75420),	-- Voraxian (spellID 407075)
 
-				-- RP after Stain Removal (73045)
-				q(75219),	-- Voraxian (spellID 413020)
+					-- RP after Stain Removal (73045)
+					q(75219),	-- Voraxian (spellID 413020)
 
-				-- Talk with Veritistrasz during (74495)
-				q(74773),	-- 1 (optional) dialog
-				q(74776),	-- after he finished optional gialog
-				q(74777),	-- 1 (quest) dialog
-				q(74778),	-- 2 (optional) dialog
-				q(74779),	-- 2 (quest) dialog
-				q(74789),	-- 3 (optional) dialog
-				q(74780),	-- 3 (quest) dialog
-				q(74781),	-- 4 (quest) dialog
-				q(74782),	-- 5 (quest) dialog
-				q(74788),	-- 6 (quest) dialog
+					-- Talk with Veritistrasz during (74495)
+					q(74773),	-- 1 (optional) dialog
+					q(74776),	-- after he finished optional gialog
+					q(74777),	-- 1 (quest) dialog
+					q(74778),	-- 2 (optional) dialog
+					q(74779),	-- 2 (quest) dialog
+					q(74789),	-- 3 (optional) dialog
+					q(74780),	-- 3 (quest) dialog
+					q(74781),	-- 4 (quest) dialog
+					q(74782),	-- 5 (quest) dialog
+					q(74788),	-- 6 (quest) dialog
 
-				-- Ponzo hat price
-				q(75869),	-- Become available with cost at 9999 boulders
-				q(75836),	-- I can't afford that - 4999
-				q(75870),	-- Still too much! - 999
-				q(75871),	-- How about 50 boulders - 249
+					-- Ponzo hat price
+					q(75869),	-- Become available with cost at 9999 boulders
+					q(75836),	-- I can't afford that - 4999
+					q(75870),	-- Still too much! - 999
+					q(75871),	-- How about 50 boulders - 249
 
-				-- Brullo the Strong Pet?
-				q(75556),	-- Triggered after looting Brul i(205114) from the chest after beating Brullo the Strong
+					-- Brullo the Strong Pet?
+					q(75556),	-- Triggered after looting Brul i(205114) from the chest after beating Brullo the Strong
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

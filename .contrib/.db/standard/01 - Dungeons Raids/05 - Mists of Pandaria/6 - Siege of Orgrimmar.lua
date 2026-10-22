@@ -4917,16 +4917,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+	expansion(EXPANSION.MOP, {
 		inst(369, {
-			q(33345),	-- Dark Shaman Weekly Attempt
-			q(33047),	-- Short-Supply Reward - Completed after looting an heirloom from Garrosh
+			["timeline"] = { ADDED_5_4_0 },
+			["groups"] = {
+				q(33345),	-- Dark Shaman Weekly Attempt
+				q(33047),	-- Short-Supply Reward - Completed after looting an heirloom from Garrosh
+			},
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		inst(369, {
 			q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
 			q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
 		}),
-	})),
+	}),
 });

@@ -397,7 +397,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(VENTHYR, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 		n(SANCTUM_UPGRADES, {
 			n(TRANSPORT_NETWORK, {
@@ -408,4 +408,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			}),
 		}),
 	})),
-})));
+}));

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	header(HEADERS.Achievement, 12719, bubbleDownSelf({ ["lvl"] = lvlsquish(120, 120, 50), ["races"] = HORDE_ONLY }, {	-- Spirits Be With You
 		ach(12719, {	-- Spirits Be With You
 			crit(40709),	-- The Fallen Chieftain
@@ -100,4 +100,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			["coord"] = { 49.9, 39.5, DAZARALOR },
 		}),
 	}))
-})));
+}));

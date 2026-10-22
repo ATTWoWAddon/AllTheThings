@@ -202,72 +202,78 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
-		m(AZSUNA, {
-			n(LEGION_INVASIONS, {
-				q(46964),	-- Assault Treasure - Azsuna
-				q(46966),	-- Assault Treasure - Azsuna
-				q(46967),	-- Assault Treasure - Azsuna
-				q(46968),	-- Assault Treasure - Azsuna
-				q(46969),	-- Assault Treasure - Azsuna
-				q(46970),	-- Assault Treasure - Azsuna
-				q(46971),	-- Assault Treasure - Azsuna
-				q(46972),	-- Assault Treasure - Azsuna
-				q(46973),	-- Assault Treasure - Azsuna
-				q(46974),	-- Assault Treasure - Azsuna
-				q(46795),	-- Ship - Azsuna - triggered after completing the criteria for "A Conduit No More" (questID 46205) and riding to Farondale
-				q(47062),	-- Tracking Quest - triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
-				q(47064),	-- Tracking Quest - Azsuna - tracking quest that triggered after completing the Azsuna assault. Might really be related to Broken Shore progress tracking
+		["timeline"] = { ADDED_7_2_0 },
+		["groups"] = {
+			m(AZSUNA, {
+				n(LEGION_INVASIONS, {
+					q(46964),	-- Assault Treasure - Azsuna
+					q(46966),	-- Assault Treasure - Azsuna
+					q(46967),	-- Assault Treasure - Azsuna
+					q(46968),	-- Assault Treasure - Azsuna
+					q(46969),	-- Assault Treasure - Azsuna
+					q(46970),	-- Assault Treasure - Azsuna
+					q(46971),	-- Assault Treasure - Azsuna
+					q(46972),	-- Assault Treasure - Azsuna
+					q(46973),	-- Assault Treasure - Azsuna
+					q(46974),	-- Assault Treasure - Azsuna
+					q(46795),	-- Ship - Azsuna - triggered after completing the criteria for "A Conduit No More" (questID 46205) and riding to Farondale
+					q(47062),	-- Tracking Quest - triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
+					q(47064),	-- Tracking Quest - Azsuna - tracking quest that triggered after completing the Azsuna assault. Might really be related to Broken Shore progress tracking
+				}),
 			}),
-		}),
-		m(HIGHMOUNTAIN, {
-			n(LEGION_INVASIONS, {
-				q(46985),	-- Assault Treasure - Highmountain
-				q(46986),	-- Assault Treasure - Highmountain
-				q(46987),	-- Assault Treasure - Highmountain
-				q(46988),	-- Assault Treasure - Highmountain
-				q(46989),	-- Assault Treasure - Highmountain
-				q(46990),	-- Assault Treasure - Highmountain - opened Small Treasure Chest in Highmountain (44.2, 40.4)
-				q(46991),	-- Assault Treasure - Highmountain
-				q(46992),	-- Assault Treasure - Highmountain
-				q(46993),	-- Assault Treasure - Highmountain
-				q(46994),	-- Assault Treasure - Highmountain
-				q(46808),	-- Ship - Highmountain - triggered after killing the NPC for "Holding Our Ground" (questID 45572)
-				q(47065),	-- Tracking Quest - Highmountain Invasion / Fel Commander Erixtol Kill
+			m(HIGHMOUNTAIN, {
+				n(LEGION_INVASIONS, {
+					q(46985),	-- Assault Treasure - Highmountain
+					q(46986),	-- Assault Treasure - Highmountain
+					q(46987),	-- Assault Treasure - Highmountain
+					q(46988),	-- Assault Treasure - Highmountain
+					q(46989),	-- Assault Treasure - Highmountain
+					q(46990),	-- Assault Treasure - Highmountain - opened Small Treasure Chest in Highmountain (44.2, 40.4)
+					q(46991),	-- Assault Treasure - Highmountain
+					q(46992),	-- Assault Treasure - Highmountain
+					q(46993),	-- Assault Treasure - Highmountain
+					q(46994),	-- Assault Treasure - Highmountain
+					q(46808),	-- Ship - Highmountain - triggered after killing the NPC for "Holding Our Ground" (questID 45572)
+					q(47065),	-- Tracking Quest - Highmountain Invasion / Fel Commander Erixtol Kill
+				}),
 			}),
-		}),
-		m(STORMHEIM, {
-			n(LEGION_INVASIONS, {
-				q(46975),	-- Assault Treasure - Stormheim
-				q(46976),	-- Assault Treasure - Stormheim
-				q(46977),	-- Assault Treasure - Stormheim
-				q(46978),	-- Assault Treasure - Stormheim
-				q(46979),	-- Assault Treasure - Stormheim
-				q(46980),	-- Assault Treasure - Stormheim
-				q(46981),	-- Assault Treasure - Stormheim
-				q(46982),	-- Assault Treasure - Stormheim
-				q(46983),	-- Assault Treasure - Stormheim
-				q(46984),	-- Assault Treasure - Stormheim
+			m(STORMHEIM, {
+				n(LEGION_INVASIONS, {
+					q(46975),	-- Assault Treasure - Stormheim
+					q(46976),	-- Assault Treasure - Stormheim
+					q(46977),	-- Assault Treasure - Stormheim
+					q(46978),	-- Assault Treasure - Stormheim
+					q(46979),	-- Assault Treasure - Stormheim
+					q(46980),	-- Assault Treasure - Stormheim
+					q(46981),	-- Assault Treasure - Stormheim
+					q(46982),	-- Assault Treasure - Stormheim
+					q(46983),	-- Assault Treasure - Stormheim
+					q(46984),	-- Assault Treasure - Stormheim
+				}),
 			}),
-		}),
-		m(VALSHARAH, {
-			n(LEGION_INVASIONS, {
-				q(46954),	-- Assault Treasure - Val'sharah
-				q(46956),	-- Assault Treasure - Val'sharah
-				q(46958),	-- Assault Treasure - Val'sharah
-				q(46959),	-- Assault Treasure - Val'sharah
-				q(46960),	-- Assault Treasure - Val'sharah
-				q(46961),	-- Assault Treasure - Val'sharah
-				q(46962),	-- Assault Treasure - Val'sharah
-				q(46963),	-- Assault Treasure - Val'sharah
-				q(46830),	-- Battlefield - Val'sharah
-				q(46801),	-- Ship - Val'sharah - triggered when turning in "Holding the Ramparts" (questID 44789) during Azsuna assault
-				q(46819),	-- Wrecked Cart - Val'sharah
+			m(VALSHARAH, {
+				n(LEGION_INVASIONS, {
+					q(46954),	-- Assault Treasure - Val'sharah
+					q(46956),	-- Assault Treasure - Val'sharah
+					q(46958),	-- Assault Treasure - Val'sharah
+					q(46959),	-- Assault Treasure - Val'sharah
+					q(46960),	-- Assault Treasure - Val'sharah
+					q(46961),	-- Assault Treasure - Val'sharah
+					q(46962),	-- Assault Treasure - Val'sharah
+					q(46963),	-- Assault Treasure - Val'sharah
+					q(46830),	-- Battlefield - Val'sharah
+					q(46801),	-- Ship - Val'sharah - triggered when turning in "Holding the Ramparts" (questID 44789) during Azsuna assault
+					q(46819),	-- Wrecked Cart - Val'sharah
+				}),
 			}),
-		}),
+		},
 	}),
 	n(LEGION_INVASIONS, {
-		q(47185),	-- Invasion Boss Weekly Bonus
+		["timeline"] = { ADDED_7_2_0 },
+		["groups"] = {
+			q(47185),	-- Invasion Boss Weekly Bonus
+		},
 	}),
-})));
+}));

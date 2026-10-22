@@ -2286,11 +2286,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(64, {
 		q(35304),	-- Shadowfang Keep Reward Quest - Normal completion
 		q(35309),	-- Shadowfang Keep Reward Quest - Heroic completion
 		q(35311),	-- Commander Springvale Reward Quest
 		q(35305),	-- Defeat Baron Silverlaine Reward
 	}),
-})));
+}));

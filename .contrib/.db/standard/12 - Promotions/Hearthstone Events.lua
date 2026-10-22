@@ -202,36 +202,39 @@ root(ROOTS.Promotions, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(HEARTHSTONE, {
-		q(79451),	-- After first daily kill of Dr. Boom (maybe bag loot trigger?)
-		q(79452),	-- After first daily kill of Dr. Boom (maybe something else trigger?)
-		-- q(79441),	-- Looted Sarge (itemID 212606) (automated)
-		q(79186),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
-		q(79189),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
-		-- Account lockout from getting the same card again
-		-- Quest
-		q(79409),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		q(79416),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		q(79419),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		q(79420),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		q(79422),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		q(79425),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		q(79428),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		q(79583),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
-		-- Loot
-		q(79407),	-- Stolen Hearthstone Card will contain 'Arcane Explosion' card
-		q(79408),	-- Stolen Hearthstone Card will contain 'Pyroblast' card
-		q(79410),	-- Stolen Hearthstone Card will contain 'Preparation' card
-		q(79417),	-- Stolen Hearthstone Card will contain 'Righteousness' card
-		q(79421),	-- Stolen Hearthstone Card will contain 'Chillwind Yeti' card
-		q(79423),	-- Stolen Hearthstone Card will contain 'Grove Tender' card
-		q(79424),	-- Stolen Hearthstone Card will contain 'Abomination' card
-		q(79426),	-- Stolen Hearthstone Card will contain 'Ancient of Lore' card
-		q(79427),	-- Stolen Hearthstone Card will contain 'Hogger' card
-		q(79429),	-- Stolen Hearthstone Card will contain 'Blessing of Kings' card
-		q(79430),	-- Stolen Hearthstone Card will contain 'Forbidden Words' card
-		q(79431),	-- Stolen Hearthstone Card will contain 'Scarlet Crusader' card
-		q(79459),	-- Stolen Hearthstone Card will contain 'Cairne Bloodhoof' card
+		["timeline"] = { ADDED_10_2_5 },
+		["groups"] = {
+			q(79451),	-- After first daily kill of Dr. Boom (maybe bag loot trigger?)
+			q(79452),	-- After first daily kill of Dr. Boom (maybe something else trigger?)
+			-- q(79441),	-- Looted Sarge (itemID 212606) (automated)
+			q(79186),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
+			q(79189),	-- Completing 'Hearthstone's Anniversary!' (questID 79184)
+			-- Account lockout from getting the same card again
+			-- Quest
+			q(79409),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			q(79416),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			q(79419),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			q(79420),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			q(79422),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			q(79425),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			q(79428),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			q(79583),	-- Hearthstone Starter Pack card during 'Play Hearthstone!' (questID 79178)
+			-- Loot
+			q(79407),	-- Stolen Hearthstone Card will contain 'Arcane Explosion' card
+			q(79408),	-- Stolen Hearthstone Card will contain 'Pyroblast' card
+			q(79410),	-- Stolen Hearthstone Card will contain 'Preparation' card
+			q(79417),	-- Stolen Hearthstone Card will contain 'Righteousness' card
+			q(79421),	-- Stolen Hearthstone Card will contain 'Chillwind Yeti' card
+			q(79423),	-- Stolen Hearthstone Card will contain 'Grove Tender' card
+			q(79424),	-- Stolen Hearthstone Card will contain 'Abomination' card
+			q(79426),	-- Stolen Hearthstone Card will contain 'Ancient of Lore' card
+			q(79427),	-- Stolen Hearthstone Card will contain 'Hogger' card
+			q(79429),	-- Stolen Hearthstone Card will contain 'Blessing of Kings' card
+			q(79430),	-- Stolen Hearthstone Card will contain 'Forbidden Words' card
+			q(79431),	-- Stolen Hearthstone Card will contain 'Scarlet Crusader' card
+			q(79459),	-- Stolen Hearthstone Card will contain 'Cairne Bloodhoof' card
+		},
 	}),
-})));
+}));

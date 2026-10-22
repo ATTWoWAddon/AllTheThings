@@ -27,7 +27,7 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty
 -- 	[MPLUS] = { 574410 },	-- Challenger's Cache
 -- }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1315, {	-- Maisara Caverns
 		["coord"] = { 44.0, 39.6, MAP.MIDNIGHT.ZULAMAN },
 		["maps"] = { 2501 },	-- Maisara Caverns
@@ -89,4 +89,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));

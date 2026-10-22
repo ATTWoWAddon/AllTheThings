@@ -1255,35 +1255,38 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(REVENDRETH, {
-			n(QUESTS, {
-				q(60845),	-- When looting [Bottle of Redelav Wine] (173718)
-				q(60846),	-- When looting [Dredger's Toolkit] (173715)
-				q(60849),	-- When looting [Ledger of Souls] (173712)
-				q(60850),	-- When looting [Love and Terror] (173721)
-				q(60853),	-- When looting [Portrait of the Sire] (173711)
-				q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
-				q(60707),	-- When looting [The Venthyr Diaries] (173705)
-				q(62659),	-- triggered when turning in #58078, Favor: Bottle of Redelav Wine
-				q(62660),	-- triggered when turning in #58075, Favor: Dredger's Toolkit
-				q(62662),	-- triggered when turning in #58074, Favor: Ledger of Souls
-				q(62663),	-- triggered when turning in #58081, Favor: Love and Terror
-				q(62664),	-- triggered when turning in #58077, Favor: Perfected Hand Mirror
-				q(62665),	-- triggered when turning in #58072, Favor: Petrified Stonefiend
-				q(62666),	-- triggered when turning in #58073, Favor: Portrait of the Sire
-				q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
-				q(62670),	-- triggered when turning in #58069, Favor: The Venthyr Diaries
-				q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
-				q(60523),	-- Triggered after reading Theotar's Diary
-				q(60527),	-- Triggered after reading Theotar's Diary
-				q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
-				q(59222),	-- Triggered during #57536, "Mirror Making, Not Breaking" when speaking to Laurent
-				q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
-				q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
-				q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
+		["timeline"] = { ADDED_9_0_1 },
+		["groups"] = {
+			m(REVENDRETH, {
+				n(QUESTS, {
+					q(60845),	-- When looting [Bottle of Redelav Wine] (173718)
+					q(60846),	-- When looting [Dredger's Toolkit] (173715)
+					q(60849),	-- When looting [Ledger of Souls] (173712)
+					q(60850),	-- When looting [Love and Terror] (173721)
+					q(60853),	-- When looting [Portrait of the Sire] (173711)
+					q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
+					q(60707),	-- When looting [The Venthyr Diaries] (173705)
+					q(62659),	-- triggered when turning in #58078, Favor: Bottle of Redelav Wine
+					q(62660),	-- triggered when turning in #58075, Favor: Dredger's Toolkit
+					q(62662),	-- triggered when turning in #58074, Favor: Ledger of Souls
+					q(62663),	-- triggered when turning in #58081, Favor: Love and Terror
+					q(62664),	-- triggered when turning in #58077, Favor: Perfected Hand Mirror
+					q(62665),	-- triggered when turning in #58072, Favor: Petrified Stonefiend
+					q(62666),	-- triggered when turning in #58073, Favor: Portrait of the Sire
+					q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
+					q(62670),	-- triggered when turning in #58069, Favor: The Venthyr Diaries
+					q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
+					q(60523),	-- Triggered after reading Theotar's Diary
+					q(60527),	-- Triggered after reading Theotar's Diary
+					q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
+					q(59222),	-- Triggered during #57536, "Mirror Making, Not Breaking" when speaking to Laurent
+					q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
+					q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
+					q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

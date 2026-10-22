@@ -20,7 +20,7 @@ local FYRAKK_ASSAULTS = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(FYRAKK_ASSAULTS, {
 		["questID"] = 75467,	-- completion of the assault via killing the respective 'Disciple' dragon
 		["isWeekly"] = true,
@@ -28,6 +28,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			OHNAHRAN_PLAINS,
 			THE_AZURE_SPAN,
 		},
+		["timeline"] = { ADDED_10_1_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(17506),	-- Still Standing in the Fire
@@ -355,12 +356,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(FYRAKK_ASSAULTS, {
-		q(75448),	-- Ward of Ingira Elite
-		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
-		q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
+		["timeline"] = { ADDED_10_1_0 },
+		["groups"] = {
+			q(75448),	-- Ward of Ingira Elite
+			q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
+			q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
+		},
 	}),
-})));
+}));

@@ -10,7 +10,7 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1202, {	-- Ruby Life Pools
 		InRetailSeason=InRetailSeason,
 		["coord"] = { 60.1, 75.7, THE_WAKING_SHORES },
@@ -111,4 +111,4 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		},
 	}),
-})));
+}));

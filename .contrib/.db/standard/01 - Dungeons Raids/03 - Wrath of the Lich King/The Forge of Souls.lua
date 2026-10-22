@@ -252,9 +252,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(280, {
 		q(35436),	-- The Forge of Souls Reward Quest - Normal completion
 		q(35437),	-- The Forge of Souls Reward Quest - Heroic completion
 	}),
-})));
+}));

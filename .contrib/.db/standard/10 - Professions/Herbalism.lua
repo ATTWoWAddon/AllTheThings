@@ -41,7 +41,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 }
 		}),
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18837, {	-- Broken Isles Herbalism Techniques
 				crit(61501, {	-- Aethril
@@ -379,8 +379,8 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18838, {	-- Fourth War Herbalism Techniques
 				crit(61510, {	-- Akunda's Bite
@@ -880,8 +880,8 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				}),
 			},
 		})),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18828, {	-- Botanist's Log: Dragon Isles
 				-- Meta Achievement
@@ -1421,8 +1421,8 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["provider"] = { "i", 200678 },	-- Dreambloom
 			}),
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }}
 		},{
@@ -1583,8 +1583,8 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["provider"] = { "i", 224265 },	-- Deepgrove Rose
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42793, {	-- Herbalism at Midnight
 				i(264003),	-- Midnight Herbalist's Shop Sign (DECOR!)
@@ -1736,5 +1736,5 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["provider"] = { "i", 238466 },	-- Thalassian Phoenix Tail
 			}),
 		})),
-	})),
+	}),
 })));

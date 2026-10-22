@@ -26,7 +26,7 @@ local function RemovedWithSOO(t)
 	end
 	return t;
 end
-root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 	header(HEADERS.Faction, FACTION_GOLDEN_LOTUS, {
 		["description"] = "The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",
 		["maps"] = {
@@ -2061,13 +2061,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}),
 		},
 	}),
-}))));
+})));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	header(HEADERS.Faction, FACTION_GOLDEN_LOTUS, {
 		n(QUESTS, {
 			q(31652),	-- Roll Club: Serpent's Spine Tracking Quest
 			RemovedWithSOO(q(30294)),	-- Small Comforts, auto completed after completing Burning Away the Filth (30282)
 		}),
 	}),
-})));
+}));

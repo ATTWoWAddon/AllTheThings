@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS, {	-- Vale of Eternal Blossoms
 		["icon"] = 3196265,
 		["lvl"] = { 50 },
@@ -12,6 +12,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 		["crs"] = {
 			163463,	-- Zidormi
 		},
+		["timeline"] = { ADDED_8_3_0 },
 		["groups"] = {
 			n(WORLD_BOSSES, {
 				["isRaid"] = true,
@@ -1101,40 +1102,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
-		n(NZOTH_ASSAULTS, {
-			n(TREASURES, {
-				q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
-				q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
-				q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
-				q(57197),	-- Vale of Eternal Blossoms - Black Empire Cache
-				q(57202),	-- Vale of Eternal Blossoms - Black Empire Cache
-				q(57199),	-- Vale of Eternal Blossoms - Black Empire Cache
-				q(57206),	-- Vale of Eternal Blossoms - Mogu Plunder
-				q(57208),	-- Vale of Eternal Blossoms - Mogu Plunder
-				q(57209),	-- Vale of Eternal Blossoms - Mogu Plunder
-				q(57211),	-- Vale of Eternal Blossoms - Mogu Plunder
-				q(57212),	-- Vale of Eternal Blossoms - Mogu Plunder
-				q(57213),	-- Vale of Eternal Blossoms - Mogu Plunder
-				q(57214),	-- Vale of Eternal Blossoms - Mogu Spoils
-				q(58224),	-- Vale of Eternal Blossoms - Ambered Cache
-				q(58225),	-- Vale of Eternal Blossoms - Ambered Cache
-				q(58226),	-- Vale of Eternal Blossoms - Ambered Cache
-				q(58227),	-- Vale of Eternal Blossoms - Ambered Cache
-				q(58228),	-- Vale of Eternal Blossoms - Ambered Cache
-				q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
+		["timeline"] = { ADDED_8_3_0 },
+		["groups"] = {
+			n(NZOTH_ASSAULTS, {
+				n(TREASURES, {
+					q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
+					q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
+					q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
+					q(57197),	-- Vale of Eternal Blossoms - Black Empire Cache
+					q(57202),	-- Vale of Eternal Blossoms - Black Empire Cache
+					q(57199),	-- Vale of Eternal Blossoms - Black Empire Cache
+					q(57206),	-- Vale of Eternal Blossoms - Mogu Plunder
+					q(57208),	-- Vale of Eternal Blossoms - Mogu Plunder
+					q(57209),	-- Vale of Eternal Blossoms - Mogu Plunder
+					q(57211),	-- Vale of Eternal Blossoms - Mogu Plunder
+					q(57212),	-- Vale of Eternal Blossoms - Mogu Plunder
+					q(57213),	-- Vale of Eternal Blossoms - Mogu Plunder
+					q(57214),	-- Vale of Eternal Blossoms - Mogu Spoils
+					q(58224),	-- Vale of Eternal Blossoms - Ambered Cache
+					q(58225),	-- Vale of Eternal Blossoms - Ambered Cache
+					q(58226),	-- Vale of Eternal Blossoms - Ambered Cache
+					q(58227),	-- Vale of Eternal Blossoms - Ambered Cache
+					q(58228),	-- Vale of Eternal Blossoms - Ambered Cache
+					q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
+				}),
+				n(QUESTS, {
+					q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
+				}),
+				q(59024),	-- Triggers when talking to Zidormi in the lvl 120 rebuilt Vale to go to the past sha-destroyed version
+				q(56134),	-- Vale of Eternal Blossoms - activated a celestial buff 1st time (chi-ji?)
+				q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
+				q(56132),	-- Vale of Eternal Blossoms - activated a celetial buff 3rd time (yu'lon?)
+				q(56133),	-- Vale of Eternal Blossoms - activated a celestial buff 4th time (xuen?)
 			}),
-			n(QUESTS, {
-				q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
-			}),
-			q(59024),	-- Triggers when talking to Zidormi in the lvl 120 rebuilt Vale to go to the past sha-destroyed version
-			q(56134),	-- Vale of Eternal Blossoms - activated a celestial buff 1st time (chi-ji?)
-			q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
-			q(56132),	-- Vale of Eternal Blossoms - activated a celetial buff 3rd time (yu'lon?)
-			q(56133),	-- Vale of Eternal Blossoms - activated a celestial buff 4th time (xuen?)
-		}),
+		},
 	}),
-})));
+}));

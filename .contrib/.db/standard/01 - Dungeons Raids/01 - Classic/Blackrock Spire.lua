@@ -3049,9 +3049,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 }));
 -- #endif
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(229, {
 		q(36866),	-- Lower Blackrock Spires Reward Quest - Normal completion
 		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — kill Urok Doomhowl
 	}),
-})));
+}));

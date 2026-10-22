@@ -1449,7 +1449,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		q(38894),	-- Founded Garrison - founded the order hall
 		q(43837),	-- Tracking Quest: Tutorial - Combat Ally Unlocked
@@ -1471,4 +1471,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 		q(44705),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 3 (44057 - A "Noble" Event)
 		q(44706),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 4 (44057 - A "Noble" Event)
 	}),
-})));
+}));

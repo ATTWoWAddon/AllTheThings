@@ -45,7 +45,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 	inst(547, {	-- Auchindoun
 		["mapID"] = 593,
 		["coord"] = { 46.27, 73.92, TALADOR },
@@ -131,9 +131,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(547, {
 		q(35960),	-- Auchindoun Reward Quest
 		q(34539),	-- Draenor Challenge Mode - Bronze Addition (Nth)
@@ -141,4 +141,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 		q(34541),	-- Draenor Challenge Mode - Gold Addition (Nth)
 		q(34540),	-- Draenor Challenge Mode - Silver Addition (Nth)
 	}),
-})));
+}));

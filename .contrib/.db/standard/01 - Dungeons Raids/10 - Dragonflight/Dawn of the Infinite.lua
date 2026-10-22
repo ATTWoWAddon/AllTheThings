@@ -709,7 +709,7 @@ local QUANTUM_GROUP = sharedData({
 		},
 	}),
 });
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1209, {	-- Dawn of the Infinite
 		["coord"] = { 61.0, 84.3, THALDRASZUS },
 		["maps"] = {
@@ -723,6 +723,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2197,	-- Immemorial Battlefield
 			2198,	-- Dawn of the Infinite
 		},
+		["timeline"] = { ADDED_10_1_5 },
 		["groups"] = {
 			n(QUESTS, {
 				q(76140, {	-- Dawn of the Infinite
@@ -1208,7 +1209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			-- #endif
 		},
 	}),
-})));
+}));
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 -- 	inst(1209, {	-- Dawn of the Infinite
 -- 		-- Ensembles

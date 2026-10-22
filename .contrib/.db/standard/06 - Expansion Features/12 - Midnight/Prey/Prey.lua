@@ -33,7 +33,7 @@ local TrapNPCs = {	-- probably a ton of these, it seems unique per target & diff
 	247082,	-- Twilight Trap
 }
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
 			ach(62403),	-- 'Tis But A Scratch
@@ -763,7 +763,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 		})),
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(PREY, {

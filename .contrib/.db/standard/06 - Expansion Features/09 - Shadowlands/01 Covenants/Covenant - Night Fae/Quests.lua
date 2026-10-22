@@ -979,7 +979,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(NIGHT_FAE,  bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 		n(QUESTS, {
 			q(63452),	-- triggers when turning in "Return Lost Souls" (spellID 348837 & 348840 & 348843 & 348846)
@@ -1003,7 +1003,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			hqt(64350),	-- Tyrande/Astarii after The Power of Night campaign quest (spellID 356222)
 		}),
 	})),
-})));
+}));
 
 for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	for	_,t in ipairs(g) do

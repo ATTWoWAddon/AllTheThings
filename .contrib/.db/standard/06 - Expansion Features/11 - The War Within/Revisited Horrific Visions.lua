@@ -24,7 +24,7 @@ local DISPLACED_CORRUPTED_MEMENTOS = 3149;	-- Displaced Corrupted Mementos
 local RE_HORRIFIC_ORGRIMMAR = 2403;	-- Vision of Orgrimmar
 local RE_HORRIFIC_STORMWIND = 2404;	-- Vision of Stormwind
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	n(HORRIFIC_VISIONS_REVISITED, {
 		["maps"] = {
 			-- RE_HORRIFIC_ORGRIMMAR,
@@ -32,6 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			DORNOGAL,
 		},
 		["cr"] = 238254,	-- Portal to Horrific Visions
+		["timeline"] = { ADDED_11_1_5 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41897),	-- A Monumental Amount of Mementos
@@ -1017,53 +1018,56 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(HORRIFIC_VISIONS_REVISITED, {
-		-- Chest unlocks are shared between Orgrimmar and Stormwind, beside main one?
-		q(87430),	-- The Drag / Dwarven District
-		q(87431),	-- Valley of Spirits / Trade District
-		q(87427),	-- ?? / Mage Quarter
-		q(87429),	-- ?? / Old Town
-		-- Orgrimmar
-		q(87432),	-- after killing Thrall (main chest unlock hqt?), doesn't affected with additional wings clearing
-		q(85951, {["isWeekly"]=true}),	-- Valley of Spirits
-		q(85953, {["isWeekly"]=true}),	-- The Drag
-		q(85950, {["isWeekly"]=true}),	-- Valley of Honor
-		q(85952, {["isWeekly"]=true}),	-- Valley of Wisdom
-		-- Stormwind
-		q(87428),	-- after Alleria kill (main chest unlock hqt?)
-		q(85829, {["isWeekly"]=true}),	-- Dwarven District
-		q(85830, {["isWeekly"]=true}),	-- Trade District
-		q(85831, {["isWeekly"]=true}),	-- Mage Quarter
-		q(85832, {["isWeekly"]=true}),	-- Old Town
-		--
-		q(90524, {name="Mage Quarter & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up mage quarter (with Long Night mask)
-		q(90528, {name="Old Town & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up old town (with Long Night mask)
-		q(90529, {name="Valley of Honor & Mask"}),	-- pop after clearing Valley of Honor with 1 mask (mask sourceQuest?)
-		q(90530, {name="Valley of Wisdom & Mask"}),	-- pop after clearing Valley of Wisdom with 1 mask (new masks sourceQuest?)
-		q(90531),	-- When looting Twisted Skull-Scypthe Handlebars
-		-- ^ one of it could be tribute upgrade?
-		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
-		q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
-		-- 87389 & 88905 also pop on 2nd run (without quests in stormwind)
-		q(87381, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
-		q(88906, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
-		q(87387, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?
-		q(88907, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // one of it mask sourceQuest
-		q(87382, {name="Completion & 1 Mask"}),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock? / champion piece lockout?
-		q(88908, {name="Completion & 1 Mask"}),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock?
-		q(87383, {name="Completion & 2 Mask"}),
-		q(88909, {name="Completion & 2 Mask"}),
-		q(87384, {name="Completion & 3 Mask"}),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
-		q(88910, {name="Completion & 3 Mask"}),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
-		q(87385, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
-		q(88911, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
-		q(87386, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
-		q(88912, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
-		q(88913),	-- Popped in Orgrimmar
-		q(88914),	-- Popped in Stormwind
-		q(88915),	-- First 8 Mask Vision of Stormwind?
+		["timeline"] = { ADDED_11_1_5 },
+		["groups"] = {
+			-- Chest unlocks are shared between Orgrimmar and Stormwind, beside main one?
+			q(87430),	-- The Drag / Dwarven District
+			q(87431),	-- Valley of Spirits / Trade District
+			q(87427),	-- ?? / Mage Quarter
+			q(87429),	-- ?? / Old Town
+			-- Orgrimmar
+			q(87432),	-- after killing Thrall (main chest unlock hqt?), doesn't affected with additional wings clearing
+			q(85951, {["isWeekly"]=true}),	-- Valley of Spirits
+			q(85953, {["isWeekly"]=true}),	-- The Drag
+			q(85950, {["isWeekly"]=true}),	-- Valley of Honor
+			q(85952, {["isWeekly"]=true}),	-- Valley of Wisdom
+			-- Stormwind
+			q(87428),	-- after Alleria kill (main chest unlock hqt?)
+			q(85829, {["isWeekly"]=true}),	-- Dwarven District
+			q(85830, {["isWeekly"]=true}),	-- Trade District
+			q(85831, {["isWeekly"]=true}),	-- Mage Quarter
+			q(85832, {["isWeekly"]=true}),	-- Old Town
+			--
+			q(90524, {name="Mage Quarter & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up mage quarter (with Long Night mask)
+			q(90528, {name="Old Town & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up old town (with Long Night mask)
+			q(90529, {name="Valley of Honor & Mask"}),	-- pop after clearing Valley of Honor with 1 mask (mask sourceQuest?)
+			q(90530, {name="Valley of Wisdom & Mask"}),	-- pop after clearing Valley of Wisdom with 1 mask (new masks sourceQuest?)
+			q(90531),	-- When looting Twisted Skull-Scypthe Handlebars
+			-- ^ one of it could be tribute upgrade?
+			q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
+			q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
+			-- 87389 & 88905 also pop on 2nd run (without quests in stormwind)
+			q(87381, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
+			q(88906, {["isWeekly"]=true}),	-- Pops weekly on first clear, both Stormwind and Orgrimmar
+			q(87387, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?
+			q(88907, {name="Completion"}),	-- All district was cleared (without masks), pop after killing Alleria // one of it mask sourceQuest
+			q(87382, {name="Completion & 1 Mask"}),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock? / champion piece lockout?
+			q(88908, {name="Completion & 1 Mask"}),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock?
+			q(87383, {name="Completion & 2 Mask"}),
+			q(88909, {name="Completion & 2 Mask"}),
+			q(87384, {name="Completion & 3 Mask"}),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
+			q(88910, {name="Completion & 3 Mask"}),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
+			q(87385, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
+			q(88911, {name="Completion & 4 Mask"}),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
+			q(87386, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
+			q(88912, {name="Completion & 5 Mask"}),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
+			q(88913),	-- Popped in Orgrimmar
+			q(88914),	-- Popped in Stormwind
+			q(88915),	-- First 8 Mask Vision of Stormwind?
+		},
 	}),
-})));
+}));

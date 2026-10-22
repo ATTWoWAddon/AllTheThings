@@ -3631,7 +3631,7 @@ root(ROOTS.Zones, {
 
 -- Add in the items that aren't locked by phase.
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, {
 	m(OUTLAND, {
 		m(HELLFIRE_PENINSULA, {
 			n(QUESTS, {
@@ -3639,4 +3639,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

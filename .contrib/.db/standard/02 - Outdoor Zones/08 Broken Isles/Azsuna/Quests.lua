@@ -957,7 +957,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(FACTIONS, {
@@ -980,4 +980,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			}),
 		}),
 	}),
-})));
+}));

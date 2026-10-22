@@ -285,7 +285,7 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
 		["coord"] = { 45.4, 64.0, MAP.MIDNIGHT.VOIDSTORM },
 		["maps"] = {
@@ -293,6 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2530,	-- Crown of the Cosmos
 		},
 		["isRaid"] = true,
+		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				-- Myrhial Check Automation
@@ -578,7 +579,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire

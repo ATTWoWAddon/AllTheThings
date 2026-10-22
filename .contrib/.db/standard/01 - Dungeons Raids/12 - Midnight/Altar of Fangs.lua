@@ -30,7 +30,7 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1322, {	-- Altar of Fangs
 		InRetailSeason=InRetailSeason,
 		["coord"] = { 47.2, 68.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
@@ -39,6 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2589,	-- Ancient Burrow
 			2590,	-- Mutation Chambers / Altar of Fangs
 		},
+		["timeline"] = { ADDED_12_1_0 },
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(RAVI, {
@@ -94,4 +95,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));

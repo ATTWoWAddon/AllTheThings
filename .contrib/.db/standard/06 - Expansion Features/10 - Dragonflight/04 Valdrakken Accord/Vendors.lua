@@ -23,7 +23,7 @@ local TALLSTRIDER_SINEW = 201404;
 local VIBRANT_EMERALD = 192844;
 local WILDERCLOTH = 193050;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_VALDRAKKEN_ACCORD, {
 		n(VENDORS, {
 			n(195770, {	-- Armorsmith Terisk
@@ -985,4 +985,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		}),
 	}),
-})));
+}));

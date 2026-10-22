@@ -186,7 +186,7 @@ InstanceHelper.LFRQueueNPC = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1031, {	-- Uldir
 		["maps"] = {
 			1148,	-- Ruin's Descent
@@ -472,9 +472,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	inst(1031, {	-- Uldir
 		q(53269),	-- killed Taloc the Corrupted in LFR
 		q(51736),	-- killed Taloc on Mythic
@@ -486,4 +486,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		q(51731),	-- reported as triggering after doing "Edgelords" achievement, perhaps a kill quest
 		q(51729),	-- reported as triggering after doing "Double Dribble" achievement, perhaps a kill quest
 	}),
-})));
+}));

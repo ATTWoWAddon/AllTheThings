@@ -419,20 +419,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(MAGE_TOWER, {
-		q(64923),	-- unlocking Gravewarden Armaments set
-		q(64924),	-- unlocking Demonbane Armor set
-		q(64925),	-- unlocking Stormheart Raiment set
-		q(64926),	-- unlocking Wildstalker Armor set
-		q(64927),	-- unlocking Regalia of the Arcane Tempest set
-		q(64928),	-- unlocking Xuen's Battlegear set
-		q(64929),	-- unlocking Radiant Lightbringer Armor set
-		q(64930),	-- unlocking Vestments of Blind Absolution set
-		q(64931),	-- unlocking Fanged Slayer's Armor set
-		q(64932),	-- unlocking Regalia of the Skybreaker set
-		q(64933),	-- unlocking Diabolic Raiment set
-		q(64934),	-- unlocking Titanic Onslaught Armor set
-		q(64922),	-- unlocking what I assume is the Fel Bear druid form, popped at the same time as 64925
+		["timeline"] = { ADDED_9_1_5 },
+		["groups"] = {
+			q(64923),	-- unlocking Gravewarden Armaments set
+			q(64924),	-- unlocking Demonbane Armor set
+			q(64925),	-- unlocking Stormheart Raiment set
+			q(64926),	-- unlocking Wildstalker Armor set
+			q(64927),	-- unlocking Regalia of the Arcane Tempest set
+			q(64928),	-- unlocking Xuen's Battlegear set
+			q(64929),	-- unlocking Radiant Lightbringer Armor set
+			q(64930),	-- unlocking Vestments of Blind Absolution set
+			q(64931),	-- unlocking Fanged Slayer's Armor set
+			q(64932),	-- unlocking Regalia of the Skybreaker set
+			q(64933),	-- unlocking Diabolic Raiment set
+			q(64934),	-- unlocking Titanic Onslaught Armor set
+			q(64922),	-- unlocking what I assume is the Fel Bear druid form, popped at the same time as 64925
+		},
 	}),
-})));
+}));

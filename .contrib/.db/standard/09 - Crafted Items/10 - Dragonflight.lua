@@ -3502,7 +3502,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
@@ -3657,4 +3657,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(71294),	-- Azureweave 20/20
 		}),
 	}),
-})));
+}));

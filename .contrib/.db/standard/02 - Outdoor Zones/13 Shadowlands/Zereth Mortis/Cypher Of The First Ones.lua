@@ -685,35 +685,38 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(ZERETH_MORTIS, {
-			header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
-				q(65027),	-- eligible for Firim's Spare Forge-tap
-				q(65028),	-- eligible for Unstable Containment Trap
-				-- q(65017, {["repeatable"]=true}),	-- Looting 187891,	-- Empyrean Essence
-				-- q(65015, {["repeatable"]=true}),	-- Looting 187894,	-- Energized Firmament
-				q(65622, {["repeatable"]=true}),	-- Looting 187885,	-- Honeycombed Lattice
-				-- q(65014, {["repeatable"]=true}),	-- Looting 187892,	-- Incorporeal Sand
-				q(65005, {["repeatable"]=true}),	-- Looting 187879,	-- Pollinated Extraction
-				-- q(65560, {["repeatable"]=true}),	-- Looting 190129,	-- Serene Pigment
-				-- q(65018, {["repeatable"]=true}),	-- Looting 187889,	-- Unstable Agitant
-				-- q(65016, {["repeatable"]=true}),	-- Looting 187893,	-- Volatile Precursor
-				-- q(65559, {["repeatable"]=true}),	-- Looting 190128,	-- Wayward Essence
-				-- q(65019, {["repeatable"]=true}),	-- Looting 187890,	-- Anima-charged Yolk
-				-- Pocopoc Costumes Applied
-				q(66059),	-- Chef's Hat
-				q(66060),	-- Crown of Flowers
-				q(66061),	-- Pirate Hat
-				q(66062),	-- Safari Hat
-				q(66063),	-- Dapper
-				q(66064),	-- Tricorne Hat
-				q(66065),	-- Witch Hat
-				q(66066),	-- Candle
-				q(66067),	-- Pepe
-				q(66068),	-- Princess Hat
-				q(66069),	-- No Costume
+		["timeline"] = { ADDED_9_2_0 },
+		["groups"] = {
+			m(ZERETH_MORTIS, {
+				header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
+					q(65027),	-- eligible for Firim's Spare Forge-tap
+					q(65028),	-- eligible for Unstable Containment Trap
+					-- q(65017, {["repeatable"]=true}),	-- Looting 187891,	-- Empyrean Essence
+					-- q(65015, {["repeatable"]=true}),	-- Looting 187894,	-- Energized Firmament
+					q(65622, {["repeatable"]=true}),	-- Looting 187885,	-- Honeycombed Lattice
+					-- q(65014, {["repeatable"]=true}),	-- Looting 187892,	-- Incorporeal Sand
+					q(65005, {["repeatable"]=true}),	-- Looting 187879,	-- Pollinated Extraction
+					-- q(65560, {["repeatable"]=true}),	-- Looting 190129,	-- Serene Pigment
+					-- q(65018, {["repeatable"]=true}),	-- Looting 187889,	-- Unstable Agitant
+					-- q(65016, {["repeatable"]=true}),	-- Looting 187893,	-- Volatile Precursor
+					-- q(65559, {["repeatable"]=true}),	-- Looting 190128,	-- Wayward Essence
+					-- q(65019, {["repeatable"]=true}),	-- Looting 187890,	-- Anima-charged Yolk
+					-- Pocopoc Costumes Applied
+					q(66059),	-- Chef's Hat
+					q(66060),	-- Crown of Flowers
+					q(66061),	-- Pirate Hat
+					q(66062),	-- Safari Hat
+					q(66063),	-- Dapper
+					q(66064),	-- Tricorne Hat
+					q(66065),	-- Witch Hat
+					q(66066),	-- Candle
+					q(66067),	-- Pepe
+					q(66068),	-- Princess Hat
+					q(66069),	-- No Costume
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

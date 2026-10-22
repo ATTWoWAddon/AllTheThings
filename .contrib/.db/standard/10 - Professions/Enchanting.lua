@@ -76,7 +76,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 		}),
 	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(EXPANSION.WOD, {
 		q(36308, {	-- Enchanted Highmaul Bracer (A)
 			["description"] = "This item can drop from any Draenor mob.",
 			["altQuests"] = { 36255 },	-- Enchanted Highmaul Bracer (H)
@@ -105,8 +105,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			},
 			["races"] = HORDE_ONLY,
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		q(39874, {	-- Some Enchanted Evening
 			["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 			["coord"] = { 38.6, 40.8, LEGION_DALARAN },
@@ -342,8 +342,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				r(217649),	-- Tome of Illusions: Elemental Lords
 			},
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18775),	-- Iwen's Enchanting Rod
 		})),
@@ -448,8 +448,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			})),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18764),	-- Break Upon Your Body
 			ach(18763, {
@@ -821,8 +821,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["crs"] = { 181536 },	-- Destabilized Elemental
 			}),
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }}
 		},{
@@ -1014,8 +1014,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["provider"] =  { "i", 227661 },	-- Gleaming Telluric Crystal
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42787, {	-- Enchanting at Midnight
 				i(264000),	-- Midnight Enchanter's Shop Sign (DECOR!)
@@ -1202,12 +1202,12 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["provider"] =  { "i", 267655 },	-- Brimming Mana Shard
 			}),
 		})),
-	})),
+	}),
 })));
 
 -- #if ANYCLASSIC
 profession(ENCHANTING, {
-	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ ADDED_6_0_2, REMOVED_8_0_1 },
 			["collectible"] = false,
@@ -1316,8 +1316,8 @@ profession(ENCHANTING, {
 			r(159235),	-- Mark of the Thunderlord
 			r(159671),	-- Mark of Warsong
 		}),
-	}))),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	})),
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
 		r(195096, {	-- Enchanting (Legion Master)
 			["timeline"]={ ADDED_7_0_3, REMOVED_8_0_1 },
 			["collectible"] = false,
@@ -1424,6 +1424,6 @@ profession(ENCHANTING, {
 			r(191075),	-- Enchanted Torch
 			r(191078),	-- Leylight Brazier
 		}),
-	}))),
+	})),
 });
 -- #endif

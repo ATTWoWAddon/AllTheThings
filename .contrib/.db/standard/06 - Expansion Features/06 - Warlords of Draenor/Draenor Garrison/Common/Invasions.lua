@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	n(GARRISONS, {
 		n(GARRISON_INVASIONS, {
 			q(38276, { ["timeline"] = { ADDED_6_1_0 } }),	-- 6.1 Garrison - World Boss Invasion Loot - killing Commander Dro'gan
@@ -310,4 +310,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 			q(35914),	-- Internal: Default Invasion Reward - triggers during the first garrison invasion as part of Draenor's base intro
 		}),
 	}),
-})));
+}));

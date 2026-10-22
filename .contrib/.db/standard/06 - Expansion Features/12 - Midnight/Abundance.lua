@@ -22,7 +22,7 @@ ABUNDANCE = createHeader({
 
 local UNALLOYED_ABUNDANCE = 3377;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(ABUNDANCE, {
 		["maps"] = {
 			2580,	-- Loaknit Den
@@ -38,6 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			{ 66.0, 61.4, MAP.MIDNIGHT.HARANDAR },
 			{ 38.9, 53.2, MAP.MIDNIGHT.VOIDSTORM },
 		},
+		["timeline"] = { ADDED_12_0_1 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61941),	-- Abundance: Acolyte of a Glorious Entity
@@ -276,7 +277,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(ABUNDANCE, {

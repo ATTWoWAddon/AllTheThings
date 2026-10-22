@@ -173,13 +173,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 	},
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, {
-		q(86695, name(HEADERS.Item, 235054, {isDaily=true})),	-- Always triggers after getting Pristine Mysterious Satchel
-		q(90134),	-- Always triggers after getting Pristine Mysterious Satchel
-		q(90752),	-- Sometimes triggers after getting Pristine Mysterious Satchel
-		q(90899),	-- Related somehow
-		q(90900),	-- Related somehow
-		q(99114, { ["timeline"] = { ADDED_12_1_0 } }),	-- Daily Trigger for ach(64140)
+		["timeline"] = { ADDED_11_1_5 },
+		["groups"] = {
+			q(86695, name(HEADERS.Item, 235054, {isDaily=true})),	-- Always triggers after getting Pristine Mysterious Satchel
+			q(90134),	-- Always triggers after getting Pristine Mysterious Satchel
+			q(90752),	-- Sometimes triggers after getting Pristine Mysterious Satchel
+			q(90899),	-- Related somehow
+			q(90900),	-- Related somehow
+			q(99114, { ["timeline"] = { ADDED_12_1_0 } }),	-- Daily Trigger for ach(64140)
+		},
 	}),
-})));
+}));

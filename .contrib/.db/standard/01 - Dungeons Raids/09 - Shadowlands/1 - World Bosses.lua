@@ -123,7 +123,7 @@ local Boss, BossWorldQuest, CommonBossDrops =
 InstanceHelper.Boss, InstanceHelper.BossWorldQuest, InstanceHelper.CommonBossDrops
 
 InstanceHelper.Coords = EncounterCoords
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
@@ -255,4 +255,4 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		}),
 	}),
-})));
+}));

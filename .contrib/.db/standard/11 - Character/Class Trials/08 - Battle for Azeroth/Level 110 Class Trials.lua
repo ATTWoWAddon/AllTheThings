@@ -2,13 +2,14 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.BFA, bubbleDown({["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 }}, {
+	expansion(EXPANSION.BFA, {
 		header(HEADERS.Achievement, 10671, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
 			-- Note: [As of October 13th, 2020 these Became LvL 48 Class Trials ]
 			["description"] = "These are gained by boosting a character to Level 100. Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 110,
+			["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 			["groups"] = {
 				n(RELICS, {
 					un(REMOVED_FROM_GAME, i(156805)),	-- Bloodtotem Band
@@ -353,5 +354,5 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 			},
 		}),
-	})),
+	}),
 }));

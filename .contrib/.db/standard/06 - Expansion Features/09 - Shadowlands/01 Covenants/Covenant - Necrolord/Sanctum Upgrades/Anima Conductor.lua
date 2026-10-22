@@ -184,7 +184,7 @@ for _,t in ipairs({GIEGER,SABRIEL,GRATEFUL_CURRENCY,AMALGAMTED_FORWORNS_JOURNAL,
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(NECROLORD,  bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 		n(SANCTUM_UPGRADES, {
 			n(ANIMA_CONDUCTOR, {
@@ -200,4 +200,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			}),
 		}),
 	})),
-})));
+}));

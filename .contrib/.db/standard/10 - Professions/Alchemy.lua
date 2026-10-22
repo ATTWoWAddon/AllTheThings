@@ -107,7 +107,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		}))),
 		-- #endif
 	}),
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+	expansion(EXPANSION.TBC, {
 		q(10906, {	-- Master of Elixirs (1/2)
 			["altQuests"] = {
 				10905,	-- Master of Potions (1/2)
@@ -248,29 +248,31 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_0 } }, {
+	}),
+	expansion(EXPANSION.WRATH, {
 		applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
 			["qg"] = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
 			["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
 			["repeatable"] = true,
+			["timeline"] = { ADDED_3_2_0 },
 			["groups"] = {
 				r(66659),	-- Transmute: Cardinal Ruby (RECIPE!)
 			},
 		})),
-	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 } }, {
+	}),
+	expansion(EXPANSION.MOP, {
 		q(30597, {	-- Strange Spherical Stone
 			["provider"] = { "i", 80240 },	-- Strange Spherical Stone
 			["maps"] = { PANDARIA },
 			["cost"] = {{ "i", 72238, 3 }},	-- 3x Golden Lotus
+			["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 			["groups"] = {
 				i(80240),	-- Strange Spherical Stone (QI!)
 				i(75274),	-- Zen Alchemist Stone
 			},
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		q(39325, {	-- Get Your Mix On
 			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
@@ -554,8 +556,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				i(151703),	-- Recipe: Tears of the Naaru [Rank 1] (RECIPE!)
 			},
 		})),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18770, {	-- Silas' Sphere of Transmutation
 				["provider"] = { "i", 156631 },	-- Silas' Sphere of Transmutation
@@ -742,8 +744,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			})),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18805, {	-- Draconic Phial Cabinet
 				crit(61271),	-- Phial of Tepid Versatility
@@ -1072,8 +1074,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["crs"] = { 191712 },	-- Hissing Springsoul
 			}),
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(19704),	-- Overflowing Algari Flasks (automated)
 			ach(19716),	-- Plentiful Algari Potions (automated)
@@ -1204,8 +1206,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["provider"] = { "i", 225235 },	-- Deepstone Crucible
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42788, {	-- Alchemy at Midnight
 				i(263997),	-- Midnight Alchemist's Shop Sign (DECOR!)
@@ -1358,11 +1360,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["provider"] = { "i", 259188 } ,	-- Lightbloomed Spore Sample
 			}),
 		})),
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, prof(ALCHEMY, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	expansion(EXPANSION.LEGION, {
 		q(42083),	-- on turn-in of (42081)
-	}))
+	})
 }));

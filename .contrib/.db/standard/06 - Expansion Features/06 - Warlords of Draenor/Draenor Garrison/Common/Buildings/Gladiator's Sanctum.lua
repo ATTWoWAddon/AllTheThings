@@ -448,7 +448,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers,  expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers,  expansion(EXPANSION.WOD, {
 	n(GARRISONS, {
 		n(BUILDINGS, {
 			garrisonBuilding(161, pvp({	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
@@ -467,4 +467,4 @@ root(ROOTS.HiddenQuestTriggers,  expansion(EXPANSION.WOD, bubbleDownSelf({ ["tim
 			})),
 		}),
 	}),
-})));
+}));

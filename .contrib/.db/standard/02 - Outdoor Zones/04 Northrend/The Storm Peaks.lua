@@ -1862,7 +1862,7 @@ root(ROOTS.Zones, {
 	})),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, {
 	m(NORTHREND, {
 		m(THE_STORM_PEAKS, {
 			n(QUESTS, {
@@ -1870,4 +1870,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["ti
 			}),
 		}),
 	}),
-})));
+}));

@@ -378,15 +378,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
+	expansion(EXPANSION.TBC, {
 		inst(260, {
 			q(11115),	-- The Mark of Vashj (FLAG ONLY)
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		inst(260, {
 			q(35561),	-- The Slave Pens Reward Quest - Normal completion
 			q(35562),	-- The Slave Pens Reward Quest - Heroic completion
 		}),
-	})),
+	}),
 });

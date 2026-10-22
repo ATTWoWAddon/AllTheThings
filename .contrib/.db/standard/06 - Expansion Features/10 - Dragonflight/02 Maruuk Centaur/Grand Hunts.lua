@@ -20,7 +20,7 @@ local GRAND_HUNTS = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 5 } }, {
 			n(ACHIEVEMENTS, {
@@ -408,9 +408,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		})),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, {
 			q(70004),	-- First time?
@@ -435,4 +435,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(73937),	-- Possibly first Hunt step completion of the week
 		}),
 	}),
-})));
+}));

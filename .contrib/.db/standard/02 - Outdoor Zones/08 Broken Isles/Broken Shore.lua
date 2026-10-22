@@ -1980,30 +1980,33 @@ root(ROOTS.Zones, {
 });
 
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
-		m(BROKEN_SHORE, {
-			n(EMISSARY_QUESTS, {
-				q(46802),	-- Paragon of the Legionfall Armies
+		["timeline"] = { ADDED_7_2_0 },
+		["groups"] = {
+			m(BROKEN_SHORE, {
+				n(EMISSARY_QUESTS, {
+					q(46802),	-- Paragon of the Legionfall Armies
+				}),
+				n(QUESTS, {
+					q(47038),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
+					q(47044),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
+					q(47053),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
+					q(46870),	-- 7.2 Broken Shore - Buildings - Command Center - Buff Activation - Tracking Quest
+					-- q(47021),	-- 7.2 Broken Shore - Buildings - Command Center - Buff - Follower Token - Tracking
+					q(46283),	-- 7.2 Broken Shore - Buildings - Mage Tower - Personal Reward Received
+					q(46793),	-- 7.2 Broken Shore - Buildings - Mage Tower - Buff Activation - Tracking Quest
+					q(46871),	-- 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activation - Tracking Quest
+					q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" (questID 47137) during the Legionfall Campaign
+					q(46735),	-- Contribute to Command Center - during "Begin Construction" quest, not sure if that matters
+					q(46277),	-- Contribute to Mage Tower
+					q(46709),	-- Ready for Crafted Legendary flag
+					q(47590),	-- Tier 3 Mob Daily Bonus (DNT) - Daily kill
+					q(46665),	-- Tracking Quest - triggers with "Spiders, Huh?"
+					q(46751),	-- Tracking Quest - triggers when turning in "A Found Memento" (#46268)
+					q(47092),	-- Working on Crafted Legendary
+				}),
 			}),
-			n(QUESTS, {
-				q(47038),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
-				q(47044),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
-				q(47053),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
-				q(46870),	-- 7.2 Broken Shore - Buildings - Command Center - Buff Activation - Tracking Quest
-				-- q(47021),	-- 7.2 Broken Shore - Buildings - Command Center - Buff - Follower Token - Tracking
-				q(46283),	-- 7.2 Broken Shore - Buildings - Mage Tower - Personal Reward Received
-				q(46793),	-- 7.2 Broken Shore - Buildings - Mage Tower - Buff Activation - Tracking Quest
-				q(46871),	-- 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activation - Tracking Quest
-				q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" (questID 47137) during the Legionfall Campaign
-				q(46735),	-- Contribute to Command Center - during "Begin Construction" quest, not sure if that matters
-				q(46277),	-- Contribute to Mage Tower
-				q(46709),	-- Ready for Crafted Legendary flag
-				q(47590),	-- Tier 3 Mob Daily Bonus (DNT) - Daily kill
-				q(46665),	-- Tracking Quest - triggers with "Spiders, Huh?"
-				q(46751),	-- Tracking Quest - triggers when turning in "A Found Memento" (#46268)
-				q(47092),	-- Working on Crafted Legendary
-			}),
-		}),
+		},
 	}),
-})));
+}));

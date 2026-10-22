@@ -158,39 +158,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		m(THE_FORBIDDEN_REACH, {
-			n(TREASURES, {
-				header(HEADERS.Item, 202667, {	-- Sealed Artifact Scroll
-					q(73200),
-					q(73201),
-					q(73202),
-					q(73203),
-					q(73204),
-					q(73205),
-				}),
-				header(HEADERS.Item, 202669, {	-- Sealed Fish Scroll
-					q(73210),
-					q(73211),
-					q(73212),
-					q(73213),
-					q(73214),
-				}),
-				header(HEADERS.Item, 202670, {	-- Sealed Knowledge Scroll
-					q(73215),
-					q(73216),
-					q(73217),
-					q(73218),
-					q(73219),
-				}),
-				header(HEADERS.Item, 202668, {	-- Sealed Spirit Scroll
-					q(73206),
-					q(73207),
-					q(73208),
-					q(73209),
+		["timeline"] = { ADDED_10_0_7 },
+		["groups"] = {
+			m(THE_FORBIDDEN_REACH, {
+				n(TREASURES, {
+					header(HEADERS.Item, 202667, {	-- Sealed Artifact Scroll
+						q(73200),
+						q(73201),
+						q(73202),
+						q(73203),
+						q(73204),
+						q(73205),
+					}),
+					header(HEADERS.Item, 202669, {	-- Sealed Fish Scroll
+						q(73210),
+						q(73211),
+						q(73212),
+						q(73213),
+						q(73214),
+					}),
+					header(HEADERS.Item, 202670, {	-- Sealed Knowledge Scroll
+						q(73215),
+						q(73216),
+						q(73217),
+						q(73218),
+						q(73219),
+					}),
+					header(HEADERS.Item, 202668, {	-- Sealed Spirit Scroll
+						q(73206),
+						q(73207),
+						q(73208),
+						q(73209),
+					}),
 				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

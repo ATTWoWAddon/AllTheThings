@@ -150,12 +150,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		})),
 	}),
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+	expansion(EXPANSION.TBC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18894),	-- Free Stylin' (automated)
 		})),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		n(QUESTS, {
 			q(36176, {	-- A Call for Huntsman
 				["description"] = "This item can drop from any Draenor mob.",
@@ -191,8 +191,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = HORDE_ONLY,
 			}),
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		n(QUESTS, {
 			q(39958, {	-- Skin Deep
 				["provider"] = { "n", 93523 },	-- Namha Moonwater
@@ -804,8 +804,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18777, {	-- Mallet of Thunderous Skins
 				["provider"] = { "i", 164978 },	-- Mallet of Thunderous Skins
@@ -1002,8 +1002,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }}
 		},{
@@ -1356,8 +1356,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }}
 		},{
@@ -1509,8 +1509,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "i", 225222 },	-- Studded Leather Band
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42786, {	-- Leatherworking at Midnight
 				i(264006),	-- Midnight Leatherworker's Shop Sign (DECOR!)
@@ -1682,25 +1682,31 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "i", 259201 },	-- Thalassian Mana Oil
 			}),
 		})),
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+	expansion(EXPANSION.LEGION, {
 		n(PROFESSIONS, {
-			prof(LEATHERWORKING, {
-				q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
-				q(47095),	-- Broken Shore - Choice: Leatherworking (M) - triggers when you choose to craft the mail legendary at Eliezer Hammerbeard (Nether Disruptor)
-			}),
+			["timeline"] = { ADDED_7_2_0 },
+			["groups"] = {
+				prof(LEATHERWORKING, {
+					q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
+					q(47095),	-- Broken Shore - Choice: Leatherworking (M) - triggers when you choose to craft the mail legendary at Eliezer Hammerbeard (Nether Disruptor)
+				}),
+			},
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(PROFESSIONS, {
-			prof(LEATHERWORKING, {
-				q(55628),	-- Tracking Quest - 15 minutes timer for receiving 'Spirit of the Bested' from other rare kill again (itemID 168138) (resets every 00,15,30,45 minutes of hour)
-			}),
+			["timeline"] = { ADDED_8_1_5 },
+			["groups"] = {
+				prof(LEATHERWORKING, {
+					q(55628),	-- Tracking Quest - 15 minutes timer for receiving 'Spirit of the Bested' from other rare kill again (itemID 168138) (resets every 00,15,30,45 minutes of hour)
+				}),
+			},
 		}),
-	})),
+	}),
 });
 
 -- #if ANYCLASSIC

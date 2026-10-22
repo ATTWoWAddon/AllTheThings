@@ -417,27 +417,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(KORTHIA, {
-			n(TREASURES, {
-				q(64316),	-- 1st loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
-				q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
-				q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
-				q(64564),	-- 4th loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash) - this # loot used to be 64309, but they changed it at some point on PTR
-				q(64565),	-- not 100% sure what specifically triggers this, but it's not the objects linked
-				q(64310, name(HEADERS.Item, 186731)),	-- looting a Repaired Riftkey (also pops when looting one from rares)
-				q(64311, name(HEADERS.Item, 186718)),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
-				q(64700, name(HEADERS.Item, 187328)),	-- looting 100-research item Ripped Cosmology Chart
-				q(64702, name(HEADERS.Item, 187462)),	-- looting 48-research item Scroll of Shadowlands Fables
-				q(64705),	-- looting 150-research item from a treasure
-				q(64787, name(HEADERS.Object, 369297)),	-- Pile of Bones repeatable quest
-				q(64788, name(HEADERS.Object, 369297)),	-- Pile of Bones repeatable quest (37.1, 53.6)
-				q(64789, name(HEADERS.Object, 369296)),	-- Shardhide Stash repeatable quest (49.6, 26.8; 50.4, 31.2)
-				q(64790, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest (59.8, 36.0; 61.4, 38.1)
-				q(64791, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest
-				q(64792, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest
+		["timeline"] = { ADDED_9_1_0 },
+		["groups"] = {
+			m(KORTHIA, {
+				n(TREASURES, {
+					q(64316),	-- 1st loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
+					q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
+					q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
+					q(64564),	-- 4th loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash) - this # loot used to be 64309, but they changed it at some point on PTR
+					q(64565),	-- not 100% sure what specifically triggers this, but it's not the objects linked
+					q(64310, name(HEADERS.Item, 186731)),	-- looting a Repaired Riftkey (also pops when looting one from rares)
+					q(64311, name(HEADERS.Item, 186718)),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
+					q(64700, name(HEADERS.Item, 187328)),	-- looting 100-research item Ripped Cosmology Chart
+					q(64702, name(HEADERS.Item, 187462)),	-- looting 48-research item Scroll of Shadowlands Fables
+					q(64705),	-- looting 150-research item from a treasure
+					q(64787, name(HEADERS.Object, 369297)),	-- Pile of Bones repeatable quest
+					q(64788, name(HEADERS.Object, 369297)),	-- Pile of Bones repeatable quest (37.1, 53.6)
+					q(64789, name(HEADERS.Object, 369296)),	-- Shardhide Stash repeatable quest (49.6, 26.8; 50.4, 31.2)
+					q(64790, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest (59.8, 36.0; 61.4, 38.1)
+					q(64791, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest
+					q(64792, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

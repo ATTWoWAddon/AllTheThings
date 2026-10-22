@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
 			ach(16683, {	-- In Tyr's Footsteps
@@ -419,9 +419,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(PROFESSIONS, {
 		n(PROFESSIONS, {	-- double header on purpose - Darkal
 			q(70846, {	-- Dragonscale Expedition: Help Needed!
@@ -449,4 +449,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(76139, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Silk's Silk' (questID 75600) (spellID 411891)
 		}),
 	}),
-})));
+}));

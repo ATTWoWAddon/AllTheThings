@@ -556,7 +556,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	})
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(ZANDALAR, {
 		n(ACHIEVEMENTS, {
 			q(50311),	-- give Jani the Golden Ravasaur Egg in Zuldazar
@@ -577,4 +577,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			-- q(50435),	-- Vilescale Pearl for Get Hek'd
 		}),
 	}),
-})));
+}));

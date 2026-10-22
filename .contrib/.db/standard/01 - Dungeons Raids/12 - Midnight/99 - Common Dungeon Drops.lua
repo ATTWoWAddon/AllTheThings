@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	n(COMMON_DUNGEON_DROPS, sharedData({
 		["crs"] = {
 			246404,	-- Nalorakk
@@ -20,4 +20,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 		i(256720),	-- Design: Stoic Eversong Diamond (RECIPE!)
 		i(256708),	-- Design: Telluric Eversong Diamond (RECIPE!)
 	})),
-})));
+}));

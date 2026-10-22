@@ -15,12 +15,13 @@ local SymRaidAdmirdrassil = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1207,DiffID,ClassID}}
 end
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	o(382621, {	-- Revival Catalyst Console
 		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 		["coord"] = { 60.6, 53.8, THALDRASZUS },
 		["modelScale"] = 4,
 		["sourceQuests"] = { 72360 },	-- Reviving the Machine
+		["timeline"] = { ADDED_10_0_5 },
 		["groups"] = {
 			-- #if BEFORE TWW
 			header(HEADERS.LFGDungeon, VAULT_OF_THE_INCARNATES, {
@@ -4221,4 +4222,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		},
 	}),
-})));
+}));

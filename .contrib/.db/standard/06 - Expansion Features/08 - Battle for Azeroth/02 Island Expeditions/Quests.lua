@@ -568,7 +568,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(ISLAND_EXPEDITIONS, {
 		n(GROUP_FINDER, {
 			q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
@@ -597,4 +597,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		q(56910, { ["timeline"] = { ADDED_8_2_0 } }),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
 		q(57062, { ["timeline"] = { ADDED_8_2_0 } }),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
 	}),
-})));
+}));

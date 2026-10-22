@@ -101,7 +101,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				})),
 			}),
 		})),
-		expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+		expansion(EXPANSION.SL, {
 			n(ACHIEVEMENTS, {
 				ach(14516, {	-- Impressing Zo'Sorg
 					["sym"] = {{ "achievement_criteria" }},
@@ -113,8 +113,8 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			n(BOUNTY, {
 				i(184810),	-- Plundered Supplies
 			}),
-		})),
-		expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		}),
+		expansion(EXPANSION.DF, {
 			n(ACHIEVEMENTS, {
 				ach(16599, {	-- A Champion's Pursuit
 					crit(55944, {	-- Krolkoth the Mountain
@@ -272,7 +272,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				i(201756),	-- Bulging Coin Purse
 				i(202184),	-- Trophy of Strife
 			}),
-		})),
+		}),
 		expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			n(ACHIEVEMENTS, {
 				ach(40088, {	-- A Champion's Tour: The War Within (automated)

@@ -5,8 +5,9 @@
 -- #if ANYCLASSIC
 -- Wouter NOTE: level 85 boosts became available in Classic shortly after the launch of Dragon Soul, with the Sha-Infused Epic Pack for MoP
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.MOP, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_4_4_2 } }, {
+	expansion(EXPANSION.MOP, bubbleDown({ ["u"] = REAL_MONEY, }, {
 		header(HEADERS.Achievement, 4826, {
+			["timeline"] = { ADDED_4_4_2 },
 			["groups"] = {
 				cl(DEATHKNIGHT, {
 					i(92110),	-- Scourgeheart Blade

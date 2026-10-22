@@ -1754,44 +1754,47 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
-		-- Normal
-		q(78311),	-- Gnalroot
-		q(78312),	-- Igira the Cruel
-		q(78313),	-- Volcoross
-		q(78314),	-- Council of Dreams
-		q(78315),	-- Larodar, Keeper of the Flame
-		q(78316),	-- Nymue, Weaver of the Cycle
-		q(78317),	-- Smolderon
-		q(78318),	-- Tindral Sageswift, Seer of the Flame
-		q(78320),	-- Fyrakk the Blazing
-		--
-		q(78423),	-- Account unlock quest (SpellID 425878) received after turning in (questID 78421)
+		["timeline"] = { ADDED_10_2_0 },
+		["groups"] = {
+			-- Normal
+			q(78311),	-- Gnalroot
+			q(78312),	-- Igira the Cruel
+			q(78313),	-- Volcoross
+			q(78314),	-- Council of Dreams
+			q(78315),	-- Larodar, Keeper of the Flame
+			q(78316),	-- Nymue, Weaver of the Cycle
+			q(78317),	-- Smolderon
+			q(78318),	-- Tindral Sageswift, Seer of the Flame
+			q(78320),	-- Fyrakk the Blazing
+			--
+			q(78423),	-- Account unlock quest (SpellID 425878) received after turning in (questID 78421)
 
-		-- Fyr'alath the Dreamrender bad luck protection
-		-- Greater Ember of Fyr'alath lockout
-		q(78566),	-- LFR Fyrakk the Blazing
-		q(78567),	-- Normal Fyrakk the Blazing
-		q(78568),	-- Heroic Fyrakk the Blazing
-		q(78569),	-- Mythic Fyrakk the Blazing
-		-- Heroic Lesser Ember of Fyr'alath lockout
-		q(78956),	-- Heroic Gnarlroot
-		q(78958),	-- Heroic Igira the Cruel
-		q(78960),	-- Heroic Volcoross
-		q(78962),	-- Heroic Council of Dreams
-		q(78964),	-- Heroic Larodar, Keeper of the Flame
-		q(78966),	-- Heroic Nymue, Weaver of the Cycle
-		q(78968),	-- Heroic Smolderon
-		q(78970),	-- Heroic Tindral Sageswift, Seer of the Flame
-		-- Mythic Lesser Ember of Fyr'alath lockout
-		q(78957),	-- Mythic Gnarlroot
-		q(78959),	-- Mythic Igira the Cruel
-		q(78961),	-- Mythic Volcoross
-		q(78963),	-- Mythic Council of Dreams
-		q(78965),	-- Mythic Larodar, Keeper of the Flame
-		q(78967),	-- Mythic Nymue, Weaver of the Cycle
-		q(78969),	-- Mythic Smolderon
-		q(78971),	-- Mythic Tindral Sageswift, Seer of the Flame
+			-- Fyr'alath the Dreamrender bad luck protection
+			-- Greater Ember of Fyr'alath lockout
+			q(78566),	-- LFR Fyrakk the Blazing
+			q(78567),	-- Normal Fyrakk the Blazing
+			q(78568),	-- Heroic Fyrakk the Blazing
+			q(78569),	-- Mythic Fyrakk the Blazing
+			-- Heroic Lesser Ember of Fyr'alath lockout
+			q(78956),	-- Heroic Gnarlroot
+			q(78958),	-- Heroic Igira the Cruel
+			q(78960),	-- Heroic Volcoross
+			q(78962),	-- Heroic Council of Dreams
+			q(78964),	-- Heroic Larodar, Keeper of the Flame
+			q(78966),	-- Heroic Nymue, Weaver of the Cycle
+			q(78968),	-- Heroic Smolderon
+			q(78970),	-- Heroic Tindral Sageswift, Seer of the Flame
+			-- Mythic Lesser Ember of Fyr'alath lockout
+			q(78957),	-- Mythic Gnarlroot
+			q(78959),	-- Mythic Igira the Cruel
+			q(78961),	-- Mythic Volcoross
+			q(78963),	-- Mythic Council of Dreams
+			q(78965),	-- Mythic Larodar, Keeper of the Flame
+			q(78967),	-- Mythic Nymue, Weaver of the Cycle
+			q(78969),	-- Mythic Smolderon
+			q(78971),	-- Mythic Tindral Sageswift, Seer of the Flame
+		},
 	}),
-})));
+}));

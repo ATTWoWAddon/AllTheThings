@@ -4439,13 +4439,16 @@ STURDY_RECURVE.u = nil;
 FINE_SHORTBOW.u = nil;
 
 root(ROOTS.HiddenQuestTriggers,{
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_2 } }, {
+	expansion(EXPANSION.CATA, {
 		n(QUESTS, {
-			-- q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
-			q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
+			["timeline"] = { ADDED_4_3_2 },
+			["groups"] = {
+				-- q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
+				q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
+			},
 		}),
-	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	}),
+	expansion(EXPANSION.MOP, {
 		n(QUESTS, {
 			q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 			q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
@@ -4469,24 +4472,58 @@ root(ROOTS.HiddenQuestTriggers,{
 			q(30560),	-- [DNT] Tools of Divination TRACKER - triggers after completing Tools of Divination (questID 29464)
 			q(30546),	-- [DNT] Writing the Future TRACKER - triggers after completing Writing the Future (questID 29515)
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
-		q(45038),	-- Hexsweeper lvl 1
-		q(45039),	-- Hexsweeper lvl 2
-		q(45040),	-- Hexsweeper lvl 3
-		q(45041),	-- Hexsweeper lvl 4
-		q(45042),	-- Hexsweeper lvl 5
-		q(59312),	-- Hexsweeper lvl X
-		q(57827),	-- Rune Matching easy
-		q(57828),	-- Rune Matching normal
-		q(57829),	-- Rune Matching hard
-		q(57830),	-- Rune Matching hardest
-		q(57835),	-- Totems lvl 1
-		q(57836),	-- Totems lvl 2
-		q(57837),	-- Totems lvl 3
-		q(57838),	-- Totems lvl 4
-		q(57839),	-- Totems lvl 5
-		q(58572),	-- playing console game, remembthon something
-		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
-	})),
+	}),
+	expansion(EXPANSION.BFA, {
+		q(45038, {	-- Hexsweeper lvl 1
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(45039, {	-- Hexsweeper lvl 2
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(45040, {	-- Hexsweeper lvl 3
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(45041, {	-- Hexsweeper lvl 4
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(45042, {	-- Hexsweeper lvl 5
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(59312, {	-- Hexsweeper lvl X
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57827, {	-- Rune Matching easy
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57828, {	-- Rune Matching normal
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57829, {	-- Rune Matching hard
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57830, {	-- Rune Matching hardest
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57835, {	-- Totems lvl 1
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57836, {	-- Totems lvl 2
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57837, {	-- Totems lvl 3
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57838, {	-- Totems lvl 4
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57839, {	-- Totems lvl 5
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(58572, {	-- playing console game, remembthon something
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		q(57776, {	-- unknown tracking quest that appeared after speaking to Selina Dourman
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+	}),
 });

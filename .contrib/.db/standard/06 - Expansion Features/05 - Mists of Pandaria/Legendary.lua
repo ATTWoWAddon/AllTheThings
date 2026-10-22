@@ -20,10 +20,11 @@ local LEGENDARY_THE_BLACK_PRINCE = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	n(LEGENDARY_THE_BLACK_PRINCE, {
 		["isRaid"] = true,
 		["maps"] = { THE_VEILED_STAIR },
+		["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 		["groups"] = appendGroups(
 			applyclassicphase(MOP_PHASE_ONE, bubbleDown({["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 				------ Chapter 1 ------
@@ -507,4 +508,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			})),
 		{}),
 	}),
-})));
+}));

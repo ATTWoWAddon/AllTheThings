@@ -388,9 +388,9 @@ for i,o in ipairs({
 	i(6097),	-- Acolyte's Shirt
 }) do table.insert(THOMAS_YANCE_GROUPS, o); end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(251, {
 		q(35542),	-- Old Hillsbrad Foothills Reward Quest - Normal completion
 		q(35543),	-- Old Hillsbrad Foothills Reward Quest - Heroic completion
 	}),
-})));
+}));

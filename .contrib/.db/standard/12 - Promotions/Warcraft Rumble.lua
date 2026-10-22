@@ -338,34 +338,37 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(WARCRAFT_RUMBLE, {
-		-- TODO: these are real quests, probably in different cities/locations?
-		q(75712),	-- Warcraft Rumble Minis: New Look!
-		q(75713),	-- Warcraft Rumble Minis: New Look!
-		-- Received Toy
-		-- q(73101),	-- Maiev
-		-- q(73379),	-- Murloc
-		-- q(73368),	-- Night Elf Huntress
-		-- q(73104),	-- Sneed
-		-- q(73373),	-- Stonehoof Tauren
-		-- q(73376),	-- Undead Ghoul
-		-- q(73382),	-- Whelp Egg
-		-- Unlocked Silver look
-		q(73102),	-- Maiev
-		q(73380),	-- Murloc
-		q(73369),	-- Night Elf Huntress
-		q(73105),	-- Sneed
-		q(73374),	-- Stonehoof Tauren
-		q(73377),	-- Undead Ghoul
-		q(73383),	-- Whelp Egg
-		-- Unlocked Gold look
-		q(73103),	-- Maiev
-		q(73381),	-- Murloc
-		q(73370),	-- Night Elf Huntress
-		q(73106),	-- Sneed
-		q(73375),	-- Stonehoof Tauren
-		q(73378),	-- Undead Ghoul
-		q(73384),	-- Whelp Egg
+		["timeline"] = { ADDED_10_1_7 },
+		["groups"] = {
+			-- TODO: these are real quests, probably in different cities/locations?
+			q(75712),	-- Warcraft Rumble Minis: New Look!
+			q(75713),	-- Warcraft Rumble Minis: New Look!
+			-- Received Toy
+			-- q(73101),	-- Maiev
+			-- q(73379),	-- Murloc
+			-- q(73368),	-- Night Elf Huntress
+			-- q(73104),	-- Sneed
+			-- q(73373),	-- Stonehoof Tauren
+			-- q(73376),	-- Undead Ghoul
+			-- q(73382),	-- Whelp Egg
+			-- Unlocked Silver look
+			q(73102),	-- Maiev
+			q(73380),	-- Murloc
+			q(73369),	-- Night Elf Huntress
+			q(73105),	-- Sneed
+			q(73374),	-- Stonehoof Tauren
+			q(73377),	-- Undead Ghoul
+			q(73383),	-- Whelp Egg
+			-- Unlocked Gold look
+			q(73103),	-- Maiev
+			q(73381),	-- Murloc
+			q(73370),	-- Night Elf Huntress
+			q(73106),	-- Sneed
+			q(73375),	-- Stonehoof Tauren
+			q(73378),	-- Undead Ghoul
+			q(73384),	-- Whelp Egg
+		},
 	}),
-})));
+}));

@@ -1716,9 +1716,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(231, {
 		q(35601),	-- Gnomeregan Reward Quest - Normal completion
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - kill Grubbis
 	}),
-})));
+}));

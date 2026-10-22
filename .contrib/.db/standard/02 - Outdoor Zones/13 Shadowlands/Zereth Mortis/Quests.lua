@@ -1342,86 +1342,89 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(ZERETH_MORTIS, {
-			-- Misc
-			q(65531),	-- Starts pocopoc fashion (spellID 366694 & 366695 & 366696 & 366697 & 366698 & 366699 & 366700 & 366718 & 366735 & 366883)
-			q(65724),	-- Daily Bufonid Quest Trigger
-			-- q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
-			q(66014),	-- Flight Path Backup / Skip Zereth Mortis Intro / Teleport (spellID 367677 & 365316 & 360195)
+		["timeline"] = { ADDED_9_2_0 },
+		["groups"] = {
+			m(ZERETH_MORTIS, {
+				-- Misc
+				q(65531),	-- Starts pocopoc fashion (spellID 366694 & 366695 & 366696 & 366697 & 366698 & 366699 & 366700 & 366718 & 366735 & 366883)
+				q(65724),	-- Daily Bufonid Quest Trigger
+				-- q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
+				q(66014),	-- Flight Path Backup / Skip Zereth Mortis Intro / Teleport (spellID 367677 & 365316 & 360195)
 
-			-- q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
-			-- q(65621),	-- Triggered when HS to ZM
+				-- q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
+				-- q(65621),	-- Triggered when HS to ZM
 
-			q(63850),	-- Tracking - Small Consoles
-			q(64880),	-- Unlocking Alt-Skip (spellID 359819 & 359820 & 359821 & 359823)
-			q(65679),	-- Unlocking A Portal from Oribos to ZM (spellID 365377 & 365378 & 369255 & 369256 & 369259)
+				q(63850),	-- Tracking - Small Consoles
+				q(64880),	-- Unlocking Alt-Skip (spellID 359819 & 359820 & 359821 & 359823)
+				q(65679),	-- Unlocking A Portal from Oribos to ZM (spellID 365377 & 365378 & 369255 & 369256 & 369259)
 
-			-- q(65144),	-- Firims Cave?
+				-- q(65144),	-- Firims Cave?
 
-			-- Gravid Repose
-			q(65376),	-- Entering Gravid Repose First Time / Teach Taxi Node - Resonant Peaks (spellID 364659)
-			q(65377),	-- Entering Gravid Repose First Time / Teach Taxi Node - Resonant Peaks (spellID 364659)
-			q(65464),	-- Entering Gravid Repose First Time / Force Learn Taxi Nodes from Area (spellID 364790)
+				-- Gravid Repose
+				q(65376),	-- Entering Gravid Repose First Time / Teach Taxi Node - Resonant Peaks (spellID 364659)
+				q(65377),	-- Entering Gravid Repose First Time / Teach Taxi Node - Resonant Peaks (spellID 364659)
+				q(65464),	-- Entering Gravid Repose First Time / Force Learn Taxi Nodes from Area (spellID 364790)
 
-			q(65330),	-- Interior Locus Arrangement at Gravid Repose (spellID 362607)
-			q(65337),	-- First Locus Arrangement at Gravid Repose (spellID 362536)
-			q(65339),	-- Second Locus Arrangement at Gravid Repose (spellID 362646)
-			q(65338),	-- Third Locus Arrangement at Gravid Repose (spellID 362667)
-			q(65340),	-- Fourth Locus Arrangement at Gravid Repose (spellID 362668)
-			q(65341),	-- Fifth Locus Arrangement at Gravid Repose (spellID 362669)
-			q(65342),	-- Ultimate Locus Arrangement at Gravid Repose (spellID 362670)
-			q(65457),	-- Unlock all (spellID 365988)
+				q(65330),	-- Interior Locus Arrangement at Gravid Repose (spellID 362607)
+				q(65337),	-- First Locus Arrangement at Gravid Repose (spellID 362536)
+				q(65339),	-- Second Locus Arrangement at Gravid Repose (spellID 362646)
+				q(65338),	-- Third Locus Arrangement at Gravid Repose (spellID 362667)
+				q(65340),	-- Fourth Locus Arrangement at Gravid Repose (spellID 362668)
+				q(65341),	-- Fifth Locus Arrangement at Gravid Repose (spellID 362669)
+				q(65342),	-- Ultimate Locus Arrangement at Gravid Repose (spellID 362670)
+				q(65457),	-- Unlock all (spellID 365988)
 
-			q(65378),	-- Starting Secret Teleport System at Gravid Repose (spellID 364793 & 364794 & 364795 & 364796 & 364797)
+				q(65378),	-- Starting Secret Teleport System at Gravid Repose (spellID 364793 & 364794 & 364795 & 364796 & 364797)
 
-			q(65650),	-- Completing Camber Alcove puzzle (spellID 367425)
+				q(65650),	-- Completing Camber Alcove puzzle (spellID 367425)
 
-			q(65785),	-- Triggered after the summoner of Hirukon kills them (spellID 368790 & 369848)
+				q(65785),	-- Triggered after the summoner of Hirukon kills them (spellID 368790 & 369848)
 
-			-- RP
-			q(65233),	-- RP after 'Jiro to Hero' (questID 65219) (spellID 362672)
-			q(65571),	-- RP after Chap 5 with Taelia (spellID 366796)
-			q(65619),	-- RP after Tahli Questline (spellID 367037)
-			q(65693),	-- RP Elder Ara 34.8, 64.8 after 'The Pilgrimage Ends' (questID64844) (spellID 367834)
+				-- RP
+				q(65233),	-- RP after 'Jiro to Hero' (questID 65219) (spellID 362672)
+				q(65571),	-- RP after Chap 5 with Taelia (spellID 366796)
+				q(65619),	-- RP after Tahli Questline (spellID 367037)
+				q(65693),	-- RP Elder Ara 34.8, 64.8 after 'The Pilgrimage Ends' (questID64844) (spellID 367834)
 
-			-- Treasure
-			q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)
+				-- Treasure
+				q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)
 
-			-- q(65011),	Old HQT for 187885,	Honeycombed Lattice
-			-- Jiro Buffs
-			q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
-			--[[
-				42.9, 31.9 (184944)
-				42.8, 44.8 (184944)
-				69.7, 33.5 (184947)
-				59.7, 37.4 (184947)
-				54.2, 83.9 (184941)
-				57.1, 61.4 (184941)
-				33.2, 54.2 (183263) (?)
-				43.8, 64.5 (183263) (?)
-			--]]
-			q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022) 45.4 38.8
-			--[[
-				45.4, 38.8 (184943)
-				38,3б 32,2 (184943)
-				52.5, 29.0 (184946)
-				63.1, 19.5 (184946)
-				63.7, 56.1 (184940)
-				49.8, 76.5 (184940)
-				34.6, 56.4 (183262)
-				46.7, 67.5 (183262)
-			--]]
-			q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
-			--[[
-				39.1, 42.6 (184492)
-				56.7, 26.1 (184945)
-				40.5, 60.8 (181571)
-				54.5, 55.8 (184939)
-				52.4, 61.6 (184939)
-				53.6, 43.8 (184945)
-			--]]
-		}),
+				-- q(65011),	Old HQT for 187885,	Honeycombed Lattice
+				-- Jiro Buffs
+				q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
+				--[[
+					42.9, 31.9 (184944)
+					42.8, 44.8 (184944)
+					69.7, 33.5 (184947)
+					59.7, 37.4 (184947)
+					54.2, 83.9 (184941)
+					57.1, 61.4 (184941)
+					33.2, 54.2 (183263) (?)
+					43.8, 64.5 (183263) (?)
+				--]]
+				q(65166),	-- Echoed Jiro Genesii(184943) with SpellID(362022) 45.4 38.8
+				--[[
+					45.4, 38.8 (184943)
+					38,3б 32,2 (184943)
+					52.5, 29.0 (184946)
+					63.1, 19.5 (184946)
+					63.7, 56.1 (184940)
+					49.8, 76.5 (184940)
+					34.6, 56.4 (183262)
+					46.7, 67.5 (183262)
+				--]]
+				q(65144),	-- Echoed Jiro Creatii(184939) with SpellID(361831)  54.5 55.8
+				--[[
+					39.1, 42.6 (184492)
+					56.7, 26.1 (184945)
+					40.5, 60.8 (181571)
+					54.5, 55.8 (184939)
+					52.4, 61.6 (184939)
+					53.6, 43.8 (184945)
+				--]]
+			}),
+		},
 	}),
-})));
+}));

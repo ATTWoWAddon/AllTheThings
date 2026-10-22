@@ -1039,9 +1039,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(227, {
 		q(35929),	-- Blackfathom Deeps Reward Quest - Normal completion
 		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
 	}),
-})));
+}));

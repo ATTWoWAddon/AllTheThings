@@ -309,7 +309,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 			}),
 		})),
 	}),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, {
 		n(ACHIEVEMENTS, {
 			ach(6837),	-- Zen Master Archaeologist
 			ach(8223, {	-- Collector: Ancient Sap Feeders (20)
@@ -795,8 +795,8 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 		})),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		n(ACHIEVEMENTS, {
 			ach(9409),	-- Draenor Archaeologist
 			ach(9414, {	-- Ogre Observer
@@ -1323,8 +1323,8 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 		})),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, {
 			ach(10600),	-- Legion Archaeologist
 			ach(10604, {	-- Legion Curator
@@ -1828,8 +1828,8 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 		})),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, {
 			ach(12760, {	-- Kul Tiran Archaeologist
 				["races"] = ALLIANCE_ONLY,
@@ -1928,11 +1928,11 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 		}),
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(EXPANSION.WOD, {
 		n(PROFESSIONS, {
 			prof(ARCHAEOLOGY, {
 				q(33823),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #1
@@ -1940,8 +1940,8 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(33825),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #3
 			}),
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		n(PROFESSIONS, {
 			prof(ARCHAEOLOGY, {
 				q(41867),	-- FLAG - Brann Week 1
@@ -1952,5 +1952,5 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(45775),	-- Completion of 'Sifting Through the Rubble' [41176] for A Keen Eye [10603] - Crown Jewels of Suramar
 			}),
 		}),
-	})),
+	}),
 });

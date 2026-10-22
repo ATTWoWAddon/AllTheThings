@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(900, {	-- Cathedral of Eternal Night
 		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
 		["maps"] = { 845, 846, 847, 848, 849 },
+		["timeline"] = { ADDED_7_2_0 },
 		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
@@ -183,4 +184,4 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 		},
 	}),
-})));
+}));

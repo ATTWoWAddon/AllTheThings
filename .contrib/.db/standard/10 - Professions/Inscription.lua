@@ -4414,7 +4414,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 	-- #endif
 	-- Crieve NOTE: Inscription came out with Wrath and the other sections had like no content and a bunch of overlap.
 	-- So I merged them into Wrath for clarity.
-	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18725, {	-- Best Stellar
 				i(208421),	-- Compendium of the New Moon (TOY!)
@@ -4584,8 +4584,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				r(61120),	-- Master's Inscription of the Storm
 			}),
 		}),
-	}))),
-	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
+	})),
+	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 		filter(RECIPES, {
 			r(86008, {	-- Inscription (Cata)
 				["collectible"] = false,	-- the profession itself is not a recipe
@@ -4694,8 +4694,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			-- #endif
 		}),
-	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	})),
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 		filter(RECIPES, {
 			cat(779, {	-- Inks
 				r(111645),	-- Ink of Dreams
@@ -4746,8 +4746,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				r(127007),	-- Yu'lon Kite
 			}),
 		}),
-	}))),
-	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	})),
+	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
 		filter(RECIPES, {
 			cat(403, {	-- Merchant Orders
 				r(176513, {	-- Draenor Merchant Order
@@ -4765,8 +4765,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				}),
 			}),
 		}),
-	}))),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	})),
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
 		n(QUESTS, {
 			q(39847, {	-- Sign This
 				["provider"] = { "n", 92195 },	-- Professor Pallin
@@ -5121,8 +5121,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			})),
 		}),
-	}))),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	})),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18772, {	-- Sanguine Feather Quill of Lana'thel
 				["provider"] = { "i", 153670 },	-- Sanguine Feather Quill of Lana'thel
@@ -5263,8 +5263,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["timeline"] = { ADDED_8_2_5 },
 			}),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }}
 		},{
@@ -5630,8 +5630,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			}),
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }}
 		},{
@@ -5769,8 +5769,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["provider"] = { "i", 225227 },	-- Wax-Sealed Records
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42796, {	-- Inscribing at Midnight
 				i(264004),	-- Midnight Scribe's Shop Sign (DECOR!)
@@ -5950,7 +5950,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["provider"] = { "i", 259197 },	-- Loa-Blessed Rune
 			}),
 		})),
-	})),
+	}),
 })));
 root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION)));
 

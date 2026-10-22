@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1176, {	-- Battle of Dazar'alor
 		["coords"] = {
 			{ 70.5, 35.3, BORALUS },	-- Alliance
@@ -19,6 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1367,	-- Boralus
 		},
 		["isRaid"] = true,
+		["timeline"] = { ADDED_8_1_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40961, {	-- Batle of Dazar'alor
@@ -1171,14 +1172,17 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	inst(1176, {	-- Battle of Dazar'alor
-		q(55026),	-- Killing Opulence (H)
-		q(55027),	-- Killing Opulence (M)
-		q(54963),	-- LFR, cinematic at the start of Siege of Dazar'alor wing
-		q(55024),	-- LFR, moving into the hallway after Opulence (not a killID	-- this triggered in chat while i was in combat with the trash in the hall)
-		q(55025),	-- triggered after killing Conclave on normal
+		["timeline"] = { ADDED_8_1_0 },
+		["groups"] = {
+			q(55026),	-- Killing Opulence (H)
+			q(55027),	-- Killing Opulence (M)
+			q(54963),	-- LFR, cinematic at the start of Siege of Dazar'alor wing
+			q(55024),	-- LFR, moving into the hallway after Opulence (not a killID	-- this triggered in chat while i was in combat with the trash in the hall)
+			q(55025),	-- triggered after killing Conclave on normal
+		},
 	}),
-})));
+}));

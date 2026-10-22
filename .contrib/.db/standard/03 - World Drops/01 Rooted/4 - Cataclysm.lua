@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
+root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 	filter(CLOAKS, {
 		i(55308),	-- Moonbrook Cloak
 		i(55309),	-- Swamplight Cloak
@@ -1082,4 +1082,4 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			["description"] = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",
 		}),
 	}),
-}))));
+})));

@@ -530,9 +530,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(282, {
 		q(35446),	-- The Oculus Reward Quest - Normal completion
 		q(35447),	-- The Oculus Reward Quest - Heroic completion
 	}),
-})));
+}));

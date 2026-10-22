@@ -272,7 +272,7 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1273, {	-- Nerub'ar Palace
 		["coord"] = { 35.6, 71.6, AZJ_KAHET },
 		["maps"] = {
@@ -716,9 +716,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	inst(1273, bubbleDown({	-- Nerub'ar Palace
 		["isWeekly"] = true,
 	},{
@@ -758,4 +758,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			},
 		}),
 	}),
-})));
+}));

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(RENOWN, {
 			n(QUESTS, bubbleDownRep(FACTION_MARUUK_CENTAUR, {
@@ -498,9 +498,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		i(200093),	-- Centaur Hunting Trophy [BoP]
 		i(200447),	-- Centaur Hunting Trophy [BoA]
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(QUESTS, {
 			q(72778),	-- triggered with 'Call of the Plains' (questID 71229) (spellID 397059)
@@ -508,4 +508,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 			q(73919),	-- triggered during 'License to Hunt' (questID 70501)
 		}),
 	}),
-})));
+}));

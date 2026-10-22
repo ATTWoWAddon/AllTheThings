@@ -1116,12 +1116,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	}))),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	inst(78, {	-- Firelands
-		header(HEADERS.Item, 71086, {	-- Dragonwrath, Tarecgosa's Rest
-			n(QUESTS, {
-				q(29592),	-- Caster Legendary BREADCRUMB TRACKER
+		["timeline"] = { ADDED_4_2_0 },
+		["groups"] = {
+			header(HEADERS.Item, 71086, {	-- Dragonwrath, Tarecgosa's Rest
+				n(QUESTS, {
+					q(29592),	-- Caster Legendary BREADCRUMB TRACKER
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

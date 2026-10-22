@@ -497,9 +497,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(285, {
 		q(35502),	-- Utgarde Keep Reward Quest - Normal completion
 		q(35512),	-- Utgarde Keep Reward Quest - Heroic completion
 	}),
-})));
+}));

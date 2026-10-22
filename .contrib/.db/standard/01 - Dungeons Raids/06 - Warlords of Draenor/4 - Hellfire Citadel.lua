@@ -2,13 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 	inst(669, {	-- Hellfire Citadel
 		["mapID"] = 661,
 		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
 		["isRaid"] = true,
 		["lvl"] = 100,
+		["timeline"] = { ADDED_6_2_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11631, {["timeline"] = {ADDED_7_2_0}}),	-- Extreme Makeover: Fel Edition (Hellfire Citadel)
@@ -1953,7 +1954,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {
 	inst(669, {

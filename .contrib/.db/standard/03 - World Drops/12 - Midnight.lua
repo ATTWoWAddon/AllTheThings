@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 		filter(BACK_F, {
 			i(266224),	-- Brittle Cape
@@ -189,4 +189,4 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = 
 		i(245844),	-- Seven of Void
 		i(245845),	-- Eight of Void
 	}),
-})));
+}));

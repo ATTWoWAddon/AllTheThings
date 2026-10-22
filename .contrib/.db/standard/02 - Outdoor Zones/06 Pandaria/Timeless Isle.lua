@@ -3151,57 +3151,60 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(PANDARIA, {
-		m(TIMELESS_ISLE, {
-			n(QUESTS, {
-				q(33385),	-- Kairoz Weekly Tracking Quest
+		["timeline"] = { ADDED_5_4_0 },
+		["groups"] = {
+			m(TIMELESS_ISLE, {
+				n(QUESTS, {
+					q(33385),	-- Kairoz Weekly Tracking Quest
+				}),
+				n(RARES, {
+					q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
+					q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu
+					q(33288),	-- Tracking Quest - First - Archiereus of Flame
+					q(33276),	-- Tracking Quest - First - Bufo
+					q(33274),	-- Tracking Quest - First - Champion of the Black Flame
+					q(33318),	-- Tracking Quest - First - Chelon
+					q(33286),	-- Tracking Quest - First - Cinderfall
+					q(33319),	-- Tracking Quest - First - Cranegnasher
+					q(33290),	-- Tracking Quest - First - Dread Ship Vazuvius
+					q(33261),	-- Tracking Quest - First - Emerald Gander
+					q(33289),	-- Tracking Quest - First - Evermaw
+					q(33285),	-- Tracking Quest - First - Flintlord Gairan
+					q(33275),	-- Tracking Quest - First - Garnia
+					q(33291),	-- Tracking Quest - First - Golganarr
+					q(33272),	-- Tracking Quest - First - Great Turtle Furyshell
+					q(33260),	-- Tracking Quest - First - Gu'chi the Swarmbringer
+					q(33287),	-- Tracking Quest - First - Huolon
+					q(33278),	-- Tracking Quest - First - Imperial Python
+					q(33270),	-- Tracking Quest - First - Ironfur Steelhorn
+					q(33281),	-- Tracking Quest - First - Jakur of Ordon
+					q(33258),	-- Tracking Quest - First - Karkanos
+					q(33273),	-- Tracking Quest - First - Leafmender
+					q(33277),	-- Tracking Quest - First - Monstrous Spineclaw
+					q(33283),	-- Tracking Quest - First - Rock Moss
+					q(33259),	-- Tracking Quest - First - Spirit of Jadefire
+					q(33280),	-- Tracking Quest - First - Stinkbraid
+					q(33597),	-- Tracking Quest - First - The Obliterator
+					q(33279),	-- Tracking Quest - First - Tsavo'ka
+					q(33284),	-- Tracking Quest - First - Urdur the Cauterizer
+					q(33321),	-- Tracking Quest - First - Watcher Osu
+					q(32997),	-- Tracking Quest - First - Zesqua
+					q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
+					q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
+					q(33164),	-- Weekly Vignette Event Completion - Tracking Quest — popped when killing chelon, along with daily questID. didn't pop from just interacting with shell.
+				}),
+				n(TREASURES, {
+					q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9), secondary trigger
+					q(33216),	-- One-Time Chest - T1G1, secondary trigger
+					q(33217),	-- One-Time Chest - T1G2, secondary trigger
+					q(33218),	-- One-Time Chest - T1G3, secondary trigger
+					q(33219),	-- One-Time Chest - T1G4, secondary trigger
+					q(33220),	-- One-Time Chest - T2, secondary trigger
+					q(33221),	-- One-Time Chest - T3, secondary trigger
+				}),
 			}),
-			n(RARES, {
-				q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
-				q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu
-				q(33288),	-- Tracking Quest - First - Archiereus of Flame
-				q(33276),	-- Tracking Quest - First - Bufo
-				q(33274),	-- Tracking Quest - First - Champion of the Black Flame
-				q(33318),	-- Tracking Quest - First - Chelon
-				q(33286),	-- Tracking Quest - First - Cinderfall
-				q(33319),	-- Tracking Quest - First - Cranegnasher
-				q(33290),	-- Tracking Quest - First - Dread Ship Vazuvius
-				q(33261),	-- Tracking Quest - First - Emerald Gander
-				q(33289),	-- Tracking Quest - First - Evermaw
-				q(33285),	-- Tracking Quest - First - Flintlord Gairan
-				q(33275),	-- Tracking Quest - First - Garnia
-				q(33291),	-- Tracking Quest - First - Golganarr
-				q(33272),	-- Tracking Quest - First - Great Turtle Furyshell
-				q(33260),	-- Tracking Quest - First - Gu'chi the Swarmbringer
-				q(33287),	-- Tracking Quest - First - Huolon
-				q(33278),	-- Tracking Quest - First - Imperial Python
-				q(33270),	-- Tracking Quest - First - Ironfur Steelhorn
-				q(33281),	-- Tracking Quest - First - Jakur of Ordon
-				q(33258),	-- Tracking Quest - First - Karkanos
-				q(33273),	-- Tracking Quest - First - Leafmender
-				q(33277),	-- Tracking Quest - First - Monstrous Spineclaw
-				q(33283),	-- Tracking Quest - First - Rock Moss
-				q(33259),	-- Tracking Quest - First - Spirit of Jadefire
-				q(33280),	-- Tracking Quest - First - Stinkbraid
-				q(33597),	-- Tracking Quest - First - The Obliterator
-				q(33279),	-- Tracking Quest - First - Tsavo'ka
-				q(33284),	-- Tracking Quest - First - Urdur the Cauterizer
-				q(33321),	-- Tracking Quest - First - Watcher Osu
-				q(32997),	-- Tracking Quest - First - Zesqua
-				q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
-				q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
-				q(33164),	-- Weekly Vignette Event Completion - Tracking Quest — popped when killing chelon, along with daily questID. didn't pop from just interacting with shell.
-			}),
-			n(TREASURES, {
-				q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9), secondary trigger
-				q(33216),	-- One-Time Chest - T1G1, secondary trigger
-				q(33217),	-- One-Time Chest - T1G2, secondary trigger
-				q(33218),	-- One-Time Chest - T1G3, secondary trigger
-				q(33219),	-- One-Time Chest - T1G4, secondary trigger
-				q(33220),	-- One-Time Chest - T2, secondary trigger
-				q(33221),	-- One-Time Chest - T3, secondary trigger
-			}),
-		}),
+		},
 	}),
-})));
+}));

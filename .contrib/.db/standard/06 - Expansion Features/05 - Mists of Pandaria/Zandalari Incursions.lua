@@ -33,7 +33,7 @@ local ZANDALARI_INCURSIONS = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, n(ZANDALARI_INCURSIONS, {
 		["coords"] = {
 			{ 47.42, 61.54, DREAD_WASTES },
@@ -43,6 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 		},
 		["maps"] = { KRASARANG_WILDS },
 		["lvl"] = lvlsquish(85, 85, 10),
+		["timeline"] = { ADDED_5_2_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(8078, {	-- Zul'Again
@@ -115,4 +116,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 		},
 	})),
-})));
+}));

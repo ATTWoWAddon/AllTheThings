@@ -521,10 +521,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(284, {
 		q(35475),	-- Gundrak Reward Quest - Normal completion
 		q(35476),	-- Gundrak Reward Quest - Heroic completion
 		q(35477),	-- Gundrak Bonus Objective - kill Eck the Ferocious (Heroic only)
 	}),
-})));
+}));

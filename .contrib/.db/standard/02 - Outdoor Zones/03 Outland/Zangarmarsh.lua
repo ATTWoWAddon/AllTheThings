@@ -2256,7 +2256,7 @@ root(ROOTS.Zones, {
 	})),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, {
 	m(OUTLAND, {
 		m(ZANGARMARSH, {
 			n(QUESTS, {
@@ -2265,4 +2265,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

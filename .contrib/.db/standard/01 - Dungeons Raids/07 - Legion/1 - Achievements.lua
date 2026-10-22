@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	n(ACHIEVEMENTS, {
 		ach(11164, {	-- Legion Dungeon Hero
 			["sym"] = {{"meta_achievement",
@@ -86,4 +86,4 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		ach(11183),	-- Keystone Initiate
 		-- #ENDIF
 	}),
-})));
+}));

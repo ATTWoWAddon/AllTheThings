@@ -407,9 +407,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(240, {
 		q(35303),	-- Wailing Caverns Reward Quest — Normal completion
 		q(35307),	-- Wailing Caverns Bonus Objective
 	}),
-})));
+}));

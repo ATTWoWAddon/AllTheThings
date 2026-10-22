@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1023, {	-- Siege of Boralus
 		["coords"] = {
 			{ 72.2, 15.5, BORALUS },	-- Alliance
@@ -331,4 +331,4 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			-- #endif
 		},
 	}),
-})));
+}));

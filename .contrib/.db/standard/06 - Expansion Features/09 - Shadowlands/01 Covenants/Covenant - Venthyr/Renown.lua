@@ -66,7 +66,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 
 WISPS_OF_MEMORY.customCollect = nil;
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(VENTHYR, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 		n(RENOWN, {
 			q(62750),	-- hitting Renown 19
@@ -99,4 +99,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(65114),	-- hitting Renown 24 (Anima instead of Soulkeeper Upgrade)
 		}),
 	})),
-})));
+}));

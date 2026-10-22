@@ -10,7 +10,7 @@ local WORLDSOUL_MEMORY = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	n(WORLDSOUL_MEMORY, {
 		["providers"] = {
 			-- TODO set preprocessor to season start timeline specifically
@@ -195,4 +195,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			}),
 		},
 	}),
-})));
+}));

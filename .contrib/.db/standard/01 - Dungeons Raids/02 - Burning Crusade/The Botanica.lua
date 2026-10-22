@@ -313,9 +313,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(257, {
 		q(35525),	-- The Botanica Reward Quest - Normal completion
 		q(35526),	-- The Botanica Reward Quest - Heroic completion
 	}),
-})));
+}));

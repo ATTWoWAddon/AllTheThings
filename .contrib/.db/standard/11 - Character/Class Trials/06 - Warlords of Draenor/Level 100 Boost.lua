@@ -2,11 +2,12 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.WOD, bubbleDown({["timeline"] = { ADDED_6_2_0, REMOVED_7_3_5}}, {
+	expansion(EXPANSION.WOD, {
 		header(HEADERS.Achievement, 9060, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			["description"] = "These were obtained by boosting a character to Level 100 for each class and specialization.",
 			["lvl"] = 100,
+			["timeline"] = { ADDED_6_2_0, REMOVED_7_3_5},
 			["groups"] = {
 				cl(DEATHKNIGHT, {
 					i(142023, {	-- Adventurer's Footlocker
@@ -451,5 +452,5 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 			},
 		}),
-	})),
+	}),
 }));

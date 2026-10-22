@@ -66,7 +66,7 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1314, {	-- The Dreamrift
 		["coord"] = { 61.0, 64.2, MAP.MIDNIGHT.HARANDAR },
 		["maps"] = {
@@ -74,6 +74,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2532,	-- Den of the Undreamt
 		},
 		["isRaid"] = true,
+		["timeline"] = { ADDED_12_0_1_SEASONSTART },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				-- Myrhial Check Automation
@@ -163,7 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1314, {	-- The Dreamrift

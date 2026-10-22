@@ -2346,7 +2346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		},
 	}),
 }))));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(230, {
 		q(35890),	-- Dire Maul (Warpwood Quarter) Reward Quest - Normal completion
 		q(35891),	-- Dire Maul (Capital Gardens) Reward Quest - Normal completion
@@ -2354,4 +2354,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 		q(35894),	-- Dire Maul (Bonus) Reward Quest
 		q(35956),	-- Dire Maul (Everything) Reward Quest
 	}),
-})));
+}));

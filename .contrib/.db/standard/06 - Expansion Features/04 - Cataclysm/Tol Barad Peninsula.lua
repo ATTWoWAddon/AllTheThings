@@ -19,7 +19,7 @@ local function TolBaradDailyQuest(questID, t)
 	return t;
 end
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 	m(TOL_BARAD_PENINSULA, {
 		-- #if BEFORE 8.0.3
 		["description"] = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
@@ -726,4 +726,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 			}),
 		},
 	}),
-})));
+}));

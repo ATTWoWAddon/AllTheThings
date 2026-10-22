@@ -510,67 +510,70 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NAZJATAR, {
-		n(RARES, {
-			-- Naga Commanders
-			q(56882),	-- Commander Minezra
-			q(56895),	-- Incantatrix Vazina
-			q(56894),	-- Shadowbinder Athissa
-			q(56890),	-- Theurgist Nitara
-			q(56893),	-- Warlord Zalzjar
-			--
-			q(56582),	-- killing King Gakula in Warmode
-			q(56601),	-- Banescale the Packfather in Warmode
-			q(56884),	-- First time killing Avarius (as miner?)
-			q(56883, {["isDaily"]=true}),	-- using Brimstone Pickaxe to start Avarius
-			-- q(56885, {["isDaily"]=true}),	-- throwing Chum into the water to summon Vor'koth
-			q(56886, {["isDaily"]=true}),	-- after killing Vor'koth after throwing the Chum
-			q(56604),	-- Alga the Eyeless first kill
-			q(56603),	-- Allseer Oma'kil first kill
-			q(56602),	-- Anemonar first kill
-			q(56615),	-- Amethyst Spireshell first kill
-			q(56614),	-- Blightlight first kill
-			q(56887),	-- Carnivorous Lasher first kill
-			q(56888),	-- Carnivorous lasher kill
-			q(57188),	-- Carnivorous Lasher, Germinating Seafly buff (drops herbs)
-			q(57187),	-- Carnivorous Lasher Golden Seafly buff (drops gold)
-			q(57186),	-- Carnivorous Lasher, Radiant Seafly buff (drops Azerite)
-			q(56600),	-- Caverndark Terror first kill
-			q(56613),	-- Chasm Haunter first kill
-			q(56612),	-- Daggertooth Terror first kill
-			q(56611),	-- Deepglider first kill
-			q(56599),	-- Elder Unu first kill
-			q(56598),	-- Elderspawn Nalaada first kill
-			q(56610),	-- Garnetscale first kill
-			q(56597),	-- Iridescent Glimmershell first kill
-			q(57260),	-- Iridescent Glimmershell looted with WM on
-			q(56596),	-- Kelpwillow first kill
-			q(57082),	-- Lost Algan Benthic loot
-			q(56609),	-- Mirecrawler first kill
-			q(56608),	-- Needlespine first kill
-			q(56595),	-- Oronu first kill
-			q(56594),	-- Prince Typhonus first kill
-			q(56593),	-- Prince Vortran first kill
-			-- q(56287),	-- Reefwalker first kill
-			q(56592),	-- Rockweed Shambler first kill
-			q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
-			q(56606),	-- Sandclaw Stonoeshell first kill
-			q(57142),	-- looting Giant Crab Leg + Brinestone Pickaxe from Sandclaw Stoneshell
-			q(56591),	-- Scale Matriarch Gratinax first kill
-			q(56590),	-- Scale Matriarch Vynara first kill
-			q(56589),	-- Scale Matriarch Zodia first kill
-			q(56588),	-- Shassera first kill
-			q(56587),	-- Shiz'narasz the Consumer first kill
-			q(56586),	-- Silstalker the Packmother first kill
-			q(56585),	-- Soundless first kill
-			q(56619),	-- Tidelord Dispersius first kill
-			q(56620),	-- Tidemistress Leth'sindra first kill
-			q(56605),	-- Toxigore the Alpha first kill
-			q(56584),	-- Urduu first kill
-			q(56583),	-- Voice in the Deeps first kill
-			q(57083),	-- Wayward Algan Benthic loot
-			q(57096),	-- reported as triggering upon snapping a photo to collect Fabious
-		}),
+		["timeline"] = { ADDED_8_2_0 },
+		["groups"] = {
+			n(RARES, {
+				-- Naga Commanders
+				q(56882),	-- Commander Minezra
+				q(56895),	-- Incantatrix Vazina
+				q(56894),	-- Shadowbinder Athissa
+				q(56890),	-- Theurgist Nitara
+				q(56893),	-- Warlord Zalzjar
+				--
+				q(56582),	-- killing King Gakula in Warmode
+				q(56601),	-- Banescale the Packfather in Warmode
+				q(56884),	-- First time killing Avarius (as miner?)
+				q(56883, {["isDaily"]=true}),	-- using Brimstone Pickaxe to start Avarius
+				-- q(56885, {["isDaily"]=true}),	-- throwing Chum into the water to summon Vor'koth
+				q(56886, {["isDaily"]=true}),	-- after killing Vor'koth after throwing the Chum
+				q(56604),	-- Alga the Eyeless first kill
+				q(56603),	-- Allseer Oma'kil first kill
+				q(56602),	-- Anemonar first kill
+				q(56615),	-- Amethyst Spireshell first kill
+				q(56614),	-- Blightlight first kill
+				q(56887),	-- Carnivorous Lasher first kill
+				q(56888),	-- Carnivorous lasher kill
+				q(57188),	-- Carnivorous Lasher, Germinating Seafly buff (drops herbs)
+				q(57187),	-- Carnivorous Lasher Golden Seafly buff (drops gold)
+				q(57186),	-- Carnivorous Lasher, Radiant Seafly buff (drops Azerite)
+				q(56600),	-- Caverndark Terror first kill
+				q(56613),	-- Chasm Haunter first kill
+				q(56612),	-- Daggertooth Terror first kill
+				q(56611),	-- Deepglider first kill
+				q(56599),	-- Elder Unu first kill
+				q(56598),	-- Elderspawn Nalaada first kill
+				q(56610),	-- Garnetscale first kill
+				q(56597),	-- Iridescent Glimmershell first kill
+				q(57260),	-- Iridescent Glimmershell looted with WM on
+				q(56596),	-- Kelpwillow first kill
+				q(57082),	-- Lost Algan Benthic loot
+				q(56609),	-- Mirecrawler first kill
+				q(56608),	-- Needlespine first kill
+				q(56595),	-- Oronu first kill
+				q(56594),	-- Prince Typhonus first kill
+				q(56593),	-- Prince Vortran first kill
+				-- q(56287),	-- Reefwalker first kill
+				q(56592),	-- Rockweed Shambler first kill
+				q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
+				q(56606),	-- Sandclaw Stonoeshell first kill
+				q(57142),	-- looting Giant Crab Leg + Brinestone Pickaxe from Sandclaw Stoneshell
+				q(56591),	-- Scale Matriarch Gratinax first kill
+				q(56590),	-- Scale Matriarch Vynara first kill
+				q(56589),	-- Scale Matriarch Zodia first kill
+				q(56588),	-- Shassera first kill
+				q(56587),	-- Shiz'narasz the Consumer first kill
+				q(56586),	-- Silstalker the Packmother first kill
+				q(56585),	-- Soundless first kill
+				q(56619),	-- Tidelord Dispersius first kill
+				q(56620),	-- Tidemistress Leth'sindra first kill
+				q(56605),	-- Toxigore the Alpha first kill
+				q(56584),	-- Urduu first kill
+				q(56583),	-- Voice in the Deeps first kill
+				q(57083),	-- Wayward Algan Benthic loot
+				q(57096),	-- reported as triggering upon snapping a photo to collect Fabious
+			}),
+		},
 	}),
-})));
+}));

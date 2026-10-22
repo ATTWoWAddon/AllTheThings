@@ -258,7 +258,7 @@ for _,t in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR,GRATEFUL_CURRENCY,GLIMMERLIGHT
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(NIGHT_FAE,  bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 		n(SANCTUM_UPGRADES, {
 			n(ANIMA_CONDUCTOR, {
@@ -268,4 +268,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			}),
 		}),
 	})),
-})));
+}));

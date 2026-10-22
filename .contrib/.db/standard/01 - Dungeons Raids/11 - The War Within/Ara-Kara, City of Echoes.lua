@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1271, {	-- Ara-Kara, City of Echoes
 		["coord"] = { 52.2, 45.8, NERUBAR_LOWER },
 		["maps"] = {
@@ -95,4 +95,4 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));

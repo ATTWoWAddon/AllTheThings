@@ -6698,22 +6698,50 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			}),
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.0
-			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
-				itemsource(301480),	-- Legwraps of Swirling Light
-				itemsource(301483),	-- Rigid Scale Greatcloak
-				itemsource(301486),	-- Sharpeye Chestguard
-				itemsource(301489),	-- Boots of Burning Focus
-				itemsource(301492),	-- Lightbinder Shoulderguards
-				itemsource(301496),	-- Gutcrusher Greathelm
-				itemsource(301498),	-- Bracers of Blazing Light
-				itemsource(301501),	-- Bloodfeather Mantle
-				itemsource(301504),	-- Rigid Scale Boots
-				itemsource(301507),	-- Incarnadine Gauntlets
-				itemsource(301510),	-- Lightbinder Treads
-				itemsource(301513),	-- Sharpeye Gleam
-				itemsource(301516),	-- Bloodfeather Chestguard
-				itemsource(301519),	-- Spaulders of Scorching Ray
-			})),
+			expansion(EXPANSION.WOD, {
+				itemsource(301480, {	-- Legwraps of Swirling Light
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301483, {	-- Rigid Scale Greatcloak
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301486, {	-- Sharpeye Chestguard
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301489, {	-- Boots of Burning Focus
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301492, {	-- Lightbinder Shoulderguards
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301496, {	-- Gutcrusher Greathelm
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301498, {	-- Bracers of Blazing Light
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301501, {	-- Bloodfeather Mantle
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301504, {	-- Rigid Scale Boots
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301507, {	-- Incarnadine Gauntlets
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301510, {	-- Lightbinder Treads
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301513, {	-- Sharpeye Gleam
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301516, {	-- Bloodfeather Chestguard
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+				itemsource(301519, {	-- Spaulders of Scorching Ray
+					["timeline"] = { CREATED_12_0_0 },
+				}),
+			}),
 			filter(BACK_F, {
 				i(249566),	-- [PH] 12.0 Delves - Level-Up - Accessory - Cloth CLOAK - HC
 				i(249570),	-- [PH] 12.0 Delves - Level-Up - Accessory - Leather CLOAK - CM
@@ -6943,124 +6971,356 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			}),
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.5
-			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
-				itemsource(64383),	-- Belt of Singing Hooves
-				itemsource(64882),	-- Bonebreaker Boots
-				itemsource(64389),	-- Chain of Natural Fury
-				itemsource(64377),	-- Chainhoof Grips
-				itemsource(67803),	-- Chestguard of Rejuvenation
-				itemsource(64386),	-- Cord of Ruination
-				itemsource(64815),	-- Cord of Skulls
-				itemsource(64330),	-- Cowl of Grim Shadows
-				itemsource(64277),	-- Crystalhide Belt
-				itemsource(65714),	-- Crystalhide Bracers
-				itemsource(65678),	-- Crystalhide Cowl
-				itemsource(65652),	-- Crystalhide Grips
-				itemsource(64262),	-- Crystalhide Legguards
-				itemsource(65717),	-- Crystal-Leaf Bracers
-				itemsource(64280),	-- Crystal-Leaf Chain
-				itemsource(65655),	-- Crystal-Leaf Gloves
-				itemsource(65681),	-- Crystal-Leaf Helm
-				itemsource(64265),	-- Crystal-Leaf Legguards
-				itemsource(65720),	-- Crystal-Plated Bracers
-				itemsource(65658),	-- Crystal-Plated Gauntlets
-				itemsource(64283),	-- Crystal-Plated Greatbelt
-				itemsource(65684),	-- Crystal-Plated Greathelm
-				itemsource(64268),	-- Crystal-Plated Legplates
-				itemsource(64398),	-- Down-Lined Leggings
-				itemsource(69155),	-- Ethereal Crystalhide Belt
-				itemsource(69131),	-- Ethereal Crystalhide Bracers
-				itemsource(69119),	-- Ethereal Crystalhide Cowl
-				itemsource(69167),	-- Ethereal Crystalhide Grips
-				itemsource(69143),	-- Ethereal Crystalhide Legguards
-				itemsource(69134),	-- Ethereal Crystal-Leaf Bracers
-				itemsource(69158),	-- Ethereal Crystal-Leaf Chain
-				itemsource(69170),	-- Ethereal Crystal-Leaf Gloves
-				itemsource(69122),	-- Ethereal Crystal-Leaf Helm
-				itemsource(69146),	-- Ethereal Crystal-Leaf Legguards
-				itemsource(69137),	-- Ethereal Crystal-Plated Bracers
-				itemsource(69173),	-- Ethereal Crystal-Plated Gauntlets
-				itemsource(69161),	-- Ethereal Crystal-Plated Greatbelt
-				itemsource(69125),	-- Ethereal Crystal-Plated Greathelm
-				itemsource(69149),	-- Ethereal Crystal-Plated Legplates
-				itemsource(69116),	-- Ethereal Windcrystal Hood
-				itemsource(69128),	-- Ethereal Windcrystal Bracers
-				itemsource(69140),	-- Ethereal Windcrystal Leggings
-				itemsource(69152),	-- Ethereal Windcrystal Cord
-				itemsource(69164),	-- Ethereal Windcrystal Wraps
-				itemsource(65628),	-- Exceptional Crystalhide Belt
-				itemsource(65702),	-- Exceptional Crystalhide Bracers
-				itemsource(65690),	-- Exceptional Crystalhide Cowl
-				itemsource(64289),	-- Exceptional Crystalhide Grips
-				itemsource(65604),	-- Exceptional Crystalhide Legguards
-				itemsource(65705),	-- Exceptional Crystal-Leaf Bracers
-				itemsource(65631),	-- Exceptional Crystal-Leaf Chain
-				itemsource(64292),	-- Exceptional Crystal-Leaf Gloves
-				itemsource(65693),	-- Exceptional Crystal-Leaf Helm
-				itemsource(65607),	-- Exceptional Crystal-Leaf Legguards
-				itemsource(65708),	-- Exceptional Crystal-Plated Bracers
-				itemsource(64295),	-- Exceptional Crystal-Plated Gauntlets
-				itemsource(65634),	-- Exceptional Crystal-Plated Greatbelt
-				itemsource(65696),	-- Exceptional Crystal-Plated Greathelm
-				itemsource(65610),	-- Exceptional Crystal-Plated Legplates
-				itemsource(64286),	-- Exceptional Windcrystal Wraps
-				itemsource(65601),	-- Exceptional Windcrystal Leggings
-				itemsource(65625),	-- Exceptional Windcrystal Cord
-				itemsource(65687),	-- Exceptional Windcrystal Hood
-				itemsource(65699),	-- Exceptional Windcrystal Bracers
-				itemsource(67806),	-- Falling Leaf Breastplate
-				itemsource(67816),	-- Featherflame Sandals
-				itemsource(66788),	-- Flame Infusion Drape
-				itemsource(65640),	-- Flawless Crystalhide Belt
-				itemsource(64318),	-- Flawless Crystalhide Bracers
-				itemsource(64306),	-- Flawless Crystalhide Cowl
-				itemsource(65664),	-- Flawless Crystalhide Grips
-				itemsource(65616),	-- Flawless Crystalhide Legguards
-				itemsource(64321),	-- Flawless Crystal-Leaf Bracers
-				itemsource(65643),	-- Flawless Crystal-Leaf Chain
-				itemsource(65667),	-- Flawless Crystal-Leaf Gloves
-				itemsource(64309),	-- Flawless Crystal-Leaf Helm
-				itemsource(65619),	-- Flawless Crystal-Leaf Legguards
-				itemsource(64324),	-- Flawless Crystal-Plated Bracers
-				itemsource(65670),	-- Flawless Crystal-Plated Gauntlets
-				itemsource(65646),	-- Flawless Crystal-Plated Greatbelt
-				itemsource(64312),	-- Flawless Crystal-Plated Greathelm
-				itemsource(65622),	-- Flawless Crystal-Plated Legplates
-				itemsource(64315),	-- Flawless Windcrystal Bracers
-				itemsource(65637),	-- Flawless Windcrystal Cord
-				itemsource(64303),	-- Flawless Windcrystal Hood
-				itemsource(65613),	-- Flawless Windcrystal Leggings
-				itemsource(65661),	-- Flawless Windcrystal Wraps
-				itemsource(66835),	-- Fleshhook Cloak
-				itemsource(64345),	-- Gatecrasher's Chain Boots
-				itemsource(64380),	-- Gauntlets of Impenetrability
-				itemsource(64374),	-- Grips of Natural Fury
-				itemsource(64357),	-- Gruntslayer Shoulderguards
-				itemsource(64401),	-- Leggings of Flowing Feathers
-				itemsource(64327),	-- Oana's Observant Gaze
-				itemsource(64333),	-- One-Eyed Chain Helm
-				itemsource(64348),	-- Ozymandias' Burdensome Treads
-				itemsource(64404),	-- Phoenixfire Legplates
-				itemsource(67819),	-- Phoenix-Rider Boots
-				itemsource(64371),	-- Quadripedal Grips
-				itemsource(67809),	-- Robes of the Ageless
-				itemsource(64339),	-- Sandals of Marauding
-				itemsource(64354),	-- Scaling Hook Spaulders
-				itemsource(64395),	-- Solarflame Legwraps
-				itemsource(64360),	-- Spaulders of Primal Ferocity
-				itemsource(67822),	-- Talongrip Spurs
-				itemsource(64336),	-- Tehax's Penetrating Visage
-				itemsource(64392),	-- Waistplate of Bladed Force
-				itemsource(64351),	-- Wall-Breaker's Shoulderpads
-				itemsource(64342),	-- Wall-Climber's Treads
-				itemsource(65711),	-- Windcrystal Bracers
-				itemsource(64274),	-- Windcrystal Cord
-				itemsource(64259),	-- Windcrystal Leggings
-				itemsource(65675),	-- Windcrystal Hood
-				itemsource(65649),	-- Windcrystal Wraps
-				itemsource(67825),	-- Wing-Forged Greatboots
-				itemsource(67800),	-- Witherleaf Chestguard
-			})),
+			expansion(EXPANSION.WOD, {
+				itemsource(64383, {	-- Belt of Singing Hooves
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64882, {	-- Bonebreaker Boots
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64389, {	-- Chain of Natural Fury
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64377, {	-- Chainhoof Grips
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67803, {	-- Chestguard of Rejuvenation
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64386, {	-- Cord of Ruination
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64815, {	-- Cord of Skulls
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64330, {	-- Cowl of Grim Shadows
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64277, {	-- Crystalhide Belt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65714, {	-- Crystalhide Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65678, {	-- Crystalhide Cowl
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65652, {	-- Crystalhide Grips
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64262, {	-- Crystalhide Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65717, {	-- Crystal-Leaf Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64280, {	-- Crystal-Leaf Chain
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65655, {	-- Crystal-Leaf Gloves
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65681, {	-- Crystal-Leaf Helm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64265, {	-- Crystal-Leaf Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65720, {	-- Crystal-Plated Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65658, {	-- Crystal-Plated Gauntlets
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64283, {	-- Crystal-Plated Greatbelt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65684, {	-- Crystal-Plated Greathelm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64268, {	-- Crystal-Plated Legplates
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64398, {	-- Down-Lined Leggings
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69155, {	-- Ethereal Crystalhide Belt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69131, {	-- Ethereal Crystalhide Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69119, {	-- Ethereal Crystalhide Cowl
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69167, {	-- Ethereal Crystalhide Grips
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69143, {	-- Ethereal Crystalhide Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69134, {	-- Ethereal Crystal-Leaf Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69158, {	-- Ethereal Crystal-Leaf Chain
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69170, {	-- Ethereal Crystal-Leaf Gloves
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69122, {	-- Ethereal Crystal-Leaf Helm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69146, {	-- Ethereal Crystal-Leaf Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69137, {	-- Ethereal Crystal-Plated Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69173, {	-- Ethereal Crystal-Plated Gauntlets
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69161, {	-- Ethereal Crystal-Plated Greatbelt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69125, {	-- Ethereal Crystal-Plated Greathelm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69149, {	-- Ethereal Crystal-Plated Legplates
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69116, {	-- Ethereal Windcrystal Hood
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69128, {	-- Ethereal Windcrystal Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69140, {	-- Ethereal Windcrystal Leggings
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69152, {	-- Ethereal Windcrystal Cord
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(69164, {	-- Ethereal Windcrystal Wraps
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65628, {	-- Exceptional Crystalhide Belt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65702, {	-- Exceptional Crystalhide Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65690, {	-- Exceptional Crystalhide Cowl
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64289, {	-- Exceptional Crystalhide Grips
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65604, {	-- Exceptional Crystalhide Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65705, {	-- Exceptional Crystal-Leaf Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65631, {	-- Exceptional Crystal-Leaf Chain
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64292, {	-- Exceptional Crystal-Leaf Gloves
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65693, {	-- Exceptional Crystal-Leaf Helm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65607, {	-- Exceptional Crystal-Leaf Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65708, {	-- Exceptional Crystal-Plated Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64295, {	-- Exceptional Crystal-Plated Gauntlets
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65634, {	-- Exceptional Crystal-Plated Greatbelt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65696, {	-- Exceptional Crystal-Plated Greathelm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65610, {	-- Exceptional Crystal-Plated Legplates
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64286, {	-- Exceptional Windcrystal Wraps
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65601, {	-- Exceptional Windcrystal Leggings
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65625, {	-- Exceptional Windcrystal Cord
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65687, {	-- Exceptional Windcrystal Hood
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65699, {	-- Exceptional Windcrystal Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67806, {	-- Falling Leaf Breastplate
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67816, {	-- Featherflame Sandals
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(66788, {	-- Flame Infusion Drape
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65640, {	-- Flawless Crystalhide Belt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64318, {	-- Flawless Crystalhide Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64306, {	-- Flawless Crystalhide Cowl
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65664, {	-- Flawless Crystalhide Grips
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65616, {	-- Flawless Crystalhide Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64321, {	-- Flawless Crystal-Leaf Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65643, {	-- Flawless Crystal-Leaf Chain
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65667, {	-- Flawless Crystal-Leaf Gloves
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64309, {	-- Flawless Crystal-Leaf Helm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65619, {	-- Flawless Crystal-Leaf Legguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64324, {	-- Flawless Crystal-Plated Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65670, {	-- Flawless Crystal-Plated Gauntlets
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65646, {	-- Flawless Crystal-Plated Greatbelt
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64312, {	-- Flawless Crystal-Plated Greathelm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65622, {	-- Flawless Crystal-Plated Legplates
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64315, {	-- Flawless Windcrystal Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65637, {	-- Flawless Windcrystal Cord
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64303, {	-- Flawless Windcrystal Hood
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65613, {	-- Flawless Windcrystal Leggings
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65661, {	-- Flawless Windcrystal Wraps
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(66835, {	-- Fleshhook Cloak
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64345, {	-- Gatecrasher's Chain Boots
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64380, {	-- Gauntlets of Impenetrability
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64374, {	-- Grips of Natural Fury
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64357, {	-- Gruntslayer Shoulderguards
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64401, {	-- Leggings of Flowing Feathers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64327, {	-- Oana's Observant Gaze
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64333, {	-- One-Eyed Chain Helm
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64348, {	-- Ozymandias' Burdensome Treads
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64404, {	-- Phoenixfire Legplates
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67819, {	-- Phoenix-Rider Boots
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64371, {	-- Quadripedal Grips
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67809, {	-- Robes of the Ageless
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64339, {	-- Sandals of Marauding
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64354, {	-- Scaling Hook Spaulders
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64395, {	-- Solarflame Legwraps
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64360, {	-- Spaulders of Primal Ferocity
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67822, {	-- Talongrip Spurs
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64336, {	-- Tehax's Penetrating Visage
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64392, {	-- Waistplate of Bladed Force
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64351, {	-- Wall-Breaker's Shoulderpads
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64342, {	-- Wall-Climber's Treads
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65711, {	-- Windcrystal Bracers
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64274, {	-- Windcrystal Cord
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(64259, {	-- Windcrystal Leggings
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65675, {	-- Windcrystal Hood
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(65649, {	-- Windcrystal Wraps
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67825, {	-- Wing-Forged Greatboots
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+				itemsource(67800, {	-- Witherleaf Chestguard
+					["timeline"] = { CREATED_12_0_5 },
+				}),
+			}),
 			filter(CLOAKS, {
 				i(276799, {["modID"] = 4 }),	-- Riftstalker's Shade Cloak
 				i(276799, {["modID"] = 5 }),	-- Riftstalker's Shade Cloak

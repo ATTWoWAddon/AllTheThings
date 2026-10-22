@@ -452,10 +452,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(271, {
 		q(35489),	-- Ahn'kahet: The Old Kingdom Reward Quest - Normal completion
 		q(35490),	-- Ahn'kahet: The Old Kingdom Reward Quest - Heroic completion
 		q(35493),	-- Ahn'kahet: The Old Kingdom Bonus Reward - kill Amanitar (Heroic only)
 	}),
-})));
+}));

@@ -28,7 +28,7 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1311, {	-- Den of Nalorakk
 		InRetailSeason=InRetailSeason,
 		["coord"] = { 30.0, 84.5, MAP.MIDNIGHT.ZULAMAN },
@@ -94,4 +94,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			}),
 		},
 	}),
-})));
+}));

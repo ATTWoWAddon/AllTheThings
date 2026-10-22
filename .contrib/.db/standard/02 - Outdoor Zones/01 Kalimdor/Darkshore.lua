@@ -3172,11 +3172,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(KALIMDOR, {
 		m(DARKSHORE, {
 			q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time (spellID 395734)
 			q(52759),	-- Talked to Zom in Darkshore, which normally has 1 option. But this time had 2 "see past" options.
 		}),
 	}),
-})));
+}));

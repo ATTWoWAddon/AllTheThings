@@ -103,20 +103,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		header(HEADERS.Quest, 79009, {	-- The Harbinger
-			q(80199),	-- Bow of the Ranger Captain
-			q(80450),	-- Arsenal: Voidtouched Weaponry
-			q(80198),	-- Triggered with completion of Quest 79016
-			hqt(80019),	-- Stay awhile and listen - Magister Umbric (n: 217360)
-			hqt(80021),	-- Stay awhile and listen - Archmage Khadgar (n: 214972), autoplay first time after turn in questID 79021 (Radiant Warnings)
-			hqt(80020, {	-- Stay awhile and listen: Locus-Walker
-				["name"] = "Stay awhile and listen: Locus-Walker",
-				["sourceQuests"] = { 79010 },	-- Door to the Ren'dorei
-				["provider"] = { "n", 126773 },	-- Locus-Walker
-				["coord"] = { 29.7, 27.1, TELOGRUS_RIFT },
+		["timeline"] = { ADDED_10_2_7 },
+		["groups"] = {
+			header(HEADERS.Quest, 79009, {	-- The Harbinger
+				q(80199),	-- Bow of the Ranger Captain
+				q(80450),	-- Arsenal: Voidtouched Weaponry
+				q(80198),	-- Triggered with completion of Quest 79016
+				hqt(80019),	-- Stay awhile and listen - Magister Umbric (n: 217360)
+				hqt(80021),	-- Stay awhile and listen - Archmage Khadgar (n: 214972), autoplay first time after turn in questID 79021 (Radiant Warnings)
+				hqt(80020, {	-- Stay awhile and listen: Locus-Walker
+					["name"] = "Stay awhile and listen: Locus-Walker",
+					["sourceQuests"] = { 79010 },	-- Door to the Ren'dorei
+					["provider"] = { "n", 126773 },	-- Locus-Walker
+					["coord"] = { 29.7, 27.1, TELOGRUS_RIFT },
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));

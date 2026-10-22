@@ -276,7 +276,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	----------------------
 	--      LEGION      --
 	----------------------
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(PVP, {
 			q(45538),	-- 10v10 Weekly Quest UI
 			q(42548),	-- 10v10 #1
@@ -347,12 +347,12 @@ root(ROOTS.HiddenQuestTriggers, {
 			},
 			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
 		}),
-	})),
+	}),
 
 	-------------------
 	--      BFA      --
 	-------------------
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		-- VARIOUS
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
@@ -662,12 +662,12 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Unknown
 		q(58013),	-- Triggers literally anywhere and everywhere. No direct source was ever found for more than 7 years.
-	})),
+	}),
 
 	------------------
 	--      SL      --
 	------------------
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	expansion(EXPANSION.SL, {
 		n(GROUP_FINDER, {
 			q(62079),	-- Received weekly Mythic+ Keystone
 		}),
@@ -750,24 +750,24 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Unknown?
 		q(64655, {["timeline"] = {ADDED_9_1_0}}),	-- unsure precisely what triggers this - it was added late in the PTR cycle and popped originally in Korthia.  popped soon after i logged in on my main on retail
-	})),
+	}),
 
 	------------------
 	--      DF      --
 	------------------
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, {
 		n(PVP, {
 			q(79332, {["timeline"] = {ADDED_10_2_0}, ["repeatable"] = true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when there's an enlistment bonus?)
 		}),
-	})),
+	}),
 
 	------------------
 	--     TWW      --
 	------------------
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, {
 		q(94711, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
 		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggers literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
-	})),
+	}),
 
 	--------------------
 	--   NYI QUESTS   --

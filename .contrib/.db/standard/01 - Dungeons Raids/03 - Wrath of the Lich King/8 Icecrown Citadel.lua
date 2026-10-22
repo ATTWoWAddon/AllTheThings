@@ -2523,12 +2523,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, {
 	inst(758, {
-		q(24808, {["isRepeatable"]=true}),	-- Tank Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
-		q(24809, {["isRepeatable"]=true}),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
-		q(24810, {["isRepeatable"]=true}),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring
-		q(24811, {["isRepeatable"]=true}),	-- Caster Ring Flag - doing "Choose Your Path" in ICC and choosing intellect crit/haste ring
-		q(25238, {["isRepeatable"]=true}),	-- Strength Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
+		["timeline"] = { ADDED_3_3_0 },
+		["groups"] = {
+			q(24808, {["isRepeatable"]=true}),	-- Tank Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
+			q(24809, {["isRepeatable"]=true}),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
+			q(24810, {["isRepeatable"]=true}),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring
+			q(24811, {["isRepeatable"]=true}),	-- Caster Ring Flag - doing "Choose Your Path" in ICC and choosing intellect crit/haste ring
+			q(25238, {["isRepeatable"]=true}),	-- Strength Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
+		},
 	}),
-})));
+}));

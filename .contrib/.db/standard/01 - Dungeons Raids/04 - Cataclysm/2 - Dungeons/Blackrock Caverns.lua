@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(66, {	-- Blackrock Caverns
 		["mapID"] = 283,
 		["coord"] = { 71.77, 52.98, BLACKROCK_MOUNTAIN_LEVEL2 },
@@ -366,13 +366,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #endif
 		},
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(66, {
 		q(35348),	-- Blackrock Caverns Reward Quest
 		q(35351),	-- Blackrock Caverns Reward Quest
 		q(35349),	-- Blackrock Caverns Bonus Reward
 		q(35352),	-- Blackrock Caverns Bonus Reward - killing Beauty
 	}),
-})));
+}));

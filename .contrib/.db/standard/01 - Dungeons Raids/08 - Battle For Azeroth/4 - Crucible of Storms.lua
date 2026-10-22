@@ -56,7 +56,7 @@ InstanceHelper.LFRQueueNPC = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1177, {	-- Crucible of Storms
 		["coord"] = { 83.8, 47.0, STORMSONG_VALLEY },
 		["maps"] = {
@@ -65,6 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 		},
 		["isRaid"] = true,
 		["lvl"] = { 50 },
+		["timeline"] = { ADDED_8_1_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(13414, {	-- Crucible of Storms
@@ -141,4 +142,4 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));

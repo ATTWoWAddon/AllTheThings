@@ -1148,52 +1148,55 @@ root(ROOTS.Zones, {
 		})),
 	}),
 });
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(PANDARIA, {
-		m(ISLE_OF_THUNDER, {
-			n(FACTIONS, {
-				header(HEADERS.Faction, FACTION_KIRIN_TOR_OFFENSIVE, {
-					n(QUESTS, {
-						q(32721),	-- Choose Your Assignment
-						q(32260),	-- Alliance Quest Choice: PvE
-						q(32261),	-- Alliance Quest Choice: PvP
-						q(32701),	-- Quest Reward Summary: PvE Stage 0-2
-						q(32700),	-- Quest Reward Summary: PvP Stage 1-5
-						q(32702),	-- Quest Reward Summary: PvE Stage 2
-						q(32703),	-- Quest Reward Summary: PvE Stage 3
-						q(32704),	-- Quest Reward Summary: PvE Stage 4-5
-						q(32705),	-- Quest Reward Summary: PvE Stage 5
+		["timeline"] = { ADDED_5_2_0 },
+		["groups"] = {
+			m(ISLE_OF_THUNDER, {
+				n(FACTIONS, {
+					header(HEADERS.Faction, FACTION_KIRIN_TOR_OFFENSIVE, {
+						n(QUESTS, {
+							q(32721),	-- Choose Your Assignment
+							q(32260),	-- Alliance Quest Choice: PvE
+							q(32261),	-- Alliance Quest Choice: PvP
+							q(32701),	-- Quest Reward Summary: PvE Stage 0-2
+							q(32700),	-- Quest Reward Summary: PvP Stage 1-5
+							q(32702),	-- Quest Reward Summary: PvE Stage 2
+							q(32703),	-- Quest Reward Summary: PvE Stage 3
+							q(32704),	-- Quest Reward Summary: PvE Stage 4-5
+							q(32705),	-- Quest Reward Summary: PvE Stage 5
+						}),
+					}),
+					header(HEADERS.Faction, FACTION_SUNREAVER_ONSLAUGHT, {
+						n(QUESTS, {
+							q(32720),	-- Choose Your Assignment
+							q(32259),	-- Horde Quest Choice: PvE
+							q(32258),	-- Horde Quest Choice: PvP
+							q(32695),	-- Quest Reward Summary: PvE Stage 0-2
+							q(32694),	-- Quest Reward Summary: PvP Stage 1-5
+							q(32696),	-- Quest Reward Summary: PvE Stage 2
+							q(32697),	-- Quest Reward Summary: PvE Stage 3
+							q(32698),	-- Quest Reward Summary: PvE Stage 4-5
+							q(32699),	-- Quest Reward Summary: PvE Stage 5
+						}),
 					}),
 				}),
-				header(HEADERS.Faction, FACTION_SUNREAVER_ONSLAUGHT, {
-					n(QUESTS, {
-						q(32720),	-- Choose Your Assignment
-						q(32259),	-- Horde Quest Choice: PvE
-						q(32258),	-- Horde Quest Choice: PvP
-						q(32695),	-- Quest Reward Summary: PvE Stage 0-2
-						q(32694),	-- Quest Reward Summary: PvP Stage 1-5
-						q(32696),	-- Quest Reward Summary: PvE Stage 2
-						q(32697),	-- Quest Reward Summary: PvE Stage 3
-						q(32698),	-- Quest Reward Summary: PvE Stage 4-5
-						q(32699),	-- Quest Reward Summary: PvE Stage 5
-					}),
+				n(QUESTS, {
+					q(32289),	-- Loot plans, kill boat captain
+					q(32723),	-- reuse me
+					q(32825),	-- Re-Use Me - triggers with HQT 'Choose Your Assignment' (questID 32720 & 32721)
+					q(32826),	-- Re-Use Me - triggers with 'Breaking Down the Defenses' (questID 32628 & 32268)
+					q(32827),	-- Re-Use Me - triggers with 'Tactical Mana Bombs' (questID 32634 & 32269)
+					q(32629),	-- Thunderwing Captured Tracking Quest
+				}),
+				n(TREASURES, {
+					q(32609),	-- Rare Chest Tracking Quest — triggers after looting "Trove of the Thunder King"
+				}),
+				n(ZONE_DROPS, {
+					q(32626),	-- Loot Room Key Tracking Quest — triggers when looting "Key to the Palace of Lei Shen"
+					q(32611, {["isWeekly"]=true}),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
 				}),
 			}),
-			n(QUESTS, {
-				q(32289),	-- Loot plans, kill boat captain
-				q(32723),	-- reuse me
-				q(32825),	-- Re-Use Me - triggers with HQT 'Choose Your Assignment' (questID 32720 & 32721)
-				q(32826),	-- Re-Use Me - triggers with 'Breaking Down the Defenses' (questID 32628 & 32268)
-				q(32827),	-- Re-Use Me - triggers with 'Tactical Mana Bombs' (questID 32634 & 32269)
-				q(32629),	-- Thunderwing Captured Tracking Quest
-			}),
-			n(TREASURES, {
-				q(32609),	-- Rare Chest Tracking Quest — triggers after looting "Trove of the Thunder King"
-			}),
-			n(ZONE_DROPS, {
-				q(32626),	-- Loot Room Key Tracking Quest — triggers when looting "Key to the Palace of Lei Shen"
-				q(32611, {["isWeekly"]=true}),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
-			}),
-		}),
+		},
 	}),
-})));
+}));

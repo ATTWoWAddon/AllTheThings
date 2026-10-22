@@ -1476,7 +1476,7 @@ root(ROOTS.Zones, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	expansion(EXPANSION.LEGION, {
 		m(BROKEN_ISLES, {
 			m(LEGION_DALARAN, {
 				q(46955),	-- Akazamzarak Silenced
@@ -1491,12 +1491,15 @@ root(ROOTS.HiddenQuestTriggers, {
 				}),
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		m(BROKEN_ISLES, {
-			m(LEGION_DALARAN, {
-				q(58658),	-- Selecting an option to hide Vulpera hyena mount canopy/sunshade
-			}),
+			["timeline"] = { ADDED_8_3_0 },
+			["groups"] = {
+				m(LEGION_DALARAN, {
+					q(58658),	-- Selecting an option to hide Vulpera hyena mount canopy/sunshade
+				}),
+			},
 		}),
-	})),
+	}),
 });

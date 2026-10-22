@@ -14,7 +14,7 @@ local DRACONIUM_ORE = 188658;
 local RUNED_WRITHEBARK = 194863;
 local LARGE_STURDY_FEMUR = 201402;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(VENDORS, {
 			n(195547, {	-- Farrier Rondare
@@ -531,4 +531,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 		}),
 	}),
-})));
+}));

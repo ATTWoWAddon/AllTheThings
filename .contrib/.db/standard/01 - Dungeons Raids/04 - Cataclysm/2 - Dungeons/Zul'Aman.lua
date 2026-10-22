@@ -2,11 +2,12 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, inst(77, {	-- Zul'Aman
 		["mapID"] = ZULAMAN,
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["_drop"] = { "isRaid" },	-- prevent merging isRaid from BC version
+		["timeline"] = ADDED_4_1_0,
 		["groups"] = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["groups"] = {
@@ -318,13 +319,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 		},
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(77, {
 		["_drop"] = { "isRaid" },	-- prevent merging isRaid from BC version
 		["groups"] = {
 			q(35443),	-- Zul'Aman Reward Quest - Heroic completion
 		},
 	}),
-})));
+}));

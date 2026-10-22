@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.SL, {
 	i(173381),	-- Crafter's Mark I
 	i(173382),	-- Crafter's Mark II
 	i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
@@ -962,4 +962,4 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(186975, {["timeline"] = {ADDED_9_1_0}}),	-- Shrouded Hand Towel
 		}),
 	}),
-})));
+}));

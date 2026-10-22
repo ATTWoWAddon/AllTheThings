@@ -939,58 +939,61 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(THE_MAW, {
-			n(COVENANT_ASSAULTS, {
-				-- TODO: Stolen Anima Vessels probably need to be added at some point, but I'm not really sure how they work
-				-- Example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc. So I am just throwing them here for now.
-				-- Kyrian
-				q(63820),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824) (spellID 351106)
-				q(64077),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824)
+		["timeline"] = { ADDED_9_1_0 },
+		["groups"] = {
+			m(THE_MAW, {
+				n(COVENANT_ASSAULTS, {
+					-- TODO: Stolen Anima Vessels probably need to be added at some point, but I'm not really sure how they work
+					-- Example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc. So I am just throwing them here for now.
+					-- Kyrian
+					q(63820),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824) (spellID 351106)
+					q(64077),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824)
 
-				-- Necrolord
-				q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army (spellID 350868)
-				q(63809),	-- selecting Cutter Fin to accompany you on You and What Army (spellID 350870)
-				q(63806),	-- selecting Flytrap to accompany you on You and What Army (spellID 350869)
-				q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army (spellID 350866)
-				q(63805),	-- selecting Winslow Swain to accompany you on You and What Army (spellID 350867)
-				-- q(64147, name(HEADERS.NPC, 177767)),	-- triggered when turning in 'Pulling His Chain' (questID 63621) // Boil Master Yetch
-				-- q(64148, name(HEADERS.NPC, 177771)),	-- triggered when completing 'Pulling His Chain' (questID 63621) // Cutter Fin
-				-- q(64149, name(HEADERS.NPC, 177764)),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop) // Winslow Swain
-				-- q(64150, name(HEADERS.NPC, 158300)),	-- turning in 'Centurion's March' (questID 63753) // Flytrap
-				-- q(64151, name(HEADERS.NPC, 177769)),	-- Completed at the same time as 63669 (Somebody Feed Kevin) // Kearnen the Blade
-				q(63544),	-- triggered when completing 'Necrolord Assault' (questID 63543) (spellID 349796)
+					-- Necrolord
+					q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army (spellID 350868)
+					q(63809),	-- selecting Cutter Fin to accompany you on You and What Army (spellID 350870)
+					q(63806),	-- selecting Flytrap to accompany you on You and What Army (spellID 350869)
+					q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army (spellID 350866)
+					q(63805),	-- selecting Winslow Swain to accompany you on You and What Army (spellID 350867)
+					-- q(64147, name(HEADERS.NPC, 177767)),	-- triggered when turning in 'Pulling His Chain' (questID 63621) // Boil Master Yetch
+					-- q(64148, name(HEADERS.NPC, 177771)),	-- triggered when completing 'Pulling His Chain' (questID 63621) // Cutter Fin
+					-- q(64149, name(HEADERS.NPC, 177764)),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop) // Winslow Swain
+					-- q(64150, name(HEADERS.NPC, 158300)),	-- turning in 'Centurion's March' (questID 63753) // Flytrap
+					-- q(64151, name(HEADERS.NPC, 177769)),	-- Completed at the same time as 63669 (Somebody Feed Kevin) // Kearnen the Blade
+					q(63544),	-- triggered when completing 'Necrolord Assault' (questID 63543) (spellID 349796)
 
-				-- Night Fae
-				q(63821),	-- triggered when completing 'Night Fae Assault' (questID 63823) (spellID 351107)
+					-- Night Fae
+					q(63821),	-- triggered when completing 'Night Fae Assault' (questID 63823) (spellID 351107)
 
-				-- Venthyr
-				q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
-				q(63939),	-- triggered when returning Goo Goo to Reldorn on "They Grow Up So Quickly"
-				q(63940),	-- triggered when returning Roots to Reldorn on "They Grow Up So Quickly"
-				q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
-				q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
-				q(63943),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
-				q(64253),	-- triggered when walking through a Maw Mirror on the last part of the 'Venthyr Assault' (questID 63822) (spellID 355359)
-				q(63819),	-- triggered when completing 'Venthyr Assault' (questID 63822) (spellID 351105)
+					-- Venthyr
+					q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
+					q(63939),	-- triggered when returning Goo Goo to Reldorn on "They Grow Up So Quickly"
+					q(63940),	-- triggered when returning Roots to Reldorn on "They Grow Up So Quickly"
+					q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
+					q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
+					q(63943),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
+					q(64253),	-- triggered when walking through a Maw Mirror on the last part of the 'Venthyr Assault' (questID 63822) (spellID 355359)
+					q(63819),	-- triggered when completing 'Venthyr Assault' (questID 63822) (spellID 351105)
 
-				-- Stolen Anima Vessels
-				q(64575),	-- After anima vessel, in Maw (rifted)
-				q(64701),	-- Stolen Anima Supplies 2nd trigger ?
-				q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
-				q(64003, {isDaily = true}),	-- looting Etherwyrm Cage Key (186190)
+					-- Stolen Anima Vessels
+					q(64575),	-- After anima vessel, in Maw (rifted)
+					q(64701),	-- Stolen Anima Supplies 2nd trigger ?
+					q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+					q(64003, {isDaily = true}),	-- looting Etherwyrm Cage Key (186190)
 
-				-- Achievement The Zovaal Shuffle
-				q(64153),	-- dancing near a forge for The Zovaal Shuffle
-				q(64154),	-- dancing near a forge for The Zovaal Shuffle
-				q(64155),	-- dancing near a forge for The Zovaal Shuffle
-				q(64156),	-- dancing near a forge for The Zovaal Shuffle
-				q(64157),	-- dancing near a forge for The Zovaal Shuffle
-				q(64158),	-- dancing near a forge for The Zovaal Shuffle
-				q(64160),	-- dancing near a forge for The Zovaal Shuffle
-				q(64161),	-- dancing near a forge for The Zovaal Shuffle
+					-- Achievement The Zovaal Shuffle
+					q(64153),	-- dancing near a forge for The Zovaal Shuffle
+					q(64154),	-- dancing near a forge for The Zovaal Shuffle
+					q(64155),	-- dancing near a forge for The Zovaal Shuffle
+					q(64156),	-- dancing near a forge for The Zovaal Shuffle
+					q(64157),	-- dancing near a forge for The Zovaal Shuffle
+					q(64158),	-- dancing near a forge for The Zovaal Shuffle
+					q(64160),	-- dancing near a forge for The Zovaal Shuffle
+					q(64161),	-- dancing near a forge for The Zovaal Shuffle
+				}),
 			}),
-		}),
+		},
 	}),
-})));
+}));
